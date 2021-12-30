@@ -2,7 +2,7 @@
     "artist": "Netflix",
     "title": "Toss A Coin To Your Witcher",
 "video": "waMkFIzvDpE",
-"gap": 1225,
+"gap": 1425,
 "bpm": 211,
 "bar": 4,
 "sections": [{ "start": 0, "notes": [
@@ -11,7 +11,7 @@
 { "type": "normal", "start": 9, "length": 2, "pitch": -2, "lyrics": " hum" },
 { "type": "normal", "start": 11, "length": 4, "pitch": -4, "lyrics": "ble" },
 { "type": "normal", "start": 16, "length": 6, "pitch": -2, "lyrics": " bard" }
-] }, { "start": 30, "notes": [  
+]}, { "start": 30, "notes": [  
 { "type": "normal", "start": 36, "length": 8, "pitch": 3, "lyrics": "Graced" },
 { "type": "normal", "start": 44, "length": 3, "pitch": 5, "lyrics": " a" },
 { "type": "normal", "start": 47, "length": 6, "pitch": 1, "lyrics": " ride" },
