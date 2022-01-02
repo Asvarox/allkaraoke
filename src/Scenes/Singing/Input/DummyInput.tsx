@@ -1,0 +1,32 @@
+
+class DummyInput {
+    private frequencies = [410, 210];
+    private timestamp = 0;
+    private interval: number | null = null;
+
+    public startMonitoring = async () => {
+        this.interval = window.setInterval(() => {
+            this.timestamp = this.timestamp + 32;
+
+            const secPart = this.timestamp % 1000;
+            if (secPart > 232 && secPart < 708) {
+                this.frequencies[0] = 0;
+                this.frequencies[1] = 0;
+            } else {
+                this.frequencies[0] = Math.sin(this.timestamp / 1000) * 50 + 100;
+                this.frequencies[1] = Math.cos(this.timestamp / 1000) * 50 + 200;
+            }
+
+        }, 32);
+    };
+
+    public getFrequencies = () => this.frequencies;
+
+    public stopMonitoring = async () => {
+        if (this.interval) {
+            window.clearInterval(this.interval);
+        }
+    };
+}
+
+export default new DummyInput();

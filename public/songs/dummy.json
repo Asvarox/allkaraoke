@@ -1,0 +1,140 @@
+{
+    "artist": "Dummy",
+    "title": "Dummy",
+    "video": "waMkFIzvDpE",
+    "gap": 1425,
+    "bpm": 211,
+    "bar": 4,
+    "sections": [
+        {
+            "start": 0,
+            "notes": [
+                {
+                    "type": "normal",
+                    "start": 0,
+                    "length": 50,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 51,
+                    "length": 50,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 102,
+                    "length": 18,
+                    "pitch": 0,
+                    "lyrics": "When"
+                }
+            ]
+        },
+        {
+            "start": 150,
+            "notes": [
+                {
+                    "type": "normal",
+                    "start": 160,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 181,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 220,
+                    "length": 18,
+                    "pitch": 0,
+                    "lyrics": "When"
+                }
+            ]
+        },
+        {
+            "start": 250,
+            "notes": [
+                {
+                    "type": "normal",
+                    "start": 260,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 281,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 320,
+                    "length": 18,
+                    "pitch": 0,
+                    "lyrics": "When"
+                }
+            ]
+        },
+        {
+            "start": 350,
+            "notes": [
+                {
+                    "type": "normal",
+                    "start": 360,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 381,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 420,
+                    "length": 18,
+                    "pitch": 0,
+                    "lyrics": "When"
+                }
+            ]
+        },
+        {
+            "start": 450,
+            "notes": [
+                {
+                    "type": "normal",
+                    "start": 460,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 481,
+                    "length": 20,
+                    "pitch": 0,
+                    "lyrics": "When"
+                },
+                {
+                    "type": "normal",
+                    "start": 520,
+                    "length": 18,
+                    "pitch": 0,
+                    "lyrics": "When"
+                }
+            ]
+        }
+    ]
+}

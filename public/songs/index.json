@@ -1,0 +1,23 @@
+[
+    {
+        "file": "./netflix-toss-a-coin-to-your-witcher.json",
+        "artist": "Netflix",
+        "title": "Toss A Coin To Your Witcher",
+        "video": "waMkFIzvDpE",
+        "previewStart": 60
+    },
+    {
+        "file": "./adele-rolling-in-the-deep.json",
+        "artist": "Adele",
+        "title": "Rolling In The Deep",
+        "video": "rYEDA3JcQqw",
+        "previewStart": 60
+    },
+    {
+        "file": "./frozen-let-it-go.json",
+        "artist": "Frozen",
+        "title": "Let it go",
+        "video": "moSFlvxnbgk",
+        "previewStart": 60
+    }
+]
