@@ -12,7 +12,9 @@ import SongSelection from './Scenes/SongSelection/SongSelection';
 function App() {
     const [selectedSongPath, setSelectedSongPath] = useState<SongPreview | null>(null);
 
-    // return <Convert />;
+    if (window.location.search === '?convert') {
+        return <Convert />;
+    }
 
     if (!selectedSongPath) {
         return <SongSelection onSongSelected={preview => setSelectedSongPath(preview)} />
