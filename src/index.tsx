@@ -9,7 +9,7 @@ const client = new QueryClient();
 ReactDOM.render(
     <React.StrictMode>
         <QueryClientProvider client={client}>
-        <App />
+            <App />
         </QueryClientProvider>
     </React.StrictMode>,
     document.getElementById('root'),

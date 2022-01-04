@@ -8,9 +8,10 @@
 }
 
 .screen__lyrics {
+    box-sizing: border-box;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.35);
-    height: 80px;
+    height: 100px;
     width: 100%;
     text-align: center;
     line-height: 1;
