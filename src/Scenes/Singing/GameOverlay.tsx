@@ -8,6 +8,7 @@ import isNotesSection from './Helpers/isNotesSection';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 import frequenciesToLines from './Helpers/frequenciesToLines';
 import styled from 'styled-components';
+import MicInput from './Input/MicInput';
 
 const Input = DummyInput;
 // const Input = MicInput;
@@ -27,6 +28,14 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
 
     const songBeatLength = useMemo(() => getSongBeatLength(song), [song]);
     const currentBeat = Math.floor((currentTime - song.gap) / songBeatLength);
+
+    useEffect(() => {
+        Input.startMonitoring();
+
+        return () => {
+            Input.stopMonitoring();
+        };
+    }, []);
 
     const [minPitch, maxPitch] = useMemo(() => {
         let min: number = Infinity;
@@ -76,9 +85,6 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
         return count;
     }, [song]);
 
-    useEffect(() => {
-        Input.startMonitoring();
-    }, []);
 
     useEffect(() => {
         historicPitches.current[0] = [];
