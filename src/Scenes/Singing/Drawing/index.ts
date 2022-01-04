@@ -107,7 +107,7 @@ export default function drawFrame(
                 applyColor(ctx, styles.colors.players[index].goldPerfect);    
             } else if (playerNote.isPerfect) {
                 applyColor(ctx, styles.colors.players[index].perfect);    
-            } else if ((playerNote.note.type === 'star')) {
+            } else if ((playerNote.note.type === 'star') && playerNote.distance === 0) {
                 applyColor(ctx, styles.colors.players[index].gold);    
             } else if (playerNote.distance === 0) {
                 applyColor(ctx, styles.colors.players[index].hit);    
