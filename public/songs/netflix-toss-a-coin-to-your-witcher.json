@@ -8,6 +8,7 @@
     "tracks": [{
     "sections": [
         {
+            "type": "notes",
             "start": 0,
             "notes": [
                 {
@@ -48,6 +49,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 30,
             "notes": [
                 {
@@ -88,6 +90,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 66,
             "notes": [
                 {
@@ -142,6 +145,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 102,
             "notes": [
                 {
@@ -182,6 +186,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 173,
             "notes": [
                 {
@@ -229,6 +234,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 224,
             "notes": [
                 {
@@ -276,6 +282,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 258,
             "notes": [
                 {
@@ -316,6 +323,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 284,
             "notes": [
                 {
@@ -370,6 +378,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 374,
             "notes": [
                 {
@@ -410,6 +419,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 423,
             "notes": [
                 {
@@ -457,6 +467,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 459,
             "notes": [
                 {
@@ -490,6 +501,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 482,
             "notes": [
                 {
@@ -537,6 +549,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 526,
             "notes": [
                 {
@@ -577,6 +590,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 559,
             "notes": [
                 {
@@ -617,6 +631,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 589,
             "notes": [
                 {
@@ -664,6 +679,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 624,
             "notes": [
                 {
@@ -704,6 +720,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 672,
             "notes": [
                 {
@@ -758,6 +775,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 722,
             "notes": [
                 {
@@ -805,6 +823,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 754,
             "notes": [
                 {
@@ -852,6 +871,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 787,
             "notes": [
                 {
@@ -878,6 +898,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 814,
             "notes": [
                 {
@@ -932,6 +953,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 854,
             "notes": [
                 {
@@ -993,6 +1015,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 981,
             "notes": [
                 {
@@ -1040,6 +1063,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1020,
             "notes": [
                 {
@@ -1080,6 +1104,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1050,
             "notes": [
                 {
@@ -1127,6 +1152,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1083,
             "notes": [
                 {
@@ -1174,6 +1200,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1164,
             "notes": [
                 {
@@ -1214,6 +1241,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1213,
             "notes": [
                 {
@@ -1254,6 +1282,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1243,
             "notes": [
                 {
@@ -1301,6 +1330,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1279,
             "notes": [
                 {
@@ -1341,6 +1371,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1360,
             "notes": [
                 {
@@ -1381,6 +1412,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1405,
             "notes": [
                 {
@@ -1421,6 +1453,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1432,
             "notes": [
                 {
@@ -1482,6 +1515,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1469,
             "notes": [
                 {
@@ -1529,6 +1563,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1502,
             "notes": [
                 {
@@ -1569,6 +1604,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1532,
             "notes": [
                 {
@@ -1616,6 +1652,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1564,
             "notes": [
                 {
@@ -1663,6 +1700,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1598,
             "notes": [
                 {
@@ -1703,6 +1741,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1647,
             "notes": [
                 {
@@ -1757,6 +1796,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1686,
             "notes": [
                 {
@@ -1804,6 +1844,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1717,
             "notes": [
                 {
@@ -1851,6 +1892,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1749,
             "notes": [
                 {
@@ -1877,6 +1919,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1774,
             "notes": [
                 {
@@ -1931,6 +1974,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1813,
             "notes": [
                 {
@@ -1999,6 +2043,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1906,
             "notes": [
                 {
@@ -2053,6 +2098,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1943,
             "notes": [
                 {
@@ -2100,6 +2146,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 1975,
             "notes": [
                 {
@@ -2147,6 +2194,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2005,
             "notes": [
                 {
@@ -2173,6 +2221,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2032,
             "notes": [
                 {
@@ -2227,6 +2276,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2070,
             "notes": [
                 {
@@ -2295,6 +2345,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2162,
             "notes": [
                 {
@@ -2349,6 +2400,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2200,
             "notes": [
                 {
@@ -2396,6 +2448,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2232,
             "notes": [
                 {
@@ -2443,6 +2496,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2263,
             "notes": [
                 {
@@ -2469,6 +2523,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2291,
             "notes": [
                 {
@@ -2523,6 +2578,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 2328,
             "notes": [
                 {
