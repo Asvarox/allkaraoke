@@ -12,6 +12,7 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.19",
     "aubiojs": "^0.0.1",
     "browserify-fs": "^1.0.0",
     "buffer": "^6.0.3",
@@ -24,6 +25,7 @@
     "react-scripts": "5.0.0",
     "react-youtube": "^7.13.1",
     "stream-browserify": "^3.0.0",
+    "styled-components": "^5.3.3",
     "typescript": "^4.5.4",
     "util": "^0.12.4",
     "web-vitals": "^2.1.2"
@@ -32,7 +34,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-index": "yarn --silent ts-node src/generateIndex.ts > public/songs/index.json"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +59,7 @@
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0"
   }
 }
