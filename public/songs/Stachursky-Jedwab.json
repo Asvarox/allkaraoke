@@ -1,0 +1,2834 @@
+{
+  "title": "Jedwab",
+  "artist": "Stachursky",
+  "bpm": 228,
+  "bar": 4,
+  "gap": 17565.79,
+  "video": "W2eJv-ib29s",
+  "year": "2008",
+  "edition": "SS Polskie Hity",
+  "language": "Polish",
+  "author": "TeLiXj",
+  "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+  "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Stachursky&cancion=Jedwab",
+  "tracks": [
+    {
+      "sections": [
+        {
+          "start": 0,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 0,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "O"
+            },
+            {
+              "type": "normal",
+              "start": 4,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "fia"
+            },
+            {
+              "type": "normal",
+              "start": 8,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "ru"
+            },
+            {
+              "type": "normal",
+              "start": 12,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 18,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 20,
+              "length": 2,
+              "pitch": 48,
+              "lyrics": "Mo"
+            },
+            {
+              "type": "normal",
+              "start": 23,
+              "length": 4,
+              "pitch": 50,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 28,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "jej"
+            },
+            {
+              "type": "normal",
+              "start": 32,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": " dziew"
+            },
+            {
+              "type": "normal",
+              "start": 40,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "czy"
+            },
+            {
+              "type": "normal",
+              "start": 44,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "nie"
+            }
+          ]
+        },
+        {
+          "start": 58,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 70,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "Z"
+            },
+            {
+              "type": "normal",
+              "start": 76,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": " kwia"
+            },
+            {
+              "type": "normal",
+              "start": 84,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "tów"
+            },
+            {
+              "type": "normal",
+              "start": 88,
+              "length": 2,
+              "pitch": 50,
+              "lyrics": " ho"
+            },
+            {
+              "type": "normal",
+              "start": 92,
+              "length": 2,
+              "pitch": 50,
+              "lyrics": "lan"
+            },
+            {
+              "type": "normal",
+              "start": 96,
+              "length": 5,
+              "pitch": 50,
+              "lyrics": "dii-ut"
+            },
+            {
+              "type": "normal",
+              "start": 104,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ka"
+            },
+            {
+              "type": "normal",
+              "start": 108,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "ny"
+            }
+          ]
+        },
+        {
+          "start": 121,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 134,
+              "length": 5,
+              "pitch": 47,
+              "lyrics": "Szlaf"
+            },
+            {
+              "type": "normal",
+              "start": 140,
+              "length": 5,
+              "pitch": 48,
+              "lyrics": "rok"
+            }
+          ]
+        },
+        {
+          "start": 148,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 150,
+              "length": 1,
+              "pitch": 47,
+              "lyrics": "w"
+            },
+            {
+              "type": "normal",
+              "start": 152,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": " któ"
+            },
+            {
+              "type": "normal",
+              "start": 156,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "rym"
+            }
+          ]
+        },
+        {
+          "start": 162,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 164,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "u"
+            },
+            {
+              "type": "normal",
+              "start": 168,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "to"
+            },
+            {
+              "type": "star",
+              "start": 172,
+              "length": 9,
+              "pitch": 45,
+              "lyrics": "nie"
+            }
+          ]
+        },
+        {
+          "start": 189,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 192,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "Cal"
+            },
+            {
+              "type": "normal",
+              "start": 196,
+              "length": 2,
+              "pitch": 48,
+              "lyrics": " kiem"
+            },
+            {
+              "type": "normal",
+              "start": 200,
+              "length": 2,
+              "pitch": 48,
+              "lyrics": " niez"
+            },
+            {
+              "type": "normal",
+              "start": 204,
+              "length": 2,
+              "pitch": 48,
+              "lyrics": "ly"
+            },
+            {
+              "type": "normal",
+              "start": 208,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": " po"
+            },
+            {
+              "type": "normal",
+              "start": 212,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": "sia"
+            },
+            {
+              "type": "normal",
+              "start": 216,
+              "length": 4,
+              "pitch": 47,
+              "lyrics": " lek"
+            }
+          ]
+        },
+        {
+          "start": 229,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 232,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "Ja"
+            },
+            {
+              "type": "normal",
+              "start": 236,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "ki"
+            }
+          ]
+        },
+        {
+          "start": 253,
+          "notes": [
+            {
+              "type": "star",
+              "start": 256,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "Kon"
+            },
+            {
+              "type": "normal",
+              "start": 260,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "su"
+            },
+            {
+              "type": "normal",
+              "start": 264,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "mu"
+            },
+            {
+              "type": "normal",
+              "start": 268,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 270,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 272,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 276,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "bierz"
+            },
+            {
+              "type": "normal",
+              "start": 284,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "nie"
+            },
+            {
+              "type": "normal",
+              "start": 288,
+              "length": 5,
+              "pitch": 48,
+              "lyrics": " co"
+            },
+            {
+              "type": "normal",
+              "start": 294,
+              "length": 5,
+              "pitch": 50,
+              "lyrics": " wie"
+            },
+            {
+              "type": "normal",
+              "start": 300,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "czór"
+            },
+            {
+              "type": "normal",
+              "start": 308,
+              "length": 4,
+              "pitch": 43,
+              "lyrics": "~"
+            }
+          ]
+        },
+        {
+          "start": 322,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 326,
+              "length": 1,
+              "pitch": 48,
+              "lyrics": "W"
+            },
+            {
+              "type": "normal",
+              "start": 328,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": " ciep"
+            },
+            {
+              "type": "normal",
+              "start": 332,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "lych"
+            }
+          ]
+        },
+        {
+          "start": 338,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 340,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "De"
+            },
+            {
+              "type": "normal",
+              "start": 342,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 344,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "rac"
+            },
+            {
+              "type": "normal",
+              "start": 348,
+              "length": 4,
+              "pitch": 50,
+              "lyrics": "jach"
+            },
+            {
+              "type": "normal",
+              "start": 356,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": " po"
+            },
+            {
+              "type": "star",
+              "start": 360,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 365,
+              "length": 5,
+              "pitch": 45,
+              "lyrics": "ju"
+            }
+          ]
+        },
+        {
+          "start": 382,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 386,
+              "length": 5,
+              "pitch": 45,
+              "lyrics": "Przy"
+            },
+            {
+              "type": "normal",
+              "start": 392,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": " swie"
+            },
+            {
+              "type": "normal",
+              "start": 396,
+              "length": 4,
+              "pitch": 43,
+              "lyrics": "cach"
+            }
+          ]
+        },
+        {
+          "start": 402,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 404,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "I"
+            },
+            {
+              "type": "normal",
+              "start": 412,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": " przy"
+            },
+            {
+              "type": "normal",
+              "start": 415,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 420,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 424,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "nia"
+            },
+            {
+              "type": "normal",
+              "start": 428,
+              "length": 1,
+              "pitch": 45,
+              "lyrics": "ku"
+            },
+            {
+              "type": "normal",
+              "start": 430,
+              "length": 2,
+              "pitch": 43,
+              "lyrics": "~"
+            }
+          ]
+        },
+        {
+          "start": 444,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 448,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "A"
+            },
+            {
+              "type": "normal",
+              "start": 452,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " nad"
+            },
+            {
+              "type": "normal",
+              "start": 456,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " so"
+            },
+            {
+              "type": "normal",
+              "start": 460,
+              "length": 6,
+              "pitch": 52,
+              "lyrics": "ba"
+            },
+            {
+              "type": "normal",
+              "start": 468,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " mam"
+            },
+            {
+              "type": "normal",
+              "start": 476,
+              "length": 7,
+              "pitch": 48,
+              "lyrics": " jej"
+            },
+            {
+              "type": "normal",
+              "start": 484,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " lo"
+            },
+            {
+              "type": "normal",
+              "start": 492,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "ki"
+            },
+            {
+              "type": "normal",
+              "start": 496,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "~"
+            }
+          ]
+        },
+        {
+          "start": 510,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 520,
+              "length": 5,
+              "pitch": 48,
+              "lyrics": "Tak"
+            }
+          ]
+        },
+        {
+          "start": 530,
+          "notes": [
+            {
+              "type": "star",
+              "start": 532,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "tyl"
+            },
+            {
+              "type": "normal",
+              "start": 540,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 548,
+              "length": 7,
+              "pitch": 43,
+              "lyrics": " o"
+            },
+            {
+              "type": "normal",
+              "start": 556,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "na"
+            }
+          ]
+        },
+        {
+          "start": 572,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 588,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": "Jak"
+            },
+            {
+              "type": "normal",
+              "start": 592,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 596,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "jed"
+            },
+            {
+              "type": "normal",
+              "start": 604,
+              "length": 10,
+              "pitch": 50,
+              "lyrics": "wab"
+            }
+          ]
+        },
+        {
+          "start": 624,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 640,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": "O"
+            },
+            {
+              "type": "normal",
+              "start": 644,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": "fia"
+            },
+            {
+              "type": "normal",
+              "start": 648,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": "ru"
+            },
+            {
+              "type": "normal",
+              "start": 652,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 658,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 660,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "Mo"
+            },
+            {
+              "type": "normal",
+              "start": 668,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "jej"
+            },
+            {
+              "type": "normal",
+              "start": 672,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " dziew"
+            },
+            {
+              "type": "normal",
+              "start": 680,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "czy"
+            },
+            {
+              "type": "star",
+              "start": 684,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "nie"
+            }
+          ]
+        },
+        {
+          "start": 700,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 710,
+              "length": 1,
+              "pitch": 50,
+              "lyrics": "Wszyst"
+            },
+            {
+              "type": "normal",
+              "start": 712,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 716,
+              "length": 6,
+              "pitch": 52,
+              "lyrics": "kie"
+            },
+            {
+              "type": "normal",
+              "start": 724,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": " kwia"
+            },
+            {
+              "type": "normal",
+              "start": 726,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 732,
+              "length": 5,
+              "pitch": 50,
+              "lyrics": "ty"
+            },
+            {
+              "type": "normal",
+              "start": 738,
+              "length": 5,
+              "pitch": 48,
+              "lyrics": " ho"
+            },
+            {
+              "type": "normal",
+              "start": 744,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "lan"
+            },
+            {
+              "type": "normal",
+              "start": 752,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "di"
+            }
+          ]
+        },
+        {
+          "start": 765,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 768,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "Jes"
+            },
+            {
+              "type": "star",
+              "start": 772,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "li"
+            },
+            {
+              "type": "normal",
+              "start": 776,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": " be"
+            },
+            {
+              "type": "normal",
+              "start": 780,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "dzie"
+            }
+          ]
+        },
+        {
+          "start": 786,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 788,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "Trze"
+            },
+            {
+              "type": "normal",
+              "start": 796,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 800,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ba-u"
+            },
+            {
+              "type": "normal",
+              "start": 804,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "krad"
+            },
+            {
+              "type": "normal",
+              "start": 811,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "ne"
+            }
+          ]
+        },
+        {
+          "start": 826,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 830,
+              "length": 1,
+              "pitch": 43,
+              "lyrics": "W"
+            },
+            {
+              "type": "normal",
+              "start": 832,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": " no"
+            },
+            {
+              "type": "normal",
+              "start": 836,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": "cy"
+            },
+            {
+              "type": "normal",
+              "start": 840,
+              "length": 4,
+              "pitch": 48,
+              "lyrics": " przy"
+            }
+          ]
+        },
+        {
+          "start": 846,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 848,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": "Ksie"
+            },
+            {
+              "type": "normal",
+              "start": 852,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 856,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": "co"
+            },
+            {
+              "type": "normal",
+              "start": 860,
+              "length": 5,
+              "pitch": 43,
+              "lyrics": "wej"
+            },
+            {
+              "type": "normal",
+              "start": 868,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": " pel"
+            },
+            {
+              "type": "normal",
+              "start": 876,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "ni"
+            }
+          ]
+        },
+        {
+          "start": 882,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 884,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "A"
+            },
+            {
+              "type": "normal",
+              "start": 888,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " po"
+            },
+            {
+              "type": "normal",
+              "start": 892,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "tem"
+            }
+          ]
+        },
+        {
+          "start": 898,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 900,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "wy"
+            },
+            {
+              "type": "normal",
+              "start": 904,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "cis"
+            },
+            {
+              "type": "normal",
+              "start": 908,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "ne"
+            }
+          ]
+        },
+        {
+          "start": 912,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 914,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "Z"
+            },
+            {
+              "type": "normal",
+              "start": 916,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " nich"
+            },
+            {
+              "type": "normal",
+              "start": 920,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": " so"
+            },
+            {
+              "type": "normal",
+              "start": 924,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ki"
+            }
+          ]
+        },
+        {
+          "start": 937,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 948,
+              "length": 2,
+              "pitch": 50,
+              "lyrics": "Przy"
+            },
+            {
+              "type": "normal",
+              "start": 951,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "pra"
+            },
+            {
+              "type": "normal",
+              "start": 956,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "wie"
+            }
+          ]
+        },
+        {
+          "start": 969,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 972,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "Ka"
+            },
+            {
+              "type": "normal",
+              "start": 976,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "li"
+            },
+            {
+              "type": "star",
+              "start": 979,
+              "length": 4,
+              "pitch": 50,
+              "lyrics": "for"
+            },
+            {
+              "type": "normal",
+              "start": 984,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "nij"
+            },
+            {
+              "type": "star",
+              "start": 988,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "skim"
+            },
+            {
+              "type": "normal",
+              "start": 996,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": " wi"
+            },
+            {
+              "type": "normal",
+              "start": 1004,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "nem"
+            }
+          ]
+        },
+        {
+          "start": 1010,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1012,
+              "length": 1,
+              "pitch": 45,
+              "lyrics": "I"
+            },
+            {
+              "type": "normal",
+              "start": 1014,
+              "length": 1,
+              "pitch": 45,
+              "lyrics": " za"
+            },
+            {
+              "type": "normal",
+              "start": 1016,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": "nu"
+            },
+            {
+              "type": "normal",
+              "start": 1020,
+              "length": 5,
+              "pitch": 45,
+              "lyrics": "rze"
+            },
+            {
+              "type": "normal",
+              "start": 1026,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": " sie"
+            }
+          ]
+        },
+        {
+          "start": 1038,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1040,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "Z"
+            },
+            {
+              "type": "normal",
+              "start": 1044,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " mo"
+            },
+            {
+              "type": "normal",
+              "start": 1052,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ja"
+            },
+            {
+              "type": "normal",
+              "start": 1056,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " dziew"
+            },
+            {
+              "type": "normal",
+              "start": 1064,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "czy"
+            },
+            {
+              "type": "normal",
+              "start": 1068,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "na"
+            }
+          ]
+        },
+        {
+          "start": 1084,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1088,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "Po"
+            },
+            {
+              "type": "normal",
+              "start": 1092,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": " ko"
+            },
+            {
+              "type": "normal",
+              "start": 1096,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "la"
+            },
+            {
+              "type": "normal",
+              "start": 1100,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "na"
+            }
+          ]
+        },
+        {
+          "start": 1102,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1104,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Po"
+            },
+            {
+              "type": "normal",
+              "start": 1108,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " pas"
+            },
+            {
+              "type": "normal",
+              "start": 1116,
+              "length": 7,
+              "pitch": 48,
+              "lyrics": " po"
+            },
+            {
+              "type": "normal",
+              "start": 1124,
+              "length": 9,
+              "pitch": 50,
+              "lyrics": " szy"
+            },
+            {
+              "type": "normal",
+              "start": 1134,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 1149,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1152,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 1156,
+              "length": 8,
+              "pitch": 52,
+              "lyrics": "bie-jej"
+            },
+            {
+              "type": "normal",
+              "start": 1166,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": " far"
+            },
+            {
+              "type": "normal",
+              "start": 1171,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "bo"
+            },
+            {
+              "type": "normal",
+              "start": 1176,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "wa"
+            },
+            {
+              "type": "star",
+              "start": 1180,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ne"
+            },
+            {
+              "type": "normal",
+              "start": 1188,
+              "length": 7,
+              "pitch": 43,
+              "lyrics": " rze"
+            },
+            {
+              "type": "normal",
+              "start": 1196,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "sy"
+            }
+          ]
+        },
+        {
+          "start": 1206,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1208,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "Pie"
+            },
+            {
+              "type": "normal",
+              "start": 1212,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "gi"
+            },
+            {
+              "type": "normal",
+              "start": 1220,
+              "length": 6,
+              "pitch": 47,
+              "lyrics": " i"
+            }
+          ]
+        },
+        {
+          "start": 1233,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1236,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "Po"
+            },
+            {
+              "type": "normal",
+              "start": 1240,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "licz"
+            },
+            {
+              "type": "normal",
+              "start": 1244,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ki"
+            },
+            {
+              "type": "normal",
+              "start": 1252,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " bla"
+            },
+            {
+              "type": "normal",
+              "start": 1260,
+              "length": 6,
+              "pitch": 47,
+              "lyrics": "de"
+            }
+          ]
+        },
+        {
+          "start": 1276,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1280,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 1284,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "bie"
+            },
+            {
+              "type": "normal",
+              "start": 1288,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " kie"
+            },
+            {
+              "type": "normal",
+              "start": 1292,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "dy"
+            },
+            {
+              "type": "star",
+              "start": 1300,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " miek"
+            },
+            {
+              "type": "normal",
+              "start": 1308,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "o"
+            },
+            {
+              "type": "normal",
+              "start": 1316,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": " la"
+            },
+            {
+              "type": "normal",
+              "start": 1320,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "du"
+            },
+            {
+              "type": "normal",
+              "start": 1324,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 1334,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1336,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "O"
+            },
+            {
+              "type": "normal",
+              "start": 1340,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "na"
+            },
+            {
+              "type": "normal",
+              "start": 1344,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": " zmys"
+            },
+            {
+              "type": "normal",
+              "start": 1348,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " lo"
+            },
+            {
+              "type": "normal",
+              "start": 1356,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "wo"
+            },
+            {
+              "type": "normal",
+              "start": 1360,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": " na"
+            }
+          ]
+        },
+        {
+          "start": 1364,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1366,
+              "length": 5,
+              "pitch": 47,
+              "lyrics": "Mo"
+            },
+            {
+              "type": "normal",
+              "start": 1372,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "jej"
+            },
+            {
+              "type": "star",
+              "start": 1380,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " twa"
+            },
+            {
+              "type": "normal",
+              "start": 1388,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": "rzy"
+            }
+          ]
+        },
+        {
+          "start": 1405,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1416,
+              "length": 4,
+              "pitch": 48,
+              "lyrics": "Tak"
+            }
+          ]
+        },
+        {
+          "start": 1426,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1428,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "tyl"
+            },
+            {
+              "type": "normal",
+              "start": 1436,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 1444,
+              "length": 7,
+              "pitch": 43,
+              "lyrics": " o"
+            },
+            {
+              "type": "normal",
+              "start": 1452,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "na"
+            }
+          ]
+        },
+        {
+          "start": 1468,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1486,
+              "length": 1,
+              "pitch": 48,
+              "lyrics": "Jak"
+            },
+            {
+              "type": "star",
+              "start": 1488,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 1492,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "jed"
+            },
+            {
+              "type": "normal",
+              "start": 1500,
+              "length": 10,
+              "pitch": 50,
+              "lyrics": "wab"
+            }
+          ]
+        },
+        {
+          "start": 1520,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1536,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "O"
+            },
+            {
+              "type": "normal",
+              "start": 1540,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "fia"
+            },
+            {
+              "type": "normal",
+              "start": 1544,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "ru"
+            },
+            {
+              "type": "normal",
+              "start": 1548,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "je"
+            },
+            {
+              "type": "normal",
+              "start": 1556,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " mo"
+            },
+            {
+              "type": "normal",
+              "start": 1564,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "jej"
+            },
+            {
+              "type": "star",
+              "start": 1568,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": " dziew"
+            },
+            {
+              "type": "normal",
+              "start": 1576,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "czy"
+            },
+            {
+              "type": "normal",
+              "start": 1580,
+              "length": 6,
+              "pitch": 45,
+              "lyrics": "nie"
+            }
+          ]
+        },
+        {
+          "start": 1596,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1604,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "Ho"
+            },
+            {
+              "type": "normal",
+              "start": 1608,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "lan"
+            },
+            {
+              "type": "normal",
+              "start": 1612,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "di"
+            },
+            {
+              "type": "normal",
+              "start": 1620,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " mor"
+            },
+            {
+              "type": "normal",
+              "start": 1628,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "skie"
+            },
+            {
+              "type": "normal",
+              "start": 1636,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": " o"
+            },
+            {
+              "type": "normal",
+              "start": 1640,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "wo"
+            },
+            {
+              "type": "normal",
+              "start": 1644,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "ce"
+            }
+          ]
+        },
+        {
+          "start": 1658,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1668,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "Wraz"
+            },
+            {
+              "type": "normal",
+              "start": 1671,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": " z"
+            },
+            {
+              "type": "normal",
+              "start": 1672,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": " ni"
+            },
+            {
+              "type": "normal",
+              "start": 1676,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "mi"
+            }
+          ]
+        },
+        {
+          "start": 1678,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1680,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "Po"
+            },
+            {
+              "type": "normal",
+              "start": 1684,
+              "length": 2,
+              "pitch": 52,
+              "lyrics": "dej"
+            },
+            {
+              "type": "normal",
+              "start": 1688,
+              "length": 2,
+              "pitch": 50,
+              "lyrics": "rza"
+            },
+            {
+              "type": "normal",
+              "start": 1692,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ne"
+            },
+            {
+              "type": "normal",
+              "start": 1696,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": " przy"
+            },
+            {
+              "type": "normal",
+              "start": 1700,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "go"
+            },
+            {
+              "type": "normal",
+              "start": 1708,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "dy"
+            }
+          ]
+        },
+        {
+          "start": 1724,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1728,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Bez"
+            },
+            {
+              "type": "normal",
+              "start": 1732,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " pie"
+            },
+            {
+              "type": "star",
+              "start": 1736,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "nie"
+            },
+            {
+              "type": "normal",
+              "start": 1740,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "dzy"
+            }
+          ]
+        },
+        {
+          "start": 1746,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1748,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "Dzi"
+            },
+            {
+              "type": "normal",
+              "start": 1756,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "kie"
+            },
+            {
+              "type": "normal",
+              "start": 1760,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": " pod"
+            },
+            {
+              "type": "normal",
+              "start": 1764,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "ró"
+            },
+            {
+              "type": "normal",
+              "start": 1772,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": "ze"
+            }
+          ]
+        },
+        {
+          "start": 1782,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1784,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Skra"
+            },
+            {
+              "type": "normal",
+              "start": 1788,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "wek"
+            }
+          ]
+        },
+        {
+          "start": 1796,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1798,
+              "length": 1,
+              "pitch": 50,
+              "lyrics": "wszyst"
+            },
+            {
+              "type": "normal",
+              "start": 1800,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 1804,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "kich"
+            }
+          ]
+        },
+        {
+          "start": 1810,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1812,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Ta"
+            },
+            {
+              "type": "normal",
+              "start": 1816,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "jem"
+            },
+            {
+              "type": "normal",
+              "start": 1820,
+              "length": 4,
+              "pitch": 50,
+              "lyrics": "nych"
+            },
+            {
+              "type": "normal",
+              "start": 1828,
+              "length": 3,
+              "pitch": 48,
+              "lyrics": " wy"
+            },
+            {
+              "type": "normal",
+              "start": 1832,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "cie"
+            },
+            {
+              "type": "normal",
+              "start": 1836,
+              "length": 4,
+              "pitch": 50,
+              "lyrics": "czek"
+            }
+          ]
+        },
+        {
+          "start": 1850,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1854,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "Sam"
+            },
+            {
+              "type": "star",
+              "start": 1862,
+              "length": 5,
+              "pitch": 52,
+              "lyrics": " slo"
+            },
+            {
+              "type": "normal",
+              "start": 1868,
+              "length": 1,
+              "pitch": 52,
+              "lyrics": "wa"
+            }
+          ]
+        },
+        {
+          "start": 1870,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1872,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "U"
+            },
+            {
+              "type": "normal",
+              "start": 1876,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "bie"
+            },
+            {
+              "type": "normal",
+              "start": 1884,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ram"
+            },
+            {
+              "type": "normal",
+              "start": 1888,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " dos"
+            },
+            {
+              "type": "normal",
+              "start": 1892,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 1896,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "na"
+            },
+            {
+              "type": "normal",
+              "start": 1900,
+              "length": 5,
+              "pitch": 50,
+              "lyrics": "le"
+            }
+          ]
+        },
+        {
+          "start": 1908,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1910,
+              "length": 1,
+              "pitch": 50,
+              "lyrics": "Resz"
+            },
+            {
+              "type": "normal",
+              "start": 1912,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "~"
+            },
+            {
+              "type": "normal",
+              "start": 1916,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "te"
+            },
+            {
+              "type": "normal",
+              "start": 1920,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " sta"
+            },
+            {
+              "type": "normal",
+              "start": 1924,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "no"
+            },
+            {
+              "type": "normal",
+              "start": 1928,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "wi"
+            }
+          ]
+        },
+        {
+          "start": 1938,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1940,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "Mo"
+            },
+            {
+              "type": "normal",
+              "start": 1948,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "ja"
+            },
+            {
+              "type": "normal",
+              "start": 1952,
+              "length": 6,
+              "pitch": 50,
+              "lyrics": " dziew"
+            },
+            {
+              "type": "normal",
+              "start": 1959,
+              "length": 4,
+              "pitch": 50,
+              "lyrics": "czy"
+            },
+            {
+              "type": "normal",
+              "start": 1964,
+              "length": 4,
+              "pitch": 45,
+              "lyrics": "na"
+            }
+          ]
+        },
+        {
+          "start": 1980,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1984,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Tyl"
+            },
+            {
+              "type": "normal",
+              "start": 1988,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 1992,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " o"
+            },
+            {
+              "type": "normal",
+              "start": 1996,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "na"
+            }
+          ]
+        },
+        {
+          "start": 2002,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2004,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": "Jest"
+            },
+            {
+              "type": "normal",
+              "start": 2012,
+              "length": 6,
+              "pitch": 48,
+              "lyrics": " jak"
+            },
+            {
+              "type": "normal",
+              "start": 2020,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " jed"
+            },
+            {
+              "type": "normal",
+              "start": 2028,
+              "length": 5,
+              "pitch": 50,
+              "lyrics": "wab"
+            }
+          ]
+        },
+        {
+          "start": 2044,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2048,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 2052,
+              "length": 8,
+              "pitch": 52,
+              "lyrics": "bie-jej"
+            },
+            {
+              "type": "normal",
+              "start": 2062,
+              "length": 5,
+              "pitch": 52,
+              "lyrics": " far"
+            },
+            {
+              "type": "normal",
+              "start": 2068,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "bo"
+            },
+            {
+              "type": "normal",
+              "start": 2072,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "wa"
+            },
+            {
+              "type": "normal",
+              "start": 2076,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ne"
+            },
+            {
+              "type": "normal",
+              "start": 2084,
+              "length": 7,
+              "pitch": 43,
+              "lyrics": " rze"
+            },
+            {
+              "type": "normal",
+              "start": 2092,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "sy"
+            }
+          ]
+        },
+        {
+          "start": 2102,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2104,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "Pie"
+            },
+            {
+              "type": "normal",
+              "start": 2108,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "gi"
+            },
+            {
+              "type": "normal",
+              "start": 2116,
+              "length": 6,
+              "pitch": 47,
+              "lyrics": " i"
+            }
+          ]
+        },
+        {
+          "start": 2129,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2132,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "Po"
+            },
+            {
+              "type": "normal",
+              "start": 2136,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "liz"
+            },
+            {
+              "type": "normal",
+              "start": 2140,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "zki"
+            },
+            {
+              "type": "normal",
+              "start": 2148,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " bla"
+            },
+            {
+              "type": "star",
+              "start": 2156,
+              "length": 6,
+              "pitch": 47,
+              "lyrics": "de"
+            }
+          ]
+        },
+        {
+          "start": 2172,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2176,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 2180,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "bie"
+            },
+            {
+              "type": "normal",
+              "start": 2184,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " kie"
+            },
+            {
+              "type": "normal",
+              "start": 2188,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 2196,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " miek"
+            },
+            {
+              "type": "normal",
+              "start": 2204,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ko"
+            },
+            {
+              "type": "normal",
+              "start": 2212,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": " la"
+            },
+            {
+              "type": "normal",
+              "start": 2216,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "du"
+            },
+            {
+              "type": "normal",
+              "start": 2220,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 2230,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2232,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "O"
+            },
+            {
+              "type": "normal",
+              "start": 2236,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "na"
+            },
+            {
+              "type": "star",
+              "start": 2240,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": " zmys"
+            },
+            {
+              "type": "normal",
+              "start": 2244,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " lo"
+            },
+            {
+              "type": "normal",
+              "start": 2252,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "wo"
+            },
+            {
+              "type": "normal",
+              "start": 2256,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": " na"
+            }
+          ]
+        },
+        {
+          "start": 2260,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2262,
+              "length": 5,
+              "pitch": 47,
+              "lyrics": "Mo"
+            },
+            {
+              "type": "normal",
+              "start": 2268,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "jej"
+            },
+            {
+              "type": "normal",
+              "start": 2276,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " twa"
+            },
+            {
+              "type": "normal",
+              "start": 2284,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": "rzy"
+            }
+          ]
+        },
+        {
+          "start": 2300,
+          "notes": [
+            {
+              "type": "star",
+              "start": 2304,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 2308,
+              "length": 8,
+              "pitch": 52,
+              "lyrics": "bie-jej"
+            },
+            {
+              "type": "normal",
+              "start": 2318,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": " far"
+            },
+            {
+              "type": "normal",
+              "start": 2323,
+              "length": 4,
+              "pitch": 52,
+              "lyrics": "bo"
+            },
+            {
+              "type": "normal",
+              "start": 2328,
+              "length": 3,
+              "pitch": 50,
+              "lyrics": "wa"
+            },
+            {
+              "type": "star",
+              "start": 2332,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ne"
+            },
+            {
+              "type": "normal",
+              "start": 2340,
+              "length": 7,
+              "pitch": 43,
+              "lyrics": " rze"
+            },
+            {
+              "type": "normal",
+              "start": 2348,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "sy"
+            }
+          ]
+        },
+        {
+          "start": 2358,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2360,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "Pie"
+            },
+            {
+              "type": "normal",
+              "start": 2364,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "gi"
+            },
+            {
+              "type": "star",
+              "start": 2372,
+              "length": 6,
+              "pitch": 47,
+              "lyrics": " i"
+            }
+          ]
+        },
+        {
+          "start": 2385,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2388,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": "Po"
+            },
+            {
+              "type": "normal",
+              "start": 2392,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "licz"
+            },
+            {
+              "type": "normal",
+              "start": 2396,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ki"
+            },
+            {
+              "type": "normal",
+              "start": 2404,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " bla"
+            },
+            {
+              "type": "normal",
+              "start": 2412,
+              "length": 6,
+              "pitch": 47,
+              "lyrics": "de"
+            }
+          ]
+        },
+        {
+          "start": 2428,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2432,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "Lu"
+            },
+            {
+              "type": "normal",
+              "start": 2436,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": "bie"
+            },
+            {
+              "type": "normal",
+              "start": 2440,
+              "length": 3,
+              "pitch": 52,
+              "lyrics": " kie"
+            },
+            {
+              "type": "normal",
+              "start": 2444,
+              "length": 7,
+              "pitch": 52,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 2452,
+              "length": 7,
+              "pitch": 50,
+              "lyrics": " miek"
+            },
+            {
+              "type": "normal",
+              "start": 2460,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "ko"
+            },
+            {
+              "type": "star",
+              "start": 2468,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": " la"
+            },
+            {
+              "type": "normal",
+              "start": 2472,
+              "length": 3,
+              "pitch": 43,
+              "lyrics": "du"
+            },
+            {
+              "type": "normal",
+              "start": 2476,
+              "length": 8,
+              "pitch": 45,
+              "lyrics": "je"
+            }
+          ]
+        },
+        {
+          "start": 2486,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2488,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "O"
+            },
+            {
+              "type": "normal",
+              "start": 2492,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "na"
+            },
+            {
+              "type": "normal",
+              "start": 2496,
+              "length": 3,
+              "pitch": 45,
+              "lyrics": " zmys"
+            },
+            {
+              "type": "normal",
+              "start": 2500,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": "lo"
+            },
+            {
+              "type": "normal",
+              "start": 2508,
+              "length": 3,
+              "pitch": 47,
+              "lyrics": "wo"
+            },
+            {
+              "type": "normal",
+              "start": 2512,
+              "length": 2,
+              "pitch": 45,
+              "lyrics": " na"
+            }
+          ]
+        },
+        {
+          "start": 2516,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2518,
+              "length": 5,
+              "pitch": 47,
+              "lyrics": "Mo"
+            },
+            {
+              "type": "normal",
+              "start": 2524,
+              "length": 7,
+              "pitch": 45,
+              "lyrics": "jej"
+            },
+            {
+              "type": "normal",
+              "start": 2532,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": " twa"
+            },
+            {
+              "type": "normal",
+              "start": 2540,
+              "length": 7,
+              "pitch": 47,
+              "lyrics": "rzy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
