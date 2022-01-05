@@ -201,7 +201,7 @@ const LyricsContainer = styled.div`
     width: 100%;
     text-align: center;
     line-height: 1;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
 `;
 
 const LyricsLine = styled.div<{ secondLine?: boolean, width: number }>(({ secondLine, width }) => `

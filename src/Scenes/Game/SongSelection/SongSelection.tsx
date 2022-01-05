@@ -73,7 +73,7 @@ const SongListEntryDetails = styled.div`
     color: ${styles.colors.text.active};
     font-weight: bold;
     font-size: 18px;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: .5px black;
     `;
 
 const SongListEntryDetailsArtist = styled.span`

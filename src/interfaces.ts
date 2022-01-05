@@ -49,7 +49,7 @@ export interface SongTrack {
     sections: Section[];
 }
 
-export interface SongPreview extends Pick<Song, 'artist' | 'title' | 'video' | 'previewStart' | 'previewEnd' | 'videoGap'> {
+export interface SongPreview extends Omit<Song, 'tracks'> {
     file: string,
 }
 
