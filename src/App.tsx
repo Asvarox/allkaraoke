@@ -4,23 +4,19 @@
 // import song from './songs/netflix-toss-a-coin-to-your-witcher.json';
 
 import { useState } from 'react';
+import { Route, Router } from 'wouter';
 import { Song, SongPreview } from './interfaces';
 import Convert from './Scenes/Convert/Convert';
-import Singing from './Scenes/Singing/Singing';
-import SongSelection from './Scenes/SongSelection/SongSelection';
+import Game from './Scenes/Game/Game';
+import Welcome from './Scenes/Welcome/App';
+import useHashLocation from './useHashLocation';
 
 function App() {
-    const [selectedSongPath, setSelectedSongPath] = useState<SongPreview | null>(null);
-
-    if (window.location.search === '?convert') {
-        return <Convert />;
-    }
-
-    if (!selectedSongPath) {
-        return <SongSelection onSongSelected={preview => setSelectedSongPath(preview)} />
-    } else {
-        return <Singing songPreview={selectedSongPath} />
-    }
+    return <Router hook={useHashLocation}>
+        <Route path="/game" component={Game} />
+        <Route path="/convert" component={Convert} />
+        <Route path="/" component={Welcome} />
+    </Router>
 }
 
 export default App;

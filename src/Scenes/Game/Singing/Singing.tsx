@@ -1,5 +1,5 @@
 import useWindowSize from './useWindowSize';
-import { Song, SongPreview } from '../../interfaces';
+import { Song, SongPreview } from '../../../interfaces';
 import { useQuery } from 'react-query';
 import Player from './Player';
 

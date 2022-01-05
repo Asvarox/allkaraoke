@@ -1,4 +1,4 @@
-import { Note, PitchRecord, RelativeLine } from "../../../interfaces";
+import { Note, PitchRecord, RelativeLine } from "../../../../interfaces";
 import { calcDistance } from "./calcDistance";
 
 export default function frequenciesToLines(frequencies: PitchRecord[], beatLength: number, gap: number, notes: Note[]): RelativeLine[] {

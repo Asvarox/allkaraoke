@@ -1,6 +1,6 @@
 import YouTube from 'react-youtube';
 import styled from 'styled-components'
-import { SongPreview } from "../../interfaces";
+import { SongPreview } from "../../../interfaces";
 import styles from "../Singing/Drawing/styles";
 
 interface Props {

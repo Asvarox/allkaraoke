@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "react-query";
 import styled from 'styled-components'
-import { SongPreview } from "../../interfaces";
+import { SongPreview } from "../../../interfaces";
 import styles from "../Singing/Drawing/styles";
 import FocusedSong from "./FocusedSong";
 

@@ -1,5 +1,5 @@
 import { Song } from "../../interfaces";
-import isNotesSection from "../Singing/Helpers/isNotesSection";
+import isNotesSection from "../Game/Singing/Helpers/isNotesSection";
 
 export default function calculateProperBPM(desiredEndMs: number, song: Song) {
     const notesSections = song.tracks[0].sections.filter(isNotesSection)

@@ -2,7 +2,7 @@ import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useSt
 import './Player.css';
 import YouTube from 'react-youtube';
 import GameOverlay from './GameOverlay';
-import { Song } from '../../interfaces';
+import { Song } from '../../../interfaces';
 
 const dstyle = {
     position: 'absolute' as any,

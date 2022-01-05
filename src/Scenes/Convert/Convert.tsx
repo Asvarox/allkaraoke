@@ -2,9 +2,9 @@ import { ChangeEventHandler, useEffect, useRef, useState } from "react";
 import YouTube from "react-youtube";
 import styled from 'styled-components'
 import { ExtractOptional, Note, NotesSection, Section, Song, SongPreview } from "../../interfaces";
-import getSongBeatLength from "../Singing/Helpers/getSongBeatLength";
-import isNotesSection from "../Singing/Helpers/isNotesSection";
-import Player, { PlayerRef } from "../Singing/Player";
+import getSongBeatLength from "../Game/Singing/Helpers/getSongBeatLength";
+import isNotesSection from "../Game/Singing/Helpers/isNotesSection";
+import Player, { PlayerRef } from "../Game/Singing/Player";
 import calculateProperBPM from "./calculateProperBpm";
 import convertTxtToSong from "./convertTxtToSong";
 import importUltrastarEsSong from "./importUltrastarEsSong";

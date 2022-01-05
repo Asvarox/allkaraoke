@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import drawFrame from './Drawing';
 import DummyInput from './Input/DummyInput';
 
-import { PitchRecord, RelativeLine, Song } from '../../interfaces';
+import { PitchRecord, RelativeLine, Song } from '../../../interfaces';
 import styles from './Drawing/styles';
 import isNotesSection from './Helpers/isNotesSection';
 import getSongBeatLength from './Helpers/getSongBeatLength';

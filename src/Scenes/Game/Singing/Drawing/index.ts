@@ -1,5 +1,5 @@
 import { calcDistance } from '../Helpers/calcDistance';
-import { PitchRecord, RelativeLine, Song } from '../../../interfaces';
+import { PitchRecord, RelativeLine, Song } from '../../../../interfaces';
 import roundRect from './roundRect';
 import styles from './styles';
 import isNotesSection from '../Helpers/isNotesSection';
