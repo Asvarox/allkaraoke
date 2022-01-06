@@ -74,6 +74,36 @@
     "file": "Akademia Pana Kleksa-Kaczka dziwaczka.json"
   },
   {
+    "title": "Czerwone korale",
+    "artist": "BRAThANKI",
+    "bpm": 321.44,
+    "bar": 4,
+    "gap": 646,
+    "video": "SG8B4DT6ud8",
+    "year": "2000",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=Czerwone%20korale",
+    "file": "BRAThANKI-Czerwone korale.json"
+  },
+  {
+    "title": "W kinie, w Lublinie",
+    "artist": "BRAThANKI",
+    "bpm": 306,
+    "bar": 4,
+    "gap": 27170,
+    "video": "kWRhdN2XusA",
+    "year": "2001",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=W%20kinie%2C%20w%20Lublinie",
+    "file": "BRAThANKI-W kinie, w Lublinie.json"
+  },
+  {
     "title": "Facet To Swinia",
     "artist": "Big Cyc",
     "bpm": 224,

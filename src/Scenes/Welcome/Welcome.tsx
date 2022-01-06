@@ -8,6 +8,11 @@ function Welcome() {
                     <h1>Game</h1>
                 </a>
             </Link>
+            <Link href="/edit">
+                <a>
+                    <h1>Edit songs</h1>
+                </a>
+            </Link>
             <Link href="/convert">
                 <a>
                     <h1>Convert UltraStar .txt</h1>
