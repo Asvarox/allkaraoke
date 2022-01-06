@@ -17,6 +17,7 @@
     "browserify-fs": "^1.0.0",
     "buffer": "^6.0.3",
     "fft": "^0.2.1",
+    "lodash": "^4.17.21",
     "ml5": "^0.7.1",
     "path-browserify": "^1.0.1",
     "react": "^17.0.2",
@@ -57,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.178",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",

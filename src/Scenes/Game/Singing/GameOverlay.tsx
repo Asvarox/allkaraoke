@@ -9,6 +9,8 @@ import getSongBeatLength from './Helpers/getSongBeatLength';
 import frequenciesToLines from './Helpers/frequenciesToLines';
 import styled from 'styled-components';
 import MicInput from './Input/MicInput';
+import calculateScore from './Helpers/calculateScore';
+import YouTube from 'react-youtube';
 
 const Input = DummyInput;
 // const Input = MicInput;
@@ -19,11 +21,11 @@ interface Props {
     currentStatus: number;
     width: number;
     height: number;
+    onSongEnd?: (playerLines: [RelativeLine[], RelativeLine[]]) => void;
 }
 
-const MAX_POINTS = 2500000;
 
-function GameOverlay({ song, currentTime, currentStatus, width, height }: Props) {
+function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEnd }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
     const songBeatLength = useMemo(() => getSongBeatLength(song), [song]);
@@ -51,9 +53,6 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
         return [min, max];
     }, [song]);
 
-    const [score1, setScore1] = useState(0);
-    const [score2, setScore2] = useState(0);
-
     const currentSectionIndex = useMemo(() => song.tracks[0].sections.findIndex((section, index, sections) => {
         if (currentBeat < 0) return true;
         if (currentBeat < section.start) return false;
@@ -78,14 +77,6 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
     const playerLines = useRef<[RelativeLine[], RelativeLine[]]>([[], []]);
     const historingPlayerLines = useRef<[RelativeLine[], RelativeLine[]]>([[], []]);
 
-    const sungBeatsCount = useMemo(() => {
-        let count = 0;
-        song.tracks[0].sections.filter(isNotesSection).forEach(section => count = section.notes.reduce((acc, note) => acc + note.length, count));
-
-        return count;
-    }, [song]);
-
-
     useEffect(() => {
         historicPitches.current[0] = [];
         historicPitches.current[1] = [];
@@ -96,18 +87,6 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
         playerLines.current[0] = [];
         playerLines.current[1] = [];
     }, [currentSectionIndex]);
-
-    useEffect(() => {
-        const score1 = [...historingPlayerLines.current[0], ...playerLines.current[0]]
-            .filter(line => line.distance === 0)
-            .reduce((sum, line) => sum + line.length, 0);
-        const score2 = [...historingPlayerLines.current[1], ...playerLines.current[1]]
-            .filter(line => line.distance === 0)
-            .reduce((sum, line) => sum + line.length, 0);
-
-        setScore1(score1);
-        setScore2(score2);
-    }, [currentTime])
 
     useEffect(() => {
         if (!canvas.current) return;
@@ -134,6 +113,10 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
             playerLines.current,
         );
     }, [canvas, currentSectionIndex, currentTime, minPitch, maxPitch, songBeatLength, song, currentSection]);
+
+    useEffect(() => {
+        if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) onSongEnd(historingPlayerLines.current);
+    }, [currentStatus, historingPlayerLines, onSongEnd])
 
     const lyrics = isNotesSection(currentSection) ? (
         <LyricsContainer>
@@ -163,8 +146,8 @@ function GameOverlay({ song, currentTime, currentStatus, width, height }: Props)
     return (
         <Screen>
             <Scores height={overlayHeight}>
-                <span>{((score1 / sungBeatsCount) * MAX_POINTS).toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
-                <span>{((score2 / sungBeatsCount) * MAX_POINTS).toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                <span>{calculateScore([...historingPlayerLines.current[0], ...playerLines.current[0]], song)}</span>
+                <span>{calculateScore([...historingPlayerLines.current[1], ...playerLines.current[1]], song)}</span>
             </Scores>
             {lyrics}
             <canvas ref={canvas} width={width} height={overlayHeight} />

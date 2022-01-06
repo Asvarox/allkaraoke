@@ -1,13 +1,14 @@
 {
     "artist": "Dummy",
     "title": "Dummy",
-    "video": "waMkFIzvDpE",
-    "gap": 1425,
-    "bpm": 211,
+    "video": "ezdh-0hxV_I",
+    "gap": 1000,
+    "bpm": 911,
     "bar": 4,
     "tracks": [{
     "sections": [
         {
+            "type": "notes",
             "start": 0,
             "notes": [
                 {
@@ -34,6 +35,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 150,
             "notes": [
                 {
@@ -86,6 +88,7 @@
             ]
         },
         {
+            "type": "notes",
             "start": 350,
             "notes": [
                 {
@@ -105,32 +108,6 @@
                 {
                     "type": "normal",
                     "start": 420,
-                    "length": 18,
-                    "pitch": 0,
-                    "lyrics": "When"
-                }
-            ]
-        },
-        {
-            "start": 450,
-            "notes": [
-                {
-                    "type": "normal",
-                    "start": 460,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 481,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 520,
                     "length": 18,
                     "pitch": 0,
                     "lyrics": "When"

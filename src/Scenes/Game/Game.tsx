@@ -4,12 +4,12 @@ import Singing from './Singing/Singing';
 import SongSelection from './SongSelection/SongSelection';
 
 function Game() {
-    const [selectedSongPath, setSelectedSongPath] = useState<SongPreview | null>(null);
+    const [selectedSong, setSelectedSong] = useState<SongPreview | null>(null);
 
-    if (!selectedSongPath) {
-        return <SongSelection onSongSelected={preview => setSelectedSongPath(preview)} />
+    if (!selectedSong) {
+        return <SongSelection onSongSelected={preview => setSelectedSong(preview)} />
     } else {
-        return <Singing songPreview={selectedSongPath} />
+        return <Singing songPreview={selectedSong} returnToSongSelection={() => setSelectedSong(null)} />
     }
 }
 

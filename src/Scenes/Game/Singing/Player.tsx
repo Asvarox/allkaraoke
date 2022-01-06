@@ -1,15 +1,8 @@
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
-import './Player.css';
 import YouTube from 'react-youtube';
 import GameOverlay from './GameOverlay';
-import { Song } from '../../../interfaces';
-
-const dstyle = {
-    position: 'absolute' as any,
-    zIndex: 1,
-    backgroundColor: 'rgba(0, 0, 0, .2)',
-    pointerEvents: 'none' as any,
-};
+import { RelativeLine, Song } from '../../../interfaces';
+import styled from 'styled-components';
 
 interface Props {
     song: Song,
@@ -18,6 +11,7 @@ interface Props {
     autoplay?: boolean,
     showControls?: boolean,
     onTimeUpdate?: (newTime: number) => void,
+    onSongEnd?: (playerLines: [RelativeLine[], RelativeLine[]]) => void;
 }
 
 export interface PlayerRef {
@@ -26,7 +20,7 @@ export interface PlayerRef {
     setPlaybackSpeed: (speed: number) => void,
 }
 
-function Player({ song, width, height, autoplay = true, showControls = false, onTimeUpdate}: Props, ref: ForwardedRef<PlayerRef>) {
+function Player({ song, width, height, autoplay = true, showControls = false, onTimeUpdate, onSongEnd}: Props, ref: ForwardedRef<PlayerRef>) {
     const player = useRef<YouTube | null>(null);
     const [currentTime, setCurrentTime] = useState(0);
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
@@ -60,24 +54,23 @@ function Player({ song, width, height, autoplay = true, showControls = false, on
     }))
     
     return (
-        <div className="App">
+        <Container>
             {currentStatus !== YouTube.PlayerState.UNSTARTED && (
-                <div style={dstyle}>
+                <Overlay>
                     <GameOverlay
                         currentStatus={currentStatus}
                         song={song}
                         currentTime={currentTime}
                         width={width}
                         height={height}
+                        onSongEnd={onSongEnd}
                     />
-                </div>
+                </Overlay>
             )}
             <YouTube
                 ref={player}
                 videoId={song.video}
                 opts={{
-                    // width: String(width),
-                    // height: String(height),
                     playerVars: {
                         autoplay: autoplay ? 1 : 0,
                         showinfo: 0, 
@@ -90,8 +83,23 @@ function Player({ song, width, height, autoplay = true, showControls = false, on
                 }}
                 onStateChange={(e) => setCurrentStatus(e.data)}
             />
-        </div>
+        </Container>
     );
 }
+
+const Container = styled.div`
+    position: relative;
+`;
+
+const Overlay = styled.div`
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .2);
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+`;
 
 export default forwardRef(Player);
