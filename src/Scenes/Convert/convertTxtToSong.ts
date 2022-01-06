@@ -1,12 +1,11 @@
-import { ExtractOptional, NotesSection, Section, Song } from "../../interfaces";
-
+import { ExtractOptional, NotesSection, Section, Song } from '../../interfaces';
 
 const typesMap = {
-    'R': 'rap',
-    'F': 'freestyle',
+    R: 'rap',
+    F: 'freestyle',
     '*': 'star',
     ':': 'normal',
-}
+};
 
 function getPropertyValueFromTxt(txt: string, key: string): string | undefined {
     const regex = new RegExp(`#${key}\\:(.*)`);
@@ -16,7 +15,13 @@ function getPropertyValueFromTxt(txt: string, key: string): string | undefined {
 
 const LINE_BREAK_RELATIVE_REGEXP = /\- \d+ \d+/;
 
-export default function convertTxtToSong(text: string, videoLink: string, author: string, authorUrl: string, sourceUrl: string): Song {
+export default function convertTxtToSong(
+    text: string,
+    videoLink: string,
+    author: string,
+    authorUrl: string,
+    sourceUrl: string,
+): Song {
     const additionalData: ExtractOptional<Song> = {
         year: getPropertyValueFromTxt(text, 'YEAR'),
         edition: getPropertyValueFromTxt(text, 'EDITION'),
@@ -26,7 +31,7 @@ export default function convertTxtToSong(text: string, videoLink: string, author
         author,
         authorUrl,
         sourceUrl,
-    }
+    };
     const song: Song = {
         title: getPropertyValueFromTxt(text, 'TITLE') ?? '',
         artist: getPropertyValueFromTxt(text, 'ARTIST') ?? '',
@@ -36,7 +41,7 @@ export default function convertTxtToSong(text: string, videoLink: string, author
         video: '',
         ...additionalData,
         tracks: [],
-    }
+    };
 
     if (author) song.author = author;
     if (authorUrl) song.authorUrl = authorUrl;
@@ -44,14 +49,14 @@ export default function convertTxtToSong(text: string, videoLink: string, author
 
     try {
         const linkUrl = new URL(videoLink);
-        song.video = linkUrl.searchParams.get('v') || 'Invalid link'
+        song.video = linkUrl.searchParams.get('v') || 'Invalid link';
     } catch (e: any) {
         song.video = `Invalid link: ${e.message}`;
     }
 
     const sections: Section[] = [{ start: 0, notes: [], type: 'notes' }];
 
-    text.split("\n").forEach(line => {
+    text.split('\n').forEach((line) => {
         if (line.startsWith('#')) return;
 
         if (LINE_BREAK_RELATIVE_REGEXP.test(line)) {
@@ -68,10 +73,10 @@ export default function convertTxtToSong(text: string, videoLink: string, author
             (lastSection as NotesSection).notes.push({
                 type: typesMap[type as 'R' | '*' | ':'] ?? 'normal',
                 start: Number(start),
-                length: Number(length), 
+                length: Number(length),
                 pitch: Number(pitch),
                 lyrics: lyrics.join(' '),
-            })
+            });
         }
     });
 

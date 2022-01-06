@@ -5,114 +5,117 @@
     "gap": 1000,
     "bpm": 911,
     "bar": 4,
-    "tracks": [{
-    "sections": [
+    "tracks": [
         {
-            "type": "notes",
-            "start": 0,
-            "notes": [
+            "sections": [
                 {
-                    "type": "normal",
+                    "type": "notes",
                     "start": 0,
-                    "length": 50,
-                    "pitch": 0,
-                    "lyrics": "When"
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 0,
+                            "length": 50,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 51,
+                            "length": 50,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 102,
+                            "length": 18,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        }
+                    ]
                 },
                 {
-                    "type": "normal",
-                    "start": 51,
-                    "length": 50,
-                    "pitch": 0,
-                    "lyrics": "When"
+                    "type": "notes",
+                    "start": 150,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 160,
+                            "length": 20,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 181,
+                            "length": 20,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 220,
+                            "length": 18,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        }
+                    ]
                 },
                 {
-                    "type": "normal",
-                    "start": 102,
-                    "length": 18,
-                    "pitch": 0,
-                    "lyrics": "When"
-                }
-            ]
-        },
-        {
-            "type": "notes",
-            "start": 150,
-            "notes": [
-                {
-                    "type": "normal",
-                    "start": 160,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
+                    "start": 250,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 260,
+                            "length": 20,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 281,
+                            "length": 20,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 320,
+                            "length": 18,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        }
+                    ]
                 },
                 {
-                    "type": "normal",
-                    "start": 181,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 220,
-                    "length": 18,
-                    "pitch": 0,
-                    "lyrics": "When"
-                }
-            ]
-        },
-        {
-            "start": 250,
-            "notes": [
-                {
-                    "type": "normal",
-                    "start": 260,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 281,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 320,
-                    "length": 18,
-                    "pitch": 0,
-                    "lyrics": "When"
-                }
-            ]
-        },
-        {
-            "type": "notes",
-            "start": 350,
-            "notes": [
-                {
-                    "type": "normal",
-                    "start": 360,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 381,
-                    "length": 20,
-                    "pitch": 0,
-                    "lyrics": "When"
-                },
-                {
-                    "type": "normal",
-                    "start": 420,
-                    "length": 18,
-                    "pitch": 0,
-                    "lyrics": "When"
+                    "type": "notes",
+                    "start": 350,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 360,
+                            "length": 20,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 381,
+                            "length": 20,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        },
+                        {
+                            "type": "normal",
+                            "start": 420,
+                            "length": 18,
+                            "pitch": 0,
+                            "lyrics": "When"
+                        }
+                    ]
                 }
             ]
         }
-    ]}]
+    ]
 }

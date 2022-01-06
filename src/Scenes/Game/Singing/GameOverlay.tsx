@@ -52,22 +52,28 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
         return [min, max];
     }, [song]);
 
-    const currentSectionIndex = useMemo(() => song.tracks[0].sections.findIndex((section, index, sections) => {
-        if (currentBeat < 0) return true;
-        if (currentBeat < section.start) return false;
-        if (index === sections.length - 1) return true;
-        if (sections[index + 1].start > currentBeat) {
-            return true;
-        }
-        return false;
-    }), [currentBeat, song]);
+    const currentSectionIndex = useMemo(
+        () =>
+            song.tracks[0].sections.findIndex((section, index, sections) => {
+                if (currentBeat < 0) return true;
+                if (currentBeat < section.start) return false;
+                if (index === sections.length - 1) return true;
+                if (sections[index + 1].start > currentBeat) {
+                    return true;
+                }
+                return false;
+            }),
+        [currentBeat, song],
+    );
 
     const currentSection = song.tracks[0].sections?.[currentSectionIndex];
     const nextSection = song.tracks[0].sections?.[currentSectionIndex + 1];
 
     const currentNote = useMemo(() => {
         if (!isNotesSection(currentSection) || currentBeat < 0) return null;
-        const index = currentSection.notes.findIndex(note => currentBeat >= note.start && currentBeat < note.start + note.length)
+        const index = currentSection.notes.findIndex(
+            (note) => currentBeat >= note.start && currentBeat < note.start + note.length,
+        );
 
         return index > -1 ? index : null;
     }, [currentBeat, currentSection]);
@@ -96,8 +102,18 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
             historicFrequencies.current[0].push({ timestamp: currentTime, frequency: frequency1 });
             historicFrequencies.current[1].push({ timestamp: currentTime, frequency: frequency2 });
 
-            playerNotes.current[0] = frequenciesToLines(historicFrequencies.current[0], songBeatLength, song.gap, currentSection.notes);
-            playerNotes.current[1] = frequenciesToLines(historicFrequencies.current[1], songBeatLength, song.gap, currentSection.notes);
+            playerNotes.current[0] = frequenciesToLines(
+                historicFrequencies.current[0],
+                songBeatLength,
+                song.gap,
+                currentSection.notes,
+            );
+            playerNotes.current[1] = frequenciesToLines(
+                historicFrequencies.current[1],
+                songBeatLength,
+                song.gap,
+                currentSection.notes,
+            );
         }
 
         drawFrame(
@@ -115,7 +131,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
 
     useEffect(() => {
         if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) onSongEnd(historicPlayerNotes.current);
-    }, [currentStatus, historicPlayerNotes, onSongEnd])
+    }, [currentStatus, historicPlayerNotes, onSongEnd]);
 
     const lyrics = isNotesSection(currentSection) ? (
         <LyricsContainer>
@@ -125,7 +141,8 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
                         key={note.start}
                         style={{
                             color: index === (currentNote ?? -1) ? styles.colors.text.active : undefined,
-                        }}>
+                        }}
+                    >
                         {note.lyrics}
                     </span>
                 ))}
@@ -138,7 +155,9 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
                 </LyricsLine>
             )}
         </LyricsContainer>
-    ) : <LyricsContainer>&nbsp;</LyricsContainer>;
+    ) : (
+        <LyricsContainer>&nbsp;</LyricsContainer>
+    );
 
     const overlayHeight = height - 2 * 100 - 40;
 
@@ -163,7 +182,8 @@ const Screen = styled.div`
     font-weight: bold;
 `;
 
-const Scores = styled.div<{ height: number }>(({ height }) => `
+const Scores = styled.div<{ height: number }>(
+    ({ height }) => `
     height: ${height}px;
     margin-top: 100px;
     position: absolute;
@@ -173,7 +193,8 @@ const Scores = styled.div<{ height: number }>(({ height }) => `
     justify-content: space-between;
     flex-direction: column;
     text-align: right;
-`);
+`,
+);
 
 const LyricsContainer = styled.div`
     box-sizing: border-box;
@@ -186,10 +207,12 @@ const LyricsContainer = styled.div`
     backdrop-filter: blur(5px);
 `;
 
-const LyricsLine = styled.div<{ secondLine?: boolean, width: number }>(({ secondLine, width }) => `
+const LyricsLine = styled.div<{ secondLine?: boolean; width: number }>(
+    ({ secondLine, width }) => `
     font-size: ${(width < 1000 ? 25 : 35) + (secondLine ? 0 : 10)}px;
     height: 45px;
     color: ${secondLine ? styles.colors.text.inactive : styles.colors.text.default};
-`);
+`,
+);
 
 export default GameOverlay;

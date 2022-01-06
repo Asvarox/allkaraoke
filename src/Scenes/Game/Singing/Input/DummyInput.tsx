@@ -1,4 +1,3 @@
-
 class DummyInput {
     private frequencies = [410, 210];
     private timestamp = 0;
@@ -16,7 +15,6 @@ class DummyInput {
                 this.frequencies[0] = Math.sin(this.timestamp / 1000) * 50 + 100;
                 this.frequencies[1] = Math.cos(this.timestamp / 1000) * 50 + 200;
             }
-
         }, 32);
     };
 

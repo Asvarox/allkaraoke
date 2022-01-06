@@ -7,9 +7,9 @@ function Game() {
     const [selectedSong, setSelectedSong] = useState<SongPreview | null>(null);
 
     if (!selectedSong) {
-        return <SongSelection onSongSelected={preview => setSelectedSong(preview)} />
+        return <SongSelection onSongSelected={(preview) => setSelectedSong(preview)} />;
     } else {
-        return <Singing songPreview={selectedSong} returnToSongSelection={() => setSelectedSong(null)} />
+        return <Singing songPreview={selectedSong} returnToSongSelection={() => setSelectedSong(null)} />;
     }
 }
 

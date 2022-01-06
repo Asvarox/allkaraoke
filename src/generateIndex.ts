@@ -1,12 +1,11 @@
-import { Song, SongPreview } from "./interfaces";
-import { readdirSync, readFileSync } from "fs";
+import { Song, SongPreview } from './interfaces';
+import { readdirSync, readFileSync } from 'fs';
 
-const SONGS_FOLDER = './public/songs'
+const SONGS_FOLDER = './public/songs';
 
 const list: SongPreview[] = [];
 
-
-readdirSync(SONGS_FOLDER).forEach(file => {
+readdirSync(SONGS_FOLDER).forEach((file) => {
     if (file === 'index.json') return;
 
     const { tracks, ...songData }: Song = JSON.parse(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));

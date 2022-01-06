@@ -21,15 +21,15 @@ const playerColors = [
             lineWidth: 2,
         },
         hit: {
-            fill: blueFill(.7),
+            fill: blueFill(0.7),
             stroke: blueStroke(0),
             lineWidth: 1,
         },
         miss: {
-            fill: blueFill(.25),
+            fill: blueFill(0.25),
             stroke: blueStroke(1),
             lineWidth: 1,
-        }
+        },
     },
     {
         gold: {
@@ -48,15 +48,15 @@ const playerColors = [
             lineWidth: 2,
         },
         hit: {
-            fill: redFill(.7),
+            fill: redFill(0.7),
             stroke: redStroke(0),
             lineWidth: 1,
         },
         miss: {
-            fill: redFill(.25),
+            fill: redFill(0.25),
             stroke: redStroke(1),
             lineWidth: 1,
-        }
+        },
     },
 ];
 
@@ -79,8 +79,8 @@ const styles = {
             active: 'orange',
             default: 'white',
             inactive: 'grey',
-        }
+        },
     },
-}
+};
 
 export default styles;

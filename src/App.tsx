@@ -6,14 +6,21 @@ import Welcome from './Scenes/Welcome/App';
 import useHashLocation from './useHashLocation';
 
 function App() {
-    return <Router hook={useHashLocation}>
-        <Route path="/game" component={Game} />
-        <Route path="/test-player">
-            {() => <Singing songPreview={{ file: 'dummy.json'} as any} returnToSongSelection={() => window.location.reload()} />}
-        </Route>
-        <Route path="/convert" component={Convert} />
-        <Route path="/" component={Welcome} />
-    </Router>
+    return (
+        <Router hook={useHashLocation}>
+            <Route path="/game" component={Game} />
+            <Route path="/test-player">
+                {() => (
+                    <Singing
+                        songPreview={{ file: 'dummy.json' } as any}
+                        returnToSongSelection={() => window.location.reload()}
+                    />
+                )}
+            </Route>
+            <Route path="/convert" component={Convert} />
+            <Route path="/" component={Welcome} />
+        </Router>
+    );
 }
 
 export default App;

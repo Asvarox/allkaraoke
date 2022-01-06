@@ -6,25 +6,43 @@ import PostGame from './PostGame';
 import { useState } from 'react';
 
 interface Props {
-    songPreview: SongPreview,
+    songPreview: SongPreview;
     returnToSongSelection: () => void;
 }
 
 function Singing({ songPreview, returnToSongSelection }: Props) {
-    const song = useQuery<Song>(`song-${songPreview.file}`, () => fetch(`./songs/${songPreview.file}`).then(response => response.json()));
+    const song = useQuery<Song>(`song-${songPreview.file}`, () =>
+        fetch(`./songs/${songPreview.file}`).then((response) => response.json()),
+    );
     const { width, height } = useWindowSize();
     const [isEnded, setIsEnded] = useState(false);
-    const [playerNotes, setPlayerNotes] = useState<[PlayerNote[], PlayerNote[]]>([[],[]]);
+    const [playerNotes, setPlayerNotes] = useState<[PlayerNote[], PlayerNote[]]>([[], []]);
 
     if (!width || !height || !song.data) return <>Loading</>;
 
     if (isEnded) {
-        return <PostGame width={width} height={height} song={song.data} playerNotes={playerNotes} onClickSongSelection={returnToSongSelection} />;
+        return (
+            <PostGame
+                width={width}
+                height={height}
+                song={song.data}
+                playerNotes={playerNotes}
+                onClickSongSelection={returnToSongSelection}
+            />
+        );
     } else {
-        return <Player song={song.data} width={width} height={height} autoplay onSongEnd={playerNotes => {
-            setIsEnded(true);
-            setPlayerNotes(playerNotes);
-        }} />;
+        return (
+            <Player
+                song={song.data}
+                width={width}
+                height={height}
+                autoplay
+                onSongEnd={(playerNotes) => {
+                    setIsEnded(true);
+                    setPlayerNotes(playerNotes);
+                }}
+            />
+        );
     }
 }
 

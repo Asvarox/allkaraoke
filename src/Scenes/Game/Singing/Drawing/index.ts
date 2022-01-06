@@ -6,7 +6,7 @@ import isNotesSection from '../Helpers/isNotesSection';
 
 const pitchPadding = 6;
 
-function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string, stroke: string, lineWidth: number }) {
+function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string; stroke: string; lineWidth: number }) {
     ctx.fillStyle = style.fill;
     ctx.strokeStyle = style.stroke;
     ctx.lineWidth = style.lineWidth;
@@ -19,7 +19,7 @@ function drawTimeIndicator(ctx: CanvasRenderingContext2D, data: DrawingData) {
     const relativeTime = Math.max(0, currentTime - timeSectionGap);
 
     ctx!.strokeStyle = 'black';
-    const timeLineX = paddingHorizontal + (relativeTime / maxTime) * (canvas.width - (2 * paddingHorizontal));
+    const timeLineX = paddingHorizontal + (relativeTime / maxTime) * (canvas.width - 2 * paddingHorizontal);
     ctx!.beginPath();
     ctx!.moveTo(timeLineX, 0);
     ctx!.lineTo(timeLineX, canvas.height);
@@ -31,30 +31,38 @@ function calculateData({ canvas, currentSectionIndex, song, songBeatLength, minP
     const currentSection = sections[currentSectionIndex];
     const nextSection = sections[currentSectionIndex + 1];
 
-    
-    const paddingHorizontal = Math.max(10 + canvas.width * .05);
-    const lastNote = isNotesSection(currentSection) ? currentSection?.notes?.[currentSection.notes.length - 1] : undefined;
-    const sectionEndBeat = isNotesSection(currentSection) ? (nextSection?.start ?? lastNote!.start + lastNote!.length) : currentSection.end;
+    const paddingHorizontal = Math.max(10 + canvas.width * 0.05);
+    const lastNote = isNotesSection(currentSection)
+        ? currentSection?.notes?.[currentSection.notes.length - 1]
+        : undefined;
+    const sectionEndBeat = isNotesSection(currentSection)
+        ? nextSection?.start ?? lastNote!.start + lastNote!.length
+        : currentSection.end;
     const timeSectionGap = currentSection.start * songBeatLength + song.gap;
     const maxTime = (sectionEndBeat - currentSection.start) * songBeatLength;
 
     const pitchStepHeight = (canvas.height * 0.5 - 20) / (maxPitch - minPitch + pitchPadding * 2);
 
     return {
-        paddingHorizontal, currentSection, sectionEndBeat, timeSectionGap, maxTime, pitchStepHeight,
-    }
+        paddingHorizontal,
+        currentSection,
+        sectionEndBeat,
+        timeSectionGap,
+        maxTime,
+        pitchStepHeight,
+    };
 }
 
 interface DrawingData {
-    song: Song,
-    songBeatLength: number,
-    minPitch: number,
-    maxPitch: number,
-    canvas: HTMLCanvasElement,
-    currentTime: number,
-    currentSectionIndex: number,
-    frequencies: [FrequencyRecord[], FrequencyRecord[]],
-    playersNotes: [PlayerNote[], PlayerNote[]],
+    song: Song;
+    songBeatLength: number;
+    minPitch: number;
+    maxPitch: number;
+    canvas: HTMLCanvasElement;
+    currentTime: number;
+    currentSectionIndex: number;
+    frequencies: [FrequencyRecord[], FrequencyRecord[]];
+    playersNotes: [PlayerNote[], PlayerNote[]];
 }
 
 export default function drawFrame(
@@ -68,98 +76,121 @@ export default function drawFrame(
     frequencies: [FrequencyRecord[], FrequencyRecord[]],
     playersNotes: [PlayerNote[], PlayerNote[]],
 ) {
-    const drawingData = { 
-        song, songBeatLength, minPitch, maxPitch, canvas, currentTime, currentSectionIndex, frequencies, playersNotes
+    const drawingData = {
+        song,
+        songBeatLength,
+        minPitch,
+        maxPitch,
+        canvas,
+        currentTime,
+        currentSectionIndex,
+        frequencies,
+        playersNotes,
     };
 
-    const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData)
+    const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
 
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
 
     drawTimeIndicator(ctx, drawingData);
-    
-    const beatLength = (canvas.width - (2 * paddingHorizontal)) / (sectionEndBeat - currentSection.start);
 
-    isNotesSection(currentSection) && playersNotes.forEach((playerNotes, index) => {
-        const regionPaddingTop = index * canvas.height * 0.5;
+    const beatLength = (canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - currentSection.start);
 
-        currentSection.notes.forEach((note) => {
-            if (note.type === 'star') {
-                applyColor(ctx, styles.colors.lines.gold);
-            } else {
-                applyColor(ctx, styles.colors.lines.normal);
-            }
+    isNotesSection(currentSection) &&
+        playersNotes.forEach((playerNotes, index) => {
+            const regionPaddingTop = index * canvas.height * 0.5;
 
-            roundRect(ctx!,
-                paddingHorizontal + beatLength * (note.start - currentSection.start),
-                regionPaddingTop + 10 + pitchStepHeight * (maxPitch - note.pitch + pitchPadding),
-                beatLength * note.length,
-                20,
-                3, true, true
-            );
+            currentSection.notes.forEach((note) => {
+                if (note.type === 'star') {
+                    applyColor(ctx, styles.colors.lines.gold);
+                } else {
+                    applyColor(ctx, styles.colors.lines.normal);
+                }
+
+                roundRect(
+                    ctx!,
+                    paddingHorizontal + beatLength * (note.start - currentSection.start),
+                    regionPaddingTop + 10 + pitchStepHeight * (maxPitch - note.pitch + pitchPadding),
+                    beatLength * note.length,
+                    20,
+                    3,
+                    true,
+                    true,
+                );
+            });
+
+            playerNotes.forEach((playerNote) => {
+                if (playerNote.isPerfect && playerNote.note.type === 'star') {
+                    applyColor(ctx, styles.colors.players[index].goldPerfect);
+                } else if (playerNote.isPerfect) {
+                    applyColor(ctx, styles.colors.players[index].perfect);
+                } else if (playerNote.note.type === 'star' && playerNote.distance === 0) {
+                    applyColor(ctx, styles.colors.players[index].gold);
+                } else if (playerNote.distance === 0) {
+                    applyColor(ctx, styles.colors.players[index].hit);
+                } else {
+                    applyColor(ctx, styles.colors.players[index].miss);
+                }
+
+                const startBeat = Math.max(playerNote.start, playerNote.note.start);
+                const endBeat = Math.min(
+                    playerNote.start + playerNote.length,
+                    playerNote.note.start + playerNote.note.length,
+                );
+
+                if (endBeat - startBeat >= 0.5)
+                    roundRect(
+                        ctx!,
+                        paddingHorizontal + beatLength * (playerNote.start - currentSection.start),
+                        regionPaddingTop +
+                            10 +
+                            pitchStepHeight * (maxPitch - playerNote.note.pitch - playerNote.distance + pitchPadding),
+                        beatLength * (endBeat - startBeat),
+                        20,
+                        3,
+                        true,
+                        true,
+                    );
+            });
+
+            // debugPitches(ctx, drawingData);
         });
-
-        playerNotes.forEach(playerNote => {
-            if (playerNote.isPerfect && (playerNote.note.type === 'star')) {
-                applyColor(ctx, styles.colors.players[index].goldPerfect);    
-            } else if (playerNote.isPerfect) {
-                applyColor(ctx, styles.colors.players[index].perfect);    
-            } else if ((playerNote.note.type === 'star') && playerNote.distance === 0) {
-                applyColor(ctx, styles.colors.players[index].gold);    
-            } else if (playerNote.distance === 0) {
-                applyColor(ctx, styles.colors.players[index].hit);    
-            } else {
-                applyColor(ctx, styles.colors.players[index].miss);    
-            }
-
-            const startBeat = Math.max(playerNote.start, playerNote.note.start);
-            const endBeat = Math.min(playerNote.start + playerNote.length, playerNote.note.start + playerNote.note.length);
-
-            if (endBeat - startBeat >= .5)
-            roundRect(ctx!,
-                paddingHorizontal + beatLength * (playerNote.start - currentSection.start),
-                regionPaddingTop + 10 + pitchStepHeight * (maxPitch - playerNote.note.pitch - playerNote.distance + pitchPadding),
-                beatLength * (endBeat - startBeat),
-                20,
-                3, true, true
-            );
-        });
-
-        // debugPitches(ctx, drawingData);
-    });
 }
 
 function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
     const { currentSection, paddingHorizontal, timeSectionGap, maxTime, pitchStepHeight } = calculateData(data);
     const { frequencies, maxPitch, canvas, song, songBeatLength } = data;
 
-    
     if (!isNotesSection(currentSection)) return;
-    
+
     let previousNote: { pitch: number; lyrics: string } = currentSection.notes[0];
-    
+
     ctx!.fillStyle = 'rgba(0, 0, 0, .5)';
-    
-    frequencies.forEach((freqRecord, index) => freqRecord.forEach(entry => {
-        const regionPaddingTop = index * canvas.height * 0.5;
 
-        const currentBeat = Math.max(0, Math.floor((entry.timestamp - song.gap) / songBeatLength));
-        const noteAtTheTime =
-            currentSection.notes.find((note) => note.start <= currentBeat && note.start + note.length > currentBeat) ??
-            previousNote;
-        previousNote = noteAtTheTime;
+    frequencies.forEach((freqRecord, index) =>
+        freqRecord.forEach((entry) => {
+            const regionPaddingTop = index * canvas.height * 0.5;
 
-        if (noteAtTheTime === undefined) return;
+            const currentBeat = Math.max(0, Math.floor((entry.timestamp - song.gap) / songBeatLength));
+            const noteAtTheTime =
+                currentSection.notes.find(
+                    (note) => note.start <= currentBeat && note.start + note.length > currentBeat,
+                ) ?? previousNote;
+            previousNote = noteAtTheTime;
 
-        const entryRelativeTime = Math.max(0, entry.timestamp - timeSectionGap);
-        const entryX = paddingHorizontal + (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
+            if (noteAtTheTime === undefined) return;
 
-        const toleratedDistance = calcDistance(entry.frequency, noteAtTheTime.pitch);
-        const final = maxPitch - (noteAtTheTime.pitch + toleratedDistance) + pitchPadding;
+            const entryRelativeTime = Math.max(0, entry.timestamp - timeSectionGap);
+            const entryX =
+                paddingHorizontal +
+                (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
 
-        ctx?.fillRect(entryX, 10 + regionPaddingTop + final * pitchStepHeight, 10, 10);
-    }));
+            const toleratedDistance = calcDistance(entry.frequency, noteAtTheTime.pitch);
+            const final = maxPitch - (noteAtTheTime.pitch + toleratedDistance) + pitchPadding;
+
+            ctx?.fillRect(entryX, 10 + regionPaddingTop + final * pitchStepHeight, 10, 10);
+        }),
+    );
 }

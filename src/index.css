@@ -5,8 +5,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */

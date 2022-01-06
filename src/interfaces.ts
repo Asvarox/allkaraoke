@@ -36,8 +36,8 @@ export interface Song {
     artist: string;
     title: string;
     video: string;
-    previewStart?: number,
-    previewEnd?: number,
+    previewStart?: number;
+    previewEnd?: number;
     gap: number;
     bpm: number;
     bar: number;
@@ -45,12 +45,12 @@ export interface Song {
 }
 
 export interface SongTrack {
-    name?: string,
+    name?: string;
     sections: Section[];
 }
 
 export interface SongPreview extends Omit<Song, 'tracks'> {
-    file: string,
+    file: string;
 }
 
 export interface FrequencyRecord {
@@ -59,16 +59,15 @@ export interface FrequencyRecord {
 }
 
 export interface PlayerNote {
-    start: number,
-    length: number,
-    distance: number,
-    note: Note,
-    isPerfect: boolean,
+    start: number;
+    length: number;
+    distance: number;
+    note: Note;
+    isPerfect: boolean;
 }
-
 
 type UndefinedKeys<T> = {
     [K in keyof T]: undefined extends T[K] ? K : never;
-}[keyof T]
+}[keyof T];
 
-export type ExtractOptional<T> = Pick<T, Exclude<UndefinedKeys<T>, undefined>>
+export type ExtractOptional<T> = Pick<T, Exclude<UndefinedKeys<T>, undefined>>;
