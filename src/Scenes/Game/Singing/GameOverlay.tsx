@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import drawFrame from './Drawing';
 import DummyInput from './Input/DummyInput';
 
