@@ -29,6 +29,37 @@
     "file": "2 Plus 1-Winda do Nieba.json"
   },
   {
+    "title": "Dancing Queen",
+    "artist": "ABBA",
+    "bpm": 339.3,
+    "bar": 4,
+    "gap": 18868.21,
+    "video": "xFrGuyw1V8s",
+    "year": "1976",
+    "edition": "SingStar ABBA",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Dancing%20Queen",
+    "file": "ABBA-Dancing Queen.json"
+  },
+  {
+    "title": "Crazy",
+    "artist": "Aerosmith",
+    "bpm": 321.08,
+    "bar": 4,
+    "gap": 15830,
+    "video": "LGM5GkINMMI",
+    "year": "1994",
+    "language": "English",
+    "videoGap": 15,
+    "author": "kaim21",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy",
+    "file": "Aerosmith-Crazy.json"
+  },
+  {
     "title": "I don't want to miss a thing",
     "artist": "Aerosmith",
     "bpm": 483.6,
@@ -104,6 +135,22 @@
     "file": "BRAThANKI-W kinie, w Lublinie.json"
   },
   {
+    "title": "Everybody (Backstreet's Back)",
+    "artist": "Backstreet Boys",
+    "bpm": 216.12,
+    "bar": 4,
+    "gap": 97195,
+    "video": "6M6samPEMpM",
+    "year": "1997",
+    "genre": "Pop Internacional",
+    "language": "English",
+    "videoGap": 73,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=Everybody%20(Backstreet's%20Back)",
+    "file": "Backstreet Boys-Everybody (Backstreet's Back).json"
+  },
+  {
     "title": "Facet To Swinia",
     "artist": "Big Cyc",
     "bpm": 224,
@@ -117,6 +164,39 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10440",
     "file": "Big Cyc-Facet To Swinia.json"
+  },
+  {
+    "title": "Livin' on a Prayer",
+    "artist": "Bon Jovi",
+    "bpm": 244.8,
+    "bar": 4,
+    "gap": 39735.78,
+    "video": "lDK9QqIzhwk",
+    "year": "1986",
+    "edition": "SS Pop 2009",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer",
+    "file": "Bon Jovi-Livin' on a Prayer.json"
+  },
+  {
+    "title": "Baby One More Time",
+    "artist": "Britney Spears",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 18400,
+    "video": "C-u5WLJ9Yk4",
+    "year": "1999",
+    "edition": "SingStar Pop Hits",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Baby%20One%20More%20Time",
+    "file": "Britney Spears-Baby One More Time.json"
   },
   {
     "title": "Toxic",
@@ -200,6 +280,23 @@
     "file": "Europe-Final Countdown.json"
   },
   {
+    "title": "Bring Me to Life",
+    "artist": "Evanescence",
+    "bpm": 379.84,
+    "bar": 4,
+    "gap": 16910,
+    "video": "3YxaaGgTQYM",
+    "year": "2003",
+    "edition": "SingStar PopHit",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life",
+    "file": "Evanescence-Bring Me to Life.json"
+  },
+  {
     "title": "Boulevard of Broken Dreams",
     "artist": "Green Day",
     "bpm": 333.7,
@@ -277,6 +374,22 @@
     "file": "Jet-Are You Gonna Be My Girl.json"
   },
   {
+    "title": "Hot N Cold",
+    "artist": "Katy Perry",
+    "bpm": 264,
+    "bar": 4,
+    "gap": 36450,
+    "video": "kTHNpusq654",
+    "year": "2008",
+    "genre": "Pop/Rock",
+    "language": "English",
+    "videoGap": 32,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold",
+    "file": "Katy Perry-Hot N Cold.json"
+  },
+  {
     "title": "Prawy do Lewego",
     "artist": "Kayah i Goran Bregovic",
     "bpm": 170.79,
@@ -319,6 +432,23 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11699",
     "file": "Krzysztof Krawczyk-Zatańczysz ze Mną Jeszcze Raz.json"
+  },
+  {
+    "title": "Poker Face",
+    "artist": "Lady Gaga",
+    "bpm": 357.03,
+    "bar": 4,
+    "gap": -800,
+    "video": "bESGLojNYSo",
+    "year": "2008",
+    "edition": "Rock Band Store 2010 Vol. 1",
+    "genre": "Dance",
+    "language": "English",
+    "videoGap": 0,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Poker%20Face",
+    "file": "Lady Gaga-Poker Face.json"
   },
   {
     "title": "Zawsze tam gdzie Ty",
@@ -398,6 +528,21 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Nothing%20Else%20Matters",
     "file": "Metallica-Nothing Else Matters.json"
+  },
+  {
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "bpm": 234.28,
+    "bar": 4,
+    "gap": 30378,
+    "video": "Zi_XLOBDo_Y",
+    "year": "1982",
+    "language": "English",
+    "videoGap": -4,
+    "author": "sanicsip",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean",
+    "file": "Michael Jackson-Billie Jean.json"
   },
   {
     "title": "Hysteria",
@@ -705,6 +850,22 @@
     "file": "Queen-We Are the Champions.json"
   },
   {
+    "title": "We Will Rock You",
+    "artist": "Queen",
+    "bpm": 162.8,
+    "bar": 4,
+    "gap": 18372.85,
+    "video": "-tJYN-eG1zk",
+    "year": "1977",
+    "edition": "SingStar Queen",
+    "language": "English",
+    "videoGap": 5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Will%20Rock%20You",
+    "file": "Queen-We Will Rock You.json"
+  },
+  {
     "title": "Biała flaga",
     "artist": "Republika",
     "bpm": 266,
@@ -719,6 +880,22 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2954",
     "file": "Republika-Biała flaga.json"
+  },
+  {
+    "title": "Umbrella",
+    "artist": "Rihanna",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 2162.5,
+    "video": "CvBfHwUxHIk",
+    "year": "2007",
+    "edition": "SingStar SP",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Umbrella",
+    "file": "Rihanna-Umbrella.json"
   },
   {
     "title": "Angels",
@@ -794,6 +971,22 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star",
     "file": "Smash Mouth-All Star.json"
+  },
+  {
+    "title": "I'm a believer",
+    "artist": "Smash Mouth",
+    "bpm": 329.48,
+    "bar": 4,
+    "gap": 5350,
+    "video": "0mYBSayCsH0",
+    "year": "2001",
+    "genre": "Banda sonora",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=I'm%20a%20believer",
+    "file": "Smash Mouth-I'm a believer.json"
   },
   {
     "title": "Wannabe",
