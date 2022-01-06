@@ -1,8 +1,7 @@
 const MIDDLEA = 440;
 const SEMITONE = 69;
 
-export const noteFromFreq = (freq: number) => Math.round(12 * (Math.log(freq / MIDDLEA) / Math.log(2))) + SEMITONE;
-
+export const pitchFromFrequency = (freq: number) => Math.round(12 * (Math.log(freq / MIDDLEA) / Math.log(2))) + SEMITONE;
 
 export const calcDistanceBetweenNotes = (note: number, targetNote: number) => {
     const tolerance = 1;
@@ -13,7 +12,7 @@ export const calcDistanceBetweenNotes = (note: number, targetNote: number) => {
 };
 
 export const calcDistance = (frequency: number, targetNote: number) => {
-    const note = noteFromFreq(frequency);
+    const note = pitchFromFrequency(frequency);
     
     return calcDistanceBetweenNotes(note, targetNote);
 };

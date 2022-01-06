@@ -53,12 +53,12 @@ export interface SongPreview extends Omit<Song, 'tracks'> {
     file: string,
 }
 
-export interface PitchRecord {
+export interface FrequencyRecord {
     timestamp: number;
-    pitch: number;
+    frequency: number;
 }
 
-export interface RelativeLine {
+export interface PlayerNote {
     start: number,
     length: number,
     distance: number,

@@ -1,4 +1,4 @@
-import { RelativeLine, Song } from "../../../../interfaces";
+import { PlayerNote, Song } from "../../../../interfaces";
 import { memoize } from 'lodash';
 import isNotesSection from "./isNotesSection";
 
@@ -12,10 +12,10 @@ const countSungBeats = memoize((song: Song) => {
     return count;
 });
 
-export default function calculateScore(lines: RelativeLine[], song: Song): string {
+export default function calculateScore(playerNotes: PlayerNote[], song: Song): string {
     const beatsCount = countSungBeats(song);
 
-    const hitBeats = lines
+    const hitBeats = playerNotes
         .filter(line => line.distance === 0)
         .reduce((sum, line) => sum + line.length, 0);
 

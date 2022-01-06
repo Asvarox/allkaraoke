@@ -1,5 +1,5 @@
 import { calcDistance } from '../Helpers/calcDistance';
-import { PitchRecord, RelativeLine, Song } from '../../../../interfaces';
+import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
 import roundRect from './roundRect';
 import styles from './styles';
 import isNotesSection from '../Helpers/isNotesSection';
@@ -53,8 +53,8 @@ interface DrawingData {
     canvas: HTMLCanvasElement,
     currentTime: number,
     currentSectionIndex: number,
-    pitches: [PitchRecord[], PitchRecord[]],
-    lines: [RelativeLine[], RelativeLine[]],
+    frequencies: [FrequencyRecord[], FrequencyRecord[]],
+    playersNotes: [PlayerNote[], PlayerNote[]],
 }
 
 export default function drawFrame(
@@ -65,11 +65,11 @@ export default function drawFrame(
     canvas: HTMLCanvasElement,
     currentTime: number,
     currentSectionIndex: number,
-    pitches: [PitchRecord[], PitchRecord[]],
-    lines: [RelativeLine[], RelativeLine[]],
+    frequencies: [FrequencyRecord[], FrequencyRecord[]],
+    playersNotes: [PlayerNote[], PlayerNote[]],
 ) {
     const drawingData = { 
-        song, songBeatLength, minPitch, maxPitch, canvas, currentTime, currentSectionIndex, pitches, lines
+        song, songBeatLength, minPitch, maxPitch, canvas, currentTime, currentSectionIndex, frequencies, playersNotes
     };
 
     const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData)
@@ -83,7 +83,7 @@ export default function drawFrame(
     
     const beatLength = (canvas.width - (2 * paddingHorizontal)) / (sectionEndBeat - currentSection.start);
 
-    isNotesSection(currentSection) && lines.forEach((playerLines, index) => {
+    isNotesSection(currentSection) && playersNotes.forEach((playerNotes, index) => {
         const regionPaddingTop = index * canvas.height * 0.5;
 
         currentSection.notes.forEach((note) => {
@@ -102,7 +102,7 @@ export default function drawFrame(
             );
         });
 
-        playerLines.forEach(playerNote => {
+        playerNotes.forEach(playerNote => {
             if (playerNote.isPerfect && (playerNote.note.type === 'star')) {
                 applyColor(ctx, styles.colors.players[index].goldPerfect);    
             } else if (playerNote.isPerfect) {
@@ -134,7 +134,7 @@ export default function drawFrame(
 
 function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
     const { currentSection, paddingHorizontal, timeSectionGap, maxTime, pitchStepHeight } = calculateData(data);
-    const { pitches, maxPitch, canvas, song, songBeatLength } = data;
+    const { frequencies, maxPitch, canvas, song, songBeatLength } = data;
 
     
     if (!isNotesSection(currentSection)) return;
@@ -143,7 +143,7 @@ function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
     
     ctx!.fillStyle = 'rgba(0, 0, 0, .5)';
     
-    pitches.forEach((pitch, index) => pitch.forEach((entry: { pitch: number; timestamp: number }) => {
+    frequencies.forEach((freqRecord, index) => freqRecord.forEach(entry => {
         const regionPaddingTop = index * canvas.height * 0.5;
 
         const currentBeat = Math.max(0, Math.floor((entry.timestamp - song.gap) / songBeatLength));
@@ -157,7 +157,7 @@ function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
         const entryRelativeTime = Math.max(0, entry.timestamp - timeSectionGap);
         const entryX = paddingHorizontal + (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
 
-        const toleratedDistance = calcDistance(entry.pitch, noteAtTheTime.pitch);
+        const toleratedDistance = calcDistance(entry.frequency, noteAtTheTime.pitch);
         const final = maxPitch - (noteAtTheTime.pitch + toleratedDistance) + pitchPadding;
 
         ctx?.fillRect(entryX, 10 + regionPaddingTop + final * pitchStepHeight, 10, 10);

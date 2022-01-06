@@ -1,7 +1,7 @@
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import GameOverlay from './GameOverlay';
-import { RelativeLine, Song } from '../../../interfaces';
+import { PlayerNote, Song } from '../../../interfaces';
 import styled from 'styled-components';
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
     autoplay?: boolean,
     showControls?: boolean,
     onTimeUpdate?: (newTime: number) => void,
-    onSongEnd?: (playerLines: [RelativeLine[], RelativeLine[]]) => void;
+    onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
 }
 
 export interface PlayerRef {

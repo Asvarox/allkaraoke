@@ -1,14 +1,14 @@
 import aubio from 'aubiojs';
 
-interface PitchDetectionStrategy {
+interface FrequencyDetectionStrategy {
     getSampleSize(): number;
 
     init(context: AudioContext, processor: ScriptProcessorNode): Promise<void>;
 
-    getPitch(data: Float32Array): Promise<number>;
+    getFrequency(data: Float32Array): Promise<number>;
 }
 
-class AubioStrategy implements PitchDetectionStrategy {
+class AubioStrategy implements FrequencyDetectionStrategy {
     private detector: any;
 
     public init = async (context: AudioContext, processor: ScriptProcessorNode): Promise<void> => {
@@ -22,7 +22,7 @@ class AubioStrategy implements PitchDetectionStrategy {
         return 1 << 12;
     }
 
-    public getPitch = async (data: Float32Array) => {
+    public getFrequency = async (data: Float32Array) => {
         return this.detector.do(data);
     };
 }
@@ -57,8 +57,8 @@ class MicInput {
             const inputData1 = e.inputBuffer.getChannelData(0);
             const inputData2 = e.inputBuffer.getChannelData(1);
 
-            this.frequencies[0] = await strategy.getPitch(inputData1);
-            this.frequencies[1] = await strategy.getPitch(inputData2);
+            this.frequencies[0] = await strategy.getFrequency(inputData1);
+            this.frequencies[1] = await strategy.getFrequency(inputData2);
         };
     };
 

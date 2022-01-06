@@ -1,5 +1,5 @@
 import useWindowSize from './useWindowSize';
-import { RelativeLine, Song, SongPreview } from '../../../interfaces';
+import { PlayerNote, Song, SongPreview } from '../../../interfaces';
 import SongPage, { ContentElement } from '../SongPage';
 import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
@@ -10,16 +10,16 @@ interface Props {
     width: number,
     height: number,
     song: Song,
-    playerLines: [RelativeLine[], RelativeLine[]],
+    playerNotes: [PlayerNote[], PlayerNote[]],
     onClickSongSelection: () => void;
 }
 
-function PostGame({ song, playerLines, width, height, onClickSongSelection }: Props) {
+function PostGame({ song, playerNotes, width, height, onClickSongSelection }: Props) {
     return <SongPage songData={song} width={width} height={height}>
         <ScoresContainer>
             <ScoreTextPlayer>Player #1</ScoreTextPlayer><br />
-            <ScoreTextScore>{calculateScore(playerLines[0], song)}</ScoreTextScore><br /><br /><br /><br />
-            <ScoreTextScore>{calculateScore(playerLines[1], song)}</ScoreTextScore><br />
+            <ScoreTextScore>{calculateScore(playerNotes[0], song)}</ScoreTextScore><br /><br /><br /><br />
+            <ScoreTextScore>{calculateScore(playerNotes[1], song)}</ScoreTextScore><br />
             <ScoreTextPlayer>Player #2</ScoreTextPlayer>
         </ScoresContainer>
         <SongSelectionButton onClick={onClickSongSelection}>Select song</SongSelectionButton>

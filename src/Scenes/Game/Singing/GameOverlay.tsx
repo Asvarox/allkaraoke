@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import drawFrame from './Drawing';
 import DummyInput from './Input/DummyInput';
 
-import { PitchRecord, RelativeLine, Song } from '../../../interfaces';
+import { FrequencyRecord, PlayerNote, Song } from '../../../interfaces';
 import styles from './Drawing/styles';
 import isNotesSection from './Helpers/isNotesSection';
 import getSongBeatLength from './Helpers/getSongBeatLength';
@@ -21,9 +21,8 @@ interface Props {
     currentStatus: number;
     width: number;
     height: number;
-    onSongEnd?: (playerLines: [RelativeLine[], RelativeLine[]]) => void;
+    onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
 }
-
 
 function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEnd }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
@@ -73,32 +72,32 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
         return index > -1 ? index : null;
     }, [currentBeat, currentSection]);
 
-    const historicPitches = useRef<[PitchRecord[], PitchRecord[]]>([[], []]);
-    const playerLines = useRef<[RelativeLine[], RelativeLine[]]>([[], []]);
-    const historingPlayerLines = useRef<[RelativeLine[], RelativeLine[]]>([[], []]);
+    const historicFrequencies = useRef<[FrequencyRecord[], FrequencyRecord[]]>([[], []]);
+    const playerNotes = useRef<[PlayerNote[], PlayerNote[]]>([[], []]);
+    const historicPlayerNotes = useRef<[PlayerNote[], PlayerNote[]]>([[], []]);
 
     useEffect(() => {
-        historicPitches.current[0] = [];
-        historicPitches.current[1] = [];
+        historicFrequencies.current[0] = [];
+        historicFrequencies.current[1] = [];
 
-        historingPlayerLines.current[0] = [...historingPlayerLines.current[0], ...playerLines.current[0]];
-        historingPlayerLines.current[1] = [...historingPlayerLines.current[1], ...playerLines.current[1]];
+        historicPlayerNotes.current[0] = [...historicPlayerNotes.current[0], ...playerNotes.current[0]];
+        historicPlayerNotes.current[1] = [...historicPlayerNotes.current[1], ...playerNotes.current[1]];
 
-        playerLines.current[0] = [];
-        playerLines.current[1] = [];
+        playerNotes.current[0] = [];
+        playerNotes.current[1] = [];
     }, [currentSectionIndex]);
 
     useEffect(() => {
         if (!canvas.current) return;
 
         if (currentTime >= song.gap && isNotesSection(currentSection)) {
-            const [pitch1, pitch2] = Input.getFrequencies();
+            const [frequency1, frequency2] = Input.getFrequencies();
 
-            historicPitches.current[0].push({ timestamp: currentTime, pitch: pitch1 });
-            historicPitches.current[1].push({ timestamp: currentTime, pitch: pitch2 });
+            historicFrequencies.current[0].push({ timestamp: currentTime, frequency: frequency1 });
+            historicFrequencies.current[1].push({ timestamp: currentTime, frequency: frequency2 });
 
-            playerLines.current[0] = frequenciesToLines(historicPitches.current[0], songBeatLength, song.gap, currentSection.notes);
-            playerLines.current[1] = frequenciesToLines(historicPitches.current[1], songBeatLength, song.gap, currentSection.notes);
+            playerNotes.current[0] = frequenciesToLines(historicFrequencies.current[0], songBeatLength, song.gap, currentSection.notes);
+            playerNotes.current[1] = frequenciesToLines(historicFrequencies.current[1], songBeatLength, song.gap, currentSection.notes);
         }
 
         drawFrame(
@@ -109,14 +108,14 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
             canvas.current!,
             currentTime,
             currentSectionIndex,
-            historicPitches.current,
-            playerLines.current,
+            historicFrequencies.current,
+            playerNotes.current,
         );
     }, [canvas, currentSectionIndex, currentTime, minPitch, maxPitch, songBeatLength, song, currentSection]);
 
     useEffect(() => {
-        if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) onSongEnd(historingPlayerLines.current);
-    }, [currentStatus, historingPlayerLines, onSongEnd])
+        if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) onSongEnd(historicPlayerNotes.current);
+    }, [currentStatus, historicPlayerNotes, onSongEnd])
 
     const lyrics = isNotesSection(currentSection) ? (
         <LyricsContainer>
@@ -146,8 +145,8 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
     return (
         <Screen>
             <Scores height={overlayHeight}>
-                <span>{calculateScore([...historingPlayerLines.current[0], ...playerLines.current[0]], song)}</span>
-                <span>{calculateScore([...historingPlayerLines.current[1], ...playerLines.current[1]], song)}</span>
+                <span>{calculateScore([...historicPlayerNotes.current[0], ...playerNotes.current[0]], song)}</span>
+                <span>{calculateScore([...historicPlayerNotes.current[1], ...playerNotes.current[1]], song)}</span>
             </Scores>
             {lyrics}
             <canvas ref={canvas} width={width} height={overlayHeight} />
