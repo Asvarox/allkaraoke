@@ -29,6 +29,21 @@
     "file": "2 Plus 1-Winda do Nieba.json"
   },
   {
+    "title": "I don't want to miss a thing",
+    "artist": "Aerosmith",
+    "bpm": 483.6,
+    "bar": 4,
+    "gap": 30870,
+    "video": "JkK8g6FMEXE",
+    "year": "1998",
+    "language": "English",
+    "videoGap": 0,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Aerosmith-I don't want to miss a thing.json"
+  },
+  {
     "title": "Legends Never Die",
     "artist": "Against The Current",
     "bpm": 279.9,
@@ -719,6 +734,36 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29",
     "file": "Shakira ft. Freshlyground-Waka Waka (This Time for Africa).json"
+  },
+  {
+    "title": "All Star but the whole song is sung on a C Note",
+    "artist": "Smash Mouth",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 200,
+    "video": "qVIyE5717AU",
+    "year": "1999",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star",
+    "file": "Smash Mouth-All Star but the whole song is sung on a C Note.json"
+  },
+  {
+    "title": "All Star",
+    "artist": "Smash Mouth",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 37300,
+    "video": "L_jWHffIx5E",
+    "year": "1999",
+    "language": "English",
+    "videoGap": 36,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star",
+    "file": "Smash Mouth-All Star.json"
   },
   {
     "title": "Wannabe",
