@@ -6,11 +6,12 @@ import { FrequencyRecord, PlayerNote, Song } from '../../../interfaces';
 import styles from './Drawing/styles';
 import isNotesSection from './Helpers/isNotesSection';
 import getSongBeatLength from './Helpers/getSongBeatLength';
-import frequenciesToLines from './Helpers/frequenciesToLines';
+import frequenciesToLines from './Helpers/frequenciesToPlayerNotes';
 import styled from 'styled-components';
 import MicInput from './Input/MicInput';
 import calculateScore from './Helpers/calculateScore';
 import YouTube from 'react-youtube';
+import ScoreText from './ScoreText';
 
 const Input = DummyInput;
 // const Input = MicInput;
@@ -108,12 +109,12 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
                 song.gap,
                 currentSection.notes,
             );
-            playerNotes.current[1] = frequenciesToLines(
-                historicFrequencies.current[1],
-                songBeatLength,
-                song.gap,
-                currentSection.notes,
-            );
+            // playerNotes.current[1] = frequenciesToLines(
+            //     historicFrequencies.current[1],
+            //     songBeatLength,
+            //     song.gap,
+            //     currentSection.notes,
+            // );
         }
 
         drawFrame(
@@ -164,8 +165,8 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
     return (
         <Screen>
             <Scores height={overlayHeight}>
-                <span>{calculateScore([...historicPlayerNotes.current[0], ...playerNotes.current[0]], song)}</span>
-                <span>{calculateScore([...historicPlayerNotes.current[1], ...playerNotes.current[1]], song)}</span>
+                <span><ScoreText score={calculateScore([...historicPlayerNotes.current[0], ...playerNotes.current[0]], song)} /></span>
+                {/* <span><ScoreText score={calculateScore([...historicPlayerNotes.current[1], ...playerNotes.current[1]], song)} /></span> */}
             </Scores>
             {lyrics}
             <canvas ref={canvas} width={width} height={overlayHeight} />

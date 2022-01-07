@@ -2,22 +2,42 @@ import { PlayerNote, Song } from '../../../../interfaces';
 import { memoize } from 'lodash';
 import isNotesSection from './isNotesSection';
 
-const MAX_BASE_POINTS = 2500000;
+export const MAX_POINTS = 2500000;
+
+const goldBase = 1;
+const perfectBase = .5;
 
 const countSungBeats = memoize((song: Song) => {
     let count = 0;
+    let goldCount = 0;
 
     song.tracks[0].sections
         .filter(isNotesSection)
-        .forEach((section) => (count = section.notes.reduce((acc, note) => acc + note.length, count)));
+        .forEach((section) => {
+            count = section.notes.reduce((acc, note) => acc + note.length, count)
+            goldCount = section.notes.filter(note => note.type === 'star').reduce((acc, note) => acc + note.length, goldCount)
+        });
 
-    return count;
+    return ((1 + perfectBase) * count) + (goldBase * goldCount);
 });
 
-export default function calculateScore(playerNotes: PlayerNote[], song: Song): string {
-    const beatsCount = countSungBeats(song);
+export default function calculateScore(playerNotes: PlayerNote[], song: Song): number {
+    const pointsPerBeat = MAX_POINTS / countSungBeats(song);
 
-    const hitBeats = playerNotes.filter((line) => line.distance === 0).reduce((sum, line) => sum + line.length, 0);
 
-    return ((hitBeats / beatsCount) * MAX_BASE_POINTS).toLocaleString(undefined, { maximumFractionDigits: 0 });
+    let sungBeats = 0;
+    let goldBeats = 0;
+    let perfectBeats = 0;
+
+    for (let i = 0; i < playerNotes.length; i++) {
+        const note = playerNotes[i];
+        if (note.distance > 0) continue;
+
+        sungBeats = sungBeats + note.length
+        if (note.note.type === 'star') goldBeats = goldBeats + (note.length * goldBase);
+        if (note.isPerfect) perfectBeats = perfectBeats + (note.length * perfectBase);
+    }
+    const score = (sungBeats + goldBeats + perfectBeats) * pointsPerBeat;
+
+    return score;
 }

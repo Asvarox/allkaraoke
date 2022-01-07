@@ -47,7 +47,7 @@ function Player(
         }
 
         player.current.getInternalPlayer().setSize(width, height);
-    }, [player, width, height]);
+    }, [player, width, height, song]);
 
     useImperativeHandle(ref, () => ({
         // getCurrentTime: () => currentTime,

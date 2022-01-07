@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import styled from 'styled-components';
 import { Link } from 'wouter';
 import { NotesSection, Song } from '../../interfaces';
-import EditSong from '../Convert/EditSong';
+import EditSong from './EditSong';
 
 interface Props {
     file: string,

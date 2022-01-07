@@ -2,9 +2,8 @@ import { ChangeEventHandler, useState } from 'react';
 import styled from 'styled-components';
 import { NotesSection, Song } from '../../interfaces';
 import convertTxtToSong from './convertTxtToSong';
-import EditSong from './EditSong';
+import EditSong from '../Edit/EditSong';
 import importUltrastarEsSong from './importUltrastarEsSong';
-import normaliseGap from './normaliseGap';
 
 interface Props {}
 
@@ -32,7 +31,6 @@ export default function Convert(props: Props) {
     let error = '';
     try {
         conversionResult = convertTxtToSong(txtInput, videoLink, author, authorUrl, sourceUrl);
-        conversionResult = normaliseGap(conversionResult);
     } catch (e: any) {
         error = e.message;
         console.error(e);
@@ -147,6 +145,7 @@ function fixDiacritics(txt: string): string {
         .replaceAll('ñ', 'ń')
         .replaceAll('³', 'ł')
         .replaceAll('Û', 'ó')
+        .replaceAll('Ÿ', 'ź')
         .replaceAll('í', '\'')
         .replaceAll('¥', "'");
 }

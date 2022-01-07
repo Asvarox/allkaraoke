@@ -134,11 +134,8 @@ export default function drawFrame(
                     applyColor(ctx, styles.colors.players[index].miss);
                 }
 
-                const startBeat = Math.max(playerNote.start, playerNote.note.start);
-                const endBeat = Math.min(
-                    playerNote.start + playerNote.length,
-                    playerNote.note.start + playerNote.note.length,
-                );
+                const startBeat = playerNote.start;
+                const endBeat = playerNote.start + playerNote.length;
 
                 if (endBeat - startBeat >= 0.5)
                     roundRect(

@@ -26,7 +26,7 @@ export default function SongSelection({ onSongSelected }: Props) {
             />
             <SongListContainer>
                 {songList.data.map((song, index) => (
-                    <SongListEntry key={song.file} onClick={() => setFocusedSong(index)} video={song.video}>
+                    <SongListEntry key={song.file} onClick={() => setFocusedSong(index)} video={song.video} focused={index === focusedSong}>
                         {/* <SongListEntryImage src={`https://i3.ytimg.com/vi/${song.video}/maxresdefault.jpg`} alt="song video miniature" /> */}
                         <SongListEntryDetails>
                             <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
@@ -54,12 +54,11 @@ const SongListContainer = styled.div`
     margin-top: 20px;
 `;
 
-const SongListEntry = styled.div<{ video: string }>(
-    (props) => `
+const SongListEntry = styled.div<{ video: string, focused: boolean }>`
     width: 260px;
     height: ${(260 / 16) * 9}px;
     cursor: pointer;
-    background-image: url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg');
+    background-image: url('https://i3.ytimg.com/vi/${({ video }) => video}/hqdefault.jpg');
     background-size: cover;
     background-position: center center;
 
@@ -69,8 +68,14 @@ const SongListEntry = styled.div<{ video: string }>(
 
     flex-direction: column;
     justify-content: flex-end;
-`,
-);
+    /* filter: sepia(0.5); */
+    ${({ focused }) => focused && `
+        // filter: sepia(0);
+        // filter: sepia(0);
+        // transform-origin: center;
+        // transform: scale(1.1);
+    `}
+`;
 
 const SongListEntryDetails = styled.div`
     border-radius: 5px;

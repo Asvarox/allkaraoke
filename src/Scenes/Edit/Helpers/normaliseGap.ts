@@ -1,12 +1,12 @@
-import { Section, Song } from "../../interfaces";
-import getSongBeatLength from "../Game/Singing/Helpers/getSongBeatLength"
-import isNotesSection from "../Game/Singing/Helpers/isNotesSection";
+import { Section, Song } from "../../../interfaces";
+import getSongBeatLength from "../../Game/Singing/Helpers/getSongBeatLength"
+import isNotesSection from "../../Game/Singing/Helpers/isNotesSection";
 
-const shiftSections = (sections: Section[], shiftBeats: number): Section[] => sections.map(section => {
+const shiftSections = (sections: Section[], shiftBeats: number): Section[] => sections.map((section, index) => {
     if (isNotesSection(section)) {
         return {
             ...section,
-            start: Math.max(0, section.start - shiftBeats), // first section might be 0
+            start: index === 0 ? 0 : Math.max(0, section.start - shiftBeats), // first section might be 0
             notes: section.notes.map(note => ({ ...note, start: note.start - shiftBeats })),
         };
     } else {
@@ -28,9 +28,10 @@ export default function normaliseGap(song: Song): Song {
         console.error('There is a pause section at the beginning wat', firstSection);
         return song; // todo handle case when there's pause section at the beginning
     }
-
+    
     const gap = Math.floor(song.gap + (shiftBeats * beatLength));
 
+    
     return {
         ...song,
         gap,

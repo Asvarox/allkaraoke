@@ -6,7 +6,8 @@ import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import Player, { PlayerRef } from '../Game/Singing/Player';
 
 import { cloneDeep } from 'lodash'
-import calculateProperBPM from './calculateProperBpm';
+import calculateProperBPM from '../Convert/calculateProperBpm';
+import normaliseGap from './Helpers/normaliseGap';
 
 interface Props {
     song: Song,
@@ -42,6 +43,7 @@ export default function EditSong({ song, onUpdate }: Props) {
 
     let newSong = cloneDeep(song);
 
+    newSong = normaliseGap(newSong);
     newSong = shiftGap(newSong, gapShift);
     newSong = shiftVideoGap(newSong, videoGapShift);
 

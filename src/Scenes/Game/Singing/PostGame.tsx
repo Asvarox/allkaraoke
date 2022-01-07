@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
 import styles from './Drawing/styles';
 import calculateScore from './Helpers/calculateScore';
+import ScoreText from './ScoreText';
 
 interface Props {
     width: number;
@@ -19,12 +20,12 @@ function PostGame({ song, playerNotes, width, height, onClickSongSelection }: Pr
             <ScoresContainer>
                 <ScoreTextPlayer>Player #1</ScoreTextPlayer>
                 <br />
-                <ScoreTextScore>{calculateScore(playerNotes[0], song)}</ScoreTextScore>
+                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[0], song)} /></ScoreTextScore>
+                <br /> {/* xD */}
                 <br />
                 <br />
                 <br />
-                <br />
-                <ScoreTextScore>{calculateScore(playerNotes[1], song)}</ScoreTextScore>
+                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[1], song)} /></ScoreTextScore>
                 <br />
                 <ScoreTextPlayer>Player #2</ScoreTextPlayer>
             </ScoresContainer>

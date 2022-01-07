@@ -14,30 +14,30 @@ export default function frequenciesToLines(
             ...frequencies
                 .map(({ timestamp, frequency }) => ({
                     frequency,
-                    timestamp: Math.max(0, timestamp - gap) / beatLength,
+                    beat: Math.max(0, timestamp - gap) / beatLength,
                 }))
-                .filter(({ timestamp }) => timestamp >= note.start - 1 && timestamp <= note.start + note.length + 1)
-                .map(({ timestamp, frequency }) => ({ timestamp, distance: calcDistance(frequency, note.pitch) }))
+                .filter(({ beat }) => beat >= note.start - .5 && beat <= note.start + note.length + .5)
+                .map(({ beat, frequency }) => ({ beat, distance: calcDistance(frequency, note.pitch) }))
                 .reduce<PlayerNote[]>((groups, playerNote) => {
                     const lastGroup = groups[groups.length - 1];
                     if (!lastGroup || lastGroup.distance !== playerNote.distance) {
                         groups.push({
-                            start: Math.max(note.start, playerNote.timestamp),
+                            start: Math.min(Math.max(note.start, playerNote.beat), note.start + note.length),
                             length: 0,
                             distance: playerNote.distance,
                             note,
                             isPerfect: false,
                         });
                     } else {
-                        lastGroup.length = Math.min(
-                            playerNote.timestamp - lastGroup.start,
-                            note.start + note.length - lastGroup.start,
+                        lastGroup.length = Math.max(
+                            0,
+                            Math.min(playerNote.beat - lastGroup.start, note.start + note.length - lastGroup.start),
                         );
                     }
 
                     return groups;
                 }, [])
-                .filter((playerNote) => playerNote.distance > -Infinity)
+                .filter((playerNote) => playerNote.distance > -Infinity && playerNote.length > 0)
                 .map((playerNote) => {
                     playerNote.isPerfect =
                         playerNote.distance === 0 && Math.abs(playerNote.length - playerNote.note.length) < 0.5;
