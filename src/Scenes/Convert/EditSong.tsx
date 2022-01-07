@@ -28,6 +28,9 @@ const formatMsec = (msec: number) => {
     );
 };
 
+const playerWidth = 850;
+const playerHeight = (700 / 16) * 9;
+
 export default function EditSong({ song, onUpdate }: Props) {
     const player = useRef<PlayerRef | null>(null);
     const [currentTime, setCurrentTime] = useState<number>(0);
@@ -64,15 +67,17 @@ export default function EditSong({ song, onUpdate }: Props) {
 
     return (
                     <Preview>
+                        <PlayerContainer>
                         <Player
                             song={newSong}
                             showControls
                             autoplay={false}
-                            width={850}
-                            height={(700 / 16) * 9}
+                            width={playerWidth}
+                            height={playerHeight}
                             ref={player}
                             onTimeUpdate={setCurrentTime}
                         />
+                        </PlayerContainer>
                         <Editor>
                             <EditorRow>
                                 Playback speed:
@@ -225,3 +230,8 @@ const EditorRow = styled.div`
 const Preview = styled.div`
     display: flex;
 `;
+
+const PlayerContainer = styled.div`
+    width: ${playerWidth}px;
+    height: ${playerHeight}px;
+`

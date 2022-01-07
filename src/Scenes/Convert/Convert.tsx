@@ -4,6 +4,7 @@ import { NotesSection, Song } from '../../interfaces';
 import convertTxtToSong from './convertTxtToSong';
 import EditSong from './EditSong';
 import importUltrastarEsSong from './importUltrastarEsSong';
+import normaliseGap from './normaliseGap';
 
 interface Props {}
 
@@ -31,6 +32,7 @@ export default function Convert(props: Props) {
     let error = '';
     try {
         conversionResult = convertTxtToSong(txtInput, videoLink, author, authorUrl, sourceUrl);
+        conversionResult = normaliseGap(conversionResult);
     } catch (e: any) {
         error = e.message;
         console.error(e);
@@ -99,10 +101,6 @@ const InputGroupButton = styled.button`
     flex: 1;
 `;
 
-const Pre = styled.span`
-    font-family: monospace;
-`;
-
 const InputGroupInput = styled.input`
     flex: 1;
     min-width: 100px;
@@ -149,5 +147,6 @@ function fixDiacritics(txt: string): string {
         .replaceAll('ñ', 'ń')
         .replaceAll('³', 'ł')
         .replaceAll('Û', 'ó')
+        .replaceAll('í', '\'')
         .replaceAll('¥', "'");
 }
