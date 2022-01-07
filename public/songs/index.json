@@ -45,6 +45,22 @@
     "file": "ABBA-Dancing Queen.json"
   },
   {
+    "title": "Fernando",
+    "artist": "ABBA",
+    "bpm": 210.1,
+    "bar": 4,
+    "gap": 27094,
+    "video": "dQsjAbZDx-4",
+    "year": "1976",
+    "edition": "SingStar ABBA",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Fernando",
+    "file": "ABBA-Fernando.json"
+  },
+  {
     "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
     "artist": "ABBA",
     "bpm": 236.7,
@@ -59,6 +75,80 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)",
     "file": "ABBA-Gimme! Gimme! Gimme! (A Man After Midnight).json"
+  },
+  {
+    "title": "Mamma Mia",
+    "artist": "ABBA",
+    "bpm": 273.4,
+    "bar": 4,
+    "gap": 14563,
+    "video": "unfzfe8f9NI",
+    "year": "1975",
+    "edition": "SingStar ABBA",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Mamma%20Mia",
+    "file": "ABBA-Mamma Mia.json"
+  },
+  {
+    "title": "Money Money Money",
+    "artist": "ABBA",
+    "bpm": 339.2,
+    "bar": 4,
+    "gap": 12866,
+    "video": "ETxmCCsMoD0",
+    "year": "1976",
+    "edition": "SingStar ABBA",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Money%20Money%20Money",
+    "file": "ABBA-Money Money Money.json"
+  },
+  {
+    "title": "Super Trouper",
+    "artist": "ABBA",
+    "bpm": 236.2,
+    "bar": 4,
+    "gap": 2625,
+    "video": "BshxCIjNEjY",
+    "year": "1980",
+    "edition": "SingStar ABBA",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Super%20Trouper",
+    "file": "ABBA-Super Trouper.json"
+  },
+  {
+    "title": "The Winner Takes It All",
+    "artist": "ABBA",
+    "bpm": 339.36,
+    "bar": 4,
+    "gap": 35114,
+    "video": "92cwKCU8Z5c",
+    "year": "1980",
+    "edition": "SingStar ABBA",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=The%20Winner%20Takes%20It%20All",
+    "file": "ABBA-The Winner Takes It All.json"
+  },
+  {
+    "title": "Rolling In The Deep",
+    "artist": "Adele",
+    "video": "rYEDA3JcQqw",
+    "gap": 4870,
+    "bpm": 210,
+    "bar": 4,
+    "beatLength": 286,
+    "file": "Adele-Rolling-in-the-deep.json"
   },
   {
     "title": "Crazy",
@@ -76,6 +166,22 @@
     "file": "Aerosmith-Crazy.json"
   },
   {
+    "title": "Dream on",
+    "artist": "Aerosmith",
+    "bpm": 288,
+    "bar": 4,
+    "gap": 38206,
+    "video": "89dGC8de0CA",
+    "year": "1973",
+    "genre": "Other",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gouthamma",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gouthamma",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Dream%20on",
+    "file": "Aerosmith-Dream on.json"
+  },
+  {
     "title": "I don't want to miss a thing",
     "artist": "Aerosmith",
     "bpm": 483.6,
@@ -89,6 +195,23 @@
     "authorUrl": "",
     "sourceUrl": "",
     "file": "Aerosmith-I don't want to miss a thing.json"
+  },
+  {
+    "title": "Sweet Emotion",
+    "artist": "Aerosmith",
+    "bpm": 393.85,
+    "bar": 4,
+    "gap": 36800,
+    "video": "82cJgPXU-ik",
+    "year": "1975",
+    "edition": "Rock Band Store 2013 Vol. 1",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": -5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Sweet%20Emotion",
+    "file": "Aerosmith-Sweet Emotion.json"
   },
   {
     "title": "Legends Never Die",
@@ -182,6 +305,22 @@
     "file": "Big Cyc-Facet To Swinia.json"
   },
   {
+    "title": "Bad Medicine",
+    "artist": "Bon Jovi",
+    "bpm": 399.5,
+    "bar": 4,
+    "gap": 46460,
+    "video": "eOUtsybozjg",
+    "year": "1988",
+    "edition": "Rock Band Store 2010 Vol. 4",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Bad%20Medicine",
+    "file": "Bon Jovi-Bad Medicine.json"
+  },
+  {
     "title": "Have a nice day",
     "artist": "Bon Jovi",
     "bpm": 399.41,
@@ -213,6 +352,38 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer",
     "file": "Bon Jovi-Livin' on a Prayer.json"
+  },
+  {
+    "title": "Wanted dead or alive",
+    "artist": "Bon Jovi",
+    "bpm": 382.7,
+    "bar": 4,
+    "gap": 31180,
+    "video": "SRvCvsRp5ho",
+    "year": "1986",
+    "edition": "Rock Band",
+    "genre": "Glam Metal",
+    "language": "English",
+    "videoGap": -17,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Wanted%20dead%20or%20alive",
+    "file": "Bon Jovi-Wanted dead or alive.json"
+  },
+  {
+    "title": "You Give Love A Bad Name",
+    "artist": "Bon Jovi",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 6950,
+    "video": "KrZHPOeOxQQ",
+    "year": "1986",
+    "language": "English",
+    "videoGap": 0,
+    "author": "sanicsip",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=You%20Give%20Love%20A%20Bad%20Name",
+    "file": "Bon Jovi-You Give Love A Bad Name.json"
   },
   {
     "title": "Baby One More Time",
@@ -277,6 +448,54 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Cailin%20Russo%20%26%20Chrissy%20Costanza&cancion=Phoenix",
     "file": "Cailin Russo & Chrissy Costanza-Phoenix.json"
+  },
+  {
+    "title": "Beautiful",
+    "artist": "Christina Aguilera",
+    "bpm": 304.6,
+    "bar": 4,
+    "gap": 1528,
+    "video": "eAfyFTzZDMM",
+    "year": "2002",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful",
+    "file": "Christina Aguilera-Beautiful.json"
+  },
+  {
+    "title": "Clocks",
+    "artist": "Coldplay",
+    "bpm": 262,
+    "bar": 4,
+    "gap": 35480,
+    "video": "d020hcWA_Wg",
+    "year": "2000",
+    "genre": "Other",
+    "language": "English",
+    "videoGap": 1,
+    "author": "albanderuaz",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=albanderuaz",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Clocks",
+    "file": "Coldplay-Clocks.json"
+  },
+  {
+    "title": "Get Lucky",
+    "artist": "Daft Punk",
+    "bpm": 232.1,
+    "bar": 4,
+    "gap": 15010,
+    "video": "CCHdMIEGaaM",
+    "year": "2013",
+    "genre": "Electronic Music",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gun88",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gun88",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Daft%20Punk&cancion=Get%20Lucky",
+    "file": "Daft Punk-Get Lucky.json"
   },
   {
     "title": "Smoke On The Water",
@@ -394,6 +613,22 @@
     "file": "Green Day-Boulevard of Broken Dreams.json"
   },
   {
+    "title": "Knocking On Heavens Door",
+    "artist": "Guns N' Roses",
+    "bpm": 264.9,
+    "bar": 4,
+    "gap": 7730,
+    "video": "f8OHybVhQwc",
+    "year": "1991",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Knocking%20On%20Heavens%20Door",
+    "file": "Guns N' Roses-Knocking On Heavens Door.json"
+  },
+  {
     "title": "What is love",
     "artist": "Haddaway & Jim Carrey & The Roxbury Guys",
     "bpm": 253.91,
@@ -409,6 +644,23 @@
     "file": "Haddaway & Jim Carrey & The Roxbury Guys-What is love.json"
   },
   {
+    "title": "The Reason",
+    "artist": "Hoobastank",
+    "bpm": 332,
+    "bar": 4,
+    "gap": 29978,
+    "video": "fV4DiAyExN0",
+    "year": "2004",
+    "edition": "S'Star Popworld",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason",
+    "file": "Hoobastank-The Reason.json"
+  },
+  {
     "title": "Zawsze z Tobą Chciałbym Być",
     "artist": "Ich Troje",
     "bpm": 130.02,
@@ -421,6 +673,15 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11657",
     "file": "Ich Troje-Zawsze z Tobą Chciałbym Być.json"
+  },
+  {
+    "artist": "Idina Menzel",
+    "title": "Let It Go",
+    "video": "moSFlvxnbgk",
+    "gap": 14859,
+    "bpm": 275,
+    "bar": 4,
+    "file": "Idina Menzel-Let-it-go.json"
   },
   {
     "title": "Bad Liar",
@@ -768,6 +1029,22 @@
     "file": "Michael Jackson-Billie Jean.json"
   },
   {
+    "title": "Wrecking Ball",
+    "artist": "Miley Cyrus",
+    "bpm": 239.96,
+    "bar": 4,
+    "gap": 8775,
+    "video": "My2FRPA3Gf8",
+    "year": "2013",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Wrecking%20Ball",
+    "file": "Miley Cyrus-Wrecking Ball.json"
+  },
+  {
     "title": "Hysteria",
     "artist": "Muse",
     "bpm": 393.5,
@@ -879,6 +1156,15 @@
     "file": "Myslovitz-Dlugosc dzwieku samotnosci.json"
   },
   {
+    "artist": "Netflix",
+    "title": "Toss A Coin To Your Witcher",
+    "video": "waMkFIzvDpE",
+    "gap": 1425,
+    "bpm": 211,
+    "bar": 4,
+    "file": "Netflix-Toss-a-coin-to-your-witcher.json"
+  },
+  {
     "title": "Worlds Collide",
     "artist": "Nicki Taylor",
     "bpm": 440.16,
@@ -941,6 +1227,22 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=76763",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15471",
     "file": "Pokémon-Opening (PL).json"
+  },
+  {
+    "title": "Under Pressure",
+    "artist": "Queen & David Bowie",
+    "bpm": 225.4,
+    "bar": 4,
+    "gap": 27493,
+    "video": "a01QQZyl-_I",
+    "year": "1981",
+    "edition": "SingStar Queen",
+    "language": "English",
+    "videoGap": 5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen%20%26%20David%20Bowie&cancion=Under%20Pressure",
+    "file": "Queen & David Bowie-Under Pressure.json"
   },
   {
     "title": "A kind of magic",
@@ -1316,6 +1618,23 @@
     "file": "Stachursky-Zostanmy Razem.json"
   },
   {
+    "title": "Toxicity",
+    "artist": "System of a Down",
+    "bpm": 395.8,
+    "bar": 4,
+    "gap": 50540,
+    "video": "iywaBOMvYLI",
+    "year": "2001",
+    "edition": "Rock Band Store 2008 Vol. 3",
+    "genre": "Metal Alternativo",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity",
+    "file": "System of a Down-Toxicity.json"
+  },
+  {
     "title": "Chłopaki Nie Płaczą",
     "artist": "T. Love",
     "bpm": 206.26,
@@ -1536,16 +1855,6 @@
     "file": "Wilki-Bohema.json"
   },
   {
-    "title": "Adele",
-    "artist": "Rolling In The Deep",
-    "video": "rYEDA3JcQqw",
-    "gap": 4870,
-    "bpm": 210,
-    "bar": 4,
-    "beatLength": 286,
-    "file": "adele-rolling-in-the-deep.json"
-  },
-  {
     "artist": "Dummy",
     "title": "Dummy",
     "video": "ezdh-0hxV_I",
@@ -1553,23 +1862,5 @@
     "bpm": 911,
     "bar": 4,
     "file": "dummy.json"
-  },
-  {
-    "artist": "Idina Menzel",
-    "title": "Let It Go",
-    "video": "moSFlvxnbgk",
-    "gap": 14859,
-    "bpm": 275,
-    "bar": 4,
-    "file": "frozen-let-it-go.json"
-  },
-  {
-    "artist": "Netflix",
-    "title": "Toss A Coin To Your Witcher",
-    "video": "waMkFIzvDpE",
-    "gap": 1425,
-    "bpm": 211,
-    "bar": 4,
-    "file": "netflix-toss-a-coin-to-your-witcher.json"
   }
 ]
