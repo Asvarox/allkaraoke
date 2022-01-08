@@ -84,7 +84,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
     const historicPlayerNotes = useRef<[PlayerNote[], PlayerNote[]]>([[], []]);
 
     useEffect(() => {
-        console.log(song.tracks[0].sections[currentSectionIndex]);
+        // console.log(song.tracks[0].sections[currentSectionIndex]);
         historicFrequencies.current[0] = [];
         historicFrequencies.current[1] = [];
 

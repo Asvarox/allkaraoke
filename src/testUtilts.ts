@@ -17,13 +17,13 @@ export const generatePlayerNote = (note: Note, distance: number, startOffest: nu
     isPerfect
 })
 
-export const generateSong = (sections: Section[], data: Partial<Song> = {}): Song => ({
+export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Song => ({
     artist: 'artistTest',
     title: 'titleTest',
     video: 'videoTest',
     gap: 0,
     bpm: 60, // makes it easy to calc - beatLength = 1ms
     bar: 1000, // makes it easy to calc - beatLength = 1ms
-    tracks: [{ sections }],
+    tracks: tracks.map(sections => ({ sections })),
     ...data,
 });

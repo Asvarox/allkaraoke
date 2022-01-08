@@ -16,11 +16,24 @@ const shiftSections = (sections: Section[], shiftBeats: number): Section[] => se
             end: Math.max(0, section.end - shiftBeats), // first section might be 0
         }
     }
-})
+});
+
+const getFirstNoteFromSection = (section: Section) => {
+    if (!isNotesSection(section)) return section.start;
+
+    return section.notes[0].start;
+}
 
 export default function normaliseGap(song: Song): Song {
     const beatLength = getSongBeatLength(song);
-    const firstSection = song.tracks[0].sections[0];
+
+    const earliestTrack = song.tracks.reduce((current, track, index) => {
+        const currentNoteStart = getFirstNoteFromSection(song.tracks[current].sections[0]);
+        const thisNoteStart = getFirstNoteFromSection(track.sections[0]);
+        return currentNoteStart > thisNoteStart ? index : current
+    }, 0);
+
+    const firstSection = song.tracks[earliestTrack].sections[0];
     let shiftBeats = 0;
     if (isNotesSection(firstSection)) {
         shiftBeats = firstSection.start + (firstSection.notes[0].start - firstSection.start);

@@ -43,7 +43,6 @@ export default function EditSong({ song, onUpdate }: Props) {
     const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(0);
 
     const newSong = useMemo(() => {
-        console.log('fired');
         let processed = cloneDeep(song);
 
         processed = normaliseGap(processed);

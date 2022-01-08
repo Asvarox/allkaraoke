@@ -7,7 +7,7 @@ describe('calculateScore', () => {
     const note2 = generateNote(5, 5, { type: 'star' });
     const note3 = generateNote(10, 5, { type: 'normal' });
     const note4 = generateNote(15, 5, { type: 'star' });
-    const song = generateSong([{ start: 0, type: 'notes', notes: [note1, note2, note3, note4] }]);
+    const song = generateSong([[{ start: 0, type: 'notes', notes: [note1, note2, note3, note4] }]]);
 
     it('should properly calculate score for player with no sung notes', () => {
         const playerNotes: PlayerNote[] = [];
