@@ -84,6 +84,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
     const historicPlayerNotes = useRef<[PlayerNote[], PlayerNote[]]>([[], []]);
 
     useEffect(() => {
+        console.log(song.tracks[0].sections[currentSectionIndex]);
         historicFrequencies.current[0] = [];
         historicFrequencies.current[1] = [];
 
@@ -109,12 +110,12 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
                 song.gap,
                 currentSection.notes,
             );
-            // playerNotes.current[1] = frequenciesToLines(
-            //     historicFrequencies.current[1],
-            //     songBeatLength,
-            //     song.gap,
-            //     currentSection.notes,
-            // );
+            playerNotes.current[1] = frequenciesToLines(
+                historicFrequencies.current[1],
+                songBeatLength,
+                song.gap,
+                currentSection.notes,
+            );
         }
 
         drawFrame(
@@ -166,7 +167,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, onSongEn
         <Screen>
             <Scores height={overlayHeight}>
                 <span><ScoreText score={calculateScore([...historicPlayerNotes.current[0], ...playerNotes.current[0]], song)} /></span>
-                {/* <span><ScoreText score={calculateScore([...historicPlayerNotes.current[1], ...playerNotes.current[1]], song)} /></span> */}
+                <span><ScoreText score={calculateScore([...historicPlayerNotes.current[1], ...playerNotes.current[1]], song)} /></span>
             </Scores>
             {lyrics}
             <canvas ref={canvas} width={width} height={overlayHeight} />

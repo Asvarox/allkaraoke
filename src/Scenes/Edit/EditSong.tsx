@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Note, Song } from '../../interfaces';
 import getSongBeatLength from '../Game/Singing/Helpers/getSongBeatLength';
@@ -8,6 +8,7 @@ import Player, { PlayerRef } from '../Game/Singing/Player';
 import { cloneDeep } from 'lodash'
 import calculateProperBPM from '../Convert/calculateProperBpm';
 import normaliseGap from './Helpers/normaliseGap';
+import trimSections from './Helpers/normaliseSectionPaddings';
 
 interface Props {
     song: Song,
@@ -41,11 +42,17 @@ export default function EditSong({ song, onUpdate }: Props) {
 
     const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(0);
 
-    let newSong = cloneDeep(song);
+    const newSong = useMemo(() => {
+        console.log('fired');
+        let processed = cloneDeep(song);
 
-    newSong = normaliseGap(newSong);
-    newSong = shiftGap(newSong, gapShift);
-    newSong = shiftVideoGap(newSong, videoGapShift);
+        processed = normaliseGap(processed);
+        processed = trimSections(processed);
+        processed = shiftGap(processed, gapShift);
+        processed = shiftVideoGap(processed, videoGapShift);
+
+        return processed;
+    }, [gapShift, videoGapShift, song]);
 
     useEffect(() => {
         onUpdate?.(newSong);

@@ -16,7 +16,7 @@ describe('normaliseGap', () => {
         expect(normaliseGap(song)).toEqual(expectedSong);
     });
 
-    it.only('should normalise when note starts at a negative number', () => {
+    it('should normalise when note starts at a negative number', () => {
         const song = generateSong([
             { type: 'notes', start: 0, notes: [generateNote(-20), generateNote(40)]},
             { type: 'notes', start: 60, notes: [generateNote(80), generateNote(100)]},

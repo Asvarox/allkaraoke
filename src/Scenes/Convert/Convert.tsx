@@ -135,6 +135,10 @@ const JsonOutput = styled.textarea`
 
 function fixDiacritics(txt: string): string {
     return txt
+        .replaceAll('È', 'é')
+        .replaceAll('í', '\'')
+        .replaceAll('¥', "'")
+
         .replaceAll('¯', 'Ż')
         .replaceAll('¹', 'ą')
         .replaceAll('ê', 'ę')
@@ -145,7 +149,5 @@ function fixDiacritics(txt: string): string {
         .replaceAll('ñ', 'ń')
         .replaceAll('³', 'ł')
         .replaceAll('Û', 'ó')
-        .replaceAll('Ÿ', 'ź')
-        .replaceAll('í', '\'')
-        .replaceAll('¥', "'");
+        .replaceAll('Ÿ', 'ź');
 }
