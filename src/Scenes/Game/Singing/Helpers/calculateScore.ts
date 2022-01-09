@@ -2,7 +2,7 @@ import { PlayerNote, Song } from '../../../../interfaces';
 import { memoize } from 'lodash';
 import isNotesSection from './isNotesSection';
 
-export const MAX_POINTS = 2500000;
+export const MAX_POINTS = 3000000;
 
 const goldBase = 1;
 const perfectBase = .5;

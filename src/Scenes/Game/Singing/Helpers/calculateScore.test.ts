@@ -37,7 +37,7 @@ describe('calculateScore', () => {
             generatePlayerNote(note4, 0, 0, note4.length, false),
         ];
 
-        expect(calculateScore(playerNotes, song, 0)).toEqual(2187500);
+        expect(calculateScore(playerNotes, song, 0)).toEqual(MAX_POINTS * 0.875);
     });
 
     it('should ignore notes with distance other than 0', () => {
