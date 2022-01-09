@@ -58,4 +58,20 @@ describe('normaliseSectionPaddings', () => {
 
         expect(normaliseSectionPaddings(song)).toEqual(expectedSong);
     });
+
+    it('should handle track with pause at the beginning gracefully', () => {
+        const song = generateSong([[
+            { type: 'pause', start: 0, end: 20 },
+            { type: 'notes', start: 40, notes: [generateNote(40), generateNote(50, 10)]},
+            { type: 'notes', start: 70, notes: [generateNote(70), generateNote(80)]},
+        ]], { bar: 10 });
+
+        const expectedSong = generateSong([[
+            { type: 'pause', start: 0, end: 30 },
+            { type: 'notes', start: 30, notes: [generateNote(40), generateNote(50, 10)]},
+            { type: 'notes', start: 60, notes: [generateNote(70), generateNote(80)]},
+        ]], { bar: 10 });
+
+        expect(normaliseSectionPaddings(song)).toEqual(expectedSong);
+    });
 });

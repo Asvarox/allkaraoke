@@ -28,11 +28,13 @@ function Singing({ songPreview, returnToSongSelection }: Props) {
                 song={song.data}
                 playerNotes={playerNotes}
                 onClickSongSelection={returnToSongSelection}
+                tracksForPlayers={[0, song.data.tracks.length - 1]} // todo: make selectable in UI
             />
         );
     } else {
         return (
             <Player
+                tracksForPlayers={[0, song.data.tracks.length - 1]} // todo: make selectable in UI
                 song={song.data}
                 width={width}
                 height={height}

@@ -16,31 +16,31 @@ const shiftSections = (sections: Section[], shiftBeats: number): Section[] => se
             end: Math.max(0, section.end - shiftBeats), // first section might be 0
         }
     }
-});
+}).filter(section => isNotesSection(section) || section.start - section.end > 0); // clear empty pause sections
 
-const getFirstNoteFromSection = (section: Section) => {
-    if (!isNotesSection(section)) return section.start;
+const getFirstNoteFromSections = (sections: Section[]) => {
+    const firstNoteSection = sections.find(isNotesSection);
 
-    return section.notes[0].start;
+    return firstNoteSection ? firstNoteSection.notes[0].start : Infinity;
 }
 
 export default function normaliseGap(song: Song): Song {
     const beatLength = getSongBeatLength(song);
 
     const earliestTrack = song.tracks.reduce((current, track, index) => {
-        const currentNoteStart = getFirstNoteFromSection(song.tracks[current].sections[0]);
-        const thisNoteStart = getFirstNoteFromSection(track.sections[0]);
+        const currentNoteStart = getFirstNoteFromSections(song.tracks[current].sections);
+        const thisNoteStart = getFirstNoteFromSections(track.sections);
         return currentNoteStart > thisNoteStart ? index : current
     }, 0);
 
-    const firstSection = song.tracks[earliestTrack].sections[0];
-    let shiftBeats = 0;
-    if (isNotesSection(firstSection)) {
-        shiftBeats = firstSection.start + (firstSection.notes[0].start - firstSection.start);
-    } else {
-        console.error('There is a pause section at the beginning wat', firstSection);
-        return song; // todo handle case when there's pause section at the beginning
+    const firstSection = song.tracks[earliestTrack].sections.find(isNotesSection);
+    
+    if (!firstSection) {
+        console.error('There are no notes sections in the song, wat', song.tracks);
+        return song;
     }
+
+    const shiftBeats = firstSection.start + (firstSection.notes[0].start - firstSection.start);
     
     const gap = Math.floor(song.gap + (shiftBeats * beatLength));
 

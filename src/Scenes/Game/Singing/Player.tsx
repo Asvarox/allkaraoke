@@ -12,6 +12,7 @@ interface Props {
     showControls?: boolean;
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
+    tracksForPlayers: [number, number],
 }
 
 export interface PlayerRef {
@@ -21,7 +22,7 @@ export interface PlayerRef {
 }
 
 function Player(
-    { song, width, height, autoplay = true, showControls = false, onTimeUpdate, onSongEnd }: Props,
+    { song, width, height, autoplay = true, showControls = false, onTimeUpdate, onSongEnd, tracksForPlayers }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
     const player = useRef<YouTube | null>(null);
@@ -66,6 +67,7 @@ function Player(
                         width={width}
                         height={height}
                         onSongEnd={onSongEnd}
+                        tracksForPlayers={tracksForPlayers}
                     />
                 </Overlay>
             )}

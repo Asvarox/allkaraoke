@@ -11,21 +11,22 @@ interface Props {
     height: number;
     song: Song;
     playerNotes: [PlayerNote[], PlayerNote[]];
+    tracksForPlayers: [number, number],
     onClickSongSelection: () => void;
 }
 
-function PostGame({ song, playerNotes, width, height, onClickSongSelection }: Props) {
+function PostGame({ song, playerNotes, width, height, onClickSongSelection, tracksForPlayers }: Props) {
     return (
         <SongPage songData={song} width={width} height={height}>
             <ScoresContainer>
                 <ScoreTextPlayer>Player #1</ScoreTextPlayer>
                 <br />
-                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[0], song)} /></ScoreTextScore>
+                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[0], song, tracksForPlayers[0])} /></ScoreTextScore>
                 <br /> {/* xD */}
                 <br />
                 <br />
                 <br />
-                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[1], song)} /></ScoreTextScore>
+                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[1], song, tracksForPlayers[1])} /></ScoreTextScore>
                 <br />
                 <ScoreTextPlayer>Player #2</ScoreTextPlayer>
             </ScoresContainer>

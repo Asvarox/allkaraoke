@@ -8,7 +8,7 @@ import Player, { PlayerRef } from '../Game/Singing/Player';
 import { cloneDeep } from 'lodash'
 import calculateProperBPM from '../Convert/calculateProperBpm';
 import normaliseGap from './Helpers/normaliseGap';
-import trimSections from './Helpers/normaliseSectionPaddings';
+import normaliseSectionPaddings from './Helpers/normaliseSectionPaddings';
 
 interface Props {
     song: Song,
@@ -46,7 +46,7 @@ export default function EditSong({ song, onUpdate }: Props) {
         let processed = cloneDeep(song);
 
         processed = normaliseGap(processed);
-        processed = trimSections(processed);
+        processed = normaliseSectionPaddings(processed);
         processed = shiftGap(processed, gapShift);
         processed = shiftVideoGap(processed, videoGapShift);
 
@@ -57,17 +57,9 @@ export default function EditSong({ song, onUpdate }: Props) {
         onUpdate?.(newSong);
     }, [gapShift, videoGapShift]);
 
-    let firstNote: Note | undefined;
-    let lastNote: Note | undefined;
     let beatLength: number | undefined;
 
     beatLength = getSongBeatLength(newSong);
-
-    const notesSections = newSong.tracks[0].sections.filter(isNotesSection);
-    firstNote = notesSections[0].notes[0];
-
-    const lastSection = notesSections[notesSections.length - 1];
-    lastNote = lastSection.notes[lastSection.notes.length - 1];
 
     const seekBy = (bySec: number) => player.current?.seekTo((currentTime + bySec) / 1000);
     const seekTo = (toSec: number, offset: number = -2) => player.current?.seekTo(toSec / 1000 + offset)
@@ -84,6 +76,7 @@ export default function EditSong({ song, onUpdate }: Props) {
                             height={playerHeight}
                             ref={player}
                             onTimeUpdate={setCurrentTime}
+                            tracksForPlayers={[0, song.tracks.length - 1]} // todo: make selectable in UI
                         />
                         </PlayerContainer>
                         <Editor>
@@ -173,17 +166,23 @@ export default function EditSong({ song, onUpdate }: Props) {
                                     </InputGroupButton>
                                 </InputGroup>
                             </EditorRow>
-                            {!!firstNote && !!beatLength && (
-                                <EditorRow>
-                                    First note start: {msec(firstNote.start * beatLength + newSong.gap)}
-                                </EditorRow>
-                            )}
-                            {!!lastNote && !!beatLength && (
-                                <EditorRow>
-                                    Last note end:{' '}
-                                    {msec((lastNote.start + lastNote.length) * beatLength + newSong.gap)}
-                                </EditorRow>
-                            )}
+                            {song.tracks.map(({ sections }, index) => {
+                                const notesSections = sections.filter(isNotesSection);
+                                const firstNote = notesSections[0].notes[0];
+
+                                const lastSection = notesSections[notesSections.length - 1];
+                                const lastNote = lastSection.notes[lastSection.notes.length - 1];
+
+                                if (!firstNote || !lastNote  || !beatLength) return null;
+
+                                return (
+                                    <EditorRow key={index}>
+                                        <strong>Track #{index + 1} - </strong>
+                                        Start: {msec(firstNote.start * beatLength + newSong.gap)},
+                                        end: {msec(lastNote.start * beatLength + newSong.gap)}
+                                    </EditorRow>
+                                )
+                            })}
                             <EditorRow>
                                 <InputGroup>
                                     <span>Desired last note end</span>

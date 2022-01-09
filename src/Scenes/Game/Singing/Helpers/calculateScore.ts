@@ -7,23 +7,30 @@ export const MAX_POINTS = 2500000;
 const goldBase = 1;
 const perfectBase = .5;
 
-const countSungBeats = memoize((song: Song) => {
-    let count = 0;
-    let goldCount = 0;
+const countSungBeats = memoize((song: Song): number[] => {
+    return song.tracks.map(({ sections }) => {
+        let count = 0;
+        let goldCount = 0;
+        sections
+            .filter(isNotesSection)
+            .forEach((section) => {
+                count = section.notes.reduce((acc, note) => acc + note.length, count)
+                goldCount = section.notes.filter(note => note.type === 'star').reduce((acc, note) => acc + note.length, goldCount)
+            });
 
-    song.tracks[0].sections
-        .filter(isNotesSection)
-        .forEach((section) => {
-            count = section.notes.reduce((acc, note) => acc + note.length, count)
-            goldCount = section.notes.filter(note => note.type === 'star').reduce((acc, note) => acc + note.length, goldCount)
-        });
-
-    return ((1 + perfectBase) * count) + (goldBase * goldCount);
+        return ((1 + perfectBase) * count) + (goldBase * goldCount);
+    });
 });
 
-export default function calculateScore(playerNotes: PlayerNote[], song: Song): number {
-    const pointsPerBeat = MAX_POINTS / countSungBeats(song);
+export default function calculateScore(playerNotes: PlayerNote[], song: Song, trackNumber: number): number {
+    const beatsPerTrack = countSungBeats(song);
 
+    if (!beatsPerTrack[trackNumber]) {
+        console.error(`No beat count for track ${trackNumber} in song`, song);
+        return 0;
+    }
+
+    const pointsPerBeat = MAX_POINTS / countSungBeats(song)[trackNumber];
 
     let sungBeats = 0;
     let goldBeats = 0;
@@ -31,7 +38,7 @@ export default function calculateScore(playerNotes: PlayerNote[], song: Song): n
 
     for (let i = 0; i < playerNotes.length; i++) {
         const note = playerNotes[i];
-        if (note.distance > 0) continue;
+        if (note.distance !== 0) continue;
 
         sungBeats = sungBeats + note.length
         if (note.note.type === 'star') goldBeats = goldBeats + (note.length * goldBase);

@@ -57,4 +57,17 @@ describe('normaliseGap', () => {
 
         expect(normaliseGap(song)).toEqual(expectedSong);
     });
+
+    it('should ignore pause-sections at the beginning of the track', () => {
+        const song = generateSong([[
+            { type: 'pause', start: 0, end: 10 },
+            { type: 'notes', start: 10, notes: [generateNote(20), generateNote(40)]},
+        ]], { gap: 20 });
+
+        const expectedSong = generateSong([
+            [{ type: 'notes', start: 0, notes: [generateNote(0), generateNote(20)]}],
+        ], { gap: 40 });
+
+        expect(normaliseGap(song)).toEqual(expectedSong);
+    });
 });
