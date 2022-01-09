@@ -14,21 +14,6 @@
     "file": "2 Plus 1-Chodz, Pomaluj Mój Swiat.json"
   },
   {
-    "title": "Winda do Nieba",
-    "artist": "2 Plus 1",
-    "bpm": 134.61,
-    "bar": 4,
-    "gap": 41650,
-    "video": "PWTLbvZRdJw",
-    "genre": "Pop",
-    "language": "Polish",
-    "videoGap": 0,
-    "author": "jockel1974",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
-    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2894",
-    "file": "2 Plus 1-Winda do Nieba.json"
-  },
-  {
     "title": "Dancing Queen",
     "artist": "ABBA",
     "bpm": 339.3,
@@ -418,6 +403,20 @@
     "file": "Britney Spears-Toxic.json"
   },
   {
+    "title": "Piąty Bieg",
+    "artist": "Budka Suflera",
+    "bpm": 116,
+    "bar": 4,
+    "gap": 27820,
+    "video": "ccJw0xx2Nrw",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12507",
+    "file": "Budka Suflera-Piąty Bieg [DUET].json"
+  },
+  {
     "title": "Takie tango",
     "artist": "Budka Suflera",
     "bpm": 225.2,
@@ -480,6 +479,22 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=albanderuaz",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Clocks",
     "file": "Coldplay-Clocks.json"
+  },
+  {
+    "title": "My Heart Will Go On",
+    "artist": "Céline Dion",
+    "bpm": 384.59,
+    "bar": 4,
+    "gap": 20450,
+    "video": "3gK_2XdjOdY",
+    "year": "1997",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On",
+    "file": "Céline Dion-My Heart Will Go On.json"
   },
   {
     "title": "Get Lucky",
@@ -843,6 +858,20 @@
     "file": "Jamiroquai-Virtual Insanity.json"
   },
   {
+    "title": "Koko Euro Spoko",
+    "artist": "Jarzębina",
+    "bpm": 246.42,
+    "bar": 4,
+    "gap": 7592,
+    "video": "YtDhMzDkois",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14055",
+    "file": "Jarzębina-Koko Euro Spoko.json"
+  },
+  {
     "title": "Are You Gonna Be My Girl",
     "artist": "Jet",
     "bpm": 350.4,
@@ -963,6 +992,21 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=pomidorowa",
     "file": "Letni, Chamski Podryw-Pomidorowa.json"
+  },
+  {
+    "title": "Zrobię mężczyzn z was",
+    "artist": "Maciej Molęda",
+    "bpm": 237.64,
+    "bar": 4,
+    "gap": 32270,
+    "video": "7tCTeSocvB0",
+    "year": "1998",
+    "language": "Polish",
+    "videoGap": 3,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maciej%20Mol%C4%99da&cancion=Zrobi%C4%99%20m%C4%99%C5%BCczyzn%20z%20was",
+    "file": "Maciej Molęda-Zrobię mężczyzn z was.json"
   },
   {
     "title": "Moves Like Jagger",
@@ -1546,28 +1590,13 @@
     "file": "Spice Girls-Wannabe.json"
   },
   {
-    "title": "Bielyje Rozy",
-    "artist": "Stachursky",
-    "bpm": 118.05,
-    "bar": 4,
-    "gap": 31815,
-    "video": "ytIoHqCF57s",
-    "genre": "Pop",
-    "language": "Russian",
-    "videoGap": 0,
-    "author": "Polishgangster77",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=55848",
-    "sourceUrl": "http://usdb.animux.de/index.php?&link=detail&id=13069",
-    "file": "Stachursky-Bielyje Rozy.json"
-  },
-  {
     "title": "Gdy Zaplaczesz",
     "artist": "Stachursky",
     "bpm": 104.1,
     "bar": 4,
     "gap": 10800,
     "video": "0Fe5ZlMOf7s",
-    "videoGap": 18,
+    "videoGap": 0,
     "author": "jockel1974",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2862",
@@ -1791,6 +1820,22 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Vertigo",
     "file": "U2-Vertigo.json"
+  },
+  {
+    "title": "With or without you",
+    "artist": "U2",
+    "bpm": 219.96,
+    "bar": 4,
+    "gap": 28473,
+    "video": "ujNeHIo7oTE",
+    "year": "1987",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Kodaman",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=With%20or%20without%20you",
+    "file": "U2-With or without you.json"
   },
   {
     "title": "Konik na biegunach",
