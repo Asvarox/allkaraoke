@@ -13,6 +13,7 @@ import calculateScore from './Helpers/calculateScore';
 import YouTube from 'react-youtube';
 import ScoreText from './ScoreText';
 import InputInterface from './Input/Interface';
+import DurationBar from './Components/DurationBar';
 
 const Input = DummyInput;
 // const Input = MicInput;
@@ -24,7 +25,8 @@ interface Props {
     width: number;
     height: number;
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
-    tracksForPlayers: [number, number]
+    tracksForPlayers: [number, number],
+    duration: number,
 }
 
 interface UsePlayerArgs {
@@ -116,7 +118,10 @@ const usePlayer = (params: UsePlayerArgs) => {
             historicFrequencies.current,
             playerNotes.current,
         );
-    }, [params.input, params.playerNumber, params.canvas, currentSectionIndex, params.currentTime, minPitch, maxPitch, params.songBeatLength, params.song, currentSection]);
+    }, [
+        params.input, params.playerNumber, params.canvas, currentSectionIndex, params.currentTime,
+        minPitch, maxPitch, params.songBeatLength, params.song, currentSection, params.track,
+    ]);
 
     return {
         currentSection,
@@ -127,7 +132,7 @@ const usePlayer = (params: UsePlayerArgs) => {
     }
 }
 
-function GameOverlay({ song, currentTime, currentStatus, width, height, tracksForPlayers, onSongEnd }: Props) {
+function GameOverlay({ song, currentTime, currentStatus, width, height, tracksForPlayers, onSongEnd, duration }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
     const songBeatLength = useMemo(() => getSongBeatLength(song), [song]);
@@ -187,9 +192,9 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
     );
 
     const overlayHeight = height - 2 * 100 - 40;
-
     return (
         <Screen>
+            <DurationBar currentTime={currentTime} song={song} duration={duration} beatLength={songBeatLength} usedTracks={tracksForPlayers} />
             <Scores height={overlayHeight}>
                 <span><ScoreText score={calculateScore([...player1.historicPlayerNotes, ...player1.playerNotes], song, tracksForPlayers[0])} /></span>
                 <span><ScoreText score={calculateScore([...player2.historicPlayerNotes, ...player2.playerNotes], song, tracksForPlayers[0])} /></span>
@@ -203,15 +208,16 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
 
 const Screen = styled.div`
     padding: 20px 0;
-    display: relative;
     color: white;
     -webkit-text-stroke: 2px black;
     font-weight: bold;
 `;
 
-const Scores = styled.div<{ height: number }>(
-    ({ height }) => `
-    height: ${height}px;
+const Scores = styled.div.attrs<{ height: number }>(({ height }) => ({
+    style: {
+        height: `${height}px`
+    }
+}))<{ height: number }>`
     margin-top: 100px;
     position: absolute;
     right: 10px;
@@ -220,8 +226,7 @@ const Scores = styled.div<{ height: number }>(
     justify-content: space-between;
     flex-direction: column;
     text-align: right;
-`,
-);
+`;
 
 const LyricsContainer = styled.div`
     box-sizing: border-box;

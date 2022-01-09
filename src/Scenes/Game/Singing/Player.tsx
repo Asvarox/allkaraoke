@@ -27,6 +27,7 @@ function Player(
 ) {
     const player = useRef<YouTube | null>(null);
     const [currentTime, setCurrentTime] = useState(0);
+    const [duration, setDuration] = useState(0);
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
     useEffect(() => {
@@ -37,10 +38,16 @@ function Player(
             const time = (await player.current!.getInternalPlayer().getCurrentTime()) * 1000;
             setCurrentTime(time);
             onTimeUpdate?.(time);
-        }, 16);
+        }, 16.6);
 
         return () => clearInterval(interval);
     }, [player, onTimeUpdate, currentStatus]);
+
+    useEffect(() => {
+        if (player.current && currentStatus === YouTube.PlayerState.PLAYING && duration === 0) {
+            player.current.getInternalPlayer().getDuration().then(setDuration);
+        }
+    }, [duration, player, currentStatus]);
 
     useEffect(() => {
         if (!player.current) {
@@ -61,6 +68,7 @@ function Player(
             {currentStatus !== YouTube.PlayerState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
+                        duration={duration}
                         currentStatus={currentStatus}
                         song={song}
                         currentTime={currentTime}

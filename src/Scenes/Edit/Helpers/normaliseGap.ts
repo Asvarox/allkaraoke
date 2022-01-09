@@ -1,4 +1,5 @@
 import { Section, Song } from "../../../interfaces";
+import { getFirstNoteStartFromSections } from "../../Game/Singing/Helpers/notesSelectors";
 import getSongBeatLength from "../../Game/Singing/Helpers/getSongBeatLength"
 import isNotesSection from "../../Game/Singing/Helpers/isNotesSection";
 
@@ -18,18 +19,12 @@ const shiftSections = (sections: Section[], shiftBeats: number): Section[] => se
     }
 }).filter(section => isNotesSection(section) || section.start - section.end > 0); // clear empty pause sections
 
-const getFirstNoteFromSections = (sections: Section[]) => {
-    const firstNoteSection = sections.find(isNotesSection);
-
-    return firstNoteSection ? firstNoteSection.notes[0].start : Infinity;
-}
-
 export default function normaliseGap(song: Song): Song {
     const beatLength = getSongBeatLength(song);
 
     const earliestTrack = song.tracks.reduce((current, track, index) => {
-        const currentNoteStart = getFirstNoteFromSections(song.tracks[current].sections);
-        const thisNoteStart = getFirstNoteFromSections(track.sections);
+        const currentNoteStart = getFirstNoteStartFromSections(song.tracks[current].sections);
+        const thisNoteStart = getFirstNoteStartFromSections(track.sections);
         return currentNoteStart > thisNoteStart ? index : current
     }, 0);
 
