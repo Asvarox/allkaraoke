@@ -1,4 +1,5 @@
 import aubio from 'aubiojs';
+import InputInterface from './Interface';
 
 interface FrequencyDetectionStrategy {
     getSampleSize(): number;
@@ -27,12 +28,12 @@ class AubioStrategy implements FrequencyDetectionStrategy {
     };
 }
 
-class MicInput {
+class MicInput implements InputInterface {
     // private channelCount = 2;
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
 
-    private frequencies = [0, 0];
+    private frequencies: [number, number] = [0, 0];
 
     public startMonitoring = async () => {
         this.stream = await navigator.mediaDevices.getUserMedia({

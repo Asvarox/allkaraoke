@@ -1,5 +1,7 @@
-class DummyInput {
-    private frequencies = [410, 210];
+import InputInterface from "./Interface";
+
+class DummyInput implements InputInterface {
+    private frequencies: [number, number] = [410, 210];
     private timestamp = 0;
     private interval: number | null = null;
 
