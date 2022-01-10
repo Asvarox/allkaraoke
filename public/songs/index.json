@@ -323,6 +323,21 @@
     "file": "Bon Jovi-Have a nice day.json"
   },
   {
+    "title": "It's my life",
+    "artist": "Bon Jovi",
+    "bpm": 240.1,
+    "bar": 4,
+    "gap": 34064,
+    "video": "vx2u5uUu3DE",
+    "year": "2000",
+    "language": "English",
+    "videoGap": 23,
+    "author": "upalula",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=It's%20my%20life",
+    "file": "Bon Jovi-It's my life.json"
+  },
+  {
     "title": "Livin' on a Prayer",
     "artist": "Bon Jovi",
     "bpm": 244.8,
@@ -676,6 +691,21 @@
     "file": "Hoobastank-The Reason.json"
   },
   {
+    "title": "Wypijmy Za To",
+    "artist": "Ich Troje",
+    "bpm": 110.58,
+    "bar": 4,
+    "gap": 34218,
+    "video": "3xfHZgEnodk",
+    "edition": "Ultrastar",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Ich Troje-Wypijmy Za To.json"
+  },
+  {
     "title": "Zawsze z Tobą Chciałbym Być",
     "artist": "Ich Troje",
     "bpm": 130.02,
@@ -826,6 +856,21 @@
     "file": "Imagine Dragons-Whatever It Takes.json"
   },
   {
+    "title": "Mury",
+    "artist": "Jacek Kaczmarski",
+    "bpm": 203.0125,
+    "bar": 4,
+    "gap": 8470,
+    "video": "4Qa__lJvpYY",
+    "year": "1980",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "zartas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=113646",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17614",
+    "file": "Jacek Kaczmarski-Mury.json"
+  },
+  {
     "title": "You're Beautiful",
     "artist": "James Blunt",
     "bpm": 340,
@@ -907,6 +952,20 @@
     "artist": "Kayah i Goran Bregovic",
     "bpm": 170.79,
     "bar": 4,
+    "gap": 66560,
+    "video": "cKF2GjRAUtE",
+    "language": "Polish",
+    "videoGap": 48,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11350",
+    "file": "Kayah i Goran Bregovic-Prawy do Lewego (1).json"
+  },
+  {
+    "title": "Prawy do Lewego",
+    "artist": "Kayah i Goran Bregovic",
+    "bpm": 170.79,
+    "bar": 4,
     "gap": 1260,
     "video": "4uyYJDjnDVo",
     "language": "Polish",
@@ -945,6 +1004,20 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11699",
     "file": "Krzysztof Krawczyk-Zatańczysz ze Mną Jeszcze Raz.json"
+  },
+  {
+    "title": "Baranek",
+    "artist": "Kult",
+    "bpm": 309.8,
+    "bar": 4,
+    "gap": 8767,
+    "video": "DqBuIaa2-_s",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "oldkillerjones",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=76763",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=16845",
+    "file": "Kult-Baranek.json"
   },
   {
     "title": "Poker Face",
@@ -992,6 +1065,20 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=pomidorowa",
     "file": "Letni, Chamski Podryw-Pomidorowa.json"
+  },
+  {
+    "title": "Ciągle Pada",
+    "artist": "Lizar",
+    "bpm": 171.3,
+    "bar": 4,
+    "gap": 5519,
+    "video": "DTmEmsJgh0I",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11762",
+    "file": "Lizar-Ciągle Pada.json"
   },
   {
     "title": "Zrobię mężczyzn z was",
@@ -1200,6 +1287,36 @@
     "file": "Myslovitz-Dlugosc dzwieku samotnosci.json"
   },
   {
+    "title": "My",
+    "artist": "Myslovitz",
+    "bpm": 242.6,
+    "bar": 4,
+    "gap": 26650,
+    "video": "u5sHldnP6NU",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "tristen",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=117946",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17980",
+    "file": "Myslovitz-My.json"
+  },
+  {
+    "title": "Scenariusz Dla Moich Sąsiadów",
+    "artist": "Myslovitz",
+    "bpm": 129.5,
+    "bar": 4,
+    "gap": 34380,
+    "video": "AbyJ_h4xfRQ",
+    "edition": "UltraStar",
+    "genre": "Alternative Rock",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "tristen",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=117946",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17979",
+    "file": "Myslovitz-Scenariusz Dla Moich Sąsiadów.json"
+  },
+  {
     "artist": "Netflix",
     "title": "Toss A Coin To Your Witcher",
     "video": "waMkFIzvDpE",
@@ -1239,6 +1356,48 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak",
     "file": "No Doubt-Don't speak.json"
+  },
+  {
+    "title": "Kiedy powiem sobie dość",
+    "artist": "ONA",
+    "bpm": 82.8,
+    "bar": 4,
+    "gap": 23960,
+    "video": "ghh0ttnRdiQ",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2947",
+    "file": "ONA-Kiedy powiem sobie dość.json"
+  },
+  {
+    "title": "Nie Mogę Ci Wiele Dać",
+    "artist": "Perfect",
+    "bpm": 187.52,
+    "bar": 4,
+    "gap": 15550,
+    "video": "Qj8Ins5mDaE",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12554",
+    "file": "Perfect-Nie Mogę Ci Wiele Dać.json"
+  },
+  {
+    "title": "Niepokonani",
+    "artist": "Perfect",
+    "bpm": 152.39,
+    "bar": 4,
+    "gap": 14420,
+    "video": "HZ8qBioPlHE",
+    "language": "Polish",
+    "videoGap": -1,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11365",
+    "file": "Perfect-Niepokonani.json"
   },
   {
     "title": "Caluj Mnie",
@@ -1692,6 +1851,34 @@
     "file": "T.Love-I Love You.json"
   },
   {
+    "title": "King",
+    "artist": "T.Love",
+    "bpm": 219.1,
+    "bar": 4,
+    "gap": 8960,
+    "video": "V7dzGEKRxGY",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11547",
+    "file": "T.Love-King.json"
+  },
+  {
+    "title": "Stokrotka",
+    "artist": "T.Love",
+    "bpm": 211.24,
+    "bar": 4,
+    "gap": 24206,
+    "video": "amKWPGHxfgo",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=13182",
+    "file": "T.Love-Stokrotka.json"
+  },
+  {
     "title": "Zegarmistrz światła",
     "artist": "Tadeusz Woźniak",
     "bpm": 229.92,
@@ -1786,6 +1973,20 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Proclaimers&cancion=I%27m%20gonna%20be%20(500%20miles)",
     "file": "The Proclaimers-I'm gonna be (500 miles).json"
+  },
+  {
+    "title": "Zabiorę Cię właśnie tam",
+    "artist": "Tomasz Karolak",
+    "bpm": 160.13,
+    "bar": 4,
+    "gap": 27970,
+    "video": "76RuYhKSkcM",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Angelyina",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1550",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3815",
+    "file": "Tomasz Karolak-Zabiorę Cię właśnie tam.json"
   },
   {
     "title": "Beautiful Day",
