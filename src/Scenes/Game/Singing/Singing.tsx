@@ -1,5 +1,5 @@
 import useWindowSize from './useWindowSize';
-import { PlayerNote, Song, SongPreview } from '../../../interfaces';
+import { PlayerNote, SingSetup, Song } from '../../../interfaces';
 import { useQuery } from 'react-query';
 import Player from './Player';
 import PostGame from './PostGame';
@@ -8,13 +8,13 @@ import normaliseGap from '../../Edit/Helpers/normaliseGap';
 import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPaddings';
 
 interface Props {
-    songPreview: SongPreview;
+    singSetup: SingSetup;
     returnToSongSelection: () => void;
 }
 
-function Singing({ songPreview, returnToSongSelection }: Props) {
-    const song = useQuery<Song>(`song-${songPreview.file}`, () =>
-        fetch(`./songs/${songPreview.file}`).then((response) => response.json()),
+function Singing({ singSetup, returnToSongSelection }: Props) {
+    const song = useQuery<Song>(`song-${singSetup.songPreview.file}`, () =>
+        fetch(`./songs/${singSetup.songPreview.file}`).then((response) => response.json()),
     );
     const { width, height } = useWindowSize();
     const [isEnded, setIsEnded] = useState(false);
@@ -40,13 +40,13 @@ function Singing({ songPreview, returnToSongSelection }: Props) {
                 song={newSong}
                 playerNotes={playerNotes}
                 onClickSongSelection={returnToSongSelection}
-                tracksForPlayers={[0, newSong.tracks.length - 1]} // todo: make selectable in UI
+                tracksForPlayers={singSetup.playerTracks}
             />
         );
     } else {
         return (
             <Player
-                tracksForPlayers={[0, newSong.tracks.length - 1]} // todo: make selectable in UI
+                tracksForPlayers={singSetup.playerTracks}
                 song={newSong}
                 width={width}
                 height={height}

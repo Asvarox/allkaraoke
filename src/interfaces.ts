@@ -10,6 +10,17 @@ export type NoLyricNote = Omit<Note, 'lyrics' | 'type'>;
 
 export type Section = NotesSection | PauseSection;
 
+export enum GAME_MODE {
+    DUEL,
+    // PASS_THE_MIC,
+}
+
+export interface SingSetup {
+    playerTracks: [number, number]
+    mode: GAME_MODE,
+    songPreview: SongPreview,
+}
+
 export interface NotesSection {
     // end: never;
     start: number;
@@ -51,6 +62,7 @@ export interface SongTrack {
 
 export interface SongPreview extends Omit<Song, 'tracks'> {
     file: string;
+    tracksCount: number;
 }
 
 export interface FrequencyRecord {

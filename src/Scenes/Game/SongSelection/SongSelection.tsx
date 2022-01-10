@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useQuery } from 'react-query';
 import styled from 'styled-components';
-import { SongPreview } from '../../../interfaces';
+import { SingSetup, SongPreview } from '../../../interfaces';
 import styles from '../Singing/Drawing/styles';
 import FocusedSong from './FocusedSong';
 
 interface Props {
-    onSongSelected: (preview: SongPreview) => void;
+    onSongSelected: (songSetup: SingSetup) => void;
 }
 
 export default function SongSelection({ onSongSelected }: Props) {
@@ -22,7 +22,7 @@ export default function SongSelection({ onSongSelected }: Props) {
         <SongSelectionContainer>
             <FocusedSong
                 songPreview={songList.data[focusedSong]}
-                onPlay={() => onSongSelected(songList.data[focusedSong])}
+                onPlay={onSongSelected}
             />
             <SongListContainer>
                 {songList.data.map((song, index) => (
@@ -74,12 +74,12 @@ const SongListEntry = styled.div<{ video: string, focused: boolean }>`
 
     flex-direction: column;
     justify-content: flex-end;
-    /* filter: sepia(0.5); */
+    opacity: .8;
+    z-index: 0;
+    transition: 200ms;
     ${({ focused }) => focused && `
-        // filter: sepia(0);
-        // filter: sepia(0);
-        // transform-origin: center;
-        // transform: scale(1.1);
+        opacity: 1;
+        box-shadow: 0px 0px 3px 3px ${styles.colors.text.active};
     `}
 `;
 

@@ -222,7 +222,7 @@ const Scores = styled.div.attrs<{ height: number }>(({ height }) => ({
 const LyricsContainer = styled.div`
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
     width: 100%;
     text-align: center;

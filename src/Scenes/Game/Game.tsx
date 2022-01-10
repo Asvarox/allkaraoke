@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { SongPreview } from '../../interfaces';
+import { SingSetup, SongPreview } from '../../interfaces';
 import Singing from './Singing/Singing';
 import SongSelection from './SongSelection/SongSelection';
 
 function Game() {
-    const [selectedSong, setSelectedSong] = useState<SongPreview | null>(null);
+    const [singSetup, setSingSetup] = useState<SingSetup | null>(null);
 
     useEffect(() => {
         document.body.requestFullscreen();
@@ -14,10 +14,10 @@ function Game() {
     return (
         <>
             <FullscreenButton onClick={() => document.body.requestFullscreen()}>Fullscreen</FullscreenButton>
-            {selectedSong ? (
-                <Singing songPreview={selectedSong} returnToSongSelection={() => setSelectedSong(null)} />
+            {singSetup ? (
+                <Singing singSetup={singSetup} returnToSongSelection={() => setSingSetup(null)} />
             ) : (
-                <SongSelection onSongSelected={(preview) => setSelectedSong(preview)} />
+                <SongSelection onSongSelected={setSingSetup} />
             )}
         </>
     )
@@ -32,6 +32,7 @@ const FullscreenButton = styled.div`
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 10000;
 `
 
 export default Game;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Route, Router } from 'wouter';
+import { GAME_MODE } from './interfaces';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
@@ -18,7 +19,7 @@ function App() {
                 <Route path="/test-player">
                     {() => (
                         <Singing
-                            songPreview={{ file: 'dummy.json' } as any}
+                            singSetup={{ mode: GAME_MODE.DUEL, playerTracks: [0, 0], songPreview: { file: 'dummy.json' } as any}}
                             returnToSongSelection={() => window.location.reload()}
                         />
                     )}
