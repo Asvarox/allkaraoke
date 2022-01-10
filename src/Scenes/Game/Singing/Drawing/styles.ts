@@ -1,7 +1,7 @@
-const blueFill = (a: number) => `rgba(0, 153, 255, ${a})`;
-const blueStroke = (a: number) => `rgba(0, 77, 128, ${a})`;
-const redFill = (a: number) => `rgba(255, 54, 54, ${a})`;
-const redStroke = (a: number) => `rgba(117, 25, 25, ${a})`;
+export const blueFill = (a = 1) => `rgba(0, 153, 255, ${a})`;
+export const blueStroke = (a = 1) => `rgba(0, 77, 128, ${a})`;
+export const redFill = (a = 1) => `rgba(255, 54, 54, ${a})`;
+export const redStroke = (a = 1) => `rgba(117, 25, 25, ${a})`;
 
 const playerColors = [
     {

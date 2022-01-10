@@ -59,7 +59,9 @@ function Player(
 
     useImperativeHandle(ref, () => ({
         // getCurrentTime: () => currentTime,
-        seekTo: (time: number) => player.current!.getInternalPlayer().seekTo(time, true),
+        seekTo: (time: number) => {
+            player.current!.getInternalPlayer().seekTo(time, true)
+        },
         setPlaybackSpeed: (speed: number) => player.current!.getInternalPlayer().setPlaybackRate(speed),
     }));
 

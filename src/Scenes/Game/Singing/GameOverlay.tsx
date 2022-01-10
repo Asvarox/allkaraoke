@@ -14,6 +14,8 @@ import YouTube from 'react-youtube';
 import ScoreText from './ScoreText';
 import InputInterface from './Input/Interface';
 import DurationBar from './Components/DurationBar';
+import useCurrentSectionIndex from './Hooks/useCurrentSectionIndex';
+import getCurrentBeat from './Helpers/getCurrentBeat';
 
 const Input = DummyInput;
 // const Input = MicInput;
@@ -50,18 +52,7 @@ const usePlayer = (params: UsePlayerArgs) => {
         return [min, max];
     }, [sections]);
 
-    const currentSectionIndex = useMemo(
-        () => sections.findIndex((section, index) => {
-                if (params.currentBeat < 0) return true;
-                if (params.currentBeat < section.start) return false;
-                if (index === sections.length - 1) return true;
-                if (sections[index + 1].start > params.currentBeat) {
-                    return true;
-                }
-                return false;
-            }),
-        [params.currentBeat, sections],
-    );
+    const currentSectionIndex = useCurrentSectionIndex(sections, params.currentBeat)
 
     const currentSection = sections?.[currentSectionIndex];
     const nextSection = sections?.[currentSectionIndex + 1];
@@ -136,7 +127,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
     const songBeatLength = useMemo(() => getSongBeatLength(song), [song]);
-    const currentBeat = Math.floor((currentTime - song.gap) / songBeatLength);
+    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap);
 
     useEffect(() => {
         Input.startMonitoring();

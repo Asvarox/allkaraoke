@@ -27,7 +27,6 @@ export default function SongSelection({ onSongSelected }: Props) {
             <SongListContainer>
                 {songList.data.map((song, index) => (
                     <SongListEntry key={song.file} onClick={() => setFocusedSong(index)} video={song.video} focused={index === focusedSong}>
-                        {/* <SongListEntryImage src={`https://i3.ytimg.com/vi/${song.video}/maxresdefault.jpg`} alt="song video miniature" /> */}
                         <SongListEntryDetails>
                             <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
                             {song.title}
@@ -41,17 +40,24 @@ export default function SongSelection({ onSongSelected }: Props) {
 
 const SongSelectionContainer = styled.div`
     margin: 0 auto;
-    margin-top: 30px;
     width: 1100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    background: rgba(0,0,0,.5);
+    padding: 0 20px;
 `;
 
 const SongListContainer = styled.div`
+    flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
+    padding-bottom: 20px;
 `;
 
 const SongListEntry = styled.div<{ video: string, focused: boolean }>`
