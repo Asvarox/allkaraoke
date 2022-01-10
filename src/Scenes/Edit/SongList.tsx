@@ -1,4 +1,5 @@
 import { useQuery } from 'react-query';
+import styled from 'styled-components';
 import { Link } from 'wouter';
 import { SongPreview } from '../../interfaces';
 
@@ -11,7 +12,7 @@ export default function SongList(props: Props) {
 
     if (!songList.data) return <>Loading</>;
 
-    return <>
+    return <Container>
         <h3>{songList.data.length} songs</h3>
     <ul>
         {songList.data.map(song => (
@@ -20,5 +21,13 @@ export default function SongList(props: Props) {
             </li>
         ))}
     </ul>
-    </>
+    </Container>
 }
+
+const Container = styled.div`
+    margin: 0 auto;
+    height: 100%;
+    width: 1100px;
+    background: white;
+    padding: 20px;
+`

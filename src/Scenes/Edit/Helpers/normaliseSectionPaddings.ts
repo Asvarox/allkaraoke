@@ -4,10 +4,14 @@ import isNotesSection from "../../Game/Singing/Helpers/isNotesSection";
 
 const HEADSTART_MS = 1000;
 
-const shortenNoteSections = (sections: NotesSection[]): NotesSection[] => sections.map(section => ({
+const shortenNoteSections = (sections: NotesSection[]): NotesSection[] => sections.map(section => {
+    if (section.notes.length === 0) {
+        debugger;
+    }
+    return ({
     ...section,
     start: section.notes[0].start
-}));
+})});
 
 const getSectionEnd = (section: NotesSection) => {
     const lastNote = section.notes[section.notes.length - 1]

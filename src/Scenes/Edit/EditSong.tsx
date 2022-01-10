@@ -1,34 +1,53 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Note, Song } from '../../interfaces';
+import { Song } from '../../interfaces';
 import getSongBeatLength from '../Game/Singing/Helpers/getSongBeatLength';
-import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import Player, { PlayerRef } from '../Game/Singing/Player';
 
-import { cloneDeep } from 'lodash'
-import calculateProperBPM from '../Convert/calculateProperBpm';
+import { cloneDeep } from 'lodash';
 import normaliseGap from './Helpers/normaliseGap';
 import normaliseSectionPaddings from './Helpers/normaliseSectionPaddings';
+import AdjustPlayback from './Components/AdjustPlayback';
+import ShiftGap from './Components/ShiftGap';
+import ShiftVideoGap from './Components/ShiftVideoGap';
+import ListTracks from './Components/ListTracks';
+import ManipulateBpm from './Components/ManipulateBpm';
+import EditSection, { ChangeRecord } from './Components/EditSection';
+import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
+import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';
 
 interface Props {
-    song: Song,
+    song: Song;
     onUpdate?: (song: Song) => void;
 }
 
 const shiftGap = (song: Song, gapShift: number): Song => ({ ...song, gap: song.gap + gapShift });
 const shiftVideoGap = (song: Song, gapShift: number): Song => ({ ...song, videoGap: (song.videoGap ?? 0) + gapShift });
+const setBpm = (song: Song, bpm: number): Song => ({ ...song, bpm });
 
-const formatMsec = (msec: number) => {
-    const minutes = Math.floor(msec / 1000 / 60);
-    const seconds = Math.floor(msec / 1000) - minutes * 60;
-    const miliseconds = Math.floor(msec % 1000);
+const applyChanges = (song: Song, changes: ChangeRecord[]) => ({
+    ...song,
+    tracks: song.tracks.map((track, trackIndex) => {
+        const changeList = changes.filter(change => change.track === trackIndex);
 
-    return (
-        <Pre>
-            {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}.{String(miliseconds).padStart(3, '0')}
-        </Pre>
-    );
-};
+        let sections = [...track.sections].filter(isNotesSection);
+
+        changeList.forEach(change => {
+            if (change.type === 'delete') {
+                sections = sections.filter((_, index) => index !== change.section);
+            } else if (change.type === 'shift') {
+                const shift = change.shift - getFirstNoteStartFromSections([sections[change.section]])
+                sections = sections.map((section, index) => {
+                    if (index < change.section) return section;
+
+                    return { ...section, notes: section.notes.map(note => ({ ...note, start: note.start + shift }))};
+                })
+            }
+        });
+
+        return { ...track, sections };
+    })
+})
 
 const playerWidth = 850;
 const playerHeight = (700 / 16) * 9;
@@ -39,8 +58,9 @@ export default function EditSong({ song, onUpdate }: Props) {
 
     const [gapShift, setGapShift] = useState<number>(0);
     const [videoGapShift, setVideoGapShift] = useState<number>(0);
-
-    const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(0);
+    const [overrideBpm, setOverrideBpm] = useState<number>(song.bpm);
+    const [playerKey, setPlayerKey] = useState(0);
+    const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
 
     const newSong = useMemo(() => {
         let processed = cloneDeep(song);
@@ -49,189 +69,88 @@ export default function EditSong({ song, onUpdate }: Props) {
         processed = normaliseSectionPaddings(processed);
         processed = shiftGap(processed, gapShift);
         processed = shiftVideoGap(processed, videoGapShift);
+        processed = setBpm(processed, overrideBpm);
+        processed = applyChanges(processed, changeRecords);
+        processed = normaliseSectionPaddings(processed);
 
         return processed;
-    }, [gapShift, videoGapShift, song]);
+    }, [gapShift, videoGapShift, song, overrideBpm, changeRecords]);
 
     useEffect(() => {
         onUpdate?.(newSong);
-    }, [gapShift, videoGapShift]);
+    }, [gapShift, videoGapShift, overrideBpm, changeRecords]);
 
     let beatLength: number | undefined;
 
     beatLength = getSongBeatLength(newSong);
 
-    const seekBy = (bySec: number) => player.current?.seekTo((currentTime + bySec) / 1000);
-    const seekTo = (toSec: number, offset: number = -2) => player.current?.seekTo(toSec / 1000 + offset)
-    const msec = (ms: number | undefined) => <button onClick={() => seekTo(ms ?? 0)}>{formatMsec((ms ?? 0))}</button>;
-
     return (
-                    <Preview>
-                        <PlayerContainer>
-                        <Player
-                            song={newSong}
-                            showControls
-                            autoplay={false}
-                            width={playerWidth}
-                            height={playerHeight}
-                            ref={player}
-                            onTimeUpdate={setCurrentTime}
-                            tracksForPlayers={[0, song.tracks.length - 1]} // todo: make selectable in UI
-                        />
-                        </PlayerContainer>
-                        <Editor>
-                            <EditorRow>
-                                Playback speed:
-                                <InputGroup>
-                                    {[0.25, 0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
-                                        <InputGroupButton
-                                            key={speed}
-                                            onClick={() => player.current?.setPlaybackSpeed(speed)}>
-                                            {speed}
-                                        </InputGroupButton>
-                                    ))}
-                                </InputGroup>
-                            </EditorRow>
-                            <EditorRow>
-                                Current time: {formatMsec(currentTime)}
-                                <InputGroup>
-                                    <InputGroupButton onClick={() => seekBy(-10000)}>-10s</InputGroupButton>
-                                    <InputGroupButton onClick={() => seekBy(-5000)}>-5s</InputGroupButton>
-                                    <InputGroupButton onClick={() => seekBy(-1000)}>-1s</InputGroupButton>
-                                    <InputGroupButton onClick={() => seekBy(-500)}>-0.5s</InputGroupButton>
-                                    <div style={{ flex: 1 }}>
-                                        <Pre>{currentTime.toFixed(0)}</Pre>
-                                    </div>
-                                    <InputGroupButton onClick={() => seekBy(+500)}>+0.5s</InputGroupButton>
-                                    <InputGroupButton onClick={() => seekBy(+1000)}>+1s</InputGroupButton>
-                                    <InputGroupButton onClick={() => seekBy(+5000)}>+5s</InputGroupButton>
-                                    <InputGroupButton onClick={() => seekBy(+10000)}>+10s</InputGroupButton>
-                                </InputGroup>
-                            </EditorRow>
-                            <EditorRow>
-                                Gap shift (final gap: {msec(newSong.gap)})
-                                <InputGroup>
-                                    <InputGroupButton onClick={() => setGapShift((shift) => shift - 1000)}>
-                                        -1000
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setGapShift((shift) => shift - 500)}>
-                                        -500
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setGapShift((shift) => shift - 50)}>
-                                        -50
-                                    </InputGroupButton>
-                                    <InputGroupInput
-                                        type="text"
-                                        value={gapShift}
-                                        onChange={(e) => setGapShift(+e.target.value)}
-                                        placeholder="Gap shift"
-                                    />
-                                    <InputGroupButton onClick={() => setGapShift((shift) => shift + 50)}>
-                                        +50
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setGapShift((shift) => shift + 500)}>
-                                        +500
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setGapShift((shift) => shift + 1000)}>
-                                        +1000
-                                    </InputGroupButton>
-                                </InputGroup>
-                            </EditorRow>
-                            <EditorRow>
-                                Video Gap shift (final video gap: {msec((newSong.videoGap ?? 0) * 1000)})
-                                <InputGroup>
-                                    <InputGroupButton onClick={() => setVideoGapShift((shift) => shift - 10)}>
-                                        -10
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setVideoGapShift((shift) => shift - 5)}>
-                                        -5
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setVideoGapShift((shift) => shift - 1)}>
-                                        -1
-                                    </InputGroupButton>
-                                    <InputGroupInput
-                                        type="text"
-                                        value={videoGapShift}
-                                        onChange={(e) => setVideoGapShift(+e.target.value)}
-                                        placeholder="Gap shift"
-                                    />
-                                    <InputGroupButton onClick={() => setVideoGapShift((shift) => shift + 1)}>
-                                        +1
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setVideoGapShift((shift) => shift + 5)}>
-                                        +5
-                                    </InputGroupButton>
-                                    <InputGroupButton onClick={() => setVideoGapShift((shift) => shift + 10)}>
-                                        +10
-                                    </InputGroupButton>
-                                </InputGroup>
-                            </EditorRow>
-                            {song.tracks.map(({ sections }, index) => {
-                                const notesSections = sections.filter(isNotesSection);
-                                const firstNote = notesSections[0].notes[0];
-
-                                const lastSection = notesSections[notesSections.length - 1];
-                                const lastNote = lastSection.notes[lastSection.notes.length - 1];
-
-                                if (!firstNote || !lastNote  || !beatLength) return null;
-
-                                return (
-                                    <EditorRow key={index}>
-                                        <strong>Track #{index + 1} - </strong>
-                                        Start: {msec(firstNote.start * beatLength + newSong.gap)},
-                                        end: {msec(lastNote.start * beatLength + newSong.gap)}
-                                    </EditorRow>
-                                )
-                            })}
-                            <EditorRow>
-                                <InputGroup>
-                                    <span>Desired last note end</span>
-                                    <InputGroupInput
-                                        type="text"
-                                        value={desiredLastNoteEnd}
-                                        onChange={(e) => setDesiredLastNoteEnd(+e.target.value)}
-                                        placeholder="Desired last note end"
-                                    />
-                                </InputGroup>
-                                Est. proper BPM: <Pre>{calculateProperBPM(desiredLastNoteEnd, newSong)}</Pre>
-                            </EditorRow>
-                        <a
-                            href={`data:application/json;charset=utf-8,${encodeURIComponent(
-                                JSON.stringify(newSong, undefined, 2),
-                            )}`}
-                            download={`${newSong.artist}-${newSong.title}.json`}>
-                            Download
-                        </a>
-                        </Editor>
-                        </Preview>
+        <Container>
+            <Preview>
+                <PlayerContainer>
+                    <Player
+                        key={playerKey}
+                        song={newSong}
+                        showControls
+                        autoplay={false}
+                        width={playerWidth}
+                        height={playerHeight}
+                        ref={player}
+                        onTimeUpdate={setCurrentTime}
+                        tracksForPlayers={[0, song.tracks.length - 1]} // todo: make selectable in UI
+                    />
+                </PlayerContainer>
+                <Editor>
+                    {player.current && (
+                        <>
+                            <AdjustPlayback player={player.current} currentTime={currentTime} />
+                            <ShiftGap
+                                player={player.current}
+                                onChange={setGapShift}
+                                current={gapShift}
+                                finalGap={newSong.gap}
+                            />
+                            <ShiftVideoGap
+                                player={player.current}
+                                onChange={setVideoGapShift}
+                                current={videoGapShift}
+                                finalGap={newSong.videoGap}
+                            />
+                            <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
+                            <ManipulateBpm
+                                player={player.current}
+                                onChange={setOverrideBpm}
+                                current={overrideBpm}
+                                song={newSong}
+                            />
+                        </>
+                    )}
+                    {!player.current && <h2>Start the song to see the manipulation form</h2>}
+                    <a
+                        href={`data:application/json;charset=utf-8,${encodeURIComponent(
+                            JSON.stringify(newSong, undefined, 2),
+                        )}`}
+                        download={`${newSong.artist}-${newSong.title}.json`}>
+                        Download
+                    </a>
+                    <button onClick={() => setPlayerKey(Date.now())}>reset player</button>
+                </Editor>
+            </Preview>
+            {player.current && (
+                <EditSection song={newSong} currentTime={currentTime} beatLength={beatLength} player={player.current} onChange={setChangeRecords} />
+            )}
+        </Container>
     );
 }
 
-const InputGroup = styled.div`
+const Container = styled.div`
     display: flex;
-`;
-
-const InputGroupButton = styled.button`
-    flex: 1;
-`;
-
-const Pre = styled.span`
-    font-family: monospace;
-`;
-
-const InputGroupInput = styled.input`
-    flex: 1;
-    min-width: 100px;
-    padding: 3px;
+    flex-direction: column;
 `;
 
 const Editor = styled.div`
-    width: 570px;
+    width: 500px;
     margin-left: 20px;
-`;
-
-const EditorRow = styled.div`
-    margin-bottom: 10px;
 `;
 
 const Preview = styled.div`
@@ -241,4 +160,4 @@ const Preview = styled.div`
 const PlayerContainer = styled.div`
     width: ${playerWidth}px;
     height: ${playerHeight}px;
-`
+`;

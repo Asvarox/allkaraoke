@@ -85,9 +85,9 @@ export default function convertTxtToSong(
                 pitch: Number(pitch),
                 lyrics: lyrics.join(' '),
             });
+            lastStart = Number(split[1]);
         }
 
-        lastStart = Number(split[1]);
     });
 
     song.tracks.push({ sections });

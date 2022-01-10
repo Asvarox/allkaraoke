@@ -31,4 +31,5 @@ const Container = styled.div`
     margin-top: 30px;
     width: 1440px;
     height: 100%;
+    background: white;
 `;

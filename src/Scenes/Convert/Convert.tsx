@@ -91,6 +91,14 @@ export default function Convert(props: Props) {
     );
 }
 
+const Container = styled.div`
+    background: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1440px;
+    height: 100%;
+`;
+
 const InputGroup = styled.div`
     display: flex;
 `;
@@ -103,13 +111,6 @@ const InputGroupInput = styled.input`
     flex: 1;
     min-width: 100px;
     padding: 3px;
-`;
-
-const Container = styled.div`
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 1440px;
-    height: 100%;
 `;
 
 const Converter = styled.div`
