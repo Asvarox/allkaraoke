@@ -54,16 +54,16 @@ const Background = styled.div`
     height: 100%;
 `;
 
-const BackgroundImage = styled(Background)<{ blur: boolean; video: string }>(
-    (props) => `
-    background-image: url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg');
+const BackgroundImage = styled(Background).attrs<{ blur: boolean; video: string }>(props => ({
+    style: {
+        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
+    },
+}))<{ blur: boolean; video: string }>`
     background-size: cover;
     background-position: center center;
     
-  filter: ${props.blur ? 'blur(5px)' : 'none'};
-  -webkit-filter: ${props.blur ? 'blur(5px)' : 'none'};
-`,
-);
+  filter: ${props => props.blur ? 'blur(5px)' : 'none'};
+`;
 
 const ContentLayer = styled.div`
     z-index: 2;

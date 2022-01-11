@@ -6,6 +6,7 @@ import PostGame from './PostGame';
 import { useMemo, useState } from 'react';
 import normaliseGap from '../../Edit/Helpers/normaliseGap';
 import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPaddings';
+import addHeadstart from '../../Edit/Helpers/addHeadstart';
 
 interface Props {
     singSetup: SingSetup;
@@ -24,6 +25,7 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
     const newSong = useMemo(() => {
         if (!song.data) return null;
         let processed = normaliseGap(song.data);
+        processed = addHeadstart(processed);
         processed = normaliseSectionPaddings(processed);
 
         return processed;

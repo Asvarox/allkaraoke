@@ -2,7 +2,7 @@ import { NotesSection, Section, Song } from "../../../interfaces";
 import getSongBeatLength from "../../Game/Singing/Helpers/getSongBeatLength";
 import isNotesSection from "../../Game/Singing/Helpers/isNotesSection";
 
-const HEADSTART_MS = 1000;
+export const HEADSTART_MS = 1000;
 
 const shortenNoteSections = (sections: NotesSection[]): NotesSection[] => sections.map(section => {
     if (section.notes.length === 0) {

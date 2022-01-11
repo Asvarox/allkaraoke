@@ -15,6 +15,7 @@ import ManipulateBpm from './Components/ManipulateBpm';
 import EditSection, { ChangeRecord } from './Components/EditSection';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';
+import addHeadstart from './Helpers/addHeadstart';
 
 interface Props {
     song: Song;
@@ -66,12 +67,15 @@ export default function EditSong({ song, onUpdate }: Props) {
         let processed = cloneDeep(song);
 
         processed = normaliseGap(processed);
+        processed = addHeadstart(processed);
         processed = normaliseSectionPaddings(processed);
         processed = shiftGap(processed, gapShift);
         processed = shiftVideoGap(processed, videoGapShift);
         processed = setBpm(processed, overrideBpm);
         processed = applyChanges(processed, changeRecords);
         processed = normaliseSectionPaddings(processed);
+
+        console.log(processed)
 
         return processed;
     }, [gapShift, videoGapShift, song, overrideBpm, changeRecords]);

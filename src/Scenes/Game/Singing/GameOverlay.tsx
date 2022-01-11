@@ -156,9 +156,9 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
         if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) onSongEnd([player1.historicPlayerNotes, player2.historicPlayerNotes]);
     }, [currentStatus, player1.historicPlayerNotes, player2.historicPlayerNotes, onSongEnd]);
 
-    const lyrics = (section: Section, currentNote: number | null, nextSection: Section) => isNotesSection(section) ? (
+    const lyrics = (section: Section, currentNote: number | null, nextSection: Section) => 
         <LyricsContainer>
-            <LyricsLine width={width}>
+            {isNotesSection(section) ? (<LyricsLine width={width}>
                 {section?.notes.map((note, index) => (
                     <span
                         key={note.start}
@@ -170,6 +170,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                     </span>
                 ))}
             </LyricsLine>
+            ) : <LyricsLine width={width}>&nbsp;</LyricsLine>}
             {isNotesSection(nextSection) && (
                 <LyricsLine secondLine width={width}>
                     {nextSection?.notes.map((note) => (
@@ -178,9 +179,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                 </LyricsLine>
             )}
         </LyricsContainer>
-    ) : (
-        <LyricsContainer>&nbsp;</LyricsContainer>
-    );
+    ;
 
     const overlayHeight = height - 2 * 100 - 40;
     return (

@@ -8,7 +8,7 @@ import Game from './Scenes/Game/Game';
 import styles, { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/Drawing/styles';
 import Singing from './Scenes/Game/Singing/Singing';
 import Welcome from './Scenes/Welcome/Welcome';
-import useHashLocation from './useHashLocation';
+import useHashLocation from './Hooks/useHashLocation';
 
 function App() {
     return (

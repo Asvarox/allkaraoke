@@ -5,6 +5,8 @@ import { Button } from '../../../Elements/Button';
 import styles from './Drawing/styles';
 import calculateScore from './Helpers/calculateScore';
 import ScoreText from './ScoreText';
+import useKeyboardNav from '../../../Hooks/useKeyboardNav';
+import { focusable } from '../../../Elements/cssMixins';
 
 interface Props {
     width: number;
@@ -16,6 +18,10 @@ interface Props {
 }
 
 function PostGame({ song, playerNotes, width, height, onClickSongSelection, tracksForPlayers }: Props) {
+    useKeyboardNav({
+        onEnter: onClickSongSelection,
+    })
+
     return (
         <SongPage songData={song} width={width} height={height}>
             <ScoresContainer>
@@ -30,7 +36,7 @@ function PostGame({ song, playerNotes, width, height, onClickSongSelection, trac
                 <br />
                 <ScoreTextPlayer>Player #2</ScoreTextPlayer>
             </ScoresContainer>
-            <SongSelectionButton onClick={onClickSongSelection}>Select song</SongSelectionButton>
+            <SongSelectionButton onClick={onClickSongSelection} focused>Select song</SongSelectionButton>
         </SongPage>
     );
 }
@@ -53,11 +59,13 @@ const ScoreTextScore = styled(ScoreTextPlayer)`
     color: ${styles.colors.text.active};
 `;
 
-const SongSelectionButton = styled(Button)`
+const SongSelectionButton = styled(Button)<{ focused: boolean }>`
     position: absolute;
     bottom: 40px;
     right: 20px;
     width: 400px;
+
+    ${focusable}
 `;
 
 export default PostGame;
