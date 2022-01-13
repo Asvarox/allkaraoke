@@ -63,7 +63,7 @@ const Marker = styled(Bar).attrs<{ position: number}>(props =>({
 
 const BarFill = styled(Bar).attrs<{ fill: number }>(({ fill }) => ({
     style: {
-        width: `${fill * 100}%`,
+        width: `${Math.round(fill * 10000) / 100}%`,
     },
 }))<{ fill: number }>`
     top: 0;

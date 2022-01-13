@@ -6,6 +6,7 @@ import SongSelection from './SongSelection/SongSelection';
 
 function Game() {
     const [singSetup, setSingSetup] = useState<SingSetup | null>(null);
+    const [preselectedSong, setPreselectedSong] = useState<string | null>(null);
 
     useEffect(() => {
         document.body.requestFullscreen();
@@ -15,9 +16,12 @@ function Game() {
         <>
             <FullscreenButton onClick={() => document.body.requestFullscreen()}>Fullscreen</FullscreenButton>
             {singSetup ? (
-                <Singing singSetup={singSetup} returnToSongSelection={() => setSingSetup(null)} />
+                <Singing singSetup={singSetup} returnToSongSelection={() => {
+                    setPreselectedSong(singSetup.songPreview.file);
+                    setSingSetup(null);
+                }} />
             ) : (
-                <SongSelection onSongSelected={setSingSetup} />
+                <SongSelection onSongSelected={setSingSetup} preselectedSong={preselectedSong} />
             )}
         </>
     )

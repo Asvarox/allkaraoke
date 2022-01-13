@@ -5,7 +5,7 @@ export const pitchFromFrequency = (freq: number) =>
     Math.round(12 * (Math.log(freq / MIDDLEA) / Math.log(2))) + SEMITONE;
 
 export const calcDistanceBetweenPitches = (note: number, targetNote: number) => {
-    const tolerance = 1;
+    const tolerance = 2;
     const noteDistance = ((note - targetNote + 6) % 12) - 6;
 
     return Math.abs(noteDistance) <= tolerance ? 0 : noteDistance;

@@ -71,6 +71,8 @@ class MicInput implements InputInterface {
         });
         await this.context?.close();
     };
+
+    public getInputLag = () => 150;
 }
 
 export default new MicInput();

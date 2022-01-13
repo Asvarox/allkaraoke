@@ -27,6 +27,8 @@ class DummyInput implements InputInterface {
             window.clearInterval(this.interval);
         }
     };
+    
+    public getInputLag = () => 0;
 }
 
 export default new DummyInput();

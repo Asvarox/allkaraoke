@@ -9,9 +9,10 @@ import FocusedSong from './FocusedSong';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup) => void;
+    preselectedSong: string | null;
 }
 
-export default function SongSelection({ onSongSelected }: Props) {
+export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
     const songList = useQuery<SongPreview[]>('songList', () =>
         fetch('./songs/index.json').then((response) => response.json()),
     );
@@ -25,7 +26,15 @@ export default function SongSelection({ onSongSelected }: Props) {
             inline: 'center',
             block: 'center',
         });
-    }, [list, focusedSong])
+    }, [list, focusedSong]);
+
+    useEffect(() => {
+        if (songList.data && preselectedSong) {
+            const newIndex = songList.data.findIndex(song => song.file === preselectedSong);
+
+            if (newIndex > -1) setFocusedSong(newIndex);
+        }
+    }, [songList.data, preselectedSong]);
 
 
     const getSongCount = () => songList?.data?.length ?? 1;

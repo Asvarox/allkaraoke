@@ -67,12 +67,14 @@ const usePlayer = (params: UsePlayerArgs) => {
         return index > -1 ? index : null;
     }, [params.currentBeat, currentSection]);
 
+    const allFrequencies = useRef<FrequencyRecord[]>([]);
     const historicFrequencies = useRef<FrequencyRecord[]>([]);
     const historicPlayerNotes = useRef<PlayerNote[]>([]);
     const playerNotes = useRef<PlayerNote[]>([]);
 
     useEffect(() => {
         // console.log(song.tracks[0].sections[currentSectionIndex]);
+        allFrequencies.current = [...allFrequencies.current, ...historicFrequencies.current];
         historicFrequencies.current = [];
         historicPlayerNotes.current = [...historicPlayerNotes.current, ...playerNotes.current];
         playerNotes.current = [];
@@ -84,7 +86,10 @@ const usePlayer = (params: UsePlayerArgs) => {
         if (params.currentTime >= params.song.gap && isNotesSection(currentSection)) {
             const frequencies = params.input.getFrequencies();
 
-            historicFrequencies.current.push({ timestamp: params.currentTime, frequency: frequencies[params.playerNumber] });
+            historicFrequencies.current.push({
+                timestamp: params.currentTime - params.input.getInputLag(),
+                frequency: frequencies[params.playerNumber]
+            });
 
             playerNotes.current = frequenciesToLines(
                 historicFrequencies.current,
@@ -148,13 +153,19 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
         canvas: canvas.current, song, songBeatLength, currentBeat, currentTime, playerNumber: 0, track: tracksForPlayers[0], input: Input
     });
 
+    // const player2 = player1;
     const player2 = usePlayer({
         canvas: canvas.current, song, songBeatLength, currentBeat, currentTime, playerNumber: 1, track: tracksForPlayers[1], input: Input
     });
 
     useEffect(() => {
-        if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) onSongEnd([player1.historicPlayerNotes, player2.historicPlayerNotes]);
-    }, [currentStatus, player1.historicPlayerNotes, player2.historicPlayerNotes, onSongEnd]);
+        if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) {
+            onSongEnd([
+                [...player1.historicPlayerNotes, ...player1.playerNotes],
+                [...player2.historicPlayerNotes, ...player2.playerNotes],
+            ]);
+        }
+    }, [currentStatus, player1.historicPlayerNotes, player2.historicPlayerNotes, player1.playerNotes, player2.playerNotes, onSongEnd]);
 
     const lyrics = (section: Section, currentNote: number | null, nextSection: Section) => 
         <LyricsContainer>
@@ -187,7 +198,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
             <DurationBar currentTime={currentTime} song={song} duration={duration} beatLength={songBeatLength} usedTracks={tracksForPlayers} />
             <Scores height={overlayHeight}>
                 <span><ScoreText score={calculateScore([...player1.historicPlayerNotes, ...player1.playerNotes], song, tracksForPlayers[0])} /></span>
-                <span><ScoreText score={calculateScore([...player2.historicPlayerNotes, ...player2.playerNotes], song, tracksForPlayers[0])} /></span>
+                <span><ScoreText score={calculateScore([...player2.historicPlayerNotes, ...player2.playerNotes], song, tracksForPlayers[1])} /></span>
             </Scores>
             {lyrics(player1.currentSection, player1.currentNote, player1.nextSection)}
             <canvas ref={canvas} width={width} height={overlayHeight} />
