@@ -244,6 +244,8 @@ const LyricsLine = styled.div<{ secondLine?: boolean; width: number }>`
     font-size: ${({ width, secondLine }) => (width < 1000 ? 25 : 35) + (secondLine ? 0 : 10)}px;
     height: 45px;
     color: ${({ secondLine }) => secondLine ? styles.colors.text.inactive : styles.colors.text.default};
+
+    font-family: "Comic Sans MS", "Comic Sans";
 `;
 
 export default GameOverlay;
