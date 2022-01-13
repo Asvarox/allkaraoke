@@ -92,9 +92,9 @@ export default function drawFrame(
         roundRect(
             ctx!,
             paddingHorizontal + beatLength * (note.start - currentSection.start) + displacementX,
-            regionPaddingTop + 10 + pitchStepHeight * (maxPitch - note.pitch + pitchPadding) + displacementY,
+            regionPaddingTop + 10 + pitchStepHeight * (maxPitch - note.pitch + pitchPadding) + displacementY - 3,
             beatLength * note.length,
-            NOTE_HEIGHT,
+            NOTE_HEIGHT + 5,
             3,
             true,
             true,
@@ -127,9 +127,9 @@ export default function drawFrame(
                 paddingHorizontal + beatLength * (playerNote.start - currentSection.start) + displacementX,
                 regionPaddingTop +
                     10 +
-                    pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) + displacementY,
+                    pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) + displacementY - (distance === 0 ? 3 : 0),
                 beatLength * (endBeat - startBeat),
-                NOTE_HEIGHT,
+                NOTE_HEIGHT + (distance === 0 ? 5 : 0),
                 3,
                 true,
                 true,

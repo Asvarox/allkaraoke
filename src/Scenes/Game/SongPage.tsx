@@ -72,6 +72,7 @@ const ContentLayer = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
+    pointer-events: none; 
 `;
 
 const FocusedSongData = styled.div`
@@ -80,6 +81,7 @@ const FocusedSongData = styled.div`
     color: white;
     max-width: 1440px;
     height: 100%;
+    pointer-events: none; 
 `;
 
 export const ContentElement = styled.span`

@@ -4,9 +4,12 @@ import { SingSetup, SongPreview } from '../../interfaces';
 import Singing from './Singing/Singing';
 import SongSelection from './SongSelection/SongSelection';
 
-function Game() {
+interface Props {
+    file?: string,
+}
+function Game(props: Props) {
     const [singSetup, setSingSetup] = useState<SingSetup | null>(null);
-    const [preselectedSong, setPreselectedSong] = useState<string | null>(null);
+    const [preselectedSong, setPreselectedSong] = useState<string | null>(props.file ?? null);
 
     useEffect(() => {
         document.body.requestFullscreen();
@@ -14,7 +17,6 @@ function Game() {
 
     return (
         <>
-            <FullscreenButton onClick={() => document.body.requestFullscreen()}>Fullscreen</FullscreenButton>
             {singSetup ? (
                 <Singing singSetup={singSetup} returnToSongSelection={() => {
                     setPreselectedSong(singSetup.songPreview.file);
@@ -26,17 +28,4 @@ function Game() {
         </>
     )
 }
-
-const FullscreenButton = styled.div`
-    cursor: pointer;
-    background: rgba(0, 0, 0, .5);
-    color: white;
-    padding: 10px;
-    margin: 0 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10000;
-`
-
 export default Game;

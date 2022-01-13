@@ -9,13 +9,16 @@ import styles, { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/
 import Singing from './Scenes/Game/Singing/Singing';
 import Welcome from './Scenes/Welcome/Welcome';
 import useHashLocation from './Hooks/useHashLocation';
+import Jukebox from './Scenes/Jukebox/Jukebox';
 
 function App() {
     return (
         <>
         <Background />
+            <FullscreenButton onClick={() => document.body.requestFullscreen()}>Fullscreen</FullscreenButton>
             <Router hook={useHashLocation}>
-                <Route path="/game" component={Game} />
+                <Route path="/game">{() => <Game />}</Route>
+                <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>
                 <Route path="/test-player">
                     {() => (
                         <Singing
@@ -25,6 +28,7 @@ function App() {
                     )}
                 </Route>
                 <Route path="/convert" component={Convert} />
+                <Route path="/jukebox" component={Jukebox} />
                 <Route path="/edit" component={SongList} />
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
                 <Route path="/" component={Welcome} />
@@ -42,5 +46,18 @@ const Background = styled.div`
     width: 100vw;
     height: 100vh;
 `;
+
+const FullscreenButton = styled.div`
+    cursor: pointer;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+`
+
 
 export default App;

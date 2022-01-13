@@ -10,6 +10,11 @@ function Welcome() {
                     <h1>Sing a song</h1>
                 </MenuButton>
             </Link>
+            <Link href="/jukebox">
+                <MenuButton>
+                    <h1>Jukebox</h1>
+                </MenuButton>
+            </Link>
             <Link href="/edit">
                 <MenuButton>
                     <h1>Edit songs</h1>

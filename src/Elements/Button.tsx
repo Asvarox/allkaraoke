@@ -19,4 +19,6 @@ export const Button = styled.button`
     letter-spacing: 2px;
     line-height: 0;
     -webkit-text-stroke: 1px #018001;
+
+    pointer-events: auto; 
 `;
