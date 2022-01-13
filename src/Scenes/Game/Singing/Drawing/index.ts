@@ -62,26 +62,9 @@ export default function drawFrame(
         return;
     }
 
-    const calcDisplacement = () => {
-        const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap);
-        let lastStreakLength = 0;
-        let lastStreakEnd = 0;
-        for (let i = playersNotes.length - 1; i >= 0; i--) {
-            if (lastStreakLength > 0 && playersNotes[i].distance > 0) break;
-            if (playersNotes[i].distance !== 0) continue;
-            if (playersNotes[i].note.start + playersNotes[i].note.length + 30 < currentBeat) break;
+    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap);
 
-            lastStreakLength = lastStreakLength + playersNotes[i].length;
-            lastStreakEnd = lastStreakEnd === 0 ? playersNotes[i].start + playersNotes[i].length : lastStreakEnd;
-        }
-        const beatsSinceLastHitNote = Math.max(0, currentBeat - lastStreakEnd);
-        const maxDisplacement = 1 *  Math.min(Math.max(0, lastStreakLength - (beatsSinceLastHitNote * 1) - 15), 4);
-
-        return [(Math.random() - .5) * maxDisplacement, (Math.random() - .5) * maxDisplacement];
-    }
-
-    const [displacementX, displacementY] = calcDisplacement();
-    const [displacement2X, displacement2Y] = calcDisplacement();
+    const displacements: Record<number, [number, number]> = {}
 
     currentSection.notes.forEach((note) => {
         if (note.type === 'star') {
@@ -89,6 +72,21 @@ export default function drawFrame(
         } else {
             applyColor(ctx, styles.colors.lines.normal);
         }
+
+        const sungNotesStreak = playersNotes
+            .filter(sungNote => sungNote.note.start === note.start)
+            .filter(sungNote => sungNote.note.start + sungNote.note.length + 30 >= currentBeat && sungNote.distance === 0)
+            .map(sungNote => sungNote.start + 30 < currentBeat
+                 ? sungNote.length - (currentBeat - 30 - sungNote.start)
+                 : sungNote.length
+            )
+            .reduce((currLength, sungNoteLength) => Math.min(currLength + sungNoteLength, 30), 0);
+
+        const displacementRange = Math.max(0, (sungNotesStreak - 5) / 10);
+        const displacementX = (Math.random() - .5) * displacementRange;
+        const displacementY = (Math.random() - .5) * displacementRange;
+
+        displacements[note.start] = [displacementX, displacementY];
 
         roundRect(
             ctx!,
@@ -118,13 +116,15 @@ export default function drawFrame(
         const startBeat = playerNote.start;
         const endBeat = playerNote.start + playerNote.length;
 
+        const [displacementX, displacementY] = displacements[playerNote.note.start] ?? [0, 0]
+
         if (endBeat - startBeat >= 0.5)
             roundRect(
                 ctx!,
-                paddingHorizontal + beatLength * (playerNote.start - currentSection.start) + displacement2X,
+                paddingHorizontal + beatLength * (playerNote.start - currentSection.start) + displacementX,
                 regionPaddingTop +
                     10 +
-                    pitchStepHeight * (maxPitch - playerNote.note.pitch - playerNote.distance + pitchPadding) + displacement2Y,
+                    pitchStepHeight * (maxPitch - playerNote.note.pitch - playerNote.distance + pitchPadding) + displacementY,
                 beatLength * (endBeat - startBeat),
                 NOTE_HEIGHT,
                 3,
