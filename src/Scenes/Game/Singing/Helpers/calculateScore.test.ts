@@ -7,6 +7,7 @@ describe('calculateScore', () => {
     const note2 = generateNote(5, 5, { type: 'star' });
     const note3 = generateNote(10, 5, { type: 'normal' });
     const note4 = generateNote(15, 5, { type: 'star' });
+
     const song = generateSong([
         [{ start: 0, type: 'notes', notes: [note1, note2] }, { start: 0, type: 'notes', notes: [note3, note4] }],
         [{ start: 0, type: 'notes', notes: [note1] }, { start: 0, type: 'notes', notes: [note4] }],
@@ -40,6 +41,15 @@ describe('calculateScore', () => {
         expect(calculateScore(playerNotes, song, 0)).toEqual(MAX_POINTS * 0.875);
     });
 
+    it('should properly calculate score for player with only half notes sung', () => {
+        const playerNotes: PlayerNote[] = [
+            generatePlayerNote(note1, 0, 0, note1.length, true),
+            generatePlayerNote(note4, 0, 0, note4.length, true),
+        ];
+
+        expect(calculateScore(playerNotes, song, 0)).toEqual(MAX_POINTS * 0.5);
+    });
+
     it('should ignore notes with distance other than 0', () => {
         const playerNotes: PlayerNote[] = [
             generatePlayerNote(note1, -1, 0, note1.length, true),
@@ -66,4 +76,36 @@ describe('calculateScore', () => {
         expect(calculateScore(player1Notes, song, 0)).toEqual(MAX_POINTS);
         expect(calculateScore(player2Notes, song, 1)).toEqual(MAX_POINTS);
     });
+
+    describe('freestyle and rap', () => {
+        const note5 = generateNote(20, 5, { type: 'freestyle' });
+        const note6 = generateNote(25, 5, { type: 'rap' });
+
+        const rapFreestyleSong = generateSong([
+            [{ start: 0, type: 'notes', notes: [note5] }, { start: 0, type: 'notes', notes: [note6] }],
+        ]);
+
+        it('should not take into account freestyle notes for max points', () => {
+            const playerNotes: PlayerNote[] = [
+                generatePlayerNote(note6, 0, 0, note6.length, true),
+            ];
+            expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
+        });
+
+        it('should not let sung freestyle notes make the score go over max points', () => {
+            const playerNotes: PlayerNote[] = [
+                generatePlayerNote(note5, 0, 0, note5.length, true),
+                generatePlayerNote(note6, 0, 0, note6.length, true),
+            ];
+            expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
+        });
+
+        it('should count rap notes even if not in pitch', () => {
+            const playerNotes: PlayerNote[] = [
+                generatePlayerNote(note6, 5, 0, note6.length, true),
+            ];
+            expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
+        });
+    
+    })
 });

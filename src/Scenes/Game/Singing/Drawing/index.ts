@@ -6,6 +6,7 @@ import drawTimeIndicator from './timeIndicator';
 import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import debugPitches from './debugPitches';
 import getCurrentBeat from '../Helpers/getCurrentBeat';
+import { noDistanceNoteTypes } from '../../../../consts';
 
 function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string; stroke: string; lineWidth: number }) {
     ctx.fillStyle = style.fill;
@@ -66,7 +67,7 @@ export default function drawFrame(
 
     const displacements: Record<number, [number, number]> = {}
 
-    currentSection.notes.forEach((note) => {
+    currentSection.notes.filter(note => note.type !== 'freestyle').forEach((note) => {
         if (note.type === 'star') {
             applyColor(ctx, styles.colors.lines.gold);
         } else {
@@ -118,13 +119,15 @@ export default function drawFrame(
 
         const [displacementX, displacementY] = displacements[playerNote.note.start] ?? [0, 0]
 
+        const distance = noDistanceNoteTypes.includes(playerNote.note.type) ? 0 : playerNote.distance;
+
         if (endBeat - startBeat >= 0.5)
             roundRect(
                 ctx!,
                 paddingHorizontal + beatLength * (playerNote.start - currentSection.start) + displacementX,
                 regionPaddingTop +
                     10 +
-                    pitchStepHeight * (maxPitch - playerNote.note.pitch - playerNote.distance + pitchPadding) + displacementY,
+                    pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) + displacementY,
                 beatLength * (endBeat - startBeat),
                 NOTE_HEIGHT,
                 3,

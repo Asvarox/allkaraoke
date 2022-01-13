@@ -174,6 +174,7 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                     <span
                         key={note.start}
                         style={{
+                            fontStyle: note.type === 'freestyle' ? 'italic' : 'normal',
                             color: index === (currentNote ?? -1) ? styles.colors.text.active : undefined,
                         }}
                     >
@@ -239,12 +240,10 @@ const LyricsContainer = styled.div`
     line-height: 1;
 `;
 
-const LyricsLine = styled.div<{ secondLine?: boolean; width: number }>(
-    ({ secondLine, width }) => `
-    font-size: ${(width < 1000 ? 25 : 35) + (secondLine ? 0 : 10)}px;
+const LyricsLine = styled.div<{ secondLine?: boolean; width: number }>`
+    font-size: ${({ width, secondLine }) => (width < 1000 ? 25 : 35) + (secondLine ? 0 : 10)}px;
     height: 45px;
-    color: ${secondLine ? styles.colors.text.inactive : styles.colors.text.default};
-`,
-);
+    color: ${({ secondLine }) => secondLine ? styles.colors.text.inactive : styles.colors.text.default};
+`;
 
 export default GameOverlay;

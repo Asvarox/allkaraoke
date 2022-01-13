@@ -1,6 +1,7 @@
 import { PlayerNote, Song } from '../../../../interfaces';
 import { memoize } from 'lodash';
 import isNotesSection from './isNotesSection';
+import { noDistanceNoteTypes, noPointsNoteTypes } from '../../../../consts';
 
 export const MAX_POINTS = 3000000;
 
@@ -14,8 +15,9 @@ const countSungBeats = memoize((song: Song): number[] => {
         sections
             .filter(isNotesSection)
             .forEach((section) => {
-                count = section.notes.reduce((acc, note) => acc + note.length, count)
-                goldCount = section.notes.filter(note => note.type === 'star').reduce((acc, note) => acc + note.length, goldCount)
+                const notes = section.notes.filter(note => !noPointsNoteTypes.includes(note.type))
+                count = notes.reduce((acc, note) => acc + note.length, count)
+                goldCount = notes.filter(note => note.type === 'star').reduce((acc, note) => acc + note.length, goldCount)
             });
 
         return ((1 + perfectBase) * count) + (goldBase * goldCount);
@@ -38,7 +40,8 @@ export default function calculateScore(playerNotes: PlayerNote[], song: Song, tr
 
     for (let i = 0; i < playerNotes.length; i++) {
         const note = playerNotes[i];
-        if (note.distance !== 0) continue;
+        if (noPointsNoteTypes.includes(note.note.type)) continue;
+        if (note.distance !== 0 && !noDistanceNoteTypes.includes(note.note.type)) continue;
 
         sungBeats = sungBeats + note.length
         if (note.note.type === 'star') goldBeats = goldBeats + (note.length * goldBase);
