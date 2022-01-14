@@ -3,6 +3,7 @@ import YouTube from 'react-youtube';
 import styled, { css } from 'styled-components';
 import { Button } from '../../../Elements/Button';
 import { focusable } from '../../../Elements/cssMixins';
+import useDebounce from '../../../Hooks/useDebounce';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from '../../../interfaces';
 import styles from '../Singing/Drawing/styles';
@@ -36,8 +37,12 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     const player = useRef<YouTube | null>(null);
     const [focusedElement, setFocusedEelement] = useState<number>(0);
 
-    const playerStart = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
-    const playerEnd = songPreview.previewEnd ?? playerStart + 30;
+    const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
+    const [videoId, previewStart, previewEnd] = useDebounce([
+        songPreview.video,
+        start,
+        songPreview.previewEnd ?? start + 30,
+    ], 350);
 
     const multipleTracks = songPreview.tracksCount > 1;
 
@@ -75,6 +80,13 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     }, keyboardControl, [enabledElements, songPreview, mode, playerTracks]);
 
 
+    useEffect(() => {
+        player.current?.getInternalPlayer().loadVideoById({
+            videoId: videoId,
+            startSeconds: previewStart,
+            endSeconds: previewEnd,
+        });
+    }, [videoId, player, previewStart, previewEnd]);
 
     useEffect(() => {
         setPlayerTracks([0, songPreview.tracksCount - 1]);
@@ -84,14 +96,14 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
         <Video show={showVideo}>
             <YouTube
                 ref={player}
-                videoId={songPreview.video}
+                videoId={''}
                 opts={{
                     width: String(previewWidth),
                     height: ((previewWidth / 16) * 9).toFixed(0),
                     playerVars: {
                         autoplay: 1,
-                        start: playerStart,
-                        end: playerEnd,
+                        start: 0,
+                        end: 0,
                         showinfo: 0,
                         rel: 0,
                         fs: 0,

@@ -142,13 +142,20 @@ function fixDiacritics(txt: string): string {
 
         .replaceAll('¯', 'Ż')
         .replaceAll('¹', 'ą')
+        .replaceAll('π', 'ą')
         .replaceAll('ê', 'ę')
+        .replaceAll('Í', 'ę')
         .replaceAll('Œ', 'Ś')
         .replaceAll('œ', 'ś')
+        .replaceAll('ú', 'ś')
         .replaceAll('æ', 'ć')
+        .replaceAll('Ê', 'ć')
         .replaceAll('¿', 'ż')
+        .replaceAll('ø', 'ż')
         .replaceAll('ñ', 'ń')
         .replaceAll('³', 'ł')
+        .replaceAll('≥', 'ł')
+        .replaceAll('≥', 'ł')
         .replaceAll('Û', 'ó')
         .replaceAll('Ÿ', 'ź');
 }

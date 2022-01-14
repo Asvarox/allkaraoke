@@ -119,7 +119,7 @@ export default function drawFrame(
         const startBeat = playerNote.start;
         const endBeat = playerNote.start + playerNote.length;
 
-        const [displacementX, displacementY] = displacements[playerNote.note.start] ?? [0, 0]
+        const [displacementX, displacementY] = (playerNote.distance === 0 && displacements[playerNote.note.start]) || [0, 0]
 
         const distance = noDistanceNoteTypes.includes(playerNote.note.type) ? 0 : playerNote.distance;
 
