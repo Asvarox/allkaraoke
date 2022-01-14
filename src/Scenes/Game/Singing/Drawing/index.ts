@@ -67,9 +67,11 @@ export default function drawFrame(
 
     const displacements: Record<number, [number, number]> = {}
 
-    currentSection.notes.filter(note => note.type !== 'freestyle').forEach((note) => {
+    currentSection.notes.forEach((note) => {
         if (note.type === 'star') {
             applyColor(ctx, styles.colors.lines.gold);
+        } else if (note.type === 'freestyle' || note.type === 'rap') {
+            applyColor(ctx, styles.colors.lines.freestyle);
         } else {
             applyColor(ctx, styles.colors.lines.normal);
         }
@@ -83,7 +85,7 @@ export default function drawFrame(
             )
             .reduce((currLength, sungNoteLength) => Math.min(currLength + sungNoteLength, 30), 0);
 
-        const displacementRange = Math.max(0, (sungNotesStreak - 5) / 10);
+        const displacementRange = Math.max(0, (sungNotesStreak - 5) / (note.type === 'star' ? 3 : 5));
         const displacementX = (Math.random() - .5) * displacementRange;
         const displacementY = (Math.random() - .5) * displacementRange;
 

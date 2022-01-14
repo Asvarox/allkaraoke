@@ -74,6 +74,11 @@ const styles = {
                 stroke: 'rgba(255, 183, 0, 1)',
                 lineWidth: 1,
             },
+            freestyle: {
+                fill: 'rgba(255, 255, 255, 0.1)',
+                stroke: 'black',
+                lineWidth: 2,
+            },
         },
         text: {
             active: 'orange',

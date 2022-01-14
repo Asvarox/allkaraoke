@@ -35,7 +35,7 @@ export default function ManipulateBpm({ current, onChange, player, song }: Props
             </EditorRow>
             <EditorRow>
                 <strong>BPM: </strong>
-                <InputGroupInput type="text" value={current} onChange={(e) => onChange(+e.target.value)} />
+                <InputGroupInput type="number" value={current} onChange={(e) => onChange(+e.target.value)} step="0.1" />
             </EditorRow>
         </>
     );
