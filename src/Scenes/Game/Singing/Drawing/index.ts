@@ -97,7 +97,7 @@ export default function drawFrame(
             regionPaddingTop + 10 + pitchStepHeight * (maxPitch - note.pitch + pitchPadding) + displacementY - 3,
             beatLength * note.length,
             NOTE_HEIGHT + 5,
-            3,
+            5,
             true,
             true,
         );
@@ -132,7 +132,7 @@ export default function drawFrame(
                     pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) + displacementY - (distance === 0 ? 3 : 0),
                 beatLength * (endBeat - startBeat),
                 NOTE_HEIGHT + (distance === 0 ? 5 : 0),
-                3,
+                5,
                 true,
                 true,
             );

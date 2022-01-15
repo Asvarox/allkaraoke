@@ -12,8 +12,8 @@ const playerColors = [
         },
         perfect: {
             fill: blueFill(1),
-            stroke: blueStroke(1),
-            lineWidth: 2,
+            stroke: 'white',
+            lineWidth: 1,
         },
         goldPerfect: {
             fill: 'rgba(255, 213, 0, 1)',
@@ -21,7 +21,7 @@ const playerColors = [
             lineWidth: 2,
         },
         hit: {
-            fill: blueFill(0.7),
+            fill: blueFill(0.9),
             stroke: blueStroke(0),
             lineWidth: 1,
         },
@@ -39,8 +39,8 @@ const playerColors = [
         },
         perfect: {
             fill: redFill(1),
-            stroke: redStroke(1),
-            lineWidth: 2,
+            stroke: 'white',
+            lineWidth: 1,
         },
         goldPerfect: {
             fill: 'rgba(255, 213, 0, 1)',
@@ -48,7 +48,7 @@ const playerColors = [
             lineWidth: 2,
         },
         hit: {
-            fill: redFill(0.7),
+            fill: redFill(0.9),
             stroke: redStroke(0),
             lineWidth: 1,
         },
