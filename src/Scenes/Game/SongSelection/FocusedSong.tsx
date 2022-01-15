@@ -1,3 +1,4 @@
+import { isNumber } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled, { css } from 'styled-components';
@@ -18,6 +19,7 @@ interface Props {
 
 const gameModeNames = {
     [GAME_MODE.DUEL]: 'Duel',
+    [GAME_MODE.PASS_THE_MIC]: 'Pass The Mic',
 };
 
 const previewWidth = 1100;
@@ -66,10 +68,21 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
         setFocusedEelement((elements.length + i + focusedElement) % elements.length);
     }
 
+    const changeMode = () => {
+        setMode(currentMode => {
+            const modes = Object.values(GAME_MODE).filter(val => isNumber(val));
+            const currentModeIndex = modes.indexOf(currentMode);
+            console.log(modes, currentModeIndex)
+
+            return (currentModeIndex + 1) % modes.length;
+        })
+    }
+
     const handleEnter = () => {
         if (isFocused(Element.PLAY)) startSong();
         else if (isFocused(Element.PLAYER_1_TRACK)) togglePlayerTrack(0);
         else if (isFocused(Element.PLAYER_2_TRACK)) togglePlayerTrack(1);
+        else if (isFocused(Element.MODE)) changeMode();
     }
 
     useKeyboardNav({
@@ -126,7 +139,7 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
         <Sticky>
             <SongPage songData={songPreview} width={previewWidth} height={previewHeight} background={vid}>
                 <GameConfiguration>
-                    <ConfigurationPosition focused={isFocused(Element.MODE)}>
+                    <ConfigurationPosition focused={isFocused(Element.MODE)} onClick={changeMode}>
                         Mode: <ConfigValue>{gameModeNames[mode]}</ConfigValue>
                     </ConfigurationPosition>
                     {songPreview.tracksCount > 1 && (

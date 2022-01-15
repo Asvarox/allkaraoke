@@ -13,6 +13,7 @@ interface Props {
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
     tracksForPlayers: [number, number],
+    playerChanges?: number[][],
 }
 
 export interface PlayerRef {
@@ -22,7 +23,7 @@ export interface PlayerRef {
 }
 
 function Player(
-    { song, width, height, autoplay = true, showControls = false, onTimeUpdate, onSongEnd, tracksForPlayers }: Props,
+    { song, width, height, autoplay = true, showControls = false, onTimeUpdate, onSongEnd, tracksForPlayers, playerChanges = [[],[]] }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
     const player = useRef<YouTube | null>(null);
@@ -70,6 +71,7 @@ function Player(
             {currentStatus !== YouTube.PlayerState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
+                        playerChanges={playerChanges}
                         duration={duration}
                         currentStatus={currentStatus}
                         song={song}
@@ -91,7 +93,9 @@ function Player(
                         rel: 0,
                         fs: 0,
                         controls: showControls ? 1 : 0,
-                        cc_load_policy: undefined,
+                        // @ts-expect-error
+                        cc_load_policy: 3,
+                        iv_load_policy: 3,
                         start: song.videoGap,
                     },
                 }}

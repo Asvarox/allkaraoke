@@ -1,3 +1,4 @@
+import { range } from "lodash";
 import { Note, PlayerNote, Section, Song } from "./interfaces";
 
 export const generateNote = (start: number, length = 1, data: Partial<Note> = {}): Note => ({
@@ -27,3 +28,9 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     tracks: tracks.map(sections => ({ sections })),
     ...data,
 });
+
+export const generateSection = (start: number, length: number, notesCount: number): Section => ({
+    type: 'notes',
+    start,
+    notes: range(notesCount).map(val => generateNote(start + val, 1)),
+})

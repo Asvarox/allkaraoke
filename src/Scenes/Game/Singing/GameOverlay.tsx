@@ -29,6 +29,7 @@ interface Props {
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
     tracksForPlayers: [number, number],
     duration: number,
+    playerChanges: number[][],
 }
 
 interface UsePlayerArgs {
@@ -128,7 +129,7 @@ const usePlayer = (params: UsePlayerArgs) => {
     }
 }
 
-function GameOverlay({ song, currentTime, currentStatus, width, height, tracksForPlayers, onSongEnd, duration }: Props) {
+function GameOverlay({ song, currentTime, currentStatus, width, height, tracksForPlayers, onSongEnd, duration, playerChanges }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
     const songBeatLength = useMemo(() => getSongBeatLength(song), [song]);
@@ -167,16 +168,22 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
         }
     }, [currentStatus, player1.historicPlayerNotes, player2.historicPlayerNotes, player1.playerNotes, player2.playerNotes, onSongEnd]);
 
-    const lyrics = (section: Section, currentNote: number | null, nextSection: Section) => 
-        <LyricsContainer>
+    const lyrics = (section: Section, currentNote: number | null, nextSection: Section, trackIndex: number, bottom = false) => {
+        const nextChange = playerChanges[trackIndex].find(beat => beat > section?.start ?? Infinity);
+        const shouldBlink = (
+            !!nextChange &&
+            nextChange * songBeatLength + song.gap - 2500 < currentTime
+        );
+
+        return <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
             {isNotesSection(section) ? (<LyricsLine width={width}>
                 {section?.notes.map((note, index) => (
                     <span
-                        key={note.start}
-                        style={{
-                            fontStyle: note.type === 'freestyle' ? 'italic' : 'normal',
-                            color: index === (currentNote ?? -1) ? styles.colors.text.active : undefined,
-                        }}
+                    key={note.start}
+                    style={{
+                        fontStyle: note.type === 'freestyle' ? 'italic' : 'normal',
+                        color: index === (currentNote ?? -1) ? styles.colors.text.active : undefined,
+                    }}
                     >
                         {note.lyrics}
                     </span>
@@ -187,12 +194,13 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                 <LyricsLine secondLine width={width}>
                     {nextSection?.notes.map((note) => (
                         <span key={note.start}>{note.lyrics}</span>
-                    ))}
+                        ))}
                 </LyricsLine>
             )}
         </LyricsContainer>
+}
     ;
-
+    
     const overlayHeight = height - 2 * 100 - 40;
     return (
         <Screen>
@@ -201,9 +209,9 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                 <span><ScoreText score={calculateScore([...player1.historicPlayerNotes, ...player1.playerNotes], song, tracksForPlayers[0])} /></span>
                 <span><ScoreText score={calculateScore([...player2.historicPlayerNotes, ...player2.playerNotes], song, tracksForPlayers[1])} /></span>
             </Scores>
-            {lyrics(player1.currentSection, player1.currentNote, player1.nextSection)}
+            {lyrics(player1.currentSection, player1.currentNote, player1.nextSection, tracksForPlayers[0])}
             <canvas ref={canvas} width={width} height={overlayHeight} />
-            {lyrics(player2.currentSection, player2.currentNote, player2.nextSection)}
+            {lyrics(player2.currentSection, player2.currentNote, player2.nextSection, tracksForPlayers[1], true)}
         </Screen>
     );
 }
@@ -230,14 +238,33 @@ const Scores = styled.div.attrs<{ height: number }>(({ height }) => ({
     text-align: right;
 `;
 
-const LyricsContainer = styled.div`
+const LyricsContainer = styled.div<{ shouldBlink: boolean, bottom: boolean }>`
+    @keyframes blink {
+        100% {
+            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
+        }
+        30% {
+            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
+        }
+        50% {
+            background-color: rgba(134, 134, 134, ${props => props.bottom ? '0.85' : '0.5' });
+        }
+        30% {
+            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
+        }
+        0% {
+            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
+        }
+    }
+
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.8' : '0.5'});
     height: 100px;
     width: 100%;
     text-align: center;
     line-height: 1;
+    ${props => props.shouldBlink ? `animation: blink 500ms ease-in-out infinite both;` : ``}
 `;
 
 const LyricsLine = styled.div<{ secondLine?: boolean; width: number }>`

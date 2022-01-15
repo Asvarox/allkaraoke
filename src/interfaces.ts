@@ -12,7 +12,7 @@ export type Section = NotesSection | PauseSection;
 
 export enum GAME_MODE {
     DUEL,
-    // PASS_THE_MIC,
+    PASS_THE_MIC,
 }
 
 export interface SingSetup {

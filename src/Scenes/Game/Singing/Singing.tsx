@@ -1,5 +1,5 @@
 import useWindowSize from './useWindowSize';
-import { PlayerNote, SingSetup, Song } from '../../../interfaces';
+import { GAME_MODE, PlayerNote, SingSetup, Song } from '../../../interfaces';
 import { useQuery } from 'react-query';
 import Player from './Player';
 import PostGame from './PostGame';
@@ -7,6 +7,8 @@ import { useMemo, useState } from 'react';
 import normaliseGap from '../../Edit/Helpers/normaliseGap';
 import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPaddings';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
+import isNotesSection from './Helpers/isNotesSection';
+import generatePlayerChanges from './Helpers/generatePlayerChanges';
 
 interface Props {
     singSetup: SingSetup;
@@ -21,7 +23,6 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
     const [isEnded, setIsEnded] = useState(false);
     const [playerNotes, setPlayerNotes] = useState<[PlayerNote[], PlayerNote[]]>([[], []]);
 
-
     const newSong = useMemo(() => {
         if (!song.data) return null;
         let processed = normaliseGap(song.data);
@@ -30,6 +31,13 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
 
         return processed;
     }, [song]);
+
+    const playerChanges = useMemo(() => {
+        if (!newSong) return [];
+        if (singSetup.mode !== GAME_MODE.PASS_THE_MIC) return newSong.tracks.map(() => []);
+
+        return generatePlayerChanges(newSong)
+    }, [newSong, singSetup]);
 
 
     if (!width || !height || !newSong) return <>Loading</>;
@@ -48,6 +56,7 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
     } else {
         return (
             <Player
+                playerChanges={playerChanges}
                 tracksForPlayers={singSetup.playerTracks}
                 song={newSong}
                 width={width}
