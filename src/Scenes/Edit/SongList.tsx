@@ -12,16 +12,22 @@ export default function SongList(props: Props) {
 
     if (!songList.data) return <>Loading</>;
 
-    return <Container>
-        <h3>{songList.data.length} songs</h3>
-    <ul>
-        {songList.data.map(song => (
-            <li key={song.file}>
-                <Link to={`/edit/${encodeURIComponent(song.file)}`}><a>{song.artist} - {song.title}</a></Link>
-            </li>
-        ))}
-    </ul>
-    </Container>
+    return (
+        <Container>
+            <h3>{songList.data.length} songs</h3>
+            <ul>
+                {songList.data.map((song) => (
+                    <li key={song.file}>
+                        <Link to={`/edit/${encodeURIComponent(song.file)}`}>
+                            <a>
+                                {song.artist} - {song.title}
+                            </a>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </Container>
+    );
 }
 
 const Container = styled.div`
@@ -30,4 +36,4 @@ const Container = styled.div`
     width: 1100px;
     background: white;
     padding: 20px;
-`
+`;

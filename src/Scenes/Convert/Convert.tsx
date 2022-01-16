@@ -1,8 +1,8 @@
 import { ChangeEventHandler, useState } from 'react';
 import styled from 'styled-components';
 import { NotesSection, Song } from '../../interfaces';
-import convertTxtToSong from './convertTxtToSong';
 import EditSong from '../Edit/EditSong';
+import convertTxtToSong from './convertTxtToSong';
 import importUltrastarEsSong from './importUltrastarEsSong';
 
 interface Props {}
@@ -81,10 +81,7 @@ export default function Convert(props: Props) {
                     <TxtInput onChange={(e) => setTxtInput(fixDiacritics(e.target.value))} value={txtInput} />
                 </div>
                 <div style={{ flex: 1 }}>
-                    <JsonOutput
-                        disabled
-                        value={jsonPreview ? JSON.stringify(jsonPreview, undefined, 2) : error}
-                    />
+                    <JsonOutput disabled value={jsonPreview ? JSON.stringify(jsonPreview, undefined, 2) : error} />
                 </div>
             </Converter>
         </Container>
@@ -137,7 +134,7 @@ const JsonOutput = styled.textarea`
 function fixDiacritics(txt: string): string {
     return txt
         .replaceAll('È', 'é')
-        .replaceAll('í', '\'')
+        .replaceAll('í', "'")
         .replaceAll('¥', "'")
 
         .replaceAll('¯', 'Ż')

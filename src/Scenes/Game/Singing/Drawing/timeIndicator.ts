@@ -1,4 +1,4 @@
-import calculateData, { DrawingData } from "./calculateData";
+import calculateData, { DrawingData } from './calculateData';
 
 export default function drawTimeIndicator(ctx: CanvasRenderingContext2D, data: DrawingData) {
     const { currentTime, canvas, regionPaddingTop, regionHeight } = data;

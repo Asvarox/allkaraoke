@@ -20,5 +20,5 @@ export const Button = styled.button`
     line-height: 0;
     -webkit-text-stroke: 1px #018001;
 
-    pointer-events: auto; 
+    pointer-events: auto;
 `;

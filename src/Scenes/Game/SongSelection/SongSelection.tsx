@@ -30,29 +30,32 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
     useEffect(() => {
         if (songList.data && preselectedSong) {
-            const newIndex = songList.data.findIndex(song => song.file === preselectedSong);
+            const newIndex = songList.data.findIndex((song) => song.file === preselectedSong);
 
             if (newIndex > -1) setFocusedSong(newIndex);
         }
     }, [songList.data, preselectedSong]);
 
-
     const getSongCount = () => songList?.data?.length ?? 1;
 
     const nagivateSong = (indexChange: number) => {
-        setFocusedSong(i => {
-            const change = (i + indexChange);
+        setFocusedSong((i) => {
+            const change = i + indexChange;
 
             return change >= getSongCount() || change < 0 ? i : change;
         });
-    }
-    useKeyboardNav({
-        onEnter: () => setKeyboardControl(false),
-        onDownArrow: () => nagivateSong(4),
-        onUpArrow: () => nagivateSong(-4),
-        onLeftArrow: () => nagivateSong(-1),
-        onRightArrow: () => nagivateSong(+1),
-    }, keyboardControl, [songList.data]);
+    };
+    useKeyboardNav(
+        {
+            onEnter: () => setKeyboardControl(false),
+            onDownArrow: () => nagivateSong(4),
+            onUpArrow: () => nagivateSong(-4),
+            onLeftArrow: () => nagivateSong(-1),
+            onRightArrow: () => nagivateSong(+1),
+        },
+        keyboardControl,
+        [songList.data],
+    );
 
     if (!songList.data) return <>Loading</>;
 
@@ -66,11 +69,15 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             />
             <SongListContainer ref={list} active={keyboardControl}>
                 {songList.data.map((song, index) => (
-                    <SongListEntry key={song.file} onClick={() => setFocusedSong(index)} video={song.video} focused={keyboardControl && index === focusedSong}>
-                        
-                            <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
+                    <SongListEntry
+                        key={song.file}
+                        onClick={() => setFocusedSong(index)}
+                        video={song.video}
+                        focused={keyboardControl && index === focusedSong}
+                    >
+                        <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
-                            <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
+                        <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
                     </SongListEntry>
                 ))}
             </SongListContainer>
@@ -85,7 +92,7 @@ const SongSelectionContainer = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 0 20px;
 `;
 
@@ -98,16 +105,18 @@ const SongListContainer = styled.div<{ active: boolean }>`
     margin-top: 20px;
     padding-bottom: 20px;
     overflow-y: scroll;
-    ${props => !props.active && `
+    ${(props) =>
+        !props.active &&
+        `
         filter: blur(5px);
     `}
 `;
 
-const SongListEntry = styled.div.attrs<{ video: string, focused: boolean }>(props => ({
+const SongListEntry = styled.div.attrs<{ video: string; focused: boolean }>((props) => ({
     style: {
         backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
     },
-}))<{ video: string, focused: boolean }>`
+}))<{ video: string; focused: boolean }>`
     width: 260px;
     height: ${(260 / 16) * 9}px;
     cursor: pointer;
@@ -123,7 +132,7 @@ const SongListEntry = styled.div.attrs<{ video: string, focused: boolean }>(prop
     padding: 5px;
     box-sizing: border-box;
 
-    opacity: .8;
+    opacity: 0.8;
     z-index: 0;
     transition: 200ms;
     box-shadow: inset 0px 0px 1px 1px black;
@@ -142,7 +151,7 @@ const SongListEntryDetails = styled.span`
     color: white;
 
     text-align: right;
-    `;
+`;
 
 const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
     color: ${styles.colors.text.active};

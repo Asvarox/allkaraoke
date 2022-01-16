@@ -1,4 +1,4 @@
-import InputInterface from "./Interface";
+import InputInterface from './Interface';
 
 class DummyInput implements InputInterface {
     private frequencies: [number, number] = [410, 210];
@@ -27,7 +27,7 @@ class DummyInput implements InputInterface {
             window.clearInterval(this.interval);
         }
     };
-    
+
     public getInputLag = () => 0;
 }
 

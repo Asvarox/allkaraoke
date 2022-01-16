@@ -1,4 +1,4 @@
-import { calcDistanceBetweenPitches } from "./calcDistance";
+import { calcDistanceBetweenPitches } from './calcDistance';
 
 describe('calcDistanceBetweenPitches', () => {
     it.each([

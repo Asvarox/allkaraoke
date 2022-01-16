@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
 import * as tf from '@tensorflow/tfjs';
+import { useEffect, useRef } from 'react';
 
 const PT_OFFSET = 24.374;
 const PT_SLOPE = 62.511;

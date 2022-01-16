@@ -1,6 +1,6 @@
 import { PlayerRef } from '../../Game/Singing/Player';
 import { EditorRow, InputGroup, InputGroupButton, InputGroupInput } from '../Elements';
-import formatMs, { msec } from '../Helpers/formatMs';
+import { msec } from '../Helpers/formatMs';
 
 interface Props {
     onChange: (shift: number) => void;

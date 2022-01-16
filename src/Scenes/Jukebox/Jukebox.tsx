@@ -1,18 +1,17 @@
+import { shuffle } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
+import { useQuery } from 'react-query';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { useQuery } from 'react-query';
-import { SongPreview } from '../../interfaces';
-import { shuffle } from 'lodash';
-import useWindowSize from '../Game/Singing/useWindowSize';
-import { Button } from '../../Elements/Button';
 import { Link, useLocation } from 'wouter';
-import useKeyboardNav from '../../Hooks/useKeyboardNav';
+import { Button } from '../../Elements/Button';
 import { focusable } from '../../Elements/cssMixins';
+import useKeyboardNav from '../../Hooks/useKeyboardNav';
+import { SongPreview } from '../../interfaces';
+import useWindowSize from '../Game/Singing/useWindowSize';
 import SongPage from '../Game/SongPage';
 
-interface Props {
-}
+interface Props {}
 
 export interface PlayerRef {
     // getCurrentTime: () => number,
@@ -25,9 +24,7 @@ enum Element {
     SKIP,
 }
 
-function Jukebox(
-    {}: Props
-) {
+function Jukebox({}: Props) {
     const [, setLocation] = useLocation();
     const { width, height } = useWindowSize();
     const player = useRef<YouTube | null>(null);
@@ -38,9 +35,9 @@ function Jukebox(
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
 
-    useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data])
-    
-    const playNext = () => songList.data && setCurrentlyPlaying(current => (current + 1) % songList.data.length);
+    useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
+
+    const playNext = () => songList.data && setCurrentlyPlaying((current) => (current + 1) % songList.data.length);
 
     const enabledElements = [Element.SING_SONG, Element.SKIP];
     const [focusedElement, setFocusedEelement] = useState<number>(0);
@@ -48,19 +45,24 @@ function Jukebox(
 
     const handleNavigation = (i: number, elements: Element[]) => {
         setFocusedEelement((elements.length + i + focusedElement) % elements.length);
-    }
+    };
 
     const handleEnter = () => {
         if (!songList.data) return;
         else if (isFocused(Element.SKIP)) playNext();
-        else if (isFocused(Element.SING_SONG)) setLocation(`/game/${encodeURIComponent(shuffledList[currentlyPlaying].file)}`);
-    }
+        else if (isFocused(Element.SING_SONG))
+            setLocation(`/game/${encodeURIComponent(shuffledList[currentlyPlaying].file)}`);
+    };
 
-    useKeyboardNav({
-        onUpArrow: () => handleNavigation(1, enabledElements),
-        onDownArrow: () => handleNavigation(-1, enabledElements),
-        onEnter: () => handleEnter(),
-    }, true, [focusedElement])
+    useKeyboardNav(
+        {
+            onUpArrow: () => handleNavigation(1, enabledElements),
+            onDownArrow: () => handleNavigation(-1, enabledElements),
+            onEnter: () => handleEnter(),
+        },
+        true,
+        [focusedElement],
+    );
 
     useEffect(() => {
         if (!player.current) {
@@ -71,7 +73,6 @@ function Jukebox(
     }, [player, width, height, currentlyPlaying]);
 
     if (!shuffledList.length || !width || !height) return null;
-    
 
     return (
         <SongPage
@@ -95,12 +96,14 @@ function Jukebox(
                         },
                     }}
                     onStateChange={(e) => {
-                        if (e.data === YouTube.PlayerState.ENDED) playNext()
-                    }} 
+                        if (e.data === YouTube.PlayerState.ENDED) playNext();
+                    }}
                 />
             }
         >
-            <SkipSongButton onClick={playNext} focused={isFocused(Element.SKIP)}>Skip</SkipSongButton>
+            <SkipSongButton onClick={playNext} focused={isFocused(Element.SKIP)}>
+                Skip
+            </SkipSongButton>
             <Link to={`/game/${encodeURIComponent(shuffledList[currentlyPlaying].file)}`}>
                 <PlayThisSongButton focused={isFocused(Element.SING_SONG)}>Sing this song</PlayThisSongButton>
             </Link>
@@ -115,16 +118,15 @@ const PlayThisSongButton = styled(Button)<{ focused: boolean }>`
     position: absolute;
 
     ${focusable}
-    `;
+`;
 
 const SkipSongButton = styled(Button)<{ focused: boolean }>`
     bottom: 150px;
     right: 20px;
     width: 300px;
     position: absolute;
-    
+
     ${focusable}
 `;
-
 
 export default Jukebox;

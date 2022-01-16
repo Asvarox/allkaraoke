@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BaseLocationHook } from 'wouter';
 
 // returns the current hash location in a normalized form

@@ -2,7 +2,7 @@ import { Song } from '../../../interfaces';
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 import { PlayerRef } from '../../Game/Singing/Player';
 import { EditorRow } from '../Elements';
-import formatMs, { msec } from '../Helpers/formatMs';
+import { msec } from '../Helpers/formatMs';
 
 interface Props {
     player: PlayerRef;

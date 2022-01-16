@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Section, Song } from '../../../interfaces';
+import { Song } from '../../../interfaces';
 import getCurrentBeat from '../../Game/Singing/Helpers/getCurrentBeat';
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../../Game/Singing/Helpers/notesSelectors';
@@ -99,7 +99,8 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
                             key={section.start}
                             active={index === currentSectionIndex}
                             selected={selectedSection === index}
-                            onClick={() => onSectionClick(index)}>
+                            onClick={() => onSectionClick(index)}
+                        >
                             {isNotesSection(section) ? section.notes.map((note) => note.lyrics).join('') : '[pause]'}
                         </SectionListEntry>
                     ))}
@@ -158,7 +159,8 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
                                 setChangeRecords((records) =>
                                     records.filter((_, index) => index !== records.length - 1),
                                 )
-                            }>
+                            }
+                        >
                             Undo
                         </button>
                     )}

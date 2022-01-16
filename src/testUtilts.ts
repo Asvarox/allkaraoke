@@ -1,5 +1,5 @@
-import { range } from "lodash";
-import { Note, PlayerNote, Section, Song } from "./interfaces";
+import { range } from 'lodash';
+import { Note, PlayerNote, Section, Song } from './interfaces';
 
 export const generateNote = (start: number, length = 1, data: Partial<Note> = {}): Note => ({
     start,
@@ -10,13 +10,19 @@ export const generateNote = (start: number, length = 1, data: Partial<Note> = {}
     ...data,
 });
 
-export const generatePlayerNote = (note: Note, distance: number, startOffest: number = 0, length: number = 1, isPerfect = false): PlayerNote => ({
+export const generatePlayerNote = (
+    note: Note,
+    distance: number,
+    startOffest: number = 0,
+    length: number = 1,
+    isPerfect = false,
+): PlayerNote => ({
     start: note.start + startOffest,
     length,
     distance,
     note,
-    isPerfect
-})
+    isPerfect,
+});
 
 export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Song => ({
     artist: 'artistTest',
@@ -25,12 +31,12 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     gap: 0,
     bpm: 60, // makes it easy to calc - beatLength = 1ms
     bar: 1000, // makes it easy to calc - beatLength = 1ms
-    tracks: tracks.map(sections => ({ sections })),
+    tracks: tracks.map((sections) => ({ sections })),
     ...data,
 });
 
 export const generateSection = (start: number, length: number, notesCount: number): Section => ({
     type: 'notes',
     start,
-    notes: range(notesCount).map(val => generateNote(start + val, 1)),
-})
+    notes: range(notesCount).map((val) => generateNote(start + val, 1)),
+});

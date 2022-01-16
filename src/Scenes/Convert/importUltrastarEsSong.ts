@@ -37,8 +37,12 @@ async function importUsDbAnimuxSong(url: string, obj: URL) {
     const author = doc.querySelector('a[href^="?link=profil&id="]')?.textContent;
     const authorPath = doc.querySelector('a[href^="?link=profil&id="]')?.getAttribute?.('href');
 
-    const artist = doc.querySelector('#tablebg > tbody > tr:nth-child(3) > td > table:nth-child(2) > tbody > tr.list_head > td:nth-child(1)')?.textContent;
-    const title = doc.querySelector('#tablebg > tbody > tr:nth-child(3) > td > table:nth-child(2) > tbody > tr.list_head > td:nth-child(2)')?.textContent;
+    const artist = doc.querySelector(
+        '#tablebg > tbody > tr:nth-child(3) > td > table:nth-child(2) > tbody > tr.list_head > td:nth-child(1)',
+    )?.textContent;
+    const title = doc.querySelector(
+        '#tablebg > tbody > tr:nth-child(3) > td > table:nth-child(2) > tbody > tr.list_head > td:nth-child(2)',
+    )?.textContent;
 
     window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(artist + ' ' + title)}`, '_blank');
     window.open(`http://usdb.animux.de/index.php?link=gettxt&id=${obj.searchParams.get('id')}`, '_blank');

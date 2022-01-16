@@ -1,12 +1,11 @@
-import { ChangeEventHandler, useState } from 'react';
 import { useQuery } from 'react-query';
 import styled from 'styled-components';
 import { Link } from 'wouter';
-import { NotesSection, Song } from '../../interfaces';
+import { Song } from '../../interfaces';
 import EditSong from './EditSong';
 
 interface Props {
-    file: string,
+    file: string;
 }
 
 export default function Edit(props: Props) {
@@ -19,7 +18,9 @@ export default function Edit(props: Props) {
     return (
         <Container>
             <div>
-                <Link to="/edit"><a>Return to the song list</a></Link>
+                <Link to="/edit">
+                    <a>Return to the song list</a>
+                </Link>
             </div>
             <EditSong song={song.data} />
         </Container>

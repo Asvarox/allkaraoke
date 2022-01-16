@@ -1,6 +1,6 @@
+import { PlayerRef } from '../../Game/Singing/Player';
 import { EditorRow, InputGroup, InputGroupButton, Pre } from '../Elements';
 import formatMs from '../Helpers/formatMs';
-import { PlayerRef } from '../../Game/Singing/Player';
 
 interface Props {
     player: PlayerRef;

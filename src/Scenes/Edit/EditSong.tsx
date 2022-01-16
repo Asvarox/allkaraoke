@@ -1,22 +1,21 @@
+import { cloneDeep } from 'lodash';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Song } from '../../interfaces';
 import getSongBeatLength from '../Game/Singing/Helpers/getSongBeatLength';
-import Player, { PlayerRef } from '../Game/Singing/Player';
-
-import { cloneDeep } from 'lodash';
-import normaliseGap from './Helpers/normaliseGap';
-import normaliseSectionPaddings from './Helpers/normaliseSectionPaddings';
-import AdjustPlayback from './Components/AdjustPlayback';
-import ShiftGap from './Components/ShiftGap';
-import ShiftVideoGap from './Components/ShiftVideoGap';
-import ListTracks from './Components/ListTracks';
-import ManipulateBpm from './Components/ManipulateBpm';
-import EditSection, { ChangeRecord } from './Components/EditSection';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';
+import Player, { PlayerRef } from '../Game/Singing/Player';
+import AdjustPlayback from './Components/AdjustPlayback';
+import EditSection, { ChangeRecord } from './Components/EditSection';
+import ListTracks from './Components/ListTracks';
+import ManipulateBpm from './Components/ManipulateBpm';
+import ShiftGap from './Components/ShiftGap';
+import ShiftVideoGap from './Components/ShiftVideoGap';
 import addHeadstart from './Helpers/addHeadstart';
+import normaliseGap from './Helpers/normaliseGap';
 import normaliseLyricSpaces from './Helpers/normaliseLyricSpaces';
+import normaliseSectionPaddings from './Helpers/normaliseSectionPaddings';
 
 interface Props {
     song: Song;
@@ -30,26 +29,26 @@ const setBpm = (song: Song, bpm: number): Song => ({ ...song, bpm });
 const applyChanges = (song: Song, changes: ChangeRecord[]) => ({
     ...song,
     tracks: song.tracks.map((track, trackIndex) => {
-        const changeList = changes.filter(change => change.track === trackIndex);
+        const changeList = changes.filter((change) => change.track === trackIndex);
 
         let sections = [...track.sections].filter(isNotesSection);
 
-        changeList.forEach(change => {
+        changeList.forEach((change) => {
             if (change.type === 'delete') {
                 sections = sections.filter((_, index) => index !== change.section);
             } else if (change.type === 'shift') {
-                const shift = change.shift - getFirstNoteStartFromSections([sections[change.section]])
+                const shift = change.shift - getFirstNoteStartFromSections([sections[change.section]]);
                 sections = sections.map((section, index) => {
                     if (index < change.section) return section;
 
-                    return { ...section, notes: section.notes.map(note => ({ ...note, start: note.start + shift }))};
-                })
+                    return { ...section, notes: section.notes.map((note) => ({ ...note, start: note.start + shift })) };
+                });
             }
         });
 
         return { ...track, sections };
-    })
-})
+    }),
+});
 
 const playerWidth = 850;
 const playerHeight = (700 / 16) * 9;
@@ -77,7 +76,7 @@ export default function EditSong({ song, onUpdate }: Props) {
         processed = normaliseSectionPaddings(processed);
         processed = normaliseLyricSpaces(processed);
 
-        console.log(processed)
+        console.log(processed);
 
         return processed;
     }, [gapShift, videoGapShift, song, overrideBpm, changeRecords]);
@@ -136,14 +135,21 @@ export default function EditSong({ song, onUpdate }: Props) {
                         href={`data:application/json;charset=utf-8,${encodeURIComponent(
                             JSON.stringify(newSong, undefined, 2),
                         )}`}
-                        download={`${newSong.artist}-${newSong.title}.json`}>
+                        download={`${newSong.artist}-${newSong.title}.json`}
+                    >
                         Download
                     </a>
                     <button onClick={() => setPlayerKey(Date.now())}>reset player</button>
                 </Editor>
             </Preview>
             {player.current && (
-                <EditSection song={newSong} currentTime={currentTime} beatLength={beatLength} player={player.current} onChange={setChangeRecords} />
+                <EditSection
+                    song={newSong}
+                    currentTime={currentTime}
+                    beatLength={beatLength}
+                    player={player.current}
+                    onChange={setChangeRecords}
+                />
             )}
         </Container>
     );

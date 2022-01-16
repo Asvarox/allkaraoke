@@ -1,8 +1,8 @@
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
-import GameOverlay from './GameOverlay';
-import { PlayerNote, Song } from '../../../interfaces';
 import styled from 'styled-components';
+import { PlayerNote, Song } from '../../../interfaces';
+import GameOverlay from './GameOverlay';
 
 interface Props {
     song: Song;
@@ -12,8 +12,8 @@ interface Props {
     showControls?: boolean;
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
-    tracksForPlayers: [number, number],
-    playerChanges?: number[][],
+    tracksForPlayers: [number, number];
+    playerChanges?: number[][];
 }
 
 export interface PlayerRef {
@@ -23,7 +23,17 @@ export interface PlayerRef {
 }
 
 function Player(
-    { song, width, height, autoplay = true, showControls = false, onTimeUpdate, onSongEnd, tracksForPlayers, playerChanges = [[],[]] }: Props,
+    {
+        song,
+        width,
+        height,
+        autoplay = true,
+        showControls = false,
+        onTimeUpdate,
+        onSongEnd,
+        tracksForPlayers,
+        playerChanges = [[], []],
+    }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
     const player = useRef<YouTube | null>(null);
@@ -61,7 +71,7 @@ function Player(
     useImperativeHandle(ref, () => ({
         // getCurrentTime: () => currentTime,
         seekTo: (time: number) => {
-            player.current!.getInternalPlayer().seekTo(time, true)
+            player.current!.getInternalPlayer().seekTo(time, true);
         },
         setPlaybackSpeed: (speed: number) => player.current!.getInternalPlayer().setPlaybackRate(speed),
     }));

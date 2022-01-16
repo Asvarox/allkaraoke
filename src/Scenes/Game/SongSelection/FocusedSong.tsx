@@ -1,7 +1,7 @@
 import { isNumber } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
 import { focusable } from '../../../Elements/cssMixins';
 import useDebounce from '../../../Hooks/useDebounce';
@@ -13,8 +13,8 @@ import SongPage, { ContentElement } from '../SongPage';
 interface Props {
     songPreview: SongPreview;
     onPlay: (setup: SingSetup) => void;
-    keyboardControl: boolean,
-    onExitKeyboardControl: () => void,
+    keyboardControl: boolean;
+    onExitKeyboardControl: () => void;
 }
 
 const gameModeNames = {
@@ -40,11 +40,10 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     const [focusedElement, setFocusedEelement] = useState<number>(0);
 
     const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
-    const [videoId, previewStart, previewEnd] = useDebounce([
-        songPreview.video,
-        start,
-        songPreview.previewEnd ?? start + 30,
-    ], 350);
+    const [videoId, previewStart, previewEnd] = useDebounce(
+        [songPreview.video, start, songPreview.previewEnd ?? start + 30],
+        350,
+    );
 
     const multipleTracks = songPreview.tracksCount > 1;
 
@@ -66,32 +65,35 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
 
     const handleNavigation = (i: number, elements: Element[]) => {
         setFocusedEelement((elements.length + i + focusedElement) % elements.length);
-    }
+    };
 
     const changeMode = () => {
-        setMode(currentMode => {
-            const modes = Object.values(GAME_MODE).filter(val => isNumber(val));
+        setMode((currentMode) => {
+            const modes = Object.values(GAME_MODE).filter((val) => isNumber(val));
             const currentModeIndex = modes.indexOf(currentMode);
-            console.log(modes, currentModeIndex)
+            console.log(modes, currentModeIndex);
 
             return (currentModeIndex + 1) % modes.length;
-        })
-    }
+        });
+    };
 
     const handleEnter = () => {
         if (isFocused(Element.PLAY)) startSong();
         else if (isFocused(Element.PLAYER_1_TRACK)) togglePlayerTrack(0);
         else if (isFocused(Element.PLAYER_2_TRACK)) togglePlayerTrack(1);
         else if (isFocused(Element.MODE)) changeMode();
-    }
+    };
 
-    useKeyboardNav({
-        onUpArrow: () => handleNavigation(1, enabledElements),
-        onDownArrow: () => handleNavigation(-1, enabledElements),
-        onEnter: () => handleEnter(),
-        onBackspace: onExitKeyboardControl,
-    }, keyboardControl, [enabledElements, songPreview, mode, playerTracks]);
-
+    useKeyboardNav(
+        {
+            onUpArrow: () => handleNavigation(1, enabledElements),
+            onDownArrow: () => handleNavigation(-1, enabledElements),
+            onEnter: () => handleEnter(),
+            onBackspace: onExitKeyboardControl,
+        },
+        keyboardControl,
+        [enabledElements, songPreview, mode, playerTracks],
+    );
 
     useEffect(() => {
         player.current?.getInternalPlayer().loadVideoById({
@@ -144,10 +146,16 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
                     </ConfigurationPosition>
                     {songPreview.tracksCount > 1 && (
                         <>
-                            <ConfigurationPosition onClick={() => togglePlayerTrack(0)} focused={isFocused(Element.PLAYER_1_TRACK)}>
+                            <ConfigurationPosition
+                                onClick={() => togglePlayerTrack(0)}
+                                focused={isFocused(Element.PLAYER_1_TRACK)}
+                            >
                                 Player 1: <ConfigValue>Track {playerTracks[0] + 1}</ConfigValue>
                             </ConfigurationPosition>
-                            <ConfigurationPosition onClick={() => togglePlayerTrack(1)} focused={isFocused(Element.PLAYER_2_TRACK)}>
+                            <ConfigurationPosition
+                                onClick={() => togglePlayerTrack(1)}
+                                focused={isFocused(Element.PLAYER_2_TRACK)}
+                            >
                                 Player 2: <ConfigValue>Track {playerTracks[1] + 1}</ConfigValue>
                             </ConfigurationPosition>
                         </>
@@ -161,8 +169,7 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     );
 }
 
-const Sticky = styled.div`
-`;
+const Sticky = styled.div``;
 
 const GameConfiguration = styled.div`
     width: auto;
@@ -191,4 +198,6 @@ const Video = styled.div<{ show: boolean }>`
     margin-top: ${-(((previewWidth / 16) * 9 - previewHeight) / 2)}px;
 `;
 
-const PlayButton = styled(Button)<{ focused: boolean }>`${focusable}`;
+const PlayButton = styled(Button)<{ focused: boolean }>`
+    ${focusable}
+`;

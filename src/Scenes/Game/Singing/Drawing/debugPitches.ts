@@ -1,9 +1,5 @@
 import { calcDistance } from '../Helpers/calcDistance';
-import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
-import roundRect from './roundRect';
-import styles from './styles';
 import isNotesSection from '../Helpers/isNotesSection';
-import drawTimeIndicator from './timeIndicator';
 import calculateData, { DrawingData, pitchPadding } from './calculateData';
 
 export default function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
@@ -21,17 +17,15 @@ export default function debugPitches(ctx: CanvasRenderingContext2D, data: Drawin
 
         const currentBeat = Math.max(0, Math.floor((entry.timestamp - song.gap) / songBeatLength));
         const noteAtTheTime =
-            currentSection.notes.find(
-                (note) => note.start <= currentBeat && note.start + note.length > currentBeat,
-            ) ?? previousNote;
+            currentSection.notes.find((note) => note.start <= currentBeat && note.start + note.length > currentBeat) ??
+            previousNote;
         previousNote = noteAtTheTime;
 
         if (noteAtTheTime === undefined) return;
 
         const entryRelativeTime = Math.max(0, entry.timestamp - timeSectionGap);
         const entryX =
-            paddingHorizontal +
-            (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
+            paddingHorizontal + (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
 
         const toleratedDistance = calcDistance(entry.frequency, noteAtTheTime.pitch);
         const final = maxPitch - (noteAtTheTime.pitch + toleratedDistance) + pitchPadding;

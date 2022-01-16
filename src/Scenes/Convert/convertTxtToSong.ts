@@ -23,16 +23,19 @@ export default function convertTxtToSong(
     authorUrl: string,
     sourceUrl: string,
 ): Song {
-    const additionalData: ExtractOptional<Song> = omitBy({
-        year: getPropertyValueFromTxt(text, 'YEAR'),
-        edition: getPropertyValueFromTxt(text, 'EDITION'),
-        genre: getPropertyValueFromTxt(text, 'GENRE'),
-        language: getPropertyValueFromTxt(text, 'LANGUAGE'),
-        videoGap: Math.floor(Number(getPropertyValueFromTxt(text, 'VIDEOGAP')?.replace(',', '.') ?? 0)),
-        author,
-        authorUrl,
-        sourceUrl,
-    }, isNil);
+    const additionalData: ExtractOptional<Song> = omitBy(
+        {
+            year: getPropertyValueFromTxt(text, 'YEAR'),
+            edition: getPropertyValueFromTxt(text, 'EDITION'),
+            genre: getPropertyValueFromTxt(text, 'GENRE'),
+            language: getPropertyValueFromTxt(text, 'LANGUAGE'),
+            videoGap: Math.floor(Number(getPropertyValueFromTxt(text, 'VIDEOGAP')?.replace(',', '.') ?? 0)),
+            author,
+            authorUrl,
+            sourceUrl,
+        },
+        isNil,
+    );
     const song: Song = {
         title: getPropertyValueFromTxt(text, 'TITLE') ?? '',
         artist: getPropertyValueFromTxt(text, 'ARTIST') ?? '',
@@ -62,18 +65,22 @@ export default function convertTxtToSong(
         if (line.startsWith('#')) return;
         const split = line.split(' ');
 
-        if (Number(split[1]) < lastStart) { // new track (song is a duet)
+        if (Number(split[1]) < lastStart) {
+            // new track (song is a duet)
             song.tracks.push({ sections });
             sections = [{ start: 0, notes: [], type: 'notes' }];
         }
-        
-        if (LINE_BREAK_RELATIVE_REGEXP.test(line)) { // "Pause" or relative line break
+
+        if (LINE_BREAK_RELATIVE_REGEXP.test(line)) {
+            // "Pause" or relative line break
             const [, start, end] = split;
             sections.push({ start: Number(start), end: Number(end), type: 'pause' });
             sections.push({ start: Number(end), type: 'notes', notes: [] });
-        } else if (line.startsWith('-')) { // new section
+        } else if (line.startsWith('-')) {
+            // new section
             sections.push({ start: Number(line.split('-')[1].trim()), notes: [], type: 'notes' });
-        } else if (Object.keys(typesMap).includes(line[0])) { // Note
+        } else if (Object.keys(typesMap).includes(line[0])) {
+            // Note
             const lastSection = sections[sections.length - 1];
 
             const [type, start, length, pitch, ...lyrics] = split;
@@ -87,7 +94,6 @@ export default function convertTxtToSong(
             });
             lastStart = Number(split[1]);
         }
-
     });
 
     song.tracks.push({ sections });

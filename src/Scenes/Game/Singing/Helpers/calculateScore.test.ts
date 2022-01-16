@@ -1,6 +1,6 @@
-import { PlayerNote } from "../../../../interfaces";
-import { generateNote, generatePlayerNote, generateSong } from "../../../../testUtilts";
-import calculateScore, { MAX_POINTS } from "./calculateScore";
+import { PlayerNote } from '../../../../interfaces';
+import { generateNote, generatePlayerNote, generateSong } from '../../../../testUtilts';
+import calculateScore, { MAX_POINTS } from './calculateScore';
 
 describe('calculateScore', () => {
     const note1 = generateNote(0, 5, { type: 'normal' });
@@ -9,8 +9,14 @@ describe('calculateScore', () => {
     const note4 = generateNote(15, 5, { type: 'star' });
 
     const song = generateSong([
-        [{ start: 0, type: 'notes', notes: [note1, note2] }, { start: 0, type: 'notes', notes: [note3, note4] }],
-        [{ start: 0, type: 'notes', notes: [note1] }, { start: 0, type: 'notes', notes: [note4] }],
+        [
+            { start: 0, type: 'notes', notes: [note1, note2] },
+            { start: 0, type: 'notes', notes: [note3, note4] },
+        ],
+        [
+            { start: 0, type: 'notes', notes: [note1] },
+            { start: 0, type: 'notes', notes: [note4] },
+        ],
     ]);
 
     it('should properly calculate score for player with no sung notes', () => {
@@ -82,13 +88,14 @@ describe('calculateScore', () => {
         const note6 = generateNote(25, 5, { type: 'rap' });
 
         const rapFreestyleSong = generateSong([
-            [{ start: 0, type: 'notes', notes: [note5] }, { start: 0, type: 'notes', notes: [note6] }],
+            [
+                { start: 0, type: 'notes', notes: [note5] },
+                { start: 0, type: 'notes', notes: [note6] },
+            ],
         ]);
 
         it('should not take into account freestyle notes for max points', () => {
-            const playerNotes: PlayerNote[] = [
-                generatePlayerNote(note6, 0, 0, note6.length, true),
-            ];
+            const playerNotes: PlayerNote[] = [generatePlayerNote(note6, 0, 0, note6.length, true)];
             expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
         });
 
@@ -101,11 +108,8 @@ describe('calculateScore', () => {
         });
 
         it('should count rap notes even if not in pitch', () => {
-            const playerNotes: PlayerNote[] = [
-                generatePlayerNote(note6, 5, 0, note6.length, true),
-            ];
+            const playerNotes: PlayerNote[] = [generatePlayerNote(note6, 5, 0, note6.length, true)];
             expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
         });
-    
-    })
+    });
 });

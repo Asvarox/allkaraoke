@@ -37,7 +37,7 @@ const MenuButton = styled(Button)`
 `;
 
 const MenuContainer = styled.div`
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     padding: 20px;
     width: 650px;

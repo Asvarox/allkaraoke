@@ -15,15 +15,21 @@ interface Props {
 
 function DurationBar({ song, currentTime, duration, beatLength, usedTracks }: Props) {
     const firstNotes = useMemo(
-        () => uniq(song.tracks
-            .filter((v, index) => usedTracks.includes(index))
-            .map(({ sections }) => getFirstNoteStartFromSections(sections) * beatLength + song.gap)),
+        () =>
+            uniq(
+                song.tracks
+                    .filter((v, index) => usedTracks.includes(index))
+                    .map(({ sections }) => getFirstNoteStartFromSections(sections) * beatLength + song.gap),
+            ),
         [song, beatLength, usedTracks],
     );
     const lastNotes = useMemo(
-        () => uniq(song.tracks
-            .filter((v, index) => usedTracks.includes(index))
-            .map(({ sections }) => getLastNoteEndFromSections(sections) * beatLength + song.gap)),
+        () =>
+            uniq(
+                song.tracks
+                    .filter((v, index) => usedTracks.includes(index))
+                    .map(({ sections }) => getLastNoteEndFromSections(sections) * beatLength + song.gap),
+            ),
         [song, beatLength, usedTracks],
     );
 
@@ -32,11 +38,15 @@ function DurationBar({ song, currentTime, duration, beatLength, usedTracks }: Pr
     if (!currentTime || !duration) return null;
 
     return (
-            <Bar>
-                {firstNotes.map(note => <Marker key={note} position={note / durationMs} />)}
-                {lastNotes.map(note => <Marker key={note} position={note / durationMs} />)}
-                <BarFill fill={currentTime / durationMs} />
-            </Bar>
+        <Bar>
+            {firstNotes.map((note) => (
+                <Marker key={note} position={note / durationMs} />
+            ))}
+            {lastNotes.map((note) => (
+                <Marker key={note} position={note / durationMs} />
+            ))}
+            <BarFill fill={currentTime / durationMs} />
+        </Bar>
     );
 }
 
@@ -44,14 +54,14 @@ const Bar = styled.div`
     position: absolute;
     height: 6px;
     width: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     left: 0;
     top: calc(50% - 3px);
-    `;
+`;
 
-const Marker = styled(Bar).attrs<{ position: number}>(props =>({
+const Marker = styled(Bar).attrs<{ position: number }>((props) => ({
     style: {
-        left: `${Math.min(props.position * 100, 100)}%`
+        left: `${Math.min(props.position * 100, 100)}%`,
     },
 }))<{ position: number }>`
     top: 0;
@@ -59,7 +69,7 @@ const Marker = styled(Bar).attrs<{ position: number}>(props =>({
     width: 6px;
     background: ${styles.colors.text.active};
     opacity: 75%;
-    `
+`;
 
 const BarFill = styled(Bar).attrs<{ fill: number }>(({ fill }) => ({
     style: {

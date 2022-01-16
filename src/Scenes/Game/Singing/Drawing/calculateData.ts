@@ -5,7 +5,15 @@ export const pitchPadding = 6;
 
 export const NOTE_HEIGHT = 20;
 
-export default function calculateData({ canvas, currentSectionIndex, song, songBeatLength, minPitch, maxPitch, track }: DrawingData) {
+export default function calculateData({
+    canvas,
+    currentSectionIndex,
+    song,
+    songBeatLength,
+    minPitch,
+    maxPitch,
+    track,
+}: DrawingData) {
     const sections = song.tracks[track].sections;
     const currentSection = sections[currentSectionIndex];
     const nextSection = sections[currentSectionIndex + 1];
@@ -33,7 +41,7 @@ export default function calculateData({ canvas, currentSectionIndex, song, songB
 }
 
 export interface DrawingData {
-    playerNumber: number,
+    playerNumber: number;
     song: Song;
     songBeatLength: number;
     minPitch: number;
@@ -41,9 +49,9 @@ export interface DrawingData {
     canvas: HTMLCanvasElement;
     currentTime: number;
     currentSectionIndex: number;
-    frequencies: FrequencyRecord[],
-    playersNotes: PlayerNote[],
-    track: number,
-    regionPaddingTop: number,
-    regionHeight: number,
+    frequencies: FrequencyRecord[];
+    playersNotes: PlayerNote[];
+    track: number;
+    regionPaddingTop: number;
+    regionHeight: number;
 }

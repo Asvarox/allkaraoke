@@ -1,12 +1,11 @@
+import { noDistanceNoteTypes } from '../../../../consts';
 import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
+import getCurrentBeat from '../Helpers/getCurrentBeat';
+import isNotesSection from '../Helpers/isNotesSection';
+import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import roundRect from './roundRect';
 import styles from './styles';
-import isNotesSection from '../Helpers/isNotesSection';
 import drawTimeIndicator from './timeIndicator';
-import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
-import debugPitches from './debugPitches';
-import getCurrentBeat from '../Helpers/getCurrentBeat';
-import { noDistanceNoteTypes } from '../../../../consts';
 
 function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string; stroke: string; lineWidth: number }) {
     ctx.fillStyle = style.fill;
@@ -65,7 +64,7 @@ export default function drawFrame(
 
     const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap);
 
-    const displacements: Record<number, [number, number]> = {}
+    const displacements: Record<number, [number, number]> = {};
 
     currentSection.notes.forEach((note) => {
         if (note.type === 'star') {
@@ -77,17 +76,20 @@ export default function drawFrame(
         }
 
         const sungNotesStreak = playersNotes
-            .filter(sungNote => sungNote.note.start === note.start)
-            .filter(sungNote => sungNote.note.start + sungNote.note.length + 30 >= currentBeat && sungNote.distance === 0)
-            .map(sungNote => sungNote.start + 30 < currentBeat
-                 ? sungNote.length - (currentBeat - 30 - sungNote.start)
-                 : sungNote.length
+            .filter((sungNote) => sungNote.note.start === note.start)
+            .filter(
+                (sungNote) => sungNote.note.start + sungNote.note.length + 30 >= currentBeat && sungNote.distance === 0,
+            )
+            .map((sungNote) =>
+                sungNote.start + 30 < currentBeat
+                    ? sungNote.length - (currentBeat - 30 - sungNote.start)
+                    : sungNote.length,
             )
             .reduce((currLength, sungNoteLength) => Math.min(currLength + sungNoteLength, 30), 0);
 
         const displacementRange = Math.max(0, (sungNotesStreak - 5) / (note.type === 'star' ? 3 : 5));
-        const displacementX = (Math.random() - .5) * displacementRange;
-        const displacementY = (Math.random() - .5) * displacementRange;
+        const displacementX = (Math.random() - 0.5) * displacementRange;
+        const displacementY = (Math.random() - 0.5) * displacementRange;
 
         displacements[note.start] = [displacementX, displacementY];
 
@@ -115,11 +117,13 @@ export default function drawFrame(
         } else {
             applyColor(ctx, styles.colors.players[playerNumber].miss);
         }
-        
+
         const startBeat = playerNote.start;
         const endBeat = playerNote.start + playerNote.length;
 
-        const [displacementX, displacementY] = (playerNote.distance === 0 && displacements[playerNote.note.start]) || [0, 0]
+        const [displacementX, displacementY] = (playerNote.distance === 0 && displacements[playerNote.note.start]) || [
+            0, 0,
+        ];
 
         const distance = noDistanceNoteTypes.includes(playerNote.note.type) ? 0 : playerNote.distance;
 
@@ -129,7 +133,9 @@ export default function drawFrame(
                 paddingHorizontal + beatLength * (playerNote.start - currentSection.start) + displacementX,
                 regionPaddingTop +
                     10 +
-                    pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) + displacementY - (distance === 0 ? 3 : 0),
+                    pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) +
+                    displacementY -
+                    (distance === 0 ? 3 : 0),
                 beatLength * (endBeat - startBeat),
                 NOTE_HEIGHT + (distance === 0 ? 5 : 0),
                 5,

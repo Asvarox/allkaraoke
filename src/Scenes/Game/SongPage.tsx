@@ -54,15 +54,15 @@ const Background = styled.div`
     height: 100%;
 `;
 
-const BackgroundImage = styled(Background).attrs<{ blur: boolean; video: string }>(props => ({
+const BackgroundImage = styled(Background).attrs<{ blur: boolean; video: string }>((props) => ({
     style: {
         backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
     },
 }))<{ blur: boolean; video: string }>`
     background-size: cover;
     background-position: center center;
-    
-  filter: ${props => props.blur ? 'blur(5px)' : 'none'};
+
+    filter: ${(props) => (props.blur ? 'blur(5px)' : 'none')};
 `;
 
 const ContentLayer = styled.div`
@@ -72,7 +72,7 @@ const ContentLayer = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    pointer-events: none; 
+    pointer-events: none;
 `;
 
 const FocusedSongData = styled.div`
@@ -81,7 +81,7 @@ const FocusedSongData = styled.div`
     color: white;
     max-width: 1440px;
     height: 100%;
-    pointer-events: none; 
+    pointer-events: none;
 `;
 
 export const ContentElement = styled.span`

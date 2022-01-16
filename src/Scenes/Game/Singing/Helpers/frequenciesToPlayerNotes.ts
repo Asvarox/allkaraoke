@@ -1,4 +1,4 @@
-import { Note, FrequencyRecord, PlayerNote } from '../../../../interfaces';
+import { FrequencyRecord, Note, PlayerNote } from '../../../../interfaces';
 import { calcDistance } from './calcDistance';
 
 export default function frequenciesToLines(
@@ -16,7 +16,7 @@ export default function frequenciesToLines(
                     frequency,
                     beat: Math.max(0, timestamp - gap) / beatLength,
                 }))
-                .filter(({ beat }) => beat >= note.start - .5 && beat <= note.start + note.length + .5)
+                .filter(({ beat }) => beat >= note.start - 0.5 && beat <= note.start + note.length + 0.5)
                 .map(({ beat, frequency }) => ({ beat, distance: calcDistance(frequency, note.pitch) }))
                 .reduce<PlayerNote[]>((groups, playerNote) => {
                     const lastGroup = groups[groups.length - 1];

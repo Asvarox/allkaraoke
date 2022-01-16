@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import { Route, Router } from 'wouter';
+import useHashLocation from './Hooks/useHashLocation';
 import { GAME_MODE } from './interfaces';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
 import Game from './Scenes/Game/Game';
-import styles, { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/Drawing/styles';
+import { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/Drawing/styles';
 import Singing from './Scenes/Game/Singing/Singing';
-import Welcome from './Scenes/Welcome/Welcome';
-import useHashLocation from './Hooks/useHashLocation';
 import Jukebox from './Scenes/Jukebox/Jukebox';
+import Welcome from './Scenes/Welcome/Welcome';
 
 function App() {
     return (
@@ -22,7 +22,11 @@ function App() {
                 <Route path="/test-player">
                     {() => (
                         <Singing
-                            singSetup={{ mode: GAME_MODE.DUEL, playerTracks: [0, 0], songPreview: { file: 'dummy.json' } as any}}
+                            singSetup={{
+                                mode: GAME_MODE.DUEL,
+                                playerTracks: [0, 0],
+                                songPreview: { file: 'dummy.json' } as any,
+                            }}
                             returnToSongSelection={() => window.location.reload()}
                         />
                     )}
@@ -49,7 +53,7 @@ const Background = styled.div`
 
 const FullscreenButton = styled.div`
     cursor: pointer;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     margin: 0 10px;
@@ -57,7 +61,6 @@ const FullscreenButton = styled.div`
     top: 0;
     right: 0;
     z-index: 10000;
-`
-
+`;
 
 export default App;

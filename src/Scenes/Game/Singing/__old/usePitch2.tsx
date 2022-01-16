@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import * as tf from '@tensorflow/tfjs';
+import { useEffect, useRef } from 'react';
 import PitchAnalyzer from './pitch';
 
 const PT_OFFSET = 24.374;

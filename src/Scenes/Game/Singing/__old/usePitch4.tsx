@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
 import * as ml5 from 'ml5';
-import aubio from 'aubiojs';
+import { useEffect, useRef } from 'react';
 
 const PT_OFFSET = 24.374;
 const PT_SLOPE = 62.511;

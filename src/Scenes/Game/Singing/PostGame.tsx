@@ -1,42 +1,48 @@
-import { PlayerNote, Song } from '../../../interfaces';
-import SongPage, { ContentElement } from '../SongPage';
 import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
+import { focusable } from '../../../Elements/cssMixins';
+import useKeyboardNav from '../../../Hooks/useKeyboardNav';
+import { PlayerNote, Song } from '../../../interfaces';
+import SongPage, { ContentElement } from '../SongPage';
 import styles from './Drawing/styles';
 import calculateScore from './Helpers/calculateScore';
 import ScoreText from './ScoreText';
-import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import { focusable } from '../../../Elements/cssMixins';
 
 interface Props {
     width: number;
     height: number;
     song: Song;
     playerNotes: [PlayerNote[], PlayerNote[]];
-    tracksForPlayers: [number, number],
+    tracksForPlayers: [number, number];
     onClickSongSelection: () => void;
 }
 
 function PostGame({ song, playerNotes, width, height, onClickSongSelection, tracksForPlayers }: Props) {
     useKeyboardNav({
         onEnter: onClickSongSelection,
-    })
+    });
 
     return (
         <SongPage songData={song} width={width} height={height}>
             <ScoresContainer>
                 <ScoreTextPlayer>Player #1</ScoreTextPlayer>
                 <br />
-                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[0], song, tracksForPlayers[0])} /></ScoreTextScore>
+                <ScoreTextScore>
+                    <ScoreText score={calculateScore(playerNotes[0], song, tracksForPlayers[0])} />
+                </ScoreTextScore>
                 <br /> {/* xD */}
                 <br />
                 <br />
                 <br />
-                <ScoreTextScore><ScoreText score={calculateScore(playerNotes[1], song, tracksForPlayers[1])} /></ScoreTextScore>
+                <ScoreTextScore>
+                    <ScoreText score={calculateScore(playerNotes[1], song, tracksForPlayers[1])} />
+                </ScoreTextScore>
                 <br />
                 <ScoreTextPlayer>Player #2</ScoreTextPlayer>
             </ScoresContainer>
-            <SongSelectionButton onClick={onClickSongSelection} focused>Select song</SongSelectionButton>
+            <SongSelectionButton onClick={onClickSongSelection} focused>
+                Select song
+            </SongSelectionButton>
         </SongPage>
     );
 }
