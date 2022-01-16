@@ -169,16 +169,17 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                 currentBeat={currentBeat}
                 beatLength={songBeatLength}
                 section={player1.currentSection}
-                nextSection={player1.nextSection} playerChanges={playerChanges[tracksForPlayers[0]]}
-                bottom={false} gap={song.gap}
+                nextSection={player1.nextSection}
+                playerChanges={playerChanges[tracksForPlayers[0]]}
             />
             <canvas ref={canvas} width={width} height={overlayHeight} />
             <Lyrics
                 currentBeat={currentBeat}
                 beatLength={songBeatLength}
                 section={player2.currentSection}
-                nextSection={player2.nextSection} playerChanges={playerChanges[tracksForPlayers[1]]}
-                bottom={true} gap={song.gap}
+                nextSection={player2.nextSection}
+                playerChanges={playerChanges[tracksForPlayers[1]]}
+                bottom
             />
         </Screen>
     );

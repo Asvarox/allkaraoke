@@ -1,32 +1,31 @@
-import { relative } from 'path/posix';
+import { Fragment } from 'react';
 import styled from 'styled-components';
-import { Section, Song } from '../../../../interfaces';
+import { Section } from '../../../../interfaces';
 import styles from '../Drawing/styles';
 import isNotesSection from '../Helpers/isNotesSection';
 
 interface Props {
     section: Section,
     nextSection?: Section;
-    bottom: boolean;
+    bottom?: boolean;
     playerChanges: number[],
-    gap: number,
     currentBeat: number,
     beatLength: number,
 }
 
-function Lyrics({ section, nextSection, currentBeat, gap, playerChanges, bottom, beatLength }: Props) {
+function Lyrics({ section, nextSection, currentBeat, playerChanges, bottom = false, beatLength }: Props) {
     const nextChange = playerChanges.find(beat => beat > section?.start ?? Infinity);
     const shouldBlink = (
         !!nextChange &&
-        nextChange * beatLength + gap - 2500 < currentBeat * beatLength
+        nextChange * beatLength - 2500 < currentBeat * beatLength
     );
-    
+            
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
             {isNotesSection(section) ? (<LyricsLine>
                 {section?.notes.map((note) => {
                     return (
-                    <LyricContainer type={note.type}>
+                    <LyricContainer type={note.type} key={note.start}>
                         <LyricActiveContainer>
                             <LyricActive fill={Math.max(0, Math.min(1, (currentBeat - note.start) / note.length))}>
                                 {note.lyrics.trim()}
@@ -41,7 +40,7 @@ function Lyrics({ section, nextSection, currentBeat, gap, playerChanges, bottom,
             {isNotesSection(nextSection) && (
                 <LyricsLine secondLine>
                     {nextSection?.notes.map((note) => (
-                        <span key={note.start}>{note.lyrics}</span>
+                        <Fragment key={note.start}>{note.lyrics}</Fragment>
                         ))}
                 </LyricsLine>
             )}

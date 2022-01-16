@@ -40,7 +40,6 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
         return generatePlayerChanges(newSong)
     }, [newSong, singSetup]);
 
-
     if (!width || !height || !newSong) return <>Loading</>;
 
     if (isEnded) {

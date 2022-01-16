@@ -66,7 +66,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             />
             <SongListContainer ref={list} active={keyboardControl}>
                 {songList.data.map((song, index) => (
-                    <SongListEntry key={song.file} onClick={() => setFocusedSong(index)} video={song.video} focused={index === focusedSong}>
+                    <SongListEntry key={song.file} onClick={() => setFocusedSong(index)} video={song.video} focused={keyboardControl && index === focusedSong}>
                         
                             <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
