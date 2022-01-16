@@ -16,6 +16,7 @@ import EditSection, { ChangeRecord } from './Components/EditSection';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';
 import addHeadstart from './Helpers/addHeadstart';
+import normaliseLyricSpaces from './Helpers/normaliseLyricSpaces';
 
 interface Props {
     song: Song;
@@ -74,6 +75,7 @@ export default function EditSong({ song, onUpdate }: Props) {
         processed = setBpm(processed, overrideBpm);
         processed = applyChanges(processed, changeRecords);
         processed = normaliseSectionPaddings(processed);
+        processed = normaliseLyricSpaces(processed);
 
         console.log(processed)
 

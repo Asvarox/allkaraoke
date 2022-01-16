@@ -14,7 +14,7 @@ import Jukebox from './Scenes/Jukebox/Jukebox';
 function App() {
     return (
         <>
-        <Background />
+            <Background />
             <FullscreenButton onClick={() => document.body.requestFullscreen()}>Fullscreen</FullscreenButton>
             <Router hook={useHashLocation}>
                 <Route path="/game">{() => <Game />}</Route>

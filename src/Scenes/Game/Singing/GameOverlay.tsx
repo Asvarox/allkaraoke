@@ -2,8 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import drawFrame from './Drawing';
 import DummyInput from './Input/DummyInput';
 
-import { FrequencyRecord, Note, PlayerNote, Section, Song } from '../../../interfaces';
-import styles from './Drawing/styles';
+import { FrequencyRecord, PlayerNote, Song } from '../../../interfaces';
 import isNotesSection from './Helpers/isNotesSection';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 import frequenciesToLines from './Helpers/frequenciesToPlayerNotes';
@@ -16,6 +15,7 @@ import InputInterface from './Input/Interface';
 import DurationBar from './Components/DurationBar';
 import useCurrentSectionIndex from './Hooks/useCurrentSectionIndex';
 import getCurrentBeat from './Helpers/getCurrentBeat';
+import Lyrics from './Components/Lyrics';
 
 const Input = DummyInput;
 // const Input = MicInput;
@@ -39,6 +39,8 @@ interface UsePlayerArgs {
 
 const usePlayer = (params: UsePlayerArgs) => {
     const sections = params.song.tracks[params.track].sections;
+    const wholeBeat = Math.floor(params.currentBeat);
+
     const [minPitch, maxPitch] = useMemo(() => {
         let min: number = Infinity;
         let max: number = -Infinity;
@@ -53,20 +55,10 @@ const usePlayer = (params: UsePlayerArgs) => {
         return [min, max];
     }, [sections]);
 
-    const currentSectionIndex = useCurrentSectionIndex(sections, params.currentBeat)
+    const currentSectionIndex = useCurrentSectionIndex(sections, wholeBeat)
 
     const currentSection = sections?.[currentSectionIndex];
     const nextSection = sections?.[currentSectionIndex + 1];
-
-
-    const currentNote = useMemo(() => {
-        if (!isNotesSection(currentSection) || params.currentBeat < 0) return null;
-        const index = currentSection.notes.findIndex(
-            (note) => params.currentBeat >= note.start && params.currentBeat < note.start + note.length,
-        );
-
-        return index > -1 ? index : null;
-    }, [params.currentBeat, currentSection]);
 
     const allFrequencies = useRef<FrequencyRecord[]>([]);
     const historicFrequencies = useRef<FrequencyRecord[]>([]);
@@ -100,8 +92,6 @@ const usePlayer = (params: UsePlayerArgs) => {
             );
         }
 
-        // console.log('drawFrame', params.playerNumber, currentSectionIndex);
-
         drawFrame(
             params.playerNumber,
             params.song,
@@ -123,7 +113,6 @@ const usePlayer = (params: UsePlayerArgs) => {
     return {
         currentSection,
         nextSection,
-        currentNote,
         playerNotes: playerNotes.current,
         historicPlayerNotes: historicPlayerNotes.current,
     }
@@ -132,8 +121,8 @@ const usePlayer = (params: UsePlayerArgs) => {
 function GameOverlay({ song, currentTime, currentStatus, width, height, tracksForPlayers, onSongEnd, duration, playerChanges }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
-    const songBeatLength = useMemo(() => getSongBeatLength(song), [song]);
-    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap);
+    const songBeatLength = getSongBeatLength(song);
+    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap, false);
 
     useEffect(() => {
         Input.startMonitoring();
@@ -167,39 +156,6 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
             ]);
         }
     }, [currentStatus, player1.historicPlayerNotes, player2.historicPlayerNotes, player1.playerNotes, player2.playerNotes, onSongEnd]);
-
-    const lyrics = (section: Section, currentNote: number | null, nextSection: Section, trackIndex: number, bottom = false) => {
-        const nextChange = playerChanges[trackIndex].find(beat => beat > section?.start ?? Infinity);
-        const shouldBlink = (
-            !!nextChange &&
-            nextChange * songBeatLength + song.gap - 2500 < currentTime
-        );
-
-        return <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-            {isNotesSection(section) ? (<LyricsLine width={width}>
-                {section?.notes.map((note, index) => (
-                    <span
-                    key={note.start}
-                    style={{
-                        fontStyle: note.type === 'freestyle' ? 'italic' : 'normal',
-                        color: index === (currentNote ?? -1) ? styles.colors.text.active : undefined,
-                    }}
-                    >
-                        {note.lyrics}
-                    </span>
-                ))}
-            </LyricsLine>
-            ) : <LyricsLine width={width}>&nbsp;</LyricsLine>}
-            {isNotesSection(nextSection) && (
-                <LyricsLine secondLine width={width}>
-                    {nextSection?.notes.map((note) => (
-                        <span key={note.start}>{note.lyrics}</span>
-                        ))}
-                </LyricsLine>
-            )}
-        </LyricsContainer>
-}
-    ;
     
     const overlayHeight = height - 2 * 100 - 40;
     return (
@@ -209,9 +165,21 @@ function GameOverlay({ song, currentTime, currentStatus, width, height, tracksFo
                 <span><ScoreText score={calculateScore([...player1.historicPlayerNotes, ...player1.playerNotes], song, tracksForPlayers[0])} /></span>
                 <span><ScoreText score={calculateScore([...player2.historicPlayerNotes, ...player2.playerNotes], song, tracksForPlayers[1])} /></span>
             </Scores>
-            {lyrics(player1.currentSection, player1.currentNote, player1.nextSection, tracksForPlayers[0])}
+            <Lyrics
+                currentBeat={currentBeat}
+                beatLength={songBeatLength}
+                section={player1.currentSection}
+                nextSection={player1.nextSection} playerChanges={playerChanges[tracksForPlayers[0]]}
+                bottom={false} gap={song.gap}
+            />
             <canvas ref={canvas} width={width} height={overlayHeight} />
-            {lyrics(player2.currentSection, player2.currentNote, player2.nextSection, tracksForPlayers[1], true)}
+            <Lyrics
+                currentBeat={currentBeat}
+                beatLength={songBeatLength}
+                section={player2.currentSection}
+                nextSection={player2.nextSection} playerChanges={playerChanges[tracksForPlayers[1]]}
+                bottom={true} gap={song.gap}
+            />
         </Screen>
     );
 }
@@ -236,43 +204,6 @@ const Scores = styled.div.attrs<{ height: number }>(({ height }) => ({
     justify-content: space-between;
     flex-direction: column;
     text-align: right;
-`;
-
-const LyricsContainer = styled.div<{ shouldBlink: boolean, bottom: boolean }>`
-    @keyframes blink {
-        100% {
-            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
-        }
-        30% {
-            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
-        }
-        50% {
-            background-color: rgba(134, 134, 134, ${props => props.bottom ? '0.85' : '0.5' });
-        }
-        30% {
-            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
-        }
-        0% {
-            background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.85' : '0.5' });
-        }
-    }
-
-    box-sizing: border-box;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, ${props => props.bottom ? '0.8' : '0.5'});
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    line-height: 1;
-    ${props => props.shouldBlink ? `animation: blink 500ms ease-in-out infinite both;` : ``}
-`;
-
-const LyricsLine = styled.div<{ secondLine?: boolean; width: number }>`
-    font-size: ${({ width, secondLine }) => (width < 1000 ? 25 : 35) + (secondLine ? 0 : 10)}px;
-    height: 45px;
-    color: ${({ secondLine }) => secondLine ? styles.colors.text.inactive : styles.colors.text.default};
-
-    font-family: "Comic Sans MS", "Comic Sans";
 `;
 
 export default GameOverlay;

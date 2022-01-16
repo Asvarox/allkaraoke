@@ -7,8 +7,8 @@ import { useMemo, useState } from 'react';
 import normaliseGap from '../../Edit/Helpers/normaliseGap';
 import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPaddings';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
-import isNotesSection from './Helpers/isNotesSection';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
+import normaliseLyricSpaces from '../../Edit/Helpers/normaliseLyricSpaces';
 
 interface Props {
     singSetup: SingSetup;
@@ -28,6 +28,7 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
         let processed = normaliseGap(song.data);
         processed = addHeadstart(processed);
         processed = normaliseSectionPaddings(processed);
+        processed = normaliseLyricSpaces(processed);
 
         return processed;
     }, [song]);
