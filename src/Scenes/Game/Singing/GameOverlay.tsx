@@ -28,6 +28,7 @@ interface Props {
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
     tracksForPlayers: [number, number];
     duration: number;
+    effectsEnabled: boolean;
     playerChanges: number[][];
 }
 
@@ -142,6 +143,7 @@ function GameOverlay({
     onSongEnd,
     duration,
     playerChanges,
+    effectsEnabled,
 }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
@@ -238,6 +240,7 @@ function GameOverlay({
                 section={player1.currentSection}
                 nextSection={player1.nextSection}
                 playerChanges={playerChanges[tracksForPlayers[0]]}
+                effectsEnabled={effectsEnabled}
             />
             <canvas ref={canvas} width={width} height={overlayHeight} />
             <Lyrics
@@ -247,6 +250,7 @@ function GameOverlay({
                 nextSection={player2.nextSection}
                 playerChanges={playerChanges[tracksForPlayers[1]]}
                 bottom
+                effectsEnabled={effectsEnabled}
             />
         </Screen>
     );

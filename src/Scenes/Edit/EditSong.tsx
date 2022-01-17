@@ -62,6 +62,7 @@ export default function EditSong({ song, onUpdate }: Props) {
     const [overrideBpm, setOverrideBpm] = useState<number>(song.bpm);
     const [playerKey, setPlayerKey] = useState(0);
     const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
+    const [effectsEnabled, setEffectsEnabled] = useState<boolean>(false);
 
     const newSong = useMemo(() => {
         let processed = cloneDeep(song);
@@ -103,12 +104,18 @@ export default function EditSong({ song, onUpdate }: Props) {
                         ref={player}
                         onTimeUpdate={setCurrentTime}
                         tracksForPlayers={[0, song.tracks.length - 1]} // todo: make selectable in UI
+                        effectsEnabled={effectsEnabled}
                     />
                 </PlayerContainer>
                 <Editor>
                     {player.current && (
                         <>
-                            <AdjustPlayback player={player.current} currentTime={currentTime} />
+                            <AdjustPlayback
+                                player={player.current}
+                                currentTime={currentTime}
+                                effectsEnabled={effectsEnabled}
+                                onEffectsToggle={() => setEffectsEnabled((current) => !current)}
+                            />
                             <ShiftGap
                                 player={player.current}
                                 onChange={setGapShift}
@@ -135,8 +142,7 @@ export default function EditSong({ song, onUpdate }: Props) {
                         href={`data:application/json;charset=utf-8,${encodeURIComponent(
                             JSON.stringify(newSong, undefined, 2),
                         )}`}
-                        download={`${newSong.artist}-${newSong.title}.json`}
-                    >
+                        download={`${newSong.artist}-${newSong.title}.json`}>
                         Download
                     </a>
                     <button onClick={() => setPlayerKey(Date.now())}>reset player</button>

@@ -14,6 +14,8 @@ interface Props {
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
     tracksForPlayers: [number, number];
     playerChanges?: number[][];
+
+    effectsEnabled?: boolean;
 }
 
 export interface PlayerRef {
@@ -33,6 +35,7 @@ function Player(
         onSongEnd,
         tracksForPlayers,
         playerChanges = [[], []],
+        effectsEnabled = true,
     }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
@@ -81,6 +84,7 @@ function Player(
             {currentStatus !== YouTube.PlayerState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
+                        effectsEnabled={effectsEnabled}
                         playerChanges={playerChanges}
                         duration={duration}
                         currentStatus={currentStatus}

@@ -5,9 +5,11 @@ import formatMs from '../Helpers/formatMs';
 interface Props {
     player: PlayerRef;
     currentTime: number;
+    effectsEnabled: boolean;
+    onEffectsToggle: () => void;
 }
 
-export default function AdjustPlayback({ player, currentTime }: Props) {
+export default function AdjustPlayback({ player, currentTime, effectsEnabled, onEffectsToggle }: Props) {
     const seekBy = (bySec: number) => player.seekTo((currentTime + bySec) / 1000);
 
     return (
@@ -36,6 +38,13 @@ export default function AdjustPlayback({ player, currentTime }: Props) {
                     <InputGroupButton onClick={() => seekBy(+1000)}>+1s</InputGroupButton>
                     <InputGroupButton onClick={() => seekBy(+5000)}>+5s</InputGroupButton>
                     <InputGroupButton onClick={() => seekBy(+10000)}>+10s</InputGroupButton>
+                </InputGroup>
+            </EditorRow>
+            <EditorRow>
+                <InputGroup>
+                    <label>
+                        <input type="checkbox" checked={effectsEnabled} onChange={onEffectsToggle} /> Enable effects
+                    </label>
                 </InputGroup>
             </EditorRow>
         </>

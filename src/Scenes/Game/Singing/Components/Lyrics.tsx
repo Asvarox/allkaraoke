@@ -11,9 +11,18 @@ interface Props {
     playerChanges: number[];
     currentBeat: number;
     beatLength: number;
+    effectsEnabled: boolean;
 }
 
-function Lyrics({ section, nextSection, currentBeat, playerChanges, bottom = false, beatLength }: Props) {
+function Lyrics({
+    section,
+    nextSection,
+    currentBeat,
+    playerChanges,
+    bottom = false,
+    beatLength,
+    effectsEnabled,
+}: Props) {
     const nextChange = playerChanges.find((beat) => beat > section?.start ?? Infinity);
     const shouldBlink = !!nextChange && nextChange * beatLength - 2500 < currentBeat * beatLength;
 
@@ -22,14 +31,15 @@ function Lyrics({ section, nextSection, currentBeat, playerChanges, bottom = fal
             {isNotesSection(section) ? (
                 <LyricsLine>
                     {section?.notes.map((note) => {
+                        const fill = effectsEnabled
+                            ? Math.max(0, Math.min(1, (currentBeat - note.start) / note.length))
+                            : currentBeat >= note.start
+                            ? 1
+                            : 0;
                         return (
                             <LyricContainer type={note.type} key={note.start}>
                                 <LyricActiveContainer>
-                                    <LyricActive
-                                        fill={Math.max(0, Math.min(1, (currentBeat - note.start) / note.length))}
-                                    >
-                                        {note.lyrics.trim()}
-                                    </LyricActive>
+                                    <LyricActive fill={fill}>{note.lyrics.trim()}</LyricActive>
                                     {note.lyrics.endsWith(' ') && ' '}
                                 </LyricActiveContainer>
                                 {note.lyrics}
