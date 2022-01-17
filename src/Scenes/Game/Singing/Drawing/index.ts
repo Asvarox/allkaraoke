@@ -3,9 +3,10 @@ import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
 import getCurrentBeat from '../Helpers/getCurrentBeat';
 import isNotesSection from '../Helpers/isNotesSection';
 import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
+import ParticleManager from './ParticleManager';
+import RayParticle from './Particles/Ray';
 import roundRect from './roundRect';
 import styles from './styles';
-import drawTimeIndicator from './timeIndicator';
 
 function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string; stroke: string; lineWidth: number }) {
     ctx.fillStyle = style.fill;
@@ -54,15 +55,16 @@ export default function drawFrame(
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    drawTimeIndicator(ctx, drawingData);
+    // drawTimeIndicator(ctx, drawingData);
 
     const beatLength = (canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - currentSection.start);
 
     if (!isNotesSection(currentSection)) {
+        ParticleManager.tick(ctx, canvas);
         return;
     }
 
-    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap);
+    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap, false);
 
     const displacements: Record<number, [number, number]> = {};
 
@@ -144,5 +146,41 @@ export default function drawFrame(
             );
     });
 
+    const lastNote = getPlayerNoteAtBeat(playersNotes, currentBeat - 155 / songBeatLength);
+
+    if (lastNote && lastNote.distance === 0) {
+        const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
+
+        ParticleManager.add(
+            new RayParticle(
+                paddingHorizontal +
+                    beatLength * (lastNote.start + lastNote.length - currentSection.start) +
+                    displacementX,
+                regionPaddingTop +
+                    10 +
+                    pitchStepHeight * (maxPitch - lastNote.note.pitch + pitchPadding) +
+                    displacementY -
+                    3 +
+                    12,
+                currentTime,
+                lastNote.length / 3,
+            ),
+        );
+    }
+
+    // ParticleManager.add(
+    //     new RayParticle(
+    //         paddingHorizontal + beatLength * (currentBeat - currentSection.start),
+    //         regionPaddingTop + canvas.height / 2 - 50,
+    //         currentTime,
+    //     ),
+    // );
+
+    ParticleManager.tick(ctx, canvas);
+
     // debugPitches(ctx, drawingData);
+}
+
+function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
+    return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);
 }

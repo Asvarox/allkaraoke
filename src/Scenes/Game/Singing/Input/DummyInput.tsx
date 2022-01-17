@@ -28,7 +28,7 @@ class DummyInput implements InputInterface {
         }
     };
 
-    public getInputLag = () => 0;
+    public getInputLag = () => 150;
 }
 
 export default new DummyInput();

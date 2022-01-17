@@ -8,7 +8,7 @@ export const calcDistanceBetweenPitches = (note: number, targetNote: number) => 
     const tolerance = 2;
     const noteDistance = ((note - targetNote + 6) % 12) - 6;
 
-    return Math.abs(noteDistance) <= tolerance ? 0 : noteDistance;
+    return 0; //Math.abs(noteDistance) <= tolerance ? 0 : noteDistance;
 };
 
 export const calcDistance = (frequency: number, targetNote: number) => {
