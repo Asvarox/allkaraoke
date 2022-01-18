@@ -53,6 +53,7 @@ export interface Song {
     bpm: number;
     bar: number;
     tracks: SongTrack[];
+    volume?: number;
 }
 
 export interface SongTrack {

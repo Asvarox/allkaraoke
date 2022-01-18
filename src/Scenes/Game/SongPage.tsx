@@ -15,7 +15,7 @@ export default function SongPage({ songData, background, width, height, children
         <FocusedSongContainer video={songData.video} width={width} height={height}>
             <BackgroundImage video={songData.video} blur />
             {background && <Background>{background}</Background>}
-            <ContentLayer>
+            {/* <ContentLayer>
                 <FocusedSongData>
                     <SongTitle>{songData.title}</SongTitle>
                     <br />
@@ -29,7 +29,7 @@ export default function SongPage({ songData, background, width, height, children
                     )}
                     {children}
                 </FocusedSongData>
-            </ContentLayer>
+            </ContentLayer> */}
         </FocusedSongContainer>
     );
 }

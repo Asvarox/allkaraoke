@@ -60,8 +60,12 @@ function Player(
     useEffect(() => {
         if (player.current && currentStatus === YouTube.PlayerState.PLAYING && duration === 0) {
             player.current.getInternalPlayer().getDuration().then(setDuration);
+            player.current
+                .getInternalPlayer()
+                .setVolume(Math.round((song.volume ?? 0.5) * 100))
+                .then(setDuration);
         }
-    }, [duration, player, currentStatus]);
+    }, [duration, player, currentStatus, song.volume]);
 
     useEffect(() => {
         if (!player.current) {

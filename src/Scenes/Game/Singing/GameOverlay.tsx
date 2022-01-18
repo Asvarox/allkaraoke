@@ -86,7 +86,7 @@ const usePlayer = (params: UsePlayerArgs) => {
                 .flat(),
         );
         playerNotes.current = [];
-    }, [currentSectionIndex, params.song, params.songBeatLength, historicFrequencies, currentSectionIndex, sections]);
+    }, [currentSectionIndex, params.song, params.songBeatLength, historicFrequencies, sections]);
 
     useEffect(() => {
         if (!params.canvas) return;

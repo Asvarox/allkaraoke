@@ -23,7 +23,7 @@ const gameModeNames = {
 };
 
 const previewWidth = 1100;
-const previewHeight = 400;
+const previewHeight = 800;
 
 enum Element {
     PLAY,
@@ -40,8 +40,8 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     const [focusedElement, setFocusedEelement] = useState<number>(0);
 
     const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
-    const [videoId, previewStart, previewEnd] = useDebounce(
-        [songPreview.video, start, songPreview.previewEnd ?? start + 30],
+    const [videoId, previewStart, previewEnd, volume] = useDebounce(
+        [songPreview.video, start, songPreview.previewEnd ?? start + 30, songPreview.volume ?? 0.5],
         350,
     );
 
@@ -96,12 +96,14 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     );
 
     useEffect(() => {
+        console.log(Math.round(volume * 100));
+        player.current?.getInternalPlayer().setVolume(Math.round(volume * 100));
         player.current?.getInternalPlayer().loadVideoById({
             videoId: videoId,
             startSeconds: previewStart,
             endSeconds: previewEnd,
         });
-    }, [videoId, player, previewStart, previewEnd]);
+    }, [videoId, player, previewStart, previewEnd, volume]);
 
     useEffect(() => {
         setPlayerTracks([0, songPreview.tracksCount - 1]);
@@ -122,7 +124,7 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
                         showinfo: 0,
                         rel: 0,
                         fs: 0,
-                        controls: 0,
+                        controls: 1,
                         disablekb: 1,
                     },
                 }}
@@ -148,14 +150,12 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
                         <>
                             <ConfigurationPosition
                                 onClick={() => togglePlayerTrack(0)}
-                                focused={isFocused(Element.PLAYER_1_TRACK)}
-                            >
+                                focused={isFocused(Element.PLAYER_1_TRACK)}>
                                 Player 1: <ConfigValue>Track {playerTracks[0] + 1}</ConfigValue>
                             </ConfigurationPosition>
                             <ConfigurationPosition
                                 onClick={() => togglePlayerTrack(1)}
-                                focused={isFocused(Element.PLAYER_2_TRACK)}
-                            >
+                                focused={isFocused(Element.PLAYER_2_TRACK)}>
                                 Player 2: <ConfigValue>Track {playerTracks[1] + 1}</ConfigValue>
                             </ConfigurationPosition>
                         </>

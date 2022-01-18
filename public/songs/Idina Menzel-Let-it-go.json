@@ -5,6 +5,7 @@
     "gap": 14859,
     "bpm": 275,
     "bar": 4,
+    "volume": 0.85,
     "tracks": [
         {
             "sections": [
