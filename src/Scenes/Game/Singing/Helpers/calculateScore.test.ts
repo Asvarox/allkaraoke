@@ -94,21 +94,11 @@ describe('calculateScore', () => {
             ],
         ]);
 
-        it('should not take into account freestyle notes for max points', () => {
-            const playerNotes: PlayerNote[] = [generatePlayerNote(note6, 0, 0, note6.length, true)];
-            expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
-        });
-
-        it('should not let sung freestyle notes make the score go over max points', () => {
+        it('should count rap and freestyle notes even if not in pitch', () => {
             const playerNotes: PlayerNote[] = [
-                generatePlayerNote(note5, 0, 0, note5.length, true),
-                generatePlayerNote(note6, 0, 0, note6.length, true),
+                generatePlayerNote(note5, 5, 0, note5.length, true),
+                generatePlayerNote(note6, -5, 0, note6.length, true),
             ];
-            expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
-        });
-
-        it('should count rap notes even if not in pitch', () => {
-            const playerNotes: PlayerNote[] = [generatePlayerNote(note6, 5, 0, note6.length, true)];
             expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
         });
     });

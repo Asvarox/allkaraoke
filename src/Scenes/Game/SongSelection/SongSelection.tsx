@@ -26,7 +26,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             inline: 'center',
             block: 'center',
         });
-    }, [list, focusedSong]);
+        if (songList.data) window.location.hash = `/game/${encodeURIComponent(songList.data[focusedSong].file)}`;
+    }, [list, focusedSong, songList.data]);
 
     useEffect(() => {
         if (songList.data && preselectedSong) {
@@ -73,8 +74,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                         key={song.file}
                         onClick={() => setFocusedSong(index)}
                         video={song.video}
-                        focused={keyboardControl && index === focusedSong}
-                    >
+                        focused={keyboardControl && index === focusedSong}>
                         <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
                         <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>

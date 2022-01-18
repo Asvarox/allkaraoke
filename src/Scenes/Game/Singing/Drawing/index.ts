@@ -1,8 +1,10 @@
-import { noDistanceNoteTypes } from '../../../../consts';
+import { takeRightWhile } from 'lodash';
 import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
 import getCurrentBeat from '../Helpers/getCurrentBeat';
+import getPlayerNoteDistance from '../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../Helpers/isNotesSection';
 import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
+import debugPitches from './debugPitches';
 import ParticleManager from './ParticleManager';
 import RayParticle from './Particles/Ray';
 import roundRect from './roundRect';
@@ -108,13 +110,15 @@ export default function drawFrame(
     });
 
     playersNotes.forEach((playerNote) => {
+        const distance = getPlayerNoteDistance(playerNote);
+
         if (playerNote.isPerfect && playerNote.note.type === 'star') {
             applyColor(ctx, styles.colors.players[playerNumber].goldPerfect);
         } else if (playerNote.isPerfect) {
             applyColor(ctx, styles.colors.players[playerNumber].perfect);
-        } else if (playerNote.note.type === 'star' && playerNote.distance === 0) {
+        } else if (playerNote.note.type === 'star' && distance === 0) {
             applyColor(ctx, styles.colors.players[playerNumber].gold);
-        } else if (playerNote.distance === 0) {
+        } else if (distance === 0) {
             applyColor(ctx, styles.colors.players[playerNumber].hit);
         } else {
             applyColor(ctx, styles.colors.players[playerNumber].miss);
@@ -123,11 +127,7 @@ export default function drawFrame(
         const startBeat = playerNote.start;
         const endBeat = playerNote.start + playerNote.length;
 
-        const [displacementX, displacementY] = (playerNote.distance === 0 && displacements[playerNote.note.start]) || [
-            0, 0,
-        ];
-
-        const distance = noDistanceNoteTypes.includes(playerNote.note.type) ? 0 : playerNote.distance;
+        const [displacementX, displacementY] = (distance === 0 && displacements[playerNote.note.start]) || [0, 0];
 
         if (endBeat - startBeat >= 0.5)
             roundRect(
@@ -151,6 +151,11 @@ export default function drawFrame(
     if (lastNote && lastNote.distance === 0) {
         const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
 
+        const streak = takeRightWhile(
+            playersNotes,
+            (note) => note.start + note.length + 30 > currentBeat && getPlayerNoteDistance(note) === 0,
+        ).reduce((sum, note) => sum + note.length, 0);
+
         ParticleManager.add(
             new RayParticle(
                 paddingHorizontal +
@@ -163,7 +168,7 @@ export default function drawFrame(
                     3 +
                     12,
                 currentTime,
-                lastNote.length / 3,
+                streak / 3,
             ),
         );
     }
@@ -178,7 +183,7 @@ export default function drawFrame(
 
     ParticleManager.tick(ctx, canvas);
 
-    // debugPitches(ctx, drawingData);
+    debugPitches(ctx, drawingData);
 }
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {

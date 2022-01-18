@@ -2,7 +2,7 @@ export interface Note {
     start: number;
     length: number;
     pitch: number;
-    type: 'normal' | 'star' | string;
+    type: 'normal' | 'star' | 'freestyle' | 'rap';
     lyrics: string;
 }
 

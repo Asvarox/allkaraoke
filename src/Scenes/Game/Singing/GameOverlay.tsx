@@ -74,15 +74,24 @@ const usePlayer = (params: UsePlayerArgs) => {
     useEffect(() => {
         // console.log(song.tracks[0].sections[currentSectionIndex]);
         allFrequencies.current = [...allFrequencies.current, ...historicFrequencies.current];
-        historicFrequencies.current = [];
-        historicPlayerNotes.current = [...historicPlayerNotes.current, ...playerNotes.current];
+        // historicFrequencies.current = [];
+        historicPlayerNotes.current = frequenciesToLines(
+            historicFrequencies.current,
+            params.songBeatLength,
+            params.song.gap,
+            sections
+                .filter((_, index) => index < currentSectionIndex)
+                .filter(isNotesSection)
+                .map((section) => section.notes)
+                .flat(),
+        );
         playerNotes.current = [];
-    }, [currentSectionIndex]);
+    }, [currentSectionIndex, params.song, params.songBeatLength, historicFrequencies, currentSectionIndex, sections]);
 
     useEffect(() => {
         if (!params.canvas) return;
 
-        if (params.currentTime >= params.song.gap && isNotesSection(currentSection)) {
+        if (params.currentTime >= params.song.gap) {
             const frequencies = params.input.getFrequencies();
 
             historicFrequencies.current.push({
@@ -90,12 +99,14 @@ const usePlayer = (params: UsePlayerArgs) => {
                 frequency: frequencies[params.playerNumber],
             });
 
-            playerNotes.current = frequenciesToLines(
-                historicFrequencies.current,
-                params.songBeatLength,
-                params.song.gap,
-                currentSection.notes,
-            );
+            if (isNotesSection(currentSection)) {
+                playerNotes.current = frequenciesToLines(
+                    historicFrequencies.current,
+                    params.songBeatLength,
+                    params.song.gap,
+                    currentSection.notes,
+                );
+            }
         }
 
         drawFrame(
@@ -122,6 +133,7 @@ const usePlayer = (params: UsePlayerArgs) => {
         params.songBeatLength,
         params.song,
         currentSection,
+        sections,
         params.track,
     ]);
 
