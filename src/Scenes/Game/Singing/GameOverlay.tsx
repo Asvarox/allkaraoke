@@ -75,17 +75,12 @@ const usePlayer = (params: UsePlayerArgs) => {
         // console.log(song.tracks[0].sections[currentSectionIndex]);
         allFrequencies.current = [...allFrequencies.current, ...historicFrequencies.current];
         // historicFrequencies.current = [];
-        historicPlayerNotes.current = frequenciesToLines(
-            historicFrequencies.current,
-            params.songBeatLength,
-            params.song.gap,
-            sections
-                .filter((_, index) => index < currentSectionIndex)
-                .filter(isNotesSection)
-                .map((section) => section.notes)
-                .flat(),
-        );
-        playerNotes.current = [];
+        if (currentSectionIndex > 1) {
+            historicPlayerNotes.current.push(
+                ...playerNotes.current.filter((note) => note.note.start < sections[currentSectionIndex - 1].start),
+            );
+            playerNotes.current = [];
+        }
     }, [currentSectionIndex, params.song, params.songBeatLength, historicFrequencies, sections]);
 
     useEffect(() => {
@@ -99,12 +94,18 @@ const usePlayer = (params: UsePlayerArgs) => {
                 frequency: frequencies[params.playerNumber],
             });
 
+            // Bug: if the section is pause, then last notes hit from previous section wouldn't be accounted for
+            // This doesn't happen in the game because section ends are padded for up to 1s before the pause section starts
             if (isNotesSection(currentSection)) {
+                const prevSection = sections[currentSectionIndex - 1];
+                const notes = isNotesSection(prevSection)
+                    ? [...currentSection.notes, ...prevSection.notes]
+                    : currentSection.notes;
                 playerNotes.current = frequenciesToLines(
                     historicFrequencies.current,
                     params.songBeatLength,
                     params.song.gap,
-                    currentSection.notes,
+                    notes,
                 );
             }
         }

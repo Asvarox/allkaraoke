@@ -54,6 +54,8 @@ export default function drawFrame(
 
     const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
 
+    const currentPlayerNotes = playersNotes.filter((note) => note.note.start >= currentSection.start);
+
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
@@ -109,7 +111,7 @@ export default function drawFrame(
         );
     });
 
-    playersNotes.forEach((playerNote) => {
+    currentPlayerNotes.forEach((playerNote) => {
         const distance = getPlayerNoteDistance(playerNote);
 
         if (playerNote.isPerfect && playerNote.note.type === 'star') {
@@ -146,7 +148,7 @@ export default function drawFrame(
             );
     });
 
-    const lastNote = getPlayerNoteAtBeat(playersNotes, currentBeat - 155 / songBeatLength);
+    const lastNote = getPlayerNoteAtBeat(currentPlayerNotes, currentBeat - 155 / songBeatLength);
 
     if (lastNote && lastNote.distance === 0) {
         const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
