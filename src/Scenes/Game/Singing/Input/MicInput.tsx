@@ -15,8 +15,10 @@ class AubioStrategy implements FrequencyDetectionStrategy {
     public init = async (context: AudioContext, processor: ScriptProcessorNode): Promise<void> => {
         const { Pitch } = await aubio();
 
+        console.log(processor.bufferSize, context.sampleRate);
+
         this.detector = new Pitch('default', processor.bufferSize, processor.bufferSize / 8, context.sampleRate);
-        this.detector.setTolerance(0.2);
+        this.detector.setTolerance(0.4);
     };
 
     public getSampleSize(): number {
@@ -72,7 +74,7 @@ class MicInput implements InputInterface {
         await this.context?.close();
     };
 
-    public getInputLag = () => 150;
+    public getInputLag = () => 180;
 }
 
 export default new MicInput();

@@ -10,7 +10,7 @@ export const calcDistanceBetweenPitches = (note: number, targetNote: number) => 
     // (so smallest between "too high" or "too low" pitch to hit the note in whatever octave)
     const noteDistance = (((note % 12) - (targetNote % 12) + 6) % 12) - 6;
 
-    return 0; //Math.abs(noteDistance) <= tolerance ? 0 : noteDistance;
+    return Math.abs(noteDistance) <= tolerance ? 0 : noteDistance;
 };
 
 export const calcDistance = (frequency: number, targetNote: number) => {

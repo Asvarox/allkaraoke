@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Section } from '../../../../interfaces';
 import styles from '../Drawing/styles';
 import isNotesSection from '../Helpers/isNotesSection';
+import { getFirstNoteStartFromSections } from '../Helpers/notesSelectors';
 
 interface Props {
     section: Section;
@@ -26,27 +27,38 @@ function Lyrics({
     const nextChange = playerChanges.find((beat) => beat > section?.start ?? Infinity);
     const shouldBlink = !!nextChange && nextChange * beatLength - 2500 < currentBeat * beatLength;
 
+    const hasNotes = isNotesSection(section);
+
+    const beatsBetweenSectionAndNote = hasNotes ? getFirstNoteStartFromSections([section]) - section.start : 0;
+
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-            {isNotesSection(section) ? (
-                <LyricsLine>
-                    {section?.notes.map((note) => {
-                        const fill = effectsEnabled
-                            ? Math.max(0, Math.min(1, (currentBeat - note.start) / note.length))
-                            : currentBeat >= note.start
-                            ? 1
-                            : 0;
-                        return (
-                            <LyricContainer type={note.type} key={note.start}>
-                                <LyricActiveContainer>
-                                    <LyricActive fill={fill}>{note.lyrics.trim()}</LyricActive>
-                                    {note.lyrics.endsWith(' ') && ' '}
-                                </LyricActiveContainer>
-                                {note.lyrics}
-                            </LyricContainer>
-                        );
-                    })}
-                </LyricsLine>
+            {hasNotes ? (
+                <>
+                    <LyricsLine>
+                        <HeadstartContainer>
+                            <Headstart
+                                percent={Math.min(2, (currentBeat - section.start) / beatsBetweenSectionAndNote)}
+                            />
+                        </HeadstartContainer>
+                        {section?.notes.map((note) => {
+                            const fill = effectsEnabled
+                                ? Math.max(0, Math.min(2, (currentBeat - note.start) / note.length))
+                                : currentBeat >= note.start
+                                ? 1
+                                : 0;
+                            return (
+                                <LyricContainer type={note.type} key={note.start}>
+                                    <LyricActiveContainer>
+                                        <LyricActive fill={fill}>{note.lyrics.trim()}</LyricActive>
+                                        {note.lyrics.endsWith(' ') && ' '}
+                                    </LyricActiveContainer>
+                                    {note.lyrics}
+                                </LyricContainer>
+                            );
+                        })}
+                    </LyricsLine>
+                </>
             ) : (
                 <LyricsLine>&nbsp;</LyricsLine>
             )}
@@ -60,6 +72,25 @@ function Lyrics({
         </LyricsContainer>
     );
 }
+
+const HeadstartContainer = styled.span`
+    position: relative;
+    height: 0;
+`;
+
+const Headstart = styled.span.attrs<{ percent: number }>((props) => ({
+    style: {
+        right: `${Math.max(0, 1 - props.percent) * 150}px`,
+        width: `${Math.min(1, 2 - props.percent) * 150}px`,
+    },
+}))<{ percent: number }>`
+    position: absolute;
+    width: 100px;
+    height: 31px;
+    margin: 7px 0;
+    right: 100px;
+    background: linear-gradient(270deg, rgba(255, 165, 0, 1) 0%, rgba(255, 165, 0, 0.5) 25%, rgba(255, 165, 0, 0) 100%);
+`;
 
 const LyricContainer = styled.span<{ type: string }>`
     font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};

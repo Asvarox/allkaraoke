@@ -16,8 +16,8 @@ import InputInterface from './Input/Interface';
 import MicInput from './Input/MicInput';
 import ScoreText from './ScoreText';
 
-const Input = DummyInput;
-const Input2 = MicInput;
+const Input1 = DummyInput;
+const Input = MicInput;
 
 interface Props {
     song: Song;

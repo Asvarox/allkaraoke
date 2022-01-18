@@ -23,7 +23,7 @@ const gameModeNames = {
 };
 
 const previewWidth = 1100;
-const previewHeight = 800;
+const previewHeight = 400;
 
 enum Element {
     PLAY,
@@ -96,7 +96,6 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     );
 
     useEffect(() => {
-        console.log(Math.round(volume * 100));
         player.current?.getInternalPlayer().setVolume(Math.round(volume * 100));
         player.current?.getInternalPlayer().loadVideoById({
             videoId: videoId,
@@ -124,7 +123,7 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
                         showinfo: 0,
                         rel: 0,
                         fs: 0,
-                        controls: 1,
+                        controls: 0,
                         disablekb: 1,
                     },
                 }}
