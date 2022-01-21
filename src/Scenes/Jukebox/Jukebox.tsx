@@ -24,7 +24,7 @@ enum Element {
     SKIP,
 }
 
-function Jukebox({}: Props) {
+function Jukebox(props: Props) {
     const [, setLocation] = useLocation();
     const { width, height } = useWindowSize();
     const player = useRef<YouTube | null>(null);
@@ -99,8 +99,7 @@ function Jukebox({}: Props) {
                         if (e.data === YouTube.PlayerState.ENDED) playNext();
                     }}
                 />
-            }
-        >
+            }>
             <SkipSongButton onClick={playNext} focused={isFocused(Element.SKIP)}>
                 Skip
             </SkipSongButton>

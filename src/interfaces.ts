@@ -86,3 +86,5 @@ type UndefinedKeys<T> = {
 }[keyof T];
 
 export type ExtractOptional<T> = Pick<T, Exclude<UndefinedKeys<T>, undefined>>;
+
+export type DetailedScore = Record<Note['type'] | 'perfect', number>;
