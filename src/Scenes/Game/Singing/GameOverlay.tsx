@@ -16,8 +16,8 @@ import InputInterface from './Input/Interface';
 import MicInput from './Input/MicInput';
 import ScoreText from './ScoreText';
 
-const Input1 = DummyInput;
-const Input = MicInput;
+const Input = DummyInput;
+const Input1 = MicInput;
 
 interface Props {
     song: Song;
@@ -66,14 +66,13 @@ const usePlayer = (params: UsePlayerArgs) => {
     const currentSection = sections?.[currentSectionIndex];
     const nextSection = sections?.[currentSectionIndex + 1];
 
-    const allFrequencies = useRef<FrequencyRecord[]>([]);
     const historicFrequencies = useRef<FrequencyRecord[]>([]);
     const historicPlayerNotes = useRef<PlayerNote[]>([]);
     const playerNotes = useRef<PlayerNote[]>([]);
 
     useEffect(() => {
         // console.log(song.tracks[0].sections[currentSectionIndex]);
-        allFrequencies.current = [...allFrequencies.current, ...historicFrequencies.current];
+        // console.log(historicFrequencies.current.filter(({ frequency }) => frequency > 0));
         // historicFrequencies.current = [];
         if (currentSectionIndex > 1) {
             historicPlayerNotes.current.push(

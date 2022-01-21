@@ -1,4 +1,3 @@
-import { takeRightWhile } from 'lodash';
 import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
 import getCurrentBeat from '../Helpers/getCurrentBeat';
 import getPlayerNoteDistance from '../Helpers/getPlayerNoteDistance';
@@ -72,6 +71,13 @@ export default function drawFrame(
 
     const displacements: Record<number, [number, number]> = {};
 
+    const getNoteCoords = (start: number, length: number, pitch: number, big: boolean) => ({
+        x: paddingHorizontal + beatLength * (start - currentSection.start),
+        y: regionPaddingTop + 10 + pitchStepHeight * (maxPitch - pitch + pitchPadding) - (big ? 3 : 0),
+        w: beatLength * length,
+        h: NOTE_HEIGHT + (big ? 3 : 0),
+    });
+
     currentSection.notes.forEach((note) => {
         if (note.type === 'star') {
             applyColor(ctx, styles.colors.lines.gold);
@@ -99,22 +105,17 @@ export default function drawFrame(
 
         displacements[note.start] = [displacementX, displacementY];
 
-        roundRect(
-            ctx!,
-            paddingHorizontal + beatLength * (note.start - currentSection.start) + displacementX,
-            regionPaddingTop + 10 + pitchStepHeight * (maxPitch - note.pitch + pitchPadding) + displacementY - 3,
-            beatLength * note.length,
-            NOTE_HEIGHT + 5,
-            5,
-            true,
-            true,
-        );
+        const { x, y, w, h } = getNoteCoords(note.start, note.length, note.pitch, true);
+
+        roundRect(ctx!, x + displacementX, y + displacementY, w, h, 5, true, true);
     });
 
     currentPlayerNotes.forEach((playerNote) => {
         const distance = getPlayerNoteDistance(playerNote);
 
-        if (playerNote.isPerfect && playerNote.note.type === 'star') {
+        if (playerNote.vibrato) {
+            applyColor(ctx, styles.colors.players[playerNumber].vibrato);
+        } else if (playerNote.isPerfect && playerNote.note.type === 'star') {
             applyColor(ctx, styles.colors.players[playerNumber].goldPerfect);
         } else if (playerNote.isPerfect) {
             applyColor(ctx, styles.colors.players[playerNumber].perfect);
@@ -131,48 +132,30 @@ export default function drawFrame(
 
         const [displacementX, displacementY] = (distance === 0 && displacements[playerNote.note.start]) || [0, 0];
 
-        if (endBeat - startBeat >= 0.5)
-            roundRect(
-                ctx!,
-                paddingHorizontal + beatLength * (playerNote.start - currentSection.start) + displacementX,
-                regionPaddingTop +
-                    10 +
-                    pitchStepHeight * (maxPitch - playerNote.note.pitch - distance + pitchPadding) +
-                    displacementY -
-                    (distance === 0 ? 3 : 0),
-                beatLength * (endBeat - startBeat),
-                NOTE_HEIGHT + (distance === 0 ? 5 : 0),
-                5,
-                true,
-                true,
+        if (endBeat - startBeat >= 0.5) {
+            const { x, y, w, h } = getNoteCoords(
+                playerNote.start,
+                playerNote.length,
+                playerNote.note.pitch - distance,
+                distance === 0,
             );
+            roundRect(ctx!, x + displacementX, y + displacementY, w, h, 5, true, true);
+        }
     });
 
-    const lastNote = getPlayerNoteAtBeat(currentPlayerNotes, currentBeat - 155 / songBeatLength);
+    const lastNote = getPlayerNoteAtBeat(currentPlayerNotes, currentBeat - 185 / songBeatLength);
 
     if (lastNote && lastNote.distance === 0) {
         const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
 
-        const streak = takeRightWhile(
-            playersNotes,
-            (note) => note.start + note.length + 30 > currentBeat && getPlayerNoteDistance(note) === 0,
-        ).reduce((sum, note) => sum + note.length, 0);
+        // const streak = takeRightWhile(
+        //     playersNotes,
+        //     (note) => note.start + note.length + 30 > currentBeat && getPlayerNoteDistance(note) === 0,
+        // ).reduce((sum, note) => sum + note.length, 0);
 
-        ParticleManager.add(
-            new RayParticle(
-                paddingHorizontal +
-                    beatLength * (lastNote.start + lastNote.length - currentSection.start) +
-                    displacementX,
-                regionPaddingTop +
-                    10 +
-                    pitchStepHeight * (maxPitch - lastNote.note.pitch + pitchPadding) +
-                    displacementY -
-                    3 +
-                    12,
-                currentTime,
-                streak / 3,
-            ),
-        );
+        const { x, y, w, h } = getNoteCoords(lastNote.start, lastNote.length, lastNote.note.pitch, true);
+
+        ParticleManager.add(new RayParticle(x + w + displacementX, y + h / 2 + displacementY, currentTime, 1));
     }
 
     // ParticleManager.add(
@@ -185,7 +168,7 @@ export default function drawFrame(
 
     ParticleManager.tick(ctx, canvas);
 
-    debugPitches(ctx, drawingData);
+    false && debugPitches(ctx!, drawingData);
 }
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {

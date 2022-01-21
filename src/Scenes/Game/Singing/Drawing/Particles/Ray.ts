@@ -30,7 +30,8 @@ export default class RayParticle implements Particle {
         this.ttl = initialTtl;
         this.velocityX = 0.5 * Math.random() - 0.25;
         this.velocityY = 0.5 * Math.random() - 0.25;
-        this.maxWidth = Math.min(widthModifier, 1) * (Math.sin(seed / 70) * WIDTH_SPREAD + (WIDTH - WIDTH_SPREAD));
+        this.maxWidth =
+            Math.min(0.1 + widthModifier, 1) * (Math.sin(seed / 70) * WIDTH_SPREAD + (WIDTH - WIDTH_SPREAD));
     }
     public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
         if (imageLoaded) {

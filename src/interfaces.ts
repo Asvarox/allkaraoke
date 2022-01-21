@@ -77,6 +77,8 @@ export interface PlayerNote {
     distance: number;
     note: Note;
     isPerfect: boolean;
+    vibrato: boolean;
+    frequencyRecords: FrequencyRecord[];
 }
 
 type UndefinedKeys<T> = {
