@@ -27,10 +27,10 @@ describe('calculateScore', () => {
 
     it('should properly calculate score for player with all sung notes perfectly', () => {
         const playerNotes: PlayerNote[] = [
-            generatePlayerNote(note1, 0, 0, note1.length, true),
-            generatePlayerNote(note2, 0, 0, note2.length, true),
-            generatePlayerNote(note3, 0, 0, note3.length, true),
-            generatePlayerNote(note4, 0, 0, note4.length, true),
+            generatePlayerNote(note1, 0, 0, note1.length, true, true),
+            generatePlayerNote(note2, 0, 0, note2.length, true, true),
+            generatePlayerNote(note3, 0, 0, note3.length, true, true),
+            generatePlayerNote(note4, 0, 0, note4.length, true, true),
         ];
 
         expect(calculateScore(playerNotes, song, 0)).toEqual(MAX_POINTS);
@@ -38,19 +38,19 @@ describe('calculateScore', () => {
 
     it('should properly calculate score for player with not every sung notes being perfect', () => {
         const playerNotes: PlayerNote[] = [
-            generatePlayerNote(note1, 0, 0, note1.length, true),
-            generatePlayerNote(note2, 0, 0, note2.length, true),
-            generatePlayerNote(note3, 0, 0, note3.length, false),
-            generatePlayerNote(note4, 0, 0, note4.length, false),
+            generatePlayerNote(note1, 0, 0, note1.length, true, true),
+            generatePlayerNote(note2, 0, 0, note2.length, true, true),
+            generatePlayerNote(note3, 0, 0, note3.length, false, false),
+            generatePlayerNote(note4, 0, 0, note4.length, false, false),
         ];
 
-        expect(calculateScore(playerNotes, song, 0)).toEqual(MAX_POINTS * 0.875);
+        expect(Math.floor(calculateScore(playerNotes, song, 0))).toEqual(Math.floor(MAX_POINTS * 0.833333333));
     });
 
     it('should properly calculate score for player with only half notes sung', () => {
         const playerNotes: PlayerNote[] = [
-            generatePlayerNote(note1, 0, 0, note1.length, true),
-            generatePlayerNote(note4, 0, 0, note4.length, true),
+            generatePlayerNote(note1, 0, 0, note1.length, true, true),
+            generatePlayerNote(note4, 0, 0, note4.length, true, true),
         ];
 
         expect(calculateScore(playerNotes, song, 0)).toEqual(MAX_POINTS * 0.5);
@@ -69,14 +69,14 @@ describe('calculateScore', () => {
 
     it('should properly calculate score for multiple tracks', () => {
         const player1Notes: PlayerNote[] = [
-            generatePlayerNote(note1, 0, 0, note1.length, true),
-            generatePlayerNote(note2, 0, 0, note2.length, true),
-            generatePlayerNote(note3, 0, 0, note3.length, true),
-            generatePlayerNote(note4, 0, 0, note4.length, true),
+            generatePlayerNote(note1, 0, 0, note1.length, true, true),
+            generatePlayerNote(note2, 0, 0, note2.length, true, true),
+            generatePlayerNote(note3, 0, 0, note3.length, true, true),
+            generatePlayerNote(note4, 0, 0, note4.length, true, true),
         ];
         const player2Notes: PlayerNote[] = [
-            generatePlayerNote(note1, 0, 0, note1.length, true),
-            generatePlayerNote(note4, 0, 0, note4.length, true),
+            generatePlayerNote(note1, 0, 0, note1.length, true, true),
+            generatePlayerNote(note4, 0, 0, note4.length, true, true),
         ];
 
         expect(calculateScore(player1Notes, song, 0)).toEqual(MAX_POINTS);
@@ -96,8 +96,8 @@ describe('calculateScore', () => {
 
         it('should count rap and freestyle notes even if not in pitch', () => {
             const playerNotes: PlayerNote[] = [
-                generatePlayerNote(note5, 5, 0, note5.length, true),
-                generatePlayerNote(note6, -5, 0, note6.length, true),
+                generatePlayerNote(note5, 5, 0, note5.length, true, true),
+                generatePlayerNote(note6, -5, 0, note6.length, true, true),
             ];
             expect(calculateScore(playerNotes, rapFreestyleSong, 0)).toEqual(MAX_POINTS);
         });

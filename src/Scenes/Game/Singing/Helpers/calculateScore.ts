@@ -4,7 +4,7 @@ import { DetailedScore, PlayerNote, Song } from '../../../../interfaces';
 import getPlayerNoteDistance from './getPlayerNoteDistance';
 import isNotesSection from './isNotesSection';
 
-export const MAX_POINTS = 3000000;
+export const MAX_POINTS = 4000000;
 
 const noteTypesMultipliers: DetailedScore = {
     freestyle: 0.25,
@@ -12,6 +12,7 @@ const noteTypesMultipliers: DetailedScore = {
     star: 2,
     normal: 1,
     perfect: 0.5,
+    vibrato: 0.25,
 };
 
 const countsToBeats = (counts: DetailedScore): DetailedScore => ({
@@ -20,10 +21,11 @@ const countsToBeats = (counts: DetailedScore): DetailedScore => ({
     star: counts.star * noteTypesMultipliers.star,
     normal: counts.normal * noteTypesMultipliers.normal,
     perfect: counts.perfect * noteTypesMultipliers.perfect,
+    vibrato: counts.vibrato * noteTypesMultipliers.vibrato,
 });
 
 export const sumDetailedScore = (counts: DetailedScore) =>
-    counts.freestyle + counts.rap + counts.star + counts.normal + counts.perfect;
+    counts.freestyle + counts.rap + counts.star + counts.normal + counts.perfect + counts.vibrato;
 
 const countSungBeats = memoize((song: Song): DetailedScore[] => {
     return song.tracks.map(({ sections }) => {
@@ -33,6 +35,7 @@ const countSungBeats = memoize((song: Song): DetailedScore[] => {
             star: 0,
             normal: 0,
             perfect: 0,
+            vibrato: 0,
         };
         sections.filter(isNotesSection).forEach((section) => {
             const notes = section.notes.filter((note) => !noPointsNoteTypes.includes(note.type));
@@ -40,6 +43,7 @@ const countSungBeats = memoize((song: Song): DetailedScore[] => {
             notes.forEach((note) => {
                 counts[note.type] = counts[note.type] + note.length;
                 counts.perfect = counts.perfect + note.length;
+                counts.vibrato = counts.vibrato + note.length;
             });
         });
 
@@ -60,6 +64,7 @@ export function calculateDetailedScoreData(
         star: 0,
         normal: 0,
         perfect: 0,
+        vibrato: 0,
     };
 
     if (!beatsPerTrack[trackNumber]) {
@@ -79,6 +84,7 @@ export function calculateDetailedScoreData(
         counts[note.note.type] = counts[note.note.type] + note.length;
 
         if (note.isPerfect) counts.perfect = counts.perfect + note.length;
+        if (note.vibrato) counts.vibrato = counts.vibrato + note.length;
     }
 
     return [pointsPerBeat, countsToBeats(counts), maxCounts];
