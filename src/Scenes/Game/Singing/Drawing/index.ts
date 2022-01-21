@@ -6,6 +6,7 @@ import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calcula
 import debugPitches from './debugPitches';
 import ParticleManager from './ParticleManager';
 import RayParticle from './Particles/Ray';
+import VibratoParticle from './Particles/Vibrato';
 import roundRect from './roundRect';
 import styles from './styles';
 
@@ -113,9 +114,7 @@ export default function drawFrame(
     currentPlayerNotes.forEach((playerNote) => {
         const distance = getPlayerNoteDistance(playerNote);
 
-        if (playerNote.vibrato) {
-            applyColor(ctx, styles.colors.players[playerNumber].vibrato);
-        } else if (playerNote.isPerfect && playerNote.note.type === 'star') {
+        if (playerNote.isPerfect && playerNote.note.type === 'star') {
             applyColor(ctx, styles.colors.players[playerNumber].goldPerfect);
         } else if (playerNote.isPerfect) {
             applyColor(ctx, styles.colors.players[playerNumber].perfect);
@@ -140,6 +139,10 @@ export default function drawFrame(
                 distance === 0,
             );
             roundRect(ctx!, x + displacementX, y + displacementY, w, h, 5, true, true);
+
+            if (playerNote.vibrato) {
+                ParticleManager.add(new VibratoParticle(x + displacementX, y + displacementY, w, h, currentTime));
+            }
         }
     });
 

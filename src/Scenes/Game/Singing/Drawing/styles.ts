@@ -30,21 +30,11 @@ const playerColors = [
             stroke: blueStroke(1),
             lineWidth: 1,
         },
-        vibrato: {
-            fill: 'white',
-            stroke: 'white',
-            lineWidth: 1,
-        },
     },
     {
         gold: {
             fill: 'rgba(255, 183, 0, .5)',
             stroke: 'rgba(255, 183, 0, 0)',
-            lineWidth: 1,
-        },
-        vibrato: {
-            fill: 'white',
-            stroke: 'white',
             lineWidth: 1,
         },
         perfect: {
