@@ -1,47 +1,22 @@
-import styled from 'styled-components';
 import { Link } from 'wouter';
-import { Button } from '../../Elements/Button';
+import { MenuButton, MenuContainer } from '../../Elements/Menu';
 
 function Welcome() {
     return (
         <MenuContainer>
             <Link href="/game">
-                <MenuButton>
-                    <h1>Sing a song</h1>
-                </MenuButton>
+                <MenuButton>Sing a song</MenuButton>
             </Link>
             <Link href="/jukebox">
-                <MenuButton>
-                    <h1>Jukebox</h1>
-                </MenuButton>
+                <MenuButton>Jukebox</MenuButton>
             </Link>
             <Link href="/edit">
-                <MenuButton>
-                    <h1>Edit songs</h1>
-                </MenuButton>
+                <MenuButton>Edit songs</MenuButton>
             </Link>
             <Link href="/convert">
-                <MenuButton>
-                    <h1>Convert UltraStar .txt</h1>
-                </MenuButton>
+                <MenuButton>Convert UltraStar .txt</MenuButton>
             </Link>
         </MenuContainer>
     );
 }
-
-const MenuButton = styled(Button)`
-    width: 650px;
-    margin: 30px 0;
-    height: 100px;
-    font-size: 20px;
-`;
-
-const MenuContainer = styled.div`
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);
-    padding: 20px;
-    width: 650px;
-    margin: 50px auto;
-`;
-
 export default Welcome;

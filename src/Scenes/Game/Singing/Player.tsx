@@ -2,6 +2,7 @@ import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useSt
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import { PlayerNote, Song } from '../../../interfaces';
+import PauseMenu from './Components/PauseMenu';
 import GameOverlay from './GameOverlay';
 
 interface Props {
@@ -82,6 +83,12 @@ function Player(
 
     return (
         <Container>
+            {currentStatus === YouTube.PlayerState.PAUSED && onSongEnd !== undefined && (
+                <PauseMenu
+                    onExit={() => onSongEnd([[], []])}
+                    onResume={() => player.current?.getInternalPlayer()?.playVideo()}
+                />
+            )}
             {currentStatus !== YouTube.PlayerState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
@@ -105,6 +112,7 @@ function Player(
                     playerVars: {
                         autoplay: autoplay ? 1 : 0,
                         showinfo: 0,
+                        disablekb: 1,
                         rel: 0,
                         fs: 0,
                         controls: showControls ? 1 : 0,

@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import styles from '../Scenes/Game/Singing/Drawing/styles';
 
-export const focusable = css<{ focused: boolean }>`
+export const focusable = css<{ focused?: boolean }>`
     @keyframes focus {
         100% {
             box-shadow: inset 0px 0px 2px 2px ${styles.colors.text.active};
@@ -14,7 +14,7 @@ export const focusable = css<{ focused: boolean }>`
         }
     }
     ${({ focused }) =>
-        focused &&
+        !!focused &&
         `
         opacity: 1;
         animation: focus 1000ms ease-in-out infinite both;

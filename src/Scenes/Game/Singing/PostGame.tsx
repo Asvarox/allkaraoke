@@ -9,6 +9,8 @@ import styles from './Drawing/styles';
 import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from './Helpers/calculateScore';
 import ScoreText from './ScoreText';
 
+const backgroundMusic = require('./421888__b-sean__retro.mp3');
+
 interface Props {
     width: number;
     height: number;
@@ -18,7 +20,7 @@ interface Props {
     onClickSongSelection: () => void;
 }
 
-const MAX_TICKS = 100;
+const MAX_TICKS = Math.floor(6100 / 16);
 
 const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 
@@ -67,6 +69,7 @@ function PostGame({ song, playerNotes, width, height, onClickSongSelection, trac
             <SongSelectionButton onClick={onClickSongSelection} focused>
                 Select song
             </SongSelectionButton>
+            <audio src={backgroundMusic} loop hidden autoPlay />
         </SongPage>
     );
 }
