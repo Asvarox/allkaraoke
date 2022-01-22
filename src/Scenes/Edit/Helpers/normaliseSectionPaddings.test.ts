@@ -7,7 +7,7 @@ describe('normaliseSectionPaddings', () => {
             [
                 [
                     { type: 'notes', start: 0, notes: [generateNote(0), generateNote(20, 15)] },
-                    { type: 'notes', start: 40, notes: [generateNote(40), generateNote(50)] },
+                    { type: 'notes', start: 40, notes: [generateNote(39), generateNote(50)] },
                 ],
             ],
             { bar: 10 },
@@ -17,7 +17,7 @@ describe('normaliseSectionPaddings', () => {
             [
                 [
                     { type: 'notes', start: 0, notes: [generateNote(0), generateNote(20, 15)] },
-                    { type: 'notes', start: 35, notes: [generateNote(40), generateNote(50)] },
+                    { type: 'notes', start: 35, notes: [generateNote(39), generateNote(50)] },
                 ],
             ],
             { bar: 10 },
@@ -41,7 +41,7 @@ describe('normaliseSectionPaddings', () => {
             [
                 [
                     { type: 'notes', start: 0, notes: [generateNote(0), generateNote(20, 10)] },
-                    { type: 'notes', start: 30, notes: [generateNote(40), generateNote(50)] },
+                    { type: 'notes', start: 31, notes: [generateNote(40), generateNote(50)] },
                 ],
             ],
             { bar: 10 },
@@ -79,7 +79,7 @@ describe('normaliseSectionPaddings', () => {
             [
                 [
                     { type: 'notes', start: 0, notes: [generateNote(0), generateNote(20, 10)] },
-                    { type: 'notes', start: 60, notes: [generateNote(60), generateNote(60)] },
+                    { type: 'notes', start: 61, notes: [generateNote(60), generateNote(60)] },
                 ],
             ],
             { bar: 10 },
@@ -116,7 +116,7 @@ describe('normaliseSectionPaddings', () => {
                 [
                     { type: 'pause', start: 0, end: 30 },
                     { type: 'notes', start: 30, notes: [generateNote(40), generateNote(50, 10)] },
-                    { type: 'notes', start: 60, notes: [generateNote(70), generateNote(80)] },
+                    { type: 'notes', start: 61, notes: [generateNote(70), generateNote(80)] },
                 ],
             ],
             { bar: 10 },

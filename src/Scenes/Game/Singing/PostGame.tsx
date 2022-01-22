@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { SyntheticEvent, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
 import { focusable } from '../../../Elements/cssMixins';
@@ -69,7 +69,15 @@ function PostGame({ song, playerNotes, width, height, onClickSongSelection, trac
             <SongSelectionButton onClick={onClickSongSelection} focused>
                 Select song
             </SongSelectionButton>
-            <audio src={backgroundMusic} loop hidden autoPlay />
+            <audio
+                src={backgroundMusic}
+                loop
+                hidden
+                autoPlay
+                onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
+                    e.currentTarget.volume = 0.4;
+                }}
+            />
         </SongPage>
     );
 }
