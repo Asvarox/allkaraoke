@@ -112,7 +112,7 @@ function Player(
                     playerVars: {
                         autoplay: autoplay ? 1 : 0,
                         showinfo: 0,
-                        disablekb: 1,
+                        disablekb: 0,
                         rel: 0,
                         fs: 0,
                         controls: showControls ? 1 : 0,

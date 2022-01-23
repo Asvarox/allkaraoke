@@ -95,20 +95,17 @@ const usePlayer = (params: UsePlayerArgs) => {
 
             // Bug: if the section is pause, then last notes hit from previous section wouldn't be accounted for
             // This doesn't happen in the game because section ends are padded for up to 1s before the pause section starts
-            if (isNotesSection(currentSection)) {
-                const prevSection = sections[currentSectionIndex - 1];
-                const notes = isNotesSection(prevSection)
-                    ? [...currentSection.notes, ...prevSection.notes]
-                    : currentSection.notes;
-                playerNotes.current = frequenciesToLines(
-                    historicFrequencies.current,
-                    params.songBeatLength,
-                    params.song.gap,
-                    notes,
-                );
-            }
-        }
 
+            let notes = isNotesSection(currentSection) ? currentSection.notes : [];
+            const prevSection = sections[currentSectionIndex - 1];
+            if (isNotesSection(prevSection)) notes = [...notes, ...prevSection.notes];
+            playerNotes.current = frequenciesToLines(
+                historicFrequencies.current,
+                params.songBeatLength,
+                params.song.gap,
+                notes,
+            );
+        }
         drawFrame(
             params.playerNumber,
             params.song,

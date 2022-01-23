@@ -70,7 +70,8 @@ function Jukebox(props: Props) {
         }
 
         player.current.getInternalPlayer().setSize(width, height);
-    }, [player, width, height, currentlyPlaying]);
+        player.current.getInternalPlayer().setVolume(Math.round((shuffledList[currentlyPlaying].volume ?? 0.5) * 100));
+    }, [player, width, height, shuffledList, currentlyPlaying]);
 
     if (!shuffledList.length || !width || !height) return null;
 
