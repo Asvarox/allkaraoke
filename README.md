@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+## Getting started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Requirements
 
-## Available Scripts
+1. Node (14+)
+2. Yarn
+3. A microphone (best with SingStar ones)
 
-In the project directory, you can run:
+### Install dependencies
 
-### `npm start`
+```
+yarn
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Run
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+yarn start
+```
 
-### `npm test`
+### Build for production
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+yarn build
+```
 
-### `npm run build`
+## Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Simulating microphone
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Instead of having to sing every time you'd like to test something, you can mock the input.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Edit `src/Scenes/Game/Singing/GameState/GameState.ts` and assign `DummyInput` into the `Input` variable
 
-### `npm run eject`
+```
+const Input = DummyInput;
+const Input1 = MicInput;
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Terminology:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   `frequency` - a frequency of player's voice in Hz
+-   `frequencyRecord` - object containing frequency and timestamp (of the song) when it was recorded
+-   `pitch` - an actual sound (eg A, C, F#) as a number where `0` = C0
+-   `section` - either a verse (containing notes) or a "pause section" - A.K.A instrumental part of the song when nothing's sung
+-   `note` - a single singable syllabe with assigned target `pitch`, starting beat, length and lyric. Is also one of several types (see below)
+-   `distance` - a number of pitches between player's note pitch and target note pitch, disregarding the octave (so for example player's note C0 has distance 0 to note's target pitch of C4). Note a tolerance can apply - eg with tolerance of 1, distance between pitches 66 and 65 will be 0 (while between 67 and 65 would be 2)
+-   `playerNote` - group of `frequencyRecords` recorded directly after eachother, matched (by time) to a note with the same distance to it. Basically represents the player sung lines shown in the game
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Note types
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   `normal` - regular note
+-   `star` - golden note, gives bonus points
+-   `rap` / `freestyle` - notes that are always hit if any singing is detected. Gives reduced points
 
-## Learn More
+### Run unit tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+yarn test
+```

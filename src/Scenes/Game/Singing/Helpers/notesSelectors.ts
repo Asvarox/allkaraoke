@@ -1,4 +1,4 @@
-import { Section } from '../../../../interfaces';
+import { NotesSection, Section } from '../../../../interfaces';
 import isNotesSection from './isNotesSection';
 
 export const getFirstNoteStartFromSections = (sections: Section[]) => {
@@ -12,4 +12,8 @@ export const getLastNoteEndFromSections = (sections: Section[]) => {
     const lastNote = lastSection.notes[lastSection.notes.length - 1];
 
     return lastNote.start + lastNote.length;
+};
+
+export const getNoteAtBeat = (section: NotesSection, beat: number, tolerance = 0) => {
+    return section.notes.find((note) => note.start - tolerance <= beat && note.start + note.length + tolerance >= beat);
 };

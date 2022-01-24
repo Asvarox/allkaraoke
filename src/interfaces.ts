@@ -18,7 +18,6 @@ export enum GAME_MODE {
 export interface SingSetup {
     playerTracks: [number, number];
     mode: GAME_MODE;
-    songPreview: SongPreview;
 }
 
 export interface NotesSection {

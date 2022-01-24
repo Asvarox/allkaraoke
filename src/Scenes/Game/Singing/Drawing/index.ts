@@ -1,5 +1,5 @@
-import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
-import getCurrentBeat from '../Helpers/getCurrentBeat';
+import { PlayerNote } from '../../../../interfaces';
+import GameState from '../GameState/GameState';
 import getPlayerNoteDistance from '../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../Helpers/isNotesSection';
 import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
@@ -16,45 +16,34 @@ function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string; stroke
     ctx.lineWidth = style.lineWidth;
 }
 
-export default function drawFrame(
-    playerNumber: number,
-    song: Song,
-    track: number,
-    songBeatLength: number,
-    minPitch: number,
-    maxPitch: number,
-    canvas: HTMLCanvasElement,
-    currentTime: number,
-    currentSectionIndex: number,
-    frequencies: FrequencyRecord[],
-    playersNotes: PlayerNote[],
-) {
-    if (currentSectionIndex < 0) {
-        console.error(`currentSection is negative`, playerNumber, track, currentTime);
-        return;
-    }
+export default function drawFrame(playerNumber: number, canvas: HTMLCanvasElement) {
+    const playerState = GameState.getPlayer(playerNumber);
     const regionPaddingTop = playerNumber * canvas.height * 0.5;
     const regionHeight = canvas.height * 0.5;
-
     const drawingData: DrawingData = {
-        song,
-        songBeatLength,
-        minPitch,
-        maxPitch,
+        song: GameState.getSong()!,
+        songBeatLength: GameState.getSongBeatLength(),
+        minPitch: playerState.getMinPitch(),
+        maxPitch: playerState.getMaxPitch(),
         canvas,
-        currentTime,
-        currentSectionIndex,
-        frequencies,
-        playersNotes,
+        currentTime: GameState.getCurrentTime(),
+        currentSectionIndex: playerState.getCurrentSectionIndex(),
+        frequencies: playerState.getPlayerFrequencies(),
+        playersNotes: playerState.getPlayerNotes(),
         playerNumber,
-        track,
+        track: playerState.getTrackIndex(),
         regionPaddingTop,
         regionHeight,
     };
 
+    if (drawingData.currentSectionIndex < 0) {
+        console.error(`currentSection is negative`, playerNumber, drawingData.track, drawingData.currentTime);
+        return;
+    }
+
     const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
 
-    const currentPlayerNotes = playersNotes.filter((note) => note.note.start >= currentSection.start);
+    const currentPlayerNotes = drawingData.playersNotes.filter((note) => note.note.start >= currentSection.start);
 
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
@@ -68,27 +57,27 @@ export default function drawFrame(
         return;
     }
 
-    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap, false);
+    const currentBeat = GameState.getCurrentBeat();
 
     const displacements: Record<number, [number, number]> = {};
 
     const getNoteCoords = (start: number, length: number, pitch: number, big: boolean) => ({
         x: paddingHorizontal + beatLength * (start - currentSection.start),
-        y: regionPaddingTop + 10 + pitchStepHeight * (maxPitch - pitch + pitchPadding) - (big ? 3 : 0),
+        y: regionPaddingTop + 10 + pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding) - (big ? 3 : 0),
         w: beatLength * length,
         h: NOTE_HEIGHT + (big ? 3 : 0),
     });
 
     currentSection.notes.forEach((note) => {
         if (note.type === 'star') {
-            applyColor(ctx, styles.colors.lines.gold);
+            applyColor(ctx, styles.colors.lines.star);
         } else if (note.type === 'freestyle' || note.type === 'rap') {
             applyColor(ctx, styles.colors.lines.freestyle);
         } else {
             applyColor(ctx, styles.colors.lines.normal);
         }
 
-        const sungNotesStreak = playersNotes
+        const sungNotesStreak = drawingData.playersNotes
             .filter((sungNote) => sungNote.note.start === note.start)
             .filter(
                 (sungNote) => sungNote.note.start + sungNote.note.length + 30 >= currentBeat && sungNote.distance === 0,
@@ -115,11 +104,11 @@ export default function drawFrame(
         const distance = getPlayerNoteDistance(playerNote);
 
         if (playerNote.isPerfect && playerNote.note.type === 'star') {
-            applyColor(ctx, styles.colors.players[playerNumber].goldPerfect);
+            applyColor(ctx, styles.colors.players[playerNumber].starPerfect);
         } else if (playerNote.isPerfect) {
             applyColor(ctx, styles.colors.players[playerNumber].perfect);
         } else if (playerNote.note.type === 'star' && distance === 0) {
-            applyColor(ctx, styles.colors.players[playerNumber].gold);
+            applyColor(ctx, styles.colors.players[playerNumber].star);
         } else if (distance === 0) {
             applyColor(ctx, styles.colors.players[playerNumber].hit);
         } else {
@@ -141,12 +130,14 @@ export default function drawFrame(
             roundRect(ctx!, x + displacementX, y + displacementY, w, h, 5, true, true);
 
             if (playerNote.vibrato) {
-                ParticleManager.add(new VibratoParticle(x + displacementX, y + displacementY, w, h, currentTime));
+                ParticleManager.add(
+                    new VibratoParticle(x + displacementX, y + displacementY, w, h, drawingData.currentTime),
+                );
             }
         }
     });
 
-    const lastNote = getPlayerNoteAtBeat(currentPlayerNotes, currentBeat - 185 / songBeatLength);
+    const lastNote = getPlayerNoteAtBeat(currentPlayerNotes, currentBeat - 185 / drawingData.songBeatLength);
 
     if (lastNote && lastNote.distance === 0) {
         const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
@@ -158,7 +149,9 @@ export default function drawFrame(
 
         const { x, y, w, h } = getNoteCoords(lastNote.start, lastNote.length, lastNote.note.pitch, true);
 
-        ParticleManager.add(new RayParticle(x + w + displacementX, y + h / 2 + displacementY, currentTime, 1));
+        ParticleManager.add(
+            new RayParticle(x + w + displacementX, y + h / 2 + displacementY, drawingData.currentTime, 1),
+        );
     }
 
     // ParticleManager.add(

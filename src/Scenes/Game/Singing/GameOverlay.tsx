@@ -1,18 +1,12 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { FrequencyRecord, PlayerNote, Song } from '../../../interfaces';
+import { PlayerNote, Song } from '../../../interfaces';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import drawFrame from './Drawing';
-import calculateScore from './Helpers/calculateScore';
-import frequenciesToLines from './Helpers/frequenciesToPlayerNotes';
-import getCurrentBeat from './Helpers/getCurrentBeat';
-import getSongBeatLength from './Helpers/getSongBeatLength';
-import isNotesSection from './Helpers/isNotesSection';
-import useCurrentSectionIndex from './Hooks/useCurrentSectionIndex';
+import GameState from './GameState/GameState';
 import DummyInput from './Input/DummyInput';
-import InputInterface from './Input/Interface';
 import MicInput from './Input/MicInput';
 import ScoreText from './ScoreText';
 
@@ -32,132 +26,17 @@ interface Props {
     playerChanges: number[][];
 }
 
-interface UsePlayerArgs {
-    song: Song;
-    songBeatLength: number;
-    track: number;
-    currentBeat: number;
-    currentTime: number;
-    canvas: HTMLCanvasElement | null;
-    playerNumber: number;
-    input: InputInterface;
-}
-
-const usePlayer = (params: UsePlayerArgs) => {
-    const sections = params.song.tracks[params.track].sections;
-    const wholeBeat = Math.floor(params.currentBeat);
-
-    const [minPitch, maxPitch] = useMemo(() => {
-        let min: number = Infinity;
-        let max: number = -Infinity;
-
-        sections.filter(isNotesSection).forEach((section) =>
-            section.notes.forEach((note) => {
-                min = Math.min(min, note.pitch);
-                max = Math.max(max, note.pitch);
-            }),
-        );
-
-        return [min, max];
-    }, [sections]);
-
-    const currentSectionIndex = useCurrentSectionIndex(sections, wholeBeat);
-
-    const currentSection = sections?.[currentSectionIndex];
-    const nextSection = sections?.[currentSectionIndex + 1];
-
-    const historicFrequencies = useRef<FrequencyRecord[]>([]);
-    const historicPlayerNotes = useRef<PlayerNote[]>([]);
-    const playerNotes = useRef<PlayerNote[]>([]);
-
-    useEffect(() => {
-        // console.log(song.tracks[0].sections[currentSectionIndex]);
-        // console.log(historicFrequencies.current.filter(({ frequency }) => frequency > 0));
-        // historicFrequencies.current = [];
-        if (currentSectionIndex > 1) {
-            historicPlayerNotes.current.push(
-                ...playerNotes.current.filter((note) => note.note.start < sections[currentSectionIndex - 1].start),
-            );
-            playerNotes.current = [];
-        }
-    }, [currentSectionIndex, params.song, params.songBeatLength, historicFrequencies, sections]);
-
-    useEffect(() => {
-        if (!params.canvas) return;
-
-        if (params.currentTime >= params.song.gap) {
-            const frequencies = params.input.getFrequencies();
-
-            historicFrequencies.current.push({
-                timestamp: params.currentTime - params.input.getInputLag(),
-                frequency: frequencies[params.playerNumber],
-            });
-
-            // Bug: if the section is pause, then last notes hit from previous section wouldn't be accounted for
-            // This doesn't happen in the game because section ends are padded for up to 1s before the pause section starts
-
-            let notes = isNotesSection(currentSection) ? currentSection.notes : [];
-            const prevSection = sections[currentSectionIndex - 1];
-            if (isNotesSection(prevSection)) notes = [...notes, ...prevSection.notes];
-            playerNotes.current = frequenciesToLines(
-                historicFrequencies.current,
-                params.songBeatLength,
-                params.song.gap,
-                notes,
-            );
-        }
-        drawFrame(
-            params.playerNumber,
-            params.song,
-            params.track,
-            params.songBeatLength,
-            minPitch,
-            maxPitch,
-            params.canvas,
-            params.currentTime,
-            currentSectionIndex,
-            historicFrequencies.current,
-            playerNotes.current,
-        );
-    }, [
-        params.input,
-        params.playerNumber,
-        params.canvas,
-        currentSectionIndex,
-        params.currentTime,
-        minPitch,
-        maxPitch,
-        params.songBeatLength,
-        params.song,
-        currentSection,
-        sections,
-        params.track,
-    ]);
-
-    return {
-        currentSection,
-        nextSection,
-        playerNotes: playerNotes.current,
-        historicPlayerNotes: historicPlayerNotes.current,
-    };
-};
-
 function GameOverlay({
-    song,
     currentTime,
     currentStatus,
     width,
     height,
     tracksForPlayers,
     onSongEnd,
-    duration,
     playerChanges,
     effectsEnabled,
 }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
-
-    const songBeatLength = getSongBeatLength(song);
-    const currentBeat = getCurrentBeat(currentTime, songBeatLength, song.gap, false);
 
     useEffect(() => {
         Input.startMonitoring();
@@ -172,95 +51,31 @@ function GameOverlay({
         if (!ctx || !canvas.current) return;
 
         ctx.clearRect(0, 0, canvas.current.width, canvas.current.height);
+        drawFrame(0, canvas.current);
+        drawFrame(1, canvas.current);
     }, [currentTime]);
-
-    const player1 = usePlayer({
-        canvas: canvas.current,
-        song,
-        songBeatLength,
-        currentBeat,
-        currentTime,
-        playerNumber: 0,
-        track: tracksForPlayers[0],
-        input: Input,
-    });
-
-    // const player2 = player1;
-    const player2 = usePlayer({
-        canvas: canvas.current,
-        song,
-        songBeatLength,
-        currentBeat,
-        currentTime,
-        playerNumber: 1,
-        track: tracksForPlayers[1],
-        input: Input,
-    });
 
     useEffect(() => {
         if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) {
-            onSongEnd([
-                [...player1.historicPlayerNotes, ...player1.playerNotes],
-                [...player2.historicPlayerNotes, ...player2.playerNotes],
-            ]);
+            onSongEnd([GameState.getPlayer(0).getPlayerNotes(), GameState.getPlayer(1).getPlayerNotes()]);
         }
-    }, [
-        currentStatus,
-        player1.historicPlayerNotes,
-        player2.historicPlayerNotes,
-        player1.playerNotes,
-        player2.playerNotes,
-        onSongEnd,
-    ]);
+    }, [currentStatus, onSongEnd]);
 
     const overlayHeight = height - 2 * 100 - 40;
     return (
         <Screen>
-            <DurationBar
-                currentTime={currentTime}
-                song={song}
-                duration={duration}
-                beatLength={songBeatLength}
-                usedTracks={tracksForPlayers}
-            />
+            <DurationBar usedTracks={tracksForPlayers} />
             <Scores height={overlayHeight}>
                 <span>
-                    <ScoreText
-                        score={calculateScore(
-                            [...player1.historicPlayerNotes, ...player1.playerNotes],
-                            song,
-                            tracksForPlayers[0],
-                        )}
-                    />
+                    <ScoreText score={GameState.getPlayer(0).getScore()} />
                 </span>
                 <span>
-                    <ScoreText
-                        score={calculateScore(
-                            [...player2.historicPlayerNotes, ...player2.playerNotes],
-                            song,
-                            tracksForPlayers[1],
-                        )}
-                    />
+                    <ScoreText score={GameState.getPlayer(1).getScore()} />
                 </span>
             </Scores>
-            <Lyrics
-                currentBeat={currentBeat}
-                beatLength={songBeatLength}
-                section={player1.currentSection}
-                nextSection={player1.nextSection}
-                playerChanges={playerChanges[tracksForPlayers[0]]}
-                effectsEnabled={effectsEnabled}
-            />
+            <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
             <canvas ref={canvas} width={width} height={overlayHeight} />
-            <Lyrics
-                currentBeat={currentBeat}
-                beatLength={songBeatLength}
-                section={player2.currentSection}
-                nextSection={player2.nextSection}
-                playerChanges={playerChanges[tracksForPlayers[1]]}
-                bottom
-                effectsEnabled={effectsEnabled}
-            />
+            <Lyrics player={1} playerChanges={playerChanges} bottom effectsEnabled={effectsEnabled} />
         </Screen>
     );
 }

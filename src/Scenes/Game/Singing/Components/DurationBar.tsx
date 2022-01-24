@@ -1,19 +1,20 @@
 import { uniq } from 'lodash';
 import { useMemo } from 'react';
 import styled from 'styled-components';
-import { Song } from '../../../../interfaces';
 import styles from '../Drawing/styles';
+import GameState from '../GameState/GameState';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '../Helpers/notesSelectors';
 
 interface Props {
-    song: Song;
-    currentTime: number;
-    duration: number;
-    beatLength: number;
     usedTracks: number[];
 }
 
-function DurationBar({ song, currentTime, duration, beatLength, usedTracks }: Props) {
+function DurationBar({ usedTracks }: Props) {
+    const currentTime = GameState.getCurrentTime();
+    const duration = GameState.getDuration();
+    const beatLength = GameState.getSongBeatLength();
+    const song = GameState.getSong()!;
+
     const firstNotes = useMemo(
         () =>
             uniq(

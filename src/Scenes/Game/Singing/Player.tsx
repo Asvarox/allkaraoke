@@ -1,11 +1,13 @@
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { PlayerNote, Song } from '../../../interfaces';
+import { PlayerNote, SingSetup, Song } from '../../../interfaces';
 import PauseMenu from './Components/PauseMenu';
 import GameOverlay from './GameOverlay';
+import GameState from './GameState/GameState';
 
 interface Props {
+    singSetup: SingSetup;
     song: Song;
     width: number;
     height: number;
@@ -37,6 +39,7 @@ function Player(
         tracksForPlayers,
         playerChanges = [[], []],
         effectsEnabled = true,
+        singSetup,
     }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
@@ -46,21 +49,36 @@ function Player(
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
     useEffect(() => {
+        GameState.setSong(song);
+        GameState.setSingSetup(singSetup);
+    }, [song, singSetup]);
+
+    useEffect(() => {
         if (!player.current) {
             return;
         }
-        const interval = setInterval(async () => {
-            const time = (await player.current!.getInternalPlayer().getCurrentTime()) * 1000;
-            setCurrentTime(time);
-            onTimeUpdate?.(time);
-        }, 16.6);
+        if (currentStatus === YouTube.PlayerState.PLAYING) {
+            const interval = setInterval(async () => {
+                const time = (await player.current!.getInternalPlayer().getCurrentTime()) * 1000;
+                setCurrentTime(time);
+                onTimeUpdate?.(time);
+                GameState.setCurrentTime(time);
+                GameState.update();
+            }, 16.6);
 
-        return () => clearInterval(interval);
+            return () => clearInterval(interval);
+        }
     }, [player, onTimeUpdate, currentStatus]);
 
     useEffect(() => {
         if (player.current && currentStatus === YouTube.PlayerState.PLAYING && duration === 0) {
-            player.current.getInternalPlayer().getDuration().then(setDuration);
+            player.current
+                .getInternalPlayer()
+                .getDuration()
+                .then((dur: number) => {
+                    setDuration(dur);
+                    GameState.setDuration(dur);
+                });
             player.current.getInternalPlayer().setVolume(Math.round((song.volume ?? 0.5) * 100));
         }
     }, [duration, player, currentStatus, song.volume]);

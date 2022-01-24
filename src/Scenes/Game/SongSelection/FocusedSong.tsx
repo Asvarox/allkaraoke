@@ -12,7 +12,7 @@ import SongPage, { ContentElement } from '../SongPage';
 
 interface Props {
     songPreview: SongPreview;
-    onPlay: (setup: SingSetup) => void;
+    onPlay: (setup: SingSetup & { file: string }) => void;
     keyboardControl: boolean;
     onExitKeyboardControl: () => void;
 }
@@ -55,7 +55,7 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
             return newTracks;
         });
 
-    const startSong = () => onPlay({ songPreview, mode, playerTracks });
+    const startSong = () => onPlay({ file: songPreview.file, mode, playerTracks });
 
     const enabledElements = multipleTracks
         ? [Element.PLAY, Element.PLAYER_2_TRACK, Element.PLAYER_1_TRACK, Element.MODE]

@@ -1,30 +1,25 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
-import { Section } from '../../../../interfaces';
 import styles from '../Drawing/styles';
+import GameState from '../GameState/GameState';
 import isNotesSection from '../Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../Helpers/notesSelectors';
 
 interface Props {
-    section: Section;
-    nextSection?: Section;
+    player: number;
     bottom?: boolean;
-    playerChanges: number[];
-    currentBeat: number;
-    beatLength: number;
+    playerChanges: number[][];
     effectsEnabled: boolean;
 }
 
-function Lyrics({
-    section,
-    nextSection,
-    currentBeat,
-    playerChanges,
-    bottom = false,
-    beatLength,
-    effectsEnabled,
-}: Props) {
-    const nextChange = playerChanges.find((beat) => beat > section?.start ?? Infinity);
+function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props) {
+    const thisPlayerChanges = playerChanges[player] ?? [];
+    const section = GameState.getPlayer(player).getCurrentSection();
+    const nextSection = GameState.getPlayer(player).getNextSection();
+    const currentBeat = GameState.getCurrentBeat();
+    const beatLength = GameState.getSongBeatLength();
+
+    const nextChange = thisPlayerChanges.find((beat) => beat > section?.start ?? Infinity);
     const shouldBlink = !!nextChange && nextChange * beatLength - 2500 < currentBeat * beatLength;
 
     const hasNotes = isNotesSection(section);

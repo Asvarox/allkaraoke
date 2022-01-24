@@ -1,10 +1,10 @@
-import { calcDistance } from '../Helpers/calcDistance';
+import { calcDistance } from '../GameState/Helpers/calcDistance';
 import isNotesSection from '../Helpers/isNotesSection';
 import calculateData, { DrawingData, pitchPadding } from './calculateData';
 
 export default function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
     const { currentSection, paddingHorizontal, timeSectionGap, maxTime, pitchStepHeight } = calculateData(data);
-    const { frequencies, maxPitch, canvas, song, songBeatLength, playerNumber } = data;
+    const { frequencies, maxPitch, canvas, songBeatLength, playerNumber } = data;
 
     if (!isNotesSection(currentSection)) return;
 
@@ -15,7 +15,7 @@ export default function debugPitches(ctx: CanvasRenderingContext2D, data: Drawin
     frequencies.forEach((entry) => {
         const regionPaddingTop = playerNumber * canvas.height * 0.5;
 
-        const currentBeat = Math.max(0, Math.floor((entry.timestamp - song.gap) / songBeatLength));
+        const currentBeat = Math.max(0, Math.floor(entry.timestamp / songBeatLength));
         const noteAtTheTime =
             currentSection.notes.find((note) => note.start <= currentBeat && note.start + note.length > currentBeat) ??
             previousNote;

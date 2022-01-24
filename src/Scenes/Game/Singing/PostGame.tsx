@@ -6,7 +6,7 @@ import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { DetailedScore, PlayerNote, Song } from '../../../interfaces';
 import SongPage, { ContentElement } from '../SongPage';
 import styles from './Drawing/styles';
-import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from './Helpers/calculateScore';
+import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from './GameState/Helpers/calculateScore';
 import ScoreText from './ScoreText';
 
 const backgroundMusic = require('./421888__b-sean__retro.mp3');

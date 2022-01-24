@@ -1,8 +1,8 @@
 import { memoize } from 'lodash';
-import { noPointsNoteTypes } from '../../../../consts';
-import { DetailedScore, PlayerNote, Song } from '../../../../interfaces';
-import getPlayerNoteDistance from './getPlayerNoteDistance';
-import isNotesSection from './isNotesSection';
+import { noPointsNoteTypes } from '../../../../../consts';
+import { DetailedScore, PlayerNote, Song } from '../../../../../interfaces';
+import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
+import isNotesSection from '../../Helpers/isNotesSection';
 
 export const MAX_POINTS = 4000000;
 

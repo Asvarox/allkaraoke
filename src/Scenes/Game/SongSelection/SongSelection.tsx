@@ -8,7 +8,7 @@ import styles from '../Singing/Drawing/styles';
 import FocusedSong from './FocusedSong';
 
 interface Props {
-    onSongSelected: (songSetup: SingSetup) => void;
+    onSongSelected: (songSetup: SingSetup & { file: string }) => void;
     preselectedSong: string | null;
 }
 

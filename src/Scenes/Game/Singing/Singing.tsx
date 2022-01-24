@@ -11,13 +11,14 @@ import PostGame from './PostGame';
 import useWindowSize from './useWindowSize';
 
 interface Props {
+    songFile: string;
     singSetup: SingSetup;
     returnToSongSelection: () => void;
 }
 
-function Singing({ singSetup, returnToSongSelection }: Props) {
-    const song = useQuery<Song>(`song-${singSetup.songPreview.file}`, () =>
-        fetch(`./songs/${singSetup.songPreview.file}`).then((response) => response.json()),
+function Singing({ songFile, singSetup, returnToSongSelection }: Props) {
+    const song = useQuery<Song>(`song-${songFile}`, () =>
+        fetch(`./songs/${songFile}`).then((response) => response.json()),
     );
     const { width, height } = useWindowSize();
     const [isEnded, setIsEnded] = useState(false);
@@ -66,6 +67,7 @@ function Singing({ singSetup, returnToSongSelection }: Props) {
                     setIsEnded(true);
                     setPlayerNotes(playerNotes);
                 }}
+                singSetup={singSetup}
             />
         );
     }

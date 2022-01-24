@@ -8,7 +8,7 @@ interface Props {
 }
 
 function Game(props: Props) {
-    const [singSetup, setSingSetup] = useState<SingSetup | null>(null);
+    const [singSetup, setSingSetup] = useState<(SingSetup & { file: string }) | null>(null);
     const [preselectedSong, setPreselectedSong] = useState<string | null>(props.file ?? null);
 
     useEffect(() => {
@@ -19,9 +19,10 @@ function Game(props: Props) {
         <>
             {singSetup ? (
                 <Singing
+                    songFile={singSetup.file}
                     singSetup={singSetup}
                     returnToSongSelection={() => {
-                        setPreselectedSong(singSetup.songPreview.file);
+                        setPreselectedSong(singSetup.file);
                         setSingSetup(null);
                     }}
                 />

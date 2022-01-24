@@ -25,7 +25,7 @@ export default function calculateData({
     const sectionEndBeat = isNotesSection(currentSection)
         ? nextSection?.start ?? lastNote!.start + lastNote!.length
         : currentSection.end;
-    const timeSectionGap = currentSection.start * songBeatLength + song.gap;
+    const timeSectionGap = currentSection.start * songBeatLength;
     const maxTime = (sectionEndBeat - currentSection.start) * songBeatLength;
 
     const pitchStepHeight = (canvas.height * 0.5 - 20 - NOTE_HEIGHT) / (maxPitch - minPitch + pitchPadding * 2);

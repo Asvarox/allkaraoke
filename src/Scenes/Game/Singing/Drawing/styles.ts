@@ -5,7 +5,7 @@ export const redStroke = (a = 1) => `rgba(117, 25, 25, ${a})`;
 
 const playerColors = [
     {
-        gold: {
+        star: {
             fill: 'rgba(255, 183, 0, .5)',
             stroke: 'rgba(255, 183, 0, 0)',
             lineWidth: 1,
@@ -15,7 +15,7 @@ const playerColors = [
             stroke: 'white',
             lineWidth: 1,
         },
-        goldPerfect: {
+        starPerfect: {
             fill: 'rgba(255, 213, 0, 1)',
             stroke: 'rgba(255, 183, 0, 1)',
             lineWidth: 2,
@@ -32,7 +32,7 @@ const playerColors = [
         },
     },
     {
-        gold: {
+        star: {
             fill: 'rgba(255, 183, 0, .5)',
             stroke: 'rgba(255, 183, 0, 0)',
             lineWidth: 1,
@@ -42,7 +42,7 @@ const playerColors = [
             stroke: 'white',
             lineWidth: 1,
         },
-        goldPerfect: {
+        starPerfect: {
             fill: 'rgba(255, 213, 0, 1)',
             stroke: 'rgba(255, 183, 0, 1)',
             lineWidth: 2,
@@ -69,7 +69,7 @@ const styles = {
                 stroke: 'black',
                 lineWidth: 1,
             },
-            gold: {
+            star: {
                 fill: 'rgba(158, 144, 106, 1)',
                 stroke: 'rgba(255, 183, 0, 1)',
                 lineWidth: 1,

@@ -1,4 +1,4 @@
-import { FrequencyRecord } from '../../../../interfaces';
+import { FrequencyRecord } from '../../../../../interfaces';
 
 const WINDOW_SIZE = 6;
 

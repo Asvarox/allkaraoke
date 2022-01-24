@@ -31,8 +31,10 @@ class MicInput implements InputInterface {
             const inputData1 = e.inputBuffer.getChannelData(0);
             const inputData2 = e.inputBuffer.getChannelData(1);
 
-            this.frequencies[0] = await strategy.getFrequency(inputData1);
-            this.frequencies[1] = await strategy.getFrequency(inputData2);
+            this.frequencies = await Promise.all([
+                strategy.getFrequency(inputData1),
+                strategy.getFrequency(inputData2),
+            ]);
         };
     };
 
@@ -46,6 +48,7 @@ class MicInput implements InputInterface {
     };
 
     public getInputLag = () => 180;
+    public getChannelsCount = () => 2;
 }
 
 export default new MicInput();

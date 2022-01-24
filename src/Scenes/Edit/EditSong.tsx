@@ -1,8 +1,8 @@
 import { cloneDeep } from 'lodash';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Song } from '../../interfaces';
-import getSongBeatLength from '../Game/Singing/Helpers/getSongBeatLength';
+import { GAME_MODE, SingSetup, Song } from '../../interfaces';
+import getSongBeatLength from '../Game/Singing/GameState/Helpers/getSongBeatLength';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';
 import Player, { PlayerRef } from '../Game/Singing/Player';
@@ -84,7 +84,15 @@ export default function EditSong({ song, onUpdate }: Props) {
 
     useEffect(() => {
         onUpdate?.(newSong);
-    }, [gapShift, videoGapShift, overrideBpm, changeRecords]);
+    }, [onUpdate, newSong]);
+
+    const singSetup = useMemo<SingSetup>(
+        () => ({
+            mode: GAME_MODE.DUEL,
+            playerTracks: [0, song.tracks.length - 1],
+        }),
+        [song],
+    );
 
     let beatLength: number | undefined;
 
@@ -103,8 +111,9 @@ export default function EditSong({ song, onUpdate }: Props) {
                         height={playerHeight}
                         ref={player}
                         onTimeUpdate={setCurrentTime}
-                        tracksForPlayers={[0, song.tracks.length - 1]} // todo: make selectable in UI
+                        tracksForPlayers={[0, song.tracks.length - 1]}
                         effectsEnabled={effectsEnabled}
+                        singSetup={singSetup}
                     />
                 </PlayerContainer>
                 <Editor>
