@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/olkaraoke/static/css/main.2cee00c4.css",
-    "main.js": "/olkaraoke/static/js/main.56a251bf.js",
+    "main.js": "/olkaraoke/static/js/main.d648f130.js",
     "static/media/421888__b-sean__retro.mp3": "/olkaraoke/static/media/421888__b-sean__retro.364915c6a2289dfb564c.mp3",
     "index.html": "/olkaraoke/index.html",
     "main.2cee00c4.css.map": "/olkaraoke/static/css/main.2cee00c4.css.map",
-    "main.56a251bf.js.map": "/olkaraoke/static/js/main.56a251bf.js.map"
+    "main.d648f130.js.map": "/olkaraoke/static/js/main.d648f130.js.map"
   },
   "entrypoints": [
     "static/css/main.2cee00c4.css",
-    "static/js/main.56a251bf.js"
+    "static/js/main.d648f130.js"
   ]
 }
