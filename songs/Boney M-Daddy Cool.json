@@ -1,0 +1,1439 @@
+{
+  "title": "Daddy Cool",
+  "artist": "Boney M",
+  "bpm": 247.78,
+  "bar": 4,
+  "gap": 3357.5461106655976,
+  "video": "tHyHOUShOg8",
+  "year": "1976",
+  "language": "English",
+  "videoGap": -4,
+  "author": "TeLiXj",
+  "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+  "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Boney%20M&cancion=Daddy%20Cool",
+  "tracks": [
+    {
+      "sections": [
+        {
+          "start": 0,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 17,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "She's"
+            },
+            {
+              "type": "normal",
+              "start": 21,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 25,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 29,
+              "length": 7,
+              "pitch": 5,
+              "lyrics": " like"
+            },
+            {
+              "type": "normal",
+              "start": 37,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 41,
+              "length": 12,
+              "pitch": 3,
+              "lyrics": " fool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 64,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 81,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 83,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 85,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 93,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 97,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 101,
+          "notes": [
+            {
+              "type": "star",
+              "start": 105,
+              "length": 20,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 142,
+          "end": 638
+        },
+        {
+          "start": 638,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 655,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "She's"
+            },
+            {
+              "type": "normal",
+              "start": 659,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 663,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 667,
+              "length": 5,
+              "pitch": 5,
+              "lyrics": " li"
+            },
+            {
+              "type": "normal",
+              "start": 673,
+              "length": 2,
+              "pitch": 8,
+              "lyrics": "ke"
+            },
+            {
+              "type": "normal",
+              "start": 676,
+              "length": 1,
+              "pitch": 7,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 679,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " fool"
+            },
+            {
+              "type": "normal",
+              "start": 683,
+              "length": 12,
+              "pitch": 3,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 702,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 719,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 721,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 723,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 731,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 735,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 739,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 743,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 766,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 783,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "I'm"
+            },
+            {
+              "type": "normal",
+              "start": 787,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 791,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 795,
+              "length": 5,
+              "pitch": 17,
+              "lyrics": " li"
+            },
+            {
+              "type": "normal",
+              "start": 801,
+              "length": 2,
+              "pitch": 20,
+              "lyrics": " ke"
+            },
+            {
+              "type": "normal",
+              "start": 804,
+              "length": 1,
+              "pitch": 19,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 807,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " fool"
+            },
+            {
+              "type": "star",
+              "start": 811,
+              "length": 12,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 830,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 847,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 849,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 851,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 859,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 863,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 867,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 871,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 890,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 907,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 911,
+              "length": 4,
+              "pitch": 17,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 915,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 927,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 931,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 935,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " Cool"
+            },
+            {
+              "type": "normal",
+              "start": 939,
+              "length": 8,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 954,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 971,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 975,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 979,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 991,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 995,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 999,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": " Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1018,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1035,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1039,
+              "length": 4,
+              "pitch": 17,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1043,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1055,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1059,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 1063,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " Cool"
+            },
+            {
+              "type": "normal",
+              "start": 1067,
+              "length": 8,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1082,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1099,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1103,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1107,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1119,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1123,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 1127,
+              "length": 32,
+              "pitch": 17,
+              "lyrics": " Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 1176,
+          "end": 1406
+        },
+        {
+          "start": 1406,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1423,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "She's"
+            },
+            {
+              "type": "normal",
+              "start": 1427,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 1431,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 1435,
+              "length": 5,
+              "pitch": 5,
+              "lyrics": " li"
+            },
+            {
+              "type": "normal",
+              "start": 1441,
+              "length": 2,
+              "pitch": 8,
+              "lyrics": "ke"
+            },
+            {
+              "type": "normal",
+              "start": 1444,
+              "length": 1,
+              "pitch": 7,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 1447,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " fool"
+            },
+            {
+              "type": "normal",
+              "start": 1451,
+              "length": 12,
+              "pitch": 3,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1470,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1487,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 1489,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 1491,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 1499,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1503,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1507,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1511,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1534,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1551,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "I'm"
+            },
+            {
+              "type": "normal",
+              "start": 1555,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 1559,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 1563,
+              "length": 5,
+              "pitch": 17,
+              "lyrics": " li"
+            },
+            {
+              "type": "normal",
+              "start": 1569,
+              "length": 2,
+              "pitch": 20,
+              "lyrics": "ke"
+            },
+            {
+              "type": "normal",
+              "start": 1572,
+              "length": 1,
+              "pitch": 19,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 1575,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " fool"
+            },
+            {
+              "type": "normal",
+              "start": 1579,
+              "length": 12,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1598,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1615,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 1617,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 1619,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 1627,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1631,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1635,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1639,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1658,
+          "notes": [
+            {
+              "type": "star",
+              "start": 1675,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "star",
+              "start": 1679,
+              "length": 4,
+              "pitch": 17,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1683,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1695,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1699,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 1703,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " Cool"
+            },
+            {
+              "type": "normal",
+              "start": 1707,
+              "length": 8,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1722,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1739,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1743,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1747,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1759,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1763,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 1767,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": " Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1786,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1803,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1807,
+              "length": 4,
+              "pitch": 17,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1811,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1823,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1827,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 1831,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " Cool"
+            },
+            {
+              "type": "normal",
+              "start": 1835,
+              "length": 8,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1850,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1867,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1871,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1875,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1887,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 1891,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 1895,
+              "length": 32,
+              "pitch": 17,
+              "lyrics": " Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 1944,
+          "end": 2844
+        },
+        {
+          "start": 2844,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2861,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "She's"
+            },
+            {
+              "type": "normal",
+              "start": 2865,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 2869,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 2873,
+              "length": 5,
+              "pitch": 5,
+              "lyrics": " li"
+            },
+            {
+              "type": "normal",
+              "start": 2879,
+              "length": 2,
+              "pitch": 8,
+              "lyrics": "ke"
+            },
+            {
+              "type": "normal",
+              "start": 2882,
+              "length": 1,
+              "pitch": 7,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 2885,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": " fool"
+            },
+            {
+              "type": "star",
+              "start": 2889,
+              "length": 12,
+              "pitch": 3,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 2908,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2925,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 2927,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 2929,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 2937,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 2941,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 2945,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2949,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 2972,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2989,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "I'm"
+            },
+            {
+              "type": "normal",
+              "start": 2993,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " cra"
+            },
+            {
+              "type": "normal",
+              "start": 2997,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "zy"
+            },
+            {
+              "type": "normal",
+              "start": 3001,
+              "length": 5,
+              "pitch": 17,
+              "lyrics": " li"
+            },
+            {
+              "type": "normal",
+              "start": 3007,
+              "length": 2,
+              "pitch": 20,
+              "lyrics": "ke"
+            },
+            {
+              "type": "normal",
+              "start": 3010,
+              "length": 1,
+              "pitch": 19,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 3013,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " fool"
+            },
+            {
+              "type": "normal",
+              "start": 3017,
+              "length": 12,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3036,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3053,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": "What"
+            },
+            {
+              "type": "normal",
+              "start": 3055,
+              "length": 1,
+              "pitch": 12,
+              "lyrics": " a"
+            },
+            {
+              "type": "normal",
+              "start": 3057,
+              "length": 7,
+              "pitch": 12,
+              "lyrics": "bout"
+            },
+            {
+              "type": "normal",
+              "start": 3065,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": " Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3069,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3073,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3077,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": "Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3096,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3113,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3117,
+              "length": 4,
+              "pitch": 17,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3121,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3133,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3137,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 3141,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " Cool"
+            },
+            {
+              "type": "normal",
+              "start": 3145,
+              "length": 8,
+              "pitch": 15,
+              "lyrics": "~"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3160,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3177,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3181,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3185,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3197,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3201,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 3205,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": " Cool"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3224,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3241,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3245,
+              "length": 4,
+              "pitch": 17,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3249,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3261,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3265,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": "dy"
+            },
+            {
+              "type": "normal",
+              "start": 3269,
+              "length": 3,
+              "pitch": 17,
+              "lyrics": " Co"
+            },
+            {
+              "type": "normal",
+              "start": 3273,
+              "length": 8,
+              "pitch": 15,
+              "lyrics": "ol"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3288,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3305,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3309,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "dy,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 3313,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3325,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "Dad"
+            },
+            {
+              "type": "normal",
+              "start": 3329,
+              "length": 3,
+              "pitch": 12,
+              "lyrics": "dy"
+            },
+            {
+              "type": "star",
+              "start": 3333,
+              "length": 12,
+              "pitch": 17,
+              "lyrics": " Cool"
+            }
+          ],
+          "type": "notes"
+        }
+      ]
+    }
+  ]
+}
