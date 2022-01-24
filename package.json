@@ -17,6 +17,7 @@
         "browserify-fs": "^1.0.0",
         "buffer": "^6.0.3",
         "fft": "^0.2.1",
+        "gh-pages": "^3.2.3",
         "lodash": "^4.17.21",
         "ml5": "^0.7.1",
         "path-browserify": "^1.0.1",
@@ -38,7 +39,9 @@
         "build": "craco build",
         "test": "craco test",
         "eject": "react-scripts eject",
-        "generate-index": "yarn --silent ts-node src/generateIndex.ts > public/songs/index.json"
+        "generate-index": "yarn --silent ts-node src/generateIndex.ts > public/songs/index.json",
+        "predeploy": "generate-index && react-scripts build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
