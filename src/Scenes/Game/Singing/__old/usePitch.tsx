@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as tf from '@tensorflow/tfjs';
 import { useEffect, useRef } from 'react';
 

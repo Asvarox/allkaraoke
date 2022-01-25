@@ -1,10 +1,9 @@
 {
-    "name": "karaoke-test",
+    "name": "olkaraoke",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
         "@craco/craco": "^6.4.3",
-        "@tensorflow/tfjs": "^3.12.0",
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.5.0",
@@ -19,7 +18,6 @@
         "fft": "^0.2.1",
         "gh-pages": "^3.2.3",
         "lodash": "^4.17.21",
-        "ml5": "^0.7.1",
         "path-browserify": "^1.0.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -41,7 +39,8 @@
         "eject": "react-scripts eject",
         "generate-index": "yarn --silent ts-node src/generateIndex.ts > public/songs/index.json",
         "predeploy": "yarn generate-index && yarn build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d build",
+        "prepare": "husky install"
     },
     "eslintConfig": {
         "extends": [
@@ -66,8 +65,10 @@
         "eslint": "^8.5.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.0",
         "prettier": "^2.5.1",
         "prettier-plugin-organize-imports": "^2.3.4",
+        "pretty-quick": "^3.1.3",
         "ts-node": "^10.4.0"
     },
     "homepage": "https://asvarox.github.io/olkaraoke"

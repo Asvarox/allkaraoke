@@ -1,4 +1,4 @@
-import { ChangeEventHandler, useMemo, useState } from 'react';
+import { ChangeEventHandler, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { NotesSection, Song } from '../../interfaces';
 import EditSong from '../Edit/EditSong';
@@ -27,12 +27,12 @@ export default function Convert(props: Props) {
         }
     };
 
-    let error = '';
+    const error = useRef<string>('');
     const conversionResult: Song | undefined = useMemo(() => {
         try {
             return convertTxtToSong(txtInput, videoLink, author, authorUrl, sourceUrl);
         } catch (e: any) {
-            error = e.message;
+            error.current = e.message;
             console.error(e);
         }
         return undefined;
@@ -83,7 +83,10 @@ export default function Convert(props: Props) {
                     <TxtInput onChange={(e) => setTxtInput(fixDiacritics(e.target.value))} value={txtInput} />
                 </div>
                 <div style={{ flex: 1 }}>
-                    <JsonOutput disabled value={jsonPreview ? JSON.stringify(jsonPreview, undefined, 2) : error} />
+                    <JsonOutput
+                        disabled
+                        value={jsonPreview ? JSON.stringify(jsonPreview, undefined, 2) : error.current}
+                    />
                 </div>
             </Converter>
         </Container>

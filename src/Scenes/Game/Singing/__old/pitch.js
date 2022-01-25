@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as FFT from 'fft';
 
 const PitchAnalyzer = (function () {
