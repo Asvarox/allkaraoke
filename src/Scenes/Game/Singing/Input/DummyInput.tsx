@@ -5,7 +5,11 @@ class DummyInput implements InputInterface {
     private timestamp = 0;
     private interval: number | null = null;
 
+    private isMonitoring = false;
+
     public startMonitoring = async () => {
+        if (this.isMonitoring) return;
+        this.isMonitoring = true;
         this.interval = window.setInterval(() => {
             this.timestamp = this.timestamp + 32;
 
@@ -23,6 +27,8 @@ class DummyInput implements InputInterface {
     public getFrequencies = () => this.frequencies;
 
     public stopMonitoring = async () => {
+        if (!this.isMonitoring) return;
+        this.isMonitoring = false;
         if (this.interval) {
             window.clearInterval(this.interval);
         }

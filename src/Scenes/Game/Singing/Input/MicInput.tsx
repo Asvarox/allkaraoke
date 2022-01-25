@@ -8,7 +8,12 @@ class MicInput implements InputInterface {
 
     private frequencies: [number, number] = [0, 0];
 
+    private startedMonitoring = false;
+
     public startMonitoring = async () => {
+        if (this.startedMonitoring) return;
+        this.startedMonitoring = true;
+
         this.stream = await navigator.mediaDevices.getUserMedia({
             audio: {
                 echoCancellation: false,
@@ -41,6 +46,8 @@ class MicInput implements InputInterface {
     public getFrequencies = () => this.frequencies;
 
     public stopMonitoring = async () => {
+        if (!this.startedMonitoring) return;
+        this.startedMonitoring = false;
         this.stream?.getTracks().forEach(function (track) {
             track.stop();
         });

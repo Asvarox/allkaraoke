@@ -9,8 +9,8 @@ import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 
-const Input1 = DummyInput;
-const Input = MicInput;
+const Input = DummyInput;
+const Input1 = MicInput;
 
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];
@@ -104,6 +104,8 @@ class PlayerState {
 
     public getTrackIndex = () => this.gameState.getSingSetup()!.playerTracks[this.index];
     public getTrack = () => this.gameState.getSong()!.tracks[this.getTrackIndex()];
+
+    public getInput = () => this.input;
 }
 
 class GameState {
@@ -137,6 +139,14 @@ class GameState {
     public getDuration = () => this.duration;
 
     public getPlayer = (player: number) => this.playerStates[player];
+
+    public startInputMonitoring = async () => {
+        return Promise.all(this.playerStates.map((player) => player.getInput().startMonitoring()));
+    };
+
+    public stopInputMonitoring = () => {
+        return Promise.all(this.playerStates.map((player) => player.getInput().stopMonitoring()));
+    };
 
     public update = () => {
         this.playerStates.forEach((player) => player.update());

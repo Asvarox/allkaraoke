@@ -6,12 +6,7 @@ import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import drawFrame from './Drawing';
 import GameState from './GameState/GameState';
-import DummyInput from './Input/DummyInput';
-import MicInput from './Input/MicInput';
 import ScoreText from './ScoreText';
-
-const Input = DummyInput;
-const Input1 = MicInput;
 
 interface Props {
     song: Song;
@@ -39,10 +34,10 @@ function GameOverlay({
     const canvas = useRef<HTMLCanvasElement | null>(null);
 
     useEffect(() => {
-        Input.startMonitoring();
+        GameState.startInputMonitoring();
 
         return () => {
-            Input.stopMonitoring();
+            GameState.stopInputMonitoring();
         };
     }, []);
 
