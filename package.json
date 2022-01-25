@@ -40,7 +40,7 @@
         "test": "craco test",
         "eject": "react-scripts eject",
         "generate-index": "yarn --silent ts-node src/generateIndex.ts > public/songs/index.json",
-        "predeploy": "generate-index && react-scripts build",
+        "predeploy": "yarn generate-index && yarn build",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
@@ -69,5 +69,6 @@
         "prettier": "^2.5.1",
         "prettier-plugin-organize-imports": "^2.3.4",
         "ts-node": "^10.4.0"
-    }
+    },
+    "homepage": "https://asvarox.github.io/olkaraoke"
 }

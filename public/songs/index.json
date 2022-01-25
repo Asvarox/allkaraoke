@@ -204,6 +204,23 @@
     "tracksCount": 1
   },
   {
+    "title": "Highway To Hell",
+    "artist": "AC/DC",
+    "bpm": 232.14,
+    "bar": 4,
+    "gap": 17212.757301628328,
+    "video": "l482T0yNkeo",
+    "year": "1979",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Highway%20To%20Hell",
+    "file": "AC_DC-Highway To Hell.json",
+    "tracksCount": 1
+  },
+  {
     "title": "Rolling In The Deep",
     "artist": "Adele",
     "video": "rYEDA3JcQqw",
@@ -973,6 +990,23 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful",
     "file": "Christina Aguilera-Beautiful.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "You never can tell",
+    "artist": "Chuck Berry",
+    "bpm": 314.5,
+    "bar": 4,
+    "gap": -132.3370429252783,
+    "video": "WSLMN6g_Od4",
+    "year": "1964",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Chuck%20Berry&cancion=You%20never%20can%20tell",
+    "file": "Chuck Berry-You never can tell.json",
     "tracksCount": 1
   },
   {
@@ -3444,6 +3478,24 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Let%20It%20Be",
     "file": "The Beatles-Let It Be.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "While My Guitar Gently Weeps",
+    "artist": "The Beatles",
+    "bpm": 347.13,
+    "bar": 4,
+    "gap": 15656.136029729496,
+    "video": "YFDg-pgE0Hk",
+    "year": "1968",
+    "edition": "The Beatles Rock Band",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=While%20My%20Guitar%20Gently%20Weeps",
+    "file": "The Beatles-While My Guitar Gently Weeps.json",
     "tracksCount": 1
   },
   {
