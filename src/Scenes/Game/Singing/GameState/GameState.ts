@@ -9,7 +9,7 @@ import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 
-const Input = DummyInput;
+const Input = process.env.NODE_ENV === 'development' ? DummyInput : MicInput;
 const Input1 = MicInput;
 
 class PlayerState {
