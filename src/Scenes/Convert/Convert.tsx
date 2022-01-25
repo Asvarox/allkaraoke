@@ -1,4 +1,4 @@
-import { ChangeEventHandler, useState } from 'react';
+import { ChangeEventHandler, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import { NotesSection, Song } from '../../interfaces';
 import EditSong from '../Edit/EditSong';
@@ -27,14 +27,16 @@ export default function Convert(props: Props) {
         }
     };
 
-    let conversionResult: Song | undefined;
     let error = '';
-    try {
-        conversionResult = convertTxtToSong(txtInput, videoLink, author, authorUrl, sourceUrl);
-    } catch (e: any) {
-        error = e.message;
-        console.error(e);
-    }
+    const conversionResult: Song | undefined = useMemo(() => {
+        try {
+            return convertTxtToSong(txtInput, videoLink, author, authorUrl, sourceUrl);
+        } catch (e: any) {
+            error = e.message;
+            console.error(e);
+        }
+        return undefined;
+    }, [txtInput, videoLink, author, authorUrl, sourceUrl]);
 
     const searchForVideo = () => {
         window.open(
