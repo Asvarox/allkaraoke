@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
+import useWindowSize from '../../../Hooks/useWindowSize';
 import { GAME_MODE, PlayerNote, SingSetup, Song } from '../../../interfaces';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
 import normaliseGap from '../../Edit/Helpers/normaliseGap';
@@ -8,7 +9,6 @@ import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPadding
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player from './Player';
 import PostGame from './PostGame';
-import useWindowSize from './useWindowSize';
 
 interface Props {
     songFile: string;

@@ -90,6 +90,7 @@ export default function EditSong({ song, onUpdate }: Props) {
         () => ({
             mode: GAME_MODE.DUEL,
             playerTracks: [0, song.tracks.length - 1],
+            tolerance: 6,
         }),
         [song],
     );

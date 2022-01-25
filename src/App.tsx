@@ -25,6 +25,7 @@ function App() {
                             singSetup={{
                                 mode: GAME_MODE.DUEL,
                                 playerTracks: [0, 0],
+                                tolerance: 2,
                             }}
                             songFile="dummy.json"
                             returnToSongSelection={() => window.location.reload()}

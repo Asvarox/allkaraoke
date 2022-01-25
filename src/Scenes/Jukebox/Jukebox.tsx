@@ -7,8 +7,8 @@ import { Link, useLocation } from 'wouter';
 import { Button } from '../../Elements/Button';
 import { focusable } from '../../Elements/cssMixins';
 import useKeyboardNav from '../../Hooks/useKeyboardNav';
+import useWindowSize from '../../Hooks/useWindowSize';
 import { SongPreview } from '../../interfaces';
-import useWindowSize from '../Game/Singing/useWindowSize';
 import SongPage from '../Game/SongPage';
 
 interface Props {}

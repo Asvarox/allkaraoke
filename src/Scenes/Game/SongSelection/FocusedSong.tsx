@@ -30,7 +30,10 @@ enum Element {
     PLAYER_2_TRACK,
     PLAYER_1_TRACK,
     MODE,
+    DIFFICULTY,
 }
+
+const difficultyNames = ['Real', 'Hard', 'Medium', 'Easy'];
 
 export default function SongSelection({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
     const [showVideo, setShowVideo] = useState(false);
@@ -38,6 +41,7 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, songPreview.tracksCount - 1]);
     const player = useRef<YouTube | null>(null);
     const [focusedElement, setFocusedEelement] = useState<number>(0);
+    const [tolerance, setTolerance] = useState<number>(2);
 
     const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
     const [videoId, previewStart, previewEnd, volume] = useDebounce(
@@ -55,11 +59,11 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
             return newTracks;
         });
 
-    const startSong = () => onPlay({ file: songPreview.file, mode, playerTracks });
+    const startSong = () => onPlay({ file: songPreview.file, mode, playerTracks, tolerance });
 
     const enabledElements = multipleTracks
-        ? [Element.PLAY, Element.PLAYER_2_TRACK, Element.PLAYER_1_TRACK, Element.MODE]
-        : [Element.PLAY, Element.MODE];
+        ? [Element.PLAY, Element.PLAYER_2_TRACK, Element.PLAYER_1_TRACK, Element.MODE, Element.DIFFICULTY]
+        : [Element.PLAY, Element.MODE, Element.DIFFICULTY];
 
     const isFocused = (elem: Element) => keyboardControl && enabledElements[focusedElement] === elem;
 
@@ -77,11 +81,15 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
         });
     };
 
+    const changeTolerance = () =>
+        setTolerance((current) => (difficultyNames.length + current - 1) % difficultyNames.length);
+
     const handleEnter = () => {
         if (isFocused(Element.PLAY)) startSong();
         else if (isFocused(Element.PLAYER_1_TRACK)) togglePlayerTrack(0);
         else if (isFocused(Element.PLAYER_2_TRACK)) togglePlayerTrack(1);
         else if (isFocused(Element.MODE)) changeMode();
+        else if (isFocused(Element.DIFFICULTY)) changeTolerance();
     };
 
     useKeyboardNav(
@@ -142,6 +150,9 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
         <Sticky>
             <SongPage songData={songPreview} width={previewWidth} height={previewHeight} background={vid}>
                 <GameConfiguration>
+                    <ConfigurationPosition focused={isFocused(Element.DIFFICULTY)} onClick={changeMode}>
+                        Difficulty: <ConfigValue>{difficultyNames[tolerance]}</ConfigValue>
+                    </ConfigurationPosition>
                     <ConfigurationPosition focused={isFocused(Element.MODE)} onClick={changeMode}>
                         Mode: <ConfigValue>{gameModeNames[mode]}</ConfigValue>
                     </ConfigurationPosition>
