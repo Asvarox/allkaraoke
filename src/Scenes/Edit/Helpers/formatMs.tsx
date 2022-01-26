@@ -14,7 +14,7 @@ const formatMs = (msec: number) => {
 };
 
 export const msec = (ms: number | undefined, player: PlayerRef) => (
-    <button onClick={() => player.seekTo((ms ?? 0) / 1000 - 1)}>{formatMs(ms ?? 0)}</button>
+    <button onClick={() => player.seekTo((ms ?? 0) / 1000 - 0.7)}>{formatMs(ms ?? 0)}</button>
 );
 
 export default formatMs;

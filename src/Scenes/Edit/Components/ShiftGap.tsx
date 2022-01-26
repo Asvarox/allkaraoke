@@ -20,7 +20,7 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
                 <InputGroupInput
                     type="text"
                     value={current}
-                    onChange={(e) => onChange(+current)}
+                    onChange={(e) => onChange(+e.target.value)}
                     placeholder="Gap shift"
                 />
                 <InputGroupButton onClick={() => onChange(current + 50)}>+50</InputGroupButton>
