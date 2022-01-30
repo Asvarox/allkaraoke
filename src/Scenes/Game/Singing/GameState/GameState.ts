@@ -148,7 +148,7 @@ class GameState {
     };
     public getSingSetup = () => this.singSetup;
 
-    public setDuration = (currentTime: number) => (this.currentTime = currentTime);
+    public setDuration = (duration: number) => (this.duration = duration);
     public getDuration = () => this.duration;
 
     public getPlayer = (player: number) => this.playerStates[player];

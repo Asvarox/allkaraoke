@@ -10,7 +10,7 @@ interface Props {
 }
 
 function DurationBar({ usedTracks }: Props) {
-    const currentTime = GameState.getCurrentTime();
+    const currentTime = GameState.getCurrentTime(false);
     const duration = GameState.getDuration();
     const beatLength = GameState.getSongBeatLength();
     const song = GameState.getSong()!;
