@@ -100,7 +100,7 @@ function Player(
     }));
 
     return (
-        <Container>
+        <Container width={width} height={height} video={song.video}>
             {currentStatus === YouTube.PlayerState.PAUSED && onSongEnd !== undefined && (
                 <PauseMenu
                     onExit={() => onSongEnd([[], []])}
@@ -127,6 +127,8 @@ function Player(
                 ref={player}
                 videoId={song.video}
                 opts={{
+                    width: '0',
+                    height: '0',
                     playerVars: {
                         autoplay: autoplay ? 1 : 0,
                         showinfo: 0,
@@ -146,7 +148,15 @@ function Player(
     );
 }
 
-const Container = styled.div`
+const Container = styled.div.attrs<{ video: string; width: number; height: number }>((props) => ({
+    style: {
+        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
+        width: `${props.width}px`,
+        height: `${props.height}px`,
+    },
+}))<{ video: string; width: number; height: number }>`
+    background-size: cover;
+    background-position: center center;
     position: relative;
 `;
 

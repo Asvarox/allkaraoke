@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import TransitionWrapper from '../../Elements/TransitionWrapper';
 import { SingSetup } from '../../interfaces';
 import Singing from './Singing/Singing';
 import SongSelection from './SongSelection/SongSelection';
@@ -17,18 +18,21 @@ function Game(props: Props) {
 
     return (
         <>
-            {singSetup ? (
-                <Singing
-                    songFile={singSetup.file}
-                    singSetup={singSetup}
-                    returnToSongSelection={() => {
-                        setPreselectedSong(singSetup.file);
-                        setSingSetup(null);
-                    }}
-                />
-            ) : (
+            <TransitionWrapper show={!!singSetup}>
+                {singSetup && (
+                    <Singing
+                        songFile={singSetup.file}
+                        singSetup={singSetup}
+                        returnToSongSelection={() => {
+                            setPreselectedSong(singSetup.file);
+                            setSingSetup(null);
+                        }}
+                    />
+                )}
+            </TransitionWrapper>
+            <TransitionWrapper show={!singSetup}>
                 <SongSelection onSongSelected={setSingSetup} preselectedSong={preselectedSong} />
-            )}
+            </TransitionWrapper>
         </>
     );
 }
