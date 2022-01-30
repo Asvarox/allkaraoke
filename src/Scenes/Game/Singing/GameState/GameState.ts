@@ -4,6 +4,7 @@ import { getNoteAtBeat } from '../Helpers/notesSelectors';
 import DummyInput from '../Input/DummyInput';
 import InputInterface from '../Input/Interface';
 import MicInput from '../Input/MicInput';
+import GameStateEvents from './GameStateEvents';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
 import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
@@ -17,6 +18,8 @@ class PlayerState {
     private playerNotes: PlayerNote[] = [];
     private min = Infinity;
     private max = -Infinity;
+
+    private storedSectionIndex = 0;
 
     public constructor(
         private index: number,
@@ -47,6 +50,16 @@ class PlayerState {
         this.frequencyRecords.push(record);
 
         this.updatePlayerNotes(record);
+
+        this.dispatchSectionUpdate();
+    };
+
+    private dispatchSectionUpdate = () => {
+        const currentSectionIndex = this.getCurrentSectionIndex();
+        if (this.storedSectionIndex !== currentSectionIndex) {
+            GameStateEvents.sectionChange.dispatch(this.index, this.storedSectionIndex);
+            this.storedSectionIndex = currentSectionIndex;
+        }
     };
 
     public updatePlayerNotes = (record: FrequencyRecord) => {
@@ -139,6 +152,8 @@ class GameState {
     public getDuration = () => this.duration;
 
     public getPlayer = (player: number) => this.playerStates[player];
+
+    public getPlayerCount = () => this.playerStates.length;
 
     public startInputMonitoring = async () => {
         return Promise.all(this.playerStates.map((player) => player.getInput().startMonitoring()));
