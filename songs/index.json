@@ -2343,6 +2343,23 @@
     "tracksCount": 1
   },
   {
+    "title": "Beat It",
+    "artist": "Michael Jackson",
+    "bpm": 277.64,
+    "bar": 4,
+    "gap": 59440.490851462324,
+    "video": "oRdxUFDoQe0",
+    "year": "1982",
+    "genre": "Pop Internacional",
+    "language": "English",
+    "videoGap": -1,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Beat%20It",
+    "file": "Michael Jackson-Beat It.json",
+    "tracksCount": 1
+  },
+  {
     "title": "Billie Jean",
     "artist": "Michael Jackson",
     "bpm": 234.28,
@@ -2357,6 +2374,23 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean",
     "volume": 0.71,
     "file": "Michael Jackson-Billie Jean.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "bpm": 474.12,
+    "bar": 4,
+    "gap": 58010.59807643635,
+    "video": "WAVX-MlBfew",
+    "year": "1982",
+    "genre": "Funk",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller",
+    "file": "Michael Jackson-Thriller.json",
     "tracksCount": 1
   },
   {
@@ -2776,6 +2810,23 @@
     "tracksCount": 1
   },
   {
+    "title": "Another Brick In The Wall (Part II)",
+    "artist": "Pink Floyd",
+    "bpm": 206,
+    "bar": 4,
+    "gap": 8703.582524271846,
+    "video": "HrxX9TBj2zY",
+    "year": "1979",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "robertdjangelux",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=robertdjangelux",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pink%20Floyd&cancion=Another%20Brick%20In%20The%20Wall%20(Part%20II)",
+    "file": "Pink Floyd-Another Brick In The Wall (Part II).json",
+    "tracksCount": 1
+  },
+  {
     "title": "Opening (PL)",
     "artist": "Pokémon",
     "bpm": 145.05,
@@ -2863,6 +2914,24 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10385",
     "file": "Queen-Bohemian Rhapsody.json",
     "tracksCount": 2
+  },
+  {
+    "title": "Don't Stop Me Now",
+    "artist": "Queen",
+    "bpm": 308.8,
+    "bar": 4,
+    "gap": 162.92227979274617,
+    "video": "HgzGwKwLmgM",
+    "year": "1978",
+    "edition": "SingStar Rocks! English",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Don't%20Stop%20Me%20Now",
+    "file": "Queen-Don't Stop Me Now.json",
+    "tracksCount": 1
   },
   {
     "title": "I Want It All",
@@ -2972,6 +3041,24 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Will%20Rock%20You",
     "volume": 0.9,
     "file": "Queen-We Will Rock You.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Losing My Religion",
+    "artist": "R.E.M.",
+    "bpm": 378.4,
+    "bar": 4,
+    "gap": 31260.292953285825,
+    "video": "xwtdhWltSIg",
+    "year": "1991",
+    "edition": "Rock Band Store 2009 Vol. 1",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 18,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=R.E.M.&cancion=Losing%20My%20Religion",
+    "file": "R.E.M.-Losing My Religion.json",
     "tracksCount": 1
   },
   {
@@ -3804,6 +3891,22 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You",
     "volume": 1,
     "file": "The Rembrandts-I'll Be There for You.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Satisfaction (I Can't Get No)",
+    "artist": "The Rolling Stones",
+    "bpm": 283.4,
+    "bar": 4,
+    "gap": 13677.142857142857,
+    "video": "nrIPxlFzDi0",
+    "year": "1966",
+    "language": "English",
+    "videoGap": -3,
+    "author": "sanicsip",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rolling%20Stones&cancion=Satisfaction%20(I%20Can't%20Get%20No)",
+    "file": "The Rolling Stones-Satisfaction (I Can't Get No).json",
     "tracksCount": 1
   },
   {
