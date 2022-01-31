@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { PlayerNote, Song } from '../../../interfaces';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
-import drawFrame from './Drawing';
+import CanvasDrawing from './Drawing';
 import GameState from './GameState/GameState';
 import ScoreText from './ScoreText';
 
@@ -32,6 +32,7 @@ function GameOverlay({
     effectsEnabled,
 }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
+    const drawer = useRef<CanvasDrawing | null>(null);
 
     useEffect(() => {
         GameState.startInputMonitoring();
@@ -42,17 +43,22 @@ function GameOverlay({
     }, []);
 
     useEffect(() => {
-        const ctx = canvas.current?.getContext('2d');
-        if (!ctx || !canvas.current) return;
+        if (!canvas.current) return;
 
-        ctx.clearRect(0, 0, canvas.current.width, canvas.current.height);
-        drawFrame(0, canvas.current);
-        drawFrame(1, canvas.current);
+        drawer.current = new CanvasDrawing(canvas.current);
+        drawer.current.start();
+    }, [canvas]);
+
+    useEffect(() => {
+        if (!drawer.current) return;
+
+        drawer.current.drawFrame();
     }, [currentTime]);
 
     useEffect(() => {
         if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) {
             onSongEnd([GameState.getPlayer(0).getPlayerNotes(), GameState.getPlayer(1).getPlayerNotes()]);
+            drawer.current?.end();
         }
     }, [currentStatus, onSongEnd]);
 
