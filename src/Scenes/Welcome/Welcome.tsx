@@ -5,7 +5,7 @@ function Welcome() {
     return (
         <MenuContainer>
             <Link href="/game">
-                <MenuButton>Sing a song</MenuButton>
+                <MenuButton data-test="sing-a-song">Sing a song</MenuButton>
             </Link>
             <Link href="/jukebox">
                 <MenuButton>Jukebox</MenuButton>

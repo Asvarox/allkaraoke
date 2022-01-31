@@ -42,7 +42,9 @@
         "generate-index": "yarn --silent ts-node src/generateIndex.ts > public/songs/index.json",
         "predeploy": "yarn generate-index && yarn build",
         "deploy": "gh-pages -d build",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "test:e2e": "cypress run",
+        "test:e2e:open": "cypress open"
     },
     "eslintConfig": {
         "extends": [
@@ -65,6 +67,7 @@
     "devDependencies": {
         "@types/lodash": "^4.14.178",
         "@types/react-transition-group": "^4.4.4",
+        "cypress": "^9.3.1",
         "eslint": "^8.5.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",

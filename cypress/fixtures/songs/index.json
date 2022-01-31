@@ -1,0 +1,34 @@
+[
+    {
+        "title": "E2E",
+        "artist": "Test",
+        "bpm": 288.04,
+        "bar": 4,
+        "gap": 5662.554089709763,
+        "video": "kPBzTxZQG5Q",
+        "year": "2002",
+        "language": "English",
+        "videoGap": 0,
+        "author": "Pantero",
+        "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+        "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you",
+        "file": "e2e-test.json",
+        "tracksCount": 1
+    },
+    {
+        "title": "E2ETest",
+        "artist": "Multitrack",
+        "bpm": 288.04,
+        "bar": 4,
+        "gap": 5662.554089709763,
+        "video": "kPBzTxZQG5Q",
+        "year": "2002",
+        "language": "English",
+        "videoGap": 0,
+        "author": "Pantero",
+        "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+        "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you",
+        "file": "e2e-test-multitrack.json",
+        "tracksCount": 2
+    }
+]

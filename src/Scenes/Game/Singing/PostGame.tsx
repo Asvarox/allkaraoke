@@ -66,7 +66,7 @@ function PostGame({ song, playerNotes, width, height, onClickSongSelection, trac
                 <br />
                 <ScoreTextPlayer>Player #2</ScoreTextPlayer>
             </ScoresContainer>
-            <SongSelectionButton onClick={onClickSongSelection} focused>
+            <SongSelectionButton onClick={onClickSongSelection} focused data-test="play-next-song-button">
                 Select song
             </SongSelectionButton>
             <audio

@@ -15,7 +15,14 @@ function App() {
     return (
         <>
             <Background />
-            <FullscreenButton onClick={() => document.body.requestFullscreen()}>Fullscreen</FullscreenButton>
+            <FullscreenButton
+                onClick={() => {
+                    try {
+                        document.body.requestFullscreen().catch(console.info);
+                    } catch (e) {}
+                }}>
+                Fullscreen
+            </FullscreenButton>
             <Router hook={useHashLocation}>
                 <Route path="/game">{() => <Game />}</Route>
                 <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>

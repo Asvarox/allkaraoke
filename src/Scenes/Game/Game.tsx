@@ -13,7 +13,9 @@ function Game(props: Props) {
     const [preselectedSong, setPreselectedSong] = useState<string | null>(props.file ?? null);
 
     useEffect(() => {
-        document.body.requestFullscreen();
+        try {
+            document.body.requestFullscreen().catch(console.info);
+        } catch (e) {}
     }, []);
 
     return (

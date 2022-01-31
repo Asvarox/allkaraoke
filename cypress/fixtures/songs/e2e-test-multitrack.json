@@ -1,0 +1,155 @@
+{
+    "artist": "E2E Test",
+    "title": "MultiTrack",
+    "video": "gVaV6TlHQ_M",
+    "gap": 1000,
+    "bpm": 200,
+    "bar": 4,
+    "tracks": [
+        {
+            "sections": [
+                {
+                    "type": "notes",
+                    "start": 0,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 15,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Second "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 30,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Third "
+                        }
+                    ]
+                },
+                {
+                    "type": "notes",
+                    "start": 50,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 60,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Fourth "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 90,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Seventh "
+                        }
+                    ]
+                },
+                {
+                    "start": 110,
+                    "end": 130,
+                    "type": "pause"
+                },
+                {
+                    "type": "notes",
+                    "start": 140,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 150,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Eight "
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sections": [
+                {
+                    "type": "notes",
+                    "start": 0,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 0,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "First "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 15,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Second "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 30,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Third "
+                        }
+                    ]
+                },
+                {
+                    "type": "notes",
+                    "start": 50,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 60,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Fourth "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 75,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Fifth "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 90,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Seventh "
+                        }
+                    ]
+                },
+                {
+                    "start": 110,
+                    "end": 130,
+                    "type": "pause"
+                },
+                {
+                    "type": "notes",
+                    "start": 140,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 150,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Eight "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 165,
+                            "length": 10,
+                            "pitch": 0,
+                            "lyrics": "Nine "
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

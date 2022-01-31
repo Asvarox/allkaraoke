@@ -74,7 +74,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                         key={song.file}
                         onClick={() => setFocusedSong(index)}
                         video={song.video}
-                        focused={keyboardControl && index === focusedSong}>
+                        focused={keyboardControl && index === focusedSong}
+                        data-test={`song-${song.file}`}>
                         <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
                         <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>

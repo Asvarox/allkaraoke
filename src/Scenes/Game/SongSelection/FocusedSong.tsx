@@ -1,14 +1,10 @@
-import { isNumber } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { Button } from '../../../Elements/Button';
-import { focusable } from '../../../Elements/cssMixins';
 import useDebounce from '../../../Hooks/useDebounce';
-import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import { GAME_MODE, SingSetup, SongPreview } from '../../../interfaces';
-import styles from '../Singing/Drawing/styles';
-import SongPage, { ContentElement } from '../SongPage';
+import { SingSetup, SongPreview } from '../../../interfaces';
+import SongPage from '../SongPage';
+import SongSettings from './SongSettings';
 
 interface Props {
     songPreview: SongPreview;
@@ -17,90 +13,17 @@ interface Props {
     onExitKeyboardControl: () => void;
 }
 
-const gameModeNames = {
-    [GAME_MODE.DUEL]: 'Duel',
-    [GAME_MODE.PASS_THE_MIC]: 'Pass The Mic',
-};
-
 const previewWidth = 1100;
 const previewHeight = 400;
 
-enum Element {
-    PLAY,
-    PLAYER_2_TRACK,
-    PLAYER_1_TRACK,
-    MODE,
-    DIFFICULTY,
-}
-
-const difficultyNames = ['Real', 'Hard', 'Medium', 'Easy'];
-
 export default function SongSelection({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
     const [showVideo, setShowVideo] = useState(false);
-    const [mode, setMode] = useState(GAME_MODE.DUEL);
-    const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, songPreview.tracksCount - 1]);
     const player = useRef<YouTube | null>(null);
-    const [focusedElement, setFocusedEelement] = useState<number>(0);
-    const [tolerance, setTolerance] = useState<number>(2);
 
     const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
     const [videoId, previewStart, previewEnd, volume] = useDebounce(
         [songPreview.video, start, songPreview.previewEnd ?? start + 30, songPreview.volume ?? 0.5],
         350,
-    );
-
-    const multipleTracks = songPreview.tracksCount > 1;
-
-    const togglePlayerTrack = (player: number) =>
-        setPlayerTracks((tracks) => {
-            const newTracks: [number, number] = [...tracks];
-            newTracks[player] = (tracks[player] + 1) % songPreview.tracksCount;
-
-            return newTracks;
-        });
-
-    const startSong = () => onPlay({ file: songPreview.file, mode, playerTracks, tolerance, video: songPreview.video });
-
-    const enabledElements = multipleTracks
-        ? [Element.PLAY, Element.PLAYER_2_TRACK, Element.PLAYER_1_TRACK, Element.MODE, Element.DIFFICULTY]
-        : [Element.PLAY, Element.MODE, Element.DIFFICULTY];
-
-    const isFocused = (elem: Element) => keyboardControl && enabledElements[focusedElement] === elem;
-
-    const handleNavigation = (i: number, elements: Element[]) => {
-        setFocusedEelement((elements.length + i + focusedElement) % elements.length);
-    };
-
-    const changeMode = () => {
-        setMode((currentMode) => {
-            const modes = Object.values(GAME_MODE).filter((val) => isNumber(val));
-            const currentModeIndex = modes.indexOf(currentMode);
-            console.log(modes, currentModeIndex);
-
-            return (currentModeIndex + 1) % modes.length;
-        });
-    };
-
-    const changeTolerance = () =>
-        setTolerance((current) => (difficultyNames.length + current - 1) % difficultyNames.length);
-
-    const handleEnter = () => {
-        if (isFocused(Element.PLAY)) startSong();
-        else if (isFocused(Element.PLAYER_1_TRACK)) togglePlayerTrack(0);
-        else if (isFocused(Element.PLAYER_2_TRACK)) togglePlayerTrack(1);
-        else if (isFocused(Element.MODE)) changeMode();
-        else if (isFocused(Element.DIFFICULTY)) changeTolerance();
-    };
-
-    useKeyboardNav(
-        {
-            onUpArrow: () => handleNavigation(1, enabledElements),
-            onDownArrow: () => handleNavigation(-1, enabledElements),
-            onEnter: () => handleEnter(),
-            onBackspace: onExitKeyboardControl,
-        },
-        keyboardControl,
-        [enabledElements, songPreview, mode, playerTracks],
     );
 
     useEffect(() => {
@@ -111,10 +34,6 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
             endSeconds: previewEnd,
         });
     }, [videoId, player, previewStart, previewEnd, volume]);
-
-    useEffect(() => {
-        setPlayerTracks([0, songPreview.tracksCount - 1]);
-    }, [songPreview]);
 
     const vid = (
         <Video show={showVideo}>
@@ -149,31 +68,13 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
     return (
         <Sticky>
             <SongPage songData={songPreview} width={previewWidth} height={previewHeight} background={vid}>
-                <GameConfiguration>
-                    <ConfigurationPosition focused={isFocused(Element.DIFFICULTY)} onClick={changeMode}>
-                        Difficulty: <ConfigValue>{difficultyNames[tolerance]}</ConfigValue>
-                    </ConfigurationPosition>
-                    <ConfigurationPosition focused={isFocused(Element.MODE)} onClick={changeMode}>
-                        Mode: <ConfigValue>{gameModeNames[mode]}</ConfigValue>
-                    </ConfigurationPosition>
-                    {songPreview.tracksCount > 1 && (
-                        <>
-                            <ConfigurationPosition
-                                onClick={() => togglePlayerTrack(0)}
-                                focused={isFocused(Element.PLAYER_1_TRACK)}>
-                                Player 1: <ConfigValue>Track {playerTracks[0] + 1}</ConfigValue>
-                            </ConfigurationPosition>
-                            <ConfigurationPosition
-                                onClick={() => togglePlayerTrack(1)}
-                                focused={isFocused(Element.PLAYER_2_TRACK)}>
-                                Player 2: <ConfigValue>Track {playerTracks[1] + 1}</ConfigValue>
-                            </ConfigurationPosition>
-                        </>
-                    )}
-                    <PlayButton onClick={startSong} focused={isFocused(Element.PLAY)}>
-                        Play <span style={{ fontSize: '40px' }}>»</span>
-                    </PlayButton>
-                </GameConfiguration>
+                <SongSettings
+                    key={songPreview.file}
+                    songPreview={songPreview}
+                    onPlay={onPlay}
+                    onExitKeyboardControl={onExitKeyboardControl}
+                    keyboardControl={keyboardControl}
+                />
             </SongPage>
         </Sticky>
     );
@@ -181,33 +82,8 @@ export default function SongSelection({ songPreview, onPlay, keyboardControl, on
 
 const Sticky = styled.div``;
 
-const GameConfiguration = styled.div`
-    width: auto;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-`;
-
-const ConfigurationPosition = styled(ContentElement)<{ focused: boolean }>`
-    cursor: pointer;
-
-    ${focusable}
-`;
-
-const ConfigValue = styled.span`
-    color: ${styles.colors.text.active};
-`;
-
 const Video = styled.div<{ show: boolean }>`
     opacity: ${({ show }) => (show ? 1 : 0)};
     transition: 500ms;
     margin-top: ${-(((previewWidth / 16) * 9 - previewHeight) / 2)}px;
-`;
-
-const PlayButton = styled(Button)<{ focused: boolean }>`
-    ${focusable}
 `;
