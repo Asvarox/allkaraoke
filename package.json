@@ -43,7 +43,7 @@
         "predeploy": "yarn generate-index && yarn build",
         "deploy": "gh-pages -d build",
         "prepare": "husky install",
-        "test:e2e": "cypress run",
+        "test:e2e": "cypress run --browser chrome",
         "test:e2e:open": "cypress open"
     },
     "eslintConfig": {
