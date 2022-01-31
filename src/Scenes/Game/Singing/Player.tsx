@@ -15,6 +15,7 @@ interface Props {
     showControls?: boolean;
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
+    onStatusChange?: (status: number) => void;
     tracksForPlayers: [number, number];
     playerChanges?: number[][];
 
@@ -36,6 +37,7 @@ function Player(
         showControls = false,
         onTimeUpdate,
         onSongEnd,
+        onStatusChange,
         tracksForPlayers,
         playerChanges = [[], []],
         effectsEnabled = true,
@@ -100,7 +102,7 @@ function Player(
     }));
 
     return (
-        <Container width={width} height={height} video={song.video}>
+        <Container>
             {currentStatus === YouTube.PlayerState.PAUSED && onSongEnd !== undefined && (
                 <PauseMenu
                     onExit={() => onSongEnd([[], []])}
@@ -142,21 +144,16 @@ function Player(
                         start: song.videoGap,
                     },
                 }}
-                onStateChange={(e) => setCurrentStatus(e.data)}
+                onStateChange={(e) => {
+                    setCurrentStatus(e.data);
+                    onStatusChange?.(e.data);
+                }}
             />
         </Container>
     );
 }
 
-const Container = styled.div.attrs<{ video: string; width: number; height: number }>((props) => ({
-    style: {
-        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
-        width: `${props.width}px`,
-        height: `${props.height}px`,
-    },
-}))<{ video: string; width: number; height: number }>`
-    background-size: cover;
-    background-position: center center;
+const Container = styled.div`
     position: relative;
 `;
 

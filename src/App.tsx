@@ -28,6 +28,7 @@ function App() {
                                 tolerance: 2,
                             }}
                             songFile="dummy.json"
+                            video=":)"
                             returnToSongSelection={() => window.location.reload()}
                         />
                     )}
