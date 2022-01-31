@@ -44,22 +44,21 @@ function drawPlayer(playerNumber: number, canvas: HTMLCanvasElement, ctx: Canvas
     }
 
     const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
-
-    const currentPlayerNotes = drawingData.playersNotes.filter((note) => note.note.start >= currentSection.start);
-
-    const beatLength = (canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - currentSection.start);
-
     if (!isNotesSection(currentSection)) {
         ParticleManager.tick(ctx, canvas);
         return;
     }
+
+    const currentPlayerNotes = drawingData.playersNotes.filter((note) => note.note.start >= currentSection.start);
+
+    const beatLength = (canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - currentSection.notes[0].start);
 
     const currentBeat = GameState.getCurrentBeat();
 
     const displacements: Record<number, [number, number]> = {};
 
     const getNoteCoords = (start: number, length: number, pitch: number, big: boolean) => ({
-        x: paddingHorizontal + beatLength * (start - currentSection.start),
+        x: paddingHorizontal + beatLength * (start - currentSection.notes[0].start),
         y: regionPaddingTop + 10 + pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding) - (big ? 3 : 0),
         w: beatLength * length,
         h: NOTE_HEIGHT + (big ? 3 : 0),
@@ -226,11 +225,12 @@ export default class CanvasDrawing {
         };
 
         const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
+        const sectionStart = isNotesSection(currentSection) ? currentSection.notes[0].start : 1;
 
-        const beatLength = (this.canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - currentSection.start);
+        const beatLength = (this.canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - sectionStart);
 
         return {
-            x: paddingHorizontal + beatLength * (start - currentSection.start),
+            x: paddingHorizontal + beatLength * (start - sectionStart),
             y: regionPaddingTop + 10 + pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding) - (big ? 3 : 0),
             w: beatLength * length,
             h: NOTE_HEIGHT + (big ? 3 : 0),

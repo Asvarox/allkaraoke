@@ -3,7 +3,6 @@ import getSongBeatLength from '../../Game/Singing/GameState/Helpers/getSongBeatL
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 
 export const HEADSTART_MS = 1000;
-export const MIN_HEADSTART_MS = 400;
 
 const shortenNoteSections = (sections: NotesSection[]): NotesSection[] =>
     sections.map((section) => {
@@ -22,34 +21,21 @@ const getSectionEnd = (section: NotesSection) => {
 };
 
 const addPauseSections = (sections: NotesSection[], padSizeBeats = 10): Section[] => {
-    let lastEnd = -padSizeBeats;
+    let lastEnd = 0;
     let sectionsWithPauses: Section[] = [];
 
     sections.forEach((section) => {
-        const paddedStart = Math.min(lastEnd + padSizeBeats, section.start - padSizeBeats);
+        const spaceBetweenSections = section.start - lastEnd;
 
-        if (section.start > lastEnd && paddedStart > lastEnd && section.start - paddedStart >= padSizeBeats) {
-            sectionsWithPauses.push({ type: 'pause', start: paddedStart, end: section.start });
+        if (spaceBetweenSections > padSizeBeats) {
+            sectionsWithPauses.push({ type: 'pause', start: lastEnd, end: section.start - padSizeBeats });
+            lastEnd = section.start - padSizeBeats;
         }
+        sectionsWithPauses.push({ ...section, start: lastEnd });
         lastEnd = getSectionEnd(section);
-        sectionsWithPauses.push(section);
     });
 
     return sectionsWithPauses;
-};
-
-const padSections = (sections: NotesSection[], padSizeBeats = 10, minPadding = 5): NotesSection[] => {
-    let lastEnd = 0;
-
-    return sections.map((section) => {
-        const newStart =
-            section.start <= lastEnd + minPadding ? lastEnd : Math.max(lastEnd + 1, section.start - padSizeBeats);
-        lastEnd = getSectionEnd(section);
-        return {
-            ...section,
-            start: newStart,
-        };
-    });
 };
 
 // Triest its best to add enough headstart to sections so the player can see the lyrics and notes
@@ -57,16 +43,13 @@ const padSections = (sections: NotesSection[], padSizeBeats = 10, minPadding = 5
 export default function normaliseSectionPaddings(song: Song): Song {
     const beatLength = getSongBeatLength(song);
     const desiredPadding = Math.round(HEADSTART_MS / beatLength);
-    const minPadding = Math.round(MIN_HEADSTART_MS / beatLength);
+    // const minPadding = Math.round(MIN_HEADSTART_MS / beatLength);
 
     return {
         ...song,
         tracks: song.tracks.map((track) => ({
             ...track,
-            sections: addPauseSections(
-                padSections(shortenNoteSections(track.sections.filter(isNotesSection)), desiredPadding, minPadding),
-                desiredPadding,
-            ),
+            sections: addPauseSections(shortenNoteSections(track.sections.filter(isNotesSection)), desiredPadding),
         })),
     };
 }

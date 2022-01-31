@@ -18,7 +18,7 @@ export default function calculateData({
     const currentSection = sections[currentSectionIndex];
     const nextSection = sections[currentSectionIndex + 1];
 
-    const paddingHorizontal = Math.max(10 + canvas.width * 0.05);
+    const paddingHorizontal = 10 + canvas.width * 0.15;
     const lastNote = isNotesSection(currentSection)
         ? currentSection?.notes?.[currentSection.notes.length - 1]
         : undefined;
