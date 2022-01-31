@@ -1027,6 +1027,20 @@
     "tracksCount": 1
   },
   {
+    "title": "Dziwny jest ten świat",
+    "artist": "Czesław Niemen",
+    "bpm": 161.52,
+    "bar": 4,
+    "gap": 15678.454680534918,
+    "video": "wTjLZwpmufw",
+    "videoGap": 0,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Czesław Niemen-Dziwny jest ten świat.json",
+    "tracksCount": 2
+  },
+  {
     "title": "My Heart Will Go On",
     "artist": "Céline Dion",
     "bpm": 384.59,
@@ -1166,6 +1180,20 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=DragonForce&cancion=Through%20the%20fire%20and%20flames",
     "volume": 0.91,
     "file": "DragonForce-Through the fire and flames.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Wehikuł Czasu",
+    "artist": "Dżem",
+    "bpm": 83.95,
+    "bar": 4,
+    "gap": 35327.93329362716,
+    "video": "XWcqFbMUAb4",
+    "videoGap": 0,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Dżem-Wehikuł Czasu.json",
     "tracksCount": 1
   },
   {
@@ -1322,6 +1350,22 @@
     "tracksCount": 1
   },
   {
+    "title": "King Bruce Lee Karate Mistrz",
+    "artist": "Franek Kimono",
+    "bpm": 120.49,
+    "bar": 4,
+    "gap": 27087.69462741052,
+    "video": "cSDYYYe3wUs",
+    "genre": "Disco",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "mgr_rybak",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Franek Kimono-King Bruce Lee Karate Mistrz.json",
+    "tracksCount": 1
+  },
+  {
     "title": "Take Me Out",
     "artist": "Franz Ferdinand",
     "bpm": 209.2,
@@ -1371,6 +1415,20 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=Careless%20Whisper",
     "volume": 0.91,
     "file": "George Michael-Careless Whisper.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Słodycze",
+    "artist": "Golec Orkiestra",
+    "bpm": 140.6,
+    "bar": 4,
+    "gap": 19951.04895104895,
+    "video": "FWgDQILC91c",
+    "videoGap": 0,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Golec Orkiestra-Słodycze.json",
     "tracksCount": 1
   },
   {
@@ -3327,6 +3385,24 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=I'm%20a%20believer",
     "file": "Smash Mouth-I'm a believer.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Chasing Cars",
+    "artist": "Snow Patrol",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 1703.3846153846155,
+    "video": "GemKqzILV4w",
+    "year": "2006",
+    "edition": "SSHottestHitsGE",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Snow%20Patrol&cancion=Chasing%20Cars",
+    "file": "Snow Patrol-Chasing Cars.json",
     "tracksCount": 1
   },
   {
