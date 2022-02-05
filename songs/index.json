@@ -1629,6 +1629,35 @@
     "tracksCount": 1
   },
   {
+    "title": "Kaine Grenzen",
+    "artist": "Ich Troje",
+    "bpm": 137.2,
+    "bar": 4,
+    "gap": 1158.67055393586,
+    "video": "tYGt9xT7mng",
+    "genre": "Pop",
+    "language": "Polish/German/Russian",
+    "videoGap": 0,
+    "author": "Pure6",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Ich Troje-Kaine Grenzen.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Powiedz",
+    "artist": "Ich Troje",
+    "bpm": 90,
+    "bar": 4,
+    "gap": 31816,
+    "video": "j0U4lrfzv6U",
+    "videoGap": -2,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Ich Troje-Powiedz.json",
+    "tracksCount": 1
+  },
+  {
     "title": "Wypijmy Za To",
     "artist": "Ich Troje",
     "bpm": 110.58,
@@ -1947,6 +1976,22 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold",
     "volume": 0.91,
     "file": "Katy Perry-Hot N Cold.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Śpij kochanie śpij",
+    "artist": "Kayah & Bregovic",
+    "bpm": 194,
+    "bar": 4,
+    "gap": -72.91752577319596,
+    "video": "95De6ax4QTA",
+    "year": "1999",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Yooma",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Kayah & Bregovic-Śpij kochanie śpij.json",
     "tracksCount": 1
   },
   {
@@ -2387,6 +2432,23 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Vogue",
     "volume": 0.91,
     "file": "Madonna-Vogue.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "A ja wolę moją mamę",
+    "artist": "Majka Jeżowska",
+    "bpm": 212.96,
+    "bar": 4,
+    "gap": 19553.108386288375,
+    "video": "X6ZpumEE3xs",
+    "year": "1985",
+    "edition": "Singstar 80s Polish",
+    "genre": "Pop",
+    "videoGap": 0,
+    "author": "Corvus5",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Majka Jeżowska-A ja wolę moją mamę.json",
     "tracksCount": 1
   },
   {
@@ -4460,6 +4522,23 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach",
     "volume": 0.9,
     "file": "Zielone Żabki-Numerek w krzaczkach.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Agnieszka",
+    "artist": "£zy",
+    "bpm": 240.1,
+    "bar": 4,
+    "gap": 11551.207177814029,
+    "video": "eC-fr3C6SO0",
+    "year": "",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Łzy-Agnieszka.json",
     "tracksCount": 1
   }
 ]
