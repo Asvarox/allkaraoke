@@ -2349,6 +2349,23 @@
     "tracksCount": 1
   },
   {
+    "title": "Agnieszka",
+    "artist": "Lzy",
+    "bpm": 240.1,
+    "bar": 4,
+    "gap": 11551.207177814029,
+    "video": "eC-fr3C6SO0",
+    "year": "",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Lzy-Agnieszka.json",
+    "tracksCount": 1
+  },
+  {
     "title": "Oczy szeroko zamkniete",
     "artist": "Lzy",
     "bpm": 308,
@@ -4522,23 +4539,6 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach",
     "volume": 0.9,
     "file": "Zielone Żabki-Numerek w krzaczkach.json",
-    "tracksCount": 1
-  },
-  {
-    "title": "Agnieszka",
-    "artist": "£zy",
-    "bpm": 240.1,
-    "bar": 4,
-    "gap": 11551.207177814029,
-    "video": "eC-fr3C6SO0",
-    "year": "",
-    "edition": "SingStar WI",
-    "genre": "",
-    "language": "",
-    "videoGap": 0,
-    "authorUrl": "",
-    "sourceUrl": "",
-    "file": "Łzy-Agnieszka.json",
     "tracksCount": 1
   }
 ]
