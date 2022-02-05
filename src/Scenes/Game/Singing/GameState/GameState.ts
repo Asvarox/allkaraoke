@@ -2,7 +2,7 @@ import { FrequencyRecord, PlayerNote, SingSetup, Song } from '../../../../interf
 import isNotesSection from '../Helpers/isNotesSection';
 import { getNoteAtBeat } from '../Helpers/notesSelectors';
 import DummyInput from '../Input/DummyInput';
-import InputInterface from '../Input/Interface';
+import InputManager from '../Input/InputManager';
 import MicInput from '../Input/MicInput';
 import GameStateEvents from './GameStateEvents';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
@@ -13,6 +13,9 @@ import getSongBeatLength from './Helpers/getSongBeatLength';
 const Input = process.env.NODE_ENV === 'development' ? DummyInput : MicInput;
 const Input1 = MicInput;
 
+InputManager.setPlayerInput(0, Input, 0);
+InputManager.setPlayerInput(1, Input, 1);
+
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];
     private playerNotes: PlayerNote[] = [];
@@ -21,12 +24,7 @@ class PlayerState {
 
     private storedSectionIndex = 0;
 
-    public constructor(
-        private index: number,
-        private input: InputInterface,
-        private inputChannel: number,
-        private gameState: GameState,
-    ) {
+    public constructor(private index: number, private gameState: GameState) {
         this.getTrack()
             .sections.filter(isNotesSection)
             .forEach((section) =>
@@ -40,11 +38,11 @@ class PlayerState {
     public update = () => {
         const currentTime = this.gameState.getCurrentTime();
 
-        const frequencies = this.input.getFrequencies();
+        const frequency = InputManager.getPlayerFrequency(this.index);
 
         const record = {
-            timestamp: currentTime - this.input.getInputLag(),
-            frequency: frequencies[this.inputChannel],
+            timestamp: currentTime - InputManager.getPlayerInputLag(this.index),
+            frequency,
         };
 
         this.frequencyRecords.push(record);
@@ -117,8 +115,6 @@ class PlayerState {
 
     public getTrackIndex = () => this.gameState.getSingSetup()!.playerTracks[this.index];
     public getTrack = () => this.gameState.getSong()!.tracks[this.getTrackIndex()];
-
-    public getInput = () => this.input;
 }
 
 class GameState {
@@ -144,7 +140,7 @@ class GameState {
     public setSingSetup = (singSetup: SingSetup) => {
         this.singSetup = singSetup;
 
-        this.playerStates = singSetup.playerTracks.map((_, index) => new PlayerState(index, Input, index, this));
+        this.playerStates = singSetup.playerTracks.map((_, index) => new PlayerState(index, this));
     };
     public getSingSetup = () => this.singSetup;
 
@@ -156,11 +152,11 @@ class GameState {
     public getPlayerCount = () => this.playerStates.length;
 
     public startInputMonitoring = async () => {
-        return Promise.all(this.playerStates.map((player) => player.getInput().startMonitoring()));
+        return InputManager.startMonitoring();
     };
 
     public stopInputMonitoring = () => {
-        return Promise.all(this.playerStates.map((player) => player.getInput().stopMonitoring()));
+        return InputManager.stopMonitoring();
     };
 
     public update = () => {

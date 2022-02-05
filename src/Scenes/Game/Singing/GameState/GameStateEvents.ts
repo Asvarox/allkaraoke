@@ -1,4 +1,4 @@
-class GameStateEvent<T extends (...args: any[]) => void> {
+export class GameStateEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
 
     public subscribe = (callback: T) => {
@@ -18,6 +18,8 @@ export const events = {
     sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>(),
     // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
+    phoneConnected: new GameStateEvent<(id: string) => void>(),
+    phoneDisconnected: new GameStateEvent<(id: string) => void>(),
 };
 
 export default events;

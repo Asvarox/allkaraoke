@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Route, Router } from 'wouter';
 import useHashLocation from './Hooks/useHashLocation';
 import { GAME_MODE } from './interfaces';
+import ConnectPhone from './Scenes/ConnectPhone/ConnectPhone';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
@@ -9,6 +10,7 @@ import Game from './Scenes/Game/Game';
 import { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/Drawing/styles';
 import Singing from './Scenes/Game/Singing/Singing';
 import Jukebox from './Scenes/Jukebox/Jukebox';
+import Phone from './Scenes/Phone/Phone';
 import Welcome from './Scenes/Welcome/Welcome';
 
 function App() {
@@ -42,6 +44,10 @@ function App() {
                 </Route>
                 <Route path="/convert" component={Convert} />
                 <Route path="/jukebox" component={Jukebox} />
+
+                <Route path="/connect-phone" component={ConnectPhone} />
+                <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>
+
                 <Route path="/edit" component={SongList} />
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
                 <Route path="/" component={Welcome} />

@@ -30,7 +30,7 @@ export default function convertTxtToSong(
             genre: getPropertyValueFromTxt(text, 'GENRE'),
             language: getPropertyValueFromTxt(text, 'LANGUAGE'),
             videoGap: Math.floor(Number(getPropertyValueFromTxt(text, 'VIDEOGAP')?.replace(',', '.') ?? 0)),
-            author,
+            author: author || getPropertyValueFromTxt(text, 'CREATOR'),
             authorUrl,
             sourceUrl,
         },
