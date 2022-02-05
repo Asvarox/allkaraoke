@@ -1213,6 +1213,22 @@
     "tracksCount": 1
   },
   {
+    "title": "Dumka na dwa serca",
+    "artist": "Edyta Górniak & Mietek Szcześniak",
+    "bpm": 153.95,
+    "bar": 4,
+    "gap": 8773.65768106528,
+    "video": "wcXAKhwsl6o",
+    "genre": "Soundtrack",
+    "language": "Polish",
+    "videoGap": -1,
+    "author": "Pure6",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Edyta Górniak & Mietek Szcześniak-Dumka na dwa serca.json",
+    "tracksCount": 2
+  },
+  {
     "title": "Co Ty Tutaj Robisz?",
     "artist": "Elektryczne Gitary",
     "bpm": 201.76,
@@ -1329,6 +1345,65 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life",
     "volume": 0.81,
     "file": "Evanescence-Bring Me to Life.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Ogórek wąsaty",
+    "artist": "Fasolki",
+    "bpm": 118.29,
+    "bar": 4,
+    "gap": 7035.358974358975,
+    "video": "MmcrNksJxz4",
+    "genre": "Dla dzieci",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Fasolki-Ogórek wąsaty.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "A gdy jest już ciemno",
+    "artist": "Feel",
+    "bpm": 280.1,
+    "bar": 4,
+    "gap": 1432.1428571428573,
+    "video": "7vKpv-z1ut4",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pure6",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Feel-A gdy jest już ciemno.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Jak Anioła Głos",
+    "artist": "Feel",
+    "bpm": 94.01,
+    "bar": 4,
+    "gap": 23898,
+    "video": "_d-bEM88LlM",
+    "videoGap": 0,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Feel-Jak Anioła Głos.json",
+    "tracksCount": 1
+  },
+  {
+    "title": "Pokaż na co Cię stać",
+    "artist": "Feel",
+    "bpm": 90,
+    "bar": 4,
+    "gap": 20500,
+    "video": "iS85LogrBP4",
+    "videoGap": 9,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1
   },
   {
@@ -3675,7 +3750,7 @@
     "artist": "Tenacious D",
     "bpm": 310.25,
     "bar": 4,
-    "gap": 31000,
+    "gap": 29984.689766317486,
     "video": "y8-LH_VUROk",
     "year": "2006",
     "genre": "Freak Metal",
@@ -3686,7 +3761,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Beelzeboss%20(The%20Final%20Showdown)",
     "volume": 1,
     "file": "Tenacious D-Beelzeboss (The Final Showdown).json",
-    "tracksCount": 1
+    "tracksCount": 3
   },
   {
     "title": "Kickapoo",
