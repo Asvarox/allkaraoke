@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { PlayerNote, Song } from '../../../interfaces';
+import { Song } from '../../../interfaces';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import CanvasDrawing from './Drawing';
@@ -14,7 +14,7 @@ interface Props {
     currentStatus: number;
     width: number;
     height: number;
-    onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
+    onSongEnd?: () => void;
     tracksForPlayers: [number, number];
     duration: number;
     effectsEnabled: boolean;
@@ -57,7 +57,7 @@ function GameOverlay({
 
     useEffect(() => {
         if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) {
-            onSongEnd([GameState.getPlayer(0).getPlayerNotes(), GameState.getPlayer(1).getPlayerNotes()]);
+            onSongEnd();
             drawer.current?.end();
         }
     }, [currentStatus, onSongEnd]);

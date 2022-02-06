@@ -1,7 +1,7 @@
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { PlayerNote, SingSetup, Song } from '../../../interfaces';
+import { SingSetup, Song } from '../../../interfaces';
 import PauseMenu from './Components/PauseMenu';
 import GameOverlay from './GameOverlay';
 import GameState from './GameState/GameState';
@@ -14,7 +14,7 @@ interface Props {
     autoplay?: boolean;
     showControls?: boolean;
     onTimeUpdate?: (newTime: number) => void;
-    onSongEnd?: (playerNotes: [PlayerNote[], PlayerNote[]]) => void;
+    onSongEnd?: () => void;
     onStatusChange?: (status: number) => void;
     tracksForPlayers: [number, number];
     playerChanges?: number[][];
@@ -54,6 +54,12 @@ function Player(
         GameState.setSong(song);
         GameState.setSingSetup(singSetup);
     }, [song, singSetup]);
+
+    useEffect(() => {
+        console.log('mount');
+
+        return () => console.log('unmount');
+    }, []);
 
     useEffect(() => {
         if (!player.current) {
@@ -104,10 +110,7 @@ function Player(
     return (
         <Container>
             {currentStatus === YouTube.PlayerState.PAUSED && onSongEnd !== undefined && (
-                <PauseMenu
-                    onExit={() => onSongEnd([[], []])}
-                    onResume={() => player.current?.getInternalPlayer()?.playVideo()}
-                />
+                <PauseMenu onExit={onSongEnd} onResume={() => player.current?.getInternalPlayer()?.playVideo()} />
             )}
             {currentStatus !== YouTube.PlayerState.UNSTARTED && (
                 <Overlay>

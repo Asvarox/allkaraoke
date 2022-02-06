@@ -34,7 +34,13 @@ function Game(props: Props) {
                 )}
             </TransitionWrapper>
             <TransitionWrapper show={!singSetup}>
-                <SongSelection onSongSelected={setSingSetup} preselectedSong={preselectedSong} />
+                <SongSelection
+                    onSongSelected={(setup) => {
+                        setSingSetup(setup);
+                        console.log('wat', setup);
+                    }}
+                    preselectedSong={preselectedSong}
+                />
             </TransitionWrapper>
         </>
     );

@@ -14,7 +14,7 @@ function getPropertyValueFromTxt(txt: string, key: string): string | undefined {
     return txt.match(regex)?.[1] ?? undefined;
 }
 
-const LINE_BREAK_RELATIVE_REGEXP = /\- \d+ \d+/;
+const LINE_BREAK_RELATIVE_REGEXP = /- \d+ \d+/;
 
 export default function convertTxtToSong(
     text: string,

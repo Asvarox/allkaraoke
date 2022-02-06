@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
 import { focusable } from '../../../Elements/cssMixins';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import { DetailedScore, PlayerNote, Song } from '../../../interfaces';
+import { DetailedScore, Song } from '../../../interfaces';
 import SongPage, { ContentElement } from '../SongPage';
 import styles from './Drawing/styles';
+import GameState from './GameState/GameState';
 import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from './GameState/Helpers/calculateScore';
 import ScoreText from './ScoreText';
 
@@ -15,8 +16,6 @@ interface Props {
     width: number;
     height: number;
     song: Song;
-    playerNotes: [PlayerNote[], PlayerNote[]];
-    tracksForPlayers: [number, number];
     onClickSongSelection: () => void;
 }
 
@@ -24,7 +23,7 @@ const MAX_TICKS = Math.floor(6100 / 16);
 
 const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 
-function PostGame({ song, playerNotes, width, height, onClickSongSelection, tracksForPlayers }: Props) {
+function PostGame({ song, width, height, onClickSongSelection }: Props) {
     const [currentTick, setCurrentTick] = useState(0);
     useKeyboardNav({
         onEnter: onClickSongSelection,
@@ -38,8 +37,11 @@ function PostGame({ song, playerNotes, width, height, onClickSongSelection, trac
     }, [currentTick]);
 
     const playerScores = useMemo(
-        () => playerNotes.map((notes, index) => calculateDetailedScoreData(notes, song, tracksForPlayers[index])),
-        [playerNotes, song, tracksForPlayers],
+        () =>
+            GameState.getPlayers().map((player) =>
+                calculateDetailedScoreData(player.getPlayerNotes(), song, player.getTrackIndex()),
+            ),
+        [song],
     );
 
     const getPlayerScoreText = ([pointsPerBeat, counts]: [number, DetailedScore, DetailedScore]) =>

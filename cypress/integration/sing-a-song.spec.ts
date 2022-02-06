@@ -12,7 +12,7 @@ describe('example to-do app', () => {
         cy.intercept('GET', '/songs/e2e-test-multitrack.json', { fixture: 'songs/e2e-test-multitrack.json' });
     });
 
-    it('goes through singing properly', () => {
+    it('goes through singing properly using keyboard', () => {
         cy.get('[data-test="sing-a-song"]').click();
         cy.wait(500);
         cy.get('body').type('{rightarrow}'); // next song

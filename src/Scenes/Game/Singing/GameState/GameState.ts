@@ -10,8 +10,8 @@ import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 
-const Input = process.env.NODE_ENV === 'development' ? DummyInput : MicInput;
-const Input1 = MicInput;
+const Input = process.env.NODE_ENV === 'development' ? DummyInput : MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
+const Input1 = MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
 
 InputManager.setPlayerInput(0, Input, 0);
 InputManager.setPlayerInput(1, Input, 1);
@@ -148,6 +148,8 @@ class GameState {
     public getDuration = () => this.duration;
 
     public getPlayer = (player: number) => this.playerStates[player];
+
+    public getPlayers = () => this.playerStates;
 
     public getPlayerCount = () => this.playerStates.length;
 
