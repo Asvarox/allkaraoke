@@ -10,7 +10,12 @@ readdirSync(SONGS_FOLDER).forEach((file) => {
 
     const { tracks, ...songData }: Song = JSON.parse(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
-    list.push({ ...songData, file, tracksCount: tracks.length });
+    list.push({
+        ...songData,
+        file,
+        tracksCount: tracks.length,
+        tracks: tracks.map(({ name }) => ({ name })),
+    });
 });
 
 console.log(JSON.stringify(list, undefined, 2));

@@ -64,6 +64,7 @@ export interface SongTrack {
 export interface SongPreview extends Omit<Song, 'tracks'> {
     file: string;
     tracksCount: number;
+    tracks: Array<Pick<SongTrack, 'name'>>;
 }
 
 export interface FrequencyRecord {

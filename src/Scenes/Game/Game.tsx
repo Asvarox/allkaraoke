@@ -14,7 +14,7 @@ function Game(props: Props) {
 
     useEffect(() => {
         try {
-            document.body.requestFullscreen().catch(console.info);
+            process.env.NODE_ENV !== 'development' && document.body.requestFullscreen().catch(console.info);
         } catch (e) {}
     }, []);
 

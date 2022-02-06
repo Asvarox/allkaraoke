@@ -13,7 +13,8 @@
         "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
         "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you",
         "file": "e2e-test.json",
-        "tracksCount": 1
+        "tracksCount": 1,
+        "tracks": [{}]
     },
     {
         "title": "E2ETest",
@@ -29,6 +30,7 @@
         "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
         "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you",
         "file": "e2e-test-multitrack.json",
-        "tracksCount": 2
+        "tracksCount": 2,
+        "tracks": [{}, { "name": "E2E Second Track" }]
     }
 ]

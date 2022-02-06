@@ -30,9 +30,12 @@ enum Element {
 
 const difficultyNames = ['Real', 'Hard', 'Medium', 'Easy'];
 
+const getPlayerTrackName = (tracks: SongPreview['tracks'], index: number) =>
+    tracks[index]?.name ?? `Track ${index + 1}`;
+
 export default function SongSettings({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
     const [mode, setMode] = useState(GAME_MODE.DUEL);
-    const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, songPreview.tracksCount - 1]);
+    const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, Math.min(1, songPreview.tracksCount - 1)]);
     const [focusedElement, setFocusedEelement] = useState<number>(0);
     const [tolerance, setTolerance] = useState<number>(2);
 
@@ -113,14 +116,14 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
                         focused={isFocused(Element.PLAYER_1_TRACK)}
                         data-test="player-1-track-setting"
                         data-test-value={playerTracks[0] + 1}>
-                        Player 1: <ConfigValue>Track {playerTracks[0] + 1}</ConfigValue>
+                        Player 1: <ConfigValue>{getPlayerTrackName(songPreview.tracks, playerTracks[0])}</ConfigValue>
                     </ConfigurationPosition>
                     <ConfigurationPosition
                         onClick={() => togglePlayerTrack(1)}
                         focused={isFocused(Element.PLAYER_2_TRACK)}
                         data-test="player-2-track-setting"
                         data-test-value={playerTracks[1] + 1}>
-                        Player 2: <ConfigValue>Track {playerTracks[1] + 1}</ConfigValue>
+                        Player 2: <ConfigValue>{getPlayerTrackName(songPreview.tracks, playerTracks[1])}</ConfigValue>
                     </ConfigurationPosition>
                 </>
             )}
