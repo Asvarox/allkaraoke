@@ -4278,6 +4278,25 @@
     ]
   },
   {
+    "title": "Typ Niepokorny",
+    "artist": "Stachursky",
+    "bpm": 120,
+    "bar": 4,
+    "gap": 13750,
+    "video": "CWMsGYOTnuU",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 7,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Stachursky-Typ Niepokorny.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Z kazdym Twym oddechem",
     "artist": "Stachursky",
     "bpm": 280,
