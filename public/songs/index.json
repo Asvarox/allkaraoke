@@ -2394,6 +2394,26 @@
     ]
   },
   {
+    "title": "Pokolenie",
+    "artist": "Kombi",
+    "bpm": 228,
+    "bar": 4,
+    "gap": 19973.157894736843,
+    "video": "h7ES_rO9bFM",
+    "year": "",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Kombi-Pokolenie.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Zatańczysz ze Mną Jeszcze Raz",
     "artist": "Krzysztof Krawczyk",
     "bpm": 239.98,
@@ -2828,6 +2848,23 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maciej%20Mol%C4%99da&cancion=Zrobi%C4%99%20m%C4%99%C5%BCczyzn%20z%20was",
     "volume": 1,
     "file": "Maciej Molęda-Zrobię mężczyzn z was.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Wyginam śmiało ciało",
+    "artist": "Madagaskar",
+    "bpm": 519.96,
+    "bar": 4,
+    "gap": 1009.6390491576276,
+    "video": "0O2ubAf40fo",
+    "videoGap": 0,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Madagaskar-Wyginam śmiało ciało.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -3504,6 +3541,25 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12554",
     "volume": 0.85,
     "file": "Perfect-Nie Mogę Ci Wiele Dać.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Nie płacz Ewka",
+    "artist": "Perfect",
+    "bpm": 112,
+    "bar": 4,
+    "gap": 35695.5,
+    "video": "G_oKsG8KRZI",
+    "genre": "ROCK",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Perfect-Nie płacz Ewka.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4417,6 +4473,25 @@
     ]
   },
   {
+    "title": "Ajrisz",
+    "artist": "T.Love",
+    "bpm": 115,
+    "bar": 4,
+    "gap": 19640.521739130436,
+    "video": "DcQWrT62YDo",
+    "genre": "Rock",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "T.Love-Ajrisz.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "I Love You",
     "artist": "T.Love",
     "bpm": 159.47,
@@ -4487,6 +4562,24 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=13182",
     "volume": 1,
     "file": "T.Love-Stokrotka.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Warszawa",
+    "artist": "T.Love",
+    "bpm": 268.52,
+    "bar": 4,
+    "gap": 15884.488306271414,
+    "video": "59JGY-K0BeQ",
+    "language": "Polish",
+    "videoGap": 3,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "T.Love-Warszawa.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5130,6 +5223,26 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2851",
     "volume": 0.8,
     "file": "Urszula-Konik na biegunach.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Orla Cien",
+    "artist": "Varius Manx",
+    "bpm": 170,
+    "bar": 4,
+    "gap": 9555.411764705883,
+    "video": "ZVF5x-YzUBY",
+    "year": "",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Varius Manx-Orla Cien.json",
     "tracksCount": 1,
     "tracks": [
       {}
