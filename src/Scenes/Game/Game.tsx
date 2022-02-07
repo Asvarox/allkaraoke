@@ -37,7 +37,6 @@ function Game(props: Props) {
                 <SongSelection
                     onSongSelected={(setup) => {
                         setSingSetup(setup);
-                        console.log('wat', setup);
                     }}
                     preselectedSong={preselectedSong}
                 />

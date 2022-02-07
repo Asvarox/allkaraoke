@@ -56,12 +56,6 @@ function Player(
     }, [song, singSetup]);
 
     useEffect(() => {
-        console.log('mount');
-
-        return () => console.log('unmount');
-    }, []);
-
-    useEffect(() => {
         if (!player.current) {
             return;
         }
