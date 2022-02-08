@@ -2991,6 +2991,47 @@
     ]
   },
   {
+    "title": "Harder to breathe",
+    "artist": "Maroon 5",
+    "bpm": 299.99,
+    "bar": 4,
+    "gap": 5009.966665555518,
+    "video": "rV8NHsmVMPE",
+    "year": "2002",
+    "edition": "Guitar Hero 5",
+    "genre": "Pop Rock",
+    "language": "English",
+    "videoGap": -1,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=Harder%20to%20breathe",
+    "file": "Maroon 5-Harder to breathe.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "She Will Be Loved",
+    "artist": "Maroon 5",
+    "bpm": 408,
+    "bar": 4,
+    "gap": 20907.35294117647,
+    "video": "nIjVuRTm-dc",
+    "year": "2002",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "upalula",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved",
+    "file": "Maroon 5-She Will Be Loved.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "This Love",
     "artist": "Maroon 5",
     "bpm": 190.2,
@@ -4020,6 +4061,46 @@
     ]
   },
   {
+    "title": "Never gonna give you up",
+    "artist": "Rick Astley",
+    "bpm": 227.22,
+    "bar": 4,
+    "gap": 17757.770266701875,
+    "video": "dQw4w9WgXcQ",
+    "year": "1987",
+    "edition": "SingStar English",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up",
+    "file": "Rick Astley-Never gonna give you up.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Livin' La Vida Loca",
+    "artist": "Ricky Martin",
+    "bpm": 177.84,
+    "bar": 4,
+    "gap": 12090.854251012146,
+    "video": "p47fEXGabaY",
+    "edition": "Ante Eppinger",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "pauldiddy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5383",
+    "file": "Ricky Martin-Livin' La Vida Loca.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Umbrella",
     "artist": "Rihanna",
     "bpm": 240,
@@ -4074,6 +4155,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Robbie%20Williams&cancion=Rock%20DJ",
     "file": "Robbie Williams-Rock DJ.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "It Must Have Been Love",
+    "artist": "Roxette",
+    "bpm": 322.4,
+    "bar": 4,
+    "gap": 16981.952853598013,
+    "video": "k2C5TjS2sh4",
+    "year": "1990",
+    "edition": "SingStar Rock Ballads",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Roxette&cancion=It%20Must%20Have%20Been%20Love",
+    "file": "Roxette-It Must Have Been Love.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4170,6 +4272,26 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29",
     "volume": 0.8,
     "file": "Shakira ft. Freshlyground-Waka Waka (This Time for Africa).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Whenever wherever",
+    "artist": "Shakira",
+    "bpm": 423,
+    "bar": 4,
+    "gap": 15984.09219858156,
+    "video": "weRHyjj34ZE",
+    "year": "2001",
+    "genre": "Latino",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Whenever%20wherever",
+    "file": "Shakira-Whenever wherever.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4921,6 +5043,27 @@
     ]
   },
   {
+    "title": "Mr. Brightside",
+    "artist": "The Killers",
+    "bpm": 396.73,
+    "bar": 4,
+    "gap": 9669.963678068209,
+    "video": "gGdGFtwCNBE",
+    "year": "2004",
+    "edition": "Rock Band Store 2008 Vol. 4",
+    "genre": "Alternativa",
+    "language": "English",
+    "videoGap": -1,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside",
+    "file": "The Killers-Mr. Brightside.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
     "bpm": 397.5,
@@ -4936,6 +5079,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Offspring&cancion=Pretty%20fly%20(for%20a%20white%20guy)",
     "file": "The Offspring-Pretty fly (for a white guy).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Message in a bottle",
+    "artist": "The Police",
+    "bpm": 395.9,
+    "bar": 4,
+    "gap": 6535.102040816327,
+    "video": "MbXWrmQW-OE",
+    "year": "1979",
+    "edition": "Rock Band Track Pack Vol. 2",
+    "genre": "New Wave",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Police&cancion=Message%20in%20a%20bottle",
+    "file": "The Police-Message in a bottle.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5138,6 +5302,47 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3815",
     "volume": 0.8,
     "file": "Tomasz Karolak-Zabiorę Cię właśnie tam.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Africa",
+    "artist": "Toto",
+    "bpm": 186.2,
+    "bar": 4,
+    "gap": 23443.9187432286,
+    "video": "FTQbiNvZqaY",
+    "year": "1983",
+    "edition": "SingStar Rock Ballads",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa",
+    "file": "Toto-Africa.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Hold The Line",
+    "artist": "Toto",
+    "bpm": 350,
+    "bar": 4,
+    "gap": 20206.285714285714,
+    "video": "htgr3pvBr-I",
+    "year": "1978",
+    "edition": "SingStar SP English",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Hold%20The%20Line",
+    "file": "Toto-Hold The Line.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5364,6 +5569,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas",
     "file": "Wham!-Last Christmas.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Wake Me Up Before You Go-Go",
+    "artist": "Wham",
+    "bpm": 240.2,
+    "bar": 4,
+    "gap": -34.87515451174295,
+    "video": "pIgZ7gMze7A",
+    "year": "1984",
+    "edition": "SingStar '80s",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go",
+    "file": "Wham-Wake Me Up Before You Go-Go.json",
     "tracksCount": 1,
     "tracks": [
       {}
