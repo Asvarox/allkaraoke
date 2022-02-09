@@ -452,6 +452,26 @@
     ]
   },
   {
+    "title": "This Is The Life",
+    "artist": "Amy MacDonald",
+    "bpm": 379.96,
+    "bar": 4,
+    "gap": 15258.05400568481,
+    "video": "iRYvuS9OxdA",
+    "year": "2007",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 3,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4314",
+    "file": "Amy MacDonald-This Is The Life.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Barbie Girl",
     "artist": "Aqua",
     "bpm": 260.2,
@@ -509,6 +529,24 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare",
     "file": "Avenged Sevenfold-Nightmare.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Wake Me Up",
+    "artist": "Avicii",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 7511.774193548387,
+    "video": "IcrbM1l_BoI",
+    "language": "English",
+    "videoGap": 0,
+    "author": "snake84",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1645",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15877",
+    "file": "Avicii-Wake Me Up.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -705,6 +743,25 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)",
     "file": "Beastie Boys-(You Gotta) Fight For Your Right (To Party) (1).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Halo",
+    "artist": "Beyoncé",
+    "bpm": 320.02,
+    "bar": 4,
+    "gap": 24515.686519592524,
+    "video": "bnVUHWCynig",
+    "genre": "R&B",
+    "language": "English",
+    "videoGap": 0,
+    "author": "perzu25",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2565",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5894",
+    "file": "Beyoncé-Halo.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -1065,6 +1122,44 @@
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic",
     "volume": 0.91,
     "file": "Britney Spears-Toxic.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Grenade",
+    "artist": "Bruno Mars",
+    "bpm": 221.03,
+    "bar": 4,
+    "gap": 3782.0386372890557,
+    "video": "SR6iYWJxHqs",
+    "year": "2010",
+    "language": "English",
+    "videoGap": 0,
+    "author": "savik1993",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11157",
+    "file": "Bruno Mars-Grenade.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Just The Way You Are",
+    "artist": "Bruno Mars",
+    "bpm": 217.78,
+    "bar": 4,
+    "gap": 31965.724125264027,
+    "video": "LjhCEhWiKXk",
+    "year": "2010",
+    "language": "English",
+    "videoGap": 0,
+    "author": "savik1993",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10573",
+    "file": "Bruno Mars-Just The Way You Are.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -2315,6 +2410,27 @@
     ]
   },
   {
+    "title": "Firework",
+    "artist": "Katy Perry",
+    "bpm": 248.2,
+    "bar": 4,
+    "gap": 14302.602739726028,
+    "video": "QGJuMBdaqIw",
+    "year": "2010",
+    "edition": "michas17j",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "michas17j",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10301",
+    "file": "Katy Perry-Firework.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Hot N Cold",
     "artist": "Katy Perry",
     "bpm": 264,
@@ -2388,6 +2504,25 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kayah&cancion=Testosteron",
     "file": "Kayah-Testosteron.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Sex On Fire",
+    "artist": "Kings Of Leon",
+    "bpm": 311.5,
+    "bar": 4,
+    "gap": 27638.76404494382,
+    "video": "RF0HhrwIwp0",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "klaxoo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3762",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4848",
+    "file": "Kings Of Leon-Sex On Fire.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -2487,6 +2622,44 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kylie%20Minogue&cancion=In%20Your%20Eyes",
     "file": "Kylie Minogue-In Your Eyes.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Just Dance",
+    "artist": "Lady GaGa feat. Colby O'Donis",
+    "bpm": 357,
+    "bar": 4,
+    "gap": 14431.596638655463,
+    "video": "2Abk1jAONjw",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5498",
+    "file": "Lady GaGa feat. Colby O'Donis-Just Dance.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Bad Romance",
+    "artist": "Lady GaGa",
+    "bpm": 238.04,
+    "bar": 4,
+    "gap": 12271.766089732819,
+    "video": "qrO4YZeyl0I",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "michas17j",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7752",
+    "file": "Lady GaGa-Bad Romance.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -3645,6 +3818,26 @@
     ]
   },
   {
+    "title": "Happy",
+    "artist": "Pharrell Williams",
+    "bpm": 319.75,
+    "bar": 4,
+    "gap": 6504.855355746677,
+    "video": "ZbZSe6N_BXs",
+    "year": "2013",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gun8",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=80048",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=16651",
+    "file": "Pharrell Williams-Happy.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Caluj Mnie",
     "artist": "Piersi i Kukiz",
     "bpm": 268.1,
@@ -3700,6 +3893,26 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=76763",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15471",
     "file": "Pokémon-Opening (PL).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Gangnam Style",
+    "artist": "Psy",
+    "bpm": 264,
+    "bar": 4,
+    "gap": 8833.272727272728,
+    "video": "9bZkp7q19f0",
+    "year": "2012",
+    "genre": "K-Pop",
+    "language": "Korean",
+    "videoGap": 0,
+    "author": "vicktoben",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=54350",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14414",
+    "file": "Psy-Gangnam Style.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4535,6 +4748,27 @@
     ]
   },
   {
+    "title": "Eye Of The Tiger",
+    "artist": "Survivor",
+    "bpm": 218.7,
+    "bar": 4,
+    "gap": 48785.540145985404,
+    "video": "btPJPFnesV4",
+    "year": "1982",
+    "edition": "SingStar 80s",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Hammy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=574",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2361",
+    "file": "Survivor-Eye Of The Tiger.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Toxicity",
     "artist": "System of a Down",
     "bpm": 395.8,
@@ -4959,6 +5193,25 @@
     ]
   },
   {
+    "title": "I Gotta Feeling",
+    "artist": "The Black Eyed Peas",
+    "bpm": 256.05,
+    "bar": 4,
+    "gap": 29014.100761570007,
+    "video": "uSD4vsh1zDA",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7281",
+    "file": "The Black Eyed Peas-I Gotta Feeling.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Lonely boy",
     "artist": "The Black Keys",
     "bpm": 397.67,
@@ -5064,6 +5317,27 @@
     ]
   },
   {
+    "title": "Somebody Told Me",
+    "artist": "The Killers",
+    "bpm": 276.04,
+    "bar": 4,
+    "gap": 21046.880886827996,
+    "video": "Y5fBdpreJiU",
+    "year": "2004",
+    "edition": "SingStar Rocks",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=296",
+    "file": "The Killers-Somebody Told Me.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
     "bpm": 397.5,
@@ -5140,6 +5414,27 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You",
     "volume": 1,
     "file": "The Rembrandts-I'll Be There for You.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Paint It, Black",
+    "artist": "The Rolling Stones",
+    "bpm": 318,
+    "bar": 4,
+    "gap": 13814.433962264151,
+    "video": "O4irXQhgMqg",
+    "year": "1966",
+    "edition": "SingStar Rocks",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Peschi",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=263",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2157",
+    "file": "The Rolling Stones-Paint It, Black.json",
     "tracksCount": 1,
     "tracks": [
       {}
