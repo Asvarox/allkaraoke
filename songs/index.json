@@ -452,6 +452,26 @@
     ]
   },
   {
+    "title": "This Is The Life",
+    "artist": "Amy MacDonald",
+    "bpm": 379.96,
+    "bar": 4,
+    "gap": 15258.05400568481,
+    "video": "iRYvuS9OxdA",
+    "year": "2007",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 3,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4314",
+    "file": "Amy MacDonald-This Is The Life.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Barbie Girl",
     "artist": "Aqua",
     "bpm": 260.2,
@@ -509,6 +529,24 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare",
     "file": "Avenged Sevenfold-Nightmare.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Wake Me Up",
+    "artist": "Avicii",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 7511.774193548387,
+    "video": "IcrbM1l_BoI",
+    "language": "English",
+    "videoGap": 0,
+    "author": "snake84",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1645",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15877",
+    "file": "Avicii-Wake Me Up.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -705,6 +743,25 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)",
     "file": "Beastie Boys-(You Gotta) Fight For Your Right (To Party) (1).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Halo",
+    "artist": "Beyoncé",
+    "bpm": 320.02,
+    "bar": 4,
+    "gap": 24515.686519592524,
+    "video": "bnVUHWCynig",
+    "genre": "R&B",
+    "language": "English",
+    "videoGap": 0,
+    "author": "perzu25",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2565",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5894",
+    "file": "Beyoncé-Halo.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -1065,6 +1122,44 @@
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic",
     "volume": 0.91,
     "file": "Britney Spears-Toxic.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Grenade",
+    "artist": "Bruno Mars",
+    "bpm": 221.03,
+    "bar": 4,
+    "gap": 3782.0386372890557,
+    "video": "SR6iYWJxHqs",
+    "year": "2010",
+    "language": "English",
+    "videoGap": 0,
+    "author": "savik1993",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11157",
+    "file": "Bruno Mars-Grenade.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Just The Way You Are",
+    "artist": "Bruno Mars",
+    "bpm": 217.78,
+    "bar": 4,
+    "gap": 31965.724125264027,
+    "video": "LjhCEhWiKXk",
+    "year": "2010",
+    "language": "English",
+    "videoGap": 0,
+    "author": "savik1993",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10573",
+    "file": "Bruno Mars-Just The Way You Are.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -2315,6 +2410,27 @@
     ]
   },
   {
+    "title": "Firework",
+    "artist": "Katy Perry",
+    "bpm": 248.2,
+    "bar": 4,
+    "gap": 14302.602739726028,
+    "video": "QGJuMBdaqIw",
+    "year": "2010",
+    "edition": "michas17j",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "michas17j",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10301",
+    "file": "Katy Perry-Firework.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Hot N Cold",
     "artist": "Katy Perry",
     "bpm": 264,
@@ -2394,6 +2510,45 @@
     ]
   },
   {
+    "title": "Sex On Fire",
+    "artist": "Kings Of Leon",
+    "bpm": 311.5,
+    "bar": 4,
+    "gap": 27638.76404494382,
+    "video": "RF0HhrwIwp0",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "klaxoo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3762",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4848",
+    "file": "Kings Of Leon-Sex On Fire.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Pokolenie",
+    "artist": "Kombi",
+    "bpm": 228,
+    "bar": 4,
+    "gap": 19973.157894736843,
+    "video": "h7ES_rO9bFM",
+    "year": "",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Kombi-Pokolenie.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Zatańczysz ze Mną Jeszcze Raz",
     "artist": "Krzysztof Krawczyk",
     "bpm": 239.98,
@@ -2467,6 +2622,44 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kylie%20Minogue&cancion=In%20Your%20Eyes",
     "file": "Kylie Minogue-In Your Eyes.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Just Dance",
+    "artist": "Lady GaGa feat. Colby O'Donis",
+    "bpm": 357,
+    "bar": 4,
+    "gap": 14431.596638655463,
+    "video": "2Abk1jAONjw",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5498",
+    "file": "Lady GaGa feat. Colby O'Donis-Just Dance.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Bad Romance",
+    "artist": "Lady GaGa",
+    "bpm": 238.04,
+    "bar": 4,
+    "gap": 12271.766089732819,
+    "video": "qrO4YZeyl0I",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "michas17j",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7752",
+    "file": "Lady GaGa-Bad Romance.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -2834,6 +3027,23 @@
     ]
   },
   {
+    "title": "Wyginam śmiało ciało",
+    "artist": "Madagaskar",
+    "bpm": 519.96,
+    "bar": 4,
+    "gap": 1009.6390491576276,
+    "video": "0O2ubAf40fo",
+    "videoGap": 0,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Madagaskar-Wyginam śmiało ciało.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Hung Up",
     "artist": "Madonna",
     "bpm": 500,
@@ -2948,6 +3158,47 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205%20feat.%20Christina%20Aguilera&cancion=Moves%20Like%20Jagger",
     "file": "Maroon 5 feat. Christina Aguilera-Moves Like Jagger.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Harder to breathe",
+    "artist": "Maroon 5",
+    "bpm": 299.99,
+    "bar": 4,
+    "gap": 5009.966665555518,
+    "video": "rV8NHsmVMPE",
+    "year": "2002",
+    "edition": "Guitar Hero 5",
+    "genre": "Pop Rock",
+    "language": "English",
+    "videoGap": -1,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=Harder%20to%20breathe",
+    "file": "Maroon 5-Harder to breathe.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "She Will Be Loved",
+    "artist": "Maroon 5",
+    "bpm": 408,
+    "bar": 4,
+    "gap": 20907.35294117647,
+    "video": "nIjVuRTm-dc",
+    "year": "2002",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "upalula",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved",
+    "file": "Maroon 5-She Will Be Loved.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -3510,6 +3761,25 @@
     ]
   },
   {
+    "title": "Nie płacz Ewka",
+    "artist": "Perfect",
+    "bpm": 112,
+    "bar": 4,
+    "gap": 35695.5,
+    "video": "G_oKsG8KRZI",
+    "genre": "ROCK",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Perfect-Nie płacz Ewka.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Niepokonani",
     "artist": "Perfect",
     "bpm": 152.39,
@@ -3544,6 +3814,26 @@
     "tracksCount": 2,
     "tracks": [
       {},
+      {}
+    ]
+  },
+  {
+    "title": "Happy",
+    "artist": "Pharrell Williams",
+    "bpm": 319.75,
+    "bar": 4,
+    "gap": 6504.855355746677,
+    "video": "ZbZSe6N_BXs",
+    "year": "2013",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gun8",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=80048",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=16651",
+    "file": "Pharrell Williams-Happy.json",
+    "tracksCount": 1,
+    "tracks": [
       {}
     ]
   },
@@ -3603,6 +3893,26 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=76763",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15471",
     "file": "Pokémon-Opening (PL).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Gangnam Style",
+    "artist": "Psy",
+    "bpm": 264,
+    "bar": 4,
+    "gap": 8833.272727272728,
+    "video": "9bZkp7q19f0",
+    "year": "2012",
+    "genre": "K-Pop",
+    "language": "Korean",
+    "videoGap": 0,
+    "author": "vicktoben",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=54350",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14414",
+    "file": "Psy-Gangnam Style.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -3964,6 +4274,46 @@
     ]
   },
   {
+    "title": "Never gonna give you up",
+    "artist": "Rick Astley",
+    "bpm": 227.22,
+    "bar": 4,
+    "gap": 17757.770266701875,
+    "video": "dQw4w9WgXcQ",
+    "year": "1987",
+    "edition": "SingStar English",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up",
+    "file": "Rick Astley-Never gonna give you up.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Livin' La Vida Loca",
+    "artist": "Ricky Martin",
+    "bpm": 177.84,
+    "bar": 4,
+    "gap": 12090.854251012146,
+    "video": "p47fEXGabaY",
+    "edition": "Ante Eppinger",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "pauldiddy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5383",
+    "file": "Ricky Martin-Livin' La Vida Loca.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Umbrella",
     "artist": "Rihanna",
     "bpm": 240,
@@ -4018,6 +4368,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Robbie%20Williams&cancion=Rock%20DJ",
     "file": "Robbie Williams-Rock DJ.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "It Must Have Been Love",
+    "artist": "Roxette",
+    "bpm": 322.4,
+    "bar": 4,
+    "gap": 16981.952853598013,
+    "video": "k2C5TjS2sh4",
+    "year": "1990",
+    "edition": "SingStar Rock Ballads",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Roxette&cancion=It%20Must%20Have%20Been%20Love",
+    "file": "Roxette-It Must Have Been Love.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4114,6 +4485,26 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29",
     "volume": 0.8,
     "file": "Shakira ft. Freshlyground-Waka Waka (This Time for Africa).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Whenever wherever",
+    "artist": "Shakira",
+    "bpm": 423,
+    "bar": 4,
+    "gap": 15984.09219858156,
+    "video": "weRHyjj34ZE",
+    "year": "2001",
+    "genre": "Latino",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Whenever%20wherever",
+    "file": "Shakira-Whenever wherever.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4357,6 +4748,27 @@
     ]
   },
   {
+    "title": "Eye Of The Tiger",
+    "artist": "Survivor",
+    "bpm": 218.7,
+    "bar": 4,
+    "gap": 48785.540145985404,
+    "video": "btPJPFnesV4",
+    "year": "1982",
+    "edition": "SingStar 80s",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Hammy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=574",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2361",
+    "file": "Survivor-Eye Of The Tiger.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Toxicity",
     "artist": "System of a Down",
     "bpm": 395.8,
@@ -4411,6 +4823,25 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11333",
     "volume": 1,
     "file": "T. Love-Chłopaki Nie Płaczą.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Ajrisz",
+    "artist": "T.Love",
+    "bpm": 115,
+    "bar": 4,
+    "gap": 19640.521739130436,
+    "video": "DcQWrT62YDo",
+    "genre": "Rock",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "T.Love-Ajrisz.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4487,6 +4918,24 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=13182",
     "volume": 1,
     "file": "T.Love-Stokrotka.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Warszawa",
+    "artist": "T.Love",
+    "bpm": 268.52,
+    "bar": 4,
+    "gap": 15884.488306271414,
+    "video": "59JGY-K0BeQ",
+    "language": "Polish",
+    "videoGap": 3,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "T.Love-Warszawa.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4744,6 +5193,25 @@
     ]
   },
   {
+    "title": "I Gotta Feeling",
+    "artist": "The Black Eyed Peas",
+    "bpm": 256.05,
+    "bar": 4,
+    "gap": 29014.100761570007,
+    "video": "uSD4vsh1zDA",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7281",
+    "file": "The Black Eyed Peas-I Gotta Feeling.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Lonely boy",
     "artist": "The Black Keys",
     "bpm": 397.67,
@@ -4828,6 +5296,48 @@
     ]
   },
   {
+    "title": "Mr. Brightside",
+    "artist": "The Killers",
+    "bpm": 396.73,
+    "bar": 4,
+    "gap": 9669.963678068209,
+    "video": "gGdGFtwCNBE",
+    "year": "2004",
+    "edition": "Rock Band Store 2008 Vol. 4",
+    "genre": "Alternativa",
+    "language": "English",
+    "videoGap": -1,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside",
+    "file": "The Killers-Mr. Brightside.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Somebody Told Me",
+    "artist": "The Killers",
+    "bpm": 276.04,
+    "bar": 4,
+    "gap": 21046.880886827996,
+    "video": "Y5fBdpreJiU",
+    "year": "2004",
+    "edition": "SingStar Rocks",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=296",
+    "file": "The Killers-Somebody Told Me.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
     "bpm": 397.5,
@@ -4843,6 +5353,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Offspring&cancion=Pretty%20fly%20(for%20a%20white%20guy)",
     "file": "The Offspring-Pretty fly (for a white guy).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Message in a bottle",
+    "artist": "The Police",
+    "bpm": 395.9,
+    "bar": 4,
+    "gap": 6535.102040816327,
+    "video": "MbXWrmQW-OE",
+    "year": "1979",
+    "edition": "Rock Band Track Pack Vol. 2",
+    "genre": "New Wave",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Police&cancion=Message%20in%20a%20bottle",
+    "file": "The Police-Message in a bottle.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4883,6 +5414,27 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You",
     "volume": 1,
     "file": "The Rembrandts-I'll Be There for You.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Paint It, Black",
+    "artist": "The Rolling Stones",
+    "bpm": 318,
+    "bar": 4,
+    "gap": 13814.433962264151,
+    "video": "O4irXQhgMqg",
+    "year": "1966",
+    "edition": "SingStar Rocks",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Peschi",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=263",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2157",
+    "file": "The Rolling Stones-Paint It, Black.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5051,6 +5603,47 @@
     ]
   },
   {
+    "title": "Africa",
+    "artist": "Toto",
+    "bpm": 186.2,
+    "bar": 4,
+    "gap": 23443.9187432286,
+    "video": "FTQbiNvZqaY",
+    "year": "1983",
+    "edition": "SingStar Rock Ballads",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa",
+    "file": "Toto-Africa.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Hold The Line",
+    "artist": "Toto",
+    "bpm": 350,
+    "bar": 4,
+    "gap": 20206.285714285714,
+    "video": "htgr3pvBr-I",
+    "year": "1978",
+    "edition": "SingStar SP English",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Hold%20The%20Line",
+    "file": "Toto-Hold The Line.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Beautiful Day",
     "artist": "U2",
     "bpm": 272.56,
@@ -5130,6 +5723,26 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2851",
     "volume": 0.8,
     "file": "Urszula-Konik na biegunach.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Orla Cien",
+    "artist": "Varius Manx",
+    "bpm": 170,
+    "bar": 4,
+    "gap": 9555.411764705883,
+    "video": "ZVF5x-YzUBY",
+    "year": "",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Varius Manx-Orla Cien.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5251,6 +5864,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas",
     "file": "Wham!-Last Christmas.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Wake Me Up Before You Go-Go",
+    "artist": "Wham",
+    "bpm": 240.2,
+    "bar": 4,
+    "gap": -34.87515451174295,
+    "video": "pIgZ7gMze7A",
+    "year": "1984",
+    "edition": "SingStar '80s",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go",
+    "file": "Wham-Wake Me Up Before You Go-Go.json",
     "tracksCount": 1,
     "tracks": [
       {}
