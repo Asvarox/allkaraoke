@@ -493,6 +493,47 @@
     ]
   },
   {
+    "title": "Be Yourself",
+    "artist": "Audioslave",
+    "bpm": 233.76,
+    "bar": 4,
+    "gap": 34043.30595482546,
+    "video": "WC5FdFlUcl0",
+    "year": "2003",
+    "genre": "Alternative Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Spys4Darwin",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=spys4darwin",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Be%20Yourself",
+    "file": "Audioslave-Be Yourself.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Cochise",
+    "artist": "Audioslave",
+    "bpm": 322,
+    "bar": 4,
+    "gap": 60449.739130434784,
+    "video": "KDMvN45sjo4",
+    "year": "2002",
+    "edition": "SingStar Amped",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Cochise",
+    "file": "Audioslave-Cochise.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Bat Country",
     "artist": "Avenged Sevenfold",
     "bpm": 398.32,
@@ -1526,6 +1567,45 @@
     ]
   },
   {
+    "title": "Shape of you",
+    "artist": "Ed Sheeran",
+    "bpm": 383.95,
+    "bar": 4,
+    "gap": 14855.242739940097,
+    "video": "JGwWNGJdvx8",
+    "year": "2017",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 6,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Shape%20of%20you",
+    "file": "Ed Sheeran-Shape of you.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Thinking out loud",
+    "artist": "Ed Sheeran",
+    "bpm": 316.04,
+    "bar": 4,
+    "gap": 8042.290722693329,
+    "video": "lp-EO5I60KA",
+    "year": "2014",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Thinking%20out%20loud",
+    "file": "Ed Sheeran-Thinking out loud.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Dumka na dwa serca",
     "artist": "Edyta Górniak & Mietek Szcześniak",
     "bpm": 153.95,
@@ -1637,6 +1717,25 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2565",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5607",
     "file": "Enrique Iglesias-Hero.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Tears in Heaven",
+    "artist": "Eric Clapton",
+    "bpm": 306.06,
+    "bar": 4,
+    "gap": 12857.800039208,
+    "video": "JxPj3GAYYZ0",
+    "year": "1992",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Eric%20Clapton&cancion=Tears%20in%20Heaven",
+    "file": "Eric Clapton-Tears in Heaven.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -2383,6 +2482,25 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=997",
     "volume": 0.81,
     "file": "Jet-Are You Gonna Be My Girl.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Can't stop the feeling!",
+    "artist": "Justin Timberlake",
+    "bpm": 226.06,
+    "bar": 4,
+    "gap": 7503.689020613996,
+    "video": "p5RobDomh5U",
+    "year": "2016",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Can't%20stop%20the%20feeling!",
+    "file": "Justin Timberlake-Can't stop the feeling!.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -4213,6 +4331,27 @@
     ]
   },
   {
+    "title": "Ghostbusters",
+    "artist": "Ray Parker Jr.",
+    "bpm": 230.72,
+    "bar": 4,
+    "gap": 25729.479750778817,
+    "video": "Fe93CLbHjxQ",
+    "year": "1984",
+    "edition": "Lego Rock Band",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ray%20Parker%20Jr.&cancion=Ghostbusters",
+    "file": "Ray Parker Jr.-Ghostbusters.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Bogurodzica",
     "artist": "Reprezentacyjny Zespół Artystyczny Wojska Polskiego",
     "bpm": 224.74,
@@ -5290,6 +5429,27 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cranberries&cancion=Zombie",
     "volume": 0.85,
     "file": "The Cranberries-Zombie.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Riders on the storm",
+    "artist": "The Doors",
+    "bpm": 390.04,
+    "bar": 4,
+    "gap": 48644.10255358425,
+    "video": "1hrgT_ZDUvs",
+    "year": "1971",
+    "edition": "Rock Band Store 2010 Vol. 4",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Doors&cancion=Riders%20on%20the%20storm",
+    "file": "The Doors-Riders on the storm.json",
     "tracksCount": 1,
     "tracks": [
       {}
