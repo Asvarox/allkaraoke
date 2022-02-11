@@ -1347,6 +1347,83 @@
     ]
   },
   {
+    "title": "Paradise",
+    "artist": "Coldplay",
+    "bpm": 279.32,
+    "bar": 4,
+    "gap": 33297.66490047258,
+    "video": "1G4isv_Fylg",
+    "year": "2011",
+    "language": "English",
+    "videoGap": 0,
+    "author": "kaim21",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Paradise",
+    "file": "Coldplay-Paradise.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "The Scientist",
+    "artist": "Coldplay",
+    "bpm": 292.4,
+    "bar": 4,
+    "gap": 1025.30779753762,
+    "video": "RB-RcX5DS5A",
+    "year": "2001",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Pacayaka",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pacayaka",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=The%20Scientist",
+    "file": "Coldplay-The Scientist.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Viva la vida",
+    "artist": "Coldplay",
+    "bpm": 276.02,
+    "bar": 4,
+    "gap": 12605.810013767119,
+    "video": "dvgZkm1xWPE",
+    "year": "2008",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida",
+    "file": "Coldplay-Viva la vida.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Yellow",
+    "artist": "Coldplay",
+    "bpm": 552,
+    "bar": 4,
+    "gap": 34694.565217391304,
+    "video": "yKNxeF4KMsY",
+    "year": "2001",
+    "genre": "Britpop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Kodaman",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow",
+    "file": "Coldplay-Yellow.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Dziwny jest ten świat",
     "artist": "Czesław Niemen",
     "bpm": 161.52,
@@ -1561,6 +1638,66 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=robertdjangelux",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ERA&cancion=Ameno",
     "file": "ERA-Ameno.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Galway Girl",
+    "artist": "Ed Sheeran",
+    "bpm": 399.6,
+    "bar": 4,
+    "gap": 1676.4864864864865,
+    "video": "87gWaABqGYs",
+    "year": "2017",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "nezunobaka",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=nezunobaka",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Galway%20Girl",
+    "file": "Ed Sheeran-Galway Girl.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "I See Fire",
+    "artist": "Ed Sheeran",
+    "bpm": 206.6,
+    "bar": 4,
+    "gap": -183.39181286549865,
+    "video": "2fngvQS_PmQ",
+    "year": "2013",
+    "genre": "Soundtracks",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=I%20See%20Fire",
+    "file": "Ed Sheeran-I See Fire.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Photograph",
+    "artist": "Ed Sheeran",
+    "bpm": 217.47,
+    "bar": 4,
+    "gap": 16944.349565457305,
+    "video": "nSDgHBxUbVQ",
+    "year": "2014",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 1,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Photograph",
+    "file": "Ed Sheeran-Photograph.json",
     "tracksCount": 1,
     "tracks": [
       {}
