@@ -4,7 +4,7 @@ import { DetailedScore, PlayerNote, Song } from '../../../../../interfaces';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../../Helpers/isNotesSection';
 
-export const MAX_POINTS = 4000000;
+export const MAX_POINTS = 4_000_000;
 
 const noteTypesMultipliers: DetailedScore = {
     freestyle: 0.25,

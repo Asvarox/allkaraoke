@@ -65,7 +65,7 @@ const styles = {
         players: playerColors,
         lines: {
             normal: {
-                fill: 'grey',
+                fill: 'rgba(127, 127, 127, .7)',
                 stroke: 'black',
                 lineWidth: 1,
             },

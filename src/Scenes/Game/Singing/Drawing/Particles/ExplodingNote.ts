@@ -8,8 +8,8 @@ export default class ExplodingNoteParticle implements Particle {
     public finished = true;
 
     constructor(
-        private x: number,
-        private y: number,
+        x: number,
+        y: number,
         width: number,
         playerNumber: number,
         note: Note,
@@ -19,8 +19,10 @@ export default class ExplodingNoteParticle implements Particle {
             note.type === 'star'
                 ? styles.colors.players[playerNumber].star.fill
                 : styles.colors.players[playerNumber].perfect.fill;
-        for (let i = 0; i < width / 4; i++) {
-            particleManager.add(new TriangleParticle(x + i * 4, y, color));
+
+        const density = width / 6;
+        for (let i = 0; i < density; i++) {
+            particleManager.add(new TriangleParticle(x + i * 5, y, color, (density - i) / 10));
         }
     }
     public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {};
