@@ -1587,6 +1587,46 @@
     ]
   },
   {
+    "title": "Down with the sickness",
+    "artist": "Disturbed",
+    "bpm": 395.9,
+    "bar": 4,
+    "gap": 8704.902753220511,
+    "video": "09LTT0xwdfw",
+    "year": "2000",
+    "edition": "Rock Band 2",
+    "genre": "Nu Metal",
+    "language": "English",
+    "videoGap": 16,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=Down%20with%20the%20sickness",
+    "file": "Disturbed-Down with the sickness.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "The Sound Of Silence",
+    "artist": "Disturbed",
+    "bpm": 213.18,
+    "bar": 4,
+    "gap": 20404.91697157332,
+    "video": "u9Dg-g7t2l4",
+    "year": "2015",
+    "language": "English",
+    "videoGap": 0,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=The%20Sound%20Of%20Silence",
+    "file": "Disturbed-The Sound Of Silence.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Through the fire and flames",
     "artist": "DragonForce",
     "bpm": 200,
@@ -6385,6 +6425,44 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w",
     "file": "Wojciech Bujoczek-Król Szamanów.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "The Fox",
+    "artist": "Ylvis",
+    "bpm": 258.58,
+    "bar": 4,
+    "gap": 11770.844844922267,
+    "video": "jofNR_WkoCE",
+    "year": "2013",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Lorchen",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=lorchen",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ylvis&cancion=The%20Fox",
+    "file": "Ylvis-The Fox.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Sharp Dressed Man",
+    "artist": "ZZ Top",
+    "bpm": 496,
+    "bar": 4,
+    "gap": 23022.016129032258,
+    "video": "Pn2-b_opVTo",
+    "year": "1983",
+    "language": "English",
+    "videoGap": 0,
+    "author": "NoeliaMicaela",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=noeliamicaela",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ZZ%20Top&cancion=Sharp%20Dressed%20Man",
+    "file": "ZZ Top-Sharp Dressed Man.json",
     "tracksCount": 1,
     "tracks": [
       {}
