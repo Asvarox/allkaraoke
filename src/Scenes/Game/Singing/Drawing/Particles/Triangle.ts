@@ -2,7 +2,7 @@ import Particle from '../interfaces';
 
 const initialTtl = 50;
 
-const velocityModifier = 5;
+const velocityModifier = 15;
 
 export default class TriangleParticle implements Particle {
     public finished = false;
