@@ -654,6 +654,27 @@
     ]
   },
   {
+    "title": "Love Shack",
+    "artist": "B52s",
+    "bpm": 266.766,
+    "bar": 4,
+    "gap": 4087.4974687436716,
+    "video": "9SOryJvTAGs",
+    "year": "1989",
+    "edition": "SingStar 90s",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Diddlmaus30mg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1058",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3334",
+    "file": "B52s-Love Shack.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Czerwone korale",
     "artist": "BRAThANKI",
     "bpm": 321.44,
@@ -2665,6 +2686,25 @@
     ]
   },
   {
+    "title": "Don't Stop Believing",
+    "artist": "Journey",
+    "bpm": 242,
+    "bar": 4,
+    "gap": 17753.570538902266,
+    "video": "1k8craCGpgs",
+    "genre": "Classic Rock",
+    "language": "English",
+    "videoGap": -1,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Journey&cancion=Don't%20Stop%20Believing",
+    "file": "Journey-Don't Stop Believing.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Can't stop the feeling!",
     "artist": "Justin Timberlake",
     "bpm": 226.06,
@@ -3517,6 +3557,28 @@
     "file": "Maroon 5-This Love.json",
     "tracksCount": 1,
     "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Ain't No Mountain High Enough [DUET]",
+    "artist": "Marvin Gaye & Tammi Terrell",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 5750.2307692307695,
+    "video": "IC5PL0XImjw",
+    "year": "1967",
+    "edition": "SingStar R&B",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=1169",
+    "file": "Marvin Gaye & Tammi Terrell-Ain't No Mountain High Enough [DUET].json",
+    "tracksCount": 2,
+    "tracks": [
+      {},
       {}
     ]
   },
@@ -6345,6 +6407,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go",
     "file": "Wham-Wake Me Up Before You Go-Go.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "I Wanna Dance With Somebody",
+    "artist": "Whitney Houston",
+    "bpm": 238,
+    "bar": 4,
+    "gap": 29452.59663865546,
+    "video": "eH3giaIzONA",
+    "year": "1987",
+    "edition": "SingStar Anthems",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Lönne",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9523",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5780",
+    "file": "Whitney Houston-I Wanna Dance With Somebody.json",
     "tracksCount": 1,
     "tracks": [
       {}
