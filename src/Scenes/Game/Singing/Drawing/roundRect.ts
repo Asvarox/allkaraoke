@@ -8,7 +8,7 @@ export default function roundRect(
     fill: boolean,
     stroke: boolean,
 ) {
-    const actualWidth = Math.max(width, height);
+    const actualWidth = Math.max(width, height / 2);
     const actualRadius = Math.min(actualWidth / 2, height / 2, radius);
 
     ctx.beginPath();

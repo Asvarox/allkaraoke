@@ -136,7 +136,7 @@ export default class CanvasDrawing {
                 playerNote.note.pitch - distance,
                 distance === 0,
             );
-            if (distance === 0 || w > h) {
+            if (w > h / 2) {
                 roundRect(ctx!, x + displacementX, y + displacementY, w, h, 100, true, true);
 
                 if (playerNote.vibrato) {
