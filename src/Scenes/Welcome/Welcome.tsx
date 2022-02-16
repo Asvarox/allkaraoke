@@ -10,9 +10,11 @@ function Welcome() {
             <Link href="/jukebox">
                 <MenuButton>Jukebox</MenuButton>
             </Link>
-            <Link href="/connect-phone">
-                <MenuButton>Connect Phone</MenuButton>
-            </Link>
+            {false && (
+                <Link href="/connect-phone">
+                    <MenuButton>Connect Phone</MenuButton>
+                </Link>
+            )}
             <Link href="/edit">
                 <MenuButton>Edit songs</MenuButton>
             </Link>
