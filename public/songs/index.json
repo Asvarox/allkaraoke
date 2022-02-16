@@ -888,6 +888,47 @@
     ]
   },
   {
+    "title": "I've Had The Time Of My Life [DUET]",
+    "artist": "Bill Medley & Jennifer Warnes",
+    "bpm": 217.6,
+    "bar": 4,
+    "gap": 986.6972477064219,
+    "video": "4BQLE_RrTSU",
+    "edition": "[DUET]-Songs",
+    "language": "English",
+    "videoGap": -2,
+    "author": "Wegti",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22349",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10541",
+    "file": "Bill Medley & Jennifer Warnes-I've Had The Time Of My Life [DUET].json",
+    "tracksCount": 2,
+    "tracks": [
+      {},
+      {}
+    ]
+  },
+  {
+    "title": "Uptown Girl",
+    "artist": "Billy Joel",
+    "bpm": 258.6,
+    "bar": 4,
+    "gap": 11849.921113689095,
+    "video": "hCuMWrfXG4E",
+    "year": "1983",
+    "edition": "SingStar '80s",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Billy%20Joel&cancion=Uptown%20Girl",
+    "file": "Billy Joel-Uptown Girl.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "The Tide Is High",
     "artist": "Blondie",
     "bpm": 196,
@@ -1439,6 +1480,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow",
     "file": "Coldplay-Yellow.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Girls Just Wanna Have Fun",
+    "artist": "Cyndi Lauper",
+    "bpm": 240.36,
+    "bar": 4,
+    "gap": 23053.497753369946,
+    "video": "PIb6AZdTr-A",
+    "year": "1984",
+    "edition": "SingStar Party English",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Cyndi%20Lauper&cancion=Girls%20Just%20Wanna%20Have%20Fun",
+    "file": "Cyndi Lauper-Girls Just Wanna Have Fun.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -2739,6 +2801,27 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kaiser%20Chiefs&cancion=Ruby",
     "file": "Kaiser Chiefs-Ruby.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Walking On Sunshine",
+    "artist": "Katrina And The Waves",
+    "bpm": 220.32,
+    "bar": 4,
+    "gap": 8723.758169934641,
+    "video": "iPUmE-tne5U",
+    "year": "1985",
+    "edition": "SingStar '80s",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine",
+    "file": "Katrina And The Waves-Walking On Sunshine.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5976,6 +6059,26 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rolling%20Stones&cancion=Satisfaction%20(I%20Can't%20Get%20No)",
     "file": "The Rolling Stones-Satisfaction (I Can't Get No).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "YMCA",
+    "artist": "The Village People",
+    "bpm": 254.3,
+    "bar": 4,
+    "gap": 10866.062992125984,
+    "video": "CS9OO0S5w2k",
+    "year": "1978",
+    "edition": "SingStar",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA",
+    "file": "The Village People-YMCA.json",
     "tracksCount": 1,
     "tracks": [
       {}
