@@ -1938,6 +1938,7 @@
     "author": "Pure6",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Edyta Górniak & Mietek Szcześniak-Dumka na dwa serca.json",
     "tracksCount": 2,
     "tracks": [
@@ -2135,6 +2136,7 @@
     "author": "Pure6",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Feel-A gdy jest już ciemno.json",
     "tracksCount": 1,
     "tracks": [
@@ -2152,6 +2154,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Feel-Jak Anioła Głos.json",
     "tracksCount": 1,
     "tracks": [
@@ -2169,6 +2172,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1,
     "tracks": [
@@ -2469,6 +2473,7 @@
     "author": "Pure6",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Ich Troje-Kaine Grenzen.json",
     "tracksCount": 1,
     "tracks": [
@@ -2485,6 +2490,7 @@
     "videoGap": -2,
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Ich Troje-Powiedz.json",
     "tracksCount": 1,
     "tracks": [
@@ -2901,6 +2907,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine",
+    "volume": 0.9,
     "file": "Katrina And The Waves-Walking On Sunshine.json",
     "tracksCount": 1,
     "tracks": [
@@ -5525,6 +5532,7 @@
     "author": "Pit33",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "T.Love-Ajrisz.json",
     "tracksCount": 1,
     "tracks": [
@@ -5619,6 +5627,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "T.Love-Warszawa.json",
     "tracksCount": 1,
     "tracks": [
@@ -6178,6 +6187,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA",
+    "volume": 0.9,
     "file": "The Village People-YMCA.json",
     "tracksCount": 1,
     "tracks": [
