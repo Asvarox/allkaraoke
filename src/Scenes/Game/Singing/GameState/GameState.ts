@@ -79,10 +79,7 @@ class PlayerState {
             if (beat < 0) return true;
             if (beat < section.start) return false;
             if (index === sections.length - 1) return true;
-            if (sections[index + 1].start > beat) {
-                return true;
-            }
-            return false;
+            return sections[index + 1].start > beat;
         });
     };
 

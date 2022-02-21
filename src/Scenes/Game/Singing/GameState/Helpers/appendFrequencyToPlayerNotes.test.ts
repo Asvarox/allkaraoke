@@ -53,4 +53,45 @@ describe('appendFrequencyToPlayerNotes', () => {
         expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, distance: 0, note: note1 }));
         expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, distance: 0, note: note2 }));
     });
+
+    it('should start player note in half of the note length if singing started late', () => {
+        const playerNotes: PlayerNote[] = [];
+        const note: Note = generateNote(0, 6, { pitch: 69 });
+
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 3, frequency: 440 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 4, frequency: 440 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 5, frequency: 440 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 6, frequency: 440 }, note, 1);
+
+        expect(playerNotes).toContainEqual(expect.objectContaining({ length: 3, start: 3, distance: 0 }));
+    });
+
+    describe('note joining', () => {
+        it('should join notes if sung frequencies are close', () => {
+            const playerNotes: PlayerNote[] = [];
+            const note: Note = generateNote(0, 5, { pitch: 69 });
+
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 0, frequency: 440 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 100, frequency: 440 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 150, frequency: 0 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 200, frequency: 440 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 300, frequency: 440 }, note, 100);
+
+            expect(playerNotes).toContainEqual(expect.objectContaining({ length: 3, start: 0, distance: 0 }));
+        });
+        it('should disjoin notes if sung frequencies are too far apart', () => {
+            const playerNotes: PlayerNote[] = [];
+            const note: Note = generateNote(0, 5, { pitch: 69 });
+
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 0, frequency: 440 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 100, frequency: 440 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 200, frequency: 0 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 300, frequency: 0 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 400, frequency: 440 }, note, 100);
+            appendFrequencyToPlayerNotes(playerNotes, { timestamp: 500, frequency: 440 }, note, 100);
+
+            expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, start: 0, distance: 0 }));
+            expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, start: 4, distance: 0 }));
+        });
+    });
 });

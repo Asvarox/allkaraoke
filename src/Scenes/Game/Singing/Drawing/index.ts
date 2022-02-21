@@ -133,7 +133,7 @@ export default class CanvasDrawing {
                 playerNumber,
                 playerNote.start,
                 playerNote.length,
-                playerNote.note.pitch - distance,
+                playerNote.note.pitch + distance,
                 distance === 0,
             );
             if (w > h / 2) {
@@ -173,6 +173,8 @@ export default class CanvasDrawing {
         if (!isNotesSection(section)) return;
 
         const playerNotes = GameState.getPlayer(player).getPlayerNotes();
+
+        console.log(playerNotes);
 
         const notesToExplode = playerNotes.filter((note) => note.distance === 0 && section.notes.includes(note.note));
 
