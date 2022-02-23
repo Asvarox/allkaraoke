@@ -5195,6 +5195,7 @@
     "author": "sanicsip",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Skid%20Row&cancion=18%20%26%20Life",
+    "volume": 1,
     "file": "Skid Row-18 & Life.json",
     "tracksCount": 1,
     "tracks": [
@@ -5372,6 +5373,7 @@
     "author": "Pit33",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Stachursky-Typ Niepokorny.json",
     "tracksCount": 1,
     "tracks": [
