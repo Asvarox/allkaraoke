@@ -1,5 +1,5 @@
 import { range } from 'lodash';
-import { FrequencyRecord, Note, PlayerNote, Section, Song } from './interfaces';
+import { FrequencyRecord, Note, NoteFrequencyRecord, PlayerNote, Section, Song } from './interfaces';
 
 export const generateNote = (start: number, length = 1, data: Partial<Note> = {}): Note => ({
     start,
@@ -17,7 +17,7 @@ export const generatePlayerNote = (
     length: number = 1,
     isPerfect = false,
     vibrato = false,
-    frequencyRecords: FrequencyRecord[] = [],
+    frequencyRecords: NoteFrequencyRecord[] = [],
 ): PlayerNote => ({
     start: note.start + startOffest,
     length,

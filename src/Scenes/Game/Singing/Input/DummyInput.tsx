@@ -13,7 +13,7 @@ class DummyInput implements InputInterface {
         this.interval = window.setInterval(() => {
             this.timestamp = this.timestamp + 32;
 
-            const secPart = this.timestamp % 1000;
+            const secPart = 0; // this.timestamp % 1000;
             if (secPart > 232 && secPart < 708) {
                 this.frequencies[0] = 0;
                 this.frequencies[1] = 0;

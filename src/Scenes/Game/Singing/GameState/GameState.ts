@@ -65,7 +65,7 @@ class PlayerState {
         const recordSection = this.getSectionByBeat(recordBeat);
 
         if (isNotesSection(recordSection)) {
-            const note = getNoteAtBeat(recordSection, recordBeat, 0.5);
+            const note = getNoteAtBeat(recordSection, recordBeat, 0) ?? getNoteAtBeat(recordSection, recordBeat, 0.5);
 
             if (note) appendFrequencyToPlayerNotes(this.playerNotes, record, note, this.gameState.getSongBeatLength());
         }
@@ -140,6 +140,7 @@ class GameState {
         this.playerStates = singSetup.playerTracks.map((_, index) => new PlayerState(index, this));
     };
     public getSingSetup = () => this.singSetup;
+    public getTolerance = () => this.getSingSetup()?.tolerance ?? 2;
 
     public setDuration = (duration: number) => (this.duration = duration);
     public getDuration = () => this.duration;

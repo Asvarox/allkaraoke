@@ -7,8 +7,6 @@ export default class AubioStrategy implements FrequencyDetectionStrategy {
     public init = async (context: AudioContext, processor: ScriptProcessorNode): Promise<void> => {
         const { Pitch } = await aubio();
 
-        console.log(processor.bufferSize, context.sampleRate);
-
         this.detector = new Pitch('default', processor.bufferSize, processor.bufferSize / 8, context.sampleRate);
         this.detector.setTolerance(0.5);
     };

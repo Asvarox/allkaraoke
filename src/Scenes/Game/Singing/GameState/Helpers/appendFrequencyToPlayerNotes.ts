@@ -1,3 +1,4 @@
+import { noDistanceNoteTypes } from '../../../../../consts';
 import { FrequencyRecord, Note, PlayerNote } from '../../../../../interfaces';
 import { calcDistance } from './calcDistance';
 import detectVibrato from './detectVibrato';
@@ -14,39 +15,58 @@ export function appendFrequencyToPlayerNotes(
     const noteCandidate = {
         ...record,
         beat: Math.max(0, record.timestamp) / beatLength,
-        distance: calcDistance(record.frequency, note.pitch),
+        ...calcDistance(record.frequency, note.pitch),
     };
-    const lastGroup = playerNotes[playerNotes.length - 1];
+    const lastNote = playerNotes[playerNotes.length - 1];
 
     const breakToleranceBeat = SINGING_BREAK_TOLERANCE_MS / beatLength;
 
+    const noteEndBeat = note.start + note.length;
+    const isThisNoteDifferentThanLast = !lastNote || lastNote.note.start !== note.start;
+    const isDistanceDifferent =
+        lastNote.distance !== noteCandidate.distance && !noDistanceNoteTypes.includes(note.type);
+
     if (
-        !lastGroup ||
-        lastGroup.distance !== noteCandidate.distance ||
-        note.start !== lastGroup.note.start ||
-        noteCandidate.beat - (lastGroup.start + lastGroup.length) > breakToleranceBeat
+        isThisNoteDifferentThanLast ||
+        isDistanceDifferent ||
+        noteCandidate.beat - (lastNote.start + lastNote.length) > breakToleranceBeat
     ) {
+        const roundedStart = noteCandidate.beat - breakToleranceBeat < note.start ? note.start : noteCandidate.beat;
         playerNotes.push({
-            start: Math.min(Math.max(note.start, noteCandidate.beat), note.start + note.length),
+            // If this is the first player note for the note, round player note start to note's start
+            start: Math.min(isThisNoteDifferentThanLast ? roundedStart : noteCandidate.beat, noteEndBeat),
             length: 0,
             distance: noteCandidate.distance,
             note,
             isPerfect: false,
             vibrato: false,
-            frequencyRecords: [{ frequency: noteCandidate.frequency, timestamp: noteCandidate.timestamp }],
+            frequencyRecords: [
+                {
+                    frequency: noteCandidate.frequency,
+                    preciseDistance: noteCandidate.preciseDistance,
+                    timestamp: noteCandidate.timestamp,
+                },
+            ],
         });
+
+        // Round the last player note length to the end of the note, so it looks a bit smoother
+        if (lastNote && note.start !== lastNote.note.start) {
+            const lastPlayerNoteEndBeat = lastNote.start + lastNote.length;
+            const lastNoteEndBeat = lastNote.note.start + lastNote.note.length;
+            const roundedLength =
+                lastPlayerNoteEndBeat + breakToleranceBeat > lastNoteEndBeat ? lastNoteEndBeat : lastPlayerNoteEndBeat;
+            lastNote.length = Math.max(0, roundedLength - lastNote.start);
+        }
     } else {
-        lastGroup.length = Math.max(
-            0,
-            Math.min(noteCandidate.beat - lastGroup.start, note.start + note.length - lastGroup.start),
-        );
-        lastGroup.frequencyRecords.push({
+        lastNote.length = Math.min(noteCandidate.beat, note.start + note.length) - lastNote.start;
+        lastNote.frequencyRecords.push({
             frequency: noteCandidate.frequency,
             timestamp: noteCandidate.timestamp,
+            preciseDistance: noteCandidate.preciseDistance,
         });
 
-        lastGroup.isPerfect = lastGroup.distance === 0 && Math.abs(lastGroup.length - lastGroup.note.length) < 0.5;
+        lastNote.isPerfect = lastNote.distance === 0 && Math.abs(lastNote.length - lastNote.note.length) < 0.5;
 
-        lastGroup.vibrato = lastGroup.distance === 0 && detectVibrato(lastGroup.frequencyRecords);
+        lastNote.vibrato = lastNote.distance === 0 && detectVibrato(lastNote.frequencyRecords);
     }
 }

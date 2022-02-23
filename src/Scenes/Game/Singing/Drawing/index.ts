@@ -1,3 +1,4 @@
+import { noDistanceNoteTypes } from '../../../../consts';
 import { PlayerNote } from '../../../../interfaces';
 import GameState from '../GameState/GameState';
 import GameStateEvents from '../GameState/GameStateEvents';
@@ -137,12 +138,37 @@ export default class CanvasDrawing {
                 distance === 0,
             );
             if (w > h / 2) {
-                roundRect(ctx!, x + displacementX, y + displacementY, w, h, 100, true, true);
+                const finalX = x + displacementX;
+                const finalY = y + displacementY;
+                roundRect(ctx!, finalX, finalY, w, h, 100, true, true);
 
                 if (playerNote.vibrato) {
-                    ParticleManager.add(
-                        new VibratoParticle(x + displacementX, y + displacementY, w, h, drawingData.currentTime),
-                    );
+                    ParticleManager.add(new VibratoParticle(finalX, finalY, w, h, drawingData.currentTime));
+                }
+
+                if (
+                    distance === 0 &&
+                    playerNote.frequencyRecords.length > 3 &&
+                    !noDistanceNoteTypes.includes(playerNote.note.type)
+                ) {
+                    ctx.save();
+                    roundRect(ctx, finalX, finalY, w, h, 100, false, false);
+                    ctx.clip();
+
+                    ctx.beginPath();
+                    ctx.strokeStyle = 'rgba(255,255,255, .35)';
+                    ctx.lineWidth = 3;
+                    ctx.moveTo(finalX, finalY + h / 2 - (playerNote.frequencyRecords[0].preciseDistance * h) / 3);
+                    for (let i = 1; i < playerNote.frequencyRecords.length; i++) {
+                        ctx.lineTo(
+                            finalX + i * (w / (playerNote.frequencyRecords.length - 1)),
+                            finalY + h / 2 - (playerNote.frequencyRecords[i].preciseDistance * h) / 3,
+                        );
+                    }
+                    ctx.stroke();
+                    ctx.closePath();
+
+                    ctx.restore();
                 }
             }
         });
@@ -159,22 +185,26 @@ export default class CanvasDrawing {
                 lastNote.note.pitch,
                 true,
             );
+            const preciseDistance = noDistanceNoteTypes.includes(lastNote.note.type)
+                ? 0
+                : lastNote.frequencyRecords.at(-1)!.preciseDistance;
 
-            ParticleManager.add(
-                new RayParticle(x + w + displacementX, y + h / 2 + displacementY, drawingData.currentTime, 1),
-            );
+            const finalX = x + displacementX + w;
+            const finalY = this.getPreciseY(y + displacementY, h, preciseDistance);
+
+            ParticleManager.add(new RayParticle(finalX, finalY, drawingData.currentTime, 1));
         }
 
         false && debugPitches(ctx!, drawingData);
     };
+
+    private getPreciseY = (y: number, h: number, preciseDistance: number) => y + h / 2 - (preciseDistance * h) / 3;
 
     private explodeNotes = (player: number, previousSectionIndex: number) => {
         const section = GameState.getPlayer(player).getPreviousSection();
         if (!isNotesSection(section)) return;
 
         const playerNotes = GameState.getPlayer(player).getPlayerNotes();
-
-        console.log(playerNotes);
 
         const notesToExplode = playerNotes.filter((note) => note.distance === 0 && section.notes.includes(note.note));
 

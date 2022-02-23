@@ -72,6 +72,10 @@ export interface FrequencyRecord {
     frequency: number;
 }
 
+export interface NoteFrequencyRecord extends FrequencyRecord {
+    preciseDistance: number;
+}
+
 export interface PlayerNote {
     start: number;
     length: number;
@@ -79,7 +83,7 @@ export interface PlayerNote {
     note: Note;
     isPerfect: boolean;
     vibrato: boolean;
-    frequencyRecords: FrequencyRecord[];
+    frequencyRecords: NoteFrequencyRecord[];
 }
 
 type UndefinedKeys<T> = {

@@ -27,7 +27,7 @@ export default function debugPitches(ctx: CanvasRenderingContext2D, data: Drawin
         const entryX =
             paddingHorizontal + (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
 
-        const toleratedDistance = calcDistance(entry.frequency, noteAtTheTime.pitch);
+        const { distance: toleratedDistance } = calcDistance(entry.frequency, noteAtTheTime.pitch);
         const final = maxPitch - (noteAtTheTime.pitch + toleratedDistance) + pitchPadding;
 
         ctx?.fillRect(entryX, 10 + regionPaddingTop + final * pitchStepHeight, 5, 10);

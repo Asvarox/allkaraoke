@@ -54,6 +54,18 @@ describe('appendFrequencyToPlayerNotes', () => {
         expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, distance: 0, note: note2 }));
     });
 
+    it('should append records of different frequencies for the same freestyle note into same note', () => {
+        const playerNotes: PlayerNote[] = [];
+        const note: Note = generateNote(0, 3, { pitch: 69, type: 'freestyle' });
+
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 0, frequency: 440 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 1, frequency: 320 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 2, frequency: 380 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 3, frequency: 440 }, note, 1);
+
+        expect(playerNotes).toContainEqual(expect.objectContaining({ length: 3, distance: 0, note }));
+    });
+
     it('should start player note in half of the note length if singing started late', () => {
         const playerNotes: PlayerNote[] = [];
         const note: Note = generateNote(0, 6, { pitch: 69 });

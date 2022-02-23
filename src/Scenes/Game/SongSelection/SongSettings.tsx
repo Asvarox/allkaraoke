@@ -65,7 +65,6 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         setMode((currentMode) => {
             const modes = Object.values(GAME_MODE).filter((val) => isNumber(val));
             const currentModeIndex = modes.indexOf(currentMode);
-            console.log(modes, currentModeIndex);
 
             return (currentModeIndex + 1) % modes.length;
         });
