@@ -274,6 +274,26 @@
     ]
   },
   {
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 13065,
+    "video": "hLQl3WQQoQ0",
+    "year": "2011",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "nauce",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=nauce",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)",
+    "file": "Adele-Someone Like You (Studio).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Crazy",
     "artist": "Aerosmith",
     "bpm": 321.08,
@@ -811,6 +831,27 @@
     ]
   },
   {
+    "title": "Stayin' Alive",
+    "artist": "Bee Gees",
+    "bpm": 396.61,
+    "bar": 4,
+    "gap": 13318.39873146913,
+    "video": "fNFzfwLM72c",
+    "year": "1977",
+    "edition": "Rock Band Store 2010 Vol. 4",
+    "genre": "Disco",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bee%20Gees&cancion=Stayin'%20Alive",
+    "file": "Bee Gees-Stayin' Alive.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Halo",
     "artist": "Beyoncé",
     "bpm": 320.02,
@@ -888,7 +929,7 @@
     ]
   },
   {
-    "title": "I've Had The Time Of My Life [DUET]",
+    "title": "I've Had The Time Of My Life",
     "artist": "Bill Medley & Jennifer Warnes",
     "bpm": 217.6,
     "bar": 4,
@@ -1363,6 +1404,25 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful",
     "file": "Christina Aguilera-Beautiful.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "A Thousand Years",
+    "artist": "Christina Perri",
+    "bpm": 376.1,
+    "bar": 4,
+    "gap": 19531.924754054773,
+    "video": "rtOvBOTyX00",
+    "year": "2011",
+    "language": "English",
+    "videoGap": 3,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Perri&cancion=A%20Thousand%20Years",
+    "file": "Christina Perri-A Thousand Years.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -1878,6 +1938,7 @@
     "author": "Pure6",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Edyta Górniak & Mietek Szcześniak-Dumka na dwa serca.json",
     "tracksCount": 2,
     "tracks": [
@@ -2075,6 +2136,7 @@
     "author": "Pure6",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Feel-A gdy jest już ciemno.json",
     "tracksCount": 1,
     "tracks": [
@@ -2092,6 +2154,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Feel-Jak Anioła Głos.json",
     "tracksCount": 1,
     "tracks": [
@@ -2109,6 +2172,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1,
     "tracks": [
@@ -2295,6 +2359,26 @@
     ]
   },
   {
+    "title": "You're the One that I Want",
+    "artist": "Grease (John Travolta & Olivia Newton-John)",
+    "bpm": 221.79,
+    "bar": 4,
+    "gap": 7434.575085725022,
+    "video": "itRFjzQICJU",
+    "year": "1978",
+    "genre": "Musical",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Grease%20(John%20Travolta%20%26%20Olivia%20Newton-John)&cancion=You're%20the%20One%20that%20I%20Want",
+    "file": "Grease (John Travolta & Olivia Newton-John)-You're the One that I Want.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
     "title": "Boulevard of Broken Dreams",
     "artist": "Green Day",
     "bpm": 333.7,
@@ -2389,6 +2473,7 @@
     "author": "Pure6",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Ich Troje-Kaine Grenzen.json",
     "tracksCount": 1,
     "tracks": [
@@ -2405,6 +2490,7 @@
     "videoGap": -2,
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Ich Troje-Powiedz.json",
     "tracksCount": 1,
     "tracks": [
@@ -2821,6 +2907,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine",
+    "volume": 0.9,
     "file": "Katrina And The Waves-Walking On Sunshine.json",
     "tracksCount": 1,
     "tracks": [
@@ -3644,7 +3731,7 @@
     ]
   },
   {
-    "title": "Ain't No Mountain High Enough [DUET]",
+    "title": "Ain't No Mountain High Enough",
     "artist": "Marvin Gaye & Tammi Terrell",
     "bpm": 260,
     "bar": 4,
@@ -4039,6 +4126,26 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17979",
     "volume": 0.91,
     "file": "Myslovitz-Scenariusz Dla Moich Sąsiadów.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "Unwritten",
+    "artist": "Natasha Bedingfield",
+    "bpm": 328,
+    "bar": 4,
+    "gap": 13393.90243902439,
+    "video": "cFFBSSntZgs",
+    "year": "2004",
+    "genre": "Pop Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Natasha%20Bedingfield&cancion=Unwritten",
+    "file": "Natasha Bedingfield-Unwritten.json",
     "tracksCount": 1,
     "tracks": [
       {}
@@ -5088,6 +5195,7 @@
     "author": "sanicsip",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Skid%20Row&cancion=18%20%26%20Life",
+    "volume": 1,
     "file": "Skid Row-18 & Life.json",
     "tracksCount": 1,
     "tracks": [
@@ -5265,6 +5373,7 @@
     "author": "Pit33",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "Stachursky-Typ Niepokorny.json",
     "tracksCount": 1,
     "tracks": [
@@ -5425,6 +5534,7 @@
     "author": "Pit33",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "T.Love-Ajrisz.json",
     "tracksCount": 1,
     "tracks": [
@@ -5519,6 +5629,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "volume": 0.9,
     "file": "T.Love-Warszawa.json",
     "tracksCount": 1,
     "tracks": [
@@ -6078,6 +6189,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA",
+    "volume": 0.9,
     "file": "The Village People-YMCA.json",
     "tracksCount": 1,
     "tracks": [
@@ -6348,6 +6460,26 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2851",
     "volume": 0.8,
     "file": "Urszula-Konik na biegunach.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ]
+  },
+  {
+    "title": "A thousand miles",
+    "artist": "Vanessa Carlton",
+    "bpm": 380,
+    "bar": 4,
+    "gap": 29595.15789473684,
+    "video": "Cwkej79U3ek",
+    "year": "2002",
+    "genre": "Pop Internacional",
+    "language": "English",
+    "videoGap": 19,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Vanessa%20Carlton&cancion=A%20thousand%20miles",
+    "file": "Vanessa Carlton-A thousand miles.json",
     "tracksCount": 1,
     "tracks": [
       {}
