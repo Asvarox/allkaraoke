@@ -22,7 +22,6 @@ module.exports = (on, config) => {
             // auto open devtools
             launchOptions.args.push('--mute-audio');
         }
-        console.log(launchOptions);
         return launchOptions;
     });
 };
