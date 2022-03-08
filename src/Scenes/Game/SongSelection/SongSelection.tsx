@@ -1,146 +1,105 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { useQuery } from 'react-query';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { focusable } from '../../../Elements/cssMixins';
-import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import { SingSetup, SongPreview } from '../../../interfaces';
+import { focused } from '../../../Elements/cssMixins';
+import useWindowSize from '../../../Hooks/useWindowSize';
+import { SingSetup } from '../../../interfaces';
 import styles from '../Singing/Drawing/styles';
-import FocusedSong from './FocusedSong';
+import { SongCard, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
+import SongPreview from './SongPreview';
+import useSongSelection from './useSongSelection';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
     preselectedSong: string | null;
 }
 
+const padding = 50;
+const leftPad = 50;
+const gap = 40;
+const perRow = 4;
+
+const focusMultiplier = 1.2;
+
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
-    const songList = useQuery<SongPreview[]>('songList', () =>
-        fetch('./songs/index.json').then((response) => response.json()),
-    );
-    const [focusedSong, setFocusedSong] = useState<number>(0);
-    const [keyboardControl, setKeyboardControl] = useState(true);
-
+    const [{ previewTop, previewLeft }, setPositions] = useState({ previewTop: 0, previewLeft: 0 });
+    const { focusedSong, setFocusedSong, groupedSongList, keyboardControl, songPreview, setKeyboardControl } =
+        useSongSelection(preselectedSong);
     const list = useRef<HTMLDivElement | null>(null);
+    const { width } = useWindowSize();
     useEffect(() => {
-        (list.current?.querySelector(`[data-index="${focusedSong}"]`) as HTMLDivElement)?.scrollIntoView?.({
-            behavior: 'smooth',
-            inline: 'center',
-            block: 'center',
-        });
-        if (songList.data) window.location.hash = `/game/${encodeURIComponent(songList.data[focusedSong].file)}`;
-    }, [list, focusedSong, songList.data]);
-
-    useEffect(() => {
-        if (songList.data && preselectedSong) {
-            const newIndex = songList.data.findIndex((song) => song.file === preselectedSong);
-
-            if (newIndex > -1) setFocusedSong(newIndex);
+        const song = list.current?.querySelector(`[data-index="${focusedSong}"]`) as HTMLDivElement;
+        if (song) {
+            song.scrollIntoView?.({
+                behavior: 'smooth',
+                inline: 'center',
+                block: 'center',
+            });
+            setPositions({ previewLeft: song.offsetLeft, previewTop: song.offsetTop });
         }
-    }, [songList.data, preselectedSong]);
+    }, [list, focusedSong, groupedSongList]);
 
-    const getSongCount = () => songList?.data?.length ?? 1;
+    const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : setFocusedSong(index));
+    if (!groupedSongList) return <>Loading</>;
 
-    const nagivateSong = (indexChange: number) => {
-        setFocusedSong((i) => {
-            const change = i + indexChange;
-
-            return change >= getSongCount() || change < 0 ? i : change;
-        });
-    };
-    useKeyboardNav(
-        {
-            onEnter: () => setKeyboardControl(false),
-            onDownArrow: () => nagivateSong(4),
-            onUpArrow: () => nagivateSong(-4),
-            onLeftArrow: () => nagivateSong(-1),
-            onRightArrow: () => nagivateSong(+1),
-        },
-        keyboardControl,
-        [songList.data],
-    );
-    const groupedSongList = useMemo(() => {
-        if (!songList.data) return [];
-
-        const groups: Array<{ letter: string; songs: Array<{ index: number; song: SongPreview }> }> = [];
-
-        songList.data.forEach((song, index) => {
-            const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
-            let group = groups.find((group) => group.letter === firstCharacter);
-            if (!group) {
-                group = { letter: firstCharacter, songs: [] };
-                groups.push(group);
-            }
-
-            group.songs.push({ index, song });
-        });
-
-        return groups;
-    }, [songList.data]);
-
-    if (!songList.data) return <>Loading</>;
+    const entryWidth = !!width ? (width - leftPad - padding - gap * (perRow - 1)) / perRow : 1;
+    const entryHeight = (entryWidth / 16) * 9;
 
     return (
-        <SongSelectionContainer>
-            <FocusedSong
-                songPreview={songList.data[focusedSong]}
-                onPlay={onSongSelected}
-                keyboardControl={!keyboardControl}
-                onExitKeyboardControl={() => setKeyboardControl(true)}
-            />
-            <SongListContainer ref={list} active={keyboardControl}>
-                {groupedSongList.map((group) => (
-                    <SongsGroupContainer key={group.letter}>
-                        <SongsGroupHeader>{group.letter}</SongsGroupHeader>
-                        <SongsGroup>
-                            {group.songs.map(({ song, index }) => (
-                                <SongListEntry
-                                    key={song.file}
-                                    onClick={() => setFocusedSong(index)}
-                                    video={song.video}
-                                    focused={keyboardControl && index === focusedSong}
-                                    data-index={index}
-                                    data-test={`song-${song.file}`}>
-                                    <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
+        <SongListContainer ref={list} active={keyboardControl}>
+            {songPreview && (
+                <SongPreview
+                    songPreview={songPreview}
+                    onPlay={onSongSelected}
+                    keyboardControl={!keyboardControl}
+                    onExitKeyboardControl={() => setKeyboardControl(true)}
+                    top={previewTop - (entryHeight - entryHeight) / 2}
+                    left={previewLeft - (entryWidth - entryWidth) / 2}
+                    width={entryWidth}
+                    height={entryHeight}
+                />
+            )}
+            {groupedSongList.map((group) => (
+                <SongsGroupContainer key={group.letter}>
+                    <SongsGroupHeader>{group.letter}</SongsGroupHeader>
+                    <SongsGroup>
+                        {group.songs.map(({ song, index }) => (
+                            <SongListEntry
+                                width={entryWidth}
+                                height={entryHeight}
+                                key={song.file}
+                                onClick={() => onSongClick(index)}
+                                video={song.video}
+                                focused={keyboardControl && index === focusedSong}
+                                data-index={index}
+                                data-test={`song-${song.file}`}>
+                                <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
-                                    <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
-                                </SongListEntry>
-                            ))}
-                        </SongsGroup>
-                    </SongsGroupContainer>
-                ))}
-            </SongListContainer>
-        </SongSelectionContainer>
+                                <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
+                            </SongListEntry>
+                        ))}
+                    </SongsGroup>
+                </SongsGroupContainer>
+            ))}
+        </SongListContainer>
     );
 }
 
-const SongSelectionContainer = styled.div`
-    margin: 0 auto;
-    width: 1100px;
-    position: relative;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-`;
-
-const SongsGroupContainer = styled.div`
-    position: relative;
-`;
+const SongsGroupContainer = styled.div``;
 
 const SongsGroup = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: ${gap}px;
 `;
 const SongsGroupHeader = styled.div`
     display: inline-block;
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 32px;
     position: sticky;
     z-index: 1;
-    top: 0;
+    top: -${gap}px;
     font-weight: bold;
     color: ${styles.colors.text.active};
     -webkit-text-stroke: 0.5px black;
@@ -148,68 +107,27 @@ const SongsGroupHeader = styled.div`
 `;
 
 const SongListContainer = styled.div<{ active: boolean }>`
+    position: relative;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    min-height: 0px;
-    gap: 10px;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    gap: ${gap}px;
+    padding: ${padding}px;
+    padding-left: ${leftPad}px;
     overflow-y: scroll;
-    ${(props) =>
-        !props.active &&
-        `
-        filter: blur(5px);
-    `}
+    max-height: 100vh;
 `;
 
-const SongListEntry = styled.div.attrs<{ video: string; focused: boolean }>((props) => ({
-    style: {
-        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
-    },
-}))<{ video: string; focused: boolean }>`
-    width: 260px;
-    height: ${(260 / 16) * 9}px;
-    cursor: pointer;
-    background-size: cover;
-    background-position: center center;
+const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width: number; height: number }>`
+    width: ${(props) => props.width}px;
+    height: ${(props) => props.height}px;
+    background-blend-mode: ${(props) => (props.focused ? 'normal' : 'luminosity')};
+    transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
+    background-color: rgb(52, 80, 107);
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: column;
+    padding: 0.5em;
 
-    border-radius: 5px;
-    padding: 5px;
-    box-sizing: border-box;
-
-    opacity: 0.8;
-    z-index: 0;
     transition: 200ms;
-    box-shadow: inset 0px 0px 1px 1px black;
-    ${focusable}
-`;
 
-const SongListEntryDetails = styled.span`
-    background: rgba(0, 0, 0, 0.7);
-
-    width: auto;
-    display: inline-block;
-    padding: 5px;
-    margin: 5px 0 0 0;
-    font-weight: bold;
-    -webkit-text-stroke: 0.5px black;
-    color: white;
-
-    text-align: right;
-`;
-
-const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
-    color: ${styles.colors.text.active};
-    font-size: 17px;
-`;
-
-const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
-    color: white;
-    font-size: 19px;
+    ${(props) => props.focused && focused}
 `;

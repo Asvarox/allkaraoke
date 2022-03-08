@@ -61,7 +61,7 @@ const Background = styled.div`
     top: 0;
     position: fixed;
     background: white;
-    background: linear-gradient(277deg, ${redStroke()} 0%, ${redFill()} 50%, ${blueFill()} 50%, ${blueStroke()} 100%);
+    background: linear-gradient(277deg, ${redStroke()} 0%, ${redFill()} 15%, ${blueFill()} 15%, ${blueStroke()} 100%);
     width: 100vw;
     height: 100vh;
 `;

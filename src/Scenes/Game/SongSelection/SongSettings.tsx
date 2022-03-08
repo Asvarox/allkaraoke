@@ -6,7 +6,7 @@ import { focusable } from '../../../Elements/cssMixins';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from '../../../interfaces';
 import styles from '../Singing/Drawing/styles';
-import { ContentElement } from '../SongPage';
+import { SongListEntryDetails } from './SongCard';
 
 interface Props {
     songPreview: SongPreview;
@@ -135,16 +135,14 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
 
 const GameConfiguration = styled.div`
     width: auto;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 25px;
+    font-size: 0.35em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 0.5em;
 `;
 
-const ConfigurationPosition = styled(ContentElement)<{ focused: boolean }>`
+const ConfigurationPosition = styled(SongListEntryDetails)<{ focused: boolean }>`
     cursor: pointer;
 
     ${focusable}
