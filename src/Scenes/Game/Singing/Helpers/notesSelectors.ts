@@ -8,13 +8,13 @@ export const getFirstNoteStartFromSections = (sections: Section[]) => {
 };
 export const getLastNoteEndFromSections = (sections: Section[]) => {
     const notesSections = sections.filter(isNotesSection);
-    const lastSection = notesSections[notesSections.length - 1];
+    const lastSection = notesSections.at(-1)!;
 
     return getLastNoteEnd(lastSection);
 };
 
 export const getLastNoteEnd = (section: NotesSection) => {
-    const lastNote = section.notes[section.notes.length - 1];
+    const lastNote = section.notes.at(-1)!;
 
     return lastNote.start + lastNote.length;
 };

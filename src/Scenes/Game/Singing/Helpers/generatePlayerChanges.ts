@@ -10,7 +10,7 @@ export const segmentSections = (sections: Section[], beatLength: number): NotesS
     const segments: NotesSection[][] = [[firstSection]];
 
     noteSections.forEach((section) => {
-        const lastSegment = segments[segments.length - 1];
+        const lastSegment = segments.at(-1)!;
 
         const lastSectionEnd = getLastNoteEndFromSections(lastSegment);
         const firstSectionNoteStart = getFirstNoteStartFromSections([section]);

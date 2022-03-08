@@ -4,8 +4,7 @@ import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 export default function calculateProperBPM(desiredEndMs: number, song: Song) {
     const notesSections = song.tracks[0].sections.filter(isNotesSection);
 
-    const lastSection = notesSections[notesSections.length - 1];
-    const lastNote = lastSection.notes[lastSection.notes.length - 1];
+    const lastNote = notesSections.at(-1)?.notes.at(-1)!;
 
     const desiredLengthMs = desiredEndMs - song.gap;
     const bpmLength = lastNote.start + lastNote.length;

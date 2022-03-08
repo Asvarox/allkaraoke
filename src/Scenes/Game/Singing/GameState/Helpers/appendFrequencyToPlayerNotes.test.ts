@@ -45,10 +45,10 @@ describe('appendFrequencyToPlayerNotes', () => {
         const note1: Note = generateNote(0, 2, { pitch: 69 });
         const note2: Note = generateNote(3, 5, { pitch: 69 });
 
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 0, frequency: 440 }, note1, 1);
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 1, frequency: 440 }, note1, 1);
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 4, frequency: 440 }, note2, 1);
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 5, frequency: 440 }, note2, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 0, frequency: 440 }, note1, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 100, frequency: 440 }, note1, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 400, frequency: 440 }, note2, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 500, frequency: 440 }, note2, 100);
 
         expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, distance: 0, note: note1 }));
         expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, distance: 0, note: note2 }));
@@ -70,10 +70,10 @@ describe('appendFrequencyToPlayerNotes', () => {
         const playerNotes: PlayerNote[] = [];
         const note: Note = generateNote(0, 6, { pitch: 69 });
 
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 3, frequency: 440 }, note, 1);
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 4, frequency: 440 }, note, 1);
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 5, frequency: 440 }, note, 1);
-        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 6, frequency: 440 }, note, 1);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 300, frequency: 440 }, note, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 400, frequency: 440 }, note, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 500, frequency: 440 }, note, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 600, frequency: 440 }, note, 100);
 
         expect(playerNotes).toContainEqual(expect.objectContaining({ length: 3, start: 3, distance: 0 }));
     });

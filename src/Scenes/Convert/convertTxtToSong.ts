@@ -81,7 +81,7 @@ export default function convertTxtToSong(
             sections.push({ start: Number(line.split('-')[1].trim()), notes: [], type: 'notes' });
         } else if (Object.keys(typesMap).includes(line[0])) {
             // Note
-            const lastSection = sections[sections.length - 1];
+            const lastSection = sections.at(-1);
 
             const [type, start, length, pitch, ...lyrics] = split;
 

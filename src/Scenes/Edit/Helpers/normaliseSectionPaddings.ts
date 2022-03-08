@@ -16,7 +16,7 @@ const shortenNoteSections = (sections: NotesSection[]): NotesSection[] =>
     });
 
 const getSectionEnd = (section: NotesSection) => {
-    const lastNote = section.notes[section.notes.length - 1];
+    const lastNote = section.notes.at(-1)!;
     return lastNote.start + lastNote.length;
 };
 

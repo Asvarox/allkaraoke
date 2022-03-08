@@ -60,7 +60,7 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
 
     const shiftSection = (newStart: number) => {
         setChangeRecords((records) => {
-            const lastRecord = records[records.length - 1];
+            const lastRecord = records.at(-1);
 
             if (
                 lastRecord &&
@@ -69,7 +69,7 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
                 lastRecord.section === selectedSection
             ) {
                 const newRecords = [...records];
-                (newRecords[records.length - 1] as ChangeRecordShift).shift = newStart;
+                (newRecords.at(-1)! as ChangeRecordShift).shift = newStart;
 
                 return newRecords;
             }

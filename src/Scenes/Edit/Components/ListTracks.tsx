@@ -17,8 +17,7 @@ export default function ListTracks({ song, player, beatLength }: Props) {
                 const notesSections = sections.filter(isNotesSection);
                 const firstNote = notesSections[0].notes[0];
 
-                const lastSection = notesSections[notesSections.length - 1];
-                const lastNote = lastSection.notes[lastSection.notes.length - 1];
+                const lastNote = notesSections.at(-1)?.notes.at(-1);
 
                 if (!firstNote || !lastNote || !beatLength) return null;
 

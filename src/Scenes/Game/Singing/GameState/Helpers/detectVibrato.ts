@@ -17,7 +17,7 @@ export default function detectVibrato(data: FrequencyRecord[]): boolean {
                 change,
             });
         } else {
-            const lastChange = opChangePoints[opChangePoints.length - 1];
+            const lastChange = opChangePoints.at(-1)!;
             if (lastChange.change !== change) {
                 opChangePoints.push({
                     ...data[i],

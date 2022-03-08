@@ -17,14 +17,14 @@ export function appendFrequencyToPlayerNotes(
         beat: Math.max(0, record.timestamp) / beatLength,
         ...calcDistance(record.frequency, note.pitch),
     };
-    const lastNote = playerNotes[playerNotes.length - 1];
+    const lastNote = playerNotes.at(-1);
 
     const breakToleranceBeat = SINGING_BREAK_TOLERANCE_MS / beatLength;
 
     const noteEndBeat = note.start + note.length;
     const isThisNoteDifferentThanLast = !lastNote || lastNote.note.start !== note.start;
     const isDistanceDifferent =
-        lastNote.distance !== noteCandidate.distance && !noDistanceNoteTypes.includes(note.type);
+        !lastNote || (lastNote.distance !== noteCandidate.distance && !noDistanceNoteTypes.includes(note.type));
 
     if (
         isThisNoteDifferentThanLast ||
