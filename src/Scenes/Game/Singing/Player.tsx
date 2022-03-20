@@ -122,30 +122,32 @@ function Player(
                     />
                 </Overlay>
             )}
-            <YouTube
-                ref={player}
-                videoId={song.video}
-                opts={{
-                    width: '0',
-                    height: '0',
-                    playerVars: {
-                        autoplay: autoplay ? 1 : 0,
-                        showinfo: 0,
-                        disablekb: 0,
-                        rel: 0,
-                        fs: 0,
-                        controls: showControls ? 1 : 0,
-                        // @ts-expect-error
-                        cc_load_policy: 3,
-                        iv_load_policy: 3,
-                        start: song.videoGap,
-                    },
-                }}
-                onStateChange={(e) => {
-                    setCurrentStatus(e.data);
-                    onStatusChange?.(e.data);
-                }}
-            />
+            <PlayerContainer>
+                <YouTube
+                    ref={player}
+                    videoId={song.video}
+                    opts={{
+                        width: '0',
+                        height: '0',
+                        playerVars: {
+                            autoplay: autoplay ? 1 : 0,
+                            showinfo: 0,
+                            disablekb: 0,
+                            rel: 0,
+                            fs: 0,
+                            controls: showControls ? 1 : 0,
+                            // @ts-expect-error
+                            cc_load_policy: 3,
+                            iv_load_policy: 3,
+                            start: song.videoGap,
+                        },
+                    }}
+                    onStateChange={(e) => {
+                        setCurrentStatus(e.data);
+                        onStatusChange?.(e.data);
+                    }}
+                />
+            </PlayerContainer>
         </Container>
     );
 }
@@ -163,6 +165,11 @@ const Overlay = styled.div`
     height: 100%;
     top: 0;
     left: 0;
+`;
+
+const PlayerContainer = styled.div`
+    overflow: hidden;
+    height: 100vh;
 `;
 
 export default forwardRef(Player);

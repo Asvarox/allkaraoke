@@ -5,8 +5,7 @@ import { Button } from '../../../Elements/Button';
 import { focusable } from '../../../Elements/cssMixins';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from '../../../interfaces';
-import styles from '../Singing/Drawing/styles';
-import { SongListEntryDetails } from './SongCard';
+import { Switcher } from './Switcher';
 
 interface Props {
     songPreview: SongPreview;
@@ -94,36 +93,40 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
 
     return (
         <GameConfiguration>
-            <ConfigurationPosition
+            <Switcher
+                label="Difficulty"
+                value={difficultyNames[tolerance]}
                 focused={isFocused(Element.DIFFICULTY)}
-                onClick={changeMode}
+                onClick={changeTolerance}
                 data-test="difficulty-setting"
-                data-test-value={difficultyNames[tolerance]}>
-                Difficulty: <ConfigValue>{difficultyNames[tolerance]}</ConfigValue>
-            </ConfigurationPosition>
-            <ConfigurationPosition
+                data-test-value={difficultyNames[tolerance]}
+            />
+            <Switcher
+                label="Mode"
+                value={gameModeNames[mode]}
                 focused={isFocused(Element.MODE)}
                 onClick={changeMode}
                 data-test="game-mode-setting"
-                data-test-value={gameModeNames[mode]}>
-                Mode: <ConfigValue>{gameModeNames[mode]}</ConfigValue>
-            </ConfigurationPosition>
+                data-test-value={gameModeNames[mode]}
+            />
             {songPreview.tracksCount > 1 && (
                 <>
-                    <ConfigurationPosition
+                    <Switcher
+                        label="Player 1"
+                        value={getPlayerTrackName(songPreview.tracks, playerTracks[0])}
                         onClick={() => togglePlayerTrack(0)}
                         focused={isFocused(Element.PLAYER_1_TRACK)}
                         data-test="player-1-track-setting"
-                        data-test-value={playerTracks[0] + 1}>
-                        Player 1: <ConfigValue>{getPlayerTrackName(songPreview.tracks, playerTracks[0])}</ConfigValue>
-                    </ConfigurationPosition>
-                    <ConfigurationPosition
+                        data-test-value={playerTracks[0] + 1}
+                    />
+                    <Switcher
+                        label="Player 2"
+                        value={getPlayerTrackName(songPreview.tracks, playerTracks[1])}
                         onClick={() => togglePlayerTrack(1)}
                         focused={isFocused(Element.PLAYER_2_TRACK)}
                         data-test="player-2-track-setting"
-                        data-test-value={playerTracks[1] + 1}>
-                        Player 2: <ConfigValue>{getPlayerTrackName(songPreview.tracks, playerTracks[1])}</ConfigValue>
-                    </ConfigurationPosition>
+                        data-test-value={playerTracks[1] + 1}
+                    />
                 </>
             )}
             <PlayButton onClick={startSong} focused={isFocused(Element.PLAY)} data-test="play-song-button">
@@ -140,16 +143,6 @@ const GameConfiguration = styled.div`
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5em;
-`;
-
-const ConfigurationPosition = styled(SongListEntryDetails)<{ focused: boolean }>`
-    cursor: pointer;
-
-    ${focusable}
-`;
-
-const ConfigValue = styled.span`
-    color: ${styles.colors.text.active};
 `;
 
 const PlayButton = styled(Button)<{ focused: boolean }>`

@@ -1,21 +1,24 @@
 import Particle from '../interfaces';
+import spreadValue from './spreadValue';
 
-const initialTtl = 50;
+const baseTtl = 50;
+const ttlSpread = 25;
 
-const velocityModifier = 15;
+const velocityModifier = 20;
 
 export default class TriangleParticle implements Particle {
     public finished = false;
 
     private ttl;
+    private startingTtl;
     private velocityX;
     private velocityY;
     private width;
     private initialAngle;
     private heightModifier;
 
-    constructor(private x: number, private y: number, private color: string, delay: number) {
-        this.ttl = initialTtl + delay; // initialTtl + (initialTtl / 4) * (Math.random() - 0.5);
+    constructor(private x: number, private y: number, private color: string, private delay: number) {
+        this.startingTtl = this.ttl = spreadValue(baseTtl, ttlSpread);
         this.velocityX = velocityModifier * Math.random() - velocityModifier / 2;
         this.velocityY = velocityModifier * Math.random() - velocityModifier / 2;
         this.width = 25;
@@ -23,9 +26,10 @@ export default class TriangleParticle implements Particle {
         this.heightModifier = Math.random();
     }
     public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
-        if (this.ttl <= initialTtl) {
-            const percentage = this.ttl / initialTtl;
-            const elapsedTicks = initialTtl - this.ttl;
+        if (this.delay-- > 0) return;
+        if (true) {
+            const percentage = this.ttl / this.startingTtl;
+            const elapsedTicks = this.startingTtl - this.ttl;
 
             const width = this.width * percentage;
             const height = this.width * this.heightModifier * percentage;

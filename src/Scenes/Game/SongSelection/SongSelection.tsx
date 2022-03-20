@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { focused } from '../../../Elements/cssMixins';
-import useWindowSize from '../../../Hooks/useWindowSize';
+import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup } from '../../../interfaces';
 import styles from '../Singing/Drawing/styles';
 import { SongCard, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
@@ -25,8 +25,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const { focusedSong, setFocusedSong, groupedSongList, keyboardControl, songPreview, setKeyboardControl } =
         useSongSelection(preselectedSong);
     const list = useRef<HTMLDivElement | null>(null);
-    const { width } = useWindowSize();
+    const { width, handleResize } = useViewportSize();
+
     useEffect(() => {
+        handleResize(); // Recalculate width/height to account possible scrollbar appearing
+
         const song = list.current?.querySelector(`[data-index="${focusedSong}"]`) as HTMLDivElement;
         if (song) {
             song.scrollIntoView?.({
@@ -36,12 +39,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             });
             setPositions({ previewLeft: song.offsetLeft, previewTop: song.offsetTop });
         }
-    }, [list, focusedSong, groupedSongList]);
+    }, [width, list, focusedSong, groupedSongList]);
 
     const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : setFocusedSong(index));
-    if (!groupedSongList) return <>Loading</>;
+    if (!groupedSongList || !width) return <>Loading</>;
 
-    const entryWidth = !!width ? (width - leftPad - padding - gap * (perRow - 1)) / perRow : 1;
+    const entryWidth = (width - leftPad - padding - gap * (perRow - 1)) / perRow;
     const entryHeight = (entryWidth / 16) * 9;
 
     return (
@@ -52,8 +55,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     onPlay={onSongSelected}
                     keyboardControl={!keyboardControl}
                     onExitKeyboardControl={() => setKeyboardControl(true)}
-                    top={previewTop - (entryHeight - entryHeight) / 2}
-                    left={previewLeft - (entryWidth - entryWidth) / 2}
+                    top={previewTop}
+                    left={previewLeft}
                     width={entryWidth}
                     height={entryHeight}
                 />
@@ -116,18 +119,20 @@ const SongListContainer = styled.div<{ active: boolean }>`
     padding-left: ${leftPad}px;
     overflow-y: scroll;
     max-height: 100vh;
+    box-sizing: border-box;
 `;
 
 const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width: number; height: number }>`
     width: ${(props) => props.width}px;
     height: ${(props) => props.height}px;
-    background-blend-mode: ${(props) => (props.focused ? 'normal' : 'luminosity')};
-    transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     background-color: rgb(52, 80, 107);
 
     padding: 0.5em;
 
     transition: 200ms;
 
+    background-blend-mode: ${(props) => (props.focused ? 'normal' : 'luminosity')};
+    transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
+    ${(props) => props.focused && 'z-index: 2;'}
     ${(props) => props.focused && focused}
 `;

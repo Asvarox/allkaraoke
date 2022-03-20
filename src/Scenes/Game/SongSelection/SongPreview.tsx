@@ -3,7 +3,7 @@ import YouTube, { PlayerVars } from 'react-youtube';
 import styled from 'styled-components';
 import { focused } from '../../../Elements/cssMixins';
 import useDebounce from '../../../Hooks/useDebounce';
-import useWindowSize from '../../../Hooks/useWindowSize';
+import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup, SongPreview } from '../../../interfaces';
 import styles from '../Singing/Drawing/styles';
 import { SongCard, SongCardContainer, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
@@ -46,7 +46,7 @@ export default function SongPreviewComponent({
 }: Props) {
     const [showVideo, setShowVideo] = useState(false);
     const player = useRef<YouTube | null>(null);
-    const { width: windowWidth } = useWindowSize();
+    const { width: windowWidth } = useViewportSize();
 
     const active = keyboardControl;
 

@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
-import useWindowSize from '../../../Hooks/useWindowSize';
+import useViewportSize from '../../../Hooks/useViewportSize';
 import { GAME_MODE, SingSetup, Song } from '../../../interfaces';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
 import normaliseGap from '../../Edit/Helpers/normaliseGap';
@@ -35,7 +35,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
         () => fetch(`./songs/${songFile}`).then((response) => response.json()),
         { staleTime: Infinity, select: processSong },
     );
-    const { width, height } = useWindowSize();
+    const { width, height } = useViewportSize();
     const [isEnded, setIsEnded] = useState(false);
     const [playerState, setPlayerState] = useState(YouTube.PlayerState.UNSTARTED);
 

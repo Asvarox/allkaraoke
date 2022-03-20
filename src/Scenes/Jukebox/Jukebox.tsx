@@ -7,7 +7,7 @@ import { Link, useLocation } from 'wouter';
 import { Button } from '../../Elements/Button';
 import { focusable } from '../../Elements/cssMixins';
 import useKeyboardNav from '../../Hooks/useKeyboardNav';
-import useWindowSize from '../../Hooks/useWindowSize';
+import useViewportSize from '../../Hooks/useViewportSize';
 import { SongPreview } from '../../interfaces';
 import SongPage from '../Game/SongPage';
 
@@ -26,7 +26,7 @@ enum Element {
 
 function Jukebox(props: Props) {
     const [, setLocation] = useLocation();
-    const { width, height } = useWindowSize();
+    const { width, height } = useViewportSize();
     const player = useRef<YouTube | null>(null);
     const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
     const songList = useQuery<SongPreview[]>('songList', () =>
