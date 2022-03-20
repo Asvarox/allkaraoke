@@ -1,57 +1,29 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { MenuButton, MenuContainer } from '../../../../Elements/Menu';
-import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
+import useKeyboard from '../../../../Hooks/useKeyboard';
 
 interface Props {
     onResume: () => void;
     onExit: () => void;
 }
 
-enum Element {
-    RESUME,
-    EXIT,
-}
-
 export default function PauseMenu({ onResume, onExit }: Props) {
     const menuRef = useRef<null | HTMLButtonElement>(null);
-    const [focusedElement, setFocusedEelement] = useState<number>(0);
-    const enabledElements = [Element.RESUME, Element.EXIT];
-
-    const isFocused = (elem: Element) => enabledElements[focusedElement] === elem;
-
-    const handleNavigation = (i: number, elements: Element[]) => {
-        setFocusedEelement((elements.length + i + focusedElement) % elements.length);
-    };
-
-    const handleEnter = () => {
-        if (isFocused(Element.RESUME)) onResume();
-        else if (isFocused(Element.EXIT)) onExit();
-    };
 
     useEffect(() => {
         menuRef.current?.focus();
     }, [menuRef]);
 
-    useKeyboardNav(
-        {
-            onUpArrow: () => handleNavigation(1, enabledElements),
-            onDownArrow: () => handleNavigation(-1, enabledElements),
-            onEnter: () => handleEnter(),
-        },
-        true,
-        [enabledElements],
-    );
+    const { register } = useKeyboard();
 
     return (
         <Container>
             <MenuContainer>
-                <MenuButton onClick={onResume} focused={isFocused(Element.RESUME)} ref={menuRef}>
+                <MenuButton {...register('resume', onResume)} ref={menuRef}>
                     Resume song
                 </MenuButton>
-                <MenuButton onClick={onExit} focused={isFocused(Element.EXIT)}>
-                    Exit song
-                </MenuButton>
+                <MenuButton {...register('resume', onExit)}>Exit song</MenuButton>
             </MenuContainer>
         </Container>
     );

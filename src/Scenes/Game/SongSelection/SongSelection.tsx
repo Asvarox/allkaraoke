@@ -117,7 +117,7 @@ const SongListContainer = styled.div<{ active: boolean }>`
     gap: ${gap}px;
     padding: ${padding}px;
     padding-left: ${leftPad}px;
-    overflow-y: scroll;
+    overflow-y: overlay;
     max-height: 100vh;
     box-sizing: border-box;
 `;

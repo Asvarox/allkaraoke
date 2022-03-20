@@ -8,7 +8,7 @@ interface Props {
     focused: boolean;
     label: ReactNode;
     value: ReactNode;
-    onClick: () => void;
+    onClick?: () => void;
 }
 
 export const Switcher = ({ focused, label, value, onClick, ...restProps }: Props) => (

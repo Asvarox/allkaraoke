@@ -129,10 +129,14 @@ body {
     font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 html {
-    overflow-y: overlay;
+    overflow: overlay;
 }
 
 code {

@@ -1,25 +1,29 @@
 import { Link } from 'wouter';
 import { MenuButton, MenuContainer } from '../../Elements/Menu';
+import useKeyboard from '../../Hooks/useKeyboard';
 
 function Welcome() {
+    const { register } = useKeyboard();
     return (
         <MenuContainer>
             <Link href="/game">
-                <MenuButton data-test="sing-a-song">Sing a song</MenuButton>
+                <MenuButton data-test="sing-a-song" {...register('sing a song')}>
+                    Sing a song
+                </MenuButton>
             </Link>
             <Link href="/jukebox">
-                <MenuButton>Jukebox</MenuButton>
+                <MenuButton {...register('jukebox')}>Jukebox</MenuButton>
             </Link>
             {false && (
                 <Link href="/connect-phone">
-                    <MenuButton>Connect Phone</MenuButton>
+                    <MenuButton {...register('connect phone')}>Connect Phone</MenuButton>
                 </Link>
             )}
             <Link href="/edit">
-                <MenuButton>Edit songs</MenuButton>
+                <MenuButton {...register('edit songs')}>Edit songs</MenuButton>
             </Link>
             <Link href="/convert">
-                <MenuButton>Convert UltraStar .txt</MenuButton>
+                <MenuButton {...register('convert')}>Convert UltraStar .txt</MenuButton>
             </Link>
         </MenuContainer>
     );
