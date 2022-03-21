@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import useKeyboardNav from './useKeyboardNav';
+import useMenuSound from './useMenuSound';
+
+const click = require('../click.wav');
 
 /**
  * todo: Bug: for some reason elementList is duplicated eg.
@@ -13,6 +16,8 @@ export default function useKeyboard(enabled = true, onBackspace?: () => void) {
     const actions = useRef<Record<string, () => void>>({});
 
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
+
+    useMenuSound(currentlySelected);
 
     const handleNavigation = (i: number) => {
         const currentIndex = currentlySelected ? elementList.current.indexOf(currentlySelected) : 0;

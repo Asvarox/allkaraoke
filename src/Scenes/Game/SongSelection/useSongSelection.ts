@@ -1,17 +1,53 @@
-import { useEffect, useMemo, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
+import { navigate } from '../../../Hooks/useHashLocation';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
+import useMenuSound from '../../../Hooks/useMenuSound';
 import { SongPreview } from '../../../interfaces';
 
+const useKeyboardTwoDimensionalNavigation = (
+    enabled: boolean,
+    songList: SongPreview[],
+    focusedSong: number,
+    setFocusedSong: Dispatch<SetStateAction<number>>,
+    onEnter: () => void,
+) => {
+    const getSongCount = () => songList.length ?? 1;
+
+    const navigateToSong = (indexChange: number) => {
+        setFocusedSong((i) => {
+            const change = i + indexChange;
+
+            return change >= getSongCount() || change < 0 ? i : change;
+        });
+    };
+    useKeyboardNav(
+        {
+            onEnter,
+            onDownArrow: () => navigateToSong(4),
+            onUpArrow: () => navigateToSong(-4),
+            onLeftArrow: () => navigateToSong(-1),
+            onRightArrow: () => navigateToSong(+1),
+            onBackspace: () => navigate('/'),
+        },
+        enabled,
+        [songList],
+    );
+    useMenuSound(focusedSong);
+};
+
 export default function useSongSelection(preselectedSong: string | null) {
+    const [focusedSong, setFocusedSong] = useState<number>(0);
     const songList = useQuery<SongPreview[]>('songList', () =>
         fetch('./songs/index.json').then((response) => response.json()),
     );
-    const [focusedSong, setFocusedSong] = useState<number>(0);
     const [keyboardControl, setKeyboardControl] = useState(true);
+    useKeyboardTwoDimensionalNavigation(keyboardControl, songList.data ?? [], focusedSong, setFocusedSong, () =>
+        setKeyboardControl(false),
+    );
 
     useEffect(() => {
-        if (songList.data) window.location.hash = `/game/${encodeURIComponent(songList.data[focusedSong].file)}`;
+        if (songList.data) navigate(`/game/${encodeURIComponent(songList.data[focusedSong].file)}`);
     }, [focusedSong, songList.data]);
 
     useEffect(() => {
@@ -22,26 +58,6 @@ export default function useSongSelection(preselectedSong: string | null) {
         }
     }, [songList.data, preselectedSong]);
 
-    const getSongCount = () => songList?.data?.length ?? 1;
-
-    const nagivateSong = (indexChange: number) => {
-        setFocusedSong((i) => {
-            const change = i + indexChange;
-
-            return change >= getSongCount() || change < 0 ? i : change;
-        });
-    };
-    useKeyboardNav(
-        {
-            onEnter: () => setKeyboardControl(false),
-            onDownArrow: () => nagivateSong(4),
-            onUpArrow: () => nagivateSong(-4),
-            onLeftArrow: () => nagivateSong(-1),
-            onRightArrow: () => nagivateSong(+1),
-        },
-        keyboardControl,
-        [songList.data],
-    );
     const groupedSongList = useMemo(() => {
         if (!songList.data) return [];
 

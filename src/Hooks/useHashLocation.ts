@@ -7,7 +7,7 @@ const currentLocation = () => {
     return window.location.hash.replace(/^#/, '') || '/';
 };
 
-const navigate = (to: string) => (window.location.hash = to);
+export const navigate = (to: string) => (window.location.hash = to);
 
 const useHashLocation: BaseLocationHook = () => {
     const [loc, setLoc] = useState(currentLocation());
