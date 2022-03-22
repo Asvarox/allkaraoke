@@ -1,4 +1,4 @@
-import { FrequencyRecord, PlayerNote, Song } from '../../../../interfaces';
+import { FrequencyRecord, PlayerNote, Section, Song } from '../../../../interfaces';
 import isNotesSection from '../Helpers/isNotesSection';
 
 export const pitchPadding = 6;
@@ -48,8 +48,12 @@ export interface DrawingData {
     currentTime: number;
     currentSectionIndex: number;
     frequencies: FrequencyRecord[];
-    playersNotes: PlayerNote[];
+    playerNotes: PlayerNote[];
+    currentPlayerNotes: PlayerNote[];
     track: number;
     regionPaddingTop: number;
     regionHeight: number;
+
+    currentBeat: number;
+    currentSection: Section;
 }

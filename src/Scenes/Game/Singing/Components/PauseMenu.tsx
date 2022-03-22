@@ -23,7 +23,7 @@ export default function PauseMenu({ onResume, onExit }: Props) {
                 <MenuButton {...register('resume', onResume)} ref={menuRef}>
                     Resume song
                 </MenuButton>
-                <MenuButton {...register('resume', onExit)}>Exit song</MenuButton>
+                <MenuButton {...register('exit', onExit)}>Exit song</MenuButton>
             </MenuContainer>
         </Container>
     );

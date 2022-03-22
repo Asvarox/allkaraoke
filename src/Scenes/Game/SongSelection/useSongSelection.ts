@@ -2,8 +2,8 @@ import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
 import { navigate } from '../../../Hooks/useHashLocation';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import useMenuSound from '../../../Hooks/useMenuSound';
 import { SongPreview } from '../../../interfaces';
+import { menuBack, menuEnter, menuNavigate } from '../../../SoundManager';
 
 const useKeyboardTwoDimensionalNavigation = (
     enabled: boolean,
@@ -14,7 +14,18 @@ const useKeyboardTwoDimensionalNavigation = (
 ) => {
     const getSongCount = () => songList.length ?? 1;
 
+    const handleEnter = () => {
+        menuEnter.play();
+        onEnter();
+    };
+
+    const handleBackspace = () => {
+        menuBack.play();
+        navigate('/');
+    };
+
     const navigateToSong = (indexChange: number) => {
+        menuNavigate.play();
         setFocusedSong((i) => {
             const change = i + indexChange;
 
@@ -23,17 +34,16 @@ const useKeyboardTwoDimensionalNavigation = (
     };
     useKeyboardNav(
         {
-            onEnter,
+            onEnter: handleEnter,
             onDownArrow: () => navigateToSong(4),
             onUpArrow: () => navigateToSong(-4),
             onLeftArrow: () => navigateToSong(-1),
             onRightArrow: () => navigateToSong(+1),
-            onBackspace: () => navigate('/'),
+            onBackspace: handleBackspace,
         },
         enabled,
         [songList],
     );
-    useMenuSound(focusedSong);
 };
 
 export default function useSongSelection(preselectedSong: string | null) {

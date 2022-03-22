@@ -1954,6 +1954,11 @@
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
 
+"@types/howler@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@types/howler/-/howler-2.2.6.tgz#84389d2d09c1cdfaa99514cbe9f0363ae091cc5c"
+  integrity sha512-9cLZICB6CFNIbwk0kJGvIvlEVI7D0dbbtcj00Uin81jQSMeKafaLq7r3v0RWQOX8BkM+KqboJaOeH5S/qpNqJg==
+
 "@types/html-minifier-terser@^6.0.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-6.1.0.tgz#4fc33a00c1d0c16987b1a20cf92d20614c55ac35"
@@ -5352,7 +5357,7 @@ hotkeys-js@3.8.7:
   resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.8.7.tgz#c16cab978b53d7242f860ca3932e976b92399981"
   integrity sha512-ckAx3EkUr5XjDwjEHDorHxRO2Kb7z6Z2Sxul4MbBkN8Nho7XDslQsgMJT+CiJ5Z4TgRxxvKHEpuLE3imzqy4Lg==
 
-howler@^2.1.3:
+howler@^2.1.3, howler@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/howler/-/howler-2.2.3.tgz#a2eff9b08b586798e7a2ee17a602a90df28715da"
   integrity sha512-QM0FFkw0LRX1PR8pNzJVAY25JhIWvbKMBFM4gqk+QdV+kPXOhleWGCB6AiAF/goGjIHK2e/nIElplvjQwhr0jg==

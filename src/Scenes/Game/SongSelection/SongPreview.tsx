@@ -125,7 +125,9 @@ export default function SongPreviewComponent({
                         opts={{ playerVars }}
                         onStateChange={({ data }) => {
                             if (data === YouTube.PlayerState.ENDED) {
-                                setShowVideo(false);
+                                // setShowVideo(false);
+                                player.current?.getInternalPlayer().seekTo(start);
+                                player.current?.getInternalPlayer().playVideo();
                             } else if (data === YouTube.PlayerState.PLAYING) {
                                 setShowVideo(true);
                             }

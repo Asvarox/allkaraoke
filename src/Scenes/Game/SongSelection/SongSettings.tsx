@@ -89,7 +89,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
                     />
                 </>
             )}
-            <PlayButton {...register('play', startSong)} data-test="play-song-button">
+            <PlayButton {...register('play', startSong, true)} data-test="play-song-button">
                 Play <span style={{ fontSize: '40px' }}>»</span>
             </PlayButton>
         </GameConfiguration>

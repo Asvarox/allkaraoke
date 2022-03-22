@@ -17,7 +17,9 @@ function Welcome() {
             </Link>
             {false && (
                 <Link href="/connect-phone">
-                    <MenuButton {...register('connect phone')}>Connect Phone</MenuButton>
+                    <MenuButton {...register('connect phone', () => navigate('/connect-phone'))}>
+                        Connect Phone
+                    </MenuButton>
                 </Link>
             )}
             <Link href="/edit">

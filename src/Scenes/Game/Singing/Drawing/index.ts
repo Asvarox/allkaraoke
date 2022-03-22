@@ -1,5 +1,5 @@
 import { noDistanceNoteTypes } from '../../../../consts';
-import { PlayerNote } from '../../../../interfaces';
+import { NotesSection, PlayerNote } from '../../../../interfaces';
 import GameState from '../GameState/GameState';
 import GameStateEvents from '../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../Helpers/getPlayerNoteDistance';
@@ -46,58 +46,20 @@ export default class CanvasDrawing {
         GameStateEvents.sectionChange.unsubscribe(this.explodeNotes);
     };
 
-    private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
-        const playerState = GameState.getPlayer(playerNumber);
-        const regionPaddingTop = playerNumber * this.canvas.height * 0.5;
-        const regionHeight = this.canvas.height * 0.5;
-        const drawingData: DrawingData = {
-            song: GameState.getSong()!,
-            songBeatLength: GameState.getSongBeatLength(),
-            minPitch: playerState.getMinPitch(),
-            maxPitch: playerState.getMaxPitch(),
-            canvas: this.canvas,
-            currentTime: GameState.getCurrentTime(),
-            currentSectionIndex: playerState.getCurrentSectionIndex(),
-            frequencies: playerState.getPlayerFrequencies(),
-            playersNotes: playerState.getPlayerNotes(),
-            playerNumber,
-            track: playerState.getTrackIndex(),
-            regionPaddingTop,
-            regionHeight,
-        };
-
-        if (drawingData.currentSectionIndex < 0) {
-            console.error(`currentSection is negative`, playerNumber, drawingData.track, drawingData.currentTime);
-            return;
-        }
-
-        const { currentSection } = calculateData(drawingData);
-        if (!isNotesSection(currentSection)) return;
-
-        const currentPlayerNotes = drawingData.playersNotes.filter((note) => note.note.start >= currentSection.start);
-
-        const currentBeat = GameState.getCurrentBeat();
-
+    private calculateDisplacements = (currentSection: NotesSection, drawingData: DrawingData) => {
         const displacements: Record<number, [number, number]> = {};
 
         currentSection.notes.forEach((note) => {
-            if (note.type === 'star') {
-                applyColor(ctx, styles.colors.lines.star);
-            } else if (note.type === 'freestyle' || note.type === 'rap') {
-                applyColor(ctx, styles.colors.lines.freestyle);
-            } else {
-                applyColor(ctx, styles.colors.lines.normal);
-            }
-
-            const sungNotesStreak = drawingData.playersNotes
+            const sungNotesStreak = drawingData.playerNotes
                 .filter((sungNote) => sungNote.note.start === note.start)
                 .filter(
                     (sungNote) =>
-                        sungNote.note.start + sungNote.note.length + 30 >= currentBeat && sungNote.distance === 0,
+                        sungNote.note.start + sungNote.note.length + 30 >= drawingData.currentBeat &&
+                        sungNote.distance === 0,
                 )
                 .map((sungNote) =>
-                    sungNote.start + 30 < currentBeat
-                        ? sungNote.length - (currentBeat - 30 - sungNote.start)
+                    sungNote.start + 30 < drawingData.currentBeat
+                        ? sungNote.length - (drawingData.currentBeat - 30 - sungNote.start)
                         : sungNote.length,
                 )
                 .reduce((currLength, sungNoteLength) => Math.min(currLength + sungNoteLength, 30), 0);
@@ -107,31 +69,89 @@ export default class CanvasDrawing {
             const displacementY = (Math.random() - 0.5) * displacementRange;
 
             displacements[note.start] = [displacementX, displacementY];
+        });
 
-            const { x, y, w, h } = this.getNoteCoords(playerNumber, note.start, note.length, note.pitch, true);
+        return displacements;
+    };
+
+    private getDrawingData = (playerNumber: number, sectionShift = 0): DrawingData => {
+        const playerState = GameState.getPlayer(playerNumber);
+        const currentSectionIndex = playerState.getCurrentSectionIndex() + sectionShift ?? 0;
+        const song = GameState.getSong()!;
+        const track = playerState.getTrackIndex();
+        const currentSection = song.tracks[track].sections[currentSectionIndex];
+        const playerNotes = playerState.getPlayerNotes();
+
+        return {
+            song,
+            songBeatLength: GameState.getSongBeatLength(),
+            minPitch: playerState.getMinPitch(),
+            maxPitch: playerState.getMaxPitch(),
+            canvas: this.canvas,
+            currentTime: GameState.getCurrentTime(),
+            frequencies: playerState.getPlayerFrequencies(),
+            playerNotes,
+            currentPlayerNotes: playerNotes.filter((note) => note.note.start >= currentSection.start),
+            playerNumber,
+            track: playerState.getTrackIndex(),
+            regionPaddingTop: playerNumber * this.canvas.height * 0.5,
+            regionHeight: this.canvas.height * 0.5,
+            currentBeat: GameState.getCurrentBeat(),
+            currentSectionIndex,
+            currentSection,
+        };
+    };
+
+    private drawNotesToSing = (
+        ctx: CanvasRenderingContext2D,
+        drawingData: DrawingData,
+        displacements: Record<number, [number, number]>,
+    ) => {
+        if (!isNotesSection(drawingData.currentSection)) return;
+
+        drawingData.currentSection.notes.forEach((note) => {
+            if (note.type === 'star') {
+                applyColor(ctx, styles.colors.lines.star);
+            } else if (note.type === 'freestyle' || note.type === 'rap') {
+                applyColor(ctx, styles.colors.lines.freestyle);
+            } else {
+                applyColor(ctx, styles.colors.lines.normal);
+            }
+
+            const [displacementX, displacementY] = displacements[note.start];
+
+            const { x, y, w, h } = this.getNoteCoords(drawingData, note.start, note.length, note.pitch, true);
 
             roundRect(ctx!, x + displacementX, y + displacementY, w, h, 100, true, true);
         });
+    };
 
-        currentPlayerNotes.forEach((playerNote) => {
+    private drawSungNotes = (
+        ctx: CanvasRenderingContext2D,
+        drawingData: DrawingData,
+        displacements: Record<number, [number, number]>,
+    ) => {
+        if (!isNotesSection(drawingData.currentSection)) return;
+
+        drawingData.currentPlayerNotes.forEach((playerNote) => {
             const distance = getPlayerNoteDistance(playerNote);
 
             if (playerNote.isPerfect && playerNote.note.type === 'star') {
-                applyColor(ctx, styles.colors.players[playerNumber].starPerfect);
+                applyColor(ctx, styles.colors.players[drawingData.playerNumber].starPerfect);
             } else if (playerNote.isPerfect) {
-                applyColor(ctx, styles.colors.players[playerNumber].perfect);
+                applyColor(ctx, styles.colors.players[drawingData.playerNumber].perfect);
             } else if (playerNote.note.type === 'star' && distance === 0) {
-                applyColor(ctx, styles.colors.players[playerNumber].star);
+                applyColor(ctx, styles.colors.players[drawingData.playerNumber].star);
             } else if (distance === 0) {
-                applyColor(ctx, styles.colors.players[playerNumber].hit);
+                applyColor(ctx, styles.colors.players[drawingData.playerNumber].hit);
             } else {
-                applyColor(ctx, styles.colors.players[playerNumber].miss);
+                applyColor(ctx, styles.colors.players[drawingData.playerNumber].miss);
             }
 
             const [displacementX, displacementY] = (distance === 0 && displacements[playerNote.note.start]) || [0, 0];
 
             const { x, y, w, h } = this.getNoteCoords(
-                playerNumber,
+                drawingData,
                 playerNote.start,
                 playerNote.length,
                 playerNote.note.pitch + distance,
@@ -172,14 +192,25 @@ export default class CanvasDrawing {
                 }
             }
         });
+    };
 
-        const lastNote = getPlayerNoteAtBeat(currentPlayerNotes, currentBeat - 185 / drawingData.songBeatLength);
+    private drawFlare = (
+        ctx: CanvasRenderingContext2D,
+        drawingData: DrawingData,
+        displacements: Record<number, [number, number]>,
+    ) => {
+        if (!isNotesSection(drawingData.currentSection)) return;
+
+        const lastNote = getPlayerNoteAtBeat(
+            drawingData.currentPlayerNotes,
+            drawingData.currentBeat - 185 / drawingData.songBeatLength,
+        );
 
         if (lastNote && lastNote.distance === 0) {
             const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
 
             const { x, y, w, h } = this.getNoteCoords(
-                playerNumber,
+                drawingData,
                 lastNote.start,
                 lastNote.length,
                 lastNote.note.pitch,
@@ -194,60 +225,49 @@ export default class CanvasDrawing {
 
             ParticleManager.add(new RayParticle(finalX, finalY, drawingData.currentTime, 1));
         }
+    };
+
+    private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
+        const drawingData = this.getDrawingData(playerNumber);
+
+        if (drawingData.currentSectionIndex < 0) {
+            console.error(`currentSection is negative`, playerNumber, drawingData.track, drawingData.currentTime);
+            return;
+        }
+
+        const { currentSection } = calculateData(drawingData);
+        if (!isNotesSection(currentSection)) return;
+
+        const displacements = this.calculateDisplacements(currentSection, drawingData);
+
+        this.drawNotesToSing(ctx, drawingData, displacements);
+        this.drawSungNotes(ctx, drawingData, displacements);
+        this.drawFlare(ctx, drawingData, displacements);
 
         false && debugPitches(ctx!, drawingData);
     };
 
     private getPreciseY = (y: number, h: number, preciseDistance: number) => y + h / 2 - (preciseDistance * h) / 3;
 
-    private explodeNotes = (player: number, previousSectionIndex: number) => {
-        const section = GameState.getPlayer(player).getPreviousSection();
+    private explodeNotes = (playerNumber: number) => {
+        const section = GameState.getPlayer(playerNumber).getPreviousSection();
         if (!isNotesSection(section)) return;
+        const drawingData = this.getDrawingData(playerNumber, -1);
 
-        const playerNotes = GameState.getPlayer(player).getPlayerNotes();
-
-        const notesToExplode = playerNotes.filter((note) => note.distance === 0 && section.notes.includes(note.note));
+        const notesToExplode = drawingData.playerNotes.filter(
+            (note) =>
+                (note.distance === 0 || noDistanceNoteTypes.includes(note.note.type)) &&
+                section.notes.includes(note.note),
+        );
 
         notesToExplode.forEach((note) => {
-            const { x, y, w, h } = this.getNoteCoords(
-                player,
-                note.start,
-                note.length,
-                note.note.pitch,
-                true,
-                previousSectionIndex,
-            );
-            ParticleManager.add(new ExplodingNoteParticle(x, y + h / 2, w, player, note.note, ParticleManager));
+            const { x, y, w, h } = this.getNoteCoords(drawingData, note.start, note.length, note.note.pitch, true);
+            ParticleManager.add(new ExplodingNoteParticle(x, y + h / 2, w, playerNumber, note.note, ParticleManager));
         });
     };
 
-    private getNoteCoords = (
-        playerNumber: number,
-        start: number,
-        length: number,
-        pitch: number,
-        big: boolean,
-        sectionIndex?: number,
-    ) => {
-        const playerState = GameState.getPlayer(playerNumber);
-        const regionPaddingTop = playerNumber * this.canvas.height * 0.5;
-        const regionHeight = this.canvas.height * 0.5;
-
-        const drawingData: DrawingData = {
-            song: GameState.getSong()!,
-            songBeatLength: GameState.getSongBeatLength(),
-            minPitch: playerState.getMinPitch(),
-            maxPitch: playerState.getMaxPitch(),
-            canvas: this.canvas,
-            currentTime: GameState.getCurrentTime(),
-            currentSectionIndex: sectionIndex ?? playerState.getCurrentSectionIndex(),
-            frequencies: playerState.getPlayerFrequencies(),
-            playersNotes: playerState.getPlayerNotes(),
-            playerNumber,
-            track: playerState.getTrackIndex(),
-            regionPaddingTop,
-            regionHeight,
-        };
+    private getNoteCoords = (drawingData: DrawingData, start: number, length: number, pitch: number, big: boolean) => {
+        const regionPaddingTop = drawingData.playerNumber * this.canvas.height * 0.5;
 
         const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
         const sectionStart = isNotesSection(currentSection) ? currentSection.notes[0].start : 1;
