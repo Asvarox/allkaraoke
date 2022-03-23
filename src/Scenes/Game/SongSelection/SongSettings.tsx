@@ -2,7 +2,6 @@ import { isNumber } from 'lodash';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
-import { focusable } from '../../../Elements/cssMixins';
 import useKeyboard from '../../../Hooks/useKeyboard';
 import { GAME_MODE, SingSetup, SongPreview } from '../../../interfaces';
 import { Switcher } from './Switcher';
@@ -90,7 +89,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
                 </>
             )}
             <PlayButton {...register('play', startSong, true)} data-test="play-song-button">
-                Play <span style={{ fontSize: '40px' }}>»</span>
+                Play
             </PlayButton>
         </GameConfiguration>
     );
@@ -106,5 +105,6 @@ const GameConfiguration = styled.div`
 `;
 
 const PlayButton = styled(Button)<{ focused: boolean }>`
-    ${focusable}
+    padding-left: 2em;
+    padding-right: 2em;
 `;

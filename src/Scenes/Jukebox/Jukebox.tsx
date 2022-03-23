@@ -5,7 +5,6 @@ import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import { Link } from 'wouter';
 import { Button } from '../../Elements/Button';
-import { focusable } from '../../Elements/cssMixins';
 import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
 import useViewportSize from '../../Hooks/useViewportSize';
@@ -91,8 +90,7 @@ const PlayThisSongButton = styled(Button)<{ focused: boolean }>`
     right: 20px;
     width: 500px;
     position: absolute;
-
-    ${focusable}
+    font-size: 1.9vw;
 `;
 
 const SkipSongButton = styled(Button)<{ focused: boolean }>`
@@ -100,8 +98,7 @@ const SkipSongButton = styled(Button)<{ focused: boolean }>`
     right: 20px;
     width: 300px;
     position: absolute;
-
-    ${focusable}
+    font-size: 1.9vw;
 `;
 
 export default Jukebox;

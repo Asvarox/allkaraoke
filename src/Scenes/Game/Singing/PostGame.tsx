@@ -1,7 +1,6 @@
 import { SyntheticEvent, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '../../../Elements/Button';
-import { focusable } from '../../../Elements/cssMixins';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { DetailedScore, Song } from '../../../interfaces';
 import SongPage, { ContentElement } from '../SongPage';
@@ -108,8 +107,7 @@ const SongSelectionButton = styled(Button)<{ focused: boolean }>`
     bottom: 40px;
     right: 20px;
     width: 400px;
-
-    ${focusable}
+    font-size: 1.9vw;
 `;
 
 export default PostGame;
