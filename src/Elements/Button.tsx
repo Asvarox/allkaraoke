@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import styles from '../Scenes/Game/Singing/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
-    padding: 0.15em;
+    padding: 0.15em 0.3em;
     font-size: 1em;
     font-weight: bold;
     display: block;

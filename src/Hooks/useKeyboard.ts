@@ -62,7 +62,7 @@ export default function useKeyboard(enabled = true, onBackspace?: () => void) {
         elementList.current = [...newElementList.current];
         newElementList.current.length = 0;
 
-        console.log(elementList, currentlySelected, defaultSelection);
+        // console.log(elementList, currentlySelected, defaultSelection);
         if (
             elementList.current.length &&
             (currentlySelected === null || elementList.current.indexOf(currentlySelected) === -1)
