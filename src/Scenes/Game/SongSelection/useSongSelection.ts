@@ -1,19 +1,24 @@
-import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
+import { throttle } from 'lodash';
+import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
 import { navigate } from '../../../Hooks/useHashLocation';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { SongPreview } from '../../../interfaces';
 import { menuBack, menuEnter, menuNavigate } from '../../../SoundManager';
 
+interface SongGroup {
+    letter: string;
+    songs: Array<{ index: number; song: SongPreview }>;
+}
+
 const useKeyboardTwoDimensionalNavigation = (
     enabled: boolean,
-    songList: SongPreview[],
+    songCount: number,
+    groupedSongs: SongGroup[],
     focusedSong: number,
     setFocusedSong: Dispatch<SetStateAction<number>>,
     onEnter: () => void,
 ) => {
-    const getSongCount = () => songList.length ?? 1;
-
     const handleEnter = () => {
         menuEnter.play();
         onEnter();
@@ -29,20 +34,46 @@ const useKeyboardTwoDimensionalNavigation = (
         setFocusedSong((i) => {
             const change = i + indexChange;
 
-            return change >= getSongCount() || change < 0 ? i : change;
+            return change >= songCount || change < 0 ? i : change;
         });
     };
+
+    const navigateToGroup = useCallback(
+        throttle(
+            (direction: 1 | -1, currentGroup: number) => {
+                const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
+
+                setFocusedSong(groupedSongs[nextGroupIndex].songs[0].index);
+                menuNavigate.play();
+            },
+            700,
+            { trailing: false },
+        ),
+        [groupedSongs],
+    );
+
+    const navigateVertically = ({ repeat }: KeyboardEvent, direction: 1 | -1) => {
+        if (!repeat) {
+            navigateToSong(4 * direction);
+        } else {
+            const currentlySelectedGroupIndex = groupedSongs.findIndex(
+                (group) => !!group.songs.find((song) => song.index === focusedSong),
+            );
+            navigateToGroup(direction, currentlySelectedGroupIndex);
+        }
+    };
+
     useKeyboardNav(
         {
             onEnter: handleEnter,
-            onDownArrow: () => navigateToSong(4),
-            onUpArrow: () => navigateToSong(-4),
+            onDownArrow: (e) => navigateVertically(e, 1),
+            onUpArrow: (e) => navigateVertically(e, -1),
             onLeftArrow: () => navigateToSong(-1),
             onRightArrow: () => navigateToSong(+1),
             onBackspace: handleBackspace,
         },
         enabled,
-        [songList],
+        [songCount, groupedSongs, focusedSong],
     );
 };
 
@@ -52,9 +83,6 @@ export default function useSongSelection(preselectedSong: string | null) {
         fetch('./songs/index.json').then((response) => response.json()),
     );
     const [keyboardControl, setKeyboardControl] = useState(true);
-    useKeyboardTwoDimensionalNavigation(keyboardControl, songList.data ?? [], focusedSong, setFocusedSong, () =>
-        setKeyboardControl(false),
-    );
 
     useEffect(() => {
         if (songList.data) navigate(`/game/${encodeURIComponent(songList.data[focusedSong].file)}`);
@@ -71,7 +99,7 @@ export default function useSongSelection(preselectedSong: string | null) {
     const groupedSongList = useMemo(() => {
         if (!songList.data) return [];
 
-        const groups: Array<{ letter: string; songs: Array<{ index: number; song: SongPreview }> }> = [];
+        const groups: SongGroup[] = [];
 
         songList.data.forEach((song, index) => {
             const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
@@ -88,6 +116,15 @@ export default function useSongSelection(preselectedSong: string | null) {
     }, [songList.data]);
 
     const songPreview = songList.data?.[focusedSong];
+
+    useKeyboardTwoDimensionalNavigation(
+        keyboardControl,
+        songList.data?.length ?? 0,
+        groupedSongList,
+        focusedSong,
+        setFocusedSong,
+        () => setKeyboardControl(false),
+    );
 
     return { groupedSongList, focusedSong, setFocusedSong, setKeyboardControl, keyboardControl, songPreview };
 }

@@ -1,13 +1,15 @@
 import { invert } from 'lodash';
 import { useHotkeys } from 'react-hotkeys-hook';
 
+type Callback = (e: KeyboardEvent) => void;
+
 interface Params {
-    onUpArrow?: () => void;
-    onDownArrow?: () => void;
-    onLeftArrow?: () => void;
-    onRightArrow?: () => void;
-    onEnter?: () => void;
-    onBackspace?: () => void;
+    onUpArrow?: Callback;
+    onDownArrow?: Callback;
+    onLeftArrow?: Callback;
+    onRightArrow?: Callback;
+    onEnter?: Callback;
+    onBackspace?: Callback;
     // onAlphaNumeric?: () => void,
 }
 
@@ -37,7 +39,7 @@ export default function useKeyboardNav(params: Params, enabled = true, deps?: an
             if (param in params) {
                 event.preventDefault();
                 event.stopPropagation();
-                params[param]?.();
+                params[param]?.(event);
             }
         },
         { enabled },
