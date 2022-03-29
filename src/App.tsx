@@ -11,6 +11,7 @@ import { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/
 import Singing from './Scenes/Game/Singing/Singing';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import Phone from './Scenes/Phone/Phone';
+import SelectInput from './Scenes/SelectInput/SelectInput';
 import Welcome from './Scenes/Welcome/Welcome';
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
 
                 <Route path="/edit" component={SongList} />
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
+                <Route path="/select-input" component={SelectInput} />
                 <Route path="/" component={Welcome} />
             </Router>
         </>

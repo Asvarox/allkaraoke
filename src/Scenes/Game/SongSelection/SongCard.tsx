@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { typography } from '../../../Elements/cssMixins';
 import styles from '../Singing/Drawing/styles';
 
 export const SongCardContainer = styled.div<{ width: number }>`
@@ -28,9 +29,7 @@ export const SongListEntryDetails = styled.span`
     width: auto;
     display: inline-block;
     padding: 0.15em;
-    font-weight: bold;
-    -webkit-text-stroke: 0.035em black;
-    color: white;
+    ${typography};
 
     text-align: right;
 `;
@@ -42,5 +41,4 @@ export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
 export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
     margin-top: 0.25em;
     color: white;
-    font-size: 1.1em;
 `;

@@ -12,6 +12,13 @@ function Welcome() {
                     Sing a song
                 </MenuButton>
             </Link>
+            {false && (
+                <Link href="/select-input">
+                    <MenuButton {...register('select input', () => navigate('/select-input'))}>
+                        Setup Microphones
+                    </MenuButton>
+                </Link>
+            )}
             <Link href="/jukebox">
                 <MenuButton {...register('jukebox', () => navigate('/jukebox'))}>Jukebox</MenuButton>
             </Link>

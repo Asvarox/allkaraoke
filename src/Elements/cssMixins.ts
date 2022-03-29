@@ -19,3 +19,9 @@ export const focused = css`
     }
     animation: focus 1000ms ease-in-out infinite both;
 `;
+
+export const typography = css`
+    font-weight: bold;
+    -webkit-text-stroke: 0.035em black;
+    color: white;
+`;

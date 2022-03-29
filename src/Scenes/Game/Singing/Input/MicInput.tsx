@@ -2,7 +2,6 @@ import InputInterface from './Interface';
 import AubioStrategy from './MicStrategies/Aubio';
 
 class MicInput implements InputInterface {
-    // private channelCount = 2;
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
 
@@ -10,12 +9,13 @@ class MicInput implements InputInterface {
 
     private startedMonitoring = false;
 
-    public startMonitoring = async () => {
+    public startMonitoring = async (deviceId?: string) => {
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
         this.stream = await navigator.mediaDevices.getUserMedia({
             audio: {
+                ...(deviceId ? { deviceId, exact: true } : {}),
                 echoCancellation: false,
             },
             video: false,
