@@ -6,18 +6,13 @@ import getPlayerNoteDistance from '../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../Helpers/isNotesSection';
 import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import debugPitches from './debugPitches';
+import drawNote from './Elements/note';
+import drawPlayerFrequencyTrace from './Elements/playerFrequencyTrace';
+import drawPlayerNote from './Elements/playerNote';
 import ParticleManager from './ParticleManager';
 import ExplodingNoteParticle from './Particles/ExplodingNote';
 import RayParticle from './Particles/Ray';
 import VibratoParticle from './Particles/Vibrato';
-import roundRect from './roundRect';
-import styles from './styles';
-
-function applyColor(ctx: CanvasRenderingContext2D, style: { fill: string; stroke: string; lineWidth: number }) {
-    ctx.fillStyle = style.fill;
-    ctx.strokeStyle = style.stroke;
-    ctx.lineWidth = style.lineWidth;
-}
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
     return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);
@@ -110,19 +105,10 @@ export default class CanvasDrawing {
         if (!isNotesSection(drawingData.currentSection)) return;
 
         drawingData.currentSection.notes.forEach((note) => {
-            if (note.type === 'star') {
-                applyColor(ctx, styles.colors.lines.star);
-            } else if (note.type === 'freestyle' || note.type === 'rap') {
-                applyColor(ctx, styles.colors.lines.freestyle);
-            } else {
-                applyColor(ctx, styles.colors.lines.normal);
-            }
-
             const [displacementX, displacementY] = displacements[note.start];
-
             const { x, y, w, h } = this.getNoteCoords(drawingData, note.start, note.length, note.pitch, true);
 
-            roundRect(ctx!, x + displacementX, y + displacementY, w, h, 100, true, true);
+            drawNote(ctx, x + displacementX, y + displacementY, w, h, note);
         });
     };
 
@@ -136,18 +122,6 @@ export default class CanvasDrawing {
         drawingData.currentPlayerNotes.forEach((playerNote) => {
             const distance = getPlayerNoteDistance(playerNote);
 
-            if (playerNote.isPerfect && playerNote.note.type === 'star') {
-                applyColor(ctx, styles.colors.players[drawingData.playerNumber].starPerfect);
-            } else if (playerNote.isPerfect) {
-                applyColor(ctx, styles.colors.players[drawingData.playerNumber].perfect);
-            } else if (playerNote.note.type === 'star' && distance === 0) {
-                applyColor(ctx, styles.colors.players[drawingData.playerNumber].star);
-            } else if (distance === 0) {
-                applyColor(ctx, styles.colors.players[drawingData.playerNumber].hit);
-            } else {
-                applyColor(ctx, styles.colors.players[drawingData.playerNumber].miss);
-            }
-
             const [displacementX, displacementY] = (distance === 0 && displacements[playerNote.note.start]) || [0, 0];
 
             const { x, y, w, h } = this.getNoteCoords(
@@ -160,7 +134,7 @@ export default class CanvasDrawing {
             if (w > h / 2) {
                 const finalX = x + displacementX;
                 const finalY = y + displacementY;
-                roundRect(ctx!, finalX, finalY, w, h, 100, true, true);
+                drawPlayerNote(ctx, finalX, finalY, w, h, drawingData.playerNumber, distance === 0, playerNote);
 
                 if (playerNote.vibrato) {
                     ParticleManager.add(new VibratoParticle(finalX, finalY, w, h, drawingData.currentTime));
@@ -171,24 +145,7 @@ export default class CanvasDrawing {
                     playerNote.frequencyRecords.length > 3 &&
                     !noDistanceNoteTypes.includes(playerNote.note.type)
                 ) {
-                    ctx.save();
-                    roundRect(ctx, finalX, finalY, w, h, 100, false, false);
-                    ctx.clip();
-
-                    ctx.beginPath();
-                    ctx.strokeStyle = 'rgba(255,255,255, .35)';
-                    ctx.lineWidth = 3;
-                    ctx.moveTo(finalX, finalY + h / 2 - (playerNote.frequencyRecords[0].preciseDistance * h) / 3);
-                    for (let i = 1; i < playerNote.frequencyRecords.length; i++) {
-                        ctx.lineTo(
-                            finalX + i * (w / (playerNote.frequencyRecords.length - 1)),
-                            finalY + h / 2 - (playerNote.frequencyRecords[i].preciseDistance * h) / 3,
-                        );
-                    }
-                    ctx.stroke();
-                    ctx.closePath();
-
-                    ctx.restore();
+                    drawPlayerFrequencyTrace(ctx, finalX, finalY, w, h, playerNote);
                 }
             }
         });
@@ -229,12 +186,6 @@ export default class CanvasDrawing {
 
     private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
         const drawingData = this.getDrawingData(playerNumber);
-
-        if (drawingData.currentSectionIndex < 0) {
-            console.error(`currentSection is negative`, playerNumber, drawingData.track, drawingData.currentTime);
-            return;
-        }
-
         const { currentSection } = calculateData(drawingData);
         if (!isNotesSection(currentSection)) return;
 

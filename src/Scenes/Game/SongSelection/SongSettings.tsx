@@ -20,6 +20,12 @@ const gameModeNames = {
 
 const difficultyNames = ['Real', 'Hard', 'Medium', 'Easy'];
 
+if (process.env.NODE_ENV === 'development') {
+    difficultyNames.push('Debug 4');
+    difficultyNames.push('Debug 5');
+    difficultyNames.push('Debug 6');
+}
+
 const getPlayerTrackName = (tracks: SongPreview['tracks'], index: number) =>
     tracks[index]?.name ?? `Track ${index + 1}`;
 

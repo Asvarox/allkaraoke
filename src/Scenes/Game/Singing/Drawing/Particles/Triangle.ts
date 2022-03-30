@@ -4,7 +4,7 @@ import spreadValue from './spreadValue';
 const baseTtl = (50 / 60) * 1000;
 const ttlSpread = (25 / 60) * 1000;
 
-const velocityModifier = 20;
+const velocityModifier = 1.65;
 
 export default class TriangleParticle implements Particle {
     public finished = false;

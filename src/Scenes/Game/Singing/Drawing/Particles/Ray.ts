@@ -8,6 +8,7 @@ image.onload = () => (imageLoaded = true);
 image.src = particleImage;
 
 const initialTtl = (50 / 60) * 1000;
+const velocity = 0.05;
 
 const WIDTH = 75;
 const WIDTH_SPREAD = 4;
@@ -28,8 +29,8 @@ export default class RayParticle implements Particle {
 
     constructor(private x: number, private y: number, seed: number, widthModifier: number) {
         this.ttl = initialTtl;
-        this.velocityX = 0.5 * Math.random() - 0.25;
-        this.velocityY = 0.5 * Math.random() - 0.25;
+        this.velocityX = velocity * Math.random() - velocity / 2;
+        this.velocityY = velocity * Math.random() - velocity / 2;
         this.maxWidth =
             Math.min(0.1 + widthModifier, 1) * (Math.sin(seed / 70) * WIDTH_SPREAD + (WIDTH - WIDTH_SPREAD));
     }

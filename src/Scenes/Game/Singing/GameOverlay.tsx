@@ -47,6 +47,10 @@ function GameOverlay({
 
         drawer.current = new CanvasDrawing(canvas.current);
         drawer.current.start();
+
+        return () => {
+            drawer.current?.end();
+        };
     }, [canvas]);
 
     useEffect(() => {
@@ -58,7 +62,6 @@ function GameOverlay({
     useEffect(() => {
         if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) {
             onSongEnd();
-            drawer.current?.end();
         }
     }, [currentStatus, onSongEnd]);
 
