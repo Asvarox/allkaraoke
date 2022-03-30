@@ -1,10 +1,13 @@
-export const blueFill = (a = 1) => `rgba(0, 153, 255, ${a})`;
+export const blueFillBase = '0, 153, 255';
+export const blueFill = (a = 1) => `rgba(${blueFillBase}, ${a})`;
 export const blueStroke = (a = 1) => `rgba(0, 77, 128, ${a})`;
-export const redFill = (a = 1) => `rgba(255, 54, 54, ${a})`;
+export const redFillBase = '255, 54, 54';
+export const redFill = (a = 1) => `rgba(${redFillBase}, ${a})`;
 export const redStroke = (a = 1) => `rgba(117, 25, 25, ${a})`;
 
 const playerColors = [
     {
+        text: blueFillBase,
         star: {
             fill: 'rgba(255, 183, 0, .5)',
             stroke: 'rgba(255, 183, 0, 0)',
@@ -32,6 +35,7 @@ const playerColors = [
         },
     },
     {
+        text: redFillBase,
         star: {
             fill: 'rgba(255, 183, 0, .5)',
             stroke: 'rgba(255, 183, 0, 0)',

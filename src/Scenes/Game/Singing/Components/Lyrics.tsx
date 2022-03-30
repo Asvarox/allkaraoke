@@ -13,6 +13,7 @@ interface Props {
 }
 
 function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props) {
+    const playerColor = styles.colors.players[player].text;
     const thisPlayerChanges = playerChanges[player] ?? [];
     const section = GameState.getPlayer(player).getCurrentSection();
     const nextSection = GameState.getPlayer(player).getNextSection();
@@ -33,6 +34,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                     <LyricsLine>
                         <HeadstartContainer>
                             <Headstart
+                                color={playerColor}
                                 percent={Math.min(2, (currentBeat - section.start) / beatsBetweenSectionAndNote)}
                             />
                         </HeadstartContainer>
@@ -45,7 +47,9 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                             return (
                                 <LyricContainer type={note.type} key={note.start}>
                                     <LyricActiveContainer>
-                                        <LyricActive fill={fill}>{note.lyrics.trim()}</LyricActive>
+                                        <LyricActive fill={fill} color={playerColor}>
+                                            {note.lyrics.trim()}
+                                        </LyricActive>
                                         {note.lyrics.endsWith(' ') && ' '}
                                     </LyricActiveContainer>
                                     {note.lyrics}
@@ -73,18 +77,18 @@ const HeadstartContainer = styled.span`
     height: 0;
 `;
 
-const Headstart = styled.span.attrs<{ percent: number }>((props) => ({
+const Headstart = styled.span.attrs<{ percent: number; color: string }>(({ percent, color }) => ({
     style: {
-        right: `${Math.max(0, 1 - props.percent) * 150}px`,
-        width: `${Math.min(1, 2 - props.percent) * 150}px`,
+        right: `${Math.max(0, 1 - percent) * 150}px`,
+        width: `${Math.min(1, 2 - percent) * 150}px`,
+        background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${color}, 0) 100%)`,
     },
-}))<{ percent: number }>`
+}))<{ percent: number; color: string }>`
     position: absolute;
     width: 100px;
     height: 31px;
     margin: 7px 0;
     right: 100px;
-    background: linear-gradient(270deg, rgba(255, 165, 0, 1) 0%, rgba(255, 165, 0, 0.5) 25%, rgba(255, 165, 0, 0) 100%);
 `;
 
 const LyricContainer = styled.span<{ type: string }>`
@@ -96,13 +100,12 @@ const LyricActiveContainer = styled.span`
     position: absolute;
     z-index: 1;
 `;
-const LyricActive = styled.span.attrs<{ fill: number }>((props) => ({
+const LyricActive = styled.span.attrs<{ fill: number; color: string }>(({ fill, color }) => ({
     style: {
-        clipPath: `inset(0 ${(1 - (props.fill === 0 ? 0 : props.fill + 0.05)) * 100}% -50px 0)`,
+        clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -50px 0)`,
+        color: `rgb(${color})`,
     },
-}))<{ fill: number }>`
-    color: ${styles.colors.text.active};
-`;
+}))<{ fill: number; color: string }>``;
 
 const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     @keyframes blink {
