@@ -4,10 +4,10 @@ const INTERVAL_PX = 20;
 
 export default class VibratoParticle implements Particle {
     public finished = false;
-    public ttl = 2;
+    public ttl = (2 / 60) * 1000;
 
     constructor(private x: number, private y: number, private w: number, private h: number, private seed: number) {}
-    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
+    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
         ctx.strokeStyle = 'rgba(255,255,255,.25)';
         ctx.lineWidth = 2;
 
@@ -31,7 +31,7 @@ export default class VibratoParticle implements Particle {
 
         ctx.stroke();
 
-        this.ttl = this.ttl - 1;
-        this.finished = this.ttl === 0;
+        this.ttl = this.ttl - delta;
+        this.finished = this.ttl <= 0;
     };
 }

@@ -7,7 +7,7 @@ image.onload = () => (imageLoaded = true);
 
 image.src = particleImage;
 
-const initialTtl = 50;
+const initialTtl = (50 / 60) * 1000;
 
 const WIDTH = 75;
 const WIDTH_SPREAD = 4;
@@ -33,7 +33,7 @@ export default class RayParticle implements Particle {
         this.maxWidth =
             Math.min(0.1 + widthModifier, 1) * (Math.sin(seed / 70) * WIDTH_SPREAD + (WIDTH - WIDTH_SPREAD));
     }
-    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
+    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
         if (imageLoaded) {
             const percentage = this.ttl / initialTtl;
             let easing = easeOutQuart(1 - Math.min(1, (1 - percentage) * 6));
@@ -59,7 +59,7 @@ export default class RayParticle implements Particle {
             ctx.globalAlpha = 1;
         }
 
-        this.ttl = this.ttl - 1;
-        this.finished = this.ttl === 0;
+        this.ttl = this.ttl - delta;
+        this.finished = this.ttl <= 0;
     };
 }

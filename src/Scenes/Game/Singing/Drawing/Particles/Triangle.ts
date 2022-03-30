@@ -1,8 +1,8 @@
 import Particle from '../interfaces';
 import spreadValue from './spreadValue';
 
-const baseTtl = 50;
-const ttlSpread = 25;
+const baseTtl = (50 / 60) * 1000;
+const ttlSpread = (25 / 60) * 1000;
 
 const velocityModifier = 20;
 
@@ -25,7 +25,7 @@ export default class TriangleParticle implements Particle {
         this.initialAngle = 180 - Math.random() * 360;
         this.heightModifier = Math.random();
     }
-    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
+    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
         if (this.delay-- > 0) return;
         if (true) {
             const percentage = this.ttl / this.startingTtl;
@@ -59,7 +59,7 @@ export default class TriangleParticle implements Particle {
             ctx.restore();
         }
 
-        this.ttl = this.ttl - 1;
+        this.ttl = this.ttl - delta;
         this.finished = this.ttl <= 0;
     };
 }
