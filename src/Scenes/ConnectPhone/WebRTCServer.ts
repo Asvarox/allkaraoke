@@ -1,4 +1,4 @@
-import Peer from 'peerjs';
+import { Peer } from 'peerjs';
 import { v4 } from 'uuid';
 import { WebRTCEvents } from '../Phone/WebRTCClient';
 import PhoneManager from './PhonesManager';

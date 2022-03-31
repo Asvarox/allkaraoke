@@ -1,4 +1,4 @@
-import Peer from 'peerjs';
+import { Peer } from 'peerjs';
 import { v4 } from 'uuid';
 
 export interface WebRTCRegisterEvent {
