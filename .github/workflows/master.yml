@@ -18,5 +18,7 @@ jobs:
             - name: Cypress run
               uses: cypress-io/github-action@v2
               with:
-                  build: DISABLE_ESLINT_PLUGIN=true yarn run build
+                  build: yarn run build
                   start: yarn start:production
+              env:
+                  DISABLE_ESLINT_PLUGIN: true
