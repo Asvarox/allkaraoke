@@ -33,8 +33,7 @@ describe('Sing a song', () => {
         cy.get('body').type('{uparrow}'); // play button
         cy.get('body').type('{enter}'); // start song
 
-        cy.wait(18000);
-        cy.get('[data-test="play-next-song-button"]').click();
+        cy.get('[data-test="play-next-song-button"]', { timeout: 30_000 }).click();
         cy.get('[data-test="song-e2e-test.json"]').should('exist');
     });
 });
