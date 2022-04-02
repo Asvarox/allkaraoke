@@ -1,6 +1,7 @@
 import { ForwardedRef, forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
+import useUnstuckYouTubePlayer from '../../../Hooks/useUnstuckYouTubePlayer';
 import { SingSetup, Song } from '../../../interfaces';
 import usePlayerVolume from '../hooks/usePlayerVolume';
 import PauseMenu from './Components/PauseMenu';
@@ -90,6 +91,7 @@ function Player(
 
     const duration = usePlayerSetDuration(player, currentStatus);
     usePlayerVolume(player, song.volume);
+    useUnstuckYouTubePlayer(player, currentStatus);
 
     useEffect(() => {
         if (!player.current) {

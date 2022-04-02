@@ -7,6 +7,7 @@ import { Link } from 'wouter';
 import { Button } from '../../Elements/Button';
 import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
+import useUnstuckYouTubePlayer from '../../Hooks/useUnstuckYouTubePlayer';
 import useViewportSize from '../../Hooks/useViewportSize';
 import { SongPreview } from '../../interfaces';
 import usePlayerVolume from '../Game/hooks/usePlayerVolume';
@@ -21,6 +22,7 @@ function Jukebox(props: Props) {
     const songList = useQuery<SongPreview[]>('songList', () =>
         fetch('./songs/index.json').then((response) => response.json()),
     );
+    const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
     const { register } = useKeyboard(true, () => {
@@ -31,7 +33,7 @@ function Jukebox(props: Props) {
 
     const playNext = () => songList.data && setCurrentlyPlaying((current) => (current + 1) % songList.data.length);
 
-    usePlayerVolume(player, shuffledList[currentlyPlaying].volume);
+    usePlayerVolume(player, shuffledList[currentlyPlaying]?.volume);
     useEffect(() => {
         if (!player.current) {
             return;
@@ -39,6 +41,7 @@ function Jukebox(props: Props) {
 
         player.current.getInternalPlayer().setSize(width, height);
     }, [player, width, height, shuffledList, currentlyPlaying]);
+    useUnstuckYouTubePlayer(player, currentStatus);
 
     if (!shuffledList.length || !width || !height) return null;
 
@@ -67,6 +70,7 @@ function Jukebox(props: Props) {
                     }}
                     onStateChange={(e) => {
                         if (e.data === YouTube.PlayerState.ENDED) playNext();
+                        setCurrentStatus(e.data);
                     }}
                 />
             }>
