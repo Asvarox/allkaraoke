@@ -1,7 +1,8 @@
-import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
+import { ForwardedRef, forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import { SingSetup, Song } from '../../../interfaces';
+import usePlayerVolume from '../hooks/usePlayerVolume';
 import PauseMenu from './Components/PauseMenu';
 import GameOverlay from './GameOverlay';
 import GameState from './GameState/GameState';
@@ -23,9 +24,25 @@ interface Props {
 }
 
 export interface PlayerRef {
-    // getCurrentTime: () => number,
     seekTo: (time: number) => void;
     setPlaybackSpeed: (speed: number) => void;
+}
+
+function usePlayerSetDuration(playerRef: MutableRefObject<YouTube | null>, currentStatus: number) {
+    const [duration, setDuration] = useState(0);
+    useEffect(() => {
+        if (playerRef.current && currentStatus === YouTube.PlayerState.PLAYING && duration === 0) {
+            playerRef.current
+                .getInternalPlayer()
+                .getDuration()
+                .then((dur: number) => {
+                    setDuration(dur);
+                    GameState.setDuration(dur);
+                });
+        }
+    }, [duration, playerRef, currentStatus]);
+
+    return duration;
 }
 
 function Player(
@@ -47,7 +64,6 @@ function Player(
 ) {
     const player = useRef<YouTube | null>(null);
     const [currentTime, setCurrentTime] = useState(0);
-    const [duration, setDuration] = useState(0);
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
     useEffect(() => {
@@ -72,18 +88,8 @@ function Player(
         }
     }, [player, onTimeUpdate, currentStatus]);
 
-    useEffect(() => {
-        if (player.current && currentStatus === YouTube.PlayerState.PLAYING && duration === 0) {
-            player.current
-                .getInternalPlayer()
-                .getDuration()
-                .then((dur: number) => {
-                    setDuration(dur);
-                    GameState.setDuration(dur);
-                });
-            player.current.getInternalPlayer().setVolume(Math.round((song.volume ?? 0.5) * 100));
-        }
-    }, [duration, player, currentStatus, song.volume]);
+    const duration = usePlayerSetDuration(player, currentStatus);
+    usePlayerVolume(player, song.volume);
 
     useEffect(() => {
         if (!player.current) {
@@ -94,10 +100,7 @@ function Player(
     }, [player, width, height, song]);
 
     useImperativeHandle(ref, () => ({
-        // getCurrentTime: () => currentTime,
-        seekTo: (time: number) => {
-            player.current!.getInternalPlayer().seekTo(time, true);
-        },
+        seekTo: (time: number) => player.current!.getInternalPlayer().seekTo(time, true),
         setPlaybackSpeed: (speed: number) => player.current!.getInternalPlayer().setPlaybackRate(speed),
     }));
 

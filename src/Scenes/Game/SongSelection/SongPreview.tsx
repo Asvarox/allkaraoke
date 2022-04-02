@@ -5,6 +5,7 @@ import { focused } from '../../../Elements/cssMixins';
 import useDebounce from '../../../Hooks/useDebounce';
 import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup, SongPreview } from '../../../interfaces';
+import usePlayerVolume from '../hooks/usePlayerVolume';
 import styles from '../Singing/Drawing/styles';
 import { SongCard, SongCardContainer, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
 import SongSettings from './SongSettings';
@@ -57,18 +58,18 @@ export default function SongPreviewComponent({
 
     const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
     const [videoId, previewStart, previewEnd, volume] = useDebounce(
-        [songPreview.video, start, songPreview.previewEnd ?? start + PREVIEW_LENGTH, songPreview.volume ?? 0.5],
+        [songPreview.video, start, songPreview.previewEnd ?? start + PREVIEW_LENGTH, songPreview.volume],
         350,
     );
 
+    usePlayerVolume(player, volume);
     useEffect(() => {
-        player.current?.getInternalPlayer().setVolume(Math.round(volume * 100));
         player.current?.getInternalPlayer().loadVideoById({
             videoId: videoId,
             startSeconds: previewStart,
             endSeconds: previewEnd,
         });
-    }, [videoId, player, previewStart, previewEnd, volume]);
+    }, [videoId, player, previewStart, previewEnd]);
 
     const finalWidth = active ? windowWidth! : width;
     const finalHeight = active ? (windowWidth! / 20) * 9 : height;

@@ -9,15 +9,10 @@ import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
 import useViewportSize from '../../Hooks/useViewportSize';
 import { SongPreview } from '../../interfaces';
+import usePlayerVolume from '../Game/hooks/usePlayerVolume';
 import SongPage from '../Game/SongPage';
 
 interface Props {}
-
-export interface PlayerRef {
-    // getCurrentTime: () => number,
-    seekTo: (time: number) => void;
-    setPlaybackSpeed: (speed: number) => void;
-}
 
 function Jukebox(props: Props) {
     const { width, height } = useViewportSize();
@@ -36,13 +31,13 @@ function Jukebox(props: Props) {
 
     const playNext = () => songList.data && setCurrentlyPlaying((current) => (current + 1) % songList.data.length);
 
+    usePlayerVolume(player, shuffledList[currentlyPlaying].volume);
     useEffect(() => {
         if (!player.current) {
             return;
         }
 
         player.current.getInternalPlayer().setSize(width, height);
-        player.current.getInternalPlayer().setVolume(Math.round((shuffledList[currentlyPlaying].volume ?? 0.5) * 100));
     }, [player, width, height, shuffledList, currentlyPlaying]);
 
     if (!shuffledList.length || !width || !height) return null;
@@ -59,8 +54,8 @@ function Jukebox(props: Props) {
                     ref={player}
                     videoId={shuffledList[currentlyPlaying].video}
                     opts={{
-                        width: String(width),
-                        height: String(height),
+                        width: '0',
+                        height: '0',
                         playerVars: {
                             autoplay: 1,
                             showinfo: 1,
