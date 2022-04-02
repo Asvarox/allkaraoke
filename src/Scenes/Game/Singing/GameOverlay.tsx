@@ -65,40 +65,45 @@ function GameOverlay({
         }
     }, [currentStatus, onSongEnd]);
 
-    const overlayHeight = height - 2 * 100 - 40;
+    const overlayHeight = height - 2 * 100 - 80;
     return (
         <Screen>
             <DurationBar usedTracks={tracksForPlayers} />
-            <Scores height={overlayHeight}>
+            <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
+            <Scores>
                 <span>
                     <ScoreText score={GameState.getPlayer(0).getScore()} />
                 </span>
                 <span>
                     <ScoreText score={GameState.getPlayer(1).getScore()} />
                 </span>
+                <GameCanvas>
+                    <canvas ref={canvas} width={width} height={overlayHeight} />
+                </GameCanvas>
             </Scores>
-            <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
-            <canvas ref={canvas} width={width} height={overlayHeight} />
             <Lyrics player={1} playerChanges={playerChanges} bottom effectsEnabled={effectsEnabled} />
         </Screen>
     );
 }
 
 const Screen = styled.div`
-    padding: 20px 0;
+    height: 100%;
     color: white;
     -webkit-text-stroke: 2px black;
     font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 `;
 
-const Scores = styled.div.attrs<{ height: number }>(({ height }) => ({
-    style: {
-        height: `${height}px`,
-    },
-}))<{ height: number }>`
-    margin-top: 100px;
+const GameCanvas = styled.div`
     position: absolute;
-    right: 10px;
+`;
+
+const Scores = styled.div`
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
     font-size: 35px;
     display: flex;
     justify-content: space-between;

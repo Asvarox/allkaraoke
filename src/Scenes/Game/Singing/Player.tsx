@@ -169,7 +169,7 @@ const Overlay = styled.div`
 
 const PlayerContainer = styled.div`
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
 `;
 
 export default forwardRef(Player);

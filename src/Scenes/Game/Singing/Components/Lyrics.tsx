@@ -133,6 +133,7 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     width: 100%;
     text-align: center;
     line-height: 1;
+    margin: 20px 0;
     ${(props) => (props.shouldBlink ? `animation: blink 500ms ease-in-out infinite both;` : ``)}
 `;
 
