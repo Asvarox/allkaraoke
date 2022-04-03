@@ -69,11 +69,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
     return tuple([focusedSong, cursorPosition, moveCursor, moveToSong]);
 };
 
-const useKeyboardTwoDimensionalNavigation = (
-    enabled: boolean,
-    groupedSongs: SongGroup[] = [],
-    onEnter: () => void,
-): [number, (songIndex: number) => void] => {
+const useKeyboardTwoDimensionalNavigation = (enabled: boolean, groupedSongs: SongGroup[] = [], onEnter: () => void) => {
     const [focusedSong, cursorPosition, moveCursor, moveToSong] = useTwoDimensionalNavigation(groupedSongs);
 
     const handleEnter = () => {
@@ -126,7 +122,7 @@ const useKeyboardTwoDimensionalNavigation = (
 
     const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
 
-    return [focusedSong, setPositionBySongIndex];
+    return tuple([focusedSong, setPositionBySongIndex]);
 };
 
 export default function useSongSelection(preselectedSong: string | null) {

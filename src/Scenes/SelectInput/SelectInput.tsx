@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { MenuButton, MenuContainer } from '../../Elements/Menu';
 import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
+import tuple from '../../Utils/tuple';
 import { Switcher } from '../Game/SongSelection/Switcher';
 import inputSources from './InputSources';
 import { DummyInputSource } from './InputSources/Dummy';
@@ -54,7 +55,7 @@ function useMicrophoneList(onEnumerate?: (inputs: MediaDeviceInfo[]) => void) {
     return inputs;
 }
 
-function usePlayerInput(sourceMap: SourceMap): [string, () => void, InputSource, () => void] {
+function usePlayerInput(sourceMap: SourceMap) {
     const [selectedSource, setSelectedSource] = useState<string>(Object.keys(sourceMap)[0]);
     const [selectedInput, setSelectedInput] = useState<string>('default');
 
@@ -82,7 +83,7 @@ function usePlayerInput(sourceMap: SourceMap): [string, () => void, InputSource,
         setSelectedSource(sourceList?.[(selectedSourceIndex + 1) % sourceList.length] ?? 'default');
     };
 
-    return [selectedSource, cycleSources, list[selectedInputIndex], cycleInputs];
+    return tuple([selectedSource, cycleSources, list[selectedInputIndex], cycleInputs]);
 }
 
 function SelectInput(props: Props) {

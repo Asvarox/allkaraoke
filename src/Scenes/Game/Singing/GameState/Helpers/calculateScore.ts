@@ -1,6 +1,7 @@
 import { memoize } from 'lodash';
 import { noPointsNoteTypes } from '../../../../../consts';
 import { DetailedScore, PlayerNote, Song } from '../../../../../interfaces';
+import tuple from '../../../../../Utils/tuple';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../../Helpers/isNotesSection';
 
@@ -51,11 +52,7 @@ const countSungBeats = memoize((song: Song): DetailedScore[] => {
     });
 });
 
-export function calculateDetailedScoreData(
-    playerNotes: PlayerNote[],
-    song: Song,
-    trackNumber: number,
-): [number, DetailedScore, DetailedScore] {
+export function calculateDetailedScoreData(playerNotes: PlayerNote[], song: Song, trackNumber: number) {
     const beatsPerTrack = countSungBeats(song);
 
     const counts: DetailedScore = {
@@ -69,7 +66,7 @@ export function calculateDetailedScoreData(
 
     if (!beatsPerTrack[trackNumber]) {
         console.error(`No beat count for track ${trackNumber} in song`, song);
-        return [0, counts, counts];
+        return tuple([0, counts, counts]);
     }
 
     const maxCounts = countsToBeats(countSungBeats(song)[trackNumber]);
@@ -87,7 +84,7 @@ export function calculateDetailedScoreData(
         if (note.vibrato) counts.vibrato = counts.vibrato + note.length;
     }
 
-    return [pointsPerBeat, countsToBeats(counts), maxCounts];
+    return tuple([pointsPerBeat, countsToBeats(counts), maxCounts]);
 }
 
 export default function calculateScore(playerNotes: PlayerNote[], song: Song, trackNumber: number): number {
