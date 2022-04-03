@@ -22,7 +22,7 @@ jobs:
                   start: yarn start:production
               env:
                   DISABLE_ESLINT_PLUGIN: true
-            - uses: actions/upload-artifact@v2
+            - uses: actions/upload-artifact@v3
               if: failure()
               with:
                   name: cypress-test-results
