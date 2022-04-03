@@ -90,8 +90,8 @@ function Player(
     }, [player, onTimeUpdate, currentStatus]);
 
     const duration = usePlayerSetDuration(player, currentStatus);
+    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
     usePlayerVolume(player, song.volume);
-    useUnstuckYouTubePlayer(player, currentStatus);
 
     useEffect(() => {
         if (!player.current) {
@@ -131,6 +131,7 @@ function Player(
                 <YouTube
                     ref={player}
                     videoId={song.video}
+                    key={playerKey}
                     opts={{
                         width: '0',
                         height: '0',

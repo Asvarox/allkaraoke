@@ -3,6 +3,7 @@ import YouTube, { PlayerVars } from 'react-youtube';
 import styled from 'styled-components';
 import { focused } from '../../../Elements/cssMixins';
 import useDebounce from '../../../Hooks/useDebounce';
+import useUnstuckYouTubePlayer from '../../../Hooks/useUnstuckYouTubePlayer';
 import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup, SongPreview } from '../../../interfaces';
 import usePlayerVolume from '../hooks/usePlayerVolume';
@@ -46,6 +47,7 @@ export default function SongPreviewComponent({
     onPlay,
 }: Props) {
     const [showVideo, setShowVideo] = useState(false);
+    const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
     const player = useRef<YouTube | null>(null);
     const { width: windowWidth } = useViewportSize();
 
@@ -61,6 +63,8 @@ export default function SongPreviewComponent({
         [songPreview.video, start, songPreview.previewEnd ?? start + PREVIEW_LENGTH, songPreview.volume],
         350,
     );
+
+    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
 
     usePlayerVolume(player, volume);
     useEffect(() => {
@@ -121,10 +125,12 @@ export default function SongPreviewComponent({
                     width={finalWidth}
                     video={songPreview.video}>
                     <YouTube
+                        key={playerKey}
                         ref={player}
                         videoId={''}
                         opts={{ playerVars }}
                         onStateChange={({ data }) => {
+                            setCurrentStatus(data);
                             if (data === YouTube.PlayerState.ENDED) {
                                 // setShowVideo(false);
                                 player.current?.getInternalPlayer().seekTo(start);

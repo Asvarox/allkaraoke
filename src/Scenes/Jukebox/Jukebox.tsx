@@ -41,7 +41,7 @@ function Jukebox(props: Props) {
 
         player.current.getInternalPlayer().setSize(width, height);
     }, [player, width, height, shuffledList, currentlyPlaying]);
-    useUnstuckYouTubePlayer(player, currentStatus);
+    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
 
     if (!shuffledList.length || !width || !height) return null;
 
@@ -54,6 +54,7 @@ function Jukebox(props: Props) {
             songData={shuffledList[currentlyPlaying]}
             background={
                 <YouTube
+                    key={playerKey}
                     ref={player}
                     videoId={shuffledList[currentlyPlaying].video}
                     opts={{
