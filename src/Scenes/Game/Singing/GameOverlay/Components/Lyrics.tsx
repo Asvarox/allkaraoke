@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
+import GameState from '../../GameState/GameState';
+import isNotesSection from '../../Helpers/isNotesSection';
+import { getFirstNoteStartFromSections } from '../../Helpers/notesSelectors';
 import styles from '../Drawing/styles';
-import GameState from '../GameState/GameState';
-import isNotesSection from '../Helpers/isNotesSection';
-import { getFirstNoteStartFromSections } from '../Helpers/notesSelectors';
 
 interface Props {
     player: number;

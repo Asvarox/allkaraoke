@@ -7,7 +7,7 @@ import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
 import Game from './Scenes/Game/Game';
-import { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/Drawing/styles';
+import { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import Singing from './Scenes/Game/Singing/Singing';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import Phone from './Scenes/Phone/Phone';

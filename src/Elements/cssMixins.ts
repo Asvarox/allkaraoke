@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import styles from '../Scenes/Game/Singing/Drawing/styles';
+import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const focusable = css<{ focused?: boolean }>`
     ${(props) => !!props.focused && focused}

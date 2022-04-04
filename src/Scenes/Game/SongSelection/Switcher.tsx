@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import styled from 'styled-components';
 import { focusable } from '../../../Elements/cssMixins';
-import styles from '../Singing/Drawing/styles';
+import styles from '../Singing/GameOverlay/Drawing/styles';
 import { SongListEntryDetails } from './SongCard';
 
 interface Props {

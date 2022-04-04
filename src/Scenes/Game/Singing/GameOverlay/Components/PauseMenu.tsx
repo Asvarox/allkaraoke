@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { MenuButton, MenuContainer } from '../../../../Elements/Menu';
-import useKeyboard from '../../../../Hooks/useKeyboard';
+import { MenuButton, MenuContainer } from '../../../../../Elements/Menu';
+import useKeyboard from '../../../../../Hooks/useKeyboard';
 
 interface Props {
     onResume: () => void;

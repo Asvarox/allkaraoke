@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { Song } from '../../../interfaces';
+import { Song } from '../../../../interfaces';
+import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
+import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
-import GameState from './GameState/GameState';
-import ScoreText from './ScoreText';
 
 interface Props {
     song: Song;

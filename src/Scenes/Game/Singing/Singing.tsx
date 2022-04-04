@@ -11,7 +11,7 @@ import normaliseLyricSpaces from '../../Edit/Helpers/normaliseLyricSpaces';
 import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPaddings';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player from './Player';
-import PostGame from './PostGame';
+import PostGame from './PostGame/PostGame';
 
 interface Props {
     video: string;

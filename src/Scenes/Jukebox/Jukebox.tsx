@@ -7,10 +7,10 @@ import { Link } from 'wouter';
 import { Button } from '../../Elements/Button';
 import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
+import usePlayerVolume from '../../Hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from '../../Hooks/useUnstuckYouTubePlayer';
 import useViewportSize from '../../Hooks/useViewportSize';
 import { SongPreview } from '../../interfaces';
-import usePlayerVolume from '../Game/hooks/usePlayerVolume';
 import SongPage from '../Game/SongPage';
 
 interface Props {}

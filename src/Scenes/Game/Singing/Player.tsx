@@ -1,11 +1,11 @@
 import { ForwardedRef, forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
+import usePlayerVolume from '../../../Hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from '../../../Hooks/useUnstuckYouTubePlayer';
 import { SingSetup, Song } from '../../../interfaces';
-import usePlayerVolume from '../hooks/usePlayerVolume';
-import PauseMenu from './Components/PauseMenu';
-import GameOverlay from './GameOverlay';
+import PauseMenu from './GameOverlay/Components/PauseMenu';
+import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
 
 interface Props {

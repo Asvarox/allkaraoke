@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Song, SongPreview } from '../../interfaces';
-import styles from './Singing/Drawing/styles';
+import styles from './Singing/GameOverlay/Drawing/styles';
 
 interface Props {
     width: number;

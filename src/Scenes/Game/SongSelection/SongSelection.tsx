@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { focused } from '../../../Elements/cssMixins';
 import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup } from '../../../interfaces';
-import styles from '../Singing/Drawing/styles';
+import styles from '../Singing/GameOverlay/Drawing/styles';
 import { SongCard, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
 import SongPreview from './SongPreview';
 import useSongSelection from './useSongSelection';

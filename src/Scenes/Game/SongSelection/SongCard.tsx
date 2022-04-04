@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { typography } from '../../../Elements/cssMixins';
-import styles from '../Singing/Drawing/styles';
+import styles from '../Singing/GameOverlay/Drawing/styles';
 
 export const SongCardContainer = styled.div<{ width: number }>`
     font-size: ${(props) => props.width * 0.065}px;

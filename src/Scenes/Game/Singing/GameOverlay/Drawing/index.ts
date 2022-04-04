@@ -1,9 +1,9 @@
-import { noDistanceNoteTypes } from '../../../../consts';
-import { NotesSection, PlayerNote } from '../../../../interfaces';
-import GameState from '../GameState/GameState';
-import GameStateEvents from '../GameState/GameStateEvents';
-import getPlayerNoteDistance from '../Helpers/getPlayerNoteDistance';
-import isNotesSection from '../Helpers/isNotesSection';
+import { noDistanceNoteTypes } from '../../../../../consts';
+import { NotesSection, PlayerNote } from '../../../../../interfaces';
+import GameState from '../../GameState/GameState';
+import GameStateEvents from '../../GameState/GameStateEvents';
+import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
+import isNotesSection from '../../Helpers/isNotesSection';
 import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import debugPitches from './debugPitches';
 import drawNote from './Elements/note';

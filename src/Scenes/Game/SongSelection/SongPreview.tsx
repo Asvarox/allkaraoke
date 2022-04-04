@@ -3,11 +3,11 @@ import YouTube, { PlayerVars } from 'react-youtube';
 import styled from 'styled-components';
 import { focused } from '../../../Elements/cssMixins';
 import useDebounce from '../../../Hooks/useDebounce';
+import usePlayerVolume from '../../../Hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from '../../../Hooks/useUnstuckYouTubePlayer';
 import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup, SongPreview } from '../../../interfaces';
-import usePlayerVolume from '../hooks/usePlayerVolume';
-import styles from '../Singing/Drawing/styles';
+import styles from '../Singing/GameOverlay/Drawing/styles';
 import { SongCard, SongCardContainer, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
 import SongSettings from './SongSettings';
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import styles from '../Scenes/Game/Singing/Drawing/styles';
+import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { Button } from './Button';
 import { typography } from './cssMixins';
 

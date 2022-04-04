@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import styles from '../Scenes/Game/Singing/Drawing/styles';
+import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
     padding: 0.15em 0.3em;

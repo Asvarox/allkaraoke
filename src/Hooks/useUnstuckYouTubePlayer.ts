@@ -5,7 +5,7 @@ import YouTube from 'react-youtube';
  * For some reason YouTube player would start the song but not change the player state, making the game not
  * start.
  *
- * This hooks "detects" that and return the key prop value for <YouTube /> component - if it's UNSTARTED
+ * This Hooks "detects" that and return the key prop value for <YouTube /> component - if it's UNSTARTED
  * for more than a timeout, a new key will be generated to reload the entire player (and try again).
  */
 function useUnstuckOnStartSong(currentStatus: number) {

@@ -1,4 +1,4 @@
-import { Note } from '../../../../../interfaces';
+import { Note } from '../../../../../../interfaces';
 import Particle from '../interfaces';
 import ParticleManager from '../ParticleManager';
 import styles from '../styles';

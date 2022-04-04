@@ -1,4 +1,4 @@
-import { PlayerNote } from '../../../../../interfaces';
+import { PlayerNote } from '../../../../../../interfaces';
 import applyColor from '../applyColor';
 import styles from '../styles';
 import roundRect from './roundRect';

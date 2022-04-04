@@ -1,9 +1,9 @@
 import { uniq } from 'lodash';
 import { useMemo } from 'react';
 import styled from 'styled-components';
+import GameState from '../../GameState/GameState';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '../../Helpers/notesSelectors';
 import styles from '../Drawing/styles';
-import GameState from '../GameState/GameState';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '../Helpers/notesSelectors';
 
 interface Props {
     usedTracks: number[];

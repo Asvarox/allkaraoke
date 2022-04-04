@@ -1,13 +1,13 @@
 import { SyntheticEvent, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
-import { Button } from '../../../Elements/Button';
-import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import { DetailedScore, Song } from '../../../interfaces';
-import SongPage, { ContentElement } from '../SongPage';
-import styles from './Drawing/styles';
-import GameState from './GameState/GameState';
-import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from './GameState/Helpers/calculateScore';
-import ScoreText from './ScoreText';
+import { Button } from '../../../../Elements/Button';
+import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
+import { DetailedScore, Song } from '../../../../interfaces';
+import SongPage, { ContentElement } from '../../SongPage';
+import ScoreText from '../GameOverlay/Components/ScoreText';
+import styles from '../GameOverlay/Drawing/styles';
+import GameState from '../GameState/GameState';
+import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from '../GameState/Helpers/calculateScore';
 
 const backgroundMusic = require('./421888__b-sean__retro.mp3');
 
