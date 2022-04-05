@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { focused } from '../../../Elements/cssMixins';
+import usePrevious from '../../../Hooks/usePrevious';
 import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup } from '../../../interfaces';
 import styles from '../Singing/GameOverlay/Drawing/styles';
@@ -26,17 +27,21 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         useSongSelection(preselectedSong);
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();
+    const previouslyFocusedSong = usePrevious(focusedSong);
 
     useEffect(() => {
         handleResize(); // Recalculate width/height to account possible scrollbar appearing
 
+        const previousSong = list.current?.querySelector(`[data-index="${previouslyFocusedSong}"]`) as HTMLDivElement;
         const song = list.current?.querySelector(`[data-index="${focusedSong}"]`) as HTMLDivElement;
         if (song) {
-            song.scrollIntoView?.({
-                behavior: 'smooth',
-                inline: 'center',
-                block: 'center',
-            });
+            if (!previousSong || previousSong.offsetTop !== song.offsetTop) {
+                song.scrollIntoView?.({
+                    behavior: 'smooth',
+                    inline: 'center',
+                    block: 'center',
+                });
+            }
             setPositions({ previewLeft: song.offsetLeft, previewTop: song.offsetTop });
         }
     }, [width, list, focusedSong, groupedSongList]);
