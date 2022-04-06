@@ -10,13 +10,14 @@ import Game from './Scenes/Game/Game';
 import { blueFill, blueStroke, redFill, redStroke } from './Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import Singing from './Scenes/Game/Singing/Singing';
 import Jukebox from './Scenes/Jukebox/Jukebox';
+import { KeyboardHelpProvider } from './Scenes/KeyboardHelp/Context';
 import Phone from './Scenes/Phone/Phone';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 import Welcome from './Scenes/Welcome/Welcome';
 
 function App() {
     return (
-        <>
+        <KeyboardHelpProvider>
             <Background />
             <FullscreenButton
                 onClick={() => {
@@ -54,7 +55,7 @@ function App() {
                 <Route path="/select-input" component={SelectInput} />
                 <Route path="/" component={Welcome} />
             </Router>
-        </>
+        </KeyboardHelpProvider>
     );
 }
 

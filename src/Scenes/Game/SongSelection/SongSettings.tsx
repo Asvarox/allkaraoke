@@ -63,14 +63,14 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     return (
         <GameConfiguration>
             <Switcher
-                {...register('difficulty', changeTolerance)}
+                {...register('difficulty', changeTolerance, false, 'Change difficulty')}
                 label="Difficulty"
                 value={difficultyNames[tolerance]}
                 data-test="difficulty-setting"
                 data-test-value={difficultyNames[tolerance]}
             />
             <Switcher
-                {...register('mode', changeMode)}
+                {...register('mode', changeMode, false, 'Change mode')}
                 label="Mode"
                 value={gameModeNames[mode]}
                 data-test="game-mode-setting"
@@ -79,14 +79,14 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
             {multipleTracks && (
                 <>
                     <Switcher
-                        {...register('player 1 track', () => togglePlayerTrack(0))}
+                        {...register('p1 track', () => togglePlayerTrack(0), false, 'Change track')}
                         label="Player 1"
                         value={getPlayerTrackName(songPreview.tracks, playerTracks[0])}
                         data-test="player-1-track-setting"
                         data-test-value={playerTracks[0] + 1}
                     />
                     <Switcher
-                        {...register('player 2 track', () => togglePlayerTrack(1))}
+                        {...register('p2 track', () => togglePlayerTrack(1), false, 'Change track')}
                         label="Player 2"
                         value={getPlayerTrackName(songPreview.tracks, playerTracks[1])}
                         data-test="player-2-track-setting"

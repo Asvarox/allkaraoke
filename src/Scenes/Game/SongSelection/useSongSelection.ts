@@ -2,6 +2,7 @@ import { chunk, throttle } from 'lodash';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
 import { navigate } from '../../../Hooks/useHashLocation';
+import useKeyboardHelp from '../../../Hooks/useKeyboardHelp';
 import useKeyboardNav from '../../../Hooks/useKeyboardNav';
 import { SongPreview } from '../../../interfaces';
 import { menuBack, menuEnter, menuNavigate } from '../../../SoundManager';
@@ -107,6 +108,8 @@ const useKeyboardTwoDimensionalNavigation = (enabled: boolean, groupedSongs: Son
         }
     };
 
+    const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
+
     useKeyboardNav(
         {
             onEnter: handleEnter,
@@ -120,7 +123,19 @@ const useKeyboardTwoDimensionalNavigation = (enabled: boolean, groupedSongs: Son
         [groupedSongs, cursorPosition],
     );
 
-    const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
+    const { setHelp, clearHelp } = useKeyboardHelp();
+
+    useEffect(() => {
+        if (enabled) {
+            setHelp({
+                'horizontal-vertical': null,
+                accept: null,
+                back: null,
+            });
+        }
+
+        return clearHelp;
+    }, [enabled]);
 
     return tuple([focusedSong, setPositionBySongIndex]);
 };

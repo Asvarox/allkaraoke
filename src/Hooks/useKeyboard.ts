@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from '../SoundManager';
+import useKeyboardHelp from './useKeyboardHelp';
 import useKeyboardNav from './useKeyboardNav';
 
 /**
@@ -8,15 +9,33 @@ import useKeyboardNav from './useKeyboardNav';
  *
  * But still works even with dynamic elements :shrugs:
  */
-export default function useKeyboard(enabled = true, onBackspace?: () => void) {
+export default function useKeyboard(enabled = true, onBackspace?: () => void, backspaceHelp: string | null = null) {
+    const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
     const elementList = useRef<string[]>([]);
     const newElementList = useRef<string[]>([]);
-    const actions = useRef<Record<string, () => void>>({});
+    const actions = useRef<
+        Record<
+            string,
+            {
+                callback: () => void;
+                label?: string;
+            }
+        >
+    >({});
+    const { setHelp, clearHelp } = useKeyboardHelp();
 
-    const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
+    useEffect(() => {
+        if (enabled)
+            setHelp({
+                vertical: null,
+                accept: actions.current[currentlySelected!]?.label ?? null,
+                back: onBackspace ? backspaceHelp : undefined,
+            });
+        return clearHelp;
+    }, [enabled, currentlySelected, actions]);
 
     const handleEnter = () => {
-        actions.current[currentlySelected!]?.();
+        actions.current[currentlySelected!]?.callback();
         menuEnter.play();
     };
 
@@ -47,9 +66,9 @@ export default function useKeyboard(enabled = true, onBackspace?: () => void) {
 
     let defaultSelection = '';
 
-    const register = (name: string, onActive: () => void, isDefault = false) => {
+    const register = (name: string, onActive: () => void, isDefault = false, help?: string) => {
         newElementList.current.push(name);
-        if (onActive) actions.current[name] = onActive;
+        if (onActive) actions.current[name] = { callback: onActive, label: help };
 
         if (isDefault) {
             defaultSelection = name;
@@ -62,7 +81,6 @@ export default function useKeyboard(enabled = true, onBackspace?: () => void) {
         elementList.current = [...newElementList.current];
         newElementList.current.length = 0;
 
-        // console.log(elementList, currentlySelected, defaultSelection);
         if (
             elementList.current.length &&
             (currentlySelected === null || elementList.current.indexOf(currentlySelected) === -1)
