@@ -53,7 +53,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const entryHeight = (entryWidth / 16) * 9;
 
     return (
-        <SongListContainer ref={list} active={keyboardControl}>
+        <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container">
             {songPreview && (
                 <SongPreview
                     songPreview={songPreview}

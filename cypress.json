@@ -1,3 +1,4 @@
 {
-    "blockHosts": ["googleads.g.doubleclick.net", "o366978.ingest.sentry.io"]
+    "blockHosts": ["googleads.g.doubleclick.net", "o366978.ingest.sentry.io"],
+    "chromeWebSecurity": false
 }

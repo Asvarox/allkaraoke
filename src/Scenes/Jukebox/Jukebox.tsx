@@ -52,6 +52,8 @@ function Jukebox(props: Props) {
             width={width}
             height={height}
             songData={shuffledList[currentlyPlaying]}
+            data-test="jukebox-container"
+            data-song={shuffledList[currentlyPlaying].file}
             background={
                 <YouTube
                     key={playerKey}

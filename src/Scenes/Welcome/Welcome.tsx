@@ -20,7 +20,9 @@ function Welcome() {
                 </Link>
             )}
             <Link href="/jukebox">
-                <MenuButton {...register('jukebox', () => navigate('/jukebox'))}>Jukebox</MenuButton>
+                <MenuButton data-test="jukebox" {...register('jukebox', () => navigate('/jukebox'))}>
+                    Jukebox
+                </MenuButton>
             </Link>
             {false && (
                 <Link href="/connect-phone">

@@ -85,7 +85,14 @@ export default function SongPreviewComponent({
     return (
         <>
             {active && <Backdrop />}
-            <SongPreviewContainer top={top} left={left} width={finalWidth} height={finalHeight} active={active}>
+            <SongPreviewContainer
+                top={top}
+                left={left}
+                width={finalWidth}
+                height={finalHeight}
+                active={active}
+                data-test="song-preview"
+                data-song={songPreview.file}>
                 <Content
                     width={finalWidth}
                     active={active}

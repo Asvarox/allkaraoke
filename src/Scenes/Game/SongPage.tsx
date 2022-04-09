@@ -10,9 +10,9 @@ interface Props {
     background?: React.ReactNode;
 }
 
-export default function SongPage({ songData, background, width, height, children }: Props) {
+export default function SongPage({ songData, background, width, height, children, ...restProps }: Props) {
     return (
-        <FocusedSongContainer video={songData.video} width={width} height={height}>
+        <FocusedSongContainer video={songData.video} width={width} height={height} {...restProps}>
             <BackgroundImage video={songData.video} blur />
             {background && <Background>{background}</Background>}
             <ContentLayer>
