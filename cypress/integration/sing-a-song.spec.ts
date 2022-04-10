@@ -15,6 +15,8 @@ describe('Sing a song', () => {
     it('goes through singing properly using keyboard', () => {
         cy.get('[data-test="sing-a-song"]').click();
         cy.wait(500);
+        cy.get('body').type('{enter}'); // enter first song
+        cy.get('body').type('{backspace}'); // enter first song
         cy.get('body').type('{rightarrow}'); // next song
         cy.get('body').type('{enter}'); // focus
         cy.get('body').type('{uparrow}'); // player 2 track
