@@ -132,6 +132,7 @@ export default function SongPreviewComponent({
                     width={finalWidth}
                     video={songPreview.video}>
                     <YouTube
+                        title=""
                         key={playerKey}
                         ref={player}
                         videoId={''}

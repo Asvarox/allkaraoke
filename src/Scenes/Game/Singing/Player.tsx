@@ -129,6 +129,7 @@ function Player(
             )}
             <PlayerContainer>
                 <YouTube
+                    title=""
                     ref={player}
                     videoId={song.video}
                     key={playerKey}
