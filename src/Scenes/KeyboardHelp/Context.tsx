@@ -17,7 +17,6 @@ export const KeyboardHelpProvider: FunctionComponent = ({ children }) => {
     const [keyboards, setKeyboards] = useState<KeyboardsList>({});
 
     const setKeyboard = (name: string, helpEntry: HelpEntry) => {
-        console.log(name, helpEntry);
         setKeyboards((kbs) => ({
             ...kbs,
             [name]: helpEntry,

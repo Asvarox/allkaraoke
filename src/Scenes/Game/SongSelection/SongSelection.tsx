@@ -5,9 +5,10 @@ import usePrevious from '../../../Hooks/usePrevious';
 import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup } from '../../../interfaces';
 import styles from '../Singing/GameOverlay/Drawing/styles';
+import Filters from './Filters';
+import useSongSelection from './Hooks/useSongSelection';
 import { SongCard, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
 import SongPreview from './SongPreview';
-import useSongSelection from './useSongSelection';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -23,8 +24,19 @@ const focusMultiplier = 1.2;
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
     const [{ previewTop, previewLeft }, setPositions] = useState({ previewTop: 0, previewLeft: 0 });
-    const { focusedSong, setFocusedSong, groupedSongList, keyboardControl, songPreview, setKeyboardControl } =
-        useSongSelection(preselectedSong);
+    const {
+        focusedSong,
+        setFocusedSong,
+        groupedSongList,
+        keyboardControl,
+        songPreview,
+        setKeyboardControl,
+        setFilters,
+        filters,
+        showFilters,
+        setShowFilters,
+    } = useSongSelection(preselectedSong);
+
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();
     const previouslyFocusedSong = usePrevious(focusedSong);
@@ -53,44 +65,55 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const entryHeight = (entryWidth / 16) * 9;
 
     return (
-        <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container">
-            {songPreview && (
-                <SongPreview
-                    songPreview={songPreview}
-                    onPlay={onSongSelected}
-                    keyboardControl={!keyboardControl}
-                    onExitKeyboardControl={() => setKeyboardControl(true)}
-                    top={previewTop}
-                    left={previewLeft}
-                    width={entryWidth}
-                    height={entryHeight}
-                />
+        <Container>
+            {showFilters && (
+                <Filters filters={filters} onSongFiltered={setFilters} onBack={() => setShowFilters(false)} />
             )}
-            {groupedSongList.map((group) => (
-                <SongsGroupContainer key={group.letter}>
-                    <SongsGroupHeader>{group.letter}</SongsGroupHeader>
-                    <SongsGroup>
-                        {group.songs.map(({ song, index }) => (
-                            <SongListEntry
-                                width={entryWidth}
-                                height={entryHeight}
-                                key={song.file}
-                                onClick={() => onSongClick(index)}
-                                video={song.video}
-                                focused={keyboardControl && index === focusedSong}
-                                data-index={index}
-                                data-test={`song-${song.file}`}>
-                                <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
+            <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container">
+                {songPreview && (
+                    <SongPreview
+                        songPreview={songPreview}
+                        onPlay={onSongSelected}
+                        keyboardControl={!keyboardControl}
+                        onExitKeyboardControl={() => setKeyboardControl(true)}
+                        top={previewTop}
+                        left={previewLeft}
+                        width={entryWidth}
+                        height={entryHeight}
+                    />
+                )}
+                {groupedSongList.map((group) => (
+                    <SongsGroupContainer key={group.letter}>
+                        <SongsGroupHeader>{group.letter}</SongsGroupHeader>
+                        <SongsGroup>
+                            {group.songs.map(({ song, index }) => (
+                                <SongListEntry
+                                    width={entryWidth}
+                                    height={entryHeight}
+                                    key={song.file}
+                                    onClick={() => onSongClick(index)}
+                                    video={song.video}
+                                    focused={keyboardControl && index === focusedSong}
+                                    data-index={index}
+                                    data-test={`song-${song.file}`}>
+                                    <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
-                                <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
-                            </SongListEntry>
-                        ))}
-                    </SongsGroup>
-                </SongsGroupContainer>
-            ))}
-        </SongListContainer>
+                                    <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
+                                </SongListEntry>
+                            ))}
+                        </SongsGroup>
+                    </SongsGroupContainer>
+                ))}
+            </SongListContainer>
+        </Container>
     );
 }
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+`;
 
 const SongsGroupContainer = styled.div``;
 
@@ -123,7 +146,6 @@ const SongListContainer = styled.div<{ active: boolean }>`
     padding: ${padding}px;
     padding-left: ${leftPad}px;
     overflow-y: overlay;
-    max-height: 100vh;
     box-sizing: border-box;
 `;
 

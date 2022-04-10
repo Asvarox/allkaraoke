@@ -1,19 +1,14 @@
 import { chunk, throttle } from 'lodash';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { useQuery } from 'react-query';
-import { navigate } from '../../../Hooks/useHashLocation';
-import useKeyboardHelp from '../../../Hooks/useKeyboardHelp';
-import useKeyboardNav from '../../../Hooks/useKeyboardNav';
-import { SongPreview } from '../../../interfaces';
-import { menuBack, menuEnter, menuNavigate } from '../../../SoundManager';
-import tuple from '../../../Utils/tuple';
+import { navigate } from '../../../../Hooks/useHashLocation';
+import useKeyboardHelp from '../../../../Hooks/useKeyboardHelp';
+import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
+import usePrevious from '../../../../Hooks/usePrevious';
+import { menuBack, menuEnter, menuNavigate } from '../../../../SoundManager';
+import tuple from '../../../../Utils/tuple';
+import { SongGroup } from './useSongList';
 
 const MAX_SONGS_PER_ROW = 4;
-
-interface SongGroup {
-    letter: string;
-    songs: Array<{ index: number; song: SongPreview }>;
-}
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
     const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
@@ -29,19 +24,29 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
                 .flat(),
         [groups],
     );
+    const previousMatrix = usePrevious(songIndexMatrix ?? []);
 
-    const moveToSong = (songIndex: number) => {
-        const y = songIndexMatrix.findIndex((columns) => columns.includes(songIndex));
-        const x = songIndexMatrix[y]?.indexOf(songIndex);
-
-        setCursorPosition([x ?? 0, y ?? 0]);
+    const moveToSong = (songIndex: number, matrix: number[][] = songIndexMatrix) => {
+        const y = matrix.findIndex((columns) => columns.includes(songIndex));
+        const x = matrix[y]?.indexOf(songIndex);
+        if (x >= 0 && y >= 0) {
+            setCursorPosition([x ?? 0, y ?? 0]);
+        }
     };
 
-    const positionToSongIndex = ([x, y]: [number, number]) => {
+    const positionToSongIndex = ([x, y]: [number, number], matrix: number[][] = songIndexMatrix) => {
         if (groups.length === 0) return 0;
-        const row = songIndexMatrix[y];
-        return row[x] ?? row.at(-1) ?? 0;
+        const row = matrix[y];
+        return row?.[x] ?? row?.at(-1) ?? matrix?.[0]?.[0] ?? 0;
     };
+
+    useEffect(() => {
+        const previousFocusedSong = positionToSongIndex(cursorPosition, previousMatrix);
+        const currentFocusedSong = positionToSongIndex(cursorPosition, songIndexMatrix);
+        if (previousFocusedSong !== currentFocusedSong) {
+            moveToSong(previousFocusedSong);
+        }
+    }, [cursorPosition, songIndexMatrix, songIndexMatrix]);
 
     const moveCursor = (plane: 'x' | 'y', delta: number) => {
         menuNavigate.play();
@@ -70,7 +75,12 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
     return tuple([focusedSong, cursorPosition, moveCursor, moveToSong]);
 };
 
-const useKeyboardTwoDimensionalNavigation = (enabled: boolean, groupedSongs: SongGroup[] = [], onEnter: () => void) => {
+export const useSongSelectionKeyboardNavigation = (
+    enabled: boolean,
+    groupedSongs: SongGroup[] = [],
+    onEnter: () => void,
+) => {
+    const [showFilters, setShowFilters] = useState(false);
     const [focusedSong, cursorPosition, moveCursor, moveToSong] = useTwoDimensionalNavigation(groupedSongs);
 
     const handleEnter = () => {
@@ -118,9 +128,10 @@ const useKeyboardTwoDimensionalNavigation = (enabled: boolean, groupedSongs: Son
             onLeftArrow: () => moveCursor('x', -1),
             onRightArrow: () => moveCursor('x', 1),
             onBackspace: handleBackspace,
+            onLetterF: () => setShowFilters((current) => !current),
         },
-        enabled,
-        [groupedSongs, cursorPosition],
+        enabled && !showFilters,
+        [groupedSongs, cursorPosition, showFilters],
     );
 
     const { setHelp, clearHelp } = useKeyboardHelp();
@@ -137,50 +148,5 @@ const useKeyboardTwoDimensionalNavigation = (enabled: boolean, groupedSongs: Son
         return clearHelp;
     }, [enabled]);
 
-    return tuple([focusedSong, setPositionBySongIndex]);
+    return tuple([focusedSong, setPositionBySongIndex, showFilters, setShowFilters]);
 };
-
-export default function useSongSelection(preselectedSong: string | null) {
-    const songList = useQuery<SongPreview[]>('songList', () =>
-        fetch('./songs/index.json').then((response) => response.json()),
-    );
-    const [keyboardControl, setKeyboardControl] = useState(true);
-
-    const groupedSongList = useMemo(() => {
-        if (!songList.data) return [];
-
-        const groups: SongGroup[] = [];
-
-        songList.data.forEach((song, index) => {
-            const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
-            let group = groups.find((group) => group.letter === firstCharacter);
-            if (!group) {
-                group = { letter: firstCharacter, songs: [] };
-                groups.push(group);
-            }
-
-            group.songs.push({ index, song });
-        });
-
-        return groups;
-    }, [songList.data]);
-
-    const [focusedSong, setFocusedSong] = useKeyboardTwoDimensionalNavigation(keyboardControl, groupedSongList, () =>
-        setKeyboardControl(false),
-    );
-
-    useEffect(() => {
-        if (songList.data) navigate(`/game/${encodeURIComponent(songList.data[focusedSong].file)}`);
-    }, [focusedSong, songList.data]);
-
-    useEffect(() => {
-        if (songList.data && preselectedSong) {
-            const newIndex = songList.data.findIndex((song) => song.file === preselectedSong);
-
-            if (newIndex > -1) setTimeout(() => setFocusedSong(newIndex));
-        }
-    }, [songList.data, preselectedSong]);
-
-    const songPreview = songList.data?.[focusedSong];
-    return { groupedSongList, focusedSong, setFocusedSong, setKeyboardControl, keyboardControl, songPreview };
-}

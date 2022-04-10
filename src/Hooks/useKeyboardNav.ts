@@ -10,6 +10,7 @@ interface Params {
     onRightArrow?: Callback;
     onEnter?: Callback;
     onBackspace?: Callback;
+    onLetterF?: Callback;
     // onAlphaNumeric?: () => void,
 }
 
@@ -20,6 +21,7 @@ const paramsToKeys: { [param in keyof Params]: string } = {
     onRightArrow: 'right',
     onEnter: 'Enter',
     onBackspace: 'Backspace',
+    onLetterF: 'F',
 };
 
 const keysToParams: { [key: string]: keyof Params } = invert(paramsToKeys) as any;
