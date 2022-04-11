@@ -12,16 +12,27 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters }: Props) {
-    const selectedLanguage = filtersData.language.current;
-
     const { register } = useKeyboard(true, onBack);
 
+    const selectedLanguage = filtersData.language.current;
     const cycleLanguage = () => {
         const index = filtersData.language.available.indexOf(selectedLanguage);
 
         onSongFiltered({
             ...filters,
             language: filtersData.language.available[(index + 1) % filtersData.language.available.length],
+        });
+    };
+
+    const selectedDuet = filters.duet ?? null;
+    const duetLabel = selectedDuet === null ? 'Any' : selectedDuet ? 'Duet' : 'Single Track';
+    const cycleDuet = () => {
+        const cycle = [null, true, false];
+        const index = cycle.indexOf(selectedDuet);
+
+        onSongFiltered({
+            ...filters,
+            duet: cycle[(index + 1) % cycle.length],
         });
     };
 
@@ -54,6 +65,9 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters }
             </FilterItem>
             <FilterItem>
                 <Switcher {...register('language', cycleLanguage)} label="Language" value={selectedLanguage || 'All'} />
+            </FilterItem>
+            <FilterItem>
+                <Switcher {...register('duet', cycleDuet)} label="Duet?" value={duetLabel} />
             </FilterItem>
         </Container>
     );

@@ -12,6 +12,7 @@ export interface SongGroup {
 export interface AppliedFilters {
     language?: string;
     search?: string;
+    duet?: boolean | null;
 }
 
 export interface FiltersData {
@@ -38,6 +39,11 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
         const cleanSearch = clearString(search);
 
         return cleanSearch.length ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
+    },
+    duet: (songList, duet: boolean | null) => {
+        if (duet === null) return songList;
+
+        return songList.filter((song) => (duet ? song.tracksCount > 1 : song.tracksCount === 1));
     },
 };
 
