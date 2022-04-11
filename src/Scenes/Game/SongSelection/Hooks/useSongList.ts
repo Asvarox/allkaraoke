@@ -2,6 +2,7 @@ import { uniq } from 'lodash';
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
 import { SongPreview } from '../../../../interfaces';
+import clearString from '../../../../Utils/clearString';
 
 export interface SongGroup {
     letter: string;
@@ -10,6 +11,7 @@ export interface SongGroup {
 
 export interface AppliedFilters {
     language?: string;
+    search?: string;
 }
 
 export interface FiltersData {
@@ -26,10 +28,16 @@ export interface FiltersData {
 type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
 
 const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
-    language: (songList: SongPreview[], language: string) => {
+    language: (songList, language: string) => {
         if (language === '') return songList;
         const filterValue = language === 'Unknown' ? undefined : language;
+
         return songList.filter((song) => song.language === filterValue);
+    },
+    search: (songList, search: string) => {
+        const cleanSearch = clearString(search);
+
+        return cleanSearch.length ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
     },
 };
 
@@ -40,9 +48,6 @@ const applyFilters = (list: SongPreview[], filters: AppliedFilters): SongPreview
 };
 
 const useLanguageFilter = (list: SongPreview[]) => {
-    list.forEach((song) => {
-        if (!song.language) console.log(song);
-    });
     return useMemo(() => uniq(['', ...list.map((song) => song.language ?? 'Unknown')]), [list]);
 };
 
@@ -64,14 +69,14 @@ export const useSongListFilter = (list: SongPreview[]) => {
         },
     };
 
-    return { filteredList, filtersData, setFilters };
+    return { filters, filteredList, filtersData, setFilters };
 };
 
 export default function useSongList() {
     const songList = useQuery<SongPreview[]>('songList', () =>
         fetch('./songs/index.json').then((response) => response.json()),
     );
-    const { filtersData, filteredList, setFilters } = useSongListFilter(songList.data ?? []);
+    const { filters, filtersData, filteredList, setFilters } = useSongListFilter(songList.data ?? []);
     const groupedSongList = useMemo(() => {
         if (filteredList.length === 0) return [];
 
@@ -94,7 +99,8 @@ export default function useSongList() {
     return {
         groupedSongList,
         songList: filteredList,
-        filters: filtersData,
+        filtersData,
+        filters,
         setFilters,
     };
 }

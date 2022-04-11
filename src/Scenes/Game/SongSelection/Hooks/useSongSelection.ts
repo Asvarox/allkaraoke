@@ -4,7 +4,7 @@ import useSongList from './useSongList';
 import { useSongSelectionKeyboardNavigation } from './useSongSelectionKeyboardNavigation';
 
 export default function useSongSelection(preselectedSong: string | null) {
-    const { songList, groupedSongList, filters, setFilters } = useSongList();
+    const { songList, groupedSongList, filtersData, setFilters, filters } = useSongList();
 
     const [keyboardControl, setKeyboardControl] = useState(true);
 
@@ -35,6 +35,7 @@ export default function useSongSelection(preselectedSong: string | null) {
         keyboardControl,
         songPreview,
         songList: songList ?? [],
+        filtersData,
         filters,
         setFilters,
         showFilters,

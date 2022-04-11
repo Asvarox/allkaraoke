@@ -29,7 +29,7 @@ const ConfigurationPosition = styled(SongListEntryDetails)<{ focused: boolean }>
 
 const ConfigValue = styled.span`
     color: ${styles.colors.text.active};
-    font-size: 1.1em;
+    //font-size: 1.1em;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;

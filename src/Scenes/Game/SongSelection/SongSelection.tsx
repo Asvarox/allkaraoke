@@ -33,6 +33,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setKeyboardControl,
         setFilters,
         filters,
+        filtersData,
         showFilters,
         setShowFilters,
     } = useSongSelection(preselectedSong);
@@ -67,7 +68,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     return (
         <Container>
             {showFilters && (
-                <Filters filters={filters} onSongFiltered={setFilters} onBack={() => setShowFilters(false)} />
+                <Filters
+                    filtersData={filtersData}
+                    onSongFiltered={setFilters}
+                    onBack={() => setShowFilters(false)}
+                    filters={filters}
+                />
             )}
             <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container">
                 {songPreview && (
@@ -161,5 +167,6 @@ const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width:
     background-blend-mode: ${(props) => (props.focused ? 'normal' : 'luminosity')};
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
+    //transform: ${(props) => (props.focused ? 'scale(1.5) perspective(500px) rotateY(30deg)' : 'scale(1)')};
     ${(props) => props.focused && focused}
 `;
