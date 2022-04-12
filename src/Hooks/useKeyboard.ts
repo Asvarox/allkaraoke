@@ -9,7 +9,15 @@ import useKeyboardNav from './useKeyboardNav';
  *
  * But still works even with dynamic elements :shrugs:
  */
-export default function useKeyboard(enabled = true, onBackspace?: () => void, backspaceHelp: string | null = null) {
+interface Options {
+    enabled?: boolean;
+    onBackspace?: () => void;
+    backspaceHelp?: string;
+}
+
+export default function useKeyboard(options: Options = {}) {
+    const { enabled = true, onBackspace, backspaceHelp } = options;
+
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
     const elementList = useRef<string[]>([]);
     const newElementList = useRef<string[]>([]);

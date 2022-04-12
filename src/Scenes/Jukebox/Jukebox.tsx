@@ -25,9 +25,7 @@ function Jukebox(props: Props) {
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-    const { register } = useKeyboard(true, () => {
-        navigate('/');
-    });
+    const { register } = useKeyboard({ onBackspace: () => navigate('/') });
 
     useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 

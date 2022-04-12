@@ -94,7 +94,7 @@ function SelectInput(props: Props) {
 
     const goBack = () => navigate('/');
 
-    const { register } = useKeyboard(true, goBack);
+    const { register } = useKeyboard({ onBackspace: goBack });
 
     return (
         <MenuContainer>

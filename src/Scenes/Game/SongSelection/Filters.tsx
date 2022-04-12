@@ -12,7 +12,7 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters }: Props) {
-    const { register } = useKeyboard(true, onBack);
+    const { register } = useKeyboard({ onBackspace: onBack });
 
     const selectedLanguage = filtersData.language.current;
     const cycleLanguage = () => {
@@ -46,7 +46,7 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters }
 
     return (
         <Container>
-            <FilterItem>
+            <FilterItem large>
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -84,6 +84,6 @@ const Container = styled.div`
     gap: 20px;
 `;
 
-const FilterItem = styled.div`
-    flex: 1;
+const FilterItem = styled.div<{ large?: boolean }>`
+    flex: ${(props) => (props.large ? 2 : 1)};
 `;

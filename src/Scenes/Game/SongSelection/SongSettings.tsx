@@ -58,7 +58,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     const changeTolerance = () =>
         setTolerance((current) => (difficultyNames.length + current - 1) % difficultyNames.length);
 
-    const { register } = useKeyboard(keyboardControl, onExitKeyboardControl);
+    const { register } = useKeyboard({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
 
     return (
         <GameConfiguration>
