@@ -19,9 +19,6 @@ describe('Jukebox', () => {
         });
 
         cy.get('[data-test="jukebox"]').click();
-        cy.wait(500);
-        cy.frameLoaded('#widget2');
-        cy.iframe('#widget2').find('#player').should('exist');
         cy.wait(1500);
         cy.get('body').type('{uparrow}'); // "skip song"
         cy.wait(1500);

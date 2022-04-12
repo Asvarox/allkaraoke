@@ -1,5 +1,5 @@
 {
-    "blockHosts": ["googleads.g.doubleclick.net", "o366978.ingest.sentry.io"],
+    "blockHosts": ["*.g.doubleclick.net", "*.ingest.sentry.io"],
     "chromeWebSecurity": false,
     "retries": {
         "runMode": 2,
