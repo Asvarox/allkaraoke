@@ -58,7 +58,6 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters }
                             () => {
                                 searchInput.current?.focus();
                             },
-                            false,
                             'Search song',
                         )}
                         label="Search"
@@ -70,13 +69,13 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters }
             </FilterItem>
             <FilterItem>
                 <Switcher
-                    {...register('language', cycleLanguage, false, 'Toggle language')}
+                    {...register('language', cycleLanguage, 'Toggle language')}
                     label="Language"
                     value={selectedLanguage || 'All'}
                 />
             </FilterItem>
             <FilterItem>
-                <Switcher {...register('duet', cycleDuet, false, 'Toggle duet')} label="Duet?" value={duetLabel} />
+                <Switcher {...register('duet', cycleDuet, 'Toggle duet')} label="Duet?" value={duetLabel} />
             </FilterItem>
         </Container>
     );

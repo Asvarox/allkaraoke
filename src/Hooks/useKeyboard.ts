@@ -75,7 +75,7 @@ export default function useKeyboard(options: Options = {}) {
 
     let defaultSelection = '';
 
-    const register = (name: string, onActive: () => void, isDefault = false, help?: string) => {
+    const register = (name: string, onActive: () => void, help?: string, isDefault = false) => {
         newElementList.current.push(name);
         if (onActive) actions.current[name] = { callback: onActive, label: help };
 

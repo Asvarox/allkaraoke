@@ -63,14 +63,14 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     return (
         <GameConfiguration>
             <Switcher
-                {...register('difficulty', changeTolerance, false, 'Change difficulty')}
+                {...register('difficulty', changeTolerance, 'Change difficulty')}
                 label="Difficulty"
                 value={difficultyNames[tolerance]}
                 data-test="difficulty-setting"
                 data-test-value={difficultyNames[tolerance]}
             />
             <Switcher
-                {...register('mode', changeMode, false, 'Change mode')}
+                {...register('mode', changeMode, 'Change mode')}
                 label="Mode"
                 value={gameModeNames[mode]}
                 data-test="game-mode-setting"
@@ -79,14 +79,14 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
             {multipleTracks && (
                 <>
                     <Switcher
-                        {...register('p1 track', () => togglePlayerTrack(0), false, 'Change track')}
+                        {...register('p1 track', () => togglePlayerTrack(0), 'Change track')}
                         label="Player 1"
                         value={getPlayerTrackName(songPreview.tracks, playerTracks[0])}
                         data-test="player-1-track-setting"
                         data-test-value={playerTracks[0] + 1}
                     />
                     <Switcher
-                        {...register('p2 track', () => togglePlayerTrack(1), false, 'Change track')}
+                        {...register('p2 track', () => togglePlayerTrack(1), 'Change track')}
                         label="Player 2"
                         value={getPlayerTrackName(songPreview.tracks, playerTracks[1])}
                         data-test="player-2-track-setting"
@@ -94,7 +94,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
                     />
                 </>
             )}
-            <PlayButton {...register('play', startSong, true)} data-test="play-song-button">
+            <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
                 Play
             </PlayButton>
         </GameConfiguration>
