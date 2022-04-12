@@ -12,11 +12,12 @@ import useKeyboardNav from './useKeyboardNav';
 interface Options {
     enabled?: boolean;
     onBackspace?: () => void;
-    backspaceHelp?: string;
+    backspaceHelp?: string | null;
+    direction?: 'horizontal' | 'vertical';
 }
 
 export default function useKeyboard(options: Options = {}) {
-    const { enabled = true, onBackspace, backspaceHelp } = options;
+    const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical' } = options;
 
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
     const elementList = useRef<string[]>([]);
@@ -35,7 +36,7 @@ export default function useKeyboard(options: Options = {}) {
     useEffect(() => {
         if (enabled)
             setHelp({
-                vertical: null,
+                [direction]: null,
                 accept: actions.current[currentlySelected!]?.label ?? null,
                 back: onBackspace ? backspaceHelp : undefined,
             });
@@ -63,8 +64,8 @@ export default function useKeyboard(options: Options = {}) {
 
     useKeyboardNav(
         {
-            onUpArrow: () => handleNavigation(-1),
-            onDownArrow: () => handleNavigation(1),
+            [direction === 'vertical' ? 'onUpArrow' : 'onLeftArrow']: () => handleNavigation(-1),
+            [direction === 'vertical' ? 'onDownArrow' : 'onRightArrow']: () => handleNavigation(1),
             onEnter: handleEnter,
             onBackspace: handleBackspace,
         },

@@ -25,7 +25,7 @@ export const KeyboardHelpProvider: FunctionComponent = ({ children }) => {
 
     const unsetKeyboard = (name: string) => setKeyboards((kbs) => omit(kbs, [name]));
 
-    const help = Object.values(keyboards).at(0);
+    const help = Object.values(keyboards).at(-1);
 
     return (
         <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard }}>

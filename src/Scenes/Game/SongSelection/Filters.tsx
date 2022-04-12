@@ -12,7 +12,7 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters }: Props) {
-    const { register } = useKeyboard({ onBackspace: onBack });
+    const { register } = useKeyboard({ onBackspace: onBack, direction: 'horizontal' });
 
     const selectedLanguage = filtersData.language.current;
     const cycleLanguage = () => {
@@ -53,9 +53,14 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters }
                         searchInput.current?.blur();
                     }}>
                     <Input
-                        {...register('search', () => {
-                            searchInput.current?.focus();
-                        })}
+                        {...register(
+                            'search',
+                            () => {
+                                searchInput.current?.focus();
+                            },
+                            false,
+                            'Search song',
+                        )}
                         label="Search"
                         value={filters.search ?? ''}
                         onChange={setSearch}
@@ -64,10 +69,14 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters }
                 </form>
             </FilterItem>
             <FilterItem>
-                <Switcher {...register('language', cycleLanguage)} label="Language" value={selectedLanguage || 'All'} />
+                <Switcher
+                    {...register('language', cycleLanguage, false, 'Toggle language')}
+                    label="Language"
+                    value={selectedLanguage || 'All'}
+                />
             </FilterItem>
             <FilterItem>
-                <Switcher {...register('duet', cycleDuet)} label="Duet?" value={duetLabel} />
+                <Switcher {...register('duet', cycleDuet, false, 'Toggle duet')} label="Duet?" value={duetLabel} />
             </FilterItem>
         </Container>
     );
