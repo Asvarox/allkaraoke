@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { HelpEntry } from '../Scenes/KeyboardHelp/Context';
 import { menuBack, menuEnter, menuNavigate } from '../SoundManager';
 import useKeyboardHelp from './useKeyboardHelp';
 import useKeyboardNav from './useKeyboardNav';
@@ -14,10 +15,11 @@ interface Options {
     onBackspace?: () => void;
     backspaceHelp?: string | null;
     direction?: 'horizontal' | 'vertical';
+    additionalHelp?: HelpEntry;
 }
 
 export default function useKeyboard(options: Options = {}) {
-    const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical' } = options;
+    const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
 
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
     const elementList = useRef<string[]>([]);
@@ -39,6 +41,7 @@ export default function useKeyboard(options: Options = {}) {
                 [direction]: null,
                 accept: actions.current[currentlySelected!]?.label ?? null,
                 back: onBackspace ? backspaceHelp : undefined,
+                ...additionalHelp,
             });
         return clearHelp;
     }, [enabled, currentlySelected, actions]);

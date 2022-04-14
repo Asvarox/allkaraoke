@@ -142,6 +142,7 @@ export const useSongSelectionKeyboardNavigation = (
                 'horizontal-vertical': null,
                 accept: null,
                 back: null,
+                letterF: 'Filter list',
             });
         }
 

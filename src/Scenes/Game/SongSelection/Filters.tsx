@@ -14,7 +14,12 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters, showFilters }: Props) {
-    const { register } = useKeyboard({ onBackspace: onBack, direction: 'horizontal', enabled: showFilters });
+    const { register } = useKeyboard({
+        onBackspace: onBack,
+        direction: 'horizontal',
+        enabled: showFilters,
+        additionalHelp: { letterF: 'Return to Song List' },
+    });
     useHotkeys('down', onBack, { enabled: showFilters });
 
     const selectedLanguage = filtersData.language.current;
