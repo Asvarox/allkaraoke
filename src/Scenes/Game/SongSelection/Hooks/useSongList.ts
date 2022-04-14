@@ -15,6 +15,14 @@ export interface AppliedFilters {
     duet?: boolean | null;
 }
 
+export function isEmptyFilters(filters: AppliedFilters) {
+    return (
+        (!filters.language || filters.language === '') &&
+        (!filters.search || filters.search === '') &&
+        (filters.duet === undefined || filters.duet === null)
+    );
+}
+
 export interface FiltersData {
     language: {
         current: string;

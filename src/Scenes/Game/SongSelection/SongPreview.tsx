@@ -20,6 +20,7 @@ interface Props {
     left: number;
     width: number;
     height: number;
+    focusEffect: boolean;
 }
 
 const playerVars: PlayerVars = {
@@ -45,6 +46,7 @@ export default function SongPreviewComponent({
     keyboardControl,
     onExitKeyboardControl,
     onPlay,
+    focusEffect,
 }: Props) {
     const [showVideo, setShowVideo] = useState(false);
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
@@ -96,6 +98,7 @@ export default function SongPreviewComponent({
                 <Content
                     width={finalWidth}
                     active={active}
+                    focus={focusEffect}
                     blurBackground={active && !showVideo}
                     isVideoPlaying={showVideo}>
                     {(showVideo || active) && (
@@ -196,7 +199,12 @@ const Video = styled(SongCard)<{ show: boolean; active: boolean; height: number 
     ${(props) => props.active && `margin-top: calc(-1 * (100vw / 16 * 9) / 2 + ${props.height / 2}px);`}
 `;
 
-const Content = styled(SongCardContainer)<{ active: boolean; blurBackground: boolean; isVideoPlaying: boolean }>`
+const Content = styled(SongCardContainer)<{
+    active: boolean;
+    blurBackground: boolean;
+    isVideoPlaying: boolean;
+    focus: boolean;
+}>`
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -204,7 +212,7 @@ const Content = styled(SongCardContainer)<{ active: boolean; blurBackground: boo
     padding: ${(props) => (props.active ? '0.25em' : '0.5em')};
     ${(props) => props.blurBackground && 'backdrop-filter: blur(10px);'}
 
-    ${(props) => !props.active && props.isVideoPlaying && focused}
+    ${(props) => props.focus && !props.active && props.isVideoPlaying && focused}
 `;
 
 const SongInfo = styled.div<{ active: boolean }>`

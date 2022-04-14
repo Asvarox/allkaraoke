@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import styled from 'styled-components';
 import useKeyboard from '../../../Hooks/useKeyboard';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
@@ -9,10 +10,12 @@ interface Props {
     onSongFiltered: (filters: AppliedFilters) => void;
     filtersData: FiltersData;
     filters: AppliedFilters;
+    showFilters: boolean;
     onBack: () => void;
 }
-export default function Filters({ filtersData, onSongFiltered, onBack, filters }: Props) {
-    const { register } = useKeyboard({ onBackspace: onBack, direction: 'horizontal' });
+export default function Filters({ filtersData, onSongFiltered, onBack, filters, showFilters }: Props) {
+    const { register } = useKeyboard({ onBackspace: onBack, direction: 'horizontal', enabled: showFilters });
+    useHotkeys('down', onBack, { enabled: showFilters });
 
     const selectedLanguage = filtersData.language.current;
     const cycleLanguage = () => {
@@ -93,5 +96,5 @@ const Container = styled.div`
 `;
 
 const FilterItem = styled.div<{ large?: boolean }>`
-    flex: ${(props) => (props.large ? 2 : 1)};
+    flex: ${(props) => (props.large ? 1.5 : 1)};
 `;

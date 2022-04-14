@@ -6,6 +6,7 @@ import useViewportSize from '../../../Hooks/useViewportSize';
 import { SingSetup } from '../../../interfaces';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 import Filters from './Filters';
+import { isEmptyFilters } from './Hooks/useSongList';
 import useSongSelection from './Hooks/useSongSelection';
 import { SongCard, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
 import SongPreview from './SongPreview';
@@ -67,8 +68,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
     return (
         <Container>
-            {showFilters && (
+            {(showFilters || !isEmptyFilters(filters)) && (
                 <Filters
+                    showFilters={showFilters}
                     filtersData={filtersData}
                     onSongFiltered={setFilters}
                     onBack={() => setShowFilters(false)}
@@ -86,6 +88,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                         left={previewLeft}
                         width={entryWidth}
                         height={entryHeight}
+                        focusEffect={!showFilters}
                     />
                 )}
                 {groupedSongList.map((group) => (
@@ -99,7 +102,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                     key={song.file}
                                     onClick={() => onSongClick(index)}
                                     video={song.video}
-                                    focused={keyboardControl && index === focusedSong}
+                                    focused={!showFilters && keyboardControl && index === focusedSong}
                                     data-index={index}
                                     data-test={`song-${song.file}`}>
                                     <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>

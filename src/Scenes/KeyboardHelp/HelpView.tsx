@@ -57,16 +57,9 @@ const HorizontalVerticalBase = ({ vertical = false, horizontal = false }) => (
 const Horizontal = () => <HorizontalVerticalBase horizontal />;
 const Vertical = () => <HorizontalVerticalBase vertical />;
 const HorizontalVertical = () => <HorizontalVerticalBase vertical horizontal />;
-const Accept = () => (
-    <>
-        <Kbd>Enter ⏎</Kbd>
-    </>
-);
-const Back = () => (
-    <>
-        <Kbd>Backspace ⌫</Kbd>
-    </>
-);
+const Accept = () => <Kbd>Enter ⏎</Kbd>;
+const Back = () => <Kbd>Backspace ⌫</Kbd>;
+const Letter = (letter: string) => () => <Kbd>{letter.toUpperCase()}</Kbd>;
 
 const KeyhelpComponent: Record<keyof HelpEntry, { view: ComponentType; defaultLabel: string }> = {
     'horizontal-vertical': { view: HorizontalVertical, defaultLabel: 'Navigate' },
@@ -74,6 +67,7 @@ const KeyhelpComponent: Record<keyof HelpEntry, { view: ComponentType; defaultLa
     vertical: { view: Vertical, defaultLabel: 'Navigate' },
     accept: { view: Accept, defaultLabel: 'Select' },
     back: { view: Back, defaultLabel: 'Go back' },
+    letterF: { view: Letter('f'), defaultLabel: 'Letter' },
 };
 
 const Section = styled.div`

@@ -83,7 +83,7 @@ export default function useKeyboard(options: Options = {}) {
             defaultSelection = name;
         }
 
-        return { focused: currentlySelected === name, onClick: onActive };
+        return { focused: enabled && currentlySelected === name, onClick: onActive };
     };
 
     useEffect(() => {
