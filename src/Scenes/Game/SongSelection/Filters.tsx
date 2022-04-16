@@ -53,9 +53,10 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
     };
 
     return (
-        <Container>
+        <Container data-test="song-list-filters">
             <FilterItem large>
                 <form
+                    data-test="filters-search-form"
                     onSubmit={(e) => {
                         e.preventDefault();
                         searchInput.current?.blur();
@@ -72,6 +73,7 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
                         value={filters.search ?? ''}
                         onChange={setSearch}
                         ref={searchInput}
+                        data-test="filters-search"
                     />
                 </form>
             </FilterItem>
@@ -80,10 +82,16 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
                     {...register('language', cycleLanguage, 'Toggle language')}
                     label="Language"
                     value={selectedLanguage || 'All'}
+                    data-test="filters-language"
                 />
             </FilterItem>
             <FilterItem>
-                <Switcher {...register('duet', cycleDuet, 'Toggle duet')} label="Duet?" value={duetLabel} />
+                <Switcher
+                    {...register('duet', cycleDuet, 'Toggle duet')}
+                    label="Duet?"
+                    value={duetLabel}
+                    data-test="filters-duet"
+                />
             </FilterItem>
         </Container>
     );

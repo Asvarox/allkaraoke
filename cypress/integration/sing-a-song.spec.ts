@@ -1,11 +1,5 @@
-/// <reference types="cypress" />
-
 describe('Sing a song', () => {
     beforeEach(() => {
-        // Cypress starts out with a blank slate for each test
-        // so we must tell it to visit our website with the `cy.visit()` command.
-        // Since we want to visit the same URL at the start of all our tests,
-        // we include it in our beforeEach function so that it runs before each test
         cy.visit('http://localhost:3000');
         cy.intercept('GET', '/songs/index.json', { fixture: 'songs/index.json' });
         cy.intercept('GET', '/songs/e2e-test.json', { fixture: 'songs/e2e-test.json' });
@@ -37,5 +31,42 @@ describe('Sing a song', () => {
 
         cy.get('[data-test="play-next-song-button"]', { timeout: 30_000 }).click();
         cy.get('[data-test="song-e2e-test.json"]').should('exist');
+    });
+
+    describe('Filters', () => {
+        it('should open and close filters songs by title', () => {
+            cy.get('[data-test="sing-a-song"]').click();
+            cy.wait(500);
+            cy.get('body').type('f'); // Show filters
+            cy.get('[data-test="song-list-filters"]').should('exist');
+
+            cy.get('body').type('{enter}'); // focus search song
+            cy.get('body').type('multitrack');
+            cy.get('body').type('{enter}'); // un-focus search
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('not.exist');
+            for (let i = 0; i < 10; i++) cy.get('body').type('{backspace}');
+            cy.get('[data-test="filters-search-form"]').submit();
+
+            cy.get('body').type('{rightarrow}'); // language filters
+            cy.get('body').type('{enter}'); // english
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('not.exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('exist');
+            cy.get('body').type('{enter}'); // polish
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('not.exist');
+            cy.get('body').type('{enter}'); // All
+
+            cy.get('body').type('{rightarrow}'); // duet filters
+            cy.get('body').type('{enter}'); // Duet
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('not.exist');
+            cy.get('body').type('{enter}'); // Solo
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('not.exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('exist');
+
+            cy.get('body').type('{downarrow}');
+            cy.get('[data-test="song-preview"]').invoke('attr', 'data-song').should('equal', 'e2e-test.json');
+        });
     });
 });

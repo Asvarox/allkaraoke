@@ -20,7 +20,7 @@ export default function KeyboardHelpView({ help }: Props) {
     return (
         <>
             {isVisible && !!helps.length && (
-                <Container>
+                <Container data-test="help-container">
                     {helps.map(([type, label]) => {
                         const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof HelpEntry];
                         return (
