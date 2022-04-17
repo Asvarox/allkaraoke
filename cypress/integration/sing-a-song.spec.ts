@@ -34,7 +34,7 @@ describe('Sing a song', () => {
         cy.get('[data-test="difficulty-setting"]').should('have.attr', 'data-test-value', 'Hard');
     });
 
-    it.only('goes through singing properly', () => {
+    it('goes through singing properly', () => {
         cy.get('[data-test="sing-a-song"]').click();
         cy.wait(500);
         cy.get('body').type('{rightarrow}'); // next song
