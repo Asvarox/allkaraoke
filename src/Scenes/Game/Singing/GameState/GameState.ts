@@ -10,7 +10,10 @@ import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 
-const Input = process.env.NODE_ENV === 'development' ? DummyInput : MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+const isCypress = !!window.cypress;
+
+const Input = process.env.NODE_ENV === 'development' && !isCypress ? DummyInput : MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
 const Input1 = MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
 
 InputManager.setPlayerInput(0, Input, 0);

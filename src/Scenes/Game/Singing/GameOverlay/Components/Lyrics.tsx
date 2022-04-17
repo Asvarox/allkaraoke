@@ -31,7 +31,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
             {hasNotes ? (
                 <>
-                    <LyricsLine>
+                    <LyricsLine data-test={`lyrics-line-player-${player}`}>
                         <HeadstartContainer>
                             <Headstart
                                 color={playerColor}

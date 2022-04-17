@@ -16,10 +16,30 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+const { initPlugin } = require('cypress-plugin-snapshots/plugin');
 module.exports = (on, config) => {
+    initPlugin(on, config);
+
+    on('before:browser:launch', function (browser = {}, args) {
+        if (browser.name === 'chrome') {
+            console.log(args);
+            args.push('--no-sandbox');
+            args.push('--allow-file-access-from-files');
+            args.push('--use-fake-ui-for-media-stream');
+            args.push('--use-fake-device-for-media-stream');
+            args.push('--use-file-for-fake-audio-capture=cypress/fixtures/test-440hz.wav');
+        }
+
+        return args;
+    });
+
     on('before:browser:launch', (browser = {}, launchOptions) => {
         if (browser.family === 'chromium') {
-            // auto open devtools
+            launchOptions.args.push('--no-sandbox');
+            launchOptions.args.push('--allow-file-access-from-files');
+            launchOptions.args.push('--use-fake-ui-for-media-stream');
+            launchOptions.args.push('--use-fake-device-for-media-stream');
+            launchOptions.args.push('--use-file-for-fake-audio-capture=cypress/fixtures/test-440hz.wav');
             launchOptions.args.push('--mute-audio');
         }
         return launchOptions;

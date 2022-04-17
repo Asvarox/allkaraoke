@@ -5,5 +5,13 @@
         "runMode": 2,
         "openMode": 0
     },
-    "video": false
+    "video": false,
+    "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
+    "env": {
+        "cypress-plugin-snapshots": {
+            "imageConfig": {
+                "threshold": 0.1
+            }
+        }
+    }
 }
