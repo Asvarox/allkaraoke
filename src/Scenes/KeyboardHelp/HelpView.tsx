@@ -91,7 +91,7 @@ const SectionHelp = styled.span`
 
 const Container = styled.div`
     position: fixed;
-    top: 15px;
+    top: 100px;
     right: 15px;
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
