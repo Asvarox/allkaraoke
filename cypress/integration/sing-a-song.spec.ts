@@ -102,7 +102,7 @@ describe('Sing a song', () => {
             cy.get('[data-test="song-e2e-test.json"]').should('exist');
 
             cy.get('body').type('{downarrow}');
-            cy.get('[data-test="song-preview"]').invoke('attr', 'data-song').should('equal', 'e2e-test.json');
+            cy.get('[data-test="song-preview"]').invoke('attr', 'data-song').should('not.equal', 'e2e-test.json');
         });
     });
 });
