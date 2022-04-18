@@ -53,7 +53,6 @@ describe('Sing a song', () => {
                 screenshotConfig: { clip: { x: 0, y: 40, width, height: height - 80 } },
             });
         });
-        cy.get('canvas').screenshot();
 
         cy.get('[data-test="play-next-song-button"]', { timeout: 30_000 }).click();
         cy.get('[data-test="song-e2e-test.json"]').should('exist');
