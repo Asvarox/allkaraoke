@@ -43,26 +43,15 @@ describe('Sing a song', () => {
 
         cy.get('[data-test="lyrics-line-player-1"]', { timeout: 7_000 }).should('be.visible');
         cy.wait(2_900);
-        cy.log('Checking screenshot');
-        console.log('Checking screenshot');
         cy.get('canvas').then((elem) => {
-            cy.log('Got canvas');
-            console.log('Got canvas');
             const width = elem.innerWidth();
             const height = elem.innerHeight();
-            cy.log(`Got size: ${width}, ${height}`);
-            console.log(`Got size: ${width}, ${height}`);
-
-            cy.log(`Clip: ${{ x: 0, y: 40, width, height: height - 80 }}`);
-            console.log(`Clip: ${width}, ${height}`);
 
             cy.get('canvas').toMatchImageSnapshot({
                 threshold: 0.01,
                 // @ts-ignore
                 screenshotConfig: { clip: { x: 0, y: 40, width, height: height - 80 } },
             });
-            cy.log('Checked');
-            console.log('Checked');
         });
 
         cy.get('[data-test="play-next-song-button"]', { timeout: 30_000 }).click();
@@ -102,7 +91,7 @@ describe('Sing a song', () => {
             cy.get('[data-test="song-e2e-test.json"]').should('exist');
 
             cy.get('body').type('{downarrow}');
-            cy.get('[data-test="song-preview"]').invoke('attr', 'data-song').should('not.equal', 'e2e-test.json');
+            cy.get('[data-test="song-preview"]').invoke('attr', 'data-song').should('equal', 'e2e-test.json');
         });
     });
 });
