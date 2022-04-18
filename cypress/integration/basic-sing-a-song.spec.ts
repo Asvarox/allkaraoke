@@ -13,7 +13,7 @@ describe('Sing a song', () => {
         cy.intercept('GET', '/songs/e2e-test-multitrack.json', { fixture: 'songs/e2e-test-multitrack.json' });
     });
 
-    it('goes through singing properly', () => {
+    it.only('goes through singing properly', () => {
         cy.get('[data-test="sing-a-song"]').click();
         cy.wait(500);
         cy.get('body').type('{rightarrow}'); // next song
