@@ -5,7 +5,7 @@ import tuple from '../../../../../Utils/tuple';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../../Helpers/isNotesSection';
 
-export const MAX_POINTS = 4_000_000;
+export const MAX_POINTS = 3_500_000;
 
 const noteTypesMultipliers: DetailedScore = {
     freestyle: 0.25,
