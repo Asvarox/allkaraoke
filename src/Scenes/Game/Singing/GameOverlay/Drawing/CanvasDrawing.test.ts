@@ -35,6 +35,10 @@ describe('CanvasDrawing', function () {
             canvasDrawing.drawFrame();
         }
 
-        expect(canvas.toBuffer()).toMatchImageSnapshot();
+        expect(canvas.toBuffer()).toMatchImageSnapshot({
+            comparisonMethod: 'ssim',
+            failureThreshold: 0.01,
+            failureThresholdType: 'percent',
+        });
     });
 });
