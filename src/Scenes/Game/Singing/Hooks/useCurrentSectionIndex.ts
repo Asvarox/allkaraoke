@@ -1,5 +1,5 @@
+import { Section } from 'interfaces';
 import { useMemo } from 'react';
-import { Section } from '../../../../interfaces';
 
 export default function useCurrentSectionIndex(sections: Section[], currentBeat: number) {
     const wholeBeat = Math.floor(currentBeat);

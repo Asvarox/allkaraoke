@@ -1,7 +1,7 @@
+import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { GAME_MODE, SingSetup, Song } from '../../interfaces';
 import getSongBeatLength from '../Game/Singing/GameState/Helpers/getSongBeatLength';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';

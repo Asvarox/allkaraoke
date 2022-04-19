@@ -1,4 +1,4 @@
-import { NotesSection, Section, Song } from '../../../../interfaces';
+import { NotesSection, Section, Song } from 'interfaces';
 import getSongBeatLength from '../GameState/Helpers/getSongBeatLength';
 import isNotesSection from './isNotesSection';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from './notesSelectors';

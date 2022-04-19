@@ -1,6 +1,6 @@
+import { SingSetup } from 'interfaces';
 import { useEffect, useState } from 'react';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
-import { SingSetup } from '../../interfaces';
 import Singing from './Singing/Singing';
 import SongSelection from './SongSelection/SongSelection';
 

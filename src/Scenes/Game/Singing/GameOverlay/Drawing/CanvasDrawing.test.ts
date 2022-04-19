@@ -1,8 +1,8 @@
 import { createCanvas } from 'canvas';
-import { GAME_MODE } from '../../../../../interfaces';
-import GameState from '../../GameState/GameState';
-import DrawingTestInput from '../../Input/DrawingTestInput';
-import InputManager from '../../Input/InputManager';
+import { GAME_MODE } from 'interfaces';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
+import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import CanvasDrawing from './CanvasDrawing';
 import songFixture from './song-fixture';
 

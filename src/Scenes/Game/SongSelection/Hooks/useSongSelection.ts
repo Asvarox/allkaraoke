@@ -1,5 +1,5 @@
+import { navigate } from 'Hooks/useHashLocation';
 import { useEffect, useState } from 'react';
-import { navigate } from '../../../../Hooks/useHashLocation';
 import useSongList from './useSongList';
 import { useSongSelectionKeyboardNavigation } from './useSongSelectionKeyboardNavigation';
 

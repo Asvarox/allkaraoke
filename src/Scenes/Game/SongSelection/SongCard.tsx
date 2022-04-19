@@ -1,5 +1,5 @@
+import { typography } from 'Elements/cssMixins';
 import styled from 'styled-components';
-import { typography } from '../../../Elements/cssMixins';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 
 export const SongCardContainer = styled.div<{ width: number }>`

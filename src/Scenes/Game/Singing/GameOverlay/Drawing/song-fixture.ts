@@ -1,4 +1,4 @@
-import { Song } from '../../../../../interfaces';
+import { Song } from 'interfaces';
 
 const song: Song = {
     artist: 'E2E Test',

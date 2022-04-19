@@ -1,4 +1,4 @@
-import { Song } from '../../interfaces';
+import { Song } from 'interfaces';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 
 export default function calculateProperBPM(desiredEndMs: number, song: Song) {

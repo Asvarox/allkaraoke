@@ -1,5 +1,5 @@
 import { useContext, useRef } from 'react';
-import { HelpEntry, KeyboardHelpContext } from '../Scenes/KeyboardHelp/Context';
+import { HelpEntry, KeyboardHelpContext } from 'Scenes/KeyboardHelp/Context';
 
 export default function useKeyboardHelp() {
     const name = useRef(String(Math.random()));

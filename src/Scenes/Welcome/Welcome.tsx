@@ -1,7 +1,7 @@
+import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { navigate } from 'Hooks/useHashLocation';
 import styled from 'styled-components';
 import { Link } from 'wouter';
-import { MenuButton, MenuContainer } from '../../Elements/Menu';
-import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
 import logo from './logo.gif';
 

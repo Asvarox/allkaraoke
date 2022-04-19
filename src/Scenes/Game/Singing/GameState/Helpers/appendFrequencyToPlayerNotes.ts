@@ -1,5 +1,5 @@
-import { noDistanceNoteTypes } from '../../../../../consts';
-import { FrequencyRecord, Note, PlayerNote } from '../../../../../interfaces';
+import { noDistanceNoteTypes } from 'consts';
+import { FrequencyRecord, Note, PlayerNote } from 'interfaces';
 import { calcDistance } from './calcDistance';
 import detectVibrato from './detectVibrato';
 

@@ -1,9 +1,9 @@
+import { focused } from 'Elements/cssMixins';
+import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { focused } from '../../../Elements/cssMixins';
 import usePrevious from '../../../Hooks/usePrevious';
 import useViewportSize from '../../../Hooks/useViewportSize';
-import { SingSetup } from '../../../interfaces';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 import Filters from './Filters';
 import { isEmptyFilters } from './Hooks/useSongList';

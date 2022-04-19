@@ -1,7 +1,7 @@
+import { Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import { Song } from '../../../../interfaces';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';

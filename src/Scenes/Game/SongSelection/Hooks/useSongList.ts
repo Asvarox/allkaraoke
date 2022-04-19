@@ -1,7 +1,7 @@
+import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash';
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
-import { SongPreview } from '../../../../interfaces';
 import clearString from '../../../../Utils/clearString';
 
 export interface SongGroup {

@@ -1,5 +1,5 @@
-import { PlayerNote } from '../../../../../interfaces';
-import { generateNote, generatePlayerNote, generateSong } from '../../../../../testUtilts';
+import { PlayerNote } from 'interfaces';
+import { generateNote, generatePlayerNote, generateSong } from 'testUtilts';
 import calculateScore, { MAX_POINTS } from './calculateScore';
 
 describe('calculateScore', () => {

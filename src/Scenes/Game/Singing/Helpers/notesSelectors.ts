@@ -1,4 +1,4 @@
-import { NotesSection, Section } from '../../../../interfaces';
+import { NotesSection, Section } from 'interfaces';
 import isNotesSection from './isNotesSection';
 
 export const getFirstNoteStartFromSections = (sections: Section[]) => {

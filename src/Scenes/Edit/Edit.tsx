@@ -1,7 +1,7 @@
+import { Song } from 'interfaces';
 import { useQuery } from 'react-query';
 import styled from 'styled-components';
 import { Link } from 'wouter';
-import { Song } from '../../interfaces';
 import EditSong from './EditSong';
 
 interface Props {

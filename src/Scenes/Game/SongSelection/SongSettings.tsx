@@ -1,9 +1,9 @@
+import { Button } from 'Elements/Button';
+import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { isNumber } from 'lodash';
 import { useState } from 'react';
 import styled from 'styled-components';
-import { Button } from '../../../Elements/Button';
 import useKeyboard from '../../../Hooks/useKeyboard';
-import { GAME_MODE, SingSetup, SongPreview } from '../../../interfaces';
 import { Switcher } from './Switcher';
 
 interface Props {

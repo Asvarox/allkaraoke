@@ -1,5 +1,5 @@
+import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash';
-import { SongPreview } from './interfaces';
 
 const data = {
     language: {

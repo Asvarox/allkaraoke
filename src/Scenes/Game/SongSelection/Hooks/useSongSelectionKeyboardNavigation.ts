@@ -1,10 +1,10 @@
+import { navigate } from 'Hooks/useHashLocation';
 import { chunk, throttle } from 'lodash';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { navigate } from '../../../../Hooks/useHashLocation';
+import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboardHelp from '../../../../Hooks/useKeyboardHelp';
 import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
 import usePrevious from '../../../../Hooks/usePrevious';
-import { menuBack, menuEnter, menuNavigate } from '../../../../SoundManager';
 import tuple from '../../../../Utils/tuple';
 import { SongGroup } from './useSongList';
 

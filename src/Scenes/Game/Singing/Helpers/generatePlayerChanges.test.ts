@@ -1,4 +1,4 @@
-import { generateSection, generateSong } from '../../../../testUtilts';
+import { generateSection, generateSong } from 'testUtilts';
 import generatePlayerChanges from './generatePlayerChanges';
 
 describe('generatePlayerChanges', () => {

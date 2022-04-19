@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { HelpEntry } from '../Scenes/KeyboardHelp/Context';
-import { menuBack, menuEnter, menuNavigate } from '../SoundManager';
+import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
+import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboardHelp from './useKeyboardHelp';
 import useKeyboardNav from './useKeyboardNav';
 

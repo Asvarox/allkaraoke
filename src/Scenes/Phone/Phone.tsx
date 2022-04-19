@@ -1,5 +1,5 @@
+import { MenuContainer } from 'Elements/Menu';
 import { useState } from 'react';
-import { MenuContainer } from '../../Elements/Menu';
 import WebRTCClient from './WebRTCClient';
 
 interface Props {

@@ -1,6 +1,6 @@
+import { focusable, typography } from 'Elements/cssMixins';
 import { ForwardedRef, forwardRef, ReactNode } from 'react';
 import styled from 'styled-components';
-import { focusable, typography } from '../../../Elements/cssMixins';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 
 interface Props {

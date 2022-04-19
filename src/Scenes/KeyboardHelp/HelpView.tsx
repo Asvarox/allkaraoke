@@ -1,8 +1,8 @@
+import { typography } from 'Elements/cssMixins';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import styled from 'styled-components';
 import createPersistedState from 'use-persisted-state';
-import { typography } from '../../Elements/cssMixins';
 import { HelpEntry } from './Context';
 
 interface Props {

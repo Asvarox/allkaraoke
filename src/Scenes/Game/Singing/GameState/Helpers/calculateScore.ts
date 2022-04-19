@@ -1,6 +1,6 @@
+import { noPointsNoteTypes } from 'consts';
+import { DetailedScore, PlayerNote, Song } from 'interfaces';
 import { memoize } from 'lodash';
-import { noPointsNoteTypes } from '../../../../../consts';
-import { DetailedScore, PlayerNote, Song } from '../../../../../interfaces';
 import tuple from '../../../../../Utils/tuple';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../../Helpers/isNotesSection';

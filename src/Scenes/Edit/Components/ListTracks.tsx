@@ -1,4 +1,4 @@
-import { Song } from '../../../interfaces';
+import { Song } from 'interfaces';
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 import { PlayerRef } from '../../Game/Singing/Player';
 import { EditorRow } from '../Elements';

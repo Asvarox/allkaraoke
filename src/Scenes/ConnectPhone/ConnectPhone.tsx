@@ -1,6 +1,6 @@
+import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { useEffect } from 'react';
 import { Link } from 'wouter';
-import { MenuButton, MenuContainer } from '../../Elements/Menu';
 import GameStateEvents from '../Game/Singing/GameState/GameStateEvents';
 import useEventListener from '../Game/Singing/Hooks/useEventListener';
 import InputManager from '../Game/Singing/Input/InputManager';

@@ -1,4 +1,4 @@
-import { Note, Song } from '../../../interfaces';
+import { Note, Song } from 'interfaces';
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 
 const normaliseSpaces = (notes: Note[]): Note[] => {

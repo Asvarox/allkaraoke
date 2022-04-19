@@ -1,8 +1,8 @@
+import { Button } from 'Elements/Button';
+import { DetailedScore, Song } from 'interfaces';
 import { SyntheticEvent, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
-import { Button } from '../../../../Elements/Button';
 import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
-import { DetailedScore, Song } from '../../../../interfaces';
 import SongPage, { ContentElement } from '../../SongPage';
 import ScoreText from '../GameOverlay/Components/ScoreText';
 import styles from '../GameOverlay/Drawing/styles';

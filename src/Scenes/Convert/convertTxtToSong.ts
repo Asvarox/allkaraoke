@@ -1,5 +1,5 @@
+import { ExtractOptional, Note, NotesSection, Section, Song } from 'interfaces';
 import { isNil, omitBy } from 'lodash';
-import { ExtractOptional, Note, NotesSection, Section, Song } from '../../interfaces';
 
 export const typesMap: Record<string, Note['type']> = {
     R: 'rap',

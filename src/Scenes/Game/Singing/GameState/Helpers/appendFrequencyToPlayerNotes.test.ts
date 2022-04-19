@@ -1,5 +1,5 @@
-import { FrequencyRecord, Note, PlayerNote } from '../../../../../interfaces';
-import { generateNote } from '../../../../../testUtilts';
+import { FrequencyRecord, Note, PlayerNote } from 'interfaces';
+import { generateNote } from 'testUtilts';
 import { appendFrequencyToPlayerNotes } from './appendFrequencyToPlayerNotes';
 
 describe('appendFrequencyToPlayerNotes', () => {

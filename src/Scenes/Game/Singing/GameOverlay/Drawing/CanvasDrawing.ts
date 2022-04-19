@@ -1,5 +1,5 @@
-import { noDistanceNoteTypes } from '../../../../../consts';
-import { NotesSection, PlayerNote } from '../../../../../interfaces';
+import { noDistanceNoteTypes } from 'consts';
+import { NotesSection, PlayerNote } from 'interfaces';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';

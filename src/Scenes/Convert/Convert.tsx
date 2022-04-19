@@ -1,6 +1,6 @@
+import { NotesSection, Song } from 'interfaces';
 import { ChangeEventHandler, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { NotesSection, Song } from '../../interfaces';
 import EditSong from '../Edit/EditSong';
 import convertTxtToSong from './convertTxtToSong';
 import importUltrastarEsSong from './importUltrastarEsSong';

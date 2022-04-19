@@ -1,5 +1,5 @@
+import { Song } from 'interfaces';
 import { useState } from 'react';
-import { Song } from '../../../interfaces';
 import calculateProperBPM from '../../Convert/calculateProperBpm';
 import { PlayerRef } from '../../Game/Singing/Player';
 import { EditorRow, InputGroup, InputGroupInput, Pre } from '../Elements';

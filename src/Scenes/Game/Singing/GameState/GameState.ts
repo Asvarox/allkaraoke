@@ -1,4 +1,4 @@
-import { FrequencyRecord, PlayerNote, SingSetup, Song } from '../../../../interfaces';
+import { FrequencyRecord, PlayerNote, SingSetup, Song } from 'interfaces';
 import isNotesSection from '../Helpers/isNotesSection';
 import { getNoteAtBeat } from '../Helpers/notesSelectors';
 import DummyInput from '../Input/DummyInput';

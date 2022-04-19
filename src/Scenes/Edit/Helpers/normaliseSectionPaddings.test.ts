@@ -1,4 +1,4 @@
-import { generateNote, generateSong } from '../../../testUtilts';
+import { generateNote, generateSong } from 'testUtilts';
 import normaliseSectionPaddings from './normaliseSectionPaddings';
 
 describe('normaliseSectionPaddings', () => {

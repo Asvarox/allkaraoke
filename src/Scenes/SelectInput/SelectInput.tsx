@@ -1,6 +1,6 @@
+import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { navigate } from 'Hooks/useHashLocation';
 import { useEffect, useState } from 'react';
-import { MenuButton, MenuContainer } from '../../Elements/Menu';
-import { navigate } from '../../Hooks/useHashLocation';
 import useKeyboard from '../../Hooks/useKeyboard';
 import tuple from '../../Utils/tuple';
 import { Switcher } from '../Game/SongSelection/Switcher';
