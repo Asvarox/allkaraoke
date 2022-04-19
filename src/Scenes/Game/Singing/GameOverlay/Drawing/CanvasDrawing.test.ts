@@ -34,7 +34,6 @@ describe('CanvasDrawing', function () {
             GameState.update();
             canvasDrawing.drawFrame();
         }
-        console.log(GameState.getPlayer(1).getPlayerFrequencies());
 
         expect(canvas.toBuffer()).toMatchImageSnapshot();
     });
