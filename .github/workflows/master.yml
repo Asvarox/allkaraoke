@@ -26,6 +26,7 @@ jobs:
               with:
                   name: cypress-test-results
                   path: |
+                      src/**/__diff_output__/*
                       cypress/screenshots
                       cypress/videos
                       cypress/integration/__image_snapshots__
