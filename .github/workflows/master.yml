@@ -23,6 +23,7 @@ jobs:
               env:
                   DISABLE_ESLINT_PLUGIN: true
             - uses: actions/upload-artifact@v3
+              if: failure()
               with:
                   name: cypress-test-results
                   path: |
