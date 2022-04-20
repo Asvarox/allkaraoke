@@ -23,7 +23,7 @@ export default class TriangleParticle implements Particle {
         this.velocityY = velocityModifier * Math.random() - velocityModifier / 2;
         this.width = 25;
         this.initialAngle = 180 - Math.random() * 360;
-        this.heightModifier = Math.random();
+        this.heightModifier = 0.5 + Math.random() / 2;
     }
     public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
         if (this.delay-- > 0) return;
