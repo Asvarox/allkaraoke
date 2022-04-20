@@ -19,5 +19,13 @@ export default function drawNote(
         applyColor(ctx, styles.colors.lines.normal);
     }
 
-    roundRect(ctx!, x, y, width, height, 100, true, true);
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = 'rgb(31,31,31)';
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    roundRect(ctx!, x, y, width, height, 100, true, true, 0.075);
+
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 }

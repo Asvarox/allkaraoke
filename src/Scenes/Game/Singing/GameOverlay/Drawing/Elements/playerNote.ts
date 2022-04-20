@@ -25,5 +25,12 @@ export default function drawPlayerNote(
         applyColor(ctx, styles.colors.players[playerNumber].miss);
     }
 
-    roundRect(ctx!, x, y, width, height, 100, true, true);
+    ctx.shadowBlur = 5;
+    ctx.shadowColor = 'rgba(31,31,31, .7)';
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+    roundRect(ctx!, x, y, width, height, 100, true, true, isHit ? 0.15 : 0);
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 }

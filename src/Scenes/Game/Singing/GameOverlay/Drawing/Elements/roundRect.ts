@@ -1,4 +1,4 @@
-export default function roundRect(
+function simpleRoundRect(
     ctx: CanvasRenderingContext2D,
     x: number,
     y: number,
@@ -27,5 +27,30 @@ export default function roundRect(
     }
     if (stroke) {
         ctx.stroke();
+    }
+}
+
+export default function roundRect(
+    ctx: CanvasRenderingContext2D,
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    radius: number,
+    fill: boolean,
+    stroke: boolean,
+    glass = 0.1,
+) {
+    simpleRoundRect(ctx, x, y, width, height, radius, fill, stroke);
+
+    if (fill && glass > 0) {
+        ctx.save();
+        simpleRoundRect(ctx, x, y, width, height, radius, false, false);
+        ctx.clip();
+
+        ctx.fillStyle = `rgba(255,255,255,${glass})`;
+        ctx.fillRect(x, y, width, height / 2.2);
+
+        ctx.restore();
     }
 }

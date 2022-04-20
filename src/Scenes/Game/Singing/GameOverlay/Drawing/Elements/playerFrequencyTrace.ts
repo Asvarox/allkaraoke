@@ -16,6 +16,8 @@ export default function drawPlayerFrequencyTrace(
     ctx.beginPath();
     ctx.strokeStyle = 'rgba(255,255,255, .35)';
     ctx.lineWidth = 3;
+    ctx.lineJoin = 'round';
+
     ctx.moveTo(x, y + height / 2 - (playerNote.frequencyRecords[0].preciseDistance * height) / 3);
     for (let i = 1; i < playerNote.frequencyRecords.length; i++) {
         ctx.lineTo(
@@ -27,4 +29,5 @@ export default function drawPlayerFrequencyTrace(
     ctx.closePath();
 
     ctx.restore();
+    ctx.lineJoin = 'miter';
 }
