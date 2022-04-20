@@ -10,7 +10,7 @@ image.src = particleImage;
 const initialTtl = (50 / 60) * 1000;
 const velocity = 0.05;
 
-const WIDTH = 75;
+const WIDTH = 100;
 const WIDTH_SPREAD = 4;
 
 const pow = Math.pow;
