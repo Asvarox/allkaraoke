@@ -8,9 +8,9 @@ export const getFirstNoteStartFromSections = (sections: Section[]) => {
 };
 export const getLastNoteEndFromSections = (sections: Section[]) => {
     const notesSections = sections.filter(isNotesSection);
-    const lastSection = notesSections.at(-1)!;
+    const lastSection = notesSections.at(-1);
 
-    return getLastNoteEnd(lastSection);
+    return lastSection ? getLastNoteEnd(lastSection) : 0;
 };
 
 export const getLastNoteEnd = (section: NotesSection) => {

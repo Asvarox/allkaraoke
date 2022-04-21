@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generatePlayerChanges should handle real life examples better 1`] = `
+Array [
+  Array [
+    73,
+    136,
+    231,
+    323,
+    551,
+    648,
+    743,
+    835,
+    935,
+  ],
+]
+`;
+
+exports[`generatePlayerChanges should handle real life examples better 2`] = `
+Array [
+  Array [
+    291,
+    566,
+    998,
+    1290,
+    1655,
+    1974,
+    2406,
+    2723,
+    3687,
+  ],
+]
+`;
+
+exports[`generatePlayerChanges should handle real life examples better 3`] = `
+Array [
+  Array [
+    184,
+    378,
+    572,
+    767,
+    1210,
+    1401,
+    1594,
+    1784,
+    2842,
+  ],
+]
+`;
+
+exports[`generatePlayerChanges should handle real life examples better 4`] = `
+Array [
+  Array [
+    667,
+    916,
+    1222,
+    1547,
+    1938,
+    2245,
+    2703,
+    3086,
+    3399,
+  ],
+]
+`;
+
+exports[`generatePlayerChanges should handle real life examples better 5`] = `
+Array [
+  Array [
+    586,
+    1182,
+    1810,
+    2458,
+    3094,
+    4374,
+    5052,
+    5572,
+    6078,
+  ],
+]
+`;
+
+exports[`generatePlayerChanges should handle real life examples better 6`] = `
+Array [
+  Array [
+    457,
+    861,
+    1285,
+    1687,
+    2117,
+    2565,
+    3017,
+    3489,
+    3991,
+  ],
+]
+`;
