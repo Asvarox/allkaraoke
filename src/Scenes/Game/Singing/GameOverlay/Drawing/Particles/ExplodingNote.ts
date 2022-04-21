@@ -21,12 +21,15 @@ export default class ExplodingNoteParticle implements Particle {
                 ? styles.colors.players[playerNumber].star.fill
                 : styles.colors.players[playerNumber].perfect.fill;
 
+        const lightColor = tinycolor(color).lighten(15).toRgbString();
+        const darkColor = tinycolor(color).darken(15).toRgbString();
+
         const density = width / 6;
         for (let i = 0; i < density; i++) {
             const rand = Math.random();
             let finalColor = color;
-            if (rand > 0.66) finalColor = tinycolor(finalColor).lighten(15).toRgbString();
-            else if (rand > 0.33) finalColor = tinycolor(finalColor).darken(15).toRgbString();
+            if (rand > 0.66) finalColor = lightColor;
+            else if (rand > 0.33) finalColor = darkColor;
 
             const finalY = y + 20 * (Math.random() - 0.5);
 
