@@ -116,7 +116,7 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
             background-color: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.85' : '0.5')});
         }
         50% {
-            background-color: rgba(134, 134, 134, ${(props) => (props.bottom ? '0.85' : '0.5')});
+            background-color: rgba(200, 200, 200, ${(props) => (props.bottom ? '0.85' : '0.5')});
         }
         30% {
             background-color: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.85' : '0.5')});
@@ -134,7 +134,7 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     text-align: center;
     line-height: 1;
     margin: 20px 0;
-    ${(props) => (props.shouldBlink ? `animation: blink 500ms ease-in-out infinite both;` : ``)}
+    ${(props) => (props.shouldBlink ? `animation: blink 350ms ease-in-out infinite both;` : ``)}
 `;
 
 const LyricsLine = styled.div<{ secondLine?: boolean }>`
