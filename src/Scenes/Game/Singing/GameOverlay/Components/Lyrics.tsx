@@ -14,7 +14,7 @@ interface Props {
 
 function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props) {
     const playerColor = styles.colors.players[player].text;
-    const thisPlayerChanges = playerChanges[player] ?? [];
+    const thisPlayerChanges = playerChanges[GameState.getPlayer(player).getTrackIndex()] ?? [];
     const section = GameState.getPlayer(player).getCurrentSection();
     const nextSection = GameState.getPlayer(player).getNextSection();
     const currentBeat = GameState.getCurrentBeat();
