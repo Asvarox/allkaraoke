@@ -3,6 +3,7 @@ import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { isNumber } from 'lodash';
 import { useState } from 'react';
 import styled from 'styled-components';
+import createPersistedState from 'use-persisted-state';
 import useKeyboard from '../../../Hooks/useKeyboard';
 import { Switcher } from './Switcher';
 
@@ -29,10 +30,13 @@ if (process.env.NODE_ENV === 'development') {
 const getPlayerTrackName = (tracks: SongPreview['tracks'], index: number) =>
     tracks[index]?.name ?? `Track ${index + 1}`;
 
+const useSetGameMode = createPersistedState<GAME_MODE>('song_settings-game_mode');
+const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
+
 export default function SongSettings({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
-    const [mode, setMode] = useState(GAME_MODE.DUEL);
+    const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
     const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, Math.min(1, songPreview.tracksCount - 1)]);
-    const [tolerance, setTolerance] = useState<number>(2);
+    const [tolerance, setTolerance] = useSetTolerance(2);
 
     const multipleTracks = songPreview.tracksCount > 1;
 
