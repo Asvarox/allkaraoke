@@ -10,9 +10,7 @@ const getFrequencyOfNote = (note: number) => MIDDLEA * Math.pow(2, (note - SEMIT
 const getDistanceInCents = (noteFreq: number, freq: number) =>
     Math.floor((1200 * Math.log(freq / noteFreq)) / Math.log(2));
 
-const getCentDistance = (targetNote: number, freq: number) => {
-    const tolerance = GameState.getTolerance();
-
+const getCentDistance = (targetNote: number, freq: number, tolerance: number) => {
     const noteFreq = getFrequencyOfNote(targetNote);
     const cents = getDistanceInCents(noteFreq, freq);
     // To handle cases for cents like -1150 (=50) or 1150 (=-50)
@@ -21,22 +19,22 @@ const getCentDistance = (targetNote: number, freq: number) => {
     return distance / (tolerance * 100 + 50);
 };
 
-export const calcDistanceBetweenPitches = (note: number, targetNote: number) => {
-    const tolerance = GameState.getTolerance();
+export const calcDistanceBetweenPitches = (note: number, targetNote: number, tolerance: number) => {
     // +6 / - 6 are here to avoid distances like -8 in favor of +4
     // (so smallest between "too high" or "too low" pitch to hit the note in whatever octave)
-    const noteDistance = (((note % 12) - (targetNote % 12) + 6) % 12) - 6;
+    const noteDistance = (((note % 12) - (targetNote % 12) + 18) % 12) - 6;
 
     return Math.abs(noteDistance) <= tolerance ? 0 : noteDistance;
 };
 
 export const calcDistance = (frequency: number, targetNote: number) => {
+    const tolerance = GameState.getTolerance();
     const note = pitchFromFrequency(frequency);
     let preciseDistance: number = -1;
-    const distance = calcDistanceBetweenPitches(note, targetNote);
+    const distance = calcDistanceBetweenPitches(note, targetNote, tolerance);
 
     if (distance === 0) {
-        preciseDistance = getCentDistance(targetNote, frequency);
+        preciseDistance = getCentDistance(targetNote, frequency, tolerance);
     }
 
     return { distance, preciseDistance };

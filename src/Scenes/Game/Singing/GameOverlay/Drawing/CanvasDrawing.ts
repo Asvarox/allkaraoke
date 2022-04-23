@@ -90,7 +90,7 @@ export default class CanvasDrawing {
                 playerNote.note.pitch + distance,
                 distance === 0,
             );
-            if (w > h / 2) {
+            if (distance > 0 || w > h / 2.5) {
                 const finalX = x + displacementX;
                 const finalY = y + displacementY;
                 drawPlayerNote(ctx, finalX, finalY, w, h, drawingData.playerNumber, distance === 0, playerNote);
