@@ -54,7 +54,7 @@ function Jukebox(props: Props) {
             data-song={shuffledList[currentlyPlaying].file}
             background={
                 <YouTube
-                    title=""
+                    title=" "
                     key={playerKey}
                     ref={player}
                     videoId={shuffledList[currentlyPlaying].video}

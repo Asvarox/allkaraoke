@@ -129,7 +129,7 @@ function Player(
             )}
             <PlayerContainer>
                 <YouTube
-                    title=""
+                    title=" "
                     ref={player}
                     videoId={song.video}
                     key={playerKey}
@@ -139,11 +139,10 @@ function Player(
                         playerVars: {
                             autoplay: autoplay ? 1 : 0,
                             showinfo: 0,
-                            disablekb: 0,
+                            disablekb: process.env.NODE_ENV === 'development' ? 0 : 1,
                             rel: 0,
                             fs: 0,
                             controls: showControls ? 1 : 0,
-                            // @ts-expect-error
                             cc_load_policy: 3,
                             iv_load_policy: 3,
                             start: song.videoGap,

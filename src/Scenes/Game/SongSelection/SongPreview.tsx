@@ -1,7 +1,7 @@
 import { focused } from 'Elements/cssMixins';
 import { SingSetup, SongPreview } from 'interfaces';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import YouTube, { PlayerVars } from 'react-youtube';
+import { ComponentProps, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import useDebounce from '../../../Hooks/useDebounce';
 import usePlayerVolume from '../../../Hooks/usePlayerVolume';
@@ -23,7 +23,7 @@ interface Props {
     focusEffect: boolean;
 }
 
-const playerVars: PlayerVars = {
+const playerVars: ComponentProps<typeof YouTube>['opts'] = {
     autoplay: 0,
     start: 0,
     end: 0,
@@ -135,7 +135,7 @@ export default function SongPreviewComponent({
                     width={finalWidth}
                     video={songPreview.video}>
                     <YouTube
-                        title=""
+                        title=" "
                         key={playerKey}
                         ref={player}
                         videoId={''}
