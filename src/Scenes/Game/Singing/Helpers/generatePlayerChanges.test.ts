@@ -12,7 +12,7 @@ const getSingableBeats = (sections: Section[], start: number, end: number) =>
         .reduce((current, section) => current + section.notes.reduce((length, note) => length + note.length, 0), 0);
 
 describe('generatePlayerChanges', () => {
-    xit('should generate 10 parts', () => {
+    it('should generate 10 parts', () => {
         const song = generateSong(
             [
                 [
