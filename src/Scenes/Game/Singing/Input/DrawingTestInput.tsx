@@ -2,16 +2,12 @@ import InputInterface from './Interface';
 
 class DrawingTestInput implements InputInterface {
     private frequencies: [number, number] = [440, 410];
+    private volumes: [number, number] = [1, 1];
 
-    private i: number = 0;
+    public startMonitoring = async () => {};
 
-    public startMonitoring = async () => {
-        this.i = 0;
-    };
-
-    public getFrequencies = () => {
-        return this.frequencies;
-    };
+    public getFrequencies = () => this.frequencies;
+    public getVolumes = () => this.volumes;
 
     public stopMonitoring = async () => {};
 

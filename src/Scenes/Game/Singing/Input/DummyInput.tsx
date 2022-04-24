@@ -2,6 +2,7 @@ import InputInterface from './Interface';
 
 class DummyInput implements InputInterface {
     private frequencies: [number, number] = [410, 210];
+    private volumes: [number, number] = [1, 1];
     private timestamp = 0;
     private interval: number | null = null;
 
@@ -25,6 +26,7 @@ class DummyInput implements InputInterface {
     };
 
     public getFrequencies = () => this.frequencies;
+    public getVolumes = () => this.volumes;
 
     public stopMonitoring = async () => {
         if (!this.isMonitoring) return;

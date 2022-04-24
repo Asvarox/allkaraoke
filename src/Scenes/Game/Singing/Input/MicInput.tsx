@@ -6,10 +6,12 @@ class MicInput implements InputInterface {
     private context: AudioContext | null = null;
 
     private frequencies: [number, number] = [0, 0];
+    private volumes: [number, number] = [0, 0];
 
     private startedMonitoring = false;
 
     public startMonitoring = async (deviceId?: string) => {
+        console.log('start');
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
@@ -40,12 +42,18 @@ class MicInput implements InputInterface {
                 strategy.getFrequency(inputData1),
                 strategy.getFrequency(inputData2),
             ]);
+
+            this.volumes = [this.calculateVolume(inputData1), this.calculateVolume(inputData2)];
         };
     };
 
-    public getFrequencies = () => this.frequencies;
+    public getFrequencies = () => {
+        return this.frequencies;
+    };
+    public getVolumes = () => this.volumes;
 
     public stopMonitoring = async () => {
+        console.log('stop');
         if (!this.startedMonitoring) return;
         this.startedMonitoring = false;
         this.stream?.getTracks().forEach(function (track) {
@@ -56,6 +64,15 @@ class MicInput implements InputInterface {
 
     public getInputLag = () => 180;
     public getChannelsCount = () => 2;
+
+    private calculateVolume(input: Float32Array) {
+        let i;
+        let sum = 0.0;
+        for (i = 0; i < input.length; ++i) {
+            sum += input[i] * input[i];
+        }
+        return Math.sqrt(sum / input.length);
+    }
 }
 
 export default new MicInput();

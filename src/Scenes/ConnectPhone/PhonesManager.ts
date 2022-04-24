@@ -11,6 +11,7 @@ class PhoneInput implements InputInterface {
     getChannelsCount = () => 1;
 
     getFrequencies = () => this.frequencies;
+    getVolumes = () => [1];
 
     getInputLag = () => 200;
 
