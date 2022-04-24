@@ -1,17 +1,15 @@
+import { MIDDLEA, SEMITONE } from 'consts';
+import pitchToFrequency from 'Utils/pitchToFrequency';
 import GameState from '../GameState';
-
-const MIDDLEA = 440;
-const SEMITONE = 69;
 
 export const pitchFromFrequency = (freq: number) =>
     Math.round(12 * (Math.log(freq / MIDDLEA) / Math.log(2))) + SEMITONE;
 
-const getFrequencyOfNote = (note: number) => MIDDLEA * Math.pow(2, (note - SEMITONE) / 12);
 const getDistanceInCents = (noteFreq: number, freq: number) =>
     Math.floor((1200 * Math.log(freq / noteFreq)) / Math.log(2));
 
 const getCentDistance = (targetNote: number, freq: number, tolerance: number) => {
-    const noteFreq = getFrequencyOfNote(targetNote);
+    const noteFreq = pitchToFrequency(targetNote);
     const cents = getDistanceInCents(noteFreq, freq);
     // To handle cases for cents like -1150 (=50) or 1150 (=-50)
     const distance = Math.sign(cents) * ((((Math.abs(cents) % 1200) + 600) % 1200) - 600);

@@ -78,15 +78,15 @@ const song: Song = {
                     notes: [
                         {
                             type: 'normal',
-                            start: 0,
+                            start: 5,
                             length: 10,
                             pitch: 11,
                             lyrics: 'First ',
                         },
                         {
                             type: 'normal',
-                            start: 15,
-                            length: 10,
+                            start: 16,
+                            length: 9,
                             pitch: 9,
                             lyrics: 'Second ',
                         },
