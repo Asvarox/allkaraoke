@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
-import useViewportSize from '../../../Hooks/useViewportSize';
+import useViewportSize from '../../../hooks/useViewportSize';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
 import normaliseGap from '../../Edit/Helpers/normaliseGap';
 import normaliseLyricSpaces from '../../Edit/Helpers/normaliseLyricSpaces';

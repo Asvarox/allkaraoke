@@ -1,8 +1,8 @@
 import { Button } from 'Elements/Button';
+import useKeyboard from 'hooks/useKeyboard';
 import { DetailedScore, Song } from 'interfaces';
 import { SyntheticEvent, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
-import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
 import SongPage, { ContentElement } from '../../SongPage';
 import ScoreText from '../GameOverlay/Components/ScoreText';
 import styles from '../GameOverlay/Drawing/styles';
@@ -24,7 +24,7 @@ const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 
 function PostGame({ song, width, height, onClickSongSelection }: Props) {
     const [currentTick, setCurrentTick] = useState(0);
-    useKeyboardNav({
+    useKeyboard({
         onEnter: onClickSongSelection,
     });
 

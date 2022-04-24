@@ -1,10 +1,10 @@
 import { Button } from 'Elements/Button';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { isNumber } from 'lodash';
 import { useState } from 'react';
 import styled from 'styled-components';
 import createPersistedState from 'use-persisted-state';
-import useKeyboard from '../../../Hooks/useKeyboard';
 import { Switcher } from './Switcher';
 
 interface Props {
@@ -62,7 +62,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     const changeTolerance = () =>
         setTolerance((current) => (difficultyNames.length + current - 1) % difficultyNames.length);
 
-    const { register } = useKeyboard({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
+    const { register } = useKeyboardNav({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
 
     return (
         <GameConfiguration>

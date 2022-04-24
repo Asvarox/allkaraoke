@@ -2,7 +2,7 @@ import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash';
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
-import clearString from '../../../../Utils/clearString';
+import clearString from '../../../../utils/clearString';
 
 export interface SongGroup {
     letter: string;

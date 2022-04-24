@@ -3,7 +3,7 @@ import { blueFill, blueStroke, redFill, redStroke } from 'Scenes/Game/Singing/Ga
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import styled from 'styled-components';
 import { Route, Router } from 'wouter';
-import useHashLocation from './Hooks/useHashLocation';
+import useHashLocation from './hooks/useHashLocation';
 import ConnectPhone from './Scenes/ConnectPhone/ConnectPhone';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';

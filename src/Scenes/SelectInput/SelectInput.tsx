@@ -1,8 +1,8 @@
 import { MenuButton, MenuContainer } from 'Elements/Menu';
-import { navigate } from 'Hooks/useHashLocation';
+import { navigate } from 'hooks/useHashLocation';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useState } from 'react';
-import useKeyboard from '../../Hooks/useKeyboard';
-import tuple from '../../Utils/tuple';
+import tuple from '../../utils/tuple';
 import { Switcher } from '../Game/SongSelection/Switcher';
 import inputSources from './InputSources';
 import { DummyInputSource } from './InputSources/Dummy';
@@ -94,7 +94,7 @@ function SelectInput(props: Props) {
 
     const goBack = () => navigate('/');
 
-    const { register } = useKeyboard({ onBackspace: goBack });
+    const { register } = useKeyboardNav({ onBackspace: goBack });
 
     return (
         <MenuContainer>

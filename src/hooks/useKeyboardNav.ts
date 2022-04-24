@@ -1,8 +1,8 @@
+import useKeyboard from 'hooks/useKeyboard';
 import { useEffect, useRef, useState } from 'react';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboardHelp from './useKeyboardHelp';
-import useKeyboardNav from './useKeyboardNav';
 
 /**
  * todo: Bug: for some reason elementList is duplicated eg.
@@ -18,7 +18,7 @@ interface Options {
     additionalHelp?: HelpEntry;
 }
 
-export default function useKeyboard(options: Options = {}) {
+export default function useKeyboardNav(options: Options = {}) {
     const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
 
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
@@ -65,7 +65,7 @@ export default function useKeyboard(options: Options = {}) {
         setCurrentlySelected(elementList.current.at((currentIndex + i) % elementList.current.length) ?? null);
     };
 
-    useKeyboardNav(
+    useKeyboard(
         {
             [direction === 'vertical' ? 'onUpArrow' : 'onLeftArrow']: () => handleNavigation(-1),
             [direction === 'vertical' ? 'onDownArrow' : 'onRightArrow']: () => handleNavigation(1),

@@ -26,7 +26,7 @@ const paramsToKeys: { [param in keyof Params]: string } = {
 
 const keysToParams: { [key: string]: keyof Params } = invert(paramsToKeys) as any;
 
-export default function useKeyboardNav(params: Params, enabled = true, deps?: any[]) {
+export default function useKeyboard(params: Params, enabled = true, deps?: any[]) {
     let handledKeys: string = Object.keys(params)
         .map((param) => paramsToKeys[param as keyof Params])
         .join(',');

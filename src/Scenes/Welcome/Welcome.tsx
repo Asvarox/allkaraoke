@@ -1,13 +1,13 @@
 import { MenuButton, MenuContainer } from 'Elements/Menu';
-import { navigate } from 'Hooks/useHashLocation';
+import { navigate } from 'hooks/useHashLocation';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import styled from 'styled-components';
 import { Link } from 'wouter';
-import useKeyboard from '../../Hooks/useKeyboard';
 import logo from './logo.gif';
 
 function Welcome() {
-    const { register } = useKeyboard();
+    const { register } = useKeyboardNav();
     return (
         <>
             <GithubRibbon />

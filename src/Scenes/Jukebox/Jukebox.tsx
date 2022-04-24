@@ -1,5 +1,6 @@
 import { Button } from 'Elements/Button';
-import { navigate } from 'Hooks/useHashLocation';
+import { navigate } from 'hooks/useHashLocation';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
@@ -7,10 +8,9 @@ import { useQuery } from 'react-query';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import { Link } from 'wouter';
-import useKeyboard from '../../Hooks/useKeyboard';
-import usePlayerVolume from '../../Hooks/usePlayerVolume';
-import useUnstuckYouTubePlayer from '../../Hooks/useUnstuckYouTubePlayer';
-import useViewportSize from '../../Hooks/useViewportSize';
+import usePlayerVolume from '../../hooks/usePlayerVolume';
+import useUnstuckYouTubePlayer from '../../hooks/useUnstuckYouTubePlayer';
+import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
 
 interface Props {}
@@ -25,7 +25,7 @@ function Jukebox(props: Props) {
     const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-    const { register } = useKeyboard({ onBackspace: () => navigate('/') });
+    const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });
 
     useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 

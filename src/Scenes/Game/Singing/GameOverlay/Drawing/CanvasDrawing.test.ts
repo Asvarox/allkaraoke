@@ -4,7 +4,7 @@ import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import pitchToFrequency from 'Utils/pitchToFrequency';
+import pitchToFrequency from 'utils/pitchToFrequency';
 import CanvasDrawing from './CanvasDrawing';
 import songFixture from './song-fixture';
 

@@ -1,7 +1,7 @@
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import styled from 'styled-components';
-import useKeyboard from '../../../Hooks/useKeyboard';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
 import { Input } from './Input';
 import { Switcher } from './Switcher';
@@ -14,7 +14,7 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters, showFilters }: Props) {
-    const { register } = useKeyboard({
+    const { register } = useKeyboardNav({
         onBackspace: onBack,
         direction: 'horizontal',
         enabled: showFilters,

@@ -1,7 +1,7 @@
 import { MenuButton, MenuContainer } from 'Elements/Menu';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import useKeyboard from '../../../../../Hooks/useKeyboard';
 
 interface Props {
     onResume: () => void;
@@ -15,7 +15,7 @@ export default function PauseMenu({ onResume, onExit }: Props) {
         menuRef.current?.focus();
     }, [menuRef]);
 
-    const { register } = useKeyboard();
+    const { register } = useKeyboardNav();
 
     return (
         <Container>

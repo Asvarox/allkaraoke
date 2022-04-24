@@ -1,5 +1,5 @@
 import { MIDDLEA, SEMITONE } from 'consts';
-import pitchToFrequency from 'Utils/pitchToFrequency';
+import pitchToFrequency from 'utils/pitchToFrequency';
 import GameState from '../GameState';
 
 export const pitchFromFrequency = (freq: number) =>

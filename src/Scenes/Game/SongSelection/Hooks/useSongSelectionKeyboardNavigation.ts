@@ -1,11 +1,11 @@
-import { navigate } from 'Hooks/useHashLocation';
+import { navigate } from 'hooks/useHashLocation';
+import useKeyboard from 'hooks/useKeyboard';
 import { chunk, throttle } from 'lodash';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
-import useKeyboardHelp from '../../../../Hooks/useKeyboardHelp';
-import useKeyboardNav from '../../../../Hooks/useKeyboardNav';
-import usePrevious from '../../../../Hooks/usePrevious';
-import tuple from '../../../../Utils/tuple';
+import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';
+import usePrevious from '../../../../hooks/usePrevious';
+import tuple from '../../../../utils/tuple';
 import { SongGroup } from './useSongList';
 
 const MAX_SONGS_PER_ROW = 4;
@@ -120,7 +120,7 @@ export const useSongSelectionKeyboardNavigation = (
 
     const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
 
-    useKeyboardNav(
+    useKeyboard(
         {
             onEnter: handleEnter,
             onDownArrow: (e) => navigateVertically(e, 1),
