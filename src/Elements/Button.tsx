@@ -1,20 +1,20 @@
+import { typography } from 'Elements/cssMixins';
 import styled, { css } from 'styled-components';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
     padding: 0.15em 0.3em;
     font-size: 1em;
-    font-weight: bold;
     display: block;
     text-align: center;
     cursor: pointer;
     border: 0;
 
-    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.75);
     text-transform: uppercase;
     letter-spacing: 2px;
-    -webkit-text-stroke: 1.5px #000000;
+
+    ${typography}
 
     pointer-events: auto;
     ${(props) => props.focused && buttonFocused}
