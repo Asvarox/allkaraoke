@@ -3,6 +3,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { isNumber } from 'lodash';
 import { useState } from 'react';
+import MicCheck from 'Scenes/Game/SongSelection/MicCheck';
 import styled from 'styled-components';
 import createPersistedState from 'use-persisted-state';
 import { Switcher } from './Switcher';
@@ -65,45 +66,56 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     const { register } = useKeyboardNav({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
 
     return (
-        <GameConfiguration>
-            <Switcher
-                {...register('difficulty', changeTolerance, 'Change difficulty')}
-                label="Difficulty"
-                value={difficultyNames[tolerance]}
-                data-test="difficulty-setting"
-                data-test-value={difficultyNames[tolerance]}
-            />
-            <Switcher
-                {...register('mode', changeMode, 'Change mode')}
-                label="Mode"
-                value={gameModeNames[mode]}
-                data-test="game-mode-setting"
-                data-test-value={gameModeNames[mode]}
-            />
-            {multipleTracks && (
-                <>
-                    <Switcher
-                        {...register('p1 track', () => togglePlayerTrack(0), 'Change track')}
-                        label="Player 1"
-                        value={getPlayerTrackName(songPreview.tracks, playerTracks[0])}
-                        data-test="player-1-track-setting"
-                        data-test-value={playerTracks[0] + 1}
-                    />
-                    <Switcher
-                        {...register('p2 track', () => togglePlayerTrack(1), 'Change track')}
-                        label="Player 2"
-                        value={getPlayerTrackName(songPreview.tracks, playerTracks[1])}
-                        data-test="player-2-track-setting"
-                        data-test-value={playerTracks[1] + 1}
-                    />
-                </>
-            )}
-            <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
-                Play
-            </PlayButton>
-        </GameConfiguration>
+        <Container>
+            <MicCheck />
+            <GameConfiguration>
+                <Switcher
+                    {...register('difficulty', changeTolerance, 'Change difficulty')}
+                    label="Difficulty"
+                    value={difficultyNames[tolerance]}
+                    data-test="difficulty-setting"
+                    data-test-value={difficultyNames[tolerance]}
+                />
+                <Switcher
+                    {...register('mode', changeMode, 'Change mode')}
+                    label="Mode"
+                    value={gameModeNames[mode]}
+                    data-test="game-mode-setting"
+                    data-test-value={gameModeNames[mode]}
+                />
+                {multipleTracks && (
+                    <>
+                        <Switcher
+                            {...register('p1 track', () => togglePlayerTrack(0), 'Change track')}
+                            label="Player 1"
+                            value={getPlayerTrackName(songPreview.tracks, playerTracks[0])}
+                            data-test="player-1-track-setting"
+                            data-test-value={playerTracks[0] + 1}
+                        />
+                        <Switcher
+                            {...register('p2 track', () => togglePlayerTrack(1), 'Change track')}
+                            label="Player 2"
+                            value={getPlayerTrackName(songPreview.tracks, playerTracks[1])}
+                            data-test="player-2-track-setting"
+                            data-test-value={playerTracks[1] + 1}
+                        />
+                    </>
+                )}
+                <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
+                    Play
+                </PlayButton>
+            </GameConfiguration>
+        </Container>
     );
 }
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+`;
 
 const GameConfiguration = styled.div`
     width: auto;
