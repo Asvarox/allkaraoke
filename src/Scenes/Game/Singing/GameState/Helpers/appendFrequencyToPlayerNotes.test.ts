@@ -106,4 +106,15 @@ describe('appendFrequencyToPlayerNotes', () => {
             expect(playerNotes).toContainEqual(expect.objectContaining({ length: 1, start: 4, distance: 0 }));
         });
     });
+
+    it('should not return negative lengths if there are multiple detected frequencies before note start', () => {
+        const playerNotes: PlayerNote[] = [];
+        const note: Note = generateNote(1, 1, { pitch: 69 });
+
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 50, frequency: 440 }, note, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 70, frequency: 440 }, note, 100);
+        appendFrequencyToPlayerNotes(playerNotes, { timestamp: 90, frequency: 440 }, note, 100);
+
+        expect(playerNotes).toContainEqual(expect.objectContaining({ length: 0, start: 1, distance: 0 }));
+    });
 });

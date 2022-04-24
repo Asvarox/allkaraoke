@@ -58,7 +58,7 @@ export function appendFrequencyToPlayerNotes(
             lastNote.length = Math.max(0, roundedLength - lastNote.start);
         }
     } else {
-        lastNote.length = Math.min(noteCandidate.beat, note.start + note.length) - lastNote.start;
+        lastNote.length = Math.max(0, Math.min(noteCandidate.beat, note.start + note.length) - lastNote.start);
         lastNote.frequencyRecords.push({
             frequency: noteCandidate.frequency,
             timestamp: noteCandidate.timestamp,
