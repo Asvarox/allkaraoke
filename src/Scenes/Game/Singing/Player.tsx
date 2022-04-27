@@ -99,7 +99,7 @@ function Player(
         }
 
         player.current.getInternalPlayer().setSize(width, height);
-    }, [player, width, height, song]);
+    }, [player, width, height, song, playerKey]);
 
     useImperativeHandle(ref, () => ({
         seekTo: (time: number) => player.current!.getInternalPlayer().seekTo(time, true),
