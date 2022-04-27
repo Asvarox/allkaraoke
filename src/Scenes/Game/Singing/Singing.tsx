@@ -1,3 +1,4 @@
+import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
@@ -35,6 +36,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
         () => fetch(`./songs/${songFile}`).then((response) => response.json()),
         { staleTime: Infinity, select: processSong },
     );
+    useFullscreen();
     const { width, height } = useViewportSize();
     const [isEnded, setIsEnded] = useState(false);
     const [playerState, setPlayerState] = useState(YouTube.PlayerState.UNSTARTED);

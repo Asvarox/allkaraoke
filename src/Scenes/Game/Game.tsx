@@ -1,5 +1,6 @@
+import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
 import SongSelection from './SongSelection/SongSelection';
@@ -12,11 +13,7 @@ function Game(props: Props) {
     const [singSetup, setSingSetup] = useState<(SingSetup & { file: string; video: string }) | null>(null);
     const [preselectedSong, setPreselectedSong] = useState<string | null>(props.file ?? null);
 
-    useEffect(() => {
-        try {
-            process.env.NODE_ENV !== 'development' && document.body.requestFullscreen().catch(console.info);
-        } catch (e) {}
-    }, []);
+    useFullscreen();
 
     return (
         <>

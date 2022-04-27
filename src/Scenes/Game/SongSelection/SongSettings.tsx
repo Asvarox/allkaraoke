@@ -49,7 +49,9 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
             return newTracks;
         });
 
-    const startSong = () => onPlay({ file: songPreview.file, mode, playerTracks, tolerance, video: songPreview.video });
+    const startSong = () => {
+        onPlay({ file: songPreview.file, mode, playerTracks, tolerance, video: songPreview.video });
+    };
 
     const changeMode = () => {
         setMode((currentMode) => {
