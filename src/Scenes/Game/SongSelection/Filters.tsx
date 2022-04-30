@@ -4,7 +4,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import styled from 'styled-components';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
 import { Input } from './Input';
-import { Switcher } from './Switcher';
+import { nextValue, Switcher } from './Switcher';
 
 interface Props {
     onSongFiltered: (filters: AppliedFilters) => void;
@@ -24,11 +24,9 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
 
     const selectedLanguage = filtersData.language.current;
     const cycleLanguage = () => {
-        const index = filtersData.language.available.indexOf(selectedLanguage);
-
         onSongFiltered({
             ...filters,
-            language: filtersData.language.available[(index + 1) % filtersData.language.available.length],
+            language: nextValue(filtersData.language.available, selectedLanguage),
         });
     };
 
@@ -36,11 +34,10 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
     const duetLabel = selectedDuet === null ? 'Any' : selectedDuet ? 'Duet' : 'Single Track';
     const cycleDuet = () => {
         const cycle = [null, true, false];
-        const index = cycle.indexOf(selectedDuet);
 
         onSongFiltered({
             ...filters,
-            duet: cycle[(index + 1) % cycle.length],
+            duet: nextValue(cycle, selectedDuet),
         });
     };
 

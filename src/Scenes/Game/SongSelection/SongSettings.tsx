@@ -6,7 +6,7 @@ import { useState } from 'react';
 import MicCheck from 'Scenes/Game/SongSelection/MicCheck';
 import styled from 'styled-components';
 import createPersistedState from 'use-persisted-state';
-import { Switcher } from './Switcher';
+import { nextIndex, nextValueIndex, Switcher } from './Switcher';
 
 interface Props {
     songPreview: SongPreview;
@@ -54,16 +54,10 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     };
 
     const changeMode = () => {
-        setMode((currentMode) => {
-            const modes = Object.values(GAME_MODE).filter((val) => isNumber(val));
-            const currentModeIndex = modes.indexOf(currentMode);
-
-            return (currentModeIndex + 1) % modes.length;
-        });
+        setMode((currentMode) => nextValueIndex(Object.values(GAME_MODE).filter(isNumber), currentMode));
     };
 
-    const changeTolerance = () =>
-        setTolerance((current) => (difficultyNames.length + current - 1) % difficultyNames.length);
+    const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
 
     const { register } = useKeyboardNav({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
 

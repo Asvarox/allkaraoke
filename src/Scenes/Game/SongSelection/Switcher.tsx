@@ -11,6 +11,16 @@ interface Props {
     onClick?: () => void;
 }
 
+export function nextIndex<T>(values: T[], current: number, direction: 1 | -1 = 1): number {
+    return direction === 1 ? (current + 1) % values.length : (current + values.length - 1) % values.length;
+}
+export function nextValueIndex<T>(values: T[], current: T, direction: 1 | -1 = 1): number {
+    return nextIndex(values, values.indexOf(current), direction);
+}
+export function nextValue<T>(values: T[], current: T, direction: 1 | -1 = 1): T {
+    return values[nextValueIndex(values, current, direction)];
+}
+
 export const Switcher = ({ focused, label, value, onClick, ...restProps }: Props) => (
     <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
         <span>{label}:</span> <ConfigValue>{value}</ConfigValue>
