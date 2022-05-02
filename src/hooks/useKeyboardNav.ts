@@ -18,21 +18,19 @@ interface Options {
     additionalHelp?: HelpEntry;
 }
 
+interface KeyboardAction {
+    callback: () => void;
+    label?: string;
+    propName: string;
+}
+
 export default function useKeyboardNav(options: Options = {}) {
     const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
 
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
     const elementList = useRef<string[]>([]);
     const newElementList = useRef<string[]>([]);
-    const actions = useRef<
-        Record<
-            string,
-            {
-                callback: () => void;
-                label?: string;
-            }
-        >
-    >({});
+    const actions = useRef<Record<string, KeyboardAction>>({});
     const { setHelp, clearHelp } = useKeyboardHelp();
 
     useEffect(() => {
@@ -78,15 +76,21 @@ export default function useKeyboardNav(options: Options = {}) {
 
     let defaultSelection = '';
 
-    const register = (name: string, onActive: () => void, help?: string, isDefault = false) => {
+    const register = (
+        name: string,
+        onActive: () => void,
+        help?: string,
+        isDefault = false,
+        { propName = 'onClick' } = {},
+    ) => {
         newElementList.current.push(name);
-        if (onActive) actions.current[name] = { callback: onActive, label: help };
+        if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
 
         if (isDefault) {
             defaultSelection = name;
         }
 
-        return { focused: enabled && currentlySelected === name, onClick: onActive };
+        return { focused: enabled && currentlySelected === name, [propName]: onActive };
     };
 
     useEffect(() => {
