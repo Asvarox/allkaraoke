@@ -19,9 +19,12 @@ export default function SongList(props: Props) {
                 {songList.data.map((song) => (
                     <li key={song.file}>
                         <Link to={`/edit/${encodeURIComponent(song.file)}`}>
-                            <a>
+                            <LinkView>
                                 {song.artist} - {song.title}
-                            </a>
+                                <Metadata>
+                                    [{song.language ?? 'MISSING LANGUAGE'}] [{song.year ?? 'MISSING YEAR'}]
+                                </Metadata>
+                            </LinkView>
                         </Link>
                     </li>
                 ))}
@@ -36,4 +39,18 @@ const Container = styled.div`
     width: 1100px;
     background: white;
     padding: 20px;
+`;
+
+const Metadata = styled.span`
+    color: grey;
+    font-size: 12px;
+    float: right;
+    padding-right: 300px;
+`;
+
+const LinkView = styled.a`
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px dotted grey;
 `;
