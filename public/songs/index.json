@@ -583,6 +583,27 @@
     "search": "audioslavecochise"
   },
   {
+    "title": "Kings & Queens",
+    "artist": "Ava Max",
+    "bpm": 259.98,
+    "bar": 4,
+    "gap": -129.2707131317793,
+    "video": "jH1RNk8954Q",
+    "year": "2020",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ava%20Max&cancion=Kings%20%26%20Queens",
+    "file": "Ava Max-Kings & Queens.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "avamaxkingsqueens"
+  },
+  {
     "title": "Bat Country",
     "artist": "Avenged Sevenfold",
     "bpm": 398.32,
@@ -769,6 +790,26 @@
       {}
     ],
     "search": "brathankiwkiniewlublinie"
+  },
+  {
+    "title": "Dynamite",
+    "artist": "BTS",
+    "bpm": 228.02,
+    "bar": 4,
+    "gap": 22812.24445224103,
+    "video": "gdZLi9oWNZg",
+    "year": "2020",
+    "language": "English",
+    "videoGap": 20,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite",
+    "file": "BTS-Dynamite.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "btsdynamite"
   },
   {
     "title": "Everybody (Backstreet's Back)",
@@ -1273,6 +1314,26 @@
     "search": "bonnietylerholdingoutforahero"
   },
   {
+    "title": "Kiedy byłem małym chłopcem",
+    "artist": "Breakout",
+    "bpm": 241.3,
+    "bar": 4,
+    "gap": 23489.81589958159,
+    "video": "lWXSUuosxtk",
+    "genre": "Blues",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Breakout-Kiedy byłem małym chłopcem.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "breakoutkiedybyemmaymchopcem"
+  },
+  {
     "title": "Baby One More Time",
     "artist": "Britney Spears",
     "bpm": 240,
@@ -1647,6 +1708,25 @@
     "search": "cyndilaupergirlsjustwannahavefun"
   },
   {
+    "title": "Pod papugami",
+    "artist": "Czeslaw Niemen",
+    "bpm": 188.45,
+    "bar": 4,
+    "gap": 19673.684210526317,
+    "video": "ePwwMgrPMW8",
+    "videoGap": 0,
+    "author": "davidus01",
+    "language": "Polish",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Czeslaw Niemen-Pod papugami.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "czeslawniemenpodpapugami"
+  },
+  {
     "title": "Dziwny jest ten świat",
     "artist": "Czesław Niemen",
     "bpm": 161.52,
@@ -1708,6 +1788,25 @@
       {}
     ],
     "search": "daftpunkgetlucky"
+  },
+  {
+    "title": "Pump it up",
+    "artist": "Danzel",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 236.9230769230769,
+    "video": "0HtyF0jux2Q",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=21060",
+    "file": "Danzel-Pump it up.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "danzelpumpitup"
   },
   {
     "title": "Deja Vu",
@@ -2569,6 +2668,48 @@
     "search": "haddawayjimcarreytheroxburyguyswhatislove"
   },
   {
+    "title": "A Ty?",
+    "artist": "Hey",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 18261,
+    "video": "8SV6UcCHJq4",
+    "year": "2006",
+    "edition": "SingStar Pop Hits",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Hey-A Ty_.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "heyaty"
+  },
+  {
+    "title": "Mimo wszystko",
+    "artist": "Hey",
+    "bpm": 210,
+    "bar": 4,
+    "gap": 9242,
+    "video": "TG_s-S9AoRY",
+    "year": "2005",
+    "edition": "SingStar Pop Hits",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Hey-Mimo wszystko.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "heymimowszystko"
+  },
+  {
     "title": "The Reason",
     "artist": "Hoobastank",
     "bpm": 332,
@@ -2857,6 +2998,27 @@
       {}
     ],
     "search": "imaginedragonswhateverittakes"
+  },
+  {
+    "title": "Wrecked",
+    "artist": "Imagine Dragons",
+    "bpm": 348.88,
+    "bar": 4,
+    "gap": 9318.121302453566,
+    "video": "Y2NkuFIlLEo",
+    "year": "2021",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Wrecked",
+    "file": "Imagine Dragons-Wrecked.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "imaginedragonswrecked"
   },
   {
     "title": "Mury",
@@ -3300,6 +3462,27 @@
     "search": "kylieminogueinyoureyes"
   },
   {
+    "title": "Party Rock Anthem",
+    "artist": "LMFAO, Lauren Bennett & Goon Rock",
+    "bpm": 260.02,
+    "bar": 4,
+    "gap": 101814.30620721483,
+    "video": "KQ6zr6kCPj8",
+    "year": "2011",
+    "genre": "Electropop",
+    "language": "English",
+    "videoGap": 85,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=LMFAO%2C%20Lauren%20Bennett%20%26%20Goon%20Rock&cancion=Party%20Rock%20Anthem",
+    "file": "LMFAO, Lauren Bennett & Goon Rock-Party Rock Anthem.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "lmfaolaurenbennettgoonrockpartyrockanthem"
+  },
+  {
     "title": "Just Dance",
     "artist": "Lady GaGa feat. Colby O'Donis",
     "bpm": 357,
@@ -3363,6 +3546,42 @@
     "search": "ladygagapokerface"
   },
   {
+    "title": "Mniej niż zero",
+    "artist": "Lady Pank",
+    "bpm": 134.1,
+    "bar": 4,
+    "gap": 19663.28859060403,
+    "video": "JFHanoST-vI",
+    "videoGap": 10,
+    "language": "Polish",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Lady Pank-Mniej niż zero.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "ladypankmniejnizzero"
+  },
+  {
+    "title": "Na co komu dziś",
+    "artist": "Lady Pank",
+    "bpm": 228,
+    "bar": 4,
+    "gap": 9833.157894736842,
+    "video": "l_AS1FWcLYI",
+    "videoGap": 0,
+    "language": "Polish",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Lady Pank-Na co komu dziś.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "ladypanknacokomudzis"
+  },
+  {
     "title": "Zawsze tam gdzie Ty",
     "artist": "Lady Pank",
     "bpm": 189.65,
@@ -3381,6 +3600,24 @@
       {}
     ],
     "search": "ladypankzawszetamgdziety"
+  },
+  {
+    "title": "Zostawcie Titanica",
+    "artist": "Lady Pank",
+    "bpm": 132.16,
+    "bar": 4,
+    "gap": 31254.510895883777,
+    "video": "FhL0hCGgMj4",
+    "videoGap": 0,
+    "language": "Polish",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Lady Pank-Zostawcie Titanica.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "ladypankzostawcietitanica"
   },
   {
     "title": "We are number one",
@@ -3699,6 +3936,24 @@
     "search": "lzyoczyszerokozamkniete"
   },
   {
+    "title": "Oczy szeroko zamknięte",
+    "artist": "Łzy",
+    "bpm": 308,
+    "bar": 4,
+    "gap": 29907.272727272728,
+    "video": "IO1evhvjJZs",
+    "language": "Polish",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Lzy-Oczy szeroko zamknięte.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "zyoczyszerokozamkniete"
+  },
+  {
     "title": "Zrobię mężczyzn z was",
     "artist": "Maciej Molęda",
     "bpm": 237.64,
@@ -3954,6 +4209,28 @@
     "search": "marvingayetammiterrellaintnomountainhighenough"
   },
   {
+    "title": "Enter Sandman",
+    "artist": "Metallica",
+    "bpm": 398.01,
+    "bar": 4,
+    "gap": 72602.4376271953,
+    "video": "CD-E-LDc384",
+    "year": "1991",
+    "edition": "Rock Band",
+    "genre": "Metal",
+    "language": "English",
+    "videoGap": 2,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman",
+    "file": "Metallica-Enter Sandman.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "metallicaentersandman"
+  },
+  {
     "title": "Nothing Else Matters",
     "artist": "Metallica",
     "bpm": 285.4,
@@ -4036,6 +4313,27 @@
       {}
     ],
     "search": "michaeljacksonbilliejean"
+  },
+  {
+    "title": "Black or white",
+    "artist": "Michael Jackson",
+    "bpm": 230.02,
+    "bar": 4,
+    "gap": 158909.82418920094,
+    "video": "F2AitTPI5U0",
+    "year": "1991",
+    "genre": "Pop Internacional",
+    "language": "English",
+    "videoGap": 107,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Black%20or%20white",
+    "file": "Michael Jackson-Black or white.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "michaeljacksonblackorwhite"
   },
   {
     "title": "Thriller",
@@ -4350,6 +4648,25 @@
       {}
     ],
     "search": "myslovitzscenariuszdlamoichsasiadow"
+  },
+  {
+    "title": "Z twarza Marilyn Monroe",
+    "artist": "Myslovitz",
+    "bpm": 246,
+    "bar": 4,
+    "gap": 1924.3902439024391,
+    "video": "E3fqn1aBZ5Q",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Myslovitz-Z twarza Marilyn Monroe.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "myslovitzztwarzamarilynmonroe"
   },
   {
     "title": "Unwritten",
@@ -4687,6 +5004,24 @@
     "search": "perfectniepokonani"
   },
   {
+    "title": "Perfekt - Autobiografia",
+    "artist": "Perfekt",
+    "bpm": 114,
+    "bar": 4,
+    "gap": 15447.368421052632,
+    "video": "1n0MupX-7AM",
+    "language": "Polish",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Perfekt-Perfekt - Autobiografia.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "perfektperfektautobiografia"
+  },
+  {
     "title": "Taki Jestem",
     "artist": "Pewex vs Stachursky",
     "bpm": 128.02,
@@ -4768,6 +5103,25 @@
       {}
     ],
     "search": "pinkfloydanotherbrickinthewallpartii"
+  },
+  {
+    "title": "Psalm dla ciebie",
+    "artist": "Piotr Rubik",
+    "bpm": 100,
+    "bar": 4,
+    "gap": 18650,
+    "video": "9-zQr3ATnM8",
+    "videoGap": 9,
+    "author": "davidus01",
+    "language": "Polish",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Piotr Rubik-Psalm dla ciebie.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "piotrrubikpsalmdlaciebie"
   },
   {
     "title": "Opening (PL)",
@@ -5145,6 +5499,49 @@
     "search": "rayparkerjrghostbusters"
   },
   {
+    "title": "Dani California",
+    "artist": "Red Hot Chili Peppers",
+    "bpm": 388.94,
+    "bar": 4,
+    "gap": 15421.274643903944,
+    "video": "Sb5aq5HcS1A",
+    "year": "2006",
+    "edition": "Rock Band",
+    "genre": "Rock Internacional",
+    "language": "English",
+    "videoGap": 0,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Dani%20California",
+    "file": "Red Hot Chili Peppers-Dani California.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "redhotchilipeppersdanicalifornia"
+  },
+  {
+    "title": "Zakręcona",
+    "artist": "Reni Jusis",
+    "bpm": 214,
+    "bar": 4,
+    "gap": 5116.691588785046,
+    "video": "2NNs3pOf22E",
+    "year": "",
+    "edition": "SingStar WI",
+    "language": "Polish",
+    "genre": "",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Reni Jusis-Zakręcona.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "renijusiszakrecona"
+  },
+  {
     "title": "Bogurodzica",
     "artist": "Reprezentacyjny Zespół Artystyczny Wojska Polskiego",
     "bpm": 224.74,
@@ -5249,6 +5646,27 @@
       {}
     ],
     "search": "rickymartinlivinlavidaloca"
+  },
+  {
+    "title": "Diamonds",
+    "artist": "Rihanna",
+    "bpm": 184,
+    "bar": 4,
+    "gap": 39446.739130434784,
+    "video": "lWA2pjMjpBs",
+    "year": "2012",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Diamonds",
+    "file": "Rihanna-Diamonds.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "rihannadiamonds"
   },
   {
     "title": "Umbrella",
@@ -5377,6 +5795,27 @@
       {}
     ],
     "search": "rudischuberthcorkarybaka"
+  },
+  {
+    "title": "Escape (The Pińa Colada Song)",
+    "artist": "Rupert Holmes",
+    "bpm": 279.86,
+    "bar": 4,
+    "gap": 13753.633673979846,
+    "video": "zROIlspgOjM",
+    "year": "1979",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rupert%20Holmes&cancion=Escape%20(The%20Pi%C3%B1a%20Colada%20Song)",
+    "file": "Rupert Holmes-Escape (The Pińa Colada Song).json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "rupertholmesescapethepinacoladasong"
   },
   {
     "title": "Maria (I like it loud)",
@@ -5879,6 +6318,26 @@
     "search": "tloveking"
   },
   {
+    "title": "Nie nie nie",
+    "artist": "T.Love",
+    "bpm": 116,
+    "bar": 4,
+    "gap": 36696.51724137931,
+    "video": "dK7yUfCxD-8",
+    "genre": "Rock",
+    "language": "Polish",
+    "videoGap": 23,
+    "author": "Pit33",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "T.Love-Nie nie nie.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "tlovenienienie"
+  },
+  {
     "title": "Polish Boyfriend",
     "artist": "T.Love",
     "bpm": 127.95,
@@ -6222,6 +6681,28 @@
     "search": "theblackeyedpeasigottafeeling"
   },
   {
+    "title": "Pump It",
+    "artist": "The Black Eyed Peas",
+    "bpm": 307.24,
+    "bar": 4,
+    "gap": 15554.564640020832,
+    "video": "ZaI2IlHwmgQ",
+    "year": "2006",
+    "edition": "SingStar R&B",
+    "genre": "Rap",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Eyed%20Peas&cancion=Pump%20It",
+    "file": "The Black Eyed Peas-Pump It.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "theblackeyedpeaspumpit"
+  },
+  {
     "title": "Lonely boy",
     "artist": "The Black Keys",
     "bpm": 397.67,
@@ -6330,6 +6811,28 @@
       {}
     ],
     "search": "thedoorsridersonthestorm"
+  },
+  {
+    "title": "Caution",
+    "artist": "The Killers",
+    "bpm": 356.01,
+    "bar": 4,
+    "gap": 57793.79244965029,
+    "video": "WrpBgN_iUnA",
+    "year": "2020",
+    "edition": "Rock Band Store 2020",
+    "genre": "Rock Alternativo",
+    "language": "English",
+    "videoGap": 44,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Caution",
+    "file": "The Killers-Caution.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "thekillerscaution"
   },
   {
     "title": "Mr. Brightside",
