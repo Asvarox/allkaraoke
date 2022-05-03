@@ -6,10 +6,14 @@ const data = {
         kinds: [] as string[],
         missing: [] as string[],
     },
-    genre: {
+    year: {
         kinds: [] as string[],
         missing: [] as string[],
     },
+    // genre: {
+    //     kinds: [] as string[],
+    //     missing: [] as string[],
+    // },
 };
 
 type Data = typeof data;
@@ -18,7 +22,7 @@ const index: SongPreview[] = require('../public/songs/index.json');
 
 index.forEach((song) => {
     Object.entries(data).forEach(([key, val]) => {
-        if (key in song) {
+        if (key in song && !!song[key as keyof Data]) {
             val.kinds.push(song[key as keyof Data]!);
         } else {
             val.missing.push(song.file);
