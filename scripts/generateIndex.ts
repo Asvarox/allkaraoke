@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from 'fs';
 import { Song, SongPreview } from 'interfaces';
-import clearString from './utils/clearString';
+import clearString from '../src/utils/clearString';
 
 const SONGS_FOLDER = './public/songs';
 
