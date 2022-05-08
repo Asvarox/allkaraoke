@@ -1,5 +1,5 @@
 {
-  "title": "Perfekt - Autobiografia",
+  "title": "Autobiografia",
   "artist": "Perfekt",
   "bpm": 114,
   "bar": 4,
@@ -9,6 +9,7 @@
   "videoGap": 0,
   "authorUrl": "",
   "sourceUrl": "",
+  "year": "1982",
   "tracks": [
     {
       "sections": [
