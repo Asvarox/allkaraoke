@@ -31,6 +31,7 @@ function Jukebox(props: Props) {
 
     const playNext = () => songList.data && setCurrentlyPlaying((current) => (current + 1) % songList.data.length);
 
+    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
     usePlayerVolume(player, shuffledList[currentlyPlaying]?.volume);
     useEffect(() => {
         if (!player.current) {
@@ -38,8 +39,7 @@ function Jukebox(props: Props) {
         }
 
         player.current.getInternalPlayer().setSize(width, height);
-    }, [player, width, height, shuffledList, currentlyPlaying]);
-    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
+    }, [player, width, height, shuffledList, currentlyPlaying, playerKey]);
 
     if (!shuffledList.length || !width || !height) return null;
 
@@ -55,7 +55,7 @@ function Jukebox(props: Props) {
             background={
                 <YouTube
                     title=" "
-                    key={playerKey}
+                    key={`${shuffledList[currentlyPlaying].video}-${playerKey}`}
                     ref={player}
                     videoId={shuffledList[currentlyPlaying].video}
                     opts={{
