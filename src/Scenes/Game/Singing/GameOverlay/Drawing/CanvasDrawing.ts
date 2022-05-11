@@ -1,5 +1,5 @@
 import { noDistanceNoteTypes } from 'consts';
-import { NotesSection, PlayerNote } from 'interfaces';
+import { Note, NotesSection, PlayerNote } from 'interfaces';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
@@ -31,9 +31,7 @@ export default class CanvasDrawing {
 
         ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-        for (let i = 0; i < GameState.getPlayerCount(); i++) {
-            this.drawPlayer(i, ctx);
-        }
+        for (let i = 0; i < GameState.getPlayerCount(); i++) this.drawPlayer(i, ctx);
 
         ParticleManager.tick(ctx, this.canvas);
     };
@@ -64,10 +62,9 @@ export default class CanvasDrawing {
         if (!isNotesSection(drawingData.currentSection)) return;
 
         drawingData.currentSection.notes.forEach((note) => {
-            const [displacementX, displacementY] = displacements[note.start];
-            const { x, y, w, h } = this.getNoteCoords(drawingData, note.start, note.length, note.pitch, true);
+            const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true, displacements[note.start]);
 
-            drawNote(ctx, x + displacementX, y + displacementY, w, h, note);
+            drawNote(ctx, x, y, w, h, note);
         });
     };
 
@@ -81,22 +78,18 @@ export default class CanvasDrawing {
         drawingData.currentPlayerNotes.forEach((playerNote) => {
             const distance = getPlayerNoteDistance(playerNote);
 
-            const [displacementX, displacementY] = (distance === 0 && displacements[playerNote.note.start]) || [0, 0];
-
             const { x, y, w, h } = this.getNoteCoords(
                 drawingData,
-                playerNote.start,
-                playerNote.length,
+                playerNote,
                 playerNote.note.pitch + distance,
                 distance === 0,
+                displacements[playerNote.note.start],
             );
             if (distance > 0 || w > h / 2.5) {
-                const finalX = x + displacementX;
-                const finalY = y + displacementY;
-                drawPlayerNote(ctx, finalX, finalY, w, h, drawingData.playerNumber, distance === 0, playerNote);
+                drawPlayerNote(ctx, x, y, w, h, drawingData.playerNumber, distance === 0, playerNote);
 
                 if (playerNote.vibrato) {
-                    ParticleManager.add(new VibratoParticle(finalX, finalY, w, h, drawingData.currentTime));
+                    ParticleManager.add(new VibratoParticle(x, y, w, h, drawingData.currentTime));
                 }
 
                 if (
@@ -104,7 +97,7 @@ export default class CanvasDrawing {
                     playerNote.frequencyRecords.length > 3 &&
                     !noDistanceNoteTypes.includes(playerNote.note.type)
                 ) {
-                    drawPlayerFrequencyTrace(ctx, finalX, finalY, w, h, playerNote);
+                    drawPlayerFrequencyTrace(ctx, x, y, w, h, playerNote);
                 }
             }
         });
@@ -123,21 +116,15 @@ export default class CanvasDrawing {
         );
 
         if (lastNote && lastNote.distance === 0) {
-            const [displacementX, displacementY] = displacements[lastNote.note.start] || [0, 0];
+            const displacement = displacements[lastNote.note.start] || [0, 0];
 
-            const { x, y, w, h } = this.getNoteCoords(
-                drawingData,
-                lastNote.start,
-                lastNote.length,
-                lastNote.note.pitch,
-                true,
-            );
+            const { x, y, w, h } = this.getNoteCoords(drawingData, lastNote, lastNote.note.pitch, true, displacement);
             const preciseDistance = noDistanceNoteTypes.includes(lastNote.note.type)
                 ? 0
                 : lastNote.frequencyRecords.at(-1)!.preciseDistance;
 
-            const finalX = x + displacementX + w;
-            const finalY = this.getPreciseY(y + displacementY, h, preciseDistance);
+            const finalX = x + w;
+            const finalY = this.getPreciseY(y, h, preciseDistance);
 
             ParticleManager.add(new RayParticle(finalX, finalY, drawingData.currentTime, 1));
         }
@@ -153,7 +140,7 @@ export default class CanvasDrawing {
 
     private fadeoutNotes = (section: NotesSection, drawingData: DrawingData) => {
         section.notes.forEach((note) => {
-            const { x, y, w, h } = this.getNoteCoords(drawingData, note.start, note.length, note.pitch, true);
+            const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
 
             ParticleManager.add(new FadeoutNote(x, y, w, h, note));
         });
@@ -167,7 +154,7 @@ export default class CanvasDrawing {
         );
 
         notesToExplode.forEach((note) => {
-            const { x, y, w, h } = this.getNoteCoords(drawingData, note.start, note.length, note.note.pitch, true);
+            const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.note.pitch, true);
             ParticleManager.add(
                 new ExplodingNoteParticle(x, y + h / 2, w, drawingData.playerNumber, note.note, ParticleManager),
             );
@@ -230,7 +217,13 @@ export default class CanvasDrawing {
         };
     };
 
-    private getNoteCoords = (drawingData: DrawingData, start: number, length: number, pitch: number, big: boolean) => {
+    private getNoteCoords = (
+        drawingData: DrawingData,
+        { start, length }: Pick<Note, 'start' | 'length'>,
+        pitch: number,
+        big: boolean,
+        displacement: [number, number] = [0, 0],
+    ) => {
         const regionPaddingTop = drawingData.playerNumber * this.canvas.height * 0.5;
 
         const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
@@ -238,9 +231,12 @@ export default class CanvasDrawing {
 
         const beatLength = (this.canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - sectionStart);
 
+        const [dx, dy] = big ? displacement : [0, 0];
+        const pitchY = pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding);
+
         return {
-            x: paddingHorizontal + beatLength * (start - sectionStart),
-            y: regionPaddingTop + 10 + pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding) - (big ? 3 : 0),
+            x: paddingHorizontal + beatLength * (start - sectionStart) + dx,
+            y: regionPaddingTop + 10 + pitchY + dy - (big ? 3 : 0),
             w: beatLength * length,
             h: NOTE_HEIGHT + (big ? 6 : 0),
         };
