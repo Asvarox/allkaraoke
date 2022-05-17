@@ -33,11 +33,13 @@ const getPlayerTrackName = (tracks: SongPreview['tracks'], index: number) =>
 
 const useSetGameMode = createPersistedState<GAME_MODE>('song_settings-game_mode');
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
+const useSetSkipIntro = createPersistedState<boolean>('song_settings-skip_intro');
 
 export default function SongSettings({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
     const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
     const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, Math.min(1, songPreview.tracksCount - 1)]);
     const [tolerance, setTolerance] = useSetTolerance(2);
+    const [skipIntro, setSkipIntro] = useSetSkipIntro(false);
 
     const multipleTracks = songPreview.tracksCount > 1;
 
@@ -50,7 +52,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         });
 
     const startSong = () => {
-        onPlay({ file: songPreview.file, mode, playerTracks, tolerance, video: songPreview.video });
+        onPlay({ file: songPreview.file, mode, playerTracks, tolerance, video: songPreview.video, skipIntro });
     };
 
     const changeMode = () => {
@@ -65,6 +67,15 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         <Container>
             <MicCheck />
             <GameConfiguration>
+                {process.env.NODE_ENV === 'development' && (
+                    <Switcher
+                        {...register('skipIntro', () => setSkipIntro(!skipIntro), 'Skip intro')}
+                        label="Skip intro"
+                        value={skipIntro ? 'Yes' : 'No'}
+                        data-test="skip-intro"
+                        data-test-value={skipIntro}
+                    />
+                )}
                 <Switcher
                     {...register('difficulty', changeTolerance, 'Change difficulty')}
                     label="Difficulty"

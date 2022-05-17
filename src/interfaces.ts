@@ -19,6 +19,7 @@ export interface SingSetup {
     playerTracks: [number, number];
     mode: GAME_MODE;
     tolerance: number;
+    skipIntro?: boolean;
 }
 
 export interface NotesSection {

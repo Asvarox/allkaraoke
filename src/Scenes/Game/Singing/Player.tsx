@@ -145,7 +145,7 @@ function Player(
                             controls: showControls ? 1 : 0,
                             cc_load_policy: 3,
                             iv_load_policy: 3,
-                            start: song.videoGap,
+                            start: Number(song.videoGap) + Math.floor(singSetup.skipIntro ? song.gap / 1000 : 0),
                         },
                     }}
                     onStateChange={(e) => {
