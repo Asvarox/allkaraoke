@@ -1,5 +1,6 @@
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { useRef } from 'react';
+import usePrevious from 'hooks/usePrevious';
+import { useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import styled from 'styled-components';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
@@ -14,7 +15,7 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters, showFilters }: Props) {
-    const { register } = useKeyboardNav({
+    const { register, focusElement } = useKeyboardNav({
         onBackspace: onBack,
         direction: 'horizontal',
         enabled: showFilters,
@@ -42,6 +43,14 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
     };
 
     const searchInput = useRef<HTMLInputElement | null>(null);
+    const previousShowFilters = usePrevious(showFilters);
+    useEffect(() => {
+        // Hacky and buggy way to detect if someone started filtering by inputting a letter
+        if (!previousShowFilters && showFilters && filters.search?.length === 1) {
+            searchInput.current?.focus();
+            focusElement('search');
+        }
+    }, [previousShowFilters, showFilters, focusElement, filters.search, searchInput.current]);
     const setSearch = (value: string) => {
         onSongFiltered({
             ...filters,

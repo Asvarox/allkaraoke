@@ -65,7 +65,7 @@ describe('Sing a song', () => {
         cy.get('[data-test="song-e2e-test.json"]').should('exist');
     });
 
-    describe('Filters', () => {
+    describe.only('Filters', () => {
         it('should open and close filters songs by title', () => {
             cy.get('[data-test="sing-a-song"]').click();
             cy.wait(500);
@@ -96,9 +96,20 @@ describe('Sing a song', () => {
             cy.get('body').type('{enter}'); // Solo
             cy.get('[data-test="song-e2e-test-multitrack.json"]').should('not.exist');
             cy.get('[data-test="song-e2e-test.json"]').should('exist');
-
+            cy.get('body').type('{enter}'); // All
             cy.get('body').type('{downarrow}');
-            cy.get('[data-test="song-preview"]').invoke('attr', 'data-song').should('equal', 'e2e-test.json');
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('exist');
+            // Quick search
+            cy.get('body').type('multitrack');
+            cy.get('body').type('{enter}'); // All
+            cy.get('[data-test="filters-search-form"]').submit();
+            cy.get('body').type('{downarrow}');
+            cy.get('[data-test="song-e2e-test-multitrack.json"]').should('exist');
+            cy.get('[data-test="song-e2e-test.json"]').should('not.exist');
+            cy.get('[data-test="song-preview"]')
+                .invoke('attr', 'data-song')
+                .should('equal', 'e2e-test-multitrack.json');
         });
     });
 });

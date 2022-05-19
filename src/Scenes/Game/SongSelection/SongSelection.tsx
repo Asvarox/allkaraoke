@@ -1,6 +1,8 @@
 import { focused } from 'Elements/cssMixins';
+import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import styled from 'styled-components';
 import usePrevious from '../../../hooks/usePrevious';
 import useViewportSize from '../../../hooks/useViewportSize';
@@ -38,6 +40,15 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         showFilters,
         setShowFilters,
     } = useSongSelection(preselectedSong);
+
+    const onSearchSong: KeyHandler = (e) => {
+        setFilters({
+            search: e.key,
+        });
+        setShowFilters(true);
+    };
+
+    useHotkeys('a,b,c,d,e,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z', onSearchSong, { enabled: !showFilters });
 
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();

@@ -105,7 +105,12 @@ export default function useKeyboardNav(options: Options = {}) {
         }
     });
 
+    const focusElement = (name: string) => {
+        if (elementList.current.includes(name)) setCurrentlySelected(name);
+    };
+
     return {
+        focusElement,
         register,
     };
 }
