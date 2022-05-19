@@ -1,6 +1,6 @@
 import { PlayerNote } from 'interfaces';
-import applyColor from '../applyColor';
-import styles from '../styles';
+import applyColor from 'Scenes/Game/Singing/GameOverlay/Drawing/applyColor';
+import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
 import roundRect from './roundRect';
 
 export default function drawPlayerNote(
@@ -13,17 +13,7 @@ export default function drawPlayerNote(
     isHit: boolean,
     playerNote: PlayerNote,
 ) {
-    if (playerNote.isPerfect && playerNote.note.type === 'star') {
-        applyColor(ctx, styles.colors.players[playerNumber].starPerfect);
-    } else if (playerNote.isPerfect) {
-        applyColor(ctx, styles.colors.players[playerNumber].perfect);
-    } else if (playerNote.note.type === 'star' && isHit) {
-        applyColor(ctx, styles.colors.players[playerNumber].star);
-    } else if (isHit) {
-        applyColor(ctx, styles.colors.players[playerNumber].hit);
-    } else {
-        applyColor(ctx, styles.colors.players[playerNumber].miss);
-    }
+    applyColor(ctx, getNoteColor(ctx, playerNumber, isHit, playerNote));
 
     ctx.shadowBlur = 5;
     ctx.shadowColor = 'rgba(31,31,31, .7)';

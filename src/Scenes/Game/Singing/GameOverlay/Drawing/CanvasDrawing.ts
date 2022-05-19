@@ -1,5 +1,8 @@
 import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
+import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
+import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
+import random from 'utils/randomValue';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
@@ -127,6 +130,14 @@ export default class CanvasDrawing {
             const finalY = this.getPreciseY(y, h, preciseDistance);
 
             ParticleManager.add(new RayParticle(finalX, finalY, drawingData.currentTime, 1));
+
+            ParticleManager.add(
+                new SungTriangle(
+                    random(Math.max(x, finalX - 50), finalX),
+                    finalY,
+                    getNoteColor(ctx, drawingData.playerNumber, true, lastNote).fill,
+                ),
+            );
         }
     };
 

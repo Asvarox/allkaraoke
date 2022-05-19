@@ -2,12 +2,12 @@ import triangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/triangle'
 import Particle from '../interfaces';
 import spreadValue from './spreadValue';
 
-const baseTtl = (50 / 60) * 1000;
-const ttlSpread = (25 / 60) * 1000;
+const baseTtlMs = 300;
+const ttlSpreadMs = 50;
 
-const velocityModifier = 1.65;
+const velocityModifier = 1.3;
 
-export default class TriangleParticle implements Particle {
+export default class SungTriangle implements Particle {
     public finished = false;
 
     private ttl;
@@ -18,8 +18,8 @@ export default class TriangleParticle implements Particle {
     private initialAngle;
     private heightModifier;
 
-    constructor(private x: number, private y: number, private color: string, private delay: number) {
-        this.startingTtl = this.ttl = spreadValue(baseTtl, ttlSpread);
+    constructor(private x: number, private y: number, private color: string) {
+        this.startingTtl = this.ttl = spreadValue(baseTtlMs, ttlSpreadMs);
         this.velocityX = velocityModifier * Math.random() - velocityModifier / 2;
         this.velocityY = velocityModifier * Math.random() - velocityModifier / 2;
         this.width = 25;
@@ -27,18 +27,16 @@ export default class TriangleParticle implements Particle {
         this.heightModifier = 0.5 + Math.random() / 2;
     }
     public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
-        if (this.delay-- > 0) return;
-
-        const percentage = this.ttl / this.startingTtl;
-        const elapsedTicks = this.startingTtl - this.ttl;
+        const percentage = 1 - this.ttl / this.startingTtl;
+        const ticksLeft = this.ttl;
 
         const width = this.width * percentage;
         const height = this.width * this.heightModifier * percentage;
 
-        const x = this.x - width / 2 + elapsedTicks * this.velocityX;
-        const y = this.y - height / 2 + elapsedTicks * this.velocityY;
+        const x = this.x - width / 2 + ticksLeft * this.velocityX;
+        const y = this.y + height / 2 + ticksLeft * this.velocityY;
 
-        triangle(ctx, x, y, width, height, this.initialAngle + elapsedTicks, this.color, 0.8 * percentage);
+        triangle(ctx, x, y, width, height, this.initialAngle + ticksLeft, this.color, 0.7 * percentage);
 
         this.ttl = this.ttl - delta;
         this.finished = this.ttl <= 0;
