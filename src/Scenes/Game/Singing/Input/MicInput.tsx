@@ -11,7 +11,6 @@ class MicInput implements InputInterface {
     private startedMonitoring = false;
 
     public startMonitoring = async (deviceId?: string) => {
-        console.log('start');
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
@@ -53,7 +52,6 @@ class MicInput implements InputInterface {
     public getVolumes = () => this.volumes;
 
     public stopMonitoring = async () => {
-        console.log('stop');
         if (!this.startedMonitoring) return;
         this.startedMonitoring = false;
         this.stream?.getTracks().forEach(function (track) {

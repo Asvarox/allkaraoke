@@ -1,21 +1,14 @@
 import { InputSource } from './interfaces';
 
-export class DummyInputSource {
-    public static readonly inputName = 'Dummy';
+export class RemoteMicrophoneInputSource {
+    public static readonly inputName = 'RemoteMicrophone';
 
     public static getInputs = async (): Promise<InputSource[]> => [
         {
-            channels: 2,
+            channels: 1,
             channel: 0,
-            label: 'Dummy Input 1',
+            label: 'Drawing Test Input',
             id: 'default;0',
-            deviceId: 'default',
-        },
-        {
-            channels: 2,
-            channel: 1,
-            label: 'Dummy Input 2',
-            id: 'default;1',
             deviceId: 'default',
         },
     ];

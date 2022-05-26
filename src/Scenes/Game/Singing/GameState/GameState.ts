@@ -1,9 +1,7 @@
 import { FrequencyRecord, PlayerNote, SingSetup, Song } from 'interfaces';
 import isNotesSection from '../Helpers/isNotesSection';
 import { getNoteAtBeat } from '../Helpers/notesSelectors';
-import DummyInput from '../Input/DummyInput';
 import InputManager from '../Input/InputManager';
-import MicInput from '../Input/MicInput';
 import GameStateEvents from './GameStateEvents';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
 import calculateScore from './Helpers/calculateScore';
@@ -13,8 +11,8 @@ import getSongBeatLength from './Helpers/getSongBeatLength';
 // @ts-ignore
 const isCypress = !!window.cypress;
 
-const Input = process.env.NODE_ENV === 'development' && !isCypress ? DummyInput : MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
-const Input1 = MicInput; // eslint-disable-line @typescript-eslint/no-unused-vars
+const Input = process.env.NODE_ENV === 'development' && !isCypress ? 'Dummy' : 'Microphone'; // eslint-disable-line @typescript-eslint/no-unused-vars
+const Input1 = 'Microphone'; // eslint-disable-line @typescript-eslint/no-unused-vars
 
 InputManager.setPlayerInput(0, Input, 0);
 InputManager.setPlayerInput(1, Input, 1);

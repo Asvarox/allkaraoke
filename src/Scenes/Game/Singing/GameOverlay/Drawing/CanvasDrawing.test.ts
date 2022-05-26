@@ -22,8 +22,8 @@ describe('CanvasDrawing', function () {
             tolerance: 2,
         });
 
-        InputManager.setPlayerInput(0, DrawingTestInput, 0);
-        InputManager.setPlayerInput(1, DrawingTestInput, 1);
+        InputManager.setPlayerInput(0, 'DrawingTest', 0);
+        InputManager.setPlayerInput(1, 'DrawingTest', 1);
     });
 
     afterEach(() => {
@@ -33,8 +33,8 @@ describe('CanvasDrawing', function () {
     const canvas = createCanvas(800, 600);
     const canvasDrawing = new CanvasDrawing(canvas as any);
     GameState.setSong(songFixture);
-    InputManager.setPlayerInput(0, DrawingTestInput, 0);
-    InputManager.setPlayerInput(1, DrawingTestInput, 1);
+    InputManager.setPlayerInput(0, 'DrawingTest', 0);
+    InputManager.setPlayerInput(1, 'DrawingTest', 1);
 
     it('Should properly draw game state', () => {
         const CHANNEL2_VALUES = [410, 413, 416, 413, 410, 407, 404, 407];

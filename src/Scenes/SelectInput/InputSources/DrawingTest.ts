@@ -1,20 +1,13 @@
 import { InputSource } from './interfaces';
 
-export class DummyInputSource {
-    public static readonly inputName = 'Dummy';
+export class DrawingTestInputSource {
+    public static readonly inputName = 'DrawingTest';
 
     public static getInputs = async (): Promise<InputSource[]> => [
         {
             channels: 2,
-            channel: 0,
-            label: 'Dummy Input 1',
-            id: 'default;0',
-            deviceId: 'default',
-        },
-        {
-            channels: 2,
             channel: 1,
-            label: 'Dummy Input 2',
+            label: 'Drawing Test Input',
             id: 'default;1',
             deviceId: 'default',
         },

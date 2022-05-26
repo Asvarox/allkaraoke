@@ -1,21 +1,52 @@
-interface InputSource {
-    label: string;
-    channels: number;
-    id: string;
+import { range } from 'lodash';
+import { InputSource } from './interfaces';
+
+interface NameMapper {
+    test: (label: string, channel: number) => boolean;
+    map: (label: string, channel: number) => string;
 }
 
+const singstarWirelessMicMapper: NameMapper = {
+    test: (label, channel) => {
+        console.log(label, channel);
+        return label.toLowerCase().startsWith('wireless mic #');
+    },
+    map: (label, channel) => `Singstar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
+};
+const singstarWiredMicMapper: NameMapper = {
+    test: (label, channel) => {
+        console.log(label, channel);
+        return label.toLowerCase().startsWith('usbmic serial#');
+    },
+    map: (label, channel) => `Singstar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
+};
+
+const mapInputName = (label: string, channel: number) => {
+    if (singstarWirelessMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
+    if (singstarWiredMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
+
+    return label;
+};
+
 export class MicrophoneInputSource {
-    public static inputName = 'Microphone';
+    public static readonly inputName = 'Microphone';
 
     public static getInputs = async (): Promise<InputSource[]> => {
         return navigator.mediaDevices.enumerateDevices().then((devices) =>
             (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
                 .filter((device) => device.kind === 'audioinput')
-                .map((device) => ({
-                    label: device.label,
-                    channels: device.getCapabilities()?.channelCount?.max ?? 1,
-                    id: device.deviceId,
-                })),
+                .map((device) => {
+                    const channels = device.getCapabilities()?.channelCount?.max ?? 1;
+
+                    return range(0, channels).map((channel) => ({
+                        label: mapInputName(device.label, channel),
+                        channel,
+                        channels,
+                        deviceId: device.deviceId,
+                        id: `${device.deviceId};${channel}`,
+                    }));
+                })
+                .flat(),
         );
     };
 

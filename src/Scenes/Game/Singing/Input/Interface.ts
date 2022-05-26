@@ -1,5 +1,5 @@
 export default interface InputInterface {
-    startMonitoring: () => Promise<void>;
+    startMonitoring: (deviceId?: string) => Promise<void>;
     getChannelsCount: () => number;
     stopMonitoring: () => Promise<void>;
     getInputLag: () => number;
