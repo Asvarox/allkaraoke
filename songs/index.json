@@ -84,27 +84,6 @@
     "search": "3doorsdownwhenimgone"
   },
   {
-    "title": "Take on me",
-    "artist": "a-ha",
-    "bpm": 337,
-    "bar": 4,
-    "gap": 36137.857851825596,
-    "video": "djV11Xbc914",
-    "year": "1985",
-    "edition": "SingStar",
-    "language": "English",
-    "videoGap": 0,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20on%20me",
-    "file": "A-ha-Take on me.json",
-    "tracksCount": 1,
-    "tracks": [
-      {}
-    ],
-    "search": "ahatakeonme"
-  },
-  {
     "title": "Dancing Queen",
     "artist": "ABBA",
     "bpm": 339.3,
@@ -272,23 +251,6 @@
       {}
     ],
     "search": "acdchighwaytohell"
-  },
-  {
-    "title": "Rolling In The Deep",
-    "artist": "Adele",
-    "video": "rYEDA3JcQqw",
-    "language": "English",
-    "gap": 4870,
-    "bpm": 210,
-    "bar": 4,
-    "year": "2011",
-    "beatLength": 286,
-    "file": "Adele-Rolling-in-the-deep.json",
-    "tracksCount": 1,
-    "tracks": [
-      {}
-    ],
-    "search": "adelerollinginthedeep"
   },
   {
     "title": "Someone Like You",
@@ -4807,23 +4769,6 @@
     "search": "natashabedingfieldunwritten"
   },
   {
-    "artist": "Netflix",
-    "title": "Toss A Coin To Your Witcher",
-    "video": "waMkFIzvDpE",
-    "language": "English",
-    "gap": 1425,
-    "bpm": 211,
-    "bar": 4,
-    "volume": 0.91,
-    "year": "2020",
-    "file": "Netflix-Toss-a-coin-to-your-witcher.json",
-    "tracksCount": 1,
-    "tracks": [
-      {}
-    ],
-    "search": "netflixtossacointoyourwitcher"
-  },
-  {
     "title": "Hero",
     "artist": "Nickelback",
     "bpm": 294.56,
@@ -7843,5 +7788,60 @@
       {}
     ],
     "search": "zielonezabkinumerekwkrzaczkach"
+  },
+  {
+    "title": "Take on me",
+    "artist": "a-ha",
+    "bpm": 337,
+    "bar": 4,
+    "gap": 36137.857851825596,
+    "video": "djV11Xbc914",
+    "year": "1985",
+    "edition": "SingStar",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20on%20me",
+    "file": "a-ha-Take on me.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "ahatakeonme"
+  },
+  {
+    "title": "Rolling In The Deep",
+    "artist": "Adele",
+    "video": "rYEDA3JcQqw",
+    "language": "English",
+    "gap": 4870,
+    "bpm": 210,
+    "bar": 4,
+    "year": "2011",
+    "beatLength": 286,
+    "file": "adele-rolling-in-the-deep.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "adelerollinginthedeep"
+  },
+  {
+    "artist": "Netflix",
+    "title": "Toss A Coin To Your Witcher",
+    "video": "waMkFIzvDpE",
+    "language": "English",
+    "gap": 1425,
+    "bpm": 211,
+    "bar": 4,
+    "volume": 0.91,
+    "year": "2020",
+    "file": "netflix-toss-a-coin-to-your-witcher.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "netflixtossacointoyourwitcher"
   }
 ]
