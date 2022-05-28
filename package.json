@@ -85,6 +85,8 @@
         "cypress-plugin-snapshots": "^1.4.4",
         "eslint": "^8.5.0",
         "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-cypress": "^2.12.1",
+        "eslint-plugin-no-only-tests": "^2.6.0",
         "eslint-plugin-prettier": "^4.0.0",
         "husky": "^7.0.0",
         "jest-image-snapshot": "^4.5.1",

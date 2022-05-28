@@ -58,14 +58,16 @@ describe('Sing a song', () => {
         cy.get('[data-test="game-mode-setting"]').should('have.attr', 'data-test-value', 'Pass The Mic');
         cy.get('[data-test="difficulty-setting"]').should('have.attr', 'data-test-value', 'Hard');
 
-        cy.get('body').type('{uparrow}'); // play button
+        cy.get('body').type('{downarrow}');
+        cy.get('body').type('{downarrow}');
+        cy.get('body').type('{downarrow}');
+        cy.get('body').type('{downarrow}');
         cy.get('body').type('{enter}'); // start song
 
         cy.get('[data-test="play-next-song-button"]', { timeout: 30_000 }).click();
         cy.get('[data-test="song-e2e-test.json"]').should('exist');
     });
-
-    describe.only('Filters', () => {
+    describe('Filters', () => {
         it('should open and close filters songs by title', () => {
             cy.get('[data-test="sing-a-song"]').click();
             cy.wait(500);

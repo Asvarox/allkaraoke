@@ -1,4 +1,10 @@
 {
-    "plugins": ["prettier"],
-    "extends": ["react-app", "prettier"]
+    "plugins": ["prettier", "cypress", "no-only-tests"],
+    "extends": ["react-app", "prettier"],
+    "env": {
+        "cypress/globals": true
+    },
+    "rules": {
+        "no-only-tests/no-only-tests": "error"
+    }
 }
