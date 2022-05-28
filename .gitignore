@@ -106,6 +106,7 @@ fabric.properties
 # jest-image-snapshot
 src/**/__diff_output__/*
 
+# https://next.yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .yarn/*
 !.yarn/cache
 !.yarn/patches
