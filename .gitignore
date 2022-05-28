@@ -105,3 +105,11 @@ fabric.properties
 
 # jest-image-snapshot
 src/**/__diff_output__/*
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
