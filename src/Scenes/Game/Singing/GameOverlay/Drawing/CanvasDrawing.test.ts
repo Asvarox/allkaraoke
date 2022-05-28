@@ -36,6 +36,7 @@ describe('CanvasDrawing', function () {
     InputManager.setPlayerInput(0, 'DrawingTest', 0);
     InputManager.setPlayerInput(1, 'DrawingTest', 1);
 
+    jest.retryTimes(2);
     it('Should properly draw game state', () => {
         const CHANNEL2_VALUES = [410, 413, 416, 413, 410, 407, 404, 407];
 
@@ -50,12 +51,14 @@ describe('CanvasDrawing', function () {
         }
 
         expect(canvas.toBuffer()).toMatchImageSnapshot({
+            customSnapshotIdentifier: 'Should properly draw game state',
             comparisonMethod: 'ssim',
             failureThreshold: 0.01,
             failureThresholdType: 'percent',
         });
     });
 
+    jest.retryTimes(2);
     it('should draw missed note above the target note if the distance is positive', function () {
         const p1note = (songFixture.tracks[0].sections[0] as NotesSection).notes[0];
         const p2note = (songFixture.tracks[1].sections[0] as NotesSection).notes[0];
@@ -73,6 +76,7 @@ describe('CanvasDrawing', function () {
         }
 
         expect(canvas.toBuffer()).toMatchImageSnapshot({
+            customSnapshotIdentifier: 'should draw missed note above the target note if the distance is positive',
             comparisonMethod: 'ssim',
             failureThreshold: 0.01,
             failureThresholdType: 'percent',
