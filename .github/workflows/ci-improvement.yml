@@ -3,73 +3,41 @@ name: CI/CD
 on: [push]
 
 jobs:
-    install:
+    unit-tests:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - name: Install
-              uses: actions/setup-node@v2
+            - uses: actions/setup-node@v2
               with:
                   node-version: '16'
                   cache: 'yarn'
             - run: yarn install
-            - uses: actions/upload-artifact@v3
-              with:
-                  name: node_modules
-                  path: node_modules
-    unit-tests:
-        runs-on: ubuntu-latest
-        needs: ['install']
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/download-artifact@v2
-              with:
-                  name: node_modules
-            - name: Install
-              uses: actions/setup-node@v2
-              with:
-                  node-version: '16'
-                  cache: 'yarn'
             - run: yarn test
             - uses: actions/upload-artifact@v3
               if: failure()
               with:
-                  name: cypress-test-results
+                  name: unit-tests-image-diffs
                   path: |
                       src/**/__diff_output__/*
     lint:
         runs-on: ubuntu-latest
-        needs: ['install']
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/download-artifact@v2
-              with:
-                  name: node_modules
-            - name: Install
-              uses: actions/setup-node@v2
+            - uses: actions/setup-node@v2
               with:
                   node-version: '16'
                   cache: 'yarn'
+            - run: yarn install
             - run: yarn eslint .
-            - uses: actions/upload-artifact@v3
-              if: failure()
-              with:
-                  name: cypress-test-results
-                  path: |
-                      src/**/__diff_output__/*
     cypress-run:
         runs-on: ubuntu-latest
-        needs: ['install']
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/download-artifact@v2
-              with:
-                  name: node_modules
-            - name: Install
-              uses: actions/setup-node@v2
+            - uses: actions/setup-node@v2
               with:
                   node-version: '16'
                   cache: 'yarn'
+            - run: yarn install
             - name: Cypress run
               uses: cypress-io/github-action@v2
               with:
@@ -94,9 +62,11 @@ jobs:
         runs-on: ubuntu-latest
         needs: ['cypress-run', 'unit-tests', 'lint']
         steps:
-            - uses: actions/download-artifact@v2
+            - uses: actions/checkout@v2
+            - uses: actions/download-artifact@v3
               with:
                   name: built-app
+                  path: build
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@v4.3.0
               with:

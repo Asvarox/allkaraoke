@@ -97,5 +97,6 @@
         "serve": "^13.0.2",
         "ts-node": "^10.4.0"
     },
-    "homepage": "."
+    "homepage": ".",
+    "packageManager": "yarn@3.2.1"
 }
