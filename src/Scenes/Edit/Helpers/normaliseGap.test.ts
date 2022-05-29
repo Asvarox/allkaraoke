@@ -70,7 +70,7 @@ describe('normaliseGap', () => {
         expect(normaliseGap(song)).toEqual(expectedSong);
     });
 
-    it('should normalise based on second track if its starting before the first', () => {
+    it('should normalise based on first track if its starting before the second', () => {
         const song = generateSong(
             [
                 [{ type: 'notes', start: 0, notes: [generateNote(10), generateNote(30)] }],

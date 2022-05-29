@@ -43,6 +43,7 @@
         "start:production": "serve --listen ${PORT:-3000}",
         "build": "craco build",
         "test": "craco test",
+        "lint": "craco lint",
         "eject": "react-scripts eject",
         "generate-index": "yarn --silent ts-node scripts/generateIndex.ts > public/songs/index.json",
         "predeploy": "yarn generate-index && yarn build",
@@ -50,12 +51,6 @@
         "prepare": "husky install",
         "e2e": "cypress run --browser chrome",
         "e2e:open": "cypress open"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
     },
     "browserslist": {
         "production": [

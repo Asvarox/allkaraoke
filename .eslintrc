@@ -1,10 +1,18 @@
 {
     "plugins": ["prettier", "cypress", "no-only-tests"],
-    "extends": ["react-app", "prettier"],
+    "extends": ["react-app", "react-app/jest", "prettier"],
     "env": {
         "cypress/globals": true
     },
     "rules": {
         "no-only-tests/no-only-tests": "error"
-    }
+    },
+    "overrides": [
+        {
+            "files": "cypress/**/*.spec.ts",
+            "rules": {
+                "testing-library/await-async-utils": "off"
+            }
+        }
+    ]
 }
