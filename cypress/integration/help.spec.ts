@@ -1,5 +1,5 @@
 describe('Help', () => {
-    it('Toggles and persist help correctly ', () => {
+    it('Toggles and persist help correctly', () => {
         cy.visit('http://localhost:3000');
 
         cy.get('[data-test="help-container"]').should('exist');

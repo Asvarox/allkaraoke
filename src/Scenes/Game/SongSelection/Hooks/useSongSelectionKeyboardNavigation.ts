@@ -56,6 +56,10 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
             if (plane === 'y') {
                 newY = y + delta;
             } else {
+                if (songIndexMatrix[y] === undefined) {
+                    console.log('ERROR', songIndexMatrix, x, y, delta);
+                    debugger;
+                }
                 const maxXInRow = songIndexMatrix[y].length - 1;
                 newX = Math.min(x, maxXInRow) + delta;
                 if (newX < 0) {

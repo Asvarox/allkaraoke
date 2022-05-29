@@ -1,4 +1,5 @@
 import { focused } from 'Elements/cssMixins';
+import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
@@ -48,7 +49,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setShowFilters(true);
     };
 
-    useHotkeys('a,b,c,d,e,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z', onSearchSong, { enabled: !showFilters });
+    useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !showFilters });
 
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();

@@ -1,3 +1,4 @@
+import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import usePrevious from 'hooks/usePrevious';
 import { useEffect, useRef } from 'react';
@@ -15,13 +16,20 @@ interface Props {
     onBack: () => void;
 }
 export default function Filters({ filtersData, onSongFiltered, onBack, filters, showFilters }: Props) {
-    const { register, focusElement } = useKeyboardNav({
-        onBackspace: onBack,
+    const searchInput = useRef<HTMLInputElement | null>(null);
+
+    const onLeave = () => {
+        onBack();
+        searchInput.current?.blur();
+    };
+
+    const { register, focusElement, focused } = useKeyboardNav({
+        onBackspace: onLeave,
         direction: 'horizontal',
         enabled: showFilters,
         additionalHelp: { letterF: 'Return to Song List' },
     });
-    useHotkeys('down', onBack, { enabled: showFilters });
+    useHotkeys('down', onLeave, { enabled: showFilters, enableOnTags: ['INPUT'] });
 
     const selectedLanguage = filtersData.language.current;
     const cycleLanguage = () => {
@@ -42,13 +50,18 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
         });
     };
 
-    const searchInput = useRef<HTMLInputElement | null>(null);
+    const focusSearch = () => {
+        searchInput.current?.focus();
+        focusElement('search');
+    };
+
+    useHotkeys(REGULAR_ALPHA_CHARS, focusSearch, { enabled: focused === 'search' });
+
     const previousShowFilters = usePrevious(showFilters);
     useEffect(() => {
         // Hacky and buggy way to detect if someone started filtering by inputting a letter
         if (!previousShowFilters && showFilters && filters.search?.length === 1) {
-            searchInput.current?.focus();
-            focusElement('search');
+            focusSearch();
         }
     }, [previousShowFilters, showFilters, focusElement, filters.search, searchInput.current]);
     const setSearch = (value: string) => {

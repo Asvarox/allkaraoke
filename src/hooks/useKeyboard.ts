@@ -3,6 +3,9 @@ import { useHotkeys } from 'react-hotkeys-hook';
 
 type Callback = (e: KeyboardEvent) => void;
 
+// All besides F and H characters
+export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
+
 interface Params {
     onUpArrow?: Callback;
     onDownArrow?: Callback;

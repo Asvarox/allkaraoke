@@ -111,6 +111,7 @@ export default function useKeyboardNav(options: Options = {}) {
 
     return {
         focusElement,
+        focused: currentlySelected,
         register,
     };
 }
