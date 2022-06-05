@@ -4,6 +4,7 @@ import isNotesSection from '../../Helpers/isNotesSection';
 export const pitchPadding = 6;
 
 export const NOTE_HEIGHT = 30;
+export const BIG_NOTE_HEIGHT = NOTE_HEIGHT + 6;
 
 export default function calculateData({
     canvas,

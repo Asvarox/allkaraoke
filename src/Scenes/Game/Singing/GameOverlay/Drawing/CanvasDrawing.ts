@@ -7,7 +7,7 @@ import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../../Helpers/isNotesSection';
-import calculateData, { DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
+import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import debugPitches from './debugPitches';
 import drawNote from './Elements/note';
 import drawPlayerFrequencyTrace from './Elements/playerFrequencyTrace';
@@ -67,7 +67,7 @@ export default class CanvasDrawing {
         drawingData.currentSection.notes.forEach((note) => {
             const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true, displacements[note.start]);
 
-            drawNote(ctx, x, y, w, h, note);
+            drawNote(ctx, x, y, w, note);
         });
     };
 
@@ -89,7 +89,7 @@ export default class CanvasDrawing {
                 displacements[playerNote.note.start],
             );
             if (distance > 0 || w > h / 2.5) {
-                drawPlayerNote(ctx, x, y, w, h, drawingData.playerNumber, distance === 0, playerNote);
+                drawPlayerNote(ctx, x, y, w, drawingData.playerNumber, distance === 0, playerNote);
 
                 if (playerNote.vibrato) {
                     ParticleManager.add(new VibratoParticle(x, y, w, h, drawingData.currentTime));
@@ -153,7 +153,7 @@ export default class CanvasDrawing {
         section.notes.forEach((note) => {
             const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
 
-            ParticleManager.add(new FadeoutNote(x, y, w, h, note));
+            ParticleManager.add(new FadeoutNote(x, y, w, note));
         });
     };
 
@@ -246,10 +246,10 @@ export default class CanvasDrawing {
         const pitchY = pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding);
 
         return {
-            x: paddingHorizontal + beatLength * (start - sectionStart) + dx,
-            y: regionPaddingTop + 10 + pitchY + dy - (big ? 3 : 0),
-            w: beatLength * length,
-            h: NOTE_HEIGHT + (big ? 6 : 0),
+            x: Math.floor(paddingHorizontal + beatLength * (start - sectionStart) + dx),
+            y: Math.floor(regionPaddingTop + 10 + pitchY + dy - (big ? 3 : 0)),
+            w: Math.floor(beatLength * length),
+            h: big ? BIG_NOTE_HEIGHT : NOTE_HEIGHT,
         };
     };
 

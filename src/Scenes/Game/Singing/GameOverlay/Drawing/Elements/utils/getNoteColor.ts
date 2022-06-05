@@ -1,21 +1,31 @@
 import { PlayerNote } from 'interfaces';
 import styles from '../../styles';
 
-export default function getNoteColor(
+export function getColor(
     ctx: CanvasRenderingContext2D,
     playerNumber: number,
+    isStar: boolean,
     isHit: boolean,
-    playerNote: PlayerNote,
+    isPerfect: boolean,
 ) {
-    if (playerNote.isPerfect && playerNote.note.type === 'star') {
+    if (isPerfect && isStar) {
         return styles.colors.players[playerNumber].starPerfect;
-    } else if (playerNote.isPerfect) {
+    } else if (isPerfect) {
         return styles.colors.players[playerNumber].perfect;
-    } else if (playerNote.note.type === 'star' && isHit) {
+    } else if (isStar && isHit) {
         return styles.colors.players[playerNumber].star;
     } else if (isHit) {
         return styles.colors.players[playerNumber].hit;
     } else {
         return styles.colors.players[playerNumber].miss;
     }
+}
+
+export default function getNoteColor(
+    ctx: CanvasRenderingContext2D,
+    playerNumber: number,
+    isHit: boolean,
+    playerNote: PlayerNote,
+) {
+    return getColor(ctx, playerNumber, playerNote.note.type === 'star', isHit, playerNote.isPerfect);
 }

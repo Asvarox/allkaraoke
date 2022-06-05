@@ -1,11 +1,14 @@
+import particleImage from 'assets/particle-ray.png';
+import loadImage from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/loadImage';
 import Particle from '../interfaces';
-import particleImage from './particle.png';
 
+let image: HTMLImageElement | null = null;
 let imageLoaded = false;
-const image = new Image();
-image.onload = () => (imageLoaded = true);
 
-image.src = particleImage;
+loadImage(particleImage).then((img) => {
+    image = img;
+    imageLoaded = true;
+});
 
 const initialTtl = (50 / 60) * 1000;
 const velocity = 0.05;
@@ -43,7 +46,7 @@ export default class RayParticle implements Particle {
             const mainRayHeight = this.maxWidth * easing;
 
             ctx.globalAlpha = easing * 0.35;
-            ctx.drawImage(image, this.x - mainRayWidth / 2, this.y - mainRayHeight / 2, mainRayWidth, mainRayHeight);
+            ctx.drawImage(image!, this.x - mainRayWidth / 2, this.y - mainRayHeight / 2, mainRayWidth, mainRayHeight);
 
             easing = easeOutQuart(percentage);
 
@@ -56,7 +59,7 @@ export default class RayParticle implements Particle {
             const elapsedTicks = initialTtl - this.ttl;
 
             ctx.globalAlpha = easing * 0.2;
-            ctx.drawImage(image, x + elapsedTicks * this.velocityX, y + elapsedTicks * this.velocityY, width, height);
+            ctx.drawImage(image!, x + elapsedTicks * this.velocityX, y + elapsedTicks * this.velocityY, width, height);
             ctx.globalAlpha = 1;
         }
 

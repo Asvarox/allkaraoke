@@ -28,3 +28,12 @@ for (const C of [Array, String, TypedArray]) {
     // @ts-ignore
     Object.defineProperty(C.prototype, 'at', { value: at, writable: true, enumerable: false, configurable: true });
 }
+
+jest.mock('./Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/utils/createCanvas', () => ({
+    __esModule: true,
+    default: (w: number, h: number) => {
+        const canvas = require('canvas');
+
+        return canvas.createCanvas(w, h);
+    },
+}));

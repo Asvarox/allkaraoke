@@ -1,31 +1,14 @@
 import { Note } from 'interfaces';
-import applyColor from '../applyColor';
-import styles from '../styles';
-import roundRect from './roundRect';
+import { capitalize } from 'lodash';
+import { SpriteNames } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/spriteMap';
+import drawSpriteWithStartAndEnd from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/spriteWithStartAndEnd';
 
-export default function drawNote(
-    ctx: CanvasRenderingContext2D,
-    x: number,
-    y: number,
-    width: number,
-    height: number,
-    note: Note,
-) {
-    if (note.type === 'star') {
-        applyColor(ctx, styles.colors.lines.star);
-    } else if (note.type === 'freestyle' || note.type === 'rap') {
-        applyColor(ctx, styles.colors.lines.freestyle);
-    } else {
-        applyColor(ctx, styles.colors.lines.normal);
-    }
+const getSpriteName = (noteType: Note['type']) => {
+    return `note${capitalize(noteType)}` as SpriteNames;
+};
 
-    ctx.shadowBlur = 10;
-    ctx.shadowColor = 'rgb(31,31,31)';
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
-    roundRect(ctx!, x, y, width, height, 100, true, true, 0.075);
+export default function drawNote(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, note: Note) {
+    const spriteName = getSpriteName(note.type);
 
-    ctx.shadowBlur = 0;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
+    drawSpriteWithStartAndEnd(ctx, spriteName, x, y, width);
 }
