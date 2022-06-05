@@ -3,6 +3,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import usePrevious from 'hooks/usePrevious';
 import { useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { SongListEntryDetails } from 'Scenes/Game/SongSelection/SongCard';
 import styled from 'styled-components';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
 import { Input } from './Input';
@@ -112,6 +113,9 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
                     data-test="filters-duet"
                 />
             </FilterItem>
+            <SongCount>
+                {filtersData.status.visible}/{filtersData.status.allSongs}
+            </SongCount>
         </Container>
     );
 }
@@ -129,4 +133,12 @@ const Container = styled.div`
 
 const FilterItem = styled.div<{ large?: boolean }>`
     flex: ${(props) => (props.large ? 1.5 : 1)};
+`;
+
+const SongCount = styled(SongListEntryDetails)`
+    height: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.25em;
 `;
