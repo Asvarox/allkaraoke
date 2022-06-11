@@ -6884,6 +6884,49 @@
     "search": "thecranberrieszombie"
   },
   {
+    "title": "Boys Don't Cry",
+    "artist": "The Cure",
+    "bpm": 672,
+    "bar": 4,
+    "gap": 22705.535714285714,
+    "video": "9GkVhgIeGJQ",
+    "year": "1979",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 1,
+    "author": "Kodaman",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Boys%20Don't%20Cry",
+    "file": "The Cure-Boys Don't Cry.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "thecureboysdontcry"
+  },
+  {
+    "title": "Friday I'm in Love",
+    "artist": "The Cure",
+    "bpm": 272,
+    "bar": 4,
+    "gap": 32495.352941176472,
+    "video": "mGgMZpGYiy8",
+    "year": "1992",
+    "edition": "SingStar '90s",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Friday%20I'm%20in%20Love",
+    "file": "The Cure-Friday I'm in Love.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "thecurefridayiminlove"
+  },
+  {
     "title": "Riders on the storm",
     "artist": "The Doors",
     "bpm": 390.04,
