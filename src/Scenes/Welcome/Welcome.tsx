@@ -20,7 +20,9 @@ function Welcome() {
                         </MenuButton>
                     </Link>
                     <Link href="/select-input">
-                        <MenuButton {...register('select input', () => navigate('/select-input'))}>
+                        <MenuButton
+                            data-test="select-input"
+                            {...register('select input', () => navigate('/select-input'))}>
                             Setup Microphones
                         </MenuButton>
                     </Link>
@@ -37,10 +39,12 @@ function Welcome() {
                         </Link>
                     )}
                     <Link href="/edit">
-                        <MenuButton {...register('edit songs', () => navigate('/edit'))}>Edit songs</MenuButton>
+                        <MenuButton data-test="edit-songs" {...register('edit songs', () => navigate('/edit'))}>
+                            Edit songs
+                        </MenuButton>
                     </Link>
                     <Link href="/convert">
-                        <MenuButton {...register('convert', () => navigate('/convert'))}>
+                        <MenuButton data-test="convert-song" {...register('convert', () => navigate('/convert'))}>
                             Convert UltraStar .txt
                         </MenuButton>
                     </Link>

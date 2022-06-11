@@ -45,7 +45,7 @@
         "test": "craco test",
         "lint": "craco lint",
         "eject": "react-scripts eject",
-        "generate-index": "yarn --silent ts-node scripts/generateIndex.ts > public/songs/index.json",
+        "generate-index": "yarn ts-node scripts/generateIndex.ts > public/songs/index.json",
         "predeploy": "yarn generate-index && yarn build",
         "deploy": "gh-pages -d build",
         "prepare": "husky install",

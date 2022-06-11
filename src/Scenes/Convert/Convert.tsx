@@ -61,6 +61,7 @@ export default function Convert(props: Props) {
                     <Input type="text" value={sourceUrl} onChange={onSourceUrlEdit} placeholder="Source URL" />
                     <InputGroup>
                         <InputGroupInput
+                            data-test="input-video-url"
                             type="text"
                             value={videoLink}
                             onChange={(e) => setVideoLink(e.target.value)}
@@ -80,10 +81,15 @@ export default function Convert(props: Props) {
                         onChange={(e) => setAuthorUrl(e.target.value)}
                         placeholder="Author URL"
                     />
-                    <TxtInput onChange={(e) => setTxtInput(fixDiacritics(e.target.value))} value={txtInput} />
+                    <TxtInput
+                        onChange={(e) => setTxtInput(fixDiacritics(e.target.value))}
+                        value={txtInput}
+                        data-test="input-txt"
+                    />
                 </div>
                 <div style={{ flex: 1 }}>
                     <JsonOutput
+                        data-test="output"
                         disabled
                         value={jsonPreview ? JSON.stringify(jsonPreview, undefined, 2) : error.current}
                     />

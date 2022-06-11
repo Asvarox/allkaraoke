@@ -52,6 +52,13 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
     };
 
     const focusSearch = () => {
+        if ((filters.search?.length ?? 0) > 1) {
+            onSongFiltered({
+                ...filters,
+                search: '',
+            });
+        }
+
         searchInput.current?.focus();
         focusElement('search');
     };

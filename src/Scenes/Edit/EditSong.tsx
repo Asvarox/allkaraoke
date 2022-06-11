@@ -102,7 +102,7 @@ export default function EditSong({ song, onUpdate }: Props) {
     return (
         <Container>
             <Preview>
-                <PlayerContainer>
+                <PlayerContainer data-test="player-container">
                     <Player
                         key={playerKey}
                         song={newSong}
