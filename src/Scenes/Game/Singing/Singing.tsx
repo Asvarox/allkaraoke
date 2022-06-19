@@ -1,8 +1,8 @@
+import { VideoState } from 'Elements/VideoPlayer';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
-import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';
@@ -39,7 +39,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
     useFullscreen();
     const { width, height } = useViewportSize();
     const [isEnded, setIsEnded] = useState(false);
-    const [playerState, setPlayerState] = useState(YouTube.PlayerState.UNSTARTED);
+    const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
 
     const playerChanges = useMemo(() => {
         if (!song.data) return [];
@@ -56,7 +56,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
         return (
             <Container>
                 <BackgroundContainer>
-                    <TransitionWrapper show={playerState === YouTube.PlayerState.UNSTARTED}>
+                    <TransitionWrapper show={playerState === VideoState.UNSTARTED}>
                         <Overlay video={video} width={width} height={height} />
                     </TransitionWrapper>
                 </BackgroundContainer>

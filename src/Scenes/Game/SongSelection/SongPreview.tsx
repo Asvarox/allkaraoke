@@ -1,11 +1,9 @@
 import { focused } from 'Elements/cssMixins';
+import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
-import { ComponentProps, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import YouTube from 'react-youtube';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import useDebounce from '../../../hooks/useDebounce';
-import usePlayerVolume from '../../../hooks/usePlayerVolume';
-import useUnstuckYouTubePlayer from '../../../hooks/useUnstuckYouTubePlayer';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 import { SongCard, SongCardContainer, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
@@ -23,18 +21,6 @@ interface Props {
     focusEffect: boolean;
 }
 
-const playerVars: ComponentProps<typeof YouTube>['opts'] = {
-    autoplay: 0,
-    start: 0,
-    end: 0,
-    showinfo: 0,
-    rel: 0,
-    fs: 0,
-    controls: 0,
-    disablekb: 1,
-    modestbranding: 1,
-};
-
 const PREVIEW_LENGTH = 30;
 
 export default function SongPreviewComponent({
@@ -49,8 +35,7 @@ export default function SongPreviewComponent({
     focusEffect,
 }: Props) {
     const [showVideo, setShowVideo] = useState(false);
-    const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
-    const player = useRef<YouTube | null>(null);
+    const player = useRef<VideoPlayerRef | null>(null);
     const { width: windowWidth } = useViewportSize();
 
     const active = keyboardControl;
@@ -66,11 +51,8 @@ export default function SongPreviewComponent({
         350,
     );
 
-    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
-
-    usePlayerVolume(player, volume);
     useEffect(() => {
-        player.current?.getInternalPlayer().loadVideoById({
+        player.current?.loadVideoById({
             videoId: videoId,
             startSeconds: previewStart,
             endSeconds: previewEnd,
@@ -81,7 +63,7 @@ export default function SongPreviewComponent({
     const finalHeight = active ? (windowWidth! / 20) * 9 : height;
 
     useEffect(() => {
-        player.current?.getInternalPlayer().setSize(finalWidth, (finalWidth / 16) * 9);
+        player.current?.setSize(finalWidth, (finalWidth / 16) * 9);
     }, [finalWidth, keyboardControl]);
 
     return (
@@ -134,19 +116,18 @@ export default function SongPreviewComponent({
                     height={finalHeight}
                     width={finalWidth}
                     video={songPreview.video}>
-                    <YouTube
-                        title=" "
-                        key={playerKey}
+                    <VideoPlayer
+                        width={0}
+                        height={0}
+                        disablekb
                         ref={player}
-                        videoId={''}
-                        opts={{ playerVars }}
-                        onStateChange={({ data }) => {
-                            setCurrentStatus(data);
-                            if (data === YouTube.PlayerState.ENDED) {
-                                // setShowVideo(false);
-                                player.current?.getInternalPlayer().seekTo(start);
-                                player.current?.getInternalPlayer().playVideo();
-                            } else if (data === YouTube.PlayerState.PLAYING) {
+                        video={''}
+                        volume={volume}
+                        onStateChange={(state) => {
+                            if (state === VideoState.ENDED) {
+                                player.current?.seekTo(start);
+                                player.current?.playVideo();
+                            } else if (state === VideoState.PLAYING) {
                                 setShowVideo(true);
                             }
                         }}

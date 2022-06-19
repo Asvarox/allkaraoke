@@ -1,9 +1,8 @@
 import { SingSetup, Song } from 'interfaces';
 import { ForwardedRef, forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef, useState } from 'react';
-import YouTube from 'react-youtube';
+
+import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import styled from 'styled-components';
-import usePlayerVolume from '../../../hooks/usePlayerVolume';
-import useUnstuckYouTubePlayer from '../../../hooks/useUnstuckYouTubePlayer';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
@@ -17,7 +16,7 @@ interface Props {
     showControls?: boolean;
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd?: () => void;
-    onStatusChange?: (status: number) => void;
+    onStatusChange?: (status: VideoState) => void;
     tracksForPlayers: [number, number];
     playerChanges?: number[][];
 
@@ -29,17 +28,14 @@ export interface PlayerRef {
     setPlaybackSpeed: (speed: number) => void;
 }
 
-function usePlayerSetDuration(playerRef: MutableRefObject<YouTube | null>, currentStatus: number) {
+function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>, currentStatus: VideoState) {
     const [duration, setDuration] = useState(0);
     useEffect(() => {
-        if (playerRef.current && currentStatus === YouTube.PlayerState.PLAYING && duration === 0) {
-            playerRef.current
-                .getInternalPlayer()
-                .getDuration()
-                .then((dur: number) => {
-                    setDuration(dur);
-                    GameState.setDuration(dur);
-                });
+        if (playerRef.current && currentStatus === VideoState.PLAYING && duration === 0) {
+            playerRef.current.getDuration().then((dur: number) => {
+                setDuration(dur);
+                GameState.setDuration(dur);
+            });
         }
     }, [duration, playerRef, currentStatus]);
 
@@ -63,9 +59,9 @@ function Player(
     }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
-    const player = useRef<YouTube | null>(null);
+    const player = useRef<VideoPlayerRef | null>(null);
     const [currentTime, setCurrentTime] = useState(0);
-    const [currentStatus, setCurrentStatus] = useState(YouTube.PlayerState.UNSTARTED);
+    const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
 
     useEffect(() => {
         GameState.setSong(song);
@@ -76,9 +72,9 @@ function Player(
         if (!player.current) {
             return;
         }
-        if (currentStatus === YouTube.PlayerState.PLAYING) {
+        if (currentStatus === VideoState.PLAYING) {
             const interval = setInterval(async () => {
-                const time = (await player.current!.getInternalPlayer().getCurrentTime()) * 1000;
+                const time = (await player.current!.getCurrentTime()) * 1000;
                 setCurrentTime(time);
                 onTimeUpdate?.(time);
                 GameState.setCurrentTime(time);
@@ -90,28 +86,18 @@ function Player(
     }, [player, onTimeUpdate, currentStatus]);
 
     const duration = usePlayerSetDuration(player, currentStatus);
-    const playerKey = useUnstuckYouTubePlayer(player, currentStatus);
-    usePlayerVolume(player, song.volume);
-
-    useEffect(() => {
-        if (!player.current) {
-            return;
-        }
-
-        player.current.getInternalPlayer().setSize(width, height);
-    }, [player, width, height, song, playerKey]);
 
     useImperativeHandle(ref, () => ({
-        seekTo: (time: number) => player.current!.getInternalPlayer().seekTo(time, true),
-        setPlaybackSpeed: (speed: number) => player.current!.getInternalPlayer().setPlaybackRate(speed),
+        seekTo: (time: number) => player.current!.seekTo(time),
+        setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
     }));
 
     return (
         <Container>
-            {currentStatus === YouTube.PlayerState.PAUSED && onSongEnd !== undefined && (
-                <PauseMenu onExit={onSongEnd} onResume={() => player.current?.getInternalPlayer()?.playVideo()} />
+            {currentStatus === VideoState.PAUSED && onSongEnd !== undefined && (
+                <PauseMenu onExit={onSongEnd} onResume={() => player.current?.playVideo()} />
             )}
-            {currentStatus !== YouTube.PlayerState.UNSTARTED && (
+            {currentStatus !== VideoState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
                         effectsEnabled={effectsEnabled}
@@ -128,29 +114,18 @@ function Player(
                 </Overlay>
             )}
             <PlayerContainer>
-                <YouTube
-                    title=" "
+                <VideoPlayer
                     ref={player}
-                    videoId={song.video}
-                    key={playerKey}
-                    opts={{
-                        width: '0',
-                        height: '0',
-                        playerVars: {
-                            autoplay: autoplay ? 1 : 0,
-                            showinfo: 0,
-                            disablekb: process.env.NODE_ENV === 'development' ? 0 : 1,
-                            rel: 0,
-                            fs: 0,
-                            controls: showControls ? 1 : 0,
-                            cc_load_policy: 3,
-                            iv_load_policy: 3,
-                            start: (song.videoGap ?? 0) + Math.floor(singSetup.skipIntro ? song.gap / 1000 : 0),
-                        },
-                    }}
-                    onStateChange={(e) => {
-                        setCurrentStatus(e.data);
-                        onStatusChange?.(e.data);
+                    video={song.video}
+                    width={width}
+                    height={height}
+                    controls={showControls}
+                    autoplay={autoplay}
+                    disablekb={process.env.NODE_ENV !== 'development'}
+                    startAt={(song.videoGap ?? 0) + Math.floor(singSetup.skipIntro ? song.gap / 1000 : 0)}
+                    onStateChange={(state) => {
+                        setCurrentStatus(state);
+                        onStatusChange?.(state);
                     }}
                 />
             </PlayerContainer>

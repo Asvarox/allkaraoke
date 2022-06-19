@@ -1,6 +1,6 @@
+import { VideoState } from 'Elements/VideoPlayer';
 import { Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
-import YouTube from 'react-youtube';
 import styled from 'styled-components';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
@@ -11,7 +11,7 @@ import CanvasDrawing from './Drawing';
 interface Props {
     song: Song;
     currentTime: number;
-    currentStatus: number;
+    currentStatus: VideoState;
     width: number;
     height: number;
     onSongEnd?: () => void;
@@ -60,7 +60,7 @@ function GameOverlay({
     }, [currentTime]);
 
     useEffect(() => {
-        if (currentStatus === YouTube.PlayerState.ENDED && onSongEnd) {
+        if (currentStatus === VideoState.ENDED && onSongEnd) {
             onSongEnd();
         }
     }, [currentStatus, onSongEnd]);
