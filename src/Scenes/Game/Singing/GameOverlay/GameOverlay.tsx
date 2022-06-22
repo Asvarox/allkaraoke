@@ -54,12 +54,6 @@ function GameOverlay({
     }, [canvas]);
 
     useEffect(() => {
-        if (!drawer.current) return;
-
-        drawer.current.drawFrame();
-    }, [currentTime]);
-
-    useEffect(() => {
         if (currentStatus === VideoState.ENDED && onSongEnd) {
             onSongEnd();
         }

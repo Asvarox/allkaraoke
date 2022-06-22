@@ -1,3 +1,4 @@
+import { PropsWithChildren } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 
@@ -6,7 +7,7 @@ interface Props {
     children: React.ReactNode;
 }
 
-export default function TransitionWrapper({ show, children }: Props) {
+export default function TransitionWrapper({ show, children }: PropsWithChildren<Props>) {
     return (
         <CSSTransition<HTMLDivElement> in={show} timeout={1000} classNames="fade" unmountOnExit>
             {() => <Box>{children}</Box>}

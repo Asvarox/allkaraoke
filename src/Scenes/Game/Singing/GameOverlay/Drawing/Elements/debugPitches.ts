@@ -1,6 +1,6 @@
-import { calcDistance } from '../../GameState/Helpers/calcDistance';
-import isNotesSection from '../../Helpers/isNotesSection';
-import calculateData, { DrawingData, pitchPadding } from './calculateData';
+import { calcDistance } from '../../../GameState/Helpers/calcDistance';
+import isNotesSection from '../../../Helpers/isNotesSection';
+import calculateData, { DrawingData, pitchPadding } from '../calculateData';
 
 export default function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
     const { currentSection, paddingHorizontal, timeSectionGap, maxTime, pitchStepHeight } = calculateData(data);

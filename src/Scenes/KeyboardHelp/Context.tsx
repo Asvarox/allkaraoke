@@ -1,5 +1,5 @@
 import { omit } from 'lodash';
-import { createContext, FunctionComponent, useState } from 'react';
+import { createContext, FunctionComponent, PropsWithChildren, useState } from 'react';
 import KeyboardHelpView from './HelpView';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'letterF';
@@ -13,7 +13,7 @@ export const KeyboardHelpContext = createContext({
 
 type KeyboardsList = Record<string, HelpEntry>;
 
-export const KeyboardHelpProvider: FunctionComponent = ({ children }) => {
+export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
     const [keyboards, setKeyboards] = useState<KeyboardsList>({});
 
     const setKeyboard = (name: string, helpEntry: HelpEntry) => {

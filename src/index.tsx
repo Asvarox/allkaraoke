@@ -1,6 +1,5 @@
 import * as Sentry from '@sentry/react';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import App from './App';
@@ -19,12 +18,14 @@ if (process.env.REACT_APP_SENTRY_DSN_URL) {
 
 const client = new QueryClient();
 
-ReactDOM.render(
-    <React.StrictMode>
-        <QueryClientProvider client={client}>
-            <App />
-            {process.env.NODE_ENV === 'development' && <ReactQueryDevtools initialIsOpen={false} />}
-        </QueryClientProvider>
-    </React.StrictMode>,
-    document.getElementById('root'),
+const container = document.getElementById('root');
+const root = createRoot(container!);
+
+root.render(
+    // <React.StrictMode>
+    <QueryClientProvider client={client}>
+        <App />
+        {process.env.NODE_ENV === 'development' && <ReactQueryDevtools initialIsOpen={false} />}
+    </QueryClientProvider>,
+    // </React.StrictMode>
 );

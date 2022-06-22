@@ -8,7 +8,7 @@ import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from '../../Helpers/isNotesSection';
 import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
-import debugPitches from './debugPitches';
+import debugPitches from './Elements/debugPitches';
 import drawNote from './Elements/note';
 import drawPlayerFrequencyTrace from './Elements/playerFrequencyTrace';
 import drawPlayerNote from './Elements/playerNote';
@@ -23,9 +23,14 @@ function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
 }
 
 export default class CanvasDrawing {
+    private loop = false;
+
     public constructor(private canvas: HTMLCanvasElement) {}
     public start = () => {
         GameStateEvents.sectionChange.subscribe(this.onSectionEnd);
+        this.loop = true;
+
+        this.drawFrame();
     };
 
     public drawFrame = () => {
@@ -37,9 +42,12 @@ export default class CanvasDrawing {
         for (let i = 0; i < GameState.getPlayerCount(); i++) this.drawPlayer(i, ctx);
 
         ParticleManager.tick(ctx, this.canvas);
+
+        if (this.loop) window.requestAnimationFrame(this.drawFrame);
     };
 
     public end = () => {
+        this.loop = false;
         GameStateEvents.sectionChange.unsubscribe(this.onSectionEnd);
     };
 
