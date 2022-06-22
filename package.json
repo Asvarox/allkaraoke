@@ -90,6 +90,6 @@
         "serve": "^13.0.2",
         "ts-node": "^10.8.1"
     },
-    "homepage": ".",
+    "homepage": "./",
     "packageManager": "yarn@3.2.1"
 }
