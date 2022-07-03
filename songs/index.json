@@ -7298,6 +7298,68 @@
     "search": "thewhowontgetfooledagain"
   },
   {
+    "title": "GoldenEye",
+    "artist": "Tina Turner",
+    "bpm": 204.25,
+    "bar": 4,
+    "gap": 23461.8482252142,
+    "video": "4hGQ97tCTOs",
+    "language": "English",
+    "videoGap": 0,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2599",
+    "file": "Tina Turner-GoldenEye.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "tinaturnergoldeneye"
+  },
+  {
+    "title": "The Best",
+    "artist": "Tina Turner",
+    "bpm": 207.4,
+    "bar": 4,
+    "gap": 7987.4638379942135,
+    "video": "GC5E8ie2pdM",
+    "edition": "None",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "author": "pauldiddy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5705",
+    "file": "Tina Turner-The Best.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "tinaturnerthebest"
+  },
+  {
+    "title": "What’s Love Got To Do With It",
+    "artist": "Tina Turner",
+    "bpm": 350,
+    "bar": 4,
+    "gap": 19444.285714285714,
+    "video": "oGpFcHTxjZs",
+    "year": "1985",
+    "edition": "SingStar Legends",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "author": "NikNak",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8110",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5510",
+    "file": "Tina Turner-What’s Love Got To Do With It.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "tinaturnerwhatslovegottodowithit"
+  },
+  {
     "title": "Anarchia",
     "artist": "Tomasz Karolak",
     "bpm": 159.99,
