@@ -9,7 +9,7 @@ const list: SongPreview[] = [];
 const generateSearchString = (song: Pick<Song, 'title' | 'artist'>) => clearString(`${song.artist}${song.title}`);
 
 readdirSync(SONGS_FOLDER).forEach((file) => {
-    if (file === 'index.json' || file === 'dummy.json') return;
+    if (file === 'index.json' || file === 'dummy.json' || !file.endsWith('.json')) return;
 
     const { tracks, ...songData }: Song = JSON.parse(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
