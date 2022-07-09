@@ -4347,6 +4347,28 @@
     "search": "metrostationshakeit"
   },
   {
+    "title": "Początek",
+    "artist": "Męskie Granie Orkiestra",
+    "bpm": 330,
+    "bar": 4,
+    "gap": 40095,
+    "video": "QRxH-II0OsA",
+    "year": "2018",
+    "edition": "",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 32,
+    "author": "Asvarox",
+    "authorUrl": "https://github.com/Asvarox/olkaraoke",
+    "sourceUrl": "",
+    "file": "Męskie Granie Orkiestra-Początek.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "meskiegranieorkiestrapoczatek"
+  },
+  {
     "title": "Love Never Felt So Good",
     "artist": "Michael Jackson feat. Justin Timberlake",
     "bpm": 235,
