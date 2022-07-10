@@ -24,9 +24,7 @@ export default defineConfig({
     ],
     base: './',
     build: {
-        // rollupOptions: {
-        //     plugins: [analyze()],
-        // },
         outDir: 'build',
+        sourcemap: true,
     },
 });

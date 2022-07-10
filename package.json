@@ -92,5 +92,10 @@
         "vite-tsconfig-paths": "^3.5.0"
     },
     "homepage": "./",
-    "packageManager": "yarn@3.2.1"
+    "packageManager": "yarn@3.2.1",
+    "jest": {
+        "transformIgnorePatterns": [
+            "<rootDir>/node_modules/(?!lodash-es)"
+        ]
+    }
 }
