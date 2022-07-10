@@ -1,5 +1,5 @@
 import { Note } from 'interfaces';
-import { capitalize } from 'lodash';
+import { capitalize } from 'lodash-es';
 import { SpriteNames } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/spriteMap';
 import drawSpriteWithStartAndEnd from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/spriteWithStartAndEnd';
 

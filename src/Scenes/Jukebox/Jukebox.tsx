@@ -3,7 +3,7 @@ import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
-import { shuffle } from 'lodash';
+import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import styled from 'styled-components';

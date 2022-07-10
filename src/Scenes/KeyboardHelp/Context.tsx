@@ -1,4 +1,4 @@
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 import { createContext, FunctionComponent, PropsWithChildren, useState } from 'react';
 import KeyboardHelpView from './HelpView';
 

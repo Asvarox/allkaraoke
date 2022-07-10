@@ -1,5 +1,5 @@
 import { Note, Section, Song } from 'interfaces';
-import { invert } from 'lodash';
+import { invert } from 'lodash-es';
 import { generateNote } from 'testUtilts';
 import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
 import convertTxtToSong, { typesMap } from './convertTxtToSong';

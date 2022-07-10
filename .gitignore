@@ -114,3 +114,5 @@ src/**/__diff_output__/*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+stats.html

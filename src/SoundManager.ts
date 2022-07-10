@@ -1,8 +1,8 @@
 import { Howl } from 'howler';
 
-const menuNavigateSound = require('./menu_navigate.wav');
-const menuEnterSound = require('./menu_enter.wav');
-const menuBackSound = require('./menu_back.wav');
+import menuBackSound from './menu_back.wav';
+import menuEnterSound from './menu_enter.wav';
+import menuNavigateSound from './menu_navigate.wav';
 
 const menuNavigate = new Howl({
     src: menuNavigateSound,

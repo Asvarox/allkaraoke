@@ -1,5 +1,5 @@
 import { NotesSection, Section, Song } from 'interfaces';
-import { cloneDeep, range } from 'lodash';
+import { cloneDeep, range } from 'lodash-es';
 import getSongBeatLength from '../GameState/Helpers/getSongBeatLength';
 import isNotesSection from './isNotesSection';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from './notesSelectors';

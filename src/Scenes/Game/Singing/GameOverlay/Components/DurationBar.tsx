@@ -1,4 +1,4 @@
-import { uniq } from 'lodash';
+import { uniq } from 'lodash-es';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 import GameState from '../../GameState/GameState';

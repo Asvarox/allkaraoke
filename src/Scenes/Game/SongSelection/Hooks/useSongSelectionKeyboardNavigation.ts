@@ -1,6 +1,6 @@
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboard from 'hooks/useKeyboard';
-import { chunk, throttle } from 'lodash';
+import { chunk, throttle } from 'lodash-es';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';

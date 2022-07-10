@@ -1,5 +1,5 @@
 import { SongPreview } from 'interfaces';
-import { uniq } from 'lodash';
+import { uniq } from 'lodash-es';
 import { useMemo, useState } from 'react';
 import { useQuery } from 'react-query';
 import clearString from '../../../../utils/clearString';

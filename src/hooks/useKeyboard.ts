@@ -1,4 +1,4 @@
-import { invert } from 'lodash';
+import { invert } from 'lodash-es';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 type Callback = (e: KeyboardEvent) => void;

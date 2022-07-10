@@ -1,7 +1,7 @@
 import { Button } from 'Elements/Button';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 import { useState } from 'react';
 import MicCheck from 'Scenes/Game/SongSelection/MicCheck';
 import styled from 'styled-components';

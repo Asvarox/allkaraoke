@@ -8,8 +8,7 @@ import ScoreText from '../GameOverlay/Components/ScoreText';
 import styles from '../GameOverlay/Drawing/styles';
 import GameState from '../GameState/GameState';
 import { calculateDetailedScoreData, MAX_POINTS, sumDetailedScore } from '../GameState/Helpers/calculateScore';
-
-const backgroundMusic = require('./421888__b-sean__retro.mp3');
+import backgroundMusic from './421888__b-sean__retro.mp3';
 
 interface Props {
     width: number;

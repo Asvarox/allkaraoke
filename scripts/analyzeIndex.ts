@@ -1,5 +1,5 @@
 import { SongPreview } from 'interfaces';
-import { uniq } from 'lodash';
+import { uniq } from 'lodash-es';
 
 const data = {
     language: {

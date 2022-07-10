@@ -1,4 +1,4 @@
-import { add } from 'lodash';
+import { add } from 'lodash-es';
 import spriteMap, {
     smallNoteFragments,
     SpriteNames,
