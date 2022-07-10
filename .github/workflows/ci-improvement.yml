@@ -12,7 +12,7 @@ jobs:
                   node-version: '16'
                   cache: 'yarn'
             - run: yarn install
-            - run: yarn test
+            - run: yarn test:ci
             - uses: actions/upload-artifact@v3
               if: failure()
               with:
@@ -28,7 +28,7 @@ jobs:
                   node-version: '16'
                   cache: 'yarn'
             - run: yarn install
-            - run: yarn eslint .
+            - run: yarn lint
     cypress-run:
         runs-on: ubuntu-latest
         steps:
