@@ -37,3 +37,5 @@ jest.mock('./Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/utils/create
         return canvas.createCanvas(w, h);
     },
 }));
+
+jest.mock('aubiojs');
