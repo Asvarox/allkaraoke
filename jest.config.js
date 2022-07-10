@@ -10,7 +10,7 @@ module.exports = {
         '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)': '<rootDir>/config/jest/fileTransform.js',
     },
     transformIgnorePatterns: ['<rootDir>/node_modules/(?!lodash-es)'],
-    modulePaths: ['/Users/olek/karaoke-test/src'],
+    modulePaths: ['<rootDir>/karaoke-test/src'],
     moduleNameMapper: {
         '^react-native$': 'react-native-web',
         '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
