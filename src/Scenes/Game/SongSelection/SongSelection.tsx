@@ -43,8 +43,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     } = useSongSelection(preselectedSong);
 
     const onSearchSong: KeyHandler = (e) => {
+        // for some reason the setSearch from Filters component is also called so if `search: e.key,` is passed below
+        // the letter would be inputted twice. So here space is enter which is then trimmed in setSearch
+        // Possibly the keyboard event "leaks", but couldn't figure out a way to stop it.
         setFilters({
-            search: e.key,
+            search: ' ',
         });
         setShowFilters(true);
     };

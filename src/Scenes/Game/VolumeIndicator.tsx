@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import styled from 'styled-components';
 
 interface Props {
     playerNumber: number;
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 export default function VolumeIndicator({ playerNumber, children }: Props) {

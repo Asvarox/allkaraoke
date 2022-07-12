@@ -51,19 +51,32 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
         });
     };
 
-    const focusSearch = () => {
-        if ((filters.search?.length ?? 0) > 1) {
+    const focusSearch = (key?: string) => {
+        const searchLength = filters.search?.length ?? 0;
+        if (searchLength > 1) {
             onSongFiltered({
                 ...filters,
                 search: '',
             });
+        } else if (searchLength === 0 && key) {
+            onSongFiltered({
+                ...filters,
+                search: key,
+            });
         }
 
         searchInput.current?.focus();
+
         focusElement('search');
     };
 
-    useHotkeys(REGULAR_ALPHA_CHARS, focusSearch, { enabled: focused === 'search' });
+    useHotkeys(
+        REGULAR_ALPHA_CHARS,
+        (e) => {
+            focusSearch(e.key);
+        },
+        { enabled: focused === 'search' },
+    );
 
     const previousShowFilters = usePrevious(showFilters);
     useEffect(() => {
@@ -75,7 +88,7 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
     const setSearch = (value: string) => {
         onSongFiltered({
             ...filters,
-            search: value,
+            search: value.trim(),
         });
     };
 
