@@ -4963,6 +4963,28 @@
     "search": "nodoubtdontspeak"
   },
   {
+    "title": "Koń Na Białym Rycerzu",
+    "artist": "Nocny Kochanek",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 26945,
+    "video": "mxkHG08weUk",
+    "edition": "",
+    "genre": "Heavy Metal",
+    "year": "2019",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "Asvarox",
+    "authorUrl": "https://github.com/Asvarox/olkaraoke",
+    "sourceUrl": "",
+    "file": "Nocny Kochanek-Kon Na Bialym Rycerzu.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "nocnykochanekkonnabiaymrycerzu"
+  },
+  {
     "title": "Kiedy powiem sobie dość",
     "artist": "ONA",
     "bpm": 82.8,
