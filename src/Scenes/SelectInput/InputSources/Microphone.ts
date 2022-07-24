@@ -7,17 +7,11 @@ interface NameMapper {
 }
 
 const singstarWirelessMicMapper: NameMapper = {
-    test: (label, channel) => {
-        console.log(label, channel);
-        return label.toLowerCase().startsWith('wireless mic #');
-    },
+    test: (label) => label.toLowerCase().startsWith('wireless mic #'),
     map: (label, channel) => `Singstar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 const singstarWiredMicMapper: NameMapper = {
-    test: (label, channel) => {
-        console.log(label, channel);
-        return label.toLowerCase().startsWith('usbmic serial#');
-    },
+    test: (label) => label.toLowerCase().startsWith('usbmic serial#'),
     map: (label, channel) => `Singstar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 
@@ -32,6 +26,7 @@ export class MicrophoneInputSource {
     public static readonly inputName = 'Microphone';
 
     public static getInputs = async (): Promise<InputSource[]> => {
+        await navigator.mediaDevices.getUserMedia({ audio: true });
         return navigator.mediaDevices.enumerateDevices().then((devices) =>
             (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
                 .filter((device) => device.kind === 'audioinput')

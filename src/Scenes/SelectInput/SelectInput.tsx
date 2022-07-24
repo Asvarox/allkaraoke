@@ -54,7 +54,7 @@ function SelectInput(props: Props) {
             <hr />
             {p1Source === MicrophoneInputSource.inputName &&
                 p2Source === MicrophoneInputSource.inputName &&
-                p1Input.deviceId !== p2Input.deviceId && (
+                p1Input?.deviceId !== p2Input?.deviceId && (
                     <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>
                 )}
             <MenuButton {...register('go back', goBack)} data-test="back-button">
