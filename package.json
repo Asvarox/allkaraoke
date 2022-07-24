@@ -4,7 +4,7 @@
     "private": true,
     "dependencies": {
         "@sentry/react": "^7.7.0",
-        "aubiojs": "^0.1.1",
+        "aubiojs": "0.1.0",
         "camelcase": "6.3.0",
         "howler": "^2.2.3",
         "lodash-es": "^4.17.21",

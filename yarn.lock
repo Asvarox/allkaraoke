@@ -4180,10 +4180,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aubiojs@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "aubiojs@npm:0.1.1"
-  checksum: cb348dc029de0a159aaf973193ac79544173001e9d037273fd990cfaafc7d3d044475c170806951df59424fe4e4cbbf1a1d88fedbad0a7dabd113d2163e3c68a
+"aubiojs@npm:0.1.0":
+  version: 0.1.0
+  resolution: "aubiojs@npm:0.1.0"
+  checksum: 5b54167b8d1a5fc0bce5d14699e85c246edfdac024828746c9fdb005faaa9238f71ea03cc4a5d3a603486d2ed56113e1f3cb4aeced6832120c62fb9762c78c77
   languageName: node
   linkType: hard
 
@@ -9577,7 +9577,7 @@ __metadata:
     "@types/use-persisted-state": ^0.3.1
     "@types/uuid": ^8.3.4
     "@vitejs/plugin-react": ^2.0.0
-    aubiojs: ^0.1.1
+    aubiojs: 0.1.0
     babel-jest: ^28.1.3
     babel-plugin-styled-components: ^2.0.7
     babel-plugin-transform-import-meta: ^2.2.0
