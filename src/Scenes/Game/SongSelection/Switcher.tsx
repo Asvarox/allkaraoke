@@ -1,6 +1,7 @@
 import { focusable } from 'Elements/cssMixins';
 import { ReactNode } from 'react';
 import styled from 'styled-components';
+import { ValuesType } from 'utility-types';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 import { SongListEntryDetails } from './SongCard';
 
@@ -11,13 +12,21 @@ interface Props {
     onClick?: () => void;
 }
 
-export function nextIndex<T>(values: T[], current: number, direction: 1 | -1 = 1): number {
+export function nextIndex<T extends readonly any[]>(values: T, current: number, direction: 1 | -1 = 1): number {
     return direction === 1 ? (current + 1) % values.length : (current + values.length - 1) % values.length;
 }
-export function nextValueIndex<T>(values: T[], current: T, direction: 1 | -1 = 1): number {
+export function nextValueIndex<T extends readonly any[]>(
+    values: T,
+    current: ValuesType<T>,
+    direction: 1 | -1 = 1,
+): number {
     return nextIndex(values, values.indexOf(current), direction);
 }
-export function nextValue<T>(values: T[], current: T, direction: 1 | -1 = 1): T {
+export function nextValue<T extends readonly any[]>(
+    values: T,
+    current: ValuesType<T>,
+    direction: 1 | -1 = 1,
+): ValuesType<T> {
     return values[nextValueIndex(values, current, direction)];
 }
 

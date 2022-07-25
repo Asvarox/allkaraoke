@@ -26,7 +26,7 @@ class Setting<T> {
     };
 }
 
-export const GraphicsLevel = ['high', 'low'];
+export const GraphicsLevel = ['high', 'low'] as const;
 
 const GRAPHICS_LEVEL_KEY = 'graphics-level';
 
