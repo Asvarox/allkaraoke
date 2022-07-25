@@ -2,6 +2,7 @@ import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
 import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
 import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
+import { GraphicSetting } from 'Scenes/Settings/SettingsState';
 import random from 'utils/randomValue';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
@@ -60,7 +61,10 @@ export default class CanvasDrawing {
 
         this.drawNotesToSing(ctx, drawingData, displacements);
         this.drawSungNotes(ctx, drawingData, displacements);
-        this.drawFlare(ctx, drawingData, displacements);
+
+        if (GraphicSetting.get() === 'high') {
+            this.drawFlare(ctx, drawingData, displacements);
+        }
 
         false && debugPitches(ctx!, drawingData);
     };
@@ -158,52 +162,62 @@ export default class CanvasDrawing {
     };
 
     private fadeoutNotes = (section: NotesSection, drawingData: DrawingData) => {
-        section.notes.forEach((note) => {
-            const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
+        if (GraphicSetting.get() === 'high') {
+            section.notes.forEach((note) => {
+                const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
 
-            ParticleManager.add(new FadeoutNote(x, y, w, note));
-        });
+                ParticleManager.add(new FadeoutNote(x, y, w, note));
+            });
+        }
     };
 
     private explodeNotes = (section: NotesSection, drawingData: DrawingData) => {
-        const notesToExplode = drawingData.playerNotes.filter(
-            (note) =>
-                (note.distance === 0 || noDistanceNoteTypes.includes(note.note.type)) &&
-                section.notes.includes(note.note),
-        );
-
-        notesToExplode.forEach((note) => {
-            const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.note.pitch, true);
-            ParticleManager.add(
-                new ExplodingNoteParticle(x, y + h / 2, w, drawingData.playerNumber, note.note, ParticleManager),
+        if (GraphicSetting.get() === 'high') {
+            const notesToExplode = drawingData.playerNotes.filter(
+                (note) =>
+                    (note.distance === 0 || noDistanceNoteTypes.includes(note.note.type)) &&
+                    section.notes.includes(note.note),
             );
-        });
+
+            notesToExplode.forEach((note) => {
+                const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.note.pitch, true);
+                ParticleManager.add(
+                    new ExplodingNoteParticle(x, y + h / 2, w, drawingData.playerNumber, note.note, ParticleManager),
+                );
+            });
+        }
     };
 
     private calculateDisplacements = (currentSection: NotesSection, drawingData: DrawingData) => {
         const displacements: Record<number, [number, number]> = {};
 
-        currentSection.notes.forEach((note) => {
-            const sungNotesStreak = drawingData.playerNotes
-                .filter((sungNote) => sungNote.note.start === note.start)
-                .filter(
-                    (sungNote) =>
-                        sungNote.note.start + sungNote.note.length + 30 >= drawingData.currentBeat &&
-                        sungNote.distance === 0,
-                )
-                .map((sungNote) =>
-                    sungNote.start + 30 < drawingData.currentBeat
-                        ? sungNote.length - (drawingData.currentBeat - 30 - sungNote.start)
-                        : sungNote.length,
-                )
-                .reduce((currLength, sungNoteLength) => Math.min(currLength + sungNoteLength, 30), 0);
+        if (GraphicSetting.get() === 'high') {
+            currentSection.notes.forEach((note) => {
+                const sungNotesStreak = drawingData.playerNotes
+                    .filter((sungNote) => sungNote.note.start === note.start)
+                    .filter(
+                        (sungNote) =>
+                            sungNote.note.start + sungNote.note.length + 30 >= drawingData.currentBeat &&
+                            sungNote.distance === 0,
+                    )
+                    .map((sungNote) =>
+                        sungNote.start + 30 < drawingData.currentBeat
+                            ? sungNote.length - (drawingData.currentBeat - 30 - sungNote.start)
+                            : sungNote.length,
+                    )
+                    .reduce((currLength, sungNoteLength) => Math.min(currLength + sungNoteLength, 30), 0);
 
-            const displacementRange = Math.max(0, (sungNotesStreak - 5) / (note.type === 'star' ? 3 : 5));
-            const displacementX = (Math.random() - 0.5) * displacementRange;
-            const displacementY = (Math.random() - 0.5) * displacementRange;
+                const displacementRange = Math.max(0, (sungNotesStreak - 5) / (note.type === 'star' ? 3 : 5));
+                const displacementX = (Math.random() - 0.5) * displacementRange;
+                const displacementY = (Math.random() - 0.5) * displacementRange;
 
-            displacements[note.start] = [displacementX, displacementY];
-        });
+                displacements[note.start] = [displacementX, displacementY];
+            });
+        } else {
+            currentSection.notes.forEach((note) => {
+                displacements[note.start] = [0, 0];
+            });
+        }
 
         return displacements;
     };

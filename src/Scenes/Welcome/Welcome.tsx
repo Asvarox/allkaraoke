@@ -26,6 +26,11 @@ function Welcome() {
                             Setup Microphones
                         </MenuButton>
                     </Link>
+                    <Link href="/settings">
+                        <MenuButton data-test="settings" {...register('settings', () => navigate('/settings'))}>
+                            Settings
+                        </MenuButton>
+                    </Link>
                     <Link href="/jukebox">
                         <MenuButton data-test="jukebox" {...register('jukebox', () => navigate('/jukebox'))}>
                             Jukebox

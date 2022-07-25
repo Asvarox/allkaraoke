@@ -1,6 +1,7 @@
 import { GAME_MODE } from 'interfaces';
 import { blueFill, blueStroke, redFill, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
+import Settings from 'Scenes/Settings/Settings';
 import styled from 'styled-components';
 import { Route, Router } from 'wouter';
 import useHashLocation from './hooks/useHashLocation';
@@ -53,6 +54,7 @@ function App() {
                 <Route path="/edit" component={SongList} />
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
                 <Route path="/select-input" component={SelectInput} />
+                <Route path="/settings" component={Settings} />
                 <Route path="/" component={Welcome} />
             </Router>
         </KeyboardHelpProvider>
