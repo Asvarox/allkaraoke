@@ -68,7 +68,7 @@ export default function SongPreviewComponent({
 
     return (
         <>
-            {active && <Backdrop />}
+            {active && <Backdrop onClick={onExitKeyboardControl} />}
             <SongPreviewContainer
                 top={top}
                 left={left}
