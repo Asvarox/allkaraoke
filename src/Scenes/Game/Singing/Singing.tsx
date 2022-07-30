@@ -1,7 +1,7 @@
 import { VideoState } from 'Elements/VideoPlayer';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery } from 'react-query';
 import styled from 'styled-components';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
@@ -11,7 +11,7 @@ import normaliseGap from '../../Edit/Helpers/normaliseGap';
 import normaliseLyricSpaces from '../../Edit/Helpers/normaliseLyricSpaces';
 import normaliseSectionPaddings from '../../Edit/Helpers/normaliseSectionPaddings';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
-import Player from './Player';
+import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 
 interface Props {
@@ -31,6 +31,7 @@ const processSong = (song: Song) => {
 };
 
 function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
+    const player = useRef<PlayerRef | null>(null);
     const song = useQuery<Song>(
         ['song', songFile],
         () => fetch(`./songs/${songFile}`).then((response) => response.json()),
@@ -48,6 +49,14 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
         return generatePlayerChanges(song.data);
     }, [song.data, singSetup]);
 
+    const [isTransitionTimeout, setIsTransitionTimeout] = useState(false);
+    useEffect(() => {
+        setTimeout(() => {
+            setIsTransitionTimeout(true);
+            player.current?.play();
+        }, 3000);
+    }, []);
+
     if (!width || !height || !song.data) return <>Loading</>;
 
     if (isEnded) {
@@ -56,18 +65,19 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
         return (
             <Container>
                 <BackgroundContainer>
-                    <TransitionWrapper show={playerState === VideoState.UNSTARTED}>
+                    <TransitionWrapper show={!isTransitionTimeout && playerState === VideoState.UNSTARTED}>
                         <Overlay video={video} width={width} height={height} />
                     </TransitionWrapper>
                 </BackgroundContainer>
                 <Player
+                    ref={player}
                     onStatusChange={setPlayerState}
                     playerChanges={playerChanges}
                     tracksForPlayers={singSetup.playerTracks}
                     song={song.data}
                     width={width}
                     height={height}
-                    autoplay
+                    autoplay={false}
                     onSongEnd={() => {
                         setIsEnded(true);
                     }}

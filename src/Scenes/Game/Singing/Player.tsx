@@ -24,6 +24,7 @@ interface Props {
 }
 
 export interface PlayerRef {
+    play: () => void;
     seekTo: (time: number) => void;
     setPlaybackSpeed: (speed: number) => void;
 }
@@ -90,6 +91,7 @@ function Player(
     useImperativeHandle(ref, () => ({
         seekTo: (time: number) => player.current!.seekTo(time),
         setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
+        play: () => player.current!.playVideo(),
     }));
 
     return (
