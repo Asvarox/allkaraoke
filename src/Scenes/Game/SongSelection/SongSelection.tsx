@@ -11,7 +11,7 @@ import styles from '../Singing/GameOverlay/Drawing/styles';
 import Filters from './Filters';
 import { isEmptyFilters } from './Hooks/useSongList';
 import useSongSelection from './Hooks/useSongSelection';
-import { SongCard, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
+import { SongCard, SongCardBackground, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
 import SongPreview from './SongPreview';
 
 interface Props {
@@ -120,6 +120,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                     focused={!showFilters && keyboardControl && index === focusedSong}
                                     data-index={index}
                                     data-test={`song-${song.file}`}>
+                                    <SongCardBackground
+                                        video={song.video}
+                                        focused={!showFilters && keyboardControl && index === focusedSong}
+                                    />
                                     <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
                                     <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
@@ -176,15 +180,12 @@ const SongListContainer = styled.div<{ active: boolean }>`
 const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width: number; height: number }>`
     width: ${(props) => props.width}px;
     height: ${(props) => props.height}px;
-    background-color: rgb(52, 80, 107);
 
     padding: 0.5em;
 
     transition: 200ms;
-
-    background-blend-mode: ${(props) => (props.focused ? 'normal' : 'luminosity')};
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
-    //transform: ${(props) => (props.focused ? 'scale(1.5) perspective(500px) rotateY(30deg)' : 'scale(1)')};
+    // transform: ${(props) => (props.focused ? 'scale(1.1) perspective(500px) rotateY(7.5deg)' : 'scale(1)')};
     ${(props) => props.focused && focused}
 `;

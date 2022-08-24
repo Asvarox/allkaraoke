@@ -13,14 +13,26 @@ export const SongCardContainer = styled.div<{ width: number }>`
     box-sizing: border-box;
 `;
 
-export const SongCard = styled(SongCardContainer).attrs<{ video: string }>((props) => ({
+export const SongCardBackground = styled.div.attrs<{ video: string }>((props) => ({
     style: {
         backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
     },
-}))<{ video: string }>`
-    cursor: pointer;
+}))<{ video: string; focused: boolean }>`
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center center;
+    ${(props) => (props.focused ? '' : 'filter: grayscale(90%);')}
+
+    opacity: ${(props) => (props.focused ? 1 : 0.8)};
+`;
+
+export const SongCard = styled(SongCardContainer)`
+    cursor: pointer;
 `;
 
 export const SongListEntryDetails = styled.span`

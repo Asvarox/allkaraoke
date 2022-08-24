@@ -28,6 +28,7 @@ export default defineConfig({
         sourcemap: true,
     },
     server: {
-        open: true,
+        port: 3000,
+        open: 'http://localhost:3000',
     },
 });

@@ -6,7 +6,13 @@ import styled from 'styled-components';
 import useDebounce from '../../../hooks/useDebounce';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
-import { SongCard, SongCardContainer, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
+import {
+    SongCard,
+    SongCardBackground,
+    SongCardContainer,
+    SongListEntryDetailsArtist,
+    SongListEntryDetailsTitle,
+} from './SongCard';
 import SongSettings from './SongSettings';
 
 interface Props {
@@ -110,12 +116,8 @@ export default function SongPreviewComponent({
                         </>
                     )}
                 </Content>
-                <Video
-                    show={showVideo}
-                    active={keyboardControl}
-                    height={finalHeight}
-                    width={finalWidth}
-                    video={songPreview.video}>
+                {active && <SongCardBackground video={songPreview.video} focused />}
+                <Video show={showVideo} active={keyboardControl} height={finalHeight} width={finalWidth}>
                     <VideoPlayer
                         width={0}
                         height={0}
