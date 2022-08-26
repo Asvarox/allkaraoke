@@ -1,3 +1,4 @@
+import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuContainer } from 'Elements/Menu';
 import { useState } from 'react';
 import WebRTCClient from './WebRTCClient';
@@ -10,10 +11,12 @@ function Phone({ roomId }: Props) {
     const [name, setName] = useState('Olek');
 
     return (
-        <MenuContainer>
-            <input onChange={(e) => setName(e.target.value)} value={name} />
-            <button onClick={() => WebRTCClient.connect(roomId, name)}>Connect</button>
-        </MenuContainer>
+        <LayoutWithBackground>
+            <MenuContainer>
+                <input onChange={(e) => setName(e.target.value)} value={name} />
+                <button onClick={() => WebRTCClient.connect(roomId, name)}>Connect</button>
+            </MenuContainer>
+        </LayoutWithBackground>
     );
 }
 export default Phone;

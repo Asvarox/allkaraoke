@@ -1,3 +1,4 @@
+import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
 import { useState } from 'react';
@@ -31,12 +32,14 @@ function Game(props: Props) {
                 )}
             </TransitionWrapper>
             <TransitionWrapper show={!singSetup}>
-                <SongSelection
-                    onSongSelected={(setup) => {
-                        setSingSetup(setup);
-                    }}
-                    preselectedSong={preselectedSong}
-                />
+                <LayoutWithBackground>
+                    <SongSelection
+                        onSongSelected={(setup) => {
+                            setSingSetup(setup);
+                        }}
+                        preselectedSong={preselectedSong}
+                    />
+                </LayoutWithBackground>
             </TransitionWrapper>
         </>
     );

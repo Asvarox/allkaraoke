@@ -2189,6 +2189,24 @@
     "search": "elektrycznegitaryjestemzmiasta"
   },
   {
+    "title": "Koniec",
+    "artist": "Elektryczne Gitary",
+    "bpm": 187.4,
+    "bar": 4,
+    "gap": 10499.48772678762,
+    "video": "dB62xkejDIc",
+    "videoGap": 0,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "file": "Elektryczne Gitary-Koniec.json",
+    "tracksCount": 1,
+    "tracks": [
+      {}
+    ],
+    "search": "elektrycznegitarykoniec"
+  },
+  {
     "title": "Bailamos",
     "artist": "Enrique Iglesias",
     "bpm": 400.48,

@@ -1,3 +1,4 @@
+import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -22,19 +23,21 @@ function Settings(props: Props) {
     const onGraphicsLevelChange = () => GraphicSetting.set(nextValue(GraphicsLevel, graphicLevel));
 
     return (
-        <MenuContainer>
-            <h1>Settings</h1>
-            <h2>Graphics</h2>
-            <Switcher
-                {...register('graphics', onGraphicsLevelChange)}
-                label="Graphics"
-                value={graphicLevel.toUpperCase()}
-                data-test="graphics-level"
-            />
-            <MenuButton {...register('go back', goBack)} data-test="back-button">
-                Return To Main Menu
-            </MenuButton>
-        </MenuContainer>
+        <LayoutWithBackground>
+            <MenuContainer>
+                <h1>Settings</h1>
+                <h2>Graphics</h2>
+                <Switcher
+                    {...register('graphics', onGraphicsLevelChange)}
+                    label="Graphics"
+                    value={graphicLevel.toUpperCase()}
+                    data-test="graphics-level"
+                />
+                <MenuButton {...register('go back', goBack)} data-test="back-button">
+                    Return To Main Menu
+                </MenuButton>
+            </MenuContainer>
+        </LayoutWithBackground>
     );
 }
 

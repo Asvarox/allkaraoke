@@ -1,5 +1,4 @@
 import { GAME_MODE } from 'interfaces';
-import { blueFill, blueStroke, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
 import styled from 'styled-components';
@@ -19,7 +18,6 @@ import Welcome from './Scenes/Welcome/Welcome';
 function App() {
     return (
         <KeyboardHelpProvider>
-            <Background />
             <FullscreenButton
                 onClick={() => {
                     try {
@@ -60,32 +58,6 @@ function App() {
         </KeyboardHelpProvider>
     );
 }
-
-const Background = styled.div`
-    z-index: -1;
-    top: 0;
-    position: fixed;
-    background: white;
-
-    background: linear-gradient(-45deg, ${redStroke()}, ${blueFill()}, ${blueStroke()}, ${redStroke()});
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    width: 100vw;
-    height: 100vh;
-`;
 
 const FullscreenButton = styled.div`
     cursor: pointer;

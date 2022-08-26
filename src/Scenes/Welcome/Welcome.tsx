@@ -1,3 +1,4 @@
+import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -9,7 +10,7 @@ import logo from './logo.gif';
 function Welcome() {
     const { register } = useKeyboardNav();
     return (
-        <>
+        <LayoutWithBackground>
             <GithubRibbon />
             <Container>
                 <Logo src={logo} alt="Olkaraoke logo" />
@@ -55,7 +56,7 @@ function Welcome() {
                     </Link>
                 </MenuContainer>
             </Container>
-        </>
+        </LayoutWithBackground>
     );
 }
 
