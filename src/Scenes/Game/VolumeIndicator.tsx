@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import styled from 'styled-components';
 
 interface Props {
@@ -15,7 +16,7 @@ export default function VolumeIndicator({ playerNumber, children }: Props) {
         const interval = setInterval(() => {
             const playerVolume = InputManager.getPlayerVolume(playerNumber) ?? 0;
             setVolume(playerVolume);
-        }, 16.6);
+        }, 1000 / FPSCountSetting.get());
 
         return () => {
             clearInterval(interval);

@@ -2,7 +2,7 @@ import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
 import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
 import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
-import { GraphicSetting } from 'Scenes/Settings/SettingsState';
+import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
 import random from 'utils/randomValue';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
@@ -44,7 +44,11 @@ export default class CanvasDrawing {
 
         ParticleManager.tick(ctx, this.canvas);
 
-        if (this.loop) window.requestAnimationFrame(this.drawFrame);
+        if (FPSCountSetting.get() === 30) {
+            if (this.loop) setTimeout(this.drawFrame, 1000 / 30, FPSCountSetting.get());
+        } else {
+            if (this.loop) window.requestAnimationFrame(this.drawFrame);
+        }
     };
 
     public end = () => {

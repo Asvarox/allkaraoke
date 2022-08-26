@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
 
 class Setting<T> {
@@ -27,7 +28,20 @@ class Setting<T> {
 }
 
 export const GraphicsLevel = ['high', 'low'] as const;
-
 const GRAPHICS_LEVEL_KEY = 'graphics-level';
 
+export const FpsCount = [60, 30] as const;
+const FPS_COUNT_KEY = 'fps-count';
+
 export const GraphicSetting = new Setting<ValuesType<typeof GraphicsLevel>>(GRAPHICS_LEVEL_KEY, GraphicsLevel[0]);
+export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>(FPS_COUNT_KEY, FpsCount[0]);
+
+export function useSettingValue<T>(value: Setting<T>) {
+    const [currentValue, setCurrentValue] = useState(value.get());
+
+    useEffect(() => {
+        return value.addListener(setCurrentValue);
+    }, [value]);
+
+    return [currentValue, value.set] as const;
+}

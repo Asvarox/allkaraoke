@@ -2,6 +2,7 @@ import { SingSetup, Song } from 'interfaces';
 import { ForwardedRef, forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef, useState } from 'react';
 
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
+import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import styled from 'styled-components';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
@@ -80,7 +81,7 @@ function Player(
                 onTimeUpdate?.(time);
                 GameState.setCurrentTime(time);
                 GameState.update();
-            }, 16.6);
+            }, 1000 / FPSCountSetting.get());
 
             return () => clearInterval(interval);
         }
