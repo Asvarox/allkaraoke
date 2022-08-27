@@ -35,6 +35,7 @@ export default class CanvasDrawing {
     };
 
     public drawFrame = () => {
+        const startTime = performance.now();
         const ctx = this.canvas.getContext('2d');
         if (!ctx) return;
 
@@ -45,8 +46,12 @@ export default class CanvasDrawing {
         ParticleManager.tick(ctx, this.canvas);
 
         if (FPSCountSetting.get() === 30) {
-            if (this.loop) setTimeout(this.drawFrame, 1000 / 30, FPSCountSetting.get());
-        } else {
+            const endTime = performance.now();
+            const baseTimeout = 1000 / 30;
+            const finalTimeout = endTime - startTime > baseTimeout ? baseTimeout : baseTimeout - (endTime - startTime);
+            if (this.loop) setTimeout(this.drawFrame, finalTimeout, FPSCountSetting.get());
+        }
+        if (FPSCountSetting.get() !== 30) {
             if (this.loop) window.requestAnimationFrame(this.drawFrame);
         }
     };
