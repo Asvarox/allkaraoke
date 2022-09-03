@@ -183,9 +183,11 @@ const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width:
 
     padding: 0.5em;
 
-    transition: 200ms;
+    transition: 300ms;
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
     // transform: ${(props) => (props.focused ? 'scale(1.1) perspective(500px) rotateY(7.5deg)' : 'scale(1)')};
     ${(props) => props.focused && focused}
+    border: 1px black solid;
+    border-radius: 5px;
 `;

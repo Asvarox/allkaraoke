@@ -161,6 +161,7 @@ const SongPreviewContainer = styled.div.attrs<{
 
     ${(props) => (props.active ? 'position: fixed;' : 'transform: scale(1.2);')}
     ${(props) => !props.active && 'pointer-events: none;'}
+    ${(props) => !props.active && 'border-radius: 5px;'}
 `;
 
 const Backdrop = styled.div`
@@ -179,6 +180,7 @@ const Video = styled(SongCard)<{ show: boolean; active: boolean; height: number 
         transition: ${({ show, active }) => (show || active ? 700 : 0)}ms;
     }
     ${(props) => !props.active && 'background-image: none !important;'}
+    ${(props) => !props.active && 'border-radius: 5px;'}
     ${(props) => props.active && `margin-top: calc(-1 * (100vw / 16 * 9) / 2 + ${props.height / 2}px);`}
 `;
 
@@ -196,6 +198,7 @@ const Content = styled(SongCardContainer)<{
     ${(props) => props.blurBackground && 'backdrop-filter: blur(10px);'}
 
     ${(props) => props.focus && !props.active && props.isVideoPlaying && focused}
+  border-radius: 5px;
 `;
 
 const SongInfo = styled.div<{ active: boolean }>`

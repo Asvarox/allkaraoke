@@ -24,11 +24,15 @@ export const SongCardBackground = styled.div.attrs<{ video: string }>((props) =>
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
     background-position: center center;
+    // background-size: ${(props) => (props.focused ? 150.5 : 180)}%;
+    background-size: ${(props) => (props.focused ? 100 : 110)}%;
     ${(props) => (props.focused ? '' : 'filter: grayscale(90%);')}
 
     opacity: ${(props) => (props.focused ? 1 : 0.8)};
+
+    border-radius: 5px;
+    transition: 300ms;
 `;
 
 export const SongCard = styled(SongCardContainer)`
