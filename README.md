@@ -18,6 +18,14 @@ yarn
 yarn start
 ```
 
+#### Run in offline mode
+
+Plays dummy local video instead of YouTube to work properly in offline environments (eg. planes).
+
+```
+yarn start:mock
+```
+
 ### Build for production
 
 ```

@@ -24,6 +24,7 @@
     },
     "scripts": {
         "start": "vite",
+        "start:mock": "VITE_REACT_APP_OFFLINE=true vite",
         "start:production": "serve --listen ${PORT:-3000}",
         "build": "vite build",
         "test": "jest --watch",

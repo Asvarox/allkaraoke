@@ -1,5 +1,14 @@
 import { SingSetup, Song } from 'interfaces';
-import { ForwardedRef, forwardRef, MutableRefObject, useEffect, useImperativeHandle, useRef, useState } from 'react';
+import {
+    ForwardedRef,
+    forwardRef,
+    MutableRefObject,
+    useCallback,
+    useEffect,
+    useImperativeHandle,
+    useRef,
+    useState,
+} from 'react';
 
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
@@ -95,6 +104,14 @@ function Player(
         play: () => player.current!.playVideo(),
     }));
 
+    const onStateChangeCallback = useCallback(
+        (state: VideoState) => {
+            setCurrentStatus(state);
+            onStatusChange?.(state);
+        },
+        [setCurrentStatus, onStatusChange],
+    );
+
     return (
         <Container>
             {currentStatus === VideoState.PAUSED && onSongEnd !== undefined && (
@@ -126,10 +143,7 @@ function Player(
                     autoplay={autoplay}
                     disablekb={process.env.NODE_ENV !== 'development'}
                     startAt={(song.videoGap ?? 0) + Math.floor(singSetup.skipIntro ? song.gap / 1000 : 0)}
-                    onStateChange={(state) => {
-                        setCurrentStatus(state);
-                        onStatusChange?.(state);
-                    }}
+                    onStateChange={onStateChangeCallback}
                 />
             </PlayerContainer>
         </Container>

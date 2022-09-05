@@ -1,6 +1,6 @@
-import particleImage from 'assets/particle-ray.png';
 import loadImage from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/loadImage';
 import Particle from '../interfaces';
+import particleImage from './ray-particle.png';
 
 let image: HTMLImageElement | null = null;
 let imageLoaded = false;

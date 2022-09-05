@@ -50,7 +50,7 @@ export interface VideoPlayerRef {
     getDuration: () => Promise<number>;
 }
 
-export default forwardRef(function VideoPlayer(
+export default forwardRef(function YoutubeVideoPlayer(
     { video, autoplay, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
     ref: ForwardedRef<VideoPlayerRef>,
 ) {
