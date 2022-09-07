@@ -1,6 +1,8 @@
 import InputInterface from './Interface';
 import AubioStrategy from './MicStrategies/Aubio';
 
+type Listener = (freqs: [number, number], volumes: [number, number]) => void;
+
 class MicInput implements InputInterface {
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
@@ -10,7 +12,7 @@ class MicInput implements InputInterface {
 
     private startedMonitoring = false;
 
-    public startMonitoring = async (deviceId?: string) => {
+    public startMonitoring = async (deviceId?: string, echoCancellation = false) => {
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
@@ -43,6 +45,8 @@ class MicInput implements InputInterface {
             ]);
 
             this.volumes = [this.calculateVolume(inputData1), this.calculateVolume(inputData2)];
+
+            this.onUpdate();
         };
     };
 
@@ -71,6 +75,21 @@ class MicInput implements InputInterface {
         }
         return Math.sqrt(sum / input.length);
     }
+
+    private listeners: Listener[] = [];
+    private onUpdate = () => {
+        this.listeners.forEach((callback) => callback(this.frequencies, this.volumes));
+    };
+
+    public addListener = (listener: Listener) => {
+        this.listeners.push(listener);
+
+        return () => {
+            this.removeListener(listener);
+        };
+    };
+
+    public removeListener = (listener: Listener) => this.listeners.filter((callback) => callback !== listener);
 }
 
 export default new MicInput();

@@ -1,6 +1,7 @@
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
+import RemoteMicInput from 'Scenes/Game/Singing/Input/RemoteMicInput';
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import InputInterface from './Interface';
 
@@ -43,6 +44,7 @@ class InputManager {
     private sourceNameToInput = (sourceName: InputSourceNames) => {
         if (sourceName === 'Microphone') return MicInput;
         if (sourceName === 'DrawingTest') return DrawingTestInput;
+        if (sourceName === 'RemoteMicrophone') return RemoteMicInput;
         return dummyInput;
     };
 }

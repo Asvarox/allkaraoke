@@ -1,3 +1,4 @@
+import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import analyze from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vite';
@@ -21,6 +22,7 @@ export default defineConfig({
         }),
         tsconfigPaths(),
         analyze(),
+        basicSsl(),
     ],
     base: './',
     build: {
@@ -29,6 +31,6 @@ export default defineConfig({
     },
     server: {
         port: 3000,
-        open: 'http://localhost:3000',
+        open: 'https://localhost:3000',
     },
 });

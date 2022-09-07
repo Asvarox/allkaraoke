@@ -37,13 +37,11 @@ function Welcome() {
                             Jukebox
                         </MenuButton>
                     </Link>
-                    {false && (
-                        <Link href="/connect-phone">
-                            <MenuButton {...register('connect phone', () => navigate('/connect-phone'))}>
-                                Connect Phone
-                            </MenuButton>
-                        </Link>
-                    )}
+                    <Link href="/connect-phone">
+                        <MenuButton {...register('connect phone', () => navigate('/connect-phone'))}>
+                            Connect Phone
+                        </MenuButton>
+                    </Link>
                     <Link href="/edit">
                         <MenuButton data-test="edit-songs" {...register('edit songs', () => navigate('/edit'))}>
                             Edit songs

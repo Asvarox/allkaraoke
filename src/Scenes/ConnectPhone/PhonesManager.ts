@@ -5,13 +5,14 @@ import { WebRTCEvents } from '../Phone/WebRTCClient';
 
 class PhoneInput implements InputInterface {
     private frequencies = [0];
+    private volumes = [0];
 
     public constructor(private connection: Peer.DataConnection) {}
 
     getChannelsCount = () => 1;
 
     getFrequencies = () => this.frequencies;
-    getVolumes = () => [1];
+    getVolumes = () => this.volumes;
 
     getInputLag = () => 200;
 
@@ -29,14 +30,13 @@ class PhoneInput implements InputInterface {
 
     private handleRTCData = (data: WebRTCEvents) => {
         if (data.type === 'freq') {
-            // @ts-ignore
-            console.log(data.i, data.type, data.date);
-            this.frequencies[0] = data.freq;
+            this.frequencies = data.freqs;
+            this.volumes = data.volumes;
         }
     };
 }
 
-class Phone {
+export class Phone {
     private input: PhoneInput;
     constructor(public id: string, public name: string, public connection: Peer.DataConnection) {
         this.input = new PhoneInput(connection);
@@ -59,6 +59,8 @@ class PhoneManager {
     };
 
     public getPhones = () => this.phones;
+
+    public getPhoneById = (id: string) => this.phones.find((phone) => phone.id === id);
 }
 
 export default new PhoneManager();

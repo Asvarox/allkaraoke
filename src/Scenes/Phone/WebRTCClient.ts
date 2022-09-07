@@ -1,4 +1,5 @@
-import { Peer } from 'peerjs';
+import { DataConnection, Peer } from 'peerjs';
+import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import { v4 } from 'uuid';
 
 export interface WebRTCRegisterEvent {
@@ -17,9 +18,8 @@ export interface WebRTCStopMonitorEvent {
 
 export interface WebRTCNewFrequencyEvent {
     type: 'freq';
-    freq: number;
-    // i: number;
-    // date: string;
+    freqs: [number, number];
+    volumes: [number, number];
 }
 
 export type WebRTCEvents =
@@ -31,31 +31,41 @@ export type WebRTCEvents =
 class WebRTCClient {
     private clientId = v4();
     private peer: Peer | null = null;
-    private interval: any;
+    private connection: DataConnection | null = null;
+
+    private onFrequencyUpdate = (freqs: [number, number], volumes: [number, number]) => {
+        this.connection?.send({ type: 'freq', freqs: freqs, volumes: volumes } as WebRTCEvents);
+    };
 
     public connect = (roomId: string, name: string) => {
         this.peer = new Peer(this.clientId, { debug: 3 });
 
         this.peer.on('open', () => {
-            const connection = this.peer!.connect(roomId);
+            this.connection = this.peer!.connect(roomId);
 
-            connection.on('open', () => {
-                console.log('peer connected open');
-                connection.send({ type: 'register', name, id: this.clientId } as WebRTCEvents);
-                connection.on('data', (data: WebRTCEvents) => {
-                    console.log('Received', data);
+            this.connection.on('open', () => {
+                this.connection?.send({ type: 'register', name, id: this.clientId } as WebRTCEvents);
+                this.connection?.on('data', (data: WebRTCEvents) => {
                     if (data.type === 'start-monitor') {
-                        let i = 0;
-                        console.log(connection.dataChannel);
-                        this.interval = setInterval(() => {
-                            console.log('attempting to send', i, new Date().getTime());
-                            connection.send({ type: 'freq', freq: 440 });
-                        }, 32);
+                        MicInput.addListener(this.onFrequencyUpdate);
+                        // echoCancellation is turned on because without it there is silence from the mic
+                        // every other second (possibly some kind of Chrome Mobile bug)
+                        MicInput.startMonitoring(undefined, true);
                     } else if (data.type === 'stop-monitor') {
-                        clearInterval(this.interval);
+                        MicInput.removeListener(this.onFrequencyUpdate);
+                        MicInput.stopMonitoring();
                     }
                 });
             });
+
+            this.connection.on('close', () => {
+                MicInput.removeListener(this.onFrequencyUpdate);
+                MicInput.stopMonitoring();
+            });
+        });
+        this.peer.on('close', () => {
+            MicInput.removeListener(this.onFrequencyUpdate);
+            MicInput.stopMonitoring();
         });
 
         console.log(this.peer);
