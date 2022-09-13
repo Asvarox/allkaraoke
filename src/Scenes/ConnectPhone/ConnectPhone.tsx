@@ -32,10 +32,10 @@ function ConnectPhone() {
                 {PhonesManager.getPhones().map((phone) => (
                     <span>
                         {phone.name}
-                        <button onClick={() => InputManager.setPlayerInput(0, 'RemoteMicrophone', 0, phone.id)}>
+                        <button onClick={() => InputManager.setPlayerInput(0, 'Remote Microphone', 0, phone.id)}>
                             Set for Player 1
                         </button>
-                        <button onClick={() => InputManager.setPlayerInput(1, 'RemoteMicrophone', 0, phone.id)}>
+                        <button onClick={() => InputManager.setPlayerInput(1, 'Remote Microphone', 0, phone.id)}>
                             Set for Player 2
                         </button>
                     </span>

@@ -25,24 +25,26 @@ const mapInputName = (label: string, channel: number) => {
 export class MicrophoneInputSource {
     public static readonly inputName = 'Microphone';
 
+    public static getDefault = () => 'default;0';
+
     public static getInputs = async (): Promise<InputSource[]> => {
         await navigator.mediaDevices.getUserMedia({ audio: true });
-        return navigator.mediaDevices.enumerateDevices().then((devices) =>
-            (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
-                .filter((device) => device.kind === 'audioinput')
-                .map((device) => {
-                    const channels = device.getCapabilities()?.channelCount?.max ?? 1;
+        const devices = await navigator.mediaDevices.enumerateDevices();
 
-                    return range(0, channels).map((channel) => ({
-                        label: mapInputName(device.label, channel),
-                        channel,
-                        channels,
-                        deviceId: device.deviceId,
-                        id: `${device.deviceId};${channel}`,
-                    }));
-                })
-                .flat(),
-        );
+        return (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
+            .filter((device) => device.kind === 'audioinput')
+            .map((device) => {
+                const channels = device.getCapabilities()?.channelCount?.max ?? 1;
+
+                return range(0, channels).map((channel) => ({
+                    label: mapInputName(device.label, channel),
+                    channel,
+                    channels,
+                    deviceId: device.deviceId,
+                    id: `${device.deviceId};${channel}`,
+                }));
+            })
+            .flat();
     };
 
     public static subscribeToListChange = (callback: () => void) =>

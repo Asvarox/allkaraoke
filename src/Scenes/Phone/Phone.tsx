@@ -2,14 +2,17 @@ import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuContainer } from 'Elements/Menu';
 import { useEffect, useState } from 'react';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
+import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';
 
 interface Props {
     roomId: string;
 }
 
+const usePersistedName = createPersistedState<string>('remote_mic_name');
+
 function Phone({ roomId }: Props) {
-    const [name, setName] = useState('Olek');
+    const [name, setName] = usePersistedName('Olek');
     const [currentFrequency, setCurrentFrequency] = useState(0);
     const [volume, setVolume] = useState(0);
 

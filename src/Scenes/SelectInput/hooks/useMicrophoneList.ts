@@ -2,16 +2,24 @@ import { useEffect, useState } from 'react';
 import sources from 'Scenes/SelectInput/InputSources';
 import { InputSource } from 'Scenes/SelectInput/InputSources/interfaces';
 
-export type SourceMap = Record<string, InputSource[]>;
+export interface SourceInputDefault {
+    list: InputSource[];
+    getDefault: () => string | null;
+}
+
+export type SourceMap = Record<string, SourceInputDefault>;
 const initialState: SourceMap = sources.reduce<SourceMap>(
     (acc, elem) => ({
         ...acc,
-        [elem.inputName]: [],
+        [elem.inputName]: {
+            list: [],
+            getDefault: elem.getDefault,
+        },
     }),
     {},
 );
 
-export function useMicrophoneList(onEnumerate?: (inputs: MediaDeviceInfo[]) => void) {
+export function useMicrophoneList() {
     const [inputs, setInputs] = useState(initialState);
     const [isLoaded, setIsLoaded] = useState(false);
 
@@ -21,7 +29,10 @@ export function useMicrophoneList(onEnumerate?: (inputs: MediaDeviceInfo[]) => v
                 inputs.reduce(
                     (acc, elem, index) => ({
                         ...acc,
-                        [sources[index].inputName]: elem,
+                        [sources[index].inputName]: {
+                            list: elem,
+                            getDefault: sources[index].getDefault,
+                        },
                     }),
                     {},
                 ),

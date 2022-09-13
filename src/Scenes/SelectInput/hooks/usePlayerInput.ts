@@ -26,7 +26,7 @@ export function usePlayerInput(playerNumber: number, sourceMap: SourceMap, areIn
     const [selectedSource, setSelectedSource] = usePersistedSelectedSource(playerNumber);
     const [selectedInput, setSelectedInput] = useState<string | null>(null);
 
-    const list = selectedSource === null ? [] : sourceMap[selectedSource];
+    const list = selectedSource === null ? [] : sourceMap[selectedSource].list ?? [];
 
     useEffect(() => {
         if (areInputsLoaded && selectedSource === null) {
@@ -48,14 +48,15 @@ export function usePlayerInput(playerNumber: number, sourceMap: SourceMap, areIn
 
     useEffect(() => {
         if (!list.length) {
-            setSelectedSource(Object.keys(sourceMap)[0] as InputSourceNames);
-            setSelectedInput('default;0');
+            const source = Object.keys(sourceMap)[0] as InputSourceNames;
+            setSelectedSource(source);
+            setSelectedInput(sourceMap[source]?.getDefault() ?? null);
         }
     }, [sourceMap, list]);
 
     useEffect(() => {
         if (selectedInput === '' || !list?.find((device) => device.id === selectedInput)) {
-            setSelectedInput('default;0');
+            setSelectedInput(selectedSource ? sourceMap[selectedSource]?.getDefault() ?? null : null);
         }
     }, [sourceMap, list]);
 

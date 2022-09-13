@@ -20,6 +20,8 @@ export const events = {
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
     phoneConnected: new GameStateEvent<(id: string) => void>(),
     phoneDisconnected: new GameStateEvent<(id: string) => void>(),
+    playerInputChanged: new GameStateEvent<() => void>(),
+    inputListChanged: new GameStateEvent<() => void>(),
 };
 
 export default events;

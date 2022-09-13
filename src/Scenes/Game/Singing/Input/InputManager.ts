@@ -2,7 +2,10 @@ import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import RemoteMicInput from 'Scenes/Game/Singing/Input/RemoteMicInput';
+import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingTest';
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
+import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
+import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import InputInterface from './Interface';
 
 interface PlayerInput {
@@ -42,9 +45,9 @@ class InputManager {
 
     // todo: Create eg. "InputSourceManager" and have the logic there?
     private sourceNameToInput = (sourceName: InputSourceNames) => {
-        if (sourceName === 'Microphone') return MicInput;
-        if (sourceName === 'DrawingTest') return DrawingTestInput;
-        if (sourceName === 'RemoteMicrophone') return RemoteMicInput;
+        if (sourceName === MicrophoneInputSource.inputName) return MicInput;
+        if (sourceName === DrawingTestInputSource.inputName) return DrawingTestInput;
+        if (sourceName === RemoteMicrophoneInputSource.inputName) return RemoteMicInput;
         return dummyInput;
     };
 }

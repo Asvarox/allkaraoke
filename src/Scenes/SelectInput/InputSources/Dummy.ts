@@ -3,6 +3,8 @@ import { InputSource } from './interfaces';
 export class DummyInputSource {
     public static readonly inputName = 'Dummy';
 
+    public static getDefault = () => 'default;0';
+
     public static getInputs = async (): Promise<InputSource[]> => [
         {
             channels: 2,

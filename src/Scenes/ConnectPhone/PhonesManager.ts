@@ -17,15 +17,15 @@ class PhoneInput implements InputInterface {
     getInputLag = () => 200;
 
     startMonitoring = async () => {
-        this.connection.send({ type: 'start-monitor' });
+        this.connection?.send({ type: 'start-monitor' });
 
-        this.connection.on('data', this.handleRTCData);
+        this.connection?.on('data', this.handleRTCData);
     };
 
     stopMonitoring = async () => {
-        this.connection.send({ type: 'stop-monitor' });
+        this.connection?.send({ type: 'stop-monitor' });
 
-        this.connection.off('data', this.handleRTCData);
+        this.connection?.off('data', this.handleRTCData);
     };
 
     private handleRTCData = (data: WebRTCEvents) => {
