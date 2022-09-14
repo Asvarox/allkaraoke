@@ -16,3 +16,12 @@ export type InputSourceNames =
     | typeof DummyInputSource.inputName
     | typeof RemoteMicrophoneInputSource.inputName
     | typeof DrawingTestInputSource.inputName;
+
+export interface InputSourceManagerInterface {
+    inputName: InputSourceNames;
+
+    getDefault: () => string | null;
+    getInputs: () => Promise<InputSource[]>;
+    subscribeToListChange: (callback: () => void) => void;
+    unsubscribeToListChange: (callback: () => void) => void;
+}

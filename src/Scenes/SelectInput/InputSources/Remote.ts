@@ -3,7 +3,7 @@ import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { InputSource } from './interfaces';
 
 const mapPhoneToInput = (phone: Phone): InputSource => ({
-    label: `${phone.name}`,
+    label: `📱${phone.name}`,
     id: phone.id,
     deviceId: phone.id,
     channels: 1,
