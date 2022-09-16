@@ -4,7 +4,7 @@ import { InputSource } from './interfaces';
 
 const mapPhoneToInput = (phone: Phone): InputSource => ({
     label: `📱${phone.name}`,
-    id: phone.id,
+    id: `${phone.id};0`,
     deviceId: phone.id,
     channels: 1,
     channel: 0,
@@ -13,7 +13,7 @@ const mapPhoneToInput = (phone: Phone): InputSource => ({
 export class RemoteMicrophoneInputSource {
     public static readonly inputName = 'Remote Microphone';
 
-    public static getDefault = () => PhonesManager.getPhones().map(mapPhoneToInput)[0]?.id ?? null;
+    public static getDefault = () => PhonesManager.getPhones().map(mapPhoneToInput)[0] ?? null;
 
     public static getInputs = async (): Promise<InputSource[]> => PhonesManager.getPhones().map(mapPhoneToInput);
 

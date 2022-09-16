@@ -8,15 +8,6 @@ import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from './Helpers/getSongBeatLength';
 
-// @ts-ignore
-const isCypress = !!window.cypress;
-
-const Input = process.env.NODE_ENV === 'development' && !isCypress ? 'Dummy' : 'Microphone'; // eslint-disable-line @typescript-eslint/no-unused-vars
-const Input1 = 'Microphone'; // eslint-disable-line @typescript-eslint/no-unused-vars
-
-InputManager.setPlayerInput(0, Input, 0);
-InputManager.setPlayerInput(1, Input, 1);
-
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];
     private playerNotes: PlayerNote[] = [];

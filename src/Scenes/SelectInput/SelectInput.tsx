@@ -2,6 +2,7 @@ import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
+import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
@@ -14,8 +15,8 @@ interface Props {
 function SelectInput(props: Props) {
     const { inputs, areInputsLoaded } = useMicrophoneList();
 
-    const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs, areInputsLoaded);
-    const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs, areInputsLoaded);
+    const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs);
+    const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
 
     const goBack = () => navigate('/');
 
@@ -27,6 +28,7 @@ function SelectInput(props: Props) {
         <LayoutWithBackground>
             <MenuContainer>
                 <h1>Setup players</h1>
+                <ConnectPhone />
                 <h2>Player 1</h2>
                 <Switcher
                     {...register('player 1 source', p1CycleSource)}

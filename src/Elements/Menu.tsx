@@ -14,7 +14,7 @@ export const MenuContainer = styled.div`
     padding: 20px;
     width: 750px;
     margin: 50px auto;
-    font-size: 1.9vw;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -37,6 +37,16 @@ export const MenuContainer = styled.div`
         ${typography};
         margin: 0;
         font-size: 1.05em;
+
+        strong {
+            color: ${styles.colors.text.active};
+        }
+    }
+
+    h4 {
+        ${typography};
+        margin: 0;
+        font-size: 0.85em;
     }
 
     hr {

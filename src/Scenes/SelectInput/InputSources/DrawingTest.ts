@@ -1,19 +1,21 @@
 import { InputSource } from './interfaces';
 
+const inputs = [
+    {
+        channels: 2,
+        channel: 1,
+        label: 'Drawing Test Input',
+        id: 'default;1',
+        deviceId: 'default',
+    },
+];
+
 export class DrawingTestInputSource {
     public static readonly inputName = 'DrawingTest';
 
-    public static getDefault = () => 'default;1';
+    public static getDefault = () => inputs[0];
 
-    public static getInputs = async (): Promise<InputSource[]> => [
-        {
-            channels: 2,
-            channel: 1,
-            label: 'Drawing Test Input',
-            id: 'default;1',
-            deviceId: 'default',
-        },
-    ];
+    public static getInputs = async (): Promise<InputSource[]> => inputs;
 
     public static subscribeToListChange = (callback: () => void) => undefined;
     public static unsubscribeToListChange = (callback: () => void) => undefined;

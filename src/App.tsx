@@ -4,7 +4,6 @@ import Settings from 'Scenes/Settings/Settings';
 import styled from 'styled-components';
 import { Route, Router } from 'wouter';
 import useHashLocation from './hooks/useHashLocation';
-import ConnectPhone from './Scenes/ConnectPhone/ConnectPhone';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
@@ -45,8 +44,6 @@ function App() {
                 </Route>
                 <Route path="/convert" component={Convert} />
                 <Route path="/jukebox" component={Jukebox} />
-
-                <Route path="/connect-phone" component={ConnectPhone} />
                 <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>
 
                 <Route path="/edit" component={SongList} />

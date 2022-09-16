@@ -20,8 +20,13 @@ export type InputSourceNames =
 export interface InputSourceManagerInterface {
     inputName: InputSourceNames;
 
-    getDefault: () => string | null;
+    getDefault: () => InputSource | null;
     getInputs: () => Promise<InputSource[]>;
     subscribeToListChange: (callback: () => void) => void;
     unsubscribeToListChange: (callback: () => void) => void;
+}
+
+export interface InputSourceList {
+    list: InputSource[];
+    getDefault: () => InputSource | null;
 }

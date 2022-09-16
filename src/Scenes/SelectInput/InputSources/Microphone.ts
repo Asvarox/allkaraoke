@@ -23,15 +23,16 @@ const mapInputName = (label: string, channel: number) => {
 };
 
 export class MicrophoneInputSource {
+    private static inputList: InputSource[] = [];
     public static readonly inputName = 'Microphone';
 
-    public static getDefault = () => 'default;0';
+    public static getDefault = () => MicrophoneInputSource.inputList.find((input) => input.id === 'default;0') ?? null;
 
     public static getInputs = async (): Promise<InputSource[]> => {
         await navigator.mediaDevices.getUserMedia({ audio: true });
         const devices = await navigator.mediaDevices.enumerateDevices();
 
-        return (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
+        MicrophoneInputSource.inputList = (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
             .filter((device) => device.kind === 'audioinput')
             .map((device) => {
                 const channels = device.getCapabilities()?.channelCount?.max ?? 1;
@@ -45,6 +46,8 @@ export class MicrophoneInputSource {
                 }));
             })
             .flat();
+
+        return MicrophoneInputSource.inputList;
     };
 
     public static subscribeToListChange = (callback: () => void) =>

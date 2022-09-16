@@ -1,3 +1,4 @@
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
@@ -6,41 +7,72 @@ import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingT
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
-import InputInterface from './Interface';
+import storage from 'utils/storage';
 
-interface PlayerInput {
-    input: InputInterface;
+export interface SelectedPlayerInput {
+    inputSource: InputSourceNames;
     deviceId?: string;
     channel: number;
 }
 
+const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
+
 class InputManager {
-    private playerInputs: PlayerInput[] = [];
+    private playerInputs: SelectedPlayerInput[] = storage.getValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY) ?? [];
+
+    constructor() {
+        // @ts-ignore
+        const isCypress = !!window.cypress;
+
+        if (this.playerInputs.length === 0) {
+            /* eslint-disable @typescript-eslint/no-unused-vars */
+            const Input = process.env.NODE_ENV === 'development' && !isCypress ? 'Dummy' : 'Microphone';
+            const Input1 = 'Microphone';
+            /* eslint-enable @typescript-eslint/no-unused-vars */
+
+            this.setPlayerInput(0, Input, 0, 'default');
+            this.setPlayerInput(1, Input, 1, 'default');
+        }
+    }
 
     public getPlayerFrequency = (playerNumber: number) => {
-        const frequencies = this.playerInputs[playerNumber].input.getFrequencies();
+        const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getFrequencies();
 
         return frequencies[this.playerInputs[playerNumber].channel];
     };
 
     public getPlayerVolume = (playerNumber: number) => {
-        const frequencies = this.playerInputs[playerNumber].input.getVolumes();
+        const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getVolumes();
 
         return frequencies[this.playerInputs[playerNumber].channel];
     };
 
-    public getPlayerInputLag = (playerNumber: number) => this.playerInputs[playerNumber].input.getInputLag();
+    public getPlayerInputLag = (playerNumber: number) =>
+        this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getInputLag();
 
     public setPlayerInput = (playerNumber: number, source: InputSourceNames, channel = 0, deviceId?: string) => {
-        this.playerInputs[playerNumber] = { input: this.sourceNameToInput(source), deviceId, channel };
+        const newInput = { inputSource: source, deviceId, channel };
+        this.playerInputs[playerNumber] = newInput;
+
+        storage.storeValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY, this.playerInputs);
+        events.playerInputChanged.dispatch(newInput);
     };
 
+    public getPlayerInput = (playerNumber: number): SelectedPlayerInput | null =>
+        this.playerInputs[playerNumber] ?? null;
+
     public startMonitoring = async () => {
-        Promise.all(this.playerInputs.map((playerInput) => playerInput.input.startMonitoring(playerInput.deviceId)));
+        Promise.all(
+            this.playerInputs.map((playerInput) =>
+                this.sourceNameToInput(playerInput.inputSource).startMonitoring(playerInput.deviceId),
+            ),
+        );
     };
 
     public stopMonitoring = async () => {
-        Promise.all(this.playerInputs.map((playerInput) => playerInput.input.stopMonitoring()));
+        Promise.all(
+            this.playerInputs.map((playerInput) => this.sourceNameToInput(playerInput.inputSource).stopMonitoring()),
+        );
     };
 
     // todo: Create eg. "InputSourceManager" and have the logic there?

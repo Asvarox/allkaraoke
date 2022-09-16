@@ -1,80 +1,48 @@
-import usePrevious from 'hooks/usePrevious';
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { SourceMap } from 'Scenes/SelectInput/hooks/useMicrophoneList';
-import { DummyInputSource } from 'Scenes/SelectInput/InputSources/Dummy';
-import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
-import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
-import createPersistedState from 'use-persisted-state';
+import { nextIndex, nextValue } from 'Scenes/Game/SongSelection/Switcher';
+import InputSources from 'Scenes/SelectInput/InputSources';
+import { InputSourceList, InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import tuple from 'utils/tuple';
 
-const useSelectedSources = createPersistedState<Record<number, InputSourceNames | null>>('selectedSources');
+export function usePlayerInput(playerNumber: number, sources: Record<InputSourceNames, InputSourceList>) {
+    const sourceList = Object.keys(sources) as Array<InputSourceNames>;
+    const [selectedPlayerInput, playerInputData] = useEventListenerSelector(
+        [events.playerInputChanged, events.inputListChanged],
+        () => {
+            const playerInput = InputManager.getPlayerInput(playerNumber);
 
-function usePersistedSelectedSource(playerNumber: number) {
-    const [selectedSources, setSelectedSources] = useSelectedSources({});
-
-    const setPlayerSelectedSource: Dispatch<SetStateAction<InputSourceNames | null>> = (value) => {
-        const newValue = value instanceof Function ? value(selectedSources[playerNumber]) : value;
-
-        setSelectedSources((prevState) => ({ ...prevState, [playerNumber]: newValue }));
-    };
-
-    return tuple([selectedSources[playerNumber] ?? null, setPlayerSelectedSource]);
-}
-
-export function usePlayerInput(playerNumber: number, sourceMap: SourceMap, areInputsLoaded: boolean) {
-    const [selectedSource, setSelectedSource] = usePersistedSelectedSource(playerNumber);
-    const [selectedInput, setSelectedInput] = useState<string | null>(null);
-
-    const list = selectedSource === null ? [] : sourceMap[selectedSource].list ?? [];
+            if (!playerInput) return tuple([null, null]);
+            return tuple([playerInput, InputSources.getInputForPlayerSelected(playerInput)]);
+        },
+    );
 
     useEffect(() => {
-        if (areInputsLoaded && selectedSource === null) {
-            setSelectedSource(
-                process.env.NODE_ENV === 'development' ? DummyInputSource.inputName : MicrophoneInputSource.inputName,
-            );
+        if (playerInputData === null) {
+            const source = sourceList[0];
+            const input = sources[source].getDefault();
+            if (input) {
+                InputManager.setPlayerInput(playerNumber, sourceList[0], input.channel, input.deviceId);
+            }
         }
     });
 
-    const previousAreInputsLoaded = usePrevious(areInputsLoaded);
-    useEffect(() => {
-        if (!previousAreInputsLoaded && areInputsLoaded) {
-            const multiChannelInputs = list.filter(({ channels }) => channels >= 2);
-            if (!multiChannelInputs.length) return;
+    const cycleSource = () => {
+        const nextSource = nextValue(sourceList, selectedPlayerInput?.inputSource ?? sourceList[0]);
+        const input = sources[nextSource].getDefault();
 
-            setSelectedInput(multiChannelInputs.at(playerNumber)?.id ?? multiChannelInputs.at(-1)!.id);
-        }
-    }, [playerNumber, previousAreInputsLoaded, areInputsLoaded]);
+        InputManager.setPlayerInput(playerNumber, nextSource, input?.channel, input?.deviceId);
+    };
+    const cycleInput = () => {
+        if (!selectedPlayerInput) return;
+        const list = sources[selectedPlayerInput.inputSource].list;
+        const currentIndex = playerInputData ? list.findIndex((item) => item.id === playerInputData.id) : 0;
+        const input = list[nextIndex(list, currentIndex)];
 
-    useEffect(() => {
-        if (!list.length) {
-            const source = Object.keys(sourceMap)[0] as InputSourceNames;
-            setSelectedSource(source);
-            setSelectedInput(sourceMap[source]?.getDefault() ?? null);
-        }
-    }, [sourceMap, list]);
-
-    useEffect(() => {
-        if (selectedInput === '' || !list?.find((device) => device.id === selectedInput)) {
-            setSelectedInput(selectedSource ? sourceMap[selectedSource]?.getDefault() ?? null : null);
-        }
-    }, [sourceMap, list]);
-
-    useEffect(() => {
-        const input = list?.find((device) => device.id === selectedInput);
-        if (input && selectedSource) {
-            InputManager.setPlayerInput(playerNumber, selectedSource, input.channel, input.deviceId);
-        }
-    }, [list, selectedSource, selectedInput]);
-
-    const selectedInputIndex = list?.findIndex((device) => device.id === selectedInput);
-    const cycleInputs = () => setSelectedInput(list?.[(selectedInputIndex + 1) % list.length]?.id ?? 'default');
-
-    const cycleSources = () => {
-        const sourceList = Object.keys(sourceMap);
-        const selectedSourceIndex = sourceList.indexOf(selectedSource!);
-        setSelectedSource(sourceList[(selectedSourceIndex + 1) % sourceList.length] as InputSourceNames);
+        InputManager.setPlayerInput(playerNumber, selectedPlayerInput.inputSource, input?.channel, input?.deviceId);
     };
 
-    return tuple([selectedSource, cycleSources, list[selectedInputIndex], cycleInputs]);
+    return tuple([selectedPlayerInput?.inputSource ?? null, cycleSource, playerInputData, cycleInput]);
 }

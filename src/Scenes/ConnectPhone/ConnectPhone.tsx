@@ -1,10 +1,8 @@
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
-import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { typography } from 'Elements/cssMixins';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
-import { Link } from 'wouter';
-import InputManager from '../Game/Singing/Input/InputManager';
-import PhonesManager from './PhonesManager';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import styled from 'styled-components';
 import WebRTCServer from './WebRTCServer';
 
 function ConnectPhone() {
@@ -15,26 +13,125 @@ function ConnectPhone() {
     const link = `${window.location.origin}/#/phone/${WebRTCServer.getRoomId()}`;
 
     return (
-        <LayoutWithBackground>
-            <MenuContainer>
+        <Container>
+            <QRCode>
                 <QRCodeSVG value={link} width="100%" height="100%" includeMargin />
-                <a href={link}>Connect to a server</a>
-                <Link to={`/`}>
-                    <MenuButton>Return to main menu</MenuButton>
-                </Link>
-                {PhonesManager.getPhones().map((phone) => (
-                    <span>
-                        {phone.name}
-                        <button onClick={() => InputManager.setPlayerInput(0, 'Remote Microphone', 0, phone.id)}>
-                            Set for Player 1
-                        </button>
-                        <button onClick={() => InputManager.setPlayerInput(1, 'Remote Microphone', 0, phone.id)}>
-                            Set for Player 2
-                        </button>
-                    </span>
-                ))}
-            </MenuContainer>
-        </LayoutWithBackground>
+            </QRCode>
+            <Description>
+                <QRCodeInstruction>
+                    <h3>Use your phone as a microphone</h3>
+                    <ol>
+                        <li>
+                            Open <b>Camera App</b> on your phone
+                        </li>
+                        <li>
+                            Point the camera to the <b>QR Code</b> on the left
+                        </li>
+                        <li>
+                            Open <b>the link</b> that should appear
+                        </li>
+                        <li>Follow the instructions</li>
+                    </ol>
+                </QRCodeInstruction>
+                <CopyLinkInstruction>
+                    <h4>Or copy and send the link</h4>
+                    <InputCopyContainer>
+                        <InputCopy disabled value={link} />
+                        <CopyButton
+                            onClick={() => {
+                                navigator.clipboard.writeText(link);
+                            }}>
+                            Copy
+                        </CopyButton>
+                    </InputCopyContainer>
+                </CopyLinkInstruction>
+            </Description>
+        </Container>
     );
 }
+const QRCodeInstruction = styled.div`
+    flex: 1;
+`;
+
+const CopyLinkInstruction = styled.div`
+    flex: 0;
+`;
+
+const InputCopyContainer = styled.div`
+    position: relative;
+    margin-top: 0.5em;
+`;
+
+const CopyButton = styled.button`
+    cursor: pointer;
+    position: absolute;
+    padding: 0 20px;
+    right: 0;
+    height: 100%;
+    box-sizing: border-box;
+
+    background: ${styles.colors.text.active};
+
+    ${typography};
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 0;
+
+    :active {
+        background-color: black;
+    }
+`;
+
+const InputCopy = styled.input`
+    padding: 0.75em;
+    box-sizing: border-box;
+    background: grey;
+    border: none;
+    width: 100%;
+`;
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    flex: 1;
+    gap: 2%;
+`;
+
+const QRCode = styled.div`
+    flex: 0.7;
+`;
+
+const Description = styled.div`
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    b {
+        font-weight: bold;
+        ${typography};
+        color: ${styles.colors.text.active};
+    }
+
+    h3 {
+        margin-bottom: 0.75em;
+    }
+    h4 {
+        margin: 0.5em 0;
+    }
+
+    ol {
+        padding-left: 0.9em;
+        margin: 0.5em 0;
+        list-style: decimal inside;
+    }
+    li {
+        color: white;
+        font-size: 0.75em;
+        line-height: 1.6em;
+    }
+`;
+
 export default ConnectPhone;

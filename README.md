@@ -38,7 +38,7 @@ yarn build
 
 Instead of having to sing every time you'd like to test something, you can mock the input.
 
-Edit `src/Scenes/Game/Singing/GameState/GameState.ts` and assign `DummyInput` into the `Input` variable
+Edit `src/Scenes/Game/Singing/Input/InputManager.ts` and assign `DummyInput` into the `Input` variable
 
 ```
 const Input = DummyInput;
