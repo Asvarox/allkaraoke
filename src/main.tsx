@@ -5,9 +5,11 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import App from './App';
 import './index.css';
 
-if (import.meta.env.REACT_APP_SENTRY_DSN_URL) {
+console.log(import.meta.env.VITE_APP_SENTRY_DSN_URL);
+
+if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
     Sentry.init({
-        dsn: import.meta.env.REACT_APP_SENTRY_DSN_URL,
+        dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
 
         // Set tracesSampleRate to 1.0 to capture 100%
         // of transactions for performance monitoring.

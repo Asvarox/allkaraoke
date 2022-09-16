@@ -1,5 +1,5 @@
+import styled from '@emotion/styled';
 import { Song, SongPreview } from 'interfaces';
-import styled from 'styled-components';
 import styles from './Singing/GameOverlay/Drawing/styles';
 
 interface Props {
@@ -54,16 +54,19 @@ const Background = styled.div`
     height: 100%;
 `;
 
-const BackgroundImage = styled(Background).attrs<{ blur: boolean; video: string }>((props) => ({
-    style: {
-        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
-    },
-}))<{ blur: boolean; video: string }>`
+const BaseBackgroundImage = styled(Background)<{ blur: boolean; video: string }>`
     background-size: cover;
     background-position: center center;
 
     filter: ${(props) => (props.blur ? 'blur(5px)' : 'none')};
 `;
+
+const BackgroundImage = (props: { blur: boolean; video: string }) => (
+    <BaseBackgroundImage
+        style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')` }}
+        {...props}
+    />
+);
 
 const ContentLayer = styled.div`
     z-index: 2;

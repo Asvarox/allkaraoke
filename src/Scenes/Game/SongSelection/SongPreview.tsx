@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import { focused } from 'Elements/cssMixins';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
+import { PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import useDebounce from '../../../hooks/useDebounce';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
@@ -116,7 +116,13 @@ export default function SongPreviewComponent({
                         </>
                     )}
                 </Content>
-                {active && <SongCardBackground video={songPreview.video} focused />}
+                {active && (
+                    <SongCardBackground
+                        video={songPreview.video}
+                        focused
+                        style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${songPreview.video}/hqdefault.jpg')` }}
+                    />
+                )}
                 <Video show={showVideo} active={keyboardControl} height={finalHeight} width={finalWidth}>
                     <VideoPlayer
                         width={0}
@@ -140,18 +146,7 @@ export default function SongPreviewComponent({
     );
 }
 
-const SongPreviewContainer = styled.div.attrs<{
-    top: number;
-    left: number;
-    active: boolean;
-    width: number;
-    height: number;
-}>((props) => ({
-    style: {
-        top: props.active ? `calc(50vh - ${props.height}px / 2)` : props.top,
-        left: props.active ? 0 : props.left,
-    },
-}))<{ top: number; left: number; width: number; height: number; active: boolean }>`
+const BaseSongPreviewContainer = styled.div<{ width: number; height: number; active: boolean }>`
     width: ${(props) => props.width}px;
     height: ${(props) => props.height}px;
     position: absolute;
@@ -163,6 +158,25 @@ const SongPreviewContainer = styled.div.attrs<{
     ${(props) => !props.active && 'pointer-events: none;'}
     ${(props) => !props.active && 'border-radius: 5px;'}
 `;
+
+interface SongPreviewContainerProps
+    extends PropsWithChildren<{
+        top: number;
+        left: number;
+        active: boolean;
+        width: number;
+        height: number;
+    }> {}
+
+const SongPreviewContainer = (props: SongPreviewContainerProps) => (
+    <BaseSongPreviewContainer
+        style={{
+            top: props.active ? `calc(50vh - ${props.height}px / 2)` : props.top,
+            left: props.active ? 0 : props.left,
+        }}
+        {...props}
+    />
+);
 
 const Backdrop = styled.div`
     position: fixed;

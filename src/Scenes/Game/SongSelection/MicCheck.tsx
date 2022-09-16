@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import { useEffect } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import VolumeIndicator from 'Scenes/Game/VolumeIndicator';
-import styled from 'styled-components';
 
 export default function MicCheck() {
     useEffect(() => {

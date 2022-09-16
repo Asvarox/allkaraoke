@@ -1,10 +1,10 @@
+import styled from '@emotion/styled';
 import { focused } from 'Elements/cssMixins';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import styled from 'styled-components';
 import usePrevious from '../../../hooks/usePrevious';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
@@ -121,6 +121,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                     data-index={index}
                                     data-test={`song-${song.file}`}>
                                     <SongCardBackground
+                                        style={{
+                                            backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')`,
+                                        }}
                                         video={song.video}
                                         focused={!showFilters && keyboardControl && index === focusedSong}
                                     />

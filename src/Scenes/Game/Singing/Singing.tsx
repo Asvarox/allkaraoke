@@ -1,9 +1,9 @@
+import styled from '@emotion/styled';
 import { VideoState } from 'Elements/VideoPlayer';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery } from 'react-query';
-import styled from 'styled-components';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
@@ -100,16 +100,20 @@ const BackgroundContainer = styled.div`
     pointer-events: none;
 `;
 
-const Overlay = styled.div.attrs<{ video: string; width: number; height: number }>((props) => ({
-    style: {
-        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
-        width: `${props.width}px`,
-        height: `${props.height}px`,
-    },
-}))<{ video: string; width: number; height: number }>`
+const BaseOverlay = styled.div`
     background-size: cover;
     background-position: center center;
     filter: blur(10px);
 `;
+
+const Overlay = (props: { video: string; width: number; height: number }) => (
+    <BaseOverlay
+        style={{
+            backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
+            width: `${props.width}px`,
+            height: `${props.height}px`,
+        }}
+    />
+);
 
 export default Singing;

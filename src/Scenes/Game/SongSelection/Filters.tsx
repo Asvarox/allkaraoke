@@ -1,10 +1,10 @@
+import styled from '@emotion/styled';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import usePrevious from 'hooks/usePrevious';
 import { useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { SongListEntryDetails } from 'Scenes/Game/SongSelection/SongCard';
-import styled from 'styled-components';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
 import { Input } from './Input';
 import { nextValue, Switcher } from './Switcher';

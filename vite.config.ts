@@ -9,15 +9,7 @@ export default defineConfig({
     plugins: [
         react({
             babel: {
-                plugins: [
-                    [
-                        'babel-plugin-styled-components',
-                        {
-                            displayName: true,
-                            fileName: false,
-                        },
-                    ],
-                ],
+                plugins: ['@emotion'],
             },
         }),
         tsconfigPaths(),

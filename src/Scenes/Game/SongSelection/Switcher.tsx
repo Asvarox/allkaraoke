@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import { focusable } from 'Elements/cssMixins';
 import { ReactNode } from 'react';
-import styled from 'styled-components';
 import { ValuesType } from 'utility-types';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 import { SongListEntryDetails } from './SongCard';

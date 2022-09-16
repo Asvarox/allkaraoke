@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import { Song } from 'interfaces';
 import { useQuery } from 'react-query';
-import styled from 'styled-components';
 import { Link } from 'wouter';
 import EditSong from './EditSong';
 

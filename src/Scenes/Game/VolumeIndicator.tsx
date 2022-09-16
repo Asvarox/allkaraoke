@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import { ReactNode, useEffect, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
-import styled from 'styled-components';
 
 interface Props {
     playerNumber: number;

@@ -1,5 +1,5 @@
+import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import styled from 'styled-components';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 
 export const SongCardContainer = styled.div<{ width: number }>`
@@ -13,11 +13,7 @@ export const SongCardContainer = styled.div<{ width: number }>`
     box-sizing: border-box;
 `;
 
-export const SongCardBackground = styled.div.attrs<{ video: string }>((props) => ({
-    style: {
-        backgroundImage: `url('https://i3.ytimg.com/vi/${props.video}/hqdefault.jpg')`,
-    },
-}))<{ video: string; focused: boolean }>`
+export const SongCardBackground = styled.div<{ video: string; focused: boolean }>`
     position: absolute;
     z-index: -1;
     top: 0;

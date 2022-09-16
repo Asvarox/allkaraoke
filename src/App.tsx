@@ -1,7 +1,7 @@
+import styled from '@emotion/styled';
 import { GAME_MODE } from 'interfaces';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
-import styled from 'styled-components';
 import { Route, Router } from 'wouter';
 import useHashLocation from './hooks/useHashLocation';
 import Convert from './Scenes/Convert/Convert';

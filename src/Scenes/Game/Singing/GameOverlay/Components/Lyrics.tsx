@@ -1,5 +1,5 @@
-import { Fragment } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { Fragment, PropsWithChildren } from 'react';
 import GameState from '../../GameState/GameState';
 import isNotesSection from '../../Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../../Helpers/notesSelectors';
@@ -77,19 +77,23 @@ const HeadstartContainer = styled.span`
     height: 0;
 `;
 
-const Headstart = styled.span.attrs<{ percent: number; color: string }>(({ percent, color }) => ({
-    style: {
-        right: `${Math.max(0, 1 - percent) * 150}px`,
-        width: `${Math.min(1, 2 - percent) * 150}px`,
-        background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${color}, 0) 100%)`,
-    },
-}))<{ percent: number; color: string }>`
+const BaseHeadstart = styled.span`
     position: absolute;
     width: 100px;
     height: 31px;
     margin: 7px 0;
     right: 100px;
 `;
+
+const Headstart = ({ percent, color }: { percent: number; color: string }) => (
+    <BaseHeadstart
+        style={{
+            right: `${Math.max(0, 1 - percent) * 150}px`,
+            width: `${Math.min(1, 2 - percent) * 150}px`,
+            background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${color}, 0) 100%)`,
+        }}
+    />
+);
 
 const LyricContainer = styled.span<{ type: string }>`
     font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
@@ -100,12 +104,17 @@ const LyricActiveContainer = styled.span`
     position: absolute;
     z-index: 1;
 `;
-const LyricActive = styled.span.attrs<{ fill: number; color: string }>(({ fill, color }) => ({
-    style: {
-        clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -50px 0)`,
-        color: `rgb(${color})`,
-    },
-}))<{ fill: number; color: string }>``;
+const BaseLyricActive = styled.span``;
+
+const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number; color: string }>) => (
+    <BaseLyricActive
+        style={{
+            clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -50px 0)`,
+            color: `rgb(${color})`,
+        }}>
+        {children}
+    </BaseLyricActive>
+);
 
 const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     @keyframes blink {

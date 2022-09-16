@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import React from 'react';
 import { blueFill, blueStroke, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import styled from 'styled-components';
 
 const Background = styled.div`
     z-index: -1;

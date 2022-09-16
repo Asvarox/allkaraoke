@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { useEffect, useRef, useState } from 'react';
 import { Input } from 'Scenes/Game/SongSelection/Input';
-import styled from 'styled-components';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';
 

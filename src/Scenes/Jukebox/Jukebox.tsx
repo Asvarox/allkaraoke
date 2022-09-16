@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
 import { navigate } from 'hooks/useHashLocation';
@@ -6,7 +7,6 @@ import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
-import styled from 'styled-components';
 import { Link } from 'wouter';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';

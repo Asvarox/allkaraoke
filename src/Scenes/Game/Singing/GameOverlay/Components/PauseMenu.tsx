@@ -1,7 +1,7 @@
+import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useRef } from 'react';
-import styled from 'styled-components';
 
 interface Props {
     onResume: () => void;

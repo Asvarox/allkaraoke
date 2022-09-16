@@ -1,9 +1,9 @@
+import styled from '@emotion/styled';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
-import styled from 'styled-components';
 import { Link } from 'wouter';
 import logo from './logo.gif';
 

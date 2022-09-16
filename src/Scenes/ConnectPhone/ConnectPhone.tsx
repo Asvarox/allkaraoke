@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import styled from 'styled-components';
 import WebRTCServer from './WebRTCServer';
 
 function ConnectPhone() {

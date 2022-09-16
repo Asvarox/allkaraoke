@@ -1,7 +1,7 @@
+import styled from '@emotion/styled';
 import { VideoState } from 'Elements/VideoPlayer';
 import { Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
-import styled from 'styled-components';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';

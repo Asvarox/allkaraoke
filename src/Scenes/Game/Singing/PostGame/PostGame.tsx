@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import useKeyboard from 'hooks/useKeyboard';
 import { DetailedScore, Song } from 'interfaces';
 import { SyntheticEvent, useEffect, useMemo, useState } from 'react';
-import styled from 'styled-components';
 import SongPage, { ContentElement } from '../../SongPage';
 import ScoreText from '../GameOverlay/Components/ScoreText';
 import styles from '../GameOverlay/Drawing/styles';

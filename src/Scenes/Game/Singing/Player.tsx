@@ -10,9 +10,9 @@ import {
     useState,
 } from 'react';
 
+import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
-import styled from 'styled-components';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';

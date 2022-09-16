@@ -1,7 +1,7 @@
+import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import styled from 'styled-components';
 import createPersistedState from 'use-persisted-state';
 import { HelpEntry } from './Context';
 

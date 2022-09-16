@@ -1,5 +1,6 @@
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import styled, { css } from 'styled-components';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
@@ -14,7 +15,7 @@ export const Button = styled.button<{ focused?: boolean }>`
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    ${typography}
+    ${typography};
 
     pointer-events: auto;
     ${(props) => props.focused && buttonFocused}

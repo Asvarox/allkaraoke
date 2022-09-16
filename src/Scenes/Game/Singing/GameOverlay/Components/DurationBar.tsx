@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import { uniq } from 'lodash-es';
 import { useMemo } from 'react';
-import styled from 'styled-components';
 import GameState from '../../GameState/GameState';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '../../Helpers/notesSelectors';
 import styles from '../Drawing/styles';
@@ -60,11 +60,7 @@ const Bar = styled.div`
     top: calc(50% - 3px);
 `;
 
-const Marker = styled(Bar).attrs<{ position: number }>((props) => ({
-    style: {
-        left: `${Math.min(props.position * 100, 100)}%`,
-    },
-}))<{ position: number }>`
+const BaseMarker = styled(Bar)`
     top: 0;
     margin-left: -3px;
     width: 6px;
@@ -72,14 +68,18 @@ const Marker = styled(Bar).attrs<{ position: number }>((props) => ({
     opacity: 75%;
 `;
 
-const BarFill = styled(Bar).attrs<{ fill: number }>(({ fill }) => ({
-    style: {
-        width: `${Math.round(fill * 10000) / 100}%`,
-    },
-}))<{ fill: number }>`
+const Marker = (props: { position: number }) => (
+    <BaseMarker style={{ left: `${Math.min(props.position * 100, 100)}%` }} />
+);
+
+const BaseBarFill = styled(Bar)`
     top: 0;
     background: white;
     opacity: 50%;
 `;
+
+const BarFill = (props: { fill: number }) => (
+    <BaseBarFill style={{ width: `${Math.round(props.fill * 10000) / 100}%` }} />
+);
 
 export default DurationBar;

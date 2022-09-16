@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import { Song } from 'interfaces';
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import getCurrentBeat from '../../Game/Singing/GameState/Helpers/getCurrentBeat';
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../../Game/Singing/Helpers/notesSelectors';
