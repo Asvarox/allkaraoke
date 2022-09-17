@@ -52,10 +52,11 @@ class InputManager {
 
     public setPlayerInput = (playerNumber: number, source: InputSourceNames, channel = 0, deviceId?: string) => {
         const newInput = { inputSource: source, deviceId, channel };
+        const oldInput = this.playerInputs[playerNumber];
         this.playerInputs[playerNumber] = newInput;
 
         storage.storeValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY, this.playerInputs);
-        events.playerInputChanged.dispatch(newInput);
+        events.playerInputChanged.dispatch(playerNumber, oldInput, newInput);
     };
 
     public getPlayerInput = (playerNumber: number): SelectedPlayerInput | null =>

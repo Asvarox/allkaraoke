@@ -6,6 +6,14 @@ import { typography } from './cssMixins';
 export const MenuButton = styled(Button)<{ focused?: boolean }>`
     margin: 5px 0;
     height: 100px;
+    border: 0 solid black;
+
+    :disabled {
+        cursor: default;
+        color: #989898;
+        background-color: #212121;
+        border-width: 3px;
+    }
 `;
 
 export const MenuContainer = styled.div`

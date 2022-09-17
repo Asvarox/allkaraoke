@@ -18,7 +18,8 @@ export const Button = styled.button<{ focused?: boolean }>`
     ${typography};
 
     pointer-events: auto;
-    ${(props) => props.focused && buttonFocused}
+    ${(props) => props.focused && buttonFocused};
+    box-sizing: border-box;
 
     transition: 300ms;
 `;

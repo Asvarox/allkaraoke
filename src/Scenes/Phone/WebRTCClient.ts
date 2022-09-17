@@ -1,4 +1,5 @@
 import { DataConnection, Peer } from 'peerjs';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import { v4 } from 'uuid';
 
@@ -20,6 +21,11 @@ export interface WebRTCStopMonitorEvent {
     type: 'stop-monitor';
 }
 
+export interface WebRTCSetPlayerNumber {
+    type: 'set-player-number';
+    playerNumber: number | null;
+}
+
 export interface WebRTCNewFrequencyEvent {
     type: 'freq';
     freqs: [number, number];
@@ -27,6 +33,7 @@ export interface WebRTCNewFrequencyEvent {
 }
 
 export type WebRTCEvents =
+    | WebRTCSetPlayerNumber
     | WebRTCRegisterEvent
     | WebRTCStartMonitorEvent
     | WebRTCStopMonitorEvent
@@ -53,13 +60,16 @@ class WebRTCClient {
     };
 
     public connectToServer = (roomId: string, name: string) => {
+        events.karaokeConnectionStatusChange.dispatch('connecting');
         this.connection = this.peer!.connect(roomId);
 
         this.connection.on('open', () => {
             this.reconnecting = false;
 
             this.connection?.send({ type: 'register', name, id: this.clientId } as WebRTCEvents);
+            events.karaokeConnectionStatusChange.dispatch('connected');
             this.connection?.on('data', (data: WebRTCEvents) => {
+                console.log('data', data);
                 if (data.type === 'start-monitor') {
                     MicInput.addListener(this.onFrequencyUpdate);
                     // echoCancellation is turned on because without it there is silence from the mic
@@ -68,6 +78,8 @@ class WebRTCClient {
                 } else if (data.type === 'stop-monitor') {
                     MicInput.removeListener(this.onFrequencyUpdate);
                     MicInput.stopMonitoring();
+                } else if (data.type === 'set-player-number') {
+                    events.remoteMicPlayerNumberSet.dispatch(data.playerNumber);
                 }
             });
         });
@@ -75,6 +87,7 @@ class WebRTCClient {
         this.connection.on('error', console.warn);
 
         this.connection.on('close', () => {
+            events.karaokeConnectionStatusChange.dispatch('disconnected');
             MicInput.removeListener(this.onFrequencyUpdate);
             MicInput.stopMonitoring();
 
@@ -86,6 +99,7 @@ class WebRTCClient {
     };
 
     private reconnect = (roomId: string, name: string) => {
+        events.karaokeConnectionStatusChange.dispatch('reconnecting');
         if (this.reconnecting) {
             this.connectToServer(roomId, name);
             setTimeout(() => this.reconnect(roomId, name), 500);

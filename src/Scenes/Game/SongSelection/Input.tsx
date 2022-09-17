@@ -8,13 +8,20 @@ interface Props {
     label: ReactNode;
     value: string;
     onChange: (value: string) => void;
+    disabled?: boolean;
 }
 
 export const Input = forwardRef(
-    ({ focused, label, value, onChange, ...restProps }: Props, ref: ForwardedRef<HTMLInputElement>) => (
+    ({ focused, label, value, onChange, disabled, ...restProps }: Props, ref: ForwardedRef<HTMLInputElement>) => (
         <Container focused={focused} {...restProps}>
             <Label>{label}</Label>
-            <StyledInput value={value} onChange={(e) => onChange(e.target.value)} {...restProps} ref={ref} />
+            <StyledInput
+                value={value}
+                onChange={(e) => onChange(e.target.value)}
+                {...restProps}
+                disabled={disabled}
+                ref={ref}
+            />
         </Container>
     ),
 );
@@ -44,6 +51,7 @@ const StyledInput = styled.input`
     ${typography};
     color: ${styles.colors.text.active};
     width: 100%;
+
     &:focus {
         outline: none;
     }

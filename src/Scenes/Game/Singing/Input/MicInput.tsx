@@ -19,7 +19,7 @@ class MicInput implements InputInterface {
         this.stream = await navigator.mediaDevices.getUserMedia({
             audio: {
                 ...(deviceId ? { deviceId, exact: true } : {}),
-                echoCancellation: false,
+                echoCancellation: echoCancellation,
             },
             video: false,
         });

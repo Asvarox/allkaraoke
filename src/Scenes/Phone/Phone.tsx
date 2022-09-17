@@ -1,8 +1,13 @@
 import styled from '@emotion/styled';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
-import { useEffect, useRef, useState } from 'react';
+import { throttle } from 'lodash-es';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import { Input } from 'Scenes/Game/SongSelection/Input';
+import VolumeIndicator from 'Scenes/Phone/VolumeIndicator';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';
 
@@ -14,29 +19,44 @@ const usePersistedName = createPersistedState<string>('remote_mic_name');
 
 function Phone({ roomId }: Props) {
     const [name, setName] = usePersistedName('');
-    const [currentFrequency, setCurrentFrequency] = useState(0);
     const [volume, setVolume] = useState(0);
     const inputRef = useRef<HTMLInputElement | null>(null);
+    const [connectionStatus] = useEventListener(events.karaokeConnectionStatusChange) ?? ['uninitialised'];
+    const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
+
+    const updateVolumes = useCallback(
+        throttle((freqs: number[], volumes: number[]) => {
+            setVolume(volumes[0]);
+        }, 150),
+        [setVolume],
+    );
 
     useEffect(() => {
         inputRef.current?.focus();
     }, []);
 
-    // useEffect(() => {
-    //     MicInput.startMonitoring();
-    //     return MicInput.addListener((freqs, volumes) => {
-    //         setCurrentFrequency(freqs[0]);
-    //         setVolume(volumes[0]);
-    //     });
-    // }, []);
+    useEffect(() => {
+        MicInput.startMonitoring(undefined, true);
+        return MicInput.addListener(updateVolumes);
+    }, [updateVolumes]);
+
+    const disabled = connectionStatus !== 'uninitialised';
 
     return (
         <LayoutWithBackground>
             <Container>
-                <h2>{currentFrequency}</h2>
-                <h2>{volume}</h2>
-                <Input focused={false} label="Name" value={name} onChange={setName} ref={inputRef} />
-                <MenuButton onClick={() => WebRTCClient.connect(roomId, name)}>Connect</MenuButton>
+                <VolumeIndicator volume={volume} playerNumber={playerNumber} />
+                <Input
+                    focused={false}
+                    label="Name"
+                    value={name}
+                    onChange={setName}
+                    ref={inputRef}
+                    disabled={disabled}
+                />
+                <MenuButton onClick={() => WebRTCClient.connect(roomId, name)} disabled={disabled || name === ''}>
+                    {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
+                </MenuButton>
             </Container>
         </LayoutWithBackground>
     );
@@ -50,4 +70,9 @@ const Container = styled(MenuContainer)`
     box-sizing: border-box;
     height: 100vh;
     max-height: 800px;
+
+    ${MenuButton} {
+        padding: 0.5em;
+        height: 72px;
+    }
 `;

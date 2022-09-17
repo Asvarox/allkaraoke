@@ -5,8 +5,6 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import App from './App';
 import './index.css';
 
-console.log(import.meta.env.VITE_APP_SENTRY_DSN_URL);
-
 if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
     Sentry.init({
         dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,

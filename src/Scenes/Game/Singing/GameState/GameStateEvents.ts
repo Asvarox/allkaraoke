@@ -22,8 +22,16 @@ export const events = {
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
     phoneConnected: new GameStateEvent<(id: string) => void>(),
     phoneDisconnected: new GameStateEvent<(id: string) => void>(),
-    playerInputChanged: new GameStateEvent<(input: SelectedPlayerInput) => void>(),
+    playerInputChanged: new GameStateEvent<
+        (playerNumber: number, oldInput: SelectedPlayerInput, newInput: SelectedPlayerInput) => void
+    >(),
     inputListChanged: new GameStateEvent<() => void>(),
+
+    karaokeConnectionStatusChange: new GameStateEvent<
+        (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error') => void
+    >(),
+
+    remoteMicPlayerNumberSet: new GameStateEvent<(playerNumber: number | null) => void>(),
 };
 
 export default events;

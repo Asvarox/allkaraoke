@@ -5,7 +5,10 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     const [value, setValue] = useState<Parameters<T> | null>(null);
 
     useEffect(() => {
-        const subscriber = ((...args: Parameters<T>) => setValue(args)) as T;
+        const subscriber = ((...args: Parameters<T>) => {
+            setValue(args);
+            console.log(args);
+        }) as T;
         event.subscribe(subscriber);
         return () => event.unsubscribe(subscriber);
     }, [event]);
