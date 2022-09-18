@@ -29,7 +29,7 @@ jobs:
                   cache: 'yarn'
             - run: yarn install
             - run: yarn lint
-    cypress-run:
+    e2e-tests-run:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -38,21 +38,16 @@ jobs:
                   node-version: '16'
                   cache: 'yarn'
             - run: yarn install
-            - name: Cypress run
-              uses: cypress-io/github-action@v4
-              with:
-                  build: yarn run build
-                  start: yarn start:production
-              env:
-                  DISABLE_ESLINT_PLUGIN: true
+            - run: npx playwright install --with-deps chromium
+            - name: E2E Test run
+              run: yarn e2e
             - uses: actions/upload-artifact@v3
               if: failure()
               with:
-                  name: cypress-test-results
+                  name: e2e-test-results
                   path: |
-                      cypress/screenshots
-                      cypress/videos
-                      cypress/integration/__image_snapshots__
+                      playwright-report
+                        test-results
             - uses: actions/upload-artifact@v3
               if: success()
               with:
@@ -60,7 +55,7 @@ jobs:
                   path: build
     deploy:
         runs-on: ubuntu-latest
-        needs: ['cypress-run', 'unit-tests', 'lint']
+        needs: ['e2e-tests-run', 'unit-tests', 'lint']
         steps:
             - uses: actions/checkout@v2
             - uses: actions/download-artifact@v3

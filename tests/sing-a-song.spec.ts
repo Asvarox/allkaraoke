@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
-import e2eDuetSong from './songs/e2e-test-multitrack.json';
-import e2eSong from './songs/e2e-test.json';
-import index from './songs/index.json';
+import e2eDuetSong from './fixtures/songs/e2e-test-multitrack.json';
+import e2eSong from './fixtures/songs/e2e-test.json';
+import index from './fixtures/songs/index.json';
 
 test.beforeEach(async ({ page }) => {
     await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
