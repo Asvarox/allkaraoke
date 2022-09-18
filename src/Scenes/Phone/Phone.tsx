@@ -53,8 +53,12 @@ function Phone({ roomId }: Props) {
                     onChange={setName}
                     ref={inputRef}
                     disabled={disabled}
+                    data-test="player-name-input"
                 />
-                <MenuButton onClick={() => WebRTCClient.connect(roomId, name)} disabled={disabled || name === ''}>
+                <MenuButton
+                    onClick={() => WebRTCClient.connect(roomId, name)}
+                    disabled={disabled || name === ''}
+                    data-test="connect-button">
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                 </MenuButton>
             </Container>

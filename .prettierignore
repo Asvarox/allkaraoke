@@ -1,4 +1,4 @@
 build
 node_modules
 public/songs
-cypress/fixtures
+tests/fixtures

@@ -36,7 +36,7 @@ function ConnectPhone() {
                 <CopyLinkInstruction>
                     <h4>Or copy and send the link</h4>
                     <InputCopyContainer>
-                        <InputCopy disabled value={link} />
+                        <InputCopy disabled value={link} data-test="server-link-input" />
                         <CopyButton
                             onClick={() => {
                                 navigator.clipboard.writeText(link);

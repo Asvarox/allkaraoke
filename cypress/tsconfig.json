@@ -1,9 +1,0 @@
-{
-    "compilerOptions": {
-        "target": "es5",
-        "lib": ["es5", "dom"],
-        "types": ["cypress", "cypress-plugin-snapshots"],
-        "isolatedModules": false
-    },
-    "include": ["**/*.ts"]
-}

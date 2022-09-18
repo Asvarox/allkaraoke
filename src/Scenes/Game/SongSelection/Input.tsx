@@ -13,7 +13,7 @@ interface Props {
 
 export const Input = forwardRef(
     ({ focused, label, value, onChange, disabled, ...restProps }: Props, ref: ForwardedRef<HTMLInputElement>) => (
-        <Container focused={focused} {...restProps}>
+        <Container focused={focused}>
             <Label>{label}</Label>
             <StyledInput
                 value={value}

@@ -21,12 +21,12 @@ class InputManager {
     private playerInputs: SelectedPlayerInput[] = storage.getValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY) ?? [];
 
     constructor() {
-        // @ts-ignore
-        const isCypress = !!window.cypress;
+        // @ts-expect-error
+        const isE2ETests = !!window.isE2ETests;
 
         if (this.playerInputs.length === 0) {
             /* eslint-disable @typescript-eslint/no-unused-vars */
-            const Input = process.env.NODE_ENV === 'development' && !isCypress ? 'Dummy' : 'Microphone';
+            const Input = process.env.NODE_ENV === 'development' && !isE2ETests ? 'Dummy' : 'Microphone';
             const Input1 = 'Microphone';
             /* eslint-enable @typescript-eslint/no-unused-vars */
 
