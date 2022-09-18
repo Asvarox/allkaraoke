@@ -7,9 +7,9 @@ test('Jukebox', async ({ page }) => {
 
     await page.waitForTimeout(150);
     await page.keyboard.press('ArrowUp'); // "skip song"
-    await page.waitForTimeout(150);
+    await page.waitForTimeout(250);
     await page.keyboard.press('Enter');
-    await page.waitForTimeout(150);
+    await page.waitForTimeout(250);
 
     const selectedSong = await page.locator('[data-test="jukebox-container"]').getAttribute('data-song');
 

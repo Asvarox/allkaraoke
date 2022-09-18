@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/test';
-import { mockSongs } from './helpers';
+import { initTestMode } from './helpers';
 
 test.beforeEach(async ({ page }) => {
-    await mockSongs(page);
+    await initTestMode(page);
 });
 
 test('Source selection', async ({ page }) => {
@@ -17,13 +17,15 @@ test('Source selection', async ({ page }) => {
     await page.locator('[data-test="player-1-input"]').click();
     await page.locator('[data-test="player-1-input"]').click();
     await page.locator('[data-test="player-1-input"]').click();
-    await page.locator('[data-test="player-1-source"]').click();
     await page.locator('[data-test="player-1-input"]').click();
     await page.locator('[data-test="player-2-source"]').click();
+    await page.locator('[data-test="player-2-source"]').click();
+    await page.locator('[data-test="player-2-source"]').click();
+    await page.locator('[data-test="player-2-input"]').click();
+    await page.locator('[data-test="player-2-input"]').click();
     await page.locator('[data-test="player-2-input"]').click();
     await page.locator('[data-test="player-2-source"]').click();
     await page.locator('[data-test="player-2-input"]').click();
-    await page.locator('[data-test="player-2-source"]').click();
     await page.locator('[data-test="player-2-input"]').click();
     await page.locator('[data-test="player-2-input"]').click();
     await expect(page.locator('[data-test="mic-mismatch-warning"]')).toBeVisible();
