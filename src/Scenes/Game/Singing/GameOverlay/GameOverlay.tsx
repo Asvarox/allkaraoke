@@ -65,10 +65,10 @@ function GameOverlay({
             <DurationBar usedTracks={tracksForPlayers} />
             <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
             <Scores>
-                <span>
+                <span data-test="player-1-score" data-score={GameState.getPlayer(0).getScore()}>
                     <ScoreText score={GameState.getPlayer(0).getScore()} />
                 </span>
-                <span>
+                <span data-test="player-2-score" data-score={GameState.getPlayer(1).getScore()}>
                     <ScoreText score={GameState.getPlayer(1).getScore()} />
                 </span>
                 <GameCanvas>

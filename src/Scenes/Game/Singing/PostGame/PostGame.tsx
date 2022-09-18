@@ -53,14 +53,20 @@ function PostGame({ song, width, height, onClickSongSelection }: Props) {
             <ScoresContainer>
                 <ScoreTextPlayer>Player #1</ScoreTextPlayer>
                 <br />
-                <ScoreTextScore win={currentTick === MAX_TICKS && player1sum > player2sum}>
+                <ScoreTextScore
+                    win={currentTick === MAX_TICKS && player1sum > player2sum}
+                    data-test="player-1-score"
+                    data-score={player1sum}>
                     <ScoreText score={player1sum} />
                 </ScoreTextScore>
                 <br /> {/* xD */}
                 <br />
                 <br />
                 <br />
-                <ScoreTextScore win={currentTick === MAX_TICKS && player2sum > player1sum}>
+                <ScoreTextScore
+                    win={currentTick === MAX_TICKS && player2sum > player1sum}
+                    data-test="player-2-score"
+                    data-score={player2sum}>
                     <ScoreText score={player2sum} />
                 </ScoreTextScore>
                 <br />
