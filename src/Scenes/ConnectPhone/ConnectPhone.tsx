@@ -10,7 +10,7 @@ function ConnectPhone() {
         WebRTCServer.start();
     }, []);
 
-    const link = `${window.location.origin}/#/phone/${WebRTCServer.getRoomId()}`;
+    const link = `${window.location.origin}${window.location.pathname}#/phone/${WebRTCServer.getRoomId()}`;
 
     return (
         <Container>
