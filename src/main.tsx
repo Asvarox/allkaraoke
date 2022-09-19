@@ -25,10 +25,18 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 
 events.phoneConnected.subscribe(({ name }) => {
-    toast.success(`Remote microphone ${name} connected!`);
+    toast.success(
+        <>
+            Remote microphone <b>{name}</b> connected!
+        </>,
+    );
 });
 events.phoneDisconnected.subscribe(({ name }) => {
-    toast.error(`Remote microphone ${name} disconnected!`);
+    toast.error(
+        <>
+            Remote microphone <b>{name}</b> disconnected!
+        </>,
+    );
 });
 
 root.render(
@@ -36,7 +44,7 @@ root.render(
     <QueryClientProvider client={client}>
         <App />
         {import.meta.env.DEV && <ReactQueryDevtools initialIsOpen={false} />}
-        <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
+        <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
     </QueryClientProvider>,
     // </React.StrictMode>
 );
