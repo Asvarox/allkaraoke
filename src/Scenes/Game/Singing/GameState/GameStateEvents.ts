@@ -20,8 +20,8 @@ export const events = {
     sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>(),
     // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
-    phoneConnected: new GameStateEvent<(id: string) => void>(),
-    phoneDisconnected: new GameStateEvent<(id: string) => void>(),
+    phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>(),
+    phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>(),
     playerInputChanged: new GameStateEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput, newInput: SelectedPlayerInput) => void
     >(),

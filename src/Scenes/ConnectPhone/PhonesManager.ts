@@ -72,12 +72,13 @@ class PhoneManager {
 
     public addPhone = (id: string, name: string, connection: Peer.DataConnection) => {
         this.phones.push(new Phone(id, name, connection));
-        GameStateEvents.phoneConnected.dispatch(id);
+        GameStateEvents.phoneConnected.dispatch({ id, name });
     };
 
     public removePhone = (id: string) => {
+        const removedPhone = this.phones.find((phone) => phone.id === id);
         this.phones = this.phones.filter((phone) => phone.id !== id);
-        GameStateEvents.phoneDisconnected.dispatch(id);
+        if (removedPhone) GameStateEvents.phoneDisconnected.dispatch(removedPhone);
     };
 
     public getPhones = () => this.phones;
