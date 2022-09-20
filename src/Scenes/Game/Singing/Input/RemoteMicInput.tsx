@@ -2,7 +2,7 @@ import PhonesManager, { Phone } from 'Scenes/ConnectPhone/PhonesManager';
 import InputInterface from './Interface';
 
 class RemoteMicInput implements InputInterface {
-    private frequencies: [number] = [220];
+    private frequencies: [number] = [0];
     private volumes: [number] = [1];
 
     private phone: Phone | null = null;
@@ -14,17 +14,30 @@ class RemoteMicInput implements InputInterface {
         return this.phone.getInput().startMonitoring();
     };
 
-    public getFrequencies = () => {
-        const val = this.phone?.getInput().getFrequencies() ?? this.frequencies;
-        console.log(val);
+    public getFrequencies = (deviceId?: string) => {
+        const val = PhonesManager.getPhoneById(deviceId ?? '')
+            ?.getInput()
+            .getFrequencies();
+        // console.log(deviceId, val);
 
-        return val;
+        return val ?? this.frequencies;
     };
-    public getVolumes = () => this.phone?.getInput().getVolumes() ?? this.volumes;
+    public getVolumes = (deviceId?: string) => {
+        const val = PhonesManager.getPhoneById(deviceId ?? '')
+            ?.getInput()
+            .getVolumes();
+        // console.log(deviceId, val);
+
+        return val ?? this.volumes;
+    };
 
     public stopMonitoring = async () => this.phone?.getInput().stopMonitoring();
 
-    public getInputLag = () => this.phone?.getInput().getInputLag() ?? 0;
+    public getInputLag = (deviceId?: string) =>
+        PhonesManager.getPhoneById(deviceId ?? '')
+            ?.getInput()
+            .getInputLag() ?? 0;
+
     public getChannelsCount = () => 1;
 }
 

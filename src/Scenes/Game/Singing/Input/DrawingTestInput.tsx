@@ -6,8 +6,8 @@ class DrawingTestInput implements InputInterface {
 
     public startMonitoring = async () => {};
 
-    public getFrequencies = () => this.frequencies;
-    public getVolumes = () => this.volumes;
+    public getFrequencies = (deviceId?: string) => this.frequencies;
+    public getVolumes = (deviceId?: string) => this.volumes;
 
     public stopMonitoring = async () => {};
 

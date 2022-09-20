@@ -20,15 +20,17 @@ const usePersistedName = createPersistedState<string>('remote_mic_name');
 function Phone({ roomId }: Props) {
     const [name, setName] = usePersistedName('');
     const [volume, setVolume] = useState(0);
+    const [frequency, setFrequency] = useState(0);
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [connectionStatus] = useEventListener(events.karaokeConnectionStatusChange) ?? ['uninitialised'];
     const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
 
     const updateVolumes = useCallback(
         throttle((freqs: number[], volumes: number[]) => {
+            setFrequency(freqs[0]);
             setVolume(volumes[0]);
         }, 150),
-        [setVolume],
+        [setVolume, setFrequency],
     );
 
     useEffect(() => {
@@ -45,7 +47,7 @@ function Phone({ roomId }: Props) {
     return (
         <LayoutWithBackground>
             <Container>
-                <VolumeIndicator volume={volume} playerNumber={playerNumber} />
+                <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />
                 <Input
                     focused={false}
                     label="Name"

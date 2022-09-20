@@ -39,8 +39,10 @@ export type WebRTCEvents =
     | WebRTCStopMonitorEvent
     | WebRTCNewFrequencyEvent;
 
+const MIC_ID_KEY = 'MIC_CLIENT_ID';
+
 class WebRTCClient {
-    private clientId = v4();
+    private clientId = window.sessionStorage.getItem(MIC_ID_KEY);
     private peer: Peer | null = null;
     private connection: DataConnection | null = null;
     private reconnecting = false;
@@ -49,8 +51,15 @@ class WebRTCClient {
         this.connection?.send({ type: 'freq', freqs: freqs, volumes: volumes } as WebRTCEvents);
     };
 
+    private setClientId = (id: string) => {
+        this.clientId = id;
+        window.sessionStorage.setItem(MIC_ID_KEY, id);
+    };
+
     public connect = (roomId: string, name: string) => {
-        this.peer = new Peer(this.clientId, { debug: 3 });
+        if (this.clientId === null) this.setClientId(v4());
+
+        this.peer = new Peer(this.clientId!, { debug: 3 });
 
         this.peer.on('open', () => this.connectToServer(roomId, name));
         this.peer.on('close', () => {

@@ -1,4 +1,5 @@
 import Peer from 'peerjs';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import GameStateEvents, { events } from '../Game/Singing/GameState/GameStateEvents';
 import InputInterface from '../Game/Singing/Input/Interface';
@@ -56,14 +57,18 @@ class PhoneManager {
     constructor() {
         events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
             if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
+                const playerNumber = InputManager.getInputs().findIndex(
+                    (input) =>
+                        input.inputSource === RemoteMicrophoneInputSource.inputName &&
+                        input.deviceId === oldInput.deviceId,
+                );
                 const unselectedPhone = this.phones.find((phone) => phone.id === oldInput.deviceId);
-                console.log('unselectedPhone', unselectedPhone);
 
-                unselectedPhone?.setPlayerNumber(null);
+                unselectedPhone?.setPlayerNumber(playerNumber >= 0 ? playerNumber : null);
             }
             if (newInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
                 const selectedPhone = this.phones.find((phone) => phone.id === newInput.deviceId);
-                console.log('selectedPhone', selectedPhone);
+                console.log('selectedPhone', oldInput, newInput);
 
                 selectedPhone?.setPlayerNumber(playerNumber);
             }

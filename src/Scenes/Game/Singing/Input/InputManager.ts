@@ -36,13 +36,17 @@ class InputManager {
     }
 
     public getPlayerFrequency = (playerNumber: number) => {
-        const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getFrequencies();
+        const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getFrequencies(
+            this.playerInputs[playerNumber].deviceId,
+        );
 
         return frequencies[this.playerInputs[playerNumber].channel];
     };
 
     public getPlayerVolume = (playerNumber: number) => {
-        const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getVolumes();
+        const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getVolumes(
+            this.playerInputs[playerNumber].deviceId,
+        );
 
         return frequencies[this.playerInputs[playerNumber].channel];
     };
@@ -75,6 +79,8 @@ class InputManager {
             this.playerInputs.map((playerInput) => this.sourceNameToInput(playerInput.inputSource).stopMonitoring()),
         );
     };
+
+    public getInputs = () => this.playerInputs;
 
     // todo: Create eg. "InputSourceManager" and have the logic there?
     private sourceNameToInput = (sourceName: InputSourceNames) => {

@@ -13,23 +13,35 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
 
     const serverUrl = await page.locator('[data-test="server-link-input"]').inputValue();
 
-    const remoteMicPage = await context.newPage();
+    const remoteMicBluePage = await context.newPage();
 
-    await remoteMicPage.goto(serverUrl);
-    await remoteMicPage.locator('[data-test="player-name-input"]').fill('E2E Test');
-    await remoteMicPage.locator('[data-test="connect-button"]').click();
-    await expect(remoteMicPage.locator('[data-test="connect-button"]')).toContainText('Connected', {
+    await remoteMicBluePage.goto(serverUrl);
+    await remoteMicBluePage.locator('[data-test="player-name-input"]').fill('E2E Test Blue');
+    await remoteMicBluePage.locator('[data-test="connect-button"]').click();
+    await expect(remoteMicBluePage.locator('[data-test="connect-button"]')).toContainText('Connected', {
+        ignoreCase: true,
+    });
+
+    const remoteMicRed = await context.newPage();
+
+    await remoteMicRed.goto(serverUrl);
+    await remoteMicRed.locator('[data-test="player-name-input"]').fill('E2E Test Red');
+    await remoteMicRed.locator('[data-test="connect-button"]').click();
+    await expect(remoteMicRed.locator('[data-test="connect-button"]')).toContainText('Connected', {
         ignoreCase: true,
     });
 
     await page.locator('[data-test="player-1-source"]').click();
     await page.locator('[data-test="player-1-source"]').click();
-
-    await expect(page.locator('[data-test="player-1-input"]')).toContainText('E2E Test', { ignoreCase: true });
+    await expect(page.locator('[data-test="player-1-input"]')).toContainText('E2E Test Blue', { ignoreCase: true });
 
     await page.locator('[data-test="player-2-source"]').click();
+    await page.locator('[data-test="player-2-source"]').click();
+    await page.locator('[data-test="player-2-input"]').click();
+    await expect(page.locator('[data-test="player-2-input"]')).toContainText('E2E Test Red', { ignoreCase: true });
 
     await page.keyboard.press('Backspace');
+    await page.reload();
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
 
     await page.locator('[data-test="song-e2e-test-multitrack.json"]').dblclick();

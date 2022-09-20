@@ -5,9 +5,10 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 interface Props {
     volume: number;
     playerNumber: number | null;
+    frequency: number | null;
 }
 
-export default function VolumeIndicator({ playerNumber, volume }: Props) {
+export default function VolumeIndicator({ playerNumber, volume, frequency }: Props) {
     const [maxVolume, setMaxVolume] = useState(0.000001);
 
     useEffect(() => {
@@ -21,6 +22,7 @@ export default function VolumeIndicator({ playerNumber, volume }: Props) {
 
     return (
         <IndicatorContainer color={backgroundColor}>
+            <Frequency>{frequency ? Math.round(frequency) : ''}</Frequency>
             <Indicator
                 color={indicatorColor}
                 style={{ height: `${100 - Math.min(100, (volume / maxVolume) * 100)}%` }}
@@ -29,6 +31,12 @@ export default function VolumeIndicator({ playerNumber, volume }: Props) {
     );
 }
 
+const Frequency = styled.span`
+    position: absolute;
+    color: white;
+    opacity: 0.15;
+`;
+
 const Indicator = styled.div<{ color: string }>`
     width: 100%;
     background-color: ${(props) => props.color};
@@ -36,6 +44,7 @@ const Indicator = styled.div<{ color: string }>`
 `;
 
 const IndicatorContainer = styled.div<{ color: string }>`
+    position: relative;
     border: 1px solid white;
     width: 100%;
     aspect-ratio: 1 / 1;
