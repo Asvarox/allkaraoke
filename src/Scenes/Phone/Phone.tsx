@@ -44,6 +44,11 @@ function Phone({ roomId }: Props) {
 
     const disabled = connectionStatus !== 'uninitialised';
 
+    const onConnect = () => {
+        WebRTCClient.connect(roomId, name);
+        navigator.wakeLock?.request('screen');
+    };
+
     return (
         <LayoutWithBackground>
             <Container>
@@ -57,10 +62,7 @@ function Phone({ roomId }: Props) {
                     disabled={disabled}
                     data-test="player-name-input"
                 />
-                <MenuButton
-                    onClick={() => WebRTCClient.connect(roomId, name)}
-                    disabled={disabled || name === ''}
-                    data-test="connect-button">
+                <MenuButton onClick={onConnect} disabled={disabled || name === ''} data-test="connect-button">
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                 </MenuButton>
             </Container>

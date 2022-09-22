@@ -58,19 +58,26 @@ class PhoneManager {
         events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
             if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
                 const playerNumber = InputManager.getInputs().findIndex(
-                    (input) =>
-                        input.inputSource === RemoteMicrophoneInputSource.inputName &&
-                        input.deviceId === oldInput.deviceId,
+                    (input) => input.inputSource === 'Remote Microphone' && input.deviceId === oldInput.deviceId,
                 );
-                const unselectedPhone = this.phones.find((phone) => phone.id === oldInput.deviceId);
+                const unselectedPhone = this.getPhoneById(oldInput.deviceId!);
 
                 unselectedPhone?.setPlayerNumber(playerNumber >= 0 ? playerNumber : null);
             }
-            if (newInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
-                const selectedPhone = this.phones.find((phone) => phone.id === newInput.deviceId);
+            if (newInput?.inputSource === 'Remote Microphone') {
+                const selectedPhone = this.getPhoneById(newInput.deviceId!);
                 console.log('selectedPhone', oldInput, newInput);
 
                 selectedPhone?.setPlayerNumber(playerNumber);
+            }
+        });
+        events.phoneConnected.subscribe(({ id }) => {
+            const playerNumberIndex = InputManager.getInputs().findIndex(
+                (input) => input.inputSource === 'Remote Microphone' && input.deviceId === id,
+            );
+
+            if (playerNumberIndex > -1) {
+                this.getPhoneById(id)?.setPlayerNumber(playerNumberIndex);
             }
         });
     }

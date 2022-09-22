@@ -2356,6 +2356,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dom-screen-wake-lock@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@types/dom-screen-wake-lock@npm:1.0.0"
+  checksum: 8be2f21ba9be1178319758515e0ea71c2ca37ed8631cc6ab4ac076c2ff4bddd741a70e9238e36c2c7bc8c01433300852489a2751757b7cb13f2d6d9ba54ce6ce
+  languageName: node
+  linkType: hard
+
 "@types/graceful-fs@npm:^4.1.3":
   version: 4.1.5
   resolution: "@types/graceful-fs@npm:4.1.5"
@@ -7826,6 +7833,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^14.3.0
+    "@types/dom-screen-wake-lock": ^1.0.0
     "@types/howler": ^2.2.7
     "@types/jest": ^28.1.6
     "@types/jest-image-snapshot": ^5.1.0

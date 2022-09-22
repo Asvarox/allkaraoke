@@ -10,9 +10,9 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await page.goto('/');
 
     await page.locator('[data-test="select-input"]').click();
-
     const serverUrl = await page.locator('[data-test="server-link-input"]').inputValue();
 
+    // Connect blue microphone
     const remoteMicBluePage = await context.newPage();
 
     await remoteMicBluePage.goto(serverUrl);
@@ -22,6 +22,7 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
         ignoreCase: true,
     });
 
+    // Connect red microphone
     const remoteMicRed = await context.newPage();
 
     await remoteMicRed.goto(serverUrl);
@@ -31,6 +32,7 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
         ignoreCase: true,
     });
 
+    // Select appropriate phones as inputs
     await page.locator('[data-test="player-1-source"]').click();
     await page.locator('[data-test="player-1-source"]').click();
     await expect(page.locator('[data-test="player-1-input"]')).toContainText('E2E Test Blue', { ignoreCase: true });
@@ -41,7 +43,19 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await expect(page.locator('[data-test="player-2-input"]')).toContainText('E2E Test Red', { ignoreCase: true });
 
     await page.keyboard.press('Backspace');
+
+    // Check if the phones reconnect automatically
     await page.reload();
+
+    await expect(remoteMicBluePage.locator('[data-test="connect-button"]')).toContainText('Connected', {
+        ignoreCase: true,
+    });
+
+    await expect(remoteMicRed.locator('[data-test="connect-button"]')).toContainText('Connected', {
+        ignoreCase: true,
+    });
+
+    // Check singing a song
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
 
     await page.locator('[data-test="song-e2e-test-multitrack.json"]').dblclick();

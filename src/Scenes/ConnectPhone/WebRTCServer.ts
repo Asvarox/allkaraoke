@@ -40,7 +40,6 @@ class WebRTCServer {
 
             conn.on('open', () => {
                 console.log('connected');
-                conn.send('test');
             });
 
             conn.on('close', () => {

@@ -74,6 +74,7 @@ class WebRTCClient {
 
         this.connection.on('open', () => {
             this.reconnecting = false;
+            console.log('CONNNNECCTED');
 
             this.connection?.send({ type: 'register', name, id: this.clientId } as WebRTCEvents);
             events.karaokeConnectionStatusChange.dispatch('connected');
@@ -97,21 +98,22 @@ class WebRTCClient {
 
         this.connection.on('close', () => {
             events.karaokeConnectionStatusChange.dispatch('disconnected');
+            events.remoteMicPlayerNumberSet.dispatch(null);
             MicInput.removeListener(this.onFrequencyUpdate);
             MicInput.stopMonitoring();
 
             console.log('closed connection :o');
 
             this.reconnecting = true;
-            this.reconnect(roomId, name);
+            setTimeout(() => this.reconnect(roomId, name), 500);
         });
     };
 
     private reconnect = (roomId: string, name: string) => {
-        events.karaokeConnectionStatusChange.dispatch('reconnecting');
         if (this.reconnecting) {
+            events.karaokeConnectionStatusChange.dispatch('reconnecting');
             this.connectToServer(roomId, name);
-            setTimeout(() => this.reconnect(roomId, name), 500);
+            setTimeout(() => this.reconnect(roomId, name), 1000);
         }
     };
 
