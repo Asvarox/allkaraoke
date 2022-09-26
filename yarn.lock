@@ -2775,6 +2775,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uriopass/nosleep.js@npm:^0.12.2":
+  version: 0.12.2
+  resolution: "@uriopass/nosleep.js@npm:0.12.2"
+  checksum: 8ae54c293f570848ba4568f8ffa38350f97da9231374b442841635425b8c2e5a7f26076b747b011f61d2d3f57e473983d73e545680c64b459c2ddd12ee0623cd
+  languageName: node
+  linkType: hard
+
 "@use-it/event-listener@npm:^0.1.2":
   version: 0.1.7
   resolution: "@use-it/event-listener@npm:0.1.7"
@@ -7846,6 +7853,7 @@ __metadata:
     "@types/tinycolor2": ^1.4.3
     "@types/use-persisted-state": ^0.3.1
     "@types/uuid": ^8.3.4
+    "@uriopass/nosleep.js": ^0.12.2
     "@vitejs/plugin-basic-ssl": ^0.1.2
     "@vitejs/plugin-react": ^2.0.0
     aubiojs: 0.1.0

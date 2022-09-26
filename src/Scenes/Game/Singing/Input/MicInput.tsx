@@ -1,3 +1,4 @@
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import InputInterface from './Interface';
 import AubioStrategy from './MicStrategies/Aubio';
 
@@ -35,6 +36,8 @@ class MicInput implements InputInterface {
 
         await strategy.init(this.context, processor);
 
+        events.micMonitoringStarted.dispatch();
+
         processor.onaudioprocess = async (e) => {
             const inputData1 = e.inputBuffer.getChannelData(0);
             const inputData2 = e.inputBuffer.getChannelData(1);
@@ -62,6 +65,8 @@ class MicInput implements InputInterface {
             track.stop();
         });
         await this.context?.close();
+
+        events.micMonitoringStopped.dispatch();
     };
 
     public getInputLag = () => 180;

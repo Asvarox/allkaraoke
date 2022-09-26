@@ -1,10 +1,13 @@
 import styled from '@emotion/styled';
+import NoSleep from '@uriopass/nosleep.js';
+import { typography } from 'Elements/cssMixins';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { throttle } from 'lodash-es';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import { useEventEffect, useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import { Input } from 'Scenes/Game/SongSelection/Input';
 import VolumeIndicator from 'Scenes/Phone/VolumeIndicator';
@@ -17,6 +20,8 @@ interface Props {
 
 const usePersistedName = createPersistedState<string>('remote_mic_name');
 
+const noSleep = new NoSleep();
+
 function Phone({ roomId }: Props) {
     const [name, setName] = usePersistedName('');
     const [volume, setVolume] = useState(0);
@@ -24,6 +29,19 @@ function Phone({ roomId }: Props) {
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [connectionStatus] = useEventListener(events.karaokeConnectionStatusChange) ?? ['uninitialised'];
     const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
+
+    const [monitoringStarted, setMonitoringStarted] = useState(false);
+    useEventEffect(events.micMonitoringStarted, () => setMonitoringStarted(true));
+    useEventEffect(events.micMonitoringStopped, () => setMonitoringStarted(false));
+
+    const [keepAwake, setKeepAwake] = useState(false);
+    useEffect(() => {
+        if (keepAwake && !noSleep.isEnabled) {
+            noSleep.enable();
+        } else if (!keepAwake && noSleep.isEnabled) {
+            noSleep.disable();
+        }
+    }, [keepAwake]);
 
     const updateVolumes = useCallback(
         throttle((freqs: number[], volumes: number[]) => {
@@ -46,7 +64,10 @@ function Phone({ roomId }: Props) {
 
     const onConnect = () => {
         WebRTCClient.connect(roomId, name);
-        navigator.wakeLock?.request('screen');
+        setKeepAwake(true);
+        try {
+            process.env.NODE_ENV !== 'development' && document.body.requestFullscreen().catch(console.info);
+        } catch (e) {}
     };
 
     return (
@@ -65,6 +86,12 @@ function Phone({ roomId }: Props) {
                 <MenuButton onClick={onConnect} disabled={disabled || name === ''} data-test="connect-button">
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                 </MenuButton>
+                <KeepAwake onClick={() => setKeepAwake((current) => !current)}>
+                    WakeLock: <strong>{keepAwake ? 'ON' : 'OFF'}</strong>
+                </KeepAwake>
+                <KeepAwake onClick={() => (monitoringStarted ? MicInput.stopMonitoring() : MicInput.startMonitoring())}>
+                    Microphone: <strong>{monitoringStarted ? 'ON' : 'OFF'}</strong>
+                </KeepAwake>
             </Container>
         </LayoutWithBackground>
     );
@@ -83,4 +110,13 @@ const Container = styled(MenuContainer)`
         padding: 0.5em;
         height: 72px;
     }
+`;
+
+const KeepAwake = styled.div`
+    ${typography}
+    strong {
+        color: ${styles.colors.text.active};
+    }
+    align-self: flex-end;
+    margin-top: auto;
 `;

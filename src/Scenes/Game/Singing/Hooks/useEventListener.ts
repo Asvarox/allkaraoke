@@ -16,6 +16,16 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     return value;
 }
 
+export function useEventEffect(event: GameStateEvent<any> | GameStateEvent<any>[], effect: () => void) {
+    const eventList = Array.isArray(event) ? event : [event];
+
+    useEffect(() => {
+        eventList.forEach((e) => e.subscribe(effect));
+
+        return () => eventList.forEach((e) => e.unsubscribe(effect));
+    }, [...eventList, effect]);
+}
+
 export function useEventListenerSelector<S extends any>(
     event: GameStateEvent<any> | GameStateEvent<any>[],
     selector: () => S,
