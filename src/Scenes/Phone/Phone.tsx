@@ -89,9 +89,12 @@ function Phone({ roomId }: Props) {
                 <KeepAwake onClick={() => setKeepAwake((current) => !current)}>
                     WakeLock: <strong>{keepAwake ? 'ON' : 'OFF'}</strong>
                 </KeepAwake>
-                <KeepAwake onClick={() => (monitoringStarted ? MicInput.stopMonitoring() : MicInput.startMonitoring())}>
+                <MicInputState
+                    onClick={() =>
+                        monitoringStarted ? MicInput.stopMonitoring() : MicInput.startMonitoring(undefined, true)
+                    }>
                     Microphone: <strong>{monitoringStarted ? 'ON' : 'OFF'}</strong>
-                </KeepAwake>
+                </MicInputState>
             </Container>
         </LayoutWithBackground>
     );
@@ -112,11 +115,13 @@ const Container = styled(MenuContainer)`
     }
 `;
 
-const KeepAwake = styled.div`
+const MicInputState = styled.div`
     ${typography}
     strong {
         color: ${styles.colors.text.active};
     }
     align-self: flex-end;
+`;
+const KeepAwake = styled(MicInputState)`
     margin-top: auto;
 `;

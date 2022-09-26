@@ -76,7 +76,9 @@ class InputManager {
 
     public stopMonitoring = async () => {
         Promise.all(
-            this.playerInputs.map((playerInput) => this.sourceNameToInput(playerInput.inputSource).stopMonitoring()),
+            this.playerInputs.map((playerInput) =>
+                this.sourceNameToInput(playerInput.inputSource).stopMonitoring(playerInput.deviceId),
+            ),
         );
     };
 

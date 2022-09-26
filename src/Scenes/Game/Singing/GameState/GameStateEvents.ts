@@ -32,6 +32,8 @@ export const events = {
     >(),
 
     remoteMicPlayerNumberSet: new GameStateEvent<(playerNumber: number | null) => void>(),
+    remoteMicMonitoringStarted: new GameStateEvent(),
+    remoteMicMonitoringStopped: new GameStateEvent(),
 
     micMonitoringStarted: new GameStateEvent(),
     micMonitoringStopped: new GameStateEvent(),
