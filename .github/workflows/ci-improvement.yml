@@ -48,7 +48,7 @@ jobs:
                       ${{ runner.os }}-playwright-
             - run: npx playwright install --with-deps chromium
               if: steps.playwright-cache.outputs.cache-hit != 'true'
-            - run: npx playwright install-deps
+            - run: npx playwright install-deps chromium chromium
               if: steps.playwright-cache.outputs.cache-hit == 'true'
             - name: E2E Test run
               run: yarn e2e
