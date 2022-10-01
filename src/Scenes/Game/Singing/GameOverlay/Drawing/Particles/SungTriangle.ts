@@ -1,6 +1,6 @@
 import triangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/triangle';
+import spreadValue from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/utils';
 import Particle from '../interfaces';
-import spreadValue from './spreadValue';
 
 const baseTtlMs = 300;
 const ttlSpreadMs = 50;
