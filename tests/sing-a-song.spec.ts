@@ -41,7 +41,10 @@ test('Basic sing a song', async ({ page }) => {
     await page.keyboard.press('Enter'); // start song
 
     await page.locator('[data-test="play-next-song-button"]').click({ timeout: 30_000, force: true });
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+    await expect(
+        page.locator('[data-test="song-e2e-test-multitrack.json"] >> [data-test="song-stat-indicator"]'),
+    ).toContainText('Played today', { ignoreCase: true });
 });
 
 test('Filters', async ({ page }) => {

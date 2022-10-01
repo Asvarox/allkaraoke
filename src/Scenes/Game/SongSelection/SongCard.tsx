@@ -63,7 +63,11 @@ export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
 
     const playedToday = lastPlayed && isAfter(new Date(lastPlayed), addDays(new Date(), -1));
 
-    return stats?.plays ? <SongStatIndicator>{playedToday ? 'Played today' : stats.plays}</SongStatIndicator> : null;
+    return stats?.plays ? (
+        <SongStatIndicator data-test="song-stat-indicator">
+            {playedToday ? 'Played today' : stats.plays}
+        </SongStatIndicator>
+    ) : null;
 };
 
 const SongStatIndicator = styled.div`

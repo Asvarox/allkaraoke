@@ -1,7 +1,7 @@
 [
     {
-        "title": "E2E",
         "artist": "Test",
+        "title": "E2E",
         "bpm": 288.04,
         "bar": 4,
         "gap": 5662.554089709763,
@@ -18,8 +18,8 @@
         "search": "teste2e"
     },
     {
-        "title": "E2ETest",
-        "artist": "Multitrack",
+        "artist": "E2ETest",
+        "title": "Multitrack",
         "bpm": 288.04,
         "bar": 4,
         "gap": 5662.554089709763,
