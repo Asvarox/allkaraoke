@@ -11,7 +11,13 @@ import styles from '../Singing/GameOverlay/Drawing/styles';
 import Filters from './Filters';
 import { isEmptyFilters } from './Hooks/useSongList';
 import useSongSelection from './Hooks/useSongSelection';
-import { SongCard, SongCardBackground, SongListEntryDetailsArtist, SongListEntryDetailsTitle } from './SongCard';
+import {
+    SongCard,
+    SongCardBackground,
+    SongCardStatsIndicator,
+    SongListEntryDetailsArtist,
+    SongListEntryDetailsTitle,
+} from './SongCard';
 import SongPreview from './SongPreview';
 
 interface Props {
@@ -127,6 +133,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                         video={song.video}
                                         focused={!showFilters && keyboardControl && index === focusedSong}
                                     />
+                                    <SongCardStatsIndicator song={song} />
                                     <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
 
                                     <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>

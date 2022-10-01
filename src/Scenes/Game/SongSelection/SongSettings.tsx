@@ -4,6 +4,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { isNumber } from 'lodash-es';
 import { useState } from 'react';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import MicCheck from 'Scenes/Game/SongSelection/MicCheck';
 import createPersistedState from 'use-persisted-state';
 import { nextIndex, nextValueIndex, Switcher } from './Switcher';
@@ -52,7 +53,15 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         });
 
     const startSong = () => {
-        onPlay({ file: songPreview.file, mode, playerTracks, tolerance, video: songPreview.video, skipIntro });
+        const singSetup = {
+            mode,
+            playerTracks,
+            tolerance,
+            skipIntro,
+        };
+
+        events.songStarted.dispatch(songPreview, singSetup);
+        onPlay({ file: songPreview.file, video: songPreview.video, ...singSetup });
     };
 
     const changeMode = () => {

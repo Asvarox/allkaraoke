@@ -54,7 +54,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
         setTimeout(() => {
             setIsTransitionTimeout(true);
             player.current?.play();
-        }, 3000);
+        }, 3_000);
     }, []);
 
     if (!width || !height || !song.data) return <>Loading</>;

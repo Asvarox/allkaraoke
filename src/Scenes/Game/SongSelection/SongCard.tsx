@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
+import { SongPreview } from 'interfaces';
+import { useSongStats } from 'Stats/Song/hooks';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 
 export const SongCardContainer = styled.div<{ width: number }>`
@@ -9,7 +11,6 @@ export const SongCardContainer = styled.div<{ width: number }>`
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
-
     box-sizing: border-box;
 `;
 
@@ -53,4 +54,26 @@ export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
 export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
     margin-top: 0.25em;
     color: white;
+`;
+
+export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
+    const stats = useSongStats(song);
+
+    return stats?.plays ? <SongStatIndicator>{stats.plays}</SongStatIndicator> : null;
+};
+
+const SongStatIndicator = styled.div`
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+    //min-width: 1em;
+    padding: 0 0.75em;
+    height: 1.5em;
+    border-radius: 5em;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;

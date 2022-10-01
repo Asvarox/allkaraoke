@@ -8,6 +8,9 @@
       <excludeFolder url="file://$MODULE_DIR$/public/songs" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/.yarn" />
+      <excludeFolder url="file://$MODULE_DIR$/playwright-report" />
+      <excludeFolder url="file://$MODULE_DIR$/test-results" />
+      <excludePattern pattern="stats.html" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

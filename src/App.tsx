@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { GAME_MODE } from 'interfaces';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
 import { Route, Router } from 'wouter';
@@ -8,11 +7,12 @@ import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
 import Game from './Scenes/Game/Game';
-import Singing from './Scenes/Game/Singing/Singing';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import Phone from './Scenes/Phone/Phone';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 import Welcome from './Scenes/Welcome/Welcome';
+
+import 'Stats';
 
 function App() {
     return (
@@ -28,20 +28,6 @@ function App() {
             <Router hook={useHashLocation}>
                 <Route path="/game">{() => <Game />}</Route>
                 <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>
-                <Route path="/test-player">
-                    {() => (
-                        <Singing
-                            singSetup={{
-                                mode: GAME_MODE.DUEL,
-                                playerTracks: [0, 0],
-                                tolerance: 2,
-                            }}
-                            songFile="dummy.json"
-                            video=":)"
-                            returnToSongSelection={() => window.location.reload()}
-                        />
-                    )}
-                </Route>
                 <Route path="/convert" component={Convert} />
                 <Route path="/jukebox" component={Jukebox} />
                 <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>

@@ -3,6 +3,7 @@ import { focused } from 'Elements/cssMixins';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
 import { PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useSongStats } from 'Stats/Song/hooks';
 import useDebounce from '../../../hooks/useDebounce';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
@@ -10,6 +11,8 @@ import {
     SongCard,
     SongCardBackground,
     SongCardContainer,
+    SongCardStatsIndicator,
+    SongListEntryDetails,
     SongListEntryDetailsArtist,
     SongListEntryDetailsTitle,
 } from './SongCard';
@@ -92,17 +95,23 @@ export default function SongPreviewComponent({
                     {(showVideo || active) && (
                         <>
                             <SongInfo active={active}>
+                                {!active && <SongCardStatsIndicator song={songPreview} />}
                                 <SongListEntryDetailsArtist>{songPreview.artist}</SongListEntryDetailsArtist>
                                 <SongListEntryDetailsTitle>{songPreview.title}</SongListEntryDetailsTitle>
-                                {active && songPreview.author && (
-                                    <SongAuthor>
-                                        by&nbsp;
-                                        {songPreview.authorUrl ? (
-                                            <a href={songPreview.authorUrl}>{songPreview.author}</a>
-                                        ) : (
-                                            songPreview.author
+                                {active && (
+                                    <>
+                                        {songPreview.author && (
+                                            <SongAuthor>
+                                                by&nbsp;
+                                                {songPreview.authorUrl ? (
+                                                    <a href={songPreview.authorUrl}>{songPreview.author}</a>
+                                                ) : (
+                                                    songPreview.author
+                                                )}
+                                            </SongAuthor>
                                         )}
-                                    </SongAuthor>
+                                        <SongListEntryStats song={songPreview} />
+                                    </>
                                 )}
                             </SongInfo>
                             {active && (
@@ -191,7 +200,7 @@ const Backdrop = styled.div`
 const Video = styled(SongCard)<{ show: boolean; active: boolean; height: number }>`
     div {
         opacity: ${({ show }) => (show ? 1 : 0)};
-        transition: ${({ show, active }) => (show || active ? 700 : 0)}ms;
+        transition: ${({ show, active }) => (show || active ? 1000 : 0)}ms;
     }
     ${(props) => !props.active && 'background-image: none !important;'}
     ${(props) => !props.active && 'border-radius: 5px;'}
@@ -212,7 +221,8 @@ const Content = styled(SongCardContainer)<{
     ${(props) => props.blurBackground && 'backdrop-filter: blur(10px);'}
 
     ${(props) => props.focus && !props.active && props.isVideoPlaying && focused}
-  border-radius: 5px;
+    ${(props) => props.focus && !props.active && props.isVideoPlaying && 'border: 1px solid black;'}
+    border-radius: 5px;
 `;
 
 const SongInfo = styled.div<{ active: boolean }>`
@@ -241,4 +251,20 @@ const SongAuthor = styled(SongListEntryDetailsTitle)`
         -webkit-text-stroke: 1px black;
         color: ${styles.colors.text.active};
     }
+`;
+
+export const SongListEntryStats = ({ song }: { song: SongPreview }) => {
+    const stats = useSongStats(song);
+
+    return (
+        <SongEntryStat>
+            {stats?.plays ? `Played ${stats.plays} time${stats.plays > 1 ? 's' : ''}` : 'Never played yet'}
+        </SongEntryStat>
+    );
+};
+
+const SongEntryStat = styled(SongListEntryDetails)`
+    margin-top: 0.5em;
+    color: white;
+    font-size: 0.5em;
 `;

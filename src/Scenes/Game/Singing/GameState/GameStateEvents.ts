@@ -1,3 +1,4 @@
+import { SingSetup, SongPreview } from 'interfaces';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 
 export class GameStateEvent<T extends (...args: any[]) => void> {
@@ -20,6 +21,9 @@ export const events = {
     sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>(),
     // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
+
+    songStarted: new GameStateEvent<(song: SongPreview, singSetup: SingSetup) => void>(),
+
     phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>(),
     phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>(),
     playerInputChanged: new GameStateEvent<
@@ -30,7 +34,6 @@ export const events = {
     karaokeConnectionStatusChange: new GameStateEvent<
         (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error') => void
     >(),
-
     remoteMicPlayerNumberSet: new GameStateEvent<(playerNumber: number | null) => void>(),
     remoteMicMonitoringStarted: new GameStateEvent(),
     remoteMicMonitoringStopped: new GameStateEvent(),
