@@ -12,7 +12,7 @@ export const useSongStats = (song: SongPreview) => {
         const callback = console.log;
         window.addEventListener('storage', callback);
 
-        localForage.getItem<SongStats>(storageKey).then((data) => setStats(data || { plays: 0 }));
+        localForage.getItem<SongStats>(storageKey).then((data) => setStats(data || { plays: 0, scores: [] }));
 
         return () => window.removeEventListener('storage', callback);
     }, [storageKey]);

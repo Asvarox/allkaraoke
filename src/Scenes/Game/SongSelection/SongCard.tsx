@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { addDays, isAfter } from 'date-fns';
 import { typography } from 'Elements/cssMixins';
 import { SongPreview } from 'interfaces';
 import { useSongStats } from 'Stats/Song/hooks';
@@ -58,14 +59,17 @@ export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
 
 export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
     const stats = useSongStats(song);
+    const lastPlayed = stats?.scores?.at(-1)?.date ?? false;
 
-    return stats?.plays ? <SongStatIndicator>{stats.plays}</SongStatIndicator> : null;
+    const playedToday = lastPlayed && isAfter(new Date(lastPlayed), addDays(new Date(), -1));
+
+    return stats?.plays ? <SongStatIndicator>{playedToday ? 'Played today' : stats.plays}</SongStatIndicator> : null;
 };
 
 const SongStatIndicator = styled.div`
     position: absolute;
-    top: 0.25em;
-    right: 0.25em;
+    top: 0.35em;
+    right: 0.35em;
     //min-width: 1em;
     padding: 0 0.75em;
     height: 1.5em;
@@ -76,4 +80,5 @@ const SongStatIndicator = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
 `;

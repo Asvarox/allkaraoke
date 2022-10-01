@@ -4,6 +4,9 @@ import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery } from 'react-query';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import calculateScore from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';
 import addHeadstart from '../../Edit/Helpers/addHeadstart';
@@ -79,6 +82,11 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
                     height={height}
                     autoplay={false}
                     onSongEnd={() => {
+                        const scores = GameState.getPlayers().map((player, index) => ({
+                            name: `Player ${index + 1}`,
+                            score: calculateScore(player.getPlayerNotes(), song.data, player.getTrackIndex()),
+                        }));
+                        events.songEnded.dispatch(song.data, singSetup, scores);
                         setIsEnded(true);
                     }}
                     singSetup={singSetup}

@@ -10,6 +10,24 @@ events.songStarted.subscribe(async (song, setup) => {
     } else {
         currentState = {
             plays: 1,
+            scores: [],
+        };
+    }
+
+    await localForage.setItem<SongStats>(getSongKey(song), currentState);
+});
+
+events.songEnded.subscribe(async (song, setup, scores) => {
+    let currentState = await localForage.getItem<SongStats>(getSongKey(song));
+
+    const score = { setup, scores, date: new Date().toISOString() };
+    if (currentState) {
+        // there might be cases where only { plays: number } is stored
+        currentState.scores = [...(currentState?.scores ?? []), score];
+    } else {
+        currentState = {
+            plays: 1,
+            scores: [score],
         };
     }
 
