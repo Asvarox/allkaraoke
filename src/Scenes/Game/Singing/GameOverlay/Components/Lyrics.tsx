@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
-import { Fragment, PropsWithChildren } from 'react';
+import { mdiSwapHorizontalBold } from '@mdi/js';
+import Icon from '@mdi/react';
+import { ComponentProps, Fragment, PropsWithChildren } from 'react';
 import GameState from '../../GameState/GameState';
 import isNotesSection from '../../Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../../Helpers/notesSelectors';
@@ -17,11 +19,17 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
     const thisPlayerChanges = playerChanges[GameState.getPlayer(player).getTrackIndex()] ?? [];
     const section = GameState.getPlayer(player).getCurrentSection();
     const nextSection = GameState.getPlayer(player).getNextSection();
+    const subsequentSection = GameState.getPlayer(player).getNextSection(2);
     const currentBeat = GameState.getCurrentBeat();
     const beatLength = GameState.getSongBeatLength();
 
-    const nextChange = thisPlayerChanges.find((beat) => beat > section?.start ?? Infinity);
-    const shouldBlink = !!nextChange && nextChange * beatLength - 2500 < currentBeat * beatLength;
+    const previousChange = Math.max(0, ...thisPlayerChanges.filter((beat) => beat <= section?.start ?? -Infinity));
+    const nextChange = thisPlayerChanges.find((beat) => beat > section?.start ?? Infinity) ?? Infinity;
+    const timeToNextChange = (nextChange - currentBeat) * beatLength;
+
+    const passTheMicProgress = (nextChange - currentBeat) / (nextChange - previousChange);
+
+    const shouldBlink = timeToNextChange < 2500;
 
     const hasNotes = isNotesSection(section);
 
@@ -29,6 +37,12 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
+            {timeToNextChange < Infinity && (
+                <PassTheMicProgress
+                    color={playerColor}
+                    progress={passTheMicProgress <= 1 ? passTheMicProgress * 100 : 0}
+                />
+            )}
             {hasNotes ? (
                 <>
                     <LyricsLine data-test={`lyrics-line-player-${player}`}>
@@ -56,6 +70,14 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                                 </LyricContainer>
                             );
                         })}
+                        {nextSection?.start === nextChange && (
+                            <PassTheMicSymbol
+                                path={mdiSwapHorizontalBold}
+                                size={1.2}
+                                color={styles.colors.text.active}
+                                shouldShake
+                            />
+                        )}
                     </LyricsLine>
                 </>
             ) : (
@@ -63,9 +85,12 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             )}
             {isNotesSection(nextSection) && (
                 <LyricsLine secondLine>
-                    {nextSection?.notes.map((note) => (
+                    {nextSection.notes.map((note) => (
                         <Fragment key={note.start}>{note.lyrics}</Fragment>
                     ))}
+                    {subsequentSection?.start === nextChange && (
+                        <PassTheMicSymbol path={mdiSwapHorizontalBold} size={1} />
+                    )}
                 </LyricsLine>
             )}
         </LyricsContainer>
@@ -146,6 +171,46 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     ${(props) => (props.shouldBlink ? `animation: blink 350ms ease-in-out infinite both;` : ``)}
 `;
 
+const BasePassTheMicProgress = styled.div<{ color: string }>`
+    position: absolute;
+    height: 10px;
+    background: rgb(${(props) => props.color});
+    transition: 50ms;
+`;
+
+const PassTheMicProgress = (props: { progress: number } & ComponentProps<typeof BasePassTheMicProgress>) => (
+    <BasePassTheMicProgress style={{ width: `${props.progress}%` }} color={props.color} />
+);
+
+const PassTheMicSymbol = styled(Icon, { shouldForwardProp: (prop) => prop !== 'shouldShake' })<{
+    shouldShake?: boolean;
+}>`
+    @keyframes shake {
+        10%,
+        90% {
+            transform: translate3d(-1px, 0, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(2px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-4px, 0, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(4px, 0, 0);
+        }
+    }
+
+    ${(props) => props.shouldShake && 'animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;'}
+    margin-left: 20px;
+`;
 const LyricsLine = styled.div<{ secondLine?: boolean }>`
     font-size: ${({ secondLine }) => 35 + (secondLine ? 0 : 10)}px;
     height: 45px;

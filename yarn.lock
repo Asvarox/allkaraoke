@@ -2024,6 +2024,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdi/js@npm:^7.0.96":
+  version: 7.0.96
+  resolution: "@mdi/js@npm:7.0.96"
+  checksum: 4bcc4542a2d8ba9e706a754333e90ce2677616709d3776016b83be59c7219e7514308dbca6e62c7dd38436b3c5d251b8769679c90e354f971b090fa2ebcbc4fe
+  languageName: node
+  linkType: hard
+
+"@mdi/react@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "@mdi/react@npm:1.6.1"
+  dependencies:
+    prop-types: ^15.7.2
+  checksum: d0408c5fcc1cf6e4b1fc7be57a5516453b12c076dc682fe320c2fe7c19a333c265cd16dd2348d5587356f9f9a35cec46fb5f5f530d34c485d23975dcd240f834
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -7867,6 +7883,8 @@ __metadata:
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
+    "@mdi/js": ^7.0.96
+    "@mdi/react": ^1.6.1
     "@playwright/test": ^1.25.2
     "@sentry/react": ^7.7.0
     "@testing-library/jest-dom": ^5.16.4

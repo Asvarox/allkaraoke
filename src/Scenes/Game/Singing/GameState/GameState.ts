@@ -85,16 +85,16 @@ class PlayerState {
         return this.getTrack().sections[sectionIndex] ?? null;
     };
 
-    public getNextSection = () => {
+    public getNextSection = (index = 1) => {
         const sectionIndex = this.getCurrentSectionIndex();
 
-        return sectionIndex > -1 ? this.getTrack().sections[sectionIndex + 1] ?? null : null;
+        return sectionIndex > -1 ? this.getTrack().sections[sectionIndex + index] ?? null : null;
     };
 
-    public getPreviousSection = () => {
+    public getPreviousSection = (index = 1) => {
         const sectionIndex = this.getCurrentSectionIndex();
 
-        return sectionIndex > -1 ? this.getTrack().sections[sectionIndex - 1] ?? null : null;
+        return sectionIndex > -1 ? this.getTrack().sections[sectionIndex - index] ?? null : null;
     };
 
     public getScore = () => calculateScore(this.playerNotes, this.gameState.getSong()!, this.getTrackIndex());

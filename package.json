@@ -5,6 +5,8 @@
     "dependencies": {
         "@emotion/react": "^11.10.4",
         "@emotion/styled": "^11.10.4",
+        "@mdi/js": "^7.0.96",
+        "@mdi/react": "^1.6.1",
         "@sentry/react": "^7.7.0",
         "@uriopass/nosleep.js": "^0.12.2",
         "aubiojs": "0.1.0",
