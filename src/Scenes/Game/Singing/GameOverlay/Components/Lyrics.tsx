@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { mdiSwapHorizontalBold } from '@mdi/js';
-import Icon from '@mdi/react';
+import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { ComponentProps, Fragment, PropsWithChildren } from 'react';
 import GameState from '../../GameState/GameState';
 import isNotesSection from '../../Helpers/isNotesSection';
@@ -70,14 +69,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                                 </LyricContainer>
                             );
                         })}
-                        {nextSection?.start === nextChange && (
-                            <PassTheMicSymbol
-                                path={mdiSwapHorizontalBold}
-                                size={1.2}
-                                color={styles.colors.text.active}
-                                shouldShake
-                            />
-                        )}
+                        {nextSection?.start === nextChange && <PassTheMicSymbol shouldShake />}
                     </LyricsLine>
                 </>
             ) : (
@@ -88,9 +80,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                     {nextSection.notes.map((note) => (
                         <Fragment key={note.start}>{note.lyrics}</Fragment>
                     ))}
-                    {subsequentSection?.start === nextChange && (
-                        <PassTheMicSymbol path={mdiSwapHorizontalBold} size={1} />
-                    )}
+                    {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
                 </LyricsLine>
             )}
         </LyricsContainer>
@@ -182,7 +172,7 @@ const PassTheMicProgress = (props: { progress: number } & ComponentProps<typeof 
     <BasePassTheMicProgress style={{ width: `${props.progress}%` }} color={props.color} />
 );
 
-const PassTheMicSymbol = styled(Icon, { shouldForwardProp: (prop) => prop !== 'shouldShake' })<{
+const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => prop !== 'shouldShake' })<{
     shouldShake?: boolean;
 }>`
     @keyframes shake {
@@ -210,6 +200,8 @@ const PassTheMicSymbol = styled(Icon, { shouldForwardProp: (prop) => prop !== 's
 
     ${(props) => props.shouldShake && 'animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;'}
     margin-left: 20px;
+    ${(props) => (props.shouldShake ? `fill: ${styles.colors.text.active};` : '')}
+    font-size: ${(props) => (props.shouldShake ? 40 : 30)}px;
 `;
 const LyricsLine = styled.div<{ secondLine?: boolean }>`
     font-size: ${({ secondLine }) => 35 + (secondLine ? 0 : 10)}px;
