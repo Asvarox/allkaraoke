@@ -98,9 +98,11 @@ const Scores = styled.div`
     flex: 1;
     height: 100%;
     box-sizing: border-box;
-    font-size: 35px;
+    font-size: 55px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
+    padding-right: 40px;
     flex-direction: column;
     text-align: right;
 `;
