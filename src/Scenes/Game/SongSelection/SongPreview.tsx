@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { focused } from 'Elements/cssMixins';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
-import { PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useSongStats } from 'Stats/Song/hooks';
 import useDebounce from '../../../hooks/useDebounce';
 import useViewportSize from '../../../hooks/useViewportSize';
@@ -78,6 +78,9 @@ export default function SongPreviewComponent({
     return (
         <>
             {active && <Backdrop onClick={onExitKeyboardControl} />}
+            {!active && showVideo && (
+                <SongBPMIndicator width={finalWidth} height={finalHeight} left={left} top={top} song={songPreview} />
+            )}
             <SongPreviewContainer
                 top={top}
                 left={left}
@@ -126,11 +129,15 @@ export default function SongPreviewComponent({
                     )}
                 </Content>
                 {active && (
-                    <SongCardBackground
-                        video={songPreview.video}
-                        focused
-                        style={{ backgroundImage: `url('https://i3.ytimg.com/vi/${songPreview.video}/hqdefault.jpg')` }}
-                    />
+                    <>
+                        <SongCardBackground
+                            video={songPreview.video}
+                            focused
+                            style={{
+                                backgroundImage: `url('https://i3.ytimg.com/vi/${songPreview.video}/hqdefault.jpg')`,
+                            }}
+                        />
+                    </>
                 )}
                 <Video show={showVideo} active={keyboardControl} height={finalHeight} width={finalWidth}>
                     <VideoPlayer
@@ -268,3 +275,47 @@ const SongEntryStat = styled(SongListEntryDetails)`
     color: white;
     font-size: 0.5em;
 `;
+
+const BaseSongBPMIndicator = styled.div<{ width: number; height: number }>`
+    background: white;
+    width: ${(props) => props.width}px;
+    height: ${(props) => props.height}px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: bpm 1s infinite;
+    border-radius: 5px;
+
+    @keyframes bpm {
+        0% {
+            transform: scale(1.15);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+`;
+
+const SongBPMIndicator = (
+    props: {
+        top: number;
+        left: number;
+        song: SongPreview;
+    } & ComponentProps<typeof BaseSongBPMIndicator>,
+) => {
+    const realBpm = props.song.realBpm ?? (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
+    return (
+        <BaseSongBPMIndicator
+            width={props.width}
+            height={props.height}
+            style={{
+                left: props.left,
+                top: props.top,
+                animationDuration: `${60 / realBpm}s`,
+            }}
+        />
+    );
+};

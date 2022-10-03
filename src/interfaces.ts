@@ -52,6 +52,7 @@ export interface Song {
     previewEnd?: number;
     gap: number;
     bpm: number;
+    realBpm?: number;
     bar: number;
     tracks: SongTrack[];
     volume?: number;
