@@ -12,6 +12,7 @@
     "author": "rafallus",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10933",
+    "realBpm": 76,
     "file": "2 Plus 1-Chodz, Pomaluj Mój Swiat.json",
     "tracksCount": 1,
     "tracks": [
@@ -32,6 +33,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you",
+    "realBpm": 72,
     "file": "3 Doors Down-Here without you.json",
     "tracksCount": 1,
     "tracks": [
@@ -54,6 +56,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Kryptonite",
+    "realBpm": 99,
     "file": "3 Doors Down-Kryptonite.json",
     "tracksCount": 1,
     "tracks": [
@@ -76,6 +79,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=When%20I'm%20Gone",
+    "realBpm": 74,
     "file": "3 Doors Down-When I'm Gone.json",
     "tracksCount": 1,
     "tracks": [
@@ -97,6 +101,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Dancing%20Queen",
+    "realBpm": 99,
     "file": "ABBA-Dancing Queen.json",
     "tracksCount": 1,
     "tracks": [
@@ -118,6 +123,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Fernando",
+    "realBpm": 112,
     "file": "ABBA-Fernando.json",
     "tracksCount": 1,
     "tracks": [
@@ -140,6 +146,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)",
     "volume": 1,
+    "realBpm": 127,
     "file": "ABBA-Gimme! Gimme! Gimme! (A Man After Midnight).json",
     "tracksCount": 1,
     "tracks": [
@@ -161,6 +168,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Mamma%20Mia",
+    "realBpm": 136,
     "file": "ABBA-Mamma Mia.json",
     "tracksCount": 1,
     "tracks": [
@@ -182,6 +190,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Money%20Money%20Money",
+    "realBpm": 120,
     "file": "ABBA-Money Money Money.json",
     "tracksCount": 1,
     "tracks": [
@@ -203,6 +212,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Super%20Trouper",
+    "realBpm": 118,
     "file": "ABBA-Super Trouper.json",
     "tracksCount": 1,
     "tracks": [
@@ -224,6 +234,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=The%20Winner%20Takes%20It%20All",
+    "realBpm": 61,
     "file": "ABBA-The Winner Takes It All.json",
     "tracksCount": 1,
     "tracks": [
@@ -245,6 +256,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Highway%20To%20Hell",
+    "realBpm": 117,
     "file": "AC_DC-Highway To Hell.json",
     "tracksCount": 1,
     "tracks": [
@@ -266,6 +278,7 @@
     "author": "nauce",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=nauce",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)",
+    "realBpm": 134,
     "file": "Adele-Someone Like You (Studio).json",
     "tracksCount": 1,
     "tracks": [
@@ -287,6 +300,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy",
     "volume": 0.91,
+    "realBpm": 81,
     "file": "Aerosmith-Crazy.json",
     "tracksCount": 1,
     "tracks": [
@@ -308,6 +322,7 @@
     "author": "gouthamma",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gouthamma",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Dream%20on",
+    "realBpm": 78,
     "file": "Aerosmith-Dream on.json",
     "tracksCount": 1,
     "tracks": [
@@ -328,6 +343,7 @@
     "author": "",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 121,
     "file": "Aerosmith-I don't want to miss a thing.json",
     "tracksCount": 1,
     "tracks": [
@@ -350,6 +366,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Sweet%20Emotion",
+    "realBpm": 99,
     "file": "Aerosmith-Sweet Emotion.json",
     "tracksCount": 1,
     "tracks": [
@@ -370,6 +387,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Against%20The%20Current&cancion=Legends%20Never%20Die",
+    "realBpm": 140,
     "file": "Against The Current-Legends Never Die.json",
     "tracksCount": 1,
     "tracks": [
@@ -391,6 +409,7 @@
     "author": "jockel1974",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2892",
+    "realBpm": 100,
     "file": "Akademia Pana Kleksa-Kaczka dziwaczka.json",
     "tracksCount": 1,
     "tracks": [
@@ -411,6 +430,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Akcent&cancion=Przez%20Twe%20oczy%20zielone",
+    "realBpm": 138,
     "file": "Akcent-Przez Twe oczy zielone.json",
     "tracksCount": 1,
     "tracks": [
@@ -432,6 +452,7 @@
     "author": "oldkillerjones",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=76763",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=16844",
+    "realBpm": 85,
     "file": "Akurat-Lubię Mówić Z Tobą.json",
     "tracksCount": 1,
     "tracks": [
@@ -454,6 +475,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Alice%20Cooper&cancion=Poison",
+    "realBpm": 117,
     "file": "Alice Cooper-Poison.json",
     "tracksCount": 1,
     "tracks": [
@@ -475,6 +497,7 @@
     "author": "IC",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4314",
+    "realBpm": 192,
     "file": "Amy MacDonald-This Is The Life.json",
     "tracksCount": 1,
     "tracks": [
@@ -497,6 +520,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aqua&cancion=Barbie%20Girl",
+    "realBpm": 129,
     "file": "Aqua-Barbie Girl.json",
     "tracksCount": 1,
     "tracks": [
@@ -518,6 +542,7 @@
     "author": "Spys4Darwin",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=spys4darwin",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Be%20Yourself",
+    "realBpm": 117,
     "file": "Audioslave-Be Yourself.json",
     "tracksCount": 1,
     "tracks": [
@@ -540,6 +565,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Cochise",
+    "realBpm": 81,
     "file": "Audioslave-Cochise.json",
     "tracksCount": 1,
     "tracks": [
@@ -561,6 +587,7 @@
     "author": "Volodia",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ava%20Max&cancion=Kings%20%26%20Queens",
+    "realBpm": 130,
     "file": "Ava Max-Kings & Queens.json",
     "tracksCount": 1,
     "tracks": [
@@ -583,6 +610,7 @@
     "author": "¡JKA!",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Bat%20Country",
+    "realBpm": 123,
     "file": "Avenged Sevenfold-Bat Country (1).json",
     "tracksCount": 1,
     "tracks": [
@@ -605,6 +633,7 @@
     "author": "¡JKA!",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare",
+    "realBpm": 129,
     "file": "Avenged Sevenfold-Nightmare.json",
     "tracksCount": 1,
     "tracks": [
@@ -625,6 +654,7 @@
     "year": "2013",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1645",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15877",
+    "realBpm": 123,
     "file": "Avicii-Wake Me Up.json",
     "tracksCount": 1,
     "tracks": [
@@ -646,6 +676,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avril%20Lavigne&cancion=Complicated",
+    "realBpm": 77,
     "file": "Avril Lavigne-Complicated.json",
     "tracksCount": 1,
     "tracks": [
@@ -667,6 +698,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avril%20Lavigne&cancion=Girlfriend",
+    "realBpm": 81,
     "file": "Avril Lavigne-Girlfriend.json",
     "tracksCount": 1,
     "tracks": [
@@ -688,6 +720,7 @@
     "author": "koro008",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=6689",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14022",
+    "realBpm": 234,
     "file": "Awolnation-Sail.json",
     "tracksCount": 1,
     "tracks": [
@@ -710,6 +743,7 @@
     "author": "Diddlmaus30mg",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1058",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3334",
+    "realBpm": 134,
     "file": "B52s-Love Shack.json",
     "tracksCount": 1,
     "tracks": [
@@ -730,6 +764,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=Czerwone%20korale",
+    "realBpm": 65,
     "file": "BRAThANKI-Czerwone korale.json",
     "tracksCount": 1,
     "tracks": [
@@ -750,6 +785,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=W%20kinie%2C%20w%20Lublinie",
+    "realBpm": 153,
     "file": "BRAThANKI-W kinie, w Lublinie.json",
     "tracksCount": 1,
     "tracks": [
@@ -770,6 +806,7 @@
     "author": "asdFer",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite",
+    "realBpm": 114,
     "file": "BTS-Dynamite.json",
     "tracksCount": 1,
     "tracks": [
@@ -791,6 +828,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=Everybody%20(Backstreet's%20Back)",
+    "realBpm": 108,
     "file": "Backstreet Boys-Everybody (Backstreet's Back).json",
     "tracksCount": 1,
     "tracks": [
@@ -811,6 +849,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=I%20Want%20It%20That%20Way",
+    "realBpm": 99,
     "file": "Backstreet Boys-I Want It That Way (1).json",
     "tracksCount": 1,
     "tracks": [
@@ -833,6 +872,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=9943",
     "volume": 0.91,
+    "realBpm": 99,
     "file": "Bajm-Bia_a Armia.json",
     "tracksCount": 1,
     "tracks": [
@@ -853,6 +893,7 @@
     "author": "Beneblade",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=beneblade",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Basshunter&cancion=DotA",
+    "realBpm": 140,
     "file": "Basshunter-DotA.json",
     "tracksCount": 1,
     "tracks": [
@@ -874,6 +915,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)",
+    "realBpm": 134,
     "file": "Beastie Boys-(You Gotta) Fight For Your Right (To Party) (1).json",
     "tracksCount": 1,
     "tracks": [
@@ -896,6 +938,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bee%20Gees&cancion=Stayin'%20Alive",
+    "realBpm": 103,
     "file": "Bee Gees-Stayin' Alive.json",
     "tracksCount": 1,
     "tracks": [
@@ -917,6 +960,7 @@
     "author": "perzu25",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2565",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5894",
+    "realBpm": 81,
     "file": "Beyoncé-Halo.json",
     "tracksCount": 1,
     "tracks": [
@@ -939,6 +983,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10440",
     "volume": 1,
+    "realBpm": 141,
     "file": "Big Cyc-Facet To Swinia.json",
     "tracksCount": 1,
     "tracks": [
@@ -961,6 +1006,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=9999",
     "volume": 1,
+    "realBpm": 142,
     "file": "Big Cyc-Makumba.json",
     "tracksCount": 1,
     "tracks": [
@@ -981,6 +1027,7 @@
     "author": "rafallus",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11261",
+    "realBpm": 187,
     "file": "Big Cyc-Swiat Wedlug Kiepskich.json",
     "tracksCount": 1,
     "tracks": [
@@ -1002,6 +1049,7 @@
     "author": "Wegti",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22349",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10541",
+    "realBpm": 109,
     "file": "Bill Medley & Jennifer Warnes-I've Had The Time Of My Life [DUET].json",
     "tracksCount": 2,
     "tracks": [
@@ -1025,6 +1073,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Billy%20Joel&cancion=Uptown%20Girl",
+    "realBpm": 129,
     "file": "Billy Joel-Uptown Girl.json",
     "tracksCount": 1,
     "tracks": [
@@ -1047,6 +1096,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Blondie&cancion=The%20Tide%20Is%20High",
     "volume": 0.91,
+    "realBpm": 96,
     "file": "Blondie-The Tide Is High.json",
     "tracksCount": 1,
     "tracks": [
@@ -1070,6 +1120,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Blur&cancion=Song%202",
     "volume": 0.91,
+    "realBpm": 129,
     "file": "Blur-Song 2.json",
     "tracksCount": 1,
     "tracks": [
@@ -1091,6 +1142,7 @@
     "author": "suricatin",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 131,
     "file": "Bon Jovi-Always.json",
     "tracksCount": 1,
     "tracks": [
@@ -1112,6 +1164,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Bad%20Medicine",
+    "realBpm": 117,
     "file": "Bon Jovi-Bad Medicine.json",
     "tracksCount": 1,
     "tracks": [
@@ -1134,6 +1187,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Have%20a%20nice%20day",
+    "realBpm": 129,
     "file": "Bon Jovi-Have a nice day.json",
     "tracksCount": 1,
     "tracks": [
@@ -1154,6 +1208,7 @@
     "author": "upalula",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=It's%20my%20life",
+    "realBpm": 120,
     "file": "Bon Jovi-It's my life.json",
     "tracksCount": 1,
     "tracks": [
@@ -1175,6 +1230,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer",
+    "realBpm": 122,
     "file": "Bon Jovi-Livin' on a Prayer.json",
     "tracksCount": 1,
     "tracks": [
@@ -1197,6 +1253,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Wanted%20dead%20or%20alive",
+    "realBpm": 74,
     "file": "Bon Jovi-Wanted dead or alive.json",
     "tracksCount": 1,
     "tracks": [
@@ -1217,6 +1274,7 @@
     "author": "sanicsip",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=You%20Give%20Love%20A%20Bad%20Name",
+    "realBpm": 123,
     "file": "Bon Jovi-You Give Love A Bad Name.json",
     "tracksCount": 1,
     "tracks": [
@@ -1237,6 +1295,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Boney%20M&cancion=Daddy%20Cool",
+    "realBpm": 123,
     "file": "Boney M-Daddy Cool.json",
     "tracksCount": 1,
     "tracks": [
@@ -1257,6 +1316,7 @@
     "author": "Rubn4",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=rubn4",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Rasputin",
+    "realBpm": 64,
     "file": "Boney M.-Rasputin.json",
     "tracksCount": 1,
     "tracks": [
@@ -1278,6 +1338,7 @@
     "author": "asb",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Sunny",
+    "realBpm": 121,
     "file": "Boney M.-Sunny.json",
     "tracksCount": 1,
     "tracks": [
@@ -1299,6 +1360,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bonnie%20Tyler&cancion=Holding%20Out%20For%20A%20Hero",
     "volume": 0.91,
+    "realBpm": 152,
     "file": "Bonnie Tyler-Holding Out For A Hero.json",
     "tracksCount": 1,
     "tracks": [
@@ -1320,6 +1382,7 @@
     "author": "Pit33",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 120,
     "file": "Breakout-Kiedy byłem małym chłopcem.json",
     "tracksCount": 1,
     "tracks": [
@@ -1342,6 +1405,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Baby%20One%20More%20Time",
+    "realBpm": 92,
     "file": "Britney Spears-Baby One More Time.json",
     "tracksCount": 1,
     "tracks": [
@@ -1363,6 +1427,7 @@
     "author": "zXz",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=zxz",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Oops!%20I%20did%20it%20again",
+    "realBpm": 95,
     "file": "Britney Spears-Oops! I did it again.json",
     "tracksCount": 1,
     "tracks": [
@@ -1384,6 +1449,7 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=rubn4",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic",
     "volume": 0.91,
+    "realBpm": 144,
     "file": "Britney Spears-Toxic.json",
     "tracksCount": 1,
     "tracks": [
@@ -1404,6 +1470,7 @@
     "author": "savik1993",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11157",
+    "realBpm": 112,
     "file": "Bruno Mars-Grenade.json",
     "tracksCount": 1,
     "tracks": [
@@ -1424,6 +1491,7 @@
     "author": "savik1993",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10573",
+    "realBpm": 108,
     "file": "Bruno Mars-Just The Way You Are.json",
     "tracksCount": 1,
     "tracks": [
@@ -1445,6 +1513,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12507",
     "volume": 1,
+    "realBpm": 120,
     "file": "Budka Suflera-Piąty Bieg [DUET].json",
     "tracksCount": 2,
     "tracks": [
@@ -1468,6 +1537,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=169980",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=24888",
     "volume": 1,
+    "realBpm": 112,
     "file": "Budka Suflera-Takie tango.json",
     "tracksCount": 1,
     "tracks": [
@@ -1489,6 +1559,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Cailin%20Russo%20%26%20Chrissy%20Costanza&cancion=Phoenix",
+    "realBpm": 84,
     "file": "Cailin Russo & Chrissy Costanza-Phoenix.json",
     "tracksCount": 1,
     "tracks": [
@@ -1509,6 +1580,7 @@
     "author": "dontellme",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dontellme",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Carly%20Rae%20Jepsen&cancion=Call%20Me%20Maybe",
+    "realBpm": 117,
     "file": "Carly Rae Jepsen-Call Me Maybe.json",
     "tracksCount": 1,
     "tracks": [
@@ -1530,6 +1602,7 @@
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful",
+    "realBpm": 76,
     "file": "Christina Aguilera-Beautiful.json",
     "tracksCount": 1,
     "tracks": [
@@ -1550,6 +1623,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Perri&cancion=A%20Thousand%20Years",
+    "realBpm": 73,
     "file": "Christina Perri-A Thousand Years.json",
     "tracksCount": 1,
     "tracks": [
@@ -1571,6 +1645,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Chuck%20Berry&cancion=You%20never%20can%20tell",
+    "realBpm": 157,
     "file": "Chuck Berry-You never can tell.json",
     "tracksCount": 1,
     "tracks": [
@@ -1592,6 +1667,7 @@
     "author": "albanderuaz",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=albanderuaz",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Clocks",
+    "realBpm": 129,
     "file": "Coldplay-Clocks.json",
     "tracksCount": 1,
     "tracks": [
@@ -1612,6 +1688,7 @@
     "author": "kaim21",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Paradise",
+    "realBpm": 68,
     "file": "Coldplay-Paradise.json",
     "tracksCount": 1,
     "tracks": [
@@ -1632,6 +1709,7 @@
     "author": "Pacayaka",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pacayaka",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=The%20Scientist",
+    "realBpm": 74,
     "file": "Coldplay-The Scientist.json",
     "tracksCount": 1,
     "tracks": [
@@ -1652,6 +1730,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida",
+    "realBpm": 136,
     "file": "Coldplay-Viva la vida.json",
     "tracksCount": 1,
     "tracks": [
@@ -1673,6 +1752,7 @@
     "author": "Kodaman",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow",
+    "realBpm": 86,
     "file": "Coldplay-Yellow.json",
     "tracksCount": 1,
     "tracks": [
@@ -1695,6 +1775,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Cyndi%20Lauper&cancion=Girls%20Just%20Wanna%20Have%20Fun",
+    "realBpm": 120,
     "file": "Cyndi Lauper-Girls Just Wanna Have Fun.json",
     "tracksCount": 1,
     "tracks": [
@@ -1715,6 +1796,7 @@
     "year": "1979",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 78,
     "file": "Czeslaw Niemen-Pod papugami.json",
     "tracksCount": 1,
     "tracks": [
@@ -1735,6 +1817,7 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 80,
     "file": "Czesław Niemen-Dziwny jest ten świat.json",
     "tracksCount": 2,
     "tracks": [
@@ -1757,6 +1840,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On",
+    "realBpm": 98,
     "file": "Céline Dion-My Heart Will Go On.json",
     "tracksCount": 1,
     "tracks": [
@@ -1779,6 +1863,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gun88",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Daft%20Punk&cancion=Get%20Lucky",
     "volume": 0.91,
+    "realBpm": 116,
     "file": "Daft Punk-Get Lucky.json",
     "tracksCount": 1,
     "tracks": [
@@ -1799,6 +1884,7 @@
     "author": "Leroidukitch",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=21060",
+    "realBpm": 129,
     "file": "Danzel-Pump it up.json",
     "tracksCount": 1,
     "tracks": [
@@ -1819,6 +1905,7 @@
     "author": "Beneblade",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=beneblade",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Dave%20Rodgers&cancion=Deja%20Vu",
+    "realBpm": 152,
     "file": "Dave Rodgers-Deja Vu.json",
     "tracksCount": 1,
     "tracks": [
@@ -1842,6 +1929,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=David%20Bowie&cancion=Changes",
     "volume": 0.81,
+    "realBpm": 112,
     "file": "David Bowie-Changes.json",
     "tracksCount": 1,
     "tracks": [
@@ -1863,6 +1951,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11463",
     "volume": 0.91,
+    "realBpm": 101,
     "file": "De Press-Bo Jo Cie Kochom.json",
     "tracksCount": 1,
     "tracks": [
@@ -1886,6 +1975,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=667",
     "volume": 0.81,
+    "realBpm": 114,
     "file": "Deep Purple-Smoke On The Water.json",
     "tracksCount": 1,
     "tracks": [
@@ -1909,6 +1999,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Depeche%20Mode&cancion=Personal%20Jesus",
     "volume": 1,
+    "realBpm": 129,
     "file": "Depeche Mode-Personal Jesus.json",
     "tracksCount": 1,
     "tracks": [
@@ -1931,6 +2022,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=Down%20with%20the%20sickness",
+    "realBpm": 178,
     "file": "Disturbed-Down with the sickness.json",
     "tracksCount": 1,
     "tracks": [
@@ -1951,6 +2043,7 @@
     "author": "subkei",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=The%20Sound%20Of%20Silence",
+    "realBpm": 85,
     "file": "Disturbed-The Sound Of Silence.json",
     "tracksCount": 1,
     "tracks": [
@@ -1973,6 +2066,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=conejof1",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=DragonForce&cancion=Through%20the%20fire%20and%20flames",
     "volume": 0.91,
+    "realBpm": 200,
     "file": "DragonForce-Through the fire and flames.json",
     "tracksCount": 1,
     "tracks": [
@@ -1993,6 +2087,7 @@
     "authorUrl": "",
     "year": "1989",
     "sourceUrl": "",
+    "realBpm": 86,
     "file": "Dżem-Wehikuł Czasu.json",
     "tracksCount": 1,
     "tracks": [
@@ -2013,6 +2108,7 @@
     "author": "robertdjangelux",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=robertdjangelux",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ERA&cancion=Ameno",
+    "realBpm": 102,
     "file": "ERA-Ameno.json",
     "tracksCount": 1,
     "tracks": [
@@ -2034,6 +2130,7 @@
     "author": "nezunobaka",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=nezunobaka",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Galway%20Girl",
+    "realBpm": 99,
     "file": "Ed Sheeran-Galway Girl.json",
     "tracksCount": 1,
     "tracks": [
@@ -2055,6 +2152,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=I%20See%20Fire",
+    "realBpm": 76,
     "file": "Ed Sheeran-I See Fire.json",
     "tracksCount": 1,
     "tracks": [
@@ -2076,6 +2174,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Photograph",
+    "realBpm": 108,
     "file": "Ed Sheeran-Photograph.json",
     "tracksCount": 1,
     "tracks": [
@@ -2097,6 +2196,7 @@
     "author": "Volodia",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Shape%20of%20you",
+    "realBpm": 96,
     "file": "Ed Sheeran-Shape of you.json",
     "tracksCount": 1,
     "tracks": [
@@ -2117,6 +2217,7 @@
     "author": "Volodia",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Thinking%20out%20loud",
+    "realBpm": 78,
     "file": "Ed Sheeran-Thinking out loud.json",
     "tracksCount": 1,
     "tracks": [
@@ -2139,6 +2240,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "volume": 0.9,
+    "realBpm": 77,
     "file": "Edyta Górniak & Mietek Szcześniak-Dumka na dwa serca.json",
     "tracksCount": 2,
     "tracks": [
@@ -2161,6 +2263,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=13437",
     "volume": 1,
+    "realBpm": 105,
     "file": "Elektryczne Gitary-Co Ty Tutaj Robisz_.json",
     "tracksCount": 1,
     "tracks": [
@@ -2181,6 +2284,7 @@
     "year": "1992",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11488",
+    "realBpm": 126,
     "file": "Elektryczne Gitary-Jestem z Miasta.json",
     "tracksCount": 1,
     "tracks": [
@@ -2199,6 +2303,8 @@
     "author": "davidus01",
     "authorUrl": "",
     "sourceUrl": "",
+    "year": "1992",
+    "realBpm": 98,
     "file": "Elektryczne Gitary-Koniec.json",
     "tracksCount": 1,
     "tracks": [
@@ -2219,6 +2325,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias&cancion=Bailamos",
+    "realBpm": 99,
     "file": "Enrique Iglesias-Bailamos.json",
     "tracksCount": 1,
     "tracks": [
@@ -2240,6 +2347,7 @@
     "author": "QuantenspringerXXX",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=122934",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18544",
+    "realBpm": 91,
     "file": "Enrique Iglesias-Bailando.json",
     "tracksCount": 1,
     "tracks": [
@@ -2262,6 +2370,7 @@
     "author": "perzu25",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2565",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5607",
+    "realBpm": 76,
     "file": "Enrique Iglesias-Hero.json",
     "tracksCount": 1,
     "tracks": [
@@ -2282,6 +2391,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Eric%20Clapton&cancion=Tears%20in%20Heaven",
+    "realBpm": 77,
     "file": "Eric Clapton-Tears in Heaven.json",
     "tracksCount": 1,
     "tracks": [
@@ -2304,6 +2414,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Europe&cancion=Final%20Countdown",
+    "realBpm": 116,
     "file": "Europe-Final Countdown.json",
     "tracksCount": 1,
     "tracks": [
@@ -2327,6 +2438,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life",
     "volume": 0.81,
+    "realBpm": 96,
     "file": "Evanescence-Bring Me to Life.json",
     "tracksCount": 1,
     "tracks": [
@@ -2348,6 +2460,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1988",
+    "realBpm": 0,
     "file": "Fasolki-Ogórek wąsaty.json",
     "tracksCount": 1,
     "tracks": [
@@ -2369,6 +2482,7 @@
     "sourceUrl": "",
     "year": "2007",
     "volume": 0.9,
+    "realBpm": 140,
     "file": "Feel-A gdy jest już ciemno.json",
     "tracksCount": 1,
     "tracks": [
@@ -2390,6 +2504,7 @@
     "sourceUrl": "",
     "year": "2007",
     "volume": 0.9,
+    "realBpm": 93,
     "file": "Feel-Jak Anioła Głos.json",
     "tracksCount": 1,
     "tracks": [
@@ -2411,6 +2526,7 @@
     "sourceUrl": "",
     "year": "2007",
     "volume": 0.9,
+    "realBpm": 180,
     "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1,
     "tracks": [
@@ -2433,6 +2549,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Fountains%20Of%20Wayne&cancion=Stacy's%20Mom",
+    "realBpm": 118,
     "file": "Fountains Of Wayne-Stacy's Mom.json",
     "tracksCount": 1,
     "tracks": [
@@ -2454,6 +2571,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1984",
+    "realBpm": 126,
     "file": "Franek Kimono-King Bruce Lee Karate Mistrz.json",
     "tracksCount": 1,
     "tracks": [
@@ -2477,6 +2595,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Franz%20Ferdinand&cancion=Take%20Me%20Out",
     "volume": 0.85,
+    "realBpm": 104,
     "file": "Franz Ferdinand-Take Me Out.json",
     "tracksCount": 1,
     "tracks": [
@@ -2497,6 +2616,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "2010",
+    "realBpm": 0,
     "file": "Gandalf-Sax Guy 10 Hours HD.json",
     "tracksCount": 1,
     "tracks": [
@@ -2520,6 +2640,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=Careless%20Whisper",
     "volume": 0.91,
+    "realBpm": 77,
     "file": "George Michael-Careless Whisper.json",
     "tracksCount": 1,
     "tracks": [
@@ -2540,6 +2661,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "2000",
+    "realBpm": 140,
     "file": "Golec Orkiestra-Słodycze.json",
     "tracksCount": 1,
     "tracks": [
@@ -2561,6 +2683,7 @@
     "author": "Kodaman",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Goo%20Goo%20Dolls&cancion=Iris",
+    "realBpm": 77,
     "file": "Goo Goo Dolls-Iris.json",
     "tracksCount": 1,
     "tracks": [
@@ -2583,6 +2706,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Gorillaz&cancion=Feel%20Good%20Inc.",
+    "realBpm": 136,
     "file": "Gorillaz-Feel Good Inc..json",
     "tracksCount": 1,
     "tracks": [
@@ -2604,6 +2728,7 @@
     "author": "vicktoben",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Gotye%20%26%20Kimbra&cancion=Somebody%20That%20I%20Used%20To%20Know",
+    "realBpm": 129,
     "file": "Gotye & Kimbra-Somebody That I Used To Know.json",
     "tracksCount": 1,
     "tracks": [
@@ -2625,6 +2750,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Grease%20(John%20Travolta%20%26%20Olivia%20Newton-John)&cancion=You're%20the%20One%20that%20I%20Want",
+    "realBpm": 107,
     "file": "Grease (John Travolta & Olivia Newton-John)-You're the One that I Want.json",
     "tracksCount": 1,
     "tracks": [
@@ -2646,6 +2772,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Boulevard%20of%20Broken%20Dreams",
+    "realBpm": 82,
     "file": "Green Day-Boulevard of Broken Dreams.json",
     "tracksCount": 1,
     "tracks": [
@@ -2667,6 +2794,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Knocking%20On%20Heavens%20Door",
+    "realBpm": 66,
     "file": "Guns N' Roses-Knocking On Heavens Door.json",
     "tracksCount": 1,
     "tracks": [
@@ -2688,6 +2816,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Haddaway&cancion=What%20is%20love",
     "volume": 0.91,
+    "realBpm": 123,
     "file": "Haddaway & Jim Carrey & The Roxbury Guys-What is love.json",
     "tracksCount": 1,
     "tracks": [
@@ -2709,6 +2838,7 @@
     "videoGap": 0,
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 70,
     "file": "Hey-A Ty_.json",
     "tracksCount": 1,
     "tracks": [
@@ -2730,6 +2860,7 @@
     "videoGap": 0,
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 115,
     "file": "Hey-Mimo wszystko.json",
     "tracksCount": 1,
     "tracks": [
@@ -2753,6 +2884,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason",
     "volume": 0.81,
+    "realBpm": 83,
     "file": "Hoobastank-The Reason.json",
     "tracksCount": 1,
     "tracks": [
@@ -2775,6 +2907,7 @@
     "sourceUrl": "",
     "volume": 0.9,
     "year": "2003",
+    "realBpm": 69,
     "file": "Ich Troje-Kaine Grenzen.json",
     "tracksCount": 1,
     "tracks": [
@@ -2795,6 +2928,7 @@
     "sourceUrl": "",
     "volume": 0.9,
     "year": "2001",
+    "realBpm": 179,
     "file": "Ich Troje-Powiedz.json",
     "tracksCount": 1,
     "tracks": [
@@ -2817,6 +2951,7 @@
     "sourceUrl": "",
     "volume": 0.71,
     "year": "2001",
+    "realBpm": 104,
     "file": "Ich Troje-Wypijmy Za To.json",
     "tracksCount": 1,
     "tracks": [
@@ -2838,6 +2973,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11657",
     "volume": 1,
     "year": "2001",
+    "realBpm": 129,
     "file": "Ich Troje-Zawsze z Tobą Chciałbym Być.json",
     "tracksCount": 1,
     "tracks": [
@@ -2855,6 +2991,7 @@
     "bar": 4,
     "volume": 0.85,
     "year": "2013",
+    "realBpm": 137,
     "file": "Idina Menzel-Let-it-go.json",
     "tracksCount": 1,
     "tracks": [
@@ -2876,6 +3013,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Bad%20Liar",
+    "realBpm": 89,
     "file": "Imagine Dragons-Bad Liar.json",
     "tracksCount": 1,
     "tracks": [
@@ -2898,6 +3036,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Believer",
     "volume": 0.71,
+    "realBpm": 123,
     "file": "Imagine Dragons-Believer.json",
     "tracksCount": 1,
     "tracks": [
@@ -2919,6 +3058,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=It's%20Time",
+    "realBpm": 105,
     "file": "Imagine Dragons-It's Time.json",
     "tracksCount": 1,
     "tracks": [
@@ -2940,6 +3080,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Natural",
+    "realBpm": 99,
     "file": "Imagine Dragons-Natural.json",
     "tracksCount": 1,
     "tracks": [
@@ -2961,6 +3102,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dontellme",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Radioactive",
     "volume": 0.75,
+    "realBpm": 68,
     "file": "Imagine Dragons-Radioactive.json",
     "tracksCount": 1,
     "tracks": [
@@ -2982,6 +3124,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Thunder",
+    "realBpm": 83,
     "file": "Imagine Dragons-Thunder.json",
     "tracksCount": 1,
     "tracks": [
@@ -3004,6 +3147,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=skream",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Warriors",
     "volume": 0.81,
+    "realBpm": 156,
     "file": "Imagine Dragons-Warriors.json",
     "tracksCount": 1,
     "tracks": [
@@ -3025,6 +3169,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Whatever%20It%20Takes",
+    "realBpm": 68,
     "file": "Imagine Dragons-Whatever It Takes.json",
     "tracksCount": 1,
     "tracks": [
@@ -3046,6 +3191,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Wrecked",
+    "realBpm": 94,
     "file": "Imagine Dragons-Wrecked.json",
     "tracksCount": 1,
     "tracks": [
@@ -3066,6 +3212,7 @@
     "author": "zartas",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=113646",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17614",
+    "realBpm": 114,
     "file": "Jacek Kaczmarski-Mury.json",
     "tracksCount": 1,
     "tracks": [
@@ -3088,6 +3235,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=James%20Blunt&cancion=You're%20Beautiful",
+    "realBpm": 81,
     "file": "James Blunt-You're Beautiful.json",
     "tracksCount": 1,
     "tracks": [
@@ -3109,6 +3257,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=lorchen",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Jamiroquai&cancion=Virtual%20Insanity",
     "volume": 0.85,
+    "realBpm": 92,
     "file": "Jamiroquai-Virtual Insanity.json",
     "tracksCount": 1,
     "tracks": [
@@ -3130,6 +3279,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14055",
     "volume": 1,
     "year": "2012",
+    "realBpm": 123,
     "file": "Jarzębina-Koko Euro Spoko.json",
     "tracksCount": 1,
     "tracks": [
@@ -3153,6 +3303,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Jeden%20Osiem%20L&cancion=Jak%20zapomniec",
     "volume": 0.81,
+    "realBpm": 85,
     "file": "Jeden Osiem L-Jak zapomniec.json",
     "tracksCount": 1,
     "tracks": [
@@ -3175,6 +3326,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=997",
     "volume": 0.81,
     "year": "2003",
+    "realBpm": 103,
     "file": "Jet-Are You Gonna Be My Girl.json",
     "tracksCount": 1,
     "tracks": [
@@ -3196,6 +3348,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Journey&cancion=Don't%20Stop%20Believing",
     "year": "1990",
+    "realBpm": 118,
     "file": "Journey-Don't Stop Believing.json",
     "tracksCount": 1,
     "tracks": [
@@ -3216,6 +3369,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Can't%20stop%20the%20feeling!",
+    "realBpm": 113,
     "file": "Justin Timberlake-Can't stop the feeling!.json",
     "tracksCount": 1,
     "tracks": [
@@ -3236,6 +3390,7 @@
     "author": "Rubn4",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=rubn4",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Cry%20Me%20A%20River",
+    "realBpm": 73,
     "file": "Justin Timberlake-Cry Me A River.json",
     "tracksCount": 1,
     "tracks": [
@@ -3256,6 +3411,7 @@
     "author": "Tita",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=98",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=1938",
+    "realBpm": 99,
     "file": "Justin Timberlake-Rock Your Body.json",
     "tracksCount": 1,
     "tracks": [
@@ -3278,6 +3434,7 @@
     "author": "Ceptic",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=427",
+    "realBpm": 77,
     "file": "Justin Timberlake-What Goes Around... Comes Around (Radio Edit).json",
     "tracksCount": 1,
     "tracks": [
@@ -3300,6 +3457,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kaiser%20Chiefs&cancion=Ruby",
+    "realBpm": 92,
     "file": "Kaiser Chiefs-Ruby.json",
     "tracksCount": 1,
     "tracks": [
@@ -3323,6 +3481,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine",
     "volume": 0.9,
+    "realBpm": 108,
     "file": "Katrina And The Waves-Walking On Sunshine.json",
     "tracksCount": 1,
     "tracks": [
@@ -3345,6 +3504,7 @@
     "author": "michas17j",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10301",
+    "realBpm": 123,
     "file": "Katy Perry-Firework.json",
     "tracksCount": 1,
     "tracks": [
@@ -3367,6 +3527,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold",
     "volume": 0.91,
+    "realBpm": 129,
     "file": "Katy Perry-Hot N Cold.json",
     "tracksCount": 1,
     "tracks": [
@@ -3387,6 +3548,7 @@
     "author": "Yooma",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 100,
     "file": "Kayah & Bregovic-Śpij kochanie śpij.json",
     "tracksCount": 1,
     "tracks": [
@@ -3408,6 +3570,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11350",
     "volume": 0.751,
     "year": "1999",
+    "realBpm": 122,
     "file": "Kayah i Goran Bregovic-Prawy do Lewego.json",
     "tracksCount": 1,
     "tracks": [
@@ -3429,6 +3592,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kayah&cancion=Testosteron",
+    "realBpm": 124,
     "file": "Kayah-Testosteron.json",
     "tracksCount": 1,
     "tracks": [
@@ -3450,6 +3614,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3762",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4848",
     "year": "2009",
+    "realBpm": 152,
     "file": "Kings Of Leon-Sex On Fire.json",
     "tracksCount": 1,
     "tracks": [
@@ -3471,6 +3636,7 @@
     "videoGap": 0,
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 114,
     "file": "Kombi-Pokolenie.json",
     "tracksCount": 1,
     "tracks": [
@@ -3492,6 +3658,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11699",
     "volume": 0.81,
     "year": "1987",
+    "realBpm": 139,
     "file": "Krzysztof Krawczyk-Zatańczysz ze Mną Jeszcze Raz.json",
     "tracksCount": 1,
     "tracks": [
@@ -3513,6 +3680,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Krzysztof%20Miela%C5%84czuk&cancion=Tabaluga",
     "volume": 0.91,
+    "realBpm": 144,
     "file": "Krzysztof Mielańczuk-Tabaluga.json",
     "tracksCount": 1,
     "tracks": [
@@ -3534,6 +3702,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=16845",
     "volume": 1,
     "year": "1992",
+    "realBpm": 86,
     "file": "Kult-Baranek.json",
     "tracksCount": 1,
     "tracks": [
@@ -3556,6 +3725,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kylie%20Minogue&cancion=In%20Your%20Eyes",
+    "realBpm": 123,
     "file": "Kylie Minogue-In Your Eyes.json",
     "tracksCount": 1,
     "tracks": [
@@ -3577,6 +3747,7 @@
     "author": "vicktoben",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=LMFAO%2C%20Lauren%20Bennett%20%26%20Goon%20Rock&cancion=Party%20Rock%20Anthem",
+    "realBpm": 130,
     "file": "LMFAO, Lauren Bennett & Goon Rock-Party Rock Anthem.json",
     "tracksCount": 1,
     "tracks": [
@@ -3598,6 +3769,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5498",
     "year": "2008",
+    "realBpm": 119,
     "file": "Lady GaGa feat. Colby O'Donis-Just Dance.json",
     "tracksCount": 1,
     "tracks": [
@@ -3619,6 +3791,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7752",
     "year": "2009",
+    "realBpm": 117,
     "file": "Lady GaGa-Bad Romance.json",
     "tracksCount": 1,
     "tracks": [
@@ -3642,6 +3815,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Poker%20Face",
     "volume": 0.651,
+    "realBpm": 117,
     "file": "Lady Gaga-Poker Face.json",
     "tracksCount": 1,
     "tracks": [
@@ -3661,6 +3835,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1983",
+    "realBpm": 136,
     "file": "Lady Pank-Mniej niż zero.json",
     "tracksCount": 1,
     "tracks": [
@@ -3680,6 +3855,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1990",
+    "realBpm": 114,
     "file": "Lady Pank-Na co komu dziś.json",
     "tracksCount": 1,
     "tracks": [
@@ -3701,6 +3877,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2930",
     "year": "1990",
+    "realBpm": 95,
     "file": "Lady Pank-Zawsze tam gdzie Ty.json",
     "tracksCount": 1,
     "tracks": [
@@ -3720,6 +3897,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1989",
+    "realBpm": 132,
     "file": "Lady Pank-Zostawcie Titanica.json",
     "tracksCount": 1,
     "tracks": [
@@ -3741,6 +3919,7 @@
     "author": "Jeff54",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=140546",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=21044",
+    "realBpm": 162,
     "file": "LazyTown-We are number one.json",
     "tracksCount": 1,
     "tracks": [
@@ -3761,6 +3940,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=pomidorowa",
+    "realBpm": 0,
     "file": "Letni, Chamski Podryw-Pomidorowa.json",
     "tracksCount": 1,
     "tracks": [
@@ -3783,6 +3963,7 @@
     "author": "¡JKA!",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out",
+    "realBpm": 144,
     "file": "Linkin Park-Bleed It Out.json",
     "tracksCount": 1,
     "tracks": [
@@ -3803,6 +3984,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Breaking%20the%20Habit",
+    "realBpm": 99,
     "file": "Linkin Park-Breaking the Habit.json",
     "tracksCount": 1,
     "tracks": [
@@ -3825,6 +4007,7 @@
     "author": "chelste",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=chelste",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Castle%20of%20glass",
+    "realBpm": 108,
     "file": "Linkin Park-Castle of glass.json",
     "tracksCount": 1,
     "tracks": [
@@ -3845,6 +4028,7 @@
     "author": "kaim21",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Crawling",
+    "realBpm": 103,
     "file": "Linkin Park-Crawling.json",
     "tracksCount": 1,
     "tracks": [
@@ -3866,6 +4050,7 @@
     "author": "¡JKA!",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint",
+    "realBpm": 136,
     "file": "Linkin Park-Faint.json",
     "tracksCount": 1,
     "tracks": [
@@ -3887,6 +4072,7 @@
     "author": "paranoik",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paranoik",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=In%20The%20End",
+    "realBpm": 102,
     "file": "Linkin Park-In The End.json",
     "tracksCount": 1,
     "tracks": [
@@ -3908,6 +4094,7 @@
     "author": "Klafhor",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Numb",
+    "realBpm": 112,
     "file": "Linkin Park-Numb.json",
     "tracksCount": 1,
     "tracks": [
@@ -3930,6 +4117,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Waiting%20for%20the%20end",
+    "realBpm": 85,
     "file": "Linkin Park-Waiting for the end.json",
     "tracksCount": 1,
     "tracks": [
@@ -3950,6 +4138,7 @@
     "author": "paranoik",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paranoik",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=What%20I've%20done",
+    "realBpm": 58,
     "file": "Linkin Park-What I've done.json",
     "tracksCount": 1,
     "tracks": [
@@ -3971,6 +4160,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11762",
     "volume": 0.81,
     "year": "1996",
+    "realBpm": 145,
     "file": "Lizar-Ciągle Pada.json",
     "tracksCount": 2,
     "tracks": [
@@ -3994,6 +4184,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lordi&cancion=Hard%20Rock%20Hallelujah",
+    "realBpm": 123,
     "file": "Lordi-Hard Rock Hallelujah.json",
     "tracksCount": 1,
     "tracks": [
@@ -4015,6 +4206,7 @@
     "videoGap": 0,
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 120,
     "file": "Lzy-Agnieszka.json",
     "tracksCount": 1,
     "tracks": [
@@ -4037,6 +4229,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lzy&cancion=Oczy%20szeroko%20zamkniete",
+    "realBpm": 77,
     "file": "Lzy-Oczy szeroko zamkniete.json",
     "tracksCount": 1,
     "tracks": [
@@ -4058,6 +4251,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maciej%20Mol%C4%99da&cancion=Zrobi%C4%99%20m%C4%99%C5%BCczyzn%20z%20was",
     "volume": 1,
+    "realBpm": 114,
     "file": "Maciej Molęda-Zrobię mężczyzn z was.json",
     "tracksCount": 1,
     "tracks": [
@@ -4078,6 +4272,7 @@
     "authorUrl": "",
     "year": "2005",
     "sourceUrl": "",
+    "realBpm": 123,
     "file": "Madagaskar-Wyginam śmiało ciało.json",
     "tracksCount": 1,
     "tracks": [
@@ -4098,6 +4293,7 @@
     "author": "upalula",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?busqueda=madonna+hung+up",
+    "realBpm": 123,
     "file": "Madonna-Hung Up.json",
     "tracksCount": 1,
     "tracks": [
@@ -4119,6 +4315,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Like%20A%20Prayer",
+    "realBpm": 112,
     "file": "Madonna-Like A Prayer.json",
     "tracksCount": 1,
     "tracks": [
@@ -4141,6 +4338,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Vogue",
     "volume": 0.91,
+    "realBpm": 116,
     "file": "Madonna-Vogue.json",
     "tracksCount": 1,
     "tracks": [
@@ -4163,6 +4361,7 @@
     "author": "Corvus5",
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 112,
     "file": "Majka Jeżowska-A ja wolę moją mamę.json",
     "tracksCount": 1,
     "tracks": [
@@ -4184,6 +4383,7 @@
     "author": "Judsi",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=124518",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=20731",
+    "realBpm": 154,
     "file": "Manuel-Gas Gas Gas.json",
     "tracksCount": 1,
     "tracks": [
@@ -4205,6 +4405,7 @@
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205%20feat.%20Christina%20Aguilera&cancion=Moves%20Like%20Jagger",
+    "realBpm": 128,
     "file": "Maroon 5 feat. Christina Aguilera-Moves Like Jagger.json",
     "tracksCount": 1,
     "tracks": [
@@ -4227,6 +4428,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=Harder%20to%20breathe",
+    "realBpm": 152,
     "file": "Maroon 5-Harder to breathe.json",
     "tracksCount": 1,
     "tracks": [
@@ -4248,6 +4450,7 @@
     "author": "upalula",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved",
+    "realBpm": 102,
     "file": "Maroon 5-She Will Be Loved.json",
     "tracksCount": 1,
     "tracks": [
@@ -4270,6 +4473,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=This%20Love",
+    "realBpm": 96,
     "file": "Maroon 5-This Love.json",
     "tracksCount": 1,
     "tracks": [
@@ -4292,6 +4496,7 @@
     "author": "Canni",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=1169",
+    "realBpm": 129,
     "file": "Marvin Gaye & Tammi Terrell-Ain't No Mountain High Enough [DUET].json",
     "tracksCount": 2,
     "tracks": [
@@ -4315,6 +4520,7 @@
     "author": "Asvarox",
     "authorUrl": "https://github.com/Asvarox/olkaraoke",
     "sourceUrl": "",
+    "realBpm": 110,
     "file": "Meskie Granie Orkiestra-Poczatek.json",
     "tracksCount": 1,
     "tracks": [
@@ -4337,6 +4543,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman",
+    "realBpm": 123,
     "file": "Metallica-Enter Sandman.json",
     "tracksCount": 1,
     "tracks": [
@@ -4359,6 +4566,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Nothing%20Else%20Matters",
     "volume": 0.71,
+    "realBpm": 71,
     "file": "Metallica-Nothing Else Matters.json",
     "tracksCount": 1,
     "tracks": [
@@ -4379,6 +4587,7 @@
     "author": "ChiiO",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=chiio",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metro%20Station&cancion=Shake%20It",
+    "realBpm": 152,
     "file": "Metro Station-Shake It.json",
     "tracksCount": 1,
     "tracks": [
@@ -4400,6 +4609,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18461",
     "year": "1984",
+    "realBpm": 118,
     "file": "Michael Jackson feat. Justin Timberlake-Love Never Felt So Good.json",
     "tracksCount": 1,
     "tracks": [
@@ -4421,6 +4631,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Beat%20It",
+    "realBpm": 136,
     "file": "Michael Jackson-Beat It.json",
     "tracksCount": 1,
     "tracks": [
@@ -4442,6 +4653,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean",
     "volume": 0.71,
+    "realBpm": 116,
     "file": "Michael Jackson-Billie Jean.json",
     "tracksCount": 1,
     "tracks": [
@@ -4463,6 +4675,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Black%20or%20white",
+    "realBpm": 117,
     "file": "Michael Jackson-Black or white.json",
     "tracksCount": 1,
     "tracks": [
@@ -4484,6 +4697,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller",
+    "realBpm": 116,
     "file": "Michael Jackson-Thriller.json",
     "tracksCount": 1,
     "tracks": [
@@ -4505,6 +4719,7 @@
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Wrecking%20Ball",
+    "realBpm": 117,
     "file": "Miley Cyrus-Wrecking Ball.json",
     "tracksCount": 1,
     "tracks": [
@@ -4526,6 +4741,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7848",
     "volume": 0.71,
     "year": "2008",
+    "realBpm": 129,
     "file": "Morandi-Angels.json",
     "tracksCount": 1,
     "tracks": [
@@ -4549,6 +4765,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Hysteria",
     "volume": 0.81,
+    "realBpm": 92,
     "file": "Muse-Hysteria.json",
     "tracksCount": 1,
     "tracks": [
@@ -4570,6 +4787,7 @@
     "author": "Spys4Darwin",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=spys4darwin",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Knights%20of%20Cydonia",
+    "realBpm": 136,
     "file": "Muse-Knights of Cydonia.json",
     "tracksCount": 1,
     "tracks": [
@@ -4591,6 +4809,7 @@
     "author": "gun88",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gun88",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Madness",
+    "realBpm": 89,
     "file": "Muse-Madness.json",
     "tracksCount": 1,
     "tracks": [
@@ -4612,6 +4831,7 @@
     "author": "gun88",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gun88",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Panic%20Station",
+    "realBpm": 104,
     "file": "Muse-Panic Station.json",
     "tracksCount": 1,
     "tracks": [
@@ -4633,6 +4853,7 @@
     "author": "gun88",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gun88",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Reapers",
+    "realBpm": 96,
     "file": "Muse-Reapers.json",
     "tracksCount": 1,
     "tracks": [
@@ -4653,6 +4874,7 @@
     "author": "1v4n",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=1v4n",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Resistance",
+    "realBpm": 135,
     "file": "Muse-Resistance.json",
     "tracksCount": 1,
     "tracks": [
@@ -4674,6 +4896,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Supermassive%20Black%20Hole",
+    "realBpm": 117,
     "file": "Muse-Supermassive Black Hole.json",
     "tracksCount": 1,
     "tracks": [
@@ -4695,6 +4918,7 @@
     "author": "webo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=webo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Undisclosed%20desires",
+    "realBpm": 117,
     "file": "Muse-Undisclosed desires.json",
     "tracksCount": 1,
     "tracks": [
@@ -4716,6 +4940,7 @@
     "author": "albanderuaz",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=albanderuaz",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Uprising",
+    "realBpm": 129,
     "file": "Muse-Uprising.json",
     "tracksCount": 1,
     "tracks": [
@@ -4724,7 +4949,7 @@
     "search": "museuprising"
   },
   {
-    "title": "Dlugosc dzwieku samotnosci",
+    "title": "Długo dzwieku samotnosci",
     "artist": "Myslovitz",
     "bpm": 196.5,
     "bar": 4,
@@ -4737,12 +4962,13 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2945",
     "volume": 0.91,
     "year": "1999",
+    "realBpm": 98,
     "file": "Myslovitz-Dlugosc dzwieku samotnosci.json",
     "tracksCount": 1,
     "tracks": [
       {}
     ],
-    "search": "myslovitzdlugoscdzwiekusamotnosci"
+    "search": "myslovitzdugodzwiekusamotnosci"
   },
   {
     "title": "My",
@@ -4758,6 +4984,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17980",
     "volume": 0.91,
     "year": "1999",
+    "realBpm": 93,
     "file": "Myslovitz-My.json",
     "tracksCount": 1,
     "tracks": [
@@ -4781,6 +5008,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=17979",
     "volume": 0.91,
     "year": "1997",
+    "realBpm": 129,
     "file": "Myslovitz-Scenariusz Dla Moich Sąsiadów.json",
     "tracksCount": 1,
     "tracks": [
@@ -4801,6 +5029,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1996",
+    "realBpm": 123,
     "file": "Myslovitz-Z twarza Marilyn Monroe.json",
     "tracksCount": 1,
     "tracks": [
@@ -4822,6 +5051,7 @@
     "author": "Klafhor",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Natasha%20Bedingfield&cancion=Unwritten",
+    "realBpm": 99,
     "file": "Natasha Bedingfield-Unwritten.json",
     "tracksCount": 1,
     "tracks": [
@@ -4843,6 +5073,7 @@
     "author": "subkei",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Hero",
+    "realBpm": 74,
     "file": "Nickelback-Hero.json",
     "tracksCount": 1,
     "tracks": [
@@ -4865,6 +5096,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=How%20You%20Remind%20Me",
+    "realBpm": 86,
     "file": "Nickelback-How You Remind Me.json",
     "tracksCount": 1,
     "tracks": [
@@ -4887,6 +5119,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Photograph",
+    "realBpm": 145,
     "file": "Nickelback-Photograph.json",
     "tracksCount": 1,
     "tracks": [
@@ -4909,6 +5142,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Rockstar",
+    "realBpm": 144,
     "file": "Nickelback-Rockstar.json",
     "tracksCount": 1,
     "tracks": [
@@ -4931,6 +5165,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Savin'%20Me",
+    "realBpm": 164,
     "file": "Nickelback-Savin' Me.json",
     "tracksCount": 1,
     "tracks": [
@@ -4951,6 +5186,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nicki%20Taylor&cancion=Worlds%20Collide",
+    "realBpm": 110,
     "file": "Nicki Taylor-Worlds Collide.json",
     "tracksCount": 1,
     "tracks": [
@@ -4973,6 +5209,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak",
+    "realBpm": 76,
     "file": "No Doubt-Don't speak.json",
     "tracksCount": 1,
     "tracks": [
@@ -4995,6 +5232,7 @@
     "author": "Asvarox",
     "authorUrl": "https://github.com/Asvarox/olkaraoke",
     "sourceUrl": "",
+    "realBpm": 66,
     "file": "Nocny Kochanek-Kon Na Bialym Rycerzu.json",
     "tracksCount": 1,
     "tracks": [
@@ -5016,6 +5254,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2947",
     "volume": 0.81,
     "year": "1996",
+    "realBpm": 82,
     "file": "ONA-Kiedy powiem sobie dość.json",
     "tracksCount": 1,
     "tracks": [
@@ -5038,6 +5277,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Oasis&cancion=Wonderwall",
     "volume": 0.81,
+    "realBpm": 87,
     "file": "Oasis-Wonderwall.json",
     "tracksCount": 1,
     "tracks": [
@@ -5061,6 +5301,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Alive",
     "volume": 0.91,
+    "realBpm": 150,
     "file": "Pearl Jam-Alive.json",
     "tracksCount": 1,
     "tracks": [
@@ -5083,6 +5324,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Even%20Flow",
+    "realBpm": 108,
     "file": "Pearl Jam-Even Flow.json",
     "tracksCount": 1,
     "tracks": [
@@ -5104,6 +5346,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12554",
     "volume": 0.85,
     "year": "1989",
+    "realBpm": 76,
     "file": "Perfect-Nie Mogę Ci Wiele Dać.json",
     "tracksCount": 1,
     "tracks": [
@@ -5125,6 +5368,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1981",
+    "realBpm": 110,
     "file": "Perfect-Nie płacz Ewka.json",
     "tracksCount": 1,
     "tracks": [
@@ -5146,6 +5390,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11365",
     "volume": 0.91,
     "year": "1997",
+    "realBpm": 141,
     "file": "Perfect-Niepokonani.json",
     "tracksCount": 1,
     "tracks": [
@@ -5165,6 +5410,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "1982",
+    "realBpm": 57,
     "file": "Perfekt-Autobiografia.json",
     "tracksCount": 1,
     "tracks": [
@@ -5185,6 +5431,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12388",
     "year": "1995",
+    "realBpm": 130,
     "file": "Pewex vs Stachursky-Taki Jestem [DUET].json",
     "tracksCount": 2,
     "tracks": [
@@ -5207,6 +5454,7 @@
     "author": "gun8",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=80048",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=16651",
+    "realBpm": 160,
     "file": "Pharrell Williams-Happy.json",
     "tracksCount": 1,
     "tracks": [
@@ -5228,6 +5476,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2952",
     "volume": 1,
     "year": "1997",
+    "realBpm": 128,
     "file": "Piersi i Kukiz-Caluj Mnie.json",
     "tracksCount": 1,
     "tracks": [
@@ -5250,6 +5499,7 @@
     "author": "robertdjangelux",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=robertdjangelux",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pink%20Floyd&cancion=Another%20Brick%20In%20The%20Wall%20(Part%20II)",
+    "realBpm": 105,
     "file": "Pink Floyd-Another Brick In The Wall (Part II).json",
     "tracksCount": 1,
     "tracks": [
@@ -5270,6 +5520,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "2006",
+    "realBpm": 100,
     "file": "Piotr Rubik-Psalm dla ciebie.json",
     "tracksCount": 1,
     "tracks": [
@@ -5294,6 +5545,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=76763",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=15471",
     "year": "1997",
+    "realBpm": 145,
     "file": "Pokémon-Opening (PL).json",
     "tracksCount": 1,
     "tracks": [
@@ -5315,6 +5567,7 @@
     "author": "vicktoben",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=54350",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14414",
+    "realBpm": 132,
     "file": "Psy-Gangnam Style.json",
     "tracksCount": 1,
     "tracks": [
@@ -5337,6 +5590,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen%20%26%20David%20Bowie&cancion=Under%20Pressure",
     "volume": 0.85,
+    "realBpm": 114,
     "file": "Queen & David Bowie-Under Pressure.json",
     "tracksCount": 1,
     "tracks": [
@@ -5359,6 +5613,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=A%20kind%20of%20magic",
     "volume": 1,
+    "realBpm": 129,
     "file": "Queen-A kind of magic.json",
     "tracksCount": 1,
     "tracks": [
@@ -5381,6 +5636,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Another%20One%20Bites%20the%20Dust",
     "volume": 0.85,
+    "realBpm": 112,
     "file": "Queen-Another One Bites the Dust.json",
     "tracksCount": 1,
     "tracks": [
@@ -5403,6 +5659,7 @@
     "volume": 0.9,
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10385",
     "year": "1975",
+    "realBpm": 72,
     "file": "Queen-Bohemian Rhapsody.json",
     "tracksCount": 2,
     "tracks": [
@@ -5426,6 +5683,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Don't%20Stop%20Me%20Now",
+    "realBpm": 160,
     "file": "Queen-Don't Stop Me Now.json",
     "tracksCount": 1,
     "tracks": [
@@ -5448,6 +5706,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20It%20All",
     "volume": 0.85,
+    "realBpm": 92,
     "file": "Queen-I Want It All.json",
     "tracksCount": 1,
     "tracks": [
@@ -5470,6 +5729,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20to%20Break%20Free",
     "volume": 0.85,
+    "realBpm": 108,
     "file": "Queen-I Want to Break Free.json",
     "tracksCount": 1,
     "tracks": [
@@ -5493,6 +5753,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Radio%20Ga%20Ga",
     "volume": 1,
+    "realBpm": 112,
     "file": "Queen-Radio Ga Ga.json",
     "tracksCount": 1,
     "tracks": [
@@ -5516,6 +5777,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=The%20Show%20Must%20Go%20On",
     "volume": 0.85,
+    "realBpm": 83,
     "file": "Queen-The Show Must Go On.json",
     "tracksCount": 1,
     "tracks": [
@@ -5538,6 +5800,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Are%20the%20Champions",
     "volume": 1,
+    "realBpm": 46,
     "file": "Queen-We Are the Champions.json",
     "tracksCount": 1,
     "tracks": [
@@ -5560,6 +5823,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Will%20Rock%20You",
     "volume": 0.9,
+    "realBpm": 81,
     "file": "Queen-We Will Rock You.json",
     "tracksCount": 1,
     "tracks": [
@@ -5582,6 +5846,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=R.E.M.&cancion=Losing%20My%20Religion",
+    "realBpm": 123,
     "file": "R.E.M.-Losing My Religion.json",
     "tracksCount": 1,
     "tracks": [
@@ -5604,6 +5869,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Radiohead&cancion=Creep",
+    "realBpm": 92,
     "file": "Radiohead-Creep.json",
     "tracksCount": 1,
     "tracks": [
@@ -5625,6 +5891,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rage%20Against%20The%20Machine&cancion=Killing%20In%20The%20Name",
     "volume": 1,
+    "realBpm": 88,
     "file": "Rage Against The Machine-Killing In The Name.json",
     "tracksCount": 1,
     "tracks": [
@@ -5647,6 +5914,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ray%20Parker%20Jr.&cancion=Ghostbusters",
+    "realBpm": 116,
     "file": "Ray Parker Jr.-Ghostbusters.json",
     "tracksCount": 1,
     "tracks": [
@@ -5669,6 +5937,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Dani%20California",
+    "realBpm": 96,
     "file": "Red Hot Chili Peppers-Dani California.json",
     "tracksCount": 1,
     "tracks": [
@@ -5690,6 +5959,7 @@
     "videoGap": 0,
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 107,
     "file": "Reni Jusis-Zakręcona.json",
     "tracksCount": 1,
     "tracks": [
@@ -5711,6 +5981,7 @@
     "author": "Beneblade",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=beneblade",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Bogurodzica",
+    "realBpm": 42,
     "file": "Reprezentacyjny Zespół Artystyczny Wojska Polskiego-Bogurodzica.json",
     "tracksCount": 1,
     "tracks": [
@@ -5732,6 +6003,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=beneblade",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Rota",
     "volume": 0.8,
+    "realBpm": 51,
     "file": "Reprezentacyjny Zespół Artystyczny Wojska Polskiego-Rota.json",
     "tracksCount": 1,
     "tracks": [
@@ -5754,6 +6026,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2954",
     "volume": 0.85,
+    "realBpm": 134,
     "file": "Republika-Biała flaga.json",
     "tracksCount": 1,
     "tracks": [
@@ -5775,6 +6048,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up",
+    "realBpm": 112,
     "file": "Rick Astley-Never gonna give you up.json",
     "tracksCount": 1,
     "tracks": [
@@ -5797,6 +6071,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5383",
     "year": "1999",
+    "realBpm": 178,
     "file": "Ricky Martin-Livin' La Vida Loca.json",
     "tracksCount": 1,
     "tracks": [
@@ -5818,6 +6093,7 @@
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Diamonds",
+    "realBpm": 92,
     "file": "Rihanna-Diamonds.json",
     "tracksCount": 1,
     "tracks": [
@@ -5839,6 +6115,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Umbrella",
+    "realBpm": 174,
     "file": "Rihanna-Umbrella.json",
     "tracksCount": 1,
     "tracks": [
@@ -5861,6 +6138,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Robbie%20Williams&cancion=Angels",
     "volume": 0.9,
+    "realBpm": 75,
     "file": "Robbie Williams-Angels.json",
     "tracksCount": 1,
     "tracks": [
@@ -5881,6 +6159,7 @@
     "author": "Pantero",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Robbie%20Williams&cancion=Rock%20DJ",
+    "realBpm": 103,
     "file": "Robbie Williams-Rock DJ.json",
     "tracksCount": 1,
     "tracks": [
@@ -5903,6 +6182,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Roxette&cancion=It%20Must%20Have%20Been%20Love",
+    "realBpm": 136,
     "file": "Roxette-It Must Have Been Love.json",
     "tracksCount": 1,
     "tracks": [
@@ -5924,6 +6204,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2957",
     "year": "1985",
+    "realBpm": 95,
     "file": "Rudi Schubert-Monika dziewczyna ratownika.json",
     "tracksCount": 1,
     "tracks": [
@@ -5947,6 +6228,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rudi%20Schuberth&cancion=C%C3%B3rka%20Rybaka",
     "volume": 1,
+    "realBpm": 87,
     "file": "Rudi Schuberth-Córka Rybaka.json",
     "tracksCount": 1,
     "tracks": [
@@ -5968,6 +6250,7 @@
     "author": "asb",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rupert%20Holmes&cancion=Escape%20(The%20Pi%C3%B1a%20Colada%20Song)",
+    "realBpm": 136,
     "file": "Rupert Holmes-Escape (The Pińa Colada Song).json",
     "tracksCount": 1,
     "tracks": [
@@ -5988,6 +6271,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1058",
     "sourceUrl": "http://usdb.animux.de/?link=detail&id=3284",
     "year": "2003",
+    "realBpm": 143,
     "file": "Scooter vs. Marc Acardipane & Dick Rules-Maria (I like it loud).json",
     "tracksCount": 1,
     "tracks": [
@@ -6009,6 +6293,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=538",
     "year": "1991",
+    "realBpm": 75,
     "file": "Scorpions-Wind of Change.json",
     "tracksCount": 1,
     "tracks": [
@@ -6030,6 +6315,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29",
     "volume": 0.8,
+    "realBpm": 127,
     "file": "Shakira ft. Freshlyground-Waka Waka (This Time for Africa).json",
     "tracksCount": 1,
     "tracks": [
@@ -6041,6 +6327,7 @@
     "title": "Whenever wherever",
     "artist": "Shakira",
     "bpm": 423,
+    "realBpm": 108,
     "bar": 4,
     "gap": 15984.09219858156,
     "video": "weRHyjj34ZE",
@@ -6072,6 +6359,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Skid%20Row&cancion=18%20%26%20Life",
     "volume": 1,
+    "realBpm": 90,
     "file": "Skid Row-18 & Life.json",
     "tracksCount": 1,
     "tracks": [
@@ -6092,6 +6380,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star",
+    "realBpm": 103,
     "file": "Smash Mouth-All Star but the whole song is sung on a C Note.json",
     "tracksCount": 1,
     "tracks": [
@@ -6112,6 +6401,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star",
+    "realBpm": 103,
     "file": "Smash Mouth-All Star.json",
     "tracksCount": 1,
     "tracks": [
@@ -6133,6 +6423,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=I'm%20a%20believer",
+    "realBpm": 161,
     "file": "Smash Mouth-I'm a believer.json",
     "tracksCount": 1,
     "tracks": [
@@ -6155,6 +6446,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Snow%20Patrol&cancion=Chasing%20Cars",
+    "realBpm": 103,
     "file": "Snow Patrol-Chasing Cars.json",
     "tracksCount": 1,
     "tracks": [
@@ -6176,6 +6468,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Soul%20Asylum&cancion=Runaway%20Train",
+    "realBpm": 117,
     "file": "Soul Asylum-Runaway Train.json",
     "tracksCount": 1,
     "tracks": [
@@ -6198,6 +6491,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Spice%20Girls&cancion=Wannabe",
+    "realBpm": 110,
     "file": "Spice Girls-Wannabe.json",
     "tracksCount": 1,
     "tracks": [
@@ -6219,6 +6513,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2862",
     "volume": 0.9,
     "year": "1999",
+    "realBpm": 104,
     "file": "Stachursky-Gdy Zaplaczesz.json",
     "tracksCount": 1,
     "tracks": [
@@ -6240,6 +6535,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Stachursky&cancion=Jedwab",
     "volume": 1,
+    "realBpm": 113,
     "file": "Stachursky-Jedwab.json",
     "tracksCount": 1,
     "tracks": [
@@ -6262,6 +6558,7 @@
     "sourceUrl": "",
     "volume": 0.9,
     "year": "2009",
+    "realBpm": 120,
     "file": "Stachursky-Typ Niepokorny.json",
     "tracksCount": 1,
     "tracks": [
@@ -6284,6 +6581,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "volume": 0.85,
+    "realBpm": 70,
     "file": "Stachursky-Z kazdym Twym oddechem.json",
     "tracksCount": 1,
     "tracks": [
@@ -6305,6 +6603,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5481",
     "volume": 0.8,
     "year": "1995",
+    "realBpm": 63,
     "file": "Stachursky-Zostanmy Razem.json",
     "tracksCount": 1,
     "tracks": [
@@ -6328,6 +6627,7 @@
     "volume": 0.85,
     "previewStart": 47,
     "year": "2010",
+    "realBpm": 130,
     "file": "Sun Stroke Project & Olia Tira-Run away (Moldova).json",
     "tracksCount": 1,
     "tracks": [
@@ -6350,6 +6650,7 @@
     "author": "Hammy",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=574",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2361",
+    "realBpm": 108,
     "file": "Survivor-Eye Of The Tiger.json",
     "tracksCount": 1,
     "tracks": [
@@ -6373,6 +6674,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity",
     "volume": 0.8,
+    "realBpm": 224,
     "file": "System of a Down-Toxicity.json",
     "tracksCount": 1,
     "tracks": [
@@ -6394,6 +6696,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11616",
     "volume": 0.9,
     "year": "2001",
+    "realBpm": 130,
     "file": "Szanty-Morskie Opowieści.json",
     "tracksCount": 1,
     "tracks": [
@@ -6415,6 +6718,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11333",
     "volume": 1,
     "year": "1997",
+    "realBpm": 95,
     "file": "T. Love-Chłopaki Nie Płaczą.json",
     "tracksCount": 1,
     "tracks": [
@@ -6437,6 +6741,7 @@
     "sourceUrl": "",
     "volume": 0.9,
     "year": "2001",
+    "realBpm": 113,
     "file": "T.Love-Ajrisz.json",
     "tracksCount": 1,
     "tracks": [
@@ -6458,6 +6763,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11548",
     "volume": 0.9,
     "year": "1994",
+    "realBpm": 79,
     "file": "T.Love-I Love You.json",
     "tracksCount": 1,
     "tracks": [
@@ -6479,6 +6785,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11547",
     "volume": 0.8,
     "year": "1992",
+    "realBpm": 109,
     "file": "T.Love-King.json",
     "tracksCount": 1,
     "tracks": [
@@ -6500,6 +6807,7 @@
     "authorUrl": "",
     "sourceUrl": "",
     "year": "2001",
+    "realBpm": 116,
     "file": "T.Love-Nie nie nie.json",
     "tracksCount": 1,
     "tracks": [
@@ -6521,6 +6829,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11546",
     "volume": 1,
     "year": "2003",
+    "realBpm": 130,
     "file": "T.Love-Polish Boyfriend.json",
     "tracksCount": 1,
     "tracks": [
@@ -6542,6 +6851,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=13182",
     "volume": 1,
     "year": "1997",
+    "realBpm": 105,
     "file": "T.Love-Stokrotka.json",
     "tracksCount": 1,
     "tracks": [
@@ -6563,6 +6873,7 @@
     "sourceUrl": "",
     "volume": 0.9,
     "year": "1991",
+    "realBpm": 134,
     "file": "T.Love-Warszawa.json",
     "tracksCount": 1,
     "tracks": [
@@ -6584,6 +6895,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tadeusz%20Wo%C5%BAniak&cancion=Zegarmistrz%20%C5%9Bwiat%C5%82a",
     "volume": 0.8,
+    "realBpm": 87,
     "file": "Tadeusz Woźniak-Zegarmistrz światła.json",
     "tracksCount": 1,
     "tracks": [
@@ -6604,6 +6916,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12313",
     "year": "1996",
+    "realBpm": 135,
     "file": "Tarzan Boy-Tarzan.json",
     "tracksCount": 1,
     "tracks": [
@@ -6626,6 +6939,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paisano87",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Beelzeboss%20(The%20Final%20Showdown)",
     "volume": 1,
+    "realBpm": 130,
     "file": "Tenacious D-Beelzeboss (The Final Showdown).json",
     "tracksCount": 3,
     "tracks": [
@@ -6654,6 +6968,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=136",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=1893",
     "year": "2006",
+    "realBpm": 130,
     "file": "Tenacious D-Kickapoo.json",
     "tracksCount": 1,
     "tracks": [
@@ -6677,6 +6992,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Master%20Exploder",
     "volume": 0.85,
+    "realBpm": 74,
     "file": "Tenacious D-Master Exploder.json",
     "tracksCount": 1,
     "tracks": [
@@ -6699,6 +7015,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paisano87",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute",
     "volume": 0.85,
+    "realBpm": 94,
     "file": "Tenacious D-Tribute.json",
     "tracksCount": 1,
     "tracks": [
@@ -6721,6 +7038,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=All%20You%20Need%20Is%20Love",
+    "realBpm": 103,
     "file": "The Beatles-All You Need Is Love.json",
     "tracksCount": 1,
     "tracks": [
@@ -6743,6 +7061,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Come%20Together",
+    "realBpm": 83,
     "file": "The Beatles-Come Together.json",
     "tracksCount": 1,
     "tracks": [
@@ -6764,6 +7083,7 @@
     "author": "dekkard",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Hey%20Jude",
+    "realBpm": 74,
     "file": "The Beatles-Hey Jude.json",
     "tracksCount": 1,
     "tracks": [
@@ -6785,6 +7105,7 @@
     "author": "dekkard",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Let%20It%20Be",
+    "realBpm": 72,
     "file": "The Beatles-Let It Be.json",
     "tracksCount": 1,
     "tracks": [
@@ -6807,6 +7128,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=While%20My%20Guitar%20Gently%20Weeps",
+    "realBpm": 116,
     "file": "The Beatles-While My Guitar Gently Weeps.json",
     "tracksCount": 1,
     "tracks": [
@@ -6828,6 +7150,7 @@
     "author": "dekkard",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Yesterday",
+    "realBpm": 96,
     "file": "The Beatles-Yesterday.json",
     "tracksCount": 1,
     "tracks": [
@@ -6849,6 +7172,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7281",
     "year": "2009",
+    "realBpm": 129,
     "file": "The Black Eyed Peas-I Gotta Feeling.json",
     "tracksCount": 1,
     "tracks": [
@@ -6871,6 +7195,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Eyed%20Peas&cancion=Pump%20It",
+    "realBpm": 152,
     "file": "The Black Eyed Peas-Pump It.json",
     "tracksCount": 1,
     "tracks": [
@@ -6893,6 +7218,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Keys&cancion=Lonely%20boy",
+    "realBpm": 166,
     "file": "The Black Keys-Lonely boy.json",
     "tracksCount": 1,
     "tracks": [
@@ -6914,6 +7240,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Bloodhound%20Gang&cancion=The%20bad%20touch",
+    "realBpm": 123,
     "file": "The Bloodhound Gang-The bad touch.json",
     "tracksCount": 1,
     "tracks": [
@@ -6936,6 +7263,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Clash&cancion=Should%20I%20Stay%20Or%20Should%20I%20GO",
+    "realBpm": 113,
     "file": "The Clash-Should I Stay Or Should I GO.json",
     "tracksCount": 1,
     "tracks": [
@@ -6959,6 +7287,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cranberries&cancion=Zombie",
     "volume": 0.85,
+    "realBpm": 84,
     "file": "The Cranberries-Zombie.json",
     "tracksCount": 1,
     "tracks": [
@@ -6980,6 +7309,7 @@
     "author": "Kodaman",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Boys%20Don't%20Cry",
+    "realBpm": 168,
     "file": "The Cure-Boys Don't Cry.json",
     "tracksCount": 1,
     "tracks": [
@@ -7002,6 +7332,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Friday%20I'm%20in%20Love",
+    "realBpm": 136,
     "file": "The Cure-Friday I'm in Love.json",
     "tracksCount": 1,
     "tracks": [
@@ -7024,6 +7355,7 @@
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Doors&cancion=Riders%20on%20the%20storm",
+    "realBpm": 99,
     "file": "The Doors-Riders on the storm.json",
     "tracksCount": 1,
     "tracks": [
@@ -7046,6 +7378,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Caution",
+    "realBpm": 89,
     "file": "The Killers-Caution.json",
     "tracksCount": 1,
     "tracks": [
@@ -7068,6 +7401,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside",
+    "realBpm": 148,
     "file": "The Killers-Mr. Brightside.json",
     "tracksCount": 1,
     "tracks": [
@@ -7090,6 +7424,7 @@
     "author": "Canni",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=296",
+    "realBpm": 138,
     "file": "The Killers-Somebody Told Me.json",
     "tracksCount": 1,
     "tracks": [
@@ -7112,6 +7447,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Offspring&cancion=Pretty%20fly%20(for%20a%20white%20guy)",
+    "realBpm": 144,
     "file": "The Offspring-Pretty fly (for a white guy).json",
     "tracksCount": 1,
     "tracks": [
@@ -7134,6 +7470,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Police&cancion=Message%20in%20a%20bottle",
+    "realBpm": 152,
     "file": "The Police-Message in a bottle.json",
     "tracksCount": 1,
     "tracks": [
@@ -7155,6 +7492,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Proclaimers&cancion=I%27m%20gonna%20be%20(500%20miles)",
     "volume": 0.85,
+    "realBpm": 129,
     "file": "The Proclaimers-I'm gonna be (500 miles).json",
     "tracksCount": 1,
     "tracks": [
@@ -7176,6 +7514,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You",
     "volume": 1,
+    "realBpm": 93,
     "file": "The Rembrandts-I'll Be There for You.json",
     "tracksCount": 1,
     "tracks": [
@@ -7198,6 +7537,7 @@
     "author": "Peschi",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=263",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2157",
+    "realBpm": 159,
     "file": "The Rolling Stones-Paint It, Black.json",
     "tracksCount": 1,
     "tracks": [
@@ -7218,6 +7558,7 @@
     "author": "sanicsip",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Rolling%20Stones&cancion=Satisfaction%20(I%20Can't%20Get%20No)",
+    "realBpm": 138,
     "file": "The Rolling Stones-Satisfaction (I Can't Get No).json",
     "tracksCount": 1,
     "tracks": [
@@ -7240,6 +7581,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA",
     "volume": 0.9,
+    "realBpm": 127,
     "file": "The Village People-YMCA.json",
     "tracksCount": 1,
     "tracks": [
@@ -7261,6 +7603,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3606",
     "year": "2000",
+    "realBpm": 111,
     "file": "The White Stripes-Jolene.json",
     "tracksCount": 1,
     "tracks": [
@@ -7284,6 +7627,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Baba%20O'Riley",
     "volume": 0.9,
+    "realBpm": 117,
     "file": "The Who-Baba O'Riley.json",
     "tracksCount": 1,
     "tracks": [
@@ -7307,6 +7651,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Behind%20Blue%20Eyes",
     "volume": 0.9,
+    "realBpm": 137,
     "file": "The Who-Behind Blue Eyes.json",
     "tracksCount": 1,
     "tracks": [
@@ -7329,6 +7674,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=The%20Seeker",
     "volume": 0.85,
+    "realBpm": 90,
     "file": "The Who-The Seeker.json",
     "tracksCount": 1,
     "tracks": [
@@ -7352,6 +7698,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Won't%20get%20fooled%20again",
     "volume": 0.85,
+    "realBpm": 136,
     "file": "The Who-Won't get fooled again.json",
     "tracksCount": 1,
     "tracks": [
@@ -7371,6 +7718,8 @@
     "author": "jockel1974",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2599",
+    "year": "1995",
+    "realBpm": 102,
     "file": "Tina Turner-GoldenEye.json",
     "tracksCount": 1,
     "tracks": [
@@ -7392,6 +7741,8 @@
     "author": "pauldiddy",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5705",
+    "year": "1989",
+    "realBpm": 103,
     "file": "Tina Turner-The Best.json",
     "tracksCount": 1,
     "tracks": [
@@ -7414,6 +7765,7 @@
     "author": "NikNak",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8110",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5510",
+    "realBpm": 98,
     "file": "Tina Turner-What’s Love Got To Do With It.json",
     "tracksCount": 1,
     "tracks": [
@@ -7434,6 +7786,7 @@
     "year": "2008",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1550",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3810",
+    "realBpm": 160,
     "file": "Tomasz Karolak-Anarchia.json",
     "tracksCount": 1,
     "tracks": [
@@ -7455,6 +7808,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3815",
     "volume": 0.8,
     "year": "2009",
+    "realBpm": 75,
     "file": "Tomasz Karolak-Zabiorę Cię właśnie tam.json",
     "tracksCount": 1,
     "tracks": [
@@ -7477,6 +7831,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa",
+    "realBpm": 92,
     "file": "Toto-Africa.json",
     "tracksCount": 1,
     "tracks": [
@@ -7498,6 +7853,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Hold%20The%20Line",
+    "realBpm": 96,
     "file": "Toto-Hold The Line.json",
     "tracksCount": 1,
     "tracks": [
@@ -7521,6 +7877,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Beautiful%20Day",
     "volume": 0.8,
+    "realBpm": 136,
     "file": "U2-Beautiful Day.json",
     "tracksCount": 1,
     "tracks": [
@@ -7544,6 +7901,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Vertigo",
     "volume": 1,
+    "realBpm": 144,
     "file": "U2-Vertigo.json",
     "tracksCount": 1,
     "tracks": [
@@ -7566,6 +7924,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=With%20or%20without%20you",
     "volume": 0.9,
+    "realBpm": 112,
     "file": "U2-With or without you.json",
     "tracksCount": 1,
     "tracks": [
@@ -7588,6 +7947,7 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2851",
     "volume": 0.8,
     "year": "1996",
+    "realBpm": 126,
     "file": "Urszula-Konik na biegunach.json",
     "tracksCount": 1,
     "tracks": [
@@ -7609,6 +7969,7 @@
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Vanessa%20Carlton&cancion=A%20thousand%20miles",
+    "realBpm": 96,
     "file": "Vanessa Carlton-A thousand miles.json",
     "tracksCount": 1,
     "tracks": [
@@ -7630,6 +7991,7 @@
     "videoGap": 0,
     "authorUrl": "",
     "sourceUrl": "",
+    "realBpm": 85,
     "file": "Varius Manx-Orla Cien.json",
     "tracksCount": 1,
     "tracks": [
@@ -7651,6 +8013,7 @@
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=Boom%2C%20Boom%2C%20Boom%2C%20Boom!!",
+    "realBpm": 136,
     "file": "Vengaboys-Boom, Boom, Boom, Boom!!.json",
     "tracksCount": 1,
     "tracks": [
@@ -7673,6 +8036,7 @@
     "author": "fepo",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12146",
+    "realBpm": 103,
     "file": "Vengaboys-Uncle John From Jamaica.json",
     "tracksCount": 1,
     "tracks": [
@@ -7693,6 +8057,7 @@
     "author": "Rubn4",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=rubn4",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=We%20Like%20To%20Party",
+    "realBpm": 136,
     "file": "Vengaboys-We Like To Party.json",
     "tracksCount": 1,
     "tracks": [
@@ -7715,6 +8080,7 @@
     "author": "fepo",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18159",
+    "realBpm": 104,
     "file": "Vengaboys-We’re going to Ibiza.json",
     "tracksCount": 1,
     "tracks": [
@@ -7736,6 +8102,7 @@
     "author": "rafallus",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=9876",
+    "realBpm": 122,
     "file": "Wes-Alane (Ala nie wali mu pały).json",
     "tracksCount": 1,
     "tracks": [
@@ -7757,6 +8124,7 @@
     "author": "asb",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas",
+    "realBpm": 108,
     "file": "Wham!-Last Christmas.json",
     "tracksCount": 1,
     "tracks": [
@@ -7779,6 +8147,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go",
+    "realBpm": 162,
     "file": "Wham-Wake Me Up Before You Go-Go.json",
     "tracksCount": 1,
     "tracks": [
@@ -7801,6 +8170,7 @@
     "author": "Lönne",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9523",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5780",
+    "realBpm": 117,
     "file": "Whitney Houston-I Wanna Dance With Somebody.json",
     "tracksCount": 1,
     "tracks": [
@@ -7823,6 +8193,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=558",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2822",
     "volume": 0.85,
+    "realBpm": 100,
     "file": "Wilki-Baska.json",
     "tracksCount": 1,
     "tracks": [
@@ -7844,6 +8215,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=558",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2826",
     "volume": 1,
+    "realBpm": 133,
     "file": "Wilki-Bohema.json",
     "tracksCount": 1,
     "tracks": [
@@ -7865,6 +8237,7 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8855",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5663",
     "year": "2003",
+    "realBpm": 129,
     "file": "Wilki-Urke.json",
     "tracksCount": 1,
     "tracks": [
@@ -7886,6 +8259,7 @@
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w",
+    "realBpm": 140,
     "file": "Wojciech Bujoczek-Król Szamanów.json",
     "tracksCount": 1,
     "tracks": [
@@ -7906,6 +8280,7 @@
     "author": "Lorchen",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=lorchen",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ylvis&cancion=The%20Fox",
+    "realBpm": 128,
     "file": "Ylvis-The Fox.json",
     "tracksCount": 1,
     "tracks": [
@@ -7926,6 +8301,7 @@
     "author": "NoeliaMicaela",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=noeliamicaela",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ZZ%20Top&cancion=Sharp%20Dressed%20Man",
+    "realBpm": 123,
     "file": "ZZ Top-Sharp Dressed Man.json",
     "tracksCount": 1,
     "tracks": [
@@ -7949,6 +8325,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Zbigniew%20Wodecki&cancion=Chalupy%20welcome%20to",
     "volume": 0.8,
+    "realBpm": 124,
     "file": "Zbigniew Wodecki-Chalupy welcome to.json",
     "tracksCount": 1,
     "tracks": [
@@ -7970,6 +8347,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=beneblade",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach",
     "volume": 0.9,
+    "realBpm": 83,
     "file": "Zielone Żabki-Numerek w krzaczkach.json",
     "tracksCount": 1,
     "tracks": [
@@ -7991,6 +8369,7 @@
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20on%20me",
+    "realBpm": 172,
     "file": "a-ha-Take on me.json",
     "tracksCount": 1,
     "tracks": [
@@ -8008,6 +8387,7 @@
     "bar": 4,
     "year": "2011",
     "beatLength": 286,
+    "realBpm": 103,
     "file": "adele-rolling-in-the-deep.json",
     "tracksCount": 1,
     "tracks": [
@@ -8025,6 +8405,7 @@
     "bar": 4,
     "volume": 0.91,
     "year": "2020",
+    "realBpm": 52,
     "file": "netflix-toss-a-coin-to-your-witcher.json",
     "tracksCount": 1,
     "tracks": [

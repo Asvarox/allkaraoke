@@ -12,6 +12,7 @@
   "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2957",
   "year": "1985",
+  "realBpm": 95,
   "tracks": [
     {
       "sections": [

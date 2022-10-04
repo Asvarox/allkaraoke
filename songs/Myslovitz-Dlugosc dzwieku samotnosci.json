@@ -1,5 +1,5 @@
 {
-  "title": "Dlugosc dzwieku samotnosci",
+  "title": "Długo dzwieku samotnosci",
   "artist": "Myslovitz",
   "bpm": 196.5,
   "bar": 4,
@@ -12,6 +12,7 @@
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2945",
   "volume": 0.91,
   "year": "1999",
+  "realBpm": 98,
   "tracks": [
     {
       "sections": [

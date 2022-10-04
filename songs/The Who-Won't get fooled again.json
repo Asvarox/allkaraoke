@@ -14,6 +14,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Won't%20get%20fooled%20again",
   "volume": 0.85,
+  "realBpm": 136,
   "tracks": [
     {
       "sections": [

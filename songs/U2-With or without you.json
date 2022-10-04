@@ -13,6 +13,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=With%20or%20without%20you",
   "volume": 0.9,
+  "realBpm": 112,
   "tracks": [
     {
       "sections": [

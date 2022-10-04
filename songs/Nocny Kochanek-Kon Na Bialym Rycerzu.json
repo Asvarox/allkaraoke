@@ -13,6 +13,7 @@
   "author": "Asvarox",
   "authorUrl": "https://github.com/Asvarox/olkaraoke",
   "sourceUrl": "",
+  "realBpm": 66,
   "tracks": [
     {
       "sections": [

@@ -13,6 +13,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)",
   "volume": 1,
+  "realBpm": 127,
   "tracks": [
     {
       "sections": [

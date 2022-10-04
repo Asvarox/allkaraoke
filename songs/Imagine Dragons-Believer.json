@@ -13,6 +13,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Believer",
   "volume": 0.71,
+  "realBpm": 123,
   "tracks": [
     {
       "sections": [

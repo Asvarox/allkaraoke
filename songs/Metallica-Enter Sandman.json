@@ -13,6 +13,7 @@
   "author": "gollum",
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman",
+  "realBpm": 123,
   "tracks": [
     {
       "sections": [

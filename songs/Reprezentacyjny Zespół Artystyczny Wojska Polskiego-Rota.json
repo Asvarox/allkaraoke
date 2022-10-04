@@ -12,6 +12,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=beneblade",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Rota",
   "volume": 0.8,
+  "realBpm": 51,
   "tracks": [
     {
       "sections": [

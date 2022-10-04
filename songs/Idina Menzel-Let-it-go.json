@@ -8,6 +8,7 @@
   "bar": 4,
   "volume": 0.85,
   "year": "2013",
+  "realBpm": 137,
   "tracks": [
     {
       "sections": [

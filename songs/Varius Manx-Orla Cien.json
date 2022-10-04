@@ -12,6 +12,7 @@
   "videoGap": 0,
   "authorUrl": "",
   "sourceUrl": "",
+  "realBpm": 85,
   "tracks": [
     {
       "sections": [

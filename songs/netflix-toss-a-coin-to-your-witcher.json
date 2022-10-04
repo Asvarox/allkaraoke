@@ -8,6 +8,7 @@
   "bar": 4,
   "volume": 0.91,
   "year": "2020",
+  "realBpm": 52,
   "tracks": [
     {
       "sections": [
