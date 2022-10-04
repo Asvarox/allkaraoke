@@ -14,6 +14,7 @@
   "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=667",
   "volume": 0.81,
+  "realBpm": 114,
   "tracks": [
     {
       "sections": [

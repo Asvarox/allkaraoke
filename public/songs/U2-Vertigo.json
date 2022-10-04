@@ -14,6 +14,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Vertigo",
   "volume": 1,
+  "realBpm": 144,
   "tracks": [
     {
       "sections": [

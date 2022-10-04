@@ -13,6 +13,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Oasis&cancion=Wonderwall",
   "volume": 0.81,
+  "realBpm": 87,
   "tracks": [
     {
       "sections": [

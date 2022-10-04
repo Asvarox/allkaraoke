@@ -119,3 +119,4 @@ stats.html
 /test-results/
 /playwright-report/
 /playwright/.cache/
+scripts/scraped-bpm-data.json

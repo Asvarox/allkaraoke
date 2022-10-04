@@ -12,6 +12,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy",
   "volume": 0.91,
+  "realBpm": 81,
   "tracks": [
     {
       "sections": [

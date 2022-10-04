@@ -12,6 +12,7 @@ import Phone from './Scenes/Phone/Phone';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 import Welcome from './Scenes/Welcome/Welcome';
 
+import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import 'Stats';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>
 
                 <Route path="/edit" component={SongList} />
+                <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
                 <Route path="/select-input" component={SelectInput} />
                 <Route path="/settings" component={Settings} />

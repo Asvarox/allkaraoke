@@ -2,7 +2,8 @@ import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { Song } from 'interfaces';
 import { MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
-import clearString from 'utils/clearString';
+import clearString from '../src/utils/clearString';
+import scrapedBpmData from './scraped-bpm-data.json';
 
 const mbApi = new MusicBrainzApi({
     appName: 'Olkaraoke',
@@ -16,7 +17,8 @@ const SONGS_FOLDER = './public/songs';
     const songs = readdirSync(SONGS_FOLDER);
 
     for (const file of songs) {
-        if (file === 'index.json' || file === 'dummy.json') return;
+        if (file === 'index.json' || file === 'dummy.json' || file === '.DS_Store') continue;
+        console.log('reading', file);
 
         const { tracks, ...songData }: Song = JSON.parse(
             readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }),
@@ -24,6 +26,7 @@ const SONGS_FOLDER = './public/songs';
 
         console.log(`"${songData.artist}" "${songData.title}"`);
         try {
+            await fillMissingRealBpm(songData, file);
             await fillSongYear(songData);
         } catch (e) {
             console.error(e);
@@ -34,6 +37,22 @@ const SONGS_FOLDER = './public/songs';
         });
     }
 })();
+
+async function fillMissingRealBpm(songData: Omit<Song, 'tracks'>, file: string) {
+    if (songData.realBpm) {
+        return;
+    }
+    console.log('    Missing real BPM');
+
+    const songBpmData = scrapedBpmData[file as keyof typeof scrapedBpmData];
+
+    if (songBpmData) {
+        console.log('    Found scraped BPM', songBpmData.tempo);
+        songData.realBpm = +songBpmData.tempo!;
+    } else {
+        songData.realBpm = 0;
+    }
+}
 
 async function fillSongYear(songData: Omit<Song, 'tracks'>) {
     if (songData.year && songData.year !== '') {

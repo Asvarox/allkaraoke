@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { typography } from 'Elements/cssMixins';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { navigate } from 'hooks/useHashLocation';
@@ -6,6 +7,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import { Link } from 'wouter';
 import logo from './logo.gif';
+import getSongBpm from './logo_bpm.png';
 
 function Welcome() {
     const { register } = useKeyboardNav();
@@ -47,11 +49,26 @@ function Welcome() {
                             Convert UltraStar .txt
                         </MenuButton>
                     </Link>
+                    <GetSongBPM target="_blank" href="https://getsongbpm.com/">
+                        Bpm data and release year provided by <img src={getSongBpm} />
+                    </GetSongBPM>
                 </MenuContainer>
             </Container>
         </LayoutWithBackground>
     );
 }
+
+const GetSongBPM = styled.a`
+    ${typography};
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 25%;
+        height: 25%;
+    }
+`;
 
 const Container = styled.div`
     display: flex;

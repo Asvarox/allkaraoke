@@ -13,6 +13,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Vogue",
   "volume": 0.91,
+  "realBpm": 116,
   "tracks": [
     {
       "sections": [

@@ -12,6 +12,7 @@
   "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
   "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean",
   "volume": 0.71,
+  "realBpm": 116,
   "tracks": [
     {
       "sections": [

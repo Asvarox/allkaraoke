@@ -12,6 +12,7 @@
   "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3606",
   "year": "2000",
+  "realBpm": 111,
   "tracks": [
     {
       "sections": [

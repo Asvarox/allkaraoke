@@ -12,6 +12,7 @@
   "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3",
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=538",
   "year": "1991",
+  "realBpm": 75,
   "tracks": [
     {
       "sections": [
