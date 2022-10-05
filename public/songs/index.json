@@ -6500,6 +6500,30 @@
     "search": "spicegirlswannabe"
   },
   {
+    "title": "Dosko",
+    "artist": "Stachursky",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 83195,
+    "video": "TU7V5_Jy-RI",
+    "year": "2009",
+    "edition": "",
+    "genre": "Unknown",
+    "language": "Polish",
+    "videoGap": 0,
+    "authorUrl": "",
+    "sourceUrl": "",
+    "previewStart": 83,
+    "realBpm": 134,
+    "file": "Stachursky-Dosko.json",
+    "tracksCount": 2,
+    "tracks": [
+      {},
+      {}
+    ],
+    "search": "stachurskydosko"
+  },
+  {
     "title": "Gdy Zaplaczesz",
     "artist": "Stachursky",
     "bpm": 104.1,
@@ -6674,7 +6698,7 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity",
     "volume": 0.8,
-    "realBpm": 224,
+    "realBpm": 112,
     "file": "System of a Down-Toxicity.json",
     "tracksCount": 1,
     "tracks": [

@@ -184,7 +184,9 @@ const SongListContainer = styled.div<{ active: boolean }>`
     padding: ${padding}px;
     padding-left: ${leftPad}px;
     overflow-y: overlay;
+    overflow-x: clip;
     box-sizing: border-box;
+    min-height: 100vh;
 `;
 
 const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width: number; height: number }>`
