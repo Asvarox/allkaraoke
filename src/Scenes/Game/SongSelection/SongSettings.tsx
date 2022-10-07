@@ -49,7 +49,8 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
 
     const lyricStartMs = getSongFirstNoteMs(songPreview);
     const hasLongIntro = lyricStartMs - (songPreview.videoGap ?? 0) * 1000 > SKIP_INTRO_THRESHOLD_MS;
-    const proposeSkipIntro = hasLongIntro || process.env.NODE_ENV === 'development';
+    // @ts-expect-error
+    const proposeSkipIntro = hasLongIntro || (process.env.NODE_ENV === 'development' && !window.isE2ETests);
 
     const togglePlayerTrack = (player: number) =>
         setPlayerTracks((tracks) => {
@@ -83,15 +84,6 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         <Container>
             <MicCheck />
             <GameConfiguration>
-                {proposeSkipIntro && (
-                    <Switcher
-                        {...register('skipIntro', () => setSkipIntro(!skipIntro), 'Skip intro')}
-                        label="Skip intro"
-                        value={skipIntro ? 'Yes' : 'No'}
-                        data-test="skip-intro"
-                        data-test-value={skipIntro}
-                    />
-                )}
                 <Switcher
                     {...register('difficulty', changeTolerance, 'Change difficulty')}
                     label="Difficulty"
@@ -123,6 +115,15 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
                             data-test-value={playerTracks[1] + 1}
                         />
                     </>
+                )}
+                {proposeSkipIntro && (
+                    <Switcher
+                        {...register('skipIntro', () => setSkipIntro(!skipIntro), 'Skip intro')}
+                        label="Skip intro"
+                        value={skipIntro ? 'Yes' : 'No'}
+                        data-test="skip-intro"
+                        data-test-value={skipIntro}
+                    />
                 )}
                 <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
                     Play

@@ -1,14 +1,23 @@
 import { Page } from '@playwright/test';
-import e2eDuetSong from './fixtures/songs/e2e-test-multitrack.json';
-import e2eSong from './fixtures/songs/e2e-test.json';
-import index from './fixtures/songs/index.json';
+import { readdirSync, readFileSync } from 'fs';
+import { getSongPreview } from '../scripts/utils';
+
+const songs = readdirSync('./tests/fixtures/songs/')
+    .filter((file) => file.endsWith('.json'))
+    .map((file) => ({
+        file,
+        song: JSON.parse(readFileSync(`./tests/fixtures/songs/${file}`, { encoding: 'utf-8' })),
+    }));
 
 export const mockSongs = async (page: Page) => {
+    const index = songs.map(({ file, song }) => getSongPreview(file, song));
     await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
-    await page.route('/songs/e2e-test.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(e2eSong) }));
-    await page.route('/songs/e2e-test-multitrack.json', (route) =>
-        route.fulfill({ status: 200, body: JSON.stringify(e2eDuetSong) }),
-    );
+
+    for (const song of songs) {
+        await page.route(`/songs/${song.file}`, (route) =>
+            route.fulfill({ status: 200, body: JSON.stringify(song.song) }),
+        );
+    }
 };
 
 export const initTestMode = async (page: Page) => {
