@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync } from 'fs';
 import { Song, SongPreview } from 'interfaces';
+import { getFirstNoteStartFromSections } from '../src/Scenes/Game/Singing/Helpers/notesSelectors';
 import clearString from '../src/utils/clearString';
 
 const SONGS_FOLDER = './public/songs';
@@ -17,7 +18,10 @@ readdirSync(SONGS_FOLDER).forEach((file) => {
         ...songData,
         file,
         tracksCount: tracks.length,
-        tracks: tracks.map(({ name }) => ({ name })),
+        tracks: tracks.map(({ name, sections }) => ({
+            name,
+            start: getFirstNoteStartFromSections(sections),
+        })),
         search: generateSearchString(songData),
     });
 });

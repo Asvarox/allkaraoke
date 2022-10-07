@@ -5,6 +5,7 @@ import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { isNumber } from 'lodash-es';
 import { useState } from 'react';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import MicCheck from 'Scenes/Game/SongSelection/MicCheck';
 import createPersistedState from 'use-persisted-state';
 import { nextIndex, nextValueIndex, Switcher } from './Switcher';
@@ -36,6 +37,8 @@ const useSetGameMode = createPersistedState<GAME_MODE>('song_settings-game_mode'
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
 const useSetSkipIntro = createPersistedState<boolean>('song_settings-skip_intro');
 
+const SKIP_INTRO_THRESHOLD_MS = 20_000;
+
 export default function SongSettings({ songPreview, onPlay, keyboardControl, onExitKeyboardControl }: Props) {
     const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
     const [playerTracks, setPlayerTracks] = useState<[number, number]>([0, Math.min(1, songPreview.tracksCount - 1)]);
@@ -43,6 +46,10 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     const [skipIntro, setSkipIntro] = useSetSkipIntro(false);
 
     const multipleTracks = songPreview.tracksCount > 1;
+
+    const lyricStartMs = getSongFirstNoteMs(songPreview);
+    const hasLongIntro = lyricStartMs - (songPreview.videoGap ?? 0) * 1000 > SKIP_INTRO_THRESHOLD_MS;
+    const proposeSkipIntro = hasLongIntro || process.env.NODE_ENV === 'development';
 
     const togglePlayerTrack = (player: number) =>
         setPlayerTracks((tracks) => {
@@ -57,7 +64,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
             mode,
             playerTracks,
             tolerance,
-            skipIntro,
+            skipIntro: proposeSkipIntro && skipIntro,
         };
 
         events.songStarted.dispatch(songPreview, singSetup);
@@ -76,7 +83,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         <Container>
             <MicCheck />
             <GameConfiguration>
-                {process.env.NODE_ENV === 'development' && (
+                {proposeSkipIntro && (
                     <Switcher
                         {...register('skipIntro', () => setSkipIntro(!skipIntro), 'Skip intro')}
                         label="Skip intro"

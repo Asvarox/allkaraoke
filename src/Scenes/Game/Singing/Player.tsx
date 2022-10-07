@@ -12,6 +12,7 @@ import {
 
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
+import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
@@ -52,6 +53,8 @@ function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>
 
     return duration;
 }
+
+const SKIP_INTRO_MS = process.env.NODE_ENV === 'development' ? 1_000 : 15_000;
 
 function Player(
     {
@@ -142,7 +145,10 @@ function Player(
                     controls={showControls}
                     autoplay={autoplay}
                     disablekb={process.env.NODE_ENV !== 'development'}
-                    startAt={(song.videoGap ?? 0) + Math.floor(singSetup.skipIntro ? song.gap / 1000 : 0)}
+                    startAt={
+                        (song.videoGap ?? 0) +
+                        Math.floor(singSetup.skipIntro ? (getSongFirstNoteMs(song) - SKIP_INTRO_MS) / 1000 : 0)
+                    }
                     onStateChange={onStateChangeCallback}
                 />
             </PlayerContainer>

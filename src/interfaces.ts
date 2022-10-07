@@ -66,7 +66,7 @@ export interface SongTrack {
 export interface SongPreview extends Omit<Song, 'tracks'> {
     file: string;
     tracksCount: number;
-    tracks: Array<Pick<SongTrack, 'name'>>;
+    tracks: Array<Pick<SongTrack, 'name'> & { start: number }>;
     search: string;
 }
 

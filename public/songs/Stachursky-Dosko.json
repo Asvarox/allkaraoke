@@ -10,12 +10,14 @@
   "genre": "Unknown",
   "language": "Polish",
   "videoGap": 0,
-  "authorUrl": "",
+  "author": "Asvarox",
+  "authorUrl": "https://github.com/Asvarox/olkaraoke",
   "sourceUrl": "",
   "previewStart": 83,
   "realBpm": 134,
   "tracks": [
     {
+      "name": "Niski Jaca",
       "sections": [
         {
           "start": 0,
@@ -2570,6 +2572,7 @@
       ]
     },
     {
+      "name": "Wysoki Jaca",
       "sections": [
         {
           "start": 0,
