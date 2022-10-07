@@ -58,7 +58,7 @@ test('skip the intro', async ({ page }) => {
     await expect(page.locator('[data-test="skip-intro"]')).toHaveAttribute('data-test-value', 'true');
     await page.locator('[data-test="play-song-button"]').click({ force: true });
 
-    await page.locator('[data-test="play-next-song-button"]').click({ timeout: 10_000, force: true });
+    await page.locator('[data-test="play-next-song-button"]').click({ timeout: 25_000, force: true });
     await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');
     await page.keyboard.press('Enter'); // enter first song
     await expect(page.locator('[data-test="skip-intro"]')).toHaveAttribute('data-test-value', 'true');

@@ -7,6 +7,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('Remote mic should connect and be selectable', async ({ page, context }) => {
+    test.slow();
     await page.goto('/');
 
     await page.locator('[data-test="select-input"]').click();

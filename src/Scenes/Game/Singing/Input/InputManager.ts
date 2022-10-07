@@ -7,6 +7,7 @@ import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingT
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
+import isDev from 'utils/isDev';
 import storage from 'utils/storage';
 
 export interface SelectedPlayerInput {
@@ -21,12 +22,9 @@ class InputManager {
     private playerInputs: SelectedPlayerInput[] = storage.getValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY) ?? [];
 
     constructor() {
-        // @ts-expect-error
-        const isE2ETests = !!window.isE2ETests;
-
         if (this.playerInputs.length === 0) {
             /* eslint-disable @typescript-eslint/no-unused-vars */
-            const Input = process.env.NODE_ENV === 'development' && !isE2ETests ? 'Dummy' : 'Microphone';
+            const Input = isDev() ? 'Dummy' : 'Microphone';
             const Input1 = 'Microphone';
             /* eslint-enable @typescript-eslint/no-unused-vars */
 

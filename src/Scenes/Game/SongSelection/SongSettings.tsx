@@ -8,6 +8,7 @@ import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import MicCheck from 'Scenes/Game/SongSelection/MicCheck';
 import createPersistedState from 'use-persisted-state';
+import isDev from 'utils/isDev';
 import { nextIndex, nextValueIndex, Switcher } from './Switcher';
 
 interface Props {
@@ -24,7 +25,7 @@ const gameModeNames = {
 
 const difficultyNames = ['Real', 'Hard', 'Medium', 'Easy'];
 
-if (process.env.NODE_ENV === 'development') {
+if (isDev()) {
     difficultyNames.push('Debug 4');
     difficultyNames.push('Debug 5');
     difficultyNames.push('Debug 6');
@@ -49,8 +50,8 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
 
     const lyricStartMs = getSongFirstNoteMs(songPreview);
     const hasLongIntro = lyricStartMs - (songPreview.videoGap ?? 0) * 1000 > SKIP_INTRO_THRESHOLD_MS;
-    // @ts-expect-error
-    const proposeSkipIntro = hasLongIntro || (process.env.NODE_ENV === 'development' && !window.isE2ETests);
+
+    const proposeSkipIntro = hasLongIntro || isDev();
 
     const togglePlayerTrack = (player: number) =>
         setPlayerTracks((tracks) => {

@@ -14,6 +14,7 @@ import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
+import isDev from 'utils/isDev';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
@@ -54,7 +55,7 @@ function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>
     return duration;
 }
 
-const SKIP_INTRO_MS = process.env.NODE_ENV === 'development' ? 1_000 : 15_000;
+const SKIP_INTRO_MS = isDev() ? 1_000 : 15_000;
 
 function Player(
     {
