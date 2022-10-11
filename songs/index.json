@@ -784,7 +784,7 @@
     "author": "koro008",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=6689",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=14022",
-    "realBpm": 234,
+    "realBpm": 119,
     "tracks": [
       {
         "start": 16
@@ -7120,11 +7120,11 @@
     "realBpm": 134,
     "tracks": [
       {
-        "name": "Niski Jaca",
+        "name": "No to ja poproszę colę",
         "start": 16
       },
       {
-        "name": "Wysoki Jaca",
+        "name": "On chce jednak colę",
         "start": 16
       }
     ],
