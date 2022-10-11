@@ -3,9 +3,9 @@ import { Button } from 'Elements/Button';
 import useKeyboard from 'hooks/useKeyboard';
 import { DetailedScore, Song } from 'interfaces';
 import { SyntheticEvent, useEffect, useState } from 'react';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SongPage, { ContentElement } from '../../SongPage';
 import ScoreText from '../GameOverlay/Components/ScoreText';
-import styles from '../GameOverlay/Drawing/styles';
 import { MAX_POINTS, sumDetailedScore } from '../GameState/Helpers/calculateScore';
 import backgroundMusic from './421888__b-sean__retro.mp3';
 
@@ -47,9 +47,10 @@ function PostGameView({ song, width, height, onClickSongSelection, players }: Pr
     return (
         <SongPage songData={song} width={width} height={height}>
             <ScoresContainer>
-                <ScoreTextPlayer>Player #1</ScoreTextPlayer>
+                <ScoreTextPlayer color={styles.colors.players[0].text}>Player #1</ScoreTextPlayer>
                 <br />
                 <ScoreTextScore
+                    color={styles.colors.players[0].text}
                     win={currentTick === MAX_TICKS && player1sum > player2sum}
                     data-test="player-1-score"
                     data-score={player1sum}>
@@ -60,13 +61,14 @@ function PostGameView({ song, width, height, onClickSongSelection, players }: Pr
                 <br />
                 <br />
                 <ScoreTextScore
+                    color={styles.colors.players[1].text}
                     win={currentTick === MAX_TICKS && player2sum > player1sum}
                     data-test="player-2-score"
                     data-score={player2sum}>
                     <ScoreText score={player2sum} />
                 </ScoreTextScore>
                 <br />
-                <ScoreTextPlayer>Player #2</ScoreTextPlayer>
+                <ScoreTextPlayer color={styles.colors.players[1].text}>Player #2</ScoreTextPlayer>
             </ScoresContainer>
             <SongSelectionButton onClick={onClickSongSelection} focused data-test="play-next-song-button">
                 Select song
@@ -91,15 +93,17 @@ const ScoresContainer = styled.div`
     text-align: center;
 `;
 
-const ScoreTextPlayer = styled(ContentElement)`
+const ScoreTextPlayer = styled(ContentElement)<{ color: string }>`
     padding-left: 100px;
     padding-right: 100px;
     font-size: 35px;
+    color: rgb(${(props) => props.color});
 `;
 
-const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean }>`
+const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; color: string }>`
     font-size: ${(props) => (props.win ? '105px' : '55px')};
-    color: ${styles.colors.text.active};
+    color: ${(props) => (props.win ? styles.colors.text.active : 'white')};
+    //color: white;
     transition: 400ms ease-in-out;
 `;
 
