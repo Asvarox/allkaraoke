@@ -146,6 +146,7 @@ function Player(
                     controls={showControls}
                     autoplay={autoplay}
                     disablekb={process.env.NODE_ENV !== 'development'}
+                    volume={song.volume}
                     startAt={
                         (song.videoGap ?? 0) +
                         Math.floor(singSetup.skipIntro ? (getSongFirstNoteMs(song) - SKIP_INTRO_MS) / 1000 : 0)
