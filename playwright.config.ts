@@ -50,7 +50,8 @@ const config: PlaywrightTestConfig = {
                 '--use-fake-ui-for-media-stream',
                 '--use-fake-device-for-media-stream',
                 '--use-file-for-fake-audio-capture=tests/fixtures/test-440hz.wav',
-            ],
+                !process.env.CI ? '--use-gl=egl' : '',
+            ].filter((arg) => arg !== ''),
         },
         video: {
             mode: 'retain-on-failure',
