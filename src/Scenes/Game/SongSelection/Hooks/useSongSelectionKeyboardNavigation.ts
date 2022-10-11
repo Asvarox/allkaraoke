@@ -3,6 +3,7 @@ import useKeyboard from 'hooks/useKeyboard';
 import { chunk, throttle } from 'lodash-es';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
+import random from 'utils/randomValue';
 import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';
 import usePrevious from '../../../../hooks/usePrevious';
 import tuple from '../../../../utils/tuple';
@@ -83,6 +84,7 @@ export const useSongSelectionKeyboardNavigation = (
     enabled: boolean,
     groupedSongs: SongGroup[] = [],
     onEnter: () => void,
+    songCount: number,
 ) => {
     const [showFilters, setShowFilters] = useState(false);
     const [focusedSong, cursorPosition, moveCursor, moveToSong] = useTwoDimensionalNavigation(groupedSongs);
@@ -133,6 +135,7 @@ export const useSongSelectionKeyboardNavigation = (
             onRightArrow: () => moveCursor('x', 1),
             onBackspace: handleBackspace,
             onLetterF: () => setShowFilters((current) => !current),
+            onR: () => setPositionBySongIndex(Math.round(random(0, songCount))),
         },
         enabled && !showFilters,
         [groupedSongs, cursorPosition, showFilters],
@@ -147,6 +150,7 @@ export const useSongSelectionKeyboardNavigation = (
                 accept: null,
                 back: null,
                 letterF: 'Filter list',
+                shiftR: null,
             });
         }
 

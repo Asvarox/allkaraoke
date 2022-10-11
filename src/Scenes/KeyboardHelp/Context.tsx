@@ -2,7 +2,7 @@ import { omit } from 'lodash-es';
 import { createContext, FunctionComponent, PropsWithChildren, useState } from 'react';
 import KeyboardHelpView from './HelpView';
 
-type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'letterF';
+type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'letterF' | 'shiftR';
 
 export type HelpEntry = Partial<Record<keys, string | null>>;
 

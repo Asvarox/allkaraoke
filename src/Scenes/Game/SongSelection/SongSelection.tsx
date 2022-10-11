@@ -5,6 +5,7 @@ import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import SelectRandomTip from 'Scenes/Game/SongSelection/SelectRandomTip';
 import usePrevious from '../../../hooks/usePrevious';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
@@ -89,6 +90,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
     return (
         <Container>
+            <SelectRandomTip keyboardControl={keyboardControl} />
             {(showFilters || !isEmptyFilters(filters)) && (
                 <Filters
                     showFilters={showFilters}
