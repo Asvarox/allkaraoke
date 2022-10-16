@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { focusable } from 'Elements/cssMixins';
 import { ReactNode } from 'react';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { SongListEntryDetails } from 'Scenes/Game/SongSelection/SongCard';
 import { ValuesType } from 'utility-types';
-import styles from '../Singing/GameOverlay/Drawing/styles';
-import { SongListEntryDetails } from './SongCard';
 
 interface Props {
     focused: boolean;

@@ -76,7 +76,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
                     ref={player}
                     onStatusChange={setPlayerState}
                     playerChanges={playerChanges}
-                    tracksForPlayers={singSetup.playerTracks}
+                    players={singSetup.players}
                     song={song.data}
                     width={width}
                     height={height}

@@ -15,7 +15,7 @@ interface Props {
     width: number;
     height: number;
     onSongEnd?: () => void;
-    tracksForPlayers: [number, number];
+    players: [number, number];
     duration: number;
     effectsEnabled: boolean;
     playerChanges: number[][];
@@ -26,7 +26,7 @@ function GameOverlay({
     currentStatus,
     width,
     height,
-    tracksForPlayers,
+    players,
     onSongEnd,
     playerChanges,
     effectsEnabled,
@@ -62,7 +62,7 @@ function GameOverlay({
     const overlayHeight = height - 2 * 100 - 80;
     return (
         <Screen>
-            <DurationBar usedTracks={tracksForPlayers} />
+            <DurationBar usedTracks={players} />
             <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
             <Scores>
                 <span data-test="player-1-score" data-score={GameState.getPlayer(0).getScore()}>

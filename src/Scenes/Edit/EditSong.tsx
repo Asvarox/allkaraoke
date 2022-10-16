@@ -89,7 +89,10 @@ export default function EditSong({ song, onUpdate }: Props) {
     const singSetup = useMemo<SingSetup>(
         () => ({
             mode: GAME_MODE.DUEL,
-            playerTracks: [0, song.tracks.length - 1],
+            players: [
+                { name: 'Player 1', track: 0 },
+                { name: 'Player 2', track: song.tracks.length - 1 },
+            ],
             tolerance: 6,
         }),
         [song],
@@ -112,7 +115,7 @@ export default function EditSong({ song, onUpdate }: Props) {
                         height={playerHeight}
                         ref={player}
                         onTimeUpdate={setCurrentTime}
-                        tracksForPlayers={[0, song.tracks.length - 1]}
+                        players={[0, song.tracks.length - 1]}
                         effectsEnabled={effectsEnabled}
                         singSetup={singSetup}
                     />

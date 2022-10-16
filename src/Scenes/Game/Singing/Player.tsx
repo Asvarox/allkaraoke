@@ -1,4 +1,4 @@
-import { SingSetup, Song } from 'interfaces';
+import { PlayerSetup, SingSetup, Song } from 'interfaces';
 import {
     ForwardedRef,
     forwardRef,
@@ -29,7 +29,7 @@ interface Props {
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd?: () => void;
     onStatusChange?: (status: VideoState) => void;
-    tracksForPlayers: [number, number];
+    players: [PlayerSetup, PlayerSetup];
     playerChanges?: number[][];
 
     effectsEnabled?: boolean;
@@ -67,7 +67,7 @@ function Player(
         onTimeUpdate,
         onSongEnd,
         onStatusChange,
-        tracksForPlayers,
+        players,
         playerChanges = [[], []],
         effectsEnabled = true,
         singSetup,
@@ -133,7 +133,7 @@ function Player(
                         width={width}
                         height={height}
                         onSongEnd={onSongEnd}
-                        tracksForPlayers={tracksForPlayers}
+                        players={players}
                     />
                 </Overlay>
             )}

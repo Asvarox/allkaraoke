@@ -17,7 +17,10 @@ describe('CanvasDrawing', function () {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.123456789);
 
         GameState.setSingSetup({
-            playerTracks: [0, 1],
+            players: [
+                { name: 'Player 1', track: 0 },
+                { name: 'Player 2', track: 1 },
+            ],
             mode: GAME_MODE.DUEL,
             tolerance: 2,
         });

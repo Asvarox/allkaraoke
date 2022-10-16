@@ -15,8 +15,13 @@ export enum GAME_MODE {
     PASS_THE_MIC,
 }
 
+export interface PlayerSetup {
+    name: string;
+    track: number;
+}
+
 export interface SingSetup {
-    playerTracks: [number, number];
+    players: [PlayerSetup, PlayerSetup];
     mode: GAME_MODE;
     tolerance: number;
     skipIntro?: boolean;

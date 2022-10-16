@@ -1,8 +1,8 @@
+import { nextIndex, nextValue } from 'Elements/Switcher';
 import { useEffect } from 'react';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { nextIndex, nextValue } from 'Scenes/Game/SongSelection/Switcher';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import { InputSourceList, InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import tuple from 'utils/tuple';

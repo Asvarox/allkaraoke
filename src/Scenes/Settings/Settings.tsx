@@ -1,8 +1,8 @@
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { nextValue, Switcher } from 'Elements/Switcher';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { nextValue, Switcher } from 'Scenes/Game/SongSelection/Switcher';
 import {
     FpsCount,
     FPSCountSetting,

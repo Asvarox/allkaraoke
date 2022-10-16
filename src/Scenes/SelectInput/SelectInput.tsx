@@ -1,12 +1,12 @@
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { Switcher } from 'Elements/Switcher';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
-import { Switcher } from '../Game/SongSelection/Switcher';
 
 interface Props {
     // file?: string;
