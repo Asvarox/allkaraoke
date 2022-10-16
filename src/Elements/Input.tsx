@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { focusable, typography } from 'Elements/cssMixins';
-import { ForwardedRef, forwardRef, ReactNode } from 'react';
-import styles from '../Singing/GameOverlay/Drawing/styles';
+import { DetailedHTMLProps, ForwardedRef, forwardRef, InputHTMLAttributes, ReactNode } from 'react';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
-interface Props {
+interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange'> {
     focused: boolean;
     label: ReactNode;
     value: string;

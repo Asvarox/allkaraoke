@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
 import { typography } from 'Elements/cssMixins';
+import { Input } from 'Elements/Input';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { throttle } from 'lodash-es';
@@ -9,7 +10,6 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventEffect, useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
-import { Input } from 'Scenes/Game/SongSelection/Input';
 import VolumeIndicator from 'Scenes/Phone/VolumeIndicator';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';

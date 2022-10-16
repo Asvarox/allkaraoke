@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Input } from 'Elements/Input';
 import { nextValue, Switcher } from 'Elements/Switcher';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -7,7 +8,6 @@ import { useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { SongListEntryDetails } from 'Scenes/Game/SongSelection/SongCard';
 import { AppliedFilters, FiltersData } from './Hooks/useSongList';
-import { Input } from './Input';
 
 interface Props {
     onSongFiltered: (filters: AppliedFilters) => void;
