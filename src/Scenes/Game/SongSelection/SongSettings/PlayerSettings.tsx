@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
+import { Input } from 'Elements/Input';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
 import { useRef, useState } from 'react';
-import { Input } from 'Scenes/Game/SongSelection/Input';
 
 interface Props {
     songPreview: SongPreview;

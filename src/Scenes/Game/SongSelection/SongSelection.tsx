@@ -59,7 +59,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setShowFilters(true);
     };
 
-    useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !showFilters });
+    useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !showFilters && keyboardControl });
 
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();

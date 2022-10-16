@@ -94,7 +94,7 @@ const HeadstartContainer = styled.span`
 
 const BaseHeadstart = styled.span`
     position: absolute;
-    width: 100px;
+    width: 150px;
     height: 31px;
     margin: 7px 0;
     right: 100px;
@@ -103,8 +103,9 @@ const BaseHeadstart = styled.span`
 const Headstart = ({ percent, color }: { percent: number; color: string }) => (
     <BaseHeadstart
         style={{
+            transformOrigin: 'right',
+            transform: `scaleX(${Math.min(1, 2 - percent)})`,
             right: `${Math.max(0, 1 - percent) * 150}px`,
-            width: `${Math.min(1, 2 - percent) * 150}px`,
             background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${color}, 0) 100%)`,
         }}
     />
@@ -166,10 +167,17 @@ const BasePassTheMicProgress = styled.div<{ color: string }>`
     height: 10px;
     background: rgb(${(props) => props.color});
     transition: 50ms;
+    width: 100%;
 `;
 
 const PassTheMicProgress = (props: { progress: number } & ComponentProps<typeof BasePassTheMicProgress>) => (
-    <BasePassTheMicProgress style={{ width: `${props.progress}%` }} color={props.color} />
+    <BasePassTheMicProgress
+        style={{
+            transformOrigin: 'left',
+            transform: `scaleX(${props.progress / 100})`,
+        }}
+        color={props.color}
+    />
 );
 
 const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => prop !== 'shouldShake' })<{
