@@ -1,5 +1,6 @@
 import { SingSetup, Song, SongPreview } from 'interfaces';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
+import isDev from 'utils/isDev';
 
 export class GameStateEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
@@ -13,36 +14,39 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
     };
 
     public dispatch = (...args: Parameters<T>) => {
+        if (isDev()) console.log('dispatch', this.name, ...args);
         this.subscribers.forEach((callback) => callback(...args));
     };
+
+    public constructor(private name: string) {}
 }
 
 export const events = {
-    sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>(),
-    // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
-    // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>(),
+    sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>('sectionChange'),
+    // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>('//'),
+    // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>('//'),
 
-    songStarted: new GameStateEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>(),
+    songStarted: new GameStateEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted'),
     songEnded: new GameStateEvent<
         (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
-    >(),
+    >('songEnded'),
 
-    phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>(),
-    phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>(),
+    phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneConnected'),
+    phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneDisconnected'),
     playerInputChanged: new GameStateEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput, newInput: SelectedPlayerInput) => void
-    >(),
-    inputListChanged: new GameStateEvent<() => void>(),
+    >('playerInputChanged'),
+    inputListChanged: new GameStateEvent<() => void>('inputListChanged'),
 
     karaokeConnectionStatusChange: new GameStateEvent<
         (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error') => void
-    >(),
-    remoteMicPlayerNumberSet: new GameStateEvent<(playerNumber: number | null) => void>(),
-    remoteMicMonitoringStarted: new GameStateEvent(),
-    remoteMicMonitoringStopped: new GameStateEvent(),
+    >('karaokeConnectionStatusChange'),
+    remoteMicPlayerNumberSet: new GameStateEvent<(playerNumber: number | null) => void>('remoteMicPlayerNumberSet'),
+    remoteMicMonitoringStarted: new GameStateEvent('remoteMicMonitoringStarted'),
+    remoteMicMonitoringStopped: new GameStateEvent('remoteMicMonitoringStopped'),
 
-    micMonitoringStarted: new GameStateEvent(),
-    micMonitoringStopped: new GameStateEvent(),
+    micMonitoringStarted: new GameStateEvent('micMonitoringStarted'),
+    micMonitoringStopped: new GameStateEvent('micMonitoringStopped'),
 };
 
 export default events;

@@ -86,6 +86,7 @@ const styles = {
         },
         text: {
             active: 'orange',
+            activeBorder: 'rgb(101,75,22)',
             default: 'white',
             inactive: 'grey',
         },

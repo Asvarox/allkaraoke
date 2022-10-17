@@ -107,7 +107,9 @@ export default function SongPreviewComponent({
                                             <SongAuthor>
                                                 by&nbsp;
                                                 {songPreview.authorUrl ? (
-                                                    <a href={songPreview.authorUrl}>{songPreview.author}</a>
+                                                    <a href={songPreview.authorUrl} target="_blank" rel="noreferrer">
+                                                        {songPreview.author}
+                                                    </a>
                                                 ) : (
                                                     songPreview.author
                                                 )}

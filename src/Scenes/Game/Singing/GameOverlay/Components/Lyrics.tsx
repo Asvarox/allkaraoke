@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { Note } from 'interfaces';
 import { ComponentProps, Fragment, PropsWithChildren } from 'react';
 import GameState from '../../GameState/GameState';
 import isNotesSection from '../../Helpers/isNotesSection';
@@ -111,7 +112,7 @@ const Headstart = ({ percent, color }: { percent: number; color: string }) => (
     />
 );
 
-const LyricContainer = styled.span<{ type: string }>`
+const LyricContainer = styled.span<{ type: Note['type'] }>`
     font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
     position: relative;
 `;

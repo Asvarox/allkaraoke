@@ -31,7 +31,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
                 track: singSetup.players[index].track,
             })) as [PlayerSetup, PlayerSetup],
         };
-        events.songStarted.dispatch(songPreview, singSetup);
+        events.songStarted.dispatch(songPreview, finalSetup);
         onPlay({ file: songPreview.file, video: songPreview.video, ...finalSetup });
     };
     return (

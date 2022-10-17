@@ -21,11 +21,12 @@ interface Props {
     onChange: (value: string) => void;
     disabled?: boolean;
     options: string[];
+    placeholder?: string;
 }
 
 export const Autocomplete = forwardRef(
     (
-        { options, focused, label, value, onChange, disabled, ...restProps }: Props,
+        { options, focused, label, value, onChange, disabled, placeholder, ...restProps }: Props,
         forwardedRef: ForwardedRef<HTMLInputElement | null>,
     ) => {
         const inputRef = useRef<HTMLInputElement>(null);
@@ -33,7 +34,7 @@ export const Autocomplete = forwardRef(
 
         const autocompleteMenu = useRef<HTMLDivElement>(null);
 
-        const [isInputFocused, setIsInputFocused] = useState(true);
+        const [isInputFocused, setIsInputFocused] = useState(false);
         const [focusedOption, setFocusedOption] = useState(-1);
 
         const filteredOptions = useMemo(
@@ -76,6 +77,7 @@ export const Autocomplete = forwardRef(
                     label={label}
                     disabled={disabled}
                     ref={inputRef}
+                    placeholder={placeholder}
                 />
                 {isInputFocused && !!filteredOptions.length && (
                     <AutocompleteMenu ref={autocompleteMenu}>
@@ -110,6 +112,7 @@ const AutocompleteMenu = styled.div`
     background: black;
     max-height: ${(1 + 2 * 0.3) * 4}em;
     overflow-y: auto;
+    z-index: 2;
 `;
 
 const AutocompleteMenuitem = styled.div<{ focused: boolean }>`
