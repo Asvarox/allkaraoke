@@ -5,6 +5,7 @@ import { useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import GameSettings from 'Scenes/Game/SongSelection/SongSettings/GameSettings';
+import MicCheck from 'Scenes/Game/SongSelection/SongSettings/MicCheck';
 import PlayerSettings from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings';
 
 interface Props {
@@ -36,6 +37,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
     };
     return (
         <Container>
+            <MicCheck />
             <GameConfiguration>
                 {step === 'song' && (
                     <GameSettings
@@ -62,7 +64,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
 
     h1 {

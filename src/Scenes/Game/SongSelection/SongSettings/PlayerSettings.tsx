@@ -69,32 +69,49 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
 
     return (
         <>
-            <h3>Player 1</h3>
-            <Autocomplete
-                options={playerNames}
-                onChange={setP1Name}
-                value={p1Name}
-                label="Name"
-                ref={p1NameRef}
-                {...register('p1name', () => p1NameRef.current?.focus())}
-                placeholder={p1DefaultName}
-            />
-            <h3>Player 2</h3>
-            <Autocomplete
-                options={playerNames}
-                onChange={setP2Name}
-                value={p2Name}
-                label="Name"
-                ref={p2NameRef}
-                placeholder={p2DefaultName}
-                {...register('p2name', () => p2NameRef.current?.focus())}
-            />
+            <PlayerSettingContainer>
+                <h3>Player 1</h3>
+                <div>
+                    <Autocomplete
+                        options={playerNames}
+                        onChange={setP1Name}
+                        value={p1Name}
+                        label="Name"
+                        ref={p1NameRef}
+                        {...register('p1name', () => p1NameRef.current?.focus())}
+                        placeholder={p1DefaultName}
+                    />
+                </div>
+            </PlayerSettingContainer>
+            <PlayerSettingContainer>
+                <h3>Player 2</h3>
+                <div>
+                    <Autocomplete
+                        options={playerNames}
+                        onChange={setP2Name}
+                        value={p2Name}
+                        label="Name"
+                        ref={p2NameRef}
+                        placeholder={p2DefaultName}
+                        {...register('p2name', () => p2NameRef.current?.focus())}
+                    />
+                </div>
+            </PlayerSettingContainer>
             <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
                 Play
             </PlayButton>
         </>
     );
 }
+
+const PlayerSettingContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+
+    h3 {
+        padding: 0.25em;
+    }
+`;
 
 const PlayButton = styled(Button)<{ focused: boolean }>`
     padding-left: 2em;

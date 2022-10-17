@@ -122,4 +122,5 @@ const AutocompleteMenuitem = styled.div<{ focused: boolean }>`
     overflow: hidden;
     text-overflow: ellipsis;
     color: ${(props) => (props.focused ? styles.colors.text.active : 'white')};
+    cursor: pointer;
 `;

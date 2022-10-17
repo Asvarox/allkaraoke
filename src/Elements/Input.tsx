@@ -40,6 +40,8 @@ const Container = styled.div<{ focused: boolean }>`
 
 const Label = styled.span`
     padding-right: 15px;
+    white-space: nowrap;
+    width: auto;
 `;
 
 const StyledInput = styled.input`

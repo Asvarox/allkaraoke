@@ -124,7 +124,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 />
             )}
             <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
-                Mic check
+                Players ➤
             </PlayButton>
         </>
     );

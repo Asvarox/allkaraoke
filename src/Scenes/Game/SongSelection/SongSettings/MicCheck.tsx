@@ -27,7 +27,8 @@ const MicChecksContainer = styled.div`
     gap: 0.5em;
     display: flex;
     flex-direction: column;
-    ${typography}
+    ${typography};
+    margin-bottom: 2.8em;
 `;
 
 const MicChecks = styled.div`
