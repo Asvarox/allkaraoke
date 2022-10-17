@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { PlayerSetup } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo } from 'react';
 import GameState from '../../GameState/GameState';
@@ -6,10 +7,10 @@ import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '../..
 import styles from '../Drawing/styles';
 
 interface Props {
-    usedTracks: number[];
+    players: PlayerSetup[];
 }
 
-function DurationBar({ usedTracks }: Props) {
+function DurationBar({ players }: Props) {
     const currentTime = GameState.getCurrentTime(false);
     const duration = GameState.getDuration();
     const beatLength = GameState.getSongBeatLength();
@@ -19,19 +20,19 @@ function DurationBar({ usedTracks }: Props) {
         () =>
             uniq(
                 song.tracks
-                    .filter((v, index) => usedTracks.includes(index))
+                    .filter((v, index) => players.find((player) => player.track === index))
                     .map(({ sections }) => getFirstNoteStartFromSections(sections) * beatLength + song.gap),
             ),
-        [song, beatLength, usedTracks],
+        [song, beatLength, players],
     );
     const lastNotes = useMemo(
         () =>
             uniq(
                 song.tracks
-                    .filter((v, index) => usedTracks.includes(index))
+                    .filter((v, index) => players.find((player) => player.track === index))
                     .map(({ sections }) => getLastNoteEndFromSections(sections) * beatLength + song.gap),
             ),
-        [song, beatLength, usedTracks],
+        [song, beatLength, players],
     );
 
     const durationMs = duration * 1000;

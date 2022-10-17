@@ -115,7 +115,10 @@ export default function EditSong({ song, onUpdate }: Props) {
                         height={playerHeight}
                         ref={player}
                         onTimeUpdate={setCurrentTime}
-                        players={[0, song.tracks.length - 1]}
+                        players={[
+                            { name: 'p1', track: 0 },
+                            { name: 'p1', track: song.tracks.length - 1 },
+                        ]}
                         effectsEnabled={effectsEnabled}
                         singSetup={singSetup}
                     />

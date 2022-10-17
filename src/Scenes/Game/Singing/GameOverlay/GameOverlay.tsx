@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { VideoState } from 'Elements/VideoPlayer';
-import { Song } from 'interfaces';
+import { PlayerSetup, Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
@@ -15,7 +15,7 @@ interface Props {
     width: number;
     height: number;
     onSongEnd?: () => void;
-    players: [number, number];
+    players: [PlayerSetup, PlayerSetup];
     duration: number;
     effectsEnabled: boolean;
     playerChanges: number[][];
@@ -62,7 +62,7 @@ function GameOverlay({
     const overlayHeight = height - 2 * 100 - 80;
     return (
         <Screen>
-            <DurationBar usedTracks={players} />
+            <DurationBar players={players} />
             <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
             <Scores>
                 <span data-test="player-1-score" data-score={GameState.getPlayer(0).getScore()}>
