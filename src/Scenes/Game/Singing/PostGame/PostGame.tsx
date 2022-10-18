@@ -15,7 +15,7 @@ function PostGame({ song, width, height, onClickSongSelection }: Props) {
     const playerScores = useMemo(
         () =>
             GameState.getPlayers().map((player, index) => ({
-                name: `Player #${index}`,
+                name: player.getName(),
                 detailedScore: calculateDetailedScoreData(player.getPlayerNotes(), song, player.getTrackIndex()),
             })),
         [song],

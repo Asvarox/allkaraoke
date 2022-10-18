@@ -16,9 +16,7 @@ class PlayerState {
 
     private storedSectionIndex = 0;
 
-    private name: string;
-
-    public constructor(private index: number, private gameState: GameState) {
+    public constructor(private index: number, private name: string, private gameState: GameState) {
         this.getTrack()
             .sections.filter(isNotesSection)
             .forEach((section) =>
@@ -27,8 +25,6 @@ class PlayerState {
                     this.max = Math.max(this.max, note.pitch);
                 }),
             );
-
-        this.name = `Player ${index + 1}`;
     }
 
     public getName = () => this.name;
@@ -136,7 +132,7 @@ class GameState {
     public setSingSetup = (singSetup: SingSetup) => {
         this.singSetup = singSetup;
 
-        this.playerStates = singSetup.players.map(({ name }, index) => new PlayerState(index, this));
+        this.playerStates = singSetup.players.map(({ name }, index) => new PlayerState(index, name, this));
     };
     public getSingSetup = () => this.singSetup;
     public getTolerance = () => this.getSingSetup()?.tolerance ?? 2;
