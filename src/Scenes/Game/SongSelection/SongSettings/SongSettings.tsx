@@ -23,14 +23,11 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         setSingSetup(setup);
         setStep('players');
     };
-    const startSong = (players: Array<{ name: string }>) => {
+    const startSong = (players: PlayerSetup[]) => {
         if (!singSetup) return;
         const finalSetup = {
             ...singSetup,
-            players: players.map(({ name }, index) => ({
-                name,
-                track: singSetup.players[index].track,
-            })) as [PlayerSetup, PlayerSetup],
+            players: players as [PlayerSetup, PlayerSetup],
         };
         events.songStarted.dispatch(songPreview, finalSetup);
         onPlay({ file: songPreview.file, video: songPreview.video, ...finalSetup });

@@ -78,6 +78,7 @@ export const Autocomplete = forwardRef(
                     disabled={disabled}
                     ref={inputRef}
                     placeholder={placeholder}
+                    {...restProps}
                 />
                 {isInputFocused && !!filteredOptions.length && (
                     <AutocompleteMenu ref={autocompleteMenu}>

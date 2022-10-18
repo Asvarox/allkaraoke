@@ -47,7 +47,9 @@ function PostGameView({ song, width, height, onClickSongSelection, players }: Pr
     return (
         <SongPage songData={song} width={width} height={height}>
             <ScoresContainer>
-                <ScoreTextPlayer color={styles.colors.players[0].text}>{players[0].name}</ScoreTextPlayer>
+                <ScoreTextPlayer color={styles.colors.players[0].text} data-test="player-1-name">
+                    {players[0].name}
+                </ScoreTextPlayer>
                 <br />
                 <ScoreTextScore
                     color={styles.colors.players[0].text}
@@ -68,7 +70,9 @@ function PostGameView({ song, width, height, onClickSongSelection, players }: Pr
                     <ScoreText score={player2sum} />
                 </ScoreTextScore>
                 <br />
-                <ScoreTextPlayer color={styles.colors.players[1].text}>{players[1].name}</ScoreTextPlayer>
+                <ScoreTextPlayer color={styles.colors.players[1].text} data-test="player-2-name">
+                    {players[1].name}
+                </ScoreTextPlayer>
             </ScoresContainer>
             <SongSelectionButton onClick={onClickSongSelection} focused data-test="play-next-song-button">
                 Select song
