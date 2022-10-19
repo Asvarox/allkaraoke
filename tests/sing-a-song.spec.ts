@@ -53,10 +53,9 @@ test('Basic sing a song', async ({ page }) => {
     await page.keyboard.press('Enter'); // activate
     await expect(page.locator('[data-test="player-2-name"]')).toBeFocused();
     await page.keyboard.type('E2E Player 2'); // enter
-    await page.keyboard.press('Enter'); // save
-    await expect(page.locator('[data-test="player-2-name"]')).not.toBeFocused();
     // Track
     await page.keyboard.press('ArrowDown'); // player 2 track
+    await expect(page.locator('[data-test="player-2-name"]')).not.toBeFocused();
     await page.keyboard.press('Enter'); // change to track 1
     await expect(page.locator('[data-test="player-2-track-setting"]')).toHaveAttribute('data-test-value', '1');
 

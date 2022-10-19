@@ -56,11 +56,11 @@ export default function useKeyboardNav(options: Options = {}) {
         }
     };
 
-    const handleNavigation = (i: number) => {
+    const handleNavigation = (direction: -1 | 1) => {
         const currentIndex = currentlySelected ? elementList.current.indexOf(currentlySelected) : 0;
         menuNavigate.play();
 
-        setCurrentlySelected(elementList.current.at((currentIndex + i) % elementList.current.length) ?? null);
+        setCurrentlySelected(elementList.current.at((currentIndex + direction) % elementList.current.length) ?? null);
     };
 
     useKeyboard(
@@ -90,7 +90,11 @@ export default function useKeyboardNav(options: Options = {}) {
             defaultSelection = name;
         }
 
-        return { focused: enabled && currentlySelected === name, [propName]: onActive };
+        return {
+            focused: enabled && currentlySelected === name,
+            [propName]: onActive,
+            keyboardNavigationChangeFocus: handleNavigation,
+        };
     };
 
     useEffect(() => {

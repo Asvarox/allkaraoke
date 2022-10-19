@@ -75,7 +75,7 @@ export default function Filters({ filtersData, onSongFiltered, onBack, filters, 
         (e) => {
             focusSearch(e.key);
         },
-        { enabled: focused === 'search' },
+        { enabled: focused === 'search' && showFilters },
     );
 
     const previousShowFilters = usePrevious(showFilters);

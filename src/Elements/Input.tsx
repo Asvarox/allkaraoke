@@ -1,6 +1,16 @@
 import styled from '@emotion/styled';
 import { focusable, typography } from 'Elements/cssMixins';
-import { DetailedHTMLProps, ForwardedRef, forwardRef, InputHTMLAttributes, ReactNode } from 'react';
+import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
+import {
+    DetailedHTMLProps,
+    ForwardedRef,
+    forwardRef,
+    InputHTMLAttributes,
+    ReactNode,
+    useImperativeHandle,
+    useRef,
+} from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange'> {
@@ -12,18 +22,27 @@ interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 }
 
 export const Input = forwardRef(
-    ({ focused, label, value, onChange, disabled, ...restProps }: Props, ref: ForwardedRef<HTMLInputElement>) => (
-        <Container focused={focused}>
-            <Label>{label}</Label>
-            <StyledInput
-                value={value}
-                onChange={(e) => onChange(e.target.value)}
-                {...restProps}
-                disabled={disabled}
-                ref={ref}
-            />
-        </Container>
-    ),
+    (
+        { focused, label, value, onChange, disabled, ...restProps }: Props,
+        forwardedRef: ForwardedRef<HTMLInputElement>,
+    ) => {
+        const inputRef = useRef<HTMLInputElement>(null);
+        useImperativeHandle(forwardedRef, () => inputRef.current!);
+
+        useHotkeys(REGULAR_ALPHA_CHARS, () => inputRef.current?.focus(), { enabled: focused });
+        return (
+            <Container focused={focused}>
+                <Label>{label}</Label>
+                <StyledInput
+                    value={value}
+                    onChange={(e) => onChange(e.target.value)}
+                    {...restProps}
+                    disabled={disabled}
+                    ref={inputRef}
+                />
+            </Container>
+        );
+    },
 );
 
 const Container = styled.div<{ focused: boolean }>`

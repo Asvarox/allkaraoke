@@ -91,6 +91,7 @@ export default function SongPreviewComponent({
                 data-song={songPreview.file}>
                 <Content
                     width={finalWidth}
+                    height={finalHeight}
                     active={active}
                     focus={focusEffect}
                     blurBackground={active && !showVideo}
@@ -216,16 +217,14 @@ const Video = styled(SongCard)<{ show: boolean; active: boolean; height: number 
     ${(props) => props.active && `margin-top: calc(-1 * (100vw / 16 * 9) / 2 + ${props.height / 2}px);`}
 `;
 
-const Content = styled(SongCardContainer)<{
+const ContentBase = styled(SongCardContainer)<{
     active: boolean;
     blurBackground: boolean;
     isVideoPlaying: boolean;
     focus: boolean;
 }>`
-    position: absolute;
+    position: fixed; /* makes sure Autocomplete dropdown doesn't get clipped */
     z-index: 100;
-    width: 100%;
-    height: 100%;
     padding: ${(props) => (props.active ? '0.25em' : '0.5em')};
     ${(props) => props.blurBackground && 'backdrop-filter: blur(10px);'}
 
@@ -234,12 +233,23 @@ const Content = styled(SongCardContainer)<{
     border-radius: 5px;
 `;
 
+const Content = (props: ComponentProps<typeof ContentBase> & { width: number; height: number }) => (
+    <ContentBase
+        {...props}
+        style={{
+            width: props.width,
+            height: props.height,
+        }}
+    />
+);
+
 const SongInfo = styled.div<{ active: boolean }>`
     width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
+
     flex-direction: column;
 
     ${(props) =>

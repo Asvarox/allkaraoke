@@ -22,11 +22,22 @@ interface Props {
     disabled?: boolean;
     options: string[];
     placeholder?: string;
+    keyboardNavigationChangeFocus?: (direction: -1 | 1) => void;
 }
 
 export const Autocomplete = forwardRef(
     (
-        { options, focused, label, value, onChange, disabled, placeholder, ...restProps }: Props,
+        {
+            options,
+            focused,
+            label,
+            value,
+            onChange,
+            disabled,
+            placeholder,
+            keyboardNavigationChangeFocus,
+            ...restProps
+        }: Props,
         forwardedRef: ForwardedRef<HTMLInputElement | null>,
     ) => {
         const inputRef = useRef<HTMLInputElement>(null);
@@ -46,14 +57,21 @@ export const Autocomplete = forwardRef(
         );
 
         const handleKeyDown: KeyboardEventHandler<HTMLInputElement> = (e) => {
-            if (filteredOptions.length && (e.code === 'ArrowUp' || e.code === 'ArrowDown')) {
-                e.preventDefault();
-                const newIndex = nextIndex(filteredOptions, focusedOption, e.code === 'ArrowUp' ? -1 : 1);
-                setFocusedOption(newIndex);
+            if (e.code === 'ArrowUp' || e.code === 'ArrowDown') {
+                if (filteredOptions.length) {
+                    e.preventDefault();
+                    const newIndex = nextIndex(filteredOptions, focusedOption, e.code === 'ArrowUp' ? -1 : 1);
+                    setFocusedOption(newIndex);
 
-                const option = autocompleteMenu.current?.querySelector(`[data-index="${newIndex}"]`) as HTMLDivElement;
+                    const option = autocompleteMenu.current?.querySelector(
+                        `[data-index="${newIndex}"]`,
+                    ) as HTMLDivElement;
 
-                option?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    option?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    inputRef.current?.blur();
+                    keyboardNavigationChangeFocus?.(e.code === 'ArrowUp' ? -1 : 1);
+                }
             } else if (e.code === 'Enter') {
                 const option = filteredOptions[focusedOption];
                 if (option) {
