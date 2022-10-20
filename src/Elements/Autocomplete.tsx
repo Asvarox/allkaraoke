@@ -99,10 +99,12 @@ export const Autocomplete = forwardRef(
                     {...restProps}
                 />
                 {isInputFocused && !!filteredOptions.length && (
-                    <AutocompleteMenu ref={autocompleteMenu}>
+                    <AutocompleteMenu ref={autocompleteMenu} role="listbox">
                         {filteredOptions.map((option, index) => (
                             <AutocompleteMenuitem
+                                role="listitem"
                                 data-index={index}
+                                data-focused={index === focusedOption}
                                 key={option}
                                 focused={index === focusedOption}
                                 onClick={() => {
@@ -143,3 +145,14 @@ const AutocompleteMenuitem = styled.div<{ focused: boolean }>`
     color: ${(props) => (props.focused ? styles.colors.text.active : 'white')};
     cursor: pointer;
 `;
+
+interface TestWrapperProps {
+    label: string;
+    options: string[];
+    focused: boolean;
+}
+
+export const AutocompleteTestWrapper = ({ label, options, focused }: TestWrapperProps) => {
+    const [value, setValue] = useState('');
+    return <Autocomplete value={value} onChange={setValue} label={label} options={options} focused={focused} />;
+};

@@ -32,12 +32,12 @@ test('Basic sing a song', async ({ page }) => {
     await expect(page.locator('[data-test="difficulty-setting"]')).toHaveAttribute('data-test-value', 'Hard');
 
     await page.keyboard.press('ArrowUp'); // Next step button
-    await page.keyboard.press('Enter'); // Go to next step
+    await page.keyboard.press('Enter', { delay: 40 }); // Go to next step
 
     // Player 1
     // Name
-    await page.keyboard.press('ArrowDown'); // player 1 name
-    await page.keyboard.press('Enter'); // activate
+    await page.keyboard.press('ArrowDown', { delay: 40 }); // player 1 name
+    await page.keyboard.press('Enter', { delay: 40 }); // activate
     await expect(page.locator('[data-test="player-1-name"]')).toBeFocused();
     await page.keyboard.type('E2E Player 1'); // enter
     await page.keyboard.press('Enter'); // save
