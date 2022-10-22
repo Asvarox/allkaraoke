@@ -26,12 +26,12 @@ runs:
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
     - name: CT Test run
-      run: yarn ${{ input.packagescript }}
+      run: yarn ${{ inputs.packagescript }}
       shell: bash
     - uses: actions/upload-artifact@v3
       if: failure()
       with:
-        name: ${{ input.packagescript }}-test-results
+        name: ${{ inputs.packagescript }}-test-results
         path: |
           playwright-report
           test-results
