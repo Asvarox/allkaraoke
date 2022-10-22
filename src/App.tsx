@@ -32,7 +32,6 @@ function App() {
                 <Route path="/convert" component={Convert} />
                 <Route path="/jukebox" component={Jukebox} />
                 <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>
-
                 <Route path="/edit" component={SongList} />
                 <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
