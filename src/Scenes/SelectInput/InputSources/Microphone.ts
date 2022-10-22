@@ -7,11 +7,11 @@ interface NameMapper {
 }
 
 const singstarWirelessMicMapper: NameMapper = {
-    test: (label) => label.toLowerCase().startsWith('wireless mic #'),
+    test: (label) => label.toLowerCase().includes('wireless mic #'),
     map: (label, channel) => `Singstar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 const singstarWiredMicMapper: NameMapper = {
-    test: (label) => label.toLowerCase().startsWith('usbmic serial#'),
+    test: (label) => label.toLowerCase().includes('usbmic serial#'),
     map: (label, channel) => `Singstar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 
@@ -19,7 +19,7 @@ const mapInputName = (label: string, channel: number) => {
     if (singstarWirelessMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
     if (singstarWiredMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
 
-    return label;
+    return channel > 0 ? `${label} (ch ${channel})` : label;
 };
 
 export class MicrophoneInputSource {
