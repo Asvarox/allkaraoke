@@ -10,7 +10,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Setup Node
-              uses: "./.github/templates/actions/setup-node"
+              uses: "./.github/templates/actions/setup-node.yml"
             - run: yarn test:ci
             - uses: actions/upload-artifact@v3
               if: failure()
@@ -23,16 +23,16 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Setup Node
-              uses: "./.github/templates/actions/setup-node"
+              uses: "./.github/templates/actions/setup-node.yml"
             - run: yarn lint
     e2e-tests-run:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - name: Setup Node
-              uses: "./.github/templates/actions/setup-node"
+              uses: "./.github/templates/actions/setup-node.yml"
             - name: Run E2E tests
-              uses: "./.github/templates/actions/run-playwright"
+              uses: "./.github/templates/actions/run-playwright.yml"
               with:
                 packagescript: "e2e"
             - uses: actions/upload-artifact@v3
@@ -45,9 +45,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Setup Node
-              uses: "./.github/templates/actions/setup-node"
+              uses: "./.github/templates/actions/setup-node.yml"
             - name: Run CT tests
-              uses: "./.github/templates/actions/run-playwright"
+              uses: "./.github/templates/actions/run-playwright.yml"
               with:
                 packagescript: "test-ct"
     deploy:
