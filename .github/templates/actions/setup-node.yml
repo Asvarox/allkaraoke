@@ -1,0 +1,26 @@
+name: setup-node
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/cache@v3
+      id: playwright-cache
+      with:
+        path: |
+          ~/.cache/ms-playwright
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-playwright-
+    - run: npx playwright install --with-deps chromium
+      if: steps.playwright-cache.outputs.cache-hit != 'true'
+    - run: npx playwright install-deps chromium
+      if: steps.playwright-cache.outputs.cache-hit == 'true'
+    - name: CT Test run
+      run: yarn ${{ input.packagescript }}
+    - uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: ${{ input.packagescript }}-test-results
+        path: |
+          playwright-report
+          test-results

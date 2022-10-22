@@ -1,17 +1,16 @@
 name: CI/CD
 
-on: [push]
+on:
+  push:
+    branches: main
 
 jobs:
     unit-tests:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: '16'
-                  cache: 'yarn'
-            - run: yarn install
+            - name: Setup Node
+              uses: "./.github/templates/actions/setup-node"
             - run: yarn test:ci
             - uses: actions/upload-artifact@v3
               if: failure()
@@ -23,42 +22,19 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: '16'
-                  cache: 'yarn'
-            - run: yarn install
+            - name: Setup Node
+              uses: "./.github/templates/actions/setup-node"
             - run: yarn lint
     e2e-tests-run:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - name: Setup Node
+              uses: "./.github/templates/actions/setup-node"
+            - name: Run E2E tests
+              uses: "./.github/templates/actions/run-playwright"
               with:
-                  node-version: '16'
-                  cache: 'yarn'
-            - run: yarn install
-            - uses: actions/cache@v3
-              id: playwright-cache
-              with:
-                  path: |
-                      ~/.cache/ms-playwright
-                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: |
-                      ${{ runner.os }}-playwright-
-            - run: npx playwright install --with-deps chromium
-              if: steps.playwright-cache.outputs.cache-hit != 'true'
-            - run: npx playwright install-deps chromium
-              if: steps.playwright-cache.outputs.cache-hit == 'true'
-            - name: E2E Test run
-              run: yarn e2e
-            - uses: actions/upload-artifact@v3
-              if: failure()
-              with:
-                  name: e2e-test-results
-                  path: |
-                      playwright-report
-                        test-results
+                packagescript: "e2e"
             - uses: actions/upload-artifact@v3
               if: success()
               with:
@@ -68,32 +44,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - name: Setup Node
+              uses: "./.github/templates/actions/setup-node"
+            - name: Run CT tests
+              uses: "./.github/templates/actions/run-playwright"
               with:
-                  node-version: '16'
-                  cache: 'yarn'
-            - run: yarn install
-            - uses: actions/cache@v3
-              id: playwright-cache
-              with:
-                  path: |
-                      ~/.cache/ms-playwright
-                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: |
-                      ${{ runner.os }}-playwright-
-            - run: npx playwright install --with-deps chromium
-              if: steps.playwright-cache.outputs.cache-hit != 'true'
-            - run: npx playwright install-deps chromium
-              if: steps.playwright-cache.outputs.cache-hit == 'true'
-            - name: CT Test run
-              run: yarn test-ct
-            - uses: actions/upload-artifact@v3
-              if: failure()
-              with:
-                  name: ct-test-results
-                  path: |
-                      playwright-report
-                      test-results
+                packagescript: "test-ct"
     deploy:
         runs-on: ubuntu-latest
         needs: ['e2e-tests-run', 'ct-tests-run', 'unit-tests', 'lint']
