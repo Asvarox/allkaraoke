@@ -1,16 +1,37 @@
+# See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
 
 name: run-playwright
+description: 'Installs, caches, runs and store artifacts of Playwright'
 
-# Were we can define the inputs that our action will accept
 inputs:
   packagescript:
     required: true
+    description: 'Script from package.json to run'
 
 runs:
   using: "composite"
   steps:
-    - uses: actions/setup-node@v2
+    - uses: actions/cache@v3
+      id: playwright-cache
       with:
-        node-version: '16'
-        cache: 'yarn'
-    - run: yarn install
+        path: |
+          ~/.cache/ms-playwright
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-playwright-
+    - run: npx playwright install --with-deps chromium
+      if: steps.playwright-cache.outputs.cache-hit != 'true'
+      shell: bash
+    - run: npx playwright install-deps chromium
+      if: steps.playwright-cache.outputs.cache-hit == 'true'
+      shell: bash
+    - name: CT Test run
+      run: yarn ${{ input.packagescript }}
+      shell: bash
+    - uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: ${{ input.packagescript }}-test-results
+        path: |
+          playwright-report
+          test-results

@@ -1,26 +1,14 @@
+# See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
 name: setup-node
+description: 'Setups node to the specific version'
 
 runs:
   using: "composite"
   steps:
-    - uses: actions/cache@v3
-      id: playwright-cache
+    - uses: actions/setup-node@v2
       with:
-        path: |
-          ~/.cache/ms-playwright
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-playwright-
-    - run: npx playwright install --with-deps chromium
-      if: steps.playwright-cache.outputs.cache-hit != 'true'
-    - run: npx playwright install-deps chromium
-      if: steps.playwright-cache.outputs.cache-hit == 'true'
-    - name: CT Test run
-      run: yarn ${{ input.packagescript }}
-    - uses: actions/upload-artifact@v3
-      if: failure()
-      with:
-        name: ${{ input.packagescript }}-test-results
-        path: |
-          playwright-report
-          test-results
+        node-version: '16'
+        cache: 'yarn'
+    - run: yarn install
+      shell: bash
