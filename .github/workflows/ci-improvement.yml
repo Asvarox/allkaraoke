@@ -8,7 +8,7 @@ jobs:
     unit-tests:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - name: Setup Node
               uses: "./.github/templates/setup-node"
             - run: yarn test:ci
@@ -21,14 +21,14 @@ jobs:
     lint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - name: Setup Node
               uses: "./.github/templates/setup-node"
             - run: yarn lint
     e2e-tests-run:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - name: Setup Node
               uses: "./.github/templates/setup-node"
             - name: Run E2E tests
@@ -43,7 +43,7 @@ jobs:
     ct-tests-run:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - name: Setup Node
               uses: "./.github/templates/setup-node"
             - name: Run CT tests
@@ -54,7 +54,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: ['e2e-tests-run', 'ct-tests-run', 'unit-tests', 'lint']
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - uses: actions/download-artifact@v3
               with:
                   name: built-app
