@@ -79,7 +79,7 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
                     {players[1].name}
                 </ScoreTextPlayer>
             </ScoresContainer>
-            <SongSelectionButton onClick={onNextStep} focused data-test="play-next-song-button">
+            <SongSelectionButton onClick={onNextStep} focused data-test="highscores-button">
                 Next
             </SongSelectionButton>
         </>

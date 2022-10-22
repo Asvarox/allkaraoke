@@ -2,7 +2,6 @@ import { DetailedScore, Song } from 'interfaces';
 import { SyntheticEvent, useState } from 'react';
 import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
 import SongPage from '../../SongPage';
-import { MAX_POINTS } from '../GameState/Helpers/calculateScore';
 import backgroundMusic from './421888__b-sean__retro.mp3';
 import HighScoresView from './Views/HighScores';
 
@@ -27,10 +26,6 @@ interface Props {
     singSetupId: string;
     highScores: HighScoreEntity[];
 }
-
-const MAX_TICKS = Math.floor(6100 / 16);
-
-const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 
 function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetupId }: Props) {
     const [step, setStep] = useState<'results' | 'highscores'>('results');

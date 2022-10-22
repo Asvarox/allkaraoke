@@ -62,7 +62,7 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await page.locator('[data-test="song-e2e-test-multitrack.json"]').dblclick();
     await page.locator('[data-test="next-step-button"]').click({ force: true });
     await page.locator('[data-test="play-song-button"]').click({ force: true });
-    await expect(page.locator('[data-test="play-next-song-button"]')).toBeVisible({ timeout: 20_000 });
+    await expect(page.locator('[data-test="highscores-button"]')).toBeVisible({ timeout: 20_000 });
 
     await page.waitForTimeout(1000); // let the animation score run for a while
     const p1score = await page.locator('[data-test="player-1-score"]').getAttribute('data-score');
@@ -72,6 +72,7 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await expect(page.locator('[data-test="player-1-name"]')).toHaveText('E2E Test Blue');
     await expect(page.locator('[data-test="player-2-name"]')).toHaveText('E2E Test Red');
 
+    await page.locator('[data-test="highscores-button"]').click({ force: true });
     await page.locator('[data-test="play-next-song-button"]').click({ force: true });
     await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
 });
