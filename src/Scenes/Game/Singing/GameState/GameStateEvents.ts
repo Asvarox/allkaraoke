@@ -1,5 +1,6 @@
 import { SingSetup, Song, SongPreview } from 'interfaces';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
+import { SongStats } from 'Stats/Song/common';
 import isDev from 'utils/isDev';
 
 export class GameStateEvent<T extends (...args: any[]) => void> {
@@ -47,6 +48,8 @@ export const events = {
 
     micMonitoringStarted: new GameStateEvent('micMonitoringStarted'),
     micMonitoringStopped: new GameStateEvent('micMonitoringStopped'),
+
+    songStatStored: new GameStateEvent<(key: string, stats: SongStats) => void>('songStatStored'),
 };
 
 export default events;

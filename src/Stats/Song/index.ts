@@ -2,21 +2,6 @@ import localForage from 'localforage';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { getSongKey, SongStats } from 'Stats/Song/common';
 
-events.songStarted.subscribe(async (song, setup) => {
-    let currentState = await localForage.getItem<SongStats>(getSongKey(song));
-
-    if (currentState) {
-        currentState.plays++;
-    } else {
-        currentState = {
-            plays: 1,
-            scores: [],
-        };
-    }
-
-    await localForage.setItem<SongStats>(getSongKey(song), currentState);
-});
-
 events.songEnded.subscribe(async (song, setup, scores) => {
     let currentState = await localForage.getItem<SongStats>(getSongKey(song));
 
@@ -24,6 +9,7 @@ events.songEnded.subscribe(async (song, setup, scores) => {
     if (currentState) {
         // there might be cases where only { plays: number } is stored
         currentState.scores = [...(currentState?.scores ?? []), score];
+        currentState.plays = currentState.scores.length;
     } else {
         currentState = {
             plays: 1,
@@ -32,4 +18,6 @@ events.songEnded.subscribe(async (song, setup, scores) => {
     }
 
     await localForage.setItem<SongStats>(getSongKey(song), currentState);
+    events.songStatStored.dispatch(getSongKey(song), currentState);
+    console.log('stored');
 });

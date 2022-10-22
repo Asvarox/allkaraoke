@@ -21,6 +21,7 @@ export interface PlayerSetup {
 }
 
 export interface SingSetup {
+    id: string;
     players: [PlayerSetup, PlayerSetup];
     mode: GAME_MODE;
     tolerance: number;
@@ -101,3 +102,10 @@ type UndefinedKeys<T> = {
 export type ExtractOptional<T> = Pick<T, Exclude<UndefinedKeys<T>, undefined>>;
 
 export type DetailedScore = Record<Note['type'] | 'perfect' | 'vibrato', number>;
+
+export interface HighScoreEntity {
+    singSetupId: string;
+    name: string;
+    score: number;
+    date: string;
+}

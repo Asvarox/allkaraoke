@@ -88,6 +88,7 @@ export default function EditSong({ song, onUpdate }: Props) {
 
     const singSetup = useMemo<SingSetup>(
         () => ({
+            id: 'test',
             mode: GAME_MODE.DUEL,
             players: [
                 { name: 'Player 1', track: 0 },

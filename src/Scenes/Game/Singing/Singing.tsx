@@ -63,7 +63,15 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
     if (!width || !height || !song.data) return <>Loading</>;
 
     if (isEnded) {
-        return <PostGame width={width} height={height} song={song.data} onClickSongSelection={returnToSongSelection} />;
+        return (
+            <PostGame
+                width={width}
+                height={height}
+                song={song.data}
+                onClickSongSelection={returnToSongSelection}
+                singSetup={singSetup}
+            />
+        );
     } else {
         return (
             <Container>
@@ -82,8 +90,8 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
                     height={height}
                     autoplay={false}
                     onSongEnd={() => {
-                        const scores = GameState.getPlayers().map((player, index) => ({
-                            name: `Player ${index + 1}`,
+                        const scores = GameState.getPlayers().map((player) => ({
+                            name: player.getName(),
                             score: calculateScore(player.getPlayerNotes(), song.data, player.getTrackIndex()),
                         }));
                         events.songEnded.dispatch(song.data, singSetup, scores);

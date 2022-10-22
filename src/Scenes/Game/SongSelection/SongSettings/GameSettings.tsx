@@ -7,6 +7,7 @@ import { isNumber } from 'lodash-es';
 import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import createPersistedState from 'use-persisted-state';
 import isDev from 'utils/isDev';
+import { v4 } from 'uuid';
 
 interface Props {
     songPreview: SongPreview;
@@ -46,6 +47,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
 
     const startSong = () => {
         const singSetup = {
+            id: v4(),
             players: [
                 { name: '', track: 0 },
                 { name: '', track: 0 },

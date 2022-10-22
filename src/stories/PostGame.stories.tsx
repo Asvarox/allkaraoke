@@ -70,11 +70,44 @@ const Template = (args: StoryArgs) => {
 
     return (
         <PostGameView
+            singSetupId="storybook-id"
             players={players}
             width={1280}
             height={720}
             onClickSongSelection={() => undefined}
             song={song as Song}
+            highScores={[
+                {
+                    singSetupId: 'some-other-sings',
+                    name: players[0].name,
+                    date: '2022-10-10',
+                    score: 2_400_000,
+                },
+                {
+                    singSetupId: 'some-other-sings',
+                    name: players[0].name,
+                    date: '2022-10-10',
+                    score: 2_400_000,
+                },
+                {
+                    singSetupId: 'some-other-sings',
+                    name: players[0].name,
+                    date: '2022-10-10',
+                    score: 2_400_000,
+                },
+                {
+                    singSetupId: 'some-other-sings',
+                    name: players[0].name,
+                    date: '2022-10-10',
+                    score: 2_400_000,
+                },
+                {
+                    singSetupId: 'storybook-id',
+                    name: players[1].name,
+                    score: sumDetailedScore(players[1].detailedScore[1]) * players[1].detailedScore[0],
+                    date: '2022-10-10',
+                },
+            ]}
         />
     );
 };
