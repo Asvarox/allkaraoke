@@ -25,7 +25,7 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
 }
 
 // @ts-expect-error
-if (import.meta.env.VITE_APP_POSTHOG_KEY && !window.isE2ETests) {
+if (import.meta.env.VITE_APP_POSTHOG_KEY && !window.isE2ETests && window.location.port === '') {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
         api_host: 'https://eu.posthog.com',
         loaded: (ph) => {
