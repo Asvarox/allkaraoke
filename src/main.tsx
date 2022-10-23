@@ -7,6 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import isDev from 'utils/isDev';
+import isE2E from 'utils/isE2E';
 import { v4 } from 'uuid';
 import App from './App';
 import './index.css';
@@ -19,13 +20,11 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
         // of transactions for performance monitoring.
         // We recommend adjusting this value in production
         tracesSampleRate: 1.0,
-        // @ts-expect-error
-        environment: isDev() ? 'development' : window.isE2ETests ? 'e2e' : 'production',
+        environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
     });
 }
 
-// @ts-expect-error
-if (import.meta.env.VITE_APP_POSTHOG_KEY && !window.isE2ETests && window.location.port === '') {
+if (import.meta.env.VITE_APP_POSTHOG_KEY && !isDev() && !isE2E()) {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
         api_host: 'https://eu.posthog.com',
         loaded: (ph) => {
