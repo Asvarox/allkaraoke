@@ -1,4 +1,5 @@
 import * as Sentry from '@sentry/react';
+import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
@@ -20,6 +21,10 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
         // @ts-expect-error
         environment: isDev() ? 'development' : window.isE2ETests ? 'e2e' : 'production',
     });
+}
+
+if (import.meta.env.VITE_APP_POSTHOG_KEY) {
+    posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, { api_host: 'https://eu.posthog.com' });
 }
 
 const client = new QueryClient();
