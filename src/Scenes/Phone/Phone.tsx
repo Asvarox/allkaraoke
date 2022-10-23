@@ -34,14 +34,20 @@ function Phone({ roomId }: Props) {
     useEventEffect(events.micMonitoringStarted, () => setMonitoringStarted(true));
     useEventEffect(events.micMonitoringStopped, () => setMonitoringStarted(false));
 
-    const [keepAwake, setKeepAwake] = useState(false);
-    useEffect(() => {
-        if (keepAwake && !noSleep.isEnabled) {
-            noSleep.enable();
-        } else if (!keepAwake && noSleep.isEnabled) {
-            noSleep.disable();
+    const [isKeepAwakeOn, setIsKeepAwakeOn] = useState(false);
+
+    const setKeepAwake = async (turnOn: boolean) => {
+        try {
+            if (turnOn && !noSleep.isEnabled) {
+                await noSleep.enable();
+            } else if (!turnOn && noSleep.isEnabled) {
+                await noSleep.disable();
+            }
+            setIsKeepAwakeOn(turnOn);
+        } catch (e) {
+            console.warn('Couldnt set wakelock', e);
         }
-    }, [keepAwake]);
+    };
 
     const updateVolumes = useCallback(
         throttle((freqs: number[], volumes: number[]) => {
@@ -86,8 +92,8 @@ function Phone({ roomId }: Props) {
                 <MenuButton onClick={onConnect} disabled={disabled || name === ''} data-test="connect-button">
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                 </MenuButton>
-                <KeepAwake onClick={() => setKeepAwake((current) => !current)}>
-                    WakeLock: <strong>{keepAwake ? 'ON' : 'OFF'}</strong>
+                <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
+                    WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
                 </KeepAwake>
                 <MicInputState
                     onClick={() =>

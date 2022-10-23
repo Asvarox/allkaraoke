@@ -64,7 +64,11 @@ class MicInput implements InputInterface {
         this.stream?.getTracks().forEach(function (track) {
             track.stop();
         });
-        await this.context?.close();
+        try {
+            await this.context?.close();
+        } catch (e) {
+            console.log('MicInput.stoMonitoring error', e);
+        }
 
         events.micMonitoringStopped.dispatch();
     };
