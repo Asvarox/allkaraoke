@@ -1,6 +1,6 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Autocomplete } from 'Elements/Autocomplete';
-import { useState } from 'react';
+import { ComponentProps, useState } from 'react';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -25,10 +25,10 @@ export default {
         label: 'Label',
         player2Score: 70,
     },
-} as ComponentMeta<typeof Autocomplete>;
+} as Meta<ComponentProps<typeof Autocomplete>>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Autocomplete> = (args) => {
+const Template: StoryFn<ComponentProps<typeof Autocomplete>> = (args) => {
     const [value, setValue] = useState(args.value ?? '');
     const options = [
         'A name',

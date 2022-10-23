@@ -17,6 +17,7 @@ describe('CanvasDrawing', function () {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.123456789);
 
         GameState.setSingSetup({
+            id: 'tests',
             players: [
                 { name: 'Player 1', track: 0 },
                 { name: 'Player 2', track: 1 },

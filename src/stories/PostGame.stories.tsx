@@ -1,5 +1,6 @@
-import { ComponentMeta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { DetailedScore, Song } from 'interfaces';
+import { ComponentProps } from 'react';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import tuple from 'utils/tuple';
@@ -23,10 +24,10 @@ export default {
         player1Score: 69,
         player2Score: 70,
     },
-} as ComponentMeta<typeof PostGameView>;
+} as Meta<ComponentProps<typeof PostGameView>>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args: StoryArgs) => {
+const Template: StoryFn<StoryArgs> = (args) => {
     const maxPoints: DetailedScore = {
         freestyle: 10,
         rap: 10,

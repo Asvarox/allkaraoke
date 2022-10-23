@@ -126,8 +126,5 @@
         "vite-tsconfig-paths": "^3.5.1"
     },
     "homepage": "./",
-    "packageManager": "yarn@3.2.1",
-    "lint-staged": {
-        "*.{ts,tsx}": "eslint --cache --fix"
-    }
+    "packageManager": "yarn@3.2.1"
 }
