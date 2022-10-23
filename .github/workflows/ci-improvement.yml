@@ -55,6 +55,8 @@ jobs:
         needs: ['e2e-tests-run', 'ct-tests-run', 'unit-tests', 'lint']
         steps:
             - uses: actions/checkout@v3
+              with:
+                fetch-depth: 30
             - uses: actions/download-artifact@v3
               with:
                   name: built-app
@@ -64,3 +66,13 @@ jobs:
               with:
                   branch: gh-pages # The branch the action should deploy to.
                   folder: build # The folder the action should deploy.
+
+            - name: Create Sentry release
+              uses: getsentry/action-release@v1
+              env:
+                SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+                SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+                SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+              with:
+                environment: production
+                sourcemaps: './build'
