@@ -23,7 +23,8 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
     });
 }
 
-if (import.meta.env.VITE_APP_POSTHOG_KEY) {
+// @ts-expect-error
+if (import.meta.env.VITE_APP_POSTHOG_KEY && !window.isE2ETests) {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, { api_host: 'https://eu.posthog.com' });
 }
 
