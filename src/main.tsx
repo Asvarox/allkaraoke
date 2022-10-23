@@ -24,7 +24,7 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
     });
 }
 
-if (import.meta.env.VITE_APP_POSTHOG_KEY && !isDev() && !isE2E()) {
+if (import.meta.env.VITE_APP_POSTHOG_KEY && !isDev() && !isE2E() && window.location.port === '') {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
         api_host: 'https://eu.posthog.com',
         loaded: (ph) => {

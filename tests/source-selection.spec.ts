@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode } from './helpers';
 
-test.beforeEach(async ({ page }) => {
-    await initTestMode(page);
+test.beforeEach(async ({ page, context }) => {
+    await initTestMode({ page, context });
 });
 
 test('Source selection', async ({ page }) => {

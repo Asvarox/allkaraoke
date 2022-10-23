@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 
-test.beforeEach(async ({ page }) => {
-    await initTestMode(page);
-    await mockSongs(page);
+test.beforeEach(async ({ page, context }) => {
+    await initTestMode({ page, context });
+    await mockSongs({ page, context });
 });
 
 test('Remote mic should connect and be selectable', async ({ page, context }) => {
@@ -55,6 +55,15 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await expect(remoteMicRed.locator('[data-test="connect-button"]')).toContainText('Connected', {
         ignoreCase: true,
     });
+
+    await Promise.race([
+        expect(page.locator('.Toastify')).toContainText('E2E Test Blue connected', {
+            ignoreCase: true,
+        }),
+        expect(page.locator('.Toastify')).toContainText('E2E Test Red connected', {
+            ignoreCase: true,
+        }),
+    ]);
 
     // Check singing a song
     await page.locator('[data-test="sing-a-song"]').click({ force: true });

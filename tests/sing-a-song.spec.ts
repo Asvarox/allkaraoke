@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 
-test.beforeEach(async ({ page }) => {
-    await initTestMode(page);
-    await mockSongs(page);
+test.beforeEach(async ({ page, context }) => {
+    await initTestMode({ page, context });
+    await mockSongs({ page, context });
 });
 
 test('Basic sing a song', async ({ page }) => {

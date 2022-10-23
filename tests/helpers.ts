@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { BrowserContext, Page } from '@playwright/test';
 import { readdirSync, readFileSync } from 'fs';
 import { getSongPreview } from '../scripts/utils';
 
@@ -9,7 +9,7 @@ const songs = readdirSync('./tests/fixtures/songs/')
         song: JSON.parse(readFileSync(`./tests/fixtures/songs/${file}`, { encoding: 'utf-8' })),
     }));
 
-export const mockSongs = async (page: Page) => {
+export const mockSongs = async ({ page }: { page: Page; context: BrowserContext }) => {
     const index = songs.map(({ file, song }) => getSongPreview(file, song));
     await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
 
@@ -20,11 +20,16 @@ export const mockSongs = async (page: Page) => {
     }
 };
 
-export const initTestMode = async (page: Page) => {
-    await page.addInitScript(() => {
+export const initTestMode = async ({ context }: { page: Page; context: BrowserContext }) => {
+    await context.addInitScript(() => {
         window.Math.random = () => 0.5;
 
         // @ts-expect-error
         window.isE2ETests = true;
+    });
+
+    await context.route('**/*', (request) => {
+        request.request().url().includes('eu.posthog.com') ? request.abort() : request.continue();
+        return;
     });
 };

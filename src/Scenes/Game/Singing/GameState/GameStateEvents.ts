@@ -18,7 +18,10 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
     public dispatch = (...args: Parameters<T>) => {
         if (isDev()) console.log('dispatch', this.name, ...args);
         this.subscribers.forEach((callback) => callback(...args));
-        posthog.capture(this.name, args);
+
+        if (this.track) {
+            posthog.capture(this.name, args);
+        }
     };
 
     public constructor(private name: string, private track: boolean = false) {}
