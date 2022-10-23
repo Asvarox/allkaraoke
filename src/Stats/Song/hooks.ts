@@ -15,12 +15,7 @@ export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
     };
 
     useEffect(() => {
-        const callback = console.log;
-        window.addEventListener('storage', callback);
-
         getSongStats();
-
-        return () => window.removeEventListener('storage', callback);
     }, [storageKey]);
 
     useEventEffect(gameStateEvents.songStatStored, getSongStats);

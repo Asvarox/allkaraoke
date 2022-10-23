@@ -35,7 +35,7 @@ export class MicrophoneInputSource {
         MicrophoneInputSource.inputList = (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
             .filter((device) => device.kind === 'audioinput')
             .map((device) => {
-                const channels = device.getCapabilities()?.channelCount?.max ?? 1;
+                const channels = device.getCapabilities?.()?.channelCount?.max ?? 1;
 
                 return range(0, channels).map((channel) => ({
                     label: mapInputName(device.label, channel),

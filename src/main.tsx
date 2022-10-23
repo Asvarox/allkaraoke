@@ -5,6 +5,7 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import isDev from 'utils/isDev';
 import App from './App';
 import './index.css';
 
@@ -16,6 +17,8 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
         // of transactions for performance monitoring.
         // We recommend adjusting this value in production
         tracesSampleRate: 1.0,
+        // @ts-expect-error
+        environment: isDev() ? 'development' : window.isE2ETests ? 'e2e' : 'production',
     });
 }
 
