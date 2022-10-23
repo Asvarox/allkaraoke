@@ -7,6 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import isDev from 'utils/isDev';
+import { v4 } from 'uuid';
 import App from './App';
 import './index.css';
 
@@ -25,7 +26,17 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
 
 // @ts-expect-error
 if (import.meta.env.VITE_APP_POSTHOG_KEY && !window.isE2ETests) {
-    posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, { api_host: 'https://eu.posthog.com' });
+    posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
+        api_host: 'https://eu.posthog.com',
+        loaded: (ph) => {
+            let storedUser = localStorage.getItem('posthog-user-id');
+            if (!storedUser) {
+                storedUser = v4();
+                localStorage.setItem('posthog-user-id', storedUser);
+            }
+            ph.identify(storedUser);
+        },
+    });
 }
 
 const client = new QueryClient();
