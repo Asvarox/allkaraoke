@@ -25,6 +25,13 @@ jobs:
             - name: Setup Node
               uses: "./.github/templates/setup-node"
             - run: yarn lint
+    ts-check:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup Node
+              uses: "./.github/templates/setup-node"
+            - run: yarn tsc --noEmit
     e2e-tests-run:
         runs-on: ubuntu-latest
         steps:
@@ -52,7 +59,7 @@ jobs:
                 packagescript: "test-ct"
     deploy:
         runs-on: ubuntu-latest
-        needs: ['e2e-tests-run', 'ct-tests-run', 'unit-tests', 'lint']
+        needs: ['e2e-tests-run', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
         steps:
             - uses: actions/checkout@v3
               with:
