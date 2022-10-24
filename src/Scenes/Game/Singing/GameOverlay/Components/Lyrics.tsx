@@ -45,7 +45,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             )}
             {hasNotes ? (
                 <>
-                    <LyricsLine data-test={`lyrics-line-player-${player}`}>
+                    <LyricsLine data-test={`lyrics-current-player-${player + 1}`}>
                         <HeadstartContainer>
                             <Headstart
                                 color={playerColor}
@@ -77,7 +77,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                 <LyricsLine>&nbsp;</LyricsLine>
             )}
             {isNotesSection(nextSection) && (
-                <LyricsLine secondLine>
+                <LyricsLine nextLine data-test={`lyrics-next-player-${player + 1}`}>
                     {nextSection.notes.map((note) => (
                         <Fragment key={note.start}>{note.lyrics}</Fragment>
                     ))}
@@ -212,10 +212,10 @@ const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => pr
     ${(props) => (props.shouldShake ? `fill: ${styles.colors.text.active};` : '')}
     font-size: ${(props) => (props.shouldShake ? 40 : 30)}px;
 `;
-const LyricsLine = styled.div<{ secondLine?: boolean }>`
-    font-size: ${({ secondLine }) => 35 + (secondLine ? 0 : 10)}px;
+const LyricsLine = styled.div<{ nextLine?: boolean }>`
+    font-size: ${({ nextLine }) => 35 + (nextLine ? 0 : 10)}px;
     height: 45px;
-    color: ${({ secondLine }) => (secondLine ? styles.colors.text.inactive : styles.colors.text.default)};
+    color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 
     font-family: 'Comic Sans MS', 'Comic Sans';
 `;

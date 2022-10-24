@@ -62,8 +62,26 @@ test('Basic sing a song', async ({ page }) => {
 
     // Start song
     await page.keyboard.press('ArrowDown');
-
     await page.keyboard.press('Enter');
+
+    const p1CL = '[data-test="lyrics-current-player-1"]';
+    const p1NL = '[data-test="lyrics-next-player-1"]';
+    const p2CL = '[data-test="lyrics-current-player-2"]';
+    const p2NL = '[data-test="lyrics-next-player-2"]';
+
+    await Promise.all(['Track 2', 'Section', '1'].map((text) => expect(page.locator(p1CL)).toContainText(text)));
+    await Promise.all(['Track 2', 'Section', '2'].map((text) => expect(page.locator(p1NL)).toContainText(text)));
+    await Promise.all(['Track 1', 'Section 1'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
+    await Promise.all(['Track 1', 'Section 2'].map((text) => expect(page.locator(p2NL)).toContainText(text)));
+
+    await Promise.all(['Track 2', 'Section', '2'].map((text) => expect(page.locator(p1CL)).toContainText(text)));
+    await Promise.all(['Track 1', 'Section 2'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
+    await Promise.all(['Track 2', 'Section 3'].map((text) => expect(page.locator(p1NL)).toContainText(text)));
+
+    await Promise.all(['Track 2', 'Section 3'].map((text) => expect(page.locator(p1CL)).toContainText(text)));
+    await expect(page.locator(p1NL)).not.toBeVisible();
+    await Promise.all(['Track 1 Section 3'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
+    await expect(page.locator(p2NL)).not.toBeVisible();
 
     // Song ending
     await expect(page.locator('[data-test="highscores-button"]')).toBeVisible({ timeout: 30_000 });

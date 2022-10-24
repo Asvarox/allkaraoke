@@ -4,7 +4,7 @@
     "video": "mcEVAY1H5As",
     "language": "Polish",
     "gap": 1000,
-    "bpm": 200,
+    "bpm": 350,
     "bar": 4,
     "tracks": [
         {
@@ -18,14 +18,14 @@
                             "start": 5,
                             "length": 10,
                             "pitch": 9,
-                            "lyrics": "Second "
+                            "lyrics": "Track 1 "
                         },
                         {
                             "type": "normal",
                             "start": 20,
                             "length": 10,
                             "pitch": 10,
-                            "lyrics": "Third "
+                            "lyrics": "Section 1"
                         }
                     ]
                 },
@@ -38,32 +38,32 @@
                             "start": 50,
                             "length": 10,
                             "pitch": 11,
-                            "lyrics": "Fourth "
+                            "lyrics": "Track 1 "
                         },
                         {
                             "type": "normal",
                             "start": 80,
                             "length": 10,
                             "pitch": 9,
-                            "lyrics": "Seventh "
+                            "lyrics": "Section 2"
                         }
                     ]
                 },
                 {
                     "start": 100,
-                    "end": 120,
+                    "end": 110,
                     "type": "pause"
                 },
                 {
                     "type": "notes",
-                    "start": 130,
+                    "start": 120,
                     "notes": [
                         {
                             "type": "normal",
-                            "start": 140,
+                            "start": 130,
                             "length": 10,
                             "pitch": 10,
-                            "lyrics": "Eight "
+                            "lyrics": "Track 1 Section 3"
                         }
                     ]
                 }
@@ -80,21 +80,21 @@
                             "start": 0,
                             "length": 10,
                             "pitch": 11,
-                            "lyrics": "First "
+                            "lyrics": "Track 2 "
                         },
                         {
                             "type": "normal",
                             "start": 15,
                             "length": 10,
                             "pitch": 9,
-                            "lyrics": "Second "
+                            "lyrics": "Section "
                         },
                         {
                             "type": "normal",
                             "start": 30,
                             "length": 10,
                             "pitch": 10,
-                            "lyrics": "Third "
+                            "lyrics": "1"
                         }
                     ]
                 },
@@ -107,21 +107,21 @@
                             "start": 60,
                             "length": 10,
                             "pitch": 11,
-                            "lyrics": "Fourth "
+                            "lyrics": "Track 2 "
                         },
                         {
                             "type": "normal",
                             "start": 75,
                             "length": 10,
                             "pitch": 12,
-                            "lyrics": "Fifth "
+                            "lyrics": "Section "
                         },
                         {
                             "type": "normal",
                             "start": 90,
                             "length": 10,
                             "pitch": 9,
-                            "lyrics": "Seventh "
+                            "lyrics": "2"
                         }
                     ]
                 },
@@ -139,14 +139,14 @@
                             "start": 150,
                             "length": 10,
                             "pitch": 9,
-                            "lyrics": "Eight "
+                            "lyrics": "Track 2 "
                         },
                         {
                             "type": "normal",
                             "start": 165,
                             "length": 10,
                             "pitch": 10,
-                            "lyrics": "Nine "
+                            "lyrics": "Section 3"
                         }
                     ]
                 }
