@@ -60,19 +60,35 @@ test('Basic sing a song', async ({ page }) => {
     await page.keyboard.press('Enter'); // change to track 1
     await expect(page.locator('[data-test="player-2-track-setting"]')).toHaveAttribute('data-test-value', '1');
 
+    // Start song
     await page.keyboard.press('ArrowDown');
 
-    await page.keyboard.press('Enter'); // start song
+    await page.keyboard.press('Enter');
+
+    // Song ending
     await expect(page.locator('[data-test="highscores-button"]')).toBeVisible({ timeout: 30_000 });
     await expect(page.locator('[data-test="player-1-name"]')).toHaveText('E2E Player 1');
     await expect(page.locator('[data-test="player-2-name"]')).toHaveText('E2E Player 2');
 
+    // High scores
     await page.locator('[data-test="highscores-button"]').click({ force: true });
+
+    await expect(page.locator('[data-test="highscores-container"]')).toContainText('E2E Player 1');
+    await expect(page.locator('[data-test="highscores-container"]')).toContainText('E2E Player 2');
+
+    // Check next song
     await page.locator('[data-test="play-next-song-button"]').click({ force: true });
     await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
     await expect(
         page.locator('[data-test="song-e2e-test-multitrack.json"] >> [data-test="song-stat-indicator"]'),
     ).toContainText('Played today', { ignoreCase: true });
+
+    // Check next song player names
+    await page.keyboard.press('Enter'); // enter first song
+    await expect(page.locator('[data-test="next-step-button"]')).toBeVisible();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('[data-test="player-1-name"]')).toHaveAttribute('placeholder', 'E2E Player 1');
+    await expect(page.locator('[data-test="player-2-name"]')).toHaveAttribute('placeholder', 'E2E Player 2');
 });
 
 test('skip the intro', async ({ page }) => {
@@ -92,50 +108,4 @@ test('skip the intro', async ({ page }) => {
     await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');
     await page.keyboard.press('Enter'); // enter first song
     await expect(page.locator('[data-test="skip-intro"]')).toHaveAttribute('data-test-value', 'true');
-});
-
-test('Filters', async ({ page }) => {
-    await page.goto('/');
-
-    await page.locator('[data-test="sing-a-song"]').click({ force: true });
-
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    await page.keyboard.type('f'); // Show filters
-    await expect(page.locator('[data-test="song-list-filters"]')).toBeVisible();
-
-    await page.keyboard.press('Enter'); // focus search song
-    await page.keyboard.type('multitrack');
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    for (let i = 0; i < 10; i++) await page.keyboard.press('Backspace');
-    await page.keyboard.press('Enter');
-
-    await page.keyboard.press('ArrowRight'); // language filters
-    await page.keyboard.press('Enter'); // polish
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    await page.keyboard.press('Enter'); // english
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    await page.keyboard.press('Enter'); // All
-
-    await page.keyboard.press('ArrowRight'); // duet filters
-    await page.keyboard.press('Enter'); // Duet
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    await page.keyboard.press('Enter'); // Solo
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    await page.keyboard.press('Enter'); // All
-    await page.keyboard.press('ArrowDown');
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    // Quick search
-    await page.keyboard.type('multitrack');
-    await page.keyboard.press('Enter'); // All
-    await page.keyboard.press('Enter');
-    await page.keyboard.press('ArrowDown');
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-test-multitrack.json');
 });

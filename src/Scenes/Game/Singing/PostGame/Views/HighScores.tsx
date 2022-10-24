@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
+import { format } from 'date-fns';
 import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
 import useKeyboard from 'hooks/useKeyboard';
 import { HighScoreEntity } from 'interfaces';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 interface Props {
     onNextStep: () => void;
@@ -18,7 +20,7 @@ function HighScoresView({ onNextStep, highScores, singSetupId }: Props) {
 
     return (
         <>
-            <ScoresContainer>
+            <ScoresContainer data-test="highscores-container">
                 {highScores.map((score, index) => (
                     <ScoreContainer isCurrentSing={score.singSetupId === singSetupId} key={index}>
                         <ScorePosition>{index + 1}</ScorePosition>
@@ -26,6 +28,7 @@ function HighScoresView({ onNextStep, highScores, singSetupId }: Props) {
                         <ScoreScore>
                             <ScoreText score={score.score} />
                         </ScoreScore>
+                        <ScoreDate>{format(new Date(score.date), 'LLL do y')}</ScoreDate>
                     </ScoreContainer>
                 ))}
             </ScoresContainer>
@@ -46,15 +49,18 @@ const ScoresContainer = styled.div`
 `;
 
 const ScoreContainer = styled.div<{ isCurrentSing: boolean }>`
+    position: relative;
     ${typography};
     font-size: 2em;
     display: flex;
     background: ${(props) => (props.isCurrentSing ? 'rgba(0,0,0,.9)' : 'rgba(0,0,0,.5)')};
     margin-bottom: 0.5em;
+    padding: 0 1em;
 `;
 const ScorePosition = styled.div`
     padding: 0.5em;
     flex: 0;
+    color: ${styles.colors.text.active};
 `;
 const ScorePlayerName = styled.div`
     text-align: left;
@@ -64,6 +70,15 @@ const ScorePlayerName = styled.div`
 const ScoreScore = styled.div`
     flex: 0;
     padding: 0.5em;
+`;
+const ScoreDate = styled.div`
+    position: absolute;
+    font-size: 0.6em;
+    bottom: -0.5em;
+    right: -1em;
+    background: black;
+    flex: 0;
+    padding: 0.2em;
 `;
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`
