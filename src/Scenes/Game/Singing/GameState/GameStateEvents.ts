@@ -53,8 +53,8 @@ export const events = {
     phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneConnected', true),
     phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneDisconnected', true),
     playerInputChanged: new GameStateEvent<
-        (playerNumber: number, oldInput: SelectedPlayerInput, newInput: SelectedPlayerInput) => void
-    >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI.inputSource, new: newI.inputSource })),
+        (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput) => void
+    >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.inputSource, new: newI.inputSource })),
     inputListChanged: new GameStateEvent<() => void>('inputListChanged'),
 
     karaokeConnectionStatusChange: new GameStateEvent<
