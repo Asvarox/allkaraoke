@@ -27,7 +27,7 @@ interface Props {
     autoplay?: boolean;
     showControls?: boolean;
     onTimeUpdate?: (newTime: number) => void;
-    onSongEnd?: () => void;
+    onSongEnd: () => void;
     onStatusChange?: (status: VideoState) => void;
     players: [PlayerSetup, PlayerSetup];
     playerChanges?: number[][];
@@ -129,7 +129,6 @@ function Player(
                         duration={duration}
                         currentStatus={currentStatus}
                         song={song}
-                        currentTime={currentTime}
                         width={width}
                         height={height}
                         onSongEnd={onSongEnd}

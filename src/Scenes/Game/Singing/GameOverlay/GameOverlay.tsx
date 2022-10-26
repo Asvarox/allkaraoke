@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { VideoState } from 'Elements/VideoPlayer';
 import { PlayerSetup, Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
+import SkipOutro from 'Scenes/Game/Singing/GameOverlay/Components/SkipOutro';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
@@ -10,27 +11,17 @@ import CanvasDrawing from './Drawing';
 
 interface Props {
     song: Song;
-    currentTime: number;
     currentStatus: VideoState;
     width: number;
     height: number;
-    onSongEnd?: () => void;
+    onSongEnd: () => void;
     players: [PlayerSetup, PlayerSetup];
     duration: number;
     effectsEnabled: boolean;
     playerChanges: number[][];
 }
 
-function GameOverlay({
-    currentTime,
-    currentStatus,
-    width,
-    height,
-    players,
-    onSongEnd,
-    playerChanges,
-    effectsEnabled,
-}: Props) {
+function GameOverlay({ currentStatus, width, height, players, onSongEnd, playerChanges, effectsEnabled }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
     const drawer = useRef<CanvasDrawing | null>(null);
 
@@ -62,6 +53,7 @@ function GameOverlay({
     const overlayHeight = height - 2 * 100 - 80;
     return (
         <Screen>
+            <SkipOutro onSongEnd={onSongEnd} />
             <DurationBar players={players} />
             <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
             <Scores>

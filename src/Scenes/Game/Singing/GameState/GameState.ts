@@ -1,4 +1,4 @@
-import { FrequencyRecord, PlayerNote, SingSetup, Song } from 'interfaces';
+import { FrequencyRecord, NotesSection, PlayerNote, SingSetup, Song } from 'interfaces';
 import isNotesSection from '../Helpers/isNotesSection';
 import { getNoteAtBeat } from '../Helpers/notesSelectors';
 import InputManager from '../Input/InputManager';
@@ -98,6 +98,11 @@ class PlayerState {
         const sectionIndex = this.getCurrentSectionIndex();
 
         return sectionIndex > -1 ? this.getTrack().sections[sectionIndex - index] ?? null : null;
+    };
+
+    public getLastNotesSection = () => {
+        const last = this.getTrack().sections.at(-1);
+        return isNotesSection(last) ? last : (this.getTrack().sections.at(-2) as NotesSection);
     };
 
     public getScore = () => calculateScore(this.playerNotes, this.gameState.getSong()!, this.getTrackIndex());

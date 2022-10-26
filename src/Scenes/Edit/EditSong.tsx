@@ -122,6 +122,7 @@ export default function EditSong({ song, onUpdate }: Props) {
                         ]}
                         effectsEnabled={effectsEnabled}
                         singSetup={singSetup}
+                        onSongEnd={() => undefined}
                     />
                 </PlayerContainer>
                 <Editor>

@@ -12,8 +12,8 @@ interface Props {
 
 function DurationBar({ players }: Props) {
     const currentTime = GameState.getCurrentTime(false);
-    const duration = GameState.getDuration();
     const beatLength = GameState.getSongBeatLength();
+    const duration = GameState.getDuration();
     const song = GameState.getSong()!;
 
     const firstNotes = useMemo(
