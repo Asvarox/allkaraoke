@@ -1,3 +1,5 @@
+import { ValuesType } from 'utility-types';
+
 export interface Note {
     start: number;
     length: number;
@@ -10,10 +12,10 @@ export type NoLyricNote = Omit<Note, 'lyrics' | 'type'>;
 
 export type Section = NotesSection | PauseSection;
 
-export enum GAME_MODE {
-    DUEL,
-    PASS_THE_MIC,
-}
+export const GAME_MODE = {
+    DUEL: 'DUEL',
+    PASS_THE_MIC: 'PASS_THE_MIC',
+} as const;
 
 export interface PlayerSetup {
     name: string;
@@ -23,7 +25,7 @@ export interface PlayerSetup {
 export interface SingSetup {
     id: string;
     players: [PlayerSetup, PlayerSetup];
-    mode: GAME_MODE;
+    mode: ValuesType<typeof GAME_MODE>;
     tolerance: number;
     skipIntro?: boolean;
 }

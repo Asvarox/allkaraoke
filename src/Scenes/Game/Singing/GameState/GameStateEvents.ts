@@ -20,28 +20,41 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
         this.subscribers.forEach((callback) => callback(...args));
 
         if (this.track) {
-            posthog.capture(this.name, args);
+            posthog.capture(this.name, this.track instanceof Function ? this.track(...args) : args);
         }
     };
 
-    public constructor(private name: string, private track: boolean = false) {}
+    public constructor(private name: string, private track: boolean | ((...args: Parameters<T>) => any) = false) {}
 }
+
+const trackSongData = ({ artist, title }: Song | SongPreview, setup: SingSetup) => ({
+    name: `${artist} - ${title}`,
+    artist,
+    title,
+    mode: setup.mode,
+    tolerance: setup.tolerance,
+    players: setup.players.length,
+    skipIntro: setup.skipIntro,
+});
 
 export const events = {
     sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>('sectionChange'),
     // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
 
-    songStarted: new GameStateEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted', true),
+    songStarted: new GameStateEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>(
+        'songStarted',
+        trackSongData,
+    ),
     songEnded: new GameStateEvent<
         (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
-    >('songEnded', true),
+    >('songEnded', trackSongData),
 
     phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneConnected', true),
     phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneDisconnected', true),
     playerInputChanged: new GameStateEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput, newInput: SelectedPlayerInput) => void
-    >('playerInputChanged', true),
+    >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI.inputSource, new: newI.inputSource })),
     inputListChanged: new GameStateEvent<() => void>('inputListChanged'),
 
     karaokeConnectionStatusChange: new GameStateEvent<

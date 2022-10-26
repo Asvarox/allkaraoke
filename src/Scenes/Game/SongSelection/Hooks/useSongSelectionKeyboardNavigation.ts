@@ -1,6 +1,7 @@
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboard from 'hooks/useKeyboard';
 import { chunk, throttle } from 'lodash-es';
+import posthog from 'posthog-js';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import random from 'utils/randomValue';
@@ -134,8 +135,15 @@ export const useSongSelectionKeyboardNavigation = (
             onLeftArrow: () => moveCursor('x', -1),
             onRightArrow: () => moveCursor('x', 1),
             onBackspace: handleBackspace,
-            onLetterF: () => setShowFilters((current) => !current),
-            onR: () => setPositionBySongIndex(Math.round(random(0, songCount))),
+            onLetterF: () => {
+                setShowFilters((current) => !current);
+                posthog.capture('filtersToggled');
+            },
+            onR: () => {
+                const newIndex = Math.round(random(0, songCount));
+                setPositionBySongIndex(newIndex);
+                posthog.capture('selectRandom', { newIndex });
+            },
         },
         enabled && !showFilters,
         [groupedSongs, cursorPosition, showFilters],

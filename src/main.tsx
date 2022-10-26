@@ -24,9 +24,10 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
     });
 }
 
-if (import.meta.env.VITE_APP_POSTHOG_KEY && !isDev() && !isE2E() && window.location.port === '') {
+if (import.meta.env.VITE_APP_POSTHOG_KEY) {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
         api_host: 'https://eu.posthog.com',
+        test: isDev() || isE2E() || window.location.port !== '',
         loaded: (ph) => {
             let storedUser = localStorage.getItem('posthog-user-id');
             if (!storedUser) {

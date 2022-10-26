@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
-import { nextIndex, nextValueIndex, Switcher } from 'Elements/Switcher';
+import { nextIndex, nextValue, Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from 'interfaces';
-import { isNumber } from 'lodash-es';
 import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import createPersistedState from 'use-persisted-state';
+import { ValuesType } from 'utility-types';
 import isDev from 'utils/isDev';
 import { v4 } from 'uuid';
 
@@ -29,7 +29,8 @@ if (isDev()) {
     difficultyNames.push('Debug 6');
 }
 
-const useSetGameMode = createPersistedState<GAME_MODE>('song_settings-game_mode');
+// added -v2 to the key as the value has changed from number to ValuesType<typeof GAME_MODE>
+const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE>>('song_settings-game_mode-v2');
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
 const useSetSkipIntro = createPersistedState<boolean>('song_settings-skip_intro');
 
@@ -60,7 +61,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
     };
 
     const changeMode = () => {
-        setMode((currentMode) => nextValueIndex(Object.values(GAME_MODE).filter(isNumber), currentMode));
+        setMode((currentMode) => nextValue(Object.values(GAME_MODE), currentMode));
     };
 
     const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
