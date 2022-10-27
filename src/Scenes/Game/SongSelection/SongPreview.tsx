@@ -248,7 +248,7 @@ const SongInfo = styled.div<{ active: boolean }>`
     height: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     flex-direction: column;
 
