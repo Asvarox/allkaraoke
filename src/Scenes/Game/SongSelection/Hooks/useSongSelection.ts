@@ -13,6 +13,7 @@ export default function useSongSelection(preselectedSong: string | null) {
         groupedSongList,
         () => setKeyboardControl(false),
         songList.length,
+        filters,
     );
 
     useEffect(() => {

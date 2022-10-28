@@ -59,7 +59,6 @@ const Vertical = () => <HorizontalVerticalBase vertical />;
 const HorizontalVertical = () => <HorizontalVerticalBase vertical horizontal />;
 const Accept = () => <Kbd>Enter ⏎</Kbd>;
 const Back = () => <Kbd>Backspace ⌫</Kbd>;
-const Letter = (letter: string) => () => <Kbd>{letter.toUpperCase()}</Kbd>;
 const ShiftLetter = (letter: string) => () =>
     (
         <>
@@ -73,7 +72,6 @@ const KeyhelpComponent: Record<keyof HelpEntry, { view: ComponentType; defaultLa
     vertical: { view: Vertical, defaultLabel: 'Navigate' },
     accept: { view: Accept, defaultLabel: 'Select' },
     back: { view: Back, defaultLabel: 'Go back' },
-    letterF: { view: Letter('f'), defaultLabel: 'Letter' },
     shiftR: { view: ShiftLetter('r'), defaultLabel: 'Pick random' },
 };
 
@@ -101,7 +99,7 @@ const SectionHelp = styled.span`
 const Container = styled.div`
     position: fixed;
     top: 100px;
-    right: 15px;
+    right: 55px;
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
     display: flex;

@@ -137,6 +137,7 @@ body {
 
 html {
     overflow: overlay;
+    overflow-x: hidden;
 }
 
 code {

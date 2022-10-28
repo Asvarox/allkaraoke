@@ -5,12 +5,12 @@ import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import Playlists from 'Scenes/Game/SongSelection/Playlists';
+import QuickSearch from 'Scenes/Game/SongSelection/QuickSearch';
 import SelectRandomTip from 'Scenes/Game/SongSelection/SelectRandomTip';
 import usePrevious from '../../../hooks/usePrevious';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';
-import Filters from './Filters';
-import { isEmptyFilters } from './Hooks/useSongList';
 import useSongSelection from './Hooks/useSongSelection';
 import {
     SongCard,
@@ -26,9 +26,10 @@ interface Props {
     preselectedSong: string | null;
 }
 
-const padding = 50;
-const leftPad = 50;
-const gap = 40;
+const padding = 45;
+const leftPad = 45;
+const rightPad = 95;
+const gap = 35;
 const perRow = 4;
 
 const focusMultiplier = 1.2;
@@ -45,8 +46,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setFilters,
         filters,
         filtersData,
-        showFilters,
         setShowFilters,
+        showFilters,
     } = useSongSelection(preselectedSong);
 
     const onSearchSong: KeyHandler = (e) => {
@@ -54,12 +55,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         // the letter would be inputted twice. So here space is enter which is then trimmed in setSearch
         // Possibly the keyboard event "leaks", but couldn't figure out a way to stop it.
         setFilters({
-            search: ' ',
+            search: ' ', //e.key,
         });
-        setShowFilters(true);
     };
-
-    useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !showFilters && keyboardControl });
+    useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !filters.search && keyboardControl });
 
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();
@@ -85,22 +84,17 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : setFocusedSong(index));
     if (!groupedSongList || !width) return <>Loading</>;
 
-    const entryWidth = (width - leftPad - padding - gap * (perRow - 1)) / perRow;
+    const entryWidth = (width - leftPad - rightPad - gap * (perRow - 1)) / perRow;
     const entryHeight = (entryWidth / 16) * 9;
 
     return (
         <Container>
-            <SelectRandomTip keyboardControl={keyboardControl} />
-            {(showFilters || !isEmptyFilters(filters)) && (
-                <Filters
-                    showFilters={showFilters}
-                    filtersData={filtersData}
-                    onSongFiltered={setFilters}
-                    onBack={() => setShowFilters(false)}
-                    filters={filters}
-                />
+            {filters.search ? (
+                <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
+            ) : (
+                <SelectRandomTip keyboardControl={keyboardControl} />
             )}
-            <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container">
+            <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
                 {songPreview && (
                     <SongPreview
                         songPreview={songPreview}
@@ -145,13 +139,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     </SongsGroupContainer>
                 ))}
             </SongListContainer>
+            <Playlists setFilters={setFilters} active={showFilters} closePlaylist={setShowFilters} />
         </Container>
     );
 }
 
 const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-height: 100vh;
 `;
 
@@ -177,7 +172,7 @@ const SongsGroupHeader = styled.div`
     background: rgba(0, 0, 0, 0.7);
 `;
 
-const SongListContainer = styled.div<{ active: boolean }>`
+const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
     position: relative;
     flex: 1 1 auto;
     display: flex;
@@ -185,10 +180,16 @@ const SongListContainer = styled.div<{ active: boolean }>`
     gap: ${gap}px;
     padding: ${padding}px;
     padding-left: ${leftPad}px;
+    padding-right: ${rightPad}px;
     overflow-y: overlay;
     overflow-x: clip;
     box-sizing: border-box;
     min-height: 100vh;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    transition: opacity 500ms;
+    opacity: ${(props) => (props.dim ? 0.5 : 1)};
 `;
 
 const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width: number; height: number }>`

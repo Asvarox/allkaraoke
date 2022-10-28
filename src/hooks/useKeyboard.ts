@@ -4,7 +4,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 type Callback = (e: KeyboardEvent) => void;
 
 // All besides F and H characters
-export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
+export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
 
 interface Params {
     onUpArrow?: Callback;
@@ -13,7 +13,6 @@ interface Params {
     onRightArrow?: Callback;
     onEnter?: Callback;
     onBackspace?: Callback;
-    onLetterF?: Callback;
     onR?: Callback;
     // onAlphaNumeric?: () => void,
 }
@@ -25,7 +24,6 @@ const paramsToKeys: { [param in keyof Params]: string } = {
     onRightArrow: 'right',
     onEnter: 'Enter',
     onBackspace: 'Backspace',
-    onLetterF: 'F',
     onR: 'Shift+R',
 };
 

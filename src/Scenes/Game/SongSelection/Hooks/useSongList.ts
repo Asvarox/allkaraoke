@@ -10,6 +10,8 @@ export interface SongGroup {
 }
 
 export interface AppliedFilters {
+    yearBefore?: number;
+    yearAfter?: number;
     language?: string;
     search?: string;
     duet?: boolean | null;
@@ -19,7 +21,9 @@ export function isEmptyFilters(filters: AppliedFilters) {
     return (
         (!filters.language || filters.language === '') &&
         (!filters.search || filters.search === '') &&
-        (filters.duet === undefined || filters.duet === null)
+        (filters.duet === undefined || filters.duet === null) &&
+        !filters.yearBefore &&
+        !filters.yearAfter
     );
 }
 
@@ -52,6 +56,16 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
         if (duet === null) return songList;
 
         return songList.filter((song) => (duet ? song.tracksCount > 1 : song.tracksCount === 1));
+    },
+    yearBefore: (songList, yearBefore: number) => {
+        if (!yearBefore) return songList;
+
+        return songList.filter((song) => Number(song.year) < yearBefore);
+    },
+    yearAfter: (songList, yearAfter: number) => {
+        if (!yearAfter) return songList;
+
+        return songList.filter((song) => Number(song.year) >= yearAfter);
     },
 };
 

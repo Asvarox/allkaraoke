@@ -1,10 +1,10 @@
 {
   "title": "Ogórek wąsaty",
   "artist": "Fasolki",
-  "bpm": 118.29,
+  "bpm": 112.99,
   "bar": 4,
-  "gap": 7035.358974358975,
-  "video": "MmcrNksJxz4",
+  "gap": 284.5440020289125,
+  "video": "pRDaV-8zoR4",
   "genre": "Dla dzieci",
   "language": "Polish",
   "videoGap": 0,
@@ -1804,130 +1804,6 @@
               "length": 5,
               "pitch": 7,
               "lyrics": "rek"
-            }
-          ],
-          "type": "notes"
-        },
-        {
-          "start": 903,
-          "notes": [
-            {
-              "type": "normal",
-              "start": 907,
-              "length": 2,
-              "pitch": 7,
-              "lyrics": "i "
-            },
-            {
-              "type": "normal",
-              "start": 909,
-              "length": 3,
-              "pitch": 10,
-              "lyrics": "czap"
-            },
-            {
-              "type": "normal",
-              "start": 912,
-              "length": 4,
-              "pitch": 10,
-              "lyrics": "kę "
-            },
-            {
-              "type": "normal",
-              "start": 916,
-              "length": 3,
-              "pitch": 9,
-              "lyrics": "i "
-            },
-            {
-              "type": "normal",
-              "start": 919,
-              "length": 4,
-              "pitch": 7,
-              "lyrics": "san"
-            },
-            {
-              "type": "normal",
-              "start": 923,
-              "length": 8,
-              "pitch": 9,
-              "lyrics": "da"
-            },
-            {
-              "type": "star",
-              "start": 931,
-              "length": 3,
-              "pitch": 12,
-              "lyrics": "ły"
-            }
-          ],
-          "type": "notes"
-        },
-        {
-          "start": 934,
-          "notes": [
-            {
-              "type": "normal",
-              "start": 936,
-              "length": 3,
-              "pitch": 9,
-              "lyrics": "zie"
-            },
-            {
-              "type": "normal",
-              "start": 939,
-              "length": 3,
-              "pitch": 7,
-              "lyrics": "lo"
-            },
-            {
-              "type": "normal",
-              "start": 942,
-              "length": 2,
-              "pitch": 7,
-              "lyrics": "ny "
-            },
-            {
-              "type": "normal",
-              "start": 944,
-              "length": 2,
-              "pitch": 7,
-              "lyrics": "zie"
-            },
-            {
-              "type": "normal",
-              "start": 946,
-              "length": 3,
-              "pitch": 7,
-              "lyrics": "lo"
-            },
-            {
-              "type": "normal",
-              "start": 949,
-              "length": 2,
-              "pitch": 5,
-              "lyrics": "ny "
-            },
-            {
-              "type": "normal",
-              "start": 951,
-              "length": 3,
-              "pitch": 4,
-              "lyrics": "jest "
-            },
-            {
-              "type": "star",
-              "start": 954,
-              "length": 3,
-              "pitch": 5,
-              "lyrics": "ca"
-            },
-            {
-              "type": "star",
-              "start": 957,
-              "length": 4,
-              "pitch": 5,
-              "lyrics": "ły"
             }
           ],
           "type": "notes"

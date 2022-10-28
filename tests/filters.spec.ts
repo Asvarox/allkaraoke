@@ -6,48 +6,65 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Filters', async ({ page }) => {
+test('Filters - PlayLists', async ({ page }) => {
     await page.goto('/');
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
 
     await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    await page.keyboard.type('f'); // Show filters
-    await expect(page.locator('[data-test="song-list-filters"]')).toBeVisible();
-
-    await page.keyboard.press('Enter'); // focus search song
-    await page.keyboard.type('multitrack');
     await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    for (let i = 0; i < 10; i++) await page.keyboard.press('Backspace');
-    await page.keyboard.press('Enter');
 
-    await page.keyboard.press('ArrowRight'); // language filters
-    await page.keyboard.press('Enter'); // polish
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+    // Go to playlists
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowRight');
+
+    await page.keyboard.press('ArrowDown'); // Polish
     await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    await page.keyboard.press('Enter'); // english
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+
+    await page.keyboard.press('ArrowDown'); // English
+    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
     await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    await page.keyboard.press('Enter'); // All
 
-    await page.keyboard.press('ArrowRight'); // duet filters
-    await page.keyboard.press('Enter'); // Duet
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+    await page.keyboard.press('ArrowDown'); // Classics
     await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
-    await page.keyboard.press('Enter'); // Solo
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
-    await page.keyboard.press('Enter'); // All
-    await page.keyboard.press('ArrowDown');
     await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+
+    await page.keyboard.press('ArrowDown'); // Modern
     await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).not.toBeVisible();
+
+    await page.keyboard.press('ArrowDown'); // Duet
+    await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+
+    await page.keyboard.press('ArrowDown'); // All
+    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+});
+
+test('Filters - Quick Search', async ({ page }) => {
+    await page.goto('/');
+
+    await page.locator('[data-test="sing-a-song"]').click({ force: true });
+
+    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+
     // Quick search
     await page.keyboard.type('multitrack');
-    await page.keyboard.press('Enter'); // All
-    await page.keyboard.press('Enter');
+    await expect(page.locator('[data-test="filters-search"]')).toBeVisible();
     await page.keyboard.press('ArrowDown');
     await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
     await expect(page.locator('[data-test="song-e2e-test.json"]')).not.toBeVisible();
     await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-test-multitrack.json');
+
+    // Clear search
+    await page.keyboard.press('Backspace');
+    await expect(page.locator('[data-test="filters-search"]')).toBeFocused();
+    for (let i = 0; i < 'multitrack'.length; i++) await page.keyboard.press('Backspace');
+
+    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+    await expect(page.locator('[data-test="song-e2e-test.json"]')).toBeVisible();
+    await expect(page.locator('[data-test="filters-search"]')).not.toBeVisible();
 });

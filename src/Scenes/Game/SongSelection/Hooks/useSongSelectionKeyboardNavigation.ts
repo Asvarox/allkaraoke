@@ -2,13 +2,13 @@ import { navigate } from 'hooks/useHashLocation';
 import useKeyboard from 'hooks/useKeyboard';
 import { chunk, throttle } from 'lodash-es';
 import posthog from 'posthog-js';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import random from 'utils/randomValue';
 import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';
 import usePrevious from '../../../../hooks/usePrevious';
 import tuple from '../../../../utils/tuple';
-import { SongGroup } from './useSongList';
+import { AppliedFilters, SongGroup } from './useSongList';
 
 const MAX_SONGS_PER_ROW = 4;
 
@@ -28,11 +28,15 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
     );
     const previousMatrix = usePrevious(songIndexMatrix ?? []);
 
+    const isAtLastColumn = cursorPosition[0] === songIndexMatrix[cursorPosition[1]]?.length - 1;
+
     const moveToSong = (songIndex: number, matrix: number[][] = songIndexMatrix) => {
         const y = matrix.findIndex((columns) => columns.includes(songIndex));
         const x = matrix[y]?.indexOf(songIndex);
         if (x >= 0 && y >= 0) {
             setCursorPosition([x ?? 0, y ?? 0]);
+        } else {
+            setCursorPosition([0, 0]);
         }
     };
 
@@ -48,7 +52,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
         if (previousFocusedSong !== currentFocusedSong) {
             moveToSong(previousFocusedSong);
         }
-    }, [cursorPosition, songIndexMatrix, songIndexMatrix]);
+    }, [cursorPosition, songIndexMatrix, previousMatrix, isAtLastColumn]);
 
     const moveCursor = (plane: 'x' | 'y', delta: number) => {
         menuNavigate.play();
@@ -59,7 +63,6 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
                 newY = y + delta;
             } else {
                 if (songIndexMatrix[y] === undefined) {
-                    console.log('ERROR', songIndexMatrix, x, y, delta);
                     debugger;
                 }
                 const maxXInRow = songIndexMatrix[y].length - 1;
@@ -78,7 +81,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
 
     const focusedSong = positionToSongIndex(cursorPosition);
 
-    return tuple([focusedSong, cursorPosition, moveCursor, moveToSong]);
+    return tuple([focusedSong, cursorPosition, moveCursor, moveToSong, isAtLastColumn]);
 };
 
 export const useSongSelectionKeyboardNavigation = (
@@ -86,9 +89,18 @@ export const useSongSelectionKeyboardNavigation = (
     groupedSongs: SongGroup[] = [],
     onEnter: () => void,
     songCount: number,
+    appliedFilters: AppliedFilters,
 ) => {
-    const [showFilters, setShowFilters] = useState(false);
-    const [focusedSong, cursorPosition, moveCursor, moveToSong] = useTwoDimensionalNavigation(groupedSongs);
+    // We need to record how user entered (from which "side") and how left and based on that update the selection.
+    // Eg if user was at the last column, entered playlists, and returned to the last column (by clicking left)
+    // then effectively the selection shouldn't change
+    const [showPlaylistsState, setShowPlaylistsState] = useState<[boolean, 'left' | 'right' | null]>([false, null]);
+    const previousPlaylistsState = usePrevious(showPlaylistsState);
+    const [arePlaylistsVisible, leavingKey] = showPlaylistsState;
+
+    const [focusedSong, cursorPosition, moveCursor, moveToSong, isAtLastColumn] =
+        useTwoDimensionalNavigation(groupedSongs);
+    const isAtFirstColumn = cursorPosition[0] === 0;
 
     const handleEnter = () => {
         menuEnter.play();
@@ -96,8 +108,10 @@ export const useSongSelectionKeyboardNavigation = (
     };
 
     const handleBackspace = () => {
-        menuBack.play();
-        navigate('/');
+        if (!appliedFilters.search) {
+            menuBack.play();
+            navigate('/');
+        }
     };
 
     const navigateToGroup = useCallback(
@@ -125,6 +139,16 @@ export const useSongSelectionKeyboardNavigation = (
         }
     };
 
+    const navigateHorizontally = (direction: 1 | -1, ignoreFilters = false) => {
+        if (!ignoreFilters && direction === 1 && isAtLastColumn && !arePlaylistsVisible) {
+            setShowPlaylistsState([true, 'right']);
+        } else if (!ignoreFilters && direction === -1 && isAtFirstColumn && !arePlaylistsVisible) {
+            setShowPlaylistsState([true, 'left']);
+        } else {
+            moveCursor('x', direction);
+        }
+    };
+
     const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
 
     useKeyboard(
@@ -132,21 +156,17 @@ export const useSongSelectionKeyboardNavigation = (
             onEnter: handleEnter,
             onDownArrow: (e) => navigateVertically(e, 1),
             onUpArrow: (e) => navigateVertically(e, -1),
-            onLeftArrow: () => moveCursor('x', -1),
-            onRightArrow: () => moveCursor('x', 1),
+            onLeftArrow: () => navigateHorizontally(-1),
+            onRightArrow: () => navigateHorizontally(1),
             onBackspace: handleBackspace,
-            onLetterF: () => {
-                setShowFilters((current) => !current);
-                posthog.capture('filtersToggled');
-            },
             onR: () => {
                 const newIndex = Math.round(random(0, songCount));
                 setPositionBySongIndex(newIndex);
                 posthog.capture('selectRandom', { newIndex });
             },
         },
-        enabled && !showFilters,
-        [groupedSongs, cursorPosition, showFilters],
+        enabled && !arePlaylistsVisible,
+        [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters],
     );
 
     const { setHelp, clearHelp } = useKeyboardHelp();
@@ -157,7 +177,6 @@ export const useSongSelectionKeyboardNavigation = (
                 'horizontal-vertical': null,
                 accept: null,
                 back: null,
-                letterF: 'Filter list',
                 shiftR: null,
             });
         }
@@ -165,5 +184,21 @@ export const useSongSelectionKeyboardNavigation = (
         return clearHelp;
     }, [enabled]);
 
-    return tuple([focusedSong, setPositionBySongIndex, showFilters, setShowFilters]);
+    const closePlaylist = useCallback(
+        (leavingKey: 'left' | 'right') => {
+            setShowPlaylistsState([false, leavingKey]);
+            // if (leavingKey === 'right') navigateHorizontally(1);
+        },
+        [setShowPlaylistsState, navigateHorizontally, groupedSongs, cursorPosition],
+    );
+
+    useLayoutEffect(() => {
+        const [previousShowFilters, enteringKey] = previousPlaylistsState;
+        if (previousShowFilters && !arePlaylistsVisible) {
+            console.log(cursorPosition);
+            if (enteringKey === leavingKey) navigateHorizontally(leavingKey === 'right' ? 1 : -1, true);
+        }
+    }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
+
+    return tuple([focusedSong, setPositionBySongIndex, arePlaylistsVisible, closePlaylist]);
 };
