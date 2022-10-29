@@ -2,21 +2,23 @@ import styled from '@emotion/styled';
 import { format } from 'date-fns';
 import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
-import useKeyboard from 'hooks/useKeyboard';
-import { HighScoreEntity } from 'interfaces';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { HighScoreEntity, Song } from 'interfaces';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { useEditScore } from 'Stats/Song/hooks';
+import HighScoreRename from './HighScoreRename';
 
 interface Props {
     onNextStep: () => void;
     singSetupId: string;
     highScores: HighScoreEntity[];
+    song: Song;
 }
 
-function HighScoresView({ onNextStep, highScores, singSetupId }: Props) {
-    useKeyboard({
-        onEnter: onNextStep,
-    });
+function HighScoresView({ onNextStep, highScores, singSetupId, song }: Props) {
+    const { register } = useKeyboardNav();
+    const editScore = useEditScore(song);
 
     return (
         <>
@@ -24,7 +26,20 @@ function HighScoresView({ onNextStep, highScores, singSetupId }: Props) {
                 {highScores.map((score, index) => (
                     <ScoreContainer isCurrentSing={score.singSetupId === singSetupId} key={index}>
                         <ScorePosition>{index + 1}</ScorePosition>
-                        <ScorePlayerName>{score.name}</ScorePlayerName>
+
+                        <ScorePlayerName>
+                            {score.singSetupId === singSetupId ? (
+                                <HighScoreRename
+                                    index={index}
+                                    score={score}
+                                    register={register}
+                                    singSetupId={singSetupId}
+                                    onSave={editScore}
+                                />
+                            ) : (
+                                score.name
+                            )}
+                        </ScorePlayerName>
                         <ScoreScore>
                             <ScoreText score={score.score} />
                         </ScoreScore>
@@ -32,7 +47,9 @@ function HighScoresView({ onNextStep, highScores, singSetupId }: Props) {
                     </ScoreContainer>
                 ))}
             </ScoresContainer>
-            <SongSelectionButton onClick={onNextStep} focused data-test="play-next-song-button">
+            <SongSelectionButton
+                {...register('play-next', onNextStep, undefined, true)}
+                data-test="play-next-song-button">
                 Select song
             </SongSelectionButton>
         </>
@@ -55,11 +72,11 @@ const ScoreContainer = styled.div<{ isCurrentSing: boolean }>`
     display: flex;
     background: ${(props) => (props.isCurrentSing ? 'rgba(0,0,0,.9)' : 'rgba(0,0,0,.5)')};
     margin-bottom: 0.5em;
-    padding: 0 1em;
+    padding: ${(props) => (props.isCurrentSing ? `0 1em` : `0.25em 1em`)};
+    align-items: center;
 `;
 const ScorePosition = styled.div`
-    padding: 0.5em;
-    flex: 0;
+    padding: 0 0.5em;
     color: ${styles.colors.text.active};
 `;
 const ScorePlayerName = styled.div`
@@ -68,8 +85,7 @@ const ScorePlayerName = styled.div`
     padding: 0.5em;
 `;
 const ScoreScore = styled.div`
-    flex: 0;
-    padding: 0.5em;
+    padding: 0 0.5em;
 `;
 const ScoreDate = styled.div`
     position: absolute;
@@ -77,7 +93,6 @@ const ScoreDate = styled.div`
     bottom: -0.5em;
     right: -1em;
     background: black;
-    flex: 0;
     padding: 0.2em;
 `;
 

@@ -1,1 +1,2 @@
+import './players';
 import './Song';

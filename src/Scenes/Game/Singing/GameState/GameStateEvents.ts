@@ -68,6 +68,10 @@ export const events = {
     micMonitoringStopped: new GameStateEvent('micMonitoringStopped'),
 
     songStatStored: new GameStateEvent<(key: string, stats: SongStats) => void>('songStatStored'),
+    songScoreUpdated: new GameStateEvent<(key: string, stats: SongStats, newName: string) => void>(
+        'songScoreUpdated',
+        () => undefined,
+    ),
 };
 
 export default events;

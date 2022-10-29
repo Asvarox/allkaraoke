@@ -41,7 +41,12 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
                 />
             )}
             {step === 'highscores' && (
-                <HighScoresView onNextStep={onClickSongSelection} singSetupId={singSetupId} highScores={highScores} />
+                <HighScoresView
+                    onNextStep={onClickSongSelection}
+                    singSetupId={singSetupId}
+                    highScores={highScores}
+                    song={song}
+                />
             )}
             <audio
                 src={backgroundMusic}

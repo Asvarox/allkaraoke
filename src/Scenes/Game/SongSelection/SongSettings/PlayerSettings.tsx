@@ -2,11 +2,11 @@ import styled from '@emotion/styled';
 import { Autocomplete } from 'Elements/Autocomplete';
 import { Button } from 'Elements/Button';
 import { Switcher } from 'Elements/Switcher';
+import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from 'hooks/players/consts';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useMemo, useRef, useState } from 'react';
 import PhonesManager from 'Scenes/ConnectPhone/PhonesManager';
-import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 
 interface Props {
@@ -15,20 +15,6 @@ interface Props {
     keyboardControl: boolean;
     onExitKeyboardControl: () => void;
 }
-
-const PLAYER_NAMES_SESSION_STORAGE_KEY = 'session-player-names';
-const PREVIOUS_PLAYER_NAMES_STORAGE_KEY = 'previous-player-names';
-
-gameStateEvents.songStarted.subscribe((_, singSetup) => {
-    let currentNames = JSON.parse(window.sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) || [];
-    const thisPlayNames = singSetup.players.map(({ name }) => name.trim());
-
-    const newNamesSet = [...currentNames].concat(...thisPlayNames);
-    currentNames = [...new Set(newNamesSet)].filter(Boolean);
-
-    window.sessionStorage.setItem(PLAYER_NAMES_SESSION_STORAGE_KEY, JSON.stringify(currentNames));
-    window.sessionStorage.setItem(PREVIOUS_PLAYER_NAMES_STORAGE_KEY, JSON.stringify(thisPlayNames));
-});
 
 function useDefaultPlayerName(index: number): string {
     return useMemo(() => {
@@ -50,8 +36,7 @@ function useDefaultPlayerName(index: number): string {
     }, [index]);
 }
 
-const getPlayerTrackName = (tracks: SongPreview['tracks'], index: number) =>
-    tracks[index]?.name ?? `Track ${index + 1}`;
+const getTrackName = (tracks: SongPreview['tracks'], index: number) => tracks[index]?.name ?? `Track ${index + 1}`;
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
     const p1NameRef = useRef<HTMLInputElement | null>(null);
     const [p1Name, setP1Name] = useState('');
@@ -103,7 +88,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                         <Switcher
                             {...register('p1 track', () => togglePlayerTrack(0), 'Change track')}
                             label="Track"
-                            value={getPlayerTrackName(songPreview.tracks, playerTracks[0])}
+                            value={getTrackName(songPreview.tracks, playerTracks[0])}
                             data-test="player-1-track-setting"
                             data-test-value={playerTracks[0] + 1}
                         />
@@ -127,7 +112,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                         <Switcher
                             {...register('p2 track', () => togglePlayerTrack(1), 'Change track')}
                             label="Track"
-                            value={getPlayerTrackName(songPreview.tracks, playerTracks[1])}
+                            value={getTrackName(songPreview.tracks, playerTracks[1])}
                             data-test="player-2-track-setting"
                             data-test-value={playerTracks[1] + 1}
                         />
