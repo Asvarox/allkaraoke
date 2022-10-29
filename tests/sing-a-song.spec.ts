@@ -91,8 +91,15 @@ test('Basic sing a song', async ({ page }) => {
     // High scores
     await page.locator('[data-test="highscores-button"]').click({ force: true });
 
-    await expect(page.locator('[data-test="highscores-container"]')).toContainText('E2E Player 1');
-    await expect(page.locator('[data-test="highscores-container"]')).toContainText('E2E Player 2');
+    await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 1"]')).toBeVisible();
+    await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 2"]')).toBeVisible();
+
+    // Edit a highscore name
+    await page.keyboard.press('ArrowDown'); // highest score player
+    await page.keyboard.type('Updated name');
+    await page.keyboard.press('Enter');
+    await page.keyboard.press('ArrowUp');
+    await page.waitForTimeout(500); // It takes 300ms to save the score
 
     // Check next song
     await page.locator('[data-test="play-next-song-button"]').click({ force: true });
@@ -107,23 +114,18 @@ test('Basic sing a song', async ({ page }) => {
     await page.keyboard.press('Enter');
     await expect(page.locator('[data-test="player-1-name"]')).toHaveAttribute('placeholder', 'E2E Player 1');
     await expect(page.locator('[data-test="player-2-name"]')).toHaveAttribute('placeholder', 'E2E Player 2');
-});
 
-test('skip the intro', async ({ page }) => {
-    await page.goto('/');
-
-    await page.locator('[data-test="sing-a-song"]').click({ force: true });
-    await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');
-    await page.keyboard.press('Enter'); // enter first song
-
-    await page.locator('[data-test="skip-intro"]').click({ force: true });
-    await expect(page.locator('[data-test="skip-intro"]')).toHaveAttribute('data-test-value', 'true');
-    await page.locator('[data-test="next-step-button"]').click({ force: true });
+    // Check if recent player list contains updated name
+    await page.locator('[data-test="player-1-name"]').click();
+    await expect(page.locator('role=listbox')).toContainText('Updated name');
+    await page.keyboard.press('Enter');
     await page.locator('[data-test="play-song-button"]').click({ force: true });
 
-    await page.locator('[data-test="highscores-button"]').click({ timeout: 25_000, force: true });
-    await page.locator('[data-test="play-next-song-button"]').click({ force: true });
-    await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');
-    await page.keyboard.press('Enter'); // enter first song
-    await expect(page.locator('[data-test="skip-intro"]')).toHaveAttribute('data-test-value', 'true');
+    // Check updated highscore
+    await page.keyboard.press('Enter');
+    await expect(page.locator(p1CL)).toBeVisible();
+    await page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
+    await page.locator('[data-test="button-finish-song"]').click({ force: true });
+    await page.locator('[data-test="highscores-button"]').click({ force: true });
+    await expect(page.locator('[data-test="highscores-container"]')).toContainText('Updated name');
 });

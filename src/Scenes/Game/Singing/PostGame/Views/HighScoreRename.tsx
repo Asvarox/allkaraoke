@@ -32,6 +32,8 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
             ref={inputRef}
             {...register(`highscore-rename-${index}`, () => inputRef.current?.focus())}
             placeholder={score.name}
+            data-test={`input-edit-highscore`}
+            data-original-name={score.name}
         />
     );
 }
