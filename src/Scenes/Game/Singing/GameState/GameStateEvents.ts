@@ -59,7 +59,7 @@ export const events = {
 
     karaokeConnectionStatusChange: new GameStateEvent<
         (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error') => void
-    >('karaokeConnectionStatusChange', true),
+    >('karaokeConnectionStatusChange'),
     remoteMicPlayerNumberSet: new GameStateEvent<(playerNumber: number | null) => void>('remoteMicPlayerNumberSet'),
     remoteMicMonitoringStarted: new GameStateEvent('remoteMicMonitoringStarted'),
     remoteMicMonitoringStopped: new GameStateEvent('remoteMicMonitoringStopped'),
