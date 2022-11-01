@@ -24,10 +24,9 @@ function SelectInput(props: Props) {
     const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
 
     const nextPlayerToAutoSwitch = useRef(0);
-    useEventEffect(GameStateEvents.phoneConnected, ({ id, name }) => {
-        console.log(nextPlayerToAutoSwitch.current);
+    useEventEffect(GameStateEvents.phoneConnected, ({ id }) => {
         InputManager.setPlayerInput(nextPlayerToAutoSwitch.current, RemoteMicrophoneInputSource.inputName, 0, id);
-        nextPlayerToAutoSwitch.current++;
+        nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % 2;
     });
 
     const goBack = () => navigate('/');
