@@ -33,14 +33,8 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
         ignoreCase: true,
     });
 
-    // Select appropriate phones as inputs
-    await page.locator('[data-test="player-1-source"]').click();
-    await page.locator('[data-test="player-1-source"]').click();
+    // Assert auto selection of inputs
     await expect(page.locator('[data-test="player-1-input"]')).toContainText('E2E Test Blue', { ignoreCase: true });
-
-    await page.locator('[data-test="player-2-source"]').click();
-    await page.locator('[data-test="player-2-source"]').click();
-    await page.locator('[data-test="player-2-input"]').click();
     await expect(page.locator('[data-test="player-2-input"]')).toContainText('E2E Test Red', { ignoreCase: true });
 
     await page.keyboard.press('Backspace');

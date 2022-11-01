@@ -3,10 +3,15 @@ import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { Switcher } from 'Elements/Switcher';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
+import { useRef } from 'react';
 import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
+import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
+import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 
 interface Props {
     // file?: string;
@@ -17,6 +22,13 @@ function SelectInput(props: Props) {
 
     const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs);
     const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
+
+    const nextPlayerToAutoSwitch = useRef(0);
+    useEventEffect(GameStateEvents.phoneConnected, ({ id, name }) => {
+        console.log(nextPlayerToAutoSwitch.current);
+        InputManager.setPlayerInput(nextPlayerToAutoSwitch.current, RemoteMicrophoneInputSource.inputName, 0, id);
+        nextPlayerToAutoSwitch.current++;
+    });
 
     const goBack = () => navigate('/');
 

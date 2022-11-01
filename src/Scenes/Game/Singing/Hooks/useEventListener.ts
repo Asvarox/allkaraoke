@@ -7,7 +7,6 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     useEffect(() => {
         const subscriber = ((...args: Parameters<T>) => {
             setValue(args);
-            console.log(args);
         }) as T;
         event.subscribe(subscriber);
         return () => event.unsubscribe(subscriber);
@@ -16,7 +15,10 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     return value;
 }
 
-export function useEventEffect(event: GameStateEvent<any> | GameStateEvent<any>[], effect: () => void) {
+export function useEventEffect<T extends (...args: any[]) => void>(
+    event: GameStateEvent<T> | GameStateEvent<T>[],
+    effect: T,
+) {
     const eventList = Array.isArray(event) ? event : [event];
 
     useEffect(() => {
