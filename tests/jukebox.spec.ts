@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test('Jukebox', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/?e2e-test');
 
     await page.locator('[data-test="jukebox"]').click({ force: true });
 

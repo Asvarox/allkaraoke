@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
 });
 
 test('skip the intro from menu', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/?e2e-test');
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
     await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');
@@ -26,7 +26,7 @@ test('skip the intro from menu', async ({ page }) => {
 });
 
 test('skip the intro from the song', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/?e2e-test');
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
     await expect(page.locator('[data-test="song-preview"]')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');

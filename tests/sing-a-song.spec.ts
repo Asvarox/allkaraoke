@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
 });
 
 test('Basic sing a song', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/?e2e-test');
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
 

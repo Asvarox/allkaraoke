@@ -8,8 +8,7 @@ test.beforeEach(async ({ page, context }) => {
 
 test('Remote mic should connect and be selectable', async ({ page, context }) => {
     test.slow();
-    await page.goto('/');
-
+    await page.goto('/?e2e-test');
     await page.locator('[data-test="select-input"]').click();
     const serverUrl = await page.locator('[data-test="server-link-input"]').inputValue();
 

@@ -27,9 +27,4 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
         // @ts-expect-error
         window.isE2ETests = true;
     });
-
-    await context.route('**/*', (request) => {
-        request.request().url().includes('eu.posthog.com') ? request.abort() : request.continue();
-        return;
-    });
 };

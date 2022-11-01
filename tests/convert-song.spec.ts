@@ -12,7 +12,7 @@ const txtfile = `
 `;
 
 test('Convert song', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/?e2e-test');
     await page.locator('[data-test="convert-song"]').click();
     await expect(page.locator('[data-test="output"]')).toBeVisible();
     await page.locator('[data-test="input-txt"]').fill('');

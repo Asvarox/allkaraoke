@@ -8,7 +8,7 @@ test.beforeEach(async ({ page, context }) => {
 test('Source selection', async ({ page }) => {
     test.slow();
 
-    await page.goto('/');
+    await page.goto('/?e2e-test');
     await page.locator('[data-test="select-input"]').click();
     await page.locator('[data-test="player-1-source"]').click();
     await page.locator('[data-test="player-1-input"]').click();
