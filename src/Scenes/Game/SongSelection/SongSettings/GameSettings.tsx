@@ -3,10 +3,10 @@ import { Button } from 'Elements/Button';
 import { nextIndex, nextValue, Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from 'interfaces';
-import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
 import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import isDev from 'utils/isDev';
+import songHasLongIntro from 'utils/songHasLongIntro';
 import { v4 } from 'uuid';
 
 interface Props {
@@ -34,15 +34,12 @@ const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE>>('song_
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
 const useSetSkipIntro = createPersistedState<boolean>('song_settings-skip_intro');
 
-const SKIP_INTRO_THRESHOLD_MS = 20_000;
-
 export default function GameSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
     const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
     const [tolerance, setTolerance] = useSetTolerance(2);
     const [skipIntro, setSkipIntro] = useSetSkipIntro(false);
 
-    const lyricStartMs = getSongFirstNoteMs(songPreview);
-    const hasLongIntro = lyricStartMs - (songPreview.videoGap ?? 0) * 1000 > SKIP_INTRO_THRESHOLD_MS;
+    const hasLongIntro = songHasLongIntro(songPreview);
 
     const proposeSkipIntro = hasLongIntro || isDev();
 

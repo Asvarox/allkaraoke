@@ -111,3 +111,6 @@ export interface HighScoreEntity {
     score: number;
     date: string;
 }
+
+export type seconds = number;
+export type milliseconds = number;

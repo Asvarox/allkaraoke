@@ -1,5 +1,6 @@
 import usePlayerVolume from 'hooks/usePlayerVolume';
 import useUnstuckYouTubePlayer from 'hooks/useUnstuckYouTubePlayer';
+import { seconds } from 'interfaces';
 import { ForwardedRef, forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 
@@ -69,7 +70,7 @@ export default forwardRef(function YoutubeVideoPlayer(
 
     useImperativeHandle(ref, () => ({
         setSize: (w, h) => player.current?.getInternalPlayer().setSize(w, h),
-        seekTo: (time: number) => player.current?.getInternalPlayer().seekTo(time, true),
+        seekTo: (timeSec: seconds) => player.current?.getInternalPlayer().seekTo(timeSec, true),
         setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer().setPlaybackRate(speed),
         setVolume: (newVolume: number) => player.current?.getInternalPlayer().setVolume(newVolume),
         getCurrentTime: () => player.current?.getInternalPlayer().getCurrentTime(),

@@ -12,7 +12,7 @@ import {
 
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
+import getSkipIntroTime from 'Scenes/Game/Singing/Helpers/getSkipIntroTime';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import isDev from 'utils/isDev';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
@@ -133,6 +133,7 @@ function Player(
                         height={height}
                         onSongEnd={onSongEnd}
                         players={players}
+                        videoPlayerRef={player.current}
                     />
                 </Overlay>
             )}
@@ -146,10 +147,7 @@ function Player(
                     autoplay={autoplay}
                     disablekb={process.env.NODE_ENV !== 'development'}
                     volume={song.volume}
-                    startAt={
-                        (song.videoGap ?? 0) +
-                        Math.floor(singSetup.skipIntro ? (getSongFirstNoteMs(song) - SKIP_INTRO_MS) / 1000 : 0)
-                    }
+                    startAt={singSetup.skipIntro ? getSkipIntroTime(song) : song.videoGap ?? 0}
                     onStateChange={onStateChangeCallback}
                 />
             </PlayerContainer>
