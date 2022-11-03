@@ -5,7 +5,7 @@ import { Input } from 'Elements/Input';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { throttle } from 'lodash-es';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { FormEventHandler, useCallback, useEffect, useRef, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventEffect, useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
@@ -68,7 +68,8 @@ function Phone({ roomId }: Props) {
 
     const disabled = connectionStatus !== 'uninitialised';
 
-    const onConnect = () => {
+    const onConnect: FormEventHandler<HTMLFormElement> = (e) => {
+        e.preventDefault();
         WebRTCClient.connect(roomId, name);
         setKeepAwake(true);
         try {
@@ -80,18 +81,20 @@ function Phone({ roomId }: Props) {
         <LayoutWithBackground>
             <Container>
                 <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />
-                <Input
-                    focused={false}
-                    label="Name"
-                    value={name}
-                    onChange={setName}
-                    ref={inputRef}
-                    disabled={disabled}
-                    data-test="player-name-input"
-                />
-                <MenuButton onClick={onConnect} disabled={disabled || name === ''} data-test="connect-button">
-                    {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
-                </MenuButton>
+                <Form onSubmit={onConnect}>
+                    <Input
+                        focused={false}
+                        label="Name"
+                        value={name}
+                        onChange={setName}
+                        ref={inputRef}
+                        disabled={disabled}
+                        data-test="player-name-input"
+                    />
+                    <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
+                        {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
+                    </MenuButton>
+                </Form>
                 <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
                     WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
                 </KeepAwake>
@@ -119,6 +122,10 @@ const Container = styled(MenuContainer)`
         padding: 0.5em;
         height: 72px;
     }
+`;
+const Form = styled.form`
+    display: flex;
+    flex-direction: column;
 `;
 
 const MicInputState = styled.div`
