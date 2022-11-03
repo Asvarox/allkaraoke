@@ -2680,10 +2680,10 @@
   {
     "title": "Ogórek wąsaty",
     "artist": "Fasolki",
-    "bpm": 118.29,
+    "bpm": 112.99,
     "bar": 4,
-    "gap": 7035.358974358975,
-    "video": "MmcrNksJxz4",
+    "gap": 284.5440020289125,
+    "video": "pRDaV-8zoR4",
     "genre": "Dla dzieci",
     "language": "Polish",
     "videoGap": 0,
@@ -5920,6 +5920,30 @@
     "file": "Perfekt-Autobiografia.json",
     "tracksCount": 1,
     "search": "perfektautobiografia"
+  },
+  {
+    "title": "Downtown",
+    "artist": "Petula Clark",
+    "bpm": 231.2,
+    "bar": 4,
+    "gap": 7840.050847457627,
+    "video": "Wv5nd-3BRr4",
+    "year": "1964",
+    "edition": "SingStar English",
+    "language": "English",
+    "videoGap": 0,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Petula%20Clark&cancion=Downtown",
+    "realBpm": 59,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Petula Clark-Downtown.json",
+    "tracksCount": 1,
+    "search": "petulaclarkdowntown"
   },
   {
     "title": "Taki Jestem",
