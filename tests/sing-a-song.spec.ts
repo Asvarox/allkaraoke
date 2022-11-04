@@ -37,6 +37,7 @@ test('Basic sing a song', async ({ page }) => {
     // Player 1
     // Name
     await expect(page.locator('[data-test="player-1-name"]')).toBeVisible();
+    await page.keyboard.press('ArrowDown', { delay: 40 }); // Setup mics
     await page.keyboard.press('ArrowDown', { delay: 40 }); // player 1 name
     await page.keyboard.press('Enter', { delay: 40 }); // activate
     await expect(page.locator('[data-test="player-1-name"]')).toBeFocused();

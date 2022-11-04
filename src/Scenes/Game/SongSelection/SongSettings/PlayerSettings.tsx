@@ -40,8 +40,7 @@ function useDefaultPlayerName(index: number): string {
 }
 
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
-    const p1DefaultName = useDefaultPlayerName(0);
-    const p2DefaultName = useDefaultPlayerName(1);
+    const defaultNames = [useDefaultPlayerName(0), useDefaultPlayerName(1)];
 
     const playerNames = useMemo<string[]>(
         () => JSON.parse(sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) ?? [],
@@ -49,7 +48,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
     );
 
     const startSong = () => {
-        onNextStep(playerSetup);
+        onNextStep(playerSetup.map((setup, index) => ({ ...setup, name: setup.name || defaultNames[index] })));
     };
 
     const [playerSetup, setPlayerSetup] = useState<[PlayerSetup, PlayerSetup]>([
@@ -87,7 +86,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                         onChange={updatePlayer(0)}
                         playerNames={playerNames}
                         register={register}
-                        defaultName={p1DefaultName}
+                        defaultName={defaultNames[0]}
                         songPreview={songPreview}
                     />
                 </div>
@@ -101,7 +100,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                         onChange={updatePlayer(1)}
                         playerNames={playerNames}
                         register={register}
-                        defaultName={p2DefaultName}
+                        defaultName={defaultNames[1]}
                         songPreview={songPreview}
                     />
                 </div>
