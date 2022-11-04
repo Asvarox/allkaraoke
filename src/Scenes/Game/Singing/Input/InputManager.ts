@@ -19,6 +19,7 @@ export interface SelectedPlayerInput {
 const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
 
 class InputManager {
+    private isMonitoring = false;
     private playerInputs: SelectedPlayerInput[] = storage.getValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY) ?? [];
 
     constructor() {
@@ -53,31 +54,43 @@ class InputManager {
         this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getInputLag();
 
     public setPlayerInput = (playerNumber: number, source: InputSourceNames, channel = 0, deviceId?: string) => {
+        // In case input change while monitoring stop monitoring everything and start monitoring after the change happen
+        let restartMonitoringPromise: null | Promise<void> = null;
+        if (this.isMonitoring) {
+            restartMonitoringPromise = this.stopMonitoring();
+        }
+
         const newInput = { inputSource: source, deviceId, channel };
         const oldInput = this.playerInputs[playerNumber];
         this.playerInputs[playerNumber] = newInput;
 
         storage.storeValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY, this.playerInputs);
         events.playerInputChanged.dispatch(playerNumber, oldInput, newInput);
+
+        if (restartMonitoringPromise) {
+            restartMonitoringPromise.then(this.startMonitoring);
+        }
     };
 
     public getPlayerInput = (playerNumber: number): SelectedPlayerInput | null =>
         this.playerInputs[playerNumber] ?? null;
 
     public startMonitoring = async () => {
-        Promise.all(
+        await Promise.all(
             this.playerInputs.map((playerInput) =>
                 this.sourceNameToInput(playerInput.inputSource).startMonitoring(playerInput.deviceId),
             ),
         );
+        this.isMonitoring = true;
     };
 
     public stopMonitoring = async () => {
-        Promise.all(
+        await Promise.all(
             this.playerInputs.map((playerInput) =>
                 this.sourceNameToInput(playerInput.inputSource).stopMonitoring(playerInput.deviceId),
             ),
         );
+        this.isMonitoring = false;
     };
 
     public getInputs = () => this.playerInputs;

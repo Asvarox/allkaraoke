@@ -8,6 +8,7 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
 
     public subscribe = (callback: T) => {
+        this.unsubscribe(callback);
         this.subscribers.push(callback);
     };
 

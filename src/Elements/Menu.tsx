@@ -18,7 +18,6 @@ export const MenuButton = styled(Button)<{ focused?: boolean }>`
 
 export const MenuContainer = styled.div`
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);
     padding: 20px;
     width: 750px;
     margin: 50px auto;

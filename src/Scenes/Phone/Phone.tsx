@@ -102,7 +102,7 @@ function Phone({ roomId }: Props) {
                     onClick={() =>
                         monitoringStarted ? MicInput.stopMonitoring() : MicInput.startMonitoring(undefined, true)
                     }>
-                    Microphone: <strong>{monitoringStarted ? 'ON' : 'OFF'}</strong>
+                    Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
                 </MicInputState>
             </Container>
         </LayoutWithBackground>

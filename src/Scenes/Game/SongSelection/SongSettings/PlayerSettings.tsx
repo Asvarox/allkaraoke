@@ -5,7 +5,10 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useMemo, useState } from 'react';
 import PhonesManager from 'Scenes/ConnectPhone/PhonesManager';
+import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import SelectInputModal from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
 import SinglePlayer from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 
 interface Props {
@@ -16,7 +19,8 @@ interface Props {
 }
 
 function useDefaultPlayerName(index: number): string {
-    return useMemo(() => {
+    // If the player input changed in the meantime
+    return useEventListenerSelector(gameStateEvents.playerInputChanged, () => {
         let defaultName = '';
 
         const source = InputManager.getPlayerInput(index);
@@ -32,7 +36,7 @@ function useDefaultPlayerName(index: number): string {
         }
 
         return defaultName || `Player #${index + 1}`;
-    }, [index]);
+    });
 }
 
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
@@ -48,8 +52,6 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         onNextStep(playerSetup);
     };
 
-    const { register } = useKeyboardNav({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
-
     const [playerSetup, setPlayerSetup] = useState<[PlayerSetup, PlayerSetup]>([
         { name: '', track: 0 },
         { name: '', track: Math.min(1, songPreview.tracksCount - 1) },
@@ -64,8 +66,18 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         });
     };
 
+    const [showModal, setShowModal] = useState(false);
+
+    const { register } = useKeyboardNav({ enabled: keyboardControl && !showModal, onBackspace: onExitKeyboardControl });
+
     return (
         <>
+            {showModal && (
+                <SelectInputModal
+                    onClose={() => setShowModal(false)}
+                    playerNames={playerSetup.map((setup) => setup.name)}
+                />
+            )}
             <PlayerSettingContainer>
                 <h3>Player 1</h3>
                 <div>
@@ -97,7 +109,9 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
             <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
                 Play
             </PlayButton>
-            <PlayButton {...register('mic-setup', startSong, undefined, false)} data-test="play-song-button">
+            <PlayButton
+                {...register('mic-setup', () => setShowModal(true), undefined, false)}
+                data-test="select-inputs-button">
                 Setup mics
             </PlayButton>
         </>
