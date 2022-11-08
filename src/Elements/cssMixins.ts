@@ -2,7 +2,11 @@ import { css, keyframes } from '@emotion/react';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const focusable = (props: { focused?: boolean }) => css`
-    ${!!props.focused && focused}
+    ${!!props.focused && focused};
+
+    :hover {
+        ${focused};
+    }
 `;
 
 const focusAnimation = keyframes`

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { typography } from 'Elements/cssMixins';
+import { focused, typography } from 'Elements/cssMixins';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
@@ -22,6 +22,10 @@ export const Button = styled.button<{ focused?: boolean }>`
     box-sizing: border-box;
 
     transition: 300ms;
+
+    :hover {
+        ${focused};
+    }
 `;
 
 export const buttonFocused = css`

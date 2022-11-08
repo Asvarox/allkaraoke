@@ -298,6 +298,7 @@ const BaseSongBPMIndicator = styled.div<{ width: number; height: number }>`
     position: absolute;
     animation: bpm 1s infinite;
     border-radius: 5px;
+    pointer-events: none;
 
     @keyframes bpm {
         0% {
