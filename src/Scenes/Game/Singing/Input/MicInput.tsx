@@ -1,12 +1,14 @@
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import YinStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Yin';
 import InputInterface from './Interface';
-import AubioStrategy from './MicStrategies/Aubio';
 
 type Listener = (freqs: [number, number], volumes: [number, number]) => void;
 
 class MicInput implements InputInterface {
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
+
+    private interval: ReturnType<typeof setInterval> | null = null;
 
     private frequencies: [number, number] = [0, 0];
     private volumes: [number, number] = [0, 0];
@@ -26,31 +28,36 @@ class MicInput implements InputInterface {
         });
 
         this.context = new AudioContext();
-        const strategy = new AubioStrategy();
 
         const source = this.context.createMediaStreamSource(this.stream);
-        const processor = this.context.createScriptProcessor(strategy.getSampleSize());
+        const splitter = this.context.createChannelSplitter(2);
+        source.connect(splitter);
 
-        source.connect(processor);
-        processor.connect(this.context.destination);
+        const analyserCh0 = this.context.createAnalyser();
+        analyserCh0.fftSize = 2048;
+        analyserCh0.minDecibels = -100;
+        const analyserCh1 = this.context.createAnalyser();
+        analyserCh1.fftSize = 2048;
+        analyserCh1.minDecibels = -100;
+        splitter.connect(analyserCh0, 0);
+        splitter.connect(analyserCh1, 1);
 
-        await strategy.init(this.context, processor);
+        const strategy = new YinStrategy();
+        await strategy.init(this.context, analyserCh0.fftSize);
+
+        this.interval = setInterval(async () => {
+            const dataCh0 = new Float32Array(analyserCh0.fftSize);
+            const dataCh1 = new Float32Array(analyserCh1.fftSize);
+
+            analyserCh0.getFloatTimeDomainData(dataCh0);
+            analyserCh1.getFloatTimeDomainData(dataCh1);
+
+            this.frequencies = await Promise.all([strategy.getFrequency(dataCh0), strategy.getFrequency(dataCh1)]);
+
+            this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
+        }, this.context.sampleRate / analyserCh0.fftSize);
 
         events.micMonitoringStarted.dispatch();
-
-        processor.onaudioprocess = async (e) => {
-            const inputData1 = e.inputBuffer.getChannelData(0);
-            const inputData2 = e.inputBuffer.getChannelData(1);
-
-            this.frequencies = await Promise.all([
-                strategy.getFrequency(inputData1),
-                strategy.getFrequency(inputData2),
-            ]);
-
-            this.volumes = [this.calculateVolume(inputData1), this.calculateVolume(inputData2)];
-
-            this.onUpdate();
-        };
     };
 
     public getFrequencies = () => {
@@ -61,6 +68,7 @@ class MicInput implements InputInterface {
     public stopMonitoring = async () => {
         if (!this.startedMonitoring) return;
         this.startedMonitoring = false;
+        this.interval && clearInterval(this.interval);
         this.stream?.getTracks().forEach(function (track) {
             track.stop();
         });
