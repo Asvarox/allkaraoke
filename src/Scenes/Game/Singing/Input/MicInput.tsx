@@ -1,5 +1,5 @@
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import YinStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Yin';
+import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
 import InputInterface from './Interface';
 
 type Listener = (freqs: [number, number], volumes: [number, number]) => void;
@@ -42,7 +42,7 @@ class MicInput implements InputInterface {
         splitter.connect(analyserCh0, 0);
         splitter.connect(analyserCh1, 1);
 
-        const strategy = new YinStrategy();
+        const strategy = new AubioStrategy();
         await strategy.init(this.context, analyserCh0.fftSize);
 
         this.interval = setInterval(async () => {
@@ -55,6 +55,8 @@ class MicInput implements InputInterface {
             this.frequencies = await Promise.all([strategy.getFrequency(dataCh0), strategy.getFrequency(dataCh1)]);
 
             this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
+
+            this.onUpdate();
         }, this.context.sampleRate / analyserCh0.fftSize);
 
         events.micMonitoringStarted.dispatch();
