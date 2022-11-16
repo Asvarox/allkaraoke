@@ -1,3 +1,5 @@
+import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+
 export default async function importSongFromSource(url: string) {
     const urlObj = new URL(url);
 
@@ -8,7 +10,7 @@ export default async function importSongFromSource(url: string) {
     return importUltrastarEsSong(url);
 }
 
-async function importUltrastarEsSong(url: string) {
+async function importUltrastarEsSong(url: string): Promise<AuthorAndVidEntity> {
     const response = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`);
     const text = await response.text();
 
@@ -24,11 +26,11 @@ async function importUltrastarEsSong(url: string) {
     return {
         authorUrl: authorPath ? 'https://ultrastar-es.org' + authorPath : '',
         author: doc.querySelector('#listado > ul > li > dl > dd:nth-child(6)')?.textContent ?? '',
-        videoUrl: videoId ? 'https://www.youtube.com/watch?v=' + videoId : '',
+        video: videoId ? 'https://www.youtube.com/watch?v=' + videoId : '',
     };
 }
 
-async function importUsDbAnimuxSong(url: string, obj: URL) {
+async function importUsDbAnimuxSong(url: string, obj: URL): Promise<AuthorAndVidEntity> {
     const response = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`);
     const text = await response.text();
 
@@ -50,6 +52,6 @@ async function importUsDbAnimuxSong(url: string, obj: URL) {
     return {
         authorUrl: authorPath ? 'http://usdb.animux.de/index.php' + authorPath : '',
         author: author ?? '',
-        videoUrl: '',
+        video: '',
     };
 }

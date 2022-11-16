@@ -1,6 +1,19 @@
 import styled from '@emotion/styled';
+import {
+    Box,
+    Button,
+    ButtonGroup,
+    List,
+    ListItem,
+    ListItemButton,
+    ListItemText,
+    Stack,
+    TextField,
+    Typography,
+} from '@mui/material';
 import { Song } from 'interfaces';
 import { useEffect, useState } from 'react';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import getCurrentBeat from '../../Game/Singing/GameState/Helpers/getCurrentBeat';
 import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
 import { getFirstNoteStartFromSections } from '../../Game/Singing/Helpers/notesSelectors';
@@ -48,6 +61,7 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
 
     const onSectionClick = (index: number) => {
         setSelectedSection(index);
+        GameState.resetPlayerNotes();
         player.seekTo((sections[index].start * beatLength + song.gap) / 1000);
     };
 
@@ -84,86 +98,113 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
 
     return (
         <SectionEdtiorContainer>
-            <h3>
-                Edit section
-                {song.tracks.map((_, index) => (
-                    <button key={index} onClick={() => setTrack(index)}>
-                        Track {index + 1}
-                    </button>
-                ))}
-            </h3>
-            <Editor>
-                <SectionList>
+            <Typography variant={'h6'} mb={0}>
+                Edit verses
+                {song.tracks.length > 1 && (
+                    <ButtonGroup variant={'contained'} sx={{ ml: 2 }} size={'small'}>
+                        {song.tracks.map((_, index) => (
+                            <Button key={index} onClick={() => setTrack(index)} disabled={track === index}>
+                                Track {index + 1}
+                            </Button>
+                        ))}
+                    </ButtonGroup>
+                )}
+            </Typography>
+            <Stack direction="row" spacing={2} sx={{ height: '400px' }}>
+                <List sx={{ overflowY: 'auto' }}>
                     {sections.map((section, index) => (
-                        <SectionListEntry
-                            key={section.start}
-                            active={index === currentSectionIndex}
-                            selected={selectedSection === index}
-                            onClick={() => onSectionClick(index)}>
-                            {isNotesSection(section) ? section.notes.map((note) => note.lyrics).join('') : '[pause]'}
-                        </SectionListEntry>
+                        <ListItem key={section.start} disablePadding>
+                            <ListItemButton onClick={() => onSectionClick(index)} selected={selectedSection === index}>
+                                <ListItemText
+                                    primaryTypographyProps={{
+                                        fontWeight: index === currentSectionIndex ? 'bold' : 'normal',
+                                    }}
+                                    primary={
+                                        isNotesSection(section)
+                                            ? section.notes.map((note) => note.lyrics).join('')
+                                            : '[pause]'
+                                    }
+                                />
+                            </ListItemButton>
+                        </ListItem>
                     ))}
-                </SectionList>
-
+                </List>
                 <SectionEditForm>
                     {selectedSection > -1 && (
                         <>
                             {selectedSection === 0 && <h3>Use gap shift to change when this section starts</h3>}
                             {selectedSection > 0 && (
                                 <>
-                                    <strong>Change start beat</strong>
-                                    <input
+                                    <TextField
+                                        size={'small'}
                                         type="number"
-                                        step="1"
                                         onChange={(e) => shiftSection(+e.target.value)}
                                         value={getFirstNoteStartFromSections([sections[selectedSection]])}
+                                        label="Change start beat"
+                                        InputProps={{
+                                            inputProps: {
+                                                step: 1,
+                                            },
+                                        }}
+                                        fullWidth
+                                        sx={{ mb: 2 }}
+                                        helperText={
+                                            <>
+                                                Timestamp:{' '}
+                                                {msec(
+                                                    getFirstNoteStartFromSections([sections[selectedSection]]) *
+                                                        beatLength +
+                                                        song.gap,
+                                                    player,
+                                                )}
+                                            </>
+                                        }
                                     />
-                                    (currently{' '}
-                                    {msec(
-                                        getFirstNoteStartFromSections([sections[selectedSection]]) * beatLength +
-                                            song.gap,
-                                        player,
-                                    )}
-                                    )
                                 </>
                             )}
-                            <br />
-                            <button onClick={deleteSection}>Delete section</button>
+                            <Button variant="contained" color={'error'} onClick={deleteSection} fullWidth>
+                                Delete section
+                            </Button>
                         </>
                     )}
                 </SectionEditForm>
                 <SectionChangeList>
-                    {changeRecords.map((change, index) => {
-                        let message = '';
-                        let Component = SectionChangeDelete;
-                        if (change.type === 'delete') {
-                            Component = SectionChangeDelete;
-                            message = `Deleted`;
-                        } else if (change.type === 'shift') {
-                            Component = SectionChangeShift;
-                            message = `Start -> ${change.shift}`;
-                        }
+                    <Box sx={{ overflowY: 'auto', maxHeight: '340px' }}>
+                        {changeRecords.map((change, index) => {
+                            let message = '';
+                            let Component = SectionChangeDelete;
+                            if (change.type === 'delete') {
+                                Component = SectionChangeDelete;
+                                message = `Deleted`;
+                            } else if (change.type === 'shift') {
+                                Component = SectionChangeShift;
+                                message = `Start -> ${change.shift}`;
+                            }
 
-                        return (
-                            <Component>
-                                <strong>
-                                    Track: {change.track + 1}, Section: {change.section + 1}, {message}
-                                </strong>
-                            </Component>
-                        );
-                    })}
+                            return (
+                                <Component key={index}>
+                                    <strong>
+                                        Track: {change.track + 1}, Section: {change.section + 1}, {message}
+                                    </strong>
+                                </Component>
+                            );
+                        })}
+                    </Box>
                     {changeRecords.length > 0 && (
-                        <button
+                        <Button
+                            variant="contained"
+                            color={'warning'}
                             onClick={() =>
                                 setChangeRecords((records) =>
                                     records.filter((_, index) => index !== records.length - 1),
                                 )
-                            }>
-                            Undo
-                        </button>
+                            }
+                            fullWidth>
+                            Undo last change
+                        </Button>
                     )}
                 </SectionChangeList>
-            </Editor>
+            </Stack>
         </SectionEdtiorContainer>
     );
 }
@@ -196,7 +237,6 @@ const SectionEditForm = styled.div`
 `;
 
 const SectionList = styled.div`
-    height: 400px;
     flex: 1;
     overflow-y: auto;
 `;

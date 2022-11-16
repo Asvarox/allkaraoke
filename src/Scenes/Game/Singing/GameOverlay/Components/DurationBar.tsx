@@ -80,7 +80,7 @@ const BaseBarFill = styled(Bar)`
 `;
 
 const BarFill = (props: { fill: number }) => (
-    <BaseBarFill style={{ width: `${Math.round(props.fill * 10000) / 100}%` }} />
+    <BaseBarFill style={{ width: `${Math.round(props.fill * 10_000) / 100}%` }} />
 );
 
 export default DurationBar;

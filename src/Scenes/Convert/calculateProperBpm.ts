@@ -9,5 +9,5 @@ export default function calculateProperBPM(desiredEndMs: number, song: Song) {
     const desiredLengthMs = desiredEndMs - song.gap;
     const bpmLength = lastNote.start + lastNote.length;
 
-    return Number((60000 / ((desiredLengthMs / bpmLength) * song.bar)).toFixed(2));
+    return Number((60_000 / ((desiredLengthMs / bpmLength) * song.bar)).toFixed(2));
 }

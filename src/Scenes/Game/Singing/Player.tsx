@@ -118,7 +118,7 @@ function Player(
 
     return (
         <Container>
-            {currentStatus === VideoState.PAUSED && onSongEnd !== undefined && (
+            {effectsEnabled && currentStatus === VideoState.PAUSED && onSongEnd !== undefined && (
                 <PauseMenu onExit={onSongEnd} onResume={() => player.current?.playVideo()} />
             )}
             {currentStatus !== VideoState.UNSTARTED && (

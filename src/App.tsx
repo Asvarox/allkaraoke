@@ -29,7 +29,7 @@ function App() {
             <Router hook={useHashLocation}>
                 <Route path="/game">{() => <Game />}</Route>
                 <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>
-                <Route path="/convert" component={Convert} />
+                <Route path="/convert" component={() => <Convert />} />
                 <Route path="/jukebox" component={Jukebox} />
                 <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>
                 <Route path="/edit" component={SongList} />

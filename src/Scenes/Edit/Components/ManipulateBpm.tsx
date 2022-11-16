@@ -1,8 +1,11 @@
+import { Box, TextField } from '@mui/material';
 import { Song } from 'interfaces';
 import { useState } from 'react';
+import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
+import { getLastNoteEndFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
 import calculateProperBPM from '../../Convert/calculateProperBpm';
 import { PlayerRef } from '../../Game/Singing/Player';
-import { EditorRow, InputGroup, InputGroupInput, Pre } from '../Elements';
+import { Pre } from '../Elements';
 
 interface Props {
     onChange: (bpm: number) => void;
@@ -12,31 +15,43 @@ interface Props {
 }
 
 export default function ManipulateBpm({ current, onChange, player, song }: Props) {
-    const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(0);
+    const lastNoteEndBeat = Math.max(...song.tracks.map((track) => getLastNoteEndFromSections(track.sections)));
+    const lastNoteEndMs = beatToMs(lastNoteEndBeat, song) + song.gap;
+    const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));
 
     return (
-        <>
-            <EditorRow>
-                <InputGroup>
-                    <span>Desired last note end</span>
-                    <InputGroupInput
-                        type="text"
-                        value={desiredLastNoteEnd}
-                        onChange={(e) => setDesiredLastNoteEnd(+e.target.value)}
-                        placeholder="Desired last note end"
-                        style={{ flex: 0, width: 70 }}
-                    />
-                    {!!desiredLastNoteEnd && (
+        <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
+            <TextField
+                size={'small'}
+                type="text"
+                value={desiredLastNoteEnd}
+                onChange={(e) => setDesiredLastNoteEnd(+e.target.value)}
+                label="Desired last note end time (in milliseconds)"
+                sx={{ flex: 1 }}
+                helperText={
+                    !!desiredLastNoteEnd ? (
                         <>
-                            Est. proper BPM: <Pre>{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
+                            Est. proper Tempo (BPM): <Pre>{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
                         </>
-                    )}
-                </InputGroup>
-            </EditorRow>
-            <EditorRow>
-                <strong>BPM: </strong>
-                <InputGroupInput type="number" value={current} onChange={(e) => onChange(+e.target.value)} step="0.1" />
-            </EditorRow>
-        </>
+                    ) : (
+                        ' '
+                    )
+                }
+            />
+            <TextField
+                size={'small'}
+                type="number"
+                value={current}
+                onChange={(e) => onChange(+e.target.value)}
+                label="Tempo (BPM) of the lyrics"
+                sx={{ flex: 0.5 }}
+                helperText={' '}
+                InputProps={{
+                    inputProps: {
+                        step: '0.1',
+                    },
+                }}
+            />
+        </Box>
     );
 }

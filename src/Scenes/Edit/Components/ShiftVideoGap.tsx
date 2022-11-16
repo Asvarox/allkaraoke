@@ -1,5 +1,5 @@
+import { Box, Button, ButtonGroup, TextField, Typography } from '@mui/material';
 import { PlayerRef } from '../../Game/Singing/Player';
-import { EditorRow, InputGroup, InputGroupButton, InputGroupInput } from '../Elements';
 import { msec } from '../Helpers/formatMs';
 
 interface Props {
@@ -11,22 +11,41 @@ interface Props {
 
 export default function ShiftVideoGap({ current, onChange, player, finalGap }: Props) {
     return (
-        <EditorRow>
-            Video Gap shift (final video gap: {msec((finalGap ?? 0) * 1000, player)})
-            <InputGroup>
-                <InputGroupButton onClick={() => onChange(current - 10)}>-10</InputGroupButton>
-                <InputGroupButton onClick={() => onChange(current - 5)}>-5</InputGroupButton>
-                <InputGroupButton onClick={() => onChange(current - 1)}>-1</InputGroupButton>
-                <InputGroupInput
+        <Box sx={{ flex: 1 }}>
+            <Typography variant={'h6'}>Video Gap shift (final: {msec((finalGap ?? 0) * 1000, player)})</Typography>
+            <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+                <ButtonGroup sx={{ flex: 1 }}>
+                    <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current - 10)}>
+                        -10
+                    </Button>
+                    <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current - 5)}>
+                        -5
+                    </Button>
+                    <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current - 1)}>
+                        -1
+                    </Button>
+                </ButtonGroup>
+                <TextField
+                    sx={{ py: 0, flex: 1 }}
+                    size={'small'}
                     type="text"
                     value={current}
                     onChange={(e) => onChange(+e.target.value)}
-                    placeholder="Gap shift"
+                    label="Seconds"
+                    // helperText={}
                 />
-                <InputGroupButton onClick={() => onChange(current + 1)}>+1</InputGroupButton>
-                <InputGroupButton onClick={() => onChange(current + 5)}>+5</InputGroupButton>
-                <InputGroupButton onClick={() => onChange(current + 10)}>+10</InputGroupButton>
-            </InputGroup>
-        </EditorRow>
+                <ButtonGroup sx={{ flex: 1 }}>
+                    <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current + 1)}>
+                        +1
+                    </Button>
+                    <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current + 5)}>
+                        +5
+                    </Button>
+                    <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current + 10)}>
+                        +10
+                    </Button>
+                </ButtonGroup>
+            </Box>
+        </Box>
     );
 }

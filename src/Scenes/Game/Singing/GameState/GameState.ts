@@ -112,6 +112,10 @@ class PlayerState {
 
     public getTrackIndex = () => this.gameState.getSingSetup()!.players[this.index].track;
     public getTrack = () => this.gameState.getSong()!.tracks[this.getTrackIndex()];
+
+    public resetNotes = () => {
+        this.playerNotes = [];
+    };
 }
 
 class GameState {
@@ -161,6 +165,9 @@ class GameState {
 
     public update = () => {
         this.playerStates.forEach((player) => player.update());
+    };
+    public resetPlayerNotes = () => {
+        this.playerStates.forEach((player) => player.resetNotes());
     };
 }
 

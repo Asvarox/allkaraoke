@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Box, Grid, Typography } from '@mui/material';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash-es';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -50,8 +51,8 @@ const applyChanges = (song: Song, changes: ChangeRecord[]) => ({
     }),
 });
 
-const playerWidth = 850;
-const playerHeight = (700 / 16) * 9;
+const playerWidth = 800;
+const playerHeight = (playerWidth / 16) * 9;
 
 export default function EditSong({ song, onUpdate }: Props) {
     const player = useRef<PlayerRef | null>(null);
@@ -104,9 +105,9 @@ export default function EditSong({ song, onUpdate }: Props) {
     beatLength = getSongBeatLength(newSong);
 
     return (
-        <Container>
-            <Preview>
-                <PlayerContainer data-test="player-container">
+        <Grid container spacing={2}>
+            <Grid item xs={8} data-test="player-container">
+                <Box sx={{ width: playerWidth, height: playerHeight }}>
                     <Player
                         key={playerKey}
                         song={newSong}
@@ -124,15 +125,34 @@ export default function EditSong({ song, onUpdate }: Props) {
                         singSetup={singSetup}
                         onSongEnd={() => undefined}
                     />
-                </PlayerContainer>
-                <Editor>
-                    {player.current && (
-                        <>
-                            <AdjustPlayback
+                </Box>
+            </Grid>
+            <Grid item xs={4}>
+                <Typography variant={'h5'} mb={2}>
+                    Playback controls
+                </Typography>
+                {player.current && (
+                    <AdjustPlayback
+                        player={player.current}
+                        currentTime={currentTime}
+                        effectsEnabled={effectsEnabled}
+                        onEffectsToggle={() => setEffectsEnabled((current) => !current)}
+                    />
+                )}
+                {!player.current && <h2>Start the song to see the manipulation form</h2>}
+            </Grid>
+            {player.current && (
+                <>
+                    <Grid item xs={8}>
+                        {/*<Typography variant={'h5'} mb={2}>*/}
+                        {/*    Basic adjustments*/}
+                        {/*</Typography>*/}
+                        <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
+                            <ShiftVideoGap
                                 player={player.current}
-                                currentTime={currentTime}
-                                effectsEnabled={effectsEnabled}
-                                onEffectsToggle={() => setEffectsEnabled((current) => !current)}
+                                onChange={setVideoGapShift}
+                                current={videoGapShift}
+                                finalGap={newSong.videoGap}
                             />
                             <ShiftGap
                                 player={player.current}
@@ -140,60 +160,79 @@ export default function EditSong({ song, onUpdate }: Props) {
                                 current={gapShift}
                                 finalGap={newSong.gap}
                             />
-                            <ShiftVideoGap
-                                player={player.current}
-                                onChange={setVideoGapShift}
-                                current={videoGapShift}
-                                finalGap={newSong.videoGap}
-                            />
-                            <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
-                            <ManipulateBpm
-                                player={player.current}
-                                onChange={setOverrideBpm}
-                                current={overrideBpm}
-                                song={newSong}
-                            />
-                        </>
-                    )}
-                    {!player.current && <h2>Start the song to see the manipulation form</h2>}
-                    <a
-                        href={`data:application/json;charset=utf-8,${encodeURIComponent(
-                            JSON.stringify(newSong, undefined, 2),
-                        )}`}
-                        download={`${newSong.artist}-${newSong.title}.json`}>
-                        Download
-                    </a>
-                    <button onClick={() => setPlayerKey(Date.now())}>reset player</button>
-                </Editor>
-            </Preview>
-            {player.current && (
-                <EditSection
-                    song={newSong}
-                    currentTime={currentTime}
-                    beatLength={beatLength}
-                    player={player.current}
-                    onChange={setChangeRecords}
-                />
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <HelpText>
+                            Use <strong>Video shift gap</strong> to crop the beginning of the video if it starts with an
+                            intro.
+                        </HelpText>
+                        <HelpText>
+                            Use <strong>Shift gap</strong> to sync the start of the lyrics to the video. You can lower
+                            the <strong>Playback speed</strong> above to make sure you got it just right.
+                        </HelpText>
+                    </Grid>
+                    <Grid item xs={8}>
+                        <Typography variant={'h5'} mb={2}>
+                            Advanced
+                        </Typography>
+                        <ManipulateBpm
+                            player={player.current}
+                            onChange={setOverrideBpm}
+                            current={overrideBpm}
+                            song={newSong}
+                        />
+                        <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <HelpText>
+                            If the lyrics desynchronise over time, probably the tempo (BPM) of the lyrics is wrong.
+                        </HelpText>
+                        <HelpText>
+                            You can either use <strong>Last note end time</strong> - enter the millisecond when the last
+                            note should end (seek through the video for the moment as <strong>Current time</strong>{' '}
+                            panel show the exact millisecond) and a suggested BPM value will appear below.
+                        </HelpText>
+                        <HelpText>
+                            <strong>Tempo (BPM)</strong> field allows to fine-tune the tempo.
+                        </HelpText>
+                    </Grid>
+                    <Grid item xs={8}>
+                        <EditSection
+                            song={newSong}
+                            currentTime={currentTime}
+                            beatLength={beatLength}
+                            player={player.current}
+                            onChange={setChangeRecords}
+                        />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <HelpText>
+                            If the lyrics there are more lyrics than in the video or there are longer/shorter interludes
+                            between verses, you can <strong>Edit verses</strong>.
+                        </HelpText>
+                        <HelpText>Select a verse by clicking on it.</HelpText>
+                        <HelpText>
+                            You can either <strong>Change its start beat</strong> (which will "move in time" the verse
+                            and all subsequent ones) or <strong>Delete it</strong> (it won't affect the timing of other
+                            verses).
+                        </HelpText>
+                        <HelpText>
+                            <strong>List of changes</strong> on the right allows you to see and undo the actions one by
+                            one.
+                        </HelpText>
+                    </Grid>
+                </>
             )}
-        </Container>
+        </Grid>
     );
 }
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
-
-const Editor = styled.div`
-    width: 500px;
-    margin-left: 20px;
-`;
-
-const Preview = styled.div`
-    display: flex;
-`;
-
-const PlayerContainer = styled.div`
-    width: ${playerWidth}px;
-    height: ${playerHeight}px;
+const HelpText = styled.p`
+    font-size: 0.85em;
+    margin-bottom: 1em;
+    line-height: 1.25em;
+    strong {
+        font-weight: bold;
+    }
 `;

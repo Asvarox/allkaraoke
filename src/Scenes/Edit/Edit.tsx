@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Song } from 'interfaces';
 import { useQuery } from 'react-query';
+import Convert from 'Scenes/Convert/Convert';
 import { Link } from 'wouter';
-import EditSong from './EditSong';
 
 interface Props {
     file: string;
@@ -22,7 +22,7 @@ export default function Edit(props: Props) {
                     <a>Return to the song list</a>
                 </Link>
             </div>
-            <EditSong song={song.data} />
+            <Convert song={song.data} />
         </Container>
     );
 }
@@ -30,7 +30,7 @@ export default function Edit(props: Props) {
 const Container = styled.div`
     margin: 0 auto;
     margin-top: 30px;
-    width: 1440px;
+    width: 1260px;
     height: 100%;
     background: white;
 `;

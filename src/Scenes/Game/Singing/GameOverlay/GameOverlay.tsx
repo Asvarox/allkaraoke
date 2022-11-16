@@ -64,17 +64,25 @@ function GameOverlay({
     const overlayHeight = height - 2 * 100 - 80;
     return (
         <Screen>
-            <SkipIntro playerRef={videoPlayerRef} />
-            <SkipOutro onSongEnd={onSongEnd} />
+            {effectsEnabled && (
+                <>
+                    <SkipIntro playerRef={videoPlayerRef} />
+                    <SkipOutro onSongEnd={onSongEnd} />
+                </>
+            )}
             <DurationBar players={players} />
             <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
             <Scores>
-                <span data-test="player-1-score" data-score={GameState.getPlayer(0).getScore()}>
-                    <ScoreText score={GameState.getPlayer(0).getScore()} />
-                </span>
-                <span data-test="player-2-score" data-score={GameState.getPlayer(1).getScore()}>
-                    <ScoreText score={GameState.getPlayer(1).getScore()} />
-                </span>
+                {effectsEnabled && (
+                    <>
+                        <span data-test="player-1-score" data-score={GameState.getPlayer(0).getScore()}>
+                            <ScoreText score={GameState.getPlayer(0).getScore()} />
+                        </span>
+                        <span data-test="player-2-score" data-score={GameState.getPlayer(1).getScore()}>
+                            <ScoreText score={GameState.getPlayer(1).getScore()} />
+                        </span>
+                    </>
+                )}
                 <GameCanvas>
                     <canvas ref={canvas} width={width} height={overlayHeight} />
                 </GameCanvas>
@@ -83,6 +91,8 @@ function GameOverlay({
         </Screen>
     );
 }
+
+export default GameOverlay;
 
 const Screen = styled.div`
     height: 100%;
@@ -110,5 +120,3 @@ const Scores = styled.div`
     flex-direction: column;
     text-align: right;
 `;
-
-export default GameOverlay;

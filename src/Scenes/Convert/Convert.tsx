@@ -1,101 +1,171 @@
 import styled from '@emotion/styled';
-import { NotesSection, Song } from 'interfaces';
-import { ChangeEventHandler, useMemo, useRef, useState } from 'react';
-import EditSong from '../Edit/EditSong';
-import convertTxtToSong from './convertTxtToSong';
-import importUltrastarEsSong from './importUltrastarEsSong';
+import { Box, Button, Step, StepLabel, StyledEngineProvider } from '@mui/material';
+import Stepper from '@mui/material/Stepper';
+import { Song } from 'interfaces';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import convertTxtToSong from 'Scenes/Convert/convertTxtToSong';
+import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
+import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
+import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
 
-interface Props {}
+interface Props {
+    song?: Song;
+}
 
-export default function Convert(props: Props) {
-    const [txtInput, setTxtInput] = useState<string>('');
-    const [videoLink, setVideoLink] = useState<string>('');
-    const [author, setAuthor] = useState<string>('');
-    const [authorUrl, setAuthorUrl] = useState<string>('');
-    const [sourceUrl, setSourceUrl] = useState<string>('');
+const steps = ['basic-data', 'author-and-video', 'sync', 'metadata', 'save'] as const;
+export default function Convert({ song }: Props) {
+    const [currentStep, setCurrentStep] = useState(0);
 
-    const [editedSong, setEditedSong] = useState<Song | undefined>(undefined);
+    const [basicData, setBasicData] = useState<BasicDataEntity>({ sourceUrl: song?.sourceUrl ?? '', txtInput: '' });
+    const [authorAndVid, setAuthorAndVid] = useState<AuthorAndVidEntity>({
+        author: song?.author ?? '',
+        authorUrl: song?.authorUrl ?? '',
+        video: song?.video ?? '',
+    });
+    const [metadataEntity, setMetadataEntity] = useState<SongMetadataEntity>({
+        realBpm: String(song?.realBpm) ?? '',
+        year: song?.year ?? '',
+        language: song?.language ?? '',
+    });
 
-    const onSourceUrlEdit: ChangeEventHandler<HTMLInputElement> = async (e) => {
-        setSourceUrl(e.target.value);
-        if (author === '' && authorUrl === '' && videoLink === '') {
-            const data = await importUltrastarEsSong(e.target.value);
-
-            setAuthor(data.author);
-            setAuthorUrl(data.authorUrl);
-            setVideoLink(data.videoUrl);
-        }
-    };
+    const [editedSong, setEditedSong] = useState<Song | undefined>(song);
 
     const error = useRef<string>('');
     const conversionResult: Song | undefined = useMemo(() => {
         try {
-            return convertTxtToSong(txtInput, videoLink, author, authorUrl, sourceUrl);
+            if (song) return song;
+            return convertTxtToSong(
+                basicData.txtInput,
+                authorAndVid.video,
+                authorAndVid.author,
+                authorAndVid.authorUrl,
+                basicData.sourceUrl,
+            );
         } catch (e: any) {
             error.current = e.message;
             console.error(e);
         }
         return undefined;
-    }, [txtInput, videoLink, author, authorUrl, sourceUrl]);
+    }, [
+        basicData.txtInput,
+        authorAndVid.video,
+        authorAndVid.author,
+        authorAndVid.authorUrl,
+        basicData.sourceUrl,
+        song,
+    ]);
 
-    const searchForVideo = () => {
-        window.open(
-            `https://www.youtube.com/results?search_query=${encodeURIComponent(
-                conversionResult?.artist + ' ' + conversionResult?.title,
-            )}`,
-            '_blank',
-        );
+    useEffect(() => {
+        if (conversionResult && !metadataEntity.year && !metadataEntity.language) {
+            setMetadataEntity((current) => ({
+                ...current,
+                year: conversionResult.year ?? '',
+                language: conversionResult.language ?? '',
+            }));
+        }
+    }, [metadataEntity.year, metadataEntity.language, conversionResult]);
+
+    const isBasicInfoCompleted = !!basicData.txtInput || !!song;
+    const isAuthorAndVidCompleted = !!authorAndVid.video;
+
+    const isNextStepAvailable = steps[currentStep] === 'author-and-video' ? isAuthorAndVidCompleted : true;
+
+    const finalSong = {
+        ...editedSong,
+        ...authorAndVid,
+        ...metadataEntity,
+        realBpm: +metadataEntity.realBpm,
+        sourceUrl: basicData.sourceUrl,
     };
 
-    const jsonPreview = editedSong ?? conversionResult;
-
     return (
-        <Container>
-            {conversionResult &&
-                conversionResult.video.length < 15 &&
-                !!(conversionResult.tracks[0].sections[0] as NotesSection).notes.length && (
-                    <EditSong song={conversionResult} onUpdate={setEditedSong} />
-                )}
-            <Converter>
-                <div style={{ flex: 1 }}>
-                    <Input type="text" value={sourceUrl} onChange={onSourceUrlEdit} placeholder="Source URL" />
-                    <InputGroup>
-                        <InputGroupInput
-                            data-test="input-video-url"
-                            type="text"
-                            value={videoLink}
-                            onChange={(e) => setVideoLink(e.target.value)}
-                            placeholder="Link to Youtube Video"
+        <StyledEngineProvider injectFirst>
+            <Container>
+                <Stepper activeStep={currentStep} sx={{ mb: 2 }}>
+                    <Step key={0} completed={isBasicInfoCompleted}>
+                        <StepLabel>Basic Info</StepLabel>
+                    </Step>
+                    <Step key={1} completed={isAuthorAndVidCompleted}>
+                        <StepLabel>Author and video data</StepLabel>
+                    </Step>
+                    <Step key={2}>
+                        <StepLabel>Sync lyrics to video</StepLabel>
+                    </Step>
+                    <Step key={3}>
+                        <StepLabel>Fill song metadata</StepLabel>
+                    </Step>
+                    <Step key={4}>
+                        <StepLabel>Save</StepLabel>
+                    </Step>
+                </Stepper>
+
+                <form
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
+                    }}>
+                    {steps.at(currentStep) === 'basic-data' && (
+                        <BasicData
+                            shouldAutoImport={!isAuthorAndVidCompleted}
+                            isTxtRequired={!song}
+                            onAutoImport={setAuthorAndVid}
+                            onChange={setBasicData}
+                            data={basicData}
                         />
-                        <InputGroupButton onClick={searchForVideo}>Search for video</InputGroupButton>
-                    </InputGroup>
-                    <Input
-                        type="text"
-                        value={author}
-                        onChange={(e) => setAuthor(e.target.value)}
-                        placeholder="Author name"
-                    />
-                    <Input
-                        type="text"
-                        value={authorUrl}
-                        onChange={(e) => setAuthorUrl(e.target.value)}
-                        placeholder="Author URL"
-                    />
-                    <TxtInput
-                        onChange={(e) => setTxtInput(fixDiacritics(e.target.value))}
-                        value={txtInput}
-                        data-test="input-txt"
-                    />
-                </div>
-                <div style={{ flex: 1 }}>
-                    <JsonOutput
-                        data-test="output"
-                        disabled
-                        value={jsonPreview ? JSON.stringify(jsonPreview, undefined, 2) : error.current}
-                    />
-                </div>
-            </Converter>
-        </Container>
+                    )}
+
+                    {steps.at(currentStep) === 'author-and-video' && (
+                        <AuthorAndVid
+                            songArtist={conversionResult?.artist}
+                            songTitle={conversionResult?.title}
+                            onChange={setAuthorAndVid}
+                            data={authorAndVid}
+                        />
+                    )}
+
+                    {steps.at(currentStep) === 'sync' && (
+                        <SyncLyricsToVideo onChange={setEditedSong} data={conversionResult} />
+                    )}
+
+                    {steps.at(currentStep) === 'metadata' && (
+                        <SongMetadata
+                            onChange={setMetadataEntity}
+                            data={metadataEntity}
+                            songArtist={conversionResult?.artist}
+                            songTitle={conversionResult?.title}
+                        />
+                    )}
+                    <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <Button
+                            sx={{ mt: 2, align: 'right' }}
+                            onClick={() => setCurrentStep((current) => current - 1)}
+                            disabled={currentStep === 0}>
+                            Previous
+                        </Button>
+                        {steps.at(currentStep) === 'save' ? (
+                            <Button
+                                href={`data:application/json;charset=utf-8,${encodeURIComponent(
+                                    JSON.stringify(finalSong, undefined, 2),
+                                )}`}
+                                download={`${editedSong?.artist}-${editedSong?.title}.json`}
+                                sx={{ mt: 2, align: 'right' }}
+                                variant={'contained'}>
+                                Download
+                            </Button>
+                        ) : (
+                            <Button
+                                sx={{ mt: 2, align: 'right' }}
+                                variant={'contained'}
+                                type="submit"
+                                disabled={!isNextStepAvailable || currentStep === steps.length - 1}>
+                                Next
+                            </Button>
+                        )}
+                    </Box>
+                </form>
+            </Container>
+        </StyledEngineProvider>
     );
 }
 
@@ -103,72 +173,6 @@ const Container = styled.div`
     background: white;
     margin: 0 auto;
     margin-top: 30px;
-    width: 1440px;
+    width: 1260px;
     height: 100%;
 `;
-
-const InputGroup = styled.div`
-    display: flex;
-`;
-
-const InputGroupButton = styled.button`
-    flex: 1;
-`;
-
-const InputGroupInput = styled.input`
-    flex: 1;
-    min-width: 100px;
-    padding: 3px;
-`;
-
-const Converter = styled.div`
-    display: flex;
-`;
-
-const Input = styled.input`
-    width: 720px;
-    padding: 3px;
-`;
-
-const TxtInput = styled.textarea`
-    width: 720px;
-    height: 500px;
-`;
-
-const JsonOutput = styled.textarea`
-    width: 720px;
-    height: 100%;
-    height: 500px;
-    flex: 1;
-`;
-
-function fixDiacritics(txt: string): string {
-    return txt
-        .replaceAll('È', 'é')
-        .replaceAll('í', "'")
-        .replaceAll('¥', "'")
-
-        .replaceAll('¯', 'Ż')
-        .replaceAll('¹', 'ą')
-        .replaceAll('π', 'ą')
-        .replaceAll('ê', 'ę')
-        .replaceAll('Í', 'ę')
-        .replaceAll('Œ', 'Ś')
-        .replaceAll('å', 'Ś')
-        .replaceAll('œ', 'ś')
-        .replaceAll('ú', 'ś')
-        .replaceAll('æ', 'ć')
-        .replaceAll('Ê', 'ć')
-        .replaceAll('¿', 'ż')
-        .replaceAll('ø', 'ż')
-        .replaceAll('Ø', 'Ż')
-        .replaceAll('ñ', 'ń')
-        .replaceAll('Ò', 'ń')
-        .replaceAll('³', 'ł')
-        .replaceAll('≥', 'ł')
-        .replaceAll('≥', 'ł')
-        .replaceAll('£', 'Ł')
-        .replaceAll('Û', 'ó')
-        .replaceAll('ü', 'ź')
-        .replaceAll('Ÿ', 'ź');
-}

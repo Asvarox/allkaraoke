@@ -16,6 +16,15 @@ function getPropertyValueFromTxt(txt: string, key: string): string | undefined {
 
 const LINE_BREAK_RELATIVE_REGEXP = /- \d+ \d+/;
 
+export function getVideoId(url: string) {
+    try {
+        const linkUrl = new URL(url);
+        return linkUrl.searchParams.get('v') || false;
+    } catch (e: any) {
+        return false;
+    }
+}
+
 export default function convertTxtToSong(
     text: string,
     videoLink: string,
