@@ -3725,6 +3725,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reach/observe-rect@npm:^1.1.0":
+  version: 1.2.0
+  resolution: "@reach/observe-rect@npm:1.2.0"
+  checksum: 7dd903eeaad0e22c6d973bd26265d91eadba56ab5134701ceb3e85214db75339fae94aa7e8b88a65e8daa64bc7cf1b915d4ffcdfd324466b561dc6adc3c6e070
+  languageName: node
+  linkType: hard
+
 "@rollup/pluginutils@npm:^4.2.0, @rollup/pluginutils@npm:^4.2.1":
   version: 4.2.1
   resolution: "@rollup/pluginutils@npm:4.2.1"
@@ -5023,6 +5030,34 @@ __metadata:
   dependencies:
     defer-to-connect: ^2.0.1
   checksum: fc9cb993e808806692e4a3337c90ece0ec00c89f4b67e3652a356b89730da98bc824273a6d67ca84d5f33cd85f317dcd5ce39d8cc0a2f060145a608a7cb8ce92
+  languageName: node
+  linkType: hard
+
+"@tanstack/match-sorter-utils@npm:8.5.14":
+  version: 8.5.14
+  resolution: "@tanstack/match-sorter-utils@npm:8.5.14"
+  dependencies:
+    remove-accents: 0.4.2
+  checksum: 9db789bc70db6e04c2759c32d497bd3cfdf6fe2ed5afff52046a8c739d00e8df40c74b21ffaeaf70c7e2ede02578ee748c950117190fe4e7a7bd72ce1134d8d9
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-table@npm:8.5.27":
+  version: 8.5.27
+  resolution: "@tanstack/react-table@npm:8.5.27"
+  dependencies:
+    "@tanstack/table-core": 8.5.27
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 7b58c39ebf08381c6debb5f503e224fc82fd8c1dbbd3e92c91c39d2eed8a5510c7284d00c0ded1c4f11045c57dc7af78bd6cac9de7c1b6cf8bfb5f6838f9673f
+  languageName: node
+  linkType: hard
+
+"@tanstack/table-core@npm:8.5.27":
+  version: 8.5.27
+  resolution: "@tanstack/table-core@npm:8.5.27"
+  checksum: 83614456f8710496dbb5a483dc475ab4c203a6075a082b13cb29fdc182c6ec70f9556cc8a3761aa88f503233c33f68f2879eccca9e2d153b0e5cb5b42a4602bf
   languageName: node
   linkType: hard
 
@@ -13309,6 +13344,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"material-react-table@npm:^1.3.9":
+  version: 1.3.9
+  resolution: "material-react-table@npm:1.3.9"
+  dependencies:
+    "@tanstack/match-sorter-utils": 8.5.14
+    "@tanstack/react-table": 8.5.27
+    react-virtual: ^2.10.4
+  peerDependencies:
+    "@emotion/react": ">=11"
+    "@emotion/styled": ">=11"
+    "@mui/icons-material": ">=5"
+    "@mui/material": ">=5"
+    react: ">=17.0"
+    react-dom: ">=17.0"
+  checksum: 34eff2d6e111bfd98ee83943e7654141d12349a32ba8fd6c46ef0f5498232e5f5940013cf82560b3e2b38e7502bdaad440cfe0d681adf76fba451923c7b72444
+  languageName: node
+  linkType: hard
+
 "mdast-util-definitions@npm:^4.0.0":
   version: 4.0.0
   resolution: "mdast-util-definitions@npm:4.0.0"
@@ -14701,6 +14754,7 @@ __metadata:
     lint-staged: ">=10"
     localforage: ^1.10.0
     lodash-es: ^4.17.21
+    material-react-table: ^1.3.9
     memoize-one: ^6.0.0
     musicbrainz-api: ^0.8.0
     peerjs: ^2.0.0-beta.3
@@ -15842,6 +15896,17 @@ __metadata:
     react: ^16.8.0  || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
   checksum: 0889da919b49a186de375ec15d2778b954ae981c523acd17dd496e4a4da7b6190efe7993491e1b85fdd6de3e745d08a4eaba4caa35408d570b5f1de550f35d11
+  languageName: node
+  linkType: hard
+
+"react-virtual@npm:^2.10.4":
+  version: 2.10.4
+  resolution: "react-virtual@npm:2.10.4"
+  dependencies:
+    "@reach/observe-rect": ^1.1.0
+  peerDependencies:
+    react: ^16.6.3 || ^17.0.0
+  checksum: 1bebc741b01057829a7d7f29256114caecf0597d41b187cb41e75af77f24a87c780bc1a81ec11205b78ee2e9c801fc5e36b20a9e1ab7ddc70a18dd95417795f8
   languageName: node
   linkType: hard
 

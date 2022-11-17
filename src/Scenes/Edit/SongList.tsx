@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
+import { Edit as EditIcon } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
 import { SongPreview } from 'interfaces';
+import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
+import { useMemo } from 'react';
 import { useQuery } from 'react-query';
-import { Link } from 'wouter';
 
 interface Props {}
 
@@ -10,25 +13,49 @@ export default function SongList(props: Props) {
         fetch('./songs/index.json').then((response) => response.json()),
     );
 
+    const columns: MRT_ColumnDef<SongPreview>[] = useMemo(
+        () => [
+            {
+                accessorKey: 'artist',
+                header: 'Artist',
+            },
+            {
+                accessorKey: 'title',
+                header: 'Title',
+            },
+            {
+                accessorKey: 'year',
+                header: 'Year',
+            },
+            {
+                accessorKey: 'language',
+                header: 'Language',
+            },
+        ],
+        [],
+    );
     if (!songList.data) return <>Loading</>;
 
     return (
         <Container>
             <h3>{songList.data.length} songs</h3>
-            <ul>
-                {songList.data.map((song) => (
-                    <li key={song.file}>
-                        <Link to={`/edit/${encodeURIComponent(song.file)}`}>
-                            <LinkView>
-                                {song.artist} - {song.title}
-                                <Metadata>
-                                    [{song.language ?? 'MISSING LANGUAGE'}] [{song.year ?? 'MISSING YEAR'}]
-                                </Metadata>
-                            </LinkView>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+
+            <MaterialReactTable
+                data={songList.data}
+                columns={columns}
+                getRowId={(song) => song.file}
+                positionActionsColumn="last"
+                enableRowActions
+                renderRowActions={({ row }) => (
+                    <IconButton href={`#/edit/${encodeURIComponent(row.original.file)}`}>
+                        <EditIcon />
+                    </IconButton>
+                )}
+                initialState={{ density: 'compact' }}
+                enableDensityToggle={false}
+                enableFullScreenToggle={false}
+                enablePagination={false}
+            />
         </Container>
     );
 }
@@ -36,21 +63,7 @@ export default function SongList(props: Props) {
 const Container = styled.div`
     margin: 0 auto;
     height: 100%;
-    width: 1100px;
+    width: 1260px;
     background: white;
     padding: 20px;
-`;
-
-const Metadata = styled.span`
-    color: grey;
-    font-size: 12px;
-    float: right;
-    padding-right: 300px;
-`;
-
-const LinkView = styled.a`
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    border-bottom: 1px dotted grey;
 `;
