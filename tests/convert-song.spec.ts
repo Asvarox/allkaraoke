@@ -21,10 +21,8 @@ test('Convert song', async ({ page }) => {
     await expect(page.locator('[data-test="basic-data"]')).toBeVisible();
     await expect(page.locator('[data-test="previous-button"]')).toBeDisabled();
 
-    await page.locator('[data-test="source-url"] input').fill('');
-    await page.locator('[data-test="source-url"] input').type(FINAL_SOURCE_URL);
+    await page.locator('[data-test="source-url"] input').fill(FINAL_SOURCE_URL);
 
-    await page.locator('[data-test="input-txt"]').fill('');
     await page.locator('[data-test="input-txt"]').fill(txtfile);
 
     await page.locator('[data-test="next-button"]').click();
@@ -41,14 +39,11 @@ test('Convert song', async ({ page }) => {
     // Author and vid
     await expect(page.locator('[data-test="search-video"]')).not.toBeDisabled();
 
-    await page.locator('[data-test="author-name"] input').fill('');
-    await page.locator('[data-test="author-name"] input').type(FINAL_AUTHOR);
+    await page.locator('[data-test="author-name"] input').fill(FINAL_AUTHOR);
 
-    await page.locator('[data-test="author-url"] input').fill('');
-    await page.locator('[data-test="author-url"] input').type(FINAL_AUTHOR_URL);
+    await page.locator('[data-test="author-url"] input').fill(FINAL_AUTHOR_URL);
 
-    await page.locator('[data-test="video-url"] input').fill('');
-    await page.locator('[data-test="video-url"] input').type(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
+    await page.locator('[data-test="video-url"] input').fill(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
 
     // Make sure the data stays
     await page.locator('[data-test="next-button"]').click();
@@ -140,15 +135,12 @@ test('Convert song', async ({ page }) => {
 
     // Song metadata
     await expect(page.locator('[data-test="song-language"] input')).toHaveValue('English');
-    await page.locator('[data-test="song-language"] input').fill('');
-    await page.locator('[data-test="song-language"] input').type(FINAL_LANG);
+    await page.locator('[data-test="song-language"] input').fill(FINAL_LANG);
 
     await expect(page.locator('[data-test="release-year"] input')).toHaveValue('1992');
-    await page.locator('[data-test="release-year"] input').fill('');
-    await page.locator('[data-test="release-year"] input').type(FINAL_YEAR);
+    await page.locator('[data-test="release-year"] input').fill(FINAL_YEAR);
 
-    await page.locator('[data-test="song-bpm"] input').fill('');
-    await page.locator('[data-test="song-bpm"] input').type(FINAL_SONG_BPM);
+    await page.locator('[data-test="song-bpm"] input').fill(FINAL_SONG_BPM);
 
     // Download song
     await expect(page.locator('[data-test="next-button"]')).not.toBeVisible();

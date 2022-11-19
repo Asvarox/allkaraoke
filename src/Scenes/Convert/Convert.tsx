@@ -21,7 +21,7 @@ export default function Convert({ song }: Props) {
     const [authorAndVid, setAuthorAndVid] = useState<AuthorAndVidEntity>({
         author: song?.author ?? '',
         authorUrl: song?.authorUrl ?? '',
-        video: song?.video ?? '',
+        video: song?.video ? `https://www.youtube.com/watch?v=${song.video}` : '',
     });
     const [metadataEntity, setMetadataEntity] = useState<SongMetadataEntity>({
         realBpm: String(song?.realBpm) ?? '',
