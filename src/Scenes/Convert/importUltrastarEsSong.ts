@@ -5,9 +5,9 @@ export default async function importSongFromSource(url: string) {
 
     if (urlObj.host === 'usdb.animux.de') {
         return importUsDbAnimuxSong(url, urlObj);
+    } else if (urlObj.host === 'ultrastar-es.org') {
+        return importUltrastarEsSong(url);
     }
-
-    return importUltrastarEsSong(url);
 }
 
 async function importUltrastarEsSong(url: string): Promise<AuthorAndVidEntity> {

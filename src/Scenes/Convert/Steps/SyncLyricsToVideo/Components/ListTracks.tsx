@@ -1,5 +1,5 @@
 import { Song } from 'interfaces';
-import { PlayerRef } from '../../Game/Singing/Player';
+import { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {
     player: PlayerRef;

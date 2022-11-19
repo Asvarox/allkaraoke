@@ -3,20 +3,20 @@ import { Box, Grid, Typography } from '@mui/material';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash-es';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import getSongBeatLength from '../Game/Singing/GameState/Helpers/getSongBeatLength';
-import isNotesSection from '../Game/Singing/Helpers/isNotesSection';
-import { getFirstNoteStartFromSections } from '../Game/Singing/Helpers/notesSelectors';
-import Player, { PlayerRef } from '../Game/Singing/Player';
-import AdjustPlayback from './Components/AdjustPlayback';
-import EditSection, { ChangeRecord } from './Components/EditSection';
-import ListTracks from './Components/ListTracks';
-import ManipulateBpm from './Components/ManipulateBpm';
-import ShiftGap from './Components/ShiftGap';
-import ShiftVideoGap from './Components/ShiftVideoGap';
-import addHeadstart from './Helpers/addHeadstart';
-import normaliseGap from './Helpers/normaliseGap';
-import normaliseLyricSpaces from './Helpers/normaliseLyricSpaces';
-import normaliseSectionPaddings from './Helpers/normaliseSectionPaddings';
+import AdjustPlayback from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
+import EditSection, { ChangeRecord } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
+import ListTracks from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ListTracks';
+import ManipulateBpm from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
+import ShiftGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ShiftGap';
+import ShiftVideoGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ShiftVideoGap';
+import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHeadstart';
+import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
+import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
+import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
+import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
+import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
+import { getFirstNoteStartFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {
     song: Song;
@@ -181,6 +181,7 @@ export default function EditSong({ song, onUpdate }: Props) {
                             onChange={setOverrideBpm}
                             current={overrideBpm}
                             song={newSong}
+                            key={newSong.gap}
                         />
                         <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
                     </Grid>

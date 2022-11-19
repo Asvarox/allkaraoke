@@ -1,11 +1,11 @@
 import { Box, TextField } from '@mui/material';
 import { Song } from 'interfaces';
 import { useState } from 'react';
+import calculateProperBPM from 'Scenes/Convert/calculateProperBpm';
+import { Pre } from 'Scenes/Convert/Elements';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
 import { getLastNoteEndFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
-import calculateProperBPM from '../../Convert/calculateProperBpm';
-import { PlayerRef } from '../../Game/Singing/Player';
-import { Pre } from '../Elements';
+import { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {
     onChange: (bpm: number) => void;
@@ -22,8 +22,9 @@ export default function ManipulateBpm({ current, onChange, player, song }: Props
     return (
         <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
             <TextField
+                data-test="desired-end"
                 size={'small'}
-                type="text"
+                type="number"
                 value={desiredLastNoteEnd}
                 onChange={(e) => setDesiredLastNoteEnd(+e.target.value)}
                 label="Desired last note end time (in milliseconds)"
@@ -31,7 +32,8 @@ export default function ManipulateBpm({ current, onChange, player, song }: Props
                 helperText={
                     !!desiredLastNoteEnd ? (
                         <>
-                            Est. proper Tempo (BPM): <Pre>{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
+                            Est. proper Tempo (BPM):{' '}
+                            <Pre data-test="desired-bpm">{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
                         </>
                     ) : (
                         ' '
@@ -39,6 +41,7 @@ export default function ManipulateBpm({ current, onChange, player, song }: Props
                 }
             />
             <TextField
+                data-test="change-bpm"
                 size={'small'}
                 type="number"
                 value={current}

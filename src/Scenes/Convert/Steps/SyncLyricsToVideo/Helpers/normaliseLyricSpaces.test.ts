@@ -1,5 +1,5 @@
+import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
 import { generateNote, generateSong } from 'testUtilts';
-import normaliseLyricSpaces from './normaliseLyricSpaces';
 
 describe('normaliseLyricSpaces', () => {
     it('should move prefix spaces to end of previous syllabe', () => {

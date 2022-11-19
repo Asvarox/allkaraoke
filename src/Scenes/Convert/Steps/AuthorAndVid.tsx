@@ -29,8 +29,9 @@ export default function AuthorAndVid(props: Props) {
     const videoId = getVideoId(props.data.video);
 
     return (
-        <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="author-and-vid">
             <TextField
+                data-test="author-name"
                 sx={{ mt: 2 }}
                 value={props.data.author}
                 onChange={(e) => props.onChange({ ...props.data, author: e.target.value })}
@@ -39,6 +40,7 @@ export default function AuthorAndVid(props: Props) {
                 size="small"
             />
             <TextField
+                data-test="author-url"
                 sx={{ mt: 2 }}
                 value={props.data.authorUrl}
                 onChange={(e) => props.onChange({ ...props.data, authorUrl: e.target.value })}
@@ -48,6 +50,7 @@ export default function AuthorAndVid(props: Props) {
             />
             <Box sx={{ display: 'flex', flexDirection: 'row', mt: 2, alignItems: 'center', width: '100%' }}>
                 <TextField
+                    data-test="video-url"
                     required
                     value={props.data.video}
                     onChange={(e) => props.onChange({ ...props.data, video: e.target.value })}
@@ -66,6 +69,7 @@ export default function AuthorAndVid(props: Props) {
                                 }>
                                 <span>
                                     <Button
+                                        data-test="search-video"
                                         color={'secondary'}
                                         variant={'contained'}
                                         onClick={searchForVideo}

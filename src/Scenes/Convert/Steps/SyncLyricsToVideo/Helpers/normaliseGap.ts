@@ -1,7 +1,7 @@
 import { Section, Song } from 'interfaces';
-import getSongBeatLength from '../../Game/Singing/GameState/Helpers/getSongBeatLength';
-import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
-import { getFirstNoteStartFromSections } from '../../Game/Singing/Helpers/notesSelectors';
+import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
+import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
+import { getFirstNoteStartFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
 
 const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
     sections

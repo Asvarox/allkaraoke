@@ -1,7 +1,7 @@
 import { Section, Song } from 'interfaces';
-import getSongBeatLength from '../../Game/Singing/GameState/Helpers/getSongBeatLength';
-import isNotesSection from '../../Game/Singing/Helpers/isNotesSection';
-import { HEADSTART_MS } from './normaliseSectionPaddings';
+import { HEADSTART_MS } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
+import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
+import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
 
 const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
     sections.map((section, index) => {

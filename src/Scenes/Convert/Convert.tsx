@@ -13,7 +13,7 @@ interface Props {
     song?: Song;
 }
 
-const steps = ['basic-data', 'author-and-video', 'sync', 'metadata', 'save'] as const;
+const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 export default function Convert({ song }: Props) {
     const [currentStep, setCurrentStep] = useState(0);
 
@@ -71,10 +71,11 @@ export default function Convert({ song }: Props) {
 
     const isNextStepAvailable = steps[currentStep] === 'author-and-video' ? isAuthorAndVidCompleted : true;
 
-    const finalSong = {
-        ...editedSong,
-        ...authorAndVid,
+    const finalSong: Song = {
+        ...editedSong!,
         ...metadataEntity,
+        author: authorAndVid.author,
+        authorUrl: authorAndVid.authorUrl,
         realBpm: +metadataEntity.realBpm,
         sourceUrl: basicData.sourceUrl,
     };
@@ -94,9 +95,6 @@ export default function Convert({ song }: Props) {
                     </Step>
                     <Step key={3}>
                         <StepLabel>Fill song metadata</StepLabel>
-                    </Step>
-                    <Step key={4}>
-                        <StepLabel>Save</StepLabel>
                     </Step>
                 </Stepper>
 
@@ -138,23 +136,27 @@ export default function Convert({ song }: Props) {
                     )}
                     <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <Button
+                            data-test="previous-button"
                             sx={{ mt: 2, align: 'right' }}
                             onClick={() => setCurrentStep((current) => current - 1)}
                             disabled={currentStep === 0}>
                             Previous
                         </Button>
-                        {steps.at(currentStep) === 'save' ? (
+                        {steps.at(currentStep) === 'metadata' ? (
                             <Button
+                                data-test="download-button"
                                 href={`data:application/json;charset=utf-8,${encodeURIComponent(
                                     JSON.stringify(finalSong, undefined, 2),
                                 )}`}
                                 download={`${editedSong?.artist}-${editedSong?.title}.json`}
                                 sx={{ mt: 2, align: 'right' }}
+                                type="submit"
                                 variant={'contained'}>
                                 Download
                             </Button>
                         ) : (
                             <Button
+                                data-test="next-button"
                                 sx={{ mt: 2, align: 'right' }}
                                 variant={'contained'}
                                 type="submit"

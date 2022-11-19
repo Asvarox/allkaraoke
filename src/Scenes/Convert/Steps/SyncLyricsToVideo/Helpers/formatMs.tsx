@@ -1,7 +1,7 @@
 import { Button, Tooltip } from '@mui/material';
+import { Pre } from 'Scenes/Convert/Elements';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import { PlayerRef } from '../../Game/Singing/Player';
-import { Pre } from '../Elements';
+import { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 const formatMs = (msec: number) => {
     const minutes = Math.floor(msec / 1000 / 60);

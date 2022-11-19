@@ -1,6 +1,6 @@
 import { Box, Button, ButtonGroup, TextField, Typography } from '@mui/material';
-import { PlayerRef } from '../../Game/Singing/Player';
-import { msec } from '../Helpers/formatMs';
+import { msec } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
+import { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {
     onChange: (shift: number) => void;
@@ -15,13 +15,13 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
             <Typography variant={'h6'}>Gap shift (final: {msec(finalGap, player)})</Typography>
             <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
                 <ButtonGroup sx={{ flex: 1 }}>
-                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 1000)}>
+                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 1000)} data-test="shift-gap-1s">
                         -1000
                     </Button>
-                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 500)}>
+                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 500)} data-test="shift-gap-0.5s">
                         -500
                     </Button>
-                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 50)}>
+                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 50)} data-test="shift-gap-0.05s">
                         -50
                     </Button>
                 </ButtonGroup>
@@ -32,15 +32,16 @@ export default function ShiftGap({ current, onChange, player, finalGap }: Props)
                     value={current}
                     onChange={(e) => onChange(+e.target.value)}
                     label="Miliseconds"
+                    data-test="shift-gap"
                 />
                 <ButtonGroup sx={{ flex: 1 }}>
-                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current + 50)}>
+                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current + 50)} data-test="shift-gap+0.05s">
                         +50
                     </Button>
-                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current + 500)}>
+                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current + 500)} data-test="shift-gap+0.5s">
                         +500
                     </Button>
-                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current + 1000)}>
+                    <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current + 1000)} data-test="shift-gap+1s">
                         +1000
                     </Button>
                 </ButtonGroup>

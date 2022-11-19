@@ -28,8 +28,7 @@ export default function Edit(props: Props) {
 }
 
 const Container = styled.div`
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
     width: 1260px;
     height: 100%;
     background: white;

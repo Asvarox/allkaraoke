@@ -22,12 +22,12 @@ export default function BasicData(props: Props) {
         if (props.shouldAutoImport) {
             const data = await importUltrastarEsSong(e.target.value);
 
-            props.onAutoImport(data);
+            if (data) props.onAutoImport(data);
         }
     };
 
     return (
-        <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="basic-data">
             <TextField
                 sx={{ mt: 2 }}
                 value={props.data.sourceUrl}
@@ -35,6 +35,7 @@ export default function BasicData(props: Props) {
                 label="Source URL"
                 fullWidth
                 size="small"
+                data-test="source-url"
             />
             {props.isTxtRequired && (
                 <TextField
@@ -46,9 +47,13 @@ export default function BasicData(props: Props) {
                     label="Song's .TXT file contents"
                     onChange={(e) => props.onChange({ ...props.data, txtInput: fixDiacritics(e.target.value) })}
                     value={props.data.txtInput}
-                    data-test="input-txt"
                     maxRows={15}
                     minRows={15}
+                    InputProps={{
+                        inputProps: {
+                            'data-test': 'input-txt',
+                        },
+                    }}
                 />
             )}
         </Box>

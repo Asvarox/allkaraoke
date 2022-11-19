@@ -23,7 +23,7 @@ export default function SongMetadata(props: Props) {
     const isSearchableForVideo = !!props.songTitle && !!props.songArtist;
 
     return (
-        <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="song-metadata">
             <TextField
                 sx={{ mt: 2 }}
                 value={props.data.language}
@@ -32,8 +32,10 @@ export default function SongMetadata(props: Props) {
                 fullWidth
                 size="small"
                 required
+                data-test="song-language"
             />
             <TextField
+                data-test="release-year"
                 sx={{ mt: 2 }}
                 value={props.data.year}
                 onChange={(e) => props.onChange({ ...props.data, year: e.target.value })}
@@ -55,6 +57,7 @@ export default function SongMetadata(props: Props) {
             />
             <Box sx={{ display: 'flex', flexDirection: 'row', mt: 2, alignItems: 'center', width: '100%' }}>
                 <TextField
+                    data-test="song-bpm"
                     value={props.data.realBpm}
                     onChange={(e) => props.onChange({ ...props.data, realBpm: e.target.value })}
                     label="Song (real) BPM"

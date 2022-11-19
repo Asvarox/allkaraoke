@@ -1,5 +1,5 @@
+import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
 import { generateNote, generateSong } from 'testUtilts';
-import normaliseSectionPaddings from './normaliseSectionPaddings';
 
 describe('normaliseSectionPaddings', () => {
     it('should add max possible padding to the next section if theres no space to optimal one', () => {
