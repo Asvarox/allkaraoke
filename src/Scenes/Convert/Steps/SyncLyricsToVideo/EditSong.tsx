@@ -21,6 +21,7 @@ import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
 interface Props {
     song: Song;
     onUpdate?: (song: Song) => void;
+    visible: boolean;
 }
 
 const shiftGap = (song: Song, gapShift: number): Song => ({ ...song, gap: song.gap + gapShift });
@@ -54,7 +55,7 @@ const applyChanges = (song: Song, changes: ChangeRecord[]) => ({
 const playerWidth = 800;
 const playerHeight = (playerWidth / 16) * 9;
 
-export default function EditSong({ song, onUpdate }: Props) {
+export default function EditSong({ song, onUpdate, visible }: Props) {
     const player = useRef<PlayerRef | null>(null);
     const [currentTime, setCurrentTime] = useState<number>(0);
 
@@ -105,7 +106,7 @@ export default function EditSong({ song, onUpdate }: Props) {
     beatLength = getSongBeatLength(newSong);
 
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{ display: visible ? undefined : 'none' }}>
             <Grid item xs={8} data-test="player-container">
                 <Box sx={{ width: playerWidth, height: playerHeight }}>
                     <Player

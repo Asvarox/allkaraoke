@@ -122,8 +122,12 @@ export default function Convert({ song }: Props) {
                         />
                     )}
 
-                    {steps.at(currentStep) === 'sync' && (
-                        <SyncLyricsToVideo onChange={setEditedSong} data={conversionResult} />
+                    {conversionResult && ( // Keep the component even if in different step so it preserves the state
+                        <SyncLyricsToVideo
+                            onChange={setEditedSong}
+                            data={conversionResult}
+                            visible={steps.at(currentStep) === 'sync'}
+                        />
                     )}
 
                     {steps.at(currentStep) === 'metadata' && (

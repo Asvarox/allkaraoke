@@ -130,6 +130,13 @@ test('Convert song', async ({ page }) => {
     await page.locator('[data-test="delete-section"]').click();
 
     await page.locator('[data-test="next-button"]').click();
+    await page.locator('[data-test="previous-button"]').click();
+
+    await expect(page.locator('[data-test="shift-video-gap"] input')).toHaveValue('10');
+    await expect(page.locator('[data-test="shift-gap"] input')).toHaveValue('1000');
+    await expect(page.locator('[data-test="change-bpm"] input')).toHaveValue(FINAL_BPM);
+
+    await page.locator('[data-test="next-button"]').click();
 
     // Song metadata
     await expect(page.locator('[data-test="song-language"] input')).toHaveValue('English');
