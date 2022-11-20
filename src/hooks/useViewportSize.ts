@@ -13,7 +13,7 @@ export default function useViewportSize() {
     function handleResize() {
         setWindowSize({
             width: window.document.body.clientWidth,
-            height: window.visualViewport.height,
+            height: window.visualViewport!.height,
         });
     }
 

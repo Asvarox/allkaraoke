@@ -114,7 +114,7 @@ const Headstart = ({ percent, color }: { percent: number; color: string }) => (
 
 const LyricContainer = styled.span<{ type: Note['type'] }>`
     font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
-    position: relative;
+    //position: relative;
 `;
 
 const LyricActiveContainer = styled.span`
