@@ -181,10 +181,11 @@ const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
     padding: ${padding}px;
     padding-left: ${leftPad}px;
     padding-right: ${rightPad}px;
-    overflow-y: overlay;
+    overflow-y: auto;
     overflow-x: clip;
     box-sizing: border-box;
     min-height: 100vh;
+    max-height: 100vh;
     ::-webkit-scrollbar {
         display: none;
     }

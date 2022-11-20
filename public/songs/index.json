@@ -2210,7 +2210,7 @@
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=Down%20with%20the%20sickness",
-    "realBpm": 178,
+    "realBpm": 90,
     "tracks": [
       {
         "start": 317
@@ -2553,30 +2553,6 @@
     "file": "Enrique Iglesias-Bailamos.json",
     "tracksCount": 1,
     "search": "enriqueiglesiasbailamos"
-  },
-  {
-    "title": "Bailando",
-    "artist": "Enrique Iglesias",
-    "bpm": 400,
-    "bar": 4,
-    "gap": 12728,
-    "video": "b8I-7Wk_Vbc",
-    "year": "2012",
-    "genre": "Pop",
-    "language": "English",
-    "videoGap": 0,
-    "author": "QuantenspringerXXX",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=122934",
-    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18544",
-    "realBpm": 91,
-    "tracks": [
-      {
-        "start": 0
-      }
-    ],
-    "file": "Enrique Iglesias-Bailando.json",
-    "tracksCount": 1,
-    "search": "enriqueiglesiasbailando"
   },
   {
     "title": "Hero",
@@ -3265,6 +3241,7 @@
     "title": "Let It Go",
     "video": "moSFlvxnbgk",
     "language": "English",
+    "videoGap": 0,
     "gap": 14859,
     "bpm": 275,
     "bar": 4,
@@ -9211,7 +9188,6 @@
     "bpm": 210,
     "bar": 4,
     "year": "2011",
-    "beatLength": 286,
     "realBpm": 103,
     "tracks": [
       {
