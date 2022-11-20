@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { Song } from 'interfaces';
-import { useQuery } from 'react-query';
+import useSong from 'hooks/songs/useSong';
 import Convert from 'Scenes/Convert/Convert';
 import { Link } from 'wouter';
 
@@ -9,9 +8,7 @@ interface Props {
 }
 
 export default function Edit(props: Props) {
-    const song = useQuery<Song>(`song-${props.file}-edit`, () =>
-        fetch(`./songs/${props.file}`).then((response) => response.json()),
-    );
+    const song = useSong(props.file);
 
     if (!song.data) return <>Loading</>;
 

@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
+import useSongIndex from 'hooks/songs/useSongIndex';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
-import { useQuery } from 'react-query';
 import { Link } from 'wouter';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
@@ -16,9 +16,7 @@ interface Props {}
 function Jukebox(props: Props) {
     const { width, height } = useViewportSize();
     const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
-    const songList = useQuery<SongPreview[]>('songList', () =>
-        fetch('./songs/index.json').then((response) => response.json()),
-    );
+    const songList = useSongIndex();
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
     const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });

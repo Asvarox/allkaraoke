@@ -1,7 +1,7 @@
+import useSongIndex from 'hooks/songs/useSongIndex';
 import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo, useState } from 'react';
-import { useQuery } from 'react-query';
 import clearString from '../../../../utils/clearString';
 
 export interface SongGroup {
@@ -101,9 +101,8 @@ export const useSongListFilter = (list: SongPreview[]) => {
 };
 
 export default function useSongList() {
-    const songList = useQuery<SongPreview[]>('songList', () =>
-        fetch('./songs/index.json').then((response) => response.json()),
-    );
+    const songList = useSongIndex();
+
     const { filters, filtersData, filteredList, setFilters } = useSongListFilter(songList.data ?? []);
     const groupedSongList = useMemo(() => {
         if (filteredList.length === 0) return [];

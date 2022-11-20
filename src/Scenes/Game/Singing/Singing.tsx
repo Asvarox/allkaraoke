@@ -1,18 +1,14 @@
 import styled from '@emotion/styled';
 import { VideoState } from 'Elements/VideoPlayer';
+import useSong from 'hooks/songs/useSong';
 import useFullscreen from 'hooks/useFullscreen';
-import { GAME_MODE, SingSetup, Song } from 'interfaces';
+import { GAME_MODE, SingSetup } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useQuery } from 'react-query';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import calculateScore from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';
-import addHeadstart from '../../Convert/Steps/SyncLyricsToVideo/Helpers/addHeadstart';
-import normaliseGap from '../../Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
-import normaliseLyricSpaces from '../../Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
-import normaliseSectionPaddings from '../../Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
@@ -23,23 +19,10 @@ interface Props {
     singSetup: SingSetup;
     returnToSongSelection: () => void;
 }
-
-const processSong = (song: Song) => {
-    let processed = normaliseGap(song);
-    processed = addHeadstart(processed);
-    processed = normaliseSectionPaddings(processed);
-    processed = normaliseLyricSpaces(processed);
-
-    return processed;
-};
-
 function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
     const player = useRef<PlayerRef | null>(null);
-    const song = useQuery<Song>(
-        ['song', songFile],
-        () => fetch(`./songs/${songFile}`).then((response) => response.json()),
-        { staleTime: Infinity, select: processSong },
-    );
+    const song = useSong(songFile);
+
     useFullscreen();
     const { width, height } = useViewportSize();
     const [isEnded, setIsEnded] = useState(false);
@@ -92,9 +75,9 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
                     onSongEnd={() => {
                         const scores = GameState.getPlayers().map((player) => ({
                             name: player.getName(),
-                            score: calculateScore(player.getPlayerNotes(), song.data, player.getTrackIndex()),
+                            score: calculateScore(player.getPlayerNotes(), song.data!, player.getTrackIndex()),
                         }));
-                        events.songEnded.dispatch(song.data, singSetup, scores);
+                        events.songEnded.dispatch(song.data!, singSetup, scores);
                         setIsEnded(true);
                     }}
                     singSetup={singSetup}

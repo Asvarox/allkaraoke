@@ -1,6 +1,5 @@
-import { SongPreview } from 'interfaces';
+import useSongIndex from 'hooks/songs/useSongIndex';
 import { useEffect } from 'react';
-import { useQuery } from 'react-query';
 
 interface GetSongBpmSearchEntry {
     song_id: string;
@@ -28,9 +27,7 @@ interface GetSongBpmSearchEntry {
 }
 
 export default function GetSongsBPMs(props: {}) {
-    const songList = useQuery<SongPreview[]>('songList', () =>
-        fetch('./songs/index.json').then((response) => response.json()),
-    );
+    const songList = useSongIndex();
 
     useEffect(() => {
         if (songList.data) {

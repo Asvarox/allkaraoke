@@ -1,17 +1,15 @@
 import styled from '@emotion/styled';
 import { Edit as EditIcon } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
+import useSongIndex from 'hooks/songs/useSongIndex';
 import { SongPreview } from 'interfaces';
 import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
 import { useMemo } from 'react';
-import { useQuery } from 'react-query';
 
 interface Props {}
 
 export default function SongList(props: Props) {
-    const songList = useQuery<SongPreview[]>('songList', () =>
-        fetch('./songs/index.json').then((response) => response.json()),
-    );
+    const songList = useSongIndex();
 
     const columns: MRT_ColumnDef<SongPreview>[] = useMemo(
         () => [
