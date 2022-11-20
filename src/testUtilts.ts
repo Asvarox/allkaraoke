@@ -28,16 +28,17 @@ export const generatePlayerNote = (
     frequencyRecords,
 });
 
-export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Song => ({
-    artist: 'artistTest',
-    title: 'titleTest',
-    video: 'videoTest',
-    gap: 0,
-    bpm: 60, // makes it easy to calc - beatLength = 1ms
-    bar: 1000, // makes it easy to calc - beatLength = 1ms
-    tracks: tracks.map((sections) => ({ sections })),
-    ...data,
-});
+export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Song =>
+    ({
+        artist: 'artistTest',
+        title: 'titleTest',
+        video: 'videoTest',
+        gap: 0,
+        bpm: 60, // makes it easy to calc - beatLength = 1ms
+        bar: 1000, // makes it easy to calc - beatLength = 1ms
+        tracks: tracks.map((sections) => ({ sections })),
+        ...data,
+    } as any as Song);
 
 export const generateSection = (start: number, length: number, notesCount: number): Section => ({
     type: 'notes',

@@ -45,12 +45,15 @@ export default function SongList(props: Props) {
                 positionActionsColumn="last"
                 enableRowActions
                 renderRowActions={({ row }) => (
-                    <IconButton
-                        href={`#/edit/${encodeURIComponent(row.original.file)}`}
-                        data-test="edit-song"
-                        data-song={row.original.file}>
-                        <EditIcon />
-                    </IconButton>
+                    <>
+                        <IconButton
+                            title="Edit the song"
+                            href={`#/edit/${encodeURIComponent(row.original.file)}`}
+                            data-test="edit-song"
+                            data-song={row.original.file}>
+                            <EditIcon />
+                        </IconButton>
+                    </>
                 )}
                 initialState={{ density: 'compact' }}
                 enableDensityToggle={false}

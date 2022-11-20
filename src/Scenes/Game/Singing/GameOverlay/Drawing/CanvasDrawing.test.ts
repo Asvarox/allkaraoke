@@ -5,8 +5,8 @@ import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeat
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import pitchToFrequency from 'utils/pitchToFrequency';
+import { mulitrack } from 'utils/songs/song-fixture';
 import CanvasDrawing from './CanvasDrawing';
-import songFixture from './song-fixture';
 
 const FPS = 30;
 
@@ -36,7 +36,7 @@ describe('CanvasDrawing', function () {
 
     const canvas = createCanvas(800, 600);
     const canvasDrawing = new CanvasDrawing(canvas as any);
-    GameState.setSong(songFixture);
+    GameState.setSong(mulitrack);
     InputManager.setPlayerInput(0, 'DrawingTest', 0);
     InputManager.setPlayerInput(1, 'DrawingTest', 1);
 
@@ -65,11 +65,11 @@ describe('CanvasDrawing', function () {
 
     jest.retryTimes(2);
     it('should draw missed note above the target note if the distance is positive', function () {
-        const p1note = (songFixture.tracks[0].sections[0] as NotesSection).notes[0];
-        const p2note = (songFixture.tracks[1].sections[0] as NotesSection).notes[0];
+        const p1note = (mulitrack.tracks[0].sections[0] as NotesSection).notes[0];
+        const p2note = (mulitrack.tracks[1].sections[0] as NotesSection).notes[0];
 
-        GameState.setCurrentTime(timeFromBeat(songFixture, p1note.start));
-        const targetTime = timeFromBeat(songFixture, p1note.start + p1note.length);
+        GameState.setCurrentTime(timeFromBeat(mulitrack, p1note.start));
+        const targetTime = timeFromBeat(mulitrack, p1note.start + p1note.length);
 
         DrawingTestInput.setFrequency(0, pitchToFrequency(p1note.pitch + 3));
         DrawingTestInput.setFrequency(1, pitchToFrequency(p2note.pitch - 3));

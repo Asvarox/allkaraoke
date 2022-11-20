@@ -20,7 +20,8 @@
     "include": ["src"],
     "ts-node": {
         "compilerOptions": {
-            "module": "commonjs"
+            "module": "commonjs",
+            "baseUrl": "src"
         },
         "transpileOnly": true
     }

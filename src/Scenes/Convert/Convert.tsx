@@ -3,11 +3,11 @@ import { Box, Button, Step, StepLabel, StyledEngineProvider } from '@mui/materia
 import Stepper from '@mui/material/Stepper';
 import { Song } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import convertTxtToSong from 'Scenes/Convert/convertTxtToSong';
 import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
+import convertTxtToSong from 'utils/songs/convertTxtToSong';
 
 interface Props {
     song?: Song;

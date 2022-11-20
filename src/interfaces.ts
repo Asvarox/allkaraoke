@@ -1,14 +1,13 @@
 import { ValuesType } from 'utility-types';
 
+export type NoteType = 'normal' | 'star' | 'freestyle' | 'rap';
 export interface Note {
     start: number;
     length: number;
     pitch: number;
-    type: 'normal' | 'star' | 'freestyle' | 'rap';
+    type: NoteType;
     lyrics: string;
 }
-
-export type NoLyricNote = Omit<Note, 'lyrics' | 'type'>;
 
 export type Section = NotesSection | PauseSection;
 
@@ -45,25 +44,26 @@ export interface PauseSection {
 }
 
 export interface Song {
-    author?: string;
-    authorUrl?: string;
-    genre?: string;
-    year?: string;
-    edition?: string;
-    language?: string;
-    sourceUrl?: string;
-    videoGap?: number;
+    lastUpdate: string | undefined;
+    author: string | undefined;
+    authorUrl: string | undefined;
+    genre: string | undefined;
+    year: string | undefined;
+    edition: string | undefined;
+    language: string | undefined;
+    sourceUrl: string | undefined;
+    videoGap: number | undefined;
     artist: string;
     title: string;
     video: string;
-    previewStart?: number;
-    previewEnd?: number;
+    previewStart: number | undefined;
+    previewEnd: number | undefined;
     gap: number;
     bpm: number;
-    realBpm?: number;
+    realBpm: number | undefined;
     bar: number;
     tracks: SongTrack[];
-    volume?: number;
+    volume: number | undefined;
 }
 
 export interface SongTrack {
