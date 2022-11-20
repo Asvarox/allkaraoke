@@ -34,6 +34,7 @@ export default function Convert({ song }: Props) {
     const error = useRef<string>('');
     const conversionResult: Song | undefined = useMemo(() => {
         try {
+            if (!basicData.txtInput) return undefined;
             if (song) return song;
             return convertTxtToSong(
                 basicData.txtInput,
@@ -55,6 +56,8 @@ export default function Convert({ song }: Props) {
         basicData.sourceUrl,
         song,
     ]);
+
+    console.log(conversionResult);
 
     useEffect(() => {
         if (conversionResult && !metadataEntity.year && !metadataEntity.language) {

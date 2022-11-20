@@ -9,24 +9,25 @@ exports[`convertSongToTxt should properly convert the song 1`] = `
 #VIDEOID:mcEVAY1H5As
 #LANGUAGE:Polish
 #GAP:1000
-: 5 10 9 Track 1 
-: 20 10 10 Section 1
+#TRACKNAMES:[null,\\"test track 2\\"]
+: 5 10 9 Second 
+* 20 10 10 Third 
 - 40
-: 50 10 11 Track 1 
-: 80 10 9 Section 2
-- 100 110
-- 120
-: 130 10 10 Track 1 Section 3
-: 0 10 11 Track 2 
-: 15 10 9 Section 
-: 30 10 10 1
+: 50 10 11 Fourth 
+: 80 10 9 Seventh 
+- 100 120
+- 130
+: 140 10 10 Eight 
+: 5 10 11 First 
+: 16 9 9 Second 
+: 30 10 10 Third 
 - 50
-: 60 10 11 Track 2 
-: 75 10 12 Section 
-: 90 10 9 2
+: 60 10 11 Fourth 
+: 75 10 12 Fifth 
+: 90 10 9 Seventh 
 - 110 130
 - 140
-: 150 10 9 Track 2 
-: 165 10 10 Section 3
+: 150 10 9 Eight 
+: 165 10 10 Nine 
 E"
 `;
