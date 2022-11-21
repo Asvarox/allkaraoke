@@ -1998,14 +1998,14 @@
           "notes": [
             {
               "type": "normal",
-              "start": 2267,
+              "start": 2265,
               "length": 2,
               "pitch": 2,
               "lyrics": "i "
             },
             {
               "type": "normal",
-              "start": 2265,
+              "start": 2266,
               "length": 2,
               "pitch": 3,
               "lyrics": "w "
@@ -2892,7 +2892,7 @@
           "type": "notes"
         },
         {
-          "start": 4111,
+          "start": 4129,
           "notes": [
             {
               "type": "normal",
