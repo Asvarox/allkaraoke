@@ -34,8 +34,8 @@ export default function Convert({ song }: Props) {
     const error = useRef<string>('');
     const conversionResult: Song | undefined = useMemo(() => {
         try {
-            if (!basicData.txtInput) return undefined;
             if (song) return song;
+            if (!basicData.txtInput) return undefined;
             return convertTxtToSong(
                 basicData.txtInput,
                 authorAndVid.video,
