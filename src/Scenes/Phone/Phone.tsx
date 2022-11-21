@@ -9,10 +9,10 @@ import { FormEventHandler, useCallback, useEffect, useRef, useState } from 'reac
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventEffect, useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import VolumeIndicator from 'Scenes/Phone/VolumeIndicator';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';
+import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 
 interface Props {
     roomId: string;
@@ -62,8 +62,8 @@ function Phone({ roomId }: Props) {
     }, []);
 
     useEffect(() => {
-        MicInput.startMonitoring(undefined, true);
-        return MicInput.addListener(updateVolumes);
+        PhoneMic.startMonitoring(undefined, true);
+        return PhoneMic.addListener(updateVolumes);
     }, [updateVolumes]);
 
     const disabled = connectionStatus !== 'uninitialised';
@@ -100,7 +100,7 @@ function Phone({ roomId }: Props) {
                 </KeepAwake>
                 <MicInputState
                     onClick={() =>
-                        monitoringStarted ? MicInput.stopMonitoring() : MicInput.startMonitoring(undefined, true)
+                        monitoringStarted ? PhoneMic.stopMonitoring() : PhoneMic.startMonitoring(undefined, false)
                     }>
                     Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
                 </MicInputState>

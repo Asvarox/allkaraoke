@@ -1,7 +1,7 @@
 import { DataConnection, Peer } from 'peerjs';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import { v4 } from 'uuid';
+import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 
 export interface WebRTCRegisterEvent {
     type: 'register';
@@ -63,8 +63,8 @@ class WebRTCClient {
 
         this.peer.on('open', () => this.connectToServer(roomId, name));
         this.peer.on('close', () => {
-            MicInput.removeListener(this.onFrequencyUpdate);
-            MicInput.stopMonitoring();
+            PhoneMic.removeListener(this.onFrequencyUpdate);
+            PhoneMic.stopMonitoring();
         });
     };
 
@@ -81,13 +81,13 @@ class WebRTCClient {
             this.connection?.on('data', (data: WebRTCEvents) => {
                 console.log('data', data);
                 if (data.type === 'start-monitor') {
-                    MicInput.addListener(this.onFrequencyUpdate);
+                    PhoneMic.addListener(this.onFrequencyUpdate);
                     // echoCancellation is turned on because without it there is silence from the mic
                     // every other second (possibly some kind of Chrome Mobile bug)
-                    MicInput.startMonitoring(undefined, true);
+                    PhoneMic.startMonitoring(undefined, true);
                 } else if (data.type === 'stop-monitor') {
-                    MicInput.removeListener(this.onFrequencyUpdate);
-                    MicInput.stopMonitoring();
+                    PhoneMic.removeListener(this.onFrequencyUpdate);
+                    PhoneMic.stopMonitoring();
                 } else if (data.type === 'set-player-number') {
                     events.remoteMicPlayerNumberSet.dispatch(data.playerNumber);
                 }
@@ -99,8 +99,8 @@ class WebRTCClient {
         this.connection.on('close', () => {
             events.karaokeConnectionStatusChange.dispatch('disconnected');
             events.remoteMicPlayerNumberSet.dispatch(null);
-            MicInput.removeListener(this.onFrequencyUpdate);
-            MicInput.stopMonitoring();
+            PhoneMic.removeListener(this.onFrequencyUpdate);
+            PhoneMic.stopMonitoring();
 
             console.log('closed connection :o');
 
