@@ -1,5 +1,5 @@
 import { Song, SongPreview } from 'interfaces';
-import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 
 export default function beatToMs(beat: number, song: Song | SongPreview): number {
     return getSongBeatLength(song) * beat;

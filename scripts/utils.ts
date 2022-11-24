@@ -1,5 +1,5 @@
 import { Song, SongPreview } from '../src/interfaces';
-import { getFirstNoteStartFromSections } from '../src/Scenes/Game/Singing/Helpers/notesSelectors';
+import { getFirstNoteStartFromSections } from '../src/Songs/utils/notesSelectors';
 import clearString from '../src/utils/clearString';
 
 const generateSearchString = (song: Pick<Song, 'title' | 'artist'>) => clearString(`${song.artist}${song.title}`);

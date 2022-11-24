@@ -13,9 +13,9 @@ import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHead
 import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
 import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
 import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
-import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
-import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
-import { getFirstNoteStartFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {

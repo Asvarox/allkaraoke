@@ -7,7 +7,7 @@ import random from 'utils/randomValue';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
-import isNotesSection from '../../Helpers/isNotesSection';
+import isNotesSection from 'Songs/utils/isNotesSection';
 import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import debugPitches from './Elements/debugPitches';
 import drawNote from './Elements/note';

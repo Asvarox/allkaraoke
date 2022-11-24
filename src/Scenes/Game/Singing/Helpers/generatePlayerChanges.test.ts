@@ -1,6 +1,6 @@
 import { Section, Song } from 'interfaces';
-import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 import { generateSection, generateSong } from 'testUtilts';
 import generatePlayerChanges from './generatePlayerChanges';
 

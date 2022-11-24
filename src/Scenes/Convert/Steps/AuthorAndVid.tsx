@@ -1,6 +1,6 @@
 import { Box, Button, TextField, Tooltip } from '@mui/material';
 import YouTube from 'react-youtube';
-import { getVideoId } from 'utils/songs/convertTxtToSong';
+import { getVideoId } from 'Songs/utils/convertTxtToSong';
 
 export interface AuthorAndVidEntity {
     author: string;

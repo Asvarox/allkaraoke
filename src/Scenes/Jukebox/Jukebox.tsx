@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
-import useSongIndex from 'hooks/songs/useSongIndex';
+import useSongIndex from 'Songs/hooks/useSongIndex';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';

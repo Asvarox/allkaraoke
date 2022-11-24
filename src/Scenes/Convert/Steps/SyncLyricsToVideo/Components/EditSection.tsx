@@ -16,8 +16,8 @@ import { useEffect, useState } from 'react';
 import { msec } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import getCurrentBeat from 'Scenes/Game/Singing/GameState/Helpers/getCurrentBeat';
-import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
-import { getFirstNoteStartFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import useCurrentSectionIndex from 'Scenes/Game/Singing/Hooks/useCurrentSectionIndex';
 import { PlayerRef } from 'Scenes/Game/Singing/Player';
 

@@ -3,8 +3,8 @@ import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { Note } from 'interfaces';
 import { ComponentProps, Fragment, PropsWithChildren } from 'react';
 import GameState from '../../GameState/GameState';
-import isNotesSection from '../../Helpers/isNotesSection';
-import { getFirstNoteStartFromSections } from '../../Helpers/notesSelectors';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
 
 interface Props {
@@ -114,7 +114,6 @@ const Headstart = ({ percent, color }: { percent: number; color: string }) => (
 
 const LyricContainer = styled.span<{ type: Note['type'] }>`
     font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
-    //position: relative;
 `;
 
 const LyricActiveContainer = styled.span`

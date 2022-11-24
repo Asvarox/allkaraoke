@@ -1,8 +1,8 @@
 import { NotesSection, Section, Song } from 'interfaces';
 import { cloneDeep, range } from 'lodash-es';
-import getSongBeatLength from '../GameState/Helpers/getSongBeatLength';
-import isNotesSection from './isNotesSection';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from './notesSelectors';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 
 const MAX_SECTION_PAUSE_MS = 250;
 

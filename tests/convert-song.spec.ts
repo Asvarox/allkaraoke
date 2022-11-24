@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { Song } from '../src/interfaces';
+import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 
 const VIDEO_ID = '8YKAHgwLEMg';
 const FINAL_LANG = 'Polish';
@@ -16,6 +17,7 @@ const FINAL_TRACK_1_SECTIONS = 10;
 
 test('Convert song', async ({ page }) => {
     await page.goto('/?e2e-test');
+    await page.locator('[data-test="edit-songs"]').click();
     await page.locator('[data-test="convert-song"]').click();
 
     await expect(page.locator('[data-test="basic-data"]')).toBeVisible();
@@ -144,11 +146,12 @@ test('Convert song', async ({ page }) => {
 
     // Download song
     await expect(page.locator('[data-test="next-button"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="download-button"]')).toBeVisible();
+    await expect(page.locator('[data-test="save-button"]')).toBeVisible();
+    await page.locator('[data-test="save-button"]').click();
 
     const [download] = await Promise.all([
         page.waitForEvent('download'),
-        page.locator('[data-test="download-button"]').click(),
+        page.locator('[data-test="download-song"][data-song="convert-test.json"]').click(),
     ]);
 
     const downloadStream = await download.createReadStream();
@@ -158,7 +161,7 @@ test('Convert song', async ({ page }) => {
     for await (let chunk of downloadStream) {
         chunks.push(chunk);
     }
-    const downloadContent: Song = JSON.parse(Buffer.concat(chunks).toString('utf-8'));
+    const downloadContent: Song = convertTxtToSong(Buffer.concat(chunks).toString('utf-8'));
 
     expect(downloadContent.video).toEqual(VIDEO_ID);
     expect(downloadContent.sourceUrl).toEqual(FINAL_SOURCE_URL);
@@ -172,11 +175,14 @@ test('Convert song', async ({ page }) => {
     expect(downloadContent.bpm).toEqual(+FINAL_BPM);
     expect(downloadContent.tracks).toHaveLength(FINAL_TRACKS);
     expect(downloadContent.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
+
+    await page.locator('[data-test="delete-song"][data-song="convert-test.json"]').click();
+    await expect(page.locator('[data-test="delete-song"][data-song="convert-test.json"]')).not.toBeVisible();
 });
 
 const txtfile = `
-#TITLE:Friday I'm in Love
-#ARTIST:The Cure
+#TITLE:test
+#ARTIST:convert
 #LANGUAGE:English
 #YEAR:1992
 #VIDEOGAP:30

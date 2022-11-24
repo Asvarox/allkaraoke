@@ -3,7 +3,7 @@ import { PlayerSetup } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo } from 'react';
 import GameState from '../../GameState/GameState';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from '../../Helpers/notesSelectors';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
 
 interface Props {

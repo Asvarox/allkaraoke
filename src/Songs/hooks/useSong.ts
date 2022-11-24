@@ -1,9 +1,10 @@
 import { Song } from 'interfaces';
-import { useQuery } from 'react-query';
 import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHeadstart';
 import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
 import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
 import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
+import { useEffect, useState } from 'react';
+import SongDao from 'Songs/SongDao';
 
 const processSong = (song: Song) => {
     let processed = normaliseGap(song);
@@ -13,14 +14,15 @@ const processSong = (song: Song) => {
 
     return processed;
 };
+
 export default function useSong(fileName: string) {
-    const query = useQuery<Song>(
-        ['song', fileName],
-        () => fetch(`./songs/${fileName}`).then((response) => response.json()),
-        { staleTime: Infinity, select: processSong },
-    );
+    const [song, setSong] = useState<Song | null>(null);
+
+    useEffect(() => {
+        SongDao.get(fileName).then((loadedSong) => setSong(loadedSong ? processSong(loadedSong) : loadedSong));
+    }, [fileName]);
 
     return {
-        data: query.data,
+        data: song,
     };
 }

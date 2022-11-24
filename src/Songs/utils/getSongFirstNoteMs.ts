@@ -1,6 +1,6 @@
 import { Song, SongPreview } from 'interfaces';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import { getFirstNoteStartFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 
 export default function getSongFirstNoteMs(song: Song | SongPreview): number {
     const firstNote = Math.min(

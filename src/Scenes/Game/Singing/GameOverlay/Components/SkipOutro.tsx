@@ -7,7 +7,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import { useInterval } from 'react-use';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import { getLastNoteEnd } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import { getLastNoteEnd } from 'Songs/utils/notesSelectors';
 
 interface Props {
     onSongEnd: () => void;

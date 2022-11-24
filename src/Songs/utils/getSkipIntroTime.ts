@@ -1,5 +1,5 @@
 import { seconds, Song, SongPreview } from 'interfaces';
-import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
+import getSongFirstNoteMs from 'Songs/utils/getSongFirstNoteMs';
 import isDev from 'utils/isDev';
 import isE2E from 'utils/isE2E';
 

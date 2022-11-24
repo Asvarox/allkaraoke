@@ -1,5 +1,5 @@
 import { Note, Song } from 'interfaces';
-import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
+import isNotesSection from 'Songs/utils/isNotesSection';
 
 const normaliseSpaces = (notes: Note[]): Note[] => {
     notes.forEach((note, index) => {

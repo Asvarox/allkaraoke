@@ -1,4 +1,4 @@
-import useSongIndex from 'hooks/songs/useSongIndex';
+import useSongIndex from 'Songs/hooks/useSongIndex';
 import { useEffect } from 'react';
 
 interface GetSongBpmSearchEntry {

@@ -1,11 +1,11 @@
 import { createCanvas } from 'canvas';
 import { GAME_MODE, NotesSection, Song } from 'interfaces';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import pitchToFrequency from 'utils/pitchToFrequency';
-import { mulitrack } from 'utils/songs/song-fixture';
+import { mulitrack } from 'Songs/utils/song-fixture';
 import CanvasDrawing from './CanvasDrawing';
 
 const FPS = 30;

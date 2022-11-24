@@ -2,7 +2,7 @@ import { SongPreview } from 'interfaces';
 import { useEffect, useState } from 'react';
 import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import { fetchSongStats, getSongKey, SongStats, storeSongStats } from 'Stats/Song/common';
+import { fetchSongStats, getSongKey, SongStats, storeSongStats } from 'Songs/stats/common';
 
 export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
     const [stats, setStats] = useState<SongStats | null>(null);

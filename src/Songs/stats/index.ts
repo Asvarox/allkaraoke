@@ -1,6 +1,6 @@
 import localForage from 'localforage';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { getSongKey, SongStats, storeSongStats } from 'Stats/Song/common';
+import { getSongKey, SongStats, storeSongStats } from 'Songs/stats/common';
 
 events.songEnded.subscribe(async (song, setup, scores) => {
     let currentState = await localForage.getItem<SongStats>(getSongKey(song));

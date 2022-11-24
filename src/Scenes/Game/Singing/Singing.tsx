@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { VideoState } from 'Elements/VideoPlayer';
-import useSong from 'hooks/songs/useSong';
+import useSong from 'Songs/hooks/useSong';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';

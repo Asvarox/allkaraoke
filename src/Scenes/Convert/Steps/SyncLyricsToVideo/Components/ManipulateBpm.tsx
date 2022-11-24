@@ -4,7 +4,7 @@ import { useState } from 'react';
 import calculateProperBPM from 'Scenes/Convert/calculateProperBpm';
 import { Pre } from 'Scenes/Convert/Elements';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import { getLastNoteEndFromSections } from 'Scenes/Game/Singing/Helpers/notesSelectors';
+import { getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 import { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {

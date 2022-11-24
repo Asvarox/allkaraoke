@@ -1,4 +1,4 @@
-import useSongIndex from 'hooks/songs/useSongIndex';
+import useSongIndex from 'Songs/hooks/useSongIndex';
 import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo, useState } from 'react';

@@ -1,5 +1,4 @@
-import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
-import { isNil, omitBy } from 'lodash-es';
+import { NotesSection, Section, Song } from 'interfaces';
 
 export const typesMap = {
     R: 'rap',
@@ -66,25 +65,23 @@ export default function convertTxtToSong(
 ): Song {
     const trackNames: string[] = safeJsonParse<string[]>(getPropertyValueFromTxt(text, 'TRACKNAMES'), []);
 
-    const additionalData = omitBy(
-        {
-            year: getPropertyValueFromTxt(text, 'YEAR'),
-            lastUpdate: getPropertyValueFromTxt(text, 'LASTUPDATE'),
-            edition: getPropertyValueFromTxt(text, 'EDITION'),
-            genre: getPropertyValueFromTxt(text, 'GENRE'),
-            language: getPropertyValueFromTxt(text, 'LANGUAGE'),
-            videoGap: getPropertyValueFromTxt(text, 'VIDEOGAP', true),
-            realBpm: getPropertyValueFromTxt(text, 'REALBPM', true),
-            previewStart: getPropertyValueFromTxt(text, 'PREVIEWSTART', true),
-            previewEnd: getPropertyValueFromTxt(text, 'PREVIEWEND', true),
-            volume: getPropertyValueFromTxt(text, 'VOLUME', true),
-            author: getPropertyValueFromTxt(text, 'CREATOR') ?? author,
-            authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
-            sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,
-            // todo upgrade eslint and use `satisfies` instead of `as`
-        } as Omit<Song, 'tracks' | 'artist' | 'title' | 'bar' | 'bpm' | 'gap' | 'video'>,
-        isNil,
-    ) as ExtractOptional<Song>;
+    const additionalData = {
+        year: getPropertyValueFromTxt(text, 'YEAR'),
+        lastUpdate: getPropertyValueFromTxt(text, 'LASTUPDATE'),
+        edition: getPropertyValueFromTxt(text, 'EDITION'),
+        genre: getPropertyValueFromTxt(text, 'GENRE'),
+        language: getPropertyValueFromTxt(text, 'LANGUAGE'),
+        videoGap: getPropertyValueFromTxt(text, 'VIDEOGAP', true),
+        realBpm: getPropertyValueFromTxt(text, 'REALBPM', true),
+        previewStart: getPropertyValueFromTxt(text, 'PREVIEWSTART', true),
+        previewEnd: getPropertyValueFromTxt(text, 'PREVIEWEND', true),
+        volume: getPropertyValueFromTxt(text, 'VOLUME', true),
+        author: getPropertyValueFromTxt(text, 'CREATOR') ?? author,
+        authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
+        sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,
+        // todo upgrade eslint and use `satisfies` instead of `as`
+    } as Omit<Song, 'tracks' | 'artist' | 'title' | 'bar' | 'bpm' | 'gap' | 'video'>;
+    // as ExtractOptional<Song>;
 
     if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
 
@@ -137,7 +134,7 @@ export default function convertTxtToSong(
                 sections = [{ start: 0, notes: [], type: 'notes' }];
             }
             // Note
-            const lastSection = sections.at(-1);
+            const lastSection = sections[sections.length - 1];
 
             const [type, start, length, pitch, ...lyrics] = split;
 

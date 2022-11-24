@@ -1,12 +1,12 @@
 import { FrequencyRecord, NotesSection, PlayerNote, SingSetup, Song } from 'interfaces';
-import isNotesSection from '../Helpers/isNotesSection';
-import { getNoteAtBeat } from '../Helpers/notesSelectors';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getNoteAtBeat } from 'Songs/utils/notesSelectors';
 import InputManager from '../Input/InputManager';
 import GameStateEvents from './GameStateEvents';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
 import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
-import getSongBeatLength from './Helpers/getSongBeatLength';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];

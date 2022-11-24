@@ -1,7 +1,7 @@
 import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import { useMemo } from 'react';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
-import { useSongStats } from 'Stats/Song/hooks';
+import { useSongStats } from 'Songs/stats/hooks';
 import GameState from '../GameState/GameState';
 import { calculateDetailedScoreData } from '../GameState/Helpers/calculateScore';
 

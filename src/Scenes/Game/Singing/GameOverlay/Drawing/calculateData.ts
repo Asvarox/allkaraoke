@@ -1,5 +1,5 @@
 import { FrequencyRecord, PlayerNote, Section, Song } from 'interfaces';
-import isNotesSection from '../../Helpers/isNotesSection';
+import isNotesSection from 'Songs/utils/isNotesSection';
 
 export const pitchPadding = 6;
 

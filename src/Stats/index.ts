@@ -1,2 +1,2 @@
 import './players';
-import './Song';
+import 'Songs/stats';

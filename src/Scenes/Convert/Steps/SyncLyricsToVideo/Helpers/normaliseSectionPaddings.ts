@@ -1,6 +1,6 @@
 import { NotesSection, Section, Song } from 'interfaces';
-import getSongBeatLength from 'Scenes/Game/Singing/GameState/Helpers/getSongBeatLength';
-import isNotesSection from 'Scenes/Game/Singing/Helpers/isNotesSection';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
+import isNotesSection from 'Songs/utils/isNotesSection';
 
 export const HEADSTART_MS = 1000;
 

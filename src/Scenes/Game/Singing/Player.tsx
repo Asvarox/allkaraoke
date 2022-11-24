@@ -12,7 +12,7 @@ import {
 
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import getSkipIntroTime from 'Scenes/Game/Singing/Helpers/getSkipIntroTime';
+import getSkipIntroTime from 'Songs/utils/getSkipIntroTime';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import isDev from 'utils/isDev';
 import PauseMenu from './GameOverlay/Components/PauseMenu';

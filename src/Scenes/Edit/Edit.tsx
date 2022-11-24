@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import useSong from 'hooks/songs/useSong';
+import useSong from 'Songs/hooks/useSong';
 import Convert from 'Scenes/Convert/Convert';
 import { Link } from 'wouter';
 

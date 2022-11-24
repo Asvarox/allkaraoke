@@ -5,8 +5,8 @@ import posthog from 'posthog-js';
 import { useMemo } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import getSongFirstNoteMs from 'Scenes/Game/Singing/GameState/Helpers/getSongFirstNoteMs';
-import getSkipIntroTime, { SKIP_INTRO_MS } from 'Scenes/Game/Singing/Helpers/getSkipIntroTime';
+import getSongFirstNoteMs from 'Songs/utils/getSongFirstNoteMs';
+import getSkipIntroTime, { SKIP_INTRO_MS } from 'Songs/utils/getSkipIntroTime';
 import songHasLongIntro from 'utils/songHasLongIntro';
 
 interface Props {

@@ -3,7 +3,7 @@ import { DetailedScore, PlayerNote, Song } from 'interfaces';
 import { memoize } from 'lodash-es';
 import tuple from '../../../../../utils/tuple';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
-import isNotesSection from '../../Helpers/isNotesSection';
+import isNotesSection from 'Songs/utils/isNotesSection';
 
 export const MAX_POINTS = 3_500_000;
 

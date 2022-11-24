@@ -6,7 +6,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { HighScoreEntity, Song } from 'interfaces';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { useEditScore } from 'Stats/Song/hooks';
+import { useEditScore } from 'Songs/stats/hooks';
 import HighScoreRename from './HighScoreRename';
 
 interface Props {

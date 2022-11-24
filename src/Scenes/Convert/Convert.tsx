@@ -7,7 +7,9 @@ import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAnd
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
-import convertTxtToSong from 'utils/songs/convertTxtToSong';
+import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import SongDao from 'Songs/SongDao';
+import { navigate } from 'hooks/useHashLocation';
 
 interface Props {
     song?: Song;
@@ -57,17 +59,31 @@ export default function Convert({ song }: Props) {
         song,
     ]);
 
-    console.log(conversionResult);
-
     useEffect(() => {
-        if (conversionResult && !metadataEntity.year && !metadataEntity.language) {
-            setMetadataEntity((current) => ({
-                ...current,
-                year: conversionResult.year ?? '',
-                language: conversionResult.language ?? '',
-            }));
+        if (conversionResult) {
+            if (!!conversionResult.video && !authorAndVid.video) {
+                setAuthorAndVid((current) => ({
+                    video: `https://www.youtube.com/watch?v=${conversionResult.video}`,
+                    author: current.author || conversionResult?.author || '',
+                    authorUrl: current.authorUrl || conversionResult?.authorUrl || '',
+                }));
+            }
+            if (!!conversionResult.sourceUrl && !basicData.sourceUrl) {
+                setBasicData((current) => ({
+                    ...current,
+                    sourceUrl: conversionResult.sourceUrl!,
+                }));
+            }
+            if (!!conversionResult.year && !metadataEntity.year && !metadataEntity.language) {
+                setMetadataEntity((current) => ({
+                    ...current,
+                    year: conversionResult.year ?? '',
+                    language: conversionResult.language ?? '',
+                    realBpm: `${conversionResult.realBpm ?? ''}`,
+                }));
+            }
         }
-    }, [metadataEntity.year, metadataEntity.language, conversionResult]);
+    }, [conversionResult, metadataEntity.year, metadataEntity.language, basicData.sourceUrl, authorAndVid.video]);
 
     const isBasicInfoCompleted = !!basicData.txtInput || !!song;
     const isAuthorAndVidCompleted = !!authorAndVid.video;
@@ -151,15 +167,14 @@ export default function Convert({ song }: Props) {
                         </Button>
                         {steps.at(currentStep) === 'metadata' ? (
                             <Button
-                                data-test="download-button"
-                                href={`data:application/json;charset=utf-8,${encodeURIComponent(
-                                    JSON.stringify(finalSong, undefined, 2),
-                                )}`}
-                                download={`${editedSong?.artist}-${editedSong?.title}.json`}
+                                data-test="save-button"
+                                onClick={() => {
+                                    SongDao.store(finalSong!).then(() => navigate('/edit'));
+                                }}
                                 sx={{ mt: 2, align: 'right' }}
                                 type="submit"
                                 variant={'contained'}>
-                                Download
+                                Save
                             </Button>
                         ) : (
                             <Button

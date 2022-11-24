@@ -3,7 +3,7 @@ import { focused } from 'Elements/cssMixins';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
 import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { useSongStats } from 'Stats/Song/hooks';
+import { useSongStats } from 'Songs/stats/hooks';
 import useDebounce from '../../../hooks/useDebounce';
 import useViewportSize from '../../../hooks/useViewportSize';
 import styles from '../Singing/GameOverlay/Drawing/styles';

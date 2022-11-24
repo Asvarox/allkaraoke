@@ -1,5 +1,5 @@
-import convertSongToTxt from 'utils/songs/convertSongToTxt';
-import { mulitrack } from 'utils/songs/song-fixture';
+import convertSongToTxt from 'Songs/utils/convertSongToTxt';
+import { mulitrack } from 'Songs/utils/song-fixture';
 
 describe('convertSongToTxt', () => {
     it('should properly convert the song', () => {
