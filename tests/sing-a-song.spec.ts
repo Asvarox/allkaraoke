@@ -124,8 +124,8 @@ test('Basic sing a song', async ({ page }) => {
     await page.locator('[data-test="play-song-button"]').click({ force: true });
 
     // Check updated highscore
-    await page.keyboard.press('Enter');
     await expect(page.locator(p1CL)).toBeVisible();
+    await page.waitForTimeout(300); // otherwise the click might happen before the game actually starts
     await page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
     await page.locator('[data-test="button-finish-song"]').click({ force: true });
     await page.locator('[data-test="highscores-button"]').click({ force: true });
