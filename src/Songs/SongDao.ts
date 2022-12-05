@@ -49,6 +49,8 @@ class SongDao {
             ...storageIndex,
             ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
         ].filter((song) => !(deletedSongs ?? []).includes(this.generateSongFile(song)));
+
+        this.index.sort((a, b) => `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()));
     };
 
     public softDeleteSong = async (fileName: string) => {
