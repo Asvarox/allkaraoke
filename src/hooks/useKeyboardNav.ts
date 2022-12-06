@@ -90,10 +90,13 @@ export default function useKeyboardNav(options: Options = {}) {
             defaultSelection = name;
         }
 
+        const focused = enabled && currentlySelected === name;
+
         return {
-            focused: enabled && currentlySelected === name,
+            focused,
             [propName]: onActive,
             keyboardNavigationChangeFocus: handleNavigation,
+            ...(focused ? { 'data-focused': focused } : {}),
         };
     };
 

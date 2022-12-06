@@ -1,6 +1,12 @@
 import { expect, test } from '@playwright/test';
 import { Song } from '../src/interfaces';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import { initTestMode, mockSongs } from './helpers';
+
+test.beforeEach(async ({ page, context }) => {
+    await initTestMode({ page, context });
+    await mockSongs({ page, context });
+});
 
 const VIDEO_ID = '8YKAHgwLEMg';
 const FINAL_LANG = 'Polish';
