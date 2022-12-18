@@ -100,7 +100,7 @@ const Container = styled.div`
 `;
 
 const QRCode = styled.div`
-    flex: 0.7;
+    flex: 0.6;
 `;
 
 const Description = styled.div`

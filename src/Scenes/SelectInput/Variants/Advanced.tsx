@@ -1,44 +1,30 @@
 import { MenuButton } from 'Elements/Menu';
 import { Switcher } from 'Elements/Switcher';
-import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { useRef } from 'react';
 import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
-import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
+import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 
 interface Props {
-    // file?: string;
-    onClose?: () => void;
-    closeButtonText?: string;
+    onBack: () => void;
+    onSave: () => void;
+    closeButtonText: string;
     playerNames?: string[];
 }
 
-function SelectInputContent(props: Props) {
-    const { inputs, areInputsLoaded } = useMicrophoneList();
+function Advanced(props: Props) {
+    const inputs = useMicrophoneList(true);
     const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs);
     const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
 
-    const nextPlayerToAutoSwitch = useRef(0);
-    useEventEffect(GameStateEvents.phoneConnected, ({ id }) => {
-        InputManager.setPlayerInput(nextPlayerToAutoSwitch.current, RemoteMicrophoneInputSource.inputName, 0, id);
-        nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % 2;
-    });
+    useRemoteMicAutoselect();
 
-    const goBack = () => ('onClose' in props ? props.onClose?.() : navigate('/'));
-
-    const { register } = useKeyboardNav({ onBackspace: goBack });
-
-    if (!areInputsLoaded) return <>Loading available voice inputs...</>;
+    const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
     return (
         <>
-            <h1>Setup players</h1>
             <ConnectPhone />
             <h2>Player 1 {props.playerNames?.[0] && `(${props.playerNames[0]})`}</h2>
             <Switcher
@@ -72,10 +58,13 @@ function SelectInputContent(props: Props) {
                 p1Input?.deviceId !== p2Input?.deviceId && (
                     <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>
                 )}
-            <MenuButton {...register('go back', goBack)} data-test="back-button">
-                {props.closeButtonText ?? 'Return To Main Menu'}
+            <MenuButton {...register('back', props.onBack)} data-test="back-button">
+                Back
+            </MenuButton>
+            <MenuButton {...register('on save', props.onSave)} data-test="save-button">
+                {props.closeButtonText}
             </MenuButton>
         </>
     );
 }
-export default SelectInputContent;
+export default Advanced;

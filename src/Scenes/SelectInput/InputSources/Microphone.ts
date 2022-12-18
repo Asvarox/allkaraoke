@@ -15,9 +15,11 @@ const singstarWiredMicMapper: NameMapper = {
     map: (label, channel) => `Singstar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 
+const getPreferred = (label: string, channel: number) =>
+    singstarWiredMicMapper.test(label, channel) || singstarWirelessMicMapper.test(label, channel) ? channel : undefined;
 const mapInputName = (label: string, channel: number) => {
     if (singstarWirelessMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
-    if (singstarWiredMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
+    if (singstarWiredMicMapper.test(label, channel)) return singstarWiredMicMapper.map(label, channel);
 
     return channel > 0 ? `${label} (ch ${channel})` : label;
 };
@@ -43,6 +45,7 @@ export class MicrophoneInputSource {
                     channels,
                     deviceId: device.deviceId,
                     id: `${device.deviceId};${channel}`,
+                    preferred: getPreferred(device.label, channel),
                 }));
             })
             .flat();

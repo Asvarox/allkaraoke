@@ -9,7 +9,7 @@ interface Props {
     children: ReactNode;
 }
 
-export default function VolumeIndicator({ playerNumber, children }: Props) {
+export default function VolumeIndicator({ playerNumber, children, ...props }: Props) {
     const [volume, setVolume] = useState(0);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function VolumeIndicator({ playerNumber, children }: Props) {
     }, [playerNumber]);
 
     return (
-        <Indicator volume={volume} color={styles.colors.players[playerNumber].hit.fill}>
+        <Indicator volume={volume} color={styles.colors.players[playerNumber].hit.fill} {...props}>
             {children}
         </Indicator>
     );
@@ -37,4 +37,8 @@ const Indicator = styled.div<{ volume: number; color: string }>`
     transition: 300ms;
 
     background: ${(props) => (props.volume > 0.025 ? props.color : 'black')};
+    text-align: center;
+    gap: 0.5em;
+    font-size: 0.75em;
+    color: white;
 `;

@@ -24,7 +24,7 @@ interface KeyboardAction {
     propName: string;
 }
 
-export default function useKeyboardNav(options: Options = {}) {
+export default function useKeyboardNav(options: Options = {}, debug = false) {
     const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
 
     const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
@@ -101,12 +101,16 @@ export default function useKeyboardNav(options: Options = {}) {
     };
 
     useEffect(() => {
+        let newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
+        debug && newElements.length && console.log('new elements', newElements);
         elementList.current = [...newElementList.current];
         newElementList.current.length = 0;
 
+        if (!elementList.current.length) return;
         if (
-            elementList.current.length &&
-            (currentlySelected === null || elementList.current.indexOf(currentlySelected) === -1)
+            currentlySelected === null ||
+            elementList.current.indexOf(currentlySelected) === -1 ||
+            newElements.includes(defaultSelection)
         ) {
             setCurrentlySelected(defaultSelection || elementList.current[0]);
         }

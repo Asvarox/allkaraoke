@@ -2,6 +2,7 @@ import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { InputSource } from 'Scenes/SelectInput/InputSources/interfaces';
+import { useEffect } from 'react';
 
 export interface SourceInputDefault {
     list: InputSource[];
@@ -10,8 +11,14 @@ export interface SourceInputDefault {
 
 export type SourceMap = Record<string, SourceInputDefault>;
 
-export function useMicrophoneList() {
+export function useMicrophoneList(load = false) {
     const inputs = useEventListenerSelector(events.inputListChanged, () => inputSourceListManager.getInputList());
 
-    return { inputs, areInputsLoaded: true };
+    useEffect(() => {
+        if (load) {
+            inputSourceListManager.loadMics();
+        }
+    }, [load]);
+
+    return inputs;
 }

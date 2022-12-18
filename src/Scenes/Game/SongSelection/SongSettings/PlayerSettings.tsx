@@ -10,6 +10,7 @@ import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventList
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
 import SinglePlayer from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
+import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     songPreview: SongPreview;
@@ -41,6 +42,7 @@ function useDefaultPlayerName(index: number): string {
 
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
     const defaultNames = [useDefaultPlayerName(0), useDefaultPlayerName(1)];
+    const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
 
     const playerNames = useMemo<string[]>(
         () => JSON.parse(sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) ?? [],
@@ -68,6 +70,8 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
     const [showModal, setShowModal] = useState(false);
 
     const { register } = useKeyboardNav({ enabled: keyboardControl && !showModal, onBackspace: onExitKeyboardControl });
+
+    const areInputsConfigured = storedPreference && storedPreference !== 'skip';
 
     return (
         <>
@@ -105,9 +109,11 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                     />
                 </div>
             </PlayerSettingContainer>
-            <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
-                Play
-            </PlayButton>
+            {areInputsConfigured && (
+                <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
+                    Play
+                </PlayButton>
+            )}
             <PlayButton
                 {...register('mic-setup', () => setShowModal(true), undefined, false)}
                 data-test="select-inputs-button">

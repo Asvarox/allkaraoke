@@ -55,10 +55,6 @@ const config: PlaywrightTestConfig = {
         },
         video: {
             mode: 'retain-on-failure',
-            size: {
-                width: 720,
-                height: 480,
-            },
         },
     },
 

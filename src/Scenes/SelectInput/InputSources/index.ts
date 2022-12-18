@@ -13,27 +13,29 @@ import { RemoteMicrophoneInputSource } from './Remote';
 const selectedPlayerInputToId = (input: SelectedPlayerInput) => `${input.deviceId};${input.channel}`;
 
 class InputSourceListManager {
-    private readonly inputList: Record<InputSourceNames, InputSourceList>;
+    private inputList: Record<InputSourceNames, InputSourceList>;
 
     constructor() {
         this.inputList = {
-            [MicrophoneInputSource.inputName]: this.initialiseInputSource(MicrophoneInputSource),
+            [MicrophoneInputSource.inputName]: this.initialiseInputSource(MicrophoneInputSource, true),
             [DummyInputSource.inputName]: this.initialiseInputSource(DummyInputSource),
             [RemoteMicrophoneInputSource.inputName]: this.initialiseInputSource(RemoteMicrophoneInputSource),
             [DrawingTestInputSource.inputName]: this.initialiseInputSource(DrawingTestInputSource),
         };
     }
 
-    private initialiseInputSource = <T extends InputSourceManagerInterface>(source: T) => {
-        source.getInputs().then((list) => {
-            this.inputList[source.inputName].list = list;
-            events.inputListChanged.dispatch();
-
-            source.subscribeToListChange(async () => {
-                this.inputList[source.inputName].list = await source.getInputs();
+    private initialiseInputSource = <T extends InputSourceManagerInterface>(source: T, lazily = false) => {
+        if (!lazily) {
+            source.getInputs().then((list) => {
+                this.inputList[source.inputName].list = list;
                 events.inputListChanged.dispatch();
+
+                source.subscribeToListChange(async () => {
+                    this.inputList[source.inputName].list = await source.getInputs();
+                    events.inputListChanged.dispatch();
+                });
             });
-        });
+        }
 
         return {
             list: [],
@@ -41,11 +43,20 @@ class InputSourceListManager {
         };
     };
 
+    public loadMics = () => {
+        if (!this.inputList.Microphone.list.length) {
+            this.inputList.Microphone = this.initialiseInputSource(MicrophoneInputSource);
+        }
+    };
+
     public getInputList = () => this.inputList;
 
-    public getInputForPlayerSelected = (input: SelectedPlayerInput) => {
+    public getInputForPlayerSelected = (input: SelectedPlayerInput, returnDefault = true) => {
         const source = this.inputList[input.inputSource];
-        return source.list.find((item) => item.id === selectedPlayerInputToId(input)) ?? source.getDefault();
+        return (
+            source.list.find((item) => item.id === selectedPlayerInputToId(input)) ??
+            (returnDefault ? source.getDefault() : null)
+        );
     };
 }
 export default new InputSourceListManager();

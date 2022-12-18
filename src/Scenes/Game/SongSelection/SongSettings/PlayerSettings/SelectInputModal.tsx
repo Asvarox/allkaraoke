@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { MenuContainer } from 'Elements/Menu';
-import SelectInputContent from 'Scenes/SelectInput/SelectInputContent';
+import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 
 interface Props {
     onClose: () => void;
@@ -13,8 +13,8 @@ export default function SelectInputModal({ onClose, playerNames }: Props) {
             <Backdrop onClick={onClose} />
             <Container onClick={onClose}>
                 <MenuContainer onClick={(e) => e.stopPropagation()}>
-                    <SelectInputContent
-                        onClose={onClose}
+                    <SelectInputView
+                        onFinish={onClose}
                         closeButtonText="Back to player setup"
                         playerNames={playerNames}
                     />
@@ -34,6 +34,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    overflow: auto;
 `;
 
 const Backdrop = styled.div`

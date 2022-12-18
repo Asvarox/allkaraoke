@@ -89,7 +89,9 @@ function Player(
         }
         if (currentStatus === VideoState.PLAYING) {
             const interval = setInterval(async () => {
-                const time = (await player.current!.getCurrentTime()) * 1000;
+                if (!player.current) return;
+
+                const time = (await player.current.getCurrentTime()) * 1000;
                 setCurrentTime(time);
                 onTimeUpdate?.(time);
                 GameState.setCurrentTime(time);

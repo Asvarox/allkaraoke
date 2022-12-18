@@ -23,7 +23,7 @@ class WebRTCServer {
         this.started = true;
         window.sessionStorage.setItem(ROOM_ID_KEY, this.roomId);
 
-        this.peer = new Peer(this.roomId, { debug: 3 });
+        this.peer = new Peer(this.roomId);
 
         this.peer.on('open', function (id) {
             console.log('My peer ID is: ' + id);
@@ -40,6 +40,16 @@ class WebRTCServer {
 
             conn.on('open', () => {
                 console.log('connected');
+            });
+
+            conn.on('error', (data) => console.warn('error', data));
+
+            // iceStateChanged works - close/disconnected/error doesn't for some reason
+            // @ts-expect-error `iceStateChanged` is not included in TS definitions
+            conn.on('iceStateChanged', (state) => {
+                if (state === 'disconnected' || state === 'closed') {
+                    PhoneManager.removePhone(conn.peer);
+                }
             });
 
             conn.on('close', () => {

@@ -60,4 +60,8 @@ export const MenuContainer = styled.div`
         margin: 10px;
         opacity: 0.25;
     }
+
+    strong {
+        color: ${styles.colors.text.active};
+    }
 `;

@@ -9,6 +9,7 @@ export interface InputSource {
     channel: number;
     id: string;
     deviceId: string;
+    preferred?: number;
 }
 
 export type InputSourceNames =

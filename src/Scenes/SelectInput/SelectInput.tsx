@@ -1,6 +1,7 @@
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuContainer } from 'Elements/Menu';
-import SelectInputContent from './SelectInputContent';
+import SelectInputView from 'Scenes/SelectInput/SelectInputView';
+import { navigate } from 'hooks/useHashLocation';
 
 interface Props {
     // file?: string;
@@ -10,7 +11,7 @@ function SelectInput(props: Props) {
     return (
         <LayoutWithBackground>
             <MenuContainer>
-                <SelectInputContent />
+                <SelectInputView onFinish={() => navigate('/')} closeButtonText={'Go to main menu'} />
             </MenuContainer>
         </LayoutWithBackground>
     );

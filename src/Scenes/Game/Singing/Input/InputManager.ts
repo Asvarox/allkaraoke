@@ -9,6 +9,7 @@ import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphon
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import isDev from 'utils/isDev';
 import storage from 'utils/storage';
+import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 
 export interface SelectedPlayerInput {
     inputSource: InputSourceNames;
@@ -31,6 +32,9 @@ class InputManager {
 
             this.setPlayerInput(0, Input, 0, 'default');
             this.setPlayerInput(1, Input, 1, 'default');
+        } else if (this.playerInputs.some((input) => input.inputSource === 'Microphone')) {
+            // If any microphones are selected, load the list
+            inputSourceListManager.loadMics();
         }
     }
 
@@ -93,7 +97,13 @@ class InputManager {
         this.isMonitoring = false;
     };
 
-    public getInputs = () => this.playerInputs;
+    public getInputs = (): SelectedPlayerInput[] => {
+        return this.playerInputs.map((input) =>
+            inputSourceListManager.getInputForPlayerSelected(input, false)
+                ? input
+                : { inputSource: 'Dummy', deviceId: 'default', channel: 0 },
+        );
+    };
 
     // todo: Create eg. "InputSourceManager" and have the logic there?
     private sourceNameToInput = (sourceName: InputSourceNames) => {

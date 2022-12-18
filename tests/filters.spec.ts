@@ -8,6 +8,8 @@ test.beforeEach(async ({ page, context }) => {
 
 test('Filters - PlayLists', async ({ page }) => {
     await page.goto('/?e2e-test');
+    await page.locator('[data-test="skip"]').click({ force: true });
+    await page.locator('[data-test="save-button"]').click({ force: true });
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
 
@@ -45,6 +47,8 @@ test('Filters - PlayLists', async ({ page }) => {
 
 test('Filters - Quick Search', async ({ page }) => {
     await page.goto('/?e2e-test');
+    await page.locator('[data-test="skip"]').click({ force: true });
+    await page.locator('[data-test="save-button"]').click({ force: true });
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
 

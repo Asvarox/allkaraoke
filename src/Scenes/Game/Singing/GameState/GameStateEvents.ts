@@ -2,7 +2,6 @@ import { SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { SongStats } from 'Songs/stats/common';
-import isDev from 'utils/isDev';
 
 export class GameStateEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
@@ -17,7 +16,7 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
     };
 
     public dispatch = (...args: Parameters<T>) => {
-        if (isDev()) console.log('dispatch', this.name, ...args);
+        console.log('dispatch', this.name, ...args);
         this.subscribers.forEach((callback) => callback(...args));
 
         if (this.track) {

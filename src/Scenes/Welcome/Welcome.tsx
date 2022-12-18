@@ -4,11 +4,11 @@ import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import { Link } from 'wouter';
-import logo from './logo.gif';
 import getSongBpm from './logo_bpm.png';
+import Logo from 'Elements/Logo';
+import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
 
 function Welcome() {
     const { register } = useKeyboardNav();
@@ -16,19 +16,8 @@ function Welcome() {
         <LayoutWithBackground>
             <GithubRibbon />
             <Container>
-                <Logo src={logo} alt="Olkaraoke logo" />
-                {
-                    // @ts-expect-error
-                    !window.chrome && (
-                        <RecommendChrome>
-                            <h2>
-                                This game works best in <strong>Google Chrome</strong> (and Chromium based browsers).
-                            </h2>
-                            It will not likely work properly on other browsers (like the one you use right now if you
-                            see this message).
-                        </RecommendChrome>
-                    )
-                }
+                <Logo />
+                <RecommendedBrowsers />
                 <MenuContainer>
                     <Link href="/game">
                         <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game'))}>
@@ -71,15 +60,6 @@ function Welcome() {
     );
 }
 
-const RecommendChrome = styled.div`
-    width: 750px;
-    ${typography};
-
-    strong {
-        color: ${styles.colors.text.active};
-    }
-`;
-
 const GetSongBPM = styled.a`
     ${typography};
     text-decoration: none;
@@ -98,7 +78,5 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
 `;
-
-const Logo = styled.img``;
 
 export default Welcome;

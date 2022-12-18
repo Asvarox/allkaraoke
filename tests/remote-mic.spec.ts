@@ -9,7 +9,7 @@ test.beforeEach(async ({ page, context }) => {
 test('Remote mic should connect and be selectable', async ({ page, context }) => {
     test.slow();
     await page.goto('/?e2e-test');
-    await page.locator('[data-test="select-input"]').click();
+    await page.locator('[data-test="remote-mics"]').click({ force: true });
     const serverUrl = await page.locator('[data-test="server-link-input"]').inputValue();
 
     // Connect blue microphone
@@ -33,10 +33,12 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     });
 
     // Assert auto selection of inputs
-    await expect(page.locator('[data-test="player-1-input"]')).toContainText('E2E Test Blue', { ignoreCase: true });
-    await expect(page.locator('[data-test="player-2-input"]')).toContainText('E2E Test Red', { ignoreCase: true });
+    await expect(page.locator('[data-test="mic-check-p1"]')).toContainText('E2E Test Blue', { ignoreCase: true });
+    await expect(page.locator('[data-test="mic-check-p2"]')).toContainText('E2E Test Red', { ignoreCase: true });
 
-    await page.keyboard.press('Backspace');
+    await page.locator('[data-test="save-button"]').click({ force: true });
+
+    await expect(page.locator('[data-test="sing-a-song"]')).toBeVisible();
 
     // Check if the phones reconnect automatically
     await page.reload();

@@ -10,7 +10,8 @@ test('Source selection', async ({ page }) => {
     test.slow();
 
     await page.goto('/?e2e-test');
-    await page.locator('[data-test="select-input"]').click();
+    await page.locator('[data-test="advanced"]').click({ force: true });
+
     await page.locator('[data-test="player-1-source"]').click();
     await page.locator('[data-test="player-1-input"]').click();
     await page.locator('[data-test="player-1-input"]').click();
@@ -36,11 +37,14 @@ test('Source selection', async ({ page }) => {
 
 test('Source selection in sing settings', async ({ page, context }) => {
     await page.goto('/?e2e-test');
+    await page.locator('[data-test="skip"]').click({ force: true });
+    await page.locator('[data-test="save-button"]').click({ force: true });
 
     await page.locator('[data-test="sing-a-song"]').click({ force: true });
     await page.locator('[data-test="song-e2e-test-multitrack.json"]').dblclick();
     await page.locator('[data-test="next-step-button"]').click({ force: true });
     await page.locator('[data-test="select-inputs-button"]').click({ force: true });
+    await page.locator('[data-test="advanced"]').click({ force: true });
 
     const serverUrl = await page.locator('[data-test="server-link-input"]').inputValue();
 
@@ -60,7 +64,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
         ignoreCase: true,
     });
 
-    await page.locator('[data-test="back-button"]').click({ force: true });
+    await page.locator('[data-test="save-button"]').click({ force: true });
 
     await expect(page.locator('[data-test="player-1-name"]')).toHaveAttribute('placeholder', 'E2E Test Blue');
 
@@ -71,6 +75,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
 
     // Make sure the input isn't monitored anymore if it's not in use
     await page.locator('[data-test="select-inputs-button"]').click({ force: true });
+    await page.locator('[data-test="advanced"]').click({ force: true });
     await page.locator('[data-test="player-1-source"]').click();
     await expect(remoteMic.locator('[data-test="monitoring-state"]')).toContainText('off', {
         ignoreCase: true,

@@ -10,12 +10,15 @@ import Game from './Scenes/Game/Game';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import Phone from './Scenes/Phone/Phone';
 import SelectInput from './Scenes/SelectInput/SelectInput';
-import Welcome from './Scenes/Welcome/Welcome';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import 'Stats';
+import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
+import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import Welcome from 'Scenes/Welcome/Welcome';
 
 function App() {
+    const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
     return (
         <KeyboardHelpProvider>
             <FullscreenButton
@@ -37,7 +40,11 @@ function App() {
                 <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
                 <Route path="/select-input" component={SelectInput} />
                 <Route path="/settings" component={Settings} />
-                <Route path="/" component={Welcome} />
+                {setupPreference === null ? (
+                    <Route path="/" component={QuickSetup} />
+                ) : (
+                    <Route path="/" component={Welcome} />
+                )}
             </Router>
         </KeyboardHelpProvider>
     );
