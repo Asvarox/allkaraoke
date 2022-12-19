@@ -28,3 +28,86 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
         window.isE2ETests = true;
     });
 };
+
+interface SimDevice {
+    id: string;
+    label: string;
+    channels?: number;
+}
+export const stubUserMedia = async ({ context, page }: { page: Page; context: BrowserContext }) => {
+    await context.addInitScript(() => {
+        let mediaDevices: SimDevice[] = [
+            {
+                id: 'default',
+                label: 'Default device',
+            },
+        ];
+
+        const getMediaDevices = () => {
+            const data = mediaDevices.map((device) => ({
+                deviceId: device.id,
+                groupId: device.id,
+                kind: 'audioinput',
+                label: device.label,
+                getCapabilities: () => ({
+                    channelCount: {
+                        max: device.channels ?? 1,
+                    },
+                }),
+            }));
+
+            console.log(data);
+            return data;
+        };
+
+        console.log(AudioBuffer);
+
+        const callbacks: Record<string, Array<() => void>> = {
+            devicechange: [],
+        };
+        Object.defineProperty(window.navigator, 'mediaDevices', {
+            value: {
+                getUserMedia: () => Promise.resolve({}),
+                enumerateDevices: () => Promise.resolve(getMediaDevices()),
+                addEventListener: (e: 'devicechange', callback: () => void) => callbacks[e].push(callback),
+                removeEventListener: (e: 'devicechange', callback: () => void) =>
+                    (callbacks[e] = callbacks[e].filter((cb) => cb !== callback)),
+            },
+        });
+
+        Object.defineProperty(window, 'mediaSimulator', {
+            value: {
+                connectMediaDevices: (...devices: SimDevice[]) => {
+                    mediaDevices.push(...devices);
+                    callbacks.devicechange.forEach((cb) => cb());
+                },
+                disconnectMediaDevices: (...devices: SimDevice[]) => {
+                    mediaDevices = mediaDevices.filter(
+                        (device) => !devices.some((removed) => removed.id === device.id),
+                    );
+
+                    callbacks.devicechange.forEach((cb) => cb());
+                },
+            },
+        });
+    });
+
+    return {
+        connectDevices: (...deviceList: SimDevice[]) =>
+            page.evaluate(
+                ([devices]) => {
+                    // @ts-expect-error
+                    window.mediaSimulator.connectMediaDevices(...devices);
+                },
+                [deviceList],
+            ),
+        disconnectDevices: (...deviceList: SimDevice[]) =>
+            page.evaluate(
+                ([devices]) => {
+                    // @ts-expect-error
+                    window.mediaSimulator.disconnectMediaDevices(...devices);
+                },
+                [deviceList],
+            ),
+    };
+};

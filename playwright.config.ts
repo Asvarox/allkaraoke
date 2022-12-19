@@ -45,6 +45,7 @@ const config: PlaywrightTestConfig = {
         launchOptions: {
             // slowMo: 100,
             args: [
+                // '--auto-open-devtools-for-tabs',
                 '--no-sandbox',
                 '--allow-file-access-from-files',
                 '--use-fake-ui-for-media-stream',

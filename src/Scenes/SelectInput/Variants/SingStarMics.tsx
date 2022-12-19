@@ -64,12 +64,12 @@ function SingStarMics(props: Props) {
             {!isSetup && (
                 <>
                     <h3>Connect your SingStar microphones.</h3>
-                    <h4>Make sure you only connect one pair.</h4>
+                    <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
                 </>
             )}
             {isSetup && (
                 <>
-                    <h2>
+                    <h2 data-test="setup-completed">
                         <CheckCircle /> <strong>SingStar</strong> microphone connected!
                     </h2>
                     <MicCheck names={['Blue', 'Red']} />
