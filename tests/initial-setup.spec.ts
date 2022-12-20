@@ -11,8 +11,8 @@ test('Source selection', async ({ page, context }) => {
 
     await page.goto('/?e2e-test');
 
-    await page.locator('[data-test="mics"]').click({ force: true });
-    await expect(page.locator('[data-test="setup-not-completed"]')).toBeVisible();
+    await page.getByTestId('mics').click({ force: true });
+    await expect(page.getByTestId('setup-not-completed')).toBeVisible();
 
     const singstarDevice = {
         id: 'test',
@@ -22,7 +22,7 @@ test('Source selection', async ({ page, context }) => {
 
     await connectDevices(singstarDevice);
 
-    await expect(page.locator('[data-test="setup-completed"]')).toBeVisible();
+    await expect(page.getByTestId('setup-completed')).toBeVisible();
     await disconnectDevices(singstarDevice);
-    await expect(page.locator('[data-test="setup-not-completed"]')).toBeVisible();
+    await expect(page.getByTestId('setup-not-completed')).toBeVisible();
 });

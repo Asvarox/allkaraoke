@@ -4,5 +4,13 @@
     "env": {},
     "rules": {
         "no-only-tests/no-only-tests": "error"
-    }
+    },
+    "overrides": [
+        {
+            "files": ["tests/**.ts"],
+            "rules": {
+                "testing-library/prefer-screen-queries": "off"
+            }
+        }
+    ]
 }

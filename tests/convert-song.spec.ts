@@ -23,31 +23,31 @@ const FINAL_TRACK_1_SECTIONS = 10;
 
 test('Convert song', async ({ page }) => {
     await page.goto('/?e2e-test');
-    await page.locator('[data-test="skip"]').click({ force: true });
-    await page.locator('[data-test="save-button"]').click({ force: true });
-    await page.locator('[data-test="edit-songs"]').click();
-    await page.locator('[data-test="convert-song"]').click();
+    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('save-button').click({ force: true });
+    await page.getByTestId('edit-songs').click();
+    await page.getByTestId('convert-song').click();
 
-    await expect(page.locator('[data-test="basic-data"]')).toBeVisible();
-    await expect(page.locator('[data-test="previous-button"]')).toBeDisabled();
+    await expect(page.getByTestId('basic-data')).toBeVisible();
+    await expect(page.getByTestId('previous-button')).toBeDisabled();
 
     await page.locator('[data-test="source-url"] input').fill(FINAL_SOURCE_URL);
 
-    await page.locator('[data-test="input-txt"]').fill(txtfile);
+    await page.getByTestId('input-txt').fill(txtfile);
 
-    await page.locator('[data-test="next-button"]').click();
-    await expect(page.locator('[data-test="basic-data"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="previous-button"]')).not.toBeDisabled();
-    await expect(page.locator('[data-test="author-and-vid"]')).toBeVisible();
+    await page.getByTestId('next-button').click();
+    await expect(page.getByTestId('basic-data')).not.toBeVisible();
+    await expect(page.getByTestId('previous-button')).not.toBeDisabled();
+    await expect(page.getByTestId('author-and-vid')).toBeVisible();
 
-    await page.locator('[data-test="previous-button"]').click();
-    await expect(page.locator('[data-test="basic-data"]')).toBeVisible();
-    await expect(page.locator('[data-test="author-and-vid"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="previous-button"]')).toBeDisabled();
-    await page.locator('[data-test="next-button"]').click();
+    await page.getByTestId('previous-button').click();
+    await expect(page.getByTestId('basic-data')).toBeVisible();
+    await expect(page.getByTestId('author-and-vid')).not.toBeVisible();
+    await expect(page.getByTestId('previous-button')).toBeDisabled();
+    await page.getByTestId('next-button').click();
 
     // Author and vid
-    await expect(page.locator('[data-test="search-video"]')).not.toBeDisabled();
+    await expect(page.getByTestId('search-video')).not.toBeDisabled();
 
     await page.locator('[data-test="author-name"] input').fill(FINAL_AUTHOR);
 
@@ -56,14 +56,14 @@ test('Convert song', async ({ page }) => {
     await page.locator('[data-test="video-url"] input').fill(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
 
     // Make sure the data stays
-    await page.locator('[data-test="next-button"]').click();
-    await expect(page.locator('[data-test="author-and-vid"]')).not.toBeVisible();
-    await page.locator('[data-test="previous-button"]').click();
-    await expect(page.locator('[data-test="author-and-vid"]')).toBeVisible();
+    await page.getByTestId('next-button').click();
+    await expect(page.getByTestId('author-and-vid')).not.toBeVisible();
+    await page.getByTestId('previous-button').click();
+    await expect(page.getByTestId('author-and-vid')).toBeVisible();
     await expect(page.locator('[data-test="video-url"] input')).toHaveValue(
         `https://www.youtube.com/watch?v=${VIDEO_ID}`,
     );
-    await page.locator('[data-test="next-button"]').click();
+    await page.getByTestId('next-button').click();
 
     // Sync lyrics
     // Playback control
@@ -76,7 +76,7 @@ test('Convert song', async ({ page }) => {
     const speedControls = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2];
     for (const control of speedControls) {
         await page.locator(`[data-test="speed-${control}"]`).click();
-        await expect(page.locator('[data-test="current-speed"]')).toHaveText(`${control * 100}%`);
+        await expect(page.getByTestId('current-speed')).toHaveText(`${control * 100}%`);
     }
     // Video gap
     const videoGapControls = ['+1', '+5', '+10', '-1', '-5', '-10'];
@@ -104,44 +104,44 @@ test('Convert song', async ({ page }) => {
 
     // BPM Manipulation
     await page.locator('[data-test="desired-end"] input').fill('29575'); // Initial value + final gap / 2
-    await expect(page.locator('[data-test="desired-bpm"]')).toContainText('200');
+    await expect(page.getByTestId('desired-bpm')).toContainText('200');
 
     await page.locator('[data-test="change-bpm"] input').fill(FINAL_BPM);
 
     // Edit sections
-    await page.locator('[data-test="track-2"]').click();
-    await expect(page.locator('[data-test="section-0"]')).toContainText('Second Track');
-    await page.locator('[data-test="track-1"]').click();
-    await expect(page.locator('[data-test="section-0"]')).not.toContainText('Second Track');
-    await page.locator('[data-test="section-0"]').click();
-    await expect(page.locator('[data-test="use-gap-info"]')).toBeVisible();
+    await page.getByTestId('track-2').click();
+    await expect(page.getByTestId('section-0')).toContainText('Second Track');
+    await page.getByTestId('track-1').click();
+    await expect(page.getByTestId('section-0')).not.toContainText('Second Track');
+    await page.getByTestId('section-0').click();
+    await expect(page.getByTestId('use-gap-info')).toBeVisible();
 
     // Moving a section changes the time of subsequent sections
-    await page.locator('[data-test="section-1"]').click();
+    await page.getByTestId('section-1').click();
     await page.locator('[data-test="change-start-beat"] input').fill('40');
-    await page.locator('[data-test="section-2"]').click();
+    await page.getByTestId('section-2').click();
     await expect(page.locator('[data-test="change-start-beat"] input')).toHaveValue('76');
-    await page.locator('[data-test="undo-change"]').click();
+    await page.getByTestId('undo-change').click();
     await expect(page.locator('[data-test="change-start-beat"] input')).toHaveValue('56');
 
     // Deleting a section doesn't change the time of subsequent sections
-    await page.locator('[data-test="delete-section"]').click();
+    await page.getByTestId('delete-section').click();
     await expect(page.locator('[data-test="change-start-beat"] input')).toHaveValue('103'); // next section
-    await page.locator('[data-test="undo-change"]').click();
-    await page.locator('[data-test="section-3"]').click();
+    await page.getByTestId('undo-change').click();
+    await page.getByTestId('section-3').click();
     await expect(page.locator('[data-test="change-start-beat"] input')).toHaveValue('103'); // next section
 
-    await page.locator('[data-test="section-9"]').click();
-    await page.locator('[data-test="delete-section"]').click();
+    await page.getByTestId('section-9').click();
+    await page.getByTestId('delete-section').click();
 
-    await page.locator('[data-test="next-button"]').click();
-    await page.locator('[data-test="previous-button"]').click();
+    await page.getByTestId('next-button').click();
+    await page.getByTestId('previous-button').click();
 
     await expect(page.locator('[data-test="shift-video-gap"] input')).toHaveValue('10');
     await expect(page.locator('[data-test="shift-gap"] input')).toHaveValue('1000');
     await expect(page.locator('[data-test="change-bpm"] input')).toHaveValue(FINAL_BPM);
 
-    await page.locator('[data-test="next-button"]').click();
+    await page.getByTestId('next-button').click();
 
     // Song metadata
     await expect(page.locator('[data-test="song-language"] input')).toHaveValue('English');
@@ -153,9 +153,9 @@ test('Convert song', async ({ page }) => {
     await page.locator('[data-test="song-bpm"] input').fill(FINAL_SONG_BPM);
 
     // Download song
-    await expect(page.locator('[data-test="next-button"]')).not.toBeVisible();
-    await expect(page.locator('[data-test="save-button"]')).toBeVisible();
-    await page.locator('[data-test="save-button"]').click();
+    await expect(page.getByTestId('next-button')).not.toBeVisible();
+    await expect(page.getByTestId('save-button')).toBeVisible();
+    await page.getByTestId('save-button').click();
 
     const [download] = await Promise.all([
         page.waitForEvent('download'),

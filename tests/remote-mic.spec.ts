@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
+import connectRemotePhone from './steps/connectRemotePhone';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -9,45 +10,30 @@ test.beforeEach(async ({ page, context }) => {
 test('Remote mic should connect and be selectable', async ({ page, context }) => {
     test.slow();
     await page.goto('/?e2e-test');
-    await page.locator('[data-test="remote-mics"]').click({ force: true });
-    const serverUrl = await page.locator('[data-test="server-link-input"]').inputValue();
+    await page.getByTestId('remote-mics').click({ force: true });
 
     // Connect blue microphone
-    const remoteMicBluePage = await context.newPage();
-
-    await remoteMicBluePage.goto(serverUrl);
-    await remoteMicBluePage.locator('[data-test="player-name-input"]').fill('E2E Test Blue');
-    await remoteMicBluePage.locator('[data-test="connect-button"]').click();
-    await expect(remoteMicBluePage.locator('[data-test="connect-button"]')).toContainText('Connected', {
-        ignoreCase: true,
-    });
+    const remoteMicBluePage = await connectRemotePhone(page, context, 'E2E Test Blue');
 
     // Connect red microphone
-    const remoteMicRed = await context.newPage();
-
-    await remoteMicRed.goto(serverUrl);
-    await remoteMicRed.locator('[data-test="player-name-input"]').fill('E2E Test Red');
-    await remoteMicRed.locator('[data-test="connect-button"]').click();
-    await expect(remoteMicRed.locator('[data-test="connect-button"]')).toContainText('Connected', {
-        ignoreCase: true,
-    });
+    const remoteMicRed = await connectRemotePhone(page, context, 'E2E Test Red');
 
     // Assert auto selection of inputs
-    await expect(page.locator('[data-test="mic-check-p1"]')).toContainText('E2E Test Blue', { ignoreCase: true });
-    await expect(page.locator('[data-test="mic-check-p2"]')).toContainText('E2E Test Red', { ignoreCase: true });
+    await expect(page.getByTestId('mic-check-p1')).toContainText('E2E Test Blue', { ignoreCase: true });
+    await expect(page.getByTestId('mic-check-p2')).toContainText('E2E Test Red', { ignoreCase: true });
 
-    await page.locator('[data-test="save-button"]').click({ force: true });
+    await page.getByTestId('save-button').click({ force: true });
 
-    await expect(page.locator('[data-test="sing-a-song"]')).toBeVisible();
+    await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
     // Check if the phones reconnect automatically
     await page.reload();
 
-    await expect(remoteMicBluePage.locator('[data-test="connect-button"]')).toContainText('Connected', {
+    await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {
         ignoreCase: true,
     });
 
-    await expect(remoteMicRed.locator('[data-test="connect-button"]')).toContainText('Connected', {
+    await expect(remoteMicRed.getByTestId('connect-button')).toContainText('Connected', {
         ignoreCase: true,
     });
 
@@ -61,22 +47,22 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     ]);
 
     // Check singing a song
-    await page.locator('[data-test="sing-a-song"]').click({ force: true });
+    await page.getByTestId('sing-a-song').click({ force: true });
 
-    await page.locator('[data-test="song-e2e-test-multitrack.json"]').dblclick();
-    await page.locator('[data-test="next-step-button"]').click({ force: true });
-    await page.locator('[data-test="play-song-button"]').click({ force: true });
-    await expect(page.locator('[data-test="highscores-button"]')).toBeVisible({ timeout: 20_000 });
+    await page.getByTestId('song-e2e-test-multitrack.json').dblclick();
+    await page.getByTestId('next-step-button').click({ force: true });
+    await page.getByTestId('play-song-button').click({ force: true });
+    await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 20_000 });
 
     await page.waitForTimeout(1000); // let the animation score run for a while
-    const p1score = await page.locator('[data-test="player-1-score"]').getAttribute('data-score');
+    const p1score = await page.getByTestId('player-1-score').getAttribute('data-score');
 
     expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
 
-    await expect(page.locator('[data-test="player-1-name"]')).toHaveText('E2E Test Blue');
-    await expect(page.locator('[data-test="player-2-name"]')).toHaveText('E2E Test Red');
+    await expect(page.getByTestId('player-1-name')).toHaveText('E2E Test Blue');
+    await expect(page.getByTestId('player-2-name')).toHaveText('E2E Test Red');
 
-    await page.locator('[data-test="highscores-button"]').click({ force: true });
-    await page.locator('[data-test="play-next-song-button"]').click({ force: true });
-    await expect(page.locator('[data-test="song-e2e-test-multitrack.json"]')).toBeVisible();
+    await page.getByTestId('highscores-button').click({ force: true });
+    await page.getByTestId('play-next-song-button').click({ force: true });
+    await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
 });
