@@ -96,7 +96,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
             focused,
             [propName]: onActive,
             keyboardNavigationChangeFocus: handleNavigation,
-            ...(focused ? { 'data-focused': focused } : {}),
+            ...(enabled ? { 'data-focused': focused } : {}),
         };
     };
 

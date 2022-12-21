@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
+import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -20,52 +21,51 @@ test('Basic sing a song', async ({ page }) => {
     await expect(page.getByTestId('next-step-button')).toBeVisible();
     await page.keyboard.press('Backspace'); // escape
     await expect(page.getByTestId('next-step-button')).not.toBeVisible();
-    await page.keyboard.press('ArrowRight'); // next song
+    await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');
     await page.keyboard.press('Enter'); // focus
     await expect(page.getByTestId('next-step-button')).toBeVisible();
 
     // Game mode
-    await page.keyboard.press('ArrowUp'); // game mode
+    await navigateWithKeyboard(page, 'game-mode-setting');
     await page.keyboard.press('Enter'); // change to pass the mic
     await expect(page.getByTestId('game-mode-setting')).toHaveAttribute('data-test-value', 'Pass The Mic');
 
     // Difficulty
-    await page.keyboard.press('ArrowUp'); // difficulty
+    await navigateWithKeyboard(page, 'difficulty-setting');
     await page.keyboard.press('Enter'); // change to hard
     await expect(page.getByTestId('difficulty-setting')).toHaveAttribute('data-test-value', 'Hard');
 
-    await page.keyboard.press('ArrowUp'); // Next step button
+    await navigateWithKeyboard(page, 'next-step-button');
     await page.keyboard.press('Enter', { delay: 40 }); // Go to next step
 
     // Player 1
     // Name
     await expect(page.getByTestId('player-1-name')).toBeVisible();
-    await page.keyboard.press('ArrowDown', { delay: 40 }); // Setup mics
-    await page.keyboard.press('ArrowDown', { delay: 40 }); // player 1 name
+    await navigateWithKeyboard(page, 'player-1-name');
     await page.keyboard.press('Enter', { delay: 40 }); // activate
     await expect(page.getByTestId('player-1-name')).toBeFocused();
     await page.keyboard.type('E2E Player 1'); // enter
     await page.keyboard.press('Enter'); // save
     await expect(page.getByTestId('player-1-name')).not.toBeFocused();
     // Track
-    await page.keyboard.press('ArrowDown'); // player 1 track
+    await navigateWithKeyboard(page, 'player-1-track-setting');
     await page.keyboard.press('Enter'); // change to track 2
     await expect(page.getByTestId('player-1-track-setting')).toHaveAttribute('data-test-value', '2');
 
     // Player 2
     // Name
-    await page.keyboard.press('ArrowDown'); // player 2 name
+    await navigateWithKeyboard(page, 'player-2-name');
     await page.keyboard.press('Enter'); // activate
     await expect(page.getByTestId('player-2-name')).toBeFocused();
     await page.keyboard.type('E2E Player 2'); // enter
     // Track
-    await page.keyboard.press('ArrowDown'); // player 2 track
+    await navigateWithKeyboard(page, 'player-2-track-setting');
     await expect(page.getByTestId('player-2-name')).not.toBeFocused();
     await page.keyboard.press('Enter'); // change to track 1
     await expect(page.getByTestId('player-2-track-setting')).toHaveAttribute('data-test-value', '1');
 
     // Start song
-    await page.keyboard.press('ArrowDown');
+    await navigateWithKeyboard(page, 'play-song-button');
     await page.keyboard.press('Enter');
 
     const p1CL = '[data-test="lyrics-current-player-1"]';

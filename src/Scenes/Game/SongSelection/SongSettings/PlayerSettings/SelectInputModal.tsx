@@ -5,9 +5,10 @@ import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 interface Props {
     onClose: () => void;
     playerNames: string[];
+    required: boolean;
 }
 
-export default function SelectInputModal({ onClose, playerNames }: Props) {
+export default function SelectInputModal({ onClose, playerNames, required }: Props) {
     return (
         <>
             <Backdrop onClick={onClose} />
@@ -15,7 +16,7 @@ export default function SelectInputModal({ onClose, playerNames }: Props) {
                 <MenuContainer onClick={(e) => e.stopPropagation()}>
                     <SelectInputView
                         onFinish={onClose}
-                        closeButtonText="Back to player setup"
+                        closeButtonText={required ? 'Continue to the song' : 'Back to player setup'}
                         playerNames={playerNames}
                     />
                 </MenuContainer>

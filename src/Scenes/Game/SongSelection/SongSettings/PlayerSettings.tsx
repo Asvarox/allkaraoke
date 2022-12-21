@@ -71,12 +71,13 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
 
     const { register } = useKeyboardNav({ enabled: keyboardControl && !showModal, onBackspace: onExitKeyboardControl });
 
-    const areInputsConfigured = storedPreference && storedPreference !== 'skip';
+    const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
 
     return (
         <>
             {showModal && (
                 <SelectInputModal
+                    required={!areInputsConfigured}
                     onClose={() => setShowModal(false)}
                     playerNames={playerSetup.map((setup) => setup.name)}
                 />

@@ -121,6 +121,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                     video={song.video}
                                     focused={!showFilters && keyboardControl && index === focusedSong}
                                     data-index={index}
+                                    {...(!showFilters && keyboardControl
+                                        ? { 'data-focused': index === focusedSong }
+                                        : {})}
                                     data-test={`song-${song.file}`}>
                                     <SongCardBackground
                                         style={{
