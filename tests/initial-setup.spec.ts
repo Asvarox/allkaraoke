@@ -13,7 +13,7 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
     await page.goto('/?e2e-test');
 
     await page.getByTestId('mics').click({ force: true });
-    await expect(page.getByTestId('setup-not-completed')).toBeVisible();
+    await expect(page.getByTestId('advanced-tip')).toBeVisible();
 
     const singstarDevice = {
         id: 'test',

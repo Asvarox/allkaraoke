@@ -5,10 +5,10 @@ import { useEventEffect, useEventListenerSelector } from 'Scenes/Game/Singing/Ho
 import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
-import { CheckCircle } from '@mui/icons-material';
 import InputSources from 'Scenes/SelectInput/InputSources';
+import styled from '@emotion/styled';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -20,6 +20,7 @@ interface Props {
 function SingStarMics(props: Props) {
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
     const { Microphone } = useMicrophoneList(true);
+    const [showAdvancedTip, setShowAdvancedTip] = useState(false);
 
     const isSetup = useEventListenerSelector(
         [GameStateEvents.playerInputChanged, GameStateEvents.inputListChanged],
@@ -68,22 +69,36 @@ function SingStarMics(props: Props) {
         props.onSetupComplete(isSetup);
     }, [isSetup]);
 
+    useEffect(() => {
+        if (isSetup) {
+            setShowAdvancedTip(false);
+        } else {
+            const timeout = setTimeout(() => setShowAdvancedTip(true), 2500);
+
+            return () => clearTimeout(timeout);
+        }
+    }, [isSetup]);
+
     return (
         <>
             {!isSetup && (
                 <>
                     <h3>Connect your SingStar microphones.</h3>
                     <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
-                    <h4>
-                        If detection doesn't happen, try <strong>Advanced</strong> section in the previous menu.
-                    </h4>
+                    {showAdvancedTip && (
+                        <h4 data-test="advanced-tip">
+                            If detection doesn't happen, try{' '}
+                            <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous menu.
+                        </h4>
+                    )}
                 </>
             )}
             {isSetup && (
                 <>
                     <h2 data-test="setup-completed">
-                        <CheckCircle /> <strong>SingStar</strong> microphone connected!
+                        <strong>SingStar</strong> microphone connected!
                     </h2>
+
                     <MicCheck names={['Blue', 'Red']} />
                 </>
             )}
@@ -100,5 +115,9 @@ function SingStarMics(props: Props) {
         </>
     );
 }
+
+const AdvancedLink = styled.strong`
+    cursor: pointer;
+`;
 
 export default SingStarMics;
