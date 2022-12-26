@@ -87,3 +87,28 @@ test('Remote mic is deselected when it disconnects', async ({ page, context }) =
         timeout: 10_000,
     });
 });
+
+test('Default microphone is selected for built-in', async ({ page, context }) => {
+    const { connectDevices } = await stubUserMedia({ page, context });
+    await page.goto('/?e2e-test');
+
+    await connectDevices({
+        id: 'not-related-device',
+        label: 'Not related',
+        channels: 2,
+    });
+
+    await page.getByTestId('built-in').click({ force: true });
+
+    await expect(page.getByTestId('selected-mic')).toContainText('Default device');
+    // Select some different mic
+    await page.getByTestId('back-button').click({ force: true });
+    await page.getByTestId('advanced').click({ force: true });
+    await page.getByTestId('player-1-input').click({ force: true });
+    await page.getByTestId('player-2-input').click({ force: true });
+
+    // Make sure that it still selects the default one
+    await page.getByTestId('back-button').click({ force: true });
+    await page.getByTestId('built-in').click({ force: true });
+    await expect(page.getByTestId('selected-mic')).toContainText('Default device');
+});

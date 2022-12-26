@@ -27,7 +27,11 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
     public constructor(private name: string, private track: boolean | ((...args: Parameters<T>) => any) = false) {}
 }
 
-const trackSongData = ({ artist, title }: Song | SongPreview, setup: SingSetup) => ({
+const trackSongData = (
+    { artist, title }: Song | SongPreview,
+    setup: SingSetup,
+    scores: Array<{ name: string; score: number }> = [],
+) => ({
     name: `${artist} - ${title}`,
     artist,
     title,
@@ -35,6 +39,7 @@ const trackSongData = ({ artist, title }: Song | SongPreview, setup: SingSetup) 
     tolerance: setup.tolerance,
     players: setup.players.length,
     skipIntro: setup.skipIntro,
+    ...scores.reduce((curr, score, index) => ({ ...curr, [`${score}${index}`]: score.score }), {}),
 });
 
 export const events = {

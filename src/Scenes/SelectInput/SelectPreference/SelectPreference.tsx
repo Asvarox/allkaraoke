@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { css } from '@emotion/react';
 import { focused } from 'Elements/cssMixins';
-import { PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
+import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { SvgIcon } from '@mui/material';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
@@ -37,6 +37,20 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                     </OptionDescription>
                 </div>
             </Option>
+            <Option {...register('built-in', () => onPreferenceSelected('built-in'))} data-test="built-in">
+                <OptionIconContainer>
+                    <Person />
+                    <Laptop />
+                </OptionIconContainer>
+                <div>
+                    This computer (built-in) microphone
+                    <OptionDescription>
+                        A single voice will be detected. Great to <strong>test the app</strong>,{' '}
+                        <strong>sing alone</strong> or don't care about the rivalry at the party
+                    </OptionDescription>
+                </div>
+            </Option>
+            <hr />
             <Option {...register('mics', () => onPreferenceSelected('mics'))} data-test="mics">
                 <OptionIconContainer>
                     <MicIcon />
@@ -63,6 +77,7 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                     </OptionDescription>
                 </div>
             </Option>
+            <hr />
             <MenuButton {...register('skip', () => onPreferenceSelected('skip'))} data-test="skip">
                 Skip
             </MenuButton>
@@ -81,7 +96,7 @@ const MicIcon = () => (
 
 const OptionDescription = styled.div<{ focused?: boolean }>`
     padding: 0 0 0 1em;
-    font-size: 0.65em;
+    font-size: 0.63em;
     max-height: 0;
     overflow: clip;
     transition: 300ms;
@@ -122,7 +137,7 @@ const Option = styled(MenuButton)<{ focused?: boolean }>`
     ${(props) =>
         props.focused
             ? css`
-                  height: 200px;
+                  height: 165px;
                   background: black;
                   ${focused};
 

@@ -5,6 +5,7 @@ import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from '
 import SingStarMics from 'Scenes/SelectInput/Variants/SingStarMics';
 import Skip from 'Scenes/SelectInput/Variants/Skip';
 import Advanced from 'Scenes/SelectInput/Variants/Advanced';
+import BuiltIn from 'Scenes/SelectInput/Variants/BuiltIn';
 
 interface Props {
     onFinish: (pref: typeof MicSetupPreference[number]) => void;
@@ -29,13 +30,15 @@ function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
     return (
         <>
             <h1>How do you want to sing?</h1>
-            <hr />
             {preference === null && <SelectPreference onPreferenceSelected={setPreference} />}
             {preference === 'remoteMics' && (
                 <RemoteMics onBack={back} onSave={onSave('remoteMics')} closeButtonText={closeButtonText} />
             )}
             {preference === 'mics' && (
                 <SingStarMics onBack={back} onSave={onSave('mics')} closeButtonText={closeButtonText} />
+            )}
+            {preference === 'built-in' && (
+                <BuiltIn onBack={back} onSave={onSave('built-in')} closeButtonText={closeButtonText} />
             )}
             {preference === 'advanced' && (
                 <Advanced

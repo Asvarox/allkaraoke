@@ -8,6 +8,7 @@ import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphon
 import { useEffect } from 'react';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { CheckCircle } from '@mui/icons-material';
+import InputSources from 'Scenes/SelectInput/InputSources';
 
 interface Props {
     onBack: () => void;
@@ -26,8 +27,11 @@ function SingStarMics(props: Props) {
 
             const isSameDeviceId = [...new Set(inputs.map((input) => input.deviceId))].length === 1;
             const isMicInput = !inputs.find((input) => input.inputSource !== 'Microphone');
+            const areAllPreferred = !inputs.find(
+                (input) => InputSources.getInputForPlayerSelected(input)!.preferred === undefined,
+            );
 
-            return isSameDeviceId && isMicInput;
+            return isSameDeviceId && isMicInput && areAllPreferred;
         },
     );
 
@@ -65,6 +69,9 @@ function SingStarMics(props: Props) {
                 <>
                     <h3>Connect your SingStar microphones.</h3>
                     <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
+                    <h4>
+                        If detection doesn't happen, try <strong>Advanced</strong> section in the previous menu.
+                    </h4>
                 </>
             )}
             {isSetup && (

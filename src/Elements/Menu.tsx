@@ -18,13 +18,13 @@ export const MenuButton = styled(Button)<{ focused?: boolean }>`
 
 export const MenuContainer = styled.div`
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 15px;
     width: 750px;
-    margin: 50px auto;
+    margin: 20px auto 0 auto;
     font-size: 26px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 
     h1 {
         ${typography};
@@ -57,7 +57,7 @@ export const MenuContainer = styled.div`
     }
 
     hr {
-        margin: 10px;
+        margin: 5px 10px;
         opacity: 0.25;
     }
 

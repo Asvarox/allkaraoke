@@ -21,7 +21,7 @@ const mapInputName = (label: string, channel: number, channels: number) => {
     if (singstarWirelessMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
     if (singstarWiredMicMapper.test(label, channel)) return singstarWiredMicMapper.map(label, channel);
 
-    return channels > 0 ? `${label} (ch ${channel + 1})` : label;
+    return channels > 1 ? `${label} (ch ${channel + 1})` : label;
 };
 
 export class MicrophoneInputSource {
