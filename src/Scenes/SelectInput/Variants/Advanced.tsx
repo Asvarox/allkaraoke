@@ -6,8 +6,10 @@ import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
+import { useEffect } from 'react';
 
 interface Props {
+    onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
@@ -18,6 +20,10 @@ function Advanced(props: Props) {
     const inputs = useMicrophoneList(true);
     const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs);
     const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
+
+    useEffect(() => {
+        props.onSetupComplete(true);
+    }, []);
 
     useRemoteMicAutoselect();
 

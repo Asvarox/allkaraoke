@@ -11,6 +11,7 @@ import { CheckCircle } from '@mui/icons-material';
 import InputSources from 'Scenes/SelectInput/InputSources';
 
 interface Props {
+    onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
@@ -62,6 +63,10 @@ function SingStarMics(props: Props) {
             });
         }
     });
+
+    useEffect(() => {
+        props.onSetupComplete(isSetup);
+    }, [isSetup]);
 
     return (
         <>

@@ -10,6 +10,7 @@ import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAut
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 
 interface Props {
+    onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
@@ -43,6 +44,12 @@ function RemoteMics(props: Props) {
     const onContinue = () => {
         props.onSave();
     };
+
+    const isComplete = !!players[0]?.label && !!players[1]?.label;
+
+    useEffect(() => {
+        props.onSetupComplete(isComplete);
+    }, [isComplete]);
 
     return (
         <>

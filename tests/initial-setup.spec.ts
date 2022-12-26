@@ -111,4 +111,11 @@ test('Default microphone is selected for built-in', async ({ page, context }) =>
     await page.getByTestId('back-button').click({ force: true });
     await page.getByTestId('built-in').click({ force: true });
     await expect(page.getByTestId('selected-mic')).toContainText('Default device');
+
+    // Check if the initial setup doesn't show after refresh
+    await page.getByTestId('save-button').click({ force: true });
+
+    await page.reload();
+
+    await expect(page.getByTestId('sing-a-song')).toBeVisible();
 });

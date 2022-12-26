@@ -9,6 +9,7 @@ import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 
 interface Props {
+    onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
@@ -45,6 +46,10 @@ function BuiltIn(props: Props) {
 
     useEffect(autoselect, []);
     useEventEffect(GameStateEvents.inputListChanged, autoselect);
+
+    useEffect(() => {
+        props.onSetupComplete(!!selectedMic);
+    }, [selectedMic]);
 
     return (
         <>

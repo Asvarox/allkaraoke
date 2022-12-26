@@ -3,6 +3,7 @@ import { MenuButton } from 'Elements/Menu';
 import styled from '@emotion/styled';
 
 interface Props {
+    onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
