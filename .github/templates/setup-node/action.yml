@@ -8,6 +8,7 @@ runs:
   steps:
     - uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        # Newer versions might fail https://github.com/yarnpkg/berry/issues/4778
+        node-version: '16.16.0'
     - run: yarn install
       shell: bash
