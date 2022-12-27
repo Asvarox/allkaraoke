@@ -1,5 +1,5 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
-import { devices } from '@playwright/test';
+import type { PlaywrightTestConfig } from "@playwright/test";
+import { devices } from "@playwright/test";
 
 /**
  * Read environment variables from file.
@@ -120,6 +120,7 @@ const config: PlaywrightTestConfig = {
         ? {
               command: 'yarn build:serve',
               port: 3010,
+            timeout: 60_000 * 3,
           }
         : undefined,
 };
