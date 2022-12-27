@@ -1,7 +1,7 @@
-import { expect, test } from '@playwright/test';
-import { Song } from '../src/interfaces';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
-import { initTestMode, mockSongs } from './helpers';
+import { expect, test } from "@playwright/test";
+import { Song } from "../src/interfaces";
+import convertTxtToSong from "../src/Songs/utils/convertTxtToSong";
+import { initTestMode, mockSongs } from "./helpers";
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -22,6 +22,7 @@ const FINAL_TRACKS = 2;
 const FINAL_TRACK_1_SECTIONS = 10;
 
 test('Convert song', async ({ page }) => {
+    test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('skip').click({ force: true });
     await page.getByTestId('save-button').click({ force: true });
