@@ -1,5 +1,5 @@
-import { Canvas, createCanvas } from 'canvas';
-import { drawSprite, getSprite } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites';
+import { Canvas, createCanvas } from "canvas";
+import { drawSprite, getSprite } from "Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites";
 //
 // jest.mock('./utils/createCanvas', () => ({
 //     __esModule: true,
@@ -19,7 +19,7 @@ describe('Drawing', () => {
         });
         it('Should return proper coordinates to draw a legit note', () => {
             const canvas = createCanvas(100, 100);
-            const ctx = canvas.getContext('2d');
+            const ctx = canvas.getContext('2d') as any as CanvasRenderingContext2D;
 
             const start = drawSprite(ctx, 'blueHit', 'start', 10, 10);
             drawSprite(ctx, 'blueHit', 'middle', 10 + start.w, 10, 40);
@@ -29,7 +29,7 @@ describe('Drawing', () => {
         });
         it('Should return proper coordinates to draw a legit small note', () => {
             const canvas = createCanvas(100, 100);
-            const ctx = canvas.getContext('2d');
+            const ctx = canvas.getContext('2d') as any as CanvasRenderingContext2D;
 
             const start = drawSprite(ctx, 'blueMiss', 'start', 10, 10);
             drawSprite(ctx, 'blueMiss', 'middle', 10 + start.w, 10, 40);

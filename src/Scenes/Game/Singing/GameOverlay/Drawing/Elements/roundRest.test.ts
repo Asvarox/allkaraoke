@@ -1,12 +1,12 @@
-import { createCanvas } from 'canvas';
-import roundRect from './roundRect';
+import { createCanvas } from "canvas";
+import roundRect from "./roundRect";
 
 describe('Drawing', () => {
     describe('roundRect', function () {
         it('Should draw a round rect', () => {
             const canvas = createCanvas(100, 100);
 
-            const ctx = canvas.getContext('2d');
+            const ctx = canvas.getContext('2d') as any as CanvasRenderingContext2D;
 
             ctx.fillStyle = 'red';
             ctx.strokeStyle = 'blue';
