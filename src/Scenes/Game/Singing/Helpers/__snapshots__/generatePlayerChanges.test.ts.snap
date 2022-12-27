@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generatePlayerChanges should handle real life examples better 1`] = `
-Array [
-  Array [
+[
+  [
     73,
     136,
     231,
@@ -17,8 +17,8 @@ Array [
 `;
 
 exports[`generatePlayerChanges should handle real life examples better 2`] = `
-Array [
-  Array [
+[
+  [
     291,
     566,
     998,
@@ -33,8 +33,8 @@ Array [
 `;
 
 exports[`generatePlayerChanges should handle real life examples better 3`] = `
-Array [
-  Array [
+[
+  [
     184,
     378,
     572,
@@ -49,8 +49,8 @@ Array [
 `;
 
 exports[`generatePlayerChanges should handle real life examples better 4`] = `
-Array [
-  Array [
+[
+  [
     667,
     916,
     1222,
@@ -65,8 +65,8 @@ Array [
 `;
 
 exports[`generatePlayerChanges should handle real life examples better 5`] = `
-Array [
-  Array [
+[
+  [
     586,
     1182,
     1810,
@@ -81,8 +81,8 @@ Array [
 `;
 
 exports[`generatePlayerChanges should handle real life examples better 6`] = `
-Array [
-  Array [
+[
+  [
     457,
     861,
     1285,

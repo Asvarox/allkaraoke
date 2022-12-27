@@ -19,10 +19,10 @@ runs:
         key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-playwright-
-    - run: npx playwright install --with-deps chromium
+    - run: yarn playwright install --with-deps chromium
       if: steps.playwright-cache.outputs.cache-hit != 'true'
       shell: bash
-    - run: npx playwright install-deps chromium
+    - run: yarn playwright install-deps chromium
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
     - name: CT Test run
