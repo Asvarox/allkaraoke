@@ -1,7 +1,7 @@
-import type { PlaywrightTestConfig } from '@playwright/experimental-ct-react';
-import { devices } from '@playwright/experimental-ct-react';
-import react from '@vitejs/plugin-react';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import type { PlaywrightTestConfig } from "@playwright/experimental-ct-react";
+import { devices } from "@playwright/experimental-ct-react";
+import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -25,6 +25,7 @@ const config: PlaywrightTestConfig = {
     reporter: 'html',
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
+        testIdAttribute: 'data-test',
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: 'on-first-retry',
 

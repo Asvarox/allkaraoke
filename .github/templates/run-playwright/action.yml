@@ -35,3 +35,4 @@ runs:
         path: |
           playwright-report
           test-results
+          __snapshots__

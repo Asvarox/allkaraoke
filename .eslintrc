@@ -7,7 +7,7 @@
     },
     "overrides": [
         {
-            "files": ["tests/**.ts"],
+            "files": ["tests/**.ts", "src/**/*.spec.tsx"],
             "rules": {
                 "testing-library/prefer-screen-queries": "off"
             }

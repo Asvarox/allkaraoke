@@ -1,23 +1,23 @@
-import { noDistanceNoteTypes } from 'consts';
-import { Note, NotesSection, PlayerNote } from 'interfaces';
-import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
-import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
-import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
-import random from 'utils/randomValue';
-import GameState from '../../GameState/GameState';
-import GameStateEvents from '../../GameState/GameStateEvents';
-import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
-import isNotesSection from 'Songs/utils/isNotesSection';
-import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
-import debugPitches from './Elements/debugPitches';
-import drawNote from './Elements/note';
-import drawPlayerFrequencyTrace from './Elements/playerFrequencyTrace';
-import drawPlayerNote from './Elements/playerNote';
-import ParticleManager from './ParticleManager';
-import ExplodingNoteParticle from './Particles/ExplodingNote';
-import FadeoutNote from './Particles/FadeoutNote';
-import RayParticle from './Particles/Ray';
-import VibratoParticle from './Particles/Vibrato';
+import { noDistanceNoteTypes } from "consts";
+import { Note, NotesSection, PlayerNote } from "interfaces";
+import getNoteColor from "Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor";
+import SungTriangle from "Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle";
+import { FPSCountSetting, GraphicSetting } from "Scenes/Settings/SettingsState";
+import random from "utils/randomValue";
+import GameState from "../../GameState/GameState";
+import GameStateEvents from "../../GameState/GameStateEvents";
+import getPlayerNoteDistance from "../../Helpers/getPlayerNoteDistance";
+import isNotesSection from "Songs/utils/isNotesSection";
+import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from "./calculateData";
+import debugPitches from "./Elements/debugPitches";
+import drawNote from "./Elements/note";
+import drawPlayerFrequencyTrace from "./Elements/playerFrequencyTrace";
+import drawPlayerNote from "./Elements/playerNote";
+import ParticleManager from "./ParticleManager";
+import ExplodingNoteParticle from "./Particles/ExplodingNote";
+import FadeoutNote from "./Particles/FadeoutNote";
+import RayParticle from "./Particles/Ray";
+import VibratoParticle from "./Particles/Vibrato";
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
     return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);
@@ -35,7 +35,7 @@ export default class CanvasDrawing {
     };
 
     public drawFrame = () => {
-        const startTime = performance.now();
+        const startTime = Date.now();
         const ctx = this.canvas.getContext('2d');
         if (!ctx) return;
 
@@ -46,7 +46,7 @@ export default class CanvasDrawing {
         ParticleManager.tick(ctx, this.canvas);
 
         if (FPSCountSetting.get() === 30) {
-            const endTime = performance.now();
+            const endTime = Date.now();
             const baseTimeout = 1000 / 30;
             const finalTimeout = endTime - startTime > baseTimeout ? baseTimeout : baseTimeout - (endTime - startTime);
             if (this.loop) setTimeout(this.drawFrame, finalTimeout, FPSCountSetting.get());
