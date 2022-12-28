@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/experimental-ct-react";
-import { TestCanvas } from "utils/TestCanvas";
+import { TestCanvas } from "../../../../../../../utils/TestCanvas";
 
 test.use({ viewport: { width: 57, height: 872 } });
 

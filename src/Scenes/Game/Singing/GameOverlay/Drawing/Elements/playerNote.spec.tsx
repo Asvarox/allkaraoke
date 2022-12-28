@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/experimental-ct-react";
-import { TestCanvas } from "utils/TestCanvas";
+import { TestCanvas } from "../../../../../../utils/TestCanvas";
 import { generateNote, generatePlayerNote } from "testUtilts";
 import tuple from "utils/tuple";
 
