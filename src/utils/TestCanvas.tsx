@@ -57,7 +57,5 @@ export const TestCanvas = (props: Props) => {
         InputManager.setPlayerInput(1, 'DrawingTest', 1);
     }, []);
 
-    return <div style={{ background: 'black'}}>
-        <canvas width={props.width} height={props.height} id={'canvas'} />
-    </div>
+    return <canvas width={props.width} height={props.height} id={'canvas'} />
 }
