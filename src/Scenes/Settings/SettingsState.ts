@@ -1,19 +1,22 @@
-import { useEffect, useState } from 'react';
-import { ValuesType } from 'utility-types';
+import { useEffect, useState } from "react";
+import { ValuesType } from "utility-types";
 
 class Setting<T> {
-    private value: T;
+    private value: T | undefined = undefined;
 
     private listeners: Array<(newValue: T) => void> = [];
     public constructor(
         private name: string,
-        defaultValue: T,
+        private defaultValue: T,
         private driver: 'localStorage' | 'sessionStorage' = 'localStorage',
-    ) {
-        this.value = JSON.parse(window[driver].getItem(`settings-${name}`)!) ?? defaultValue;
-    }
+    ) {}
 
-    public get = () => this.value;
+    public get = (): T => {
+        if (this.value === undefined) {
+            this.value = JSON.parse(window[this.driver].getItem(`settings-${this.name}`)!) ?? this.defaultValue;
+        }
+        return this.value as T;
+    }
 
     public set = (newValue: T) => {
         this.value = newValue;
