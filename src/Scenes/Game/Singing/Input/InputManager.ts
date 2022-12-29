@@ -7,7 +7,6 @@ import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingT
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
-import isDev from 'utils/isDev';
 import storage from 'utils/storage';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 
@@ -25,13 +24,8 @@ class InputManager {
 
     constructor() {
         if (this.playerInputs.length === 0) {
-            /* eslint-disable @typescript-eslint/no-unused-vars */
-            const Input = isDev() ? 'Dummy' : 'Microphone';
-            const Input1 = 'Microphone';
-            /* eslint-enable @typescript-eslint/no-unused-vars */
-
-            this.setPlayerInput(0, Input, 0, 'default');
-            this.setPlayerInput(1, Input, 1, 'default');
+            this.setPlayerInput(0, 'Dummy', 0, 'default');
+            this.setPlayerInput(1, 'Dummy', 1, 'default');
         } else if (this.playerInputs.some((input) => input.inputSource === 'Microphone')) {
             // If any microphones are selected, load the list
             inputSourceListManager.loadMics();

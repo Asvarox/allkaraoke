@@ -20,6 +20,10 @@ interface Props {
 // needs to be a "stable" array - reference can't change
 const completedAnimationSegment = tuple([0, 50]);
 
+const LAST_SELECTED_KEY = 'Previously selected input type';
+
+const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
+
 function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
     const [preference, setPreference] = useState<typeof MicSetupPreference[number]>(null);
     const [isComplete, setIsComplete] = useState(false);
@@ -30,6 +34,9 @@ function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
         // Keep currently selected preference unless nothing (null) is selected - then store `skip` directly
         // skip is needed to mark that user explicitly didn't select anything
         setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
+        if (pref) {
+            localStorage.setItem(LAST_SELECTED_KEY, pref);
+        }
 
         onFinish(pref);
     };
@@ -54,7 +61,9 @@ function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
                     'How do you want to sing?'
                 )}
             </Heading>
-            {preference === null && <SelectPreference onPreferenceSelected={setPreference} />}
+            {preference === null && (
+                <SelectPreference onPreferenceSelected={setPreference} previouslySelected={previouslySelected} />
+            )}
             {preference === 'remoteMics' && (
                 <RemoteMics
                     onSetupComplete={setIsComplete}

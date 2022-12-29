@@ -1,22 +1,30 @@
-import { MenuButton } from "Elements/Menu";
-import styled from "@emotion/styled";
-import useKeyboardNav from "hooks/useKeyboardNav";
-import { css } from "@emotion/react";
-import { focused } from "Elements/cssMixins";
-import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from "@mui/icons-material";
-import styles from "Scenes/Game/Singing/GameOverlay/Drawing/styles";
-import { SvgIcon } from "@mui/material";
-import { MicSetupPreference } from "Scenes/Settings/SettingsState";
+import { MenuButton } from 'Elements/Menu';
+import styled from '@emotion/styled';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { css } from '@emotion/react';
+import { focused } from 'Elements/cssMixins';
+import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { SvgIcon } from '@mui/material';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     onPreferenceSelected: (preference: typeof MicSetupPreference[number]) => void;
+    previouslySelected: string | null;
 }
 
-function SelectPreference({ onPreferenceSelected }: Props) {
+function SelectPreference({ onPreferenceSelected, previouslySelected }: Props) {
     const { register } = useKeyboardNav();
     return (
         <>
-            <Option {...register('remoteMics', () => onPreferenceSelected('remoteMics'))} data-test="remote-mics">
+            <Option
+                {...register(
+                    'remoteMics',
+                    () => onPreferenceSelected('remoteMics'),
+                    undefined,
+                    previouslySelected === 'remoteMics',
+                )}
+                data-test="remote-mics">
                 <OptionIconContainer>
                     <PhoneAndroid />
                     <PhoneIphone />
@@ -37,7 +45,14 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                     </OptionDescription>
                 </div>
             </Option>
-            <Option {...register('built-in', () => onPreferenceSelected('built-in'))} data-test="built-in">
+            <Option
+                {...register(
+                    'built-in',
+                    () => onPreferenceSelected('built-in'),
+                    undefined,
+                    previouslySelected === 'built-in',
+                )}
+                data-test="built-in">
                 <OptionIconContainer>
                     <Person />
                     <Laptop />
@@ -51,7 +66,9 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                 </div>
             </Option>
             <hr />
-            <Option {...register('mics', () => onPreferenceSelected('mics'))} data-test="mics">
+            <Option
+                {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}
+                data-test="mics">
                 <OptionIconContainer>
                     <MicIcon />
                     <MicIcon />
@@ -64,7 +81,14 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                     </OptionDescription>
                 </div>
             </Option>
-            <Option {...register('advanced', () => onPreferenceSelected('advanced'))} data-test="advanced">
+            <Option
+                {...register(
+                    'advanced',
+                    () => onPreferenceSelected('advanced'),
+                    undefined,
+                    previouslySelected === 'advanced',
+                )}
+                data-test="advanced">
                 <OptionIconContainer>
                     <MicIcon />
                     <PhoneIphone />
@@ -78,7 +102,9 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                 </div>
             </Option>
             <hr />
-            <MenuButton {...register('skip', () => onPreferenceSelected('skip'))} data-test="skip">
+            <MenuButton
+                {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}
+                data-test="skip">
                 Skip
             </MenuButton>
         </>
