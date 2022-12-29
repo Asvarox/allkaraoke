@@ -1,12 +1,12 @@
-import { MenuButton } from 'Elements/Menu';
-import styled from '@emotion/styled';
-import useKeyboardNav from 'hooks/useKeyboardNav';
-import { css } from '@emotion/react';
-import { focused } from 'Elements/cssMixins';
-import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { SvgIcon } from '@mui/material';
-import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import { MenuButton } from "Elements/Menu";
+import styled from "@emotion/styled";
+import useKeyboardNav from "hooks/useKeyboardNav";
+import { css } from "@emotion/react";
+import { focused } from "Elements/cssMixins";
+import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from "@mui/icons-material";
+import styles from "Scenes/Game/Singing/GameOverlay/Drawing/styles";
+import { SvgIcon } from "@mui/material";
+import { MicSetupPreference } from "Scenes/Settings/SettingsState";
 
 interface Props {
     onPreferenceSelected: (preference: typeof MicSetupPreference[number]) => void;
@@ -57,7 +57,7 @@ function SelectPreference({ onPreferenceSelected }: Props) {
                     <MicIcon />
                 </OptionIconContainer>
                 <div>
-                    I have SingStar (-like) microphones
+                    I have SingStar (-ish) microphones
                     <OptionDescription>
                         Select this option and <Usb /> connect your Mics to the computer. It should be selected{' '}
                         <strong>automatically</strong>.
