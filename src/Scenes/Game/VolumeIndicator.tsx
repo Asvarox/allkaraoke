@@ -41,4 +41,9 @@ const Indicator = styled.div<{ volume: number; color: string }>`
     gap: 0.5em;
     font-size: 0.75em;
     color: white;
+
+    svg {
+        transition: 300ms;
+        opacity: ${(props) => (props.volume > 0.025 ? 1 : 0.5)};
+    }
 `;

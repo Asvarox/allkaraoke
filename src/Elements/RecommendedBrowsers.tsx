@@ -12,8 +12,7 @@ function RecommendedBrowsers() {
                         <h2>
                             This game works best in <strong>Google Chrome</strong> (and Chromium based browsers).
                         </h2>
-                        It will not likely work properly on other browsers (like the one you use right now if you see
-                        this message).
+                        It's not guaranteed to work on other browsers (like the one you use now).
                     </RecommendChrome>
                 )
             }
@@ -22,8 +21,15 @@ function RecommendedBrowsers() {
 }
 
 const RecommendChrome = styled.div`
-    width: 750px;
+    width: 100%;
     ${typography};
+    text-align: center;
+    background: darkred;
+    padding: 30px 0;
+    margin-top: 10px;
+    h2 {
+        margin-top: 0;
+    }
 
     strong {
         color: ${styles.colors.text.active};

@@ -7,6 +7,10 @@ import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 import { useEffect } from 'react';
+import VolumeIndicator from 'Scenes/Game/VolumeIndicator';
+import styled from '@emotion/styled';
+import { Mic } from '@mui/icons-material';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -23,6 +27,11 @@ function Advanced(props: Props) {
 
     useEffect(() => {
         props.onSetupComplete(true);
+
+        InputManager.startMonitoring();
+        return () => {
+            InputManager.stopMonitoring();
+        };
     }, []);
 
     useRemoteMicAutoselect();
@@ -32,7 +41,12 @@ function Advanced(props: Props) {
     return (
         <>
             <ConnectPhone />
-            <h2>Player 1 {props.playerNames?.[0] && `(${props.playerNames[0]})`}</h2>
+            <h2>
+                <MicCheck playerNumber={0}>
+                    <Mic />
+                </MicCheck>{' '}
+                Player 1 {props.playerNames?.[0] && `(${props.playerNames[0]})`}
+            </h2>
             <Switcher
                 {...register('player 1 source', p1CycleSource)}
                 label="Source"
@@ -45,7 +59,12 @@ function Advanced(props: Props) {
                 value={p1Input?.label}
                 data-test="player-1-input"
             />
-            <h2>Player 2 {props.playerNames?.[1] && `(${props.playerNames[1]})`}</h2>
+            <h2>
+                <MicCheck playerNumber={1}>
+                    <Mic />
+                </MicCheck>{' '}
+                Player 2 {props.playerNames?.[1] && `(${props.playerNames[1]})`}
+            </h2>
             <Switcher
                 {...register('player 2 source', p2CycleSource)}
                 label="Source"
@@ -73,4 +92,10 @@ function Advanced(props: Props) {
         </>
     );
 }
+
+const MicCheck = styled(VolumeIndicator)`
+    display: inline-flex;
+    padding: 0.05em 0.2em;
+    //widt
+`;
 export default Advanced;

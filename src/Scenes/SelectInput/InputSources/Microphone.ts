@@ -28,7 +28,10 @@ export class MicrophoneInputSource {
     private static inputList: InputSource[] = [];
     public static readonly inputName = 'Microphone';
 
-    public static getDefault = () => MicrophoneInputSource.inputList.find((input) => input.id === 'default;0') ?? null;
+    public static getDefault = () =>
+        MicrophoneInputSource.inputList.find((input) => input.id === 'default;0') ??
+        MicrophoneInputSource.inputList[0] ??
+        null;
 
     public static getInputs = async (): Promise<InputSource[]> => {
         await navigator.mediaDevices.getUserMedia({ audio: true });
