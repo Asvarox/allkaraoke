@@ -1,10 +1,10 @@
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
+import userMediaService from 'UserMedia/userMediaService';
+import Listener from 'utils/Listener';
 import InputInterface from './Interface';
 
-type Listener = (freqs: [number, number], volumes: [number, number]) => void;
-
-class MicInput implements InputInterface {
+class MicInput extends Listener<[[number, number], [number, number]]> implements InputInterface {
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
 
@@ -19,7 +19,7 @@ class MicInput implements InputInterface {
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
-        this.stream = await navigator.mediaDevices.getUserMedia({
+        this.stream = await userMediaService.getUserMedia({
             audio: {
                 ...(deviceId ? { deviceId, exact: true } : {}),
                 echoCancellation: echoCancellation,
@@ -56,7 +56,7 @@ class MicInput implements InputInterface {
 
             this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
 
-            this.onUpdate();
+            this.onUpdate(this.frequencies, this.volumes);
         }, this.context.sampleRate / analyserCh0.fftSize);
 
         events.micMonitoringStarted.dispatch();
@@ -94,21 +94,6 @@ class MicInput implements InputInterface {
         }
         return Math.sqrt(sum / input.length);
     }
-
-    private listeners: Listener[] = [];
-    private onUpdate = () => {
-        this.listeners.forEach((callback) => callback(this.frequencies, this.volumes));
-    };
-
-    public addListener = (listener: Listener) => {
-        this.listeners.push(listener);
-
-        return () => {
-            this.removeListener(listener);
-        };
-    };
-
-    public removeListener = (listener: Listener) => this.listeners.filter((callback) => callback !== listener);
 }
 
 export default new MicInput();

@@ -11,6 +11,8 @@ import VolumeIndicator from 'Scenes/Game/VolumeIndicator';
 import styled from '@emotion/styled';
 import { Mic } from '@mui/icons-material';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import { useMicrophoneStatus } from 'UserMedia/hooks';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -24,10 +26,13 @@ function Advanced(props: Props) {
     const inputs = useMicrophoneList(true);
     const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs);
     const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
+    const status = useMicrophoneStatus();
 
     useEffect(() => {
-        props.onSetupComplete(true);
+        props.onSetupComplete(status === 'accepted');
+    }, [status]);
 
+    useEffect(() => {
         InputManager.startMonitoring();
         return () => {
             InputManager.stopMonitoring();
@@ -40,49 +45,53 @@ function Advanced(props: Props) {
 
     return (
         <>
-            <ConnectPhone />
-            <h2>
-                <MicCheck playerNumber={0}>
-                    <Mic />
-                </MicCheck>{' '}
-                Player 1 {props.playerNames?.[0] && `(${props.playerNames[0]})`}
-            </h2>
-            <Switcher
-                {...register('player 1 source', p1CycleSource)}
-                label="Source"
-                value={p1Source}
-                data-test="player-1-source"
-            />
-            <Switcher
-                {...register('player 1 input', p1CycleInput)}
-                label="Input"
-                value={p1Input?.label}
-                data-test="player-1-input"
-            />
-            <h2>
-                <MicCheck playerNumber={1}>
-                    <Mic />
-                </MicCheck>{' '}
-                Player 2 {props.playerNames?.[1] && `(${props.playerNames[1]})`}
-            </h2>
-            <Switcher
-                {...register('player 2 source', p2CycleSource)}
-                label="Source"
-                value={p2Source}
-                data-test="player-2-source"
-            />
-            <Switcher
-                {...register('player 2 input', p2CycleInput)}
-                label="Input"
-                value={p2Input?.label}
-                data-test="player-2-input"
-            />
-            <hr />
-            {p1Source === MicrophoneInputSource.inputName &&
-                p2Source === MicrophoneInputSource.inputName &&
-                p1Input?.deviceId !== p2Input?.deviceId && (
-                    <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>
-                )}
+            <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can show them.</h2>}>
+                <ConnectPhone />
+                <Heading>
+                    <MicCheck playerNumber={0}>
+                        <Mic />
+                    </MicCheck>{' '}
+                    Player 1 {props.playerNames?.[0] && `(${props.playerNames[0]})`}
+                </Heading>
+                <Switcher
+                    {...register('player 1 source', p1CycleSource)}
+                    label="Source"
+                    value={p1Source}
+                    data-test="player-1-source"
+                />
+                <Switcher
+                    {...register('player 1 input', p1CycleInput)}
+                    label="Input"
+                    value={p1Input?.label}
+                    data-test="player-1-input"
+                />
+                <Heading>
+                    <MicCheck playerNumber={1}>
+                        <Mic />
+                    </MicCheck>{' '}
+                    Player 2 {props.playerNames?.[1] && `(${props.playerNames[1]})`}
+                </Heading>
+                <Switcher
+                    {...register('player 2 source', p2CycleSource)}
+                    label="Source"
+                    value={p2Source}
+                    data-test="player-2-source"
+                />
+                <Switcher
+                    {...register('player 2 input', p2CycleInput)}
+                    label="Input"
+                    value={p2Input?.label}
+                    data-test="player-2-input"
+                />
+                <hr />
+                {p1Source === MicrophoneInputSource.inputName &&
+                    p2Source === MicrophoneInputSource.inputName &&
+                    p1Input?.deviceId !== p2Input?.deviceId && (
+                        <h3 data-test="mic-mismatch-warning">
+                            Using different microphone devices is not yet supported
+                        </h3>
+                    )}
+            </UserMediaEnabled>
             <MenuButton {...register('back', props.onBack)} data-test="back-button">
                 Back
             </MenuButton>
@@ -95,7 +104,13 @@ function Advanced(props: Props) {
 
 const MicCheck = styled(VolumeIndicator)`
     display: inline-flex;
-    padding: 0.05em 0.2em;
-    //widt
+    padding: 0.05em 0.4em;
 `;
+
+const Heading = styled.h2`
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+`;
+
 export default Advanced;

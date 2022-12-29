@@ -1,5 +1,6 @@
 import { range } from 'lodash-es';
 import { InputSource } from './interfaces';
+import userMediaService from 'UserMedia/userMediaService';
 
 interface NameMapper {
     test: (label: string, channel: number) => boolean;
@@ -34,8 +35,8 @@ export class MicrophoneInputSource {
         null;
 
     public static getInputs = async (): Promise<InputSource[]> => {
-        await navigator.mediaDevices.getUserMedia({ audio: true });
-        const devices = await navigator.mediaDevices.enumerateDevices();
+        await userMediaService.getUserMedia({ audio: true });
+        const devices = await userMediaService.enumerateDevices();
 
         MicrophoneInputSource.inputList = (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
             .filter((device) => device.kind === 'audioinput')

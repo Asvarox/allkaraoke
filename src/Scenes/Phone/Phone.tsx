@@ -13,6 +13,7 @@ import VolumeIndicator from 'Scenes/Phone/VolumeIndicator';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 
 interface Props {
     roomId: string;
@@ -81,29 +82,32 @@ function Phone({ roomId }: Props) {
         <LayoutWithBackground>
             <Container>
                 <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />
-                <Form onSubmit={onConnect}>
-                    <Input
-                        focused={false}
-                        label="Name"
-                        value={name}
-                        onChange={setName}
-                        ref={inputRef}
-                        disabled={disabled}
-                        data-test="player-name-input"
-                    />
-                    <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
-                        {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
-                    </MenuButton>
-                </Form>
-                <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
-                    WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
-                </KeepAwake>
-                <MicInputState
-                    onClick={() =>
-                        monitoringStarted ? PhoneMic.stopMonitoring() : PhoneMic.startMonitoring(undefined, false)
-                    }>
-                    Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
-                </MicInputState>
+                <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
+                    <Form onSubmit={onConnect}>
+                        <Input
+                            focused={false}
+                            label="Name"
+                            value={name}
+                            onChange={setName}
+                            ref={inputRef}
+                            disabled={disabled}
+                            autoFocus
+                            data-test="player-name-input"
+                        />
+                        <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
+                            {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
+                        </MenuButton>
+                    </Form>
+                    <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
+                        WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
+                    </KeepAwake>
+                    <MicInputState
+                        onClick={() =>
+                            monitoringStarted ? PhoneMic.stopMonitoring() : PhoneMic.startMonitoring(undefined, false)
+                        }>
+                        Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
+                    </MicInputState>
+                </UserMediaEnabled>
             </Container>
         </LayoutWithBackground>
     );

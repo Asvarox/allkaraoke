@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import styled from '@emotion/styled';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -81,27 +82,30 @@ function SingStarMics(props: Props) {
 
     return (
         <>
-            {!isSetup && (
-                <>
-                    <h3>Connect your SingStar microphones.</h3>
-                    <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
-                    {showAdvancedTip && (
-                        <h4 data-test="advanced-tip">
-                            If detection doesn't happen, try{' '}
-                            <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous menu.
-                        </h4>
-                    )}
-                </>
-            )}
-            {isSetup && (
-                <>
-                    <h2 data-test="setup-completed">
-                        <strong>SingStar</strong> microphone connected!
-                    </h2>
+            <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can find SingStar ones.</h2>}>
+                {!isSetup && (
+                    <>
+                        <h3>Connect your SingStar microphones.</h3>
+                        <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
+                        {showAdvancedTip && (
+                            <h4 data-test="advanced-tip">
+                                If detection doesn't happen, try{' '}
+                                <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous
+                                menu.
+                            </h4>
+                        )}
+                    </>
+                )}
+                {isSetup && (
+                    <>
+                        <h2 data-test="setup-completed">
+                            <strong>SingStar</strong> microphone connected!
+                        </h2>
 
-                    <MicCheck names={['Blue', 'Red']} />
-                </>
-            )}
+                        <MicCheck names={['Blue', 'Red']} />
+                    </>
+                )}
+            </UserMediaEnabled>
 
             <MenuButton {...register('back', props.onBack)} data-test="back-button">
                 Back

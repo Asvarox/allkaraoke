@@ -7,6 +7,7 @@ import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -53,17 +54,20 @@ function BuiltIn(props: Props) {
 
     return (
         <>
-            {!selectedMic && <h4>The default device is being selected.</h4>}
-            {selectedMic && (
-                <h4>
-                    You'll sing using <strong data-test="selected-mic">{selectedMic}</strong>.
-                </h4>
-            )}
+            <UserMediaEnabled
+                fallback={<h2>Please allow access to the microphone so the default one can be selected.</h2>}>
+                {!selectedMic && <h4>The default device is being selected.</h4>}
+                {selectedMic && (
+                    <h4>
+                        You'll sing using <strong data-test="selected-mic">{selectedMic}</strong>.
+                    </h4>
+                )}
 
-            <h4>
-                You can change the device in <strong>Advanced</strong> section in the previous menu.
-            </h4>
-            <MicCheck names={['These light up when', 'singing is detected']} />
+                <h4>
+                    You can change the device in <strong>Advanced</strong> section in the previous menu.
+                </h4>
+                <MicCheck names={['These light up when', 'singing is detected']} />
+            </UserMediaEnabled>
             <MenuButton {...register('back', props.onBack)} data-test="back-button">
                 Back
             </MenuButton>
