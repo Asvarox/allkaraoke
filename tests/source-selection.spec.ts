@@ -13,7 +13,6 @@ test('Source selection', async ({ page }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('advanced').click({ force: true });
 
-    await page.getByTestId('player-1-source').click();
     await page.getByTestId('player-1-input').click();
     await page.getByTestId('player-1-input').click();
     await page.getByTestId('player-1-source').click();
@@ -23,9 +22,6 @@ test('Source selection', async ({ page }) => {
     await page.getByTestId('player-1-input').click();
     await page.getByTestId('player-1-input').click();
     await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-2-source').click();
-    await page.getByTestId('player-2-source').click();
-    await page.getByTestId('player-2-source').click();
     await page.getByTestId('player-2-input').click();
     await page.getByTestId('player-2-input').click();
     await page.getByTestId('player-2-input').click();

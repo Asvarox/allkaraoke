@@ -41,6 +41,7 @@ test('Default device is selected currently selected mic is disconnected', async 
 
     await page.getByTestId('advanced').click({ force: true });
 
+    await page.getByTestId('player-1-source').click();
     await page.getByTestId('player-1-input').click();
     await expect(page.getByTestId('player-1-input')).toContainText('New device', { ignoreCase: true });
 
@@ -63,6 +64,7 @@ test('Properly labels multichannel devices', async ({ page, context }) => {
 
     await page.getByTestId('advanced').click({ force: true });
 
+    await page.getByTestId('player-1-source').click();
     await page.getByTestId('player-1-input').click();
     await expect(page.getByTestId('player-1-input')).toContainText('Multichannel (ch 1)', { ignoreCase: true });
     await page.getByTestId('player-1-input').click();
