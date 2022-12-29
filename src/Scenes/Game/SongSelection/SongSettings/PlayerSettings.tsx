@@ -3,7 +3,7 @@ import { Button } from 'Elements/Button';
 import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from 'hooks/players/consts';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import PhonesManager from 'Scenes/ConnectPhone/PhonesManager';
 import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
@@ -68,6 +68,12 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
     };
 
     const [showModal, setShowModal] = useState(false);
+
+    useEffect(() => {
+        if (!showModal) {
+            InputManager.startMonitoring();
+        }
+    }, [showModal]);
 
     const { register } = useKeyboardNav({ enabled: keyboardControl && !showModal, onBackspace: onExitKeyboardControl });
 
