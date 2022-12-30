@@ -94,7 +94,7 @@ export default function SongList(props: Props) {
                                 anchor.click();
                                 document.body.removeChild(anchor);
                             }}
-                            data-test="download-song"
+                            data-test="download-song-json"
                             data-song={row.original.file}>
                             <DataObject />
                         </IconButton>
