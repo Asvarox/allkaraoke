@@ -6366,6 +6366,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.27.1":
+  version: 3.27.1
+  resolution: "core-js@npm:3.27.1"
+  checksum: d50b5f88aea4302512ad9446c18e90f4d35dea1e6d8d3f87337690677061565ff11a670f1e0c87de57aa6074375fbb25ed5784076c040d3c4de8b4bce7d2ebeb
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:~1.0.0":
   version: 1.0.3
   resolution: "core-util-is@npm:1.0.3"
@@ -11935,6 +11942,7 @@ __metadata:
     babel-plugin-transform-import-meta: ^2.2.0
     babel-preset-react-app: ^10.0.1
     camelcase: 6.3.0
+    core-js: ^3.27.1
     date-fns: ^2.29.3
     eslint: ^8.20.0
     eslint-config-prettier: ^8.5.0

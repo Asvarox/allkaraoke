@@ -76,6 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-transform-import-meta", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.2.0"],\
             ["babel-preset-react-app", "npm:10.0.1"],\
             ["camelcase", "npm:6.3.0"],\
+            ["core-js", "npm:3.27.1"],\
             ["date-fns", "npm:2.29.3"],\
             ["eslint", "npm:8.20.0"],\
             ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.5.0"],\
@@ -9181,6 +9182,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["core-js", "npm:3.25.5"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.27.1", {\
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.27.1-7b0086b1f4/node_modules/core-js/",\
+          "packageDependencies": [\
+            ["core-js", "npm:3.27.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["core-js-compat", [\
@@ -15565,6 +15573,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-transform-import-meta", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.2.0"],\
             ["babel-preset-react-app", "npm:10.0.1"],\
             ["camelcase", "npm:6.3.0"],\
+            ["core-js", "npm:3.27.1"],\
             ["date-fns", "npm:2.29.3"],\
             ["eslint", "npm:8.20.0"],\
             ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.5.0"],\

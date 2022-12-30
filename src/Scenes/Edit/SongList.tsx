@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Delete, Download, Edit as EditIcon } from '@mui/icons-material';
+import { DataObject, Delete, Download, Edit as EditIcon } from '@mui/icons-material';
 import { Button, Grid, IconButton } from '@mui/material';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import { SongPreview } from 'interfaces';
@@ -71,7 +71,7 @@ export default function SongList(props: Props) {
                                 const txt = convertSongToTxt(songData);
 
                                 const anchor = document.createElement('a');
-                                anchor.href = `data:application/json;charset=utf-8,${encodeURIComponent(txt)}`;
+                                anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(txt)}`;
                                 anchor.download = `${row.original.artist} - ${row.original.title}.txt`;
                                 document.body.appendChild(anchor);
                                 anchor.click();
@@ -80,6 +80,23 @@ export default function SongList(props: Props) {
                             data-test="download-song"
                             data-song={row.original.file}>
                             <Download />
+                        </IconButton>
+                        <IconButton
+                            title="Download .json file"
+                            onClick={async () => {
+                                const songData = await SongDao.get(row.original.file);
+                                const json = JSON.stringify(songData, undefined, 2);
+
+                                const anchor = document.createElement('a');
+                                anchor.href = `data:application/json;charset=utf-8,${encodeURIComponent(json)}`;
+                                anchor.download = `${row.original.artist}-${row.original.title}.json`;
+                                document.body.appendChild(anchor);
+                                anchor.click();
+                                document.body.removeChild(anchor);
+                            }}
+                            data-test="download-song"
+                            data-song={row.original.file}>
+                            <DataObject />
                         </IconButton>
                         <IconButton
                             title="Delete the song"
