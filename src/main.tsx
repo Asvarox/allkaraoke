@@ -24,7 +24,7 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
-        api_host: 'https://eu.posthog.com',
+        api_host: 'https://allkaraoke-posthog.fly.dev',
         test: isDev() || window.location.port !== '',
         loaded: (ph) => {
             let storedUser = localStorage.getItem('posthog-user-id');
