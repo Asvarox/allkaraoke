@@ -3,24 +3,35 @@ import { InputSource } from './interfaces';
 import userMediaService from 'UserMedia/userMediaService';
 
 interface NameMapper {
-    test: (label: string, channel: number) => boolean;
+    test: (label: string, channel: number, channels: number) => boolean;
     map: (label: string, channel: number) => string;
 }
 
 const singstarWirelessMicMapper: NameMapper = {
-    test: (label) => label.toLowerCase().includes('wireless mic #'),
-    map: (label, channel) => `Singstar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
+    test: (label) =>
+        label.toLowerCase().includes('wireless mic #') || label.toLowerCase().includes('sony wireless singstar'),
+    map: (label, channel) => `SingStar Wireless - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 const singstarWiredMicMapper: NameMapper = {
-    test: (label) => label.toLowerCase().includes('usbmic serial#'),
-    map: (label, channel) => `Singstar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
+    test: (label) => label.toLowerCase().includes('usbmic serial#') || label.toLowerCase().includes('singstar'),
+    map: (label, channel) => `SingStar Wired - ${channel === 0 ? 'Blue' : 'Red'}`,
+};
+const singstarGenericMapper: NameMapper = {
+    test: (label, channel, channels) => channels === 2 && label.toLowerCase().includes('singstar'),
+    map: (label, channel) => `SingStar Mic - ${channel === 0 ? 'Blue' : 'Red'}`,
 };
 
-const getPreferred = (label: string, channel: number) =>
-    singstarWiredMicMapper.test(label, channel) || singstarWirelessMicMapper.test(label, channel) ? channel : undefined;
+const getPreferred = (...[label, ch, channels]: Parameters<NameMapper['test']>) =>
+    singstarWiredMicMapper.test(label, ch, channels) ||
+    singstarWirelessMicMapper.test(label, ch, channels) ||
+    singstarGenericMapper.test(label, ch, channels)
+        ? ch
+        : undefined;
+
 const mapInputName = (label: string, channel: number, channels: number) => {
-    if (singstarWirelessMicMapper.test(label, channel)) return singstarWirelessMicMapper.map(label, channel);
-    if (singstarWiredMicMapper.test(label, channel)) return singstarWiredMicMapper.map(label, channel);
+    if (singstarWirelessMicMapper.test(label, channel, channels)) return singstarWirelessMicMapper.map(label, channel);
+    if (singstarWiredMicMapper.test(label, channel, channels)) return singstarWiredMicMapper.map(label, channel);
+    if (singstarGenericMapper.test(label, channel, channels)) return singstarGenericMapper.map(label, channel);
 
     return channels > 1 ? `${label} (ch ${channel + 1})` : label;
 };
@@ -49,7 +60,7 @@ export class MicrophoneInputSource {
                     channels,
                     deviceId: device.deviceId,
                     id: `${device.deviceId};${channel}`,
-                    preferred: getPreferred(device.label, channel),
+                    preferred: getPreferred(device.label, channel, channels),
                 }));
             })
             .flat();

@@ -56,6 +56,12 @@ export const MenuContainer = styled.div`
         font-size: 0.85em;
     }
 
+    h5 {
+        ${typography};
+        margin: 0;
+        font-size: 0.65em;
+    }
+
     hr {
         margin: 5px 10px;
         opacity: 0.25;

@@ -14,6 +14,8 @@ import createPersistedState from 'use-persisted-state';
 import WebRTCClient from './WebRTCClient';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import { Wifi } from '@mui/icons-material';
+import { CircularProgress } from '@mui/material';
 
 interface Props {
     roomId: string;
@@ -78,6 +80,17 @@ function Phone({ roomId }: Props) {
         } catch (e) {}
     };
 
+    const [showConnectionTip, setShowConnectionTip] = useState(false);
+
+    useEffect(() => {
+        setShowConnectionTip(false);
+        if (connectionStatus === 'connecting' || connectionStatus === 'reconnecting') {
+            const timeout = setTimeout(() => setShowConnectionTip(true), 2000);
+
+            return () => clearTimeout(timeout);
+        }
+    }, [connectionStatus]);
+
     return (
         <LayoutWithBackground>
             <Container>
@@ -95,8 +108,18 @@ function Phone({ roomId }: Props) {
                             data-test="player-name-input"
                         />
                         <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
+                            {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
                             {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                         </MenuButton>
+                        {showConnectionTip && (
+                            <>
+                                <h3>If it doesn't connect</h3>
+                                <h5>
+                                    Make sure you are in the same <Wifi /> Wi-Fi
+                                </h5>
+                                <h5>Refresh (F5) the Karaoke on the PC</h5>
+                            </>
+                        )}
                     </Form>
                     <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
                         WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
@@ -125,6 +148,20 @@ const Container = styled(MenuContainer)`
     ${MenuButton} {
         padding: 0.5em;
         height: 72px;
+
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    h5 {
+        margin-top: 0.5em;
+
+        svg {
+            font-size: 0.9em;
+        }
     }
 `;
 const Form = styled.form`
