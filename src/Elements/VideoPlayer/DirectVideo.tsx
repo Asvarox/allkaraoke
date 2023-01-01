@@ -62,6 +62,7 @@ export default forwardRef(function DirectVideoPlayer(
             },
             loadVideoById: () => undefined,
             playVideo: () => player.current?.play(),
+            pauseVideo: () => player.current?.pause(),
             getDuration: () => Promise.resolve(player.current?.duration ?? 0),
         }),
         [player],

@@ -14,10 +14,10 @@ import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import getSkipIntroTime from 'Songs/utils/getSkipIntroTime';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
-import isDev from 'utils/isDev';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
+import useKeyboard from 'hooks/useKeyboard';
 
 interface Props {
     singSetup: SingSetup;
@@ -33,6 +33,7 @@ interface Props {
     playerChanges?: number[][];
 
     effectsEnabled?: boolean;
+    restartSong?: () => void;
 }
 
 export interface PlayerRef {
@@ -55,8 +56,6 @@ function usePlayerSetDuration(playerRef: MutableRefObject<VideoPlayerRef | null>
     return duration;
 }
 
-const SKIP_INTRO_MS = isDev() ? 1_000 : 15_000;
-
 function Player(
     {
         song,
@@ -71,6 +70,7 @@ function Player(
         playerChanges = [[], []],
         effectsEnabled = true,
         singSetup,
+        restartSong,
     }: Props,
     ref: ForwardedRef<PlayerRef>,
 ) {
@@ -118,10 +118,19 @@ function Player(
         [setCurrentStatus, onStatusChange],
     );
 
+    useKeyboard(
+        {
+            onBackspace: () =>
+                currentStatus === VideoState.PAUSED ? player.current?.playVideo() : player.current?.pauseVideo(),
+        },
+        true,
+        [currentStatus],
+    );
+
     return (
         <Container>
             {effectsEnabled && currentStatus === VideoState.PAUSED && onSongEnd !== undefined && (
-                <PauseMenu onExit={onSongEnd} onResume={() => player.current?.playVideo()} />
+                <PauseMenu onExit={onSongEnd} onResume={() => player.current?.playVideo()} onRestart={restartSong!} />
             )}
             {currentStatus !== VideoState.UNSTARTED && (
                 <Overlay>

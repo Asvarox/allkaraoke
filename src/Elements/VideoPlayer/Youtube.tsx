@@ -48,6 +48,7 @@ export interface VideoPlayerRef {
     loadVideoById: (opts: LoadVideByIdOpts) => void;
     setSize: (w: number, h: number) => void;
     playVideo: () => void;
+    pauseVideo: () => void;
     getDuration: () => Promise<number>;
 }
 
@@ -76,6 +77,7 @@ export default forwardRef(function YoutubeVideoPlayer(
         getCurrentTime: () => player.current?.getInternalPlayer().getCurrentTime(),
         loadVideoById: (opts) => player.current?.getInternalPlayer().loadVideoById(opts),
         playVideo: () => player.current?.getInternalPlayer().playVideo(),
+        pauseVideo: () => player.current?.getInternalPlayer().pauseVideo(),
         getDuration: () => player.current?.getInternalPlayer().getDuration(),
     }));
 

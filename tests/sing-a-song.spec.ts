@@ -1,6 +1,6 @@
-import { expect, test } from "@playwright/test";
-import { initTestMode, mockSongs } from "./helpers";
-import navigateWithKeyboard from "./steps/navigateWithKeyboard";
+import { expect, test } from '@playwright/test';
+import { initTestMode, mockSongs } from './helpers';
+import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -129,7 +129,11 @@ test('Basic sing a song', async ({ page }) => {
     await expect(page.locator(p1CL)).toBeVisible();
     await page.waitForTimeout(1000); // otherwise the click might happen before the game actually starts
     await page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
-    await page.getByTestId('button-finish-song').click({ force: true });
+    await page.getByTestId('button-resume-song').click({ force: true }); // Check resume song
+    await expect(page.getByTestId('button-resume-song')).not.toBeVisible();
+    await page.keyboard.press('Backspace');
+    await page.getByTestId('button-exit-song').click({ force: true });
+
     await page.getByTestId('highscores-button').click({ force: true });
     await expect(page.getByTestId('highscores-container')).toContainText('Updated name');
 });

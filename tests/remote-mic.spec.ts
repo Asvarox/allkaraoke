@@ -54,10 +54,11 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await page.getByTestId('play-song-button').click({ force: true });
     await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 20_000 });
 
-    await page.waitForTimeout(1000); // let the animation score run for a while
-    const p1score = await page.getByTestId('player-1-score').getAttribute('data-score');
+    await expect(async () => {
+        const p1score = await page.getByTestId('player-1-score').getAttribute('data-score');
 
-    expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
+        expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
+    }).toPass();
 
     await expect(page.getByTestId('player-1-name')).toHaveText('E2E Test Blue');
     await expect(page.getByTestId('player-2-name')).toHaveText('E2E Test Red');

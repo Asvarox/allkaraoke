@@ -18,8 +18,9 @@ interface Props {
     songFile: string;
     singSetup: SingSetup;
     returnToSongSelection: () => void;
+    restartSong: () => void;
 }
-function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
+function Singing({ video, songFile, singSetup, returnToSongSelection, restartSong }: Props) {
     const player = useRef<PlayerRef | null>(null);
     const song = useSong(songFile);
 
@@ -81,6 +82,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection }: Props) {
                         setIsEnded(true);
                     }}
                     singSetup={singSetup}
+                    restartSong={restartSong}
                 />
             </Container>
         );

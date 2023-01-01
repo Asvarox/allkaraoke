@@ -6,9 +6,10 @@ import { useEffect, useRef } from 'react';
 interface Props {
     onResume: () => void;
     onExit: () => void;
+    onRestart: () => void;
 }
 
-export default function PauseMenu({ onResume, onExit }: Props) {
+export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     const menuRef = useRef<null | HTMLButtonElement>(null);
 
     useEffect(() => {
@@ -23,7 +24,10 @@ export default function PauseMenu({ onResume, onExit }: Props) {
                 <MenuButton {...register('resume', onResume)} ref={menuRef} data-test="button-resume-song">
                     Resume song
                 </MenuButton>
-                <MenuButton {...register('exit', onExit)} data-test="button-finish-song">
+                <MenuButton {...register('restart', onRestart)} data-test="button-restart-song">
+                    Restart song
+                </MenuButton>
+                <MenuButton {...register('exit', onExit)} data-test="button-exit-song">
                     Exit song
                 </MenuButton>
             </MenuContainer>
