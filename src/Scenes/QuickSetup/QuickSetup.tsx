@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { navigate } from 'hooks/useHashLocation';
+import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 
 interface Props {
     // file?: string;
@@ -18,6 +19,7 @@ function QuickSetup(props: Props) {
 
     return (
         <LayoutWithBackground>
+            <GithubRibbon />
             <Container>
                 <Logo />
                 <RecommendedBrowsers />

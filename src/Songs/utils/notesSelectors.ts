@@ -1,5 +1,5 @@
 import { NotesSection, Section } from 'interfaces';
-import isNotesSection from 'Songs/utils/isNotesSection';
+import isNotesSection from './isNotesSection';
 
 export const getFirstNoteStartFromSections = (sections: Section[]) => {
     const firstNoteSection = sections.find(isNotesSection);
