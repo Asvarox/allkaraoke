@@ -718,6 +718,7 @@
         "start": 17
       }
     ],
+    "lastUpdate": "2022-12-30T13:12:33.920Z",
     "file": "Avicii-Wake Me Up.json",
     "tracksCount": 1,
     "search": "aviciiwakemeup"
@@ -959,6 +960,57 @@
     "file": "Bajm-Bia_a Armia.json",
     "tracksCount": 1,
     "search": "bajmbiaaarmia"
+  },
+  {
+    "title": "Biała Armia",
+    "artist": "Bajm",
+    "bpm": 198.06,
+    "bar": 4,
+    "gap": 41849,
+    "video": "y2p2glq7dz0",
+    "year": "1990",
+    "genre": "Rock",
+    "language": "Polish",
+    "videoGap": 0,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=9943",
+    "volume": 0.91,
+    "realBpm": 99,
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "lastUpdate": "2022-11-22T19:18:30.516Z",
+    "file": "Bajm-Biała Armia.json",
+    "tracksCount": 1,
+    "search": "bajmbiaaarmia"
+  },
+  {
+    "title": "Myśli i słowa",
+    "artist": "Bajm",
+    "bpm": 168.2,
+    "bar": 4,
+    "gap": 80.71428571428571,
+    "video": "3FP6ROwV1XM",
+    "year": "2003",
+    "lastUpdate": "2023-01-01T20:57:43.928Z",
+    "edition": "UltraStar - Walentynki",
+    "language": "Polish",
+    "videoGap": -2,
+    "realBpm": 84,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "file": "Bajm-Myśli i słowa.json",
+    "tracksCount": 1,
+    "search": "bajmmysliisowa"
   },
   {
     "title": "DotA",
@@ -3961,6 +4013,32 @@
     "search": "kombipokolenie"
   },
   {
+    "title": "Bo jesteś Ty",
+    "artist": "Krzysztof Krawczyk",
+    "bpm": 220,
+    "bar": 4,
+    "gap": 15408.272727272728,
+    "video": "KOY_05KwJYk",
+    "year": "2002",
+    "lastUpdate": "2023-01-01T20:46:24.106Z",
+    "edition": "SingStar WI",
+    "genre": "",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 110,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Krzysztof Krawczyk-Bo jesteś Ty.json",
+    "tracksCount": 1,
+    "search": "krzysztofkrawczykbojestesty"
+  },
+  {
     "title": "Zatańczysz ze Mną Jeszcze Raz",
     "artist": "Krzysztof Krawczyk",
     "bpm": 239.98,
@@ -5146,6 +5224,82 @@
     "search": "mileycyruswreckingball"
   },
   {
+    "title": "Dziewczyna mojego chłopaka",
+    "artist": "Monika Brodka",
+    "bpm": 100,
+    "bar": 4,
+    "gap": 28850,
+    "video": "8_icFGaCtsc",
+    "year": "2004",
+    "lastUpdate": "2023-01-01T21:23:06.731Z",
+    "language": "Polish",
+    "videoGap": -1,
+    "realBpm": 99,
+    "author": "",
+    "authorUrl": "davidus01",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "file": "Monika Brodka-Dziewczyna mojego chłopaka.json",
+    "tracksCount": 1,
+    "search": "monikabrodkadziewczynamojegochopaka"
+  },
+  {
+    "title": "Miałeś być",
+    "artist": "Monika Brodka",
+    "bpm": 200,
+    "bar": 4,
+    "gap": -600,
+    "video": "QbxFDqadFJU",
+    "year": "2005",
+    "lastUpdate": "2023-01-01T21:25:17.499Z",
+    "edition": "SingStar R&B PL",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 100,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Monika Brodka-Miałeś być.json",
+    "tracksCount": 1,
+    "search": "monikabrodkamiaesbyc"
+  },
+  {
+    "title": "Znam Cię Na Pamięć ",
+    "artist": "Monika Brodka",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 6888,
+    "video": "Fk4oL5yGVQI",
+    "year": "2006",
+    "lastUpdate": "2023-01-01T21:26:40.207Z",
+    "edition": "SingStar R&B PL",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 135,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Monika Brodka-Znam Cię Na Pamięć .json",
+    "tracksCount": 1,
+    "search": "monikabrodkaznamcienapamiec"
+  },
+  {
     "title": "Angels",
     "artist": "Morandi",
     "bpm": 257.8,
@@ -6125,12 +6279,12 @@
     "artist": "Queen",
     "bpm": 256.8,
     "bar": 4,
-    "gap": 11550,
+    "gap": 6550,
     "video": "0p_1QSUsbsM",
     "year": "1986",
     "genre": "Rock",
     "language": "English",
-    "videoGap": 5,
+    "videoGap": 0,
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=A%20kind%20of%20magic",
@@ -6228,12 +6382,12 @@
     "artist": "Queen",
     "bpm": 184.66,
     "bar": 4,
-    "gap": 6468.139999999999,
+    "gap": 493.2355680710498,
     "video": "hFDcoX7s6rE",
     "year": "1989",
     "edition": "SingStar Queen",
     "language": "English",
-    "videoGap": 5,
+    "videoGap": 0,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20It%20All",
@@ -6241,7 +6395,7 @@
     "realBpm": 92,
     "tracks": [
       {
-        "start": 0
+        "start": 12
       }
     ],
     "file": "Queen-I Want It All.json",
@@ -6740,6 +6894,30 @@
     "file": "Robbie Williams-Rock DJ.json",
     "tracksCount": 1,
     "search": "robbiewilliamsrockdj"
+  },
+  {
+    "title": "Niecierpliwi",
+    "artist": "Robert Chojnacki",
+    "bpm": 82.3,
+    "bar": 4,
+    "gap": 25385.365853658535,
+    "video": "laUQy4DVxCA",
+    "year": "1995",
+    "lastUpdate": "2023-01-01T20:51:08.754Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 82,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "file": "Robert Chojnacki-Niecierpliwi.json",
+    "tracksCount": 1,
+    "search": "robertchojnackiniecierpliwi"
   },
   {
     "title": "It Must Have Been Love",
@@ -9012,6 +9190,30 @@
     "search": "wilkibohema"
   },
   {
+    "title": "Na Zawsze",
+    "artist": "Wilki",
+    "bpm": 124,
+    "bar": 4,
+    "gap": 22342.25806451613,
+    "video": "KluzKnEapkA",
+    "year": "2006",
+    "lastUpdate": "2023-01-01T21:12:44.829Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 124,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "file": "Wilki-Na Zawsze.json",
+    "tracksCount": 1,
+    "search": "wilkinazawsze"
+  },
+  {
     "title": "Urke",
     "artist": "Wilki",
     "bpm": 128,
@@ -9130,6 +9332,30 @@
     "file": "Zbigniew Wodecki-Chalupy welcome to.json",
     "tracksCount": 1,
     "search": "zbigniewwodeckichalupywelcometo"
+  },
+  {
+    "title": "Bania u cygana",
+    "artist": "Zero",
+    "bpm": 130,
+    "bar": 4,
+    "gap": 8164.538461538461,
+    "video": "xLj5xaahdF8",
+    "year": "1998",
+    "lastUpdate": "2023-01-01T21:04:57.704Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 130,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "file": "Zero-Bania u cygana.json",
+    "tracksCount": 1,
+    "search": "zerobaniaucygana"
   },
   {
     "title": "Numerek w krzaczkach",
