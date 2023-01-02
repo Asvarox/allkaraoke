@@ -129,5 +129,6 @@ export default function useSongList() {
         filtersData,
         filters,
         setFilters,
+        isLoading: songList.isLoading,
     };
 }

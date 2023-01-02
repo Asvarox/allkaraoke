@@ -151,6 +151,11 @@ export const useSongSelectionKeyboardNavigation = (
 
     const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
 
+    const randomSong = () => {
+        const newIndex = Math.round(random(0, songCount));
+        setPositionBySongIndex(newIndex);
+    };
+
     useKeyboard(
         {
             onEnter: handleEnter,
@@ -160,9 +165,8 @@ export const useSongSelectionKeyboardNavigation = (
             onRightArrow: () => navigateHorizontally(1),
             onBackspace: handleBackspace,
             onR: () => {
-                const newIndex = Math.round(random(0, songCount));
-                setPositionBySongIndex(newIndex);
-                posthog.capture('selectRandom', { newIndex });
+                randomSong();
+                posthog.capture('selectRandom');
             },
         },
         enabled && !arePlaylistsVisible,
@@ -195,10 +199,17 @@ export const useSongSelectionKeyboardNavigation = (
     useLayoutEffect(() => {
         const [previousShowFilters, enteringKey] = previousPlaylistsState;
         if (previousShowFilters && !arePlaylistsVisible) {
-            console.log(cursorPosition);
             if (enteringKey === leavingKey) navigateHorizontally(leavingKey === 'right' ? 1 : -1, true);
         }
     }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
+
+    const [randomizedSong, setRandomizedSong] = useState(false);
+    useEffect(() => {
+        if (!randomizedSong && songCount > 0) {
+            randomSong();
+            setRandomizedSong(true);
+        }
+    }, [randomizedSong, songCount]);
 
     return tuple([focusedSong, setPositionBySongIndex, arePlaylistsVisible, closePlaylist]);
 };

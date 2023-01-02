@@ -36,7 +36,9 @@ test('skip the intro from the song', async ({ page }) => {
     await page.getByTestId('save-button').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
-    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'e2e-skip-intro-song.json');
+
+    await expect(page.getByTestId('song-e2e-skip-intro-song.json')).toBeVisible();
+    await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json');
     await page.keyboard.press('Enter'); // enter first song
 
     await expect(page.getByTestId('skip-intro')).toHaveAttribute('data-test-value', 'false');

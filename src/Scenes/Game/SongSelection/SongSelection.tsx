@@ -20,6 +20,7 @@ import {
     SongListEntryDetailsTitle,
 } from './SongCard';
 import SongPreview from './SongPreview';
+import { CircularProgress } from '@mui/material';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -48,6 +49,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         filtersData,
         setShowFilters,
         showFilters,
+        isLoading,
     } = useSongSelection(preselectedSong);
 
     const onSearchSong: KeyHandler = (e) => {
@@ -86,6 +88,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
     const entryWidth = (width - leftPad - rightPad - gap * (perRow - 1)) / perRow;
     const entryHeight = (entryWidth / 16) * 9;
+
+    if (isLoading) {
+        return (
+            <LoaderContainer>
+                <CircularProgress size="15em" color="secondary" />
+            </LoaderContainer>
+        );
+    }
 
     return (
         <Container>
@@ -209,4 +219,11 @@ const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width:
     ${(props) => props.focused && focused}
     border: 1px black solid;
     border-radius: 5px;
+`;
+
+const LoaderContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 `;

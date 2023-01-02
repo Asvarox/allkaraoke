@@ -63,7 +63,13 @@ export default function Convert({ song }: Props) {
         if (conversionResult) {
             if (!!conversionResult.video && !authorAndVid.video) {
                 setAuthorAndVid((current) => ({
+                    ...current,
                     video: `https://www.youtube.com/watch?v=${conversionResult.video}`,
+                }));
+            }
+            if (!!conversionResult.author && !authorAndVid.author) {
+                setAuthorAndVid((current) => ({
+                    ...current,
                     author: current.author || conversionResult?.author || '',
                     authorUrl: current.authorUrl || conversionResult?.authorUrl || '',
                 }));

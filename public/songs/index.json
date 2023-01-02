@@ -2321,6 +2321,30 @@
     "search": "dragonforcethroughthefireandflames"
   },
   {
+    "title": "Czerwony jak cegła",
+    "artist": "Dżem",
+    "bpm": 219.4,
+    "bar": 4,
+    "gap": 24602.84412032817,
+    "video": "n7h4l7ayAhU",
+    "year": "1985",
+    "lastUpdate": "2023-01-02T20:48:49.034Z",
+    "language": "Polish",
+    "videoGap": -22,
+    "realBpm": 111,
+    "author": "davidus01",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Dżem-Czerwony jak cegła.json",
+    "tracksCount": 1,
+    "search": "dzemczerwonyjakcega"
+  },
+  {
     "title": "Wehikuł Czasu",
     "artist": "Dżem",
     "bpm": 83.95,

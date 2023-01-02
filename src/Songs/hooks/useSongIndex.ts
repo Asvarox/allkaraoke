@@ -16,5 +16,6 @@ export default function useSongIndex() {
     return {
         data: songIndex ?? emptyList.current,
         reload: loadSongs,
+        isLoading: songIndex === null,
     };
 }

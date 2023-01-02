@@ -1,10 +1,9 @@
-import { navigate } from 'hooks/useHashLocation';
 import { useEffect, useState } from 'react';
 import useSongList from './useSongList';
 import { useSongSelectionKeyboardNavigation } from './useSongSelectionKeyboardNavigation';
 
 export default function useSongSelection(preselectedSong: string | null) {
-    const { songList, groupedSongList, filtersData, setFilters, filters } = useSongList();
+    const { songList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
 
     const [keyboardControl, setKeyboardControl] = useState(true);
 
@@ -17,7 +16,8 @@ export default function useSongSelection(preselectedSong: string | null) {
     );
 
     useEffect(() => {
-        if (songList && songList[focusedSong]) navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`);
+        if (songList && songList[focusedSong])
+            window.history.replaceState({}, '', `#/game/${encodeURIComponent(songList[focusedSong].file)}`);
     }, [focusedSong, songList]);
 
     useEffect(() => {
@@ -42,5 +42,6 @@ export default function useSongSelection(preselectedSong: string | null) {
         setFilters,
         showFilters,
         setShowFilters,
+        isLoading,
     };
 }

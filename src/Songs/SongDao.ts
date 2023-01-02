@@ -48,7 +48,7 @@ class SongDao {
         this.index = [
             ...storageIndex,
             ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
-        ].filter((song) => !(deletedSongs ?? []).includes(this.generateSongFile(song)));
+        ].filter((song) => !deletedSongs?.includes(this.generateSongFile(song)));
 
         this.index.sort((a, b) => `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()));
     };
@@ -59,7 +59,7 @@ class SongDao {
         return this.reloadIndex();
     };
 
-    private getLocal = async (fileName: string) => storage.getItem<Song>(fileName);
+    private getLocal = async (fileName: string) => storage.getItem<Song>(decodeURIComponent(fileName));
     private getLocalIndex = async () => {
         const allSongs = await Promise.all((await this.getKeys()).map(this.getLocal));
 
