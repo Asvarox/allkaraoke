@@ -80,14 +80,14 @@ export default function Convert({ song }: Props) {
                     sourceUrl: conversionResult.sourceUrl!,
                 }));
             }
-            if (!!conversionResult.year && !metadataEntity.year && !metadataEntity.language) {
-                setMetadataEntity((current) => ({
-                    ...current,
-                    year: conversionResult.year ?? '',
-                    language: conversionResult.language ?? '',
-                    realBpm: `${conversionResult.realBpm ?? ''}`,
-                }));
-            }
+            (['year', 'language', 'realBpm'] as const).forEach((property) => {
+                if (!!conversionResult[property] && !metadataEntity[property]) {
+                    setMetadataEntity((current) => ({
+                        ...current,
+                        [property]: conversionResult[property],
+                    }));
+                }
+            });
         }
     }, [conversionResult, metadataEntity.year, metadataEntity.language, basicData.sourceUrl, authorAndVid.video]);
 
