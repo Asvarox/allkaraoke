@@ -2248,6 +2248,60 @@
     "search": "depechemodepersonaljesus"
   },
   {
+    "title": "Kolorowy Wiatr",
+    "artist": "Disney’s Pocahontas (Edyta Górniak)",
+    "bpm": 326.7,
+    "bar": 4,
+    "gap": 2261.2941176470586,
+    "video": "UityBuZoXv0",
+    "year": "1995",
+    "lastUpdate": "2023-01-04T18:33:31.803Z",
+    "edition": "All for Children vol.1",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 91,
+    "author": "vaquel",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=180336",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=26438",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Disney’s Pocahontas (Edyta Górniak)-Kolorowy Wiatr.json",
+    "tracksCount": 1,
+    "search": "disneyspocahontasedytagorniakkolorowywiatr"
+  },
+  {
+    "title": "Hakuna Matata",
+    "artist": "Disney’s The Lion King",
+    "bpm": 383.2,
+    "bar": 4,
+    "gap": -65.44885177453034,
+    "video": "BAoCYwefq1A",
+    "year": "1994",
+    "lastUpdate": "2023-01-04T18:10:55.358Z",
+    "edition": "[DUET]-Songs",
+    "genre": "TV",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 85,
+    "author": "matthu",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=116579",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18284",
+    "tracks": [
+      {
+        "start": 17
+      },
+      {
+        "start": 158
+      }
+    ],
+    "file": "Disney’s The Lion King-Hakuna Matata.json",
+    "tracksCount": 2,
+    "search": "disneysthelionkinghakunamatata"
+  },
+  {
     "title": "Down with the sickness",
     "artist": "Disturbed",
     "bpm": 395.9,
