@@ -39,7 +39,7 @@ const trackSongData = (
     tolerance: setup.tolerance,
     players: setup.players.length,
     skipIntro: setup.skipIntro,
-    ...scores.reduce((curr, score, index) => ({ ...curr, [`${score}${index}`]: score.score }), {}),
+    ...scores.reduce((curr, score, index) => ({ ...curr, [`score${index}`]: score.score }), {}),
 });
 
 export const events = {
