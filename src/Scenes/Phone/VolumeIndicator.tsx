@@ -45,7 +45,7 @@ const Indicator = styled.div<{ color: string }>`
 
 const IndicatorContainer = styled.div<{ color: string }>`
     position: relative;
-    border: 1px solid white;
+    border: 0.1rem solid white;
     width: 100%;
     aspect-ratio: 1 / 1;
 

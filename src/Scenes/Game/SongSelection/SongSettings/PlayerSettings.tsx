@@ -135,11 +135,12 @@ const PlayerSettingContainer = styled.div`
     flex-direction: row;
 
     h3 {
-        padding: 0.25em;
+        padding: 1.3rem;
+        font-size: 4.5rem;
     }
 `;
 
 const PlayButton = styled(Button)<{ focused: boolean }>`
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 0.5rem 9rem;
+    font-size: 4.3rem;
 `;

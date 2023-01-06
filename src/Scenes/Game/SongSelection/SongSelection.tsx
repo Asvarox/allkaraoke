@@ -27,16 +27,15 @@ interface Props {
     preselectedSong: string | null;
 }
 
-const padding = 45;
-const leftPad = 45;
-const rightPad = 95;
-const gap = 35;
-const perRow = 4;
-
 const focusMultiplier = 1.2;
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
-    const [{ previewTop, previewLeft }, setPositions] = useState({ previewTop: 0, previewLeft: 0 });
+    const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
+        previewTop: 0,
+        previewLeft: 0,
+        previewWidth: 0,
+        previewHeight: 0,
+    });
     const {
         focusedSong,
         setFocusedSong,
@@ -79,15 +78,17 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     block: 'center',
                 });
             }
-            setPositions({ previewLeft: song.offsetLeft, previewTop: song.offsetTop });
+            setPositions({
+                previewLeft: song.offsetLeft,
+                previewTop: song.offsetTop,
+                previewWidth: song.offsetWidth,
+                previewHeight: song.offsetHeight,
+            });
         }
     }, [width, list, focusedSong, groupedSongList]);
 
     const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : setFocusedSong(index));
     if (!groupedSongList || !width) return <>Loading</>;
-
-    const entryWidth = (width - leftPad - rightPad - gap * (perRow - 1)) / perRow;
-    const entryHeight = (entryWidth / 16) * 9;
 
     if (isLoading) {
         return (
@@ -113,8 +114,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                         onExitKeyboardControl={() => setKeyboardControl(true)}
                         top={previewTop}
                         left={previewLeft}
-                        width={entryWidth}
-                        height={entryHeight}
+                        width={previewWidth}
+                        height={previewHeight}
                         focusEffect={!showFilters}
                     />
                 )}
@@ -124,8 +125,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                         <SongsGroup>
                             {group.songs.map(({ song, index }) => (
                                 <SongListEntry
-                                    width={entryWidth}
-                                    height={entryHeight}
                                     key={song.file}
                                     onClick={() => onSongClick(index)}
                                     video={song.video}
@@ -161,27 +160,22 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     max-height: 100vh;
+    --song-list-gap: 3.5rem;
 `;
 
 const SongsGroupContainer = styled.div``;
 
-const SongsGroup = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: ${gap}px;
-`;
 const SongsGroupHeader = styled.div`
     display: inline-block;
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    font-size: 32px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
     position: sticky;
     z-index: 1;
-    top: -${gap}px;
+    top: calc(-1 * var(--song-list-gap));
     font-weight: bold;
     color: ${styles.colors.text.active};
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.05rem black;
     background: rgba(0, 0, 0, 0.7);
 `;
 
@@ -190,10 +184,8 @@ const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    gap: ${gap}px;
-    padding: ${padding}px;
-    padding-left: ${leftPad}px;
-    padding-right: ${rightPad}px;
+    gap: var(--song-list-gap);
+    padding: 4.5rem 11rem 4.5rem 4.5rem;
     overflow-y: auto;
     overflow-x: clip;
     box-sizing: border-box;
@@ -206,19 +198,26 @@ const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
     opacity: ${(props) => (props.dim ? 0.5 : 1)};
 `;
 
-const SongListEntry = styled(SongCard)<{ video: string; focused: boolean; width: number; height: number }>`
-    width: ${(props) => props.width}px;
-    height: ${(props) => props.height}px;
+const SongsGroup = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--song-list-gap);
+`;
 
-    padding: 0.5em;
+const SongListEntry = styled(SongCard)<{ video: string; focused: boolean }>`
+    flex-basis: calc(25% - ((3 / 4) * var(--song-list-gap)));
+    box-sizing: border-box;
+    aspect-ratio: 16/9;
+    padding: 1.3rem;
 
     transition: 300ms;
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
-    // transform: ${(props) => (props.focused ? 'scale(1.1) perspective(500px) rotateY(7.5deg)' : 'scale(1)')};
+    // transform: ${(props) => (props.focused ? 'scale(1.1) perspective(50rem) rotateY(7.5deg)' : 'scale(1)')};
     ${(props) => props.focused && focused}
-    border: 1px black solid;
-    border-radius: 5px;
+    border: 0.1rem black solid;
+    border-radius: 0.5rem;
 `;
 
 const LoaderContainer = styled.div`

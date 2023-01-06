@@ -38,7 +38,7 @@ export const Switcher = ({ focused, label, value, onClick, ...restProps }: Props
 
 const ConfigurationPosition = styled(SongListEntryDetails)<{ focused: boolean }>`
     cursor: pointer;
-    padding: 0.25em;
+    padding: 0.65rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,9 +48,8 @@ const ConfigurationPosition = styled(SongListEntryDetails)<{ focused: boolean }>
 
 const ConfigValue = styled.span`
     color: ${styles.colors.text.active};
-    //font-size: 1.1em;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    padding-left: 10px;
+    padding-left: 1rem;
 `;

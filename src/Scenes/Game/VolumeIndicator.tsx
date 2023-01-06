@@ -31,15 +31,15 @@ export default function VolumeIndicator({ playerNumber, children, ...props }: Pr
 }
 
 const Indicator = styled.div<{ volume: number; color: string }>`
-    border: 1px solid white;
-    padding: 10px 30px;
+    border: 0.1rem solid white;
+    padding: 1rem 3rem;
 
     transition: 300ms;
 
     background: ${(props) => (props.volume > 0.025 ? props.color : 'black')};
     text-align: center;
-    gap: 0.5em;
-    font-size: 0.75em;
+    gap: 1.25rem;
+    font-size: 2.3rem;
     color: white;
 
     svg {

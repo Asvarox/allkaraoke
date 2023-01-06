@@ -5,8 +5,8 @@ import { SongPreview } from 'interfaces';
 import { useSongStats } from 'Songs/stats/hooks';
 import styles from '../Singing/GameOverlay/Drawing/styles';
 
-export const SongCardContainer = styled.div<{ width: number }>`
-    font-size: ${(props) => props.width * 0.065}px;
+export const SongCardContainer = styled.div`
+    font-size: 4.5rem;
 
     display: flex;
     align-items: flex-end;
@@ -29,7 +29,7 @@ export const SongCardBackground = styled.div<{ video: string; focused: boolean }
 
     opacity: ${(props) => (props.focused ? 1 : 0.8)};
 
-    border-radius: 5px;
+    border-radius: 0.5rem;
     transition: 300ms;
 `;
 
@@ -37,15 +37,16 @@ export const SongCard = styled(SongCardContainer)`
     cursor: pointer;
 `;
 
-export const SongListEntryDetails = styled.span`
+export const SongListEntryDetails = styled.span<{ active?: boolean }>`
     background: rgba(0, 0, 0, 0.7);
 
     width: auto;
     display: inline-block;
-    padding: 0.15em;
+    padding: 0.5rem;
     ${typography};
 
     text-align: right;
+    font-size: ${({ active }) => (active ? '6rem' : '2.7rem')};
 `;
 
 export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
@@ -53,7 +54,7 @@ export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`
 `;
 
 export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
-    margin-top: 0.25em;
+    margin-top: ${(props) => (props.active ? '1.5rem' : '0.5rem')};
     color: white;
 `;
 
@@ -72,15 +73,15 @@ export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
 
 const SongStatIndicator = styled.div`
     position: absolute;
-    top: 0.35em;
-    right: 0.35em;
-    //min-width: 1em;
-    padding: 0 0.75em;
-    height: 1.5em;
-    border-radius: 5em;
+    top: 0.5rem;
+    right: 0.5rem;
+    //min-width: 1rem;
+    padding: 0 1rem;
+    height: 2rem;
+    border-radius: 5rem;
     color: white;
     background: rgba(0, 0, 0, 0.75);
-    font-size: 0.5em;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;

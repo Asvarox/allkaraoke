@@ -104,13 +104,17 @@ function Advanced(props: Props) {
 
 const MicCheck = styled(VolumeIndicator)`
     display: inline-flex;
-    padding: 0.05em 0.4em;
+    padding: 0.1rem 1rem;
+
+    svg {
+        font-size: 2.4rem;
+    }
 `;
 
 const Heading = styled.h2`
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 1.25rem;
 `;
 
 export default Advanced;

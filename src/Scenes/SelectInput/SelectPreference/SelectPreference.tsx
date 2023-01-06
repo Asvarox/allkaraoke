@@ -121,34 +121,33 @@ const MicIcon = () => (
 );
 
 const OptionDescription = styled.div<{ focused?: boolean }>`
-    padding: 0 0 0 1em;
-    font-size: 0.63em;
+    padding: 0 0 0 2.5rem;
+    font-size: 1.6rem;
     max-height: 0;
     overflow: clip;
     transition: 300ms;
 
     svg {
-        font-size: 0.85em;
-        //padding-top: 3px;
+        font-size: 0.85rem;
     }
     opacity: 0;
 `;
 
 const OptionIconContainer = styled.div`
     position: relative;
-    margin: 0em 0.25em 0 1em;
+    margin: 0rem 0.6rem 0 2.5rem;
     transition: 300ms;
 
     svg {
         transition: 300ms;
-        width: 1.5em;
-        height: 1.5em;
+        width: 3.6rem;
+        height: 3.6rem;
         color: rgba(${styles.colors.players[1].text});
     }
 
     svg:first-of-type {
-        top: 0.25em;
-        left: 0.5em;
+        top: 0.6rem;
+        left: 1.25rem;
         position: absolute;
         color: rgba(${styles.colors.players[0].text});
         z-index: 100;
@@ -163,13 +162,13 @@ const Option = styled(MenuButton)<{ focused?: boolean }>`
     ${(props) =>
         props.focused
             ? css`
-                  height: 165px;
+                  height: 16.5rem;
                   background: black;
                   ${focused};
 
                   ${OptionDescription} {
-                      padding-top: 1em;
-                      max-height: 100px;
+                      padding-top: 1.6rem;
+                      max-height: 10rem;
                       opacity: 1;
                   }
 

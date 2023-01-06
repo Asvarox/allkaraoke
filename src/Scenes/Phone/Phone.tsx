@@ -92,47 +92,56 @@ function Phone({ roomId }: Props) {
     }, [connectionStatus]);
 
     return (
-        <LayoutWithBackground>
-            <Container>
-                <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />
-                <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
-                    <Form onSubmit={onConnect}>
-                        <Input
-                            focused={false}
-                            label="Name"
-                            value={name}
-                            onChange={setName}
-                            ref={inputRef}
-                            disabled={disabled}
-                            autoFocus
-                            data-test="player-name-input"
-                        />
-                        <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
-                            {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
-                            {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
-                        </MenuButton>
-                        {showConnectionTip && (
-                            <>
-                                <h3>If it doesn't connect</h3>
-                                <h5>
-                                    Make sure you are in the same <Wifi /> Wi-Fi
-                                </h5>
-                                <h5>Refresh (F5) the Karaoke on the PC</h5>
-                            </>
-                        )}
-                    </Form>
-                    <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
-                        WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
-                    </KeepAwake>
-                    <MicInputState
-                        onClick={() =>
-                            monitoringStarted ? PhoneMic.stopMonitoring() : PhoneMic.startMonitoring(undefined, false)
-                        }>
-                        Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
-                    </MicInputState>
-                </UserMediaEnabled>
-            </Container>
-        </LayoutWithBackground>
+        <>
+            <style>
+                {`html {
+                font-size: 10px !important;
+            }`}
+            </style>
+            <LayoutWithBackground>
+                <Container>
+                    <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />
+                    <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
+                        <Form onSubmit={onConnect}>
+                            <Input
+                                focused={false}
+                                label="Name"
+                                value={name}
+                                onChange={setName}
+                                ref={inputRef}
+                                disabled={disabled}
+                                autoFocus
+                                data-test="player-name-input"
+                            />
+                            <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
+                                {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
+                                {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
+                            </MenuButton>
+                            {showConnectionTip && (
+                                <>
+                                    <h3>If it doesn't connect</h3>
+                                    <h5>
+                                        Make sure you are in the same <Wifi /> Wi-Fi
+                                    </h5>
+                                    <h5>Refresh (F5) the Karaoke on the PC</h5>
+                                </>
+                            )}
+                        </Form>
+                        <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
+                            WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
+                        </KeepAwake>
+                        <MicInputState
+                            onClick={() =>
+                                monitoringStarted
+                                    ? PhoneMic.stopMonitoring()
+                                    : PhoneMic.startMonitoring(undefined, false)
+                            }>
+                            Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
+                        </MicInputState>
+                    </UserMediaEnabled>
+                </Container>
+            </LayoutWithBackground>
+        </>
     );
 }
 export default Phone;

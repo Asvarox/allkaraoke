@@ -138,6 +138,8 @@ body {
 html {
     overflow: overlay;
     overflow-x: hidden;
+
+    font-size: calc(min(0.9259259259259vh, 0.5208333333333vw));
 }
 
 code {

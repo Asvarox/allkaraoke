@@ -59,13 +59,13 @@ const CopyLinkInstruction = styled.div`
 
 const InputCopyContainer = styled.div`
     position: relative;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
 `;
 
 const CopyButton = styled.button`
     cursor: pointer;
     position: absolute;
-    padding: 0 20px;
+    padding: 0 2rem;
     right: 0;
     height: 100%;
     box-sizing: border-box;
@@ -74,7 +74,7 @@ const CopyButton = styled.button`
 
     ${typography};
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 2.2rem;
     border: 0;
 
     :active {
@@ -83,11 +83,12 @@ const CopyButton = styled.button`
 `;
 
 const InputCopy = styled.input`
-    padding: 0.75em;
+    padding: 1rem;
     box-sizing: border-box;
     background: grey;
     border: none;
     width: 100%;
+    font-size: 1.3rem;
 `;
 
 const Container = styled.div`
@@ -116,21 +117,21 @@ const Description = styled.div`
     }
 
     h3 {
-        margin-bottom: 0.75em;
+        margin-bottom: 1.9rem;
     }
     h4 {
-        margin: 0.5em 0;
+        margin: 1.25rem 0;
     }
 
     ol {
-        padding-left: 0.9em;
-        margin: 0.5em 0;
+        padding-left: 2.3rem;
+        margin: 1.25rem 0;
         list-style: decimal inside;
     }
     li {
         color: white;
-        font-size: 0.75em;
-        line-height: 1.6em;
+        font-size: 1.9rem;
+        line-height: 3.2rem;
     }
 `;
 

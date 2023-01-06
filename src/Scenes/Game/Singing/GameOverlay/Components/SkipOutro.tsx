@@ -56,31 +56,30 @@ const Container = styled.div<{ visible: boolean }>`
     ${typography};
     pointer-events: none;
     position: fixed;
-    bottom: 6em;
+    bottom: 29rem;
     transform: scale(${(props) => (props.visible ? 1 : 0)});
     opacity: ${(props) => (props.visible ? 1 : 0)};
     text-align: center;
-    font-size: 3em;
-    text-shadow: 0 0 35px black;
+    font-size: 5rem;
+    text-shadow: 0 0 3.5rem black;
     width: 100%;
     z-index: 4;
-    padding: 0.5em;
+    padding: 0.5rem;
     transition: ease 500ms;
+    //-webkit-text-stroke: thin black;
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`
-    margin: 0.1em;
-    padding: 0.04em 0.4em;
-    border-radius: 0.3em;
-    border: 0.12em solid rgb(204, 204, 204);
+    margin: 0.5em;
+    padding: 0.2rem 2rem;
+    border-radius: 1.3rem;
+    border: 0.5rem solid rgb(204, 204, 204);
     border-bottom-color: rgb(150, 150, 150);
     border-right-color: rgb(150, 150, 150);
-    //color: rgb(51, 51, 51);
     line-height: 1.4;
-    //font-size: 16px;
     display: inline-block;
     background-color: rgb(247, 247, 247);
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1rem 0 #fff;
 
     opacity: ${(props) => (props.disabled ? 0.25 : 1)};
 `;

@@ -27,6 +27,6 @@ export const focused = css`
 
 export const typography = css`
     font-weight: bold;
-    -webkit-text-stroke: 0.035em black;
+    -webkit-text-stroke: thin black;
     color: white;
 `;

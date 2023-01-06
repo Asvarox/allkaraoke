@@ -66,7 +66,7 @@ const GetSongBPM = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8em;
+    font-size: 2.1rem;
     img {
         width: 20%;
         height: 20%;

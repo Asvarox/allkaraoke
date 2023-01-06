@@ -181,7 +181,7 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
                     )}
                 </SectionEditForm>
                 <SectionChangeList>
-                    <Box sx={{ overflowY: 'auto', maxHeight: '340px' }} data-test="change-list">
+                    <Box sx={{ overflowY: 'auto', maxHeight: '34rem' }} data-test="change-list">
                         {changeRecords.map((change, index) => {
                             let message = '';
                             let Component = SectionChangeDelete;
@@ -227,7 +227,7 @@ const SectionChangeList = styled.div`
 `;
 
 const ChangeEntry = styled.div`
-    padding: 5px;
+    padding: 0.5rem;
 `;
 
 const SectionChangeDelete = styled(ChangeEntry)`
@@ -256,8 +256,8 @@ const SectionList = styled.div`
 const SectionListEntry = styled.div<{ active: boolean; selected: boolean }>`
     font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
 
-    border: 1px solid;
+    border: 0.1rem solid;
     border-color: ${(props) => (props.selected ? 'black' : 'white')};
 
-    padding: 10px;
+    padding: 1rem;
 `;

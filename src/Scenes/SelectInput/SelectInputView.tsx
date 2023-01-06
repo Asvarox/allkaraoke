@@ -118,9 +118,9 @@ const Heading = styled.h1`
 
 const CompletedAnim = styled(Lottie)`
     display: inline-block;
-    width: 2.5em;
-    height: 2.5em;
-    margin: -0.75em -0.5em -0.75em -0.75em;
+    width: 10rem;
+    height: 10rem;
+    margin: -3rem -2rem -3rem -3rem;
 `;
 
 export default SelectInputView;

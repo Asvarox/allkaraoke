@@ -65,17 +65,17 @@ function Jukebox(props: Props) {
 }
 
 const PlayThisSongButton = styled(Button)<{ focused: boolean }>`
-    bottom: 70px;
-    right: 20px;
-    width: 500px;
+    bottom: 7rem;
+    right: 2rem;
+    width: 50rem;
     position: absolute;
     font-size: 1.9vw;
 `;
 
 const SkipSongButton = styled(Button)<{ focused: boolean }>`
-    bottom: 150px;
-    right: 20px;
-    width: 300px;
+    bottom: 15rem;
+    right: 2rem;
+    width: 30rem;
     position: absolute;
     font-size: 1.9vw;
 `;

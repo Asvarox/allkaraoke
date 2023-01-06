@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { Autocomplete } from 'Elements/Autocomplete';
 import { Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -33,7 +34,7 @@ export default function SinglePlayer({
 
     return (
         <>
-            <Autocomplete
+            <PlayerName
                 value={setup.name}
                 options={playerNames}
                 onChange={onNameChange}
@@ -44,7 +45,7 @@ export default function SinglePlayer({
                 data-test={`player-${index}-name`}
             />
             {songPreview.tracksCount > 1 && (
-                <Switcher
+                <Track
                     {...register(`p${index} track`, togglePlayerTrack, 'Change track')}
                     label="Track"
                     value={getTrackName(songPreview.tracks, setup.track)}
@@ -55,3 +56,17 @@ export default function SinglePlayer({
         </>
     );
 }
+
+const PlayerName = styled(Autocomplete)`
+    input {
+        font-size: 4.5rem;
+    }
+
+    [role='listbox'] {
+        max-height: ${6 * (4.5 + 0.3)}rem;
+    }
+`;
+const Track = styled(Switcher)`
+    font-size: 4.5rem;
+    padding: 1.1rem;
+`;

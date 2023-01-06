@@ -14,7 +14,7 @@ const StyledLogo = styled.img``;
 
 const Container = styled.div`
     position: relative;
-    height: 164px;
+    height: 16.4rem;
 `;
 
 const PrideLogo = styled.img`

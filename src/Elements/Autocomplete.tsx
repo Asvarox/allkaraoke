@@ -24,6 +24,7 @@ interface Props {
     placeholder?: string;
     keyboardNavigationChangeFocus?: (direction: -1 | 1) => void;
     onBlur?: () => void;
+    className?: string;
 }
 
 export const Autocomplete = forwardRef(
@@ -38,6 +39,7 @@ export const Autocomplete = forwardRef(
             placeholder,
             keyboardNavigationChangeFocus,
             onBlur,
+            className,
             ...restProps
         }: Props,
         forwardedRef: ForwardedRef<HTMLInputElement | null>,
@@ -93,7 +95,7 @@ export const Autocomplete = forwardRef(
         };
 
         return (
-            <Container>
+            <Container className={className}>
                 <Input
                     onFocus={() => setIsInputFocused(true)}
                     onBlur={handleBlur}

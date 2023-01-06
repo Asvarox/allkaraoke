@@ -95,10 +95,10 @@ const HeadstartContainer = styled.span`
 
 const BaseHeadstart = styled.span`
     position: absolute;
-    width: 150px;
-    height: 31px;
-    margin: 7px 0;
-    right: 100px;
+    width: 15rem;
+    height: 3.1rem;
+    margin: 0.7rem 0;
+    right: 10rem;
 `;
 
 const Headstart = ({ percent, color }: { percent: number; color: string }) => (
@@ -106,7 +106,7 @@ const Headstart = ({ percent, color }: { percent: number; color: string }) => (
         style={{
             transformOrigin: 'right',
             transform: `scaleX(${Math.min(1, 2 - percent)})`,
-            right: `${Math.max(0, 1 - percent) * 150}px`,
+            right: `${Math.max(0, 1 - percent) * 15}rem`,
             background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${color}, 0) 100%)`,
         }}
     />
@@ -125,7 +125,7 @@ const BaseLyricActive = styled.span``;
 const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number; color: string }>) => (
     <BaseLyricActive
         style={{
-            clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -50px 0)`,
+            clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -5rem 0)`,
             color: `rgb(${color})`,
         }}>
         {children}
@@ -152,19 +152,19 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     }
 
     box-sizing: border-box;
-    padding: 10px;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.8' : '0.5')});
-    height: 100px;
+    height: 10rem;
     width: 100%;
     text-align: center;
     line-height: 1;
-    margin: 20px 0;
+    margin: 2rem 0;
     ${(props) => (props.shouldBlink ? `animation: blink 350ms ease-in-out infinite both;` : ``)}
 `;
 
 const BasePassTheMicProgress = styled.div<{ color: string }>`
     position: absolute;
-    height: 10px;
+    height: 1rem;
     background: rgb(${(props) => props.color});
     transition: 50ms;
     width: 100%;
@@ -186,34 +186,34 @@ const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => pr
     @keyframes shake {
         10%,
         90% {
-            transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-0.1rem, 0, 0);
         }
 
         20%,
         80% {
-            transform: translate3d(2px, 0, 0);
+            transform: translate3d(0.2rem, 0, 0);
         }
 
         30%,
         50%,
         70% {
-            transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-0.4rem, 0, 0);
         }
 
         40%,
         60% {
-            transform: translate3d(4px, 0, 0);
+            transform: translate3d(0.4rem, 0, 0);
         }
     }
 
     ${(props) => props.shouldShake && 'animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;'}
-    margin-left: 20px;
+    margin-left: 2rem;
     ${(props) => (props.shouldShake ? `fill: ${styles.colors.text.active};` : '')}
-    font-size: ${(props) => (props.shouldShake ? 40 : 30)}px;
+    font-size: ${(props) => (props.shouldShake ? 4 : 3)}rem;
 `;
 const LyricsLine = styled.div<{ nextLine?: boolean }>`
-    font-size: ${({ nextLine }) => 35 + (nextLine ? 0 : 10)}px;
-    height: 45px;
+    font-size: ${({ nextLine }) => 3.5 + (nextLine ? 0 : 1)}rem;
+    height: 4.5rem;
     color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 
     font-family: 'Comic Sans MS', 'Comic Sans';

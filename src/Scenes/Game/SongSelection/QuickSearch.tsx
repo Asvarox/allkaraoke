@@ -90,17 +90,17 @@ export default function QuickSearch({ onSongFiltered, filters }: Props) {
 
 const Container = styled.div`
     background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    font-size: 30px;
+    padding: 2rem;
+    font-size: 3rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 2rem;
     position: fixed;
     z-index: 200;
-    top: 1.5em;
-    left: 10em;
-    right: 10em;
+    top: 4.5rem;
+    left: 30rem;
+    right: 30rem;
 `;
 
 const FilterItem = styled.div<{ large?: boolean }>`

@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { DetailedScore, Song } from 'interfaces';
 import { SyntheticEvent, useState } from 'react';
 import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
@@ -32,33 +33,39 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
 
     return (
         <SongPage songData={song} width={width} height={height}>
-            {step === 'results' && (
-                <ResultsView
-                    onNextStep={() => setStep('highscores')}
-                    players={players}
-                    singSetupId={singSetupId}
-                    highScores={highScores}
+            <Container>
+                {step === 'results' && (
+                    <ResultsView
+                        onNextStep={() => setStep('highscores')}
+                        players={players}
+                        singSetupId={singSetupId}
+                        highScores={highScores}
+                    />
+                )}
+                {step === 'highscores' && (
+                    <HighScoresView
+                        onNextStep={onClickSongSelection}
+                        singSetupId={singSetupId}
+                        highScores={highScores}
+                        song={song}
+                    />
+                )}
+                <audio
+                    src={backgroundMusic}
+                    loop
+                    hidden
+                    autoPlay
+                    onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
+                        e.currentTarget.volume = 0.4;
+                    }}
                 />
-            )}
-            {step === 'highscores' && (
-                <HighScoresView
-                    onNextStep={onClickSongSelection}
-                    singSetupId={singSetupId}
-                    highScores={highScores}
-                    song={song}
-                />
-            )}
-            <audio
-                src={backgroundMusic}
-                loop
-                hidden
-                autoPlay
-                onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
-                    e.currentTarget.volume = 0.4;
-                }}
-            />
+            </Container>
         </SongPage>
     );
 }
+
+const Container = styled.div`
+    pointer-events: auto;
+`;
 
 export default PostGameView;

@@ -58,7 +58,7 @@ const BaseBackgroundImage = styled(Background)<{ blur: boolean; video: string }>
     background-size: cover;
     background-position: center center;
 
-    filter: ${(props) => (props.blur ? 'blur(5px)' : 'none')};
+    filter: ${(props) => (props.blur ? 'blur(0.5rem)' : 'none')};
 `;
 
 const BackgroundImage = (props: { blur: boolean; video: string }) => (
@@ -82,7 +82,7 @@ const FocusedSongData = styled.div`
     position: relative;
     margin: 0 auto;
     color: white;
-    max-width: 1440px;
+    max-width: 144rem;
     height: 100%;
     pointer-events: none;
 `;
@@ -90,29 +90,29 @@ const FocusedSongData = styled.div`
 export const ContentElement = styled.span`
     background: rgba(0, 0, 0, 0.5);
     display: inline-block;
-    backdrop-filter: blur(5px);
-    -webkit-text-stroke: 1px black;
-    padding: 5px 20px;
-    margin: 0 0 10px 20px;
+    backdrop-filter: blur(0.5rem);
+    -webkit-text-stroke: 0.1rem black;
+    padding: 0.5rem 2rem;
+    margin: 0 0 1rem 2rem;
     font-weight: bold;
 
     a {
         text-decoration: none;
-        -webkit-text-stroke: 1px black;
+        -webkit-text-stroke: 0.1rem black;
         color: ${styles.colors.text.active};
     }
 `;
 
 const SongTitle = styled(ContentElement)`
     color: ${styles.colors.text.active};
-    margin-top: 20px;
-    font-size: 45px;
+    margin-top: 2rem;
+    font-size: 4.5rem;
 `;
 
 const SongArtist = styled(ContentElement)`
-    font-size: 35px;
+    font-size: 3.5rem;
 `;
 
 const SongCreator = styled(ContentElement)`
-    font-size: 20px;
+    font-size: 2rem;
 `;

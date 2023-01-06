@@ -75,7 +75,7 @@ const Container = styled.div`
     position: absolute;
     right: -100vh;
     top: 0;
-    font-size: 30px;
+    font-size: 3.6rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -87,7 +87,8 @@ const Container = styled.div`
 `;
 
 const Playlist = styled(Button)<{ active?: boolean }>`
+    font-size: 3rem;
     flex: 1;
-    padding: 15px;
+    padding: 1.5rem;
     ${(props) => props.active === false && `opacity: .5;`}
 `;

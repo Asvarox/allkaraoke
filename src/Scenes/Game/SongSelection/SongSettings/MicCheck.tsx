@@ -19,10 +19,10 @@ export default function MicCheck() {
 }
 
 const MicChecksContainer = styled.div`
-    font-size: 0.25em;
-    gap: 0.5em;
+    font-size: 3rem;
+    gap: 1.25rem;
     display: flex;
     flex-direction: column;
     ${typography};
-    margin-bottom: 2.8em;
+    margin-bottom: 8.6rem;
 `;

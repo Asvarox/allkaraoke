@@ -25,8 +25,8 @@ const RecommendChrome = styled.div`
     ${typography};
     text-align: center;
     background: darkred;
-    padding: 30px 0;
-    margin-top: 10px;
+    padding: 3rem 0;
+    margin-top: 1rem;
     h2 {
         margin-top: 0;
     }

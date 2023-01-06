@@ -12,7 +12,6 @@ import {
     SongCardBackground,
     SongCardContainer,
     SongCardStatsIndicator,
-    SongListEntryDetails,
     SongListEntryDetailsArtist,
     SongListEntryDetailsTitle,
 } from './SongCard';
@@ -45,7 +44,7 @@ export default function SongPreviewComponent({
 }: Props) {
     const [showVideo, setShowVideo] = useState(false);
     const player = useRef<VideoPlayerRef | null>(null);
-    const { width: windowWidth } = useViewportSize();
+    const { width: windowWidth, height: windowHeight } = useViewportSize();
 
     const active = keyboardControl;
 
@@ -69,7 +68,7 @@ export default function SongPreviewComponent({
     }, [videoId, player, previewStart, previewEnd]);
 
     const finalWidth = active ? windowWidth! : width;
-    const finalHeight = active ? (windowWidth! / 20) * 9 : height;
+    const finalHeight = active ? Math.min((windowWidth! / 20) * 9, windowHeight! * (4 / 5)) : height;
 
     useEffect(() => {
         player.current?.setSize(finalWidth, (finalWidth / 16) * 9);
@@ -100,12 +99,16 @@ export default function SongPreviewComponent({
                         <>
                             <SongInfo active={active}>
                                 {!active && <SongCardStatsIndicator song={songPreview} />}
-                                <SongListEntryDetailsArtist>{songPreview.artist}</SongListEntryDetailsArtist>
-                                <SongListEntryDetailsTitle>{songPreview.title}</SongListEntryDetailsTitle>
+                                <SongListEntryDetailsArtist active={active}>
+                                    {songPreview.artist}
+                                </SongListEntryDetailsArtist>
+                                <SongListEntryDetailsTitle active={active}>
+                                    {songPreview.title}
+                                </SongListEntryDetailsTitle>
                                 {active && (
                                     <>
                                         {songPreview.author && (
-                                            <SongAuthor>
+                                            <SongAuthor active={active}>
                                                 by&nbsp;
                                                 {songPreview.authorUrl ? (
                                                     <a href={songPreview.authorUrl} target="_blank" rel="noreferrer">
@@ -142,7 +145,7 @@ export default function SongPreviewComponent({
                         />
                     </>
                 )}
-                <Video show={showVideo} active={keyboardControl} height={finalHeight} width={finalWidth}>
+                <Video show={showVideo} active={keyboardControl} height={finalHeight}>
                     <VideoPlayer
                         width={0}
                         height={0}
@@ -175,7 +178,7 @@ const BaseSongPreviewContainer = styled.div<{ width: number; height: number; act
 
     ${(props) => (props.active ? 'position: fixed;' : 'transform: scale(1.2);')}
     ${(props) => !props.active && 'pointer-events: none;'}
-    ${(props) => !props.active && 'border-radius: 5px;'}
+    ${(props) => !props.active && 'border-radius: 0.5rem;'}
 `;
 
 interface SongPreviewContainerProps
@@ -213,7 +216,7 @@ const Video = styled(SongCard)<{ show: boolean; active: boolean; height: number 
         transition: ${({ show, active }) => (show || active ? 1000 : 0)}ms;
     }
     ${(props) => !props.active && 'background-image: none !important;'}
-    ${(props) => !props.active && 'border-radius: 5px;'}
+    ${(props) => !props.active && 'border-radius: 0.5rem;'}
     ${(props) => props.active && `margin-top: calc(-1 * (100vw / 16 * 9) / 2 + ${props.height / 2}px);`}
 `;
 
@@ -225,12 +228,12 @@ const ContentBase = styled(SongCardContainer)<{
 }>`
     position: fixed; /* makes sure Autocomplete dropdown doesn't get clipped */
     z-index: 100;
-    padding: ${(props) => (props.active ? '0.25em' : '0.5em')};
-    ${(props) => props.blurBackground && 'backdrop-filter: blur(10px);'}
+    padding: ${(props) => (props.active ? '3.1rem' : '1.3rem')};
+    ${(props) => props.blurBackground && 'backdrop-filter: blur(1rem);'}
 
     ${(props) => props.focus && !props.active && props.isVideoPlaying && focused}
-    ${(props) => props.focus && !props.active && props.isVideoPlaying && 'border: 1px solid black;'}
-    border-radius: 5px;
+    ${(props) => props.focus && !props.active && props.isVideoPlaying && 'border: 0.1rem solid black;'}
+    border-radius: 0.5rem;
 `;
 
 const Content = (props: ComponentProps<typeof ContentBase> & { width: number; height: number }) => (
@@ -257,17 +260,16 @@ const SongInfo = styled.div<{ active: boolean }>`
         `
         align-items: flex-start;
         justify-content: flex-start;
-        font-size: .5em;
     `}
 `;
 
 const SongAuthor = styled(SongListEntryDetailsTitle)`
-    font-size: 0.5em;
-    margin-top: 0.5em;
+    font-size: 3rem;
+    margin-top: 3rem;
 
     a {
         text-decoration: none;
-        -webkit-text-stroke: 1px black;
+        -webkit-text-stroke: 0.1rem black;
         color: ${styles.colors.text.active};
     }
 `;
@@ -276,17 +278,11 @@ export const SongListEntryStats = ({ song }: { song: SongPreview }) => {
     const stats = useSongStats(song);
 
     return (
-        <SongEntryStat>
+        <SongAuthor>
             {stats?.plays ? `Played ${stats.plays} time${stats.plays > 1 ? 's' : ''}` : 'Never played yet'}
-        </SongEntryStat>
+        </SongAuthor>
     );
 };
-
-const SongEntryStat = styled(SongListEntryDetails)`
-    margin-top: 0.5em;
-    color: white;
-    font-size: 0.5em;
-`;
 
 const BaseSongBPMIndicator = styled.div<{ width: number; height: number }>`
     background: white;
@@ -297,7 +293,7 @@ const BaseSongBPMIndicator = styled.div<{ width: number; height: number }>`
     left: 0;
     position: absolute;
     animation: bpm 1s infinite;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     pointer-events: none;
 
     @keyframes bpm {

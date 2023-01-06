@@ -231,9 +231,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
 }
 
 const HelpText = styled.p`
-    font-size: 0.85em;
-    margin-bottom: 1em;
-    line-height: 1.25em;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.25rem;
     strong {
         font-weight: bold;
     }

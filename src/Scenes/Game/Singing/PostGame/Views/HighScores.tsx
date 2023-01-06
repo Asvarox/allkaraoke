@@ -58,49 +58,49 @@ function HighScoresView({ onNextStep, highScores, singSetupId, song }: Props) {
 
 const ScoresContainer = styled.div`
     position: absolute;
-    top: 200px;
+    top: 20rem;
     width: 100%;
     text-align: center;
-    padding: 0 10em;
+    padding: 0 16rem;
     box-sizing: border-box;
 `;
 
 const ScoreContainer = styled.div<{ isCurrentSing: boolean }>`
     position: relative;
     ${typography};
-    font-size: 2em;
+    font-size: 3.2rem;
     display: flex;
     background: ${(props) => (props.isCurrentSing ? 'rgba(0,0,0,.9)' : 'rgba(0,0,0,.5)')};
-    margin-bottom: 0.5em;
-    padding: ${(props) => (props.isCurrentSing ? `0 1em` : `0.25em 1em`)};
+    margin-bottom: 2rem;
+    padding: ${(props) => (props.isCurrentSing ? `0 1.5rem` : `1rem 3.2rem`)};
     align-items: center;
 `;
 const ScorePosition = styled.div`
-    padding: 0 0.5em;
+    padding: 0 1.6rem;
     color: ${styles.colors.text.active};
 `;
 const ScorePlayerName = styled.div`
     text-align: left;
     flex: 1;
-    padding: 0.5em;
+    padding: 1.6rem;
 `;
 const ScoreScore = styled.div`
-    padding: 0 0.5em;
+    padding: 0 1rem;
 `;
 const ScoreDate = styled.div`
     position: absolute;
-    font-size: 0.6em;
-    bottom: -0.5em;
-    right: -1em;
+    font-size: 2rem;
+    bottom: -1rem;
+    right: -1.6rem;
     background: black;
-    padding: 0.2em;
+    padding: 0.5rem;
 `;
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`
     position: absolute;
-    bottom: 40px;
-    right: 20px;
-    width: 400px;
+    bottom: 4rem;
+    right: 2rem;
+    width: 40rem;
     font-size: 1.9vw;
 `;
 

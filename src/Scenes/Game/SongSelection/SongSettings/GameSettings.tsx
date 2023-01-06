@@ -67,14 +67,14 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
 
     return (
         <>
-            <Switcher
+            <GSSwitcher
                 {...register('difficulty', changeTolerance, 'Change difficulty')}
                 label="Difficulty"
                 value={difficultyNames[tolerance]}
                 data-test="difficulty-setting"
                 data-test-value={difficultyNames[tolerance]}
             />
-            <Switcher
+            <GSSwitcher
                 {...register('mode', changeMode, 'Change mode')}
                 label="Mode"
                 value={gameModeNames[mode]}
@@ -82,7 +82,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 data-test-value={gameModeNames[mode]}
             />
             {proposeSkipIntro && (
-                <Switcher
+                <GSSwitcher
                     {...register('skipIntro', () => setSkipIntro(!skipIntro), 'Skip intro')}
                     label="Skip intro"
                     value={skipIntro ? 'Yes' : 'No'}
@@ -97,7 +97,12 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
     );
 }
 
-const PlayButton = styled(Button)<{ focused: boolean }>`
-    padding-left: 2em;
-    padding-right: 2em;
+const PlayButton = styled(Button)`
+    padding: 0.5rem 9rem;
+    font-size: 4.3rem;
+`;
+
+const GSSwitcher = styled(Switcher)`
+    font-size: 4.3rem;
+    padding: 1rem;
 `;

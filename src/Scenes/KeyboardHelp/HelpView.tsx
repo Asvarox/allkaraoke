@@ -79,7 +79,7 @@ const Section = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 `;
 
 const SectionKeys = styled.div`
@@ -92,36 +92,36 @@ const SectionKeys = styled.div`
 const SectionHelp = styled.span`
     flex: 3;
     ${typography};
-    font-size: 20px;
+    font-size: 2rem;
     text-align: right;
 `;
 
 const Container = styled.div`
     position: fixed;
-    top: 100px;
-    right: 55px;
-    padding: 5px;
+    top: 10rem;
+    right: 5.5rem;
+    padding: 0.5rem;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 340px;
+    gap: 1rem;
+    width: 34rem;
 
     z-index: 100000;
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`
-    margin: 0.1em;
-    padding: 0.05em 0.5em;
-    border-radius: 3px;
-    border: 1px solid rgb(204, 204, 204);
+    margin: 0.2rem;
+    padding: 0.12rem 0.9rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid rgb(204, 204, 204);
     color: rgb(51, 51, 51);
     line-height: 1.4;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: inline-block;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 2px #ffffff;
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0.2rem #ffffff;
     background-color: rgb(247, 247, 247);
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 0.1rem 0 #fff;
     font-weight: normal;
 
     opacity: ${(props) => (props.disabled ? 0.25 : 1)};

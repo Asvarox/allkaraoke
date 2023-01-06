@@ -68,20 +68,20 @@ const Container = styled.div`
         ${typography};
         margin: 0;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 3.6rem;
         color: ${styles.colors.text.active};
     }
 
     h2 {
         ${typography};
         margin: 0;
-        font-size: 1.15em;
+        font-size: 1.15rem;
     }
 
     h3 {
         ${typography};
         margin: 0;
-        font-size: 1.05em;
+        font-size: 1.05rem;
 
         strong {
             color: ${styles.colors.text.active};
@@ -91,20 +91,19 @@ const Container = styled.div`
     h4 {
         ${typography};
         margin: 0;
-        font-size: 0.85em;
+        font-size: 0.85rem;
     }
 
     hr {
-        margin: 10px;
+        margin: 1rem;
         opacity: 0.25;
     }
 `;
 
 const GameConfiguration = styled.div`
     width: auto;
-    font-size: 0.35em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.5em;
+    gap: 1.25rem;
 `;

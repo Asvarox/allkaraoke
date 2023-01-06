@@ -4,8 +4,8 @@ import { focused, typography } from 'Elements/cssMixins';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
-    padding: 0.1em 0.3em;
-    font-size: 1em;
+    padding: 0.1rem 0.3rem;
+    font-size: 2.6rem;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -13,7 +13,7 @@ export const Button = styled.button<{ focused?: boolean }>`
 
     background-color: rgba(0, 0, 0, 0.75);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 
     ${typography};
 

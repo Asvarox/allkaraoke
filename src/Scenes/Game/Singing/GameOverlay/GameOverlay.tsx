@@ -97,7 +97,7 @@ export default GameOverlay;
 const Screen = styled.div`
     height: 100%;
     color: white;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.2rem black;
     font-weight: bold;
     position: relative;
     display: flex;
@@ -112,11 +112,11 @@ const Scores = styled.div`
     flex: 1;
     height: 100%;
     box-sizing: border-box;
-    font-size: 55px;
+    font-size: 5.5rem;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding-right: 40px;
+    gap: 4rem;
+    padding-right: 4rem;
     flex-direction: column;
     text-align: right;
 `;

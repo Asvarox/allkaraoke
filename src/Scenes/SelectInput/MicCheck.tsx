@@ -20,7 +20,7 @@ function MicCheck(props: Props) {
 
 const MicCheckContainer = styled.div`
     display: flex;
-    gap: 0.5em;
+    gap: 1.25rem;
 
     div {
         flex: 1;

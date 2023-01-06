@@ -54,12 +54,13 @@ const FullscreenButton = styled.div`
     cursor: pointer;
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px;
-    margin: 0 10px;
+    padding: 1rem;
+    margin: 0 1rem;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 10000;
+    font-size: 1.5rem;
 `;
 
 export default App;

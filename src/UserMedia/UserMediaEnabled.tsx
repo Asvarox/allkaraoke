@@ -40,8 +40,8 @@ const AdditionalInfo = styled.div`
     text-align: center;
 
     img {
-        margin: 0.5em;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        margin: 0.5rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
     }
 `;
 
@@ -52,6 +52,6 @@ const WarningContainer = styled.div`
 `;
 const WarningIcon = styled(Warning)`
     color: ${styles.colors.text.active};
-    font-size: 3em;
+    font-size: 3rem;
 `;
 export default UserMediaEnabled;

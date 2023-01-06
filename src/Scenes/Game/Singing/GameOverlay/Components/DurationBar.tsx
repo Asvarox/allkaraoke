@@ -54,17 +54,17 @@ function DurationBar({ players }: Props) {
 
 const Bar = styled.div`
     position: absolute;
-    height: 6px;
+    height: 0.6rem;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     left: 0;
-    top: calc(50% - 3px);
+    top: calc(50% - 0.3rem);
 `;
 
 const BaseMarker = styled(Bar)`
     top: 0;
-    margin-left: -3px;
-    width: 6px;
+    margin-left: -0.25rem;
+    width: 0.5rem;
     background: ${styles.colors.text.active};
     opacity: 75%;
 `;

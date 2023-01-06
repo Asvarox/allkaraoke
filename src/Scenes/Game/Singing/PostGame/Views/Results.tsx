@@ -88,20 +88,20 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
 
 const ScoresContainer = styled.div`
     position: absolute;
-    top: 200px;
+    top: 20rem;
     width: 100%;
     text-align: center;
 `;
 
 const ScoreTextPlayer = styled(ContentElement)<{ color: string }>`
-    padding-left: 100px;
-    padding-right: 100px;
-    font-size: 35px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 3.5rem;
     color: rgb(${(props) => props.color});
 `;
 
 const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; highscore: boolean; color: string }>`
-    font-size: ${(props) => (props.win ? '105px' : '55px')};
+    font-size: ${(props) => (props.win ? '10.5rem' : '5.5rem')};
     color: ${(props) => (props.win ? styles.colors.text.active : 'white')};
     //color: white;
     transition: 400ms ease-in-out;
@@ -112,13 +112,13 @@ const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; highscore: boolea
             ::after {
                 content: 'High score!';
                 position: absolute;
-                top: -15px;
-                right: -100px;
+                top: -1.5rem;
+                right: -10rem;
 
-                font-size: 30px;
+                font-size: 3rem;
                 color: ${styles.colors.text.default};
-                padding: 5px 10px;
-                border-radius: 15px;
+                padding: 0.5rem 1rem;
+                border-radius: 1.5rem;
 
                 ${buttonFocused};
             }
@@ -127,9 +127,9 @@ const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; highscore: boolea
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`
     position: absolute;
-    bottom: 40px;
-    right: 20px;
-    width: 400px;
+    bottom: 4rem;
+    right: 2rem;
+    width: 40rem;
     font-size: 1.9vw;
 `;
 
