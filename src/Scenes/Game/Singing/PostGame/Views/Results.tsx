@@ -1,4 +1,3 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Button, buttonFocused } from 'Elements/Button';
 import useKeyboard from 'hooks/useKeyboard';
@@ -61,6 +60,9 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
                     data-test="player-1-score"
                     data-score={player1sum}>
                     <ScoreText score={player1sum} />
+                    <HighScoreBadge highscore={currentTick === MAX_TICKS && isHighScore(players[0].name)}>
+                        High score!
+                    </HighScoreBadge>
                 </ScoreTextScore>
                 <br /> {/* xD */}
                 <br />
@@ -73,6 +75,9 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
                     data-test="player-2-score"
                     data-score={player2sum}>
                     <ScoreText score={player2sum} />
+                    <HighScoreBadge highscore={currentTick === MAX_TICKS && isHighScore(players[0].name)}>
+                        High score!
+                    </HighScoreBadge>
                 </ScoreTextScore>
                 <br />
                 <ScoreTextPlayer color={styles.colors.players[1].text} data-test="player-2-name">
@@ -105,25 +110,24 @@ const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; highscore: boolea
     color: ${(props) => (props.win ? styles.colors.text.active : 'white')};
     //color: white;
     transition: 400ms ease-in-out;
+    position: relative;
+`;
 
-    ${(props) =>
-        props.highscore &&
-        css`
-            ::after {
-                content: 'High score!';
-                position: absolute;
-                top: -1.5rem;
-                right: -10rem;
+const HighScoreBadge = styled.span<{ highscore: boolean }>`
+    position: absolute;
+    top: -1.5rem;
+    right: -10rem;
 
-                font-size: 3rem;
-                -webkit-text-stroke: 0.1rem black;
-                color: ${styles.colors.text.default};
-                padding: 0.5rem 1rem;
-                border-radius: 1.5rem;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.1rem black;
+    color: ${styles.colors.text.default};
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
 
-                ${buttonFocused};
-            }
-        `};
+    ${(props) => props.highscore && buttonFocused};
+
+    opacity: ${(props) => (props.highscore ? '1' : '0')};
+    transition: 400ms;
 `;
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`
