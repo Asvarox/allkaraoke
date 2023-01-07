@@ -45,7 +45,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             )}
             {hasNotes ? (
                 <>
-                    <LyricsLine data-test={`lyrics-current-player-${player + 1}`}>
+                    <LyricsLine data-test={`lyrics-current-player-${player + 1}`} effectsEnabled={effectsEnabled}>
                         <HeadstartContainer>
                             <Headstart
                                 color={playerColor}
@@ -74,14 +74,18 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                     </LyricsLine>
                 </>
             ) : (
-                <LyricsLine>&nbsp;</LyricsLine>
+                <LyricsLine effectsEnabled={effectsEnabled}>&nbsp;</LyricsLine>
             )}
-            {isNotesSection(nextSection) && (
-                <LyricsLine nextLine data-test={`lyrics-next-player-${player + 1}`}>
+            {isNotesSection(nextSection) ? (
+                <LyricsLine nextLine data-test={`lyrics-next-player-${player + 1}`} effectsEnabled={effectsEnabled}>
                     {nextSection.notes.map((note) => (
                         <Fragment key={note.start}>{note.lyrics}</Fragment>
                     ))}
                     {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
+                </LyricsLine>
+            ) : (
+                <LyricsLine effectsEnabled={effectsEnabled} nextLine>
+                    &nbsp;
                 </LyricsLine>
             )}
         </LyricsContainer>
@@ -154,7 +158,6 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     box-sizing: border-box;
     padding: 1rem;
     background-color: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.8' : '0.5')});
-    height: 10rem;
     width: 100%;
     text-align: center;
     line-height: 1;
@@ -211,8 +214,8 @@ const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => pr
     ${(props) => (props.shouldShake ? `fill: ${styles.colors.text.active};` : '')}
     font-size: ${(props) => (props.shouldShake ? 4 : 3)}rem;
 `;
-const LyricsLine = styled.div<{ nextLine?: boolean }>`
-    font-size: ${({ nextLine }) => 3.5 + (nextLine ? 0 : 1)}rem;
+const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
+    font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2.5)}rem;
     height: 4.5rem;
     color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 

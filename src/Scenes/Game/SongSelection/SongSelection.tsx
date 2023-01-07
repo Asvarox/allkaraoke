@@ -175,7 +175,7 @@ const SongsGroupHeader = styled.div`
     top: calc(-1 * var(--song-list-gap));
     font-weight: bold;
     color: ${styles.colors.text.active};
-    -webkit-text-stroke: 0.05rem black;
+    -webkit-text-stroke: thin black;
     background: rgba(0, 0, 0, 0.7);
 `;
 

@@ -269,7 +269,7 @@ const SongAuthor = styled(SongListEntryDetailsTitle)`
 
     a {
         text-decoration: none;
-        -webkit-text-stroke: 0.1rem black;
+        -webkit-text-stroke: thin black;
         color: ${styles.colors.text.active};
     }
 `;

@@ -16,22 +16,19 @@ import 'Stats';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
-import isE2E from 'utils/isE2E';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
     return (
         <KeyboardHelpProvider>
-            {!isE2E() && (
-                <FullscreenButton
-                    onClick={() => {
-                        try {
-                            document.body.requestFullscreen().catch(console.info);
-                        } catch (e) {}
-                    }}>
-                    Fullscreen
-                </FullscreenButton>
-            )}
+            <FullscreenButton
+                onClick={() => {
+                    try {
+                        document.body.requestFullscreen().catch(console.info);
+                    } catch (e) {}
+                }}>
+                Fullscreen
+            </FullscreenButton>
             <Router hook={useHashLocation}>
                 <Route path="/game">{() => <Game />}</Route>
                 <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>

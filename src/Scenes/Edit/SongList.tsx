@@ -124,5 +124,5 @@ const Container = styled.div`
     height: 100%;
     width: 1260px;
     background: white;
-    padding: 20px;
+    padding: 60px 20px 0 20px;
 `;

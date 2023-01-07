@@ -91,14 +91,14 @@ export const ContentElement = styled.span`
     background: rgba(0, 0, 0, 0.5);
     display: inline-block;
     backdrop-filter: blur(0.5rem);
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: thin black;
     padding: 0.5rem 2rem;
     margin: 0 0 1rem 2rem;
     font-weight: bold;
 
     a {
         text-decoration: none;
-        -webkit-text-stroke: 0.1rem black;
+        -webkit-text-stroke: thin black;
         color: ${styles.colors.text.active};
     }
 `;

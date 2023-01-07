@@ -116,6 +116,7 @@ const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; highscore: boolea
                 right: -10rem;
 
                 font-size: 3rem;
+                -webkit-text-stroke: 0.1rem black;
                 color: ${styles.colors.text.default};
                 padding: 0.5rem 1rem;
                 border-radius: 1.5rem;

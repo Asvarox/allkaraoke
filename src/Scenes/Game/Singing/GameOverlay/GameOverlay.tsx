@@ -111,7 +111,7 @@ export default GameOverlay;
 const Screen = styled.div`
     height: 100%;
     color: white;
-    -webkit-text-stroke: 0.2rem black;
+    -webkit-text-stroke: thick black;
     font-weight: bold;
     position: relative;
     display: flex;
@@ -122,8 +122,6 @@ const GameCanvas = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
 
     canvas {
         width: 100%;
