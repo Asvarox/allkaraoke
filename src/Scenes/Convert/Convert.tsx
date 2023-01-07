@@ -7,7 +7,7 @@ import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAnd
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
-import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import SongDao from 'Songs/SongDao';
 import { navigate } from 'hooks/useHashLocation';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
@@ -37,7 +37,14 @@ export default function Convert({ song }: Props) {
     const error = useRef<string>('');
     const conversionResult: Song | undefined = useMemo(() => {
         try {
-            if (song) return song;
+            if (song)
+                return {
+                    ...song,
+                    video: getVideoId(authorAndVid.video) || song.video,
+                    author: authorAndVid.author,
+                    authorUrl: authorAndVid.authorUrl,
+                    sourceUrl: basicData.sourceUrl,
+                };
             if (!basicData.txtInput) return undefined;
             return convertTxtToSong(
                 basicData.txtInput,
