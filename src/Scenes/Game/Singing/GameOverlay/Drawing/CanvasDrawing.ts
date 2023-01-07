@@ -1,23 +1,23 @@
-import { noDistanceNoteTypes } from "consts";
-import { Note, NotesSection, PlayerNote } from "interfaces";
-import getNoteColor from "Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor";
-import SungTriangle from "Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle";
-import { FPSCountSetting, GraphicSetting } from "Scenes/Settings/SettingsState";
-import random from "utils/randomValue";
-import GameState from "../../GameState/GameState";
-import GameStateEvents from "../../GameState/GameStateEvents";
-import getPlayerNoteDistance from "../../Helpers/getPlayerNoteDistance";
-import isNotesSection from "Songs/utils/isNotesSection";
-import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from "./calculateData";
-import debugPitches from "./Elements/debugPitches";
-import drawNote from "./Elements/note";
-import drawPlayerFrequencyTrace from "./Elements/playerFrequencyTrace";
-import drawPlayerNote from "./Elements/playerNote";
-import ParticleManager from "./ParticleManager";
-import ExplodingNoteParticle from "./Particles/ExplodingNote";
-import FadeoutNote from "./Particles/FadeoutNote";
-import RayParticle from "./Particles/Ray";
-import VibratoParticle from "./Particles/Vibrato";
+import { noDistanceNoteTypes } from 'consts';
+import { Note, NotesSection, PlayerNote } from 'interfaces';
+import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
+import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
+import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
+import random from 'utils/randomValue';
+import GameState from '../../GameState/GameState';
+import GameStateEvents from '../../GameState/GameStateEvents';
+import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
+import debugPitches from './Elements/debugPitches';
+import drawNote from './Elements/note';
+import drawPlayerFrequencyTrace from './Elements/playerFrequencyTrace';
+import drawPlayerNote from './Elements/playerNote';
+import ParticleManager from './ParticleManager';
+import ExplodingNoteParticle from './Particles/ExplodingNote';
+import FadeoutNote from './Particles/FadeoutNote';
+import RayParticle from './Particles/Ray';
+import VibratoParticle from './Particles/Vibrato';
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
     return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);
@@ -26,7 +26,11 @@ function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
 export default class CanvasDrawing {
     private loop = false;
 
-    public constructor(private canvas: HTMLCanvasElement) {}
+    public constructor(
+        private canvas: HTMLCanvasElement,
+        private verticalMargin: number = 0,
+        private scaleFactor: number = 1,
+    ) {}
     public start = () => {
         GameStateEvents.sectionChange.subscribe(this.onSectionEnd);
         this.loop = true;
@@ -251,11 +255,10 @@ export default class CanvasDrawing {
             currentPlayerNotes: playerNotes.filter((note) => note.note.start >= currentSection.start),
             playerNumber,
             track: playerState.getTrackIndex(),
-            regionPaddingTop: playerNumber * this.canvas.height * 0.5,
-            regionHeight: this.canvas.height * 0.5,
             currentBeat: GameState.getCurrentBeat(),
             currentSectionIndex,
             currentSection,
+            paddingVertical: this.verticalMargin,
         };
     };
 
@@ -266,9 +269,11 @@ export default class CanvasDrawing {
         big: boolean,
         displacement: [number, number] = [0, 0],
     ) => {
-        const regionPaddingTop = drawingData.playerNumber * this.canvas.height * 0.5;
+        const { sectionEndBeat, currentSection, paddingHorizontal, canvasHeight, pitchStepHeight } =
+            calculateData(drawingData);
 
-        const { sectionEndBeat, currentSection, paddingHorizontal, pitchStepHeight } = calculateData(drawingData);
+        const regionPaddingTop = drawingData.playerNumber * (canvasHeight / 2) + drawingData.paddingVertical;
+
         const sectionStart = isNotesSection(currentSection) ? currentSection.notes[0].start : 1;
 
         const beatLength = (this.canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - sectionStart);

@@ -23,6 +23,8 @@ interface Props {
     videoPlayerRef: VideoPlayerRef | null;
 }
 
+const MAX_RENDER_RESOLUTION_W = 1920;
+
 function GameOverlay({
     currentStatus,
     width,
@@ -35,6 +37,7 @@ function GameOverlay({
 }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
     const drawer = useRef<CanvasDrawing | null>(null);
+    const lyrics = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         GameState.startInputMonitoring();
@@ -44,16 +47,26 @@ function GameOverlay({
         };
     }, []);
 
-    useEffect(() => {
-        if (!canvas.current) return;
+    const overlayWidth = MAX_RENDER_RESOLUTION_W;
+    const overlayHeight = overlayWidth * (height / width);
 
-        drawer.current = new CanvasDrawing(canvas.current);
+    const overlayScaleFactor = overlayHeight / height;
+    const resolutionScaleFactor = overlayWidth / MAX_RENDER_RESOLUTION_W;
+
+    useEffect(() => {
+        if (!canvas.current || !lyrics.current) return;
+
+        drawer.current = new CanvasDrawing(
+            canvas.current,
+            lyrics.current.offsetHeight * overlayScaleFactor,
+            resolutionScaleFactor,
+        );
         drawer.current.start();
 
         return () => {
             drawer.current?.end();
         };
-    }, [canvas]);
+    }, [canvas.current, lyrics.current?.offsetHeight, overlayScaleFactor]);
 
     useEffect(() => {
         if (currentStatus === VideoState.ENDED && onSongEnd) {
@@ -61,9 +74,11 @@ function GameOverlay({
         }
     }, [currentStatus, onSongEnd]);
 
-    const overlayHeight = height - 2 * 100 - 80;
     return (
         <Screen>
+            <GameCanvas>
+                <canvas ref={canvas} width={overlayWidth} height={overlayHeight} />
+            </GameCanvas>
             {effectsEnabled && (
                 <>
                     <SkipIntro playerRef={videoPlayerRef} />
@@ -71,7 +86,9 @@ function GameOverlay({
                 </>
             )}
             <DurationBar players={players} />
-            <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
+            <div ref={lyrics}>
+                <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
+            </div>
             <Scores>
                 {effectsEnabled && (
                     <>
@@ -83,9 +100,6 @@ function GameOverlay({
                         </span>
                     </>
                 )}
-                <GameCanvas>
-                    <canvas ref={canvas} width={width} height={overlayHeight} />
-                </GameCanvas>
             </Scores>
             <Lyrics player={1} playerChanges={playerChanges} bottom effectsEnabled={effectsEnabled} />
         </Screen>
@@ -106,6 +120,15 @@ const Screen = styled.div`
 
 const GameCanvas = styled.div`
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
 `;
 
 const Scores = styled.div`

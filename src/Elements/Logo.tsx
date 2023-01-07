@@ -10,7 +10,10 @@ export default function Logo(props: any) {
         </Container>
     );
 }
-const StyledLogo = styled.img``;
+const StyledLogo = styled.img`
+    width: 66rem;
+    height: 16.4rem;
+`;
 
 const Container = styled.div`
     position: relative;
