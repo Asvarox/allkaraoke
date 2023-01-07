@@ -16,6 +16,7 @@ import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
+import NormalizeFontSize from 'Elements/NormalizeFontSize';
 
 interface Props {
     roomId: string;
@@ -93,11 +94,7 @@ function Phone({ roomId }: Props) {
 
     return (
         <>
-            <style>
-                {`html {
-                font-size: 10px !important;
-            }`}
-            </style>
+            <NormalizeFontSize size={10} />
             <LayoutWithBackground>
                 <Container>
                     <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />

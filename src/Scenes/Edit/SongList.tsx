@@ -7,6 +7,7 @@ import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
 import { useMemo } from 'react';
 import SongDao from 'Songs/SongDao';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
+import NormalizeFontSize from 'Elements/NormalizeFontSize';
 
 interface Props {}
 
@@ -38,6 +39,7 @@ export default function SongList(props: Props) {
 
     return (
         <Container>
+            <NormalizeFontSize />
             <Grid container>
                 <Grid item xs={6}>
                     <h3>{data.length} songs</h3>
@@ -48,7 +50,6 @@ export default function SongList(props: Props) {
                     </Button>
                 </Grid>
             </Grid>
-
             <MaterialReactTable
                 data={data}
                 columns={columns}

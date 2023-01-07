@@ -10,6 +10,7 @@ import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
 import SongDao from 'Songs/SongDao';
 import { navigate } from 'hooks/useHashLocation';
+import NormalizeFontSize from 'Elements/NormalizeFontSize';
 
 interface Props {
     song?: Song;
@@ -107,6 +108,7 @@ export default function Convert({ song }: Props) {
 
     return (
         <StyledEngineProvider injectFirst>
+            <NormalizeFontSize />
             <Container>
                 <Stepper activeStep={currentStep} sx={{ mb: 2 }}>
                     <Step key={0} completed={isBasicInfoCompleted}>
