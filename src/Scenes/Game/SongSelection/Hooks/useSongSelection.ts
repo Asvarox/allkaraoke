@@ -16,6 +16,14 @@ export default function useSongSelection(preselectedSong: string | null) {
     );
 
     useEffect(() => {
+        console.log('useSongSelection', 'mount');
+
+        return () => {
+            console.log('useSongSelection', 'unmount');
+        };
+    }, []);
+
+    useEffect(() => {
         if (songList && songList[focusedSong])
             window.history.replaceState({}, '', `#/game/${encodeURIComponent(songList[focusedSong].file)}`);
     }, [focusedSong, songList]);

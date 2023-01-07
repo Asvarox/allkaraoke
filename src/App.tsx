@@ -30,8 +30,8 @@ function App() {
                 Fullscreen
             </FullscreenButton>
             <Router hook={useHashLocation}>
-                <Route path="/game">{() => <Game />}</Route>
                 <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>
+                <Route path="/game">{() => <Game />}</Route>
                 <Route path="/convert" component={() => <Convert />} />
                 <Route path="/jukebox" component={Jukebox} />
                 <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>

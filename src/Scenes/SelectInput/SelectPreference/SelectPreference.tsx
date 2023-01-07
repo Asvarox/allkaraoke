@@ -128,7 +128,7 @@ const OptionDescription = styled.div<{ focused?: boolean }>`
     transition: 300ms;
 
     svg {
-        font-size: 0.85rem;
+        font-size: 1.4rem;
     }
     opacity: 0;
 `;

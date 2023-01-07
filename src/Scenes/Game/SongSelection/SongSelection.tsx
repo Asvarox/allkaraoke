@@ -51,6 +51,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         isLoading,
     } = useSongSelection(preselectedSong);
 
+    useEffect(() => {
+        console.log('SongSelection', 'mount');
+
+        return () => {
+            console.log('SongSelection', 'unmount');
+        };
+    }, []);
+
     const onSearchSong: KeyHandler = (e) => {
         // for some reason the setSearch from Filters component is also called so if `search: e.key,` is passed below
         // the letter would be inputted twice. So here space is enter which is then trimmed in setSearch

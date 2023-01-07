@@ -10,6 +10,7 @@ import completedAnimation from './completed-animation.json';
 import Lottie from 'lottie-react';
 import styled from '@emotion/styled';
 import tuple from 'utils/tuple';
+import posthog from 'posthog-js';
 
 interface Props {
     onFinish: (pref: typeof MicSetupPreference[number]) => void;
@@ -36,6 +37,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
         setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
         if (pref) {
             localStorage.setItem(LAST_SELECTED_KEY, pref);
+            posthog.capture('sourcePreferenceSet', { source: pref });
         }
 
         onFinish(pref);
