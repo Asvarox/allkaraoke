@@ -22,7 +22,11 @@ export default function VolumeIndicator({ playerNumber, volume, frequency }: Pro
 
     return (
         <IndicatorContainer color={backgroundColor}>
-            <Frequency>{frequency ? Math.round(frequency) : ''}</Frequency>
+            <Frequency>
+                <br />
+                {String(volume * 100).slice(0, 10)}
+            </Frequency>
+            <Frequency>{frequency ? `${Math.round(frequency)}Hz` : ''}</Frequency>
             <Indicator
                 color={indicatorColor}
                 style={{ height: `${100 - Math.min(100, (volume / maxVolume) * 100)}%` }}

@@ -20,7 +20,12 @@ class PhoneMic extends Listener<[[number, number], [number, number]]> implements
         this.startedMonitoring = true;
 
         this.stream = await userMediaService.getUserMedia({
-            audio: true,
+            audio: {
+                echoCancellation: true,
+                noiseSuppression: true,
+                autoGainControl: false,
+            },
+            video: false,
         });
 
         this.context = new AudioContext();
