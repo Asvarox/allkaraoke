@@ -30,7 +30,7 @@ runs:
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
     - name: CT Test run
-      run: yarn ${{ inputs.packagescript }}
+      run: yarn ${{ inputs.packagescript }} --project ${{ inputs.project }}
       shell: bash
     - uses: actions/upload-artifact@v3
       if: failure()
