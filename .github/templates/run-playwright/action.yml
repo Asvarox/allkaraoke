@@ -20,9 +20,9 @@ runs:
       with:
         path: |
           ~/.cache/ms-playwright
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-${{ inputs.project }}
         restore-keys: |
-          ${{ runner.os }}-playwright-
+          ${{ runner.os }}-playwright-${{ inputs.project }}
     - run: yarn playwright install --with-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit != 'true'
       shell: bash
