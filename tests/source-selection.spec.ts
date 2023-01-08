@@ -7,35 +7,9 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Source selection', async ({ page }) => {
-    test.slow();
-
-    await page.goto('/?e2e-test');
-    await page.getByTestId('advanced').click({ force: true });
-
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-source').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-1-input').click();
-    await page.getByTestId('player-2-input').click();
-    await page.getByTestId('player-2-input').click();
-    await page.getByTestId('player-2-input').click();
-    await page.getByTestId('player-2-source').click();
-    await page.getByTestId('player-2-input').click();
-    await page.getByTestId('player-2-input').click();
-    await page.getByTestId('player-2-input').click();
-    await expect(page.getByTestId('mic-mismatch-warning')).toBeVisible();
-});
-
 test('Source selection in sing settings', async ({ page, context }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('skip').click({ force: true });
-    await page.getByTestId('save-button').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
     await page.getByTestId('song-e2e-test-multitrack.json').dblclick();

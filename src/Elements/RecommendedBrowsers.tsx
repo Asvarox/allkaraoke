@@ -5,17 +5,14 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 function RecommendedBrowsers() {
     return (
         <>
-            {
-                // @ts-expect-error
-                !window.chrome && (
-                    <RecommendChrome>
-                        <h2>
-                            This game works best in <strong>Google Chrome</strong> (and Chromium based browsers).
-                        </h2>
-                        It's not guaranteed to work on other browsers (like the one you use now).
-                    </RecommendChrome>
-                )
-            }
+            {!window.chrome && (
+                <RecommendChrome>
+                    <h2>
+                        This game is tested in <strong>Google Chrome</strong> and <strong>MS Edge</strong>.
+                    </h2>
+                    It's not guaranteed to work on other browsers (like the one you use now).
+                </RecommendChrome>
+            )}
         </>
     );
 }

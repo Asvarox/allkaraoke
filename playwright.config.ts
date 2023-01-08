@@ -1,5 +1,5 @@
-import type { PlaywrightTestConfig } from "@playwright/test";
-import { devices } from "@playwright/test";
+import type { PlaywrightTestConfig } from '@playwright/test';
+import { devices } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -14,6 +14,7 @@ const config: PlaywrightTestConfig = {
     testDir: './tests',
     /* Maximum time one test can run for. */
     timeout: 40 * 1000,
+    maxFailures: process.env.CI ? 10 : undefined,
     expect: {
         /**
          * Maximum time expect() should wait for the condition to be met.
@@ -42,12 +43,12 @@ const config: PlaywrightTestConfig = {
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: 'on-first-retry',
         ignoreHTTPSErrors: true,
-        permissions: ['microphone'],
         launchOptions: {
             // slowMo: 100,
             args: [
                 // '--auto-open-devtools-for-tabs',
                 '--no-sandbox',
+                '--mute-audio',
                 '--allow-file-access-from-files',
                 '--use-fake-ui-for-media-stream',
                 '--use-fake-device-for-media-stream',
@@ -66,22 +67,38 @@ const config: PlaywrightTestConfig = {
             name: 'chromium',
             use: {
                 ...devices['Desktop Chrome'],
+                permissions: ['microphone'],
             },
         },
 
-        // {
-        //     name: 'firefox',
-        //     use: {
-        //         ...devices['Desktop Firefox'],
-        //     },
-        // },
-        //
-        // {
-        //     name: 'webkit',
-        //     use: {
-        //         ...devices['Desktop Safari'],
-        //     },
-        // },
+        {
+            name: 'firefox',
+            use: {
+                ...devices['Desktop Firefox'],
+
+                // https://webrtc.org/getting-started/testing
+                launchOptions: {
+                    firefoxUserPrefs: {
+                        'browser.cache.disk.enable': false,
+                        'browser.cache.disk.capacity': 0,
+                        'browser.cache.disk.smart_size.enabled': false,
+                        'browser.cache.disk.smart_size.first_run': false,
+                        'browser.sessionstore.resume_from_crash': false,
+                        'browser.startup.page': 0,
+                        'media.navigator.streams.fake': true,
+                        'media.navigator.permission.disabled': true,
+                        'device.storage.enabled': false,
+                        'media.gstreamer.enabled': false,
+                        'browser.startup.homepage': 'about:blank',
+                        'browser.startup.firstrunSkipsHomepage': false,
+                        'extensions.update.enabled': false,
+                        'app.update.enabled': false,
+                        'network.http.use-cache': false,
+                        'browser.shell.checkDefaultBrowser': false,
+                    },
+                },
+            },
+        },
 
         /* Test against mobile viewports. */
         // {
@@ -99,10 +116,10 @@ const config: PlaywrightTestConfig = {
 
         /* Test against branded browsers. */
         // {
-        //   name: 'Microsoft Edge',
-        //   use: {
-        //     channel: 'msedge',
-        //   },
+        //     name: 'Microsoft Edge',
+        //     use: {
+        //         channel: 'msedge',
+        //     },
         // },
         // {
         //   name: 'Google Chrome',
@@ -120,7 +137,7 @@ const config: PlaywrightTestConfig = {
         ? {
               command: 'yarn build:serve',
               port: 3010,
-            timeout: 60_000 * 3,
+              timeout: 60_000 * 3,
           }
         : undefined,
 };

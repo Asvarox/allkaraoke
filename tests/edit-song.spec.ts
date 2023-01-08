@@ -9,7 +9,6 @@ test.beforeEach(async ({ page, context }) => {
 test('Edit song', async ({ page }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('skip').click({ force: true });
-    await page.getByTestId('save-button').click({ force: true });
     await page.getByTestId('edit-songs').click();
 
     await page.locator('[data-test="edit-song"][data-song="e2e-test.json"]').click();

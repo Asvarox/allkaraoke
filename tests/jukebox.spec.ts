@@ -4,7 +4,6 @@ import navigateWithKeyboard from './steps/navigateWithKeyboard';
 test('Jukebox', async ({ page }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('skip').click({ force: true });
-    await page.getByTestId('save-button').click({ force: true });
 
     await page.getByTestId('jukebox').click({ force: true });
 

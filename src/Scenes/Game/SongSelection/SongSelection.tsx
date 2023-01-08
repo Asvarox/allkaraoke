@@ -60,11 +60,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     }, []);
 
     const onSearchSong: KeyHandler = (e) => {
-        // for some reason the setSearch from Filters component is also called so if `search: e.key,` is passed below
-        // the letter would be inputted twice. So here space is enter which is then trimmed in setSearch
-        // Possibly the keyboard event "leaks", but couldn't figure out a way to stop it.
+        e.stopPropagation();
+        e.preventDefault();
+
         setFilters({
-            search: ' ', //e.key,
+            search: e.key,
         });
     };
     useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !filters.search && keyboardControl });

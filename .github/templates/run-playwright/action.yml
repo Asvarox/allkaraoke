@@ -7,9 +7,13 @@ inputs:
   packagescript:
     required: true
     description: 'Script from package.json to run'
+  project:
+    required: false
+    description: 'Playwright project (browser)'
+    default: 'chromium'
 
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - uses: actions/cache@v3
       id: playwright-cache
@@ -19,10 +23,10 @@ runs:
         key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-playwright-
-    - run: yarn playwright install --with-deps chromium
+    - run: yarn playwright install --with-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit != 'true'
       shell: bash
-    - run: yarn playwright install-deps chromium
+    - run: yarn playwright install-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
     - name: CT Test run
@@ -31,8 +35,7 @@ runs:
     - uses: actions/upload-artifact@v3
       if: failure()
       with:
-        name: ${{ inputs.packagescript }}-test-results
+        name: ${{ inputs.packagescript }}-${{ inputs.project }}-test-results
         path: |
           playwright-report
           test-results
-          __snapshots__

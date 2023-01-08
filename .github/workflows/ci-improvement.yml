@@ -10,7 +10,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Setup Node
-              uses: "./.github/templates/setup-node"
+              uses: './.github/templates/setup-node'
             - run: yarn test:ci
             - uses: actions/upload-artifact@v3
               if: failure()
@@ -23,16 +23,16 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Setup Node
-              uses: "./.github/templates/setup-node"
+              uses: './.github/templates/setup-node'
             - run: yarn lint
     ts-check:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - name: Setup Node
-              uses: "./.github/templates/setup-node"
+              uses: './.github/templates/setup-node'
             - run: yarn tsc --noEmit
-    e2e-tests-run:
+    e2e-tests-run-chromium:
         runs-on: ubuntu-latest
         env:
           VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
@@ -40,29 +40,44 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Setup Node
-              uses: "./.github/templates/setup-node"
+              uses: './.github/templates/setup-node'
             - name: Run E2E tests
-              uses: "./.github/templates/run-playwright"
+              uses: './.github/templates/run-playwright'
               with:
-                packagescript: "e2e"
+                packagescript: 'e2e'
+                project: 'chromium'
             - uses: actions/upload-artifact@v3
               if: success()
               with:
-                  name: built-app
-                  path: build
+                name: built-app
+                path: build
+    e2e-tests-run-firefox:
+        runs-on: ubuntu-latest
+        env:
+          VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
+          VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup Node
+              uses: './.github/templates/setup-node'
+            - name: Run E2E tests
+              uses: './.github/templates/run-playwright'
+              with:
+                packagescript: 'e2e'
+                project: 'firefox'
     ct-tests-run:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - name: Setup Node
-              uses: "./.github/templates/setup-node"
+              uses: './.github/templates/setup-node'
             - name: Run CT tests
-              uses: "./.github/templates/run-playwright"
+              uses: './.github/templates/run-playwright'
               with:
-                packagescript: "test-ct"
+                packagescript: 'test-ct'
     deploy:
         runs-on: ubuntu-latest
-        needs: ['e2e-tests-run', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
+        needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
         steps:
             - uses: actions/checkout@v3
               with:

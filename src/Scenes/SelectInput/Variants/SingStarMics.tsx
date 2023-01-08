@@ -88,11 +88,19 @@ function SingStarMics(props: Props) {
                         <h3>Connect your SingStar microphones.</h3>
                         <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
                         {showAdvancedTip && (
-                            <h4 data-test="advanced-tip">
-                                If detection doesn't happen, try{' '}
-                                <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous
-                                menu.
-                            </h4>
+                            <>
+                                <h4 data-test="advanced-tip">
+                                    If detection doesn't happen, try{' '}
+                                    <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous
+                                    menu.
+                                </h4>
+                                {/*{window.chrome && (*/}
+                                {/*    <h4>*/}
+                                {/*        <strong>Chrome</strong> is known for not handling SingStar mics well. If you see*/}
+                                {/*        problems, try using an alternative browser (eg. <strong>MS Edge</strong>)*/}
+                                {/*    </h4>*/}
+                                {/*)}*/}
+                            </>
                         )}
                     </>
                 )}

@@ -49,7 +49,6 @@
         "deploy": "gh-pages -d build",
         "prepare": "husky install",
         "e2e": "playwright test",
-        "e2e:open": "playwright test --headed",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
         "test-ct": "playwright test -c playwright-ct.config.ts",
