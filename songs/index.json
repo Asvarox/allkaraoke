@@ -6930,7 +6930,7 @@
     "artist": "Robbie Williams",
     "bpm": 300.08,
     "bar": 4,
-    "gap": 5748.29,
+    "gap": 4248.266595574513,
     "video": "luwAMFcc2f8",
     "year": "1997",
     "edition": "SS Pop 2009",
@@ -6943,9 +6943,10 @@
     "realBpm": 75,
     "tracks": [
       {
-        "start": 0
+        "start": 20
       }
     ],
+    "lastUpdate": "2023-01-07T19:18:34.391Z",
     "file": "Robbie Williams-Angels.json",
     "tracksCount": 1,
     "search": "robbiewilliamsangels"
