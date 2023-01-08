@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Remote mic should connect and be selectable', async ({ page, context }) => {
+test('Remote mic should connect and be selectable', async ({ page, context, browserName }) => {
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click({ force: true });
@@ -53,6 +53,8 @@ test('Remote mic should connect and be selectable', async ({ page, context }) =>
     await page.getByTestId('next-step-button').click({ force: true });
     await page.getByTestId('play-song-button').click({ force: true });
     await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 20_000 });
+
+    test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
 
     await expect(async () => {
         const p1score = await page.getByTestId('player-1-score').getAttribute('data-score');
