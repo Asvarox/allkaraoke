@@ -30,14 +30,14 @@ function App() {
                 Fullscreen
             </FullscreenButton>
             <Router hook={useHashLocation}>
-                <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file)} />}</Route>
+                <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file!)} />}</Route>
                 <Route path="/game">{() => <Game />}</Route>
                 <Route path="/convert" component={() => <Convert />} />
                 <Route path="/jukebox" component={Jukebox} />
-                <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId} />}</Route>
+                <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId!} />}</Route>
                 <Route path="/edit" component={SongList} />
                 <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
-                <Route path="/edit/:filename">{({ filename }) => <Edit file={filename} />}</Route>
+                <Route path="/edit/:filename">{({ filename }) => <Edit file={filename!} />}</Route>
                 <Route path="/select-input" component={SelectInput} />
                 <Route path="/settings" component={Settings} />
                 {setupPreference === null ? (

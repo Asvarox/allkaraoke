@@ -79,9 +79,7 @@ export default function convertTxtToSong(
         author: getPropertyValueFromTxt(text, 'CREATOR') ?? author,
         authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
         sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,
-        // todo upgrade eslint and use `satisfies` instead of `as`
-    } as Omit<Song, 'tracks' | 'artist' | 'title' | 'bar' | 'bpm' | 'gap' | 'video'>;
-    // as ExtractOptional<Song>;
+    } satisfies Omit<Song, 'tracks' | 'artist' | 'title' | 'bar' | 'bpm' | 'gap' | 'video'>;
 
     if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
 
