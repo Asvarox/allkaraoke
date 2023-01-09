@@ -1,0 +1,29 @@
+{
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/*.tests.{js,jsx,ts,tsx}",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/*.stories.{js,jsx,ts,tsx}",
+    "**/tests/**",
+    "**/__tests__/**",
+    "**/*.d.ts"
+  ],
+  "moduleDirectory": [
+    "node_modules",
+    "src/"
+  ],
+  "rootDir": "./src",
+  "ignoreUnimported": [
+    "src/Scenes/Game/Singing/Input/MicStrategies/Yin.ts",
+    "src/Songs/utils/song-fixture.ts",
+    "src/setupTests.ts",
+    "src/testUtilts.ts",
+    "src/utils/TestCanvas.tsx",
+    "src/utils/range.ts"
+  ],
+  "ignoreUnused": [],
+  "ignoreUnresolved": [
+    "utility-types"
+  ]
+}

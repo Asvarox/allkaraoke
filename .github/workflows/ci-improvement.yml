@@ -25,6 +25,7 @@ jobs:
             - name: Setup Node
               uses: './.github/templates/setup-node'
             - run: yarn lint
+            - run: yarn unimported
     ts-check:
         runs-on: ubuntu-latest
         steps:
