@@ -51,14 +51,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         isLoading,
     } = useSongSelection(preselectedSong);
 
-    useEffect(() => {
-        console.log('SongSelection', 'mount');
-
-        return () => {
-            console.log('SongSelection', 'unmount');
-        };
-    }, []);
-
     const onSearchSong: KeyHandler = (e) => {
         e.stopPropagation();
         e.preventDefault();

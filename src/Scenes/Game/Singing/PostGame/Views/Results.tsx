@@ -7,6 +7,7 @@ import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import { ContentElement } from 'Scenes/Game/SongPage';
+import { GameTip } from 'Elements/GameTip';
 
 interface PlayerScore {
     detailedScore: [number, DetailedScore, DetailedScore];
@@ -46,6 +47,8 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
     const isHighScore = (playerName: string) =>
         highScores.some((score) => score.singSetupId === singSetupId && score.name === playerName);
 
+    const isAnimDone = currentTick === MAX_TICKS;
+
     return (
         <>
             <ScoresContainer>
@@ -54,30 +57,26 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
                 </ScoreTextPlayer>
                 <br />
                 <ScoreTextScore
-                    highscore={currentTick === MAX_TICKS && isHighScore(players[0].name)}
+                    highscore={isAnimDone && isHighScore(players[0].name)}
                     color={styles.colors.players[0].text}
-                    win={currentTick === MAX_TICKS && player1sum > player2sum}
+                    win={isAnimDone && player1sum > player2sum}
                     data-test="player-1-score"
                     data-score={player1sum}>
                     <ScoreText score={player1sum} />
-                    <HighScoreBadge highscore={currentTick === MAX_TICKS && isHighScore(players[0].name)}>
-                        High score!
-                    </HighScoreBadge>
+                    <HighScoreBadge highscore={isAnimDone && isHighScore(players[0].name)}>High score!</HighScoreBadge>
                 </ScoreTextScore>
                 <br /> {/* xD */}
                 <br />
                 <br />
                 <br />
                 <ScoreTextScore
-                    highscore={currentTick === MAX_TICKS && isHighScore(players[1].name)}
+                    highscore={isAnimDone && isHighScore(players[1].name)}
                     color={styles.colors.players[1].text}
-                    win={currentTick === MAX_TICKS && player2sum > player1sum}
+                    win={isAnimDone && player2sum > player1sum}
                     data-test="player-2-score"
                     data-score={player2sum}>
                     <ScoreText score={player2sum} />
-                    <HighScoreBadge highscore={currentTick === MAX_TICKS && isHighScore(players[0].name)}>
-                        High score!
-                    </HighScoreBadge>
+                    <HighScoreBadge highscore={isAnimDone && isHighScore(players[0].name)}>High score!</HighScoreBadge>
                 </ScoreTextScore>
                 <br />
                 <ScoreTextPlayer color={styles.colors.players[1].text} data-test="player-2-name">
@@ -96,6 +95,23 @@ const ScoresContainer = styled.div`
     top: 20rem;
     width: 100%;
     text-align: center;
+`;
+
+const PostGameTip = styled(GameTip)<{ active: boolean }>`
+    transition: 300ms;
+    transform: scale(${({ active }) => (active ? 1 : 0)});
+    position: absolute;
+    bottom: 20rem;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    color: white;
+    //display: block;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 2rem 10rem;
 `;
 
 const ScoreTextPlayer = styled(ContentElement)<{ color: string }>`

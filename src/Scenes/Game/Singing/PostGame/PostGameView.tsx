@@ -5,6 +5,7 @@ import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
 import SongPage from '../../SongPage';
 import backgroundMusic from './421888__b-sean__retro.mp3';
 import HighScoresView from './Views/HighScores';
+import { GameTip } from 'Elements/GameTip';
 
 interface PlayerScore {
     detailedScore: [number, DetailedScore, DetailedScore];
@@ -59,6 +60,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
                         e.currentTarget.volume = 0.4;
                     }}
                 />
+                <PostGameTip active />
             </Container>
         </SongPage>
     );
@@ -69,3 +71,34 @@ const Container = styled.div`
 `;
 
 export default PostGameView;
+
+const PostGameTip = styled(GameTip)<{ active: boolean }>`
+    transition: 300ms;
+    transform: scale(${({ active }) => (active ? 1 : 0)});
+    position: absolute;
+    bottom: 20rem;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 2rem 10rem;
+
+    kbd {
+        padding: 0.12rem 0.9rem;
+        border-radius: 1rem;
+        border: 0.5rem solid rgb(204, 204, 204);
+        border-bottom-color: rgb(150, 150, 150);
+        border-right-color: rgb(150, 150, 150);
+        color: rgb(51, 51, 51);
+        line-height: 1.4;
+        display: inline-block;
+        box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0.2rem #ffffff;
+        background-color: rgb(247, 247, 247);
+        text-shadow: 0 0.1rem 0 #fff;
+        font-weight: normal;
+    }
+`;

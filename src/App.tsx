@@ -16,37 +16,42 @@ import 'Stats';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
+import { Global } from '@emotion/react';
+import styles from 'styles';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
     return (
-        <KeyboardHelpProvider>
-            <FullscreenButton
-                onClick={() => {
-                    try {
-                        document.body.requestFullscreen().catch(console.info);
-                    } catch (e) {}
-                }}>
-                Fullscreen
-            </FullscreenButton>
-            <Router hook={useHashLocation}>
-                <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file!)} />}</Route>
-                <Route path="/game">{() => <Game />}</Route>
-                <Route path="/convert" component={() => <Convert />} />
-                <Route path="/jukebox" component={Jukebox} />
-                <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId!} />}</Route>
-                <Route path="/edit" component={SongList} />
-                <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
-                <Route path="/edit/:filename">{({ filename }) => <Edit file={filename!} />}</Route>
-                <Route path="/select-input" component={SelectInput} />
-                <Route path="/settings" component={Settings} />
-                {setupPreference === null ? (
-                    <Route path="/" component={QuickSetup} />
-                ) : (
-                    <Route path="/" component={Welcome} />
-                )}
-            </Router>
-        </KeyboardHelpProvider>
+        <>
+            <Global styles={styles} />
+            <KeyboardHelpProvider>
+                <FullscreenButton
+                    onClick={() => {
+                        try {
+                            document.body.requestFullscreen().catch(console.info);
+                        } catch (e) {}
+                    }}>
+                    Fullscreen
+                </FullscreenButton>
+                <Router hook={useHashLocation}>
+                    <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file!)} />}</Route>
+                    <Route path="/game">{() => <Game />}</Route>
+                    <Route path="/convert" component={() => <Convert />} />
+                    <Route path="/jukebox" component={Jukebox} />
+                    <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId!} />}</Route>
+                    <Route path="/edit" component={SongList} />
+                    <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
+                    <Route path="/edit/:filename">{({ filename }) => <Edit file={filename!} />}</Route>
+                    <Route path="/select-input" component={SelectInput} />
+                    <Route path="/settings" component={Settings} />
+                    {setupPreference === null ? (
+                        <Route path="/" component={QuickSetup} />
+                    ) : (
+                        <Route path="/" component={Welcome} />
+                    )}
+                </Router>
+            </KeyboardHelpProvider>
+        </>
     );
 }
 
