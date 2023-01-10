@@ -1,12 +1,14 @@
 import logo from 'Elements/logo.gif';
 import pride from 'Elements/pride.png';
+import dotparty from 'Elements/dotparty.gif';
 import styled from '@emotion/styled';
 
 export default function Logo(props: any) {
     return (
         <Container>
-            {window.location.search.includes('pride') && <PrideLogo src={pride} alt="AllKaraoke Pride logo" />}
+            {window.location.search.includes('pride') && <PrideLogo src={pride} alt="AllKaraoke Pride logo part 1" />}
             <StyledLogo src={logo} alt="AllKaraoke logo" {...props} />
+            <DotParty src={dotparty} alt="AllKaraoke Pride logo part 2" />
         </Container>
     );
 }
@@ -20,6 +22,14 @@ const Container = styled.div`
     height: 16.4rem;
 `;
 
-const PrideLogo = styled.img`
+const PrideLogo = styled(StyledLogo)`
     position: absolute;
+`;
+
+const DotParty = styled.img`
+    position: absolute;
+    width: 13.7rem;
+    height: 5.1rem;
+    bottom: -0.5rem;
+    right: -1rem;
 `;
