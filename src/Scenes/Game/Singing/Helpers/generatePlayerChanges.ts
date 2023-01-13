@@ -69,6 +69,8 @@ export default function generatePlayerChanges(song: Song): number[][] {
     const beatLength = getSongBeatLength(song);
 
     return song.tracks.map((track) => {
+        if (track.sections.length < 3) return [];
+
         const segments = segmentSections(track.sections, beatLength);
 
         // array of groups of singable beats count -- each element is the total singable beats in a segment
