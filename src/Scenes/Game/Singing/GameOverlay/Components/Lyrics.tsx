@@ -215,8 +215,10 @@ const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => pr
     font-size: ${(props) => (props.shouldShake ? 4 : 3)}rem;
 `;
 const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
-    font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2.5)}rem;
-    height: 4.5rem;
+    font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2)}rem;
+    height: ${({ effectsEnabled }) => (effectsEnabled ? 4.5 : 2)}rem;
+    ${({ effectsEnabled }) => (!effectsEnabled ? '-webkit-text-stroke-width: 2px' : '')};
+
     color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 
     font-family: 'Comic Sans MS', 'Comic Sans';
