@@ -8,6 +8,7 @@ import { useMemo } from 'react';
 import SongDao from 'Songs/SongDao';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
+import { Link } from 'wouter';
 
 interface Props {}
 
@@ -41,7 +42,12 @@ export default function SongList(props: Props) {
         <Container>
             <NormalizeFontSize />
             <Grid container>
-                <Grid item xs={6}>
+                <Grid item xs={3}>
+                    <Link to="/">
+                        <a>Return to main menu</a>
+                    </Link>
+                </Grid>
+                <Grid item xs={3}>
                     <h3>{data.length} songs</h3>
                 </Grid>
                 <Grid item xs={6} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>

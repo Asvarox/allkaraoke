@@ -44,6 +44,10 @@ export default css`
         opacity: 0.25;
     }
 
+    a {
+        color: ${styles.colors.text.active};
+    }
+
     strong {
         color: ${styles.colors.text.active};
     }

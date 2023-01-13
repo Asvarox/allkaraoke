@@ -3,7 +3,7 @@ export default function GithubRibbon() {
     return (
         <>
             <a
-                href="https://github.com/Asvarox/olkaraoke"
+                href="https://github.com/Asvarox/allkaraoke"
                 className="github-corner"
                 aria-label="View source on GitHub"
                 target="_blank"
