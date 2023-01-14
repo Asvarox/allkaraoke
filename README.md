@@ -29,6 +29,10 @@ Plays dummy local video instead of YouTube to work properly in offline environme
 yarn start:mock
 ```
 
+#### Localhost service worker
+Locally the app runs on HTTPS (with dummy cert) so remote microphones work. This makes the Service Worker not
+work due to untrusted origin. See [this document](config/crt/readme.md) how this can be fixed.
+
 ### Build for production
 
 ```
