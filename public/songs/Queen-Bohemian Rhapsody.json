@@ -16,6 +16,7 @@
   "realBpm": 72,
   "tracks": [
     {
+      "name": "Freddie (+ Choirs)",
       "sections": [
         {
           "start": 0,
@@ -3518,6 +3519,7 @@
       ]
     },
     {
+      "name": "Choirs (+ Freddie)",
       "sections": [
         {
           "start": 0,

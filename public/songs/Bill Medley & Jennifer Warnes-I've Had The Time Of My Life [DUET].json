@@ -15,6 +15,7 @@
   "realBpm": 109,
   "tracks": [
     {
+      "name": "Bill Medley",
       "sections": [
         {
           "start": 0,
@@ -2797,6 +2798,7 @@
       ]
     },
     {
+      "name": "Jennifer Warnes",
       "sections": [
         {
           "type": "pause",

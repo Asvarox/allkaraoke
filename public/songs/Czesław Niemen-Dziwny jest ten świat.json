@@ -1352,18 +1352,9 @@
             }
           ],
           "type": "notes"
-        }
-      ]
-    },
-    {
-      "sections": [
-        {
-          "type": "pause",
-          "start": 0,
-          "end": 1701
         },
         {
-          "start": 1701,
+          "start": 1710,
           "notes": [
             {
               "type": "normal",

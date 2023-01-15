@@ -16,6 +16,7 @@
   "realBpm": 129,
   "tracks": [
     {
+      "name": "Marvin Gaye",
       "sections": [
         {
           "start": 0,
@@ -2464,6 +2465,7 @@
       ]
     },
     {
+      "name": "Tammi Terrell",
       "sections": [
         {
           "type": "pause",

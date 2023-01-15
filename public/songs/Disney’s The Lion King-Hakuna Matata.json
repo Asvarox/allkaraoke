@@ -17,6 +17,7 @@
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18284",
   "tracks": [
     {
+      "name": "Timon",
       "sections": [
         {
           "start": 0,
@@ -2981,6 +2982,7 @@
       ]
     },
     {
+      "name": "Pumba & Simba",
       "sections": [
         {
           "type": "pause",
