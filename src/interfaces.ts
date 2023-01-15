@@ -76,6 +76,7 @@ export interface SongPreview extends Omit<Song, 'tracks'> {
     tracksCount: number;
     tracks: Array<Pick<SongTrack, 'name'> & { start: number }>;
     search: string;
+    isNew?: boolean;
 }
 
 export interface FrequencyRecord {

@@ -21,6 +21,7 @@ import {
 } from './SongCard';
 import SongPreview from './SongPreview';
 import { CircularProgress } from '@mui/material';
+import { css } from '@emotion/react';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -37,8 +38,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         previewHeight: 0,
     });
     const {
+        focusedGroup,
         focusedSong,
-        setFocusedSong,
+        moveToSong,
         groupedSongList,
         keyboardControl,
         songPreview,
@@ -63,13 +65,17 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();
+    const previouslyFocusedGroup = usePrevious(focusedGroup);
     const previouslyFocusedSong = usePrevious(focusedSong);
 
     useEffect(() => {
+        const selector = (group: string, index: number) => `[data-group-letter="${group}"] [data-index="${index}"]`;
         handleResize(); // Recalculate width/height to account possible scrollbar appearing
 
-        const previousSong = list.current?.querySelector(`[data-index="${previouslyFocusedSong}"]`) as HTMLDivElement;
-        const song = list.current?.querySelector(`[data-index="${focusedSong}"]`) as HTMLDivElement;
+        const previousSong = list.current?.querySelector(
+            selector(previouslyFocusedGroup, previouslyFocusedSong),
+        ) as HTMLDivElement;
+        const song = list.current?.querySelector(selector(focusedGroup, focusedSong)) as HTMLDivElement;
         if (song) {
             if (!previousSong || previousSong.offsetTop !== song.offsetTop) {
                 song.scrollIntoView?.({
@@ -85,9 +91,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 previewHeight: song.offsetHeight,
             });
         }
-    }, [width, list, focusedSong, groupedSongList]);
+    }, [width, list, focusedSong, focusedGroup, groupedSongList]);
 
-    const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : setFocusedSong(index));
+    const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : moveToSong(index));
     if (!groupedSongList || !width) return <>Loading</>;
 
     if (isLoading) {
@@ -120,7 +126,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     />
                 )}
                 {groupedSongList.map((group) => (
-                    <SongsGroupContainer key={group.letter}>
+                    <SongsGroupContainer
+                        key={group.letter}
+                        data-group-letter={group.letter}
+                        highlight={group.letter === 'New'}>
                         <SongsGroupHeader>{group.letter}</SongsGroupHeader>
                         <SongsGroup>
                             {group.songs.map(({ song, index }) => (
@@ -133,7 +142,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                     {...(!showFilters && keyboardControl
                                         ? { 'data-focused': index === focusedSong }
                                         : {})}
-                                    data-test={`song-${song.file}`}>
+                                    data-test={`song-${song.file}${group.isNew ? '-new-group' : ''}`}>
                                     <SongCardBackground
                                         style={{
                                             backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')`,
@@ -163,7 +172,29 @@ const Container = styled.div`
     --song-list-gap: 3.5rem;
 `;
 
-const SongsGroupContainer = styled.div``;
+const SongsGroupContainer = styled.div<{ highlight: boolean }>`
+    ${(props) =>
+        props.highlight &&
+        css`
+            background: rgba(0, 0, 0, 0.5);
+            padding-bottom: 3rem;
+            border-bottom: 0.2rem solid black;
+
+            ${SongsGroupHeader} {
+                @keyframes new-song-group-header {
+                    0%,
+                    100% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
+                    }
+                }
+                animation: new-song-group-header 600ms ease-in-out infinite both;
+                background: #ffffff;
+            }
+        `}
+`;
 
 const SongsGroupHeader = styled.div`
     display: inline-block;

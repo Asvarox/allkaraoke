@@ -4,7 +4,7 @@ import { chunk, throttle } from 'lodash-es';
 import posthog from 'posthog-js';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
-import random from 'utils/randomValue';
+import { randomInt } from 'utils/randomValue';
 import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';
 import usePrevious from '../../../../hooks/usePrevious';
 import tuple from '../../../../utils/tuple';
@@ -26,30 +26,51 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
                 .flat(),
         [groups],
     );
+    const songGroupMatrix = useMemo(
+        () =>
+            groups
+                .map(({ songs, letter }) =>
+                    chunk(
+                        songs.map(() => letter),
+                        MAX_SONGS_PER_ROW,
+                    ),
+                )
+                .flat(),
+        [groups],
+    );
     const previousMatrix = usePrevious(songIndexMatrix ?? []);
 
     const isAtLastColumn = cursorPosition[0] === songIndexMatrix[cursorPosition[1]]?.length - 1;
 
-    const moveToSong = (songIndex: number, matrix: number[][] = songIndexMatrix) => {
-        const y = matrix.findIndex((columns) => columns.includes(songIndex));
-        const x = matrix[y]?.indexOf(songIndex);
-        if (x >= 0 && y >= 0) {
-            setCursorPosition([x ?? 0, y ?? 0]);
-        } else {
-            setCursorPosition([0, 0]);
-        }
-    };
+    const moveToSong = useCallback(
+        (songIndex: number) => {
+            const y = songIndexMatrix.findIndex((columns) => columns.includes(songIndex));
+            const x = songIndexMatrix[y]?.indexOf(songIndex);
+            if (x >= 0 && y >= 0) {
+                setCursorPosition([x ?? 0, y ?? 0]);
+            } else {
+                setCursorPosition([0, 0]);
+            }
+        },
+        [songIndexMatrix],
+    );
 
-    const positionToSongIndex = ([x, y]: [number, number], matrix: number[][] = songIndexMatrix) => {
-        if (groups.length === 0) return 0;
+    const positionToValue = <T>([x, y]: [number, number], matrix: T[][], def: T) => {
+        if (groups.length === 0) return def;
         const row = matrix[y];
-        return row?.[x] ?? row?.at(-1) ?? matrix?.[0]?.[0] ?? 0;
+        return row?.[x] ?? row?.at(-1) ?? matrix?.[0]?.[0] ?? def;
+    };
+    const positionToSongIndex = ([x, y]: [number, number], matrix: number[][] = songIndexMatrix) => {
+        return positionToValue([x, y], matrix, 0);
+    };
+    const positionToGroup = ([x, y]: [number, number], matrix: string[][] = songGroupMatrix) => {
+        return positionToValue([x, y], matrix, 'A');
     };
 
     useEffect(() => {
         const previousFocusedSong = positionToSongIndex(cursorPosition, previousMatrix);
         const currentFocusedSong = positionToSongIndex(cursorPosition, songIndexMatrix);
-        if (previousFocusedSong !== currentFocusedSong) {
+        if (previousMatrix.length && previousFocusedSong !== currentFocusedSong) {
             moveToSong(previousFocusedSong);
         }
     }, [cursorPosition, songIndexMatrix, previousMatrix, isAtLastColumn]);
@@ -80,8 +101,9 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
     };
 
     const focusedSong = positionToSongIndex(cursorPosition);
+    const focusedGroup = positionToGroup(cursorPosition);
 
-    return tuple([focusedSong, cursorPosition, moveCursor, moveToSong, isAtLastColumn]);
+    return tuple([focusedSong, focusedGroup, cursorPosition, moveCursor, moveToSong, isAtLastColumn]);
 };
 
 export const useSongSelectionKeyboardNavigation = (
@@ -98,7 +120,7 @@ export const useSongSelectionKeyboardNavigation = (
     const previousPlaylistsState = usePrevious(showPlaylistsState);
     const [arePlaylistsVisible, leavingKey] = showPlaylistsState;
 
-    const [focusedSong, cursorPosition, moveCursor, moveToSong, isAtLastColumn] =
+    const [focusedSong, focusedGroup, cursorPosition, moveCursor, moveToSong, isAtLastColumn] =
         useTwoDimensionalNavigation(groupedSongs);
     const isAtFirstColumn = cursorPosition[0] === 0;
 
@@ -149,11 +171,9 @@ export const useSongSelectionKeyboardNavigation = (
         }
     };
 
-    const setPositionBySongIndex = (songIndex: number) => moveToSong(songIndex);
-
     const randomSong = () => {
-        const newIndex = Math.round(random(0, songCount));
-        setPositionBySongIndex(newIndex);
+        const newIndex = randomInt(0, songCount);
+        moveToSong(newIndex);
     };
 
     useKeyboard(
@@ -203,13 +223,5 @@ export const useSongSelectionKeyboardNavigation = (
         }
     }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
-    const [randomizedSong, setRandomizedSong] = useState(false);
-    useEffect(() => {
-        if (!randomizedSong && songCount > 0) {
-            randomSong();
-            setRandomizedSong(true);
-        }
-    }, [randomizedSong, songCount]);
-
-    return tuple([focusedSong, setPositionBySongIndex, arePlaylistsVisible, closePlaylist]);
+    return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist]);
 };

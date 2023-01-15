@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import random from 'utils/randomValue';
+import { randomInt } from 'utils/randomValue';
 
 const data = [
     <>
@@ -41,7 +41,10 @@ const data = [
         Entire game (excl. song management) is navigable with <strong>Keyboard</strong>
     </>,
     <>
-        You can show or hide keyboard navigation help with <kbd>H</kbd> key
+        You can hide or show keyboard navigation help with <kbd>H</kbd> key
+    </>,
+    <>
+        In Song Selection, hold <kbd>↑</kbd> or <kbd>↓</kbd> to jump to the next letter
     </>,
 ];
 
@@ -50,7 +53,7 @@ interface Props {
 }
 
 export const GameTip = ({ as = 'h4', ...restProps }: Props) => {
-    const randomValue = useRef(Math.round(random(0, data.length - 1)));
+    const randomValue = useRef(randomInt(0, data.length - 1));
 
     const Component = as;
     return <Component {...restProps}>{data[randomValue.current]}</Component>;

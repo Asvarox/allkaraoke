@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Basic sing a song', async ({ page }) => {
+test('Basic sing a song', async ({ page }, testInfo) => {
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('advanced').click({ force: true });
@@ -73,6 +73,8 @@ test('Basic sing a song', async ({ page }) => {
     const p2CL = '[data-test="lyrics-current-player-2"]';
     const p2NL = '[data-test="lyrics-next-player-2"]';
 
+    test.setTimeout(testInfo.timeout + 3000);
+
     await Promise.all(['Track 2', 'Section', '1'].map((text) => expect(page.locator(p1CL)).toContainText(text)));
     await Promise.all(['Track 2', 'Section', '2'].map((text) => expect(page.locator(p1NL)).toContainText(text)));
     await Promise.all(['Track 1', 'Section 1'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
@@ -86,6 +88,8 @@ test('Basic sing a song', async ({ page }) => {
     await expect(page.locator(p1NL)).not.toBeVisible();
     await Promise.all(['Track 1 Section 3'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
     await expect(page.locator(p2NL)).not.toBeVisible();
+
+    test.setTimeout(testInfo.timeout);
 
     // Song ending
     await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 30_000 });

@@ -1,6 +1,8 @@
 import { Song, SongPreview } from 'interfaces';
 import localForage from 'localforage';
 import { getSongPreview } from '../../scripts/utils';
+import { lastVisit } from 'Stats/lastVisit';
+import { isAfter } from 'date-fns';
 
 const storage = localForage.createInstance({
     name: 'songs',
@@ -10,7 +12,8 @@ const DELETED_SONGS_KEY = 'DELETED_SONGS';
 const SONGS_KEY = 'STORED_SONGS';
 
 class SongDao {
-    private index: SongPreview[] | null = null;
+    private finalIndex: SongPreview[] | null = null;
+    private indexWithDeletedSongs: SongPreview[] | null = null;
     public store = async (song: Song) => {
         await storage.setItem(this.generateSongFile(song), { ...song, lastUpdate: new Date().toISOString() });
         await this.reloadIndex();
@@ -26,12 +29,20 @@ class SongDao {
         return localSong;
     };
 
-    public getIndex = async (): Promise<SongPreview[]> => {
-        if (this.index === null) {
+    public getIndex = async (includeDeleted = false): Promise<SongPreview[]> => {
+        if (this.finalIndex === null) {
             await this.reloadIndex();
         }
 
-        return this.index!;
+        return includeDeleted ? this.indexWithDeletedSongs! : this.finalIndex!;
+    };
+
+    private getDeletedSongsList = () => storage.getItem<string[]>(DELETED_SONGS_KEY);
+
+    public getDeletedSongs = async () => {
+        const [songs, deletedNames] = await Promise.all([this.getIndex(true), this.getDeletedSongsList()]);
+
+        return songs.filter((song) => deletedNames?.includes(this.generateSongFile(song)));
     };
 
     public generateSongFile = (song: Song | SongPreview) => `${song?.artist}-${song?.title}.json`;
@@ -40,17 +51,28 @@ class SongDao {
         const [defaultIndex, storageIndex, deletedSongs] = await Promise.all([
             fetch('./songs/index.json').then((response) => response.json() as Promise<SongPreview[]>),
             this.getLocalIndex(),
-            storage.getItem<string[]>(DELETED_SONGS_KEY),
+            this.getDeletedSongsList(),
         ]);
+        const lastVisitDate = new Date(lastVisit);
+        console.log(lastVisitDate);
 
         const localSongs = storageIndex.map((song) => song.file);
 
-        this.index = [
+        this.indexWithDeletedSongs = [
             ...storageIndex,
             ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
-        ].filter((song) => !deletedSongs?.includes(this.generateSongFile(song)));
+        ].map((song) => ({
+            ...song,
+            isNew: song.lastUpdate ? isAfter(new Date(song.lastUpdate), lastVisitDate) : false,
+        }));
 
-        this.index.sort((a, b) => `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()));
+        this.indexWithDeletedSongs.sort((a, b) =>
+            `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()),
+        );
+
+        this.finalIndex = this.indexWithDeletedSongs.filter(
+            (song) => !deletedSongs?.includes(this.generateSongFile(song)),
+        );
     };
 
     public softDeleteSong = async (fileName: string) => {

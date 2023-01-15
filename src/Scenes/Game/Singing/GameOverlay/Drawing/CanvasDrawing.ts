@@ -3,7 +3,7 @@ import { Note, NotesSection, PlayerNote } from 'interfaces';
 import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
 import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
 import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
-import random from 'utils/randomValue';
+import { randomFloat } from 'utils/randomValue';
 import GameState from '../../GameState/GameState';
 import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
@@ -158,7 +158,7 @@ export default class CanvasDrawing {
 
             ParticleManager.add(
                 new SungTriangle(
-                    random(Math.max(x, finalX - 50), finalX),
+                    randomFloat(Math.max(x, finalX - 50), finalX),
                     finalY,
                     getNoteColor(ctx, drawingData.playerNumber, true, lastNote).fill,
                 ),

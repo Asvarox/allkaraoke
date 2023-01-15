@@ -7,6 +7,7 @@ import clearString from '../../../../utils/clearString';
 export interface SongGroup {
     letter: string;
     songs: Array<{ index: number; song: SongPreview }>;
+    isNew?: boolean;
 }
 
 export interface AppliedFilters {
@@ -103,11 +104,24 @@ export const useSongListFilter = (list: SongPreview[]) => {
 export default function useSongList() {
     const songList = useSongIndex();
 
-    const { filters, filtersData, filteredList, setFilters } = useSongListFilter(songList.data ?? []);
+    const { filters, filtersData, filteredList, setFilters } = useSongListFilter(songList.data);
+
     const groupedSongList = useMemo(() => {
         if (filteredList.length === 0) return [];
 
         const groups: SongGroup[] = [];
+
+        if (!filters.search) {
+            const newSongs = filteredList.filter((song) => song.isNew);
+
+            if (newSongs.length) {
+                groups.push({
+                    letter: 'New',
+                    isNew: true,
+                    songs: newSongs.map((song) => ({ song, index: filteredList.indexOf(song) })),
+                });
+            }
+        }
 
         filteredList.forEach((song, index) => {
             const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
@@ -117,11 +131,11 @@ export default function useSongList() {
                 groups.push(group);
             }
 
-            group.songs.push({ index, song });
+            group.songs.push({ index: index, song });
         });
 
         return groups;
-    }, [filteredList]);
+    }, [filteredList, filters.search]);
 
     return {
         groupedSongList,
