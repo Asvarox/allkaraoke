@@ -1234,6 +1234,30 @@
     "search": "billyjoeluptowngirl"
   },
   {
+    "title": "Ciągnik",
+    "artist": "Blenders",
+    "bpm": 189.66,
+    "bar": 4,
+    "gap": 10895.844353052831,
+    "video": "eP5wNDeGqLk",
+    "year": "1996",
+    "lastUpdate": "2023-01-15T13:17:14.247Z",
+    "language": "Polish",
+    "videoGap": -1,
+    "realBpm": 95,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=12062",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Blenders-Ciągnik.json",
+    "tracksCount": 1,
+    "search": "blendersciagnik"
+  },
+  {
     "title": "The Tide Is High",
     "artist": "Blondie",
     "bpm": 196,
