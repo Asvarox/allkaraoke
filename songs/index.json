@@ -1198,9 +1198,11 @@
     "realBpm": 109,
     "tracks": [
       {
+        "name": "Bill Medley",
         "start": 14
       },
       {
+        "name": "Jennifer Warnes",
         "start": 270
       }
     ],
@@ -2065,13 +2067,10 @@
     "tracks": [
       {
         "start": 11
-      },
-      {
-        "start": 1712
       }
     ],
     "file": "Czesław Niemen-Dziwny jest ten świat.json",
-    "tracksCount": 2,
+    "tracksCount": 1,
     "search": "czesawniemendziwnyjesttenswiat"
   },
   {
@@ -2315,9 +2314,11 @@
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=18284",
     "tracks": [
       {
+        "name": "Timon",
         "start": 17
       },
       {
+        "name": "Pumba & Simba",
         "start": 158
       }
     ],
@@ -2605,9 +2606,11 @@
     "realBpm": 77,
     "tracks": [
       {
+        "name": "Edyta Górniak",
         "start": 10
       },
       {
+        "name": "Mietek Szcześniak",
         "start": 466
       }
     ],
@@ -5073,9 +5076,11 @@
     "realBpm": 129,
     "tracks": [
       {
+        "name": "Marvin Gaye",
         "start": 17
       },
       {
+        "name": "Tammi Terrell",
         "start": 194
       }
     ],
@@ -6444,9 +6449,11 @@
     "realBpm": 72,
     "tracks": [
       {
+        "name": "Freddie (+ Choirs)",
         "start": 23
       },
       {
+        "name": "Choirs (+ Freddie)",
         "start": 23
       }
     ],

@@ -16,6 +16,7 @@
   "realBpm": 77,
   "tracks": [
     {
+      "name": "Edyta Górniak",
       "sections": [
         {
           "start": 0,
@@ -1652,6 +1653,7 @@
       ]
     },
     {
+      "name": "Mietek Szcześniak",
       "sections": [
         {
           "type": "pause",
