@@ -173,6 +173,7 @@ const Container = styled.div`
 `;
 
 const SongsGroupContainer = styled.div<{ highlight: boolean }>`
+    padding: 0 11rem 0 4.5rem;
     ${(props) =>
         props.highlight &&
         css`
@@ -216,7 +217,7 @@ const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
     display: flex;
     flex-direction: column;
     gap: var(--song-list-gap);
-    padding: 4.5rem 11rem 4.5rem 4.5rem;
+    padding: 4.5rem 0;
     overflow-y: auto;
     overflow-x: clip;
     box-sizing: border-box;
