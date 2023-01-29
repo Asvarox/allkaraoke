@@ -552,6 +552,56 @@
     "search": "amymacdonaldthisisthelife"
   },
   {
+    "title": "Valerie",
+    "artist": "Amy Winehouse feat. Mark Ronson",
+    "bpm": 318.8,
+    "bar": 4,
+    "gap": 59371.91969887076,
+    "video": "bixuI_GV5I0",
+    "year": "2008",
+    "lastUpdate": "2023-01-29T00:03:57.819Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 106,
+    "author": "Haek",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=haek",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse+feat.+Mark+Ronson",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Amy Winehouse feat. Mark Ronson-Valerie.json",
+    "tracksCount": 1,
+    "search": "amywinehousefeatmarkronsonvalerie"
+  },
+  {
+    "title": "Back To Black",
+    "artist": "Amy Winehouse",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 15178.095238095239,
+    "video": "TJAfLE39ZZ8",
+    "year": "2007",
+    "lastUpdate": "2023-01-29T00:06:04.393Z",
+    "edition": "SingStar R&B",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 123,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Amy Winehouse-Back To Black.json",
+    "tracksCount": 1,
+    "search": "amywinehousebacktoblack"
+  },
+  {
     "title": "Barbie Girl",
     "artist": "Aqua",
     "bpm": 260.2,
@@ -3631,6 +3681,31 @@
     "file": "Imagine Dragons-Wrecked.json",
     "tracksCount": 1,
     "search": "imaginedragonswrecked"
+  },
+  {
+    "title": "J'ai Demandé A La Lune",
+    "artist": "Indochine",
+    "bpm": 330,
+    "bar": 4,
+    "gap": 34741,
+    "video": "KAOmC5qT02w",
+    "year": "2002",
+    "lastUpdate": "2023-01-27T21:54:54.755Z",
+    "genre": "Rock",
+    "language": "French",
+    "videoGap": 0,
+    "realBpm": 110,
+    "author": "lord_tenebro",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=lord_tenebro",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Indochine&cancion=J'ai%20Demand%C3%A9%20A%20La%20Lune",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Indochine-J'ai Demandé A La Lune.json",
+    "tracksCount": 1,
+    "search": "indochinejaidemandealalune"
   },
   {
     "title": "Mury",
@@ -7886,6 +7961,31 @@
     "search": "tarzanboytarzan"
   },
   {
+    "title": "Mensenkind",
+    "artist": "Tarzan",
+    "bpm": 295.4,
+    "bar": 4,
+    "gap": 11388.4278943805,
+    "video": "gZEuR9LFNQQ",
+    "year": "1999",
+    "lastUpdate": "2023-01-27T21:07:31.905Z",
+    "edition": "SingStar zingt met Disney",
+    "language": "Dutch",
+    "videoGap": 0,
+    "realBpm": 142,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tarzan&cancion=Mensenkind",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Tarzan-Mensenkind.json",
+    "tracksCount": 1,
+    "search": "tarzanmensenkind"
+  },
+  {
     "title": "Beelzeboss (The Final Showdown)",
     "artist": "Tenacious D",
     "bpm": 310.25,
@@ -9007,6 +9107,30 @@
     "file": "U2-With or without you.json",
     "tracksCount": 1,
     "search": "u2withorwithoutyou"
+  },
+  {
+    "title": "Champions League (Umyj Bidet)",
+    "artist": "UEFA",
+    "bpm": 113.35,
+    "bar": 4,
+    "gap": 25853.33215703573,
+    "video": "Pa5yG1JdvLA",
+    "year": "1992",
+    "lastUpdate": "2023-01-27T22:38:53.515Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 125,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10892",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "file": "UEFA-Champions League (Umyj Bidet).json",
+    "tracksCount": 1,
+    "search": "uefachampionsleagueumyjbidet"
   },
   {
     "title": "Konik na biegunach",
