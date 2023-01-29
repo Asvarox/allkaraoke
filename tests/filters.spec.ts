@@ -42,6 +42,10 @@ test('Filters - PlayLists', async ({ page }) => {
     await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
 
+    await page.keyboard.press('ArrowDown'); // New
+    await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
+    await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
+
     await page.keyboard.press('ArrowDown'); // All
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
