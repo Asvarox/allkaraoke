@@ -72,7 +72,7 @@ class PhoneManager {
             }
         });
         events.phoneConnected.subscribe(({ id }) => {
-            const playerNumberIndex = InputManager.getInputs().findIndex(
+            const playerNumberIndex = InputManager.getRawInputs().findIndex(
                 (input) => input.inputSource === 'Remote Microphone' && input.deviceId === id,
             );
 

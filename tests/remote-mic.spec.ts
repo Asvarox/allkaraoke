@@ -46,6 +46,17 @@ test('Remote mic should connect and be selectable', async ({ page, context, brow
         }),
     ]);
 
+    // Check if the mics are reselected after they refresh
+    await remoteMicBluePage.reload();
+    await remoteMicBluePage.getByTestId('player-name-input').fill('E2E Test Blue');
+    await remoteMicBluePage.getByTestId('connect-button').click();
+    await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
+
+    await remoteMicRed.reload();
+    await remoteMicRed.getByTestId('player-name-input').fill('E2E Test Red');
+    await remoteMicRed.getByTestId('connect-button').click();
+    await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
+
     // Check singing a song
     await page.getByTestId('sing-a-song').click({ force: true });
 

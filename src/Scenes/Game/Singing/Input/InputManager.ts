@@ -1,4 +1,5 @@
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
@@ -30,7 +31,19 @@ class InputManager {
             // If any microphones are selected, load the list
             inputSourceListManager.loadMics();
         }
+
+        GameStateEvents.inputListChanged.subscribe(async () => {
+            if (this.isMonitoring) {
+                await this.stopMonitoring();
+                this.startMonitoring();
+            }
+        });
     }
+
+    /**
+     * Returns raw current selection with no guarantee that the device (eg mic, remote mic) is actually connected
+     */
+    public getRawInputs = () => this.playerInputs;
 
     public getPlayerFrequency = (playerNumber: number) => {
         const frequencies = this.sourceNameToInput(this.playerInputs[playerNumber].inputSource).getFrequencies(

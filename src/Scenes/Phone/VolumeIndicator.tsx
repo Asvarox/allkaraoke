@@ -21,7 +21,10 @@ export default function VolumeIndicator({ playerNumber, volume, frequency }: Pro
         playerNumber !== null ? styles.colors.players[playerNumber].perfect.fill : styles.colors.lines.normal.stroke;
 
     return (
-        <IndicatorContainer color={backgroundColor}>
+        <IndicatorContainer
+            color={backgroundColor}
+            data-player-number={`${playerNumber ?? 'none'}`}
+            data-test="indicator">
             <Frequency>
                 <br />
                 {String(volume * 100).slice(0, 10)}
