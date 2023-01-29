@@ -5,6 +5,7 @@ import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useMemo } from 'react';
 import { AppliedFilters } from './Hooks/useSongList';
+import { addDays } from 'date-fns';
 
 interface PlaylistEntry {
     name: string;
@@ -20,6 +21,7 @@ const usePlaylists = (): PlaylistEntry[] =>
             { name: 'Classics', filters: { yearBefore: 1995 } },
             { name: 'Modern', filters: { yearAfter: 1995 } },
             { name: 'Duets', filters: { duet: true } },
+            { name: 'New', filters: { updatedAfter: addDays(new Date(), -21).toISOString() } },
         ],
         [],
     );

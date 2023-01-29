@@ -3,6 +3,7 @@ import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo, useState } from 'react';
 import clearString from '../../../../utils/clearString';
+import { isAfter } from 'date-fns';
 
 export interface SongGroup {
     letter: string;
@@ -15,6 +16,7 @@ export interface AppliedFilters {
     yearAfter?: number;
     language?: string;
     search?: string;
+    updatedAfter?: string;
     duet?: boolean | null;
 }
 
@@ -67,6 +69,12 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
         if (!yearAfter) return songList;
 
         return songList.filter((song) => Number(song.year) >= yearAfter);
+    },
+    updatedAfter: (songList, after: string) => {
+        if (!after) return songList;
+        const dateAfter = new Date(after);
+
+        return songList.filter((song) => song.lastUpdate && isAfter(new Date(song.lastUpdate), dateAfter));
     },
 };
 
