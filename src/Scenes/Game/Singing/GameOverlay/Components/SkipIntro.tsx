@@ -17,7 +17,7 @@ function SkipIntro({ playerRef }: Props) {
     const song = GameState.getSong()!;
     const hasLongIntro = useMemo(() => songHasLongIntro(song), [song]);
     const songFirstNoteMs = useMemo(() => getSongFirstNoteMs(song), [song]);
-    const shouldBeVisible = GameState.getCurrentTime(false) < songFirstNoteMs - SKIP_INTRO_MS;
+    const shouldBeVisible = GameState.getCurrentTime(false) < songFirstNoteMs - SKIP_INTRO_MS * 1.2;
 
     const isEnabled = shouldBeVisible && hasLongIntro;
 
