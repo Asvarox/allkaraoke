@@ -6,7 +6,6 @@ import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from 'interfaces';
 import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import isDev from 'utils/isDev';
-import songHasLongIntro from 'utils/songHasLongIntro';
 import { v4 } from 'uuid';
 
 interface Props {
@@ -32,16 +31,10 @@ if (isDev()) {
 // added -v2 to the key as the value has changed from number to ValuesType<typeof GAME_MODE>
 const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE>>('song_settings-game_mode-v2');
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
-const useSetSkipIntro = createPersistedState<boolean>('song_settings-skip_intro');
 
 export default function GameSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
     const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
     const [tolerance, setTolerance] = useSetTolerance(2);
-    const [skipIntro, setSkipIntro] = useSetSkipIntro(false);
-
-    const hasLongIntro = songHasLongIntro(songPreview);
-
-    const proposeSkipIntro = hasLongIntro || isDev();
 
     const startSong = () => {
         const singSetup = {
@@ -52,7 +45,6 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
             ] as [PlayerSetup, PlayerSetup],
             mode,
             tolerance,
-            skipIntro: proposeSkipIntro && skipIntro,
         };
         onNextStep(singSetup);
     };
@@ -81,15 +73,6 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 data-test="game-mode-setting"
                 data-test-value={gameModeNames[mode]}
             />
-            {proposeSkipIntro && (
-                <GSSwitcher
-                    {...register('skipIntro', () => setSkipIntro(!skipIntro), 'Skip intro')}
-                    label="Skip intro"
-                    value={skipIntro ? 'Yes' : 'No'}
-                    data-test="skip-intro"
-                    data-test-value={skipIntro}
-                />
-            )}
             <PlayButton {...register('play', startSong, undefined, true)} data-test="next-step-button">
                 Players ➤
             </PlayButton>

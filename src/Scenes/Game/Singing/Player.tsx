@@ -12,7 +12,6 @@ import {
 
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import getSkipIntroTime from 'Songs/utils/getSkipIntroTime';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
@@ -158,7 +157,7 @@ function Player(
                     autoplay={autoplay}
                     disablekb={process.env.NODE_ENV !== 'development'}
                     volume={song.volume}
-                    startAt={singSetup.skipIntro ? getSkipIntroTime(song) : song.videoGap ?? 0}
+                    startAt={song.videoGap ?? 0}
                     onStateChange={onStateChangeCallback}
                 />
             </PlayerContainer>

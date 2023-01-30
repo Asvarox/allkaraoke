@@ -26,7 +26,6 @@ export interface SingSetup {
     players: [PlayerSetup, PlayerSetup];
     mode: ValuesType<typeof GAME_MODE>;
     tolerance: number;
-    skipIntro?: boolean;
 }
 
 export interface NotesSection {
