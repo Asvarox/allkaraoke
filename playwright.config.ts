@@ -133,13 +133,20 @@ const config: PlaywrightTestConfig = {
     // outputDir: 'test-results/',
 
     /* Run your local dev server before starting the tests */
-    webServer: process.env.CI
-        ? {
-              command: 'yarn build:serve',
-              port: 3010,
-              timeout: 60_000 * 3,
-          }
-        : undefined,
+    webServer: [
+        process.env.CI
+            ? {
+                  command: 'yarn build:serve',
+                  port: 3010,
+                  timeout: 60_000 * 3,
+              }
+            : undefined,
+        {
+            command: 'yarn peerjs',
+            port: 9000,
+            timeout: 60_000 * 3,
+        },
+    ].filter(Boolean) as PlaywrightTestConfig['webServer'],
 };
 
 export default config;

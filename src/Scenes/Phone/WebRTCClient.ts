@@ -2,6 +2,7 @@ import { DataConnection, Peer } from 'peerjs';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { v4 } from 'uuid';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
+import peerJSOptions from 'utils/peerJSOptions';
 
 export interface WebRTCRegisterEvent {
     type: 'register';
@@ -59,7 +60,7 @@ class WebRTCClient {
     public connect = (roomId: string, name: string) => {
         if (this.clientId === null) this.setClientId(v4());
 
-        this.peer = new Peer(this.clientId!, { debug: 3 });
+        this.peer = new Peer(this.clientId!, { ...peerJSOptions, debug: 3 });
 
         this.peer.on('open', () => this.connectToServer(roomId, name));
         this.peer.on('close', () => {

@@ -2,6 +2,7 @@ import { Peer } from 'peerjs';
 import { v4 } from 'uuid';
 import { WebRTCEvents } from '../Phone/WebRTCClient';
 import PhoneManager from './PhonesManager';
+import peerJSOptions from 'utils/peerJSOptions';
 
 const ROOM_ID_KEY = 'room_id_key';
 
@@ -23,7 +24,7 @@ class WebRTCServer {
         this.started = true;
         window.sessionStorage.setItem(ROOM_ID_KEY, this.roomId);
 
-        this.peer = new Peer(this.roomId);
+        this.peer = new Peer(this.roomId, peerJSOptions);
 
         this.peer.on('open', function (id) {
             console.log('My peer ID is: ' + id);
