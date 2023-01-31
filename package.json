@@ -36,7 +36,7 @@
     "scripts": {
         "start": "vite",
         "start:mock": "VITE_REACT_APP_OFFLINE=true vite",
-        "start:production": "serve --ssl --port ${PORT:-3010} build",
+        "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key -p ${PORT:-3010} build",
         "build": "vite build",
         "build:serve": "yarn build && yarn start:production",
         "test": "jest --watch",
@@ -126,7 +126,7 @@
         "rollup-plugin-analyzer": "^4.0.0",
         "rollup-plugin-visualizer": "^5.9.0",
         "semver": "^7.3.8",
-        "serve": "6",
+        "serve": "14.2.0",
         "storybook": "^7.0.0-beta.21",
         "ts-node": "^10.9.1",
         "typescript": "^4.9.4",

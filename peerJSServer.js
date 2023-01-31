@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { PeerServer } = require('peer');
 
-const certPath = './config/crt/server.pem';
-const keyPath = './config/crt/server.key';
+const certPath = './config/crt/dummy.pem';
+const keyPath = './config/crt/dummy.key';
 const customCert = fs.existsSync(certPath);
 
 if (!customCert) {
