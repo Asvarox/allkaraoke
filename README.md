@@ -1,4 +1,4 @@
-# [Karaoke in the browser - play online right now](https://asvarox.github.io/olkaraoke/)
+# [Karaoke in the browser - play online right now](https://allkaraoke.party/)
 
 
 ## Getting started
