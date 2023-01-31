@@ -5,12 +5,15 @@ import { useEffect } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import WebRTCServer from './WebRTCServer';
 
+const linkObject = new URL(window.location.href);
+linkObject.hash = `/phone/${WebRTCServer.getRoomId()}`;
+
+const link = linkObject.href;
+
 function ConnectPhone() {
     useEffect(() => {
         WebRTCServer.start();
     }, []);
-
-    const link = `${window.location.origin}${window.location.pathname}#/phone/${WebRTCServer.getRoomId()}`;
 
     return (
         <Container>

@@ -7,6 +7,10 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
+// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
+// Not disabling it globaly so in case SW breaks the app it is caught by other tests
+test.use({ serviceWorkers: 'block' });
+
 test('Remote mic should connect and be selectable', async ({ page, context, browserName }) => {
     test.slow();
     await page.goto('/?e2e-test');

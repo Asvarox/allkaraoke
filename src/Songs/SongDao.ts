@@ -54,7 +54,6 @@ class SongDao {
             this.getDeletedSongsList(),
         ]);
         const lastVisitDate = new Date(lastVisit);
-        console.log(lastVisitDate);
 
         const localSongs = storageIndex.map((song) => song.file);
 

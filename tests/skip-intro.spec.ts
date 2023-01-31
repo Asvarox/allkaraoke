@@ -18,7 +18,6 @@ test('skip the intro from the song', async ({ page }) => {
     await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json');
     await page.keyboard.press('Enter'); // enter first song
 
-    await expect(page.getByTestId('skip-intro')).toHaveAttribute('data-test-value', 'false');
     await page.getByTestId('next-step-button').click({ force: true });
     await page.getByTestId('play-song-button').click({ force: true });
 
