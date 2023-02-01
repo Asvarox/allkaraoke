@@ -68,17 +68,35 @@ describe('convertTxtToSong', () => {
         expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
     });
 
-    it('should convert double track', () => {
-        const sections: Section[] = [
-            { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
-            { start: 5, type: 'notes', notes: [generateNote(7), generateNote(10)] },
-        ];
+    describe('multitrack', function () {
+        it('should convert double track', () => {
+            const sections: Section[] = [
+                { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
+                { start: 15, type: 'notes', notes: [generateNote(17), generateNote(20)] },
+            ];
 
-        const inputSongTxt = generateSongTxt([sections, sections]);
+            const inputSongTxt = generateSongTxt([sections, sections]);
 
-        const expectedSong: Song = { ...songStub, tracks: [{ sections }, { sections }] };
+            const expectedSong: Song = { ...songStub, tracks: [{ sections }, { sections }] };
 
-        expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
+            expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
+        });
+
+        it('should avoid splitting tracks if notes overlap with heuristics', () => {
+            const sections: Section[] = [
+                { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
+                { start: 5, type: 'notes', notes: [generateNote(7), generateNote(10)] },
+                { start: 8, type: 'notes', notes: [generateNote(10), generateNote(13)] },
+            ];
+
+            const inputSongTxt = generateSongTxt([sections]);
+
+            const expectedSong: Song = { ...songStub, tracks: [{ sections }] };
+            const result = convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl);
+
+            expect(result.tracks).toHaveLength(1);
+            expect(result).toEqual(expectedSong);
+        });
     });
 
     describe('validate against real files', () => {

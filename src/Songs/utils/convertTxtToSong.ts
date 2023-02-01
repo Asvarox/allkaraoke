@@ -113,7 +113,11 @@ export default function convertTxtToSong(
         if (line.startsWith('#')) return;
         const split = line.split(' ');
 
-        if (Number(split[1]) < lastStart && sections.length) {
+        // Sometimes the txts are wrongly formatted and include breaks/notes that just overlap
+        // The assumption here is that tracks should start and end roughly similarly, so if a next
+        // track starts just as the previous ends, it's considered a wrong formatting issue rather
+        // than a new track
+        if (Number(split[1]) < lastStart * 0.75 && sections.length) {
             // new track (song is a duet)
             if (trackNames[song.tracks.length]) song.tracks.push({ sections, name: trackNames[song.tracks.length] });
             else song.tracks.push({ sections });
