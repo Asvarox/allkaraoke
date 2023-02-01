@@ -1,7 +1,7 @@
-import { useContext, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { HelpEntry, KeyboardHelpContext } from 'Scenes/KeyboardHelp/Context';
 
-export default function useKeyboardHelp() {
+export default function useKeyboardHelp(help: HelpEntry, enabled: boolean) {
     const name = useRef(String(Math.random()));
     const { setKeyboard, unsetKeyboard } = useContext(KeyboardHelpContext);
 
@@ -10,6 +10,14 @@ export default function useKeyboardHelp() {
     };
 
     const clearHelp = () => unsetKeyboard(name.current);
+
+    useEffect(() => {
+        if (enabled) {
+            setHelp(help);
+        }
+
+        return clearHelp;
+    }, [help, enabled]);
 
     return { setHelp, clearHelp };
 }

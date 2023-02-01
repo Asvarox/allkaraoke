@@ -1,5 +1,5 @@
 import useKeyboard from 'hooks/useKeyboard';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboardHelp from './useKeyboardHelp';
@@ -31,18 +31,18 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
     const elementList = useRef<string[]>([]);
     const newElementList = useRef<string[]>([]);
     const actions = useRef<Record<string, KeyboardAction>>({});
-    const { setHelp, clearHelp } = useKeyboardHelp();
 
-    useEffect(() => {
-        if (enabled)
-            setHelp({
-                [direction]: null,
-                accept: actions.current[currentlySelected!]?.label ?? null,
-                back: onBackspace ? backspaceHelp : undefined,
-                ...additionalHelp,
-            });
-        return clearHelp;
-    }, [enabled, currentlySelected, actions]);
+    const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
+    const help = useMemo(
+        () => ({
+            [direction]: null,
+            accept: currentlySelectedActionLabel ?? null,
+            back: onBackspace ? backspaceHelp : undefined,
+            ...additionalHelp,
+        }),
+        [currentlySelectedActionLabel, actions, backspaceHelp, direction],
+    );
+    useKeyboardHelp(help, enabled);
 
     const handleEnter = () => {
         actions.current[currentlySelected!]?.callback();

@@ -193,20 +193,16 @@ export const useSongSelectionKeyboardNavigation = (
         [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters],
     );
 
-    const { setHelp, clearHelp } = useKeyboardHelp();
-
-    useEffect(() => {
-        if (enabled) {
-            setHelp({
-                'horizontal-vertical': null,
-                accept: null,
-                back: null,
-                shiftR: null,
-            });
-        }
-
-        return clearHelp;
-    }, [enabled]);
+    const help = useMemo(
+        () => ({
+            'horizontal-vertical': null,
+            accept: null,
+            back: null,
+            shiftR: null,
+        }),
+        [],
+    );
+    useKeyboardHelp(help, enabled);
 
     const closePlaylist = useCallback(
         (leavingKey: 'left' | 'right') => {
