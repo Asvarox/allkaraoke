@@ -1,6 +1,9 @@
 import { omit } from 'lodash-es';
-import { createContext, FunctionComponent, PropsWithChildren, useState } from 'react';
+import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import KeyboardHelpView from './HelpView';
+import PhoneManager from 'RemoteMic/RemoteMicInput';
+import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR';
 
@@ -25,7 +28,21 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
 
     const unsetKeyboard = (name: string) => setKeyboards((kbs) => omit(kbs, [name]));
 
-    const help = Object.values(keyboards).at(-1);
+    const [name, help] = Object.entries(keyboards).at(-1) ?? [];
+
+    useEventEffect(events.phoneConnected, ({ id }) => {
+        PhoneManager.getPhoneById(id)?.connection.send({
+            type: 'keyboard-layout',
+            help,
+        });
+    });
+
+    useEffect(() => {
+        PhoneManager.broadcast({
+            type: 'keyboard-layout',
+            help,
+        });
+    }, [name]);
 
     return (
         <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard }}>

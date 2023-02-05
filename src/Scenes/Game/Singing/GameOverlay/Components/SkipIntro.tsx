@@ -8,6 +8,7 @@ import getSongFirstNoteMs from 'Songs/utils/getSongFirstNoteMs';
 import getSkipIntroTime, { SKIP_INTRO_MS } from 'Songs/utils/getSkipIntroTime';
 import songHasLongIntro from 'utils/songHasLongIntro';
 import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
 
 interface Props {
     playerRef: VideoPlayerRef | null;
@@ -29,6 +30,15 @@ function SkipIntro({ playerRef, isEnabled }: Props) {
         posthog.capture('introSkipped', { name: `${artist} - ${title}`, artist, title });
     };
     useKeyboard({ onEnter: skipIntro }, canSkip);
+
+    const help = useMemo(
+        () => ({
+            accept: 'Skip Intro',
+            back: 'Pause Menu',
+        }),
+        [],
+    );
+    useKeyboardHelp(help, canSkip);
 
     return canSkip ? (
         <Container visible={canSkip} data-test="skip-intro-info">

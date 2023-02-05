@@ -6,6 +6,7 @@ import {
     useCallback,
     useEffect,
     useImperativeHandle,
+    useMemo,
     useRef,
     useState,
 } from 'react';
@@ -17,6 +18,7 @@ import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
 import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
 
 interface Props {
     singSetup: SingSetup;
@@ -125,6 +127,14 @@ function Player(
         true,
         [currentStatus],
     );
+
+    const help = useMemo(
+        () => ({
+            back: 'Pause Menu',
+        }),
+        [],
+    );
+    useKeyboardHelp(help, effectsEnabled);
 
     const isPauseMenuVisible = effectsEnabled && currentStatus === VideoState.PAUSED && onSongEnd !== undefined;
 

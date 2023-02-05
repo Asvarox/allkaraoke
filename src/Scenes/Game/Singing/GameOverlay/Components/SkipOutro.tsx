@@ -8,6 +8,7 @@ import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
 import { getLastNoteEnd } from 'Songs/utils/notesSelectors';
 import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
 
 interface Props {
     onSongEnd: () => void;
@@ -45,6 +46,15 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
         posthog.capture('outroSkipped', { name: `${artist} - ${title}`, artist, title });
     };
     useKeyboard({ onEnter: skipOutro }, shouldBeVisible);
+
+    const help = useMemo(
+        () => ({
+            accept: 'Skip Outro',
+            back: 'Pause Menu',
+        }),
+        [],
+    );
+    useKeyboardHelp(help, shouldBeVisible);
 
     return canSkip ? (
         <Container visible={shouldBeVisible}>

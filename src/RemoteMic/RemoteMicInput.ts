@@ -97,6 +97,10 @@ class PhoneManager {
     public getPhones = () => this.phones;
 
     public getPhoneById = (id: string) => this.phones.find((phone) => phone.id === id);
+
+    public broadcast = (event: WebRTCEvents) => {
+        this.getPhones().forEach((phone) => phone.connection.send(event));
+    };
 }
 
 export default new PhoneManager();

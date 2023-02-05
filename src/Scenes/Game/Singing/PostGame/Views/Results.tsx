@@ -2,12 +2,13 @@ import styled from '@emotion/styled';
 import { Button, buttonFocused } from 'Elements/Button';
 import useKeyboard from 'hooks/useKeyboard';
 import { DetailedScore, HighScoreEntity } from 'interfaces';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import { ContentElement } from 'Scenes/Game/SongPage';
 import { GameTip } from 'Elements/GameTip';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
 
 interface PlayerScore {
     detailedScore: [number, DetailedScore, DetailedScore];
@@ -30,6 +31,13 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
     useKeyboard({
         onEnter: onNextStep,
     });
+    const help = useMemo(
+        () => ({
+            accept: 'Next',
+        }),
+        [],
+    );
+    useKeyboardHelp(help, true);
 
     useEffect(() => {
         if (currentTick >= MAX_TICKS) return;

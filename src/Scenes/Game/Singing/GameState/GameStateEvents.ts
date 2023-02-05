@@ -3,6 +3,7 @@ import posthog from 'posthog-js';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { SongStats } from 'Songs/stats/common';
 import { keyStrokes } from 'RemoteMic/Network/events';
+import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 
 export class GameStateEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
@@ -79,6 +80,7 @@ export const events = {
     ),
 
     remoteKeyboardPressed: new GameStateEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
+    remoteKeyboardLayout: new GameStateEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
 };
 
 export default events;

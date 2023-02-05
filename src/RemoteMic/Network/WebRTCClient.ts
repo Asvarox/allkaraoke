@@ -41,7 +41,6 @@ class WebRTCClient {
 
         this.connection.on('open', () => {
             this.reconnecting = false;
-            console.log('CONNNNECCTED');
 
             this.sendEvent('register', { name, id: this.clientId! });
 
@@ -59,6 +58,8 @@ class WebRTCClient {
                     PhoneMic.stopMonitoring();
                 } else if (data.type === 'set-player-number') {
                     events.remoteMicPlayerNumberSet.dispatch(data.playerNumber);
+                } else if (data.type === 'keyboard-layout') {
+                    events.remoteKeyboardLayout.dispatch(data.help);
                 }
             });
         });

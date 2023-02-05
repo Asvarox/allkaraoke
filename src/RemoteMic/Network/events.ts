@@ -1,3 +1,5 @@
+import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
+
 export interface WebRTCRegisterEvent {
     type: 'register';
     id: string;
@@ -33,6 +35,10 @@ export interface WebRTCKeyStrokeEvent {
     type: 'keystroke';
     key: keyStrokes;
 }
+export interface WebRTCRemoteKeyboardEvent {
+    type: 'keyboard-layout';
+    help: HelpEntry | undefined;
+}
 
 export type WebRTCEvents =
     | WebRTCSetPlayerNumber
@@ -40,4 +46,5 @@ export type WebRTCEvents =
     | WebRTCStartMonitorEvent
     | WebRTCStopMonitorEvent
     | WebRTCKeyStrokeEvent
+    | WebRTCRemoteKeyboardEvent
     | WebRTCNewFrequencyEvent;

@@ -37,6 +37,11 @@ export default function Playlists({ setFilters, active, closePlaylist }: Props) 
 
     const { register, focused, focusElement } = useKeyboardNav({
         enabled: active,
+        additionalHelp: {
+            // It's possible to leave the playlists with left/right
+            vertical: undefined,
+            'horizontal-vertical': null,
+        },
     });
 
     useEffect(() => {

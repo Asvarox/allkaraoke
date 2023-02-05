@@ -2,39 +2,58 @@ import styled from '@emotion/styled';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { Games, KeyboardArrowDown, KeyboardArrowLeft, KeyboardArrowRight, KeyboardArrowUp } from '@mui/icons-material';
 import { css } from '@emotion/react';
+import { useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { keyStrokes } from 'RemoteMic/Network/events';
 
 export default function PhoneKeyboard() {
-    return (
+    const [keyboard] = useEventListener(events.remoteKeyboardLayout) ?? [];
+
+    const isHorizontal = keyboard?.horizontal !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
+    const isVertical = keyboard?.vertical !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
+
+    const onPress = (key: keyStrokes) => () => {
+        navigator?.vibrate?.(200);
+        WebRTCClient.sendKeyStroke(key);
+    };
+
+    return keyboard !== undefined ? (
         <Container>
-            <ArrowsContainer>
-                <ArrowButton onClick={() => WebRTCClient.sendKeyStroke('up')}>
-                    <KeyboardArrowUp />
-                </ArrowButton>
-                <Break />
-                <ArrowButton onClick={() => WebRTCClient.sendKeyStroke('left')}>
-                    <KeyboardArrowLeft />
-                </ArrowButton>
-                <ArrowButton disabled>
-                    <Games />
-                </ArrowButton>
-                <ArrowButton onClick={() => WebRTCClient.sendKeyStroke('right')}>
-                    <KeyboardArrowRight />
-                </ArrowButton>
-                <Break />
-                <ArrowButton onClick={() => WebRTCClient.sendKeyStroke('down')}>
-                    <KeyboardArrowDown />
-                </ArrowButton>
-            </ArrowsContainer>
+            {(isHorizontal || isVertical) && (
+                <ArrowsContainer>
+                    <ArrowButton onClick={onPress('up')} disabled={!isVertical}>
+                        <KeyboardArrowUp />
+                    </ArrowButton>
+                    <Break />
+                    <ArrowButton onClick={onPress('left')} disabled={!isHorizontal}>
+                        <KeyboardArrowLeft />
+                    </ArrowButton>
+                    <ArrowButton disabled>
+                        <Games />
+                    </ArrowButton>
+                    <ArrowButton onClick={onPress('right')} disabled={!isHorizontal}>
+                        <KeyboardArrowRight />
+                    </ArrowButton>
+                    <Break />
+                    <ArrowButton onClick={onPress('down')} disabled={!isVertical}>
+                        <KeyboardArrowDown />
+                    </ArrowButton>
+                </ArrowsContainer>
+            )}
             <ActionsContainer>
-                <ActionButton onClick={() => WebRTCClient.sendKeyStroke('Backspace')}>Back</ActionButton>
-                <ActionButton onClick={() => WebRTCClient.sendKeyStroke('Enter')}>Enter</ActionButton>
+                <ActionButton onClick={onPress('Backspace')} disabled={keyboard?.back === undefined}>
+                    {keyboard?.back || 'Back'}
+                </ActionButton>
+                <ActionButton onClick={onPress('Enter')} disabled={keyboard?.accept === undefined}>
+                    {keyboard?.accept || 'Enter'}
+                </ActionButton>
             </ActionsContainer>
             <Break />
-            <ActionsContainer>
-                <ActionButton onClick={() => WebRTCClient.sendKeyStroke('Shift+R')}>Random Song</ActionButton>
+            <ActionsContainer disabled={keyboard?.shiftR === undefined}>
+                <ActionButton onClick={onPress('Shift+R')}>{keyboard?.shiftR || 'Random Song'}</ActionButton>
             </ActionsContainer>
         </Container>
-    );
+    ) : null;
 }
 
 const Container = styled.div`
@@ -51,11 +70,12 @@ const ArrowsContainer = styled.div`
     font-size: 2rem;
 `;
 
-const ActionsContainer = styled.div`
+const ActionsContainer = styled.div<{ disabled?: boolean }>`
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
+    opacity: ${(props) => (props.disabled ? 0 : 1)};
 `;
 
 const Break = styled.div`
