@@ -4,7 +4,7 @@ import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } f
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useState } from 'react';
-import PhonesManager from 'Scenes/ConnectPhone/PhonesManager';
+import PhonesManager from 'RemoteMic/RemoteMicInput';
 import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';

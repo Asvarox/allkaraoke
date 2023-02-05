@@ -1,9 +1,10 @@
 import Peer from 'peerjs';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
-import GameStateEvents, { events } from '../Game/Singing/GameState/GameStateEvents';
-import InputInterface from '../Game/Singing/Input/Interface';
-import { WebRTCEvents } from '../Phone/WebRTCClient';
+import GameStateEvents, { events } from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import InputInterface from 'Scenes/Game/Singing/Input/Interface';
+import { WebRTCEvents } from 'RemoteMic/Network/events';
+import sendEvent from './Network/sendEvent';
 
 class PhoneInput implements InputInterface {
     private frequencies = [0];
@@ -19,13 +20,13 @@ class PhoneInput implements InputInterface {
     getInputLag = () => 200;
 
     startMonitoring = async () => {
-        this.connection?.send({ type: 'start-monitor' } as WebRTCEvents);
+        sendEvent(this.connection, 'start-monitor');
 
         this.connection?.on('data', this.handleRTCData);
     };
 
     stopMonitoring = async () => {
-        this.connection?.send({ type: 'stop-monitor' } as WebRTCEvents);
+        sendEvent(this.connection, 'stop-monitor');
 
         this.connection?.off('data', this.handleRTCData);
     };

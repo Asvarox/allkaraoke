@@ -1,4 +1,4 @@
-import PhonesManager from 'Scenes/ConnectPhone/PhonesManager';
+import PhonesManager from 'RemoteMic/RemoteMicInput';
 import InputInterface from './Interface';
 
 class RemoteMicInput implements InputInterface {

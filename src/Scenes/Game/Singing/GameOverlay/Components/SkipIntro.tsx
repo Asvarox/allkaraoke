@@ -3,23 +3,24 @@ import { typography } from 'Elements/cssMixins';
 import { VideoPlayerRef } from 'Elements/VideoPlayer';
 import posthog from 'posthog-js';
 import { useMemo } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import getSongFirstNoteMs from 'Songs/utils/getSongFirstNoteMs';
 import getSkipIntroTime, { SKIP_INTRO_MS } from 'Songs/utils/getSkipIntroTime';
 import songHasLongIntro from 'utils/songHasLongIntro';
+import useKeyboard from 'hooks/useKeyboard';
 
 interface Props {
     playerRef: VideoPlayerRef | null;
+    isEnabled: boolean;
 }
 
-function SkipIntro({ playerRef }: Props) {
+function SkipIntro({ playerRef, isEnabled }: Props) {
     const song = GameState.getSong()!;
     const hasLongIntro = useMemo(() => songHasLongIntro(song), [song]);
     const songFirstNoteMs = useMemo(() => getSongFirstNoteMs(song), [song]);
     const shouldBeVisible = GameState.getCurrentTime(false) < songFirstNoteMs - SKIP_INTRO_MS * 1.2;
 
-    const isEnabled = shouldBeVisible && hasLongIntro;
+    const canSkip = isEnabled && shouldBeVisible && hasLongIntro;
 
     const skipIntro = () => {
         playerRef?.seekTo(getSkipIntroTime(song));
@@ -27,10 +28,10 @@ function SkipIntro({ playerRef }: Props) {
         const { artist, title } = GameState.getSong()!;
         posthog.capture('introSkipped', { name: `${artist} - ${title}`, artist, title });
     };
-    useHotkeys('Enter', skipIntro, { enabled: isEnabled });
+    useKeyboard({ onEnter: skipIntro }, canSkip);
 
-    return isEnabled ? (
-        <Container visible={isEnabled} data-test="skip-intro-info">
+    return canSkip ? (
+        <Container visible={canSkip} data-test="skip-intro-info">
             Press <Kbd>Enter</Kbd> to skip the intro
         </Container>
     ) : null;
@@ -54,7 +55,7 @@ const Container = styled.div<{ visible: boolean }>`
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`
-    margin: 0.5em;
+    margin: 0.2rem;
     padding: 0.2rem 2rem;
     border-radius: 1.3rem;
     border: 0.5rem solid rgb(204, 204, 204);

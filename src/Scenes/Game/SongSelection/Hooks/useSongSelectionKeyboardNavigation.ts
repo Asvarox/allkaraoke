@@ -150,8 +150,8 @@ export const useSongSelectionKeyboardNavigation = (
         [groupedSongs],
     );
 
-    const navigateVertically = ({ repeat }: KeyboardEvent, direction: 1 | -1) => {
-        if (!repeat) {
+    const navigateVertically = (e: KeyboardEvent | undefined, direction: 1 | -1) => {
+        if (!e?.repeat) {
             moveCursor('y', direction);
         } else {
             const currentlySelectedGroupIndex = groupedSongs.findIndex(

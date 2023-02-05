@@ -2,6 +2,7 @@ import { SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { SongStats } from 'Songs/stats/common';
+import { keyStrokes } from 'RemoteMic/Network/events';
 
 export class GameStateEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
@@ -76,6 +77,8 @@ export const events = {
         'songScoreUpdated',
         () => undefined,
     ),
+
+    remoteKeyboardPressed: new GameStateEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
 };
 
 export default events;

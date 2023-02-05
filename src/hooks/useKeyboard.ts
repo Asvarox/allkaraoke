@@ -1,7 +1,10 @@
 import { invert } from 'lodash-es';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { keyStrokes } from 'RemoteMic/Network/events';
 
-type Callback = (e: KeyboardEvent) => void;
+type Callback = (e?: KeyboardEvent) => void;
 
 // All besides F and H characters
 export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
@@ -17,7 +20,7 @@ interface Params {
     // onAlphaNumeric?: () => void,
 }
 
-const paramsToKeys: { [param in keyof Params]: string } = {
+const paramsToKeys: { [param in keyof Params]: keyStrokes } = {
     onUpArrow: 'up',
     onDownArrow: 'down',
     onLeftArrow: 'left',
@@ -33,6 +36,18 @@ export default function useKeyboard(params: Params, enabled = true, deps?: any[]
     let handledKeys: string = Object.keys(params)
         .map((param) => paramsToKeys[param as keyof Params])
         .join(',');
+
+    useEventEffect(events.remoteKeyboardPressed, (key) => {
+        if (enabled) {
+            const param = keysToParams[key];
+
+            if (!param) return;
+
+            if (param in params) {
+                params[param]?.();
+            }
+        }
+    });
 
     useHotkeys(
         handledKeys,

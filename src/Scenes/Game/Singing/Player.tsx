@@ -126,14 +126,17 @@ function Player(
         [currentStatus],
     );
 
+    const isPauseMenuVisible = effectsEnabled && currentStatus === VideoState.PAUSED && onSongEnd !== undefined;
+
     return (
         <Container>
-            {effectsEnabled && currentStatus === VideoState.PAUSED && onSongEnd !== undefined && (
+            {isPauseMenuVisible && (
                 <PauseMenu onExit={onSongEnd} onResume={() => player.current?.playVideo()} onRestart={restartSong!} />
             )}
             {currentStatus !== VideoState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
+                        isPauseMenuVisible={isPauseMenuVisible}
                         effectsEnabled={effectsEnabled}
                         playerChanges={playerChanges}
                         duration={duration}

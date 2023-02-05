@@ -3,19 +3,20 @@ import { typography } from 'Elements/cssMixins';
 import useDebounce from 'hooks/useDebounce';
 import posthog from 'posthog-js';
 import React, { useMemo, useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
 import { useInterval } from 'react-use';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
 import { getLastNoteEnd } from 'Songs/utils/notesSelectors';
+import useKeyboard from 'hooks/useKeyboard';
 
 interface Props {
     onSongEnd: () => void;
+    isEnabled: boolean;
 }
 
 const SHOW_OUTRO_THRESHOLD_MS = 15_000;
 
-function SkipOutro({ onSongEnd }: Props) {
+function SkipOutro({ onSongEnd, isEnabled }: Props) {
     const duration = GameState.getDuration();
 
     const singingEndBeat = useMemo(
@@ -23,18 +24,18 @@ function SkipOutro({ onSongEnd }: Props) {
         [],
     );
 
-    const isEnabled = useMemo(() => {
+    const canSkip = useMemo(() => {
         const singingEndTime = beatToMs(singingEndBeat, GameState.getSong()!);
 
-        return duration * 1000 > singingEndTime + SHOW_OUTRO_THRESHOLD_MS;
-    }, [duration, singingEndBeat]);
+        return isEnabled && duration * 1000 > singingEndTime + SHOW_OUTRO_THRESHOLD_MS;
+    }, [duration, singingEndBeat, isEnabled]);
 
     const [currentBeat, setCurrentBeat] = useState(0);
     const [skipping, setSkipping] = useState(false);
 
     useInterval(() => setCurrentBeat(GameState.getCurrentBeat()), 1_000);
 
-    const shouldBeVisible = useDebounce(isEnabled && currentBeat > singingEndBeat, 5_000) && !skipping;
+    const shouldBeVisible = useDebounce(canSkip && currentBeat > singingEndBeat, 5_000) && !skipping;
 
     const skipOutro = () => {
         setSkipping(true);
@@ -43,9 +44,9 @@ function SkipOutro({ onSongEnd }: Props) {
         const { artist, title } = GameState.getSong()!;
         posthog.capture('outroSkipped', { name: `${artist} - ${title}`, artist, title });
     };
-    useHotkeys('Enter', skipOutro, { enabled: shouldBeVisible });
+    useKeyboard({ onEnter: skipOutro }, shouldBeVisible);
 
-    return isEnabled ? (
+    return canSkip ? (
         <Container visible={shouldBeVisible}>
             Press <Kbd>Enter</Kbd> to skip the outro
         </Container>
@@ -70,7 +71,7 @@ const Container = styled.div<{ visible: boolean }>`
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`
-    margin: 0.5em;
+    margin: 0.2rem;
     padding: 0.2rem 2rem;
     border-radius: 1.3rem;
     border: 0.5rem solid rgb(204, 204, 204);

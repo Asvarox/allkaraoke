@@ -21,6 +21,7 @@ interface Props {
     effectsEnabled: boolean;
     playerChanges: number[][];
     videoPlayerRef: VideoPlayerRef | null;
+    isPauseMenuVisible: boolean;
 }
 
 const MAX_RENDER_RESOLUTION_W = 1920;
@@ -34,6 +35,7 @@ function GameOverlay({
     playerChanges,
     effectsEnabled,
     videoPlayerRef,
+    isPauseMenuVisible,
 }: Props) {
     const canvas = useRef<HTMLCanvasElement | null>(null);
     const drawer = useRef<CanvasDrawing | null>(null);
@@ -81,8 +83,8 @@ function GameOverlay({
             </GameCanvas>
             {effectsEnabled && (
                 <>
-                    <SkipIntro playerRef={videoPlayerRef} />
-                    <SkipOutro onSongEnd={onSongEnd} />
+                    <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} />
+                    <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />
                 </>
             )}
             <DurationBar players={players} />

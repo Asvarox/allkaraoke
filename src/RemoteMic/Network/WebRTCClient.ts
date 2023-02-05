@@ -3,42 +3,8 @@ import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { v4 } from 'uuid';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 import peerJSOptions from 'utils/peerJSOptions';
-
-export interface WebRTCRegisterEvent {
-    type: 'register';
-    id: string;
-    name: string;
-}
-
-export interface WebRTCStartMonitorEvent {
-    type: 'start-monitor';
-}
-
-export interface WebRTCUnregisterEvent {
-    type: 'unregister';
-}
-
-export interface WebRTCStopMonitorEvent {
-    type: 'stop-monitor';
-}
-
-export interface WebRTCSetPlayerNumber {
-    type: 'set-player-number';
-    playerNumber: number | null;
-}
-
-export interface WebRTCNewFrequencyEvent {
-    type: 'freq';
-    freqs: [number, number];
-    volumes: [number, number];
-}
-
-export type WebRTCEvents =
-    | WebRTCSetPlayerNumber
-    | WebRTCRegisterEvent
-    | WebRTCStartMonitorEvent
-    | WebRTCStopMonitorEvent
-    | WebRTCNewFrequencyEvent;
+import { keyStrokes, WebRTCEvents } from 'RemoteMic/Network/events';
+import sendEvent from './sendEvent';
 
 const MIC_ID_KEY = 'MIC_CLIENT_ID';
 
@@ -49,7 +15,7 @@ class WebRTCClient {
     private reconnecting = false;
 
     private onFrequencyUpdate = (freqs: [number, number], volumes: [number, number]) => {
-        this.connection?.send({ type: 'freq', freqs: freqs, volumes: volumes } as WebRTCEvents);
+        this.sendEvent('freq', { freqs: freqs, volumes: volumes });
     };
 
     private setClientId = (id: string) => {
@@ -77,8 +43,10 @@ class WebRTCClient {
             this.reconnecting = false;
             console.log('CONNNNECCTED');
 
-            this.connection?.send({ type: 'register', name, id: this.clientId } as WebRTCEvents);
+            this.sendEvent('register', { name, id: this.clientId! });
+
             events.karaokeConnectionStatusChange.dispatch('connected');
+
             this.connection?.on('data', (data: WebRTCEvents) => {
                 console.log('data', data);
                 if (data.type === 'start-monitor') {
@@ -119,6 +87,14 @@ class WebRTCClient {
     };
 
     public getRoomId = () => this.clientId;
+
+    public sendKeyStroke = (key: keyStrokes) => {
+        this.sendEvent('keystroke', { key });
+    };
+
+    private sendEvent = <T extends WebRTCEvents>(type: T['type'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
+        sendEvent(this.connection, type, payload);
+    };
 }
 
 export default new WebRTCClient();

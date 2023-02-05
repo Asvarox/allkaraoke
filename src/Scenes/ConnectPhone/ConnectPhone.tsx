@@ -3,7 +3,7 @@ import { typography } from 'Elements/cssMixins';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import WebRTCServer from './WebRTCServer';
+import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
 
 const linkObject = new URL(window.location.href);
 linkObject.hash = `/phone/${WebRTCServer.getRoomId()}`;

@@ -1,8 +1,9 @@
 import { Peer } from 'peerjs';
 import { v4 } from 'uuid';
-import { WebRTCEvents } from '../Phone/WebRTCClient';
-import PhoneManager from './PhonesManager';
+import PhoneManager from 'RemoteMic/RemoteMicInput';
 import peerJSOptions from 'utils/peerJSOptions';
+import { WebRTCEvents } from 'RemoteMic/Network/events';
+import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 
 const ROOM_ID_KEY = 'room_id_key';
 
@@ -36,6 +37,8 @@ class WebRTCServer {
             conn.on('data', (data: WebRTCEvents) => {
                 if (data.type === 'register') {
                     PhoneManager.addPhone(data.id, data.name, conn);
+                } else if (data.type === 'keystroke') {
+                    GameStateEvents.remoteKeyboardPressed.dispatch(data.key);
                 }
             });
 

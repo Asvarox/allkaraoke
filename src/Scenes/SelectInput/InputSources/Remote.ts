@@ -1,4 +1,4 @@
-import PhonesManager, { Phone } from 'Scenes/ConnectPhone/PhonesManager';
+import PhonesManager, { Phone } from 'RemoteMic/RemoteMicInput';
 import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { InputSource } from './interfaces';
 
