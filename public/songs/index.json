@@ -602,6 +602,31 @@
     "search": "amywinehousebacktoblack"
   },
   {
+    "title": "Rehab",
+    "artist": "Amy Winehouse",
+    "bpm": 291,
+    "bar": 4,
+    "gap": 1356.6185567010311,
+    "video": "KUmZp8pR1uc",
+    "year": "2006",
+    "lastUpdate": "2023-01-29T00:09:00.060Z",
+    "edition": "SS Pop 2009",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 73,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Amy Winehouse-Rehab.json",
+    "tracksCount": 1,
+    "search": "amywinehouserehab"
+  },
+  {
     "title": "Barbie Girl",
     "artist": "Aqua",
     "bpm": 260.2,
@@ -1865,6 +1890,56 @@
     "search": "carlyraejepsencallmemaybe"
   },
   {
+    "title": "Believe",
+    "artist": "Cher",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 28762.23076923077,
+    "video": "sObgS3dxBac",
+    "year": "1998",
+    "lastUpdate": "2023-01-28T20:43:47.202Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 133,
+    "author": "zXz",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=zxz",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=cher&idioma=en",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Cher-Believe.json",
+    "tracksCount": 1,
+    "search": "cherbelieve"
+  },
+  {
+    "title": "The Shoop Shoop Song (It's in his kiss)",
+    "artist": "Cher",
+    "bpm": 251.86,
+    "bar": 4,
+    "gap": -290.7747562039166,
+    "video": "ZM5qIJdBtX0",
+    "year": "1990",
+    "lastUpdate": "2023-01-28T20:48:25.846Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "author": "zXz",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=zxz",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=cher&idioma=en",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "file": "Cher-The Shoop Shoop Song (It's in his kiss).json",
+    "tracksCount": 1,
+    "search": "chertheshoopshoopsongitsinhiskiss"
+  },
+  {
     "title": "Beautiful",
     "artist": "Christina Aguilera",
     "bpm": 304.6,
@@ -2319,6 +2394,31 @@
     "file": "Depeche Mode-Personal Jesus.json",
     "tracksCount": 1,
     "search": "depechemodepersonaljesus"
+  },
+  {
+    "title": "Twee Werelden",
+    "artist": "Disney Tarzan",
+    "bpm": 110.3,
+    "bar": 4,
+    "gap": 51248.05077062557,
+    "video": "WEzHazCoZgA",
+    "year": "1999",
+    "lastUpdate": "2023-01-27T21:50:33.867Z",
+    "genre": "Disney",
+    "language": "Dutch",
+    "videoGap": 0,
+    "realBpm": 111,
+    "author": "Kasia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "file": "Disney Tarzan-Twee Werelden.json",
+    "tracksCount": 1,
+    "search": "disneytarzantweewerelden"
   },
   {
     "title": "Kolorowy Wiatr",
@@ -4794,6 +4894,31 @@
     "search": "lizarciaglepada"
   },
   {
+    "title": "Juice",
+    "artist": "Lizzo",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 16478,
+    "video": "XaCrQL_8eMY",
+    "year": "2019",
+    "lastUpdate": "2023-01-28T23:49:55.145Z",
+    "genre": "Dance/Funk",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 120,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=lizzo",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Lizzo-Juice.json",
+    "tracksCount": 1,
+    "search": "lizzojuice"
+  },
+  {
     "title": "Hard Rock Hallelujah",
     "artist": "Lordi",
     "bpm": 246.4,
@@ -4913,6 +5038,31 @@
     "file": "Madagaskar-Wyginam śmiało ciało.json",
     "tracksCount": 1,
     "search": "madagaskarwyginamsmiaociao"
+  },
+  {
+    "title": "Frozen",
+    "artist": "Madonna",
+    "bpm": 216,
+    "bar": 4,
+    "gap": 18202.777777777777,
+    "video": "XS088Opj9o0",
+    "year": "1998",
+    "lastUpdate": "2023-01-28T23:59:19.273Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Frozen",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Madonna-Frozen.json",
+    "tracksCount": 1,
+    "search": "madonnafrozen"
   },
   {
     "title": "Hung Up",
