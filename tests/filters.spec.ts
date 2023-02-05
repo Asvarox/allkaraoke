@@ -8,6 +8,27 @@ test.beforeEach(async ({ page, context }) => {
 });
 
 test('Filters - PlayLists', async ({ page }) => {
+    // Make sure the new song mock is actually considered new
+    const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
+
+    // Update the Date accordingly in your test pages
+    await page.addInitScript(`{
+      // Extend Date constructor to default to fakeNow
+      Date = class extends Date {
+        constructor(...args) {
+          if (args.length === 0) {
+            super(${fakeNow});
+          } else {
+            super(...args);
+          }
+        }
+      }
+      // Override Date.now() to start from fakeNow
+      const __DateNowOffset = ${fakeNow} - Date.now();
+      const __DateNow = Date.now;
+      Date.now = () => __DateNow() + __DateNowOffset;
+    }`);
+
     await page.goto('/?e2e-test');
     await page.getByTestId('skip').click({ force: true });
 
