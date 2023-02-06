@@ -22,7 +22,7 @@ test('skip the intro from the song', async ({ page }) => {
     await page.getByTestId('play-song-button').click({ force: true });
 
     await expect(page.getByTestId('skip-intro-info')).toBeVisible();
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(1500);
     await page.keyboard.press('Enter');
 
     await page.getByTestId('highscores-button').click({ timeout: 15_000, force: true });

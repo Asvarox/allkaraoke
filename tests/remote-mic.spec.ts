@@ -85,7 +85,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     // Check if skip intro is possible
 
     await expect(page.getByTestId('skip-intro-info')).toBeVisible();
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(1500);
     await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
 
     await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 15_000 });
