@@ -14,6 +14,7 @@ import * as Sentry from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import 'Stats';
+import 'RemoteMic/eventListeners';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';

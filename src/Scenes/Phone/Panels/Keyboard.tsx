@@ -21,35 +21,41 @@ export default function PhoneKeyboard() {
         <Container>
             {(isHorizontal || isVertical) && (
                 <ArrowsContainer>
-                    <ArrowButton onClick={onPress('up')} disabled={!isVertical}>
+                    <ArrowButton onClick={onPress('up')} disabled={!isVertical} data-test="arrow-up">
                         <KeyboardArrowUp />
                     </ArrowButton>
                     <Break />
-                    <ArrowButton onClick={onPress('left')} disabled={!isHorizontal}>
+                    <ArrowButton onClick={onPress('left')} disabled={!isHorizontal} data-test="arrow-left">
                         <KeyboardArrowLeft />
                     </ArrowButton>
                     <ArrowButton disabled>
                         <Games />
                     </ArrowButton>
-                    <ArrowButton onClick={onPress('right')} disabled={!isHorizontal}>
+                    <ArrowButton onClick={onPress('right')} disabled={!isHorizontal} data-test="arrow-right">
                         <KeyboardArrowRight />
                     </ArrowButton>
                     <Break />
-                    <ArrowButton onClick={onPress('down')} disabled={!isVertical}>
+                    <ArrowButton onClick={onPress('down')} disabled={!isVertical} data-test="arrow-down">
                         <KeyboardArrowDown />
                     </ArrowButton>
                 </ArrowsContainer>
             )}
             <ActionsContainer>
-                <ActionButton onClick={onPress('Backspace')} disabled={keyboard?.back === undefined}>
+                <ActionButton
+                    onClick={onPress('Backspace')}
+                    disabled={keyboard?.back === undefined}
+                    data-test="keyboard-backspace">
                     {keyboard?.back || 'Back'}
                 </ActionButton>
-                <ActionButton onClick={onPress('Enter')} disabled={keyboard?.accept === undefined}>
+                <ActionButton
+                    onClick={onPress('Enter')}
+                    disabled={keyboard?.accept === undefined}
+                    data-test="keyboard-enter">
                     {keyboard?.accept || 'Enter'}
                 </ActionButton>
             </ActionsContainer>
             <Break />
-            <ActionsContainer disabled={keyboard?.shiftR === undefined}>
+            <ActionsContainer disabled={keyboard?.shiftR === undefined} data-test="keyboard-shift-r">
                 <ActionButton onClick={onPress('Shift+R')}>{keyboard?.shiftR || 'Random Song'}</ActionButton>
             </ActionsContainer>
         </Container>

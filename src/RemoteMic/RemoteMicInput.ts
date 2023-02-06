@@ -1,7 +1,5 @@
 import Peer from 'peerjs';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
-import GameStateEvents, { events } from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './Network/sendEvent';
@@ -54,34 +52,6 @@ export class Phone {
 
 class PhoneManager {
     private phones: Phone[] = [];
-
-    constructor() {
-        events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
-            if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
-                const playerNumber = InputManager.getInputs().findIndex(
-                    (input) => input.inputSource === 'Remote Microphone' && input.deviceId === oldInput.deviceId,
-                );
-                const unselectedPhone = this.getPhoneById(oldInput.deviceId!);
-
-                unselectedPhone?.setPlayerNumber(playerNumber >= 0 ? playerNumber : null);
-            }
-            if (newInput?.inputSource === 'Remote Microphone') {
-                const selectedPhone = this.getPhoneById(newInput.deviceId!);
-                console.log('selectedPhone', oldInput, newInput);
-
-                selectedPhone?.setPlayerNumber(playerNumber);
-            }
-        });
-        events.phoneConnected.subscribe(({ id }) => {
-            const playerNumberIndex = InputManager.getRawInputs().findIndex(
-                (input) => input.inputSource === 'Remote Microphone' && input.deviceId === id,
-            );
-
-            if (playerNumberIndex > -1) {
-                this.getPhoneById(id)?.setPlayerNumber(playerNumberIndex);
-            }
-        });
-    }
 
     public addPhone = (id: string, name: string, connection: Peer.DataConnection) => {
         this.phones.push(new Phone(id, name, connection));
