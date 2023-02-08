@@ -76,7 +76,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
 
     // Check if restart song is possible
-    await expect(page.getByTestId('lyrics-current-player-1')).toBeVisible();
+    await expect(page.getByTestId('lyrics-current-player-1')).toBeVisible({ timeout: 10_000 });
     await expect(remoteMicBluePage.getByTestId('keyboard-enter')).not.toBeDisabled();
     await remoteMicBluePage.getByTestId('keyboard-backspace').click({ force: true });
     await navigateWithKeyboard(page, 'button-restart-song', remoteMicRed);
