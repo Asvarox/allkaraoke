@@ -6,7 +6,7 @@ description: 'Setups node to the specific version'
 runs:
   using: "composite"
   steps:
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v3
       with:
         # Newer versions might fail https://github.com/yarnpkg/berry/issues/4778
         node-version: '16.16.0'
