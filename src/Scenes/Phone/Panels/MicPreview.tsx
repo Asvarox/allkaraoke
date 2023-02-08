@@ -7,9 +7,10 @@ import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 
 interface Props {
     isVisible: boolean;
+    isMicOn: boolean;
 }
 
-function MicPreview({ isVisible }: Props) {
+function MicPreview({ isVisible, isMicOn }: Props) {
     const [volume, setVolume] = useState(0);
     const [frequency, setFrequency] = useState(0);
     const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
@@ -26,6 +27,13 @@ function MicPreview({ isVisible }: Props) {
         PhoneMic.startMonitoring(undefined);
         return PhoneMic.addListener(updateVolumes);
     }, [updateVolumes]);
+
+    useEffect(() => {
+        if (!isMicOn) {
+            setVolume(0);
+            setFrequency(0);
+        }
+    }, [isMicOn]);
 
     return isVisible ? (
         <>

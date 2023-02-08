@@ -56,7 +56,7 @@ function Phone({ roomId }: Props) {
             <NormalizeFontSize size={10} />
             <LayoutWithBackground>
                 <Container>
-                    <MicPreview isVisible />
+                    <MicPreview isVisible isMicOn={monitoringStarted} />
                     <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
                         <Connect
                             roomId={roomId}
