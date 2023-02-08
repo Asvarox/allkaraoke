@@ -112,6 +112,8 @@ class InputManager {
         );
     };
 
+    public monitoringStarted = () => this.isMonitoring;
+
     // todo: Create eg. "InputSourceManager" and have the logic there?
     private sourceNameToInput = (sourceName: InputSourceNames) => {
         if (sourceName === MicrophoneInputSource.inputName) return MicInput;

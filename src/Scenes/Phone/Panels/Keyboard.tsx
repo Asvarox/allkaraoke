@@ -13,7 +13,7 @@ export default function PhoneKeyboard() {
     const isVertical = keyboard?.vertical !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
 
     const onPress = (key: keyStrokes) => () => {
-        navigator?.vibrate?.(200);
+        // navigator?.vibrate?.(200);
         WebRTCClient.sendKeyStroke(key);
     };
 

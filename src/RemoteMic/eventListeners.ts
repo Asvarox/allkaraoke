@@ -24,6 +24,12 @@ events.phoneConnected.subscribe(({ id }) => {
     );
 
     if (playerNumberIndex > -1) {
-        PhoneManager.getPhoneById(id)?.setPlayerNumber(playerNumberIndex);
+        const phone = PhoneManager.getPhoneById(id);
+
+        phone?.setPlayerNumber(playerNumberIndex);
+
+        if (InputManager.monitoringStarted()) {
+            phone?.getInput()?.startMonitoring();
+        }
     }
 });
