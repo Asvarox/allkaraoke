@@ -40,19 +40,23 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
 const container = document.getElementById('root');
 const root = createRoot(container!);
 
-events.phoneConnected.subscribe(({ name }) => {
-    toast.success(
-        <>
-            Remote microphone <b>{name}</b> connected!
-        </>,
-    );
+events.phoneConnected.subscribe(({ name, silent }) => {
+    if (!silent) {
+        toast.success(
+            <>
+                Remote microphone <b>{name}</b> connected!
+            </>,
+        );
+    }
 });
-events.phoneDisconnected.subscribe(({ name }) => {
-    toast.error(
-        <>
-            Remote microphone <b>{name}</b> disconnected!
-        </>,
-    );
+events.phoneDisconnected.subscribe(({ name }, silent) => {
+    if (!silent) {
+        toast.error(
+            <>
+                Remote microphone <b>{name}</b> disconnected!
+            </>,
+        );
+    }
 });
 
 root.render(

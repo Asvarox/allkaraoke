@@ -23,26 +23,26 @@ class WebRTCClient {
         window.sessionStorage.setItem(MIC_ID_KEY, id);
     };
 
-    public connect = (roomId: string, name: string) => {
+    public connect = (roomId: string, name: string, silent: boolean) => {
         if (this.clientId === null) this.setClientId(v4());
 
         this.peer = new Peer(this.clientId!, { ...peerJSOptions, debug: 3 });
 
-        this.peer.on('open', () => this.connectToServer(roomId, name));
+        this.peer.on('open', () => this.connectToServer(roomId, name, silent));
         this.peer.on('close', () => {
             PhoneMic.removeListener(this.onFrequencyUpdate);
             PhoneMic.stopMonitoring();
         });
     };
 
-    public connectToServer = (roomId: string, name: string) => {
+    public connectToServer = (roomId: string, name: string, silent: boolean) => {
         events.karaokeConnectionStatusChange.dispatch('connecting');
         this.connection = this.peer!.connect(roomId);
 
         this.connection.on('open', () => {
             this.reconnecting = false;
 
-            this.sendEvent('register', { name, id: this.clientId! });
+            this.sendEvent('register', { name, id: this.clientId!, silent });
 
             events.karaokeConnectionStatusChange.dispatch('connected');
 
@@ -60,6 +60,10 @@ class WebRTCClient {
                     events.remoteMicPlayerNumberSet.dispatch(data.playerNumber);
                 } else if (data.type === 'keyboard-layout') {
                     events.remoteKeyboardLayout.dispatch(data.help);
+                } else if (data.type === 'reload-mic') {
+                    this.sendEvent('unregister');
+                    window.sessionStorage.setItem('reload-mic-request', '1');
+                    window.location.reload();
                 }
             });
         });
@@ -82,7 +86,7 @@ class WebRTCClient {
     private reconnect = (roomId: string, name: string) => {
         if (this.reconnecting) {
             events.karaokeConnectionStatusChange.dispatch('reconnecting');
-            this.connectToServer(roomId, name);
+            this.connectToServer(roomId, name, false);
             setTimeout(() => this.reconnect(roomId, name), 1000);
         }
     };

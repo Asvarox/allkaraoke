@@ -56,8 +56,14 @@ export const events = {
         (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
     >('songEnded', trackSongData),
 
-    phoneConnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneConnected', true),
-    phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }) => void>('phoneDisconnected', true),
+    phoneConnected: new GameStateEvent<(phone: { id: string; name: string; silent: boolean }) => void>(
+        'phoneConnected',
+        true,
+    ),
+    phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }, silent: boolean) => void>(
+        'phoneDisconnected',
+        true,
+    ),
     playerInputChanged: new GameStateEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput) => void
     >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.inputSource, new: newI.inputSource })),

@@ -21,20 +21,30 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
     const [name, setName] = usePersistedName('');
     const inputRef = useRef<HTMLInputElement | null>(null);
 
-    useEffect(() => {
-        inputRef.current?.focus();
-    }, []);
-
     const disabled = connectionStatus !== 'uninitialised';
 
-    const handleConnect: FormEventHandler<HTMLFormElement> = (e) => {
-        e.preventDefault();
-        WebRTCClient.connect(roomId, name);
+    const connectToServer = (silent = false) => {
+        WebRTCClient.connect(roomId, name, silent);
         try {
             process.env.NODE_ENV !== 'development' && document.body.requestFullscreen().catch(console.info);
         } catch (e) {}
         onConnect();
     };
+
+    const handleConnect: FormEventHandler<HTMLFormElement> = (e) => {
+        e.preventDefault();
+
+        connectToServer();
+    };
+
+    useEffect(() => {
+        inputRef.current?.focus();
+
+        if (window.sessionStorage.getItem('reload-mic-request') !== null) {
+            window.sessionStorage.removeItem('reload-mic-request');
+            connectToServer(true);
+        }
+    }, []);
 
     const [showConnectionTip, setShowConnectionTip] = useState(false);
 

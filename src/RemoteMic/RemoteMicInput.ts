@@ -1,5 +1,4 @@
 import Peer from 'peerjs';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './Network/sendEvent';
@@ -49,28 +48,3 @@ export class Phone {
         this.connection?.send({ type: 'set-player-number', playerNumber } as WebRTCEvents);
     };
 }
-
-class PhoneManager {
-    private phones: Phone[] = [];
-
-    public addPhone = (id: string, name: string, connection: Peer.DataConnection) => {
-        this.phones.push(new Phone(id, name, connection));
-        GameStateEvents.phoneConnected.dispatch({ id, name });
-    };
-
-    public removePhone = (id: string) => {
-        const removedPhone = this.phones.find((phone) => phone.id === id);
-        this.phones = this.phones.filter((phone) => phone.id !== id);
-        if (removedPhone) GameStateEvents.phoneDisconnected.dispatch(removedPhone);
-    };
-
-    public getPhones = () => this.phones;
-
-    public getPhoneById = (id: string) => this.phones.find((phone) => phone.id === id);
-
-    public broadcast = (event: WebRTCEvents) => {
-        this.getPhones().forEach((phone) => phone.connection.send(event));
-    };
-}
-
-export default new PhoneManager();

@@ -4,13 +4,13 @@ import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } f
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useState } from 'react';
-import PhonesManager from 'RemoteMic/RemoteMicInput';
 import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
 import SinglePlayer from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import PhoneManager from 'RemoteMic/PhoneManager';
 
 interface Props {
     songPreview: SongPreview;
@@ -27,7 +27,7 @@ function useDefaultPlayerName(index: number): string {
         const source = InputManager.getPlayerInput(index);
 
         if (source?.inputSource === 'Remote Microphone') {
-            defaultName = PhonesManager.getPhoneById(source.deviceId!)?.name || defaultName;
+            defaultName = PhoneManager.getPhoneById(source.deviceId!)?.name || defaultName;
         }
         if (!defaultName) {
             const previousPlayerNames =

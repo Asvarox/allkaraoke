@@ -46,6 +46,9 @@ const data = [
     <>
         In Song Selection, hold <kbd>↑</kbd> or <kbd>↓</kbd> to jump to the next letter
     </>,
+    <>
+        Add <strong>vibrato</strong> to the notes you sing to get additional <strong>bonus points</strong>
+    </>,
 ];
 
 interface Props {

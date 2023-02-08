@@ -1,7 +1,7 @@
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import PhoneManager from './RemoteMicInput';
+import PhoneManager from './PhoneManager';
 
 events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
     if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {

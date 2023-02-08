@@ -1,7 +1,7 @@
 import { omit } from 'lodash-es';
 import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import KeyboardHelpView from './HelpView';
-import PhoneManager from 'RemoteMic/RemoteMicInput';
+import PhoneManager from 'RemoteMic/PhoneManager';
 import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 

@@ -4,6 +4,11 @@ export interface WebRTCRegisterEvent {
     type: 'register';
     id: string;
     name: string;
+    silent: boolean;
+}
+
+export interface WebRTCUnregisterEvent {
+    type: 'unregister';
 }
 
 export interface WebRTCStartMonitorEvent {
@@ -31,6 +36,10 @@ export interface WebRTCNewFrequencyEvent {
 
 export type keyStrokes = 'up' | 'down' | 'left' | 'right' | 'Enter' | 'Backspace' | 'Shift+R';
 
+export interface WebRTCReloadMicEvent {
+    type: 'reload-mic';
+}
+
 export interface WebRTCKeyStrokeEvent {
     type: 'keystroke';
     key: keyStrokes;
@@ -47,4 +56,6 @@ export type WebRTCEvents =
     | WebRTCStopMonitorEvent
     | WebRTCKeyStrokeEvent
     | WebRTCRemoteKeyboardEvent
+    | WebRTCUnregisterEvent
+    | WebRTCReloadMicEvent
     | WebRTCNewFrequencyEvent;

@@ -1,4 +1,4 @@
-import PhonesManager from 'RemoteMic/RemoteMicInput';
+import PhoneManager from 'RemoteMic/PhoneManager';
 import InputInterface from './Interface';
 
 class RemoteMicInput implements InputInterface {
@@ -6,20 +6,20 @@ class RemoteMicInput implements InputInterface {
     private volumes: [number] = [1];
 
     public startMonitoring = async (phoneId?: string) => {
-        return PhonesManager.getPhoneById(phoneId ?? '')
+        return PhoneManager.getPhoneById(phoneId ?? '')
             ?.getInput()
             .startMonitoring();
     };
 
     public getFrequencies = (deviceId?: string) => {
-        const val = PhonesManager.getPhoneById(deviceId ?? '')
+        const val = PhoneManager.getPhoneById(deviceId ?? '')
             ?.getInput()
             .getFrequencies();
 
         return val ?? this.frequencies;
     };
     public getVolumes = (deviceId?: string) => {
-        const val = PhonesManager.getPhoneById(deviceId ?? '')
+        const val = PhoneManager.getPhoneById(deviceId ?? '')
             ?.getInput()
             .getVolumes();
 
@@ -27,12 +27,12 @@ class RemoteMicInput implements InputInterface {
     };
 
     public stopMonitoring = async (deviceId?: string) =>
-        PhonesManager.getPhoneById(deviceId ?? '')
+        PhoneManager.getPhoneById(deviceId ?? '')
             ?.getInput()
             .stopMonitoring();
 
     public getInputLag = (deviceId?: string) =>
-        PhonesManager.getPhoneById(deviceId ?? '')
+        PhoneManager.getPhoneById(deviceId ?? '')
             ?.getInput()
             .getInputLag() ?? 0;
 
