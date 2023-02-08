@@ -2,7 +2,7 @@ import { throttle } from 'lodash-es';
 import { useCallback, useEffect, useState } from 'react';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import VolumeIndicator from 'Scenes/Phone/VolumeIndicator';
+import VolumeIndicator from './VolumeIndicator';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 
 interface Props {
@@ -28,16 +28,9 @@ function MicPreview({ isVisible, isMicOn }: Props) {
         return PhoneMic.addListener(updateVolumes);
     }, [updateVolumes]);
 
-    useEffect(() => {
-        if (!isMicOn) {
-            setVolume(0);
-            setFrequency(0);
-        }
-    }, [isMicOn]);
-
     return isVisible ? (
         <>
-            <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} />
+            <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} isMicOn={isMicOn} />
         </>
     ) : null;
 }

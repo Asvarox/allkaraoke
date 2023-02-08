@@ -6,9 +6,10 @@ interface Props {
     volume: number;
     playerNumber: number | null;
     frequency: number | null;
+    isMicOn: boolean;
 }
 
-export default function VolumeIndicator({ playerNumber, volume, frequency }: Props) {
+export default function VolumeIndicator({ playerNumber, volume, frequency, isMicOn }: Props) {
     const [maxVolume, setMaxVolume] = useState(0.000001);
 
     useEffect(() => {
@@ -22,17 +23,22 @@ export default function VolumeIndicator({ playerNumber, volume, frequency }: Pro
 
     return (
         <IndicatorContainer
+            isMicOn={isMicOn}
             color={backgroundColor}
             data-player-number={`${playerNumber ?? 'none'}`}
             data-test="indicator">
-            <Frequency>
-                <br />
-                {String(volume * 100).slice(0, 10)}
-            </Frequency>
-            <Frequency>{frequency ? `${Math.round(frequency)}Hz` : ''}</Frequency>
+            {isMicOn && (
+                <>
+                    <Frequency>
+                        <br />
+                        {String(volume * 100).slice(0, 10)}
+                    </Frequency>
+                    <Frequency>{frequency ? `${Math.round(frequency)}Hz` : ''}</Frequency>
+                </>
+            )}
             <Indicator
                 color={indicatorColor}
-                style={{ height: `${100 - Math.min(100, (volume / maxVolume) * 100)}%` }}
+                style={{ height: `${isMicOn ? 100 - Math.min(100, (volume / maxVolume) * 100) : 100}%` }}
             />
         </IndicatorContainer>
     );
@@ -50,11 +56,13 @@ const Indicator = styled.div<{ color: string }>`
     transition: 200ms;
 `;
 
-const IndicatorContainer = styled.div<{ color: string }>`
+const IndicatorContainer = styled.div<{ color: string; isMicOn: boolean }>`
     position: relative;
     border: 0.1rem solid white;
     width: 100%;
     aspect-ratio: 1 / 1;
+    opacity: ${(props) => (props.isMicOn ? 1 : 0.5)};
+    transition: 300ms;
 
     background: ${(props) => props.color};
 `;
