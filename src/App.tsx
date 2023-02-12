@@ -20,6 +20,7 @@ import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/Sett
 import Welcome from 'Scenes/Welcome/Welcome';
 import styles from 'styles';
 import { ErrorFallback } from 'Elements/ErrorFallback';
+import Toolbar from 'Toolbar/Toolbar';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
@@ -27,16 +28,9 @@ function App() {
         <>
             <Sentry.ErrorBoundary fallback={ErrorFallback}>
                 <KeyboardHelpProvider>
-                    <FullscreenButton
-                        onClick={() => {
-                            try {
-                                document.body.requestFullscreen().catch(console.info);
-                            } catch (e) {}
-                        }}>
-                        Fullscreen
-                    </FullscreenButton>
                     <Router hook={useHashLocation}>
                         <GameScreens>
+                            <Toolbar />
                             <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file!)} />}</Route>
                             <Route path="/game">{() => <Game />}</Route>
                             <Route path="/jukebox" component={Jukebox} />
@@ -62,19 +56,6 @@ function App() {
 
 const GameScreens = styled.div`
     ${styles};
-`;
-
-const FullscreenButton = styled.div`
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 1rem;
-    margin: 0 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10000;
-    font-size: 1.5rem;
 `;
 
 export default App;

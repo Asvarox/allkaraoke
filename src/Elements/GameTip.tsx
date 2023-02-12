@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { randomInt } from 'utils/randomValue';
+import { QrCode2 } from '@mui/icons-material';
 
 const data = [
     <>
@@ -48,6 +49,14 @@ const data = [
     </>,
     <>
         Add <strong>vibrato</strong> to the notes you sing to get additional <strong>bonus points</strong>
+    </>,
+    <>
+        You can control the game with your phone - click on the{' '}
+        <strong>
+            <QrCode2 />
+            QR Code Icon
+        </strong>{' '}
+        on the top right and follow the instructions
     </>,
 ];
 

@@ -101,10 +101,17 @@ const Container = styled.div`
     align-items: stretch;
     flex: 1;
     gap: 2%;
+
+    @media (max-width: 560px) {
+        flex-direction: column;
+    }
 `;
 
 const QRCode = styled.div`
     flex: 0.6;
+    @media (max-width: 560px) {
+        flex: 0;
+    }
 `;
 
 const Description = styled.div`

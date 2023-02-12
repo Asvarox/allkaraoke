@@ -7,7 +7,6 @@ import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import { ContentElement } from 'Scenes/Game/SongPage';
-import { GameTip } from 'Elements/GameTip';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
 
 interface PlayerScore {
@@ -103,23 +102,6 @@ const ScoresContainer = styled.div`
     top: 20rem;
     width: 100%;
     text-align: center;
-`;
-
-const PostGameTip = styled(GameTip)<{ active: boolean }>`
-    transition: 300ms;
-    transform: scale(${({ active }) => (active ? 1 : 0)});
-    position: absolute;
-    bottom: 20rem;
-    font-size: 3.2rem;
-    line-height: 1.25;
-    color: white;
-    //display: block;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    box-sizing: border-box;
-
-    padding: 2rem 10rem;
 `;
 
 const ScoreTextPlayer = styled(ContentElement)<{ color: string }>`
