@@ -115,6 +115,9 @@ const QRCode = styled.div`
 `;
 
 const Description = styled.div`
+    @media (max-width: 560px) {
+        display: none;
+    }
     flex: 1;
 
     display: flex;

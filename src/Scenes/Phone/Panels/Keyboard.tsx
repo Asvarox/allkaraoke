@@ -20,25 +20,29 @@ export default function PhoneKeyboard() {
     return keyboard !== undefined ? (
         <Container>
             {(isHorizontal || isVertical) && (
-                <ArrowsContainer>
-                    <ArrowButton onClick={onPress('up')} disabled={!isVertical} data-test="arrow-up">
-                        <KeyboardArrowUp />
-                    </ArrowButton>
-                    <Break />
-                    <ArrowButton onClick={onPress('left')} disabled={!isHorizontal} data-test="arrow-left">
-                        <KeyboardArrowLeft />
-                    </ArrowButton>
-                    <ArrowButton disabled>
-                        <Games />
-                    </ArrowButton>
-                    <ArrowButton onClick={onPress('right')} disabled={!isHorizontal} data-test="arrow-right">
-                        <KeyboardArrowRight />
-                    </ArrowButton>
-                    <Break />
-                    <ArrowButton onClick={onPress('down')} disabled={!isVertical} data-test="arrow-down">
-                        <KeyboardArrowDown />
-                    </ArrowButton>
-                </ArrowsContainer>
+                <ActionsContainer>
+                    <ArrowsContainer>
+                        <ArrowButton onClick={onPress('up')} disabled={!isVertical} data-test="arrow-up">
+                            <KeyboardArrowUp />
+                        </ArrowButton>
+                    </ArrowsContainer>
+                    <ArrowsContainer>
+                        <ArrowButton onClick={onPress('left')} disabled={!isHorizontal} data-test="arrow-left">
+                            <KeyboardArrowLeft />
+                        </ArrowButton>
+                        <ArrowButton disabled>
+                            <Games />
+                        </ArrowButton>
+                        <ArrowButton onClick={onPress('right')} disabled={!isHorizontal} data-test="arrow-right">
+                            <KeyboardArrowRight />
+                        </ArrowButton>
+                    </ArrowsContainer>
+                    <ArrowsContainer>
+                        <ArrowButton onClick={onPress('down')} disabled={!isVertical} data-test="arrow-down">
+                            <KeyboardArrowDown />
+                        </ArrowButton>
+                    </ArrowsContainer>
+                </ActionsContainer>
             )}
             <ActionsContainer>
                 <ActionButton
@@ -70,7 +74,6 @@ const Container = styled.div`
 const ArrowsContainer = styled.div`
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     flex: 1;
     color: white;
     font-size: 2rem;

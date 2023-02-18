@@ -107,7 +107,11 @@ const Container = styled.div`
     gap: 1rem;
     width: 34rem;
 
-    z-index: 100000;
+    z-index: 10000;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`

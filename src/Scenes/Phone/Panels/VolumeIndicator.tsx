@@ -59,8 +59,9 @@ const Indicator = styled.div<{ color: string }>`
 const IndicatorContainer = styled.div<{ color: string; isMicOn: boolean }>`
     position: relative;
     border: 0.1rem solid white;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    flex: 1;
+    min-height: 200px;
+    max-height: 100vw;
     opacity: ${(props) => (props.isMicOn ? 1 : 0.5)};
     transition: 300ms;
 

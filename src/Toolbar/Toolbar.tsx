@@ -27,7 +27,7 @@ function Toolbar() {
                     </IconButton>
                 </Tooltip>
                 <Tooltip title="Connect phone">
-                    <IconButton size="small" onClick={() => setIsModalOpen(true)}>
+                    <IconButton size="small" onClick={() => setIsModalOpen((current) => !current)}>
                         <QrCode2 fontSize="large" />
                     </IconButton>
                 </Tooltip>
