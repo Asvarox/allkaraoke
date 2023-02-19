@@ -10,6 +10,7 @@ import MicCheck from 'Scenes/SelectInput/MicCheck';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import styled from '@emotion/styled';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import isWindows from 'utils/isWindows';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -94,12 +95,13 @@ function SingStarMics(props: Props) {
                                     <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous
                                     menu.
                                 </h4>
-                                {/*{window.chrome && (*/}
-                                {/*    <h4>*/}
-                                {/*        <strong>Chrome</strong> is known for not handling SingStar mics well. If you see*/}
-                                {/*        problems, try using an alternative browser (eg. <strong>MS Edge</strong>)*/}
-                                {/*    </h4>*/}
-                                {/*)}*/}
+                                {window.chrome && isWindows() && (
+                                    <h4>
+                                        <strong>Chrome</strong> is known for not handling SingStar mics well. If you
+                                        notice any problems, try using an alternative browser (eg.{' '}
+                                        <strong>MS Edge</strong> or <strong>Firefox</strong>)
+                                    </h4>
+                                )}
                             </>
                         )}
                     </>

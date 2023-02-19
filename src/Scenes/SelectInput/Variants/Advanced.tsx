@@ -13,6 +13,7 @@ import { Mic } from '@mui/icons-material';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { useMicrophoneStatus } from 'UserMedia/hooks';
+import isWindows from 'utils/isWindows';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -89,6 +90,16 @@ function Advanced(props: Props) {
                     p1Input?.deviceId !== p2Input?.deviceId && (
                         <h3 data-test="mic-mismatch-warning">
                             Using different microphone devices is not yet supported
+                        </h3>
+                    )}
+                {p1Source === MicrophoneInputSource.inputName &&
+                    p2Source === MicrophoneInputSource.inputName &&
+                    window.chrome &&
+                    isWindows() && (
+                        <h3>
+                            <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any
+                            problems, try using an alternative browser (eg. <strong>MS Edge</strong> or{' '}
+                            <strong>Firefox</strong>)
                         </h3>
                     )}
             </UserMediaEnabled>
