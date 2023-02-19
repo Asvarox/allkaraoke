@@ -5,4 +5,6 @@ export default interface InputInterface {
     getInputLag: (deviceId?: string) => number;
     getFrequencies: (deviceId?: string) => number[];
     getVolumes: (deviceId?: string) => number[];
+
+    requestReadiness: (deviceId?: string) => Promise<boolean>;
 }

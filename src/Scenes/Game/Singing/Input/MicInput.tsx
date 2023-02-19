@@ -94,6 +94,7 @@ class MicInput extends Listener<[[number, number], [number, number]]> implements
         }
         return Math.sqrt(sum / input.length);
     }
+    public requestReadiness = () => Promise.resolve(true);
 }
 
 export default new MicInput();

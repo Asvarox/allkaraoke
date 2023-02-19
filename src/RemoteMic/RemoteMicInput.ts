@@ -7,6 +7,8 @@ class PhoneInput implements InputInterface {
     private frequencies = [0];
     private volumes = [0];
 
+    private requestReadinessPromise: null | Promise<boolean> = null;
+
     public constructor(private connection: Peer.DataConnection) {}
 
     getChannelsCount = () => 1;
@@ -16,6 +18,24 @@ class PhoneInput implements InputInterface {
 
     getInputLag = () => 200;
 
+    requestReadiness = () => {
+        if (!this.requestReadinessPromise) {
+            this.requestReadinessPromise = new Promise<boolean>((resolve) => {
+                const listener = (data: WebRTCEvents) => {
+                    if (data.type === 'confirm-readiness') {
+                        resolve(true);
+                        this.connection.off('data', listener);
+                        this.requestReadinessPromise = null;
+                    }
+                };
+
+                this.connection.on('data', listener);
+
+                sendEvent(this.connection, 'request-readiness');
+            });
+        }
+        return this.requestReadinessPromise!;
+    };
     startMonitoring = async () => {
         sendEvent(this.connection, 'start-monitor');
 

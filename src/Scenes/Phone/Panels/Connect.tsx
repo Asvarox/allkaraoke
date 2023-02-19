@@ -12,7 +12,7 @@ interface Props {
     roomId: string;
     isVisible: boolean;
     connectionStatus: Parameters<typeof events.karaokeConnectionStatusChange.dispatch>[0] | 'uninitialised';
-    onConnect: () => void;
+    onConnect: (silent: boolean) => void;
 }
 
 const usePersistedName = createPersistedState<string>('remote_mic_name');
@@ -28,7 +28,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
         try {
             process.env.NODE_ENV !== 'development' && document.body.requestFullscreen().catch(console.info);
         } catch (e) {}
-        onConnect();
+        onConnect(silent);
     };
 
     const handleConnect: FormEventHandler<HTMLFormElement> = (e) => {

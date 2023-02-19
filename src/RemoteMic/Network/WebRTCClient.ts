@@ -64,6 +64,8 @@ class WebRTCClient {
                     this.sendEvent('unregister');
                     window.sessionStorage.setItem('reload-mic-request', '1');
                     window.location.reload();
+                } else if (data.type === 'request-readiness') {
+                    events.remoteReadinessRequested.dispatch();
                 }
             });
         });
@@ -95,6 +97,10 @@ class WebRTCClient {
 
     public sendKeyStroke = (key: keyStrokes) => {
         this.sendEvent('keystroke', { key });
+    };
+
+    public confirmReadiness = () => {
+        this.sendEvent('confirm-readiness');
     };
 
     private sendEvent = <T extends WebRTCEvents>(type: T['type'], payload?: Parameters<typeof sendEvent<T>>[2]) => {

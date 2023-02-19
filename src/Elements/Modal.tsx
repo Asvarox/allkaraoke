@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { PropsWithChildren } from 'react';
 
 interface Props extends PropsWithChildren {
-    onClose: () => void;
+    onClose?: () => void;
 }
 
 export default function Modal({ children, onClose }: Props) {

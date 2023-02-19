@@ -44,6 +44,14 @@ export interface WebRTCKeyStrokeEvent {
     type: 'keystroke';
     key: keyStrokes;
 }
+export interface WebRTCRequestReadinessEvent {
+    type: 'request-readiness';
+}
+
+export interface WebRTCConfirmReadinessEvent {
+    type: 'confirm-readiness';
+}
+
 export interface WebRTCRemoteKeyboardEvent {
     type: 'keyboard-layout';
     help: HelpEntry | undefined;
@@ -58,4 +66,6 @@ export type WebRTCEvents =
     | WebRTCRemoteKeyboardEvent
     | WebRTCUnregisterEvent
     | WebRTCReloadMicEvent
+    | WebRTCRequestReadinessEvent
+    | WebRTCConfirmReadinessEvent
     | WebRTCNewFrequencyEvent;

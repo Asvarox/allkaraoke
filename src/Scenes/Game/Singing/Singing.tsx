@@ -12,6 +12,8 @@ import useViewportSize from '../../../hooks/useViewportSize';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import { typography } from 'Elements/cssMixins';
 
 interface Props {
     video: string;
@@ -37,11 +39,16 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
     }, [song.data, singSetup]);
 
     const [isTransitionTimeout, setIsTransitionTimeout] = useState(false);
+    const [areAllPlayersReady, setAreAllPlayersReady] = useState(false);
     useEffect(() => {
-        setTimeout(() => {
+        const inputsReady = InputManager.requestReadiness().then(() => setAreAllPlayersReady(true));
+        const minTimeElapsed = new Promise((resolve) => setTimeout(resolve, 3_000));
+        const maxTimeElapsed = new Promise((resolve) => setTimeout(resolve, 10_000));
+
+        Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]).then(() => {
             setIsTransitionTimeout(true);
             player.current?.play();
-        }, 3_000);
+        });
     }, []);
 
     if (!width || !height || !song.data) return <>Loading</>;
@@ -61,7 +68,16 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
             <Container>
                 <BackgroundContainer>
                     <TransitionWrapper show={!isTransitionTimeout && playerState === VideoState.UNSTARTED}>
-                        <Overlay video={video} width={width} height={height} />
+                        <>
+                            <Overlay video={video} width={width} height={height} />
+                            {!areAllPlayersReady && (
+                                <WaitingForReady>
+                                    <span>
+                                        Waiting for all players to click <strong>"Ready"</strong>
+                                    </span>
+                                </WaitingForReady>
+                            )}
+                        </>
                     </TransitionWrapper>
                 </BackgroundContainer>
                 <Player
@@ -91,6 +107,21 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
 
 const Container = styled.div`
     position: relative;
+`;
+
+const WaitingForReady = styled.div`
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    font-size: 7rem;
+    ${typography};
 `;
 
 const BackgroundContainer = styled.div`

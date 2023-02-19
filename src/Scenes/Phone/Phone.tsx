@@ -13,6 +13,7 @@ import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import PhoneKeyboard from './Panels/Keyboard';
 import MicPreview from 'Scenes/Phone/Panels/MicPreview';
 import Connect from 'Scenes/Phone/Panels/Connect';
+import ConfirmReadiness from 'Scenes/Phone/Panels/ConfirmReadiness';
 
 interface Props {
     roomId: string;
@@ -51,6 +52,10 @@ function Phone({ roomId }: Props) {
         setKeepAwake(true);
     };
 
+    const onConfirm = () => {
+        setKeepAwake(true);
+    };
+
     return (
         <>
             <NormalizeFontSize size={10} />
@@ -58,6 +63,7 @@ function Phone({ roomId }: Props) {
                 <Container>
                     <MicPreview isVisible isMicOn={monitoringStarted} />
                     <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
+                        <ConfirmReadiness onConfirm={onConfirm} />
                         <Connect
                             roomId={roomId}
                             isVisible={true}

@@ -63,32 +63,40 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await remoteMicRed.getByTestId('connect-button').click();
     await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
 
-    // Check singing a song
-    await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+    await test.step('Start singing a song', async () => {
+        await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage);
+        await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
 
-    await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json', remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+        await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json', remoteMicBluePage);
+        await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
 
-    await navigateWithKeyboard(page, 'next-step-button', remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
-    await navigateWithKeyboard(page, 'play-song-button', remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+        await navigateWithKeyboard(page, 'next-step-button', remoteMicRed);
+        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+        await navigateWithKeyboard(page, 'play-song-button', remoteMicRed);
+        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+    });
 
-    // Check if restart song is possible
-    await expect(page.getByTestId('lyrics-current-player-1')).toBeVisible({ timeout: 10_000 });
-    await expect(remoteMicBluePage.getByTestId('keyboard-enter')).not.toBeDisabled();
-    await remoteMicBluePage.getByTestId('keyboard-backspace').click({ force: true });
-    await navigateWithKeyboard(page, 'button-restart-song', remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+    await test.step('Check if restart song is possible', async () => {
+        await remoteMicBluePage.getByTestId('ready-button').click({ force: true });
+        await remoteMicRed.getByTestId('ready-button').click({ force: true });
 
-    // Check if skip intro is possible
+        // Check if restart song is possible
+        await expect(page.getByTestId('lyrics-current-player-1')).toBeVisible({ timeout: 10_000 });
+        await expect(remoteMicBluePage.getByTestId('keyboard-enter')).not.toBeDisabled();
+        await remoteMicBluePage.getByTestId('keyboard-backspace').click({ force: true });
+        await navigateWithKeyboard(page, 'button-restart-song', remoteMicRed);
+        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+    });
 
-    await expect(page.getByTestId('skip-intro-info')).toBeVisible();
-    await page.waitForTimeout(1500);
-    await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+    await test.step('Check if restart song is possible', async () => {
+        await remoteMicBluePage.getByTestId('ready-button').click({ force: true });
+        await remoteMicRed.getByTestId('ready-button').click({ force: true });
+        await expect(page.getByTestId('skip-intro-info')).toBeVisible();
+        await page.waitForTimeout(1500);
+        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
 
-    await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 15_000 });
+        await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 15_000 });
+    });
 
     test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
 

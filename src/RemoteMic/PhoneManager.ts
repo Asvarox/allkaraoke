@@ -5,6 +5,7 @@ import { Phone } from 'RemoteMic/RemoteMicInput';
 
 class PhoneManager {
     private phones: Phone[] = [];
+    private readinessRequestPromise: Promise<boolean> | null = null;
 
     public addPhone = (id: string, name: string, connection: Peer.DataConnection, silent: boolean) => {
         this.phones.push(new Phone(id, name, connection));

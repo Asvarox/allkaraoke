@@ -31,6 +31,11 @@ class RemoteMicInput implements InputInterface {
             ?.getInput()
             .stopMonitoring();
 
+    public requestReadiness = (deviceId?: string) =>
+        PhoneManager.getPhoneById(deviceId ?? '')
+            ?.getInput()
+            .requestReadiness() ?? Promise.resolve(true);
+
     public getInputLag = (deviceId?: string) =>
         PhoneManager.getPhoneById(deviceId ?? '')
             ?.getInput()

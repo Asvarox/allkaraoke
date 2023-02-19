@@ -1,5 +1,6 @@
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
@@ -21,6 +22,7 @@ const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
 
 class InputManager {
     private isMonitoring = false;
+    private requestingPromise: Promise<any> | null = null;
     private playerInputs: SelectedPlayerInput[] = storage.getValue(PLAYER_INPUTS_LOCAL_STORAGE_KEY) ?? [];
 
     constructor() {
@@ -113,6 +115,34 @@ class InputManager {
     };
 
     public monitoringStarted = () => this.isMonitoring;
+
+    public requestReadiness = async () => {
+        if (!this.requestingPromise) {
+            this.requestingPromise = new Promise((resolve) => {
+                const request = async () => {
+                    const allInputsConnected = !this.playerInputs.some(
+                        (input) => inputSourceListManager.getInputForPlayerSelected(input, false) === null,
+                    );
+
+                    if (allInputsConnected) {
+                        await Promise.all(
+                            this.playerInputs.map((playerInput) =>
+                                this.sourceNameToInput(playerInput.inputSource).requestReadiness(playerInput.deviceId),
+                            ),
+                        );
+                        gameStateEvents.inputListChanged.unsubscribe(request);
+                        this.requestingPromise = null;
+                        resolve(true);
+                    }
+                };
+
+                gameStateEvents.inputListChanged.subscribe(request);
+                request();
+            });
+        }
+
+        return this.requestingPromise;
+    };
 
     // todo: Create eg. "InputSourceManager" and have the logic there?
     private sourceNameToInput = (sourceName: InputSourceNames) => {
