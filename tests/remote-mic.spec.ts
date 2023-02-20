@@ -84,6 +84,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
         await expect(page.getByTestId('lyrics-current-player-1')).toBeVisible({ timeout: 10_000 });
         await expect(remoteMicBluePage.getByTestId('keyboard-enter')).not.toBeDisabled();
         await remoteMicBluePage.getByTestId('keyboard-backspace').click({ force: true });
+
+        await expect(page.getByTestId('button-resume-song')).toHaveAttribute('data-focused', 'true');
         await navigateWithKeyboard(page, 'button-restart-song', remoteMicRed);
         await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
     });
