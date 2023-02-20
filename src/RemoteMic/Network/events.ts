@@ -52,6 +52,11 @@ export interface WebRTCConfirmReadinessEvent {
     type: 'confirm-readiness';
 }
 
+export interface WebRTCRequestMicSelectEvent {
+    type: 'request-mic-select';
+    playerNumber: number | null;
+}
+
 export interface WebRTCRemoteKeyboardEvent {
     type: 'keyboard-layout';
     help: HelpEntry | undefined;
@@ -68,4 +73,5 @@ export type WebRTCEvents =
     | WebRTCReloadMicEvent
     | WebRTCRequestReadinessEvent
     | WebRTCConfirmReadinessEvent
+    | WebRTCRequestMicSelectEvent
     | WebRTCNewFrequencyEvent;

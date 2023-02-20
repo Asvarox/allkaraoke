@@ -17,7 +17,7 @@ export const MenuButton = styled(Button)<{ focused?: boolean }>`
 export const MenuContainer = styled.div`
     background: rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     max-width: 75rem;
     margin: 2rem auto 0 auto;

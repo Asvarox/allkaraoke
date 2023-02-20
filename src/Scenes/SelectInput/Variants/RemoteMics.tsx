@@ -34,10 +34,9 @@ function RemoteMics(props: Props) {
         // e.g. remove phoneConnected event?
         [GameStateEvents.inputListChanged, GameStateEvents.playerInputChanged],
         () => {
-            console.log('players', InputManager.getInputs());
             return InputManager.getInputs()
-                .filter((input) => input.inputSource === 'Remote Microphone')
-                .map((input) => InputSources.getInputForPlayerSelected(input));
+                .map((input) => (input.inputSource === 'Remote Microphone' ? input : null))
+                .map((input) => (input ? InputSources.getInputForPlayerSelected(input) : null));
         },
     );
 

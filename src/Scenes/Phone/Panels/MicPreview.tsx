@@ -8,9 +8,10 @@ import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 interface Props {
     isVisible: boolean;
     isMicOn: boolean;
+    isConnected: boolean;
 }
 
-function MicPreview({ isVisible, isMicOn }: Props) {
+function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
     const [volume, setVolume] = useState(0);
     const [frequency, setFrequency] = useState(0);
     const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
@@ -30,7 +31,13 @@ function MicPreview({ isVisible, isMicOn }: Props) {
 
     return isVisible ? (
         <>
-            <VolumeIndicator volume={volume} frequency={frequency} playerNumber={playerNumber} isMicOn={isMicOn} />
+            <VolumeIndicator
+                volume={volume}
+                frequency={frequency}
+                playerNumber={playerNumber}
+                isMicOn={isMicOn}
+                isConnected={isConnected}
+            />
         </>
     ) : null;
 }

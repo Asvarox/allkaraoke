@@ -33,3 +33,16 @@ events.phoneConnected.subscribe(({ id }) => {
         }
     }
 });
+
+events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
+    const currentPlayerNumber = InputManager.getRawInputs().findIndex((input) => input.deviceId === phoneId);
+
+    if (currentPlayerNumber > -1) {
+        InputManager.setPlayerInput(currentPlayerNumber, 'Dummy', 0);
+    }
+    if (newPlayerNumber !== null) {
+        InputManager.setPlayerInput(newPlayerNumber, 'Remote Microphone', 0, phoneId);
+    }
+
+    console.log(InputManager.getRawInputs());
+});

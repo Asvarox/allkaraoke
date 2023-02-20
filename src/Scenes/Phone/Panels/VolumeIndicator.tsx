@@ -1,15 +1,17 @@
 import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import PlayerChange from 'Scenes/Phone/Panels/PlayerChange';
 
 interface Props {
     volume: number;
     playerNumber: number | null;
     frequency: number | null;
     isMicOn: boolean;
+    isConnected: boolean;
 }
 
-export default function VolumeIndicator({ playerNumber, volume, frequency, isMicOn }: Props) {
+export default function VolumeIndicator({ playerNumber, volume, frequency, isMicOn, isConnected }: Props) {
     const [maxVolume, setMaxVolume] = useState(0.000001);
 
     useEffect(() => {
@@ -19,7 +21,7 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
     const backgroundColor =
         playerNumber !== null ? styles.colors.players[playerNumber].miss.stroke : styles.colors.lines.normal.fill;
     const indicatorColor =
-        playerNumber !== null ? styles.colors.players[playerNumber].perfect.fill : styles.colors.lines.normal.stroke;
+        playerNumber !== null ? styles.colors.players[playerNumber].perfect.fill : styles.colors.lines.normal.fill;
 
     return (
         <IndicatorContainer
@@ -29,13 +31,14 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
             data-test="indicator">
             {isMicOn && (
                 <>
-                    <Frequency>
+                    <Debug>
+                        {frequency ? `${Math.round(frequency)}Hz` : ' '}
                         <br />
-                        {String(volume * 100).slice(0, 10)}
-                    </Frequency>
-                    <Frequency>{frequency ? `${Math.round(frequency)}Hz` : ''}</Frequency>
+                        {String(volume * 100).slice(0, 5)}
+                    </Debug>
                 </>
             )}
+            {isConnected && <PlayerChange playerNumber={playerNumber} />}
             <Indicator
                 color={indicatorColor}
                 style={{ height: `${isMicOn ? 100 - Math.min(100, (volume / maxVolume) * 100) : 100}%` }}
@@ -44,10 +47,10 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
     );
 }
 
-const Frequency = styled.span`
+const Debug = styled.span`
     position: absolute;
     color: white;
-    opacity: 0.15;
+    opacity: 0.125;
 `;
 
 const Indicator = styled.div<{ color: string }>`
@@ -62,7 +65,6 @@ const IndicatorContainer = styled.div<{ color: string; isMicOn: boolean }>`
     flex: 1;
     min-height: 200px;
     max-height: 100vw;
-    opacity: ${(props) => (props.isMicOn ? 1 : 0.5)};
     transition: 300ms;
 
     background: ${(props) => props.color};

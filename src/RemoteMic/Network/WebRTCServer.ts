@@ -41,6 +41,8 @@ class WebRTCServer {
                     GameStateEvents.remoteKeyboardPressed.dispatch(data.key);
                 } else if (data.type === 'unregister') {
                     PhoneManager.removePhone(conn.peer, true);
+                } else if (data.type === 'request-mic-select') {
+                    GameStateEvents.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
                 }
             });
 

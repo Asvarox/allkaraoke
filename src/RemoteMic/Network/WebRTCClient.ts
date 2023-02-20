@@ -99,6 +99,10 @@ class WebRTCClient {
         this.sendEvent('keystroke', { key });
     };
 
+    public requestPlayerChange = (playerNumber: number | null) => {
+        this.sendEvent('request-mic-select', { playerNumber });
+    };
+
     public confirmReadiness = () => {
         this.sendEvent('confirm-readiness');
     };
