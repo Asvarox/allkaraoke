@@ -6,6 +6,7 @@ import GameState from '../../GameState/GameState';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 
 interface Props {
     player: number;
@@ -35,8 +36,11 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     const beatsBetweenSectionAndNote = hasNotes ? getFirstNoteStartFromSections([section]) - section.start : 0;
 
+    const playerVolume = InputManager.getPlayerVolume(player);
+
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
+            <VolumeIndicator color={playerColor} volume={playerVolume} />
             {timeToNextChange < Infinity && (
                 <PassTheMicProgress
                     color={playerColor}
@@ -116,26 +120,6 @@ const Headstart = ({ percent, color }: { percent: number; color: string }) => (
     />
 );
 
-const LyricContainer = styled.span<{ type: Note['type'] }>`
-    font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
-`;
-
-const LyricActiveContainer = styled.span`
-    position: absolute;
-    z-index: 1;
-`;
-const BaseLyricActive = styled.span``;
-
-const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number; color: string }>) => (
-    <BaseLyricActive
-        style={{
-            clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -5rem 0)`,
-            color: `rgb(${color})`,
-        }}>
-        {children}
-    </BaseLyricActive>
-);
-
 const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     @keyframes blink {
         100% {
@@ -156,14 +140,51 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     }
 
     box-sizing: border-box;
+
     padding: 1rem;
-    background-color: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.8' : '0.5')});
+    background: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.8' : '0.5')});
     width: 100%;
     text-align: center;
     line-height: 1;
     margin: 2rem 0;
+    position: relative;
     ${(props) => (props.shouldBlink ? `animation: blink 350ms ease-in-out infinite both;` : ``)}
 `;
+
+const LyricContainer = styled.span<{ type: Note['type'] }>`
+    font-style: ${(props) => (props.type === 'freestyle' ? 'italic' : 'normal')};
+`;
+
+const LyricActiveContainer = styled.span`
+    position: absolute;
+    z-index: 1;
+`;
+const BaseLyricActive = styled.span``;
+
+const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number; color: string }>) => (
+    <BaseLyricActive
+        style={{
+            clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -5rem 0)`,
+            color: `rgb(${color})`,
+        }}>
+        {children}
+    </BaseLyricActive>
+);
+
+const VolumeIndicatorBase = styled.div<{ color: string }>`
+    background: linear-gradient(270deg, rgba(${(props) => props.color}, 1) 0%, rgba(${(props) => props.color}, 0) 100%);
+    width: 20rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-repeat: repeat-y;
+    overflow: visible;
+`;
+
+const VolumeIndicator = ({ volume, ...rest }: PropsWithChildren<{ color: string; volume: number }>) => (
+    <VolumeIndicatorBase {...rest} style={{ backgroundPositionX: `${(1 - Math.min(1, volume * 15)) * 20}rem` }} />
+);
 
 const BasePassTheMicProgress = styled.div<{ color: string }>`
     position: absolute;
@@ -222,6 +243,7 @@ const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
     color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 
     font-family: 'Comic Sans MS', 'Comic Sans';
+    z-index: 10;
 `;
 
 export default Lyrics;
