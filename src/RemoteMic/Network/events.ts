@@ -1,64 +1,64 @@
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 
 export interface WebRTCRegisterEvent {
-    type: 'register';
+    t: 'register';
     id: string;
     name: string;
     silent: boolean;
 }
 
 export interface WebRTCUnregisterEvent {
-    type: 'unregister';
+    t: 'unregister';
 }
 
 export interface WebRTCStartMonitorEvent {
-    type: 'start-monitor';
+    t: 'start-monitor';
 }
 
 export interface WebRTCUnregisterEvent {
-    type: 'unregister';
+    t: 'unregister';
 }
 
 export interface WebRTCStopMonitorEvent {
-    type: 'stop-monitor';
+    t: 'stop-monitor';
 }
 
 export interface WebRTCSetPlayerNumber {
-    type: 'set-player-number';
+    t: 'set-player-number';
     playerNumber: number | null;
 }
 
 export interface WebRTCNewFrequencyEvent {
-    type: 'freq';
-    freqs: [number, number];
-    volumes: [number, number];
+    t: 'freq';
+    0: number; // frequency
+    1: number; // volume
 }
 
 export type keyStrokes = 'up' | 'down' | 'left' | 'right' | 'Enter' | 'Backspace' | 'Shift+R';
 
 export interface WebRTCReloadMicEvent {
-    type: 'reload-mic';
+    t: 'reload-mic';
 }
 
 export interface WebRTCKeyStrokeEvent {
-    type: 'keystroke';
+    t: 'keystroke';
     key: keyStrokes;
 }
 export interface WebRTCRequestReadinessEvent {
-    type: 'request-readiness';
+    t: 'request-readiness';
 }
 
 export interface WebRTCConfirmReadinessEvent {
-    type: 'confirm-readiness';
+    t: 'confirm-readiness';
 }
 
 export interface WebRTCRequestMicSelectEvent {
-    type: 'request-mic-select';
+    t: 'request-mic-select';
     playerNumber: number | null;
 }
 
 export interface WebRTCRemoteKeyboardEvent {
-    type: 'keyboard-layout';
+    t: 'keyboard-layout';
     help: HelpEntry | undefined;
 }
 

@@ -4,7 +4,7 @@ import InputInterface from './Interface';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';
 
-class PhoneMic extends Listener<[[number, number], [number, number]]> implements InputInterface {
+class PhoneMic extends Listener<[number, number]> implements InputInterface {
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
 
@@ -51,7 +51,7 @@ class PhoneMic extends Listener<[[number, number], [number, number]]> implements
 
             this.volumes = [volume, volume];
 
-            this.onUpdate(this.frequencies, this.volumes);
+            this.onUpdate(freq, volume);
         }, this.context.sampleRate / analyserCh0.fftSize);
 
         events.micMonitoringStarted.dispatch();

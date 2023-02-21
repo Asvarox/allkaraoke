@@ -22,7 +22,7 @@ class PhoneInput implements InputInterface {
         if (!this.requestReadinessPromise) {
             this.requestReadinessPromise = new Promise<boolean>((resolve) => {
                 const listener = (data: WebRTCEvents) => {
-                    if (data.type === 'confirm-readiness') {
+                    if (data.t === 'confirm-readiness') {
                         resolve(true);
                         this.connection.off('data', listener);
                         this.requestReadinessPromise = null;
@@ -49,9 +49,9 @@ class PhoneInput implements InputInterface {
     };
 
     private handleRTCData = (data: WebRTCEvents) => {
-        if (data.type === 'freq') {
-            this.frequencies = data.freqs;
-            this.volumes = data.volumes;
+        if (data.t === 'freq') {
+            this.frequencies = [data[0], data[0]];
+            this.volumes = [data[1], data[1]];
         }
     };
 }
@@ -65,6 +65,6 @@ export class Phone {
     public getInput = () => this.input;
 
     public setPlayerNumber = (playerNumber: number | null) => {
-        this.connection?.send({ type: 'set-player-number', playerNumber } as WebRTCEvents);
+        this.connection?.send({ t: 'set-player-number', playerNumber } as WebRTCEvents);
     };
 }

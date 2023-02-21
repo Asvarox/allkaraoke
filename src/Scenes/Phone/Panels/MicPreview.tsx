@@ -17,9 +17,9 @@ function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
     const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
 
     const updateVolumes = useCallback(
-        throttle((freqs: number[], volumes: number[]) => {
-            setFrequency(freqs[0]);
-            setVolume(volumes[0]);
+        throttle((freq: number, volume: number) => {
+            setFrequency(freq);
+            setVolume(volume);
         }, 150),
         [setVolume, setFrequency],
     );

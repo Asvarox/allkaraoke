@@ -32,16 +32,15 @@ class WebRTCServer {
         });
 
         this.peer.on('connection', (conn) => {
-            console.log('id', conn);
-
             conn.on('data', (data: WebRTCEvents) => {
-                if (data.type === 'register') {
+                const type = data.t;
+                if (type === 'register') {
                     PhoneManager.addPhone(data.id, data.name, conn, data.silent);
-                } else if (data.type === 'keystroke') {
+                } else if (type === 'keystroke') {
                     GameStateEvents.remoteKeyboardPressed.dispatch(data.key);
-                } else if (data.type === 'unregister') {
+                } else if (type === 'unregister') {
                     PhoneManager.removePhone(conn.peer, true);
-                } else if (data.type === 'request-mic-select') {
+                } else if (type === 'request-mic-select') {
                     GameStateEvents.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
                 }
             });

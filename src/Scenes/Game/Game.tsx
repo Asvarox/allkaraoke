@@ -39,7 +39,7 @@ function Game(props: Props) {
                 <LayoutWithBackground>
                     <SongSelection
                         onSongSelected={(setup) => {
-                            PhoneManager.broadcast({ type: 'reload-mic' });
+                            PhoneManager.broadcast({ t: 'reload-mic' });
                             setSingSetup(setup);
                         }}
                         preselectedSong={preselectedSong}

@@ -5,8 +5,17 @@ import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 import peerJSOptions from 'utils/peerJSOptions';
 import { keyStrokes, WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './sendEvent';
+import { throttle } from 'lodash-es';
 
 const MIC_ID_KEY = 'MIC_CLIENT_ID';
+
+const roundTo = (num: number, precision: number) => {
+    if (num === 0) return 0;
+
+    const multiplier = Math.pow(10, precision);
+
+    return Math.round(num * multiplier) / multiplier;
+};
 
 class WebRTCClient {
     private clientId = window.sessionStorage.getItem(MIC_ID_KEY);
@@ -14,9 +23,9 @@ class WebRTCClient {
     private connection: DataConnection | null = null;
     private reconnecting = false;
 
-    private onFrequencyUpdate = (freqs: [number, number], volumes: [number, number]) => {
-        this.sendEvent('freq', { freqs: freqs, volumes: volumes });
-    };
+    private onFrequencyUpdate = throttle((freq: number, volume: number) => {
+        this.sendEvent('freq', [roundTo(freq, 2), roundTo(volume, 4)]);
+    }, 50);
 
     private setClientId = (id: string) => {
         this.clientId = id;
@@ -47,24 +56,25 @@ class WebRTCClient {
             events.karaokeConnectionStatusChange.dispatch('connected');
 
             this.connection?.on('data', (data: WebRTCEvents) => {
+                const type = data.t;
                 console.log('data', data);
-                if (data.type === 'start-monitor') {
+                if (type === 'start-monitor') {
                     PhoneMic.addListener(this.onFrequencyUpdate);
                     // echoCancellation is turned on because without it there is silence from the mic
                     // every other second (possibly some kind of Chrome Mobile bug)
                     PhoneMic.startMonitoring(undefined, true);
-                } else if (data.type === 'stop-monitor') {
+                } else if (type === 'stop-monitor') {
                     PhoneMic.removeListener(this.onFrequencyUpdate);
                     PhoneMic.stopMonitoring();
-                } else if (data.type === 'set-player-number') {
+                } else if (type === 'set-player-number') {
                     events.remoteMicPlayerNumberSet.dispatch(data.playerNumber);
-                } else if (data.type === 'keyboard-layout') {
+                } else if (type === 'keyboard-layout') {
                     events.remoteKeyboardLayout.dispatch(data.help);
-                } else if (data.type === 'reload-mic') {
+                } else if (type === 'reload-mic') {
                     this.sendEvent('unregister');
                     window.sessionStorage.setItem('reload-mic-request', '1');
                     window.location.reload();
-                } else if (data.type === 'request-readiness') {
+                } else if (type === 'request-readiness') {
                     events.remoteReadinessRequested.dispatch();
                 }
             });
@@ -107,7 +117,7 @@ class WebRTCClient {
         this.sendEvent('confirm-readiness');
     };
 
-    private sendEvent = <T extends WebRTCEvents>(type: T['type'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
+    private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
         sendEvent(this.connection, type, payload);
     };
 }

@@ -32,14 +32,14 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
 
     useEventEffect(events.phoneConnected, ({ id }) => {
         PhoneManager.getPhoneById(id)?.connection.send({
-            type: 'keyboard-layout',
+            t: 'keyboard-layout',
             help,
         });
     });
 
     useEffect(() => {
         PhoneManager.broadcast({
-            type: 'keyboard-layout',
+            t: 'keyboard-layout',
             help,
         });
     }, [name]);
