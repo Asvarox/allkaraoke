@@ -2199,6 +2199,32 @@
     "search": "czesawniemendziwnyjesttenswiat"
   },
   {
+    "title": "Sous le vent",
+    "artist": "Céline Dion & Garou",
+    "bpm": 141,
+    "bar": 4,
+    "gap": 28592.55319148936,
+    "video": "a2_ss9y-VjE",
+    "year": "2000",
+    "lastUpdate": "2023-01-26T03:23:17.114Z",
+    "edition": "SS Pop Hits 4",
+    "genre": "Pop",
+    "language": "French",
+    "videoGap": 0,
+    "realBpm": 141,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion%20%26%20Garou&cancion=Sous%20le%20vent",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "file": "Céline Dion & Garou-Sous le vent.json",
+    "tracksCount": 1,
+    "search": "celinediongarousouslevent"
+  },
+  {
     "title": "My Heart Will Go On",
     "artist": "Céline Dion",
     "bpm": 384.59,
@@ -2550,6 +2576,56 @@
     "search": "dragonforcethroughthefireandflames"
   },
   {
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 2721.7741935483873,
+    "video": "oygrmJFKYZY",
+    "year": "2019",
+    "lastUpdate": "2023-01-27T22:00:45.606Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 124,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Don't%20Start%20Now",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Dua Lipa-Don't Start Now.json",
+    "tracksCount": 1,
+    "search": "dualipadontstartnow"
+  },
+  {
+    "title": "Physical",
+    "artist": "Dua Lipa",
+    "bpm": 294,
+    "bar": 4,
+    "gap": 34029.59183673469,
+    "video": "9HDEHj2yzew",
+    "year": "2020",
+    "lastUpdate": "2023-01-27T21:58:17.527Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 147,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Physical",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Dua Lipa-Physical.json",
+    "tracksCount": 1,
+    "search": "dualipaphysical"
+  },
+  {
     "title": "Czerwony jak cegła",
     "artist": "Dżem",
     "bpm": 219.4,
@@ -2737,6 +2813,30 @@
     "file": "Ed Sheeran-Thinking out loud.json",
     "tracksCount": 1,
     "search": "edsheeranthinkingoutloud"
+  },
+  {
+    "title": "Czterej Pancerni",
+    "artist": "Edmund Fetting",
+    "bpm": 117.5,
+    "bar": 4,
+    "gap": 5982.053097345133,
+    "video": "VFqe2HiWx9k",
+    "year": "1967",
+    "lastUpdate": "2023-01-28T20:24:44.573Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 111,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "file": "Edmund Fetting-Czterej Pancerni.json",
+    "tracksCount": 1,
+    "search": "edmundfettingczterejpancerni"
   },
   {
     "title": "Dumka na dwa serca",
@@ -3155,6 +3255,31 @@
     "search": "gandalfsaxguy10hourshd"
   },
   {
+    "title": "Seul",
+    "artist": "Garou",
+    "bpm": 318,
+    "bar": 4,
+    "gap": 10679.433962264151,
+    "video": "svuEn_HfgHw",
+    "year": "2000",
+    "lastUpdate": "2023-01-27T22:23:20.375Z",
+    "genre": "Pop",
+    "language": "French",
+    "videoGap": 1,
+    "realBpm": 106,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Garou&cancion=Seul",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Garou-Seul.json",
+    "tracksCount": 1,
+    "search": "garouseul"
+  },
+  {
     "title": "Careless Whisper",
     "artist": "George Michael",
     "bpm": 305.6,
@@ -3347,6 +3472,32 @@
     "file": "Guns N' Roses-Knocking On Heavens Door.json",
     "tracksCount": 1,
     "search": "gunsnrosesknockingonheavensdoor"
+  },
+  {
+    "title": "November Rain",
+    "artist": "Guns N’ Roses",
+    "bpm": 319.25,
+    "bar": 4,
+    "gap": 88833.31245105717,
+    "video": "8SbUC-UaAxE",
+    "year": "1991",
+    "lastUpdate": "2023-01-28T20:07:23.365Z",
+    "edition": "None",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 84,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2531",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Guns N’ Roses-November Rain.json",
+    "tracksCount": 1,
+    "search": "gunsnrosesnovemberrain"
   },
   {
     "title": "What is love",
@@ -3955,6 +4106,32 @@
     "search": "jetareyougonnabemygirl"
   },
   {
+    "title": "Ring Of Fire",
+    "artist": "Johnny Cash",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 8220.543078412391,
+    "video": "1Osyw6Svv8U",
+    "year": "1963",
+    "lastUpdate": "2023-01-27T21:01:18.375Z",
+    "edition": "SingStar Lgnds",
+    "genre": "Misc",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 105,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Ring+Of+Fire&idioma=en",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Johnny Cash-Ring Of Fire.json",
+    "tracksCount": 1,
+    "search": "johnnycashringoffire"
+  },
+  {
     "title": "Don't Stop Believing",
     "artist": "Journey",
     "bpm": 242,
@@ -4096,6 +4273,32 @@
     "file": "Kaiser Chiefs-Ruby.json",
     "tracksCount": 1,
     "search": "kaiserchiefsruby"
+  },
+  {
+    "title": "Running Up That Hill",
+    "artist": "Kate Bush",
+    "bpm": 216.54,
+    "bar": 4,
+    "gap": 25441.202272097533,
+    "video": "wp43OdtAAkM",
+    "year": "1985",
+    "lastUpdate": "2023-01-28T21:19:32.279Z",
+    "edition": "SingStar '80s",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Running+Up+That+Hill",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Kate Bush-Running Up That Hill.json",
+    "tracksCount": 1,
+    "search": "katebushrunningupthathill"
   },
   {
     "title": "Walking On Sunshine",
@@ -4486,6 +4689,30 @@
     "file": "Lady GaGa-Bad Romance.json",
     "tracksCount": 1,
     "search": "ladygagabadromance"
+  },
+  {
+    "title": "Shallow",
+    "artist": "Lady Gaga, Bradley Cooper",
+    "bpm": 367.75,
+    "bar": 4,
+    "gap": 14981.285520054385,
+    "video": "EMrwaWroMhg",
+    "year": "2018",
+    "lastUpdate": "2023-01-27T22:08:08.052Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 96,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga%2C%20Bradley%20Cooper&cancion=Shallow",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "file": "Lady Gaga, Bradley Cooper-Shallow.json",
+    "tracksCount": 1,
+    "search": "ladygagabradleycoopershallow"
   },
   {
     "title": "Poker Face",
@@ -5184,6 +5411,55 @@
     "file": "Manuel-Gas Gas Gas.json",
     "tracksCount": 1,
     "search": "manuelgasgasgas"
+  },
+  {
+    "title": "Siłacz",
+    "artist": "Marcin Rozynek",
+    "bpm": 56.5,
+    "bar": 4,
+    "gap": 23138.05309734513,
+    "video": "g4arvDxKVIo",
+    "year": "2003",
+    "lastUpdate": "2023-01-27T22:33:08.020Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 113,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "file": "Marcin Rozynek-Siłacz.json",
+    "tracksCount": 1,
+    "search": "marcinrozyneksiacz"
+  },
+  {
+    "title": "Nothing Breaks Like a Heart",
+    "artist": "Mark Ronson ft  Miley Cyrus",
+    "bpm": 228.13,
+    "bar": 4,
+    "gap": 31887.72024722746,
+    "video": "A9hcJgtnm6Q",
+    "year": "2019",
+    "lastUpdate": "2023-01-28T20:09:41.884Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 114,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Mark%20Ronson%20ft%20%20Miley%20Cyrus&cancion=Nothing%20Breaks%20Like%20a%20Heart",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Mark Ronson ft  Miley Cyrus-Nothing Breaks Like a Heart.json",
+    "tracksCount": 1,
+    "search": "markronsonftmileycyrusnothingbreakslikeaheart"
   },
   {
     "title": "Moves Like Jagger",
@@ -7134,6 +7410,31 @@
     "search": "rickymartinlivinlavidaloca"
   },
   {
+    "title": "We Found Love",
+    "artist": "Rihanna feat. Calvin Harris",
+    "bpm": 256.02,
+    "bar": 4,
+    "gap": 58798.98406374502,
+    "video": "tg00YEETFzg",
+    "year": "2011",
+    "lastUpdate": "2023-01-28T21:06:14.478Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 54,
+    "realBpm": 128,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Rihanna%20feat.%20Calvin%20Harris",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Rihanna feat. Calvin Harris-We Found Love.json",
+    "tracksCount": 1,
+    "search": "rihannafeatcalvinharriswefoundlove"
+  },
+  {
     "title": "Diamonds",
     "artist": "Rihanna",
     "bpm": 184,
@@ -7156,6 +7457,56 @@
     "file": "Rihanna-Diamonds.json",
     "tracksCount": 1,
     "search": "rihannadiamonds"
+  },
+  {
+    "title": "Love On The Brain",
+    "artist": "Rihanna",
+    "bpm": 172,
+    "bar": 4,
+    "gap": 14390.697674418605,
+    "video": "QMP-o8WXSPM",
+    "year": "2016",
+    "lastUpdate": "2023-01-28T21:00:25.478Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 172,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Love%20On%20The%20Brain",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "file": "Rihanna-Love On The Brain.json",
+    "tracksCount": 1,
+    "search": "rihannaloveonthebrain"
+  },
+  {
+    "title": "Only Girl (In The World)",
+    "artist": "Rihanna",
+    "bpm": 252.04,
+    "bar": 4,
+    "gap": 16123.255832407554,
+    "video": "pa14VNsdSYM",
+    "year": "2010",
+    "lastUpdate": "2023-01-28T20:56:12.697Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=rihanna&idioma=en",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Rihanna-Only Girl (In The World).json",
+    "tracksCount": 1,
+    "search": "rihannaonlygirlintheworld"
   },
   {
     "title": "Umbrella",
@@ -7278,6 +7629,31 @@
     "file": "Roxette-It Must Have Been Love.json",
     "tracksCount": 1,
     "search": "roxetteitmusthavebeenlove"
+  },
+  {
+    "title": "Sissy That Walk",
+    "artist": "RuPaul",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 7300,
+    "video": "M4d20Tyzlv0",
+    "year": "2014",
+    "lastUpdate": "2023-01-27T22:33:36.001Z",
+    "genre": "Unknown",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "author": "REL",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=77104",
+    "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=20467",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "RuPaul-Sissy That Walk.json",
+    "tracksCount": 1,
+    "search": "rupaulsissythatwalk"
   },
   {
     "title": "Monika dziewczyna ratownika",
@@ -9308,6 +9684,32 @@
     "search": "urszulakoniknabiegunach"
   },
   {
+    "title": "Jump",
+    "artist": "Van Halen",
+    "bpm": 392.63,
+    "bar": 4,
+    "gap": 6258.845438475137,
+    "video": "SwYN7mTi6HM",
+    "year": "1984",
+    "lastUpdate": "2023-01-27T22:13:52.054Z",
+    "edition": "Guitar Hero Van Halen",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 129,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Van%20Halen&cancion=Jump",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "Van Halen-Jump.json",
+    "tracksCount": 1,
+    "search": "vanhalenjump"
+  },
+  {
     "title": "A thousand miles",
     "artist": "Vanessa Carlton",
     "bpm": 380,
@@ -9354,6 +9756,30 @@
     "file": "Varius Manx-Orla Cien.json",
     "tracksCount": 1,
     "search": "variusmanxorlacien"
+  },
+  {
+    "title": "Piosenka Ksieżycowa",
+    "artist": "Varius Manx",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 23229.90625,
+    "video": "guJ25FxCwmY",
+    "year": "1994",
+    "lastUpdate": "2023-01-28T20:28:10.318Z",
+    "language": "Polish",
+    "videoGap": 8,
+    "realBpm": 105,
+    "author": "Pure6",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Varius Manx-Piosenka Ksieżycowa.json",
+    "tracksCount": 1,
+    "search": "variusmanxpiosenkaksiezycowa"
   },
   {
     "title": "Boom, Boom, Boom, Boom!!",
