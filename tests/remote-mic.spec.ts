@@ -1,7 +1,7 @@
-import { expect, test } from '@playwright/test';
-import { initTestMode, mockSongs } from './helpers';
-import connectRemotePhone from './steps/connectRemotePhone';
-import navigateWithKeyboard from './steps/navigateWithKeyboard';
+import { expect, test } from "@playwright/test";
+import { initTestMode, mockSongs } from "./helpers";
+import connectRemotePhone from "./steps/connectRemotePhone";
+import navigateWithKeyboard from "./steps/navigateWithKeyboard";
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -33,7 +33,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
     // Check if the phones reconnect automatically
-    await page.reload();
+    await page.reload({ force: true });
 
     await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {
         ignoreCase: true,
