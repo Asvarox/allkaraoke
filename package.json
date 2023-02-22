@@ -47,6 +47,7 @@
         "deploy": "gh-pages -d build",
         "prepare": "husky install",
         "e2e": "playwright test",
+        "e2e:prod": "PROD_RUN=true playwright test",
         "peerjs": "yarn node peerJSServer.js",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",

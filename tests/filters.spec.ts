@@ -1,6 +1,6 @@
-import { expect, test } from "@playwright/test";
-import { initTestMode, mockSongs } from "./helpers";
-import navigateWithKeyboard from "./steps/navigateWithKeyboard";
+import { expect, test } from '@playwright/test';
+import { initTestMode, mockSongs } from './helpers';
+import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -97,6 +97,4 @@ test('Filters - Quick Search', async ({ page }) => {
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('filters-search')).not.toBeVisible();
-
-    await page.getByPlaceholder('What needs to be done?').fill('Test')
 });

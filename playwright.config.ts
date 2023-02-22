@@ -7,6 +7,8 @@ import { devices } from '@playwright/test';
  */
 // require('dotenv').config();
 
+const prodRun = process.env.CI || process.env.PROD_RUN;
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -38,7 +40,7 @@ const config: PlaywrightTestConfig = {
         /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
         actionTimeout: 0,
         /* Base URL to use in actions like `await page.goto('/')`. */
-        baseURL: process.env.CI ? 'https://localhost:3010/?e2e-test' : 'https://localhost:3000/?e2e-test',
+        baseURL: prodRun ? 'https://localhost:3010/?e2e-test' : 'https://localhost:3000/?e2e-test',
 
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: 'on-first-retry',
@@ -134,17 +136,19 @@ const config: PlaywrightTestConfig = {
 
     /* Run your local dev server before starting the tests */
     webServer: [
-        process.env.CI
+        prodRun
             ? {
                   command: 'yarn build:serve',
                   port: 3010,
                   timeout: 60_000 * 3,
+                  reuseExistingServer: true,
               }
             : undefined,
         {
             command: 'yarn peerjs',
             port: 9000,
             timeout: 60_000 * 3,
+            reuseExistingServer: true,
         },
     ].filter(Boolean) as PlaywrightTestConfig['webServer'],
 };

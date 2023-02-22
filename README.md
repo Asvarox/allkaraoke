@@ -5,9 +5,8 @@
 
 ### Requirements
 
-1. Node (14+)
+1. Node (check `.nvmrc` for version)
 2. Yarn
-3. A microphone (best with SingStar ones)
 
 ### Install dependencies
 
@@ -40,17 +39,33 @@ yarn build
 ```
 
 ## Development
+By default, dummy (simulated) microphones are used. You can use whatever other mic.
 
-### Simulating microphone
+### Connecting phone mic to dev server
+You can just copy the link and open it in a new browser tab or whole new browser. If you want to connect actual phone
+to the dev server, you need to run it with `--host` flag, eg `yarn start --host` (and open the actual IP link).
 
-Instead of having to sing every time you'd like to test something, you can mock the input.
+> _Note_ that some songs won't work (YouTube will block the access), probably due to the host being an IP.
 
-Edit `src/Scenes/Game/Singing/Input/InputManager.ts` and assign `DummyInput` into the `Input` variable
-
+## E2E tests
+Running against the dev server if it's running by simply running
 ```
-const Input = DummyInput;
-const Input1 = MicInput;
+yarn e2e
 ```
+You can run specific test and specific browser, headed or with debug like so
+```
+yarn e2e --project="chromium" --headed --debug tests/filters.spec.ts
+```
+It's also possible to run the tests against prod build (same as in CI) - it makes the tests run slightly faster:
+```
+yarn e2e:prod
+```
+For that you might want to keep following command running separately to not have the app built every time tests are run:
+```
+yarn build:serve
+```
+
+## Misc docs
 
 ### Terminology:
 
