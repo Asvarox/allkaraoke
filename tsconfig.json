@@ -15,7 +15,10 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "baseUrl": "./src"
+        "baseUrl": "./src",
+        "types": [
+            "vitest/globals"
+        ]
     },
     "include": ["src"],
     "ts-node": {

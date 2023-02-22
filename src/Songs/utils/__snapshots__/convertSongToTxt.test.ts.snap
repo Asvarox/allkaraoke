@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`convertSongToTxt should properly convert the song 1`] = `
+exports[`convertSongToTxt > should properly convert the song 1`] = `
 "#ARTIST:E2ETest
 #TITLE:Multitrack
 #BPM:350
@@ -9,7 +9,7 @@ exports[`convertSongToTxt should properly convert the song 1`] = `
 #VIDEOID:mcEVAY1H5As
 #LANGUAGE:Polish
 #GAP:1000
-#TRACKNAMES:[null,"test track 2"]
+#TRACKNAMES:[null,\\"test track 2\\"]
 : 5 10 9 Second 
 * 20 10 10 Third 
 - 40

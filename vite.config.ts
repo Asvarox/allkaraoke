@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import analyze from 'rollup-plugin-visualizer';
@@ -40,5 +42,11 @@ export default defineConfig({
             key: fs.readFileSync(customCert ? keyPath : './config/crt/dummy.key'),
             cert: fs.readFileSync(customCert ? certPath : './config/crt/dummy.pem'),
         },
+    },
+    test: {
+        include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+        globals: true,
+        environment: 'happy-dom',
+        setupFiles: 'src/setupTests.ts',
     },
 });

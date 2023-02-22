@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`generatePlayerChanges should handle real life examples better 1`] = `
+exports[`generatePlayerChanges > should handle real life examples better 1`] = `
 [
   [
     73,
@@ -16,7 +16,7 @@ exports[`generatePlayerChanges should handle real life examples better 1`] = `
 ]
 `;
 
-exports[`generatePlayerChanges should handle real life examples better 2`] = `
+exports[`generatePlayerChanges > should handle real life examples better 2`] = `
 [
   [
     291,
@@ -32,7 +32,7 @@ exports[`generatePlayerChanges should handle real life examples better 2`] = `
 ]
 `;
 
-exports[`generatePlayerChanges should handle real life examples better 3`] = `
+exports[`generatePlayerChanges > should handle real life examples better 3`] = `
 [
   [
     184,
@@ -48,7 +48,7 @@ exports[`generatePlayerChanges should handle real life examples better 3`] = `
 ]
 `;
 
-exports[`generatePlayerChanges should handle real life examples better 4`] = `
+exports[`generatePlayerChanges > should handle real life examples better 4`] = `
 [
   [
     667,
@@ -64,7 +64,7 @@ exports[`generatePlayerChanges should handle real life examples better 4`] = `
 ]
 `;
 
-exports[`generatePlayerChanges should handle real life examples better 5`] = `
+exports[`generatePlayerChanges > should handle real life examples better 5`] = `
 [
   [
     586,
@@ -80,7 +80,7 @@ exports[`generatePlayerChanges should handle real life examples better 5`] = `
 ]
 `;
 
-exports[`generatePlayerChanges should handle real life examples better 6`] = `
+exports[`generatePlayerChanges > should handle real life examples better 6`] = `
 [
   [
     457,

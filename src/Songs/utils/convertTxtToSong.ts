@@ -1,4 +1,4 @@
-import { NotesSection, Section, Song } from 'interfaces';
+import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
 
 export const typesMap = {
     R: 'rap',
@@ -80,9 +80,7 @@ export default function convertTxtToSong(
         authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
         sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,
         // todo upgrade eslint and use `satisfies` instead of `as`
-        // Jest tests for some reason fail if I do this :(
-    } as Omit<Song, 'tracks' | 'artist' | 'title' | 'bar' | 'bpm' | 'gap' | 'video'>;
-    // as ExtractOptional<Song>;
+    } as ExtractOptional<Song>;
 
     if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
 
