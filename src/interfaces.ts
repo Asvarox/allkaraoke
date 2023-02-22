@@ -1,4 +1,4 @@
-import { ValuesType } from 'utility-types';
+import { ValuesType } from "utility-types";
 
 export type NoteType = 'normal' | 'star' | 'freestyle' | 'rap';
 export interface Note {
@@ -76,6 +76,8 @@ export interface SongPreview extends Omit<Song, 'tracks'> {
     tracks: Array<Pick<SongTrack, 'name'> & { start: number }>;
     search: string;
     isNew?: boolean;
+    isDeleted?: boolean;
+    local?: boolean;
 }
 
 export interface FrequencyRecord {

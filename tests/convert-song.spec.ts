@@ -1,7 +1,7 @@
-import { expect, test } from '@playwright/test';
-import { Song } from '../src/interfaces';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
-import { initTestMode, mockSongs } from './helpers';
+import { expect, test } from "@playwright/test";
+import { Song } from "../src/interfaces";
+import convertTxtToSong from "../src/Songs/utils/convertTxtToSong";
+import { initTestMode, mockSongs } from "./helpers";
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -183,6 +183,8 @@ test('Convert song', async ({ page }) => {
     expect(downloadContent.bpm).toEqual(+FINAL_BPM);
     expect(downloadContent.tracks).toHaveLength(FINAL_TRACKS);
     expect(downloadContent.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
+
+    page.on('dialog', dialog => dialog.accept());
 
     await page.locator('[data-test="delete-song"][data-song="convert-test.json"]').click();
     await expect(page.locator('[data-test="delete-song"][data-song="convert-test.json"]')).not.toBeVisible();

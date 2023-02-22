@@ -1,8 +1,8 @@
-import { Song, SongPreview } from 'interfaces';
-import localForage from 'localforage';
-import { getSongPreview } from '../../scripts/utils';
-import { lastVisit } from 'Stats/lastVisit';
-import { isAfter } from 'date-fns';
+import { Song, SongPreview } from "interfaces";
+import localForage from "localforage";
+import { getSongPreview } from "../../scripts/utils";
+import { lastVisit } from "Stats/lastVisit";
+import { isAfter } from "date-fns";
 
 const storage = localForage.createInstance({
     name: 'songs',
@@ -37,13 +37,11 @@ class SongDao {
         return includeDeleted ? this.indexWithDeletedSongs! : this.finalIndex!;
     };
 
-    private getDeletedSongsList = () => storage.getItem<string[]>(DELETED_SONGS_KEY);
+    private getDeletedSongsList = async () => {
+        const list = await storage.getItem<string[]>(DELETED_SONGS_KEY);
 
-    public getDeletedSongs = async () => {
-        const [songs, deletedNames] = await Promise.all([this.getIndex(true), this.getDeletedSongsList()]);
-
-        return songs.filter((song) => deletedNames?.includes(this.generateSongFile(song)));
-    };
+        return list ?? []
+    }
 
     public generateSongFile = (song: Song | SongPreview) => `${song?.artist}-${song?.title}.json`;
 
@@ -63,20 +61,31 @@ class SongDao {
         ].map((song) => ({
             ...song,
             isNew: song.lastUpdate ? isAfter(new Date(song.lastUpdate), lastVisitDate) : false,
+            isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
         }));
 
         this.indexWithDeletedSongs.sort((a, b) =>
             `${a.artist} ${a.title}`.localeCompare(`${b.artist} ${b.title}`.toLowerCase()),
         );
 
-        this.finalIndex = this.indexWithDeletedSongs.filter(
-            (song) => !deletedSongs?.includes(this.generateSongFile(song)),
-        );
+        this.finalIndex = this.indexWithDeletedSongs.filter((song) => !song.isDeleted);
     };
 
+    public deleteSong = async (fileName: string) => {
+        await storage.removeItem(fileName);
+
+        return this.reloadIndex();
+
+    }
+
     public softDeleteSong = async (fileName: string) => {
-        const deletedItems = (await storage.getItem<string[]>(DELETED_SONGS_KEY)) ?? [];
+        const deletedItems = await this.getDeletedSongsList();
         await storage.setItem(DELETED_SONGS_KEY, [...new Set([...deletedItems, fileName])]);
+        return this.reloadIndex();
+    };
+    public restoreSong = async (fileName: string) => {
+        const deletedItems = await this.getDeletedSongsList();
+        await storage.setItem(DELETED_SONGS_KEY, deletedItems.filter(item => item !== fileName));
         return this.reloadIndex();
     };
 
@@ -86,7 +95,7 @@ class SongDao {
 
         return allSongs
             .filter((song): song is Song => song !== null)
-            .map((song) => getSongPreview(this.generateSongFile(song), song));
+            .map((song) => getSongPreview(this.generateSongFile(song), song, true));
     };
 
     private getKeys = async () => {
