@@ -58,11 +58,9 @@ export const events = {
 
     phoneConnected: new GameStateEvent<(phone: { id: string; name: string; silent: boolean }) => void>(
         'phoneConnected',
-        true,
     ),
     phoneDisconnected: new GameStateEvent<(phone: { id: string; name: string }, silent: boolean) => void>(
         'phoneDisconnected',
-        true,
     ),
     playerInputChanged: new GameStateEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput) => void
@@ -89,7 +87,7 @@ export const events = {
         () => undefined,
     ),
 
-    remoteKeyboardPressed: new GameStateEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
+    remoteKeyboardPressed: new GameStateEvent<(key: keyStrokes) => void>('remoteKeyboardPressed', true),
     remoteKeyboardLayout: new GameStateEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
     remoteReadinessRequested: new GameStateEvent('remoteReadinessRequested'),
 };
