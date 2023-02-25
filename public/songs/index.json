@@ -20,7 +20,8 @@
     ],
     "file": "2 Plus 1-Chodz, Pomaluj Mój Swiat.json",
     "tracksCount": 1,
-    "search": "2plus1chodzpomalujmojswiat"
+    "search": "2plus1chodzpomalujmojswiat",
+    "local": false
   },
   {
     "title": "Here without you",
@@ -43,7 +44,8 @@
     ],
     "file": "3 Doors Down-Here without you.json",
     "tracksCount": 1,
-    "search": "3doorsdownherewithoutyou"
+    "search": "3doorsdownherewithoutyou",
+    "local": false
   },
   {
     "title": "Kryptonite",
@@ -68,7 +70,8 @@
     ],
     "file": "3 Doors Down-Kryptonite.json",
     "tracksCount": 1,
-    "search": "3doorsdownkryptonite"
+    "search": "3doorsdownkryptonite",
+    "local": false
   },
   {
     "title": "When I'm Gone",
@@ -93,7 +96,8 @@
     ],
     "file": "3 Doors Down-When I'm Gone.json",
     "tracksCount": 1,
-    "search": "3doorsdownwhenimgone"
+    "search": "3doorsdownwhenimgone",
+    "local": false
   },
   {
     "title": "Dancing Queen",
@@ -117,7 +121,8 @@
     ],
     "file": "ABBA-Dancing Queen.json",
     "tracksCount": 1,
-    "search": "abbadancingqueen"
+    "search": "abbadancingqueen",
+    "local": false
   },
   {
     "title": "Fernando",
@@ -141,7 +146,8 @@
     ],
     "file": "ABBA-Fernando.json",
     "tracksCount": 1,
-    "search": "abbafernando"
+    "search": "abbafernando",
+    "local": false
   },
   {
     "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
@@ -166,7 +172,8 @@
     ],
     "file": "ABBA-Gimme! Gimme! Gimme! (A Man After Midnight).json",
     "tracksCount": 1,
-    "search": "abbagimmegimmegimmeamanaftermidnight"
+    "search": "abbagimmegimmegimmeamanaftermidnight",
+    "local": false
   },
   {
     "title": "Mamma Mia",
@@ -190,7 +197,8 @@
     ],
     "file": "ABBA-Mamma Mia.json",
     "tracksCount": 1,
-    "search": "abbamammamia"
+    "search": "abbamammamia",
+    "local": false
   },
   {
     "title": "Money Money Money",
@@ -214,7 +222,8 @@
     ],
     "file": "ABBA-Money Money Money.json",
     "tracksCount": 1,
-    "search": "abbamoneymoneymoney"
+    "search": "abbamoneymoneymoney",
+    "local": false
   },
   {
     "title": "Super Trouper",
@@ -238,7 +247,8 @@
     ],
     "file": "ABBA-Super Trouper.json",
     "tracksCount": 1,
-    "search": "abbasupertrouper"
+    "search": "abbasupertrouper",
+    "local": false
   },
   {
     "title": "The Winner Takes It All",
@@ -262,7 +272,8 @@
     ],
     "file": "ABBA-The Winner Takes It All.json",
     "tracksCount": 1,
-    "search": "abbathewinnertakesitall"
+    "search": "abbathewinnertakesitall",
+    "local": false
   },
   {
     "title": "Highway To Hell",
@@ -286,7 +297,8 @@
     ],
     "file": "AC_DC-Highway To Hell.json",
     "tracksCount": 1,
-    "search": "acdchighwaytohell"
+    "search": "acdchighwaytohell",
+    "local": false
   },
   {
     "title": "Someone Like You",
@@ -310,7 +322,8 @@
     ],
     "file": "Adele-Someone Like You (Studio).json",
     "tracksCount": 1,
-    "search": "adelesomeonelikeyou"
+    "search": "adelesomeonelikeyou",
+    "local": false
   },
   {
     "title": "Crazy",
@@ -334,7 +347,8 @@
     ],
     "file": "Aerosmith-Crazy.json",
     "tracksCount": 1,
-    "search": "aerosmithcrazy"
+    "search": "aerosmithcrazy",
+    "local": false
   },
   {
     "title": "Dream on",
@@ -358,7 +372,8 @@
     ],
     "file": "Aerosmith-Dream on.json",
     "tracksCount": 1,
-    "search": "aerosmithdreamon"
+    "search": "aerosmithdreamon",
+    "local": false
   },
   {
     "title": "I don't want to miss a thing",
@@ -381,7 +396,8 @@
     ],
     "file": "Aerosmith-I don't want to miss a thing.json",
     "tracksCount": 1,
-    "search": "aerosmithidontwanttomissathing"
+    "search": "aerosmithidontwanttomissathing",
+    "local": false
   },
   {
     "title": "Sweet Emotion",
@@ -406,7 +422,8 @@
     ],
     "file": "Aerosmith-Sweet Emotion.json",
     "tracksCount": 1,
-    "search": "aerosmithsweetemotion"
+    "search": "aerosmithsweetemotion",
+    "local": false
   },
   {
     "title": "Legends Never Die",
@@ -429,7 +446,8 @@
     ],
     "file": "Against The Current-Legends Never Die.json",
     "tracksCount": 1,
-    "search": "againstthecurrentlegendsneverdie"
+    "search": "againstthecurrentlegendsneverdie",
+    "local": false
   },
   {
     "title": "Kaczka dziwaczka",
@@ -453,7 +471,8 @@
     ],
     "file": "Akademia Pana Kleksa-Kaczka dziwaczka.json",
     "tracksCount": 1,
-    "search": "akademiapanakleksakaczkadziwaczka"
+    "search": "akademiapanakleksakaczkadziwaczka",
+    "local": false
   },
   {
     "title": "Przez Twe oczy zielone",
@@ -476,7 +495,8 @@
     ],
     "file": "Akcent-Przez Twe oczy zielone.json",
     "tracksCount": 1,
-    "search": "akcentprzeztweoczyzielone"
+    "search": "akcentprzeztweoczyzielone",
+    "local": false
   },
   {
     "title": "Lubię Mówić Z Tobą",
@@ -500,7 +520,8 @@
     ],
     "file": "Akurat-Lubię Mówić Z Tobą.json",
     "tracksCount": 1,
-    "search": "akuratlubiemowicztoba"
+    "search": "akuratlubiemowicztoba",
+    "local": false
   },
   {
     "title": "Poison",
@@ -525,7 +546,8 @@
     ],
     "file": "Alice Cooper-Poison.json",
     "tracksCount": 1,
-    "search": "alicecooperpoison"
+    "search": "alicecooperpoison",
+    "local": false
   },
   {
     "title": "This Is The Life",
@@ -549,7 +571,8 @@
     ],
     "file": "Amy MacDonald-This Is The Life.json",
     "tracksCount": 1,
-    "search": "amymacdonaldthisisthelife"
+    "search": "amymacdonaldthisisthelife",
+    "local": false
   },
   {
     "title": "Valerie",
@@ -573,7 +596,8 @@
     ],
     "file": "Amy Winehouse feat. Mark Ronson-Valerie.json",
     "tracksCount": 1,
-    "search": "amywinehousefeatmarkronsonvalerie"
+    "search": "amywinehousefeatmarkronsonvalerie",
+    "local": false
   },
   {
     "title": "Back To Black",
@@ -599,7 +623,8 @@
     ],
     "file": "Amy Winehouse-Back To Black.json",
     "tracksCount": 1,
-    "search": "amywinehousebacktoblack"
+    "search": "amywinehousebacktoblack",
+    "local": false
   },
   {
     "title": "Rehab",
@@ -624,7 +649,34 @@
     ],
     "file": "Amy Winehouse-Rehab.json",
     "tracksCount": 1,
-    "search": "amywinehouserehab"
+    "search": "amywinehouserehab",
+    "local": false
+  },
+  {
+    "title": "Nigdy więcej nie tańcz ze mną",
+    "artist": "Ania Dąbrowska",
+    "bpm": 372.12,
+    "bar": 4,
+    "gap": -27.78619800064496,
+    "video": "7IfKnSVPbS8",
+    "year": "2008",
+    "lastUpdate": "2023-02-24T23:21:14.021Z",
+    "edition": "SS Polskie Hity",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 186,
+    "author": "Currymalker",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "file": "Ania-Dąbrowska-Nigdy-więcej-nie-tańcz-ze-mną.json",
+    "tracksCount": 1,
+    "search": "aniadabrowskanigdywiecejnietanczzemna",
+    "local": false
   },
   {
     "title": "Barbie Girl",
@@ -649,7 +701,8 @@
     ],
     "file": "Aqua-Barbie Girl.json",
     "tracksCount": 1,
-    "search": "aquabarbiegirl"
+    "search": "aquabarbiegirl",
+    "local": false
   },
   {
     "title": "Be Yourself",
@@ -673,7 +726,8 @@
     ],
     "file": "Audioslave-Be Yourself.json",
     "tracksCount": 1,
-    "search": "audioslavebeyourself"
+    "search": "audioslavebeyourself",
+    "local": false
   },
   {
     "title": "Cochise",
@@ -698,7 +752,8 @@
     ],
     "file": "Audioslave-Cochise.json",
     "tracksCount": 1,
-    "search": "audioslavecochise"
+    "search": "audioslavecochise",
+    "local": false
   },
   {
     "title": "Kings & Queens",
@@ -722,7 +777,8 @@
     ],
     "file": "Ava Max-Kings & Queens.json",
     "tracksCount": 1,
-    "search": "avamaxkingsqueens"
+    "search": "avamaxkingsqueens",
+    "local": false
   },
   {
     "title": "Bat Country",
@@ -747,7 +803,8 @@
     ],
     "file": "Avenged Sevenfold-Bat Country (1).json",
     "tracksCount": 1,
-    "search": "avengedsevenfoldbatcountry"
+    "search": "avengedsevenfoldbatcountry",
+    "local": false
   },
   {
     "title": "Nightmare",
@@ -772,7 +829,8 @@
     ],
     "file": "Avenged Sevenfold-Nightmare.json",
     "tracksCount": 1,
-    "search": "avengedsevenfoldnightmare"
+    "search": "avengedsevenfoldnightmare",
+    "local": false
   },
   {
     "title": "Wake Me Up",
@@ -796,7 +854,8 @@
     "lastUpdate": "2022-12-30T13:12:33.920Z",
     "file": "Avicii-Wake Me Up.json",
     "tracksCount": 1,
-    "search": "aviciiwakemeup"
+    "search": "aviciiwakemeup",
+    "local": false
   },
   {
     "title": "Complicated",
@@ -820,7 +879,8 @@
     ],
     "file": "Avril Lavigne-Complicated.json",
     "tracksCount": 1,
-    "search": "avrillavignecomplicated"
+    "search": "avrillavignecomplicated",
+    "local": false
   },
   {
     "title": "Girlfriend",
@@ -844,7 +904,8 @@
     ],
     "file": "Avril Lavigne-Girlfriend.json",
     "tracksCount": 1,
-    "search": "avrillavignegirlfriend"
+    "search": "avrillavignegirlfriend",
+    "local": false
   },
   {
     "title": "Sail",
@@ -868,7 +929,8 @@
     ],
     "file": "Awolnation-Sail.json",
     "tracksCount": 1,
-    "search": "awolnationsail"
+    "search": "awolnationsail",
+    "local": false
   },
   {
     "title": "Love Shack",
@@ -893,7 +955,8 @@
     ],
     "file": "B52s-Love Shack.json",
     "tracksCount": 1,
-    "search": "b52sloveshack"
+    "search": "b52sloveshack",
+    "local": false
   },
   {
     "title": "Czerwone korale",
@@ -916,7 +979,8 @@
     ],
     "file": "BRAThANKI-Czerwone korale.json",
     "tracksCount": 1,
-    "search": "brathankiczerwonekorale"
+    "search": "brathankiczerwonekorale",
+    "local": false
   },
   {
     "title": "W kinie, w Lublinie",
@@ -939,7 +1003,8 @@
     ],
     "file": "BRAThANKI-W kinie, w Lublinie.json",
     "tracksCount": 1,
-    "search": "brathankiwkiniewlublinie"
+    "search": "brathankiwkiniewlublinie",
+    "local": false
   },
   {
     "title": "Dynamite",
@@ -962,7 +1027,8 @@
     ],
     "file": "BTS-Dynamite.json",
     "tracksCount": 1,
-    "search": "btsdynamite"
+    "search": "btsdynamite",
+    "local": false
   },
   {
     "title": "Everybody (Backstreet's Back)",
@@ -986,7 +1052,8 @@
     ],
     "file": "Backstreet Boys-Everybody (Backstreet's Back).json",
     "tracksCount": 1,
-    "search": "backstreetboyseverybodybackstreetsback"
+    "search": "backstreetboyseverybodybackstreetsback",
+    "local": false
   },
   {
     "title": "I Want It That Way",
@@ -1009,7 +1076,8 @@
     ],
     "file": "Backstreet Boys-I Want It That Way (1).json",
     "tracksCount": 1,
-    "search": "backstreetboysiwantitthatway"
+    "search": "backstreetboysiwantitthatway",
+    "local": false
   },
   {
     "title": "Biała Armia",
@@ -1034,7 +1102,8 @@
     ],
     "file": "Bajm-Bia_a Armia.json",
     "tracksCount": 1,
-    "search": "bajmbiaaarmia"
+    "search": "bajmbiaaarmia",
+    "local": false
   },
   {
     "title": "Biała Armia",
@@ -1060,7 +1129,8 @@
     "lastUpdate": "2022-11-22T19:18:30.516Z",
     "file": "Bajm-Biała Armia.json",
     "tracksCount": 1,
-    "search": "bajmbiaaarmia"
+    "search": "bajmbiaaarmia",
+    "local": false
   },
   {
     "title": "Myśli i słowa",
@@ -1085,7 +1155,8 @@
     ],
     "file": "Bajm-Myśli i słowa.json",
     "tracksCount": 1,
-    "search": "bajmmysliisowa"
+    "search": "bajmmysliisowa",
+    "local": false
   },
   {
     "title": "DotA",
@@ -1108,7 +1179,8 @@
     ],
     "file": "Basshunter-DotA.json",
     "tracksCount": 1,
-    "search": "basshunterdota"
+    "search": "basshunterdota",
+    "local": false
   },
   {
     "title": "(You Gotta) Fight For Your Right (To Party)",
@@ -1132,7 +1204,8 @@
     ],
     "file": "Beastie Boys-(You Gotta) Fight For Your Right (To Party) (1).json",
     "tracksCount": 1,
-    "search": "beastieboysyougottafightforyourrighttoparty"
+    "search": "beastieboysyougottafightforyourrighttoparty",
+    "local": false
   },
   {
     "title": "Stayin' Alive",
@@ -1157,7 +1230,8 @@
     ],
     "file": "Bee Gees-Stayin' Alive.json",
     "tracksCount": 1,
-    "search": "beegeesstayinalive"
+    "search": "beegeesstayinalive",
+    "local": false
   },
   {
     "title": "Halo",
@@ -1181,7 +1255,8 @@
     ],
     "file": "Beyoncé-Halo.json",
     "tracksCount": 1,
-    "search": "beyoncehalo"
+    "search": "beyoncehalo",
+    "local": false
   },
   {
     "title": "Facet To Swinia",
@@ -1206,7 +1281,8 @@
     ],
     "file": "Big Cyc-Facet To Swinia.json",
     "tracksCount": 1,
-    "search": "bigcycfacettoswinia"
+    "search": "bigcycfacettoswinia",
+    "local": false
   },
   {
     "title": "Makumba",
@@ -1231,7 +1307,8 @@
     ],
     "file": "Big Cyc-Makumba.json",
     "tracksCount": 1,
-    "search": "bigcycmakumba"
+    "search": "bigcycmakumba",
+    "local": false
   },
   {
     "title": "Swiat Wedlug Kiepskich",
@@ -1254,7 +1331,8 @@
     ],
     "file": "Big Cyc-Swiat Wedlug Kiepskich.json",
     "tracksCount": 1,
-    "search": "bigcycswiatwedlugkiepskich"
+    "search": "bigcycswiatwedlugkiepskich",
+    "local": false
   },
   {
     "title": "I've Had The Time Of My Life",
@@ -1283,7 +1361,8 @@
     ],
     "file": "Bill Medley & Jennifer Warnes-I've Had The Time Of My Life [DUET].json",
     "tracksCount": 2,
-    "search": "billmedleyjenniferwarnesivehadthetimeofmylife"
+    "search": "billmedleyjenniferwarnesivehadthetimeofmylife",
+    "local": false
   },
   {
     "title": "Uptown Girl",
@@ -1308,7 +1387,8 @@
     ],
     "file": "Billy Joel-Uptown Girl.json",
     "tracksCount": 1,
-    "search": "billyjoeluptowngirl"
+    "search": "billyjoeluptowngirl",
+    "local": false
   },
   {
     "title": "Ciągnik",
@@ -1332,7 +1412,8 @@
     ],
     "file": "Blenders-Ciągnik.json",
     "tracksCount": 1,
-    "search": "blendersciagnik"
+    "search": "blendersciagnik",
+    "local": false
   },
   {
     "title": "The Tide Is High",
@@ -1357,7 +1438,8 @@
     ],
     "file": "Blondie-The Tide Is High.json",
     "tracksCount": 1,
-    "search": "blondiethetideishigh"
+    "search": "blondiethetideishigh",
+    "local": false
   },
   {
     "title": "Song 2",
@@ -1383,7 +1465,8 @@
     ],
     "file": "Blur-Song 2.json",
     "tracksCount": 1,
-    "search": "blursong2"
+    "search": "blursong2",
+    "local": false
   },
   {
     "title": "Always",
@@ -1407,7 +1490,8 @@
     ],
     "file": "Bon Jovi-Always.json",
     "tracksCount": 1,
-    "search": "bonjovialways"
+    "search": "bonjovialways",
+    "local": false
   },
   {
     "title": "Bad Medicine",
@@ -1431,7 +1515,8 @@
     ],
     "file": "Bon Jovi-Bad Medicine.json",
     "tracksCount": 1,
-    "search": "bonjovibadmedicine"
+    "search": "bonjovibadmedicine",
+    "local": false
   },
   {
     "title": "Have a nice day",
@@ -1456,7 +1541,8 @@
     ],
     "file": "Bon Jovi-Have a nice day.json",
     "tracksCount": 1,
-    "search": "bonjovihaveaniceday"
+    "search": "bonjovihaveaniceday",
+    "local": false
   },
   {
     "title": "It's my life",
@@ -1479,7 +1565,8 @@
     ],
     "file": "Bon Jovi-It's my life.json",
     "tracksCount": 1,
-    "search": "bonjoviitsmylife"
+    "search": "bonjoviitsmylife",
+    "local": false
   },
   {
     "title": "Livin' on a Prayer",
@@ -1503,7 +1590,8 @@
     ],
     "file": "Bon Jovi-Livin' on a Prayer.json",
     "tracksCount": 1,
-    "search": "bonjovilivinonaprayer"
+    "search": "bonjovilivinonaprayer",
+    "local": false
   },
   {
     "title": "Wanted dead or alive",
@@ -1528,7 +1616,8 @@
     ],
     "file": "Bon Jovi-Wanted dead or alive.json",
     "tracksCount": 1,
-    "search": "bonjoviwanteddeadoralive"
+    "search": "bonjoviwanteddeadoralive",
+    "local": false
   },
   {
     "title": "You Give Love A Bad Name",
@@ -1551,7 +1640,8 @@
     ],
     "file": "Bon Jovi-You Give Love A Bad Name.json",
     "tracksCount": 1,
-    "search": "bonjoviyougiveloveabadname"
+    "search": "bonjoviyougiveloveabadname",
+    "local": false
   },
   {
     "title": "Daddy Cool",
@@ -1574,7 +1664,8 @@
     ],
     "file": "Boney M-Daddy Cool.json",
     "tracksCount": 1,
-    "search": "boneymdaddycool"
+    "search": "boneymdaddycool",
+    "local": false
   },
   {
     "title": "Rasputin",
@@ -1597,7 +1688,8 @@
     ],
     "file": "Boney M.-Rasputin.json",
     "tracksCount": 1,
-    "search": "boneymrasputin"
+    "search": "boneymrasputin",
+    "local": false
   },
   {
     "title": "Sunny",
@@ -1621,7 +1713,8 @@
     ],
     "file": "Boney M.-Sunny.json",
     "tracksCount": 1,
-    "search": "boneymsunny"
+    "search": "boneymsunny",
+    "local": false
   },
   {
     "title": "Holding Out For A Hero",
@@ -1645,7 +1738,8 @@
     ],
     "file": "Bonnie Tyler-Holding Out For A Hero.json",
     "tracksCount": 1,
-    "search": "bonnietylerholdingoutforahero"
+    "search": "bonnietylerholdingoutforahero",
+    "local": false
   },
   {
     "title": "Kiedy byłem małym chłopcem",
@@ -1669,7 +1763,8 @@
     ],
     "file": "Breakout-Kiedy byłem małym chłopcem.json",
     "tracksCount": 1,
-    "search": "breakoutkiedybyemmaymchopcem"
+    "search": "breakoutkiedybyemmaymchopcem",
+    "local": false
   },
   {
     "title": "Baby One More Time",
@@ -1694,7 +1789,8 @@
     ],
     "file": "Britney Spears-Baby One More Time.json",
     "tracksCount": 1,
-    "search": "britneyspearsbabyonemoretime"
+    "search": "britneyspearsbabyonemoretime",
+    "local": false
   },
   {
     "title": "Oops! I did it again",
@@ -1718,7 +1814,8 @@
     ],
     "file": "Britney Spears-Oops! I did it again.json",
     "tracksCount": 1,
-    "search": "britneyspearsoopsididitagain"
+    "search": "britneyspearsoopsididitagain",
+    "local": false
   },
   {
     "title": "Toxic",
@@ -1742,7 +1839,86 @@
     ],
     "file": "Britney Spears-Toxic.json",
     "tracksCount": 1,
-    "search": "britneyspearstoxic"
+    "search": "britneyspearstoxic",
+    "local": false
+  },
+  {
+    "title": "Everytime",
+    "artist": "Britney Spears",
+    "bpm": 219.75,
+    "bar": 4,
+    "gap": 24042.109215017066,
+    "video": "8YzabSdk7ZA",
+    "year": "2003",
+    "lastUpdate": "2023-02-24T22:49:20.044Z",
+    "edition": "",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 110,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Britney+Spears",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Britney-Spears-Everytime.json",
+    "tracksCount": 1,
+    "search": "britneyspearseverytime",
+    "local": false
+  },
+  {
+    "title": "I'm Slave 4 U",
+    "artist": "Britney Spears",
+    "bpm": 440,
+    "bar": 4,
+    "gap": 1821.3636363636365,
+    "video": "Mzybwwf2HoQ",
+    "year": "2001",
+    "lastUpdate": "2023-02-24T22:36:26.568Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": -1,
+    "realBpm": 110,
+    "author": "bar_ney_ & Coppo",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Britney+Spears",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "file": "Britney-Spears-Im-Slave-4-U.json",
+    "tracksCount": 1,
+    "search": "britneyspearsimslave4u",
+    "local": false
+  },
+  {
+    "title": "Stronger",
+    "artist": "Britney Spears",
+    "bpm": 324.15,
+    "bar": 4,
+    "gap": 18651.952799629802,
+    "video": "AJWtLf4-WWs",
+    "year": "2000",
+    "lastUpdate": "2023-02-24T22:51:35.582Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Britney+Spears",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Britney-Spears-Stronger.json",
+    "tracksCount": 1,
+    "search": "britneyspearsstronger",
+    "local": false
   },
   {
     "title": "Grenade",
@@ -1765,7 +1941,8 @@
     ],
     "file": "Bruno Mars-Grenade.json",
     "tracksCount": 1,
-    "search": "brunomarsgrenade"
+    "search": "brunomarsgrenade",
+    "local": false
   },
   {
     "title": "Just The Way You Are",
@@ -1788,7 +1965,34 @@
     ],
     "file": "Bruno Mars-Just The Way You Are.json",
     "tracksCount": 1,
-    "search": "brunomarsjustthewayyouare"
+    "search": "brunomarsjustthewayyouare",
+    "local": false
+  },
+  {
+    "title": "Locked Out Of Heaven",
+    "artist": "Bruno Mars",
+    "bpm": 147,
+    "bar": 4,
+    "gap": 5754.591836734694,
+    "video": "e-fA-gBCkj0",
+    "year": "2012",
+    "lastUpdate": "2023-02-24T22:55:38.742Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 144,
+    "author": "Shabai Liu*Coppo",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "file": "Bruno-Mars-Locked-Out-Of-Heaven.json",
+    "tracksCount": 1,
+    "search": "brunomarslockedoutofheaven",
+    "local": false
   },
   {
     "title": "Piąty Bieg",
@@ -1815,7 +2019,8 @@
     ],
     "file": "Budka Suflera-Piąty Bieg [DUET].json",
     "tracksCount": 2,
-    "search": "budkasuflerapiatybieg"
+    "search": "budkasuflerapiatybieg",
+    "local": false
   },
   {
     "title": "Takie tango",
@@ -1840,7 +2045,8 @@
     ],
     "file": "Budka Suflera-Takie tango.json",
     "tracksCount": 1,
-    "search": "budkasufleratakietango"
+    "search": "budkasufleratakietango",
+    "local": false
   },
   {
     "title": "Phoenix",
@@ -1864,7 +2070,8 @@
     ],
     "file": "Cailin Russo & Chrissy Costanza-Phoenix.json",
     "tracksCount": 1,
-    "search": "cailinrussochrissycostanzaphoenix"
+    "search": "cailinrussochrissycostanzaphoenix",
+    "local": false
   },
   {
     "title": "Call Me Maybe",
@@ -1887,7 +2094,8 @@
     ],
     "file": "Carly Rae Jepsen-Call Me Maybe.json",
     "tracksCount": 1,
-    "search": "carlyraejepsencallmemaybe"
+    "search": "carlyraejepsencallmemaybe",
+    "local": false
   },
   {
     "title": "Believe",
@@ -1912,7 +2120,8 @@
     ],
     "file": "Cher-Believe.json",
     "tracksCount": 1,
-    "search": "cherbelieve"
+    "search": "cherbelieve",
+    "local": false
   },
   {
     "title": "The Shoop Shoop Song (It's in his kiss)",
@@ -1937,7 +2146,8 @@
     ],
     "file": "Cher-The Shoop Shoop Song (It's in his kiss).json",
     "tracksCount": 1,
-    "search": "chertheshoopshoopsongitsinhiskiss"
+    "search": "chertheshoopshoopsongitsinhiskiss",
+    "local": false
   },
   {
     "title": "Beautiful",
@@ -1961,7 +2171,8 @@
     ],
     "file": "Christina Aguilera-Beautiful.json",
     "tracksCount": 1,
-    "search": "christinaaguilerabeautiful"
+    "search": "christinaaguilerabeautiful",
+    "local": false
   },
   {
     "title": "A Thousand Years",
@@ -1984,7 +2195,8 @@
     ],
     "file": "Christina Perri-A Thousand Years.json",
     "tracksCount": 1,
-    "search": "christinaperriathousandyears"
+    "search": "christinaperriathousandyears",
+    "local": false
   },
   {
     "title": "You never can tell",
@@ -2008,7 +2220,8 @@
     ],
     "file": "Chuck Berry-You never can tell.json",
     "tracksCount": 1,
-    "search": "chuckberryyounevercantell"
+    "search": "chuckberryyounevercantell",
+    "local": false
   },
   {
     "title": "Clocks",
@@ -2032,7 +2245,8 @@
     ],
     "file": "Coldplay-Clocks.json",
     "tracksCount": 1,
-    "search": "coldplayclocks"
+    "search": "coldplayclocks",
+    "local": false
   },
   {
     "title": "Paradise",
@@ -2055,7 +2269,8 @@
     ],
     "file": "Coldplay-Paradise.json",
     "tracksCount": 1,
-    "search": "coldplayparadise"
+    "search": "coldplayparadise",
+    "local": false
   },
   {
     "title": "The Scientist",
@@ -2078,7 +2293,8 @@
     ],
     "file": "Coldplay-The Scientist.json",
     "tracksCount": 1,
-    "search": "coldplaythescientist"
+    "search": "coldplaythescientist",
+    "local": false
   },
   {
     "title": "Viva la vida",
@@ -2101,7 +2317,8 @@
     ],
     "file": "Coldplay-Viva la vida.json",
     "tracksCount": 1,
-    "search": "coldplayvivalavida"
+    "search": "coldplayvivalavida",
+    "local": false
   },
   {
     "title": "Yellow",
@@ -2125,7 +2342,8 @@
     ],
     "file": "Coldplay-Yellow.json",
     "tracksCount": 1,
-    "search": "coldplayyellow"
+    "search": "coldplayyellow",
+    "local": false
   },
   {
     "title": "Girls Just Wanna Have Fun",
@@ -2150,7 +2368,8 @@
     ],
     "file": "Cyndi Lauper-Girls Just Wanna Have Fun.json",
     "tracksCount": 1,
-    "search": "cyndilaupergirlsjustwannahavefun"
+    "search": "cyndilaupergirlsjustwannahavefun",
+    "local": false
   },
   {
     "title": "Pod papugami",
@@ -2173,7 +2392,8 @@
     ],
     "file": "Czeslaw Niemen-Pod papugami.json",
     "tracksCount": 1,
-    "search": "czeslawniemenpodpapugami"
+    "search": "czeslawniemenpodpapugami",
+    "local": false
   },
   {
     "title": "Dziwny jest ten świat",
@@ -2196,7 +2416,8 @@
     ],
     "file": "Czesław Niemen-Dziwny jest ten świat.json",
     "tracksCount": 1,
-    "search": "czesawniemendziwnyjesttenswiat"
+    "search": "czesawniemendziwnyjesttenswiat",
+    "local": false
   },
   {
     "title": "Sous le vent",
@@ -2222,7 +2443,8 @@
     ],
     "file": "Céline Dion & Garou-Sous le vent.json",
     "tracksCount": 1,
-    "search": "celinediongarousouslevent"
+    "search": "celinediongarousouslevent",
+    "local": false
   },
   {
     "title": "My Heart Will Go On",
@@ -2246,7 +2468,8 @@
     ],
     "file": "Céline Dion-My Heart Will Go On.json",
     "tracksCount": 1,
-    "search": "celinedionmyheartwillgoon"
+    "search": "celinedionmyheartwillgoon",
+    "local": false
   },
   {
     "title": "Get Lucky",
@@ -2271,7 +2494,8 @@
     ],
     "file": "Daft Punk-Get Lucky.json",
     "tracksCount": 1,
-    "search": "daftpunkgetlucky"
+    "search": "daftpunkgetlucky",
+    "local": false
   },
   {
     "title": "Pump it up",
@@ -2294,7 +2518,8 @@
     ],
     "file": "Danzel-Pump it up.json",
     "tracksCount": 1,
-    "search": "danzelpumpitup"
+    "search": "danzelpumpitup",
+    "local": false
   },
   {
     "title": "Deja Vu",
@@ -2317,7 +2542,8 @@
     ],
     "file": "Dave Rodgers-Deja Vu.json",
     "tracksCount": 1,
-    "search": "daverodgersdejavu"
+    "search": "daverodgersdejavu",
+    "local": false
   },
   {
     "title": "Changes",
@@ -2343,7 +2569,8 @@
     ],
     "file": "David Bowie-Changes.json",
     "tracksCount": 1,
-    "search": "davidbowiechanges"
+    "search": "davidbowiechanges",
+    "local": false
   },
   {
     "title": "Bo Jo Cie Kochom",
@@ -2367,7 +2594,8 @@
     ],
     "file": "De Press-Bo Jo Cie Kochom.json",
     "tracksCount": 1,
-    "search": "depressbojociekochom"
+    "search": "depressbojociekochom",
+    "local": false
   },
   {
     "title": "Smoke On The Water",
@@ -2393,7 +2621,8 @@
     ],
     "file": "Deep Purple-Smoke On The Water.json",
     "tracksCount": 1,
-    "search": "deeppurplesmokeonthewater"
+    "search": "deeppurplesmokeonthewater",
+    "local": false
   },
   {
     "title": "Personal Jesus",
@@ -2419,7 +2648,114 @@
     ],
     "file": "Depeche Mode-Personal Jesus.json",
     "tracksCount": 1,
-    "search": "depechemodepersonaljesus"
+    "search": "depechemodepersonaljesus",
+    "local": false
+  },
+  {
+    "title": "Enjoy The Silence",
+    "artist": "Depeche Mode",
+    "bpm": 226,
+    "bar": 4,
+    "gap": 33716.42477876106,
+    "video": "aGSKrC7dGcY",
+    "year": "1990",
+    "lastUpdate": "2023-02-25T00:30:18.641Z",
+    "edition": "SingStar Lgnds",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 113,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Depeche-Mode-Enjoy-The-Silence.json",
+    "tracksCount": 1,
+    "search": "depechemodeenjoythesilence",
+    "local": false
+  },
+  {
+    "title": "It's No Good",
+    "artist": "Depeche Mode",
+    "bpm": 198.2,
+    "bar": 4,
+    "gap": 29426.14530776993,
+    "video": "_-QPvffO1gs",
+    "year": "1997",
+    "lastUpdate": "2023-02-25T00:32:11.090Z",
+    "genre": "Synth Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 99,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Depeche-Mode-Its-No-Good.json",
+    "tracksCount": 1,
+    "search": "depechemodeitsnogood",
+    "local": false
+  },
+  {
+    "title": "Here With Me",
+    "artist": "Dido",
+    "bpm": 333,
+    "bar": 4,
+    "gap": 11519.009009009009,
+    "video": "PSu5nAQ7uZw",
+    "year": "2000",
+    "lastUpdate": "2023-02-24T22:09:36.701Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": -17,
+    "realBpm": 83,
+    "author": "alban",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?busqueda=dido&sid=f2cc9a5f771564826373ad4b16ed189c",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Dido-Here-With-Me.json",
+    "tracksCount": 1,
+    "search": "didoherewithme",
+    "local": false
+  },
+  {
+    "title": "White Flag",
+    "artist": "Dido",
+    "bpm": 170,
+    "bar": 4,
+    "gap": 10323.411764705883,
+    "video": "j-fWDrZSiZs",
+    "year": "2003",
+    "lastUpdate": "2023-02-24T22:16:48.512Z",
+    "edition": "SingStar Party English",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 170,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?busqueda=dido&sid=f2cc9a5f771564826373ad4b16ed189c",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "file": "Dido-White-Flag.json",
+    "tracksCount": 1,
+    "search": "didowhiteflag",
+    "local": false
   },
   {
     "title": "Twee Werelden",
@@ -2444,7 +2780,8 @@
     ],
     "file": "Disney Tarzan-Twee Werelden.json",
     "tracksCount": 1,
-    "search": "disneytarzantweewerelden"
+    "search": "disneytarzantweewerelden",
+    "local": false
   },
   {
     "title": "Kolorowy Wiatr",
@@ -2469,7 +2806,8 @@
     ],
     "file": "Disney’s Pocahontas (Edyta Górniak)-Kolorowy Wiatr.json",
     "tracksCount": 1,
-    "search": "disneyspocahontasedytagorniakkolorowywiatr"
+    "search": "disneyspocahontasedytagorniakkolorowywiatr",
+    "local": false
   },
   {
     "title": "Hakuna Matata",
@@ -2500,7 +2838,8 @@
     ],
     "file": "Disney’s The Lion King-Hakuna Matata.json",
     "tracksCount": 2,
-    "search": "disneysthelionkinghakunamatata"
+    "search": "disneysthelionkinghakunamatata",
+    "local": false
   },
   {
     "title": "Down with the sickness",
@@ -2525,7 +2864,8 @@
     ],
     "file": "Disturbed-Down with the sickness.json",
     "tracksCount": 1,
-    "search": "disturbeddownwiththesickness"
+    "search": "disturbeddownwiththesickness",
+    "local": false
   },
   {
     "title": "The Sound Of Silence",
@@ -2548,7 +2888,8 @@
     ],
     "file": "Disturbed-The Sound Of Silence.json",
     "tracksCount": 1,
-    "search": "disturbedthesoundofsilence"
+    "search": "disturbedthesoundofsilence",
+    "local": false
   },
   {
     "title": "Through the fire and flames",
@@ -2573,7 +2914,8 @@
     ],
     "file": "DragonForce-Through the fire and flames.json",
     "tracksCount": 1,
-    "search": "dragonforcethroughthefireandflames"
+    "search": "dragonforcethroughthefireandflames",
+    "local": false
   },
   {
     "title": "Don't Start Now",
@@ -2598,7 +2940,8 @@
     ],
     "file": "Dua Lipa-Don't Start Now.json",
     "tracksCount": 1,
-    "search": "dualipadontstartnow"
+    "search": "dualipadontstartnow",
+    "local": false
   },
   {
     "title": "Physical",
@@ -2623,7 +2966,8 @@
     ],
     "file": "Dua Lipa-Physical.json",
     "tracksCount": 1,
-    "search": "dualipaphysical"
+    "search": "dualipaphysical",
+    "local": false
   },
   {
     "title": "Czerwony jak cegła",
@@ -2647,7 +2991,8 @@
     ],
     "file": "Dżem-Czerwony jak cegła.json",
     "tracksCount": 1,
-    "search": "dzemczerwonyjakcega"
+    "search": "dzemczerwonyjakcega",
+    "local": false
   },
   {
     "title": "Wehikuł Czasu",
@@ -2670,7 +3015,8 @@
     ],
     "file": "Dżem-Wehikuł Czasu.json",
     "tracksCount": 1,
-    "search": "dzemwehikuczasu"
+    "search": "dzemwehikuczasu",
+    "local": false
   },
   {
     "title": "Ameno",
@@ -2693,7 +3039,8 @@
     ],
     "file": "ERA-Ameno.json",
     "tracksCount": 1,
-    "search": "eraameno"
+    "search": "eraameno",
+    "local": false
   },
   {
     "title": "Galway Girl",
@@ -2717,7 +3064,8 @@
     ],
     "file": "Ed Sheeran-Galway Girl.json",
     "tracksCount": 1,
-    "search": "edsheerangalwaygirl"
+    "search": "edsheerangalwaygirl",
+    "local": false
   },
   {
     "title": "I See Fire",
@@ -2741,7 +3089,8 @@
     ],
     "file": "Ed Sheeran-I See Fire.json",
     "tracksCount": 1,
-    "search": "edsheeraniseefire"
+    "search": "edsheeraniseefire",
+    "local": false
   },
   {
     "title": "Photograph",
@@ -2765,7 +3114,8 @@
     ],
     "file": "Ed Sheeran-Photograph.json",
     "tracksCount": 1,
-    "search": "edsheeranphotograph"
+    "search": "edsheeranphotograph",
+    "local": false
   },
   {
     "title": "Shape of you",
@@ -2789,7 +3139,8 @@
     ],
     "file": "Ed Sheeran-Shape of you.json",
     "tracksCount": 1,
-    "search": "edsheeranshapeofyou"
+    "search": "edsheeranshapeofyou",
+    "local": false
   },
   {
     "title": "Thinking out loud",
@@ -2812,7 +3163,34 @@
     ],
     "file": "Ed Sheeran-Thinking out loud.json",
     "tracksCount": 1,
-    "search": "edsheeranthinkingoutloud"
+    "search": "edsheeranthinkingoutloud",
+    "local": false
+  },
+  {
+    "title": "Give Me Love",
+    "artist": "Ed Sheeran",
+    "bpm": 233.2,
+    "bar": 4,
+    "gap": 19717.84048027444,
+    "video": "FOjdXSrtUxA",
+    "year": "2011",
+    "lastUpdate": "2023-02-25T01:07:39.339Z",
+    "genre": "Ballad",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 116,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Ed-Sheeran-Give-Me-Love.json",
+    "tracksCount": 1,
+    "search": "edsheerangivemelove",
+    "local": false
   },
   {
     "title": "Czterej Pancerni",
@@ -2836,7 +3214,8 @@
     ],
     "file": "Edmund Fetting-Czterej Pancerni.json",
     "tracksCount": 1,
-    "search": "edmundfettingczterejpancerni"
+    "search": "edmundfettingczterejpancerni",
+    "local": false
   },
   {
     "title": "Dumka na dwa serca",
@@ -2866,7 +3245,8 @@
     ],
     "file": "Edyta Górniak & Mietek Szcześniak-Dumka na dwa serca.json",
     "tracksCount": 2,
-    "search": "edytagorniakmietekszczesniakdumkanadwaserca"
+    "search": "edytagorniakmietekszczesniakdumkanadwaserca",
+    "local": false
   },
   {
     "title": "Co Ty Tutaj Robisz?",
@@ -2890,7 +3270,8 @@
     ],
     "file": "Elektryczne Gitary-Co Ty Tutaj Robisz_.json",
     "tracksCount": 1,
-    "search": "elektrycznegitarycotytutajrobisz"
+    "search": "elektrycznegitarycotytutajrobisz",
+    "local": false
   },
   {
     "title": "Jestem z Miasta",
@@ -2913,7 +3294,8 @@
     ],
     "file": "Elektryczne Gitary-Jestem z Miasta.json",
     "tracksCount": 1,
-    "search": "elektrycznegitaryjestemzmiasta"
+    "search": "elektrycznegitaryjestemzmiasta",
+    "local": false
   },
   {
     "title": "Koniec",
@@ -2936,7 +3318,34 @@
     ],
     "file": "Elektryczne Gitary-Koniec.json",
     "tracksCount": 1,
-    "search": "elektrycznegitarykoniec"
+    "search": "elektrycznegitarykoniec",
+    "local": false
+  },
+  {
+    "title": "I'm Still Standing",
+    "artist": "Elton John",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 10561.29411764706,
+    "video": "ZHwVBirqD2s",
+    "year": "1983",
+    "lastUpdate": "2023-02-24T23:58:06.400Z",
+    "edition": "SingStar SP English",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 89,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Elton-John-Im-Still-Standing.json",
+    "tracksCount": 1,
+    "search": "eltonjohnimstillstanding",
+    "local": false
   },
   {
     "title": "Bailamos",
@@ -2959,7 +3368,8 @@
     ],
     "file": "Enrique Iglesias-Bailamos.json",
     "tracksCount": 1,
-    "search": "enriqueiglesiasbailamos"
+    "search": "enriqueiglesiasbailamos",
+    "local": false
   },
   {
     "title": "Hero",
@@ -2984,7 +3394,8 @@
     ],
     "file": "Enrique Iglesias-Hero.json",
     "tracksCount": 1,
-    "search": "enriqueiglesiashero"
+    "search": "enriqueiglesiashero",
+    "local": false
   },
   {
     "title": "Tears in Heaven",
@@ -3007,7 +3418,8 @@
     ],
     "file": "Eric Clapton-Tears in Heaven.json",
     "tracksCount": 1,
-    "search": "ericclaptontearsinheaven"
+    "search": "ericclaptontearsinheaven",
+    "local": false
   },
   {
     "title": "Final Countdown",
@@ -3032,7 +3444,8 @@
     ],
     "file": "Europe-Final Countdown.json",
     "tracksCount": 1,
-    "search": "europefinalcountdown"
+    "search": "europefinalcountdown",
+    "local": false
   },
   {
     "title": "Bring Me to Life",
@@ -3058,7 +3471,34 @@
     ],
     "file": "Evanescence-Bring Me to Life.json",
     "tracksCount": 1,
-    "search": "evanescencebringmetolife"
+    "search": "evanescencebringmetolife",
+    "local": false
+  },
+  {
+    "title": "Zaluje",
+    "artist": "Ewelina Flinta",
+    "bpm": 328,
+    "bar": 4,
+    "gap": 5611.90243902439,
+    "video": "otSGO77yLv8",
+    "year": "2003",
+    "lastUpdate": "2023-02-24T23:25:04.584Z",
+    "edition": "SS Polskie Hity",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 164,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Ewelina-Flinta-Zaluje.json",
+    "tracksCount": 1,
+    "search": "ewelinaflintazaluje",
+    "local": false
   },
   {
     "title": "Ogórek wąsaty",
@@ -3082,7 +3522,8 @@
     ],
     "file": "Fasolki-Ogórek wąsaty.json",
     "tracksCount": 1,
-    "search": "fasolkiogorekwasaty"
+    "search": "fasolkiogorekwasaty",
+    "local": false
   },
   {
     "title": "A gdy jest już ciemno",
@@ -3106,7 +3547,8 @@
     ],
     "file": "Feel-A gdy jest już ciemno.json",
     "tracksCount": 1,
-    "search": "feelagdyjestjuzciemno"
+    "search": "feelagdyjestjuzciemno",
+    "local": false
   },
   {
     "title": "Jak Anioła Głos",
@@ -3130,7 +3572,8 @@
     ],
     "file": "Feel-Jak Anioła Głos.json",
     "tracksCount": 1,
-    "search": "feeljakanioagos"
+    "search": "feeljakanioagos",
+    "local": false
   },
   {
     "title": "Pokaż na co Cię stać",
@@ -3154,7 +3597,8 @@
     ],
     "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1,
-    "search": "feelpokaznacociestac"
+    "search": "feelpokaznacociestac",
+    "local": false
   },
   {
     "title": "Stacy's Mom",
@@ -3179,7 +3623,8 @@
     ],
     "file": "Fountains Of Wayne-Stacy's Mom.json",
     "tracksCount": 1,
-    "search": "fountainsofwaynestacysmom"
+    "search": "fountainsofwaynestacysmom",
+    "local": false
   },
   {
     "title": "King Bruce Lee Karate Mistrz",
@@ -3203,7 +3648,8 @@
     ],
     "file": "Franek Kimono-King Bruce Lee Karate Mistrz.json",
     "tracksCount": 1,
-    "search": "franekkimonokingbruceleekaratemistrz"
+    "search": "franekkimonokingbruceleekaratemistrz",
+    "local": false
   },
   {
     "title": "Take Me Out",
@@ -3229,7 +3675,8 @@
     ],
     "file": "Franz Ferdinand-Take Me Out.json",
     "tracksCount": 1,
-    "search": "franzferdinandtakemeout"
+    "search": "franzferdinandtakemeout",
+    "local": false
   },
   {
     "title": "Sax Guy 10 Hours HD",
@@ -3252,7 +3699,8 @@
     ],
     "file": "Gandalf-Sax Guy 10 Hours HD.json",
     "tracksCount": 1,
-    "search": "gandalfsaxguy10hourshd"
+    "search": "gandalfsaxguy10hourshd",
+    "local": false
   },
   {
     "title": "Seul",
@@ -3277,7 +3725,8 @@
     ],
     "file": "Garou-Seul.json",
     "tracksCount": 1,
-    "search": "garouseul"
+    "search": "garouseul",
+    "local": false
   },
   {
     "title": "Careless Whisper",
@@ -3303,7 +3752,8 @@
     ],
     "file": "George Michael-Careless Whisper.json",
     "tracksCount": 1,
-    "search": "georgemichaelcarelesswhisper"
+    "search": "georgemichaelcarelesswhisper",
+    "local": false
   },
   {
     "title": "Słodycze",
@@ -3326,7 +3776,8 @@
     ],
     "file": "Golec Orkiestra-Słodycze.json",
     "tracksCount": 1,
-    "search": "golecorkiestrasodycze"
+    "search": "golecorkiestrasodycze",
+    "local": false
   },
   {
     "title": "Iris",
@@ -3350,7 +3801,8 @@
     ],
     "file": "Goo Goo Dolls-Iris.json",
     "tracksCount": 1,
-    "search": "googoodollsiris"
+    "search": "googoodollsiris",
+    "local": false
   },
   {
     "title": "Feel Good Inc.",
@@ -3375,7 +3827,8 @@
     ],
     "file": "Gorillaz-Feel Good Inc..json",
     "tracksCount": 1,
-    "search": "gorillazfeelgoodinc"
+    "search": "gorillazfeelgoodinc",
+    "local": false
   },
   {
     "title": "Somebody That I Used To Know",
@@ -3399,7 +3852,8 @@
     ],
     "file": "Gotye & Kimbra-Somebody That I Used To Know.json",
     "tracksCount": 1,
-    "search": "gotyekimbrasomebodythatiusedtoknow"
+    "search": "gotyekimbrasomebodythatiusedtoknow",
+    "local": false
   },
   {
     "title": "You're the One that I Want",
@@ -3423,7 +3877,8 @@
     ],
     "file": "Grease (John Travolta & Olivia Newton-John)-You're the One that I Want.json",
     "tracksCount": 1,
-    "search": "greasejohntravoltaolivianewtonjohnyouretheonethatiwant"
+    "search": "greasejohntravoltaolivianewtonjohnyouretheonethatiwant",
+    "local": false
   },
   {
     "title": "Boulevard of Broken Dreams",
@@ -3447,7 +3902,8 @@
     ],
     "file": "Green Day-Boulevard of Broken Dreams.json",
     "tracksCount": 1,
-    "search": "greendayboulevardofbrokendreams"
+    "search": "greendayboulevardofbrokendreams",
+    "local": false
   },
   {
     "title": "Knocking On Heavens Door",
@@ -3471,7 +3927,8 @@
     ],
     "file": "Guns N' Roses-Knocking On Heavens Door.json",
     "tracksCount": 1,
-    "search": "gunsnrosesknockingonheavensdoor"
+    "search": "gunsnrosesknockingonheavensdoor",
+    "local": false
   },
   {
     "title": "November Rain",
@@ -3497,7 +3954,8 @@
     ],
     "file": "Guns N’ Roses-November Rain.json",
     "tracksCount": 1,
-    "search": "gunsnrosesnovemberrain"
+    "search": "gunsnrosesnovemberrain",
+    "local": false
   },
   {
     "title": "What is love",
@@ -3521,7 +3979,60 @@
     ],
     "file": "Haddaway & Jim Carrey & The Roxbury Guys-What is love.json",
     "tracksCount": 1,
-    "search": "haddawayjimcarreytheroxburyguyswhatislove"
+    "search": "haddawayjimcarreytheroxburyguyswhatislove",
+    "local": false
+  },
+  {
+    "title": "Sign of the Times",
+    "artist": "Harry Styles",
+    "bpm": 240.69,
+    "bar": 4,
+    "gap": 16001.866758070548,
+    "video": "qN4ooNx77u0",
+    "year": "2017",
+    "lastUpdate": "2023-02-24T23:39:07.244Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 120,
+    "author": "mustangfred and Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Harry-Styles-Sign-of-the-Times.json",
+    "tracksCount": 1,
+    "search": "harrystylessignofthetimes",
+    "local": false
+  },
+  {
+    "title": "Watermelon sugar",
+    "artist": "Harry Styles",
+    "bpm": 286.29,
+    "bar": 4,
+    "gap": 9495.50592057005,
+    "video": "E07s5ZYygMg",
+    "year": "2019",
+    "lastUpdate": "2023-02-24T23:41:44.930Z",
+    "genre": "Pop, funk",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 95,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Harry-Styles-Watermelon-sugar.json",
+    "tracksCount": 1,
+    "search": "harrystyleswatermelonsugar",
+    "local": false
   },
   {
     "title": "A Ty?",
@@ -3545,7 +4056,8 @@
     ],
     "file": "Hey-A Ty_.json",
     "tracksCount": 1,
-    "search": "heyaty"
+    "search": "heyaty",
+    "local": false
   },
   {
     "title": "Mimo wszystko",
@@ -3569,7 +4081,8 @@
     ],
     "file": "Hey-Mimo wszystko.json",
     "tracksCount": 1,
-    "search": "heymimowszystko"
+    "search": "heymimowszystko",
+    "local": false
   },
   {
     "title": "The Reason",
@@ -3595,7 +4108,8 @@
     ],
     "file": "Hoobastank-The Reason.json",
     "tracksCount": 1,
-    "search": "hoobastankthereason"
+    "search": "hoobastankthereason",
+    "local": false
   },
   {
     "title": "Kaine Grenzen",
@@ -3620,7 +4134,8 @@
     ],
     "file": "Ich Troje-Kaine Grenzen.json",
     "tracksCount": 1,
-    "search": "ichtrojekainegrenzen"
+    "search": "ichtrojekainegrenzen",
+    "local": false
   },
   {
     "title": "Powiedz",
@@ -3643,7 +4158,8 @@
     ],
     "file": "Ich Troje-Powiedz.json",
     "tracksCount": 1,
-    "search": "ichtrojepowiedz"
+    "search": "ichtrojepowiedz",
+    "local": false
   },
   {
     "title": "Wypijmy Za To",
@@ -3668,7 +4184,8 @@
     ],
     "file": "Ich Troje-Wypijmy Za To.json",
     "tracksCount": 1,
-    "search": "ichtrojewypijmyzato"
+    "search": "ichtrojewypijmyzato",
+    "local": false
   },
   {
     "title": "Zawsze z Tobą Chciałbym Być",
@@ -3692,7 +4209,8 @@
     ],
     "file": "Ich Troje-Zawsze z Tobą Chciałbym Być.json",
     "tracksCount": 1,
-    "search": "ichtrojezawszeztobachciabymbyc"
+    "search": "ichtrojezawszeztobachciabymbyc",
+    "local": false
   },
   {
     "artist": "Idina Menzel",
@@ -3713,7 +4231,8 @@
     ],
     "file": "Idina Menzel-Let-it-go.json",
     "tracksCount": 1,
-    "search": "idinamenzelletitgo"
+    "search": "idinamenzelletitgo",
+    "local": false
   },
   {
     "title": "Bad Liar",
@@ -3737,7 +4256,8 @@
     ],
     "file": "Imagine Dragons-Bad Liar.json",
     "tracksCount": 1,
-    "search": "imaginedragonsbadliar"
+    "search": "imaginedragonsbadliar",
+    "local": false
   },
   {
     "title": "Believer",
@@ -3762,7 +4282,8 @@
     ],
     "file": "Imagine Dragons-Believer.json",
     "tracksCount": 1,
-    "search": "imaginedragonsbeliever"
+    "search": "imaginedragonsbeliever",
+    "local": false
   },
   {
     "title": "It's Time",
@@ -3786,7 +4307,8 @@
     ],
     "file": "Imagine Dragons-It's Time.json",
     "tracksCount": 1,
-    "search": "imaginedragonsitstime"
+    "search": "imaginedragonsitstime",
+    "local": false
   },
   {
     "title": "Natural",
@@ -3810,7 +4332,8 @@
     ],
     "file": "Imagine Dragons-Natural.json",
     "tracksCount": 1,
-    "search": "imaginedragonsnatural"
+    "search": "imaginedragonsnatural",
+    "local": false
   },
   {
     "title": "Radioactive",
@@ -3834,7 +4357,8 @@
     ],
     "file": "Imagine Dragons-Radioactive.json",
     "tracksCount": 1,
-    "search": "imaginedragonsradioactive"
+    "search": "imaginedragonsradioactive",
+    "local": false
   },
   {
     "title": "Thunder",
@@ -3858,7 +4382,8 @@
     ],
     "file": "Imagine Dragons-Thunder.json",
     "tracksCount": 1,
-    "search": "imaginedragonsthunder"
+    "search": "imaginedragonsthunder",
+    "local": false
   },
   {
     "title": "Warriors",
@@ -3883,7 +4408,8 @@
     ],
     "file": "Imagine Dragons-Warriors.json",
     "tracksCount": 1,
-    "search": "imaginedragonswarriors"
+    "search": "imaginedragonswarriors",
+    "local": false
   },
   {
     "title": "Whatever It Takes",
@@ -3907,7 +4433,8 @@
     ],
     "file": "Imagine Dragons-Whatever It Takes.json",
     "tracksCount": 1,
-    "search": "imaginedragonswhateverittakes"
+    "search": "imaginedragonswhateverittakes",
+    "local": false
   },
   {
     "title": "Wrecked",
@@ -3931,7 +4458,8 @@
     ],
     "file": "Imagine Dragons-Wrecked.json",
     "tracksCount": 1,
-    "search": "imaginedragonswrecked"
+    "search": "imaginedragonswrecked",
+    "local": false
   },
   {
     "title": "J'ai Demandé A La Lune",
@@ -3956,7 +4484,8 @@
     ],
     "file": "Indochine-J'ai Demandé A La Lune.json",
     "tracksCount": 1,
-    "search": "indochinejaidemandealalune"
+    "search": "indochinejaidemandealalune",
+    "local": false
   },
   {
     "title": "Mury",
@@ -3979,7 +4508,8 @@
     ],
     "file": "Jacek Kaczmarski-Mury.json",
     "tracksCount": 1,
-    "search": "jacekkaczmarskimury"
+    "search": "jacekkaczmarskimury",
+    "local": false
   },
   {
     "title": "You're Beautiful",
@@ -4004,7 +4534,8 @@
     ],
     "file": "James Blunt-You're Beautiful.json",
     "tracksCount": 1,
-    "search": "jamesbluntyourebeautiful"
+    "search": "jamesbluntyourebeautiful",
+    "local": false
   },
   {
     "title": "Virtual Insanity",
@@ -4028,7 +4559,8 @@
     ],
     "file": "Jamiroquai-Virtual Insanity.json",
     "tracksCount": 1,
-    "search": "jamiroquaivirtualinsanity"
+    "search": "jamiroquaivirtualinsanity",
+    "local": false
   },
   {
     "title": "Koko Euro Spoko",
@@ -4052,7 +4584,8 @@
     ],
     "file": "Jarzębina-Koko Euro Spoko.json",
     "tracksCount": 1,
-    "search": "jarzebinakokoeurospoko"
+    "search": "jarzebinakokoeurospoko",
+    "local": false
   },
   {
     "title": "Jak zapomniec",
@@ -4078,7 +4611,8 @@
     ],
     "file": "Jeden Osiem L-Jak zapomniec.json",
     "tracksCount": 1,
-    "search": "jedenosiemljakzapomniec"
+    "search": "jedenosiemljakzapomniec",
+    "local": false
   },
   {
     "title": "Are You Gonna Be My Girl",
@@ -4103,7 +4637,8 @@
     ],
     "file": "Jet-Are You Gonna Be My Girl.json",
     "tracksCount": 1,
-    "search": "jetareyougonnabemygirl"
+    "search": "jetareyougonnabemygirl",
+    "local": false
   },
   {
     "title": "Ring Of Fire",
@@ -4129,7 +4664,8 @@
     ],
     "file": "Johnny Cash-Ring Of Fire.json",
     "tracksCount": 1,
-    "search": "johnnycashringoffire"
+    "search": "johnnycashringoffire",
+    "local": false
   },
   {
     "title": "Don't Stop Believing",
@@ -4153,7 +4689,8 @@
     ],
     "file": "Journey-Don't Stop Believing.json",
     "tracksCount": 1,
-    "search": "journeydontstopbelieving"
+    "search": "journeydontstopbelieving",
+    "local": false
   },
   {
     "title": "Can't stop the feeling!",
@@ -4176,7 +4713,8 @@
     ],
     "file": "Justin Timberlake-Can't stop the feeling!.json",
     "tracksCount": 1,
-    "search": "justintimberlakecantstopthefeeling"
+    "search": "justintimberlakecantstopthefeeling",
+    "local": false
   },
   {
     "title": "Cry Me A River",
@@ -4199,7 +4737,8 @@
     ],
     "file": "Justin Timberlake-Cry Me A River.json",
     "tracksCount": 1,
-    "search": "justintimberlakecrymeariver"
+    "search": "justintimberlakecrymeariver",
+    "local": false
   },
   {
     "title": "Rock Your Body",
@@ -4222,7 +4761,8 @@
     ],
     "file": "Justin Timberlake-Rock Your Body.json",
     "tracksCount": 1,
-    "search": "justintimberlakerockyourbody"
+    "search": "justintimberlakerockyourbody",
+    "local": false
   },
   {
     "title": "What Goes Around... Comes Around (Radio Edit)",
@@ -4247,7 +4787,33 @@
     ],
     "file": "Justin Timberlake-What Goes Around... Comes Around (Radio Edit).json",
     "tracksCount": 1,
-    "search": "justintimberlakewhatgoesaroundcomesaroundradioedit"
+    "search": "justintimberlakewhatgoesaroundcomesaroundradioedit",
+    "local": false
+  },
+  {
+    "title": "Zostań",
+    "artist": "KORTEZ",
+    "bpm": 260.1,
+    "bar": 4,
+    "gap": 19649.607843137255,
+    "video": "mgWGR-g9mFQ",
+    "year": "2015",
+    "lastUpdate": "2023-02-24T23:26:52.971Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 130,
+    "author": "Currymalker",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "KORTEZ-Zostań.json",
+    "tracksCount": 1,
+    "search": "kortezzostan",
+    "local": false
   },
   {
     "title": "Ruby",
@@ -4272,7 +4838,8 @@
     ],
     "file": "Kaiser Chiefs-Ruby.json",
     "tracksCount": 1,
-    "search": "kaiserchiefsruby"
+    "search": "kaiserchiefsruby",
+    "local": false
   },
   {
     "title": "Running Up That Hill",
@@ -4298,7 +4865,8 @@
     ],
     "file": "Kate Bush-Running Up That Hill.json",
     "tracksCount": 1,
-    "search": "katebushrunningupthathill"
+    "search": "katebushrunningupthathill",
+    "local": false
   },
   {
     "title": "Walking On Sunshine",
@@ -4324,7 +4892,8 @@
     ],
     "file": "Katrina And The Waves-Walking On Sunshine.json",
     "tracksCount": 1,
-    "search": "katrinaandthewaveswalkingonsunshine"
+    "search": "katrinaandthewaveswalkingonsunshine",
+    "local": false
   },
   {
     "title": "Firework",
@@ -4349,7 +4918,8 @@
     ],
     "file": "Katy Perry-Firework.json",
     "tracksCount": 1,
-    "search": "katyperryfirework"
+    "search": "katyperryfirework",
+    "local": false
   },
   {
     "title": "Hot N Cold",
@@ -4374,7 +4944,8 @@
     ],
     "file": "Katy Perry-Hot N Cold.json",
     "tracksCount": 1,
-    "search": "katyperryhotncold"
+    "search": "katyperryhotncold",
+    "local": false
   },
   {
     "title": "Śpij kochanie śpij",
@@ -4397,7 +4968,8 @@
     ],
     "file": "Kayah & Bregovic-Śpij kochanie śpij.json",
     "tracksCount": 1,
-    "search": "kayahbregovicspijkochaniespij"
+    "search": "kayahbregovicspijkochaniespij",
+    "local": false
   },
   {
     "title": "Prawy do Lewego",
@@ -4421,7 +4993,8 @@
     ],
     "file": "Kayah i Goran Bregovic-Prawy do Lewego.json",
     "tracksCount": 1,
-    "search": "kayahigoranbregovicprawydolewego"
+    "search": "kayahigoranbregovicprawydolewego",
+    "local": false
   },
   {
     "title": "Testosteron",
@@ -4445,7 +5018,34 @@
     ],
     "file": "Kayah-Testosteron.json",
     "tracksCount": 1,
-    "search": "kayahtestosteron"
+    "search": "kayahtestosteron",
+    "local": false
+  },
+  {
+    "title": "You keep me hanging on",
+    "artist": "Kim Wilde",
+    "bpm": 246.92,
+    "bar": 4,
+    "gap": 15095.025271342945,
+    "video": "xJZF-skCY-M",
+    "year": "1986",
+    "lastUpdate": "2023-02-24T22:22:42.008Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 134,
+    "author": "mustangfred, PatTwo and asb",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=You+keep+me+hanging+on",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Kim-Wilde-You-keep-me-hanging-on.json",
+    "tracksCount": 1,
+    "search": "kimwildeyoukeepmehangingon",
+    "local": false
   },
   {
     "title": "Sex On Fire",
@@ -4469,7 +5069,8 @@
     ],
     "file": "Kings Of Leon-Sex On Fire.json",
     "tracksCount": 1,
-    "search": "kingsofleonsexonfire"
+    "search": "kingsofleonsexonfire",
+    "local": false
   },
   {
     "title": "Pokolenie",
@@ -4493,7 +5094,8 @@
     ],
     "file": "Kombi-Pokolenie.json",
     "tracksCount": 1,
-    "search": "kombipokolenie"
+    "search": "kombipokolenie",
+    "local": false
   },
   {
     "title": "Bo jesteś Ty",
@@ -4519,7 +5121,8 @@
     ],
     "file": "Krzysztof Krawczyk-Bo jesteś Ty.json",
     "tracksCount": 1,
-    "search": "krzysztofkrawczykbojestesty"
+    "search": "krzysztofkrawczykbojestesty",
+    "local": false
   },
   {
     "title": "Zatańczysz ze Mną Jeszcze Raz",
@@ -4543,7 +5146,8 @@
     ],
     "file": "Krzysztof Krawczyk-Zatańczysz ze Mną Jeszcze Raz.json",
     "tracksCount": 1,
-    "search": "krzysztofkrawczykzatanczyszzemnajeszczeraz"
+    "search": "krzysztofkrawczykzatanczyszzemnajeszczeraz",
+    "local": false
   },
   {
     "title": "Tabaluga",
@@ -4567,7 +5171,8 @@
     ],
     "file": "Krzysztof Mielańczuk-Tabaluga.json",
     "tracksCount": 1,
-    "search": "krzysztofmielanczuktabaluga"
+    "search": "krzysztofmielanczuktabaluga",
+    "local": false
   },
   {
     "title": "Baranek",
@@ -4591,7 +5196,8 @@
     ],
     "file": "Kult-Baranek.json",
     "tracksCount": 1,
-    "search": "kultbaranek"
+    "search": "kultbaranek",
+    "local": false
   },
   {
     "title": "In Your Eyes",
@@ -4616,7 +5222,58 @@
     ],
     "file": "Kylie Minogue-In Your Eyes.json",
     "tracksCount": 1,
-    "search": "kylieminogueinyoureyes"
+    "search": "kylieminogueinyoureyes",
+    "local": false
+  },
+  {
+    "title": "Can't Get You Out Of My Head",
+    "artist": "Kylie Minogue",
+    "bpm": 251.98,
+    "bar": 4,
+    "gap": 15229.014921819193,
+    "video": "c18441Eh_WE",
+    "year": "2001",
+    "lastUpdate": "2023-02-24T23:06:01.892Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "author": "upalula",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Kylie-Minogue-Cant-Get-You-Out-Of-My-Head.json",
+    "tracksCount": 1,
+    "search": "kylieminoguecantgetyououtofmyhead",
+    "local": false
+  },
+  {
+    "title": "The Loco-Motion",
+    "artist": "Kylie Minogue",
+    "bpm": 258,
+    "bar": 4,
+    "gap": 14731.627906976744,
+    "video": "POWsFzSFLCE",
+    "year": "1988",
+    "lastUpdate": "2023-02-24T23:08:56.910Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 138,
+    "author": "ConejoF1",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Kylie-Minogue-The-Loco-Motion.json",
+    "tracksCount": 1,
+    "search": "kylieminoguethelocomotion",
+    "local": false
   },
   {
     "title": "Party Rock Anthem",
@@ -4640,7 +5297,8 @@
     ],
     "file": "LMFAO, Lauren Bennett & Goon Rock-Party Rock Anthem.json",
     "tracksCount": 1,
-    "search": "lmfaolaurenbennettgoonrockpartyrockanthem"
+    "search": "lmfaolaurenbennettgoonrockpartyrockanthem",
+    "local": false
   },
   {
     "title": "Just Dance",
@@ -4664,7 +5322,8 @@
     ],
     "file": "Lady GaGa feat. Colby O'Donis-Just Dance.json",
     "tracksCount": 1,
-    "search": "ladygagafeatcolbyodonisjustdance"
+    "search": "ladygagafeatcolbyodonisjustdance",
+    "local": false
   },
   {
     "title": "Bad Romance",
@@ -4688,7 +5347,8 @@
     ],
     "file": "Lady GaGa-Bad Romance.json",
     "tracksCount": 1,
-    "search": "ladygagabadromance"
+    "search": "ladygagabadromance",
+    "local": false
   },
   {
     "title": "Shallow",
@@ -4712,7 +5372,8 @@
     ],
     "file": "Lady Gaga, Bradley Cooper-Shallow.json",
     "tracksCount": 1,
-    "search": "ladygagabradleycoopershallow"
+    "search": "ladygagabradleycoopershallow",
+    "local": false
   },
   {
     "title": "Poker Face",
@@ -4738,7 +5399,8 @@
     ],
     "file": "Lady Gaga-Poker Face.json",
     "tracksCount": 1,
-    "search": "ladygagapokerface"
+    "search": "ladygagapokerface",
+    "local": false
   },
   {
     "title": "Mniej niż zero",
@@ -4760,7 +5422,8 @@
     ],
     "file": "Lady Pank-Mniej niż zero.json",
     "tracksCount": 1,
-    "search": "ladypankmniejnizzero"
+    "search": "ladypankmniejnizzero",
+    "local": false
   },
   {
     "title": "Na co komu dziś",
@@ -4782,7 +5445,8 @@
     ],
     "file": "Lady Pank-Na co komu dziś.json",
     "tracksCount": 1,
-    "search": "ladypanknacokomudzis"
+    "search": "ladypanknacokomudzis",
+    "local": false
   },
   {
     "title": "Zawsze tam gdzie Ty",
@@ -4806,7 +5470,8 @@
     ],
     "file": "Lady Pank-Zawsze tam gdzie Ty.json",
     "tracksCount": 1,
-    "search": "ladypankzawszetamgdziety"
+    "search": "ladypankzawszetamgdziety",
+    "local": false
   },
   {
     "title": "Zostawcie Titanica",
@@ -4828,7 +5493,111 @@
     ],
     "file": "Lady Pank-Zostawcie Titanica.json",
     "tracksCount": 1,
-    "search": "ladypankzostawcietitanica"
+    "search": "ladypankzostawcietitanica",
+    "local": false
+  },
+  {
+    "title": "The Edge Of Glory",
+    "artist": "Lady GaGa",
+    "bpm": 256.02,
+    "bar": 4,
+    "gap": 19035.98406374502,
+    "video": "QeWBS0JBNzQ",
+    "year": "2011",
+    "lastUpdate": "2023-02-25T01:02:11.386Z",
+    "genre": "Dance Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 128,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Lady-GaGa-The-Edge-Of-Glory.json",
+    "tracksCount": 1,
+    "search": "ladygagatheedgeofglory",
+    "local": false
+  },
+  {
+    "title": "Yoź And I",
+    "artist": "Lady GaGa",
+    "bpm": 254.03,
+    "bar": 4,
+    "gap": 58709.18155335984,
+    "video": "X9YMU0WeBwU",
+    "year": "2011",
+    "lastUpdate": "2023-02-25T01:03:59.073Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 127,
+    "author": "Silverbeam *vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Lady-GaGa-Yoź-And-I.json",
+    "tracksCount": 1,
+    "search": "ladygagayozandi",
+    "local": false
+  },
+  {
+    "title": "Blue Jeans",
+    "artist": "Lana Del Rey",
+    "bpm": 235.92,
+    "bar": 4,
+    "gap": 40312.70600203459,
+    "video": "JRWox-i6aAk",
+    "year": "2012",
+    "lastUpdate": "2023-02-24T22:29:16.735Z",
+    "genre": "Alternative",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 118,
+    "author": "Daminou*Coppo",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Lana-Del-Rey-Blue-Jeans.json",
+    "tracksCount": 1,
+    "search": "lanadelreybluejeans",
+    "local": false
+  },
+  {
+    "title": "Summertime Sadness",
+    "artist": "Lana Del Rey",
+    "bpm": 224.06,
+    "bar": 4,
+    "gap": 33583.80469517093,
+    "video": "nVjsGKrE6E8",
+    "year": "2012",
+    "lastUpdate": "2023-02-24T22:27:22.036Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 112,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Lana-Del-Rey-Summertime-Sadness.json",
+    "tracksCount": 1,
+    "search": "lanadelreysummertimesadness",
+    "local": false
   },
   {
     "title": "We are number one",
@@ -4852,7 +5621,8 @@
     ],
     "file": "LazyTown-We are number one.json",
     "tracksCount": 1,
-    "search": "lazytownwearenumberone"
+    "search": "lazytownwearenumberone",
+    "local": false
   },
   {
     "title": "Pomidorowa",
@@ -4875,7 +5645,8 @@
     ],
     "file": "Letni, Chamski Podryw-Pomidorowa.json",
     "tracksCount": 1,
-    "search": "letnichamskipodrywpomidorowa"
+    "search": "letnichamskipodrywpomidorowa",
+    "local": false
   },
   {
     "title": "Bleed It Out",
@@ -4900,7 +5671,8 @@
     ],
     "file": "Linkin Park-Bleed It Out.json",
     "tracksCount": 1,
-    "search": "linkinparkbleeditout"
+    "search": "linkinparkbleeditout",
+    "local": false
   },
   {
     "title": "Breaking the Habit",
@@ -4923,7 +5695,8 @@
     ],
     "file": "Linkin Park-Breaking the Habit.json",
     "tracksCount": 1,
-    "search": "linkinparkbreakingthehabit"
+    "search": "linkinparkbreakingthehabit",
+    "local": false
   },
   {
     "title": "Castle of glass",
@@ -4948,7 +5721,8 @@
     ],
     "file": "Linkin Park-Castle of glass.json",
     "tracksCount": 1,
-    "search": "linkinparkcastleofglass"
+    "search": "linkinparkcastleofglass",
+    "local": false
   },
   {
     "title": "Crawling",
@@ -4971,7 +5745,8 @@
     ],
     "file": "Linkin Park-Crawling.json",
     "tracksCount": 1,
-    "search": "linkinparkcrawling"
+    "search": "linkinparkcrawling",
+    "local": false
   },
   {
     "title": "Faint",
@@ -4995,7 +5770,8 @@
     ],
     "file": "Linkin Park-Faint.json",
     "tracksCount": 1,
-    "search": "linkinparkfaint"
+    "search": "linkinparkfaint",
+    "local": false
   },
   {
     "title": "In The End",
@@ -5019,7 +5795,8 @@
     ],
     "file": "Linkin Park-In The End.json",
     "tracksCount": 1,
-    "search": "linkinparkintheend"
+    "search": "linkinparkintheend",
+    "local": false
   },
   {
     "title": "Numb",
@@ -5043,7 +5820,8 @@
     ],
     "file": "Linkin Park-Numb.json",
     "tracksCount": 1,
-    "search": "linkinparknumb"
+    "search": "linkinparknumb",
+    "local": false
   },
   {
     "title": "Waiting for the end",
@@ -5068,7 +5846,8 @@
     ],
     "file": "Linkin Park-Waiting for the end.json",
     "tracksCount": 1,
-    "search": "linkinparkwaitingfortheend"
+    "search": "linkinparkwaitingfortheend",
+    "local": false
   },
   {
     "title": "What I've done",
@@ -5091,7 +5870,8 @@
     ],
     "file": "Linkin Park-What I've done.json",
     "tracksCount": 1,
-    "search": "linkinparkwhativedone"
+    "search": "linkinparkwhativedone",
+    "local": false
   },
   {
     "title": "Ciągle Pada",
@@ -5118,7 +5898,8 @@
     ],
     "file": "Lizar-Ciągle Pada.json",
     "tracksCount": 2,
-    "search": "lizarciaglepada"
+    "search": "lizarciaglepada",
+    "local": false
   },
   {
     "title": "Juice",
@@ -5143,7 +5924,8 @@
     ],
     "file": "Lizzo-Juice.json",
     "tracksCount": 1,
-    "search": "lizzojuice"
+    "search": "lizzojuice",
+    "local": false
   },
   {
     "title": "Hard Rock Hallelujah",
@@ -5168,7 +5950,8 @@
     ],
     "file": "Lordi-Hard Rock Hallelujah.json",
     "tracksCount": 1,
-    "search": "lordihardrockhallelujah"
+    "search": "lordihardrockhallelujah",
+    "local": false
   },
   {
     "title": "Agnieszka",
@@ -5192,7 +5975,8 @@
     ],
     "file": "Lzy-Agnieszka.json",
     "tracksCount": 1,
-    "search": "lzyagnieszka"
+    "search": "lzyagnieszka",
+    "local": false
   },
   {
     "title": "Oczy szeroko zamkniete",
@@ -5217,7 +6001,8 @@
     ],
     "file": "Lzy-Oczy szeroko zamkniete.json",
     "tracksCount": 1,
-    "search": "lzyoczyszerokozamkniete"
+    "search": "lzyoczyszerokozamkniete",
+    "local": false
   },
   {
     "title": "Zrobię mężczyzn z was",
@@ -5241,7 +6026,8 @@
     ],
     "file": "Maciej Molęda-Zrobię mężczyzn z was.json",
     "tracksCount": 1,
-    "search": "maciejmoledazrobiemezczyznzwas"
+    "search": "maciejmoledazrobiemezczyznzwas",
+    "local": false
   },
   {
     "title": "Wyginam śmiało ciało",
@@ -5264,7 +6050,60 @@
     ],
     "file": "Madagaskar-Wyginam śmiało ciało.json",
     "tracksCount": 1,
-    "search": "madagaskarwyginamsmiaociao"
+    "search": "madagaskarwyginamsmiaociao",
+    "local": false
+  },
+  {
+    "title": "Die Another Day",
+    "artist": "Madonna",
+    "bpm": 248.04,
+    "bar": 4,
+    "gap": 15111.940009675858,
+    "video": "VlbaJA7aO9M",
+    "year": "2002",
+    "lastUpdate": "2023-02-25T00:05:56.442Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 124,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Madonna-Die-Another-Day.json",
+    "tracksCount": 1,
+    "search": "madonnadieanotherday",
+    "local": false
+  },
+  {
+    "title": "Express Yourself",
+    "artist": "Madonna",
+    "bpm": 230.32,
+    "bar": 4,
+    "gap": 7623.098298020146,
+    "video": "GsVcUzP_O_8",
+    "year": "1989",
+    "lastUpdate": "2023-02-25T00:15:21.380Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 116,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Madonna-Express-Yourself.json",
+    "tracksCount": 1,
+    "search": "madonnaexpressyourself",
+    "local": false
   },
   {
     "title": "Frozen",
@@ -5289,7 +6128,8 @@
     ],
     "file": "Madonna-Frozen.json",
     "tracksCount": 1,
-    "search": "madonnafrozen"
+    "search": "madonnafrozen",
+    "local": false
   },
   {
     "title": "Hung Up",
@@ -5312,7 +6152,8 @@
     ],
     "file": "Madonna-Hung Up.json",
     "tracksCount": 1,
-    "search": "madonnahungup"
+    "search": "madonnahungup",
+    "local": false
   },
   {
     "title": "Like A Prayer",
@@ -5336,7 +6177,60 @@
     ],
     "file": "Madonna-Like A Prayer.json",
     "tracksCount": 1,
-    "search": "madonnalikeaprayer"
+    "search": "madonnalikeaprayer",
+    "local": false
+  },
+  {
+    "title": "Like a Virgin",
+    "artist": "Madonna",
+    "bpm": 239.1,
+    "bar": 4,
+    "gap": 21225.235884567126,
+    "video": "s__rX_WL100",
+    "year": "1984",
+    "lastUpdate": "2023-02-25T00:09:47.983Z",
+    "edition": "SingStar",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 120,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Madonna-Like-a-Virgin.json",
+    "tracksCount": 1,
+    "search": "madonnalikeavirgin",
+    "local": false
+  },
+  {
+    "title": "Ray Of Light",
+    "artist": "Madonna",
+    "bpm": 520,
+    "bar": 4,
+    "gap": 29720.384615384617,
+    "video": "fLkNJYG4b2Q",
+    "year": "1998",
+    "lastUpdate": "2023-02-25T00:12:37.156Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 127,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 35
+      }
+    ],
+    "file": "Madonna-Ray-Of-Light.json",
+    "tracksCount": 1,
+    "search": "madonnarayoflight",
+    "local": false
   },
   {
     "title": "Vogue",
@@ -5361,7 +6255,8 @@
     ],
     "file": "Madonna-Vogue.json",
     "tracksCount": 1,
-    "search": "madonnavogue"
+    "search": "madonnavogue",
+    "local": false
   },
   {
     "title": "A ja wolę moją mamę",
@@ -5386,7 +6281,8 @@
     ],
     "file": "Majka Jeżowska-A ja wolę moją mamę.json",
     "tracksCount": 1,
-    "search": "majkajezowskaajawolemojamame"
+    "search": "majkajezowskaajawolemojamame",
+    "local": false
   },
   {
     "title": "Gas Gas Gas",
@@ -5410,7 +6306,8 @@
     ],
     "file": "Manuel-Gas Gas Gas.json",
     "tracksCount": 1,
-    "search": "manuelgasgasgas"
+    "search": "manuelgasgasgas",
+    "local": false
   },
   {
     "title": "Siłacz",
@@ -5434,7 +6331,8 @@
     ],
     "file": "Marcin Rozynek-Siłacz.json",
     "tracksCount": 1,
-    "search": "marcinrozyneksiacz"
+    "search": "marcinrozyneksiacz",
+    "local": false
   },
   {
     "title": "Nothing Breaks Like a Heart",
@@ -5459,7 +6357,34 @@
     ],
     "file": "Mark Ronson ft  Miley Cyrus-Nothing Breaks Like a Heart.json",
     "tracksCount": 1,
-    "search": "markronsonftmileycyrusnothingbreakslikeaheart"
+    "search": "markronsonftmileycyrusnothingbreakslikeaheart",
+    "local": false
+  },
+  {
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson feat. Bruno Mars",
+    "bpm": 230,
+    "bar": 4,
+    "gap": 15971.739130434782,
+    "video": "OPf0YbXqDm0",
+    "year": "2014",
+    "lastUpdate": "2023-02-24T22:58:31.399Z",
+    "genre": "Funk",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 115,
+    "author": "OmarWeichafe*Coppo",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Mark-Ronson-feat.-Bruno-Mars-Uptown-Funk.json",
+    "tracksCount": 1,
+    "search": "markronsonfeatbrunomarsuptownfunk",
+    "local": false
   },
   {
     "title": "Moves Like Jagger",
@@ -5483,7 +6408,8 @@
     ],
     "file": "Maroon 5 feat. Christina Aguilera-Moves Like Jagger.json",
     "tracksCount": 1,
-    "search": "maroon5featchristinaaguileramoveslikejagger"
+    "search": "maroon5featchristinaaguileramoveslikejagger",
+    "local": false
   },
   {
     "title": "Harder to breathe",
@@ -5508,7 +6434,8 @@
     ],
     "file": "Maroon 5-Harder to breathe.json",
     "tracksCount": 1,
-    "search": "maroon5hardertobreathe"
+    "search": "maroon5hardertobreathe",
+    "local": false
   },
   {
     "title": "She Will Be Loved",
@@ -5532,7 +6459,8 @@
     ],
     "file": "Maroon 5-She Will Be Loved.json",
     "tracksCount": 1,
-    "search": "maroon5shewillbeloved"
+    "search": "maroon5shewillbeloved",
+    "local": false
   },
   {
     "title": "This Love",
@@ -5557,7 +6485,8 @@
     ],
     "file": "Maroon 5-This Love.json",
     "tracksCount": 1,
-    "search": "maroon5thislove"
+    "search": "maroon5thislove",
+    "local": false
   },
   {
     "title": "Ain't No Mountain High Enough",
@@ -5587,7 +6516,8 @@
     ],
     "file": "Marvin Gaye & Tammi Terrell-Ain't No Mountain High Enough [DUET].json",
     "tracksCount": 2,
-    "search": "marvingayetammiterrellaintnomountainhighenough"
+    "search": "marvingayetammiterrellaintnomountainhighenough",
+    "local": false
   },
   {
     "title": "Początek",
@@ -5612,7 +6542,8 @@
     ],
     "file": "Meskie Granie Orkiestra-Poczatek.json",
     "tracksCount": 1,
-    "search": "meskiegranieorkiestrapoczatek"
+    "search": "meskiegranieorkiestrapoczatek",
+    "local": false
   },
   {
     "title": "Enter Sandman",
@@ -5637,7 +6568,8 @@
     ],
     "file": "Metallica-Enter Sandman.json",
     "tracksCount": 1,
-    "search": "metallicaentersandman"
+    "search": "metallicaentersandman",
+    "local": false
   },
   {
     "title": "Nothing Else Matters",
@@ -5662,7 +6594,8 @@
     ],
     "file": "Metallica-Nothing Else Matters.json",
     "tracksCount": 1,
-    "search": "metallicanothingelsematters"
+    "search": "metallicanothingelsematters",
+    "local": false
   },
   {
     "title": "Shake It",
@@ -5685,7 +6618,8 @@
     ],
     "file": "Metro Station-Shake It.json",
     "tracksCount": 1,
-    "search": "metrostationshakeit"
+    "search": "metrostationshakeit",
+    "local": false
   },
   {
     "title": "Love Never Felt So Good",
@@ -5709,7 +6643,8 @@
     ],
     "file": "Michael Jackson feat. Justin Timberlake-Love Never Felt So Good.json",
     "tracksCount": 1,
-    "search": "michaeljacksonfeatjustintimberlakeloveneverfeltsogood"
+    "search": "michaeljacksonfeatjustintimberlakeloveneverfeltsogood",
+    "local": false
   },
   {
     "title": "Beat It",
@@ -5733,7 +6668,8 @@
     ],
     "file": "Michael Jackson-Beat It.json",
     "tracksCount": 1,
-    "search": "michaeljacksonbeatit"
+    "search": "michaeljacksonbeatit",
+    "local": false
   },
   {
     "title": "Billie Jean",
@@ -5757,7 +6693,8 @@
     ],
     "file": "Michael Jackson-Billie Jean.json",
     "tracksCount": 1,
-    "search": "michaeljacksonbilliejean"
+    "search": "michaeljacksonbilliejean",
+    "local": false
   },
   {
     "title": "Black or white",
@@ -5781,7 +6718,8 @@
     ],
     "file": "Michael Jackson-Black or white.json",
     "tracksCount": 1,
-    "search": "michaeljacksonblackorwhite"
+    "search": "michaeljacksonblackorwhite",
+    "local": false
   },
   {
     "title": "Thriller",
@@ -5805,7 +6743,8 @@
     ],
     "file": "Michael Jackson-Thriller.json",
     "tracksCount": 1,
-    "search": "michaeljacksonthriller"
+    "search": "michaeljacksonthriller",
+    "local": false
   },
   {
     "title": "Wrecking Ball",
@@ -5829,7 +6768,8 @@
     ],
     "file": "Miley Cyrus-Wrecking Ball.json",
     "tracksCount": 1,
-    "search": "mileycyruswreckingball"
+    "search": "mileycyruswreckingball",
+    "local": false
   },
   {
     "title": "Dziewczyna mojego chłopaka",
@@ -5853,7 +6793,8 @@
     ],
     "file": "Monika Brodka-Dziewczyna mojego chłopaka.json",
     "tracksCount": 1,
-    "search": "monikabrodkadziewczynamojegochopaka"
+    "search": "monikabrodkadziewczynamojegochopaka",
+    "local": false
   },
   {
     "title": "Miałeś być",
@@ -5879,7 +6820,8 @@
     ],
     "file": "Monika Brodka-Miałeś być.json",
     "tracksCount": 1,
-    "search": "monikabrodkamiaesbyc"
+    "search": "monikabrodkamiaesbyc",
+    "local": false
   },
   {
     "title": "Znam Cię Na Pamięć ",
@@ -5905,7 +6847,8 @@
     ],
     "file": "Monika Brodka-Znam Cię Na Pamięć .json",
     "tracksCount": 1,
-    "search": "monikabrodkaznamcienapamiec"
+    "search": "monikabrodkaznamcienapamiec",
+    "local": false
   },
   {
     "title": "Angels",
@@ -5929,7 +6872,8 @@
     ],
     "file": "Morandi-Angels.json",
     "tracksCount": 1,
-    "search": "morandiangels"
+    "search": "morandiangels",
+    "local": false
   },
   {
     "title": "Hysteria",
@@ -5955,7 +6899,8 @@
     ],
     "file": "Muse-Hysteria.json",
     "tracksCount": 1,
-    "search": "musehysteria"
+    "search": "musehysteria",
+    "local": false
   },
   {
     "title": "Knights of Cydonia",
@@ -5979,7 +6924,8 @@
     ],
     "file": "Muse-Knights of Cydonia.json",
     "tracksCount": 1,
-    "search": "museknightsofcydonia"
+    "search": "museknightsofcydonia",
+    "local": false
   },
   {
     "title": "Madness",
@@ -6003,7 +6949,8 @@
     ],
     "file": "Muse-Madness.json",
     "tracksCount": 1,
-    "search": "musemadness"
+    "search": "musemadness",
+    "local": false
   },
   {
     "title": "Panic Station",
@@ -6027,7 +6974,8 @@
     ],
     "file": "Muse-Panic Station.json",
     "tracksCount": 1,
-    "search": "musepanicstation"
+    "search": "musepanicstation",
+    "local": false
   },
   {
     "title": "Reapers",
@@ -6051,7 +6999,8 @@
     ],
     "file": "Muse-Reapers.json",
     "tracksCount": 1,
-    "search": "musereapers"
+    "search": "musereapers",
+    "local": false
   },
   {
     "title": "Resistance",
@@ -6074,7 +7023,8 @@
     ],
     "file": "Muse-Resistance.json",
     "tracksCount": 1,
-    "search": "museresistance"
+    "search": "museresistance",
+    "local": false
   },
   {
     "title": "Supermassive Black Hole",
@@ -6098,7 +7048,8 @@
     ],
     "file": "Muse-Supermassive Black Hole.json",
     "tracksCount": 1,
-    "search": "musesupermassiveblackhole"
+    "search": "musesupermassiveblackhole",
+    "local": false
   },
   {
     "title": "Undisclosed desires",
@@ -6122,7 +7073,8 @@
     ],
     "file": "Muse-Undisclosed desires.json",
     "tracksCount": 1,
-    "search": "museundiscloseddesires"
+    "search": "museundiscloseddesires",
+    "local": false
   },
   {
     "title": "Uprising",
@@ -6146,7 +7098,8 @@
     ],
     "file": "Muse-Uprising.json",
     "tracksCount": 1,
-    "search": "museuprising"
+    "search": "museuprising",
+    "local": false
   },
   {
     "title": "Długo dzwieku samotnosci",
@@ -6170,7 +7123,8 @@
     ],
     "file": "Myslovitz-Dlugosc dzwieku samotnosci.json",
     "tracksCount": 1,
-    "search": "myslovitzdugodzwiekusamotnosci"
+    "search": "myslovitzdugodzwiekusamotnosci",
+    "local": false
   },
   {
     "title": "My",
@@ -6194,7 +7148,8 @@
     ],
     "file": "Myslovitz-My.json",
     "tracksCount": 1,
-    "search": "myslovitzmy"
+    "search": "myslovitzmy",
+    "local": false
   },
   {
     "title": "Scenariusz Dla Moich Sąsiadów",
@@ -6220,7 +7175,8 @@
     ],
     "file": "Myslovitz-Scenariusz Dla Moich Sąsiadów.json",
     "tracksCount": 1,
-    "search": "myslovitzscenariuszdlamoichsasiadow"
+    "search": "myslovitzscenariuszdlamoichsasiadow",
+    "local": false
   },
   {
     "title": "Z twarza Marilyn Monroe",
@@ -6243,7 +7199,8 @@
     ],
     "file": "Myslovitz-Z twarza Marilyn Monroe.json",
     "tracksCount": 1,
-    "search": "myslovitzztwarzamarilynmonroe"
+    "search": "myslovitzztwarzamarilynmonroe",
+    "local": false
   },
   {
     "title": "Unwritten",
@@ -6267,7 +7224,8 @@
     ],
     "file": "Natasha Bedingfield-Unwritten.json",
     "tracksCount": 1,
-    "search": "natashabedingfieldunwritten"
+    "search": "natashabedingfieldunwritten",
+    "local": false
   },
   {
     "title": "Hero",
@@ -6291,7 +7249,8 @@
     ],
     "file": "Nickelback-Hero.json",
     "tracksCount": 1,
-    "search": "nickelbackhero"
+    "search": "nickelbackhero",
+    "local": false
   },
   {
     "title": "How You Remind Me",
@@ -6316,7 +7275,8 @@
     ],
     "file": "Nickelback-How You Remind Me.json",
     "tracksCount": 1,
-    "search": "nickelbackhowyouremindme"
+    "search": "nickelbackhowyouremindme",
+    "local": false
   },
   {
     "title": "Photograph",
@@ -6341,7 +7301,8 @@
     ],
     "file": "Nickelback-Photograph.json",
     "tracksCount": 1,
-    "search": "nickelbackphotograph"
+    "search": "nickelbackphotograph",
+    "local": false
   },
   {
     "title": "Rockstar",
@@ -6366,7 +7327,8 @@
     ],
     "file": "Nickelback-Rockstar.json",
     "tracksCount": 1,
-    "search": "nickelbackrockstar"
+    "search": "nickelbackrockstar",
+    "local": false
   },
   {
     "title": "Savin' Me",
@@ -6391,7 +7353,8 @@
     ],
     "file": "Nickelback-Savin' Me.json",
     "tracksCount": 1,
-    "search": "nickelbacksavinme"
+    "search": "nickelbacksavinme",
+    "local": false
   },
   {
     "title": "Worlds Collide",
@@ -6414,7 +7377,8 @@
     ],
     "file": "Nicki Taylor-Worlds Collide.json",
     "tracksCount": 1,
-    "search": "nickitaylorworldscollide"
+    "search": "nickitaylorworldscollide",
+    "local": false
   },
   {
     "title": "Don't speak",
@@ -6439,7 +7403,62 @@
     ],
     "file": "No Doubt-Don't speak.json",
     "tracksCount": 1,
-    "search": "nodoubtdontspeak"
+    "search": "nodoubtdontspeak",
+    "local": false
+  },
+  {
+    "title": "It's My Life",
+    "artist": "No Doubt",
+    "bpm": 393.01,
+    "bar": 4,
+    "gap": 11517.658838197502,
+    "video": "ubvV498pyIM",
+    "year": "2003",
+    "lastUpdate": "2023-02-24T23:46:09.694Z",
+    "edition": "Rock Band Store 2008 Vol. 4",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "No-Doubt-Its-My-Life.json",
+    "tracksCount": 1,
+    "search": "nodoubtitsmylife",
+    "local": false
+  },
+  {
+    "title": "Just A Girl",
+    "artist": "No Doubt",
+    "bpm": 393.3,
+    "bar": 4,
+    "gap": 9288.39054157132,
+    "video": "PHzOOQfhPFg",
+    "year": "1997",
+    "lastUpdate": "2023-02-24T23:51:36.755Z",
+    "edition": "Rock Band Store 2008 Vol. 4",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "No-Doubt-Just-A-Girl.json",
+    "tracksCount": 1,
+    "search": "nodoubtjustagirl",
+    "local": false
   },
   {
     "title": "Koń Na Białym Rycerzu",
@@ -6464,7 +7483,8 @@
     ],
     "file": "Nocny Kochanek-Kon Na Bialym Rycerzu.json",
     "tracksCount": 1,
-    "search": "nocnykochanekkonnabiaymrycerzu"
+    "search": "nocnykochanekkonnabiaymrycerzu",
+    "local": false
   },
   {
     "title": "Kiedy powiem sobie dość",
@@ -6488,7 +7508,8 @@
     ],
     "file": "ONA-Kiedy powiem sobie dość.json",
     "tracksCount": 1,
-    "search": "onakiedypowiemsobiedosc"
+    "search": "onakiedypowiemsobiedosc",
+    "local": false
   },
   {
     "title": "Wonderwall",
@@ -6513,7 +7534,8 @@
     ],
     "file": "Oasis-Wonderwall.json",
     "tracksCount": 1,
-    "search": "oasiswonderwall"
+    "search": "oasiswonderwall",
+    "local": false
   },
   {
     "title": "Alive",
@@ -6539,7 +7561,8 @@
     ],
     "file": "Pearl Jam-Alive.json",
     "tracksCount": 1,
-    "search": "pearljamalive"
+    "search": "pearljamalive",
+    "local": false
   },
   {
     "title": "Even Flow",
@@ -6564,7 +7587,8 @@
     ],
     "file": "Pearl Jam-Even Flow.json",
     "tracksCount": 1,
-    "search": "pearljamevenflow"
+    "search": "pearljamevenflow",
+    "local": false
   },
   {
     "title": "Nie Mogę Ci Wiele Dać",
@@ -6588,7 +7612,8 @@
     ],
     "file": "Perfect-Nie Mogę Ci Wiele Dać.json",
     "tracksCount": 1,
-    "search": "perfectniemogeciwieledac"
+    "search": "perfectniemogeciwieledac",
+    "local": false
   },
   {
     "title": "Nie płacz Ewka",
@@ -6612,7 +7637,8 @@
     ],
     "file": "Perfect-Nie płacz Ewka.json",
     "tracksCount": 1,
-    "search": "perfectniepaczewka"
+    "search": "perfectniepaczewka",
+    "local": false
   },
   {
     "title": "Niepokonani",
@@ -6636,7 +7662,8 @@
     ],
     "file": "Perfect-Niepokonani.json",
     "tracksCount": 1,
-    "search": "perfectniepokonani"
+    "search": "perfectniepokonani",
+    "local": false
   },
   {
     "title": "Autobiografia",
@@ -6658,7 +7685,8 @@
     ],
     "file": "Perfekt-Autobiografia.json",
     "tracksCount": 1,
-    "search": "perfektautobiografia"
+    "search": "perfektautobiografia",
+    "local": false
   },
   {
     "title": "Downtown",
@@ -6682,7 +7710,8 @@
     ],
     "file": "Petula Clark-Downtown.json",
     "tracksCount": 1,
-    "search": "petulaclarkdowntown"
+    "search": "petulaclarkdowntown",
+    "local": false
   },
   {
     "title": "Taki Jestem",
@@ -6708,7 +7737,8 @@
     ],
     "file": "Pewex vs Stachursky-Taki Jestem [DUET].json",
     "tracksCount": 2,
-    "search": "pewexvsstachurskytakijestem"
+    "search": "pewexvsstachurskytakijestem",
+    "local": false
   },
   {
     "title": "Happy",
@@ -6732,7 +7762,8 @@
     ],
     "file": "Pharrell Williams-Happy.json",
     "tracksCount": 1,
-    "search": "pharrellwilliamshappy"
+    "search": "pharrellwilliamshappy",
+    "local": false
   },
   {
     "title": "Caluj Mnie",
@@ -6756,7 +7787,8 @@
     ],
     "file": "Piersi i Kukiz-Caluj Mnie.json",
     "tracksCount": 1,
-    "search": "piersiikukizcalujmnie"
+    "search": "piersiikukizcalujmnie",
+    "local": false
   },
   {
     "title": "Another Brick In The Wall (Part II)",
@@ -6781,7 +7813,8 @@
     ],
     "file": "Pink Floyd-Another Brick In The Wall (Part II).json",
     "tracksCount": 1,
-    "search": "pinkfloydanotherbrickinthewallpartii"
+    "search": "pinkfloydanotherbrickinthewallpartii",
+    "local": false
   },
   {
     "title": "Psalm dla ciebie",
@@ -6804,7 +7837,8 @@
     ],
     "file": "Piotr Rubik-Psalm dla ciebie.json",
     "tracksCount": 1,
-    "search": "piotrrubikpsalmdlaciebie"
+    "search": "piotrrubikpsalmdlaciebie",
+    "local": false
   },
   {
     "title": "Opening (PL)",
@@ -6831,7 +7865,8 @@
     ],
     "file": "Pokémon-Opening (PL).json",
     "tracksCount": 1,
-    "search": "pokemonopeningpl"
+    "search": "pokemonopeningpl",
+    "local": false
   },
   {
     "title": "Gangnam Style",
@@ -6855,7 +7890,8 @@
     ],
     "file": "Psy-Gangnam Style.json",
     "tracksCount": 1,
-    "search": "psygangnamstyle"
+    "search": "psygangnamstyle",
+    "local": false
   },
   {
     "title": "Under Pressure",
@@ -6880,7 +7916,8 @@
     ],
     "file": "Queen & David Bowie-Under Pressure.json",
     "tracksCount": 1,
-    "search": "queendavidbowieunderpressure"
+    "search": "queendavidbowieunderpressure",
+    "local": false
   },
   {
     "title": "A kind of magic",
@@ -6905,7 +7942,8 @@
     ],
     "file": "Queen-A kind of magic.json",
     "tracksCount": 1,
-    "search": "queenakindofmagic"
+    "search": "queenakindofmagic",
+    "local": false
   },
   {
     "title": "Another One Bites the Dust",
@@ -6930,7 +7968,8 @@
     ],
     "file": "Queen-Another One Bites the Dust.json",
     "tracksCount": 1,
-    "search": "queenanotheronebitesthedust"
+    "search": "queenanotheronebitesthedust",
+    "local": false
   },
   {
     "title": "Bohemian Rhapsody",
@@ -6960,7 +7999,34 @@
     ],
     "file": "Queen-Bohemian Rhapsody.json",
     "tracksCount": 2,
-    "search": "queenbohemianrhapsody"
+    "search": "queenbohemianrhapsody",
+    "local": false
+  },
+  {
+    "title": "Breakthru",
+    "artist": "Queen",
+    "bpm": 180.2,
+    "bar": 4,
+    "gap": 3722.10987791343,
+    "video": "CEjU9KVABao",
+    "year": "1989",
+    "lastUpdate": "2023-02-25T01:16:30.561Z",
+    "edition": "SingStar Queen",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 89,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "file": "Queen-Breakthru.json",
+    "tracksCount": 1,
+    "search": "queenbreakthru",
+    "local": false
   },
   {
     "title": "Don't Stop Me Now",
@@ -6985,7 +8051,8 @@
     ],
     "file": "Queen-Don't Stop Me Now.json",
     "tracksCount": 1,
-    "search": "queendontstopmenow"
+    "search": "queendontstopmenow",
+    "local": false
   },
   {
     "title": "I Want It All",
@@ -7010,7 +8077,8 @@
     ],
     "file": "Queen-I Want It All.json",
     "tracksCount": 1,
-    "search": "queeniwantitall"
+    "search": "queeniwantitall",
+    "local": false
   },
   {
     "title": "I Want to Break Free",
@@ -7035,7 +8103,60 @@
     ],
     "file": "Queen-I Want to Break Free.json",
     "tracksCount": 1,
-    "search": "queeniwanttobreakfree"
+    "search": "queeniwanttobreakfree",
+    "local": false
+  },
+  {
+    "title": "Innuendo",
+    "artist": "Queen",
+    "bpm": 302,
+    "bar": 4,
+    "gap": 52842.622516556294,
+    "video": "g2N0TkfrQhY",
+    "year": "1991",
+    "lastUpdate": "2023-02-25T01:20:18.701Z",
+    "edition": "SingStar Queen",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 152,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Queen-Innuendo.json",
+    "tracksCount": 1,
+    "search": "queeninnuendo",
+    "local": false
+  },
+  {
+    "title": "One Vision",
+    "artist": "Queen",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 27425,
+    "video": "0_1IMZmJe-U",
+    "year": "1985",
+    "lastUpdate": "2023-02-25T01:23:53.380Z",
+    "edition": "SingStar Queen",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 289
+      }
+    ],
+    "file": "Queen-One-Vision.json",
+    "tracksCount": 1,
+    "search": "queenonevision",
+    "local": false
   },
   {
     "title": "Radio Ga Ga",
@@ -7061,7 +8182,8 @@
     ],
     "file": "Queen-Radio Ga Ga.json",
     "tracksCount": 1,
-    "search": "queenradiogaga"
+    "search": "queenradiogaga",
+    "local": false
   },
   {
     "title": "The Show Must Go On",
@@ -7087,7 +8209,8 @@
     ],
     "file": "Queen-The Show Must Go On.json",
     "tracksCount": 1,
-    "search": "queentheshowmustgoon"
+    "search": "queentheshowmustgoon",
+    "local": false
   },
   {
     "title": "We Are the Champions",
@@ -7112,7 +8235,8 @@
     ],
     "file": "Queen-We Are the Champions.json",
     "tracksCount": 1,
-    "search": "queenwearethechampions"
+    "search": "queenwearethechampions",
+    "local": false
   },
   {
     "title": "We Will Rock You",
@@ -7137,7 +8261,34 @@
     ],
     "file": "Queen-We Will Rock You.json",
     "tracksCount": 1,
-    "search": "queenwewillrockyou"
+    "search": "queenwewillrockyou",
+    "local": false
+  },
+  {
+    "title": "Who Wants to Live Forever",
+    "artist": "Queen",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 13764.29411764706,
+    "video": "_Jtpf8N5IDE",
+    "year": "1986",
+    "lastUpdate": "2023-02-25T01:29:45.923Z",
+    "edition": "SingStar Queen",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 92,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Queen-Who-Wants-to-Live-Forever.json",
+    "tracksCount": 1,
+    "search": "queenwhowantstoliveforever",
+    "local": false
   },
   {
     "title": "Losing My Religion",
@@ -7162,7 +8313,8 @@
     ],
     "file": "R.E.M.-Losing My Religion.json",
     "tracksCount": 1,
-    "search": "remlosingmyreligion"
+    "search": "remlosingmyreligion",
+    "local": false
   },
   {
     "title": "Creep",
@@ -7187,7 +8339,8 @@
     ],
     "file": "Radiohead-Creep.json",
     "tracksCount": 1,
-    "search": "radioheadcreep"
+    "search": "radioheadcreep",
+    "local": false
   },
   {
     "title": "Killing In The Name",
@@ -7211,7 +8364,8 @@
     ],
     "file": "Rage Against The Machine-Killing In The Name.json",
     "tracksCount": 1,
-    "search": "rageagainstthemachinekillinginthename"
+    "search": "rageagainstthemachinekillinginthename",
+    "local": false
   },
   {
     "title": "Ghostbusters",
@@ -7236,7 +8390,8 @@
     ],
     "file": "Ray Parker Jr.-Ghostbusters.json",
     "tracksCount": 1,
-    "search": "rayparkerjrghostbusters"
+    "search": "rayparkerjrghostbusters",
+    "local": false
   },
   {
     "title": "Dani California",
@@ -7261,7 +8416,8 @@
     ],
     "file": "Red Hot Chili Peppers-Dani California.json",
     "tracksCount": 1,
-    "search": "redhotchilipeppersdanicalifornia"
+    "search": "redhotchilipeppersdanicalifornia",
+    "local": false
   },
   {
     "title": "Zakręcona",
@@ -7285,7 +8441,8 @@
     ],
     "file": "Reni Jusis-Zakręcona.json",
     "tracksCount": 1,
-    "search": "renijusiszakrecona"
+    "search": "renijusiszakrecona",
+    "local": false
   },
   {
     "title": "Bogurodzica",
@@ -7309,7 +8466,8 @@
     ],
     "file": "Reprezentacyjny Zespół Artystyczny Wojska Polskiego-Bogurodzica.json",
     "tracksCount": 1,
-    "search": "reprezentacyjnyzespoartystycznywojskapolskiegobogurodzica"
+    "search": "reprezentacyjnyzespoartystycznywojskapolskiegobogurodzica",
+    "local": false
   },
   {
     "title": "Rota",
@@ -7333,7 +8491,8 @@
     ],
     "file": "Reprezentacyjny Zespół Artystyczny Wojska Polskiego-Rota.json",
     "tracksCount": 1,
-    "search": "reprezentacyjnyzespoartystycznywojskapolskiegorota"
+    "search": "reprezentacyjnyzespoartystycznywojskapolskiegorota",
+    "local": false
   },
   {
     "title": "Biała flaga",
@@ -7358,7 +8517,8 @@
     ],
     "file": "Republika-Biała flaga.json",
     "tracksCount": 1,
-    "search": "republikabiaaflaga"
+    "search": "republikabiaaflaga",
+    "local": false
   },
   {
     "title": "Never gonna give you up",
@@ -7382,7 +8542,8 @@
     ],
     "file": "Rick Astley-Never gonna give you up.json",
     "tracksCount": 1,
-    "search": "rickastleynevergonnagiveyouup"
+    "search": "rickastleynevergonnagiveyouup",
+    "local": false
   },
   {
     "title": "Livin' La Vida Loca",
@@ -7407,7 +8568,8 @@
     ],
     "file": "Ricky Martin-Livin' La Vida Loca.json",
     "tracksCount": 1,
-    "search": "rickymartinlivinlavidaloca"
+    "search": "rickymartinlivinlavidaloca",
+    "local": false
   },
   {
     "title": "We Found Love",
@@ -7432,7 +8594,8 @@
     ],
     "file": "Rihanna feat. Calvin Harris-We Found Love.json",
     "tracksCount": 1,
-    "search": "rihannafeatcalvinharriswefoundlove"
+    "search": "rihannafeatcalvinharriswefoundlove",
+    "local": false
   },
   {
     "title": "Diamonds",
@@ -7456,7 +8619,8 @@
     ],
     "file": "Rihanna-Diamonds.json",
     "tracksCount": 1,
-    "search": "rihannadiamonds"
+    "search": "rihannadiamonds",
+    "local": false
   },
   {
     "title": "Love On The Brain",
@@ -7481,7 +8645,8 @@
     ],
     "file": "Rihanna-Love On The Brain.json",
     "tracksCount": 1,
-    "search": "rihannaloveonthebrain"
+    "search": "rihannaloveonthebrain",
+    "local": false
   },
   {
     "title": "Only Girl (In The World)",
@@ -7506,7 +8671,8 @@
     ],
     "file": "Rihanna-Only Girl (In The World).json",
     "tracksCount": 1,
-    "search": "rihannaonlygirlintheworld"
+    "search": "rihannaonlygirlintheworld",
+    "local": false
   },
   {
     "title": "Umbrella",
@@ -7530,7 +8696,8 @@
     ],
     "file": "Rihanna-Umbrella.json",
     "tracksCount": 1,
-    "search": "rihannaumbrella"
+    "search": "rihannaumbrella",
+    "local": false
   },
   {
     "title": "Angels",
@@ -7556,7 +8723,8 @@
     "lastUpdate": "2023-01-07T19:18:34.391Z",
     "file": "Robbie Williams-Angels.json",
     "tracksCount": 1,
-    "search": "robbiewilliamsangels"
+    "search": "robbiewilliamsangels",
+    "local": false
   },
   {
     "title": "Rock DJ",
@@ -7579,7 +8747,8 @@
     ],
     "file": "Robbie Williams-Rock DJ.json",
     "tracksCount": 1,
-    "search": "robbiewilliamsrockdj"
+    "search": "robbiewilliamsrockdj",
+    "local": false
   },
   {
     "title": "Niecierpliwi",
@@ -7603,7 +8772,8 @@
     ],
     "file": "Robert Chojnacki-Niecierpliwi.json",
     "tracksCount": 1,
-    "search": "robertchojnackiniecierpliwi"
+    "search": "robertchojnackiniecierpliwi",
+    "local": false
   },
   {
     "title": "It Must Have Been Love",
@@ -7628,7 +8798,8 @@
     ],
     "file": "Roxette-It Must Have Been Love.json",
     "tracksCount": 1,
-    "search": "roxetteitmusthavebeenlove"
+    "search": "roxetteitmusthavebeenlove",
+    "local": false
   },
   {
     "title": "Sissy That Walk",
@@ -7653,7 +8824,8 @@
     ],
     "file": "RuPaul-Sissy That Walk.json",
     "tracksCount": 1,
-    "search": "rupaulsissythatwalk"
+    "search": "rupaulsissythatwalk",
+    "local": false
   },
   {
     "title": "Monika dziewczyna ratownika",
@@ -7677,7 +8849,8 @@
     ],
     "file": "Rudi Schubert-Monika dziewczyna ratownika.json",
     "tracksCount": 1,
-    "search": "rudischubertmonikadziewczynaratownika"
+    "search": "rudischubertmonikadziewczynaratownika",
+    "local": false
   },
   {
     "title": "Córka Rybaka",
@@ -7703,7 +8876,8 @@
     ],
     "file": "Rudi Schuberth-Córka Rybaka.json",
     "tracksCount": 1,
-    "search": "rudischuberthcorkarybaka"
+    "search": "rudischuberthcorkarybaka",
+    "local": false
   },
   {
     "title": "Escape (The Pińa Colada Song)",
@@ -7727,7 +8901,8 @@
     ],
     "file": "Rupert Holmes-Escape (The Pińa Colada Song).json",
     "tracksCount": 1,
-    "search": "rupertholmesescapethepinacoladasong"
+    "search": "rupertholmesescapethepinacoladasong",
+    "local": false
   },
   {
     "title": "Maria (I like it loud)",
@@ -7750,7 +8925,8 @@
     ],
     "file": "Scooter vs. Marc Acardipane & Dick Rules-Maria (I like it loud).json",
     "tracksCount": 1,
-    "search": "scootervsmarcacardipanedickrulesmariailikeitloud"
+    "search": "scootervsmarcacardipanedickrulesmariailikeitloud",
+    "local": false
   },
   {
     "title": "Wind of Change",
@@ -7774,7 +8950,8 @@
     ],
     "file": "Scorpions-Wind of Change.json",
     "tracksCount": 1,
-    "search": "scorpionswindofchange"
+    "search": "scorpionswindofchange",
+    "local": false
   },
   {
     "title": "Waka Waka (This Time for Africa)",
@@ -7798,7 +8975,8 @@
     ],
     "file": "Shakira ft. Freshlyground-Waka Waka (This Time for Africa).json",
     "tracksCount": 1,
-    "search": "shakiraftfreshlygroundwakawakathistimeforafrica"
+    "search": "shakiraftfreshlygroundwakawakathistimeforafrica",
+    "local": false
   },
   {
     "title": "Whenever wherever",
@@ -7822,7 +9000,8 @@
     ],
     "file": "Shakira-Whenever wherever.json",
     "tracksCount": 1,
-    "search": "shakirawheneverwherever"
+    "search": "shakirawheneverwherever",
+    "local": false
   },
   {
     "title": "18 & Life",
@@ -7846,7 +9025,8 @@
     ],
     "file": "Skid Row-18 & Life.json",
     "tracksCount": 1,
-    "search": "skidrow18life"
+    "search": "skidrow18life",
+    "local": false
   },
   {
     "title": "All Star but the whole song is sung on a C Note",
@@ -7869,7 +9049,8 @@
     ],
     "file": "Smash Mouth-All Star but the whole song is sung on a C Note.json",
     "tracksCount": 1,
-    "search": "smashmouthallstarbutthewholesongissungonacnote"
+    "search": "smashmouthallstarbutthewholesongissungonacnote",
+    "local": false
   },
   {
     "title": "All Star",
@@ -7892,7 +9073,8 @@
     ],
     "file": "Smash Mouth-All Star.json",
     "tracksCount": 1,
-    "search": "smashmouthallstar"
+    "search": "smashmouthallstar",
+    "local": false
   },
   {
     "title": "I'm a believer",
@@ -7916,7 +9098,8 @@
     ],
     "file": "Smash Mouth-I'm a believer.json",
     "tracksCount": 1,
-    "search": "smashmouthimabeliever"
+    "search": "smashmouthimabeliever",
+    "local": false
   },
   {
     "title": "Chasing Cars",
@@ -7941,7 +9124,8 @@
     ],
     "file": "Snow Patrol-Chasing Cars.json",
     "tracksCount": 1,
-    "search": "snowpatrolchasingcars"
+    "search": "snowpatrolchasingcars",
+    "local": false
   },
   {
     "title": "Runaway Train",
@@ -7965,7 +9149,8 @@
     ],
     "file": "Soul Asylum-Runaway Train.json",
     "tracksCount": 1,
-    "search": "soulasylumrunawaytrain"
+    "search": "soulasylumrunawaytrain",
+    "local": false
   },
   {
     "title": "Wannabe",
@@ -7990,7 +9175,8 @@
     ],
     "file": "Spice Girls-Wannabe.json",
     "tracksCount": 1,
-    "search": "spicegirlswannabe"
+    "search": "spicegirlswannabe",
+    "local": false
   },
   {
     "title": "Dosko",
@@ -8021,7 +9207,8 @@
     ],
     "file": "Stachursky-Dosko.json",
     "tracksCount": 2,
-    "search": "stachurskydosko"
+    "search": "stachurskydosko",
+    "local": false
   },
   {
     "title": "Gdy Zaplaczesz",
@@ -8045,7 +9232,8 @@
     ],
     "file": "Stachursky-Gdy Zaplaczesz.json",
     "tracksCount": 1,
-    "search": "stachurskygdyzaplaczesz"
+    "search": "stachurskygdyzaplaczesz",
+    "local": false
   },
   {
     "title": "Jedwab",
@@ -8069,7 +9257,8 @@
     ],
     "file": "Stachursky-Jedwab.json",
     "tracksCount": 1,
-    "search": "stachurskyjedwab"
+    "search": "stachurskyjedwab",
+    "local": false
   },
   {
     "title": "Typ Niepokorny",
@@ -8094,7 +9283,8 @@
     ],
     "file": "Stachursky-Typ Niepokorny.json",
     "tracksCount": 1,
-    "search": "stachurskytypniepokorny"
+    "search": "stachurskytypniepokorny",
+    "local": false
   },
   {
     "title": "Z kazdym Twym oddechem",
@@ -8119,7 +9309,8 @@
     ],
     "file": "Stachursky-Z kazdym Twym oddechem.json",
     "tracksCount": 1,
-    "search": "stachurskyzkazdymtwymoddechem"
+    "search": "stachurskyzkazdymtwymoddechem",
+    "local": false
   },
   {
     "title": "Zostanmy Razem",
@@ -8143,7 +9334,8 @@
     ],
     "file": "Stachursky-Zostanmy Razem.json",
     "tracksCount": 1,
-    "search": "stachurskyzostanmyrazem"
+    "search": "stachurskyzostanmyrazem",
+    "local": false
   },
   {
     "title": "Run away (Moldova)",
@@ -8169,7 +9361,8 @@
     ],
     "file": "Sun Stroke Project & Olia Tira-Run away (Moldova).json",
     "tracksCount": 1,
-    "search": "sunstrokeprojectoliatirarunawaymoldova"
+    "search": "sunstrokeprojectoliatirarunawaymoldova",
+    "local": false
   },
   {
     "title": "Eye Of The Tiger",
@@ -8194,7 +9387,8 @@
     ],
     "file": "Survivor-Eye Of The Tiger.json",
     "tracksCount": 1,
-    "search": "survivoreyeofthetiger"
+    "search": "survivoreyeofthetiger",
+    "local": false
   },
   {
     "title": "Toxicity",
@@ -8220,7 +9414,8 @@
     ],
     "file": "System of a Down-Toxicity.json",
     "tracksCount": 1,
-    "search": "systemofadowntoxicity"
+    "search": "systemofadowntoxicity",
+    "local": false
   },
   {
     "title": "Morskie Opowieści",
@@ -8244,7 +9439,8 @@
     ],
     "file": "Szanty-Morskie Opowieści.json",
     "tracksCount": 1,
-    "search": "szantymorskieopowiesci"
+    "search": "szantymorskieopowiesci",
+    "local": false
   },
   {
     "title": "Chłopaki Nie Płaczą",
@@ -8268,7 +9464,8 @@
     ],
     "file": "T. Love-Chłopaki Nie Płaczą.json",
     "tracksCount": 1,
-    "search": "tlovechopakiniepacza"
+    "search": "tlovechopakiniepacza",
+    "local": false
   },
   {
     "title": "Ajrisz",
@@ -8293,7 +9490,8 @@
     ],
     "file": "T.Love-Ajrisz.json",
     "tracksCount": 1,
-    "search": "tloveajrisz"
+    "search": "tloveajrisz",
+    "local": false
   },
   {
     "title": "I Love You",
@@ -8317,7 +9515,8 @@
     ],
     "file": "T.Love-I Love You.json",
     "tracksCount": 1,
-    "search": "tloveiloveyou"
+    "search": "tloveiloveyou",
+    "local": false
   },
   {
     "title": "King",
@@ -8341,7 +9540,8 @@
     ],
     "file": "T.Love-King.json",
     "tracksCount": 1,
-    "search": "tloveking"
+    "search": "tloveking",
+    "local": false
   },
   {
     "title": "Nie nie nie",
@@ -8365,7 +9565,8 @@
     ],
     "file": "T.Love-Nie nie nie.json",
     "tracksCount": 1,
-    "search": "tlovenienienie"
+    "search": "tlovenienienie",
+    "local": false
   },
   {
     "title": "Polish Boyfriend",
@@ -8389,7 +9590,8 @@
     ],
     "file": "T.Love-Polish Boyfriend.json",
     "tracksCount": 1,
-    "search": "tlovepolishboyfriend"
+    "search": "tlovepolishboyfriend",
+    "local": false
   },
   {
     "title": "Stokrotka",
@@ -8413,7 +9615,8 @@
     ],
     "file": "T.Love-Stokrotka.json",
     "tracksCount": 1,
-    "search": "tlovestokrotka"
+    "search": "tlovestokrotka",
+    "local": false
   },
   {
     "title": "Warszawa",
@@ -8437,7 +9640,33 @@
     ],
     "file": "T.Love-Warszawa.json",
     "tracksCount": 1,
-    "search": "tlovewarszawa"
+    "search": "tlovewarszawa",
+    "local": false
+  },
+  {
+    "title": "Marsz wilków (TV)",
+    "artist": "TSA",
+    "bpm": 244,
+    "bar": 4,
+    "gap": 7346.393442622951,
+    "video": "1QzTYRPlW0k",
+    "year": "1983",
+    "lastUpdate": "2023-02-24T23:33:46.832Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 120,
+    "author": "Currymalker",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "TSA-Marsz-wilków-TV.json",
+    "tracksCount": 1,
+    "search": "tsamarszwilkowtv",
+    "local": false
   },
   {
     "title": "Zegarmistrz światła",
@@ -8461,7 +9690,8 @@
     ],
     "file": "Tadeusz Woźniak-Zegarmistrz światła.json",
     "tracksCount": 1,
-    "search": "tadeuszwozniakzegarmistrzswiata"
+    "search": "tadeuszwozniakzegarmistrzswiata",
+    "local": false
   },
   {
     "title": "Tarzan",
@@ -8484,7 +9714,8 @@
     ],
     "file": "Tarzan Boy-Tarzan.json",
     "tracksCount": 1,
-    "search": "tarzanboytarzan"
+    "search": "tarzanboytarzan",
+    "local": false
   },
   {
     "title": "Mensenkind",
@@ -8509,7 +9740,8 @@
     ],
     "file": "Tarzan-Mensenkind.json",
     "tracksCount": 1,
-    "search": "tarzanmensenkind"
+    "search": "tarzanmensenkind",
+    "local": false
   },
   {
     "title": "Beelzeboss (The Final Showdown)",
@@ -8543,7 +9775,8 @@
     ],
     "file": "Tenacious D-Beelzeboss (The Final Showdown).json",
     "tracksCount": 3,
-    "search": "tenaciousdbeelzebossthefinalshowdown"
+    "search": "tenaciousdbeelzebossthefinalshowdown",
+    "local": false
   },
   {
     "title": "Kickapoo",
@@ -8566,7 +9799,8 @@
     ],
     "file": "Tenacious D-Kickapoo.json",
     "tracksCount": 1,
-    "search": "tenaciousdkickapoo"
+    "search": "tenaciousdkickapoo",
+    "local": false
   },
   {
     "title": "Master Exploder",
@@ -8592,7 +9826,8 @@
     ],
     "file": "Tenacious D-Master Exploder.json",
     "tracksCount": 1,
-    "search": "tenaciousdmasterexploder"
+    "search": "tenaciousdmasterexploder",
+    "local": false
   },
   {
     "title": "Tribute",
@@ -8617,7 +9852,8 @@
     ],
     "file": "Tenacious D-Tribute.json",
     "tracksCount": 1,
-    "search": "tenaciousdtribute"
+    "search": "tenaciousdtribute",
+    "local": false
   },
   {
     "title": "All You Need Is Love",
@@ -8642,7 +9878,8 @@
     ],
     "file": "The Beatles-All You Need Is Love.json",
     "tracksCount": 1,
-    "search": "thebeatlesallyouneedislove"
+    "search": "thebeatlesallyouneedislove",
+    "local": false
   },
   {
     "title": "Come Together",
@@ -8667,7 +9904,8 @@
     ],
     "file": "The Beatles-Come Together.json",
     "tracksCount": 1,
-    "search": "thebeatlescometogether"
+    "search": "thebeatlescometogether",
+    "local": false
   },
   {
     "title": "Hey Jude",
@@ -8691,7 +9929,8 @@
     ],
     "file": "The Beatles-Hey Jude.json",
     "tracksCount": 1,
-    "search": "thebeatlesheyjude"
+    "search": "thebeatlesheyjude",
+    "local": false
   },
   {
     "title": "Let It Be",
@@ -8715,7 +9954,8 @@
     ],
     "file": "The Beatles-Let It Be.json",
     "tracksCount": 1,
-    "search": "thebeatlesletitbe"
+    "search": "thebeatlesletitbe",
+    "local": false
   },
   {
     "title": "While My Guitar Gently Weeps",
@@ -8740,7 +9980,8 @@
     ],
     "file": "The Beatles-While My Guitar Gently Weeps.json",
     "tracksCount": 1,
-    "search": "thebeatleswhilemyguitargentlyweeps"
+    "search": "thebeatleswhilemyguitargentlyweeps",
+    "local": false
   },
   {
     "title": "Yesterday",
@@ -8764,7 +10005,8 @@
     ],
     "file": "The Beatles-Yesterday.json",
     "tracksCount": 1,
-    "search": "thebeatlesyesterday"
+    "search": "thebeatlesyesterday",
+    "local": false
   },
   {
     "title": "I Gotta Feeling",
@@ -8788,7 +10030,8 @@
     ],
     "file": "The Black Eyed Peas-I Gotta Feeling.json",
     "tracksCount": 1,
-    "search": "theblackeyedpeasigottafeeling"
+    "search": "theblackeyedpeasigottafeeling",
+    "local": false
   },
   {
     "title": "Pump It",
@@ -8813,7 +10056,8 @@
     ],
     "file": "The Black Eyed Peas-Pump It.json",
     "tracksCount": 1,
-    "search": "theblackeyedpeaspumpit"
+    "search": "theblackeyedpeaspumpit",
+    "local": false
   },
   {
     "title": "Lonely boy",
@@ -8838,7 +10082,8 @@
     ],
     "file": "The Black Keys-Lonely boy.json",
     "tracksCount": 1,
-    "search": "theblackkeyslonelyboy"
+    "search": "theblackkeyslonelyboy",
+    "local": false
   },
   {
     "title": "The bad touch",
@@ -8862,7 +10107,8 @@
     ],
     "file": "The Bloodhound Gang-The bad touch.json",
     "tracksCount": 1,
-    "search": "thebloodhoundgangthebadtouch"
+    "search": "thebloodhoundgangthebadtouch",
+    "local": false
   },
   {
     "title": "Wherever You Will Go",
@@ -8888,7 +10134,8 @@
     ],
     "file": "The Calling-Wherever You Will Go.json",
     "tracksCount": 1,
-    "search": "thecallingwhereveryouwillgo"
+    "search": "thecallingwhereveryouwillgo",
+    "local": false
   },
   {
     "title": "Should I Stay Or Should I GO",
@@ -8913,7 +10160,8 @@
     ],
     "file": "The Clash-Should I Stay Or Should I GO.json",
     "tracksCount": 1,
-    "search": "theclashshouldistayorshouldigo"
+    "search": "theclashshouldistayorshouldigo",
+    "local": false
   },
   {
     "title": "Zombie",
@@ -8939,7 +10187,8 @@
     ],
     "file": "The Cranberries-Zombie.json",
     "tracksCount": 1,
-    "search": "thecranberrieszombie"
+    "search": "thecranberrieszombie",
+    "local": false
   },
   {
     "title": "Boys Don't Cry",
@@ -8963,7 +10212,8 @@
     ],
     "file": "The Cure-Boys Don't Cry.json",
     "tracksCount": 1,
-    "search": "thecureboysdontcry"
+    "search": "thecureboysdontcry",
+    "local": false
   },
   {
     "title": "Friday I'm in Love",
@@ -8988,7 +10238,8 @@
     ],
     "file": "The Cure-Friday I'm in Love.json",
     "tracksCount": 1,
-    "search": "thecurefridayiminlove"
+    "search": "thecurefridayiminlove",
+    "local": false
   },
   {
     "title": "Riders on the storm",
@@ -9013,7 +10264,8 @@
     ],
     "file": "The Doors-Riders on the storm.json",
     "tracksCount": 1,
-    "search": "thedoorsridersonthestorm"
+    "search": "thedoorsridersonthestorm",
+    "local": false
   },
   {
     "title": "Caution",
@@ -9038,7 +10290,8 @@
     ],
     "file": "The Killers-Caution.json",
     "tracksCount": 1,
-    "search": "thekillerscaution"
+    "search": "thekillerscaution",
+    "local": false
   },
   {
     "title": "Mr. Brightside",
@@ -9063,7 +10316,8 @@
     ],
     "file": "The Killers-Mr. Brightside.json",
     "tracksCount": 1,
-    "search": "thekillersmrbrightside"
+    "search": "thekillersmrbrightside",
+    "local": false
   },
   {
     "title": "Somebody Told Me",
@@ -9088,7 +10342,8 @@
     ],
     "file": "The Killers-Somebody Told Me.json",
     "tracksCount": 1,
-    "search": "thekillerssomebodytoldme"
+    "search": "thekillerssomebodytoldme",
+    "local": false
   },
   {
     "title": "Pretty fly (for a white guy)",
@@ -9113,7 +10368,8 @@
     ],
     "file": "The Offspring-Pretty fly (for a white guy).json",
     "tracksCount": 1,
-    "search": "theoffspringprettyflyforawhiteguy"
+    "search": "theoffspringprettyflyforawhiteguy",
+    "local": false
   },
   {
     "title": "Message in a bottle",
@@ -9138,7 +10394,8 @@
     ],
     "file": "The Police-Message in a bottle.json",
     "tracksCount": 1,
-    "search": "thepolicemessageinabottle"
+    "search": "thepolicemessageinabottle",
+    "local": false
   },
   {
     "title": "I'm gonna be (500 miles)",
@@ -9162,7 +10419,8 @@
     ],
     "file": "The Proclaimers-I'm gonna be (500 miles).json",
     "tracksCount": 1,
-    "search": "theproclaimersimgonnabe500miles"
+    "search": "theproclaimersimgonnabe500miles",
+    "local": false
   },
   {
     "title": "I'll Be There for You",
@@ -9186,7 +10444,8 @@
     ],
     "file": "The Rembrandts-I'll Be There for You.json",
     "tracksCount": 1,
-    "search": "therembrandtsillbethereforyou"
+    "search": "therembrandtsillbethereforyou",
+    "local": false
   },
   {
     "title": "Paint It, Black",
@@ -9211,7 +10470,8 @@
     ],
     "file": "The Rolling Stones-Paint It, Black.json",
     "tracksCount": 1,
-    "search": "therollingstonespaintitblack"
+    "search": "therollingstonespaintitblack",
+    "local": false
   },
   {
     "title": "Satisfaction (I Can't Get No)",
@@ -9234,7 +10494,8 @@
     ],
     "file": "The Rolling Stones-Satisfaction (I Can't Get No).json",
     "tracksCount": 1,
-    "search": "therollingstonessatisfactionicantgetno"
+    "search": "therollingstonessatisfactionicantgetno",
+    "local": false
   },
   {
     "title": "YMCA",
@@ -9259,7 +10520,8 @@
     ],
     "file": "The Village People-YMCA.json",
     "tracksCount": 1,
-    "search": "thevillagepeopleymca"
+    "search": "thevillagepeopleymca",
+    "local": false
   },
   {
     "title": "Jolene",
@@ -9283,7 +10545,8 @@
     ],
     "file": "The White Stripes-Jolene.json",
     "tracksCount": 1,
-    "search": "thewhitestripesjolene"
+    "search": "thewhitestripesjolene",
+    "local": false
   },
   {
     "title": "Baba O'Riley",
@@ -9309,7 +10572,8 @@
     ],
     "file": "The Who-Baba O'Riley.json",
     "tracksCount": 1,
-    "search": "thewhobabaoriley"
+    "search": "thewhobabaoriley",
+    "local": false
   },
   {
     "title": "Behind Blue Eyes",
@@ -9335,7 +10599,8 @@
     ],
     "file": "The Who-Behind Blue Eyes.json",
     "tracksCount": 1,
-    "search": "thewhobehindblueeyes"
+    "search": "thewhobehindblueeyes",
+    "local": false
   },
   {
     "title": "The Seeker",
@@ -9360,7 +10625,8 @@
     ],
     "file": "The Who-The Seeker.json",
     "tracksCount": 1,
-    "search": "thewhotheseeker"
+    "search": "thewhotheseeker",
+    "local": false
   },
   {
     "title": "Won't get fooled again",
@@ -9386,7 +10652,112 @@
     ],
     "file": "The Who-Won't get fooled again.json",
     "tracksCount": 1,
-    "search": "thewhowontgetfooledagain"
+    "search": "thewhowontgetfooledagain",
+    "local": false
+  },
+  {
+    "title": "Everybody needs somebody to love",
+    "artist": "The Blues Brothers",
+    "bpm": 387.92,
+    "bar": 4,
+    "gap": 17.322334501959176,
+    "video": "EHV0zs0kVGg",
+    "year": "1980",
+    "lastUpdate": "2023-02-25T00:19:03.521Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 194,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "file": "The-Blues-Brothers-Everybody-needs-somebody-to-love.json",
+    "tracksCount": 1,
+    "search": "thebluesbrotherseverybodyneedssomebodytolove",
+    "local": false
+  },
+  {
+    "title": "Hotel California",
+    "artist": "The Eagles",
+    "bpm": 292.8,
+    "bar": 4,
+    "gap": 53573.97260273973,
+    "video": "09839DpTctU",
+    "year": "1976",
+    "lastUpdate": "2023-02-25T00:44:55.410Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 75,
+    "author": "mustangfred and asb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "The-Eagles-Hotel-California.json",
+    "tracksCount": 1,
+    "search": "theeagleshotelcalifornia",
+    "local": false
+  },
+  {
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "bpm": 342.35,
+    "bar": 4,
+    "gap": 27123.25938367168,
+    "video": "ozSQPSnQOSQ",
+    "year": "2019",
+    "lastUpdate": "2023-02-24T23:13:12.753Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 171,
+    "author": "mustangfred",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Blinding+Lights",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "The-Weeknd-Blinding-Lights.json",
+    "tracksCount": 1,
+    "search": "theweekndblindinglights",
+    "local": false
+  },
+  {
+    "title": "Can't Feel My Face",
+    "artist": "The Weeknd",
+    "bpm": 216.06,
+    "bar": 4,
+    "gap": 7453.047764509858,
+    "video": "KEI4qSrkPAs",
+    "year": "2015",
+    "lastUpdate": "2023-02-24T23:16:17.030Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "author": "OGB*Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "The-Weeknd-Cant-Feel-My-Face.json",
+    "tracksCount": 1,
+    "search": "theweekndcantfeelmyface",
+    "local": false
   },
   {
     "title": "GoldenEye",
@@ -9409,7 +10780,8 @@
     ],
     "file": "Tina Turner-GoldenEye.json",
     "tracksCount": 1,
-    "search": "tinaturnergoldeneye"
+    "search": "tinaturnergoldeneye",
+    "local": false
   },
   {
     "title": "The Best",
@@ -9434,7 +10806,8 @@
     ],
     "file": "Tina Turner-The Best.json",
     "tracksCount": 1,
-    "search": "tinaturnerthebest"
+    "search": "tinaturnerthebest",
+    "local": false
   },
   {
     "title": "What’s Love Got To Do With It",
@@ -9459,7 +10832,8 @@
     ],
     "file": "Tina Turner-What’s Love Got To Do With It.json",
     "tracksCount": 1,
-    "search": "tinaturnerwhatslovegottodowithit"
+    "search": "tinaturnerwhatslovegottodowithit",
+    "local": false
   },
   {
     "title": "Anarchia",
@@ -9482,7 +10856,8 @@
     ],
     "file": "Tomasz Karolak-Anarchia.json",
     "tracksCount": 1,
-    "search": "tomaszkarolakanarchia"
+    "search": "tomaszkarolakanarchia",
+    "local": false
   },
   {
     "title": "Zabiorę Cię właśnie tam",
@@ -9506,7 +10881,8 @@
     ],
     "file": "Tomasz Karolak-Zabiorę Cię właśnie tam.json",
     "tracksCount": 1,
-    "search": "tomaszkarolakzabioreciewasnietam"
+    "search": "tomaszkarolakzabioreciewasnietam",
+    "local": false
   },
   {
     "title": "Africa",
@@ -9531,7 +10907,8 @@
     ],
     "file": "Toto-Africa.json",
     "tracksCount": 1,
-    "search": "totoafrica"
+    "search": "totoafrica",
+    "local": false
   },
   {
     "title": "Hold The Line",
@@ -9555,7 +10932,8 @@
     ],
     "file": "Toto-Hold The Line.json",
     "tracksCount": 1,
-    "search": "totoholdtheline"
+    "search": "totoholdtheline",
+    "local": false
   },
   {
     "title": "Beautiful Day",
@@ -9581,7 +10959,8 @@
     ],
     "file": "U2-Beautiful Day.json",
     "tracksCount": 1,
-    "search": "u2beautifulday"
+    "search": "u2beautifulday",
+    "local": false
   },
   {
     "title": "Vertigo",
@@ -9607,7 +10986,8 @@
     ],
     "file": "U2-Vertigo.json",
     "tracksCount": 1,
-    "search": "u2vertigo"
+    "search": "u2vertigo",
+    "local": false
   },
   {
     "title": "With or without you",
@@ -9632,7 +11012,8 @@
     ],
     "file": "U2-With or without you.json",
     "tracksCount": 1,
-    "search": "u2withorwithoutyou"
+    "search": "u2withorwithoutyou",
+    "local": false
   },
   {
     "title": "Champions League (Umyj Bidet)",
@@ -9656,7 +11037,8 @@
     ],
     "file": "UEFA-Champions League (Umyj Bidet).json",
     "tracksCount": 1,
-    "search": "uefachampionsleagueumyjbidet"
+    "search": "uefachampionsleagueumyjbidet",
+    "local": false
   },
   {
     "title": "Konik na biegunach",
@@ -9681,7 +11063,8 @@
     ],
     "file": "Urszula-Konik na biegunach.json",
     "tracksCount": 1,
-    "search": "urszulakoniknabiegunach"
+    "search": "urszulakoniknabiegunach",
+    "local": false
   },
   {
     "title": "Jump",
@@ -9707,7 +11090,8 @@
     ],
     "file": "Van Halen-Jump.json",
     "tracksCount": 1,
-    "search": "vanhalenjump"
+    "search": "vanhalenjump",
+    "local": false
   },
   {
     "title": "A thousand miles",
@@ -9731,7 +11115,8 @@
     ],
     "file": "Vanessa Carlton-A thousand miles.json",
     "tracksCount": 1,
-    "search": "vanessacarltonathousandmiles"
+    "search": "vanessacarltonathousandmiles",
+    "local": false
   },
   {
     "title": "Orla Cien",
@@ -9755,7 +11140,8 @@
     ],
     "file": "Varius Manx-Orla Cien.json",
     "tracksCount": 1,
-    "search": "variusmanxorlacien"
+    "search": "variusmanxorlacien",
+    "local": false
   },
   {
     "title": "Piosenka Ksieżycowa",
@@ -9779,7 +11165,8 @@
     ],
     "file": "Varius Manx-Piosenka Ksieżycowa.json",
     "tracksCount": 1,
-    "search": "variusmanxpiosenkaksiezycowa"
+    "search": "variusmanxpiosenkaksiezycowa",
+    "local": false
   },
   {
     "title": "Boom, Boom, Boom, Boom!!",
@@ -9803,7 +11190,8 @@
     ],
     "file": "Vengaboys-Boom, Boom, Boom, Boom!!.json",
     "tracksCount": 1,
-    "search": "vengaboysboomboomboomboom"
+    "search": "vengaboysboomboomboomboom",
+    "local": false
   },
   {
     "title": "Uncle John From Jamaica",
@@ -9828,7 +11216,8 @@
     ],
     "file": "Vengaboys-Uncle John From Jamaica.json",
     "tracksCount": 1,
-    "search": "vengaboysunclejohnfromjamaica"
+    "search": "vengaboysunclejohnfromjamaica",
+    "local": false
   },
   {
     "title": "We Like To Party",
@@ -9851,7 +11240,8 @@
     ],
     "file": "Vengaboys-We Like To Party.json",
     "tracksCount": 1,
-    "search": "vengaboysweliketoparty"
+    "search": "vengaboysweliketoparty",
+    "local": false
   },
   {
     "title": "We’re going to Ibiza",
@@ -9876,7 +11266,8 @@
     ],
     "file": "Vengaboys-We’re going to Ibiza.json",
     "tracksCount": 1,
-    "search": "vengaboysweregoingtoibiza"
+    "search": "vengaboysweregoingtoibiza",
+    "local": false
   },
   {
     "title": "Alane (Ala nie wali mu pały)",
@@ -9900,7 +11291,8 @@
     ],
     "file": "Wes-Alane (Ala nie wali mu pały).json",
     "tracksCount": 1,
-    "search": "wesalanealaniewalimupay"
+    "search": "wesalanealaniewalimupay",
+    "local": false
   },
   {
     "title": "Last Christmas",
@@ -9924,7 +11316,8 @@
     ],
     "file": "Wham!-Last Christmas.json",
     "tracksCount": 1,
-    "search": "whamlastchristmas"
+    "search": "whamlastchristmas",
+    "local": false
   },
   {
     "title": "Wake Me Up Before You Go-Go",
@@ -9949,7 +11342,8 @@
     ],
     "file": "Wham-Wake Me Up Before You Go-Go.json",
     "tracksCount": 1,
-    "search": "whamwakemeupbeforeyougogo"
+    "search": "whamwakemeupbeforeyougogo",
+    "local": false
   },
   {
     "title": "I Wanna Dance With Somebody",
@@ -9974,7 +11368,8 @@
     ],
     "file": "Whitney Houston-I Wanna Dance With Somebody.json",
     "tracksCount": 1,
-    "search": "whitneyhoustoniwannadancewithsomebody"
+    "search": "whitneyhoustoniwannadancewithsomebody",
+    "local": false
   },
   {
     "title": "Baska",
@@ -9999,7 +11394,8 @@
     ],
     "file": "Wilki-Baska.json",
     "tracksCount": 1,
-    "search": "wilkibaska"
+    "search": "wilkibaska",
+    "local": false
   },
   {
     "title": "Bohema",
@@ -10023,7 +11419,8 @@
     ],
     "file": "Wilki-Bohema.json",
     "tracksCount": 1,
-    "search": "wilkibohema"
+    "search": "wilkibohema",
+    "local": false
   },
   {
     "title": "Na Zawsze",
@@ -10047,7 +11444,8 @@
     ],
     "file": "Wilki-Na Zawsze.json",
     "tracksCount": 1,
-    "search": "wilkinazawsze"
+    "search": "wilkinazawsze",
+    "local": false
   },
   {
     "title": "Urke",
@@ -10071,7 +11469,8 @@
     ],
     "file": "Wilki-Urke.json",
     "tracksCount": 1,
-    "search": "wilkiurke"
+    "search": "wilkiurke",
+    "local": false
   },
   {
     "title": "Król Szamanów",
@@ -10095,7 +11494,8 @@
     ],
     "file": "Wojciech Bujoczek-Król Szamanów.json",
     "tracksCount": 1,
-    "search": "wojciechbujoczekkrolszamanow"
+    "search": "wojciechbujoczekkrolszamanow",
+    "local": false
   },
   {
     "title": "The Fox",
@@ -10118,7 +11518,8 @@
     ],
     "file": "Ylvis-The Fox.json",
     "tracksCount": 1,
-    "search": "ylvisthefox"
+    "search": "ylvisthefox",
+    "local": false
   },
   {
     "title": "Sharp Dressed Man",
@@ -10141,7 +11542,8 @@
     ],
     "file": "ZZ Top-Sharp Dressed Man.json",
     "tracksCount": 1,
-    "search": "zztopsharpdressedman"
+    "search": "zztopsharpdressedman",
+    "local": false
   },
   {
     "title": "Chalupy welcome to",
@@ -10167,7 +11569,8 @@
     ],
     "file": "Zbigniew Wodecki-Chalupy welcome to.json",
     "tracksCount": 1,
-    "search": "zbigniewwodeckichalupywelcometo"
+    "search": "zbigniewwodeckichalupywelcometo",
+    "local": false
   },
   {
     "title": "Bania u cygana",
@@ -10191,7 +11594,8 @@
     ],
     "file": "Zero-Bania u cygana.json",
     "tracksCount": 1,
-    "search": "zerobaniaucygana"
+    "search": "zerobaniaucygana",
+    "local": false
   },
   {
     "title": "Numerek w krzaczkach",
@@ -10215,7 +11619,8 @@
     ],
     "file": "Zielone Żabki-Numerek w krzaczkach.json",
     "tracksCount": 1,
-    "search": "zielonezabkinumerekwkrzaczkach"
+    "search": "zielonezabkinumerekwkrzaczkach",
+    "local": false
   },
   {
     "title": "Take on me",
@@ -10239,7 +11644,8 @@
     ],
     "file": "a-ha-Take on me.json",
     "tracksCount": 1,
-    "search": "ahatakeonme"
+    "search": "ahatakeonme",
+    "local": false
   },
   {
     "title": "Rolling In The Deep",
@@ -10258,7 +11664,8 @@
     ],
     "file": "adele-rolling-in-the-deep.json",
     "tracksCount": 1,
-    "search": "adelerollinginthedeep"
+    "search": "adelerollinginthedeep",
+    "local": false
   },
   {
     "artist": "Netflix",
@@ -10278,6 +11685,7 @@
     ],
     "file": "netflix-toss-a-coin-to-your-witcher.json",
     "tracksCount": 1,
-    "search": "netflixtossacointoyourwitcher"
+    "search": "netflixtossacointoyourwitcher",
+    "local": false
   }
 ]
