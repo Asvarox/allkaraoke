@@ -250,6 +250,9 @@ const SongListEntry = styled(SongCard)<{ video: string; focused: boolean }>`
     ${(props) => props.focused && focused}
     border: 0.1rem black solid;
     border-radius: 0.5rem;
+
+    content-visibility: auto;
+    contain-intrinsic-size: calc((25% - ((3 / 4) * var(--song-list-gap))) / 16 * 9);
 `;
 
 const LoaderContainer = styled.div`
