@@ -127,7 +127,11 @@ class InputManager {
                     if (allInputsConnected) {
                         await Promise.all(
                             this.playerInputs.map((playerInput) =>
-                                this.sourceNameToInput(playerInput.inputSource).requestReadiness(playerInput.deviceId),
+                                this.sourceNameToInput(playerInput.inputSource)
+                                    .requestReadiness(playerInput.deviceId)
+                                    .then(() => {
+                                        GameStateEvents.readinessConfirmed.dispatch(playerInput.deviceId!);
+                                    }),
                             ),
                         );
                         gameStateEvents.inputListChanged.unsubscribe(request);

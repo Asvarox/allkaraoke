@@ -90,6 +90,7 @@ export const events = {
     remoteKeyboardPressed: new GameStateEvent<(key: keyStrokes) => void>('remoteKeyboardPressed', true),
     remoteKeyboardLayout: new GameStateEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
     remoteReadinessRequested: new GameStateEvent('remoteReadinessRequested'),
+    readinessConfirmed: new GameStateEvent<(deviceId: string) => void>('remoteReadinessConfirmed'),
 };
 
 export default events;

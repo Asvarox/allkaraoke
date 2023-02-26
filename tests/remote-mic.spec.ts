@@ -1,7 +1,7 @@
-import { expect, test } from "@playwright/test";
-import { initTestMode, mockSongs } from "./helpers";
-import connectRemotePhone from "./steps/connectRemotePhone";
-import navigateWithKeyboard from "./steps/navigateWithKeyboard";
+import { expect, test } from '@playwright/test';
+import { initTestMode, mockSongs } from './helpers';
+import connectRemotePhone from './steps/connectRemotePhone';
+import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -9,8 +9,11 @@ test.beforeEach(async ({ page, context }) => {
 });
 
 // Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-// Not disabling it globaly so in case SW breaks the app it is caught by other tests
+// Not disabling it globally so in case SW breaks the app it is caught by other tests
 test.use({ serviceWorkers: 'block' });
+
+const P1_Name = 'E2E Test Blue';
+const P2_Name = 'E2E Test Red';
 
 test('Remote mic should connect, be selectable and control the game', async ({ page, context, browserName }) => {
     test.slow();
@@ -18,14 +21,14 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await page.getByTestId('remote-mics').click({ force: true });
 
     // Connect blue microphone
-    const remoteMicBluePage = await connectRemotePhone(page, context, 'E2E Test Blue');
+    const remoteMicBluePage = await connectRemotePhone(page, context, P1_Name);
 
     // Connect red microphone
-    const remoteMicRed = await connectRemotePhone(page, context, 'E2E Test Red');
+    const remoteMicRed = await connectRemotePhone(page, context, P2_Name);
 
     // Assert auto selection of inputs
-    await expect(page.getByTestId('mic-check-p1')).toContainText('E2E Test Blue', { ignoreCase: true });
-    await expect(page.getByTestId('mic-check-p2')).toContainText('E2E Test Red', { ignoreCase: true });
+    await expect(page.getByTestId('mic-check-p1')).toContainText(P1_Name, { ignoreCase: true });
+    await expect(page.getByTestId('mic-check-p2')).toContainText(P2_Name, { ignoreCase: true });
 
     await navigateWithKeyboard(page, 'save-button', remoteMicBluePage);
     await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
@@ -33,7 +36,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
     // Check if the phones reconnect automatically
-    await page.reload({ force: true });
+    await page.reload();
 
     await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {
         ignoreCase: true,
@@ -44,22 +47,22 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     });
 
     await Promise.race([
-        expect(page.locator('.Toastify')).toContainText('E2E Test Blue connected', {
+        expect(page.locator('.Toastify')).toContainText(`${P1_Name} connected`, {
             ignoreCase: true,
         }),
-        expect(page.locator('.Toastify')).toContainText('E2E Test Red connected', {
+        expect(page.locator('.Toastify')).toContainText(`${P2_Name} connected`, {
             ignoreCase: true,
         }),
     ]);
 
     // Check if the mics are reselected after they refresh
     await remoteMicBluePage.reload();
-    await remoteMicBluePage.getByTestId('player-name-input').fill('E2E Test Blue');
+    await remoteMicBluePage.getByTestId('player-name-input').fill(P1_Name);
     await remoteMicBluePage.getByTestId('connect-button').click();
     await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
 
     await remoteMicRed.reload();
-    await remoteMicRed.getByTestId('player-name-input').fill('E2E Test Red');
+    await remoteMicRed.getByTestId('player-name-input').fill(P2_Name);
     await remoteMicRed.getByTestId('connect-button').click();
     await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
 
@@ -78,6 +81,10 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
 
     await test.step('Check if restart song is possible', async () => {
         await remoteMicBluePage.getByTestId('ready-button').click({ force: true });
+        await expect(await page.locator(`[data-test="player-confirm-status"][data-name="${P1_Name}"]`)).toHaveAttribute(
+            'data-confirmed',
+            'true',
+        );
         await remoteMicRed.getByTestId('ready-button').click({ force: true });
 
         // Check if restart song is possible
@@ -108,8 +115,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
         expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
     }).toPass();
 
-    await expect(page.getByTestId('player-1-name')).toHaveText('E2E Test Blue');
-    await expect(page.getByTestId('player-2-name')).toHaveText('E2E Test Red');
+    await expect(page.getByTestId('player-1-name')).toHaveText(P1_Name);
+    await expect(page.getByTestId('player-2-name')).toHaveText(P2_Name);
 
     await expect(page.getByTestId('highscores-button')).toBeVisible();
     await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });

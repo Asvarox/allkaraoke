@@ -3,7 +3,7 @@ import { VideoState } from 'Elements/VideoPlayer';
 import useSong from 'Songs/hooks/useSong';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup } from 'interfaces';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import calculateScore from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
@@ -12,8 +12,7 @@ import useViewportSize from '../../../hooks/useViewportSize';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { typography } from 'Elements/cssMixins';
+import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
 
 interface Props {
     video: string;
@@ -39,17 +38,6 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
     }, [song.data, singSetup]);
 
     const [isTransitionTimeout, setIsTransitionTimeout] = useState(false);
-    const [areAllPlayersReady, setAreAllPlayersReady] = useState(false);
-    useEffect(() => {
-        const inputsReady = InputManager.requestReadiness().then(() => setAreAllPlayersReady(true));
-        const minTimeElapsed = new Promise((resolve) => setTimeout(resolve, 3_000));
-        const maxTimeElapsed = new Promise((resolve) => setTimeout(resolve, 10_000));
-
-        Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]).then(() => {
-            setIsTransitionTimeout(true);
-            player.current?.play();
-        });
-    }, []);
 
     if (!width || !height || !song.data) return <>Loading</>;
 
@@ -70,13 +58,12 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
                     <TransitionWrapper show={!isTransitionTimeout && playerState === VideoState.UNSTARTED}>
                         <>
                             <Overlay video={video} width={width} height={height} />
-                            {!areAllPlayersReady && (
-                                <WaitingForReady>
-                                    <span>
-                                        Waiting for all players to click <strong>"Ready"</strong>
-                                    </span>
-                                </WaitingForReady>
-                            )}
+                            <WaitForReadiness
+                                onFinish={() => {
+                                    setIsTransitionTimeout(true);
+                                    player.current?.play();
+                                }}
+                            />
                         </>
                     </TransitionWrapper>
                 </BackgroundContainer>
@@ -107,21 +94,6 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
 
 const Container = styled.div`
     position: relative;
-`;
-
-const WaitingForReady = styled.div`
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    font-size: 7rem;
-    ${typography};
 `;
 
 const BackgroundContainer = styled.div`
