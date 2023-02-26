@@ -1,9 +1,11 @@
 import { Box, Button, TextField } from '@mui/material';
+import VolumeAdjustment from 'Scenes/Convert/Steps/VolumeAdjustment';
 
 export interface SongMetadataEntity {
     year: string;
     realBpm: string;
     language: string;
+    volume: number;
 }
 
 interface Props {
@@ -11,6 +13,7 @@ interface Props {
     data: SongMetadataEntity;
     songTitle?: string;
     songArtist?: string;
+    videoId: string;
 }
 
 export default function SongMetadata(props: Props) {
@@ -55,29 +58,29 @@ export default function SongMetadata(props: Props) {
                     ),
                 }}
             />
-            <Box sx={{ display: 'flex', flexDirection: 'row', mt: 2, alignItems: 'center', width: '100%' }}>
-                <TextField
-                    data-test="song-bpm"
-                    value={props.data.realBpm}
-                    onChange={(e) => props.onChange({ ...props.data, realBpm: e.target.value })}
-                    label="Song (real) BPM"
-                    fullWidth
-                    type="number"
-                    size="small"
-                    required
-                    InputProps={{
-                        endAdornment: (
-                            <Button
-                                color={'secondary'}
-                                variant={'contained'}
-                                onClick={() => searchGoogle('tempo')}
-                                disabled={!isSearchableForVideo}>
-                                Search&nbsp;for&nbsp;tempo
-                            </Button>
-                        ),
-                    }}
-                />
-            </Box>
+            <TextField
+                data-test="song-bpm"
+                sx={{ mt: 2 }}
+                value={props.data.realBpm}
+                onChange={(e) => props.onChange({ ...props.data, realBpm: e.target.value })}
+                label="Song (real) BPM"
+                fullWidth
+                type="number"
+                size="small"
+                required
+                InputProps={{
+                    endAdornment: (
+                        <Button
+                            color={'secondary'}
+                            variant={'contained'}
+                            onClick={() => searchGoogle('tempo')}
+                            disabled={!isSearchableForVideo}>
+                            Search&nbsp;for&nbsp;tempo
+                        </Button>
+                    ),
+                }}
+            />
+            <VolumeAdjustment {...props} />
         </Box>
     );
 }

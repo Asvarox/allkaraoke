@@ -30,6 +30,7 @@ export default function Convert({ song }: Props) {
         realBpm: String(song?.realBpm) ?? '',
         year: song?.year ?? '',
         language: song?.language ?? '',
+        volume: song?.volume ?? 0.5,
     });
 
     const [editedSong, setEditedSong] = useState<Song | undefined>(song);
@@ -112,6 +113,7 @@ export default function Convert({ song }: Props) {
         realBpm: +metadataEntity.realBpm,
         sourceUrl: basicData.sourceUrl,
     };
+    console.log(finalSong);
 
     return (
         <StyledEngineProvider injectFirst>
@@ -170,6 +172,7 @@ export default function Convert({ song }: Props) {
                             data={metadataEntity}
                             songArtist={conversionResult?.artist}
                             songTitle={conversionResult?.title}
+                            videoId={conversionResult!.video}
                         />
                     )}
                     <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>

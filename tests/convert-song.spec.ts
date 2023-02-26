@@ -1,7 +1,7 @@
-import { expect, test } from "@playwright/test";
-import { Song } from "../src/interfaces";
-import convertTxtToSong from "../src/Songs/utils/convertTxtToSong";
-import { initTestMode, mockSongs } from "./helpers";
+import { expect, test } from '@playwright/test';
+import { Song } from '../src/interfaces';
+import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import { initTestMode, mockSongs } from './helpers';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -20,6 +20,7 @@ const FINAL_GAP = '4000';
 const FINAL_BPM = '200';
 const FINAL_TRACKS = 2;
 const FINAL_TRACK_1_SECTIONS = 10;
+const FINAL_VOLUME = '0.75';
 
 test('Convert song', async ({ page }) => {
     test.slow();
@@ -151,6 +152,7 @@ test('Convert song', async ({ page }) => {
     await page.locator('[data-test="release-year"] input').fill(FINAL_YEAR);
 
     await page.locator('[data-test="song-bpm"] input').fill(FINAL_SONG_BPM);
+    await page.locator('[data-test="volume"] input').fill(FINAL_VOLUME);
 
     // Download song
     await expect(page.getByTestId('next-button')).not.toBeVisible();
@@ -181,10 +183,11 @@ test('Convert song', async ({ page }) => {
     expect(downloadContent.videoGap).toEqual(+FINAL_VIDEO_GAP);
     expect(downloadContent.gap).toEqual(+FINAL_GAP);
     expect(downloadContent.bpm).toEqual(+FINAL_BPM);
+    expect(downloadContent.volume).toEqual(+FINAL_VOLUME);
     expect(downloadContent.tracks).toHaveLength(FINAL_TRACKS);
     expect(downloadContent.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
 
-    page.on('dialog', dialog => dialog.accept());
+    page.on('dialog', (dialog) => dialog.accept());
 
     await page.locator('[data-test="delete-song"][data-song="convert-test.json"]').click();
     await expect(page.locator('[data-test="delete-song"][data-song="convert-test.json"]')).not.toBeVisible();
