@@ -7487,6 +7487,31 @@
     "local": false
   },
   {
+    "title": "Dragostea Din Tei",
+    "artist": "O-Zone",
+    "bpm": 260.05,
+    "bar": 4,
+    "gap": 37659.41934243415,
+    "video": "YnopHCL1Jk8",
+    "year": "2003",
+    "lastUpdate": "2023-02-24T21:50:37.069Z",
+    "language": "Romanian",
+    "videoGap": 90,
+    "realBpm": 130,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 273
+      }
+    ],
+    "file": "O-Zone-Dragostea-Din-Tei.json",
+    "tracksCount": 1,
+    "search": "ozonedragosteadintei",
+    "local": false
+  },
+  {
     "title": "Kiedy powiem sobie dość",
     "artist": "ONA",
     "bpm": 82.8,
