@@ -4,13 +4,17 @@ import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
+import { useRoute } from 'wouter';
 
 const linkObject = new URL(window.location.href);
-linkObject.hash = `/phone/${WebRTCServer.getRoomId()}`;
+linkObject.hash = `/phone/`;
 
-const link = linkObject.href;
+const linkBase = linkObject.href;
 
 function ConnectPhone() {
+    const [match, params] = useRoute<{ roomId: string }>('/phone/:roomId');
+    const link = `${linkBase}${match ? params.roomId : WebRTCServer.getRoomId()}`;
+
     useEffect(() => {
         WebRTCServer.start();
     }, []);
