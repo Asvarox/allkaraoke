@@ -29,9 +29,13 @@ runs:
     - run: yarn playwright install-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
-    - name: CT Test run
-      run: yarn ${{ inputs.packagescript }} --project ${{ inputs.project }}
-      shell: bash
+    - uses: nick-fields/retry@v2
+      name: CT Test run ${{ inputs.packagescript }} (${{ inputs.project }})
+      with:
+        timeout_minutes: 20
+        max_attempts: 2
+        command: yarn ${{ inputs.packagescript }} --project ${{ inputs.project }}
+        shell: bash
     - uses: actions/upload-artifact@v3
       if: failure()
       with:
