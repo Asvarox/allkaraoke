@@ -9,12 +9,13 @@ import { SvgIcon } from '@mui/material';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 
 interface Props {
-    onPreferenceSelected: (preference: typeof MicSetupPreference[number]) => void;
+    onPreferenceSelected: (preference: (typeof MicSetupPreference)[number]) => void;
     previouslySelected: string | null;
+    onBack?: () => void;
 }
 
-function SelectPreference({ onPreferenceSelected, previouslySelected }: Props) {
-    const { register } = useKeyboardNav();
+function SelectPreference({ onPreferenceSelected, previouslySelected, onBack }: Props) {
+    const { register } = useKeyboardNav({ onBackspace: onBack });
     return (
         <>
             <Option

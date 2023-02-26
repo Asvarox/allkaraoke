@@ -34,14 +34,19 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
     const handleConnect: FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault();
 
-        connectToServer();
+        if (name === '') {
+            inputRef.current?.focus();
+        } else {
+            connectToServer();
+        }
     };
 
     useEffect(() => {
         inputRef.current?.focus();
 
         if (window.sessionStorage.getItem('reload-mic-request') !== null) {
-            window.sessionStorage.removeItem('reload-mic-request');
+            // give other components option to read the property on mount before its removed
+            window.setTimeout(() => window.sessionStorage.removeItem('reload-mic-request'), 1);
             connectToServer(true);
         }
     }, []);
@@ -70,7 +75,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
                     autoFocus
                     data-test="player-name-input"
                 />
-                <MenuButton type="submit" disabled={disabled || name === ''} data-test="connect-button">
+                <MenuButton type="submit" disabled={disabled} data-test="connect-button">
                     {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                 </MenuButton>

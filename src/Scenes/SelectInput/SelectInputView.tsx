@@ -13,7 +13,8 @@ import tuple from 'utils/tuple';
 import posthog from 'posthog-js';
 
 interface Props {
-    onFinish: (pref: typeof MicSetupPreference[number]) => void;
+    onFinish: (pref: (typeof MicSetupPreference)[number]) => void;
+    onBack?: () => void;
     closeButtonText: string;
     playerNames?: string[];
 }
@@ -25,13 +26,13 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 
 const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
-function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
-    const [preference, setPreference] = useState<typeof MicSetupPreference[number]>(null);
+function SelectInputView({ onFinish, closeButtonText, playerNames, onBack }: Props) {
+    const [preference, setPreference] = useState<(typeof MicSetupPreference)[number]>(null);
     const [isComplete, setIsComplete] = useState(false);
 
     const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
 
-    const onSave = (pref: typeof MicSetupPreference[number]) => () => {
+    const onSave = (pref: (typeof MicSetupPreference)[number]) => () => {
         // Keep currently selected preference unless nothing (null) is selected - then store `skip` directly
         // skip is needed to mark that user explicitly didn't select anything
         setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
@@ -64,7 +65,11 @@ function SelectInputView({ onFinish, closeButtonText, playerNames }: Props) {
                 )}
             </Heading>
             {preference === null && (
-                <SelectPreference onPreferenceSelected={setPreference} previouslySelected={previouslySelected} />
+                <SelectPreference
+                    onPreferenceSelected={setPreference}
+                    previouslySelected={previouslySelected}
+                    onBack={onBack}
+                />
             )}
             {preference === 'remoteMics' && (
                 <RemoteMics

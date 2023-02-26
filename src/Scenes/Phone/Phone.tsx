@@ -60,7 +60,7 @@ function Phone({ roomId }: Props) {
         <>
             <NormalizeFontSize size={10} />
             <LayoutWithBackground>
-                <Container>
+                <Container id="phone-ui-container">
                     <MicPreview isVisible isMicOn={monitoringStarted} isConnected={connectionStatus === 'connected'} />
                     <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
                         <ConfirmReadiness onConfirm={onConfirm} />

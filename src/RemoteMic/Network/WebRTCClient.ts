@@ -73,6 +73,7 @@ class WebRTCClient {
                 } else if (type === 'reload-mic') {
                     this.sendEvent('unregister');
                     window.sessionStorage.setItem('reload-mic-request', '1');
+                    document.getElementById('phone-ui-container')?.remove();
                     window.location.reload();
                 } else if (type === 'request-readiness') {
                     events.remoteReadinessRequested.dispatch();
