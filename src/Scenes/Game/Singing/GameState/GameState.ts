@@ -11,6 +11,8 @@ import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];
     private playerNotes: PlayerNote[] = [];
+    private realFrequencyRecords: FrequencyRecord[] = [];
+    private realPlayerNotes: PlayerNote[] = [];
     private min = Infinity;
     private max = -Infinity;
 
@@ -34,15 +36,29 @@ class PlayerState {
         const currentTime = this.gameState.getCurrentTime();
 
         const frequency = InputManager.getPlayerFrequency(this.index);
+        const currentTimestamp = currentTime - InputManager.getPlayerInputLag(this.index);
 
-        const record = {
-            timestamp: currentTime - InputManager.getPlayerInputLag(this.index),
-            frequency,
-        };
+        // If it's a pack of frequencies (from remote mic), restore last "real" frequencies,
+        // add and recalculate for the received pack, and store newly computed
+        // frequencies for the moment when new package arrive.
+        // If it's a single frequency, just add it to the notes
+        if (Array.isArray(frequency)) {
+            const lastRealRecord = this.realFrequencyRecords.at(-1) || this.frequencyRecords[0];
+            const timestampStep = (currentTimestamp - lastRealRecord.timestamp) / frequency.length;
 
-        this.frequencyRecords.push(record);
+            this.frequencyRecords = this.realFrequencyRecords;
+            this.playerNotes = this.realPlayerNotes;
 
-        this.updatePlayerNotes(record);
+            for (let i = 0; i < frequency.length; i++) {
+                const timestamp = lastRealRecord.timestamp + timestampStep * (i + 1);
+                this.updatePlayerNotes(timestamp, frequency[i]);
+            }
+
+            this.realFrequencyRecords = [...this.frequencyRecords];
+            this.realPlayerNotes = JSON.parse(JSON.stringify(this.playerNotes));
+        } else {
+            this.updatePlayerNotes(currentTimestamp, frequency);
+        }
 
         this.dispatchSectionUpdate();
     };
@@ -55,7 +71,10 @@ class PlayerState {
         }
     };
 
-    public updatePlayerNotes = (record: FrequencyRecord) => {
+    public updatePlayerNotes = (timestamp: number, frequency: number) => {
+        const record = { timestamp, frequency };
+        this.frequencyRecords.push(record);
+
         const recordBeat = record.timestamp / this.gameState.getSongBeatLength();
         const recordSection = this.getSectionByBeat(recordBeat);
 

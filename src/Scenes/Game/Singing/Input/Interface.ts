@@ -3,7 +3,7 @@ export default interface InputInterface {
     getChannelsCount: (deviceId?: string) => number;
     stopMonitoring: (deviceId?: string) => Promise<void>;
     getInputLag: (deviceId?: string) => number;
-    getFrequencies: (deviceId?: string) => number[];
+    getFrequencies: (deviceId?: string) => number[] | number[][];
     getVolumes: (deviceId?: string) => number[];
 
     requestReadiness: (deviceId?: string) => Promise<boolean>;

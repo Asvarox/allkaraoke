@@ -30,7 +30,7 @@ export interface WebRTCSetPlayerNumber {
 
 export interface WebRTCNewFrequencyEvent {
     t: 'freq';
-    0: number; // frequency
+    0: number[]; // frequencies
     1: number; // volume
 }
 

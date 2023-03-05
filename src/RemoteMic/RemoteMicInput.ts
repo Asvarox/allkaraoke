@@ -4,7 +4,7 @@ import { WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './Network/sendEvent';
 
 class PhoneInput implements InputInterface {
-    private frequencies = [0];
+    private frequencies: number[] | number[][] = [0];
     private volumes = [0];
 
     private requestReadinessPromise: null | Promise<boolean> = null;
@@ -13,7 +13,14 @@ class PhoneInput implements InputInterface {
 
     getChannelsCount = () => 1;
 
-    getFrequencies = () => this.frequencies;
+    getFrequencies = () => {
+        const freqs = this.frequencies;
+
+        if (Array.isArray(freqs[0])) {
+            this.frequencies = [freqs[0].at(-1)!];
+        }
+        return freqs;
+    };
     getVolumes = () => this.volumes;
 
     getInputLag = () => 200;

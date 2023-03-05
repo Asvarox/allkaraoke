@@ -18,6 +18,11 @@ class WebRTCServer {
         } else {
             this.start();
         }
+
+        window.addEventListener('beforeunload', () => {
+            PhoneManager.getPhones().forEach((phone) => phone.connection.close());
+            this.peer?.disconnect();
+        });
     }
 
     public start = () => {

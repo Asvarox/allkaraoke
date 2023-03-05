@@ -23,9 +23,21 @@ class WebRTCClient {
     private connection: DataConnection | null = null;
     private reconnecting = false;
 
-    private onFrequencyUpdate = throttle((freq: number, volume: number) => {
-        this.sendEvent('freq', [roundTo(freq, 2), roundTo(volume, 4)]);
-    }, 50);
+    private frequencies: number[] = [];
+
+    private sendFrequencies = throttle((volume: number) => {
+        const freqs = this.frequencies.map((freq) => roundTo(freq, 2));
+        this.frequencies.length = 0;
+        this.sendEvent('freq', [freqs, roundTo(volume, 4)]);
+    }, 75);
+
+    // Chunk frequencies and send them in packages
+    // One package throttled with 75ms contains ~10 frequencies
+    private onFrequencyUpdate = (freq: number, volume: number) => {
+        this.frequencies.push(freq);
+
+        this.sendFrequencies(volume);
+    };
 
     private setClientId = (id: string) => {
         this.clientId = id;
@@ -51,6 +63,8 @@ class WebRTCClient {
         this.connection.on('open', () => {
             this.reconnecting = false;
 
+            window.addEventListener('beforeunload', this.disconnect);
+
             this.sendEvent('register', { name, id: this.clientId!, silent });
 
             events.karaokeConnectionStatusChange.dispatch('connected');
@@ -71,6 +85,7 @@ class WebRTCClient {
                 } else if (type === 'keyboard-layout') {
                     events.remoteKeyboardLayout.dispatch(data.help);
                 } else if (type === 'reload-mic') {
+                    window.removeEventListener('beforeunload', this.disconnect);
                     this.sendEvent('unregister');
                     window.sessionStorage.setItem('reload-mic-request', '1');
                     document.getElementById('phone-ui-container')?.remove();
@@ -84,6 +99,8 @@ class WebRTCClient {
         this.connection.on('error', console.warn);
 
         this.connection.on('close', () => {
+            window.removeEventListener('beforeunload', this.disconnect);
+
             events.karaokeConnectionStatusChange.dispatch('disconnected');
             events.remoteMicPlayerNumberSet.dispatch(null);
             PhoneMic.removeListener(this.onFrequencyUpdate);
@@ -120,6 +137,10 @@ class WebRTCClient {
 
     private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
         sendEvent(this.connection, type, payload);
+    };
+
+    private disconnect = () => {
+        this.connection?.close();
     };
 }
 
