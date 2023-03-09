@@ -11,6 +11,7 @@ import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import SongDao from 'Songs/SongDao';
 import { navigate } from 'hooks/useHashLocation';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
+import { Link } from 'wouter';
 
 interface Props {
     song?: Song;
@@ -119,6 +120,13 @@ export default function Convert({ song }: Props) {
         <StyledEngineProvider injectFirst>
             <NormalizeFontSize />
             <Container>
+                {!song && (
+                    <div style={{ marginBottom: '1rem' }}>
+                        <Link to="/">
+                            <a>Return to the main menu</a>
+                        </Link>
+                    </div>
+                )}
                 <Stepper activeStep={currentStep} sx={{ mb: 2 }}>
                     <Step key={0} completed={isBasicInfoCompleted}>
                         <StepLabel>Basic Info</StepLabel>
