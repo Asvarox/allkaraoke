@@ -52,6 +52,14 @@ const applyChanges = (song: Song, changes: ChangeRecord[]) => ({
     }),
 });
 
+const applyTrackNames = (song: Song, trackNames: (string | undefined)[]): Song => ({
+    ...song,
+    tracks: song.tracks.map((track, index) => ({
+        ...track,
+        name: trackNames[index] ?? track.name,
+    })),
+});
+
 const playerWidth = 800;
 const playerHeight = (playerWidth / 16) * 9;
 
@@ -65,6 +73,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     const [playerKey, setPlayerKey] = useState(0);
     const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
     const [effectsEnabled, setEffectsEnabled] = useState<boolean>(false);
+    const [trackNames, setTrackNames] = useState(song.tracks.map((track) => track.name ?? undefined));
 
     const newSong = useMemo(() => {
         let processed = cloneDeep(song);
@@ -76,13 +85,12 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         processed = shiftVideoGap(processed, videoGapShift);
         processed = setBpm(processed, overrideBpm);
         processed = applyChanges(processed, changeRecords);
+        processed = applyTrackNames(processed, trackNames);
         processed = normaliseSectionPaddings(processed);
         processed = normaliseLyricSpaces(processed);
 
-        console.log(processed);
-
         return processed;
-    }, [gapShift, videoGapShift, song, overrideBpm, changeRecords]);
+    }, [gapShift, videoGapShift, song, overrideBpm, changeRecords, trackNames]);
 
     useEffect(() => {
         onUpdate?.(newSong);
@@ -210,7 +218,15 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                             currentTime={currentTime}
                             beatLength={beatLength}
                             player={player.current}
-                            onChange={setChangeRecords}
+                            onRecordChange={setChangeRecords}
+                            onTrackNameChange={(track, newName) =>
+                                setTrackNames((current) => {
+                                    const newNames = [...current];
+                                    newNames[track] = newName === '' ? undefined : newName;
+
+                                    return newNames;
+                                })
+                            }
                         />
                     </Grid>
                     <Grid item xs={4}>

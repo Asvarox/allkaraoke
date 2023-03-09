@@ -21,6 +21,7 @@ const FINAL_BPM = '200';
 const FINAL_TRACKS = 2;
 const FINAL_TRACK_1_SECTIONS = 10;
 const FINAL_VOLUME = '0.75';
+const TRACK_2_NAME = 'Track 2 Name';
 
 test('Convert song', async ({ page }) => {
     test.slow();
@@ -111,7 +112,9 @@ test('Convert song', async ({ page }) => {
 
     // Edit sections
     await page.getByTestId('track-2').click();
+    await page.locator('[data-test=track-name] input').fill(TRACK_2_NAME);
     await expect(page.getByTestId('section-0')).toContainText('Second Track');
+
     await page.getByTestId('track-1').click();
     await expect(page.getByTestId('section-0')).not.toContainText('Second Track');
     await page.getByTestId('section-0').click();
@@ -186,6 +189,8 @@ test('Convert song', async ({ page }) => {
     expect(downloadContent.volume).toEqual(+FINAL_VOLUME);
     expect(downloadContent.tracks).toHaveLength(FINAL_TRACKS);
     expect(downloadContent.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
+    expect(downloadContent.tracks[0].name).not.toBeDefined();
+    expect(downloadContent.tracks[1].name).toEqual(TRACK_2_NAME);
 
     page.on('dialog', (dialog) => dialog.accept());
 

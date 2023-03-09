@@ -26,7 +26,8 @@ interface Props {
     currentTime: number;
     beatLength: number;
     player: PlayerRef;
-    onChange: (changeRecords: ChangeRecord[]) => void;
+    onRecordChange: (changeRecords: ChangeRecord[]) => void;
+    onTrackNameChange: (track: number, newName: string) => void;
 }
 
 interface ChangeRecordBase {
@@ -49,7 +50,14 @@ interface ChangeRecordDelete extends ChangeRecordBase {
 
 export type ChangeRecord = ChangeRecordDelete | ChangeRecordShift;
 
-export default function EditSection({ song, currentTime, beatLength, player, onChange }: Props) {
+export default function EditSection({
+    song,
+    currentTime,
+    beatLength,
+    player,
+    onRecordChange,
+    onTrackNameChange,
+}: Props) {
     const [track, setTrack] = useState(0);
     const [selectedSection, setSelectedSection] = useState(-1);
     const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
@@ -93,27 +101,37 @@ export default function EditSection({ song, currentTime, beatLength, player, onC
     };
 
     useEffect(() => {
-        onChange(changeRecords);
-    }, [onChange, changeRecords]);
+        onRecordChange(changeRecords);
+    }, [onRecordChange, changeRecords]);
 
     return (
         <SectionEdtiorContainer>
-            <Typography variant={'h6'} mb={0}>
-                Edit verses
-                {song.tracks.length > 1 && (
-                    <ButtonGroup variant={'contained'} sx={{ ml: 2 }} size={'small'}>
-                        {song.tracks.map((_, index) => (
-                            <Button
-                                key={index}
-                                onClick={() => setTrack(index)}
-                                disabled={track === index}
-                                data-test={`track-${index + 1}`}>
-                                Track {index + 1}
-                            </Button>
-                        ))}
-                    </ButtonGroup>
-                )}
-            </Typography>
+            <Stack direction="row">
+                <Typography variant={'h6'} mb={0} sx={{ flex: 1 }}>
+                    Edit verses
+                    {song.tracks.length > 1 && (
+                        <ButtonGroup variant={'contained'} sx={{ ml: 2 }} size={'small'}>
+                            {song.tracks.map((_, index) => (
+                                <Button
+                                    key={index}
+                                    onClick={() => setTrack(index)}
+                                    disabled={track === index}
+                                    data-test={`track-${index + 1}`}>
+                                    Track {index + 1}
+                                </Button>
+                            ))}
+                        </ButtonGroup>
+                    )}
+                </Typography>
+                <TextField
+                    placeholder="Set track name"
+                    sx={{ flex: 1 }}
+                    size="small"
+                    value={song.tracks[track]?.name ?? ''}
+                    onChange={(e) => onTrackNameChange(track, e.target.value)}
+                    data-test="track-name"
+                />
+            </Stack>
             <Stack direction="row" spacing={2} sx={{ height: '400px' }}>
                 <List sx={{ overflowY: 'auto' }}>
                     {sections.map((section, index) => (
