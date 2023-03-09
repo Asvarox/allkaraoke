@@ -5549,6 +5549,34 @@
     "local": false
   },
   {
+    "title": "Born This Way",
+    "artist": "Lady Gaga",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 153151.7741935484,
+    "video": "wV1FrqwZyKw",
+    "year": "2011",
+    "lastUpdate": "2023-03-06T13:56:48.749Z",
+    "edition": "[SC]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.5,
+    "author": "klops_007",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=11455",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Lady-Gaga-Born-This-Way.json",
+    "tracksCount": 1,
+    "search": "ladygagabornthisway",
+    "local": false
+  },
+  {
     "title": "Blue Jeans",
     "artist": "Lana Del Rey",
     "bpm": 235.92,
@@ -6747,6 +6775,86 @@
     "local": false
   },
   {
+    "title": "Dirty Diana",
+    "artist": "Michael Jackson",
+    "bpm": 262.32,
+    "bar": 4,
+    "gap": 31207.90484903934,
+    "video": "lFqZOYtFtOY",
+    "year": "1986",
+    "lastUpdate": "2023-03-06T14:06:44.435Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=8792",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Michael-Jackson-Dirty-Diana.json",
+    "tracksCount": 1,
+    "search": "michaeljacksondirtydiana",
+    "local": false
+  },
+  {
+    "title": "Give In To Me",
+    "artist": "Michael Jackson",
+    "bpm": 400,
+    "bar": 4,
+    "gap": 13673.5,
+    "video": "LJ7qXHjxj_0",
+    "year": "1991",
+    "lastUpdate": "2023-03-06T14:09:10.495Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 87,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=23400",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "file": "Michael-Jackson-Give-In-To-Me.json",
+    "tracksCount": 1,
+    "search": "michaeljacksongiveintome",
+    "local": false
+  },
+  {
+    "title": "Smooth Criminal (Single Version)",
+    "artist": "Michael Jackson",
+    "bpm": 235.1,
+    "bar": 4,
+    "gap": 29179.15780518928,
+    "video": "q8w1d01Y2vY",
+    "year": "1987",
+    "lastUpdate": "2023-03-06T14:20:13.363Z",
+    "edition": "[SC]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.5,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Michael-Jackson-Smooth-Criminal-Single-Version.json",
+    "tracksCount": 1,
+    "search": "michaeljacksonsmoothcriminalsingleversion",
+    "local": false
+  },
+  {
     "title": "Wrecking Ball",
     "artist": "Miley Cyrus",
     "bpm": 239.96,
@@ -7487,6 +7595,32 @@
     "local": false
   },
   {
+    "title": "Andzeju",
+    "artist": "Nocny Kochanek",
+    "bpm": 200,
+    "bar": 4,
+    "gap": -205,
+    "video": "LmNed_cFRrw",
+    "year": "2015",
+    "lastUpdate": "2023-03-06T13:50:09.229Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.55,
+    "author": "MrLudozzerca",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167141",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=26846",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "file": "Nocny-Kochanek-Andzeju.json",
+    "tracksCount": 1,
+    "search": "nocnykochanekandzeju",
+    "local": false
+  },
+  {
     "title": "Dragostea Din Tei",
     "artist": "O-Zone",
     "bpm": 260.05,
@@ -7560,6 +7694,36 @@
     "file": "Oasis-Wonderwall.json",
     "tracksCount": 1,
     "search": "oasiswonderwall",
+    "local": false
+  },
+  {
+    "title": "Say Say Say [DUET]",
+    "artist": "Paul McCartney & Michael Jackson",
+    "bpm": 235,
+    "bar": 4,
+    "gap": 74618.72340425532,
+    "video": "dnkVQHh25es",
+    "year": "1983",
+    "lastUpdate": "2023-03-06T14:11:10.762Z",
+    "edition": "[DUET]-Songs",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      },
+      {
+        "start": 272
+      }
+    ],
+    "file": "Paul-McCartney-Michael-Jackson-Say-Say-Say-DUET.json",
+    "tracksCount": 2,
+    "search": "paulmccartneymichaeljacksonsaysaysayduet",
     "local": false
   },
   {
@@ -7891,6 +8055,62 @@
     "file": "Pokémon-Opening (PL).json",
     "tracksCount": 1,
     "search": "pokemonopeningpl",
+    "local": false
+  },
+  {
+    "title": "1999",
+    "artist": "Prince and the Revolution",
+    "bpm": 238,
+    "bar": 4,
+    "gap": 34311.596638655465,
+    "video": "rblt2EtFfC4",
+    "year": "1985",
+    "lastUpdate": "2023-03-06T13:53:15.234Z",
+    "edition": "None",
+    "genre": "None",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 119,
+    "volume": 0.56,
+    "author": "sledge",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=67506",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16760",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Prince-and-the-Revolution-1999.json",
+    "tracksCount": 1,
+    "search": "princeandtherevolution1999",
+    "local": false
+  },
+  {
+    "title": "Purple Rain (Album Version)",
+    "artist": "Prince and the Revolution",
+    "bpm": 232,
+    "bar": 4,
+    "gap": 18250.172413793105,
+    "video": "S6Y1gohk5-A",
+    "year": "1984",
+    "lastUpdate": "2023-03-06T13:33:12.847Z",
+    "edition": "Pop",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 113,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=5829",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Prince-and-the-Revolution-Purple-Rain-Album-Version.json",
+    "tracksCount": 1,
+    "search": "princeandtherevolutionpurplerainalbumversion",
     "local": false
   },
   {
