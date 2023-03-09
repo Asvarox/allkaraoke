@@ -39,6 +39,7 @@ interface Props {
 
 export interface PlayerRef {
     play: () => void;
+    pause: () => void;
     seekTo: (time: number) => void;
     setPlaybackSpeed: (speed: number) => void;
 }
@@ -109,6 +110,7 @@ function Player(
         seekTo: (time: number) => player.current!.seekTo(time),
         setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
         play: () => player.current!.playVideo(),
+        pause: () => player.current!.pauseVideo(),
     }));
 
     const onStateChangeCallback = useCallback(

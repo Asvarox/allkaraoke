@@ -102,8 +102,13 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     );
 
     let beatLength: number | undefined;
-
     beatLength = getSongBeatLength(newSong);
+
+    useEffect(() => {
+        if (!visible) {
+            player.current?.pause();
+        }
+    }, [visible]);
 
     return (
         <Grid container spacing={2} sx={{ display: visible ? undefined : 'none' }}>
