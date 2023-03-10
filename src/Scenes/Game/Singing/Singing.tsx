@@ -60,6 +60,7 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
                             <Overlay video={video} width={width} height={height} />
                             <WaitForReadiness
                                 onFinish={() => {
+                                    console.log('called');
                                     setIsTransitionTimeout(true);
                                     player.current?.play();
                                 }}

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { useEffect, useState } from 'react';
+import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { typography } from 'Elements/cssMixins';
 import { useEventEffect, useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
@@ -8,11 +8,14 @@ import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import { CircularProgress } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
+import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
+import { waitFinished } from 'SoundManager';
 
 interface Props {
     onFinish: () => void;
 }
 function WaitForReadiness({ onFinish }: Props) {
+    const audio = useRef<HTMLAudioElement>(null);
     const [areAllPlayersReady, setAreAllPlayersReady] = useState(false);
 
     const [confirmedPlayers, setConfirmedPlayers] = useState<string[]>([]);
@@ -32,11 +35,15 @@ function WaitForReadiness({ onFinish }: Props) {
 
     useEffect(() => {
         const inputsReady = InputManager.requestReadiness().then(() => setAreAllPlayersReady(true));
-        const minTimeElapsed = new Promise((resolve) => setTimeout(resolve, 3_000));
+        const minTimeElapsed = new Promise((resolve) => setTimeout(resolve, 1_500));
         const maxTimeElapsed = new Promise((resolve) => setTimeout(resolve, 15_000));
 
         Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]).then(() => {
-            onFinish();
+            waitFinished.play();
+            setTimeout(() => {
+                audio?.current?.pause();
+                setTimeout(onFinish, 1000);
+            }, 500);
         });
     }, []);
 
@@ -64,6 +71,16 @@ function WaitForReadiness({ onFinish }: Props) {
                             </PlayerEntry>
                         ))}
                     </PlayerList>
+
+                    <audio
+                        src={backgroundMusic}
+                        ref={audio}
+                        hidden
+                        autoPlay
+                        onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
+                            e.currentTarget.volume = 0.7;
+                        }}
+                    />
                 </WaitingForReady>
             )}
         </>
