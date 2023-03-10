@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'wouter';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {}
 
@@ -17,6 +18,7 @@ function Jukebox(props: Props) {
     const { width, height } = useViewportSize();
     const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
     const songList = useSongIndex();
+    useBackgroundMusic(false);
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
     const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });

@@ -12,6 +12,7 @@ import SongDao from 'Songs/SongDao';
 import { navigate } from 'hooks/useHashLocation';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import { Link } from 'wouter';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {
     song?: Song;
@@ -19,6 +20,7 @@ interface Props {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 export default function Convert({ song }: Props) {
+    useBackgroundMusic(false);
     const [currentStep, setCurrentStep] = useState(0);
 
     const [basicData, setBasicData] = useState<BasicDataEntity>({ sourceUrl: song?.sourceUrl ?? '', txtInput: '' });

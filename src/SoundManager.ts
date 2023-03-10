@@ -4,6 +4,7 @@ import menuBackSound from './menu_back.wav';
 import menuEnterSound from './menu_enter.wav';
 import menuNavigateSound from './menu_navigate.wav';
 import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
+import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 
 const menuNavigate = new Howl({
     src: menuNavigateSound,
@@ -22,4 +23,10 @@ const waitFinished = new Howl({
     preload: true,
 });
 
-export { menuNavigate, menuEnter, menuBack, waitFinished };
+const backgroundMusic = new Howl({
+    src: backgroundMusicSound,
+    volume: 0.3,
+    loop: true,
+});
+
+export { menuNavigate, menuEnter, menuBack, waitFinished, backgroundMusic };

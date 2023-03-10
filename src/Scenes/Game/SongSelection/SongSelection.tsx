@@ -22,6 +22,7 @@ import {
 import SongPreview from './SongPreview';
 import { CircularProgress } from '@mui/material';
 import { css } from '@emotion/react';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -52,6 +53,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         showFilters,
         isLoading,
     } = useSongSelection(preselectedSong);
+    useBackgroundMusic(false);
 
     const onSearchSong: KeyHandler = (e) => {
         e.stopPropagation();

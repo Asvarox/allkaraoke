@@ -1,6 +1,6 @@
 import { Box, Slider } from '@mui/material';
 import YouTube from 'react-youtube';
-import backgroundMusic from 'Scenes/Game/Singing/PostGame/421888__b-sean__retro.mp3';
+import backgroundMusic from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 import { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import { useEffect, useRef } from 'react';
 
@@ -48,7 +48,7 @@ export default function VolumeAdjustment(props: Props) {
                         src={backgroundMusic}
                         loop
                         onPlay={(e) => {
-                            e.currentTarget.volume = 0.4;
+                            e.currentTarget.volume = 0.5;
                         }}
                     />
                 </Box>

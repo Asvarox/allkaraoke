@@ -2,12 +2,14 @@ import styled from '@emotion/styled';
 import useSong from 'Songs/hooks/useSong';
 import Convert from 'Scenes/Convert/Convert';
 import { Link } from 'wouter';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {
     file: string;
 }
 
 export default function Edit(props: Props) {
+    useBackgroundMusic(false);
     const song = useSong(props.file);
 
     if (!song.data) return <>Loading</>;

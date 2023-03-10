@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 import { DetailedScore, Song } from 'interfaces';
-import { SyntheticEvent, useState } from 'react';
+import { useState } from 'react';
 import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
 import SongPage from '../../SongPage';
-import backgroundMusic from './421888__b-sean__retro.mp3';
 import HighScoresView from './Views/HighScores';
 import { GameTip } from 'Elements/GameTip';
 
@@ -51,15 +50,6 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
                         song={song}
                     />
                 )}
-                <audio
-                    src={backgroundMusic}
-                    loop
-                    hidden
-                    autoPlay
-                    onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
-                        e.currentTarget.volume = 0.4;
-                    }}
-                />
                 <PostGameTip active />
             </Container>
         </SongPage>

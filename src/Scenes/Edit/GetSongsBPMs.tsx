@@ -1,5 +1,6 @@
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import { useEffect } from 'react';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface GetSongBpmSearchEntry {
     song_id: string;
@@ -27,6 +28,7 @@ interface GetSongBpmSearchEntry {
 }
 
 export default function GetSongsBPMs(props: {}) {
+    useBackgroundMusic(false);
     const songList = useSongIndex();
 
     useEffect(() => {
