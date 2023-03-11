@@ -10,6 +10,7 @@ import { CircularProgress } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
 import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
 import { waitFinished } from 'SoundManager';
+import sleep from 'utils/sleep';
 
 interface Props {
     onFinish: () => void;
@@ -34,17 +35,29 @@ function WaitForReadiness({ onFinish }: Props) {
     );
 
     useEffect(() => {
-        const inputsReady = InputManager.requestReadiness().then(() => setAreAllPlayersReady(true));
-        const minTimeElapsed = new Promise((resolve) => setTimeout(resolve, 1_500));
-        const maxTimeElapsed = new Promise((resolve) => setTimeout(resolve, 15_000));
+        (async () => {
+            // can't use `areAllPlayersReady` as it would need to be specified as useEffect dependency
+            let allInputsReady = false;
+            const inputsReady = InputManager.requestReadiness().then(() => {
+                allInputsReady = true;
+                setAreAllPlayersReady(true);
+            });
+            const minTimeElapsed = sleep(1_500);
+            const maxTimeElapsed = sleep(15_000);
 
-        Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]).then(() => {
-            waitFinished.play();
-            setTimeout(() => {
-                audio?.current?.pause();
-                setTimeout(onFinish, 1000);
-            }, 500);
-        });
+            // Only start the music if waiting for readiness takes some time
+            await sleep(250);
+            if (!allInputsReady) {
+                audio?.current?.play();
+            }
+
+            await Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]);
+            if (!audio?.current?.paused) waitFinished.play();
+            await sleep(500);
+            audio?.current?.pause();
+            await sleep(1000);
+            onFinish();
+        })();
     }, []);
 
     const playerStatuses = players.map(([deviceId, name]) => ({
@@ -71,18 +84,17 @@ function WaitForReadiness({ onFinish }: Props) {
                             </PlayerEntry>
                         ))}
                     </PlayerList>
-
-                    <audio
-                        src={backgroundMusic}
-                        ref={audio}
-                        hidden
-                        autoPlay
-                        onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
-                            e.currentTarget.volume = 0.7;
-                        }}
-                    />
                 </WaitingForReady>
             )}
+            <audio
+                src={backgroundMusic}
+                ref={audio}
+                hidden
+                autoPlay={false}
+                onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
+                    e.currentTarget.volume = 0.8;
+                }}
+            />
         </>
     );
 }

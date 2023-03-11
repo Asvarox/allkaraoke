@@ -5,6 +5,7 @@ import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
 import SongPage from '../../SongPage';
 import HighScoresView from './Views/HighScores';
 import { GameTip } from 'Elements/GameTip';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface PlayerScore {
     detailedScore: [number, DetailedScore, DetailedScore];
@@ -29,6 +30,7 @@ interface Props {
 }
 
 function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetupId }: Props) {
+    useBackgroundMusic(true);
     const [step, setStep] = useState<'results' | 'highscores'>('results');
 
     return (
