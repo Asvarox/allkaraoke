@@ -3,3 +3,4 @@
 
 yarn lint-staged
 yarn test --watch=false
+yarn unimported --no-cache
