@@ -43,14 +43,15 @@ class PlayerState {
         // frequencies for the moment when new package arrive.
         // If it's a single frequency, just add it to the notes
         if (Array.isArray(frequency)) {
-            const lastRealRecord = this.realFrequencyRecords.at(-1) || this.frequencyRecords[0];
-            const timestampStep = (currentTimestamp - lastRealRecord.timestamp) / frequency.length;
+            const lastRealRecord = this.realFrequencyRecords.at(-1) || this.frequencyRecords.at(0);
+            const lastTimestamp = lastRealRecord?.timestamp ?? 0;
+            const timestampStep = (currentTimestamp - lastTimestamp) / frequency.length;
 
             this.frequencyRecords = this.realFrequencyRecords;
             this.playerNotes = this.realPlayerNotes;
 
             for (let i = 0; i < frequency.length; i++) {
-                const timestamp = lastRealRecord.timestamp + timestampStep * (i + 1);
+                const timestamp = lastTimestamp + timestampStep * (i + 1);
                 this.updatePlayerNotes(timestamp, frequency[i]);
             }
 
