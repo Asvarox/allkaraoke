@@ -7,17 +7,17 @@ import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
 import { useRoute } from 'wouter';
 
 const linkObject = new URL(window.location.href);
-linkObject.hash = `/phone/`;
-
-const linkBase = linkObject.href;
 
 function ConnectPhone() {
     const [match, params] = useRoute<{ roomId: string }>('/phone/:roomId');
-    const link = `${linkBase}${match ? params.roomId : WebRTCServer.getRoomId()}`;
+    linkObject.pathname = `/phone/${match ? params.roomId : WebRTCServer.getRoomId()}`;
+    const link = linkObject.href;
 
     useEffect(() => {
-        WebRTCServer.start();
-    }, []);
+        if (!match) {
+            WebRTCServer.start();
+        }
+    }, [match]);
 
     return (
         <Container>

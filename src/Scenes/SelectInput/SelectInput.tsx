@@ -1,13 +1,14 @@
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuContainer } from 'Elements/Menu';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
-import { navigate } from 'hooks/useHashLocation';
+import { useLocation } from 'wouter';
 
 interface Props {
     // file?: string;
 }
 
 function SelectInput(props: Props) {
+    const [, navigate] = useLocation();
     return (
         <LayoutWithBackground>
             <MenuContainer>

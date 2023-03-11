@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 import analyze from 'rollup-plugin-visualizer';
 import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import rewriteAll from 'vite-plugin-rewrite-all';
 
 const fs = require('node:fs');
 
@@ -28,6 +29,7 @@ export default defineConfig({
         analyze(),
         !customCert && basicSsl(),
         splitVendorChunkPlugin(),
+        rewriteAll(),
     ],
     base: './',
     build: {
@@ -43,6 +45,7 @@ export default defineConfig({
             cert: fs.readFileSync(customCert ? certPath : './config/crt/dummy.pem'),
         },
     },
+
     test: {
         include: ['**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
         globals: true,

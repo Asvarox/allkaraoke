@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
 import { Route, Router } from 'wouter';
-import useHashLocation from './hooks/useHashLocation';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
@@ -25,11 +24,12 @@ import Toolbar from 'Toolbar/Toolbar';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
+
     return (
         <>
             <Sentry.ErrorBoundary fallback={ErrorFallback}>
                 <KeyboardHelpProvider>
-                    <Router hook={useHashLocation}>
+                    <Router>
                         <GameScreens>
                             <Toolbar />
                             <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file!)} />}</Route>

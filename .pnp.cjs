@@ -111,6 +111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["utility-types", "npm:3.10.0"],\
             ["uuid", "npm:8.3.2"],\
             ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.1.4"],\
+            ["vite-plugin-rewrite-all", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.1"],\
             ["vite-tsconfig-paths", "npm:4.0.5"],\
             ["vitest", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.28.5"],\
             ["wouter", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.10.0"]\
@@ -8819,6 +8820,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["connect-history-api-fallback", [\
+        ["npm:1.6.0", {\
+          "packageLocation": "./.yarn/cache/connect-history-api-fallback-npm-1.6.0-6fbd7fa228-804ca2be28.zip/node_modules/connect-history-api-fallback/",\
+          "packageDependencies": [\
+            ["connect-history-api-fallback", "npm:1.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["console-control-strings", [\
         ["npm:1.1.0", {\
           "packageLocation": "./.yarn/cache/console-control-strings-npm-1.1.0-e3160e5275-8755d76787.zip/node_modules/console-control-strings/",\
@@ -14253,6 +14263,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["utility-types", "npm:3.10.0"],\
             ["uuid", "npm:8.3.2"],\
             ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.1.4"],\
+            ["vite-plugin-rewrite-all", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.1"],\
             ["vite-tsconfig-paths", "npm:4.0.5"],\
             ["vitest", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.28.5"],\
             ["wouter", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.10.0"]\
@@ -18227,6 +18238,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map", "npm:0.6.1"],\
             ["source-map-support", "npm:0.5.21"],\
             ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vite-plugin-rewrite-all", [\
+        ["npm:1.0.1", {\
+          "packageLocation": "./.yarn/cache/vite-plugin-rewrite-all-npm-1.0.1-c84dffcf83-9a22e51e80.zip/node_modules/vite-plugin-rewrite-all/",\
+          "packageDependencies": [\
+            ["vite-plugin-rewrite-all", "npm:1.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/vite-plugin-rewrite-all-virtual-ac86f2559b/0/cache/vite-plugin-rewrite-all-npm-1.0.1-c84dffcf83-9a22e51e80.zip/node_modules/vite-plugin-rewrite-all/",\
+          "packageDependencies": [\
+            ["vite-plugin-rewrite-all", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.1"],\
+            ["@types/vite", null],\
+            ["connect-history-api-fallback", "npm:1.6.0"],\
+            ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.1.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/vite",\
+            "vite"\
           ],\
           "linkType": "HARD"\
         }]\

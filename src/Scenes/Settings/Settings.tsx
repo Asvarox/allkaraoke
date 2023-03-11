@@ -1,7 +1,6 @@
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { nextValue, Switcher } from 'Elements/Switcher';
-import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import {
     FpsCount,
@@ -10,10 +9,12 @@ import {
     GraphicsLevel,
     useSettingValue,
 } from 'Scenes/Settings/SettingsState';
+import { useLocation } from 'wouter';
 
 interface Props {}
 
 function Settings(props: Props) {
+    const [, navigate] = useLocation();
     const goBack = () => navigate('/');
 
     const { register } = useKeyboardNav({ onBackspace: goBack });

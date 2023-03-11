@@ -6250,6 +6250,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"connect-history-api-fallback@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "connect-history-api-fallback@npm:1.6.0"
+  checksum: 804ca2be28c999032ecd37a9f71405e5d7b7a4b3defcebbe41077bb8c5a0a150d7b59f51dcc33b2de30bc7e217a31d10f8cfad27e8e74c2fc7655eeba82d6e7e
+  languageName: node
+  linkType: hard
+
 "console-control-strings@npm:^1.0.0, console-control-strings@npm:^1.1.0":
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
@@ -11006,6 +11013,7 @@ __metadata:
     utility-types: ^3.10.0
     uuid: ^8.3.2
     vite: ^4.1.4
+    vite-plugin-rewrite-all: ^1.0.1
     vite-tsconfig-paths: ^4.0.5
     vitest: ^0.28.5
     wouter: ^2.10.0
@@ -14257,6 +14265,17 @@ __metadata:
   bin:
     vite-node: vite-node.mjs
   checksum: b3813b784f551613e561bf85e64ceb8e869d760d34f135dc3351b093618c6fc3c64f23839ac530ddc49724beb83c3f70ee6392e62676c78141ed04c7ab1e0aa0
+  languageName: node
+  linkType: hard
+
+"vite-plugin-rewrite-all@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "vite-plugin-rewrite-all@npm:1.0.1"
+  dependencies:
+    connect-history-api-fallback: ^1.6.0
+  peerDependencies:
+    vite: ^2.0.0 || ^3.0.0 || ^4.0.0
+  checksum: 9a22e51e80fc14d58d32556208c26740baf3f02eae2d0a5f356ddc1ea478bd2f56803cc17e77261ffad33d27301017ba03736143446685c03bb0f076eef2fdd0
   languageName: node
   linkType: hard
 

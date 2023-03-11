@@ -9,9 +9,8 @@ import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetad
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
 import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import SongDao from 'Songs/SongDao';
-import { navigate } from 'hooks/useHashLocation';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {
@@ -20,6 +19,7 @@ interface Props {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 export default function Convert({ song }: Props) {
+    const [, navigate] = useLocation();
     useBackgroundMusic(false);
     const [currentStep, setCurrentStep] = useState(0);
 

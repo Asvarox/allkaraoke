@@ -1,4 +1,3 @@
-import { navigate } from 'hooks/useHashLocation';
 import useKeyboard from 'hooks/useKeyboard';
 import { chunk, throttle } from 'lodash-es';
 import posthog from 'posthog-js';
@@ -9,6 +8,7 @@ import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';
 import usePrevious from '../../../../hooks/usePrevious';
 import tuple from '../../../../utils/tuple';
 import { AppliedFilters, SongGroup } from './useSongList';
+import { useLocation } from 'wouter';
 
 const MAX_SONGS_PER_ROW = 4;
 
@@ -113,6 +113,7 @@ export const useSongSelectionKeyboardNavigation = (
     songCount: number,
     appliedFilters: AppliedFilters,
 ) => {
+    const [, navigate] = useLocation();
     // We need to record how user entered (from which "side") and how left and based on that update the selection.
     // Eg if user was at the last column, entered playlists, and returned to the last column (by clicking left)
     // then effectively the selection shouldn't change

@@ -2,16 +2,16 @@ import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
-import { navigate } from 'hooks/useHashLocation';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import getSongBpm from './logo_bpm.png';
 import Logo from 'Elements/Logo';
 import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 function Welcome() {
+    const [, navigate] = useLocation();
     useBackgroundMusic(/* true */ false);
     const { register } = useKeyboardNav();
     return (

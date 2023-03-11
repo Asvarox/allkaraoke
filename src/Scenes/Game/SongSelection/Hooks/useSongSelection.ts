@@ -3,10 +3,11 @@ import useSongList from './useSongList';
 import { useSongSelectionKeyboardNavigation } from './useSongSelectionKeyboardNavigation';
 import { randomInt } from 'utils/randomValue';
 import usePrevious from 'hooks/usePrevious';
+import { useLocation } from 'wouter';
 
 export default function useSongSelection(preselectedSong: string | null) {
     const { songList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
-
+    const [, navigate] = useLocation();
     const [keyboardControl, setKeyboardControl] = useState(true);
 
     const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(
@@ -19,7 +20,7 @@ export default function useSongSelection(preselectedSong: string | null) {
 
     useEffect(() => {
         if (songList && songList[focusedSong])
-            window.history.replaceState({}, '', `#/game/${encodeURIComponent(songList[focusedSong].file)}`);
+            navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`, { replace: true });
     }, [focusedSong, songList]);
 
     const previousIsLoading = usePrevious(isLoading);

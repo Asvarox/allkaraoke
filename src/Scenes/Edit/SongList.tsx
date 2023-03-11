@@ -76,9 +76,11 @@ export default function SongList(props: Props) {
                     <h3>{data.length} songs</h3>
                 </Grid>
                 <Grid item xs={6} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>
-                    <Button href={'#/convert'} data-test="convert-song" variant={'contained'}>
-                        Import UltraStar .TXT
-                    </Button>
+                    <Link to="/convert">
+                        <Button data-test="convert-song" variant={'contained'}>
+                            Import UltraStar .TXT
+                        </Button>
+                    </Link>
                 </Grid>
             </Grid>
             <MaterialReactTable
@@ -91,7 +93,7 @@ export default function SongList(props: Props) {
                     <>
                         <IconButton
                             title="Edit the song"
-                            href={`#/edit/${encodeURIComponent(row.original.file)}`}
+                            href={`/edit/${encodeURIComponent(row.original.file)}`}
                             data-test="edit-song"
                             data-song={row.original.file}>
                             <EditIcon />

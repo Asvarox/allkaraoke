@@ -5,15 +5,16 @@ import Logo from 'Elements/Logo';
 import styled from '@emotion/styled';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
-import { navigate } from 'hooks/useHashLocation';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
+import { useLocation } from 'wouter';
 
 interface Props {
     // file?: string;
 }
 
 function QuickSetup(props: Props) {
-    const onFinish = (pref: typeof MicSetupPreference[number]) => {
+    const [, navigate] = useLocation();
+    const onFinish = (pref: (typeof MicSetupPreference)[number]) => {
         navigate('/');
     };
 
