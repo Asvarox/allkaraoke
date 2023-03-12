@@ -3,7 +3,7 @@ import { Input } from 'Elements/Input';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import { useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { AppliedFilters } from './Hooks/useSongList';
+import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 
 interface Props {
     onSongFiltered: (filters: AppliedFilters) => void;

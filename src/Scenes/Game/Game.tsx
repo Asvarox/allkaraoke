@@ -5,7 +5,7 @@ import { useState } from 'react';
 import PhoneManager from 'RemoteMic/PhoneManager';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
-import SongSelection from './SongSelection/SongSelection';
+import SingASong from 'Scenes/SingASong/SingASong';
 
 interface Props {
     file?: string;
@@ -37,7 +37,7 @@ function Game(props: Props) {
             </TransitionWrapper>
             <TransitionWrapper show={!singSetup}>
                 <LayoutWithBackground>
-                    <SongSelection
+                    <SingASong
                         onSongSelected={(setup) => {
                             PhoneManager.broadcast({ t: 'reload-mic' });
                             setSingSetup(setup);

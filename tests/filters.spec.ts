@@ -33,6 +33,7 @@ test('Filters - PlayLists', async ({ page }) => {
     await page.getByTestId('skip').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
@@ -44,28 +45,28 @@ test('Filters - PlayLists', async ({ page }) => {
     await page.keyboard.press('ArrowRight');
 
     await page.keyboard.press('ArrowDown'); // Polish
-    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // English
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Classics
-    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Modern
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Duet
-    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // New
-    await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // All
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
@@ -77,6 +78,7 @@ test('Filters - Quick Search', async ({ page }) => {
     await page.getByTestId('skip').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();

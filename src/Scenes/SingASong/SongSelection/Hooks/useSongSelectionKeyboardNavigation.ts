@@ -4,10 +4,10 @@ import posthog from 'posthog-js';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import { randomInt } from 'utils/randomValue';
-import useKeyboardHelp from '../../../../hooks/useKeyboardHelp';
-import usePrevious from '../../../../hooks/usePrevious';
-import tuple from '../../../../utils/tuple';
-import { AppliedFilters, SongGroup } from './useSongList';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import usePrevious from 'hooks/usePrevious';
+import tuple from 'utils/tuple';
+import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useLocation } from 'wouter';
 
 const MAX_SONGS_PER_ROW = 4;

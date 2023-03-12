@@ -7,8 +7,8 @@ import { useEffect, useMemo, useState } from 'react';
 import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import SelectInputModal from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
-import SinglePlayer from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
+import SelectInputModal from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import PhoneManager from 'RemoteMic/PhoneManager';
 

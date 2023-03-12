@@ -3,7 +3,7 @@ import { addDays, isAfter } from 'date-fns';
 import { typography } from 'Elements/cssMixins';
 import { SongPreview } from 'interfaces';
 import { useSongStats } from 'Songs/stats/hooks';
-import styles from '../Singing/GameOverlay/Drawing/styles';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const SongCardContainer = styled.div`
     font-size: 4.5rem;

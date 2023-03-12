@@ -46,7 +46,7 @@ const config: PlaywrightTestConfig = {
         trace: 'on-first-retry',
         ignoreHTTPSErrors: true,
         launchOptions: {
-            // slowMo: 100,
+            slowMo: 50,
             args: [
                 // '--auto-open-devtools-for-tabs',
                 '--no-sandbox',

@@ -54,14 +54,11 @@ function Welcome() {
                                 Jukebox
                             </MenuButton>
                         </Link>
-                        <Link href="/edit">
-                            <MenuButton data-test="edit-songs" {...register('edit songs', () => navigate('/edit'))}>
-                                Edit songs
-                            </MenuButton>
-                        </Link>
-                        <Link href="/convert">
-                            <MenuButton data-test="convert-song" {...register('convert', () => navigate('/convert'))}>
-                                Convert UltraStar .txt
+                        <Link href="/manage-songs">
+                            <MenuButton
+                                data-test="manage-songs"
+                                {...register('manage songs', () => navigate('/manage-songs'))}>
+                                Manage Songs
                             </MenuButton>
                         </Link>
                         <GetSongBPM target="_blank" href="https://getsongbpm.com/">
@@ -91,7 +88,7 @@ const BackgroundMusicCredit = styled.div`
     text-decoration: none;
     flex-direction: column;
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     gap: 1rem;
     opacity: 0.75;
     position: absolute;

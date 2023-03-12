@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import useSongList from './useSongList';
-import { useSongSelectionKeyboardNavigation } from './useSongSelectionKeyboardNavigation';
+import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 import { randomInt } from 'utils/randomValue';
 import usePrevious from 'hooks/usePrevious';
 import { useLocation } from 'wouter';

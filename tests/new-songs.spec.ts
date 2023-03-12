@@ -21,6 +21,7 @@ test('New songs - displays new song twice by default and doesnt show it in filte
     await page.getByTestId('skip').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).toBeVisible();
@@ -47,6 +48,7 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
     await page.getByTestId('skip').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).not.toBeVisible();
@@ -57,6 +59,7 @@ test('New songs - doesnt display new songs on first visit', async ({ page }) => 
     await page.getByTestId('skip').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).not.toBeVisible();

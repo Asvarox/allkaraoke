@@ -69,6 +69,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await test.step('Start singing a song', async () => {
         await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage);
         await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+        await navigateWithKeyboard(page, 'close-exclude-languages', remoteMicBluePage);
+        await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
 
         await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json', remoteMicBluePage);
         await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
@@ -98,6 +100,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     });
 
     await test.step('Check if restart song is possible', async () => {
+        await page.waitForTimeout(500);
         await remoteMicBluePage.getByTestId('ready-button').click({ force: true });
         await remoteMicRed.getByTestId('ready-button').click({ force: true });
         await expect(page.getByTestId('skip-intro-info')).toBeVisible();

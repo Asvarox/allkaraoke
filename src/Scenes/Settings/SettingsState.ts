@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { ValuesType } from "utility-types";
+import { useEffect, useState } from 'react';
+import { ValuesType } from 'utility-types';
 
 class Setting<T> {
     private value: T | undefined = undefined;
@@ -16,7 +16,7 @@ class Setting<T> {
             this.value = JSON.parse(window[this.driver].getItem(`settings-${this.name}`)!) ?? this.defaultValue;
         }
         return this.value as T;
-    }
+    };
 
     public set = (newValue: T) => {
         this.value = newValue;
@@ -49,6 +49,9 @@ export const MicSetupPreferenceSetting = new Setting<ValuesType<typeof MicSetupP
 export const FpsCount = [60, 30] as const;
 const FPS_COUNT_KEY = 'fps-count';
 export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>(FPS_COUNT_KEY, FpsCount[0]);
+
+const EXCLUDED_LANGUAGES_KEY = 'EXCLUDED_LANGUAGES_KEY';
+export const ExcludedLanguagesSetting = new Setting<string[] | null>(EXCLUDED_LANGUAGES_KEY, null);
 
 export function useSettingValue<T>(value: Setting<T>) {
     const [currentValue, setCurrentValue] = useState(value.get());

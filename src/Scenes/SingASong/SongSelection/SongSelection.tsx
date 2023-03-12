@@ -5,21 +5,21 @@ import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import Playlists from 'Scenes/Game/SongSelection/Playlists';
-import QuickSearch from 'Scenes/Game/SongSelection/QuickSearch';
-import SelectRandomTip from 'Scenes/Game/SongSelection/SelectRandomTip';
-import usePrevious from '../../../hooks/usePrevious';
-import useViewportSize from '../../../hooks/useViewportSize';
-import styles from '../Singing/GameOverlay/Drawing/styles';
-import useSongSelection from './Hooks/useSongSelection';
+import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
+import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
+import SelectRandomTip from 'Scenes/SingASong/SongSelection/SelectRandomTip';
+import usePrevious from 'hooks/usePrevious';
+import useViewportSize from 'hooks/useViewportSize';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
 import {
     SongCard,
     SongCardBackground,
     SongCardStatsIndicator,
     SongListEntryDetailsArtist,
     SongListEntryDetailsTitle,
-} from './SongCard';
-import SongPreview from './SongPreview';
+} from 'Scenes/SingASong/SongSelection/SongCard';
+import SongPreview from 'Scenes/SingASong/SongSelection/SongPreview';
 import { CircularProgress } from '@mui/material';
 import { css } from '@emotion/react';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';

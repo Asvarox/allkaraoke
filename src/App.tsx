@@ -21,6 +21,8 @@ import Welcome from 'Scenes/Welcome/Welcome';
 import styles from 'styles';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import Toolbar from 'Toolbar/Toolbar';
+import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
+import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
@@ -38,6 +40,8 @@ function App() {
                             <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId!} />}</Route>
                             <Route path="/select-input" component={SelectInput} />
                             <Route path="/settings" component={Settings} />
+                            <Route path="/manage-songs" component={ManageSongs} />
+                            <Route path="/exclude-languages" component={ExcludeLanguages} />
                             {setupPreference === null ? (
                                 <Route path="/" component={QuickSetup} />
                             ) : (

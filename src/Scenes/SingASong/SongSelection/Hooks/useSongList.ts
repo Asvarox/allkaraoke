@@ -2,8 +2,9 @@ import useSongIndex from 'Songs/hooks/useSongIndex';
 import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo, useState } from 'react';
-import clearString from '../../../../utils/clearString';
+import clearString from 'utils/clearString';
 import { isAfter } from 'date-fns';
+import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 export interface SongGroup {
     letter: string;
@@ -15,6 +16,7 @@ export interface AppliedFilters {
     yearBefore?: number;
     yearAfter?: number;
     language?: string;
+    excludeLanguages?: string[];
     search?: string;
     updatedAfter?: string;
     duet?: boolean | null;
@@ -50,6 +52,11 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
         return songList.filter((song) => song.language === filterValue);
     },
+    excludeLanguages: (songList, languages: string[] = []) => {
+        if (languages.length === 0) return songList;
+
+        return songList.filter((song) => !languages.includes(song.language ?? ''));
+    },
     search: (songList, search: string) => {
         const cleanSearch = clearString(search);
 
@@ -84,16 +91,21 @@ const applyFilters = (list: SongPreview[], filters: AppliedFilters): SongPreview
         .reduce((songList, [name, value]) => filteringFunctions[name](songList, value), list);
 };
 
-const useLanguageFilter = (list: SongPreview[]) => {
+export const useLanguageFilter = (list: SongPreview[]) => {
     return useMemo(() => uniq(['', ...list.map((song) => song.language ?? 'Unknown')]), [list]);
 };
 
 export const useSongListFilter = (list: SongPreview[]) => {
     const availableLanguages = useLanguageFilter(list);
+    const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
 
     const [filters, setFilters] = useState<AppliedFilters>({});
 
-    const filteredList = useMemo(() => applyFilters(list, filters), [list, filters]);
+    const initiallyFilteredList = useMemo(
+        () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
+        [list, excludedLanguages],
+    );
+    const filteredList = useMemo(() => applyFilters(initiallyFilteredList, filters), [initiallyFilteredList, filters]);
 
     const filtersData: FiltersData = {
         language: {

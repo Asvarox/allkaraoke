@@ -13,6 +13,7 @@ test('should restart the song and the scores', async ({ page }) => {
     await page.getByTestId('save-button').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');

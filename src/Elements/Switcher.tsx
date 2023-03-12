@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { focusable } from 'Elements/cssMixins';
 import { ReactNode } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { SongListEntryDetails } from 'Scenes/Game/SongSelection/SongCard';
+import { SongListEntryDetails } from 'Scenes/SingASong/SongSelection/SongCard';
 import { ValuesType } from 'utility-types';
 
 interface Props {

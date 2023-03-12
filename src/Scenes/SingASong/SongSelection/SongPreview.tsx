@@ -4,9 +4,9 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
 import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useSongStats } from 'Songs/stats/hooks';
-import useDebounce from '../../../hooks/useDebounce';
-import useViewportSize from '../../../hooks/useViewportSize';
-import styles from '../Singing/GameOverlay/Drawing/styles';
+import useDebounce from 'hooks/useDebounce';
+import useViewportSize from 'hooks/useViewportSize';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import {
     SongCard,
     SongCardBackground,
@@ -14,8 +14,8 @@ import {
     SongCardStatsIndicator,
     SongListEntryDetailsArtist,
     SongListEntryDetailsTitle,
-} from './SongCard';
-import SongSettings from './SongSettings';
+} from 'Scenes/SingASong/SongSelection/SongCard';
+import SongSettings from 'Scenes/SingASong/SongSelection/SongSettings';
 
 interface Props {
     songPreview: SongPreview;

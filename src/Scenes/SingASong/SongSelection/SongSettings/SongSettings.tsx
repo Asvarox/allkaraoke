@@ -4,9 +4,9 @@ import { PlayerSetup, SingSetup, SongPreview } from 'interfaces';
 import { useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import GameSettings from 'Scenes/Game/SongSelection/SongSettings/GameSettings';
-import MicCheck from 'Scenes/Game/SongSelection/SongSettings/MicCheck';
-import PlayerSettings from 'Scenes/Game/SongSelection/SongSettings/PlayerSettings';
+import GameSettings from 'Scenes/SingASong/SongSelection/SongSettings/GameSettings';
+import MicCheck from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck';
+import PlayerSettings from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings';
 
 interface Props {
     songPreview: SongPreview;

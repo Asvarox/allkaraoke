@@ -4,7 +4,7 @@ import { typography } from 'Elements/cssMixins';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useMemo } from 'react';
-import { AppliedFilters } from './Hooks/useSongList';
+import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { addDays } from 'date-fns';
 
 interface PlaylistEntry {
