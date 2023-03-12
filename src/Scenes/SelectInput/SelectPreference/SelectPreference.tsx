@@ -31,7 +31,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack }: 
                     <PhoneIphone />
                 </OptionIconContainer>
                 <div>
-                    Use Smartphones as microphones
+                    Use Smartphones
                     <OptionDescription>
                         Use{' '}
                         <strong>
@@ -59,10 +59,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack }: 
                     <Laptop />
                 </OptionIconContainer>
                 <div>
-                    This computer (built-in) microphone
+                    This computer's microphone
                     <OptionDescription>
-                        A single voice will be detected. Great to <strong>test the app</strong>,{' '}
-                        <strong>sing alone</strong> or don't care about the rivalry at the party
+                        Great to <strong>test</strong> the app, <strong>sing alone</strong> or don't care about the
+                        rivalry at the party
                     </OptionDescription>
                 </div>
             </Option>
@@ -75,7 +75,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack }: 
                     <MicIcon />
                 </OptionIconContainer>
                 <div>
-                    I have SingStar (-ish) microphones
+                    SingStar (-ish) microphones
                     <OptionDescription>
                         Select this option and <Usb /> connect your Mics to the computer. It should be selected{' '}
                         <strong>automatically</strong>.
@@ -156,28 +156,31 @@ const OptionIconContainer = styled.div`
     }
 `;
 
+const moreInfoMixin = css`
+    height: 16.5rem;
+    background: black;
+    ${focused};
+
+    ${OptionDescription} {
+        padding-top: 1.6rem;
+        max-height: 10rem;
+        opacity: 1;
+    }
+
+    ${OptionIconContainer} {
+        transform: scale(1.75);
+    }
+`;
+
 const Option = styled(MenuButton)<{ focused?: boolean }>`
     display: flex;
     align-items: center;
 
-    ${(props) =>
-        props.focused
-            ? css`
-                  height: 16.5rem;
-                  background: black;
-                  ${focused};
+    :hover {
+        ${moreInfoMixin};
+    }
 
-                  ${OptionDescription} {
-                      padding-top: 1.6rem;
-                      max-height: 10rem;
-                      opacity: 1;
-                  }
-
-                  ${OptionIconContainer} {
-                      transform: scale(1.75);
-                  }
-              `
-            : ''}
+    ${(props) => (props.focused ? moreInfoMixin : '')};
 `;
 
 export default SelectPreference;

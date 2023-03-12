@@ -83,9 +83,12 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
 const PlayButton = styled(Button)`
     padding: 0.5rem 9rem;
     font-size: 4.3rem;
+    width: 50rem;
 `;
 
 const GSSwitcher = styled(Switcher)`
     font-size: 4.3rem;
     padding: 1rem;
+    min-width: 50rem;
+    box-sizing: border-box;
 `;
