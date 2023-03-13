@@ -18,7 +18,7 @@
     "src/Scenes/Game/Singing/Input/MicStrategies/Yin.ts",
     "src/Songs/utils/song-fixture.ts",
     "src/setupTests.ts",
-    "src/testUtilts.ts",
+    "src/utils/testUtils.ts",
     "src/utils/TestCanvas.tsx",
     "src/utils/range.ts"
   ],

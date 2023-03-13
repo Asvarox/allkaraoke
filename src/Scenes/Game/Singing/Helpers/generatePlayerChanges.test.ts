@@ -1,7 +1,7 @@
 import { Section, Song } from 'interfaces';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
-import { generateSection, generateSong } from 'testUtilts';
+import { generateSection, generateSong } from 'utils/testUtils';
 import generatePlayerChanges from './generatePlayerChanges';
 
 const getSingableBeats = (sections: Section[], start: number, end: number) =>

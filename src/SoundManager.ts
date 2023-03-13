@@ -1,8 +1,8 @@
 import { Howl } from 'howler';
 
-import menuBackSound from './menu_back.wav';
-import menuEnterSound from './menu_enter.wav';
-import menuNavigateSound from './menu_navigate.wav';
+import menuBackSound from 'assets/menu_back.wav';
+import menuEnterSound from 'assets/menu_enter.wav';
+import menuNavigateSound from 'assets/menu_navigate.wav';
 import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
 import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 

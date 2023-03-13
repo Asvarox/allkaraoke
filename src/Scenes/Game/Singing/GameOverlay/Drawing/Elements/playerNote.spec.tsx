@@ -1,11 +1,11 @@
-import { expect, test } from "@playwright/experimental-ct-react";
-import { TestCanvas } from "../../../../../../utils/TestCanvas";
-import { generateNote, generatePlayerNote } from "testUtilts";
-import tuple from "utils/tuple";
+import { expect, test } from '@playwright/experimental-ct-react';
+import { TestCanvas } from '../../../../../../utils/TestCanvas';
+import { generateNote, generatePlayerNote } from '../../../../../../utils/testUtils';
+import tuple from '../../../../../../utils/tuple';
 
 test.use({ viewport: { width: 220, height: 80 } });
 
-test("Should draw a proper note when it is shorter than minimum", async ({ mount, page }) => {
+test('Should draw a proper note when it is shorter than minimum', async ({ mount, page }) => {
     await page.setViewportSize({ width: 220, height: 80 });
     const component = await mount(<TestCanvas width={220} height={80} />);
 
@@ -25,7 +25,7 @@ test("Should draw a proper note when it is shorter than minimum", async ({ mount
     await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
 });
 
-test("Should draw multiple notes", async ({ mount, page }) => {
+test('Should draw multiple notes', async ({ mount, page }) => {
     await page.setViewportSize({ width: 220, height: 200 });
     const component = await mount(<TestCanvas width={220} height={200} />);
 

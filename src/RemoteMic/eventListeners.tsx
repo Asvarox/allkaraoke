@@ -2,6 +2,7 @@ import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Rem
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import PhoneManager from './PhoneManager';
+import { toast } from 'react-toastify';
 
 events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
     if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
@@ -43,6 +44,23 @@ events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
     if (newPlayerNumber !== null) {
         InputManager.setPlayerInput(newPlayerNumber, 'Remote Microphone', 0, phoneId);
     }
+});
 
-    console.log(InputManager.getRawInputs());
+events.phoneConnected.subscribe(({ name, silent }) => {
+    if (!silent) {
+        toast.success(
+            <>
+                Remote microphone <b>{name}</b> connected!
+            </>,
+        );
+    }
+});
+events.phoneDisconnected.subscribe(({ name }, silent) => {
+    if (!silent) {
+        toast.warning(
+            <>
+                Remote microphone <b>{name}</b> disconnected!
+            </>,
+        );
+    }
 });

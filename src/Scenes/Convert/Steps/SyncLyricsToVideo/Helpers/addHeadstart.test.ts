@@ -1,5 +1,5 @@
 import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHeadstart';
-import { generateNote, generateSong } from 'testUtilts';
+import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('addHeadstart', () => {
     it('should add desired headstart if theres enough gap of it', () => {

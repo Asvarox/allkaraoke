@@ -3,7 +3,6 @@ import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import isDev from 'utils/isDev';
 import isE2E from 'utils/isE2E';
 import { v4 } from 'uuid';
@@ -24,6 +23,7 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
+        debug: true,
         api_host: 'https://allkaraoke-posthog.fly.dev',
         test: isDev() || window.location.port !== '',
         loaded: (ph) => {
@@ -40,30 +40,9 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
 const container = document.getElementById('root');
 const root = createRoot(container!);
 
-events.phoneConnected.subscribe(({ name, silent }) => {
-    if (!silent) {
-        toast.success(
-            <>
-                Remote microphone <b>{name}</b> connected!
-            </>,
-        );
-    }
-});
-events.phoneDisconnected.subscribe(({ name }, silent) => {
-    if (!silent) {
-        toast.error(
-            <>
-                Remote microphone <b>{name}</b> disconnected!
-            </>,
-        );
-    }
-});
-
 root.render(
-    // <React.StrictMode>
     <>
         <App />
         <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
     </>,
-    // </React.StrictMode>
 );

@@ -1,5 +1,5 @@
 import { FrequencyRecord, Note, PlayerNote } from 'interfaces';
-import { generateNote } from 'testUtilts';
+import { generateNote } from 'utils/testUtils';
 import { appendFrequencyToPlayerNotes } from './appendFrequencyToPlayerNotes';
 
 describe('appendFrequencyToPlayerNotes', () => {

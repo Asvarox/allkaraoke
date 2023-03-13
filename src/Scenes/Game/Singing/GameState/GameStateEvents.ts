@@ -29,32 +29,15 @@ export class GameStateEvent<T extends (...args: any[]) => void> {
     public constructor(private name: string, private track: boolean | ((...args: Parameters<T>) => any) = false) {}
 }
 
-const trackSongData = (
-    { artist, title }: Song | SongPreview,
-    setup: SingSetup,
-    scores: Array<{ name: string; score: number }> = [],
-) => ({
-    name: `${artist} - ${title}`,
-    artist,
-    title,
-    mode: setup.mode,
-    tolerance: setup.tolerance,
-    players: setup.players.length,
-    ...scores.reduce((curr, score, index) => ({ ...curr, [`score${index}`]: score.score }), {}),
-});
-
 export const events = {
     sectionChange: new GameStateEvent<(player: number, previousSectionIndex: number) => void>('sectionChange'),
     // newPlayerNote: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
     // playerNoteUpdate: new GameStateEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
 
-    songStarted: new GameStateEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>(
-        'songStarted',
-        trackSongData,
-    ),
+    songStarted: new GameStateEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted', false),
     songEnded: new GameStateEvent<
         (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
-    >('songEnded', trackSongData),
+    >('songEnded', false),
 
     phoneConnected: new GameStateEvent<(phone: { id: string; name: string; silent: boolean }) => void>(
         'phoneConnected',

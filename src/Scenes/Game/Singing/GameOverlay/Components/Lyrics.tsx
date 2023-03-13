@@ -142,7 +142,7 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
     box-sizing: border-box;
 
     padding: 1rem;
-    background: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.8' : '0.5')});
+    background: rgba(0, 0, 0, ${(props) => (props.bottom ? '0.9' : '0.5')});
     width: 100%;
     text-align: center;
     line-height: 1;

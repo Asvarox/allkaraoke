@@ -1,5 +1,5 @@
 import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
-import { generateNote, generateSong } from 'testUtilts';
+import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('normaliseGap', () => {
     it('should normalise when first section and note doesnt start at 0', () => {

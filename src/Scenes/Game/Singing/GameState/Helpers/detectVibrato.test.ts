@@ -1,4 +1,4 @@
-import { createDataSequence, generateFrequencyRecords } from 'testUtilts';
+import { createDataSequence, generateFrequencyRecords } from 'utils/testUtils';
 import detectVibrato from './detectVibrato';
 
 const data = [
