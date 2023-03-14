@@ -1,5 +1,5 @@
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import events from 'GameEvents/GameEvents';
+import { useEventListenerSelector } from 'GameEvents/hooks';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { InputSource } from 'Scenes/SelectInput/InputSources/interfaces';
 import { useEffect } from 'react';

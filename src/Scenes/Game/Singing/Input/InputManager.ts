@@ -1,6 +1,4 @@
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
@@ -34,7 +32,7 @@ class InputManager {
             inputSourceListManager.loadMics();
         }
 
-        GameStateEvents.inputListChanged.subscribe(async () => {
+        events.inputListChanged.subscribe(async () => {
             if (this.isMonitoring) {
                 await this.stopMonitoring();
                 this.startMonitoring();
@@ -130,17 +128,17 @@ class InputManager {
                                 this.sourceNameToInput(playerInput.inputSource)
                                     .requestReadiness(playerInput.deviceId)
                                     .then(() => {
-                                        GameStateEvents.readinessConfirmed.dispatch(playerInput.deviceId!);
+                                        events.readinessConfirmed.dispatch(playerInput.deviceId!);
                                     }),
                             ),
                         );
-                        gameStateEvents.inputListChanged.unsubscribe(request);
+                        events.inputListChanged.unsubscribe(request);
                         this.requestingPromise = null;
                         resolve(true);
                     }
                 };
 
-                gameStateEvents.inputListChanged.subscribe(request);
+                events.inputListChanged.subscribe(request);
                 request();
             });
         }

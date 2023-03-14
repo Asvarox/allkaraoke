@@ -1,4 +1,4 @@
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';

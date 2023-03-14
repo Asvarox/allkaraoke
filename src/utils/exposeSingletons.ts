@@ -2,7 +2,7 @@ import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
 import PhoneManager from 'RemoteMic/PhoneManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import GameEvents from 'GameEvents/GameEvents'; // @ts-ignore
 
 // @ts-ignore
 window.__exposeSingletons = () => {
@@ -11,7 +11,7 @@ window.__exposeSingletons = () => {
         WebRTCClient,
         WebRTCServer,
         GameState,
-        GameStateEvents,
+        GameEvents,
         PhoneManager,
     };
 };

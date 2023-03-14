@@ -1,4 +1,4 @@
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingTest';
 import {

@@ -2,15 +2,14 @@ import styled from '@emotion/styled';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { typography } from 'Elements/cssMixins';
-import { useEventEffect, useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import { CircularProgress } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
 import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
 import { waitFinished } from 'SoundManager';
 import sleep from 'utils/sleep';
+import events from 'GameEvents/GameEvents';
 
 interface Props {
     onFinish: () => void;
@@ -20,19 +19,16 @@ function WaitForReadiness({ onFinish }: Props) {
     const [areAllPlayersReady, setAreAllPlayersReady] = useState(false);
 
     const [confirmedPlayers, setConfirmedPlayers] = useState<string[]>([]);
-    useEventEffect(gameStateEvents.readinessConfirmed, (deviceId) => {
+    useEventEffect(events.readinessConfirmed, (deviceId) => {
         setConfirmedPlayers((current) => [...current, deviceId]);
     });
 
-    const players = useEventListenerSelector(
-        [gameStateEvents.inputListChanged, GameStateEvents.readinessConfirmed],
-        () => {
-            return InputManager.getInputs().map((input, index) => [
-                input.deviceId!,
-                GameState.getPlayers()[index]?.getName() ?? undefined,
-            ]);
-        },
-    );
+    const players = useEventListenerSelector([events.inputListChanged, events.readinessConfirmed], () => {
+        return InputManager.getInputs().map((input, index) => [
+            input.deviceId!,
+            GameState.getPlayers()[index]?.getName() ?? undefined,
+        ]);
+    });
 
     useEffect(() => {
         (async () => {

@@ -1,5 +1,5 @@
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import { SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 

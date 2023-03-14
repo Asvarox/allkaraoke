@@ -1,7 +1,8 @@
 import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from 'hooks/players/consts';
-import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 
-gameStateEvents.songStarted.subscribe((_, singSetup) => {
+import events from 'GameEvents/GameEvents';
+
+events.songStarted.subscribe((_, singSetup) => {
     let currentNames = JSON.parse(window.sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) || [];
     const thisPlayNames = singSetup.players.map(({ name }) => name.trim());
 
@@ -12,7 +13,7 @@ gameStateEvents.songStarted.subscribe((_, singSetup) => {
     window.sessionStorage.setItem(PREVIOUS_PLAYER_NAMES_STORAGE_KEY, JSON.stringify(thisPlayNames));
 });
 
-gameStateEvents.songScoreUpdated.subscribe((_, __, newName) => {
+events.songScoreUpdated.subscribe((_, __, newName) => {
     debugger;
     let currentNames = JSON.parse(window.sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) || [];
 

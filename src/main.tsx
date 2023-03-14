@@ -1,3 +1,7 @@
+import 'utils/exposeSingletons';
+import 'Stats';
+import 'GameEvents/eventListeners';
+
 import * as Sentry from '@sentry/react';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';

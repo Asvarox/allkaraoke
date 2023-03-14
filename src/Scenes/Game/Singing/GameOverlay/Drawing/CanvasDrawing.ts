@@ -5,11 +5,11 @@ import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/Sung
 import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
 import { randomFloat } from 'utils/randomValue';
 import GameState from '../../GameState/GameState';
-import GameStateEvents from '../../GameState/GameStateEvents';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 import debugPitches from './Elements/debugPitches';
+import events from 'GameEvents/GameEvents';
 import drawNote from './Elements/note';
 import drawPlayerFrequencyTrace from './Elements/playerFrequencyTrace';
 import drawPlayerNote from './Elements/playerNote';
@@ -32,7 +32,7 @@ export default class CanvasDrawing {
         private scaleFactor: number = 1,
     ) {}
     public start = () => {
-        GameStateEvents.sectionChange.subscribe(this.onSectionEnd);
+        events.sectionChange.subscribe(this.onSectionEnd);
         this.loop = true;
 
         this.drawFrame();
@@ -62,7 +62,7 @@ export default class CanvasDrawing {
 
     public end = () => {
         this.loop = false;
-        GameStateEvents.sectionChange.unsubscribe(this.onSectionEnd);
+        events.sectionChange.unsubscribe(this.onSectionEnd);
     };
 
     private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {

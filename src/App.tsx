@@ -12,9 +12,6 @@ import SelectInput from './Scenes/SelectInput/SelectInput';
 import * as Sentry from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
-import 'utils/exposeSingletons';
-import 'Stats';
-import './eventListeners';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';

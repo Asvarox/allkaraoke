@@ -5,7 +5,7 @@ import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup } from 'interfaces';
 import { useMemo, useRef, useState } from 'react';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import calculateScore from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';

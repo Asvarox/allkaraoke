@@ -2,8 +2,8 @@ import { omit } from 'lodash-es';
 import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import KeyboardHelpView from './HelpView';
 import PhoneManager from 'RemoteMic/PhoneManager';
-import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect } from 'GameEvents/hooks';
+import events from 'GameEvents/GameEvents';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR';
 

@@ -2,12 +2,12 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
 import { useEffect, useState } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect } from 'GameEvents/hooks';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import events from 'GameEvents/GameEvents';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -46,7 +46,7 @@ function BuiltIn(props: Props) {
     };
 
     useEffect(autoselect, []);
-    useEventEffect(GameStateEvents.inputListChanged, autoselect);
+    useEventEffect(events.inputListChanged, autoselect);
 
     useEffect(() => {
         props.onSetupComplete(!!selectedMic);

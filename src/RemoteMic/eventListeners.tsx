@@ -1,6 +1,6 @@
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import PhoneManager from './PhoneManager';
 import { toast } from 'react-toastify';
 

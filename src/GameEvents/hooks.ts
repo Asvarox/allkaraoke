@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { GameStateEvent } from '../GameState/GameStateEvents';
+import { GameEvent } from 'GameEvents/GameEvents';
 
-export function useEventListener<T extends (...args: any[]) => void>(event: GameStateEvent<T>) {
+export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>) {
     const [value, setValue] = useState<Parameters<T> | null>(null);
 
     useEffect(() => {
@@ -15,10 +15,7 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     return value;
 }
 
-export function useEventEffect<T extends (...args: any[]) => void>(
-    event: GameStateEvent<T> | GameStateEvent<T>[],
-    effect: T,
-) {
+export function useEventEffect<T extends (...args: any[]) => void>(event: GameEvent<T> | GameEvent<T>[], effect: T) {
     const eventList = Array.isArray(event) ? event : [event];
 
     useEffect(() => {
@@ -28,10 +25,7 @@ export function useEventEffect<T extends (...args: any[]) => void>(
     }, [...eventList, effect]);
 }
 
-export function useEventListenerSelector<S extends any>(
-    event: GameStateEvent<any> | GameStateEvent<any>[],
-    selector: () => S,
-) {
+export function useEventListenerSelector<S extends any>(event: GameEvent<any> | GameEvent<any>[], selector: () => S) {
     const initialValueRef = useMemo(selector, []);
     const [value, setValue] = useState<S>(initialValueRef);
 

@@ -1,8 +1,8 @@
 import { SongPreview } from 'interfaces';
 import { useEffect, useState } from 'react';
-import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import { useEventEffect } from 'GameEvents/hooks';
 import { fetchSongStats, getSongKey, SongStats, storeSongStats } from 'Songs/stats/common';
+import events from 'GameEvents/GameEvents';
 
 export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
     const [stats, setStats] = useState<SongStats | null>(null);
@@ -17,7 +17,7 @@ export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
         setSongStats();
     }, [storageKey]);
 
-    useEventEffect(gameStateEvents.songStatStored, setSongStats);
+    useEventEffect(events.songStatStored, setSongStats);
 
     return stats;
 };
@@ -42,6 +42,6 @@ export const useEditScore = (song: Pick<SongPreview, 'artist' | 'title'>) => {
         const newData = { ...data, scores: newScores };
 
         await storeSongStats(song, newData);
-        gameStateEvents.songScoreUpdated.dispatch(storageKey, newData, newName.trim());
+        events.songScoreUpdated.dispatch(storageKey, newData, newName.trim());
     };
 };

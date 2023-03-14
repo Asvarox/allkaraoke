@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Input } from 'Elements/Input';
 import { MenuButton } from 'Elements/Menu';
 import { FormEventHandler, useEffect, useRef, useState } from 'react';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { Wifi } from '@mui/icons-material';

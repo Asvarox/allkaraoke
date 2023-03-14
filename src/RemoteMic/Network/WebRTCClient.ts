@@ -1,5 +1,5 @@
 import { DataConnection, Peer } from 'peerjs';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 import { v4 } from 'uuid';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 import peerJSOptions from 'utils/peerJSOptions';

@@ -1,7 +1,7 @@
 import { throttle } from 'lodash-es';
 import { useCallback, useEffect, useState } from 'react';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import events from 'GameEvents/GameEvents';
+import { useEventListener } from 'GameEvents/hooks';
 import VolumeIndicator from './VolumeIndicator';
 import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
 

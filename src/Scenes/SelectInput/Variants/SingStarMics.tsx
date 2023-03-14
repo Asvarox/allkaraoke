@@ -1,8 +1,7 @@
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
-import { useEventEffect, useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useEffect, useState } from 'react';
@@ -11,6 +10,7 @@ import InputSources from 'Scenes/SelectInput/InputSources';
 import styled from '@emotion/styled';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import isWindows from 'utils/isWindows';
+import events from 'GameEvents/GameEvents';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -24,20 +24,17 @@ function SingStarMics(props: Props) {
     const { Microphone } = useMicrophoneList(true);
     const [showAdvancedTip, setShowAdvancedTip] = useState(false);
 
-    const isSetup = useEventListenerSelector(
-        [GameStateEvents.playerInputChanged, GameStateEvents.inputListChanged],
-        () => {
-            const inputs = InputManager.getInputs();
+    const isSetup = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {
+        const inputs = InputManager.getInputs();
 
-            const isSameDeviceId = [...new Set(inputs.map((input) => input.deviceId))].length === 1;
-            const isMicInput = !inputs.find((input) => input.inputSource !== 'Microphone');
-            const areAllPreferred = !inputs.find(
-                (input) => InputSources.getInputForPlayerSelected(input)!.preferred === undefined,
-            );
+        const isSameDeviceId = [...new Set(inputs.map((input) => input.deviceId))].length === 1;
+        const isMicInput = !inputs.find((input) => input.inputSource !== 'Microphone');
+        const areAllPreferred = !inputs.find(
+            (input) => InputSources.getInputForPlayerSelected(input)!.preferred === undefined,
+        );
 
-            return isSameDeviceId && isMicInput && areAllPreferred;
-        },
-    );
+        return isSameDeviceId && isMicInput && areAllPreferred;
+    });
 
     useEffect(() => {
         if (isSetup) {
@@ -53,7 +50,7 @@ function SingStarMics(props: Props) {
     };
 
     // Look for proper microphones in the list when the list changes
-    useEventEffect(GameStateEvents.inputListChanged, () => {
+    useEventEffect(events.inputListChanged, () => {
         const preferred = Microphone.list.filter((input) => input.preferred !== undefined);
         if (preferred.length === 2 && preferred[0].deviceId === preferred[1].deviceId) {
             preferred.forEach((input) => {

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { useEffect, useState } from 'react';
-import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect } from 'GameEvents/hooks';
+import events from 'GameEvents/GameEvents';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { focused } from 'Elements/cssMixins';
 

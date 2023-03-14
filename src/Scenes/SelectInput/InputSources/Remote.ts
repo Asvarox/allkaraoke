@@ -1,7 +1,7 @@
 import { Phone } from 'RemoteMic/RemoteMicInput';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
 import { InputSource } from './interfaces';
 import PhoneManager from 'RemoteMic/PhoneManager';
+import events from 'GameEvents/GameEvents';
 
 const mapPhoneToInput = (phone: Phone): InputSource => ({
     label: `📱${phone.name}`,
@@ -19,11 +19,11 @@ export class RemoteMicrophoneInputSource {
     public static getInputs = async (): Promise<InputSource[]> => PhoneManager.getPhones().map(mapPhoneToInput);
 
     public static subscribeToListChange = (callback: () => void) => {
-        GameStateEvents.phoneConnected.subscribe(callback);
-        GameStateEvents.phoneDisconnected.subscribe(callback);
+        events.phoneConnected.subscribe(callback);
+        events.phoneDisconnected.subscribe(callback);
     };
     public static unsubscribeToListChange = (callback: () => void) => {
-        GameStateEvents.phoneConnected.unsubscribe(callback);
-        GameStateEvents.phoneDisconnected.unsubscribe(callback);
+        events.phoneConnected.unsubscribe(callback);
+        events.phoneDisconnected.unsubscribe(callback);
     };
 }

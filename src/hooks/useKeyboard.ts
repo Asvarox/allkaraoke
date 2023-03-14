@@ -1,7 +1,7 @@
 import { invert } from 'lodash-es';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { useEventEffect } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventEffect } from 'GameEvents/hooks';
+import events from 'GameEvents/GameEvents';
 import { keyStrokes } from 'RemoteMic/Network/events';
 
 type Callback = (e?: KeyboardEvent) => void;

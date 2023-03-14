@@ -3,7 +3,7 @@ import { v4 } from 'uuid';
 import PhoneManager from 'RemoteMic/PhoneManager';
 import peerJSOptions from 'utils/peerJSOptions';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import events from 'GameEvents/GameEvents';
 
 const ROOM_ID_KEY = 'room_id_key';
 
@@ -42,11 +42,11 @@ class WebRTCServer {
                 if (type === 'register') {
                     PhoneManager.addPhone(data.id, data.name, conn, data.silent);
                 } else if (type === 'keystroke') {
-                    GameStateEvents.remoteKeyboardPressed.dispatch(data.key);
+                    events.remoteKeyboardPressed.dispatch(data.key);
                 } else if (type === 'unregister') {
                     PhoneManager.removePhone(conn.peer, true);
                 } else if (type === 'request-mic-select') {
-                    GameStateEvents.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
+                    events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
                 }
             });
 

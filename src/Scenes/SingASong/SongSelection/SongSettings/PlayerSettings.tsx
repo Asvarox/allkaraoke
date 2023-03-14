@@ -4,13 +4,13 @@ import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } f
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useState } from 'react';
-import gameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
-import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
+import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import PhoneManager from 'RemoteMic/PhoneManager';
+import events from 'GameEvents/GameEvents';
 
 interface Props {
     songPreview: SongPreview;
@@ -21,7 +21,7 @@ interface Props {
 
 function useDefaultPlayerName(index: number): string {
     // If the player input changed in the meantime
-    return useEventListenerSelector(gameStateEvents.playerInputChanged, () => {
+    return useEventListenerSelector(events.playerInputChanged, () => {
         let defaultName = '';
 
         const source = InputManager.getPlayerInput(index);

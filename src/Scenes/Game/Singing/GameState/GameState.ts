@@ -2,11 +2,11 @@ import { FrequencyRecord, NotesSection, PlayerNote, SingSetup, Song } from 'inte
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getNoteAtBeat } from 'Songs/utils/notesSelectors';
 import InputManager from '../Input/InputManager';
-import GameStateEvents from './GameStateEvents';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
 import calculateScore from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
+import events from 'GameEvents/GameEvents';
 
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];
@@ -67,7 +67,7 @@ class PlayerState {
     private dispatchSectionUpdate = () => {
         const currentSectionIndex = this.getCurrentSectionIndex();
         if (this.storedSectionIndex !== currentSectionIndex) {
-            GameStateEvents.sectionChange.dispatch(this.index, this.storedSectionIndex);
+            events.sectionChange.dispatch(this.index, this.storedSectionIndex);
             this.storedSectionIndex = currentSectionIndex;
         }
     };

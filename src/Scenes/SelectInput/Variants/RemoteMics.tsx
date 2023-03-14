@@ -3,11 +3,11 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
 import { useEffect } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { useEventListenerSelector } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import GameStateEvents from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
+import events from 'GameEvents/GameEvents';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -32,7 +32,7 @@ function RemoteMics(props: Props) {
         // list is not yet updated with the connected phone.
         // The event sequence is wrongly phoneConnected -> playerInputChanged -> inputListChanged - needs to be fixed
         // e.g. remove phoneConnected event?
-        [GameStateEvents.inputListChanged, GameStateEvents.playerInputChanged],
+        [events.inputListChanged, events.playerInputChanged],
         () => {
             return InputManager.getInputs()
                 .map((input) => (input.inputSource === 'Remote Microphone' ? input : null))

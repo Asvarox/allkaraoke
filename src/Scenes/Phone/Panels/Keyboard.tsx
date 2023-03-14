@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { Games, KeyboardArrowDown, KeyboardArrowLeft, KeyboardArrowRight, KeyboardArrowUp } from '@mui/icons-material';
 import { css } from '@emotion/react';
-import { useEventListener } from 'Scenes/Game/Singing/Hooks/useEventListener';
-import events from 'Scenes/Game/Singing/GameState/GameStateEvents';
+import { useEventListener } from 'GameEvents/hooks';
+import events from 'GameEvents/GameEvents';
 import { keyStrokes } from 'RemoteMic/Network/events';
 
 export default function PhoneKeyboard() {
