@@ -1,36 +1,36 @@
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import events from 'GameEvents/GameEvents';
-import PhoneManager from './PhoneManager';
 import { toast } from 'react-toastify';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 
 events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
     if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
         const playerNumber = InputManager.getInputs().findIndex(
             (input) => input.inputSource === 'Remote Microphone' && input.deviceId === oldInput.deviceId,
         );
-        const unselectedPhone = PhoneManager.getPhoneById(oldInput.deviceId!);
+        const unselectedRemoteMic = RemoteMicManager.getRemoteMicById(oldInput.deviceId!);
 
-        unselectedPhone?.setPlayerNumber(playerNumber >= 0 ? playerNumber : null);
+        unselectedRemoteMic?.setPlayerNumber(playerNumber >= 0 ? playerNumber : null);
     }
     if (newInput?.inputSource === 'Remote Microphone') {
-        const selectedPhone = PhoneManager.getPhoneById(newInput.deviceId!);
+        const selectedRemoteMic = RemoteMicManager.getRemoteMicById(newInput.deviceId!);
 
-        selectedPhone?.setPlayerNumber(playerNumber);
+        selectedRemoteMic?.setPlayerNumber(playerNumber);
     }
 });
-events.phoneConnected.subscribe(({ id }) => {
+events.remoteMicConnected.subscribe(({ id }) => {
     const playerNumberIndex = InputManager.getRawInputs().findIndex(
         (input) => input.inputSource === 'Remote Microphone' && input.deviceId === id,
     );
 
     if (playerNumberIndex > -1) {
-        const phone = PhoneManager.getPhoneById(id);
+        const remoteMic = RemoteMicManager.getRemoteMicById(id);
 
-        phone?.setPlayerNumber(playerNumberIndex);
+        remoteMic?.setPlayerNumber(playerNumberIndex);
 
         if (InputManager.monitoringStarted()) {
-            phone?.getInput()?.startMonitoring();
+            remoteMic?.getInput()?.startMonitoring();
         }
     }
 });
@@ -46,7 +46,7 @@ events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
     }
 });
 
-events.phoneConnected.subscribe(({ name, silent }) => {
+events.remoteMicConnected.subscribe(({ name, silent }) => {
     if (!silent) {
         toast.success(
             <>
@@ -55,7 +55,7 @@ events.phoneConnected.subscribe(({ name, silent }) => {
         );
     }
 });
-events.phoneDisconnected.subscribe(({ name }, silent) => {
+events.remoteMicDisconnected.subscribe(({ name }, silent) => {
     if (!silent) {
         toast.warning(
             <>

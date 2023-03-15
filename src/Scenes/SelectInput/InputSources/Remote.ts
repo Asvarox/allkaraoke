@@ -1,12 +1,12 @@
-import { Phone } from 'RemoteMic/RemoteMicInput';
+import { RemoteMic } from 'RemoteMic/RemoteMicInput';
 import { InputSource } from './interfaces';
-import PhoneManager from 'RemoteMic/PhoneManager';
 import events from 'GameEvents/GameEvents';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 
-const mapPhoneToInput = (phone: Phone): InputSource => ({
-    label: `📱${phone.name}`,
-    id: `${phone.id};0`,
-    deviceId: phone.id,
+const mapRemoteMicToInput = (remoteMic: RemoteMic): InputSource => ({
+    label: `📱${remoteMic.name}`,
+    id: `${remoteMic.id};0`,
+    deviceId: remoteMic.id,
     channels: 1,
     channel: 0,
 });
@@ -14,16 +14,17 @@ const mapPhoneToInput = (phone: Phone): InputSource => ({
 export class RemoteMicrophoneInputSource {
     public static readonly inputName = 'Remote Microphone';
 
-    public static getDefault = () => PhoneManager.getPhones().map(mapPhoneToInput)[0] ?? null;
+    public static getDefault = () => RemoteMicManager.getRemoteMics().map(mapRemoteMicToInput)[0] ?? null;
 
-    public static getInputs = async (): Promise<InputSource[]> => PhoneManager.getPhones().map(mapPhoneToInput);
+    public static getInputs = async (): Promise<InputSource[]> =>
+        RemoteMicManager.getRemoteMics().map(mapRemoteMicToInput);
 
     public static subscribeToListChange = (callback: () => void) => {
-        events.phoneConnected.subscribe(callback);
-        events.phoneDisconnected.subscribe(callback);
+        events.remoteMicConnected.subscribe(callback);
+        events.remoteMicDisconnected.subscribe(callback);
     };
     public static unsubscribeToListChange = (callback: () => void) => {
-        events.phoneConnected.unsubscribe(callback);
-        events.phoneDisconnected.unsubscribe(callback);
+        events.remoteMicConnected.unsubscribe(callback);
+        events.remoteMicDisconnected.unsubscribe(callback);
     };
 }

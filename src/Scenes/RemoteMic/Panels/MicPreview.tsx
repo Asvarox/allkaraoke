@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
 import VolumeIndicator from './VolumeIndicator';
-import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
+import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 
 interface Props {
     isVisible: boolean;
@@ -25,8 +25,8 @@ function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
     );
 
     useEffect(() => {
-        PhoneMic.startMonitoring(undefined);
-        return PhoneMic.addListener(updateVolumes);
+        SimplifiedMic.startMonitoring(undefined);
+        return SimplifiedMic.addListener(updateVolumes);
     }, [updateVolumes]);
 
     return isVisible ? (

@@ -2,7 +2,7 @@ import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
 import { useState } from 'react';
-import PhoneManager from 'RemoteMic/PhoneManager';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
 import SingASong from 'Scenes/SingASong/SingASong';
@@ -39,7 +39,7 @@ function Game(props: Props) {
                 <LayoutWithBackground>
                     <SingASong
                         onSongSelected={(setup) => {
-                            PhoneManager.broadcast({ t: 'reload-mic' });
+                            RemoteMicManager.broadcast({ t: 'reload-mic' });
                             setSingSetup(setup);
                         }}
                         preselectedSong={preselectedSong}

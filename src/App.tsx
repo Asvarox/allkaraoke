@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
-import { Route, Router } from 'wouter';
+import { Redirect, Route, Router } from 'wouter';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
 import Game from './Scenes/Game/Game';
 import Jukebox from './Scenes/Jukebox/Jukebox';
-import Phone from './Scenes/Phone/Phone';
+import RemoteMic from 'Scenes/RemoteMic/RemoteMic';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 import * as Sentry from '@sentry/react';
 
@@ -35,7 +35,10 @@ function App() {
                                 {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
                             </Route>
                             <Route path="/jukebox" component={Jukebox} />
-                            <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId!} />}</Route>
+                            <Route path="/remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
+                            <Route path="/phone/:roomId">
+                                {({ roomId }) => <Redirect to={`/remote-mic/${roomId}`} />}
+                            </Route>
                             <Route path="/select-input" component={SelectInput} />
                             <Route path="/settings" component={Settings} />
                             <Route path="/manage-songs" component={ManageSongs} />

@@ -39,9 +39,11 @@ export const events = {
         (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
     >('songEnded', false),
 
-    phoneConnected: new GameEvent<(phone: { id: string; name: string; silent: boolean }) => void>('phoneConnected'),
-    phoneDisconnected: new GameEvent<(phone: { id: string; name: string }, silent: boolean) => void>(
-        'phoneDisconnected',
+    remoteMicConnected: new GameEvent<(remoteMic: { id: string; name: string; silent: boolean }) => void>(
+        'remoteMicConnected',
+    ),
+    remoteMicDisconnected: new GameEvent<(remoteMic: { id: string; name: string }, silent: boolean) => void>(
+        'remoteMicDisconnected',
     ),
     playerInputChanged: new GameEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput) => void
@@ -57,7 +59,7 @@ export const events = {
 
     micMonitoringStarted: new GameEvent('micMonitoringStarted'),
     micMonitoringStopped: new GameEvent('micMonitoringStopped'),
-    playerChangeRequested: new GameEvent<(phoneId: string, newPlayerNumber: number | null) => void>(
+    playerChangeRequested: new GameEvent<(remoteMicId: string, newPlayerNumber: number | null) => void>(
         'playerChangeRequested',
         true,
     ),

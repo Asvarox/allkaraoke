@@ -1,4 +1,4 @@
-import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
+import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
 import { useEffect } from 'react';
@@ -29,9 +29,9 @@ function RemoteMics(props: Props) {
 
     const players = useEventListenerSelector(
         // Subscribing to inputListChanged otherwise as it's InputManager.getInputs returns dummy input as the input
-        // list is not yet updated with the connected phone.
-        // The event sequence is wrongly phoneConnected -> playerInputChanged -> inputListChanged - needs to be fixed
-        // e.g. remove phoneConnected event?
+        // list is not yet updated with the connected remote mic.
+        // The event sequence is wrongly remoteMicConnected -> playerInputChanged -> inputListChanged - needs to be fixed
+        // e.g. remove remoteMicConnected event?
         [events.inputListChanged, events.playerInputChanged],
         () => {
             return InputManager.getInputs()
@@ -52,7 +52,7 @@ function RemoteMics(props: Props) {
 
     return (
         <>
-            <ConnectPhone />
+            <ConnectRemoteMic />
             <h4>You can connect multiple phones in advance.</h4>
 
             <h4>You will be able to connect phones later.</h4>

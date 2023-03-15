@@ -1,7 +1,7 @@
 import 'Stats';
 import 'RemoteMic/eventListeners';
 import Modal from 'Elements/Modal';
-import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
+import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
 import { MenuContainer } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { Button } from 'Elements/Button';
@@ -17,7 +17,7 @@ function QRCodeModal({ closeModal }: Props) {
     return (
         <Modal onClose={closeModal}>
             <MenuContainer>
-                <ConnectPhone />
+                <ConnectRemoteMic />
                 <Button {...register('close', closeModal)}>Close</Button>
             </MenuContainer>
         </Modal>

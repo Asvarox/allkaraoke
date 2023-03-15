@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs, stubUserMedia } from './helpers';
-import connectRemotePhone from './steps/connectRemotePhone';
+import connectRemoteMic from './steps/connectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -77,12 +77,12 @@ test('Remote mic is deselected when it disconnects', async ({ page, context }) =
 
     await page.getByTestId('advanced').click({ force: true });
 
-    const remotePhone = await connectRemotePhone(page, context, 'Remote Phone Test');
+    const remoteMic = await connectRemoteMic(page, context, 'Remote Mic Test');
 
     await expect(page.getByTestId('player-1-source')).toContainText('Remote microphone', { ignoreCase: true });
-    await expect(page.getByTestId('player-1-input')).toContainText('Remote Phone Test', { ignoreCase: true });
+    await expect(page.getByTestId('player-1-input')).toContainText('Remote Mic Test', { ignoreCase: true });
 
-    await remotePhone.close();
+    await remoteMic.close();
 
     await expect(page.getByTestId('player-1-input')).toContainText('Default device', {
         ignoreCase: true,

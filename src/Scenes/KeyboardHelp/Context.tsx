@@ -1,7 +1,7 @@
 import { omit } from 'lodash-es';
 import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import KeyboardHelpView from './HelpView';
-import PhoneManager from 'RemoteMic/PhoneManager';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { useEventEffect } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 
@@ -30,15 +30,15 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
 
     const [name, help] = Object.entries(keyboards).at(-1) ?? [];
 
-    useEventEffect(events.phoneConnected, ({ id }) => {
-        PhoneManager.getPhoneById(id)?.connection.send({
+    useEventEffect(events.remoteMicConnected, ({ id }) => {
+        RemoteMicManager.getRemoteMicById(id)?.connection.send({
             t: 'keyboard-layout',
             help,
         });
     });
 
     useEffect(() => {
-        PhoneManager.broadcast({
+        RemoteMicManager.broadcast({
             t: 'keyboard-layout',
             help,
         });

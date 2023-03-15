@@ -8,9 +8,9 @@ import { useRoute } from 'wouter';
 
 const linkObject = new URL(window.location.href);
 
-function ConnectPhone() {
-    const [match, params] = useRoute<{ roomId: string }>('/phone/:roomId');
-    linkObject.pathname = `/phone/${match ? params.roomId : WebRTCServer.getRoomId()}`;
+function ConnectRemoteMic() {
+    const [match, params] = useRoute<{ roomId: string }>('/remote-mic/:roomId');
+    linkObject.pathname = `/remote-mic/${match ? params.roomId : WebRTCServer.getRoomId()}`;
     const link = linkObject.href;
 
     useEffect(() => {
@@ -152,4 +152,4 @@ const Description = styled.div`
     }
 `;
 
-export default ConnectPhone;
+export default ConnectRemoteMic;

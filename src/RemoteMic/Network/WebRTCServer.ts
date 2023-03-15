@@ -1,6 +1,6 @@
 import { Peer } from 'peerjs';
 import { v4 } from 'uuid';
-import PhoneManager from 'RemoteMic/PhoneManager';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import peerJSOptions from 'utils/peerJSOptions';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import events from 'GameEvents/GameEvents';
@@ -20,7 +20,7 @@ class WebRTCServer {
         }
 
         window.addEventListener('beforeunload', () => {
-            PhoneManager.getPhones().forEach((phone) => phone.connection.close());
+            RemoteMicManager.getRemoteMics().forEach((remoteMic) => remoteMic.connection.close());
             this.peer?.disconnect();
         });
     }
@@ -40,11 +40,11 @@ class WebRTCServer {
             conn.on('data', (data: WebRTCEvents) => {
                 const type = data.t;
                 if (type === 'register') {
-                    PhoneManager.addPhone(data.id, data.name, conn, data.silent);
+                    RemoteMicManager.addRemoteMic(data.id, data.name, conn, data.silent);
                 } else if (type === 'keystroke') {
                     events.remoteKeyboardPressed.dispatch(data.key);
                 } else if (type === 'unregister') {
-                    PhoneManager.removePhone(conn.peer, true);
+                    RemoteMicManager.removeRemoteMic(conn.peer, true);
                 } else if (type === 'request-mic-select') {
                     events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
                 }
@@ -60,12 +60,12 @@ class WebRTCServer {
             // @ts-expect-error `iceStateChanged` is not included in TS definitions
             conn.on('iceStateChanged', (state) => {
                 if (state === 'disconnected' || state === 'closed') {
-                    PhoneManager.removePhone(conn.peer);
+                    RemoteMicManager.removeRemoteMic(conn.peer);
                 }
             });
 
             conn.on('close', () => {
-                PhoneManager.removePhone(conn.peer);
+                RemoteMicManager.removeRemoteMic(conn.peer);
             });
         });
         this.peer.on('close', () => {

@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import connectRemotePhone from './steps/connectRemotePhone';
+import connectRemoteMic from './steps/connectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -20,7 +20,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     await page.getByTestId('advanced').click({ force: true });
 
     // Connect blue microphone
-    const remoteMic = await connectRemotePhone(page, context, 'E2E Test Blue');
+    const remoteMic = await connectRemoteMic(page, context, 'E2E Test Blue');
     // Assert auto selection of inputs
     await expect(page.getByTestId('player-1-input')).toContainText('E2E Test Blue', { ignoreCase: true });
 
@@ -46,15 +46,15 @@ test('Source selection in sing settings', async ({ page, context }) => {
     });
 });
 
-test('Source selection from remote phone', async ({ page, context }) => {
+test('Source selection from remote remote mic', async ({ page, context }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click({ force: true });
 
     // Connect blue microphone
-    const remoteMicBluePage = await connectRemotePhone(page, context, 'E2E Test Blue');
+    const remoteMicBluePage = await connectRemoteMic(page, context, 'E2E Test Blue');
 
     // Connect red microphone
-    const remoteMicRed = await connectRemotePhone(page, context, 'E2E Test Red');
+    const remoteMicRed = await connectRemoteMic(page, context, 'E2E Test Red');
 
     await test.step('change red player mic to blue', async () => {
         await remoteMicRed.getByTestId('change-player').click({ force: true });

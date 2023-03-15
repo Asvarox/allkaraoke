@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import connectRemotePhone from './steps/connectRemotePhone';
+import connectRemoteMic from './steps/connectRemoteMic';
 import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test.beforeEach(async ({ page, context }) => {
@@ -21,10 +21,10 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await page.getByTestId('remote-mics').click({ force: true });
 
     // Connect blue microphone
-    const remoteMicBluePage = await connectRemotePhone(page, context, P1_Name);
+    const remoteMicBluePage = await connectRemoteMic(page, context, P1_Name);
 
     // Connect red microphone
-    const remoteMicRed = await connectRemotePhone(page, context, P2_Name);
+    const remoteMicRed = await connectRemoteMic(page, context, P2_Name);
 
     // Assert auto selection of inputs
     await expect(page.getByTestId('mic-check-p1')).toContainText(P1_Name, { ignoreCase: true });
@@ -35,7 +35,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
 
     await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
-    // Check if the phones reconnect automatically
+    // Check if the remote mics reconnect automatically
     await page.reload();
 
     await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {

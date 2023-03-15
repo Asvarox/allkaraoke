@@ -3,7 +3,7 @@ import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './Network/sendEvent';
 
-class PhoneInput implements InputInterface {
+class RemoteMicInput implements InputInterface {
     private frequencies: number[] | number[][] = [0];
     private volumes = [0];
 
@@ -63,10 +63,10 @@ class PhoneInput implements InputInterface {
     };
 }
 
-export class Phone {
-    private input: PhoneInput;
+export class RemoteMic {
+    private input: RemoteMicInput;
     constructor(public id: string, public name: string, public connection: Peer.DataConnection) {
-        this.input = new PhoneInput(connection);
+        this.input = new RemoteMicInput(connection);
     }
 
     public getInput = () => this.input;

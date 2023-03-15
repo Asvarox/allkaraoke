@@ -4,7 +4,7 @@ import InputInterface from './Interface';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';
 
-class PhoneMic extends Listener<[number, number]> implements InputInterface {
+class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
     private stream: MediaStream | null = null;
     private context: AudioContext | null = null;
 
@@ -92,4 +92,4 @@ class PhoneMic extends Listener<[number, number]> implements InputInterface {
     public requestReadiness = () => Promise.resolve(true);
 }
 
-export default new PhoneMic();
+export default new SimplifiedMic();

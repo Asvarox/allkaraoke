@@ -9,7 +9,7 @@ import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import PhoneManager from 'RemoteMic/PhoneManager';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import events from 'GameEvents/GameEvents';
 
 interface Props {
@@ -27,7 +27,7 @@ function useDefaultPlayerName(index: number): string {
         const source = InputManager.getPlayerInput(index);
 
         if (source?.inputSource === 'Remote Microphone') {
-            defaultName = PhoneManager.getPhoneById(source.deviceId!)?.name || defaultName;
+            defaultName = RemoteMicManager.getRemoteMicById(source.deviceId!)?.name || defaultName;
         }
         if (!defaultName) {
             const previousPlayerNames =

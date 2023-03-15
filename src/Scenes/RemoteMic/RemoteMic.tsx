@@ -7,13 +7,13 @@ import { useEffect, useRef, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
-import PhoneMic from 'Scenes/Game/Singing/Input/PhoneMic';
+import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import PhoneKeyboard from './Panels/Keyboard';
-import MicPreview from 'Scenes/Phone/Panels/MicPreview';
-import Connect from 'Scenes/Phone/Panels/Connect';
-import ConfirmReadiness from 'Scenes/Phone/Panels/ConfirmReadiness';
+import RemoteMicKeyboard from './Panels/Keyboard';
+import MicPreview from 'Scenes/RemoteMic/Panels/MicPreview';
+import Connect from 'Scenes/RemoteMic/Panels/Connect';
+import ConfirmReadiness from 'Scenes/RemoteMic/Panels/ConfirmReadiness';
 
 interface Props {
     roomId: string;
@@ -21,7 +21,7 @@ interface Props {
 
 const noSleep = new NoSleep();
 
-function Phone({ roomId }: Props) {
+function RemoteMic({ roomId }: Props) {
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [connectionStatus] = useEventListener(events.karaokeConnectionStatusChange) ?? ['uninitialised'];
 
@@ -70,13 +70,15 @@ function Phone({ roomId }: Props) {
                             connectionStatus={connectionStatus}
                             onConnect={onConnect}
                         />
-                        <PhoneKeyboard />
+                        <RemoteMicKeyboard />
                         <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
                             WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
                         </KeepAwake>
                         <MicInputState
                             onClick={() =>
-                                monitoringStarted ? PhoneMic.stopMonitoring() : PhoneMic.startMonitoring(undefined)
+                                monitoringStarted
+                                    ? SimplifiedMic.stopMonitoring()
+                                    : SimplifiedMic.startMonitoring(undefined)
                             }>
                             Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
                         </MicInputState>
@@ -86,7 +88,7 @@ function Phone({ roomId }: Props) {
         </>
     );
 }
-export default Phone;
+export default RemoteMic;
 
 const Container = styled(MenuContainer)`
     margin: 0 auto;

@@ -6,7 +6,7 @@ import { useEventListener } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import { keyStrokes } from 'RemoteMic/Network/events';
 
-export default function PhoneKeyboard() {
+export default function RemoteMicKeyboard() {
     const [keyboard] = useEventListener(events.remoteKeyboardLayout) ?? [];
 
     const isHorizontal = keyboard?.horizontal !== undefined || keyboard?.['horizontal-vertical'] !== undefined;

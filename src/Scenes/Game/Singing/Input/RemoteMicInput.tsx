@@ -1,25 +1,25 @@
-import PhoneManager from 'RemoteMic/PhoneManager';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import InputInterface from './Interface';
 
 class RemoteMicInput implements InputInterface {
     private frequencies: [number] = [0];
     private volumes: [number] = [1];
 
-    public startMonitoring = async (phoneId?: string) => {
-        return PhoneManager.getPhoneById(phoneId ?? '')
+    public startMonitoring = async (remoteMicId?: string) => {
+        return RemoteMicManager.getRemoteMicById(remoteMicId ?? '')
             ?.getInput()
             .startMonitoring();
     };
 
     public getFrequencies = (deviceId?: string) => {
-        const val = PhoneManager.getPhoneById(deviceId ?? '')
+        const val = RemoteMicManager.getRemoteMicById(deviceId ?? '')
             ?.getInput()
             .getFrequencies();
 
         return val ?? this.frequencies;
     };
     public getVolumes = (deviceId?: string) => {
-        const val = PhoneManager.getPhoneById(deviceId ?? '')
+        const val = RemoteMicManager.getRemoteMicById(deviceId ?? '')
             ?.getInput()
             .getVolumes();
 
@@ -27,17 +27,17 @@ class RemoteMicInput implements InputInterface {
     };
 
     public stopMonitoring = async (deviceId?: string) =>
-        PhoneManager.getPhoneById(deviceId ?? '')
+        RemoteMicManager.getRemoteMicById(deviceId ?? '')
             ?.getInput()
             .stopMonitoring();
 
     public requestReadiness = (deviceId?: string) =>
-        PhoneManager.getPhoneById(deviceId ?? '')
+        RemoteMicManager.getRemoteMicById(deviceId ?? '')
             ?.getInput()
             .requestReadiness() ?? Promise.resolve(true);
 
     public getInputLag = (deviceId?: string) =>
-        PhoneManager.getPhoneById(deviceId ?? '')
+        RemoteMicManager.getRemoteMicById(deviceId ?? '')
             ?.getInput()
             .getInputLag() ?? 0;
 

@@ -22,8 +22,8 @@ const addSteps = (start: [number, number], steps: Array<[number, number, dirs]>,
 };
 
 // Possibly an overkill (but fun)?
-export default async function navigateWithKeyboard(page: Page, targetTestId: string, phone?: Page) {
-    await test.step(`Use ${phone ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
+export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page) {
+    await test.step(`Use ${remoteMic ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
         await expect(page.getByTestId(targetTestId)).toBeVisible();
         const navigableElements = await page.locator('[data-focused]');
         const handles = await navigableElements.elementHandles();
@@ -77,8 +77,8 @@ export default async function navigateWithKeyboard(page: Page, targetTestId: str
 
         for (const [x, y, dir] of intermediateSteps) {
             // Execute the steps
-            if (phone) {
-                await phone.getByTestId(`arrow-${dir.toLowerCase()}`).click();
+            if (remoteMic) {
+                await remoteMic.getByTestId(`arrow-${dir.toLowerCase()}`).click();
             } else {
                 await page.keyboard.press(`Arrow${dir}`);
             }

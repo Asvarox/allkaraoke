@@ -41,7 +41,7 @@ yarn build
 ## Development
 By default, dummy (simulated) microphones are used. You can use whatever other mic.
 
-### Connecting phone mic to dev server
+### Connecting remote mic to dev server
 You can just copy the link and open it in a new browser tab or whole new browser. If you want to connect actual phone
 to the dev server, you need to run it with `--host` flag, eg `yarn start --host` (and open the actual IP link).
 

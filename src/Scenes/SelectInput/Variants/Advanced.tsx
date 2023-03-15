@@ -1,7 +1,7 @@
 import { MenuButton } from 'Elements/Menu';
 import { Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import ConnectPhone from 'Scenes/ConnectPhone/ConnectPhone';
+import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
@@ -47,7 +47,7 @@ function Advanced(props: Props) {
     return (
         <>
             <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can show them.</h2>}>
-                <ConnectPhone />
+                <ConnectRemoteMic />
                 <Heading>
                     <MicCheck playerNumber={0}>
                         <Mic />

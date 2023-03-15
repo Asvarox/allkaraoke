@@ -7,7 +7,7 @@ import events from 'GameEvents/GameEvents';
 export function useRemoteMicAutoselect() {
     const nextPlayerToAutoSwitch = useRef(0);
 
-    useEventEffect(events.phoneConnected, ({ id }) => {
+    useEventEffect(events.remoteMicConnected, ({ id }) => {
         console.log('useRemoteMicAutoselect', id);
         InputManager.setPlayerInput(nextPlayerToAutoSwitch.current, RemoteMicrophoneInputSource.inputName, 0, id);
         nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % 2;
