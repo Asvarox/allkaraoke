@@ -12,6 +12,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     await page.getByTestId('skip').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click({ force: true });
     await page.getByTestId('song-e2e-test-multitrack.json').dblclick();
     await page.getByTestId('next-step-button').click({ force: true });

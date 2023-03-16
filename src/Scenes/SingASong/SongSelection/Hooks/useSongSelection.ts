@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 import { randomInt } from 'utils/randomValue';
-import usePrevious from 'hooks/usePrevious';
 import { useLocation } from 'wouter';
 
 export default function useSongSelection(preselectedSong: string | null) {
@@ -18,24 +17,26 @@ export default function useSongSelection(preselectedSong: string | null) {
         filters,
     );
 
+    const [preselected, setPreselected] = useState(false);
     useEffect(() => {
-        if (songList && songList[focusedSong])
-            navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`, { replace: true });
-    }, [focusedSong, songList]);
-
-    const previousIsLoading = usePrevious(isLoading);
-    useEffect(() => {
-        if (previousIsLoading && !isLoading) {
+        if (!preselected && songList.length) {
             const preselectedSongIndex = songList.findIndex((song) => song.file === preselectedSong);
             const firstNewSongIndex = songList.findIndex((song) => song.isNew);
 
-            let songIndex = randomInt(0, songList.length);
+            let songIndex = randomInt(0, songList.length - 1);
             if (preselectedSongIndex > -1) songIndex = preselectedSongIndex;
             else if (firstNewSongIndex > -1) songIndex = preselectedSongIndex;
 
             moveToSong(songIndex);
+            setPreselected(true);
         }
-    }, [previousIsLoading, isLoading, songList, moveToSong, preselectedSong]);
+    }, [songList, moveToSong, preselectedSong]);
+
+    useEffect(() => {
+        if (preselected && songList.length && songList[focusedSong]) {
+            navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`, { replace: true });
+        }
+    }, [preselected, focusedSong, songList]);
 
     const songPreview = songList?.[focusedSong];
     return {

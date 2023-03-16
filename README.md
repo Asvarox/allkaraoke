@@ -54,7 +54,7 @@ yarn e2e
 ```
 You can run specific test and specific browser, headed or with debug like so
 ```
-yarn e2e --project="chromium" --headed --debug tests/filters.spec.ts
+yarn e2e --project="chromium" --headed --debug tests/song-list.spec.ts
 ```
 It's also possible to run the tests against prod build (same as in CI) - it makes the tests run slightly faster:
 ```

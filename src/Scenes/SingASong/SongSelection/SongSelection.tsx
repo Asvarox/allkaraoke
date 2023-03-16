@@ -70,6 +70,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const previouslyFocusedGroup = usePrevious(focusedGroup);
     const previouslyFocusedSong = usePrevious(focusedSong);
 
+    const [preselected, setPreselected] = useState(false);
     useEffect(() => {
         const selector = (group: string, index: number) => `[data-group-letter="${group}"] [data-index="${index}"]`;
         handleResize(); // Recalculate width/height to account possible scrollbar appearing
@@ -85,6 +86,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     inline: 'center',
                     block: 'center',
                 });
+                setPreselected(true);
             }
             setPositions({
                 previewLeft: song.offsetLeft,
@@ -93,7 +95,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 previewHeight: song.offsetHeight,
             });
         }
-    }, [width, list, focusedSong, focusedGroup, groupedSongList]);
+    }, [preselected, width, list, focusedSong, focusedGroup, groupedSongList]);
 
     const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : moveToSong(index));
     if (!groupedSongList || !width) return <>Loading</>;
@@ -107,7 +109,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     }
 
     return (
-        <Container>
+        <Container visible={preselected}>
             {filters.search ? (
                 <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
             ) : (
@@ -167,7 +169,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     );
 }
 
-const Container = styled.div`
+const Container = styled.div<{ visible: boolean }>`
+    opacity: ${(props) => (props.visible ? '1' : '0')};
+    transition: 500ms;
     display: flex;
     flex-direction: row;
     max-height: 100vh;

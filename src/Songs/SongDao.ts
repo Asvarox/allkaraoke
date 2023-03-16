@@ -1,8 +1,8 @@
-import { Song, SongPreview } from "interfaces";
-import localForage from "localforage";
-import { getSongPreview } from "../../scripts/utils";
-import { lastVisit } from "Stats/lastVisit";
-import { isAfter } from "date-fns";
+import { Song, SongPreview } from 'interfaces';
+import localForage from 'localforage';
+import { getSongPreview } from '../../scripts/utils';
+import { lastVisit } from 'Stats/lastVisit';
+import { isAfter } from 'date-fns';
 
 const storage = localForage.createInstance({
     name: 'songs',
@@ -37,11 +37,13 @@ class SongDao {
         return includeDeleted ? this.indexWithDeletedSongs! : this.finalIndex!;
     };
 
+    public getCurrentIndex = () => this.finalIndex;
+
     private getDeletedSongsList = async () => {
         const list = await storage.getItem<string[]>(DELETED_SONGS_KEY);
 
-        return list ?? []
-    }
+        return list ?? [];
+    };
 
     public generateSongFile = (song: Song | SongPreview) => `${song?.artist}-${song?.title}.json`;
 
@@ -75,8 +77,7 @@ class SongDao {
         await storage.removeItem(fileName);
 
         return this.reloadIndex();
-
-    }
+    };
 
     public softDeleteSong = async (fileName: string) => {
         const deletedItems = await this.getDeletedSongsList();
@@ -85,7 +86,10 @@ class SongDao {
     };
     public restoreSong = async (fileName: string) => {
         const deletedItems = await this.getDeletedSongsList();
-        await storage.setItem(DELETED_SONGS_KEY, deletedItems.filter(item => item !== fileName));
+        await storage.setItem(
+            DELETED_SONGS_KEY,
+            deletedItems.filter((item) => item !== fileName),
+        );
         return this.reloadIndex();
     };
 

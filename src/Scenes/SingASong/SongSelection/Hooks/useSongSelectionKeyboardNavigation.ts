@@ -173,7 +173,7 @@ export const useSongSelectionKeyboardNavigation = (
     };
 
     const randomSong = () => {
-        const newIndex = randomInt(0, songCount);
+        const newIndex = randomInt(0, songCount - 1);
         moveToSong(newIndex);
     };
 

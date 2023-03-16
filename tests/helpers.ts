@@ -20,13 +20,13 @@ export const mockSongs = async ({ page }: { page: Page; context: BrowserContext 
     }
 };
 
-export const initTestMode = async ({ context }: { page: Page; context: BrowserContext }) => {
-    await context.addInitScript(() => {
-        window.Math.random = () => 0.5;
+export const initTestMode = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
+    await context.addInitScript((randomValue) => {
+        window.Math.random = () => randomValue;
 
         // @ts-expect-error
         window.isE2ETests = true;
-    });
+    }, randomValue);
 };
 
 interface SimDevice {

@@ -17,6 +17,7 @@ test('Jukebox', async ({ page }) => {
 
     await navigateWithKeyboard(page, 'sing-button');
     await page.keyboard.press('Enter'); // Sing this song
+    await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click({ force: true });
     await expect(page.getByTestId('song-list-container')).toBeVisible();
     await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', selectedSong!);

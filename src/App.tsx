@@ -34,8 +34,9 @@ function App() {
                     <Router>
                         <GameScreens>
                             <Toolbar />
-                            <Route path="/game/:file">{({ file }) => <Game file={decodeURIComponent(file!)} />}</Route>
-                            <Route path="/game">{() => <Game />}</Route>
+                            <Route path="/game/:file?">
+                                {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
+                            </Route>
                             <Route path="/jukebox" component={Jukebox} />
                             <Route path="/phone/:roomId">{({ roomId }) => <Phone roomId={roomId!} />}</Route>
                             <Route path="/select-input" component={SelectInput} />

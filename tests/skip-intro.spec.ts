@@ -13,6 +13,7 @@ test('skip the intro from the song', async ({ page }) => {
     await page.getByTestId('save-button').click({ force: true });
 
     await page.getByTestId('sing-a-song').click({ force: true });
+    await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click({ force: true });
 
     await expect(page.getByTestId('song-e2e-skip-intro-song.json')).toBeVisible();

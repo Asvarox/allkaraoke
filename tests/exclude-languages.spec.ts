@@ -14,6 +14,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await test.step('Exclude Polish', async () => {
         await page.getByTestId('sing-a-song').click({ force: true });
         await page.getByTestId('lang-Polish').click({ force: true });
+        await expect(page.getByTestId('lang-Polish')).toBeVisible();
         await page.getByTestId('close-exclude-languages').click({ force: true });
 
         await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
@@ -27,6 +28,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
         await page.getByTestId('exclude-languages').click({ force: true });
         await page.getByTestId('lang-Polish').click({ force: true });
         await page.getByTestId('lang-English').click({ force: true });
+        await expect(page.getByTestId('lang-Polish')).toBeVisible();
         await page.getByTestId('close-exclude-languages').click({ force: true });
 
         await page.getByTestId('sing-a-song').click({ force: true });
@@ -41,6 +43,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
         await page.getByTestId('manage-songs').click({ force: true });
         await page.getByTestId('exclude-languages').click({ force: true });
         await page.getByTestId('lang-English').click({ force: true });
+        await expect(page.getByTestId('lang-Polish')).toBeVisible();
         await page.getByTestId('close-exclude-languages').click({ force: true });
 
         await page.getByTestId('sing-a-song').click({ force: true });

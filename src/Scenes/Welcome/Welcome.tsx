@@ -32,8 +32,8 @@ function Welcome() {
                     <Logo />
                     <RecommendedBrowsers />
                     <MenuContainer>
-                        <Link href="/game">
-                            <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game'))}>
+                        <Link href="/game/">
+                            <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game/'))}>
                                 Sing a song
                             </MenuButton>
                         </Link>
