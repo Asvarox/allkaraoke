@@ -12,6 +12,7 @@ import SelectInput from './Scenes/SelectInput/SelectInput';
 import * as Sentry from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
+import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
 import styles from 'styles';
@@ -47,7 +48,7 @@ function App() {
                                 <Route path="/manage-songs" component={ManageSongs} />
                                 <Route path="/exclude-languages" component={ExcludeLanguages} />
                                 {setupPreference === null ? (
-                                    <Route path="/" component={() => <Redirect to="/select-input" />} />
+                                    <Route path="/" component={QuickSetup} />
                                 ) : (
                                     <Route path="/" component={Welcome} />
                                 )}
