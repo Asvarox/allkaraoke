@@ -1,17 +1,25 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
-import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { MenuButton } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
-import { Link, useLocation } from 'wouter';
+import { Link } from 'wouter';
 import getSongBpm from './logo_bpm.png';
-import Logo from 'Elements/Logo';
-import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import { useBackground } from 'Elements/LayoutWithBackground';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import MenuWithLogo from 'Elements/MenuWithLogo';
+import { MouseEventHandler } from 'react';
 
 function Welcome() {
-    const [, navigate] = useLocation();
+    useBackground(true);
+
+    const navigate = useSmoothNavigate();
+
+    const handleClick: (url: string) => MouseEventHandler<HTMLAnchorElement> = (url) => (e) => {
+        e.preventDefault();
+        navigate(url);
+    };
+
     useBackgroundMusic(/* true */ false);
     const { register } = useKeyboardNav();
     return (
@@ -26,47 +34,36 @@ function Welcome() {
                     </a>
                 </span>
             </BackgroundMusicCredit>
-            <LayoutWithBackground>
-                <GithubRibbon />
-                <Container>
-                    <Logo />
-                    <RecommendedBrowsers />
-                    <MenuContainer>
-                        <Link href="/game/">
-                            <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game/'))}>
-                                Sing a song
-                            </MenuButton>
-                        </Link>
-                        <Link href="/select-input">
-                            <MenuButton
-                                data-test="select-input"
-                                {...register('select input', () => navigate('/select-input'))}>
-                                Setup Microphones
-                            </MenuButton>
-                        </Link>
-                        <Link href="/settings">
-                            <MenuButton data-test="settings" {...register('settings', () => navigate('/settings'))}>
-                                Settings
-                            </MenuButton>
-                        </Link>
-                        <Link href="/jukebox">
-                            <MenuButton data-test="jukebox" {...register('jukebox', () => navigate('/jukebox'))}>
-                                Jukebox
-                            </MenuButton>
-                        </Link>
-                        <Link href="/manage-songs">
-                            <MenuButton
-                                data-test="manage-songs"
-                                {...register('manage songs', () => navigate('/manage-songs'))}>
-                                Manage Songs
-                            </MenuButton>
-                        </Link>
-                        <GetSongBPM target="_blank" href="https://getsongbpm.com/">
-                            Bpm data and release year provided by <img src={getSongBpm} />
-                        </GetSongBPM>
-                    </MenuContainer>
-                </Container>
-            </LayoutWithBackground>
+            <MenuWithLogo supportedBrowsers>
+                <Link href="/game/" onClick={handleClick('/game/')}>
+                    <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game/'))}>
+                        Sing a song
+                    </MenuButton>
+                </Link>
+                <Link href="/select-input" onClick={handleClick('/select-input')}>
+                    <MenuButton data-test="select-input" {...register('select input', () => navigate('/select-input'))}>
+                        Setup Microphones
+                    </MenuButton>
+                </Link>
+                <Link href="/settings" onClick={handleClick('/settings')}>
+                    <MenuButton data-test="settings" {...register('settings', () => navigate('/settings'))}>
+                        Settings
+                    </MenuButton>
+                </Link>
+                <Link href="/jukebox" onClick={handleClick('/jukebox')}>
+                    <MenuButton data-test="jukebox" {...register('jukebox', () => navigate('/jukebox'))}>
+                        Jukebox
+                    </MenuButton>
+                </Link>
+                <Link href="/manage-songs" onClick={handleClick('/manage-songs')}>
+                    <MenuButton data-test="manage-songs" {...register('manage songs', () => navigate('/manage-songs'))}>
+                        Manage Songs
+                    </MenuButton>
+                </Link>
+                <GetSongBPM target="_blank" href="https://getsongbpm.com/">
+                    Bpm data and release year provided by <img src={getSongBpm} />
+                </GetSongBPM>
+            </MenuWithLogo>
         </>
     );
 }
@@ -94,12 +91,8 @@ const BackgroundMusicCredit = styled.div`
     position: absolute;
     bottom: 0;
     left: 1rem;
-`;
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    view-transition-name: background-music-credit;
 `;
 
 export default Welcome;

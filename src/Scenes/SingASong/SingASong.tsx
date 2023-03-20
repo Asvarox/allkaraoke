@@ -1,4 +1,3 @@
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import ExcludeLanguagesView from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { ComponentProps, useState } from 'react';
@@ -13,9 +12,7 @@ function SingASong(props: ComponentProps<typeof SongSelection>) {
     };
 
     return languageSelection ? (
-        <LayoutWithBackground>
-            <ExcludeLanguagesView onClose={goBack} closeText="Continue to Song Selection" />
-        </LayoutWithBackground>
+        <ExcludeLanguagesView onClose={goBack} closeText="Continue to Song Selection" />
     ) : (
         <SongSelection {...props} />
     );

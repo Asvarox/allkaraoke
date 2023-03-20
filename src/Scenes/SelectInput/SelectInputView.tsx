@@ -11,6 +11,7 @@ import Lottie from 'lottie-react';
 import styled from '@emotion/styled';
 import tuple from 'utils/tuple';
 import posthog from 'posthog-js';
+import startViewTransition from 'utils/startViewTransition';
 
 interface Props {
     onFinish: (pref: (typeof MicSetupPreference)[number]) => void;
@@ -32,6 +33,12 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack }: Pro
 
     const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
 
+    const storePreference = (...args: Parameters<typeof setPreference>) => {
+        startViewTransition(() => {
+            setPreference(...args);
+        });
+    };
+
     const onSave = (pref: (typeof MicSetupPreference)[number]) => () => {
         // Keep currently selected preference unless nothing (null) is selected - then store `skip` directly
         // skip is needed to mark that user explicitly didn't select anything
@@ -44,8 +51,10 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack }: Pro
         onFinish(pref);
     };
     const back = () => {
-        setPreference(null);
-        setIsComplete(false);
+        startViewTransition(() => {
+            setPreference(null);
+            setIsComplete(false);
+        });
     };
 
     return (
@@ -64,9 +73,9 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack }: Pro
                     'How do you want to sing?'
                 )}
             </Heading>
-            {preference === null && (
+            {(preference === null || preference === 'skip') && (
                 <SelectPreference
-                    onPreferenceSelected={setPreference}
+                    onPreferenceSelected={storePreference}
                     previouslySelected={previouslySelected}
                     onBack={onBack}
                 />

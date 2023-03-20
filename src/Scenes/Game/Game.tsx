@@ -1,4 +1,3 @@
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
 import { useState } from 'react';
@@ -36,15 +35,13 @@ function Game(props: Props) {
                 )}
             </TransitionWrapper>
             <TransitionWrapper show={!singSetup}>
-                <LayoutWithBackground>
-                    <SingASong
-                        onSongSelected={(setup) => {
-                            RemoteMicManager.broadcast({ t: 'reload-mic' });
-                            setSingSetup(setup);
-                        }}
-                        preselectedSong={preselectedSong}
-                    />
-                </LayoutWithBackground>
+                <SingASong
+                    onSongSelected={(setup) => {
+                        RemoteMicManager.broadcast({ t: 'reload-mic' });
+                        setSingSetup(setup);
+                    }}
+                    preselectedSong={preselectedSong}
+                />
             </TransitionWrapper>
         </>
     );

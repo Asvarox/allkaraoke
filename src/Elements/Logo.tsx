@@ -20,6 +20,7 @@ const StyledLogo = styled.img`
 const Container = styled.div`
     position: relative;
     height: 16.4rem;
+    view-transition-name: logo;
 `;
 
 const PrideLogo = styled(StyledLogo)`

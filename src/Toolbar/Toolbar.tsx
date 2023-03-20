@@ -37,6 +37,8 @@ function Toolbar() {
 }
 
 const ToolbarContainer = styled.div`
+    view-transition-name: toolbar;
+
     cursor: pointer;
     background: rgba(0, 0, 0, 0.75);
     color: white;

@@ -11,10 +11,12 @@ import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import { Link } from 'wouter';
 import { format } from 'date-fns';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import { useBackground } from 'Elements/LayoutWithBackground';
 
 interface Props {}
 
 export default function SongList(props: Props) {
+    useBackground(false);
     useBackgroundMusic(false);
     const { data, reload } = useSongIndex(true);
 

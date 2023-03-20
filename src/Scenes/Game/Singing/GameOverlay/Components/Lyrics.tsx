@@ -190,7 +190,6 @@ const BasePassTheMicProgress = styled.div<{ color: string }>`
     position: absolute;
     height: 1rem;
     background: rgb(${(props) => props.color});
-    transition: 50ms;
     width: 100%;
 `;
 

@@ -1,20 +1,17 @@
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
-import { MenuContainer } from 'Elements/Menu';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
-import { useLocation } from 'wouter';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import MenuWithLogo from 'Elements/MenuWithLogo';
 
 interface Props {
     // file?: string;
 }
 
 function SelectInput(props: Props) {
-    const [, navigate] = useLocation();
+    const navigate = useSmoothNavigate();
     return (
-        <LayoutWithBackground>
-            <MenuContainer>
-                <SelectInputView onFinish={() => navigate('/')} closeButtonText={'Go to main menu'} />
-            </MenuContainer>
-        </LayoutWithBackground>
+        <MenuWithLogo>
+            <SelectInputView onFinish={() => navigate('/')} closeButtonText={'Go to main menu'} />
+        </MenuWithLogo>
     );
 }
 export default SelectInput;

@@ -1,6 +1,39 @@
 import styled from '@emotion/styled';
-import React from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { blueFill, blueStroke, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+
+export const BackgroundContext = createContext({
+    visible: true,
+    setVisibility: (visible: boolean): void => undefined,
+});
+
+export const useBackground = (shouldBeVisible: boolean) => {
+    const background = useContext(BackgroundContext);
+    useEffect(() => {
+        if (shouldBeVisible !== background.visible) {
+            console.log(shouldBeVisible, background.visible);
+            background.setVisibility(shouldBeVisible);
+        }
+    }, [shouldBeVisible, background.visible, background.setVisibility]);
+};
+
+export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
+    const [visible, setVisible] = useState(true);
+
+    const setVisibility = useCallback(
+        (newValue: boolean) => {
+            setVisible(newValue);
+        },
+        [setVisible],
+    );
+
+    return (
+        <BackgroundContext.Provider value={{ visible, setVisibility }}>
+            {visible && <Background />}
+            {children}
+        </BackgroundContext.Provider>
+    );
+}
 
 const Background = styled.div`
     z-index: -1;
@@ -27,12 +60,3 @@ const Background = styled.div`
     width: 100%;
     height: 100%;
 `;
-
-export default function LayoutWithBackground({ children }: React.PropsWithChildren) {
-    return (
-        <>
-            <Background />
-            {children}
-        </>
-    );
-}

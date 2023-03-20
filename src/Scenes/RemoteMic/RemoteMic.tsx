@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
 import { typography } from 'Elements/cssMixins';
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
+import { useBackground } from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { useEffect, useRef, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
@@ -22,6 +22,7 @@ interface Props {
 const noSleep = new NoSleep();
 
 function RemoteMic({ roomId }: Props) {
+    useBackground(true);
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [connectionStatus] = useEventListener(events.karaokeConnectionStatusChange) ?? ['uninitialised'];
 
@@ -59,32 +60,30 @@ function RemoteMic({ roomId }: Props) {
     return (
         <>
             <NormalizeFontSize size={10} />
-            <LayoutWithBackground>
-                <Container id="phone-ui-container">
-                    <MicPreview isVisible isMicOn={monitoringStarted} isConnected={connectionStatus === 'connected'} />
-                    <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
-                        <ConfirmReadiness onConfirm={onConfirm} />
-                        <Connect
-                            roomId={roomId}
-                            isVisible={true}
-                            connectionStatus={connectionStatus}
-                            onConnect={onConnect}
-                        />
-                        <RemoteMicKeyboard />
-                        <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
-                            WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
-                        </KeepAwake>
-                        <MicInputState
-                            onClick={() =>
-                                monitoringStarted
-                                    ? SimplifiedMic.stopMonitoring()
-                                    : SimplifiedMic.startMonitoring(undefined)
-                            }>
-                            Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
-                        </MicInputState>
-                    </UserMediaEnabled>
-                </Container>
-            </LayoutWithBackground>
+            <Container id="phone-ui-container">
+                <MicPreview isVisible isMicOn={monitoringStarted} isConnected={connectionStatus === 'connected'} />
+                <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
+                    <ConfirmReadiness onConfirm={onConfirm} />
+                    <Connect
+                        roomId={roomId}
+                        isVisible={true}
+                        connectionStatus={connectionStatus}
+                        onConnect={onConnect}
+                    />
+                    <RemoteMicKeyboard />
+                    <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
+                        WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
+                    </KeepAwake>
+                    <MicInputState
+                        onClick={() =>
+                            monitoringStarted
+                                ? SimplifiedMic.stopMonitoring()
+                                : SimplifiedMic.startMonitoring(undefined)
+                        }>
+                        Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
+                    </MicInputState>
+                </UserMediaEnabled>
+            </Container>
         </>
     );
 }

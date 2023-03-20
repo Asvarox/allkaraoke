@@ -12,7 +12,6 @@ import SelectInput from './Scenes/SelectInput/SelectInput';
 import * as Sentry from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
-import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
 import styles from 'styles';
@@ -20,6 +19,7 @@ import { ErrorFallback } from 'Elements/ErrorFallback';
 import Toolbar from 'Toolbar/Toolbar';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
+import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
@@ -27,34 +27,38 @@ function App() {
     return (
         <>
             <Sentry.ErrorBoundary fallback={ErrorFallback}>
-                <KeyboardHelpProvider>
-                    <Router>
-                        <GameScreens>
-                            <Toolbar />
-                            <Route path="/game/:file?">
-                                {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
-                            </Route>
-                            <Route path="/jukebox" component={Jukebox} />
-                            <Route path="/remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
-                            <Route path="/phone/:roomId">
-                                {({ roomId }) => <Redirect to={`/remote-mic/${roomId}`} />}
-                            </Route>
-                            <Route path="/select-input" component={SelectInput} />
-                            <Route path="/settings" component={Settings} />
-                            <Route path="/manage-songs" component={ManageSongs} />
-                            <Route path="/exclude-languages" component={ExcludeLanguages} />
-                            {setupPreference === null ? (
-                                <Route path="/" component={QuickSetup} />
-                            ) : (
-                                <Route path="/" component={Welcome} />
-                            )}
-                        </GameScreens>
-                        <Route path="/convert" component={() => <Convert />} />
-                        <Route path="/edit" component={SongList} />
-                        <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
-                        <Route path="/edit/:filename">{({ filename }) => <Edit file={filename!} />}</Route>
-                    </Router>
-                </KeyboardHelpProvider>
+                <LayoutWithBackgroundProvider>
+                    <KeyboardHelpProvider>
+                        <Router>
+                            <GameScreens>
+                                <Toolbar />
+                                <Route path="/game/:file?">
+                                    {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
+                                </Route>
+                                <Route path="/jukebox" component={Jukebox} />
+                                <Route path="/remote-mic/:roomId">
+                                    {({ roomId }) => <RemoteMic roomId={roomId!} />}
+                                </Route>
+                                <Route path="/phone/:roomId">
+                                    {({ roomId }) => <Redirect to={`/remote-mic/${roomId}`} />}
+                                </Route>
+                                <Route path="/select-input" component={SelectInput} />
+                                <Route path="/settings" component={Settings} />
+                                <Route path="/manage-songs" component={ManageSongs} />
+                                <Route path="/exclude-languages" component={ExcludeLanguages} />
+                                {setupPreference === null ? (
+                                    <Route path="/" component={() => <Redirect to="/select-input" />} />
+                                ) : (
+                                    <Route path="/" component={Welcome} />
+                                )}
+                            </GameScreens>
+                            <Route path="/convert" component={() => <Convert />} />
+                            <Route path="/edit" component={SongList} />
+                            <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
+                            <Route path="/edit/:filename">{({ filename }) => <Edit file={filename!} />}</Route>
+                        </Router>
+                    </KeyboardHelpProvider>
+                </LayoutWithBackgroundProvider>
             </Sentry.ErrorBoundary>
         </>
     );

@@ -23,6 +23,7 @@ import SongPreview from 'Scenes/SingASong/SongSelection/SongPreview';
 import { CircularProgress } from '@mui/material';
 import { css } from '@emotion/react';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import { useBackground } from 'Elements/LayoutWithBackground';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -32,6 +33,7 @@ interface Props {
 const focusMultiplier = 1.2;
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+    useBackground(true);
     const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
         previewTop: 0,
         previewLeft: 0,
@@ -95,13 +97,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         }
     }, [width, list, focusedSong, focusedGroup, groupedSongList]);
 
-    const [animated, setAnimated] = useState(false);
-    useEffect(() => {
-        if (!isLoading) {
-            setAnimated(true);
-        }
-    }, [isLoading]);
-
     const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : moveToSong(index));
     if (!groupedSongList || !width) return <>Loading</>;
 
@@ -113,7 +108,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         );
     }
     return (
-        <Container visible={animated}>
+        <Container>
             {filters.search ? (
                 <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
             ) : (
@@ -173,9 +168,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     );
 }
 
-const Container = styled.div<{ visible: boolean }>`
-    opacity: ${(props) => (props.visible ? '1' : '0')};
-    transition: 500ms;
+const Container = styled.div`
+    view-transition-name: song-list-container;
     display: flex;
     flex-direction: row;
     max-height: 100vh;

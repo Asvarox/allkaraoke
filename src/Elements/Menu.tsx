@@ -25,4 +25,6 @@ export const MenuContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    view-transition-name: menu-container;
 `;

@@ -13,6 +13,7 @@ import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
+import { useBackground } from 'Elements/LayoutWithBackground';
 
 interface Props {
     video: string;
@@ -22,10 +23,10 @@ interface Props {
     restartSong: () => void;
 }
 function Singing({ video, songFile, singSetup, returnToSongSelection, restartSong }: Props) {
+    useFullscreen();
     const player = useRef<PlayerRef | null>(null);
     const song = useSong(songFile);
 
-    useFullscreen();
     const { width, height } = useViewportSize();
     const [isEnded, setIsEnded] = useState(false);
     const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
@@ -38,6 +39,8 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
     }, [song.data, singSetup]);
 
     const [isTransitionTimeout, setIsTransitionTimeout] = useState(false);
+
+    useBackground(!isTransitionTimeout);
 
     if (!width || !height || !song.data) return <>Loading</>;
 
@@ -60,7 +63,6 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
                             <Overlay video={video} width={width} height={height} />
                             <WaitForReadiness
                                 onFinish={() => {
-                                    console.log('called');
                                     setIsTransitionTimeout(true);
                                     player.current?.play();
                                 }}

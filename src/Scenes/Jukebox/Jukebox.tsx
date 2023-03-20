@@ -6,19 +6,22 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'wouter';
+import { Link } from 'wouter';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { useBackground } from 'Elements/LayoutWithBackground';
 
 interface Props {}
 
 function Jukebox(props: Props) {
-    const [, navigate] = useLocation();
+    useBackground(false);
+    useBackgroundMusic(false);
+    const navigate = useSmoothNavigate();
     const { width, height } = useViewportSize();
     const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
     const songList = useSongIndex();
-    useBackgroundMusic(false);
 
     const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
     const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });

@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 import { randomInt } from 'utils/randomValue';
-import { useLocation } from 'wouter';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
 
 export default function useSongSelection(preselectedSong: string | null) {
     const { songList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
-    const [, navigate] = useLocation();
+    const navigate = useSmoothNavigate();
     const [keyboardControl, setKeyboardControl] = useState(true);
 
     const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(
@@ -34,7 +34,7 @@ export default function useSongSelection(preselectedSong: string | null) {
 
     useEffect(() => {
         if (preselected && songList.length && songList[focusedSong]) {
-            navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`, { replace: true });
+            navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`, { replace: true, smooth: false });
         }
     }, [preselected, focusedSong, songList]);
 

@@ -1,4 +1,4 @@
-import { MenuButton, MenuContainer } from 'Elements/Menu';
+import { MenuButton } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useSongIndex from 'Songs/hooks/useSongIndex';
@@ -10,16 +10,7 @@ import { useMemo } from 'react';
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
 import { css } from '@emotion/react';
 import isE2E from 'utils/isE2E';
-
-function isoCountryCodeToFlagEmoji(country: string) {
-    const overrides: Record<string, string> = {
-        ko: '🇰🇷', // Korean
-        en: '🇬🇧',
-    };
-    return (
-        overrides[country] ?? String.fromCodePoint(...[...country.toUpperCase()].map((c) => c.charCodeAt(0) + 0x1f1a5))
-    );
-}
+import MenuWithLogo from 'Elements/MenuWithLogo';
 
 export const useLanguageList = (list: SongPreview[]) => {
     return useMemo(() => {
@@ -67,7 +58,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
     };
 
     return (
-        <MenuContainer>
+        <MenuWithLogo>
             <h1>Select Song Languages</h1>
             <LanguageListContainer>
                 {languageList.map(({ name, count }) => {
@@ -83,7 +74,10 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                                 <LanguageName>{name}</LanguageName> ({count} songs)
                             </span>
                             <LanguageFlagBackground excluded={excluded}>
-                                {isoCountryCodeToFlagEmoji(languageNameToIsoCode(name))}
+                                <img
+                                    src={`https://flagcdn.com/${languageNameToIsoCode(name)}.svg`}
+                                    alt={languageNameToIsoCode(name)}
+                                />
                             </LanguageFlagBackground>
                         </LanguageEntry>
                     );
@@ -95,7 +89,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
             <MenuButton {...register('go back', onClose, undefined, true)} data-test="close-exclude-languages">
                 {closeText}
             </MenuButton>
-        </MenuContainer>
+        </MenuWithLogo>
     );
 }
 
@@ -127,11 +121,13 @@ const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 18rem;
+    img {
+        width: 17rem;
+        margin: 1.5rem 0 0 0.5rem;
+    }
     overflow: hidden;
     width: 17rem;
     height: 10rem;
-    line-height: 15rem;
 `;
 
 const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }>`

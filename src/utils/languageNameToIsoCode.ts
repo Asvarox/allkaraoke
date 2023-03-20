@@ -20,6 +20,8 @@ function generateLangMap() {
         Yiddish: 'yi',
         // Optional extras:
         Tagalog: 'tl',
+        English: 'gb',
+        Korean: 'kr',
     };
     return { ...langMap, ...langMap2 };
 }

@@ -10,8 +10,10 @@ import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
 import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import SongDao from 'Songs/SongDao';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import { Link, useLocation } from 'wouter';
+import { Link } from 'wouter';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { useBackground } from 'Elements/LayoutWithBackground';
 
 interface Props {
     song?: Song;
@@ -19,7 +21,8 @@ interface Props {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 export default function Convert({ song }: Props) {
-    const [, navigate] = useLocation();
+    useBackground(false);
+    const navigate = useSmoothNavigate();
     useBackgroundMusic(false);
     const [currentStep, setCurrentStep] = useState(0);
 

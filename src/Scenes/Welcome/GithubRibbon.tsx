@@ -1,10 +1,11 @@
 // https://tholman.com/github-corners/
+import styled from '@emotion/styled';
+
 export default function GithubRibbon() {
     return (
         <>
-            <a
+            <Ribbon
                 href="https://github.com/Asvarox/allkaraoke"
-                className="github-corner"
                 aria-label="View source on GitHub"
                 target="_blank"
                 rel="noreferrer">
@@ -33,10 +34,35 @@ export default function GithubRibbon() {
                         fill="currentColor"
                         className="octo-body"></path>
                 </svg>
-                <style>{`.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes
-                    octocat-wave{0 %,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media
-                    (max-width:50rem){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}`}</style>
-            </a>
+            </Ribbon>
         </>
     );
 }
+
+const Ribbon = styled.a`
+    &:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+    @keyframes octocat-wave {
+        0 %,
+        100% {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+    @media (max-width: 500px) {
+        &:hover .octo-arm {
+            animation: none;
+        }
+        .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+    }
+`;
