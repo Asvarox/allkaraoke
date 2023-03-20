@@ -12,10 +12,12 @@ import styled from '@emotion/styled';
 import tuple from 'utils/tuple';
 import posthog from 'posthog-js';
 import startViewTransition from 'utils/startViewTransition';
+import { flushSync } from 'react-dom';
 
 interface Props {
     onFinish: (pref: (typeof MicSetupPreference)[number]) => void;
     onBack?: () => void;
+    smooth?: boolean;
     closeButtonText: string;
     playerNames?: string[];
 }
@@ -27,7 +29,7 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 
 const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
-function SelectInputView({ onFinish, closeButtonText, playerNames, onBack }: Props) {
+function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, smooth }: Props) {
     const [preference, setPreference] = useState<(typeof MicSetupPreference)[number]>(null);
     const [isComplete, setIsComplete] = useState(false);
 
@@ -42,7 +44,15 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack }: Pro
     const onSave = (pref: (typeof MicSetupPreference)[number]) => () => {
         // Keep currently selected preference unless nothing (null) is selected - then store `skip` directly
         // skip is needed to mark that user explicitly didn't select anything
-        setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
+        if (smooth) {
+            startViewTransition(() => {
+                flushSync(() => {
+                    setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
+                });
+            });
+        } else {
+            setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
+        }
         if (pref) {
             localStorage.setItem(LAST_SELECTED_KEY, pref);
             posthog.capture('sourcePreferenceSet', { source: pref });

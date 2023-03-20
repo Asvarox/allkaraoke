@@ -15,7 +15,7 @@ interface Props {
 function QuickSetup(props: Props) {
     const [, navigate] = useLocation();
     const onFinish = (pref: (typeof MicSetupPreference)[number]) => {
-        navigate('/');
+        // navigate('/');
     };
 
     return (
@@ -25,7 +25,7 @@ function QuickSetup(props: Props) {
                 <Logo />
                 <RecommendedBrowsers />
                 <MenuContainer>
-                    <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" />
+                    <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" smooth />
                 </MenuContainer>
             </Container>
         </LayoutWithBackground>
