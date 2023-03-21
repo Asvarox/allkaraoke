@@ -22,6 +22,8 @@ function generateLangMap() {
         Tagalog: 'tl',
         English: 'gb',
         Korean: 'kr',
+        Swedish: 'se',
+        Latin: 'va',
     };
     return { ...langMap, ...langMap2 };
 }
