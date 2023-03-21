@@ -14,6 +14,7 @@ import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import useBlockScroll from 'hooks/useBlockScroll';
 
 interface Props {
     video: string;
@@ -24,6 +25,7 @@ interface Props {
 }
 function Singing({ video, songFile, singSetup, returnToSongSelection, restartSong }: Props) {
     useFullscreen();
+    useBlockScroll();
     const player = useRef<PlayerRef | null>(null);
     const song = useSong(songFile);
 

@@ -133,6 +133,7 @@ body {
     /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    overflow-y: auto;
 }
 
 html {
@@ -145,6 +146,11 @@ html {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.blockOverflow {
+    overflow: hidden;
+}
+
 
 .Toastify {
     font-size: 1.5rem;

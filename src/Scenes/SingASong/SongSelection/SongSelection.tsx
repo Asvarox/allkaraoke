@@ -24,6 +24,7 @@ import { CircularProgress } from '@mui/material';
 import { css } from '@emotion/react';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import useBlockScroll from 'hooks/useBlockScroll';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -34,6 +35,7 @@ const focusMultiplier = 1.2;
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
     useBackground(true);
+    useBlockScroll();
     const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
         previewTop: 0,
         previewLeft: 0,
