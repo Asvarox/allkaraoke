@@ -36,6 +36,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
     // Check if the remote mics reconnect automatically
+    await page.waitForTimeout(500);
     await page.reload();
 
     await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {
