@@ -26,7 +26,7 @@ const TRACK_2_NAME = 'Track 2 Name';
 test('Convert song', async ({ page }) => {
     test.slow();
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
     await page.getByTestId('manage-songs').click();
     await page.getByTestId('edit-songs').click();
     await page.getByTestId('convert-song').click();

@@ -12,7 +12,7 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
 
     await page.goto('/?e2e-test');
 
-    await page.getByTestId('mics').click({ force: true });
+    await page.getByTestId('mics').click();
     await expect(page.getByTestId('advanced-tip')).toBeVisible();
 
     const singstarDevice = {
@@ -39,7 +39,7 @@ test('Default device is selected currently selected mic is disconnected', async 
     };
     await connectDevices(newDevice);
 
-    await page.getByTestId('advanced').click({ force: true });
+    await page.getByTestId('advanced').click();
 
     await page.getByTestId('player-1-source').click();
     await page.getByTestId('player-1-input').click();
@@ -62,7 +62,7 @@ test('Properly labels multichannel devices', async ({ page, context }) => {
     };
     await connectDevices(newDevice);
 
-    await page.getByTestId('advanced').click({ force: true });
+    await page.getByTestId('advanced').click();
 
     await page.getByTestId('player-1-source').click();
     await page.getByTestId('player-1-input').click();
@@ -75,7 +75,7 @@ test('Remote mic is deselected when it disconnects', async ({ page, context }) =
     await stubUserMedia({ page, context });
     await page.goto('/?e2e-test');
 
-    await page.getByTestId('advanced').click({ force: true });
+    await page.getByTestId('advanced').click();
 
     const remoteMic = await connectRemoteMic(page, context, 'Remote Mic Test');
 
@@ -100,22 +100,24 @@ test('Default microphone is selected for built-in', async ({ page, context }) =>
         channels: 2,
     });
 
-    await page.getByTestId('built-in').click({ force: true });
+    await page.getByTestId('built-in').click();
 
     await expect(page.getByTestId('selected-mic')).toContainText('Default device');
     // Select some different mic
-    await page.getByTestId('back-button').click({ force: true });
-    await page.getByTestId('advanced').click({ force: true });
-    await page.getByTestId('player-1-input').click({ force: true });
-    await page.getByTestId('player-2-input').click({ force: true });
+    await page.getByTestId('back-button').click();
+    await page.getByTestId('advanced').click();
+    await page.getByTestId('player-1-input').click();
+    await page.getByTestId('player-2-input').click();
 
     // Make sure that it still selects the default one
-    await page.getByTestId('back-button').click({ force: true });
-    await page.getByTestId('built-in').click({ force: true });
+    await page.getByTestId('back-button').click();
+    await page.getByTestId('built-in').click();
     await expect(page.getByTestId('selected-mic')).toContainText('Default device');
 
     // Check if the initial setup doesn't show after refresh
-    await page.getByTestId('save-button').click({ force: true });
+    await page.getByTestId('save-button').click();
+
+    await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
     await page.reload();
 

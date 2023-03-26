@@ -1,12 +1,12 @@
-import type { PlaywrightTestConfig } from "@playwright/experimental-ct-react";
-import { devices } from "@playwright/experimental-ct-react";
-import react from "@vitejs/plugin-react";
-import tsconfigPaths from "vite-tsconfig-paths";
+import { defineConfig, devices, PlaywrightTestConfig } from '@playwright/experimental-ct-react';
+import react from '@vitejs/plugin-react';
+import tsconfigPaths from 'vite-tsconfig-paths';
+// playwright.config.ts
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-const config: PlaywrightTestConfig = {
+const config: PlaywrightTestConfig = defineConfig({
     testDir: './src/',
     testMatch: '*.spec.tsx',
     /* The base directory, relative to the config file, for snapshot files created with toMatchSnapshot and toHaveScreenshot. */
@@ -41,6 +41,10 @@ const config: PlaywrightTestConfig = {
                 }),
                 tsconfigPaths(),
             ],
+            build: {
+                sourcemap: false,
+                reportCompressedSize: false,
+            },
         },
     },
 
@@ -53,6 +57,6 @@ const config: PlaywrightTestConfig = {
             },
         },
     ],
-};
+});
 
 export default config;

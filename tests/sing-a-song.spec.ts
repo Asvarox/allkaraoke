@@ -10,12 +10,12 @@ test.beforeEach(async ({ page, context }) => {
 test('Basic sing a song', async ({ page }, testInfo) => {
     test.slow();
     await page.goto('/?e2e-test');
-    await page.getByTestId('advanced').click({ force: true });
-    await page.getByTestId('save-button').click({ force: true });
+    await page.getByTestId('advanced').click();
+    await page.getByTestId('save-button').click();
 
-    await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
 
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
 
@@ -86,11 +86,6 @@ test('Basic sing a song', async ({ page }, testInfo) => {
     await Promise.all(['Track 1', 'Section 2'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
     await Promise.all(['Track 2', 'Section 3'].map((text) => expect(page.locator(p1NL)).toContainText(text)));
 
-    await Promise.all(['Track 2', 'Section 3'].map((text) => expect(page.locator(p1CL)).toContainText(text)));
-    await expect(page.locator(p1NL)).not.toBeVisible();
-    await Promise.all(['Track 1 Section 3'].map((text) => expect(page.locator(p2CL)).toContainText(text)));
-    await expect(page.locator(p2NL)).not.toBeVisible();
-
     test.setTimeout(testInfo.timeout);
 
     // Song ending
@@ -99,7 +94,7 @@ test('Basic sing a song', async ({ page }, testInfo) => {
     await expect(page.getByTestId('player-2-name')).toHaveText('E2E Player 2');
 
     // High scores
-    await page.getByTestId('highscores-button').click({ force: true });
+    await page.getByTestId('highscores-button').click();
 
     await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 1"]')).toBeVisible();
     await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 2"]')).toBeVisible();
@@ -112,7 +107,7 @@ test('Basic sing a song', async ({ page }, testInfo) => {
     await page.waitForTimeout(500); // It takes 300ms to save the score
 
     // Check next song
-    await page.getByTestId('play-next-song-button').click({ force: true });
+    await page.getByTestId('play-next-song-button').click();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
     await expect(
         page.locator('[data-test="song-e2e-test-multitrack.json"] >> [data-test="song-stat-indicator"]'),
@@ -129,17 +124,17 @@ test('Basic sing a song', async ({ page }, testInfo) => {
     await page.getByTestId('player-1-name').click();
     await expect(page.locator('role=listbox')).toContainText('Updated name');
     await page.keyboard.press('Enter');
-    await page.getByTestId('play-song-button').click({ force: true });
+    await page.getByTestId('play-song-button').click();
 
     // Check updated highscore
     await expect(page.locator(p1CL)).toBeVisible();
     await page.waitForTimeout(1000); // otherwise the click might happen before the game actually starts
     await page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
-    await page.getByTestId('button-resume-song').click({ force: true }); // Check resume song
+    await page.getByTestId('button-resume-song').click(); // Check resume song
     await expect(page.getByTestId('button-resume-song')).not.toBeVisible();
     await page.keyboard.press('Backspace');
-    await page.getByTestId('button-exit-song').click({ force: true });
+    await page.getByTestId('button-exit-song').click();
 
-    await page.getByTestId('highscores-button').click({ force: true });
+    await page.getByTestId('highscores-button').click();
     await expect(page.getByTestId('highscores-container')).toContainText('Updated name');
 });

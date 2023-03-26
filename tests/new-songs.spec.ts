@@ -18,17 +18,19 @@ test('New songs - displays new song twice by default and doesnt show it in filte
     );
 
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.waitForTimeout(100);
+    await page.getByTestId('skip').click();
 
-    await page.getByTestId('sing-a-song').click({ force: true });
+    await page.waitForTimeout(500);
+    await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
 
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).toBeVisible();
 
     // Should still show new group when playlists are used
-    await page.getByTestId('playlist-English').click({ force: true });
+    await page.getByTestId('playlist-English').click();
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).toBeVisible();
 
@@ -46,11 +48,11 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
     );
 
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
 
-    await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
 
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).not.toBeVisible();
@@ -58,11 +60,11 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
 
 test('New songs - doesnt display new songs on first visit', async ({ page }) => {
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
 
-    await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
 
     await expect(page.getByTestId('song-e2e-new-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-new-test.json-new-group')).not.toBeVisible();

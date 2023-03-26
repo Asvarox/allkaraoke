@@ -39,6 +39,7 @@
         "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key -p ${PORT:-3010} build",
         "build": "vite build",
         "build:serve": "yarn build && yarn start:production",
+        "build:serve:sourcemap": "yarn build --sourcemap true && yarn start:production",
         "test": "vitest",
         "test:ci": "vitest",
         "lint": "eslint .",
@@ -46,9 +47,9 @@
         "predeploy": "yarn generate-index && yarn build",
         "deploy": "gh-pages -d build",
         "prepare": "husky install",
-        "e2e": "playwright test",
-        "e2e:prod": "PROD_RUN=true playwright test",
-        "test-ct": "playwright test -c playwright-ct.config.ts",
+        "e2e": "yarn playwright test",
+        "e2e:prod": "PROD_RUN=true yarn playwright test",
+        "test-ct": "yarn playwright test -c playwright-ct.config.ts",
         "peerjs": "yarn node peerJSServer.js",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
@@ -69,8 +70,8 @@
     "devDependencies": {
         "@emotion/babel-plugin": "^11.10.6",
         "@mdx-js/react": "^2.3.0",
-        "@playwright/experimental-ct-react": "1.29.2",
-        "@playwright/test": "1.29.2",
+        "@playwright/experimental-ct-react": "1.32.0",
+        "@playwright/test": "1.32.0",
         "@storybook/addon-actions": "^7.0.0-beta.53",
         "@storybook/addon-docs": "^7.0.0-beta.53",
         "@storybook/addon-essentials": "^7.0.0-beta.53",
@@ -127,5 +128,5 @@
         "vitest": "^0.28.5"
     },
     "homepage": "./",
-    "packageManager": "yarn@3.3.1"
+    "packageManager": "yarn@3.5.0"
 }

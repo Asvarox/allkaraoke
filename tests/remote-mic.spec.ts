@@ -18,7 +18,7 @@ const P2_Name = 'E2E Test Red';
 test('Remote mic should connect, be selectable and control the game', async ({ page, context, browserName }) => {
     test.slow();
     await page.goto('/?e2e-test');
-    await page.getByTestId('remote-mics').click({ force: true });
+    await page.getByTestId('remote-mics').click();
 
     // Connect blue microphone
     const remoteMicBluePage = await connectRemoteMic(page, context, P1_Name);
@@ -31,7 +31,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await expect(page.getByTestId('mic-check-p2')).toContainText(P2_Name, { ignoreCase: true });
 
     await navigateWithKeyboard(page, 'save-button', remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+    await remoteMicBluePage.getByTestId('keyboard-enter').click();
 
     await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
@@ -68,44 +68,44 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
 
     await test.step('Start singing a song', async () => {
         await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage);
-        await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicBluePage.getByTestId('keyboard-enter').click();
         await navigateWithKeyboard(page, 'close-exclude-languages', remoteMicBluePage);
-        await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicBluePage.getByTestId('keyboard-enter').click();
 
         await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json', remoteMicBluePage);
-        await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicBluePage.getByTestId('keyboard-enter').click();
 
         await navigateWithKeyboard(page, 'next-step-button', remoteMicRed);
-        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicRed.getByTestId('keyboard-enter').click();
         await navigateWithKeyboard(page, 'play-song-button', remoteMicRed);
-        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicRed.getByTestId('keyboard-enter').click();
     });
 
     await test.step('Check if restart song is possible', async () => {
-        await remoteMicBluePage.getByTestId('ready-button').click({ force: true });
+        await remoteMicBluePage.getByTestId('ready-button').click();
         await expect(await page.locator(`[data-test="player-confirm-status"][data-name="${P1_Name}"]`)).toHaveAttribute(
             'data-confirmed',
             'true',
         );
-        await remoteMicRed.getByTestId('ready-button').click({ force: true });
+        await remoteMicRed.getByTestId('ready-button').click();
 
         // Check if restart song is possible
         await expect(page.getByTestId('lyrics-current-player-1')).toBeVisible({ timeout: 10_000 });
         await expect(remoteMicBluePage.getByTestId('keyboard-enter')).not.toBeDisabled();
-        await remoteMicBluePage.getByTestId('keyboard-backspace').click({ force: true });
+        await remoteMicBluePage.getByTestId('keyboard-backspace').click();
 
         await expect(page.getByTestId('button-resume-song')).toHaveAttribute('data-focused', 'true');
         await navigateWithKeyboard(page, 'button-restart-song', remoteMicRed);
-        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicRed.getByTestId('keyboard-enter').click();
     });
 
     await test.step('Check if restart song is possible', async () => {
         await page.waitForTimeout(500);
-        await remoteMicBluePage.getByTestId('ready-button').click({ force: true });
-        await remoteMicRed.getByTestId('ready-button').click({ force: true });
+        await remoteMicBluePage.getByTestId('ready-button').click();
+        await remoteMicRed.getByTestId('ready-button').click();
         await expect(page.getByTestId('skip-intro-info')).toBeVisible();
         await page.waitForTimeout(1500);
-        await remoteMicRed.getByTestId('keyboard-enter').click({ force: true });
+        await remoteMicRed.getByTestId('keyboard-enter').click();
 
         await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 15_000 });
     });
@@ -122,8 +122,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await expect(page.getByTestId('player-2-name')).toHaveText(P2_Name);
 
     await expect(page.getByTestId('highscores-button')).toBeVisible();
-    await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+    await remoteMicBluePage.getByTestId('keyboard-enter').click();
     await expect(page.getByTestId('play-next-song-button')).toBeVisible();
-    await remoteMicBluePage.getByTestId('keyboard-enter').click({ force: true });
+    await remoteMicBluePage.getByTestId('keyboard-enter').click();
     await expect(page.getByTestId('song-e2e-skip-intro-song.json')).toBeVisible();
 });

@@ -138,7 +138,7 @@ const config: PlaywrightTestConfig = {
     webServer: [
         prodRun
             ? {
-                  command: 'yarn build:serve',
+                  command: process.env.CI ? 'yarn build:serve:sourcemap' : 'yarn build:serve',
                   port: 3010,
                   timeout: 60_000 * 3,
                   reuseExistingServer: true,

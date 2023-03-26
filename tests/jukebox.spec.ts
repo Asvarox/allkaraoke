@@ -3,9 +3,9 @@ import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test('Jukebox', async ({ page }) => {
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
 
-    await page.getByTestId('jukebox').click({ force: true });
+    await page.getByTestId('jukebox').click();
 
     await expect(page.getByTestId('skip-button')).toBeVisible();
     await navigateWithKeyboard(page, 'skip-button');
@@ -19,7 +19,7 @@ test('Jukebox', async ({ page }) => {
     await page.keyboard.press('Enter'); // Sing this song
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.waitForTimeout(500);
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
     await expect(page.getByTestId('song-list-container')).toBeVisible();
     await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', selectedSong!);
 });

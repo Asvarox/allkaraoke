@@ -30,11 +30,11 @@ test('Filters - PlayLists', async ({ page }) => {
     }`);
 
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
 
-    await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
 
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
@@ -76,12 +76,12 @@ test('Filters - PlayLists', async ({ page }) => {
 
 test('Filters - Quick Search', async ({ page }) => {
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
 
-    await page.getByTestId('sing-a-song').click({ force: true });
+    await page.getByTestId('sing-a-song').click();
 
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click({ force: true });
+    await page.getByTestId('close-exclude-languages').click();
 
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
@@ -97,7 +97,7 @@ test('Filters - Quick Search', async ({ page }) => {
     // Clear search
     await page.keyboard.press('Backspace');
     await expect(page.getByTestId('filters-search')).toBeFocused();
-    for (let i = 0; i < 'multitrack'.length; i++) await page.keyboard.press('Backspace');
+    await page.getByTestId('filters-search').clear();
 
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
@@ -106,12 +106,12 @@ test('Filters - Quick Search', async ({ page }) => {
 
 test('Song List - Random song', async ({ page }) => {
     await page.goto('/?e2e-test');
-    await page.getByTestId('skip').click({ force: true });
+    await page.getByTestId('skip').click();
 
     await test.step('Random song is selected on song list open', async () => {
-        await page.getByTestId('sing-a-song').click({ force: true });
+        await page.getByTestId('sing-a-song').click();
         await expect(page.getByTestId('lang-Polish')).toBeVisible();
-        await page.getByTestId('close-exclude-languages').click({ force: true });
+        await page.getByTestId('close-exclude-languages').click();
         await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'zzz-last-song.json');
     });
 

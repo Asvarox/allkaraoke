@@ -34,7 +34,6 @@ export default defineConfig({
     base: './',
     build: {
         outDir: 'build',
-        sourcemap: true,
     },
     server: {
         port: 3000,
