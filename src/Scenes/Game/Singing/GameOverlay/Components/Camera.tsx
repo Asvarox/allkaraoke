@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef } from 'react';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import CameraManager from 'Camera/CameraManager';
-import { cameraShot } from 'SoundManager';
 import { Note } from 'interfaces';
 
 export default function Camera() {
@@ -20,25 +19,23 @@ export default function Camera() {
                     .flat(),
             )
             .flat()
-            .reduce((accumulator, currentObject) => {
-                if (!accumulator.some((obj) => obj.start === currentObject.start)) {
-                    accumulator.push(currentObject);
+            // Remove duplicate notes
+            .reduce((accumulator, note) => {
+                if (!accumulator.some((obj) => obj.start === note.start)) {
+                    accumulator.push(note);
                 }
                 return accumulator;
             }, [] as Note[]);
 
-        console.log(notes.map((note) => note.start));
         const chunkSize = Math.ceil(notes.length / 10); // get chunk size to split the array into 10 chunks
-        const chunks = Array.from({ length: 10 }, (_, i) => notes.slice(i * chunkSize, (i + 1) * chunkSize)); // split the array into 10 chunks
-
-        const beatsToPhoto = chunks
+        // split the array into 10 chunks
+        const beatsToPhoto = Array.from({ length: 10 }, (_, i) => notes.slice(i * chunkSize, (i + 1) * chunkSize))
             .map((chunk) => {
                 const longest = Math.max(...chunk.map((note) => note.length));
-                return chunk.find((obj) => obj.length === longest)!;
+                return chunk.find((obj) => obj.length === longest);
             })
+            .filter((note): note is Note => note !== undefined)
             .map((note) => Math.round(note.start + note.length / 2));
-
-        console.log([...new Set(beatsToPhoto)].sort((a, b) => a - b));
 
         return [...new Set(beatsToPhoto)].sort((a, b) => a - b);
     }, [song, singSetup]);
@@ -47,11 +44,10 @@ export default function Camera() {
 
     useEffect(() => {
         const beat = GameState.getCurrentBeat();
-        console.log(beat);
+
         const nextPhotoToTake = photoTimestamps[taken.current.length];
         if (beat > nextPhotoToTake) {
             CameraManager.takePhoto();
-            cameraShot.play();
             taken.current.push(nextPhotoToTake);
         }
     });

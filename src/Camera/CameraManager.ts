@@ -1,4 +1,5 @@
 import Listener from 'utils/Listener';
+import { cameraShot } from 'SoundManager';
 
 const CAMERA_GRANT_KEY = 'CAMERA_GRANT_KEY';
 
@@ -68,6 +69,7 @@ class CameraManager extends Listener<[boolean]> {
             context.drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
 
             this.photos.push(this.canvas.toDataURL('image/png'));
+            cameraShot.play();
         }
     };
     public getPhotos = () => this.photos;
