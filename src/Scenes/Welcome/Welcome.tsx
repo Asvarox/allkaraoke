@@ -7,10 +7,17 @@ import getSongBpm from './logo_bpm.png';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { MouseEventHandler, useEffect } from 'react';
 import MenuWithLogo from 'Elements/MenuWithLogo';
-import { MouseEventHandler } from 'react';
 
 function Welcome() {
+    useEffect(() => {
+        console.log('Welcome mounted');
+
+        return () => {
+            console.log('Welcome unmounted');
+        };
+    }, []);
     useBackground(true);
 
     const navigate = useSmoothNavigate();
@@ -23,7 +30,7 @@ function Welcome() {
     useBackgroundMusic(/* true */ false);
     const { register } = useKeyboardNav();
     return (
-        <>
+        <MenuWithLogo>
             <BackgroundMusicCredit>
                 <span>• Song: Funk Cool Groove (Music Today 80)</span>
                 <span>• Composed & Produced by : Anwar Amr</span>
@@ -34,7 +41,7 @@ function Welcome() {
                     </a>
                 </span>
             </BackgroundMusicCredit>
-            <MenuWithLogo supportedBrowsers>
+            <>
                 <Link href="/game/" onClick={handleClick('/game/')}>
                     <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game/'))}>
                         Sing a song
@@ -63,8 +70,8 @@ function Welcome() {
                 <GetSongBPM target="_blank" href="https://getsongbpm.com/">
                     Bpm data and release year provided by <img src={getSongBpm} />
                 </GetSongBPM>
-            </MenuWithLogo>
-        </>
+            </>
+        </MenuWithLogo>
     );
 }
 

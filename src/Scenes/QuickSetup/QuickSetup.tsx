@@ -1,41 +1,23 @@
-import LayoutWithBackground from 'Elements/LayoutWithBackground';
-import { MenuContainer } from 'Elements/Menu';
-import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
-import Logo from 'Elements/Logo';
-import styled from '@emotion/styled';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
-import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
-import { useLocation } from 'wouter';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import MenuWithLogo from 'Elements/MenuWithLogo';
 
 interface Props {
     // file?: string;
 }
 
 function QuickSetup(props: Props) {
-    const [, navigate] = useLocation();
+    const navigate = useSmoothNavigate();
     const onFinish = (pref: (typeof MicSetupPreference)[number]) => {
-        // navigate('/');
+        navigate('/');
     };
 
     return (
-        <LayoutWithBackground>
-            <GithubRibbon />
-            <Container>
-                <Logo />
-                <RecommendedBrowsers />
-                <MenuContainer>
-                    <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" smooth />
-                </MenuContainer>
-            </Container>
-        </LayoutWithBackground>
+        <MenuWithLogo>
+            <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" smooth={false} />
+        </MenuWithLogo>
     );
 }
-
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
 
 export default QuickSetup;

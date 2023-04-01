@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
-import { Redirect, Route, Router } from 'wouter';
+import { Redirect, Route, Router, useLocation } from 'wouter';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
@@ -21,9 +21,19 @@ import Toolbar from 'Toolbar/Toolbar';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
+import { useEffect } from 'react';
 
 function App() {
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
+    const [location, navigate] = useLocation();
+
+    useEffect(() => {
+        if (setupPreference === null && location === '/') {
+            navigate('/quick-setup');
+        } else if (setupPreference !== null && location === '/quick-setup') {
+            navigate('/');
+        }
+    }, []);
 
     return (
         <>
@@ -43,15 +53,12 @@ function App() {
                                 <Route path="/phone/:roomId">
                                     {({ roomId }) => <Redirect to={`/remote-mic/${roomId}`} />}
                                 </Route>
+                                <Route path="/quick-setup" component={QuickSetup} />
                                 <Route path="/select-input" component={SelectInput} />
                                 <Route path="/settings" component={Settings} />
                                 <Route path="/manage-songs" component={ManageSongs} />
                                 <Route path="/exclude-languages" component={ExcludeLanguages} />
-                                {setupPreference === null ? (
-                                    <Route path="/" component={QuickSetup} />
-                                ) : (
-                                    <Route path="/" component={Welcome} />
-                                )}
+                                <Route path="/" component={Welcome} />
                             </GameScreens>
                             <Route path="/convert" component={() => <Convert />} />
                             <Route path="/edit" component={SongList} />

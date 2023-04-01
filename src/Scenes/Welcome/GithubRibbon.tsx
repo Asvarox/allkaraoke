@@ -65,4 +65,6 @@ const Ribbon = styled.a`
             animation: octocat-wave 560ms ease-in-out;
         }
     }
+
+    view-transition-name: github-ribbon;
 `;

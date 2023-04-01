@@ -112,6 +112,8 @@ const Container = styled.div`
     @media (max-width: 560px) {
         display: none;
     }
+
+    view-transition-name: help-view;
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`

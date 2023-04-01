@@ -40,6 +40,7 @@ const Background = styled.div`
     top: 0;
     position: fixed;
     background: white;
+    view-transition-name: background;
 
     background: linear-gradient(-45deg, ${redStroke()}, ${blueFill()}, ${blueStroke()}, ${redStroke()});
     background-size: 400% 400%;

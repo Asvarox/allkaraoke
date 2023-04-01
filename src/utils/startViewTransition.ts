@@ -4,6 +4,10 @@ export default function startViewTransition(callback: () => void) {
         callback();
     } else {
         // @ts-expect-error
-        document.startViewTransition(callback);
+        document.startViewTransition(async () => {
+            await callback();
+
+            await new Promise((resolve) => setTimeout(resolve, 20));
+        });
     }
 }
