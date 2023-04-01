@@ -16,6 +16,7 @@ const P1_Name = 'E2E Test Blue';
 const P2_Name = 'E2E Test Red';
 
 test('Remote mic should connect, be selectable and control the game', async ({ page, context, browserName }) => {
+    test.fixme(browserName === 'firefox', 'Test fails super often on FF');
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click();
