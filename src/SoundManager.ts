@@ -27,7 +27,7 @@ const waitFinished = new Howl({
 const cameraShot = new Howl({
     src: cameraSound,
     preload: true,
-    volume: 0.25,
+    volume: 0.1,
 });
 
 const backgroundMusic = new Howl({

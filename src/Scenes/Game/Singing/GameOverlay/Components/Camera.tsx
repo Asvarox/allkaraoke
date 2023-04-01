@@ -27,9 +27,9 @@ export default function Camera() {
                 return accumulator;
             }, [] as Note[]);
 
-        const chunkSize = Math.ceil(notes.length / 10); // get chunk size to split the array into 10 chunks
+        const chunkSize = Math.ceil(notes.length / 8); // get chunk size to split the array into 10 chunks
         // split the array into 10 chunks
-        const beatsToPhoto = Array.from({ length: 10 }, (_, i) => notes.slice(i * chunkSize, (i + 1) * chunkSize))
+        const beatsToPhoto = Array.from({ length: 8 }, (_, i) => notes.slice(i * chunkSize, (i + 1) * chunkSize))
             .map((chunk) => {
                 const longest = Math.max(...chunk.map((note) => note.length));
                 return chunk.find((obj) => obj.length === longest);
