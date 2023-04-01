@@ -5,7 +5,7 @@ interface Props {
     photos: string[];
 }
 
-const PHOTO_TIME = 2500;
+const PHOTO_TIME = 2000;
 
 function CameraRoll({ photos, ...props }: Props) {
     const [index, setIndex] = useState(0);
