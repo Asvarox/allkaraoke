@@ -8,6 +8,7 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import { ContentElement } from 'Scenes/Game/SongPage';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import CameraRoll from 'Scenes/Game/Singing/PostGame/Views/Results/CameraRoll';
 
 interface PlayerScore {
     detailedScore: [number, DetailedScore, DetailedScore];
@@ -18,6 +19,7 @@ interface Props {
     onNextStep: () => void;
     players: PlayerScore[];
     singSetupId: string;
+    photos: string[];
     highScores: HighScoreEntity[];
 }
 
@@ -25,7 +27,7 @@ const MAX_TICKS = Math.floor(6100 / 16);
 
 const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 
-function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
+function ResultsView({ onNextStep, players, highScores, singSetupId, photos }: Props) {
     const [currentTick, setCurrentTick] = useState(0);
     useKeyboard({
         onEnter: onNextStep,
@@ -72,8 +74,6 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
                     <ScoreText score={player1sum} />
                     <HighScoreBadge highscore={isAnimDone && isHighScore(players[0].name)}>High score!</HighScoreBadge>
                 </ScoreTextScore>
-                <br /> {/* xD */}
-                <br />
                 <br />
                 <br />
                 <ScoreTextScore
@@ -93,6 +93,7 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
             <SongSelectionButton onClick={onNextStep} focused data-test="highscores-button">
                 Next
             </SongSelectionButton>
+            <StyledPhotoRoll photos={photos} />
         </>
     );
 }
@@ -142,6 +143,13 @@ const SongSelectionButton = styled(Button)<{ focused: boolean }>`
     right: 2rem;
     width: 40rem;
     font-size: 1.9vw;
+`;
+
+const StyledPhotoRoll = styled(CameraRoll)`
+    position: absolute;
+    top: calc(50% - 30rem);
+    left: 100rem;
+    transform: scale(0.75);
 `;
 
 export default ResultsView;

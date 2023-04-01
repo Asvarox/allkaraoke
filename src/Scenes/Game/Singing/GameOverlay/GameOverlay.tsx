@@ -9,6 +9,7 @@ import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
+import Camera from 'Scenes/Game/Singing/GameOverlay/Components/Camera';
 
 interface Props {
     song: Song;
@@ -78,6 +79,7 @@ function GameOverlay({
 
     return (
         <Screen>
+            <Camera />
             <GameCanvas>
                 <canvas ref={canvas} width={overlayWidth} height={overlayHeight} />
             </GameCanvas>

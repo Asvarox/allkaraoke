@@ -6,12 +6,9 @@ import SingStarMics from 'Scenes/SelectInput/Variants/SingStarMics';
 import Skip from 'Scenes/SelectInput/Variants/Skip';
 import Advanced from 'Scenes/SelectInput/Variants/Advanced';
 import BuiltIn from 'Scenes/SelectInput/Variants/BuiltIn';
-import completedAnimation from './completed-animation.json';
-import Lottie from 'lottie-react';
-import styled from '@emotion/styled';
-import tuple from 'utils/tuple';
 import posthog from 'posthog-js';
 import startViewTransition from 'utils/startViewTransition';
+import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
 
 interface Props {
     onFinish: (pref: (typeof MicSetupPreference)[number]) => void;
@@ -20,9 +17,6 @@ interface Props {
     closeButtonText: string;
     playerNames?: string[];
 }
-
-// needs to be a "stable" array - reference can't change
-const completedAnimationSegment = tuple([0, 50]);
 
 const LAST_SELECTED_KEY = 'Previously selected input type';
 
@@ -64,12 +58,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, smoot
             <Heading>
                 {isComplete ? (
                     <>
-                        <CompletedAnim
-                            initialSegment={completedAnimationSegment}
-                            animationData={completedAnimation}
-                            loop={false}
-                        />{' '}
-                        Setup completed!
+                        <CompletedAnim /> Setup completed!
                     </>
                 ) : (
                     'How do you want to sing?'
@@ -126,19 +115,5 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, smoot
         </>
     );
 }
-
-const Heading = styled.h1`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-`;
-
-const CompletedAnim = styled(Lottie)`
-    display: inline-block;
-    width: 10rem;
-    height: 10rem;
-    margin: -3rem -2rem -3rem -3rem;
-`;
 
 export default SelectInputView;

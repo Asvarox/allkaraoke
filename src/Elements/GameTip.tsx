@@ -39,7 +39,7 @@ const data = [
         The global karaoke market has been estimated to be worth nearly <strong>$10 billion</strong>
     </>,
     <>
-        Entire game (excl. song management) is navigable with <strong>Keyboard</strong>
+        Entire game (besides add/edit song) is navigable with <strong>Keyboard</strong>
     </>,
     <>
         You can hide or show keyboard navigation help with <kbd>H</kbd> key

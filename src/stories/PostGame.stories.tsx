@@ -73,8 +73,8 @@ const Template: StoryFn<StoryArgs> = (args) => {
         <PostGameView
             singSetupId="storybook-id"
             players={players}
-            width={1280}
-            height={720}
+            width={1980}
+            height={1080}
             onClickSongSelection={() => undefined}
             song={song as Song}
             highScores={[
@@ -108,6 +108,18 @@ const Template: StoryFn<StoryArgs> = (args) => {
                     score: sumDetailedScore(players[1].detailedScore[1]) * players[1].detailedScore[0],
                     date: '2022-10-10',
                 },
+            ]}
+            photos={[
+                'https://picsum.photos/640/480?random=1',
+                'https://picsum.photos/640/480?random=2',
+                'https://picsum.photos/640/480?random=3',
+                'https://picsum.photos/640/480?random=4',
+                'https://picsum.photos/640/480?random=5',
+                'https://picsum.photos/640/480?random=6',
+                'https://picsum.photos/640/480?random=7',
+                'https://picsum.photos/640/480?random=8',
+                'https://picsum.photos/640/480?random=9',
+                'https://picsum.photos/640/480?random=10',
             ]}
         />
     );
