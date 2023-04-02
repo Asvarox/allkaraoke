@@ -46,7 +46,7 @@ export default function Camera() {
         const beat = GameState.getCurrentBeat();
 
         const nextPhotoToTake = photoTimestamps[taken.current.length];
-        if (beat > nextPhotoToTake) {
+        if (nextPhotoToTake && beat > nextPhotoToTake) {
             CameraManager.takePhoto();
             taken.current.push(nextPhotoToTake);
         }

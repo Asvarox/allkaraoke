@@ -1,15 +1,6 @@
-import { Section, Song } from 'interfaces';
-import isNotesSection from 'Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
+import { Song } from 'interfaces';
 import { generateSection, generateSong } from 'utils/testUtils';
 import generatePlayerChanges from './generatePlayerChanges';
-
-const getSingableBeats = (sections: Section[], start: number, end: number) =>
-    sections
-        .filter(isNotesSection)
-        .filter((section) => getFirstNoteStartFromSections([section]) >= start)
-        .filter((section) => getLastNoteEndFromSections([section]) <= end)
-        .reduce((current, section) => current + section.notes.reduce((length, note) => length + note.length, 0), 0);
 
 describe('generatePlayerChanges', () => {
     it('should generate 10 parts', () => {

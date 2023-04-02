@@ -162,6 +162,7 @@ class GameState {
         this.singSetup = singSetup;
 
         this.playerStates = singSetup.players.map(({ name }, index) => new PlayerState(index, name, this));
+        this.currentTime = 0;
     };
     public getSingSetup = () => this.singSetup;
     public getTolerance = () => this.getSingSetup()?.tolerance ?? 2;

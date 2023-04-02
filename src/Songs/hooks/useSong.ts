@@ -5,12 +5,14 @@ import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers
 import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
 import { useEffect, useState } from 'react';
 import SongDao from 'Songs/SongDao';
+import fixVideoGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/fixVideoGap';
 
 const processSong = (song: Song) => {
     let processed = normaliseGap(song);
     processed = addHeadstart(processed);
     processed = normaliseSectionPaddings(processed);
     processed = normaliseLyricSpaces(processed);
+    processed = fixVideoGap(processed);
 
     return processed;
 };
