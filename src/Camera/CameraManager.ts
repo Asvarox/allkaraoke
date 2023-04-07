@@ -1,5 +1,4 @@
 import Listener from 'utils/Listener';
-import { cameraShot } from 'SoundManager';
 
 const CAMERA_GRANT_KEY = 'CAMERA_GRANT_KEY';
 
@@ -9,7 +8,8 @@ class CameraManager extends Listener<[boolean]> {
     private canvas: HTMLCanvasElement;
     private video: HTMLVideoElement;
     private stream: MediaStream | null = null;
-    private photos: string[] = [];
+    private recorder: MediaRecorder | null = null;
+    private videoData: Blob[] = [];
 
     public constructor() {
         super();
@@ -45,7 +45,7 @@ class CameraManager extends Listener<[boolean]> {
 
     public startRecord = async () => {
         if (!this.permissionGranted) return;
-        this.stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        this.stream = await navigator.mediaDevices.getUserMedia({ video: { frameRate: 2 } });
 
         const settings = this.stream.getVideoTracks()[0].getSettings();
 
@@ -55,26 +55,29 @@ class CameraManager extends Listener<[boolean]> {
         this.canvas.height = this.video.height;
         this.video.srcObject = this.stream;
         await this.video.play();
+
+        this.recorder = new MediaRecorder(this.stream, { mimeType: 'video/webm' });
+
+        this.recorder.ondataavailable = (evt) => {
+            this.videoData.push(evt.data);
+        };
+
+        this.recorder.start();
+    };
+
+    public getVideo = () => {
+        const blob = new Blob(this.videoData, { type: 'video/webm' });
+
+        return URL.createObjectURL(blob);
     };
 
     public stopRecord = async () => {
         if (!this.permissionGranted) return;
+        this.recorder?.stop();
         this.stream?.getTracks().forEach((track) => track.stop());
     };
-
-    public takePhoto = async () => {
-        if (!this.permissionGranted) return;
-        const context = this.canvas.getContext('2d');
-        if (context) {
-            context.drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
-
-            this.photos.push(this.canvas.toDataURL('image/png'));
-            cameraShot.play();
-        }
-    };
-    public getPhotos = () => this.photos;
-    public clearPhotos = () => {
-        this.photos.length = 0;
+    public clearData = () => {
+        this.videoData.length = 0;
     };
 }
 

@@ -25,12 +25,11 @@ interface Props {
     song: Song;
     onClickSongSelection: () => void;
     players: PlayerScore[];
-    photos: string[];
     singSetupId: string;
     highScores: HighScoreEntity[];
 }
 
-function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetupId, photos }: Props) {
+function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetupId }: Props) {
     useBackgroundMusic(true);
     const [step, setStep] = useState<'results' | 'highscores'>('results');
 
@@ -43,7 +42,6 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
                         players={players}
                         singSetupId={singSetupId}
                         highScores={highScores}
-                        photos={photos}
                     />
                 )}
                 {step === 'highscores' && (

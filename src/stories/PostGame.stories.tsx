@@ -109,18 +109,6 @@ const Template: StoryFn<StoryArgs> = (args) => {
                     date: '2022-10-10',
                 },
             ]}
-            photos={[
-                'https://picsum.photos/640/480?random=1',
-                'https://picsum.photos/640/480?random=2',
-                'https://picsum.photos/640/480?random=3',
-                'https://picsum.photos/640/480?random=4',
-                'https://picsum.photos/640/480?random=5',
-                'https://picsum.photos/640/480?random=6',
-                'https://picsum.photos/640/480?random=7',
-                'https://picsum.photos/640/480?random=8',
-                'https://picsum.photos/640/480?random=9',
-                'https://picsum.photos/640/480?random=10',
-            ]}
         />
     );
 };

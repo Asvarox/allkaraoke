@@ -19,7 +19,6 @@ interface Props {
     onNextStep: () => void;
     players: PlayerScore[];
     singSetupId: string;
-    photos: string[];
     highScores: HighScoreEntity[];
 }
 
@@ -27,7 +26,7 @@ const MAX_TICKS = Math.floor(6100 / 16);
 
 const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 
-function ResultsView({ onNextStep, players, highScores, singSetupId, photos }: Props) {
+function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
     const [currentTick, setCurrentTick] = useState(0);
     useKeyboard({
         onEnter: onNextStep,
@@ -93,7 +92,7 @@ function ResultsView({ onNextStep, players, highScores, singSetupId, photos }: P
             <SongSelectionButton onClick={onNextStep} focused data-test="highscores-button">
                 Next
             </SongSelectionButton>
-            <StyledPhotoRoll photos={photos} />
+            <StyledPhotoRoll />
         </>
     );
 }
@@ -148,7 +147,7 @@ const SongSelectionButton = styled(Button)<{ focused: boolean }>`
 const StyledPhotoRoll = styled(CameraRoll)`
     position: absolute;
     top: calc(50% - 30rem);
-    left: 100rem;
+    left: 95rem;
     transform: scale(0.75);
 `;
 

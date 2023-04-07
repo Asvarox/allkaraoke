@@ -4,7 +4,6 @@ import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import { useSongStats } from 'Songs/stats/hooks';
 import GameState from '../GameState/GameState';
 import { calculateDetailedScoreData } from '../GameState/Helpers/calculateScore';
-import CameraManager from 'Camera/CameraManager';
 
 interface Props {
     width: number;
@@ -47,7 +46,6 @@ function PostGame({ song, width, height, onClickSongSelection, singSetup }: Prop
             })),
         [song],
     );
-    const photos = useMemo(() => CameraManager.getPhotos(), []);
 
     return (
         <PostGameView
@@ -58,7 +56,6 @@ function PostGame({ song, width, height, onClickSongSelection, singSetup }: Prop
             onClickSongSelection={onClickSongSelection}
             players={playerScores}
             highScores={highScores}
-            photos={photos}
         />
     );
 }
