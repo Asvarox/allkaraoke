@@ -3,10 +3,14 @@ import pride from 'Elements/pride.png';
 import dotparty from 'Elements/dotparty.gif';
 import styled from '@emotion/styled';
 
+if (window.location.search.includes('pride')) {
+    sessionStorage.setItem('pride', 'true');
+}
+
 export default function Logo(props: any) {
     return (
         <Container>
-            {window.location.search.includes('pride') && <PrideLogo src={pride} alt="AllKaraoke Pride logo part 1" />}
+            {sessionStorage.getItem('pride') === 'true' && <PrideLogo src={pride} alt="AllKaraoke Pride logo part 1" />}
             <StyledLogo src={logo} alt="AllKaraoke logo" {...props} />
             <DotParty src={dotparty} alt="AllKaraoke Pride logo part 2" />
         </Container>
