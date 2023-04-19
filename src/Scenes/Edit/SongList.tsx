@@ -20,6 +20,8 @@ export default function SongList(props: Props) {
     useBackgroundMusic(false);
     const { data, reload } = useSongIndex(true);
 
+    const initialSearch = new URLSearchParams(window.location.search)?.get('search');
+
     const columns: MRT_ColumnDef<SongPreview>[] = useMemo(
         () => [
             {
@@ -175,7 +177,12 @@ export default function SongList(props: Props) {
                         </IconButton>
                     </>
                 )}
-                initialState={{ density: 'compact', columnVisibility: { local: false, isDeleted: false } }}
+                initialState={{
+                    density: 'compact',
+                    columnVisibility: { local: false, isDeleted: false },
+                    globalFilter: initialSearch,
+                    showGlobalFilter: true,
+                }}
                 enableDensityToggle={false}
                 enableFullScreenToggle={false}
             />

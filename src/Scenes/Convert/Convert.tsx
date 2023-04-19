@@ -221,7 +221,9 @@ export default function Convert({ song }: Props) {
                             <Button
                                 data-test="save-button"
                                 onClick={() => {
-                                    SongDao.store(finalSong!).then(() => navigate('/edit'));
+                                    SongDao.store(finalSong!).then(() =>
+                                        navigate(`/edit?search=${encodeURIComponent(finalSong!.title)}`),
+                                    );
                                 }}
                                 sx={{ mt: 2, align: 'right' }}
                                 type="submit"
