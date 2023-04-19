@@ -1,0 +1,2215 @@
+{
+  "title": "Keine Lust",
+  "artist": "Rammstein",
+  "bpm": 276.15,
+  "bar": 4,
+  "gap": 133491.27050516024,
+  "video": "1M4ADcMn3dA",
+  "year": "2004",
+  "lastUpdate": "2023-04-19T20:32:58.191Z",
+  "language": "German",
+  "videoGap": 103,
+  "realBpm": 138,
+  "volume": 0.7,
+  "author": "NoeliaMicaela",
+  "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=noeliamicaela",
+  "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Keine%20Lust",
+  "tracks": [
+    {
+      "sections": [
+        {
+          "start": 0,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 18,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 20,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 22,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 24,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 27,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 35,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 50,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 52,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 54,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 56,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 59,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 67,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 82,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 84,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 86,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 88,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 91,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 99,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 114,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 116,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 118,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 120,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 123,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 131,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 138,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 141,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "ha"
+            },
+            {
+              "type": "freestyle",
+              "start": 145,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "be "
+            },
+            {
+              "type": "freestyle",
+              "start": 148,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 152,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 155,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 163,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "mich "
+            },
+            {
+              "type": "freestyle",
+              "start": 171,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "nicht "
+            },
+            {
+              "type": "freestyle",
+              "start": 179,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 184,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "has"
+            },
+            {
+              "type": "freestyle",
+              "start": 190,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "sen,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 194,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 208,
+              "length": 3,
+              "pitch": -1,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 212,
+              "length": 3,
+              "pitch": -1,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 216,
+              "length": 2,
+              "pitch": -1,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 219,
+              "length": 4,
+              "pitch": -1,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 227,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "mich "
+            },
+            {
+              "type": "freestyle",
+              "start": 235,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "an"
+            },
+            {
+              "type": "freestyle",
+              "start": 242,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu"
+            },
+            {
+              "type": "freestyle",
+              "start": 247,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "fas"
+            },
+            {
+              "type": "freestyle",
+              "start": 253,
+              "length": 4,
+              "pitch": -2,
+              "lyrics": "sen."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 257,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 271,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 275,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "h‰t"
+            },
+            {
+              "type": "freestyle",
+              "start": 279,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "te "
+            },
+            {
+              "type": "freestyle",
+              "start": 283,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 291,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 299,
+              "length": 6,
+              "pitch": 4,
+              "lyrics": "O"
+            },
+            {
+              "type": "freestyle",
+              "start": 307,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "na"
+            },
+            {
+              "type": "freestyle",
+              "start": 312,
+              "length": 6,
+              "pitch": 4,
+              "lyrics": "nie"
+            },
+            {
+              "type": "freestyle",
+              "start": 320,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "ren,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 324,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 334,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 338,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 342,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 346,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 354,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "es "
+            },
+            {
+              "type": "freestyle",
+              "start": 362,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 367,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "pro"
+            },
+            {
+              "type": "freestyle",
+              "start": 374,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "bie"
+            },
+            {
+              "type": "freestyle",
+              "start": 382,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "ren."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 387,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 400,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 404,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "h‰t"
+            },
+            {
+              "type": "freestyle",
+              "start": 408,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "te "
+            },
+            {
+              "type": "freestyle",
+              "start": 411,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 418,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "mich "
+            },
+            {
+              "type": "freestyle",
+              "start": 426,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "aus"
+            },
+            {
+              "type": "freestyle",
+              "start": 434,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu"
+            },
+            {
+              "type": "freestyle",
+              "start": 439,
+              "length": 12,
+              "pitch": 0,
+              "lyrics": "zieh'n,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 451,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 464,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 468,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 473,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 477,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 483,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "mich "
+            },
+            {
+              "type": "freestyle",
+              "start": 490,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "nackt "
+            },
+            {
+              "type": "freestyle",
+              "start": 498,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 503,
+              "length": 7,
+              "pitch": 0,
+              "lyrics": "seh'n."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 510,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 516,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "normal",
+              "start": 523,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "h‰t"
+            },
+            {
+              "type": "normal",
+              "start": 530,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "te "
+            },
+            {
+              "type": "normal",
+              "start": 538,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 547,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "mit "
+            },
+            {
+              "type": "normal",
+              "start": 554,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "gro"
+            },
+            {
+              "type": "normal",
+              "start": 562,
+              "length": 3,
+              "pitch": 2,
+              "lyrics": "ﬂen "
+            },
+            {
+              "type": "normal",
+              "start": 568,
+              "length": 5,
+              "pitch": 3,
+              "lyrics": "Tie"
+            },
+            {
+              "type": "normal",
+              "start": 577,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "ren,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 582,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 592,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "normal",
+              "start": 596,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "kei"
+            },
+            {
+              "type": "normal",
+              "start": 600,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "ne "
+            },
+            {
+              "type": "normal",
+              "start": 604,
+              "length": 5,
+              "pitch": 5,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 613,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "es "
+            },
+            {
+              "type": "normal",
+              "start": 619,
+              "length": 4,
+              "pitch": 3,
+              "lyrics": "zu "
+            },
+            {
+              "type": "normal",
+              "start": 627,
+              "length": 3,
+              "pitch": 3,
+              "lyrics": "ris"
+            },
+            {
+              "type": "normal",
+              "start": 632,
+              "length": 7,
+              "pitch": 3,
+              "lyrics": "kie"
+            },
+            {
+              "type": "normal",
+              "start": 642,
+              "length": 5,
+              "pitch": 3,
+              "lyrics": "ren."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 647,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 656,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "normal",
+              "start": 660,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "kei"
+            },
+            {
+              "type": "normal",
+              "start": 664,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "ne "
+            },
+            {
+              "type": "normal",
+              "start": 668,
+              "length": 5,
+              "pitch": 7,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 675,
+              "length": 4,
+              "pitch": 8,
+              "lyrics": "vom "
+            },
+            {
+              "type": "normal",
+              "start": 682,
+              "length": 6,
+              "pitch": 7,
+              "lyrics": "Schnee "
+            },
+            {
+              "type": "normal",
+              "start": 691,
+              "length": 3,
+              "pitch": 2,
+              "lyrics": "zu "
+            },
+            {
+              "type": "normal",
+              "start": 696,
+              "length": 17,
+              "pitch": 2,
+              "lyrics": "geh'n,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 713,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 720,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "normal",
+              "start": 724,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "kei"
+            },
+            {
+              "type": "normal",
+              "start": 728,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "ne "
+            },
+            {
+              "type": "normal",
+              "start": 732,
+              "length": 9,
+              "pitch": 5,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 746,
+              "length": 4,
+              "pitch": 3,
+              "lyrics": "zu "
+            },
+            {
+              "type": "normal",
+              "start": 754,
+              "length": 3,
+              "pitch": 3,
+              "lyrics": "er"
+            },
+            {
+              "type": "normal",
+              "start": 759,
+              "length": 7,
+              "pitch": 3,
+              "lyrics": "frie"
+            },
+            {
+              "type": "normal",
+              "start": 770,
+              "length": 4,
+              "pitch": 3,
+              "lyrics": "ren. "
+            },
+            {
+              "type": "freestyle",
+              "start": 778,
+              "length": 10,
+              "pitch": 3,
+              "lyrics": "Ahg!"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 788,
+          "end": 896
+        },
+        {
+          "start": 896,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 914,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 916,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 918,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 920,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 923,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 931,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 946,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 948,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 950,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 952,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 955,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 963,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 978,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 980,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 982,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 984,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 987,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 995,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 1003,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "Nein, "
+            },
+            {
+              "type": "freestyle",
+              "start": 1010,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 1012,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 1014,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 1016,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 1019,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1027,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 1034,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 1038,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ha"
+            },
+            {
+              "type": "freestyle",
+              "start": 1041,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "be "
+            },
+            {
+              "type": "freestyle",
+              "start": 1044,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 1048,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 1051,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 1059,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "et"
+            },
+            {
+              "type": "freestyle",
+              "start": 1067,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "was "
+            },
+            {
+              "type": "freestyle",
+              "start": 1074,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 1080,
+              "length": 7,
+              "pitch": 0,
+              "lyrics": "kau'n,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1087,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 1091,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "Denn "
+            },
+            {
+              "type": "freestyle",
+              "start": 1099,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 1104,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 1109,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 1113,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 1116,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 1123,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "es "
+            },
+            {
+              "type": "freestyle",
+              "start": 1131,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 1138,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "ver"
+            },
+            {
+              "type": "freestyle",
+              "start": 1145,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "dau'n."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1153,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 1168,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 1172,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 1176,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 1180,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 1195,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "mich "
+            },
+            {
+              "type": "freestyle",
+              "start": 1203,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 1209,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "wie"
+            },
+            {
+              "type": "freestyle",
+              "start": 1216,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "gen."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1224,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 1232,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 1236,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 1240,
+              "length": 2,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 1243,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "freestyle",
+              "start": 1252,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "im "
+            },
+            {
+              "type": "freestyle",
+              "start": 1258,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "Fett "
+            },
+            {
+              "type": "freestyle",
+              "start": 1266,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "zu "
+            },
+            {
+              "type": "freestyle",
+              "start": 1271,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "lie"
+            },
+            {
+              "type": "freestyle",
+              "start": 1279,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "gen."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1282,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1286,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "normal",
+              "start": 1293,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "h‰t"
+            },
+            {
+              "type": "normal",
+              "start": 1300,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "te "
+            },
+            {
+              "type": "normal",
+              "start": 1308,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 1317,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "mit "
+            },
+            {
+              "type": "normal",
+              "start": 1324,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "gro"
+            },
+            {
+              "type": "normal",
+              "start": 1332,
+              "length": 3,
+              "pitch": 2,
+              "lyrics": "ﬂen "
+            },
+            {
+              "type": "normal",
+              "start": 1338,
+              "length": 5,
+              "pitch": 3,
+              "lyrics": "Tie"
+            },
+            {
+              "type": "normal",
+              "start": 1347,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "ren,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1352,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1361,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "normal",
+              "start": 1365,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "kei"
+            },
+            {
+              "type": "normal",
+              "start": 1369,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "ne "
+            },
+            {
+              "type": "normal",
+              "start": 1373,
+              "length": 5,
+              "pitch": 5,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 1382,
+              "length": 3,
+              "pitch": 5,
+              "lyrics": "es "
+            },
+            {
+              "type": "normal",
+              "start": 1388,
+              "length": 4,
+              "pitch": 8,
+              "lyrics": "zu "
+            },
+            {
+              "type": "normal",
+              "start": 1396,
+              "length": 3,
+              "pitch": 8,
+              "lyrics": "ris"
+            },
+            {
+              "type": "normal",
+              "start": 1401,
+              "length": 7,
+              "pitch": 8,
+              "lyrics": "kie"
+            },
+            {
+              "type": "normal",
+              "start": 1411,
+              "length": 5,
+              "pitch": 7,
+              "lyrics": "ren."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1416,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1425,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "normal",
+              "start": 1429,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "kei"
+            },
+            {
+              "type": "normal",
+              "start": 1433,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "ne "
+            },
+            {
+              "type": "normal",
+              "start": 1437,
+              "length": 5,
+              "pitch": 7,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 1444,
+              "length": 4,
+              "pitch": 8,
+              "lyrics": "vom "
+            },
+            {
+              "type": "normal",
+              "start": 1451,
+              "length": 6,
+              "pitch": 7,
+              "lyrics": "Schnee "
+            },
+            {
+              "type": "normal",
+              "start": 1460,
+              "length": 3,
+              "pitch": 2,
+              "lyrics": "zu "
+            },
+            {
+              "type": "normal",
+              "start": 1465,
+              "length": 17,
+              "pitch": 2,
+              "lyrics": "geh'n,"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1482,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1488,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "Hab' "
+            },
+            {
+              "type": "normal",
+              "start": 1492,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "kei"
+            },
+            {
+              "type": "normal",
+              "start": 1496,
+              "length": 2,
+              "pitch": 5,
+              "lyrics": "ne "
+            },
+            {
+              "type": "normal",
+              "start": 1500,
+              "length": 9,
+              "pitch": 5,
+              "lyrics": "Lust "
+            },
+            {
+              "type": "normal",
+              "start": 1514,
+              "length": 4,
+              "pitch": 3,
+              "lyrics": "zu "
+            },
+            {
+              "type": "normal",
+              "start": 1522,
+              "length": 3,
+              "pitch": 3,
+              "lyrics": "er"
+            },
+            {
+              "type": "normal",
+              "start": 1527,
+              "length": 7,
+              "pitch": 3,
+              "lyrics": "frie"
+            },
+            {
+              "type": "normal",
+              "start": 1538,
+              "length": 4,
+              "pitch": 3,
+              "lyrics": "ren."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1542,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1557,
+              "length": 3,
+              "pitch": 7,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "normal",
+              "start": 1562,
+              "length": 7,
+              "pitch": 7,
+              "lyrics": "blei"
+            },
+            {
+              "type": "normal",
+              "start": 1572,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "be "
+            },
+            {
+              "type": "normal",
+              "start": 1579,
+              "length": 5,
+              "pitch": 7,
+              "lyrics": "ein"
+            },
+            {
+              "type": "normal",
+              "start": 1587,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "fach "
+            },
+            {
+              "type": "normal",
+              "start": 1593,
+              "length": 8,
+              "pitch": 7,
+              "lyrics": "lie"
+            },
+            {
+              "type": "normal",
+              "start": 1604,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "gen"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1608,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1618,
+              "length": 2,
+              "pitch": 7,
+              "lyrics": "Und "
+            },
+            {
+              "type": "normal",
+              "start": 1621,
+              "length": 3,
+              "pitch": 8,
+              "lyrics": "wie"
+            },
+            {
+              "type": "normal",
+              "start": 1625,
+              "length": 2,
+              "pitch": 8,
+              "lyrics": "der "
+            },
+            {
+              "type": "normal",
+              "start": 1629,
+              "length": 6,
+              "pitch": 8,
+              "lyrics": "z‰h"
+            },
+            {
+              "type": "normal",
+              "start": 1637,
+              "length": 5,
+              "pitch": 7,
+              "lyrics": "le "
+            },
+            {
+              "type": "star",
+              "start": 1644,
+              "length": 5,
+              "pitch": 12,
+              "lyrics": "ich "
+            },
+            {
+              "type": "normal",
+              "start": 1652,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "die "
+            },
+            {
+              "type": "star",
+              "start": 1659,
+              "length": 8,
+              "pitch": 12,
+              "lyrics": "Flie"
+            },
+            {
+              "type": "normal",
+              "start": 1669,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "gen."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1673,
+          "notes": [
+            {
+              "type": "star",
+              "start": 1677,
+              "length": 6,
+              "pitch": 12,
+              "lyrics": "Lust"
+            },
+            {
+              "type": "normal",
+              "start": 1685,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "los "
+            },
+            {
+              "type": "normal",
+              "start": 1693,
+              "length": 4,
+              "pitch": 8,
+              "lyrics": "fas"
+            },
+            {
+              "type": "normal",
+              "start": 1700,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "se "
+            },
+            {
+              "type": "normal",
+              "start": 1707,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "ich "
+            },
+            {
+              "type": "normal",
+              "start": 1715,
+              "length": 5,
+              "pitch": 8,
+              "lyrics": "mich "
+            },
+            {
+              "type": "normal",
+              "start": 1723,
+              "length": 4,
+              "pitch": 7,
+              "lyrics": "an"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1727,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1731,
+              "length": 6,
+              "pitch": 7,
+              "lyrics": "Und "
+            },
+            {
+              "type": "normal",
+              "start": 1740,
+              "length": 4,
+              "pitch": 5,
+              "lyrics": "mer"
+            },
+            {
+              "type": "normal",
+              "start": 1748,
+              "length": 4,
+              "pitch": 5,
+              "lyrics": "ke "
+            },
+            {
+              "type": "normal",
+              "start": 1756,
+              "length": 5,
+              "pitch": 5,
+              "lyrics": "bald"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "start": 1761,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1766,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "normal",
+              "start": 1772,
+              "length": 4,
+              "pitch": 12,
+              "lyrics": "bin "
+            },
+            {
+              "type": "normal",
+              "start": 1779,
+              "length": 5,
+              "pitch": 12,
+              "lyrics": "schon "
+            },
+            {
+              "type": "normal",
+              "start": 1787,
+              "length": 6,
+              "pitch": 12,
+              "lyrics": "lan"
+            },
+            {
+              "type": "normal",
+              "start": 1796,
+              "length": 5,
+              "pitch": 10,
+              "lyrics": "ge "
+            },
+            {
+              "type": "normal",
+              "start": 1804,
+              "length": 32,
+              "pitch": 12,
+              "lyrics": "kalt."
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 1836,
+          "end": 1843
+        },
+        {
+          "start": 1843,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1861,
+              "length": 6,
+              "pitch": 2,
+              "lyrics": "So "
+            },
+            {
+              "type": "normal",
+              "start": 1870,
+              "length": 30,
+              "pitch": 2,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 1900,
+          "end": 1932
+        },
+        {
+          "start": 1932,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 1950,
+              "length": 6,
+              "pitch": 3,
+              "lyrics": "Mir "
+            },
+            {
+              "type": "normal",
+              "start": 1959,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "ist "
+            },
+            {
+              "type": "normal",
+              "start": 1968,
+              "length": 32,
+              "pitch": 0,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 2000,
+          "end": 2003
+        },
+        {
+          "start": 2003,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2021,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "So "
+            },
+            {
+              "type": "normal",
+              "start": 2029,
+              "length": 26,
+              "pitch": 2,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 2055,
+          "end": 2122
+        },
+        {
+          "start": 2122,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2140,
+              "length": 7,
+              "pitch": 0,
+              "lyrics": "Mir "
+            },
+            {
+              "type": "normal",
+              "start": 2150,
+              "length": 5,
+              "pitch": 0,
+              "lyrics": "ist "
+            },
+            {
+              "type": "star",
+              "start": 2158,
+              "length": 12,
+              "pitch": 0,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 2170,
+          "end": 2748
+        },
+        {
+          "start": 2748,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2766,
+              "length": 14,
+              "pitch": 0,
+              "lyrics": "Mir "
+            },
+            {
+              "type": "normal",
+              "start": 2784,
+              "length": 9,
+              "pitch": -2,
+              "lyrics": "ist "
+            },
+            {
+              "type": "normal",
+              "start": 2799,
+              "length": 32,
+              "pitch": 0,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 2831,
+          "end": 2836
+        },
+        {
+          "start": 2836,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2854,
+              "length": 6,
+              "pitch": 2,
+              "lyrics": "So "
+            },
+            {
+              "type": "normal",
+              "start": 2863,
+              "length": 26,
+              "pitch": 2,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 2889,
+          "end": 2924
+        },
+        {
+          "start": 2924,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 2942,
+              "length": 7,
+              "pitch": 3,
+              "lyrics": "Mir "
+            },
+            {
+              "type": "normal",
+              "start": 2952,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "ist "
+            },
+            {
+              "type": "star",
+              "start": 2960,
+              "length": 32,
+              "pitch": 0,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 2992,
+          "end": 2996
+        },
+        {
+          "start": 2996,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3014,
+              "length": 5,
+              "pitch": 2,
+              "lyrics": "So "
+            },
+            {
+              "type": "normal",
+              "start": 3022,
+              "length": 26,
+              "pitch": 2,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 3048,
+          "end": 3083
+        },
+        {
+          "start": 3083,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3101,
+              "length": 8,
+              "pitch": 0,
+              "lyrics": "Mir "
+            },
+            {
+              "type": "normal",
+              "start": 3113,
+              "length": 3,
+              "pitch": 0,
+              "lyrics": "ist "
+            },
+            {
+              "type": "normal",
+              "start": 3119,
+              "length": 32,
+              "pitch": 0,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 3151,
+          "end": 3156
+        },
+        {
+          "start": 3156,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3174,
+              "length": 6,
+              "pitch": 2,
+              "lyrics": "So "
+            },
+            {
+              "type": "normal",
+              "start": 3182,
+              "length": 26,
+              "pitch": 2,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 3208,
+          "end": 3275
+        },
+        {
+          "start": 3275,
+          "notes": [
+            {
+              "type": "normal",
+              "start": 3293,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "Mir "
+            },
+            {
+              "type": "normal",
+              "start": 3302,
+              "length": 4,
+              "pitch": 0,
+              "lyrics": "ist "
+            },
+            {
+              "type": "star",
+              "start": 3310,
+              "length": 14,
+              "pitch": 0,
+              "lyrics": "kalt"
+            }
+          ],
+          "type": "notes"
+        },
+        {
+          "type": "pause",
+          "start": 3324,
+          "end": 3538
+        },
+        {
+          "start": 3538,
+          "notes": [
+            {
+              "type": "freestyle",
+              "start": 3556,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "Ich "
+            },
+            {
+              "type": "freestyle",
+              "start": 3558,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "hab' "
+            },
+            {
+              "type": "freestyle",
+              "start": 3561,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "kei"
+            },
+            {
+              "type": "freestyle",
+              "start": 3563,
+              "length": 1,
+              "pitch": 0,
+              "lyrics": "ne "
+            },
+            {
+              "type": "freestyle",
+              "start": 3566,
+              "length": 6,
+              "pitch": 0,
+              "lyrics": "Lust"
+            }
+          ],
+          "type": "notes"
+        }
+      ]
+    }
+  ]
+}

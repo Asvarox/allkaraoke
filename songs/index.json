@@ -3906,6 +3906,58 @@
     "local": false
   },
   {
+    "title": "Wake Me Up When September Ends",
+    "artist": "Green Day",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 8445.29411764706,
+    "video": "rdpBZ5_b48g",
+    "year": "2004",
+    "lastUpdate": "2023-04-19T18:59:20.459Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.59,
+    "author": "jusmo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=jusmo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Wake%20Me%20Up%20When%20September%20Ends",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Green Day-Wake Me Up When September Ends.json",
+    "tracksCount": 1,
+    "search": "greendaywakemeupwhenseptemberends",
+    "local": false
+  },
+  {
+    "title": "Don't Cry",
+    "artist": "Guns N' Roses",
+    "bpm": 244,
+    "bar": 4,
+    "gap": 18016.39344262295,
+    "video": "zRIbf6JqkNc",
+    "year": "1991",
+    "lastUpdate": "2023-04-19T20:14:16.458Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 62,
+    "volume": 1,
+    "author": "sanicsip",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Don't%20Cry",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Guns N' Roses-Don't Cry.json",
+    "tracksCount": 1,
+    "search": "gunsnrosesdontcry",
+    "local": false
+  },
+  {
     "title": "Knocking On Heavens Door",
     "artist": "Guns N' Roses",
     "bpm": 264.9,
@@ -3928,6 +3980,87 @@
     "file": "Guns N' Roses-Knocking On Heavens Door.json",
     "tracksCount": 1,
     "search": "gunsnrosesknockingonheavensdoor",
+    "local": false
+  },
+  {
+    "title": "Paradise City",
+    "artist": "Guns N' Roses",
+    "bpm": 202.4,
+    "bar": 4,
+    "gap": 20820.561264822136,
+    "video": "Rbm6GXllBiw",
+    "year": "1987",
+    "lastUpdate": "2023-04-19T20:18:27.232Z",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 99,
+    "volume": 0.8,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Paradise%20City",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Guns N' Roses-Paradise City.json",
+    "tracksCount": 1,
+    "search": "gunsnrosesparadisecity",
+    "local": false
+  },
+  {
+    "title": "Sweet Child O'Mine",
+    "artist": "Guns N' Roses",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 48676.90625,
+    "video": "HlEuo9aR7Qo",
+    "year": "1987",
+    "lastUpdate": "2023-04-19T20:12:21.117Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 20,
+    "realBpm": 63,
+    "volume": 1,
+    "author": "Pacayaka",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pacayaka",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Sweet%20Child%20O%C2%B4Mine",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Guns N' Roses-Sweet Child O'Mine.json",
+    "tracksCount": 1,
+    "search": "gunsnrosessweetchildomine",
+    "local": false
+  },
+  {
+    "title": "Welcome to the jungle",
+    "artist": "Guns N' Roses",
+    "bpm": 246.54,
+    "bar": 4,
+    "gap": 44338.5271355561,
+    "video": "o1tj2zJ2Wvg",
+    "year": "1987",
+    "lastUpdate": "2023-04-19T20:16:01.422Z",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.7,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Welcome%20to%20the%20jungle",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Guns N' Roses-Welcome to the jungle.json",
+    "tracksCount": 1,
+    "search": "gunsnroseswelcometothejungle",
     "local": false
   },
   {
@@ -4611,6 +4744,33 @@
     "file": "Jarzębina-Koko Euro Spoko.json",
     "tracksCount": 1,
     "search": "jarzebinakokoeurospoko",
+    "local": false
+  },
+  {
+    "title": "I'm yours",
+    "artist": "Jason Mraz",
+    "bpm": 302.04,
+    "bar": 4,
+    "gap": 18186.754072308304,
+    "video": "EkHTsc9PU2A",
+    "year": "2008",
+    "lastUpdate": "2023-04-19T18:27:03.625Z",
+    "genre": "Other",
+    "language": "English",
+    "videoGap": 4,
+    "realBpm": 76,
+    "volume": 0.75,
+    "author": "artax1979",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=artax1979",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Jason%20Mraz&cancion=I'm%20yours",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Jason Mraz-I'm yours.json",
+    "tracksCount": 1,
+    "search": "jasonmrazimyours",
     "local": false
   },
   {
@@ -7541,6 +7701,117 @@
     "local": false
   },
   {
+    "title": "Come As You Are",
+    "artist": "Nirvana",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 16896.29411764706,
+    "video": "vabnZ9-ex7o",
+    "year": "1992",
+    "lastUpdate": "2023-04-19T19:56:52.563Z",
+    "edition": "SingStar Rocks!",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 60,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Come%20As%20You%20Are",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Nirvana-Come As You Are.json",
+    "tracksCount": 1,
+    "search": "nirvanacomeasyouare",
+    "local": false
+  },
+  {
+    "title": "In Bloom",
+    "artist": "Nirvana",
+    "bpm": 399.1,
+    "bar": 4,
+    "gap": 46385.216737659735,
+    "video": "PbgKEjNBHqM",
+    "year": "1991",
+    "lastUpdate": "2023-04-19T20:05:03.704Z",
+    "edition": "Rock Band",
+    "genre": "Grunge",
+    "language": "English",
+    "videoGap": 20,
+    "realBpm": 79,
+    "volume": 0.7,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=In%20Bloom",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "file": "Nirvana-In Bloom.json",
+    "tracksCount": 1,
+    "search": "nirvanainbloom",
+    "local": false
+  },
+  {
+    "title": "Lithium",
+    "artist": "Nirvana",
+    "bpm": 246.4,
+    "bar": 4,
+    "gap": 7828.9740259740265,
+    "video": "pkcJEvMcnEg",
+    "year": "1991",
+    "lastUpdate": "2023-04-19T20:00:38.298Z",
+    "edition": "SingStar '90s USA",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.62,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Lithium",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Nirvana-Lithium.json",
+    "tracksCount": 1,
+    "search": "nirvanalithium",
+    "local": false
+  },
+  {
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 25479.29411764706,
+    "video": "hTWKbfoikeg",
+    "year": "1991",
+    "lastUpdate": "2023-04-19T19:58:43.439Z",
+    "edition": "SingStar Lgnds",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.7,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Smells%20Like%20Teen%20Spirit",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Nirvana-Smells Like Teen Spirit.json",
+    "tracksCount": 1,
+    "search": "nirvanasmellsliketeenspirit",
+    "local": false
+  },
+  {
     "title": "Don't speak",
     "artist": "No Doubt",
     "bpm": 397.02,
@@ -8665,6 +8936,87 @@
     "local": false
   },
   {
+    "title": "Amerika",
+    "artist": "Rammstein",
+    "bpm": 250,
+    "bar": 4,
+    "gap": -70,
+    "video": "Rr8ljRgcJNM",
+    "year": "2004",
+    "lastUpdate": "2023-04-19T20:21:35.737Z",
+    "genre": "Metal Industrial",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 63,
+    "volume": 0.68,
+    "author": "¡JKA!",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Amerika",
+    "tracks": [
+      {
+        "start": 65
+      }
+    ],
+    "file": "Rammstein-Amerika.json",
+    "tracksCount": 1,
+    "search": "rammsteinamerika",
+    "local": false
+  },
+  {
+    "title": "Du Hast",
+    "artist": "Rammstein",
+    "bpm": 399.41,
+    "bar": 4,
+    "gap": 29518.00435642573,
+    "video": "W3q8Od5qJio",
+    "year": "1997",
+    "lastUpdate": "2023-04-19T20:27:41.209Z",
+    "edition": "Rock Band 3",
+    "genre": "Industrial",
+    "language": "German",
+    "videoGap": -4,
+    "realBpm": 125,
+    "volume": 0.8,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Du%20Hast",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "file": "Rammstein-Du Hast.json",
+    "tracksCount": 1,
+    "search": "rammsteinduhast",
+    "local": false
+  },
+  {
+    "title": "Keine Lust",
+    "artist": "Rammstein",
+    "bpm": 276.15,
+    "bar": 4,
+    "gap": 133491.27050516024,
+    "video": "1M4ADcMn3dA",
+    "year": "2004",
+    "lastUpdate": "2023-04-19T20:32:58.191Z",
+    "language": "German",
+    "videoGap": 103,
+    "realBpm": 138,
+    "volume": 0.7,
+    "author": "NoeliaMicaela",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=noeliamicaela",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Keine%20Lust",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Rammstein-Keine Lust.json",
+    "tracksCount": 1,
+    "search": "rammsteinkeinelust",
+    "local": false
+  },
+  {
     "title": "Ghostbusters",
     "artist": "Ray Parker Jr.",
     "bpm": 230.72,
@@ -8691,6 +9043,34 @@
     "local": false
   },
   {
+    "title": "Californication",
+    "artist": "Red Hot Chili Peppers",
+    "bpm": 387.04,
+    "bar": 4,
+    "gap": 22394.689900500078,
+    "video": "YlUKcNNmywk",
+    "year": "1999",
+    "lastUpdate": "2023-04-19T19:18:47.216Z",
+    "edition": "Rock Band Store 2011 Vol. 3",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.76,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Californication",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "Red Hot Chili Peppers-Californication.json",
+    "tracksCount": 1,
+    "search": "redhotchilipepperscalifornication",
+    "local": false
+  },
+  {
     "title": "Dani California",
     "artist": "Red Hot Chili Peppers",
     "bpm": 388.94,
@@ -8714,6 +9094,88 @@
     "file": "Red Hot Chili Peppers-Dani California.json",
     "tracksCount": 1,
     "search": "redhotchilipeppersdanicalifornia",
+    "local": false
+  },
+  {
+    "title": "Otherside",
+    "artist": "Red Hot Chili Peppers",
+    "bpm": 258,
+    "bar": 4,
+    "gap": 8491.627906976744,
+    "video": "rn_YodiJO6k",
+    "year": "2000",
+    "lastUpdate": "2023-04-19T19:02:18.532Z",
+    "genre": "Alternative",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.7,
+    "author": "Spys4Darwin",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=spys4darwin",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Otherside",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Red Hot Chili Peppers-Otherside.json",
+    "tracksCount": 1,
+    "search": "redhotchilipeppersotherside",
+    "local": false
+  },
+  {
+    "title": "Scar Tissue",
+    "artist": "Red Hot Chili Peppers",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 10372,
+    "video": "mzJj5-lubeM",
+    "year": "1999",
+    "lastUpdate": "2023-04-19T19:53:19.016Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 89,
+    "volume": 0.6,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Scar%20Tissue",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "file": "Red Hot Chili Peppers-Scar Tissue.json",
+    "tracksCount": 1,
+    "search": "redhotchilipeppersscartissue",
+    "local": false
+  },
+  {
+    "title": "Under the bridge",
+    "artist": "Red Hot Chili Peppers",
+    "bpm": 399.89,
+    "bar": 4,
+    "gap": 28237.474686867172,
+    "video": "GLvohMXgcBo",
+    "year": "1991",
+    "lastUpdate": "2023-04-19T19:41:41.113Z",
+    "edition": "Rock Band Store 2008 Vol. 3",
+    "genre": "Rock alternativo",
+    "language": "English",
+    "videoGap": 1,
+    "realBpm": 85,
+    "volume": 0.77,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Under%20the%20bridge",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "file": "Red Hot Chili Peppers-Under the bridge.json",
+    "tracksCount": 1,
+    "search": "redhotchilipeppersunderthebridge",
     "local": false
   },
   {
@@ -9447,6 +9909,34 @@
     "file": "Soul Asylum-Runaway Train.json",
     "tracksCount": 1,
     "search": "soulasylumrunawaytrain",
+    "local": false
+  },
+  {
+    "title": "Black Hole Sun",
+    "artist": "Soundgarden",
+    "bpm": 210.2,
+    "bar": 4,
+    "gap": 15499.951474785918,
+    "video": "3mbBbFH9fAg",
+    "year": "1994",
+    "lastUpdate": "2023-04-19T20:07:20.056Z",
+    "edition": "SingStar '90s USA",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.7,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Soundgarden&cancion=Black%20Hole%20Sun",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Soundgarden-Black Hole Sun.json",
+    "tracksCount": 1,
+    "search": "soundgardenblackholesun",
     "local": false
   },
   {
