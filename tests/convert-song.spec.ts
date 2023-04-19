@@ -193,6 +193,12 @@ test('Convert song', async ({ page }) => {
     expect(downloadContent.tracks[0].name).not.toBeDefined();
     expect(downloadContent.tracks[1].name).toEqual(TRACK_2_NAME);
 
+    await page.getByTestId('convert-song').click();
+    await page.getByTestId('input-txt').fill(txtfile);
+    await expect(page.getByTestId('possible-duplicate')).toBeVisible();
+
+    await page.goBack();
+
     page.on('dialog', (dialog) => dialog.accept());
 
     await page.locator('[data-test="delete-song"][data-song="convert-test.json"]').click();

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, Button, Step, StepLabel, StyledEngineProvider } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Step, StepLabel, StyledEngineProvider } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { Song } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -14,6 +14,7 @@ import { Link } from 'wouter';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import useSongIndex from 'Songs/hooks/useSongIndex';
 
 interface Props {
     song?: Song;
@@ -21,6 +22,7 @@ interface Props {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 export default function Convert({ song }: Props) {
+    const { data: songs } = useSongIndex(true);
     useBackground(false);
     const navigate = useSmoothNavigate();
     useBackgroundMusic(false);
@@ -73,6 +75,16 @@ export default function Convert({ song }: Props) {
         basicData.sourceUrl,
         song,
     ]);
+
+    const possibleDuplicate = useMemo(
+        () =>
+            !song &&
+            conversionResult &&
+            songs?.find(
+                (addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult),
+            ),
+        [songs, conversionResult, song],
+    );
 
     useEffect(() => {
         if (conversionResult) {
@@ -147,6 +159,15 @@ export default function Convert({ song }: Props) {
                     </Step>
                 </Stepper>
 
+                {possibleDuplicate && (
+                    <Alert severity="warning" data-test="possible-duplicate">
+                        <AlertTitle>Possible duplicate</AlertTitle>
+                        There is already a song with similar artist and/or name:{' '}
+                        <b>
+                            {possibleDuplicate.artist} - {possibleDuplicate.title}
+                        </b>
+                    </Alert>
+                )}
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
