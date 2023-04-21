@@ -2,7 +2,7 @@ import Listener from 'utils/Listener';
 
 const CAMERA_GRANT_KEY = 'CAMERA_GRANT_KEY';
 
-const storedGrant = sessionStorage.getItem(CAMERA_GRANT_KEY);
+const storedGrant = localStorage.getItem(CAMERA_GRANT_KEY);
 
 class CameraManager extends Listener<[boolean]> {
     private canvas: HTMLCanvasElement;
@@ -31,7 +31,7 @@ class CameraManager extends Listener<[boolean]> {
         } catch (e) {
             this.permissionGranted = false;
         }
-        sessionStorage.setItem(CAMERA_GRANT_KEY, JSON.stringify(this.permissionGranted));
+        localStorage.setItem(CAMERA_GRANT_KEY, JSON.stringify(this.permissionGranted));
         this.onUpdate(this.permissionGranted);
 
         return this.permissionGranted;
@@ -39,7 +39,7 @@ class CameraManager extends Listener<[boolean]> {
 
     public disable = () => {
         this.permissionGranted = false;
-        sessionStorage.setItem(CAMERA_GRANT_KEY, JSON.stringify(this.permissionGranted));
+        localStorage.setItem(CAMERA_GRANT_KEY, JSON.stringify(this.permissionGranted));
         this.onUpdate(this.permissionGranted);
     };
 
