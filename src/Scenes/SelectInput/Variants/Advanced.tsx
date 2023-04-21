@@ -104,7 +104,7 @@ function Advanced(props: Props) {
                     )}
             </UserMediaEnabled>
             <MenuButton {...register('back', props.onBack)} data-test="back-button">
-                Back
+                Back to Input Selection
             </MenuButton>
             <MenuButton {...register('on save', props.onSave)} data-test="save-button">
                 {props.closeButtonText}

@@ -15,6 +15,7 @@ interface Props {
     onBack?: () => void;
     smooth?: boolean;
     closeButtonText: string;
+    skipText?: string;
     playerNames?: string[];
 }
 
@@ -22,7 +23,7 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 
 const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
-function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, smooth }: Props) {
+function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText }: Props) {
     const [preference, setPreference] = useState<(typeof MicSetupPreference)[number]>(null);
     const [isComplete, setIsComplete] = useState(false);
 
@@ -69,6 +70,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, smoot
                     onPreferenceSelected={storePreference}
                     previouslySelected={previouslySelected}
                     onBack={onBack}
+                    skipText={skipText}
                 />
             )}
             {preference === 'remoteMics' && (

@@ -15,7 +15,8 @@ export default function SelectInputModal({ onClose, playerNames, required }: Pro
                 <SelectInputView
                     onBack={onClose}
                     onFinish={onClose}
-                    closeButtonText={required ? 'Continue to the song' : 'Back to player setup'}
+                    closeButtonText={required ? 'Continue to the song' : 'Continue to player setup'}
+                    skipText={'Back'}
                     playerNames={playerNames}
                 />
             </MenuContainer>

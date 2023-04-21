@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
-import { typography } from 'Elements/cssMixins';
 import { PlayerSetup, SingSetup, SongPreview } from 'interfaces';
 import { useState } from 'react';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import events from 'GameEvents/GameEvents';
 import GameSettings from 'Scenes/SingASong/SongSelection/SongSettings/GameSettings';
 import MicCheck from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck';
@@ -63,36 +61,6 @@ const Container = styled.div`
     align-items: flex-end;
     justify-content: space-between;
     width: 100%;
-
-    h1 {
-        ${typography};
-        margin: 0;
-        text-align: center;
-        font-size: 3.6rem;
-        color: ${styles.colors.text.active};
-    }
-
-    h2 {
-        ${typography};
-        margin: 0;
-        font-size: 1.15rem;
-    }
-
-    h3 {
-        ${typography};
-        margin: 0;
-        font-size: 1.05rem;
-
-        strong {
-            color: ${styles.colors.text.active};
-        }
-    }
-
-    h4 {
-        ${typography};
-        margin: 0;
-        font-size: 0.85rem;
-    }
 
     hr {
         margin: 1rem;

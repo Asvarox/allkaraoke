@@ -11,10 +11,11 @@ import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 interface Props {
     onPreferenceSelected: (preference: (typeof MicSetupPreference)[number]) => void;
     previouslySelected: string | null;
+    skipText?: string;
     onBack?: () => void;
 }
 
-function SelectPreference({ onPreferenceSelected, previouslySelected, onBack }: Props) {
+function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, skipText }: Props) {
     const { register } = useKeyboardNav({ onBackspace: onBack });
     return (
         <>
@@ -106,7 +107,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack }: 
             <MenuButton
                 {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}
                 data-test="skip">
-                Skip
+                {skipText || 'Skip'}
             </MenuButton>
         </>
     );

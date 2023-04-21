@@ -69,7 +69,7 @@ function BuiltIn(props: Props) {
                 <MicCheck names={['These light up when', 'singing is detected']} />
             </UserMediaEnabled>
             <MenuButton {...register('back', props.onBack)} data-test="back-button">
-                Back
+                Back to Input Selection
             </MenuButton>
             <MenuButton {...register('Sing a song', props.onSave, undefined, true)} data-test="save-button">
                 {props.closeButtonText}

@@ -11,6 +11,7 @@ import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSett
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import events from 'GameEvents/GameEvents';
+import { typography } from 'Elements/cssMixins';
 
 interface Props {
     songPreview: SongPreview;
@@ -75,7 +76,10 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         }
     }, [showModal]);
 
-    const { register } = useKeyboardNav({ enabled: keyboardControl && !showModal, onBackspace: onExitKeyboardControl });
+    const { register, focusElement } = useKeyboardNav({
+        enabled: keyboardControl && !showModal,
+        onBackspace: onExitKeyboardControl,
+    });
 
     const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
 
@@ -84,12 +88,18 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
             {showModal && (
                 <SelectInputModal
                     required={!areInputsConfigured}
-                    onClose={() => setShowModal(false)}
+                    onClose={() => {
+                        setShowModal(false);
+
+                        if (areInputsConfigured) {
+                            focusElement('play');
+                        }
+                    }}
                     playerNames={playerSetup.map((setup) => setup.name)}
                 />
             )}
             <PlayerSettingContainer>
-                <h3>Player 1</h3>
+                <PlayerSettingTitle>Player 1</PlayerSettingTitle>
                 <div>
                     <SinglePlayer
                         index={1}
@@ -103,7 +113,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                 </div>
             </PlayerSettingContainer>
             <PlayerSettingContainer>
-                <h3>Player 2</h3>
+                <PlayerSettingTitle>Player 2</PlayerSettingTitle>
                 <div>
                     <SinglePlayer
                         index={2}
@@ -133,14 +143,15 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
 const PlayerSettingContainer = styled.div`
     display: flex;
     flex-direction: row;
-
-    h3 {
-        padding: 1.3rem;
-        font-size: 4.5rem;
-    }
 `;
 
 const PlayButton = styled(Button)<{ focused: boolean }>`
     padding: 0.5rem 9rem;
     font-size: 4.3rem;
+`;
+
+const PlayerSettingTitle = styled.span`
+    ${typography};
+    padding: 1.3rem;
+    font-size: 4.5rem;
 `;
