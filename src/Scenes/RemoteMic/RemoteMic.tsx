@@ -49,8 +49,17 @@ function RemoteMic({ roomId }: Props) {
         inputRef.current?.focus();
     }, []);
 
-    const onConnect = () => {
+    const onConnect = async () => {
         setKeepAwake(true);
+
+        try {
+            await document.body.requestFullscreen();
+            window.screen.orientation.unlock();
+            await window.screen.orientation.lock('portrait');
+        } catch (e) {
+            console.warn(e);
+            throw e;
+        }
     };
 
     const onConfirm = () => {
