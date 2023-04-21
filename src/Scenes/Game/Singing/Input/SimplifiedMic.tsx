@@ -3,6 +3,7 @@ import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
 import InputInterface from './Interface';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';
+import * as Sentry from '@sentry/react';
 
 class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
     private stream: MediaStream | null = null;
@@ -19,42 +20,51 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
-        this.stream = await userMediaService.getUserMedia({
-            audio: {
-                echoCancellation: true,
-                noiseSuppression: true,
-                autoGainControl: false,
-            },
-            video: false,
-        });
+        try {
+            this.stream = await userMediaService.getUserMedia({
+                audio: {
+                    echoCancellation: true,
+                    noiseSuppression: true,
+                    autoGainControl: false,
+                },
+                video: false,
+            });
+            try {
+                this.context = new AudioContext();
 
-        this.context = new AudioContext();
+                const source = this.context.createMediaStreamSource(this.stream);
 
-        const source = this.context.createMediaStreamSource(this.stream);
+                const analyserCh0 = this.context.createAnalyser();
+                analyserCh0.fftSize = 2048;
+                analyserCh0.minDecibels = -100;
+                source.connect(analyserCh0);
 
-        const analyserCh0 = this.context.createAnalyser();
-        analyserCh0.fftSize = 2048;
-        analyserCh0.minDecibels = -100;
-        source.connect(analyserCh0);
+                const strategy = new AubioStrategy();
+                await strategy.init(this.context, analyserCh0.fftSize);
 
-        const strategy = new AubioStrategy();
-        await strategy.init(this.context, analyserCh0.fftSize);
+                this.interval = setInterval(async () => {
+                    const dataCh0 = new Float32Array(analyserCh0.fftSize);
 
-        this.interval = setInterval(async () => {
-            const dataCh0 = new Float32Array(analyserCh0.fftSize);
+                    analyserCh0.getFloatTimeDomainData(dataCh0);
+                    const freq = await strategy.getFrequency(dataCh0);
+                    const volume = this.calculateVolume(dataCh0);
 
-            analyserCh0.getFloatTimeDomainData(dataCh0);
-            const freq = await strategy.getFrequency(dataCh0);
-            const volume = this.calculateVolume(dataCh0);
+                    this.frequencies = [freq, freq];
 
-            this.frequencies = [freq, freq];
+                    this.volumes = [volume, volume];
 
-            this.volumes = [volume, volume];
+                    this.onUpdate(freq, volume);
+                }, this.context.sampleRate / analyserCh0.fftSize);
 
-            this.onUpdate(freq, volume);
-        }, this.context.sampleRate / analyserCh0.fftSize);
-
-        events.micMonitoringStarted.dispatch();
+                events.micMonitoringStarted.dispatch();
+            } catch (e) {
+                Sentry.captureException(e);
+                console.error(e);
+            }
+        } catch (e) {
+            Sentry.captureException(e, { level: 'warning' });
+            console.warn(e);
+        }
     };
 
     public getFrequencies = () => {

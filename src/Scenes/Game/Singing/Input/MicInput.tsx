@@ -3,6 +3,7 @@ import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';
 import InputInterface from './Interface';
+import * as Sentry from '@sentry/react';
 
 class MicInput extends Listener<[[number, number], [number, number]]> implements InputInterface {
     private stream: MediaStream | null = null;
@@ -19,47 +20,59 @@ class MicInput extends Listener<[[number, number], [number, number]]> implements
         if (this.startedMonitoring) return;
         this.startedMonitoring = true;
 
-        this.stream = await userMediaService.getUserMedia({
-            audio: {
-                ...(deviceId ? { deviceId, exact: true } : {}),
-                echoCancellation: echoCancellation,
-            },
-            video: false,
-        });
+        try {
+            this.stream = await userMediaService.getUserMedia({
+                audio: {
+                    ...(deviceId ? { deviceId, exact: true } : {}),
+                    echoCancellation: echoCancellation,
+                },
+                video: false,
+            });
+            try {
+                this.context = new AudioContext();
 
-        this.context = new AudioContext();
+                const source = this.context.createMediaStreamSource(this.stream);
+                const splitter = this.context.createChannelSplitter(2);
+                source.connect(splitter);
 
-        const source = this.context.createMediaStreamSource(this.stream);
-        const splitter = this.context.createChannelSplitter(2);
-        source.connect(splitter);
+                const analyserCh0 = this.context.createAnalyser();
+                analyserCh0.fftSize = 2048;
+                analyserCh0.minDecibels = -100;
+                const analyserCh1 = this.context.createAnalyser();
+                analyserCh1.fftSize = 2048;
+                analyserCh1.minDecibels = -100;
+                splitter.connect(analyserCh0, 0);
+                splitter.connect(analyserCh1, 1);
 
-        const analyserCh0 = this.context.createAnalyser();
-        analyserCh0.fftSize = 2048;
-        analyserCh0.minDecibels = -100;
-        const analyserCh1 = this.context.createAnalyser();
-        analyserCh1.fftSize = 2048;
-        analyserCh1.minDecibels = -100;
-        splitter.connect(analyserCh0, 0);
-        splitter.connect(analyserCh1, 1);
+                const strategy = new AubioStrategy();
+                await strategy.init(this.context, analyserCh0.fftSize);
 
-        const strategy = new AubioStrategy();
-        await strategy.init(this.context, analyserCh0.fftSize);
+                this.interval = setInterval(async () => {
+                    const dataCh0 = new Float32Array(analyserCh0.fftSize);
+                    const dataCh1 = new Float32Array(analyserCh1.fftSize);
 
-        this.interval = setInterval(async () => {
-            const dataCh0 = new Float32Array(analyserCh0.fftSize);
-            const dataCh1 = new Float32Array(analyserCh1.fftSize);
+                    analyserCh0.getFloatTimeDomainData(dataCh0);
+                    analyserCh1.getFloatTimeDomainData(dataCh1);
 
-            analyserCh0.getFloatTimeDomainData(dataCh0);
-            analyserCh1.getFloatTimeDomainData(dataCh1);
+                    this.frequencies = await Promise.all([
+                        strategy.getFrequency(dataCh0),
+                        strategy.getFrequency(dataCh1),
+                    ]);
 
-            this.frequencies = await Promise.all([strategy.getFrequency(dataCh0), strategy.getFrequency(dataCh1)]);
+                    this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
 
-            this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
+                    this.onUpdate(this.frequencies, this.volumes);
+                }, this.context.sampleRate / analyserCh0.fftSize);
 
-            this.onUpdate(this.frequencies, this.volumes);
-        }, this.context.sampleRate / analyserCh0.fftSize);
-
-        events.micMonitoringStarted.dispatch();
+                events.micMonitoringStarted.dispatch();
+            } catch (e) {
+                Sentry.captureException(e);
+                console.error(e);
+            }
+        } catch (e) {
+            Sentry.captureException(e, { level: 'warning' });
+            console.warn(e);
+        }
     };
 
     public getFrequencies = () => {
