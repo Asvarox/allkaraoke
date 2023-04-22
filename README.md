@@ -1,4 +1,4 @@
-# [Karaoke in the browser - play online right now](https://allkaraoke.party/)
+# [Karaoke in the browser - click here to play online](https://allkaraoke.party/)
 
 
 ## Getting started
@@ -65,7 +65,15 @@ For that you might want to keep following command running separately to not have
 yarn build:serve
 ```
 
+## Run unit tests
+
+```
+yarn test
+```
+
 ## Misc docs
+
+Documentation about specific topics can be found in [docs/](docs/) folder.
 
 ### Terminology:
 
@@ -83,8 +91,3 @@ yarn build:serve
 -   `star` - golden note, gives bonus points
 -   `rap` / `freestyle` - notes that are always hit if any singing is detected. Gives reduced points
 
-### Run unit tests
-
-```
-yarn test
-```
