@@ -4,7 +4,7 @@ import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelecti
 import { randomInt } from 'utils/randomValue';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 
-export default function useSongSelection(preselectedSong: string | null) {
+export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
     const { songList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
     const navigate = useSmoothNavigate();
     const [keyboardControl, setKeyboardControl] = useState(true);
@@ -15,6 +15,7 @@ export default function useSongSelection(preselectedSong: string | null) {
         () => setKeyboardControl(false),
         songList.length,
         filters,
+        songsPerRow,
     );
 
     const [preselected, setPreselected] = useState(false);

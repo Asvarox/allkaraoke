@@ -32,6 +32,7 @@ interface Props {
 }
 
 const focusMultiplier = 1.2;
+const MAX_SONGS_PER_ROW = 4;
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
     useBackground(true);
@@ -56,7 +57,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setShowFilters,
         showFilters,
         isLoading,
-    } = useSongSelection(preselectedSong);
+    } = useSongSelection(preselectedSong, MAX_SONGS_PER_ROW);
     useBackgroundMusic(false);
 
     const onSearchSong: KeyHandler = (e) => {
@@ -110,7 +111,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         );
     }
     return (
-        <Container>
+        <Container songsPerRow={MAX_SONGS_PER_ROW}>
             {filters.search ? (
                 <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
             ) : (
@@ -170,12 +171,17 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     );
 }
 
-const Container = styled.div`
+const Container = styled.div<{ songsPerRow: number }>`
     view-transition-name: song-list-container;
     display: flex;
     flex-direction: row;
     max-height: 100vh;
     --song-list-gap: 3.5rem;
+    --song-item-width: ${(props) =>
+        `calc(${100 / props.songsPerRow}% - ((${props.songsPerRow - 1} / ${
+            props.songsPerRow
+        }) * var(--song-list-gap)))`};
+    --song-item-ratio: calc(16 / 9);
 `;
 
 const SongsGroupContainer = styled.div<{ highlight: boolean }>`
@@ -244,21 +250,20 @@ const SongsGroup = styled.div`
 `;
 
 const SongListEntry = styled(SongCard)<{ video: string; focused: boolean }>`
-    flex-basis: calc(25% - ((3 / 4) * var(--song-list-gap)));
+    flex-basis: var(--song-item-width);
     box-sizing: border-box;
-    aspect-ratio: 16/9;
+    aspect-ratio: var(--song-item-ratio);
     padding: 1.3rem;
 
     transition: 300ms;
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
-    // transform: ${(props) => (props.focused ? 'scale(1.1) perspective(50rem) rotateY(7.5deg)' : 'scale(1)')};
     ${(props) => props.focused && focused}
     border: 0.1rem black solid;
     border-radius: 0.5rem;
 
     content-visibility: auto;
-    contain-intrinsic-size: calc((25% - ((3 / 4) * var(--song-list-gap))) / 16 * 9);
+    contain-intrinsic-size: calc(var(--song-item-width) * (1 / var(--song-item-ratio)));
 `;
 
 const LoaderContainer = styled.div`

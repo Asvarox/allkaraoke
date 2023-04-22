@@ -10,9 +10,7 @@ import tuple from 'utils/tuple';
 import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 
-const MAX_SONGS_PER_ROW = 4;
-
-const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
+const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
     const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
     const songIndexMatrix = useMemo(
         () =>
@@ -20,7 +18,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
                 .map(({ songs }) =>
                     chunk(
                         songs.map((song) => song.index),
-                        MAX_SONGS_PER_ROW,
+                        itemsPerRow,
                     ),
                 )
                 .flat(),
@@ -32,7 +30,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
                 .map(({ songs, letter }) =>
                     chunk(
                         songs.map(() => letter),
-                        MAX_SONGS_PER_ROW,
+                        itemsPerRow,
                     ),
                 )
                 .flat(),
@@ -96,7 +94,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = []) => {
                     newX = 0;
                 }
             }
-            return [newX % MAX_SONGS_PER_ROW, (songIndexMatrix.length + newY) % songIndexMatrix.length];
+            return [newX % itemsPerRow, (songIndexMatrix.length + newY) % songIndexMatrix.length];
         });
     };
 
@@ -112,6 +110,7 @@ export const useSongSelectionKeyboardNavigation = (
     onEnter: () => void,
     songCount: number,
     appliedFilters: AppliedFilters,
+    songsPerRow: number,
 ) => {
     const navigate = useSmoothNavigate();
     // We need to record how user entered (from which "side") and how left and based on that update the selection.
@@ -122,7 +121,7 @@ export const useSongSelectionKeyboardNavigation = (
     const [arePlaylistsVisible, leavingKey] = showPlaylistsState;
 
     const [focusedSong, focusedGroup, cursorPosition, moveCursor, moveToSong, isAtLastColumn] =
-        useTwoDimensionalNavigation(groupedSongs);
+        useTwoDimensionalNavigation(groupedSongs, songsPerRow);
     const isAtFirstColumn = cursorPosition[0] === 0;
 
     const handleEnter = () => {
