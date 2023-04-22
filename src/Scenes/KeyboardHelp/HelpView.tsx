@@ -4,6 +4,7 @@ import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import createPersistedState from 'use-persisted-state';
 import { HelpEntry } from './Context';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     help: HelpEntry | undefined;
@@ -17,6 +18,13 @@ export default function KeyboardHelpView({ help }: Props) {
     useHotkeys('h', () => setIsVisible(!isVisible), undefined, [isVisible]);
 
     const helps = Object.entries(help ?? {}).filter(([, value]) => value !== undefined);
+
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+
+    if (mobilePhoneMode) {
+        return null;
+    }
+
     return (
         <>
             {isVisible && !!helps.length && (
