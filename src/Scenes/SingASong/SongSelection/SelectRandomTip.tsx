@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import { useEffect, useState } from 'react';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     keyboardControl: boolean;
@@ -19,6 +20,13 @@ export default function SelectRandomTip({ keyboardControl }: Props) {
             return () => clearTimeout(timeout);
         }
     }, [keyboardControl]);
+
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+
+    if (mobilePhoneMode) {
+        return null;
+    }
+
     return (
         <Container visible={isVisible}>
             Can't decide? Click <Kbd>Shift</Kbd> + <Kbd>R</Kbd> to pick random song

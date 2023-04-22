@@ -9,6 +9,7 @@ import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     song: Song;
@@ -37,6 +38,7 @@ function GameOverlay({
     videoPlayerRef,
     isPauseMenuVisible,
 }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const canvas = useRef<HTMLCanvasElement | null>(null);
     const drawer = useRef<CanvasDrawing | null>(null);
     const lyrics = useRef<HTMLDivElement | null>(null);
@@ -81,16 +83,14 @@ function GameOverlay({
             <GameCanvas>
                 <canvas ref={canvas} width={overlayWidth} height={overlayHeight} />
             </GameCanvas>
-            {effectsEnabled && (
+            {!mobilePhoneMode && effectsEnabled && (
                 <>
                     <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} />
                     <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />
                 </>
             )}
             <DurationBar players={players} />
-            <div ref={lyrics}>
-                <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
-            </div>
+            {!mobilePhoneMode && <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />}
             <Scores>
                 {effectsEnabled && (
                     <>
@@ -103,7 +103,9 @@ function GameOverlay({
                     </>
                 )}
             </Scores>
-            <Lyrics player={1} playerChanges={playerChanges} bottom effectsEnabled={effectsEnabled} />
+            <div ref={lyrics}>
+                <Lyrics player={1} playerChanges={playerChanges} bottom effectsEnabled={effectsEnabled} />
+            </div>
         </Screen>
     );
 }

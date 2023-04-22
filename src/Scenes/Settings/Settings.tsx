@@ -6,6 +6,7 @@ import {
     FPSCountSetting,
     GraphicSetting,
     GraphicsLevel,
+    MobilePhoneModeSetting,
     useSettingValue,
 } from 'Scenes/Settings/SettingsState';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
@@ -24,8 +25,9 @@ function Settings(props: Props) {
 
     const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
     const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
+    const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
-    const [camera, setCamera] = useState<null | boolean>(null);
+    const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
     useEffect(() => {
         return CameraManager.addListener((status) => {
             setCamera(status);
@@ -38,11 +40,10 @@ function Settings(props: Props) {
         CameraManager.requestPermissions().then(() => setIsRequestInProgress(false));
     };
 
-    let cameraValue: ReactNode = <></>;
+    let cameraValue: ReactNode = 'Disabled';
     if (isRequestInProgress) cameraValue = <CircularProgress size="0.9em" />;
     else if (camera === null) cameraValue = 'Click to enable';
     else if (camera) cameraValue = 'Enabled';
-    else cameraValue = 'Disabled';
 
     return (
         <MenuWithLogo>
@@ -68,6 +69,14 @@ function Settings(props: Props) {
                 data-test="camera-access"
             />
             <h4>Take pictures during the game and show them afterwards. The images are not stored anywhere.</h4>
+            <hr />
+            <Switcher
+                {...register('mobilePhoneMode', () => setMobilePhoneMode(!mobilePhoneMode))}
+                label="Mobile Phone Mode"
+                value={mobilePhoneMode ? 'Yes' : 'No'}
+                data-test="mobile-phone-mode"
+            />
+            <h4>Adjust the game to a smaller screen. Disables option to sing in duets.</h4>
             <hr />
             <MenuButton {...register('go back', goBack)} data-test="back-button">
                 Return To Main Menu

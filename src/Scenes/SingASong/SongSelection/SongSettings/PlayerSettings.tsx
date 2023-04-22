@@ -8,7 +8,7 @@ import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
-import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import events from 'GameEvents/GameEvents';
 import { typography } from 'Elements/cssMixins';
@@ -43,7 +43,7 @@ function useDefaultPlayerName(index: number): string {
 
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
     const defaultNames = [useDefaultPlayerName(0), useDefaultPlayerName(1)];
-    const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
+    const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
 
     const playerNames = useMemo<string[]>(
         () => JSON.parse(sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) ?? [],
@@ -54,9 +54,10 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         onNextStep(playerSetup.map((setup, index) => ({ ...setup, name: setup.name || defaultNames[index] })));
     };
 
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const [playerSetup, setPlayerSetup] = useState<[PlayerSetup, PlayerSetup]>([
         { name: '', track: 0 },
-        { name: '', track: Math.min(1, songPreview.tracksCount - 1) },
+        { name: '', track: mobilePhoneMode ? 0 : Math.min(1, songPreview.tracksCount - 1) },
     ]);
 
     const updatePlayer = (index: number) => (setup: PlayerSetup) => {

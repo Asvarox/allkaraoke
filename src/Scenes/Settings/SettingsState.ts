@@ -53,6 +53,9 @@ export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>(FPS_COUN
 const EXCLUDED_LANGUAGES_KEY = 'EXCLUDED_LANGUAGES_KEY';
 export const ExcludedLanguagesSetting = new Setting<string[] | null>(EXCLUDED_LANGUAGES_KEY, null);
 
+const MOBILE_PHONE_MODE_KEY = 'MOBILE_PHONE_MODE_KEY';
+export const MobilePhoneModeSetting = new Setting<boolean | null>(MOBILE_PHONE_MODE_KEY, null);
+
 export function useSettingValue<T>(value: Setting<T>) {
     const [currentValue, setCurrentValue] = useState(value.get());
 

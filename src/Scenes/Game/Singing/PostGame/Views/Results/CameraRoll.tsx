@@ -20,7 +20,7 @@ function CameraRoll({ ...props }: Props) {
     }, []);
 
     useEffect(() => {
-        if (video.current) video.current.playbackRate = 8;
+        if (video.current) video.current.playbackRate = 16;
     }, [videoSrc]);
 
     return (

@@ -13,7 +13,7 @@ import * as Sentry from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
-import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
 import styles from 'styles';
 import { ErrorFallback } from 'Elements/ErrorFallback';
@@ -22,8 +22,10 @@ import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import { useEffect } from 'react';
+import { css, Global } from '@emotion/react';
 
 function App() {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
     const [location, navigate] = useLocation();
 
@@ -37,11 +39,18 @@ function App() {
 
     return (
         <>
+            <Global
+                styles={css`
+                    :root {
+                        --zoom-multipler: ${mobilePhoneMode ? 1.5 : 1};
+                    }
+                `}
+            />
             <Sentry.ErrorBoundary fallback={ErrorFallback}>
                 <LayoutWithBackgroundProvider>
                     <KeyboardHelpProvider>
                         <Router>
-                            <GameScreens>
+                            <GameScreens mobileMode={!!mobilePhoneMode}>
                                 <Toolbar />
                                 <Route path="/game/:file?">
                                     {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
@@ -72,7 +81,7 @@ function App() {
     );
 }
 
-const GameScreens = styled.div`
+const GameScreens = styled.div<{ mobileMode: boolean }>`
     ${styles};
 `;
 

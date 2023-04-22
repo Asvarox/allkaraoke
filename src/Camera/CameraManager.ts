@@ -79,6 +79,8 @@ class CameraManager extends Listener<[boolean]> {
     public clearData = () => {
         this.videoData.length = 0;
     };
+
+    public getPermissionStatus = () => this.permissionGranted;
 }
 
 export default new CameraManager();

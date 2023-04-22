@@ -2,12 +2,18 @@ import logo from 'Elements/logo.gif';
 import pride from 'Elements/pride.png';
 import dotparty from 'Elements/dotparty.gif';
 import styled from '@emotion/styled';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 if (window.location.search.includes('pride')) {
     sessionStorage.setItem('pride', 'true');
 }
 
 export default function Logo(props: any) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+
+    if (mobilePhoneMode) {
+        return null;
+    }
     return (
         <Container>
             {sessionStorage.getItem('pride') === 'true' && <PrideLogo src={pride} alt="AllKaraoke Pride logo part 1" />}

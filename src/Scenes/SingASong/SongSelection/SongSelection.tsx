@@ -25,6 +25,7 @@ import { css } from '@emotion/react';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import useBlockScroll from 'hooks/useBlockScroll';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
@@ -35,6 +36,9 @@ const focusMultiplier = 1.2;
 const MAX_SONGS_PER_ROW = 4;
 
 export default function SongSelection({ onSongSelected, preselectedSong }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+    const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
+
     useBackground(true);
     useBlockScroll();
     const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
@@ -57,7 +61,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setShowFilters,
         showFilters,
         isLoading,
-    } = useSongSelection(preselectedSong, MAX_SONGS_PER_ROW);
+    } = useSongSelection(preselectedSong, songsPerRow);
     useBackgroundMusic(false);
 
     const onSearchSong: KeyHandler = (e) => {
@@ -111,7 +115,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         );
     }
     return (
-        <Container songsPerRow={MAX_SONGS_PER_ROW}>
+        <Container songsPerRow={songsPerRow}>
             {filters.search ? (
                 <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
             ) : (
@@ -181,7 +185,7 @@ const Container = styled.div<{ songsPerRow: number }>`
         `calc(${100 / props.songsPerRow}% - ((${props.songsPerRow - 1} / ${
             props.songsPerRow
         }) * var(--song-list-gap)))`};
-    --song-item-ratio: calc(16 / 9);
+    --song-item-ratio: calc(16 / 9 * (4 / ${(props) => props.songsPerRow}));
 `;
 
 const SongsGroupContainer = styled.div<{ highlight: boolean }>`

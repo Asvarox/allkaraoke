@@ -7,6 +7,7 @@ import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     player: number;
@@ -16,6 +17,7 @@ interface Props {
 }
 
 function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const playerColor = styles.colors.players[player].text;
     const thisPlayerChanges = playerChanges[GameState.getPlayer(player).getTrackIndex()] ?? [];
     const section = GameState.getPlayer(player).getCurrentSection();
@@ -40,7 +42,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-            <VolumeIndicator color={playerColor} volume={playerVolume} />
+            {!mobilePhoneMode && <VolumeIndicator color={playerColor} volume={playerVolume} />}
             {timeToNextChange < Infinity && (
                 <PassTheMicProgress
                     color={playerColor}

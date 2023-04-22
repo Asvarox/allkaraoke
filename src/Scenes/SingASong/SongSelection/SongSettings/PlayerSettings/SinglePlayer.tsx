@@ -4,6 +4,7 @@ import { Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useRef } from 'react';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     index: number;
@@ -26,6 +27,7 @@ export default function SinglePlayer({
     setup,
     defaultName,
 }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const p1NameRef = useRef<HTMLInputElement | null>(null);
 
     const togglePlayerTrack = () => onChange({ ...setup, track: (setup.track + 1) % songPreview.tracksCount });
@@ -44,7 +46,7 @@ export default function SinglePlayer({
                 placeholder={defaultName}
                 data-test={`player-${index}-name`}
             />
-            {songPreview.tracksCount > 1 && (
+            {!mobilePhoneMode && songPreview.tracksCount > 1 && (
                 <Track
                     {...register(`p${index} track`, togglePlayerTrack, 'Change track')}
                     label="Track"
