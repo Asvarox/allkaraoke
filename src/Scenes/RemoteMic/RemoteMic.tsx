@@ -58,7 +58,6 @@ function RemoteMic({ roomId }: Props) {
             await window.screen.orientation.lock('portrait');
         } catch (e) {
             console.warn(e);
-            throw e;
         }
     };
 
