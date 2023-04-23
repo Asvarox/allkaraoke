@@ -9,6 +9,7 @@ import { useBackground } from 'Elements/LayoutWithBackground';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { MouseEventHandler, useEffect } from 'react';
 import MenuWithLogo from 'Elements/MenuWithLogo';
+import FacebookLink from 'Scenes/Welcome/FacebookLink';
 
 function Welcome() {
     useEffect(() => {
@@ -41,6 +42,7 @@ function Welcome() {
                     </a>
                 </span>
             </BackgroundMusicCredit>
+            <FacebookLink />
             <>
                 <Link href="/game/" onClick={handleClick('/game/')}>
                     <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game/'))}>

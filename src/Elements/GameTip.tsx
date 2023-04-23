@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { randomInt } from 'utils/randomValue';
 import { QrCode2 } from '@mui/icons-material';
+import { randomInt } from 'utils/randomValue';
 
 const data = [
     <>
@@ -66,6 +66,7 @@ interface Props {
 
 export const GameTip = ({ as = 'h4', ...restProps }: Props) => {
     const randomValue = useRef(randomInt(0, data.length - 1));
+    // const randomValue = useRef(randomInt(0, 0));
 
     const Component = as;
     return <Component {...restProps}>{data[randomValue.current]}</Component>;
