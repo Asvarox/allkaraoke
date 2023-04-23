@@ -44,7 +44,7 @@ function WaitForReadiness({ onFinish }: Props) {
             // Only start the music if waiting for readiness takes some time
             await sleep(250);
             if (!allInputsReady) {
-                audio?.current?.play();
+                await audio?.current?.play();
             }
 
             await Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]);
