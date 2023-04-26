@@ -4,6 +4,12 @@ import { randomInt } from 'utils/randomValue';
 
 const data = [
     <>
+        You can follow the updates and give feedback on the game through the Facebook Page:{' '}
+        <a href="https://www.facebook.com/allkaraoke.party" target="_blank" rel="noreferrer">
+            <strong>fb.com/AllKaraoke.Party</strong>
+        </a>
+    </>,
+    <>
         Start typing a name of a song in <strong>Song Selection</strong> to active Search feature
     </>,
     <>
@@ -34,9 +40,6 @@ const data = [
     </>,
     <>
         The <strong>white pulse</strong> around selected song in Song Selection tries to match song's tempo
-    </>,
-    <>
-        The global karaoke market has been estimated to be worth nearly <strong>$10 billion</strong>
     </>,
     <>
         Entire game (besides add/edit song) is navigable with <strong>Keyboard</strong>

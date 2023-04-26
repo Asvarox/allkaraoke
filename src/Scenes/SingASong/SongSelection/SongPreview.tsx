@@ -6,7 +6,6 @@ import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useRef, 
 import { useSongStats } from 'Songs/stats/hooks';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import {
     SongCard,
     SongCardBackground,
@@ -266,12 +265,6 @@ const SongInfo = styled.div<{ active: boolean }>`
 const SongAuthor = styled(SongListEntryDetailsTitle)`
     font-size: 3rem;
     margin-top: 3rem;
-
-    a {
-        text-decoration: none;
-        -webkit-text-stroke: thin black;
-        color: ${styles.colors.text.active};
-    }
 `;
 
 export const SongListEntryStats = ({ song }: { song: SongPreview }) => {

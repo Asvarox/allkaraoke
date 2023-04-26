@@ -45,6 +45,7 @@ export default css`
     }
 
     a {
+        ${typography};
         color: ${styles.colors.text.active};
     }
 

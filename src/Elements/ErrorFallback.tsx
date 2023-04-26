@@ -17,6 +17,10 @@ export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
                 Help me fix it by reporting what exactly has happened at{' '}
                 <a href="https://github.com/Asvarox/allkaraoke" target="_blank" rel="noreferrer">
                     GitHub
+                </a>{' '}
+                or{' '}
+                <a href="https://www.facebook.com/allkaraoke.party" target="_blank" rel="noreferrer">
+                    Facebook
                 </a>
             </h3>
             <MenuButton onClick={resetError}>Reset Error</MenuButton>

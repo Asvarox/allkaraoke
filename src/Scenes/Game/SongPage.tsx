@@ -95,12 +95,6 @@ export const ContentElement = styled.span`
     padding: 0.5rem 2rem;
     margin: 0 0 1rem 2rem;
     font-weight: bold;
-
-    a {
-        text-decoration: none;
-        -webkit-text-stroke: thin black;
-        color: ${styles.colors.text.active};
-    }
 `;
 
 const SongTitle = styled(ContentElement)`
