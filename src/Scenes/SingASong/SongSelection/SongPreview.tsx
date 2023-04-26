@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { focused } from 'Elements/cssMixins';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
 import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
@@ -80,10 +79,12 @@ export default function SongPreviewComponent({
                 <SongBPMIndicator width={finalWidth} height={finalHeight} left={left} top={top} song={songPreview} />
             )}
             <SongPreviewContainer
+                song={songPreview}
                 top={top}
                 left={left}
                 width={finalWidth}
                 height={finalHeight}
+                showVideo={showVideo}
                 active={active}
                 data-test="song-preview"
                 data-song={songPreview.file}>
@@ -167,7 +168,7 @@ export default function SongPreviewComponent({
     );
 }
 
-const BaseSongPreviewContainer = styled.div<{ width: number; height: number; active: boolean }>`
+const BaseSongPreviewContainer = styled.div<{ width: number; height: number; active: boolean; showVideo: boolean }>`
     width: ${(props) => props.width}px;
     height: ${(props) => props.height}px;
     position: absolute;
@@ -175,29 +176,50 @@ const BaseSongPreviewContainer = styled.div<{ width: number; height: number; act
     overflow: hidden;
     padding: 0;
 
-    ${(props) => (props.active ? 'position: fixed;' : 'transform: scale(1.2);')}
+    ${(props) => props.active && 'position: fixed;'};
+    ${(props) => !props.active && props.showVideo && 'animation: rhythmPulse 1s infinite'};
     ${(props) => !props.active && 'pointer-events: none;'}
     ${(props) => !props.active && 'border-radius: 0.5rem;'}
+
+
+    @keyframes rhythmPulse {
+        0% {
+            transform: scale(1.2);
+        }
+        25% {
+            transform: scale(1.25);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
 `;
 
 interface SongPreviewContainerProps
-    extends PropsWithChildren<{
-        top: number;
-        left: number;
-        active: boolean;
-        width: number;
-        height: number;
-    }> {}
+    extends ComponentProps<typeof BaseSongPreviewContainer>,
+        PropsWithChildren<{
+            top: number;
+            left: number;
+            song: SongPreview;
+        }> {}
 
-const SongPreviewContainer = (props: SongPreviewContainerProps) => (
-    <BaseSongPreviewContainer
-        style={{
-            top: props.active ? `calc(50vh - ${props.height}px / 2)` : props.top,
-            left: props.active ? 0 : props.left,
-        }}
-        {...props}
-    />
-);
+const SongPreviewContainer = (props: SongPreviewContainerProps) => {
+    const realBpm = props.song.realBpm ?? (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
+
+    return (
+        <BaseSongPreviewContainer
+            style={{
+                top: props.active ? `calc(50vh - ${props.height}px / 2)` : props.top,
+                left: props.active ? 0 : props.left,
+                animationDuration: `${60 / realBpm}s`,
+            }}
+            {...props}
+        />
+    );
+};
 
 const Backdrop = styled.div`
     position: fixed;
@@ -230,7 +252,6 @@ const ContentBase = styled(SongCardContainer)<{
     padding: ${(props) => (props.active ? '3.1rem' : '1.3rem')};
     ${(props) => props.blurBackground && 'backdrop-filter: blur(1rem);'}
 
-    ${(props) => props.focus && !props.active && props.isVideoPlaying && focused}
     ${(props) => props.focus && !props.active && props.isVideoPlaying && 'border: 0.1rem solid black;'}
     border-radius: 0.5rem;
 `;
@@ -295,7 +316,7 @@ const BaseSongBPMIndicator = styled.div<{ width: number; height: number }>`
             opacity: 1;
         }
         100% {
-            transform: scale(1.5);
+            transform: scale(1.45);
             opacity: 0;
         }
     }
