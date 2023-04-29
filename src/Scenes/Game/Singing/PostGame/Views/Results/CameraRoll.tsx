@@ -25,7 +25,7 @@ function CameraRoll({ ...props }: Props) {
 
     return (
         <Container {...props}>
-            <Video src={videoSrc} ref={video} loop autoPlay />
+            <Video src={videoSrc} ref={video} loop autoPlay className="ph-no-capture" />
         </Container>
     );
 }

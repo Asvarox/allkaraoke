@@ -71,6 +71,7 @@ function WaitForReadiness({ onFinish }: Props) {
                     <PlayerList>
                         {playerStatuses.map(({ confirmed, name }, index) => (
                             <PlayerEntry
+                                className="ph-no-capture"
                                 key={index}
                                 data-test="player-confirm-status"
                                 data-name={name}

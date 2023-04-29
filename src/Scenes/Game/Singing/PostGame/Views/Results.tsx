@@ -60,7 +60,10 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
     return (
         <>
             <ScoresContainer>
-                <ScoreTextPlayer color={styles.colors.players[0].text} data-test="player-1-name">
+                <ScoreTextPlayer
+                    color={styles.colors.players[0].text}
+                    data-test="player-1-name"
+                    className="ph-no-capture">
                     {players[0].name}
                 </ScoreTextPlayer>
                 <br />
@@ -85,7 +88,10 @@ function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
                     <HighScoreBadge highscore={isAnimDone && isHighScore(players[0].name)}>High score!</HighScoreBadge>
                 </ScoreTextScore>
                 <br />
-                <ScoreTextPlayer color={styles.colors.players[1].text} data-test="player-2-name">
+                <ScoreTextPlayer
+                    color={styles.colors.players[1].text}
+                    data-test="player-2-name"
+                    className="ph-no-capture">
                     {players[1].name}
                 </ScoreTextPlayer>
             </ScoresContainer>

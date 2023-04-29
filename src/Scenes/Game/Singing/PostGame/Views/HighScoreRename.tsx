@@ -24,6 +24,7 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
 
     return (
         <Autocomplete
+            className="ph-no-capture"
             options={playerNames}
             onChange={setNewName}
             onBlur={onBlur}

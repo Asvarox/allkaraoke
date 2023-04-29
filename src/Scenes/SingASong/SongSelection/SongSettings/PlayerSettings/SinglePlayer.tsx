@@ -37,6 +37,7 @@ export default function SinglePlayer({
     return (
         <>
             <PlayerName
+                className="ph-no-capture"
                 value={setup.name}
                 options={playerNames}
                 onChange={onNameChange}

@@ -50,7 +50,7 @@ events.remoteMicConnected.subscribe(({ name, silent }) => {
     if (!silent) {
         toast.success(
             <>
-                Remote microphone <b>{name}</b> connected!
+                Remote microphone <b className="ph-no-capture">{name}</b> connected!
             </>,
         );
     }
@@ -59,7 +59,7 @@ events.remoteMicDisconnected.subscribe(({ name }, silent) => {
     if (!silent) {
         toast.warning(
             <>
-                Remote microphone <b>{name}</b> disconnected!
+                Remote microphone <b className="ph-no-capture">{name}</b> disconnected!
             </>,
         );
     }
