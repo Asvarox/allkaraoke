@@ -5,6 +5,7 @@ import { useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 import { isAfter } from 'date-fns';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { captureException } from '@sentry/react';
 
 export interface SongGroup {
     letter: string;
@@ -144,14 +145,19 @@ export default function useSongList() {
         }
 
         filteredList.forEach((song, index) => {
-            const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
-            let group = groups.find((group) => group.letter === firstCharacter);
-            if (!group) {
-                group = { letter: firstCharacter, songs: [] };
-                groups.push(group);
-            }
+            try {
+                const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
+                let group = groups.find((group) => group.letter === firstCharacter);
+                if (!group) {
+                    group = { letter: firstCharacter, songs: [] };
+                    groups.push(group);
+                }
 
-            group.songs.push({ index: index, song });
+                group.songs.push({ index: index, song });
+            } catch (e) {
+                console.error(e);
+                captureException(e);
+            }
         });
 
         return groups;

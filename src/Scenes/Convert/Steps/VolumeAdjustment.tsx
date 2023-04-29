@@ -10,27 +10,30 @@ interface Props {
     videoId: string;
 }
 
-export default function VolumeAdjustment(props: Props) {
+export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
     const player = useRef<YouTube | null>(null);
     const reference = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {
-        player.current?.getInternalPlayer().setVolume(props.data.volume * 100);
-    }, [props.data.volume, player.current]);
+        if (data.volume === 0) {
+            onChange({ ...data, volume: 0.5 });
+        }
+        player.current?.getInternalPlayer().setVolume(data.volume * 100);
+    }, [data.volume]);
 
     useEffect(() => {
         const interval = setInterval(async () => {
             const currentVolume = await player.current?.getInternalPlayer().getVolume();
 
-            if (currentVolume !== props.data.volume * 100) {
-                props.onChange({ ...props.data, volume: currentVolume / 100 });
+            if (currentVolume !== data.volume * 100) {
+                onChange({ ...data, volume: currentVolume / 100 });
             }
         }, 500);
 
         return () => {
             clearInterval(interval);
         };
-    }, [props.data, props.onChange, player.current]);
+    }, [data, onChange]);
 
     const [isPlayerPlaying, setIsPlayerPlaying] = useState(false);
     const [isReferencePlaying, setIsReferencePlaying] = useState(false);
@@ -42,7 +45,7 @@ export default function VolumeAdjustment(props: Props) {
                 <Box>
                     <h4>Song</h4>
                     <YouTube
-                        videoId={props.videoId}
+                        videoId={videoId}
                         ref={player}
                         onPlay={() => {
                             setIsPlayerPlaying(true);
@@ -83,7 +86,7 @@ export default function VolumeAdjustment(props: Props) {
                     />
                 </Box>
             </Box>
-            <h4>Final Song Volume ({props.data.volume * 100})</h4>
+            <h4>Final Song Volume ({data.volume * 100})</h4>
             <Box>
                 <Slider
                     data-test="volume"
@@ -91,8 +94,8 @@ export default function VolumeAdjustment(props: Props) {
                     max={1}
                     step={0.01}
                     aria-label="Volume"
-                    value={props.data.volume}
-                    onChange={(e, value) => props.onChange({ ...props.data, volume: +value })}
+                    value={data.volume}
+                    onChange={(e, value) => onChange({ ...data, volume: +value })}
                 />
             </Box>
         </Box>

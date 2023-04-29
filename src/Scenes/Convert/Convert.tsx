@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Alert, AlertTitle, Box, Button, Step, StepLabel, StyledEngineProvider } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Step, StepButton, StyledEngineProvider } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { Song } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -35,10 +35,13 @@ export default function Convert({ song }: Props) {
         video: song?.video ? `https://www.youtube.com/watch?v=${song.video}` : '',
     });
     const [metadataEntity, setMetadataEntity] = useState<SongMetadataEntity>({
-        realBpm: String(song?.realBpm) ?? '',
+        artist: song?.artist ?? '',
+        title: song?.title ?? '',
+        realBpm: song?.realBpm ? String(song.realBpm) : '',
         year: song?.year ?? '',
         language: song?.language ?? '',
-        volume: song?.volume ?? 0.5,
+        volume: song?.volume ?? 0,
+        genre: song?.genre,
     });
 
     const [editedSong, setEditedSong] = useState<Song | undefined>(song);
@@ -107,7 +110,7 @@ export default function Convert({ song }: Props) {
                     sourceUrl: conversionResult.sourceUrl!,
                 }));
             }
-            (['year', 'language', 'realBpm'] as const).forEach((property) => {
+            (['year', 'language', 'realBpm', 'genre', 'artist', 'title', 'volume'] as const).forEach((property) => {
                 if (!!conversionResult[property] && !metadataEntity[property]) {
                     setMetadataEntity((current) => ({
                         ...current,
@@ -116,7 +119,20 @@ export default function Convert({ song }: Props) {
                 }
             });
         }
-    }, [conversionResult, metadataEntity.year, metadataEntity.language, basicData.sourceUrl, authorAndVid.video]);
+    }, [
+        conversionResult,
+        metadataEntity.year,
+        metadataEntity.language,
+        metadataEntity.realBpm,
+        metadataEntity.genre,
+        metadataEntity.artist,
+        metadataEntity.volume,
+        metadataEntity.title,
+        basicData.sourceUrl,
+        authorAndVid.video,
+    ]);
+
+    console.log(metadataEntity.volume);
 
     const isBasicInfoCompleted = !!basicData.txtInput || !!song;
     const isAuthorAndVidCompleted = !!authorAndVid.video;
@@ -144,18 +160,26 @@ export default function Convert({ song }: Props) {
                         </Link>
                     </div>
                 )}
-                <Stepper activeStep={currentStep} sx={{ mb: 2 }}>
+                <Stepper activeStep={currentStep} sx={{ mb: 2 }} nonLinear={!!song}>
                     <Step key={0} completed={isBasicInfoCompleted}>
-                        <StepLabel>Basic Info</StepLabel>
+                        <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
+                            Basic Info
+                        </StepButton>
                     </Step>
                     <Step key={1} completed={isAuthorAndVidCompleted}>
-                        <StepLabel>Author and video data</StepLabel>
+                        <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
+                            Author and video data
+                        </StepButton>
                     </Step>
                     <Step key={2}>
-                        <StepLabel>Sync lyrics to video</StepLabel>
+                        <StepButton color="inherit" onClick={() => setCurrentStep(2)}>
+                            Sync lyrics to video
+                        </StepButton>
                     </Step>
                     <Step key={3}>
-                        <StepLabel>Fill song metadata</StepLabel>
+                        <StepButton color="inherit" onClick={() => setCurrentStep(3)}>
+                            Fill song metadata
+                        </StepButton>
                     </Step>
                 </Stepper>
 
@@ -172,6 +196,11 @@ export default function Convert({ song }: Props) {
                     onSubmit={(e) => {
                         e.preventDefault();
                         if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
+                        else if (steps.at(currentStep) === 'metadata') {
+                            SongDao.store(finalSong!).then(() =>
+                                navigate(`/edit?search=${encodeURIComponent(finalSong!.title)}`),
+                            );
+                        }
                     }}>
                     {steps.at(currentStep) === 'basic-data' && (
                         <BasicData
@@ -220,11 +249,6 @@ export default function Convert({ song }: Props) {
                         {steps.at(currentStep) === 'metadata' ? (
                             <Button
                                 data-test="save-button"
-                                onClick={() => {
-                                    SongDao.store(finalSong!).then(() =>
-                                        navigate(`/edit?search=${encodeURIComponent(finalSong!.title)}`),
-                                    );
-                                }}
                                 sx={{ mt: 2, align: 'right' }}
                                 type="submit"
                                 variant={'contained'}>
@@ -249,8 +273,7 @@ export default function Convert({ song }: Props) {
 
 const Container = styled.div`
     background: white;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
     width: 1260px;
     height: 100%;
 `;

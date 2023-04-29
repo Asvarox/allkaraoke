@@ -3,7 +3,7 @@ import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';
 import InputInterface from './Interface';
-import * as Sentry from '@sentry/react';
+import { captureException } from '@sentry/react';
 
 class MicInput extends Listener<[[number, number], [number, number]]> implements InputInterface {
     private stream: MediaStream | null = null;
@@ -66,11 +66,11 @@ class MicInput extends Listener<[[number, number], [number, number]]> implements
 
                 events.micMonitoringStarted.dispatch();
             } catch (e) {
-                Sentry.captureException(e);
+                captureException(e);
                 console.error(e);
             }
         } catch (e) {
-            Sentry.captureException(e, { level: 'warning' });
+            captureException(e, { level: 'warning' });
             console.warn(e);
         }
     };

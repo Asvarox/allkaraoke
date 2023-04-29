@@ -1,7 +1,7 @@
 import { range } from 'lodash-es';
 import { InputSource } from './interfaces';
 import userMediaService from 'UserMedia/userMediaService';
-import * as Sentry from '@sentry/react';
+import { captureException } from '@sentry/react';
 
 interface NameMapper {
     test: (label: string, channel: number, channels: number) => boolean;
@@ -54,7 +54,7 @@ export class MicrophoneInputSource {
         try {
             devices = await userMediaService.enumerateDevices();
         } catch (e) {
-            Sentry.captureException(e, { level: 'warning' });
+            captureException(e, { level: 'warning' });
             console.warn(e);
         }
 

@@ -1,6 +1,7 @@
-import { Box, Button, TextField, Tooltip } from '@mui/material';
+import { Box, TextField } from '@mui/material';
 import YouTube from 'react-youtube';
 import { getVideoId } from 'Songs/utils/convertTxtToSong';
+import { inputAction } from 'Scenes/Convert/Elements';
 
 export interface AuthorAndVidEntity {
     author: string;
@@ -59,27 +60,7 @@ export default function AuthorAndVid(props: Props) {
                     size="small"
                     helperText="Link to YouTube video, eg https://www.youtube.com/watch?v=xxxxxxxxx"
                     name="videoUrl"
-                    InputProps={{
-                        endAdornment: (
-                            <Tooltip
-                                title={
-                                    isSearchableForVideo
-                                        ? 'Open YouTube search results for the song'
-                                        : 'Artist or title of the song is unknown'
-                                }>
-                                <span>
-                                    <Button
-                                        data-test="search-video"
-                                        color={'secondary'}
-                                        variant={'contained'}
-                                        onClick={searchForVideo}
-                                        disabled={!isSearchableForVideo}>
-                                        Search&nbsp;for&nbsp;video
-                                    </Button>
-                                </span>
-                            </Tooltip>
-                        ),
-                    }}
+                    {...inputAction(searchForVideo, isSearchableForVideo)}
                 />
             </Box>
             {videoId && (

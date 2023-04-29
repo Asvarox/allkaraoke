@@ -9,7 +9,7 @@ import Game from './Scenes/Game/Game';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import RemoteMic from 'Scenes/RemoteMic/RemoteMic';
 import SelectInput from './Scenes/SelectInput/SelectInput';
-import * as Sentry from '@sentry/react';
+import { ErrorBoundary } from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
@@ -46,7 +46,7 @@ function App() {
                     }
                 `}
             />
-            <Sentry.ErrorBoundary fallback={ErrorFallback}>
+            <ErrorBoundary fallback={ErrorFallback}>
                 <LayoutWithBackgroundProvider>
                     <KeyboardHelpProvider>
                         <Router>
@@ -76,7 +76,7 @@ function App() {
                         </Router>
                     </KeyboardHelpProvider>
                 </LayoutWithBackgroundProvider>
-            </Sentry.ErrorBoundary>
+            </ErrorBoundary>
         </>
     );
 }

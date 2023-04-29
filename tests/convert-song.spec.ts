@@ -22,6 +22,9 @@ const FINAL_TRACKS = 2;
 const FINAL_TRACK_1_SECTIONS = 10;
 const FINAL_VOLUME = '0.75';
 const TRACK_2_NAME = 'Track 2 Name';
+const FINAL_ARTIST = 'Final Artist';
+const FINAL_TITLE = 'Final Title';
+const FINAL_GENRE = 'Final Genre';
 
 test('Convert song', async ({ page }) => {
     test.slow();
@@ -50,7 +53,7 @@ test('Convert song', async ({ page }) => {
     await page.getByTestId('next-button').click();
 
     // Author and vid
-    await expect(page.getByTestId('search-video')).not.toBeDisabled();
+    await expect(page.locator('[data-test="video-url"] button')).not.toBeDisabled();
 
     await page.locator('[data-test="author-name"] input').fill(FINAL_AUTHOR);
 
@@ -149,13 +152,25 @@ test('Convert song', async ({ page }) => {
     await page.getByTestId('next-button').click();
 
     // Song metadata
+    await expect(page.locator('[data-test="song-artist"] input')).toHaveValue('convert');
+    await page.locator('[data-test="song-artist"] input').fill(FINAL_ARTIST);
+
+    await expect(page.locator('[data-test="song-title"] input')).toHaveValue('test');
+    await page.locator('[data-test="song-title"] input').fill(FINAL_TITLE);
+
+    await expect(page.locator('[data-test="song-genre"] input')).toHaveValue('genre');
+    await page.locator('[data-test="song-genre"] input').fill(FINAL_GENRE);
+
     await expect(page.locator('[data-test="song-language"] input')).toHaveValue('English');
     await page.locator('[data-test="song-language"] input').fill(FINAL_LANG);
 
     await expect(page.locator('[data-test="release-year"] input')).toHaveValue('1992');
     await page.locator('[data-test="release-year"] input').fill(FINAL_YEAR);
 
+    await expect(page.locator('[data-test="song-bpm"] input')).toHaveValue('200');
     await page.locator('[data-test="song-bpm"] input').fill(FINAL_SONG_BPM);
+
+    await expect(page.locator('[data-test="volume"] input')).toHaveValue('0.25');
     await page.locator('[data-test="volume"] input').fill(FINAL_VOLUME);
 
     // Download song
@@ -163,9 +178,10 @@ test('Convert song', async ({ page }) => {
     await expect(page.getByTestId('save-button')).toBeVisible();
     await page.getByTestId('save-button').click();
 
+    const convertedSongId = `${FINAL_ARTIST}-${FINAL_TITLE}.json`;
     const [download] = await Promise.all([
         page.waitForEvent('download'),
-        page.locator('[data-test="download-song"][data-song="convert-test.json"]').click(),
+        page.locator(`[data-test="download-song"][data-song="${convertedSongId}"]`).click(),
     ]);
 
     const downloadStream = await download.createReadStream();
@@ -175,40 +191,48 @@ test('Convert song', async ({ page }) => {
     for await (let chunk of downloadStream) {
         chunks.push(chunk);
     }
-    const downloadContent: Song = convertTxtToSong(Buffer.concat(chunks).toString('utf-8'));
 
-    expect(downloadContent.video).toEqual(VIDEO_ID);
-    expect(downloadContent.sourceUrl).toEqual(FINAL_SOURCE_URL);
-    expect(downloadContent.author).toEqual(FINAL_AUTHOR);
-    expect(downloadContent.authorUrl).toEqual(FINAL_AUTHOR_URL);
-    expect(downloadContent.language).toEqual(FINAL_LANG);
-    expect(downloadContent.year).toEqual(FINAL_YEAR);
-    expect(downloadContent.realBpm).toEqual(+FINAL_SONG_BPM);
-    expect(downloadContent.videoGap).toEqual(+FINAL_VIDEO_GAP);
-    expect(downloadContent.gap).toEqual(+FINAL_GAP);
-    expect(downloadContent.bpm).toEqual(+FINAL_BPM);
-    expect(downloadContent.volume).toEqual(+FINAL_VOLUME);
-    expect(downloadContent.tracks).toHaveLength(FINAL_TRACKS);
-    expect(downloadContent.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
-    expect(downloadContent.tracks[0].name).not.toBeDefined();
-    expect(downloadContent.tracks[1].name).toEqual(TRACK_2_NAME);
+    const downloadedContent = Buffer.concat(chunks).toString('utf-8');
+    const convertedSong: Song = convertTxtToSong(downloadedContent);
+
+    expect(convertedSong.artist).toEqual(FINAL_ARTIST);
+    expect(convertedSong.title).toEqual(FINAL_TITLE);
+    expect(convertedSong.genre).toEqual(FINAL_GENRE);
+    expect(convertedSong.video).toEqual(VIDEO_ID);
+    expect(convertedSong.sourceUrl).toEqual(FINAL_SOURCE_URL);
+    expect(convertedSong.author).toEqual(FINAL_AUTHOR);
+    expect(convertedSong.authorUrl).toEqual(FINAL_AUTHOR_URL);
+    expect(convertedSong.language).toEqual(FINAL_LANG);
+    expect(convertedSong.year).toEqual(FINAL_YEAR);
+    expect(convertedSong.realBpm).toEqual(+FINAL_SONG_BPM);
+    expect(convertedSong.videoGap).toEqual(+FINAL_VIDEO_GAP);
+    expect(convertedSong.gap).toEqual(+FINAL_GAP);
+    expect(convertedSong.bpm).toEqual(+FINAL_BPM);
+    expect(convertedSong.volume).toEqual(+FINAL_VOLUME);
+    expect(convertedSong.tracks).toHaveLength(FINAL_TRACKS);
+    expect(convertedSong.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
+    expect(convertedSong.tracks[0].name).not.toBeDefined();
+    expect(convertedSong.tracks[1].name).toEqual(TRACK_2_NAME);
 
     await page.getByTestId('convert-song').click();
-    await page.getByTestId('input-txt').fill(txtfile);
+    await page.getByTestId('input-txt').fill(downloadedContent);
     await expect(page.getByTestId('possible-duplicate')).toBeVisible();
 
     await page.goBack();
 
     page.on('dialog', (dialog) => dialog.accept());
 
-    await page.locator('[data-test="delete-song"][data-song="convert-test.json"]').click();
-    await expect(page.locator('[data-test="delete-song"][data-song="convert-test.json"]')).not.toBeVisible();
+    await page.locator(`[data-test="delete-song"][data-song="${convertedSongId}"]`).click();
+    await expect(page.locator(`[data-test="delete-song"][data-song="${convertedSongId}"]`)).not.toBeVisible();
 });
 
 const txtfile = `
 #TITLE:test
 #ARTIST:convert
 #LANGUAGE:English
+#GENRE:genre
+#REALBPM:200
+#VOLUME:0.25
 #YEAR:1992
 #VIDEOGAP:30
 #BPM:100
