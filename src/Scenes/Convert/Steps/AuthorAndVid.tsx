@@ -36,16 +36,18 @@ export default function AuthorAndVid(props: Props) {
                 sx={{ mt: 2 }}
                 value={props.data.author}
                 onChange={(e) => props.onChange({ ...props.data, author: e.target.value })}
-                label="Author name"
+                label="Author name (optional)"
                 fullWidth
                 size="small"
+                helperText="Nickname of the person that created the .txt file."
             />
             <TextField
                 data-test="author-url"
                 sx={{ mt: 2 }}
                 value={props.data.authorUrl}
                 onChange={(e) => props.onChange({ ...props.data, authorUrl: e.target.value })}
-                label="Author URL"
+                label="Author URL (optional)"
+                helperText="Link to authors page/profile."
                 fullWidth
                 size="small"
             />
@@ -55,10 +57,10 @@ export default function AuthorAndVid(props: Props) {
                     required
                     value={props.data.video}
                     onChange={(e) => props.onChange({ ...props.data, video: e.target.value })}
-                    label="Video URL"
+                    label="YouTube Video URL"
                     fullWidth
                     size="small"
-                    helperText="Link to YouTube video, eg https://www.youtube.com/watch?v=xxxxxxxxx"
+                    helperText="Link to YouTube video, eg https://www.youtube.com/watch?v=xxxxxxxxx. Click the 'Lookup' button to look for it on YouTube"
                     name="videoUrl"
                     {...inputAction(searchForVideo, isSearchableForVideo)}
                 />

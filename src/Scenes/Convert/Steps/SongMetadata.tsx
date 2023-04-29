@@ -121,6 +121,7 @@ export default function SongMetadata(props: Props) {
                     value={props.data.year}
                     onChange={(e) => props.onChange({ ...props.data, year: e.target.value })}
                     label="Release year"
+                    helperText="The year the song was released. Click the 'Lookup' button to look for it on Google"
                     fullWidth
                     size="small"
                     required
@@ -133,6 +134,7 @@ export default function SongMetadata(props: Props) {
                     value={props.data.realBpm}
                     onChange={(e) => props.onChange({ ...props.data, realBpm: e.target.value })}
                     label="Song (real) BPM"
+                    helperText="The actual tempo of the song. Click the 'Lookup' button to look for it on Google"
                     fullWidth
                     type="number"
                     size="small"

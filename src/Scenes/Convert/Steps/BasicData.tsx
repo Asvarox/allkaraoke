@@ -28,14 +28,36 @@ export default function BasicData(props: Props) {
 
     return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="basic-data">
+            {props.isTxtRequired && (
+                <div>
+                    <h4>Where to find songs?</h4>
+                    <p>
+                        Any UltraStar compatible .txt file will do. You can find many already made songs on{' '}
+                        <a href="https://usdb.animux.de/" target="_blank" rel="noreferrer">
+                            usdb.animux.de
+                        </a>
+                        {' or '}
+                        <a href="https://ultrastar-es.org/en" target="_blank" rel="noreferrer">
+                            ultrastar-es.org
+                        </a>
+                        .<br />
+                        <br />
+                    </p>
+                    <p>
+                        You don't need audio/video files, you'll be able to search for appropriate YouTube video and
+                        synchronise the lyrics to it in subsequent steps.
+                    </p>
+                </div>
+            )}
             <TextField
                 sx={{ mt: 2 }}
                 value={props.data.sourceUrl}
                 onChange={onSourceUrlEdit}
-                label="Source URL"
+                label="Source URL (optional)"
                 fullWidth
                 size="small"
                 data-test="source-url"
+                helperText="The link to the page from which the .TXT file was downloaded."
             />
             {props.isTxtRequired && (
                 <TextField
@@ -44,7 +66,7 @@ export default function BasicData(props: Props) {
                     fullWidth
                     size="small"
                     multiline
-                    label="Song's .TXT file contents"
+                    label="Song's UltraStar .TXT file contents"
                     onChange={(e) => props.onChange({ ...props.data, txtInput: fixDiacritics(e.target.value) })}
                     value={props.data.txtInput}
                     maxRows={15}
