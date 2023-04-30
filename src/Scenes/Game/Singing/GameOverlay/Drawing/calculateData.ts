@@ -63,5 +63,5 @@ export interface DrawingData {
 
     currentBeat: number;
     paddingVertical: number;
-    currentSection: Section;
+    currentSection: Section | undefined; // `undefined` can happen with `sectionShift` parameter
 }

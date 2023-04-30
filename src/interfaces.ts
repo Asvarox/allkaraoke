@@ -1,4 +1,4 @@
-import { ValuesType } from "utility-types";
+import { ValuesType } from 'utility-types';
 
 export type NoteType = 'normal' | 'star' | 'freestyle' | 'rap';
 export interface Note {
@@ -7,6 +7,20 @@ export interface Note {
     pitch: number;
     type: NoteType;
     lyrics: string;
+}
+
+export interface NotesSection {
+    // end: never;
+    start: number;
+    notes: Note[];
+    type: 'notes';
+}
+
+export interface PauseSection {
+    start: number;
+    end: number;
+    // notes: never;
+    type: 'pause';
 }
 
 export type Section = NotesSection | PauseSection;
@@ -26,20 +40,6 @@ export interface SingSetup {
     players: [PlayerSetup, PlayerSetup];
     mode: ValuesType<typeof GAME_MODE>;
     tolerance: number;
-}
-
-export interface NotesSection {
-    // end: never;
-    start: number;
-    notes: Note[];
-    type: 'notes';
-}
-
-export interface PauseSection {
-    start: number;
-    end: number;
-    // notes: never;
-    type: 'pause';
 }
 
 export interface Song {

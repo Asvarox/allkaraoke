@@ -252,7 +252,7 @@ export default class CanvasDrawing {
             currentTime: GameState.getCurrentTime(),
             frequencies: playerState.getPlayerFrequencies(),
             playerNotes,
-            currentPlayerNotes: playerNotes.filter((note) => note.note.start >= currentSection.start),
+            currentPlayerNotes: playerNotes.filter((note) => note.note.start >= (currentSection?.start ?? Infinity)),
             playerNumber,
             track: playerState.getTrackIndex(),
             currentBeat: GameState.getCurrentBeat(),
