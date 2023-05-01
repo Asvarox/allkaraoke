@@ -184,16 +184,13 @@ const BaseSongPreviewContainer = styled.div<{ width: number; height: number; act
 
     @keyframes rhythmPulse {
         0% {
-            transform: scale(1.2);
-        }
-        25% {
             transform: scale(1.25);
         }
-        50% {
+        15% {
             transform: scale(1.2);
         }
         100% {
-            transform: scale(1.2);
+            transform: scale(1.25);
         }
     }
 `;

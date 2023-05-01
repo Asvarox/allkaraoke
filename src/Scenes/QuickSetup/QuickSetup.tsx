@@ -19,7 +19,7 @@ function QuickSetup(props: Props) {
     const isMobile = useMemo(
         () =>
             window.matchMedia(
-                'only screen and (((max-width: 500px) and (max-aspect-ratio: 9/16)) or ((max-height: 500px) and (min-aspect-ratio: 16/9)))',
+                'only screen and (((max-width: 500px) and (max-aspect-ratio: 10/16)) or ((max-height: 500px) and (min-aspect-ratio: 16/10)))',
             ).matches,
         [],
     );
