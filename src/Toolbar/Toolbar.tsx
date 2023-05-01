@@ -5,10 +5,11 @@ import { IconButton, Tooltip } from '@mui/material';
 import { Fullscreen, QrCode2 } from '@mui/icons-material';
 import { useState } from 'react';
 import QRCodeModal from 'Toolbar/QRCodeModal';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 function Toolbar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    // const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+    const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
     const closeModal = () => setIsModalOpen(false);
 
@@ -23,8 +24,15 @@ function Toolbar() {
                             try {
                                 if (document.fullscreenElement === null) {
                                     await document.body.requestFullscreen();
+                                    if (mobilePhoneMode) {
+                                        window.screen.orientation.unlock();
+                                        await window.screen.orientation.lock('landscape');
+                                    }
                                 } else {
                                     await document.exitFullscreen();
+                                    if (mobilePhoneMode) {
+                                        window.screen.orientation.unlock();
+                                    }
                                 }
                             } catch (e) {
                                 console.info(e);
