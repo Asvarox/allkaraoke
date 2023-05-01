@@ -4,17 +4,13 @@ import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import MenuWithLogo from 'Elements/MenuWithLogo';
 import SuggestMobileMode from 'Scenes/QuickSetup/SuggestMobileMode';
 import { useMemo } from 'react';
+import isDev from 'utils/isDev';
 
 interface Props {
     // file?: string;
 }
 
 function QuickSetup(props: Props) {
-    const navigate = useSmoothNavigate();
-    const onFinish = (pref: (typeof MicSetupPreference)[number]) => {
-        navigate('/');
-    };
-
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const isMobile = useMemo(
         () =>
@@ -23,6 +19,20 @@ function QuickSetup(props: Props) {
             ).matches,
         [],
     );
+
+    const navigate = useSmoothNavigate();
+    const onFinish = async (pref: (typeof MicSetupPreference)[number]) => {
+        navigate('/');
+        if (isDev() && mobilePhoneMode && document.fullscreenElement === null) {
+            try {
+                await document.body.requestFullscreen();
+                window.screen.orientation.unlock();
+                await window.screen.orientation.lock('landscape');
+            } catch (e) {
+                console.info(e);
+            }
+        }
+    };
 
     return (
         <>
