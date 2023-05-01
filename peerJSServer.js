@@ -10,7 +10,7 @@ if (!customCert) {
 }
 
 const peerServer = PeerServer({
-    port: 9000,
+    port: 3001,
     ...(customCert
         ? {
               ssl: {

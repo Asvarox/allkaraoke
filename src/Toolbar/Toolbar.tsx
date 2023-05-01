@@ -8,6 +8,7 @@ import QRCodeModal from 'Toolbar/QRCodeModal';
 
 function Toolbar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
     const closeModal = () => setIsModalOpen(false);
 
@@ -15,22 +16,44 @@ function Toolbar() {
         <>
             {isModalOpen && <QRCodeModal closeModal={closeModal} />}
             <ToolbarContainer>
-                <Tooltip title="Enter fullscreen">
+                <Tooltip title="Toggle fullscreen">
                     <IconButton
                         size="small"
-                        onClick={() => {
+                        onClick={async () => {
                             try {
-                                document.body.requestFullscreen().catch(console.info);
-                            } catch (e) {}
+                                if (document.fullscreenElement === null) {
+                                    await document.body.requestFullscreen();
+                                } else {
+                                    await document.exitFullscreen();
+                                }
+                            } catch (e) {
+                                console.info(e);
+                            }
                         }}>
-                        <Fullscreen fontSize="large" />
+                        <Fullscreen />
                     </IconButton>
                 </Tooltip>
                 <Tooltip title="Connect phone">
                     <IconButton size="small" onClick={() => setIsModalOpen((current) => !current)}>
-                        <QrCode2 fontSize="large" />
+                        <QrCode2 />
                     </IconButton>
                 </Tooltip>
+                {/*<Tooltip title="Toggle Mobile Phone Mode">*/}
+                {/*    <IconButton*/}
+                {/*        size="small"*/}
+                {/*        onClick={async () => {*/}
+                {/*            try {*/}
+                {/*                setMobilePhoneMode(!mobilePhoneMode);*/}
+                {/*                await document.body.requestFullscreen();*/}
+                {/*                window.screen.orientation.unlock();*/}
+                {/*                await window.screen.orientation.lock('landscape');*/}
+                {/*            } catch (e) {*/}
+                {/*                console.info(e);*/}
+                {/*            }*/}
+                {/*        }}>*/}
+                {/*        {mobilePhoneMode ? <Laptop /> : <PhoneIphone />}*/}
+                {/*    </IconButton>*/}
+                {/*</Tooltip>*/}
             </ToolbarContainer>
         </>
     );
@@ -53,6 +76,8 @@ const ToolbarContainer = styled.div`
 
     svg {
         fill: white;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     display: flex;

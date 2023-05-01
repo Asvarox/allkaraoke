@@ -83,7 +83,7 @@ function GameOverlay({
             <GameCanvas>
                 <canvas ref={canvas} width={overlayWidth} height={overlayHeight} />
             </GameCanvas>
-            {!mobilePhoneMode && effectsEnabled && (
+            {effectsEnabled && (
                 <>
                     <SkipIntro playerRef={videoPlayerRef} isEnabled={!isPauseMenuVisible} />
                     <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />

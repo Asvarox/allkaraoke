@@ -9,6 +9,7 @@ import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
 import { getLastNoteEnd } from 'Songs/utils/notesSelectors';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     onSongEnd: () => void;
@@ -18,6 +19,7 @@ interface Props {
 const SHOW_OUTRO_THRESHOLD_MS = 15_000;
 
 function SkipOutro({ onSongEnd, isEnabled }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const duration = GameState.getDuration();
 
     const singingEndBeat = useMemo(
@@ -56,7 +58,7 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
     );
     useKeyboardHelp(help, shouldBeVisible);
 
-    return canSkip ? (
+    return !mobilePhoneMode && canSkip ? (
         <Container visible={shouldBeVisible}>
             Press <Kbd>Enter</Kbd> to skip the outro
         </Container>

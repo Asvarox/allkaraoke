@@ -146,7 +146,7 @@ const config: PlaywrightTestConfig = {
             : undefined,
         {
             command: 'yarn peerjs',
-            port: 9000,
+            port: 3001,
             timeout: 60_000 * 3,
             reuseExistingServer: true,
         },

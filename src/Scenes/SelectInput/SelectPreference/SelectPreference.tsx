@@ -6,7 +6,7 @@ import { focused } from 'Elements/cssMixins';
 import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { SvgIcon } from '@mui/material';
-import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     onPreferenceSelected: (preference: (typeof MicSetupPreference)[number]) => void;
@@ -16,6 +16,8 @@ interface Props {
 }
 
 function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, skipText }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+
     const { register } = useKeyboardNav({ onBackspace: onBack });
     return (
         <>
@@ -32,7 +34,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                     <PhoneIphone />
                 </OptionIconContainer>
                 <div>
-                    Use Smartphones
+                    {mobilePhoneMode ? 'Connect other phones' : 'Use Smartphones'}
                     <OptionDescription>
                         Use{' '}
                         <strong>
@@ -57,10 +59,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                 data-test="built-in">
                 <OptionIconContainer>
                     <Person />
-                    <Laptop />
+                    {mobilePhoneMode ? <PhoneIphone /> : <Laptop />}
                 </OptionIconContainer>
                 <div>
-                    This computer's microphone
+                    This {mobilePhoneMode ? "device's" : "computer's"} microphone
                     <OptionDescription>
                         Great to <strong>test</strong> the app, <strong>sing alone</strong> or don't care about the
                         rivalry at the party
@@ -68,21 +70,23 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                 </div>
             </Option>
             <hr />
-            <Option
-                {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}
-                data-test="mics">
-                <OptionIconContainer>
-                    <MicIcon />
-                    <MicIcon />
-                </OptionIconContainer>
-                <div>
-                    SingStar (-ish) microphones
-                    <OptionDescription>
-                        Select this option and <Usb /> connect your Mics to the computer. It should be selected{' '}
-                        <strong>automatically</strong>.
-                    </OptionDescription>
-                </div>
-            </Option>
+            {!mobilePhoneMode && (
+                <Option
+                    {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}
+                    data-test="mics">
+                    <OptionIconContainer>
+                        <MicIcon />
+                        <MicIcon />
+                    </OptionIconContainer>
+                    <div>
+                        SingStar (-ish) microphones
+                        <OptionDescription>
+                            Select this option and <Usb /> connect your Mics to the computer. It should be selected{' '}
+                            <strong>automatically</strong>.
+                        </OptionDescription>
+                    </div>
+                </Option>
+            )}
             <Option
                 {...register(
                     'advanced',

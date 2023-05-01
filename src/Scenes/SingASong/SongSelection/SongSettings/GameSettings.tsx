@@ -20,7 +20,7 @@ const gameModeNames = {
     [GAME_MODE.PASS_THE_MIC]: 'Pass The Mic',
 };
 
-const difficultyNames = ['Real', 'Hard', 'Medium', 'Easy'];
+const difficultyNames = ['Hard', 'Medium', 'Easy'];
 
 if (isDev()) {
     difficultyNames.push('Debug 4');
@@ -30,11 +30,11 @@ if (isDev()) {
 
 // added -v2 to the key as the value has changed from number to ValuesType<typeof GAME_MODE>
 const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE>>('song_settings-game_mode-v2');
-const useSetTolerance = createPersistedState<number>('song_settings-tolerance');
+const useSetTolerance = createPersistedState<number>('song_settings-tolerance-v2');
 
 export default function GameSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
     const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
-    const [tolerance, setTolerance] = useSetTolerance(2);
+    const [tolerance, setTolerance] = useSetTolerance(1);
 
     const startSong = () => {
         const singSetup = {
@@ -44,7 +44,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 { name: '', track: 0 },
             ] as [PlayerSetup, PlayerSetup],
             mode,
-            tolerance,
+            tolerance: tolerance + 1,
         };
         onNextStep(singSetup);
     };

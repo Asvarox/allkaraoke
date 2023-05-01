@@ -4,7 +4,7 @@ import isE2E from 'utils/isE2E';
 const e2eOverrides: PeerJSOption = isE2E()
     ? {
           host: 'localhost',
-          port: 9000,
+          port: 3001,
           path: '/',
       }
     : {};

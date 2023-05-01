@@ -3,7 +3,6 @@ import { typography } from 'Elements/cssMixins';
 import { MenuButton } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { Link } from 'wouter';
-import getSongBpm from './logo_bpm.png';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
@@ -33,7 +32,13 @@ function Welcome() {
     return (
         <MenuWithLogo>
             <BackgroundMusicCredit>
-                <span>• Song: Funk Cool Groove (Music Today 80)</span>
+                <span>
+                    Bpm data and release year provided by{' '}
+                    <a target="_blank" href="https://getsongbpm.com/" rel="noreferrer">
+                        GetSongBPM
+                    </a>
+                </span>
+                <span>Song: Funk Cool Groove (Music Today 80)</span>
                 <span>• Composed & Produced by : Anwar Amr</span>
                 <span>
                     • Video Link:{' '}
@@ -69,36 +74,21 @@ function Welcome() {
                         Manage Songs
                     </MenuButton>
                 </Link>
-                <GetSongBPM target="_blank" href="https://getsongbpm.com/">
-                    Bpm data and release year provided by <img src={getSongBpm} />
-                </GetSongBPM>
             </>
         </MenuWithLogo>
     );
 }
 
-const GetSongBPM = styled.a`
-    ${typography};
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.1rem;
-    img {
-        width: 20%;
-        height: 20%;
-    }
-`;
 const BackgroundMusicCredit = styled.div`
     ${typography};
     text-decoration: none;
     flex-direction: column;
     display: flex;
-    font-size: 1.5rem;
-    gap: 1rem;
-    opacity: 0.75;
+    font-size: 1rem;
+    gap: 1.25rem;
+    opacity: 0.85;
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 1rem;
 
     view-transition-name: background-music-credit;

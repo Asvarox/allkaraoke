@@ -9,6 +9,7 @@ import getSkipIntroTime, { SKIP_INTRO_MS } from 'Songs/utils/getSkipIntroTime';
 import songHasLongIntro from 'utils/songHasLongIntro';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     playerRef: VideoPlayerRef | null;
@@ -16,6 +17,7 @@ interface Props {
 }
 
 function SkipIntro({ playerRef, isEnabled }: Props) {
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const song = GameState.getSong()!;
     const hasLongIntro = useMemo(() => songHasLongIntro(song), [song]);
     const songFirstNoteMs = useMemo(() => getSongFirstNoteMs(song), [song]);
@@ -40,7 +42,7 @@ function SkipIntro({ playerRef, isEnabled }: Props) {
     );
     useKeyboardHelp(help, canSkip);
 
-    return canSkip ? (
+    return !mobilePhoneMode && canSkip ? (
         <Container visible={canSkip} data-test="skip-intro-info">
             Press <Kbd>Enter</Kbd> to skip the intro
         </Container>

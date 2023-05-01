@@ -8,6 +8,7 @@ interface Props {
 
 function SelectInput(props: Props) {
     const navigate = useSmoothNavigate();
+
     return (
         <MenuWithLogo>
             <SelectInputView onFinish={() => navigate('/')} closeButtonText={'Go to main menu'} />
