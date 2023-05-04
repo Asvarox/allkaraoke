@@ -2,10 +2,11 @@ import styled from '@emotion/styled';
 import 'Stats';
 import 'RemoteMic/eventListeners';
 import { IconButton, Tooltip } from '@mui/material';
-import { Fullscreen, QrCode2 } from '@mui/icons-material';
+import { QrCode2 } from '@mui/icons-material';
 import { useState } from 'react';
 import QRCodeModal from 'Toolbar/QRCodeModal';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import FullscreenButton from 'Toolbar/Fullscreen';
 
 function Toolbar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,30 +18,7 @@ function Toolbar() {
         <>
             {isModalOpen && <QRCodeModal closeModal={closeModal} />}
             <ToolbarContainer>
-                <Tooltip title="Toggle fullscreen">
-                    <IconButton
-                        size="small"
-                        onClick={async () => {
-                            try {
-                                if (document.fullscreenElement === null) {
-                                    await document.body.requestFullscreen();
-                                    if (mobilePhoneMode) {
-                                        window.screen.orientation.unlock();
-                                        await window.screen.orientation.lock('landscape');
-                                    }
-                                } else {
-                                    await document.exitFullscreen();
-                                    if (mobilePhoneMode) {
-                                        window.screen.orientation.unlock();
-                                    }
-                                }
-                            } catch (e) {
-                                console.info(e);
-                            }
-                        }}>
-                        <Fullscreen />
-                    </IconButton>
-                </Tooltip>
+                <FullscreenButton />
                 <Tooltip title="Connect phone">
                     <IconButton size="small" onClick={() => setIsModalOpen((current) => !current)}>
                         <QrCode2 />
@@ -86,6 +64,11 @@ const ToolbarContainer = styled.div`
         fill: white;
         width: 3.5rem;
         height: 3.5rem;
+        transition: 200ms;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     display: flex;

@@ -74,7 +74,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 data-test-value={gameModeNames[mode]}
             />
             <PlayButton {...register('play', startSong, undefined, true)} data-test="next-step-button">
-                Players ➤
+                Next ➤
             </PlayButton>
         </>
     );
