@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.11.10"],\
             ["@playwright/experimental-ct-react", "npm:1.32.0"],\
             ["@playwright/test", "npm:1.32.0"],\
-            ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.38.0"],\
+            ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.51.0"],\
             ["@storybook/addon-actions", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.8"],\
             ["@storybook/addon-docs", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.8"],\
             ["@storybook/addon-essentials", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.8"],\
@@ -88,7 +88,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["musicbrainz-api", "npm:0.8.0"],\
             ["peer", "npm:0.6.1"],\
             ["peerjs", "npm:2.0.0-beta.3"],\
-            ["posthog-js", "npm:1.46.1"],\
+            ["posthog-js", "npm:1.55.1"],\
             ["prettier", "npm:2.8.4"],\
             ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.2"],\
             ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
@@ -3952,47 +3952,61 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@sentry/browser", [\
-        ["npm:7.38.0", {\
-          "packageLocation": "./.yarn/cache/@sentry-browser-npm-7.38.0-9df2be3f88-9ff6dcdb79.zip/node_modules/@sentry/browser/",\
+      ["@sentry-internal/tracing", [\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-internal-tracing-npm-7.51.0-6397061a79-582d51f9eb.zip/node_modules/@sentry-internal/tracing/",\
           "packageDependencies": [\
-            ["@sentry/browser", "npm:7.38.0"],\
-            ["@sentry/core", "npm:7.38.0"],\
-            ["@sentry/replay", "npm:7.38.0"],\
-            ["@sentry/types", "npm:7.38.0"],\
-            ["@sentry/utils", "npm:7.38.0"],\
+            ["@sentry-internal/tracing", "npm:7.51.0"],\
+            ["@sentry/core", "npm:7.51.0"],\
+            ["@sentry/types", "npm:7.51.0"],\
+            ["@sentry/utils", "npm:7.51.0"],\
+            ["tslib", "npm:1.14.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@sentry/browser", [\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-browser-npm-7.51.0-1eecefb0ec-10ab6ef9b8.zip/node_modules/@sentry/browser/",\
+          "packageDependencies": [\
+            ["@sentry/browser", "npm:7.51.0"],\
+            ["@sentry-internal/tracing", "npm:7.51.0"],\
+            ["@sentry/core", "npm:7.51.0"],\
+            ["@sentry/replay", "npm:7.51.0"],\
+            ["@sentry/types", "npm:7.51.0"],\
+            ["@sentry/utils", "npm:7.51.0"],\
             ["tslib", "npm:1.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@sentry/core", [\
-        ["npm:7.38.0", {\
-          "packageLocation": "./.yarn/cache/@sentry-core-npm-7.38.0-e7761441a8-afa7325e07.zip/node_modules/@sentry/core/",\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-core-npm-7.51.0-01464ea4b3-9645906bf6.zip/node_modules/@sentry/core/",\
           "packageDependencies": [\
-            ["@sentry/core", "npm:7.38.0"],\
-            ["@sentry/types", "npm:7.38.0"],\
-            ["@sentry/utils", "npm:7.38.0"],\
+            ["@sentry/core", "npm:7.51.0"],\
+            ["@sentry/types", "npm:7.51.0"],\
+            ["@sentry/utils", "npm:7.51.0"],\
             ["tslib", "npm:1.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@sentry/react", [\
-        ["npm:7.38.0", {\
-          "packageLocation": "./.yarn/cache/@sentry-react-npm-7.38.0-709a3a5cbc-5825ad1eac.zip/node_modules/@sentry/react/",\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-react-npm-7.51.0-5fc7d58939-2a9c78f653.zip/node_modules/@sentry/react/",\
           "packageDependencies": [\
-            ["@sentry/react", "npm:7.38.0"]\
+            ["@sentry/react", "npm:7.51.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.38.0", {\
-          "packageLocation": "./.yarn/__virtual__/@sentry-react-virtual-5390fc45ec/0/cache/@sentry-react-npm-7.38.0-709a3a5cbc-5825ad1eac.zip/node_modules/@sentry/react/",\
+        ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.51.0", {\
+          "packageLocation": "./.yarn/__virtual__/@sentry-react-virtual-d963169ff0/0/cache/@sentry-react-npm-7.51.0-5fc7d58939-2a9c78f653.zip/node_modules/@sentry/react/",\
           "packageDependencies": [\
-            ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.38.0"],\
-            ["@sentry/browser", "npm:7.38.0"],\
-            ["@sentry/types", "npm:7.38.0"],\
-            ["@sentry/utils", "npm:7.38.0"],\
+            ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.51.0"],\
+            ["@sentry/browser", "npm:7.51.0"],\
+            ["@sentry/types", "npm:7.51.0"],\
+            ["@sentry/utils", "npm:7.51.0"],\
             ["@types/react", "npm:18.0.28"],\
             ["hoist-non-react-statics", "npm:3.3.2"],\
             ["react", "npm:18.2.0"],\
@@ -4006,32 +4020,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@sentry/replay", [\
-        ["npm:7.38.0", {\
-          "packageLocation": "./.yarn/cache/@sentry-replay-npm-7.38.0-4178ac4f2f-edc2ac620d.zip/node_modules/@sentry/replay/",\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-replay-npm-7.51.0-76def015f0-eeb663bbcc.zip/node_modules/@sentry/replay/",\
           "packageDependencies": [\
-            ["@sentry/replay", "npm:7.38.0"],\
-            ["@sentry/core", "npm:7.38.0"],\
-            ["@sentry/types", "npm:7.38.0"],\
-            ["@sentry/utils", "npm:7.38.0"]\
+            ["@sentry/replay", "npm:7.51.0"],\
+            ["@sentry/core", "npm:7.51.0"],\
+            ["@sentry/types", "npm:7.51.0"],\
+            ["@sentry/utils", "npm:7.51.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@sentry/types", [\
-        ["npm:7.38.0", {\
-          "packageLocation": "./.yarn/cache/@sentry-types-npm-7.38.0-c359cd4454-8e2e3352ce.zip/node_modules/@sentry/types/",\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-types-npm-7.51.0-4388664b94-dfd583bba2.zip/node_modules/@sentry/types/",\
           "packageDependencies": [\
-            ["@sentry/types", "npm:7.38.0"]\
+            ["@sentry/types", "npm:7.51.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@sentry/utils", [\
-        ["npm:7.38.0", {\
-          "packageLocation": "./.yarn/cache/@sentry-utils-npm-7.38.0-11733e4826-b2f2d397f3.zip/node_modules/@sentry/utils/",\
+        ["npm:7.51.0", {\
+          "packageLocation": "./.yarn/cache/@sentry-utils-npm-7.51.0-4cc36953dd-6de2f18dfc.zip/node_modules/@sentry/utils/",\
           "packageDependencies": [\
-            ["@sentry/utils", "npm:7.38.0"],\
-            ["@sentry/types", "npm:7.38.0"],\
+            ["@sentry/utils", "npm:7.51.0"],\
+            ["@sentry/types", "npm:7.51.0"],\
             ["tslib", "npm:1.14.1"]\
           ],\
           "linkType": "HARD"\
@@ -13261,7 +13275,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.11.10"],\
             ["@playwright/experimental-ct-react", "npm:1.32.0"],\
             ["@playwright/test", "npm:1.32.0"],\
-            ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.38.0"],\
+            ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.51.0"],\
             ["@storybook/addon-actions", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.8"],\
             ["@storybook/addon-docs", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.8"],\
             ["@storybook/addon-essentials", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.8"],\
@@ -13313,7 +13327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["musicbrainz-api", "npm:0.8.0"],\
             ["peer", "npm:0.6.1"],\
             ["peerjs", "npm:2.0.0-beta.3"],\
-            ["posthog-js", "npm:1.46.1"],\
+            ["posthog-js", "npm:1.55.1"],\
             ["prettier", "npm:2.8.4"],\
             ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.2"],\
             ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
@@ -13894,10 +13908,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["posthog-js", [\
-        ["npm:1.46.1", {\
-          "packageLocation": "./.yarn/cache/posthog-js-npm-1.46.1-08857ae086-5c8a3ef8fb.zip/node_modules/posthog-js/",\
+        ["npm:1.55.1", {\
+          "packageLocation": "./.yarn/cache/posthog-js-npm-1.55.1-d29ebdfa14-3bf2b4e3ca.zip/node_modules/posthog-js/",\
           "packageDependencies": [\
-            ["posthog-js", "npm:1.46.1"],\
+            ["posthog-js", "npm:1.55.1"],\
             ["fflate", "npm:0.4.8"],\
             ["rrweb-snapshot", "npm:1.1.14"]\
           ],\
