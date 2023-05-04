@@ -46,7 +46,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     });
 });
 
-test('Source selection from remote remote mic', async ({ page, context }) => {
+test('Source selection from remote mic', async ({ page, context }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click();
 

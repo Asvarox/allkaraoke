@@ -32,7 +32,7 @@ export function nextValue<T extends readonly any[]>(
 
 export const Switcher = ({ focused, label, value, onClick, ...restProps }: Props) => (
     <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
-        <span>{label}:</span> <ConfigValue>{value}</ConfigValue>
+        <span>{label ? `${label}:` : ''}</span> <ConfigValue>{value}</ConfigValue>
     </ConfigurationPosition>
 );
 

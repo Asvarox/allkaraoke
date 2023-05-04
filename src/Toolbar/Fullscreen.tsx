@@ -20,8 +20,6 @@ function FullscreenButton() {
         };
     }, []);
 
-    console.log(isFullScreen);
-
     return (
         <Tooltip title="Toggle fullscreen">
             <IconButton

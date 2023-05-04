@@ -52,7 +52,8 @@ function Advanced(props: Props) {
                     <MicCheck playerNumber={0}>
                         <Mic />
                     </MicCheck>{' '}
-                    Player 1 {props.playerNames?.[0] && `(${props.playerNames[0]})`}
+                    Player 1{' '}
+                    {props.playerNames?.[0] && <span className="ph-no-capture">(${props.playerNames[0]})</span>}
                 </Heading>
                 <Switcher
                     {...register('player 1 source', p1CycleSource)}
@@ -70,7 +71,8 @@ function Advanced(props: Props) {
                     <MicCheck playerNumber={1}>
                         <Mic />
                     </MicCheck>{' '}
-                    Player 2 {props.playerNames?.[1] && `(${props.playerNames[1]})`}
+                    Player 2{' '}
+                    {props.playerNames?.[1] && <span className="ph-no-capture">(${props.playerNames[1]})</span>}
                 </Heading>
                 <Switcher
                     {...register('player 2 source', p2CycleSource)}
