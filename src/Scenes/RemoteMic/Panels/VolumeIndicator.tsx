@@ -41,7 +41,7 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
             {isConnected && <PlayerChange playerNumber={playerNumber} />}
             <Indicator
                 color={indicatorColor}
-                style={{ height: `${isMicOn ? 100 - Math.min(100, (volume / maxVolume) * 100) : 100}%` }}
+                style={{ transform: `scaleY(${isMicOn ? 1 - Math.min(1, volume / maxVolume) : 1})` }}
             />
         </IndicatorContainer>
     );
@@ -55,8 +55,10 @@ const Debug = styled.span`
 
 const Indicator = styled.div<{ color: string }>`
     width: 100%;
+    height: 100%;
     background-color: ${(props) => props.color};
     transition: 200ms;
+    transform-origin: top;
 `;
 
 const IndicatorContainer = styled.div<{ color: string; isMicOn: boolean }>`

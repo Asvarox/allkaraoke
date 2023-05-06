@@ -29,7 +29,7 @@ class WebRTCClient {
         const freqs = this.frequencies.map((freq) => roundTo(freq, 2));
         this.frequencies.length = 0;
         this.sendEvent('freq', [freqs, roundTo(volume, 4)]);
-    }, 75);
+    }, 50);
 
     // Chunk frequencies and send them in packages
     // One package throttled with 75ms contains ~10 frequencies

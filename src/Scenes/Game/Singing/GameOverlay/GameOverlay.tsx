@@ -115,7 +115,7 @@ export default GameOverlay;
 const Screen = styled.div`
     height: 100%;
     color: white;
-    -webkit-text-stroke: thick black;
+    -webkit-text-stroke: 0.1rem black;
     font-weight: bold;
     position: relative;
     display: flex;

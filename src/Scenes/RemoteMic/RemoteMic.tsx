@@ -65,31 +65,49 @@ function RemoteMic({ roomId }: Props) {
         setKeepAwake(true);
     };
 
+    const micPreview = (
+        <MicPreview isVisible isMicOn={monitoringStarted} isConnected={connectionStatus === 'connected'} />
+    );
+
     return (
         <>
             <NormalizeFontSize size={10} />
             <Container id="phone-ui-container">
-                <MicPreview isVisible isMicOn={monitoringStarted} isConnected={connectionStatus === 'connected'} />
-                <UserMediaEnabled fallback={<h2>Please allow access to the microphone.</h2>}>
-                    <ConfirmReadiness onConfirm={onConfirm} />
-                    <Connect
-                        roomId={roomId}
-                        isVisible={true}
-                        connectionStatus={connectionStatus}
-                        onConnect={onConnect}
-                    />
-                    <RemoteMicKeyboard />
-                    <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
-                        WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
-                    </KeepAwake>
-                    <MicInputState
-                        onClick={() =>
-                            monitoringStarted
-                                ? SimplifiedMic.stopMonitoring()
-                                : SimplifiedMic.startMonitoring(undefined)
-                        }>
-                        Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
-                    </MicInputState>
+                <UserMediaEnabled
+                    fallback={
+                        <>
+                            {micPreview}
+                            <h2>Please allow access to the microphone.</h2>
+                        </>
+                    }>
+                    <Panel>
+                        <MicPreview
+                            isVisible
+                            isMicOn={monitoringStarted}
+                            isConnected={connectionStatus === 'connected'}
+                        />
+                        <ConfirmReadiness onConfirm={onConfirm} />
+                        <Connect
+                            roomId={roomId}
+                            isVisible={true}
+                            connectionStatus={connectionStatus}
+                            onConnect={onConnect}
+                        />
+                    </Panel>
+                    <Panel>
+                        <RemoteMicKeyboard />
+                        <KeepAwake onClick={() => setKeepAwake(!isKeepAwakeOn)}>
+                            WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
+                        </KeepAwake>
+                        <MicInputState
+                            onClick={() =>
+                                monitoringStarted
+                                    ? SimplifiedMic.stopMonitoring()
+                                    : SimplifiedMic.startMonitoring(undefined)
+                            }>
+                            Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
+                        </MicInputState>
+                    </Panel>
                 </UserMediaEnabled>
             </Container>
         </>
@@ -104,6 +122,12 @@ const Container = styled(MenuContainer)`
     box-sizing: border-box;
     height: 100vh;
     max-height: 800px;
+
+    @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
+        max-width: 960px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
 
     ${MenuButton} {
         padding: 0.5em;
@@ -125,6 +149,16 @@ const Container = styled(MenuContainer)`
     }
 `;
 
+const Panel = styled.div`
+    flex: 1;
+
+    @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+`;
+
 const MicInputState = styled.div`
     ${typography}
     strong {
@@ -132,6 +166,4 @@ const MicInputState = styled.div`
     }
     align-self: flex-end;
 `;
-const KeepAwake = styled(MicInputState)`
-    margin-top: auto;
-`;
+const KeepAwake = styled(MicInputState)``;

@@ -29,7 +29,7 @@ export default function PlayerChange({ playerNumber }: Props) {
             </PlayerChangeContainer>
             {isOpen && (
                 <Modal onClose={closeModal}>
-                    <MenuContainer>
+                    <Menu>
                         <MenuButton
                             data-test="change-to-player-1"
                             onClick={() => selectPlayer(0)}
@@ -52,18 +52,23 @@ export default function PlayerChange({ playerNumber }: Props) {
                         </MenuButton>
                         <hr />
                         <MenuButton onClick={closeModal}>Close</MenuButton>
-                    </MenuContainer>
+                    </Menu>
                 </Modal>
             )}
         </>
     );
 }
 
+const Menu = styled(MenuContainer)`
+    gap: 0;
+`;
+
 const PlayerChangeContainer = styled.button`
     position: absolute;
+    z-index: 1;
     color: white;
     right: 1rem;
-    top: 1rem;
+    bottom: 1rem;
     padding: 1rem;
     font-size: 2rem;
     text-transform: uppercase;
