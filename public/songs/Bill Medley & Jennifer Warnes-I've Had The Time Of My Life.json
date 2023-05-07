@@ -3,12 +3,12 @@
   "artist": "Bill Medley & Jennifer Warnes",
   "bpm": 217.6,
   "bar": 4,
-  "gap": 986.6972477064219,
+  "gap": 1266.9926470588234,
   "video": "4BQLE_RrTSU",
   "edition": "[DUET]-Songs",
   "language": "English",
   "year": "1987",
-  "videoGap": -2,
+  "videoGap": 0,
   "author": "Wegti",
   "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22349",
   "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10541",
@@ -22,70 +22,70 @@
           "notes": [
             {
               "type": "normal",
-              "start": 14,
+              "start": 15,
               "length": 3,
               "pitch": -1,
               "lyrics": "Now "
             },
             {
               "type": "normal",
-              "start": 21,
+              "start": 22,
               "length": 12,
               "pitch": 4,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 52,
+              "start": 53,
               "length": 6,
               "pitch": 4,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 65,
+              "start": 66,
               "length": 2,
               "pitch": 4,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 69,
+              "start": 70,
               "length": 3,
               "pitch": 4,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 74,
+              "start": 75,
               "length": 2,
               "pitch": 6,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 79,
+              "start": 80,
               "length": 3,
               "pitch": 8,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 84,
+              "start": 85,
               "length": 2,
               "pitch": 9,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 87,
+              "start": 88,
               "length": 2,
               "pitch": 8,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 90,
+              "start": 91,
               "length": 3,
               "pitch": 6,
               "lyrics": "~ ."
@@ -94,67 +94,67 @@
           "type": "notes"
         },
         {
-          "start": 93,
+          "start": 94,
           "notes": [
             {
               "type": "normal",
-              "start": 108,
+              "start": 109,
               "length": 2,
               "pitch": -1,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 111,
+              "start": 112,
               "length": 2,
               "pitch": -1,
               "lyrics": "I "
             },
             {
               "type": "star",
-              "start": 116,
+              "start": 117,
               "length": 5,
               "pitch": 9,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 123,
+              "start": 124,
               "length": 2,
               "pitch": 9,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 128,
+              "start": 129,
               "length": 4,
               "pitch": 8,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 136,
+              "start": 137,
               "length": 2,
               "pitch": 6,
               "lyrics": "like "
             },
             {
               "type": "normal",
-              "start": 140,
+              "start": 141,
               "length": 2,
               "pitch": 4,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 144,
+              "start": 145,
               "length": 3,
               "pitch": 6,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 149,
+              "start": 150,
               "length": 4,
               "pitch": 4,
               "lyrics": "fore."
@@ -163,60 +163,60 @@
           "type": "notes"
         },
         {
-          "start": 153,
+          "start": 154,
           "notes": [
             {
               "type": "normal",
-              "start": 167,
+              "start": 168,
               "length": 2,
               "pitch": -1,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 171,
+              "start": 172,
               "length": 4,
               "pitch": 6,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 181,
+              "start": 182,
               "length": 3,
               "pitch": 4,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 200,
+              "start": 201,
               "length": 4,
               "pitch": 6,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 206,
+              "start": 207,
               "length": 3,
               "pitch": 8,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 212,
+              "start": 213,
               "length": 2,
               "pitch": 9,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 215,
+              "start": 216,
               "length": 2,
               "pitch": 8,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 218,
+              "start": 219,
               "length": 3,
               "pitch": 6,
               "lyrics": "~"
@@ -225,60 +225,60 @@
           "type": "notes"
         },
         {
-          "start": 221,
+          "start": 222,
           "notes": [
             {
               "type": "normal",
-              "start": 236,
+              "start": 237,
               "length": 2,
               "pitch": -1,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 240,
+              "start": 241,
               "length": 2,
               "pitch": -1,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 245,
+              "start": 246,
               "length": 3,
               "pitch": 9,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 250,
+              "start": 251,
               "length": 2,
               "pitch": 9,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 253,
+              "start": 254,
               "length": 3,
               "pitch": 9,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 258,
+              "start": 259,
               "length": 2,
               "pitch": 8,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 261,
+              "start": 262,
               "length": 3,
               "pitch": 6,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 265,
+              "start": 266,
               "length": 2,
               "pitch": 4,
               "lyrics": "~ ,"
@@ -288,64 +288,64 @@
         },
         {
           "type": "pause",
-          "start": 267,
-          "end": 510
+          "start": 268,
+          "end": 511
         },
         {
-          "start": 510,
+          "start": 511,
           "notes": [
             {
               "type": "normal",
-              "start": 525,
+              "start": 526,
               "length": 3,
               "pitch": -1,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 530,
+              "start": 531,
               "length": 2,
               "pitch": 1,
               "lyrics": "been "
             },
             {
               "type": "normal",
-              "start": 534,
+              "start": 535,
               "length": 3,
               "pitch": 2,
               "lyrics": "wai"
             },
             {
               "type": "normal",
-              "start": 538,
+              "start": 539,
               "length": 2,
               "pitch": 1,
               "lyrics": "ting "
             },
             {
               "type": "normal",
-              "start": 542,
+              "start": 543,
               "length": 2,
               "pitch": 2,
               "lyrics": "for "
             },
             {
               "type": "normal",
-              "start": 546,
+              "start": 547,
               "length": 2,
               "pitch": 1,
               "lyrics": "so "
             },
             {
               "type": "normal",
-              "start": 550,
+              "start": 551,
               "length": 2,
               "pitch": 2,
               "lyrics": "lo"
             },
             {
               "type": "normal",
-              "start": 553,
+              "start": 554,
               "length": 2,
               "pitch": -1,
               "lyrics": "~ng,"
@@ -354,60 +354,60 @@
           "type": "notes"
         },
         {
-          "start": 555,
+          "start": 556,
           "notes": [
             {
               "type": "normal",
-              "start": 557,
+              "start": 558,
               "length": 3,
               "pitch": -1,
               "lyrics": "Now "
             },
             {
               "type": "normal",
-              "start": 561,
+              "start": 562,
               "length": 2,
               "pitch": 1,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 566,
+              "start": 567,
               "length": 2,
               "pitch": 2,
               "lyrics": "fi"
             },
             {
               "type": "normal",
-              "start": 569,
+              "start": 570,
               "length": 2,
               "pitch": 1,
               "lyrics": "naly "
             },
             {
               "type": "normal",
-              "start": 573,
+              "start": 574,
               "length": 3,
               "pitch": 2,
               "lyrics": "found "
             },
             {
               "type": "normal",
-              "start": 578,
+              "start": 579,
               "length": 2,
               "pitch": 1,
               "lyrics": "some"
             },
             {
               "type": "normal",
-              "start": 582,
+              "start": 583,
               "length": 2,
               "pitch": 2,
               "lyrics": "o"
             },
             {
               "type": "normal",
-              "start": 585,
+              "start": 586,
               "length": 2,
               "pitch": -1,
               "lyrics": "~ne"
@@ -416,32 +416,32 @@
           "type": "notes"
         },
         {
-          "start": 587,
+          "start": 588,
           "notes": [
             {
               "type": "normal",
-              "start": 587,
+              "start": 588,
               "length": 2,
               "pitch": -1,
               "lyrics": "To "
             },
             {
               "type": "normal",
-              "start": 590,
+              "start": 591,
               "length": 3,
               "pitch": -1,
               "lyrics": "stand "
             },
             {
               "type": "normal",
-              "start": 594,
+              "start": 595,
               "length": 3,
               "pitch": -3,
               "lyrics": "by "
             },
             {
               "type": "normal",
-              "start": 599,
+              "start": 600,
               "length": 3,
               "pitch": -1,
               "lyrics": "me."
@@ -451,71 +451,71 @@
         },
         {
           "type": "pause",
-          "start": 602,
-          "end": 768
+          "start": 603,
+          "end": 769
         },
         {
-          "start": 768,
+          "start": 769,
           "notes": [
             {
               "type": "normal",
-              "start": 783,
+              "start": 784,
               "length": 2,
               "pitch": 11,
               "lyrics": "Now "
             },
             {
               "type": "normal",
-              "start": 787,
+              "start": 788,
               "length": 2,
               "pitch": 13,
               "lyrics": "with "
             },
             {
               "type": "normal",
-              "start": 791,
+              "start": 792,
               "length": 3,
               "pitch": 14,
               "lyrics": "pa"
             },
             {
               "type": "normal",
-              "start": 795,
+              "start": 796,
               "length": 2,
               "pitch": 13,
               "lyrics": "ssion "
             },
             {
               "type": "normal",
-              "start": 798,
+              "start": 799,
               "length": 2,
               "pitch": 14,
               "lyrics": "in "
             },
             {
               "type": "normal",
-              "start": 801,
+              "start": 802,
               "length": 2,
               "pitch": 13,
               "lyrics": "our "
             },
             {
               "type": "normal",
-              "start": 805,
+              "start": 806,
               "length": 2,
               "pitch": 14,
               "lyrics": "eyes"
             },
             {
               "type": "normal",
-              "start": 808,
+              "start": 809,
               "length": 1,
               "pitch": 13,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 810,
+              "start": 811,
               "length": 2,
               "pitch": 11,
               "lyrics": "~"
@@ -524,60 +524,60 @@
           "type": "notes"
         },
         {
-          "start": 812,
+          "start": 813,
           "notes": [
             {
               "type": "normal",
-              "start": 814,
+              "start": 815,
               "length": 3,
               "pitch": 11,
               "lyrics": "There's "
             },
             {
               "type": "normal",
-              "start": 819,
+              "start": 820,
               "length": 3,
               "pitch": 13,
               "lyrics": "no "
             },
             {
               "type": "normal",
-              "start": 823,
+              "start": 824,
               "length": 2,
               "pitch": 14,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 826,
+              "start": 827,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 829,
+              "start": 830,
               "length": 2,
               "pitch": 14,
               "lyrics": "could "
             },
             {
               "type": "normal",
-              "start": 832,
+              "start": 833,
               "length": 2,
               "pitch": 13,
               "lyrics": "dis"
             },
             {
               "type": "normal",
-              "start": 836,
+              "start": 837,
               "length": 3,
               "pitch": 14,
               "lyrics": "guise"
             },
             {
               "type": "normal",
-              "start": 840,
+              "start": 841,
               "length": 2,
               "pitch": 11,
               "lyrics": "~"
@@ -586,39 +586,39 @@
           "type": "notes"
         },
         {
-          "start": 842,
+          "start": 843,
           "notes": [
             {
               "type": "normal",
-              "start": 844,
+              "start": 845,
               "length": 1,
               "pitch": 11,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 846,
+              "start": 847,
               "length": 3,
               "pitch": 11,
               "lyrics": "se"
             },
             {
               "type": "normal",
-              "start": 851,
+              "start": 852,
               "length": 2,
               "pitch": 9,
               "lyrics": "cre"
             },
             {
               "type": "normal",
-              "start": 854,
+              "start": 855,
               "length": 3,
               "pitch": 11,
               "lyrics": "tly"
             },
             {
               "type": "normal",
-              "start": 858,
+              "start": 859,
               "length": 2,
               "pitch": 8,
               "lyrics": "~ ."
@@ -628,64 +628,64 @@
         },
         {
           "type": "pause",
-          "start": 860,
-          "end": 896
+          "start": 861,
+          "end": 897
         },
         {
-          "start": 896,
+          "start": 897,
           "notes": [
             {
               "type": "normal",
-              "start": 911,
+              "start": 912,
               "length": 2,
               "pitch": 11,
               "lyrics": "So "
             },
             {
               "type": "normal",
-              "start": 915,
+              "start": 916,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 919,
+              "start": 920,
               "length": 2,
               "pitch": 14,
               "lyrics": "take "
             },
             {
               "type": "normal",
-              "start": 923,
+              "start": 924,
               "length": 2,
               "pitch": 13,
               "lyrics": "each "
             },
             {
               "type": "normal",
-              "start": 927,
+              "start": 928,
               "length": 1,
               "pitch": 14,
               "lyrics": "o"
             },
             {
               "type": "normal",
-              "start": 929,
+              "start": 930,
               "length": 2,
               "pitch": 13,
               "lyrics": "ther's "
             },
             {
               "type": "normal",
-              "start": 933,
+              "start": 934,
               "length": 3,
               "pitch": 14,
               "lyrics": "ha"
             },
             {
               "type": "normal",
-              "start": 937,
+              "start": 938,
               "length": 2,
               "pitch": 11,
               "lyrics": "~nd,"
@@ -694,53 +694,53 @@
           "type": "notes"
         },
         {
-          "start": 939,
+          "start": 940,
           "notes": [
             {
               "type": "normal",
-              "start": 943,
+              "start": 944,
               "length": 2,
               "pitch": 11,
               "lyrics": "'cause "
             },
             {
               "type": "normal",
-              "start": 947,
+              "start": 948,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 951,
+              "start": 952,
               "length": 3,
               "pitch": 14,
               "lyrics": "seem "
             },
             {
               "type": "normal",
-              "start": 955,
+              "start": 956,
               "length": 2,
               "pitch": 13,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 958,
+              "start": 959,
               "length": 2,
               "pitch": 14,
               "lyrics": "un"
             },
             {
               "type": "normal",
-              "start": 961,
+              "start": 962,
               "length": 2,
               "pitch": 13,
               "lyrics": "der"
             },
             {
               "type": "normal",
-              "start": 964,
+              "start": 965,
               "length": 4,
               "pitch": 14,
               "lyrics": "stand"
@@ -749,39 +749,39 @@
           "type": "notes"
         },
         {
-          "start": 968,
+          "start": 969,
           "notes": [
             {
               "type": "normal",
-              "start": 972,
+              "start": 973,
               "length": 1,
               "pitch": 14,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 974,
+              "start": 975,
               "length": 2,
               "pitch": 14,
               "lyrics": "ur"
             },
             {
               "type": "normal",
-              "start": 979,
+              "start": 980,
               "length": 2,
               "pitch": 18,
               "lyrics": "gen"
             },
             {
               "type": "normal",
-              "start": 983,
+              "start": 984,
               "length": 4,
               "pitch": 16,
               "lyrics": "~"
             },
             {
               "type": "star",
-              "start": 991,
+              "start": 992,
               "length": 13,
               "pitch": 16,
               "lyrics": "cy."
@@ -791,36 +791,36 @@
         },
         {
           "type": "pause",
-          "start": 1004,
-          "end": 1014
+          "start": 1005,
+          "end": 1015
         },
         {
-          "start": 1014,
+          "start": 1015,
           "notes": [
             {
               "type": "normal",
-              "start": 1029,
+              "start": 1030,
               "length": 3,
               "pitch": 20,
               "lyrics": "Just "
             },
             {
               "type": "normal",
-              "start": 1034,
+              "start": 1035,
               "length": 2,
               "pitch": 18,
               "lyrics": "re"
             },
             {
               "type": "normal",
-              "start": 1037,
+              "start": 1038,
               "length": 3,
               "pitch": 16,
               "lyrics": "mem"
             },
             {
               "type": "normal",
-              "start": 1043,
+              "start": 1044,
               "length": 2,
               "pitch": 13,
               "lyrics": "ber:"
@@ -830,50 +830,50 @@
         },
         {
           "type": "pause",
-          "start": 1045,
-          "end": 1097
+          "start": 1046,
+          "end": 1098
         },
         {
-          "start": 1097,
+          "start": 1098,
           "notes": [
             {
               "type": "normal",
-              "start": 1112,
+              "start": 1113,
               "length": 3,
               "pitch": 14,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1120,
+              "start": 1121,
               "length": 5,
               "pitch": 14,
               "lyrics": "can't "
             },
             {
               "type": "normal",
-              "start": 1128,
+              "start": 1129,
               "length": 7,
               "pitch": 14,
               "lyrics": "get "
             },
             {
               "type": "normal",
-              "start": 1137,
+              "start": 1138,
               "length": 2,
               "pitch": 12,
               "lyrics": "e"
             },
             {
               "type": "normal",
-              "start": 1140,
+              "start": 1141,
               "length": 3,
               "pitch": 12,
               "lyrics": "nough "
             },
             {
               "type": "normal",
-              "start": 1147,
+              "start": 1148,
               "length": 6,
               "pitch": 11,
               "lyrics": "of,"
@@ -883,36 +883,36 @@
         },
         {
           "type": "pause",
-          "start": 1153,
-          "end": 1240
+          "start": 1154,
+          "end": 1241
         },
         {
-          "start": 1240,
+          "start": 1241,
           "notes": [
             {
               "type": "normal",
-              "start": 1255,
+              "start": 1256,
               "length": 3,
               "pitch": 15,
               "lyrics": "This "
             },
             {
               "type": "normal",
-              "start": 1261,
+              "start": 1262,
               "length": 3,
               "pitch": 15,
               "lyrics": "could "
             },
             {
               "type": "star",
-              "start": 1267,
+              "start": 1268,
               "length": 3,
               "pitch": 20,
               "lyrics": "be "
             },
             {
               "type": "normal",
-              "start": 1272,
+              "start": 1273,
               "length": 5,
               "pitch": 18,
               "lyrics": "love,"
@@ -921,81 +921,81 @@
           "type": "notes"
         },
         {
-          "start": 1277,
+          "start": 1278,
           "notes": [
             {
               "type": "normal",
-              "start": 1288,
+              "start": 1289,
               "length": 4,
               "pitch": 16,
               "lyrics": "Be"
             },
             {
               "type": "normal",
-              "start": 1296,
+              "start": 1297,
               "length": 6,
               "pitch": 18,
               "lyrics": "cause "
             },
             {
               "type": "star",
-              "start": 1317,
+              "start": 1318,
               "length": 9,
               "pitch": 20,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 1333,
+              "start": 1334,
               "length": 8,
               "pitch": 20,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 1349,
+              "start": 1350,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 1353,
+              "start": 1354,
               "length": 4,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 1358,
+              "start": 1359,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 1363,
+              "start": 1364,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 1368,
+              "start": 1369,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 1371,
+              "start": 1372,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1374,
+              "start": 1375,
               "length": 3,
               "pitch": 18,
               "lyrics": "~ ."
@@ -1004,67 +1004,67 @@
           "type": "notes"
         },
         {
-          "start": 1377,
+          "start": 1378,
           "notes": [
             {
               "type": "normal",
-              "start": 1389,
+              "start": 1390,
               "length": 2,
               "pitch": 11,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 1393,
+              "start": 1394,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1397,
+              "start": 1398,
               "length": 9,
               "pitch": 21,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 1408,
+              "start": 1409,
               "length": 2,
               "pitch": 21,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 1413,
+              "start": 1414,
               "length": 5,
               "pitch": 20,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 1421,
+              "start": 1422,
               "length": 2,
               "pitch": 18,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 1425,
+              "start": 1426,
               "length": 2,
               "pitch": 16,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 1429,
+              "start": 1430,
               "length": 2,
               "pitch": 18,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 1433,
+              "start": 1434,
               "length": 5,
               "pitch": 16,
               "lyrics": "fore."
@@ -1073,60 +1073,60 @@
           "type": "notes"
         },
         {
-          "start": 1438,
+          "start": 1439,
           "notes": [
             {
               "type": "normal",
-              "start": 1453,
+              "start": 1454,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 1457,
+              "start": 1458,
               "length": 4,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1465,
+              "start": 1466,
               "length": 5,
               "pitch": 16,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 1485,
+              "start": 1486,
               "length": 2,
               "pitch": 18,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 1489,
+              "start": 1490,
               "length": 2,
               "pitch": 20,
               "lyrics": "the "
             },
             {
               "type": "star",
-              "start": 1493,
+              "start": 1494,
               "length": 5,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 1499,
+              "start": 1500,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1502,
+              "start": 1503,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -1135,67 +1135,67 @@
           "type": "notes"
         },
         {
-          "start": 1504,
+          "start": 1505,
           "notes": [
             {
               "type": "normal",
-              "start": 1517,
+              "start": 1518,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 1521,
+              "start": 1522,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1529,
+              "start": 1530,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 1534,
+              "start": 1535,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 1537,
+              "start": 1538,
               "length": 3,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 1541,
+              "start": 1542,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 1545,
+              "start": 1546,
               "length": 3,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 1549,
+              "start": 1550,
               "length": 11,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1561,
+              "start": 1562,
               "length": 33,
               "pitch": 16,
               "lyrics": "~ ."
@@ -1205,36 +1205,36 @@
         },
         {
           "type": "pause",
-          "start": 1594,
-          "end": 1602
+          "start": 1595,
+          "end": 1603
         },
         {
-          "start": 1602,
+          "start": 1603,
           "notes": [
             {
               "type": "freestyle",
-              "start": 1617,
+              "start": 1618,
               "length": 2,
               "pitch": 18,
               "lyrics": "Hey"
             },
             {
               "type": "freestyle",
-              "start": 1620,
+              "start": 1621,
               "length": 1,
               "pitch": 13,
               "lyrics": "~ , "
             },
             {
               "type": "freestyle",
-              "start": 1623,
+              "start": 1624,
               "length": 3,
               "pitch": 16,
               "lyrics": "ba"
             },
             {
               "type": "freestyle",
-              "start": 1629,
+              "start": 1630,
               "length": 2,
               "pitch": 18,
               "lyrics": "by!"
@@ -1244,57 +1244,57 @@
         },
         {
           "type": "pause",
-          "start": 1631,
-          "end": 1795
+          "start": 1632,
+          "end": 1796
         },
         {
-          "start": 1795,
+          "start": 1796,
           "notes": [
             {
               "type": "normal",
-              "start": 1810,
+              "start": 1811,
               "length": 2,
               "pitch": 11,
               "lyrics": "So "
             },
             {
               "type": "normal",
-              "start": 1814,
+              "start": 1815,
               "length": 3,
               "pitch": 13,
               "lyrics": "we'll "
             },
             {
               "type": "normal",
-              "start": 1822,
+              "start": 1823,
               "length": 2,
               "pitch": 14,
               "lyrics": "just "
             },
             {
               "type": "normal",
-              "start": 1826,
+              "start": 1827,
               "length": 3,
               "pitch": 14,
               "lyrics": "let "
             },
             {
               "type": "normal",
-              "start": 1830,
+              "start": 1831,
               "length": 1,
               "pitch": 13,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 1832,
+              "start": 1833,
               "length": 2,
               "pitch": 14,
               "lyrics": "go"
             },
             {
               "type": "normal",
-              "start": 1835,
+              "start": 1836,
               "length": 2,
               "pitch": 11,
               "lyrics": "~,"
@@ -1303,74 +1303,74 @@
           "type": "notes"
         },
         {
-          "start": 1837,
+          "start": 1838,
           "notes": [
             {
               "type": "normal",
-              "start": 1838,
+              "start": 1839,
               "length": 2,
               "pitch": 11,
               "lyrics": "Don't "
             },
             {
               "type": "normal",
-              "start": 1842,
+              "start": 1843,
               "length": 2,
               "pitch": 11,
               "lyrics": "be "
             },
             {
               "type": "normal",
-              "start": 1846,
+              "start": 1847,
               "length": 2,
               "pitch": 13,
               "lyrics": "a"
             },
             {
               "type": "normal",
-              "start": 1850,
+              "start": 1851,
               "length": 5,
               "pitch": 14,
               "lyrics": "fraid "
             },
             {
               "type": "normal",
-              "start": 1862,
+              "start": 1863,
               "length": 2,
               "pitch": 13,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 1866,
+              "start": 1867,
               "length": 5,
               "pitch": 14,
               "lyrics": "loose "
             },
             {
               "type": "star",
-              "start": 1874,
+              "start": 1875,
               "length": 3,
               "pitch": 18,
               "lyrics": "con"
             },
             {
               "type": "normal",
-              "start": 1880,
+              "start": 1881,
               "length": 3,
               "pitch": 16,
               "lyrics": "trol"
             },
             {
               "type": "normal",
-              "start": 1884,
+              "start": 1885,
               "length": 1,
               "pitch": 13,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1886,
+              "start": 1887,
               "length": 2,
               "pitch": 11,
               "lyrics": "~ !"
@@ -1379,18 +1379,18 @@
           "type": "notes"
         },
         {
-          "start": 1888,
+          "start": 1889,
           "notes": [
             {
               "type": "freestyle",
-              "start": 1895,
+              "start": 1896,
               "length": 1,
               "pitch": 17,
               "lyrics": "No"
             },
             {
               "type": "freestyle",
-              "start": 1897,
+              "start": 1898,
               "length": 2,
               "pitch": 16,
               "lyrics": "~ !"
@@ -1400,36 +1400,36 @@
         },
         {
           "type": "pause",
-          "start": 1899,
-          "end": 2018
+          "start": 1900,
+          "end": 2019
         },
         {
-          "start": 2018,
+          "start": 2019,
           "notes": [
             {
               "type": "normal",
-              "start": 2033,
+              "start": 2034,
               "length": 3,
               "pitch": 16,
               "lyrics": "Stay "
             },
             {
               "type": "normal",
-              "start": 2037,
+              "start": 2038,
               "length": 2,
               "pitch": 11,
               "lyrics": "with "
             },
             {
               "type": "normal",
-              "start": 2041,
+              "start": 2042,
               "length": 2,
               "pitch": 13,
               "lyrics": "me"
             },
             {
               "type": "normal",
-              "start": 2044,
+              "start": 2045,
               "length": 5,
               "pitch": 16,
               "lyrics": "~"
@@ -1438,32 +1438,32 @@
           "type": "notes"
         },
         {
-          "start": 2049,
+          "start": 2050,
           "notes": [
             {
               "type": "normal",
-              "start": 2060,
+              "start": 2061,
               "length": 2,
               "pitch": 20,
               "lyrics": "Just "
             },
             {
               "type": "normal",
-              "start": 2063,
+              "start": 2064,
               "length": 2,
               "pitch": 18,
               "lyrics": "re"
             },
             {
               "type": "normal",
-              "start": 2066,
+              "start": 2067,
               "length": 3,
               "pitch": 16,
               "lyrics": "mem"
             },
             {
               "type": "normal",
-              "start": 2072,
+              "start": 2073,
               "length": 2,
               "pitch": 11,
               "lyrics": "ber:"
@@ -1473,36 +1473,36 @@
         },
         {
           "type": "pause",
-          "start": 2074,
-          "end": 2076
+          "start": 2075,
+          "end": 2077
         },
         {
-          "start": 2076,
+          "start": 2077,
           "notes": [
             {
               "type": "normal",
-              "start": 2091,
+              "start": 2092,
               "length": 6,
               "pitch": 13,
               "lyrics": "You're "
             },
             {
               "type": "normal",
-              "start": 2103,
+              "start": 2104,
               "length": 3,
               "pitch": 18,
               "lyrics": "the "
             },
             {
               "type": "star",
-              "start": 2108,
+              "start": 2109,
               "length": 7,
               "pitch": 16,
               "lyrics": "one "
             },
             {
               "type": "normal",
-              "start": 2119,
+              "start": 2120,
               "length": 5,
               "pitch": 13,
               "lyrics": "thing,"
@@ -1512,50 +1512,50 @@
         },
         {
           "type": "pause",
-          "start": 2124,
-          "end": 2197
+          "start": 2125,
+          "end": 2198
         },
         {
-          "start": 2197,
+          "start": 2198,
           "notes": [
             {
               "type": "normal",
-              "start": 2212,
+              "start": 2213,
               "length": 3,
               "pitch": 13,
               "lyrics": "So "
             },
             {
               "type": "normal",
-              "start": 2216,
+              "start": 2217,
               "length": 2,
               "pitch": 13,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2220,
+              "start": 2221,
               "length": 5,
               "pitch": 13,
               "lyrics": "tell "
             },
             {
               "type": "normal",
-              "start": 2228,
+              "start": 2229,
               "length": 4,
               "pitch": 18,
               "lyrics": "you "
             },
             {
               "type": "normal",
-              "start": 2236,
+              "start": 2237,
               "length": 9,
               "pitch": 16,
               "lyrics": "some"
             },
             {
               "type": "normal",
-              "start": 2248,
+              "start": 2249,
               "length": 5,
               "pitch": 13,
               "lyrics": "thing:"
@@ -1565,36 +1565,36 @@
         },
         {
           "type": "pause",
-          "start": 2253,
-          "end": 2269
+          "start": 2254,
+          "end": 2270
         },
         {
-          "start": 2269,
+          "start": 2270,
           "notes": [
             {
               "type": "normal",
-              "start": 2284,
+              "start": 2285,
               "length": 3,
               "pitch": 15,
               "lyrics": "This "
             },
             {
               "type": "normal",
-              "start": 2289,
+              "start": 2290,
               "length": 3,
               "pitch": 15,
               "lyrics": "could "
             },
             {
               "type": "normal",
-              "start": 2295,
+              "start": 2296,
               "length": 3,
               "pitch": 20,
               "lyrics": "be "
             },
             {
               "type": "normal",
-              "start": 2301,
+              "start": 2302,
               "length": 6,
               "pitch": 18,
               "lyrics": "love,"
@@ -1603,81 +1603,81 @@
           "type": "notes"
         },
         {
-          "start": 2307,
+          "start": 2308,
           "notes": [
             {
               "type": "normal",
-              "start": 2316,
+              "start": 2317,
               "length": 5,
               "pitch": 16,
               "lyrics": "Be"
             },
             {
               "type": "normal",
-              "start": 2324,
+              "start": 2325,
               "length": 5,
               "pitch": 18,
               "lyrics": "cause "
             },
             {
               "type": "star",
-              "start": 2344,
+              "start": 2345,
               "length": 13,
               "pitch": 20,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 2361,
+              "start": 2362,
               "length": 7,
               "pitch": 20,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 2376,
+              "start": 2377,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 2381,
+              "start": 2382,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 2386,
+              "start": 2387,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 2391,
+              "start": 2392,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 2396,
+              "start": 2397,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 2399,
+              "start": 2400,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2402,
+              "start": 2403,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ ."
@@ -1686,67 +1686,67 @@
           "type": "notes"
         },
         {
-          "start": 2404,
+          "start": 2405,
           "notes": [
             {
               "type": "normal",
-              "start": 2417,
+              "start": 2418,
               "length": 2,
               "pitch": 11,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 2421,
+              "start": 2422,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "star",
-              "start": 2425,
+              "start": 2426,
               "length": 9,
               "pitch": 21,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 2437,
+              "start": 2438,
               "length": 2,
               "pitch": 21,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 2441,
+              "start": 2442,
               "length": 4,
               "pitch": 20,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 2449,
+              "start": 2450,
               "length": 2,
               "pitch": 18,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 2453,
+              "start": 2454,
               "length": 3,
               "pitch": 16,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 2457,
+              "start": 2458,
               "length": 2,
               "pitch": 18,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 2461,
+              "start": 2462,
               "length": 3,
               "pitch": 16,
               "lyrics": "fore."
@@ -1756,64 +1756,64 @@
         },
         {
           "type": "pause",
-          "start": 2464,
-          "end": 2466
+          "start": 2465,
+          "end": 2467
         },
         {
-          "start": 2466,
+          "start": 2467,
           "notes": [
             {
               "type": "normal",
-              "start": 2481,
+              "start": 2482,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 2485,
+              "start": 2486,
               "length": 4,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2494,
+              "start": 2495,
               "length": 4,
               "pitch": 16,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 2513,
+              "start": 2514,
               "length": 2,
               "pitch": 18,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 2517,
+              "start": 2518,
               "length": 2,
               "pitch": 20,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 2521,
+              "start": 2522,
               "length": 6,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 2528,
+              "start": 2529,
               "length": 1,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2530,
+              "start": 2531,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -1822,60 +1822,60 @@
           "type": "notes"
         },
         {
-          "start": 2532,
+          "start": 2533,
           "notes": [
             {
               "type": "normal",
-              "start": 2545,
+              "start": 2546,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 2549,
+              "start": 2550,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2557,
+              "start": 2558,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 2562,
+              "start": 2563,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 2566,
+              "start": 2567,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 2570,
+              "start": 2571,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "star",
-              "start": 2574,
+              "start": 2575,
               "length": 3,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 2578,
+              "start": 2579,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ ,"
@@ -1884,81 +1884,81 @@
           "type": "notes"
         },
         {
-          "start": 2580,
+          "start": 2581,
           "notes": [
             {
               "type": "normal",
-              "start": 2582,
+              "start": 2583,
               "length": 3,
               "pitch": 16,
               "lyrics": "'cause"
             },
             {
               "type": "normal",
-              "start": 2586,
+              "start": 2587,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ "
             },
             {
               "type": "normal",
-              "start": 2590,
+              "start": 2591,
               "length": 8,
               "pitch": 16,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2621,
+              "start": 2622,
               "length": 7,
               "pitch": 16,
               "lyrics": "have "
             },
             {
               "type": "normal",
-              "start": 2634,
+              "start": 2635,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 2638,
+              "start": 2639,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 2643,
+              "start": 2644,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 2648,
+              "start": 2649,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 2653,
+              "start": 2654,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 2656,
+              "start": 2657,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2659,
+              "start": 2660,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -1967,67 +1967,67 @@
           "type": "notes"
         },
         {
-          "start": 2661,
+          "start": 2662,
           "notes": [
             {
               "type": "normal",
-              "start": 2674,
+              "start": 2675,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 2678,
+              "start": 2679,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2686,
+              "start": 2687,
               "length": 6,
               "pitch": 21,
               "lyrics": "searched "
             },
             {
               "type": "normal",
-              "start": 2695,
+              "start": 2696,
               "length": 2,
               "pitch": 21,
               "lyrics": "through "
             },
             {
               "type": "normal",
-              "start": 2698,
+              "start": 2699,
               "length": 5,
               "pitch": 20,
               "lyrics": "e"
             },
             {
               "type": "normal",
-              "start": 2707,
+              "start": 2708,
               "length": 2,
               "pitch": 18,
               "lyrics": "very "
             },
             {
               "type": "normal",
-              "start": 2710,
+              "start": 2711,
               "length": 2,
               "pitch": 16,
               "lyrics": "o"
             },
             {
               "type": "normal",
-              "start": 2714,
+              "start": 2715,
               "length": 2,
               "pitch": 18,
               "lyrics": "pen "
             },
             {
               "type": "normal",
-              "start": 2718,
+              "start": 2719,
               "length": 6,
               "pitch": 16,
               "lyrics": "door,"
@@ -2036,60 +2036,60 @@
           "type": "notes"
         },
         {
-          "start": 2724,
+          "start": 2725,
           "notes": [
             {
               "type": "normal",
-              "start": 2739,
+              "start": 2740,
               "length": 2,
               "pitch": 11,
               "lyrics": "'till "
             },
             {
               "type": "normal",
-              "start": 2742,
+              "start": 2743,
               "length": 5,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2750,
+              "start": 2751,
               "length": 7,
               "pitch": 16,
               "lyrics": "found "
             },
             {
               "type": "normal",
-              "start": 2770,
+              "start": 2771,
               "length": 3,
               "pitch": 18,
               "lyrics": "the"
             },
             {
               "type": "normal",
-              "start": 2774,
+              "start": 2775,
               "length": 2,
               "pitch": 20,
               "lyrics": "~ "
             },
             {
               "type": "normal",
-              "start": 2779,
+              "start": 2780,
               "length": 5,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 2785,
+              "start": 2786,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2788,
+              "start": 2789,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -2098,67 +2098,67 @@
           "type": "notes"
         },
         {
-          "start": 2790,
+          "start": 2791,
           "notes": [
             {
               "type": "normal",
-              "start": 2803,
+              "start": 2804,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 2807,
+              "start": 2808,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2815,
+              "start": 2816,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 2819,
+              "start": 2820,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 2823,
+              "start": 2824,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 2827,
+              "start": 2828,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 2831,
+              "start": 2832,
               "length": 3,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 2836,
+              "start": 2837,
               "length": 9,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "star",
-              "start": 2847,
+              "start": 2848,
               "length": 36,
               "pitch": 16,
               "lyrics": "~ ."
@@ -2168,78 +2168,78 @@
         },
         {
           "type": "pause",
-          "start": 2883,
-          "end": 3310
+          "start": 2884,
+          "end": 3311
         },
         {
-          "start": 3310,
+          "start": 3311,
           "notes": [
             {
               "type": "normal",
-              "start": 3325,
+              "start": 3326,
               "length": 2,
               "pitch": -1,
               "lyrics": "Now "
             },
             {
               "type": "normal",
-              "start": 3329,
+              "start": 3330,
               "length": 13,
               "pitch": 4,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 3359,
+              "start": 3360,
               "length": 5,
               "pitch": 4,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 3373,
+              "start": 3374,
               "length": 2,
               "pitch": 4,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3378,
+              "start": 3379,
               "length": 3,
               "pitch": 4,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 3383,
+              "start": 3384,
               "length": 3,
               "pitch": 6,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 3388,
+              "start": 3389,
               "length": 3,
               "pitch": 8,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 3394,
+              "start": 3395,
               "length": 2,
               "pitch": 9,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 3397,
+              "start": 3398,
               "length": 2,
               "pitch": 8,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3400,
+              "start": 3401,
               "length": 2,
               "pitch": 6,
               "lyrics": "~ ."
@@ -2248,67 +2248,67 @@
           "type": "notes"
         },
         {
-          "start": 3402,
+          "start": 3403,
           "notes": [
             {
               "type": "normal",
-              "start": 3417,
+              "start": 3418,
               "length": 2,
               "pitch": -1,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 3421,
+              "start": 3422,
               "length": 2,
               "pitch": -1,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3425,
+              "start": 3426,
               "length": 7,
               "pitch": 9,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 3434,
+              "start": 3435,
               "length": 2,
               "pitch": 9,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 3439,
+              "start": 3440,
               "length": 3,
               "pitch": 8,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 3446,
+              "start": 3447,
               "length": 2,
               "pitch": 6,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 3450,
+              "start": 3451,
               "length": 3,
               "pitch": 4,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 3455,
+              "start": 3456,
               "length": 2,
               "pitch": 6,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 3459,
+              "start": 3460,
               "length": 3,
               "pitch": 4,
               "lyrics": "fore."
@@ -2318,64 +2318,64 @@
         },
         {
           "type": "pause",
-          "start": 3462,
-          "end": 3464
+          "start": 3463,
+          "end": 3465
         },
         {
-          "start": 3464,
+          "start": 3465,
           "notes": [
             {
               "type": "normal",
-              "start": 3479,
+              "start": 3480,
               "length": 2,
               "pitch": -1,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 3483,
+              "start": 3484,
               "length": 3,
               "pitch": 6,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3490,
+              "start": 3491,
               "length": 5,
               "pitch": 4,
               "lyrics": "swear, "
             },
             {
               "type": "star",
-              "start": 3511,
+              "start": 3512,
               "length": 5,
               "pitch": 11,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 3519,
+              "start": 3520,
               "length": 2,
               "pitch": 11,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3524,
+              "start": 3525,
               "length": 1,
               "pitch": 9,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 3526,
+              "start": 3527,
               "length": 2,
               "pitch": 8,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3529,
+              "start": 3530,
               "length": 2,
               "pitch": 6,
               "lyrics": "~"
@@ -2384,60 +2384,60 @@
           "type": "notes"
         },
         {
-          "start": 3531,
+          "start": 3532,
           "notes": [
             {
               "type": "normal",
-              "start": 3544,
+              "start": 3545,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 3548,
+              "start": 3549,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3552,
+              "start": 3553,
               "length": 3,
               "pitch": 14,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 3558,
+              "start": 3559,
               "length": 2,
               "pitch": 16,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 3561,
+              "start": 3562,
               "length": 3,
               "pitch": 16,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 3566,
+              "start": 3567,
               "length": 3,
               "pitch": 18,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 3571,
+              "start": 3572,
               "length": 2,
               "pitch": 16,
               "lyrics": "yo"
             },
             {
               "type": "normal",
-              "start": 3574,
+              "start": 3575,
               "length": 2,
               "pitch": 11,
               "lyrics": "~u."
@@ -2446,67 +2446,67 @@
           "type": "notes"
         },
         {
-          "start": 3576,
+          "start": 3577,
           "notes": [
             {
               "type": "star",
-              "start": 3587,
+              "start": 3588,
               "length": 25,
               "pitch": 16,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 3618,
+              "start": 3619,
               "length": 8,
               "pitch": 16,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 3631,
+              "start": 3632,
               "length": 2,
               "pitch": 11,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3635,
+              "start": 3636,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 3640,
+              "start": 3641,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 3645,
+              "start": 3646,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 3650,
+              "start": 3651,
               "length": 3,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 3654,
+              "start": 3655,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3657,
+              "start": 3658,
               "length": 4,
               "pitch": 18,
               "lyrics": "~ ."
@@ -2515,67 +2515,67 @@
           "type": "notes"
         },
         {
-          "start": 3661,
+          "start": 3662,
           "notes": [
             {
               "type": "normal",
-              "start": 3671,
+              "start": 3672,
               "length": 2,
               "pitch": 11,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 3675,
+              "start": 3676,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "star",
-              "start": 3680,
+              "start": 3681,
               "length": 9,
               "pitch": 21,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 3691,
+              "start": 3692,
               "length": 2,
               "pitch": 21,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 3695,
+              "start": 3696,
               "length": 5,
               "pitch": 20,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 3703,
+              "start": 3704,
               "length": 2,
               "pitch": 18,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 3707,
+              "start": 3708,
               "length": 2,
               "pitch": 16,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 3711,
+              "start": 3712,
               "length": 2,
               "pitch": 18,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 3715,
+              "start": 3716,
               "length": 4,
               "pitch": 16,
               "lyrics": "fore."
@@ -2585,64 +2585,64 @@
         },
         {
           "type": "pause",
-          "start": 3719,
-          "end": 3720
+          "start": 3720,
+          "end": 3721
         },
         {
-          "start": 3720,
+          "start": 3721,
           "notes": [
             {
               "type": "normal",
-              "start": 3735,
+              "start": 3736,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "star",
-              "start": 3739,
+              "start": 3740,
               "length": 5,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3747,
+              "start": 3748,
               "length": 5,
               "pitch": 16,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 3767,
+              "start": 3768,
               "length": 2,
               "pitch": 18,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 3771,
+              "start": 3772,
               "length": 2,
               "pitch": 20,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3775,
+              "start": 3776,
               "length": 6,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 3782,
+              "start": 3783,
               "length": 1,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3784,
+              "start": 3785,
               "length": 3,
               "pitch": 18,
               "lyrics": "~"
@@ -2651,60 +2651,60 @@
           "type": "notes"
         },
         {
-          "start": 3787,
+          "start": 3788,
           "notes": [
             {
               "type": "normal",
-              "start": 3800,
+              "start": 3801,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 3804,
+              "start": 3805,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3812,
+              "start": 3813,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 3816,
+              "start": 3817,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 3820,
+              "start": 3821,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 3824,
+              "start": 3825,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 3828,
+              "start": 3829,
               "length": 2,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 3831,
+              "start": 3832,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ ,"
@@ -2713,81 +2713,81 @@
           "type": "notes"
         },
         {
-          "start": 3833,
+          "start": 3834,
           "notes": [
             {
               "type": "normal",
-              "start": 3836,
+              "start": 3837,
               "length": 3,
               "pitch": 16,
               "lyrics": "'cause"
             },
             {
               "type": "normal",
-              "start": 3840,
+              "start": 3841,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ "
             },
             {
               "type": "star",
-              "start": 3844,
+              "start": 3845,
               "length": 10,
               "pitch": 16,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 3875,
+              "start": 3876,
               "length": 8,
               "pitch": 16,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 3887,
+              "start": 3888,
               "length": 2,
               "pitch": 11,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3892,
+              "start": 3893,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 3897,
+              "start": 3898,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 3902,
+              "start": 3903,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 3908,
+              "start": 3909,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 3911,
+              "start": 3912,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3914,
+              "start": 3915,
               "length": 3,
               "pitch": 18,
               "lyrics": "~ ."
@@ -2803,84 +2803,84 @@
         {
           "type": "pause",
           "start": 0,
-          "end": 255
+          "end": 256
         },
         {
-          "start": 255,
+          "start": 256,
           "notes": [
             {
               "type": "normal",
-              "start": 270,
+              "start": 271,
               "length": 2,
               "pitch": 16,
               "lyrics": "'cause"
             },
             {
               "type": "normal",
-              "start": 273,
+              "start": 274,
               "length": 3,
               "pitch": 18,
               "lyrics": "~ "
             },
             {
               "type": "normal",
-              "start": 278,
+              "start": 279,
               "length": 10,
               "pitch": 16,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 309,
+              "start": 310,
               "length": 8,
               "pitch": 16,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 321,
+              "start": 322,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 326,
+              "start": 327,
               "length": 4,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 332,
+              "start": 333,
               "length": 2,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 338,
+              "start": 339,
               "length": 2,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 342,
+              "start": 343,
               "length": 5,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 348,
+              "start": 349,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 351,
+              "start": 352,
               "length": 3,
               "pitch": 18,
               "lyrics": "~"
@@ -2889,74 +2889,74 @@
           "type": "notes"
         },
         {
-          "start": 354,
+          "start": 355,
           "notes": [
             {
               "type": "normal",
-              "start": 366,
+              "start": 367,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 370,
+              "start": 371,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 374,
+              "start": 375,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 379,
+              "start": 380,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 383,
+              "start": 384,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 387,
+              "start": 388,
               "length": 3,
               "pitch": 23,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 392,
+              "start": 393,
               "length": 3,
               "pitch": 19,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 396,
+              "start": 397,
               "length": 9,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 406,
+              "start": 407,
               "length": 3,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 410,
+              "start": 411,
               "length": 26,
               "pitch": 16,
               "lyrics": "~ ."
@@ -2966,71 +2966,71 @@
         },
         {
           "type": "pause",
-          "start": 436,
-          "end": 635
+          "start": 437,
+          "end": 636
         },
         {
-          "start": 635,
+          "start": 636,
           "notes": [
             {
               "type": "normal",
-              "start": 650,
+              "start": 651,
               "length": 2,
               "pitch": 11,
               "lyrics": "We "
             },
             {
               "type": "normal",
-              "start": 654,
+              "start": 655,
               "length": 2,
               "pitch": 11,
               "lyrics": "saw "
             },
             {
               "type": "normal",
-              "start": 658,
+              "start": 659,
               "length": 2,
               "pitch": 13,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 662,
+              "start": 663,
               "length": 3,
               "pitch": 14,
               "lyrics": "wri"
             },
             {
               "type": "normal",
-              "start": 666,
+              "start": 667,
               "length": 2,
               "pitch": 13,
               "lyrics": "ting "
             },
             {
               "type": "normal",
-              "start": 670,
+              "start": 671,
               "length": 3,
               "pitch": 14,
               "lyrics": "on "
             },
             {
               "type": "normal",
-              "start": 674,
+              "start": 675,
               "length": 2,
               "pitch": 13,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 677,
+              "start": 678,
               "length": 2,
               "pitch": 14,
               "lyrics": "wa"
             },
             {
               "type": "normal",
-              "start": 680,
+              "start": 681,
               "length": 2,
               "pitch": 11,
               "lyrics": "~ll"
@@ -3039,109 +3039,109 @@
           "type": "notes"
         },
         {
-          "start": 682,
+          "start": 683,
           "notes": [
             {
               "type": "normal",
-              "start": 687,
+              "start": 688,
               "length": 2,
               "pitch": 11,
               "lyrics": "As "
             },
             {
               "type": "normal",
-              "start": 690,
+              "start": 691,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 694,
+              "start": 695,
               "length": 2,
               "pitch": 14,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 698,
+              "start": 699,
               "length": 2,
               "pitch": 13,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 702,
+              "start": 703,
               "length": 3,
               "pitch": 14,
               "lyrics": "ma"
             },
             {
               "type": "normal",
-              "start": 706,
+              "start": 707,
               "length": 2,
               "pitch": 13,
               "lyrics": "gi"
             },
             {
               "type": "normal",
-              "start": 709,
+              "start": 710,
               "length": 2,
               "pitch": 13,
               "lyrics": "ca"
             },
             {
               "type": "normal",
-              "start": 712,
+              "start": 713,
               "length": 2,
               "pitch": 11,
               "lyrics": "~l "
             },
             {
               "type": "normal",
-              "start": 717,
+              "start": 718,
               "length": 2,
               "pitch": 16,
               "lyrics": "fan"
             },
             {
               "type": "normal",
-              "start": 720,
+              "start": 721,
               "length": 1,
               "pitch": 16,
               "lyrics": "ta"
             },
             {
               "type": "normal",
-              "start": 722,
+              "start": 723,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 725,
+              "start": 726,
               "length": 3,
               "pitch": 16,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 730,
+              "start": 731,
               "length": 4,
               "pitch": 16,
               "lyrics": "sy"
             },
             {
               "type": "normal",
-              "start": 737,
+              "start": 738,
               "length": 1,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 739,
+              "start": 740,
               "length": 3,
               "pitch": 20,
               "lyrics": "~ ."
@@ -3151,71 +3151,71 @@
         },
         {
           "type": "pause",
-          "start": 742,
-          "end": 768
+          "start": 743,
+          "end": 769
         },
         {
-          "start": 768,
+          "start": 769,
           "notes": [
             {
               "type": "normal",
-              "start": 783,
+              "start": 784,
               "length": 2,
               "pitch": 11,
               "lyrics": "Now "
             },
             {
               "type": "normal",
-              "start": 787,
+              "start": 788,
               "length": 2,
               "pitch": 13,
               "lyrics": "with "
             },
             {
               "type": "normal",
-              "start": 791,
+              "start": 792,
               "length": 3,
               "pitch": 14,
               "lyrics": "pa"
             },
             {
               "type": "normal",
-              "start": 795,
+              "start": 796,
               "length": 2,
               "pitch": 13,
               "lyrics": "ssion "
             },
             {
               "type": "normal",
-              "start": 798,
+              "start": 799,
               "length": 2,
               "pitch": 14,
               "lyrics": "in "
             },
             {
               "type": "normal",
-              "start": 801,
+              "start": 802,
               "length": 2,
               "pitch": 13,
               "lyrics": "our "
             },
             {
               "type": "normal",
-              "start": 805,
+              "start": 806,
               "length": 2,
               "pitch": 14,
               "lyrics": "eyes"
             },
             {
               "type": "normal",
-              "start": 808,
+              "start": 809,
               "length": 1,
               "pitch": 13,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 810,
+              "start": 811,
               "length": 2,
               "pitch": 11,
               "lyrics": "~"
@@ -3224,60 +3224,60 @@
           "type": "notes"
         },
         {
-          "start": 812,
+          "start": 813,
           "notes": [
             {
               "type": "normal",
-              "start": 814,
+              "start": 815,
               "length": 3,
               "pitch": 11,
               "lyrics": "There's "
             },
             {
               "type": "normal",
-              "start": 819,
+              "start": 820,
               "length": 3,
               "pitch": 13,
               "lyrics": "no "
             },
             {
               "type": "normal",
-              "start": 823,
+              "start": 824,
               "length": 2,
               "pitch": 14,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 826,
+              "start": 827,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 829,
+              "start": 830,
               "length": 2,
               "pitch": 14,
               "lyrics": "could "
             },
             {
               "type": "normal",
-              "start": 832,
+              "start": 833,
               "length": 2,
               "pitch": 13,
               "lyrics": "dis"
             },
             {
               "type": "normal",
-              "start": 836,
+              "start": 837,
               "length": 3,
               "pitch": 14,
               "lyrics": "guise"
             },
             {
               "type": "normal",
-              "start": 840,
+              "start": 841,
               "length": 2,
               "pitch": 11,
               "lyrics": "~"
@@ -3286,39 +3286,39 @@
           "type": "notes"
         },
         {
-          "start": 842,
+          "start": 843,
           "notes": [
             {
               "type": "normal",
-              "start": 844,
+              "start": 845,
               "length": 1,
               "pitch": 11,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 846,
+              "start": 847,
               "length": 3,
               "pitch": 11,
               "lyrics": "se"
             },
             {
               "type": "normal",
-              "start": 851,
+              "start": 852,
               "length": 2,
               "pitch": 9,
               "lyrics": "cre"
             },
             {
               "type": "normal",
-              "start": 854,
+              "start": 855,
               "length": 3,
               "pitch": 11,
               "lyrics": "tly"
             },
             {
               "type": "normal",
-              "start": 858,
+              "start": 859,
               "length": 2,
               "pitch": 8,
               "lyrics": "~ ."
@@ -3328,64 +3328,64 @@
         },
         {
           "type": "pause",
-          "start": 860,
-          "end": 896
+          "start": 861,
+          "end": 897
         },
         {
-          "start": 896,
+          "start": 897,
           "notes": [
             {
               "type": "normal",
-              "start": 911,
+              "start": 912,
               "length": 2,
               "pitch": 11,
               "lyrics": "So "
             },
             {
               "type": "normal",
-              "start": 915,
+              "start": 916,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 919,
+              "start": 920,
               "length": 2,
               "pitch": 14,
               "lyrics": "take "
             },
             {
               "type": "normal",
-              "start": 923,
+              "start": 924,
               "length": 2,
               "pitch": 13,
               "lyrics": "each "
             },
             {
               "type": "normal",
-              "start": 927,
+              "start": 928,
               "length": 1,
               "pitch": 14,
               "lyrics": "o"
             },
             {
               "type": "normal",
-              "start": 929,
+              "start": 930,
               "length": 2,
               "pitch": 13,
               "lyrics": "ther's "
             },
             {
               "type": "normal",
-              "start": 933,
+              "start": 934,
               "length": 3,
               "pitch": 14,
               "lyrics": "ha"
             },
             {
               "type": "normal",
-              "start": 937,
+              "start": 938,
               "length": 2,
               "pitch": 11,
               "lyrics": "~nd,"
@@ -3394,53 +3394,53 @@
           "type": "notes"
         },
         {
-          "start": 939,
+          "start": 940,
           "notes": [
             {
               "type": "normal",
-              "start": 943,
+              "start": 944,
               "length": 2,
               "pitch": 11,
               "lyrics": "'cause "
             },
             {
               "type": "normal",
-              "start": 947,
+              "start": 948,
               "length": 2,
               "pitch": 13,
               "lyrics": "we "
             },
             {
               "type": "normal",
-              "start": 951,
+              "start": 952,
               "length": 3,
               "pitch": 14,
               "lyrics": "seem "
             },
             {
               "type": "normal",
-              "start": 955,
+              "start": 956,
               "length": 2,
               "pitch": 13,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 958,
+              "start": 959,
               "length": 2,
               "pitch": 14,
               "lyrics": "un"
             },
             {
               "type": "normal",
-              "start": 961,
+              "start": 962,
               "length": 2,
               "pitch": 13,
               "lyrics": "der"
             },
             {
               "type": "normal",
-              "start": 964,
+              "start": 965,
               "length": 4,
               "pitch": 14,
               "lyrics": "stand"
@@ -3449,39 +3449,39 @@
           "type": "notes"
         },
         {
-          "start": 968,
+          "start": 969,
           "notes": [
             {
               "type": "normal",
-              "start": 972,
+              "start": 973,
               "length": 1,
               "pitch": 14,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 974,
+              "start": 975,
               "length": 2,
               "pitch": 14,
               "lyrics": "ur"
             },
             {
               "type": "normal",
-              "start": 979,
+              "start": 980,
               "length": 2,
               "pitch": 18,
               "lyrics": "gen"
             },
             {
               "type": "normal",
-              "start": 983,
+              "start": 984,
               "length": 4,
               "pitch": 16,
               "lyrics": "~"
             },
             {
               "type": "star",
-              "start": 991,
+              "start": 992,
               "length": 13,
               "pitch": 16,
               "lyrics": "cy."
@@ -3491,36 +3491,36 @@
         },
         {
           "type": "pause",
-          "start": 1004,
-          "end": 1048
+          "start": 1005,
+          "end": 1049
         },
         {
-          "start": 1048,
+          "start": 1049,
           "notes": [
             {
               "type": "normal",
-              "start": 1063,
+              "start": 1064,
               "length": 7,
               "pitch": 13,
               "lyrics": "You're "
             },
             {
               "type": "normal",
-              "start": 1075,
+              "start": 1076,
               "length": 2,
               "pitch": 18,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 1080,
+              "start": 1081,
               "length": 4,
               "pitch": 16,
               "lyrics": "one "
             },
             {
               "type": "normal",
-              "start": 1088,
+              "start": 1089,
               "length": 8,
               "pitch": 13,
               "lyrics": "thing,"
@@ -3530,64 +3530,64 @@
         },
         {
           "type": "pause",
-          "start": 1096,
-          "end": 1168
+          "start": 1097,
+          "end": 1169
         },
         {
-          "start": 1168,
+          "start": 1169,
           "notes": [
             {
               "type": "normal",
-              "start": 1183,
+              "start": 1184,
               "length": 3,
               "pitch": 13,
               "lyrics": "So "
             },
             {
               "type": "normal",
-              "start": 1187,
+              "start": 1188,
               "length": 2,
               "pitch": 13,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1191,
+              "start": 1192,
               "length": 4,
               "pitch": 13,
               "lyrics": "tell "
             },
             {
               "type": "normal",
-              "start": 1200,
+              "start": 1201,
               "length": 3,
               "pitch": 18,
               "lyrics": "you "
             },
             {
               "type": "normal",
-              "start": 1208,
+              "start": 1209,
               "length": 5,
               "pitch": 16,
               "lyrics": "some"
             },
             {
               "type": "normal",
-              "start": 1216,
+              "start": 1217,
               "length": 6,
               "pitch": 13,
               "lyrics": "thing"
             },
             {
               "type": "normal",
-              "start": 1224,
+              "start": 1225,
               "length": 1,
               "pitch": 11,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1226,
+              "start": 1227,
               "length": 2,
               "pitch": 9,
               "lyrics": "~ :"
@@ -3597,36 +3597,36 @@
         },
         {
           "type": "pause",
-          "start": 1228,
-          "end": 1240
+          "start": 1229,
+          "end": 1241
         },
         {
-          "start": 1240,
+          "start": 1241,
           "notes": [
             {
               "type": "normal",
-              "start": 1255,
+              "start": 1256,
               "length": 3,
               "pitch": 15,
               "lyrics": "This "
             },
             {
               "type": "normal",
-              "start": 1261,
+              "start": 1262,
               "length": 3,
               "pitch": 15,
               "lyrics": "could "
             },
             {
               "type": "star",
-              "start": 1267,
+              "start": 1268,
               "length": 3,
               "pitch": 20,
               "lyrics": "be "
             },
             {
               "type": "normal",
-              "start": 1272,
+              "start": 1273,
               "length": 5,
               "pitch": 18,
               "lyrics": "love,"
@@ -3635,81 +3635,81 @@
           "type": "notes"
         },
         {
-          "start": 1277,
+          "start": 1278,
           "notes": [
             {
               "type": "normal",
-              "start": 1288,
+              "start": 1289,
               "length": 4,
               "pitch": 16,
               "lyrics": "Be"
             },
             {
               "type": "normal",
-              "start": 1296,
+              "start": 1297,
               "length": 6,
               "pitch": 18,
               "lyrics": "cause "
             },
             {
               "type": "star",
-              "start": 1317,
+              "start": 1318,
               "length": 9,
               "pitch": 20,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 1333,
+              "start": 1334,
               "length": 8,
               "pitch": 20,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 1349,
+              "start": 1350,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 1353,
+              "start": 1354,
               "length": 4,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 1358,
+              "start": 1359,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 1363,
+              "start": 1364,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 1368,
+              "start": 1369,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 1371,
+              "start": 1372,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1374,
+              "start": 1375,
               "length": 3,
               "pitch": 18,
               "lyrics": "~ ."
@@ -3718,67 +3718,67 @@
           "type": "notes"
         },
         {
-          "start": 1377,
+          "start": 1378,
           "notes": [
             {
               "type": "normal",
-              "start": 1389,
+              "start": 1390,
               "length": 2,
               "pitch": 11,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 1393,
+              "start": 1394,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1397,
+              "start": 1398,
               "length": 9,
               "pitch": 21,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 1408,
+              "start": 1409,
               "length": 2,
               "pitch": 21,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 1413,
+              "start": 1414,
               "length": 5,
               "pitch": 20,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 1421,
+              "start": 1422,
               "length": 2,
               "pitch": 18,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 1425,
+              "start": 1426,
               "length": 2,
               "pitch": 16,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 1429,
+              "start": 1430,
               "length": 2,
               "pitch": 18,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 1433,
+              "start": 1434,
               "length": 5,
               "pitch": 16,
               "lyrics": "fore."
@@ -3787,60 +3787,60 @@
           "type": "notes"
         },
         {
-          "start": 1438,
+          "start": 1439,
           "notes": [
             {
               "type": "normal",
-              "start": 1453,
+              "start": 1454,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 1457,
+              "start": 1458,
               "length": 4,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1465,
+              "start": 1466,
               "length": 5,
               "pitch": 16,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 1485,
+              "start": 1486,
               "length": 2,
               "pitch": 18,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 1489,
+              "start": 1490,
               "length": 2,
               "pitch": 20,
               "lyrics": "the "
             },
             {
               "type": "star",
-              "start": 1493,
+              "start": 1494,
               "length": 5,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 1499,
+              "start": 1500,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1502,
+              "start": 1503,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -3849,67 +3849,67 @@
           "type": "notes"
         },
         {
-          "start": 1504,
+          "start": 1505,
           "notes": [
             {
               "type": "normal",
-              "start": 1517,
+              "start": 1518,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 1521,
+              "start": 1522,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1529,
+              "start": 1530,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 1534,
+              "start": 1535,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 1537,
+              "start": 1538,
               "length": 3,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 1541,
+              "start": 1542,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 1545,
+              "start": 1546,
               "length": 3,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 1549,
+              "start": 1550,
               "length": 11,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1561,
+              "start": 1562,
               "length": 33,
               "pitch": 16,
               "lyrics": "~ ."
@@ -3919,57 +3919,57 @@
         },
         {
           "type": "pause",
-          "start": 1594,
-          "end": 1667
+          "start": 1595,
+          "end": 1668
         },
         {
-          "start": 1667,
+          "start": 1668,
           "notes": [
             {
               "type": "normal",
-              "start": 1682,
+              "start": 1683,
               "length": 2,
               "pitch": 11,
               "lyrics": "With "
             },
             {
               "type": "normal",
-              "start": 1686,
+              "start": 1687,
               "length": 2,
               "pitch": 13,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 1690,
+              "start": 1691,
               "length": 5,
               "pitch": 14,
               "lyrics": "bo"
             },
             {
               "type": "normal",
-              "start": 1698,
+              "start": 1699,
               "length": 1,
               "pitch": 14,
               "lyrics": "dy "
             },
             {
               "type": "normal",
-              "start": 1700,
+              "start": 1701,
               "length": 2,
               "pitch": 13,
               "lyrics": "and "
             },
             {
               "type": "normal",
-              "start": 1704,
+              "start": 1705,
               "length": 2,
               "pitch": 14,
               "lyrics": "so"
             },
             {
               "type": "normal",
-              "start": 1707,
+              "start": 1708,
               "length": 2,
               "pitch": 11,
               "lyrics": "~ul"
@@ -3978,88 +3978,88 @@
           "type": "notes"
         },
         {
-          "start": 1709,
+          "start": 1710,
           "notes": [
             {
               "type": "normal",
-              "start": 1709,
+              "start": 1710,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1713,
+              "start": 1714,
               "length": 3,
               "pitch": 11,
               "lyrics": "want "
             },
             {
               "type": "normal",
-              "start": 1718,
+              "start": 1719,
               "length": 2,
               "pitch": 13,
               "lyrics": "you "
             },
             {
               "type": "normal",
-              "start": 1722,
+              "start": 1723,
               "length": 4,
               "pitch": 14,
               "lyrics": "more "
             },
             {
               "type": "normal",
-              "start": 1729,
+              "start": 1730,
               "length": 2,
               "pitch": 14,
               "lyrics": "than "
             },
             {
               "type": "normal",
-              "start": 1733,
+              "start": 1734,
               "length": 2,
               "pitch": 13,
               "lyrics": "you'll "
             },
             {
               "type": "normal",
-              "start": 1736,
+              "start": 1737,
               "length": 4,
               "pitch": 14,
               "lyrics": "e"
             },
             {
               "type": "normal",
-              "start": 1742,
+              "start": 1743,
               "length": 1,
               "pitch": 13,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1744,
+              "start": 1745,
               "length": 3,
               "pitch": 11,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 1749,
+              "start": 1750,
               "length": 2,
               "pitch": 8,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 1754,
+              "start": 1755,
               "length": 4,
               "pitch": 11,
               "lyrics": "know"
             },
             {
               "type": "normal",
-              "start": 1759,
+              "start": 1760,
               "length": 2,
               "pitch": 8,
               "lyrics": "~ ."
@@ -4069,64 +4069,64 @@
         },
         {
           "type": "pause",
-          "start": 1761,
-          "end": 1924
+          "start": 1762,
+          "end": 1925
         },
         {
-          "start": 1924,
+          "start": 1925,
           "notes": [
             {
               "type": "normal",
-              "start": 1939,
+              "start": 1940,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 1943,
+              "start": 1944,
               "length": 2,
               "pitch": 13,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 1947,
+              "start": 1948,
               "length": 2,
               "pitch": 14,
               "lyrics": "know "
             },
             {
               "type": "normal",
-              "start": 1950,
+              "start": 1951,
               "length": 2,
               "pitch": 13,
               "lyrics": "what's "
             },
             {
               "type": "normal",
-              "start": 1953,
+              "start": 1954,
               "length": 2,
               "pitch": 14,
               "lyrics": "on "
             },
             {
               "type": "normal",
-              "start": 1956,
+              "start": 1957,
               "length": 4,
               "pitch": 16,
               "lyrics": "your "
             },
             {
               "type": "normal",
-              "start": 1963,
+              "start": 1964,
               "length": 2,
               "pitch": 14,
               "lyrics": "mi"
             },
             {
               "type": "normal",
-              "start": 1966,
+              "start": 1967,
               "length": 2,
               "pitch": 11,
               "lyrics": "~nd,"
@@ -4135,67 +4135,67 @@
           "type": "notes"
         },
         {
-          "start": 1968,
+          "start": 1969,
           "notes": [
             {
               "type": "normal",
-              "start": 1970,
+              "start": 1971,
               "length": 2,
               "pitch": 11,
               "lyrics": "When "
             },
             {
               "type": "normal",
-              "start": 1974,
+              "start": 1975,
               "length": 2,
               "pitch": 13,
               "lyrics": "you "
             },
             {
               "type": "normal",
-              "start": 1979,
+              "start": 1980,
               "length": 3,
               "pitch": 14,
               "lyrics": "say: "
             },
             {
               "type": "normal",
-              "start": 1994,
+              "start": 1995,
               "length": 3,
               "pitch": 18,
               "lyrics": "\"Stay "
             },
             {
               "type": "normal",
-              "start": 2001,
+              "start": 2002,
               "length": 2,
               "pitch": 18,
               "lyrics": "with "
             },
             {
               "type": "normal",
-              "start": 2006,
+              "start": 2007,
               "length": 2,
               "pitch": 18,
               "lyrics": "me "
             },
             {
               "type": "normal",
-              "start": 2009,
+              "start": 2010,
               "length": 2,
               "pitch": 16,
               "lyrics": "to"
             },
             {
               "type": "normal",
-              "start": 2014,
+              "start": 2015,
               "length": 6,
               "pitch": 16,
               "lyrics": "night"
             },
             {
               "type": "star",
-              "start": 2022,
+              "start": 2023,
               "length": 28,
               "pitch": 20,
               "lyrics": "~ !\""
@@ -4205,50 +4205,50 @@
         },
         {
           "type": "pause",
-          "start": 2050,
-          "end": 2121
+          "start": 2051,
+          "end": 2122
         },
         {
-          "start": 2121,
+          "start": 2122,
           "notes": [
             {
               "type": "normal",
-              "start": 2136,
+              "start": 2137,
               "length": 8,
               "pitch": 14,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2148,
+              "start": 2149,
               "length": 4,
               "pitch": 14,
               "lyrics": "can't "
             },
             {
               "type": "normal",
-              "start": 2156,
+              "start": 2157,
               "length": 3,
               "pitch": 14,
               "lyrics": "get "
             },
             {
               "type": "normal",
-              "start": 2161,
+              "start": 2162,
               "length": 3,
               "pitch": 13,
               "lyrics": "e"
             },
             {
               "type": "normal",
-              "start": 2166,
+              "start": 2167,
               "length": 4,
               "pitch": 12,
               "lyrics": "nough "
             },
             {
               "type": "normal",
-              "start": 2173,
+              "start": 2174,
               "length": 8,
               "pitch": 11,
               "lyrics": "of,"
@@ -4258,36 +4258,36 @@
         },
         {
           "type": "pause",
-          "start": 2181,
-          "end": 2269
+          "start": 2182,
+          "end": 2270
         },
         {
-          "start": 2269,
+          "start": 2270,
           "notes": [
             {
               "type": "normal",
-              "start": 2284,
+              "start": 2285,
               "length": 3,
               "pitch": 15,
               "lyrics": "This "
             },
             {
               "type": "normal",
-              "start": 2289,
+              "start": 2290,
               "length": 3,
               "pitch": 15,
               "lyrics": "could "
             },
             {
               "type": "normal",
-              "start": 2295,
+              "start": 2296,
               "length": 3,
               "pitch": 20,
               "lyrics": "be "
             },
             {
               "type": "normal",
-              "start": 2301,
+              "start": 2302,
               "length": 6,
               "pitch": 18,
               "lyrics": "love,"
@@ -4296,81 +4296,81 @@
           "type": "notes"
         },
         {
-          "start": 2307,
+          "start": 2308,
           "notes": [
             {
               "type": "normal",
-              "start": 2316,
+              "start": 2317,
               "length": 5,
               "pitch": 16,
               "lyrics": "Be"
             },
             {
               "type": "normal",
-              "start": 2324,
+              "start": 2325,
               "length": 5,
               "pitch": 18,
               "lyrics": "cause "
             },
             {
               "type": "star",
-              "start": 2344,
+              "start": 2345,
               "length": 13,
               "pitch": 20,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 2361,
+              "start": 2362,
               "length": 7,
               "pitch": 20,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 2376,
+              "start": 2377,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 2381,
+              "start": 2382,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 2386,
+              "start": 2387,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 2391,
+              "start": 2392,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 2396,
+              "start": 2397,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 2399,
+              "start": 2400,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2402,
+              "start": 2403,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ ."
@@ -4379,67 +4379,67 @@
           "type": "notes"
         },
         {
-          "start": 2404,
+          "start": 2405,
           "notes": [
             {
               "type": "normal",
-              "start": 2417,
+              "start": 2418,
               "length": 2,
               "pitch": 11,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 2421,
+              "start": 2422,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "star",
-              "start": 2425,
+              "start": 2426,
               "length": 9,
               "pitch": 21,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 2437,
+              "start": 2438,
               "length": 2,
               "pitch": 21,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 2441,
+              "start": 2442,
               "length": 4,
               "pitch": 20,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 2449,
+              "start": 2450,
               "length": 2,
               "pitch": 18,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 2453,
+              "start": 2454,
               "length": 3,
               "pitch": 16,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 2457,
+              "start": 2458,
               "length": 2,
               "pitch": 18,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 2461,
+              "start": 2462,
               "length": 3,
               "pitch": 16,
               "lyrics": "fore."
@@ -4449,64 +4449,64 @@
         },
         {
           "type": "pause",
-          "start": 2464,
-          "end": 2466
+          "start": 2465,
+          "end": 2467
         },
         {
-          "start": 2466,
+          "start": 2467,
           "notes": [
             {
               "type": "normal",
-              "start": 2481,
+              "start": 2482,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "normal",
-              "start": 2485,
+              "start": 2486,
               "length": 4,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2494,
+              "start": 2495,
               "length": 4,
               "pitch": 16,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 2513,
+              "start": 2514,
               "length": 2,
               "pitch": 18,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 2517,
+              "start": 2518,
               "length": 2,
               "pitch": 20,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 2521,
+              "start": 2522,
               "length": 6,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 2528,
+              "start": 2529,
               "length": 1,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2530,
+              "start": 2531,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -4515,60 +4515,60 @@
           "type": "notes"
         },
         {
-          "start": 2532,
+          "start": 2533,
           "notes": [
             {
               "type": "normal",
-              "start": 2545,
+              "start": 2546,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 2549,
+              "start": 2550,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2557,
+              "start": 2558,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 2562,
+              "start": 2563,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 2566,
+              "start": 2567,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 2570,
+              "start": 2571,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "star",
-              "start": 2574,
+              "start": 2575,
               "length": 3,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 2578,
+              "start": 2579,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ ,"
@@ -4577,81 +4577,81 @@
           "type": "notes"
         },
         {
-          "start": 2580,
+          "start": 2581,
           "notes": [
             {
               "type": "normal",
-              "start": 2582,
+              "start": 2583,
               "length": 3,
               "pitch": 16,
               "lyrics": "'cause"
             },
             {
               "type": "normal",
-              "start": 2586,
+              "start": 2587,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ "
             },
             {
               "type": "normal",
-              "start": 2590,
+              "start": 2591,
               "length": 8,
               "pitch": 16,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2621,
+              "start": 2622,
               "length": 7,
               "pitch": 16,
               "lyrics": "have "
             },
             {
               "type": "normal",
-              "start": 2634,
+              "start": 2635,
               "length": 2,
               "pitch": 16,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 2638,
+              "start": 2639,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 2643,
+              "start": 2644,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 2648,
+              "start": 2649,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 2653,
+              "start": 2654,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 2656,
+              "start": 2657,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2659,
+              "start": 2660,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -4660,67 +4660,67 @@
           "type": "notes"
         },
         {
-          "start": 2661,
+          "start": 2662,
           "notes": [
             {
               "type": "normal",
-              "start": 2674,
+              "start": 2675,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 2678,
+              "start": 2679,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2686,
+              "start": 2687,
               "length": 6,
               "pitch": 21,
               "lyrics": "searched "
             },
             {
               "type": "normal",
-              "start": 2695,
+              "start": 2696,
               "length": 2,
               "pitch": 21,
               "lyrics": "through "
             },
             {
               "type": "normal",
-              "start": 2698,
+              "start": 2699,
               "length": 5,
               "pitch": 20,
               "lyrics": "e"
             },
             {
               "type": "normal",
-              "start": 2707,
+              "start": 2708,
               "length": 2,
               "pitch": 18,
               "lyrics": "very "
             },
             {
               "type": "normal",
-              "start": 2710,
+              "start": 2711,
               "length": 2,
               "pitch": 16,
               "lyrics": "o"
             },
             {
               "type": "normal",
-              "start": 2714,
+              "start": 2715,
               "length": 2,
               "pitch": 18,
               "lyrics": "pen "
             },
             {
               "type": "normal",
-              "start": 2718,
+              "start": 2719,
               "length": 6,
               "pitch": 16,
               "lyrics": "door,"
@@ -4729,60 +4729,60 @@
           "type": "notes"
         },
         {
-          "start": 2724,
+          "start": 2725,
           "notes": [
             {
               "type": "normal",
-              "start": 2739,
+              "start": 2740,
               "length": 2,
               "pitch": 11,
               "lyrics": "'till "
             },
             {
               "type": "normal",
-              "start": 2742,
+              "start": 2743,
               "length": 5,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2750,
+              "start": 2751,
               "length": 7,
               "pitch": 16,
               "lyrics": "found "
             },
             {
               "type": "normal",
-              "start": 2770,
+              "start": 2771,
               "length": 3,
               "pitch": 18,
               "lyrics": "the"
             },
             {
               "type": "normal",
-              "start": 2774,
+              "start": 2775,
               "length": 2,
               "pitch": 20,
               "lyrics": "~ "
             },
             {
               "type": "normal",
-              "start": 2779,
+              "start": 2780,
               "length": 5,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 2785,
+              "start": 2786,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 2788,
+              "start": 2789,
               "length": 2,
               "pitch": 18,
               "lyrics": "~"
@@ -4791,67 +4791,67 @@
           "type": "notes"
         },
         {
-          "start": 2790,
+          "start": 2791,
           "notes": [
             {
               "type": "normal",
-              "start": 2803,
+              "start": 2804,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 2807,
+              "start": 2808,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 2815,
+              "start": 2816,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 2819,
+              "start": 2820,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 2823,
+              "start": 2824,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 2827,
+              "start": 2828,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 2831,
+              "start": 2832,
               "length": 3,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 2836,
+              "start": 2837,
               "length": 9,
               "pitch": 18,
               "lyrics": "~"
             },
             {
               "type": "star",
-              "start": 2847,
+              "start": 2848,
               "length": 36,
               "pitch": 16,
               "lyrics": "~ ."
@@ -4861,71 +4861,71 @@
         },
         {
           "type": "pause",
-          "start": 2883,
-          "end": 3572
+          "start": 2884,
+          "end": 3573
         },
         {
-          "start": 3572,
+          "start": 3573,
           "notes": [
             {
               "type": "star",
-              "start": 3587,
+              "start": 3588,
               "length": 25,
               "pitch": 16,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 3618,
+              "start": 3619,
               "length": 8,
               "pitch": 16,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 3631,
+              "start": 3632,
               "length": 2,
               "pitch": 11,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3635,
+              "start": 3636,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 3640,
+              "start": 3641,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 3645,
+              "start": 3646,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 3650,
+              "start": 3651,
               "length": 3,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 3654,
+              "start": 3655,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3657,
+              "start": 3658,
               "length": 4,
               "pitch": 18,
               "lyrics": "~ ."
@@ -4934,67 +4934,67 @@
           "type": "notes"
         },
         {
-          "start": 3661,
+          "start": 3662,
           "notes": [
             {
               "type": "normal",
-              "start": 3671,
+              "start": 3672,
               "length": 2,
               "pitch": 11,
               "lyrics": "No, "
             },
             {
               "type": "normal",
-              "start": 3675,
+              "start": 3676,
               "length": 2,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "star",
-              "start": 3680,
+              "start": 3681,
               "length": 9,
               "pitch": 21,
               "lyrics": "ne"
             },
             {
               "type": "normal",
-              "start": 3691,
+              "start": 3692,
               "length": 2,
               "pitch": 21,
               "lyrics": "ver "
             },
             {
               "type": "normal",
-              "start": 3695,
+              "start": 3696,
               "length": 5,
               "pitch": 20,
               "lyrics": "felt "
             },
             {
               "type": "normal",
-              "start": 3703,
+              "start": 3704,
               "length": 2,
               "pitch": 18,
               "lyrics": "this "
             },
             {
               "type": "normal",
-              "start": 3707,
+              "start": 3708,
               "length": 2,
               "pitch": 16,
               "lyrics": "way "
             },
             {
               "type": "normal",
-              "start": 3711,
+              "start": 3712,
               "length": 2,
               "pitch": 18,
               "lyrics": "be"
             },
             {
               "type": "normal",
-              "start": 3715,
+              "start": 3716,
               "length": 4,
               "pitch": 16,
               "lyrics": "fore."
@@ -5004,64 +5004,64 @@
         },
         {
           "type": "pause",
-          "start": 3719,
-          "end": 3720
+          "start": 3720,
+          "end": 3721
         },
         {
-          "start": 3720,
+          "start": 3721,
           "notes": [
             {
               "type": "normal",
-              "start": 3735,
+              "start": 3736,
               "length": 2,
               "pitch": 11,
               "lyrics": "Yes, "
             },
             {
               "type": "star",
-              "start": 3739,
+              "start": 3740,
               "length": 5,
               "pitch": 18,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3747,
+              "start": 3748,
               "length": 5,
               "pitch": 16,
               "lyrics": "swear, "
             },
             {
               "type": "normal",
-              "start": 3767,
+              "start": 3768,
               "length": 2,
               "pitch": 18,
               "lyrics": "it's "
             },
             {
               "type": "normal",
-              "start": 3771,
+              "start": 3772,
               "length": 2,
               "pitch": 20,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3775,
+              "start": 3776,
               "length": 6,
               "pitch": 21,
               "lyrics": "truth"
             },
             {
               "type": "normal",
-              "start": 3782,
+              "start": 3783,
               "length": 1,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3784,
+              "start": 3785,
               "length": 3,
               "pitch": 18,
               "lyrics": "~"
@@ -5070,60 +5070,60 @@
           "type": "notes"
         },
         {
-          "start": 3787,
+          "start": 3788,
           "notes": [
             {
               "type": "normal",
-              "start": 3800,
+              "start": 3801,
               "length": 2,
               "pitch": 11,
               "lyrics": "And "
             },
             {
               "type": "normal",
-              "start": 3804,
+              "start": 3805,
               "length": 3,
               "pitch": 11,
               "lyrics": "I "
             },
             {
               "type": "normal",
-              "start": 3812,
+              "start": 3813,
               "length": 3,
               "pitch": 21,
               "lyrics": "owe "
             },
             {
               "type": "normal",
-              "start": 3816,
+              "start": 3817,
               "length": 2,
               "pitch": 21,
               "lyrics": "it "
             },
             {
               "type": "normal",
-              "start": 3820,
+              "start": 3821,
               "length": 2,
               "pitch": 21,
               "lyrics": "all "
             },
             {
               "type": "normal",
-              "start": 3824,
+              "start": 3825,
               "length": 2,
               "pitch": 21,
               "lyrics": "to "
             },
             {
               "type": "normal",
-              "start": 3828,
+              "start": 3829,
               "length": 2,
               "pitch": 20,
               "lyrics": "you"
             },
             {
               "type": "normal",
-              "start": 3831,
+              "start": 3832,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ ,"
@@ -5132,81 +5132,81 @@
           "type": "notes"
         },
         {
-          "start": 3833,
+          "start": 3834,
           "notes": [
             {
               "type": "normal",
-              "start": 3836,
+              "start": 3837,
               "length": 3,
               "pitch": 16,
               "lyrics": "'cause"
             },
             {
               "type": "normal",
-              "start": 3840,
+              "start": 3841,
               "length": 2,
               "pitch": 18,
               "lyrics": "~ "
             },
             {
               "type": "star",
-              "start": 3844,
+              "start": 3845,
               "length": 10,
               "pitch": 16,
               "lyrics": "I've "
             },
             {
               "type": "normal",
-              "start": 3875,
+              "start": 3876,
               "length": 8,
               "pitch": 16,
               "lyrics": "had "
             },
             {
               "type": "normal",
-              "start": 3887,
+              "start": 3888,
               "length": 2,
               "pitch": 11,
               "lyrics": "the "
             },
             {
               "type": "normal",
-              "start": 3892,
+              "start": 3893,
               "length": 3,
               "pitch": 16,
               "lyrics": "time "
             },
             {
               "type": "normal",
-              "start": 3897,
+              "start": 3898,
               "length": 3,
               "pitch": 18,
               "lyrics": "of "
             },
             {
               "type": "normal",
-              "start": 3902,
+              "start": 3903,
               "length": 3,
               "pitch": 20,
               "lyrics": "my "
             },
             {
               "type": "normal",
-              "start": 3908,
+              "start": 3909,
               "length": 2,
               "pitch": 21,
               "lyrics": "life"
             },
             {
               "type": "normal",
-              "start": 3911,
+              "start": 3912,
               "length": 2,
               "pitch": 20,
               "lyrics": "~"
             },
             {
               "type": "normal",
-              "start": 3914,
+              "start": 3915,
               "length": 3,
               "pitch": 18,
               "lyrics": "~ ."
@@ -5216,5 +5216,8 @@
         }
       ]
     }
-  ]
+  ],
+  "volume": 0.5,
+  "genre": "Pop",
+  "lastUpdate": "2023-05-06T17:32:24.631Z"
 }
