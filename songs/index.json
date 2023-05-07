@@ -705,6 +705,60 @@
     "local": false
   },
   {
+    "title": "Into you",
+    "artist": "Ariana Grande",
+    "bpm": 422.52,
+    "bar": 4,
+    "gap": 3319.9642147117293,
+    "video": "1ekZEVeXwek",
+    "year": "2016",
+    "lastUpdate": "2023-04-29T21:02:23.931Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 1,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "file": "Ariana Grande-Into you.json",
+    "tracksCount": 1,
+    "search": "arianagrandeintoyou",
+    "local": false
+  },
+  {
+    "title": "No tears left to cry",
+    "artist": "Ariana Grande",
+    "bpm": 343.62,
+    "bar": 4,
+    "gap": 19836.983935742974,
+    "video": "ffxKSjUwKdU",
+    "year": "2018",
+    "lastUpdate": "2023-04-29T21:24:47.038Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 1,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Ariana%20Grande",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Ariana Grande-No tears left to cry(1).json",
+    "tracksCount": 1,
+    "search": "arianagrandenotearslefttocry",
+    "local": false
+  },
+  {
     "title": "Be Yourself",
     "artist": "Audioslave",
     "bpm": 233.76,
@@ -1031,6 +1085,34 @@
     "local": false
   },
   {
+    "title": "Yes Sir, I Can Boogie",
+    "artist": "Baccara",
+    "bpm": 245.1,
+    "bar": 4,
+    "gap": 4340.807833537332,
+    "video": "VNFFSqZ8KBg",
+    "year": "1977",
+    "lastUpdate": "2023-05-06T18:45:01.397Z",
+    "edition": "[SC]-Songs",
+    "genre": "disco",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.5,
+    "author": "Fepo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Baccara-Yes Sir, I Can Boogie.json",
+    "tracksCount": 1,
+    "search": "baccarayessiricanboogie",
+    "local": false
+  },
+  {
     "title": "Everybody (Backstreet's Back)",
     "artist": "Backstreet Boys",
     "bpm": 216.12,
@@ -1339,12 +1421,12 @@
     "artist": "Bill Medley & Jennifer Warnes",
     "bpm": 217.6,
     "bar": 4,
-    "gap": 986.6972477064219,
+    "gap": 1266.9926470588234,
     "video": "4BQLE_RrTSU",
     "edition": "[DUET]-Songs",
     "language": "English",
     "year": "1987",
-    "videoGap": -2,
+    "videoGap": 0,
     "author": "Wegti",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22349",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10541",
@@ -1352,16 +1434,46 @@
     "tracks": [
       {
         "name": "Bill Medley",
-        "start": 14
+        "start": 15
       },
       {
         "name": "Jennifer Warnes",
-        "start": 270
+        "start": 271
       }
     ],
-    "file": "Bill Medley & Jennifer Warnes-I've Had The Time Of My Life [DUET].json",
+    "volume": 0.5,
+    "genre": "Pop",
+    "lastUpdate": "2023-05-06T17:32:24.631Z",
+    "file": "Bill Medley & Jennifer Warnes-I've Had The Time Of My Life.json",
     "tracksCount": 2,
     "search": "billmedleyjenniferwarnesivehadthetimeofmylife",
+    "local": false
+  },
+  {
+    "title": "Bad Guy",
+    "artist": "Billie Eilish",
+    "bpm": 269.92,
+    "bar": 4,
+    "gap": 27189.70361588619,
+    "video": "DyDfgMOUjCI",
+    "year": "2019",
+    "lastUpdate": "2023-05-06T18:18:37.100Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 19,
+    "realBpm": 136,
+    "volume": 0.5,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Billie Eilish-Bad Guy.json",
+    "tracksCount": 1,
+    "search": "billieeilishbadguy",
     "local": false
   },
   {
@@ -1739,6 +1851,39 @@
     "file": "Bonnie Tyler-Holding Out For A Hero.json",
     "tracksCount": 1,
     "search": "bonnietylerholdingoutforahero",
+    "local": false
+  },
+  {
+    "title": "Shallow",
+    "artist": "Bradley Cooper & Lady Gaga",
+    "bpm": 367.75,
+    "bar": 4,
+    "gap": 15220.285520054385,
+    "video": "bo_efYhYU2A",
+    "year": "2018",
+    "lastUpdate": "2023-05-06T19:21:28.618Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 1,
+    "author": "Bene28",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Bradley Cooper",
+        "start": 25
+      },
+      {
+        "name": "Lady Gaga",
+        "start": 1251
+      }
+    ],
+    "file": "Bradley Cooper & Lady Gaga-Shallow.json",
+    "tracksCount": 2,
+    "search": "bradleycooperladygagashallow",
     "local": false
   },
   {
@@ -2147,6 +2292,92 @@
     "file": "Cher-The Shoop Shoop Song (It's in his kiss).json",
     "tracksCount": 1,
     "search": "chertheshoopshoopsongitsinhiskiss",
+    "local": false
+  },
+  {
+    "title": "Wicked Game",
+    "artist": "Chris Isaak",
+    "bpm": 231.75,
+    "bar": 4,
+    "gap": 17329.126213592233,
+    "video": "jd-qI62gNJM",
+    "year": "1989",
+    "lastUpdate": "2023-05-06T18:51:00.031Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 113,
+    "volume": 0.5,
+    "author": "Jesposo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Chris Isaak-Wicked Game.json",
+    "tracksCount": 1,
+    "search": "chrisisaakwickedgame",
+    "local": false
+  },
+  {
+    "title": "Dirrty",
+    "artist": "Christina Aguilera feat. Redman",
+    "bpm": 199.9,
+    "bar": 4,
+    "gap": 404.5122561280641,
+    "video": "4Rg3sAb8Id8",
+    "year": "2002",
+    "lastUpdate": "2023-04-29T21:51:39.081Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.61,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Christina%20Aguilera%20feat.%20Redman",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Christina Aguilera feat. Redman-Dirrty.json",
+    "tracksCount": 1,
+    "search": "christinaaguilerafeatredmandirrty",
+    "local": false
+  },
+  {
+    "title": "Lady Marmalade",
+    "artist": "Christina Aguilera, Lil’ Kim, Mya & P!nk (Moulin Rouge)",
+    "bpm": 329.7,
+    "bar": 4,
+    "gap": 10499.09008189263,
+    "video": "RQa7SvVCdZk",
+    "year": "2001",
+    "lastUpdate": "2023-05-06T19:37:39.623Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Pop",
+    "language": "English, French",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.5,
+    "author": "B'Fan",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      },
+      {
+        "start": 22
+      }
+    ],
+    "file": "Christina Aguilera, Lil’ Kim, Mya & P!nk (Moulin Rouge)-Lady Marmalade.json",
+    "tracksCount": 2,
+    "search": "christinaaguileralilkimmyapnkmoulinrougeladymarmalade",
     "local": false
   },
   {
@@ -2573,6 +2804,33 @@
     "local": false
   },
   {
+    "title": "Titanium",
+    "artist": "David Guetta & Sia",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 15139.095238095239,
+    "video": "JRfuAukYTKg",
+    "year": "2011",
+    "lastUpdate": "2023-04-29T22:04:41.353Z",
+    "genre": "Electronic",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.6,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "David Guetta & Sia-Titanium.json",
+    "tracksCount": 1,
+    "search": "davidguettasiatitanium",
+    "local": false
+  },
+  {
     "title": "Bo Jo Cie Kochom",
     "artist": "De Press",
     "bpm": 171.83,
@@ -2810,6 +3068,72 @@
     "local": false
   },
   {
+    "title": "Can You Feel The Love Tonight",
+    "artist": "Disney’s The Lion King",
+    "bpm": 400,
+    "bar": 4,
+    "gap": -85,
+    "video": "25QyCxVkXwQ",
+    "year": "1994",
+    "lastUpdate": "2023-05-06T19:05:37.621Z",
+    "edition": "SingStar singalong with Disney",
+    "genre": "Disney",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.5,
+    "author": "Picco",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Timon/Nala",
+        "start": 18
+      },
+      {
+        "name": "Pumba/Simba",
+        "start": 60
+      }
+    ],
+    "file": "Disney’s The Lion King-Can You Feel The Love Tonight.json",
+    "tracksCount": 2,
+    "search": "disneysthelionkingcanyoufeelthelovetonight",
+    "local": false
+  },
+  {
+    "title": "Circle Of Life",
+    "artist": "Disney’s The Lion King",
+    "bpm": 325.1,
+    "bar": 4,
+    "gap": 23.162103968009887,
+    "video": "GibiNy4d4gc",
+    "year": "1994",
+    "lastUpdate": "2023-05-06T19:01:06.529Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Soundtrack",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.5,
+    "author": "leaby",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Main voice",
+        "start": 6
+      },
+      {
+        "name": "chore",
+        "start": 123
+      }
+    ],
+    "file": "Disney’s The Lion King-Circle Of Life.json",
+    "tracksCount": 2,
+    "search": "disneysthelionkingcircleoflife",
+    "local": false
+  },
+  {
     "title": "Hakuna Matata",
     "artist": "Disney’s The Lion King",
     "bpm": 383.2,
@@ -2892,6 +3216,33 @@
     "local": false
   },
   {
+    "title": "I Feel Love",
+    "artist": "Donna Summer",
+    "bpm": 253.44,
+    "bar": 4,
+    "gap": 41533.844696969696,
+    "video": "Nm-ISatLDG0",
+    "year": "1977",
+    "lastUpdate": "2023-05-06T18:42:09.599Z",
+    "genre": "Disco",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 1,
+    "author": "daggeg",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Donna Summer-I Feel Love.json",
+    "tracksCount": 1,
+    "search": "donnasummerifeellove",
+    "local": false
+  },
+  {
     "title": "Through the fire and flames",
     "artist": "DragonForce",
     "bpm": 200,
@@ -2915,6 +3266,33 @@
     "file": "DragonForce-Through the fire and flames.json",
     "tracksCount": 1,
     "search": "dragonforcethroughthefireandflames",
+    "local": false
+  },
+  {
+    "title": "Hotline Bling",
+    "artist": "Drake",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 21210,
+    "video": "uxpDa-c-4Mc",
+    "year": "2015",
+    "lastUpdate": "2023-04-29T21:40:45.496Z",
+    "genre": "R&B",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 1,
+    "author": "amro98 & fepo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Drake-Hotline Bling.json",
+    "tracksCount": 1,
+    "search": "drakehotlinebling",
     "local": false
   },
   {
@@ -3322,6 +3700,39 @@
     "local": false
   },
   {
+    "title": "Don’t Go Breaking My Heart",
+    "artist": "Elton John & RuPaul",
+    "bpm": 401.94,
+    "bar": 4,
+    "gap": 37942.38692342141,
+    "video": "-esD-o4XrJ0",
+    "year": "1993",
+    "lastUpdate": "2023-05-06T19:01:42.858Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 1,
+    "author": "nomaddoe",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Elton John",
+        "start": 27
+      },
+      {
+        "name": "RuPaul",
+        "start": 123
+      }
+    ],
+    "file": "Elton John & RuPaul-Don’t Go Breaking My Heart.json",
+    "tracksCount": 2,
+    "search": "eltonjohnrupauldontgobreakingmyheart",
+    "local": false
+  },
+  {
     "title": "I'm Still Standing",
     "artist": "Elton John",
     "bpm": 340,
@@ -3598,6 +4009,61 @@
     "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1,
     "search": "feelpokaznacociestac",
+    "local": false
+  },
+  {
+    "title": "Dog Days Are Over",
+    "artist": "Florence + the Machine",
+    "bpm": 300.44,
+    "bar": 4,
+    "gap": 3108.4645187058977,
+    "video": "iWOyfLBYtuU",
+    "year": "2010",
+    "lastUpdate": "2023-04-29T21:49:57.726Z",
+    "genre": "Alternative",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 150,
+    "volume": 1,
+    "author": "Fepo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Florence + the Machine-Dog Days Are Over.json",
+    "tracksCount": 1,
+    "search": "florencethemachinedogdaysareover",
+    "local": false
+  },
+  {
+    "title": "I Want To Know What Love Is",
+    "artist": "Foreigner",
+    "bpm": 324.3,
+    "bar": 4,
+    "gap": 14842.423681776134,
+    "video": "r3Pr1_v7hsw",
+    "year": "1984",
+    "lastUpdate": "2023-05-06T18:47:21.859Z",
+    "edition": "SingStar ’80s [DE|PL|SE|UK|US]",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 81,
+    "volume": 0.5,
+    "author": "dereinedervieleist",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Foreigner-I Want To Know What Love Is.json",
+    "tracksCount": 1,
+    "search": "foreigneriwanttoknowwhatloveis",
     "local": false
   },
   {
@@ -4801,6 +5267,33 @@
     "local": false
   },
   {
+    "title": "On The Floor",
+    "artist": "Jennifer Lopez & Pitbull",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 29779.23076923077,
+    "video": "t4H_Zoh7G5A",
+    "year": "2011",
+    "lastUpdate": "2023-04-29T21:43:50.138Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Victorin",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Jennifer Lopez & Pitbull-On The Floor.json",
+    "tracksCount": 1,
+    "search": "jenniferlopezpitbullonthefloor",
+    "local": false
+  },
+  {
     "title": "Are You Gonna Be My Girl",
     "artist": "Jet",
     "bpm": 350.4,
@@ -4824,6 +5317,33 @@
     "file": "Jet-Are You Gonna Be My Girl.json",
     "tracksCount": 1,
     "search": "jetareyougonnabemygirl",
+    "local": false
+  },
+  {
+    "title": "Hurt",
+    "artist": "Johnny Cash",
+    "bpm": 181.5,
+    "bar": 4,
+    "gap": 11908.264462809917,
+    "video": "8AHCfZTRGiI",
+    "year": "2002",
+    "lastUpdate": "2023-04-29T21:24:17.443Z",
+    "genre": "Country",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 91,
+    "volume": 1,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "file": "Johnny Cash-Hurt.json",
+    "tracksCount": 1,
+    "search": "johnnycashhurt",
     "local": false
   },
   {
@@ -5537,31 +6057,6 @@
     "local": false
   },
   {
-    "title": "Shallow",
-    "artist": "Lady Gaga, Bradley Cooper",
-    "bpm": 367.75,
-    "bar": 4,
-    "gap": 14981.285520054385,
-    "video": "EMrwaWroMhg",
-    "year": "2018",
-    "lastUpdate": "2023-01-27T22:08:08.052Z",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 96,
-    "author": "asdFer",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga%2C%20Bradley%20Cooper&cancion=Shallow",
-    "tracks": [
-      {
-        "start": 25
-      }
-    ],
-    "file": "Lady Gaga, Bradley Cooper-Shallow.json",
-    "tracksCount": 1,
-    "search": "ladygagabradleycoopershallow",
-    "local": false
-  },
-  {
     "title": "Poker Face",
     "artist": "Lady Gaga",
     "bpm": 357.03,
@@ -5865,6 +6360,34 @@
     "local": false
   },
   {
+    "title": "Bleeding Love",
+    "artist": "Leona Lewis",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 15530.384615384615,
+    "video": "Vzo-EL_62fQ",
+    "year": "2007",
+    "lastUpdate": "2023-05-06T18:19:40.447Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 104,
+    "volume": 1,
+    "author": "macgyver2809",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Leona Lewis-Bleeding Love.json",
+    "tracksCount": 1,
+    "search": "leonalewisbleedinglove",
+    "local": false
+  },
+  {
     "title": "Pomidorowa",
     "artist": "Letni, Chamski Podryw",
     "bpm": 360,
@@ -6018,23 +6541,31 @@
     "artist": "Linkin Park",
     "bpm": 210.1,
     "bar": 4,
-    "gap": 17530.47596382675,
+    "gap": 17720.47596382675,
     "video": "eVTXPUF4Oz4",
-    "year": "2001",
-    "genre": "Other",
+    "year": "2000",
+    "lastUpdate": "2023-05-06T19:39:44.690Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Nu Metal",
     "language": "English",
     "videoGap": 0,
-    "author": "paranoik",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paranoik",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=In%20The%20End",
-    "realBpm": 102,
+    "realBpm": 105,
+    "volume": 0.5,
+    "author": "MarioXIV",
+    "authorUrl": "",
+    "sourceUrl": "",
     "tracks": [
       {
+        "name": "Chester",
         "start": 14
+      },
+      {
+        "name": "Mike",
+        "start": 34
       }
     ],
-    "file": "Linkin Park-In The End.json",
-    "tracksCount": 1,
+    "file": "Linkin Park-In The End [DUET].json",
+    "tracksCount": 2,
     "search": "linkinparkintheend",
     "local": false
   },
@@ -6191,6 +6722,39 @@
     "file": "Lordi-Hard Rock Hallelujah.json",
     "tracksCount": 1,
     "search": "lordihardrockhallelujah",
+    "local": false
+  },
+  {
+    "title": "Danza kuduro",
+    "artist": "Lucenzo feat. Don Omar",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 23059.23076923077,
+    "video": "71sqkgaUncI",
+    "year": "2011",
+    "lastUpdate": "2023-05-06T19:02:21.119Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Latino",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 81,
+    "volume": 1,
+    "author": "Nero78",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Don Omar",
+        "start": 17
+      },
+      {
+        "name": "Lucenzo",
+        "start": 62
+      }
+    ],
+    "file": "Lucenzo feat. Don Omar-Danza kuduro.json",
+    "tracksCount": 2,
+    "search": "lucenzofeatdonomardanzakuduro",
     "local": false
   },
   {
@@ -7548,6 +8112,39 @@
     "local": false
   },
   {
+    "title": "Where The Wild Roses Grow",
+    "artist": "Nick Cave & The Bad Seeds + Kylie Minogue",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 37665.294117647056,
+    "video": "lDpnjE1LUvE",
+    "year": "1995",
+    "lastUpdate": "2023-05-06T19:16:06.810Z",
+    "edition": "SingStar ’90s [UK]",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 155,
+    "volume": 0.5,
+    "author": "RES",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Nick Cave",
+        "start": 23
+      },
+      {
+        "name": "Kylie Minogue",
+        "start": 23
+      }
+    ],
+    "file": "Nick Cave & The Bad Seeds + Kylie Minogue-Where The Wild Roses Grow.json",
+    "tracksCount": 2,
+    "search": "nickcavethebadseedskylieminoguewherethewildrosesgrow",
+    "local": false
+  },
+  {
     "title": "Hero",
     "artist": "Nickelback",
     "bpm": 294.56,
@@ -8020,7 +8617,7 @@
     "local": false
   },
   {
-    "title": "Say Say Say [DUET]",
+    "title": "Say Say Say",
     "artist": "Paul McCartney & Michael Jackson",
     "bpm": 235,
     "bar": 4,
@@ -8046,7 +8643,7 @@
     ],
     "file": "Paul-McCartney-Michael-Jackson-Say-Say-Say-DUET.json",
     "tracksCount": 2,
-    "search": "paulmccartneymichaeljacksonsaysaysayduet",
+    "search": "paulmccartneymichaeljacksonsaysaysay",
     "local": false
   },
   {
@@ -8198,6 +8795,39 @@
     "file": "Perfekt-Autobiografia.json",
     "tracksCount": 1,
     "search": "perfektautobiografia",
+    "local": false
+  },
+  {
+    "title": "Don’t Give Up",
+    "artist": "Peter Gabriel & Kate Bush",
+    "bpm": 322.72,
+    "bar": 4,
+    "gap": 40577.441745166085,
+    "video": "VjEq-r2agqc",
+    "year": "1986",
+    "lastUpdate": "2023-05-06T19:03:13.407Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 86,
+    "volume": 1,
+    "author": "Caruso",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Peter Gabriel",
+        "start": 22
+      },
+      {
+        "name": "Kate Bush",
+        "start": 824
+      }
+    ],
+    "file": "Peter Gabriel & Kate Bush-Don’t Give Up.json",
+    "tracksCount": 2,
+    "search": "petergabrielkatebushdontgiveup",
     "local": false
   },
   {
@@ -9664,6 +10294,39 @@
     "local": false
   },
   {
+    "title": "Time To Say Goodbye (Con te partirò)",
+    "artist": "Sarah Brightman & Andrea Bocelli",
+    "bpm": 220.6,
+    "bar": 4,
+    "gap": 22400.054397098822,
+    "video": "T1v6XzMFsnk",
+    "year": "1995",
+    "lastUpdate": "2023-05-06T19:18:29.978Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Opera",
+    "language": "Italian",
+    "videoGap": 0,
+    "realBpm": 106,
+    "volume": 0.5,
+    "author": "Respeckt",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Sarah Brightman",
+        "start": 15
+      },
+      {
+        "name": "Andrea Bocelli",
+        "start": 1347
+      }
+    ],
+    "file": "Sarah Brightman & Andrea Bocelli-Time To Say Goodbye (Con te partirò).json",
+    "tracksCount": 2,
+    "search": "sarahbrightmanandreabocellitimetosaygoodbyecontepartiro",
+    "local": false
+  },
+  {
     "title": "Maria (I like it loud)",
     "artist": "Scooter vs. Marc Acardipane & Dick Rules",
     "bpm": 143,
@@ -9685,6 +10348,33 @@
     "file": "Scooter vs. Marc Acardipane & Dick Rules-Maria (I like it loud).json",
     "tracksCount": 1,
     "search": "scootervsmarcacardipanedickrulesmariailikeitloud",
+    "local": false
+  },
+  {
+    "title": "Still Loving You",
+    "artist": "Scorpions",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 21620,
+    "video": "7pOr3dBFAeY",
+    "year": "1984",
+    "lastUpdate": "2023-05-06T18:24:05.466Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 104,
+    "volume": 1,
+    "author": "jockel1974",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Scorpions-Still Loving You.json",
+    "tracksCount": 1,
+    "search": "scorpionsstilllovingyou",
     "local": false
   },
   {
@@ -9710,6 +10400,39 @@
     "file": "Scorpions-Wind of Change.json",
     "tracksCount": 1,
     "search": "scorpionswindofchange",
+    "local": false
+  },
+  {
+    "title": "Can’t Remember To Forget You",
+    "artist": "Shakira feat. Rihanna",
+    "bpm": 276.04,
+    "bar": 4,
+    "gap": 7081.880886827996,
+    "video": "o3mP3mJDL2k",
+    "year": "2014",
+    "lastUpdate": "2023-05-06T19:07:41.436Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 138,
+    "volume": 0.5,
+    "author": "superstar90",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Shakira",
+        "start": 18
+      },
+      {
+        "name": "Rihanna",
+        "start": 1294
+      }
+    ],
+    "file": "Shakira feat. Rihanna-Can’t Remember To Forget You.json",
+    "tracksCount": 2,
+    "search": "shakirafeatrihannacantremembertoforgetyou",
     "local": false
   },
   {
@@ -9760,6 +10483,33 @@
     "file": "Shakira-Whenever wherever.json",
     "tracksCount": 1,
     "search": "shakirawheneverwherever",
+    "local": false
+  },
+  {
+    "title": "Chandelier",
+    "artist": "Sia",
+    "bpm": 261,
+    "bar": 4,
+    "gap": 10750.988505747126,
+    "video": "2vjPBrBU-TM",
+    "year": "2014",
+    "lastUpdate": "2023-04-29T22:01:12.451Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.6,
+    "author": "UltraEvans34",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Sia-Chandelier.json",
+    "tracksCount": 1,
+    "search": "siachandelier",
     "local": false
   },
   {
@@ -10722,23 +11472,25 @@
   {
     "title": "Let It Be",
     "artist": "The Beatles",
-    "bpm": 308.2,
+    "bpm": 301.1,
     "bar": 4,
-    "gap": 31250,
-    "video": "1LMSOfs10mA",
+    "gap": 11700.936404931861,
+    "video": "QDYfEBY9NM4",
     "year": "1970",
     "genre": "Pop",
     "language": "English",
-    "videoGap": 19,
+    "videoGap": 0,
     "author": "dekkard",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Let%20It%20Be",
     "realBpm": 72,
     "tracks": [
       {
-        "start": 20
+        "start": 21
       }
     ],
+    "volume": 0.5,
+    "lastUpdate": "2023-05-07T07:07:59.721Z",
     "file": "The Beatles-Let It Be.json",
     "tracksCount": 1,
     "search": "thebeatlesletitbe",
@@ -11052,6 +11804,34 @@
     "file": "The Doors-Riders on the storm.json",
     "tracksCount": 1,
     "search": "thedoorsridersonthestorm",
+    "local": false
+  },
+  {
+    "title": "How To Save A Life",
+    "artist": "The Fray",
+    "bpm": 244,
+    "bar": 4,
+    "gap": 9476.393442622952,
+    "video": "cjVQ36NhbMk",
+    "year": "2005",
+    "lastUpdate": "2023-05-06T18:33:53.613Z",
+    "edition": "SingStar Hottest Hits",
+    "genre": "Alternative",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "The Fray-How To Save A Life.json",
+    "tracksCount": 1,
+    "search": "thefrayhowtosavealife",
     "local": false
   },
   {
@@ -11544,6 +12324,34 @@
     "file": "The-Weeknd-Cant-Feel-My-Face.json",
     "tracksCount": 1,
     "search": "theweekndcantfeelmyface",
+    "local": false
+  },
+  {
+    "title": "I Think We're Alone Now",
+    "artist": "Tiffany",
+    "bpm": 260.86,
+    "bar": 4,
+    "gap": 31655.464157019094,
+    "video": "w6Q3mHyzn78",
+    "year": "1987",
+    "lastUpdate": "2023-05-06T19:52:31.642Z",
+    "edition": "SingStar Party English",
+    "genre": "Synth Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 1,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Tiffany-I Think We're Alone Now.json",
+    "tracksCount": 1,
+    "search": "tiffanyithinkwerealonenow",
     "local": false
   },
   {
@@ -12257,6 +13065,39 @@
     "file": "Wilki-Urke.json",
     "tracksCount": 1,
     "search": "wilkiurke",
+    "local": false
+  },
+  {
+    "title": "Jaja Ding Dong",
+    "artist": "Will Ferrell & Rachel McAdams",
+    "bpm": 285.7,
+    "bar": 4,
+    "gap": 16712.450122506125,
+    "video": "PlBUH8zMZng",
+    "year": "2020",
+    "lastUpdate": "2023-05-06T19:42:02.411Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 143,
+    "volume": 0.5,
+    "author": "Stefan1200",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Will Ferrell",
+        "start": 19
+      },
+      {
+        "name": "Rachel McAdams",
+        "start": 142
+      }
+    ],
+    "file": "Will Ferrell & Rachel McAdams-Jaja Ding Dong.json",
+    "tracksCount": 2,
+    "search": "willferrellrachelmcadamsjajadingdong",
     "local": false
   },
   {
