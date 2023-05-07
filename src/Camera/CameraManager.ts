@@ -80,6 +80,12 @@ class CameraManager extends Listener<[boolean]> {
         this.videoData.length = 0;
     };
 
+    public restartRecord = async () => {
+        await this.stopRecord();
+        await this.clearData();
+        await this.startRecord();
+    };
+
     public getPermissionStatus = () => this.permissionGranted;
 }
 

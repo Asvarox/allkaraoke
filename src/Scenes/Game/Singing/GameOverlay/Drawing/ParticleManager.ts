@@ -4,16 +4,16 @@ class ParticleManager {
     private particles: Particle[] = [];
     private lastTick = Date.now();
 
-    private getTimeDelta = () => {
-        const currentTick = Date.now();
+    private getTimeDelta = (timeShift: number) => {
+        const currentTick = Date.now() - timeShift;
         const delta = currentTick - this.lastTick;
         this.lastTick = currentTick;
 
         return delta;
     };
 
-    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
-        const delta = this.getTimeDelta();
+    public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, timeShift = 0) => {
+        const delta = this.getTimeDelta(timeShift);
 
         this.particles.forEach((particle) => particle.tick(ctx, canvas, delta));
 

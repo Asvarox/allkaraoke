@@ -73,6 +73,14 @@ function GameOverlay({
     }, [canvas.current, lyrics.current?.offsetHeight, overlayScaleFactor]);
 
     useEffect(() => {
+        if (isPauseMenuVisible && drawer.current?.isPlaying()) {
+            drawer.current?.pause();
+        } else if (!isPauseMenuVisible && !drawer.current?.isPlaying()) {
+            drawer.current?.resume();
+        }
+    }, [isPauseMenuVisible]);
+
+    useEffect(() => {
         if (currentStatus === VideoState.ENDED && onSongEnd) {
             onSongEnd();
         }
@@ -115,7 +123,7 @@ export default GameOverlay;
 const Screen = styled.div`
     height: 100%;
     color: white;
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.2rem black;
     font-weight: bold;
     position: relative;
     display: flex;

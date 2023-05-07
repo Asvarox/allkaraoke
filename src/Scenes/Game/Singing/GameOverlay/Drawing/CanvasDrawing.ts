@@ -25,6 +25,8 @@ function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
 
 export default class CanvasDrawing {
     private loop = false;
+    private pauseTime = 0;
+    private pausedOn = 0;
 
     public constructor(
         private canvas: HTMLCanvasElement,
@@ -38,6 +40,18 @@ export default class CanvasDrawing {
         this.drawFrame();
     };
 
+    public pause = () => {
+        this.end();
+        this.pausedOn = Date.now();
+    };
+
+    public resume = () => {
+        this.pauseTime += Date.now() - this.pausedOn;
+        this.start();
+    };
+
+    public isPlaying = () => this.loop;
+
     public drawFrame = () => {
         const startTime = Date.now();
         const ctx = this.canvas.getContext('2d');
@@ -47,7 +61,7 @@ export default class CanvasDrawing {
 
         for (let i = 0; i < GameState.getPlayerCount(); i++) this.drawPlayer(i, ctx);
 
-        ParticleManager.tick(ctx, this.canvas);
+        ParticleManager.tick(ctx, this.canvas, this.pauseTime);
 
         if (FPSCountSetting.get() === 30) {
             const endTime = Date.now();

@@ -1,10 +1,10 @@
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
 import { useState } from 'react';
-import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
 import SingASong from 'Scenes/SingASong/SingASong';
+import CameraManager from 'Camera/CameraManager';
 
 interface Props {
     file?: string;
@@ -22,7 +22,10 @@ function Game(props: Props) {
             <TransitionWrapper show={!!singSetup}>
                 {singSetup && (
                     <Singing
-                        restartSong={() => setResetKey((current) => current + 1)}
+                        restartSong={() => {
+                            CameraManager.restartRecord();
+                            setResetKey((current) => current + 1);
+                        }}
                         key={resetKey}
                         video={singSetup.video}
                         songFile={singSetup.file}
@@ -37,7 +40,6 @@ function Game(props: Props) {
             <TransitionWrapper show={!singSetup}>
                 <SingASong
                     onSongSelected={(setup) => {
-                        RemoteMicManager.broadcast({ t: 'reload-mic' });
                         setSingSetup(setup);
                     }}
                     preselectedSong={preselectedSong}
