@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Basic sing a song', async ({ page }, testInfo, browserName) => {
+test('Basic sing a song', async ({ page, browserName }, testInfo) => {
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('advanced').click();
