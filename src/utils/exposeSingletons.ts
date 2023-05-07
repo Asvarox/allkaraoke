@@ -3,6 +3,7 @@ import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import GameEvents from 'GameEvents/GameEvents'; // @ts-ignore
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import SongDao from 'Songs/SongDao';
 
 // @ts-ignore
 window.__exposeSingletons = () => {
@@ -13,6 +14,7 @@ window.__exposeSingletons = () => {
         GameState,
         GameEvents,
         RemoteMicManager,
+        SongDao,
     };
 };
 

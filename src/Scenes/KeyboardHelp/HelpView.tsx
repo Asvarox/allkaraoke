@@ -30,6 +30,7 @@ export default function KeyboardHelpView({ help }: Props) {
         <>
             {isVisible && !!helps.length && (
                 <Container data-test="help-container">
+                    <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
                     {helps.map(([type, label]) => {
                         const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof HelpEntry];
                         return (
@@ -105,6 +106,22 @@ const SectionHelp = styled.span`
     text-align: right;
 `;
 
+const UseKeyboardIndicator = styled.div`
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.75);
+    ${typography};
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: 300ms;
+    visibility: hidden;
+`;
+
 const Container = styled.div`
     position: fixed;
     top: 10rem;
@@ -123,6 +140,13 @@ const Container = styled.div`
     }
 
     view-transition-name: help-view;
+
+    :hover {
+        ${UseKeyboardIndicator} {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`
