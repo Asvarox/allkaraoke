@@ -10,7 +10,7 @@ export default function useSmoothNavigate() {
     const [, baseNavigate] = useLocation();
 
     return (to: string, { smooth = true, ...options }: Options = {}) => {
-        if (!smooth) {
+        if (true || !smooth) {
             baseNavigate(to, options);
         } else {
             startViewTransition(() => baseNavigate(to, options));
