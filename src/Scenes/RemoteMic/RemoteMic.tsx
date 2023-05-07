@@ -14,6 +14,7 @@ import RemoteMicKeyboard from './Panels/Keyboard';
 import MicPreview from 'Scenes/RemoteMic/Panels/MicPreview';
 import Connect from 'Scenes/RemoteMic/Panels/Connect';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/ConfirmReadiness';
+import isDev from 'utils/isDev';
 
 interface Props {
     roomId: string;
@@ -53,9 +54,11 @@ function RemoteMic({ roomId }: Props) {
         setKeepAwake(true);
 
         try {
-            await document.body.requestFullscreen();
-            window.screen.orientation.unlock();
-            await window.screen.orientation.lock('portrait');
+            if (!isDev()) {
+                await document.body.requestFullscreen();
+                window.screen.orientation.unlock();
+                await window.screen.orientation.lock('portrait');
+            }
         } catch (e) {
             console.warn(e);
         }

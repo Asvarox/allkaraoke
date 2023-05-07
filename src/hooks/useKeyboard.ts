@@ -43,12 +43,8 @@ export default function useKeyboard(params: Params, enabled = true, deps?: any[]
         .map((param) => paramsToKeys[param as keyof Params])
         .join(',');
 
-    useEventEffect(events.remoteKeyboardPressed, (key) => {
+    useEventEffect(events.remoteKeyboardPressed, (param) => {
         if (enabled) {
-            const param = keyToParam(key);
-
-            if (!param) return;
-
             if (param in params) {
                 params[param]?.();
             }

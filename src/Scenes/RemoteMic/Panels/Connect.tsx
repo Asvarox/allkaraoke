@@ -25,9 +25,6 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
 
     const connectToServer = (silent = false) => {
         WebRTCClient.connect(roomId, name, silent);
-        try {
-            process.env.NODE_ENV !== 'development' && document.body.requestFullscreen().catch(console.info);
-        } catch (e) {}
         onConnect(silent);
     };
 

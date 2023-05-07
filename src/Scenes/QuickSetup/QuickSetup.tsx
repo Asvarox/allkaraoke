@@ -23,7 +23,7 @@ function QuickSetup(props: Props) {
     const navigate = useSmoothNavigate();
     const onFinish = async (pref: (typeof MicSetupPreference)[number]) => {
         navigate('/');
-        if (isDev() && mobilePhoneMode && document.fullscreenElement === null) {
+        if (!isDev() && mobilePhoneMode && document.fullscreenElement === null) {
             try {
                 await document.body.requestFullscreen();
                 window.screen.orientation.unlock();
