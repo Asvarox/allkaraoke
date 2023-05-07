@@ -47,7 +47,7 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
         const { artist, title } = GameState.getSong()!;
         posthog.capture('outroSkipped', { name: `${artist} - ${title}`, artist, title });
     };
-    useKeyboard({ onEnter: skipOutro }, shouldBeVisible);
+    useKeyboard({ accept: skipOutro }, shouldBeVisible);
 
     const help = useMemo(
         () => ({

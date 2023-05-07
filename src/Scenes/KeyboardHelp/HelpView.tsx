@@ -5,6 +5,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import createPersistedState from 'use-persisted-state';
 import { HelpEntry } from './Context';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { supportsEscAsBack } from 'hooks/useKeyboard';
 
 interface Props {
     help: HelpEntry | undefined;
@@ -66,7 +67,7 @@ const Horizontal = () => <HorizontalVerticalBase horizontal />;
 const Vertical = () => <HorizontalVerticalBase vertical />;
 const HorizontalVertical = () => <HorizontalVerticalBase vertical horizontal />;
 const Accept = () => <Kbd>Enter ⏎</Kbd>;
-const Back = () => <Kbd>Backspace ⌫</Kbd>;
+const Back = () => (supportsEscAsBack ? <Kbd>Escape</Kbd> : <Kbd>Backspace ⌫</Kbd>);
 const ShiftLetter = (letter: string) => () =>
     (
         <>

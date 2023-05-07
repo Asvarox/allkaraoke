@@ -31,7 +31,7 @@ function SkipIntro({ playerRef, isEnabled }: Props) {
         const { artist, title } = GameState.getSong()!;
         posthog.capture('introSkipped', { name: `${artist} - ${title}`, artist, title });
     };
-    useKeyboard({ onEnter: skipIntro }, canSkip);
+    useKeyboard({ accept: skipIntro }, canSkip);
 
     const help = useMemo(
         () => ({

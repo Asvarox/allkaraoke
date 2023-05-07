@@ -178,13 +178,13 @@ export const useSongSelectionKeyboardNavigation = (
 
     useKeyboard(
         {
-            onEnter: handleEnter,
-            onDownArrow: (e) => navigateVertically(e, 1),
-            onUpArrow: (e) => navigateVertically(e, -1),
-            onLeftArrow: () => navigateHorizontally(-1),
-            onRightArrow: () => navigateHorizontally(1),
-            onBackspace: handleBackspace,
-            onR: () => {
+            accept: handleEnter,
+            down: (e) => navigateVertically(e, 1),
+            up: (e) => navigateVertically(e, -1),
+            left: () => navigateHorizontally(-1),
+            right: () => navigateHorizontally(1),
+            back: handleBackspace,
+            random: () => {
                 randomSong();
                 posthog.capture('selectRandom');
             },

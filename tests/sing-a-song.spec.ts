@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Basic sing a song', async ({ page }, testInfo) => {
+test('Basic sing a song', async ({ page }, testInfo, browserName) => {
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('advanced').click();
@@ -21,7 +21,7 @@ test('Basic sing a song', async ({ page }, testInfo) => {
 
     await page.keyboard.press('Enter'); // enter first song
     await expect(page.getByTestId('next-step-button')).toBeVisible();
-    await page.keyboard.press('Backspace'); // escape
+    await page.keyboard.press(browserName === 'firefox' ? 'Backspace' : 'Escape'); // check if escape works for Chrome
     await expect(page.getByTestId('next-step-button')).not.toBeVisible();
     await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');
     await page.keyboard.press('Enter'); // focus

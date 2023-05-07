@@ -65,10 +65,10 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
     useKeyboard(
         {
-            [direction === 'vertical' ? 'onUpArrow' : 'onLeftArrow']: () => handleNavigation(-1),
-            [direction === 'vertical' ? 'onDownArrow' : 'onRightArrow']: () => handleNavigation(1),
-            onEnter: handleEnter,
-            onBackspace: handleBackspace,
+            [direction === 'vertical' ? 'up' : 'left']: () => handleNavigation(-1),
+            [direction === 'vertical' ? 'down' : 'right']: () => handleNavigation(1),
+            accept: handleEnter,
+            back: handleBackspace,
         },
         enabled,
         [currentlySelected, elementList.current],

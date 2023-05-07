@@ -123,7 +123,7 @@ function Player(
 
     useKeyboard(
         {
-            onBackspace: () =>
+            back: () =>
                 currentStatus === VideoState.PAUSED ? player.current?.playVideo() : player.current?.pauseVideo(),
         },
         true,

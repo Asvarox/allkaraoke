@@ -1,4 +1,5 @@
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
+import { Params } from 'hooks/useKeyboard';
 
 export interface WebRTCRegisterEvent {
     t: 'register';
@@ -34,7 +35,7 @@ export interface WebRTCNewFrequencyEvent {
     1: number; // volume
 }
 
-export type keyStrokes = 'up' | 'down' | 'left' | 'right' | 'Enter' | 'Backspace' | 'Shift+R';
+export type keyStrokes = keyof Params; // 'up' | 'down' | 'left' | 'right' | 'Enter' | 'Escape,Backspace' | 'Shift+R';
 
 export interface WebRTCReloadMicEvent {
     t: 'reload-mic';

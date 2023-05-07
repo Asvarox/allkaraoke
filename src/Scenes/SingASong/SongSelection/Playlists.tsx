@@ -53,8 +53,8 @@ export default function Playlists({ setFilters, active, closePlaylist }: Props) 
 
     useKeyboard(
         {
-            onLeftArrow: () => closePlaylist('left'),
-            onRightArrow: () => closePlaylist('right'),
+            left: () => closePlaylist('left'),
+            right: () => closePlaylist('right'),
         },
         active,
     );

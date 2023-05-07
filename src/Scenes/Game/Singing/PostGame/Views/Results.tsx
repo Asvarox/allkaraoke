@@ -29,7 +29,7 @@ const POINTS_PER_TICK = MAX_POINTS / MAX_TICKS;
 function ResultsView({ onNextStep, players, highScores, singSetupId }: Props) {
     const [currentTick, setCurrentTick] = useState(0);
     useKeyboard({
-        onEnter: onNextStep,
+        accept: onNextStep,
     });
     const help = useMemo(
         () => ({

@@ -46,13 +46,13 @@ export default function RemoteMicKeyboard() {
             )}
             <ActionsContainer>
                 <ActionButton
-                    onClick={onPress('Backspace')}
+                    onClick={onPress('back')}
                     disabled={keyboard?.back === undefined}
                     data-test="keyboard-backspace">
                     {keyboard?.back || 'Back'}
                 </ActionButton>
                 <ActionButton
-                    onClick={onPress('Enter')}
+                    onClick={onPress('accept')}
                     disabled={keyboard?.accept === undefined}
                     data-test="keyboard-enter">
                     {keyboard?.accept || 'Enter'}
@@ -60,7 +60,7 @@ export default function RemoteMicKeyboard() {
             </ActionsContainer>
             <Break />
             <ActionsContainer disabled={keyboard?.shiftR === undefined} data-test="keyboard-shift-r">
-                <ActionButton onClick={onPress('Shift+R')}>{keyboard?.shiftR || 'Random Song'}</ActionButton>
+                <ActionButton onClick={onPress('random')}>{keyboard?.shiftR || 'Random Song'}</ActionButton>
             </ActionsContainer>
         </Container>
     ) : null;

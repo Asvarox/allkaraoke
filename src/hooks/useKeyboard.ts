@@ -1,36 +1,42 @@
-import { invert } from 'lodash-es';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useEventEffect } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
-import { keyStrokes } from 'RemoteMic/Network/events';
 
 type Callback = (e?: KeyboardEvent) => void;
 
-// All besides F and H characters
+// All besides H (help) character
 export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
 
-interface Params {
-    onUpArrow?: Callback;
-    onDownArrow?: Callback;
-    onLeftArrow?: Callback;
-    onRightArrow?: Callback;
-    onEnter?: Callback;
-    onBackspace?: Callback;
-    onR?: Callback;
-    // onAlphaNumeric?: () => void,
+// @ts-expect-error
+navigator?.keyboard?.lock(['Escape']);
+
+// @ts-expect-error
+export const supportsEscAsBack = !!navigator?.keyboard?.lock;
+
+export interface Params {
+    up?: Callback;
+    down?: Callback;
+    left?: Callback;
+    right?: Callback;
+    accept?: Callback;
+    back?: Callback;
+    random?: Callback;
+    // alphanumeric?: () => void,
 }
 
-const paramsToKeys: { [param in keyof Params]: keyStrokes } = {
-    onUpArrow: 'up',
-    onDownArrow: 'down',
-    onLeftArrow: 'left',
-    onRightArrow: 'right',
-    onEnter: 'Enter',
-    onBackspace: 'Backspace',
-    onR: 'Shift+R',
+const paramsToKeys: { [param in keyof Params]: string[] } = {
+    up: ['up'],
+    down: ['down'],
+    left: ['left'],
+    right: ['right'],
+    accept: ['Enter'],
+    back: ['Backspace', 'Escape'],
+    random: ['Shift+R'],
 };
 
-const keysToParams: { [key: string]: keyof Params } = invert(paramsToKeys) as any;
+const keyToParam = (keyCode: string): keyof Params | null => {
+    return (Object.entries(paramsToKeys).find(([key, val]) => val.includes(keyCode))?.[0] as keyof Params) ?? null;
+};
 
 export default function useKeyboard(params: Params, enabled = true, deps?: any[]) {
     let handledKeys: string = Object.keys(params)
@@ -39,7 +45,7 @@ export default function useKeyboard(params: Params, enabled = true, deps?: any[]
 
     useEventEffect(events.remoteKeyboardPressed, (key) => {
         if (enabled) {
-            const param = keysToParams[key];
+            const param = keyToParam(key);
 
             if (!param) return;
 
@@ -52,7 +58,7 @@ export default function useKeyboard(params: Params, enabled = true, deps?: any[]
     useHotkeys(
         handledKeys,
         (event, hkEvent) => {
-            const param = keysToParams[hkEvent.key];
+            const param = keyToParam(hkEvent.key);
 
             if (!param) return;
 
