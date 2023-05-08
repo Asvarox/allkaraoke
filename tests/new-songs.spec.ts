@@ -12,6 +12,7 @@ const LAST_VISIT_NEW_SONG = new Date('2023-01-14T10:35:39.918Z').getTime();
 test('New songs - displays new song twice by default and doesnt show it in filters', async ({ page }) => {
     await page.addInitScript(
         ([timestamp]) => {
+            window.localStorage.setItem('posthog-user-id', 'posthog-user-id'); // So it's not a "first visit"
             window.localStorage.setItem('LAST_VISIT_KEY', String(timestamp));
         },
         [LAST_VISIT_NEW_SONG],
@@ -42,6 +43,7 @@ test('New songs - displays new song twice by default and doesnt show it in filte
 test('New songs - doesnt display new songs if the visit is after', async ({ page }) => {
     await page.addInitScript(
         ([timestamp]) => {
+            window.localStorage.setItem('posthog-user-id', 'posthog-user-id'); // So it's not a "first visit"
             window.localStorage.setItem('LAST_VISIT_KEY', String(timestamp));
         },
         [LAST_VISIT_NO_NEW_SONGS],
