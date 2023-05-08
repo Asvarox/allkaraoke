@@ -11,6 +11,7 @@ import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
 import { css } from '@emotion/react';
 import isE2E from 'utils/isE2E';
 import MenuWithLogo from 'Elements/MenuWithLogo';
+import CountUp from 'react-countup';
 
 export const useLanguageList = (list: SongPreview[]) => {
     return useMemo(() => {
@@ -50,6 +51,17 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 .sort((a, b) => b.count - a.count),
         [availableLanguages],
     );
+    const otherSongCount = useMemo(
+        () =>
+            availableLanguages
+                .filter(({ name }) => !languageList.find((lang) => lang.name === name))
+                .reduce((acc, { count }) => acc + count, 0),
+        [availableLanguages, languageList],
+    );
+
+    const songCount = languageList
+        .filter(({ name }) => !excludedLanguages?.includes(name))
+        .reduce((acc, { count }) => acc + count, 0);
 
     const toggleLanguage = (language: string) => {
         if (excludedLanguages === null) setExcludedLanguages([language]);
@@ -82,16 +94,39 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                         </LanguageEntry>
                     );
                 })}
+                {otherSongCount > 0 && (
+                    <Disclaimer>
+                        …and <strong>{otherSongCount} songs</strong> in other languages
+                    </Disclaimer>
+                )}
             </LanguageListContainer>
-            <h4>
+            <h3>
                 You can always update the selection in <strong>Manage Songs</strong> menu
-            </h4>
-            <MenuButton {...register('go back', onClose, undefined, true)} data-test="close-exclude-languages">
-                {closeText}
-            </MenuButton>
+            </h3>
+            <NextButtonContainer>
+                <MenuButton {...register('go back', onClose, undefined, true)} data-test="close-exclude-languages">
+                    {closeText}
+                </MenuButton>
+                <Disclaimer>
+                    The list will contain{' '}
+                    <strong>
+                        <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
+                    </strong>{' '}
+                    songs
+                </Disclaimer>
+            </NextButtonContainer>
         </MenuWithLogo>
     );
 }
+
+const NextButtonContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const Disclaimer = styled.h4`
+    text-align: right;
+`;
 
 const Check = styled.div`
     svg {
@@ -109,7 +144,7 @@ const LanguageName = styled.span`
 
 const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
     transition: 300ms;
-    opacity: 0.6;
+    opacity: 0.95;
     ${(props) =>
         props.excluded
             ? css`

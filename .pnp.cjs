@@ -93,6 +93,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.2"],\
             ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
             ["react", "npm:18.2.0"],\
+            ["react-countup", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.4.2"],\
             ["react-dom", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:18.2.0"],\
             ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.4.7"],\
             ["react-toastify", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.1.1"],\
@@ -3885,6 +3886,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@rollup/plugin-babel", [\
+        ["npm:6.0.3", {\
+          "packageLocation": "./.yarn/cache/@rollup-plugin-babel-npm-6.0.3-1259d28dd2-412c1c3bb5.zip/node_modules/@rollup/plugin-babel/",\
+          "packageDependencies": [\
+            ["@rollup/plugin-babel", "npm:6.0.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f0c2cdf25fb0f5379629da2d3f50ce8172e412af3227139795ff61b72154bea499e3ff696fabb38d346c0b81ebe53540422794f8ef69a3efffc3a3f2a43a59c0#npm:6.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/@rollup-plugin-babel-virtual-379e79ebb7/0/cache/@rollup-plugin-babel-npm-6.0.3-1259d28dd2-412c1c3bb5.zip/node_modules/@rollup/plugin-babel/",\
+          "packageDependencies": [\
+            ["@rollup/plugin-babel", "virtual:f0c2cdf25fb0f5379629da2d3f50ce8172e412af3227139795ff61b72154bea499e3ff696fabb38d346c0b81ebe53540422794f8ef69a3efffc3a3f2a43a59c0#npm:6.0.3"],\
+            ["@babel/core", null],\
+            ["@babel/helper-module-imports", "npm:7.21.4"],\
+            ["@rollup/pluginutils", "virtual:379e79ebb7eae1ce83517c56cb11e99d145828c1a55489de0c6a70e4ee78c89922b780572a65c4d3ae17f2caf0c460be413eff889be583815a842c79332a09be#npm:5.0.2"],\
+            ["@types/babel__core", null],\
+            ["@types/rollup", null],\
+            ["rollup", null]\
+          ],\
+          "packagePeers": [\
+            "@babel/core",\
+            "@types/babel__core",\
+            "@types/rollup",\
+            "rollup"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@rollup/plugin-replace", [\
         ["npm:5.0.2", {\
           "packageLocation": "./.yarn/cache/@rollup-plugin-replace-npm-5.0.2-4ec60fa184-3a91b5fa2c.zip/node_modules/@rollup/plugin-replace/",\
@@ -3897,7 +3926,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@rollup-plugin-replace-virtual-a1048fddaf/0/cache/@rollup-plugin-replace-npm-5.0.2-4ec60fa184-3a91b5fa2c.zip/node_modules/@rollup/plugin-replace/",\
           "packageDependencies": [\
             ["@rollup/plugin-replace", "virtual:5138f93f0e4b6207b50dfd212606ad745393cd0f066edee87f4606f07b5a69c67ede2ee7e129b2ff645488db3367f3cfd404b12278bbd060c474657ced5dff86#npm:5.0.2"],\
-            ["@rollup/pluginutils", "virtual:a1048fddafb61fdcbcb3aeab131077d2937c637d4e4901039ac8a9f57e86c67040b953f1d3193a4a46e6fd4403f96e7c14d70b4afc1c1934f42058991bc4ab65#npm:5.0.2"],\
+            ["@rollup/pluginutils", "virtual:379e79ebb7eae1ce83517c56cb11e99d145828c1a55489de0c6a70e4ee78c89922b780572a65c4d3ae17f2caf0c460be413eff889be583815a842c79332a09be#npm:5.0.2"],\
             ["@types/rollup", null],\
             ["magic-string", "npm:0.27.0"],\
             ["rollup", null]\
@@ -3926,10 +3955,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:a1048fddafb61fdcbcb3aeab131077d2937c637d4e4901039ac8a9f57e86c67040b953f1d3193a4a46e6fd4403f96e7c14d70b4afc1c1934f42058991bc4ab65#npm:5.0.2", {\
-          "packageLocation": "./.yarn/__virtual__/@rollup-pluginutils-virtual-d0e311fce0/0/cache/@rollup-pluginutils-npm-5.0.2-6aa9d0ddd4-edea15e543.zip/node_modules/@rollup/pluginutils/",\
+        ["virtual:379e79ebb7eae1ce83517c56cb11e99d145828c1a55489de0c6a70e4ee78c89922b780572a65c4d3ae17f2caf0c460be413eff889be583815a842c79332a09be#npm:5.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@rollup-pluginutils-virtual-b803457ba6/0/cache/@rollup-pluginutils-npm-5.0.2-6aa9d0ddd4-edea15e543.zip/node_modules/@rollup/pluginutils/",\
           "packageDependencies": [\
-            ["@rollup/pluginutils", "virtual:a1048fddafb61fdcbcb3aeab131077d2937c637d4e4901039ac8a9f57e86c67040b953f1d3193a4a46e6fd4403f96e7c14d70b4afc1c1934f42058991bc4ab65#npm:5.0.2"],\
+            ["@rollup/pluginutils", "virtual:379e79ebb7eae1ce83517c56cb11e99d145828c1a55489de0c6a70e4ee78c89922b780572a65c4d3ae17f2caf0c460be413eff889be583815a842c79332a09be#npm:5.0.2"],\
             ["@types/estree", "npm:1.0.0"],\
             ["@types/rollup", null],\
             ["estree-walker", "npm:2.0.2"],\
@@ -8515,6 +8544,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parse-json", "npm:5.2.0"],\
             ["path-type", "npm:4.0.0"],\
             ["yaml", "npm:1.10.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["countup.js", [\
+        ["npm:2.6.2", {\
+          "packageLocation": "./.yarn/cache/countup.js-npm-2.6.2-0b157d70fd-1272f0f6f0.zip/node_modules/countup.js/",\
+          "packageDependencies": [\
+            ["countup.js", "npm:2.6.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13332,6 +13370,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.2"],\
             ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
             ["react", "npm:18.2.0"],\
+            ["react-countup", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.4.2"],\
             ["react-dom", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:18.2.0"],\
             ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.4.7"],\
             ["react-toastify", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.1.1"],\
@@ -14328,6 +14367,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/react-dom",\
             "@types/react",\
             "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-countup", [\
+        ["npm:6.4.2", {\
+          "packageLocation": "./.yarn/cache/react-countup-npm-6.4.2-7ab0d790d3-2cdfa07a89.zip/node_modules/react-countup/",\
+          "packageDependencies": [\
+            ["react-countup", "npm:6.4.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.4.2", {\
+          "packageLocation": "./.yarn/__virtual__/react-countup-virtual-f0c2cdf25f/0/cache/react-countup-npm-6.4.2-7ab0d790d3-2cdfa07a89.zip/node_modules/react-countup/",\
+          "packageDependencies": [\
+            ["react-countup", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.4.2"],\
+            ["@rollup/plugin-babel", "virtual:f0c2cdf25fb0f5379629da2d3f50ce8172e412af3227139795ff61b72154bea499e3ff696fabb38d346c0b81ebe53540422794f8ef69a3efffc3a3f2a43a59c0#npm:6.0.3"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["countup.js", "npm:2.6.2"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
             "react"\
           ],\
           "linkType": "HARD"\
