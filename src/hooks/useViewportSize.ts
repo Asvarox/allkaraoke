@@ -13,7 +13,6 @@ export default function useViewportSize() {
 
     const handleResize = useCallback(
         throttle(() => {
-            console.log('called');
             setWindowSize({
                 width: window.document.body.clientWidth,
                 height: window.visualViewport!.height,

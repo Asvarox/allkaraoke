@@ -6,18 +6,11 @@ import { Link } from 'wouter';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { MouseEventHandler, useEffect } from 'react';
+import { MouseEventHandler } from 'react';
 import MenuWithLogo from 'Elements/MenuWithLogo';
 import FacebookLink from 'Scenes/Welcome/FacebookLink';
 
 function Welcome() {
-    useEffect(() => {
-        console.log('Welcome mounted');
-
-        return () => {
-            console.log('Welcome unmounted');
-        };
-    }, []);
     useBackground(true);
 
     const navigate = useSmoothNavigate();
