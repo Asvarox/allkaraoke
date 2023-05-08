@@ -14,7 +14,7 @@ const isFirstVisit = localStorage.getItem('posthog-user-id') === null;
 const defaultLastVisit = isFirstVisit ? currentTime : 1673642382501; // implementation time
 let lastVisit = Number(localStorage.getItem(LAST_VISIT_KEY) ?? defaultLastVisit);
 
-if (currentTime - currentVisit > VISIT_TIMEOUT_MS) {
+if (isFirstVisit || currentTime - currentVisit > VISIT_TIMEOUT_MS) {
     localStorage.setItem(LAST_VISIT_KEY, String(currentVisit));
     lastVisit = currentVisit;
 }
