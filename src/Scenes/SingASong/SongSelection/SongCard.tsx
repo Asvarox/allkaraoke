@@ -6,6 +6,7 @@ import { useSongStats } from 'Songs/stats/hooks';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ComponentProps, ReactNode } from 'react';
 import { css } from '@emotion/react';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
     song: SongPreview;
@@ -31,10 +32,17 @@ export const FinalSongCard = ({
                         backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')`,
                     }}
                     focused={focused}
+                    expanded={expanded}
                 />
             )}
             <SongInfo expanded={expanded}>
                 {!expanded && <SongCardStatsIndicator song={song} />}
+                {song.tracksCount > 1 && !expanded && (
+                    <MultiTrackIndicator data-test="multitrack-indicator">
+                        <PeopleAltIcon />
+                        &nbsp; Duet
+                    </MultiTrackIndicator>
+                )}
                 <SongListEntryDetailsArtist expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
                 <SongListEntryDetailsTitle expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
                 {expanded && (
@@ -95,14 +103,14 @@ export const SongCardContainer = styled.div`
     border-radius: 0.5rem;
 `;
 
-export const SongCardBackground = styled.div<{ focused: boolean }>`
+export const SongCardBackground = styled.div<{ focused: boolean; expanded: boolean }>`
     position: absolute;
     z-index: -1;
     inset: 0;
     background-position: center center;
-    // background-size: ${(props) => (props.focused ? 150.5 : 180)}%;
     background-size: ${(props) => (props.focused ? 100 : 110)}%;
-    ${(props) => (props.focused ? '' : 'filter: grayscale(90%);')}
+    ${(props) => (!props.focused ? 'filter: grayscale(90%);' : '')}
+    ${(props) => (props.expanded ? 'filter: blur(10px);' : '')}
 
     opacity: ${(props) => (props.focused ? 1 : 0.8)};
 
@@ -153,7 +161,9 @@ const SongStatIndicator = styled.div`
     top: 0.5rem;
     right: 0.5rem;
     padding: 0 1rem;
-    height: 2rem;
+    height: 2.75rem;
+    min-width: 2.75rem;
+    box-sizing: border-box;
     border-radius: 5rem;
     color: white;
     background: rgba(0, 0, 0, 0.75);
@@ -162,6 +172,15 @@ const SongStatIndicator = styled.div`
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+`;
+const MultiTrackIndicator = styled(SongStatIndicator)`
+    left: 0.5rem;
+    right: auto;
+
+    svg {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
 `;
 
 export const SongListEntryStats = ({ song }: { song: SongPreview }) => {

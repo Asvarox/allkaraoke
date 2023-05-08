@@ -130,7 +130,7 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
     position: absolute;
     z-index: 3;
     overflow: hidden;
-    visibility: ${(props) => (props.showVideo ? 'visible' : 'hidden')};
+    visibility: ${(props) => (props.expanded || props.showVideo ? 'visible' : 'hidden')};
 
     ${(props) =>
         props.expanded

@@ -24,6 +24,9 @@ test('Basic sing a song', async ({ page, browserName }, testInfo) => {
     await page.keyboard.press(browserName === 'firefox' ? 'Backspace' : 'Escape'); // check if escape works for Chrome
     await expect(page.getByTestId('next-step-button')).not.toBeVisible();
     await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');
+
+    await expect(page.getByTestId('song-e2e-test-multitrack.json').getByTestId('multitrack-indicator')).toBeVisible();
+
     await page.keyboard.press('Enter'); // focus
     await expect(page.getByTestId('next-step-button')).toBeVisible();
 
