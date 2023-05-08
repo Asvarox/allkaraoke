@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { throttle } from 'lodash-es';
 
 export default function useViewportSize() {
     // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
@@ -10,12 +11,16 @@ export default function useViewportSize() {
         height: undefined,
     });
 
-    function handleResize() {
-        setWindowSize({
-            width: window.document.body.clientWidth,
-            height: window.visualViewport!.height,
-        });
-    }
+    const handleResize = useCallback(
+        throttle(() => {
+            console.log('called');
+            setWindowSize({
+                width: window.document.body.clientWidth,
+                height: window.visualViewport!.height,
+            });
+        }, 1000),
+        [],
+    );
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);

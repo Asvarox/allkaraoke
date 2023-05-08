@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-import { focusable } from 'Elements/cssMixins';
+import { focusable, typography } from 'Elements/cssMixins';
 import { ReactNode } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { SongListEntryDetails } from 'Scenes/SingASong/SongSelection/SongCard';
 import { ValuesType } from 'utility-types';
 
 interface Props {
@@ -36,7 +35,14 @@ export const Switcher = ({ focused, label, value, onClick, ...restProps }: Props
     </ConfigurationPosition>
 );
 
-const ConfigurationPosition = styled(SongListEntryDetails)<{ focused: boolean }>`
+const ConfigurationPosition = styled.span<{ focused: boolean; expanded?: boolean }>`
+    background: rgba(0, 0, 0, 0.7);
+
+    width: auto;
+    ${typography};
+
+    text-align: right;
+    font-size: ${({ expanded }) => (expanded ? '6rem' : '2.7rem')};
     cursor: pointer;
     padding: 0.65rem;
     display: flex;

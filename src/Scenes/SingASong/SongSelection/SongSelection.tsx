@@ -12,13 +12,7 @@ import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
-import {
-    SongCard,
-    SongCardBackground,
-    SongCardStatsIndicator,
-    SongListEntryDetailsArtist,
-    SongListEntryDetailsTitle,
-} from 'Scenes/SingASong/SongSelection/SongCard';
+import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
 import SongPreview from 'Scenes/SingASong/SongSelection/SongPreview';
 import { CircularProgress } from '@mui/material';
 import { css } from '@emotion/react';
@@ -145,26 +139,15 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                             {group.songs.map(({ song, index }) => (
                                 <SongListEntry
                                     key={song.file}
+                                    song={song}
                                     onClick={() => onSongClick(index)}
-                                    video={song.video}
                                     focused={!showFilters && keyboardControl && index === focusedSong}
                                     data-index={index}
                                     {...(!showFilters && keyboardControl
                                         ? { 'data-focused': index === focusedSong }
                                         : {})}
-                                    data-test={`song-${song.file}${group.isNew ? '-new-group' : ''}`}>
-                                    <SongCardBackground
-                                        style={{
-                                            backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')`,
-                                        }}
-                                        video={song.video}
-                                        focused={!showFilters && keyboardControl && index === focusedSong}
-                                    />
-                                    <SongCardStatsIndicator song={song} />
-                                    <SongListEntryDetailsArtist>{song.artist}</SongListEntryDetailsArtist>
-
-                                    <SongListEntryDetailsTitle>{song.title}</SongListEntryDetailsTitle>
-                                </SongListEntry>
+                                    data-test={`song-${song.file}${group.isNew ? '-new-group' : ''}`}
+                                />
                             ))}
                         </SongsGroup>
                     </SongsGroupContainer>
@@ -253,18 +236,15 @@ const SongsGroup = styled.div`
     gap: var(--song-list-gap);
 `;
 
-const SongListEntry = styled(SongCard)<{ video: string; focused: boolean }>`
+const SongListEntry = styled(FinalSongCard)`
+    cursor: pointer;
     flex-basis: var(--song-item-width);
-    box-sizing: border-box;
     aspect-ratio: var(--song-item-ratio);
-    padding: 1.3rem;
 
     transition: 300ms;
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
     ${(props) => props.focused && focused}
-    border: 0.1rem black solid;
-    border-radius: 0.5rem;
 
     content-visibility: auto;
     contain-intrinsic-size: calc(var(--song-item-width) * (1 / var(--song-item-ratio)));
