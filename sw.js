@@ -1,18 +1,19 @@
 /* eslint-disable no-restricted-globals */
 
-const CACHE_NAME = `allkaraoke-party-app-cache-v1`;
+const CACHE_NAME = 'allkaraoke-party-app-cache-v1';
 
-// Use the install event to pre-cache all initial resources.
+// Use the 'install' event to pre-cache all initial resources.
 self.addEventListener('install', (event) => {
     event.waitUntil(
         (async () => {
             const cache = await caches.open(CACHE_NAME);
-            cache.addAll(['/']);
+            await cache.addAll(['/']);
         })(),
     );
 });
 
-const swOrigin = new URL(self.serviceWorker.scriptURL).origin;
+const swOrigin = self.location.origin;
+
 self.addEventListener('fetch', (event) => {
     // Only cache local resources
     if (new URL(event.request.url).origin === swOrigin) {
