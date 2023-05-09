@@ -7,21 +7,25 @@ import createPersistedState from 'use-persisted-state';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
+import { PeerErrorType } from 'interfaces';
+
+type ConnectionStatuses = Parameters<typeof events.karaokeConnectionStatusChange.dispatch>[0] | 'uninitialised';
 
 interface Props {
     roomId: string;
     isVisible: boolean;
-    connectionStatus: Parameters<typeof events.karaokeConnectionStatusChange.dispatch>[0] | 'uninitialised';
+    connectionStatus: ConnectionStatuses;
     onConnect: (silent: boolean) => void;
+    connectionError?: PeerErrorType;
 }
 
 const usePersistedName = createPersistedState<string>('remote_mic_name');
 
-function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
+function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionError }: Props) {
     const [name, setName] = usePersistedName('');
     const inputRef = useRef<HTMLInputElement | null>(null);
 
-    const disabled = connectionStatus !== 'uninitialised';
+    const disabled = connectionStatus !== 'uninitialised' && connectionStatus !== 'error';
 
     const connectToServer = (silent = false) => {
         WebRTCClient.connect(roomId, name, silent);
@@ -76,13 +80,19 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect }: Props) {
                     {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
                 </MenuButton>
-                {showConnectionTip && (
+                {(showConnectionTip || connectionError) && (
                     <>
-                        <h3>If it doesn't connect</h3>
+                        {showConnectionTip && <h3>If it doesn't connect</h3>}
+                        {connectionError && <h3>Could not connect</h3>}
                         <h5>
-                            Make sure you are in the same <Wifi /> Wi-Fi
+                            Make sure you are in the same{' '}
+                            <strong>
+                                <Wifi /> Wi-Fi
+                            </strong>
                         </h5>
-                        <h5>Refresh (F5) the Karaoke on the PC</h5>
+                        <h5>
+                            Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                        </h5>
                     </>
                 )}
             </Form>

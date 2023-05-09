@@ -7,6 +7,7 @@ const currentTime = Date.now();
 const currentVisit = Number(localStorage.getItem(CURRENT_VISIT_KEY) ?? currentTime);
 
 // One of the few ways to determine if user already visited the site before
+// Note that this is simulated in E2E tests - adjust them if you change this
 const isFirstVisit = localStorage.getItem('posthog-user-id') === null;
 
 // If it's the first visit, don't show new songs

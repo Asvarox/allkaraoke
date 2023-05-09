@@ -1,4 +1,4 @@
-import { SingSetup, Song, SongPreview } from 'interfaces';
+import { PeerErrorType, SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { SongStats } from 'Songs/stats/common';
@@ -51,7 +51,7 @@ export const events = {
     inputListChanged: new GameEvent<() => void>('inputListChanged'),
 
     karaokeConnectionStatusChange: new GameEvent<
-        (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error') => void
+        (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error', e?: PeerErrorType) => void
     >('karaokeConnectionStatusChange'),
     remoteMicPlayerNumberSet: new GameEvent<(playerNumber: number | null) => void>('remoteMicPlayerNumberSet'),
     remoteMicMonitoringStarted: new GameEvent('remoteMicMonitoringStarted'),

@@ -47,6 +47,8 @@ class WebRTCServer {
                     RemoteMicManager.removeRemoteMic(conn.peer, true);
                 } else if (type === 'request-mic-select') {
                     events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
+                } else if (type === 'ping') {
+                    conn.send({ t: 'pong' } as WebRTCEvents);
                 }
             });
 

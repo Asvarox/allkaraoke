@@ -116,3 +116,19 @@ export interface HighScoreEntity {
 
 export type seconds = number;
 export type milliseconds = number;
+
+// From https://github.com/peers/peerjs/blob/releases/2.0.0/lib/enums.ts
+export enum PeerErrorType {
+    BrowserIncompatible = 'browser-incompatible',
+    Disconnected = 'disconnected',
+    InvalidID = 'invalid-id',
+    InvalidKey = 'invalid-key',
+    Network = 'network',
+    PeerUnavailable = 'peer-unavailable',
+    SslUnavailable = 'ssl-unavailable',
+    ServerError = 'server-error',
+    SocketError = 'socket-error',
+    SocketClosed = 'socket-closed',
+    UnavailableID = 'unavailable-id',
+    WebRTC = 'webrtc',
+}

@@ -15,6 +15,7 @@ import MicPreview from 'Scenes/RemoteMic/Panels/MicPreview';
 import Connect from 'Scenes/RemoteMic/Panels/Connect';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/ConfirmReadiness';
 import isDev from 'utils/isDev';
+import Ping from 'Scenes/RemoteMic/Panels/Ping';
 
 interface Props {
     roomId: string;
@@ -25,7 +26,9 @@ const noSleep = new NoSleep();
 function RemoteMic({ roomId }: Props) {
     useBackground(true);
     const inputRef = useRef<HTMLInputElement | null>(null);
-    const [connectionStatus] = useEventListener(events.karaokeConnectionStatusChange) ?? ['uninitialised'];
+    const [connectionStatus, connectionError] = useEventListener(events.karaokeConnectionStatusChange) ?? [
+        'uninitialised',
+    ];
 
     const [monitoringStarted, setMonitoringStarted] = useState(false);
     useEventEffect(events.micMonitoringStarted, () => setMonitoringStarted(true));
@@ -64,13 +67,13 @@ function RemoteMic({ roomId }: Props) {
         }
     };
 
+    const isConnected = connectionStatus === 'connected';
+
     const onConfirm = () => {
         setKeepAwake(true);
     };
 
-    const micPreview = (
-        <MicPreview isVisible isMicOn={monitoringStarted} isConnected={connectionStatus === 'connected'} />
-    );
+    const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
 
     return (
         <>
@@ -84,17 +87,14 @@ function RemoteMic({ roomId }: Props) {
                         </>
                     }>
                     <Panel>
-                        <MicPreview
-                            isVisible
-                            isMicOn={monitoringStarted}
-                            isConnected={connectionStatus === 'connected'}
-                        />
+                        <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />
                         <ConfirmReadiness onConfirm={onConfirm} />
                         <Connect
                             roomId={roomId}
                             isVisible={true}
                             connectionStatus={connectionStatus}
                             onConnect={onConnect}
+                            connectionError={connectionError}
                         />
                     </Panel>
                     <Panel>
@@ -110,6 +110,11 @@ function RemoteMic({ roomId }: Props) {
                             }>
                             Microphone: <strong data-test="monitoring-state">{monitoringStarted ? 'ON' : 'OFF'}</strong>
                         </MicInputState>
+                        {isConnected && (
+                            <KeepAwake>
+                                Latency: <Ping />
+                            </KeepAwake>
+                        )}
                     </Panel>
                 </UserMediaEnabled>
             </Container>

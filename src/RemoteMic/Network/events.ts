@@ -53,6 +53,13 @@ export interface WebRTCConfirmReadinessEvent {
     t: 'confirm-readiness';
 }
 
+export interface WebRTCPingEventEvent {
+    t: 'ping';
+}
+export interface WebRTCPongEventEvent {
+    t: 'pong';
+}
+
 export interface WebRTCRequestMicSelectEvent {
     t: 'request-mic-select';
     playerNumber: number | null;
@@ -75,4 +82,6 @@ export type WebRTCEvents =
     | WebRTCRequestReadinessEvent
     | WebRTCConfirmReadinessEvent
     | WebRTCRequestMicSelectEvent
+    | WebRTCPingEventEvent
+    | WebRTCPongEventEvent
     | WebRTCNewFrequencyEvent;

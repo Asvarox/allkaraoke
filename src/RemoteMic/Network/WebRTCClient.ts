@@ -22,6 +22,7 @@ class WebRTCClient {
     private peer: Peer | null = null;
     private connection: DataConnection | null = null;
     private reconnecting = false;
+    private connected = false;
 
     private frequencies: number[] = [];
 
@@ -54,6 +55,31 @@ class WebRTCClient {
             SimplifiedMic.removeListener(this.onFrequencyUpdate);
             SimplifiedMic.stopMonitoring();
         });
+
+        this.peer.on('error', (e) => {
+            console.error(e.type, e);
+
+            if (!this.connected && !this.reconnecting) {
+                events.karaokeConnectionStatusChange.dispatch('error', e.type);
+            }
+        });
+    };
+
+    public latency = 999;
+    public pingStart = Date.now();
+    public pinging = false;
+    private ping = () => {
+        this.pinging = true;
+        this.pingStart = Date.now();
+
+        this.sendEvent('ping');
+    };
+
+    private onPong = () => {
+        this.latency = Date.now() - this.pingStart;
+        this.pinging = false;
+
+        setTimeout(this.ping, 5000);
     };
 
     public connectToServer = (roomId: string, name: string, silent: boolean) => {
@@ -62,10 +88,12 @@ class WebRTCClient {
 
         this.connection.on('open', () => {
             this.reconnecting = false;
+            this.connected = true;
 
             window.addEventListener('beforeunload', this.disconnect);
 
             this.sendEvent('register', { name, id: this.clientId!, silent });
+            this.ping();
 
             events.karaokeConnectionStatusChange.dispatch('connected');
 
@@ -92,6 +120,8 @@ class WebRTCClient {
                     window.location.reload();
                 } else if (type === 'request-readiness') {
                     events.remoteReadinessRequested.dispatch();
+                } else if (type === 'pong') {
+                    this.onPong();
                 }
             });
         });
@@ -108,6 +138,7 @@ class WebRTCClient {
 
             console.log('closed connection :o');
 
+            this.connected = false;
             this.reconnecting = true;
             setTimeout(() => this.reconnect(roomId, name), 500);
         });

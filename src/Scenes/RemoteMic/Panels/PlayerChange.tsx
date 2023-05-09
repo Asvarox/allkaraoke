@@ -25,7 +25,15 @@ export default function PlayerChange({ playerNumber }: Props) {
     return (
         <>
             <PlayerChangeContainer onClick={() => setIsOpen(true)} data-test="change-player">
-                {playerNumber === null ? 'Join game' : 'Change'} <SwapHorizIcon />
+                {playerNumber === null ? (
+                    'Join game'
+                ) : (
+                    <>
+                        <PlayerColorCircle style={{ background: styles.colors.players[playerNumber].perfect.fill }} />{' '}
+                        Change
+                    </>
+                )}{' '}
+                <SwapHorizIcon />
             </PlayerChangeContainer>
             {isOpen && (
                 <Modal onClose={closeModal}>
@@ -61,6 +69,13 @@ export default function PlayerChange({ playerNumber }: Props) {
 
 const Menu = styled(MenuContainer)`
     gap: 0;
+`;
+
+const PlayerColorCircle = styled.div`
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
 `;
 
 const PlayerChangeContainer = styled.button`
