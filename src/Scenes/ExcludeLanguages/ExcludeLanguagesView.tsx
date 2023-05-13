@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 import { SongPreview } from 'interfaces';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
 import { css } from '@emotion/react';
 import isE2E from 'utils/isE2E';
@@ -68,6 +68,24 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         else if (!excludedLanguages.includes(language)) setExcludedLanguages([...excludedLanguages, language]);
         else setExcludedLanguages(excludedLanguages.filter((lang) => lang !== language));
     };
+
+    useEffect(() => {
+        if (excludedLanguages === null && navigator?.languages) {
+            let languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
+            const preferredLanguages = navigator?.languages
+                .map((lang) => languageNames.of(lang)?.toLowerCase()!)
+                .filter(Boolean);
+
+            const toExclude = languageList
+                .map((lang) => lang.name)
+                .filter((lang) => !preferredLanguages.some((preferred) => preferred.includes(lang.toLowerCase())))
+                .filter((lang) => lang !== 'English'); // Always have English selected as default
+
+            if (toExclude.length) {
+                setExcludedLanguages(toExclude);
+            }
+        }
+    }, [excludedLanguages, languageList]);
 
     return (
         <MenuWithLogo>
@@ -148,7 +166,7 @@ const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
     ${(props) =>
         props.excluded
             ? css`
-                  filter: grayscale(1);
+                  filter: grayscale(0.6);
                   opacity: 0.5;
               `
             : ''}
