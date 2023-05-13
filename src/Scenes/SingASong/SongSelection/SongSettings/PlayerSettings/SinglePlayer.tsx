@@ -5,6 +5,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useRef } from 'react';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { MAX_NAME_LENGTH } from 'consts';
 
 interface Props {
     index: number;
@@ -37,6 +38,7 @@ export default function SinglePlayer({
     return (
         <>
             <PlayerName
+                maxLength={MAX_NAME_LENGTH}
                 className="ph-no-capture"
                 value={setup.name}
                 options={playerNames}

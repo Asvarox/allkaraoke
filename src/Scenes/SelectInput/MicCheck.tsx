@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import VolumeIndicator from 'Scenes/Game/VolumeIndicator';
+import { PlayerMicCheck } from 'Elements/VolumeIndicator';
 
 interface Props {
     names: [string, string];
@@ -8,12 +8,14 @@ interface Props {
 function MicCheck(props: Props) {
     return (
         <MicCheckContainer>
-            <VolumeIndicator playerNumber={0} data-test="mic-check-p1">
+            <Indicator data-test="mic-check-p1">
+                <PlayerMicCheck playerNumber={0} />
                 {props.names[0]}
-            </VolumeIndicator>
-            <VolumeIndicator playerNumber={1} data-test="mic-check-p2">
+            </Indicator>
+            <Indicator data-test="mic-check-p2">
+                <MirrorMicCheck playerNumber={1} />
                 {props.names[1]}
-            </VolumeIndicator>
+            </Indicator>
         </MicCheckContainer>
     );
 }
@@ -25,6 +27,23 @@ const MicCheckContainer = styled.div`
     div {
         flex: 1;
     }
+`;
+
+const Indicator = styled.div`
+    position: relative;
+    border: 0.1rem solid white;
+    padding: 1rem 3rem;
+    background: black;
+
+    text-align: center;
+    gap: 1.25rem;
+    font-size: 2.3rem;
+    color: white;
+`;
+
+const MirrorMicCheck = styled(PlayerMicCheck)`
+    rotate: 180deg;
+    translate: -100% 0;
 `;
 
 export default MicCheck;

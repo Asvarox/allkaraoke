@@ -8,6 +8,7 @@ import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import { PeerErrorType } from 'interfaces';
+import { MAX_NAME_LENGTH } from 'consts';
 
 type ConnectionStatuses = Parameters<typeof events.karaokeConnectionStatusChange.dispatch>[0] | 'uninitialised';
 
@@ -67,6 +68,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
         <>
             <Form onSubmit={handleConnect}>
                 <Input
+                    maxLength={MAX_NAME_LENGTH}
                     focused={false}
                     label="Name"
                     value={name}

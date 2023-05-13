@@ -7,13 +7,14 @@ import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 import { useEffect } from 'react';
-import VolumeIndicator from 'Scenes/Game/VolumeIndicator';
+import { PlayerMicCheck } from 'Elements/VolumeIndicator';
 import styled from '@emotion/styled';
-import { Mic } from '@mui/icons-material';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { useMicrophoneStatus } from 'UserMedia/hooks';
 import isWindows from 'utils/isWindows';
+import { useEventListenerSelector } from 'GameEvents/hooks';
+import events from 'GameEvents/GameEvents';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -23,10 +24,40 @@ interface Props {
     playerNames?: string[];
 }
 
+const PlayerSelector = (props: {
+    number: number;
+    name?: string;
+    inputs: ReturnType<typeof useMicrophoneList>;
+    register: ReturnType<typeof useKeyboardNav>['register'];
+}) => {
+    const [source, cycleSource, input, cycleInput] = usePlayerInput(props.number, props.inputs);
+    return (
+        <>
+            <SwitcherWithPlayerHeader
+                {...props.register(`player ${props.number} source`, cycleSource)}
+                label={
+                    props.name ? (
+                        <span className="ph-no-capture">{props.name} Source</span>
+                    ) : (
+                        `Player ${props.number + 1} Source`
+                    )
+                }
+                value={source}
+                data-test={`player-${props.number}-source`}
+            />
+            <SwitcherWithMicCheck
+                {...props.register(`player ${props.number} input`, cycleInput)}
+                label="Input"
+                value={input?.label}
+                data-test={`player-${props.number}-input`}>
+                <MicCheck playerNumber={props.number} />
+            </SwitcherWithMicCheck>
+        </>
+    );
+};
+
 function Advanced(props: Props) {
     const inputs = useMicrophoneList(true);
-    const [p1Source, p1CycleSource, p1Input, p1CycleInput] = usePlayerInput(0, inputs);
-    const [p2Source, p2CycleSource, p2Input, p2CycleInput] = usePlayerInput(1, inputs);
     const status = useMicrophoneStatus();
 
     useEffect(() => {
@@ -44,66 +75,31 @@ function Advanced(props: Props) {
 
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
+    const [p1, p2] = useEventListenerSelector(events.playerInputChanged, () => [
+        InputManager.getPlayerInput(0),
+        InputManager.getPlayerInput(1),
+    ]);
+
+    const isBothMicrophones =
+        p1?.inputSource === MicrophoneInputSource.inputName && p2?.inputSource === MicrophoneInputSource.inputName;
+
     return (
         <>
             <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can show them.</h2>}>
                 <ConnectRemoteMic />
-                <Heading>
-                    <MicCheck playerNumber={0}>
-                        <Mic />
-                    </MicCheck>{' '}
-                    Player 1{' '}
-                    {props.playerNames?.[0] && <span className="ph-no-capture">(${props.playerNames[0]})</span>}
-                </Heading>
-                <Switcher
-                    {...register('player 1 source', p1CycleSource)}
-                    label="Source"
-                    value={p1Source}
-                    data-test="player-1-source"
-                />
-                <Switcher
-                    {...register('player 1 input', p1CycleInput)}
-                    label="Input"
-                    value={p1Input?.label}
-                    data-test="player-1-input"
-                />
-                <Heading>
-                    <MicCheck playerNumber={1}>
-                        <Mic />
-                    </MicCheck>{' '}
-                    Player 2{' '}
-                    {props.playerNames?.[1] && <span className="ph-no-capture">(${props.playerNames[1]})</span>}
-                </Heading>
-                <Switcher
-                    {...register('player 2 source', p2CycleSource)}
-                    label="Source"
-                    value={p2Source}
-                    data-test="player-2-source"
-                />
-                <Switcher
-                    {...register('player 2 input', p2CycleInput)}
-                    label="Input"
-                    value={p2Input?.label}
-                    data-test="player-2-input"
-                />
+                <PlayerSelector inputs={inputs} number={0} register={register} name={props.playerNames?.[0]} />
+                <PlayerSelector inputs={inputs} number={1} register={register} name={props.playerNames?.[1]} />
                 <hr />
-                {p1Source === MicrophoneInputSource.inputName &&
-                    p2Source === MicrophoneInputSource.inputName &&
-                    p1Input?.deviceId !== p2Input?.deviceId && (
-                        <h3 data-test="mic-mismatch-warning">
-                            Using different microphone devices is not yet supported
-                        </h3>
-                    )}
-                {p1Source === MicrophoneInputSource.inputName &&
-                    p2Source === MicrophoneInputSource.inputName &&
-                    window.chrome &&
-                    isWindows() && (
-                        <h3>
-                            <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any
-                            problems, try using an alternative browser (eg. <strong>MS Edge</strong> or{' '}
-                            <strong>Firefox</strong>)
-                        </h3>
-                    )}
+                {isBothMicrophones && p1?.deviceId !== p2?.deviceId && (
+                    <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>
+                )}
+                {isBothMicrophones && window.chrome && isWindows() && (
+                    <h3>
+                        <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any
+                        problems, try using an alternative browser (eg. <strong>MS Edge</strong> or{' '}
+                        <strong>Firefox</strong>)
+                    </h3>
+                )}
             </UserMediaEnabled>
             <MenuButton {...register('back', props.onBack)} data-test="back-button">
                 Back to Input Selection
@@ -115,19 +111,19 @@ function Advanced(props: Props) {
     );
 }
 
-const MicCheck = styled(VolumeIndicator)`
-    display: inline-flex;
-    padding: 0.1rem 1rem;
-
-    svg {
-        font-size: 2.4rem;
-    }
+const MicCheck = styled(PlayerMicCheck)`
+    opacity: 0.75;
+    width: 50%;
+    height: calc(100% - 0.5rem);
+    margin: 0.25rem;
 `;
 
-const Heading = styled.h2`
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
+const SwitcherWithMicCheck = styled(Switcher)`
+    position: relative;
+`;
+
+const SwitcherWithPlayerHeader = styled(Switcher)`
+    background: none;
 `;
 
 export default Advanced;

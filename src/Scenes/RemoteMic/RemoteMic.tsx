@@ -112,7 +112,7 @@ function RemoteMic({ roomId }: Props) {
                         </MicInputState>
                         {isConnected && (
                             <KeepAwake>
-                                Latency: <Ping />
+                                Ping: <Ping />
                             </KeepAwake>
                         )}
                     </Panel>

@@ -3,6 +3,7 @@ import { typography } from 'Elements/cssMixins';
 import { Input } from 'Elements/Input';
 import { nextIndex } from 'Elements/Switcher';
 import {
+    ComponentProps,
     ForwardedRef,
     forwardRef,
     KeyboardEventHandler,
@@ -14,7 +15,7 @@ import {
 } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
-interface Props {
+interface Props extends ComponentProps<typeof Input> {
     focused: boolean;
     label: ReactNode;
     value: string;

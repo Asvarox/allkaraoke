@@ -8,6 +8,7 @@ import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { VolumeIndicator } from 'Elements/VolumeIndicator';
 
 interface Props {
     player: number;
@@ -42,7 +43,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-            {!mobilePhoneMode && <VolumeIndicator color={playerColor} volume={playerVolume} />}
+            {!mobilePhoneMode && <StyledVolumeIndicator playerNumber={player} volume={playerVolume} />}
             {timeToNextChange < Infinity && (
                 <PassTheMicProgress
                     color={playerColor}
@@ -182,20 +183,9 @@ const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number
     </BaseLyricActive>
 );
 
-const VolumeIndicatorBase = styled.div<{ color: string }>`
-    background: linear-gradient(270deg, rgba(${(props) => props.color}, 1) 0%, rgba(${(props) => props.color}, 0) 100%);
+const StyledVolumeIndicator = styled(VolumeIndicator)`
     width: 20rem;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-repeat: repeat-y;
-    overflow: visible;
 `;
-
-const VolumeIndicator = ({ volume, ...rest }: PropsWithChildren<{ color: string; volume: number }>) => (
-    <VolumeIndicatorBase {...rest} style={{ backgroundPositionX: `${(1 - Math.min(1, volume * 15)) * 20}rem` }} />
-);
 
 const BasePassTheMicProgress = styled.div<{ color: string }>`
     position: absolute;

@@ -22,7 +22,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     // Connect blue microphone
     const remoteMic = await connectRemoteMic(page, context, 'E2E Test Blue');
     // Assert auto selection of inputs
-    await expect(page.getByTestId('player-1-input')).toContainText('E2E Test Blue', { ignoreCase: true });
+    await expect(page.getByTestId('player-0-input')).toContainText('E2E Test Blue', { ignoreCase: true });
 
     await expect(page.locator('.Toastify')).toContainText('E2E Test Blue connected', {
         ignoreCase: true,
@@ -40,7 +40,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     // Make sure the input isn't monitored anymore if it's not in use
     await page.getByTestId('select-inputs-button').click();
     await page.getByTestId('advanced').click();
-    await page.getByTestId('player-1-source').click();
+    await page.getByTestId('player-0-source').click();
     await expect(remoteMic.getByTestId('monitoring-state')).toContainText('off', {
         ignoreCase: true,
     });

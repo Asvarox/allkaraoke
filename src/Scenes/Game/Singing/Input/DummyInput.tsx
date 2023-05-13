@@ -21,6 +21,8 @@ class DummyInput implements InputInterface {
             } else {
                 this.frequencies[0] = Math.sin(this.timestamp / 1000) * 50 + 100;
                 this.frequencies[1] = Math.cos(this.timestamp / 1000) * 50 + 200;
+
+                this.volumes = this.frequencies.map((freq) => (1.5 + Math.random()) / 80) as [number, number];
             }
         }, 32);
     };

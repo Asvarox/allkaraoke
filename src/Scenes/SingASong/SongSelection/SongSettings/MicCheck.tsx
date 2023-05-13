@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import { useEffect } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import VolumeIndicator from 'Scenes/Game/VolumeIndicator';
+import { PlayerMicCheck } from 'Elements/VolumeIndicator';
 
 export default function MicCheck() {
     useEffect(() => {
@@ -12,8 +12,12 @@ export default function MicCheck() {
     return (
         <MicChecksContainer>
             Microphone Check
-            <VolumeIndicator playerNumber={0}>Player 1</VolumeIndicator>
-            <VolumeIndicator playerNumber={1}>Player 2</VolumeIndicator>
+            <Indicator>
+                Player 1<PlayerMicCheck playerNumber={0} />
+            </Indicator>
+            <Indicator>
+                Player 2<PlayerMicCheck playerNumber={1} />
+            </Indicator>
         </MicChecksContainer>
     );
 }
@@ -25,4 +29,16 @@ const MicChecksContainer = styled.div`
     flex-direction: column;
     ${typography};
     margin-bottom: 8.6rem;
+`;
+
+const Indicator = styled.div`
+    position: relative;
+    border: 0.1rem solid white;
+    padding: 1rem 3rem;
+    background: black;
+
+    text-align: center;
+    gap: 1.25rem;
+    font-size: 2.3rem;
+    color: white;
 `;

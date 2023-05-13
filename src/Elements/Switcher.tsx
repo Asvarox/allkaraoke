@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { focusable, typography } from 'Elements/cssMixins';
-import { ReactNode } from 'react';
+import { PropsWithChildren, ReactNode } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ValuesType } from 'utility-types';
 
-interface Props {
+interface Props extends PropsWithChildren {
     focused: boolean;
     label: ReactNode;
     value: ReactNode;
@@ -29,9 +29,10 @@ export function nextValue<T extends readonly any[]>(
     return values[nextValueIndex(values, current, direction)];
 }
 
-export const Switcher = ({ focused, label, value, onClick, ...restProps }: Props) => (
+export const Switcher = ({ focused, label, value, onClick, children, ...restProps }: Props) => (
     <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
-        <span>{label ? `${label}:` : ''}</span> <ConfigValue>{value}</ConfigValue>
+        <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
+        {children ?? null}
     </ConfigurationPosition>
 );
 

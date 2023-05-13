@@ -29,9 +29,10 @@ export function usePlayerInput(playerNumber: number, sources: Record<InputSource
         }
     });
 
-    const cycleSource = () => {
+    const cycleSource = (startingIndex?: number) => {
         const nextSource = nextValue(sourceList, selectedPlayerInput?.inputSource ?? sourceList[0]);
-        const input = sources[nextSource].getDefault();
+
+        const input = startingIndex ? sources[nextSource].list[startingIndex] : sources[nextSource].getDefault();
 
         InputManager.setPlayerInput(playerNumber, nextSource, input?.channel, input?.deviceId);
     };
@@ -39,9 +40,14 @@ export function usePlayerInput(playerNumber: number, sources: Record<InputSource
         if (!selectedPlayerInput) return;
         const list = sources[selectedPlayerInput.inputSource].list;
         const currentIndex = playerInputData ? list.findIndex((item) => item.id === playerInputData.id) : 0;
-        const input = list[nextIndex(list, currentIndex)];
+        const newIndex = nextIndex(list, currentIndex);
+        if (newIndex === 0) {
+            cycleSource(0);
+        } else {
+            const input = list[newIndex];
 
-        InputManager.setPlayerInput(playerNumber, selectedPlayerInput.inputSource, input?.channel, input?.deviceId);
+            InputManager.setPlayerInput(playerNumber, selectedPlayerInput.inputSource, input?.channel, input?.deviceId);
+        }
     };
 
     return tuple([selectedPlayerInput?.inputSource ?? null, cycleSource, playerInputData, cycleInput]);
