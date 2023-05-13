@@ -7,6 +7,7 @@ import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import isDev from 'utils/isDev';
 import { v4 } from 'uuid';
+import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 
 interface Props {
     songPreview: SongPreview;
@@ -73,6 +74,15 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                 data-test="game-mode-setting"
                 data-test-value={gameModeNames[mode]}
             />
+            <ModeDescription>
+                {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
+                {mode === GAME_MODE.PASS_THE_MIC && (
+                    <>
+                        For more than 2 players - split into groups and pass the microphone within the group when
+                        prompted with <SwapHorizIcon /> symbol.
+                    </>
+                )}
+            </ModeDescription>
             <PlayButton {...register('play', startSong, undefined, true)} data-test="next-step-button">
                 Next ➤
             </PlayButton>
@@ -84,6 +94,14 @@ const PlayButton = styled(Button)`
     padding: 0.5rem 9rem;
     font-size: 4.3rem;
     width: 50rem;
+`;
+
+const ModeDescription = styled.h3`
+    max-width: 50rem;
+    margin: -1rem 0 1rem !important;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
 `;
 
 const GSSwitcher = styled(Switcher)`
