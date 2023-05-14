@@ -9,9 +9,10 @@ import BuiltIn from 'Scenes/SelectInput/Variants/BuiltIn';
 import posthog from 'posthog-js';
 import startViewTransition from 'utils/startViewTransition';
 import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
+import { ValuesType } from 'utility-types';
 
 interface Props {
-    onFinish: (pref: (typeof MicSetupPreference)[number]) => void;
+    onFinish: (pref: ValuesType<typeof MicSetupPreference>) => void;
     onBack?: () => void;
     smooth?: boolean;
     closeButtonText: string;
@@ -24,7 +25,7 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
 function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText }: Props) {
-    const [preference, setPreference] = useState<(typeof MicSetupPreference)[number]>(null);
+    const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference>>(null);
     const [isComplete, setIsComplete] = useState(false);
 
     const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
@@ -35,7 +36,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
         });
     };
 
-    const onSave = (pref: (typeof MicSetupPreference)[number]) => () => {
+    const onSave = (pref: ValuesType<typeof MicSetupPreference>) => () => {
         // Keep currently selected preference unless nothing (null) is selected - then store `skip` directly
         // skip is needed to mark that user explicitly didn't select anything
         setStoredPreference(pref === 'skip' ? storedPreference ?? 'skip' : pref);
@@ -79,6 +80,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
                     onBack={back}
                     onSave={onSave('remoteMics')}
                     closeButtonText={closeButtonText}
+                    changePreference={setPreference}
                 />
             )}
             {preference === 'mics' && (
@@ -87,6 +89,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
                     onBack={back}
                     onSave={onSave('mics')}
                     closeButtonText={closeButtonText}
+                    changePreference={setPreference}
                 />
             )}
             {preference === 'built-in' && (
@@ -95,6 +98,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
                     onBack={back}
                     onSave={onSave('built-in')}
                     closeButtonText={closeButtonText}
+                    changePreference={setPreference}
                 />
             )}
             {preference === 'advanced' && (
@@ -103,6 +107,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
                     onSetupComplete={setIsComplete}
                     onBack={back}
                     closeButtonText={closeButtonText}
+                    changePreference={setPreference}
                     playerNames={playerNames}
                 />
             )}
@@ -112,6 +117,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
                     onBack={back}
                     onSave={onSave('skip')}
                     closeButtonText={closeButtonText}
+                    changePreference={setPreference}
                 />
             )}
         </>

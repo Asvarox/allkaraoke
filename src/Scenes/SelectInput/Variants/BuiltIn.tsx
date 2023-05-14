@@ -10,11 +10,14 @@ import { nextIndex, Switcher } from 'Elements/Switcher';
 import { InputSource } from '../InputSources/interfaces';
 import { useEventEffect } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import { ValuesType } from 'utility-types';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
+    changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
     closeButtonText: string;
 }
 
@@ -78,6 +81,14 @@ function BuiltIn(props: Props) {
                             value={selectedMic}
                             data-test="selected-mic"
                         />
+                        <h4>
+                            Built-in microphones can pick up music from the game. For more accurate scores, try using
+                            your{' '}
+                            <button onClick={() => props.changePreference('remoteMics')}>
+                                smartphone as a microphone
+                            </button>
+                            .
+                        </h4>
                     </>
                 )}
                 <MicCheck names={['These light up when', 'singing is detected']} />

@@ -44,9 +44,28 @@ export default css`
         opacity: 0.25;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        button {
+            ${typography};
+            background: none;
+            padding: 0;
+            margin: 0;
+            border: none;
+            font-size: inherit;
+            color: ${styles.colors.text.active};
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
     a {
         ${typography};
         color: ${styles.colors.text.active};
+        text-decoration: underline;
     }
 
     strong {

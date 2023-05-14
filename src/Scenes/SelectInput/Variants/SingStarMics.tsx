@@ -7,16 +7,18 @@ import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphon
 import { useEffect, useState } from 'react';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import InputSources from 'Scenes/SelectInput/InputSources';
-import styled from '@emotion/styled';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import isWindows from 'utils/isWindows';
 import events from 'GameEvents/GameEvents';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import { ValuesType } from 'utility-types';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
+    changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
 }
 
 function SingStarMics(props: Props) {
@@ -89,8 +91,8 @@ function SingStarMics(props: Props) {
                             <>
                                 <h4 data-test="advanced-tip">
                                     If detection doesn't happen, try{' '}
-                                    <AdvancedLink onClick={props.onBack}>Advanced</AdvancedLink> section in the previous
-                                    menu.
+                                    <button onClick={() => props.changePreference('advanced')}>Advanced</button> section
+                                    in the previous menu.
                                 </h4>
                                 {window.chrome && isWindows() && (
                                     <h4>
@@ -126,9 +128,5 @@ function SingStarMics(props: Props) {
         </>
     );
 }
-
-const AdvancedLink = styled.strong`
-    cursor: pointer;
-`;
 
 export default SingStarMics;

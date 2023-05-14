@@ -15,6 +15,8 @@ import { useMicrophoneStatus } from 'UserMedia/hooks';
 import isWindows from 'utils/isWindows';
 import { useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import { ValuesType } from 'utility-types';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -22,6 +24,7 @@ interface Props {
     onSave: () => void;
     closeButtonText: string;
     playerNames?: string[];
+    changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
 }
 
 const PlayerSelector = (props: {

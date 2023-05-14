@@ -8,12 +8,15 @@ import InputSources from 'Scenes/SelectInput/InputSources';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import events from 'GameEvents/GameEvents';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import { ValuesType } from 'utility-types';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
+    changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
 }
 
 function RemoteMics(props: Props) {
