@@ -172,7 +172,7 @@ const Container = styled.div<{ songsPerRow: number }>`
 `;
 
 const SongsGroupContainer = styled.div<{ highlight: boolean }>`
-    padding: 0 11rem 0 4.5rem;
+    padding: 0 4.5rem 0 11rem;
     ${(props) =>
         props.highlight &&
         css`

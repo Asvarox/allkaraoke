@@ -16,12 +16,12 @@ const usePlaylists = (): PlaylistEntry[] =>
     useMemo(
         () => [
             { name: 'All', filters: {} },
-            { name: 'Polish', filters: { language: 'Polish' } },
             { name: 'English', filters: { language: 'English' } },
+            { name: 'Polish', filters: { language: 'Polish' } },
             { name: 'Classics', filters: { yearBefore: 1995 } },
             { name: 'Modern', filters: { yearAfter: 1995 } },
             { name: 'Duets', filters: { duet: true } },
-            { name: 'New', filters: { updatedAfter: addDays(new Date(), -21).toISOString() } },
+            { name: 'New', filters: { updatedAfter: addDays(new Date(), -31).toISOString() } },
         ],
         [],
     );
@@ -77,15 +77,15 @@ export default function Playlists({ setFilters, active, closePlaylist }: Props) 
 const Container = styled.div`
     background: rgba(0, 0, 0, 0.7);
     width: 100vh;
-    transform-origin: 0 0;
-    transform: rotate(90deg);
+    transform-origin: top right;
+    transform: rotate(-90deg);
     position: absolute;
-    right: -100vh;
+    left: -100vh;
     top: 0;
     font-size: 3.6rem;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 
     h2 {
         ${typography};
