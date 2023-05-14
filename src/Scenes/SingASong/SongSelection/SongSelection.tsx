@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { focused } from 'Elements/cssMixins';
+import { focused, typography } from 'Elements/cssMixins';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
@@ -116,6 +116,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 <SelectRandomTip keyboardControl={keyboardControl} />
             )}
             <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
+                {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
                 {songPreview && (
                     <SongPreview
                         songPreview={songPreview}
@@ -194,6 +195,16 @@ const SongsGroupContainer = styled.div<{ highlight: boolean }>`
                 background: #ffffff;
             }
         `}
+`;
+
+const NoSongsFound = styled.div`
+    ${typography};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    font-size: 10rem;
 `;
 
 const SongsGroupHeader = styled.div`
