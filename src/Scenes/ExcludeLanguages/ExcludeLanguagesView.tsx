@@ -188,10 +188,8 @@ const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }
         props.excluded
             ? css`
                   ${props.focused ? '' : 'background: rgba(0, 0, 0, 0.55)'};
-                  ${LanguageName} {
-                      text-decoration: line-through white;
-                      opacity: 0.5;
-                  }
+                  text-decoration: line-through white;
+                  opacity: 0.5;
               `
             : ''}
     ${typography};
