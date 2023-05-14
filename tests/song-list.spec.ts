@@ -45,13 +45,13 @@ test('Filters - PlayLists', async ({ page }) => {
     await page.keyboard.press('ArrowRight');
     await page.keyboard.press('ArrowRight');
 
-    await page.keyboard.press('ArrowDown'); // Polish
-    await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
-    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
-
     await page.keyboard.press('ArrowDown'); // English
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
+
+    await page.keyboard.press('ArrowDown'); // Polish
+    await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Classics
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
