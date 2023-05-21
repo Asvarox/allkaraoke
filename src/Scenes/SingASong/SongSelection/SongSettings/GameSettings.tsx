@@ -30,12 +30,13 @@ if (isDev()) {
     difficultyNames.push('Debug 6');
 }
 
-// added -v2 to the key as the value has changed from number to ValuesType<typeof GAME_MODE>
-const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE>>('song_settings-game_mode-v2');
+// added -v3 to the key as the value to handle default selection if it wasnt changed
+const useSetGameMode = createPersistedState<ValuesType<typeof GAME_MODE> | null>('song_settings-game_mode-v3');
 const useSetTolerance = createPersistedState<number>('song_settings-tolerance-v2');
 
 export default function GameSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
-    const [mode, setMode] = useSetGameMode(GAME_MODE.DUEL);
+    const [rememberedMode, setMode] = useSetGameMode(null);
+    const mode = rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL);
     const [tolerance, setTolerance] = useSetTolerance(1);
 
     const startSong = () => {
@@ -52,7 +53,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
     };
 
     const changeMode = () => {
-        setMode((currentMode) => nextValue(Object.values(GAME_MODE), currentMode));
+        setMode(nextValue(Object.values(GAME_MODE), mode));
     };
 
     const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));

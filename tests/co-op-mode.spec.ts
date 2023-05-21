@@ -24,9 +24,6 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
     await expect(page.getByTestId('next-step-button')).toBeVisible();
 
     // Game mode
-    await navigateWithKeyboard(page, 'game-mode-setting');
-    await page.keyboard.press('Enter'); // change to pass the mic
-    await page.keyboard.press('Enter'); // change to Coop
     await expect(page.getByTestId('game-mode-setting')).toHaveAttribute('data-test-value', 'Cooperation');
 
     await navigateWithKeyboard(page, 'next-step-button');
