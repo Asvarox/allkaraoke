@@ -30,7 +30,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
 
     await page.getByTestId('save-button').click();
 
-    await expect(page.getByTestId('player-1-name')).toHaveAttribute('placeholder', 'E2E Test Blue');
+    await expect(page.getByTestId('player-0-name')).toHaveAttribute('placeholder', 'E2E Test Blue');
 
     // Make sure the microphone of new device is being monitored
     await expect(remoteMic.getByTestId('monitoring-state')).toContainText('on', {
@@ -58,19 +58,19 @@ test('Source selection from remote mic', async ({ page, context }) => {
 
     await test.step('change red player mic to blue', async () => {
         await remoteMicRed.getByTestId('change-player').click();
-        await remoteMicRed.getByTestId('change-to-player-1').click();
-        await expect(page.getByTestId('mic-check-p1')).toContainText('E2E Test Red', { ignoreCase: true });
-        await expect(page.getByTestId('mic-check-p2')).toContainText('...', { ignoreCase: true });
+        await remoteMicRed.getByTestId('change-to-player-0').click();
+        await expect(page.getByTestId('mic-check-p0')).toContainText('E2E Test Red', { ignoreCase: true });
+        await expect(page.getByTestId('mic-check-p1')).toContainText('...', { ignoreCase: true });
     });
     await test.step('change blue player mic to red', async () => {
         await remoteMicBluePage.getByTestId('change-player').click();
-        await remoteMicBluePage.getByTestId('change-to-player-2').click();
-        await expect(page.getByTestId('mic-check-p1')).toContainText('E2E Test Red', { ignoreCase: true });
-        await expect(page.getByTestId('mic-check-p2')).toContainText('E2E Test blue', { ignoreCase: true });
+        await remoteMicBluePage.getByTestId('change-to-player-1').click();
+        await expect(page.getByTestId('mic-check-p0')).toContainText('E2E Test Red', { ignoreCase: true });
+        await expect(page.getByTestId('mic-check-p1')).toContainText('E2E Test blue', { ignoreCase: true });
     });
     await test.step('Unset a player', async () => {
         await remoteMicBluePage.getByTestId('change-player').click();
         await remoteMicBluePage.getByTestId('change-to-unset').click();
-        await expect(page.getByTestId('mic-check-p2')).toContainText('...', { ignoreCase: true });
+        await expect(page.getByTestId('mic-check-p1')).toContainText('...', { ignoreCase: true });
     });
 });

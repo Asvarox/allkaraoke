@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
     await mockSongs({ page, context });
 });
 
-test('Basic sing a song', async ({ page, browserName }, testInfo) => {
+test('Sing a song', async ({ page, browserName }, testInfo) => {
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('advanced').click();
@@ -26,6 +26,7 @@ test('Basic sing a song', async ({ page, browserName }, testInfo) => {
     await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');
 
     await expect(page.getByTestId('song-e2e-test-multitrack.json').getByTestId('multitrack-indicator')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test.json').getByTestId('multitrack-indicator')).not.toBeVisible();
 
     await page.keyboard.press('Enter'); // focus
     await expect(page.getByTestId('next-step-button')).toBeVisible();
@@ -45,38 +46,38 @@ test('Basic sing a song', async ({ page, browserName }, testInfo) => {
 
     // Player 1
     // Name
-    await expect(page.getByTestId('player-1-name')).toBeVisible();
-    await navigateWithKeyboard(page, 'player-1-name');
+    await expect(page.getByTestId('player-0-name')).toBeVisible();
+    await navigateWithKeyboard(page, 'player-0-name');
     await page.keyboard.press('Enter', { delay: 40 }); // activate
-    await expect(page.getByTestId('player-1-name')).toBeFocused();
+    await expect(page.getByTestId('player-0-name')).toBeFocused();
     await page.keyboard.type('E2E Player 1'); // enter
     await page.keyboard.press('Enter'); // save
-    await expect(page.getByTestId('player-1-name')).not.toBeFocused();
+    await expect(page.getByTestId('player-0-name')).not.toBeFocused();
     // Track
-    await navigateWithKeyboard(page, 'player-1-track-setting');
+    await navigateWithKeyboard(page, 'player-0-track-setting');
     await page.keyboard.press('Enter'); // change to track 2
-    await expect(page.getByTestId('player-1-track-setting')).toHaveAttribute('data-test-value', '2');
+    await expect(page.getByTestId('player-0-track-setting')).toHaveAttribute('data-test-value', '2');
 
     // Player 2
     // Name
-    await navigateWithKeyboard(page, 'player-2-name');
+    await navigateWithKeyboard(page, 'player-1-name');
     await page.keyboard.press('Enter'); // activate
-    await expect(page.getByTestId('player-2-name')).toBeFocused();
+    await expect(page.getByTestId('player-1-name')).toBeFocused();
     await page.keyboard.type('E2E Player 2'); // enter
     // Track
-    await navigateWithKeyboard(page, 'player-2-track-setting');
-    await expect(page.getByTestId('player-2-name')).not.toBeFocused();
+    await navigateWithKeyboard(page, 'player-1-track-setting');
+    await expect(page.getByTestId('player-1-name')).not.toBeFocused();
     await page.keyboard.press('Enter'); // change to track 1
-    await expect(page.getByTestId('player-2-track-setting')).toHaveAttribute('data-test-value', '1');
+    await expect(page.getByTestId('player-1-track-setting')).toHaveAttribute('data-test-value', '1');
 
     // Start song
     await navigateWithKeyboard(page, 'play-song-button');
     await page.keyboard.press('Enter');
 
-    const p1CL = '[data-test="lyrics-current-player-1"]';
-    const p1NL = '[data-test="lyrics-next-player-1"]';
-    const p2CL = '[data-test="lyrics-current-player-2"]';
-    const p2NL = '[data-test="lyrics-next-player-2"]';
+    const p1CL = '[data-test="lyrics-current-player-0"]';
+    const p1NL = '[data-test="lyrics-next-player-0"]';
+    const p2CL = '[data-test="lyrics-current-player-1"]';
+    const p2NL = '[data-test="lyrics-next-player-1"]';
 
     test.setTimeout(testInfo.timeout + 3000);
 
@@ -93,8 +94,8 @@ test('Basic sing a song', async ({ page, browserName }, testInfo) => {
 
     // Song ending
     await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 30_000 });
-    await expect(page.getByTestId('player-1-name')).toHaveText('E2E Player 1');
-    await expect(page.getByTestId('player-2-name')).toHaveText('E2E Player 2');
+    await expect(page.getByTestId('player-0-name')).toHaveText('E2E Player 1');
+    await expect(page.getByTestId('player-1-name')).toHaveText('E2E Player 2');
 
     // High scores
     await page.getByTestId('highscores-button').click();
@@ -120,11 +121,11 @@ test('Basic sing a song', async ({ page, browserName }, testInfo) => {
     await page.keyboard.press('Enter'); // enter first song
     await expect(page.getByTestId('next-step-button')).toBeVisible();
     await page.keyboard.press('Enter');
-    await expect(page.getByTestId('player-1-name')).toHaveAttribute('placeholder', 'E2E Player 1');
-    await expect(page.getByTestId('player-2-name')).toHaveAttribute('placeholder', 'E2E Player 2');
+    await expect(page.getByTestId('player-0-name')).toHaveAttribute('placeholder', 'E2E Player 1');
+    await expect(page.getByTestId('player-1-name')).toHaveAttribute('placeholder', 'E2E Player 2');
 
     // Check if recent player list contains updated name
-    await page.getByTestId('player-1-name').click();
+    await page.getByTestId('player-0-name').click();
     await expect(page.locator('role=listbox')).toContainText('Updated name');
     await page.keyboard.press('Enter');
     await page.getByTestId('play-song-button').click();

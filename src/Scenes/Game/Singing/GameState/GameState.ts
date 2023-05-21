@@ -1,12 +1,18 @@
-import { FrequencyRecord, NotesSection, PlayerNote, SingSetup, Song } from 'interfaces';
+import { FrequencyRecord, GAME_MODE, NotesSection, PlayerNote, SingSetup, Song } from 'interfaces';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getNoteAtBeat } from 'Songs/utils/notesSelectors';
 import InputManager from '../Input/InputManager';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
-import calculateScore from './Helpers/calculateScore';
+import calculateScore, {
+    addDetailedScores,
+    beatsToPoints,
+    calculateDetailedScoreData,
+    divideDetailedScores,
+} from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import events from 'GameEvents/GameEvents';
+import tuple from 'utils/tuple';
 
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];
@@ -31,6 +37,8 @@ class PlayerState {
 
     public getName = () => this.name;
     public setName = (name: string) => (this.name = name);
+
+    public getNumber = () => this.index;
 
     public update = () => {
         const currentTime = this.gameState.getCurrentTime();
@@ -126,6 +134,8 @@ class PlayerState {
     };
 
     public getScore = () => calculateScore(this.playerNotes, this.gameState.getSong()!, this.getTrackIndex());
+    public getDetailedScore = () =>
+        calculateDetailedScoreData(this.playerNotes, this.gameState.getSong()!, this.getTrackIndex());
 
     public getMinPitch = () => this.min;
     public getMaxPitch = () => this.max;
@@ -175,6 +185,44 @@ class GameState {
     public getPlayers = () => this.playerStates;
 
     public getPlayerCount = () => this.playerStates.length;
+
+    public getPlayerScore = (player: number) => {
+        if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
+            const score = this.getPlayers().reduce((curr, playerState) => curr + playerState.getScore(), 0);
+
+            return score / this.getPlayerCount();
+        } else {
+            return this.getPlayer(player).getScore();
+        }
+    };
+
+    public getPlayerDetailedScore = (player: number) => {
+        if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
+            const scores = this.getPlayers().map((playerState) => playerState.getDetailedScore());
+
+            // getDetailedScore returns beats - calculate actual points for each player
+            const [fs, ...pointsScores] = scores.map(
+                ([pointsPerBeat, counts, maxCounts]) =>
+                    [beatsToPoints(counts, pointsPerBeat), beatsToPoints(maxCounts, pointsPerBeat)] as const,
+            );
+
+            const summedPoints = pointsScores.reduce(
+                (curr, pointsScore) => [
+                    addDetailedScores(curr[0], pointsScore[0]),
+                    addDetailedScores(curr[1], pointsScore[1]),
+                ],
+                fs,
+            );
+            return tuple([
+                divideDetailedScores(summedPoints[0], this.getPlayerCount()),
+                divideDetailedScores(summedPoints[1], this.getPlayerCount()),
+            ]);
+        } else {
+            const [pointsPerBeat, counts, maxCounts] = this.getPlayer(player).getDetailedScore();
+
+            return tuple([beatsToPoints(counts, pointsPerBeat), beatsToPoints(maxCounts, pointsPerBeat)]);
+        }
+    };
 
     public startInputMonitoring = async () => {
         return InputManager.startMonitoring();

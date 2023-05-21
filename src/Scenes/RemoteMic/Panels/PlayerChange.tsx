@@ -39,14 +39,14 @@ export default function PlayerChange({ playerNumber }: Props) {
                 <Modal onClose={closeModal}>
                     <Menu>
                         <MenuButton
-                            data-test="change-to-player-1"
+                            data-test="change-to-player-0"
                             onClick={() => selectPlayer(0)}
                             disabled={0 === playerNumber}
                             style={{ color: styles.colors.players[0].perfect.fill }}>
                             Blue
                         </MenuButton>
                         <MenuButton
-                            data-test="change-to-player-2"
+                            data-test="change-to-player-1"
                             onClick={() => selectPlayer(1)}
                             disabled={1 === playerNumber}
                             style={{ color: styles.colors.players[1].perfect.fill }}>

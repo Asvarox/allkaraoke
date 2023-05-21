@@ -53,7 +53,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             {hasNotes ? (
                 <>
                     <LyricsLine
-                        data-test={`lyrics-current-player-${player + 1}`}
+                        data-test={`lyrics-current-player-${player}`}
                         effectsEnabled={effectsEnabled}
                         mobileMode={!!mobilePhoneMode}>
                         <HeadstartContainer>
@@ -91,7 +91,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             {isNotesSection(nextSection) ? (
                 <LyricsLine
                     nextLine
-                    data-test={`lyrics-next-player-${player + 1}`}
+                    data-test={`lyrics-next-player-${player}`}
                     effectsEnabled={effectsEnabled}
                     mobileMode={!!mobilePhoneMode}>
                     {nextSection.notes.map((note) => (

@@ -28,6 +28,7 @@ export type Section = NotesSection | PauseSection;
 export const GAME_MODE = {
     DUEL: 'DUEL',
     PASS_THE_MIC: 'PASS_THE_MIC',
+    CO_OP: 'CO_OP',
 } as const;
 
 export interface PlayerSetup {

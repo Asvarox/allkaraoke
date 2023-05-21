@@ -103,7 +103,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                 <PlayerSettingTitle>Player 1</PlayerSettingTitle>
                 <div>
                     <SinglePlayer
-                        index={1}
+                        index={0}
                         setup={playerSetup[0]}
                         onChange={updatePlayer(0)}
                         playerNames={playerNames}
@@ -117,7 +117,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                 <PlayerSettingTitle>Player 2</PlayerSettingTitle>
                 <div>
                     <SinglePlayer
-                        index={2}
+                        index={1}
                         setup={playerSetup[1]}
                         onChange={updatePlayer(1)}
                         playerNames={playerNames}

@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { HighScoreEntity, Song } from 'interfaces';
+import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { useEditScore } from 'Songs/stats/hooks';
@@ -11,12 +11,12 @@ import HighScoreRename from './HighScoreRename';
 
 interface Props {
     onNextStep: () => void;
-    singSetupId: string;
+    singSetup: SingSetup;
     highScores: HighScoreEntity[];
     song: Song;
 }
 
-function HighScoresView({ onNextStep, highScores, singSetupId, song }: Props) {
+function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
     const { register } = useKeyboardNav();
     const editScore = useEditScore(song);
 
@@ -24,16 +24,16 @@ function HighScoresView({ onNextStep, highScores, singSetupId, song }: Props) {
         <>
             <ScoresContainer data-test="highscores-container">
                 {highScores.map((score, index) => (
-                    <ScoreContainer isCurrentSing={score.singSetupId === singSetupId} key={index}>
+                    <ScoreContainer isCurrentSing={score.singSetupId === singSetup.id} key={index}>
                         <ScorePosition>{index + 1}</ScorePosition>
 
                         <ScorePlayerName>
-                            {score.singSetupId === singSetupId ? (
+                            {score.singSetupId === singSetup.id ? (
                                 <HighScoreRename
                                     index={index}
                                     score={score}
                                     register={register}
-                                    singSetupId={singSetupId}
+                                    singSetupId={singSetup.id}
                                     onSave={editScore}
                                 />
                             ) : (

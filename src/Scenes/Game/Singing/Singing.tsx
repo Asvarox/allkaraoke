@@ -6,7 +6,6 @@ import { GAME_MODE, SingSetup } from 'interfaces';
 import { useMemo, useRef, useState } from 'react';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import events from 'GameEvents/GameEvents';
-import calculateScore from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
@@ -82,10 +81,20 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
                     height={height}
                     autoplay={false}
                     onSongEnd={() => {
-                        const scores = GameState.getPlayers().map((player) => ({
-                            name: player.getName(),
-                            score: calculateScore(player.getPlayerNotes(), song.data!, player.getTrackIndex()),
-                        }));
+                        const scores =
+                            GameState.getSingSetup()?.mode === GAME_MODE.CO_OP
+                                ? [
+                                      {
+                                          name: GameState.getPlayers()
+                                              .map((player) => player.getName())
+                                              .join(', '),
+                                          score: GameState.getPlayerScore(0),
+                                      },
+                                  ]
+                                : GameState.getPlayers().map((player) => ({
+                                      name: player.getName(),
+                                      score: GameState.getPlayerScore(player.getNumber()),
+                                  }));
                         events.songEnded.dispatch(song.data!, singSetup, scores);
                         setIsEnded(true);
                     }}

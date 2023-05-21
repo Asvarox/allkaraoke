@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { DetailedScore, Song } from 'interfaces';
+import { DetailedScore, SingSetup, Song } from 'interfaces';
 import { useState } from 'react';
 import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
 import SongPage from '../../SongPage';
@@ -7,8 +7,8 @@ import HighScoresView from './Views/HighScores';
 import { GameTip } from 'Elements/GameTip';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
-interface PlayerScore {
-    detailedScore: [number, DetailedScore, DetailedScore];
+export interface PlayerScore {
+    detailedScore: [DetailedScore, DetailedScore];
     name: string;
 }
 
@@ -25,11 +25,11 @@ interface Props {
     song: Song;
     onClickSongSelection: () => void;
     players: PlayerScore[];
-    singSetupId: string;
+    singSetup: SingSetup;
     highScores: HighScoreEntity[];
 }
 
-function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetupId }: Props) {
+function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetup }: Props) {
     useBackgroundMusic(true);
     const [step, setStep] = useState<'results' | 'highscores'>('results');
 
@@ -40,14 +40,14 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
                     <ResultsView
                         onNextStep={() => setStep('highscores')}
                         players={players}
-                        singSetupId={singSetupId}
+                        singSetup={singSetup}
                         highScores={highScores}
                     />
                 )}
                 {step === 'highscores' && (
                     <HighScoresView
                         onNextStep={onClickSongSelection}
-                        singSetupId={singSetupId}
+                        singSetup={singSetup}
                         highScores={highScores}
                         song={song}
                     />

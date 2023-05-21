@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { PlayerSetup, Song } from 'interfaces';
+import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
 import SkipIntro from 'Scenes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'Scenes/Game/Singing/GameOverlay/Components/SkipOutro';
@@ -102,12 +102,20 @@ function GameOverlay({
             <Scores>
                 {effectsEnabled && (
                     <>
-                        <span data-test="player-1-score" data-score={GameState.getPlayer(0).getScore()}>
-                            <ScoreText score={GameState.getPlayer(0).getScore()} />
-                        </span>
-                        <span data-test="player-2-score" data-score={GameState.getPlayer(1).getScore()}>
-                            <ScoreText score={GameState.getPlayer(1).getScore()} />
-                        </span>
+                        {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (
+                            <span data-test="players-score" data-score={GameState.getPlayerScore(0)}>
+                                <ScoreText score={GameState.getPlayerScore(0)} />
+                            </span>
+                        ) : (
+                            <>
+                                <span data-test="player-0-score" data-score={GameState.getPlayerScore(0)}>
+                                    <ScoreText score={GameState.getPlayerScore(0)} />
+                                </span>
+                                <span data-test="player-1-score" data-score={GameState.getPlayerScore(1)}>
+                                    <ScoreText score={GameState.getPlayerScore(1)} />
+                                </span>
+                            </>
+                        )}
                     </>
                 )}
             </Scores>
@@ -154,4 +162,5 @@ const Scores = styled.div`
     padding-right: 4rem;
     flex-direction: column;
     text-align: right;
+    z-index: 1;
 `;

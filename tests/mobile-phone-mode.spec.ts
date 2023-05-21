@@ -36,8 +36,8 @@ test('Mobile phone mode should be playable', async ({ page, context, browserName
     const remoteMicRed = await connectRemoteMic(page, context, P2_Name);
 
     // Assert auto selection of inputs
-    await expect(page.getByTestId('mic-check-p1')).toContainText(P1_Name, { ignoreCase: true });
-    await expect(page.getByTestId('mic-check-p2')).toContainText(P2_Name, { ignoreCase: true });
+    await expect(page.getByTestId('mic-check-p0')).toContainText(P1_Name, { ignoreCase: true });
+    await expect(page.getByTestId('mic-check-p1')).toContainText(P2_Name, { ignoreCase: true });
 
     await navigateWithKeyboard(page, 'save-button', remoteMicBluePage);
     await remoteMicBluePage.getByTestId('keyboard-enter').click();
@@ -104,13 +104,13 @@ test('Mobile phone mode should be playable', async ({ page, context, browserName
     test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
 
     await expect(async () => {
-        const p1score = await page.getByTestId('player-1-score').getAttribute('data-score');
+        const p1score = await page.getByTestId('player-0-score').getAttribute('data-score');
 
         expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
     }).toPass();
 
-    await expect(page.getByTestId('player-1-name')).toHaveText(P1_Name);
-    await expect(page.getByTestId('player-2-name')).toHaveText(P2_Name);
+    await expect(page.getByTestId('player-0-name')).toHaveText(P1_Name);
+    await expect(page.getByTestId('player-1-name')).toHaveText(P2_Name);
 
     await expect(page.getByTestId('highscores-button')).toBeVisible();
     await remoteMicBluePage.getByTestId('keyboard-enter').click();

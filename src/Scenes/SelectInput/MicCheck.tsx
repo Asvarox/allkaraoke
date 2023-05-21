@@ -8,11 +8,11 @@ interface Props {
 function MicCheck(props: Props) {
     return (
         <MicCheckContainer>
-            <Indicator data-test="mic-check-p1">
+            <Indicator data-test="mic-check-p0">
                 <PlayerMicCheck playerNumber={0} />
                 {props.names[0]}
             </Indicator>
-            <Indicator data-test="mic-check-p2">
+            <Indicator data-test="mic-check-p1">
                 <MirrorMicCheck playerNumber={1} />
                 {props.names[1]}
             </Indicator>

@@ -19,6 +19,7 @@ interface Props {
 const gameModeNames = {
     [GAME_MODE.DUEL]: 'Duel',
     [GAME_MODE.PASS_THE_MIC]: 'Pass The Mic',
+    [GAME_MODE.CO_OP]: 'Cooperation',
 };
 
 const difficultyNames = ['Hard', 'Medium', 'Easy'];
@@ -76,6 +77,8 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
             />
             <ModeDescription>
                 {mode === GAME_MODE.DUEL && 'Face off against each other - person that earns more points wins.'}
+                {mode === GAME_MODE.CO_OP &&
+                    'Join forces and sing together - your points will be added up to a single pool.'}
                 {mode === GAME_MODE.PASS_THE_MIC && (
                     <>
                         For more than 2 players - split into groups and pass the microphone within the group when
