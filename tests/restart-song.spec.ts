@@ -24,7 +24,7 @@ test('should restart the song and the scores', async ({ page }) => {
     await page.getByTestId('play-song-button').click();
 
     await expect(async () => {
-        const p1score = await page.getByTestId('player-0-score').getAttribute('data-score');
+        const p1score = await page.getByTestId('players-score').getAttribute('data-score');
 
         expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
     }).toPass({ timeout: 15_000 });
@@ -32,5 +32,5 @@ test('should restart the song and the scores', async ({ page }) => {
     await page.keyboard.press('Backspace');
     await page.getByTestId('button-restart-song').click();
 
-    await expect(page.getByTestId('player-0-score')).toHaveAttribute('data-score', '0', { timeout: 15_000 });
+    await expect(page.getByTestId('players-score')).toHaveAttribute('data-score', '0', { timeout: 15_000 });
 });

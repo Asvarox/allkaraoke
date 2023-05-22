@@ -33,6 +33,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
     // Game mode
     await navigateWithKeyboard(page, 'game-mode-setting');
+    await page.keyboard.press('Enter'); // change to duel
     await page.keyboard.press('Enter'); // change to pass the mic
     await expect(page.getByTestId('game-mode-setting')).toHaveAttribute('data-test-value', 'Pass The Mic');
 
