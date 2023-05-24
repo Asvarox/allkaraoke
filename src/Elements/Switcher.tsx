@@ -8,6 +8,7 @@ interface Props extends PropsWithChildren {
     focused: boolean;
     label: ReactNode;
     value: ReactNode;
+    info?: ReactNode;
     onClick?: () => void;
 }
 
@@ -29,12 +30,24 @@ export function nextValue<T extends readonly any[]>(
     return values[nextValueIndex(values, current, direction)];
 }
 
-export const Switcher = ({ focused, label, value, onClick, children, ...restProps }: Props) => (
-    <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
-        <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
-        {children ?? null}
-    </ConfigurationPosition>
+export const Switcher = ({ focused, label, value, onClick, info, children, ...restProps }: Props) => (
+    <Container>
+        <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
+            <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
+            {children ?? null}
+        </ConfigurationPosition>
+        {info && <InfoText>{info}</InfoText>}
+    </Container>
 );
+
+const Container = styled.div``;
+
+const InfoText = styled.div`
+    ${typography};
+    font-size: 2rem;
+    padding: 1rem 0.5rem 0;
+    text-align: justify;
+`;
 
 const ConfigurationPosition = styled.span<{ focused: boolean; expanded?: boolean }>`
     background: rgba(0, 0, 0, 0.7);

@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
 import { Button } from './Button';
 
-export const MenuButton = styled(Button)<{ focused?: boolean }>`
+type ButtonSizes = 'small' | 'normal';
+
+export const MenuButton = styled(Button)<{ focused?: boolean; size?: ButtonSizes }>`
     margin: 0.5rem 0;
-    height: 10rem;
+    height: ${(props) => (props.size === 'small' ? '5rem' : '10rem')};
     border: 0 solid black;
 
     :disabled {

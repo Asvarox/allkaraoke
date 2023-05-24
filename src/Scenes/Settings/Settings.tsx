@@ -67,17 +67,23 @@ function Settings(props: Props) {
                 label="Enable camera mode"
                 value={cameraValue}
                 data-test="camera-access"
+                info="Take pictures during the game and show them afterwards. The images are not stored anywhere."
             />
-            <h4>Take pictures during the game and show them afterwards. The images are not stored anywhere.</h4>
             <hr />
             <Switcher
                 {...register('mobilePhoneMode', () => setMobilePhoneMode(!mobilePhoneMode))}
                 label="Mobile Phone Mode"
                 value={mobilePhoneMode ? 'Yes' : 'No'}
                 data-test="mobile-phone-mode"
+                info="Adjust the game to a smaller screen. Disables option to sing in duets."
             />
-            <h4>Adjust the game to a smaller screen. Disables option to sing in duets.</h4>
             <hr />
+            <MenuButton
+                {...register('manage songs', () => navigate('/manage-songs'))}
+                data-test="manage-songs-button"
+                size="small">
+                Manage Songs
+            </MenuButton>
             <MenuButton {...register('go back', goBack)} data-test="back-button">
                 Return To Main Menu
             </MenuButton>
