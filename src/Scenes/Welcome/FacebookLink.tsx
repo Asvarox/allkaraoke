@@ -5,7 +5,7 @@ import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/Setting
 import { css } from '@emotion/react';
 
 const FBEmbedCode = (width: number, height: number) => `
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fallkaraoke.party&tabs=timeline&width=${width}&height=${height}&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=530120230391395" width="${width}" height="${height}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fallkaraoke.party&show_posts=true&width=${width}&height=${height}&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=530120230391395" width="${width}" height="${height}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 `;
 
 function FacebookLink() {
@@ -25,9 +25,9 @@ function FacebookLink() {
                 </a>
             </h2>
             <div
-                dangerouslySetInnerHTML={{ __html: FBEmbedCode(350, 72) }}
+                dangerouslySetInnerHTML={{ __html: FBEmbedCode(350, 350) }}
                 style={{
-                    height: 72 * (width / 350),
+                    height: 350 * (width / 350),
                     width: '100%',
                     transformOrigin: 'left top',
                     transform: `scale(${width / 350})`,
