@@ -12,6 +12,7 @@ import isWindows from 'utils/isWindows';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import isChromium from 'utils/isChromium';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -94,7 +95,7 @@ function SingStarMics(props: Props) {
                                     <button onClick={() => props.changePreference('advanced')}>Advanced</button> section
                                     in the previous menu.
                                 </h4>
-                                {window.chrome && isWindows() && (
+                                {isChromium() && isWindows() && (
                                     <h4>
                                         <strong>Chrome</strong> is known for not handling SingStar mics well. If you
                                         notice any problems, try using an alternative browser (eg.{' '}

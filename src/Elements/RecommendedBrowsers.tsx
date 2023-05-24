@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import isChromium from 'utils/isChromium';
 
 function RecommendedBrowsers() {
     return (
         <>
-            {!window.chrome && (
+            {!isChromium() && (
                 <RecommendChrome>
                     <h2>
                         This game is tested in <strong>Google Chrome</strong> and <strong>MS Edge</strong>.

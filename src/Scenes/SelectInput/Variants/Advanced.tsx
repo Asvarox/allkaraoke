@@ -17,6 +17,7 @@ import { useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import isChromium from 'utils/isChromium';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -96,7 +97,7 @@ function Advanced(props: Props) {
                 {isBothMicrophones && p1?.deviceId !== p2?.deviceId && (
                     <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>
                 )}
-                {isBothMicrophones && window.chrome && isWindows() && (
+                {isBothMicrophones && isChromium() && isWindows() && (
                     <h3>
                         <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any
                         problems, try using an alternative browser (eg. <strong>MS Edge</strong> or{' '}

@@ -80,6 +80,7 @@ function RemoteMic({ roomId }: Props) {
             <NormalizeFontSize size={10} />
             <Container id="phone-ui-container">
                 <UserMediaEnabled
+                    showImages={false}
                     fallback={
                         <>
                             {micPreview}
