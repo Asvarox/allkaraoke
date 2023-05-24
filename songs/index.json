@@ -276,6 +276,34 @@
     "local": false
   },
   {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "bpm": 395.98,
+    "bar": 4,
+    "gap": 40745.10177281681,
+    "video": "6vImyP5EYc8",
+    "year": "1991",
+    "lastUpdate": "2023-05-04T18:28:45.410Z",
+    "edition": "AC/DC Live Rock Band Track Pack",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.65,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Back%20in%20Black%20(Live)",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "AC_DC-Back in Black.json",
+    "tracksCount": 1,
+    "search": "acdcbackinblack",
+    "local": false
+  },
+  {
     "title": "Highway To Hell",
     "artist": "AC/DC",
     "bpm": 232.14,
@@ -298,6 +326,34 @@
     "file": "AC_DC-Highway To Hell.json",
     "tracksCount": 1,
     "search": "acdchighwaytohell",
+    "local": false
+  },
+  {
+    "title": "Thunderstruck",
+    "artist": "AC/DC",
+    "bpm": 395.05,
+    "bar": 4,
+    "gap": 2312.7831920010126,
+    "video": "Af0P6XEkI7Y",
+    "year": "1991",
+    "lastUpdate": "2023-05-04T18:35:33.482Z",
+    "edition": "AC/DC Live Rock Band Track Pack",
+    "genre": "Hard Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 132,
+    "volume": 0.7,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Thunderstruck%20(Live)",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "AC_DC-Thunderstruck.json",
+    "tracksCount": 1,
+    "search": "acdcthunderstruck",
     "local": false
   },
   {
@@ -3196,7 +3252,7 @@
     "artist": "Disturbed",
     "bpm": 213.18,
     "bar": 4,
-    "gap": 20404.91697157332,
+    "gap": 21404.91697157332,
     "video": "u9Dg-g7t2l4",
     "year": "2015",
     "language": "English",
@@ -3210,6 +3266,8 @@
         "start": 14
       }
     ],
+    "volume": 0.5,
+    "lastUpdate": "2023-05-21T20:55:27.616Z",
     "file": "Disturbed-The Sound Of Silence.json",
     "tracksCount": 1,
     "search": "disturbedthesoundofsilence",
@@ -4579,6 +4637,33 @@
     "file": "Haddaway & Jim Carrey & The Roxbury Guys-What is love.json",
     "tracksCount": 1,
     "search": "haddawayjimcarreytheroxburyguyswhatislove",
+    "local": false
+  },
+  {
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "bpm": 342.33,
+    "bar": 4,
+    "gap": -193.44316887214086,
+    "video": "H5v3kku4y6Q",
+    "year": "2022",
+    "lastUpdate": "2023-05-20T14:11:00.162Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 174,
+    "volume": 0.56,
+    "author": "Sebmolder",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sebmolder",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Harry%20Styles&cancion=As%20It%20Was",
+    "tracks": [
+      {
+        "start": 339
+      }
+    ],
+    "file": "Harry Styles-As It Was.json",
+    "tracksCount": 1,
+    "search": "harrystylesasitwas",
     "local": false
   },
   {
@@ -7324,6 +7409,60 @@
     "local": false
   },
   {
+    "title": "The Loneliest",
+    "artist": "Måneskin",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 15917.23076923077,
+    "video": "odWKEfp2QMY",
+    "year": "2022",
+    "lastUpdate": "2023-05-20T14:13:53.968Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 65,
+    "volume": 0.6,
+    "author": "Angs",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=angs",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=The%20Loneliest",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Måneskin-The Loneliest.json",
+    "tracksCount": 1,
+    "search": "maneskintheloneliest",
+    "local": false
+  },
+  {
+    "title": "Zitti e buoni",
+    "artist": "Måneskin",
+    "bpm": 412,
+    "bar": 4,
+    "gap": 9666.990291262136,
+    "video": "QN1odfjtMoo",
+    "year": "2021",
+    "lastUpdate": "2023-05-20T14:16:08.865Z",
+    "genre": "Rock",
+    "language": "Italian",
+    "videoGap": 0,
+    "realBpm": 103,
+    "volume": 0.5,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=Zitti%20e%20buoni",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "file": "Måneskin-Zitti e buoni.json",
+    "tracksCount": 1,
+    "search": "maneskinzittiebuoni",
+    "local": false
+  },
+  {
     "title": "Początek",
     "artist": "Męskie Granie Orkiestra",
     "bpm": 330,
@@ -7628,6 +7767,33 @@
     "file": "Michael-Jackson-Smooth-Criminal-Single-Version.json",
     "tracksCount": 1,
     "search": "michaeljacksonsmoothcriminalsingleversion",
+    "local": false
+  },
+  {
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "bpm": 236,
+    "bar": 4,
+    "gap": 7393.050847457627,
+    "video": "G7KNmW9a75Y",
+    "year": "2023",
+    "lastUpdate": "2023-05-20T14:21:10.091Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.6,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Flowers",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Miley Cyrus-Flowers.json",
+    "tracksCount": 1,
+    "search": "mileycyrusflowers",
     "local": false
   },
   {
