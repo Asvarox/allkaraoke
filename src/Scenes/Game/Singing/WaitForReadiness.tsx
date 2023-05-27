@@ -10,10 +10,14 @@ import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-
 import { waitFinished } from 'SoundManager';
 import sleep from 'utils/sleep';
 import events from 'GameEvents/GameEvents';
+import CountUp from 'react-countup';
 
 interface Props {
     onFinish: () => void;
 }
+
+const AUTOSTART_TIMEOUT_S = 15;
+
 function WaitForReadiness({ onFinish }: Props) {
     const audio = useRef<HTMLAudioElement>(null);
     const [areAllPlayersReady, setAreAllPlayersReady] = useState(false);
@@ -39,7 +43,7 @@ function WaitForReadiness({ onFinish }: Props) {
                 setAreAllPlayersReady(true);
             });
             const minTimeElapsed = sleep(1_500);
-            const maxTimeElapsed = sleep(15_000);
+            const maxTimeElapsed = sleep(AUTOSTART_TIMEOUT_S * 1_000);
 
             // Only start the music if waiting for readiness takes some time
             await sleep(250);
@@ -81,6 +85,17 @@ function WaitForReadiness({ onFinish }: Props) {
                             </PlayerEntry>
                         ))}
                     </PlayerList>
+                    <TimeoutMessage>
+                        The song will start automatically in{' '}
+                        <strong>
+                            <CountUp
+                                end={0}
+                                start={AUTOSTART_TIMEOUT_S}
+                                duration={AUTOSTART_TIMEOUT_S}
+                                useEasing={false}
+                            />
+                        </strong>
+                    </TimeoutMessage>
                 </WaitingForReady>
             )}
             <audio
@@ -107,13 +122,18 @@ const WaitingForReady = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
+    gap: 5rem;
 
     font-size: 7rem;
     ${typography};
 `;
 
+const TimeoutMessage = styled.span`
+    font-size: 5rem;
+`;
+
 const PlayerList = styled.div`
-    margin-top: 5rem;
+    //margin-top: 5rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;

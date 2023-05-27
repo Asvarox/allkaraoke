@@ -28,18 +28,18 @@ export default forwardRef(function DirectVideoPlayer(
         const onPlay = createCallback(VideoState.PLAYING);
         const onPause = createCallback(VideoState.PAUSED);
         const onEnded = createCallback(VideoState.ENDED);
-        const onLoadstart = createCallback(VideoState.BUFFERING);
+        // const onLoadstart = createCallback(VideoState.BUFFERING);
 
         playerRef?.addEventListener('playing', onPlay);
         playerRef?.addEventListener('pause', onPause);
         playerRef?.addEventListener('ended', onEnded);
-        playerRef?.addEventListener('loadstart', onLoadstart);
+        // playerRef?.addEventListener('loadstart', onLoadstart);
 
         return () => {
             playerRef?.removeEventListener('playing', onPlay);
             playerRef?.removeEventListener('pause', onPause);
             playerRef?.removeEventListener('ended', onEnded);
-            playerRef?.removeEventListener('loadstart', onLoadstart);
+            // playerRef?.removeEventListener('loadstart', onLoadstart);
         };
     }, [player.current, setStatus]);
 
