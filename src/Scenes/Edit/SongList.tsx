@@ -110,7 +110,7 @@ export default function SongList(props: Props) {
 
                                 const anchor = document.createElement('a');
                                 anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(txt)}`;
-                                anchor.download = `${row.original.artist} - ${row.original.title}.txt`;
+                                anchor.download = SongDao.generateSongFile(songData, 'txt');
                                 document.body.appendChild(anchor);
                                 anchor.click();
                                 document.body.removeChild(anchor);
@@ -127,7 +127,7 @@ export default function SongList(props: Props) {
 
                                 const anchor = document.createElement('a');
                                 anchor.href = `data:application/json;charset=utf-8,${encodeURIComponent(json)}`;
-                                anchor.download = `${row.original.artist}-${row.original.title}.json`;
+                                anchor.download = SongDao.generateSongFile(songData);
                                 document.body.appendChild(anchor);
                                 anchor.click();
                                 document.body.removeChild(anchor);
