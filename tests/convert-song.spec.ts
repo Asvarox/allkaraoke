@@ -95,11 +95,12 @@ test('Convert song', async ({ page }) => {
         }
     }
     await page.locator('[data-test="shift-video-gap"] input').fill('10');
+    await expect(page.locator('[data-test="shift-gap"] input')).toHaveValue('10000');
 
     // Lyrics gap
     const gapControls = ['+0.05', '+0.5', '+1', '-0.05', '-0.5', '-1'];
     {
-        let previousValue = 0;
+        let previousValue = 10000;
         for (const control of gapControls) {
             previousValue = +control * 1000 + previousValue;
             await page.locator(`[data-test="shift-gap${control}s"]`).click();
