@@ -81,9 +81,9 @@ function Settings(props: Props) {
             />
             <hr />
             <Switcher
-                {...register('mobilePhoneMode', () => setMobilePhoneMode(!backgroundMusic))}
+                {...register('mobilePhoneMode', () => setMobilePhoneMode(!mobilePhoneMode))}
                 label="Mobile Phone Mode"
-                value={backgroundMusic ? 'Yes' : 'No'}
+                value={mobilePhoneMode ? 'Yes' : 'No'}
                 data-test="mobile-phone-mode"
                 info="Adjust the game to a smaller screen. Disables option to sing in duets."
             />
