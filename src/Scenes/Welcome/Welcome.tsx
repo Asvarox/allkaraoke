@@ -9,8 +9,10 @@ import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { MouseEventHandler } from 'react';
 import MenuWithLogo from 'Elements/MenuWithLogo';
 import FacebookLink from 'Scenes/Welcome/FacebookLink';
+import { BackgroundMusicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 function Welcome() {
+    const [backgroundMusicSelection] = useSettingValue(BackgroundMusicSetting);
     useBackground(true);
 
     const navigate = useSmoothNavigate();
@@ -24,22 +26,24 @@ function Welcome() {
     const { register } = useKeyboardNav();
     return (
         <MenuWithLogo>
-            <BackgroundMusicCredit>
-                <span>
-                    Bpm data and release year provided by{' '}
-                    <a target="_blank" href="https://getsongbpm.com/" rel="noreferrer">
-                        GetSongBPM
-                    </a>
-                </span>
-                <span>Song: Funk Cool Groove (Music Today 80)</span>
-                <span>• Composed & Produced by : Anwar Amr</span>
-                <span>
-                    • Video Link:{' '}
-                    <a href="https://youtu.be/FGzzBbYRjFY" target="_blank" rel="noreferrer">
-                        https://youtu.be/FGzzBbYRjFY
-                    </a>
-                </span>
-            </BackgroundMusicCredit>
+            {backgroundMusicSelection !== 'Classic' && (
+                <BackgroundMusicCredit>
+                    <span>
+                        Bpm data and release year provided by{' '}
+                        <a target="_blank" href="https://getsongbpm.com/" rel="noreferrer">
+                            GetSongBPM
+                        </a>
+                    </span>
+                    <span>Song: Funk Cool Groove (Music Today 80)</span>
+                    <span>• Composed & Produced by : Anwar Amr</span>
+                    <span>
+                        • Video Link:{' '}
+                        <a href="https://youtu.be/FGzzBbYRjFY" target="_blank" rel="noreferrer">
+                            https://youtu.be/FGzzBbYRjFY
+                        </a>
+                    </span>
+                </BackgroundMusicCredit>
+            )}
             <FacebookLink />
             <>
                 <Link href="/game/" onClick={handleClick('/game/')}>

@@ -2,6 +2,8 @@ import { MenuButton } from 'Elements/Menu';
 import { nextValue, Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import {
+    BackgroundMusic,
+    BackgroundMusicSetting,
     FpsCount,
     FPSCountSetting,
     GraphicSetting,
@@ -14,10 +16,12 @@ import MenuWithLogo from 'Elements/MenuWithLogo';
 import { ReactNode, useEffect, useState } from 'react';
 import CameraManager from 'Camera/CameraManager';
 import { CircularProgress } from '@mui/material';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {}
 
 function Settings(props: Props) {
+    useBackgroundMusic(false);
     const navigate = useSmoothNavigate();
     const goBack = () => navigate('/');
 
@@ -26,6 +30,7 @@ function Settings(props: Props) {
     const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
     const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
     const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+    const [backgroundMusic, setBackgroundMusic] = useSettingValue(BackgroundMusicSetting);
 
     const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
     useEffect(() => {
@@ -48,7 +53,6 @@ function Settings(props: Props) {
     return (
         <MenuWithLogo>
             <h1>Settings</h1>
-            <h2>Graphics</h2>
             <Switcher
                 {...register('graphics', () => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel)))}
                 label="Graphics"
@@ -61,6 +65,12 @@ function Settings(props: Props) {
                 value={fpsCount}
                 data-test="fps-count-level"
             />
+            <Switcher
+                {...register('backgroundMusic', () => setBackgroundMusic(nextValue(BackgroundMusic, backgroundMusic)))}
+                label="Background Music"
+                value={backgroundMusic}
+                data-test="background-music-selection"
+            />
             <hr />
             <Switcher
                 {...register('camera', () => (camera ? CameraManager.disable() : enableCamera()))}
@@ -71,9 +81,9 @@ function Settings(props: Props) {
             />
             <hr />
             <Switcher
-                {...register('mobilePhoneMode', () => setMobilePhoneMode(!mobilePhoneMode))}
+                {...register('mobilePhoneMode', () => setMobilePhoneMode(!backgroundMusic))}
                 label="Mobile Phone Mode"
-                value={mobilePhoneMode ? 'Yes' : 'No'}
+                value={backgroundMusic ? 'Yes' : 'No'}
                 data-test="mobile-phone-mode"
                 info="Adjust the game to a smaller screen. Disables option to sing in duets."
             />

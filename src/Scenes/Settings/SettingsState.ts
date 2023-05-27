@@ -47,14 +47,17 @@ export const MicSetupPreferenceSetting = new Setting<ValuesType<typeof MicSetupP
 );
 
 export const FpsCount = [60, 30] as const;
-const FPS_COUNT_KEY = 'fps-count';
-export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>(FPS_COUNT_KEY, FpsCount[0]);
+export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>('fps-count', FpsCount[0]);
 
-const EXCLUDED_LANGUAGES_KEY = 'EXCLUDED_LANGUAGES_KEY';
-export const ExcludedLanguagesSetting = new Setting<string[] | null>(EXCLUDED_LANGUAGES_KEY, null);
+export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_LANGUAGES_KEY', null);
 
-const MOBILE_PHONE_MODE_KEY = 'MOBILE_PHONE_MODE_KEY';
-export const MobilePhoneModeSetting = new Setting<boolean | null>(MOBILE_PHONE_MODE_KEY, null);
+export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_MODE_KEY', null);
+
+export const BackgroundMusic = ['New', 'Classic'] as const;
+export const BackgroundMusicSetting = new Setting<ValuesType<typeof BackgroundMusic>>(
+    'background-music',
+    BackgroundMusic[0],
+);
 
 export function useSettingValue<T>(value: Setting<T>) {
     const [currentValue, setCurrentValue] = useState(value.get());
