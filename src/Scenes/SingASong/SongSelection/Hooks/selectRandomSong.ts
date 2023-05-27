@@ -6,9 +6,15 @@ export default function selectRandomSong(
     previouslySelectedSongs: number[],
     maxRememberedCount = MAX_REMEMBERED_SONGS_COUNT,
 ) {
-    let newIndex = null;
-    while (newIndex === null || previouslySelectedSongs.includes(newIndex)) {
+    let newIndex;
+    if (previouslySelectedSongs.length < songCount) {
+        const possibleOptions = [...Array(songCount).keys()].filter((id) => !previouslySelectedSongs.includes(id));
+
+        newIndex = possibleOptions[randomInt(0, possibleOptions.length - 1)];
+    } else {
         newIndex = randomInt(0, songCount - 1);
+
+        previouslySelectedSongs.length = 0;
     }
 
     if (previouslySelectedSongs.length >= maxRememberedCount) {

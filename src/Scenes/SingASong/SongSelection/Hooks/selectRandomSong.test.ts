@@ -1,5 +1,5 @@
 import { randomInt } from 'utils/randomValue';
-import { Mock, vitest } from 'vitest';
+import { afterEach, Mock, vitest } from 'vitest';
 import { expect } from '@playwright/test';
 import selectRandomSong from 'Scenes/SingASong/SongSelection/Hooks/selectRandomSong';
 
@@ -16,5 +16,17 @@ describe('selectRandomSong', function () {
         expect(selectRandomSong(3, previouslySelectedValues, 2)).toEqual(2);
         expect(previouslySelectedValues).toContain(2);
         expect(previouslySelectedValues).not.toContain(0);
+    });
+    it('should select songs from previously selected list if the list contains all possible values and reset it', () => {
+        (randomInt as Mock).mockReturnValue(0);
+        const previouslySelectedValues = [0, 1, 2];
+
+        expect(selectRandomSong(3, previouslySelectedValues, 3)).toEqual(0);
+        expect(previouslySelectedValues).toContain(0);
+        expect(previouslySelectedValues).toHaveLength(1);
+    });
+
+    afterEach(() => {
+        vitest.resetAllMocks();
     });
 });
