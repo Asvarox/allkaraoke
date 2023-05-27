@@ -43,7 +43,9 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-            {!mobilePhoneMode && <StyledVolumeIndicator playerNumber={player} volume={playerVolume} />}
+            {!mobilePhoneMode && effectsEnabled && (
+                <StyledVolumeIndicator playerNumber={player} volume={playerVolume} />
+            )}
             {timeToNextChange < Infinity && (
                 <PassTheMicProgress
                     color={playerColor}

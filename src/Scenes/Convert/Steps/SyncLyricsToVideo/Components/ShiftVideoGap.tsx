@@ -1,10 +1,11 @@
 import { Box, Button, ButtonGroup, TextField, Typography } from '@mui/material';
 import { msec } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 import { PlayerRef } from 'Scenes/Game/Singing/Player';
+import { seconds } from 'interfaces';
 
 interface Props {
-    onChange: (shift: number) => void;
-    current: number;
+    onChange: (shift: seconds) => void;
+    current: seconds;
     player: PlayerRef;
     finalGap: number | undefined;
 }

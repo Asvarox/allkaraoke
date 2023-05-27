@@ -164,7 +164,12 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                         <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
                             <ShiftVideoGap
                                 player={player.current}
-                                onChange={setVideoGapShift}
+                                onChange={(newShift) => {
+                                    const delta = newShift - videoGapShift;
+                                    setVideoGapShift(newShift);
+                                    // video gap is not automatically added to gap, need to adjust it here directly
+                                    setGapShift((current) => current + delta * 1000);
+                                }}
                                 current={videoGapShift}
                                 finalGap={newSong.videoGap}
                             />
