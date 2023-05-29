@@ -28,11 +28,11 @@ class InputSourceListManager {
         if (!lazily) {
             source.getInputs().then((list) => {
                 this.inputList[source.inputName].list = list;
-                events.inputListChanged.dispatch();
+                events.inputListChanged.dispatch(true);
 
                 source.subscribeToListChange(async () => {
                     this.inputList[source.inputName].list = await source.getInputs();
-                    events.inputListChanged.dispatch();
+                    events.inputListChanged.dispatch(false);
                 });
             });
         }

@@ -34,11 +34,11 @@ class WebRTCClient {
 
     // Chunk frequencies and send them in packages
     // One package throttled with 75ms contains ~10 frequencies
-    private onFrequencyUpdate = (freq: number, volume: number) => {
+    private onFrequencyUpdate = throttle((freq: number, volume: number) => {
         this.frequencies.push(freq);
 
         this.sendFrequencies(volume);
-    };
+    }, 1_000 / 60);
 
     private setClientId = (id: string) => {
         this.clientId = id;
