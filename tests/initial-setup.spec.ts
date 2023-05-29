@@ -15,11 +15,19 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
     await page.getByTestId('mics').click();
     await expect(page.getByTestId('advanced-tip')).toBeVisible();
 
+    const nonSingstarDevice = {
+        id: 'nonSingstarDevice',
+        label: 'NonSSMic-2137',
+        channels: 1,
+    };
     const singstarDevice = {
         id: 'test',
         label: 'wireless mic #2137',
         channels: 2,
     };
+
+    await connectDevices(nonSingstarDevice);
+    await expect(page.getByTestId('list-change-info')).toBeVisible();
 
     await connectDevices(singstarDevice);
 

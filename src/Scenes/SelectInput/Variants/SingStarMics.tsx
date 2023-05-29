@@ -13,6 +13,7 @@ import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
+import { CircularProgress } from '@mui/material';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -53,7 +54,8 @@ function SingStarMics(props: Props) {
     };
 
     // Look for proper microphones in the list when the list changes
-    useEventEffect(events.inputListChanged, () => {
+    const [listChanged, setListChanged] = useState(false);
+    useEventEffect(events.inputListChanged, (initial) => {
         const preferred = Microphone.list.filter((input) => input.preferred !== undefined);
         if (preferred.length === 2 && preferred[0].deviceId === preferred[1].deviceId) {
             preferred.forEach((input) => {
@@ -64,6 +66,9 @@ function SingStarMics(props: Props) {
                     input.deviceId,
                 );
             });
+        }
+        if (!initial) {
+            setListChanged(true);
         }
     });
 
@@ -86,15 +91,29 @@ function SingStarMics(props: Props) {
             <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can find SingStar ones.</h2>}>
                 {!isSetup && (
                     <>
-                        <h3>Connect your SingStar microphones.</h3>
-                        <h4 data-test="setup-not-completed">Make sure you only connect one pair.</h4>
+                        <h3>
+                            <CircularProgress size="0.85em" /> Connect your SingStar microphones.
+                        </h3>
+                        <h4 data-test="setup-not-completed">
+                            It can take a couple of seconds to detect after you connect them.
+                        </h4>
+                        {listChanged && (
+                            <h4>
+                                <h4 data-test="list-change-info">
+                                    Available microphones list has changed, but no SingStar mics were found. Try{' '}
+                                    <button onClick={() => props.changePreference('advanced')}>Advanced</button> setup.
+                                </h4>
+                            </h4>
+                        )}
                         {showAdvancedTip && (
                             <>
-                                <h4 data-test="advanced-tip">
-                                    If detection doesn't happen, try{' '}
-                                    <button onClick={() => props.changePreference('advanced')}>Advanced</button> section
-                                    in the previous menu.
-                                </h4>
+                                {!listChanged && (
+                                    <h4 data-test="advanced-tip">
+                                        If detection doesn't happen, try{' '}
+                                        <button onClick={() => props.changePreference('advanced')}>Advanced</button>{' '}
+                                        section in the previous menu.
+                                    </h4>
+                                )}
                                 {isChromium() && isWindows() && (
                                     <h4>
                                         <strong>Chrome</strong> is known for not handling SingStar mics well. If you
