@@ -89,6 +89,12 @@ function Settings(props: Props) {
             />
             <hr />
             <MenuButton
+                {...register('setup mics', () => navigate('/manage-songs'))}
+                data-test="setup-mics-button"
+                size="small">
+                Setup Microphones
+            </MenuButton>
+            <MenuButton
                 {...register('manage songs', () => navigate('/manage-songs'))}
                 data-test="manage-songs-button"
                 size="small">

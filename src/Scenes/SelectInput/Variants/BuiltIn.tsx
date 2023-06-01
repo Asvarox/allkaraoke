@@ -12,6 +12,7 @@ import { useEventEffect } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import styled from '@emotion/styled';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -74,7 +75,10 @@ function BuiltIn(props: Props) {
                 {!selectedMic && <h3>The default device is being selected.</h3>}
                 {selectedMic && (
                     <>
-                        <h3>You'll sing using</h3>
+                        <Header>
+                            <h3>You'll sing using</h3>
+                            <h4>(click to change)</h4>
+                        </Header>
                         <Switcher
                             {...register('microphone', cycleMic)}
                             label="Mic"
@@ -105,5 +109,11 @@ function BuiltIn(props: Props) {
         </>
     );
 }
+
+const Header = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+`;
 
 export default BuiltIn;
