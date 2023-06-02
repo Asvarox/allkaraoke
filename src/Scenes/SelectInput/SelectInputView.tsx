@@ -12,7 +12,7 @@ import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
 import { ValuesType } from 'utility-types';
 
 interface Props {
-    onFinish: (pref: ValuesType<typeof MicSetupPreference>) => void;
+    onFinish?: (pref: ValuesType<typeof MicSetupPreference>) => void;
     onBack?: () => void;
     smooth?: boolean;
     closeButtonText: string;
@@ -46,7 +46,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
             posthog.capture('sourcePreferenceSet', { source: pref });
         }
 
-        onFinish(pref);
+        onFinish?.(pref);
     };
     const back = () => {
         startViewTransition(() => {
