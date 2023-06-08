@@ -66,12 +66,15 @@ class PlayerState {
             this.realFrequencyRecords = [...this.frequencyRecords];
             this.realPlayerNotes = [...this.playerNotes];
             // Last note can be mutated, so we create a shallow copy of it
-            const lastNote = this.realPlayerNotes.at(-1)!;
-            this.realPlayerNotes[this.realPlayerNotes.length - 1] = {
-                ...lastNote,
-                // This can be mutated as well
-                frequencyRecords: [...lastNote.frequencyRecords],
-            };
+            const lastNote = this.realPlayerNotes.at(-1);
+
+            if (lastNote) {
+                this.realPlayerNotes[this.realPlayerNotes.length - 1] = {
+                    ...lastNote,
+                    // This can be mutated as well
+                    frequencyRecords: [...(lastNote.frequencyRecords ?? [])],
+                };
+            }
         } else {
             this.updatePlayerNotes(currentTimestamp, frequency);
         }
