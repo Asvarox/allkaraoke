@@ -66,19 +66,19 @@ export default forwardRef(function YoutubeVideoPlayer(
             return;
         }
 
-        player.current.getInternalPlayer().setSize(width, height);
+        player.current.getInternalPlayer()!.setSize(width, height);
     }, [player, width, height, video, playerKey]);
 
     useImperativeHandle(ref, () => ({
-        setSize: (w, h) => player.current?.getInternalPlayer().setSize(w, h),
-        seekTo: (timeSec: seconds) => player.current?.getInternalPlayer().seekTo(timeSec, true),
-        setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer().setPlaybackRate(speed),
-        setVolume: (newVolume: number) => player.current?.getInternalPlayer().setVolume(newVolume),
-        getCurrentTime: () => player.current?.getInternalPlayer().getCurrentTime(),
-        loadVideoById: (opts) => player.current?.getInternalPlayer().loadVideoById(opts),
-        playVideo: () => player.current?.getInternalPlayer().playVideo(),
-        pauseVideo: () => player.current?.getInternalPlayer().pauseVideo(),
-        getDuration: () => player.current?.getInternalPlayer().getDuration(),
+        setSize: (w, h) => player.current?.getInternalPlayer()!.setSize(w, h),
+        seekTo: (timeSec: seconds) => player.current?.getInternalPlayer()!.seekTo(timeSec, true),
+        setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(speed),
+        setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume),
+        getCurrentTime: () => player.current?.getInternalPlayer()!.getCurrentTime()!,
+        loadVideoById: (opts) => player.current?.getInternalPlayer()!.loadVideoById(opts),
+        playVideo: () => player.current?.getInternalPlayer()!.playVideo(),
+        pauseVideo: () => player.current?.getInternalPlayer()!.pauseVideo(),
+        getDuration: () => player.current?.getInternalPlayer()!.getDuration()!,
     }));
 
     return (
@@ -92,7 +92,6 @@ export default forwardRef(function YoutubeVideoPlayer(
                 height: '0',
                 playerVars: {
                     autoplay: autoplay ? 1 : 0,
-                    showinfo: 1,
                     rel: 0,
                     fs: 0,
                     controls: controls ? 1 : 0,

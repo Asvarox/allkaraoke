@@ -39,8 +39,8 @@ function useUnstuckOnBuffering(playerRef: MutableRefObject<YouTube | null>, curr
                 if (navigator.onLine) {
                     clearInterval(interval);
 
-                    const seconds = await playerRef.current?.getInternalPlayer().getCurrentTime();
-                    playerRef.current?.getInternalPlayer().seekTo(Math.max(seconds - 2, 0));
+                    const seconds = await playerRef.current?.getInternalPlayer()!.getCurrentTime()!;
+                    playerRef.current?.getInternalPlayer()?.seekTo(Math.max(seconds - 2, 0), true);
                 }
             }, 500);
 

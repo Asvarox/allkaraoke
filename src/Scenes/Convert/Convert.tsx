@@ -43,6 +43,7 @@ export default function Convert({ song }: Props) {
         volume: song?.volume ?? 0,
         genre: song?.genre,
     });
+    console.log({ metadataEntity });
 
     const [editedSong, setEditedSong] = useState<Song | undefined>(song);
 

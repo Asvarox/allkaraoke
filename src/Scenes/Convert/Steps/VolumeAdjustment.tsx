@@ -14,18 +14,26 @@ export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
     const player = useRef<YouTube | null>(null);
     const reference = useRef<HTMLAudioElement | null>(null);
 
+    const [initialised, setInitialised] = useState(false);
     useEffect(() => {
-        if (data.volume === 0) {
-            onChange({ ...data, volume: 0.5 });
+        (async () => {
+            if (data.volume === 0) {
+                onChange({ ...data, volume: 0.5 });
+                await player.current?.getInternalPlayer()?.setVolume(50);
+            } else {
+                await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
+            }
+            setInitialised(true);
+        })();
+    }, []);
+
+    useEffect(() => {
+        if (!initialised) {
+            return;
         }
-        player.current?.getInternalPlayer().setVolume(data.volume * 100);
-    }, [data.volume]);
-
-    useEffect(() => {
         const interval = setInterval(async () => {
-            const currentVolume = await player.current?.getInternalPlayer().getVolume();
-
-            if (currentVolume !== data.volume * 100) {
+            const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
+            if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
                 onChange({ ...data, volume: currentVolume / 100 });
             }
         }, 500);
@@ -33,10 +41,15 @@ export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
         return () => {
             clearInterval(interval);
         };
-    }, [data, onChange]);
+    }, [initialised, data, onChange]);
 
     const [isPlayerPlaying, setIsPlayerPlaying] = useState(false);
     const [isReferencePlaying, setIsReferencePlaying] = useState(false);
+
+    const handleSliderChange = async (e: any, value: number | number[]) => {
+        await player.current?.getInternalPlayer()?.setVolume(+value * 100);
+        onChange({ ...data, volume: +value });
+    };
 
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
@@ -95,7 +108,7 @@ export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
                     step={0.01}
                     aria-label="Volume"
                     value={data.volume}
-                    onChange={(e, value) => onChange({ ...data, volume: +value })}
+                    onChange={handleSliderChange}
                 />
             </Box>
         </Box>
