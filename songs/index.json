@@ -2912,6 +2912,34 @@
     "local": false
   },
   {
+    "title": "Highway Star",
+    "artist": "Deep Purple",
+    "bpm": 207.6,
+    "bar": 4,
+    "gap": 33262.439306358385,
+    "video": "UAKCR7kQMTQ",
+    "year": "1972",
+    "lastUpdate": "2023-06-08T08:11:24.266Z",
+    "edition": "Rock Band",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 173,
+    "volume": 0.6,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Deep%20Purple&cancion=Highway%20Star",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Deep Purple-Highway Star.json",
+    "tracksCount": 1,
+    "search": "deeppurplehighwaystar",
+    "local": false
+  },
+  {
     "title": "Smoke On The Water",
     "artist": "Deep Purple",
     "bpm": 300,
@@ -3351,6 +3379,33 @@
     "file": "Drake-Hotline Bling.json",
     "tracksCount": 1,
     "search": "drakehotlinebling",
+    "local": false
+  },
+  {
+    "title": "Dance The Night",
+    "artist": "Dua Lipa",
+    "bpm": 220.06,
+    "bar": 4,
+    "gap": 27254.551576842678,
+    "video": "OiC1rgCPmUQ",
+    "year": "2023",
+    "lastUpdate": "2023-06-08T07:42:46.013Z",
+    "genre": "Dance",
+    "language": "English",
+    "videoGap": 21,
+    "realBpm": 110,
+    "volume": 0.55,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Dance%20The%20Night",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Dua Lipa-Dance The Night.json",
+    "tracksCount": 1,
+    "search": "dualipadancethenight",
     "local": false
   },
   {
@@ -4402,6 +4457,32 @@
     "file": "Grease (John Travolta & Olivia Newton-John)-You're the One that I Want.json",
     "tracksCount": 1,
     "search": "greasejohntravoltaolivianewtonjohnyouretheonethatiwant",
+    "local": false
+  },
+  {
+    "title": "American Idiot",
+    "artist": "Green Day",
+    "bpm": 279,
+    "bar": 4,
+    "gap": 10398.494623655914,
+    "video": "Ee_uujKuJMI",
+    "year": "2004",
+    "lastUpdate": "2023-06-08T08:15:16.130Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 184,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=American%20Idiot",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Green Day-American Idiot.json",
+    "tracksCount": 1,
+    "search": "greendayamericanidiot",
     "local": false
   },
   {
@@ -5607,6 +5688,33 @@
     "local": false
   },
   {
+    "title": "Cha Cha Cha",
+    "artist": "Käärijä",
+    "bpm": 310.06,
+    "bar": 4,
+    "gap": 11277.06759981939,
+    "video": "znWi3zN8Ucg",
+    "year": "2023",
+    "lastUpdate": "2023-06-08T07:52:27.751Z",
+    "edition": "Eurovision Song Contest 2023",
+    "language": "Finnish",
+    "videoGap": 0,
+    "realBpm": 155,
+    "volume": 0.7,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27272",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Kaarija-Cha Cha Cha.json",
+    "tracksCount": 1,
+    "search": "kaarijachachacha",
+    "local": false
+  },
+  {
     "title": "Ruby",
     "artist": "Kaiser Chiefs",
     "bpm": 398.92,
@@ -5861,6 +5969,34 @@
     "file": "Kings Of Leon-Sex On Fire.json",
     "tracksCount": 1,
     "search": "kingsofleonsexonfire",
+    "local": false
+  },
+  {
+    "title": "Use Somebody",
+    "artist": "Kings of Leon",
+    "bpm": 282.18,
+    "bar": 4,
+    "gap": 28810.00637890708,
+    "video": "gnhXHvRoUd0",
+    "year": "2008",
+    "lastUpdate": "2023-06-08T08:00:42.686Z",
+    "edition": "None",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 137,
+    "volume": 0.7,
+    "author": "hamadad",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2689",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6100",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Kings of Leon-Use Somebody.json",
+    "tracksCount": 1,
+    "search": "kingsofleonusesomebody",
     "local": false
   },
   {
@@ -10457,6 +10593,32 @@
     "file": "Rupert Holmes-Escape (The Pińa Colada Song).json",
     "tracksCount": 1,
     "search": "rupertholmesescapethepinacoladasong",
+    "local": false
+  },
+  {
+    "title": "Eldorado",
+    "artist": "Sanah feat. Daria Zawiałow",
+    "bpm": 275.13,
+    "bar": 4,
+    "gap": 6338.645731108931,
+    "video": "nN2eZos7HN0",
+    "year": "2022",
+    "lastUpdate": "2023-06-08T08:24:40.232Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 138,
+    "volume": 0.7,
+    "author": "domekdlakromek",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=182875",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27020",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Sanah feat. Daria Zawia-ow-Eldorado.json",
+    "tracksCount": 1,
+    "search": "sanahfeatdariazawiaoweldorado",
     "local": false
   },
   {
