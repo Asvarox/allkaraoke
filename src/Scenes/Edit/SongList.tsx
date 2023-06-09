@@ -43,6 +43,11 @@ export default function SongList(props: Props) {
                 size: 100,
             },
             {
+                accessorKey: 'video',
+                header: 'Video',
+                size: 100,
+            },
+            {
                 accessorKey: 'lastUpdate',
                 header: 'Last Update',
                 Cell: ({ cell }) => {
@@ -179,7 +184,7 @@ export default function SongList(props: Props) {
                 )}
                 initialState={{
                     density: 'compact',
-                    columnVisibility: { local: false, isDeleted: false },
+                    columnVisibility: { local: false, isDeleted: false, video: false },
                     globalFilter: initialSearch,
                     showGlobalFilter: true,
                 }}

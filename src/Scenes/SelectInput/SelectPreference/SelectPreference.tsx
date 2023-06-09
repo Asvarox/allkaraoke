@@ -5,8 +5,8 @@ import { css } from '@emotion/react';
 import { focused } from 'Elements/cssMixins';
 import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { SvgIcon } from '@mui/material';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
 
 interface Props {
     onPreferenceSelected: (preference: (typeof MicSetupPreference)[number]) => void;
@@ -75,8 +75,8 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                     {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}
                     data-test="mics">
                     <OptionIconContainer>
-                        <MicIcon />
-                        <MicIcon />
+                        <MicIconBlue />
+                        <MicIconRed />
                     </OptionIconContainer>
                     <div>
                         SingStar (-ish) microphones
@@ -96,7 +96,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                 )}
                 data-test="advanced">
                 <OptionIconContainer>
-                    <MicIcon />
+                    <MicIconBlue />
                     <PhoneIphone />
                 </OptionIconContainer>
                 <div>
@@ -116,15 +116,6 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         </>
     );
 }
-
-const MicIcon = () => (
-    <SvgIcon viewBox="0 0 512 512">
-        <path
-            xmlns="http://www.w3.org/2000/svg"
-            d="M252.529,162.029l168.125,210.156c-12.313,1.25-24.031,6.438-33.031,15.438s-14.188,20.719-15.438,33.031L162.029,252.545  c-3.563-24.922,4.813-50.078,22.625-67.891C202.467,166.857,227.623,158.467,252.529,162.029z M398.936,398.936  c-9.063,9.063-13.031,22.063-10.625,34.656l45.281,45.25c12.5,12.5,32.75,12.5,45.25,0s12.5-32.75,0-45.25l-45.25-45.281  C420.998,385.904,407.998,389.873,398.936,398.936z M162.029,162.029c18.594-18.594,43.188-29.891,68.969-32.297  c-3.375-24.563-14.906-49.391-35.031-69.516c-43.75-43.75-109.594-48.813-147.063-11.313  c-37.5,37.484-32.438,103.328,11.313,147.078c20.125,20.125,44.938,31.656,69.5,35.031  C132.154,205.217,143.436,180.623,162.029,162.029z"
-        />
-    </SvgIcon>
-);
 
 const OptionDescription = styled.div<{ focused?: boolean }>`
     padding: 0 0 0 2.5rem;

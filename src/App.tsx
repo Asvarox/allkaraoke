@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import Settings from 'Scenes/Settings/Settings';
 import { Redirect, Route, Router, useLocation } from 'wouter';
@@ -15,7 +14,6 @@ import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
-import styles from 'styles';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import Toolbar from 'Toolbar/Toolbar';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
@@ -23,6 +21,7 @@ import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import { useEffect } from 'react';
 import { css, Global } from '@emotion/react';
+import { GameScreens } from 'Elements/GameScreens';
 
 function App() {
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
@@ -50,7 +49,7 @@ function App() {
                 <LayoutWithBackgroundProvider>
                     <KeyboardHelpProvider>
                         <Router>
-                            <GameScreens mobileMode={!!mobilePhoneMode}>
+                            <GameScreens>
                                 <Toolbar />
                                 <Route path="/game/:file?">
                                     {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
@@ -80,9 +79,5 @@ function App() {
         </>
     );
 }
-
-const GameScreens = styled.div<{ mobileMode: boolean }>`
-    ${styles};
-`;
 
 export default App;

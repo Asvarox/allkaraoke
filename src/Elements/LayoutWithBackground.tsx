@@ -11,7 +11,6 @@ export const useBackground = (shouldBeVisible: boolean) => {
     const background = useContext(BackgroundContext);
     useEffect(() => {
         if (shouldBeVisible !== background.visible) {
-            console.log(shouldBeVisible, background.visible);
             background.setVisibility(shouldBeVisible);
         }
     }, [shouldBeVisible, background.visible, background.setVisibility]);
@@ -35,15 +34,21 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
     );
 }
 
-const Background = styled.div`
+export const BackgroundStatic = styled.div`
+    background-color: white;
+    background-image: linear-gradient(-45deg, ${redStroke()}, ${blueFill()}, ${blueStroke()}, ${redStroke()});
+    background-size: 400% 400%;
+
+    width: 100%;
+    height: 100%;
+`;
+
+const Background = styled(BackgroundStatic)`
     z-index: -1;
     top: 0;
     position: fixed;
-    background: white;
     view-transition-name: background;
 
-    background: linear-gradient(-45deg, ${redStroke()}, ${blueFill()}, ${blueStroke()}, ${redStroke()});
-    background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 
     @keyframes gradient {
@@ -57,7 +62,4 @@ const Background = styled.div`
             background-position: 0% 50%;
         }
     }
-
-    width: 100%;
-    height: 100%;
 `;

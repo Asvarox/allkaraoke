@@ -25,5 +25,6 @@
   "ignoreUnused": [],
   "ignoreUnresolved": [
     "utility-types"
-  ]
+  ],
+  "entry": ["src/main.tsx", "src/videos/index.ts"]
 }
