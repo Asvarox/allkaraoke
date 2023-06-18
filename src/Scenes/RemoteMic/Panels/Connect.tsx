@@ -5,7 +5,7 @@ import { FormEventHandler, useEffect, useRef, useState } from 'react';
 import events from 'GameEvents/GameEvents';
 import createPersistedState from 'use-persisted-state';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
-import { Wifi } from '@mui/icons-material';
+import { QrCode2, Warning, Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import { PeerErrorType } from 'interfaces';
 import { MAX_NAME_LENGTH } from 'consts';
@@ -85,15 +85,29 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
                 {(showConnectionTip || connectionError) && (
                     <>
                         {showConnectionTip && <h3>If it doesn't connect</h3>}
-                        {connectionError && <h3>Could not connect</h3>}
+                        {connectionError && (
+                            <h3>
+                                <strong>
+                                    <Warning />
+                                </strong>{' '}
+                                Could not connect
+                            </h3>
+                        )}
                         <h5>
-                            Make sure you are in the same{' '}
+                            1. Make sure you are in the same{' '}
                             <strong>
                                 <Wifi /> Wi-Fi
                             </strong>
                         </h5>
                         <h5>
-                            Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                            2. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                        </h5>
+                        <h5>
+                            3. Scan the{' '}
+                            <strong>
+                                <QrCode2 /> QR Code
+                            </strong>{' '}
+                            again
                         </h5>
                     </>
                 )}

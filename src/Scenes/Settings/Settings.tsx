@@ -77,7 +77,7 @@ function Settings(props: Props) {
                 label="Enable camera mode"
                 value={cameraValue}
                 data-test="camera-access"
-                info="Take pictures during the game and show them afterwards. The images are not stored anywhere."
+                info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
             />
             <hr />
             <Switcher

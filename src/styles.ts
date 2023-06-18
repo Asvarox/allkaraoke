@@ -60,6 +60,10 @@ export default css`
             text-decoration: underline;
             cursor: pointer;
         }
+
+        svg {
+            font-size: 0.8em;
+        }
     }
 
     a {
