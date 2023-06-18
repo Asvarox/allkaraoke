@@ -140,8 +140,7 @@ function SingStarMics(props: Props) {
                 Back to Input Selection
             </MenuButton>
             <MenuButton
-                {...(isSetup ? register('Sing a song', onContinue, undefined, true) : {})}
-                disabled={!isSetup}
+                {...register('Sing a song', onContinue, undefined, true, { disabled: !isSetup })}
                 data-test="save-button">
                 {props.closeButtonText}
             </MenuButton>

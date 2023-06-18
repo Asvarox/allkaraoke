@@ -16,7 +16,6 @@ import {
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 interface Props extends ComponentProps<typeof Input> {
-    focused: boolean;
     label: ReactNode;
     value: string;
     onChange: (value: string) => void;

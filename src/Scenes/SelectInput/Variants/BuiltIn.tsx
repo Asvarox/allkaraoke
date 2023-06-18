@@ -101,7 +101,7 @@ function BuiltIn(props: Props) {
                 Back to Input Selection
             </MenuButton>
             <MenuButton
-                {...(selectedMic ? register('Sing a song', props.onSave, undefined, true) : {})}
+                {...register('Sing a song', props.onSave, undefined, true, { disabled: !selectedMic })}
                 disabled={!selectedMic}
                 data-test="save-button">
                 {props.closeButtonText}

@@ -51,4 +51,14 @@ test('exclude languages from first start and menu', async ({ page }) => {
         await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
         await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
     });
+
+    await test.step('exclude all', async () => {
+        await page.keyboard.press('Backspace'); // Main menu
+
+        await page.getByTestId('manage-songs').click();
+        await page.getByTestId('exclude-languages').click();
+        await page.getByTestId('lang-English').click();
+        await page.getByTestId('lang-Polish').click();
+        await expect(page.getByTestId('all-languages-excluded-warning')).toBeVisible();
+    });
 });

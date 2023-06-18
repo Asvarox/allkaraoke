@@ -7,7 +7,7 @@ import { typography } from 'Elements/cssMixins';
 import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 import { SongPreview } from 'interfaces';
 import { useEffect, useMemo } from 'react';
-import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
+import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
 import { css } from '@emotion/react';
 import isE2E from 'utils/isE2E';
 import MenuWithLogo from 'Elements/MenuWithLogo';
@@ -87,6 +87,8 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         }
     }, [excludedLanguages, languageList]);
 
+    const areAllLanguagesExcluded = excludedLanguages?.length === languageList.length;
+
     return (
         <MenuWithLogo>
             <h1>Select Song Languages</h1>
@@ -122,7 +124,9 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 You can always update the selection in <strong>Manage Songs</strong> menu
             </h3>
             <NextButtonContainer>
-                <MenuButton {...register('go back', onClose, undefined, true)} data-test="close-exclude-languages">
+                <MenuButton
+                    {...register('go back', onClose, undefined, true, { disabled: areAllLanguagesExcluded })}
+                    data-test="close-exclude-languages">
                     {closeText}
                 </MenuButton>
                 <Disclaimer>
@@ -132,6 +136,14 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                     </strong>{' '}
                     songs
                 </Disclaimer>
+                {areAllLanguagesExcluded && (
+                    <Disclaimer data-test="all-languages-excluded-warning">
+                        <strong>
+                            <Warning />
+                        </strong>{' '}
+                        You excluded all the languages, pick at least one
+                    </Disclaimer>
+                )}
             </NextButtonContainer>
         </MenuWithLogo>
     );
@@ -140,6 +152,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
 const NextButtonContainer = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 `;
 
 const Disclaimer = styled.h4`

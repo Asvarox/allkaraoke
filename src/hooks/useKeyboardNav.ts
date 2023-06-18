@@ -81,8 +81,11 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
         onActive: () => void,
         help?: string,
         isDefault = false,
-        { propName = 'onClick' } = {},
+        { propName = 'onClick', disabled = false } = {},
     ) => {
+        if (disabled) {
+            return { disabled, focused: false };
+        }
         newElementList.current.push(name);
         if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
 
