@@ -3,14 +3,18 @@ import YouTube from 'react-youtube';
 import backgroundMusic from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 import { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import { useEffect, useRef, useState } from 'react';
+import { msec } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
 
 interface Props {
     onChange: (data: SongMetadataEntity) => void;
     data: SongMetadataEntity;
     videoId: string;
+    videoGap?: number;
 }
 
-export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
+const MIN_PREVIEW_LENGTH = 10;
+
+export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, videoGap = 0 }: Props) {
     const player = useRef<YouTube | null>(null);
     const reference = useRef<HTMLAudioElement | null>(null);
 
@@ -51,8 +55,41 @@ export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
         onChange({ ...data, volume: +value });
     };
 
+    const previewStart = data.previewStart ?? videoGap + 60;
+    const previewEnd = data.previewEnd ?? previewStart + 30;
+    const [duration, setDuration] = useState<number | null>(null);
+    useEffect(() => {
+        player.current?.getInternalPlayer()?.getDuration().then(setDuration);
+    }, []);
+
+    const internalPlayer = player.current?.getInternalPlayer();
+
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+            <h3>
+                Set song preview (start: {msec(previewStart * 1000, internalPlayer)}, end:{' '}
+                {msec(previewEnd * 1000, internalPlayer)})
+            </h3>
+            <Box sx={{ display: 'flex', gap: 5 }}>
+                <Slider
+                    data-test="song-preview"
+                    disabled={duration === null}
+                    step={1}
+                    value={[previewStart, previewEnd]}
+                    max={(duration ?? 500) - MIN_PREVIEW_LENGTH}
+                    onChange={(e, value) => {
+                        const [start, end] = value as number[];
+                        if (end - start > MIN_PREVIEW_LENGTH) {
+                            onChange({
+                                ...data,
+                                previewStart: start,
+                                previewEnd: end,
+                            });
+                        }
+                    }}
+                />
+            </Box>
+
             <h3>Adjust volume</h3>
             <Box sx={{ display: 'flex', gap: 5 }}>
                 <Box>
@@ -103,7 +140,7 @@ export default function VolumeAdjustment({ data, onChange, videoId }: Props) {
             <Box>
                 <Slider
                     data-test="volume"
-                    min={0}
+                    min={0.1}
                     max={1}
                     step={0.01}
                     aria-label="Volume"

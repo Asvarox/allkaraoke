@@ -1,5 +1,5 @@
 import { Autocomplete, Grid, TextField } from '@mui/material';
-import VolumeAdjustment from 'Scenes/Convert/Steps/VolumeAdjustment';
+import PreviewAndVolumeAdjustment from 'Scenes/Convert/Steps/PreviewAndVolumeAdjustment';
 import { inputAction } from 'Scenes/Convert/Elements';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import { useMemo } from 'react';
@@ -11,6 +11,8 @@ export interface SongMetadataEntity {
     realBpm: string;
     language: string;
     volume: number;
+    previewStart: number | undefined;
+    previewEnd: number | undefined;
     genre?: string;
 }
 
@@ -20,6 +22,7 @@ interface Props {
     songTitle?: string;
     songArtist?: string;
     videoId: string;
+    videoGap?: number;
 }
 
 export default function SongMetadata(props: Props) {
@@ -142,8 +145,9 @@ export default function SongMetadata(props: Props) {
                     {...inputAction(() => searchGoogle('tempo'), isSearchableForVideo)}
                 />
             </Grid>
+            <Grid item xs={12}></Grid>
             <Grid item xs={12}>
-                <VolumeAdjustment {...props} />
+                <PreviewAndVolumeAdjustment {...props} />
             </Grid>
         </Grid>
     );

@@ -41,9 +41,10 @@ export default function Convert({ song }: Props) {
         year: song?.year ?? '',
         language: song?.language ?? '',
         volume: song?.volume ?? 0,
+        previewStart: song?.previewStart ?? undefined,
+        previewEnd: song?.previewEnd ?? undefined,
         genre: song?.genre,
     });
-    console.log({ metadataEntity });
 
     const [editedSong, setEditedSong] = useState<Song | undefined>(song);
 
@@ -111,7 +112,19 @@ export default function Convert({ song }: Props) {
                     sourceUrl: conversionResult.sourceUrl!,
                 }));
             }
-            (['year', 'language', 'realBpm', 'genre', 'artist', 'title', 'volume'] as const).forEach((property) => {
+            (
+                [
+                    'year',
+                    'language',
+                    'realBpm',
+                    'genre',
+                    'artist',
+                    'title',
+                    'volume',
+                    'previewStart',
+                    'previewEnd',
+                ] as const
+            ).forEach((property) => {
                 if (!!conversionResult[property] && !metadataEntity[property]) {
                     setMetadataEntity((current) => ({
                         ...current,
@@ -129,11 +142,11 @@ export default function Convert({ song }: Props) {
         metadataEntity.artist,
         metadataEntity.volume,
         metadataEntity.title,
+        metadataEntity.previewStart,
+        metadataEntity.previewEnd,
         basicData.sourceUrl,
         authorAndVid.video,
     ]);
-
-    console.log(metadataEntity.volume);
 
     const isBasicInfoCompleted = !!basicData.txtInput || !!song;
     const isAuthorAndVidCompleted = !!authorAndVid.video;
@@ -148,7 +161,6 @@ export default function Convert({ song }: Props) {
         realBpm: +metadataEntity.realBpm,
         sourceUrl: basicData.sourceUrl,
     };
-    console.log(finalSong);
 
     return (
         <StyledEngineProvider injectFirst>
@@ -232,6 +244,7 @@ export default function Convert({ song }: Props) {
 
                     {steps.at(currentStep) === 'metadata' && (
                         <SongMetadata
+                            videoGap={editedSong?.videoGap}
                             onChange={setMetadataEntity}
                             data={metadataEntity}
                             songArtist={conversionResult?.artist}

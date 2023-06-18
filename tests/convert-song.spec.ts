@@ -25,6 +25,8 @@ const TRACK_2_NAME = 'Track 2 Name';
 const FINAL_ARTIST = 'Final Artist';
 const FINAL_TITLE = 'Final Title';
 const FINAL_GENRE = 'Final Genre';
+const FINAL_PREVIEW_START = '60';
+const FINAL_PREVIEW_END = '80';
 
 test('Convert song', async ({ page }) => {
     test.slow();
@@ -171,6 +173,15 @@ test('Convert song', async ({ page }) => {
     await expect(page.locator('[data-test="song-bpm"] input')).toHaveValue('200');
     await page.locator('[data-test="song-bpm"] input').fill(FINAL_SONG_BPM);
 
+    await expect(page.locator('[data-test=song-preview] input[data-index="0"]')).toHaveValue(
+        String(+FINAL_VIDEO_GAP + 60),
+    );
+    await expect(page.locator('[data-test=song-preview] input[data-index="1"]')).toHaveValue(
+        String(+FINAL_VIDEO_GAP + 60 + 30),
+    );
+    await page.locator('[data-test=song-preview] input[data-index="0"]').fill(FINAL_PREVIEW_START);
+    await page.locator('[data-test=song-preview] input[data-index="1"]').fill(FINAL_PREVIEW_END);
+
     await expect(page.locator('[data-test="volume"] input')).toHaveValue('0.25');
     await page.locator('[data-test="volume"] input').fill(FINAL_VOLUME);
 
@@ -211,6 +222,8 @@ test('Convert song', async ({ page }) => {
     expect(convertedSong.bpm).toEqual(+FINAL_BPM);
     expect(convertedSong.volume).toEqual(+FINAL_VOLUME);
     expect(convertedSong.tracks).toHaveLength(FINAL_TRACKS);
+    expect(convertedSong.previewStart).toEqual(+FINAL_PREVIEW_START);
+    expect(convertedSong.previewEnd).toEqual(+FINAL_PREVIEW_END);
     expect(convertedSong.tracks[0].sections).toHaveLength(FINAL_TRACK_1_SECTIONS);
     expect(convertedSong.tracks[0].name).not.toBeDefined();
     expect(convertedSong.tracks[1].name).toEqual(TRACK_2_NAME);

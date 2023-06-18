@@ -2,6 +2,8 @@ import { Button, Tooltip } from '@mui/material';
 import { Pre } from 'Scenes/Convert/Elements';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import { PlayerRef } from 'Scenes/Game/Singing/Player';
+import { YouTubePlayer } from 'react-youtube';
+import { seconds } from 'interfaces';
 
 const formatMs = (msec: number) => {
     const minutes = Math.floor(msec / 1000 / 60);
@@ -15,16 +17,34 @@ const formatMs = (msec: number) => {
     );
 };
 
-export const msec = (ms: number | undefined, player: PlayerRef) => (
+const ytPlayerAdapter = (player: PlayerRef | YouTubePlayer): PlayerRef => {
+    if ('playVideo' in player) {
+        return {
+            play: () => player.playVideo(),
+            pause: () => player.pauseVideo(),
+            seekTo: (timeSec: seconds) => player.seekTo(timeSec, true),
+            setPlaybackSpeed: (rate) => player.setPlaybackRate(rate),
+        };
+    }
+
+    return player;
+};
+
+export const msec = (ms: number | undefined, player?: PlayerRef | YouTubePlayer | null) => (
     <Tooltip title="Click to play the moment just before this time" placement={'top'} arrow>
         <Button
             sx={{ py: 0.15, mb: 0.5 }}
             variant={'contained'}
             size="small"
-            onClick={() => {
-                GameState.resetPlayerNotes();
-                player.seekTo((ms ?? 0) / 1000 - 0.7);
-            }}>
+            disabled={!player}
+            onClick={
+                player
+                    ? () => {
+                          GameState.resetPlayerNotes();
+                          ytPlayerAdapter(player).seekTo((ms ?? 0) / 1000 - 0.7);
+                      }
+                    : undefined
+            }>
             {formatMs(ms ?? 0)}
         </Button>
     </Tooltip>
