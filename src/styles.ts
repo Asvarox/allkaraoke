@@ -31,6 +31,7 @@ export default css`
         ${typography};
         margin: 0;
         font-size: 2.2rem;
+        line-height: 1.15;
     }
 
     h5 {
