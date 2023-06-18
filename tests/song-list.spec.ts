@@ -44,13 +44,16 @@ test('Filters - PlayLists', async ({ page }) => {
     // Go to playlists
     await page.keyboard.press('ArrowRight');
     await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowRight');
 
     await page.keyboard.press('ArrowDown'); // English
     await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
+    await expect(page.getByTestId('song-e2e-test-multilanguage.json')).toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Polish
     await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-test-multilanguage.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Classics

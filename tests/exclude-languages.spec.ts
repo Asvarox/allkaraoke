@@ -18,6 +18,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
         await page.getByTestId('close-exclude-languages').click();
 
         await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-test-multilanguage.json')).toBeVisible();
         await expect(page.getByTestId('song-e2e-test-multitrack.json')).not.toBeVisible();
     });
 
@@ -33,6 +34,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
         await page.getByTestId('sing-a-song').click();
 
+        await expect(page.getByTestId('song-e2e-test-multilanguage.json')).toBeVisible();
         await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
         await expect(page.getByTestId('song-e2e-test.json')).not.toBeVisible();
     });
@@ -50,6 +52,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
         await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
         await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-test-multilanguage.json')).toBeVisible();
     });
 
     await test.step('exclude all', async () => {

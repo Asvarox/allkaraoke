@@ -1,0 +1,157 @@
+{
+    "artist": "3 E2ETest",
+    "title": "Multilanguage",
+    "video": "mcEVAY1H5As",
+    "language": ["English", "Polish"],
+    "year": "1994",
+    "gap": 1000,
+    "bpm": 350,
+    "bar": 4,
+    "tracks": [
+        {
+            "sections": [
+                {
+                    "type": "notes",
+                    "start": 0,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 5,
+                            "length": 10,
+                            "pitch": 9,
+                            "lyrics": "Track 1 "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 20,
+                            "length": 10,
+                            "pitch": 10,
+                            "lyrics": "Section 1"
+                        }
+                    ]
+                },
+                {
+                    "type": "notes",
+                    "start": 40,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 50,
+                            "length": 10,
+                            "pitch": 11,
+                            "lyrics": "Track 1 "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 80,
+                            "length": 10,
+                            "pitch": 9,
+                            "lyrics": "Section 2"
+                        }
+                    ]
+                },
+                {
+                    "start": 100,
+                    "end": 110,
+                    "type": "pause"
+                },
+                {
+                    "type": "notes",
+                    "start": 120,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 130,
+                            "length": 10,
+                            "pitch": 10,
+                            "lyrics": "Track 1 Section 3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sections": [
+                {
+                    "type": "notes",
+                    "start": 0,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 0,
+                            "length": 10,
+                            "pitch": 11,
+                            "lyrics": "Track 2 "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 15,
+                            "length": 10,
+                            "pitch": 9,
+                            "lyrics": "Section "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 30,
+                            "length": 10,
+                            "pitch": 10,
+                            "lyrics": "1"
+                        }
+                    ]
+                },
+                {
+                    "type": "notes",
+                    "start": 50,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 60,
+                            "length": 10,
+                            "pitch": 11,
+                            "lyrics": "Track 2 "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 75,
+                            "length": 10,
+                            "pitch": 12,
+                            "lyrics": "Section "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 90,
+                            "length": 10,
+                            "pitch": 9,
+                            "lyrics": "2"
+                        }
+                    ]
+                },
+                {
+                    "start": 110,
+                    "end": 130,
+                    "type": "pause"
+                },
+                {
+                    "type": "notes",
+                    "start": 140,
+                    "notes": [
+                        {
+                            "type": "normal",
+                            "start": 150,
+                            "length": 10,
+                            "pitch": 9,
+                            "lyrics": "Track 2 "
+                        },
+                        {
+                            "type": "normal",
+                            "start": 165,
+                            "length": 10,
+                            "pitch": 10,
+                            "lyrics": "Section 3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

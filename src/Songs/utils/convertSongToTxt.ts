@@ -6,9 +6,15 @@ import { SongTXTKeys, typesMap } from 'Songs/utils/convertTxtToSong';
 
 export const txtTypesMap = invert(typesMap) as any as Record<ValuesType<typeof typesMap>, keyof typeof typesMap>;
 
-function toTxtValue(key: SongTXTKeys, value: string | number | undefined) {
+function toTxtValue(key: SongTXTKeys, value: string | string[] | number | undefined) {
     if (value === undefined) return undefined;
-    return `#${key}:${typeof value === 'number' ? value.toString(10).replace('.', ',') : value}`;
+    return `#${key}:${
+        typeof value === 'number'
+            ? value.toString(10).replace('.', ',')
+            : Array.isArray(value)
+            ? value.join(', ')
+            : value
+    }`;
 }
 
 const notesToText = (notes: Note[]) =>

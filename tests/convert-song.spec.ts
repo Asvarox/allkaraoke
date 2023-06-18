@@ -1,5 +1,4 @@
 import { expect, test } from '@playwright/test';
-import { Song } from '../src/interfaces';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 import { initTestMode, mockSongs } from './helpers';
 
@@ -9,7 +8,7 @@ test.beforeEach(async ({ page, context }) => {
 });
 
 const VIDEO_ID = '8YKAHgwLEMg';
-const FINAL_LANG = 'Polish';
+const FINAL_LANG = ['English', 'Polish'];
 const FINAL_YEAR = '2000';
 const FINAL_SONG_BPM = '100';
 const FINAL_SOURCE_URL = 'https://example.com/source-url';
@@ -164,8 +163,9 @@ test('Convert song', async ({ page }) => {
     await expect(page.locator('[data-test="song-genre"] input')).toHaveValue('genre');
     await page.locator('[data-test="song-genre"] input').fill(FINAL_GENRE);
 
-    await expect(page.locator('[data-test="song-language"] input')).toHaveValue('English');
-    await page.locator('[data-test="song-language"] input').fill(FINAL_LANG);
+    await expect(page.locator('[data-test="song-language"]')).toContainText(FINAL_LANG[0]);
+    await page.locator('[data-test="song-language"] input').fill(FINAL_LANG[1]);
+    await page.keyboard.press('Enter');
 
     await expect(page.locator('[data-test="release-year"] input')).toHaveValue('1992');
     await page.locator('[data-test="release-year"] input').fill(FINAL_YEAR);
@@ -205,7 +205,7 @@ test('Convert song', async ({ page }) => {
     }
 
     const downloadedContent = Buffer.concat(chunks).toString('utf-8');
-    const convertedSong: Song = convertTxtToSong(downloadedContent);
+    const convertedSong = convertTxtToSong(downloadedContent);
 
     expect(convertedSong.artist).toEqual(FINAL_ARTIST);
     expect(convertedSong.title).toEqual(FINAL_TITLE);
@@ -214,7 +214,8 @@ test('Convert song', async ({ page }) => {
     expect(convertedSong.sourceUrl).toEqual(FINAL_SOURCE_URL);
     expect(convertedSong.author).toEqual(FINAL_AUTHOR);
     expect(convertedSong.authorUrl).toEqual(FINAL_AUTHOR_URL);
-    expect(convertedSong.language).toEqual(FINAL_LANG);
+    expect(convertedSong.language).toContain(FINAL_LANG[0]);
+    expect(convertedSong.language).toContain(FINAL_LANG[1]);
     expect(convertedSong.year).toEqual(FINAL_YEAR);
     expect(convertedSong.realBpm).toEqual(+FINAL_SONG_BPM);
     expect(convertedSong.videoGap).toEqual(+FINAL_VIDEO_GAP);

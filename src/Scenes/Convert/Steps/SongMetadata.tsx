@@ -9,7 +9,7 @@ export interface SongMetadataEntity {
     title: string;
     year: string;
     realBpm: string;
-    language: string;
+    language: string | string[];
     volume: number;
     previewStart: number | undefined;
     previewEnd: number | undefined;
@@ -33,7 +33,14 @@ export default function SongMetadata(props: Props) {
         [songList.data],
     );
     const definedGenres = useMemo(
-        () => [...new Set(songList.data.map((song) => song.genre).filter(Boolean))],
+        () => [
+            ...new Set(
+                songList.data
+                    .map((song) => song.genre)
+                    .filter(Boolean)
+                    .map((genre) => genre!.toLowerCase().replace(/\b\w/g, (l) => l.toUpperCase().trim())),
+            ),
+        ],
         [songList.data],
     );
 
@@ -100,19 +107,24 @@ export default function SongMetadata(props: Props) {
                             event.preventDefault();
                         }
                     }}
+                    multiple
                     freeSolo
                     disableClearable
                     options={definedLanguages}
-                    value={props.data.language}
-                    onChange={(e, newValue) => props.onChange({ ...props.data, language: newValue })}
+                    value={typeof props.data.language === 'string' ? [props.data.language] : props.data.language}
+                    onChange={(e, newValue) => {
+                        props.onChange({
+                            ...props.data,
+                            language: newValue ? (newValue.filter(Boolean) as string[]) : props.data.language,
+                        });
+                    }}
                     renderInput={(params) => (
                         <TextField
                             {...params}
-                            onBlur={(e) => props.onChange({ ...props.data, language: e.target.value })}
                             label="Song language"
                             fullWidth
                             size="small"
-                            required
+                            required={!props.data.language?.length}
                             data-test="song-language"
                         />
                     )}

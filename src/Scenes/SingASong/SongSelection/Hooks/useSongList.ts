@@ -49,14 +49,21 @@ type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
 const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     language: (songList, language: string) => {
         if (language === '') return songList;
-        const filterValue = language === 'Unknown' ? undefined : language;
 
-        return songList.filter((song) => song.language === filterValue);
+        return songList.filter((song) => {
+            const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
+
+            return songLangs.includes(language);
+        });
     },
     excludeLanguages: (songList, languages: string[] = []) => {
         if (languages.length === 0) return songList;
 
-        return songList.filter((song) => !languages.includes(song.language ?? ''));
+        return songList.filter((song) => {
+            const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
+
+            return !songLangs.every((songLang) => languages.includes(songLang!));
+        });
     },
     search: (songList, search: string) => {
         const cleanSearch = clearString(search);
@@ -93,7 +100,7 @@ const applyFilters = (list: SongPreview[], filters: AppliedFilters): SongPreview
 };
 
 export const useLanguageFilter = (list: SongPreview[]) => {
-    return useMemo(() => uniq(['', ...list.map((song) => song.language ?? 'Unknown')]), [list]);
+    return useMemo(() => uniq(['', ...list.map((song) => song.language ?? 'Unknown')].flat()), [list]);
 };
 
 export const useSongListFilter = (list: SongPreview[]) => {

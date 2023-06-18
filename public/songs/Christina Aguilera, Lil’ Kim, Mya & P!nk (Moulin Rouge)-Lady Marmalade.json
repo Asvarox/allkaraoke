@@ -9,7 +9,7 @@
   "lastUpdate": "2023-05-06T19:37:39.623Z",
   "edition": "[DUET]-Songs",
   "genre": "Pop",
-  "language": "English, French",
+  "language": ["English", "French"],
   "videoGap": 0,
   "realBpm": 110,
   "volume": 0.5,

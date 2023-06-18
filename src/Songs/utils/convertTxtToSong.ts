@@ -28,14 +28,22 @@ export type SongTXTKeys =
     | 'GAP'
     | 'VIDEOID';
 
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, number?: false): string | undefined;
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, number?: true): number | undefined;
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, number = false) {
+function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'string'): string | undefined;
+function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'array'): string[] | undefined;
+function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'number'): number | undefined;
+function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type: 'string' | 'number' | 'array' = 'string') {
     const regex = new RegExp(`#${key}\\:(.*)`);
 
     const value = txt.match(regex)?.[1];
     if (value === undefined) return undefined;
-    return number ? Number(value.replace(',', '.')) ?? 0 : value;
+    if (type === 'number') {
+        return Number(value.replace(',', '.')) ?? 0;
+    } else if (type === 'array') {
+        const vals = value.split(', ');
+
+        return vals.length > 1 ? vals : value;
+    }
+    return value;
 }
 
 const LINE_BREAK_RELATIVE_REGEXP = /- -?\d+ -?\d+/;
@@ -70,12 +78,12 @@ export default function convertTxtToSong(
         lastUpdate: getPropertyValueFromTxt(text, 'LASTUPDATE'),
         edition: getPropertyValueFromTxt(text, 'EDITION'),
         genre: getPropertyValueFromTxt(text, 'GENRE'),
-        language: getPropertyValueFromTxt(text, 'LANGUAGE'),
-        videoGap: getPropertyValueFromTxt(text, 'VIDEOGAP', true),
-        realBpm: getPropertyValueFromTxt(text, 'REALBPM', true),
-        previewStart: getPropertyValueFromTxt(text, 'PREVIEWSTART', true),
-        previewEnd: getPropertyValueFromTxt(text, 'PREVIEWEND', true),
-        volume: getPropertyValueFromTxt(text, 'VOLUME', true),
+        language: getPropertyValueFromTxt(text, 'LANGUAGE', 'array'),
+        videoGap: getPropertyValueFromTxt(text, 'VIDEOGAP', 'number'),
+        realBpm: getPropertyValueFromTxt(text, 'REALBPM', 'number'),
+        previewStart: getPropertyValueFromTxt(text, 'PREVIEWSTART', 'number'),
+        previewEnd: getPropertyValueFromTxt(text, 'PREVIEWEND', 'number'),
+        volume: getPropertyValueFromTxt(text, 'VOLUME', 'number'),
         author: getPropertyValueFromTxt(text, 'CREATOR') ?? author,
         authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
         sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,

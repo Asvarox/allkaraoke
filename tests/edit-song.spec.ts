@@ -33,7 +33,7 @@ test('Edit song', async ({ page }) => {
 
     await page.getByTestId('next-button').click();
 
-    await expect(page.locator('[data-test="song-language"] input')).toHaveValue('English');
+    await expect(page.locator('[data-test="song-language"]')).toContainText('English');
     await expect(page.locator('[data-test="release-year"] input')).toHaveValue('1995');
     await expect(page.locator('[data-test="song-bpm"] input')).toHaveValue('200');
 });

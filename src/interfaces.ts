@@ -50,7 +50,7 @@ export interface Song {
     genre: string | undefined;
     year: string | undefined;
     edition: string | undefined;
-    language: string | undefined;
+    language: string | string[] | undefined;
     sourceUrl: string | undefined;
     videoGap: number | undefined;
     artist: string;

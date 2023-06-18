@@ -19,12 +19,15 @@ export const useLanguageList = (list: SongPreview[]) => {
 
         list.forEach((song) => {
             if (!song.language) return;
+            const songLangs = Array.isArray(song.language) ? song.language : [song.language];
 
-            const langId = song.language?.toLowerCase();
-            if (!langs[langId]) {
-                langs[langId] = { name: song.language!, count: 0 };
-            }
-            langs[langId].count = langs[langId].count + 1;
+            songLangs.forEach((lang) => {
+                const langId = lang.toLowerCase();
+                if (!langs[langId]) {
+                    langs[langId] = { name: lang, count: 0 };
+                }
+                langs[langId].count = langs[langId].count + 1;
+            });
         });
 
         return Object.values(langs);
