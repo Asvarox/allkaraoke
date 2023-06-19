@@ -49,7 +49,7 @@ export const MicSetupPreferenceSetting = new Setting<ValuesType<typeof MicSetupP
 export const FpsCount = [60, 30] as const;
 export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>('fps-count', FpsCount[0]);
 
-export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_LANGUAGES_KEY', null);
+export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_LANGUAGES_KEY_V2', null);
 
 export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_MODE_KEY', null);
 
