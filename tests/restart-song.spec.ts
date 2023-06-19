@@ -16,8 +16,8 @@ test('should restart the song and the scores', async ({ page }) => {
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click();
 
-    await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
-    await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');
+    await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
+    await navigateWithKeyboard(page, 'song-e2e-multitrack-polish-1994.json');
     await page.keyboard.press('Enter');
 
     await page.getByTestId('next-step-button').click();

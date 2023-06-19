@@ -17,16 +17,20 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click();
 
-    await expect(page.getByTestId('song-e2e-test.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
 
     await page.keyboard.press('Enter'); // enter first song
     await expect(page.getByTestId('next-step-button')).toBeVisible();
     await page.keyboard.press(browserName === 'firefox' ? 'Backspace' : 'Escape'); // check if escape works for Chrome
     await expect(page.getByTestId('next-step-button')).not.toBeVisible();
-    await navigateWithKeyboard(page, 'song-e2e-test-multitrack.json');
+    await navigateWithKeyboard(page, 'song-e2e-multitrack-polish-1994.json');
 
-    await expect(page.getByTestId('song-e2e-test-multitrack.json').getByTestId('multitrack-indicator')).toBeVisible();
-    await expect(page.getByTestId('song-e2e-test.json').getByTestId('multitrack-indicator')).not.toBeVisible();
+    await expect(
+        page.getByTestId('song-e2e-multitrack-polish-1994.json').getByTestId('multitrack-indicator'),
+    ).toBeVisible();
+    await expect(
+        page.getByTestId('song-e2e-single-english-1995.json').getByTestId('multitrack-indicator'),
+    ).not.toBeVisible();
 
     await page.keyboard.press('Enter'); // focus
     await expect(page.getByTestId('next-step-button')).toBeVisible();
@@ -113,9 +117,9 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
     // Check next song
     await page.getByTestId('play-next-song-button').click();
-    await expect(page.getByTestId('song-e2e-test-multitrack.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
     await expect(
-        page.locator('[data-test="song-e2e-test-multitrack.json"] >> [data-test="song-stat-indicator"]'),
+        page.locator('[data-test="song-e2e-multitrack-polish-1994.json"] >> [data-test="song-stat-indicator"]'),
     ).toContainText('Played today', { ignoreCase: true });
 
     // Check next song player names

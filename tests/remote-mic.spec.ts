@@ -74,7 +74,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
         await navigateWithKeyboard(page, 'close-exclude-languages', remoteMicBluePage);
         await remoteMicBluePage.getByTestId('keyboard-enter').click();
 
-        await navigateWithKeyboard(page, 'song-e2e-skip-intro-song.json', remoteMicBluePage);
+        await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish.json', remoteMicBluePage);
         await remoteMicBluePage.getByTestId('keyboard-enter').click();
 
         await navigateWithKeyboard(page, 'next-step-button', remoteMicRed);
@@ -127,5 +127,5 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
     await remoteMicBluePage.getByTestId('keyboard-enter').click();
     await expect(page.getByTestId('play-next-song-button')).toBeVisible();
     await remoteMicBluePage.getByTestId('keyboard-enter').click();
-    await expect(page.getByTestId('song-e2e-skip-intro-song.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-skip-intro-polish.json')).toBeVisible();
 });

@@ -93,8 +93,12 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     },
 };
 
-const applyFilters = (list: SongPreview[], filters: AppliedFilters): SongPreview[] => {
-    return Object.entries(filters)
+const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {
+    if (clearString(appliedFilters?.search ?? '').length) {
+        console.log(appliedFilters);
+        return filteringFunctions.search(list, appliedFilters.search);
+    }
+    return Object.entries(appliedFilters)
         .filter((filters): filters is [keyof AppliedFilters, FilterFunc] => filters[0] in filteringFunctions)
         .reduce((songList, [name, value]) => filteringFunctions[name](songList, value), list);
 };
@@ -107,13 +111,16 @@ export const useSongListFilter = (list: SongPreview[]) => {
     const availableLanguages = useLanguageFilter(list);
     const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
 
-    const [filters, setFilters] = useState<AppliedFilters>({});
+    const [filters, setFilters] = useState<AppliedFilters>({ excludeLanguages: excludedLanguages ?? [] });
 
-    const initiallyFilteredList = useMemo(
-        () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
-        [list, excludedLanguages],
+    const filteredList = useMemo(
+        () =>
+            applyFilters(list, {
+                ...filters,
+                excludeLanguages: excludedLanguages ?? [],
+            }),
+        [list, filters, excludedLanguages],
     );
-    const filteredList = useMemo(() => applyFilters(initiallyFilteredList, filters), [initiallyFilteredList, filters]);
 
     const filtersData: FiltersData = {
         language: {
