@@ -1,5 +1,5 @@
 import { Composition } from 'remotion';
-import { UpdateVideo } from 'videos/UpdateVideo';
+import { getUpdateVideoLength, UpdateVideo } from 'videos/UpdateVideo';
 
 export const RemotionRoot: React.FC = () => {
     return (
@@ -7,7 +7,7 @@ export const RemotionRoot: React.FC = () => {
             <Composition
                 id="UpdateVideo"
                 component={UpdateVideo}
-                durationInFrames={1105}
+                durationInFrames={getUpdateVideoLength()}
                 fps={30}
                 width={1080}
                 height={1920}

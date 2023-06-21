@@ -14,10 +14,16 @@ import { getUpdatesSequenceLength, Updates } from 'videos/UpdateVideo/Updates';
 import { Fade, Move } from 'remotion-animated';
 import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 
-const lastUpdate = new Date('2023-06-06T09:26:15.631Z');
+const lastUpdate = new Date('2023-06-08T09:26:15.631Z');
 
 const data = {
-    date: new Date('2023-06-08T09:26:15.631Z'),
+    date: new Date('2023-06-21T09:26:15.631Z'),
+    songPack: (
+        <>
+            <h1>Divas</h1>
+            <h2>Song Pack</h2>
+        </>
+    ),
     newSongs: songIndex.filter(
         (song) => song.lastUpdate && isAfter(new Date(song.lastUpdate), lastUpdate),
     ) as SongPreview[],
@@ -25,29 +31,43 @@ const data = {
         {
             title: (
                 <>
-                    Improved <strong>random songs</strong>
+                    Built in mic <strong>noise detection</strong>
                 </>
             ),
-            description: <h4>Songs are less likely to be repeatedly selected</h4>,
+            description: <h4>You will get notified if there's a lot of background noise picked by the mic</h4>,
         },
         {
             title: (
                 <>
-                    <strong>Remote microphones</strong> fixes
+                    <strong>Search song</strong> improvements
                 </>
             ),
-            description: <h4>Fixed gradual FPS drop when singing through remote microphones</h4>,
+            description: <h4>Search results now include all the songs (even excluded ones)</h4>,
         },
         {
             title: (
                 <>
-                    <strong>UI</strong> Improvements
+                    <strong>UI</strong> improvements
                 </>
             ),
             description: (
                 <>
-                    <h4>Allow changing built-in microphone</h4>
-                    <h4>Indicate when microphones are not setup</h4>
+                    <h4>Disallow unselecting all the languages</h4>
+                    <h4>Improved troubleshooting guide for connections</h4>
+                </>
+            ),
+        },
+        {
+            title: (
+                <>
+                    <strong>Add/Edit songs</strong> improvements
+                </>
+            ),
+            description: (
+                <>
+                    <h4>Set song preview</h4>
+                    <h4>Ignore casing for genres</h4>
+                    <h4>Allow specifying multiple languages</h4>
                 </>
             ),
         },
@@ -57,6 +77,9 @@ const data = {
 const dateFormat = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 
 const msToFps = (ms: number) => (ms / 1000) * 30;
+
+export const getUpdateVideoLength = () =>
+    120 + getNewSongsSequenceLength(data.newSongs) - 30 + getUpdatesSequenceLength(data.updates) + 120;
 
 export const UpdateVideo: React.FC<{}> = () => {
     const { durationInFrames } = useVideoConfig();
@@ -98,7 +121,7 @@ export const UpdateVideo: React.FC<{}> = () => {
 
                     <Series.Sequence durationInFrames={getNewSongsSequenceLength(data.newSongs)} offset={-30}>
                         <Scene color={'red'} id="New-songs">
-                            <NewSongs songs={data.newSongs} />
+                            <NewSongs songs={data.newSongs} songPack={data.songPack} />
                         </Scene>
                     </Series.Sequence>
                     <Series.Sequence durationInFrames={getUpdatesSequenceLength(data.updates)} offset={-30}>

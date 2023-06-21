@@ -34,8 +34,10 @@ export const SingeUpdate = ({ update, durationInFrames }: { update: UpdateEntry;
                     ]}></SAnimated>
             </CenterAbsoluteFill>
             <CenterAbsoluteFill style={{ gap: '1rem', opacity, transform: `translate(0, ${titlePosition}px)` }}>
-                <h2>{update.title}</h2>
-                <div style={{ padding: '0 1rem' }}>{update.description}</div>
+                <h2 style={{ textAlign: 'center' }}>{update.title}</h2>
+                <div style={{ padding: '0 1rem', display: 'flex', gap: '1rem', flexDirection: 'column' }}>
+                    {update.description}
+                </div>
             </CenterAbsoluteFill>
         </AbsoluteFill>
     );

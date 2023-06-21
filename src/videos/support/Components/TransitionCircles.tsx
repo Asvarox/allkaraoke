@@ -22,14 +22,16 @@ interface Props extends TransitionCircleProps {
 
 const CIRCLE_NUM = 10;
 
+const daySeed = new Date().toDateString();
+
 export const TransitionCircles: React.FC<Props> = ({ delay, duration, id }) => {
     const randomizedCircles = useMemo(
         () =>
             new Array(CIRCLE_NUM).fill(true).map((a, i) => {
                 return {
-                    x: random(`${id}-random-x-${i}`),
-                    y: random(`${id}-random-y-${i}`),
-                    delay: random(`${id}-random-delay-${i}`),
+                    x: random(`${daySeed}-${id}-random-x-${i}`),
+                    y: random(`${daySeed}-${id}-random-y-${i}`),
+                    delay: random(`${daySeed}-${id}-random-delay-${i}`),
                 };
             }),
         [],

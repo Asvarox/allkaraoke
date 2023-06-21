@@ -1,16 +1,27 @@
-import { AbsoluteFill, continueRender, delayRender, Easing, Img, interpolate, Series, useCurrentFrame } from 'remotion';
-import React, { useEffect, useState } from 'react';
+import {
+    AbsoluteFill,
+    continueRender,
+    delayRender,
+    Easing,
+    Img,
+    interpolate,
+    Series,
+    useCurrentFrame,
+    useVideoConfig,
+} from 'remotion';
+import React, { HTMLProps, PropsWithChildren, ReactNode, useEffect, useState } from 'react';
 import { SongPreview } from 'interfaces';
 import { CenterAbsoluteFill, SAnimated } from 'videos/support/Components/common';
 import styled from '@emotion/styled';
 import { flexCenter, flexVertical } from 'videos/support/cssMixins';
 import { Fade, Scale } from 'remotion-animated';
+import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';
 
 const SONG_PRESENTATION_FRAMES = 70;
 const TITLE_PRESENTATION_FRAMES = SONG_PRESENTATION_FRAMES;
 
 export const getNewSongsSequenceLength = (songs: SongPreview[]) =>
-    songs.length * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
+    6 * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
 
 export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; durationInFrames: number }) => {
     const [handle] = useState(() => delayRender());
@@ -44,17 +55,19 @@ export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; dura
                         Fade({ to: 0.9, initial: 0, duration: 10 }),
                         Fade({ to: 0, initial: 0.9, duration: 10, start: durationInFrames - 10 }),
                     ]}>
-                    <Img
-                        style={{
-                            opacity: highResThumbnail !== null ? 1 : 0,
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'contain',
-                            filter: 'blur(5px)',
-                            transform: 'scale(1.5)',
-                        }}
-                        src={thumbSrc}
-                    />
+                    {highResThumbnail !== null && (
+                        <Img
+                            style={{
+                                opacity: highResThumbnail !== null ? 1 : 0,
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'contain',
+                                filter: `blur(${highResThumbnail ? 2 : 5}px)`,
+                                transform: 'scale(1.5)',
+                            }}
+                            src={thumbSrc}
+                        />
+                    )}
                 </SAnimated>
             </CenterAbsoluteFill>
             <CenterAbsoluteFill style={{ gap: '1rem' }}>
@@ -76,7 +89,8 @@ const TitleBar = styled.div`
     gap: 1rem;
 `;
 
-export const NewSongs: React.FC<{ songs: SongPreview[] }> = ({ songs }) => {
+export const NewSongs: React.FC<{ songs: SongPreview[]; songPack?: ReactNode }> = ({ songs, songPack }) => {
+    const perSongTime = (getNewSongsSequenceLength(songs) - TITLE_PRESENTATION_FRAMES + 30) / songs.length;
     return (
         <Series>
             <Series.Sequence durationInFrames={TITLE_PRESENTATION_FRAMES}>
@@ -84,14 +98,52 @@ export const NewSongs: React.FC<{ songs: SongPreview[] }> = ({ songs }) => {
                     <h1>New songs</h1>
                 </SAnimated>
             </Series.Sequence>
-            {songs.map((song, index) => {
-                const length = index === songs.length - 1 ? SONG_PRESENTATION_FRAMES * 1.5 : SONG_PRESENTATION_FRAMES;
-                return (
-                    <Series.Sequence durationInFrames={length} key={song.file} offset={-10}>
-                        <SingleSong song={song} durationInFrames={length} />
-                    </Series.Sequence>
-                );
-            })}
+            <Series.Sequence
+                durationInFrames={getNewSongsSequenceLength(songs) - TITLE_PRESENTATION_FRAMES}
+                offset={-10}>
+                {songPack && (
+                    // <PulseAnim>
+                    <SongPackTitleWrapper>{songPack}</SongPackTitleWrapper>
+                    // </PulseAnim>
+                )}
+                <Series>
+                    {songs.map((song, index) => {
+                        const length = index === songs.length - 1 ? perSongTime * 1.5 : perSongTime;
+                        return (
+                            <Series.Sequence durationInFrames={length} key={song.file} offset={index === 0 ? 0 : -10}>
+                                <SingleSong song={song} durationInFrames={length} />
+                            </Series.Sequence>
+                        );
+                    })}
+                </Series>
+            </Series.Sequence>
         </Series>
     );
 };
+
+const musicBpm = 120;
+const musicOffset = 27;
+const PulseAnim = ({ children, ...props }: PropsWithChildren<HTMLProps<HTMLDivElement>>) => {
+    const { fps } = useVideoConfig();
+    const frame = useAbsoluteFrame();
+    const beatFrameLength = (60 / musicBpm) * fps;
+
+    const cycle = ((frame + musicOffset) / beatFrameLength) % 1;
+    const inter = interpolate(cycle, [0, 0.1, 0.9, 1], [1, 1.1, 1, 1]);
+
+    return (
+        <div {...props} style={{ transform: `scale(${inter})`, ...props?.style }}>
+            {children}
+        </div>
+    );
+};
+
+const SongPackTitleWrapper = styled(PulseAnim)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: -38%;
+    position: relative;
+`;

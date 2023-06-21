@@ -580,6 +580,33 @@
     "local": false
   },
   {
+    "title": "You Oughta Know",
+    "artist": "Alanis Morissette",
+    "bpm": 209.1,
+    "bar": 4,
+    "gap": 675.6958393113343,
+    "video": "NPcyTyilmYY",
+    "year": "1995",
+    "lastUpdate": "2023-06-17T20:54:33.771Z",
+    "genre": "Pop Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.5,
+    "author": "Hun",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Alanis-Morissette-You-Oughta-Know.json",
+    "tracksCount": 1,
+    "search": "alanismorissetteyououghtaknow",
+    "local": false
+  },
+  {
     "title": "Poison",
     "artist": "Alice Cooper",
     "bpm": 240,
@@ -758,6 +785,33 @@
     "file": "Aqua-Barbie Girl.json",
     "tracksCount": 1,
     "search": "aquabarbiegirl",
+    "local": false
+  },
+  {
+    "title": "Think",
+    "artist": "Aretha Franklin & The Blues Brothers Band",
+    "bpm": 387.8,
+    "bar": 4,
+    "gap": 163534.3269726663,
+    "video": "RTXszRHc0qs",
+    "year": "1968",
+    "lastUpdate": "2023-06-17T20:58:23.739Z",
+    "genre": "soul",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 129,
+    "volume": 0.5,
+    "author": "bohning",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "Aretha-Franklin-The-Blues-Brothers-Band-Think.json",
+    "tracksCount": 1,
+    "search": "arethafranklinthebluesbrothersbandthink",
     "local": false
   },
   {
@@ -2250,6 +2304,33 @@
     "local": false
   },
   {
+    "title": "I Drove All Night",
+    "artist": "Céline Dion",
+    "bpm": 268.5,
+    "bar": 4,
+    "gap": 18464.41340782123,
+    "video": "kvz_gW5C2cY",
+    "year": "2003",
+    "lastUpdate": "2023-06-17T20:05:55.091Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.5,
+    "author": "DavidPingu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "C-line-Dion-I-Drove-All-Night.json",
+    "tracksCount": 1,
+    "search": "celinedionidroveallnight",
+    "local": false
+  },
+  {
     "title": "Phoenix",
     "artist": "Cailin Russo & Chrissy Costanza",
     "bpm": 336.04,
@@ -3047,6 +3128,34 @@
     "file": "Depeche-Mode-Its-No-Good.json",
     "tracksCount": 1,
     "search": "depechemodeitsnogood",
+    "local": false
+  },
+  {
+    "title": "I’m Coming Out",
+    "artist": "Diana Ross",
+    "bpm": 224,
+    "bar": 4,
+    "gap": 1305.5357142857142,
+    "video": "F-mjl63e0ms",
+    "year": "1980",
+    "lastUpdate": "2023-06-17T20:56:18.520Z",
+    "edition": "SingStar Summer Party",
+    "genre": "disco",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.5,
+    "author": "Leki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Diana-Ross-I-m-Coming-Out.json",
+    "tracksCount": 1,
+    "search": "dianarossimcomingout",
     "local": false
   },
   {
@@ -3972,6 +4081,34 @@
     "file": "Europe-Final Countdown.json",
     "tracksCount": 1,
     "search": "europefinalcountdown",
+    "local": false
+  },
+  {
+    "title": "Sweet Dreams (Are Made Of This)",
+    "artist": "Eurythmics",
+    "bpm": 250.5,
+    "bar": 4,
+    "gap": 7302.035928143712,
+    "video": "qeMFqkcPYcg",
+    "year": "1982",
+    "lastUpdate": "2023-06-17T21:01:29.704Z",
+    "edition": "None",
+    "genre": "pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.5,
+    "author": "snake84",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Eurythmics-Sweet-Dreams-Are-Made-Of-This.json",
+    "tracksCount": 1,
+    "search": "eurythmicssweetdreamsaremadeofthis",
     "local": false
   },
   {
@@ -5026,6 +5163,34 @@
     "file": "Igor Kwiatkowski-Drobnostka.json",
     "tracksCount": 1,
     "search": "igorkwiatkowskidrobnostka",
+    "local": false
+  },
+  {
+    "title": "Proud Mary",
+    "artist": "Ike & Tina Turner",
+    "bpm": 363.8,
+    "bar": 4,
+    "gap": 5530.445299615173,
+    "video": "2RF7Ya9YHEI",
+    "year": "1970",
+    "lastUpdate": "2023-06-17T20:43:01.605Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.5,
+    "author": "fepo",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=16197",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "file": "Ike-Tina-Turner-Proud-Mary.json",
+    "tracksCount": 1,
+    "search": "iketinaturnerproudmary",
     "local": false
   },
   {
@@ -7414,6 +7579,33 @@
     "file": "Marcin Rozynek-Siłacz.json",
     "tracksCount": 1,
     "search": "marcinrozyneksiacz",
+    "local": false
+  },
+  {
+    "title": "Without you",
+    "artist": "Mariah Carey",
+    "bpm": 244.04,
+    "bar": 4,
+    "gap": 5921.554663169973,
+    "video": "6VY8ZxcDh1s",
+    "year": "1994",
+    "lastUpdate": "2023-06-17T20:28:59.664Z",
+    "genre": "Pop;Soul",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.5,
+    "author": "JaVar61/asb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Mariah-Carey-Without-you.json",
+    "tracksCount": 1,
+    "search": "mariahcareywithoutyou",
     "local": false
   },
   {
@@ -13295,6 +13487,33 @@
     "file": "Whitney Houston-I Wanna Dance With Somebody.json",
     "tracksCount": 1,
     "search": "whitneyhoustoniwannadancewithsomebody",
+    "local": false
+  },
+  {
+    "title": "I Will Always Love You",
+    "artist": "Whitney Houston",
+    "bpm": 271,
+    "bar": 4,
+    "gap": 1218.6900369003688,
+    "video": "3JWTaaS7LdU",
+    "year": "1992",
+    "lastUpdate": "2023-06-17T20:19:16.063Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": -3,
+    "realBpm": 68,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Whitney-Houston-I-Will-Always-Love-You.json",
+    "tracksCount": 1,
+    "search": "whitneyhoustoniwillalwaysloveyou",
     "local": false
   },
   {
