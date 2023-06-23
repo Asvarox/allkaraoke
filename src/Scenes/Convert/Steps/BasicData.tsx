@@ -1,7 +1,8 @@
-import { Box, TextField } from '@mui/material';
 import { ChangeEventHandler } from 'react';
+import { Box, FormControlLabel, Switch, TextField } from '@mui/material';
 import importUltrastarEsSong from 'Scenes/Convert/importUltrastarEsSong';
 import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import createPersistedState from 'use-persisted-state';
 
 export interface BasicDataEntity {
     sourceUrl: string;
@@ -16,6 +17,8 @@ interface Props {
     isTxtRequired: boolean;
 }
 
+const useFixDiacritics = createPersistedState<boolean>('editSongFixDiacritics', sessionStorage);
+
 export default function BasicData(props: Props) {
     const onSourceUrlEdit: ChangeEventHandler<HTMLInputElement> = async (e) => {
         props.onChange({ ...props.data, sourceUrl: e.target.value });
@@ -25,6 +28,8 @@ export default function BasicData(props: Props) {
             if (data) props.onAutoImport(data);
         }
     };
+
+    const [attemptFixDiacritics, setAttemptFixDiacritics] = useFixDiacritics(true);
 
     return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="basic-data">
@@ -60,23 +65,36 @@ export default function BasicData(props: Props) {
                 helperText="The link to the page from which the .TXT file was downloaded."
             />
             {props.isTxtRequired && (
-                <TextField
-                    required
-                    sx={{ mt: 2 }}
-                    fullWidth
-                    size="small"
-                    multiline
-                    label="Song's UltraStar .TXT file contents"
-                    onChange={(e) => props.onChange({ ...props.data, txtInput: fixDiacritics(e.target.value) })}
-                    value={props.data.txtInput}
-                    maxRows={15}
-                    minRows={15}
-                    InputProps={{
-                        inputProps: {
-                            'data-test': 'input-txt',
-                        },
-                    }}
-                />
+                <>
+                    <TextField
+                        required
+                        sx={{ mt: 2 }}
+                        fullWidth
+                        size="small"
+                        multiline
+                        label="Song's UltraStar .TXT file contents"
+                        onChange={(e) =>
+                            props.onChange({
+                                ...props.data,
+                                txtInput: attemptFixDiacritics ? fixDiacritics(e.target.value) : e.target.value,
+                            })
+                        }
+                        value={props.data.txtInput}
+                        maxRows={15}
+                        minRows={15}
+                        InputProps={{
+                            inputProps: {
+                                'data-test': 'input-txt',
+                            },
+                        }}
+                    />
+                    <FormControlLabel
+                        checked={attemptFixDiacritics}
+                        control={<Switch />}
+                        label="Fix polish diacritic characters"
+                        onChange={(_, checked) => setAttemptFixDiacritics(checked)}
+                    />
+                </>
             )}
         </Box>
     );

@@ -53,7 +53,7 @@ const data = {
             description: (
                 <>
                     <h4>Disallow unselecting all the languages</h4>
-                    <h4>Improved troubleshooting guide for connections</h4>
+                    <h4>Improved troubleshooting guide for connection errors in remote mic</h4>
                 </>
             ),
         },
