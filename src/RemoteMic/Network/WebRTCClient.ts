@@ -6,6 +6,7 @@ import peerJSOptions from 'utils/peerJSOptions';
 import { keyStrokes, WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './sendEvent';
 import { throttle } from 'lodash-es';
+import { getPingTime } from 'RemoteMic/Network/utils';
 
 const MIC_ID_KEY = 'MIC_CLIENT_ID';
 
@@ -70,16 +71,16 @@ class WebRTCClient {
     public pinging = false;
     private ping = () => {
         this.pinging = true;
-        this.pingStart = Date.now();
+        this.pingStart = getPingTime();
 
-        this.sendEvent('ping');
+        this.sendEvent('ping', { p: this.pingStart });
     };
 
     private onPong = () => {
-        this.latency = Date.now() - this.pingStart;
+        this.latency = getPingTime() - this.pingStart;
         this.pinging = false;
 
-        setTimeout(this.ping, 5000);
+        setTimeout(this.ping, 1000);
     };
 
     public connectToServer = (roomId: string, name: string, silent: boolean) => {
@@ -122,6 +123,8 @@ class WebRTCClient {
                     events.remoteReadinessRequested.dispatch();
                 } else if (type === 'pong') {
                     this.onPong();
+                } else if (type === 'ping') {
+                    this.sendEvent('pong');
                 }
             });
         });

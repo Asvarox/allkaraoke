@@ -2,6 +2,7 @@ import Peer from 'peerjs';
 import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './Network/sendEvent';
+import { getPingTime } from 'RemoteMic/Network/utils';
 
 class RemoteMicInput implements InputInterface {
     private frequencies: number[] | number[][] = [0];
@@ -65,8 +66,12 @@ class RemoteMicInput implements InputInterface {
 
 export class RemoteMic {
     private input: RemoteMicInput;
+    private pingTime: number = 9999;
+    private pingInterval: ReturnType<typeof setTimeout> | null = null;
     constructor(public id: string, public name: string, public connection: Peer.DataConnection) {
         this.input = new RemoteMicInput(connection);
+
+        this.pingClient();
     }
 
     public getInput = () => this.input;
@@ -74,4 +79,29 @@ export class RemoteMic {
     public setPlayerNumber = (playerNumber: number | null) => {
         this.connection?.send({ t: 'set-player-number', playerNumber } as WebRTCEvents);
     };
+
+    public onDisconnect = () => {
+        if (this.pingInterval !== null) {
+            clearInterval(this.pingInterval);
+        }
+    };
+
+    private latency: number = 9999;
+
+    public onPong = () => {
+        this.latency = getPingTime() - this.pingTime;
+
+        this.pingClient();
+    };
+
+    private pingClient = () => {
+        this.pingInterval = setTimeout(() => {
+            this.pingTime = getPingTime();
+            sendEvent(this.connection, 'ping');
+        }, 1000);
+    };
+
+    public getLatency = () => this.latency;
+
+    public getPingTime = () => this.pingTime;
 }

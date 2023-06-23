@@ -49,6 +49,8 @@ class WebRTCServer {
                     events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
                 } else if (type === 'ping') {
                     conn.send({ t: 'pong' } as WebRTCEvents);
+                } else if (type === 'pong') {
+                    RemoteMicManager.getRemoteMicById(conn.peer)?.onPong();
                 }
             });
 
