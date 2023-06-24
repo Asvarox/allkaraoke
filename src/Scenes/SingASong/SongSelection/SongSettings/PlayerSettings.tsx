@@ -6,7 +6,7 @@ import { PlayerSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useState } from 'react';
 import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import SelectInputModal from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SelectInputModal';
+import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
@@ -88,7 +88,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         <>
             {showModal && (
                 <SelectInputModal
-                    required={!areInputsConfigured}
+                    closeButtonText={areInputsConfigured ? 'Continue to the song' : 'Continue to player setup'}
                     onClose={() => {
                         setShowModal(false);
 

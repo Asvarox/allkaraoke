@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SelectPreference from 'Scenes/SelectInput/SelectPreference/SelectPreference';
 import RemoteMics from 'Scenes/SelectInput/Variants/RemoteMics';
 import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
@@ -10,6 +10,7 @@ import posthog from 'posthog-js';
 import startViewTransition from 'utils/startViewTransition';
 import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
 import { ValuesType } from 'utility-types';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 
 interface Props {
     onFinish?: (pref: ValuesType<typeof MicSetupPreference>) => void;
@@ -27,6 +28,14 @@ const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText }: Props) {
     const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference>>(null);
     const [isComplete, setIsComplete] = useState(false);
+
+    useEffect(() => {
+        const wasMonitoring = InputManager.monitoringStarted();
+        InputManager.startMonitoring();
+        return () => {
+            !wasMonitoring && InputManager.stopMonitoring();
+        };
+    }, []);
 
     const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
 

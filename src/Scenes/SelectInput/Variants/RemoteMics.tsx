@@ -22,12 +22,6 @@ interface Props {
 function RemoteMics(props: Props) {
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
-    useEffect(() => {
-        InputManager.startMonitoring();
-        return () => {
-            InputManager.stopMonitoring();
-        };
-    }, []);
     useRemoteMicAutoselect();
 
     const players = useEventListenerSelector(

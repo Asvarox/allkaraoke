@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 
 interface Props {
     onResume: () => void;
@@ -16,7 +17,9 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
         menuRef.current?.focus();
     }, [menuRef]);
 
-    const { register } = useKeyboardNav();
+    const [isInputModalOpen, setIsInputModalOpen] = useState(false);
+
+    const { register } = useKeyboardNav({ enabled: !isInputModalOpen });
 
     return (
         <Container>
@@ -30,7 +33,17 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
                 <MenuButton {...register('exit', onExit)} data-test="button-exit-song">
                     Exit song
                 </MenuButton>
+                <MenuButton {...register('input-settings', () => setIsInputModalOpen(true))} data-test="input-settings">
+                    Microphones settings
+                </MenuButton>
             </MenuContainer>
+            {isInputModalOpen && (
+                <SelectInputModal
+                    onClose={() => setIsInputModalOpen(false)}
+                    playerNames={[]}
+                    closeButtonText={'Back to Pause Menu'}
+                />
+            )}
         </Container>
     );
 }

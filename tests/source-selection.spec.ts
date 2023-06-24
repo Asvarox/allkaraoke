@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 import connectRemoteMic from './steps/connectRemoteMic';
+import { expectMonitoringToBeEnabled } from './steps/assertMonitoringStatus';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -44,6 +45,35 @@ test('Source selection in sing settings', async ({ page, context }) => {
     await expect(remoteMic.getByTestId('monitoring-state')).toContainText('off', {
         ignoreCase: true,
     });
+});
+
+test('Source selection in in-game menu', async ({ page, context }) => {
+    await page.goto('/?e2e-test');
+    await expect(page.getByTestId('advanced')).toBeVisible();
+    await page.getByTestId('advanced').click();
+    await page.getByTestId('save-button').click();
+
+    await page.getByTestId('sing-a-song').click();
+    await expect(page.getByTestId('lang-Polish')).toBeVisible();
+    await page.getByTestId('close-exclude-languages').click();
+    await page.getByTestId('song-e2e-multitrack-polish-1994.json').dblclick();
+    await page.getByTestId('next-step-button').click();
+    await page.getByTestId('play-song-button').click();
+
+    await expect(async () => {
+        const p1score = await page.getByTestId('players-score').getAttribute('data-score');
+
+        expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
+    }).toPass({ timeout: 15_000 });
+
+    await page.keyboard.press('Backspace');
+
+    // Make sure the input isn't monitored anymore if it's not in use
+    await page.getByTestId('input-settings').click();
+    await page.getByTestId('advanced').click();
+    await page.getByTestId('player-0-source').click();
+    await page.getByTestId('save-button').click();
+    await expectMonitoringToBeEnabled(page);
 });
 
 test('Source selection from remote mic', async ({ page, context }) => {

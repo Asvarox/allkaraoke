@@ -68,13 +68,6 @@ function Advanced(props: Props) {
         props.onSetupComplete(status === 'accepted');
     }, [status]);
 
-    useEffect(() => {
-        InputManager.startMonitoring();
-        return () => {
-            InputManager.stopMonitoring();
-        };
-    }, []);
-
     useRemoteMicAutoselect();
 
     const { register } = useKeyboardNav({ onBackspace: props.onBack });

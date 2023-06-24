@@ -1,23 +1,26 @@
 import { MenuContainer } from 'Elements/Menu';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import Modal from 'Elements/Modal';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
 
 interface Props {
     onClose: () => void;
-    playerNames: string[];
-    required: boolean;
+    playerNames?: string[];
+    closeButtonText: string;
 }
 
-export default function SelectInputModal({ onClose, playerNames, required }: Props) {
+export default function SelectInputModal({ onClose, playerNames, closeButtonText }: Props) {
+    const names = playerNames || GameState.getPlayers().map((player) => player.getName());
+
     return (
         <Modal onClose={onClose}>
             <MenuContainer>
                 <SelectInputView
                     onBack={onClose}
                     onFinish={onClose}
-                    closeButtonText={required ? 'Continue to the song' : 'Continue to player setup'}
+                    closeButtonText={closeButtonText}
                     skipText={'Back'}
-                    playerNames={playerNames}
+                    playerNames={names}
                 />
             </MenuContainer>
         </Modal>

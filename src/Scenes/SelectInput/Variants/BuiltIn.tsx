@@ -26,13 +26,6 @@ function BuiltIn(props: Props) {
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
     const [selectedMic, setSelectedMic] = useState('');
 
-    useEffect(() => {
-        InputManager.startMonitoring();
-        return () => {
-            InputManager.stopMonitoring();
-        };
-    }, []);
-
     const { Microphone } = useMicrophoneList(true);
 
     const setMic = (input: InputSource) => {
