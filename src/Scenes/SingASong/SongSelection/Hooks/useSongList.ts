@@ -95,7 +95,6 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
 const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {
     if (clearString(appliedFilters?.search ?? '').length) {
-        console.log(appliedFilters);
         return filteringFunctions.search(list, appliedFilters.search);
     }
     return Object.entries(appliedFilters)
@@ -113,6 +112,10 @@ export const useSongListFilter = (list: SongPreview[]) => {
 
     const [filters, setFilters] = useState<AppliedFilters>({ excludeLanguages: excludedLanguages ?? [] });
 
+    const prefilteredList = useMemo(
+        () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
+        [list, excludedLanguages],
+    );
     const filteredList = useMemo(
         () =>
             applyFilters(list, {
@@ -133,13 +136,13 @@ export const useSongListFilter = (list: SongPreview[]) => {
         },
     };
 
-    return { filters, filteredList, filtersData, setFilters };
+    return { filters, filteredList, filtersData, prefilteredList, setFilters };
 };
 
 export default function useSongList() {
     const songList = useSongIndex();
 
-    const { filters, filtersData, filteredList, setFilters } = useSongListFilter(songList.data);
+    const { filters, filtersData, filteredList, prefilteredList, setFilters } = useSongListFilter(songList.data);
 
     const groupedSongList = useMemo(() => {
         if (filteredList.length === 0) return [];
@@ -178,6 +181,7 @@ export default function useSongList() {
     }, [filteredList, filters.search]);
 
     return {
+        prefilteredList,
         groupedSongList,
         songList: filteredList,
         filtersData,

@@ -46,15 +46,15 @@ test('Filters - PlayLists', async ({ page }) => {
     await page.keyboard.press('ArrowRight');
     await page.keyboard.press('ArrowRight');
 
+    await page.keyboard.press('ArrowDown'); // Polish (first, as it has most songs)
+    await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
+
     await page.keyboard.press('ArrowDown'); // English
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
-
-    await page.keyboard.press('ArrowDown'); // Polish
-    await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
-    await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
-    await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Classics
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();

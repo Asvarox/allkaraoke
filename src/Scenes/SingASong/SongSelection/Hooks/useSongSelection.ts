@@ -5,7 +5,7 @@ import { randomInt } from 'utils/randomValue';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 
 export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
-    const { songList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
+    const { songList, prefilteredList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
     const navigate = useSmoothNavigate();
     const [keyboardControl, setKeyboardControl] = useState(true);
 
@@ -41,6 +41,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
     const songPreview = songList?.[focusedSong];
     return {
+        prefilteredList,
         groupedSongList,
         focusedSong,
         focusedGroup,

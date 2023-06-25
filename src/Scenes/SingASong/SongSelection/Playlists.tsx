@@ -6,34 +6,40 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useMemo } from 'react';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { addDays } from 'date-fns';
+import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
+import { SongPreview } from 'interfaces';
 
 interface PlaylistEntry {
     name: string;
     filters: AppliedFilters;
 }
 
-const usePlaylists = (): PlaylistEntry[] =>
-    useMemo(
-        () => [
-            { name: 'All', filters: {} },
-            { name: 'English', filters: { language: 'English' } },
-            { name: 'Polish', filters: { language: 'Polish' } },
-            { name: 'Classics', filters: { yearBefore: 1995 } },
-            { name: 'Modern', filters: { yearAfter: 1995 } },
-            { name: 'Duets', filters: { duet: true } },
-            { name: 'New', filters: { updatedAfter: addDays(new Date(), -31).toISOString() } },
-        ],
-        [],
+const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
+    const songLanguages = useLanguageList(songs);
+    return useMemo(
+        () =>
+            [
+                { name: 'All', filters: {} },
+                { name: songLanguages[0].name, filters: { language: songLanguages[0].name } } as PlaylistEntry,
+                songLanguages[1] ? { name: songLanguages[1].name, filters: { language: songLanguages[1].name } } : null,
+                { name: 'Classics', filters: { yearBefore: 1995 } },
+                { name: 'Modern', filters: { yearAfter: 1995 } },
+                { name: 'Duets', filters: { duet: true } },
+                { name: 'New', filters: { updatedAfter: addDays(new Date(), -31).toISOString() } },
+            ].filter((playlist): playlist is PlaylistEntry => playlist !== null),
+        [songLanguages],
     );
+};
 
 interface Props {
+    prefilteredList: SongPreview[];
     setFilters: (filters: AppliedFilters) => void;
     closePlaylist: (leavingKey: 'left' | 'right') => void;
     active: boolean;
 }
 
-export default function Playlists({ setFilters, active, closePlaylist }: Props) {
-    const playlists = usePlaylists();
+export default function Playlists({ setFilters, active, closePlaylist, prefilteredList }: Props) {
+    const playlists = usePlaylists(prefilteredList);
 
     const { register, focused, focusElement } = useKeyboardNav({
         enabled: active,

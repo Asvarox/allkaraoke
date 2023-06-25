@@ -30,7 +30,10 @@ export const useLanguageList = (list: SongPreview[]) => {
             });
         });
 
-        return Object.values(langs);
+        const languages = Object.values(langs);
+        languages.sort((a, b) => b.count - a.count);
+
+        return languages;
     }, [list]);
 };
 
@@ -48,10 +51,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
     const { data } = useSongIndex();
     const availableLanguages = useLanguageList(data);
     const languageList = useMemo(
-        () =>
-            availableLanguages
-                .filter(({ name, count }) => languageNameToIsoCode(name) && count >= MIN_SONGS_COUNT)
-                .sort((a, b) => b.count - a.count),
+        () => availableLanguages.filter(({ name, count }) => languageNameToIsoCode(name) && count >= MIN_SONGS_COUNT),
         [availableLanguages],
     );
     const otherSongCount = useMemo(

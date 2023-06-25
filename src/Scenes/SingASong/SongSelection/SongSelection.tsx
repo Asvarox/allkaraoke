@@ -33,8 +33,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
 
+    useBackgroundMusic(false);
     useBackground(true);
     useBlockScroll();
+
     const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
         previewTop: 0,
         previewLeft: 0,
@@ -51,12 +53,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         setKeyboardControl,
         setFilters,
         filters,
-        filtersData,
         setShowFilters,
         showFilters,
+        prefilteredList,
         isLoading,
     } = useSongSelection(preselectedSong, songsPerRow);
-    useBackgroundMusic(false);
 
     const onSearchSong: KeyHandler = (e) => {
         e.stopPropagation();
@@ -154,7 +155,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                     </SongsGroupContainer>
                 ))}
             </SongListContainer>
-            <Playlists setFilters={setFilters} active={showFilters} closePlaylist={setShowFilters} />
+            <Playlists
+                setFilters={setFilters}
+                active={showFilters}
+                closePlaylist={setShowFilters}
+                prefilteredList={prefilteredList}
+            />
         </Container>
     );
 }
