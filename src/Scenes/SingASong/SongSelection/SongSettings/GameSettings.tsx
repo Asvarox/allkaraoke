@@ -63,17 +63,15 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
     return (
         <>
             <GSSwitcher
-                {...register('difficulty', changeTolerance, 'Change difficulty')}
+                {...register('difficulty-setting', changeTolerance, 'Change difficulty')}
                 label="Difficulty"
                 value={difficultyNames[tolerance]}
-                data-test="difficulty-setting"
                 data-test-value={difficultyNames[tolerance]}
             />
             <GSSwitcher
-                {...register('mode', changeMode, 'Change mode')}
+                {...register('game-mode-setting', changeMode, 'Change mode')}
                 label="Mode"
                 value={gameModeNames[mode]}
-                data-test="game-mode-setting"
                 data-test-value={gameModeNames[mode]}
             />
             <ModeDescription>
@@ -87,9 +85,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                     </>
                 )}
             </ModeDescription>
-            <PlayButton {...register('play', startSong, undefined, true)} data-test="next-step-button">
-                Next ➤
-            </PlayButton>
+            <PlayButton {...register('next-step-button', startSong, undefined, true)}>Next ➤</PlayButton>
         </>
     );
 }

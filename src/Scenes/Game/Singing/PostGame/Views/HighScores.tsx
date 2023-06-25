@@ -47,9 +47,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
                     </ScoreContainer>
                 ))}
             </ScoresContainer>
-            <SongSelectionButton
-                {...register('play-next', onNextStep, undefined, true)}
-                data-test="play-next-song-button">
+            <SongSelectionButton {...register('play-next-song-button', onNextStep, undefined, true)}>
                 Select song
             </SongSelectionButton>
         </>

@@ -22,26 +22,20 @@ function ManageSongs(props: Props) {
         <MenuWithLogo>
             <h1>Manage Songs</h1>
             <Link href="/exclude-languages" onClick={handleClick('/exclude-languages')}>
-                <MenuButton
-                    data-test="exclude-languages"
-                    {...register('exclude-languages', () => navigate('/exclude-languages'))}>
+                <MenuButton {...register('exclude-languages', () => navigate('/exclude-languages'))}>
                     Select Song Languages
                 </MenuButton>
             </Link>
             <Link href="/edit" onClick={handleClick('/edit')}>
-                <MenuButton data-test="edit-songs" {...register('edit songs', () => navigate('/edit'))}>
-                    Edit songs
-                </MenuButton>
+                <MenuButton {...register('edit-songs', () => navigate('/edit'))}>Edit songs</MenuButton>
             </Link>
             <Link href="/convert" onClick={handleClick('/convert')}>
-                <MenuButton data-test="convert-song" {...register('convert', () => navigate('/convert'))}>
+                <MenuButton {...register('convert-song', () => navigate('/convert'))}>
                     Convert UltraStar .txt
                 </MenuButton>
             </Link>
             <hr />
-            <MenuButton {...register('go back', goBack)} data-test="back-button">
-                Return To Main Menu
-            </MenuButton>
+            <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>
         </MenuWithLogo>
     );
 }

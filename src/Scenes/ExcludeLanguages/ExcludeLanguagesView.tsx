@@ -102,8 +102,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                         <LanguageEntry
                             key={name}
                             excluded={excluded}
-                            {...register(`lang-${name}`, () => toggleLanguage(name))}
-                            data-test={`lang-${name}`}>
+                            {...register(`lang-${name}`, () => toggleLanguage(name))}>
                             <Check>{excluded ? <CheckBoxOutlineBlank /> : <CheckBox />}</Check>
                             <span>
                                 <LanguageName>{name}</LanguageName> ({count} songs)
@@ -128,8 +127,9 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
             </h3>
             <NextButtonContainer>
                 <MenuButton
-                    {...register('go back', onClose, undefined, true, { disabled: areAllLanguagesExcluded })}
-                    data-test="close-exclude-languages">
+                    {...register('close-exclude-languages', onClose, undefined, true, {
+                        disabled: areAllLanguagesExcluded,
+                    })}>
                     {closeText}
                 </MenuButton>
                 <Disclaimer>

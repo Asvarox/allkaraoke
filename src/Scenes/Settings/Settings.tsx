@@ -54,55 +54,44 @@ function Settings(props: Props) {
         <MenuWithLogo>
             <h1>Settings</h1>
             <Switcher
-                {...register('graphics', () => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel)))}
+                {...register('graphics-level', () => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel)))}
                 label="Graphics"
                 value={graphicLevel.toUpperCase()}
-                data-test="graphics-level"
             />
             <Switcher
-                {...register('fpsCount', () => setFpsCount(nextValue(FpsCount, fpsCount)))}
+                {...register('fps-count-level', () => setFpsCount(nextValue(FpsCount, fpsCount)))}
                 label="FPS Count"
                 value={fpsCount}
-                data-test="fps-count-level"
             />
             <Switcher
-                {...register('backgroundMusic', () => setBackgroundMusic(nextValue(BackgroundMusic, backgroundMusic)))}
+                {...register('background-music-selection', () =>
+                    setBackgroundMusic(nextValue(BackgroundMusic, backgroundMusic)),
+                )}
                 label="Background Music"
                 value={backgroundMusic}
-                data-test="background-music-selection"
             />
             <hr />
             <Switcher
-                {...register('camera', () => (camera ? CameraManager.disable() : enableCamera()))}
+                {...register('camera-access', () => (camera ? CameraManager.disable() : enableCamera()))}
                 label="Enable camera mode"
                 value={cameraValue}
-                data-test="camera-access"
                 info="Record a timelapse video from singing. The recording is not sent nor stored anywhere."
             />
             <hr />
             <Switcher
-                {...register('mobilePhoneMode', () => setMobilePhoneMode(!mobilePhoneMode))}
+                {...register('mobile-phone-mode', () => setMobilePhoneMode(!mobilePhoneMode))}
                 label="Mobile Phone Mode"
                 value={mobilePhoneMode ? 'Yes' : 'No'}
-                data-test="mobile-phone-mode"
                 info="Adjust the game to a smaller screen. Disables option to sing in duets."
             />
             <hr />
-            <MenuButton
-                {...register('setup mics', () => navigate('/manage-songs'))}
-                data-test="setup-mics-button"
-                size="small">
+            <MenuButton {...register('setup-mics-button', () => navigate('/manage-songs'))} size="small">
                 Setup Microphones
             </MenuButton>
-            <MenuButton
-                {...register('manage songs', () => navigate('/manage-songs'))}
-                data-test="manage-songs-button"
-                size="small">
+            <MenuButton {...register('manage-songs-button', () => navigate('/manage-songs'))} size="small">
                 Manage Songs
             </MenuButton>
-            <MenuButton {...register('go back', goBack)} data-test="back-button">
-                Return To Main Menu
-            </MenuButton>
+            <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>
         </MenuWithLogo>
     );
 }

@@ -128,13 +128,9 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                 </div>
             </PlayerSettingContainer>
             {areInputsConfigured && (
-                <PlayButton {...register('play', startSong, undefined, true)} data-test="play-song-button">
-                    Play
-                </PlayButton>
+                <PlayButton {...register('play-song-button', startSong, undefined, true)}>Play</PlayButton>
             )}
-            <PlayButton
-                {...register('mic-setup', () => setShowModal(true), undefined, false)}
-                data-test="select-inputs-button">
+            <PlayButton {...register('select-inputs-button', () => setShowModal(true), undefined, false)}>
                 Setup mics
             </PlayButton>
         </>

@@ -38,7 +38,7 @@ const PlayerSelector = (props: {
     return (
         <>
             <SwitcherWithPlayerHeader
-                {...props.register(`player ${props.number} source`, cycleSource)}
+                {...props.register(`player-${props.number}-source`, cycleSource)}
                 label={
                     props.name ? (
                         <span className="ph-no-capture">{props.name} Source</span>
@@ -47,13 +47,11 @@ const PlayerSelector = (props: {
                     )
                 }
                 value={source}
-                data-test={`player-${props.number}-source`}
             />
             <SwitcherWithMicCheck
-                {...props.register(`player ${props.number} input`, cycleInput)}
+                {...props.register(`player-${props.number}-input`, cycleInput)}
                 label="Input"
-                value={input?.label}
-                data-test={`player-${props.number}-input`}>
+                value={input?.label}>
                 <MicCheck playerNumber={props.number} />
             </SwitcherWithMicCheck>
         </>
@@ -98,12 +96,8 @@ function Advanced(props: Props) {
                     </h3>
                 )}
             </UserMediaEnabled>
-            <MenuButton {...register('back', props.onBack)} data-test="back-button">
-                Back to Input Selection
-            </MenuButton>
-            <MenuButton {...register('on save', props.onSave)} data-test="save-button">
-                {props.closeButtonText}
-            </MenuButton>
+            <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
+            <MenuButton {...register('save-button', props.onSave)}>{props.closeButtonText}</MenuButton>
         </>
     );
 }

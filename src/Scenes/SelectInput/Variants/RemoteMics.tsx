@@ -54,12 +54,8 @@ function RemoteMics(props: Props) {
 
             <h4>You will be able to connect phones later.</h4>
             <MicCheck names={[players[0]?.label ?? '...', players[1]?.label ?? '...']} />
-            <MenuButton {...register('back', props.onBack)} data-test="back-button">
-                Back to Input Selection
-            </MenuButton>
-            <MenuButton {...register('Sing a song', onContinue, undefined, true)} data-test="save-button">
-                {props.closeButtonText}
-            </MenuButton>
+            <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
+            <MenuButton {...register('save-button', onContinue, undefined, true)}>{props.closeButtonText}</MenuButton>
         </>
     );
 }

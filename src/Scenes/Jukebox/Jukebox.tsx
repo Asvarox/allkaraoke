@@ -55,13 +55,9 @@ function Jukebox(props: Props) {
                     }}
                 />
             }>
-            <SkipSongButton {...register('skip', playNext)} data-test="skip-button">
-                Skip
-            </SkipSongButton>
+            <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
             <Link to={navigateUrl}>
-                <PlayThisSongButton
-                    {...register('sing a song', () => navigate(navigateUrl), undefined, true)}
-                    data-test="sing-button">
+                <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
                     Sing this song
                 </PlayThisSongButton>
             </Link>

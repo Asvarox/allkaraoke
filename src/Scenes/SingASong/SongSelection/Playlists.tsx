@@ -52,7 +52,7 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
 
     useEffect(() => {
         if (focused) {
-            const playlist = playlists.find((list) => list.name === focused);
+            const playlist = playlists.find((list) => `playlist-${list.name}` === focused);
             playlist && setFilters(playlist.filters);
         }
     }, [focused, playlists]);
@@ -69,9 +69,8 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
         <Container data-test="song-list-playlists">
             {playlists.map((playlist) => (
                 <Playlist
-                    data-test={`playlist-${playlist.name}`}
                     key={playlist.name}
-                    {...register(playlist.name, () => focusElement(playlist.name))}
+                    {...register(`playlist-${playlist.name}`, () => focusElement(playlist.name))}
                     {...(!active ? { focused: false, active: playlist.name === focused } : {})}>
                     {playlist.name}
                 </Playlist>

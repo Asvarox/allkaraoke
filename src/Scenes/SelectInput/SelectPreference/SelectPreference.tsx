@@ -23,12 +23,11 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         <>
             <Option
                 {...register(
-                    'remoteMics',
+                    'remote-mics',
                     () => onPreferenceSelected('remoteMics'),
                     undefined,
                     previouslySelected === 'remoteMics',
-                )}
-                data-test="remote-mics">
+                )}>
                 <OptionIconContainer>
                     <PhoneAndroid />
                     <PhoneIphone />
@@ -55,8 +54,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                     () => onPreferenceSelected('built-in'),
                     undefined,
                     previouslySelected === 'built-in',
-                )}
-                data-test="built-in">
+                )}>
                 <OptionIconContainer>
                     <Person />
                     {mobilePhoneMode ? <PhoneIphone /> : <Laptop />}
@@ -72,8 +70,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             <hr />
             {!mobilePhoneMode && (
                 <Option
-                    {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}
-                    data-test="mics">
+                    {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}>
                     <OptionIconContainer>
                         <MicIconBlue />
                         <MicIconRed />
@@ -93,8 +90,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
                     () => onPreferenceSelected('advanced'),
                     undefined,
                     previouslySelected === 'advanced',
-                )}
-                data-test="advanced">
+                )}>
                 <OptionIconContainer>
                     <MicIconBlue />
                     <PhoneIphone />
@@ -109,8 +105,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             </Option>
             <hr />
             <MenuButton
-                {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}
-                data-test="skip">
+                {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
                 {skipText || 'Skip'}
             </MenuButton>
         </>

@@ -24,16 +24,12 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     return (
         <Container>
             <MenuContainer>
-                <MenuButton {...register('resume', onResume)} ref={menuRef} data-test="button-resume-song">
+                <MenuButton {...register('button-resume-song', onResume)} ref={menuRef}>
                     Resume song
                 </MenuButton>
-                <MenuButton {...register('restart', onRestart)} data-test="button-restart-song">
-                    Restart song
-                </MenuButton>
-                <MenuButton {...register('exit', onExit)} data-test="button-exit-song">
-                    Exit song
-                </MenuButton>
-                <MenuButton {...register('input-settings', () => setIsInputModalOpen(true))} data-test="input-settings">
+                <MenuButton {...register('button-restart-song', onRestart)}>Restart song</MenuButton>
+                <MenuButton {...register('button-exit-song', onExit)}>Exit song</MenuButton>
+                <MenuButton {...register('input-settings', () => setIsInputModalOpen(true))}>
                     Microphones settings
                 </MenuButton>
             </MenuContainer>

@@ -45,16 +45,14 @@ export default function SinglePlayer({
                 onChange={onNameChange}
                 label="Name:"
                 ref={p1NameRef}
-                {...register(`p${index} name`, () => p1NameRef.current?.focus())}
+                {...register(`player-${index}-name`, () => p1NameRef.current?.focus())}
                 placeholder={defaultName}
-                data-test={`player-${index}-name`}
             />
             {!mobilePhoneMode && songPreview.tracksCount > 1 && (
                 <Track
-                    {...register(`p${index} track`, togglePlayerTrack, 'Change track')}
+                    {...register(`player-${index}-track-setting`, togglePlayerTrack, 'Change track')}
                     label="Track"
                     value={getTrackName(songPreview.tracks, setup.track)}
-                    data-test={`player-${index}-track-setting`}
                     data-test-value={setup.track + 1}
                 />
             )}

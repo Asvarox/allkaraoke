@@ -72,12 +72,7 @@ function BuiltIn(props: Props) {
                             <h3>You'll sing using</h3>
                             <h4>(click to change)</h4>
                         </Header>
-                        <Switcher
-                            {...register('microphone', cycleMic)}
-                            label="Mic"
-                            value={selectedMic}
-                            data-test="selected-mic"
-                        />
+                        <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic} />
                         <h4>
                             Built-in microphones can pick up music from the game. For more accurate scores, try using
                             your{' '}
@@ -90,13 +85,10 @@ function BuiltIn(props: Props) {
                 )}
                 <MicCheck names={['These light up when', 'singing is detected']} />
             </UserMediaEnabled>
-            <MenuButton {...register('back', props.onBack)} data-test="back-button">
-                Back to Input Selection
-            </MenuButton>
+            <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
             <MenuButton
-                {...register('Sing a song', props.onSave, undefined, true, { disabled: !selectedMic })}
-                disabled={!selectedMic}
-                data-test="save-button">
+                {...register('save-button', props.onSave, undefined, true, { disabled: !selectedMic })}
+                disabled={!selectedMic}>
                 {props.closeButtonText}
             </MenuButton>
         </>

@@ -47,29 +47,21 @@ function Welcome() {
             <FacebookLink />
             <>
                 <Link href="/game/" onClick={handleClick('/game/')}>
-                    <MenuButton data-test="sing-a-song" {...register('sing a song', () => navigate('/game/'))}>
-                        Sing a song
-                    </MenuButton>
+                    <MenuButton {...register('sing-a-song', () => navigate('/game/'))}>Sing a song</MenuButton>
                 </Link>
                 <Link href="/select-input" onClick={handleClick('/select-input')}>
-                    <MenuButton data-test="select-input" {...register('select input', () => navigate('/select-input'))}>
+                    <MenuButton {...register('select-input', () => navigate('/select-input'))}>
                         Setup Microphones
                     </MenuButton>
                 </Link>
                 <Link href="/settings" onClick={handleClick('/settings')}>
-                    <MenuButton data-test="settings" {...register('settings', () => navigate('/settings'))}>
-                        Settings
-                    </MenuButton>
+                    <MenuButton {...register('settings', () => navigate('/settings'))}>Settings</MenuButton>
                 </Link>
                 <Link href="/jukebox" onClick={handleClick('/jukebox')}>
-                    <MenuButton data-test="jukebox" {...register('jukebox', () => navigate('/jukebox'))}>
-                        Jukebox
-                    </MenuButton>
+                    <MenuButton {...register('jukebox', () => navigate('/jukebox'))}>Jukebox</MenuButton>
                 </Link>
                 <Link href="/manage-songs" onClick={handleClick('/manage-songs')}>
-                    <MenuButton data-test="manage-songs" {...register('manage songs', () => navigate('/manage-songs'))}>
-                        Manage Songs
-                    </MenuButton>
+                    <MenuButton {...register('manage-songs', () => navigate('/manage-songs'))}>Manage Songs</MenuButton>
                 </Link>
             </>
         </MenuWithLogo>
