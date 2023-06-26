@@ -2,7 +2,6 @@ import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
 import { useEffect } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
@@ -10,6 +9,7 @@ import MicCheck from 'Scenes/SelectInput/MicCheck';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -31,8 +31,8 @@ function RemoteMics(props: Props) {
         // e.g. remove remoteMicConnected event?
         [events.inputListChanged, events.playerInputChanged],
         () => {
-            return InputManager.getInputs()
-                .map((input) => (input.inputSource === 'Remote Microphone' ? input : null))
+            return PlayersManager.getInputs()
+                .map((input) => (input.source === 'Remote Microphone' ? input : null))
                 .map((input) => (input ? InputSources.getInputForPlayerSelected(input) : null));
         },
     );

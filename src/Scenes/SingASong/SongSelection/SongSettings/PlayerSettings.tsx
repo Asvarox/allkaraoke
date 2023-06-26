@@ -12,6 +12,7 @@ import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } fr
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import events from 'GameEvents/GameEvents';
 import { typography } from 'Elements/cssMixins';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     songPreview: SongPreview;
@@ -25,9 +26,9 @@ function useDefaultPlayerName(index: number): string {
     return useEventListenerSelector(events.playerInputChanged, () => {
         let defaultName = '';
 
-        const source = InputManager.getPlayerInput(index);
+        const source = PlayersManager.getPlayer(index).input;
 
-        if (source?.inputSource === 'Remote Microphone') {
+        if (source?.source === 'Remote Microphone') {
             defaultName = RemoteMicManager.getRemoteMicById(source.deviceId!)?.name || defaultName;
         }
         if (!defaultName) {

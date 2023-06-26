@@ -1,15 +1,15 @@
-import { useEffect } from "react";
-import GameState from "Scenes/Game/Singing/GameState/GameState";
-import { GAME_MODE } from "interfaces";
-import InputManager from "Scenes/Game/Singing/Input/InputManager";
-import CanvasDrawing from "Scenes/Game/Singing/GameOverlay/Drawing/CanvasDrawing";
-import DrawingTestInput from "Scenes/Game/Singing/Input/DrawingTestInput";
-import { mulitrack } from "Songs/utils/song-fixture";
-import drawPlayerNote from "Scenes/Game/Singing/GameOverlay/Drawing/Elements/playerNote";
-import roundRect from "Scenes/Game/Singing/GameOverlay/Drawing/Elements/roundRect";
-import { drawSprite, getSprite } from "Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites";
-import pitchToFrequency from "utils/pitchToFrequency";
-import beatToMs from "Scenes/Game/Singing/GameState/Helpers/beatToMs";
+import { useEffect } from 'react';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
+import { GAME_MODE } from 'interfaces';
+import CanvasDrawing from 'Scenes/Game/Singing/GameOverlay/Drawing/CanvasDrawing';
+import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
+import { mulitrack } from 'Songs/utils/song-fixture';
+import drawPlayerNote from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/playerNote';
+import roundRect from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/roundRect';
+import { drawSprite, getSprite } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites';
+import pitchToFrequency from 'utils/pitchToFrequency';
+import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
+import PlayersManager from 'PlayersManager';
 
 // Add needed stuff here
 const CanvasTestApi = {
@@ -32,7 +32,7 @@ window.CanvasTestApi = CanvasTestApi;
 
 declare global {
     interface Window {
-        CanvasTestApi: typeof CanvasTestApi,
+        CanvasTestApi: typeof CanvasTestApi;
     }
 }
 
@@ -53,9 +53,9 @@ export const TestCanvas = (props: Props) => {
             tolerance: 2,
         });
 
-        InputManager.setPlayerInput(0, 'DrawingTest', 0);
-        InputManager.setPlayerInput(1, 'DrawingTest', 1);
+        PlayersManager.getPlayer(0).changeInput('DrawingTest', 0);
+        PlayersManager.getPlayer(1).changeInput('DrawingTest', 1);
     }, []);
 
-    return <canvas width={props.width} height={props.height} id={'canvas'} />
-}
+    return <canvas width={props.width} height={props.height} id={'canvas'} />;
+};

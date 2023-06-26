@@ -1,7 +1,6 @@
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
 import { useEffect, useState } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
@@ -13,6 +12,7 @@ import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import styled from '@emotion/styled';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -30,7 +30,11 @@ function BuiltIn(props: Props) {
 
     const setMic = (input: InputSource) => {
         [0, 1].forEach((playerNumber) =>
-            InputManager.setPlayerInput(playerNumber, MicrophoneInputSource.inputName, input.channel, input.deviceId),
+            PlayersManager.getPlayer(playerNumber).changeInput(
+                MicrophoneInputSource.inputName,
+                input.channel,
+                input.deviceId,
+            ),
         );
         setSelectedMic(input.label);
     };

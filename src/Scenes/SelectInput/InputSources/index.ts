@@ -52,7 +52,7 @@ class InputSourceListManager {
     public getInputList = () => this.inputList;
 
     public getInputForPlayerSelected = (input: SelectedPlayerInput, returnDefault = true) => {
-        const source = this.inputList[input.inputSource];
+        const source = this.inputList[input.source];
         return (
             source.list.find((item) => item.id === selectedPlayerInputToId(input)) ??
             (returnDefault ? source.getDefault() : null)

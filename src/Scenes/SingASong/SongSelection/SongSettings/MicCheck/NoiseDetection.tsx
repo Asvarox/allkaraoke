@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import usePlayerMic from 'hooks/players/usePlayerMic';
 import { Warning } from '@mui/icons-material';
+import PlayersManager from 'PlayersManager';
 
 export default function NoiseDetection() {
-    const inputs = useEventListenerSelector(events.playerInputChanged, () => InputManager.getInputs());
-    const isBuiltIn = inputs.some((input) => input.inputSource === 'Microphone');
+    const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());
+    const isBuiltIn = inputs.some((input) => input.source === 'Microphone');
 
     const measures = useRef<Array<[number, number]>>([]);
     const handleMeasure = useCallback((data: [number, number]) => {

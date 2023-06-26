@@ -7,14 +7,15 @@ import { useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
 import Ping from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
+import PlayersManager from 'PlayersManager';
 
 export default function MicCheck() {
     useEffect(() => {
         InputManager.startMonitoring();
     }, []);
 
-    const inputs = useEventListenerSelector(events.playerInputChanged, () => InputManager.getInputs());
-    const isSetup = inputs.some((input) => input.inputSource !== 'Dummy');
+    const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());
+    const isSetup = inputs.some((input) => input.source !== 'Dummy');
 
     return (
         <Container>

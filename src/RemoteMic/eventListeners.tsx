@@ -3,28 +3,29 @@ import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import events from 'GameEvents/GameEvents';
 import { toast } from 'react-toastify';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import PlayersManager from 'PlayersManager';
 
 events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
-    if (oldInput?.inputSource === RemoteMicrophoneInputSource.inputName) {
-        const playerNumber = InputManager.getInputs().findIndex(
-            (input) => input.inputSource === 'Remote Microphone' && input.deviceId === oldInput.deviceId,
-        );
+    if (oldInput?.source === RemoteMicrophoneInputSource.inputName) {
+        const playerNumber = PlayersManager.getPlayers().find(
+            (player) => player.input.source === 'Remote Microphone' && player.input.deviceId === oldInput.deviceId,
+        )?.number;
         const unselectedRemoteMic = RemoteMicManager.getRemoteMicById(oldInput.deviceId!);
 
-        unselectedRemoteMic?.setPlayerNumber(playerNumber >= 0 ? playerNumber : null);
+        unselectedRemoteMic?.setPlayerNumber(playerNumber !== undefined ? playerNumber : null);
     }
-    if (newInput?.inputSource === 'Remote Microphone') {
+    if (newInput?.source === 'Remote Microphone') {
         const selectedRemoteMic = RemoteMicManager.getRemoteMicById(newInput.deviceId!);
 
         selectedRemoteMic?.setPlayerNumber(playerNumber);
     }
 });
 events.remoteMicConnected.subscribe(({ id }) => {
-    const playerNumberIndex = InputManager.getRawInputs().findIndex(
-        (input) => input.inputSource === 'Remote Microphone' && input.deviceId === id,
-    );
+    const playerNumberIndex = PlayersManager.getPlayers().find(
+        (player) => player.input.source === 'Remote Microphone' && player.input.deviceId === id,
+    )?.number;
 
-    if (playerNumberIndex > -1) {
+    if (playerNumberIndex !== undefined) {
         const remoteMic = RemoteMicManager.getRemoteMicById(id);
 
         remoteMic?.setPlayerNumber(playerNumberIndex);
@@ -36,13 +37,13 @@ events.remoteMicConnected.subscribe(({ id }) => {
 });
 
 events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
-    const currentPlayerNumber = InputManager.getRawInputs().findIndex((input) => input.deviceId === phoneId);
+    const currentPlayerNumber = PlayersManager.getPlayers().find((player) => player.input.deviceId === phoneId)?.number;
 
-    if (currentPlayerNumber > -1) {
-        InputManager.setPlayerInput(currentPlayerNumber, 'Dummy', 0);
+    if (currentPlayerNumber !== undefined) {
+        PlayersManager.getPlayer(currentPlayerNumber).changeInput('Dummy', 0);
     }
     if (newPlayerNumber !== null) {
-        InputManager.setPlayerInput(newPlayerNumber, 'Remote Microphone', 0, phoneId);
+        PlayersManager.getPlayer(newPlayerNumber).changeInput('Remote Microphone', 0, phoneId);
     }
 });
 

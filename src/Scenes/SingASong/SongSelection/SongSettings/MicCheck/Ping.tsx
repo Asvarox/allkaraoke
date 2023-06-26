@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import styled from '@emotion/styled';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     playerNumber: number;
@@ -12,7 +12,7 @@ function Ping({ playerNumber }: Props) {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const deviceId = InputManager.getPlayerInput(playerNumber)?.deviceId ?? '';
+            const deviceId = PlayersManager.getPlayer(playerNumber).input?.deviceId ?? '';
             const remoteMic = RemoteMicManager.getRemoteMicById(deviceId);
 
             setLatency(remoteMic ? remoteMic.getLatency() : null);

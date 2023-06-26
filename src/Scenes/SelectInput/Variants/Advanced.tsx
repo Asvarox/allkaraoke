@@ -9,7 +9,6 @@ import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAut
 import { useEffect } from 'react';
 import { PlayerMicCheck } from 'Elements/VolumeIndicator';
 import styled from '@emotion/styled';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { useMicrophoneStatus } from 'UserMedia/hooks';
 import isWindows from 'utils/isWindows';
@@ -18,6 +17,7 @@ import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -71,12 +71,12 @@ function Advanced(props: Props) {
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
     const [p1, p2] = useEventListenerSelector(events.playerInputChanged, () => [
-        InputManager.getPlayerInput(0),
-        InputManager.getPlayerInput(1),
+        PlayersManager.getPlayer(0).input,
+        PlayersManager.getPlayer(1).input,
     ]);
 
     const isBothMicrophones =
-        p1?.inputSource === MicrophoneInputSource.inputName && p2?.inputSource === MicrophoneInputSource.inputName;
+        p1?.source === MicrophoneInputSource.inputName && p2?.source === MicrophoneInputSource.inputName;
 
     return (
         <>

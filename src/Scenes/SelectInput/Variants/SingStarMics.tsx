@@ -14,6 +14,7 @@ import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
 import { CircularProgress } from '@mui/material';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -29,10 +30,10 @@ function SingStarMics(props: Props) {
     const [showAdvancedTip, setShowAdvancedTip] = useState(false);
 
     const isSetup = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {
-        const inputs = InputManager.getInputs();
+        const inputs = PlayersManager.getInputs();
 
         const isSameDeviceId = [...new Set(inputs.map((input) => input.deviceId))].length === 1;
-        const isMicInput = !inputs.find((input) => input.inputSource !== 'Microphone');
+        const isMicInput = !inputs.find((input) => input.source !== 'Microphone');
         const areAllPreferred = !inputs.find(
             (input) => InputSources.getInputForPlayerSelected(input)!.preferred === undefined,
         );
@@ -59,8 +60,7 @@ function SingStarMics(props: Props) {
         const preferred = Microphone.list.filter((input) => input.preferred !== undefined);
         if (preferred.length === 2 && preferred[0].deviceId === preferred[1].deviceId) {
             preferred.forEach((input) => {
-                InputManager.setPlayerInput(
-                    input.preferred!,
+                PlayersManager.getPlayer(input.preferred!).changeInput(
                     MicrophoneInputSource.inputName,
                     input.channel,
                     input.deviceId,

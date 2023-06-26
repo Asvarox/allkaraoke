@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { typography } from 'Elements/cssMixins';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
@@ -11,6 +10,7 @@ import { waitFinished } from 'SoundManager';
 import sleep from 'utils/sleep';
 import events from 'GameEvents/GameEvents';
 import CountUp from 'react-countup';
+import PlayersManager from 'PlayersManager';
 
 interface Props {
     onFinish: () => void;
@@ -28,7 +28,7 @@ function WaitForReadiness({ onFinish }: Props) {
     });
 
     const players = useEventListenerSelector([events.inputListChanged, events.readinessConfirmed], () => {
-        return InputManager.getInputs().map((input, index) => [
+        return PlayersManager.getInputs().map((input, index) => [
             input.deviceId!,
             GameState.getPlayers()[index]?.getName() ?? undefined,
         ]);
@@ -38,7 +38,7 @@ function WaitForReadiness({ onFinish }: Props) {
         (async () => {
             // can't use `areAllPlayersReady` as it would need to be specified as useEffect dependency
             let allInputsReady = false;
-            const inputsReady = InputManager.requestReadiness().then(() => {
+            const inputsReady = PlayersManager.requestReadiness().then(() => {
                 allInputsReady = true;
                 setAreAllPlayersReady(true);
             });
