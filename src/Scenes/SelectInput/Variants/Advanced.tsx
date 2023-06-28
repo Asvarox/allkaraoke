@@ -17,42 +17,35 @@ import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
-import PlayersManager from 'PlayersManager';
+import PlayersManager, { PlayerEntity } from 'Scenes/PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
     onBack: () => void;
     onSave: () => void;
     closeButtonText: string;
-    playerNames?: string[];
     changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
 }
 
 const PlayerSelector = (props: {
-    number: number;
-    name?: string;
+    player: PlayerEntity;
     inputs: ReturnType<typeof useMicrophoneList>;
     register: ReturnType<typeof useKeyboardNav>['register'];
 }) => {
-    const [source, cycleSource, input, cycleInput] = usePlayerInput(props.number, props.inputs);
+    const player = props.player;
+    const [source, cycleSource, input, cycleInput] = usePlayerInput(player.number, props.inputs);
     return (
         <>
             <SwitcherWithPlayerHeader
-                {...props.register(`player-${props.number}-source`, cycleSource)}
-                label={
-                    props.name ? (
-                        <span className="ph-no-capture">{props.name} Source</span>
-                    ) : (
-                        `Player ${props.number + 1} Source`
-                    )
-                }
+                {...props.register(`player-${player.number}-source`, cycleSource)}
+                label={<span className="ph-no-capture">{player.getName()} Source</span>}
                 value={source}
             />
             <SwitcherWithMicCheck
-                {...props.register(`player-${props.number}-input`, cycleInput)}
+                {...props.register(`player-${player.number}-input`, cycleInput)}
                 label="Input"
                 value={input?.label}>
-                <MicCheck playerNumber={props.number} />
+                <MicCheck playerNumber={player.number} />
             </SwitcherWithMicCheck>
         </>
     );
@@ -78,12 +71,15 @@ function Advanced(props: Props) {
     const isBothMicrophones =
         p1?.source === MicrophoneInputSource.inputName && p2?.source === MicrophoneInputSource.inputName;
 
+    const players = PlayersManager.getPlayers();
+
     return (
         <>
             <UserMediaEnabled fallback={<h2>Please allow access to the microphone so we can show them.</h2>}>
                 <ConnectRemoteMic />
-                <PlayerSelector inputs={inputs} number={0} register={register} name={props.playerNames?.[0]} />
-                <PlayerSelector inputs={inputs} number={1} register={register} name={props.playerNames?.[1]} />
+                {players.map((player) => (
+                    <PlayerSelector inputs={inputs} player={player} key={player.number} register={register} />
+                ))}
                 <hr />
                 {isBothMicrophones && p1?.deviceId !== p2?.deviceId && (
                     <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>

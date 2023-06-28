@@ -37,8 +37,8 @@ const Template: StoryFn<StoryArgs> = (args) => {
     const singSetup: SingSetup = {
         tolerance: 2,
         players: [
-            { name: 'Player #1', track: 0 },
-            { name: 'Player #2', track: 0 },
+            { number: 0, track: 0 },
+            { number: 1, track: 0 },
         ],
         id: 'storybook-id',
         mode: args.gameMode,
@@ -58,6 +58,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
     const players = [
         {
             name: 'Player #1',
+            playerNumber: 0,
             detailedScore: tuple([
                 {
                     freestyle: (args.player1Score / 100) * maxPoints.freestyle * pointsPerBeat,
@@ -72,6 +73,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
         },
         {
             name: 'Player #2',
+            playerNumber: 1,
             detailedScore: tuple([
                 {
                     freestyle: (args.player2Score / 100) * maxPoints.freestyle * pointsPerBeat,

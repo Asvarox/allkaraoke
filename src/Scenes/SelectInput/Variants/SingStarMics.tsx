@@ -14,7 +14,7 @@ import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
 import { CircularProgress } from '@mui/material';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

@@ -30,7 +30,7 @@ interface Props {
     onTimeUpdate?: (newTime: number) => void;
     onSongEnd: () => void;
     onStatusChange?: (status: VideoState) => void;
-    players: [PlayerSetup, PlayerSetup];
+    players: PlayerSetup[];
     playerChanges?: number[][];
 
     effectsEnabled?: boolean;
@@ -157,7 +157,7 @@ function Player(
                         width={width}
                         height={height}
                         onSongEnd={onSongEnd}
-                        players={players}
+                        playerSetups={players}
                         videoPlayerRef={player.current}
                     />
                 </Overlay>

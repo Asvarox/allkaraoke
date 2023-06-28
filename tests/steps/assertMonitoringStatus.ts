@@ -1,10 +1,11 @@
 import { expect, Page } from '@playwright/test';
-import type InputManager from '../../src/Scenes/Game/Singing/Input/InputManager';
+import type InputManager from 'Scenes/Game/Singing/Input/InputManager';
 
 declare global {
     interface Window {
         __exposeSingletons: () => void;
         __singletons: {
+            [singleton: string]: any;
             InputManager: typeof InputManager;
         };
     }

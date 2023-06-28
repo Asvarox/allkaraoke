@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from 'interfaces';
+import { Song } from '../src/interfaces';
 import { MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
 import clearString from '../src/utils/clearString';

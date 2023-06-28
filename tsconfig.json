@@ -20,7 +20,7 @@
             "vitest/globals"
         ]
     },
-    "include": ["src"],
+    "include": ["src", "tests", "scripts"],
     "ts-node": {
         "compilerOptions": {
             "module": "commonjs",

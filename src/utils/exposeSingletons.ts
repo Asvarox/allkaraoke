@@ -8,6 +8,7 @@ import inputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSources from 'Scenes/SelectInput/InputSources';
 import UserMediaService from 'UserMedia/userMediaService';
 import CameraManager from 'Camera/CameraManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 // @ts-ignore
 window.__exposeSingletons = () => {
@@ -23,7 +24,15 @@ window.__exposeSingletons = () => {
         InputSourceManager: inputSources,
         CameraManager,
         UserMediaService,
+        PlayersManager,
     };
 };
 
-console.log(`Run window.__exposeSingletons() and inspect window.__singletons for debugging`);
+if (process.env.NODE_ENV === 'development') {
+    // @ts-ignore
+    window.__exposeSingletons();
+    // @ts-ignore
+    console.log(window.__singletons);
+} else {
+    console.log(`Run window.__exposeSingletons() and inspect window.__singletons for debugging`);
+}

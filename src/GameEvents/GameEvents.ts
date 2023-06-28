@@ -45,6 +45,7 @@ export const events = {
     remoteMicDisconnected: new GameEvent<(remoteMic: { id: string; name: string }, silent: boolean) => void>(
         'remoteMicDisconnected',
     ),
+    playerNameChanged: new GameEvent<(playerNumber: number, oldName: string | undefined) => void>('playerNameChanged'),
     playerInputChanged: new GameEvent<
         (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput) => void
     >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.source, new: newI.source })),
@@ -53,7 +54,7 @@ export const events = {
     karaokeConnectionStatusChange: new GameEvent<
         (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error', e?: PeerErrorType) => void
     >('karaokeConnectionStatusChange'),
-    remoteMicPlayerNumberSet: new GameEvent<(playerNumber: number | null) => void>('remoteMicPlayerNumberSet'),
+    remoteMicPlayerSet: new GameEvent<(playerNumber: number | null) => void>('remoteMicPlayerSet'),
     remoteMicMonitoringStarted: new GameEvent('remoteMicMonitoringStarted'),
     remoteMicMonitoringStopped: new GameEvent('remoteMicMonitoringStopped'),
 

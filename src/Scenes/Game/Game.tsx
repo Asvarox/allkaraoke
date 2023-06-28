@@ -1,6 +1,6 @@
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
 import SingASong from 'Scenes/SingASong/SingASong';
@@ -14,6 +14,13 @@ function Game(props: Props) {
     const [singSetup, setSingSetup] = useState<(SingSetup & { file: string; video: string }) | null>(null);
     const [preselectedSong, setPreselectedSong] = useState<string | null>(props.file ?? null);
     const [resetKey, setResetKey] = useState(0);
+
+    const handleSelect = useCallback(
+        (setup: SingSetup & { file: string; video: string }) => {
+            setSingSetup(setup);
+        },
+        [setSingSetup],
+    );
 
     useFullscreen();
 
@@ -38,12 +45,7 @@ function Game(props: Props) {
                 )}
             </TransitionWrapper>
             <TransitionWrapper show={!singSetup}>
-                <SingASong
-                    onSongSelected={(setup) => {
-                        setSingSetup(setup);
-                    }}
-                    preselectedSong={preselectedSong}
-                />
+                <SingASong onSongSelected={handleSelect} preselectedSong={preselectedSong} />
             </TransitionWrapper>
         </>
     );

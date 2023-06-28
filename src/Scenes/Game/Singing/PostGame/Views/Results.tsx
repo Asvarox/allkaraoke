@@ -42,6 +42,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
             <ScoresContainer>
                 {finalPlayers.map((player, number) => (
                     <PlayerScoreView
+                        playerNumber={player.playerNumber}
                         useColors={!isCoop}
                         revealHighScore={isAnimDone}
                         setAnimDone={(which) =>
@@ -52,7 +53,6 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
                         }
                         key={number}
                         player={player}
-                        playerNumber={number}
                         highScores={highScores}
                         highestScore={highestScore}
                         singSetup={singSetup}

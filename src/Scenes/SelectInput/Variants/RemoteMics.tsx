@@ -9,7 +9,7 @@ import MicCheck from 'Scenes/SelectInput/MicCheck';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -53,7 +53,7 @@ function RemoteMics(props: Props) {
             <h4>You can connect multiple phones in advance.</h4>
 
             <h4>You will be able to connect phones later.</h4>
-            <MicCheck names={[players[0]?.label ?? '...', players[1]?.label ?? '...']} />
+            <MicCheck />
             <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
             <MenuButton {...register('save-button', onContinue, undefined, true)}>{props.closeButtonText}</MenuButton>
         </>

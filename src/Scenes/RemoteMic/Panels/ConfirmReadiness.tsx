@@ -22,7 +22,7 @@ function ConfirmReadiness({ onConfirm }: Props) {
             setIsAfterReload(true);
         }
     }, []);
-    useEventEffect(events.remoteMicPlayerNumberSet, () => {
+    useEventEffect(events.remoteMicPlayerSet, () => {
         if (isAfterReload) {
             setIsAfterReload(false);
             setVisible(true);

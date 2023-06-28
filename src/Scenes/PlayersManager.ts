@@ -3,16 +3,14 @@ import storage from 'utils/storage';
 import events from 'GameEvents/GameEvents';
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import { debounce } from 'lodash-es';
 
 const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
 
-class PlayerEntity {
-    constructor(
-        public number: number,
-        public input: SelectedPlayerInput,
-        public colorScheme: number,
-        public name: string,
-    ) {}
+export class PlayerEntity {
+    public nameOverride: string = '';
+    constructor(public number: number, public input: SelectedPlayerInput, public name?: string) {}
 
     public changeInput = (input: InputSourceNames, channel = 0, deviceId?: string) => {
         let restartMonitoringPromise: null | Promise<void> = null;
@@ -34,12 +32,23 @@ class PlayerEntity {
     public toJSON = () => ({
         number: this.number,
         input: this.input,
-        colorScheme: this.colorScheme,
         name: this.name,
     });
 
+    public getName = () => {
+        return this.nameOverride || (this.name ?? `Player #${this.number + 1}`);
+    };
+
+    public isDefaultName = () => this.name === undefined;
+
+    public setName = (newName: string) => {
+        const oldName = this.name;
+        this.name = newName;
+        events.playerNameChanged.dispatch(this.number, oldName);
+    };
+
     public static fromJSON = (data: ReturnType<PlayerEntity['toJSON']>) =>
-        new PlayerEntity(data.number, data.input, data.colorScheme, data.name);
+        new PlayerEntity(data.number, data.input, data.name);
 }
 
 class PlayersManager {
@@ -57,18 +66,46 @@ class PlayersManager {
             }
         } else {
             this.players = [
-                new PlayerEntity(0, { source: 'Dummy', deviceId: 'default', channel: 0 }, 0, 'Player #1'),
-                new PlayerEntity(1, { source: 'Dummy', deviceId: 'default', channel: 1 }, 1, 'Player #2'),
+                new PlayerEntity(0, { source: 'Dummy', deviceId: 'default', channel: 0 }),
+                new PlayerEntity(1, { source: 'Dummy', deviceId: 'default', channel: 1 }),
             ];
         }
 
-        events.playerInputChanged.subscribe(() => {
-            storage.storeValue(
-                PLAYER_INPUTS_LOCAL_STORAGE_KEY,
-                this.getPlayers().map((player) => player.toJSON()),
-            );
+        events.playerInputChanged.subscribe((playerNumber, _, newInput) => {
+            if (newInput.source === 'Remote Microphone') {
+                const microphone = RemoteMicManager.getRemoteMicById(newInput.deviceId!);
+
+                if (microphone) {
+                    this.getPlayer(playerNumber).nameOverride = microphone.name;
+                }
+            } else {
+                this.getPlayer(playerNumber).nameOverride = '';
+            }
+
+            this.storePlayers();
+        });
+
+        events.playerNameChanged.subscribe(debounce(this.storePlayers, 1000));
+
+        events.remoteMicConnected.subscribe(({ id, name }) => {
+            this.getPlayers().forEach((player) => {
+                if (
+                    player.input.source === 'Remote Microphone' &&
+                    player.input.deviceId === id &&
+                    player.getName() !== name
+                ) {
+                    player.nameOverride = name;
+                }
+            });
         });
     }
+
+    private storePlayers = () => {
+        storage.storeValue(
+            PLAYER_INPUTS_LOCAL_STORAGE_KEY,
+            this.getPlayers().map((player) => player.toJSON()),
+        );
+    };
 
     public requestReadiness = async () => {
         if (!this.requestingPromise) {

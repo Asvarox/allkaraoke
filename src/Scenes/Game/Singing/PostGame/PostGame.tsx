@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import { useSongStats } from 'Songs/stats/hooks';
 import GameState from '../GameState/GameState';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     width: number;
@@ -39,9 +40,10 @@ function PostGame({ song, width, height, onClickSongSelection, singSetup }: Prop
     const highScores = useHighScores(song, singSetup);
     const playerScores = useMemo(
         () =>
-            GameState.getPlayers().map((player, index) => ({
+            PlayersManager.getPlayers().map((player) => ({
                 name: player.getName(),
-                detailedScore: GameState.getPlayerDetailedScore(index),
+                playerNumber: player.number,
+                detailedScore: GameState.getPlayerDetailedScore(player.number),
             })),
         [],
     );

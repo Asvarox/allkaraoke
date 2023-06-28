@@ -3,7 +3,7 @@ import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import events from 'GameEvents/GameEvents';
 import { toast } from 'react-toastify';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
     if (oldInput?.source === RemoteMicrophoneInputSource.inputName) {

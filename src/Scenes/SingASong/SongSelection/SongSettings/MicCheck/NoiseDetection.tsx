@@ -4,7 +4,7 @@ import { useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import usePlayerMic from 'hooks/players/usePlayerMic';
 import { Warning } from '@mui/icons-material';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 export default function NoiseDetection() {
     const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());

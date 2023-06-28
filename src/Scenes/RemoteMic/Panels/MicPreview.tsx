@@ -14,7 +14,7 @@ interface Props {
 function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
     const [volume, setVolume] = useState(0);
     const [frequency, setFrequency] = useState(0);
-    const [playerNumber] = useEventListener(events.remoteMicPlayerNumberSet) ?? [null];
+    const [playerNumber] = useEventListener(events.remoteMicPlayerSet) ?? [null];
 
     const updateVolumes = useCallback(
         throttle((freq: number, volume: number) => {

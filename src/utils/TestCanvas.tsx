@@ -9,7 +9,7 @@ import roundRect from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/roundRec
 import { drawSprite, getSprite } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites';
 import pitchToFrequency from 'utils/pitchToFrequency';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 // Add needed stuff here
 const CanvasTestApi = {
@@ -46,8 +46,8 @@ export const TestCanvas = (props: Props) => {
         GameState.setSingSetup({
             id: 'tests',
             players: [
-                { name: 'Player 1', track: 0 },
-                { name: 'Player 2', track: 1 },
+                { number: 0, track: 0 },
+                { number: 1, track: 1 },
             ],
             mode: GAME_MODE.DUEL,
             tolerance: 2,

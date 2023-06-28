@@ -18,6 +18,7 @@ import ExplodingNoteParticle from './Particles/ExplodingNote';
 import FadeoutNote from './Particles/FadeoutNote';
 import RayParticle from './Particles/Ray';
 import VibratoParticle from './Particles/Vibrato';
+import PlayersManager from 'Scenes/PlayersManager';
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
     return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);
@@ -59,7 +60,10 @@ export default class CanvasDrawing {
 
         ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-        for (let i = 0; i < GameState.getPlayerCount(); i++) this.drawPlayer(i, ctx);
+        const players = PlayersManager.getPlayers();
+        players.forEach((player, index) => {
+            this.drawPlayer(player.number, index, players.length, ctx);
+        });
 
         ParticleManager.tick(ctx, this.canvas, this.pauseTime);
 
@@ -79,7 +83,7 @@ export default class CanvasDrawing {
         events.sectionChange.unsubscribe(this.onSectionEnd);
     };
 
-    private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
+    private drawPlayer = (playerNumber: number, index: number, playerCount: number, ctx: CanvasRenderingContext2D) => {
         const drawingData = this.getDrawingData(playerNumber);
         const { currentSection } = calculateData(drawingData);
         if (!isNotesSection(currentSection)) return;
@@ -250,7 +254,8 @@ export default class CanvasDrawing {
     };
 
     private getDrawingData = (playerNumber: number, sectionShift = 0): DrawingData => {
-        const playerState = GameState.getPlayer(playerNumber);
+        const playerState = GameState.getPlayer(playerNumber)!;
+        const player = PlayersManager.getPlayer(playerNumber);
         const currentSectionIndex = playerState.getCurrentSectionIndex() + sectionShift ?? 0;
         const song = GameState.getSong()!;
         const track = playerState.getTrackIndex();
@@ -258,6 +263,7 @@ export default class CanvasDrawing {
         const playerNotes = playerState.getPlayerNotes();
 
         return {
+            playerNumber: player.number,
             song,
             songBeatLength: GameState.getSongBeatLength(),
             minPitch: playerState.getMinPitch(),
@@ -267,7 +273,6 @@ export default class CanvasDrawing {
             frequencies: playerState.getPlayerFrequencies(),
             playerNotes,
             currentPlayerNotes: playerNotes.filter((note) => note.note.start >= (currentSection?.start ?? Infinity)),
-            playerNumber,
             track: playerState.getTrackIndex(),
             currentBeat: GameState.getCurrentBeat(),
             currentSectionIndex,

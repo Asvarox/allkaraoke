@@ -101,8 +101,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             id: 'test',
             mode: GAME_MODE.DUEL,
             players: [
-                { name: 'Player 1', track: 0 },
-                { name: 'Player 2', track: song.tracks.length - 1 },
+                { number: 0, track: 0 },
+                { number: 1, track: song.tracks.length - 1 },
             ],
             tolerance: 6,
         }),
@@ -131,10 +131,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                         height={playerHeight}
                         ref={player}
                         onTimeUpdate={setCurrentTime}
-                        players={[
-                            { name: 'p1', track: 0 },
-                            { name: 'p1', track: song.tracks.length - 1 },
-                        ]}
+                        players={singSetup.players}
                         effectsEnabled={effectsEnabled}
                         singSetup={singSetup}
                         onSongEnd={() => undefined}

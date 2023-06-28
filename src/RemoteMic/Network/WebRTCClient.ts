@@ -110,7 +110,7 @@ class WebRTCClient {
                     SimplifiedMic.removeListener(this.onFrequencyUpdate);
                     SimplifiedMic.stopMonitoring();
                 } else if (type === 'set-player-number') {
-                    events.remoteMicPlayerNumberSet.dispatch(data.playerNumber);
+                    events.remoteMicPlayerSet.dispatch(data.playerNumber);
                 } else if (type === 'keyboard-layout') {
                     events.remoteKeyboardLayout.dispatch(data.help);
                 } else if (type === 'reload-mic') {
@@ -135,7 +135,7 @@ class WebRTCClient {
             window.removeEventListener('beforeunload', this.disconnect);
 
             events.karaokeConnectionStatusChange.dispatch('disconnected');
-            events.remoteMicPlayerNumberSet.dispatch(null);
+            events.remoteMicPlayerSet.dispatch(null);
             SimplifiedMic.removeListener(this.onFrequencyUpdate);
             SimplifiedMic.stopMonitoring();
 

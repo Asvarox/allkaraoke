@@ -34,11 +34,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
                 </MenuButton>
             </MenuContainer>
             {isInputModalOpen && (
-                <SelectInputModal
-                    onClose={() => setIsInputModalOpen(false)}
-                    playerNames={[]}
-                    closeButtonText={'Back to Pause Menu'}
-                />
+                <SelectInputModal onClose={() => setIsInputModalOpen(false)} closeButtonText={'Back to Pause Menu'} />
             )}
         </Container>
     );

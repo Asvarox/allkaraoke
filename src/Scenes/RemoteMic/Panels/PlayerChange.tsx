@@ -15,6 +15,8 @@ interface Props {
 export default function PlayerChange({ playerNumber }: Props) {
     const [isOpen, setIsOpen] = useState(false);
 
+    console.log(playerNumber);
+
     const closeModal = () => setIsOpen(false);
 
     const selectPlayer = (player: number | null) => {

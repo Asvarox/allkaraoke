@@ -9,21 +9,23 @@ import styles from '../Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { VolumeIndicator } from 'Elements/VolumeIndicator';
+import { PlayerEntity } from 'Scenes/PlayersManager';
 
 interface Props {
-    player: number;
+    player: PlayerEntity;
     bottom?: boolean;
     playerChanges: number[][];
     effectsEnabled: boolean;
 }
 
 function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props) {
+    const playerState = GameState.getPlayer(player.number)!;
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-    const playerColor = styles.colors.players[player].text;
-    const thisPlayerChanges = playerChanges[GameState.getPlayer(player).getTrackIndex()] ?? [];
-    const section = GameState.getPlayer(player).getCurrentSection();
-    const nextSection = GameState.getPlayer(player).getNextSection();
-    const subsequentSection = GameState.getPlayer(player).getNextSection(2);
+    const playerColor = styles.colors.players[player.number].text;
+    const thisPlayerChanges = playerChanges[playerState.getTrackIndex()] ?? [];
+    const section = playerState.getCurrentSection();
+    const nextSection = playerState.getNextSection();
+    const subsequentSection = playerState.getNextSection(2);
     const currentBeat = GameState.getCurrentBeat();
     const beatLength = GameState.getSongBeatLength();
 
@@ -39,12 +41,12 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     const beatsBetweenSectionAndNote = hasNotes ? getFirstNoteStartFromSections([section]) - section.start : 0;
 
-    const playerVolume = InputManager.getPlayerVolume(player);
+    const playerVolume = InputManager.getPlayerVolume(player.number);
 
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
             {!mobilePhoneMode && effectsEnabled && (
-                <StyledVolumeIndicator playerNumber={player} volume={playerVolume} />
+                <StyledVolumeIndicator playerNumber={player.number} volume={playerVolume} />
             )}
             {timeToNextChange < Infinity && (
                 <PassTheMicProgress
@@ -55,7 +57,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             {hasNotes ? (
                 <>
                     <LyricsLine
-                        data-test={`lyrics-current-player-${player}`}
+                        data-test={`lyrics-current-player-${player.number}`}
                         effectsEnabled={effectsEnabled}
                         mobileMode={!!mobilePhoneMode}>
                         <HeadstartContainer>
@@ -93,7 +95,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             {isNotesSection(nextSection) ? (
                 <LyricsLine
                     nextLine
-                    data-test={`lyrics-next-player-${player}`}
+                    data-test={`lyrics-next-player-${player.number}`}
                     effectsEnabled={effectsEnabled}
                     mobileMode={!!mobilePhoneMode}>
                     {nextSection.notes.map((note) => (

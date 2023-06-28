@@ -3,13 +3,16 @@ import { typography } from 'Elements/cssMixins';
 import { useEffect } from 'react';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { PlayerMicCheck } from 'Elements/VolumeIndicator';
-import { useEventListenerSelector } from 'GameEvents/hooks';
+import { useEventListener, useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
 import Ping from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 export default function MicCheck() {
+    // Force update when the name changes
+    useEventListener(events.playerNameChanged);
+
     useEffect(() => {
         InputManager.startMonitoring();
     }, []);
@@ -21,24 +24,17 @@ export default function MicCheck() {
         <Container>
             <MicChecksContainer>
                 Microphone Check
-                <Indicator>
-                    {isSetup ? (
-                        <>
-                            Player 1
-                            <Ping playerNumber={0} />
-                            <PlayerMicCheck playerNumber={0} />
-                        </>
-                    ) : (
-                        'Mic not setup'
-                    )}
-                </Indicator>
                 {isSetup ? (
-                    <Indicator>
-                        Player 2 <Ping playerNumber={1} />
-                        <PlayerMicCheck playerNumber={1} />
-                    </Indicator>
+                    PlayersManager.getPlayers().map((player) => (
+                        <Indicator key={player.number}>
+                            {player.getName()}
+                            <Ping playerNumber={player.number} />
+                            <PlayerMicCheck playerNumber={player.number} />
+                        </Indicator>
+                    ))
                 ) : (
                     <>
+                        <Indicator>Mic not setup</Indicator>
                         <h4>Singing will be emulated</h4>
                         <h5>You can setup in the Next step</h5>
                     </>

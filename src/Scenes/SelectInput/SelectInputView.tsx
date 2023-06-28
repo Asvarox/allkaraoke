@@ -117,7 +117,6 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
                     onBack={back}
                     closeButtonText={closeButtonText}
                     changePreference={setPreference}
-                    playerNames={playerNames}
                 />
             )}
             {preference === 'skip' && (

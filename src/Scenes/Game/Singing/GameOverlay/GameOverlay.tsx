@@ -10,6 +10,7 @@ import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     song: Song;
@@ -17,7 +18,7 @@ interface Props {
     width: number;
     height: number;
     onSongEnd: () => void;
-    players: [PlayerSetup, PlayerSetup];
+    playerSetups: PlayerSetup[];
     duration: number;
     effectsEnabled: boolean;
     playerChanges: number[][];
@@ -31,7 +32,7 @@ function GameOverlay({
     currentStatus,
     width,
     height,
-    players,
+    playerSetups,
     onSongEnd,
     playerChanges,
     effectsEnabled,
@@ -86,6 +87,9 @@ function GameOverlay({
         }
     }, [currentStatus, onSongEnd]);
 
+    const players = PlayersManager.getPlayers();
+    const showMultipleLines = !mobilePhoneMode && players.length === 2;
+
     return (
         <Screen>
             <GameCanvas>
@@ -97,8 +101,10 @@ function GameOverlay({
                     <SkipOutro onSongEnd={onSongEnd} isEnabled={!isPauseMenuVisible} />
                 </>
             )}
-            <DurationBar players={players} />
-            {!mobilePhoneMode && <Lyrics player={0} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />}
+            <DurationBar players={playerSetups} />
+            {showMultipleLines && (
+                <Lyrics player={players[0]} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
+            )}
             <Scores>
                 {effectsEnabled && (
                     <>
@@ -120,7 +126,12 @@ function GameOverlay({
                 )}
             </Scores>
             <div ref={lyrics}>
-                <Lyrics player={1} playerChanges={playerChanges} bottom effectsEnabled={effectsEnabled} />
+                <Lyrics
+                    player={players[showMultipleLines ? 1 : 0]}
+                    playerChanges={playerChanges}
+                    bottom
+                    effectsEnabled={effectsEnabled}
+                />
             </div>
         </Screen>
     );

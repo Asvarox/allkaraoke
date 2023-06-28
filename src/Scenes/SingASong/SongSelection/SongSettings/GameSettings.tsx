@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { nextIndex, nextValue, Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from 'interfaces';
+import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import isDev from 'utils/isDev';
@@ -39,13 +39,10 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
     const mode = rememberedMode ?? (songPreview.tracksCount > 1 ? GAME_MODE.CO_OP : GAME_MODE.DUEL);
     const [tolerance, setTolerance] = useSetTolerance(1);
 
-    const startSong = () => {
+    const handleNextButton = () => {
         const singSetup = {
             id: v4(),
-            players: [
-                { name: '', track: 0 },
-                { name: '', track: 0 },
-            ] as [PlayerSetup, PlayerSetup],
+            players: [],
             mode,
             tolerance: tolerance + 1,
         };
@@ -85,7 +82,7 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
                     </>
                 )}
             </ModeDescription>
-            <PlayButton {...register('next-step-button', startSong, undefined, true)}>Next ➤</PlayButton>
+            <PlayButton {...register('next-step-button', handleNextButton, undefined, true)}>Next ➤</PlayButton>
         </>
     );
 }

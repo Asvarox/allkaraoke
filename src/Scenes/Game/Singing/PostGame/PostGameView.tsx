@@ -9,6 +9,7 @@ import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 export interface PlayerScore {
     detailedScore: [DetailedScore, DetailedScore];
+    playerNumber: number;
     name: string;
 }
 

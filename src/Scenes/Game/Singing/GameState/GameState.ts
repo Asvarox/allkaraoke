@@ -24,7 +24,7 @@ class PlayerState {
 
     private storedSectionIndex = 0;
 
-    public constructor(private index: number, private name: string, private gameState: GameState) {
+    public constructor(private number: number, private gameState: GameState) {
         this.getTrack()
             .sections.filter(isNotesSection)
             .forEach((section) =>
@@ -35,16 +35,13 @@ class PlayerState {
             );
     }
 
-    public getName = () => this.name;
-    public setName = (name: string) => (this.name = name);
-
-    public getNumber = () => this.index;
+    public getNumber = () => this.number;
 
     public update = () => {
         const currentTime = this.gameState.getCurrentTime();
 
-        const frequency = InputManager.getPlayerFrequency(this.index);
-        const currentTimestamp = currentTime - InputManager.getPlayerInputLag(this.index);
+        const frequency = InputManager.getPlayerFrequency(this.number);
+        const currentTimestamp = currentTime - InputManager.getPlayerInputLag(this.number);
 
         // If it's a pack of frequencies (from remote mic), restore last "real" frequencies,
         // add and recalculate for the received pack, and store newly computed
@@ -85,7 +82,7 @@ class PlayerState {
     private dispatchSectionUpdate = () => {
         const currentSectionIndex = this.getCurrentSectionIndex();
         if (this.storedSectionIndex !== currentSectionIndex) {
-            events.sectionChange.dispatch(this.index, this.storedSectionIndex);
+            events.sectionChange.dispatch(this.number, this.storedSectionIndex);
             this.storedSectionIndex = currentSectionIndex;
         }
     };
@@ -150,7 +147,7 @@ class PlayerState {
     public getMinPitch = () => this.min;
     public getMaxPitch = () => this.max;
 
-    public getTrackIndex = () => this.gameState.getSingSetup()!.players[this.index].track;
+    public getTrackIndex = () => this.gameState.getSingSetup()!.players[this.number].track;
     public getTrack = () => this.gameState.getSong()!.tracks[this.getTrackIndex()];
 
     public resetNotes = () => {
@@ -181,7 +178,7 @@ class GameState {
     public setSingSetup = (singSetup: SingSetup) => {
         this.singSetup = singSetup;
 
-        this.playerStates = singSetup.players.map(({ name }, index) => new PlayerState(index, name, this));
+        this.playerStates = singSetup.players.map(({ number }, index) => new PlayerState(number, this));
         this.currentTime = 0;
     };
     public getSingSetup = () => this.singSetup;
@@ -190,7 +187,8 @@ class GameState {
     public setDuration = (duration: number) => (this.duration = duration);
     public getDuration = () => this.duration;
 
-    public getPlayer = (player: number) => this.playerStates[player];
+    public getPlayer = (playerNumber: number) =>
+        this.playerStates.find((player) => player.getNumber() === playerNumber);
 
     public getPlayers = () => this.playerStates;
 
@@ -202,7 +200,7 @@ class GameState {
 
             return score / this.getPlayerCount();
         } else {
-            return this.getPlayer(player).getScore();
+            return this.getPlayer(player)?.getScore() ?? -1;
         }
     };
 
@@ -228,7 +226,7 @@ class GameState {
                 divideDetailedScores(summedPoints[1], this.getPlayerCount()),
             ]);
         } else {
-            const [pointsPerBeat, counts, maxCounts] = this.getPlayer(player).getDetailedScore();
+            const [pointsPerBeat, counts, maxCounts] = this.getPlayer(player)!.getDetailedScore();
 
             return tuple([beatsToPoints(counts, pointsPerBeat), beatsToPoints(maxCounts, pointsPerBeat)]);
         }

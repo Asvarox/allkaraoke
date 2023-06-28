@@ -1,18 +1,15 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
-import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from 'hooks/players/consts';
+import { PLAYER_NAMES_SESSION_STORAGE_KEY } from 'hooks/players/consts';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useState } from 'react';
-import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import events from 'GameEvents/GameEvents';
 import { typography } from 'Elements/cssMixins';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     songPreview: SongPreview;
@@ -21,29 +18,8 @@ interface Props {
     onExitKeyboardControl: () => void;
 }
 
-function useDefaultPlayerName(index: number): string {
-    // If the player input changed in the meantime
-    return useEventListenerSelector(events.playerInputChanged, () => {
-        let defaultName = '';
-
-        const source = PlayersManager.getPlayer(index).input;
-
-        if (source?.source === 'Remote Microphone') {
-            defaultName = RemoteMicManager.getRemoteMicById(source.deviceId!)?.name || defaultName;
-        }
-        if (!defaultName) {
-            const previousPlayerNames =
-                JSON.parse(window.sessionStorage.getItem(PREVIOUS_PLAYER_NAMES_STORAGE_KEY)!) || [];
-
-            defaultName = previousPlayerNames[index] ?? defaultName;
-        }
-
-        return defaultName || `Player #${index + 1}`;
-    });
-}
-
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
-    const defaultNames = [useDefaultPlayerName(0), useDefaultPlayerName(1)];
+    const players = PlayersManager.getPlayers();
     const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
 
     const playerNames = useMemo<string[]>(
@@ -51,23 +27,17 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         [],
     );
 
-    const startSong = () => {
-        onNextStep(playerSetup.map((setup, index) => ({ ...setup, name: setup.name || defaultNames[index] })));
-    };
-
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-    const [playerSetup, setPlayerSetup] = useState<[PlayerSetup, PlayerSetup]>([
-        { name: '', track: 0 },
-        { name: '', track: mobilePhoneMode ? 0 : Math.min(1, songPreview.tracksCount - 1) },
-    ]);
+    const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
+    const [playerSetup, setPlayerSetup] = useState<PlayerSetup[]>(
+        players.map((player, index) => ({
+            number: player.number,
+            track: multipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
+        })),
+    );
 
-    const updatePlayer = (index: number) => (setup: PlayerSetup) => {
-        setPlayerSetup((current) => {
-            const clone = [...current] as [PlayerSetup, PlayerSetup];
-            clone[index] = setup;
-
-            return clone;
-        });
+    const updatePlayer = (playerNumber: number) => (newSetup: PlayerSetup) => {
+        setPlayerSetup((current) => current.map((setup) => (setup.number === playerNumber ? newSetup : setup)));
     };
 
     const [showModal, setShowModal] = useState(false);
@@ -83,6 +53,10 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
         onBackspace: onExitKeyboardControl,
     });
 
+    const startSong = () => {
+        onNextStep(playerSetup);
+    };
+
     const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
 
     return (
@@ -97,37 +71,24 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                             focusElement('play');
                         }
                     }}
-                    playerNames={playerSetup.map((setup) => setup.name)}
                 />
             )}
-            <PlayerSettingContainer>
-                <PlayerSettingTitle>Player 1</PlayerSettingTitle>
-                <div>
-                    <SinglePlayer
-                        index={0}
-                        setup={playerSetup[0]}
-                        onChange={updatePlayer(0)}
-                        playerNames={playerNames}
-                        register={register}
-                        defaultName={defaultNames[0]}
-                        songPreview={songPreview}
-                    />
-                </div>
-            </PlayerSettingContainer>
-            <PlayerSettingContainer>
-                <PlayerSettingTitle>Player 2</PlayerSettingTitle>
-                <div>
-                    <SinglePlayer
-                        index={1}
-                        setup={playerSetup[1]}
-                        onChange={updatePlayer(1)}
-                        playerNames={playerNames}
-                        register={register}
-                        defaultName={defaultNames[1]}
-                        songPreview={songPreview}
-                    />
-                </div>
-            </PlayerSettingContainer>
+            {playerSetup.map((setup, index) => (
+                <PlayerSettingContainer key={setup.number}>
+                    <PlayerSettingTitle>Player {index + 1}</PlayerSettingTitle>
+                    <div>
+                        <SinglePlayer
+                            multipleTracks={multipleTracks}
+                            player={PlayersManager.getPlayer(setup.number)}
+                            setup={setup}
+                            onChange={updatePlayer(setup.number)}
+                            playerNames={playerNames}
+                            register={register}
+                            songPreview={songPreview}
+                        />
+                    </div>
+                </PlayerSettingContainer>
+            ))}
             {areInputsConfigured && (
                 <PlayButton {...register('play-song-button', startSong, undefined, true)}>Play</PlayButton>
             )}

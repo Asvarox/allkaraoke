@@ -3,7 +3,7 @@ import { uniq } from 'lodash-es';
 
 const data = {
     language: {
-        kinds: [] as string[],
+        kinds: [] as Array<string | string[]>,
         missing: [] as string[],
     },
     year: {
@@ -23,7 +23,8 @@ const index: SongPreview[] = require('../public/songs/index.json');
 index.forEach((song) => {
     Object.entries(data).forEach(([key, val]) => {
         if (key in song && !!song[key as keyof Data]) {
-            val.kinds.push(song[key as keyof Data]!);
+            const toPush = song[key as keyof Data];
+            val.kinds = val.kinds.concat(Array.isArray(toPush) ? toPush : [toPush!]);
         } else {
             val.missing.push(song.file);
         }

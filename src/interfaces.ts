@@ -32,13 +32,13 @@ export const GAME_MODE = {
 } as const;
 
 export interface PlayerSetup {
-    name: string;
     track: number;
+    number: number;
 }
 
 export interface SingSetup {
     id: string;
-    players: [PlayerSetup, PlayerSetup];
+    players: PlayerSetup[];
     mode: ValuesType<typeof GAME_MODE>;
     tolerance: number;
 }

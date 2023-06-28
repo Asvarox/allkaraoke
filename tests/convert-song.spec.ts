@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import convertTxtToSong from 'Songs/utils/convertTxtToSong';
 import { initTestMode, mockSongs } from './helpers';
 
 test.beforeEach(async ({ page, context }) => {

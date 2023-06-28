@@ -12,7 +12,7 @@ import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import styled from '@emotion/styled';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -29,12 +29,8 @@ function BuiltIn(props: Props) {
     const { Microphone } = useMicrophoneList(true);
 
     const setMic = (input: InputSource) => {
-        [0, 1].forEach((playerNumber) =>
-            PlayersManager.getPlayer(playerNumber).changeInput(
-                MicrophoneInputSource.inputName,
-                input.channel,
-                input.deviceId,
-            ),
+        PlayersManager.getPlayers().forEach((player) =>
+            player.changeInput(MicrophoneInputSource.inputName, input.channel, input.deviceId),
         );
         setSelectedMic(input.label);
     };
@@ -87,7 +83,7 @@ function BuiltIn(props: Props) {
                         </h4>
                     </>
                 )}
-                <MicCheck names={['These light up when', 'singing is detected']} />
+                <MicCheck />
             </UserMediaEnabled>
             <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
             <MenuButton

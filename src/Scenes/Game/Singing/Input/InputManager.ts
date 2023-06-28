@@ -7,7 +7,7 @@ import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingT
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 export interface SelectedPlayerInput {
     source: InputSourceNames;

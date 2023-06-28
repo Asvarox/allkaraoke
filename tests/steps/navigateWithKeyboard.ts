@@ -1,4 +1,4 @@
-import tuple from '../../src/utils/tuple';
+import tuple from 'utils/tuple';
 import { expect, Page, test } from '@playwright/test';
 import _ from 'lodash';
 

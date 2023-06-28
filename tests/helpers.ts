@@ -24,7 +24,6 @@ export const initTestMode = async ({ context }: { page: Page; context: BrowserCo
     await context.addInitScript((randomValue) => {
         window.Math.random = () => randomValue;
 
-        // @ts-expect-error
         window.isE2ETests = true;
     }, randomValue);
 };

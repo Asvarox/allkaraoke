@@ -14,6 +14,7 @@ import PostGame from './PostGame/PostGame';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import useBlockScroll from 'hooks/useBlockScroll';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     video: string;
@@ -85,15 +86,15 @@ function Singing({ video, songFile, singSetup, returnToSongSelection, restartSon
                             GameState.getSingSetup()?.mode === GAME_MODE.CO_OP
                                 ? [
                                       {
-                                          name: GameState.getPlayers()
+                                          name: PlayersManager.getPlayers()
                                               .map((player) => player.getName())
                                               .join(', '),
                                           score: GameState.getPlayerScore(0),
                                       },
                                   ]
-                                : GameState.getPlayers().map((player) => ({
+                                : PlayersManager.getPlayers().map((player) => ({
                                       name: player.getName(),
-                                      score: GameState.getPlayerScore(player.getNumber()),
+                                      score: GameState.getPlayerScore(player.number),
                                   }));
                         events.songEnded.dispatch(song.data!, singSetup, scores);
                         setIsEnded(true);

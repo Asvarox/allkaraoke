@@ -25,7 +25,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         if (!singSetup) return;
         const finalSetup = {
             ...singSetup,
-            players: players as [PlayerSetup, PlayerSetup],
+            players: players,
         };
         events.songStarted.dispatch(songPreview, finalSetup);
         onPlay({ file: songPreview.file, video: songPreview.video, ...finalSetup });

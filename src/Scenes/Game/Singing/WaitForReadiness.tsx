@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import { typography } from 'Elements/cssMixins';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import { CircularProgress } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
 import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
@@ -10,7 +9,7 @@ import { waitFinished } from 'SoundManager';
 import sleep from 'utils/sleep';
 import events from 'GameEvents/GameEvents';
 import CountUp from 'react-countup';
-import PlayersManager from 'PlayersManager';
+import PlayersManager from 'Scenes/PlayersManager';
 
 interface Props {
     onFinish: () => void;
@@ -28,10 +27,7 @@ function WaitForReadiness({ onFinish }: Props) {
     });
 
     const players = useEventListenerSelector([events.inputListChanged, events.readinessConfirmed], () => {
-        return PlayersManager.getInputs().map((input, index) => [
-            input.deviceId!,
-            GameState.getPlayers()[index]?.getName() ?? undefined,
-        ]);
+        return PlayersManager.getPlayers().map((player, index) => [player.input.deviceId!, player.getName()]);
     });
 
     useEffect(() => {

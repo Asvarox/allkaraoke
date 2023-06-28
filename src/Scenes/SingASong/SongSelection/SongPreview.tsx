@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { SingSetup, SongPreview } from 'interfaces';
-import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
 import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
@@ -42,13 +42,15 @@ export default function SongPreviewComponent({
     // need to use layout effect otherwise newly selected song name is displayed briefly before the element is removed
     useLayoutEffect(() => {
         setShowVideo(false);
-    }, [songPreview]);
+    }, [songPreview.video]);
 
     const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
-    const [videoId, previewStart, previewEnd, volume] = useDebounce(
-        [songPreview.video, start, songPreview.previewEnd ?? start + PREVIEW_LENGTH, songPreview.volume],
-        350,
+    const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
+    const undebounced = useMemo(
+        () => [songPreview.video, start, end, songPreview.volume] as const,
+        [songPreview.video, start, end, songPreview.volume],
     );
+    const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
 
     useEffect(() => {
         player.current?.loadVideoById({

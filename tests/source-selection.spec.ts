@@ -90,7 +90,7 @@ test('Source selection from remote mic', async ({ page, context }) => {
         await remoteMicRed.getByTestId('change-player').click();
         await remoteMicRed.getByTestId('change-to-player-0').click();
         await expect(page.getByTestId('mic-check-p0')).toContainText('E2E Test Red', { ignoreCase: true });
-        await expect(page.getByTestId('mic-check-p1')).toContainText('...', { ignoreCase: true });
+        await expect(page.getByTestId('mic-check-p1')).toContainText('Player #2', { ignoreCase: true });
     });
     await test.step('change blue player mic to red', async () => {
         await remoteMicBluePage.getByTestId('change-player').click();
@@ -101,6 +101,6 @@ test('Source selection from remote mic', async ({ page, context }) => {
     await test.step('Unset a player', async () => {
         await remoteMicBluePage.getByTestId('change-player').click();
         await remoteMicBluePage.getByTestId('change-to-unset').click();
-        await expect(page.getByTestId('mic-check-p1')).toContainText('...', { ignoreCase: true });
+        await expect(page.getByTestId('mic-check-p1')).toContainText('Player #2', { ignoreCase: true });
     });
 });
