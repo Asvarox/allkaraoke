@@ -3,6 +3,7 @@ import { Song } from '../src/interfaces';
 import { MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
 import clearString from '../src/utils/clearString';
+// @ts-ignore
 import scrapedBpmData from './scraped-bpm-data.json';
 
 const mbApi = new MusicBrainzApi({

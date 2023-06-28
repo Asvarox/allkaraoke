@@ -14,6 +14,6 @@ export function useRemoteMicAutoselect() {
             0,
             id,
         );
-        nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % 2;
+        nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % PlayersManager.getPlayers().length;
     });
 }

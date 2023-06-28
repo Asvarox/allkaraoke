@@ -63,13 +63,10 @@ function Advanced(props: Props) {
 
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
-    const [p1, p2] = useEventListenerSelector(events.playerInputChanged, () => [
-        PlayersManager.getPlayer(0).input,
-        PlayersManager.getPlayer(1).input,
-    ]);
+    const selectedInputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());
 
-    const isBothMicrophones =
-        p1?.source === MicrophoneInputSource.inputName && p2?.source === MicrophoneInputSource.inputName;
+    const micInputs = selectedInputs.filter((input) => input.source === MicrophoneInputSource.inputName);
+    const isDifferentMics = new Set(micInputs.map((input) => input.deviceId)).size > 1;
 
     const players = PlayersManager.getPlayers();
 
@@ -81,10 +78,10 @@ function Advanced(props: Props) {
                     <PlayerSelector inputs={inputs} player={player} key={player.number} register={register} />
                 ))}
                 <hr />
-                {isBothMicrophones && p1?.deviceId !== p2?.deviceId && (
+                {micInputs.length > 1 && isDifferentMics && (
                     <h3 data-test="mic-mismatch-warning">Using different microphone devices is not yet supported</h3>
                 )}
-                {isBothMicrophones && isChromium() && isWindows() && (
+                {micInputs.length > 1 && isChromium() && isWindows() && (
                     <h3>
                         <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any
                         problems, try using an alternative browser (eg. <strong>MS Edge</strong> or{' '}
