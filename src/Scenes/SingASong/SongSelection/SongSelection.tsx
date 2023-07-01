@@ -3,7 +3,7 @@ import { focused, typography } from 'Elements/cssMixins';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
 import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
@@ -99,7 +99,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         }
     }, [width, list, focusedSong, focusedGroup, groupedSongList]);
 
-    const onSongClick = (index: number) => (focusedSong === index ? setKeyboardControl(false) : moveToSong(index));
+    const onSongClick = useCallback(
+        (index: number) => (focusedSong === index ? setKeyboardControl(false) : moveToSong(index)),
+        [setKeyboardControl, moveToSong, focusedSong],
+    );
     if (!groupedSongList || !width) return <>Loading</>;
 
     if (isLoading) {
@@ -258,7 +261,11 @@ const SongListEntry = styled(FinalSongCard)`
     flex-basis: var(--song-item-width);
     aspect-ratio: var(--song-item-ratio);
 
-    transition: 300ms;
+    ${(props) =>
+        props.theme.graphicSetting === 'high' &&
+        css`
+            transition: 300ms;
+        `}
     transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
     ${(props) => props.focused && 'z-index: 2;'}
     ${(props) => props.focused && focused}

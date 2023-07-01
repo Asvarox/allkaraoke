@@ -7,6 +7,7 @@ import useViewportSize from 'hooks/useViewportSize';
 import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/SongSettings';
 import { css } from '@emotion/react';
+import { useTheme } from '@mui/material';
 
 interface Props {
     songPreview: SongPreview;
@@ -145,8 +146,10 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
               `
             : css`
                   pointer-events: none;
-                  ${props.showVideo && 'animation: rhythmPulse 1s infinite'};
-              `}
+                  ${props.showVideo && props.theme.graphicSetting === 'high'
+                      ? 'animation: rhythmPulse 1s infinite'
+                      : 'scale: 1.2'};
+              `};
 
     @keyframes rhythmPulse {
         0% {
@@ -248,6 +251,10 @@ const SongBPMIndicator = (
         song: SongPreview;
     } & ComponentProps<typeof BaseSongBPMIndicator>,
 ) => {
+    const theme = useTheme();
+
+    if (theme.graphicSetting === 'low') return null;
+
     const realBpm = props.song.realBpm ?? (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
     return (
         <BaseSongBPMIndicator

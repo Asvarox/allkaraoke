@@ -107,14 +107,20 @@ export const SongCardBackground = styled.div<{ focused: boolean; expanded: boole
     position: absolute;
     z-index: -1;
     inset: 0;
+    ${(props) =>
+        props.theme.graphicSetting === 'high'
+            ? css`
+                  background-size: ${props.focused ? 100 : 110}%;
+                  ${!props.focused ? 'filter: grayscale(90%);' : ''}
+                  ${props.expanded ? 'filter: blur(10px);' : ''}
+                  transition: 300ms;
+                  opacity: ${props.focused ? 1 : 0.8};
+              `
+            : css`
+                  background-size: 100%;
+                  opacity: ${props.focused ? 1 : 0.6};
+              `}
     background-position: center center;
-    background-size: ${(props) => (props.focused ? 100 : 110)}%;
-    ${(props) => (!props.focused ? 'filter: grayscale(90%);' : '')}
-    ${(props) => (props.expanded ? 'filter: blur(10px);' : '')}
-
-    opacity: ${(props) => (props.focused ? 1 : 0.8)};
-
-    transition: 300ms;
 `;
 
 export const SongListEntryDetails = styled.span<{ expanded?: boolean }>`

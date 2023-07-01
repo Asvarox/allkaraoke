@@ -49,7 +49,8 @@ const Background = styled(BackgroundStatic)`
     position: fixed;
     view-transition-name: background;
 
-    animation: gradient 15s ease infinite;
+    ${(props) => (props.theme.graphicSetting === 'high' ? 'animation: gradient 15s ease infinite' : '')};
+    ${(props) => (props.theme.graphicSetting === 'low' ? 'background-position: 100% 50%' : '')};
 
     @keyframes gradient {
         0% {

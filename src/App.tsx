@@ -12,21 +12,36 @@ import { ErrorBoundary } from '@sentry/react';
 
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
-import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import {
+    GraphicSetting,
+    MicSetupPreferenceSetting,
+    MobilePhoneModeSetting,
+    useSettingValue,
+} from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import Toolbar from 'Toolbar/Toolbar';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { css, Global } from '@emotion/react';
 import { GameScreens } from 'Elements/GameScreens';
+import { createTheme, Theme, ThemeProvider } from '@mui/material';
 
 function App() {
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+    const [graphicSetting] = useSettingValue(GraphicSetting);
     const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
     const [location, navigate] = useLocation();
+
+    const theme = useMemo<Theme>(
+        () =>
+            createTheme({
+                graphicSetting,
+            }),
+        [graphicSetting],
+    );
 
     useEffect(() => {
         if (setupPreference === null && location === '/') {
@@ -37,7 +52,7 @@ function App() {
     }, []);
 
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <Global
                 styles={css`
                     :root {
@@ -76,7 +91,7 @@ function App() {
                     </KeyboardHelpProvider>
                 </LayoutWithBackgroundProvider>
             </ErrorBoundary>
-        </>
+        </ThemeProvider>
     );
 }
 
