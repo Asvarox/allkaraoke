@@ -17,14 +17,19 @@
   "ignoreUnimported": [
     "src/Scenes/Game/Singing/Input/MicStrategies/Yin.ts",
     "src/Songs/utils/song-fixture.ts",
+    "src/hooks/useCallbackDebugger.ts",
+    "src/hooks/useEffectDebugger.ts",
     "src/setupTests.ts",
-    "src/utils/testUtils.ts",
     "src/utils/TestCanvas.tsx",
-    "src/utils/range.ts"
+    "src/utils/range.ts",
+    "src/utils/testUtils.ts"
   ],
   "ignoreUnused": [],
   "ignoreUnresolved": [
     "utility-types"
   ],
-  "entry": ["src/main.tsx", "src/videos/index.ts"]
+  "entry": [
+    "src/main.tsx",
+    "src/videos/index.ts"
+  ]
 }

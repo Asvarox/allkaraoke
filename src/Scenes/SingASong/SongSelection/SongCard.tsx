@@ -4,15 +4,17 @@ import { typography } from 'Elements/cssMixins';
 import { SongPreview } from 'interfaces';
 import { useSongStats } from 'Songs/stats/hooks';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { ComponentProps, ReactNode } from 'react';
+import { ComponentProps, ReactNode, useCallback } from 'react';
 import { css } from '@emotion/react';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
     song: SongPreview;
     focused: boolean;
+    index?: number;
     expanded?: boolean;
     background?: boolean;
+    handleClick?: (index: number) => void;
     video?: ReactNode;
 }
 export const FinalSongCard = ({
@@ -20,12 +22,16 @@ export const FinalSongCard = ({
     focused,
     video,
     children,
+    index,
+    handleClick,
     background = true,
     expanded = false,
     ...restProps
 }: Props) => {
+    const onClickCallback = useCallback(() => (handleClick ? handleClick(index!) : undefined), [handleClick, index]);
+
     return (
-        <SongCardContainer {...restProps}>
+        <SongCardContainer {...restProps} onClick={handleClick ? onClickCallback : undefined}>
             {background && (
                 <SongCardBackground
                     style={{

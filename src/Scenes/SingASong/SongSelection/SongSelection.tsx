@@ -3,7 +3,7 @@ import { focused, typography } from 'Elements/cssMixins';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
 import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
@@ -99,10 +99,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         }
     }, [width, list, focusedSong, focusedGroup, groupedSongList]);
 
-    const onSongClick = useCallback(
-        (index: number) => (focusedSong === index ? setKeyboardControl(false) : moveToSong(index)),
-        [setKeyboardControl, moveToSong, focusedSong],
-    );
+    const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
+
     if (!groupedSongList || !width) return <>Loading</>;
 
     if (isLoading) {
@@ -112,6 +110,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             </LoaderContainer>
         );
     }
+
     return (
         <Container songsPerRow={songsPerRow}>
             {filters.search ? (
@@ -136,6 +135,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 )}
                 {groupedSongList.map((group) => (
                     <SongsGroupContainer
+                        {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
                         key={group.letter}
                         data-group-letter={group.letter}
                         highlight={group.letter === 'New'}>
@@ -145,12 +145,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                                 <SongListEntry
                                     key={song.file}
                                     song={song}
-                                    onClick={() => onSongClick(index)}
+                                    handleClick={focusedSong === index ? expandSong : moveToSong}
                                     focused={!showFilters && keyboardControl && index === focusedSong}
+                                    index={index}
                                     data-index={index}
-                                    {...(!showFilters && keyboardControl
-                                        ? { 'data-focused': index === focusedSong }
-                                        : {})}
+                                    data-focused={!showFilters && keyboardControl && index === focusedSong}
                                     data-test={`song-${song.file}${group.isNew ? '-new-group' : ''}`}
                                 />
                             ))}
@@ -256,7 +255,7 @@ const SongsGroup = styled.div`
     gap: var(--song-list-gap);
 `;
 
-const SongListEntry = styled(FinalSongCard)`
+const SongListEntry = memo(styled(FinalSongCard)`
     cursor: pointer;
     flex-basis: var(--song-item-width);
     aspect-ratio: var(--song-item-ratio);
@@ -272,7 +271,7 @@ const SongListEntry = styled(FinalSongCard)`
 
     content-visibility: auto;
     contain-intrinsic-size: calc(var(--song-item-width) * (1 / var(--song-item-ratio)));
-`;
+`);
 
 const LoaderContainer = styled.div`
     display: flex;
