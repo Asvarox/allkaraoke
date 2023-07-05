@@ -3,6 +3,7 @@ import { MenuButton } from 'Elements/Menu';
 import { useEffect } from 'react';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
+import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { nextIndex, Switcher } from 'Elements/Switcher';
@@ -28,19 +29,15 @@ function BuiltIn(props: Props) {
 
     const { Microphone } = useMicrophoneList(true);
 
-    const selectedMic = useEventListenerSelector(
-        [events.playerInputChanged],
-        () => {
-            const selected = PlayersManager.getInputs().find((input) => input.source === 'Microphone');
-            // const Mics = inputSourceListManager.getInputList().Microphone; // get "fresh" list from
+    const selectedMic = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {
+        const selected = PlayersManager.getInputs().find((input) => input.source === 'Microphone');
+        const Mics = inputSourceListManager.getInputList().Microphone.list; // get "fresh" list from
 
-            if (selected) {
-                return Microphone.list.find((mic) => mic.id === getInputId(selected))?.label ?? '';
-            }
-            return '';
-        },
-        [Microphone],
-    );
+        if (selected) {
+            return Mics.find((mic) => mic.id === getInputId(selected))?.label ?? '';
+        }
+        return '';
+    });
 
     const setMic = (input: InputSource) => {
         PlayersManager.getPlayers().forEach((player) =>
