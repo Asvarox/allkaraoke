@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { focused, typography } from 'Elements/cssMixins';
@@ -7,12 +7,13 @@ import { buttonFocused } from 'Elements/Button';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import Modal from 'Elements/Modal';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import { css } from '@emotion/react';
 
 interface Props {
     playerNumber: number | null;
 }
 
-export default function PlayerChange({ playerNumber }: Props) {
+export default memo(function PlayerChange({ playerNumber }: Props) {
     const [isOpen, setIsOpen] = useState(false);
 
     console.log(playerNumber);
@@ -24,10 +25,12 @@ export default function PlayerChange({ playerNumber }: Props) {
         closeModal();
     };
 
+    const joined = playerNumber !== null;
+
     return (
         <>
-            <PlayerChangeContainer onClick={() => setIsOpen(true)} data-test="change-player">
-                {playerNumber === null ? (
+            <PlayerChangeContainer onClick={() => setIsOpen(true)} data-test="change-player" joined={joined}>
+                {!joined ? (
                     'Join game'
                 ) : (
                     <>
@@ -54,10 +57,7 @@ export default function PlayerChange({ playerNumber }: Props) {
                             style={{ color: styles.colors.players[1].perfect.fill }}>
                             Red
                         </MenuButton>
-                        <MenuButton
-                            onClick={() => selectPlayer(null)}
-                            disabled={null === playerNumber}
-                            data-test="change-to-unset">
+                        <MenuButton onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
                             Unassign
                         </MenuButton>
                         <hr />
@@ -67,7 +67,7 @@ export default function PlayerChange({ playerNumber }: Props) {
             )}
         </>
     );
-}
+});
 
 const Menu = styled(MenuContainer)`
     gap: 0;
@@ -80,7 +80,7 @@ const PlayerColorCircle = styled.div`
     border-radius: 1em;
 `;
 
-const PlayerChangeContainer = styled.button`
+const PlayerChangeContainer = styled.button<{ joined: boolean }>`
     position: absolute;
     z-index: 1;
     color: white;
@@ -95,6 +95,14 @@ const PlayerChangeContainer = styled.button`
     border: none;
     ${typography};
     background: rgba(0, 0, 0, 0.75);
+
+    ${(props) =>
+        !props.joined &&
+        css`
+            font-size: 3rem;
+            padding: 3rem;
+            ${focused}
+        `}
 
     :hover {
         ${focused};

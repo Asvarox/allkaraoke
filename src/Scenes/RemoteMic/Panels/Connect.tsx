@@ -86,29 +86,70 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
                     <>
                         {showConnectionTip && <h3>If it doesn't connect</h3>}
                         {connectionError && (
-                            <h3>
-                                <strong>
-                                    <Warning />
-                                </strong>{' '}
-                                Could not connect
-                            </h3>
+                            <>
+                                <h3>
+                                    <strong>
+                                        <Warning />
+                                    </strong>{' '}
+                                    Could not connect:
+                                </h3>
+                                <h6>
+                                    Error code: <strong>{connectionError}</strong>
+                                </h6>
+                                <br />
+                            </>
                         )}
-                        <h5>
-                            1. Make sure you are in the same{' '}
-                            <strong>
-                                <Wifi /> Wi-Fi
-                            </strong>
-                        </h5>
-                        <h5>
-                            2. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
-                        </h5>
-                        <h5>
-                            3. Scan the{' '}
-                            <strong>
-                                <QrCode2 /> QR Code
-                            </strong>{' '}
-                            again
-                        </h5>
+                        {connectionError === 'peer-unavailable' ? (
+                            <>
+                                <h4>The game seems to be offline 🤔</h4>
+                                <h5>
+                                    1. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                                </h5>
+                                <h5>
+                                    2. Scan the{' '}
+                                    <strong>
+                                        <QrCode2 /> QR Code
+                                    </strong>{' '}
+                                    again
+                                </h5>
+                                <h5>
+                                    3. Make sure you are in the same{' '}
+                                    <strong>
+                                        <Wifi /> Wi-Fi
+                                    </strong>
+                                </h5>
+                            </>
+                        ) : connectionError === 'network' ? (
+                            <>
+                                <h4>No internet access 💀</h4>
+                                <h5>
+                                    Make sure you are in the same{' '}
+                                    <strong>
+                                        <Wifi /> Wi-Fi
+                                    </strong>
+                                    and that it has internet connection
+                                </h5>
+                            </>
+                        ) : (
+                            <>
+                                <h5>
+                                    1. Make sure you are in the same{' '}
+                                    <strong>
+                                        <Wifi /> Wi-Fi
+                                    </strong>
+                                </h5>
+                                <h5>
+                                    2. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                                </h5>
+                                <h5>
+                                    3. Scan the{' '}
+                                    <strong>
+                                        <QrCode2 /> QR Code
+                                    </strong>{' '}
+                                    again
+                                </h5>
+                            </>
+                        )}
                     </>
                 )}
             </Form>

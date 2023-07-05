@@ -38,6 +38,14 @@ export default css`
         ${typography};
         margin: 0;
         font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    h6 {
+        ${typography};
+        margin: 0;
+        line-height: 1.5;
+        font-size: 1.3rem;
     }
 
     hr {

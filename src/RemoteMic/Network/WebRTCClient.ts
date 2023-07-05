@@ -46,6 +46,9 @@ class WebRTCClient {
         window.sessionStorage.setItem(MIC_ID_KEY, id);
     };
 
+    private unavailableIdRetries = 0;
+    private unavailableIdRetryTimeout: any = null;
+
     public connect = (roomId: string, name: string, silent: boolean) => {
         if (this.clientId === null) this.setClientId(v4());
 
@@ -58,10 +61,25 @@ class WebRTCClient {
         });
 
         this.peer.on('error', (e) => {
-            console.error(e.type, e);
+            // Happens when the device goes from offline to online
+            if (
+                e.type === 'unavailable-id' &&
+                this.unavailableIdRetries < 3 &&
+                this.unavailableIdRetryTimeout === null
+            ) {
+                this.peer?.destroy?.();
+                this.unavailableIdRetryTimeout = setTimeout(() => {
+                    this.unavailableIdRetryTimeout = null;
+                    this.unavailableIdRetries++;
+                    this.connect(roomId, name, silent);
+                }, 750);
+            } else {
+                this.unavailableIdRetries = 0;
+                console.error(e.type, e);
 
-            if (!this.connected && !this.reconnecting) {
-                events.karaokeConnectionStatusChange.dispatch('error', e.type);
+                if (!this.connected && !this.reconnecting) {
+                    events.karaokeConnectionStatusChange.dispatch('error', e.type);
+                }
             }
         });
     };
@@ -154,8 +172,6 @@ class WebRTCClient {
             setTimeout(() => this.reconnect(roomId, name), 1000);
         }
     };
-
-    public getRoomId = () => this.clientId;
 
     public sendKeyStroke = (key: keyStrokes) => {
         this.sendEvent('keystroke', { key });
