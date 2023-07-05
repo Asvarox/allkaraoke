@@ -25,18 +25,26 @@ export function useEventEffect<T extends (...args: any[]) => void>(event: GameEv
     }, [...eventList, effect]);
 }
 
-export function useEventListenerSelector<S extends any>(event: GameEvent<any> | GameEvent<any>[], selector: () => S) {
+export function useEventListenerSelector<S extends any>(
+    event: GameEvent<any> | GameEvent<any>[],
+    selector: () => S,
+    dependencies: any[] = [],
+) {
     const initialValueRef = useMemo(selector, []);
     const [value, setValue] = useState<S>(initialValueRef);
 
     const eventList = Array.isArray(event) ? event : [event];
 
     useEffect(() => {
+        setValue(selector());
+    }, dependencies);
+
+    useEffect(() => {
         const subscriber = () => setValue(selector());
         eventList.forEach((e) => e.subscribe(subscriber));
 
         return () => eventList.forEach((e) => e.unsubscribe(subscriber));
-    }, eventList);
+    }, [...eventList]);
 
     return value;
 }

@@ -105,7 +105,7 @@ test('Default microphone is selected for built-in', async ({ page, context }) =>
     await connectDevices({
         id: 'not-related-device',
         label: 'Not related',
-        channels: 2,
+        channels: 1,
     });
 
     await page.getByTestId('built-in').click();
@@ -117,12 +117,12 @@ test('Default microphone is selected for built-in', async ({ page, context }) =>
     await page.getByTestId('player-0-input').click();
     await page.getByTestId('player-1-input').click();
 
-    // Make sure that it still selects the default one
+    // Make sure it keeps the different mic
     await page.getByTestId('back-button').click();
     await page.getByTestId('built-in').click();
-    await expect(page.getByTestId('selected-mic')).toContainText('Default device');
-    await page.getByTestId('selected-mic').click();
     await expect(page.getByTestId('selected-mic')).toContainText('Not related');
+    await page.getByTestId('selected-mic').click();
+    await expect(page.getByTestId('selected-mic')).toContainText('Default device');
 
     // Check if the initial setup doesn't show after refresh
     await page.getByTestId('save-button').click();

@@ -9,7 +9,7 @@ import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { typography } from 'Elements/cssMixins';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     songPreview: SongPreview;

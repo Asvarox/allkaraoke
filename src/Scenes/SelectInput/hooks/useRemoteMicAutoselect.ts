@@ -2,7 +2,7 @@ import { useEventEffect } from 'GameEvents/hooks';
 import { useRef } from 'react';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import events from 'GameEvents/GameEvents';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 export function useRemoteMicAutoselect() {
     const nextPlayerToAutoSwitch = useRef(0);

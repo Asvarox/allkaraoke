@@ -2,7 +2,7 @@ import events from 'GameEvents/GameEvents';
 import { SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { MobilePhoneModeSetting } from 'Scenes/Settings/SettingsState';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 
 const trackSongData =

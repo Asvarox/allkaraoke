@@ -9,7 +9,7 @@ import styles from '../Drawing/styles';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { VolumeIndicator } from 'Elements/VolumeIndicator';
-import { PlayerEntity } from 'Scenes/PlayersManager';
+import { PlayerEntity } from 'Players/PlayersManager';
 
 interface Props {
     player: PlayerEntity;

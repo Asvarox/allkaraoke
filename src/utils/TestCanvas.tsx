@@ -9,7 +9,7 @@ import roundRect from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/roundRec
 import { drawSprite, getSprite } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites';
 import pitchToFrequency from 'utils/pitchToFrequency';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 // Add needed stuff here
 const CanvasTestApi = {

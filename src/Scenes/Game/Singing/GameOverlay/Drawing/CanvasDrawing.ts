@@ -18,7 +18,7 @@ import ExplodingNoteParticle from './Particles/ExplodingNote';
 import FadeoutNote from './Particles/FadeoutNote';
 import RayParticle from './Particles/Ray';
 import VibratoParticle from './Particles/Vibrato';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
     return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);

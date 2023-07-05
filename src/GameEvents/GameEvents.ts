@@ -1,9 +1,9 @@
 import { PeerErrorType, SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
-import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { SongStats } from 'Songs/stats/common';
 import { keyStrokes } from 'RemoteMic/Network/events';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
+import { SelectedPlayerInput } from 'Players/PlayersManager';
 
 export class GameEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];

@@ -2,6 +2,7 @@ import { range } from 'lodash-es';
 import { InputSource } from './interfaces';
 import userMediaService from 'UserMedia/userMediaService';
 import { captureException } from '@sentry/react';
+import { getInputId } from 'Players/utils';
 
 interface NameMapper {
     test: (label: string, channel: number, channels: number) => boolean;
@@ -42,7 +43,7 @@ export class MicrophoneInputSource {
     public static readonly inputName = 'Microphone';
 
     public static getDefault = () =>
-        MicrophoneInputSource.inputList.find((input) => input.id === 'default;0') ??
+        MicrophoneInputSource.inputList.find((input) => input.id === getInputId({ deviceId: 'default', channel: 0 })) ??
         MicrophoneInputSource.inputList[0] ??
         null;
 
@@ -68,7 +69,7 @@ export class MicrophoneInputSource {
                     channel,
                     channels,
                     deviceId: device.deviceId,
-                    id: `${device.deviceId};${channel}`,
+                    id: getInputId({ deviceId: device.deviceId, channel }),
                     preferred: getPreferred(device.label, channel, channels),
                 }));
             })

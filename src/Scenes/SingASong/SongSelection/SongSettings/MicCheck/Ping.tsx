@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import styled from '@emotion/styled';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     playerNumber: number;

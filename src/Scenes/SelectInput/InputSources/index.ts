@@ -1,5 +1,4 @@
 import events from 'GameEvents/GameEvents';
-import { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
 import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingTest';
 import {
     InputSourceList,
@@ -9,6 +8,7 @@ import {
 import { DummyInputSource } from './Dummy';
 import { MicrophoneInputSource } from './Microphone';
 import { RemoteMicrophoneInputSource } from './Remote';
+import { SelectedPlayerInput } from 'Players/PlayersManager';
 
 const selectedPlayerInputToId = (input: SelectedPlayerInput) => `${input.deviceId};${input.channel}`;
 

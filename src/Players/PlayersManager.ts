@@ -1,4 +1,4 @@
-import InputManager, { SelectedPlayerInput } from 'Scenes/Game/Singing/Input/InputManager';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import storage from 'utils/storage';
 import events from 'GameEvents/GameEvents';
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
@@ -7,6 +7,12 @@ import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { debounce } from 'lodash-es';
 
 const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
+
+export interface SelectedPlayerInput {
+    source: InputSourceNames;
+    deviceId?: string;
+    channel: number;
+}
 
 export class PlayerEntity {
     public nameOverride: string = '';

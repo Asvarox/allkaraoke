@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import usePlayerMic from 'hooks/players/usePlayerMic';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 const VolumeIndicatorBase = styled.div<{ color: string }>`
     background: linear-gradient(270deg, rgba(${(props) => props.color}, 1) 0%, rgba(${(props) => props.color}, 0) 100%);

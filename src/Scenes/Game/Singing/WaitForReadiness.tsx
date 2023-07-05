@@ -9,7 +9,7 @@ import { waitFinished } from 'SoundManager';
 import sleep from 'utils/sleep';
 import events from 'GameEvents/GameEvents';
 import CountUp from 'react-countup';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     onFinish: () => void;

@@ -1,18 +1,19 @@
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { nextIndex, Switcher } from 'Elements/Switcher';
 import { InputSource } from '../InputSources/interfaces';
-import { useEventEffect } from 'GameEvents/hooks';
+import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import styled from '@emotion/styled';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
+import { getInputId } from 'Players/utils';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;
@@ -24,21 +25,32 @@ interface Props {
 
 function BuiltIn(props: Props) {
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
-    const [selectedMic, setSelectedMic] = useState('');
 
     const { Microphone } = useMicrophoneList(true);
+
+    const selectedMic = useEventListenerSelector(
+        [events.playerInputChanged],
+        () => {
+            const selected = PlayersManager.getInputs().find((input) => input.source === 'Microphone');
+            // const Mics = inputSourceListManager.getInputList().Microphone; // get "fresh" list from
+
+            if (selected) {
+                return Microphone.list.find((mic) => mic.id === getInputId(selected))?.label ?? '';
+            }
+            return '';
+        },
+        [Microphone],
+    );
 
     const setMic = (input: InputSource) => {
         PlayersManager.getPlayers().forEach((player) =>
             player.changeInput(MicrophoneInputSource.inputName, input.channel, input.deviceId),
         );
-        setSelectedMic(input.label);
     };
 
     const autoselect = () => {
         if (selectedMic === '') {
             const defaultDevice = Microphone.getDefault();
-            console.log(defaultDevice);
             if (defaultDevice) {
                 setMic(defaultDevice);
             }

@@ -17,7 +17,7 @@ import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
-import PlayersManager, { PlayerEntity } from 'Scenes/PlayersManager';
+import PlayersManager, { PlayerEntity } from 'Players/PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

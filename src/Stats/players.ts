@@ -1,7 +1,7 @@
 import { PLAYER_NAMES_SESSION_STORAGE_KEY, PREVIOUS_PLAYER_NAMES_STORAGE_KEY } from 'hooks/players/consts';
 
 import events from 'GameEvents/GameEvents';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 events.songStarted.subscribe((_, singSetup) => {
     let currentNames = JSON.parse(window.sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) || [];

@@ -10,7 +10,7 @@ import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     song: Song;

@@ -8,7 +8,7 @@ import inputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSources from 'Scenes/SelectInput/InputSources';
 import UserMediaService from 'UserMedia/userMediaService';
 import CameraManager from 'Camera/CameraManager';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 // @ts-ignore
 window.__exposeSingletons = () => {

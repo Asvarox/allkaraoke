@@ -5,7 +5,7 @@ import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useRef, useState } from 'react';
 import { MAX_NAME_LENGTH } from 'consts';
-import { PlayerEntity } from 'Scenes/PlayersManager';
+import { PlayerEntity } from 'Players/PlayersManager';
 import { useEventListener } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 

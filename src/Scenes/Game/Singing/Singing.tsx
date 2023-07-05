@@ -14,7 +14,7 @@ import PostGame from './PostGame/PostGame';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import useBlockScroll from 'hooks/useBlockScroll';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     video: string;

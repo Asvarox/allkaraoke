@@ -9,7 +9,7 @@ import MicCheck from 'Scenes/SelectInput/MicCheck';
 import events from 'GameEvents/GameEvents';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import { ValuesType } from 'utility-types';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

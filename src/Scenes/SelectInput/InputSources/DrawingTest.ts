@@ -1,11 +1,12 @@
 import { InputSource } from './interfaces';
+import { getInputId } from 'Players/utils';
 
 const inputs = [
     {
         channels: 2,
         channel: 1,
         label: 'Drawing Test Input',
-        id: 'default;1',
+        id: getInputId({ deviceId: 'default', channel: 1 }),
         deviceId: 'default',
     },
 ];

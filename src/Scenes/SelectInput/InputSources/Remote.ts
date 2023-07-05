@@ -2,10 +2,11 @@ import { RemoteMic } from 'RemoteMic/RemoteMicInput';
 import { InputSource } from './interfaces';
 import events from 'GameEvents/GameEvents';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import { getInputId } from 'Players/utils';
 
 const mapRemoteMicToInput = (remoteMic: RemoteMic): InputSource => ({
     label: `📱${remoteMic.name}`,
-    id: `${remoteMic.id};0`,
+    id: getInputId({ deviceId: remoteMic.id, channel: 0 }),
     deviceId: remoteMic.id,
     channels: 1,
     channel: 0,

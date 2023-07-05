@@ -1,18 +1,19 @@
 import { InputSource } from './interfaces';
+import { getInputId } from 'Players/utils';
 
 const inputList = [
     {
         channels: 2,
         channel: 0,
         label: 'Dummy Input 1',
-        id: 'default;0',
+        id: getInputId({ deviceId: 'default', channel: 0 }),
         deviceId: 'default',
     },
     {
         channels: 2,
         channel: 1,
         label: 'Dummy Input 2',
-        id: 'default;1',
+        id: getInputId({ deviceId: 'default', channel: 1 }),
         deviceId: 'default',
     },
 ];

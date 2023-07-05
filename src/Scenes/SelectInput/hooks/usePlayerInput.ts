@@ -5,7 +5,7 @@ import { useEventListenerSelector } from 'GameEvents/hooks';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import { InputSourceList, InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import tuple from 'utils/tuple';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 export function usePlayerInput(playerNumber: number, sources: Record<InputSourceNames, InputSourceList>) {
     const sourceList = Object.keys(sources) as Array<InputSourceNames>;

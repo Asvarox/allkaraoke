@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import { useSongStats } from 'Songs/stats/hooks';
 import GameState from '../GameState/GameState';
-import PlayersManager from 'Scenes/PlayersManager';
+import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     width: number;
