@@ -1,6 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+yarn pretty-quick --staged
 yarn lint-staged
 yarn test --watch=false
 yarn unimported --no-cache

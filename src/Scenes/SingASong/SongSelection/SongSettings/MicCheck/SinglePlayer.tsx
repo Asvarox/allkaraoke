@@ -7,15 +7,15 @@ import { useEventListener, useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
 import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
 import Ping from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
-import PlayersManager, { PlayerEntity } from "Players/PlayersManager";
-import PlayerStatus from "Scenes/SingASong/SongSelection/SongSettings/MicCheck/Status";
-import usePlayerMicStatus from "hooks/players/usePlayerMicStatus";
-import player from "Scenes/Game/Singing/Player";
+import PlayersManager, { PlayerEntity } from 'Players/PlayersManager';
+import PlayerStatus from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Status';
+import usePlayerMicStatus from 'hooks/players/usePlayerMicStatus';
+import player from 'Scenes/Game/Singing/Player';
 
 interface Props {
     player: PlayerEntity;
 }
-export default function SinglePlayer({ player}: Props) {
+export default function SinglePlayer({ player }: Props) {
     const status = usePlayerMicStatus(player.number);
 
     return (
@@ -23,7 +23,7 @@ export default function SinglePlayer({ player}: Props) {
             {player.getName()}
             <Ping playerNumber={player.number} />
             <PlayerStatus status={status} />
-            {status !== "unavailable" && <PlayerMicCheck playerNumber={player.number} />}
+            {status !== 'unavailable' && <PlayerMicCheck playerNumber={player.number} />}
         </Indicator>
     );
 }

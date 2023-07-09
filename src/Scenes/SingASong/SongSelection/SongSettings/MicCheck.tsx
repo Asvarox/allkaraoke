@@ -8,10 +8,10 @@ import events from 'GameEvents/GameEvents';
 import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
 import Ping from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
 import PlayersManager from 'Players/PlayersManager';
-import PlayerStatus from "Scenes/SingASong/SongSelection/SongSettings/MicCheck/Status";
-import usePlayerMicStatus from "hooks/players/usePlayerMicStatus";
-import player from "Scenes/Game/Singing/Player";
-import SinglePlayer from "Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer";
+import PlayerStatus from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Status';
+import usePlayerMicStatus from 'hooks/players/usePlayerMicStatus';
+import player from 'Scenes/Game/Singing/Player';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer';
 
 export default function MicCheck() {
     // Force update when the name changes
@@ -29,9 +29,7 @@ export default function MicCheck() {
             <MicChecksContainer>
                 Microphone Check
                 {isSetup ? (
-                    PlayersManager.getPlayers().map((player) => (
-                        <SinglePlayer key={player.number} player={player} />
-                    ))
+                    PlayersManager.getPlayers().map((player) => <SinglePlayer key={player.number} player={player} />)
                 ) : (
                     <>
                         <Indicator>Mic not setup</Indicator>

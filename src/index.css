@@ -151,7 +151,6 @@ code {
     overflow: hidden;
 }
 
-
 .Toastify {
     font-size: 1.5rem;
     --toastify-toast-width: 32rem;
@@ -183,26 +182,32 @@ code {
 }
 
 @keyframes fade-in {
-    from { opacity: 0; }
+    from {
+        opacity: 0;
+    }
 }
 
 @keyframes fade-out {
-    to { opacity: 0; }
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes slide-from-right {
-    from { transform: scale(0.8); }
+    from {
+        transform: scale(0.8);
+    }
 }
 
 @keyframes slide-to-left {
-    to { transform: scale(1.2); }
+    to {
+        transform: scale(1.2);
+    }
 }
 
 ::view-transition-old(menu-container) {
-    animation: 210ms ease-in-out both fade-out,
-    300ms ease-in-out  both slide-to-left;
+    animation: 210ms ease-in-out both fade-out, 300ms ease-in-out both slide-to-left;
 }
 ::view-transition-new(menu-container) {
-    animation: 210ms ease-in-out 90ms both fade-in,
-    300ms ease-in-out  both slide-from-right;
+    animation: 210ms ease-in-out 90ms both fade-in, 300ms ease-in-out both slide-from-right;
 }

@@ -44,7 +44,7 @@ class RemoteMicInput implements InputInterface {
     public getChannelsCount = () => 1;
 
     public getStatus = (deviceId?: string) => {
-        const mic = RemoteMicManager.getRemoteMicById(deviceId ?? '')
+        const mic = RemoteMicManager.getRemoteMicById(deviceId ?? '');
 
         if (!mic) {
             return 'unavailable' as const;

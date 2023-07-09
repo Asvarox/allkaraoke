@@ -8,7 +8,7 @@ import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import PlayersManager from 'Players/PlayersManager';
-import InputInterface from "Scenes/Game/Singing/Input/Interface";
+import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 
 class InputManager {
     private isMonitoring = false;
@@ -27,7 +27,7 @@ class InputManager {
         const source = this.sourceNameToInput(input.source);
 
         return source.getStatus(input.deviceId, input.channel);
-    }
+    };
 
     public getPlayerFrequency = (playerNumber: number) => {
         const input = PlayersManager.getPlayer(playerNumber).input;

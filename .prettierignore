@@ -2,3 +2,4 @@ build
 node_modules
 public/songs
 tests/fixtures
+src/Elements/Menu/completed-animation.json

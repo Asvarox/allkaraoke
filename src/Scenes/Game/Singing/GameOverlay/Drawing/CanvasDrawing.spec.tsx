@@ -1,12 +1,12 @@
-import { expect, test } from "@playwright/experimental-ct-react";
-import { TestCanvas } from "../../../../../utils/TestCanvas";
-import { mulitrack } from "Songs/utils/song-fixture";
-import { NotesSection } from "interfaces";
-import tuple from "utils/tuple";
+import { expect, test } from '@playwright/experimental-ct-react';
+import { TestCanvas } from '../../../../../utils/TestCanvas';
+import { mulitrack } from 'Songs/utils/song-fixture';
+import { NotesSection } from 'interfaces';
+import tuple from 'utils/tuple';
 
 test.use({ viewport: { width: 800, height: 650 } });
 
-test("Should properly draw game state", async ({ mount, page }) => {
+test('Should properly draw game state', async ({ mount, page }) => {
     const component = await mount(<TestCanvas width={800} height={650} />);
 
     await page.evaluate(() => {
@@ -33,7 +33,7 @@ test("Should properly draw game state", async ({ mount, page }) => {
     await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
 });
 
-test("should draw missed note above the target note if the distance is positive", async ({ mount, page }) => {
+test('should draw missed note above the target note if the distance is positive', async ({ mount, page }) => {
     const component = await mount(<TestCanvas width={800} height={650} />);
 
     await page.evaluate(([mulitrack]) => {

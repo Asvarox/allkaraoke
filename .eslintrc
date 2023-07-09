@@ -1,5 +1,5 @@
 {
-    "plugins": ["prettier", "no-only-tests"],
+    "plugins": ["no-only-tests"],
     "extends": ["react-app", "prettier"],
     "env": {},
     "rules": {
