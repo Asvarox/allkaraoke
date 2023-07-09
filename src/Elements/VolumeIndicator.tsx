@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import usePlayerMic from 'hooks/players/usePlayerMic';
+import { usePlayerMicData } from 'hooks/players/usePlayerMic';
 import PlayersManager from 'Players/PlayersManager';
+import {ForwardedRef, forwardRef, useCallback, useState} from 'react';
 
 const VolumeIndicatorBase = styled.div<{ color: string }>`
     background: linear-gradient(270deg, rgba(${(props) => props.color}, 1) 0%, rgba(${(props) => props.color}, 0) 100%);
@@ -16,16 +17,32 @@ const VolumeIndicatorBase = styled.div<{ color: string }>`
     pointer-events: none;
 `;
 
-export const VolumeIndicator = ({ volume, playerNumber, ...rest }: { playerNumber: number; volume: number }) => {
-    const player = PlayersManager.getPlayer(playerNumber);
-    const percent = `${Math.min(1, volume * 20)}`;
-    const color = styles.colors.players[player.number].text;
+export const VolumeIndicator = forwardRef(
+    ({ volume, playerNumber, ...rest }: { playerNumber: number; volume: number }, ref:ForwardedRef<HTMLDivElement | null>) => {
+        const player = PlayersManager.getPlayer(playerNumber);
+        const percent = `${Math.min(1, volume * 20)}`;
+        const color = styles.colors.players[player.number].text;
 
-    return <VolumeIndicatorBase color={color} {...rest} style={{ transform: `scaleX(${percent})` }} />;
-};
+        return <VolumeIndicatorBase color={color} {...rest} style={{ transform: `scaleX(${percent})` }} ref={ref} />;
+    },
+);
 
 export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: number }) => {
-    const [volume] = usePlayerMic(playerNumber);
+    const [elem, setElem] = useState<HTMLDivElement | null>();
 
-    return <VolumeIndicator {...props} playerNumber={playerNumber} volume={volume} />;
+    const cb = useCallback(
+        ([volume]: [number, number]) => {
+            if (elem) {
+                const percent = `${Math.min(1, volume * 20)}`;
+
+                elem.style.transform = `scaleX(${percent})`;
+            }
+        },
+        [elem],
+    );
+
+    usePlayerMicData(playerNumber, undefined, cb);
+    const color = styles.colors.players[playerNumber].text;
+
+    return <VolumeIndicatorBase {...props} color={color} ref={setElem} />;
 };
