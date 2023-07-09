@@ -28,7 +28,7 @@ export default Ping;
 
 const PingContainer = styled.span`
     position: absolute;
-    right: 0.5rem;
+    right: 4rem;
     bottom: 0.5rem;
     font-size: 1.75rem;
 `;

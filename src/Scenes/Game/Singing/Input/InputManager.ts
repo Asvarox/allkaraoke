@@ -8,6 +8,7 @@ import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import PlayersManager from 'Players/PlayersManager';
+import InputInterface from "Scenes/Game/Singing/Input/Interface";
 
 class InputManager {
     private isMonitoring = false;
@@ -19,6 +20,13 @@ class InputManager {
                 this.startMonitoring();
             }
         });
+    }
+
+    public getInputStatus = (playerNumber: number) => {
+        const input = PlayersManager.getPlayer(playerNumber).input;
+        const source = this.sourceNameToInput(input.source);
+
+        return source.getStatus(input.deviceId, input.channel);
     }
 
     public getPlayerFrequency = (playerNumber: number) => {
@@ -59,7 +67,7 @@ class InputManager {
     public monitoringStarted = () => this.isMonitoring;
 
     // todo: Create eg. "InputSourceManager" and have the logic there?
-    public sourceNameToInput = (sourceName: InputSourceNames) => {
+    public sourceNameToInput = (sourceName: InputSourceNames): InputInterface => {
         if (sourceName === MicrophoneInputSource.inputName) return MicInput;
         if (sourceName === DrawingTestInputSource.inputName) return DrawingTestInput;
         if (sourceName === RemoteMicrophoneInputSource.inputName) return RemoteMicInput;

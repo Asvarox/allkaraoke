@@ -100,6 +100,8 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
         return Math.sqrt(sum / input.length);
     }
     public requestReadiness = () => Promise.resolve(true);
+
+    public getStatus = () => 'ok' as const;
 }
 
 export default new SimplifiedMic();

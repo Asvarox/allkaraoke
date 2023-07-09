@@ -41,6 +41,8 @@ class DummyInput implements InputInterface {
     public getInputLag = () => 150;
     public getChannelsCount = () => 2;
     public requestReadiness = () => Promise.resolve(true);
+
+    public getStatus = () => 'ok' as const;
 }
 
 export default new DummyInput();

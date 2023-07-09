@@ -7,4 +7,8 @@ export default interface InputInterface {
     getVolumes: (deviceId?: string) => number[];
 
     requestReadiness: (deviceId?: string) => Promise<boolean>;
+
+    getStatus: (deviceId?: string, channel?: number) => inputStatus;
 }
+
+export type inputStatus = 'ok' | 'unavailable' | 'unstable';

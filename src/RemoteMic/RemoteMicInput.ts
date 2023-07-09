@@ -3,8 +3,9 @@ import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import sendEvent from './Network/sendEvent';
 import { getPingTime } from 'RemoteMic/Network/utils';
+import RemoteMicManager from "RemoteMic/RemoteMicManager";
 
-class RemoteMicInput implements InputInterface {
+class RemoteMicInput {
     private frequencies: number[] | number[][] = [0];
     private volumes = [0];
 

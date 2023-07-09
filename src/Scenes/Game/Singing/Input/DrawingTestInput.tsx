@@ -17,6 +17,8 @@ class DrawingTestInput implements InputInterface {
     public setFrequency = (channel: 0 | 1, value: number) => (this.frequencies[channel] = value);
 
     public requestReadiness = () => Promise.resolve(true);
+
+    public getStatus = () => 'ok' as const;
 }
 
 export default new DrawingTestInput();
