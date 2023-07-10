@@ -1,7 +1,7 @@
-import { AbsoluteFill, Easing, interpolate, Series, useCurrentFrame } from 'remotion';
 import React from 'react';
-import { CenterAbsoluteFill, SAnimated } from 'videos/support/Components/common';
+import { AbsoluteFill, Easing, interpolate, Series, useCurrentFrame } from 'remotion';
 import { Fade, Scale } from 'remotion-animated';
+import { CenterAbsoluteFill, SAnimated } from 'videos/support/Components/common';
 
 const SONG_PRESENTATION_FRAMES = 110;
 const TITLE_PRESENTATION_FRAMES = 75;

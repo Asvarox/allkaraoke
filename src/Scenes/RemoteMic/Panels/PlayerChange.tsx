@@ -1,13 +1,13 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { memo, useState } from 'react';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
-import { focused, typography } from 'Elements/cssMixins';
 import { buttonFocused } from 'Elements/Button';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import Modal from 'Elements/Modal';
+import { focused, typography } from 'Elements/cssMixins';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
-import { css } from '@emotion/react';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { memo, useState } from 'react';
 
 interface Props {
     playerNumber: number | null;

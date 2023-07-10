@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
+import { GameTip } from 'Elements/GameTip';
+import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { DetailedScore, SingSetup, Song } from 'interfaces';
 import { useState } from 'react';
-import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
 import SongPage from '../../SongPage';
 import HighScoresView from './Views/HighScores';
-import { GameTip } from 'Elements/GameTip';
-import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 export interface PlayerScore {
     detailedScore: [DetailedScore, DetailedScore];

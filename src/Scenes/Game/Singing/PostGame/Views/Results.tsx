@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
-import useKeyboard from 'hooks/useKeyboard';
-import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
-import React, { useMemo, useState } from 'react';
 import { sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
-import useKeyboardHelp from 'hooks/useKeyboardHelp';
-import CameraRoll from 'Scenes/Game/Singing/PostGame/Views/Results/CameraRoll';
 import { PlayerScore } from 'Scenes/Game/Singing/PostGame/PostGameView';
+import CameraRoll from 'Scenes/Game/Singing/PostGame/Views/Results/CameraRoll';
 import PlayerScoreView from 'Scenes/Game/Singing/PostGame/Views/Results/PlayerScore';
 import CameraManager from 'Camera/CameraManager';
+import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
+import { useMemo, useState } from 'react';
 
 interface Props {
     onNextStep: () => void;

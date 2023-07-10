@@ -1,23 +1,23 @@
+import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
 import { Switcher } from 'Elements/Switcher';
-import useKeyboardNav from 'hooks/useKeyboardNav';
+import { PlayerMicCheck } from 'Elements/VolumeIndicator';
+import events from 'GameEvents/GameEvents';
+import { useEventListenerSelector } from 'GameEvents/hooks';
+import PlayersManager, { PlayerEntity } from 'Players/PlayersManager';
 import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
+import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
-import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
-import { useEffect } from 'react';
-import { PlayerMicCheck } from 'Elements/VolumeIndicator';
-import styled from '@emotion/styled';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { useMicrophoneStatus } from 'UserMedia/hooks';
-import isWindows from 'utils/isWindows';
-import { useEventListenerSelector } from 'GameEvents/hooks';
-import events from 'GameEvents/GameEvents';
-import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { useEffect } from 'react';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
-import PlayersManager, { PlayerEntity } from 'Players/PlayersManager';
+import isWindows from 'utils/isWindows';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

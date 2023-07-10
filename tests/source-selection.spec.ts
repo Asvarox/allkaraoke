@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import connectRemoteMic from './steps/connectRemoteMic';
 import { expectMonitoringToBeEnabled } from './steps/assertMonitoringStatus';
+import connectRemoteMic from './steps/connectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });

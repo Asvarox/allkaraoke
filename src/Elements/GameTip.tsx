@@ -1,5 +1,5 @@
-import { useRef } from 'react';
 import { QrCode2 } from '@mui/icons-material';
+import { useRef } from 'react';
 import { randomInt } from 'utils/randomValue';
 
 const data = [

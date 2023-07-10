@@ -1,8 +1,8 @@
-import { range } from 'lodash-es';
-import { InputSource } from './interfaces';
-import userMediaService from 'UserMedia/userMediaService';
 import { captureException } from '@sentry/react';
 import { getInputId } from 'Players/utils';
+import userMediaService from 'UserMedia/userMediaService';
+import { range } from 'lodash-es';
+import { InputSource } from './interfaces';
 
 interface NameMapper {
     test: (label: string, channel: number, channels: number) => boolean;

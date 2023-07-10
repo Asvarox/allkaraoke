@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import usePrevious from 'hooks/usePrevious';
+import { useEffect } from 'react';
 
 export default function useEffectDebugger(effectHook: any, dependencies: any[], dependencyNames: any[] = []) {
     const previousDeps = usePrevious(dependencies);

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
+import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
 import { useRoute } from 'wouter';
 
 const linkObject = new URL(window.location.href);

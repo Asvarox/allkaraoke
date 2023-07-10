@@ -1,8 +1,8 @@
-import { RemoteMic } from 'RemoteMic/RemoteMicInput';
-import { InputSource } from './interfaces';
 import events from 'GameEvents/GameEvents';
-import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { getInputId } from 'Players/utils';
+import { RemoteMic } from 'RemoteMic/RemoteMicInput';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import { InputSource } from './interfaces';
 
 const mapRemoteMicToInput = (remoteMic: RemoteMic): InputSource => ({
     label: `📱${remoteMic.name}`,

@@ -1,8 +1,8 @@
-import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
-import { Fade, Move, Scale } from 'remotion-animated';
 import { Gif } from '@remotion/gif';
-import allKaraokeLogo from 'Elements/logo.gif';
+import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
 import dotParty from 'Elements/dotparty.gif';
+import allKaraokeLogo from 'Elements/logo.gif';
+import { Fade, Move, Scale } from 'remotion-animated';
 import { SAnimated } from 'videos/support/Components/common';
 
 interface Props {}

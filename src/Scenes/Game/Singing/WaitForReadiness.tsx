@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
-import { SyntheticEvent, useEffect, useRef, useState } from 'react';
-import { typography } from 'Elements/cssMixins';
-import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
-import { CircularProgress } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
-import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
-import { waitFinished } from 'SoundManager';
-import sleep from 'utils/sleep';
+import { CircularProgress } from '@mui/material';
+import { typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
-import CountUp from 'react-countup';
+import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
+import { waitFinished } from 'SoundManager';
+import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
+import { SyntheticEvent, useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
+import sleep from 'utils/sleep';
 
 interface Props {
     onFinish: () => void;

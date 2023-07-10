@@ -1,9 +1,9 @@
-import { Peer } from 'peerjs';
-import { v4 } from 'uuid';
-import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import peerJSOptions from 'utils/peerJSOptions';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
 import events from 'GameEvents/GameEvents';
+import { WebRTCEvents } from 'RemoteMic/Network/events';
+import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import { Peer } from 'peerjs';
+import peerJSOptions from 'utils/peerJSOptions';
+import { v4 } from 'uuid';
 
 const ROOM_ID_KEY = 'room_id_key';
 

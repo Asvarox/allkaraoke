@@ -1,12 +1,12 @@
-import { DataConnection, Peer } from 'peerjs';
 import events from 'GameEvents/GameEvents';
-import { v4 } from 'uuid';
-import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
-import peerJSOptions from 'utils/peerJSOptions';
-import { keyStrokes, WebRTCEvents } from 'RemoteMic/Network/events';
-import sendEvent from './sendEvent';
-import { throttle } from 'lodash-es';
+import { WebRTCEvents, keyStrokes } from 'RemoteMic/Network/events';
 import { getPingTime } from 'RemoteMic/Network/utils';
+import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
+import { throttle } from 'lodash-es';
+import { DataConnection, Peer } from 'peerjs';
+import peerJSOptions from 'utils/peerJSOptions';
+import { v4 } from 'uuid';
+import sendEvent from './sendEvent';
 
 const MIC_ID_KEY = 'MIC_CLIENT_ID';
 

@@ -1,6 +1,12 @@
+import { CircularProgress } from '@mui/material';
+import CameraManager from 'Camera/CameraManager';
 import { MenuButton } from 'Elements/Menu';
+import MenuWithLogo from 'Elements/MenuWithLogo';
 import { nextValue, Switcher } from 'Elements/Switcher';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { ReactNode, useEffect, useState } from 'react';
 import {
     BackgroundMusic,
     BackgroundMusicSetting,
@@ -11,12 +17,6 @@ import {
     MobilePhoneModeSetting,
     useSettingValue,
 } from 'Scenes/Settings/SettingsState';
-import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import MenuWithLogo from 'Elements/MenuWithLogo';
-import { ReactNode, useEffect, useState } from 'react';
-import CameraManager from 'Camera/CameraManager';
-import { CircularProgress } from '@mui/material';
-import useBackgroundMusic from 'hooks/useBackgroundMusic';
 
 interface Props {}
 

@@ -1,7 +1,7 @@
 import ExcludeLanguagesView from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import { ComponentProps, useState } from 'react';
 import SongSelection from 'Scenes/SingASong/SongSelection/SongSelection';
+import { ComponentProps, useState } from 'react';
 
 function SingASong(props: ComponentProps<typeof SongSelection>) {
     const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);

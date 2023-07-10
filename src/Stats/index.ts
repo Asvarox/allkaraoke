@@ -1,3 +1,3 @@
-import './players';
-import './lastVisit';
 import 'Songs/stats';
+import './lastVisit';
+import './players';

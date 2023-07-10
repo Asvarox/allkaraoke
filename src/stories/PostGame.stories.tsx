@@ -1,11 +1,11 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { DetailedScore, GAME_MODE, SingSetup, Song } from 'interfaces';
-import { ComponentProps } from 'react';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
+import { DetailedScore, GAME_MODE, SingSetup, Song } from 'interfaces';
+import { ComponentProps } from 'react';
+import { ValuesType } from 'utility-types';
 import tuple from 'utils/tuple';
 import song from '../../public/songs/2 Plus 1-Chodz, Pomaluj Mój Swiat.json';
-import { ValuesType } from 'utility-types';
 
 interface StoryArgs {
     player1Score: number;

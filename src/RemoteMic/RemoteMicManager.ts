@@ -1,7 +1,7 @@
-import Peer from 'peerjs';
+import events from 'GameEvents/GameEvents';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import { RemoteMic } from 'RemoteMic/RemoteMicInput';
-import events from 'GameEvents/GameEvents';
+import Peer from 'peerjs';
 
 class RemoteMicManager {
     private remoteMics: RemoteMic[] = [];

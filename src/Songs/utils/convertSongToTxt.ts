@@ -1,8 +1,8 @@
+import { SongTXTKeys, typesMap } from 'Songs/utils/convertTxtToSong';
+import isNotesSection from 'Songs/utils/isNotesSection';
 import { Note, Song } from 'interfaces';
 import { invert } from 'lodash-es';
-import isNotesSection from 'Songs/utils/isNotesSection';
 import { ValuesType } from 'utility-types';
-import { SongTXTKeys, typesMap } from 'Songs/utils/convertTxtToSong';
 
 export const txtTypesMap = invert(typesMap) as any as Record<ValuesType<typeof typesMap>, keyof typeof typesMap>;
 

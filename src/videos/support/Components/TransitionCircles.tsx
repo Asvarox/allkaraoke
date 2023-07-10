@@ -1,5 +1,5 @@
-import { Easing, interpolate, random, useCurrentFrame } from 'remotion';
 import { SVGProps, useMemo } from 'react';
+import { Easing, interpolate, random, useCurrentFrame } from 'remotion';
 
 interface TransitionCircleProps extends SVGProps<SVGCircleElement> {
     delay: number;

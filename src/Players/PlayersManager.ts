@@ -1,10 +1,10 @@
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import storage from 'utils/storage';
 import events from 'GameEvents/GameEvents';
-import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
-import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import inputSourceListManager from 'Scenes/SelectInput/InputSources';
+import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { debounce } from 'lodash-es';
+import storage from 'utils/storage';
 
 const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
 

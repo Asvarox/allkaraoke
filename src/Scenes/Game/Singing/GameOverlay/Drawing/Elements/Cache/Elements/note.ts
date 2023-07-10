@@ -1,6 +1,6 @@
-import { Note } from 'interfaces';
-import applyColor from 'Scenes/Game/Singing/GameOverlay/Drawing/applyColor';
 import roundRect from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/roundRect';
+import applyColor from 'Scenes/Game/Singing/GameOverlay/Drawing/applyColor';
+import { Note } from 'interfaces';
 import styles from '../../../styles';
 
 export default function drawRawNote(

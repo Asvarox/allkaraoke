@@ -1,17 +1,17 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
+import { useBackground } from 'Elements/LayoutWithBackground';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
 import useSongIndex from 'Songs/hooks/useSongIndex';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
 import { Link } from 'wouter';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
-import useBackgroundMusic from 'hooks/useBackgroundMusic';
-import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { useBackground } from 'Elements/LayoutWithBackground';
 
 interface Props {}
 

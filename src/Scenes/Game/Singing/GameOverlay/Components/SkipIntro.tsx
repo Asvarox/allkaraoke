@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
-import { typography } from 'Elements/cssMixins';
 import { VideoPlayerRef } from 'Elements/VideoPlayer';
-import posthog from 'posthog-js';
-import { useMemo } from 'react';
+import { typography } from 'Elements/cssMixins';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import getSongFirstNoteMs from 'Songs/utils/getSongFirstNoteMs';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import getSkipIntroTime, { SKIP_INTRO_MS } from 'Songs/utils/getSkipIntroTime';
-import songHasLongIntro from 'utils/songHasLongIntro';
+import getSongFirstNoteMs from 'Songs/utils/getSongFirstNoteMs';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import posthog from 'posthog-js';
+import { useMemo } from 'react';
+import songHasLongIntro from 'utils/songHasLongIntro';
 
 interface Props {
     playerRef: VideoPlayerRef | null;

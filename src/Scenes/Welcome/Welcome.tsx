@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
-import { typography } from 'Elements/cssMixins';
-import { MenuButton } from 'Elements/Menu';
-import useKeyboardNav from 'hooks/useKeyboardNav';
-import { Link } from 'wouter';
-import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import { MenuButton } from 'Elements/Menu';
+import MenuWithLogo from 'Elements/MenuWithLogo';
+import { typography } from 'Elements/cssMixins';
+import { BackgroundMusicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import FacebookLink from 'Scenes/Welcome/FacebookLink';
+import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { MouseEventHandler } from 'react';
-import MenuWithLogo from 'Elements/MenuWithLogo';
-import FacebookLink from 'Scenes/Welcome/FacebookLink';
-import { BackgroundMusicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { Link } from 'wouter';
 
 function Welcome() {
     const [backgroundMusicSelection] = useSettingValue(BackgroundMusicSetting);

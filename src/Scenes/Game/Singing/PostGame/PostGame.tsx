@@ -1,9 +1,9 @@
-import { HighScoreEntity, SingSetup, Song } from 'interfaces';
-import { useMemo } from 'react';
+import PlayersManager from 'Players/PlayersManager';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import { useSongStats } from 'Songs/stats/hooks';
+import { HighScoreEntity, SingSetup, Song } from 'interfaces';
+import { useMemo } from 'react';
 import GameState from '../GameState/GameState';
-import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     width: number;

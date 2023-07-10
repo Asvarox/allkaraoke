@@ -1,9 +1,9 @@
-import 'Stats';
-import 'RemoteMic/eventListeners';
-import { IconButton, Tooltip } from '@mui/material';
 import { Fullscreen, FullscreenExit } from '@mui/icons-material';
-import { useEffect, useState } from 'react';
+import { IconButton, Tooltip } from '@mui/material';
+import 'RemoteMic/eventListeners';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import 'Stats';
+import { useEffect, useState } from 'react';
 
 function FullscreenButton() {
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);

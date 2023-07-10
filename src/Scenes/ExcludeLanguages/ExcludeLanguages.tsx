@@ -1,5 +1,5 @@
-import ExcludeLanguagesView from './ExcludeLanguagesView';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import ExcludeLanguagesView from './ExcludeLanguagesView';
 
 interface Props {}
 

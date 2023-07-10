@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 import { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
-import { useEffect, useRef } from 'react';
+import PlayersManager from 'Players/PlayersManager';
 import SkipIntro from 'Scenes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'Scenes/Game/Singing/GameOverlay/Components/SkipOutro';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
+import { useEffect, useRef } from 'react';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     song: Song;

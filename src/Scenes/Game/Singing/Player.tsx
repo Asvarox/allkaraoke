@@ -1,8 +1,8 @@
 import { PlayerSetup, SingSetup, Song } from 'interfaces';
 import {
     ForwardedRef,
-    forwardRef,
     MutableRefObject,
+    forwardRef,
     useCallback,
     useEffect,
     useImperativeHandle,
@@ -14,11 +14,11 @@ import {
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
+import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
-import useKeyboard from 'hooks/useKeyboard';
-import useKeyboardHelp from 'hooks/useKeyboardHelp';
 
 interface Props {
     singSetup: SingSetup;

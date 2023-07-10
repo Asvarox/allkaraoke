@@ -1,4 +1,6 @@
+import { ErrorBoundary } from '@sentry/react';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
+import RemoteMic from 'Scenes/RemoteMic/RemoteMic';
 import Settings from 'Scenes/Settings/Settings';
 import { Redirect, Route, Router, useLocation } from 'wouter';
 import Convert from './Scenes/Convert/Convert';
@@ -6,11 +8,16 @@ import Edit from './Scenes/Edit/Edit';
 import SongList from './Scenes/Edit/SongList';
 import Game from './Scenes/Game/Game';
 import Jukebox from './Scenes/Jukebox/Jukebox';
-import RemoteMic from 'Scenes/RemoteMic/RemoteMic';
 import SelectInput from './Scenes/SelectInput/SelectInput';
-import { ErrorBoundary } from '@sentry/react';
 
+import { Global, css } from '@emotion/react';
+import { Theme, ThemeProvider, createTheme } from '@mui/material';
+import { ErrorFallback } from 'Elements/ErrorFallback';
+import { GameScreens } from 'Elements/GameScreens';
+import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
+import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
+import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import {
     GraphicSetting,
@@ -19,15 +26,8 @@ import {
     useSettingValue,
 } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
-import { ErrorFallback } from 'Elements/ErrorFallback';
 import Toolbar from 'Toolbar/Toolbar';
-import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
-import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
-import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import { useEffect, useMemo } from 'react';
-import { css, Global } from '@emotion/react';
-import { GameScreens } from 'Elements/GameScreens';
-import { createTheme, Theme, ThemeProvider } from '@mui/material';
 
 function App() {
     const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);

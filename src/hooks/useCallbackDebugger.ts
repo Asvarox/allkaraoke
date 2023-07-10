@@ -1,5 +1,5 @@
-import { useCallback } from 'react';
 import usePrevious from 'hooks/usePrevious';
+import { useCallback } from 'react';
 
 export default function useCallbackDebugger(callback: any, dependencies: any[], dependencyNames: any[] = []) {
     const previousDeps = usePrevious(dependencies);

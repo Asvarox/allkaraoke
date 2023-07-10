@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
+import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 import { PlayerSetup } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useMemo } from 'react';
 import GameState from '../../GameState/GameState';
-import { getFirstNoteStartFromSections, getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
 
 interface Props {

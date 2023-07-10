@@ -1,14 +1,14 @@
+import CameraManager from 'Camera/CameraManager';
+import GameEvents from 'GameEvents/GameEvents'; // @ts-ignore
+import PlayersManager from 'Players/PlayersManager';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import GameEvents from 'GameEvents/GameEvents'; // @ts-ignore
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import SongDao from 'Songs/SongDao';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import inputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSources from 'Scenes/SelectInput/InputSources';
+import SongDao from 'Songs/SongDao';
 import UserMediaService from 'UserMedia/userMediaService';
-import CameraManager from 'Camera/CameraManager';
-import PlayersManager from 'Players/PlayersManager';
 
 // @ts-ignore
 window.__exposeSingletons = () => {

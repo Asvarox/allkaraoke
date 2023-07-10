@@ -1,20 +1,20 @@
-import useKeyboardNav from 'hooks/useKeyboardNav';
+import { CircularProgress } from '@mui/material';
 import { MenuButton } from 'Elements/Menu';
-import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
-import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
-import { useEffect, useState } from 'react';
-import MicCheck from 'Scenes/SelectInput/MicCheck';
-import InputSources from 'Scenes/SelectInput/InputSources';
-import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
-import isWindows from 'utils/isWindows';
 import events from 'GameEvents/GameEvents';
+import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
+import PlayersManager from 'Players/PlayersManager';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import InputSources from 'Scenes/SelectInput/InputSources';
+import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
+import MicCheck from 'Scenes/SelectInput/MicCheck';
+import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
 import isChromium from 'utils/isChromium';
-import { CircularProgress } from '@mui/material';
-import PlayersManager from 'Players/PlayersManager';
+import isWindows from 'utils/isWindows';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

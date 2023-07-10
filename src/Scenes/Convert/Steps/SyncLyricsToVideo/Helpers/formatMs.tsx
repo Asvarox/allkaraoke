@@ -2,8 +2,8 @@ import { Button, Tooltip } from '@mui/material';
 import { Pre } from 'Scenes/Convert/Elements';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import { PlayerRef } from 'Scenes/Game/Singing/Player';
-import { YouTubePlayer } from 'react-youtube';
 import { seconds } from 'interfaces';
+import { YouTubePlayer } from 'react-youtube';
 
 const formatMs = (msec: number) => {
     const minutes = Math.floor(msec / 1000 / 60);

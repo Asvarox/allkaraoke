@@ -1,6 +1,9 @@
-import { FrequencyRecord, GAME_MODE, NotesSection, PlayerNote, SingSetup, Song } from 'interfaces';
+import events from 'GameEvents/GameEvents';
+import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getNoteAtBeat } from 'Songs/utils/notesSelectors';
+import { FrequencyRecord, GAME_MODE, NotesSection, PlayerNote, SingSetup, Song } from 'interfaces';
+import tuple from 'utils/tuple';
 import InputManager from '../Input/InputManager';
 import { appendFrequencyToPlayerNotes } from './Helpers/appendFrequencyToPlayerNotes';
 import calculateScore, {
@@ -10,9 +13,6 @@ import calculateScore, {
     divideDetailedScores,
 } from './Helpers/calculateScore';
 import getCurrentBeat from './Helpers/getCurrentBeat';
-import getSongBeatLength from 'Songs/utils/getSongBeatLength';
-import events from 'GameEvents/GameEvents';
-import tuple from 'utils/tuple';
 
 class PlayerState {
     private frequencyRecords: FrequencyRecord[] = [];

@@ -1,20 +1,20 @@
-import useKeyboardNav from 'hooks/useKeyboardNav';
+import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
+import { nextIndex, Switcher } from 'Elements/Switcher';
+import events from 'GameEvents/GameEvents';
+import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import PlayersManager from 'Players/PlayersManager';
+import { getInputId } from 'Players/utils';
 import { useEffect } from 'react';
-import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
-import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
-import { nextIndex, Switcher } from 'Elements/Switcher';
-import { InputSource } from '../InputSources/interfaces';
-import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
-import events from 'GameEvents/GameEvents';
+import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { ValuesType } from 'utility-types';
-import styled from '@emotion/styled';
-import PlayersManager from 'Players/PlayersManager';
-import { getInputId } from 'Players/utils';
+import { InputSource } from '../InputSources/interfaces';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

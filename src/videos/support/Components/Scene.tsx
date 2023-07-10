@@ -1,10 +1,10 @@
-import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
-import { PropsWithChildren } from 'react';
-import { BackgroundStatic } from 'Elements/LayoutWithBackground';
 import styled from '@emotion/styled';
+import { BackgroundStatic } from 'Elements/LayoutWithBackground';
 import { blueFill, blueStroke, redFill, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { TransitionCircles } from 'videos/support/Components/TransitionCircles';
+import { PropsWithChildren } from 'react';
+import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
 import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';
+import { TransitionCircles } from 'videos/support/Components/TransitionCircles';
 
 const BackgroundVariant = styled(BackgroundStatic)<{ red?: boolean }>`
     ${(props) =>

@@ -1,5 +1,5 @@
-import { calcDistance } from '../../../GameState/Helpers/calcDistance';
 import isNotesSection from 'Songs/utils/isNotesSection';
+import { calcDistance } from '../../../GameState/Helpers/calcDistance';
 import calculateData, { DrawingData, pitchPadding } from '../calculateData';
 
 export default function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {

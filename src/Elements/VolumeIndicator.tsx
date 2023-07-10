@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
+import PlayersManager from 'Players/PlayersManager';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { usePlayerMicData } from 'hooks/players/usePlayerMic';
-import PlayersManager from 'Players/PlayersManager';
 import { ForwardedRef, forwardRef, useCallback, useState } from 'react';
 
 const VolumeIndicatorBase = styled.div<{ color: string }>`

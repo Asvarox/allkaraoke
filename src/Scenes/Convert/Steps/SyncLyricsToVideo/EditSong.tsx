@@ -1,8 +1,5 @@
 import styled from '@emotion/styled';
 import { Box, Grid, Typography } from '@mui/material';
-import { GAME_MODE, SingSetup, Song } from 'interfaces';
-import { cloneDeep } from 'lodash-es';
-import { useEffect, useMemo, useRef, useState } from 'react';
 import AdjustPlayback from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/AdjustPlayback';
 import EditSection, { ChangeRecord } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/EditSection';
 import ListTracks from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ListTracks';
@@ -13,10 +10,13 @@ import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHead
 import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
 import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
 import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
+import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
-import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
+import { GAME_MODE, SingSetup, Song } from 'interfaces';
+import { cloneDeep } from 'lodash-es';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 interface Props {
     song: Song;

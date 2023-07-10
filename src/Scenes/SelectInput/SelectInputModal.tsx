@@ -1,6 +1,6 @@
 import { MenuContainer } from 'Elements/Menu';
-import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import Modal from 'Elements/Modal';
+import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 
 interface Props {
     onClose: () => void;

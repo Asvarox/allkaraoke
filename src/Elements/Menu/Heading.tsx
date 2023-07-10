@@ -1,8 +1,8 @@
-import { ComponentProps } from 'react';
-import completedAnimation from 'Elements/Menu/completed-animation.json';
-import tuple from 'utils/tuple';
-import Lottie from 'lottie-react';
 import styled from '@emotion/styled';
+import completedAnimation from 'Elements/Menu/completed-animation.json';
+import Lottie from 'lottie-react';
+import { ComponentProps } from 'react';
+import tuple from 'utils/tuple';
 
 export const Heading = styled.h1`
     display: flex;

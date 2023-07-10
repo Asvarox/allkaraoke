@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { Button } from 'Elements/Button';
 import { nextIndex, nextValue, Switcher } from 'Elements/Switcher';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -7,7 +8,6 @@ import createPersistedState from 'use-persisted-state';
 import { ValuesType } from 'utility-types';
 import isDev from 'utils/isDev';
 import { v4 } from 'uuid';
-import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 
 interface Props {
     songPreview: SongPreview;

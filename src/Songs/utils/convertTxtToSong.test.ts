@@ -1,10 +1,10 @@
 import { readdirSync, readFileSync } from 'fs';
 import { Note, Section, Song } from 'interfaces';
 import { invert } from 'lodash-es';
-import isNotesSection from 'Songs/utils/isNotesSection';
-import { generateNote } from 'utils/testUtils';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import convertTxtToSong, { typesMap } from 'Songs/utils/convertTxtToSong';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { generateNote } from 'utils/testUtils';
 
 const invertedMapTypes = invert(typesMap);
 

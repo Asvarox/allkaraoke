@@ -1,17 +1,12 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import { useEffect } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { PlayerMicCheck } from 'Elements/VolumeIndicator';
-import { useEventListener, useEventListenerSelector } from 'GameEvents/hooks';
 import events from 'GameEvents/GameEvents';
-import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
-import Ping from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
+import { useEventListener, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
-import PlayerStatus from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Status';
-import usePlayerMicStatus from 'hooks/players/usePlayerMicStatus';
-import player from 'Scenes/Game/Singing/Player';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer';
+import { useEffect } from 'react';
 
 export default function MicCheck() {
     // Force update when the name changes

@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { VolumeIndicator } from 'Elements/VolumeIndicator';
+import { PlayerEntity } from 'Players/PlayersManager';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import { Note } from 'interfaces';
 import { ComponentProps, Fragment, PropsWithChildren } from 'react';
 import GameState from '../../GameState/GameState';
-import isNotesSection from 'Songs/utils/isNotesSection';
-import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import styles from '../Drawing/styles';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import { VolumeIndicator } from 'Elements/VolumeIndicator';
-import { PlayerEntity } from 'Players/PlayersManager';
 
 interface Props {
     player: PlayerEntity;

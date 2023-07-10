@@ -1,9 +1,9 @@
+import isNotesSection from 'Songs/utils/isNotesSection';
 import { noPointsNoteTypes } from 'consts';
 import { DetailedScore, PlayerNote, Song } from 'interfaces';
 import { memoize } from 'lodash-es';
 import tuple from '../../../../../utils/tuple';
 import getPlayerNoteDistance from '../../Helpers/getPlayerNoteDistance';
-import isNotesSection from 'Songs/utils/isNotesSection';
 
 export const MAX_POINTS = 3_500_000;
 

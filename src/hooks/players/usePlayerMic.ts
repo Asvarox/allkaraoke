@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
+import { useEffect, useState } from 'react';
 import tuple from 'utils/tuple';
 
 export const usePlayerMicData = (

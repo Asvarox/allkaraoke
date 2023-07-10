@@ -1,7 +1,7 @@
+import 'core-js/es/array/at';
 import { ComponentProps, ForwardedRef, forwardRef } from 'react';
 import OfflineVideoPlayer from './Offline';
 import YoutubeVideoPlayer, { VideoPlayerRef } from './Youtube';
-import 'core-js/es/array/at';
 
 const VideoPlayer = forwardRef(
     (props: ComponentProps<typeof YoutubeVideoPlayer>, ref: ForwardedRef<VideoPlayerRef>) => {

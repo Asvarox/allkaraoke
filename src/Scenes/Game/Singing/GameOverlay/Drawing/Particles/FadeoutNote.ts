@@ -1,5 +1,5 @@
-import { Note } from 'interfaces';
 import { BIG_NOTE_HEIGHT } from 'Scenes/Game/Singing/GameOverlay/Drawing/calculateData';
+import { Note } from 'interfaces';
 import drawNote from '../Elements/note';
 import Particle from '../interfaces';
 

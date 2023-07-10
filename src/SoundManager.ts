@@ -1,12 +1,12 @@
 import { Howl } from 'howler';
 
+import cameraSound from 'assets/166500__thompsonman__camera-shutter.wav';
+import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
+import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.mp3';
+import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 import menuBackSound from 'assets/menu_back.wav';
 import menuEnterSound from 'assets/menu_enter.wav';
 import menuNavigateSound from 'assets/menu_navigate.wav';
-import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
-import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
-import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.mp3';
-import cameraSound from 'assets/166500__thompsonman__camera-shutter.wav';
 
 const menuNavigate = new Howl({
     src: menuNavigateSound,
@@ -42,4 +42,4 @@ const classicBackgroundMusic = new Howl({
     loop: true,
 });
 
-export { menuNavigate, menuEnter, menuBack, waitFinished, backgroundMusic, classicBackgroundMusic, cameraShot };
+export { backgroundMusic, cameraShot, classicBackgroundMusic, menuBack, menuEnter, menuNavigate, waitFinished };

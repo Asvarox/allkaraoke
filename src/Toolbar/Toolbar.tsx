@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
-import 'Stats';
-import 'RemoteMic/eventListeners';
-import { IconButton, Tooltip } from '@mui/material';
 import { QrCode2 } from '@mui/icons-material';
-import { useState } from 'react';
-import QRCodeModal from 'Toolbar/QRCodeModal';
+import { IconButton, Tooltip } from '@mui/material';
+import 'RemoteMic/eventListeners';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import 'Stats';
 import FullscreenButton from 'Toolbar/Fullscreen';
+import QRCodeModal from 'Toolbar/QRCodeModal';
+import { useState } from 'react';
 
 function Toolbar() {
     const [isModalOpen, setIsModalOpen] = useState(false);

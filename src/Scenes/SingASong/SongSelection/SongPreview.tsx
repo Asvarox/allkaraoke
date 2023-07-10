@@ -1,13 +1,13 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { useTheme } from '@mui/material';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { SingSetup, SongPreview } from 'interfaces';
-import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import useDebounce from 'hooks/useDebounce';
-import useViewportSize from 'hooks/useViewportSize';
 import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/SongSettings';
-import { css } from '@emotion/react';
-import { useTheme } from '@mui/material';
+import useDebounce from 'hooks/useDebounce';
+import useViewportSize from 'hooks/useViewportSize';
+import { SingSetup, SongPreview } from 'interfaces';
+import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 interface Props {
     songPreview: SongPreview;

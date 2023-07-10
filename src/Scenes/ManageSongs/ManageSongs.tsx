@@ -1,9 +1,9 @@
 import { MenuButton } from 'Elements/Menu';
-import useKeyboardNav from 'hooks/useKeyboardNav';
-import { Link } from 'wouter';
-import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import MenuWithLogo from 'Elements/MenuWithLogo';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { MouseEventHandler } from 'react';
+import { Link } from 'wouter';
 
 interface Props {}
 

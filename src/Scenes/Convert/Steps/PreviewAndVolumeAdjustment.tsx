@@ -1,9 +1,9 @@
 import { Box, Slider } from '@mui/material';
-import YouTube from 'react-youtube';
-import backgroundMusic from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 import { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
-import { useEffect, useRef, useState } from 'react';
 import { msec } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
+import backgroundMusic from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
+import { useEffect, useRef, useState } from 'react';
+import YouTube from 'react-youtube';
 
 interface Props {
     onChange: (data: SongMetadataEntity) => void;

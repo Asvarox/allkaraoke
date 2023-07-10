@@ -1,7 +1,7 @@
-import useKeyboard from 'hooks/useKeyboard';
-import { useEffect, useMemo, useRef, useState } from 'react';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
+import useKeyboard from 'hooks/useKeyboard';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import useKeyboardHelp from './useKeyboardHelp';
 
 /**

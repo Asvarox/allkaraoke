@@ -1,11 +1,11 @@
 import { Box, TextField } from '@mui/material';
+import { Pre } from 'Scenes/Convert/Elements';
+import calculateProperBPM from 'Scenes/Convert/calculateProperBpm';
+import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
+import { PlayerRef } from 'Scenes/Game/Singing/Player';
+import { getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
 import { Song } from 'interfaces';
 import { useState } from 'react';
-import calculateProperBPM from 'Scenes/Convert/calculateProperBpm';
-import { Pre } from 'Scenes/Convert/Elements';
-import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import { getLastNoteEndFromSections } from 'Songs/utils/notesSelectors';
-import { PlayerRef } from 'Scenes/Game/Singing/Player';
 
 interface Props {
     onChange: (bpm: number) => void;

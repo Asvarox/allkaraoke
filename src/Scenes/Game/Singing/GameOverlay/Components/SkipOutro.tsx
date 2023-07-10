@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
+import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
+import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { getLastNoteEnd } from 'Songs/utils/notesSelectors';
 import useDebounce from 'hooks/useDebounce';
+import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import posthog from 'posthog-js';
 import React, { useMemo, useState } from 'react';
 import { useInterval } from 'react-use';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import { getLastNoteEnd } from 'Songs/utils/notesSelectors';
-import useKeyboard from 'hooks/useKeyboard';
-import useKeyboardHelp from 'hooks/useKeyboardHelp';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 interface Props {
     onSongEnd: () => void;

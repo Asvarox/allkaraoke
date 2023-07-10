@@ -1,7 +1,7 @@
 import { Note } from 'interfaces';
 import tinycolor from 'tinycolor2';
-import Particle from '../interfaces';
 import ParticleManager from '../ParticleManager';
+import Particle from '../interfaces';
 import styles from '../styles';
 import TriangleParticle from './Triangle';
 

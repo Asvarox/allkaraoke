@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
-import { format } from 'date-fns';
 import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
-import useKeyboardNav from 'hooks/useKeyboardNav';
-import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { useEditScore } from 'Songs/stats/hooks';
+import { format } from 'date-fns';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import HighScoreRename from './HighScoreRename';
 
 interface Props {

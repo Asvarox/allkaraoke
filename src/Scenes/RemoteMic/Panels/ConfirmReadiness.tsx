@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
-import { useEffect, useState } from 'react';
-import { useEventEffect } from 'GameEvents/hooks';
-import events from 'GameEvents/GameEvents';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { focused } from 'Elements/cssMixins';
+import events from 'GameEvents/GameEvents';
+import { useEventEffect } from 'GameEvents/hooks';
+import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import { useEffect, useState } from 'react';
 
 interface Props {
     onConfirm: () => void;

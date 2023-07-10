@@ -1,20 +1,20 @@
 import styled from '@emotion/styled';
+import { useBackground } from 'Elements/LayoutWithBackground';
 import { VideoState } from 'Elements/VideoPlayer';
+import events from 'GameEvents/GameEvents';
+import PlayersManager from 'Players/PlayersManager';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
+import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
 import useSong from 'Songs/hooks/useSong';
+import useBlockScroll from 'hooks/useBlockScroll';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup } from 'interfaces';
 import { useMemo, useRef, useState } from 'react';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import events from 'GameEvents/GameEvents';
 import TransitionWrapper from '../../../Elements/TransitionWrapper';
 import useViewportSize from '../../../hooks/useViewportSize';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
-import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
-import { useBackground } from 'Elements/LayoutWithBackground';
-import useBlockScroll from 'hooks/useBlockScroll';
-import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     video: string;

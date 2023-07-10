@@ -1,12 +1,11 @@
 import styled from '@emotion/styled';
 import { buttonFocused } from 'Elements/Button';
-import { HighScoreEntity, SingSetup } from 'interfaces';
-import React from 'react';
 import { formatter } from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
-import { ContentElement } from 'Scenes/Game/SongPage';
 import { PlayerScore } from 'Scenes/Game/Singing/PostGame/PostGameView';
+import { ContentElement } from 'Scenes/Game/SongPage';
+import { HighScoreEntity, SingSetup } from 'interfaces';
 import CountUp from 'react-countup';
 
 interface Props {

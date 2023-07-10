@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
 import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
-import { randomInt } from 'utils/randomValue';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { useEffect, useState } from 'react';
+import { randomInt } from 'utils/randomValue';
 
 export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
     const { songList, prefilteredList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();

@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
 import { GameEvent } from 'GameEvents/GameEvents';
+import { useEffect, useMemo, useState } from 'react';
 
 export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>) {
     const [value, setValue] = useState<Parameters<T> | null>(null);

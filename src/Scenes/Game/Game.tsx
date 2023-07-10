@@ -1,10 +1,10 @@
+import CameraManager from 'Camera/CameraManager';
+import SingASong from 'Scenes/SingASong/SingASong';
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup } from 'interfaces';
 import { useCallback, useState } from 'react';
 import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
-import SingASong from 'Scenes/SingASong/SingASong';
-import CameraManager from 'Camera/CameraManager';
 
 interface Props {
     file?: string;

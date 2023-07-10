@@ -1,18 +1,18 @@
-import AbsoluteFrameProvider from 'videos/support/AbsoluteFrame/Provider';
-import { AbsoluteFill, Audio, interpolate, Series, useVideoConfig } from 'remotion';
-import { Scene } from 'videos/support/Components/Scene';
-import { Logo } from 'videos/support/Components/Logo';
-import { SAnimated } from 'videos/support/Components/common';
-import { GameScreens } from 'Elements/GameScreens';
-import React from 'react';
-import songIndex from '../../public/songs/index.json';
-import { isAfter } from 'date-fns';
-import { SongPreview } from 'interfaces';
-import { getNewSongsSequenceLength, NewSongs } from 'videos/UpdateVideo/NewSongs';
 import { css, Global } from '@emotion/react';
-import { getUpdatesSequenceLength, Updates } from 'videos/UpdateVideo/Updates';
-import { Fade, Move } from 'remotion-animated';
 import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
+import { isAfter } from 'date-fns';
+import { GameScreens } from 'Elements/GameScreens';
+import { SongPreview } from 'interfaces';
+import React from 'react';
+import { AbsoluteFill, Audio, interpolate, Series, useVideoConfig } from 'remotion';
+import { Fade, Move } from 'remotion-animated';
+import AbsoluteFrameProvider from 'videos/support/AbsoluteFrame/Provider';
+import { SAnimated } from 'videos/support/Components/common';
+import { Logo } from 'videos/support/Components/Logo';
+import { Scene } from 'videos/support/Components/Scene';
+import { getNewSongsSequenceLength, NewSongs } from 'videos/UpdateVideo/NewSongs';
+import { getUpdatesSequenceLength, Updates } from 'videos/UpdateVideo/Updates';
+import songIndex from '../../public/songs/index.json';
 
 const lastUpdate = new Date('2023-06-08T09:26:15.631Z');
 

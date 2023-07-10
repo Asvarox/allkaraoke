@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { useEventListenerSelector } from 'GameEvents/hooks';
-import events from 'GameEvents/GameEvents';
-import usePlayerMic from 'hooks/players/usePlayerMic';
 import { Warning } from '@mui/icons-material';
+import events from 'GameEvents/GameEvents';
+import { useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
+import usePlayerMic from 'hooks/players/usePlayerMic';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 export default function NoiseDetection() {
     const inputs = useEventListenerSelector(events.playerInputChanged, () => PlayersManager.getInputs());

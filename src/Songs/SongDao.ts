@@ -1,8 +1,8 @@
+import { lastVisit } from 'Stats/lastVisit';
+import { isAfter } from 'date-fns';
 import { Song, SongPreview } from 'interfaces';
 import localForage from 'localforage';
 import { getSongPreview } from '../../scripts/utils';
-import { lastVisit } from 'Stats/lastVisit';
-import { isAfter } from 'date-fns';
 
 const storage = localForage.createInstance({
     name: 'songs',

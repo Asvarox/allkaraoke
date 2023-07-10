@@ -1,12 +1,12 @@
-import { MenuButton } from 'Elements/Menu';
-import styled from '@emotion/styled';
-import useKeyboardNav from 'hooks/useKeyboardNav';
 import { css } from '@emotion/react';
-import { focused } from 'Elements/cssMixins';
+import styled from '@emotion/styled';
 import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
+import { MenuButton } from 'Elements/Menu';
+import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
+import { focused } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
+import useKeyboardNav from 'hooks/useKeyboardNav';
 
 interface Props {
     onPreferenceSelected: (preference: (typeof MicSetupPreference)[number]) => void;

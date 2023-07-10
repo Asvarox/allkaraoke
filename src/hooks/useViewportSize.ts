@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useState } from 'react';
 import { throttle } from 'lodash-es';
+import { useCallback, useEffect, useState } from 'react';
 
 export default function useViewportSize() {
     // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/

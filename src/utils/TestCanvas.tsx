@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import { GAME_MODE } from 'interfaces';
+import PlayersManager from 'Players/PlayersManager';
 import CanvasDrawing from 'Scenes/Game/Singing/GameOverlay/Drawing/CanvasDrawing';
-import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
-import { mulitrack } from 'Songs/utils/song-fixture';
+import { drawSprite, getSprite } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites';
 import drawPlayerNote from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/playerNote';
 import roundRect from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/roundRect';
-import { drawSprite, getSprite } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/cachedSprites';
-import pitchToFrequency from 'utils/pitchToFrequency';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import beatToMs from 'Scenes/Game/Singing/GameState/Helpers/beatToMs';
-import PlayersManager from 'Players/PlayersManager';
+import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
+import { mulitrack } from 'Songs/utils/song-fixture';
+import { GAME_MODE } from 'interfaces';
+import { useEffect } from 'react';
+import pitchToFrequency from 'utils/pitchToFrequency';
 
 // Add needed stuff here
 const CanvasTestApi = {

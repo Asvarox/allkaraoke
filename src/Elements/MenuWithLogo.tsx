@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { MenuContainer } from 'Elements/Menu';
-import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
-import Logo from 'Elements/Logo';
-import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import Logo from 'Elements/Logo';
+import { MenuContainer } from 'Elements/Menu';
+import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
+import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import { PropsWithChildren } from 'react';
 
 type Props = PropsWithChildren<{

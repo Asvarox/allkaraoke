@@ -1,15 +1,15 @@
-import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
-import useKeyboardNav from 'hooks/useKeyboardNav';
 import { MenuButton } from 'Elements/Menu';
-import { useEffect } from 'react';
-import { useEventListenerSelector } from 'GameEvents/hooks';
-import InputSources from 'Scenes/SelectInput/InputSources';
-import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
-import MicCheck from 'Scenes/SelectInput/MicCheck';
 import events from 'GameEvents/GameEvents';
-import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
-import { ValuesType } from 'utility-types';
+import { useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
+import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
+import InputSources from 'Scenes/SelectInput/InputSources';
+import MicCheck from 'Scenes/SelectInput/MicCheck';
+import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
+import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { useEffect } from 'react';
+import { ValuesType } from 'utility-types';
 
 interface Props {
     onSetupComplete: (complete: boolean) => void;

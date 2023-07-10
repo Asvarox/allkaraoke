@@ -1,9 +1,9 @@
+import { captureException } from '@sentry/react';
 import events from 'GameEvents/GameEvents';
 import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
-import InputInterface from './Interface';
 import userMediaService from 'UserMedia/userMediaService';
 import Listener from 'utils/Listener';
-import { captureException } from '@sentry/react';
+import InputInterface from './Interface';
 
 class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
     private stream: MediaStream | null = null;

@@ -1,11 +1,11 @@
 import { nextIndex, nextValue } from 'Elements/Switcher';
-import { useEffect } from 'react';
 import events from 'GameEvents/GameEvents';
 import { useEventListenerSelector } from 'GameEvents/hooks';
+import PlayersManager from 'Players/PlayersManager';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import { InputSourceList, InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
+import { useEffect } from 'react';
 import tuple from 'utils/tuple';
-import PlayersManager from 'Players/PlayersManager';
 
 export function usePlayerInput(playerNumber: number, sources: Record<InputSourceNames, InputSourceList>) {
     const sourceList = Object.keys(sources) as Array<InputSourceNames>;

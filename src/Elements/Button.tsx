@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { focused, typography } from 'Elements/cssMixins';
-import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import isE2E from 'utils/isE2E';
+import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const Button = styled.button<{ focused?: boolean }>`
     padding: 0.1rem 0.3rem;

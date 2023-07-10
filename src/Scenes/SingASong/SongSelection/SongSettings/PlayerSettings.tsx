@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
+import { typography } from 'Elements/cssMixins';
+import PlayersManager from 'Players/PlayersManager';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
+import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
 import { PLAYER_NAMES_SESSION_STORAGE_KEY } from 'hooks/players/consts';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useState } from 'react';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
-import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
-import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import { typography } from 'Elements/cssMixins';
-import PlayersManager from 'Players/PlayersManager';
 
 interface Props {
     songPreview: SongPreview;

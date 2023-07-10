@@ -1,7 +1,7 @@
-import { ChangeEventHandler } from 'react';
 import { Box, FormControlLabel, Switch, TextField } from '@mui/material';
-import importUltrastarEsSong from 'Scenes/Convert/importUltrastarEsSong';
 import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import importUltrastarEsSong from 'Scenes/Convert/importUltrastarEsSong';
+import { ChangeEventHandler } from 'react';
 import createPersistedState from 'use-persisted-state';
 
 export interface BasicDataEntity {

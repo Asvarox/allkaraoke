@@ -1,5 +1,5 @@
 import { BrowserContext, Page } from '@playwright/test';
-import { readdirSync, readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import { getSongPreview } from '../scripts/utils';
 
 const songs = readdirSync('./tests/fixtures/songs/')

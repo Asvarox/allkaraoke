@@ -1,6 +1,6 @@
+import MenuWithLogo from 'Elements/MenuWithLogo';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import MenuWithLogo from 'Elements/MenuWithLogo';
 
 interface Props {
     // file?: string;

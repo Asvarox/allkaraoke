@@ -1,5 +1,5 @@
-import localForage from 'localforage';
 import events from 'GameEvents/GameEvents';
+import localForage from 'localforage';
 import { getSongKey, SongStats, storeSongStats } from 'Songs/stats/common';
 
 events.songEnded.subscribe(async (song, setup, scores) => {

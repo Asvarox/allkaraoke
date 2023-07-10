@@ -1,14 +1,14 @@
+import selectRandomSong from 'Scenes/SingASong/SongSelection/Hooks/selectRandomSong';
+import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboard from 'hooks/useKeyboard';
+import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import usePrevious from 'hooks/usePrevious';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { chunk, throttle } from 'lodash-es';
 import posthog from 'posthog-js';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
-import useKeyboardHelp from 'hooks/useKeyboardHelp';
-import usePrevious from 'hooks/usePrevious';
 import tuple from 'utils/tuple';
-import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
-import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import selectRandomSong from 'Scenes/SingASong/SongSelection/Hooks/selectRandomSong';
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
     const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);

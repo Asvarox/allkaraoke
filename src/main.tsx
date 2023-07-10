@@ -1,7 +1,8 @@
-import 'utils/exposeSingletons';
-import 'Stats';
 import 'GameEvents/eventListeners';
+import 'Stats';
+import 'utils/exposeSingletons';
 
+import { init } from '@sentry/react';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { toast, ToastContainer } from 'react-toastify';
@@ -11,7 +12,6 @@ import isE2E from 'utils/isE2E';
 import { v4 } from 'uuid';
 import App from './App';
 import './index.css';
-import { init } from '@sentry/react';
 
 if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
     init({

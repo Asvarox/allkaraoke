@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import { Warning } from '@mui/icons-material';
-import { PropsWithChildren, ReactNode } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import enableMic from './enable-mic.png';
-import enableMicOpera from './enable-mic-opera.png';
-import allowMic from './allow-mic.png';
 import { useMicrophoneStatus } from 'UserMedia/hooks';
+import { PropsWithChildren, ReactNode } from 'react';
 import isOpera from 'utils/isOpera';
+import allowMic from './allow-mic.png';
+import enableMicOpera from './enable-mic-opera.png';
+import enableMic from './enable-mic.png';
 
 const getProperEnableMicImage = () => (isOpera() ? enableMicOpera : enableMic);
 

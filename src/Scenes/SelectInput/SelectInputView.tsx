@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
+import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
+import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectPreference from 'Scenes/SelectInput/SelectPreference/SelectPreference';
-import RemoteMics from 'Scenes/SelectInput/Variants/RemoteMics';
-import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import SingStarMics from 'Scenes/SelectInput/Variants/SingStarMics';
-import Skip from 'Scenes/SelectInput/Variants/Skip';
 import Advanced from 'Scenes/SelectInput/Variants/Advanced';
 import BuiltIn from 'Scenes/SelectInput/Variants/BuiltIn';
+import RemoteMics from 'Scenes/SelectInput/Variants/RemoteMics';
+import SingStarMics from 'Scenes/SelectInput/Variants/SingStarMics';
+import Skip from 'Scenes/SelectInput/Variants/Skip';
+import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import posthog from 'posthog-js';
-import startViewTransition from 'utils/startViewTransition';
-import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
+import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import startViewTransition from 'utils/startViewTransition';
 
 interface Props {
     onFinish?: (pref: ValuesType<typeof MicSetupPreference>) => void;

@@ -1,5 +1,5 @@
-import { MenuButton, MenuContainer } from 'Elements/Menu';
 import styled from '@emotion/styled';
+import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 function SuggestMobilePhone() {

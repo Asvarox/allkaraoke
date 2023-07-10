@@ -1,8 +1,8 @@
 import { ComponentProps, ForwardedRef, forwardRef } from 'react';
 
 import DirectVideo from 'Elements/VideoPlayer/DirectVideo';
-import dummyVideo from './dummy.mp4';
 import Youtube, { VideoPlayerRef } from './Youtube';
+import dummyVideo from './dummy.mp4';
 
 type Props = ComponentProps<typeof Youtube>;
 

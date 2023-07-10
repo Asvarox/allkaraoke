@@ -1,20 +1,20 @@
 import styled from '@emotion/styled';
 import { Alert, AlertTitle, Box, Button, Step, StepButton, StyledEngineProvider } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
-import { Song } from 'interfaces';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useBackground } from 'Elements/LayoutWithBackground';
+import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
-import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import SongDao from 'Songs/SongDao';
-import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import { Link } from 'wouter';
+import useSongIndex from 'Songs/hooks/useSongIndex';
+import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { useBackground } from 'Elements/LayoutWithBackground';
-import useSongIndex from 'Songs/hooks/useSongIndex';
+import { Song } from 'interfaces';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Link } from 'wouter';
 
 interface Props {
     song?: Song;

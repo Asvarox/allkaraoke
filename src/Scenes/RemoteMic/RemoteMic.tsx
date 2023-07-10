@@ -1,21 +1,21 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
-import { typography } from 'Elements/cssMixins';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
-import { useEffect, useRef, useState } from 'react';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import NormalizeFontSize from 'Elements/NormalizeFontSize';
+import { typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
-import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
-import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import RemoteMicKeyboard from './Panels/Keyboard';
-import MicPreview from 'Scenes/RemoteMic/Panels/MicPreview';
-import Connect from 'Scenes/RemoteMic/Panels/Connect';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/ConfirmReadiness';
-import isDev from 'utils/isDev';
+import Connect from 'Scenes/RemoteMic/Panels/Connect';
+import MicPreview from 'Scenes/RemoteMic/Panels/MicPreview';
 import Ping from 'Scenes/RemoteMic/Panels/Ping';
+import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import { useEffect, useRef, useState } from 'react';
+import isDev from 'utils/isDev';
+import RemoteMicKeyboard from './Panels/Keyboard';
 
 interface Props {
     roomId: string;

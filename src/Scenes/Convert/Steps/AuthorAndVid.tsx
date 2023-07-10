@@ -1,7 +1,7 @@
 import { Box, TextField } from '@mui/material';
-import YouTube from 'react-youtube';
-import { getVideoId } from 'Songs/utils/convertTxtToSong';
 import { inputAction } from 'Scenes/Convert/Elements';
+import { getVideoId } from 'Songs/utils/convertTxtToSong';
+import YouTube from 'react-youtube';
 
 export interface AuthorAndVidEntity {
     author: string;

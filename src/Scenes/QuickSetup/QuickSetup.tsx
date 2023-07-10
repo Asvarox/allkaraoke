@@ -1,8 +1,8 @@
+import MenuWithLogo from 'Elements/MenuWithLogo';
+import SuggestMobileMode from 'Scenes/QuickSetup/SuggestMobileMode';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import MenuWithLogo from 'Elements/MenuWithLogo';
-import SuggestMobileMode from 'Scenes/QuickSetup/SuggestMobileMode';
 import { useMemo } from 'react';
 import isDev from 'utils/isDev';
 

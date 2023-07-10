@@ -1,14 +1,14 @@
 import events from 'GameEvents/GameEvents';
+import PlayersManager from 'Players/PlayersManager';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
+import InputInterface from 'Scenes/Game/Singing/Input/Interface';
 import MicInput from 'Scenes/Game/Singing/Input/MicInput';
 import RemoteMicInput from 'Scenes/Game/Singing/Input/RemoteMicInput';
 import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingTest';
-import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
-import PlayersManager from 'Players/PlayersManager';
-import InputInterface from 'Scenes/Game/Singing/Input/Interface';
+import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 
 class InputManager {
     private isMonitoring = false;

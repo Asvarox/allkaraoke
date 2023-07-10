@@ -1,9 +1,9 @@
+import events from 'GameEvents/GameEvents';
+import { useEventEffect } from 'GameEvents/hooks';
 import { omit } from 'lodash-es';
 import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
-import KeyboardHelpView from './HelpView';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import { useEventEffect } from 'GameEvents/hooks';
-import events from 'GameEvents/GameEvents';
+import KeyboardHelpView from './HelpView';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR';
 

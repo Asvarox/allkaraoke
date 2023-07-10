@@ -1,5 +1,5 @@
-import { generateNote, generateSong } from 'utils/testUtils';
 import fixVideoGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/fixVideoGap';
+import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('fixVideoGap', () => {
     it('should change the video gap if its more than the start of the song', () => {

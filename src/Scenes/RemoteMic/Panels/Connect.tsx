@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
-import { Input } from 'Elements/Input';
-import { MenuButton } from 'Elements/Menu';
-import { FormEventHandler, useEffect, useRef, useState } from 'react';
-import events from 'GameEvents/GameEvents';
-import createPersistedState from 'use-persisted-state';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { QrCode2, Warning, Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
-import { PeerErrorType } from 'interfaces';
+import { Input } from 'Elements/Input';
+import { MenuButton } from 'Elements/Menu';
+import events from 'GameEvents/GameEvents';
+import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { MAX_NAME_LENGTH } from 'consts';
+import { PeerErrorType } from 'interfaces';
+import { FormEventHandler, useEffect, useRef, useState } from 'react';
+import createPersistedState from 'use-persisted-state';
 
 type ConnectionStatuses = Parameters<typeof events.karaokeConnectionStatusChange.dispatch>[0] | 'uninitialised';
 

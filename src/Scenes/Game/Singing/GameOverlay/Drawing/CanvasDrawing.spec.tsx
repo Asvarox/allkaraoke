@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/experimental-ct-react';
-import { TestCanvas } from '../../../../../utils/TestCanvas';
 import { mulitrack } from 'Songs/utils/song-fixture';
 import { NotesSection } from 'interfaces';
 import tuple from 'utils/tuple';
+import { TestCanvas } from '../../../../../utils/TestCanvas';
 
 test.use({ viewport: { width: 800, height: 650 } });
 
