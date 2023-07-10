@@ -1,13 +1,10 @@
-import { useEffect, useState } from 'react';
-import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import styled from '@emotion/styled';
-import PlayersManager from 'Players/PlayersManager';
-import usePlayerMicStatus from 'hooks/players/usePlayerMicStatus';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
 import WarningIcon from '@mui/icons-material/Warning';
 import { typography } from 'Elements/cssMixins';
 import { inputStatus } from 'Scenes/Game/Singing/Input/Interface';
+
 interface Props {
     status: inputStatus;
 }
@@ -15,7 +12,13 @@ interface Props {
 function PlayerStatus({ status }: Props) {
     return (
         <PingContainer>
-            {status === 'ok' ? <OkIcon /> : status === 'unavailable' ? <UnavailableIcon /> : <UnstableIcon />}
+            {status === 'ok' ? (
+                <OkIcon data-test="status-ok" />
+            ) : status === 'unavailable' ? (
+                <UnavailableIcon data-test="status-unavailable" />
+            ) : (
+                <UnstableIcon data-test="status-unstable" />
+            )}
             {status === 'unavailable' ? (
                 <StatusDescription>
                     <span>

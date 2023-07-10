@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 
 export default {
-    '*.{mjs,ts,tsx}': ['eslint --cache --fix'],
+    '*.{mjs,ts,tsx}': ['prettier --plugin=prettier-plugin-organize-imports --write', 'eslint --cache --fix'],
     '*.{ts,tsx}': () => 'tsc --noEmit',
     'public/songs/*.json': ['yarn generate-index', 'git add public/songs/index.json'],
     '__snapshots__/**/*darwin.png': (files) =>
