@@ -1,5 +1,5 @@
 import events from 'GameEvents/GameEvents';
-import { WebRTCEvents, keyStrokes } from 'RemoteMic/Network/events';
+import { WebRTCEvents, WebRTCSongListEvent, keyStrokes } from 'RemoteMic/Network/events';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import { throttle } from 'lodash-es';
@@ -185,8 +185,30 @@ class WebRTCClient {
         this.sendEvent('confirm-readiness');
     };
 
+    public getSongList = () => this.sendRequest<WebRTCSongListEvent>({ t: 'request-songlist' }, 'songlist');
+
     private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
         sendEvent(this.connection, type, payload);
+    };
+
+    private sendRequest = <T extends WebRTCEvents>({ t, ...payload }: WebRTCEvents, response: T['t']): Promise<T> => {
+        return new Promise<T>((resolve, reject) => {
+            const timeout = setTimeout(() => {
+                this.connection?.off('data', callback);
+                reject('timeout');
+            }, 10_000);
+
+            const callback = (data: WebRTCEvents) => {
+                if (data.t === response) {
+                    clearTimeout(timeout);
+                    this.connection?.off('data', callback);
+                    resolve(data as T);
+                }
+            };
+            this.connection?.on('data', callback);
+
+            this.sendEvent(t, payload);
+        });
     };
 
     private disconnect = () => {

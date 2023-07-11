@@ -7,7 +7,7 @@ import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { keyStrokes } from 'RemoteMic/Network/events';
 
 export default function RemoteMicKeyboard() {
-    const [keyboard] = useEventListener(events.remoteKeyboardLayout) ?? [];
+    const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
 
     const isHorizontal = keyboard?.horizontal !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
     const isVertical = keyboard?.vertical !== undefined || keyboard?.['horizontal-vertical'] !== undefined;

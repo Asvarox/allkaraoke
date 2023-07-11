@@ -7,10 +7,14 @@ import posthog from 'posthog-js';
 
 export class GameEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
+    public lastParams: Parameters<T> | null = null;
 
-    public subscribe = (callback: T) => {
+    public subscribe = (callback: T, getLast = false) => {
         this.unsubscribe(callback);
         this.subscribers.push(callback);
+        if (getLast && this.lastParams !== null) {
+            callback(...this.lastParams);
+        }
     };
 
     public unsubscribe = (callback: T) => {
@@ -18,19 +22,28 @@ export class GameEvent<T extends (...args: any[]) => void> {
     };
 
     public dispatch = (...args: Parameters<T>) => {
-        console.log('dispatch', this.name, ...args);
+        this.log && console.log('dispatch', this.name, ...args);
         this.subscribers.forEach((callback) => callback(...args));
+        this.lastParams = args;
 
         if (this.track) {
             posthog.capture(this.name, this.track instanceof Function ? this.track(...args) : args);
         }
     };
 
-    public constructor(private name: string, private track: boolean | ((...args: Parameters<T>) => any) = false) {}
+    public constructor(
+        private name: string,
+        private track: boolean | ((...args: Parameters<T>) => any) = false,
+        private log = true,
+    ) {}
 }
 
 export const events = {
-    sectionChange: new GameEvent<(player: number, previousSectionIndex: number) => void>('sectionChange'),
+    sectionChange: new GameEvent<(player: number, previousSectionIndex: number) => void>(
+        'sectionChange',
+        undefined,
+        false,
+    ),
     // newPlayerNote: new GameEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
     // playerNoteUpdate: new GameEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
 

@@ -1,6 +1,8 @@
 import events from 'GameEvents/GameEvents';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
+import sendEvent from 'RemoteMic/Network/sendEvent';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import SongDao from 'Songs/SongDao';
 import { Peer } from 'peerjs';
 import peerJSOptions from 'utils/peerJSOptions';
 import { v4 } from 'uuid';
@@ -51,6 +53,17 @@ class WebRTCServer {
                     conn.send({ t: 'pong' } as WebRTCEvents);
                 } else if (type === 'pong') {
                     RemoteMicManager.getRemoteMicById(conn.peer)?.onPong();
+                } else if (type === 'request-songlist') {
+                    Promise.all([SongDao.getLocalIndex(), SongDao.getDeletedSongsList()]).then(([custom, deleted]) => {
+                        sendEvent(conn, 'songlist', {
+                            custom: custom.map((song) => ({
+                                artist: song.artist,
+                                title: song.title,
+                                video: song.video,
+                            })),
+                            deleted,
+                        });
+                    });
                 }
             });
 

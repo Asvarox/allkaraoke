@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { MenuButton } from 'Elements/Menu';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
@@ -56,7 +57,7 @@ function Microphone({
     const micPreview = <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />;
 
     return (
-        <>
+        <Container>
             <UserMediaEnabled
                 showImages={false}
                 fallback={
@@ -95,10 +96,40 @@ function Microphone({
                     )}
                 </Panel>
             </UserMediaEnabled>
-        </>
+        </Container>
     );
 }
 export default Microphone;
+
+const Container = styled.div`
+    font-size: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+
+    ${MenuButton} {
+        padding: 0.5em;
+        height: 72px;
+
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    h5 {
+        margin-top: 0.5em;
+
+        svg {
+            font-size: 0.9em;
+        }
+    }
+`;
 
 const Panel = styled.div`
     flex: 1;

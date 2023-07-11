@@ -1,14 +1,14 @@
 import { GameEvent } from 'GameEvents/GameEvents';
 import { useEffect, useMemo, useState } from 'react';
 
-export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>) {
+export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>, getLast = false) {
     const [value, setValue] = useState<Parameters<T> | null>(null);
 
     useEffect(() => {
         const subscriber = ((...args: Parameters<T>) => {
             setValue(args);
         }) as T;
-        event.subscribe(subscriber);
+        event.subscribe(subscriber, getLast);
         return () => event.unsubscribe(subscriber);
     }, [event]);
 

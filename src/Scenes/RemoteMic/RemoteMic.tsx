@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
 import { useBackground } from 'Elements/LayoutWithBackground';
-import { MenuButton, MenuContainer } from 'Elements/Menu';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
 import BottomBar from 'Scenes/RemoteMic/BottomBar';
 import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/Microphone/ConfirmReadiness';
+import RemoteSongList from 'Scenes/RemoteMic/Panels/RemoteSongList';
 import { useState } from 'react';
 
 interface Props {
@@ -67,6 +67,17 @@ function RemoteMic({ roomId }: Props) {
                         connectionError={connectionError}
                     />
                 )}
+                {activeTab === 'song-list' && (
+                    <RemoteSongList
+                        roomId={roomId}
+                        monitoringStarted={monitoringStarted}
+                        setMonitoringStarted={setMonitoringStarted}
+                        connectionStatus={connectionStatus}
+                        setIsKeepAwakeOn={setIsKeepAwakeOn}
+                        isKeepAwakeOn={isKeepAwakeOn}
+                        connectionError={connectionError}
+                    />
+                )}
                 {isConnected && <BottomBar setActiveTab={setActiveTab} active={activeTab} />}
             </Container>
         </>
@@ -74,7 +85,7 @@ function RemoteMic({ roomId }: Props) {
 }
 export default RemoteMic;
 
-const Container = styled(MenuContainer)`
+const Container = styled.div`
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
@@ -86,24 +97,5 @@ const Container = styled(MenuContainer)`
         max-width: 960px;
         flex-wrap: nowrap;
         flex-direction: row;
-    }
-
-    ${MenuButton} {
-        padding: 0.5em;
-        height: 72px;
-
-        margin-bottom: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5em;
-    }
-
-    h5 {
-        margin-top: 0.5em;
-
-        svg {
-            font-size: 0.9em;
-        }
     }
 `;

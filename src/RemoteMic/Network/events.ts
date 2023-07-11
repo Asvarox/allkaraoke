@@ -1,5 +1,6 @@
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { Params } from 'hooks/useKeyboard';
+import { SongPreview } from 'interfaces';
 
 export interface WebRTCRegisterEvent {
     t: 'register';
@@ -60,6 +61,15 @@ export interface WebRTCPongEventEvent {
     t: 'pong';
 }
 
+export interface WebRTCRequestSongListEvent {
+    t: 'request-songlist';
+}
+export interface WebRTCSongListEvent {
+    t: 'songlist';
+    custom: Array<Pick<SongPreview, 'artist' | 'title' | 'video'>>;
+    deleted: string[];
+}
+
 export interface WebRTCRequestMicSelectEvent {
     t: 'request-mic-select';
     playerNumber: number | null;
@@ -84,4 +94,6 @@ export type WebRTCEvents =
     | WebRTCRequestMicSelectEvent
     | WebRTCPingEventEvent
     | WebRTCPongEventEvent
+    | WebRTCRequestSongListEvent
+    | WebRTCSongListEvent
     | WebRTCNewFrequencyEvent;

@@ -39,7 +39,7 @@ class SongDao {
 
     public getCurrentIndex = () => this.finalIndex;
 
-    private getDeletedSongsList = async () => {
+    public getDeletedSongsList = async () => {
         const list = await storage.getItem<string[]>(DELETED_SONGS_KEY);
 
         return list ?? [];
@@ -95,7 +95,7 @@ class SongDao {
     };
 
     private getLocal = async (fileName: string) => storage.getItem<Song>(decodeURIComponent(fileName));
-    private getLocalIndex = async () => {
+    public getLocalIndex = async () => {
         const allSongs = await Promise.all((await this.getKeys()).map(this.getLocal));
 
         return allSongs
