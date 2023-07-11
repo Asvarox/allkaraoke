@@ -1,9 +1,9 @@
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
+import VolumeIndicator from 'Scenes/RemoteMic/Panels/Microphone/VolumeIndicator';
 import { throttle } from 'lodash-es';
 import { useCallback, useEffect, useState } from 'react';
-import VolumeIndicator from './VolumeIndicator';
 
 interface Props {
     isVisible: boolean;

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import PlayerChange from 'Scenes/RemoteMic/Panels/PlayerChange';
+import PlayerChange from 'Scenes/RemoteMic/Panels/Microphone/PlayerChange';
 
 interface Props {
     volume: number;

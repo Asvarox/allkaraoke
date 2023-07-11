@@ -3,14 +3,12 @@ import { QrCode2, Warning, Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import { Input } from 'Elements/Input';
 import { MenuButton } from 'Elements/Menu';
-import events from 'GameEvents/GameEvents';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import { MAX_NAME_LENGTH } from 'consts';
 import { PeerErrorType } from 'interfaces';
 import { FormEventHandler, useEffect, useRef, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
-
-type ConnectionStatuses = Parameters<typeof events.karaokeConnectionStatusChange.dispatch>[0] | 'uninitialised';
 
 interface Props {
     roomId: string;
@@ -71,6 +69,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
                     maxLength={MAX_NAME_LENGTH}
                     focused={false}
                     label="Name"
+                    placeholder="Enter your name…"
                     value={name}
                     onChange={setName}
                     ref={inputRef}
