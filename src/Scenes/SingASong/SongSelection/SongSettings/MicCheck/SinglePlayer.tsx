@@ -12,11 +12,11 @@ export default function SinglePlayer({ player }: Props) {
     const status = usePlayerMicStatus(player.number);
 
     return (
-        <Indicator key={player.number}>
-            {player.getName()}
+        <Indicator key={player.number} data-test={`indicator-player-${player.number}`}>
             <Ping playerNumber={player.number} />
             <PlayerStatus status={status} />
             {status !== 'unavailable' && <PlayerMicCheck playerNumber={player.number} />}
+            <PlayerName>{player.getName()}</PlayerName>
         </Indicator>
     );
 }
@@ -32,4 +32,11 @@ const Indicator = styled.div`
     gap: 1.25rem;
     font-size: 2.3rem;
     color: white;
+
+    -webkit-text-stroke: 1px black;
+`;
+
+const PlayerName = styled.span`
+    position: relative;
+    z-index: 1;
 `;

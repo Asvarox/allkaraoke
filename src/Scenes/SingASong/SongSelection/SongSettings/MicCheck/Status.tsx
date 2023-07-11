@@ -11,7 +11,7 @@ interface Props {
 
 function PlayerStatus({ status }: Props) {
     return (
-        <PingContainer>
+        <StatusContainer>
             {status === 'ok' ? (
                 <OkIcon data-test="status-ok" />
             ) : status === 'unavailable' ? (
@@ -32,12 +32,12 @@ function PlayerStatus({ status }: Props) {
                     </span>
                 </StatusDescription>
             ) : null}
-        </PingContainer>
+        </StatusContainer>
     );
 }
 export default PlayerStatus;
 
-const PingContainer = styled.span`
+const StatusContainer = styled.span`
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;

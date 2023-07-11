@@ -5,6 +5,7 @@ import { typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer';
 import { waitFinished } from 'SoundManager';
 import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';
@@ -15,7 +16,7 @@ interface Props {
     onFinish: () => void;
 }
 
-const AUTOSTART_TIMEOUT_S = 15;
+const AUTOSTART_TIMEOUT_S = 1500;
 
 function WaitForReadiness({ onFinish }: Props) {
     const audio = useRef<HTMLAudioElement>(null);
@@ -27,7 +28,9 @@ function WaitForReadiness({ onFinish }: Props) {
     });
 
     const players = useEventListenerSelector([events.inputListChanged, events.readinessConfirmed], () => {
-        return PlayersManager.getPlayers().map((player, index) => [player.input.deviceId!, player.getName()]);
+        return PlayersManager.getPlayers().map(
+            (player, index) => [player.input.deviceId!, player.getName(), player] as const,
+        );
     });
 
     useEffect(() => {
@@ -56,9 +59,10 @@ function WaitForReadiness({ onFinish }: Props) {
         })();
     }, []);
 
-    const playerStatuses = players.map(([deviceId, name]) => ({
+    const playerStatuses = players.map(([deviceId, name, player]) => ({
         confirmed: confirmedPlayers.includes(deviceId),
         name,
+        player: player,
     }));
 
     return (
@@ -69,15 +73,17 @@ function WaitForReadiness({ onFinish }: Props) {
                         Waiting for all players to click <strong>"Ready"</strong>
                     </span>
                     <PlayerList>
-                        {playerStatuses.map(({ confirmed, name }, index) => (
+                        {playerStatuses.map(({ confirmed, name, player }, index) => (
                             <PlayerEntry
                                 className="ph-no-capture"
                                 key={index}
                                 data-test="player-confirm-status"
                                 data-name={name}
                                 data-confirmed={confirmed}>
-                                {confirmed ? <CheckCircleOutline /> : <CircularProgress color="info" size="1em" />}{' '}
-                                {name ? name : 'Connecting...'}
+                                <ConfirmStatus>
+                                    {confirmed ? <CheckCircleOutline /> : <CircularProgress color="info" size="1em" />}
+                                </ConfirmStatus>{' '}
+                                <SinglePlayer player={player} />
                             </PlayerEntry>
                         ))}
                     </PlayerList>
@@ -120,7 +126,7 @@ const WaitingForReady = styled.div`
     height: 100%;
     gap: 5rem;
 
-    font-size: 7rem;
+    font-size: 5rem;
     ${typography};
 `;
 
@@ -133,6 +139,7 @@ const PlayerList = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    width: 50rem;
 `;
 
 const PlayerEntry = styled.div`
@@ -140,9 +147,13 @@ const PlayerEntry = styled.div`
     align-items: center;
     //justify-content: center;
     gap: 2rem;
+    transform: scale(1.5);
+`;
+
+const ConfirmStatus = styled.span`
     svg {
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
         stroke: black;
     }
 `;

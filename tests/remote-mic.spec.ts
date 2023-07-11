@@ -57,17 +57,6 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
         }),
     ]);
 
-    // Check if the mics are reselected after they refresh
-    await remoteMicBluePage.reload();
-    await remoteMicBluePage.getByTestId('player-name-input').fill(P1_Name);
-    await remoteMicBluePage.getByTestId('connect-button').click();
-    await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
-
-    await remoteMicRed.reload();
-    await remoteMicRed.getByTestId('player-name-input').fill(P2_Name);
-    await remoteMicRed.getByTestId('connect-button').click();
-    await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
-
     await test.step('Start singing a song', async () => {
         await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage);
         await remoteMicBluePage.getByTestId('keyboard-enter').click();
@@ -79,6 +68,22 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
 
         await navigateWithKeyboard(page, 'next-step-button', remoteMicRed);
         await remoteMicRed.getByTestId('keyboard-enter').click();
+
+        await test.step('Check if the mics are reselected after they refresh', async () => {
+            await remoteMicBluePage.reload();
+            // Check if the status is properly shown in the game
+            await expect(page.getByTestId('indicator-player-0').getByTestId('status-unavailable')).toBeVisible();
+            await remoteMicBluePage.getByTestId('player-name-input').fill(P1_Name);
+            await remoteMicBluePage.getByTestId('connect-button').click();
+            await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
+            await expect(page.getByTestId('indicator-player-0').getByTestId('status-unavailable')).not.toBeVisible();
+
+            await remoteMicRed.reload();
+            await remoteMicRed.getByTestId('player-name-input').fill(P2_Name);
+            await remoteMicRed.getByTestId('connect-button').click();
+            await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
+        });
+
         await navigateWithKeyboard(page, 'play-song-button', remoteMicRed);
         await remoteMicRed.getByTestId('keyboard-enter').click();
     });
