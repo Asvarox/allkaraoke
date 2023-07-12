@@ -15,8 +15,6 @@
   "author": "Tracks",
   "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
   "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27272",
-  "previewStart": 86,
-  "previewEnd": 116,
   "tracks": [
     {
       "sections": [
@@ -3901,5 +3899,7 @@
         }
       ]
     }
-  ]
+  ],
+  "previewStart": 86,
+  "previewEnd": 116
 }
