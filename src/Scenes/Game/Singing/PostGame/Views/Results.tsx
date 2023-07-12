@@ -8,6 +8,7 @@ import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import CameraRoll from 'Scenes/Game/Singing/PostGame/Views/Results/CameraRoll';
 import { PlayerScore } from 'Scenes/Game/Singing/PostGame/PostGameView';
 import PlayerScoreView from 'Scenes/Game/Singing/PostGame/Views/Results/PlayerScore';
+import CameraManager from 'Camera/CameraManager';
 
 interface Props {
     onNextStep: () => void;
@@ -62,7 +63,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
             <SongSelectionButton onClick={onNextStep} focused data-test="highscores-button">
                 Next
             </SongSelectionButton>
-            <StyledPhotoRoll />
+            {CameraManager.getPermissionStatus() && <StyledPhotoRoll />}
         </>
     );
 }

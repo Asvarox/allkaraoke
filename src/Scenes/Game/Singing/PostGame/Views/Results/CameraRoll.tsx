@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { useEffect, useRef, useState } from 'react';
 import CameraManager from 'Camera/CameraManager';
+import { captureException } from '@sentry/react';
 
 interface Props {}
 
@@ -20,7 +21,11 @@ function CameraRoll({ ...props }: Props) {
     }, []);
 
     useEffect(() => {
-        if (video.current) video.current.playbackRate = 16;
+        try {
+            if (video.current) video.current.playbackRate = 16;
+        } catch (e) {
+            captureException(e);
+        }
     }, [videoSrc]);
 
     return (
