@@ -736,6 +736,35 @@
     "local": false
   },
   {
+    "title": "Gumisie",
+    "artist": "Andrzej Zaucha",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 2930,
+    "video": "bjFGmm2wIhI",
+    "year": "1985",
+    "lastUpdate": "2023-06-28T19:18:27.556Z",
+    "genre": "None",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 72,
+    "previewStart": 3,
+    "previewEnd": 31,
+    "volume": 0.9,
+    "author": "nomek4",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=29049",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9110",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Andrzej Zaucha-Gumisie.json",
+    "tracksCount": 1,
+    "search": "andrzejzauchagumisie",
+    "local": false
+  },
+  {
     "title": "Nigdy więcej nie tańcz ze mną",
     "artist": "Ania Dąbrowska",
     "bpm": 372.12,
@@ -2717,6 +2746,34 @@
     "local": false
   },
   {
+    "title": "Hamma!",
+    "artist": "Culcha Candela",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 2985.2941176470586,
+    "video": "orykWFd45iI",
+    "year": "2007",
+    "lastUpdate": "2023-06-22T19:11:37.869Z",
+    "edition": "SingStar Summer Party",
+    "genre": "None",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.75,
+    "author": "Leki",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=6",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3067",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Culcha Candela-Hamma-.json",
+    "tracksCount": 1,
+    "search": "culchacandelahamma",
+    "local": false
+  },
+  {
     "title": "Girls Just Wanna Have Fun",
     "artist": "Cyndi Lauper",
     "bpm": 240.36,
@@ -2740,6 +2797,63 @@
     "file": "Cyndi Lauper-Girls Just Wanna Have Fun.json",
     "tracksCount": 1,
     "search": "cyndilaupergirlsjustwannahavefun",
+    "local": false
+  },
+  {
+    "title": "Nie zadzieraj nosa",
+    "artist": "Czerwone Gitary",
+    "bpm": 258.5,
+    "bar": 4,
+    "gap": 863.5396518375243,
+    "video": "7Shz3JUucaM",
+    "year": "1968",
+    "lastUpdate": "2023-06-28T18:41:34.748Z",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 129,
+    "previewStart": 1,
+    "previewEnd": 62,
+    "volume": 0.5,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10466",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Czerwone Gitary-Nie zadzieraj nosa.json",
+    "tracksCount": 1,
+    "search": "czerwonegitaryniezadzierajnosa",
+    "local": false
+  },
+  {
+    "title": "Tak bardzo sie staralem",
+    "artist": "Czerwone Gitary",
+    "bpm": 325.2,
+    "bar": 4,
+    "gap": 1100,
+    "video": "1MgNbIO3vP0",
+    "year": "1969",
+    "lastUpdate": "2023-06-28T18:56:32.654Z",
+    "genre": "None",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 81,
+    "previewStart": 0,
+    "previewEnd": 40,
+    "volume": 0.72,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=2869",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Czerwone Gitary-Tak bardzo sie staralem.json",
+    "tracksCount": 1,
+    "search": "czerwonegitarytakbardzosiestaralem",
     "local": false
   },
   {
@@ -2843,6 +2957,34 @@
     "local": false
   },
   {
+    "title": "Ein Stern (… der deinen Namen trägt)",
+    "artist": "DJ Ötzi & Nik P.",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 21508.095238095237,
+    "video": "2Ua9af7xC9c",
+    "year": "2006",
+    "lastUpdate": "2023-06-22T18:45:37.521Z",
+    "edition": "SingStar Après-Ski Party",
+    "genre": "Pop",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.7,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1432",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "DJ -tzi & Nik P.-Ein Stern (… der deinen Namen trägt).json",
+    "tracksCount": 1,
+    "search": "djotzinikpeinsternderdeinennamentragt",
+    "local": false
+  },
+  {
     "title": "Get Lucky",
     "artist": "Daft Punk",
     "bpm": 232.1,
@@ -2890,6 +3032,35 @@
     "file": "Danzel-Pump it up.json",
     "tracksCount": 1,
     "search": "danzelpumpitup",
+    "local": false
+  },
+  {
+    "title": "Stolen",
+    "artist": "Dashboard Confessional",
+    "bpm": 203,
+    "bar": 4,
+    "gap": 18895.51724137931,
+    "video": "j82FBbgpUy4",
+    "year": "2006",
+    "lastUpdate": "2023-06-28T17:33:40.435Z",
+    "genre": "pop rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 102,
+    "previewStart": 97,
+    "previewEnd": 129,
+    "volume": 1,
+    "author": "Jhovanny+",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=jhovanny%2B",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Dashboard%20Confessional&cancion=Stolen",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Dashboard Confessional-Stolen.json",
+    "tracksCount": 1,
+    "search": "dashboardconfessionalstolen",
     "local": false
   },
   {
@@ -3491,6 +3662,34 @@
     "file": "Drake-Hotline Bling.json",
     "tracksCount": 1,
     "search": "drakehotlinebling",
+    "local": false
+  },
+  {
+    "title": "Moskau",
+    "artist": "Dschinghis Khan",
+    "bpm": 263,
+    "bar": 4,
+    "gap": 25113.384030418252,
+    "video": "EPdn9_h2dCY",
+    "year": "1979",
+    "lastUpdate": "2023-06-22T18:58:16.594Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 0.75,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4304",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Dschinghis Khan-Moskau.json",
+    "tracksCount": 1,
+    "search": "dschinghiskhanmoskau",
     "local": false
   },
   {
@@ -4165,6 +4364,33 @@
     "local": false
   },
   {
+    "title": "Rock Me Amadeus",
+    "artist": "Falco",
+    "bpm": 177.1,
+    "bar": 4,
+    "gap": 50149.62507058159,
+    "video": "cVikZ8Oe_XA",
+    "year": "1985",
+    "lastUpdate": "2023-07-12T20:46:41.666Z",
+    "edition": "SingStar German",
+    "language": "German",
+    "videoGap": 25,
+    "realBpm": 176,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Falco&cancion=Rock%20Me%20Amadeus",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "file": "Falco-Rock Me Amadeus.json",
+    "tracksCount": 1,
+    "search": "falcorockmeamadeus",
+    "local": false
+  },
+  {
     "title": "Ogórek wąsaty",
     "artist": "Fasolki",
     "bpm": 112.99,
@@ -4262,6 +4488,34 @@
     "file": "Feel-Pokaż na co Cię stać.json",
     "tracksCount": 1,
     "search": "feelpokaznacociestac",
+    "local": false
+  },
+  {
+    "title": "Emanuela",
+    "artist": "Fettes Brot",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 4533.90625,
+    "video": "ZiY5FBI_5D8",
+    "year": "2005",
+    "lastUpdate": "2023-06-22T19:00:27.503Z",
+    "edition": "None",
+    "genre": "None",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.7,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=436",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Fettes Brot-Emanuela.json",
+    "tracksCount": 1,
+    "search": "fettesbrotemanuela",
     "local": false
   },
   {
@@ -4445,6 +4699,34 @@
     "file": "Garou-Seul.json",
     "tracksCount": 1,
     "search": "garouseul",
+    "local": false
+  },
+  {
+    "title": "Bruttosozialprodukt",
+    "artist": "Geier Sturzflug",
+    "bpm": 331.4,
+    "bar": 4,
+    "gap": 2794.224502112251,
+    "video": "Zm8dk7SfV1E",
+    "year": "1982",
+    "lastUpdate": "2023-06-22T19:26:00.093Z",
+    "edition": "SingStar ’80s [DE]",
+    "genre": "Rock",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.6,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=861",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Geier Sturzflug-Bruttosozialprodukt.json",
+    "tracksCount": 1,
+    "search": "geiersturzflugbruttosozialprodukt",
     "local": false
   },
   {
@@ -4940,6 +5222,34 @@
     "local": false
   },
   {
+    "title": "Atemlos durch die Nacht",
+    "artist": "Helene Fischer",
+    "bpm": 256.05,
+    "bar": 4,
+    "gap": 6414.1007615700055,
+    "video": "haECT-SerHk",
+    "year": "2013",
+    "lastUpdate": "2023-06-22T18:34:03.176Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.65,
+    "author": "Ultrasonic",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22479",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=16581",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Helene Fischer-Atemlos durch die Nacht.json",
+    "tracksCount": 1,
+    "search": "helenefischeratemlosdurchdienacht",
+    "local": false
+  },
+  {
     "title": "A Ty?",
     "artist": "Hey",
     "bpm": 270,
@@ -5014,6 +5324,34 @@
     "file": "Hoobastank-The Reason.json",
     "tracksCount": 1,
     "search": "hoobastankthereason",
+    "local": false
+  },
+  {
+    "title": "Vom selben Stern",
+    "artist": "Ich + Ich",
+    "bpm": 280,
+    "bar": 4,
+    "gap": 21592.14285714286,
+    "video": "cDoHZb9vCs4",
+    "year": "2007",
+    "lastUpdate": "2023-06-22T19:19:23.510Z",
+    "edition": "SingStar Summer Party",
+    "genre": "Pop",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 140,
+    "volume": 0.5,
+    "author": "Leki",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=6",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3056",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Ich - Ich-Vom selben Stern.json",
+    "tracksCount": 1,
+    "search": "ichichvomselbenstern",
     "local": false
   },
   {
@@ -5872,13 +6210,13 @@
     "author": "Tracks",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27272",
-    "previewStart": 86,
-    "previewEnd": 116,
     "tracks": [
       {
         "start": 21
       }
     ],
+    "previewStart": 86,
+    "previewEnd": 116,
     "file": "Kaarija-Cha Cha Cha.json",
     "tracksCount": 1,
     "search": "kaarijachachacha",
@@ -8611,6 +8949,34 @@
     "local": false
   },
   {
+    "title": "99 Luftballons",
+    "artist": "Nena",
+    "bpm": 190.6,
+    "bar": 4,
+    "gap": 2700.91500524659,
+    "video": "Fpu5a0Bl8eY",
+    "year": "1984",
+    "lastUpdate": "2023-06-12T20:54:31.896Z",
+    "edition": "SingStar '80s German",
+    "genre": "Rock",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.9,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nena&cancion=99%20Luftballons",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Nena-99 Luftballons.json",
+    "tracksCount": 1,
+    "search": "nena99luftballons",
+    "local": false
+  },
+  {
     "title": "Where The Wild Roses Grow",
     "artist": "Nick Cave & The Bad Seeds + Kylie Minogue",
     "bpm": 340,
@@ -9297,6 +9663,33 @@
     "local": false
   },
   {
+    "title": "Haus am See",
+    "artist": "Peter Fox",
+    "bpm": 247.42,
+    "bar": 4,
+    "gap": 14719.989491552826,
+    "video": "j-XKgB5guDQ",
+    "year": "2008",
+    "lastUpdate": "2023-06-22T19:17:50.226Z",
+    "genre": "None",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.55,
+    "author": "gap",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Peter Fox-Haus am See.json",
+    "tracksCount": 1,
+    "search": "peterfoxhausamsee",
+    "local": false
+  },
+  {
     "title": "Don’t Give Up",
     "artist": "Peter Gabriel & Kate Bush",
     "bpm": 322.72,
@@ -9327,6 +9720,34 @@
     "file": "Peter Gabriel & Kate Bush-Don’t Give Up.json",
     "tracksCount": 2,
     "search": "petergabrielkatebushdontgiveup",
+    "local": false
+  },
+  {
+    "title": "Major Tom (völlig losgelöst)",
+    "artist": "Peter Schilling",
+    "bpm": 325.5,
+    "bar": 4,
+    "gap": 37446.17511520737,
+    "video": "KQRaj1vcnrs",
+    "year": "1982",
+    "lastUpdate": "2023-06-22T19:22:49.175Z",
+    "edition": "SingStar [DE]",
+    "genre": "New Wave",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 142,
+    "volume": 0.65,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1298",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Peter Schilling-Major Tom -völlig losgelöst).json",
+    "tracksCount": 1,
+    "search": "peterschillingmajortomvolliglosgelost",
     "local": false
   },
   {
@@ -9379,6 +9800,34 @@
     "file": "Pewex vs Stachursky-Taki Jestem [DUET].json",
     "tracksCount": 2,
     "search": "pewexvsstachurskytakijestem",
+    "local": false
+  },
+  {
+    "title": "California",
+    "artist": "Phantom Planet",
+    "bpm": 237.3,
+    "bar": 4,
+    "gap": 11128.621997471555,
+    "video": "wq-S8CIU7VA",
+    "year": "2002",
+    "lastUpdate": "2023-06-28T17:48:27.143Z",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 79,
+    "previewStart": 0,
+    "previewEnd": 52,
+    "volume": 0.73,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Phantom%20Planet&cancion=California",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Phantom Planet-California.json",
+    "tracksCount": 1,
+    "search": "phantomplanetcalifornia",
     "local": false
   },
   {
@@ -9588,6 +10037,36 @@
     "file": "Psy-Gangnam Style.json",
     "tracksCount": 1,
     "search": "psygangnamstyle",
+    "local": false
+  },
+  {
+    "title": "Abenteuerland",
+    "artist": "Pur",
+    "bpm": 294.4,
+    "bar": 4,
+    "gap": 12780.978260869566,
+    "video": "XC-HspEa2vs",
+    "year": "1995",
+    "lastUpdate": "2023-06-22T19:07:01.079Z",
+    "edition": "SingStar The Dome",
+    "genre": "Rock",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 147,
+    "previewStart": 65,
+    "previewEnd": 97,
+    "volume": 0.8,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=952",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Pur-Abenteuerland.json",
+    "tracksCount": 1,
+    "search": "purabenteuerland",
     "local": false
   },
   {
@@ -11133,6 +11612,94 @@
     "file": "Smash Mouth-I'm a believer.json",
     "tracksCount": 1,
     "search": "smashmouthimabeliever",
+    "local": false
+  },
+  {
+    "title": "Living Next Door To Alice",
+    "artist": "Smokie",
+    "bpm": 252.68,
+    "bar": 4,
+    "gap": 7017.81842646826,
+    "video": "Z6qnRS36EgE",
+    "year": "1976",
+    "lastUpdate": "2023-06-28T18:14:07.157Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 126,
+    "previewStart": 100,
+    "previewEnd": 131,
+    "volume": 0.6,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smokie&cancion=Living%20Next%20Door%20To%20Alice",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Smokie-Living Next Door To Alice.json",
+    "tracksCount": 1,
+    "search": "smokielivingnextdoortoalice",
+    "local": false
+  },
+  {
+    "title": "Needles And Pins",
+    "artist": "Smokie",
+    "bpm": 238.16,
+    "bar": 4,
+    "gap": 13452.274101444407,
+    "video": "0S-t45AGIpc",
+    "year": "1977",
+    "lastUpdate": "2023-06-28T18:32:41.950Z",
+    "genre": "None",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 119,
+    "previewStart": 64,
+    "previewEnd": 98,
+    "volume": 0.6,
+    "author": "nascituruz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=7129",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8379",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Smokie-Needles And Pins.json",
+    "tracksCount": 1,
+    "search": "smokieneedlesandpins",
+    "local": false
+  },
+  {
+    "title": "Who The F… Is Alice?",
+    "artist": "Smokie",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 7071.774193548387,
+    "video": "L4pp3qyq5tc",
+    "year": "1994",
+    "lastUpdate": "2023-06-28T18:22:00.177Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 128,
+    "previewStart": 39,
+    "previewEnd": 67,
+    "volume": 0.56,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3784",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Smokie-Who The F- Is Alice_.json",
+    "tracksCount": 1,
+    "search": "smokiewhothefisalice",
     "local": false
   },
   {
@@ -12880,6 +13447,34 @@
     "local": false
   },
   {
+    "title": "Nur noch kurz die Welt retten",
+    "artist": "Tim Bendzko",
+    "bpm": 204.3,
+    "bar": 4,
+    "gap": 17582.09985315712,
+    "video": "4BAKb2p450Q",
+    "year": "2011",
+    "lastUpdate": "2023-06-22T18:51:45.338Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.5,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12290",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Tim Bendzko-Nur noch kurz die Welt retten.json",
+    "tracksCount": 1,
+    "search": "timbendzkonurnochkurzdieweltretten",
+    "local": false
+  },
+  {
     "title": "GoldenEye",
     "artist": "Tina Turner",
     "bpm": 204.25,
@@ -12953,6 +13548,34 @@
     "file": "Tina Turner-What’s Love Got To Do With It.json",
     "tracksCount": 1,
     "search": "tinaturnerwhatslovegottodowithit",
+    "local": false
+  },
+  {
+    "title": "An deiner Seite (Ich bin da)",
+    "artist": "Tokio Hotel",
+    "bpm": 239.65,
+    "bar": 4,
+    "gap": 20408.539536824537,
+    "video": "bdKvsfGpe98",
+    "year": "2007",
+    "lastUpdate": "2023-06-22T19:08:58.651Z",
+    "edition": "SingStar Summer Party [DE]",
+    "genre": "Pop",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.5,
+    "author": "Leki",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=6",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3040",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Tokio Hotel-An deiner Seite -Ich bin da).json",
+    "tracksCount": 1,
+    "search": "tokiohotelandeinerseiteichbinda",
     "local": false
   },
   {
@@ -13158,6 +13781,62 @@
     "file": "UEFA-Champions League (Umyj Bidet).json",
     "tracksCount": 1,
     "search": "uefachampionsleagueumyjbidet",
+    "local": false
+  },
+  {
+    "title": "We Are the World",
+    "artist": "USA for Africa",
+    "bpm": 290.2,
+    "bar": 4,
+    "gap": 23826.91867677464,
+    "video": "D9ZKyYFyiFA",
+    "year": "1985",
+    "lastUpdate": "2023-06-28T18:02:16.398Z",
+    "language": "English",
+    "videoGap": -1,
+    "realBpm": 73,
+    "previewStart": 183,
+    "previewEnd": 212,
+    "volume": 0.67,
+    "author": "Pantero",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=USA%20for%20Africa&cancion=We%20Are%20the%20World",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "USA for Africa-We Are the World.json",
+    "tracksCount": 1,
+    "search": "usaforafricawearetheworld",
+    "local": false
+  },
+  {
+    "title": "Geboren um zu leben",
+    "artist": "Unheilig",
+    "bpm": 276,
+    "bar": 4,
+    "gap": 11481.739130434782,
+    "video": "1YOovPkiMrk",
+    "year": "2009",
+    "lastUpdate": "2023-06-22T18:49:25.452Z",
+    "edition": "None",
+    "genre": "None",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 91,
+    "volume": 0.6,
+    "author": "FlexMX",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=30053",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8992",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Unheilig-Geboren um zu leben.json",
+    "tracksCount": 1,
+    "search": "unheiliggeborenumzuleben",
     "local": false
   },
   {
@@ -13412,6 +14091,34 @@
     "file": "Wes-Alane (Ala nie wali mu pały).json",
     "tracksCount": 1,
     "search": "wesalanealaniewalimupay",
+    "local": false
+  },
+  {
+    "title": "Sexy",
+    "artist": "Westernhagen",
+    "bpm": 239.68,
+    "bar": 4,
+    "gap": 33039.08249228459,
+    "video": "6XhtjcPtjrA",
+    "year": "1989",
+    "lastUpdate": "2023-06-22T18:56:03.996Z",
+    "edition": "SingStar ’80s [DE]",
+    "genre": "None",
+    "language": "German",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.8,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1160",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Westernhagen-Sexy.json",
+    "tracksCount": 1,
+    "search": "westernhagensexy",
     "local": false
   },
   {
