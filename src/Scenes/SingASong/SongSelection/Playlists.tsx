@@ -70,8 +70,8 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
             {playlists.map((playlist) => (
                 <Playlist
                     key={playlist.name}
-                    {...register(`playlist-${playlist.name}`, () => focusElement(playlist.name))}
-                    {...(!active ? { focused: false, active: playlist.name === focused } : {})}>
+                    {...register(`playlist-${playlist.name}`, () => focusElement(`playlist-${playlist.name}`))}
+                    {...(!active ? { focused: false, active: `playlist-${playlist.name}` === focused } : {})}>
                     {playlist.name}
                 </Playlist>
             ))}

@@ -47,34 +47,47 @@ test('Filters - PlayLists', async ({ page }) => {
     await page.keyboard.press('ArrowRight');
 
     await page.keyboard.press('ArrowDown'); // Polish (first, as it has most songs)
+    await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // English
+    await expect(page.getByTestId('playlist-English')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();
     await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Classics
+    await expect(page.getByTestId('playlist-Classics')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // Modern
+    await expect(page.getByTestId('playlist-Modern')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();
 
-    await page.keyboard.press('ArrowDown'); // Duet
+    await page.keyboard.press('ArrowDown'); // Duets
+    await expect(page.getByTestId('playlist-Duets')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // New
+    await expect(page.getByTestId('playlist-New')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-new-english-1995.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();
 
     await page.keyboard.press('ArrowDown'); // All
+    await expect(page.getByTestId('playlist-All')).toHaveAttribute('data-focused', 'true');
     await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
+
+    await page.keyboard.press('ArrowRight'); // Leave the playlists
+    await page.getByTestId('playlist-Polish').click();
+    await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
+    await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
 });
 
 test('Filters - Quick Search', async ({ page }) => {
