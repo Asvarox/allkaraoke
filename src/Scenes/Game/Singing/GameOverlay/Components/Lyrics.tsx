@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
-import { VolumeIndicator } from 'Elements/VolumeIndicator';
 import { PlayerEntity } from 'Players/PlayersManager';
-import InputManager from 'Scenes/Game/Singing/Input/InputManager';
+import LyricsVolumeIndicator from 'Scenes/Game/Singing/GameOverlay/Components/LyricsVolumeIndicator';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
@@ -41,13 +40,9 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
     const beatsBetweenSectionAndNote = hasNotes ? getFirstNoteStartFromSections([section]) - section.start : 0;
 
-    const playerVolume = InputManager.getPlayerVolume(player.number);
-
     return (
         <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-            {!mobilePhoneMode && effectsEnabled && (
-                <StyledVolumeIndicator playerNumber={player.number} volume={playerVolume} />
-            )}
+            {!mobilePhoneMode && effectsEnabled && <LyricsVolumeIndicator player={player} />}
             {timeToNextChange < Infinity && (
                 <PassTheMicProgress
                     color={playerColor}
@@ -186,10 +181,6 @@ const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number
         {children}
     </BaseLyricActive>
 );
-
-const StyledVolumeIndicator = styled(VolumeIndicator)`
-    width: 20rem;
-`;
 
 const BasePassTheMicProgress = styled.div<{ color: string }>`
     position: absolute;

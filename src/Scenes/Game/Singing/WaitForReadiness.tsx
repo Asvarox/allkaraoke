@@ -16,7 +16,7 @@ interface Props {
     onFinish: () => void;
 }
 
-const AUTOSTART_TIMEOUT_S = 1500;
+const AUTOSTART_TIMEOUT_S = 15;
 
 function WaitForReadiness({ onFinish }: Props) {
     const audio = useRef<HTMLAudioElement>(null);

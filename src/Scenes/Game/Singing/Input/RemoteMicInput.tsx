@@ -46,7 +46,7 @@ class RemoteMicInput implements InputInterface {
     public getStatus = (deviceId?: string) => {
         const mic = RemoteMicManager.getRemoteMicById(deviceId ?? '');
 
-        if (!mic) {
+        if (!mic || mic.getLatency() > 1500) {
             return 'unavailable' as const;
         } else if (mic.getLatency() > 500) {
             return 'unstable' as const;

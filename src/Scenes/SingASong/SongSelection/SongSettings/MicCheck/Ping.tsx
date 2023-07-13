@@ -7,7 +7,7 @@ interface Props {
     playerNumber: number;
 }
 
-function Ping({ playerNumber }: Props) {
+function Ping({ playerNumber, ...restProps }: Props) {
     const [latency, setLatency] = useState<number | null>(null);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function Ping({ playerNumber }: Props) {
             clearInterval(interval);
         };
     }, [playerNumber]);
-    return <>{latency !== null ? <PingContainer>{latency}ms</PingContainer> : ''}</>;
+    return <>{latency !== null ? <PingContainer {...restProps}>{latency}ms</PingContainer> : ''}</>;
 }
 export default Ping;
 

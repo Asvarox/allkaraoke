@@ -1,17 +1,18 @@
 import styled from '@emotion/styled';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
+import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import WarningIcon from '@mui/icons-material/Warning';
 import { typography } from 'Elements/cssMixins';
 import { inputStatus } from 'Scenes/Game/Singing/Input/Interface';
 
 interface Props {
     status: inputStatus;
+    tooltipPosition?: 'start' | 'end';
 }
 
-function PlayerStatus({ status }: Props) {
+function PlayerStatus({ status, tooltipPosition = 'end', ...restProps }: Props) {
     return (
-        <StatusContainer>
+        <StatusContainer {...restProps}>
             {status === 'ok' ? (
                 <OkIcon data-test="status-ok" />
             ) : status === 'unavailable' ? (
@@ -20,13 +21,13 @@ function PlayerStatus({ status }: Props) {
                 <UnstableIcon data-test="status-unstable" />
             )}
             {status === 'unavailable' ? (
-                <StatusDescription>
+                <StatusDescription position={tooltipPosition}>
                     <span>
                         The device is <strong>disconnected</strong>. Reconnect it, please.
                     </span>
                 </StatusDescription>
             ) : status === 'unstable' ? (
-                <StatusDescription>
+                <StatusDescription position={tooltipPosition}>
                     <span>
                         The connection seems <strong>unstable</strong>. Connect to the same Wifi.
                     </span>
@@ -50,8 +51,10 @@ const StatusContainer = styled.span`
     }
 `;
 
-const OkIcon = styled(CheckCircleIcon)`
+const OkIcon = styled(SignalCellularAltIcon)`
     fill: #ffffff;
+    stroke: black;
+    stroke-width: 1px;
 `;
 
 const UnavailableIcon = styled(ErrorIcon)`
@@ -63,10 +66,10 @@ const UnstableIcon = styled(WarningIcon)`
     stroke: black;
 `;
 
-const StatusDescription = styled.div`
+const StatusDescription = styled.div<{ position: Props['tooltipPosition'] }>`
     ${typography};
     position: absolute;
-    left: 100%;
+    ${(props) => (props.position === 'end' ? 'left: 100%' : 'right: 150%')};
     top: -0.5rem;
     font-size: 1.5rem;
     height: 100%;
