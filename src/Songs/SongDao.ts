@@ -45,7 +45,7 @@ class SongDao {
         return list ?? [];
     };
 
-    public generateSongFile = (song: Song | SongPreview, extension = 'json') =>
+    public generateSongFile = (song: Pick<Song | SongPreview, 'artist' | 'title'>, extension = 'json') =>
         `${song?.artist}-${song?.title}.${extension}`.replace(/[^a-zA-Z0-9 .-]/, '-');
 
     public reloadIndex = async () => {

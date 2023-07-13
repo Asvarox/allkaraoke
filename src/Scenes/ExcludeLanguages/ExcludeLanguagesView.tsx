@@ -108,10 +108,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                                 <LanguageName>{name}</LanguageName> ({count} songs)
                             </span>
                             <LanguageFlagBackground excluded={excluded}>
-                                <img
-                                    src={`https://flagcdn.com/${languageNameToIsoCode(name)}.svg`}
-                                    alt={languageNameToIsoCode(name)}
-                                />
+                                <img src={`https://flagcdn.com/${languageNameToIsoCode(name)}.svg`} alt={name} />
                             </LanguageFlagBackground>
                         </LanguageEntry>
                     );

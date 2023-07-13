@@ -66,7 +66,7 @@ export interface WebRTCRequestSongListEvent {
 }
 export interface WebRTCSongListEvent {
     t: 'songlist';
-    custom: Array<Pick<SongPreview, 'artist' | 'title' | 'video'>>;
+    custom: Array<Pick<SongPreview, 'artist' | 'title' | 'video' | 'language'>>;
     deleted: string[];
 }
 

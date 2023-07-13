@@ -6,7 +6,9 @@ import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import SongDao from 'Songs/SongDao';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import { PeerErrorType } from 'interfaces';
+import { uniqBy } from 'lodash-es';
 import { useEffect, useMemo, useState } from 'react';
+import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 
 interface Props {
     roomId: string;
@@ -36,25 +38,38 @@ function RemoteSongList({
 
     const songList = useMemo(
         () =>
-            originalSongList.data
-                .filter((song) => !(overrides?.deleted ?? []).includes(SongDao.generateSongFile(song)))
-                .map((song) => ({
-                    artist: song.artist,
-                    title: song.title,
-                    video: song.video,
-                }))
-                .concat(...(overrides?.custom ?? [])),
+            uniqBy(
+                originalSongList.data
+                    .filter((song) => !(overrides?.deleted ?? []).includes(SongDao.generateSongFile(song)))
+                    .map((song) => ({
+                        artist: song.artist,
+                        title: song.title,
+                        video: song.video,
+                        language: song.language,
+                    }))
+                    .concat(...(overrides?.custom ?? [])),
+                SongDao.generateSongFile,
+            ),
         [originalSongList.data, overrides],
     );
 
     return (
         <Container>
-            {songList.map((song) => (
-                <SongItemContainer key={`${song.artist}-${song.title}`}>
-                    <Title>{song.title}</Title>
-                    <Artist>{song.artist}</Artist>
-                </SongItemContainer>
-            ))}
+            {songList.map((song) => {
+                const language = Array.isArray(song.language) ? song.language[0] : song.language!;
+
+                return (
+                    <SongItemContainer key={`${song.artist}-${song.title}`}>
+                        <Language>
+                            <img src={`https://flagcdn.com/${languageNameToIsoCode(language)}.svg`} alt={language} />
+                        </Language>
+                        <ArtistTitle>
+                            <Title>{song.title}</Title>
+                            <Artist>{song.artist}</Artist>
+                        </ArtistTitle>
+                    </SongItemContainer>
+                );
+            })}
         </Container>
     );
 }
@@ -69,11 +84,29 @@ const Container = styled.div`
 const SongItemContainer = styled.div`
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
+    align-items: center;
     gap: 1rem;
     padding: 1.5rem 1rem;
     border-bottom: 1px solid black;
+`;
+
+const Language = styled.div`
+    img {
+        height: 3rem;
+        width: 3rem;
+        object-fit: cover;
+        border-radius: 3rem;
+        border: 0.1rem black solid;
+        aspect-ratio: 1;
+    }
+`;
+
+const ArtistTitle = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 `;
 
 const Artist = styled.span`
