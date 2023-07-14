@@ -6,7 +6,8 @@ import { nextValue, Switcher } from 'Elements/Switcher';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
+import InputLag from 'Scenes/Settings/InputLag';
 import {
     BackgroundMusic,
     BackgroundMusicSetting,
@@ -31,6 +32,7 @@ function Settings(props: Props) {
     const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
     const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const [backgroundMusic, setBackgroundMusic] = useSettingValue(BackgroundMusicSetting);
+    const inputLagRef = useRef<HTMLInputElement | null>(null);
 
     const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
     useEffect(() => {
@@ -70,6 +72,7 @@ function Settings(props: Props) {
                 label="Background Music"
                 value={backgroundMusic}
             />
+            <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
             <hr />
             <Switcher
                 {...register('camera-access', () => (camera ? CameraManager.disable() : enableCamera()))}

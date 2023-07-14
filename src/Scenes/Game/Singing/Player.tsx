@@ -13,7 +13,7 @@ import {
 
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { FPSCountSetting } from 'Scenes/Settings/SettingsState';
+import { FPSCountSetting, InputLagSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
@@ -79,6 +79,7 @@ function Player(
     const player = useRef<VideoPlayerRef | null>(null);
     const [currentTime, setCurrentTime] = useState(0);
     const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
+    const [inputLag] = useSettingValue(InputLagSetting);
 
     useEffect(() => {
         GameState.setSong(song);
@@ -93,7 +94,7 @@ function Player(
             const interval = setInterval(async () => {
                 if (!player.current) return;
 
-                const time = (await player.current.getCurrentTime()) * 1000;
+                const time = Math.max(0, (await player.current.getCurrentTime()) * 1000 - inputLag);
                 setCurrentTime(time);
                 onTimeUpdate?.(time);
                 GameState.setCurrentTime(time);
@@ -102,7 +103,7 @@ function Player(
 
             return () => clearInterval(interval);
         }
-    }, [player, onTimeUpdate, currentStatus]);
+    }, [player, onTimeUpdate, currentStatus, inputLag]);
 
     const duration = usePlayerSetDuration(player, currentStatus);
 

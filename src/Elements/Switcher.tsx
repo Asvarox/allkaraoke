@@ -42,7 +42,7 @@ export const Switcher = ({ focused, label, value, onClick, info, children, ...re
 
 const Container = styled.div``;
 
-const InfoText = styled.div`
+export const InfoText = styled.div`
     ${typography};
     font-size: 2rem;
     padding: 1rem 0.5rem 0;

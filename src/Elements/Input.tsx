@@ -1,17 +1,18 @@
 import styled from '@emotion/styled';
+import { InfoText } from 'Elements/Switcher';
 import { focusable, typography } from 'Elements/cssMixins';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import {
     DetailedHTMLProps,
     ForwardedRef,
-    forwardRef,
     InputHTMLAttributes,
     ReactNode,
+    forwardRef,
     useImperativeHandle,
     useRef,
 } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'onChange'> {
     focused: boolean;
@@ -19,11 +20,13 @@ interface Props extends Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
     value: string;
     onChange: (value: string) => void;
     disabled?: boolean;
+    adornment?: ReactNode;
+    info?: ReactNode;
 }
 
 export const Input = forwardRef(
     (
-        { focused, label, value, onChange, disabled, className, ...restProps }: Props,
+        { focused, label, value, onChange, disabled, className, adornment, info, ...restProps }: Props,
         forwardedRef: ForwardedRef<HTMLInputElement>,
     ) => {
         const inputRef = useRef<HTMLInputElement>(null);
@@ -32,19 +35,25 @@ export const Input = forwardRef(
         useHotkeys(REGULAR_ALPHA_CHARS, () => inputRef.current?.focus(), { enabled: focused });
 
         return (
-            <Container focused={focused} className={className}>
-                <Label>{label}</Label>
-                <StyledInput
-                    value={value}
-                    onChange={(e) => onChange(e.target.value)}
-                    {...restProps}
-                    disabled={disabled}
-                    ref={inputRef}
-                />
-            </Container>
+            <div>
+                <Container focused={focused} className={className}>
+                    <Label>{label}</Label>
+                    <StyledInput
+                        value={value}
+                        onChange={(e) => onChange(e.target.value)}
+                        {...restProps}
+                        disabled={disabled}
+                        ref={inputRef}
+                    />
+                    {adornment && <Adornment>{adornment}</Adornment>}
+                </Container>
+                {info && <InfoText>{info}</InfoText>}
+            </div>
         );
     },
 );
+
+const Adornment = styled.span``;
 
 const Container = styled.div<{ focused: boolean }>`
     background: black;

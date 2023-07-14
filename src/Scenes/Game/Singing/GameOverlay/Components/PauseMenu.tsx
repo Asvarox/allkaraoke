@@ -3,6 +3,7 @@ import { MenuButton, MenuContainer } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { useEffect, useRef, useState } from 'react';
 import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
+import InputLag from 'Scenes/Settings/InputLag';
 
 interface Props {
     onResume: () => void;
@@ -12,6 +13,7 @@ interface Props {
 
 export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     const menuRef = useRef<null | HTMLButtonElement>(null);
+    const inputLagRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
         menuRef.current?.focus();
@@ -32,6 +34,8 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
                 <MenuButton {...register('input-settings', () => setIsInputModalOpen(true))}>
                     Microphones settings
                 </MenuButton>
+                <hr />
+                <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
             </MenuContainer>
             {isInputModalOpen && (
                 <SelectInputModal onClose={() => setIsInputModalOpen(false)} closeButtonText={'Back to Pause Menu'} />
