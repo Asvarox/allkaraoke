@@ -129,8 +129,22 @@ export const useSongSelectionKeyboardNavigation = (
         onEnter();
     };
 
+    const [blockBack, setBlockBack] = useState(false);
+    const previousSearch = usePrevious(appliedFilters.search);
+    useLayoutEffect(() => {
+        if (previousSearch && !appliedFilters.search) {
+            setBlockBack(true);
+            const timeout = setTimeout(() => setBlockBack(false), 2_000);
+
+            return () => {
+                clearTimeout(timeout);
+                setBlockBack(false);
+            };
+        }
+    }, [appliedFilters.search]);
+
     const handleBackspace = () => {
-        if (!appliedFilters.search) {
+        if (!blockBack && !appliedFilters.search) {
             menuBack.play();
             navigate('/');
         }
@@ -191,7 +205,7 @@ export const useSongSelectionKeyboardNavigation = (
             },
         },
         enabled && !arePlaylistsVisible,
-        [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters],
+        [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters, blockBack],
     );
 
     const help = useMemo(

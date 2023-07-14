@@ -117,6 +117,8 @@ test('Filters - Quick Search', async ({ page }) => {
     await page.keyboard.press('Backspace');
     await expect(page.getByTestId('filters-search')).toBeFocused();
     await page.getByTestId('filters-search').clear();
+    // Validate that na additional backspace doesn't close the song list
+    await page.keyboard.press('Backspace');
 
     // The polish song is not visible anymore
     await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();

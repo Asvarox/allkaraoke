@@ -59,6 +59,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         isLoading,
     } = useSongSelection(preselectedSong, songsPerRow);
 
+    const [blockBack, setBlockBack] = useState(false);
+
     const onSearchSong: KeyHandler = (e) => {
         e.stopPropagation();
         e.preventDefault();
