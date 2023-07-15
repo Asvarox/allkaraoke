@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 import { CircularProgress } from '@mui/material';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import { focused, typography } from 'Elements/cssMixins';
+import events from 'GameEvents/GameEvents';
+import { useEventEffect } from 'GameEvents/hooks';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
@@ -59,8 +61,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         isLoading,
     } = useSongSelection(preselectedSong, songsPerRow);
 
-    const [blockBack, setBlockBack] = useState(false);
-
     const onSearchSong: KeyHandler = (e) => {
         e.stopPropagation();
         e.preventDefault();
@@ -70,6 +70,16 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         });
     };
     useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !filters.search && keyboardControl });
+
+    const onRemoteSearch = useCallback(
+        (search: string) => {
+            if (keyboardControl) {
+                setFilters({ search });
+            }
+        },
+        [keyboardControl],
+    );
+    useEventEffect(events.remoteSongSearch, onRemoteSearch);
 
     const list = useRef<HTMLDivElement | null>(null);
     const { width, handleResize } = useViewportSize();

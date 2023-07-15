@@ -177,6 +177,10 @@ class WebRTCClient {
         this.sendEvent('keystroke', { key });
     };
 
+    public searchSong = (search: string) => {
+        this.sendEvent('search-song', { search });
+    };
+
     public requestPlayerChange = (playerNumber: number | null) => {
         this.sendEvent('request-mic-select', { playerNumber });
     };

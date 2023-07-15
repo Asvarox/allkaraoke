@@ -1,14 +1,15 @@
 import styled from '@emotion/styled';
+import { KeyboardReturn } from '@mui/icons-material';
 import { typography } from 'Elements/cssMixins';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { supportsEscAsBack } from 'hooks/useKeyboard';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import createPersistedState from 'use-persisted-state';
-import { HelpEntry } from './Context';
+import { RegularHelpEntry } from './Context';
 
 interface Props {
-    help: HelpEntry | undefined;
+    help: RegularHelpEntry;
 }
 
 const useIsVisible = createPersistedState('keyboard-help-visibility');
@@ -32,7 +33,7 @@ export default function KeyboardHelpView({ help }: Props) {
                 <Container data-test="help-container">
                     <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
                     {helps.map(([type, label]) => {
-                        const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof HelpEntry];
+                        const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
                         return (
                             <Section key={type}>
                                 <SectionHelp>{label ?? defaultLabel}</SectionHelp>
@@ -67,7 +68,11 @@ const HorizontalVerticalBase = ({ vertical = false, horizontal = false }) => (
 const Horizontal = () => <HorizontalVerticalBase horizontal />;
 const Vertical = () => <HorizontalVerticalBase vertical />;
 const HorizontalVertical = () => <HorizontalVerticalBase vertical horizontal />;
-const Accept = () => <Kbd>Enter ⏎</Kbd>;
+const Accept = () => (
+    <Kbd>
+        Enter <KeyboardReturn />
+    </Kbd>
+);
 const Back = () => (supportsEscAsBack ? <Kbd>Escape</Kbd> : <Kbd>Backspace ⌫</Kbd>);
 const ShiftLetter = (letter: string) => () =>
     (
@@ -76,7 +81,7 @@ const ShiftLetter = (letter: string) => () =>
         </>
     );
 
-const KeyhelpComponent: Record<keyof HelpEntry, { view: ComponentType; defaultLabel: string }> = {
+const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; defaultLabel: string }> = {
     'horizontal-vertical': { view: HorizontalVertical, defaultLabel: 'Navigate' },
     horizontal: { view: Horizontal, defaultLabel: 'Navigate' },
     vertical: { view: Vertical, defaultLabel: 'Navigate' },

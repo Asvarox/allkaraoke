@@ -7,7 +7,10 @@ import KeyboardHelpView from './HelpView';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR';
 
-export type HelpEntry = Partial<Record<keys, string | null>>;
+type remoteActions = 'search';
+
+export type RegularHelpEntry = Partial<Record<keys, string | null>>;
+export type HelpEntry = RegularHelpEntry & { remote?: remoteActions[] };
 
 export const KeyboardHelpContext = createContext({
     setKeyboard: (name: string, helpEntry: HelpEntry): void => {},
@@ -44,10 +47,12 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
         });
     }, [name]);
 
+    const { remote, ...rest } = help ?? {};
+
     return (
         <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard }}>
             {children}
-            <KeyboardHelpView help={help} />
+            <KeyboardHelpView help={rest} />
         </KeyboardHelpContext.Provider>
     );
 };

@@ -1,10 +1,21 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Games, KeyboardArrowDown, KeyboardArrowLeft, KeyboardArrowRight, KeyboardArrowUp } from '@mui/icons-material';
+import {
+    ArrowBack,
+    ArrowForward,
+    Games,
+    KeyboardArrowDown,
+    KeyboardArrowLeft,
+    KeyboardArrowRight,
+    KeyboardArrowUp,
+    Search,
+    Shuffle,
+} from '@mui/icons-material';
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { keyStrokes } from 'RemoteMic/Network/events';
+import RemoteSongSearch from 'Scenes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
 export default function RemoteMicKeyboard() {
     const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
@@ -49,19 +60,40 @@ export default function RemoteMicKeyboard() {
                     onClick={onPress('back')}
                     disabled={keyboard?.back === undefined}
                     data-test="keyboard-backspace">
-                    {keyboard?.back || 'Back'}
+                    {keyboard?.back || (
+                        <>
+                            <ArrowBack /> Back
+                        </>
+                    )}
                 </ActionButton>
                 <ActionButton
                     onClick={onPress('accept')}
                     disabled={keyboard?.accept === undefined}
                     data-test="keyboard-enter">
-                    {keyboard?.accept || 'Enter'}
+                    {keyboard?.accept || (
+                        <>
+                            Enter <ArrowForward />
+                        </>
+                    )}
                 </ActionButton>
             </ActionsContainer>
             <Break />
             <ActionsContainer disabled={keyboard?.shiftR === undefined} data-test="keyboard-shift-r">
-                <ActionButton onClick={onPress('random')}>{keyboard?.shiftR || 'Random Song'}</ActionButton>
+                <ActionButton onClick={onPress('random')}>
+                    <Shuffle /> {keyboard?.shiftR || 'Random Song'}
+                </ActionButton>
             </ActionsContainer>
+            {keyboard?.remote?.includes('search') && (
+                <RemoteSongSearch>
+                    {(props) => (
+                        <ActionsContainer data-test="keyboard-search" style={{ flex: 0 }}>
+                            <ActionButton {...props}>
+                                <Search /> Search
+                            </ActionButton>
+                        </ActionsContainer>
+                    )}
+                </RemoteSongSearch>
+            )}
         </Container>
     ) : null;
 }
@@ -70,6 +102,7 @@ const Container = styled.div`
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 `;
 const ArrowsContainer = styled.div`
     display: flex;
@@ -116,6 +149,7 @@ const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
     border: 0.3rem solid rgb(204, 204, 204);
     border-bottom-color: rgb(130, 130, 130);
     border-right-color: rgb(130, 130, 130);
+    gap: 0.5rem;
 
     ${(props) =>
         !props.disabled

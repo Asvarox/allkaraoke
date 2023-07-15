@@ -80,6 +80,11 @@ export interface WebRTCRemoteKeyboardEvent {
     help: HelpEntry | undefined;
 }
 
+export interface WebRTCSearchSongEvent {
+    t: 'search-song';
+    search: string;
+}
+
 export type WebRTCEvents =
     | WebRTCSetPlayerNumber
     | WebRTCRegisterEvent
@@ -96,4 +101,5 @@ export type WebRTCEvents =
     | WebRTCPongEventEvent
     | WebRTCRequestSongListEvent
     | WebRTCSongListEvent
+    | WebRTCSearchSongEvent
     | WebRTCNewFrequencyEvent;

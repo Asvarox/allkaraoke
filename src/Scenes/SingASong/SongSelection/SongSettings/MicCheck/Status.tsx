@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { ThumbUpAlt } from '@mui/icons-material';
 import ErrorIcon from '@mui/icons-material/Error';
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import WarningIcon from '@mui/icons-material/Warning';
@@ -14,7 +15,7 @@ function PlayerStatus({ status, tooltipPosition = 'end', ...restProps }: Props) 
     return (
         <StatusContainer {...restProps}>
             {status === 'ok' ? (
-                <OkIcon data-test="status-ok" />
+                <ThumbUpAlt data-test="status-ok" />
             ) : status === 'unavailable' ? (
                 <UnavailableIcon data-test="status-unavailable" />
             ) : (

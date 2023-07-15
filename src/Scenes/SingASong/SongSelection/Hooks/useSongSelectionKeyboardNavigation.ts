@@ -1,3 +1,4 @@
+import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import selectRandomSong from 'Scenes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
@@ -208,12 +209,13 @@ export const useSongSelectionKeyboardNavigation = (
         [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters, blockBack],
     );
 
-    const help = useMemo(
+    const help = useMemo<HelpEntry>(
         () => ({
             'horizontal-vertical': null,
             accept: null,
             back: null,
             shiftR: null,
+            remote: ['search'],
         }),
         [],
     );

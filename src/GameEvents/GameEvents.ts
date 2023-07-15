@@ -85,6 +85,7 @@ export const events = {
     ),
 
     remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed', true),
+    remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch', true),
     remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
     remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
     readinessConfirmed: new GameEvent<(deviceId: string) => void>('remoteReadinessConfirmed'),

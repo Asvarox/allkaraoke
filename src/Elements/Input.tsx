@@ -71,6 +71,10 @@ const Label = styled.span`
     padding-right: 0.5em;
     white-space: nowrap;
     width: auto;
+
+    svg {
+        font-size: 1em;
+    }
 `;
 
 const StyledInput = styled.input`
