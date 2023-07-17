@@ -45,8 +45,10 @@ class SongDao {
         return list ?? [];
     };
 
-    public generateSongFile = (song: Pick<Song | SongPreview, 'artist' | 'title'>, extension = 'json') =>
-        `${song?.artist}-${song?.title}.${extension}`.replace(/[^a-zA-Z0-9 .-]/, '-');
+    public generateSongFile = (
+        song: Pick<Song | SongPreview, 'artist' | 'title'> & { file?: string },
+        extension = 'json',
+    ) => (song.file ? song.file : `${song?.artist}-${song?.title}.${extension}`.replace(/[^a-zA-Z0-9 .-]/, '-'));
 
     public reloadIndex = async () => {
         const [defaultIndex, storageIndex, deletedSongs] = await Promise.all([

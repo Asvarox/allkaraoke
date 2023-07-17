@@ -154,6 +154,8 @@ class WebRTCClient {
 
             events.karaokeConnectionStatusChange.dispatch('disconnected');
             events.remoteMicPlayerSet.dispatch(null);
+            events.remoteKeyboardLayout.dispatch(undefined);
+
             SimplifiedMic.removeListener(this.onFrequencyUpdate);
             SimplifiedMic.stopMonitoring();
 

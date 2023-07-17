@@ -13,19 +13,28 @@ interface Props {
 export default function BottomBar({ active, setActiveTab }: Props) {
     return (
         <Container>
-            <ItemContainer active={active === 'microphone'} onClick={() => setActiveTab('microphone')}>
+            <ItemContainer
+                active={active === 'microphone'}
+                onClick={() => setActiveTab('microphone')}
+                data-test="menu-microphone">
                 <ItemIcon>
                     <MicIcon />
                 </ItemIcon>
                 <ItemTitle>Microphone</ItemTitle>
             </ItemContainer>
-            <ItemContainer active={active === 'song-list'} onClick={() => setActiveTab('song-list')}>
+            <ItemContainer
+                active={active === 'song-list'}
+                onClick={() => setActiveTab('song-list')}
+                data-test="menu-song-list">
                 <ItemIcon>
                     <ListIcon />
                 </ItemIcon>
                 <ItemTitle>Song list</ItemTitle>
             </ItemContainer>
-            <ItemContainer active={active === 'settings'} onClick={() => setActiveTab('settings')}>
+            <ItemContainer
+                active={active === 'settings'}
+                onClick={() => setActiveTab('settings')}
+                data-test="menu-settings">
                 <ItemIcon>
                     <SettingsIcon />
                 </ItemIcon>

@@ -33,22 +33,28 @@ function RemoteSongList({
 
     const [overrides, setOverrides] = useState<WebRTCSongListEvent | undefined>();
     useEffect(() => {
-        WebRTCClient.getSongList().then(setOverrides);
-    }, []);
+        if (connectionStatus === 'connected' && overrides === undefined) {
+            WebRTCClient.getSongList().then(setOverrides);
+        }
+    }, [overrides, connectionStatus]);
 
     const songList = useMemo(
         () =>
             uniqBy(
                 originalSongList.data
-                    .filter((song) => !(overrides?.deleted ?? []).includes(SongDao.generateSongFile(song)))
+                    .map((song) => ({ ...song, id: SongDao.generateSongFile(song) }))
+                    .filter((song) => !(overrides?.deleted ?? []).includes(song.id))
                     .map((song) => ({
+                        id: song.id,
                         artist: song.artist,
                         title: song.title,
                         video: song.video,
                         language: song.language,
                     }))
-                    .concat(...(overrides?.custom ?? [])),
-                SongDao.generateSongFile,
+                    .concat(
+                        ...(overrides?.custom ?? []).map((song) => ({ ...song, id: SongDao.generateSongFile(song) })),
+                    ),
+                (song) => song.id,
             ),
         [originalSongList.data, overrides],
     );
@@ -59,7 +65,7 @@ function RemoteSongList({
                 const language = Array.isArray(song.language) ? song.language[0] : song.language!;
 
                 return (
-                    <SongItemContainer key={`${song.artist}-${song.title}`}>
+                    <SongItemContainer key={`${song.artist}-${song.title}`} data-test={song.id}>
                         <Language>
                             <img src={`https://flagcdn.com/${languageNameToIsoCode(language)}.svg`} alt={language} />
                         </Language>

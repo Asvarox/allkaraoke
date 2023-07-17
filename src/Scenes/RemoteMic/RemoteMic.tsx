@@ -78,7 +78,7 @@ function RemoteMic({ roomId }: Props) {
                         connectionError={connectionError}
                     />
                 )}
-                {isConnected && <BottomBar setActiveTab={setActiveTab} active={activeTab} />}
+                <BottomBar setActiveTab={setActiveTab} active={activeTab} />
             </Container>
         </>
     );
