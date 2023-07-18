@@ -13,7 +13,7 @@ test.use({ serviceWorkers: 'block' });
 
 const P1_Name = 'E2E Test Blue';
 
-test('Remote mic list', async ({ page, context, browserName }) => {
+test('Remote mic song list', async ({ page, context, browserName }) => {
     test.fixme(browserName === 'firefox', 'Test fails super often on FF');
     test.slow();
     await page.goto('/?e2e-test');

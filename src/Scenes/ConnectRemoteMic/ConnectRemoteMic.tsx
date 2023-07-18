@@ -9,6 +9,7 @@ import { useRoute } from 'wouter';
 const linkObject = new URL(window.location.href);
 
 function ConnectRemoteMic() {
+    // Validate if the component is rendered in a remote mic or in the "main" game via the URL
     const [match, params] = useRoute<{ roomId: string }>('/remote-mic/:roomId');
     linkObject.pathname = `/remote-mic/${match ? params.roomId : WebRTCServer.getRoomId()}`;
     const link = linkObject.href;

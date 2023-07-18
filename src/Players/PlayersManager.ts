@@ -1,4 +1,5 @@
 import events from 'GameEvents/GameEvents';
+import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
@@ -6,7 +7,7 @@ import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { debounce } from 'lodash-es';
 import storage from 'utils/storage';
 
-const PLAYER_INPUTS_LOCAL_STORAGE_KEY = 'playerselectedinputs';
+const SELECTED_INPUTS_KEY = 'playerselectedinputs';
 
 export interface SelectedPlayerInput {
     source: InputSourceNames;
@@ -61,14 +62,17 @@ class PlayersManager {
     private players: PlayerEntity[] = [];
     private requestingPromise: Promise<any> | null = null;
     public constructor() {
-        const storedPlayers =
-            storage.getValue<ReturnType<PlayerEntity['toJSON']>[]>(PLAYER_INPUTS_LOCAL_STORAGE_KEY) ?? [];
+        const storedPlayers = storage.getValue<ReturnType<PlayerEntity['toJSON']>[]>(SELECTED_INPUTS_KEY) ?? [];
         if (storedPlayers.length) {
             this.players = storedPlayers.map(PlayerEntity.fromJSON);
 
             if (this.getPlayers().some((player) => player.input.source === 'Microphone')) {
                 // If any microphones are selected, load the list
                 inputSourceListManager.loadMics();
+            }
+            if (this.getPlayers().some((player) => player.input.source === 'Remote Microphone')) {
+                // If there are some remote mics, restart the server
+                WebRTCServer.start();
             }
         } else {
             this.players = [
@@ -108,7 +112,7 @@ class PlayersManager {
 
     private storePlayers = () => {
         storage.storeValue(
-            PLAYER_INPUTS_LOCAL_STORAGE_KEY,
+            SELECTED_INPUTS_KEY,
             this.getPlayers().map((player) => player.toJSON()),
         );
     };

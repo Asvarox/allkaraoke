@@ -17,8 +17,6 @@ class WebRTCServer {
     public constructor() {
         if (!this.roomId) {
             this.roomId = v4();
-        } else {
-            this.start();
         }
 
         window.addEventListener('beforeunload', () => {
@@ -30,6 +28,7 @@ class WebRTCServer {
     public start = () => {
         if (this.started) return;
         this.started = true;
+        console.log('connection started');
         window.sessionStorage.setItem(ROOM_ID_KEY, this.roomId);
 
         this.peer = new Peer(this.roomId, peerJSOptions);

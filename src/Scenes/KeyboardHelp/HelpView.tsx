@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { KeyboardReturn } from '@mui/icons-material';
+import HelpIcon from '@mui/icons-material/Help';
 import { typography } from 'Elements/cssMixins';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { supportsEscAsBack } from 'hooks/useKeyboard';
@@ -7,7 +8,6 @@ import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import createPersistedState from 'use-persisted-state';
 import { RegularHelpEntry } from './Context';
-
 interface Props {
     help: RegularHelpEntry;
 }
@@ -29,26 +29,33 @@ export default function KeyboardHelpView({ help }: Props) {
 
     return (
         <>
-            {isVisible && !!helps.length && (
-                <Container data-test="help-container">
-                    <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
-                    {helps.map(([type, label]) => {
-                        const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
-                        return (
-                            <Section key={type}>
-                                <SectionHelp>{label ?? defaultLabel}</SectionHelp>
+            {!!helps.length && (
+                <Container data-test="help-container" onClick={() => setIsVisible(!isVisible)} collapsed={!isVisible}>
+                    {isVisible ? (
+                        <>
+                            <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
+                            {helps.map(([type, label]) => {
+                                const { view: Component, defaultLabel } =
+                                    KeyhelpComponent[type as keyof RegularHelpEntry];
+                                return (
+                                    <Section key={type}>
+                                        <SectionHelp>{label ?? defaultLabel}</SectionHelp>
+                                        <SectionKeys>
+                                            <Component />
+                                        </SectionKeys>
+                                    </Section>
+                                );
+                            })}
+                            <Section>
+                                <SectionHelp>Show/hide this help</SectionHelp>
                                 <SectionKeys>
-                                    <Component />
+                                    <Kbd>H</Kbd>
                                 </SectionKeys>
                             </Section>
-                        );
-                    })}
-                    <Section>
-                        <SectionHelp>Show/hide this help</SectionHelp>
-                        <SectionKeys>
-                            <Kbd>H</Kbd>
-                        </SectionKeys>
-                    </Section>
+                        </>
+                    ) : (
+                        <HelpIcon onClick={() => setIsVisible(!isVisible)} />
+                    )}
                 </Container>
             )}
         </>
@@ -127,7 +134,7 @@ const UseKeyboardIndicator = styled.div`
     visibility: hidden;
 `;
 
-const Container = styled.div`
+const Container = styled.div<{ collapsed: boolean }>`
     position: fixed;
     top: 10rem;
     right: 5.5rem;
@@ -136,7 +143,9 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 34rem;
+    width: ${(props) => (props.collapsed ? 'auto' : '34rem')};
+    opacity: ${(props) => (props.collapsed ? 0.5 : 1)};
+    cursor: pointer;
 
     z-index: 10000;
 
@@ -151,6 +160,10 @@ const Container = styled.div`
             opacity: 1;
             visibility: visible;
         }
+    }
+
+    svg {
+        fill: white;
     }
 `;
 
