@@ -79,7 +79,6 @@ const Container = styled.div<{ visible: boolean }>`
     z-index: 4;
     padding: 0.5rem;
     transition: ease 500ms;
-    //-webkit-text-stroke: thin black;
 `;
 
 const Kbd = styled.kbd<{ disabled?: boolean }>`

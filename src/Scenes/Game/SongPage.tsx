@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { typography } from 'Elements/cssMixins';
 import { Song, SongPreview } from 'interfaces';
 import styles from './Singing/GameOverlay/Drawing/styles';
 
@@ -91,10 +92,9 @@ export const ContentElement = styled.span`
     background: rgba(0, 0, 0, 0.5);
     display: inline-block;
     backdrop-filter: blur(0.5rem);
-    -webkit-text-stroke: thin black;
+    ${typography};
     padding: 0.5rem 2rem;
     margin: 0 0 1rem 2rem;
-    font-weight: bold;
 `;
 
 const SongTitle = styled(ContentElement)`

@@ -51,10 +51,7 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
             )}
             {hasNotes ? (
                 <>
-                    <LyricsLine
-                        data-test={`lyrics-current-player-${player.number}`}
-                        effectsEnabled={effectsEnabled}
-                        mobileMode={!!mobilePhoneMode}>
+                    <LyricsLine data-test={`lyrics-current-player-${player.number}`} effectsEnabled={effectsEnabled}>
                         <HeadstartContainer>
                             <Headstart
                                 color={playerColor}
@@ -83,23 +80,17 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
                     </LyricsLine>
                 </>
             ) : (
-                <LyricsLine effectsEnabled={effectsEnabled} mobileMode={!!mobilePhoneMode}>
-                    &nbsp;
-                </LyricsLine>
+                <LyricsLine effectsEnabled={effectsEnabled}>&nbsp;</LyricsLine>
             )}
             {isNotesSection(nextSection) ? (
-                <LyricsLine
-                    nextLine
-                    data-test={`lyrics-next-player-${player.number}`}
-                    effectsEnabled={effectsEnabled}
-                    mobileMode={!!mobilePhoneMode}>
+                <LyricsLine nextLine data-test={`lyrics-next-player-${player.number}`} effectsEnabled={effectsEnabled}>
                     {nextSection.notes.map((note) => (
                         <Fragment key={note.start}>{note.lyrics}</Fragment>
                     ))}
                     {subsequentSection?.start === nextChange && <PassTheMicSymbol />}
                 </LyricsLine>
             ) : (
-                <LyricsLine effectsEnabled={effectsEnabled} nextLine mobileMode={!!mobilePhoneMode}>
+                <LyricsLine effectsEnabled={effectsEnabled} nextLine>
                     &nbsp;
                 </LyricsLine>
             )}
@@ -230,11 +221,10 @@ const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => pr
     ${(props) => (props.shouldShake ? `fill: ${styles.colors.text.active};` : '')}
     font-size: ${(props) => (props.shouldShake ? 4 : 3)}rem;
 `;
-const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean; mobileMode: boolean }>`
+const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
     font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2)}rem;
     height: ${({ effectsEnabled }) => (effectsEnabled ? 4.5 : 2)}rem;
     ${({ effectsEnabled }) => (!effectsEnabled ? '-webkit-text-stroke-width: 2px' : '')};
-    ${({ mobileMode }) => mobileMode && '-webkit-text-stroke-width: 0px !important'};
 
     color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 

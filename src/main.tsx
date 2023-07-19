@@ -1,3 +1,5 @@
+import '@fontsource/roboto';
+import '@fontsource/roboto/900.css';
 import 'GameEvents/eventListeners';
 import 'Stats';
 import 'utils/exposeSingletons';

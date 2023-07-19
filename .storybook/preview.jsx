@@ -1,6 +1,8 @@
 import { Global } from '@emotion/react';
+import { useMemo } from 'react';
 import styles from '../src/styles';
 import '../src/index.css';
+import { createTheme, ThemeProvider } from '@mui/material';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -13,10 +15,19 @@ export const parameters = {
 };
 
 export const decorators = [
-    (Story) => (
-        <>
-            <Global styles={styles} />
-            <Story />
-        </>
-    ),
+    (Story) => {
+        const theme = useMemo(
+            () =>
+                createTheme({
+                    graphicSetting: 'high',
+                }),
+            [],
+        );
+        return (
+            <ThemeProvider theme={theme}>
+                <Global styles={styles({ theme })} />
+                <Story />
+            </ThemeProvider>
+        );
+    },
 ];

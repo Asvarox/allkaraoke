@@ -136,6 +136,10 @@ body {
     overflow-y: auto;
 }
 
+button, input {
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
 html {
     overflow: overlay;
     overflow-x: hidden;

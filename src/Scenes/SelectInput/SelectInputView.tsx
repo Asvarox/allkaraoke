@@ -1,6 +1,6 @@
 import { CompletedAnim, Heading } from 'Elements/Menu/Heading';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import SelectPreference from 'Scenes/SelectInput/SelectPreference/SelectPreference';
+import SelectPreference from 'Scenes/SelectInput/SelectPreference';
 import Advanced from 'Scenes/SelectInput/Variants/Advanced';
 import BuiltIn from 'Scenes/SelectInput/Variants/BuiltIn';
 import RemoteMics from 'Scenes/SelectInput/Variants/RemoteMics';

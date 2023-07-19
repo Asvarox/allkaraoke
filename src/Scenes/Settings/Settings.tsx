@@ -88,7 +88,7 @@ function Settings(props: Props) {
                 info="Adjust the game to a smaller screen. Disables option to sing in duets."
             />
             <hr />
-            <MenuButton {...register('setup-mics-button', () => navigate('/manage-songs'))} size="small">
+            <MenuButton {...register('setup-mics-button', () => navigate('/select-input'))} size="small">
                 Setup Microphones
             </MenuButton>
             <MenuButton {...register('manage-songs-button', () => navigate('/manage-songs'))} size="small">

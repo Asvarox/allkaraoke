@@ -228,6 +228,7 @@ const NoSongsFound = styled.div`
 `;
 
 const SongsGroupHeader = styled.div`
+    ${typography};
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-bottom: 2rem;
@@ -235,9 +236,7 @@ const SongsGroupHeader = styled.div`
     position: sticky;
     z-index: 1;
     top: calc(-1 * var(--song-list-gap));
-    font-weight: bold;
     color: ${styles.colors.text.active};
-    -webkit-text-stroke: thin black;
     background: rgba(0, 0, 0, 0.7);
 `;
 

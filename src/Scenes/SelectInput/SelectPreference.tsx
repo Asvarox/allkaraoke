@@ -113,7 +113,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
 }
 
 const OptionDescription = styled.div<{ focused?: boolean }>`
-    padding: 0 0 0 2.5rem;
+    padding: 0 3rem 0 6rem;
     font-size: 1.6rem;
     max-height: 0;
     overflow: clip;
