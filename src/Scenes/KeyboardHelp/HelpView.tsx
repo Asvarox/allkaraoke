@@ -30,7 +30,11 @@ export default function KeyboardHelpView({ help }: Props) {
     return (
         <>
             {!!helps.length && (
-                <Container data-test="help-container" onClick={() => setIsVisible(!isVisible)} collapsed={!isVisible}>
+                <Container
+                    data-test="help-container"
+                    onClick={() => setIsVisible(!isVisible)}
+                    collapsed={!isVisible}
+                    data-collapsed={!isVisible}>
                     {isVisible ? (
                         <>
                             <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
