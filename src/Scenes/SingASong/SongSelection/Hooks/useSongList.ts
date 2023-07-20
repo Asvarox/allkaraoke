@@ -4,7 +4,7 @@ import useSongIndex from 'Songs/hooks/useSongIndex';
 import { isAfter } from 'date-fns';
 import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash-es';
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
 export interface SongGroup {
@@ -111,6 +111,7 @@ export const useSongListFilter = (list: SongPreview[]) => {
     const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
 
     const [filters, setFilters] = useState<AppliedFilters>({ excludeLanguages: excludedLanguages ?? [] });
+    const deferredFilters = useDeferredValue(filters);
 
     const prefilteredList = useMemo(
         () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
@@ -119,10 +120,10 @@ export const useSongListFilter = (list: SongPreview[]) => {
     const filteredList = useMemo(
         () =>
             applyFilters(list, {
-                ...filters,
+                ...deferredFilters,
                 excludeLanguages: excludedLanguages ?? [],
             }),
-        [list, filters, excludedLanguages],
+        [list, deferredFilters, excludedLanguages],
     );
 
     const filtersData: FiltersData = {
