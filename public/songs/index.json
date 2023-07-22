@@ -357,6 +357,33 @@
     "local": false
   },
   {
+    "title": "Set Fire To The Rain",
+    "artist": "Adele",
+    "bpm": 216.04,
+    "bar": 4,
+    "gap": 7847.95778559526,
+    "video": "a2giXO6eyuI",
+    "year": "2011",
+    "lastUpdate": "2023-07-22T21:15:10.374Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 0.5,
+    "author": "gaspar17",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Adele-Set-Fire-To-The-Rain.json",
+    "tracksCount": 1,
+    "search": "adelesetfiretotherain",
+    "local": false
+  },
+  {
     "title": "Someone Like You",
     "artist": "Adele",
     "bpm": 270,
@@ -895,6 +922,62 @@
     "file": "Ariana Grande-No tears left to cry(1).json",
     "tracksCount": 1,
     "search": "arianagrandenotearslefttocry",
+    "local": false
+  },
+  {
+    "title": "Greedy",
+    "artist": "Ariana Grande",
+    "bpm": 219.98,
+    "bar": 4,
+    "gap": -245.50413673970365,
+    "video": "nw8zdCwp3k4",
+    "year": "2016",
+    "lastUpdate": "2023-07-22T21:15:10.377Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 113,
+    "volume": 0.5,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "file": "Ariana-Grande-Greedy.json",
+    "tracksCount": 1,
+    "search": "arianagrandegreedy",
+    "local": false
+  },
+  {
+    "title": "Break Free",
+    "artist": "Ariana Grande feat. Zedd",
+    "bpm": 260.02,
+    "bar": 4,
+    "gap": 29199.30620721483,
+    "video": "L8eRzOYhLuw",
+    "year": "2014",
+    "lastUpdate": "2023-07-22T21:15:10.378Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 130,
+    "previewStart": 62,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Ariana-Grande-feat.-Zedd-Break-Free.json",
+    "tracksCount": 1,
+    "search": "arianagrandefeatzeddbreakfree",
     "local": false
   },
   {
@@ -1452,6 +1535,93 @@
     "file": "Bee Gees-Stayin' Alive.json",
     "tracksCount": 1,
     "search": "beegeesstayinalive",
+    "local": false
+  },
+  {
+    "title": "If I Were A Boy (Album Version)",
+    "artist": "Beyoncé",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 4640,
+    "video": "Xk2O_p1ICco",
+    "year": "2008",
+    "lastUpdate": "2023-07-22T21:15:10.379Z",
+    "edition": "[SC]-Songs",
+    "genre": "R&B",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 90,
+    "previewStart": 48,
+    "previewEnd": 73,
+    "volume": 0.5,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "file": "Beyonc-If-I-Were-A-Boy-Album-Version.json",
+    "tracksCount": 1,
+    "search": "beyonceifiwereaboyalbumversion",
+    "local": false
+  },
+  {
+    "title": "Irreplaceable",
+    "artist": "Beyoncé",
+    "bpm": 352,
+    "bar": 4,
+    "gap": 19309.886363636364,
+    "video": "2EwViQxSJJQ",
+    "year": "2006",
+    "lastUpdate": "2023-07-22T21:15:10.380Z",
+    "edition": "[SC]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 176,
+    "previewStart": 62,
+    "previewEnd": 93,
+    "volume": 0.1,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Beyonc-Irreplaceable.json",
+    "tracksCount": 1,
+    "search": "beyonceirreplaceable",
+    "local": false
+  },
+  {
+    "title": "Love On Top",
+    "artist": "Beyoncé",
+    "bpm": 376.16,
+    "bar": 4,
+    "gap": 1303.0837941301575,
+    "video": "Ob7vObnFUJc",
+    "year": "2011",
+    "lastUpdate": "2023-07-22T21:15:10.381Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 94,
+    "volume": 0.4,
+    "author": "lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "file": "Beyonc-Love-On-Top.json",
+    "tracksCount": 1,
+    "search": "beyonceloveontop",
     "local": false
   },
   {
@@ -3585,6 +3755,33 @@
     "local": false
   },
   {
+    "title": "Dzaga",
+    "artist": "Doda",
+    "bpm": 330,
+    "bar": 4,
+    "gap": 11430,
+    "video": "_7TtBGE9MiE",
+    "year": "2004",
+    "lastUpdate": "2023-07-22T21:15:10.382Z",
+    "genre": "Pop",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 164,
+    "volume": 0.5,
+    "author": "jockel1974",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "file": "Doda-Dzaga.json",
+    "tracksCount": 1,
+    "search": "dodadzaga",
+    "local": false
+  },
+  {
     "title": "I Feel Love",
     "artist": "Donna Summer",
     "bpm": 253.44,
@@ -3662,6 +3859,33 @@
     "file": "Drake-Hotline Bling.json",
     "tracksCount": 1,
     "search": "drakehotlinebling",
+    "local": false
+  },
+  {
+    "title": "Bodies",
+    "artist": "Drowning Pool",
+    "bpm": 261.52,
+    "bar": 4,
+    "gap": 1811.9311716121138,
+    "video": "04F4xlWSFh0",
+    "year": "2001",
+    "lastUpdate": "2023-07-22T21:15:10.383Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 0.7,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Drowning%20Pool&cancion=Bodies",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Drowning Pool-Bodies.json",
+    "tracksCount": 1,
+    "search": "drowningpoolbodies",
     "local": false
   },
   {
@@ -5966,6 +6190,33 @@
     "local": false
   },
   {
+    "title": "Bang Bang",
+    "artist": "Jessie J feat. Ariana Grande & Nicki Minaj",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 49980,
+    "video": "0HDdjwpPM3Y",
+    "year": "2014",
+    "lastUpdate": "2023-07-22T21:15:10.384Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 150,
+    "volume": 0.5,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Jessie-J-feat.-Ariana-Grande-Nicki-Minaj-Bang-Bang.json",
+    "tracksCount": 1,
+    "search": "jessiejfeatarianagrandenickiminajbangbang",
+    "local": false
+  },
+  {
     "title": "Are You Gonna Be My Girl",
     "artist": "Jet",
     "bpm": 350.4,
@@ -7428,6 +7679,62 @@
     "local": false
   },
   {
+    "title": "Green Light",
+    "artist": "Lorde",
+    "bpm": 258,
+    "bar": 4,
+    "gap": 611.6279069767443,
+    "video": "dMK_npDG12Q",
+    "year": "2017",
+    "lastUpdate": "2023-07-22T21:15:10.385Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 129,
+    "volume": 0.5,
+    "author": "lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Lorde-Green-Light.json",
+    "tracksCount": 1,
+    "search": "lordegreenlight",
+    "local": false
+  },
+  {
+    "title": "Royals",
+    "artist": "Lorde",
+    "bpm": 170,
+    "bar": 4,
+    "gap": 9730.411764705883,
+    "video": "nlcIKh6sBtc",
+    "year": "2013",
+    "lastUpdate": "2023-07-22T21:15:10.386Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 85,
+    "previewStart": 56,
+    "previewEnd": 86,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "file": "Lorde-Royals.json",
+    "tracksCount": 1,
+    "search": "lorderoyals",
+    "local": false
+  },
+  {
     "title": "Hard Rock Hallelujah",
     "artist": "Lordi",
     "bpm": 246.4,
@@ -7946,6 +8253,35 @@
     "file": "Mariah-Carey-Without-you.json",
     "tracksCount": 1,
     "search": "mariahcareywithoutyou",
+    "local": false
+  },
+  {
+    "title": "Primadonna",
+    "artist": "Marina and the Diamonds",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 5363.90625,
+    "video": "Gj5L9SYhoSE",
+    "year": "2012",
+    "lastUpdate": "2023-07-22T21:15:10.387Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 128,
+    "previewStart": 78,
+    "previewEnd": 100,
+    "volume": 0.5,
+    "author": "ChrissyLeggs",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Marina-and-the-Diamonds-Primadonna.json",
+    "tracksCount": 1,
+    "search": "marinaandthediamondsprimadonna",
     "local": false
   },
   {
@@ -8597,6 +8933,91 @@
     "local": false
   },
   {
+    "title": "Dead Inside",
+    "artist": "Muse",
+    "bpm": 200,
+    "bar": 4,
+    "gap": 87,
+    "video": "I5sJhSNUkwQ",
+    "year": "2015",
+    "lastUpdate": "2023-07-22T21:15:10.388Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "gun88",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "file": "Muse-Dead-Inside.json",
+    "tracksCount": 1,
+    "search": "musedeadinside",
+    "local": false
+  },
+  {
+    "title": "Feeling Good",
+    "artist": "Muse",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 11680,
+    "video": "CmwRQqJsegw",
+    "year": "2001",
+    "lastUpdate": "2023-07-22T21:15:10.389Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 109,
+    "previewStart": 68,
+    "previewEnd": 98,
+    "volume": 0.5,
+    "author": "Lesla",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Muse-Feeling-Good.json",
+    "tracksCount": 1,
+    "search": "musefeelinggood",
+    "local": false
+  },
+  {
+    "title": "Follow Me",
+    "artist": "Muse",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 42190,
+    "video": "5kH0OEJxUlE",
+    "year": "2012",
+    "lastUpdate": "2023-07-22T21:15:10.389Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 135,
+    "previewStart": 103,
+    "previewEnd": 134,
+    "volume": 0.5,
+    "author": "gun88",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Muse-Follow-Me.json",
+    "tracksCount": 1,
+    "search": "musefollowme",
+    "local": false
+  },
+  {
     "title": "Hysteria",
     "artist": "Muse",
     "bpm": 393.5,
@@ -8699,6 +9120,64 @@
     "local": false
   },
   {
+    "title": "Pressure",
+    "artist": "Muse",
+    "bpm": 272,
+    "bar": 4,
+    "gap": 62307.35294117647,
+    "video": "h2eKImKZviw",
+    "year": "2018",
+    "lastUpdate": "2023-07-22T21:15:10.390Z",
+    "genre": "rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 136,
+    "previewStart": 97,
+    "previewEnd": 138,
+    "volume": 0.5,
+    "author": "theecnemelc",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Muse-Pressure.json",
+    "tracksCount": 1,
+    "search": "musepressure",
+    "local": false
+  },
+  {
+    "title": "Psycho",
+    "artist": "Muse",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 6680,
+    "video": "UqLRqzTp6Rk",
+    "year": "2015",
+    "lastUpdate": "2023-07-22T21:15:10.391Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 125,
+    "previewStart": 109,
+    "previewEnd": 145,
+    "volume": 0.5,
+    "author": "gun8",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Muse-Psycho.json",
+    "tracksCount": 1,
+    "search": "musepsycho",
+    "local": false
+  },
+  {
     "title": "Reapers",
     "artist": "Muse",
     "bpm": 384,
@@ -8748,6 +9227,35 @@
     "local": false
   },
   {
+    "title": "Something Human",
+    "artist": "Muse",
+    "bpm": 416,
+    "bar": 4,
+    "gap": 23690.384615384617,
+    "video": "azAEHCQgcUI",
+    "year": "2018",
+    "lastUpdate": "2023-07-22T21:15:10.391Z",
+    "genre": "rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 105,
+    "previewStart": 63,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "Lesla",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "file": "Muse-Something-Human.json",
+    "tracksCount": 1,
+    "search": "musesomethinghuman",
+    "local": false
+  },
+  {
     "title": "Supermassive Black Hole",
     "artist": "Muse",
     "bpm": 239.99,
@@ -8770,6 +9278,35 @@
     "file": "Muse-Supermassive Black Hole.json",
     "tracksCount": 1,
     "search": "musesupermassiveblackhole",
+    "local": false
+  },
+  {
+    "title": "Thought Contagion",
+    "artist": "Muse",
+    "bpm": 280,
+    "bar": 4,
+    "gap": 25502.14285714286,
+    "video": "QQ_3S-IQm38",
+    "year": "2018",
+    "lastUpdate": "2023-07-22T21:15:10.392Z",
+    "genre": "rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 140,
+    "previewStart": 75,
+    "previewEnd": 98,
+    "volume": 0.5,
+    "author": "theecnemelc",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Muse-Thought-Contagion.json",
+    "tracksCount": 1,
+    "search": "musethoughtcontagion",
     "local": false
   },
   {
@@ -9751,6 +10288,33 @@
     "local": false
   },
   {
+    "title": "Sledgehammer",
+    "artist": "Peter Gabriel",
+    "bpm": 192.94,
+    "bar": 4,
+    "gap": 51679.32310562869,
+    "video": "OJWJE0x7T4Q",
+    "year": "1986",
+    "lastUpdate": "2023-07-22T21:15:10.393Z",
+    "genre": "Funk Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Peter-Gabriel-Sledgehammer.json",
+    "tracksCount": 1,
+    "search": "petergabrielsledgehammer",
+    "local": false
+  },
+  {
     "title": "Downtown",
     "artist": "Petula Clark",
     "bpm": 231.2,
@@ -10037,6 +10601,33 @@
     "file": "Psy-Gangnam Style.json",
     "tracksCount": 1,
     "search": "psygangnamstyle",
+    "local": false
+  },
+  {
+    "title": "Numbers (I Can Only Count to Four)",
+    "artist": "Psychostick",
+    "bpm": 297.5,
+    "bar": 4,
+    "gap": -1.680672268907557,
+    "video": "u8ccGjar4Es",
+    "year": "2011",
+    "lastUpdate": "2023-07-22T21:15:10.393Z",
+    "genre": "Nu Metal",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.7,
+    "author": "Daniel Baur",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=177415",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27125",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "file": "Psychostick-Numbers -I Can Only Count to Four).json",
+    "tracksCount": 1,
+    "search": "psychosticknumbersicanonlycounttofour",
     "local": false
   },
   {
@@ -11542,6 +12133,33 @@
     "local": false
   },
   {
+    "title": "Milosc w Zakopanem",
+    "artist": "Slawomir",
+    "bpm": 315.09,
+    "bar": 4,
+    "gap": 30240.28563267638,
+    "video": "n2hJA78YuWw",
+    "year": "2017",
+    "lastUpdate": "2023-07-22T21:15:10.394Z",
+    "genre": "Rock Polo",
+    "language": "Polish",
+    "videoGap": 0,
+    "realBpm": 78,
+    "volume": 0.675,
+    "author": "cubitus",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Slawomir-Milosc-w-Zakopanem.json",
+    "tracksCount": 1,
+    "search": "slawomirmiloscwzakopanem",
+    "local": false
+  },
+  {
     "title": "All Star but the whole song is sung on a C Note",
     "artist": "Smash Mouth",
     "bpm": 208,
@@ -12370,6 +12988,62 @@
     "file": "Tarzan-Mensenkind.json",
     "tracksCount": 1,
     "search": "tarzanmensenkind",
+    "local": false
+  },
+  {
+    "title": "I Knew You Were Trouble",
+    "artist": "Taylor Swift",
+    "bpm": 308,
+    "bar": 4,
+    "gap": 125467.27272727272,
+    "video": "vNoKguSdy4Y",
+    "year": "2012",
+    "lastUpdate": "2023-07-22T21:15:10.395Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 77,
+    "previewStart": 163,
+    "previewEnd": 184,
+    "volume": 0.5,
+    "author": "zencruzer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Taylor-Swift-I-Knew-You-Were-Trouble.json",
+    "tracksCount": 1,
+    "search": "taylorswiftiknewyouweretrouble",
+    "local": false
+  },
+  {
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "bpm": 320.02,
+    "bar": 4,
+    "gap": 4365.686519592526,
+    "video": "nfWlot6h_JM",
+    "year": "2014",
+    "lastUpdate": "2023-07-22T21:15:10.397Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 0.5,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Taylor-Swift-Shake-It-Off.json",
+    "tracksCount": 1,
+    "search": "taylorswiftshakeitoff",
     "local": false
   },
   {
