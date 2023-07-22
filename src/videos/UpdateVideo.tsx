@@ -24,9 +24,9 @@ const data = {
             <h2>Song Pack</h2>
         </>
     ),
-    newSongs: songIndex.filter(
+    newSongs: (songIndex as any as SongPreview[]).filter(
         (song) => song.lastUpdate && isAfter(new Date(song.lastUpdate), lastUpdate),
-    ) as SongPreview[],
+    ),
     updates: [
         {
             title: (
