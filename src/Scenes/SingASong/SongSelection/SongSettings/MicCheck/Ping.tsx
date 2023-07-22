@@ -7,13 +7,12 @@ interface Props {
     playerNumber: number;
 }
 
-function Ping({ playerNumber, ...restProps }: Props) {
+export const useDevicePing = (deviceId?: string) => {
     const [latency, setLatency] = useState<number | null>(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const deviceId = PlayersManager.getPlayer(playerNumber).input?.deviceId ?? '';
-            const remoteMic = RemoteMicManager.getRemoteMicById(deviceId);
+            const remoteMic = RemoteMicManager.getRemoteMicById(deviceId ?? '');
 
             setLatency(remoteMic ? remoteMic.getLatency() : null);
         }, 1000);
@@ -21,7 +20,14 @@ function Ping({ playerNumber, ...restProps }: Props) {
         return () => {
             clearInterval(interval);
         };
-    }, [playerNumber]);
+    }, [deviceId]);
+
+    return latency;
+};
+
+function Ping({ playerNumber, ...restProps }: Props) {
+    const latency = useDevicePing(PlayersManager.getPlayer(playerNumber).input?.deviceId);
+
     return <>{latency !== null ? <PingContainer {...restProps}>{latency}ms</PingContainer> : ''}</>;
 }
 export default Ping;

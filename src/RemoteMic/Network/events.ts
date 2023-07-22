@@ -1,6 +1,8 @@
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
+import { RemoteMicPermissions } from 'Scenes/Settings/SettingsState';
 import { Params } from 'hooks/useKeyboard';
 import { SongPreview } from 'interfaces';
+import { ValuesType } from 'utility-types';
 
 export interface WebRTCRegisterEvent {
     t: 'register';
@@ -80,12 +82,18 @@ export interface WebRTCRemoteKeyboardEvent {
     help: HelpEntry | undefined;
 }
 
+export interface WebRTCSetPermissionsEvent {
+    t: 'set-permissions';
+    level: ValuesType<typeof RemoteMicPermissions>;
+}
+
 export interface WebRTCSearchSongEvent {
     t: 'search-song';
     search: string;
 }
 
 export type WebRTCEvents =
+    | WebRTCSetPermissionsEvent
     | WebRTCSetPlayerNumber
     | WebRTCRegisterEvent
     | WebRTCStartMonitorEvent

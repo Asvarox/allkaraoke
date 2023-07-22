@@ -8,6 +8,7 @@ import RemoteMicKeyboard from 'Scenes/RemoteMic/Panels/Microphone/Keyboard';
 import MicPreview from 'Scenes/RemoteMic/Panels/Microphone/MicPreview';
 import Ping from 'Scenes/RemoteMic/Panels/Microphone/Ping';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
+import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { PeerErrorType } from 'interfaces';
 import { useEffect, useRef } from 'react';
@@ -33,6 +34,7 @@ function Microphone({
     connectionStatus,
 }: Props) {
     const inputRef = useRef<HTMLInputElement | null>(null);
+    const permissions = usePermissions();
 
     useEffect(() => {
         inputRef.current?.focus();
@@ -77,7 +79,13 @@ function Microphone({
                     />
                 </Panel>
                 <Panel>
-                    <RemoteMicKeyboard />
+                    {permissions === 'write' && <RemoteMicKeyboard />}
+                    {permissions === 'read' && (
+                        <NoPermissionsMsg data-test="no-permissions-message">
+                            No permission to control the game. Go to in-game <strong>Settings</strong> menu ➔{' '}
+                            <strong>Remote Microphones Settings</strong> to manage them.
+                        </NoPermissionsMsg>
+                    )}
                     <KeepAwake onClick={() => setIsKeepAwakeOn(!isKeepAwakeOn)}>
                         WakeLock: <strong>{isKeepAwakeOn ? 'ON' : 'OFF'}</strong>
                     </KeepAwake>
@@ -149,3 +157,7 @@ const MicInputState = styled.div`
     align-self: flex-end;
 `;
 const KeepAwake = styled(MicInputState)``;
+
+const NoPermissionsMsg = styled.h5`
+    padding-bottom: 5rem;
+`;

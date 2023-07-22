@@ -143,6 +143,8 @@ class WebRTCClient {
                     this.onPong();
                 } else if (type === 'ping') {
                     this.sendEvent('pong');
+                } else if (type === 'set-permissions') {
+                    events.remoteMicPermissionsSet.dispatch(data.level);
                 }
             });
         });

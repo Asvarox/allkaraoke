@@ -1,5 +1,5 @@
 import { SelectedPlayerInput } from 'Players/PlayersManager';
-import { keyStrokes } from 'RemoteMic/Network/events';
+import { WebRTCSetPermissionsEvent, keyStrokes } from 'RemoteMic/Network/events';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { SongStats } from 'Songs/stats/common';
 import { PeerErrorType, SingSetup, Song, SongPreview } from 'interfaces';
@@ -88,6 +88,9 @@ export const events = {
     remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch', true),
     remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
     remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
+    remoteMicPermissionsSet: new GameEvent<(level: WebRTCSetPermissionsEvent['level']) => void>(
+        'remoteMicPermissionsSet',
+    ),
     readinessConfirmed: new GameEvent<(deviceId: string) => void>('remoteReadinessConfirmed'),
 };
 

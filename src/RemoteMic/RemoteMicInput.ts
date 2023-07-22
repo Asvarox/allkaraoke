@@ -1,4 +1,4 @@
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { WebRTCEvents, WebRTCSetPermissionsEvent } from 'RemoteMic/Network/events';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import Peer from 'peerjs';
 import sendEvent from './Network/sendEvent';
@@ -76,7 +76,7 @@ export class RemoteMic {
     public getInput = () => this.input;
 
     public setPlayerNumber = (playerNumber: number | null) => {
-        this.connection?.send({ t: 'set-player-number', playerNumber } as WebRTCEvents);
+        sendEvent(this.connection, 'set-player-number', { playerNumber });
     };
 
     public onDisconnect = () => {
@@ -91,6 +91,10 @@ export class RemoteMic {
         this.latency = getPingTime() - this.pingTime;
 
         this.pingClient();
+    };
+
+    public setPermission = (level: WebRTCSetPermissionsEvent['level']) => {
+        sendEvent<WebRTCSetPermissionsEvent>(this.connection, 'set-permissions', { level });
     };
 
     private pingClient = () => {

@@ -20,7 +20,10 @@ function Toolbar() {
             <ToolbarContainer>
                 <FullscreenButton />
                 <Tooltip title="Connect phone">
-                    <IconButton size="small" onClick={() => setIsModalOpen((current) => !current)}>
+                    <IconButton
+                        size="small"
+                        onClick={() => setIsModalOpen((current) => !current)}
+                        data-test="quick-connect-phone">
                         <QrCode2 />
                     </IconButton>
                 </Tooltip>

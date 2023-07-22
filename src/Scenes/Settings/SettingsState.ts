@@ -56,6 +56,12 @@ export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_
 
 export const InputLagSetting = new Setting<milliseconds>('INPUT_LAG', 0);
 
+export const RemoteMicPermissions = ['write', 'read'] as const;
+export const DefaultRemoteMicPermission = new Setting<ValuesType<typeof RemoteMicPermissions>>(
+    'DefaultRemoteMicPermission',
+    'write',
+);
+
 export const BackgroundMusic = ['New', 'Classic'] as const;
 export const BackgroundMusicSetting = new Setting<ValuesType<typeof BackgroundMusic>>(
     'background-music',

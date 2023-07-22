@@ -19,6 +19,7 @@ import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
+import RemoteMicSettings from 'Scenes/Settings/RemoteMicSettings';
 import {
     GraphicSetting,
     MicSetupPreferenceSetting,
@@ -56,7 +57,7 @@ function App() {
             <Global
                 styles={css`
                     :root {
-                        --zoom-multipler: ${mobilePhoneMode ? 1.5 : 1};
+                        --zoom-multipler: ${mobilePhoneMode ? 1.4 : 1};
                     }
                 `}
             />
@@ -79,6 +80,7 @@ function App() {
                                 <Route path="/quick-setup" component={QuickSetup} />
                                 <Route path="/select-input" component={SelectInput} />
                                 <Route path="/settings" component={Settings} />
+                                <Route path="/settings/remote-mics" component={RemoteMicSettings} />
                                 <Route path="/manage-songs" component={ManageSongs} />
                                 <Route path="/exclude-languages" component={ExcludeLanguages} />
                                 <Route path="/" component={Welcome} />

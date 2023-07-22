@@ -29,7 +29,7 @@ export default function RemoteMicKeyboard() {
     };
 
     return keyboard !== undefined ? (
-        <Container>
+        <Container data-test="remote-keyboard">
             {(isHorizontal || isVertical) && (
                 <ActionsContainer>
                     <ArrowsContainer>

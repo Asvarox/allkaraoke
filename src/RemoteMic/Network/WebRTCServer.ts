@@ -42,14 +42,8 @@ class WebRTCServer {
                 const type = data.t;
                 if (type === 'register') {
                     RemoteMicManager.addRemoteMic(data.id, data.name, conn, data.silent);
-                } else if (type === 'keystroke') {
-                    events.remoteKeyboardPressed.dispatch(data.key);
-                } else if (type === 'search-song') {
-                    events.remoteSongSearch.dispatch(data.search);
                 } else if (type === 'unregister') {
                     RemoteMicManager.removeRemoteMic(conn.peer, true);
-                } else if (type === 'request-mic-select') {
-                    events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
                 } else if (type === 'ping') {
                     conn.send({ t: 'pong' } as WebRTCEvents);
                 } else if (type === 'pong') {
@@ -66,6 +60,14 @@ class WebRTCServer {
                             deleted,
                         });
                     });
+                } else if (RemoteMicManager.getPermission(conn.peer) === 'write') {
+                    if (type === 'keystroke') {
+                        events.remoteKeyboardPressed.dispatch(data.key);
+                    } else if (type === 'search-song') {
+                        events.remoteSongSearch.dispatch(data.search);
+                    } else if (type === 'request-mic-select') {
+                        events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
+                    }
                 }
             });
 

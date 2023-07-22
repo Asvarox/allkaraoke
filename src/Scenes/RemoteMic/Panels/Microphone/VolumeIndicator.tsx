@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
-import { useEffect, useState } from 'react';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import PlayerChange from 'Scenes/RemoteMic/Panels/Microphone/PlayerChange';
+import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
+import { useEffect, useState } from 'react';
 
 interface Props {
     volume: number;
@@ -13,6 +14,7 @@ interface Props {
 
 export default function VolumeIndicator({ playerNumber, volume, frequency, isMicOn, isConnected }: Props) {
     const [maxVolume, setMaxVolume] = useState(0.000001);
+    const permissions = usePermissions();
 
     useEffect(() => {
         setMaxVolume((current) => (volume > current ? volume : current * 0.99));
@@ -38,7 +40,7 @@ export default function VolumeIndicator({ playerNumber, volume, frequency, isMic
                     </Debug>
                 </>
             )}
-            {isConnected && <PlayerChange playerNumber={playerNumber} />}
+            {isConnected && permissions === 'write' && <PlayerChange playerNumber={playerNumber} />}
             <Indicator
                 color={indicatorColor}
                 style={{ transform: `scaleY(${isMicOn ? 1 - Math.min(1, volume / maxVolume) : 1})` }}
