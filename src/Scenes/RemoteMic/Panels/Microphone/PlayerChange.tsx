@@ -2,11 +2,10 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { buttonFocused } from 'Elements/Button';
-import { MenuButton, MenuContainer } from 'Elements/Menu';
-import Modal from 'Elements/Modal';
 import { focused, typography } from 'Elements/cssMixins';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import PlayerChangeModal from 'Scenes/RemoteMic/Components/PlayerChangeModal';
+import PlayerNumberCircle from 'Scenes/RemoteMic/Components/PlayerNumberCircle';
 import { memo, useState } from 'react';
 
 interface Props {
@@ -16,14 +15,7 @@ interface Props {
 export default memo(function PlayerChange({ playerNumber }: Props) {
     const [isOpen, setIsOpen] = useState(false);
 
-    console.log(playerNumber);
-
     const closeModal = () => setIsOpen(false);
-
-    const selectPlayer = (player: number | null) => {
-        WebRTCClient.requestPlayerChange(player);
-        closeModal();
-    };
 
     const joined = playerNumber !== null;
 
@@ -34,51 +26,21 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
                     'Join game'
                 ) : (
                     <>
-                        <PlayerColorCircle style={{ background: styles.colors.players[playerNumber].perfect.fill }} />{' '}
-                        Change
+                        <PlayerNumberCircle number={playerNumber} /> Change
                     </>
                 )}{' '}
                 <SwapHorizIcon />
             </PlayerChangeContainer>
             {isOpen && (
-                <Modal onClose={closeModal}>
-                    <Menu>
-                        <MenuButton
-                            data-test="change-to-player-0"
-                            onClick={() => selectPlayer(0)}
-                            disabled={0 === playerNumber}
-                            style={{ color: styles.colors.players[0].perfect.fill }}>
-                            Blue
-                        </MenuButton>
-                        <MenuButton
-                            data-test="change-to-player-1"
-                            onClick={() => selectPlayer(1)}
-                            disabled={1 === playerNumber}
-                            style={{ color: styles.colors.players[1].perfect.fill }}>
-                            Red
-                        </MenuButton>
-                        <MenuButton onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
-                            Unassign
-                        </MenuButton>
-                        <hr />
-                        <MenuButton onClick={closeModal}>Close</MenuButton>
-                    </Menu>
-                </Modal>
+                <PlayerChangeModal
+                    id={WebRTCClient.getClientId()!}
+                    playerNumber={playerNumber}
+                    onModalClose={closeModal}
+                />
             )}
         </>
     );
 });
-
-const Menu = styled(MenuContainer)`
-    gap: 0;
-`;
-
-const PlayerColorCircle = styled.div`
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
-`;
 
 const PlayerChangeContainer = styled.button<{ joined: boolean }>`
     position: absolute;

@@ -44,6 +44,10 @@ class WebRTCServer {
                     RemoteMicManager.addRemoteMic(data.id, data.name, conn, data.silent);
                 } else if (type === 'unregister') {
                     RemoteMicManager.removeRemoteMic(conn.peer, true);
+                } else if (type === 'subscribe-event') {
+                    RemoteMicManager.addSubscription(conn.peer, data.channel);
+                } else if (type === 'unsubscribe-event') {
+                    RemoteMicManager.removeSubscription(conn.peer, data.channel);
                 } else if (type === 'ping') {
                     conn.send({ t: 'pong' } as WebRTCEvents);
                 } else if (type === 'pong') {
@@ -66,7 +70,7 @@ class WebRTCServer {
                     } else if (type === 'search-song') {
                         events.remoteSongSearch.dispatch(data.search);
                     } else if (type === 'request-mic-select') {
-                        events.playerChangeRequested.dispatch(conn.peer, data.playerNumber);
+                        events.playerChangeRequested.dispatch(data.id, data.playerNumber);
                     }
                 }
             });

@@ -7,6 +7,7 @@ import { useEventEffect, useEventListener } from 'GameEvents/hooks';
 import BottomBar from 'Scenes/RemoteMic/BottomBar';
 import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/Microphone/ConfirmReadiness';
+import RemoteSettings from 'Scenes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from 'Scenes/RemoteMic/Panels/RemoteSongList';
 import { useState } from 'react';
 
@@ -50,7 +51,7 @@ function RemoteMic({ roomId }: Props) {
     const onConfirm = () => {
         setKeepAwake(true);
     };
-    const isConnected = connectionStatus === 'connected';
+
     return (
         <>
             <ConfirmReadiness onConfirm={onConfirm} />
@@ -69,6 +70,17 @@ function RemoteMic({ roomId }: Props) {
                 )}
                 {activeTab === 'song-list' && (
                     <RemoteSongList
+                        roomId={roomId}
+                        monitoringStarted={monitoringStarted}
+                        setMonitoringStarted={setMonitoringStarted}
+                        connectionStatus={connectionStatus}
+                        setIsKeepAwakeOn={setIsKeepAwakeOn}
+                        isKeepAwakeOn={isKeepAwakeOn}
+                        connectionError={connectionError}
+                    />
+                )}
+                {activeTab === 'settings' && (
+                    <RemoteSettings
                         roomId={roomId}
                         monitoringStarted={monitoringStarted}
                         setMonitoringStarted={setMonitoringStarted}

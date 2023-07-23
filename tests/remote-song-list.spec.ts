@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
+import { connectRemoteMic } from './steps/openAndConnectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -33,11 +34,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     });
     await test.step('Song list doesnt contain removed songs after connecting and contains new ones', async () => {
         await remoteMic.getByTestId('menu-microphone').click();
-
-        await remoteMic.getByTestId('connect-button').click();
-        await expect(remoteMic.getByTestId('connect-button')).toContainText('Connected', {
-            ignoreCase: true,
-        });
+        await connectRemoteMic(remoteMic);
 
         await page.getByTestId('save-button').click();
         await page.getByTestId('manage-songs').click();

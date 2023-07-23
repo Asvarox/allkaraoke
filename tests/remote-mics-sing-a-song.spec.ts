@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import connectRemoteMic from './steps/connectRemoteMic';
 import navigateWithKeyboard from './steps/navigateWithKeyboard';
+import openAndConnectRemoteMic, { connectRemoteMic } from './steps/openAndConnectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -15,17 +15,17 @@ test.use({ serviceWorkers: 'block' });
 const P1_Name = 'E2E Test Blue';
 const P2_Name = 'E2E Test Red';
 
-test('Remote mic should connect, be selectable and control the game', async ({ page, context, browserName }) => {
+test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
     test.fixme(browserName === 'firefox', 'Test fails super often on FF');
     test.slow();
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click();
 
     // Connect blue microphone
-    const remoteMicBluePage = await connectRemoteMic(page, context, P1_Name);
+    const remoteMicBluePage = await openAndConnectRemoteMic(page, await browser.newContext(), P1_Name);
 
     // Connect red microphone
-    const remoteMicRed = await connectRemoteMic(page, context, P2_Name);
+    const remoteMicRed = await openAndConnectRemoteMic(page, await browser.newContext(), P2_Name);
 
     // Assert auto selection of inputs
     await expect(page.getByTestId('mic-check-p0')).toContainText(P1_Name, { ignoreCase: true });
@@ -87,13 +87,13 @@ test('Remote mic should connect, be selectable and control the game', async ({ p
             // Check if the status is properly shown in the game
             await expect(page.getByTestId('indicator-player-0').getByTestId('status-unavailable')).toBeVisible();
             await remoteMicBluePage.getByTestId('player-name-input').fill(P1_Name);
-            await remoteMicBluePage.getByTestId('connect-button').click();
+            await connectRemoteMic(remoteMicBluePage);
             await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
             await expect(page.getByTestId('indicator-player-0').getByTestId('status-unavailable')).not.toBeVisible();
 
             await remoteMicRed.reload();
             await remoteMicRed.getByTestId('player-name-input').fill(P2_Name);
-            await remoteMicRed.getByTestId('connect-button').click();
+            await connectRemoteMic(remoteMicRed);
             await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
         });
 

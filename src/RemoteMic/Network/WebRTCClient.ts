@@ -1,14 +1,22 @@
 import events from 'GameEvents/GameEvents';
-import { WebRTCEvents, WebRTCSongListEvent, keyStrokes } from 'RemoteMic/Network/events';
+import {
+    WebRTCEvents,
+    WebRTCRequestMicSelectEvent,
+    WebRTCSongListEvent,
+    WebRTCSubscribeEvent,
+    WebRTCUnsubscribeEvent,
+    keyStrokes,
+} from 'RemoteMic/Network/events';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import { throttle } from 'lodash-es';
 import { DataConnection, Peer } from 'peerjs';
 import peerJSOptions from 'utils/peerJSOptions';
+import storage from 'utils/storage';
 import { v4 } from 'uuid';
 import sendEvent from './sendEvent';
 
-const MIC_ID_KEY = 'MIC_CLIENT_ID';
+export const MIC_ID_KEY = 'MIC_CLIENT_ID';
 
 const roundTo = (num: number, precision: number) => {
     if (num === 0) return 0;
@@ -19,7 +27,7 @@ const roundTo = (num: number, precision: number) => {
 };
 
 class WebRTCClient {
-    private clientId = window.sessionStorage.getItem(MIC_ID_KEY);
+    private clientId = storage.getValue(MIC_ID_KEY);
     private peer: Peer | null = null;
     private connection: DataConnection | null = null;
     private reconnecting = false;
@@ -41,9 +49,10 @@ class WebRTCClient {
         this.sendFrequencies(volume);
     }, 1_000 / 60);
 
+    public getClientId = () => this.clientId;
     private setClientId = (id: string) => {
         this.clientId = id;
-        window.sessionStorage.setItem(MIC_ID_KEY, id);
+        storage.storeValue(MIC_ID_KEY, id);
     };
 
     private unavailableIdRetries = 0;
@@ -145,6 +154,8 @@ class WebRTCClient {
                     this.sendEvent('pong');
                 } else if (type === 'set-permissions') {
                     events.remoteMicPermissionsSet.dispatch(data.level);
+                } else if (type === 'remote-mics-list') {
+                    events.remoteMicListUpdated.dispatch(data.list);
                 }
             });
         });
@@ -185,12 +196,20 @@ class WebRTCClient {
         this.sendEvent('search-song', { search });
     };
 
-    public requestPlayerChange = (playerNumber: number | null) => {
-        this.sendEvent('request-mic-select', { playerNumber });
+    public requestPlayerChange = (id: string, playerNumber: number | null) => {
+        this.sendEvent<WebRTCRequestMicSelectEvent>('request-mic-select', { id, playerNumber });
     };
 
     public confirmReadiness = () => {
         this.sendEvent('confirm-readiness');
+    };
+
+    public subscribe = (channel: WebRTCSubscribeEvent['channel']) => {
+        this.sendEvent<WebRTCSubscribeEvent>('subscribe-event', { channel });
+    };
+
+    public unsubscribe = (channel: WebRTCSubscribeEvent['channel']) => {
+        this.sendEvent<WebRTCUnsubscribeEvent>('unsubscribe-event', { channel });
     };
 
     public getSongList = () => this.sendRequest<WebRTCSongListEvent>({ t: 'request-songlist' }, 'songlist');
@@ -219,7 +238,7 @@ class WebRTCClient {
         });
     };
 
-    private disconnect = () => {
+    public disconnect = () => {
         this.connection?.close();
     };
 }

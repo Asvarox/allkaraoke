@@ -65,3 +65,17 @@ events.remoteMicDisconnected.subscribe(({ name }, silent) => {
         );
     }
 });
+
+const sendPlayerStates = () => {
+    const remoteMics = RemoteMicManager.getRemoteMics().map((mic) => ({
+        id: mic.id,
+        name: mic.name,
+        number: PlayersManager.getPlayers().find((player) => player.input.deviceId === mic.id)?.number ?? null,
+    }));
+
+    RemoteMicManager.broadcastToChannel('remote-mics', { t: 'remote-mics-list', list: remoteMics });
+};
+
+events.inputListChanged.subscribe(sendPlayerStates);
+events.playerInputChanged.subscribe(sendPlayerStates);
+events.remoteMicSubscribed.subscribe(sendPlayerStates);

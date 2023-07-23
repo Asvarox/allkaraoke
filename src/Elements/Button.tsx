@@ -24,8 +24,10 @@ export const Button = styled.button<{ focused?: boolean }>`
 
     transition: 300ms;
 
-    :hover {
-        ${focused};
+    :not(:disabled) {
+        :hover {
+            ${focused};
+        }
     }
 `;
 // Disable for E2E as they wait for animation to finish (and since it's infinite they timeout)

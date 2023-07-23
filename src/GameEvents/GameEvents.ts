@@ -1,5 +1,10 @@
 import { SelectedPlayerInput } from 'Players/PlayersManager';
-import { WebRTCSetPermissionsEvent, keyStrokes } from 'RemoteMic/Network/events';
+import {
+    WebRTCRemoteMicListEvent,
+    WebRTCSetPermissionsEvent,
+    WebRTCSubscribeEvent,
+    keyStrokes,
+} from 'RemoteMic/Network/events';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { SongStats } from 'Songs/stats/common';
 import { PeerErrorType, SingSetup, Song, SongPreview } from 'interfaces';
@@ -84,8 +89,12 @@ export const events = {
         () => undefined,
     ),
 
+    remoteMicSubscribed: new GameEvent<(id: string, channel: WebRTCSubscribeEvent['channel']) => void>(
+        'remoteMicSubscribed',
+    ),
     remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed', true),
     remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch', true),
+    remoteMicListUpdated: new GameEvent<(list: WebRTCRemoteMicListEvent['list']) => void>('remoteMicListUpdated'),
     remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
     remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
     remoteMicPermissionsSet: new GameEvent<(level: WebRTCSetPermissionsEvent['level']) => void>(

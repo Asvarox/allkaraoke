@@ -58,6 +58,7 @@ export default function AuthorAndVid(props: Props) {
                     value={props.data.video}
                     onChange={(e) => props.onChange({ ...props.data, video: e.target.value })}
                     label="YouTube Video URL"
+                    placeholder="https://www.youtube.com/watch?v="
                     fullWidth
                     size="small"
                     helperText="Link to YouTube video, eg https://www.youtube.com/watch?v=xxxxxxxxx. Click the 'Lookup' button to look for it on YouTube"

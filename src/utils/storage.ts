@@ -1,9 +1,9 @@
-export default {
+const abstractStorage = (type: typeof sessionStorage | typeof localStorage) => ({
     storeValue: <T>(key: string, value: T) => {
-        sessionStorage.setItem(key, JSON.stringify(value));
+        type.setItem(key, JSON.stringify(value));
     },
     getValue: <T = any>(key: string): T | null => {
-        const val = sessionStorage.getItem(key);
+        const val = type.getItem(key);
 
         if (val === null) {
             return null;
@@ -11,4 +11,11 @@ export default {
 
         return JSON.parse(val);
     },
+});
+
+const storage = {
+    ...abstractStorage(localStorage),
+    session: abstractStorage(sessionStorage),
 };
+
+export default storage;

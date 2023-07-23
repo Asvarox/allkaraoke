@@ -74,6 +74,7 @@ export interface WebRTCSongListEvent {
 
 export interface WebRTCRequestMicSelectEvent {
     t: 'request-mic-select';
+    id: string;
     playerNumber: number | null;
 }
 
@@ -92,7 +93,23 @@ export interface WebRTCSearchSongEvent {
     search: string;
 }
 
+export interface WebRTCSubscribeEvent {
+    t: 'subscribe-event';
+    channel: 'remote-mics';
+}
+export interface WebRTCUnsubscribeEvent {
+    t: 'unsubscribe-event';
+    channel: WebRTCSubscribeEvent['channel'];
+}
+export interface WebRTCRemoteMicListEvent {
+    t: 'remote-mics-list';
+    list: Array<{ id: string; name: string; number: number | null }>;
+}
+
 export type WebRTCEvents =
+    | WebRTCSubscribeEvent
+    | WebRTCUnsubscribeEvent
+    | WebRTCRemoteMicListEvent
     | WebRTCSetPermissionsEvent
     | WebRTCSetPlayerNumber
     | WebRTCRegisterEvent

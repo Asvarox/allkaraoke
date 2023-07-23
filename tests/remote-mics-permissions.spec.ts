@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import connectRemoteMic from './steps/connectRemoteMic';
+import openAndConnectRemoteMic, { connectRemoteMic } from './steps/openAndConnectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -22,24 +22,28 @@ test('Should properly manage remote mics permission settings', async ({ page, co
     });
 
     await page.getByTestId('quick-connect-phone').click();
-    const remoteMic = await connectRemoteMic(page, context, 'E2E Test Blue');
+    const remoteMic = await openAndConnectRemoteMic(page, context, 'E2E Test Blue');
     await page.getByTestId('quick-connect-close').click();
 
     await test.step('newly connected phone gets default permission', async () => {
         await expect(await remoteMic.getByTestId('no-permissions-message')).toBeVisible();
         await expect(await remoteMic.getByTestId('remote-keyboard')).not.toBeVisible();
         await expect(await remoteMic.getByTestId('change-player')).not.toBeVisible();
+        await remoteMic.getByTestId('menu-settings').click();
+        await expect(await remoteMic.getByTestId('manage-players')).not.toBeVisible();
     });
 
     await test.step('write access allows for keyboard and change player', async () => {
         await page.getByTestId('remote-mic-entry').click();
+        await expect(await remoteMic.getByTestId('manage-players')).toBeVisible();
+        await remoteMic.getByTestId('menu-microphone').click();
         await expect(await remoteMic.getByTestId('remote-keyboard')).toBeVisible();
         await expect(await remoteMic.getByTestId('change-player')).toBeVisible();
     });
 
     await test.step('selected permission is persisted for the remote mic', async () => {
         await remoteMic.reload();
-        await remoteMic.getByTestId('connect-button').click();
+        await connectRemoteMic(remoteMic);
 
         await expect(await remoteMic.getByTestId('remote-keyboard')).toBeVisible();
         await expect(await remoteMic.getByTestId('change-player')).toBeVisible();

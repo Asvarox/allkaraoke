@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 import { expectMonitoringToBeEnabled } from './steps/assertMonitoringStatus';
-import connectRemoteMic from './steps/connectRemoteMic';
+import openAndConnectRemoteMic from './steps/openAndConnectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -21,7 +21,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     await page.getByTestId('advanced').click();
 
     // Connect blue microphone
-    const remoteMic = await connectRemoteMic(page, context, 'E2E Test Blue');
+    const remoteMic = await openAndConnectRemoteMic(page, context, 'E2E Test Blue');
     // Assert auto selection of inputs
     await expect(page.getByTestId('player-0-input')).toContainText('E2E Test Blue', { ignoreCase: true });
 
@@ -76,15 +76,15 @@ test('Source selection in in-game menu', async ({ page, context }) => {
     await expectMonitoringToBeEnabled(page);
 });
 
-test('Source selection from remote mic', async ({ page, context }) => {
+test('Source selection from remote mic', async ({ browser, page }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click();
 
     // Connect blue microphone
-    const remoteMicBluePage = await connectRemoteMic(page, context, 'E2E Test Blue');
+    const remoteMicBluePage = await openAndConnectRemoteMic(page, await browser.newContext(), 'E2E Test Blue');
 
     // Connect red microphone
-    const remoteMicRed = await connectRemoteMic(page, context, 'E2E Test Red');
+    const remoteMicRed = await openAndConnectRemoteMic(page, await browser.newContext(), 'E2E Test Red');
 
     await test.step('change red player mic to blue', async () => {
         await remoteMicRed.getByTestId('change-player').click();

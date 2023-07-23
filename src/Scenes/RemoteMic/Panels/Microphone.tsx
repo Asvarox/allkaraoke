@@ -11,7 +11,6 @@ import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { PeerErrorType } from 'interfaces';
-import { useEffect, useRef } from 'react';
 import isDev from 'utils/isDev';
 
 interface Props {
@@ -33,12 +32,7 @@ function Microphone({
     connectionError,
     connectionStatus,
 }: Props) {
-    const inputRef = useRef<HTMLInputElement | null>(null);
     const permissions = usePermissions();
-
-    useEffect(() => {
-        inputRef.current?.focus();
-    }, []);
 
     const onConnect = async () => {
         setIsKeepAwakeOn(true);
@@ -118,6 +112,10 @@ const Container = styled.div`
     height: 100%;
     padding: 1.5rem;
     box-sizing: border-box;
+
+    @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
+        flex-direction: row;
+    }
 
     ${MenuButton} {
         padding: 0.5em;
