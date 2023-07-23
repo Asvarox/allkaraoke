@@ -634,6 +634,60 @@
     "local": false
   },
   {
+    "title": "Amiga mÌa",
+    "artist": "Alejandro Sanz",
+    "bpm": 236,
+    "bar": 4,
+    "gap": 12803.050847457627,
+    "video": "44Qh0p9xE6o",
+    "year": "1997",
+    "lastUpdate": "2023-07-23T21:00:58.341Z",
+    "edition": "",
+    "genre": "Pop",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 144,
+    "volume": 0.7,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Alejandro%20Sanz&cancion=Amiga%20m%C3%ADa",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Alejandro Sanz-Amiga m-a.json",
+    "tracksCount": 1,
+    "search": "alejandrosanzamigamia",
+    "local": false
+  },
+  {
+    "title": "CorazÛn partÌo",
+    "artist": "Alejandro Sanz",
+    "bpm": 321,
+    "bar": 4,
+    "gap": 23668.69158878505,
+    "video": "ZMUqIoDtSwc",
+    "year": "1997",
+    "lastUpdate": "2023-07-23T21:00:58.344Z",
+    "language": "Spanish",
+    "videoGap": -4,
+    "realBpm": 160,
+    "volume": 0.7,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Alejandro%20Sanz&cancion=Coraz%C3%B3n%20part%C3%ADo",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Alejandro Sanz-Coraz-n partÌo.json",
+    "tracksCount": 1,
+    "search": "alejandrosanzcorazunpartio",
+    "local": false
+  },
+  {
     "title": "Poison",
     "artist": "Alice Cooper",
     "bpm": 240,
@@ -657,6 +711,61 @@
     "file": "Alice Cooper-Poison.json",
     "tracksCount": 1,
     "search": "alicecooperpoison",
+    "local": false
+  },
+  {
+    "title": "School’s Out",
+    "artist": "Alice Cooper",
+    "bpm": 272.85,
+    "bar": 4,
+    "gap": 20802.03289595269,
+    "video": "RWgTD_0jxeE",
+    "year": "1972",
+    "lastUpdate": "2023-07-23T21:00:58.345Z",
+    "genre": "None",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.6,
+    "author": "ultrastarsongs",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4067",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Alice Cooper-School-s Out.json",
+    "tracksCount": 1,
+    "search": "alicecooperschoolsout",
+    "local": false
+  },
+  {
+    "title": "Sin ti no soy nada",
+    "artist": "Amaral",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 7500,
+    "video": "qcC92ZnhGQY",
+    "year": "2002",
+    "lastUpdate": "2023-07-23T21:00:58.346Z",
+    "edition": "SingStar Pop",
+    "genre": "Pop",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.7,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Amaral&cancion=Sin%20ti%20no%20soy%20nada",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Amaral-Sin ti no soy nada.json",
+    "tracksCount": 1,
+    "search": "amaralsintinosoynada",
     "local": false
   },
   {
@@ -2555,6 +2664,60 @@
     "local": false
   },
   {
+    "title": "Vivir así es morir de amor",
+    "artist": "Camilo Sesto",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 10579.29411764706,
+    "video": "0xyfnlWs9QA",
+    "year": "1978",
+    "lastUpdate": "2023-07-23T21:00:58.347Z",
+    "edition": "SingStar MegaHits",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.75,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Camilo%20Sesto&cancion=Vivir%20as%C3%AD%20es%20morir%20de%20amor",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Camilo Sesto-Vivir as- es morir de amor.json",
+    "tracksCount": 1,
+    "search": "camilosestovivirasiesmorirdeamor",
+    "local": false
+  },
+  {
+    "title": "Colgando en tus manos",
+    "artist": "Carlos Baute y Marta S·nchez",
+    "bpm": 240.04,
+    "bar": 4,
+    "gap": 10192.166638893517,
+    "video": "qExd-3oCTl4",
+    "year": "2008",
+    "lastUpdate": "2023-07-23T21:00:58.348Z",
+    "genre": "Dueto",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Carlos%20Baute%20y%20Marta%20S%C3%A1nchez&cancion=Colgando%20en%20tus%20manos",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Carlos Baute y Marta S-nchez-Colgando en tus manos.json",
+    "tracksCount": 1,
+    "search": "carlosbauteymartasnchezcolgandoentusmanos",
+    "local": false
+  },
+  {
     "title": "Call Me Maybe",
     "artist": "Carly Rae Jepsen",
     "bpm": 240,
@@ -3255,6 +3418,34 @@
     "file": "Dave Rodgers-Deja Vu.json",
     "tracksCount": 1,
     "search": "daverodgersdejavu",
+    "local": false
+  },
+  {
+    "title": "Ave MarÌa",
+    "artist": "David Bisbal",
+    "bpm": 264,
+    "bar": 4,
+    "gap": -36.72727272727252,
+    "video": "gra-sIV1n4U",
+    "year": "2002",
+    "lastUpdate": "2023-07-23T21:00:58.349Z",
+    "edition": "SingStar Party",
+    "genre": "Pop",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 132,
+    "volume": 0.9,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=David%20Bisbal&cancion=Ave%20Mar%C3%ADa",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "David Bisbal-Ave Mar-a.json",
+    "tracksCount": 1,
+    "search": "davidbisbalavemaria",
     "local": false
   },
   {
@@ -4434,6 +4625,33 @@
     "file": "Elton-John-Im-Still-Standing.json",
     "tracksCount": 1,
     "search": "eltonjohnimstillstanding",
+    "local": false
+  },
+  {
+    "title": "Cuando me enamoro",
+    "artist": "Enrique Iglesias y Juan Luis Guerra",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 34498.09523809524,
+    "video": "4DO8GsIYfhQ",
+    "year": "2010",
+    "lastUpdate": "2023-07-23T21:00:58.350Z",
+    "genre": "Pop Rock",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.6,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias%20y%20Juan%20Luis%20Guerra&cancion=Cuando%20me%20enamoro",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Enrique Iglesias y Juan Luis Guerra-Cuando me enamoro.json",
+    "tracksCount": 1,
+    "search": "enriqueiglesiasyjuanluisguerracuandomeenamoro",
     "local": false
   },
   {
@@ -6606,6 +6824,59 @@
     "local": false
   },
   {
+    "title": "A Dios le pido",
+    "artist": "Juanes",
+    "bpm": 388,
+    "bar": 4,
+    "gap": 20261.845360824744,
+    "video": "kMIaYXxLnUA",
+    "year": "2002",
+    "lastUpdate": "2023-07-23T21:00:58.351Z",
+    "edition": "SingStar",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.5,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=A%20Dios%20le%20pido",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "Juanes-A Dios le pido.json",
+    "tracksCount": 1,
+    "search": "juanesadioslepido",
+    "local": false
+  },
+  {
+    "title": "La camisa negra",
+    "artist": "Juanes",
+    "bpm": 193.8,
+    "bar": 4,
+    "gap": 42718.808049535604,
+    "video": "kRt2sRyup6A",
+    "year": "2005",
+    "lastUpdate": "2023-07-23T21:00:58.352Z",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=La%20camisa%20negra",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Juanes-La camisa negra.json",
+    "tracksCount": 1,
+    "search": "juaneslacamisanegra",
+    "local": false
+  },
+  {
     "title": "Can't stop the feeling!",
     "artist": "Justin Timberlake",
     "bpm": 226.06,
@@ -7296,6 +7567,33 @@
     "file": "LMFAO, Lauren Bennett & Goon Rock-Party Rock Anthem.json",
     "tracksCount": 1,
     "search": "lmfaolaurenbennettgoonrockpartyrockanthem",
+    "local": false
+  },
+  {
+    "title": "20 De Enero",
+    "artist": "La Oreja De Van Gogh",
+    "bpm": 145,
+    "bar": 4,
+    "gap": 9873.51724137931,
+    "video": "QmhcdlvUIUY",
+    "year": "2003",
+    "lastUpdate": "2023-07-23T21:00:58.354Z",
+    "edition": "SingStar",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 145,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20De%20Van%20Gogh&cancion=20%20De%20Enero",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "file": "La Oreja De Van Gogh-20 De Enero.json",
+    "tracksCount": 1,
+    "search": "laorejadevangogh20deenero",
     "local": false
   },
   {
@@ -8812,6 +9110,33 @@
     "local": false
   },
   {
+    "title": "Hijo de la luna",
+    "artist": "Mecano",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 9037,
+    "video": "OwGG5fX7bxY",
+    "year": "1986",
+    "lastUpdate": "2023-07-23T21:00:58.354Z",
+    "edition": "SS Mecano",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 179,
+    "volume": 0.8,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Mecano&cancion=Hijo%20de%20la%20luna",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Mecano-Hijo de la luna.json",
+    "tracksCount": 1,
+    "search": "mecanohijodelaluna",
+    "local": false
+  },
+  {
     "title": "Początek",
     "artist": "Męskie Granie Orkiestra",
     "bpm": 330,
@@ -10128,6 +10453,34 @@
     "local": false
   },
   {
+    "title": "Un beso y una flor",
+    "artist": "Nino Bravo",
+    "bpm": 259.26,
+    "bar": 4,
+    "gap": 11466.431381624623,
+    "video": "maEVfX9zRIE",
+    "year": "1972",
+    "lastUpdate": "2023-07-23T21:00:58.355Z",
+    "edition": "SingStar Party",
+    "genre": "Pop",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 169,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nino%20Bravo&cancion=Un%20beso%20y%20una%20flor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Nino Bravo-Un beso y una flor.json",
+    "tracksCount": 1,
+    "search": "ninobravounbesoyunaflor",
+    "local": false
+  },
+  {
     "title": "Come As You Are",
     "artist": "Nirvana",
     "bpm": 340,
@@ -10898,6 +11251,33 @@
     "file": "Piersi i Kukiz-Caluj Mnie.json",
     "tracksCount": 1,
     "search": "piersiikukizcalujmnie",
+    "local": false
+  },
+  {
+    "title": "OlvÌdame y pega la vuelta",
+    "artist": "Pimpinela",
+    "bpm": 308.8,
+    "bar": 4,
+    "gap": 3036.922279792746,
+    "video": "fOHrY0jV6Hg",
+    "year": "1984",
+    "lastUpdate": "2023-07-23T21:00:58.356Z",
+    "edition": "SingStar Cla ES",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 77,
+    "volume": 0.65,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pimpinela&cancion=Olv%C3%ADdame%20y%20pega%20la%20vuelta",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "file": "Pimpinela-Olv-dame y pega la vuelta.json",
+    "tracksCount": 1,
+    "search": "pimpinelaolvidameypegalavuelta",
     "local": false
   },
   {
@@ -12563,6 +12943,87 @@
     "file": "Shakira ft. Freshlyground-Waka Waka (This Time for Africa).json",
     "tracksCount": 1,
     "search": "shakiraftfreshlygroundwakawakathistimeforafrica",
+    "local": false
+  },
+  {
+    "title": "La tortura",
+    "artist": "Shakira y Alejandro Sanz",
+    "bpm": 200,
+    "bar": 4,
+    "gap": 14101,
+    "video": "Dsp_8Lm1eSk",
+    "year": "2005",
+    "lastUpdate": "2023-07-23T21:00:58.357Z",
+    "genre": "Pop",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Shakira%20y%20Alejandro%20Sanz&cancion=La%20tortura",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "Shakira y Alejandro Sanz-La tortura.json",
+    "tracksCount": 1,
+    "search": "shakirayalejandrosanzlatortura",
+    "local": false
+  },
+  {
+    "title": "Ciega, sordomuda",
+    "artist": "Shakira",
+    "bpm": 239.92,
+    "bar": 4,
+    "gap": 22025.666555518506,
+    "video": "B3gbisdtJnA",
+    "year": "1998",
+    "lastUpdate": "2023-07-23T21:00:58.359Z",
+    "genre": "Pop",
+    "language": "Spanish",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.6,
+    "author": "zXz",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=zxz",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Ciega%2C%20sordomuda",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Shakira-Ciega- sordomuda.json",
+    "tracksCount": 1,
+    "search": "shakiraciegasordomuda",
+    "local": false
+  },
+  {
+    "title": "Loba",
+    "artist": "Shakira",
+    "bpm": 488,
+    "bar": 4,
+    "gap": 38960.65573770492,
+    "video": "C7ssrLSheg4",
+    "year": "2009",
+    "lastUpdate": "2023-07-23T21:00:58.361Z",
+    "genre": "Pop Internacional",
+    "language": "Spanish",
+    "videoGap": -1,
+    "realBpm": 122,
+    "volume": 0.7,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Loba",
+    "tracks": [
+      {
+        "start": 33
+      }
+    ],
+    "file": "Shakira-Loba.json",
+    "tracksCount": 1,
+    "search": "shakiraloba",
     "local": false
   },
   {
