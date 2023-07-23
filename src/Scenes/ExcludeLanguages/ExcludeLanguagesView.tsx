@@ -189,7 +189,8 @@ const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
     right: 0;
     img {
         width: 17rem;
-        margin: 1.5rem 0 0 0.5rem;
+        height: 10rem;
+        object-fit: cover;
     }
     overflow: hidden;
     width: 17rem;
