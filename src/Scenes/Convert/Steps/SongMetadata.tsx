@@ -29,7 +29,14 @@ export default function SongMetadata(props: Props) {
     const songList = useSongIndex(true);
 
     const definedLanguages = useMemo(
-        () => [...new Set(songList.data.map((song) => song.language).filter(Boolean))],
+        () => [
+            ...new Set(
+                songList.data
+                    .map(({ language }) => (Array.isArray(language) ? language : [language]))
+                    .flat()
+                    .filter(Boolean),
+            ),
+        ],
         [songList.data],
     );
     const definedGenres = useMemo(
