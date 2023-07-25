@@ -56,6 +56,10 @@ class WebSocketsClient {
     };
 
     public connect = (roomId: string, name: string, silent: boolean) => {
+        if (this.isConnected()) {
+            console.log('not reconnecting', this.connection?.readyState);
+            return;
+        }
         this.roomId = roomId;
 
         if (this.clientId === null) this.setClientId(v4());
@@ -74,16 +78,26 @@ class WebSocketsClient {
             console.log('closed connection :o', e);
             window.removeEventListener('beforeunload', this.disconnect);
 
-            events.karaokeConnectionStatusChange.dispatch('disconnected');
+            if (this.reconnecting) {
+                events.karaokeConnectionStatusChange.dispatch('reconnecting');
+            } else if (!this.connected) {
+                const error = JSON.parse(e.reason);
+                events.karaokeConnectionStatusChange.dispatch('error', error.error);
+            } else {
+                events.karaokeConnectionStatusChange.dispatch('disconnected');
+            }
+
             events.remoteMicPlayerSet.dispatch(null);
             events.remoteKeyboardLayout.dispatch(undefined);
 
             SimplifiedMic.removeListener(this.onFrequencyUpdate);
             SimplifiedMic.stopMonitoring();
 
+            if (!this.reconnecting && this.connected) {
+                this.reconnecting = true;
+                setTimeout(() => this.reconnect(roomId, name), 1500);
+            }
             this.connected = false;
-            this.reconnecting = true;
-            setTimeout(() => this.reconnect(roomId, name), 500);
         };
     };
 
@@ -167,7 +181,7 @@ class WebSocketsClient {
         if (this.reconnecting) {
             events.karaokeConnectionStatusChange.dispatch('reconnecting');
             this.connect(roomId, name, false);
-            setTimeout(() => this.reconnect(roomId, name), 1000);
+            setTimeout(() => this.reconnect(roomId, name), 2000);
         }
     };
 
@@ -198,10 +212,17 @@ class WebSocketsClient {
     public getSongList = () => this.sendRequest<WebRTCSongListEvent>({ t: 'request-songlist' }, 'songlist');
 
     private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
-        this.connection?.send(
-            JSON.stringify({ t: 'forward', recipients: [this.roomId], payload: { t: type, ...payload } }),
-        );
+        if (!this.isConnected()) {
+            console.debug('not connected, skipping', type, payload);
+        } else {
+            this.connection?.send(
+                JSON.stringify({ t: 'forward', recipients: [this.roomId], payload: { t: type, ...payload } }),
+            );
+        }
     };
+
+    // readyState >=2 means that the connection is closing or closed
+    private isConnected = () => (this.connection?.readyState ?? Infinity) < 2;
 
     private sendRequest = <T extends WebRTCEvents>({ t, ...payload }: WebRTCEvents, response: T['t']): Promise<T> => {
         return new Promise<T>((resolve, reject) => {

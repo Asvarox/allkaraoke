@@ -13,5 +13,7 @@ export default class Listener<ARG extends Array<any> = []> {
         };
     };
 
-    public removeListener = (listener: Callback<ARG>) => this.listeners.filter((callback) => callback !== listener);
+    public removeListener = (listener: Callback<ARG>) => {
+        this.listeners = this.listeners.filter((callback) => callback !== listener);
+    };
 }

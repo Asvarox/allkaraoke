@@ -86,26 +86,30 @@ export class RemoteMic {
         }
     };
 
-    private latency: number = 9999;
-
-    public onPong = () => {
-        this.latency = getPingTime() - this.pingTime;
-
-        this.pingClient();
-    };
-
     public setPermission = (level: WebRTCSetPermissionsEvent['level']) => {
         sendEvent<WebRTCSetPermissionsEvent>(this.connection, 'set-permissions', { level });
     };
 
+    private isPinging = false;
+    private latency: number = 9999;
+
+    public onPong = () => {
+        this.latency = getPingTime() - this.pingTime;
+        this.isPinging = false;
+
+        this.pingClient();
+    };
+
     private pingClient = () => {
+        console.log('pinging', this.id);
         this.pingInterval = setTimeout(() => {
             this.pingTime = getPingTime();
+            this.isPinging = true;
             sendEvent(this.connection, 'ping');
         }, 1000);
     };
 
-    public getLatency = () => this.latency;
+    public getLatency = () => (this.isPinging ? getPingTime() - this.pingTime : this.latency);
 
     public getPingTime = () => this.pingTime;
 }
