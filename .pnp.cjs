@@ -91,6 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash-es", "npm:4.17.21"],\
             ["lottie-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.4.0"],\
             ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.12.0"],\
+            ["msgpackr", "npm:1.9.5"],\
             ["musicbrainz-api", "npm:0.8.0"],\
             ["peer", "npm:0.6.1"],\
             ["peerjs", "npm:2.0.0-beta.3"],\
@@ -3795,6 +3796,60 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/react",\
             "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@msgpackr-extract/msgpackr-extract-darwin-arm64", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/@msgpackr-extract-msgpackr-extract-darwin-arm64-npm-3.0.2-18ac236cc4/node_modules/@msgpackr-extract/msgpackr-extract-darwin-arm64/",\
+          "packageDependencies": [\
+            ["@msgpackr-extract/msgpackr-extract-darwin-arm64", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@msgpackr-extract/msgpackr-extract-darwin-x64", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/@msgpackr-extract-msgpackr-extract-darwin-x64-npm-3.0.2-39dd07082a/node_modules/@msgpackr-extract/msgpackr-extract-darwin-x64/",\
+          "packageDependencies": [\
+            ["@msgpackr-extract/msgpackr-extract-darwin-x64", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@msgpackr-extract/msgpackr-extract-linux-arm", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/@msgpackr-extract-msgpackr-extract-linux-arm-npm-3.0.2-808a652e0b/node_modules/@msgpackr-extract/msgpackr-extract-linux-arm/",\
+          "packageDependencies": [\
+            ["@msgpackr-extract/msgpackr-extract-linux-arm", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@msgpackr-extract/msgpackr-extract-linux-arm64", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/@msgpackr-extract-msgpackr-extract-linux-arm64-npm-3.0.2-cfbf50d4c6/node_modules/@msgpackr-extract/msgpackr-extract-linux-arm64/",\
+          "packageDependencies": [\
+            ["@msgpackr-extract/msgpackr-extract-linux-arm64", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@msgpackr-extract/msgpackr-extract-linux-x64", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/@msgpackr-extract-msgpackr-extract-linux-x64-npm-3.0.2-262fca760d/node_modules/@msgpackr-extract/msgpackr-extract-linux-x64/",\
+          "packageDependencies": [\
+            ["@msgpackr-extract/msgpackr-extract-linux-x64", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@msgpackr-extract/msgpackr-extract-win32-x64", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/@msgpackr-extract-msgpackr-extract-win32-x64-npm-3.0.2-c627beab89/node_modules/@msgpackr-extract/msgpackr-extract-win32-x64/",\
+          "packageDependencies": [\
+            ["@msgpackr-extract/msgpackr-extract-win32-x64", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14249,6 +14304,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["msgpackr", [\
+        ["npm:1.9.5", {\
+          "packageLocation": "./.yarn/cache/msgpackr-npm-1.9.5-69f0e8f5b8-4a9ebbdd61.zip/node_modules/msgpackr/",\
+          "packageDependencies": [\
+            ["msgpackr", "npm:1.9.5"],\
+            ["msgpackr-extract", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["msgpackr-extract", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/unplugged/msgpackr-extract-npm-3.0.2-93e8773fad/node_modules/msgpackr-extract/",\
+          "packageDependencies": [\
+            ["msgpackr-extract", "npm:3.0.2"],\
+            ["@msgpackr-extract/msgpackr-extract-darwin-arm64", "npm:3.0.2"],\
+            ["@msgpackr-extract/msgpackr-extract-darwin-x64", "npm:3.0.2"],\
+            ["@msgpackr-extract/msgpackr-extract-linux-arm", "npm:3.0.2"],\
+            ["@msgpackr-extract/msgpackr-extract-linux-arm64", "npm:3.0.2"],\
+            ["@msgpackr-extract/msgpackr-extract-linux-x64", "npm:3.0.2"],\
+            ["@msgpackr-extract/msgpackr-extract-win32-x64", "npm:3.0.2"],\
+            ["node-gyp", "npm:9.0.0"],\
+            ["node-gyp-build-optional-packages", "npm:5.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["multimatch", [\
         ["npm:4.0.0", {\
           "packageLocation": "./.yarn/cache/multimatch-npm-4.0.0-8c467f035e-bdb6a98dad.zip/node_modules/multimatch/",\
@@ -14420,6 +14502,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.5.0"],\
             ["tar", "npm:6.1.13"],\
             ["which", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["node-gyp-build-optional-packages", [\
+        ["npm:5.0.7", {\
+          "packageLocation": "./.yarn/cache/node-gyp-build-optional-packages-npm-5.0.7-40f21a5d68-bcb4537af1.zip/node_modules/node-gyp-build-optional-packages/",\
+          "packageDependencies": [\
+            ["node-gyp-build-optional-packages", "npm:5.0.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14714,6 +14805,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash-es", "npm:4.17.21"],\
             ["lottie-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.4.0"],\
             ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.12.0"],\
+            ["msgpackr", "npm:1.9.5"],\
             ["musicbrainz-api", "npm:0.8.0"],\
             ["peer", "npm:0.6.1"],\
             ["peerjs", "npm:2.0.0-beta.3"],\

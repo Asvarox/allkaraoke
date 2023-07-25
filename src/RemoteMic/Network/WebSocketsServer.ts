@@ -4,6 +4,7 @@ import sendEvent from 'RemoteMic/Network/sendEvent';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import SongDao from 'Songs/SongDao';
 import { v4 } from 'uuid';
+import { pack, unpack } from 'RemoteMic/Network/utils';
 
 const ROOM_ID_KEY = 'room_id_key';
 
@@ -29,7 +30,7 @@ class SenderWrapper {
     public send = (payload: WebRTCEvents) => {
         const data = { t: 'forward', recipients: [this.peer], payload };
         if (!['ping', 'pong', 'freq'].includes(payload?.t)) console.log('sending', this.peer, payload);
-        this.socket.send(JSON.stringify(data));
+        this.socket.send(pack(data));
     };
 
     private callbacksMap: Map<callback, callback> = new Map();
@@ -38,7 +39,7 @@ class SenderWrapper {
         console.log(this.peer, event);
         if (event === 'data') {
             this.callbacksMap.set(callback, (message) => {
-                const data: WebsocketMessage = JSON.parse(message.data);
+                const data: WebsocketMessage = unpack(message.data);
                 if (data.t === 'forward') {
                     const { sender, payload } = data;
                     if (sender === this.peer) {
@@ -77,12 +78,13 @@ class WebsocketsServer {
         window.sessionStorage.setItem(ROOM_ID_KEY, this.roomId);
 
         this.connection = new WebSocket(WEBSOCKETS_SERVER);
+        this.connection.binaryType = 'arraybuffer';
         this.connection.onopen = () => {
-            this.connection?.send(JSON.stringify({ t: 'register-room', id: this.roomId }));
+            this.connection?.send(pack({ t: 'register-room', id: this.roomId }));
 
             this.connection?.addEventListener('message', (message) => {
                 try {
-                    const payload: WebsocketMessage = JSON.parse(message.data);
+                    const payload: WebsocketMessage = unpack(message.data);
 
                     // @ts-ignore
                     if (!['ping', 'pong', 'freq'].includes(payload?.payload?.t)) console.log('received', payload);
