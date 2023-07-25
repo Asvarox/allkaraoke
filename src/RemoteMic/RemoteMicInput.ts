@@ -26,6 +26,7 @@ class RemoteMicInput {
     getInputLag = () => 200;
 
     requestReadiness = () => {
+        console.log('requestReadiness');
         if (!this.requestReadinessPromise) {
             this.requestReadinessPromise = new Promise<boolean>((resolve) => {
                 const listener = (data: WebRTCEvents) => {
