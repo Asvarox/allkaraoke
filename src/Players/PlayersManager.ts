@@ -62,7 +62,7 @@ class PlayersManager {
     private players: PlayerEntity[] = [];
     private requestingPromise: Promise<any> | null = null;
     public constructor() {
-        const storedPlayers = storage.getValue<ReturnType<PlayerEntity['toJSON']>[]>(SELECTED_INPUTS_KEY) ?? [];
+        const storedPlayers = storage.session.getValue<ReturnType<PlayerEntity['toJSON']>[]>(SELECTED_INPUTS_KEY) ?? [];
         if (storedPlayers.length) {
             this.players = storedPlayers.map(PlayerEntity.fromJSON);
 
@@ -111,40 +111,42 @@ class PlayersManager {
     }
 
     private storePlayers = () => {
-        storage.storeValue(
+        storage.session.storeValue(
             SELECTED_INPUTS_KEY,
             this.getPlayers().map((player) => player.toJSON()),
         );
     };
 
     public requestReadiness = async () => {
-        if (!this.requestingPromise) {
-            this.requestingPromise = new Promise((resolve) => {
-                const request = async () => {
-                    const allInputsConnected = !this.getPlayers().some(
-                        (player) => inputSourceListManager.getInputForPlayerSelected(player.input, false) === null,
+        console.log('requestReadiness');
+        // if (!this.requestingPromise) {
+        this.requestingPromise = new Promise((resolve) => {
+            const request = async () => {
+                const allInputsConnected = !this.getPlayers().some(
+                    (player) => inputSourceListManager.getInputForPlayerSelected(player.input, false) === null,
+                );
+                console.log(this.getPlayers());
+
+                if (allInputsConnected) {
+                    await Promise.all(
+                        this.getPlayers().map((player) =>
+                            InputManager.sourceNameToInput(player.input.source)
+                                .requestReadiness(player.input.deviceId)
+                                .then(() => {
+                                    events.readinessConfirmed.dispatch(player.input.deviceId!);
+                                }),
+                        ),
                     );
+                    events.inputListChanged.unsubscribe(request);
+                    this.requestingPromise = null;
+                    resolve(true);
+                }
+            };
 
-                    if (allInputsConnected) {
-                        await Promise.all(
-                            this.getPlayers().map((player) =>
-                                InputManager.sourceNameToInput(player.input.source)
-                                    .requestReadiness(player.input.deviceId)
-                                    .then(() => {
-                                        events.readinessConfirmed.dispatch(player.input.deviceId!);
-                                    }),
-                            ),
-                        );
-                        events.inputListChanged.unsubscribe(request);
-                        this.requestingPromise = null;
-                        resolve(true);
-                    }
-                };
-
-                events.inputListChanged.subscribe(request);
-                request();
-            });
-        }
+            events.inputListChanged.subscribe(request);
+            request();
+        });
+        // }
 
         return this.requestingPromise;
     };
