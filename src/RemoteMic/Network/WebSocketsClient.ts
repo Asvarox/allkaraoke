@@ -25,7 +25,7 @@ const roundTo = (num: number, precision: number) => {
     return Math.round(num * multiplier) / multiplier;
 };
 
-class WebSocketsClient {
+export class WebSocketsClient {
     private clientId = storage.getValue(MIC_ID_KEY);
     private roomId: string | null = null;
 
@@ -249,5 +249,3 @@ class WebSocketsClient {
         this.connection?.close();
     };
 }
-
-export default new WebSocketsClient();

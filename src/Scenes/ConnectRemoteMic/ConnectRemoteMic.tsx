@@ -1,12 +1,15 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
+import WebRTCServer, { isWebsockets } from 'RemoteMic/Network/WebRTCServer';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
 
 const linkObject = new URL(window.location.href);
+if (isWebsockets) {
+    linkObject.searchParams.set('transport', 'websocket');
+}
 
 function ConnectRemoteMic() {
     // Validate if the component is rendered in a remote mic or in the "main" game via the URL
