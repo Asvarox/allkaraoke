@@ -10,13 +10,13 @@ import {
 import { getPingTime, pack, unpack } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import { throttle } from 'lodash-es';
+import { DataConnection, Peer } from 'peerjs';
+import Listener from 'utils/Listener';
+import peerJSOptions from 'utils/peerJSOptions';
 import storage from 'utils/storage';
 import { v4 } from 'uuid';
-import { ForwardedMessage, WEBSOCKETS_SERVER, WebsocketMessage } from './WebSocketsServer';
+import { ForwardedMessage, WEBSOCKETS_SERVER } from './TheServer';
 import sendEvent from './sendEvent';
-import Listener from 'utils/Listener';
-import { DataConnection, Peer } from 'peerjs';
-import peerJSOptions from 'utils/peerJSOptions';
 
 export const MIC_ID_KEY = 'MIC_CLIENT_ID';
 
@@ -31,7 +31,7 @@ const roundTo = (num: number, precision: number) => {
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
-export interface TransportMeans extends Listener<[WebRTCEvents]> {
+export interface ClientTransport extends Listener<[WebRTCEvents]> {
     connect(
         clientId: string,
         roomId: string,
@@ -44,7 +44,7 @@ export interface TransportMeans extends Listener<[WebRTCEvents]> {
     close(): void;
 }
 
-export class WebsocketTransport extends Listener<[WebRTCEvents]> implements TransportMeans {
+export class WebSocketClientTransport extends Listener<[WebRTCEvents]> implements ClientTransport {
     private connection: WebSocket | null = null;
     private roomId: string | null = null;
 
@@ -101,7 +101,7 @@ export class WebsocketTransport extends Listener<[WebRTCEvents]> implements Tran
     };
 }
 
-export class PeerJSTransport extends Listener<[WebRTCEvents]> implements TransportMeans {
+export class PeerJSClientTransport extends Listener<[WebRTCEvents]> implements ClientTransport {
     private peer: Peer | null = null;
     private connection: DataConnection | null = null;
     private roomId: string | null = null;
@@ -185,7 +185,7 @@ export class TheClient {
 
     private frequencies: number[] = [];
 
-    public constructor(private transport: TransportMeans) {}
+    public constructor(private transport: ClientTransport) {}
 
     private sendFrequencies = throttle((volume: number) => {
         const freqs = this.frequencies.map((freq) => roundTo(freq, 2));

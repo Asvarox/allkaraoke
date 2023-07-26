@@ -1,5 +1,5 @@
+import { TheServer, WebSocketServerTransport } from 'RemoteMic/Network/TheServer';
 import { P2PServer } from './P2PServer';
-import { WebSocketsServer } from './WebSocketsServer';
 
 if (window.location.search.includes('pswd')) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -12,7 +12,7 @@ if (window.location.search.includes('pswd')) {
     }
 }
 const pswd = window.sessionStorage.getItem('pswd');
-const server: WebSocketsServer | P2PServer = pswd ? new WebSocketsServer(pswd) : new P2PServer();
+const server: TheServer | P2PServer = pswd ? new TheServer(new WebSocketServerTransport(pswd)) : new P2PServer();
 
-export const isWebsockets = server instanceof WebSocketsServer;
+export const isWebsockets = server instanceof TheServer;
 export default server;

@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
+import { transportErrorReason } from 'RemoteMic/Network/TheClient';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { WebRTCSongListEvent } from 'RemoteMic/Network/events';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import SongDao from 'Songs/SongDao';
 import useSongIndex from 'Songs/hooks/useSongIndex';
-import { PeerErrorType } from 'interfaces';
 import { uniqBy } from 'lodash-es';
 import { useEffect, useMemo, useState } from 'react';
 import languageNameToIsoCode from 'utils/languageNameToIsoCode';
@@ -13,7 +13,7 @@ import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 interface Props {
     roomId: string;
     connectionStatus: ConnectionStatuses;
-    connectionError?: PeerErrorType;
+    connectionError?: transportErrorReason;
     isKeepAwakeOn: boolean;
     setIsKeepAwakeOn: (keepAwake: boolean) => void;
     monitoringStarted: boolean;

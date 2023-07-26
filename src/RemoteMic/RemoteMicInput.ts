@@ -101,7 +101,6 @@ export class RemoteMic {
     };
 
     private pingClient = () => {
-        console.log('pinging', this.id);
         this.pingInterval = setTimeout(() => {
             this.pingTime = getPingTime();
             this.isPinging = true;

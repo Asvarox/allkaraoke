@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
 import { typography } from 'Elements/cssMixins';
+import { transportErrorReason } from 'RemoteMic/Network/TheClient';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import Connect from 'Scenes/RemoteMic/Panels/Microphone/Connect';
@@ -10,13 +11,12 @@ import Ping from 'Scenes/RemoteMic/Panels/Microphone/Ping';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
-import { PeerErrorType } from 'interfaces';
 import isDev from 'utils/isDev';
 
 interface Props {
     roomId: string;
     connectionStatus: ConnectionStatuses;
-    connectionError?: PeerErrorType;
+    connectionError?: transportErrorReason;
     isKeepAwakeOn: boolean;
     setIsKeepAwakeOn: (keepAwake: boolean) => void;
     monitoringStarted: boolean;
