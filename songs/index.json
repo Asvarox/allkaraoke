@@ -1647,6 +1647,63 @@
     "local": false
   },
   {
+    "title": "I Started A Joke",
+    "artist": "Bee Gees",
+    "bpm": 287,
+    "bar": 4,
+    "gap": 12893.968641114983,
+    "video": "4ZWKR2zJESk",
+    "year": "1968",
+    "lastUpdate": "2023-07-26T20:10:02.016Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 72,
+    "previewStart": 62,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "mustangfred",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Bee-Gees-I-Started-A-Joke.json",
+    "tracksCount": 1,
+    "search": "beegeesistartedajoke",
+    "local": false
+  },
+  {
+    "title": "Tragedy",
+    "artist": "Bee Gees",
+    "bpm": 396.68,
+    "bar": 4,
+    "gap": 27636.839770091763,
+    "video": "qzNDY1VknaQ",
+    "year": "1979",
+    "lastUpdate": "2023-07-26T20:10:02.018Z",
+    "edition": "Rock Band Store 2010 Vol. 4",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "Bee-Gees-Tragedy.json",
+    "tracksCount": 1,
+    "search": "beegeestragedy",
+    "local": false
+  },
+  {
     "title": "If I Were A Boy (Album Version)",
     "artist": "Beyoncé",
     "bpm": 360,
@@ -1731,6 +1788,33 @@
     "file": "Beyonc-Love-On-Top.json",
     "tracksCount": 1,
     "search": "beyonceloveontop",
+    "local": false
+  },
+  {
+    "title": "Crazy In Love",
+    "artist": "Beyoncé feat. Jay-Z",
+    "bpm": 396.8,
+    "bar": 4,
+    "gap": 947.1370967741935,
+    "video": "ViwtNLUqkMY",
+    "year": "2003",
+    "lastUpdate": "2023-07-26T20:10:02.020Z",
+    "genre": "Urban",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 99,
+    "volume": 0.5,
+    "author": "bohning",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "file": "Beyonc-feat.-Jay-Z-Crazy-In-Love.json",
+    "tracksCount": 1,
+    "search": "beyoncefeatjayzcrazyinlove",
     "local": false
   },
   {
@@ -2612,6 +2696,34 @@
     "local": false
   },
   {
+    "title": "All By Myself",
+    "artist": "Céline Dion",
+    "bpm": 464,
+    "bar": 4,
+    "gap": 3797.8448275862065,
+    "video": "NGrLb6W5YOM",
+    "year": "1996",
+    "lastUpdate": "2023-07-26T20:10:02.022Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 119,
+    "volume": 0.5,
+    "author": "rubinho.santos",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "file": "C-line-Dion-All-By-Myself.json",
+    "tracksCount": 1,
+    "search": "celinedionallbymyself",
+    "local": false
+  },
+  {
     "title": "I Drove All Night",
     "artist": "Céline Dion",
     "bpm": 268.5,
@@ -2636,6 +2748,35 @@
     "file": "C-line-Dion-I-Drove-All-Night.json",
     "tracksCount": 1,
     "search": "celinedionidroveallnight",
+    "local": false
+  },
+  {
+    "title": "It’s All Coming Back To Me Now",
+    "artist": "Céline Dion",
+    "bpm": 363.28,
+    "bar": 4,
+    "gap": 47889.02884827131,
+    "video": "Oe9VB8t3m2w",
+    "year": "1996",
+    "lastUpdate": "2023-07-26T20:10:02.022Z",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 88,
+    "previewStart": 98,
+    "previewEnd": 143,
+    "volume": 0.5,
+    "author": "bohning",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "file": "C-line-Dion-Its-All-Coming-Back-To-Me-Now.json",
+    "tracksCount": 1,
+    "search": "celinedionitsallcomingbacktomenow",
     "local": false
   },
   {
@@ -3500,6 +3641,61 @@
     "file": "David Guetta & Sia-Titanium.json",
     "tracksCount": 1,
     "search": "davidguettasiatitanium",
+    "local": false
+  },
+  {
+    "title": "Heroes",
+    "artist": "David Bowie",
+    "bpm": 200.4,
+    "bar": 4,
+    "gap": 17266.94610778443,
+    "video": "lXgkuM2NhYI",
+    "year": "1977",
+    "lastUpdate": "2023-07-26T20:10:02.024Z",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 112,
+    "volume": 0.5,
+    "author": "pi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "David-Bowie-Heroes.json",
+    "tracksCount": 1,
+    "search": "davidbowieheroes",
+    "local": false
+  },
+  {
+    "title": "Space Oddity",
+    "artist": "David Bowie",
+    "bpm": 272,
+    "bar": 4,
+    "gap": 33207.35294117647,
+    "video": "iYYRH4apXDo",
+    "year": "1969",
+    "lastUpdate": "2023-07-26T20:10:02.025Z",
+    "edition": "[SC]-Songs",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.5,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "David-Bowie-Space-Oddity.json",
+    "tracksCount": 1,
+    "search": "davidbowiespaceoddity",
     "local": false
   },
   {
@@ -4836,6 +5032,95 @@
     "local": false
   },
   {
+    "title": "More Than Words",
+    "artist": "Extreme",
+    "bpm": 368,
+    "bar": 4,
+    "gap": 28550.978260869564,
+    "video": "UrIiLvg58SY",
+    "year": "1991",
+    "lastUpdate": "2023-07-26T20:10:02.025Z",
+    "edition": "SingStar ’90s [US], SingStar Rocks! [DE]",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.5,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      },
+      {
+        "start": 793
+      }
+    ],
+    "file": "Extreme-More-Than-Words-DUET.json",
+    "tracksCount": 2,
+    "search": "extrememorethanwords",
+    "local": false
+  },
+  {
+    "title": "Easy",
+    "artist": "Faith No More",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 16728.095238095237,
+    "video": "vPzDTfIb0DU",
+    "year": "1992",
+    "lastUpdate": "2023-07-26T20:10:02.026Z",
+    "edition": "SingStar Summer Party",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 125,
+    "previewStart": 63,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "Leki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "file": "Faith-No-More-Easy.json",
+    "tracksCount": 1,
+    "search": "faithnomoreeasy",
+    "local": false
+  },
+  {
+    "title": "Midlife Crisis (Album Version)",
+    "artist": "Faith No More",
+    "bpm": 378.2,
+    "bar": 4,
+    "gap": 9948.461131676362,
+    "video": "U8b88US-6ts",
+    "year": "1992",
+    "lastUpdate": "2023-07-26T20:10:02.027Z",
+    "edition": "Rock Band 3",
+    "genre": "Alternative Metal",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.59,
+    "author": "Gollum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "file": "Faith-No-More-Midlife-Crisis-Album-Version.json",
+    "tracksCount": 1,
+    "search": "faithnomoremidlifecrisisalbumversion",
+    "local": false
+  },
+  {
     "title": "Rock Me Amadeus",
     "artist": "Falco",
     "bpm": 177.1,
@@ -5211,6 +5496,34 @@
     "file": "Foo-Fighters-Wheels.json",
     "tracksCount": 1,
     "search": "foofighterswheels",
+    "local": false
+  },
+  {
+    "title": "Lemon Tree",
+    "artist": "Fool’s Garden",
+    "bpm": 286.6,
+    "bar": 4,
+    "gap": 13365.582693649685,
+    "video": "wCQfkEkePx8",
+    "year": "1995",
+    "lastUpdate": "2023-07-26T20:10:02.028Z",
+    "edition": "[SC]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 143,
+    "volume": 0.5,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "file": "Fool-s-Garden-Lemon-Tree.json",
+    "tracksCount": 1,
+    "search": "foolsgardenlemontree",
     "local": false
   },
   {
@@ -6745,6 +7058,64 @@
     "local": false
   },
   {
+    "title": "Summer In The City",
+    "artist": "Joe Cocker",
+    "bpm": 350,
+    "bar": 4,
+    "gap": 24414.285714285714,
+    "video": "6Hxz6qJi-9k",
+    "year": "1994",
+    "lastUpdate": "2023-07-26T20:10:02.028Z",
+    "edition": "SingStar Summer Party",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 89,
+    "volume": 0.5,
+    "author": "Leki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Joe-Cocker-Summer-In-The-City.json",
+    "tracksCount": 1,
+    "search": "joecockersummerinthecity",
+    "local": false
+  },
+  {
+    "title": "You Can Leave Your Hat On",
+    "artist": "Joe Cocker",
+    "bpm": 347,
+    "bar": 4,
+    "gap": 24555.763688760806,
+    "video": "hfgwrdYUQ2A",
+    "year": "1986",
+    "lastUpdate": "2023-07-26T20:10:02.029Z",
+    "edition": "[SC]-Songs",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 173,
+    "previewStart": 111,
+    "previewEnd": 152,
+    "volume": 0.61,
+    "author": "mk90",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "file": "Joe-Cocker-You-Can-Leave-Your-Hat-On.json",
+    "tracksCount": 1,
+    "search": "joecockeryoucanleaveyourhaton",
+    "local": false
+  },
+  {
     "title": "Hurt",
     "artist": "Johnny Cash",
     "bpm": 181.5,
@@ -6997,6 +7368,34 @@
     "file": "KORTEZ-Zostań.json",
     "tracksCount": 1,
     "search": "kortezzostan",
+    "local": false
+  },
+  {
+    "title": "Suddenly I See",
+    "artist": "KT Tunstall",
+    "bpm": 200.9,
+    "bar": 4,
+    "gap": 13769.367844698856,
+    "video": "Wh2AEwOtFHA",
+    "year": "2005",
+    "lastUpdate": "2023-07-26T20:10:02.030Z",
+    "edition": "SingStar Summer Party",
+    "genre": "Rock Alternativo",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.5,
+    "author": "Leki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "file": "KT-Tunstall-Suddenly-I-See.json",
+    "tracksCount": 1,
+    "search": "kttunstallsuddenlyisee",
     "local": false
   },
   {
@@ -7260,6 +7659,66 @@
     "file": "Kayah-Testosteron.json",
     "tracksCount": 1,
     "search": "kayahtestosteron",
+    "local": false
+  },
+  {
+    "title": "TiK ToK",
+    "artist": "Ke$ha",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 8810,
+    "video": "iP6XpLQM2Cs",
+    "year": "2009",
+    "lastUpdate": "2023-07-26T20:10:02.031Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 128,
+    "previewStart": 55,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "klops_007",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Ke-ha-TiK-ToK.json",
+    "tracksCount": 1,
+    "search": "kehatiktok",
+    "local": false
+  },
+  {
+    "title": "All Summer Long",
+    "artist": "Kid Rock",
+    "bpm": 303.37,
+    "bar": 4,
+    "gap": 10801.108547318456,
+    "video": "aSkFygPCTwE",
+    "year": "2007",
+    "lastUpdate": "2023-07-26T20:10:02.032Z",
+    "edition": "[SC]-Songs",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 103,
+    "previewStart": 73,
+    "previewEnd": 100,
+    "volume": 0.54,
+    "author": "Silverbeam",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Kid-Rock-All-Summer-Long.json",
+    "tracksCount": 1,
+    "search": "kidrockallsummerlong",
     "local": false
   },
   {
@@ -7597,6 +8056,39 @@
     "local": false
   },
   {
+    "title": "City Of Stars",
+    "artist": "La La Land (Ryan Gosling & Emma Stone)",
+    "bpm": 215.48,
+    "bar": 4,
+    "gap": 7995.431594579543,
+    "video": "GTWqwSNQCcg",
+    "year": "2016",
+    "lastUpdate": "2023-07-26T20:10:02.033Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Musical",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 98,
+    "volume": 0.5,
+    "author": "zrednaz",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Ryan Gosling",
+        "start": 14
+      },
+      {
+        "name": "Emma Stone",
+        "start": 423
+      }
+    ],
+    "file": "La-La-Land-Ryan-Gosling-Emma-Stone-City-Of-Stars-DUET.json",
+    "tracksCount": 2,
+    "search": "lalalandryangoslingemmastonecityofstars",
+    "local": false
+  },
+  {
     "title": "Just Dance",
     "artist": "Lady GaGa feat. Colby O'Donis",
     "bpm": 357,
@@ -7845,6 +8337,71 @@
     "file": "Lady-Gaga-Born-This-Way.json",
     "tracksCount": 1,
     "search": "ladygagabornthisway",
+    "local": false
+  },
+  {
+    "title": "Paparazzi",
+    "artist": "Lady Gaga",
+    "bpm": 229.97,
+    "bar": 4,
+    "gap": 158851.61151454537,
+    "video": "d2smz_1L2_0",
+    "year": "2008",
+    "lastUpdate": "2023-07-26T20:10:02.033Z",
+    "edition": "[SC]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 115,
+    "previewStart": 198,
+    "previewEnd": 228,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "Lady-Gaga-Paparazzi.json",
+    "tracksCount": 1,
+    "search": "ladygagapaparazzi",
+    "local": false
+  },
+  {
+    "title": "Telephone",
+    "artist": "Lady Gaga feat. Beyoncé",
+    "bpm": 244,
+    "bar": 4,
+    "gap": 6826.393442622952,
+    "video": "Zwnvgz3ey78",
+    "year": "2009",
+    "lastUpdate": "2023-07-26T20:10:02.034Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 122,
+    "previewStart": 56,
+    "previewEnd": 86,
+    "volume": 0.5,
+    "author": "petiboy20",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Lady Gaga",
+        "start": 16
+      },
+      {
+        "name": "Beyonce",
+        "start": 1422
+      }
+    ],
+    "file": "Lady-Gaga-feat.-Beyonc-Telephone-DUET.json",
+    "tracksCount": 2,
+    "search": "ladygagafeatbeyoncetelephone",
     "local": false
   },
   {
@@ -8893,6 +9450,34 @@
     "file": "Mariah-Carey-Without-you.json",
     "tracksCount": 1,
     "search": "mariahcareywithoutyou",
+    "local": false
+  },
+  {
+    "title": "Kayleigh",
+    "artist": "Marillion",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 35962,
+    "video": "GA4ROLQF4cs",
+    "year": "1985",
+    "lastUpdate": "2023-07-26T20:10:02.036Z",
+    "edition": "SingStar '80s",
+    "genre": "Rock",
+    "language": "English",
+    "videoGap": 6,
+    "realBpm": 106,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Marillion-Kayleigh.json",
+    "tracksCount": 1,
+    "search": "marillionkayleigh",
     "local": false
   },
   {
@@ -10239,6 +10824,124 @@
     "local": false
   },
   {
+    "title": "I’m Like A Bird",
+    "artist": "Nelly Furtado",
+    "bpm": 360.3,
+    "bar": 4,
+    "gap": 22180.83263946711,
+    "video": "roPQ_M3yJTA",
+    "year": "2000",
+    "lastUpdate": "2023-07-26T20:10:02.036Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.5,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "file": "Nelly-Furtado-I-m-Like-A-Bird.json",
+    "tracksCount": 1,
+    "search": "nellyfurtadoimlikeabird",
+    "local": false
+  },
+  {
+    "title": "Maneater",
+    "artist": "Nelly Furtado",
+    "bpm": 263.9,
+    "bar": 4,
+    "gap": 102606.88518378173,
+    "video": "PLolag3YSYU",
+    "year": "2006",
+    "lastUpdate": "2023-07-26T20:10:02.037Z",
+    "edition": "None",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 133,
+    "previewStart": 131,
+    "previewEnd": 173,
+    "volume": 0.5,
+    "author": "thursday",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "file": "Nelly-Furtado-Maneater.json",
+    "tracksCount": 1,
+    "search": "nellyfurtadomaneater",
+    "local": false
+  },
+  {
+    "title": "Say It Right",
+    "artist": "Nelly Furtado",
+    "bpm": 238.45,
+    "bar": 4,
+    "gap": 33633.499685468654,
+    "video": "6JnGBs88sL0",
+    "year": "2006",
+    "lastUpdate": "2023-07-26T20:10:02.038Z",
+    "edition": "[SC]-Songs",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 117,
+    "previewStart": 67,
+    "previewEnd": 98,
+    "volume": 0.5,
+    "author": "dog",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Nelly-Furtado-Say-It-Right.json",
+    "tracksCount": 1,
+    "search": "nellyfurtadosayitright",
+    "local": false
+  },
+  {
+    "title": "Promiscuous",
+    "artist": "Nelly Furtado feat. Timbaland",
+    "bpm": 228.6,
+    "bar": 4,
+    "gap": 43.832020997375366,
+    "video": "0J3vgcE5i2o",
+    "year": "2006",
+    "lastUpdate": "2023-07-26T20:10:02.039Z",
+    "edition": "SingStar Pop Hits",
+    "genre": "Urban",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 114,
+    "previewStart": 55,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "Diddlmaus30mg",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "file": "Nelly-Furtado-feat.-Timbaland-Promiscuous.json",
+    "tracksCount": 1,
+    "search": "nellyfurtadofeattimbalandpromiscuous",
+    "local": false
+  },
+  {
     "title": "99 Luftballons",
     "artist": "Nena",
     "bpm": 190.6,
@@ -11331,6 +12034,35 @@
     "file": "Pink-Floyd-Comfortably-Numb.json",
     "tracksCount": 1,
     "search": "pinkfloydcomfortablynumb",
+    "local": false
+  },
+  {
+    "title": "High Hopes",
+    "artist": "Pink Floyd",
+    "bpm": 300.5,
+    "bar": 4,
+    "gap": 41401.66389351081,
+    "video": "7jMlFXouPk8",
+    "year": "1994",
+    "lastUpdate": "2023-07-26T20:10:02.040Z",
+    "genre": "Progressive Rock",
+    "language": "English",
+    "videoGap": 4,
+    "realBpm": 75,
+    "previewStart": 104,
+    "previewEnd": 135,
+    "volume": 0.5,
+    "author": "WingXero *Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Pink-Floyd-High-Hopes.json",
+    "tracksCount": 1,
+    "search": "pinkfloydhighhopes",
     "local": false
   },
   {
@@ -12809,6 +13541,63 @@
     "file": "Sarah Brightman & Andrea Bocelli-Time To Say Goodbye (Con te partirò).json",
     "tracksCount": 2,
     "search": "sarahbrightmanandreabocellitimetosaygoodbyecontepartiro",
+    "local": false
+  },
+  {
+    "title": "Any Which Way",
+    "artist": "Scissor Sisters",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 19900,
+    "video": "HHv0jW4p_xA",
+    "year": "2010",
+    "lastUpdate": "2023-07-26T20:10:02.041Z",
+    "genre": "Disco",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.5,
+    "author": "REL",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "file": "Scissor-Sisters-Any-Which-Way.json",
+    "tracksCount": 1,
+    "search": "scissorsistersanywhichway",
+    "local": false
+  },
+  {
+    "title": "I Don't Feel Like Dancin'",
+    "artist": "Scissor Sisters",
+    "bpm": 216.04,
+    "bar": 4,
+    "gap": 13657.95778559526,
+    "video": "4H5I6y1Qvz0",
+    "year": "2006",
+    "lastUpdate": "2023-07-26T20:10:02.042Z",
+    "edition": "SingStar PopHit",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 108,
+    "previewStart": 62,
+    "previewEnd": 90,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "file": "Scissor-Sisters-I-Don-t-Feel-Like-Dancin.json",
+    "tracksCount": 1,
+    "search": "scissorsistersidontfeellikedancin",
     "local": false
   },
   {
@@ -15070,6 +15859,35 @@
     "local": false
   },
   {
+    "title": "Blame It On The Boogie",
+    "artist": "The Jacksons",
+    "bpm": 225.55,
+    "bar": 4,
+    "gap": 7402.438483706495,
+    "video": "nqxVMLVe62U",
+    "year": "1978",
+    "lastUpdate": "2023-07-26T20:10:02.043Z",
+    "genre": "Disco",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 113,
+    "previewStart": 68,
+    "previewEnd": 96,
+    "volume": 0.5,
+    "author": "RetroGirl",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "file": "The-Jacksons-Blame-It-On-The-Boogie.json",
+    "tracksCount": 1,
+    "search": "thejacksonsblameitontheboogie",
+    "local": false
+  },
+  {
     "title": "Blinding Lights",
     "artist": "The Weeknd",
     "bpm": 342.35,
@@ -15175,6 +15993,34 @@
     "file": "Tim Bendzko-Nur noch kurz die Welt retten.json",
     "tracksCount": 1,
     "search": "timbendzkonurnochkurzdieweltretten",
+    "local": false
+  },
+  {
+    "title": "Apologize",
+    "artist": "Timbaland presents OneRepublic",
+    "bpm": 236.1,
+    "bar": 4,
+    "gap": 6043.481575603558,
+    "video": "ZSM3w1v-A_Y",
+    "year": "2007",
+    "lastUpdate": "2023-07-26T20:10:02.044Z",
+    "edition": "[SC]-Songs",
+    "genre": "Alternative",
+    "language": "English",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.5,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "file": "Timbaland-presents-OneRepublic-Apologize.json",
+    "tracksCount": 1,
+    "search": "timbalandpresentsonerepublicapologize",
     "local": false
   },
   {
