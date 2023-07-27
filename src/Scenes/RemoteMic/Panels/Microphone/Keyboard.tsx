@@ -8,7 +8,6 @@ import {
     KeyboardArrowLeft,
     KeyboardArrowRight,
     KeyboardArrowUp,
-    Search,
     Shuffle,
 } from '@mui/icons-material';
 import events from 'GameEvents/GameEvents';
@@ -34,6 +33,7 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 
     return keyboard !== undefined ? (
         <Container data-test="remote-keyboard">
+            {keyboard?.remote?.includes('search') && <RemoteSongSearch onSearchStateChange={onSearchStateChange} />}
             {(isHorizontal || isVertical) && (
                 <ActionsContainer>
                     <ArrowsContainer>
@@ -87,17 +87,6 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
                     <Shuffle /> {keyboard?.shiftR || 'Random Song'}
                 </ActionButton>
             </ActionsContainer>
-            {keyboard?.remote?.includes('search') && (
-                <RemoteSongSearch onSearchStateChange={onSearchStateChange}>
-                    {(props) => (
-                        <ActionsContainer data-test="keyboard-search" style={{ flex: 0 }}>
-                            <ActionButton {...props}>
-                                <Search /> Search
-                            </ActionButton>
-                        </ActionsContainer>
-                    )}
-                </RemoteSongSearch>
-            )}
         </Container>
     ) : null;
 }
@@ -177,8 +166,4 @@ const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
 
 const ActionButton = styled(ArrowButton)<{ disabled?: boolean }>`
     width: 100%;
-    //height: 100%;
-    //white-space: nowrap;
-    //overflow: hidden;
-    //text-overflow: ellipsis;
 `;
