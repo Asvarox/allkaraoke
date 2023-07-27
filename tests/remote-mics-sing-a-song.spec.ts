@@ -72,8 +72,6 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
             await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();
             await expect(page.getByTestId('song-e2e-skip-intro-polish.json')).toBeVisible();
-
-            await remoteMicBluePage.getByTestId('close-search').click();
         });
 
         await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish.json', remoteMicBluePage);

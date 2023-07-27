@@ -12,7 +12,7 @@ function MicCheck({ names }: Props) {
             {PlayersManager.getPlayers().map((player) => (
                 <Indicator data-test={`mic-check-p${player.number}`} key={player.number}>
                     <PlayerMicCheck playerNumber={player.number} />
-                    {names?.[player.number] ?? player.getName()}
+                    <span className="ph-no-capture">{names?.[player.number] ?? player.getName()}</span>
                 </Indicator>
             ))}
         </MicCheckContainer>
