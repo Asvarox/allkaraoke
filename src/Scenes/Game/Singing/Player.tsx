@@ -16,6 +16,7 @@ import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import { FPSCountSetting, InputLagSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
+import usePrevious from 'hooks/usePrevious';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
@@ -140,11 +141,16 @@ function Player(
             openPauseMenu();
         }
     };
+    const previousStatus = usePrevious(currentStatus);
     useEffect(() => {
+        const wasJustPaused = previousStatus !== VideoState.PAUSED && currentStatus === VideoState.PAUSED;
         if (currentStatus === VideoState.PLAYING && pauseMenu) {
             player.current?.pauseVideo();
+        } else if (wasJustPaused && !pauseMenu) {
+            // Someone clicked on the video
+            setPauseMenu(true);
         }
-    }, [pauseMenu, currentStatus]);
+    }, [pauseMenu, currentStatus, previousStatus]);
 
     useKeyboard(
         {
