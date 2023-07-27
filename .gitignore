@@ -120,5 +120,6 @@ scripts/scraped-bpm-data.json
 /test-results/
 /playwright-report/
 /playwright/.cache/
+test-results.json
 
 .eslintcache
