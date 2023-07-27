@@ -17,7 +17,11 @@ import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { keyStrokes } from 'RemoteMic/Network/events';
 import RemoteSongSearch from 'Scenes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
-export default function RemoteMicKeyboard() {
+interface Props {
+    onSearchStateChange?: (isActive: boolean) => void;
+}
+
+export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
     const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
 
     const isHorizontal = keyboard?.horizontal !== undefined || keyboard?.['horizontal-vertical'] !== undefined;
@@ -84,7 +88,7 @@ export default function RemoteMicKeyboard() {
                 </ActionButton>
             </ActionsContainer>
             {keyboard?.remote?.includes('search') && (
-                <RemoteSongSearch>
+                <RemoteSongSearch onSearchStateChange={onSearchStateChange}>
                     {(props) => (
                         <ActionsContainer data-test="keyboard-search" style={{ flex: 0 }}>
                             <ActionButton {...props}>
@@ -173,7 +177,7 @@ const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
 
 const ActionButton = styled(ArrowButton)<{ disabled?: boolean }>`
     width: 100%;
-    height: 100%;
+    //height: 100%;
     //white-space: nowrap;
     //overflow: hidden;
     //text-overflow: ellipsis;
