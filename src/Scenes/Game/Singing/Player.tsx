@@ -80,6 +80,7 @@ function Player(
     const [currentTime, setCurrentTime] = useState(0);
     const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
     const [inputLag] = useSettingValue(InputLagSetting);
+    const [pauseMenu, setPauseMenu] = useState(false);
 
     useEffect(() => {
         GameState.setSong(song);
@@ -122,13 +123,35 @@ function Player(
         [setCurrentStatus, onStatusChange],
     );
 
+    const openPauseMenu = () => {
+        setPauseMenu(true);
+        player.current?.pauseVideo();
+    };
+
+    const closePauseMenu = () => {
+        setPauseMenu(false);
+        player.current?.playVideo();
+    };
+
+    const togglePauseMenu = () => {
+        if (pauseMenu) {
+            closePauseMenu();
+        } else {
+            openPauseMenu();
+        }
+    };
+    useEffect(() => {
+        if (currentStatus === VideoState.PLAYING && pauseMenu) {
+            player.current?.pauseVideo();
+        }
+    }, [pauseMenu, currentStatus]);
+
     useKeyboard(
         {
-            back: () =>
-                currentStatus === VideoState.PAUSED ? player.current?.playVideo() : player.current?.pauseVideo(),
+            back: togglePauseMenu,
         },
-        true,
-        [currentStatus],
+        effectsEnabled && onSongEnd !== undefined,
+        [pauseMenu],
     );
 
     const help = useMemo(
@@ -138,18 +161,13 @@ function Player(
         [],
     );
     useKeyboardHelp(help, effectsEnabled);
-
-    const isPauseMenuVisible = effectsEnabled && currentStatus === VideoState.PAUSED && onSongEnd !== undefined;
-
     return (
         <Container>
-            {isPauseMenuVisible && (
-                <PauseMenu onExit={onSongEnd} onResume={() => player.current?.playVideo()} onRestart={restartSong!} />
-            )}
+            {pauseMenu && <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} />}
             {currentStatus !== VideoState.UNSTARTED && (
                 <Overlay>
                     <GameOverlay
-                        isPauseMenuVisible={isPauseMenuVisible}
+                        isPauseMenuVisible={pauseMenu}
                         effectsEnabled={effectsEnabled}
                         playerChanges={playerChanges}
                         duration={duration}
