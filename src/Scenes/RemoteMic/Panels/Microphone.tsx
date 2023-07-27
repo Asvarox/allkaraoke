@@ -108,8 +108,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
     padding: 1.5rem;
     box-sizing: border-box;
 

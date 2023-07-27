@@ -90,6 +90,7 @@ function RemoteMic({ roomId }: Props) {
                         connectionError={connectionError}
                     />
                 )}
+                <BottomBarFiller />
                 <BottomBar setActiveTab={setActiveTab} active={activeTab} />
             </Container>
         </>
@@ -97,17 +98,23 @@ function RemoteMic({ roomId }: Props) {
 }
 export default RemoteMic;
 
+const BottomBarFiller = styled.div`
+    height: 6rem;
+
+    @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
+        height: 0;
+    }
+`;
+
 const Container = styled.div`
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-    height: 100vh;
-    max-height: 800px;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
 
     @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
         max-width: 960px;
-        flex-wrap: nowrap;
-        flex-direction: row;
     }
 `;
