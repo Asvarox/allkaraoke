@@ -100,6 +100,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
             [propName]: onActive,
             keyboardNavigationChangeFocus: handleNavigation,
             'data-test': name,
+            'data-keyboard-nav-name': name,
             ...(enabled ? { 'data-focused': focused } : {}),
         };
     };
@@ -119,6 +120,16 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
             setCurrentlySelected(defaultSelection || elementList.current[0]);
         }
     });
+
+    useEffect(() => {
+        try {
+            document
+                .querySelector(`[data-keyboard-nav-name="${currentlySelected}"]`)
+                ?.scrollIntoView({ behavior: 'smooth' });
+        } catch (e) {
+            console.error(e);
+        }
+    }, [currentlySelected]);
 
     const focusElement = (name: string) => {
         if (elementList.current.includes(name)) setCurrentlySelected(name);
