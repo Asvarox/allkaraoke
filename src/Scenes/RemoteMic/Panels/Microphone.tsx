@@ -11,7 +11,6 @@ import Ping from 'Scenes/RemoteMic/Panels/Microphone/Ping';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
-import { useState } from 'react';
 import isDev from 'utils/isDev';
 
 interface Props {
@@ -34,7 +33,6 @@ function Microphone({
     connectionStatus,
 }: Props) {
     const permissions = usePermissions();
-    const [searchActive, setSearchActive] = useState(false);
 
     const onConnect = async () => {
         setIsKeepAwakeOn(true);
@@ -64,7 +62,7 @@ function Microphone({
                         <h2>Please allow access to the microphone.</h2>
                     </>
                 }>
-                <Panel collapse={searchActive}>
+                <Panel>
                     <MicPreview isVisible isMicOn={monitoringStarted} isConnected={isConnected} />
                     <Connect
                         roomId={roomId}
@@ -75,7 +73,7 @@ function Microphone({
                     />
                 </Panel>
                 <Panel>
-                    {permissions === 'write' && <RemoteMicKeyboard onSearchStateChange={setSearchActive} />}
+                    {permissions === 'write' && <RemoteMicKeyboard />}
                     {permissions === 'read' && (
                         <NoPermissionsMsg data-test="no-permissions-message">
                             No permission to control the game. Go to in-game <strong>Settings</strong> menu ➔{' '}
@@ -137,14 +135,10 @@ const Container = styled.div`
     }
 `;
 
-const Panel = styled.div<{ collapse?: boolean }>`
+const Panel = styled.div`
     flex: 1;
-    transition: 300ms ease-in-out;
-
-    margin-top: ${(props) => (props.collapse ? '-100%' : '0')};
 
     @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
-        margin-top: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;

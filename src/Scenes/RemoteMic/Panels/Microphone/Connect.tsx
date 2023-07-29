@@ -77,10 +77,10 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
                     autoFocus
                     data-test="player-name-input"
                 />
-                <ConnectButton type="submit" disabled={disabled} data-test="connect-button">
+                <MenuButton type="submit" disabled={disabled} data-test="connect-button">
                     {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
                     {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
-                </ConnectButton>
+                </MenuButton>
                 {(showConnectionTip || connectionError) && (
                     <>
                         {showConnectionTip && <h3>If it doesn't connect</h3>}
@@ -160,9 +160,4 @@ export default Connect;
 const Form = styled.form`
     display: flex;
     flex-direction: column;
-`;
-
-const ConnectButton = styled(MenuButton)`
-    margin-bottom: 0;
-    height: 72px;
 `;
