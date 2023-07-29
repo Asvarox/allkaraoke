@@ -55,6 +55,7 @@ const Container = styled.div`
     font-size: 2.6rem;
     display: flex;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
     height: 100%;
     padding: 1.5rem;
     box-sizing: border-box;

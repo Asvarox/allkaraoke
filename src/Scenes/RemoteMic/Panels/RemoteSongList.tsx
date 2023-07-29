@@ -88,8 +88,9 @@ const Container = styled.div`
 `;
 
 const SongItemContainer = styled.div`
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
+    //justify-content: space-between;
     align-items: center;
     gap: 1rem;
     padding: 1.5rem 1rem;
@@ -119,7 +120,6 @@ const Artist = styled.span`
     font-size: 1.25rem;
     white-space: nowrap;
     overflow: hidden;
-    font-weight: bold;
     text-overflow: ellipsis;
 `;
 const Title = styled.span`
