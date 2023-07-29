@@ -4140,34 +4140,6 @@
     "local": false
   },
   {
-    "title": "Ich bin bereit",
-    "artist": "Disney’s Vaiana (Debbie Van Dooren)",
-    "bpm": 335.68,
-    "bar": 4,
-    "gap": 1446.9208770257392,
-    "video": "ManAg9fy4yo",
-    "year": "2016",
-    "lastUpdate": "2023-07-29T01:00:44.590Z",
-    "language": "German",
-    "videoGap": -11,
-    "realBpm": 84,
-    "previewStart": 84,
-    "previewEnd": 133,
-    "volume": 0.99,
-    "author": "mkdigital",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 22
-      }
-    ],
-    "file": "Disney-s-Vaiana-Debbie-Van-Dooren-Ich-bin-bereit.json",
-    "tracksCount": 1,
-    "search": "disneysvaianadebbievandoorenichbinbereit",
-    "local": false
-  },
-  {
     "title": "Kolorowy Wiatr",
     "artist": "Disney’s Pocahontas (Edyta Górniak)",
     "bpm": 326.7,
@@ -7824,34 +7796,6 @@
     "local": false
   },
   {
-    "title": "Mam tę moc (Kraina lodu)",
-    "artist": "Katarzyna Łaska",
-    "bpm": 273.44,
-    "bar": 4,
-    "gap": 13902.580456407255,
-    "video": "xF26mE6xeFs",
-    "year": "2013",
-    "lastUpdate": "2023-07-29T01:00:44.594Z",
-    "language": "Polish",
-    "videoGap": -1,
-    "realBpm": 137,
-    "previewStart": 115,
-    "previewEnd": 155,
-    "volume": 0.61,
-    "author": "Currymalker",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "file": "Katarzyna-aska-Mam-tę-moc-Kraina-lodu.json",
-    "tracksCount": 1,
-    "search": "katarzynaaskamamtemockrainalodu",
-    "local": false
-  },
-  {
     "title": "Running Up That Hill",
     "artist": "Kate Bush",
     "bpm": 216.54,
@@ -8328,34 +8272,6 @@
     "file": "Krzysztof Mielańczuk-Tabaluga.json",
     "tracksCount": 1,
     "search": "krzysztofmielanczuktabaluga",
-    "local": false
-  },
-  {
-    "title": "Barka",
-    "artist": "Krzysztof Krawczyk",
-    "bpm": 120,
-    "bar": 4,
-    "gap": 39585,
-    "video": "0qzLRlQFFQ4",
-    "year": "1999",
-    "lastUpdate": "2023-07-29T01:00:44.595Z",
-    "edition": "",
-    "genre": "GMD",
-    "language": "Polish",
-    "videoGap": 0,
-    "realBpm": 72,
-    "volume": 1,
-    "author": "",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 8
-      }
-    ],
-    "file": "Krzysztof-Krawczyk-Barka.json",
-    "tracksCount": 1,
-    "search": "krzysztofkrawczykbarka",
     "local": false
   },
   {
@@ -11506,34 +11422,6 @@
     "file": "Myslovitz-Z twarza Marilyn Monroe.json",
     "tracksCount": 1,
     "search": "myslovitzztwarzamarilynmonroe",
-    "local": false
-  },
-  {
-    "title": "Pół kroku stąd (Vaiana)",
-    "artist": "Natalia Nykiel",
-    "bpm": 363.8,
-    "bar": 4,
-    "gap": 15970.445299615174,
-    "video": "De2xsb7hNFY",
-    "year": "2016",
-    "lastUpdate": "2023-07-29T01:00:44.596Z",
-    "language": "Polish",
-    "videoGap": 0,
-    "realBpm": 90,
-    "previewStart": 83,
-    "previewEnd": 135,
-    "volume": 0.82,
-    "author": "MrLudozzerca",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 24
-      }
-    ],
-    "file": "Natalia-Nykiel-P-ł-kroku-stąd-Vaiana.json",
-    "tracksCount": 1,
-    "search": "natalianykielpokrokustadvaiana",
     "local": false
   },
   {
@@ -17552,33 +17440,6 @@
     "file": "Vengaboys-We’re going to Ibiza.json",
     "tracksCount": 1,
     "search": "vengaboysweregoingtoibiza",
-    "local": false
-  },
-  {
-    "title": "Dancing Lasha Tumbai",
-    "artist": "Verka Serduchka",
-    "bpm": 287.96,
-    "bar": 4,
-    "gap": 1410.2792054452007,
-    "video": "RODg5ZlPct4",
-    "year": "2007",
-    "lastUpdate": "2023-07-29T01:00:44.597Z",
-    "genre": "Metal",
-    "language": "English",
-    "videoGap": 5,
-    "realBpm": 144,
-    "volume": 1,
-    "author": "rafallus",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
-    "sourceUrl": "https://usdb.animux.de/?link=detail&id=12352",
-    "tracks": [
-      {
-        "start": 19
-      }
-    ],
-    "file": "Verka-Serduchka-Dancing-Lasha-Tumbai.json",
-    "tracksCount": 1,
-    "search": "verkaserduchkadancinglashatumbai",
     "local": false
   },
   {
