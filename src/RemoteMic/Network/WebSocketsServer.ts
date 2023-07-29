@@ -1,10 +1,10 @@
 import events from 'GameEvents/GameEvents';
 import { WebRTCEvents, WebRTCSongListEvent } from 'RemoteMic/Network/events';
 import sendEvent from 'RemoteMic/Network/sendEvent';
-import { pack, unpack } from 'RemoteMic/Network/utils';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import SongDao from 'Songs/SongDao';
 import { v4 } from 'uuid';
+import { pack, unpack } from 'RemoteMic/Network/utils';
 
 const ROOM_ID_KEY = 'room_id_key';
 
@@ -60,12 +60,12 @@ class SenderWrapper {
     };
 }
 
-export class WebSocketsServer {
+class WebsocketsServer {
     private roomId = window.sessionStorage.getItem(ROOM_ID_KEY)!;
     private connection: WebSocket | null = null;
     private started = false;
 
-    public constructor(private pswd: string) {
+    public constructor() {
         if (!this.roomId) {
             this.roomId = v4();
         }
@@ -80,7 +80,7 @@ export class WebSocketsServer {
         this.connection = new WebSocket(WEBSOCKETS_SERVER);
         this.connection.binaryType = 'arraybuffer';
         this.connection.onopen = () => {
-            this.connection?.send(pack({ t: 'register-room', id: this.roomId, pswd: this.pswd }));
+            this.connection?.send(pack({ t: 'register-room', id: this.roomId }));
 
             this.connection?.addEventListener('message', (message) => {
                 try {
@@ -145,3 +145,5 @@ export class WebSocketsServer {
 
     public getRoomId = () => this.roomId;
 }
+
+export default new WebsocketsServer();
