@@ -10,7 +10,7 @@ import { v4 } from 'uuid';
 
 const ROOM_ID_KEY = 'room_id_key';
 
-export class LegacyP2PServer {
+export class P2PServer {
     private roomId = window.sessionStorage.getItem(ROOM_ID_KEY)!;
     private peer: Peer | null = null;
     private started = false;
