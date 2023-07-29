@@ -47,7 +47,7 @@ const Entry = ({ mic }: { mic: ValuesType<WebRTCRemoteMicListEvent['list']> }) =
                     onModalClose={() => setOpen(false)}
                     header={
                         <>
-                            Change <strong className="ph-no-capture">{mic.name}</strong>:
+                            Change <strong>{mic.name}</strong>:
                         </>
                     }
                 />
@@ -60,9 +60,7 @@ const Entry = ({ mic }: { mic: ValuesType<WebRTCRemoteMicListEvent['list']> }) =
                 size="small">
                 <PlayerNumberCircle number={mic.number} />
                 <RemoteMicId>{mic.id.slice(-4)}</RemoteMicId>
-                <RemoteMicName className="ph-no-capture" isSelf={mic.id === WebRTCClient.getClientId()}>
-                    {mic.name}
-                </RemoteMicName>
+                <RemoteMicName isSelf={mic.id === WebRTCClient.getClientId()}>{mic.name}</RemoteMicName>
             </RemoteMicEntry>
         </Container>
     );

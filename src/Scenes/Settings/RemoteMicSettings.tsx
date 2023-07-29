@@ -69,7 +69,7 @@ function RemoteMicSettings(props: Props) {
                                 <RemoteMicPing>
                                     <DevicePing deviceId={mic.id} />
                                 </RemoteMicPing>
-                                <RemoteMicName className="ph-no-capture">{mic.name}</RemoteMicName>
+                                <RemoteMicName>{mic.name}</RemoteMicName>
                             </EntryLabel>
                         }
                     />

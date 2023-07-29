@@ -16,7 +16,7 @@ export default function SinglePlayer({ player }: Props) {
             <Ping playerNumber={player.number} />
             <PlayerStatus status={status} />
             {status !== 'unavailable' && <PlayerMicCheck playerNumber={player.number} />}
-            <PlayerName className="ph-no-capture">{player.getName()}</PlayerName>
+            <PlayerName>{player.getName()}</PlayerName>
         </Indicator>
     );
 }
