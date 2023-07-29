@@ -2,7 +2,6 @@ import events from 'GameEvents/GameEvents';
 import { WebRTCEvents, WebRTCSongListEvent } from 'RemoteMic/Network/events';
 import sendEvent from 'RemoteMic/Network/sendEvent';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongDao';
 import { Peer } from 'peerjs';
 import peerJSOptions from 'utils/peerJSOptions';
@@ -72,11 +71,6 @@ export class P2PServer {
                         events.remoteSongSearch.dispatch(data.search);
                     } else if (type === 'request-mic-select') {
                         events.playerChangeRequested.dispatch(data.id, data.playerNumber);
-                    } else if (type === 'get-input-lag-request') {
-                        conn.send({ t: 'get-input-lag-response', value: InputLagSetting.get() });
-                    } else if (type === 'set-input-lag-request') {
-                        InputLagSetting.set(data.value);
-                        conn.send({ t: 'get-input-lag-response', value: InputLagSetting.get() });
                     }
                 }
             });

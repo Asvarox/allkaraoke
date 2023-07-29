@@ -93,20 +93,6 @@ export interface WebRTCSearchSongEvent {
     search: string;
 }
 
-export interface WebRTCSetInputLagRequestEvent {
-    t: 'set-input-lag-request';
-    value: number;
-}
-
-export interface WebRTCGetInputLagRequestEvent {
-    t: 'get-input-lag-request';
-}
-
-export interface WebRTCGetInputLagResponseEvent {
-    t: 'get-input-lag-response';
-    value: number;
-}
-
 export interface WebRTCSubscribeEvent {
     t: 'subscribe-event';
     channel: 'remote-mics';
@@ -141,7 +127,4 @@ export type WebRTCEvents =
     | WebRTCRequestSongListEvent
     | WebRTCSongListEvent
     | WebRTCSearchSongEvent
-    | WebRTCSetInputLagRequestEvent
-    | WebRTCGetInputLagRequestEvent
-    | WebRTCGetInputLagResponseEvent
     | WebRTCNewFrequencyEvent;

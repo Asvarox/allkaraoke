@@ -1,7 +1,6 @@
 import events from 'GameEvents/GameEvents';
 import {
     WebRTCEvents,
-    WebRTCGetInputLagResponseEvent,
     WebRTCRequestMicSelectEvent,
     WebRTCSongListEvent,
     WebRTCSubscribeEvent,
@@ -348,15 +347,6 @@ export class TheClient {
     };
 
     public getSongList = () => this.sendRequest<WebRTCSongListEvent>({ t: 'request-songlist' }, 'songlist');
-
-    public getInputLag = () =>
-        this.sendRequest<WebRTCGetInputLagResponseEvent>({ t: 'get-input-lag-request' }, 'get-input-lag-response');
-
-    public setInputLag = (value: number) =>
-        this.sendRequest<WebRTCGetInputLagResponseEvent>(
-            { t: 'set-input-lag-request', value },
-            'get-input-lag-response',
-        );
 
     private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
         if (!this.transport.isConnected()) {
