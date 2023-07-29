@@ -124,8 +124,6 @@ function Player(
         [setCurrentStatus, onStatusChange],
     );
 
-    const isPauseMenuAvailable = effectsEnabled && onSongEnd !== undefined;
-
     const openPauseMenu = () => {
         setPauseMenu(true);
         player.current?.pauseVideo();
@@ -145,8 +143,6 @@ function Player(
     };
     const previousStatus = usePrevious(currentStatus);
     useEffect(() => {
-        if (!isPauseMenuAvailable) return;
-
         const wasJustPaused = previousStatus !== VideoState.PAUSED && currentStatus === VideoState.PAUSED;
         if (currentStatus === VideoState.PLAYING && pauseMenu) {
             player.current?.pauseVideo();
@@ -154,13 +150,13 @@ function Player(
             // Someone clicked on the video
             setPauseMenu(true);
         }
-    }, [pauseMenu, currentStatus, previousStatus, isPauseMenuAvailable]);
+    }, [pauseMenu, currentStatus, previousStatus]);
 
     useKeyboard(
         {
             back: togglePauseMenu,
         },
-        isPauseMenuAvailable,
+        effectsEnabled && onSongEnd !== undefined,
         [pauseMenu],
     );
 

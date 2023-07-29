@@ -34,7 +34,7 @@ runs:
       with:
         timeout_minutes: 20
         max_attempts: 2
-        command: yarn ${{ inputs.packagescript }} --project ${{ inputs.project }} `yarn ts-node scripts/runFailedPlaywrightTests.ts || ""`
+        command: yarn ${{ inputs.packagescript }} --project ${{ inputs.project }}
         shell: bash
     - uses: actions/upload-artifact@v3
       if: failure()
