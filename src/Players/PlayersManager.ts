@@ -126,11 +126,9 @@ class PlayersManager {
                     // and could also be simplified to only care about remote mic.
                     // Found when for some reason regular mic was assigned to a player without an id. getInputForPlayerSelected
                     // returned null and the readiness was never requested for remote mic connected for the other player.
-                    const allInputsConnected = !this.getPlayers()
-                        .filter((player) => player.input.source === 'Remote Microphone')
-                        .some(
-                            (player) => inputSourceListManager.getInputForPlayerSelected(player.input, false) === null,
-                        );
+                    const allInputsConnected = !this.getPlayers().some(
+                        (player) => inputSourceListManager.getInputForPlayerSelected(player.input, false) === null,
+                    );
 
                     if (allInputsConnected) {
                         await Promise.all(

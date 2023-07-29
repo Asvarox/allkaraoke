@@ -9,7 +9,6 @@ import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { SongStats } from 'Songs/stats/common';
 import { PeerErrorType, SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
-import { transportErrorReason } from 'RemoteMic/Network/TheClient';
 
 export class GameEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];
@@ -71,10 +70,7 @@ export const events = {
     inputListChanged: new GameEvent<(initial: boolean) => void>('inputListChanged'),
 
     karaokeConnectionStatusChange: new GameEvent<
-        (
-            status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error',
-            e?: transportErrorReason,
-        ) => void
+        (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error', e?: PeerErrorType) => void
     >('karaokeConnectionStatusChange'),
     remoteMicPlayerSet: new GameEvent<(playerNumber: number | null) => void>('remoteMicPlayerSet'),
     remoteMicMonitoringStarted: new GameEvent('remoteMicMonitoringStarted'),
