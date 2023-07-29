@@ -1,15 +1,16 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
-import { MIC_ID_KEY, transportErrorReason } from 'RemoteMic/Network/TheClient';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import { MIC_ID_KEY } from 'RemoteMic/Network/WebSocketsClient';
 import ManagePlayers from 'Scenes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
+import { PeerErrorType } from 'interfaces';
 
 interface Props {
     roomId: string;
     connectionStatus: ConnectionStatuses;
-    connectionError?: transportErrorReason;
+    connectionError?: PeerErrorType;
     isKeepAwakeOn: boolean;
     setIsKeepAwakeOn: (keepAwake: boolean) => void;
     monitoringStarted: boolean;

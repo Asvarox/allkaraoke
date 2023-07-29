@@ -3,10 +3,10 @@ import { QrCode2, Warning, Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import { Input } from 'Elements/Input';
 import { MenuButton } from 'Elements/Menu';
-import { transportErrorReason } from 'RemoteMic/Network/TheClient';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import { MAX_NAME_LENGTH } from 'consts';
+import { PeerErrorType } from 'interfaces';
 import { FormEventHandler, useEffect, useRef, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
 
@@ -15,7 +15,7 @@ interface Props {
     isVisible: boolean;
     connectionStatus: ConnectionStatuses;
     onConnect: (silent: boolean) => void;
-    connectionError?: transportErrorReason;
+    connectionError?: PeerErrorType;
 }
 
 const usePersistedName = createPersistedState<string>('remote_mic_name');
