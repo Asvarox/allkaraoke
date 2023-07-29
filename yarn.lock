@@ -2361,48 +2361,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@msgpackr-extract/msgpackr-extract-darwin-arm64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-darwin-arm64@npm:3.0.2"
-  conditions: os=darwin & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-darwin-x64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-darwin-x64@npm:3.0.2"
-  conditions: os=darwin & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-linux-arm64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-linux-arm64@npm:3.0.2"
-  conditions: os=linux & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-linux-arm@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-linux-arm@npm:3.0.2"
-  conditions: os=linux & cpu=arm
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-linux-x64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-linux-x64@npm:3.0.2"
-  conditions: os=linux & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-win32-x64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-win32-x64@npm:3.0.2"
-  conditions: os=win32 & cpu=x64
-  languageName: node
-  linkType: hard
-
 "@mui/base@npm:5.0.0-beta.4":
   version: 5.0.0-beta.4
   resolution: "@mui/base@npm:5.0.0-beta.4"
@@ -10912,49 +10870,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msgpackr-extract@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "msgpackr-extract@npm:3.0.2"
-  dependencies:
-    "@msgpackr-extract/msgpackr-extract-darwin-arm64": 3.0.2
-    "@msgpackr-extract/msgpackr-extract-darwin-x64": 3.0.2
-    "@msgpackr-extract/msgpackr-extract-linux-arm": 3.0.2
-    "@msgpackr-extract/msgpackr-extract-linux-arm64": 3.0.2
-    "@msgpackr-extract/msgpackr-extract-linux-x64": 3.0.2
-    "@msgpackr-extract/msgpackr-extract-win32-x64": 3.0.2
-    node-gyp: latest
-    node-gyp-build-optional-packages: 5.0.7
-  dependenciesMeta:
-    "@msgpackr-extract/msgpackr-extract-darwin-arm64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-darwin-x64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-linux-arm":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-linux-arm64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-linux-x64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-win32-x64":
-      optional: true
-  bin:
-    download-msgpackr-prebuilds: bin/download-prebuilds.js
-  checksum: 5adb809b965bac41c310e60373d54c955fe78e4d134ab036d0f9ee5b322cec0a739878d395e17c1ac82d840705896b2dafae6a8cc04ad34c14d2de4b06b58330
-  languageName: node
-  linkType: hard
-
-"msgpackr@npm:^1.9.5":
-  version: 1.9.5
-  resolution: "msgpackr@npm:1.9.5"
-  dependencies:
-    msgpackr-extract: ^3.0.2
-  dependenciesMeta:
-    msgpackr-extract:
-      optional: true
-  checksum: 4a9ebbdd61b985aeb47072f65b242e21a65fba90372dc45927d1a9aba2d0f7fbdb84fbe7c2ea224444c58040e2a81f6778582c16ecaf883a471613c3e9aa4bc3
-  languageName: node
-  linkType: hard
-
 "multimatch@npm:^4.0.0":
   version: 4.0.0
   resolution: "multimatch@npm:4.0.0"
@@ -11071,17 +10986,6 @@ __metadata:
     encoding:
       optional: true
   checksum: acb04f9ce7224965b2b59e71b33c639794d8991efd73855b0b250921382b38331ffc9d61bce502571f6cc6e11a8905ca9b1b6d4aeb586ab093e2756a1fd190d0
-  languageName: node
-  linkType: hard
-
-"node-gyp-build-optional-packages@npm:5.0.7":
-  version: 5.0.7
-  resolution: "node-gyp-build-optional-packages@npm:5.0.7"
-  bin:
-    node-gyp-build-optional-packages: bin.js
-    node-gyp-build-optional-packages-optional: optional.js
-    node-gyp-build-optional-packages-test: build-test.js
-  checksum: bcb4537af15bcb3811914ea0db8f69284ca10db1cc7543a167a4c41ae4b9b5044b133f789fdadad0b7adc6931f6ae7def3c75b0bc7b05836881aae52400163e6
   languageName: node
   linkType: hard
 
@@ -11372,7 +11276,6 @@ __metadata:
     lodash-es: ^4.17.21
     lottie-react: ^2.4.0
     material-react-table: ^1.12.0
-    msgpackr: ^1.9.5
     musicbrainz-api: ^0.8.0
     peer: ^0.6.1
     peerjs: ^2.0.0-beta.3

@@ -7,7 +7,7 @@ import {
     WebRTCUnsubscribeEvent,
     keyStrokes,
 } from 'RemoteMic/Network/events';
-import { getPingTime, pack, unpack } from 'RemoteMic/Network/utils';
+import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import { throttle } from 'lodash-es';
 import storage from 'utils/storage';
@@ -65,10 +65,9 @@ class WebSocketsClient {
         if (this.clientId === null) this.setClientId(v4());
 
         this.connection = new WebSocket(WEBSOCKETS_SERVER);
-        this.connection.binaryType = 'arraybuffer';
 
         this.connection.onopen = () => {
-            this.connection?.send(pack({ t: 'register-player', id: this.clientId, roomId: this.roomId }));
+            this.connection?.send(JSON.stringify({ t: 'register-player', id: this.clientId, roomId: this.roomId }));
 
             this.connectToServer(roomId, name, silent);
         };
@@ -125,7 +124,7 @@ class WebSocketsClient {
 
         this.connection?.addEventListener('message', (message) => {
             try {
-                const payload: WebsocketMessage = unpack(message.data);
+                const payload: WebsocketMessage = JSON.parse(message.data);
                 // @ts-ignore
                 if (!['ping', 'pong'].includes(payload?.payload?.t)) console.log('received', payload);
 
@@ -216,7 +215,9 @@ class WebSocketsClient {
         if (!this.isConnected()) {
             console.debug('not connected, skipping', type, payload);
         } else {
-            this.connection?.send(pack({ t: 'forward', recipients: [this.roomId], payload: { t: type, ...payload } }));
+            this.connection?.send(
+                JSON.stringify({ t: 'forward', recipients: [this.roomId], payload: { t: type, ...payload } }),
+            );
         }
     };
 
@@ -231,7 +232,7 @@ class WebSocketsClient {
             }, 10_000);
 
             const callback = (message: WebSocketEventMap['message']) => {
-                const { payload: data }: ForwardedMessage = unpack(message.data);
+                const { payload: data }: ForwardedMessage = JSON.parse(message.data);
 
                 if (data.t === response) {
                     clearTimeout(timeout);
