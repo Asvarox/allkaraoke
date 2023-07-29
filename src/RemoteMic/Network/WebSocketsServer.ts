@@ -7,8 +7,7 @@ import { v4 } from 'uuid';
 
 const ROOM_ID_KEY = 'room_id_key';
 
-// export const WEBSOCKETS_SERVER = 'wss://allkaraoke-posthog.fly.dev';
-export const WEBSOCKETS_SERVER = 'ws://localhost:8080';
+export const WEBSOCKETS_SERVER = 'wss://allkaraoke-posthog.fly.dev';
 
 export interface ForwardedMessage {
     t: 'forward';

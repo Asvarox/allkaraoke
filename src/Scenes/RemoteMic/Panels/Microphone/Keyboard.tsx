@@ -173,8 +173,4 @@ const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
 
 const ActionButton = styled(ArrowButton)<{ disabled?: boolean }>`
     width: 100%;
-    height: 100%;
-    //white-space: nowrap;
-    //overflow: hidden;
-    //text-overflow: ellipsis;
 `;

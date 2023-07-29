@@ -20,7 +20,6 @@ class RemoteMicManager extends Listener<[string, WebRTCSetPermissionsEvent['leve
     ) ?? { 'remote-mics': [] };
 
     public addRemoteMic = (id: string, name: string, connection: Peer.DataConnection, silent: boolean) => {
-        this.remoteMics = this.remoteMics.filter((remoteMic) => remoteMic.id !== id);
         this.remoteMics = [...this.remoteMics, new RemoteMic(id, name, connection)];
         this.setPermission(id, this.getPermission(id));
 
