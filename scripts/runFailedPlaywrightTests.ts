@@ -8,4 +8,4 @@ const testsToRerun = testResults.suites
     .filter((spec) => !spec.ok)
     .map((spec) => `${path.join(testResults.config.rootDir, spec.file)}:${spec.line}`);
 
-console.log(testsToRerun.join(' ') + (testsToRerun.length ? ' --trace=on' : ''));
+console.log(testsToRerun.join(' '));
