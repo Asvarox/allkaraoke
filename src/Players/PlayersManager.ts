@@ -118,38 +118,35 @@ class PlayersManager {
     };
 
     public requestReadiness = async () => {
-        if (!this.requestingPromise) {
-            this.requestingPromise = new Promise((resolve) => {
-                const request = async () => {
-                    // todo fix this -- if there's an input that is not connected, no input will be able to
-                    // confirm readiness. It should request what it can and watch for input list changes
-                    // and could also be simplified to only care about remote mic.
-                    // Found when for some reason regular mic was assigned to a player without an id. getInputForPlayerSelected
-                    // returned null and the readiness was never requested for remote mic connected for the other player.
-                    const allInputsConnected = !this.getPlayers().some(
-                        (player) => inputSourceListManager.getInputForPlayerSelected(player.input, false) === null,
+        console.log('requestReadiness');
+        // if (!this.requestingPromise) {
+        this.requestingPromise = new Promise((resolve) => {
+            const request = async () => {
+                const allInputsConnected = !this.getPlayers().some(
+                    (player) => inputSourceListManager.getInputForPlayerSelected(player.input, false) === null,
+                );
+                console.log(this.getPlayers());
+
+                if (allInputsConnected) {
+                    await Promise.all(
+                        this.getPlayers().map((player) =>
+                            InputManager.sourceNameToInput(player.input.source)
+                                .requestReadiness(player.input.deviceId)
+                                .then(() => {
+                                    events.readinessConfirmed.dispatch(player.input.deviceId!);
+                                }),
+                        ),
                     );
+                    events.inputListChanged.unsubscribe(request);
+                    this.requestingPromise = null;
+                    resolve(true);
+                }
+            };
 
-                    if (allInputsConnected) {
-                        await Promise.all(
-                            this.getPlayers().map((player) =>
-                                InputManager.sourceNameToInput(player.input.source)
-                                    .requestReadiness(player.input.deviceId)
-                                    .then(() => {
-                                        events.readinessConfirmed.dispatch(player.input.deviceId!);
-                                    }),
-                            ),
-                        );
-                        events.inputListChanged.unsubscribe(request);
-                        this.requestingPromise = null;
-                        resolve(true);
-                    }
-                };
-
-                events.inputListChanged.subscribe(request);
-                request();
-            });
-        }
+            events.inputListChanged.subscribe(request);
+            request();
+        });
+        // }
 
         return this.requestingPromise;
     };

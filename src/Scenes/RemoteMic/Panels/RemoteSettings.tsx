@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
-import { MIC_ID_KEY } from 'RemoteMic/Network/WebSocketsClient';
+import WebRTCClient, { MIC_ID_KEY } from 'RemoteMic/Network/WebRTCClient';
 import ManagePlayers from 'Scenes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
