@@ -131,7 +131,7 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
     width: ${(props) => props.width}px;
     height: ${(props) => props.height}px;
     position: absolute;
-    z-index: ${(props) => (props.expanded ? 201 : 3)};
+    z-index: 3;
     overflow: hidden;
     visibility: ${(props) => (props.expanded || props.showVideo ? 'visible' : 'hidden')};
 
@@ -194,7 +194,7 @@ const Backdrop = styled.div`
     background: rgba(0, 0, 0, 0.8);
     width: 100vw;
     height: 100vh;
-    z-index: 201;
+    z-index: 2;
 `;
 
 const Video = styled.div<{ show: boolean; expanded: boolean; height: number }>`
