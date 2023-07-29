@@ -634,34 +634,6 @@
     "local": false
   },
   {
-    "title": "A quiÈn le importa",
-    "artist": "Alaska y Dinarama",
-    "bpm": 261.5,
-    "bar": 4,
-    "gap": 16775.85659655832,
-    "video": "2uQhdDtdXg0",
-    "year": "1986",
-    "lastUpdate": "2023-07-27T19:14:16.133Z",
-    "edition": "SingStar Esp.",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 130,
-    "volume": 1,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Alaska%20y%20Dinarama&cancion=A%20qui%C3%A9n%20le%20importa",
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "file": "Alaska y Dinarama-A qui-n le importa.json",
-    "tracksCount": 1,
-    "search": "alaskaydinaramaaquienleimporta",
-    "local": false
-  },
-  {
     "title": "Amiga mÌa",
     "artist": "Alejandro Sanz",
     "bpm": 236,
@@ -713,34 +685,6 @@
     "file": "Alejandro Sanz-Coraz-n partÌo.json",
     "tracksCount": 1,
     "search": "alejandrosanzcorazunpartio",
-    "local": false
-  },
-  {
-    "title": "Duele el amor",
-    "artist": "Aleks Syntek y Ana Torroja",
-    "bpm": 260,
-    "bar": 4,
-    "gap": -454.76923076923094,
-    "video": "VuDc8HQ3Rbg",
-    "year": "2004",
-    "lastUpdate": "2023-07-27T19:14:16.136Z",
-    "edition": "SingStar Latino",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 130,
-    "volume": 1,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aleks%20Syntek%20y%20Ana%20Torroja&cancion=Duele%20el%20amor",
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "file": "Aleks Syntek y Ana Torroja-Duele el amor.json",
-    "tracksCount": 1,
-    "search": "alekssyntekyanatorrojadueleelamor",
     "local": false
   },
   {
@@ -3303,34 +3247,6 @@
     "local": false
   },
   {
-    "title": "Nada fue un error",
-    "artist": "Coti con Paulina Rubio y Julieta Venegas",
-    "bpm": 277.04,
-    "bar": 4,
-    "gap": 13525.41149292521,
-    "video": "udBLU0Y_G2s",
-    "year": "2005",
-    "lastUpdate": "2023-07-27T19:14:16.137Z",
-    "language": "Spanish",
-    "videoGap": -4,
-    "realBpm": 139,
-    "previewStart": 84,
-    "previewEnd": 114,
-    "volume": 0.65,
-    "author": "Pantero",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coti%20con%20Paulina%20Rubio%20y%20Julieta%20Venegas&cancion=Nada%20fue%20un%20error",
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "file": "Coti con Paulina Rubio y Julieta Venegas-Nada fue un error.json",
-    "tracksCount": 1,
-    "search": "coticonpaulinarubioyjulietavenegasnadafueunerror",
-    "local": false
-  },
-  {
     "title": "Hamma!",
     "artist": "Culcha Candela",
     "bpm": 340,
@@ -4934,34 +4850,6 @@
     "file": "Enrique Iglesias y Juan Luis Guerra-Cuando me enamoro.json",
     "tracksCount": 1,
     "search": "enriqueiglesiasyjuanluisguerracuandomeenamoro",
-    "local": false
-  },
-  {
-    "title": "Bailando",
-    "artist": "Enrique Iglesias, Descemer Bueno y Gente de Zona",
-    "bpm": 364.04,
-    "bar": 4,
-    "gap": 20905.097681573454,
-    "video": "NUsoVlDFqZg",
-    "year": "2014",
-    "lastUpdate": "2023-07-27T19:14:16.138Z",
-    "edition": "UltraStar canciones del verano",
-    "genre": "Reggaeton",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 91,
-    "volume": 0.6,
-    "author": "Volodia",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias%2C%20Descemer%20Bueno%20y%20Gente%20de%20Zona&cancion=Bailando",
-    "tracks": [
-      {
-        "start": 24
-      }
-    ],
-    "file": "Enrique Iglesias- Descemer Bueno y Gente de Zona-Bailando.json",
-    "tracksCount": 1,
-    "search": "enriqueiglesiasdescemerbuenoygentedezonabailando",
     "local": false
   },
   {
@@ -6962,33 +6850,6 @@
     "local": false
   },
   {
-    "title": "Peaches",
-    "artist": "Jack Black",
-    "bpm": 370,
-    "bar": 4,
-    "gap": 17277.486486486487,
-    "video": "VAiHHUMUp-4",
-    "year": "2023",
-    "lastUpdate": "2023-07-27T19:14:16.139Z",
-    "genre": "Comedy",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 93,
-    "volume": 0.6,
-    "author": "aveican",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=aveican",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Jack%20Black&cancion=Peaches",
-    "tracks": [
-      {
-        "start": 25
-      }
-    ],
-    "file": "Jack Black-Peaches.json",
-    "tracksCount": 1,
-    "search": "jackblackpeaches",
-    "local": false
-  },
-  {
     "title": "You're Beautiful",
     "artist": "James Blunt",
     "bpm": 340,
@@ -7143,33 +7004,6 @@
     "file": "Jennifer Lopez & Pitbull-On The Floor.json",
     "tracksCount": 1,
     "search": "jenniferlopezpitbullonthefloor",
-    "local": false
-  },
-  {
-    "title": "°Corre!",
-    "artist": "Jesse & Joy",
-    "bpm": 304,
-    "bar": 4,
-    "gap": 44448.15789473684,
-    "video": "P2hM9CLAMu4",
-    "year": "2011",
-    "lastUpdate": "2023-07-27T19:14:16.139Z",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 152,
-    "volume": 0.85,
-    "author": "vicktoben",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Jesse%20%26%20Joy&cancion=%C2%A1Corre!",
-    "tracks": [
-      {
-        "start": 20
-      }
-    ],
-    "file": "Jesse - Joy-°Corre!.json",
-    "tracksCount": 1,
-    "search": "jessejoycorre",
     "local": false
   },
   {
@@ -7413,34 +7247,6 @@
     "file": "Juanes-La camisa negra.json",
     "tracksCount": 1,
     "search": "juaneslacamisanegra",
-    "local": false
-  },
-  {
-    "title": "LimÛn Y Sal",
-    "artist": "Julieta Venegas",
-    "bpm": 222,
-    "bar": 4,
-    "gap": 6350.486486486487,
-    "video": "tIpzfs5tBJU",
-    "year": "2006",
-    "lastUpdate": "2023-07-27T19:14:16.140Z",
-    "edition": "SingStar Latino",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 111,
-    "volume": 0.6,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Julieta%20Venegas&cancion=Lim%C3%B3n%20Y%20Sal",
-    "tracks": [
-      {
-        "start": 15
-      }
-    ],
-    "file": "Julieta Venegas-Lim-n Y Sal.json",
-    "tracksCount": 1,
-    "search": "julietavenegaslimunysal",
     "local": false
   },
   {
@@ -8249,61 +8055,6 @@
     "file": "La Oreja De Van Gogh-20 De Enero.json",
     "tracksCount": 1,
     "search": "laorejadevangogh20deenero",
-    "local": false
-  },
-  {
-    "title": "CuÈntame al oÌdo",
-    "artist": "La Oreja de Van Gogh",
-    "bpm": 266.08,
-    "bar": 4,
-    "gap": 6315.267588695129,
-    "video": "YqecOmezgSw",
-    "year": "1998",
-    "lastUpdate": "2023-07-27T19:14:16.141Z",
-    "genre": "Pop Nacional",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 133,
-    "volume": 0.6,
-    "author": "gilrael",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Cu%C3%A9ntame%20al%20o%C3%ADdo",
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "file": "La Oreja de Van Gogh-Cu-ntame al oÌdo.json",
-    "tracksCount": 1,
-    "search": "laorejadevangoghcuentamealoido",
-    "local": false
-  },
-  {
-    "title": "Rosas",
-    "artist": "La Oreja de Van Gogh",
-    "bpm": 214,
-    "bar": 4,
-    "gap": 10833.691588785046,
-    "video": "nYnLVWXmRm8",
-    "year": "2003",
-    "lastUpdate": "2023-07-27T19:14:16.142Z",
-    "edition": "SingStar Party",
-    "genre": "Rock",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 107,
-    "volume": 0.6,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Rosas",
-    "tracks": [
-      {
-        "start": 14
-      }
-    ],
-    "file": "La Oreja de Van Gogh-Rosas.json",
-    "tracksCount": 1,
-    "search": "laorejadevangoghrosas",
     "local": false
   },
   {
@@ -9179,35 +8930,6 @@
     "local": false
   },
   {
-    "title": "Tattoo (En vivo)",
-    "artist": "Loreen",
-    "bpm": 300,
-    "bar": 4,
-    "gap": 28780,
-    "video": "BE2Fj0W4jP4",
-    "year": "2023",
-    "lastUpdate": "2023-07-27T19:14:16.143Z",
-    "genre": "Pop",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 150,
-    "previewStart": 66,
-    "previewEnd": 96,
-    "volume": 1,
-    "author": "vicktoben",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Loreen&cancion=Tattoo%20(En%20vivo)",
-    "tracks": [
-      {
-        "start": 20
-      }
-    ],
-    "file": "Loreen-Tattoo -En vivo).json",
-    "tracksCount": 1,
-    "search": "loreentattooenvivo",
-    "local": false
-  },
-  {
     "title": "Danza kuduro",
     "artist": "Lucenzo feat. Don Omar",
     "bpm": 260,
@@ -9653,33 +9375,6 @@
     "file": "Majka Jeżowska-A ja wolę moją mamę.json",
     "tracksCount": 1,
     "search": "majkajezowskaajawolemojamame",
-    "local": false
-  },
-  {
-    "title": "Clavado en un bar",
-    "artist": "Man·",
-    "bpm": 296.4,
-    "bar": 4,
-    "gap": -146.68016194331994,
-    "video": "fBrX8ym3dBM",
-    "year": "1997",
-    "lastUpdate": "2023-07-27T19:14:16.144Z",
-    "genre": "90's EspaÒol",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 148,
-    "volume": 0.8,
-    "author": "Pantero",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Man%C3%A1&cancion=Clavado%20en%20un%20bar",
-    "tracks": [
-      {
-        "start": 167
-      }
-    ],
-    "file": "Man--Clavado en un bar.json",
-    "tracksCount": 1,
-    "search": "manclavadoenunbar",
     "local": false
   },
   {
@@ -10361,34 +10056,6 @@
     "file": "Michael-Jackson-Smooth-Criminal-Single-Version.json",
     "tracksCount": 1,
     "search": "michaeljacksonsmoothcriminalsingleversion",
-    "local": false
-  },
-  {
-    "title": "Amante Bandido",
-    "artist": "Miguel Bosé",
-    "bpm": 262.8,
-    "bar": 4,
-    "gap": 25318.602739726026,
-    "video": "HwQM8XM5GKQ",
-    "year": "2003",
-    "lastUpdate": "2023-07-27T19:14:16.144Z",
-    "edition": "SingStar Party",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 130,
-    "volume": 0.7,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "file": "Miguel Bos--Amante Bandido.json",
-    "tracksCount": 1,
-    "search": "miguelboseamantebandido",
     "local": false
   },
   {
@@ -11866,33 +11533,6 @@
     "local": false
   },
   {
-    "title": "Solamente t˙",
-    "artist": "Pablo Albor·n",
-    "bpm": 280,
-    "bar": 4,
-    "gap": 23552.14285714286,
-    "video": "F0rwOsAteXM",
-    "year": "2010",
-    "lastUpdate": "2023-07-27T19:14:16.145Z",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 140,
-    "volume": 0.8,
-    "author": "Klafhor",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pablo%20Albor%C3%A1n&cancion=Solamente%20t%C3%BA",
-    "tracks": [
-      {
-        "start": 19
-      }
-    ],
-    "file": "Pablo Albor-n-Solamente t˙.json",
-    "tracksCount": 1,
-    "search": "pabloalbornsolamentet",
-    "local": false
-  },
-  {
     "title": "Say Say Say",
     "artist": "Paul McCartney & Michael Jackson",
     "bpm": 235,
@@ -11920,34 +11560,6 @@
     "file": "Paul-McCartney-Michael-Jackson-Say-Say-Say-DUET.json",
     "tracksCount": 2,
     "search": "paulmccartneymichaeljacksonsaysaysay",
-    "local": false
-  },
-  {
-    "title": "Y yo sigo aquÌ",
-    "artist": "Paulina Rubio",
-    "bpm": 340,
-    "bar": 4,
-    "gap": 28099.29411764706,
-    "video": "dfNWfnzUl4U",
-    "year": "2000",
-    "lastUpdate": "2023-07-27T19:14:16.146Z",
-    "edition": "SingStar Latino",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 126,
-    "volume": 0.65,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Paulina%20Rubio&cancion=Y%20yo%20sigo%20aqu%C3%AD",
-    "tracks": [
-      {
-        "start": 23
-      }
-    ],
-    "file": "Paulina Rubio-Y yo sigo aqu-.json",
-    "tracksCount": 1,
-    "search": "paulinarubioyyosigoaqui",
     "local": false
   },
   {
@@ -14179,33 +13791,6 @@
     "local": false
   },
   {
-    "title": "Gitana",
-    "artist": "Shakira",
-    "bpm": 186,
-    "bar": 4,
-    "gap": 21320.25806451613,
-    "video": "QL8-8badzks",
-    "year": "2010",
-    "lastUpdate": "2023-07-27T19:14:16.147Z",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 93,
-    "volume": 0.65,
-    "author": "zXz",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=zxz",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Gitana",
-    "tracks": [
-      {
-        "start": 12
-      }
-    ],
-    "file": "Shakira-Gitana.json",
-    "tracksCount": 1,
-    "search": "shakiragitana",
-    "local": false
-  },
-  {
     "title": "Loba",
     "artist": "Shakira",
     "bpm": 488,
@@ -14842,35 +14427,6 @@
     "file": "Survivor-Eye Of The Tiger.json",
     "tracksCount": 1,
     "search": "survivoreyeofthetiger",
-    "local": false
-  },
-  {
-    "title": "Co z nami bedzie?",
-    "artist": "Sylwia Grzeszczak & Liber",
-    "bpm": 320,
-    "bar": 4,
-    "gap": 4121.625,
-    "video": "fgpRTeKGl20",
-    "year": "2008",
-    "lastUpdate": "2023-07-27T19:14:16.148Z",
-    "edition": "SS Polskie Hity",
-    "language": "Polish",
-    "videoGap": 0,
-    "realBpm": 80,
-    "previewStart": 83,
-    "previewEnd": 113,
-    "volume": 0.7,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Sylwia%20Grzeszczak%20%26%20Liber&cancion=Co%20z%20nami%20bedzie%3F",
-    "tracks": [
-      {
-        "start": 21
-      }
-    ],
-    "file": "Sylwia Grzeszczak - Liber-Co z nami bedzie_.json",
-    "tracksCount": 1,
-    "search": "sylwiagrzeszczaklibercoznamibedzie",
     "local": false
   },
   {
