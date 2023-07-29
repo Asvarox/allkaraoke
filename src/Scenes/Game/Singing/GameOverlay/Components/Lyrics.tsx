@@ -228,7 +228,8 @@ const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
 
     color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 
-    font-family: 'Comic Sans MS', 'Comic Sans';
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
     z-index: 10;
 `;
 
