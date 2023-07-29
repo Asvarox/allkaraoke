@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
 import { MIC_ID_KEY, transportErrorReason } from 'RemoteMic/Network/TheClient';
 import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteInputLag from 'Scenes/RemoteMic/Panels/RemoteSettings/InputLag';
 import ManagePlayers from 'Scenes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
@@ -46,6 +47,7 @@ function RemoteSettings({
             <h5>Removes all persisted microphone data.</h5>
             <hr />
             {permissions === 'write' && <ManagePlayers />}
+            {permissions === 'write' && <RemoteInputLag />}
         </Container>
     );
 }

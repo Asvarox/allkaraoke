@@ -2,6 +2,7 @@ import events from 'GameEvents/GameEvents';
 import { WebRTCEvents } from 'RemoteMic/Network/events';
 import { pack, unpack } from 'RemoteMic/Network/utils';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
+import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongDao';
 import Listener from 'utils/Listener';
 import { v4 } from 'uuid';
@@ -166,6 +167,11 @@ export class TheServer {
                             events.remoteSongSearch.dispatch(event.search);
                         } else if (type === 'request-mic-select') {
                             events.playerChangeRequested.dispatch(event.id, event.playerNumber);
+                        } else if (type === 'get-input-lag-request') {
+                            sender.send({ t: 'get-input-lag-response', value: InputLagSetting.get() });
+                        } else if (type === 'set-input-lag-request') {
+                            InputLagSetting.set(event.value);
+                            sender.send({ t: 'get-input-lag-response', value: InputLagSetting.get() });
                         }
                     }
                 });
