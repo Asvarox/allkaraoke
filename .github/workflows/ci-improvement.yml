@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: revert
+    branches: master
 
 jobs:
     e2e-tests-run-chromium:
