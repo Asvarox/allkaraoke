@@ -2696,33 +2696,6 @@
     "local": false
   },
   {
-    "title": "My Heart Will Go On",
-    "artist": "Céline Dion",
-    "bpm": 384.59,
-    "bar": 4,
-    "gap": 19435.933071582724,
-    "video": "A3QAqZQYLIQ",
-    "year": "1997",
-    "genre": "Pop",
-    "language": "English",
-    "videoGap": 1,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On",
-    "realBpm": 98,
-    "tracks": [
-      {
-        "start": 26
-      }
-    ],
-    "volume": 0.8,
-    "lastUpdate": "2023-07-27T18:16:56.205Z",
-    "file": "C-line Dion-My Heart Will Go On.json",
-    "tracksCount": 1,
-    "search": "celinedionmyheartwillgoon",
-    "local": false
-  },
-  {
     "title": "All By Myself",
     "artist": "Céline Dion",
     "bpm": 464,
@@ -3430,6 +3403,31 @@
     "file": "Céline Dion & Garou-Sous le vent.json",
     "tracksCount": 1,
     "search": "celinediongarousouslevent",
+    "local": false
+  },
+  {
+    "title": "My Heart Will Go On",
+    "artist": "Céline Dion",
+    "bpm": 384.59,
+    "bar": 4,
+    "gap": 20450,
+    "video": "3gK_2XdjOdY",
+    "year": "1997",
+    "genre": "Pop",
+    "language": "English",
+    "videoGap": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On",
+    "realBpm": 98,
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "file": "Céline Dion-My Heart Will Go On.json",
+    "tracksCount": 1,
+    "search": "celinedionmyheartwillgoon",
     "local": false
   },
   {
@@ -16158,8 +16156,8 @@
     "artist": "Tomasz Karolak",
     "bpm": 160.13,
     "bar": 4,
-    "gap": 20639.587210391557,
-    "video": "WPYGIieg5ws",
+    "gap": 27970,
+    "video": "76RuYhKSkcM",
     "language": "Polish",
     "videoGap": 0,
     "author": "Angelyina",
@@ -16170,11 +16168,10 @@
     "realBpm": 75,
     "tracks": [
       {
-        "start": 11
+        "start": 0
       }
     ],
-    "lastUpdate": "2023-07-27T18:16:56.206Z",
-    "file": "Tomasz Karolak-Zabior- Cię właśnie tam.json",
+    "file": "Tomasz Karolak-Zabiorę Cię właśnie tam.json",
     "tracksCount": 1,
     "search": "tomaszkarolakzabioreciewasnietam",
     "local": false
