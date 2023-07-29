@@ -1760,35 +1760,6 @@
     "local": false
   },
   {
-    "title": "Stand by me",
-    "artist": "Ben E. King",
-    "bpm": 238.84,
-    "bar": 4,
-    "gap": 15564.143192095125,
-    "video": "Vbg7YoXiKn0",
-    "year": "1961",
-    "lastUpdate": "2023-07-28T07:42:46.533Z",
-    "genre": "Clásicos",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 118,
-    "previewStart": 16,
-    "previewEnd": 65,
-    "volume": 0.72,
-    "author": "",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "file": "Ben-E.-King-Stand-by-me.json",
-    "tracksCount": 1,
-    "search": "benekingstandbyme",
-    "local": false
-  },
-  {
     "title": "If I Were A Boy (Album Version)",
     "artist": "Beyoncé",
     "bpm": 360,
@@ -2968,35 +2939,6 @@
     "file": "Carlos Baute y Marta S-nchez-Colgando en tus manos.json",
     "tracksCount": 1,
     "search": "carlosbauteymartasnchezcolgandoentusmanos",
-    "local": false
-  },
-  {
-    "title": "La bicicleta",
-    "artist": "Carlos Vives y Shakira",
-    "bpm": 360,
-    "bar": 4,
-    "gap": 18067,
-    "video": "-UV0QGLmYys",
-    "year": "2016",
-    "lastUpdate": "2023-07-28T07:42:46.536Z",
-    "genre": "Vallenato",
-    "language": "Spanish",
-    "videoGap": 1,
-    "realBpm": 180,
-    "previewStart": 43,
-    "previewEnd": 83,
-    "volume": 0.63,
-    "author": "Volodia",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 24
-      }
-    ],
-    "file": "Carlos-Vives-y-Shakira-La-bicicleta.json",
-    "tracksCount": 1,
-    "search": "carlosvivesyshakiralabicicleta",
     "local": false
   },
   {
@@ -4836,35 +4778,6 @@
     "local": false
   },
   {
-    "title": "Rock'n'Roll Is King",
-    "artist": "Electric Light Orchestra",
-    "bpm": 322.4,
-    "bar": 4,
-    "gap": 9935.952853598015,
-    "video": "21VeAmPOBzI",
-    "year": "1983",
-    "lastUpdate": "2023-07-28T07:42:46.538Z",
-    "genre": "Rock",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 160,
-    "previewStart": 0,
-    "previewEnd": 59,
-    "volume": 0.5,
-    "author": "jmfb",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 21
-      }
-    ],
-    "file": "Electric-Light-Orchestra-Rock-nRoll-Is-King.json",
-    "tracksCount": 1,
-    "search": "electriclightorchestrarocknrollisking",
-    "local": false
-  },
-  {
     "title": "Co Ty Tutaj Robisz?",
     "artist": "Elektryczne Gitary",
     "bpm": 201.76,
@@ -4994,35 +4907,6 @@
     "file": "Elton-John-Im-Still-Standing.json",
     "tracksCount": 1,
     "search": "eltonjohnimstillstanding",
-    "local": false
-  },
-  {
-    "title": "Suspicious minds",
-    "artist": "Elvis Presley",
-    "bpm": 226,
-    "bar": 4,
-    "gap": 4255.423550087874,
-    "video": "WrMGGouem3c",
-    "year": "1969",
-    "lastUpdate": "2023-07-28T07:42:46.539Z",
-    "edition": "SingStar",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 117,
-    "previewStart": 6,
-    "previewEnd": 56,
-    "volume": 0.7,
-    "author": "",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 15
-      }
-    ],
-    "file": "Elvis-Presley-Suspicious-minds.json",
-    "tracksCount": 1,
-    "search": "elvispresleysuspiciousminds",
     "local": false
   },
   {
@@ -5995,36 +5879,6 @@
     "file": "George Michael-Careless Whisper.json",
     "tracksCount": 1,
     "search": "georgemichaelcarelesswhisper",
-    "local": false
-  },
-  {
-    "title": "Budapest",
-    "artist": "George Ezra",
-    "bpm": 255.98,
-    "bar": 4,
-    "gap": 10673.828424095633,
-    "video": "VHrLPs3_1Fs",
-    "year": "2013",
-    "lastUpdate": "2023-07-28T07:42:46.541Z",
-    "edition": "None",
-    "genre": "Pop",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 128,
-    "previewStart": 10,
-    "previewEnd": 64,
-    "volume": 0.61,
-    "author": "fepo",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
-    "sourceUrl": "https://usdb.animux.de/?link=detail&id=17064",
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "file": "George-Ezra-Budapest.json",
-    "tracksCount": 1,
-    "search": "georgeezrabudapest",
     "local": false
   },
   {
@@ -8090,36 +7944,6 @@
     "local": false
   },
   {
-    "title": "La Bomba",
-    "artist": "King África",
-    "bpm": 340,
-    "bar": 4,
-    "gap": 8114.294117647059,
-    "video": "jY48iTyLrmk",
-    "year": "2000",
-    "lastUpdate": "2023-07-28T07:42:46.542Z",
-    "edition": "SingStar Latino",
-    "genre": "Pop",
-    "language": "Spanish",
-    "videoGap": 0,
-    "realBpm": 100,
-    "previewStart": 10,
-    "previewEnd": 40,
-    "volume": 0.5,
-    "author": "",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 23
-      }
-    ],
-    "file": "King-frica-La-Bomba.json",
-    "tracksCount": 1,
-    "search": "kingafricalabomba",
-    "local": false
-  },
-  {
     "title": "Sex On Fire",
     "artist": "Kings Of Leon",
     "bpm": 311.5,
@@ -9806,34 +9630,6 @@
     "local": false
   },
   {
-    "title": "Rude",
-    "artist": "Magic!",
-    "bpm": 288,
-    "bar": 4,
-    "gap": 960.4166666666665,
-    "video": "PIh2xe4jnpk",
-    "year": "2013",
-    "lastUpdate": "2023-07-28T07:42:46.543Z",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 144,
-    "previewStart": 23,
-    "previewEnd": 75,
-    "volume": 0.5,
-    "author": "Pantero",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 19
-      }
-    ],
-    "file": "Magic-Rude.json",
-    "tracksCount": 1,
-    "search": "magicrude",
-    "local": false
-  },
-  {
     "title": "A ja wolę moją mamę",
     "artist": "Majka Jeżowska",
     "bpm": 212.96,
@@ -10203,36 +9999,6 @@
     "file": "Marvin Gaye & Tammi Terrell-Ain't No Mountain High Enough [DUET].json",
     "tracksCount": 2,
     "search": "marvingayetammiterrellaintnomountainhighenough",
-    "local": false
-  },
-  {
-    "title": "How Far We've Come",
-    "artist": "Matchbox Twenty",
-    "bpm": 332,
-    "bar": 4,
-    "gap": 21984.024096385543,
-    "video": "5d7EbtLb8ok",
-    "year": "2007",
-    "lastUpdate": "2023-07-28T07:42:46.544Z",
-    "edition": "SingStar Pop 2",
-    "genre": "Pop",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 83,
-    "previewStart": 43,
-    "previewEnd": 70,
-    "volume": 0.85,
-    "author": "",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 22
-      }
-    ],
-    "file": "Matchbox-Twenty-How-Far-We-ve-Come-1.json",
-    "tracksCount": 1,
-    "search": "matchboxtwentyhowfarwevecome",
     "local": false
   },
   {
@@ -10840,35 +10606,6 @@
     "local": false
   },
   {
-    "title": "Believe",
-    "artist": "Mumford and Sons",
-    "bpm": 230,
-    "bar": 4,
-    "gap": 5977.739130434783,
-    "video": "dW6SkvErFEE",
-    "year": "2015",
-    "lastUpdate": "2023-07-28T07:42:46.546Z",
-    "genre": "Rock",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 112,
-    "previewStart": 101,
-    "previewEnd": 139,
-    "volume": 0.67,
-    "author": "gun88",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gun88",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 15
-      }
-    ],
-    "file": "Mumford-and-Sons-Believe.json",
-    "tracksCount": 1,
-    "search": "mumfordandsonsbelieve",
-    "local": false
-  },
-  {
     "title": "Dead Inside",
     "artist": "Muse",
     "bpm": 200,
@@ -11293,34 +11030,6 @@
     "file": "Muse-Uprising.json",
     "tracksCount": 1,
     "search": "museuprising",
-    "local": false
-  },
-  {
-    "title": "Disenchanted",
-    "artist": "My Chemical Romance",
-    "bpm": 240,
-    "bar": 4,
-    "gap": 20200,
-    "video": "O2j1BQhRigo",
-    "year": "2006",
-    "lastUpdate": "2023-07-28T07:42:46.547Z",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 87,
-    "previewStart": 63,
-    "previewEnd": 110,
-    "volume": 0.98,
-    "author": "hectorcito0",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "file": "My-Chemical-Romance-Disenchanted-1.json",
-    "tracksCount": 1,
-    "search": "mychemicalromancedisenchanted",
     "local": false
   },
   {
@@ -14524,35 +14233,6 @@
     "local": false
   },
   {
-    "title": "Try Everything (Zootopia)",
-    "artist": "Shakira",
-    "bpm": 230.83,
-    "bar": 4,
-    "gap": 14887.256682406965,
-    "video": "c6rP-YP4c5I",
-    "year": "2016",
-    "lastUpdate": "2023-07-28T07:42:46.549Z",
-    "genre": "Soundtrack",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 115,
-    "previewStart": 39,
-    "previewEnd": 100,
-    "volume": 0.95,
-    "author": "Vikuo",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 15
-      }
-    ],
-    "file": "Shakira-Try-Everything-Zootopia.json",
-    "tracksCount": 1,
-    "search": "shakiratryeverythingzootopia",
-    "local": false
-  },
-  {
     "title": "Whenever wherever",
     "artist": "Shakira",
     "bpm": 423,
@@ -14602,35 +14282,6 @@
     "file": "Sia-Chandelier.json",
     "tracksCount": 1,
     "search": "siachandelier",
-    "local": false
-  },
-  {
-    "title": "Cheap Thrills",
-    "artist": "Sia",
-    "bpm": 360.04,
-    "bar": 4,
-    "gap": 15540.111098766803,
-    "video": "31crA53Dgu0",
-    "year": "2015",
-    "lastUpdate": "2023-07-28T07:42:46.550Z",
-    "genre": "Pop",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 90,
-    "previewStart": 28,
-    "previewEnd": 70,
-    "volume": 0.64,
-    "author": "amro98",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 24
-      }
-    ],
-    "file": "Sia-Cheap-Thrills.json",
-    "tracksCount": 1,
-    "search": "siacheapthrills",
     "local": false
   },
   {
@@ -16625,35 +16276,6 @@
     "file": "The-Blues-Brothers-Everybody-needs-somebody-to-love.json",
     "tracksCount": 1,
     "search": "thebluesbrotherseverybodyneedssomebodytolove",
-    "local": false
-  },
-  {
-    "title": "A letter to Elise",
-    "artist": "The Cure",
-    "bpm": 300,
-    "bar": 4,
-    "gap": 27930,
-    "video": "-AUCSkHCrwY",
-    "year": "1992",
-    "lastUpdate": "2023-07-28T07:42:46.551Z",
-    "genre": "Rock Alternativo",
-    "language": "English",
-    "videoGap": 0,
-    "realBpm": 150,
-    "previewStart": 64,
-    "previewEnd": 120,
-    "volume": 0.9,
-    "author": "",
-    "authorUrl": "",
-    "sourceUrl": "",
-    "tracks": [
-      {
-        "start": 20
-      }
-    ],
-    "file": "The-Cure-A-letter-to-Elise.json",
-    "tracksCount": 1,
-    "search": "thecurealettertoelise",
     "local": false
   },
   {
