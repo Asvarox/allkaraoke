@@ -1,6 +1,6 @@
 import { BrowserContext, Page } from '@playwright/test';
 import { readFileSync, readdirSync } from 'fs';
-import { getSongPreview } from '../scripts/utils';
+import { getSongPreview } from '../src/Songs/utils';
 
 const songs = readdirSync('./tests/fixtures/songs/')
     .filter((file) => file.endsWith('.json'))

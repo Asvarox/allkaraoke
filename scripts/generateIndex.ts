@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from 'fs';
 import { Song, SongPreview } from 'interfaces';
-import { getSongPreview } from './utils';
+import { getSongPreview } from '../src/Songs/utils';
 
 const SONGS_FOLDER = './public/songs';
 

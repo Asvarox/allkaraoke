@@ -5,6 +5,8 @@ import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
 import clearString from '../src/utils/clearString';
 // @ts-ignore
 import scrapedBpmData from './scraped-bpm-data.json';
+import getSongId from '../src/Songs/utils/getSongId';
+import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 
 const mbApi = new MusicBrainzApi({
     appName: 'Olkaraoke',
@@ -26,14 +28,15 @@ const SONGS_FOLDER = './public/songs';
         console.log(`"${song.artist}" "${song.title}"`);
         const { tracks, ...songData } = song;
         try {
-            await fillMissingRealBpm(songData, file);
-            await fillSongYear(songData);
+            // await fillMissingRealBpm(songData, file);
+            // await fillSongYear(songData);
         } catch (e) {
             console.error(e);
         }
         const finalSong = { ...songData, tracks };
+        finalSong.id = getSongId(finalSong);
 
-        writeFileSync(`${SONGS_FOLDER}/${file}`, JSON.stringify(finalSong, undefined, 2), {
+        writeFileSync(`${SONGS_FOLDER}/${finalSong.id}.txt`, convertSongToTxt(finalSong), {
             encoding: 'utf-8',
         });
     }

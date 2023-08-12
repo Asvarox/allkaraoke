@@ -29,6 +29,7 @@ const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}) =
     });
 
     return `
+#ID:${data?.id ?? 'IdTest'}
 #ARTIST:${data?.artist ?? 'ArtistTest'}
 #TITLE:${data?.title ?? 'TitleTest'}
 #BPM:${data?.bpm ?? '60'}
@@ -48,6 +49,7 @@ const songStub = {
     authorUrl,
     artist: 'ArtistTest',
     title: 'TitleTest',
+    id: 'IdTest',
     bpm: 60,
     bar: 4,
     gap: 0,

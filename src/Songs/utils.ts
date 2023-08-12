@@ -1,12 +1,13 @@
-import { Song, SongPreview } from "../src/interfaces";
-import { getFirstNoteStartFromSections } from "../src/Songs/utils/notesSelectors";
-import clearString from "../src/utils/clearString";
+import { Song, SongPreview } from '../interfaces';
+import clearString from '../utils/clearString';
+import { getFirstNoteStartFromSections } from './utils/notesSelectors';
+import getSongId from './utils/getSongId';
 
 const generateSearchString = (song: Pick<Song, 'title' | 'artist'>) => clearString(`${song.artist}${song.title}`);
 
 export const getSongPreview = (file: string, songData: Song, local = false): SongPreview => ({
     ...songData,
-    file,
+    id: getSongId(songData),
     tracksCount: songData.tracks.length,
     tracks: songData.tracks.map(({ name, sections }) => ({
         name,

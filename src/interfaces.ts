@@ -64,6 +64,7 @@ export interface Song {
     bar: number;
     tracks: SongTrack[];
     volume: number | undefined;
+    id?: string;
 }
 
 export interface SongTrack {
@@ -72,7 +73,7 @@ export interface SongTrack {
 }
 
 export interface SongPreview extends Omit<Song, 'tracks'> {
-    file: string;
+    id: string;
     tracksCount: number;
     tracks: Array<Pick<SongTrack, 'name'> & { start: number }>;
     search: string;

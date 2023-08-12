@@ -24,7 +24,7 @@
     "ts-node": {
         "compilerOptions": {
             "module": "commonjs",
-            "baseUrl": "src"
+            "baseUrl": "./src"
         },
         "transpileOnly": true
     }

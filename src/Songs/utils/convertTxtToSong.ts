@@ -8,6 +8,7 @@ export const typesMap = {
 } as const;
 
 export type SongTXTKeys =
+    | 'ID'
     | 'TRACKNAMES'
     | 'YEAR'
     | 'LASTUPDATE'
@@ -93,6 +94,7 @@ export default function convertTxtToSong(
     if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
 
     const song: Song = {
+        id: getPropertyValueFromTxt(text, 'ID'),
         title: getPropertyValueFromTxt(text, 'TITLE') ?? '',
         artist: getPropertyValueFromTxt(text, 'ARTIST') ?? '',
         bpm: Number(getPropertyValueFromTxt(text, 'BPM')?.replace(',', '.') ?? 0),

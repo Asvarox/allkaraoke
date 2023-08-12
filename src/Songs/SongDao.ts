@@ -2,14 +2,15 @@ import { lastVisit } from 'Stats/lastVisit';
 import { isAfter } from 'date-fns';
 import { Song, SongPreview } from 'interfaces';
 import localForage from 'localforage';
-import { getSongPreview } from '../../scripts/utils';
+import { getSongPreview } from './utils';
+import { removeAccents } from 'utils/clearString';
+import getSongId from 'Songs/utils/getSongId';
 
 const storage = localForage.createInstance({
-    name: 'songs',
+    name: 'songs_v2',
 });
 
-const DELETED_SONGS_KEY = 'DELETED_SONGS';
-const SONGS_KEY = 'STORED_SONGS';
+const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
 
 class SongDao {
     private finalIndex: SongPreview[] | null = null;
@@ -45,10 +46,7 @@ class SongDao {
         return list ?? [];
     };
 
-    public generateSongFile = (
-        song: Pick<Song | SongPreview, 'artist' | 'title'> & { file?: string },
-        extension = 'json',
-    ) => (song.file ? song.file : `${song?.artist}-${song?.title}.${extension}`.replace(/[^a-zA-Z0-9 .-]/, '-'));
+    public generateSongFile = (song: Pick<Song | SongPreview, 'artist' | 'title'> & { id?: string }) => getSongId(song);
 
     public reloadIndex = async () => {
         const [defaultIndex, storageIndex, deletedSongs] = await Promise.all([
@@ -58,7 +56,7 @@ class SongDao {
         ]);
         const lastVisitDate = new Date(lastVisit);
 
-        const localSongs = storageIndex.map((song) => song.file);
+        const localSongs = storageIndex.map((song) => song.id);
 
         this.indexWithDeletedSongs = [
             ...storageIndex,

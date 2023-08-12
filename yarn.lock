@@ -4559,6 +4559,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/latinize@npm:^0.2.15":
+  version: 0.2.15
+  resolution: "@types/latinize@npm:0.2.15"
+  checksum: 816a34cc63094c1559ca08c1a56bb010d65cd59c28b73b8e9da10fe18d603e7f724e57930144b4acb16dadf186246e20a52ae9c4a77f2b5343cd9f492159ea15
+  languageName: node
+  linkType: hard
+
 "@types/lodash-es@npm:^4.17.7":
   version: 4.17.7
   resolution: "@types/lodash-es@npm:4.17.7"
@@ -10107,6 +10114,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"latinize@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "latinize@npm:0.5.0"
+  checksum: 865ad9be466f81b3a90676ea930465498bdbfd643e193539d34955172f005b21e3d46129c70329aa5760b523c200cf7153d6975d1491ca17fcd07fd28783927d
+  languageName: node
+  linkType: hard
+
 "lazy-universal-dotenv@npm:^4.0.0":
   version: 4.0.0
   resolution: "lazy-universal-dotenv@npm:4.0.0"
@@ -11340,6 +11354,7 @@ __metadata:
     "@testing-library/user-event": ^14.4.3
     "@types/dom-screen-wake-lock": ^1.0.1
     "@types/howler": ^2.2.7
+    "@types/latinize": ^0.2.15
     "@types/lodash": ^4.14.195
     "@types/lodash-es": ^4.17.7
     "@types/node": ^16.18.12
@@ -11366,6 +11381,7 @@ __metadata:
     howler: ^2.2.3
     husky: ^8.0.3
     js-yaml: ^4.1.0
+    latinize: ^0.5.0
     lint-staged: ^13.2.2
     localforage: ^1.10.0
     lodash: ^4.17.21
@@ -11408,6 +11424,9 @@ __metadata:
     vite-tsconfig-paths: ^4.2.0
     vitest: ^0.31.4
     wouter: ^2.11.0
+  dependenciesMeta:
+    ts-node@10.9.1:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

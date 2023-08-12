@@ -59,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:14.4.3"],\
             ["@types/dom-screen-wake-lock", "npm:1.0.1"],\
             ["@types/howler", "npm:2.2.7"],\
+            ["@types/latinize", "npm:0.2.15"],\
             ["@types/lodash", "npm:4.14.195"],\
             ["@types/lodash-es", "npm:4.17.7"],\
             ["@types/node", "npm:16.18.12"],\
@@ -85,6 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["howler", "npm:2.2.3"],\
             ["husky", "npm:8.0.3"],\
             ["js-yaml", "npm:4.1.0"],\
+            ["latinize", "npm:0.5.0"],\
             ["lint-staged", "npm:13.2.2"],\
             ["localforage", "npm:1.10.0"],\
             ["lodash", "npm:4.17.21"],\
@@ -6755,6 +6757,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/latinize", [\
+        ["npm:0.2.15", {\
+          "packageLocation": "./.yarn/cache/@types-latinize-npm-0.2.15-868bbbb3d0-816a34cc63.zip/node_modules/@types/latinize/",\
+          "packageDependencies": [\
+            ["@types/latinize", "npm:0.2.15"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/lodash", [\
         ["npm:4.14.191", {\
           "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.191-67a04a969b-ba0d5434e1.zip/node_modules/@types/lodash/",\
@@ -13364,6 +13375,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["latinize", [\
+        ["npm:0.5.0", {\
+          "packageLocation": "./.yarn/cache/latinize-npm-0.5.0-b13696e3ae-865ad9be46.zip/node_modules/latinize/",\
+          "packageDependencies": [\
+            ["latinize", "npm:0.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lazy-universal-dotenv", [\
         ["npm:4.0.0", {\
           "packageLocation": "./.yarn/cache/lazy-universal-dotenv-npm-4.0.0-a9981bf345-196e0d7011.zip/node_modules/lazy-universal-dotenv/",\
@@ -14773,6 +14793,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:14.4.3"],\
             ["@types/dom-screen-wake-lock", "npm:1.0.1"],\
             ["@types/howler", "npm:2.2.7"],\
+            ["@types/latinize", "npm:0.2.15"],\
             ["@types/lodash", "npm:4.14.195"],\
             ["@types/lodash-es", "npm:4.17.7"],\
             ["@types/node", "npm:16.18.12"],\
@@ -14799,6 +14820,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["howler", "npm:2.2.3"],\
             ["husky", "npm:8.0.3"],\
             ["js-yaml", "npm:4.1.0"],\
+            ["latinize", "npm:0.5.0"],\
             ["lint-staged", "npm:13.2.2"],\
             ["localforage", "npm:1.10.0"],\
             ["lodash", "npm:4.17.21"],\
@@ -18228,14 +18250,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],\
       ["ts-node", [\
         ["npm:10.9.1", {\
-          "packageLocation": "./.yarn/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
+          "packageLocation": "./.yarn/unplugged/ts-node-virtual-7c2963c696/node_modules/ts-node/",\
           "packageDependencies": [\
             ["ts-node", "npm:10.9.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
         ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:10.9.1", {\
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-7c2963c696/0/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
+          "packageLocation": "./.yarn/unplugged/ts-node-virtual-7c2963c696/node_modules/ts-node/",\
           "packageDependencies": [\
             ["ts-node", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:10.9.1"],\
             ["@cspotcode/source-map-support", "npm:0.8.1"],\

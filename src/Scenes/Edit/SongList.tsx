@@ -95,39 +95,39 @@ export default function SongList(props: Props) {
             <MaterialReactTable
                 data={data}
                 columns={columns}
-                getRowId={(song) => song.file}
+                getRowId={(song) => song.id}
                 positionActionsColumn="last"
                 enableRowActions
                 renderRowActions={({ row }) => (
                     <>
                         <IconButton
                             title="Edit the song"
-                            href={`/edit/${encodeURIComponent(row.original.file)}`}
+                            href={`/edit/${encodeURIComponent(row.original.id)}`}
                             data-test="edit-song"
-                            data-song={row.original.file}>
+                            data-song={row.original.id}>
                             <EditIcon />
                         </IconButton>
                         <IconButton
                             title="Download .txt file"
                             onClick={async () => {
-                                const songData = await SongDao.get(row.original.file);
+                                const songData = await SongDao.get(row.original.id);
                                 const txt = convertSongToTxt(songData);
 
                                 const anchor = document.createElement('a');
                                 anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(txt)}`;
-                                anchor.download = SongDao.generateSongFile(songData, 'txt');
+                                anchor.download = `${SongDao.generateSongFile(songData)}.txt`;
                                 document.body.appendChild(anchor);
                                 anchor.click();
                                 document.body.removeChild(anchor);
                             }}
                             data-test="download-song"
-                            data-song={row.original.file}>
+                            data-song={row.original.id}>
                             <Download />
                         </IconButton>
                         <IconButton
                             title="Download .json file"
                             onClick={async () => {
-                                const songData = await SongDao.get(row.original.file);
+                                const songData = await SongDao.get(row.original.id);
                                 const json = JSON.stringify(songData, undefined, 2);
 
                                 const anchor = document.createElement('a');
@@ -138,18 +138,18 @@ export default function SongList(props: Props) {
                                 document.body.removeChild(anchor);
                             }}
                             data-test="download-song-json"
-                            data-song={row.original.file}>
+                            data-song={row.original.id}>
                             <DataObject />
                         </IconButton>
                         {!row.original.isDeleted && (
                             <IconButton
                                 title="Hide the song"
                                 onClick={async () => {
-                                    await SongDao.softDeleteSong(row.original.file);
+                                    await SongDao.softDeleteSong(row.original.id);
                                     reload();
                                 }}
                                 data-test="hide-song"
-                                data-song={row.original.file}>
+                                data-song={row.original.id}>
                                 <VisibilityOff />
                             </IconButton>
                         )}
@@ -157,11 +157,11 @@ export default function SongList(props: Props) {
                             <IconButton
                                 title="Restore the song"
                                 onClick={async () => {
-                                    await SongDao.restoreSong(row.original.file);
+                                    await SongDao.restoreSong(row.original.id);
                                     reload();
                                 }}
                                 data-test="restore-song"
-                                data-song={row.original.file}>
+                                data-song={row.original.id}>
                                 <Visibility />
                             </IconButton>
                         )}
@@ -171,13 +171,13 @@ export default function SongList(props: Props) {
                                 const proceed = window.confirm(`Are you sure you want to delete this song?`);
 
                                 if (proceed) {
-                                    await SongDao.deleteSong(row.original.file);
+                                    await SongDao.deleteSong(row.original.id);
                                     reload();
                                 }
                             }}
                             data-test="delete-song"
                             disabled={!row.original.local}
-                            data-song={row.original.file}>
+                            data-song={row.original.id}>
                             <Delete />
                         </IconButton>
                     </>
