@@ -17,12 +17,12 @@ const processSong = (song: Song) => {
     return processed;
 };
 
-export default function useSong(fileName: string) {
+export default function useSong(songId: string) {
     const [song, setSong] = useState<Song | null>(null);
 
     useEffect(() => {
-        SongDao.get(fileName).then((loadedSong) => setSong(loadedSong ? processSong(loadedSong) : loadedSong));
-    }, [fileName]);
+        SongDao.get(songId).then((loadedSong) => setSong(loadedSong ? processSong(loadedSong) : loadedSong));
+    }, [songId]);
 
     return {
         data: song,

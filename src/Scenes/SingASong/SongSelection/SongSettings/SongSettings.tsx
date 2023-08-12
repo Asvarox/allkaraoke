@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 interface Props {
     songPreview: SongPreview;
-    onPlay: (setup: SingSetup & { file: string; video: string }) => void;
+    onPlay: (setup: SingSetup & { songId: string; video: string }) => void;
     keyboardControl: boolean;
     onExitKeyboardControl: () => void;
 }
@@ -28,7 +28,7 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
             players: players,
         };
         events.songStarted.dispatch(songPreview, finalSetup);
-        onPlay({ file: songPreview.file, video: songPreview.video, ...finalSetup });
+        onPlay({ songId: songPreview.id, video: songPreview.video, ...finalSetup });
     };
     return (
         <Container>

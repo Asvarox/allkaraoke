@@ -17,9 +17,9 @@ test('exclude languages from first start and menu', async ({ page }) => {
         await expect(page.getByTestId('lang-Polish')).toBeVisible();
         await page.getByTestId('close-exclude-languages').click();
 
-        await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
-        await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
-        await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).not.toBeVisible();
+        await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
     });
 
     await test.step('Exclude English', async () => {
@@ -34,9 +34,9 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
         await page.getByTestId('sing-a-song').click();
 
-        await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
-        await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
-        await expect(page.getByTestId('song-e2e-single-english-1995.json')).not.toBeVisible();
+        await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
     });
 
     await test.step('Include all', async () => {
@@ -50,9 +50,9 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
         await page.getByTestId('sing-a-song').click();
 
-        await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
-        await expect(page.getByTestId('song-e2e-multitrack-polish-1994.json')).toBeVisible();
-        await expect(page.getByTestId('song-e2e-english-polish-1994.json')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+        await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
     });
 
     await test.step('exclude all', async () => {

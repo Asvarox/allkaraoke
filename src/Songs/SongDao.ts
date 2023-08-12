@@ -1,10 +1,10 @@
+import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import getSongId from 'Songs/utils/getSongId';
 import { lastVisit } from 'Stats/lastVisit';
 import { isAfter } from 'date-fns';
 import { Song, SongPreview } from 'interfaces';
 import localForage from 'localforage';
 import { getSongPreview } from './utils';
-import { removeAccents } from 'utils/clearString';
-import getSongId from 'Songs/utils/getSongId';
 
 const storage = localForage.createInstance({
     name: 'songs_v2',
@@ -20,11 +20,13 @@ class SongDao {
         await this.reloadIndex();
     };
 
-    public get = async (fileName: string) => {
-        const localSong = await this.getLocal(fileName);
+    public get = async (songId: string) => {
+        const localSong = await this.getLocal(songId);
 
         if (!localSong) {
-            return await fetch(`./songs/${fileName}`).then((response) => response.json());
+            return await fetch(`./songs/${songId}.txt`)
+                .then((response) => response.text())
+                .then(convertTxtToSong);
         }
 
         return localSong;
@@ -74,33 +76,31 @@ class SongDao {
         this.finalIndex = this.indexWithDeletedSongs.filter((song) => !song.isDeleted);
     };
 
-    public deleteSong = async (fileName: string) => {
-        await storage.removeItem(fileName);
+    public deleteSong = async (songId: string) => {
+        await storage.removeItem(songId);
 
         return this.reloadIndex();
     };
 
-    public softDeleteSong = async (fileName: string) => {
+    public softDeleteSong = async (songId: string) => {
         const deletedItems = await this.getDeletedSongsList();
-        await storage.setItem(DELETED_SONGS_KEY, [...new Set([...deletedItems, fileName])]);
+        await storage.setItem(DELETED_SONGS_KEY, [...new Set([...deletedItems, songId])]);
         return this.reloadIndex();
     };
-    public restoreSong = async (fileName: string) => {
+    public restoreSong = async (songId: string) => {
         const deletedItems = await this.getDeletedSongsList();
         await storage.setItem(
             DELETED_SONGS_KEY,
-            deletedItems.filter((item) => item !== fileName),
+            deletedItems.filter((item) => item !== songId),
         );
         return this.reloadIndex();
     };
 
-    private getLocal = async (fileName: string) => storage.getItem<Song>(decodeURIComponent(fileName));
+    private getLocal = async (songId: string) => storage.getItem<Song>(decodeURIComponent(songId));
     public getLocalIndex = async () => {
         const allSongs = await Promise.all((await this.getKeys()).map(this.getLocal));
 
-        return allSongs
-            .filter((song): song is Song => song !== null)
-            .map((song) => getSongPreview(this.generateSongFile(song), song, true));
+        return allSongs.filter((song): song is Song => song !== null).map((song) => getSongPreview(song, true));
     };
 
     private getKeys = async () => {

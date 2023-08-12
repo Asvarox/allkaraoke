@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import getSongId from 'Songs/utils/getSongId';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
 
@@ -191,7 +192,7 @@ test('Convert song', async ({ page }) => {
     await expect(page.getByTestId('save-button')).toBeVisible();
     await page.getByTestId('save-button').click();
 
-    const convertedSongId = `${FINAL_ARTIST}-${FINAL_TITLE}.json`;
+    const convertedSongId = getSongId({ artist: FINAL_ARTIST, title: FINAL_TITLE });
     const [download] = await Promise.all([
         page.waitForEvent('download'),
         page.locator(`[data-test="download-song"][data-song="${convertedSongId}"]`).click(),

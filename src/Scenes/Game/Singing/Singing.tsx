@@ -18,16 +18,16 @@ import PostGame from './PostGame/PostGame';
 
 interface Props {
     video: string;
-    songFile: string;
+    songId: string;
     singSetup: SingSetup;
     returnToSongSelection: () => void;
     restartSong: () => void;
 }
-function Singing({ video, songFile, singSetup, returnToSongSelection, restartSong }: Props) {
+function Singing({ video, songId, singSetup, returnToSongSelection, restartSong }: Props) {
     useFullscreen();
     useBlockScroll();
     const player = useRef<PlayerRef | null>(null);
-    const song = useSong(songFile);
+    const song = useSong(songId);
 
     const { width, height } = useViewportSize();
     const [isEnded, setIsEnded] = useState(false);

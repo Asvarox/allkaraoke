@@ -11,7 +11,7 @@ import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo,
 
 interface Props {
     songPreview: SongPreview;
-    onPlay: (setup: SingSetup & { file: string; video: string }) => void;
+    onPlay: (setup: SingSetup & { songId: string; video: string }) => void;
     keyboardControl: boolean;
     onExitKeyboardControl: () => void;
     top: number;
@@ -105,7 +105,7 @@ export default function SongPreviewComponent({
                 showVideo={showVideo}
                 expanded={expanded}
                 data-test="song-preview"
-                data-song={songPreview.file}>
+                data-song={songPreview.id}>
                 {expanded && (
                     <Content>
                         <SongSettings

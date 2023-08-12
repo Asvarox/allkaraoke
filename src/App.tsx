@@ -67,8 +67,8 @@ function App() {
                         <Router>
                             <GameScreens>
                                 <Toolbar />
-                                <Route path="/game/:file?">
-                                    {({ file }) => <Game file={file ? decodeURIComponent(file) : undefined} />}
+                                <Route path="/game/:songId?">
+                                    {({ songId }) => <Game songId={songId ? decodeURIComponent(songId) : undefined} />}
                                 </Route>
                                 <Route path="/jukebox" component={Jukebox} />
                                 <Route path="/remote-mic/:roomId">
@@ -88,7 +88,7 @@ function App() {
                             <Route path="/convert" component={() => <Convert />} />
                             <Route path="/edit" component={SongList} />
                             <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
-                            <Route path="/edit/:filename">{({ filename }) => <Edit file={filename!} />}</Route>
+                            <Route path="/edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
                         </Router>
                     </KeyboardHelpProvider>
                 </LayoutWithBackgroundProvider>

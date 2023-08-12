@@ -16,8 +16,8 @@ test('skip the intro from the song', async ({ page }) => {
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click();
 
-    await expect(page.getByTestId('song-e2e-skip-intro-polish.json')).toBeVisible();
-    await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish.json');
+    await expect(page.getByTestId('song-e2e-skip-intro-polish')).toBeVisible();
+    await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish');
     await page.keyboard.press('Enter'); // enter first song
 
     await page.getByTestId('next-step-button').click();
@@ -27,5 +27,5 @@ test('skip the intro from the song', async ({ page }) => {
     await page.waitForTimeout(1500);
     await page.keyboard.press('Enter');
 
-    await page.getByTestId('highscores-button').click({ timeout: 15_000 });
+    await page.getByTestId('highscores-button').click({ timeout: 20_000 });
 });

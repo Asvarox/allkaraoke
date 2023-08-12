@@ -1,0 +1,563 @@
+#ID:scooter-vs-marc-acardipane-dick-rules-maria-i-like-it-loud
+#ARTIST:Scooter vs. Marc Acardipane & Dick Rules
+#TITLE:Maria (I like it loud)
+#CREATOR:Diddlmaus30mg
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1058
+#BPM:143
+#REALBPM:143
+#YEAR:2003
+#SOURCEURL:http://usdb.animux.de/?link=detail&id=3284
+#VIDEOID:KVjeheaFfsM
+#VIDEOGAP:0
+#LANGUAGE:English
+#GAP:-535,1608391608391
+F 8 3 -1 Yo 
+F 12 3 -1 man, 
+F 18 2 -1 turn 
+F 21 2 -1 up 
+F 24 3 -1 the 
+F 28 3 -1 bass 
+F 32 3 -1 boy!
+- 43
+F 53 1 2 I 
+F 55 1 2 like 
+F 57 3 2 it
+- 60
+F 61 1 2 I 
+F 63 1 2 like 
+F 65 3 2 it
+- 68
+F 69 1 2 I 
+F 71 1 2 like 
+F 73 3 2 it
+- 76
+F 77 1 2 I 
+F 79 1 2 like 
+F 81 3 2 it
+- 84
+F 85 1 2 I 
+F 87 1 2 like 
+F 89 3 2 it
+- 92
+F 93 1 2 I 
+F 95 1 2 like 
+F 97 3 2 it
+- 100
+F 101 1 2 I 
+F 103 1 2 like 
+F 105 3 2 it
+- 108
+F 109 1 2 I 
+F 111 1 2 like 
+F 113 3 2 it
+- 116
+F 117 1 2 I 
+F 119 1 2 like 
+F 121 3 2 it
+- 124
+F 125 1 2 I 
+F 127 1 2 like 
+F 129 3 2 it
+- 132
+F 133 1 2 I 
+F 135 1 2 like 
+F 137 3 2 it
+- 140
+F 141 1 2 I 
+F 143 1 2 like 
+F 145 3 2 it
+- 148
+F 149 8 4 I like it
+- 157
+F 159 6 4 LOUD!
+- 175 202
+- 202
+F 212 5 12 Alright 
+F 218 5 12 everybody, 
+F 238 3 12 tie 
+F 242 3 12 your 
+F 246 3 12 shoes
+- 259 276
+- 276
+F 286 2 12 From 
+F 289 1 12 the 
+F 291 3 12 H. 
+F 295 1 12 to 
+F 296 2 12 the 
+F 299 3 12 P. 
+F 303 1 12 on 
+F 305 1 12 the 
+F 307 2 12 mic 
+F 310 1 12 you 
+F 312 2 12 will 
+F 315 4 12 see
+- 319
+F 321 1 12 The 
+F 323 2 12 peo
+F 325 3 12 ples' 
+F 329 3 12 champ 
+F 333 3 12 that's 
+F 337 4 12 me
+- 341
+F 349 4 12 Yeah! 
+F 355 1 12 Ski
+F 356 1 12 ba
+F 357 3 12 dee, 
+F 361 1 12 Ski
+F 362 1 12 ba
+F 363 2 12 dan
+F 365 4 12 ger
+- 369
+F 373 1 12 I 
+F 375 1 12 am 
+F 377 1 12 the 
+F 379 2 12 re
+F 381 2 12 ar
+F 383 2 12 ran
+F 385 1 12 ger
+- 386
+F 387 1 12 Hit 
+F 389 1 12 them 
+F 391 1 12 with 
+F 393 1 12 a 
+F 395 3 12 raw
+- 398
+F 399 1 12 For 
+F 401 3 12 sure 
+F 405 1 12 now 
+F 407 1 12 bun 
+F 409 1 12 your 
+F 411 3 12 draw 
+F 415 1 12 yeah!
+- 416
+F 417 2 12 Un
+F 419 3 12 core 
+F 423 4 12 hard
+F 427 6 12 core
+- 433
+F 435 2 12 Bold 
+F 438 2 12 and 
+F 441 6 12 proud
+- 447
+F 451 2 12 D.
+F 453 1 12 J. 
+F 455 1 12 play 
+F 457 1 12 the 
+F 459 2 12 re
+F 461 1 12 cord,
+- 462
+F 463 1 12 Play 
+F 465 1 12 the 
+F 467 2 12 re
+F 469 1 12 cord 
+F 471 3 12 out 
+F 475 4 12 loud!
+- 479
+F 483 1 12 Ski
+F 484 1 12 ba
+F 485 3 12 dee, 
+F 489 1 12 ski
+F 490 1 12 ba
+F 491 2 12 dan
+F 493 3 12 ger
+- 496
+F 501 1 12 I 
+F 503 1 12 am 
+F 505 1 12 the 
+F 507 2 12 re
+F 509 2 12 ar
+F 511 2 12 ran
+F 513 1 12 ger
+- 514
+F 515 1 12 Hit 
+F 517 1 12 them 
+F 519 1 12 with 
+F 521 1 12 a 
+F 523 3 12 raw
+- 526
+F 527 1 12 For 
+F 529 3 12 sure 
+F 533 1 12 now 
+F 535 1 12 bun 
+F 537 1 12 your 
+F 539 4 12 draw
+- 543
+F 547 2 12 Ne
+F 549 3 12 ver, 
+F 553 2 12 ne
+F 555 1 12 ver 
+F 557 2 12 en
+F 559 2 12 dea
+F 561 3 12 vour
+- 564
+F 565 1 12 The 
+F 567 3 12 good 
+F 571 2 12 wea
+F 573 3 12 ther
+- 576
+F 577 1 12 Or 
+F 579 2 12 whe
+F 581 1 12 ther 
+F 583 1 12 we 
+F 585 1 12 be 
+F 587 3 12 there
+- 590
+F 591 2 12 On
+F 593 1 12 ly 
+F 595 1 12 for 
+F 597 1 12 your 
+F 599 2 12 plea
+F 601 3 12 sure, 
+F 605 6 12 yeah!
+- 621 697
+- 697
+: 707 2 20 Dub 
+: 711 2 27 dub 
+: 715 2 20 dub 
+: 719 1 27 du
+: 721 1 25 du
+: 723 2 23 dub 
+: 727 2 23 dub 
+: 731 3 23 dub
+- 734
+: 737 1 27 Du
+: 739 2 23 dub 
+: 743 2 27 dub 
+: 747 2 23 dub 
+: 751 1 27 du
+: 753 1 23 du
+: 755 2 20 dub 
+: 759 2 20 dub 
+* 763 3 20 dub
+- 766
+: 771 2 20 Dub 
+: 775 2 27 dub 
+: 779 2 20 dub 
+: 783 1 27 du
+: 785 1 25 du
+: 787 2 23 dub 
+: 791 2 23 dub 
+: 795 3 23 dub
+- 798
+: 801 1 27 Du
+: 803 2 23 dub 
+: 807 2 27 dub 
+: 811 2 23 dub 
+: 815 1 27 du
+: 817 1 23 du
+: 819 2 20 dub 
+: 823 2 20 dub 
+* 827 2 20 dub
+- 829
+F 831 1 12 Come 
+F 832 2 12 on!
+- 834
+: 835 2 20 Dub 
+: 839 2 27 dub 
+: 843 2 20 dub 
+* 847 1 27 du
+* 849 1 25 du
+: 851 2 23 dub 
+: 855 2 23 dub 
+: 859 3 23 dub
+- 862
+: 865 1 27 Du
+: 867 2 23 dub 
+: 871 2 27 dub 
+: 875 2 23 dub 
+: 879 1 27 du
+: 881 1 23 du
+: 883 2 20 dub 
+: 887 2 20 dub 
+: 891 3 20 dub
+- 894
+: 897 1 24 Ma
+: 899 3 26 ri
+: 903 1 26 a 
+: 905 1 24 be
+: 907 2 26 lieve 
+: 911 1 26 me 
+: 913 1 24 I 
+: 915 1 22 like 
+: 917 2 22 it 
+: 921 3 22 loud
+- 924
+: 929 1 24 Ma
+: 931 3 26 ri
+: 935 1 26 a 
+: 937 1 24 be
+: 939 2 26 lieve 
+: 943 1 26 me 
+: 945 1 24 I 
+: 947 1 22 like 
+: 949 2 22 it 
+: 953 3 22 loud
+- 956
+: 961 1 24 Ma
+: 963 3 26 ri
+: 967 1 26 a 
+: 969 1 24 be
+: 971 2 26 lieve 
+: 975 1 26 me 
+: 977 1 24 I 
+: 979 1 22 like 
+: 981 2 22 it 
+: 985 3 22 loud
+- 988
+F 993 1 24 My 
+F 995 4 24 ra
+F 999 1 24 dio 
+F 1001 2 24 be
+F 1003 3 24 lieves 
+F 1007 1 24 me 
+F 1009 1 24 I 
+F 1011 1 24 like 
+F 1013 3 24 it 
+F 1023 4 24 loud
+- 1037 1141
+- 1141
+F 1151 4 34 Yeah!
+- 1157
+F 1167 3 12 We're the 
+F 1171 5 12 special 
+F 1177 2 12 guest 
+F 1180 6 12 mixolo
+F 1186 5 12 gists
+- 1201 1211
+- 1211
+F 1221 1 12 I 
+F 1223 3 12 ritz 
+F 1227 3 12 bits 
+F 1231 1 12 for 
+F 1233 1 12 da 
+F 1235 3 12 hits
+- 1238
+F 1239 1 12 With 
+F 1241 1 12 the 
+F 1243 2 12 ly
+F 1245 4 12 rics
+- 1249
+F 1253 1 12 With 
+F 1255 1 12 a 
+F 1257 2 12 ro
+F 1259 2 12 bo
+F 1261 3 12 tic,
+- 1264
+F 1265 2 12 Nar
+F 1267 2 12 co
+F 1269 1 12 tic 
+F 1271 1 12 in 
+F 1273 1 12 the 
+F 1275 2 12 pock
+F 1277 2 12 et
+- 1279
+F 1285 1 12 The 
+F 1287 2 12 fi
+F 1289 1 12 re 
+F 1291 2 12 rock
+F 1293 4 12 et, 
+F 1299 3 12 blood 
+F 1303 2 12 sock
+F 1305 3 12 et
+- 1308
+F 1309 1 12 I 
+F 1311 3 12 crack 
+F 1315 2 12 whip, 
+F 1323 4 12 yeah
+- 1335
+F 1345 2 12 E
+F 1347 2 12 las
+F 1349 1 12 tic 
+F 1351 1 12 to 
+F 1353 4 12 plas
+F 1357 3 12 tic,
+- 1360
+F 1361 1 12 My 
+F 1363 2 12 pla
+F 1365 2 12 ti
+F 1367 1 12 num 
+F 1369 3 12 hit
+- 1372
+F 1373 1 12 You 
+F 1375 3 12 git, 
+F 1379 2 12 gud
+F 1381 1 12 da 
+F 1383 2 12 gud
+F 1385 1 12 da
+- 1386
+F 1387 1 12 Get 
+F 1389 1 12 up 
+F 1391 1 12 with 
+F 1393 3 12 it
+- 1396
+F 1397 1 12 Me 
+F 1399 1 12 on 
+F 1401 1 12 the 
+F 1403 4 12 mic,
+- 1407
+F 1411 1 12 Be 
+F 1413 2 12 so
+F 1415 2 12 phis
+F 1417 2 12 ti
+F 1419 2 12 ca
+F 1421 3 12 ted
+- 1424
+F 1425 2 12 D
+F 1427 1 12 J's 
+F 1429 2 12 ar
+F 1431 2 12 ti
+F 1433 2 12 cu
+F 1435 2 12 la
+F 1437 4 12 ted,
+- 1441
+F 1445 1 12 Me 
+F 1447 1 12 on 
+F 1449 1 12 the 
+F 1451 4 12 mic
+- 1456
+F 1466 1 12 Here 
+F 1467 1 12 we 
+F 1468 2 12 go
+- 1470
+: 1475 2 20 Dub 
+* 1479 2 27 dub 
+: 1483 2 20 dub 
+: 1487 1 27 du
+: 1489 1 25 du
+: 1491 2 23 dub 
+: 1495 2 23 dub 
+: 1499 3 23 dub
+- 1502
+: 1505 1 27 Du
+: 1507 2 23 dub 
+: 1511 2 27 dub 
+: 1515 2 23 dub 
+: 1519 1 27 du
+: 1521 1 23 du
+: 1523 2 20 dub 
+: 1527 2 20 dub 
+* 1531 3 20 dub
+- 1534
+: 1539 2 20 Dub 
+* 1543 2 27 dub 
+: 1547 2 20 dub 
+: 1551 1 27 du
+: 1553 1 25 du
+: 1555 2 23 dub 
+: 1559 2 23 dub 
+: 1563 3 23 dub
+- 1566
+: 1569 1 27 Du
+: 1571 3 23 dub
+: 1575 2 27 dub 
+: 1579 2 23 dub 
+: 1583 1 27 du
+: 1585 1 23 du
+: 1587 2 20 dub 
+: 1591 2 20 dub 
+* 1595 3 20 dub
+- 1598
+: 1601 1 24 Ma
+: 1603 3 26 ri
+: 1607 1 26 a 
+: 1609 1 24 be
+: 1611 2 26 lieve 
+: 1615 1 26 me 
+: 1617 1 24 I 
+: 1619 1 22 like 
+: 1621 2 22 it 
+: 1625 3 22 loud
+- 1628
+: 1633 1 24 Ma
+: 1635 3 26 ri
+: 1639 1 26 a 
+: 1641 1 24 be
+: 1643 2 26 lieve 
+: 1647 1 26 me 
+: 1649 1 24 I 
+: 1651 1 22 like 
+: 1653 2 22 it 
+: 1657 3 22 loud
+- 1660
+: 1665 1 24 Ma
+: 1667 3 26 ri
+: 1671 1 26 a 
+: 1673 1 24 be
+: 1675 2 26 lieve 
+: 1679 1 26 me 
+: 1681 1 24 I 
+: 1683 1 22 like 
+: 1685 2 22 it 
+: 1689 3 22 loud
+- 1692
+F 1697 1 24 My 
+F 1699 4 24 ra
+F 1703 1 24 dio 
+F 1705 2 24 be
+F 1707 3 24 lieves 
+F 1711 1 24 me 
+F 1713 1 24 I 
+F 1715 1 24 like 
+F 1717 3 24 it 
+F 1727 4 24 loud
+- 1741 1849
+- 1849
+: 1859 2 20 Dub 
+: 1863 2 27 dub 
+: 1867 2 20 dub 
+: 1871 1 27 du
+: 1873 1 25 du
+: 1875 2 23 dub 
+: 1879 2 23 dub 
+: 1883 3 23 dub
+- 1886
+: 1889 1 27 Du 
+: 1891 2 23 dub 
+: 1895 2 27 dub 
+: 1899 2 23 dub 
+: 1903 1 27 du
+: 1905 1 23 du
+: 1907 2 20 dub 
+: 1911 2 20 dub 
+* 1915 3 20 dub
+- 1918
+: 1923 2 20 Dub 
+* 1927 2 27 dub 
+: 1931 2 20 dub 
+: 1935 1 27 du
+: 1937 1 25 du
+: 1939 2 23 dub 
+: 1943 2 23 dub 
+: 1947 3 23 dub
+- 1950
+: 1953 1 27 Du 
+: 1955 2 23 dub 
+: 1959 2 27 dub 
+: 1963 2 23 dub 
+: 1967 1 27 du
+: 1969 1 23 du
+: 1971 2 20 dub 
+: 1975 2 20 dub 
+* 1979 3 20 dub
+- 1982
+: 1987 2 20 Dub 
+: 1991 2 27 dub 
+: 1995 2 20 dub 
+: 1999 1 27 du
+: 2001 1 25 du
+: 2003 2 23 dub 
+: 2007 2 23 dub 
+: 2011 3 23 dub
+- 2014
+: 2017 1 27 Du 
+: 2019 2 23 dub 
+: 2023 2 27 dub 
+: 2027 2 23 dub 
+: 2031 1 27 du
+: 2033 1 23 du
+: 2035 2 20 dub 
+: 2039 2 20 dub 
+* 2043 3 20 dub
+- 2047
+F 2057 8 12 Thank you!
+E

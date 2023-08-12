@@ -17,8 +17,8 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click();
 
-    await expect(page.getByTestId('song-e2e-single-english-1995.json')).toBeVisible();
-    await navigateWithKeyboard(page, 'song-e2e-multitrack-polish-1994.json');
+    await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
+    await navigateWithKeyboard(page, 'song-e2e-multitrack-polish-1994');
 
     await page.keyboard.press('Enter'); // focus
     await expect(page.getByTestId('next-step-button')).toBeVisible();

@@ -1,7 +1,8 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`convertSongToTxt > should properly convert the song 1`] = `
-"#ARTIST:E2ETest
+"#ID:multitrack
+#ARTIST:E2ETest
 #TITLE:Multitrack
 #BPM:350
 #REALBPM:100

@@ -108,15 +108,15 @@ describe('convertTxtToSong', () => {
             const songs = readdirSync(SONGS_FOLDER);
 
             for (const file of songs) {
-                if (file === 'index.json' || file === 'dummy.json' || file === '.DS_Store') continue;
+                if (!file.endsWith('.txt')) continue;
 
                 // uncomment to get the failing file
                 // console.log(file);
-                const song: Song = JSON.parse(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+                const txt = readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' });
 
-                const txt = convertSongToTxt(song);
+                const song = convertTxtToSong(txt);
 
-                expect(convertTxtToSong(txt)).toEqual(song);
+                expect(convertSongToTxt(song)).toEqual(txt);
             }
         });
 

@@ -1,4 +1,5 @@
-import { Song } from 'interfaces';
+import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import { readFileSync } from 'fs';
 import { generateSection, generateSong } from 'utils/testUtils';
 import generatePlayerChanges from './generatePlayerChanges';
 
@@ -38,13 +39,14 @@ describe('generatePlayerChanges', () => {
     });
 
     it.each([
-        [require('../../../../../public/songs/Big Cyc-Swiat Wedlug Kiepskich.json')],
-        [require('../../../../../public/songs/Cailin Russo & Chrissy Costanza-Phoenix.json')],
-        [require('../../../../../public/songs/T.Love-King.json')],
-        [require('../../../../../public/songs/Ed Sheeran-Galway Girl.json')],
-        [require('../../../../../public/songs/Muse-Madness.json')],
-        [require('../../../../../public/songs/Jeden Osiem L-Jak zapomniec.json')],
-    ])('should handle real life examples better', (song: Song) => {
-        expect(generatePlayerChanges(song)).toMatchSnapshot();
+        ['./public/songs/big-cyc-facet-to-swinia.txt'],
+        ['./public/songs/cailin-russo-chrissy-costanza-phoenix.txt'],
+        ['./public/songs/tlove-king.txt'],
+        ['./public/songs/ed-sheeran-galway-girl.txt'],
+        ['./public/songs/muse-madness.txt'],
+        ['./public/songs/jeden-osiem-l-jak-zapomniec.txt'],
+    ])('should handle real life examples better', (song: string) => {
+        const songTxt = readFileSync(song, { encoding: 'utf-8' });
+        expect(generatePlayerChanges(convertTxtToSong(songTxt))).toMatchSnapshot();
     });
 });

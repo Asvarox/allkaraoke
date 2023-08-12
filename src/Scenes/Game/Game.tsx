@@ -7,16 +7,16 @@ import TransitionWrapper from '../../Elements/TransitionWrapper';
 import Singing from './Singing/Singing';
 
 interface Props {
-    file?: string;
+    songId?: string;
 }
 
 function Game(props: Props) {
-    const [singSetup, setSingSetup] = useState<(SingSetup & { file: string; video: string }) | null>(null);
-    const [preselectedSong, setPreselectedSong] = useState<string | null>(props.file ?? null);
+    const [singSetup, setSingSetup] = useState<(SingSetup & { songId: string; video: string }) | null>(null);
+    const [preselectedSong, setPreselectedSong] = useState<string | null>(props.songId ?? null);
     const [resetKey, setResetKey] = useState(0);
 
     const handleSelect = useCallback(
-        (setup: SingSetup & { file: string; video: string }) => {
+        (setup: SingSetup & { songId: string; video: string }) => {
             setSingSetup(setup);
         },
         [setSingSetup],
@@ -35,10 +35,10 @@ function Game(props: Props) {
                         }}
                         key={resetKey}
                         video={singSetup.video}
-                        songFile={singSetup.file}
+                        songId={singSetup.songId}
                         singSetup={singSetup}
                         returnToSongSelection={() => {
-                            setPreselectedSong(singSetup.file);
+                            setPreselectedSong(singSetup.songId);
                             setSingSetup(null);
                         }}
                     />

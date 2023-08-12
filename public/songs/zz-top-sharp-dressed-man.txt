@@ -1,0 +1,205 @@
+#ID:zz-top-sharp-dressed-man
+#ARTIST:ZZ Top
+#TITLE:Sharp Dressed Man
+#CREATOR:NoeliaMicaela
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
+#BPM:496
+#REALBPM:123
+#YEAR:1983
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ZZ%20Top&cancion=Sharp%20Dressed%20Man
+#VIDEOID:Pn2-b_opVTo
+#VIDEOGAP:0
+#LANGUAGE:English
+#GAP:23022,016129032258
+: 33 14 3 Clean 
+: 49 6 0 shirt
+: 57 16 3 ~,
+- 73
+: 97 12 3 new 
+: 113 24 3 shoes
+- 137
+: 156 6 2 and 
+: 164 6 3 I 
+: 172 2 0 don't 
+: 178 9 3 know 
+: 188 2 0 where 
+: 193 6 3 I 
+: 201 6 5 am 
+: 209 9 6 go
+: 219 6 5 in' 
+: 227 14 3 to
+: 243 12 2 ~
+- 255 256
+- 256
+: 289 12 3 Silk 
+: 305 6 0 suit
+: 313 12 3 ~,
+- 325
+: 353 12 3 black 
+: 369 6 0 tie
+: 377 12 3 ~
+- 389
+: 409 6 3 I 
+: 418 12 3 don't 
+: 433 6 3 need 
+: 441 6 0 a 
+: 449 6 3 rea
+: 457 6 6 son 
+* 467 12 7 why
+: 483 12 7 ~
+: 499 12 7 ~
+- 511
+: 534 8 10 They 
+: 545 8 10 come 
+: 558 6 10 run
+: 566 6 10 nin' 
+: 575 6 10 just 
+: 583 6 7 as 
+: 591 6 10 fast 
+: 599 6 10 as 
+: 607 6 7 they 
+: 615 22 12 can
+- 637
+: 647 6 -5 Coz' 
+: 655 6 5 ev
+: 663 6 5 ery 
+: 671 12 5 girls 
+: 687 6 3 cra
+: 695 5 0 zy
+- 700
+: 703 6 0 'bout 
+: 712 5 -5 a 
+: 719 14 0 sharp 
+: 735 10 0 dressed 
+: 749 6 0 man
+* 756 12 3 ~
+- 768 1017
+- 1017
+: 1050 14 3 Gold 
+: 1066 6 0 watch
+: 1074 12 3 ~,
+- 1086
+: 1107 6 3 dia
+: 1114 8 0 mond 
+: 1124 16 3 ring
+- 1140
+: 1173 6 2 Well 
+: 1181 6 3 I 
+: 1189 2 0 ain't 
+: 1194 9 3 mis
+: 1205 2 0 sing 
+: 1212 7 3 not 
+: 1220 5 5 a 
+: 1226 10 6 sin
+: 1237 6 5 gle 
+: 1245 14 3 thing
+: 1261 12 2 ~
+- 1273 1276
+- 1276
+: 1309 12 3 Cuff
+: 1323 8 0 links
+: 1332 12 3 ~,
+- 1344
+: 1369 12 3 stick 
+: 1388 14 3 pin
+- 1402
+: 1428 6 2 when 
+: 1436 6 3 I 
+: 1444 2 0 step 
+: 1452 8 3 out 
+: 1461 2 0 I'm 
+: 1465 5 3 gon
+: 1472 5 5 na 
+: 1480 9 6 do 
+: 1490 8 5 you 
+: 1499 15 3 in
+: 1515 12 2 ~
+- 1527
+: 1552 8 10 They 
+: 1564 8 10 come 
+: 1577 6 10 run
+: 1585 6 10 nin' 
+: 1594 6 10 just 
+: 1602 6 7 as 
+: 1610 6 10 fast 
+: 1618 6 10 as 
+: 1626 6 7 they 
+: 1634 22 12 can
+- 1656
+: 1664 6 -5 Coz' 
+* 1672 6 5 ev
+: 1680 6 5 ery 
+: 1688 12 5 girl's 
+: 1704 6 3 cra
+: 1712 5 0 zy
+- 1717
+: 1720 6 -5 'bout 
+: 1729 5 -5 a 
+: 1736 14 0 sharp 
+: 1752 14 0 dressed 
+* 1768 22 0 man
+- 1790 4069
+- 4069
+: 4102 9 3 Top 
+: 4118 11 3 coat,
+- 4129 4130
+- 4130
+: 4163 9 3 top 
+: 4177 6 3 hat
+: 4184 10 5 ~
+- 4194
+: 4217 6 0 And 
+: 4225 6 3 I 
+: 4233 6 0 don't 
+: 4241 6 5 wor
+: 4249 6 0 ry 
+: 4257 6 3 coz 
+: 4265 6 5 my 
+: 4273 6 7 wal
+: 4281 6 5 let's 
+: 4289 14 5 fat
+: 4305 14 3 ~
+- 4319 4322
+- 4322
+: 4355 10 3 Black 
+: 4370 20 3 shades,
+- 4390
+: 4419 10 3 white 
+: 4434 20 3 gloves
+- 4454
+: 4482 6 3 look
+: 4490 6 0 in' 
+: 4498 6 3 sharp
+: 4506 6 2 ~,
+- 4512
+: 4530 6 7 look
+: 4538 6 6 in' 
+: 4546 6 3 for 
+* 4554 10 5 love
+: 4566 4 3 ~
+: 4572 12 0 ~
+- 4584
+: 4598 8 10 They 
+: 4609 8 10 come 
+: 4623 6 10 run
+: 4631 6 10 nin' 
+: 4640 6 10 just 
+: 4648 6 7 as 
+: 4656 6 10 fast 
+: 4664 6 10 as 
+: 4672 6 7 they 
+: 4680 22 12 can
+- 4702
+: 4710 6 -5 Coz' 
+: 4718 6 5 ev
+: 4726 6 5 ery 
+* 4734 12 5 girl's 
+: 4750 6 3 cra
+: 4758 5 0 zy
+- 4763
+: 4769 6 -5 'bout 
+: 4778 4 -5 a 
+* 4784 14 0 sharp 
+* 4800 14 0 dressed 
+* 4816 16 0 man
+E

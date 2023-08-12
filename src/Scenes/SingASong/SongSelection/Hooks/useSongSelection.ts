@@ -21,7 +21,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     const [preselected, setPreselected] = useState(false);
     useEffect(() => {
         if (!preselected && songList.length) {
-            const preselectedSongIndex = songList.findIndex((song) => song.file === preselectedSong);
+            const preselectedSongIndex = songList.findIndex((song) => song.id === preselectedSong);
             const firstNewSongIndex = songList.findIndex((song) => song.isNew);
 
             let songIndex = randomInt(0, songList.length - 1);
@@ -35,7 +35,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
     useEffect(() => {
         if (preselected && songList.length && songList[focusedSong]) {
-            navigate(`/game/${encodeURIComponent(songList[focusedSong].file)}`, { replace: true, smooth: false });
+            navigate(`/game/${encodeURIComponent(songList[focusedSong].id)}`, { replace: true, smooth: false });
         }
     }, [preselected, focusedSong, songList]);
 

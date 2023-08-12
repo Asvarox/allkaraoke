@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { DataObject, Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
+import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
 import { Button, Grid, IconButton } from '@mui/material';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
@@ -123,23 +123,6 @@ export default function SongList(props: Props) {
                             data-test="download-song"
                             data-song={row.original.id}>
                             <Download />
-                        </IconButton>
-                        <IconButton
-                            title="Download .json file"
-                            onClick={async () => {
-                                const songData = await SongDao.get(row.original.id);
-                                const json = JSON.stringify(songData, undefined, 2);
-
-                                const anchor = document.createElement('a');
-                                anchor.href = `data:application/json;charset=utf-8,${encodeURIComponent(json)}`;
-                                anchor.download = SongDao.generateSongFile(songData);
-                                document.body.appendChild(anchor);
-                                anchor.click();
-                                document.body.removeChild(anchor);
-                            }}
-                            data-test="download-song-json"
-                            data-song={row.original.id}>
-                            <DataObject />
                         </IconButton>
                         {!row.original.isDeleted && (
                             <IconButton

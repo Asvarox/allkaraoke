@@ -5,12 +5,12 @@ import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { Link } from 'wouter';
 
 interface Props {
-    file: string;
+    songId: string;
 }
 
 export default function Edit(props: Props) {
     useBackgroundMusic(false);
-    const song = useSong(props.file);
+    const song = useSong(props.songId);
 
     if (!song.data) return <>Loading</>;
 

@@ -1,0 +1,594 @@
+#ID:linkin-park-bleed-it-out
+#ARTIST:Linkin Park
+#TITLE:Bleed It Out
+#CREATOR:¡JKA!
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#BPM:396,69
+#REALBPM:144
+#YEAR:2007
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out
+#VIDEOID:OnuuYcqhzCE
+#VIDEOGAP:2
+#GENRE:Alt. Rock
+#LANGUAGE:English
+#EDITION:Guitar Hero Warriors of Rock
+#GAP:9716,864554185888
+- -25 1
+- 1
+F 26 5 0 Yeah 
+F 32 3 0 here 
+F 36 2 0 we 
+F 41 5 0 go 
+F 48 1 0 for 
+F 51 3 0 the 
+F 55 3 0 hun
+F 60 2 0 dredth 
+F 66 8 0 time
+- 74
+F 77 4 0 hand 
+F 83 2 0 gre
+F 86 3 0 nade 
+F 91 4 0 pins 
+F 97 2 0 in 
+F 100 4 0 ev
+F 105 4 0 ery 
+F 111 8 0 line
+- 119
+F 123 4 0 throw 
+F 128 3 0 'em 
+F 132 3 0 up 
+F 137 2 0 and 
+F 140 3 0 let 
+F 147 2 0 some
+F 150 3 0 thin' 
+F 157 7 0 shine
+- 164
+F 168 5 0 go
+F 174 2 0 ing 
+F 177 4 0 out 
+F 183 2 0 of 
+F 186 4 0 my 
+F 192 5 0 fuck
+F 198 4 0 ing 
+F 203 5 0 mind
+- 208
+F 215 3 0 fil
+F 220 3 0 thy 
+F 224 5 0 mouth, 
+F 236 4 0 no 
+F 241 1 0 ex
+F 247 4 0 cuse
+- 251
+F 259 4 0 find 
+F 264 2 0 a 
+F 267 2 0 new 
+F 273 3 0 place 
+F 279 1 0 to 
+F 281 4 0 hang 
+F 287 2 0 this 
+F 293 4 0 noose
+- 297
+F 305 3 0 string 
+F 310 3 0 me 
+F 314 2 0 up 
+F 319 3 0 from 
+F 323 2 0 a
+F 327 4 0 top 
+F 333 3 0 these 
+F 338 4 0 roofs
+- 342
+F 350 3 0 knot 
+F 354 2 0 it 
+F 358 3 0 tight 
+F 364 2 0 so 
+F 367 3 0 I 
+F 372 4 0 won't 
+F 378 3 0 get 
+F 382 4 0 loose
+- 386
+F 394 4 0 Truth 
+F 400 3 0 is 
+F 406 2 0 you 
+F 411 2 0 can 
+F 417 4 0 stop 
+F 423 3 0 and 
+F 429 6 0 stare
+- 435
+F 440 3 0 bled 
+F 445 2 0 my
+F 449 4 0 self 
+F 455 3 0 out 
+F 459 2 0 and 
+F 463 4 0 no 
+F 468 3 0 one 
+F 474 6 0 cares
+- 480
+F 486 3 0 dug 
+F 490 2 0 a 
+F 496 3 0 trench 
+F 501 3 0 out, 
+F 509 3 0 laid 
+F 514 4 0 down 
+F 520 2 0 there
+- 522
+F 525 1 0 with 
+F 527 1 0 a 
+F 532 4 0 sho
+F 537 2 0 vel 
+F 540 2 0 up 
+F 545 4 0 out 
+F 550 2 0 of 
+F 553 3 0 reach 
+F 560 3 0 some
+F 565 5 0 where
+- 570
+F 576 5 0 Yeah 
+F 588 3 0 some
+F 593 3 0 one 
+F 599 4 0 pour 
+F 604 2 0 it 
+F 607 6 0 in
+- 613
+F 622 3 0 make 
+F 627 1 0 it 
+F 629 1 0 a 
+F 633 2 0 dirt 
+F 638 4 0 dance 
+F 646 3 0 floor 
+F 650 2 0 a
+F 654 5 0 gain
+- 659
+F 667 3 0 Say 
+F 671 1 0 your 
+F 676 5 0 prayers 
+F 683 3 0 and 
+F 690 4 0 stomp 
+F 696 2 0 it 
+F 699 1 0 out
+- 700
+F 703 2 0 when 
+F 706 3 0 they 
+F 713 3 0 bring 
+F 718 3 0 that 
+F 724 3 0 cho
+F 728 1 0 rus 
+F 733 4 0 in
+- 737
+: 740 3 4 I 
+: 747 3 6 bleed 
+: 751 5 4 it 
+: 758 6 6 out
+- 764
+: 769 4 6 dig
+: 774 4 4 gin' 
+: 780 3 6 dee
+: 786 3 4 per 
+: 791 4 6 just 
+: 797 2 4 to 
+: 802 6 8 throw 
+: 809 4 8 it 
+: 814 4 8 a
+: 819 4 6 way
+- 823
+: 831 4 4 I 
+: 838 4 6 bleed 
+: 843 4 4 it 
+: 848 6 6 out
+- 854
+: 860 4 6 dig
+: 865 3 4 gin' 
+: 870 4 6 dee
+: 877 3 4 per 
+: 882 4 6 just 
+: 888 2 4 to 
+: 893 6 8 throw 
+: 900 3 8 it 
+: 904 4 8 a
+: 910 4 6 way
+- 914
+: 922 4 4 I 
+: 928 4 6 bleed 
+: 933 4 4 it 
+: 939 6 6 out
+- 945
+: 951 3 6 dig
+: 955 3 4 gin' 
+: 962 3 6 dee
+: 967 3 4 per 
+: 973 3 6 just 
+: 978 2 4 to 
+: 985 4 8 throw 
+: 990 4 8 it 
+: 996 3 8 a
+: 1001 5 6 way
+- 1007
+: 1018 3 6 just 
+: 1024 2 4 to 
+* 1029 5 9 throw 
+: 1036 3 9 it 
+* 1040 4 9 a
+: 1046 6 8 way
+- 1052
+: 1063 3 6 just 
+: 1069 2 4 to 
+: 1075 5 9 throw 
+* 1081 3 9 it 
+: 1086 4 9 a
+* 1092 5 8 way
+- 1097
+: 1103 3 4 I 
+: 1109 4 6 bleed 
+: 1114 4 4 it 
+: 1120 5 6 out, 
+F 1132 7 0 go, 
+F 1143 4 0 stop 
+F 1149 2 0 the 
+F 1154 8 0 show
+- 1162
+F 1166 4 0 Chop
+F 1171 2 0 py 
+F 1174 5 0 words 
+F 1180 1 0 in 
+F 1182 2 0 a 
+F 1189 3 0 slop
+F 1193 3 0 py 
+F 1199 7 0 flow
+- 1206
+F 1211 3 0 shot
+F 1217 4 0 gun 
+F 1222 3 0 op
+F 1227 5 0 era, 
+F 1234 3 0 lock 
+F 1239 3 0 and 
+F 1244 6 0 load
+- 1250
+F 1256 4 0 cock 
+F 1261 1 0 it 
+F 1265 4 0 back 
+F 1271 1 0 and 
+F 1273 4 0 then 
+F 1279 3 0 watch 
+F 1285 2 0 it 
+F 1290 6 0 go
+- 1296
+F 1302 4 0 ma
+F 1307 2 0 ma 
+F 1310 4 0 help 
+F 1316 4 0 me, 
+F 1323 4 0 I've 
+F 1330 3 0 been 
+F 1336 4 0 cursed
+- 1340
+F 1347 3 0 death 
+F 1352 1 0 is 
+F 1356 4 0 rol
+F 1361 2 0 lin' 
+F 1364 4 0 in 
+F 1370 4 0 ev
+F 1375 3 0 ery 
+F 1380 4 0 verse
+- 1384
+F 1392 4 0 can
+F 1397 1 0 dy 
+F 1401 3 0 paint 
+F 1405 2 0 on 
+F 1409 1 0 his 
+F 1414 4 0 brand 
+F 1420 3 0 new 
+F 1426 4 0 hearse
+- 1430
+F 1438 3 0 can't 
+F 1443 1 0 con
+F 1446 4 0 tain 
+F 1451 2 0 him 
+F 1454 4 0 he 
+F 1460 4 0 knows 
+F 1465 3 0 he 
+F 1470 5 0 works
+- 1476
+F 1489 2 0 This 
+F 1494 4 0 hurts, 
+F 1506 4 0 I 
+F 1511 4 0 won't 
+F 1516 6 0 lie
+- 1522
+F 1529 3 0 does
+F 1533 2 0 n't 
+F 1537 4 0 mat
+F 1542 2 0 ter 
+F 1545 4 0 how 
+F 1551 5 0 hard 
+F 1557 2 0 I 
+F 1563 6 0 try
+- 1569
+F 1574 4 0 half 
+F 1579 1 0 the 
+F 1583 4 0 words 
+F 1591 3 0 don't 
+F 1596 4 0 mean 
+F 1601 1 0 a 
+F 1605 2 0 thing
+- 1607
+F 1610 1 0 and 
+F 1612 4 0 I 
+F 1618 4 0 know 
+F 1624 1 0 that 
+F 1626 2 0 I 
+F 1630 3 0 won't 
+F 1635 2 0 be 
+F 1642 3 0 sa
+F 1646 2 0 tis
+F 1652 4 0 fied
+- 1656
+F 1659 2 0 so 
+F 1663 6 0 why 
+F 1677 3 0 try 
+F 1681 2 0 ig
+F 1687 4 0 nor
+F 1692 1 0 in' 
+F 1695 5 0 him?
+- 1700
+F 1710 3 0 make 
+F 1715 1 0 it 
+F 1717 1 0 a 
+F 1720 3 0 dirt 
+F 1726 4 0 dance 
+F 1734 2 0 floor 
+F 1737 1 0 a
+F 1741 5 0 gain
+- 1746
+F 1755 3 0 Say 
+F 1759 1 0 your 
+F 1764 6 0 prayers 
+F 1771 2 0 and 
+F 1778 4 0 stomp 
+F 1783 2 0 it 
+F 1786 2 0 out
+- 1788
+F 1791 1 0 when 
+F 1794 2 0 they 
+F 1800 4 0 bring 
+F 1805 3 0 that 
+F 1811 4 0 cho
+F 1816 1 0 rus 
+F 1821 4 0 in
+- 1825
+: 1828 4 4 I 
+: 1835 4 6 bleed 
+: 1840 5 4 it 
+: 1847 6 6 out
+- 1853
+: 1858 4 6 dig
+: 1863 4 4 gin' 
+: 1868 3 6 dee
+: 1874 3 4 per 
+: 1880 4 6 just 
+: 1886 3 4 to 
+: 1891 5 8 throw 
+: 1898 3 8 it 
+: 1902 4 8 a
+: 1908 4 6 way
+- 1912
+: 1919 4 4 I 
+: 1926 4 6 bleed 
+: 1931 4 4 it 
+: 1936 6 6 out
+- 1942
+: 1948 4 6 dig
+: 1953 4 4 gin' 
+: 1959 4 6 dee
+: 1965 3 4 per 
+: 1970 4 6 just 
+: 1976 3 4 to 
+: 1982 5 8 throw 
+: 1988 3 8 it 
+: 1992 4 8 a
+: 1998 4 6 way
+- 2002
+: 2009 4 4 I 
+: 2016 4 6 bleed 
+: 2021 4 4 it 
+: 2026 6 6 out
+- 2032
+: 2038 4 6 dig
+: 2043 4 4 gin' 
+: 2049 3 6 dee
+: 2055 3 4 per 
+: 2060 4 6 just 
+: 2066 3 4 to 
+: 2072 5 8 throw 
+: 2079 2 8 it 
+: 2083 4 8 a
+: 2089 5 6 way
+- 2095
+: 2106 3 6 just 
+: 2111 2 4 to 
+: 2117 5 9 throw 
+: 2124 3 9 it 
+: 2128 4 9 a
+: 2134 6 8 way
+- 2140
+: 2151 3 6 just 
+: 2157 2 4 to 
+: 2162 5 9 throw 
+: 2169 4 9 it 
+: 2174 4 9 a
+: 2179 5 8 way
+- 2184
+: 2191 3 4 I 
+: 2197 4 6 bleed 
+: 2202 4 4 it 
+: 2208 27 6 out
+- 2236
+: 2247 4 4 I've 
+* 2254 7 11 o
+: 2264 4 9 pened 
+: 2271 6 8 up 
+: 2281 6 9 these 
+: 2293 4 9 skies
+: 2298 23 8 ~
+- 2322
+: 2338 3 8 I'll 
+: 2345 7 13 make 
+: 2355 7 13 you 
+: 2366 8 13 face 
+* 2378 30 13 this
+- 2409
+: 2429 3 4 I 
+* 2436 8 11 pulled 
+: 2446 4 9 my
+: 2453 6 8 self 
+: 2464 7 9 so 
+: 2474 4 9 far
+: 2479 23 8 ~
+- 2503
+* 2520 4 8 I'll 
+* 2525 12 13 make 
+: 2549 15 13 you 
+: 2571 31 13 face 
+: 2616 28 13 this 
+: 2660 24 13 now
+- 2710 2800
+- 2800
+: 2826 4 4 I 
+: 2833 4 6 bleed 
+: 2838 5 4 it 
+: 2844 6 6 out
+- 2850
+: 2856 3 6 dig
+: 2861 3 4 gin' 
+: 2866 3 6 dee
+: 2872 3 4 per 
+: 2877 4 6 just 
+: 2883 3 4 to 
+: 2888 6 8 throw 
+: 2895 3 8 it 
+: 2900 3 8 a
+: 2905 4 6 way
+- 2909
+: 2917 4 4 I 
+: 2924 4 6 bleed 
+: 2929 4 4 it 
+: 2934 6 6 out
+- 2940
+: 2946 4 6 dig
+: 2951 4 4 gin' 
+: 2956 4 6 dee
+: 2963 3 4 per 
+: 2968 4 6 just 
+: 2974 2 4 to 
+: 2980 5 8 throw 
+: 2986 3 8 it 
+: 2991 3 8 a
+: 2996 4 6 way
+- 3000
+: 3007 4 4 I 
+: 3014 4 6 bleed 
+: 3019 4 4 it 
+: 3024 6 6 out
+- 3030
+: 3036 4 6 dig
+: 3041 4 4 gin' 
+: 3047 3 6 dee
+: 3053 3 4 per 
+: 3058 4 6 just 
+: 3064 2 4 to 
+: 3070 4 8 throw 
+: 3075 4 8 it 
+: 3081 4 8 a
+: 3087 5 6 way
+- 3093
+: 3104 3 6 just 
+: 3110 3 4 to 
+: 3115 5 9 throw 
+: 3121 4 9 it 
+: 3126 4 9 a
+: 3132 6 8 way
+- 3138
+: 3149 3 6 just 
+: 3155 2 4 to 
+: 3160 5 9 throw 
+: 3166 4 9 it 
+: 3171 4 9 a
+: 3177 5 8 way
+- 3182
+: 3188 4 4 I 
+: 3195 3 6 bleed 
+: 3200 5 4 it 
+: 3207 6 6 out
+- 3213
+: 3218 4 6 dig
+: 3223 4 4 gin' 
+: 3228 3 6 dee
+: 3234 3 4 per 
+: 3240 4 6 just 
+: 3246 2 4 to 
+: 3250 6 8 throw 
+: 3258 3 8 it 
+: 3262 4 8 a
+: 3267 4 6 way
+- 3271
+: 3279 4 4 I 
+: 3286 4 6 bleed 
+: 3291 4 4 it 
+: 3296 6 6 out
+- 3302
+: 3308 4 6 dig
+: 3313 4 4 gin' 
+: 3318 4 6 dee
+: 3325 3 4 per 
+: 3330 4 6 just 
+: 3336 3 4 to 
+: 3342 5 8 throw 
+: 3348 3 8 it 
+: 3352 4 8 a
+: 3358 4 6 way
+- 3362
+: 3369 4 4 I 
+: 3376 4 6 bleed 
+: 3381 4 4 it 
+: 3386 6 6 out
+- 3392
+: 3398 4 6 dig
+: 3403 4 4 gin' 
+: 3409 3 6 dee
+: 3415 3 4 per 
+: 3420 4 6 just 
+: 3426 2 4 to 
+: 3432 5 8 throw 
+: 3439 2 8 it 
+: 3443 4 8 a
+: 3449 5 6 way
+- 3455
+* 3466 3 6 just 
+* 3472 2 4 to 
+: 3477 5 9 throw 
+: 3484 4 9 it 
+: 3489 4 9 a
+: 3494 6 8 way
+- 3500
+* 3511 3 6 just 
+* 3517 2 4 to 
+: 3522 5 9 throw 
+: 3529 4 9 it 
+: 3534 4 9 a
+: 3539 5 8 way
+- 3544
+: 3551 3 4 I 
+: 3557 4 6 bleed 
+: 3562 4 4 it 
+: 3568 27 6 out
+- 3621 3706
+- 3706
+: 3732 3 4 I 
+: 3738 4 6 bleed 
+: 3743 4 4 it 
+: 3749 27 6 out
+- 3802 3887
+- 3887
+: 3913 3 4 I 
+: 3920 4 6 bleed 
+: 3925 4 4 it 
+: 3930 17 6 out
+: 3948 1 4 ~
+E

@@ -1,21 +1,21 @@
 import { BrowserContext, Page } from '@playwright/test';
 import { readFileSync, readdirSync } from 'fs';
 import { getSongPreview } from '../src/Songs/utils';
+import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 
 const songs = readdirSync('./tests/fixtures/songs/')
     .filter((file) => file.endsWith('.json'))
     .map((file) => ({
-        file,
         song: JSON.parse(readFileSync(`./tests/fixtures/songs/${file}`, { encoding: 'utf-8' })),
     }));
 
 export const mockSongs = async ({ page }: { page: Page; context: BrowserContext }) => {
-    const index = songs.map(({ file, song }) => getSongPreview(file, song));
+    const index = songs.map(({ song }) => getSongPreview(song));
     await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
 
     for (const song of songs) {
-        await page.route(`/songs/${song.file}`, (route) =>
-            route.fulfill({ status: 200, body: JSON.stringify(song.song) }),
+        await page.route(`/songs/${song.song.id}.txt`, (route) =>
+            route.fulfill({ status: 200, body: convertSongToTxt(song.song) }),
         );
     }
 };

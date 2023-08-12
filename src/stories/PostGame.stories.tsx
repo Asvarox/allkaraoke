@@ -1,11 +1,12 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
-import { DetailedScore, GAME_MODE, SingSetup, Song } from 'interfaces';
+import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import { DetailedScore, GAME_MODE, SingSetup } from 'interfaces';
 import { ComponentProps } from 'react';
 import { ValuesType } from 'utility-types';
 import tuple from 'utils/tuple';
-import song from '../../public/songs/2 Plus 1-Chodz, Pomaluj Mój Swiat.json';
+import song from '../../public/songs/2-plus-1-chodz-pomaluj-moj-swiat.txt';
 
 interface StoryArgs {
     player1Score: number;
@@ -95,7 +96,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
             width={1980}
             height={1080}
             onClickSongSelection={() => undefined}
-            song={song as Song}
+            song={convertTxtToSong(song)}
             highScores={[
                 {
                     singSetupId: 'some-other-sings1',

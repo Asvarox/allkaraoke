@@ -46,7 +46,7 @@ export default function GetSongsBPMs(props: {}) {
                     const response = await fetch(`https://api.getsongbpm.com/search/?${params}`);
                     const getSongBPMData: { search: GetSongBpmSearchEntry[] } = await response.json();
 
-                    bpms[song.file] = Array.isArray(getSongBPMData.search) ? getSongBPMData.search[0] || null : null;
+                    bpms[song.id] = Array.isArray(getSongBPMData.search) ? getSongBPMData.search[0] || null : null;
                 }
                 console.log(bpms);
             })();

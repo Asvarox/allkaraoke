@@ -30,7 +30,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await test.step('Song list is available without connecting', async () => {
         await remoteMic.getByTestId('menu-song-list').click();
 
-        await expect(await remoteMic.getByTestId('zzz-last-polish-1994.json')).toBeVisible();
+        await expect(await remoteMic.getByTestId('zzz-last-polish-1994')).toBeVisible();
     });
     await test.step('Song list doesnt contain removed songs after connecting and contains new ones', async () => {
         await remoteMic.getByTestId('menu-microphone').click();
@@ -39,10 +39,8 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
         await page.getByTestId('save-button').click();
         await page.getByTestId('manage-songs').click();
         await page.getByTestId('edit-songs').click();
-        await page.locator('[data-test="hide-song"][data-song="zzz-last-polish-1994.json"]').click();
-        await expect(
-            await page.locator('[data-test="restore-song"][data-song="zzz-last-polish-1994.json"]'),
-        ).toBeVisible();
+        await page.locator('[data-test="hide-song"][data-song="zzz-last-polish-1994"]').click();
+        await expect(await page.locator('[data-test="restore-song"][data-song="zzz-last-polish-1994"]')).toBeVisible();
         await page.getByTestId('convert-song').click();
         await page.getByTestId('input-txt').fill(txtfile);
         await page.getByTestId('next-button').click();
@@ -53,7 +51,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
         await expect(await page.getByTestId('convert-song')).toBeVisible();
 
         await remoteMic.getByTestId('menu-song-list').click();
-        await expect(await remoteMic.getByTestId('zzz-last-polish-1994.json')).not.toBeVisible();
-        await expect(await remoteMic.getByTestId('convert-test.json')).toBeVisible();
+        await expect(await remoteMic.getByTestId('zzz-last-polish-1994')).not.toBeVisible();
+        await expect(await remoteMic.getByTestId('convert-test')).toBeVisible();
     });
 });

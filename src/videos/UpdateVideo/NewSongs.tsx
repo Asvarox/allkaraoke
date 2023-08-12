@@ -48,7 +48,7 @@ export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; dura
     const thumbSrc = `https://i3.ytimg.com/vi/${song.video}/${highResThumbnail ? 'maxresdefault' : 'hqdefault'}.jpg`;
 
     return (
-        <AbsoluteFill data-song={song.file}>
+        <AbsoluteFill data-song={song.id}>
             <CenterAbsoluteFill>
                 <SAnimated
                     animations={[
@@ -110,7 +110,7 @@ export const NewSongs: React.FC<{ songs: SongPreview[]; songPack?: ReactNode }> 
                     {songs.map((song, index) => {
                         const length = index === songs.length - 1 ? perSongTime * 1.5 : perSongTime;
                         return (
-                            <Series.Sequence durationInFrames={length} key={song.file} offset={index === 0 ? 0 : -10}>
+                            <Series.Sequence durationInFrames={length} key={song.id} offset={index === 0 ? 0 : -10}>
                                 <SingleSong song={song} durationInFrames={length} />
                             </Series.Sequence>
                         );

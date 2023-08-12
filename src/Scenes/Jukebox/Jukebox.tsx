@@ -32,7 +32,7 @@ function Jukebox(props: Props) {
 
     if (!shuffledList.length || !width || !height) return null;
 
-    const navigateUrl = `/game/${encodeURIComponent(shuffledList[currentlyPlaying].file)}`;
+    const navigateUrl = `/game/${encodeURIComponent(shuffledList[currentlyPlaying].id)}`;
 
     return (
         <SongPage
@@ -40,7 +40,7 @@ function Jukebox(props: Props) {
             height={height}
             songData={shuffledList[currentlyPlaying]}
             data-test="jukebox-container"
-            data-song={shuffledList[currentlyPlaying].file}
+            data-song={shuffledList[currentlyPlaying].id}
             background={
                 <VideoPlayer
                     autoplay

@@ -16,7 +16,7 @@ test('Edit song', async ({ page }) => {
     await page.getByTestId('manage-songs').click();
     await page.getByTestId('edit-songs').click();
 
-    await page.locator('[data-test="edit-song"][data-song="e2e-single-english-1995.json"]').click();
+    await page.locator('[data-test="edit-song"][data-song="e2e-single-english-1995"]').click();
 
     await expect(page.locator('[data-test="source-url"] input')).toHaveValue('sourceUrl');
 

@@ -1,0 +1,159 @@
+#ID:wojciech-bujoczek-krol-szamanow
+#ARTIST:Wojciech Bujoczek
+#TITLE:Król Szamanów
+#CREATOR:Currymalker
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#BPM:300,66
+#REALBPM:140
+#YEAR:2005
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w
+#VIDEOID:d4VbQ80v3Is
+#VIDEOGAP:0
+#GENRE:Anime
+#LANGUAGE:Polish
+#GAP:2941,195170624626
+: 20 2 0 O
+: 24 6 0 twórz
+: 32 4 0  o
+: 38 5 0 czy
+- 43
+: 46 6 0 Zza
+: 54 2 0  sie
+: 58 5 0 bie
+: 66 10 0  spójrz
+- 76
+: 82 6 1 Coś
+: 90 2 1  pię
+: 94 8 1 kne
+: 104 4 1 go
+* 110 2 1  wo
+* 114 2 3 ~
+: 118 6 1 kół
+: 126 12 1  stwórz
+- 138
+: 146 6 5 Świat
+: 154 2 5  ten
+: 158 6 5  nie
+: 166 2 5  jest
+* 170 4 3 ~
+: 178 4 3  ta
+: 184 4 3 ki
+: 190 2 3  zły
+: 194 4 5 ~
+: 200 3 3 ~
+- 203
+: 210 2 3 Po
+: 214 8 3 zwól
+: 224 4 3  tyl
+: 230 6 5 ko
+: 238 6 3  ma
+: 246 2 1 rzyć
+: 250 6 1  i
+: 258 9 -2  śnić
+- 267
+* 272 2 1 Tak
+: 276 4 8  wie
+: 282 4 8 le
+: 288 6 8  mo
+: 296 6 8 gę
+: 304 6 8  je
+: 312 6 1 szcze
+: 320 11 1  mieć
+- 331
+: 336 2 1 Tak
+: 340 4 8  wie
+: 346 2 8 le
+: 350 6 8  ście
+: 358 6 8 żek
+: 366 6 8  ży
+: 374 6 6 cia
+: 382 9 5  przejść
+- 391
+: 394 2 5 Czy
+: 398 2 5  to
+: 402 6 6  przez
+: 410 2 6 na
+: 414 6 5 cze
+: 422 2 1 nie
+* 426 2 1  me
+* 430 4 3 ~
+- 434
+: 440 2 3 Sza
+: 444 2 3 ma
+: 448 2 5 nów
+: 452 2 3  kró
+: 456 2 -4 ~
+* 460 6 -4 lem
+: 468 10 -2  kró
+: 480 4 5 lem
+: 486 4 3 ~
+: 492 9 3  być
+- 501
+: 504 2 3 Sza
+: 508 2 3 ma
+: 512 2 5 nów
+: 516 2 3  kró
+: 520 2 -4 ~
+: 524 6 -4 lem
+: 532 10 -2  kró
+* 544 4 5 lem
+* 550 4 3 ~
+: 556 9 3  być
+- 565
+: 570 2 5 Jeś
+: 574 2 5 li
+: 578 4 5  w so
+: 584 4 5 bie
+: 590 2 5  to
+: 594 2 5  masz
+: 598 4 6 ~
+: 604 13 5 ~
+- 617
+: 636 2 3 Jed
+: 640 2 5 nym
+: 644 4 3  z nich
+* 650 5 -4  się
+: 658 9 -2  stań
+- 687 760
+- 760
+: 780 2 8 Te
+: 784 2 8 raz
+: 788 6 8  cał
+: 796 2 8 kiem
+: 800 2 8  i
+: 804 2 8 na
+: 808 6 8 czej
+: 816 4 8  pa
+: 824 2 1 trzę
+: 828 4 1  na
+: 834 9 1  świat
+- 843
+: 848 2 8 Na
+: 852 6 8  każ
+: 860 2 8 de
+: 864 2 8  py
+: 868 2 8 ta
+: 872 2 8 nie
+: 876 2 6  od
+* 880 2 8 po
+* 884 2 5 ~
+: 888 2 5 wiedź
+: 892 10 5  znam
+- 902
+: 908 2 5 Czy
+: 912 2 5  to
+: 916 6 6  przez
+: 924 2 6 na
+: 928 4 5 cze
+: 934 2 1 nie
+: 938 2 1  me
+: 942 6 3 ~
+- 948
+: 953 2 3 Sza
+: 957 2 3 ma
+: 961 2 5 nów
+: 965 2 3  kró
+: 969 2 -2 ~
+: 973 6 -2 lem
+* 981 7 10  być
+E

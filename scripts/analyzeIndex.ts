@@ -26,7 +26,7 @@ index.forEach((song) => {
             const toPush = song[key as keyof Data];
             val.kinds = val.kinds.concat(Array.isArray(toPush) ? toPush : [toPush!]);
         } else {
-            val.missing.push(song.file);
+            val.missing.push(song.id);
         }
     });
 });

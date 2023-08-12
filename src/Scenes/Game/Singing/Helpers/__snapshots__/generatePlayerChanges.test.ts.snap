@@ -3,15 +3,15 @@
 exports[`generatePlayerChanges > should handle real life examples better 1`] = `
 [
   [
-    73,
-    136,
-    231,
-    323,
-    551,
-    648,
-    743,
-    835,
-    935,
+    234,
+    500,
+    773,
+    1154,
+    1402,
+    1718,
+    2373,
+    2660,
+    3078,
   ],
 ]
 `;

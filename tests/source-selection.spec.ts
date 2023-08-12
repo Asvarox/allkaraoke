@@ -15,7 +15,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
     await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click();
-    await page.getByTestId('song-e2e-multitrack-polish-1994.json').dblclick();
+    await page.getByTestId('song-e2e-multitrack-polish-1994').dblclick();
     await page.getByTestId('next-step-button').click();
     await page.getByTestId('select-inputs-button').click();
     await page.getByTestId('advanced').click();
@@ -56,7 +56,7 @@ test('Source selection in in-game menu', async ({ page, context }) => {
     await page.getByTestId('sing-a-song').click();
     await expect(page.getByTestId('lang-Polish')).toBeVisible();
     await page.getByTestId('close-exclude-languages').click();
-    await page.getByTestId('song-e2e-multitrack-polish-1994.json').dblclick();
+    await page.getByTestId('song-e2e-multitrack-polish-1994').dblclick();
     await page.getByTestId('next-step-button').click();
     await page.getByTestId('play-song-button').click();
 

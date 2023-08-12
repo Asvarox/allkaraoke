@@ -1,0 +1,331 @@
+#ID:abba-gimme-gimme-gimme-a-man-after-midnight
+#ARTIST:ABBA
+#TITLE:Gimme! Gimme! Gimme! (A Man After Midnight)
+#CREATOR:TeLiXj
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#BPM:236,7
+#REALBPM:127
+#YEAR:1979
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)
+#VIDEOID:XEjLoHdbVeE
+#VIDEOGAP:0
+#VOLUME:1
+#LANGUAGE:English
+#EDITION:SingStar ABBA
+#GAP:37739
+: 0 7 74 Half
+: 8 8 72  past
+: 17 4 69  twelve
+- 23
+: 25 3 62 And
+: 29 3 65  I'm
+: 33 5 67  watch
+: 41 4 67 in'
+: 46 1 65  the
+: 48 4 67  late
+: 53 1 69  show
+- 56
+: 58 2 62 In
+: 61 3 65  my
+: 65 4 67  flat
+: 73 3 67  all
+: 77 1 65  a
+: 79 4 67 lone
+- 87
+: 89 3 62 How
+: 93 3 65  I
+: 97 2 67  hate
+: 101 2 67  to
+: 105 3 67  spend
+: 109 1 69  the
+: 111 5 67  eve
+: 117 3 65 ning
+: 121 3 62  on
+: 125 3 60  my
+: 129 20 62  own
+- 158
+: 161 7 74 Au
+: 169 7 72 tumn
+: 177 6 69  winds
+: 185 3 69  blow
+: 189 3 65 in'
+: 193 5 67  out
+: 201 3 67 side
+: 205 1 65  my
+: 207 3 67  win
+* 211 2 69 dow
+- 215
+: 217 3 62 As
+: 221 3 65  I
+: 225 3 67  look
+: 229 2 67  a
+: 233 3 67 round
+: 237 1 65  the
+: 239 4 67  room
+- 247
+: 249 3 62 And
+: 253 3 65  it
+: 257 2 67  makes
+: 261 2 67  me
+: 265 2 67  so
+: 268 1 69  de
+: 270 3 67 pressed
+- 275
+: 277 3 65 To
+: 281 3 62  see
+: 285 3 60  the
+: 289 16 62  gloom
+- 315
+: 324 2 64 There's
+: 328 2 64  not
+: 332 2 64  a
+: 336 6 64  soul
+: 343 5 65  out
+: 349 6 67  there
+- 370
+: 388 2 64 No
+: 392 2 64  one
+: 396 2 64  to
+: 400 5 64  hear
+: 406 5 65  my
+* 412 93 67  prayer
+- 509
+: 511 3 62 Gim
+: 515 3 65 me,
+: 519 3 62  gim
+: 523 3 65 me,
+: 527 3 62  gim
+: 531 3 65 me
+: 535 3 69  a
+: 539 7 67  man
+: 547 3 65  af
+: 551 3 62 ter
+: 555 7 65  mid
+: 563 4 62 night
+- 569
+: 571 6 67 Won't
+: 579 3 67  some
+: 583 3 65 bo
+: 587 1 62 dy
+: 589 5 65  help
+: 595 1 62  me
+- 597
+: 599 2 62 Chase
+: 603 3 62  the
+: 607 3 60  sha
+: 611 3 57 dows
+: 615 3 65  a
+: 619 13 62 way
+- 636
+: 638 3 62 Gim
+: 642 3 65 me,
+: 646 3 62  gim
+: 650 3 65 me,
+: 654 3 62  gim
+: 658 3 65 me
+: 662 3 69  a
+: 666 7 67  man
+: 674 3 65  af
+: 678 3 62 ter
+: 682 7 65  mid
+: 690 4 62 night
+- 696
+: 698 6 67 Take
+: 705 3 67  me
+: 709 3 65  through
+: 713 1 62  the
+: 715 5 65  dark
+: 721 1 62 ness
+- 723
+: 725 2 62 To
+: 729 3 62  the
+: 733 3 60  break
+: 737 3 57  of
+: 741 3 65  the
+: 745 15 62  day
+- 791
+: 1079 7 74 Mo
+: 1087 7 72 vie
+: 1095 5 69  stars
+- 1102
+: 1104 3 62 Find
+: 1108 3 65  the
+: 1112 5 67  end
+: 1120 3 67  of
+: 1124 1 65  the
+: 1126 5 67  rain
+: 1132 1 69 bow
+- 1134
+: 1136 3 62 With
+: 1140 3 65  a
+: 1144 4 67  for
+: 1152 3 67 tune
+: 1156 1 65  to
+: 1158 4 67  win
+- 1166
+: 1168 3 62 It's
+: 1172 3 65  so
+: 1176 2 67  dif
+: 1180 2 67 ferent
+: 1184 3 67  from
+: 1188 1 69  the
+: 1190 5 67  world
+: 1196 3 65  I'm
+: 1200 3 62  li
+: 1204 3 60 ving
+: 1208 16 62  in
+- 1236
+: 1240 7 74 Tired
+: 1248 7 72  of
+: 1256 5 69  T
+: 1262 1 67 V
+- 1265
+: 1267 3 65 I
+: 1271 5 67  o
+: 1279 3 67 pen
+: 1283 1 65  the
+: 1285 5 67  win
+: 1291 3 69 dow
+: 1295 3 62  and
+: 1299 3 65  I
+: 1303 3 67  gaze
+: 1307 2 67  in
+: 1311 3 67 to
+: 1315 1 65  the
+: 1317 4 67  night
+- 1325
+: 1327 3 62 But
+: 1331 3 65  there's
+: 1335 2 67  no
+: 1339 2 67 thing
+: 1343 3 67  there
+: 1347 1 69  to
+: 1349 2 67  see
+- 1353
+: 1355 3 65 No
+: 1359 3 62  one
+: 1363 3 60  in
+: 1367 17 62  sight
+- 1394
+: 1403 1 64 There's
+: 1407 2 64  not
+: 1411 2 64  a
+: 1415 6 64  soul
+: 1422 5 65  out
+: 1428 6 67  there
+- 1449
+: 1467 2 64 No
+: 1471 2 64  one
+: 1475 2 64  to
+: 1479 5 64  hear
+: 1485 5 65  my
+: 1491 93 67  prayer
+- 1588
+: 1590 3 62 Gim
+: 1594 3 65 me,
+: 1598 3 62  gim
+: 1602 3 65 me,
+: 1606 3 62  gim
+: 1610 3 65 me
+: 1614 3 69  a
+: 1618 7 67  man
+: 1626 3 65  af
+: 1630 3 62 ter
+: 1634 7 65  mid
+: 1642 4 62 night
+- 1648
+: 1650 5 67 Won't
+: 1657 3 67  some
+: 1661 3 65 bo
+: 1665 1 62 dy
+: 1667 5 65  help
+: 1673 1 62  me
+- 1675
+: 1677 2 62 Chase
+: 1681 3 62  the
+: 1685 3 60  sha
+: 1689 3 57 dows
+: 1693 3 65  a
+: 1697 13 62 way
+- 1714
+: 1716 3 62 Gim
+: 1720 3 65 me,
+: 1724 3 62  gim
+: 1728 3 65 me,
+: 1732 3 62  gim
+: 1736 3 65 me
+: 1740 3 69  a
+: 1744 7 67  man
+: 1752 3 65  af
+: 1756 3 62 ter
+: 1760 6 65  mid
+: 1767 5 62 night
+- 1774
+: 1776 6 67 Take
+: 1783 3 67  me
+: 1787 3 65  through
+: 1791 1 62  the
+: 1793 5 65  dark
+: 1799 1 62 ness
+- 1801
+: 1803 2 62 To
+: 1807 2 62  the
+: 1810 3 60  break
+: 1814 3 57  of
+: 1818 3 65  the
+: 1822 13 62  day
+- 1839
+: 1841 3 62 Gim
+: 1845 3 65 me,
+: 1849 3 62  gim
+: 1853 3 65 me,
+: 1857 3 62  gim
+: 1861 3 65 me
+: 1865 3 69  a
+: 1869 7 67  man
+: 1877 3 65  af
+: 1881 3 62 ter
+: 1885 7 65  mid
+: 1893 3 62 night
+- 1898
+: 1900 6 67 Won't
+: 1908 3 67  some
+: 1912 3 65 bo
+: 1916 1 62 dy
+: 1918 5 65  help
+: 1924 1 62  me
+- 1926
+: 1928 2 62 Chase
+: 1932 3 62  the
+: 1936 3 60  sha
+: 1940 3 57 dows
+: 1944 3 65  a
+: 1948 13 62 way
+- 1965
+: 1967 3 62 Gim
+: 1971 3 65 me,
+: 1975 3 62  gim
+: 1979 3 65 me,
+: 1983 3 62  gim
+: 1987 3 65 me
+: 1991 3 69  a
+: 1995 6 67  man
+: 2003 3 65  af
+: 2007 3 62 ter
+: 2011 6 65  mid
+: 2018 5 62 night
+- 2025
+: 2027 6 67 Take
+: 2034 3 67  me
+: 2038 3 65  through
+: 2042 1 62  the
+: 2044 5 65  dark
+: 2050 1 62 ness
+- 2052
+: 2054 2 62 To
+: 2058 2 62  the
+: 2061 3 60  break
+: 2065 3 57  of
+: 2069 3 65  the
+: 2073 21 62  day
+E

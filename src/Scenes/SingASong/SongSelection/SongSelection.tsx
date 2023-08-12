@@ -24,7 +24,7 @@ import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 interface Props {
-    onSongSelected: (songSetup: SingSetup & { file: string; video: string }) => void;
+    onSongSelected: (songSetup: SingSetup & { songId: string; video: string }) => void;
     preselectedSong: string | null;
 }
 
@@ -155,14 +155,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                         <SongsGroup>
                             {group.songs.map(({ song, index }) => (
                                 <SongListEntry
-                                    key={song.file}
+                                    key={song.id}
                                     song={song}
                                     handleClick={focusedSong === index ? expandSong : moveToSong}
                                     focused={!showFilters && keyboardControl && index === focusedSong}
                                     index={index}
                                     data-index={index}
                                     data-focused={!showFilters && keyboardControl && index === focusedSong}
-                                    data-test={`song-${song.file}${group.isNew ? '-new-group' : ''}`}
+                                    data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
                                 />
                             ))}
                         </SongsGroup>
