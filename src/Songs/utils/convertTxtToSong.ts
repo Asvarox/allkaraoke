@@ -1,4 +1,5 @@
 import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
+import getSongId from './getSongId';
 
 export const typesMap = {
     R: 'rap',
@@ -92,11 +93,13 @@ export default function convertTxtToSong(
     } as ExtractOptional<Song>;
 
     if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
+    const title = getPropertyValueFromTxt(text, 'TITLE') ?? '';
+    const artist = getPropertyValueFromTxt(text, 'ARTIST') ?? '';
 
     const song: Song = {
-        id: getPropertyValueFromTxt(text, 'ID'),
-        title: getPropertyValueFromTxt(text, 'TITLE') ?? '',
-        artist: getPropertyValueFromTxt(text, 'ARTIST') ?? '',
+        id: getPropertyValueFromTxt(text, 'ID') ?? getSongId({ title, artist }),
+        title,
+        artist,
         bpm: Number(getPropertyValueFromTxt(text, 'BPM')?.replace(',', '.') ?? 0),
         bar: 4,
         gap: Number(getPropertyValueFromTxt(text, 'GAP')?.replace(',', '.') ?? 0),

@@ -1,6 +1,6 @@
 import { SongPreview } from 'interfaces';
 import { useEffect, useRef, useState } from 'react';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 
 export default function useSongIndex(includeDeleted = false) {
     const [songIndex, setSongIndex] = useState<SongPreview[] | null>(SongDao.getCurrentIndex());

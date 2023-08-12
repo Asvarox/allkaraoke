@@ -7,7 +7,7 @@ import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import inputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSources from 'Scenes/SelectInput/InputSources';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import UserMediaService from 'UserMedia/userMediaService';
 
 // @ts-ignore

@@ -7,9 +7,10 @@ import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAnd
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
+import getSongId from 'Songs/utils/getSongId';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { Song } from 'interfaces';
@@ -160,6 +161,7 @@ export default function Convert({ song }: Props) {
         authorUrl: authorAndVid.authorUrl,
         realBpm: +metadataEntity.realBpm,
         sourceUrl: basicData.sourceUrl,
+        id: getSongId(metadataEntity),
     };
 
     return (

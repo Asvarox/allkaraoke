@@ -3,7 +3,7 @@ import { WebRTCEvents, WebRTCSongListEvent } from 'RemoteMic/Network/events';
 import sendEvent from 'RemoteMic/Network/sendEvent';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import { Peer } from 'peerjs';
 import peerJSOptions from 'utils/peerJSOptions';
 import { v4 } from 'uuid';

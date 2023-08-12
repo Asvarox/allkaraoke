@@ -3,7 +3,7 @@ import { WebRTCEvents } from 'RemoteMic/Network/events';
 import { pack, unpack } from 'RemoteMic/Network/utils';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import Listener from 'utils/Listener';
 import { v4 } from 'uuid';
 

@@ -3,7 +3,7 @@ import fixVideoGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/fixVideo
 import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
 import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
 import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import { Song } from 'interfaces';
 import { useEffect, useState } from 'react';
 

@@ -3,7 +3,7 @@ import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@
 import { Button, Grid, IconButton } from '@mui/material';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import { format } from 'date-fns';

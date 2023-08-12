@@ -4,7 +4,7 @@ import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import { WebRTCSongListEvent } from 'RemoteMic/Network/events';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
-import SongDao from 'Songs/SongDao';
+import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import { uniqBy } from 'lodash-es';
 import { useEffect, useMemo, useState } from 'react';

@@ -64,7 +64,7 @@ export interface Song {
     bar: number;
     tracks: SongTrack[];
     volume: number | undefined;
-    id?: string;
+    id: string;
 }
 
 export interface SongTrack {

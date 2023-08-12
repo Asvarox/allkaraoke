@@ -1,3 +1,5 @@
+import { captureException } from '@sentry/react';
+import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
 import getSongId from 'Songs/utils/getSongId';
 import { lastVisit } from 'Stats/lastVisit';
@@ -12,7 +14,34 @@ const storage = localForage.createInstance({
 
 const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
 
-class SongDao {
+const legacyStorage = localForage.createInstance({
+    name: 'songs',
+});
+const LEGACY_DELETED_SONGS_KEY = 'DELETED_SONGS';
+
+if (localStorage.getItem('MIGRATED_V1_SONGS') !== 'true') {
+    (async () => {
+        const legacyIndex = (await legacyStorage.keys()).filter((key) => key !== LEGACY_DELETED_SONGS_KEY);
+
+        legacyIndex.map(async (key) => {
+            try {
+                const songData = await legacyStorage.getItem<Song>(key);
+                // validate the song (if it is actual song and not some random data)
+                const song = convertTxtToSong(convertSongToTxt(songData!));
+
+                if (song) {
+                    await storage.setItem(getSongId(song), { ...song, id: getSongId(song) });
+                }
+            } catch (e) {
+                captureException(e);
+                console.error(e);
+            }
+        });
+        localStorage.setItem('MIGRATED_V1_SONGS', 'true');
+    })();
+}
+
+class SongsService {
     private finalIndex: SongPreview[] | null = null;
     private indexWithDeletedSongs: SongPreview[] | null = null;
     public store = async (song: Song) => {
@@ -100,7 +129,18 @@ class SongDao {
     public getLocalIndex = async () => {
         const allSongs = await Promise.all((await this.getKeys()).map(this.getLocal));
 
-        return allSongs.filter((song): song is Song => song !== null).map((song) => getSongPreview(song, true));
+        return allSongs
+            .filter((song): song is Song => song !== null)
+            .map((song) => {
+                try {
+                    return getSongPreview(song, true);
+                } catch (e) {
+                    captureException(e);
+                    console.error(e);
+                    return null;
+                }
+            })
+            .filter((song): song is SongPreview => song !== null);
     };
 
     private getKeys = async () => {
@@ -110,4 +150,4 @@ class SongDao {
     };
 }
 
-export default new SongDao();
+export default new SongsService();
