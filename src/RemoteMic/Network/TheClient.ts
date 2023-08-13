@@ -370,7 +370,7 @@ export class TheClient {
         return new Promise<T>((resolve, reject) => {
             const timeout = setTimeout(() => {
                 this.transport.removeListener(callback);
-                reject('timeout');
+                reject(`${t} timed out waiting for ${response}`);
             }, 10_000);
 
             const callback = (event: WebRTCEvents) => {
