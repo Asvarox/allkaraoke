@@ -12,6 +12,7 @@ export default function SelectInputModal({ onClose, closeButtonText }: Props) {
         <Modal onClose={onClose}>
             <MenuContainer>
                 <SelectInputView
+                    smooth={false}
                     onBack={onClose}
                     onFinish={onClose}
                     closeButtonText={closeButtonText}

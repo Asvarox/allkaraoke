@@ -2,17 +2,27 @@ import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { randomInt } from 'utils/randomValue';
+import startViewTransition from 'utils/startViewTransition';
 
 export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
     const { songList, prefilteredList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
     const navigate = useSmoothNavigate();
     const [keyboardControl, setKeyboardControl] = useState(true);
 
+    const handleKeyboarcControl = (value: boolean) => {
+        startViewTransition(() => {
+            flushSync(() => {
+                setKeyboardControl(value);
+            });
+        });
+    };
+
     const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(
         keyboardControl,
         groupedSongList,
-        () => setKeyboardControl(false),
+        () => handleKeyboarcControl(false),
         songList.length,
         filters,
         songsPerRow,
@@ -46,7 +56,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
         focusedSong,
         focusedGroup,
         moveToSong,
-        setKeyboardControl,
+        setKeyboardControl: handleKeyboarcControl,
         keyboardControl,
         songPreview,
         songList: songList ?? [],

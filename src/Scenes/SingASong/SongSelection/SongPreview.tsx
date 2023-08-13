@@ -2,7 +2,11 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { useTheme } from '@mui/material';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
+import {
+    FinalSongCard,
+    SongListEntryDetailsArtist,
+    SongListEntryDetailsTitle,
+} from 'Scenes/SingASong/SongSelection/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/SongSettings';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
@@ -161,6 +165,15 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
         100% {
             transform: scale(1.2);
         }
+    }
+    view-transition-name: song-preview;
+
+    ${SongListEntryDetailsArtist} {
+        view-transition-name: song-preview-artist;
+    }
+
+    ${SongListEntryDetailsTitle} {
+        view-transition-name: song-preview-title;
     }
 `;
 

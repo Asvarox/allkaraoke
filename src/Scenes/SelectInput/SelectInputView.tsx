@@ -9,6 +9,7 @@ import Skip from 'Scenes/SelectInput/Variants/Skip';
 import { MicSetupPreference, MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import posthog from 'posthog-js';
 import { useEffect, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { ValuesType } from 'utility-types';
 import startViewTransition from 'utils/startViewTransition';
 
@@ -25,7 +26,7 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 
 const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
-function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText }: Props) {
+function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText, smooth = true }: Props) {
     const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference>>(null);
     const [isComplete, setIsComplete] = useState(false);
 
@@ -40,9 +41,15 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
     const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
 
     const storePreference = (...args: Parameters<typeof setPreference>) => {
-        startViewTransition(() => {
+        if (smooth) {
+            startViewTransition(() => {
+                flushSync(() => {
+                    setPreference(...args);
+                });
+            });
+        } else {
             setPreference(...args);
-        });
+        }
     };
 
     const onSave = (pref: ValuesType<typeof MicSetupPreference>) => () => {
