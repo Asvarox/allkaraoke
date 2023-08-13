@@ -1,0 +1,343 @@
+#ID:muse-reapers
+#ARTIST:Muse
+#TITLE:Reapers
+#CREATOR:gun88
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
+#BPM:384
+#REALBPM:96
+#YEAR:2015
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Reapers
+#VIDEOID:gcNEC9NaJuE
+#VIDEOGAP:0
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:29877
+* 0 20 5 Home
+- 30
+: 40 3 -3 It's
+: 44 3 -3  be
+: 48 5 5 com
+: 54 5 4 ing
+: 60 3 2  a
+: 64 5 5  kill
+: 70 5 4 ing
+: 76 12 4  field
+- 98
+: 116 3 2 There's
+: 120 3 4  a
+: 124 9 5  cross
+: 134 12 5 hair
+- 153
+: 156 6 7 Locked
+: 168 7 7  on
+: 180 8 5  my
+: 192 7 5  heart
+: 200 16 4 ~
+- 225
+: 228 5 -3 With
+: 234 7 5  no
+: 242 7 4  re
+: 250 24 2 course
+- 284
+: 288 3 -3 And
+: 292 4 -3  there's
+* 300 6 5  no
+* 308 5 4  one
+: 314 4 2  be
+: 320 5 5 hind
+: 326 5 4  the
+: 332 12 4  wheel
+- 354
+: 376 7 5 Hell
+: 384 10 5 fire
+- 401
+: 404 7 5 You're
+: 412 7 7  wip
+: 420 9 7 ing
+: 432 3 5  me
+: 436 24 9  out
+- 472
+: 476 10 9 Killed
+: 488 32 14  by
+- 530
+F 560 10 3 Drones!
+- 580
+F 600 16 0 Killed
+F 618 16 1  by
+- 659
+F 688 10 3 Drones!
+- 708
+F 728 16 -7 Killed
+F 746 16 -6  by
+- 772
+: 795 7 11 You
+: 803 7 11  rule
+: 811 7 11  with
+: 819 20 12  lies
+: 843 7 11  and
+: 851 7 9  de
+: 859 12 7 ceit
+- 880
+: 883 3 7 And
+: 887 3 7  the
+: 891 11 12  world
+: 903 8 12  is
+: 915 7 11  on
+: 923 6 7  your
+: 931 34 11  side
+- 990
+: 1047 3 2 'Cause
+: 1051 7 11  you've
+: 1059 7 11  got
+: 1067 7 11  the
+* 1075 14 12  C.
+: 1091 8 11 I.
+: 1107 8 7 A.
+: 1123 8 7  babe
+- 1140
+: 1143 3 7 But
+: 1147 7 12  all
+: 1155 7 12  you've
+: 1163 7 12  done
+: 1171 7 12  is
+: 1179 3 11  bru
+: 1183 4 7 tal
+: 1191 32 11 ise
+- 1233
+F 1274 20 3 Drones!
+- 1345
+: 1780 20 5 War
+- 1810
+: 1824 7 5 War
+: 1832 7 4  just
+: 1840 6 2  moved
+: 1848 6 5  up
+: 1856 3 4  a
+: 1860 10 4  gear
+- 1880
+: 1896 3 2 I
+: 1900 7 4  don't
+: 1908 7 5  think
+: 1916 12 5  I
+: 1936 3 5  can
+: 1940 9 7  han
+: 1950 9 7 dle
+: 1960 11 5 ~
+: 1972 3 4  the
+: 1976 7 4  truth
+* 1984 3 5 ~
+: 1988 8 4 ~
+- 2005
+: 2008 6 -3 I'm
+: 2016 6 5  just
+: 2024 6 4  a
+: 2032 16 2  pawn
+- 2058
+: 2070 7 -3 And
+: 2078 7 5  we're
+: 2086 7 4  all
+: 2094 7 2  ex
+: 2102 7 5 pend
+: 2110 5 4 a
+: 2116 18 4 ble
+- 2143
+: 2146 5 2 In
+: 2152 5 4 ci
+: 2158 5 5 den
+: 2164 5 5 tal
+: 2170 12 5 ly
+- 2188
+: 2190 3 5 E
+: 2194 7 7 lec
+: 2202 7 7 tron
+: 2210 7 5 i
+* 2218 1 7 cal
+* 2220 2 7 ly
+: 2224 3 5  e
+: 2228 22 9 rased
+- 2254
+: 2256 12 9 By
+* 2272 30 14  your
+- 2312
+F 2344 10 3 Drones!
+- 2364
+F 2384 16 0 Killed
+F 2402 16 1  by
+- 2443
+F 2472 10 3 Drones!
+- 2492
+F 2512 16 -7 Killed
+F 2530 16 -6  by
+- 2556
+: 2571 3 2 You
+: 2575 7 11  kill
+: 2583 7 11  by
+* 2591 7 11  re
+: 2599 23 12 mote
+: 2623 7 11  con
+: 2631 20 7 trol
+- 2660
+: 2663 3 7 And
+: 2667 3 7  the
+: 2671 11 12  world
+: 2683 8 12  is
+: 2695 7 11  on
+: 2703 6 7  your
+: 2711 34 11  side
+- 2770
+: 2831 6 11 You've
+: 2839 6 11  got
+: 2855 15 12  reap
+: 2871 7 11 ers
+: 2879 7 9  and
+: 2887 10 7  hawks
+: 2903 10 7  babe
+- 2924
+: 2928 7 12 Now
+: 2936 7 12  I
+: 2944 7 12  am
+: 2952 7 12  rad
+* 2960 3 11 i
+: 2964 7 7 cal
+: 2972 41 11 ised
+- 3023
+F 3056 20 3 Drones!
+- 3127
+F 3280 15 0 Killed
+F 3296 16 1  by
+- 3363
+F 4591 4 7 You
+F 4597 4 7  can
+F 4603 4 7  run
+F 4611 4 7  but
+- 4617
+F 4619 3 7 You're
+F 4623 3 7  nev
+F 4627 3 7 er
+F 4631 3 7  gon
+F 4635 3 7 na
+F 4639 7 7  hide
+- 4652
+F 4655 4 5 You
+F 4661 4 5  can
+F 4667 4 5  run
+F 4675 4 5  but
+- 4681
+F 4683 3 5 You're
+F 4687 3 5  nev
+F 4691 3 5 er
+F 4695 3 5  gon
+F 4699 3 5 na
+F 4703 3 5  hide
+F 4707 3 5 ~
+F 4711 3 5 ~
+F 4715 1 5 ~
+- 4717
+F 4719 4 4 You
+F 4725 4 4  can
+F 4731 4 4  run
+F 4739 4 4  but
+- 4745
+F 4747 3 4 You're
+F 4751 3 4  nev
+F 4755 3 4 er
+F 4759 3 4  gon
+F 4763 3 4 na
+F 4767 7 4  hide
+- 4780
+F 4783 4 11 You
+F 4789 4 11  can
+F 4795 4 11  run
+F 4803 4 11  but
+- 4809
+F 4811 3 11 You're
+F 4815 3 9  nev
+F 4819 3 9 er
+F 4823 3 9  gon
+F 4827 3 9 na
+F 4831 3 7  hide
+F 4835 3 7 ~
+F 4839 3 7 ~
+F 4843 4 7 ~
+- 4857
+: 4879 7 11 You
+: 4887 7 11  rule
+: 4895 7 11  with
+: 4903 20 12  lies
+: 4927 7 11  and
+: 4935 7 9  de
+: 4943 12 7 ceit
+- 4964
+: 4967 3 7 And
+: 4971 3 7  the
+: 4975 11 12  world
+* 4987 8 12  is
+: 4999 7 11  on
+: 5007 6 7  your
+: 5015 34 11  side
+- 5074
+: 5131 3 2 'Cause
+* 5135 7 11  you've
+: 5143 7 11  got
+: 5151 7 11  the
+: 5159 14 12  C.
+: 5175 8 11 I.
+: 5191 8 7 A.
+: 5207 8 7  babe
+- 5224
+: 5227 3 7 And
+: 5231 7 12  all
+: 5239 7 12  you've
+: 5247 7 12  done
+: 5255 7 12  is
+: 5263 3 11  bru
+: 5267 4 7 tal
+: 5275 32 11 ise
+- 5332
+: 5387 3 2 You
+: 5391 7 11  kill
+: 5399 7 11  by
+: 5407 7 11  re
+: 5415 23 12 mote
+: 5439 7 11  con
+: 5447 20 7 trol
+- 5476
+: 5479 3 7 And
+: 5483 3 7  the
+: 5487 11 12  world
+: 5499 8 12  is
+: 5511 7 11  on
+: 5519 6 7  your
+: 5527 34 11  side
+- 5586
+: 5647 6 11 You've
+* 5655 6 11  got
+: 5671 15 12  reap
+: 5687 7 11 ers
+: 5695 7 9  and
+: 5703 10 7  hawks
+: 5719 10 7  babe
+- 5739
+: 5743 7 12 Now
+: 5751 7 12  I
+: 5759 7 12  am
+: 5767 7 12  rad
+: 5775 3 11 i
+* 5779 7 7 cal
+: 5787 41 11 ised
+- 5879
+F 6464 11 3 Here
+F 6476 9 3  come
+F 6486 5 3  the
+F 6492 26 3  drones!
+- 6569
+F 6672 11 3 Here
+F 6684 9 3  come
+F 6694 5 3  the
+F 6700 26 3  drones!
+- 6777
+F 6880 11 3 Here
+F 6892 9 3  come
+F 6902 5 3  the
+F 6908 26 3  drones!
+E

@@ -1,0 +1,251 @@
+#ID:beastie-boys-you-gotta-fight-for-your-right-to-party
+#ARTIST:Beastie Boys
+#TITLE:(You Gotta) Fight For Your Right (To Party)
+#CREATOR:gollum
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#BPM:269,6
+#REALBPM:134
+#YEAR:1986
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)
+#VIDEOID:eBShN8qT4lk
+#VIDEOGAP:16
+#GENRE:Rap Rock
+#LANGUAGE:English
+#GAP:38050
+: 18 4 13 Kick 
+: 23 4 11 it!
+- 45 271
+- 271
+: 289 3 8 You 
+: 293 3 8 wake 
+: 297 2 8 up 
+: 301 2 8 late 
+: 305 2 8 for 
+: 309 3 8 school
+- 312
+: 316 3 8 Man 
+: 321 2 8 your 
+: 325 4 8 don't 
+: 333 2 8 wan
+: 336 2 8 na 
+: 341 8 8 go
+- 367 401
+- 401
+: 419 2 8 You 
+: 422 3 8 ask 
+: 427 3 8 you 
+: 431 4 8 mom, 
+: 438 4 8 "Please?"
+- 442
+: 446 2 8 But 
+: 450 2 8 she 
+: 455 4 8 still 
+: 462 5 8 says, 
+: 470 8 8 "No!"
+- 496 530
+- 530
+: 548 2 8 You 
+: 552 4 8 missed 
+: 559 4 8 two 
+: 568 3 8 clas
+: 572 4 8 ses 
+: 578 3 8 and 
+: 584 5 8 no 
+: 592 5 8 home
+: 601 5 8 work
+- 624 655
+- 655
+: 673 3 8 But 
+: 678 2 8 your 
+: 682 2 8 tea
+: 685 2 8 cher 
+: 689 3 8 prea
+: 693 2 8 ches 
+: 698 3 8 class
+- 701
+: 705 2 8 Like 
+: 708 2 8 you're 
+: 713 3 8 some 
+: 721 3 8 kind 
+: 725 2 8 of 
+: 729 5 8 jerk
+- 752 773
+- 773
+: 791 5 8 You 
+: 798 3 8 got
+: 802 2 6 ta 
+: 806 8 8 fight
+- 814
+: 831 3 8 For 
+: 835 3 6 your 
+: 839 8 8 right
+- 849
+: 867 3 8 To 
+: 871 32 6 par
+: 904 8 8 ty
+- 930 984
+- 984
+: 1002 2 8 You 
+: 1005 3 8 pop 
+: 1012 3 8 caught 
+: 1016 2 8 you 
+: 1021 3 8 smo
+: 1025 3 8 king 
+: 1029 3 8 And 
+: 1033 2 8 he 
+: 1037 4 8 said,
+- 1041
+: 1045 3 8 "No 
+: 1052 9 8 way!"
+- 1079 1116
+- 1116
+: 1134 3 8 That 
+: 1142 2 8 hy
+: 1146 2 8 po
+: 1150 3 8 crite 
+: 1158 4 8 smokes 
+: 1166 2 8 two 
+: 1171 5 8 packs 
+: 1178 2 8 a 
+: 1182 8 8 day
+- 1208 1233
+- 1233
+: 1251 9 8 Man, 
+: 1263 3 8 liv
+: 1267 3 8 ing 
+: 1271 4 8 at 
+: 1279 5 8 home 
+: 1287 3 8 is 
+: 1295 3 8 such 
+: 1303 3 8 a 
+: 1312 8 8 drag
+- 1338 1358
+- 1358
+: 1376 9 8 Now 
+: 1388 3 8 your 
+: 1393 5 8 mom 
+: 1401 3 8 threw 
+: 1405 3 8 a
+: 1409 4 8 way
+- 1413
+: 1417 3 8 Your 
+: 1421 3 8 best 
+: 1429 6 8 por
+: 1437 3 8 no 
+: 1441 9 8 mag
+- 1466 1484
+- 1484
+: 1502 6 8 You 
+: 1509 3 8 got
+: 1513 2 6 ta 
+: 1518 8 8 fight
+- 1526
+: 1542 3 8 For 
+* 1546 3 6 your 
+* 1550 9 8 right
+- 1560
+: 1578 3 8 To 
+: 1583 31 6 par
+: 1615 11 8 ty
+- 1644 1811
+- 1811
+: 1829 3 8 You 
+: 1833 3 8 got
+: 1837 2 6 ta 
+: 1841 8 8 fight
+- 1867 2077
+- 2077
+: 2095 3 8 Don't 
+: 2099 3 8 step 
+: 2103 4 8 out 
+: 2108 2 8 of 
+: 2112 4 8 this 
+: 2118 5 8 house
+- 2123
+: 2127 3 8 That's 
+: 2131 2 8 the 
+: 2135 4 8 clothes 
+: 2140 3 8 you're 
+: 2144 2 8 gon
+: 2147 2 8 na 
+: 2152 9 8 wear
+- 2179 2203
+- 2203
+: 2221 4 8 I'll 
+: 2226 3 8 kick 
+: 2230 1 8 you 
+: 2232 5 8 out 
+: 2238 2 8 of 
+: 2241 5 8 my 
+: 2248 4 8 home 
+: 2253 2 8 if 
+: 2257 2 8 you 
+: 2260 3 8 don't 
+: 2264 5 8 cut
+- 2269
+: 2273 3 8 that 
+: 2280 8 8 hair
+- 2306 2340
+- 2340
+: 2358 3 8 Your 
+: 2362 5 8 mom 
+: 2370 3 8 bus
+: 2374 4 8 ted 
+: 2379 2 8 in 
+: 2382 2 8 and 
+: 2386 4 8 said
+- 2390
+: 2394 4 8 "What's 
+: 2402 3 8 that 
+: 2410 9 8 noise?"
+- 2437 2461
+- 2461
+: 2479 8 8 Aw, 
+: 2491 3 8 mom 
+: 2495 3 8 you're 
+: 2500 3 8 just
+- 2503
+: 2508 3 8 jea
+: 2512 2 8 lous 
+: 2515 3 8 it's 
+: 2520 2 8 the 
+: 2524 7 8 Beas
+: 2532 7 8 tie 
+: 2540 11 8 Boys
+- 2566 2584
+- 2584
+: 2602 5 8 You 
+: 2608 3 8 got
+: 2612 2 6 ta 
+: 2616 9 8 fight
+- 2625
+: 2641 3 8 For 
+: 2645 3 6 your 
+: 2649 8 8 right
+- 2660
+: 2678 2 8 To 
+: 2681 31 6 par
+: 2713 11 8 ty
+- 2742 2779
+- 2779
+: 2797 4 8 You 
+* 2802 3 8 got
+* 2806 2 6 ta 
+: 2810 9 8 fight
+- 2819
+: 2835 3 8 For 
+: 2839 3 6 your 
+: 2843 8 8 right
+- 2853
+: 2871 3 8 To 
+: 2875 31 6 par
+: 2907 11 8 ty
+- 2936 3120
+- 3120
+: 3138 59 6 Par
+: 3198 12 8 ty
+- 3228 3250
+- 3250
+* 3268 59 6 Par
+* 3328 11 8 ty
+E
