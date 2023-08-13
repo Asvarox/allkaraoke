@@ -3,7 +3,7 @@ import { MenuButton } from 'Elements/Menu';
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
 import RemoteMicClient from 'RemoteMic/Network/Client';
-import { WebRTCRemoteMicListEvent } from 'RemoteMic/Network/events';
+import { NetworkRemoteMicListMessage } from 'RemoteMic/Network/messages';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import PlayerChangeModal from 'Scenes/RemoteMic/Components/PlayerChangeModal';
@@ -35,7 +35,7 @@ function ManagePlayers(props: Props) {
     );
 }
 
-const Entry = ({ mic }: { mic: ValuesType<WebRTCRemoteMicListEvent['list']> }) => {
+const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }) => {
     const [open, setOpen] = useState(false);
     const permission = RemoteMicManager.getPermission(mic.id);
     return (

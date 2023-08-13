@@ -13,7 +13,7 @@ import {
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
 import RemoteMicClient from 'RemoteMic/Network/Client';
-import { keyStrokes } from 'RemoteMic/Network/events';
+import { keyStrokes } from 'RemoteMic/Network/messages';
 import RemoteSongSearch from 'Scenes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
 interface Props {

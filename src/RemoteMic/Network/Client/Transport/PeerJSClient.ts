@@ -1,11 +1,11 @@
 import { transportCloseReason, transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import { DataConnection, Peer } from 'peerjs';
 import Listener from 'utils/Listener';
 import peerJSOptions from 'utils/peerJSOptions';
 
-export class PeerJSClientTransport extends Listener<[WebRTCEvents]> implements ClientTransport {
+export class PeerJSClientTransport extends Listener<[NetworkMessages]> implements ClientTransport {
     private peer: Peer | null = null;
     private connection: DataConnection | null = null;
     private roomId: string | null = null;
@@ -26,7 +26,7 @@ export class PeerJSClientTransport extends Listener<[WebRTCEvents]> implements C
 
         this.connection.on('close', () => onClose('closed', null));
 
-        this.connection?.on('data', (data: WebRTCEvents) => {
+        this.connection?.on('data', (data: NetworkMessages) => {
             console.log(data);
             this.onUpdate(data);
         });
@@ -70,7 +70,7 @@ export class PeerJSClientTransport extends Listener<[WebRTCEvents]> implements C
         }
     }
 
-    public sendEvent(event: WebRTCEvents) {
+    public sendEvent(event: NetworkMessages) {
         this.connection?.send(event);
     }
 

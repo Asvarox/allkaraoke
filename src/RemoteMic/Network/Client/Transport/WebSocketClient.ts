@@ -1,11 +1,11 @@
 import { transportCloseReason, transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
 import { ForwardedMessage, WEBSOCKETS_SERVER } from 'RemoteMic/Network/Server/Transport/WebSocketServer';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import { pack, unpack } from 'RemoteMic/Network/utils';
 import Listener from 'utils/Listener';
 
-export class WebSocketClientTransport extends Listener<[WebRTCEvents]> implements ClientTransport {
+export class WebSocketClientTransport extends Listener<[NetworkMessages]> implements ClientTransport {
     private connection: WebSocket | null = null;
     private roomId: string | null = null;
 
@@ -50,7 +50,7 @@ export class WebSocketClientTransport extends Listener<[WebRTCEvents]> implement
         };
     }
 
-    public sendEvent(event: WebRTCEvents) {
+    public sendEvent(event: NetworkMessages) {
         this.connection?.send(pack({ t: 'forward', recipients: [this.roomId], payload: event }));
     }
 

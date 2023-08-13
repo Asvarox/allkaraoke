@@ -3,13 +3,13 @@ import { throttle } from 'lodash-es';
 import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
 import {
     keyStrokes,
-    WebRTCEvents,
-    WebRTCGetInputLagResponseEvent,
-    WebRTCRequestMicSelectEvent,
-    WebRTCSongListEvent,
-    WebRTCSubscribeEvent,
-    WebRTCUnsubscribeEvent,
-} from 'RemoteMic/Network/events';
+    NetworkGetInputLagResponseMessage,
+    NetworkMessages,
+    NetworkRequestMicSelectMessage,
+    NetworkSongListMessage,
+    NetworkSubscribeMessage,
+    NetworkUnsubscribeMessage,
+} from 'RemoteMic/Network/messages';
 import sendMessage from 'RemoteMic/Network/sendMessage';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
@@ -184,33 +184,33 @@ export class NetworkClient {
     };
 
     public requestPlayerChange = (id: string, playerNumber: number | null) => {
-        this.sendEvent<WebRTCRequestMicSelectEvent>('request-mic-select', { id, playerNumber });
+        this.sendEvent<NetworkRequestMicSelectMessage>('request-mic-select', { id, playerNumber });
     };
 
     public confirmReadiness = () => {
         this.sendEvent('confirm-readiness');
     };
 
-    public subscribe = (channel: WebRTCSubscribeEvent['channel']) => {
-        this.sendEvent<WebRTCSubscribeEvent>('subscribe-event', { channel });
+    public subscribe = (channel: NetworkSubscribeMessage['channel']) => {
+        this.sendEvent<NetworkSubscribeMessage>('subscribe-event', { channel });
     };
 
-    public unsubscribe = (channel: WebRTCSubscribeEvent['channel']) => {
-        this.sendEvent<WebRTCUnsubscribeEvent>('unsubscribe-event', { channel });
+    public unsubscribe = (channel: NetworkSubscribeMessage['channel']) => {
+        this.sendEvent<NetworkUnsubscribeMessage>('unsubscribe-event', { channel });
     };
 
-    public getSongList = () => this.sendRequest<WebRTCSongListEvent>({ t: 'request-songlist' }, 'songlist');
+    public getSongList = () => this.sendRequest<NetworkSongListMessage>({ t: 'request-songlist' }, 'songlist');
 
     public getInputLag = () =>
-        this.sendRequest<WebRTCGetInputLagResponseEvent>({ t: 'get-input-lag-request' }, 'get-input-lag-response');
+        this.sendRequest<NetworkGetInputLagResponseMessage>({ t: 'get-input-lag-request' }, 'get-input-lag-response');
 
     public setInputLag = (value: number) =>
-        this.sendRequest<WebRTCGetInputLagResponseEvent>(
+        this.sendRequest<NetworkGetInputLagResponseMessage>(
             { t: 'set-input-lag-request', value },
             'get-input-lag-response',
         );
 
-    private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
+    private sendEvent = <T extends NetworkMessages>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
         if (!this.transport.isConnected()) {
             console.debug('not connected, skipping', type, payload);
         } else {
@@ -218,14 +218,17 @@ export class NetworkClient {
         }
     };
 
-    private sendRequest = <T extends WebRTCEvents>({ t, ...payload }: WebRTCEvents, response: T['t']): Promise<T> => {
+    private sendRequest = <T extends NetworkMessages>(
+        { t, ...payload }: NetworkMessages,
+        response: T['t'],
+    ): Promise<T> => {
         return new Promise<T>((resolve, reject) => {
             const timeout = setTimeout(() => {
                 this.transport.removeListener(callback);
                 reject(`${t} timed out waiting for ${response}`);
             }, 10_000);
 
-            const callback = (event: WebRTCEvents) => {
+            const callback = (event: NetworkMessages) => {
                 if (event.t === response) {
                     clearTimeout(timeout);
                     this.transport.removeListener(callback);

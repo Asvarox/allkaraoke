@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import RemoteMicClient from 'RemoteMic/Network/Client';
 import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
-import { WebRTCSongListEvent } from 'RemoteMic/Network/events';
+import { NetworkSongListMessage } from 'RemoteMic/Network/messages';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import SongDao from 'Songs/SongsService';
@@ -31,7 +31,7 @@ function RemoteSongList({
 }: Props) {
     const originalSongList = useSongIndex();
 
-    const [overrides, setOverrides] = useState<WebRTCSongListEvent | undefined>();
+    const [overrides, setOverrides] = useState<NetworkSongListMessage | undefined>();
     useEffect(() => {
         if (connectionStatus === 'connected' && overrides === undefined) {
             RemoteMicClient.getSongList().then(setOverrides);

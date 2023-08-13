@@ -1,10 +1,10 @@
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import Listener from 'utils/Listener';
 
 export interface SenderInterface {
     peer: string;
 
-    send(payload: WebRTCEvents): void;
+    send(payload: NetworkMessages): void;
 
     on(event: string, callback: (data: any) => void): void;
 
@@ -16,7 +16,7 @@ export interface SenderInterface {
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
-export interface ServerTransport extends Listener<[WebRTCEvents, SenderInterface]> {
+export interface ServerTransport extends Listener<[NetworkMessages, SenderInterface]> {
     name: 'WebSockets' | 'PeerJS';
 
     connect(

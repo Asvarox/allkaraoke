@@ -1,8 +1,8 @@
 import { transportCloseReason, transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import Listener from 'utils/Listener';
 
-export interface ClientTransport extends Listener<[WebRTCEvents]> {
+export interface ClientTransport extends Listener<[NetworkMessages]> {
     connect(
         clientId: string,
         roomId: string,
@@ -11,7 +11,7 @@ export interface ClientTransport extends Listener<[WebRTCEvents]> {
         onError: (error: transportErrorReason, originalEvent: any) => void,
     ): void;
 
-    sendEvent(event: WebRTCEvents): void;
+    sendEvent(event: NetworkMessages): void;
 
     isConnected(): boolean;
 

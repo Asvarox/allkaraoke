@@ -1,6 +1,6 @@
 import events from 'GameEvents/GameEvents';
 import { ServerTransport } from 'RemoteMic/Network/Server/Transport/interface';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
@@ -45,7 +45,7 @@ export class NetworkServer {
                     } else if (type === 'unsubscribe-event') {
                         RemoteMicManager.removeSubscription(sender.peer, event.channel);
                     } else if (type === 'ping') {
-                        sender.send({ t: 'pong' } as WebRTCEvents);
+                        sender.send({ t: 'pong' } as NetworkMessages);
                     } else if (type === 'pong') {
                         RemoteMicManager.getRemoteMicById(sender.peer)?.onPong();
                     } else if (type === 'request-songlist') {

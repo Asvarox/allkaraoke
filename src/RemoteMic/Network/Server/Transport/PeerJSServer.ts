@@ -1,11 +1,11 @@
 import { SenderInterface, ServerTransport, transportCloseReason } from 'RemoteMic/Network/Server/Transport/interface';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { Peer } from 'peerjs';
 import Listener from 'utils/Listener';
 import peerJSOptions from 'utils/peerJSOptions';
 
-export class PeerJSServerTransport extends Listener<[WebRTCEvents, SenderInterface]> implements ServerTransport {
+export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInterface]> implements ServerTransport {
     public readonly name = 'PeerJS';
     private peer: Peer | null = null;
 
@@ -21,7 +21,7 @@ export class PeerJSServerTransport extends Listener<[WebRTCEvents, SenderInterfa
             console.log('My peer ID is: ' + id);
         });
         this.peer.on('connection', (conn) => {
-            conn.on('data', (data: WebRTCEvents) => {
+            conn.on('data', (data: NetworkMessages) => {
                 this.onUpdate(data, conn);
             });
 

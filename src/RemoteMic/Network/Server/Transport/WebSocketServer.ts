@@ -1,12 +1,12 @@
 import { SenderInterface, ServerTransport, transportCloseReason } from 'RemoteMic/Network/Server/Transport/interface';
-import { WebRTCEvents } from 'RemoteMic/Network/events';
+import { NetworkMessages } from 'RemoteMic/Network/messages';
 import { pack, unpack } from 'RemoteMic/Network/utils';
 import Listener from 'utils/Listener';
 
 export interface ForwardedMessage {
     t: 'forward';
     sender: string;
-    payload: WebRTCEvents;
+    payload: NetworkMessages;
 }
 
 interface WebsocketConnectedMessage {
@@ -17,7 +17,7 @@ export type WebsocketMessage = ForwardedMessage | WebsocketConnectedMessage;
 
 export const WEBSOCKETS_SERVER = import.meta.env.VITE_APP_WEBSOCKET_URL;
 
-export class WebSocketServerTransport extends Listener<[WebRTCEvents, SenderInterface]> implements ServerTransport {
+export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderInterface]> implements ServerTransport {
     public readonly name = 'WebSockets';
     private connection: WebSocket | null = null;
 
@@ -62,7 +62,7 @@ type callback = (data: any) => void;
 class SenderWrapper implements SenderInterface {
     constructor(public peer: string, private socket: WebSocket) {}
 
-    public send = (payload: WebRTCEvents) => {
+    public send = (payload: NetworkMessages) => {
         const data = { t: 'forward', recipients: [this.peer], payload };
         if (!['ping', 'pong', 'freq'].includes(payload?.t)) console.log('sending', this.peer, payload);
         this.socket.send(pack(data));

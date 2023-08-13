@@ -1,6 +1,6 @@
 import events from 'GameEvents/GameEvents';
 import { SenderInterface } from 'RemoteMic/Network/Server/Transport/interface';
-import { WebRTCEvents, WebRTCSetPermissionsEvent, WebRTCSubscribeEvent } from 'RemoteMic/Network/events';
+import { NetworkMessages, NetworkSetPermissionsMessage, NetworkSubscribeMessage } from 'RemoteMic/Network/messages';
 import { RemoteMic } from 'RemoteMic/RemoteMicInput';
 import { DefaultRemoteMicPermission } from 'Scenes/Settings/SettingsState';
 import Listener from 'utils/Listener';
@@ -8,11 +8,11 @@ import storage from 'utils/storage';
 
 const RememberedAccessesKey = 'RememberedAccessesKey';
 const RememberedSubscriptionsKey = 'rememberedSubscriptionsKey';
-type subscriptionChannels = WebRTCSubscribeEvent['channel'];
+type subscriptionChannels = NetworkSubscribeMessage['channel'];
 
-class RemoteMicManager extends Listener<[string, WebRTCSetPermissionsEvent['level']]> {
+class RemoteMicManager extends Listener<[string, NetworkSetPermissionsMessage['level']]> {
     private remoteMics: RemoteMic[] = [];
-    private micAccessMap: Record<string, WebRTCSetPermissionsEvent['level']> =
+    private micAccessMap: Record<string, NetworkSetPermissionsMessage['level']> =
         storage.getValue(RememberedAccessesKey) ?? {};
 
     private subscriptions: Record<subscriptionChannels, string[]> = storage.session.getValue(
@@ -40,17 +40,17 @@ class RemoteMicManager extends Listener<[string, WebRTCSetPermissionsEvent['leve
 
     public getRemoteMicById = (id: string) => this.remoteMics.find((remoteMic) => remoteMic.id === id);
 
-    public broadcast = (event: WebRTCEvents) => {
+    public broadcast = (event: NetworkMessages) => {
         this.getRemoteMics().forEach((remoteMic) => remoteMic.connection.send(event));
     };
 
-    public broadcastToChannel = (channel: subscriptionChannels, event: WebRTCEvents) => {
+    public broadcastToChannel = (channel: subscriptionChannels, event: NetworkMessages) => {
         this.subscriptions[channel].forEach((id) => this.getRemoteMicById(id)?.connection.send(event));
     };
 
     public getPermission = (id: string) => this.micAccessMap[id] ?? DefaultRemoteMicPermission.get();
 
-    public setPermission = (id: string, permission: WebRTCSetPermissionsEvent['level']) => {
+    public setPermission = (id: string, permission: NetworkSetPermissionsMessage['level']) => {
         this.getRemoteMicById(id)?.setPermission(permission);
 
         this.micAccessMap[id] = permission;

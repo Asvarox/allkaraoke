@@ -1,5 +1,5 @@
 import { SenderInterface } from 'RemoteMic/Network/Server/Transport/interface';
-import { WebRTCEvents, WebRTCSetPermissionsEvent } from 'RemoteMic/Network/events';
+import { NetworkMessages, NetworkSetPermissionsMessage } from 'RemoteMic/Network/messages';
 import sendMessage from 'RemoteMic/Network/sendMessage';
 import { getPingTime } from 'RemoteMic/Network/utils';
 
@@ -29,7 +29,7 @@ class RemoteMicInput {
         console.log('requestReadiness');
         if (!this.requestReadinessPromise) {
             this.requestReadinessPromise = new Promise<boolean>((resolve) => {
-                const listener = (data: WebRTCEvents) => {
+                const listener = (data: NetworkMessages) => {
                     if (data.t === 'confirm-readiness') {
                         resolve(true);
                         this.connection.off('data', listener);
@@ -56,7 +56,7 @@ class RemoteMicInput {
         this.connection?.off('data', this.handleRTCData);
     };
 
-    private handleRTCData = (data: WebRTCEvents) => {
+    private handleRTCData = (data: NetworkMessages) => {
         if (data.t === 'freq') {
             this.frequencies = [data[0], data[0]];
             this.volumes = [data[1], data[1]];
@@ -86,8 +86,8 @@ export class RemoteMic {
         }
     };
 
-    public setPermission = (level: WebRTCSetPermissionsEvent['level']) => {
-        sendMessage<WebRTCSetPermissionsEvent>(this.connection, 'set-permissions', { level });
+    public setPermission = (level: NetworkSetPermissionsMessage['level']) => {
+        sendMessage<NetworkSetPermissionsMessage>(this.connection, 'set-permissions', { level });
     };
 
     private isPinging = false;
