@@ -3,7 +3,7 @@ import { MenuButton, MenuContainer } from 'Elements/Menu';
 import { focused } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect } from 'GameEvents/hooks';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
 
 interface Props {
@@ -33,7 +33,7 @@ function ConfirmReadiness({ onConfirm }: Props) {
         setVisible(true);
     });
     const confirm = () => {
-        WebRTCClient.confirmReadiness();
+        RemoteMicClient.confirmReadiness();
         setVisible(false);
         onConfirm();
     };

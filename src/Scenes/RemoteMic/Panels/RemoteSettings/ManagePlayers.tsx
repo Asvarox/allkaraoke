@@ -2,23 +2,23 @@ import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
-import { useEffect, useState } from 'react';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import { WebRTCRemoteMicListEvent } from 'RemoteMic/Network/events';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import PlayerChangeModal from 'Scenes/RemoteMic/Components/PlayerChangeModal';
 import PlayerNumberCircle from 'Scenes/RemoteMic/Components/PlayerNumberCircle';
+import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
 
 interface Props {}
 
 function ManagePlayers(props: Props) {
     useEffect(() => {
-        WebRTCClient.subscribe('remote-mics');
+        RemoteMicClient.subscribe('remote-mics');
 
         return () => {
-            WebRTCClient.unsubscribe('remote-mics');
+            RemoteMicClient.unsubscribe('remote-mics');
         };
     }, []);
 
@@ -60,7 +60,7 @@ const Entry = ({ mic }: { mic: ValuesType<WebRTCRemoteMicListEvent['list']> }) =
                 size="small">
                 <PlayerNumberCircle number={mic.number} />
                 <RemoteMicId>{mic.id.slice(-4)}</RemoteMicId>
-                <RemoteMicName className="ph-no-capture" isSelf={mic.id === WebRTCClient.getClientId()}>
+                <RemoteMicName className="ph-no-capture" isSelf={mic.id === RemoteMicClient.getClientId()}>
                     {mic.name}
                 </RemoteMicName>
             </RemoteMicEntry>

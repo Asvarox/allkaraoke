@@ -1,23 +1,20 @@
 import events from 'GameEvents/GameEvents';
+import { throttle } from 'lodash-es';
+import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
 import {
+    keyStrokes,
     WebRTCEvents,
     WebRTCGetInputLagResponseEvent,
     WebRTCRequestMicSelectEvent,
     WebRTCSongListEvent,
     WebRTCSubscribeEvent,
     WebRTCUnsubscribeEvent,
-    keyStrokes,
 } from 'RemoteMic/Network/events';
-import { getPingTime, pack, unpack } from 'RemoteMic/Network/utils';
+import sendMessage from 'RemoteMic/Network/sendMessage';
+import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
-import { throttle } from 'lodash-es';
-import { DataConnection, Peer } from 'peerjs';
-import Listener from 'utils/Listener';
-import peerJSOptions from 'utils/peerJSOptions';
 import storage from 'utils/storage';
 import { v4 } from 'uuid';
-import { ForwardedMessage, WEBSOCKETS_SERVER } from './TheServer';
-import sendEvent from './sendEvent';
 
 export const MIC_ID_KEY = 'MIC_CLIENT_ID';
 
@@ -32,153 +29,7 @@ const roundTo = (num: number, precision: number) => {
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
-export interface ClientTransport extends Listener<[WebRTCEvents]> {
-    connect(
-        clientId: string,
-        roomId: string,
-        onConnect: () => void,
-        onClose: (reason: transportCloseReason, originalEvent: any) => void,
-        onError: (error: transportErrorReason, originalEvent: any) => void,
-    ): void;
-    sendEvent(event: WebRTCEvents): void;
-    isConnected(): boolean;
-    close(): void;
-}
-
-export class WebSocketClientTransport extends Listener<[WebRTCEvents]> implements ClientTransport {
-    private connection: WebSocket | null = null;
-    private roomId: string | null = null;
-
-    public connect(
-        clientId: string,
-        roomId: string,
-        onConnect: () => void,
-        onClose: (reason: transportCloseReason, originalEvent: any) => void,
-        onError: (error: transportErrorReason, originalEvent: any) => void,
-    ): void {
-        this.roomId = roomId;
-        this.connection = new WebSocket(WEBSOCKETS_SERVER);
-        this.connection.binaryType = 'arraybuffer';
-
-        this.connection.onopen = () => {
-            this.connection?.send(pack({ t: 'register-player', id: clientId, roomId: roomId }));
-        };
-
-        this.connection.onmessage = (message) => {
-            const data = unpack<ForwardedMessage>(message.data);
-            if (data.t === 'forward') {
-                this.onUpdate(data.payload);
-            } else if (data.t === 'connected') {
-                onConnect();
-            }
-        };
-
-        this.connection.onclose = (event) => {
-            let reason = 'unknown';
-            try {
-                reason = JSON.parse(event.reason)?.error;
-            } catch (e) {
-                console.info('could not parse close reason', event);
-            }
-            this.clearAllListeners();
-            onClose(reason, event);
-        };
-
-        this.connection.onerror = (event) => {
-            this.clearAllListeners();
-            onError('error', event);
-        };
-    }
-
-    public sendEvent(event: WebRTCEvents) {
-        this.connection?.send(pack({ t: 'forward', recipients: [this.roomId], payload: event }));
-    }
-
-    // readyState >=2 means that the connection is closing or closed
-    public isConnected = () => (this.connection?.readyState ?? Infinity) < 2;
-
-    public close = () => {
-        this.connection?.close();
-    };
-}
-
-export class PeerJSClientTransport extends Listener<[WebRTCEvents]> implements ClientTransport {
-    private peer: Peer | null = null;
-    private connection: DataConnection | null = null;
-    private roomId: string | null = null;
-
-    private unavailableIdRetries = 0;
-    private unavailableIdRetryTimeout: any = null;
-
-    private connectToRoom = (
-        roomId: string,
-        onConnect: () => void,
-        onClose: (reason: transportCloseReason, originalEvent: any) => void,
-    ) => {
-        this.connection = this.peer!.connect(roomId);
-
-        this.connection.on('open', () => {
-            onConnect();
-        });
-
-        this.connection.on('close', () => onClose('closed', null));
-
-        this.connection?.on('data', (data: WebRTCEvents) => {
-            console.log(data);
-            this.onUpdate(data);
-        });
-    };
-
-    public connect(
-        clientId: string,
-        roomId: string,
-        onConnect: () => void,
-        onClose: (reason: transportCloseReason, originalEvent: any) => void,
-        onError: (error: transportErrorReason, originalEvent: any) => void,
-    ): void {
-        if (this.peer && !this.peer.disconnected) {
-            this.connectToRoom(roomId, onConnect, onClose);
-        } else {
-            this.peer = new Peer(clientId, { ...peerJSOptions, debug: 3 });
-
-            this.peer.on('open', () => {
-                this.connectToRoom(roomId, onConnect, onClose);
-            });
-
-            this.peer.on('error', (e) => {
-                // Happens when the device goes from offline to online
-                if (
-                    e.type === 'unavailable-id' &&
-                    this.unavailableIdRetries < 3 &&
-                    this.unavailableIdRetryTimeout === null
-                ) {
-                    this.peer?.destroy?.();
-                    this.unavailableIdRetryTimeout = setTimeout(() => {
-                        this.unavailableIdRetryTimeout = null;
-                        this.unavailableIdRetries++;
-                        this.connect(clientId, roomId, onConnect, onClose, onError);
-                    }, 1750);
-                } else {
-                    this.unavailableIdRetries = 0;
-                    console.error(e.type, e);
-                    onClose(e.type, e);
-                }
-            });
-        }
-    }
-
-    public sendEvent(event: WebRTCEvents) {
-        this.connection?.send(event);
-    }
-
-    public isConnected = () => !!this.connection?.open && !this.peer?.disconnected;
-
-    public close = () => {
-        this.connection?.close();
-    };
-}
-
-export class TheClient {
+export class NetworkClient {
     private clientId = storage.getValue(MIC_ID_KEY);
     private roomId: string | null = null;
 
@@ -359,7 +210,7 @@ export class TheClient {
             'get-input-lag-response',
         );
 
-    private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendEvent<T>>[2]) => {
+    private sendEvent = <T extends WebRTCEvents>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
         if (!this.transport.isConnected()) {
             console.debug('not connected, skipping', type, payload);
         } else {

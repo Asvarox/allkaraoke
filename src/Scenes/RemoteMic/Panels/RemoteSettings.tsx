@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
-import { MIC_ID_KEY, transportErrorReason } from 'RemoteMic/Network/TheClient';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
+import { MIC_ID_KEY, transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import RemoteInputLag from 'Scenes/RemoteMic/Panels/RemoteSettings/InputLag';
 import ManagePlayers from 'Scenes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
@@ -28,7 +28,7 @@ function RemoteSettings({
 }: Props) {
     const permissions = usePermissions();
     const reset = () => {
-        WebRTCClient.disconnect();
+        RemoteMicClient.disconnect();
         localStorage.removeItem('remote_mic_name');
         localStorage.removeItem(MIC_ID_KEY);
         window.location.reload();
@@ -38,7 +38,7 @@ function RemoteSettings({
             <h3>
                 Remote mic ID:{' '}
                 <strong data-test="remote-mic-id">
-                    {WebRTCClient.getClientId()?.slice(-4).toUpperCase() ?? '----'}
+                    {RemoteMicClient.getClientId()?.slice(-4).toUpperCase() ?? '----'}
                 </strong>
             </h3>
             <MenuButton onClick={reset} size="small" data-test="reset-microphone">

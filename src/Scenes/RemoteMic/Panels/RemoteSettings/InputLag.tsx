@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
 
 interface Props {}
@@ -11,14 +11,14 @@ function RemoteInputLag({}: Props) {
 
     useEffect(() => {
         setIsLoading(true);
-        WebRTCClient.getInputLag()
+        RemoteMicClient.getInputLag()
             .then(({ value }) => setCurrentValue(value))
             .finally(() => setIsLoading(false));
     }, []);
 
     const changeValue = (change: number) => {
         setIsLoading(true);
-        WebRTCClient.setInputLag(currentValue + change)
+        RemoteMicClient.setInputLag(currentValue + change)
             .then(({ value }) => setCurrentValue(value))
             .finally(() => setIsLoading(false));
     };

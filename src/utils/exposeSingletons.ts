@@ -1,8 +1,8 @@
 import CameraManager from 'Camera/CameraManager';
 import GameEvents from 'GameEvents/GameEvents'; // @ts-ignore
 import PlayersManager from 'Players/PlayersManager';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
-import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
+import RemoteMicClient from 'RemoteMic/Network/Client';
+import RemoteMicServer from 'RemoteMic/Network/Server';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import inputManager from 'Scenes/Game/Singing/Input/InputManager';
@@ -14,8 +14,8 @@ import UserMediaService from 'UserMedia/userMediaService';
 window.__exposeSingletons = () => {
     // @ts-ignore
     window.__singletons = {
-        WebRTCClient,
-        WebRTCServer,
+        RemoteMicClient,
+        RemoteMicServer,
         GameState,
         GameEvents,
         RemoteMicManager,

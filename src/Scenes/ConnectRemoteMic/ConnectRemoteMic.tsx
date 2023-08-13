@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { typography } from 'Elements/cssMixins';
-import WebRTCServer, { isWebsockets, useLegacyTransport } from 'RemoteMic/Network/WebRTCServer';
+import RemoteMicServer, { isWebsockets } from 'RemoteMic/Network/Server';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
@@ -8,21 +8,19 @@ import { useRoute } from 'wouter';
 
 const linkObject = new URL(window.location.href);
 
-if (useLegacyTransport) {
-    linkObject.searchParams.set('useLegacy', 'yes');
-} else if (isWebsockets) {
+if (isWebsockets) {
     linkObject.searchParams.set('transport', 'websocket');
 }
 
 function ConnectRemoteMic() {
     // Validate if the component is rendered in a remote mic or in the "main" game via the URL
     const [match, params] = useRoute<{ roomId: string }>('/remote-mic/:roomId');
-    linkObject.pathname = `/remote-mic/${match ? params.roomId : WebRTCServer.getRoomId()}`;
+    linkObject.pathname = `/remote-mic/${match ? params.roomId : RemoteMicServer.getRoomId()}`;
     const link = linkObject.href;
 
     useEffect(() => {
         if (!match) {
-            WebRTCServer.start();
+            RemoteMicServer.start();
         }
     }, [match]);
 

@@ -1,4 +1,4 @@
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import { useEffect, useState } from 'react';
 
@@ -10,10 +10,10 @@ function Ping({}: Props) {
     useEffect(() => {
         const interval = setInterval(() => {
             const now = getPingTime();
-            if (WebRTCClient.pinging && now - WebRTCClient.pingStart > latency) {
-                setLatency(now - WebRTCClient.pingStart);
+            if (RemoteMicClient.pinging && now - RemoteMicClient.pingStart > latency) {
+                setLatency(now - RemoteMicClient.pingStart);
             } else {
-                setLatency(WebRTCClient.latency);
+                setLatency(RemoteMicClient.latency);
             }
         }, 333);
 

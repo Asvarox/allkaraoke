@@ -3,8 +3,8 @@ import { QrCode2, Warning, Wifi } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import { Input } from 'Elements/Input';
 import { MenuButton } from 'Elements/Menu';
-import { transportErrorReason } from 'RemoteMic/Network/TheClient';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
+import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import { MAX_NAME_LENGTH } from 'consts';
 import { FormEventHandler, useEffect, useRef, useState } from 'react';
@@ -27,7 +27,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
     const disabled = connectionStatus !== 'uninitialised' && connectionStatus !== 'error';
 
     const connectToServer = (silent = false) => {
-        WebRTCClient.connect(roomId, name, silent);
+        RemoteMicClient.connect(roomId, name, silent);
         onConnect(silent);
     };
 

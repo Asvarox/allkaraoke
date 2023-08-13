@@ -12,7 +12,7 @@ import {
 } from '@mui/icons-material';
 import events from 'GameEvents/GameEvents';
 import { useEventListener } from 'GameEvents/hooks';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import { keyStrokes } from 'RemoteMic/Network/events';
 import RemoteSongSearch from 'Scenes/RemoteMic/Panels/Microphone/RemoteSongSearch';
 
@@ -28,7 +28,7 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
 
     const onPress = (key: keyStrokes) => () => {
         // navigator?.vibrate?.(200);
-        WebRTCClient.sendKeyStroke(key);
+        RemoteMicClient.sendKeyStroke(key);
     };
 
     return keyboard !== undefined ? (

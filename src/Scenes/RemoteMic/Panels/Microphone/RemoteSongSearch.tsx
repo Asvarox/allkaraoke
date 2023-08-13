@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
 import { Input } from 'Elements/Input';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import { MAX_NAME_LENGTH } from 'consts';
 import useDebounce from 'hooks/useDebounce';
 import { useEffect, useRef, useState } from 'react';
@@ -19,7 +19,7 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
     const debouncedSearch = useDebounce(search, 100);
 
     useEffect(() => {
-        WebRTCClient.searchSong(debouncedSearch.trim());
+        RemoteMicClient.searchSong(debouncedSearch.trim());
     }, [debouncedSearch]);
 
     useUnmount(() => onSearchStateChange?.(false));

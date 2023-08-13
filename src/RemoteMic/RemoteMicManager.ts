@@ -1,8 +1,8 @@
 import events from 'GameEvents/GameEvents';
+import { SenderInterface } from 'RemoteMic/Network/Server/Transport/interface';
 import { WebRTCEvents, WebRTCSetPermissionsEvent, WebRTCSubscribeEvent } from 'RemoteMic/Network/events';
 import { RemoteMic } from 'RemoteMic/RemoteMicInput';
 import { DefaultRemoteMicPermission } from 'Scenes/Settings/SettingsState';
-import Peer from 'peerjs';
 import Listener from 'utils/Listener';
 import storage from 'utils/storage';
 
@@ -19,7 +19,7 @@ class RemoteMicManager extends Listener<[string, WebRTCSetPermissionsEvent['leve
         RememberedSubscriptionsKey,
     ) ?? { 'remote-mics': [] };
 
-    public addRemoteMic = (id: string, name: string, connection: Peer.DataConnection, silent: boolean) => {
+    public addRemoteMic = (id: string, name: string, connection: SenderInterface, silent: boolean) => {
         this.remoteMics = this.remoteMics.filter((remoteMic) => remoteMic.id !== id);
         this.remoteMics = [...this.remoteMics, new RemoteMic(id, name, connection)];
         this.setPermission(id, this.getPermission(id));

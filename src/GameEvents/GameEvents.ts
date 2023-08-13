@@ -1,4 +1,5 @@
 import { SelectedPlayerInput } from 'Players/PlayersManager';
+import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import {
     WebRTCRemoteMicListEvent,
     WebRTCSetPermissionsEvent,
@@ -7,9 +8,8 @@ import {
 } from 'RemoteMic/Network/events';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { SongStats } from 'Songs/stats/common';
-import { PeerErrorType, SingSetup, Song, SongPreview } from 'interfaces';
+import { SingSetup, Song, SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
-import { transportErrorReason } from 'RemoteMic/Network/TheClient';
 
 export class GameEvent<T extends (...args: any[]) => void> {
     protected subscribers: Array<T> = [];

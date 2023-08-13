@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { buttonFocused } from 'Elements/Button';
 import { focused, typography } from 'Elements/cssMixins';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import PlayerChangeModal from 'Scenes/RemoteMic/Components/PlayerChangeModal';
 import PlayerNumberCircle from 'Scenes/RemoteMic/Components/PlayerNumberCircle';
 import { memo, useState } from 'react';
@@ -33,7 +33,7 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
             </PlayerChangeContainer>
             {isOpen && (
                 <PlayerChangeModal
-                    id={WebRTCClient.getClientId()!}
+                    id={RemoteMicClient.getClientId()!}
                     playerNumber={playerNumber}
                     onModalClose={closeModal}
                 />

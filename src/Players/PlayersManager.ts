@@ -1,5 +1,5 @@
 import events from 'GameEvents/GameEvents';
-import WebRTCServer from 'RemoteMic/Network/WebRTCServer';
+import RemoteMicServer from 'RemoteMic/Network/Server';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
@@ -72,7 +72,7 @@ class PlayersManager {
             }
             if (this.getPlayers().some((player) => player.input.source === 'Remote Microphone')) {
                 // If there are some remote mics, restart the server
-                WebRTCServer.start();
+                RemoteMicServer.start();
             }
         } else {
             this.players = [

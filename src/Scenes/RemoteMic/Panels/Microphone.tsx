@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { MenuButton } from 'Elements/Menu';
 import { typography } from 'Elements/cssMixins';
-import { transportErrorReason } from 'RemoteMic/Network/TheClient';
+import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import Connect from 'Scenes/RemoteMic/Panels/Microphone/Connect';

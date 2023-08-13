@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import Modal from 'Elements/Modal';
-import WebRTCClient from 'RemoteMic/Network/WebRTCClient';
+import RemoteMicClient from 'RemoteMic/Network/Client';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React from 'react';
 
@@ -14,7 +14,7 @@ interface Props {
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
     const selectPlayer = (player: number | null) => {
-        WebRTCClient.requestPlayerChange(id, player);
+        RemoteMicClient.requestPlayerChange(id, player);
         onModalClose();
     };
 

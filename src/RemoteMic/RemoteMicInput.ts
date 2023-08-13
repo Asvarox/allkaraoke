@@ -1,7 +1,7 @@
+import { SenderInterface } from 'RemoteMic/Network/Server/Transport/interface';
 import { WebRTCEvents, WebRTCSetPermissionsEvent } from 'RemoteMic/Network/events';
+import sendMessage from 'RemoteMic/Network/sendMessage';
 import { getPingTime } from 'RemoteMic/Network/utils';
-import Peer from 'peerjs';
-import sendEvent from './Network/sendEvent';
 
 class RemoteMicInput {
     private frequencies: number[] | number[][] = [0];
@@ -9,7 +9,7 @@ class RemoteMicInput {
 
     private requestReadinessPromise: null | Promise<boolean> = null;
 
-    public constructor(private connection: Peer.DataConnection) {}
+    public constructor(private connection: SenderInterface) {}
 
     getChannelsCount = () => 1;
 
@@ -39,19 +39,19 @@ class RemoteMicInput {
 
                 this.connection.on('data', listener);
 
-                sendEvent(this.connection, 'request-readiness');
+                sendMessage(this.connection, 'request-readiness');
             });
         }
         return this.requestReadinessPromise!;
     };
     startMonitoring = async () => {
-        sendEvent(this.connection, 'start-monitor');
+        sendMessage(this.connection, 'start-monitor');
 
         this.connection?.on('data', this.handleRTCData);
     };
 
     stopMonitoring = async () => {
-        sendEvent(this.connection, 'stop-monitor');
+        sendMessage(this.connection, 'stop-monitor');
 
         this.connection?.off('data', this.handleRTCData);
     };
@@ -68,7 +68,7 @@ export class RemoteMic {
     private input: RemoteMicInput;
     private pingTime: number = 9999;
     private pingInterval: ReturnType<typeof setTimeout> | null = null;
-    constructor(public id: string, public name: string, public connection: Peer.DataConnection) {
+    constructor(public id: string, public name: string, public connection: SenderInterface) {
         this.input = new RemoteMicInput(connection);
 
         this.pingClient();
@@ -77,7 +77,7 @@ export class RemoteMic {
     public getInput = () => this.input;
 
     public setPlayerNumber = (playerNumber: number | null) => {
-        sendEvent(this.connection, 'set-player-number', { playerNumber });
+        sendMessage(this.connection, 'set-player-number', { playerNumber });
     };
 
     public onDisconnect = () => {
@@ -87,7 +87,7 @@ export class RemoteMic {
     };
 
     public setPermission = (level: WebRTCSetPermissionsEvent['level']) => {
-        sendEvent<WebRTCSetPermissionsEvent>(this.connection, 'set-permissions', { level });
+        sendMessage<WebRTCSetPermissionsEvent>(this.connection, 'set-permissions', { level });
     };
 
     private isPinging = false;
@@ -104,7 +104,7 @@ export class RemoteMic {
         this.pingInterval = setTimeout(() => {
             this.pingTime = getPingTime();
             this.isPinging = true;
-            sendEvent(this.connection, 'ping');
+            sendMessage(this.connection, 'ping');
         }, 1000);
     };
 
