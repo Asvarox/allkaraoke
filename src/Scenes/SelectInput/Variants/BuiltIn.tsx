@@ -94,7 +94,7 @@ function BuiltIn(props: Props) {
                 )}
                 <MicCheck />
             </UserMediaEnabled>
-            <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
+            <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
             <MenuButton
                 {...register('save-button', props.onSave, undefined, true, { disabled: !selectedMic })}
                 disabled={!selectedMic}>

@@ -136,7 +136,7 @@ function SingStarMics(props: Props) {
                 )}
             </UserMediaEnabled>
 
-            <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
+            <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
             <MenuButton
                 {...register('save-button', onContinue, undefined, true, { disabled: !isSetup })}
                 data-test="save-button">

@@ -1,4 +1,3 @@
-import { expect } from '@playwright/test';
 import selectRandomSong from 'Scenes/SingASong/SongSelection/Hooks/selectRandomSong';
 import { randomInt } from 'utils/randomValue';
 import { afterEach, Mock, vitest } from 'vitest';

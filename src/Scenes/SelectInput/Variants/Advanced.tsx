@@ -89,7 +89,7 @@ function Advanced(props: Props) {
                     </h3>
                 )}
             </UserMediaEnabled>
-            <MenuButton {...register('back-button', props.onBack)}>Back to Input Selection</MenuButton>
+            <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
             <MenuButton {...register('save-button', props.onSave)}>{props.closeButtonText}</MenuButton>
         </>
     );
