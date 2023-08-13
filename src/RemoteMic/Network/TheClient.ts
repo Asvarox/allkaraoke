@@ -124,6 +124,7 @@ export class PeerJSClientTransport extends Listener<[WebRTCEvents]> implements C
         this.connection.on('close', () => onClose('closed', null));
 
         this.connection?.on('data', (data: WebRTCEvents) => {
+            console.log(data);
             this.onUpdate(data);
         });
     };

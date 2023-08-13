@@ -4,7 +4,9 @@ import { pack, unpack } from 'RemoteMic/Network/utils';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
+import { Peer } from 'peerjs';
 import Listener from 'utils/Listener';
+import peerJSOptions from 'utils/peerJSOptions';
 import { v4 } from 'uuid';
 
 const ROOM_ID_KEY = 'room_id_key';
@@ -24,18 +26,27 @@ interface WebsocketConnectedMessage {
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
-export interface ServerTransport extends Listener<[WebRTCEvents, SenderWrapper]> {
+interface SenderInterface {
+    peer: string;
+    send(payload: WebRTCEvents): void;
+    on(event: string, callback: (data: any) => void): void;
+    off(event: string, callback: (data: any) => void): void;
+    close(): void;
+}
+export interface ServerTransport extends Listener<[WebRTCEvents, SenderInterface]> {
+    name: 'WebSockets' | 'PeerJS';
     connect(
         roomId: string,
         onConnect: () => void,
         onClose: (reason: transportCloseReason, originalEvent: any) => void,
     ): void;
-    sendEvent(event: WebRTCEvents): void;
+    disconnect(): void;
 }
 
 export type WebsocketMessage = ForwardedMessage | WebsocketConnectedMessage;
 
-export class WebSocketServerTransport extends Listener<[WebRTCEvents, SenderWrapper]> implements ServerTransport {
+export class WebSocketServerTransport extends Listener<[WebRTCEvents, SenderInterface]> implements ServerTransport {
+    public readonly name = 'WebSockets';
     private connection: WebSocket | null = null;
     public constructor(private pswd: string) {
         super();
@@ -68,15 +79,14 @@ export class WebSocketServerTransport extends Listener<[WebRTCEvents, SenderWrap
         };
     }
 
-    public sendEvent = (event: WebRTCEvents) => {};
-
-    public close = () => {
+    public disconnect = () => {
         this.connection?.close();
     };
 }
 
 type callback = (data: any) => void;
-class SenderWrapper {
+
+class SenderWrapper implements SenderInterface {
     constructor(public peer: string, private socket: WebSocket) {}
 
     public send = (payload: WebRTCEvents) => {
@@ -109,16 +119,68 @@ class SenderWrapper {
             this.callbacksMap.delete(callback);
         }
     };
+
+    public close = () => {
+        this.socket.close();
+    };
+}
+
+export class PeerJSServerTransport extends Listener<[WebRTCEvents, SenderInterface]> implements ServerTransport {
+    public readonly name = 'PeerJS';
+    private peer: Peer | null = null;
+
+    public connect(
+        roomId: string,
+        onConnect: () => void,
+        onClose: (reason: transportCloseReason, originalEvent: any) => void,
+    ) {
+        this.peer = new Peer(roomId, peerJSOptions);
+
+        this.peer.on('open', function (id) {
+            onConnect();
+            console.log('My peer ID is: ' + id);
+        });
+        this.peer.on('connection', (conn) => {
+            conn.on('data', (data: WebRTCEvents) => {
+                this.onUpdate(data, conn);
+            });
+
+            conn.on('error', (data) => console.warn('error', data));
+
+            // iceStateChanged works - close/disconnected/error doesn't for some reason
+            // @ts-expect-error `iceStateChanged` is not included in TS definitions
+            conn.on('iceStateChanged', (state) => {
+                if (state === 'disconnected' || state === 'closed') {
+                    this.onUpdate({ t: 'unregister' }, conn);
+                }
+            });
+
+            conn.on('close', () => {
+                RemoteMicManager.removeRemoteMic(conn.peer);
+            });
+        });
+    }
+
+    public disconnect = () => {
+        this.peer?.disconnect();
+    };
 }
 
 export class TheServer {
     private roomId = window.sessionStorage.getItem(ROOM_ID_KEY)!;
     private started = false;
+    public transportName: string;
 
     public constructor(private transport: ServerTransport) {
         if (!this.roomId) {
             this.roomId = v4();
         }
+        this.transportName = transport.name;
+
+        window.addEventListener('beforeunload', () => {
+            RemoteMicManager.getRemoteMics().forEach((remoteMic) => remoteMic.connection.close());
+            this.transport?.disconnect();
+        });
     }
 
     public start = () => {

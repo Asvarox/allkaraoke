@@ -1,5 +1,4 @@
-import { LegacyP2PServer } from 'RemoteMic/Network/LegacyP2PServer';
-import { TheServer, WebSocketServerTransport } from 'RemoteMic/Network/TheServer';
+import { PeerJSServerTransport, TheServer, WebSocketServerTransport } from 'RemoteMic/Network/TheServer';
 
 if (window.location.search.includes('pswd')) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,8 +20,9 @@ if (window.location.search.includes('legacy')) {
 }
 export const useLegacyTransport = window.sessionStorage.getItem('useLegacyTransport');
 
-const server: TheServer | LegacyP2PServer =
-    pswd && !useLegacyTransport ? new TheServer(new WebSocketServerTransport(pswd)) : new LegacyP2PServer();
+const server = new TheServer(
+    pswd && !useLegacyTransport ? new WebSocketServerTransport(pswd) : new PeerJSServerTransport(),
+);
 
-export const isWebsockets = server instanceof TheServer;
+export const isWebsockets = server.transportName === 'WebSockets';
 export default server;
