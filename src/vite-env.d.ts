@@ -5,4 +5,8 @@ declare namespace globalThis {
         chrome: any;
         isE2ETests?: boolean;
     }
+
+    interface Navigator {
+        connection: any;
+    }
 }

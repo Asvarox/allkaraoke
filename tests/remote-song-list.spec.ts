@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
-import { connectRemoteMic } from './steps/openAndConnectRemoteMic';
+import { connectRemoteMic, openRemoteMic } from './steps/openAndConnectRemoteMic';
 
 test.beforeEach(async ({ page, context }) => {
     await initTestMode({ page, context });
@@ -20,11 +20,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await page.goto('/?e2e-test');
     await page.getByTestId('remote-mics').click();
 
-    const remoteMic = await context.newPage();
-    await mockSongs({ page: remoteMic, context });
-    const serverUrl = await page.getByTestId('server-link-input').inputValue();
-
-    await remoteMic.goto(serverUrl);
+    const remoteMic = await openRemoteMic(page, context);
     await remoteMic.getByTestId('player-name-input').fill(P1_Name);
 
     await test.step('Song list is available without connecting', async () => {
