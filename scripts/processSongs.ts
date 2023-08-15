@@ -3,10 +3,10 @@ import { MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
 import { Song } from '../src/interfaces';
 import { fixDiacritics } from '../src/Scenes/Convert/Steps/utils/fixDiacritics';
-import clearString from '../src/utils/clearString';
-// @ts-ignore
 import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import clearString from '../src/utils/clearString';
+// @ts-ignore
 import scrapedBpmData from './scraped-bpm-data.json';
 
 const mbApi = new MusicBrainzApi({
