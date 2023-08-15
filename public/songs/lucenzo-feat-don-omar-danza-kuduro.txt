@@ -12,7 +12,7 @@
 #VOLUME:1
 #GENRE:Latino
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-05-06T19:02:21.119Z
+#LASTUPDATE:2023-08-15T14:54:44.578Z
 #EDITION:[DUET]-Songs
 #GAP:23059,23076923077
 #TRACKNAMES:["Don Omar","Lucenzo"]
@@ -797,7 +797,7 @@ F 492 8 0 Rey!
 : 1633 2 -5 ver 
 : 1637 2 2 me
 : 1641 2 0 xe 
-: 1645 2 -1 cś 
+: 1645 2 -1 cú 
 : 1649 5 0 du
 : 1655 2 -3 ro 
 - 1657
@@ -955,7 +955,7 @@ F 492 8 0 Rey!
 : 2657 2 -5 ver 
 : 2661 2 2 me
 : 2665 2 0 xe 
-: 2669 2 -1 cś 
+: 2669 2 -1 cú 
 : 2673 5 0 du
 : 2679 2 -3 ro 
 - 2681

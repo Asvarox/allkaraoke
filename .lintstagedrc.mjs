@@ -3,7 +3,7 @@ import { execSync } from 'node:child_process';
 export default {
     '*.{mjs,ts,tsx}': ['prettier --plugin=prettier-plugin-organize-imports --write', 'eslint --cache --fix'],
     '*.{ts,tsx}': () => 'tsc --noEmit',
-    'public/songs/*.json': [
+    'public/songs/*.txt': [
         'yarn ts-node scripts/updateLastUpdate.ts',
         'yarn generate-index',
         'git add public/songs/index.json',

@@ -33,6 +33,7 @@ const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}) =
 #ARTIST:${data?.artist ?? 'ArtistTest'}
 #TITLE:${data?.title ?? 'TitleTest'}
 #BPM:${data?.bpm ?? '60'}
+#LANGUAGE:${data?.language ?? 'language'}
 #GAP:${data?.gap ?? '0'}
 ${lines.join('\n')}
 E`;
@@ -50,6 +51,7 @@ const songStub = {
     artist: 'ArtistTest',
     title: 'TitleTest',
     id: 'IdTest',
+    language: 'language',
     bpm: 60,
     bar: 4,
     gap: 0,
@@ -65,7 +67,7 @@ describe('convertTxtToSong', () => {
 
         const inputSongTxt = generateSongTxt([sections]);
 
-        const expectedSong: Song = { ...songStub, tracks: [{ sections }] };
+        const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: 'videoUrl' };
 
         expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
     });

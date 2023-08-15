@@ -1,8 +1,11 @@
-import { Box, FormControlLabel, Switch, TextField } from '@mui/material';
+import { Box, Button, TextField } from '@mui/material';
 import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import { fixDiacritics } from 'Scenes/Convert/Steps/utils/fixDiacritics';
+import isValidUltrastarTxtFormat from 'Scenes/Convert/Steps/utils/validateUltrastar';
 import importUltrastarEsSong from 'Scenes/Convert/importUltrastarEsSong';
-import { ChangeEventHandler } from 'react';
-import createPersistedState from 'use-persisted-state';
+import isNotesSection from 'Songs/utils/isNotesSection';
+import { Song } from 'interfaces';
+import { ChangeEventHandler, useMemo } from 'react';
 
 export interface BasicDataEntity {
     sourceUrl: string;
@@ -15,9 +18,8 @@ interface Props {
     onChange: (data: BasicDataEntity) => void;
     data: BasicDataEntity;
     isTxtRequired: boolean;
+    finalSong: Song;
 }
-
-const useFixDiacritics = createPersistedState<boolean>('editSongFixDiacritics', sessionStorage);
 
 export default function BasicData(props: Props) {
     const onSourceUrlEdit: ChangeEventHandler<HTMLInputElement> = async (e) => {
@@ -29,7 +31,16 @@ export default function BasicData(props: Props) {
         }
     };
 
-    const [attemptFixDiacritics, setAttemptFixDiacritics] = useFixDiacritics(true);
+    const fixAccents = (language: string) => {
+        props.onChange({
+            ...props.data,
+            txtInput: fixDiacritics(props.data.txtInput, language),
+        });
+    };
+
+    const isValidTxt = useMemo(() => isValidUltrastarTxtFormat(props.data.txtInput), [props.data.txtInput]);
+
+    const isTxtInputValid = !isValidTxt && props.data.txtInput.length > 0;
 
     return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="basic-data">
@@ -64,9 +75,11 @@ export default function BasicData(props: Props) {
                 data-test="source-url"
                 helperText="The link to the page from which the .TXT file was downloaded."
             />
-            {props.isTxtRequired && (
+            {props.isTxtRequired ? (
                 <>
                     <TextField
+                        error={isTxtInputValid}
+                        helperText={isTxtInputValid ? "This doesn't look like a valid UltraStar .TXT format" : ''}
                         required
                         sx={{ mt: 2 }}
                         fullWidth
@@ -76,7 +89,7 @@ export default function BasicData(props: Props) {
                         onChange={(e) =>
                             props.onChange({
                                 ...props.data,
-                                txtInput: attemptFixDiacritics ? fixDiacritics(e.target.value) : e.target.value,
+                                txtInput: e.target.value,
                             })
                         }
                         value={props.data.txtInput}
@@ -85,48 +98,27 @@ export default function BasicData(props: Props) {
                         InputProps={{
                             inputProps: {
                                 'data-test': 'input-txt',
+                                sx: { fontFamily: 'monospace' },
                             },
                         }}
                     />
-                    <FormControlLabel
-                        checked={attemptFixDiacritics}
-                        control={<Switch />}
-                        label="Fix polish diacritic characters"
-                        onChange={(_, checked) => setAttemptFixDiacritics(checked)}
-                    />
+                    <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+                        <Button onClick={() => fixAccents('polish')}>Fix 🇵🇱 Polish accents</Button>
+                        <Button onClick={() => fixAccents('spanish')}>Fix 🇪🇸 Spanish accents</Button>
+                    </Box>
                 </>
+            ) : (
+                <Box sx={{ display: 'flex', width: '100%', height: 500, overflow: 'auto' }}>
+                    {props.finalSong?.tracks?.map((track, index) => (
+                        <Box key={index} sx={{ flex: 1 }}>
+                            <h4>{track.name ?? `Track #${index + 1}`}</h4>
+                            {track.sections.filter(isNotesSection).map((section) => (
+                                <p key={section.start}>{section.notes.map((note) => note.lyrics).join('')}</p>
+                            ))}
+                        </Box>
+                    ))}
+                </Box>
             )}
         </Box>
     );
-}
-
-function fixDiacritics(txt: string): string {
-    return txt
-        .replaceAll('È', 'é')
-        .replaceAll('í', "'")
-        .replaceAll('¥', "'")
-
-        .replaceAll('¯', 'Ż')
-        .replaceAll('¹', 'ą')
-        .replaceAll('π', 'ą')
-        .replaceAll('ê', 'ę')
-        .replaceAll('Í', 'ę')
-        .replaceAll('Œ', 'Ś')
-        .replaceAll('å', 'Ś')
-        .replaceAll('œ', 'ś')
-        .replaceAll('ú', 'ś')
-        .replaceAll('æ', 'ć')
-        .replaceAll('Ê', 'ć')
-        .replaceAll('¿', 'ż')
-        .replaceAll('ø', 'ż')
-        .replaceAll('Ø', 'Ż')
-        .replaceAll('ñ', 'ń')
-        .replaceAll('Ò', 'ń')
-        .replaceAll('³', 'ł')
-        .replaceAll('≥', 'ł')
-        .replaceAll('≥', 'ł')
-        .replaceAll('£', 'Ł')
-        .replaceAll('Û', 'ó')
-        .replaceAll('ü', 'ź')
-        .replaceAll('Ÿ', 'ź');
 }

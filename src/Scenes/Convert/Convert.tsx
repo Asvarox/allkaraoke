@@ -197,16 +197,6 @@ export default function Convert({ song }: Props) {
                         </StepButton>
                     </Step>
                 </Stepper>
-
-                {possibleDuplicate && (
-                    <Alert severity="warning" data-test="possible-duplicate">
-                        <AlertTitle>Possible duplicate</AlertTitle>
-                        There is already a song with similar artist and/or name:{' '}
-                        <b>
-                            {possibleDuplicate.artist} - {possibleDuplicate.title}
-                        </b>
-                    </Alert>
-                )}
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -224,6 +214,7 @@ export default function Convert({ song }: Props) {
                             onAutoImport={setAuthorAndVid}
                             onChange={setBasicData}
                             data={basicData}
+                            finalSong={finalSong}
                         />
                     )}
 
@@ -253,6 +244,16 @@ export default function Convert({ song }: Props) {
                             songTitle={conversionResult?.title}
                             videoId={conversionResult!.video}
                         />
+                    )}
+
+                    {possibleDuplicate && (
+                        <Alert severity="warning" data-test="possible-duplicate">
+                            <AlertTitle>Possible duplicate</AlertTitle>
+                            There is already a song with similar artist and/or name:{' '}
+                            <b>
+                                {possibleDuplicate.artist} - {possibleDuplicate.title}
+                            </b>
+                        </Alert>
                     )}
                     <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <Button

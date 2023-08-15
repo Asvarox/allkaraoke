@@ -1,12 +1,13 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from '../src/interfaces';
 import { MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
+import { Song } from '../src/interfaces';
+import { fixDiacritics } from '../src/Scenes/Convert/Steps/utils/fixDiacritics';
 import clearString from '../src/utils/clearString';
 // @ts-ignore
-import scrapedBpmData from './scraped-bpm-data.json';
-import getSongId from '../src/Songs/utils/getSongId';
 import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
+import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import scrapedBpmData from './scraped-bpm-data.json';
 
 const mbApi = new MusicBrainzApi({
     appName: 'Olkaraoke',
@@ -20,10 +21,10 @@ const SONGS_FOLDER = './public/songs';
     const songs = readdirSync(SONGS_FOLDER);
 
     for (const file of songs) {
-        if (file === 'index.json' || file === 'dummy.json' || file === '.DS_Store') continue;
+        if (!file.endsWith('.txt')) continue;
         console.log('reading', file);
 
-        const song: Song = JSON.parse(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+        let song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
         console.log(`"${song.artist}" "${song.title}"`);
         const { tracks, ...songData } = song;
@@ -34,13 +35,22 @@ const SONGS_FOLDER = './public/songs';
             console.error(e);
         }
         const finalSong = { ...songData, tracks };
-        finalSong.id = getSongId(finalSong);
+        // finalSong.id = getSongId(finalSong);
 
-        writeFileSync(`${SONGS_FOLDER}/${finalSong.id}.txt`, convertSongToTxt(finalSong), {
+        const fixedTxt = await fixAccentCharacters(
+            convertSongToTxt(finalSong),
+            Array.isArray(song.language) ? song.language[0] : song.language,
+        );
+
+        writeFileSync(`${SONGS_FOLDER}/${finalSong.id}.txt`, fixedTxt, {
             encoding: 'utf-8',
         });
     }
 })();
+
+async function fixAccentCharacters(txt: string, language: string) {
+    return fixDiacritics(txt, language.toLowerCase());
+}
 
 async function fillMissingRealBpm(songData: Omit<Song, 'tracks'>, file: string) {
     if (songData.realBpm) {
