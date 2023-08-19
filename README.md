@@ -91,3 +91,5 @@ Documentation about specific topics can be found in [docs/](docs/) folder.
 -   `star` - golden note, gives bonus points
 -   `rap` / `freestyle` - notes that are always hit if any singing is detected. Gives reduced points
 
+#### Fix for JetBrains IDE and TypeScript
+https://youtrack.jetbrains.com/issue/WEB-62221/TypeScript-service-doesnt-work-with-yarn-pnp-when-typescript-version-is-5.x-or-higher
