@@ -44,7 +44,7 @@ export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: numbe
         [elem],
     );
 
-    usePlayerMicData(playerNumber, undefined, cb);
+    usePlayerMicData(playerNumber, cb);
     const color = styles.colors.players[playerNumber].text;
 
     return <VolumeIndicatorBase {...props} color={color} ref={setElem} />;

@@ -1,12 +1,15 @@
 import styled from '@emotion/styled';
+import { Check, Error } from '@mui/icons-material';
+import { CircularProgress } from '@mui/material';
 import { MenuButton } from 'Elements/Menu';
 import { nextIndex, Switcher } from 'Elements/Switcher';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
+import { usePlayerMicData } from 'hooks/players/usePlayerMic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import PlayersManager from 'Players/PlayersManager';
 import { getInputId } from 'Players/utils';
-import { useEffect } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
@@ -22,6 +25,43 @@ interface Props {
     onSave: () => void;
     changePreference: (pref: ValuesType<typeof MicSetupPreference>) => void;
     closeButtonText: string;
+}
+
+function useIsPlayerMicAudible(inputLabel: string) {
+    const [isAudible, setIsAudible] = useState<boolean | null>(null);
+
+    const previousMeasurements = useRef<number[]>([]);
+    const attempts = useRef(0);
+    const onMeasure = useCallback(
+        ([volume]: [number, number]) => {
+            previousMeasurements.current.push(volume);
+            if (previousMeasurements.current.length > 35) {
+                const medianMeasurement =
+                    previousMeasurements.current.sort()[Math.floor(previousMeasurements.current.length / 2)];
+
+                const audible = medianMeasurement > 0;
+
+                if (audible || attempts.current > 7) {
+                    setIsAudible(audible);
+                } else {
+                    attempts.current++;
+                }
+
+                previousMeasurements.current.length = 0;
+            }
+        },
+        [inputLabel],
+    );
+
+    usePlayerMicData(0, onMeasure, isAudible !== true);
+
+    useEffect(() => {
+        previousMeasurements.current.length = 0;
+        attempts.current = 0;
+        setIsAudible(null);
+    }, [inputLabel]);
+
+    return isAudible;
 }
 
 function BuiltIn(props: Props) {
@@ -65,10 +105,11 @@ function BuiltIn(props: Props) {
             setMic(input);
         }
     };
+    const isAudible = useIsPlayerMicAudible(selectedMic);
 
     useEffect(() => {
-        props.onSetupComplete(!!selectedMic);
-    }, [selectedMic]);
+        props.onSetupComplete(!!selectedMic && !!isAudible);
+    }, [selectedMic, isAudible]);
 
     return (
         <>
@@ -82,17 +123,48 @@ function BuiltIn(props: Props) {
                             <h4>(click to change)</h4>
                         </Header>
                         <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic} />
-                        <h4>
-                            Built-in microphones can pick up music from the game. For more accurate scores, try using
-                            your{' '}
-                            <button onClick={() => props.changePreference('remoteMics')}>
-                                smartphone as a microphone
-                            </button>
-                            .
-                        </h4>
+                        <AudibleStatus>
+                            {isAudible === true && (
+                                <>
+                                    <h3>Microphone is audible</h3>
+                                    <AudibleIconContainer>
+                                        <SuccessIcon />
+                                    </AudibleIconContainer>
+                                </>
+                            )}
+                            {isAudible === false && (
+                                <>
+                                    <h3>Microphone is not audible</h3>
+                                    <AudibleIconContainer>
+                                        <ErrorIcon />
+                                    </AudibleIconContainer>
+                                </>
+                            )}
+                            {isAudible === null && (
+                                <>
+                                    <h3>Make some noise to the microphone</h3>
+                                    <AudibleIconContainer>
+                                        <CircularProgress size="1em" />
+                                    </AudibleIconContainer>
+                                </>
+                            )}
+                        </AudibleStatus>
+                        {isAudible === false && (
+                            <h4>
+                                Make some noise to the microphone. If that doesn't work, try using another microphone.
+                            </h4>
+                        )}
                     </>
                 )}
                 <MicCheck />
+
+                {isAudible === true && (
+                    <h4>
+                        Built-in microphones can pick up music from the game. For more accurate scores, try using your{' '}
+                        <button onClick={() => props.changePreference('remoteMics')}>smartphone as a microphone</button>
+                        .
+                    </h4>
+                )}
             </UserMediaEnabled>
             <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
             <MenuButton
@@ -108,6 +180,31 @@ const Header = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+`;
+
+const AudibleStatus = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+`;
+
+const AudibleIconContainer = styled.div`
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+`;
+
+const ErrorIcon = styled(Error)`
+    width: 2em;
+    height: 2em;
+    color: red;
+`;
+const SuccessIcon = styled(Check)`
+    width: 2em;
+    height: 2em;
+    color: white;
 `;
 
 export default BuiltIn;
