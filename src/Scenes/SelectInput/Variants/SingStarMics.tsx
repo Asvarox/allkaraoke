@@ -35,7 +35,7 @@ function SingStarMics(props: Props) {
         const isSameDeviceId = [...new Set(inputs.map((input) => input.deviceId))].length === 1;
         const isMicInput = !inputs.find((input) => input.source !== 'Microphone');
         const areAllPreferred = !inputs.find(
-            (input) => InputSources.getInputForPlayerSelected(input)!.preferred === undefined,
+            (input) => InputSources.getInputForPlayerSelected(input)?.preferred === undefined,
         );
 
         return isSameDeviceId && isMicInput && areAllPreferred;
