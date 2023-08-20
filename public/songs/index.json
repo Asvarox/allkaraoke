@@ -4105,6 +4105,35 @@
     "local": false
   },
   {
+    "id": "digimon-leb-deinen-traum",
+    "title": "Leb deinen Traum",
+    "artist": "Digimon",
+    "language": "German",
+    "bpm": 339.3,
+    "bar": 4,
+    "gap": 16523.200707338638,
+    "video": "6dPqHuETySk",
+    "year": "2000",
+    "lastUpdate": "2023-08-20T08:30:36.904Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 165,
+    "previewStart": 41,
+    "previewEnd": 71,
+    "volume": 0.7,
+    "author": "DarkLink",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=203",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5996",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "digimonlebdeinentraum",
+    "local": false
+  },
+  {
     "id": "disney-tarzan-twee-werelden",
     "title": "Twee Werelden",
     "artist": "Disney Tarzan",
@@ -4414,6 +4443,33 @@
     ],
     "tracksCount": 1,
     "search": "donnasummerifeellove",
+    "local": false
+  },
+  {
+    "id": "dragon-ball-z-du-wirst-unbesiegbar-sein",
+    "title": "Du Wirst Unbesiegbar Sein",
+    "artist": "Dragon Ball Z",
+    "language": "German",
+    "bpm": 339,
+    "bar": 4,
+    "gap": 18512.300884955752,
+    "video": "EO090Z7Cjqc",
+    "year": "1990",
+    "lastUpdate": "2023-08-20T08:30:36.906Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 170,
+    "volume": 0.75,
+    "author": "Mr Flow",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4450",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5008",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dragonballzduwirstunbesiegbarsein",
     "local": false
   },
   {
