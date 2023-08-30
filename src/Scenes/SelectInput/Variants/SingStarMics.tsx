@@ -8,7 +8,6 @@ import InputSources from 'Scenes/SelectInput/InputSources';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
-import usePlayerNumberPreset from 'Scenes/SelectInput/hooks/usePlayerNumberPreset';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -26,7 +25,6 @@ interface Props {
 }
 
 function SingStarMics(props: Props) {
-    usePlayerNumberPreset(2);
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
     const { Microphone } = useMicrophoneList(true);
     const [showAdvancedTip, setShowAdvancedTip] = useState(false);

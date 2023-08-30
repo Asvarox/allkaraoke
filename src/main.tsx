@@ -7,7 +7,7 @@ import 'utils/exposeSingletons';
 import { init } from '@sentry/react';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import isDev from 'utils/isDev';
 import isE2E from 'utils/isE2E';
@@ -24,7 +24,6 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
         // We recommend adjusting this value in production
         tracesSampleRate: 1.0,
         environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
-        // tunnel: 'http://localhost:8080/sentry',
     });
 }
 

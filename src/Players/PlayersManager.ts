@@ -1,7 +1,6 @@
 import events from 'GameEvents/GameEvents';
 import RemoteMicServer from 'RemoteMic/Network/Server';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
@@ -60,9 +59,6 @@ export class PlayerEntity {
 }
 
 class PlayersManager {
-    public readonly MAX_PLAYERS = 2;
-    private minPlayerNumber = 2;
-
     private players: PlayerEntity[] = [];
     private requestingPromise: Promise<any> | null = null;
     public constructor() {
@@ -86,8 +82,6 @@ class PlayersManager {
         }
 
         events.playerInputChanged.subscribe((playerNumber, _, newInput) => {
-            if (!newInput) return;
-
             if (newInput.source === 'Remote Microphone') {
                 const microphone = RemoteMicManager.getRemoteMicById(newInput.deviceId!);
 
@@ -164,37 +158,6 @@ class PlayersManager {
 
     public getPlayers = () => this.players;
     public getPlayer = (number: number) => this.players[number];
-
-    public getMinPlayerNumber = () => this.minPlayerNumber;
-    public setMinPlayerNumber = (minPlayerNumber: number) => {
-        const previousMinPlayerNumber = this.minPlayerNumber;
-        this.minPlayerNumber = minPlayerNumber;
-        events.minPlayerNumberChanged.dispatch(previousMinPlayerNumber, minPlayerNumber);
-    };
-
-    public addPlayer = (playerNumber: number) => {
-        if (GameState.isPlaying() || this.getPlayer(playerNumber)) {
-            return;
-        }
-        const newPlayer = new PlayerEntity(playerNumber, { source: 'Dummy', deviceId: 'default', channel: 0 });
-        this.players.push(newPlayer);
-        this.storePlayers();
-
-        events.playerAdded.dispatch(newPlayer.number);
-        events.playerInputChanged.dispatch(newPlayer.number, undefined, newPlayer.input);
-
-        return newPlayer;
-    };
-
-    public removePlayer = (playerNumber: number) => {
-        if (GameState.isPlaying()) {
-            return;
-        }
-        const player = this.getPlayer(playerNumber);
-        this.players = this.players.filter((player) => player.number !== playerNumber);
-        this.storePlayers();
-        events.playerRemoved.dispatch(player);
-    };
 
     public getInputs = () => this.getPlayers().map((player) => player.input);
 }

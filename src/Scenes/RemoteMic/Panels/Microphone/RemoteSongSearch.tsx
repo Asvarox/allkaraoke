@@ -5,7 +5,7 @@ import RemoteMicClient from 'RemoteMic/Network/Client';
 import { MAX_NAME_LENGTH } from 'consts';
 import useDebounce from 'hooks/useDebounce';
 import { useEffect, useRef, useState } from 'react';
-import { usePrevious, useUnmount } from 'react-use';
+import { useUnmount } from 'react-use';
 
 interface Props {
     // children: (props: { onClick: () => void }) => ReactNode;
@@ -18,12 +18,9 @@ function RemoteSongSearch({ onSearchStateChange }: Props) {
 
     const debouncedSearch = useDebounce(search, 100);
 
-    const previousSearch = usePrevious(debouncedSearch);
     useEffect(() => {
-        if (previousSearch !== debouncedSearch) {
-            RemoteMicClient.searchSong(debouncedSearch.trim());
-        }
-    }, [previousSearch, debouncedSearch]);
+        RemoteMicClient.searchSong(debouncedSearch.trim());
+    }, [debouncedSearch]);
 
     useUnmount(() => onSearchStateChange?.(false));
 

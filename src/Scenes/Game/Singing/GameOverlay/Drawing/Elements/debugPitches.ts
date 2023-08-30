@@ -3,8 +3,8 @@ import { calcDistance } from '../../../GameState/Helpers/calcDistance';
 import calculateData, { DrawingData, pitchPadding } from '../calculateData';
 
 export default function debugPitches(ctx: CanvasRenderingContext2D, data: DrawingData) {
-    const { currentSection, timeSectionGap, maxTime, pitchStepHeight, playerCanvas } = calculateData(data);
-    const { frequencies, maxPitch, canvas, songBeatLength } = data;
+    const { currentSection, paddingHorizontal, timeSectionGap, maxTime, pitchStepHeight } = calculateData(data);
+    const { frequencies, maxPitch, canvas, songBeatLength, playerNumber } = data;
 
     if (!isNotesSection(currentSection)) return;
 
@@ -13,7 +13,7 @@ export default function debugPitches(ctx: CanvasRenderingContext2D, data: Drawin
     ctx!.fillStyle = 'rgba(255, 255, 255, .25)';
 
     frequencies.forEach((entry) => {
-        const regionPaddingTop = playerCanvas.baseY;
+        const regionPaddingTop = playerNumber * canvas.height * 0.5;
 
         const currentBeat = Math.max(0, Math.floor(entry.timestamp / songBeatLength));
         const noteAtTheTime =
@@ -25,8 +25,7 @@ export default function debugPitches(ctx: CanvasRenderingContext2D, data: Drawin
 
         const entryRelativeTime = Math.max(0, entry.timestamp - timeSectionGap);
         const entryX =
-            playerCanvas.baseX +
-            (entryRelativeTime / maxTime) * (canvas!.width - playerCanvas.baseX - playerCanvas.baseX);
+            paddingHorizontal + (entryRelativeTime / maxTime) * (canvas!.width - paddingHorizontal - paddingHorizontal);
 
         const { distance: toleratedDistance } = calcDistance(entry.frequency, noteAtTheTime.pitch);
         const final = maxPitch - (noteAtTheTime.pitch + toleratedDistance) + pitchPadding;
