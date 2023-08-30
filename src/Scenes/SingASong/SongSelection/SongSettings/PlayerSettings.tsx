@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
+import gameEvents from 'GameEvents/GameEvents';
+import { useEventEffect } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
@@ -19,21 +21,28 @@ interface Props {
 }
 
 export default function PlayerSettings({ songPreview, onNextStep, keyboardControl, onExitKeyboardControl }: Props) {
-    const players = PlayersManager.getPlayers();
+    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
     const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
+
+    const players = PlayersManager.getPlayers();
+    const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
+    const initialisePlayerSetup = () =>
+        players.map((player, index) => ({
+            number: player.number,
+            track: multipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
+        }));
+    const [playerSetup, setPlayerSetup] = useState<PlayerSetup[]>(initialisePlayerSetup());
+
+    useEventEffect([gameEvents.playerAdded, gameEvents.playerRemoved], () => setPlayerSetup(initialisePlayerSetup()));
+
+    const playerList = players.map(
+        (player, index) =>
+            playerSetup.find((setup) => setup.number === player.number) ?? initialisePlayerSetup()[index],
+    );
 
     const playerNames = useMemo<string[]>(
         () => JSON.parse(sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) ?? [],
         [],
-    );
-
-    const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-    const multipleTracks = !mobilePhoneMode && players.length === 2 && songPreview.tracksCount > 1;
-    const [playerSetup, setPlayerSetup] = useState<PlayerSetup[]>(
-        players.map((player, index) => ({
-            number: player.number,
-            track: multipleTracks ? Math.min(index, songPreview.tracksCount - 1) : 0,
-        })),
     );
 
     const updatePlayer = (playerNumber: number) => (newSetup: PlayerSetup) => {
@@ -54,7 +63,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
     });
 
     const startSong = () => {
-        onNextStep(playerSetup);
+        onNextStep(playerList);
     };
 
     const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
@@ -73,7 +82,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
                     }}
                 />
             )}
-            {playerSetup.map((setup, index) => (
+            {playerList.map((setup, index) => (
                 <PlayerSettingContainer key={setup.number}>
                     <PlayerSettingTitle>Player {index + 1}</PlayerSettingTitle>
                     <div>

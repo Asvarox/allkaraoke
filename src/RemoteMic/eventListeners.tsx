@@ -5,6 +5,16 @@ import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 import { toast } from 'react-toastify';
 
+events.playerRemoved.subscribe((player) => {
+    if (player.input.source === RemoteMicrophoneInputSource.inputName) {
+        const remoteMic = RemoteMicManager.getRemoteMicById(player.input.deviceId!);
+
+        if (remoteMic) {
+            remoteMic.setPlayerNumber(null);
+        }
+    }
+});
+
 events.playerInputChanged.subscribe((playerNumber, oldInput, newInput) => {
     if (oldInput?.source === RemoteMicrophoneInputSource.inputName) {
         const playerNumber = PlayersManager.getPlayers().find(

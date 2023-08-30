@@ -45,7 +45,7 @@
         "start": "vite",
         "dev": "yarn start",
         "start:mock": "VITE_REACT_APP_OFFLINE=true vite",
-        "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key -p ${PORT:-3010} build",
+        "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key --no-request-logging -p ${PORT:-3010} build",
         "build": "vite build",
         "build:serve": "yarn build && yarn start:production",
         "build:serve:sourcemap": "yarn build --sourcemap true && yarn start:production",

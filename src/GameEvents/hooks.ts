@@ -15,7 +15,13 @@ export function useEventListener<T extends (...args: any[]) => void>(event: Game
     return value;
 }
 
-export function useEventEffect<T extends (...args: any[]) => void>(event: GameEvent<T> | GameEvent<T>[], effect: T) {
+type AnyFunc = (...args: any[]) => void;
+export function useEventEffect<T1 extends AnyFunc, T2 extends AnyFunc>(
+    events: [GameEvent<T1>, GameEvent<T2>],
+    effect: T1 | T2,
+): void;
+export function useEventEffect<T1 extends AnyFunc>(events: GameEvent<T1>, effect: T1): void;
+export function useEventEffect<T extends AnyFunc>(event: GameEvent<T> | GameEvent<T>[], effect: T) {
     const eventList = Array.isArray(event) ? event : [event];
 
     useEffect(() => {

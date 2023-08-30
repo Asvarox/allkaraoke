@@ -30,7 +30,10 @@ class InputManager {
     };
 
     public getPlayerFrequency = (playerNumber: number) => {
-        const input = PlayersManager.getPlayer(playerNumber).input;
+        const input = PlayersManager.getPlayer(playerNumber)?.input;
+        // Player got removed
+        if (!input) return 0;
+
         const frequencies = this.sourceNameToInput(input.source).getFrequencies(input.deviceId);
 
         return frequencies[input.channel];

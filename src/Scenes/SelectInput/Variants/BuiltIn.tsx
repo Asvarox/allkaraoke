@@ -2,20 +2,21 @@ import styled from '@emotion/styled';
 import { Check, Error } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import { MenuButton } from 'Elements/Menu';
-import { nextIndex, Switcher } from 'Elements/Switcher';
+import { Switcher, nextIndex } from 'Elements/Switcher';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
-import { usePlayerMicData } from 'hooks/players/usePlayerMic';
-import useKeyboardNav from 'hooks/useKeyboardNav';
 import PlayersManager from 'Players/PlayersManager';
 import { getInputId } from 'Players/utils';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
+import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
+import usePlayerNumberPreset from 'Scenes/SelectInput/hooks/usePlayerNumberPreset';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
+import { usePlayerMicData } from 'hooks/players/usePlayerMic';
+import useKeyboardNav from 'hooks/useKeyboardNav';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { ValuesType } from 'utility-types';
 import { InputSource } from '../InputSources/interfaces';
 
@@ -65,6 +66,7 @@ function useIsPlayerMicAudible(inputLabel: string) {
 }
 
 function BuiltIn(props: Props) {
+    usePlayerNumberPreset(1);
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
     const { Microphone } = useMicrophoneList(true);

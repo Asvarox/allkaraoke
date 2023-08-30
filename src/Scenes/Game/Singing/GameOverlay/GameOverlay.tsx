@@ -113,14 +113,14 @@ function GameOverlay({
                                 <ScoreText score={GameState.getPlayerScore(0)} />
                             </span>
                         ) : (
-                            <>
-                                <span data-test="player-0-score" data-score={GameState.getPlayerScore(0)}>
-                                    <ScoreText score={GameState.getPlayerScore(0)} />
+                            PlayersManager.getPlayers().map((player) => (
+                                <span
+                                    key={player.number}
+                                    data-test={`player-${player.number}-score`}
+                                    data-score={GameState.getPlayerScore(player.number)}>
+                                    <ScoreText score={GameState.getPlayerScore(player.number)} />
                                 </span>
-                                <span data-test="player-1-score" data-score={GameState.getPlayerScore(1)}>
-                                    <ScoreText score={GameState.getPlayerScore(1)} />
-                                </span>
-                            </>
+                            ))
                         )}
                     </>
                 )}

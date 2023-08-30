@@ -6,6 +6,28 @@ export const pitchPadding = 6;
 export const NOTE_HEIGHT = 30;
 export const BIG_NOTE_HEIGHT = NOTE_HEIGHT + 6;
 
+const getPlayerCanvas = (
+    drawingData: Pick<DrawingData, 'canvas' | 'playerCount' | 'playerIndex' | 'paddingVertical'>,
+) => {
+    const width = drawingData.canvas.width;
+    const height = drawingData.canvas.height;
+
+    // If the ratio is higher than 16/9 (e.g. 21/9), pad the excess horizontal space
+    // so in the end the notes are drawn over the same area as it would be on 16/9
+    const pixelsOverRatio = Math.max(0, (width - height * (16 / 9)) / 2);
+
+    const paddingHorizontal = 10 + (width - 2 * pixelsOverRatio) * 0.15 + pixelsOverRatio;
+
+    const paddedHeight = height - drawingData.paddingVertical * 2;
+
+    return {
+        width: width - paddingHorizontal * 2,
+        height: paddedHeight / drawingData.playerCount,
+        baseX: paddingHorizontal,
+        baseY: drawingData.paddingVertical + (drawingData.playerIndex * paddedHeight) / drawingData.playerCount,
+    };
+};
+
 export default function calculateData({
     canvas,
     currentSectionIndex,
@@ -14,17 +36,16 @@ export default function calculateData({
     minPitch,
     maxPitch,
     track,
+    playerIndex,
+    playerCount,
     paddingVertical,
 }: DrawingData) {
     const sections = song.tracks[track].sections;
     const currentSection = sections[currentSectionIndex];
     const nextSection = sections[currentSectionIndex + 1];
 
-    // If the ratio is higher than 16/9 (e.g. 21/9), pad the excess horizontal space
-    // so in the end the notes are drawn over the same area as it would be on 16/9
-    const pixelsOverRatio = Math.max(0, (canvas.width - canvas.height * (16 / 9)) / 2);
+    const playerCanvas = getPlayerCanvas({ canvas, playerCount, playerIndex, paddingVertical });
 
-    const paddingHorizontal = 10 + (canvas.width - 2 * pixelsOverRatio) * 0.15 + pixelsOverRatio;
     const lastNote = isNotesSection(currentSection) ? currentSection?.notes?.at(-1) : undefined;
     const sectionEndBeat = isNotesSection(currentSection)
         ? nextSection?.start ?? lastNote!.start + lastNote!.length
@@ -32,13 +53,10 @@ export default function calculateData({
     const timeSectionGap = currentSection.start * songBeatLength;
     const maxTime = (sectionEndBeat - currentSection.start) * songBeatLength;
 
-    const canvasHeight = canvas.height - 2 * paddingVertical;
-
-    const pitchStepHeight = (canvasHeight / 2 - 20 - NOTE_HEIGHT) / (maxPitch - minPitch + pitchPadding * 2);
+    const pitchStepHeight = (playerCanvas.height - 20 - NOTE_HEIGHT) / (maxPitch - minPitch + pitchPadding * 2);
 
     return {
-        canvasHeight,
-        paddingHorizontal,
+        playerCanvas,
         currentSection,
         sectionEndBeat,
         timeSectionGap,
@@ -49,6 +67,8 @@ export default function calculateData({
 
 export interface DrawingData {
     playerNumber: number;
+    playerIndex: number;
+    playerCount: number;
     song: Song;
     songBeatLength: number;
     minPitch: number;

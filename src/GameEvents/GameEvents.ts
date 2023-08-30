@@ -1,4 +1,4 @@
-import { SelectedPlayerInput } from 'Players/PlayersManager';
+import { PlayerEntity, SelectedPlayerInput } from 'Players/PlayersManager';
 import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import {
     NetworkRemoteMicListMessage,
@@ -53,6 +53,9 @@ export const events = {
     // newPlayerNote: new GameEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
     // playerNoteUpdate: new GameEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
 
+    playerAdded: new GameEvent<(playerNumber: number) => void>('playerAdded', false),
+    playerRemoved: new GameEvent<(player: PlayerEntity) => void>('playerRemoved', false),
+
     songStarted: new GameEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted', false),
     songEnded: new GameEvent<
         (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
@@ -66,8 +69,12 @@ export const events = {
     ),
     playerNameChanged: new GameEvent<(playerNumber: number, oldName: string | undefined) => void>('playerNameChanged'),
     playerInputChanged: new GameEvent<
-        (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput) => void
-    >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.source, new: newI.source })),
+        (
+            playerNumber: number,
+            oldInput: SelectedPlayerInput | undefined,
+            newInput: SelectedPlayerInput | undefined,
+        ) => void
+    >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.source, new: newI?.source })),
     inputListChanged: new GameEvent<(initial: boolean) => void>('inputListChanged'),
 
     karaokeConnectionStatusChange: new GameEvent<
@@ -96,7 +103,7 @@ export const events = {
     remoteMicSubscribed: new GameEvent<(id: string, channel: NetworkSubscribeMessage['channel']) => void>(
         'remoteMicSubscribed',
     ),
-    remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed', true),
+    remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
     remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch', true),
     remoteMicListUpdated: new GameEvent<(list: NetworkRemoteMicListMessage['list']) => void>('remoteMicListUpdated'),
     remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
@@ -105,6 +112,7 @@ export const events = {
         'remoteMicPermissionsSet',
     ),
     readinessConfirmed: new GameEvent<(deviceId: string) => void>('remoteReadinessConfirmed'),
+    minPlayerNumberChanged: new GameEvent<(previous: number, current: number) => void>('minPlayerNumberChanged'),
 };
 
 export default events;
