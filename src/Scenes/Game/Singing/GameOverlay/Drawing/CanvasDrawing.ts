@@ -58,14 +58,16 @@ export default class CanvasDrawing {
         const ctx = this.canvas.getContext('2d');
         if (!ctx) return;
 
-        ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        if (GameState.isPlaying()) {
+            ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-        const players = PlayersManager.getPlayers();
-        players.forEach((player, index) => {
-            this.drawPlayer(player.number, ctx);
-        });
+            const players = PlayersManager.getPlayers();
+            players.forEach((player, index) => {
+                this.drawPlayer(player.number, ctx);
+            });
 
-        ParticleManager.tick(ctx, this.canvas, this.pauseTime);
+            ParticleManager.tick(ctx, this.canvas, this.pauseTime);
+        }
 
         if (FPSCountSetting.get() === 30) {
             const endTime = Date.now();
