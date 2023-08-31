@@ -53,8 +53,8 @@ export const TestCanvas = (props: Props) => {
             tolerance: 2,
         });
 
-        PlayersManager.getPlayer(0).changeInput('DrawingTest', 0);
-        PlayersManager.getPlayer(1).changeInput('DrawingTest', 1);
+        PlayersManager.getPlayer(0)!.changeInput('DrawingTest', 0);
+        PlayersManager.getPlayer(1)!.changeInput('DrawingTest', 1);
     }, []);
 
     return <canvas width={props.width} height={props.height} id={'canvas'} />;

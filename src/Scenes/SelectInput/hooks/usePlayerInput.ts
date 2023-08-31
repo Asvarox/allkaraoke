@@ -12,7 +12,7 @@ export function usePlayerInput(playerNumber: number, sources: Record<InputSource
     const [selectedPlayerInput, playerInputData] = useEventListenerSelector(
         [events.playerInputChanged, events.inputListChanged],
         () => {
-            const playerInput = PlayersManager.getPlayer(playerNumber).input;
+            const playerInput = PlayersManager.getPlayer(playerNumber)?.input;
 
             if (!playerInput) return tuple([null, null]);
             return tuple([playerInput, InputSources.getInputForPlayerSelected(playerInput)]);
@@ -24,7 +24,7 @@ export function usePlayerInput(playerNumber: number, sources: Record<InputSource
             const source = sourceList[0];
             const input = sources[source].getDefault();
             if (input) {
-                PlayersManager.getPlayer(playerNumber).changeInput(sourceList[0], input.channel, input.deviceId);
+                PlayersManager.getPlayer(playerNumber)?.changeInput(sourceList[0], input.channel, input.deviceId);
             }
         }
     });
@@ -34,7 +34,7 @@ export function usePlayerInput(playerNumber: number, sources: Record<InputSource
 
         const input = startingIndex ? sources[nextSource].list[startingIndex] : sources[nextSource].getDefault();
 
-        PlayersManager.getPlayer(playerNumber).changeInput(nextSource, input?.channel, input?.deviceId);
+        PlayersManager.getPlayer(playerNumber)?.changeInput(nextSource, input?.channel, input?.deviceId);
     };
     const cycleInput = () => {
         if (!selectedPlayerInput) return;
@@ -46,7 +46,7 @@ export function usePlayerInput(playerNumber: number, sources: Record<InputSource
         } else {
             const input = list[newIndex];
 
-            PlayersManager.getPlayer(playerNumber).changeInput(
+            PlayersManager.getPlayer(playerNumber)?.changeInput(
                 selectedPlayerInput.source,
                 input?.channel,
                 input?.deviceId,

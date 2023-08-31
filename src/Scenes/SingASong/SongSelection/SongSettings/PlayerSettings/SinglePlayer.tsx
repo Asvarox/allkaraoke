@@ -11,7 +11,7 @@ import { useRef, useState } from 'react';
 
 interface Props {
     multipleTracks: boolean;
-    player: PlayerEntity;
+    player: PlayerEntity | undefined;
     songPreview: SongPreview;
     onChange: (setup: PlayerSetup) => void;
     setup: PlayerSetup;
@@ -34,6 +34,10 @@ export default function SinglePlayer({
     const nameRef = useRef<HTMLInputElement | null>(null);
     // Force update when the name changes
     useEventListener(events.playerNameChanged);
+
+    if (player === undefined) {
+        return null;
+    }
 
     const togglePlayerTrack = () =>
         onChange({ number: player.number, track: (setup.track + 1) % songPreview.tracksCount });

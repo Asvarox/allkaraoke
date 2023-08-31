@@ -36,8 +36,6 @@ export class GameStateClass {
 
     public resetSingSetup = () => {
         this.singSetup = null;
-        this.song = null;
-        this.playerStates = [];
     };
 
     public isPlaying = () => this.singSetup !== null;

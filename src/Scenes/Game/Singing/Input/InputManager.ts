@@ -23,10 +23,12 @@ class InputManager {
     }
 
     public getInputStatus = (playerNumber: number) => {
-        const input = PlayersManager.getPlayer(playerNumber).input;
-        const source = this.sourceNameToInput(input.source);
+        const player = PlayersManager.getPlayer(playerNumber);
+        if (!player) return 'unavailable';
 
-        return source.getStatus(input.deviceId, input.channel);
+        const source = this.sourceNameToInput(player.input.source);
+
+        return source.getStatus(player.input.deviceId, player.input.channel);
     };
 
     public getPlayerFrequency = (playerNumber: number) => {
@@ -40,14 +42,23 @@ class InputManager {
     };
 
     public getPlayerVolume = (playerNumber: number) => {
-        const input = PlayersManager.getPlayer(playerNumber).input;
+        const input = PlayersManager.getPlayer(playerNumber)?.input;
+        if (!input) {
+            return 0;
+        }
         const volumes = this.sourceNameToInput(input.source).getVolumes(input.deviceId);
 
         return volumes[input.channel];
     };
 
-    public getPlayerInputLag = (playerNumber: number) =>
-        this.sourceNameToInput(PlayersManager.getPlayer(playerNumber).input.source).getInputLag();
+    public getPlayerInputLag = (playerNumber: number) => {
+        const player = PlayersManager.getPlayer(playerNumber);
+        if (!player) {
+            return 0;
+        } else {
+            return this.sourceNameToInput(player.input.source).getInputLag();
+        }
+    };
 
     public startMonitoring = async () => {
         await Promise.all(

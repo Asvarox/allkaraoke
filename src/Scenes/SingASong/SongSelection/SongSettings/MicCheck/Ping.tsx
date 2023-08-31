@@ -26,7 +26,7 @@ export const useDevicePing = (deviceId?: string) => {
 };
 
 function Ping({ playerNumber, ...restProps }: Props) {
-    const latency = useDevicePing(PlayersManager.getPlayer(playerNumber).input?.deviceId);
+    const latency = useDevicePing(PlayersManager.getPlayer(playerNumber)?.input?.deviceId);
 
     return <>{latency !== null ? <PingContainer {...restProps}>{latency}ms</PingContainer> : ''}</>;
 }

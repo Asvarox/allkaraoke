@@ -259,7 +259,7 @@ export default class CanvasDrawing {
         const playerCount = players.length;
 
         const playerState = GameState.getPlayer(playerNumber)!;
-        const player = PlayersManager.getPlayer(playerNumber);
+        const player = PlayersManager.getPlayer(playerNumber)!;
         const currentSectionIndex = playerState.getCurrentSectionIndex() + sectionShift ?? 0;
         const song = GameState.getSong()!;
         const track = playerState.getTrackIndex();

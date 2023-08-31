@@ -23,6 +23,8 @@ export const VolumeIndicator = forwardRef(
         ref: ForwardedRef<HTMLDivElement | null>,
     ) => {
         const player = PlayersManager.getPlayer(playerNumber);
+        if (!player) return null;
+
         const percent = `${Math.min(1, volume * 20)}`;
         const color = styles.colors.players[player.number].text;
 

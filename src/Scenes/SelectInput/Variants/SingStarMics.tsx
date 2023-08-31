@@ -62,7 +62,7 @@ function SingStarMics(props: Props) {
         const preferred = Microphone.list.filter((input) => input.preferred !== undefined);
         if (preferred.length === 2 && preferred[0].deviceId === preferred[1].deviceId) {
             preferred.forEach((input) => {
-                PlayersManager.getPlayer(input.preferred!).changeInput(
+                PlayersManager.getPlayer(input.preferred!)?.changeInput(
                     MicrophoneInputSource.inputName,
                     input.channel,
                     input.deviceId,

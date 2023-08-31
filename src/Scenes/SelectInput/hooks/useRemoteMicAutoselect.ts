@@ -9,7 +9,7 @@ export function useRemoteMicAutoselect() {
 
     useEventEffect(events.remoteMicConnected, ({ id }) => {
         console.log('useRemoteMicAutoselect', id);
-        PlayersManager.getPlayer(nextPlayerToAutoSwitch.current).changeInput(
+        PlayersManager.getPlayer(nextPlayerToAutoSwitch.current)?.changeInput(
             RemoteMicrophoneInputSource.inputName,
             0,
             id,

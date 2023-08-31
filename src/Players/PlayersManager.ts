@@ -86,16 +86,17 @@ class PlayersManager {
         }
 
         events.playerInputChanged.subscribe((playerNumber, _, newInput) => {
-            if (!newInput) return;
+            const player = this.getPlayer(playerNumber);
+            if (!newInput || !player) return;
 
             if (newInput.source === 'Remote Microphone') {
                 const microphone = RemoteMicManager.getRemoteMicById(newInput.deviceId!);
 
                 if (microphone) {
-                    this.getPlayer(playerNumber).nameOverride = microphone.name;
+                    player.nameOverride = microphone.name;
                 }
             } else {
-                this.getPlayer(playerNumber).nameOverride = '';
+                player.nameOverride = '';
             }
 
             this.storePlayers();
@@ -163,7 +164,7 @@ class PlayersManager {
     };
 
     public getPlayers = () => this.players;
-    public getPlayer = (number: number) => this.players[number];
+    public getPlayer = (number: number) => this.players.find((player) => player.number === number);
 
     public getMinPlayerNumber = () => this.minPlayerNumber;
     public setMinPlayerNumber = (minPlayerNumber: number) => {
@@ -191,9 +192,12 @@ class PlayersManager {
             return;
         }
         const player = this.getPlayer(playerNumber);
-        this.players = this.players.filter((player) => player.number !== playerNumber);
-        this.storePlayers();
-        events.playerRemoved.dispatch(player);
+
+        if (player) {
+            this.players = this.players.filter((player) => player.number !== playerNumber);
+            this.storePlayers();
+            events.playerRemoved.dispatch(player);
+        }
     };
 
     public getInputs = () => this.getPlayers().map((player) => player.input);

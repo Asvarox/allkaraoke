@@ -47,13 +47,13 @@ events.remoteMicConnected.subscribe(({ id }) => {
 });
 
 events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
-    const currentPlayerNumber = PlayersManager.getPlayers().find((player) => player.input.deviceId === phoneId)?.number;
+    const currentPlayer = PlayersManager.getPlayers().find((player) => player.input.deviceId === phoneId);
 
-    if (currentPlayerNumber !== undefined) {
-        PlayersManager.getPlayer(currentPlayerNumber).changeInput('Dummy', 0);
+    if (currentPlayer) {
+        currentPlayer.changeInput('Dummy', 0);
     }
     if (newPlayerNumber !== null) {
-        PlayersManager.getPlayer(newPlayerNumber).changeInput('Remote Microphone', 0, phoneId);
+        PlayersManager.getPlayer(newPlayerNumber)?.changeInput('Remote Microphone', 0, phoneId);
     }
 });
 
