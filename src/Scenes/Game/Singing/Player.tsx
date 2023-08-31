@@ -86,6 +86,10 @@ function Player(
     useEffect(() => {
         GameState.setSong(song);
         GameState.setSingSetup(singSetup);
+
+        return () => {
+            GameState.resetSingSetup();
+        };
     }, [song, singSetup]);
 
     useEffect(() => {

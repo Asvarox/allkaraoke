@@ -5,6 +5,7 @@ import PlayersManager from 'Players/PlayersManager';
 import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
 import InputSources from 'Scenes/SelectInput/InputSources';
 import MicCheck from 'Scenes/SelectInput/MicCheck';
+import usePlayerNumberPreset from 'Scenes/SelectInput/hooks/usePlayerNumberPreset';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -20,6 +21,7 @@ interface Props {
 }
 
 function RemoteMics(props: Props) {
+    usePlayerNumberPreset(2);
     const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
     useRemoteMicAutoselect();

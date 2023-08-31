@@ -9,6 +9,7 @@ import ConnectRemoteMic from 'Scenes/ConnectRemoteMic/ConnectRemoteMic';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
 import { useMicrophoneList } from 'Scenes/SelectInput/hooks/useMicrophoneList';
 import { usePlayerInput } from 'Scenes/SelectInput/hooks/usePlayerInput';
+import usePlayerNumberPreset from 'Scenes/SelectInput/hooks/usePlayerNumberPreset';
 import { useRemoteMicAutoselect } from 'Scenes/SelectInput/hooks/useRemoteMicAutoselect';
 import { MicSetupPreference } from 'Scenes/Settings/SettingsState';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
@@ -32,6 +33,7 @@ const PlayerSelector = (props: {
     inputs: ReturnType<typeof useMicrophoneList>;
     register: ReturnType<typeof useKeyboardNav>['register'];
 }) => {
+    usePlayerNumberPreset(2);
     const player = props.player;
     const [source, cycleSource, input, cycleInput] = usePlayerInput(player.number, props.inputs);
     return (

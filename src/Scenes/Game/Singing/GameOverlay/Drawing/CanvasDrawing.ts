@@ -62,7 +62,7 @@ export default class CanvasDrawing {
 
         const players = PlayersManager.getPlayers();
         players.forEach((player, index) => {
-            this.drawPlayer(player.number, index, players.length, ctx);
+            this.drawPlayer(player.number, ctx);
         });
 
         ParticleManager.tick(ctx, this.canvas, this.pauseTime);
@@ -83,7 +83,7 @@ export default class CanvasDrawing {
         events.sectionChange.unsubscribe(this.onSectionEnd);
     };
 
-    private drawPlayer = (playerNumber: number, index: number, playerCount: number, ctx: CanvasRenderingContext2D) => {
+    private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
         const drawingData = this.getDrawingData(playerNumber);
         const { currentSection } = calculateData(drawingData);
         if (!isNotesSection(currentSection)) return;
@@ -254,6 +254,10 @@ export default class CanvasDrawing {
     };
 
     private getDrawingData = (playerNumber: number, sectionShift = 0): DrawingData => {
+        const players = PlayersManager.getPlayers();
+        const playerIndex = players.findIndex((player) => player.number === playerNumber);
+        const playerCount = players.length;
+
         const playerState = GameState.getPlayer(playerNumber)!;
         const player = PlayersManager.getPlayer(playerNumber);
         const currentSectionIndex = playerState.getCurrentSectionIndex() + sectionShift ?? 0;
@@ -264,6 +268,8 @@ export default class CanvasDrawing {
 
         return {
             playerNumber: player.number,
+            playerIndex,
+            playerCount,
             song,
             songBeatLength: GameState.getSongBeatLength(),
             minPitch: playerState.getMinPitch(),
@@ -288,21 +294,18 @@ export default class CanvasDrawing {
         big: boolean,
         displacement: [number, number] = [0, 0],
     ) => {
-        const { sectionEndBeat, currentSection, paddingHorizontal, canvasHeight, pitchStepHeight } =
-            calculateData(drawingData);
-
-        const regionPaddingTop = drawingData.playerNumber * (canvasHeight / 2) + drawingData.paddingVertical;
+        const { sectionEndBeat, currentSection, playerCanvas, pitchStepHeight } = calculateData(drawingData);
 
         const sectionStart = isNotesSection(currentSection) ? currentSection.notes[0].start : 1;
 
-        const beatLength = (this.canvas.width - 2 * paddingHorizontal) / (sectionEndBeat - sectionStart);
+        const beatLength = playerCanvas.width / (sectionEndBeat - sectionStart);
 
         const [dx, dy] = big ? displacement : [0, 0];
         const pitchY = pitchStepHeight * (drawingData.maxPitch - pitch + pitchPadding);
 
         return {
-            x: Math.floor(paddingHorizontal + beatLength * (start - sectionStart) + dx),
-            y: Math.floor(regionPaddingTop + 10 + pitchY + dy - (big ? 3 : 0)),
+            x: Math.floor(playerCanvas.baseX + beatLength * (start - sectionStart) + dx),
+            y: Math.floor(playerCanvas.baseY + 10 + pitchY + dy - (big ? 3 : 0)),
             w: Math.floor(beatLength * length),
             h: big ? BIG_NOTE_HEIGHT : NOTE_HEIGHT,
         };
