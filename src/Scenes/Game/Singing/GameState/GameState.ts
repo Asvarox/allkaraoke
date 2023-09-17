@@ -12,6 +12,7 @@ export class GameStateClass {
     private duration: number = 0;
     private singSetup: SingSetup | null = null;
     private playerStates: PlayerState[] = [];
+    private playing: boolean = false;
 
     public setCurrentTime = (currentTime: number) => (this.currentTime = currentTime);
     public getCurrentTime = (accountGap = true) => {
@@ -32,13 +33,14 @@ export class GameStateClass {
 
         this.playerStates = singSetup.players.map(({ number }, index) => new PlayerState(number, this));
         this.currentTime = 0;
+        this.playing = true;
     };
 
     public resetSingSetup = () => {
-        this.singSetup = null;
+        this.playing = false;
     };
 
-    public isPlaying = () => this.singSetup !== null;
+    public isPlaying = () => this.playing;
 
     public getTolerance = () => this.getSingSetup()?.tolerance ?? 2;
 
