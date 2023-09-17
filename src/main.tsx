@@ -24,14 +24,14 @@ if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
         // We recommend adjusting this value in production
         tracesSampleRate: 1.0,
         environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
-        // tunnel: 'http://localhost:8080/sentry',
+        tunnel: import.meta.env.VITE_APP_SENTRY_TUNNEL,
     });
 }
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
     posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
         debug: true,
-        api_host: 'https://allkaraoke-posthog.fly.dev',
+        api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
         test: isDev() || window.location.port !== '',
         loaded: (ph) => {
             let storedUser = localStorage.getItem('posthog-user-id');
