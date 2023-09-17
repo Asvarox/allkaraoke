@@ -9,20 +9,20 @@ import YouTube from 'react-youtube';
  * for more than a timeout, a new key will be generated to reload the entire player (and try again).
  */
 function useUnstuckOnStartSong(currentStatus: number) {
-    const [playerKey, setPlayerKey] = useState(1);
-    useEffect(() => {
-        if (currentStatus === YouTube.PlayerState.UNSTARTED) {
-            const timeout = setTimeout(() => {
-                setPlayerKey((current) => current + 1);
-            }, 5000 + playerKey * 2500);
+  const [playerKey, setPlayerKey] = useState(1);
+  useEffect(() => {
+    if (currentStatus === YouTube.PlayerState.UNSTARTED) {
+      const timeout = setTimeout(() => {
+        setPlayerKey((current) => current + 1);
+      }, 5000 + playerKey * 2500);
 
-            return () => {
-                clearTimeout(timeout);
-            };
-        }
-    });
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  });
 
-    return playerKey;
+  return playerKey;
 }
 
 /**
@@ -33,26 +33,26 @@ function useUnstuckOnStartSong(currentStatus: number) {
  * of seconds of the song to force the player to start playing
  */
 function useUnstuckOnBuffering(playerRef: MutableRefObject<YouTube | null>, currentStatus: number) {
-    useEffect(() => {
-        if (currentStatus === YouTube.PlayerState.BUFFERING) {
-            const interval = setInterval(async () => {
-                if (navigator.onLine) {
-                    clearInterval(interval);
+  useEffect(() => {
+    if (currentStatus === YouTube.PlayerState.BUFFERING) {
+      const interval = setInterval(async () => {
+        if (navigator.onLine) {
+          clearInterval(interval);
 
-                    const seconds = await playerRef.current?.getInternalPlayer()!.getCurrentTime()!;
-                    playerRef.current?.getInternalPlayer()?.seekTo(Math.max(seconds - 2, 0), true);
-                }
-            }, 500);
-
-            return () => {
-                clearInterval(interval);
-            };
+          const seconds = await playerRef.current?.getInternalPlayer()!.getCurrentTime()!;
+          playerRef.current?.getInternalPlayer()?.seekTo(Math.max(seconds - 2, 0), true);
         }
-    });
+      }, 500);
+
+      return () => {
+        clearInterval(interval);
+      };
+    }
+  });
 }
 
 export default function useUnstuckYouTubePlayer(playerRef: MutableRefObject<YouTube | null>, currentStatus: number) {
-    useUnstuckOnBuffering(playerRef, currentStatus);
+  useUnstuckOnBuffering(playerRef, currentStatus);
 
-    return useUnstuckOnStartSong(currentStatus);
+  return useUnstuckOnStartSong(currentStatus);
 }

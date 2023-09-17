@@ -1,16 +1,16 @@
 {
-    "plugins": ["no-only-tests"],
-    "extends": ["react-app", "prettier"],
-    "env": {},
-    "rules": {
-        "no-only-tests/no-only-tests": "error"
-    },
-    "overrides": [
-        {
-            "files": ["tests/**.ts", "src/**/*.spec.tsx"],
-            "rules": {
-                "testing-library/prefer-screen-queries": "off"
-            }
-        }
-    ]
+  "plugins": ["no-only-tests"],
+  "extends": ["react-app", "prettier"],
+  "env": {},
+  "rules": {
+    "no-only-tests/no-only-tests": "error"
+  },
+  "overrides": [
+    {
+      "files": ["tests/**.ts", "src/**/*.spec.tsx"],
+      "rules": {
+        "testing-library/prefer-screen-queries": "off"
+      }
+    }
+  ]
 }

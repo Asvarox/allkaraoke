@@ -3,14 +3,14 @@ import { PeerJSServerTransport } from 'RemoteMic/Network/Server/Transport/PeerJS
 import { WebSocketServerTransport } from 'RemoteMic/Network/Server/Transport/WebSocketServer';
 
 if (window.location.search.includes('pswd')) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const pswd = urlParams.get('pswd');
-    if (pswd) {
-        window.sessionStorage.setItem('pswd', pswd);
+  const urlParams = new URLSearchParams(window.location.search);
+  const pswd = urlParams.get('pswd');
+  if (pswd) {
+    window.sessionStorage.setItem('pswd', pswd);
 
-        urlParams.delete('pswd');
-        window.location.search = urlParams.toString();
-    }
+    urlParams.delete('pswd');
+    window.location.search = urlParams.toString();
+  }
 }
 const pswd = window.sessionStorage.getItem('pswd');
 

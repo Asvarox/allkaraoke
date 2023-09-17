@@ -14,57 +14,57 @@ navigator?.keyboard?.lock(['Escape']);
 export const supportsEscAsBack = !!navigator?.keyboard?.lock;
 
 export interface Params {
-    up?: Callback;
-    down?: Callback;
-    left?: Callback;
-    right?: Callback;
-    accept?: Callback;
-    back?: Callback;
-    random?: Callback;
-    // alphanumeric?: () => void,
+  up?: Callback;
+  down?: Callback;
+  left?: Callback;
+  right?: Callback;
+  accept?: Callback;
+  back?: Callback;
+  random?: Callback;
+  // alphanumeric?: () => void,
 }
 
 const paramsToKeys: { [param in keyof Params]: string[] } = {
-    up: ['up'],
-    down: ['down'],
-    left: ['left'],
-    right: ['right'],
-    accept: ['Enter'],
-    back: ['Backspace', 'Escape'],
-    random: ['Shift+R'],
+  up: ['up'],
+  down: ['down'],
+  left: ['left'],
+  right: ['right'],
+  accept: ['Enter'],
+  back: ['Backspace', 'Escape'],
+  random: ['Shift+R'],
 };
 
 const keyToParam = (keyCode: string): keyof Params | null => {
-    return (Object.entries(paramsToKeys).find(([key, val]) => val.includes(keyCode))?.[0] as keyof Params) ?? null;
+  return (Object.entries(paramsToKeys).find(([key, val]) => val.includes(keyCode))?.[0] as keyof Params) ?? null;
 };
 
 export default function useKeyboard(params: Params, enabled = true, deps?: any[]) {
-    let handledKeys: string = Object.keys(params)
-        .map((param) => paramsToKeys[param as keyof Params])
-        .join(',');
+  let handledKeys: string = Object.keys(params)
+    .map((param) => paramsToKeys[param as keyof Params])
+    .join(',');
 
-    useEventEffect(events.remoteKeyboardPressed, (param) => {
-        if (enabled) {
-            if (param in params) {
-                params[param]?.();
-            }
-        }
-    });
+  useEventEffect(events.remoteKeyboardPressed, (param) => {
+    if (enabled) {
+      if (param in params) {
+        params[param]?.();
+      }
+    }
+  });
 
-    useHotkeys(
-        handledKeys,
-        (event, hkEvent) => {
-            const param = keyToParam(hkEvent.key);
+  useHotkeys(
+    handledKeys,
+    (event, hkEvent) => {
+      const param = keyToParam(hkEvent.key);
 
-            if (!param) return;
+      if (!param) return;
 
-            if (param in params) {
-                event.preventDefault();
-                event.stopPropagation();
-                params[param]?.(event);
-            }
-        },
-        { enabled },
-        deps,
-    );
+      if (param in params) {
+        event.preventDefault();
+        event.stopPropagation();
+        params[param]?.(event);
+      }
+    },
+    { enabled },
+    deps,
+  );
 }

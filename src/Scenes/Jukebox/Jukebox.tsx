@@ -16,69 +16,69 @@ import SongPage from '../Game/SongPage';
 interface Props {}
 
 function Jukebox(props: Props) {
-    useBackground(false);
-    useBackgroundMusic(false);
-    const navigate = useSmoothNavigate();
-    const { width, height } = useViewportSize();
-    const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
-    const songList = useSongIndex();
+  useBackground(false);
+  useBackgroundMusic(false);
+  const navigate = useSmoothNavigate();
+  const { width, height } = useViewportSize();
+  const [currentlyPlaying, setCurrentlyPlaying] = useState(0);
+  const songList = useSongIndex();
 
-    const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-    const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });
+  const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
+  const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });
 
-    useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
+  useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 
-    const playNext = () => songList.data && setCurrentlyPlaying((current) => (current + 1) % songList.data.length);
+  const playNext = () => songList.data && setCurrentlyPlaying((current) => (current + 1) % songList.data.length);
 
-    if (!shuffledList.length || !width || !height) return null;
+  if (!shuffledList.length || !width || !height) return null;
 
-    const navigateUrl = `/game/${encodeURIComponent(shuffledList[currentlyPlaying].id)}`;
+  const navigateUrl = `/game/${encodeURIComponent(shuffledList[currentlyPlaying].id)}`;
 
-    return (
-        <SongPage
-            width={width}
-            height={height}
-            songData={shuffledList[currentlyPlaying]}
-            data-test="jukebox-container"
-            data-song={shuffledList[currentlyPlaying].id}
-            background={
-                <VideoPlayer
-                    autoplay
-                    controls
-                    width={width}
-                    height={height}
-                    volume={shuffledList[currentlyPlaying]?.volume}
-                    video={shuffledList[currentlyPlaying].video}
-                    startAt={shuffledList[currentlyPlaying].videoGap}
-                    onStateChange={(state) => {
-                        if (state === VideoState.ENDED) playNext();
-                    }}
-                />
-            }>
-            <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
-            <Link to={navigateUrl}>
-                <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
-                    Sing this song
-                </PlayThisSongButton>
-            </Link>
-        </SongPage>
-    );
+  return (
+    <SongPage
+      width={width}
+      height={height}
+      songData={shuffledList[currentlyPlaying]}
+      data-test="jukebox-container"
+      data-song={shuffledList[currentlyPlaying].id}
+      background={
+        <VideoPlayer
+          autoplay
+          controls
+          width={width}
+          height={height}
+          volume={shuffledList[currentlyPlaying]?.volume}
+          video={shuffledList[currentlyPlaying].video}
+          startAt={shuffledList[currentlyPlaying].videoGap}
+          onStateChange={(state) => {
+            if (state === VideoState.ENDED) playNext();
+          }}
+        />
+      }>
+      <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
+      <Link to={navigateUrl}>
+        <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
+          Sing this song
+        </PlayThisSongButton>
+      </Link>
+    </SongPage>
+  );
 }
 
 const PlayThisSongButton = styled(Button)<{ focused: boolean }>`
-    bottom: 7rem;
-    right: 2rem;
-    width: 50rem;
-    position: absolute;
-    font-size: 1.9vw;
+  bottom: 7rem;
+  right: 2rem;
+  width: 50rem;
+  position: absolute;
+  font-size: 1.9vw;
 `;
 
 const SkipSongButton = styled(Button)<{ focused: boolean }>`
-    bottom: 15rem;
-    right: 2rem;
-    width: 30rem;
-    position: absolute;
-    font-size: 1.9vw;
+  bottom: 15rem;
+  right: 2rem;
+  width: 30rem;
+  position: absolute;
+  font-size: 1.9vw;
 `;
 
 export default Jukebox;

@@ -1,3 +1,3 @@
 export default function isChromium() {
-    return 'chrome' in window;
+  return 'chrome' in window;
 }

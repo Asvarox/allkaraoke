@@ -1,32 +1,32 @@
 export default function triangle(
-    ctx: CanvasRenderingContext2D,
-    x: number,
-    y: number,
-    width: number,
-    height: number,
-    angle: number,
-    color: string | CanvasGradient | CanvasPattern,
-    alpha: number = 1,
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+  angle: number,
+  color: string | CanvasGradient | CanvasPattern,
+  alpha: number = 1,
 ) {
-    ctx.save();
+  ctx.save();
 
-    // move to the center of the canvas
-    const finalX = x - width / 2;
-    const finalY = y - height / 2;
+  // move to the center of the canvas
+  const finalX = x - width / 2;
+  const finalY = y - height / 2;
 
-    ctx.translate(finalX, finalY);
+  ctx.translate(finalX, finalY);
 
-    // rotate the canvas to the specified degrees
-    ctx.rotate((angle * Math.PI) / 180);
+  // rotate the canvas to the specified degrees
+  ctx.rotate((angle * Math.PI) / 180);
 
-    ctx.globalAlpha = alpha;
-    ctx.fillStyle = color;
-    ctx.beginPath();
-    ctx.moveTo(0 - width / 2, height / 2);
-    ctx.lineTo(width / 2, height / 2);
-    ctx.lineTo(width / 2, 0);
-    ctx.lineTo(width / 2, 0 - height / 2);
-    ctx.fill();
-    ctx.globalAlpha = 1;
-    ctx.restore();
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.moveTo(0 - width / 2, height / 2);
+  ctx.lineTo(width / 2, height / 2);
+  ctx.lineTo(width / 2, 0);
+  ctx.lineTo(width / 2, 0 - height / 2);
+  ctx.fill();
+  ctx.globalAlpha = 1;
+  ctx.restore();
 }

@@ -7,21 +7,21 @@ import 'Stats';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 
 interface Props {
-    closeModal: () => void;
+  closeModal: () => void;
 }
 function QRCodeModal({ closeModal }: Props) {
-    const { register } = useKeyboardNav({
-        onBackspace: closeModal,
-    });
+  const { register } = useKeyboardNav({
+    onBackspace: closeModal,
+  });
 
-    return (
-        <Modal onClose={closeModal}>
-            <MenuContainer>
-                <ConnectRemoteMic />
-                <Button {...register('quick-connect-close', closeModal)}>Close</Button>
-            </MenuContainer>
-        </Modal>
-    );
+  return (
+    <Modal onClose={closeModal}>
+      <MenuContainer>
+        <ConnectRemoteMic />
+        <Button {...register('quick-connect-close', closeModal)}>Close</Button>
+      </MenuContainer>
+    </Modal>
+  );
 }
 
 export default QRCodeModal;

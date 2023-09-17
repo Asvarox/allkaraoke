@@ -5,15 +5,11 @@ import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Rem
 import { useRef } from 'react';
 
 export function useRemoteMicAutoselect() {
-    const nextPlayerToAutoSwitch = useRef(0);
+  const nextPlayerToAutoSwitch = useRef(0);
 
-    useEventEffect(events.remoteMicConnected, ({ id }) => {
-        console.log('useRemoteMicAutoselect', id);
-        PlayersManager.getPlayer(nextPlayerToAutoSwitch.current)?.changeInput(
-            RemoteMicrophoneInputSource.inputName,
-            0,
-            id,
-        );
-        nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % PlayersManager.getPlayers().length;
-    });
+  useEventEffect(events.remoteMicConnected, ({ id }) => {
+    console.log('useRemoteMicAutoselect', id);
+    PlayersManager.getPlayer(nextPlayerToAutoSwitch.current)?.changeInput(RemoteMicrophoneInputSource.inputName, 0, id);
+    nextPlayerToAutoSwitch.current = (nextPlayerToAutoSwitch.current + 1) % PlayersManager.getPlayers().length;
+  });
 }

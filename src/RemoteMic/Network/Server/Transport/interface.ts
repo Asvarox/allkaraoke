@@ -2,28 +2,28 @@ import { NetworkMessages } from 'RemoteMic/Network/messages';
 import Listener from 'utils/Listener';
 
 export interface SenderInterface {
-    peer: string;
+  peer: string;
 
-    send(payload: NetworkMessages): void;
+  send(payload: NetworkMessages): void;
 
-    on(event: string, callback: (data: any) => void): void;
+  on(event: string, callback: (data: any) => void): void;
 
-    off(event: string, callback: (data: any) => void): void;
+  off(event: string, callback: (data: any) => void): void;
 
-    close(): void;
+  close(): void;
 }
 
 export type transportCloseReason = string;
 export type transportErrorReason = string;
 
 export interface ServerTransport extends Listener<[NetworkMessages, SenderInterface]> {
-    name: 'WebSockets' | 'PeerJS';
+  name: 'WebSockets' | 'PeerJS';
 
-    connect(
-        roomId: string,
-        onConnect: () => void,
-        onClose: (reason: transportCloseReason, originalEvent: any) => void,
-    ): void;
+  connect(
+    roomId: string,
+    onConnect: () => void,
+    onClose: (reason: transportCloseReason, originalEvent: any) => void,
+  ): void;
 
-    disconnect(): void;
+  disconnect(): void;
 }

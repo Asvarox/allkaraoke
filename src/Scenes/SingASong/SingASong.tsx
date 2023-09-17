@@ -4,18 +4,18 @@ import SongSelection from 'Scenes/SingASong/SongSelection/SongSelection';
 import { ComponentProps, useState } from 'react';
 
 function SingASong(props: ComponentProps<typeof SongSelection>) {
-    const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
-    const [languageSelection, setLanguageSelection] = useState(excludedLanguages === null);
-    const goBack = () => {
-        setExcludedLanguages(excludedLanguages ?? []);
-        setLanguageSelection(false);
-    };
+  const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
+  const [languageSelection, setLanguageSelection] = useState(excludedLanguages === null);
+  const goBack = () => {
+    setExcludedLanguages(excludedLanguages ?? []);
+    setLanguageSelection(false);
+  };
 
-    return languageSelection ? (
-        <ExcludeLanguagesView onClose={goBack} closeText="Continue to Song Selection" />
-    ) : (
-        <SongSelection {...props} />
-    );
+  return languageSelection ? (
+    <ExcludeLanguagesView onClose={goBack} closeText="Continue to Song Selection" />
+  ) : (
+    <SongSelection {...props} />
+  );
 }
 
 export default SingASong;

@@ -7,27 +7,27 @@ import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import { PropsWithChildren } from 'react';
 
 type Props = PropsWithChildren<{
-    supportedBrowsers?: boolean;
+  supportedBrowsers?: boolean;
 }>;
 function MenuWithLogo({ children, supportedBrowsers }: Props) {
-    useBackground(true);
+  useBackground(true);
 
-    return (
-        <>
-            <GithubRibbon />
-            <Container>
-                <Logo />
-                {supportedBrowsers && <RecommendedBrowsers />}
-                <MenuContainer>{children}</MenuContainer>
-            </Container>
-        </>
-    );
+  return (
+    <>
+      <GithubRibbon />
+      <Container>
+        <Logo />
+        {supportedBrowsers && <RecommendedBrowsers />}
+        <MenuContainer>{children}</MenuContainer>
+      </Container>
+    </>
+  );
 }
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export default MenuWithLogo;

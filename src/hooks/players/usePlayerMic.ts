@@ -4,42 +4,42 @@ import { useEffect, useState } from 'react';
 import tuple from 'utils/tuple';
 
 export const usePlayerMicData = (
-    playerNumber: number,
-    onMeasure: ([volume, frequency]: [number, number]) => void,
-    enabled = true,
-    intervalMs = 1000 / FPSCountSetting.get(),
+  playerNumber: number,
+  onMeasure: ([volume, frequency]: [number, number]) => void,
+  enabled = true,
+  intervalMs = 1000 / FPSCountSetting.get(),
 ) => {
-    useEffect(() => {
-        if (!enabled) return;
+  useEffect(() => {
+    if (!enabled) return;
 
-        const interval = setInterval(() => {
-            const playerVolume = InputManager.getPlayerVolume(playerNumber) ?? 0;
-            const playerFrequency = InputManager.getPlayerFrequency(playerNumber) ?? 0;
-            onMeasure([playerVolume, Array.isArray(playerFrequency) ? playerFrequency[0] : playerFrequency]);
-        }, intervalMs);
+    const interval = setInterval(() => {
+      const playerVolume = InputManager.getPlayerVolume(playerNumber) ?? 0;
+      const playerFrequency = InputManager.getPlayerFrequency(playerNumber) ?? 0;
+      onMeasure([playerVolume, Array.isArray(playerFrequency) ? playerFrequency[0] : playerFrequency]);
+    }, intervalMs);
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, [playerNumber, intervalMs, onMeasure, enabled]);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [playerNumber, intervalMs, onMeasure, enabled]);
 };
 
 const usePlayerMic = (
-    playerNumber: number,
-    intervalMs = 1000 / FPSCountSetting.get(),
-    onMeasure?: ([volume, frequency]: [number, number]) => void,
+  playerNumber: number,
+  intervalMs = 1000 / FPSCountSetting.get(),
+  onMeasure?: ([volume, frequency]: [number, number]) => void,
 ) => {
-    const [data, setData] = useState(tuple([0, 0]));
+  const [data, setData] = useState(tuple([0, 0]));
 
-    usePlayerMicData(playerNumber, setData, true, intervalMs);
+  usePlayerMicData(playerNumber, setData, true, intervalMs);
 
-    useEffect(() => {
-        if (onMeasure) {
-            onMeasure(data);
-        }
-    }, [data, onMeasure]);
+  useEffect(() => {
+    if (onMeasure) {
+      onMeasure(data);
+    }
+  }, [data, onMeasure]);
 
-    return data;
+  return data;
 };
 
 export default usePlayerMic;

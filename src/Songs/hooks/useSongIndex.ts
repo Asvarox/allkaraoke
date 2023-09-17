@@ -3,19 +3,19 @@ import { useEffect, useRef, useState } from 'react';
 import SongDao from 'Songs/SongsService';
 
 export default function useSongIndex(includeDeleted = false) {
-    const [songIndex, setSongIndex] = useState<SongPreview[] | null>(SongDao.getCurrentIndex());
-    // Prevent recreating of the array every render
-    const emptyList = useRef<SongPreview[]>([]);
+  const [songIndex, setSongIndex] = useState<SongPreview[] | null>(SongDao.getCurrentIndex());
+  // Prevent recreating of the array every render
+  const emptyList = useRef<SongPreview[]>([]);
 
-    const loadSongs = () => SongDao.getIndex(includeDeleted).then(setSongIndex);
+  const loadSongs = () => SongDao.getIndex(includeDeleted).then(setSongIndex);
 
-    useEffect(() => {
-        loadSongs();
-    }, []);
+  useEffect(() => {
+    loadSongs();
+  }, []);
 
-    return {
-        data: songIndex ?? emptyList.current,
-        reload: loadSongs,
-        isLoading: songIndex === null,
-    };
+  return {
+    data: songIndex ?? emptyList.current,
+    reload: loadSongs,
+    isLoading: songIndex === null,
+  };
 }

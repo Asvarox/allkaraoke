@@ -4,7 +4,7 @@ name: setup-node
 description: 'Setups node to the specific version'
 
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - uses: actions/setup-node@v3
       with:

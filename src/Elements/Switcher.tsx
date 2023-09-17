@@ -5,71 +5,71 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ValuesType } from 'utility-types';
 
 interface Props extends PropsWithChildren {
-    focused: boolean;
-    label: ReactNode;
-    value: ReactNode;
-    info?: ReactNode;
-    onClick?: () => void;
+  focused: boolean;
+  label: ReactNode;
+  value: ReactNode;
+  info?: ReactNode;
+  onClick?: () => void;
 }
 
 export function nextIndex<T extends readonly any[]>(values: T, current: number, direction: 1 | -1 = 1): number {
-    return direction === 1 ? (current + 1) % values.length : (current + values.length - 1) % values.length;
+  return direction === 1 ? (current + 1) % values.length : (current + values.length - 1) % values.length;
 }
 export function nextValueIndex<T extends readonly any[]>(
-    values: T,
-    current: ValuesType<T>,
-    direction: 1 | -1 = 1,
+  values: T,
+  current: ValuesType<T>,
+  direction: 1 | -1 = 1,
 ): number {
-    return nextIndex(values, values.indexOf(current), direction);
+  return nextIndex(values, values.indexOf(current), direction);
 }
 export function nextValue<T extends readonly any[]>(
-    values: T,
-    current: ValuesType<T>,
-    direction: 1 | -1 = 1,
+  values: T,
+  current: ValuesType<T>,
+  direction: 1 | -1 = 1,
 ): ValuesType<T> {
-    return values[nextValueIndex(values, current, direction)];
+  return values[nextValueIndex(values, current, direction)];
 }
 
 export const Switcher = ({ focused, label, value, onClick, info, children, ...restProps }: Props) => (
-    <Container>
-        <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
-            <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
-            {children ?? null}
-        </ConfigurationPosition>
-        {info && <InfoText>{info}</InfoText>}
-    </Container>
+  <Container>
+    <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
+      <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
+      {children ?? null}
+    </ConfigurationPosition>
+    {info && <InfoText>{info}</InfoText>}
+  </Container>
 );
 
 const Container = styled.div``;
 
 export const InfoText = styled.div`
-    ${typography};
-    font-size: 2rem;
-    padding: 1rem 0.5rem 0;
-    text-align: justify;
+  ${typography};
+  font-size: 2rem;
+  padding: 1rem 0.5rem 0;
+  text-align: justify;
 `;
 
 const ConfigurationPosition = styled.span<{ focused: boolean; expanded?: boolean }>`
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 
-    width: auto;
-    ${typography};
+  width: auto;
+  ${typography};
 
-    text-align: right;
-    font-size: ${({ expanded }) => (expanded ? '6rem' : '2.7rem')};
-    cursor: pointer;
-    padding: 0.65rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  text-align: right;
+  font-size: ${({ expanded }) => (expanded ? '6rem' : '2.7rem')};
+  cursor: pointer;
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    ${focusable}
+  ${focusable}
 `;
 
 const ConfigValue = styled.span`
-    color: ${styles.colors.text.active};
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 1rem;
+  color: ${styles.colors.text.active};
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 1rem;
 `;

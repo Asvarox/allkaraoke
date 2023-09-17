@@ -3,22 +3,22 @@ import Modal from 'Elements/Modal';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 
 interface Props {
-    onClose: () => void;
-    closeButtonText: string;
+  onClose: () => void;
+  closeButtonText: string;
 }
 
 export default function SelectInputModal({ onClose, closeButtonText }: Props) {
-    return (
-        <Modal onClose={onClose}>
-            <MenuContainer>
-                <SelectInputView
-                    smooth={false}
-                    onBack={onClose}
-                    onFinish={onClose}
-                    closeButtonText={closeButtonText}
-                    skipText={'Back'}
-                />
-            </MenuContainer>
-        </Modal>
-    );
+  return (
+    <Modal onClose={onClose}>
+      <MenuContainer>
+        <SelectInputView
+          smooth={false}
+          onBack={onClose}
+          onFinish={onClose}
+          closeButtonText={closeButtonText}
+          skipText={'Back'}
+        />
+      </MenuContainer>
+    </Modal>
+  );
 }

@@ -1,3 +1,3 @@
 export default function isOpera() {
-    return navigator?.userAgent.includes('OPR');
+  return navigator?.userAgent.includes('OPR');
 }

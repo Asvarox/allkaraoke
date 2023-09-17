@@ -1,5 +1,7 @@
 # Routing
+
 ## How it works on Github Pages
+
 Solution is based on [this repo](https://github.com/rafgraph/spa-github-pages). In short:
 
 1. A custom 404 page (`public/404.html`) is implemented

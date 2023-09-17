@@ -4,11 +4,11 @@ import { SpriteNames } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Ca
 import drawSpriteWithStartAndEnd from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/spriteWithStartAndEnd';
 
 const getSpriteName = (noteType: Note['type']) => {
-    return `note${capitalize(noteType)}` as SpriteNames;
+  return `note${capitalize(noteType)}` as SpriteNames;
 };
 
 export default function drawNote(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, note: Note) {
-    const spriteName = getSpriteName(note.type);
+  const spriteName = getSpriteName(note.type);
 
-    drawSpriteWithStartAndEnd(ctx, spriteName, x, y, width);
+  drawSpriteWithStartAndEnd(ctx, spriteName, x, y, width);
 }

@@ -1,7 +1,7 @@
 export interface FrequencyDetectionStrategy {
-    getSampleSize(): number;
+  getSampleSize(): number;
 
-    init(context: AudioContext, bufferSize: number): Promise<void>;
+  init(context: AudioContext, bufferSize: number): Promise<void>;
 
-    getFrequency(data: Float32Array): Promise<number>;
+  getFrequency(data: Float32Array): Promise<number>;
 }

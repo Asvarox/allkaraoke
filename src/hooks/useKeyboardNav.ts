@@ -11,122 +11,122 @@ import useKeyboardHelp from './useKeyboardHelp';
  * But still works even with dynamic elements :shrugs:
  */
 interface Options {
-    enabled?: boolean;
-    onBackspace?: () => void;
-    backspaceHelp?: string | null;
-    direction?: 'horizontal' | 'vertical';
-    additionalHelp?: HelpEntry;
+  enabled?: boolean;
+  onBackspace?: () => void;
+  backspaceHelp?: string | null;
+  direction?: 'horizontal' | 'vertical';
+  additionalHelp?: HelpEntry;
 }
 
 interface KeyboardAction {
-    callback: () => void;
-    label?: string;
-    propName: string;
+  callback: () => void;
+  label?: string;
+  propName: string;
 }
 
 export default function useKeyboardNav(options: Options = {}, debug = false) {
-    const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
+  const { enabled = true, onBackspace, backspaceHelp = null, direction = 'vertical', additionalHelp = {} } = options;
 
-    const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
-    const elementList = useRef<string[]>([]);
-    const newElementList = useRef<string[]>([]);
-    const actions = useRef<Record<string, KeyboardAction>>({});
+  const [currentlySelected, setCurrentlySelected] = useState<string | null>(null);
+  const elementList = useRef<string[]>([]);
+  const newElementList = useRef<string[]>([]);
+  const actions = useRef<Record<string, KeyboardAction>>({});
 
-    const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
-    const help = useMemo(
-        () => ({
-            [direction]: null,
-            accept: currentlySelectedActionLabel ?? null,
-            back: onBackspace ? backspaceHelp : undefined,
-            ...additionalHelp,
-        }),
-        [currentlySelectedActionLabel, actions, backspaceHelp, direction],
-    );
-    useKeyboardHelp(help, enabled);
+  const currentlySelectedActionLabel = actions.current[currentlySelected!]?.label;
+  const help = useMemo(
+    () => ({
+      [direction]: null,
+      accept: currentlySelectedActionLabel ?? null,
+      back: onBackspace ? backspaceHelp : undefined,
+      ...additionalHelp,
+    }),
+    [currentlySelectedActionLabel, actions, backspaceHelp, direction],
+  );
+  useKeyboardHelp(help, enabled);
 
-    const handleEnter = () => {
-        actions.current[currentlySelected!]?.callback();
-        menuEnter.play();
-    };
+  const handleEnter = () => {
+    actions.current[currentlySelected!]?.callback();
+    menuEnter.play();
+  };
 
-    const handleBackspace = () => {
-        if (onBackspace) {
-            menuBack.play();
-            onBackspace();
-        }
-    };
+  const handleBackspace = () => {
+    if (onBackspace) {
+      menuBack.play();
+      onBackspace();
+    }
+  };
 
-    const handleNavigation = (direction: -1 | 1) => {
-        const currentIndex = currentlySelected ? elementList.current.indexOf(currentlySelected) : 0;
-        menuNavigate.play();
+  const handleNavigation = (direction: -1 | 1) => {
+    const currentIndex = currentlySelected ? elementList.current.indexOf(currentlySelected) : 0;
+    menuNavigate.play();
 
-        setCurrentlySelected(elementList.current.at((currentIndex + direction) % elementList.current.length) ?? null);
-    };
+    setCurrentlySelected(elementList.current.at((currentIndex + direction) % elementList.current.length) ?? null);
+  };
 
-    useKeyboard(
-        {
-            [direction === 'vertical' ? 'up' : 'left']: () => handleNavigation(-1),
-            [direction === 'vertical' ? 'down' : 'right']: () => handleNavigation(1),
-            accept: handleEnter,
-            back: handleBackspace,
-        },
-        enabled,
-        [currentlySelected, elementList.current],
-    );
+  useKeyboard(
+    {
+      [direction === 'vertical' ? 'up' : 'left']: () => handleNavigation(-1),
+      [direction === 'vertical' ? 'down' : 'right']: () => handleNavigation(1),
+      accept: handleEnter,
+      back: handleBackspace,
+    },
+    enabled,
+    [currentlySelected, elementList.current],
+  );
 
-    let defaultSelection = '';
+  let defaultSelection = '';
 
-    const register = (
-        name: string,
-        onActive: () => void,
-        help?: string,
-        isDefault = false,
-        { propName = 'onClick', disabled = false } = {},
-    ) => {
-        if (disabled) {
-            return { disabled, focused: false };
-        }
-        newElementList.current.push(name);
-        if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
+  const register = (
+    name: string,
+    onActive: () => void,
+    help?: string,
+    isDefault = false,
+    { propName = 'onClick', disabled = false } = {},
+  ) => {
+    if (disabled) {
+      return { disabled, focused: false };
+    }
+    newElementList.current.push(name);
+    if (onActive) actions.current[name] = { callback: onActive, label: help, propName };
 
-        if (isDefault) {
-            defaultSelection = name;
-        }
+    if (isDefault) {
+      defaultSelection = name;
+    }
 
-        const focused = enabled && currentlySelected === name;
-
-        return {
-            focused,
-            [propName]: onActive,
-            keyboardNavigationChangeFocus: handleNavigation,
-            'data-test': name,
-            ...(enabled ? { 'data-focused': focused } : {}),
-        };
-    };
-
-    useEffect(() => {
-        let newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
-        debug && newElements.length && console.log('new elements', newElements);
-        elementList.current = [...newElementList.current];
-        newElementList.current.length = 0;
-
-        if (!elementList.current.length) return;
-        if (
-            currentlySelected === null ||
-            elementList.current.indexOf(currentlySelected) === -1 ||
-            newElements.includes(defaultSelection)
-        ) {
-            setCurrentlySelected(defaultSelection || elementList.current[0]);
-        }
-    });
-
-    const focusElement = (name: string) => {
-        if (elementList.current.includes(name)) setCurrentlySelected(name);
-    };
+    const focused = enabled && currentlySelected === name;
 
     return {
-        focusElement,
-        focused: currentlySelected,
-        register,
+      focused,
+      [propName]: onActive,
+      keyboardNavigationChangeFocus: handleNavigation,
+      'data-test': name,
+      ...(enabled ? { 'data-focused': focused } : {}),
     };
+  };
+
+  useEffect(() => {
+    let newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
+    debug && newElements.length && console.log('new elements', newElements);
+    elementList.current = [...newElementList.current];
+    newElementList.current.length = 0;
+
+    if (!elementList.current.length) return;
+    if (
+      currentlySelected === null ||
+      elementList.current.indexOf(currentlySelected) === -1 ||
+      newElements.includes(defaultSelection)
+    ) {
+      setCurrentlySelected(defaultSelection || elementList.current[0]);
+    }
+  });
+
+  const focusElement = (name: string) => {
+    if (elementList.current.includes(name)) setCurrentlySelected(name);
+  };
+
+  return {
+    focusElement,
+    focused: currentlySelected,
+    register,
+  };
 }

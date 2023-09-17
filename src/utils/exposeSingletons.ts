@@ -12,27 +12,27 @@ import UserMediaService from 'UserMedia/userMediaService';
 
 // @ts-ignore
 window.__exposeSingletons = () => {
-    // @ts-ignore
-    window.__singletons = {
-        RemoteMicClient,
-        RemoteMicServer,
-        GameState,
-        GameEvents,
-        RemoteMicManager,
-        SongDao,
-        InputManager: inputManager,
-        InputSourceManager: inputSources,
-        CameraManager,
-        UserMediaService,
-        PlayersManager,
-    };
+  // @ts-ignore
+  window.__singletons = {
+    RemoteMicClient,
+    RemoteMicServer,
+    GameState,
+    GameEvents,
+    RemoteMicManager,
+    SongDao,
+    InputManager: inputManager,
+    InputSourceManager: inputSources,
+    CameraManager,
+    UserMediaService,
+    PlayersManager,
+  };
 };
 
 if (process.env.NODE_ENV === 'development') {
-    // @ts-ignore
-    window.__exposeSingletons();
-    // @ts-ignore
-    console.log(window.__singletons);
+  // @ts-ignore
+  window.__exposeSingletons();
+  // @ts-ignore
+  console.log(window.__singletons);
 } else {
-    console.log(`Run window.__exposeSingletons() and inspect window.__singletons for debugging`);
+  console.log(`Run window.__exposeSingletons() and inspect window.__singletons for debugging`);
 }

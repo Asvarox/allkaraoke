@@ -4,30 +4,30 @@ import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphon
 import { RemoteMicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Remote';
 
 export interface InputSource {
-    label: string;
-    channels: number;
-    channel: number;
-    id: string;
-    deviceId: string;
-    preferred?: number;
+  label: string;
+  channels: number;
+  channel: number;
+  id: string;
+  deviceId: string;
+  preferred?: number;
 }
 
 export type InputSourceNames =
-    | typeof MicrophoneInputSource.inputName
-    | typeof DummyInputSource.inputName
-    | typeof RemoteMicrophoneInputSource.inputName
-    | typeof DrawingTestInputSource.inputName;
+  | typeof MicrophoneInputSource.inputName
+  | typeof DummyInputSource.inputName
+  | typeof RemoteMicrophoneInputSource.inputName
+  | typeof DrawingTestInputSource.inputName;
 
 export interface InputSourceManagerInterface {
-    inputName: InputSourceNames;
+  inputName: InputSourceNames;
 
-    getDefault: () => InputSource | null;
-    getInputs: () => Promise<InputSource[]>;
-    subscribeToListChange: (callback: () => void) => void;
-    unsubscribeToListChange: (callback: () => void) => void;
+  getDefault: () => InputSource | null;
+  getInputs: () => Promise<InputSource[]>;
+  subscribeToListChange: (callback: () => void) => void;
+  unsubscribeToListChange: (callback: () => void) => void;
 }
 
 export interface InputSourceList {
-    list: InputSource[];
-    getDefault: () => InputSource | null;
+  list: InputSource[];
+  getDefault: () => InputSource | null;
 }

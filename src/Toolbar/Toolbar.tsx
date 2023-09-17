@@ -9,74 +9,74 @@ import QRCodeModal from 'Toolbar/QRCodeModal';
 import { useState } from 'react';
 
 function Toolbar() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
-    const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => setIsModalOpen(false);
 
-    return (
-        <>
-            {isModalOpen && <QRCodeModal closeModal={closeModal} />}
-            <ToolbarContainer>
-                <FullscreenButton />
-                <Tooltip title="Connect phone">
-                    <IconButton
-                        size="small"
-                        onClick={() => setIsModalOpen((current) => !current)}
-                        data-test="quick-connect-phone">
-                        <QrCode2 />
-                    </IconButton>
-                </Tooltip>
-                {/*<Tooltip title="Toggle Mobile Phone Mode">*/}
-                {/*    <IconButton*/}
-                {/*        size="small"*/}
-                {/*        onClick={async () => {*/}
-                {/*            try {*/}
-                {/*                setMobilePhoneMode(!mobilePhoneMode);*/}
-                {/*                await document.body.requestFullscreen();*/}
-                {/*                window.screen.orientation.unlock();*/}
-                {/*                await window.screen.orientation.lock('landscape');*/}
-                {/*            } catch (e) {*/}
-                {/*                console.info(e);*/}
-                {/*            }*/}
-                {/*        }}>*/}
-                {/*        {mobilePhoneMode ? <Laptop /> : <PhoneIphone />}*/}
-                {/*    </IconButton>*/}
-                {/*</Tooltip>*/}
-            </ToolbarContainer>
-        </>
-    );
+  return (
+    <>
+      {isModalOpen && <QRCodeModal closeModal={closeModal} />}
+      <ToolbarContainer>
+        <FullscreenButton />
+        <Tooltip title="Connect phone">
+          <IconButton
+            size="small"
+            onClick={() => setIsModalOpen((current) => !current)}
+            data-test="quick-connect-phone">
+            <QrCode2 />
+          </IconButton>
+        </Tooltip>
+        {/*<Tooltip title="Toggle Mobile Phone Mode">*/}
+        {/*    <IconButton*/}
+        {/*        size="small"*/}
+        {/*        onClick={async () => {*/}
+        {/*            try {*/}
+        {/*                setMobilePhoneMode(!mobilePhoneMode);*/}
+        {/*                await document.body.requestFullscreen();*/}
+        {/*                window.screen.orientation.unlock();*/}
+        {/*                await window.screen.orientation.lock('landscape');*/}
+        {/*            } catch (e) {*/}
+        {/*                console.info(e);*/}
+        {/*            }*/}
+        {/*        }}>*/}
+        {/*        {mobilePhoneMode ? <Laptop /> : <PhoneIphone />}*/}
+        {/*    </IconButton>*/}
+        {/*</Tooltip>*/}
+      </ToolbarContainer>
+    </>
+  );
 }
 
 const ToolbarContainer = styled.div`
-    view-transition-name: toolbar;
+  view-transition-name: toolbar;
 
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-    padding: 0.2rem;
-    padding-left: 1rem;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 10000;
-    color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  color: white;
 
-    svg {
-        fill: white;
-        width: 3.5rem;
-        height: 3.5rem;
-        transition: 200ms;
+  svg {
+    fill: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: 200ms;
 
-        &:hover {
-            transform: scale(1.2);
-        }
+    &:hover {
+      transform: scale(1.2);
     }
+  }
 
-    display: flex;
-    gap: 0.75rem;
-    border-bottom-left-radius: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  border-bottom-left-radius: 1.5rem;
 `;
 
 export default Toolbar;

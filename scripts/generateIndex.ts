@@ -8,11 +8,11 @@ const SONGS_FOLDER = './public/songs';
 const list: SongPreview[] = [];
 
 readdirSync(SONGS_FOLDER).forEach((file) => {
-    if (!file.endsWith('.txt')) return;
+  if (!file.endsWith('.txt')) return;
 
-    const songData: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+  const songData: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
-    list.push(getSongPreview(songData));
+  list.push(getSongPreview(songData));
 });
 
 console.log(JSON.stringify(list, undefined, 2));

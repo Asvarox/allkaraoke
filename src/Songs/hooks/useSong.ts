@@ -8,23 +8,23 @@ import { Song } from 'interfaces';
 import { useEffect, useState } from 'react';
 
 const processSong = (song: Song) => {
-    let processed = normaliseGap(song);
-    processed = addHeadstart(processed);
-    processed = normaliseSectionPaddings(processed);
-    processed = normaliseLyricSpaces(processed);
-    processed = fixVideoGap(processed);
+  let processed = normaliseGap(song);
+  processed = addHeadstart(processed);
+  processed = normaliseSectionPaddings(processed);
+  processed = normaliseLyricSpaces(processed);
+  processed = fixVideoGap(processed);
 
-    return processed;
+  return processed;
 };
 
 export default function useSong(songId: string) {
-    const [song, setSong] = useState<Song | null>(null);
+  const [song, setSong] = useState<Song | null>(null);
 
-    useEffect(() => {
-        SongDao.get(songId).then((loadedSong) => setSong(loadedSong ? processSong(loadedSong) : loadedSong));
-    }, [songId]);
+  useEffect(() => {
+    SongDao.get(songId).then((loadedSong) => setSong(loadedSong ? processSong(loadedSong) : loadedSong));
+  }, [songId]);
 
-    return {
-        data: song,
-    };
+  return {
+    data: song,
+  };
 }

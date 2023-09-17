@@ -2,25 +2,25 @@ import { randomInt } from 'utils/randomValue';
 
 const MAX_REMEMBERED_SONGS_COUNT = 30;
 export default function selectRandomSong(
-    songCount: number,
-    previouslySelectedSongs: number[],
-    maxRememberedCount = MAX_REMEMBERED_SONGS_COUNT,
+  songCount: number,
+  previouslySelectedSongs: number[],
+  maxRememberedCount = MAX_REMEMBERED_SONGS_COUNT,
 ) {
-    let newIndex;
-    if (previouslySelectedSongs.length < songCount) {
-        const possibleOptions = [...Array(songCount).keys()].filter((id) => !previouslySelectedSongs.includes(id));
+  let newIndex;
+  if (previouslySelectedSongs.length < songCount) {
+    const possibleOptions = [...Array(songCount).keys()].filter((id) => !previouslySelectedSongs.includes(id));
 
-        newIndex = possibleOptions[randomInt(0, possibleOptions.length - 1)];
-    } else {
-        newIndex = randomInt(0, songCount - 1);
+    newIndex = possibleOptions[randomInt(0, possibleOptions.length - 1)];
+  } else {
+    newIndex = randomInt(0, songCount - 1);
 
-        previouslySelectedSongs.length = 0;
-    }
+    previouslySelectedSongs.length = 0;
+  }
 
-    if (previouslySelectedSongs.length >= maxRememberedCount) {
-        previouslySelectedSongs.shift();
-    }
-    previouslySelectedSongs.push(newIndex);
+  if (previouslySelectedSongs.length >= maxRememberedCount) {
+    previouslySelectedSongs.shift();
+  }
+  previouslySelectedSongs.push(newIndex);
 
-    return newIndex;
+  return newIndex;
 }

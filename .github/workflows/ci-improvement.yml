@@ -5,100 +5,100 @@ on:
     branches: master
 
 jobs:
-    unit-tests:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Setup Node
-              uses: './.github/templates/setup-node'
-            - run: yarn test:ci
-            - uses: actions/upload-artifact@v3
-              if: failure()
-              with:
-                  name: unit-tests-image-diffs
-                  path: |
-                      src/**/__diff_output__/*
-    lint:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Setup Node
-              uses: './.github/templates/setup-node'
-            - run: yarn lint
-            - run: yarn unimported
-    ts-check:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Setup Node
-              uses: './.github/templates/setup-node'
-            - run: yarn tsc --noEmit
-    e2e-tests-run-chromium:
-        runs-on: ubuntu-latest
-        env:
-          VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
-          VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
-        steps:
-            - uses: actions/checkout@v3
-            - name: Setup Node
-              uses: './.github/templates/setup-node'
-            - name: Run E2E tests
-              uses: './.github/templates/run-playwright'
-              with:
-                packagescript: 'e2e'
-                project: 'chromium'
-            - uses: actions/upload-artifact@v3
-              if: success()
-              with:
-                name: built-app
-                path: build
-    e2e-tests-run-firefox:
-        runs-on: ubuntu-latest
-        env:
-          VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
-          VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
-        steps:
-            - uses: actions/checkout@v3
-            - name: Setup Node
-              uses: './.github/templates/setup-node'
-            - name: Run E2E tests
-              uses: './.github/templates/run-playwright'
-              with:
-                packagescript: 'e2e'
-                project: 'firefox'
-    ct-tests-run:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Setup Node
-              uses: './.github/templates/setup-node'
-            - name: Run CT tests
-              uses: './.github/templates/run-playwright'
-              with:
-                packagescript: 'test-ct'
-    deploy:
-        runs-on: ubuntu-latest
-        needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
-        steps:
-            - uses: actions/checkout@v3
-              with:
-                fetch-depth: 30
-            - uses: actions/download-artifact@v3
-              with:
-                  name: built-app
-                  path: build
-            - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  branch: gh-pages # The branch the action should deploy to.
-                  folder: build # The folder the action should deploy.
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: yarn test:ci
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: unit-tests-image-diffs
+          path: |
+            src/**/__diff_output__/*
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: yarn lint
+      - run: yarn unimported
+  ts-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: yarn tsc --noEmit
+  e2e-tests-run-chromium:
+    runs-on: ubuntu-latest
+    env:
+      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
+      VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Run E2E tests
+        uses: './.github/templates/run-playwright'
+        with:
+          packagescript: 'e2e'
+          project: 'chromium'
+      - uses: actions/upload-artifact@v3
+        if: success()
+        with:
+          name: built-app
+          path: build
+  e2e-tests-run-firefox:
+    runs-on: ubuntu-latest
+    env:
+      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
+      VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Run E2E tests
+        uses: './.github/templates/run-playwright'
+        with:
+          packagescript: 'e2e'
+          project: 'firefox'
+  ct-tests-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Run CT tests
+        uses: './.github/templates/run-playwright'
+        with:
+          packagescript: 'test-ct'
+  deploy:
+    runs-on: ubuntu-latest
+    needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 30
+      - uses: actions/download-artifact@v3
+        with:
+          name: built-app
+          path: build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
 
-            - name: Create Sentry release
-              uses: getsentry/action-release@v1
-              env:
-                SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-                SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-                SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
-              with:
-                environment: production
-                sourcemaps: './build'
+      - name: Create Sentry release
+        uses: getsentry/action-release@v1
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+        with:
+          environment: production
+          sourcemaps: './build'

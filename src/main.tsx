@@ -16,40 +16,40 @@ import App from './App';
 import './index.css';
 
 if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
-    init({
-        dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
+  init({
+    dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
 
-        // Set tracesSampleRate to 1.0 to capture 100%
-        // of transactions for performance monitoring.
-        // We recommend adjusting this value in production
-        tracesSampleRate: 1.0,
-        environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
-        tunnel: import.meta.env.VITE_APP_SENTRY_TUNNEL,
-    });
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+    environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
+    tunnel: import.meta.env.VITE_APP_SENTRY_TUNNEL,
+  });
 }
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
-    posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
-        debug: true,
-        api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
-        test: isDev() || window.location.port !== '',
-        loaded: (ph) => {
-            let storedUser = localStorage.getItem('posthog-user-id');
-            if (!storedUser) {
-                storedUser = v4();
-                localStorage.setItem('posthog-user-id', storedUser);
-            }
-            ph.identify(storedUser);
-        },
-    });
+  posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
+    debug: true,
+    api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
+    test: isDev() || window.location.port !== '',
+    loaded: (ph) => {
+      let storedUser = localStorage.getItem('posthog-user-id');
+      if (!storedUser) {
+        storedUser = v4();
+        localStorage.setItem('posthog-user-id', storedUser);
+      }
+      ph.identify(storedUser);
+    },
+  });
 }
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
 
 root.render(
-    <>
-        <App />
-        <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
-    </>,
+  <>
+    <App />
+    <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
+  </>,
 );

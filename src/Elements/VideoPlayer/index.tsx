@@ -4,13 +4,13 @@ import OfflineVideoPlayer from './Offline';
 import YoutubeVideoPlayer, { VideoPlayerRef } from './Youtube';
 
 const VideoPlayer = forwardRef(
-    (props: ComponentProps<typeof YoutubeVideoPlayer>, ref: ForwardedRef<VideoPlayerRef>) => {
-        if (import.meta.env.VITE_APP_OFFLINE) {
-            return <OfflineVideoPlayer {...props} ref={ref} />;
-        } else {
-            return <YoutubeVideoPlayer {...props} ref={ref} />;
-        }
-    },
+  (props: ComponentProps<typeof YoutubeVideoPlayer>, ref: ForwardedRef<VideoPlayerRef>) => {
+    if (import.meta.env.VITE_APP_OFFLINE) {
+      return <OfflineVideoPlayer {...props} ref={ref} />;
+    } else {
+      return <YoutubeVideoPlayer {...props} ref={ref} />;
+    }
+  },
 );
 
 export default VideoPlayer;

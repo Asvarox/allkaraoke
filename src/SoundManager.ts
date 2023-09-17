@@ -9,37 +9,37 @@ import menuEnterSound from 'assets/menu_enter.wav';
 import menuNavigateSound from 'assets/menu_navigate.wav';
 
 const menuNavigate = new Howl({
-    src: menuNavigateSound,
+  src: menuNavigateSound,
 });
 
 const menuEnter = new Howl({
-    src: menuEnterSound,
+  src: menuEnterSound,
 });
 
 const menuBack = new Howl({
-    src: menuBackSound,
+  src: menuBackSound,
 });
 
 const waitFinished = new Howl({
-    src: waitFinishedSound,
-    preload: true,
+  src: waitFinishedSound,
+  preload: true,
 });
 
 const cameraShot = new Howl({
-    src: cameraSound,
-    preload: true,
-    volume: 0.1,
+  src: cameraSound,
+  preload: true,
+  volume: 0.1,
 });
 
 const backgroundMusic = new Howl({
-    src: backgroundMusicSound,
-    volume: 0.3,
-    loop: true,
+  src: backgroundMusicSound,
+  volume: 0.3,
+  loop: true,
 });
 const classicBackgroundMusic = new Howl({
-    src: classicBackgroundMusicSound,
-    volume: 0.4,
-    loop: true,
+  src: classicBackgroundMusicSound,
+  volume: 0.4,
+  loop: true,
 });
 
 export { backgroundMusic, cameraShot, classicBackgroundMusic, menuBack, menuEnter, menuNavigate, waitFinished };

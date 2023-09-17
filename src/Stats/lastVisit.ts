@@ -16,8 +16,8 @@ const defaultLastVisit = isFirstVisit ? currentTime : 1673642382501; // implemen
 let lastVisit = Number(localStorage.getItem(LAST_VISIT_KEY) ?? defaultLastVisit);
 
 if (isFirstVisit || currentTime - currentVisit > VISIT_TIMEOUT_MS) {
-    localStorage.setItem(LAST_VISIT_KEY, String(currentVisit));
-    lastVisit = currentVisit;
+  localStorage.setItem(LAST_VISIT_KEY, String(currentVisit));
+  lastVisit = currentVisit;
 }
 localStorage.setItem(CURRENT_VISIT_KEY, String(currentTime));
 

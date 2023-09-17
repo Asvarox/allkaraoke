@@ -2,23 +2,23 @@ import { NotesSection, Section } from 'interfaces';
 import isNotesSection from './isNotesSection';
 
 export const getFirstNoteStartFromSections = (sections: Section[]) => {
-    const firstNoteSection = sections.find(isNotesSection);
+  const firstNoteSection = sections.find(isNotesSection);
 
-    return firstNoteSection ? firstNoteSection.notes[0].start : Infinity;
+  return firstNoteSection ? firstNoteSection.notes[0].start : Infinity;
 };
 export const getLastNoteEndFromSections = (sections: Section[]) => {
-    const notesSections = sections.filter(isNotesSection);
-    const lastSection = notesSections.at(-1);
+  const notesSections = sections.filter(isNotesSection);
+  const lastSection = notesSections.at(-1);
 
-    return lastSection ? getLastNoteEnd(lastSection) : 0;
+  return lastSection ? getLastNoteEnd(lastSection) : 0;
 };
 
 export const getLastNoteEnd = (section: NotesSection) => {
-    const lastNote = section.notes.at(-1)!;
+  const lastNote = section.notes.at(-1)!;
 
-    return lastNote.start + lastNote.length;
+  return lastNote.start + lastNote.length;
 };
 
 export const getNoteAtBeat = (section: NotesSection, beat: number, tolerance = 0) => {
-    return section.notes.find((note) => note.start - tolerance <= beat && note.start + note.length + tolerance >= beat);
+  return section.notes.find((note) => note.start - tolerance <= beat && note.start + note.length + tolerance >= beat);
 };

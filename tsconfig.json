@@ -1,31 +1,29 @@
 {
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "tests", "scripts"],
+  "ts-node": {
     "compilerOptions": {
-        "target": "es2017",
-        "lib": ["dom", "dom.iterable", "esnext"],
-        "allowJs": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "noFallthroughCasesInSwitch": true,
-        "module": "esnext",
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "isolatedModules": true,
-        "noEmit": true,
-        "jsx": "react-jsx",
-        "baseUrl": "./src",
-        "types": [
-            "vitest/globals"
-        ]
+      "module": "commonjs",
+      "baseUrl": "./src"
     },
-    "include": ["src", "tests", "scripts"],
-    "ts-node": {
-        "compilerOptions": {
-            "module": "commonjs",
-            "baseUrl": "./src"
-        },
-        "transpileOnly": true
-    }
+    "transpileOnly": true
+  }
 }
