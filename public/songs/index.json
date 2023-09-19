@@ -1575,6 +1575,34 @@
     "local": false
   },
   {
+    "id": "barbie-ryan-gosling-im-just-ken",
+    "title": "I'm just Ken",
+    "artist": "Barbie (Ryan Gosling)",
+    "language": "English",
+    "bpm": 335.68,
+    "bar": 4,
+    "gap": 7705.920877025739,
+    "video": "ru1LC9lW20Q",
+    "year": "2023",
+    "lastUpdate": "2023-09-19T18:36:35.622Z",
+    "videoGap": 0,
+    "realBpm": 140,
+    "previewStart": 90,
+    "previewEnd": 120,
+    "volume": 1,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "barbieryangoslingimjustken",
+    "local": false
+  },
+  {
     "id": "basshunter-dota",
     "title": "DotA",
     "artist": "Basshunter",
@@ -2037,6 +2065,35 @@
     "local": false
   },
   {
+    "id": "blanka-solo",
+    "title": "Solo",
+    "artist": "Blanka",
+    "language": "English",
+    "bpm": 198,
+    "bar": 4,
+    "gap": 4285.151515151515,
+    "video": "PvQRpV1-ZhY",
+    "year": "2023",
+    "lastUpdate": "2023-09-19T18:36:35.623Z",
+    "genre": "Pop",
+    "videoGap": 1,
+    "realBpm": 99,
+    "previewStart": 43,
+    "previewEnd": 70,
+    "volume": 0.59,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blankasolo",
+    "local": false
+  },
+  {
     "id": "blenders-ciagnik",
     "title": "Ciągnik",
     "artist": "Blenders",
@@ -2059,6 +2116,34 @@
     ],
     "tracksCount": 1,
     "search": "blendersciagnik",
+    "local": false
+  },
+  {
+    "id": "blondie-one-way-or-another",
+    "title": "One way or another",
+    "artist": "Blondie",
+    "language": "English",
+    "bpm": 399.6,
+    "bar": 4,
+    "gap": 22581.132075471698,
+    "video": "FIXIsYWS8CA",
+    "year": "1978",
+    "lastUpdate": "2023-09-19T18:36:35.624Z",
+    "edition": "Rock Band 2",
+    "genre": "New Wave",
+    "videoGap": 0,
+    "realBpm": 162,
+    "volume": 0.75,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blondieonewayoranother",
     "local": false
   },
   {
@@ -7477,6 +7562,36 @@
     "local": false
   },
   {
+    "id": "joan-jett-the-blackhearts-i-love-rock-n-roll",
+    "title": "I Love Rock N' Roll",
+    "artist": "Joan Jett & The Blackhearts",
+    "language": "English",
+    "bpm": 401.17,
+    "bar": 4,
+    "gap": 42103.45292519381,
+    "video": "wMsazR6Tnf8",
+    "year": "1981",
+    "lastUpdate": "2023-09-19T18:36:35.625Z",
+    "edition": "Rock Band 3",
+    "genre": "Rock",
+    "videoGap": 28,
+    "realBpm": 94,
+    "previewStart": 70,
+    "previewEnd": 100,
+    "volume": 0.85,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joanjetttheblackheartsiloverocknroll",
+    "local": false
+  },
+  {
     "id": "joe-cocker-summer-in-the-city",
     "title": "Summer In The City",
     "artist": "Joe Cocker",
@@ -9070,6 +9185,87 @@
     "local": false
   },
   {
+    "id": "lenny-kravitz-are-you-gonna-go-my-way",
+    "title": "Are You Gonna Go My Way",
+    "artist": "Lenny Kravitz",
+    "language": "English",
+    "bpm": 384.71,
+    "bar": 4,
+    "gap": 32396.24938265187,
+    "video": "8LhCd1W2V0Q",
+    "year": "1993",
+    "lastUpdate": "2023-09-19T18:36:35.626Z",
+    "edition": "Rock Band Store 2009 Vol. 1",
+    "genre": "Rock",
+    "videoGap": 2,
+    "realBpm": 129,
+    "volume": 0.75,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lenny%20Kravitz&cancion=Are%20You%20Gonna%20Go%20My%20Way",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lennykravitzareyougonnagomyway",
+    "local": false
+  },
+  {
+    "id": "lenny-kravitz-fly-away",
+    "title": "Fly Away",
+    "artist": "Lenny Kravitz",
+    "language": "English",
+    "bpm": 312,
+    "bar": 4,
+    "gap": 26428.384615384617,
+    "video": "EvuL5jyCHOw",
+    "year": "1998",
+    "lastUpdate": "2023-09-19T18:36:35.626Z",
+    "genre": "Alternative Rock",
+    "videoGap": 1,
+    "realBpm": 160,
+    "volume": 0.65,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lennykravitzflyaway",
+    "local": false
+  },
+  {
+    "id": "lenny-kravitz-it-aint-over-til-its-over",
+    "title": "It Ain't Over 'Til It's Over",
+    "artist": "Lenny Kravitz",
+    "language": "English",
+    "bpm": 202,
+    "bar": 4,
+    "gap": 27784.653465346535,
+    "video": "TmENMZFUU_0",
+    "year": "1991",
+    "lastUpdate": "2023-09-19T18:36:35.627Z",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 0.65,
+    "author": "Sergeivodka",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lennykravitzitaintovertilitsover",
+    "local": false
+  },
+  {
     "id": "leona-lewis-bleeding-love",
     "title": "Bleeding Love",
     "artist": "Leona Lewis",
@@ -9277,6 +9473,33 @@
     ],
     "tracksCount": 2,
     "search": "linkinparkintheend",
+    "local": false
+  },
+  {
+    "id": "linkin-park-lost",
+    "title": "Lost",
+    "artist": "Linkin Park",
+    "language": "English",
+    "bpm": 282.55,
+    "bar": 4,
+    "gap": 21064.32896832419,
+    "video": "7NK_JOkuSVY",
+    "year": "2023",
+    "lastUpdate": "2023-09-19T18:36:35.628Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.75,
+    "author": "DoubleDee",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparklost",
     "local": false
   },
   {
@@ -9605,6 +9828,36 @@
     ],
     "tracksCount": 1,
     "search": "lynyrdskynyrdfreebird",
+    "local": false
+  },
+  {
+    "id": "lynyrd-skynyrd-sweet-home-alabama",
+    "title": "Sweet Home Alabama",
+    "artist": "Lynyrd Skynyrd",
+    "language": "English",
+    "bpm": 339.7,
+    "bar": 4,
+    "gap": 43.823529411764696,
+    "video": "-35W_FWCT9Q",
+    "year": "1974",
+    "lastUpdate": "2023-09-19T18:36:35.628Z",
+    "edition": "SingStar Lgnds",
+    "genre": "rock",
+    "videoGap": 0,
+    "realBpm": 98,
+    "previewStart": 71,
+    "previewEnd": 101,
+    "volume": 0.7,
+    "author": "eLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lynyrd%20Skynyrd&cancion=Sweet%20Home%20Alabama",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lynyrdskynyrdsweethomealabama",
     "local": false
   },
   {
@@ -14516,6 +14769,33 @@
     "local": false
   },
   {
+    "id": "scorpions-rock-you-like-a-hurricane",
+    "title": "Rock You Like a Hurricane",
+    "artist": "Scorpions",
+    "language": "English",
+    "bpm": 338,
+    "bar": 4,
+    "gap": 32440.289940828403,
+    "video": "6yP1tcy9a10",
+    "year": "1984",
+    "lastUpdate": "2023-09-19T18:36:35.629Z",
+    "edition": "SingStar Amped German",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.75,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "scorpionsrockyoulikeahurricane",
+    "local": false
+  },
+  {
     "id": "scorpions-still-loving-you",
     "title": "Still Loving You",
     "artist": "Scorpions",
@@ -15985,6 +16265,36 @@
     ],
     "tracksCount": 1,
     "search": "theblackeyedpeaspumpit",
+    "local": false
+  },
+  {
+    "id": "the-black-eyed-peas-shut-up",
+    "title": "Shut Up",
+    "artist": "The Black Eyed Peas",
+    "language": "English",
+    "bpm": 226,
+    "bar": 4,
+    "gap": 19714.424778761062,
+    "video": "KRzMtlZjXpU",
+    "year": "2004",
+    "lastUpdate": "2023-09-19T18:36:35.629Z",
+    "edition": "S'Star Popworld",
+    "genre": "Urban",
+    "videoGap": 0,
+    "realBpm": 113,
+    "previewStart": 86,
+    "previewEnd": 116,
+    "volume": 0.64,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theblackeyedpeasshutup",
     "local": false
   },
   {
