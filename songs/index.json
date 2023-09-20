@@ -7562,6 +7562,34 @@
     "local": false
   },
   {
+    "id": "joan-jett-bad-reputation",
+    "title": "Bad reputation",
+    "artist": "Joan Jett",
+    "language": "English",
+    "bpm": 382.46,
+    "bar": 4,
+    "gap": 14063.710581496445,
+    "video": "nO6YL09T8Fw",
+    "year": "1980",
+    "lastUpdate": "2023-09-20T18:00:32.221Z",
+    "edition": "Rock Band 2",
+    "genre": "Punk Rock",
+    "videoGap": -7,
+    "realBpm": 204,
+    "volume": 1,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joanjettbadreputation",
+    "local": false
+  },
+  {
     "id": "joan-jett-the-blackhearts-i-love-rock-n-roll",
     "title": "I Love Rock N' Roll",
     "artist": "Joan Jett & The Blackhearts",
