@@ -7,6 +7,7 @@ import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAnd
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
+import { shareSong } from 'Scenes/Edit/ShareSongsModal';
 import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
@@ -23,6 +24,7 @@ interface Props {
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 export default function Convert({ song }: Props) {
+  const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
   useBackground(false);
   const navigate = useSmoothNavigate();
@@ -52,7 +54,7 @@ export default function Convert({ song }: Props) {
   const error = useRef<string>('');
   const conversionResult: Song | undefined = useMemo(() => {
     try {
-      if (song)
+      if (isEdit)
         return {
           ...song,
           video: getVideoId(authorAndVid.video) || song.video,
@@ -73,14 +75,22 @@ export default function Convert({ song }: Props) {
       console.error(e);
     }
     return undefined;
-  }, [basicData.txtInput, authorAndVid.video, authorAndVid.author, authorAndVid.authorUrl, basicData.sourceUrl, song]);
+  }, [
+    basicData.txtInput,
+    authorAndVid.video,
+    authorAndVid.author,
+    authorAndVid.authorUrl,
+    basicData.sourceUrl,
+    song,
+    isEdit,
+  ]);
 
   const possibleDuplicate = useMemo(
     () =>
-      !song &&
+      !isEdit &&
       conversionResult &&
       songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult)),
-    [songs, conversionResult, song],
+    [songs, conversionResult, isEdit],
   );
 
   useEffect(() => {
@@ -130,7 +140,7 @@ export default function Convert({ song }: Props) {
     authorAndVid.video,
   ]);
 
-  const isBasicInfoCompleted = !!basicData.txtInput || !!song;
+  const isBasicInfoCompleted = !!basicData.txtInput || isEdit;
   const isAuthorAndVidCompleted = !!authorAndVid.video;
 
   const isNextStepAvailable = steps[currentStep] === 'author-and-video' ? isAuthorAndVidCompleted : true;
@@ -149,14 +159,14 @@ export default function Convert({ song }: Props) {
     <StyledEngineProvider injectFirst>
       <NormalizeFontSize />
       <Container>
-        {!song && (
+        {!isEdit && (
           <div style={{ marginBottom: '1rem' }}>
             <Link to="/">
               <a>Return to the main menu</a>
             </Link>
           </div>
         )}
-        <Stepper activeStep={currentStep} sx={{ mb: 2 }} nonLinear={!!song}>
+        <Stepper activeStep={currentStep} sx={{ mb: 2 }} nonLinear={isEdit}>
           <Step key={0} completed={isBasicInfoCompleted}>
             <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
               Basic Info
@@ -179,11 +189,15 @@ export default function Convert({ song }: Props) {
           </Step>
         </Stepper>
         <form
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault();
             if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
             else if (steps.at(currentStep) === 'metadata') {
-              SongDao.store(finalSong!).then(() => navigate(`/edit?search=${encodeURIComponent(finalSong!.title)}`));
+              await SongDao.store(finalSong!);
+              if (!isEdit) {
+                shareSong(finalSong!.id);
+              }
+              navigate(`/edit?search=${encodeURIComponent(finalSong!.title)}${!isEdit ? `&id=${finalSong!.id}` : ''}`);
             }
           }}>
           {steps.at(currentStep) === 'basic-data' && (

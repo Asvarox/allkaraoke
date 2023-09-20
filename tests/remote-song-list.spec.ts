@@ -28,7 +28,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
 
     await expect(await remoteMic.getByTestId('zzz-last-polish-1994')).toBeVisible();
   });
-  await test.step('Song list doesnt contain removed songs after connecting and contains new ones', async () => {
+  await test.step('Song list doesnt contain removed songs after connecting', async () => {
     await remoteMic.getByTestId('menu-microphone').click();
     await connectRemoteMic(remoteMic);
 
@@ -37,6 +37,10 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await page.getByTestId('edit-songs').click();
     await page.locator('[data-test="hide-song"][data-song="zzz-last-polish-1994"]').click();
     await expect(await page.locator('[data-test="restore-song"][data-song="zzz-last-polish-1994"]')).toBeVisible();
+    await expect(await remoteMic.getByTestId('zzz-last-polish-1994')).not.toBeVisible();
+  });
+
+  await test.step('Song list contains custom songs after connecting', async () => {
     await page.getByTestId('convert-song').click();
     await page.getByTestId('input-txt').fill(txtfile);
     await page.getByTestId('next-button').click();
@@ -44,10 +48,10 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await page.getByTestId('next-button').click();
     await page.getByTestId('next-button').click();
     await page.getByTestId('save-button').click();
+    await page.getByTestId('share-songs-disagree').click();
     await expect(await page.getByTestId('convert-song')).toBeVisible();
 
     await remoteMic.getByTestId('menu-song-list').click();
-    await expect(await remoteMic.getByTestId('zzz-last-polish-1994')).not.toBeVisible();
     await expect(await remoteMic.getByTestId('convert-test')).toBeVisible();
   });
 });

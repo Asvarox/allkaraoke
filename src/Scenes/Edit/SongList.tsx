@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
 import { Delete, Download, Edit as EditIcon, Visibility, VisibilityOff } from '@mui/icons-material';
-import { Button, Grid, IconButton } from '@mui/material';
+import { Button, FormControlLabel, Grid, IconButton, Switch } from '@mui/material';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
+import ShareSongsModal, { useShareSongs } from 'Scenes/Edit/ShareSongsModal';
 import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
@@ -19,8 +20,11 @@ export default function SongList(props: Props) {
   useBackground(false);
   useBackgroundMusic(false);
   const { data, reload } = useSongIndex(true);
+  const [shareSongs, setShareSongs] = useShareSongs(null);
 
-  const initialSearch = new URLSearchParams(window.location.search)?.get('search');
+  const searchParams = new URLSearchParams(window.location.search);
+  const initialSearch = searchParams?.get('search');
+  const createdId = searchParams?.get('id');
 
   const columns: MRT_ColumnDef<SongPreview>[] = useMemo(
     () => [
@@ -74,6 +78,7 @@ export default function SongList(props: Props) {
 
   return (
     <Container>
+      <ShareSongsModal id={createdId} />
       <NormalizeFontSize />
       <Grid container>
         <Grid item xs={3}>
@@ -174,6 +179,19 @@ export default function SongList(props: Props) {
         enableDensityToggle={false}
         enableFullScreenToggle={false}
       />
+      {shareSongs !== null && (
+        <FormControlLabel
+          control={
+            <Switch
+              defaultChecked
+              checked={shareSongs}
+              onChange={(e) => setShareSongs(e.target.checked)}
+              data-test="share-songs-switch"
+            />
+          }
+          label="Share added songs (so they can be played by others)"
+        />
+      )}
     </Container>
   );
 }

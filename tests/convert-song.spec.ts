@@ -191,6 +191,8 @@ test('Convert song', async ({ page }) => {
   await expect(page.getByTestId('next-button')).not.toBeVisible();
   await expect(page.getByTestId('save-button')).toBeVisible();
   await page.getByTestId('save-button').click();
+  await page.getByTestId('share-songs-disagree').click();
+  await expect(page.getByTestId('share-songs-switch').getByRole('checkbox')).not.toBeChecked();
 
   const convertedSongId = getSongId({ artist: FINAL_ARTIST, title: FINAL_TITLE });
   const [download] = await Promise.all([
