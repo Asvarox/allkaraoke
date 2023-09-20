@@ -27,7 +27,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
           <ScoreContainer isCurrentSing={score.singSetupId === singSetup.id} key={index}>
             <ScorePosition>{index + 1}</ScorePosition>
 
-            <ScorePlayerName>
+            <ScorePlayerName className="ph-no-capture">
               {score.singSetupId === singSetup.id ? (
                 <HighScoreRename
                   index={index}
