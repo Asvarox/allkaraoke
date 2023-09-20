@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'fs';
+import fs, { readdirSync, readFileSync } from 'fs';
 import { Song, SongPreview } from 'interfaces';
 import { getSongPreview } from '../src/Songs/utils';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
@@ -15,4 +15,4 @@ readdirSync(SONGS_FOLDER).forEach((file) => {
   list.push(getSongPreview(songData));
 });
 
-console.log(JSON.stringify(list, undefined, 2));
+fs.writeFileSync(`${SONGS_FOLDER}/index.json`, JSON.stringify(list, undefined, 2));

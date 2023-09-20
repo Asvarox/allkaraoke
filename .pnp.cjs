@@ -77,6 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aubiojs", "npm:0.1.0"],\
             ["core-js", "npm:3.30.2"],\
             ["date-fns", "npm:2.30.0"],\
+            ["dotenv", "npm:16.3.1"],\
             ["eslint", "npm:8.47.0"],\
             ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.10.0"],\
             ["eslint-config-react-app", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.1"],\
@@ -95,6 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.12.0"],\
             ["msgpackr", "npm:1.9.5"],\
             ["musicbrainz-api", "npm:0.8.0"],\
+            ["node-fetch", "npm:3.3.2"],\
             ["peer", "npm:0.6.1"],\
             ["peerjs", "npm:2.0.0-beta.3"],\
             ["playwright-core", "npm:1.37.0"],\
@@ -10248,6 +10250,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["data-uri-to-buffer", [\
+        ["npm:4.0.1", {\
+          "packageLocation": "./.yarn/cache/data-uri-to-buffer-npm-4.0.1-5c66a78beb-0d0790b67f.zip/node_modules/data-uri-to-buffer/",\
+          "packageDependencies": [\
+            ["data-uri-to-buffer", "npm:4.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["date-fns", [\
         ["npm:2.30.0", {\
           "packageLocation": "./.yarn/cache/date-fns-npm-2.30.0-895c790e0f-f7be015232.zip/node_modules/date-fns/",\
@@ -10599,6 +10610,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
           "packageDependencies": [\
             ["dotenv", "npm:16.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:16.3.1", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.3.1-e6d380a398-15d75e7279.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.3.1"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -11839,6 +11857,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fetch-blob", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/fetch-blob-npm-3.2.0-28e01becfc-f19bc28a2a.zip/node_modules/fetch-blob/",\
+          "packageDependencies": [\
+            ["fetch-blob", "npm:3.2.0"],\
+            ["node-domexception", "npm:1.0.0"],\
+            ["web-streams-polyfill", "npm:3.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["fetch-retry", [\
         ["npm:5.0.3", {\
           "packageLocation": "./.yarn/cache/fetch-retry-npm-5.0.3-25867f01e0-b4eebc04bd.zip/node_modules/fetch-retry/",\
@@ -12082,6 +12111,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["asynckit", "npm:0.4.0"],\
             ["combined-stream", "npm:1.0.8"],\
             ["mime-types", "npm:2.1.35"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["formdata-polyfill", [\
+        ["npm:4.0.10", {\
+          "packageLocation": "./.yarn/cache/formdata-polyfill-npm-4.0.10-e03013c013-82a34df292.zip/node_modules/formdata-polyfill/",\
+          "packageDependencies": [\
+            ["formdata-polyfill", "npm:4.0.10"],\
+            ["fetch-blob", "npm:3.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14930,6 +14969,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["node-domexception", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/node-domexception-npm-1.0.0-e1e813b76f-ee1d37dd2a.zip/node_modules/node-domexception/",\
+          "packageDependencies": [\
+            ["node-domexception", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["node-fetch", [\
         ["npm:2.6.9", {\
           "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.9-9fc9a54529-acb04f9ce7.zip/node_modules/node-fetch/",\
@@ -14937,6 +14985,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-fetch", "npm:2.6.9"]\
           ],\
           "linkType": "SOFT"\
+        }],\
+        ["npm:3.3.2", {\
+          "packageLocation": "./.yarn/cache/node-fetch-npm-3.3.2-5267e015f2-06a04095a2.zip/node_modules/node-fetch/",\
+          "packageDependencies": [\
+            ["node-fetch", "npm:3.3.2"],\
+            ["data-uri-to-buffer", "npm:4.0.1"],\
+            ["fetch-blob", "npm:3.2.0"],\
+            ["formdata-polyfill", "npm:4.0.10"]\
+          ],\
+          "linkType": "HARD"\
         }],\
         ["virtual:001a51c96ce37a97cf30fc526c6f9fb47f465af86bde09772059c3ed8c47512dac2528879b10b46a196f19ffb613ae2a7fc96758c4dd43cdcc1260aceb7e1779#npm:2.6.9", {\
           "packageLocation": "./.yarn/__virtual__/node-fetch-virtual-dd2c814e76/0/cache/node-fetch-npm-2.6.9-9fc9a54529-acb04f9ce7.zip/node_modules/node-fetch/",\
@@ -15273,6 +15331,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aubiojs", "npm:0.1.0"],\
             ["core-js", "npm:3.30.2"],\
             ["date-fns", "npm:2.30.0"],\
+            ["dotenv", "npm:16.3.1"],\
             ["eslint", "npm:8.47.0"],\
             ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.10.0"],\
             ["eslint-config-react-app", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.1"],\
@@ -15291,6 +15350,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.12.0"],\
             ["msgpackr", "npm:1.9.5"],\
             ["musicbrainz-api", "npm:0.8.0"],\
+            ["node-fetch", "npm:3.3.2"],\
             ["peer", "npm:0.6.1"],\
             ["peerjs", "npm:2.0.0-beta.3"],\
             ["playwright-core", "npm:1.37.0"],\
@@ -19818,6 +19878,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["wcwidth", "npm:1.0.1"],\
             ["defaults", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["web-streams-polyfill", [\
+        ["npm:3.2.1", {\
+          "packageLocation": "./.yarn/cache/web-streams-polyfill-npm-3.2.1-835bd3857e-b119c78574.zip/node_modules/web-streams-polyfill/",\
+          "packageDependencies": [\
+            ["web-streams-polyfill", "npm:3.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
