@@ -21,7 +21,7 @@ const SONG_PRESENTATION_FRAMES = 70;
 const TITLE_PRESENTATION_FRAMES = SONG_PRESENTATION_FRAMES;
 
 export const getNewSongsSequenceLength = (songs: SongPreview[]) =>
-  6 * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
+  9 * SONG_PRESENTATION_FRAMES + TITLE_PRESENTATION_FRAMES;
 
 export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; durationInFrames: number }) => {
   const [handle] = useState(() => delayRender());

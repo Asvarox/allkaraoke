@@ -3,7 +3,7 @@ import { AbsoluteFill, Easing, interpolate, Series, useCurrentFrame } from 'remo
 import { Fade, Scale } from 'remotion-animated';
 import { CenterAbsoluteFill, SAnimated } from 'videos/support/Components/common';
 
-const SONG_PRESENTATION_FRAMES = 110;
+const SONG_PRESENTATION_FRAMES = 90;
 const TITLE_PRESENTATION_FRAMES = 75;
 
 export interface UpdateEntry {

@@ -14,16 +14,11 @@ import { getNewSongsSequenceLength, NewSongs } from 'videos/UpdateVideo/NewSongs
 import { getUpdatesSequenceLength, Updates } from 'videos/UpdateVideo/Updates';
 import songIndex from '../../public/songs/index.json';
 
-const lastUpdate = new Date('2023-06-08T09:26:15.631Z');
+const lastUpdate = new Date('2023-09-01T09:26:15.631Z');
 
 const data = {
-  date: new Date('2023-06-21T09:26:15.631Z'),
-  songPack: (
-    <>
-      <h1>Divas</h1>
-      <h2>Song Pack</h2>
-    </>
-  ),
+  date: new Date('2023-09-22T09:26:15.631Z'),
+  songPack: null,
   newSongs: (songIndex as any as SongPreview[]).filter(
     (song) => song.lastUpdate && isAfter(new Date(song.lastUpdate), lastUpdate),
   ),
@@ -31,43 +26,32 @@ const data = {
     {
       title: (
         <>
-          Built in mic <strong>noise detection</strong>
+          Remote microphones <strong>management</strong>
         </>
       ),
-      description: <h4>You will get notified if there's a lot of background noise picked by the mic</h4>,
+      description: <></>,
+    },
+    {
+      title: <></>,
+      description: (
+        <h4>
+          In the <strong>options</strong>, you can block new/existing mics from controlling the game
+        </h4>
+      ),
+    },
+    {
+      title: <></>,
+      description: <h4>You can do the same from the remote microphone itself</h4>,
     },
     {
       title: (
         <>
-          <strong>Search song</strong> improvements
-        </>
-      ),
-      description: <h4>Search results now include all the songs (even excluded ones)</h4>,
-    },
-    {
-      title: (
-        <>
-          <strong>UI</strong> improvements
+          <strong>A lot more</strong> improvements
         </>
       ),
       description: (
         <>
-          <h4>Disallow unselecting all the languages</h4>
-          <h4>Improved troubleshooting guide for connection errors in remote mic</h4>
-        </>
-      ),
-    },
-    {
-      title: (
-        <>
-          <strong>Add/Edit songs</strong> improvements
-        </>
-      ),
-      description: (
-        <>
-          <h4>Set song preview</h4>
-          <h4>Ignore casing for genres</h4>
-          <h4>Allow specifying multiple languages</h4>
+          <h4>Made over the past couple months</h4>
         </>
       ),
     },
