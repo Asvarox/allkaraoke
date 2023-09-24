@@ -51,29 +51,38 @@ export const FinalSongCard = ({
         )}
         <SongListEntryDetailsArtist expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
         <SongListEntryDetailsTitle expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
-        {expanded && (
-          <>
-            {song.author && (
-              <SongAuthor expanded={expanded}>
-                by&nbsp;
-                {song.authorUrl ? (
-                  <a href={song.authorUrl} target="_blank" rel="noreferrer">
-                    {song.author}
-                  </a>
-                ) : (
-                  song.author
-                )}
-              </SongAuthor>
-            )}
-            <SongListEntryStats song={song} />
-          </>
-        )}
+        <ExpandedData expanded={expanded}>
+          {expanded && (
+            <>
+              {song.author && (
+                <SongAuthor expanded={expanded}>
+                  by&nbsp;
+                  {song.authorUrl ? (
+                    <a href={song.authorUrl} target="_blank" rel="noreferrer">
+                      {song.author}
+                    </a>
+                  ) : (
+                    song.author
+                  )}
+                </SongAuthor>
+              )}
+              <SongListEntryStats song={song} />
+            </>
+          )}
+        </ExpandedData>
       </SongInfo>
       {children}
       {video}
     </SongCardContainer>
   );
 };
+
+export const ExpandedData = styled.div<{ expanded: boolean }>`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
 
 const SongInfo = styled.div<{ expanded: boolean }>`
   width: 100%;
@@ -150,7 +159,7 @@ export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
   color: white;
 `;
 
-const SongAuthor = styled(SongListEntryDetailsTitle)`
+export const SongAuthor = styled(SongListEntryDetailsTitle)`
   font-size: 3rem;
   margin-top: 3rem;
 `;

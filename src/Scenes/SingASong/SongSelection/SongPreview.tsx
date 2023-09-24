@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { useTheme } from '@mui/material';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import {
+  ExpandedData,
   FinalSongCard,
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
@@ -81,7 +82,7 @@ export default function SongPreviewComponent({
       <SongPreviewContainer
         background={expanded || showVideo}
         video={
-          <Video show={showVideo} expanded={expanded} height={finalHeight}>
+          <Video show={showVideo} expanded={expanded} height={finalHeight} id="preview-video-container">
             <VideoPlayer
               width={0}
               height={0}
@@ -110,16 +111,16 @@ export default function SongPreviewComponent({
         expanded={expanded}
         data-test="song-preview"
         data-song={songPreview.id}>
-        {expanded && (
-          <Content>
+        <Content expanded={expanded}>
+          {expanded && (
             <SongSettings
               songPreview={songPreview}
               onPlay={onPlay}
               keyboardControl={keyboardControl}
               onExitKeyboardControl={onExitKeyboardControl}
             />
-          </Content>
-        )}
+          )}
+        </Content>
       </SongPreviewContainer>
     </>
   );
@@ -175,6 +176,10 @@ const BaseSongPreviewContainer = styled(FinalSongCard)<{
   ${SongListEntryDetailsTitle} {
     view-transition-name: song-preview-title;
   }
+
+  ${ExpandedData} {
+    view-transition-name: song-preview-expanded-data;
+  }
 `;
 
 interface SongPreviewContainerProps
@@ -211,27 +216,37 @@ const Backdrop = styled.div`
 `;
 
 const Video = styled.div<{ show: boolean; expanded: boolean; height: number }>`
-  position: absolute;
-  top: 0;
-  left: 0;
+  ${(props) =>
+    props.expanded
+      ? css`
+          position: fixed;
+          inset: 0;
+          clip-path: inset(calc((100vh - ${props.height}px) / 2) 0);
+        `
+      : css`
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: none !important;
+          border-radius: 0.5rem;
+        `}
+
   div {
     opacity: ${({ show }) => (show ? 1 : 0)};
     transition: ${({ show, expanded }) => (show || expanded ? 1000 : 0)}ms;
   }
-  ${(props) => !props.expanded && 'background-image: none !important;'}
-  ${(props) => !props.expanded && 'border-radius: 0.5rem;'}
-    ${(props) => props.expanded && `margin-top: calc(-1 * (100vw / 16 * 9) / 2 + ${props.height / 2}px);`}
 `;
 
-const ContentBase = styled.div`
+const Content = styled.div<{ expanded: boolean }>`
   inset: auto var(--preview-padding);
   position: fixed; /* makes sure Autocomplete dropdown doesn't get clipped */
   z-index: 100;
+  ${(props) => !props.expanded && `transform: scale(0.1);`}
 
   border-radius: 0.5rem;
-`;
 
-const Content = ContentBase;
+  view-transition-name: song-preview-content;
+`;
 
 const BaseSongBPMIndicator = styled.div<{ width: number; height: number }>`
   background: white;

@@ -1,22 +1,18 @@
 import { throttle } from 'lodash-es';
 import { useCallback, useEffect, useState } from 'react';
 
+const getViewportSize = () => ({
+  width: window.document.body.clientWidth,
+  height: window.visualViewport!.height,
+});
+
 export default function useViewportSize() {
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-  const [windowSize, setWindowSize] = useState<{
-    width: number | undefined;
-    height: number | undefined;
-  }>({
-    width: undefined,
-    height: undefined,
-  });
+  const [windowSize, setWindowSize] = useState(getViewportSize());
 
   const handleResize = useCallback(
     throttle(() => {
-      setWindowSize({
-        width: window.document.body.clientWidth,
-        height: window.visualViewport!.height,
-      });
+      setWindowSize(getViewportSize());
     }, 1000),
     [],
   );

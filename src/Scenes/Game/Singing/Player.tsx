@@ -1,5 +1,6 @@
 import { PlayerSetup, SingSetup, Song } from 'interfaces';
 import {
+  ComponentProps,
   ForwardedRef,
   MutableRefObject,
   forwardRef,
@@ -21,14 +22,14 @@ import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
 
-interface Props {
+interface Props extends ComponentProps<typeof Container> {
   singSetup: SingSetup;
   song: Song;
   width: number;
   height: number;
   autoplay?: boolean;
   showControls?: boolean;
-  onTimeUpdate?: (newTime: number) => void;
+  onCurrentTimeUpdate?: (newTime: number) => void;
   onSongEnd: () => void;
   onStatusChange?: (status: VideoState) => void;
   players: PlayerSetup[];
@@ -66,7 +67,7 @@ function Player(
     height,
     autoplay = true,
     showControls = false,
-    onTimeUpdate,
+    onCurrentTimeUpdate,
     onSongEnd,
     onStatusChange,
     players,
@@ -74,6 +75,7 @@ function Player(
     effectsEnabled = true,
     singSetup,
     restartSong,
+    ...restProps
   }: Props,
   ref: ForwardedRef<PlayerRef>,
 ) {
@@ -102,14 +104,14 @@ function Player(
 
         const time = Math.max(0, (await player.current.getCurrentTime()) * 1000 - inputLag);
         setCurrentTime(time);
-        onTimeUpdate?.(time);
+        onCurrentTimeUpdate?.(time);
         GameState.setCurrentTime(time);
         GameState.update();
       }, 1000 / FPSCountSetting.get());
 
       return () => clearInterval(interval);
     }
-  }, [player, onTimeUpdate, currentStatus, inputLag]);
+  }, [player, onCurrentTimeUpdate, currentStatus, inputLag]);
 
   const duration = usePlayerSetDuration(player, currentStatus);
 
@@ -176,7 +178,7 @@ function Player(
   );
   useKeyboardHelp(help, effectsEnabled);
   return (
-    <Container>
+    <Container {...restProps}>
       {pauseMenu && <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} />}
       {currentStatus !== VideoState.UNSTARTED && (
         <Overlay>

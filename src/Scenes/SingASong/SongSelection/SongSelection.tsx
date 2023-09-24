@@ -180,7 +180,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 }
 
 const Container = styled.div<{ songsPerRow: number }>`
-  //view-transition-name: song-list-container;
   display: flex;
   flex-direction: row;
   max-height: 100vh;

@@ -9,8 +9,7 @@ import useSong from 'Songs/hooks/useSong';
 import useBlockScroll from 'hooks/useBlockScroll';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup } from 'interfaces';
-import { useMemo, useRef, useState } from 'react';
-import TransitionWrapper from '../../../Elements/TransitionWrapper';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import useViewportSize from '../../../hooks/useViewportSize';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
@@ -31,6 +30,7 @@ function Singing({ video, songId, singSetup, returnToSongSelection, restartSong 
 
   const { width, height } = useViewportSize();
   const [isEnded, setIsEnded] = useState(false);
+  const [isOverlayVisible, setIsOverlayVisible] = useState(true);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
 
   const playerChanges = useMemo(() => {
@@ -44,9 +44,13 @@ function Singing({ video, songId, singSetup, returnToSongSelection, restartSong 
 
   useBackground(!isTransitionTimeout);
 
-  if (!width || !height || !song.data) return <>Loading</>;
+  useEffect(() => {
+    if (isOverlayVisible && song.data && (isTransitionTimeout || playerState !== VideoState.UNSTARTED)) {
+      setIsOverlayVisible(false);
+    }
+  }, [song.data, isTransitionTimeout, playerState, isOverlayVisible]);
 
-  if (isEnded) {
+  if (isEnded && song.data) {
     return (
       <PostGame
         width={width}
@@ -59,49 +63,47 @@ function Singing({ video, songId, singSetup, returnToSongSelection, restartSong 
   } else {
     return (
       <Container>
-        <BackgroundContainer>
-          <TransitionWrapper show={!isTransitionTimeout && playerState === VideoState.UNSTARTED}>
-            <>
-              <Overlay video={video} width={width} height={height} />
-              <WaitForReadiness
-                onFinish={() => {
-                  setIsTransitionTimeout(true);
-                  player.current?.play();
-                }}
-              />
-            </>
-          </TransitionWrapper>
+        <BackgroundContainer visible={isOverlayVisible}>
+          <Overlay video={video} width={width} height={height} />
+          <WaitForReadiness
+            onFinish={() => {
+              setIsTransitionTimeout(true);
+              player.current?.play();
+            }}
+          />
         </BackgroundContainer>
-        <Player
-          ref={player}
-          onStatusChange={setPlayerState}
-          playerChanges={playerChanges}
-          players={singSetup.players}
-          song={song.data}
-          width={width}
-          height={height}
-          autoplay={false}
-          onSongEnd={() => {
-            const scores =
-              GameState.getSingSetup()?.mode === GAME_MODE.CO_OP
-                ? [
-                    {
-                      name: PlayersManager.getPlayers()
-                        .map((player) => player.getName())
-                        .join(', '),
-                      score: GameState.getPlayerScore(0),
-                    },
-                  ]
-                : PlayersManager.getPlayers().map((player) => ({
-                    name: player.getName(),
-                    score: GameState.getPlayerScore(player.number),
-                  }));
-            events.songEnded.dispatch(song.data!, singSetup, scores);
-            setIsEnded(true);
-          }}
-          singSetup={singSetup}
-          restartSong={restartSong}
-        />
+        {song.data && (
+          <Player
+            ref={player}
+            onStatusChange={setPlayerState}
+            playerChanges={playerChanges}
+            players={singSetup.players}
+            song={song.data}
+            width={width}
+            height={height}
+            autoplay={false}
+            onSongEnd={() => {
+              const scores =
+                GameState.getSingSetup()?.mode === GAME_MODE.CO_OP
+                  ? [
+                      {
+                        name: PlayersManager.getPlayers()
+                          .map((player) => player.getName())
+                          .join(', '),
+                        score: GameState.getPlayerScore(0),
+                      },
+                    ]
+                  : PlayersManager.getPlayers().map((player) => ({
+                      name: player.getName(),
+                      score: GameState.getPlayerScore(player.number),
+                    }));
+              events.songEnded.dispatch(song.data!, singSetup, scores);
+              setIsEnded(true);
+            }}
+            singSetup={singSetup}
+            restartSong={restartSong}
+          />
+        )}
       </Container>
     );
   }
@@ -111,12 +113,16 @@ const Container = styled.div`
   position: relative;
 `;
 
-const BackgroundContainer = styled.div`
-  position: absolute;
+const BackgroundContainer = styled.div<{ visible: boolean }>`
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   pointer-events: none;
+  background-color: black;
+  view-transition-name: song-preview;
+  opacity: ${(props) => (props.visible ? 1 : 0)};
+  transition: 500ms;
 `;
 
 const BaseOverlay = styled.div`

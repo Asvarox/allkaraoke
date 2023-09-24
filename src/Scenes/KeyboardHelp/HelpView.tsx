@@ -29,38 +29,36 @@ export default function KeyboardHelpView({ help }: Props) {
 
   return (
     <>
-      {!!helps.length && (
-        <Container
-          data-test="help-container"
-          onClick={() => setIsVisible(!isVisible)}
-          collapsed={!isVisible}
-          data-collapsed={!isVisible}>
-          {isVisible ? (
-            <>
-              <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
-              {helps.map(([type, label]) => {
-                const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
-                return (
-                  <Section key={type}>
-                    <SectionHelp>{label ?? defaultLabel}</SectionHelp>
-                    <SectionKeys>
-                      <Component />
-                    </SectionKeys>
-                  </Section>
-                );
-              })}
-              <Section>
-                <SectionHelp>Show/hide this help</SectionHelp>
-                <SectionKeys>
-                  <Kbd>H</Kbd>
-                </SectionKeys>
-              </Section>
-            </>
-          ) : (
-            <HelpIcon onClick={() => setIsVisible(!isVisible)} />
-          )}
-        </Container>
-      )}
+      <Container
+        data-test="help-container"
+        onClick={() => setIsVisible(!isVisible)}
+        collapsed={!isVisible || !helps.length}
+        data-collapsed={!isVisible}>
+        {isVisible ? (
+          <>
+            <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
+            {helps.map(([type, label]) => {
+              const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
+              return (
+                <Section key={type}>
+                  <SectionHelp>{label ?? defaultLabel}</SectionHelp>
+                  <SectionKeys>
+                    <Component />
+                  </SectionKeys>
+                </Section>
+              );
+            })}
+            <Section>
+              <SectionHelp>Show/hide this help</SectionHelp>
+              <SectionKeys>
+                <Kbd>H</Kbd>
+              </SectionKeys>
+            </Section>
+          </>
+        ) : (
+          <HelpIcon onClick={() => setIsVisible(!isVisible)} />
+        )}
+      </Container>
     </>
   );
 }

@@ -216,3 +216,32 @@ code {
 ::view-transition-new(menu-container) {
   animation: 210ms ease-in-out 90ms both fade-in, 300ms ease-in-out both slide-from-right;
 }
+
+::view-transition-old(song-preview),
+::view-transition-new(song-preview) {
+  /* Prevent the default animation,
+  so both views remain opacity:1 throughout the transition */
+  animation: none;
+  /* Use normal blending,
+  so the new view sits on top and obscures the old view */
+  mix-blend-mode: normal;
+  /* Make the height the same as the group,
+  meaning the view size might not match its aspect-ratio. */
+  height: 100%;
+  /* Clip any overflow of the view */
+  overflow: clip;
+}
+
+/* The old view is the thumbnail */
+::view-transition-old(song-preview) {
+  /* Maintain the aspect ratio of the view,
+  by shrinking it to fit within the bounds of the element */
+  object-fit: contain;
+}
+
+/* The new view is the full image */
+::view-transition-new(song-preview) {
+  /* Maintain the aspect ratio of the view,
+  by growing it to cover the bounds of the element */
+  object-fit: cover;
+}
