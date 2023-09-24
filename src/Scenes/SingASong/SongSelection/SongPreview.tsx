@@ -66,18 +66,20 @@ export default function SongPreviewComponent({
     });
   }, [videoId, player, previewStart, previewEnd]);
 
-  const finalWidth = expanded ? windowWidth! : width;
+  const videoWidth = expanded ? windowWidth : width;
+  const videoHeight = expanded ? windowHeight : height;
+
   const finalHeight = expanded ? Math.min((windowWidth! / 20) * 9, windowHeight! * (4 / 5)) : height;
 
   useEffect(() => {
-    player.current?.setSize(finalWidth, (finalWidth / 16) * 9);
-  }, [finalWidth, keyboardControl]);
+    player.current?.setSize(videoWidth, videoHeight);
+  }, [videoWidth, videoHeight, keyboardControl]);
 
   return (
     <>
       {expanded && <Backdrop onClick={onExitKeyboardControl} />}
       {!expanded && showVideo && (
-        <SongBPMIndicator width={finalWidth} height={finalHeight} left={left} top={top} song={songPreview} />
+        <SongBPMIndicator width={videoWidth} height={videoHeight} left={left} top={top} song={songPreview} />
       )}
       <SongPreviewContainer
         background={expanded || showVideo}
@@ -105,7 +107,7 @@ export default function SongPreviewComponent({
         song={songPreview}
         top={top}
         left={left}
-        width={finalWidth}
+        width={videoWidth}
         height={finalHeight}
         showVideo={showVideo}
         expanded={expanded}

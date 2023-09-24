@@ -15,9 +15,9 @@ interface Props {
 const useIsVisible = createPersistedState('keyboard-help-visibility');
 
 export default function KeyboardHelpView({ help }: Props) {
-  const [isVisible, setIsVisible] = useIsVisible(true);
+  const [isCollapsed, setIsVisible] = useIsVisible(true);
 
-  useHotkeys('h', () => setIsVisible(!isVisible), undefined, [isVisible]);
+  useHotkeys('h', () => setIsVisible(!isCollapsed), undefined, [isCollapsed]);
 
   const helps = Object.entries(help ?? {}).filter(([, value]) => value !== undefined);
 
@@ -31,10 +31,11 @@ export default function KeyboardHelpView({ help }: Props) {
     <>
       <Container
         data-test="help-container"
-        onClick={() => setIsVisible(!isVisible)}
-        collapsed={!isVisible || !helps.length}
-        data-collapsed={!isVisible}>
-        {isVisible ? (
+        onClick={() => setIsVisible(!isCollapsed)}
+        collapsed={!isCollapsed}
+        visible={!!helps.length}
+        data-collapsed={!isCollapsed}>
+        {isCollapsed ? (
           <>
             <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
             {helps.map(([type, label]) => {
@@ -56,7 +57,7 @@ export default function KeyboardHelpView({ help }: Props) {
             </Section>
           </>
         ) : (
-          <HelpIcon onClick={() => setIsVisible(!isVisible)} />
+          <HelpIcon onClick={() => setIsVisible(!isCollapsed)} />
         )}
       </Container>
     </>
@@ -135,7 +136,7 @@ const UseKeyboardIndicator = styled.div`
   visibility: hidden;
 `;
 
-const Container = styled.div<{ collapsed: boolean }>`
+const Container = styled.div<{ collapsed: boolean; visible: boolean }>`
   position: fixed;
   top: 10rem;
   right: 5.5rem;
@@ -146,6 +147,7 @@ const Container = styled.div<{ collapsed: boolean }>`
   gap: 1rem;
   width: ${(props) => (props.collapsed ? 'auto' : '34rem')};
   opacity: ${(props) => (props.collapsed ? 0.5 : 1)};
+  visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
   cursor: pointer;
 
   z-index: 10000;
