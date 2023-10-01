@@ -1054,6 +1054,34 @@
     "local": false
   },
   {
+    "id": "arctic-monkeys-505",
+    "title": "505",
+    "artist": "Arctic Monkeys",
+    "language": "English",
+    "bpm": 280.37,
+    "bar": 4,
+    "gap": 11473.486107643472,
+    "video": "MrmPDUvKyLs",
+    "year": "2007",
+    "lastUpdate": "2023-10-01T07:18:43.599Z",
+    "genre": "Indie",
+    "videoGap": 0,
+    "realBpm": 140,
+    "volume": 0.5,
+    "author": "Niikol",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=MrmPDUvKyLs",
+    "tracks": [
+      {
+        "name": "505 ",
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arcticmonkeys505",
+    "local": false
+  },
+  {
     "id": "aretha-franklin-the-blues-brothers-band-think",
     "title": "Think",
     "artist": "Aretha Franklin & The Blues Brothers Band",
@@ -3014,6 +3042,32 @@
     ],
     "tracksCount": 1,
     "search": "carlyraejepsencallmemaybe",
+    "local": false
+  },
+  {
+    "id": "carly-rae-jepsen-i-really-like-you",
+    "title": "I Really Like You",
+    "artist": "Carly Rae Jepsen",
+    "language": "English",
+    "bpm": 243.9,
+    "bar": 4,
+    "gap": 7930.990159901599,
+    "video": "qV5lzRHrGeg",
+    "year": "2015",
+    "lastUpdate": "2023-10-01T07:18:43.601Z",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.5,
+    "author": "jmfb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carlyraejepsenireallylikeyou",
     "local": false
   },
   {
@@ -7838,6 +7892,33 @@
     "local": false
   },
   {
+    "id": "justin-bieber-nicki-minaj-beauty-and-a-beat",
+    "title": "Beauty And A Beat",
+    "artist": "Justin Bieber & Nicki Minaj",
+    "language": "English",
+    "bpm": 256.04,
+    "bar": 4,
+    "gap": 37726.06186533354,
+    "video": "Ys7-6_t7OEQ",
+    "year": "2012",
+    "lastUpdate": "2023-10-01T07:18:43.603Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.5,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=Ys7-6_t7OEQ",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbiebernickiminajbeautyandabeat",
+    "local": false
+  },
+  {
     "id": "justin-timberlake-cant-stop-the-feeling",
     "title": "Can't stop the feeling!",
     "artist": "Justin Timberlake",
@@ -11279,6 +11360,36 @@
     ],
     "tracksCount": 1,
     "search": "morandiangels",
+    "local": false
+  },
+  {
+    "id": "motley-crue-kickstart-my-heart",
+    "title": "Kickstart my heart",
+    "artist": "Mötley Crüe",
+    "language": "English",
+    "bpm": 392.15,
+    "bar": 4,
+    "gap": 51509.48259594543,
+    "video": "CmXWkMlKFkI",
+    "year": "1989",
+    "lastUpdate": "2023-10-01T07:18:43.604Z",
+    "edition": "Rock Band Store 2008 Vol. 4",
+    "genre": "Metal",
+    "videoGap": 28,
+    "realBpm": 178,
+    "previewStart": 90,
+    "previewEnd": 120,
+    "volume": 0.8,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "motleycruekickstartmyheart",
     "local": false
   },
   {
@@ -16899,6 +17010,33 @@
     ],
     "tracksCount": 1,
     "search": "therollingstonessatisfactionicantgetno",
+    "local": false
+  },
+  {
+    "id": "the-script-breakeven",
+    "title": "Breakeven",
+    "artist": "The Script",
+    "language": "English",
+    "bpm": 376.06,
+    "bar": 4,
+    "gap": 24822.818699143754,
+    "video": "Invalid link",
+    "year": "2008",
+    "lastUpdate": "2023-10-01T07:18:43.606Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 94,
+    "volume": 0.5,
+    "author": "livewireau",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7245",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thescriptbreakeven",
     "local": false
   },
   {
