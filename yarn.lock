@@ -3062,44 +3062,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/experimental-ct-core@npm:1.37.0":
-  version: 1.37.0
-  resolution: "@playwright/experimental-ct-core@npm:1.37.0"
+"@playwright/experimental-ct-core@npm:1.38.1":
+  version: 1.38.1
+  resolution: "@playwright/experimental-ct-core@npm:1.38.1"
   dependencies:
-    "@playwright/test": 1.37.0
-    playwright-core: 1.37.0
+    playwright: 1.38.1
+    playwright-core: 1.38.1
     vite: ^4.3.9
   bin:
     playwright: cli.js
-  checksum: 89303e2ab2235a23ac1b73eb813fff317451f6af2b04d72f169f02f47c8ea00ec925290d5b01778547fda2b29c17edd0086c1e2e4956ee038491da6526a555e2
+  checksum: 525cba0b6feed809c878b7c23829b144cb82991f4ac8d9426e82666e1e708fddeee9a52497e6d47a3579bbb27671d643c4b6cdc54acc250e953f41d3fd321312
   languageName: node
   linkType: hard
 
-"@playwright/experimental-ct-react@npm:1.37.0":
-  version: 1.37.0
-  resolution: "@playwright/experimental-ct-react@npm:1.37.0"
+"@playwright/experimental-ct-react@npm:1.38.1":
+  version: 1.38.1
+  resolution: "@playwright/experimental-ct-react@npm:1.38.1"
   dependencies:
-    "@playwright/experimental-ct-core": 1.37.0
+    "@playwright/experimental-ct-core": 1.38.1
     "@vitejs/plugin-react": ^4.0.0
   bin:
     playwright: cli.js
-  checksum: b265e10ac11aaa3fe702729e1935a6635df7c5ca1497578356d05507fe2df98010cd20bda97bd651cb4eff698d570696b1e52a804027be3e2266dc8cd12cf0e0
+  checksum: fac45f545b945ad2ee9bc6fbe11f815a7dddcdaaffa012a34a906c419ffec2b3498543875dfc639fafd1c6f85346445a9c4b993d1241d4c55aa0ede14b595054
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.37.0":
-  version: 1.37.0
-  resolution: "@playwright/test@npm:1.37.0"
+"@playwright/test@npm:1.38.1":
+  version: 1.38.1
+  resolution: "@playwright/test@npm:1.38.1"
   dependencies:
-    "@types/node": "*"
-    fsevents: 2.3.2
-    playwright-core: 1.37.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
+    playwright: 1.38.1
   bin:
     playwright: cli.js
-  checksum: 59ccc519396c5cd66ba27bfc821b6a6483a9a426824eedb85cbd05b1cfb817f62bc1e1d893878582cf88af441a8a45aa83e678ab1d3145b54838c7c2e917b8a2
+  checksum: c5ec0b23261fe1ef163b6234f69263bc10e7e5a3fb676c7773ffc70b87459a7ab225f57c03b9de649475771638a04c2e00d9b2739304a4dcf5d3edf20a7a4a82
   languageName: node
   linkType: hard
 
@@ -11893,8 +11888,8 @@ __metadata:
     "@mdx-js/react": ^2.3.0
     "@mui/icons-material": ^5.11.16
     "@mui/material": ^5.13.4
-    "@playwright/experimental-ct-react": 1.37.0
-    "@playwright/test": 1.37.0
+    "@playwright/experimental-ct-react": 1.38.1
+    "@playwright/test": 1.38.1
     "@remotion/cli": ^3.3.97
     "@remotion/gif": ^3.3.99
     "@remotion/google-fonts": ^3.3.99
@@ -11957,7 +11952,7 @@ __metadata:
     node-fetch: ^3.3.2
     peer: ^0.6.1
     peerjs: ^2.0.0-beta.3
-    playwright-core: ^1.37.0
+    playwright-core: ^1.38.1
     posthog-js: ^1.76.0
     prettier: ^2.8.8
     prettier-plugin-organize-imports: ^3.2.2
@@ -12497,12 +12492,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.37.0, playwright-core@npm:^1.37.0":
-  version: 1.37.0
-  resolution: "playwright-core@npm:1.37.0"
+"playwright-core@npm:1.38.1, playwright-core@npm:^1.38.1":
+  version: 1.38.1
+  resolution: "playwright-core@npm:1.38.1"
   bin:
     playwright-core: cli.js
-  checksum: be91857b1bb56890b3929ed8cd529f5f5abe4b748f709abc8dbe5b0ee4c0e158247c3958fbccec6a52394dafe4619bc0e69c93d1b129a71b31ab3697771e4c5a
+  checksum: 66e83fe040f309b13ad94ba39dea40ac207bfcbbc22de13141af88dbdedd64e1c4e3ce1d0cb070d4efd8050d7e579953ec3681dd8a0acf2c1cc738d9c50e545e
+  languageName: node
+  linkType: hard
+
+"playwright@npm:1.38.1":
+  version: 1.38.1
+  resolution: "playwright@npm:1.38.1"
+  dependencies:
+    fsevents: 2.3.2
+    playwright-core: 1.38.1
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 4e01d4ee52d9ccf75a80d8492829106802590721d56bff7c5957ff1f21eb3c328ee5bc3c1784a59c4b515df1b98d08ef92e4a35a807f454cd00dc481d30fadc2
   languageName: node
   linkType: hard
 
