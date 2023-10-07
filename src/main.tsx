@@ -32,7 +32,6 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
     debug: true,
     api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
-    test: isDev() || window.location.port !== '',
     loaded: (ph) => {
       let storedUser = localStorage.getItem('posthog-user-id');
       if (!storedUser) {

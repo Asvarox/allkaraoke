@@ -43,7 +43,7 @@ function Microphone({
       if (!isDev()) {
         await document.body.requestFullscreen();
         window.screen.orientation.unlock();
-        await window.screen.orientation.lock('portrait');
+        await window.screen.orientation.lock?.('portrait');
       }
     } catch (e) {
       console.warn(e);

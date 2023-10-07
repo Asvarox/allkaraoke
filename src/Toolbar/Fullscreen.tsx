@@ -30,7 +30,7 @@ function FullscreenButton() {
               await document.body.requestFullscreen();
               if (mobilePhoneMode) {
                 window.screen.orientation.unlock();
-                await window.screen.orientation.lock('landscape');
+                await window.screen.orientation.lock?.('landscape');
               }
             } else {
               await document.exitFullscreen();

@@ -35,7 +35,7 @@ function Toolbar() {
         {/*                setMobilePhoneMode(!mobilePhoneMode);*/}
         {/*                await document.body.requestFullscreen();*/}
         {/*                window.screen.orientation.unlock();*/}
-        {/*                await window.screen.orientation.lock('landscape');*/}
+        {/*                await window.screen.orientation.lock?.('landscape');*/}
         {/*            } catch (e) {*/}
         {/*                console.info(e);*/}
         {/*            }*/}
