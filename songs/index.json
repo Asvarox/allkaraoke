@@ -6271,6 +6271,35 @@
     "local": false
   },
   {
+    "id": "ghost-mary-on-a-cross",
+    "title": "Mary On A Cross",
+    "artist": "Ghost",
+    "language": "English",
+    "bpm": 521,
+    "bar": 4,
+    "gap": 17111.32245681382,
+    "video": "aBt2Djy37tQ",
+    "year": "2019",
+    "lastUpdate": "2023-10-07T04:51:17.933Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 521,
+    "previewStart": 75,
+    "previewEnd": 96,
+    "volume": 0.75,
+    "author": "lukmuk",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=28064",
+    "tracks": [
+      {
+        "start": 35
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ghostmaryonacross",
+    "local": false
+  },
+  {
     "id": "gloria-gaynor-i-will-survive",
     "title": "I Will Survive",
     "artist": "Gloria Gaynor",
@@ -10353,6 +10382,58 @@
     ],
     "tracksCount": 1,
     "search": "manaclavadoenunbar",
+    "local": false
+  },
+  {
+    "id": "maneskin-beggin",
+    "title": "Beggin’",
+    "artist": "Måneskin",
+    "language": "English",
+    "bpm": 268,
+    "bar": 4,
+    "gap": 12.238805970149258,
+    "video": "W2MpGCL8-9o",
+    "year": "2017",
+    "lastUpdate": "2023-10-07T04:51:17.937Z",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 0.7,
+    "author": "DoubleDee73",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maneskinbeggin",
+    "local": false
+  },
+  {
+    "id": "maneskin-i-wanna-be-your-slave",
+    "title": "I Wanna Be Your Slave",
+    "artist": "Måneskin",
+    "language": "English",
+    "bpm": 265.84,
+    "bar": 4,
+    "gap": 314.3514896178151,
+    "video": "yOb9Xaug35M",
+    "year": "2021",
+    "lastUpdate": "2023-10-07T04:51:17.940Z",
+    "videoGap": 0,
+    "realBpm": 133,
+    "volume": 0.7,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maneskiniwannabeyourslave",
     "local": false
   },
   {
@@ -17019,14 +17100,14 @@
     "language": "English",
     "bpm": 376.06,
     "bar": 4,
-    "gap": 24822.818699143754,
-    "video": "Invalid link",
+    "gap": 24672.818699143754,
+    "video": "MzCLLHscMOw",
     "year": "2008",
-    "lastUpdate": "2023-10-01T07:18:43.606Z",
+    "lastUpdate": "2023-10-07T04:51:17.942Z",
     "genre": "None",
     "videoGap": 0,
     "realBpm": 94,
-    "volume": 0.5,
+    "volume": 0.7,
     "author": "livewireau",
     "authorUrl": "",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7245",
