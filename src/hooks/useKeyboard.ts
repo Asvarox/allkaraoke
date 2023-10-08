@@ -24,25 +24,16 @@ export interface Params {
   // alphanumeric?: () => void,
 }
 
-const paramsToKeys: { [param in keyof Params]: string[] } = {
-  up: ['up'],
-  down: ['down'],
-  left: ['left'],
-  right: ['right'],
-  accept: ['Enter'],
-  back: ['Backspace', 'Escape'],
-  random: ['Shift+R'],
+const cb = (callback?: Callback) => (e: KeyboardEvent) => {
+  if (callback) {
+    e.preventDefault();
+    e.stopPropagation();
+    callback(e);
+  }
 };
 
-const keyToParam = (keyCode: string): keyof Params | null => {
-  return (Object.entries(paramsToKeys).find(([key, val]) => val.includes(keyCode))?.[0] as keyof Params) ?? null;
-};
-
+// useHotkeys doesn't seem to be updatable to 4.0 due to https://github.com/JohannesKlauss/react-hotkeys-hook/issues/1074
 export default function useKeyboard(params: Params, enabled = true, deps?: any[]) {
-  let handledKeys: string = Object.keys(params)
-    .map((param) => paramsToKeys[param as keyof Params])
-    .join(',');
-
   useEventEffect(events.remoteKeyboardPressed, (param) => {
     if (enabled) {
       if (param in params) {
@@ -51,20 +42,11 @@ export default function useKeyboard(params: Params, enabled = true, deps?: any[]
     }
   });
 
-  useHotkeys(
-    handledKeys,
-    (event, hkEvent) => {
-      const param = keyToParam(hkEvent.key);
-
-      if (!param) return;
-
-      if (param in params) {
-        event.preventDefault();
-        event.stopPropagation();
-        params[param]?.(event);
-      }
-    },
-    { enabled },
-    deps,
-  );
+  useHotkeys('up', cb(params.up), { enabled: enabled && !!params?.up }, deps);
+  useHotkeys('down', cb(params.down), { enabled: enabled && !!params?.down }, deps);
+  useHotkeys('left', cb(params.left), { enabled: enabled && !!params?.left }, deps);
+  useHotkeys('right', cb(params.right), { enabled: enabled && !!params?.right }, deps);
+  useHotkeys('Enter', cb(params.accept), { enabled: enabled && !!params?.accept }, deps);
+  useHotkeys('Escape,Backspace', cb(params.back), { enabled: enabled && !!params?.back }, deps);
+  useHotkeys('Shift+R', cb(params.random), { enabled: enabled && !!params?.random }, deps);
 }

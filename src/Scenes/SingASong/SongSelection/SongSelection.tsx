@@ -18,7 +18,6 @@ import useBlockScroll from 'hooks/useBlockScroll';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
-import { KeyHandler } from 'hotkeys-js';
 import { SingSetup } from 'interfaces';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -61,7 +60,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     isLoading,
   } = useSongSelection(preselectedSong, songsPerRow);
 
-  const onSearchSong: KeyHandler = (e) => {
+  const onSearchSong = (e: KeyboardEvent) => {
     e.stopPropagation();
     e.preventDefault();
 

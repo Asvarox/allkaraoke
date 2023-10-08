@@ -1,8 +1,8 @@
 // See all configuration options: https://remotion.dev/docs/config
+import { Config } from '@remotion/cli/config';
 import path from 'node:path';
-import { Config } from 'remotion';
 
-Config.setImageFormat('jpeg');
+Config.setVideoImageFormat('jpeg');
 Config.setOverwriteOutput(true);
 
 Config.overrideWebpackConfig((config) => ({
