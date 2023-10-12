@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Flag } from 'Elements/Flag';
 import RemoteMicClient from 'RemoteMic/Network/Client';
 import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import { NetworkSongListMessage } from 'RemoteMic/Network/messages';
@@ -8,7 +9,6 @@ import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import { uniqBy } from 'lodash-es';
 import { useEffect, useMemo, useState } from 'react';
-import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 
 interface Props {
   roomId: string;
@@ -60,12 +60,10 @@ function RemoteSongList({
   return (
     <Container>
       {songList.map((song) => {
-        const language = Array.isArray(song.language) ? song.language[0] : song.language!;
-
         return (
           <SongItemContainer key={`${song.artist}-${song.title}`} data-test={song.id}>
             <Language>
-              <img src={`https://flagcdn.com/${languageNameToIsoCode(language)}.svg`} alt={language} />
+              <Flag language={song.language} />
             </Language>
             <ArtistTitle>
               <Title>{song.title}</Title>

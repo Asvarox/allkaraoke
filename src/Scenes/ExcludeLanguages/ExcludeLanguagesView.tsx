@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
+import { Flag } from 'Elements/Flag';
 import { MenuButton } from 'Elements/Menu';
 import MenuWithLogo from 'Elements/MenuWithLogo';
 import { typography } from 'Elements/cssMixins';
@@ -105,7 +106,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 <LanguageName>{name}</LanguageName> ({count} songs)
               </span>
               <LanguageFlagBackground excluded={excluded}>
-                <img src={`https://flagcdn.com/${languageNameToIsoCode(name)}.svg`} alt={name} />
+                <Flag language={name} />
               </LanguageFlagBackground>
             </LanguageEntry>
           );

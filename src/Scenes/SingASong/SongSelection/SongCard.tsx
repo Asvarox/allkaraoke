@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import { Flag } from 'Elements/Flag';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { useSongStats } from 'Songs/stats/hooks';
@@ -69,6 +70,7 @@ export const FinalSongCard = ({
               <SongListEntryStats song={song} />
             </>
           )}
+          {!expanded && song.language !== 'English' && <Language language={song.language} />}
         </ExpandedData>
       </SongInfo>
       {children}
@@ -76,6 +78,18 @@ export const FinalSongCard = ({
     </SongCardContainer>
   );
 };
+
+export const Language = styled(Flag)`
+  width: 3.15rem;
+  height: 2.75rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  position: absolute;
+  z-index: -1;
+  left: 0rem;
+  bottom: 0rem;
+  opacity: 0.95;
+`;
 
 export const ExpandedData = styled.div<{ expanded: boolean }>`
   display: flex;
@@ -112,10 +126,10 @@ export const SongCardContainer = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  padding: 1.3rem;
+  padding: 0.5rem;
 
   border: 0.1rem black solid;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 `;
 
 export const SongCardBackground = styled.div<{ focused: boolean; expanded: boolean }>`
