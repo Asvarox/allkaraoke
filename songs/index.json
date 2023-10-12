@@ -578,6 +578,33 @@
     "local": false
   },
   {
+    "id": "ahmad-band-aku-cinta-kau-dan-dia",
+    "title": "Aku Cinta Kau Dan Dia",
+    "artist": "Ahmad Band",
+    "language": "Indonesian",
+    "bpm": 249.6,
+    "bar": 4,
+    "gap": 11400,
+    "video": "MZv0VtrCLGk",
+    "year": "1998",
+    "lastUpdate": "2023-10-12T18:16:49.077Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.7,
+    "author": "mssitohang",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ahmadbandakucintakaudandia",
+    "local": false
+  },
+  {
     "id": "akademia-pana-kleksa-kaczka-dziwaczka",
     "title": "Kaczka dziwaczka",
     "artist": "Akademia Pana Kleksa",
@@ -2228,6 +2255,34 @@
     "local": false
   },
   {
+    "id": "bohse-onkelz-wir-ham-noch-lange-nicht-genug",
+    "title": "Wir ham’ noch lange nicht genug",
+    "artist": "Böhse Onkelz",
+    "language": "German",
+    "bpm": 296,
+    "bar": 4,
+    "gap": 46666.48648648649,
+    "video": "L_3YJOZmmfk",
+    "year": "1991",
+    "lastUpdate": "2023-10-12T18:16:49.079Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 148,
+    "volume": 0.6,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1450",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bohseonkelzwirhamnochlangenichtgenug",
+    "local": false
+  },
+  {
     "id": "bon-jovi-always",
     "title": "Always",
     "artist": "Bon Jovi",
@@ -2910,6 +2965,33 @@
     ],
     "tracksCount": 1,
     "search": "budkasufleratakietango",
+    "local": false
+  },
+  {
+    "id": "bunga-citra-lestari-wanita-terbahagia",
+    "title": "Wanita Terbahagia",
+    "artist": "Bunga Citra Lestari",
+    "language": "Indonesian",
+    "bpm": 552.08,
+    "bar": 4,
+    "gap": 11124.710911462107,
+    "video": "ritnPj19jFU",
+    "year": "2015",
+    "lastUpdate": "2023-10-12T18:16:49.080Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 69,
+    "volume": 0.6,
+    "author": "wan99zhariff",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bungacitralestariwanitaterbahagia",
     "local": false
   },
   {
@@ -14067,6 +14149,34 @@
     ],
     "tracksCount": 1,
     "search": "radioheadcreep",
+    "local": false
+  },
+  {
+    "id": "radiohead-no-surprises",
+    "title": "No Surprises",
+    "artist": "Radiohead",
+    "language": "English",
+    "bpm": 306,
+    "bar": 4,
+    "gap": 24499.607843137255,
+    "video": "u5CVsCnxyXg",
+    "year": "1997",
+    "lastUpdate": "2023-10-12T18:16:49.081Z",
+    "edition": "SingStar PS3",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 76,
+    "volume": 0.65,
+    "author": "NikNak",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "radioheadnosurprises",
     "local": false
   },
   {
