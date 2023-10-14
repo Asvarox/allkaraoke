@@ -45,24 +45,28 @@ class CameraManager extends Listener<[boolean]> {
 
   public startRecord = async () => {
     if (!this.permissionGranted) return;
-    this.stream = await navigator.mediaDevices.getUserMedia({ video: { frameRate: 2 } });
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({ video: { frameRate: 2 } });
 
-    const settings = this.stream.getVideoTracks()[0].getSettings();
+      const settings = this.stream.getVideoTracks()[0].getSettings();
 
-    this.video.width = settings.width ?? this.video.width;
-    this.video.height = settings.height ?? this.video.height;
-    this.canvas.width = this.video.width;
-    this.canvas.height = this.video.height;
-    this.video.srcObject = this.stream;
-    await this.video.play();
+      this.video.width = settings.width ?? this.video.width;
+      this.video.height = settings.height ?? this.video.height;
+      this.canvas.width = this.video.width;
+      this.canvas.height = this.video.height;
+      this.video.srcObject = this.stream;
+      await this.video.play();
 
-    this.recorder = new MediaRecorder(this.stream, { mimeType: 'video/webm' });
+      this.recorder = new MediaRecorder(this.stream, { mimeType: 'video/webm' });
 
-    this.recorder.ondataavailable = (evt) => {
-      this.videoData.push(evt.data);
-    };
+      this.recorder.ondataavailable = (evt) => {
+        this.videoData.push(evt.data);
+      };
 
-    this.recorder.start();
+      this.recorder.start();
+    } catch (e) {
+      console.warn(e);
+    }
   };
 
   public getVideo = () => {

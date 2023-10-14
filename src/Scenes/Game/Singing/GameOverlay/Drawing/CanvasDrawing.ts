@@ -187,11 +187,13 @@ export default class CanvasDrawing {
   };
 
   private onSectionEnd = (playerNumber: number) => {
-    const drawingData = this.getDrawingData(playerNumber, -1);
-    if (!isNotesSection(drawingData.currentSection)) return;
+    if (GameState.isPlaying()) {
+      const drawingData = this.getDrawingData(playerNumber, -1);
+      if (!isNotesSection(drawingData.currentSection)) return;
 
-    this.fadeoutNotes(drawingData.currentSection, drawingData);
-    this.explodeNotes(drawingData.currentSection, drawingData);
+      this.fadeoutNotes(drawingData.currentSection, drawingData);
+      this.explodeNotes(drawingData.currentSection, drawingData);
+    }
   };
 
   private fadeoutNotes = (section: NotesSection, drawingData: DrawingData) => {
@@ -259,7 +261,6 @@ export default class CanvasDrawing {
     const playerCount = players.length;
 
     const playerState = GameState.getPlayer(playerNumber)!;
-    const player = PlayersManager.getPlayer(playerNumber)!;
     const currentSectionIndex = playerState.getCurrentSectionIndex() + sectionShift ?? 0;
     const song = GameState.getSong()!;
     const track = playerState.getTrackIndex();
@@ -267,7 +268,7 @@ export default class CanvasDrawing {
     const playerNotes = playerState.getPlayerNotes();
 
     return {
-      playerNumber: player.number,
+      playerNumber,
       playerIndex,
       playerCount,
       song,
