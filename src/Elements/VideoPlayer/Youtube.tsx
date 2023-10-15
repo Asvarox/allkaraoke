@@ -76,8 +76,14 @@ export default forwardRef(function YoutubeVideoPlayer(
     setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume),
     getCurrentTime: () => player.current?.getInternalPlayer()!.getCurrentTime()!,
     loadVideoById: (opts) => player.current?.getInternalPlayer()!.loadVideoById(opts),
-    playVideo: () => player.current?.getInternalPlayer()!.playVideo(),
-    pauseVideo: () => player.current?.getInternalPlayer()!.pauseVideo(),
+    playVideo: () => {
+      // console.log('play');
+      player.current?.getInternalPlayer()!.playVideo();
+    },
+    pauseVideo: () => {
+      // console.log('paused');
+      return player.current?.getInternalPlayer()!.pauseVideo();
+    },
     getDuration: () => player.current?.getInternalPlayer()!.getDuration()!,
   }));
 

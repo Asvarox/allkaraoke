@@ -24,7 +24,7 @@ export default class ExplodingNoteParticle implements Particle {
     const lightColor = tinycolor(color).lighten(15).toRgbString();
     const darkColor = tinycolor(color).darken(15).toRgbString();
 
-    const density = width / 6;
+    const density = width / 8;
     for (let i = 0; i < density; i++) {
       const rand = Math.random();
       let finalColor = color;

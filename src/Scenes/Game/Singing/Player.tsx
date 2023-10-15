@@ -153,7 +153,11 @@ function Player(
   useEffect(() => {
     if (!isPauseMenuAvailable) return;
 
-    const wasJustPaused = previousStatus !== VideoState.PAUSED && currentStatus === VideoState.PAUSED;
+    const wasJustPaused =
+      previousStatus !== VideoState.PAUSED &&
+      previousStatus !== VideoState.BUFFERING &&
+      currentStatus === VideoState.PAUSED;
+
     if (currentStatus === VideoState.PLAYING && pauseMenu) {
       player.current?.pauseVideo();
     } else if (wasJustPaused && !pauseMenu) {
@@ -181,7 +185,11 @@ function Player(
     <Container {...restProps}>
       {pauseMenu && <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} />}
       {currentStatus !== VideoState.UNSTARTED && (
-        <Overlay>
+        <Overlay
+          style={{
+            width: `${width}px`,
+            height: `${height}px`,
+          }}>
           <GameOverlay
             isPauseMenuVisible={pauseMenu}
             effectsEnabled={effectsEnabled}

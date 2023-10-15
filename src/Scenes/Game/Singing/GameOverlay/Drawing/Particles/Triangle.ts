@@ -20,8 +20,8 @@ export default class TriangleParticle implements Particle {
 
   constructor(private x: number, private y: number, private color: string, private delay: number) {
     this.startingTtl = this.ttl = spreadValue(baseTtl, ttlSpread);
-    this.velocityX = spreadValue(0.5, velocityModifier) * randomSign();
-    this.velocityY = spreadValue(0.5, velocityModifier) * randomSign();
+    this.velocityX = spreadValue(0.5, velocityModifier) * randomSign(0.2);
+    this.velocityY = spreadValue(0.4, velocityModifier) * randomSign();
     this.width = 25;
     this.initialAngle = 180 - Math.random() * 360;
     this.heightModifier = 0.5 + Math.random() / 2;
@@ -40,6 +40,8 @@ export default class TriangleParticle implements Particle {
 
     triangle(ctx, x, y, width, height, this.initialAngle + elapsedTicks, this.color, 0.8 * percentage);
 
+    this.velocityX = this.velocityX - 0.009;
+    this.velocityY = this.velocityY * 1.0075;
     this.ttl = this.ttl - delta;
     this.finished = this.ttl <= 0;
   };
