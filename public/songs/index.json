@@ -100,6 +100,144 @@
     "local": false
   },
   {
+    "id": "3oh3-dont-trust-me",
+    "title": "Don’t Trust Me",
+    "artist": "3OH!3",
+    "language": "English",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 14629.23076923077,
+    "video": "mdB3Oyd5HtU",
+    "year": "2009",
+    "lastUpdate": "2023-10-15T11:26:31.267Z",
+    "edition": "SingStar Chart Hits",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.77,
+    "author": "jalkazar",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "3oh3donttrustme",
+    "local": false
+  },
+  {
+    "id": "3oh3-feat-katy-perry-starstrukk",
+    "title": "Starstrukk",
+    "artist": "3OH!3 feat. Katy Perry",
+    "language": "English",
+    "bpm": 280,
+    "bar": 4,
+    "gap": 23222.14285714286,
+    "video": "dvf--10EYXw",
+    "year": "2009",
+    "lastUpdate": "2023-10-15T11:26:31.270Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 140,
+    "volume": 0.7,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "3oh3featkatyperrystarstrukk",
+    "local": false
+  },
+  {
+    "id": "3oh3-feat-keha-my-first-kiss",
+    "title": "My First Kiss",
+    "artist": "3OH!3 feat. Ke$ha",
+    "language": "English",
+    "bpm": 276,
+    "bar": 4,
+    "gap": 2431.7391304347825,
+    "video": "AYC2FUutdKA",
+    "year": "2010",
+    "lastUpdate": "2023-10-15T11:26:31.271Z",
+    "edition": "None",
+    "genre": "Electrohop",
+    "videoGap": 0,
+    "realBpm": 138,
+    "volume": 0.75,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "3oh3featkehamyfirstkiss",
+    "local": false
+  },
+  {
+    "id": "4-non-blondes-whats-up",
+    "title": "What’s Up?",
+    "artist": "4 Non Blondes",
+    "language": "English",
+    "bpm": 264,
+    "bar": 4,
+    "gap": 31177.272727272728,
+    "video": "6NXnxTNIWkc",
+    "year": "1992",
+    "lastUpdate": "2023-10-15T11:26:31.273Z",
+    "edition": "SingStar Amped [AU]",
+    "genre": "Alternative",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 0.8,
+    "author": "a224",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "4nonblondeswhatsup",
+    "local": false
+  },
+  {
+    "id": "5-seconds-of-summer-amnesia",
+    "title": "Amnesia",
+    "artist": "5 Seconds of Summer",
+    "language": "English",
+    "bpm": 400.4,
+    "bar": 4,
+    "gap": 23367.5,
+    "video": "DCCJCILiX3o",
+    "year": "2014",
+    "lastUpdate": "2023-10-15T11:26:31.275Z",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.8,
+    "author": "Sing-Girl",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "5secondsofsummeramnesia",
+    "local": false
+  },
+  {
     "id": "a-ha-take-on-me",
     "title": "Take on me",
     "artist": "a-ha",
@@ -1374,6 +1512,33 @@
     "local": false
   },
   {
+    "id": "avenged-sevenfold-welcome-to-the-family",
+    "title": "Welcome To The Family",
+    "artist": "Avenged Sevenfold",
+    "language": "English",
+    "bpm": 376,
+    "bar": 4,
+    "gap": 5552.659574468085,
+    "video": "fAkXtZakvsY",
+    "year": "2010",
+    "lastUpdate": "2023-10-15T11:26:31.276Z",
+    "genre": "Metal",
+    "videoGap": 0,
+    "realBpm": 188,
+    "volume": 0.85,
+    "author": "borax",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avengedsevenfoldwelcometothefamily",
+    "local": false
+  },
+  {
     "id": "avicii-wake-me-up",
     "title": "Wake Me Up",
     "artist": "Avicii",
@@ -1446,6 +1611,33 @@
     ],
     "tracksCount": 1,
     "search": "avrillavignegirlfriend",
+    "local": false
+  },
+  {
+    "id": "avril-lavigne-sk8er-boi",
+    "title": "Sk8er Boi",
+    "artist": "Avril Lavigne",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 20940,
+    "video": "TIy3n2b7V9k",
+    "year": "2002",
+    "lastUpdate": "2023-10-15T11:26:31.277Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 150,
+    "volume": 0.75,
+    "author": "REL",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avrillavignesk8erboi",
     "local": false
   },
   {
@@ -2171,6 +2363,34 @@
     ],
     "tracksCount": 1,
     "search": "blendersciagnik",
+    "local": false
+  },
+  {
+    "id": "blink-182-i-miss-you",
+    "title": "I Miss You",
+    "artist": "blink-182",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 30605.29411764706,
+    "video": "s1tAYmMjLdY",
+    "year": "2003",
+    "lastUpdate": "2023-10-15T11:26:31.278Z",
+    "edition": "SingStar Amped [AU|DE|US]",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.7,
+    "author": "SilenaM",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blink182imissyou",
     "local": false
   },
   {
@@ -3506,6 +3726,62 @@
     "local": false
   },
   {
+    "id": "chumbawamba-tubthumping",
+    "title": "Tubthumping",
+    "artist": "Chumbawamba",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 7245.294117647059,
+    "video": "2H5uWRjFsGc",
+    "year": "1997",
+    "lastUpdate": "2023-10-15T11:26:31.279Z",
+    "edition": "SingStar ’90s [US], SingStar Summer Party [DE]",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 103,
+    "volume": 0.75,
+    "author": "Leki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chumbawambatubthumping",
+    "local": false
+  },
+  {
+    "id": "colbie-caillat-bubbly",
+    "title": "Bubbly",
+    "artist": "Colbie Caillat",
+    "language": "English",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 10723.90625,
+    "video": "AWGqoCNbsvM",
+    "year": "2007",
+    "lastUpdate": "2023-10-15T11:26:31.279Z",
+    "edition": "SingStar Hottest Hits",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.75,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "colbiecaillatbubbly",
+    "local": false
+  },
+  {
     "id": "coldplay-clocks",
     "title": "Clocks",
     "artist": "Coldplay",
@@ -3656,6 +3932,34 @@
     "local": false
   },
   {
+    "id": "creed-higher",
+    "title": "Higher",
+    "artist": "Creed",
+    "language": "English",
+    "bpm": 311.9,
+    "bar": 4,
+    "gap": 12480.060916960565,
+    "video": "J16lInLZRms",
+    "year": "1999",
+    "lastUpdate": "2023-10-15T11:26:31.280Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 156,
+    "volume": 0.9,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "creedhigher",
+    "local": false
+  },
+  {
     "id": "culcha-candela-hamma",
     "title": "Hamma!",
     "artist": "Culcha Candela",
@@ -3707,6 +4011,34 @@
     ],
     "tracksCount": 1,
     "search": "cyndilaupergirlsjustwannahavefun",
+    "local": false
+  },
+  {
+    "id": "cyndi-lauper-time-after-time",
+    "title": "Time After Time",
+    "artist": "Cyndi Lauper",
+    "language": "English",
+    "bpm": 261,
+    "bar": 4,
+    "gap": 56552.988505747126,
+    "video": "VdQY7BusJNU",
+    "year": "1983",
+    "lastUpdate": "2023-10-15T11:26:31.281Z",
+    "edition": "SingStar ’80s [US], SingStar Rock Ballads [UK|NL]",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.65,
+    "author": "d",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cyndilaupertimeaftertime",
     "local": false
   },
   {
@@ -5239,6 +5571,32 @@
     "local": false
   },
   {
+    "id": "elena-siegman-115",
+    "title": "115",
+    "artist": "Elena Siegman",
+    "language": "English",
+    "bpm": 200,
+    "bar": 4,
+    "gap": 30085,
+    "video": "JHnqijwQ55c",
+    "year": "2010",
+    "lastUpdate": "2023-10-15T11:26:31.282Z",
+    "videoGap": 0,
+    "realBpm": 200,
+    "volume": 0.8,
+    "author": "mrpeanut188",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elenasiegman115",
+    "local": false
+  },
+  {
     "id": "elton-john-im-still-standing",
     "title": "I'm Still Standing",
     "artist": "Elton John",
@@ -5700,6 +6058,85 @@
     ],
     "tracksCount": 1,
     "search": "falcorockmeamadeus",
+    "local": false
+  },
+  {
+    "id": "falling-in-reverse-popular-monster",
+    "title": "Popular Monster",
+    "artist": "Falling In Reverse",
+    "language": "English",
+    "bpm": 328.7,
+    "bar": 4,
+    "gap": 12266.045025859446,
+    "video": "jakpo7tj7Qw",
+    "year": "2019",
+    "lastUpdate": "2023-10-15T11:26:31.282Z",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.83,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fallinginreversepopularmonster",
+    "local": false
+  },
+  {
+    "id": "falling-in-reverse-the-drug-in-me-is-you",
+    "title": "The Drug In Me Is You",
+    "artist": "Falling In Reverse",
+    "language": "English",
+    "bpm": 290,
+    "bar": 4,
+    "gap": 6987.241379310345,
+    "video": "rgWr2nln83s",
+    "year": "2011",
+    "lastUpdate": "2023-10-15T11:26:31.283Z",
+    "genre": "Pop Punk",
+    "videoGap": 0,
+    "realBpm": 145,
+    "volume": 0.8,
+    "author": "Reonis",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fallinginreversethedruginmeisyou",
+    "local": false
+  },
+  {
+    "id": "falling-in-reverse-zombified",
+    "title": "Zombified",
+    "artist": "Falling In Reverse",
+    "language": "English",
+    "bpm": 365.63,
+    "bar": 4,
+    "gap": 39345.39808002626,
+    "video": "YDDz1Er2IXA",
+    "year": "2022",
+    "lastUpdate": "2023-10-15T11:26:31.284Z",
+    "videoGap": 0,
+    "realBpm": 91,
+    "volume": 0.85,
+    "author": "Whitebeing",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=166588",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=25726",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fallinginreversezombified",
     "local": false
   },
   {
@@ -6456,6 +6893,61 @@
     ],
     "tracksCount": 1,
     "search": "googoodollsiris",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-girls-and-boys",
+    "title": "Girls And Boys",
+    "artist": "Good Charlotte",
+    "language": "English",
+    "bpm": 270.4,
+    "bar": 4,
+    "gap": 6621.4792899408285,
+    "video": "3FTS2tdmyYM",
+    "year": "2002",
+    "lastUpdate": "2023-10-15T11:26:31.284Z",
+    "edition": "SingStar [ES|UK], SingStar Rocks! [UK]",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.8,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "goodcharlottegirlsandboys",
+    "local": false
+  },
+  {
+    "id": "good-charlotte-lifestyles-of-the-rich-and-famous",
+    "title": "Lifestyles Of The Rich And Famous",
+    "artist": "Good Charlotte",
+    "language": "English",
+    "bpm": 212.4,
+    "bar": 4,
+    "gap": 11931.299435028248,
+    "video": "y-jC3H_8Dk4",
+    "year": "2002",
+    "lastUpdate": "2023-10-15T11:26:31.285Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 106,
+    "volume": 0.8,
+    "author": "masterxy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "goodcharlottelifestylesoftherichandfamous",
     "local": false
   },
   {
@@ -8003,6 +8495,33 @@
     "local": false
   },
   {
+    "id": "justin-bieber-ludacris-baby",
+    "title": "Baby",
+    "artist": "Justin Bieber & Ludacris",
+    "language": "English",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 2084.230769230769,
+    "video": "kffacxfA7G4",
+    "year": "2010",
+    "lastUpdate": "2023-10-15T11:26:31.285Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 65,
+    "volume": 0.7,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pt/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pt/canciones?artista=Justin%20Bieber%20&%20Ludacris&cancion=Baby",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberludacrisbaby",
+    "local": false
+  },
+  {
     "id": "justin-bieber-nicki-minaj-beauty-and-a-beat",
     "title": "Beauty And A Beat",
     "artist": "Justin Bieber & Nicki Minaj",
@@ -8265,6 +8784,34 @@
     "local": false
   },
   {
+    "id": "katy-perry-feat-snoop-dogg-california-gurls",
+    "title": "California Gurls",
+    "artist": "Katy Perry feat. Snoop Dogg",
+    "language": "English",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 6580,
+    "video": "F57P9C4SAW4",
+    "year": "2010",
+    "lastUpdate": "2023-10-15T11:26:31.289Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.65,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katyperryfeatsnoopdoggcaliforniagurls",
+    "local": false
+  },
+  {
     "id": "katy-perry-firework",
     "title": "Firework",
     "artist": "Katy Perry",
@@ -8419,6 +8966,34 @@
     "local": false
   },
   {
+    "id": "keha-feat-3oh3-blah-blah-blah",
+    "title": "Blah Blah Blah",
+    "artist": "Ke$ha feat. 3OH!3",
+    "language": "English",
+    "bpm": 240.02,
+    "bar": 4,
+    "gap": 30460.083326389467,
+    "video": "3taEuL4EHAg",
+    "year": "2010",
+    "lastUpdate": "2023-10-15T11:26:31.291Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.65,
+    "author": "klops_007",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kehafeat3oh3blahblahblah",
+    "local": false
+  },
+  {
     "id": "keha-tik-tok",
     "title": "TiK ToK",
     "artist": "Ke$ha",
@@ -8449,6 +9024,34 @@
     "local": false
   },
   {
+    "id": "kellie-pickler-red-high-heels",
+    "title": "Red High Heels",
+    "artist": "Kellie Pickler",
+    "language": "English",
+    "bpm": 231.4,
+    "bar": 4,
+    "gap": 7637.657735522904,
+    "video": "-5Ri8GY57SI",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.294Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 116,
+    "volume": 0.85,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kelliepicklerredhighheels",
+    "local": false
+  },
+  {
     "id": "kid-rock-all-summer-long",
     "title": "All Summer Long",
     "artist": "Kid Rock",
@@ -8476,6 +9079,34 @@
     ],
     "tracksCount": 1,
     "search": "kidrockallsummerlong",
+    "local": false
+  },
+  {
+    "id": "kim-wilde-kids-in-america",
+    "title": "Kids In America",
+    "artist": "Kim Wilde",
+    "language": "English",
+    "bpm": 317.1,
+    "bar": 4,
+    "gap": 11386.622516556292,
+    "video": "8BYKpQ_6GbM",
+    "year": "1981",
+    "lastUpdate": "2023-10-15T11:26:31.298Z",
+    "edition": "SingStar ’80s [US], SingStar Anthems",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kimwildekidsinamerica",
     "local": false
   },
   {
@@ -8613,6 +9244,33 @@
     "local": false
   },
   {
+    "id": "korn-freak-on-a-leash",
+    "title": "Freak On A Leash",
+    "artist": "KoRn",
+    "language": "English",
+    "bpm": 207.22,
+    "bar": 4,
+    "gap": 21716.584306534118,
+    "video": "jRGrNDV2mKc",
+    "year": "1998",
+    "lastUpdate": "2023-10-15T11:26:31.299Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 103,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kornfreakonaleash",
+    "local": false
+  },
+  {
     "id": "kortez-zostan",
     "title": "Zostań",
     "artist": "KORTEZ",
@@ -8740,6 +9398,34 @@
     ],
     "tracksCount": 1,
     "search": "krzysztofmielanczuktabaluga",
+    "local": false
+  },
+  {
+    "id": "kt-tunstall-black-horse-the-cherry-tree",
+    "title": "Black Horse & The Cherry Tree",
+    "artist": "KT Tunstall",
+    "language": "English",
+    "bpm": 210,
+    "bar": 4,
+    "gap": 859.5235826584088,
+    "video": "PQmDUEv939A",
+    "year": "2004",
+    "lastUpdate": "2023-10-15T11:26:31.299Z",
+    "edition": "SingStar Rocks!",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.9,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kttunstallblackhorsethecherrytree",
     "local": false
   },
   {
@@ -8984,6 +9670,34 @@
     ],
     "tracksCount": 1,
     "search": "laorejadevangoghrosas",
+    "local": false
+  },
+  {
+    "id": "la-roux-bulletproof",
+    "title": "Bulletproof",
+    "artist": "La Roux",
+    "language": "English",
+    "bpm": 246,
+    "bar": 4,
+    "gap": 15514.390243902439,
+    "video": "Kk8eJh4i8Lo",
+    "year": "2009",
+    "lastUpdate": "2023-10-15T11:26:31.300Z",
+    "edition": "SingStar Chart Hits",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.9,
+    "author": "klops_007",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "larouxbulletproof",
     "local": false
   },
   {
@@ -9329,6 +10043,35 @@
     "local": false
   },
   {
+    "id": "lana-del-rey-born-to-die",
+    "title": "Born To Die",
+    "artist": "Lana Del Rey",
+    "language": "English",
+    "bpm": 171.7,
+    "bar": 4,
+    "gap": 21770.021549213743,
+    "video": "E_jWcIDqXq0",
+    "year": "2011",
+    "lastUpdate": "2023-10-15T11:26:31.301Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 96,
+    "previewStart": 66,
+    "previewEnd": 84,
+    "volume": 0.7,
+    "author": "",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Lana%20Del%20Rey&cancion=Born%20To%20Die",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreyborntodie",
+    "local": false
+  },
+  {
     "id": "lana-del-rey-summertime-sadness",
     "title": "Summertime Sadness",
     "artist": "Lana Del Rey",
@@ -9538,6 +10281,62 @@
     "local": false
   },
   {
+    "id": "lifehouse-hanging-by-a-moment",
+    "title": "Hanging By A Moment",
+    "artist": "Lifehouse",
+    "language": "English",
+    "bpm": 249,
+    "bar": 4,
+    "gap": 11265.903614457831,
+    "video": "tPnK39ax_AM",
+    "year": "2001",
+    "lastUpdate": "2023-10-15T11:26:31.302Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 63,
+    "volume": 1,
+    "author": "Ceptic",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lifehousehangingbyamoment",
+    "local": false
+  },
+  {
+    "id": "lifehouse-you-and-me",
+    "title": "You And Me",
+    "artist": "Lifehouse",
+    "language": "English",
+    "bpm": 281.7,
+    "bar": 4,
+    "gap": 30928.28541001065,
+    "video": "ac3HkriqdGQ",
+    "year": "2005",
+    "lastUpdate": "2023-10-15T11:26:31.303Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 70,
+    "volume": 1,
+    "author": "Ceptic",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lifehouseyouandme",
+    "local": false
+  },
+  {
     "id": "linkin-park-bleed-it-out",
     "title": "Bleed It Out",
     "artist": "Linkin Park",
@@ -9660,6 +10459,33 @@
     ],
     "tracksCount": 1,
     "search": "linkinparkfaint",
+    "local": false
+  },
+  {
+    "id": "linkin-park-given-up",
+    "title": "Given Up",
+    "artist": "Linkin Park",
+    "language": "English",
+    "bpm": 200,
+    "bar": 4,
+    "gap": 23525,
+    "video": "0xyxtzD54rM",
+    "year": "2007",
+    "lastUpdate": "2023-10-15T11:26:31.303Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.85,
+    "author": "SweetStar",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparkgivenup",
     "local": false
   },
   {
@@ -10678,6 +11504,61 @@
     "local": false
   },
   {
+    "id": "marilyn-manson-sweet-dreams",
+    "title": "Sweet Dreams",
+    "artist": "Marilyn Manson",
+    "language": "English",
+    "bpm": 297.5,
+    "bar": 4,
+    "gap": 13911.596638655463,
+    "video": "QUvVdTlA23w",
+    "year": "1995",
+    "lastUpdate": "2023-10-15T11:26:31.304Z",
+    "genre": "Metal",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 1,
+    "author": "haistshomie666",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marilynmansonsweetdreams",
+    "local": false
+  },
+  {
+    "id": "marilyn-manson-the-beautiful-people",
+    "title": "The Beautiful People",
+    "artist": "Marilyn Manson",
+    "language": "English",
+    "bpm": 394.48,
+    "bar": 4,
+    "gap": 48131.35672277428,
+    "video": "Ypkv0HeUvTc",
+    "year": "1996",
+    "lastUpdate": "2023-10-15T11:26:31.304Z",
+    "edition": "Rock Band 3",
+    "genre": "Industrial Metal",
+    "videoGap": 4,
+    "realBpm": 144,
+    "volume": 1,
+    "author": "Gollum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marilynmansonthebeautifulpeople",
+    "local": false
+  },
+  {
     "id": "marina-and-the-diamonds-primadonna",
     "title": "Primadonna",
     "artist": "Marina and the Diamonds",
@@ -10858,6 +11739,34 @@
     ],
     "tracksCount": 1,
     "search": "maroon5thislove",
+    "local": false
+  },
+  {
+    "id": "martina-mcbride-a-broken-wing",
+    "title": "A Broken Wing",
+    "artist": "Martina McBride",
+    "language": "English",
+    "bpm": 266.6,
+    "bar": 4,
+    "gap": 16107.246811702926,
+    "video": "dgjTO5eAbZY",
+    "year": "1997",
+    "lastUpdate": "2023-10-15T11:26:31.306Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 67,
+    "volume": 0.75,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "martinamcbrideabrokenwing",
     "local": false
   },
   {
@@ -11397,6 +12306,33 @@
     "local": false
   },
   {
+    "id": "miley-cyrus-the-climb",
+    "title": "The Climb",
+    "artist": "Miley Cyrus",
+    "language": "English",
+    "bpm": 480,
+    "bar": 4,
+    "gap": 6420,
+    "video": "NG2zyeVRcbs",
+    "year": "2009",
+    "lastUpdate": "2023-10-15T11:26:31.306Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 80,
+    "volume": 0.76,
+    "author": "ariel_argentina’s brother ;-)",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mileycyrustheclimb",
+    "local": false
+  },
+  {
     "id": "miley-cyrus-wrecking-ball",
     "title": "Wrecking Ball",
     "artist": "Miley Cyrus",
@@ -11419,6 +12355,34 @@
     ],
     "tracksCount": 1,
     "search": "mileycyruswreckingball",
+    "local": false
+  },
+  {
+    "id": "miranda-lambert-kerosene",
+    "title": "Kerosene",
+    "artist": "Miranda Lambert",
+    "language": "English",
+    "bpm": 253.9,
+    "bar": 4,
+    "gap": 15875.667585663647,
+    "video": "rB7ONnfIjaI",
+    "year": "2005",
+    "lastUpdate": "2023-10-15T11:26:31.307Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "videoGap": 1,
+    "realBpm": 64,
+    "volume": 0.75,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mirandalambertkerosene",
     "local": false
   },
   {
@@ -11523,6 +12487,32 @@
     ],
     "tracksCount": 1,
     "search": "morandiangels",
+    "local": false
+  },
+  {
+    "id": "morgan-wallen-last-night",
+    "title": "Last Night",
+    "artist": "Morgan Wallen",
+    "language": "English",
+    "bpm": 392.17,
+    "bar": 4,
+    "gap": 8984.53331463396,
+    "video": "bUjPPBxbQrQ",
+    "year": "2023",
+    "lastUpdate": "2023-10-15T11:26:31.307Z",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.65,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "morganwallenlastnight",
     "local": false
   },
   {
@@ -12040,6 +13030,62 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-teenagers",
+    "title": "Teenagers",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 334,
+    "bar": 4,
+    "gap": 1971.9760479041915,
+    "video": "k6EQAOmJrbw",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.308Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.85,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromanceteenagers",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-welcome-to-the-black-parade",
+    "title": "Welcome To The Black Parade",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 11539.23076923077,
+    "video": "RRKJiM9Njr8",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.309Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.85,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromancewelcometotheblackparade",
+    "local": false
+  },
+  {
     "id": "myslovitz-dlugo-dzwieku-samotnosci",
     "title": "Długo dzwieku samotnosci",
     "artist": "Myslovitz",
@@ -12166,6 +13212,34 @@
     ],
     "tracksCount": 1,
     "search": "natalianykielpolkrokustadvaiana",
+    "local": false
+  },
+  {
+    "id": "natalie-imbruglia-torn",
+    "title": "Torn",
+    "artist": "Natalie Imbruglia",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 12145.29411764706,
+    "video": "VV1XWJN3nJo",
+    "year": "1997",
+    "lastUpdate": "2023-10-15T11:26:31.309Z",
+    "edition": "SingStar ’90s [UK|US]",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.6,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "natalieimbrugliatorn",
     "local": false
   },
   {
@@ -12358,6 +13432,34 @@
     ],
     "tracksCount": 1,
     "search": "netflixtossacointoyourwitcher",
+    "local": false
+  },
+  {
+    "id": "new-kids-on-the-block-step-by-step",
+    "title": "Step By Step",
+    "artist": "New Kids On The Block",
+    "language": "English",
+    "bpm": 250.6,
+    "bar": 4,
+    "gap": -957.5578611332803,
+    "video": "GDEDQ8TCzW8",
+    "year": "1990",
+    "lastUpdate": "2023-10-15T11:26:31.310Z",
+    "edition": "SingStar ’90s [UK|US]",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.8,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "newkidsontheblockstepbystep",
     "local": false
   },
   {
@@ -12918,6 +14020,331 @@
     ],
     "tracksCount": 1,
     "search": "pabloalboransolamentetu",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-dont-threaten-me-with-a-good-time",
+    "title": "Don’t Threaten Me With A Good Time",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 368.91,
+    "bar": 4,
+    "gap": 10233.491908595592,
+    "video": "H5NqIsnyTG8",
+    "year": "2016",
+    "lastUpdate": "2023-10-15T11:26:31.311Z",
+    "genre": "Alternative",
+    "videoGap": 0,
+    "realBpm": 184,
+    "volume": 0.75,
+    "author": "princetongirl98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscodontthreatenmewithagoodtime",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-hallelujah",
+    "title": "Hallelujah",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 210.49,
+    "bar": 4,
+    "gap": 1742.3279015630196,
+    "video": "DxYyHHR0Q1c",
+    "year": "2015",
+    "lastUpdate": "2023-10-15T11:26:31.312Z",
+    "genre": "Alternative",
+    "videoGap": 0,
+    "realBpm": 80,
+    "volume": 0.8,
+    "author": "princetongirl98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscohallelujah",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-hey-look-ma-i-made-it",
+    "title": "Hey Look Ma, I Made It",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 432,
+    "bar": 4,
+    "gap": 18873.055555555555,
+    "video": "BzbxacRr5Gk",
+    "year": "2018",
+    "lastUpdate": "2023-10-15T11:26:31.313Z",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 0.7,
+    "author": "DoubleDee73",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscoheylookmaimadeit",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-high-hopes",
+    "title": "High Hopes",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 328,
+    "bar": 4,
+    "gap": 15373.90243902439,
+    "video": "IPXIgEAGe4U",
+    "year": "2018",
+    "lastUpdate": "2023-10-15T11:26:31.314Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 164,
+    "volume": 0.75,
+    "author": "aac",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscohighhopes",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-i-write-sins-not-tragedies",
+    "title": "I Write Sins Not Tragedies",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 10415.29411764706,
+    "video": "vc6vs-l5dkc",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.315Z",
+    "edition": "SingStar Pop",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 170,
+    "volume": 0.9,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscoiwritesinsnottragedies",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-into-the-unknown",
+    "title": "Into The Unknown",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 234,
+    "bar": 4,
+    "gap": 4.358974358974365,
+    "video": "jp-CVYGEsjg",
+    "year": "2019",
+    "lastUpdate": "2023-10-15T11:26:31.316Z",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.7,
+    "author": "DoubleDee73",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscointotheunknown",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-lying-is-the-most-fun-a-girl-can-have-without-taking-her-clothes-off",
+    "title": "Lying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 14128.095238095239,
+    "video": "8AZxUtZ2ZgI",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.317Z",
+    "genre": "Alternative Rock",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.9,
+    "author": "DoubleDee73",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscolyingisthemostfunagirlcanhavewithouttakingherclothesoff",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-nine-in-the-afternoon-album-version",
+    "title": "Nine In The Afternoon (Album Version)",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 279.8,
+    "bar": 4,
+    "gap": 10662.142857142857,
+    "video": "yCto3PCn8wo",
+    "year": "2008",
+    "lastUpdate": "2023-10-15T11:26:31.318Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 155,
+    "volume": 0.8,
+    "author": "JoM",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthedisconineintheafternoonalbumversion",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-the-ballad-of-mona-lisa-album-version",
+    "title": "The Ballad Of Mona Lisa (Album Version)",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 15848.095238095239,
+    "video": "gOgpdp3lP8M",
+    "year": "2011",
+    "lastUpdate": "2023-10-15T11:26:31.319Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.8,
+    "author": "FadingDream97",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscotheballadofmonalisaalbumversion",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-this-is-gospel",
+    "title": "This Is Gospel",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 312,
+    "bar": 4,
+    "gap": 4890.384615384615,
+    "video": "tGE381tbQa8",
+    "year": "2013",
+    "lastUpdate": "2023-10-15T11:26:31.319Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 156,
+    "volume": 0.7,
+    "author": "FadingDream97",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscothisisgospel",
+    "local": false
+  },
+  {
+    "id": "panic-at-the-disco-victorious",
+    "title": "Victorious",
+    "artist": "Panic! at the Disco",
+    "language": "English",
+    "bpm": 220.6,
+    "bar": 4,
+    "gap": 1890.0543970988215,
+    "video": "AUChk0lxF44",
+    "year": "2015",
+    "lastUpdate": "2023-10-15T11:26:31.320Z",
+    "genre": "Punk",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.75,
+    "author": "princetongirl98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "panicatthediscovictorious",
+    "local": false
+  },
+  {
+    "id": "paramore-decode",
+    "title": "Decode",
+    "artist": "Paramore",
+    "language": "English",
+    "bpm": 327.94,
+    "bar": 4,
+    "gap": 11753.718363115204,
+    "video": "RvnkAtWcKYg",
+    "year": "2008",
+    "lastUpdate": "2023-10-15T11:26:31.320Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 84,
+    "volume": 0.75,
+    "author": "mg",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramoredecode",
     "local": false
   },
   {
@@ -13532,6 +14959,34 @@
     ],
     "tracksCount": 1,
     "search": "piotrrubikpsalmdlaciebie",
+    "local": false
+  },
+  {
+    "id": "plain-white-ts-hey-there-delilah",
+    "title": "Hey There Delilah",
+    "artist": "Plain White T’s",
+    "language": "English",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 9330.384615384615,
+    "video": "h_m-BjrxmgI",
+    "year": "2005",
+    "lastUpdate": "2023-10-15T11:26:31.321Z",
+    "edition": "SingStar Summer Party",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.8,
+    "author": "Leki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "plainwhitetsheytheredelilah",
     "local": false
   },
   {
@@ -14754,6 +16209,33 @@
     "local": false
   },
   {
+    "id": "rob-zombie-dragula",
+    "title": "Dragula",
+    "artist": "Rob Zombie",
+    "language": "English",
+    "bpm": 392.17,
+    "bar": 4,
+    "gap": 4315.53331463396,
+    "video": "EqQuihD0hoI",
+    "year": "1998",
+    "lastUpdate": "2023-10-15T11:26:31.322Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.73,
+    "author": "geRt",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "robzombiedragula",
+    "local": false
+  },
+  {
     "id": "robbie-williams-angels",
     "title": "Angels",
     "artist": "Robbie Williams",
@@ -14985,6 +16467,34 @@
     "local": false
   },
   {
+    "id": "sara-evans-born-to-fly",
+    "title": "Born To Fly",
+    "artist": "Sara Evans",
+    "language": "English",
+    "bpm": 200.2,
+    "bar": 4,
+    "gap": 9285.974025974027,
+    "video": "8xvhutWc67k",
+    "year": "2000",
+    "lastUpdate": "2023-10-15T11:26:31.323Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.83,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "saraevansborntofly",
+    "local": false
+  },
+  {
     "id": "sarah-brightman-andrea-bocelli-time-to-say-goodbye-con-te-partiro",
     "title": "Time To Say Goodbye (Con te partirò)",
     "artist": "Sarah Brightman & Andrea Bocelli",
@@ -15175,6 +16685,33 @@
     ],
     "tracksCount": 1,
     "search": "scorpionswindofchange",
+    "local": false
+  },
+  {
+    "id": "secondhand-serenade-fall-for-you",
+    "title": "Fall For You",
+    "artist": "Secondhand Serenade",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 290,
+    "video": "DEXDDyb6t2o",
+    "year": "2008",
+    "lastUpdate": "2023-10-15T11:26:31.324Z",
+    "genre": "Folk Rock",
+    "videoGap": 0,
+    "realBpm": 85,
+    "volume": 1,
+    "author": "jalkazar",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "secondhandserenadefallforyou",
     "local": false
   },
   {
@@ -15454,6 +16991,34 @@
     "local": false
   },
   {
+    "id": "sixpence-none-the-richer-kiss-me",
+    "title": "Kiss Me",
+    "artist": "Sixpence None The Richer",
+    "language": "English",
+    "bpm": 339.45,
+    "bar": 4,
+    "gap": 18823.650022094564,
+    "video": "Jnq9wPDoDKg",
+    "year": "1997",
+    "lastUpdate": "2023-10-15T11:26:31.324Z",
+    "edition": "SingStar ’90s [UK]",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.8,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sixpencenonethericherkissme",
+    "local": false
+  },
+  {
     "id": "skid-row-18-life",
     "title": "18 & Life",
     "artist": "Skid Row",
@@ -15476,6 +17041,60 @@
     ],
     "tracksCount": 1,
     "search": "skidrow18life",
+    "local": false
+  },
+  {
+    "id": "skillet-hero",
+    "title": "Hero",
+    "artist": "Skillet",
+    "language": "English",
+    "bpm": 283.95,
+    "bar": 4,
+    "gap": 23106.302165874273,
+    "video": "uGcsIdGOuZY",
+    "year": "2014",
+    "lastUpdate": "2023-10-15T11:26:31.325Z",
+    "genre": "Christian Rock",
+    "videoGap": 0,
+    "realBpm": 142,
+    "volume": 0.9,
+    "author": "Lorc",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skillethero",
+    "local": false
+  },
+  {
+    "id": "skillet-monster",
+    "title": "Monster",
+    "artist": "Skillet",
+    "language": "English",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 14410,
+    "video": "1mjlM_RnsVE",
+    "year": "2014",
+    "lastUpdate": "2023-10-15T11:26:31.326Z",
+    "genre": "Christian Rock",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.9,
+    "author": "slim_shadyy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skilletmonster",
     "local": false
   },
   {
@@ -15503,6 +17122,60 @@
     ],
     "tracksCount": 1,
     "search": "slawomirmiloscwzakopanem",
+    "local": false
+  },
+  {
+    "id": "slipknot-duality",
+    "title": "Duality",
+    "artist": "Slipknot",
+    "language": "English",
+    "bpm": 288,
+    "bar": 4,
+    "gap": 551.25,
+    "video": "6fVE8kSM43I",
+    "year": "2004",
+    "lastUpdate": "2023-10-15T11:26:31.328Z",
+    "genre": "None",
+    "videoGap": 1,
+    "realBpm": 144,
+    "volume": 1,
+    "author": "FaKK",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotduality",
+    "local": false
+  },
+  {
+    "id": "slipknot-psychosocial",
+    "title": "Psychosocial",
+    "artist": "Slipknot",
+    "language": "English",
+    "bpm": 555.65,
+    "bar": 4,
+    "gap": 36491.16980113381,
+    "video": "5abamRO41fE",
+    "year": "2008",
+    "lastUpdate": "2023-10-15T11:26:31.328Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.75,
+    "author": "Mischn",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotpsychosocial",
     "local": false
   },
   {
@@ -15931,6 +17604,34 @@
     "local": false
   },
   {
+    "id": "starship-we-built-this-city",
+    "title": "We Built This City",
+    "artist": "Starship",
+    "language": "English",
+    "bpm": 286.7,
+    "bar": 4,
+    "gap": 4275.929543076387,
+    "video": "K1b8AhIsSYQ",
+    "year": "1985",
+    "lastUpdate": "2023-10-15T11:26:31.329Z",
+    "edition": "SingStar ’80s [DE|SE|UK|US]",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 144,
+    "volume": 0.65,
+    "author": "mk90",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "starshipwebuiltthiscity",
+    "local": false
+  },
+  {
     "id": "strachy-na-lachy-dzien-dobry-kocham-cie",
     "title": "Dzien dobry kocham Cie",
     "artist": "Strachy Na Lachy",
@@ -16040,6 +17741,62 @@
     ],
     "tracksCount": 1,
     "search": "sylwiagrzeszczaklibercoznamibedzie",
+    "local": false
+  },
+  {
+    "id": "system-of-a-down-byob",
+    "title": "B.Y.O.B.",
+    "artist": "System of a Down",
+    "language": "English",
+    "bpm": 202.98,
+    "bar": 4,
+    "gap": 23165.415311853383,
+    "video": "zUzd9KyIDrM",
+    "year": "2005",
+    "lastUpdate": "2023-10-15T11:26:31.330Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.75,
+    "author": "Jamin",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "systemofadownbyob",
+    "local": false
+  },
+  {
+    "id": "system-of-a-down-chop-suey",
+    "title": "Chop Suey!",
+    "artist": "System of a Down",
+    "language": "English",
+    "bpm": 508,
+    "bar": 4,
+    "gap": 43616.06299212598,
+    "video": "CSvFpBOe8eY",
+    "year": "2001",
+    "lastUpdate": "2023-10-15T11:26:31.331Z",
+    "edition": "[SC]-Songs",
+    "genre": "Metal",
+    "videoGap": 0,
+    "realBpm": 127,
+    "volume": 0.79,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 34
+      }
+    ],
+    "tracksCount": 1,
+    "search": "systemofadownchopsuey",
     "local": false
   },
   {
@@ -16225,6 +17982,34 @@
     "local": false
   },
   {
+    "id": "taylor-swift-our-song",
+    "title": "Our Song",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 356.16,
+    "bar": 4,
+    "gap": 11369.21832884097,
+    "video": "Jb2stN7kH28",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.331Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 89,
+    "volume": 0.9,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftoursong",
+    "local": false
+  },
+  {
     "id": "taylor-swift-shake-it-off",
     "title": "Shake It Off",
     "artist": "Taylor Swift",
@@ -16389,6 +18174,34 @@
     ],
     "tracksCount": 1,
     "search": "tenaciousdtribute",
+    "local": false
+  },
+  {
+    "id": "terri-clark-girls-lie-too",
+    "title": "Girls Lie Too",
+    "artist": "Terri Clark",
+    "language": "English",
+    "bpm": 277.5,
+    "bar": 4,
+    "gap": 14362.972972972973,
+    "video": "plJMQeKpz40",
+    "year": "2004",
+    "lastUpdate": "2023-10-15T11:26:31.332Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 139,
+    "volume": 0.7,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "terriclarkgirlslietoo",
     "local": false
   },
   {
@@ -17075,6 +18888,33 @@
     ],
     "tracksCount": 1,
     "search": "theoffspringprettyflyforawhiteguy",
+    "local": false
+  },
+  {
+    "id": "the-offspring-youre-gonna-go-far-kid",
+    "title": "You’re Gonna Go Far, Kid",
+    "artist": "The Offspring",
+    "language": "English",
+    "bpm": 252.14,
+    "bar": 4,
+    "gap": 17628.657095264534,
+    "video": "ql9-82oV2JE",
+    "year": "2008",
+    "lastUpdate": "2023-10-15T11:26:31.333Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 129,
+    "volume": 0.8,
+    "author": "snowtox",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theoffspringyouregonnagofarkid",
     "local": false
   },
   {
@@ -17855,6 +19695,34 @@
     "local": false
   },
   {
+    "id": "tool-vicarious",
+    "title": "Vicarious",
+    "artist": "Tool",
+    "language": "English",
+    "bpm": 399.2,
+    "bar": 4,
+    "gap": 118165.47094188377,
+    "video": "h_TUP2vuaDs",
+    "year": "2006",
+    "lastUpdate": "2023-10-15T11:26:31.334Z",
+    "edition": "Guitar Hero World Tour",
+    "genre": "Progressive Rock",
+    "videoGap": 104,
+    "realBpm": 115,
+    "volume": 0.7,
+    "author": "Gollum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "toolvicarious",
+    "local": false
+  },
+  {
     "id": "toto-africa",
     "title": "Africa",
     "artist": "Toto",
@@ -17928,6 +19796,142 @@
     ],
     "tracksCount": 1,
     "search": "tsamarszwilkowtv",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-heathens",
+    "title": "Heathens",
+    "artist": "twenty øne piløts",
+    "language": "English",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 20060,
+    "video": "UprcpdwuwCg",
+    "year": "2016",
+    "lastUpdate": "2023-10-15T11:26:31.335Z",
+    "genre": "Soundtrack",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.7,
+    "author": "ga the milk",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twentyonepilotsheathens",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-house-of-gold",
+    "title": "House Of Gold",
+    "artist": "twenty øne piløts",
+    "language": "English",
+    "bpm": 229.97,
+    "bar": 4,
+    "gap": 8136.611514545375,
+    "video": "mDyxykpYeu8",
+    "year": "2013",
+    "lastUpdate": "2023-10-15T11:26:31.336Z",
+    "genre": "Alternative, Indie, Rap",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.61,
+    "author": "gun8",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twentyonepilotshouseofgold",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-ride",
+    "title": "Ride",
+    "artist": "twenty øne piløts",
+    "language": "English",
+    "bpm": 300.28,
+    "bar": 4,
+    "gap": 22770.9324630345,
+    "video": "Pw-0pbY9JeU",
+    "year": "2015",
+    "lastUpdate": "2023-10-15T11:26:31.337Z",
+    "genre": "Alternative, Indie, Rap",
+    "videoGap": 0,
+    "realBpm": 76,
+    "volume": 0.7,
+    "author": "gun8",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twentyonepilotsride",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-stressed-out",
+    "title": "Stressed Out",
+    "artist": "twenty øne piløts",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 15625.29411764706,
+    "video": "pXRviuL6vMY",
+    "year": "2015",
+    "lastUpdate": "2023-10-15T11:26:31.338Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 170,
+    "volume": 0.75,
+    "author": "QuantenspringerXXX",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twentyonepilotsstressedout",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-tear-in-my-heart",
+    "title": "Tear In My Heart",
+    "artist": "twenty øne piløts",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 12435,
+    "video": "nky4me4NP70",
+    "year": "2015",
+    "lastUpdate": "2023-10-15T11:26:31.339Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.72,
+    "author": "REL",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twentyonepilotstearinmyheart",
     "local": false
   },
   {
@@ -18167,6 +20171,34 @@
     ],
     "tracksCount": 1,
     "search": "vanessacarltonathousandmiles",
+    "local": false
+  },
+  {
+    "id": "vanilla-ice-ice-ice-baby",
+    "title": "Ice Ice Baby",
+    "artist": "Vanilla Ice",
+    "language": "English",
+    "bpm": 232.35,
+    "bar": 4,
+    "gap": 11961.633311814074,
+    "video": "rog8ou-ZepE",
+    "year": "1990",
+    "lastUpdate": "2023-10-15T11:26:31.340Z",
+    "edition": "SingStar ’80s [NL|PL|UK], SingStar ’90s [US]",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 116,
+    "volume": 0.7,
+    "author": "melinas@upenn.edu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vanillaiceiceicebaby",
     "local": false
   },
   {
@@ -18479,6 +20511,34 @@
     ],
     "tracksCount": 1,
     "search": "whamwakemeupbeforeyougogo",
+    "local": false
+  },
+  {
+    "id": "wheatus-teenage-dirtbag",
+    "title": "Teenage Dirtbag",
+    "artist": "Wheatus",
+    "language": "English",
+    "bpm": 378.64,
+    "bar": 4,
+    "gap": 19599.61335305303,
+    "video": "FC3y9llDXuM",
+    "year": "2000",
+    "lastUpdate": "2023-10-15T11:26:31.341Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 0.85,
+    "author": "cal",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "wheatusteenagedirtbag",
     "local": false
   },
   {

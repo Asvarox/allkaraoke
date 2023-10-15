@@ -59,6 +59,11 @@ export default function SongList(props: Props) {
 
           return val && <abbr title={val}>{format(new Date(val), 'LLL do y')}</abbr>;
         },
+        sortingFn: (b, a) => {
+          return (
+            new Date(a.getValue<string>('lastUpdate')).getTime() - new Date(b.getValue<string>('lastUpdate')).getTime()
+          );
+        },
       },
       {
         accessorKey: 'local',

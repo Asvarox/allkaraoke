@@ -1,0 +1,348 @@
+#ID:elena-siegman-115
+#ARTIST:Elena Siegman
+#TITLE:115
+#CREATOR:mrpeanut188
+#CREATORURL:
+#BPM:200
+#REALBPM:200
+#YEAR:2010
+#SOURCEURL:
+#VIDEOID:JHnqijwQ55c
+#VIDEOGAP:0
+#VOLUME:0,8
+#LANGUAGE:English
+#LASTUPDATE:2023-10-15T11:26:31.282Z
+#GAP:30085
+: 13 5 0 No 
+: 20 3 0 one 
+: 26 1 0 can 
+: 30 4 0 see 
+: 37 2 0 me 
+: 42 1 0 and 
+- 43
+: 46 4 0 I’ve 
+: 52 2 0 lost 
+: 57 1 0 all 
+: 61 5 0 fee
+: 68 3 0 ling 
+: 74 2 0 and 
+- 76
+: 78 2 0 I 
+: 84 1 0 know 
+: 90 1 0 I 
+: 94 1 0 won’t 
+: 100 2 0 die 
+: 106 1 0 a
+: 110 16 0 lone 
+- 126
+: 137 3 0 I’ll 
+: 142 3 0 stop 
+: 148 3 0 you 
+: 153 2 0 from 
+: 157 4 0 brea
+: 164 3 0 thing 
+: 170 2 0 and 
+- 172
+: 174 3 0 All 
+: 180 3 0 your 
+: 186 2 0 decei
+: 190 3 0 ving 
+: 195 4 0 and 
+- 199
+: 203 1 0 This 
+: 206 1 0 house 
+: 211 8 0 is 
+: 220 1 0 not 
+: 223 4 0 my 
+: 229 26 0 home 
+- 255 256
+- 256
+: 269 6 0 No 
+- 275
+: 278 2 0 More 
+: 282 1 0 for
+: 286 4 0 give
+: 292 7 0 ness 
+- 299
+: 302 5 0 No 
+- 307
+: 310 2 0 And 
+: 314 2 0 the 
+: 318 4 0 reason 
+: 324 8 0 is 
+- 332
+: 335 3 0 I 
+: 340 3 0 know 
+: 345 2 0 I 
+: 349 4 0 wont 
+: 356 3 0 die 
+: 361 24 0 alone 
+- 385 401
+- 401
+: 414 3 0 I 
+: 420 3 0 have 
+: 426 16 0 returned 
+- 442
+: 446 1 0 And 
+: 448 12 0 everyone 
+: 462 10 0 dies 
+: 474 2 0 and 
+- 476
+: 478 13 0 Everyone 
+: 493 8 0 lies 
+- 501
+: 506 2 0 They’re 
+: 510 6 0 waiting 
+: 519 2 0 for 
+: 522 1 0 the 
+: 526 9 0 second 
+: 538 8 0 coming 
+: 549 17 0 again 
+- 566
+: 573 13 0 Everyone 
+: 589 5 0 tries 
+: 597 2 0 to 
+: 602 1 0 hold 
+: 606 11 0 onto 
+: 619 2 0 their 
+: 623 8 0 lives 
+- 631
+: 634 2 0 When 
+: 638 9 0 no 
+: 649 2 0 one’s 
+: 653 7 0 alive 
+- 660
+: 662 2 0 Bring 
+: 666 1 0 me 
+: 670 29 0 115 
+- 699 802
+- 802
+: 815 4 0 You 
+: 822 2 0 stand 
+: 827 1 0 for 
+: 830 10 0 nothing 
+: 842 1 0 and 
+- 843
+: 846 14 0 Overlooked 
+: 861 9 0 something 
+- 870
+: 874 2 0 I’ll 
+: 877 4 0 bring 
+: 884 2 0 you 
+: 889 2 0 down 
+: 893 5 0 all 
+: 900 3 0 on 
+: 905 2 0 my 
+: 909 20 0 own 
+- 929
+: 934 3 0 I’m 
+: 938 2 0 the 
+: 942 4 0 end 
+: 948 3 0 I 
+: 954 2 0 can 
+: 958 4 0 taste 
+: 964 3 0 it 
+- 967
+: 970 2 0 I’ll 
+: 973 13 0 justify 
+: 989 11 0 hatred 
+- 1000
+: 1011 1 0 I 
+: 1015 1 0 am 
+: 1018 1 0 the 
+: 1022 10 0 chosen 
+: 1033 1 0 one 
+- 1034
+: 1035 1 0 Left 
+: 1038 1 0 hand 
+: 1044 2 0 of 
+: 1048 1 0 all 
+: 1053 1 0 that’s 
+: 1056 14 0 sacred 
+- 1070
+: 1072 4 0 No 
+- 1076
+: 1078 2 0 More 
+: 1082 2 0 for
+: 1086 4 0 give
+: 1092 7 0 ness 
+- 1099
+: 1102 4 0 No 
+- 1106
+: 1109 1 0 I’ll 
+: 1112 1 0 bring 
+: 1115 1 0 you 
+: 1119 2 0 death 
+: 1122 1 0 and 
+: 1124 1 0 pestilence 
+- 1125
+: 1134 3 0 I’ll 
+: 1140 2 0 bring 
+: 1146 1 0 you 
+: 1150 4 0 down 
+: 1156 3 0 on 
+: 1162 2 0 my 
+: 1166 20 0 own. 
+- 1186 1202
+- 1202
+: 1215 3 0 I 
+: 1220 3 0 have 
+: 1225 17 0 returned 
+- 1242
+: 1245 1 0 And 
+: 1248 12 0 everything 
+: 1262 11 0 dies 
+- 1273
+: 1277 3 0 Look 
+: 1284 3 0 to 
+: 1289 2 0 the 
+: 1293 9 0 skies 
+- 1302
+: 1305 2 0 To 
+: 1309 2 0 see 
+: 1313 2 0 the 
+: 1317 2 0 end 
+: 1322 1 0 of 
+: 1325 6 0 all 
+: 1333 13 0 creation 
+: 1348 19 0 again 
+- 1367
+: 1371 6 0 See 
+: 1380 3 0 with 
+: 1385 3 0 your 
+: 1389 6 0 eyes 
+- 1395
+: 1400 3 0 My 
+: 1405 11 0 army 
+: 1418 3 0 of 
+: 1422 9 0 flies 
+- 1431
+: 1433 2 0 When 
+: 1437 5 0 no 
+: 1444 3 0 one’s 
+: 1450 9 0 alive 
+- 1459
+: 1462 3 0 Bring 
+: 1466 2 0 me 
+: 1470 31 0 115 
+- 1501 1605
+- 1605
+: 1618 3 0 I’ve 
+: 1623 2 0 lost 
+: 1627 1 0 all 
+: 1631 2 0 form 
+: 1635 1 0 and 
+: 1639 9 0 unity 
+- 1648
+: 1650 2 0 Where 
+: 1654 2 0 has 
+: 1658 2 0 my 
+: 1662 5 0 life 
+: 1670 12 0 gone 
+- 1682
+: 1683 2 0 I’ll 
+: 1687 2 0 bring 
+: 1691 1 0 you 
+: 1694 1 0 doom 
+: 1698 1 0 that 
+: 1702 3 0 you 
+: 1706 1 0 can 
+: 1708 5 0 see 
+- 1713
+: 1715 2 0 And 
+: 1718 2 0 bring 
+: 1722 1 0 you 
+: 1724 4 0 down 
+: 1731 1 0 to 
+: 1735 1 0 see 
+: 1738 1 0 you 
+: 1740 13 0 bleed. 
+- 1753 1772
+- 1772
+: 1785 2 0 And 
+: 1790 12 0 everyone 
+: 1805 10 0 dies 
+: 1817 2 0 and 
+- 1819
+: 1821 14 0 Everyone 
+: 1837 8 0 lies 
+- 1845
+: 1849 3 0 They’re 
+: 1854 6 0 waiting 
+: 1863 2 0 for 
+: 1867 1 0 the 
+: 1870 10 0 second 
+: 1882 8 0 coming 
+: 1894 13 0 again 
+- 1907
+: 1918 13 0 Everyone 
+: 1933 6 0 tries 
+: 1942 2 0 to 
+: 1946 1 0 hold 
+: 1950 7 0 onto 
+: 1960 3 0 their 
+: 1965 9 0 lives 
+- 1974
+: 1977 3 0 When 
+: 1982 4 0 no 
+: 1987 4 0 one’s 
+: 1993 10 0 alive 
+- 2003
+: 2006 2 0 Bring 
+: 2010 2 0 me 
+: 2013 28 0 115 
+- 2041
+: 2045 1 0 And 
+: 2048 15 0 everything 
+: 2065 7 0 dies 
+- 2072
+: 2077 3 0 Look 
+: 2083 3 0 to 
+: 2088 2 0 the 
+: 2092 9 0 skies 
+- 2101
+: 2105 2 0 To 
+: 2109 2 0 see 
+: 2114 1 0 the 
+: 2117 2 0 end 
+: 2121 2 0 of 
+: 2125 6 0 all 
+: 2134 13 0 creation 
+: 2150 17 0 again 
+- 2167
+: 2172 5 0 See 
+: 2179 3 0 with 
+: 2185 2 0 your 
+: 2189 9 0 eyes 
+- 2198
+: 2200 3 0 My 
+: 2205 9 0 army 
+: 2217 3 0 of 
+: 2221 10 0 flies 
+- 2231
+: 2234 2 0 When 
+: 2238 4 0 no 
+: 2244 4 0 one’s 
+: 2250 1 0 alive 
+- 2251
+: 2253 11 0 Bring 
+: 2266 1 0 me 
+: 2271 24 0 115 
+- 2295
+: 2298 2 0 And 
+: 2301 15 0 nobody 
+: 2318 8 0 cries 
+- 2326
+: 2328 2 0 When 
+: 2332 14 0 everyone 
+: 2349 9 0 dies 
+- 2358
+: 2361 2 0 And 
+: 2365 4 0 no 
+: 2371 3 0 one’s 
+: 2378 9 0 alive 
+- 2387
+: 2390 2 0 Bring 
+: 2394 1 0 me 
+: 2398 31 0 115 
+E

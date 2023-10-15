@@ -1,0 +1,727 @@
+#ID:twenty-one-pilots-stressed-out
+#ARTIST:twenty øne piløts
+#TITLE:Stressed Out
+#CREATOR:QuantenspringerXXX
+#CREATORURL:
+#BPM:340
+#REALBPM:170
+#YEAR:2015
+#SOURCEURL:
+#VIDEOID:pXRviuL6vMY
+#VIDEOGAP:0
+#VOLUME:0,75
+#GENRE:Pop
+#LANGUAGE:English
+#LASTUPDATE:2023-10-15T11:26:31.338Z
+#GAP:15625,29411764706
+F 23 2 0 I 
+F 27 2 0 wish 
+F 31 1 0 I 
+F 34 3 0 found 
+F 39 1 0 some 
+F 43 2 0 bet
+F 47 1 0 ter 
+F 51 4 0 sounds 
+- 55
+F 59 2 0 No 
+F 63 2 0 one’s 
+F 67 2 0 e
+F 71 2 0 ver 
+F 75 5 0 heard 
+- 80
+F 87 2 0 I 
+F 91 2 0 wish 
+F 95 2 0 I 
+F 99 1 0 had 
+F 103 1 0 a 
+F 107 3 0 bet
+F 111 2 0 ter 
+F 117 1 0 voice 
+- 118
+F 122 1 0 That 
+F 126 2 0 sang 
+F 130 2 0 some 
+F 134 2 0 bet
+F 138 2 0 ter 
+F 142 4 0 words 
+- 146
+F 154 2 0 I 
+F 158 2 0 wish 
+F 162 2 0 I 
+F 166 2 0 found 
+F 170 2 0 some 
+F 174 4 0 chords 
+- 178
+F 182 2 0 In 
+F 186 2 0 an 
+F 190 2 0 or
+F 194 2 0 der 
+F 198 2 0 that 
+F 202 2 0 is 
+F 206 5 0 new 
+- 211
+F 218 2 0 I 
+F 222 2 0 wish 
+F 226 2 0 I 
+F 230 2 0 did
+F 234 2 0 n’t 
+F 238 2 0 have 
+F 242 2 0 to 
+F 246 4 0 rhyme 
+- 250
+F 254 2 0 Eve
+F 258 2 0 ry 
+F 262 2 0 time 
+F 266 2 0 I 
+F 270 2 0 sang 
+- 272
+F 286 2 0 I 
+F 290 2 0 was 
+F 294 2 0 told 
+F 298 2 0 when 
+F 302 2 0 I 
+F 306 2 0 get 
+F 310 2 0 old
+F 314 1 0 er 
+- 315
+F 318 2 0 All 
+F 322 2 0 my 
+F 326 2 0 fears 
+F 330 2 0 would 
+F 334 1 0 shrink 
+- 335
+F 338 2 0 But 
+F 342 2 0 now 
+F 346 2 0 I’m 
+F 350 2 0 in
+F 354 2 0 se
+F 358 2 0 cure 
+- 360
+F 370 1 0 And 
+F 372 1 0 I 
+F 374 2 0 care 
+F 378 2 0 what 
+F 382 2 0 peo
+F 385 1 0 ple 
+- 386
+: 390 3 -3 My 
+: 398 2 -3 name’s 
+: 405 9 -3 ’Blur
+: 416 3 0 ry
+: 422 3 -3 face’ 
+: 429 4 -3 and 
+: 436 6 -3 I 
+- 442
+: 453 2 -3 Care 
+: 457 2 -5 what 
+: 460 4 -7 you
+: 465 1 -5 ~ 
+: 469 3 -8 think 
+- 472 493
+- 493
+: 516 5 -3 My 
+: 524 3 -3 name’s 
+: 533 8 -3 ’Blur
+: 543 2 0 ry
+: 549 3 -3 face’ 
+: 557 4 -3 and 
+: 564 6 -3 I 
+- 570
+: 582 2 -3 Care 
+: 586 1 -5 what 
+: 588 4 -7 you
+: 593 1 -5 ~ 
+: 596 4 -8 think 
+- 600 911
+- 911
+: 934 1 4 Wish 
+: 937 2 4 we 
+: 942 1 2 could 
+* 945 5 4 turn 
+: 952 4 0 back 
+: 961 9 0 time 
+- 970 977
+- 977
+: 1000 3 4 To 
+: 1005 2 4 the 
+: 1009 3 4 good 
+: 1016 4 -1 old 
+* 1025 14 -1 days
+* 1040 5 -3 ~ 
+- 1045
+: 1064 3 4 When 
+: 1069 1 4 our 
+: 1072 5 4 ma
+: 1080 3 0 ma 
+: 1089 13 0 sang 
+: 1105 2 0 us 
+* 1113 2 9 to 
+: 1120 3 7 sleep 
+- 1123
+: 1128 5 0 But 
+: 1137 5 -1 now 
+: 1145 3 9 we’re 
+: 1153 3 7 stressed 
+: 1161 7 2 out
+: 1169 3 4 ~ 
+- 1172
+: 1189 1 4 Wish 
+: 1194 1 4 we 
+* 1198 1 2 could 
+: 1201 5 4 turn 
+: 1208 4 0 back 
+: 1218 7 0 time 
+- 1225 1233
+- 1233
+: 1256 2 4 To 
+: 1261 2 4 the 
+: 1266 2 4 good 
+: 1272 4 -1 old 
+: 1281 14 -1 days
+: 1297 5 -3 ~ 
+- 1302
+: 1319 3 4 When 
+: 1324 2 4 our 
+: 1328 4 4 ma
+* 1336 1 0 ma 
+: 1344 14 0 sang 
+: 1360 3 0 us 
+: 1368 3 9 to 
+: 1377 2 7 sleep 
+- 1379
+: 1385 4 0 But 
+: 1392 6 -1 now 
+: 1401 3 9 we’re 
+: 1409 3 7 stressed 
+* 1417 6 2 out
+* 1424 1 4 ~ 
+- 1425 1506
+- 1506
+: 1529 3 9 We’re 
+: 1537 3 7 stressed 
+: 1545 6 2 out
+: 1552 1 4 ~ 
+- 1553 1661
+- 1661
+F 1684 2 0 Some
+F 1688 2 0 times 
+F 1692 2 0 a 
+F 1696 2 0 cer
+F 1700 2 0 tain 
+F 1704 1 0 smell 
+- 1705
+F 1708 2 0 Will 
+F 1712 2 0 take 
+F 1716 2 0 me 
+F 1720 2 0 back 
+F 1724 2 0 to 
+F 1728 1 0 when 
+F 1730 1 0 I 
+F 1732 2 0 was 
+F 1736 2 0 young 
+- 1738
+F 1748 2 0 How 
+F 1752 2 0 come 
+F 1756 2 0 I’m 
+F 1760 1 0 nev
+F 1762 1 0 er 
+F 1764 2 0 a
+F 1768 1 0 ble 
+F 1770 1 0 to 
+F 1772 2 0 i
+F 1776 1 0 den
+F 1778 1 0 ti
+F 1780 2 0 fy 
+- 1782
+F 1786 2 0 Where 
+F 1789 2 0 it’s 
+F 1792 3 0 com
+F 1797 2 0 ing 
+F 1801 4 0 from 
+- 1805
+F 1814 1 0 I’d 
+F 1816 2 0 make 
+F 1820 2 0 a 
+F 1824 2 0 can
+F 1828 2 0 dle 
+F 1832 1 0 out 
+F 1834 1 0 of 
+F 1836 2 0 it 
+F 1840 2 0 If 
+F 1844 2 0 I 
+F 1848 2 0 ev
+F 1852 2 0 er 
+F 1856 2 0 found 
+F 1860 1 0 it 
+- 1861
+F 1864 2 0 Try 
+F 1868 2 0 to 
+F 1872 2 0 sell 
+F 1876 1 0 it 
+- 1877
+F 1880 2 0 Nev
+F 1884 2 0 er 
+F 1888 2 0 sell 
+F 1892 2 0 out 
+F 1896 1 0 of 
+F 1898 1 0 it 
+F 1900 2 0 I’d 
+F 1904 1 0 prob
+F 1906 1 0 a
+F 1908 2 0 bly 
+F 1912 2 0 on
+F 1916 2 0 ly 
+F 1920 2 0 sell 
+F 1926 4 0 one 
+- 1930
+F 1938 1 0 It 
+F 1940 1 0 would 
+F 1942 1 0 be 
+F 1944 2 0 to 
+F 1948 2 0 my 
+F 1952 3 0 broth
+F 1956 2 0 er 
+- 1958
+F 1964 2 0 ’Cause 
+F 1968 1 0 we 
+F 1970 2 0 have 
+F 1974 1 0 the 
+F 1976 3 0 same 
+F 1984 3 0 nose 
+- 1987
+F 1992 4 0 Same 
+F 2000 4 0 clothes 
+F 2008 4 0 home
+F 2016 2 0 grown 
+- 2018
+F 2022 1 0 A 
+F 2024 4 0 stone’s 
+F 2032 2 0 throw 
+F 2038 1 0 from 
+F 2040 1 0 a 
+F 2042 2 0 creek 
+F 2046 2 0 we 
+F 2049 2 0 used 
+F 2053 2 0 to 
+F 2056 5 0 roam 
+- 2061
+F 2068 1 0 But 
+F 2070 1 0 it 
+F 2072 2 0 would 
+F 2076 2 0 re
+F 2080 4 0 mind 
+F 2086 1 0 us 
+F 2088 2 0 of 
+F 2092 2 0 when 
+F 2096 2 0 noth
+F 2100 2 0 ing 
+F 2104 2 0 real
+F 2108 2 0 ly 
+F 2112 3 0 mat
+F 2116 1 0 tered 
+- 2117
+F 2120 2 0 Out 
+F 2124 2 0 of 
+F 2128 2 0 stu
+F 2132 2 0 dent 
+F 2136 2 0 loans 
+F 2140 2 0 and 
+F 2144 3 0 tree
+F 2148 2 0 house 
+F 2152 1 0 homes 
+- 2153
+F 2156 2 0 We 
+F 2160 2 0 all 
+F 2164 2 0 would 
+F 2168 2 0 take 
+F 2172 2 0 the 
+F 2176 2 0 lad
+F 2180 2 0 der 
+- 2182 2186
+- 2186
+: 2209 5 -3 My 
+: 2217 4 -3 name’s 
+: 2225 10 -3 ’Blur
+: 2237 2 0 ry
+: 2243 3 -3 face’ 
+: 2250 5 -3 and 
+: 2257 6 -3 I 
+- 2263
+: 2274 2 -3 Care 
+: 2278 1 -5 what 
+: 2281 4 -7 you
+: 2286 1 -5 ~ 
+: 2289 3 -8 think 
+- 2292 2314
+- 2314
+: 2337 4 -3 My 
+: 2344 3 -3 name’s 
+: 2352 10 -3 ’Blur
+: 2364 2 0 ry
+: 2369 3 -3 face’ 
+: 2377 5 -3 and 
+: 2385 5 -3 I 
+- 2390
+: 2401 3 -3 Care 
+: 2406 1 -5 what 
+: 2408 4 -7 you
+: 2413 1 -5 ~ 
+: 2417 3 -8 think 
+- 2420 2478
+- 2478
+: 2501 1 4 Wish 
+: 2505 2 4 we 
+: 2510 1 2 could 
+: 2513 5 4 turn 
+: 2520 4 0 back 
+: 2529 9 0 time 
+- 2538 2545
+- 2545
+: 2568 3 4 To 
+: 2573 2 4 the 
+: 2577 3 4 good 
+: 2585 3 -1 old 
+: 2592 15 -1 days
+: 2608 5 -3 ~ 
+- 2613
+: 2632 3 4 When 
+: 2637 1 4 our 
+: 2640 5 4 ma
+: 2648 2 0 ma 
+: 2657 13 0 sang 
+: 2672 3 0 us 
+: 2680 4 9 to 
+: 2688 3 7 sleep 
+- 2691
+: 2697 5 0 But 
+: 2704 6 -1 now 
+: 2713 3 9 we’re 
+: 2721 3 7 stressed 
+: 2729 6 2 out
+: 2737 1 4 ~ 
+- 2738
+: 2757 1 4 Wish 
+: 2761 2 4 we 
+: 2766 1 2 could 
+: 2769 5 4 turn 
+: 2776 4 0 back 
+: 2785 8 0 time 
+- 2793 2801
+- 2801
+: 2824 2 4 To 
+: 2830 1 4 the 
+: 2833 3 4 good 
+: 2840 4 -1 old 
+: 2849 15 -1 days
+: 2865 6 -3 ~ 
+- 2871
+: 2888 3 4 When 
+: 2893 1 4 our 
+: 2896 5 4 ma
+: 2904 2 0 ma 
+: 2912 15 0 sang 
+: 2929 2 0 us 
+* 2936 3 9 to 
+: 2945 2 7 sleep 
+- 2947
+: 2952 7 0 But 
+: 2961 4 -1 now 
+: 2969 2 9 we’re 
+: 2977 3 7 stressed 
+: 2985 7 2 out 
+- 2992
+: 2997 1 -1 To 
+: 3001 3 0 play 
+: 3006 2 0 pre
+: 3010 4 -1 tend 
+: 3017 2 -1 give 
+: 3022 2 -3 each 
+: 3025 3 -1 oth
+: 3030 1 -3 er 
+: 3033 2 -1 dif
+: 3037 2 -3 ferent 
+: 3041 3 -1 names 
+- 3044
+: 3048 3 -1 We 
+: 3053 1 -1 would 
+: 3057 2 0 build 
+: 3061 1 0 a 
+: 3064 3 0 rock
+: 3069 1 0 et 
+: 3074 1 -1 ship 
+: 3078 2 -1 and 
+: 3081 2 -1 then 
+: 3085 1 -3 we’d 
+: 3089 4 -1 fly 
+: 3094 1 -3 it 
+: 3097 3 -1 far 
+: 3102 2 -3 a
+: 3106 2 -4 way 
+- 3108
+: 3112 2 -4 Used 
+: 3118 1 -4 to 
+: 3121 3 0 dream 
+: 3125 2 0 of 
+: 3129 3 0 out
+: 3133 1 0 er 
+: 3137 1 -1 space 
+- 3138
+: 3142 1 -1 But 
+: 3145 3 -1 now 
+: 3150 1 -3 they’re 
+: 3153 2 -1 laugh
+: 3158 1 -3 ing 
+: 3160 3 -1 at 
+: 3165 2 -3 our 
+: 3169 3 -1 face 
+- 3172
+: 3176 3 -1 Say
+: 3181 2 -1 ing, 
+: 3185 3 0 "Wake 
+: 3192 3 0 up, 
+: 3197 2 0 you 
+: 3201 2 2 need 
+: 3205 1 0 to 
+: 3208 3 0 make 
+: 3216 4 0 mon
+: 3221 3 -1 ey." 
+- 3224
+F 3233 4 -5 Yeah 
+- 3237
+: 3246 1 -5 We 
+: 3249 1 0 used 
+: 3253 1 0 to 
+: 3257 2 0 play 
+: 3262 1 0 pre
+: 3265 4 -1 tend 
+- 3269
+: 3273 1 -1 Give 
+: 3277 1 -3 each 
+: 3281 3 -1 oth
+: 3285 1 -3 er 
+: 3289 2 -1 dif
+: 3294 1 -3 ferent 
+: 3297 3 -1 names 
+- 3300
+: 3304 3 -1 We 
+: 3309 1 -1 would 
+: 3313 3 0 build 
+: 3318 2 0 a 
+: 3321 2 0 rock
+: 3326 1 0 et 
+: 3330 1 -1 ship 
+: 3334 1 -1 and 
+: 3337 3 -1 then 
+: 3342 1 -3 we’d 
+: 3345 4 -1 fly 
+: 3350 1 -3 it 
+: 3353 4 -1 far 
+: 3358 2 -3 a
+: 3362 3 -4 way 
+- 3365
+: 3369 2 -4 Used 
+: 3374 1 -4 to 
+: 3377 3 0 dream 
+: 3382 1 0 of 
+: 3385 3 0 out
+: 3389 1 0 er 
+: 3393 1 -1 space 
+- 3394
+: 3398 1 -1 But 
+: 3401 3 -1 now 
+: 3406 1 -3 they’re 
+: 3408 4 -1 laugh
+: 3414 1 -3 ing 
+: 3417 2 -1 at 
+: 3421 1 -3 our 
+: 3425 3 -1 face 
+- 3428
+: 3433 2 -1 Say
+: 3437 1 -1 ing, 
+: 3440 4 0 "Wake 
+: 3448 3 0 up, 
+: 3454 2 0 you 
+: 3457 2 2 need 
+: 3462 1 0 to 
+: 3465 3 0 make 
+: 3473 3 0 mon
+: 3478 2 -1 ey." 
+- 3480
+F 3489 4 -5 Yeah 
+- 3493 3502
+- 3502
+: 3525 2 2 Wish 
+: 3529 2 4 we 
+: 3534 1 2 could 
+: 3537 5 4 turn 
+: 3544 4 0 back 
+: 3553 9 0 time 
+- 3562 3569
+- 3569
+: 3592 3 4 To 
+: 3597 2 4 the 
+: 3601 4 4 good 
+: 3609 3 -1 old 
+: 3616 16 -1 days
+: 3633 5 -3 ~ 
+- 3638
+: 3656 3 4 When 
+: 3661 1 4 our 
+: 3664 5 4 ma
+: 3672 3 0 ma 
+* 3680 13 0 sang 
+: 3696 3 0 us 
+: 3705 2 9 to 
+: 3712 4 7 sleep 
+- 3716
+: 3721 5 0 But 
+: 3728 7 -1 now 
+: 3737 3 9 we’re 
+: 3745 3 7 stressed 
+: 3753 7 2 out
+: 3761 2 4 ~ 
+- 3763
+: 3781 1 4 Wish 
+: 3785 2 4 we 
+: 3790 1 2 could 
+: 3794 4 4 turn 
+: 3801 3 0 back 
+: 3809 8 0 time 
+- 3817 3825
+- 3825
+: 3848 3 4 To 
+: 3853 2 4 the 
+: 3857 3 4 good 
+: 3865 3 -1 old 
+* 3873 15 -1 days
+* 3889 5 -3 ~ 
+- 3894
+: 3912 2 4 When 
+: 3916 2 4 our 
+: 3920 5 4 ma
+: 3928 1 0 ma 
+: 3937 13 0 sang 
+: 3952 3 0 us 
+* 3961 2 9 to 
+: 3969 2 7 sleep 
+- 3971
+: 3977 4 0 But 
+: 3984 6 -1 now 
+: 3993 3 9 we’re 
+: 4001 3 7 stressed 
+: 4009 7 2 out
+: 4017 1 4 ~ 
+- 4018
+F 4041 2 0 Used 
+F 4045 2 0 to 
+F 4049 2 0 play 
+F 4053 2 0 pre
+F 4057 4 0 tend 
+F 4065 2 0 Mon
+F 4069 3 0 ey 
+- 4072
+F 4077 2 0 We 
+F 4081 2 0 used 
+F 4085 2 0 to 
+F 4089 2 0 play 
+F 4093 2 0 pre
+F 4097 4 0 tend 
+- 4101
+F 4105 4 0 Wake 
+F 4113 2 0 up, 
+F 4117 2 0 you 
+F 4121 2 0 need 
+F 4125 2 0 the 
+F 4129 2 0 mon
+F 4133 2 0 ey 
+- 4135
+F 4145 2 0 Used 
+F 4149 2 0 to 
+F 4153 2 0 play 
+F 4157 2 0 pre
+F 4161 2 0 tend 
+- 4163
+F 4169 2 0 Used 
+F 4173 2 0 to 
+F 4177 2 0 play 
+F 4181 2 0 pre
+F 4185 2 0 tend 
+F 4193 2 0 Mon
+F 4197 2 0 ey 
+- 4199
+F 4205 2 0 We 
+F 4209 2 0 used 
+F 4213 2 0 to 
+F 4217 2 0 play 
+F 4221 2 0 pre
+F 4225 3 0 tend 
+- 4228
+F 4233 4 0 Wake 
+F 4241 2 0 up, 
+F 4245 2 0 you 
+F 4249 2 0 need 
+F 4253 2 0 the 
+F 4257 2 0 mon
+F 4261 3 0 ey 
+- 4264
+F 4273 2 0 Used 
+F 4277 2 0 to 
+F 4281 2 0 play 
+F 4285 2 0 pre
+F 4289 4 0 tend 
+- 4293
+F 4297 2 0 Give 
+F 4301 2 0 each 
+F 4305 2 0 oth
+F 4309 2 0 er 
+F 4313 2 0 dif
+F 4317 2 0 ferent 
+F 4321 4 0 names 
+- 4325
+F 4329 2 0 We 
+F 4333 2 0 would 
+F 4337 2 0 build 
+F 4341 2 0 a 
+F 4345 2 0 rock
+F 4349 2 0 et 
+F 4353 2 0 ship 
+F 4357 2 0 and 
+F 4361 2 0 then 
+F 4365 2 0 we’d 
+F 4369 2 0 fly 
+F 4373 2 0 it 
+F 4377 2 0 far 
+F 4381 2 0 a
+F 4385 1 0 way 
+- 4386
+F 4389 2 0 I 
+F 4393 2 0 used 
+F 4397 2 0 to 
+F 4401 2 0 dream 
+F 4405 2 0 of 
+F 4409 2 0 out
+F 4413 2 0 er 
+F 4417 1 0 space 
+- 4418
+F 4421 2 0 But 
+F 4425 2 0 now 
+F 4429 2 0 they’re 
+F 4433 2 0 laugh
+F 4437 2 0 ing 
+F 4441 2 0 at 
+F 4445 2 0 our 
+F 4449 3 0 face 
+- 4452
+F 4457 2 0 Say
+F 4461 2 0 ing, 
+F 4465 4 0 “Wake 
+F 4473 2 0 up, 
+F 4477 2 0 you 
+F 4481 2 0 need 
+F 4485 2 0 to 
+F 4489 4 0 make 
+F 4497 2 0 mo
+F 4501 2 0 ney.” 
+- 4503
+F 4513 8 0 Ya’ll 
+E
