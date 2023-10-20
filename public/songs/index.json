@@ -1007,6 +1007,34 @@
     "local": false
   },
   {
+    "id": "alter-bridge-metalingus-edge-entrance",
+    "title": "Metalingus (Edge Entrance)",
+    "artist": "Alter Bridge",
+    "language": "English",
+    "bpm": 220,
+    "bar": 4,
+    "gap": 6987.272727272727,
+    "video": "z6rhLTg6M7A",
+    "year": "2004",
+    "lastUpdate": "2023-10-20T17:17:05.712Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.8,
+    "author": "Sabu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alterbridgemetalingusedgeentrance",
+    "local": false
+  },
+  {
     "id": "amaral-sin-ti-no-soy-nada",
     "title": "Sin ti no soy nada",
     "artist": "Amaral",
@@ -3060,6 +3088,36 @@
     "local": false
   },
   {
+    "id": "bruno-mars-it-will-rain",
+    "title": "It Will Rain",
+    "artist": "Bruno Mars",
+    "language": "English",
+    "bpm": 300.04,
+    "bar": 4,
+    "gap": 3350.1333155579255,
+    "video": "W-w3WfgpcGg",
+    "year": "2011",
+    "lastUpdate": "2023-10-20T17:17:05.715Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 150,
+    "previewStart": 30,
+    "previewEnd": 60,
+    "volume": 1,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "It will Rain (Bruna Mars)",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "brunomarsitwillrain",
+    "local": false
+  },
+  {
     "id": "bruno-mars-just-the-way-you-are",
     "title": "Just The Way You Are",
     "artist": "Bruno Mars",
@@ -4442,6 +4500,37 @@
     "local": false
   },
   {
+    "id": "dean-martin-thats-amore",
+    "title": "That’s amore",
+    "artist": "Dean Martin",
+    "language": "English",
+    "bpm": 443.85,
+    "bar": 4,
+    "gap": 2703.6250705815924,
+    "video": "OnFlx2Lnr9Q",
+    "year": "1953",
+    "lastUpdate": "2023-10-20T17:17:05.716Z",
+    "edition": "None",
+    "genre": "Jazz",
+    "videoGap": 0,
+    "realBpm": 79,
+    "volume": 0.75,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 30
+      },
+      {
+        "start": 30
+      }
+    ],
+    "tracksCount": 2,
+    "search": "deanmartinthatsamore",
+    "local": false
+  },
+  {
     "id": "deep-purple-highway-star",
     "title": "Highway Star",
     "artist": "Deep Purple",
@@ -5413,6 +5502,34 @@
     "local": false
   },
   {
+    "id": "eddie-murphy-party-all-the-time",
+    "title": "Party All The Time",
+    "artist": "Eddie Murphy",
+    "language": "English",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 45900,
+    "video": "iWa-6g-TbgI",
+    "year": "1985",
+    "lastUpdate": "2023-10-20T17:17:05.717Z",
+    "videoGap": 0,
+    "realBpm": 135,
+    "previewStart": 72,
+    "previewEnd": 102,
+    "volume": 0.7,
+    "author": "Viktor1234678",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eddiemurphypartyallthetime",
+    "local": false
+  },
+  {
     "id": "edmund-fetting-czterej-pancerni",
     "title": "Czterej Pancerni",
     "artist": "Edmund Fetting",
@@ -6268,6 +6385,34 @@
     "local": false
   },
   {
+    "id": "fleetwood-mac-everywhere",
+    "title": "Everywhere",
+    "artist": "Fleetwood Mac",
+    "language": "English",
+    "bpm": 229.5,
+    "bar": 4,
+    "gap": 23239.607843137255,
+    "video": "YF1R0hc5Q2I",
+    "year": "1987",
+    "lastUpdate": "2023-10-20T17:17:05.717Z",
+    "edition": "None",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.75,
+    "author": "macgyver2809",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fleetwoodmaceverywhere",
+    "local": false
+  },
+  {
     "id": "florence-the-machine-dog-days-are-over",
     "title": "Dog Days Are Over",
     "artist": "Florence + the Machine",
@@ -6787,6 +6932,33 @@
     ],
     "tracksCount": 1,
     "search": "georgemichaelcarelesswhisper",
+    "local": false
+  },
+  {
+    "id": "gfriend-me-gustas-tu",
+    "title": "Me gustas tu",
+    "artist": "GFRIEND",
+    "language": "Korean",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 16850,
+    "video": "oixRBiOteWY",
+    "year": "2015",
+    "lastUpdate": "2023-10-20T17:17:05.718Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 106,
+    "volume": 0.7,
+    "author": "Amandine-z-z",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gfriendmegustastu",
     "local": false
   },
   {
@@ -8492,6 +8664,36 @@
     ],
     "tracksCount": 1,
     "search": "julietavenegaslimonysal",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-love-yourself",
+    "title": "Love Yourself",
+    "artist": "Justin Bieber",
+    "language": "English",
+    "bpm": 200.04,
+    "bar": 4,
+    "gap": 9195.194961007799,
+    "video": "oyEuk8j8imI",
+    "year": "2015",
+    "lastUpdate": "2023-10-20T17:17:05.720Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 100,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.65,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberloveyourself",
     "local": false
   },
   {
@@ -11263,6 +11465,35 @@
     ],
     "tracksCount": 1,
     "search": "majkajezowskaajawolemojamame",
+    "local": false
+  },
+  {
+    "id": "major-lazer-dj-snake-feat-mo-lean-on",
+    "title": "Lean On",
+    "artist": "Major Lazer & DJ Snake feat. MØ",
+    "language": "English",
+    "bpm": 392,
+    "bar": 4,
+    "gap": 9205.102040816326,
+    "video": "YqeW9_5kURI",
+    "year": "2015",
+    "lastUpdate": "2023-10-20T17:17:05.721Z",
+    "genre": "EDM",
+    "videoGap": 0,
+    "realBpm": 98,
+    "previewStart": 45,
+    "previewEnd": 75,
+    "volume": 0.6,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Major%20Lazer%20%26%20DJ%20Snake%20feat.%20M%C3%98",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "majorlazerdjsnakefeatmoleanon",
     "local": false
   },
   {
@@ -15632,6 +15863,35 @@
     ],
     "tracksCount": 1,
     "search": "radioheadnosurprises",
+    "local": false
+  },
+  {
+    "id": "radwimps-feat-toaka-suzume",
+    "title": "Suzume",
+    "artist": "Radwimps feat. Toaka",
+    "language": "Japanese (romanized)",
+    "bpm": 312,
+    "bar": 4,
+    "gap": -179.61538461538464,
+    "video": "Xs0Lxif1u9E",
+    "year": "2022",
+    "lastUpdate": "2023-10-20T17:17:05.722Z",
+    "genre": "Soundtrack",
+    "videoGap": 0,
+    "realBpm": 78,
+    "previewStart": 20,
+    "previewEnd": 62,
+    "volume": 0.7,
+    "author": "wolf359",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "radwimpsfeattoakasuzume",
     "local": false
   },
   {
