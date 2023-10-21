@@ -4,7 +4,7 @@ import 'GameEvents/eventListeners';
 import 'Stats';
 import 'utils/exposeSingletons';
 
-import { init } from '@sentry/react';
+import { init, setUser } from '@sentry/react';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { ToastContainer, toast } from 'react-toastify';
@@ -15,7 +15,9 @@ import { v4 } from 'uuid';
 import App from './App';
 import './index.css';
 
-if (import.meta.env.VITE_APP_SENTRY_DSN_URL) {
+const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
+
+if (isSentryEnabled) {
   init({
     dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
 
@@ -39,6 +41,10 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
         localStorage.setItem('posthog-user-id', storedUser);
       }
       ph.identify(storedUser);
+
+      if (isSentryEnabled) {
+        setUser({ id: storedUser });
+      }
     },
   });
 }

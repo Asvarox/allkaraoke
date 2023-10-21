@@ -7,8 +7,12 @@ type Callback = (e?: KeyboardEvent) => void;
 // All besides H (help) character
 export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
 
-// @ts-expect-error
-navigator?.keyboard?.lock(['Escape']);
+try {
+  // @ts-expect-error
+  navigator?.keyboard?.lock(['Escape']);
+} catch (e) {
+  console.warn(e);
+}
 
 // @ts-expect-error
 export const supportsEscAsBack = !!navigator?.keyboard?.lock;
