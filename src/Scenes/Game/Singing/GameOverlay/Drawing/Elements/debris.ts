@@ -1,4 +1,21 @@
-export default function triangle(
+import ray from './ray';
+
+export default function debris(
+  canvas: HTMLCanvasElement,
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+  angle: number,
+  color: string | CanvasGradient | CanvasPattern,
+  alpha: number = 1,
+) {
+  ray(canvas, ctx, x, y, width, height, color, alpha);
+}
+
+function triangle(
+  canvas: HTMLCanvasElement,
   ctx: CanvasRenderingContext2D,
   x: number,
   y: number,

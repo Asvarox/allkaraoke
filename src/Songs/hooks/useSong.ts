@@ -7,7 +7,7 @@ import SongDao from 'Songs/SongsService';
 import { Song } from 'interfaces';
 import { useEffect, useState } from 'react';
 
-const processSong = (song: Song) => {
+export const processSong = (song: Song) => {
   let processed = normaliseGap(song);
   processed = addHeadstart(processed);
   processed = normaliseSectionPaddings(processed);

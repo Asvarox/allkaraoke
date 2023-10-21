@@ -41,7 +41,7 @@ export interface LoadVideByIdOpts {
 }
 
 export interface VideoPlayerRef {
-  seekTo: (time: number) => void;
+  seekTo: (time: seconds) => void;
   setPlaybackSpeed: (speed: number) => void;
   setVolume: (newVolume: number) => void;
   getCurrentTime: () => Promise<number>;

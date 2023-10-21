@@ -1,9 +1,11 @@
-import triangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/triangle';
+import debris from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/debris';
 import spreadValue, { randomSign } from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/utils';
 import Particle from '../interfaces';
 
 const baseTtl = (50 / 60) * 1000;
 const ttlSpread = (25 / 60) * 1000;
+
+const initialWidth = 60;
 
 const velocityModifier = 0.3;
 
@@ -22,7 +24,7 @@ export default class TriangleParticle implements Particle {
     this.startingTtl = this.ttl = spreadValue(baseTtl, ttlSpread);
     this.velocityX = spreadValue(0.5, velocityModifier) * randomSign(0.2);
     this.velocityY = spreadValue(0.4, velocityModifier) * randomSign();
-    this.width = 25;
+    this.width = initialWidth;
     this.initialAngle = 180 - Math.random() * 360;
     this.heightModifier = 0.5 + Math.random() / 2;
   }
@@ -38,7 +40,7 @@ export default class TriangleParticle implements Particle {
     const x = this.x - width / 2 + elapsedTicks * this.velocityX;
     const y = this.y - height / 2 + elapsedTicks * this.velocityY;
 
-    triangle(ctx, x, y, width, height, this.initialAngle + elapsedTicks, this.color, 0.8 * percentage);
+    debris(canvas, ctx, x, y, width, height, this.initialAngle + elapsedTicks, this.color, 0.8 * percentage);
 
     this.velocityX = this.velocityX - 0.009;
     this.velocityY = this.velocityY * 1.0075;

@@ -1,4 +1,4 @@
-import triangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/triangle';
+import debris from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/debris';
 import spreadValue from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/utils';
 import Particle from '../interfaces';
 
@@ -36,7 +36,7 @@ export default class SungTriangle implements Particle {
     const x = this.x - width / 2 + ticksLeft * this.velocityX;
     const y = this.y + height / 2 + ticksLeft * this.velocityY;
 
-    triangle(ctx, x, y, width, height, this.initialAngle + ticksLeft, this.color, 0.7 * percentage);
+    debris(canvas, ctx, x, y, width, height, this.initialAngle + ticksLeft, this.color, 0.7 * percentage);
 
     this.ttl = this.ttl - delta;
     this.finished = this.ttl <= 0;

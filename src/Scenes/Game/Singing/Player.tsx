@@ -1,9 +1,9 @@
-import { PlayerSetup, SingSetup, Song } from 'interfaces';
+import { PlayerSetup, seconds, SingSetup, Song } from 'interfaces';
 import {
   ComponentProps,
   ForwardedRef,
-  MutableRefObject,
   forwardRef,
+  MutableRefObject,
   useCallback,
   useEffect,
   useImperativeHandle,
@@ -14,10 +14,10 @@ import {
 
 import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { FPSCountSetting, InputLagSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import usePrevious from 'hooks/usePrevious';
+import { FPSCountSetting, InputLagSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import PauseMenu from './GameOverlay/Components/PauseMenu';
 import GameOverlay from './GameOverlay/GameOverlay';
 import GameState from './GameState/GameState';
@@ -116,7 +116,7 @@ function Player(
   const duration = usePlayerSetDuration(player, currentStatus);
 
   useImperativeHandle(ref, () => ({
-    seekTo: (time: number) => player.current!.seekTo(time),
+    seekTo: (time: seconds) => player.current!.seekTo(time),
     setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
     play: () => player.current!.playVideo(),
     pause: () => player.current!.pauseVideo(),
