@@ -57,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/testing-library", "npm:0.2.2"],\
             ["@testing-library/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:14.0.0"],\
             ["@testing-library/user-event", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:14.5.1"],\
+            ["@types/curtainsjs", "npm:8.1.1"],\
             ["@types/dom-screen-wake-lock", "npm:1.0.1"],\
             ["@types/howler", "npm:2.2.9"],\
             ["@types/latinize", "npm:0.2.16"],\
@@ -75,6 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.34.7"],\
             ["aubiojs", "npm:0.1.0"],\
             ["core-js", "npm:3.33.0"],\
+            ["curtainsjs", "npm:8.1.5"],\
             ["date-fns", "npm:2.30.0"],\
             ["dotenv", "npm:16.3.1"],\
             ["eslint", "npm:8.51.0"],\
@@ -7672,6 +7674,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/curtainsjs", [\
+        ["npm:8.1.1", {\
+          "packageLocation": "./.yarn/cache/@types-curtainsjs-npm-8.1.1-c13d0c6b6f-c3fde1d7de.zip/node_modules/@types/curtainsjs/",\
+          "packageDependencies": [\
+            ["@types/curtainsjs", "npm:8.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/detect-port", [\
         ["npm:1.3.2", {\
           "packageLocation": "./.yarn/cache/@types-detect-port-npm-1.3.2-b814d5e42a-e4678244fb.zip/node_modules/@types/detect-port/",\
@@ -10982,6 +10993,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/csstype-npm-3.1.2-cead7d99b2-e1a52e6c25.zip/node_modules/csstype/",\
           "packageDependencies": [\
             ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["curtainsjs", [\
+        ["npm:8.1.5", {\
+          "packageLocation": "./.yarn/cache/curtainsjs-npm-8.1.5-1d10752bc9-5575deec06.zip/node_modules/curtainsjs/",\
+          "packageDependencies": [\
+            ["curtainsjs", "npm:8.1.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15963,6 +15983,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/testing-library", "npm:0.2.2"],\
             ["@testing-library/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:14.0.0"],\
             ["@testing-library/user-event", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:14.5.1"],\
+            ["@types/curtainsjs", "npm:8.1.1"],\
             ["@types/dom-screen-wake-lock", "npm:1.0.1"],\
             ["@types/howler", "npm:2.2.9"],\
             ["@types/latinize", "npm:0.2.16"],\
@@ -15981,6 +16002,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.34.7"],\
             ["aubiojs", "npm:0.1.0"],\
             ["core-js", "npm:3.33.0"],\
+            ["curtainsjs", "npm:8.1.5"],\
             ["date-fns", "npm:2.30.0"],\
             ["dotenv", "npm:16.3.1"],\
             ["eslint", "npm:8.51.0"],\

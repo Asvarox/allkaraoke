@@ -8,7 +8,7 @@ const getColors = (color: string) => {
     const c = tinycolor(color);
     cachedColors[color] = [
       [c.setAlpha(0.8).toRgbString(), c.setAlpha(0.9).toRgbString(), c.setAlpha(1).toRgbString()],
-      ['rgba(255, 255, 255, 0)'],
+      [c.setAlpha(0).toRgbString()],
       [c.setAlpha(0.1).toRgbString(), c.setAlpha(0.3).toRgbString(), c.setAlpha(0.2).toRgbString()],
     ];
   }
@@ -26,6 +26,8 @@ export default function ray(
   color: string | any,
   alpha: number = 1,
 ) {
+  if (width <= 0) return;
+
   ctx.globalAlpha = 1;
   const gradient = ctx.createRadialGradient(x, y, 0, x, y, width / 2);
   const [cFirst, cLast, c0] = getColors(color);

@@ -1,10 +1,13 @@
 import { NotesSection, Section } from 'interfaces';
 import isNotesSection from './isNotesSection';
 
+export const getFirstNoteFromSection = (section: NotesSection) => {
+  return section.notes[0];
+};
 export const getFirstNoteStartFromSections = (sections: Section[]) => {
   const firstNoteSection = sections.find(isNotesSection);
 
-  return firstNoteSection ? firstNoteSection.notes[0].start : Infinity;
+  return firstNoteSection ? getFirstNoteFromSection(firstNoteSection).start : Infinity;
 };
 export const getLastNoteEndFromSections = (sections: Section[]) => {
   const notesSections = sections.filter(isNotesSection);

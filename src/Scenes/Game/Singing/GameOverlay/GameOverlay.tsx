@@ -3,7 +3,7 @@ import { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
 import PlayersManager from 'Players/PlayersManager';
 import SkipIntro from 'Scenes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'Scenes/Game/Singing/GameOverlay/Components/SkipOutro';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
 import { useEffect, useRef } from 'react';
 import GameState from '../GameState/GameState';
@@ -11,6 +11,9 @@ import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
 import ScoreText from './Components/ScoreText';
 import CanvasDrawing from './Drawing';
+
+import fragShader from 'Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw';
+import vertShader from 'Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw';
 
 interface Props {
   song: Song;
@@ -39,6 +42,7 @@ function GameOverlay({
   videoPlayerRef,
   isPauseMenuVisible,
 }: Props) {
+  const [graphicLevel] = useSettingValue(GraphicSetting);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const canvas = useRef<HTMLCanvasElement | null>(null);
   const drawer = useRef<CanvasDrawing | null>(null);
@@ -92,8 +96,25 @@ function GameOverlay({
 
   return (
     <Screen>
-      <GameCanvas>
-        <canvas ref={canvas} width={overlayWidth} height={overlayHeight} />
+      {graphicLevel === 'high' && (
+        <>
+          <script type={'x-shader/x-fragment'} id={'plane-fs'}>
+            {fragShader}
+          </script>
+          <script id="plane-vs" type="x-shader/x-vertex">
+            {vertShader}
+          </script>
+          <Curtains id="canvas" style={{ zIndex: 10000 }} />
+        </>
+      )}
+      <GameCanvas id="plane">
+        <canvas
+          ref={canvas}
+          width={overlayWidth}
+          height={overlayHeight}
+          data-sampler="planeTexture"
+          style={{ visibility: graphicLevel === 'high' ? 'hidden' : undefined }}
+        />
       </GameCanvas>
       {effectsEnabled && (
         <>
@@ -160,6 +181,14 @@ const GameCanvas = styled.div`
     width: 100%;
     height: 100%;
   }
+`;
+
+const Curtains = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `;
 
 const Scores = styled.div`

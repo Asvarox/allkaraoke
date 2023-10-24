@@ -9,7 +9,10 @@
     "**/__tests__/**",
     "**/*.d.ts"
   ],
-  "moduleDirectory": ["node_modules", "src/"],
+  "moduleDirectory": [
+    "node_modules",
+    "src/"
+  ],
   "rootDir": "./src",
   "ignoreUnimported": [
     "src/Scenes/Game/Singing/Input/MicStrategies/Yin.ts",
@@ -22,6 +25,13 @@
     "src/utils/testUtils.ts"
   ],
   "ignoreUnused": [],
-  "ignoreUnresolved": ["utility-types"],
-  "entry": ["src/main.tsx", "src/videos/index.ts"]
+  "ignoreUnresolved": [
+      "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw",
+      "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw",
+    "utility-types"
+  ],
+  "entry": [
+    "src/main.tsx",
+    "src/videos/index.ts"
+  ]
 }

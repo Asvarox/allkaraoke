@@ -1,9 +1,12 @@
+import { captureException } from '@sentry/react';
 import events from 'GameEvents/GameEvents';
 import PlayersManager from 'Players/PlayersManager';
 import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
 import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
+import { Shaders } from 'Scenes/Game/Singing/GameOverlay/Drawing/Shaders/Shaders';
 import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
 import isNotesSection from 'Songs/utils/isNotesSection';
+import { getFirstNoteFromSection } from 'Songs/utils/notesSelectors';
 import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
 import { randomFloat } from 'utils/randomValue';
@@ -20,6 +23,7 @@ import RayParticle from './Particles/Ray';
 import VibratoParticle from './Particles/Vibrato';
 import calculateData, { BIG_NOTE_HEIGHT, DrawingData, NOTE_HEIGHT, pitchPadding } from './calculateData';
 
+const MAX_LOOKUP_RANGE = 20;
 function getPlayerNoteAtBeat(playerNotes: PlayerNote[], beat: number) {
   return playerNotes.find((note) => note.start <= beat && note.start + note.length >= beat);
 }
@@ -34,11 +38,21 @@ export default class CanvasDrawing {
     private verticalMargin: number = 0,
     private scaleFactor: number = 1,
   ) {}
+
+  private shaders: Shaders | null = null;
   public start = () => {
     events.sectionChange.subscribe(this.onSectionEnd);
     this.loop = true;
 
     this.drawFrame();
+
+    if (GraphicSetting.get() === 'high') {
+      try {
+        this.shaders = new Shaders(this.canvas);
+      } catch (e) {
+        captureException(e);
+      }
+    }
   };
 
   public pause = () => {
@@ -49,6 +63,13 @@ export default class CanvasDrawing {
   public resume = () => {
     this.pauseTime += Date.now() - this.pausedOn;
     this.start();
+  };
+
+  public end = () => {
+    this.loop = false;
+
+    this.shaders?.cleanup();
+    events.sectionChange.unsubscribe(this.onSectionEnd);
   };
 
   public isPlaying = () => this.loop;
@@ -80,11 +101,6 @@ export default class CanvasDrawing {
     }
   };
 
-  public end = () => {
-    this.loop = false;
-    events.sectionChange.unsubscribe(this.onSectionEnd);
-  };
-
   private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
     const drawingData = this.getDrawingData(playerNumber);
     const { currentSection } = calculateData(drawingData);
@@ -94,12 +110,29 @@ export default class CanvasDrawing {
 
     this.drawNotesToSing(ctx, drawingData, displacements);
     this.drawSungNotes(ctx, drawingData, displacements);
+    if (GraphicSetting.get() === 'high') {
+      this.setDistortionForce(drawingData);
+    }
 
     if (GraphicSetting.get() === 'high') {
       this.drawFlare(ctx, drawingData, displacements);
     }
 
     false && debugPitches(ctx!, drawingData);
+  };
+
+  private setDistortionForce = (drawingData: DrawingData) => {
+    const currentSection = drawingData.currentSection;
+    if (!isNotesSection(currentSection)) return;
+    const max = Math.max(getFirstNoteFromSection(currentSection).start, drawingData.currentBeat - MAX_LOOKUP_RANGE);
+
+    const sungNotes = drawingData.currentPlayerNotes
+      .filter((note) => note.note.start + note.note.length >= max)
+      .filter((note) => getPlayerNoteDistance(note) === 0)
+      .reduce((curr, note) => curr + note.length - Math.max(0, max - note.start), 0);
+
+    const forcePercent = Math.min(Math.pow(sungNotes / MAX_LOOKUP_RANGE, 3), 0.99);
+    this.shaders?.updatePlayerForce(drawingData.playerNumber, forcePercent);
   };
 
   private drawNotesToSing = (
@@ -183,6 +216,8 @@ export default class CanvasDrawing {
           getNoteColor(ctx, drawingData.playerNumber, true, lastNote).fill,
         ),
       );
+
+      this.shaders?.updatePlayerCenter(drawingData.playerNumber, finalX, finalY);
     }
   };
 
