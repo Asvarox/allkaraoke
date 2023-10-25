@@ -1,4 +1,3 @@
-import { captureMessage, setExtras } from '@sentry/react';
 import ray from './ray';
 
 export default function debris(
@@ -14,9 +13,6 @@ export default function debris(
 ) {
   if (width > 0) {
     ray(canvas, ctx, x, y, width, height, color, alpha);
-  } else {
-    setExtras({ x, y, width, height, angle, color, alpha });
-    captureMessage('Debris with negative width');
   }
 }
 

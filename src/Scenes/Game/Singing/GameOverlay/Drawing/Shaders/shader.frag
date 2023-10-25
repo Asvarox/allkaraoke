@@ -28,7 +28,7 @@ void distort(vec2 center, float force, float zoom, float noise) {
     vec2 diff = (gl_FragCoord.xy - centerAbs.xy);
     float dist = length(diff);
 
-    vec4 newColor = texture2D(planeTexture, (centerAbs + (diff * zoom) + (noise * 50.0 * (1.0 - pow(zoom, 12.0)))) / uResolution);
+    vec4 newColor = texture2D(planeTexture, (centerAbs + (diff * zoom) + (noise * 20.0 * (1.0 - pow(zoom, 12.0)))) / uResolution);
     gl_FragColor = newColor;
 
 }

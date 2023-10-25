@@ -6,7 +6,6 @@ import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/Sung
 import { Shaders } from 'Scenes/Game/Singing/GameOverlay/Drawing/Shaders/Shaders';
 import { FPSCountSetting, GraphicSetting } from 'Scenes/Settings/SettingsState';
 import isNotesSection from 'Songs/utils/isNotesSection';
-import { getFirstNoteFromSection } from 'Songs/utils/notesSelectors';
 import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
 import { randomFloat } from 'utils/randomValue';
@@ -104,15 +103,17 @@ export default class CanvasDrawing {
   private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
     const drawingData = this.getDrawingData(playerNumber);
     const { currentSection } = calculateData(drawingData);
+
+    if (GraphicSetting.get() === 'high') {
+      this.setDistortionForce(drawingData);
+    }
+
     if (!isNotesSection(currentSection)) return;
 
     const displacements = this.calculateDisplacements(currentSection, drawingData);
 
     this.drawNotesToSing(ctx, drawingData, displacements);
     this.drawSungNotes(ctx, drawingData, displacements);
-    if (GraphicSetting.get() === 'high') {
-      this.setDistortionForce(drawingData);
-    }
 
     if (GraphicSetting.get() === 'high') {
       this.drawFlare(ctx, drawingData, displacements);
@@ -123,16 +124,30 @@ export default class CanvasDrawing {
 
   private setDistortionForce = (drawingData: DrawingData) => {
     const currentSection = drawingData.currentSection;
-    if (!isNotesSection(currentSection)) return;
-    const max = Math.max(getFirstNoteFromSection(currentSection).start, drawingData.currentBeat - MAX_LOOKUP_RANGE);
 
-    const sungNotes = drawingData.currentPlayerNotes
-      .filter((note) => note.note.start + note.note.length >= max)
-      .filter((note) => getPlayerNoteDistance(note) === 0)
-      .reduce((curr, note) => curr + note.length - Math.max(0, max - note.start), 0);
+    if (!isNotesSection(currentSection)) {
+      this.shaders?.updatePlayerForce(
+        drawingData.playerNumber,
+        (this.shaders?.getPlayerForce(drawingData.playerNumber) ?? 0) * 0.99,
+      );
+    } else {
+      const max = Math.max(0, drawingData.currentBeat - MAX_LOOKUP_RANGE);
 
-    const forcePercent = Math.min(Math.pow(sungNotes / MAX_LOOKUP_RANGE, 3), 0.99);
-    this.shaders?.updatePlayerForce(drawingData.playerNumber, forcePercent);
+      const sungNotes = drawingData.currentPlayerNotes
+        .filter((note) => note.note.start + note.note.length >= max)
+        .filter((note) => getPlayerNoteDistance(note) === 0)
+        .reduce((curr, note) => curr + note.length - Math.max(0, max - note.start), 0);
+
+      const lastPlayerNote = drawingData.currentPlayerNotes.at(-1);
+      const lastPlayerNoteEnd = (lastPlayerNote?.start ?? 0) + (lastPlayerNote?.length ?? 0);
+      const beatsSinceLastHit = drawingData.currentBeat - lastPlayerNoteEnd;
+
+      const forcePercent = Math.max(
+        Math.min(Math.pow((sungNotes - beatsSinceLastHit / 1.5) / MAX_LOOKUP_RANGE, 3), 0.99),
+        0,
+      );
+      this.shaders?.updatePlayerForce(drawingData.playerNumber, forcePercent);
+    }
   };
 
   private drawNotesToSing = (

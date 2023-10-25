@@ -6,6 +6,8 @@ export class Shaders {
   private plane: Plane;
   public constructor(private canvas: HTMLCanvasElement) {
     this.curtains = new Curtains({
+      pixelRatio: 1,
+      premultipliedAlpha: false,
       container: 'canvas',
     });
     const { gl } = this.curtains;
@@ -60,7 +62,10 @@ export class Shaders {
     this.plane.onRender(() => {
       // @ts-expect-error
       this.plane!.uniforms.time.value++;
+      // console.log(this.plane!.uniforms.p0force.value);
     });
+
+    this.canvas.style.visibility = 'hidden';
   }
 
   public updatePlayerCenter = (playerNumber: number, x: number, y: number) => {
@@ -69,6 +74,10 @@ export class Shaders {
 
   public updatePlayerForce = (playerNumber: number, force: number) => {
     this.plane.uniforms[`p${playerNumber}force`].value = force;
+  };
+
+  public getPlayerForce = (playerNumber: number) => {
+    return this.plane.uniforms[`p${playerNumber}force`].value as number;
   };
 
   public cleanup = () => {

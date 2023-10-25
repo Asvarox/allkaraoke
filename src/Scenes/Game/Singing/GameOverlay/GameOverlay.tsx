@@ -108,13 +108,7 @@ function GameOverlay({
         </>
       )}
       <GameCanvas id="plane">
-        <canvas
-          ref={canvas}
-          width={overlayWidth}
-          height={overlayHeight}
-          data-sampler="planeTexture"
-          style={{ visibility: graphicLevel === 'high' ? 'hidden' : undefined }}
-        />
+        <canvas ref={canvas} width={overlayWidth} height={overlayHeight} data-sampler="planeTexture" />
       </GameCanvas>
       {effectsEnabled && (
         <>
