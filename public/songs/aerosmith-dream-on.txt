@@ -1,5 +1,6 @@
 #ID:aerosmith-dream-on
 #ARTIST:Aerosmith
+#ARTISTORIGIN:US
 #TITLE:Dream on
 #CREATOR:gouthamma
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gouthamma
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Other
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.186Z
 #GAP:38206
 : 0 3 -2 E
 : 4 9 0 very

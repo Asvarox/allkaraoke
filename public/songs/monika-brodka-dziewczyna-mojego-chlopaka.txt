@@ -1,5 +1,6 @@
 #ID:monika-brodka-dziewczyna-mojego-chlopaka
 #ARTIST:Monika Brodka
+#ARTISTORIGIN:PL
 #TITLE:Dziewczyna mojego chłopaka
 #CREATOR:
 #CREATORURL:davidus01
@@ -10,7 +11,7 @@
 #VIDEOID:8_icFGaCtsc
 #VIDEOGAP:-1
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-01T21:23:06.731Z
+#LASTUPDATE:2023-10-27T14:01:15.413Z
 #GAP:28850
 : 7 2 2 Jak 
 : 9 2 2 zwy

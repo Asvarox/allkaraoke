@@ -1,5 +1,6 @@
 #ID:david-bowie-changes
 #ARTIST:David Bowie
+#ARTISTORIGIN:GB
 #TITLE:Changes
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.264Z
 #EDITION:SingStar Amped
 #GAP:8249,272727272728
 F 15 3 58 Oh 

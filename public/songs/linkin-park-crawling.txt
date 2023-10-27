@@ -1,5 +1,6 @@
 #ID:linkin-park-crawling
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Crawling
 #CREATOR:kaim21
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
@@ -10,6 +11,7 @@
 #VIDEOID:Gd9OhYroLN0
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.374Z
 #GAP:25912,189060642093
 - -13 1
 - 1

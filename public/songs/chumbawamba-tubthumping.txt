@@ -1,5 +1,6 @@
 #ID:chumbawamba-tubthumping
 #ARTIST:Chumbawamba
+#ARTISTORIGIN:GB
 #TITLE:Tubthumping
 #CREATOR:Leki
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,75
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.279Z
+#LASTUPDATE:2023-10-27T14:01:15.254Z
 #EDITION:SingStar ’90s [US], SingStar Summer Party [DE]
 #GAP:7245,294117647059
 : 23 3 14 I 

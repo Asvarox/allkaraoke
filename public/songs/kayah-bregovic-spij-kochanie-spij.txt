@@ -1,5 +1,6 @@
 #ID:kayah-bregovic-spij-kochanie-spij
 #ARTIST:Kayah & Bregovic
+#ARTISTORIGIN:PL
 #TITLE:Śpij kochanie śpij
 #CREATOR:Yooma
 #CREATORURL:
@@ -10,6 +11,7 @@
 #VIDEOID:95De6ax4QTA
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.345Z
 #GAP:-72,91752577319596
 : 6 6 0 O
 : 13 6 2 o

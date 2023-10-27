@@ -3,6 +3,7 @@ import { Song } from 'interfaces';
 export const mulitrack: Song = {
   id: 'multitrack',
   artist: 'E2ETest',
+  artistOrigin: undefined,
   title: 'Multitrack',
   video: 'mcEVAY1H5As',
   language: 'Polish',

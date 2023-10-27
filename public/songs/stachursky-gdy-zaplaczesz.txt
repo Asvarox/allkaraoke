@@ -1,5 +1,6 @@
 #ID:stachursky-gdy-zaplaczesz
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Gdy Zaplaczesz
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,9
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.506Z
 #GAP:10800
 : 0 2 55 Py
 : 2 2 57 tasz 

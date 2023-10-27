@@ -1,5 +1,6 @@
 #ID:nirvana-lithium
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:Lithium
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,62
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:00:38.298Z
+#LASTUPDATE:2023-10-27T14:01:15.435Z
 #EDITION:SingStar '90s USA
 #GAP:7828,9740259740265
 : 16 5 54 I'm 

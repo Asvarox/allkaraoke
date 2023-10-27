@@ -1,5 +1,6 @@
 #ID:drowning-pool-bodies
 #ARTIST:Drowning Pool
+#ARTISTORIGIN:US
 #TITLE:Bodies
 #CREATOR:subkei
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.383Z
+#LASTUPDATE:2023-10-27T14:01:15.273Z
 #GAP:1811,9311716121138
 F 17 2 -2 Let 
 F 21 2 -4 the 

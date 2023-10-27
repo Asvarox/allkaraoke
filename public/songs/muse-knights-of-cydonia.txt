@@ -1,5 +1,6 @@
 #ID:muse-knights-of-cydonia
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Knights of Cydonia
 #CREATOR:Spys4Darwin
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Alternative Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.418Z
 #GAP:19630
 : 0 11 4 Ah
 : 14 12 4  Ah

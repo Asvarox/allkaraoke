@@ -1,5 +1,6 @@
 #ID:stachursky-dosko
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Dosko
 #CREATOR:Asvarox
 #CREATORURL:https://github.com/Asvarox/olkaraoke
@@ -12,6 +13,7 @@
 #VIDEOGAP:0
 #GENRE:Unknown
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.505Z
 #EDITION:
 #GAP:83195
 #TRACKNAMES:["No to ja poproszę colę","On chce jednak colę"]

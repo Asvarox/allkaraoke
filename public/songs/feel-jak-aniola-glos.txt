@@ -1,5 +1,6 @@
 #ID:feel-jak-aniola-glos
 #ARTIST:Feel
+#ARTISTORIGIN:PL
 #TITLE:Jak Anioła Głos
 #CREATOR:davidus01
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,9
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.293Z
 #GAP:23898
 : 0 1 7 Jak 
 : 1 1 7 A

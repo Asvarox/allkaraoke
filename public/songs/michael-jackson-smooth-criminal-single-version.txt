@@ -1,5 +1,6 @@
 #ID:michael-jackson-smooth-criminal-single-version
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Smooth Criminal (Single Version)
 #CREATOR:IC
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,5
 #LANGUAGE:English
-#LASTUPDATE:2023-03-06T14:20:13.363Z
+#LASTUPDATE:2023-10-27T14:01:15.408Z
 #EDITION:[SC]-Songs
 #GAP:29179,15780518928
 : 16 1 9 As 

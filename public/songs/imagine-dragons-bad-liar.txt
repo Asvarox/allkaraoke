@@ -1,5 +1,6 @@
 #ID:imagine-dragons-bad-liar
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Bad Liar
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.319Z
 #GAP:28190
 : 0 2 4 Oh,
 : 3 3 4  hush,

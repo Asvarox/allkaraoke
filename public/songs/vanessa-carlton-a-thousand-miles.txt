@@ -1,5 +1,6 @@
 #ID:vanessa-carlton-a-thousand-miles
 #ARTIST:Vanessa Carlton
+#ARTISTORIGIN:US
 #TITLE:A thousand miles
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
@@ -11,6 +12,7 @@
 #VIDEOGAP:19
 #GENRE:Pop Internacional
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.555Z
 #GAP:29595,15789473684
 : 25 3 6 Mak
 : 29 3 6 ing 

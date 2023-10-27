@@ -26,6 +26,7 @@ export type SongTXTKeys =
   | 'SOURCEURL'
   | 'TITLE'
   | 'ARTIST'
+  | 'ARTISTORIGIN'
   | 'BPM'
   | 'GAP'
   | 'VIDEOID';
@@ -77,6 +78,7 @@ export default function convertTxtToSong(
 
   const additionalData = {
     year: getPropertyValueFromTxt(text, 'YEAR'),
+    artistOrigin: getPropertyValueFromTxt(text, 'ARTISTORIGIN'),
     lastUpdate: getPropertyValueFromTxt(text, 'LASTUPDATE'),
     edition: getPropertyValueFromTxt(text, 'EDITION'),
     genre: getPropertyValueFromTxt(text, 'GENRE'),

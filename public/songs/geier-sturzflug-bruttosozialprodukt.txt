@@ -1,5 +1,6 @@
 #ID:geier-sturzflug-bruttosozialprodukt
 #ARTIST:Geier Sturzflug
+#ARTISTORIGIN:DE
 #TITLE:Bruttosozialprodukt
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:Rock
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:26:00.093Z
+#LASTUPDATE:2023-10-27T14:01:15.302Z
 #EDITION:SingStar ’80s [DE]
 #GAP:2794,224502112251
 : 22 4 2 Wenn 

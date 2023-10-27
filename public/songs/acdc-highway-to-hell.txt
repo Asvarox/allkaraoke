@@ -1,5 +1,6 @@
 #ID:acdc-highway-to-hell
 #ARTIST:AC/DC
+#ARTISTORIGIN:AU
 #TITLE:Highway To Hell
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Hard Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.175Z
 #GAP:17212,757301628328
 - -14 1
 - 1

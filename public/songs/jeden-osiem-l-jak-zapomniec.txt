@@ -1,5 +1,6 @@
 #ID:jeden-osiem-l-jak-zapomniec
 #ARTIST:Jeden Osiem L
+#ARTISTORIGIN:PL
 #TITLE:Jak zapomniec
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.327Z
 #EDITION:SingStar ESKA
 #GAP:10564,29411764706
 : 23 2 59 Ile

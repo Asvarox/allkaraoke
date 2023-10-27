@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-heathens
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:Heathens
 #CREATOR:ga the milk
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Soundtrack
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.335Z
+#LASTUPDATE:2023-10-27T14:01:15.549Z
 #GAP:20060
 : 24 4 11 All 
 : 32 4 12 my 

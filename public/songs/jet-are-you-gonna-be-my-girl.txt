@@ -1,5 +1,6 @@
 #ID:jet-are-you-gonna-be-my-girl
 #ARTIST:Jet
+#ARTISTORIGIN:AU
 #TITLE:Are You Gonna Be My Girl
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,81
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.331Z
 #EDITION:Ultrastar Rocks!
 #GAP:22250
 : 0 22 52 Go

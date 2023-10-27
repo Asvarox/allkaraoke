@@ -1,5 +1,6 @@
 #ID:meskie-granie-orkiestra-poczatek
 #ARTIST:Męskie Granie Orkiestra
+#ARTISTORIGIN:PL
 #TITLE:Początek
 #CREATOR:Asvarox
 #CREATORURL:https://github.com/Asvarox/olkaraoke
@@ -11,6 +12,7 @@
 #VIDEOGAP:32
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.402Z
 #EDITION:
 #GAP:40095
 : 22 6 -9 Sny 

@@ -1,5 +1,6 @@
 #ID:majka-jezowska-a-ja-wole-moja-mame
 #ARTIST:Majka Jeżowska
+#ARTISTORIGIN:PL
 #TITLE:A ja wolę moją mamę
 #CREATOR:Corvus5
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.390Z
 #EDITION:Singstar 80s Polish
 #GAP:19553,108386288375
 - 0 1

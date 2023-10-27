@@ -1,5 +1,6 @@
 #ID:foo-fighters-all-my-life
 #ARTIST:Foo Fighters
+#ARTISTORIGIN:US
 #TITLE:All My Life
 #CREATOR:mrfypower
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Rock Alternativo
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T11:39:19.743Z
+#LASTUPDATE:2023-10-27T14:01:15.296Z
 #GAP:16768,441403926234
 : 22 4 10 All 
 : 28 4 10 my 

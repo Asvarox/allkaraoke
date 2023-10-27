@@ -1,5 +1,6 @@
 #ID:rudi-schubert-monika-dziewczyna-ratownika
 #ARTIST:Rudi Schubert
+#ARTISTORIGIN:DE
 #TITLE:Monika dziewczyna ratownika
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.484Z
 #GAP:4221,935483870968
 : 25 4 4 Na 
 : 31 4 9 pla

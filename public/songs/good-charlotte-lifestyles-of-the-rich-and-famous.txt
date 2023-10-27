@@ -1,5 +1,6 @@
 #ID:good-charlotte-lifestyles-of-the-rich-and-famous
 #ARTIST:Good Charlotte
+#ARTISTORIGIN:US
 #TITLE:Lifestyles Of The Rich And Famous
 #CREATOR:masterxy
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.285Z
+#LASTUPDATE:2023-10-27T14:01:15.306Z
 #GAP:11931,299435028248
 : 14 1 20 On
 : 16 1 20 ly 

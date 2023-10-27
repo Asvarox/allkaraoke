@@ -1,5 +1,6 @@
 #ID:zbigniew-wodecki-chalupy-welcome-to
 #ARTIST:Zbigniew Wodecki
+#ARTISTORIGIN:PL
 #TITLE:Chalupy welcome to
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,8
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.567Z
 #EDITION:SingStar '80s Polish
 #GAP:5015,956947162426
 : 17 3 64 Jak

@@ -1,5 +1,6 @@
 #ID:pink-floyd-high-hopes
 #ARTIST:Pink Floyd
+#ARTISTORIGIN:GB
 #TITLE:High Hopes
 #CREATOR:WingXero *Subkei
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Progressive Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.040Z
+#LASTUPDATE:2023-10-27T14:01:15.456Z
 #GAP:41401,66389351081
 : 20 2 0 Be
 : 24 6 0 yond 

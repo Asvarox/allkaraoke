@@ -1,5 +1,6 @@
 #ID:backstreet-boys-i-want-it-that-way
 #ARTIST:Backstreet Boys
+#ARTISTORIGIN:US
 #TITLE:I Want It That Way
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
@@ -10,6 +11,7 @@
 #VIDEOID:4fndeDfaWCg
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.210Z
 #GAP:8802,653865588682
 : 26 4 11 Yeah
 : 31 2 13 ~

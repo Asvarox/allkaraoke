@@ -1,5 +1,6 @@
 #ID:lady-gaga-feat-beyonce-telephone
 #ARTIST:Lady Gaga feat. Beyoncé
+#ARTISTORIGIN:US
 #TITLE:Telephone
 #CREATOR:petiboy20
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.034Z
+#LASTUPDATE:2023-10-27T14:01:15.362Z
 #EDITION:[DUET]-Songs
 #GAP:6826,393442622952
 #TRACKNAMES:["Lady Gaga","Beyonce"]

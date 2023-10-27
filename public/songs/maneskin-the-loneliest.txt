@@ -1,5 +1,6 @@
 #ID:maneskin-the-loneliest
 #ARTIST:Måneskin
+#ARTISTORIGIN:IT
 #TITLE:The Loneliest
 #CREATOR:Angs
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=angs
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-20T14:13:53.968Z
+#LASTUPDATE:2023-10-27T14:01:15.392Z
 #GAP:15917,23076923077
 : 17 4 6 You'll 
 : 24 6 2 be 

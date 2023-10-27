@@ -1,5 +1,6 @@
 #ID:queen-another-one-bites-the-dust
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Another One Bites the Dust
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:5
 #VOLUME:0,85
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.462Z
 #EDITION:SingStar Queen
 #GAP:25041,67
 F 0 6 67 Ooh

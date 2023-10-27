@@ -1,5 +1,6 @@
 #ID:avenged-sevenfold-welcome-to-the-family
 #ARTIST:Avenged Sevenfold
+#ARTISTORIGIN:US
 #TITLE:Welcome To The Family
 #CREATOR:borax
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,85
 #GENRE:Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.276Z
+#LASTUPDATE:2023-10-27T14:01:15.205Z
 #GAP:5552,659574468085
 * 25 6 22 Hey 
 * 33 14 22 kid, 

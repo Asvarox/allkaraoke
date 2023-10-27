@@ -1,5 +1,6 @@
 #ID:krzysztof-krawczyk-zatanczysz-ze-mna-jeszcze-raz
 #ARTIST:Krzysztof Krawczyk
+#ARTISTORIGIN:PL
 #TITLE:Zatańczysz ze Mną Jeszcze Raz
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:-16
 #VOLUME:0,81
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.354Z
 #GAP:18690
 : 0 6 4 Kto
 : 12 2 6  za

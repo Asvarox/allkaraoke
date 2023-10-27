@@ -1,5 +1,6 @@
 #ID:abba-super-trouper
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Super Trouper
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +11,7 @@
 #VIDEOID:BshxCIjNEjY
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.172Z
 #EDITION:SingStar ABBA
 #GAP:2625
 : 0 5 67 Su

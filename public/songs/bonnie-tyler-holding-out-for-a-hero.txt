@@ -1,5 +1,6 @@
 #ID:bonnie-tyler-holding-out-for-a-hero
 #ARTIST:Bonnie Tyler
+#ARTISTORIGIN:GB
 #TITLE:Holding Out For A Hero
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,91
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.232Z
 #GAP:32356,319839411175
 : 20 3 2 Where 
 : 24 2 4 have 

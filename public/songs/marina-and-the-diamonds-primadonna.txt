@@ -1,5 +1,6 @@
 #ID:marina-and-the-diamonds-primadonna
 #ARTIST:Marina and the Diamonds
+#ARTISTORIGIN:GB
 #TITLE:Primadonna
 #CREATOR:ChrissyLeggs
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.387Z
+#LASTUPDATE:2023-10-27T14:01:15.396Z
 #GAP:5363,90625
 : 17 3 23 Pri
 : 21 2 21 ma

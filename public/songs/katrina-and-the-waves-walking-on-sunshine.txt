@@ -1,5 +1,6 @@
 #ID:katrina-and-the-waves-walking-on-sunshine
 #ARTIST:Katrina And The Waves
+#ARTISTORIGIN:GB
 #TITLE:Walking On Sunshine
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,9
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.343Z
 #EDITION:SingStar '80s
 #GAP:8723,758169934641
 F 15 3 70 Ow

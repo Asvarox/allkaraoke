@@ -1,5 +1,6 @@
 #ID:breakout-kiedy-bylem-malym-chlopcem
 #ARTIST:Breakout
+#ARTISTORIGIN:PL
 #TITLE:Kiedy byłem małym chłopcem
 #CREATOR:Pit33
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Blues
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.234Z
 #GAP:23489,81589958159
 : 16 3 14 Kie
 : 20 2 11 dy 

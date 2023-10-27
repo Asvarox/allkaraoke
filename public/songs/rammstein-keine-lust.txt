@@ -1,5 +1,6 @@
 #ID:rammstein-keine-lust
 #ARTIST:Rammstein
+#ARTISTORIGIN:DE
 #TITLE:Keine Lust
 #CREATOR:NoeliaMicaela
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
@@ -11,7 +12,7 @@
 #VIDEOGAP:103
 #VOLUME:0,7
 #LANGUAGE:German
-#LASTUPDATE:2023-04-19T20:32:58.191Z
+#LASTUPDATE:2023-10-27T14:01:15.472Z
 #GAP:133491,27050516024
 F 18 1 0 Ich 
 F 20 1 0 hab' 

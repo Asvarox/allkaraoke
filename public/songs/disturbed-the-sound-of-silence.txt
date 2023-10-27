@@ -1,5 +1,6 @@
 #ID:disturbed-the-sound-of-silence
 #ARTIST:Disturbed
+#ARTISTORIGIN:US
 #TITLE:The Sound Of Silence
 #CREATOR:subkei
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,5
 #LANGUAGE:English
-#LASTUPDATE:2023-05-21T20:55:27.616Z
+#LASTUPDATE:2023-10-27T14:01:15.271Z
 #GAP:21404,91697157332
 : 14 1 -6 Hel
 : 18 4 -6 lo 

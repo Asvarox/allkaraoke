@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-scar-tissue
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Scar Tissue
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:53:19.016Z
+#LASTUPDATE:2023-10-27T14:01:15.475Z
 #GAP:10372
 : 24 7 9 Scar 
 : 33 4 9 tis

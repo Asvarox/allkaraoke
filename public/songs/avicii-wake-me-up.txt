@@ -1,5 +1,6 @@
 #ID:avicii-wake-me-up
 #ARTIST:Avicii
+#ARTISTORIGIN:SE
 #TITLE:Wake Me Up
 #CREATOR:snake84
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1645
@@ -10,7 +11,7 @@
 #VIDEOID:IcrbM1l_BoI
 #VIDEOGAP:0
 #LANGUAGE:English
-#LASTUPDATE:2022-12-30T13:12:33.920Z
+#LASTUPDATE:2023-10-27T14:01:15.206Z
 #GAP:7511,774193548387
 : 17 1 11 Fee
 : 19 1 11 ling 

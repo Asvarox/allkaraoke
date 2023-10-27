@@ -1,5 +1,6 @@
 #ID:vanilla-ice-ice-ice-baby
 #ARTIST:Vanilla Ice
+#ARTISTORIGIN:US
 #TITLE:Ice Ice Baby
 #CREATOR:melinas@upenn.edu
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.340Z
+#LASTUPDATE:2023-10-27T14:01:15.556Z
 #EDITION:SingStar ’80s [NL|PL|UK], SingStar ’90s [US]
 #GAP:11961,633311814074
 : 15 2 14 Yo 

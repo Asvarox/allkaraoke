@@ -1,5 +1,6 @@
 #ID:paulina-rubio-y-yo-sigo-aqui
 #ARTIST:Paulina Rubio
+#ARTISTORIGIN:MX
 #TITLE:Y yo sigo aquí
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.583Z
+#LASTUPDATE:2023-10-27T14:01:15.447Z
 #EDITION:SingStar Latino
 #GAP:28099,29411764706
 : 23 2 60 Tu 

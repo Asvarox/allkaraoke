@@ -1,5 +1,6 @@
 #ID:queen-we-will-rock-you
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:We Will Rock You
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:5
 #VOLUME:0,9
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.469Z
 #EDITION:SingStar Queen
 #GAP:18372,85
 : 0 1 62 Bud

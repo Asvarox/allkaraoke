@@ -1,5 +1,6 @@
 #ID:lady-pank-zawsze-tam-gdzie-ty
 #ARTIST:Lady Pank
+#ARTISTORIGIN:PL
 #TITLE:Zawsze tam gdzie Ty
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.367Z
 #GAP:22650
 : 0 5 7 Za
 : 5 4 7 mie

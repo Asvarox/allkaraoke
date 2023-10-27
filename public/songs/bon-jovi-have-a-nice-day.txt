@@ -1,5 +1,6 @@
 #ID:bon-jovi-have-a-nice-day
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Have a nice day
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:19
 #GENRE:Hard Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.229Z
 #EDITION:Rock Band Store 2010 Vol. 4
 #GAP:27459
 : 0 11 23 Why

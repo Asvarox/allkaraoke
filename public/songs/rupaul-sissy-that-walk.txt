@@ -1,5 +1,6 @@
 #ID:rupaul-sissy-that-walk
 #ARTIST:RuPaul
+#ARTISTORIGIN:US
 #TITLE:Sissy That Walk
 #CREATOR:REL
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=77104
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Unknown
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T22:33:36.001Z
+#LASTUPDATE:2023-10-27T14:01:15.484Z
 #GAP:7300
 : 20 4 4 Pick 
 : 25 4 4 my

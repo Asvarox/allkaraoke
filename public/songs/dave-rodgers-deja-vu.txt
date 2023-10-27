@@ -1,5 +1,6 @@
 #ID:dave-rodgers-deja-vu
 #ARTIST:Dave Rodgers
+#ARTISTORIGIN:IT
 #TITLE:Deja Vu
 #CREATOR:Beneblade
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
@@ -10,6 +11,7 @@
 #VIDEOID:dv13gl0a-FA
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.263Z
 #GAP:38882,27272727273
 : 21 6 0 Shoot 
 * 29 2 3 your 

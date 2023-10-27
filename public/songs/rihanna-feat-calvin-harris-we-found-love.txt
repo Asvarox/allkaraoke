@@ -1,5 +1,6 @@
 #ID:rihanna-feat-calvin-harris-we-found-love
 #ARTIST:Rihanna feat. Calvin Harris
+#ARTISTORIGIN:BB
 #TITLE:We Found Love
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
@@ -11,7 +12,7 @@
 #VIDEOGAP:54
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T21:06:14.478Z
+#LASTUPDATE:2023-10-27T14:01:15.479Z
 #GAP:58798,98406374502
 : 17 3 8 Yel
 : 21 3 10 low 

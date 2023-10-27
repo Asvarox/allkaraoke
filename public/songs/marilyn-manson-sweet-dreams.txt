@@ -1,5 +1,6 @@
 #ID:marilyn-manson-sweet-dreams
 #ARTIST:Marilyn Manson
+#ARTISTORIGIN:US
 #TITLE:Sweet Dreams
 #CREATOR:haistshomie666
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.304Z
+#LASTUPDATE:2023-10-27T14:01:15.395Z
 #GAP:13911,596638655463
 : 20 11 14 Sweet 
 : 36 13 14 dreams 

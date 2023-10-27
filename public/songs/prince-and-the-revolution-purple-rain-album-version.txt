@@ -1,5 +1,6 @@
 #ID:prince-and-the-revolution-purple-rain-album-version
 #ARTIST:Prince and the Revolution
+#ARTISTORIGIN:US
 #TITLE:Purple Rain (Album Version)
 #CREATOR:
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-03-06T13:33:12.847Z
+#LASTUPDATE:2023-10-27T14:01:15.460Z
 #EDITION:Pop
 #GAP:18250,172413793105
 : 15 2 0 I 

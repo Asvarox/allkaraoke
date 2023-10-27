@@ -1,5 +1,6 @@
 #ID:tina-turner-goldeneye
 #ARTIST:Tina Turner
+#ARTISTORIGIN:US
 #TITLE:GoldenEye
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -10,6 +11,7 @@
 #VIDEOID:4hGQ97tCTOs
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.542Z
 #GAP:23461,8482252142
 : 14 3 0 See 
 : 18 3 -2 re

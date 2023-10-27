@@ -1,5 +1,6 @@
 #ID:queen-radio-ga-ga
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Radio Ga Ga
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:1
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.468Z
 #EDITION:SingStar Anthem
 #GAP:61549,02
 : 0 3 60 I'd

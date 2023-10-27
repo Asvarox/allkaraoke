@@ -1,5 +1,6 @@
 #ID:the-rolling-stones-paint-it-black
 #ARTIST:The Rolling Stones
+#ARTISTORIGIN:GB
 #TITLE:Paint It, Black
 #CREATOR:Peschi
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.535Z
 #EDITION:SingStar Rocks
 #GAP:13814,433962264151
 : 21 5 53 I 

@@ -1,5 +1,6 @@
 #ID:carlos-vives-y-shakira-la-bicicleta
 #ARTIST:Carlos Vives y Shakira
+#ARTISTORIGIN:CO
 #TITLE:La bicicleta
 #CREATOR:Volodia
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,63
 #GENRE:Vallenato
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.557Z
+#LASTUPDATE:2023-10-27T14:01:15.244Z
 #GAP:18067
 : 24 9 12 Na
 : 34 6 7 ~

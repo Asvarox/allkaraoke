@@ -1,5 +1,6 @@
 #ID:urszula-konik-na-biegunach
 #ARTIST:Urszula
+#ARTISTORIGIN:PL
 #TITLE:Konik na biegunach
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -12,6 +13,7 @@
 #VOLUME:0,8
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.553Z
 #GAP:-200
 : 68 3 9 Za 
 : 72 2 9 rok, 

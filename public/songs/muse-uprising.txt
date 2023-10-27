@@ -1,5 +1,6 @@
 #ID:muse-uprising
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Uprising
 #CREATOR:albanderuaz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Alternative
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.422Z
 #GAP:38963,90625
 : 34 2 0 The 
 : 38 10 2 pa

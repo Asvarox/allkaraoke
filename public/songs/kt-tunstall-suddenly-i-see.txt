@@ -1,5 +1,6 @@
 #ID:kt-tunstall-suddenly-i-see
 #ARTIST:KT Tunstall
+#ARTISTORIGIN:GB
 #TITLE:Suddenly I See
 #CREATOR:Leki
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Rock Alternativo
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.030Z
+#LASTUPDATE:2023-10-27T14:01:15.355Z
 #EDITION:SingStar Summer Party
 #GAP:13769,367844698856
 : 13 2 4 Her 

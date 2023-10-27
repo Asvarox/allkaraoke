@@ -1,5 +1,6 @@
 #ID:muse-madness
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Madness
 #CREATOR:gun88
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.418Z
 #GAP:27001
 : 0 2 10 M
 : 4 2 10  m

@@ -1,5 +1,6 @@
 #ID:loreen-tattoo-en-vivo
 #ARTIST:Loreen
+#ARTISTORIGIN:SE
 #TITLE:Tattoo (En vivo)
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
@@ -14,7 +15,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-27T19:14:16.143Z
+#LASTUPDATE:2023-10-27T14:01:15.381Z
 #GAP:28780
 : 20 3 1 I 
 : 24 2 -1 don't 

@@ -1,5 +1,6 @@
 #ID:pur-abenteuerland
 #ARTIST:Pur
+#ARTISTORIGIN:DE
 #TITLE:Abenteuerland
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
@@ -14,7 +15,7 @@
 #VOLUME:0,8
 #GENRE:Rock
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:07:01.079Z
+#LASTUPDATE:2023-10-27T14:01:15.461Z
 #EDITION:SingStar The Dome
 #GAP:12780,978260869566
 : 20 3 -3 Der 

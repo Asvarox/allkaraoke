@@ -1,5 +1,6 @@
 #ID:sylwia-grzeszczak-liber-co-z-nami-bedzie
 #ARTIST:Sylwia Grzeszczak & Liber
+#ARTISTORIGIN:PL
 #TITLE:Co z nami bedzie?
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -13,7 +14,7 @@
 #VIDEOGAP:0
 #VOLUME:0,7
 #LANGUAGE:Polish
-#LASTUPDATE:2023-07-27T19:14:16.148Z
+#LASTUPDATE:2023-10-27T14:01:15.509Z
 #EDITION:SS Polskie Hity
 #GAP:4121,625
 : 21 6 66 Kiedy 

@@ -1,5 +1,6 @@
 #ID:paul-mccartney-michael-jackson-say-say-say
 #ARTIST:Paul McCartney & Michael Jackson
+#ARTISTORIGIN:GB
 #TITLE:Say Say Say
 #CREATOR:
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,5
 #LANGUAGE:English
-#LASTUPDATE:2023-03-06T14:11:10.762Z
+#LASTUPDATE:2023-10-27T14:01:15.446Z
 #EDITION:[DUET]-Songs
 #GAP:74618,72340425532
 : 16 6 10 Say 

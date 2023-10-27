@@ -1,5 +1,6 @@
 #ID:bon-jovi-its-my-life
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:It's my life
 #CREATOR:upalula
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
@@ -10,6 +11,7 @@
 #VIDEOID:vx2u5uUu3DE
 #VIDEOGAP:23
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.229Z
 #GAP:34064
 : 0 3 10 This
 : 4 2 12  ain't

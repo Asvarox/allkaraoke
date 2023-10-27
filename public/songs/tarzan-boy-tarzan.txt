@@ -1,5 +1,6 @@
 #ID:tarzan-boy-tarzan
 #ARTIST:Tarzan Boy
+#ARTISTORIGIN:PL
 #TITLE:Tarzan
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -10,6 +11,7 @@
 #VIDEOID:UlCCg93okG0
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.513Z
 #GAP:3137,2962085308054
 F 18 4 -1 Tar
 F 24 4 -1 zan,

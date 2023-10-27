@@ -1,5 +1,6 @@
 #ID:tomasz-karolak-anarchia
 #ARTIST:Tomasz Karolak
+#ARTISTORIGIN:PL
 #TITLE:Anarchia
 #CREATOR:Angelyina
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1550
@@ -10,6 +11,7 @@
 #VIDEOID:kXlEez3xpPY
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.547Z
 #GAP:38538,685542846426
 : 11 2 -3 Co 
 : 13 2 -3 wy 

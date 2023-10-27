@@ -1,5 +1,6 @@
 #ID:idina-menzel-let-it-go
 #ARTIST:Idina Menzel
+#ARTISTORIGIN:US
 #TITLE:Let It Go
 #BPM:275
 #REALBPM:137
@@ -8,6 +9,7 @@
 #VIDEOGAP:0
 #VOLUME:0,85
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.318Z
 #GAP:14859
 : 0 2 8 The
 : 6 5 12  snow

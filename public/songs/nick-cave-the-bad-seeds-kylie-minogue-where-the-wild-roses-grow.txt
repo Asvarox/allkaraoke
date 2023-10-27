@@ -1,5 +1,6 @@
 #ID:nick-cave-the-bad-seeds-kylie-minogue-where-the-wild-roses-grow
 #ARTIST:Nick Cave & The Bad Seeds + Kylie Minogue
+#ARTISTORIGIN:AU
 #TITLE:Where The Wild Roses Grow
 #CREATOR:RES
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:16:06.810Z
+#LASTUPDATE:2023-10-27T14:01:15.430Z
 #EDITION:SingStar ’90s [UK]
 #GAP:37665,294117647056
 #TRACKNAMES:["Nick Cave","Kylie Minogue"]

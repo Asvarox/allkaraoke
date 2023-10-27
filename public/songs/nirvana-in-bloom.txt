@@ -1,5 +1,6 @@
 #ID:nirvana-in-bloom
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:In Bloom
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Grunge
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:05:03.704Z
+#LASTUPDATE:2023-10-27T14:01:15.435Z
 #EDITION:Rock Band
 #GAP:46385,216737659735
 : 27 25 17 Sell 

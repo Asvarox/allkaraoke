@@ -1,5 +1,6 @@
 #ID:soundgarden-black-hole-sun
 #ARTIST:Soundgarden
+#ARTISTORIGIN:US
 #TITLE:Black Hole Sun
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:07:20.056Z
+#LASTUPDATE:2023-10-27T14:01:15.504Z
 #EDITION:SingStar '90s USA
 #GAP:15499,951474785918
 : 14 4 60 In 

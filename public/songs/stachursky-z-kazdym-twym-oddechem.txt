@@ -1,5 +1,6 @@
 #ID:stachursky-z-kazdym-twym-oddechem
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Z kazdym Twym oddechem
 #CREATOR:
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VOLUME:0,85
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.507Z
 #EDITION:SingStar R&B Polish
 #GAP:14142,86
 : 0 8 57 Wie

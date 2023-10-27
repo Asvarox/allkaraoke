@@ -1,5 +1,6 @@
 #ID:robbie-williams-rock-dj
 #ARTIST:Robbie Williams
+#ARTISTORIGIN:GB
 #TITLE:Rock DJ
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
@@ -10,6 +11,7 @@
 #VIDEOID:BnO3nijfYmU
 #VIDEOGAP:-1
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.482Z
 #GAP:8417,181129877694
 F 27 7 7 Me
 F 35 3 7  with

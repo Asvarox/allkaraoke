@@ -1,5 +1,6 @@
 #ID:krzysztof-mielanczuk-tabaluga
 #ARTIST:Krzysztof Mielańczuk
+#ARTISTORIGIN:PL
 #TITLE:Tabaluga
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,91
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.354Z
 #GAP:5988,972602739726
 : 19 1 -5 O
 : 21 2 0 ~

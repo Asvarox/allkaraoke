@@ -1,5 +1,6 @@
 #ID:goo-goo-dolls-iris
 #ARTIST:Goo Goo Dolls
+#ARTISTORIGIN:US
 #TITLE:Iris
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.306Z
 #GAP:11033,815286624204
 - -20 1
 - 1

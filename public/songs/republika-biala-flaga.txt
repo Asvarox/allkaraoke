@@ -1,5 +1,6 @@
 #ID:republika-biala-flaga
 #ARTIST:Republika
+#ARTISTORIGIN:PL
 #TITLE:Biała flaga
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.477Z
 #GAP:22490
 : 0 4 2 gdzie 
 : 4 3 2 o

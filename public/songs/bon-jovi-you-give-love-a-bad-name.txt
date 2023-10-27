@@ -1,5 +1,6 @@
 #ID:bon-jovi-you-give-love-a-bad-name
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:You Give Love A Bad Name
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
@@ -10,6 +11,7 @@
 #VIDEOID:KrZHPOeOxQQ
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.230Z
 #GAP:6950
 : 0 5 7 Shot
 : 6 3 7  through

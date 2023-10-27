@@ -1,5 +1,6 @@
 #ID:nena-99-luftballons
 #ARTIST:Nena
+#ARTISTORIGIN:DE
 #TITLE:99 Luftballons
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,9
 #GENRE:Rock
 #LANGUAGE:German
-#LASTUPDATE:2023-06-12T20:54:31.896Z
+#LASTUPDATE:2023-10-27T14:01:15.429Z
 #EDITION:SingStar '80s German
 #GAP:2700,91500524659
 : 13 2 65 Hast 

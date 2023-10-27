@@ -1,5 +1,6 @@
 #ID:my-chemical-romance-disenchanted
 #ARTIST:My Chemical Romance
+#ARTISTORIGIN:US
 #TITLE:Disenchanted
 #CREATOR:hectorcito0
 #CREATORURL:
@@ -13,7 +14,7 @@
 #VIDEOGAP:0
 #VOLUME:0,98
 #LANGUAGE:English
-#LASTUPDATE:2023-07-28T07:42:46.547Z
+#LASTUPDATE:2023-10-27T14:01:15.422Z
 #GAP:20200
 : 16 7 -3 Well 
 : 24 3 -3 I 

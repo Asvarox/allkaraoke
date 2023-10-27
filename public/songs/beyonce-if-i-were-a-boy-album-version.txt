@@ -1,5 +1,6 @@
 #ID:beyonce-if-i-were-a-boy-album-version
 #ARTIST:Beyoncé
+#ARTISTORIGIN:US
 #TITLE:If I Were A Boy (Album Version)
 #CREATOR:IC
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:R&B
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.379Z
+#LASTUPDATE:2023-10-27T14:01:15.216Z
 #EDITION:[SC]-Songs
 #GAP:4640
 : 24 3 -6 If 

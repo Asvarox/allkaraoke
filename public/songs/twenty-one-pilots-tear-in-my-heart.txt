@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-tear-in-my-heart
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:Tear In My Heart
 #CREATOR:REL
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,72
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.339Z
+#LASTUPDATE:2023-10-27T14:01:15.551Z
 #EDITION:None
 #GAP:12435
 : 20 3 2 Some

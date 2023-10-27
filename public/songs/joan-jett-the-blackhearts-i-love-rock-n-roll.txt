@@ -1,5 +1,6 @@
 #ID:joan-jett-the-blackhearts-i-love-rock-n-roll
 #ARTIST:Joan Jett & The Blackhearts
+#ARTISTORIGIN:US
 #TITLE:I Love Rock N' Roll
 #CREATOR:
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-09-19T18:36:35.625Z
+#LASTUPDATE:2023-10-27T14:01:15.332Z
 #EDITION:Rock Band 3
 #GAP:42103,45292519381
 : 27 2 14 I 

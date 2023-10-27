@@ -1,5 +1,6 @@
 #ID:muse-reapers
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Reapers
 #CREATOR:gun88
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.420Z
 #GAP:29877
 * 0 20 5 Home
 - 30

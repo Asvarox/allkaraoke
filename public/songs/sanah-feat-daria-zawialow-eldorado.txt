@@ -1,5 +1,6 @@
 #ID:sanah-feat-daria-zawialow-eldorado
 #ARTIST:Sanah feat. Daria Zawiałow
+#ARTISTORIGIN:PL
 #TITLE:Eldorado
 #CREATOR:domekdlakromek
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=182875
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,7
 #LANGUAGE:Polish
-#LASTUPDATE:2023-06-08T08:24:40.232Z
+#LASTUPDATE:2023-10-27T14:01:15.486Z
 #GAP:6338,645731108931
 : 18 11 0 Mnie 
 : 31 3 0 wy

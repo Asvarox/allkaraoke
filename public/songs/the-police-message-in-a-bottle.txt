@@ -1,5 +1,6 @@
 #ID:the-police-message-in-a-bottle
 #ARTIST:The Police
+#ARTISTORIGIN:GB
 #TITLE:Message in a bottle
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:New Wave
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.534Z
 #EDITION:Rock Band Track Pack Vol. 2
 #GAP:6535,102040816327
 : 26 5 20 Just 

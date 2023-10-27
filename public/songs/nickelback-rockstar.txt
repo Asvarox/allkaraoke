@@ -1,5 +1,6 @@
 #ID:nickelback-rockstar
 #ARTIST:Nickelback
+#ARTISTORIGIN:CA
 #TITLE:Rockstar
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.433Z
 #EDITION:Rock Band Store 2010 Vol. 2
 #GAP:84,70794685384772
 : 27 4 11 I'm 

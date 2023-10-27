@@ -1,5 +1,6 @@
 #ID:monika-brodka-znam-cie-na-pamiec
 #ARTIST:Monika Brodka
+#ARTISTORIGIN:PL
 #TITLE:Znam Cię Na Pamięć 
 #CREATOR:
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-01T21:26:40.207Z
+#LASTUPDATE:2023-10-27T14:01:15.414Z
 #EDITION:SingStar R&B PL
 #GAP:6888
 : 18 7 61 Znam 

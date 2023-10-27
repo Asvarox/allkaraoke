@@ -1,5 +1,6 @@
 #ID:camilo-sesto-vivir-asi-es-morir-de-amor
 #ARTIST:Camilo Sesto
+#ARTISTORIGIN:ES
 #TITLE:Vivir así es morir de amor
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,75
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-07-23T21:00:58.347Z
+#LASTUPDATE:2023-10-27T14:01:15.243Z
 #EDITION:SingStar MegaHits
 #GAP:10579,29411764706
 : 23 4 12 Siem

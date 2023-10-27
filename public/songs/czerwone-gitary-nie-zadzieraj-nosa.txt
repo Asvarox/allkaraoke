@@ -1,5 +1,6 @@
 #ID:czerwone-gitary-nie-zadzieraj-nosa
 #ARTIST:Czerwone Gitary
+#ARTISTORIGIN:PL
 #TITLE:Nie zadzieraj nosa
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -13,7 +14,7 @@
 #VIDEOGAP:0
 #VOLUME:0,5
 #LANGUAGE:Polish
-#LASTUPDATE:2023-06-28T18:41:34.748Z
+#LASTUPDATE:2023-10-27T14:01:15.260Z
 #GAP:863,5396518375243
 : 17 2 7 Nie 
 : 21 2 7 za

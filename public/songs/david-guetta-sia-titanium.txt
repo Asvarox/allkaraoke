@@ -1,5 +1,6 @@
 #ID:david-guetta-sia-titanium
 #ARTIST:David Guetta & Sia
+#ARTISTORIGIN:FR
 #TITLE:Titanium
 #CREATOR:vicktoben
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:Electronic
 #LANGUAGE:English
-#LASTUPDATE:2023-04-29T22:04:41.353Z
+#LASTUPDATE:2023-10-27T14:01:15.265Z
 #GAP:15139,095238095239
 : 17 2 10 You 
 : 21 3 10 shout 

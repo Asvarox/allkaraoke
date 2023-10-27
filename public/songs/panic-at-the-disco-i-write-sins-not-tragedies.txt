@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-i-write-sins-not-tragedies
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:I Write Sins Not Tragedies
 #CREATOR:Canni
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,9
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.315Z
+#LASTUPDATE:2023-10-27T14:01:15.443Z
 #EDITION:SingStar Pop
 #GAP:10415,29411764706
 : 23 6 -3 Oh 

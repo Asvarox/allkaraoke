@@ -1,5 +1,6 @@
 #ID:feel-a-gdy-jest-juz-ciemno
 #ARTIST:Feel
+#ARTISTORIGIN:PL
 #TITLE:A gdy jest już ciemno
 #CREATOR:Pure6
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,9
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.292Z
 #GAP:1432,1428571428573
 : 19 11 4 Jest 
 : 33 10 2 juz 

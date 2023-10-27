@@ -1,5 +1,6 @@
 #ID:ich-troje-zawsze-z-toba-chcialbym-byc
 #ARTIST:Ich Troje
+#ARTISTORIGIN:PL
 #TITLE:Zawsze z Tobą Chciałbym Być
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.317Z
 #GAP:3820
 F 0 3 4  Kaś
 F 4 3 4 ka!

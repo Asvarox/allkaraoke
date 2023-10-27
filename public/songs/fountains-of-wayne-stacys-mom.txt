@@ -1,5 +1,6 @@
 #ID:fountains-of-wayne-stacys-mom
 #ARTIST:Fountains Of Wayne
+#ARTISTORIGIN:US
 #TITLE:Stacy's Mom
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.300Z
 #EDITION:S'Star Popworld
 #GAP:7116,309328136915
 - -15 1

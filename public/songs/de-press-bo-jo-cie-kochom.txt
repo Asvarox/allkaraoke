@@ -1,5 +1,6 @@
 #ID:de-press-bo-jo-cie-kochom
 #ARTIST:De Press
+#ARTISTORIGIN:PL
 #TITLE:Bo Jo Cie Kochom
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,91
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.266Z
 #GAP:-689,5254710397767
 F 11 12 -1 Hej!
 - 24

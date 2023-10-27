@@ -1,5 +1,6 @@
 #ID:ahmad-band-aku-cinta-kau-dan-dia
 #ARTIST:Ahmad Band
+#ARTISTORIGIN:ID
 #TITLE:Aku Cinta Kau Dan Dia
 #CREATOR:mssitohang
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Rock
 #LANGUAGE:Indonesian
-#LASTUPDATE:2023-10-12T18:16:49.077Z
+#LASTUPDATE:2023-10-27T14:01:15.187Z
 #GAP:11400
 : 16 6 9 Still 
 : 28 5 9 I 

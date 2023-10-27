@@ -1,5 +1,6 @@
 #ID:the-bloodhound-gang-the-bad-touch
 #ARTIST:The Bloodhound Gang
+#ARTISTORIGIN:US
 #TITLE:The bad touch
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Post punk
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.525Z
 #GAP:14143,90243902439
 - -32 1
 - 1

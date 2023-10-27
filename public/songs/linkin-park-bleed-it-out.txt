@@ -1,5 +1,6 @@
 #ID:linkin-park-bleed-it-out
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Bleed It Out
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
@@ -11,6 +12,7 @@
 #VIDEOGAP:2
 #GENRE:Alt. Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.373Z
 #EDITION:Guitar Hero Warriors of Rock
 #GAP:9716,864554185888
 - -25 1

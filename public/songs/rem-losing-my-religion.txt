@@ -1,5 +1,6 @@
 #ID:rem-losing-my-religion
 #ARTIST:R.E.M.
+#ARTISTORIGIN:US
 #TITLE:Losing My Religion
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:18
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.475Z
 #EDITION:Rock Band Store 2009 Vol. 1
 #GAP:31260,292953285825
 - -24 1

@@ -1,5 +1,6 @@
 #ID:mark-ronson-feat-bruno-mars-uptown-funk
 #ARTIST:Mark Ronson feat. Bruno Mars
+#ARTISTORIGIN:GB
 #TITLE:Uptown Funk
 #CREATOR:OmarWeichafe*Coppo
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Funk
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:58:31.399Z
+#LASTUPDATE:2023-10-27T14:01:15.397Z
 #GAP:15971,739130434782
 : 15 3 5 This 
 : 21 3 5 hit 

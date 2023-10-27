@@ -1,5 +1,6 @@
 #ID:lady-pank-mniej-niz-zero
 #ARTIST:Lady Pank
+#ARTISTORIGIN:PL
 #TITLE:Mniej niż zero
 #CREATORURL:
 #BPM:134,1
@@ -9,6 +10,7 @@
 #VIDEOID:JFHanoST-vI
 #VIDEOGAP:10
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.366Z
 #GAP:19663,28859060403
 : 9 2 18 O 
 : 13 2 19 o 

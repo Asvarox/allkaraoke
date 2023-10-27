@@ -1,5 +1,6 @@
 #ID:toto-hold-the-line
 #ARTIST:Toto
+#ARTISTORIGIN:US
 #TITLE:Hold The Line
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +11,7 @@
 #VIDEOID:htgr3pvBr-I
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.549Z
 #EDITION:SingStar SP English
 #GAP:20206,285714285714
 : 23 2 61 It's 

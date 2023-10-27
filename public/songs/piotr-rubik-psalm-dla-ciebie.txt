@@ -1,5 +1,6 @@
 #ID:piotr-rubik-psalm-dla-ciebie
 #ARTIST:Piotr Rubik
+#ARTISTORIGIN:PL
 #TITLE:Psalm dla ciebie
 #CREATOR:davidus01
 #CREATORURL:
@@ -10,6 +11,7 @@
 #VIDEOID:9-zQr3ATnM8
 #VIDEOGAP:9
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.457Z
 #GAP:18650
 : 7 7 7 Choć 
 : 15 2 3 nie 

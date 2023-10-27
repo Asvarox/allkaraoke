@@ -1,5 +1,6 @@
 #ID:tenacious-d-tribute
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Tribute
 #CREATOR:Paisano87
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.518Z
 #GAP:58100
 : 28 3 9 This
 F 32 2 9  is

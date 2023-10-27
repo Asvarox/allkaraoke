@@ -1,5 +1,6 @@
 #ID:lenny-kravitz-are-you-gonna-go-my-way
 #ARTIST:Lenny Kravitz
+#ARTISTORIGIN:US
 #TITLE:Are You Gonna Go My Way
 #CREATOR:
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,75
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-09-19T18:36:35.626Z
+#LASTUPDATE:2023-10-27T14:01:15.370Z
 #EDITION:Rock Band Store 2009 Vol. 1
 #GAP:32396,24938265187
 : 26 4 16 I 

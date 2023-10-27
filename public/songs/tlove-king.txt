@@ -1,5 +1,6 @@
 #ID:tlove-king
 #ARTIST:T.Love
+#ARTISTORIGIN:PL
 #TITLE:King
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,8
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.545Z
 #GAP:8960
 : 0 2 -3 Mó
 : 4 1 -1 wio

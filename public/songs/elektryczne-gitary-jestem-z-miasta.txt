@@ -1,5 +1,6 @@
 #ID:elektryczne-gitary-jestem-z-miasta
 #ARTIST:Elektryczne Gitary
+#ARTISTORIGIN:PL
 #TITLE:Jestem z Miasta
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -10,6 +11,7 @@
 #VIDEOID:skK2b-zYO3w
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.282Z
 #GAP:6620,416493127864
 : 8 1 0 Jes
 : 10 1 2 tem 

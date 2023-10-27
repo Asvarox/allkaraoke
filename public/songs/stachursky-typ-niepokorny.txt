@@ -1,5 +1,6 @@
 #ID:stachursky-typ-niepokorny
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Typ Niepokorny
 #CREATOR:Pit33
 #CREATORURL:
@@ -12,6 +13,7 @@
 #VOLUME:0,9
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.507Z
 #GAP:13750
 : 8 3 15 To 
 * 11 8 13 ja 

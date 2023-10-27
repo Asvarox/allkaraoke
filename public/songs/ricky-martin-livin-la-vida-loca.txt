@@ -1,5 +1,6 @@
 #ID:ricky-martin-livin-la-vida-loca
 #ARTIST:Ricky Martin
+#ARTISTORIGIN:PR
 #TITLE:Livin' La Vida Loca
 #CREATOR:pauldiddy
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.478Z
 #EDITION:Ante Eppinger
 #GAP:12090,854251012146
 : 12 2 20 She's 

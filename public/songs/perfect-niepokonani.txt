@@ -1,5 +1,6 @@
 #ID:perfect-niepokonani
 #ARTIST:Perfect
+#ARTISTORIGIN:PL
 #TITLE:Niepokonani
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:-1
 #VOLUME:0,91
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.449Z
 #GAP:14420
 : 0 1 -2 Gdy
 : 3 1 0  e

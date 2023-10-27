@@ -1,5 +1,6 @@
 #ID:green-day-american-idiot
 #ARTIST:Green Day
+#ARTISTORIGIN:US
 #TITLE:American Idiot
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,65
 #LANGUAGE:English
-#LASTUPDATE:2023-06-08T08:15:16.130Z
+#LASTUPDATE:2023-10-27T14:01:15.308Z
 #GAP:10398,494623655914
 : 19 2 15 Don't 
 : 22 2 15 wan

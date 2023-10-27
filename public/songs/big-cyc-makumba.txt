@@ -1,5 +1,6 @@
 #ID:big-cyc-makumba
 #ARTIST:Big Cyc
+#ARTISTORIGIN:PL
 #TITLE:Makumba
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -12,6 +13,7 @@
 #VOLUME:1
 #GENRE:Rock
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.219Z
 #GAP:14500
 : 20 2 5 Mój 
 : 24 2 5 oj

@@ -1,5 +1,6 @@
 #ID:nickelback-photograph
 #ARTIST:Nickelback
+#ARTISTORIGIN:CA
 #TITLE:Photograph
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:-6
 #GENRE:Rock Alternativo
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.432Z
 #EDITION:Rock Band Store 2010 Vol. 2
 #GAP:954,5552101093172
 : 27 4 17 Look 

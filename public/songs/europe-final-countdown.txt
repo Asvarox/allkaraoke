@@ -1,5 +1,6 @@
 #ID:europe-final-countdown
 #ARTIST:Europe
+#ARTISTORIGIN:SE
 #TITLE:Final Countdown
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.287Z
 #EDITION:SingStar '80s
 #GAP:54891,67
 : 0 2 73 Da

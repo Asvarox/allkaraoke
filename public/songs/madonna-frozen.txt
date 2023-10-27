@@ -1,5 +1,6 @@
 #ID:madonna-frozen
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Frozen
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T23:59:19.273Z
+#LASTUPDATE:2023-10-27T14:01:15.387Z
 #GAP:18202,777777777777
 : 14 2 8 You 
 : 18 3 8 on

@@ -1,5 +1,6 @@
 #ID:ariana-grande-no-tears-left-to-cry
 #ARTIST:Ariana Grande
+#ARTISTORIGIN:US
 #TITLE:No tears left to cry
 #CREATOR:asdFer
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=asdfer
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-04-29T21:24:47.038Z
+#LASTUPDATE:2023-10-27T14:01:15.200Z
 #GAP:19836,983935742974
 : 23 8 12 Right 
 : 36 10 12 now, 

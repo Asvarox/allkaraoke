@@ -1,5 +1,6 @@
 #ID:frankie-goes-to-hollywood-relax
 #ARTIST:Frankie Goes To Hollywood
+#ARTISTORIGIN:GB
 #TITLE:Relax
 #CREATOR:williluegger
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T11:39:19.748Z
+#LASTUPDATE:2023-10-27T14:01:15.301Z
 #EDITION:None
 #GAP:13437,272727272728
 : 15 3 2 My

@@ -1,5 +1,6 @@
 #ID:the-beatles-let-it-be
 #ARTIST:The Beatles
+#ARTISTORIGIN:GB
 #TITLE:Let It Be
 #CREATOR:dekkard
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-07T07:07:59.721Z
+#LASTUPDATE:2023-10-27T14:01:15.521Z
 #GAP:11700,936404931861
 - 0 1
 - 1

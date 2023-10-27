@@ -1,5 +1,6 @@
 #ID:myslovitz-my
 #ARTIST:Myslovitz
+#ARTISTORIGIN:PL
 #TITLE:My
 #CREATOR:tristen
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=117946
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,91
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.424Z
 #GAP:26650
 : 0 11 9 Ja,
 : 47 8 11  twar

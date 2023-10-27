@@ -1,5 +1,6 @@
 #ID:dead-or-alive-you-spin-me-round-like-a-record
 #ARTIST:Dead Or Alive
+#ARTISTORIGIN:GB
 #TITLE:You Spin Me Round (Like A Record)
 #CREATOR:Canni
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Synth Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T11:39:19.738Z
+#LASTUPDATE:2023-10-27T14:01:15.266Z
 #EDITION:SingStar ’80s [US], SingStar Anthems
 #GAP:14665,460218408736
 : 17 2 11 If 

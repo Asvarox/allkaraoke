@@ -1,5 +1,6 @@
 #ID:helene-fischer-atemlos-durch-die-nacht
 #ARTIST:Helene Fischer
+#ARTISTORIGIN:DE
 #TITLE:Atemlos durch die Nacht
 #CREATOR:Ultrasonic
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=22479
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:Pop
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T18:34:03.176Z
+#LASTUPDATE:2023-10-27T14:01:15.314Z
 #EDITION:None
 #GAP:6414,1007615700055
 : 17 2 -1 Wir 

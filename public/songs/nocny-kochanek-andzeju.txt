@@ -1,5 +1,6 @@
 #ID:nocny-kochanek-andzeju
 #ARTIST:Nocny Kochanek
+#ARTISTORIGIN:PL
 #TITLE:Andzeju
 #CREATOR:MrLudozzerca
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167141
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,55
 #LANGUAGE:Polish
-#LASTUPDATE:2023-03-06T13:50:09.229Z
+#LASTUPDATE:2023-10-27T14:01:15.438Z
 #GAP:-205
 : 5 2 20 An
 : 9 2 20 dże

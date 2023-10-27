@@ -1,5 +1,6 @@
 #ID:bunga-citra-lestari-wanita-terbahagia
 #ARTIST:Bunga Citra Lestari
+#ARTISTORIGIN:MY
 #TITLE:Wanita Terbahagia
 #CREATOR:wan99zhariff
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:Pop
 #LANGUAGE:Indonesian
-#LASTUPDATE:2023-10-12T18:16:49.080Z
+#LASTUPDATE:2023-10-27T14:01:15.242Z
 #GAP:11124,710911462107
 : 37 8 20 Ju
 : 52 27 18 jur 

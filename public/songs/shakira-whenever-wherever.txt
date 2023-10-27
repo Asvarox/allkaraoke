@@ -1,5 +1,6 @@
 #ID:shakira-whenever-wherever
 #ARTIST:Shakira
+#ARTISTORIGIN:CO
 #TITLE:Whenever wherever
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Latino
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.495Z
 #GAP:15984,09219858156
 : 28 4 20 Lu
 : 33 3 20 cky 

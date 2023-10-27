@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-otherside
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Otherside
 #CREATOR:Spys4Darwin
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Alternative
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:02:18.532Z
+#LASTUPDATE:2023-10-27T14:01:15.474Z
 #GAP:8491,627906976744
 : 17 3 16 How 
 : 22 9 16 long, 

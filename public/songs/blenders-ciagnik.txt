@@ -1,5 +1,6 @@
 #ID:blenders-ciagnik
 #ARTIST:Blenders
+#ARTISTORIGIN:PL
 #TITLE:Ciągnik
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -10,7 +11,7 @@
 #VIDEOID:eP5wNDeGqLk
 #VIDEOGAP:-1
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-15T13:17:14.247Z
+#LASTUPDATE:2023-10-27T14:01:15.223Z
 #GAP:10895,844353052831
 : 13 6 10 La, 
 : 21 4 8 la, 

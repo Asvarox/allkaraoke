@@ -1,5 +1,6 @@
 #ID:la-oreja-de-van-gogh-cuentame-al-oido
 #ARTIST:La Oreja de Van Gogh
+#ARTISTORIGIN:ES
 #TITLE:Cuéntame al oído
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:Pop Nacional
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.573Z
+#LASTUPDATE:2023-10-27T14:01:15.359Z
 #GAP:6315,267588695129
 : 18 6 7 Cuén
 : 26 3 5 ta

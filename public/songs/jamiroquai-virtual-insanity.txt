@@ -1,5 +1,6 @@
 #ID:jamiroquai-virtual-insanity
 #ARTIST:Jamiroquai
+#ARTISTORIGIN:GB
 #TITLE:Virtual Insanity
 #CREATOR:Lorchen
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
@@ -11,6 +12,7 @@
 #VIDEOGAP:5
 #VOLUME:0,85
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.325Z
 #GAP:6479
 : 0 7 22 Ooh
 : 8 22 20 ~,

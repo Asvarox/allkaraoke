@@ -1,5 +1,6 @@
 #ID:the-eagles-hotel-california
 #ARTIST:The Eagles
+#ARTISTORIGIN:US
 #TITLE:Hotel California
 #CREATOR:mustangfred and asb
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-25T00:44:55.410Z
+#LASTUPDATE:2023-10-27T14:01:15.529Z
 #GAP:53573,97260273973
 : 19 2 4 On 
 : 22 2 6 a 

@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-under-the-bridge
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Under the bridge
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,7 +13,7 @@
 #VOLUME:0,77
 #GENRE:Rock alternativo
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:41:41.113Z
+#LASTUPDATE:2023-10-27T14:01:15.475Z
 #EDITION:Rock Band Store 2008 Vol. 3
 #GAP:28237,474686867172
 : 27 10 20 Some

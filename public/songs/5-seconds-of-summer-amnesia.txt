@@ -1,5 +1,6 @@
 #ID:5-seconds-of-summer-amnesia
 #ARTIST:5 Seconds of Summer
+#ARTISTORIGIN:AU
 #TITLE:Amnesia
 #CREATOR:Sing-Girl
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,8
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.275Z
+#LASTUPDATE:2023-10-27T14:01:15.167Z
 #GAP:23367,5
 : 27 2 -3 I 
 : 31 6 -3 drove 

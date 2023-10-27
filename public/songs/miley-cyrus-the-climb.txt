@@ -1,5 +1,6 @@
 #ID:miley-cyrus-the-climb
 #ARTIST:Miley Cyrus
+#ARTISTORIGIN:US
 #TITLE:The Climb
 #CREATOR:ariel_argentina’s brother ;-)
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,76
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.306Z
+#LASTUPDATE:2023-10-27T14:01:15.412Z
 #GAP:6420
 : 32 4 -4 I 
 : 38 4 -4 can 

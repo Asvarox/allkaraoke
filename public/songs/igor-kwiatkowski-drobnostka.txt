@@ -1,5 +1,6 @@
 #ID:igor-kwiatkowski-drobnostka
 #ARTIST:Igor Kwiatkowski
+#ARTISTORIGIN:PL
 #TITLE:Drobnostka
 #CREATOR:MrLudozzerca
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167141
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,75
 #LANGUAGE:Polish
-#LASTUPDATE:2023-04-01T08:39:41.745Z
+#LASTUPDATE:2023-10-27T14:01:15.318Z
 #GAP:1570,2962085308056
 * 18 2 29 He
 : 22 1 30 j, 

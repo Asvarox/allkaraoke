@@ -1,5 +1,6 @@
 #ID:the-village-people-ymca
 #ARTIST:The Village People
+#ARTISTORIGIN:US
 #TITLE:YMCA
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,9
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.537Z
 #EDITION:SingStar
 #GAP:10866,062992125984
 : 17 3 61 Young 

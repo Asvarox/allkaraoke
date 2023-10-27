@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-lying-is-the-most-fun-a-girl-can-have-without-taking-her-clothes-off
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:Lying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off
 #CREATOR:DoubleDee73
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,9
 #GENRE:Alternative Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.317Z
+#LASTUPDATE:2023-10-27T14:01:15.444Z
 #GAP:14128,095238095239
 : 17 1 0 Is 
 : 19 1 0 it 

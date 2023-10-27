@@ -1,5 +1,6 @@
 #ID:elton-john-rupaul-dont-go-breaking-my-heart
 #ARTIST:Elton John & RuPaul
+#ARTISTORIGIN:GB
 #TITLE:Don’t Go Breaking My Heart
 #CREATOR:nomaddoe
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:01:42.858Z
+#LASTUPDATE:2023-10-27T14:01:15.284Z
 #EDITION:[DUET]-Songs
 #GAP:37942,38692342141
 #TRACKNAMES:["Elton John","RuPaul"]

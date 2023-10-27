@@ -1,5 +1,6 @@
 #ID:lady-pank-na-co-komu-dzis
 #ARTIST:Lady Pank
+#ARTISTORIGIN:PL
 #TITLE:Na co komu dziś
 #CREATORURL:
 #BPM:228
@@ -9,6 +10,7 @@
 #VIDEOID:l_AS1FWcLYI
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.367Z
 #GAP:9833,157894736842
 : 15 4 -3 Sta
 : 20 2 -3 ła 

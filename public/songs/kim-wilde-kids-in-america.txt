@@ -1,5 +1,6 @@
 #ID:kim-wilde-kids-in-america
 #ARTIST:Kim Wilde
+#ARTISTORIGIN:GB
 #TITLE:Kids In America
 #CREATOR:Canni
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.298Z
+#LASTUPDATE:2023-10-27T14:01:15.349Z
 #EDITION:SingStar ’80s [US], SingStar Anthems
 #GAP:11386,622516556292
 : 21 3 3 Loo

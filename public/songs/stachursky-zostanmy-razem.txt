@@ -1,5 +1,6 @@
 #ID:stachursky-zostanmy-razem
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Zostanmy Razem
 #CREATOR:Lecter
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6125
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,8
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.508Z
 #GAP:34300
 : 0 1 62 Dzie
 : 1 2 65 ki Ci 

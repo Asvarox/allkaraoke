@@ -1,5 +1,6 @@
 #ID:faith-no-more-midlife-crisis-album-version
 #ARTIST:Faith No More
+#ARTISTORIGIN:US
 #TITLE:Midlife Crisis (Album Version)
 #CREATOR:Gollum
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,59
 #GENRE:Alternative Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.027Z
+#LASTUPDATE:2023-10-27T14:01:15.290Z
 #EDITION:Rock Band 3
 #GAP:9948,461131676362
 F 25 2 5 Go 

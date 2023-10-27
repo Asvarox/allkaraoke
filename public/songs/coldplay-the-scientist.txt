@@ -1,5 +1,6 @@
 #ID:coldplay-the-scientist
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:The Scientist
 #CREATOR:Pacayaka
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka
@@ -10,6 +11,7 @@
 #VIDEOID:RB-RcX5DS5A
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.256Z
 #GAP:1025,30779753762
 : 19 6 5 Come 
 : 27 3 7 up 

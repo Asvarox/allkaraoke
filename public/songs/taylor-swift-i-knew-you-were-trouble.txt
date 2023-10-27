@@ -1,5 +1,6 @@
 #ID:taylor-swift-i-knew-you-were-trouble
 #ARTIST:Taylor Swift
+#ARTISTORIGIN:US
 #TITLE:I Knew You Were Trouble
 #CREATOR:zencruzer
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.395Z
+#LASTUPDATE:2023-10-27T14:01:15.513Z
 #GAP:125467,27272727272
 : 21 2 10 Once 
 : 25 2 8 u

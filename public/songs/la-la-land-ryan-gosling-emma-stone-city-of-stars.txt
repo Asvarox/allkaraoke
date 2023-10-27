@@ -1,5 +1,6 @@
 #ID:la-la-land-ryan-gosling-emma-stone-city-of-stars
 #ARTIST:La La Land (Ryan Gosling & Emma Stone)
+#ARTISTORIGIN:US
 #TITLE:City Of Stars
 #CREATOR:zrednaz
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Musical
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.033Z
+#LASTUPDATE:2023-10-27T14:01:15.358Z
 #EDITION:[DUET]-Songs
 #GAP:7995,431594579543
 #TRACKNAMES:["Ryan Gosling","Emma Stone"]

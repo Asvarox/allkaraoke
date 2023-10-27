@@ -1,5 +1,6 @@
 #ID:ed-sheeran-thinking-out-loud
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Thinking out loud
 #CREATOR:Volodia
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
@@ -10,6 +11,7 @@
 #VIDEOID:lp-EO5I60KA
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.280Z
 #GAP:8042,290722693329
 : 21 2 -6 When 
 : 24 3 -3 your 

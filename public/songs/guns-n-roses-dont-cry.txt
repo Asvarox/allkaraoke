@@ -1,5 +1,6 @@
 #ID:guns-n-roses-dont-cry
 #ARTIST:Guns N' Roses
+#ARTISTORIGIN:US
 #TITLE:Don't Cry
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:14:16.458Z
+#LASTUPDATE:2023-10-27T14:01:15.309Z
 #GAP:18016,39344262295
 : 16 51 9 Uh
 : 68 6 9 ~

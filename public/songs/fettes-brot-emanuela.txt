@@ -1,5 +1,6 @@
 #ID:fettes-brot-emanuela
 #ARTIST:Fettes Brot
+#ARTISTORIGIN:DE
 #TITLE:Emanuela
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:00:27.503Z
+#LASTUPDATE:2023-10-27T14:01:15.293Z
 #EDITION:None
 #GAP:4533,90625
 : 17 7 5 Lass 

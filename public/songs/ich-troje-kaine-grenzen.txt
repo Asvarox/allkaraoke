@@ -1,5 +1,6 @@
 #ID:ich-troje-kaine-grenzen
 #ARTIST:Ich Troje
+#ARTISTORIGIN:PL
 #TITLE:Kaine Grenzen
 #CREATOR:Pure6
 #CREATORURL:
@@ -12,6 +13,7 @@
 #VOLUME:0,9
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.316Z
 #GAP:1158,67055393586
 : 1 2 0 Ich 
 : 4 1 4 war 

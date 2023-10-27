@@ -1,5 +1,6 @@
 #ID:tenacious-d-beelzeboss-the-final-showdown
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Beelzeboss (The Final Showdown)
 #CREATOR:Paisano87
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
@@ -12,6 +13,7 @@
 #VOLUME:1
 #GENRE:Freak Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.515Z
 #GAP:29984,689766317486
 #TRACKNAMES:["Tenacious D","Devil","Combined"]
 - 0 74

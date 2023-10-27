@@ -1,5 +1,6 @@
 #ID:guns-n-roses-welcome-to-the-jungle
 #ARTIST:Guns N' Roses
+#ARTISTORIGIN:US
 #TITLE:Welcome to the jungle
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:16:01.422Z
+#LASTUPDATE:2023-10-27T14:01:15.312Z
 #GAP:44338,5271355561
 : 16 3 6 Wel
 : 20 3 8 come 

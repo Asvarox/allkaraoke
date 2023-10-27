@@ -1,5 +1,6 @@
 #ID:nino-bravo-un-beso-y-una-flor
 #ARTIST:Nino Bravo
+#ARTISTORIGIN:ES
 #TITLE:Un beso y una flor
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.581Z
+#LASTUPDATE:2023-10-27T14:01:15.434Z
 #EDITION:SingStar Party
 #GAP:11466,431381624623
 : 17 1 -3 De

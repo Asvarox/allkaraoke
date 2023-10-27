@@ -1,5 +1,6 @@
 #ID:alejandro-sanz-corazun-partio
 #ARTIST:Alejandro Sanz
+#ARTISTORIGIN:ES
 #TITLE:Corazón partío
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,7 +12,7 @@
 #VIDEOGAP:-4
 #VOLUME:0,7
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.553Z
+#LASTUPDATE:2023-10-27T14:01:15.190Z
 #GAP:23668,69158878505
 : 21 3 7 Ya 
 : 25 3 9 lo 

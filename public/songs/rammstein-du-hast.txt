@@ -1,5 +1,6 @@
 #ID:rammstein-du-hast
 #ARTIST:Rammstein
+#ARTISTORIGIN:DE
 #TITLE:Du Hast
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:Industrial
 #LANGUAGE:German
-#LASTUPDATE:2023-04-19T20:27:41.209Z
+#LASTUPDATE:2023-10-27T14:01:15.472Z
 #EDITION:Rock Band 3
 #GAP:29518,00435642573
 : 27 15 17 Du

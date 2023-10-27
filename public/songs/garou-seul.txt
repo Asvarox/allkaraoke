@@ -1,5 +1,6 @@
 #ID:garou-seul
 #ARTIST:Garou
+#ARTISTORIGIN:CA
 #TITLE:Seul
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,7 +12,7 @@
 #VIDEOGAP:1
 #GENRE:Pop
 #LANGUAGE:French
-#LASTUPDATE:2023-01-27T22:23:20.375Z
+#LASTUPDATE:2023-10-27T14:01:15.301Z
 #GAP:10679,433962264151
 : 21 9 2 Tant 
 : 34 2 2 de 

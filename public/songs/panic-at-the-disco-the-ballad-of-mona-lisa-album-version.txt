@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-the-ballad-of-mona-lisa-album-version
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:The Ballad Of Mona Lisa (Album Version)
 #CREATOR:FadingDream97
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.319Z
+#LASTUPDATE:2023-10-27T14:01:15.445Z
 #GAP:15848,095238095239
 : 17 2 12 She 
 : 21 2 12 paints 

@@ -1,5 +1,6 @@
 #ID:smash-mouth-all-star-but-the-whole-song-is-sung-on-a-c-note
 #ARTIST:Smash Mouth
+#ARTISTORIGIN:US
 #TITLE:All Star but the whole song is sung on a C Note
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +11,7 @@
 #VIDEOID:qVIyE5717AU
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.500Z
 #GAP:200
 : 0 6 12 Some
 : 8 3 12 bo

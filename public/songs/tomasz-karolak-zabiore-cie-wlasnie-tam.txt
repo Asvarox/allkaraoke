@@ -1,5 +1,6 @@
 #ID:tomasz-karolak-zabiore-cie-wlasnie-tam
 #ARTIST:Tomasz Karolak
+#ARTISTORIGIN:PL
 #TITLE:Zabiorę Cię właśnie tam
 #CREATOR:Angelyina
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1550
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,8
 #LANGUAGE:Polish
-#LASTUPDATE:2023-07-27T18:16:56.206Z
+#LASTUPDATE:2023-10-27T14:01:15.548Z
 #GAP:20639,587210391557
 : 11 2 -1 Za
 : 15 4 6 bio

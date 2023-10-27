@@ -1,5 +1,6 @@
 #ID:elektryczne-gitary-koniec
 #ARTIST:Elektryczne Gitary
+#ARTISTORIGIN:PL
 #TITLE:Koniec
 #CREATOR:davidus01
 #CREATORURL:
@@ -10,6 +11,7 @@
 #VIDEOID:dB62xkejDIc
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.283Z
 #GAP:10499,48772678762
 : 12 2 7 To 
 : 14 2 7 już 

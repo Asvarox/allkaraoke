@@ -1,5 +1,6 @@
 #ID:evanescence-bring-me-to-life
 #ARTIST:Evanescence
+#ARTISTORIGIN:US
 #TITLE:Bring Me to Life
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.288Z
 #EDITION:SingStar PopHit
 #GAP:16910
 : 0 2 9 How

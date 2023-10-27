@@ -1,5 +1,5 @@
 #ID:boney-m-daddy-cool
-#ARTIST:Boney M
+#ARTIST:Boney M.
 #TITLE:Daddy Cool
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +10,7 @@
 #VIDEOID:tHyHOUShOg8
 #VIDEOGAP:-4
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.231Z
 #GAP:3357,5461106655976
 : 17 3 5 She's
 : 21 3 5  cra

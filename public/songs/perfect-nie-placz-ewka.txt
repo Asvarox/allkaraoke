@@ -1,5 +1,6 @@
 #ID:perfect-nie-placz-ewka
 #ARTIST:Perfect
+#ARTISTORIGIN:PL
 #TITLE:Nie płacz Ewka
 #CREATOR:Pit33
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:ROCK
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.449Z
 #GAP:35695,5
 : 7 2 1 Nie 
 : 9 2 1 płacz 

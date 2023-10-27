@@ -1,5 +1,6 @@
 #ID:the-who-wont-get-fooled-again
 #ARTIST:The Who
+#ARTISTORIGIN:GB
 #TITLE:Won't get fooled again
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.540Z
 #EDITION:Rock Band
 #GAP:43115,89281950926
 : 27 5 9 We'll 

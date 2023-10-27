@@ -1,5 +1,6 @@
 #ID:george-michael-careless-whisper
 #ARTIST:George Michael
+#ARTISTORIGIN:GB
 #TITLE:Careless Whisper
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,91
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.303Z
 #EDITION:SingStar
 #GAP:14024,324607329843
 : 20 2 -3 Whoah

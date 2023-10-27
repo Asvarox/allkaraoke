@@ -1,5 +1,6 @@
 #ID:muse-hysteria
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Hysteria
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Rock Alternativo
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.417Z
 #EDITION:Rock Band Europe
 #GAP:46540
 : 0 2 11 It's

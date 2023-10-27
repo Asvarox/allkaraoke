@@ -1,5 +1,6 @@
 #ID:shakira-gitana
 #ARTIST:Shakira
+#ARTISTORIGIN:CO
 #TITLE:Gitana
 #CREATOR:zXz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.585Z
+#LASTUPDATE:2023-10-27T14:01:15.493Z
 #GAP:21320,25806451613
 : 12 3 17 Nun
 : 18 3 15 ca u

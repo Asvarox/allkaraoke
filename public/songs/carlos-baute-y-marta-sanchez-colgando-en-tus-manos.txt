@@ -1,5 +1,6 @@
 #ID:carlos-baute-y-marta-sanchez-colgando-en-tus-manos
 #ARTIST:Carlos Baute y Marta Sánchez
+#ARTISTORIGIN:VE
 #TITLE:Colgando en tus manos
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Dueto
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.556Z
+#LASTUPDATE:2023-10-27T14:01:15.243Z
 #GAP:10192,166638893517
 : 16 1 18 Qui
 : 18 1 18 zá

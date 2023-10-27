@@ -1,5 +1,6 @@
 #ID:elektryczne-gitary-co-ty-tutaj-robisz
 #ARTIST:Elektryczne Gitary
+#ARTISTORIGIN:PL
 #TITLE:Co Ty Tutaj Robisz?
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.282Z
 #GAP:27719,505154639177
 : 13 1 -3 I 
 : 15 1 0 co 

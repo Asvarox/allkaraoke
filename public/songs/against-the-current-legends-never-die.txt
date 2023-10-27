@@ -1,5 +1,6 @@
 #ID:against-the-current-legends-never-die
 #ARTIST:Against The Current
+#ARTISTORIGIN:US
 #TITLE:Legends Never Die
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
@@ -10,6 +11,7 @@
 #VIDEOID:r6zIGXun57U
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.187Z
 #GAP:12217
 : 0 2 -1 Leg
 : 4 2 0 ~

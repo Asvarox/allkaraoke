@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-hallelujah
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:Hallelujah
 #CREATOR:princetongirl98
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:Alternative
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.312Z
+#LASTUPDATE:2023-10-27T14:01:15.441Z
 #GAP:1742,3279015630196
 : 14 18 10 Oh 
 - 32 112

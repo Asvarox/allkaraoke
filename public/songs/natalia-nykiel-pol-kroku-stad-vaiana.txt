@@ -1,5 +1,6 @@
 #ID:natalia-nykiel-pol-kroku-stad-vaiana
 #ARTIST:Natalia Nykiel
+#ARTISTORIGIN:PL
 #TITLE:Pół kroku stąd (Vaiana)
 #CREATOR:MrLudozzerca
 #CREATORURL:
@@ -13,7 +14,7 @@
 #VIDEOGAP:0
 #VOLUME:0,82
 #LANGUAGE:Polish
-#LASTUPDATE:2023-07-29T01:00:44.596Z
+#LASTUPDATE:2023-10-27T14:01:15.425Z
 #GAP:15970,445299615174
 : 24 8 16 Pa
 : 36 10 11 trzę 

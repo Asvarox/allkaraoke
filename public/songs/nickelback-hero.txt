@@ -1,5 +1,6 @@
 #ID:nickelback-hero
 #ARTIST:Nickelback
+#ARTISTORIGIN:CA
 #TITLE:Hero
 #CREATOR:subkei
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.431Z
 #GAP:8513,531776208582
 : 20 3 3 I 
 : 25 3 1 am 

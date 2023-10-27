@@ -1,5 +1,6 @@
 #ID:zielone-zabki-numerek-w-krzaczkach
 #ARTIST:Zielone Żabki
+#ARTISTORIGIN:PL
 #TITLE:Numerek w krzaczkach
 #CREATOR:Beneblade
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,9
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.568Z
 #GAP:21751,785610057246
 : 24 2 4 Naj
 : 29 2 4 pierw

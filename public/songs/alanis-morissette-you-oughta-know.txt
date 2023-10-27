@@ -1,5 +1,6 @@
 #ID:alanis-morissette-you-oughta-know
 #ARTIST:Alanis Morissette
+#ARTISTORIGIN:CA
 #TITLE:You Oughta Know
 #CREATOR:Hun
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-06-17T20:54:33.771Z
+#LASTUPDATE:2023-10-27T14:01:15.189Z
 #GAP:675,6958393113343
 : 14 4 1 I 
 : 30 4 -1 want 

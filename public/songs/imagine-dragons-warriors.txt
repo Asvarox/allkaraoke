@@ -1,5 +1,6 @@
 #ID:imagine-dragons-warriors
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Warriors
 #CREATOR:skream
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=skream
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Alternative rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.322Z
 #GAP:8812
 : 0 1 -13 As
 : 4 1 -10  a

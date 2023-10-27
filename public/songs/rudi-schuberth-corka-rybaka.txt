@@ -1,5 +1,6 @@
 #ID:rudi-schuberth-corka-rybaka
 #ARTIST:Rudi Schuberth
+#ARTISTORIGIN:PL
 #TITLE:Córka Rybaka
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.484Z
 #EDITION:SingStar '80s Polish
 #GAP:4691,4098360655735
 : 20 4 61 Gdy

@@ -1,5 +1,6 @@
 #ID:aerosmith-crazy
 #ARTIST:Aerosmith
+#ARTISTORIGIN:US
 #TITLE:Crazy
 #CREATOR:kaim21
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
@@ -11,6 +12,7 @@
 #VIDEOGAP:15
 #VOLUME:0,91
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.185Z
 #GAP:15830
 F 0 2 13 come
 F 3 5 13  'ere

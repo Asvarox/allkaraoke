@@ -1,5 +1,6 @@
 #ID:the-proclaimers-im-gonna-be-500-miles
 #ARTIST:The Proclaimers
+#ARTISTORIGIN:GB
 #TITLE:I'm gonna be (500 miles)
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,85
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.534Z
 #GAP:7016
 : 0 3 9 When
 : 4 4 10  I

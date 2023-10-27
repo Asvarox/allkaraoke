@@ -1,5 +1,6 @@
 #ID:alice-cooper-poison
 #ARTIST:Alice Cooper
+#ARTISTORIGIN:US
 #TITLE:Poison
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.192Z
 #EDITION:SingStar '80s
 #GAP:37687
 : 16 4 53 Your

@@ -1,5 +1,6 @@
 #ID:queen-the-show-must-go-on
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:The Show Must Go On
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.469Z
 #EDITION:SingStar Rock Ballads
 #GAP:25940,12
 : 0 4 62 Emp

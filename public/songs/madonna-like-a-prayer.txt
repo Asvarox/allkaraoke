@@ -1,5 +1,6 @@
 #ID:madonna-like-a-prayer
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Like A Prayer
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.387Z
 #GAP:13324,278562488826
 : 15 4 5 Life
 : 23 6 5  is

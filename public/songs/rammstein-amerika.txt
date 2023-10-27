@@ -1,5 +1,6 @@
 #ID:rammstein-amerika
 #ARTIST:Rammstein
+#ARTISTORIGIN:DE
 #TITLE:Amerika
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
@@ -12,7 +13,7 @@
 #VOLUME:0,68
 #GENRE:Metal Industrial
 #LANGUAGE:German
-#LASTUPDATE:2023-04-19T20:21:35.737Z
+#LASTUPDATE:2023-10-27T14:01:15.472Z
 #GAP:-70
 - 0 48
 - 48

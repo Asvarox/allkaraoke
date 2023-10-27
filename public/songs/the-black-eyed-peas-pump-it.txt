@@ -1,5 +1,6 @@
 #ID:the-black-eyed-peas-pump-it
 #ARTIST:The Black Eyed Peas
+#ARTISTORIGIN:US
 #TITLE:Pump It
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rap
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.523Z
 #EDITION:SingStar R&B
 #GAP:15554,564640020832
 : 20 4 69 Ha 

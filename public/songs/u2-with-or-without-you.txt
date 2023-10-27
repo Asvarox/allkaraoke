@@ -1,5 +1,6 @@
 #ID:u2-with-or-without-you
 #ARTIST:U2
+#ARTISTORIGIN:IE
 #TITLE:With or without you
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
@@ -12,6 +13,7 @@
 #VOLUME:0,9
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.553Z
 #GAP:28473
 : 0 3 14 See
 : 6 3 16  the

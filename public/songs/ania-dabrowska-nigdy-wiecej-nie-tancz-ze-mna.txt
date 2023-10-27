@@ -1,5 +1,6 @@
 #ID:ania-dabrowska-nigdy-wiecej-nie-tancz-ze-mna
 #ARTIST:Ania Dąbrowska
+#ARTISTORIGIN:PL
 #TITLE:Nigdy więcej nie tańcz ze mną
 #CREATOR:Currymalker
 #CREATORURL:
@@ -10,7 +11,7 @@
 #VIDEOID:7IfKnSVPbS8
 #VIDEOGAP:0
 #LANGUAGE:Polish
-#LASTUPDATE:2023-02-24T23:21:14.021Z
+#LASTUPDATE:2023-10-27T14:01:15.196Z
 #EDITION:SS Polskie Hity
 #GAP:-27,78619800064496
 : 9 89 3 U

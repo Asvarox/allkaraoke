@@ -1,5 +1,6 @@
 #ID:katy-perry-hot-n-cold
 #ARTIST:Katy Perry
+#ARTISTORIGIN:US
 #TITLE:Hot N Cold
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
@@ -12,6 +13,7 @@
 #VOLUME:0,91
 #GENRE:Pop/Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.345Z
 #GAP:36450
 : 0 6 11 You
 - 16

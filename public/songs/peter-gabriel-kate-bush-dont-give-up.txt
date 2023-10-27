@@ -1,5 +1,6 @@
 #ID:peter-gabriel-kate-bush-dont-give-up
 #ARTIST:Peter Gabriel & Kate Bush
+#ARTISTORIGIN:GB
 #TITLE:Don’t Give Up
 #CREATOR:Caruso
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:03:13.407Z
+#LASTUPDATE:2023-10-27T14:01:15.451Z
 #EDITION:[DUET]-Songs
 #GAP:40577,441745166085
 #TRACKNAMES:["Peter Gabriel","Kate Bush"]

@@ -1,5 +1,6 @@
 #ID:celine-dion-its-all-coming-back-to-me-now
 #ARTIST:Céline Dion
+#ARTISTORIGIN:CA
 #TITLE:It’s All Coming Back To Me Now
 #CREATOR:bohning
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.022Z
+#LASTUPDATE:2023-10-27T14:01:15.249Z
 #GAP:47889,02884827131
 : 24 3 4 There 
 : 28 3 5 were 

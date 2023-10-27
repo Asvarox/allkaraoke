@@ -1,5 +1,6 @@
 #ID:katarzyna-laska-mam-te-moc-kraina-lodu
 #ARTIST:Katarzyna Łaska
+#ARTISTORIGIN:PL
 #TITLE:Mam tę moc (Kraina lodu)
 #CREATOR:Currymalker
 #CREATORURL:
@@ -13,7 +14,7 @@
 #VIDEOGAP:-1
 #VOLUME:0,61
 #LANGUAGE:Polish
-#LASTUPDATE:2023-07-29T01:00:44.594Z
+#LASTUPDATE:2023-10-27T14:01:15.342Z
 #GAP:13902,580456407255
 : 18 2 -2 Na 
 : 22 1 -2 zbo

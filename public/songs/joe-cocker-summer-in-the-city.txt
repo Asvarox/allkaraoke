@@ -1,5 +1,6 @@
 #ID:joe-cocker-summer-in-the-city
 #ARTIST:Joe Cocker
+#ARTISTORIGIN:GB
 #TITLE:Summer In The City
 #CREATOR:Leki
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.028Z
+#LASTUPDATE:2023-10-27T14:01:15.332Z
 #EDITION:SingStar Summer Party
 #GAP:24414,285714285714
 : 23 3 5 Hot 

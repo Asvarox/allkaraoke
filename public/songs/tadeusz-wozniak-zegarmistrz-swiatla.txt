@@ -1,5 +1,6 @@
 #ID:tadeusz-wozniak-zegarmistrz-swiatla
 #ARTIST:Tadeusz Woźniak
+#ARTISTORIGIN:PL
 #TITLE:Zegarmistrz światła
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
@@ -11,6 +12,7 @@
 #VOLUME:0,8
 #GENRE:Ballade
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.512Z
 #GAP:9228
 : 0 2 -13 A
 : 3 2 -6  kie

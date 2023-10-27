@@ -1,5 +1,6 @@
 #ID:ed-sheeran-shape-of-you
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Shape of you
 #CREATOR:Volodia
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
@@ -11,6 +12,7 @@
 #VIDEOGAP:6
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.279Z
 #GAP:14855,242739940097
 : 26 1 -13 The 
 : 30 7 -8 club 

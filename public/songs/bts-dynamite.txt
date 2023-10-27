@@ -1,5 +1,6 @@
 #ID:bts-dynamite
 #ARTIST:BTS
+#ARTISTORIGIN:KR
 #TITLE:Dynamite
 #CREATOR:asdFer
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
@@ -10,6 +11,7 @@
 #VIDEOID:gdZLi9oWNZg
 #VIDEOGAP:20
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.240Z
 #GAP:22812,24445224103
 : 15 2 4 'Cause, 
 : 20 1 11 ah

@@ -1,5 +1,6 @@
 #ID:the-white-stripes-jolene
 #ARTIST:The White Stripes
+#ARTISTORIGIN:US
 #TITLE:Jolene
 #CREATOR:IC
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
@@ -10,6 +11,7 @@
 #VIDEOID:yXlULkwhgrc
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.539Z
 #EDITION:[SC]-Songs
 #GAP:45200
 - -19 1

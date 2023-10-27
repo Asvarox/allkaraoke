@@ -1,5 +1,6 @@
 #ID:perfect-nie-moge-ci-wiele-dac
 #ARTIST:Perfect
+#ARTISTORIGIN:PL
 #TITLE:Nie Mogę Ci Wiele Dać
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,85
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.448Z
 #GAP:15550
 : 0 4 -5 Sto
 : 5 2 0  go

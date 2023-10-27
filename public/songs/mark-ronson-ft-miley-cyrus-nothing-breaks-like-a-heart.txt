@@ -1,5 +1,6 @@
 #ID:mark-ronson-ft-miley-cyrus-nothing-breaks-like-a-heart
 #ARTIST:Mark Ronson ft  Miley Cyrus
+#ARTISTORIGIN:GB
 #TITLE:Nothing Breaks Like a Heart
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T20:09:41.884Z
+#LASTUPDATE:2023-10-27T14:01:15.397Z
 #GAP:31887,72024722746
 : 15 2 7 This 
 : 19 4 7 world 

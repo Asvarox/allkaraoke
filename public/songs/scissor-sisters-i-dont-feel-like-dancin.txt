@@ -1,5 +1,6 @@
 #ID:scissor-sisters-i-dont-feel-like-dancin
 #ARTIST:Scissor Sisters
+#ARTISTORIGIN:US
 #TITLE:I Don't Feel Like Dancin'
 #CREATOR:
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.042Z
+#LASTUPDATE:2023-10-27T14:01:15.488Z
 #EDITION:SingStar PopHit
 #GAP:13657,95778559526
 : 14 2 74 Wake 

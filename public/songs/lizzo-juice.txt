@@ -1,5 +1,6 @@
 #ID:lizzo-juice
 #ARTIST:Lizzo
+#ARTISTORIGIN:US
 #TITLE:Juice
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=asb
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Dance/Funk
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T23:49:55.145Z
+#LASTUPDATE:2023-10-27T14:01:15.378Z
 #GAP:16478
 : 16 1 7 Mir
 : 19 1 9 ror, 

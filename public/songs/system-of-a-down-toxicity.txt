@@ -1,5 +1,6 @@
 #ID:system-of-a-down-toxicity
 #ARTIST:System of a Down
+#ARTISTORIGIN:US
 #TITLE:Toxicity
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,6 +13,7 @@
 #VOLUME:0,8
 #GENRE:Metal Alternativo
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.511Z
 #EDITION:Rock Band Store 2008 Vol. 3
 #GAP:50540
 : 0 6 14 Con

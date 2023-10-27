@@ -1,5 +1,6 @@
 #ID:slawomir-milosc-w-zakopanem
 #ARTIST:Slawomir
+#ARTISTORIGIN:PL
 #TITLE:Milosc w Zakopanem
 #CREATOR:cubitus
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,675
 #GENRE:Rock Polo
 #LANGUAGE:Polish
-#LASTUPDATE:2023-07-22T21:15:10.394Z
+#LASTUPDATE:2023-10-27T14:01:15.499Z
 #GAP:30240,28563267638
 : 21 2 21 Te
 : 25 2 21 raz 

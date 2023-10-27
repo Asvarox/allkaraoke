@@ -1,5 +1,6 @@
 #ID:harry-styles-sign-of-the-times
 #ARTIST:Harry Styles
+#ARTISTORIGIN:GB
 #TITLE:Sign of the Times
 #CREATOR:mustangfred and Volodia
 #CREATORURL:
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T23:39:07.244Z
+#LASTUPDATE:2023-10-27T14:01:15.313Z
 #GAP:16001,866758070548
 : 16 2 2 Just
 : 19 2 5 ~ 

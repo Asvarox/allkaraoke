@@ -1,5 +1,6 @@
 #ID:nirvana-smells-like-teen-spirit
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:Smells Like Teen Spirit
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:58:43.439Z
+#LASTUPDATE:2023-10-27T14:01:15.436Z
 #EDITION:SingStar Lgnds
 #GAP:25479,29411764706
 : 23 6 60 Load 

@@ -1,5 +1,6 @@
 #ID:metallica-enter-sandman
 #ARTIST:Metallica
+#ARTISTORIGIN:US
 #TITLE:Enter Sandman
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:2
 #GENRE:Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.403Z
 #EDITION:Rock Band
 #GAP:72602,4376271953
 : 27 5 19 Say 

@@ -1,5 +1,6 @@
 #ID:avril-lavigne-girlfriend
 #ARTIST:Avril Lavigne
+#ARTISTORIGIN:CA
 #TITLE:Girlfriend
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.207Z
 #GAP:12061,239736673677
 : 22 5 9 Hey! 
 : 30 5 9 Hey! 

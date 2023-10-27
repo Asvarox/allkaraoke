@@ -1,5 +1,6 @@
 #ID:oasis-wonderwall
 #ARTIST:Oasis
+#ARTISTORIGIN:GB
 #TITLE:Wonderwall
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Britpop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.439Z
 #GAP:37718,620689655174
 : 23 6 13 To
 : 31 10 11 day

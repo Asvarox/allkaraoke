@@ -1,5 +1,6 @@
 #ID:ich-troje-wypijmy-za-to
 #ARTIST:Ich Troje
+#ARTISTORIGIN:PL
 #TITLE:Wypijmy Za To
 #CREATOR:
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,71
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.317Z
 #EDITION:Ultrastar
 #GAP:34218
 : 0 2 2 U

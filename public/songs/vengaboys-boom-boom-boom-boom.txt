@@ -1,5 +1,6 @@
 #ID:vengaboys-boom-boom-boom-boom
 #ARTIST:Vengaboys
+#ARTISTORIGIN:NL
 #TITLE:Boom, Boom, Boom, Boom!!
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Dance
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.557Z
 #GAP:6175,200375478374
 : 18 7 18 Oh
 : 26 3 15 ~

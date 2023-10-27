@@ -1,5 +1,6 @@
 #ID:psy-gangnam-style
 #ARTIST:Psy
+#ARTISTORIGIN:KR
 #TITLE:Gangnam Style
 #CREATOR:vicktoben
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=54350
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:K-Pop
 #LANGUAGE:Korean
+#LASTUPDATE:2023-10-27T14:01:15.460Z
 #GAP:8833,272727272728
 F 18 3 2 O
 F 22 3 2 ppan 

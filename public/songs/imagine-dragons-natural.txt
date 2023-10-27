@@ -1,5 +1,6 @@
 #ID:imagine-dragons-natural
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Natural
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.321Z
 #GAP:11706
 : 0 1 2 Will
 : 2 2 9  you

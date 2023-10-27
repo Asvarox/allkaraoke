@@ -1,5 +1,6 @@
 #ID:shakira-y-alejandro-sanz-la-tortura
 #ARTIST:Shakira y Alejandro Sanz
+#ARTISTORIGIN:CO
 #TITLE:La tortura
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.587Z
+#LASTUPDATE:2023-10-27T14:01:15.495Z
 #GAP:14101
 F 13 1 16 Ay 
 F 15 1 16 pa

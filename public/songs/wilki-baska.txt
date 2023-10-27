@@ -1,5 +1,6 @@
 #ID:wilki-baska
 #ARTIST:Wilki
+#ARTISTORIGIN:PL
 #TITLE:Baska
 #CREATOR:juliana
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=558
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,85
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.565Z
 #EDITION:Singstar 80s Polish
 #GAP:28630
 : 0 2 7 Bas

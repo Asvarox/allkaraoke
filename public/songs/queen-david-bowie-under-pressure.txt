@@ -1,5 +1,6 @@
 #ID:queen-david-bowie-under-pressure
 #ARTIST:Queen & David Bowie
+#ARTISTORIGIN:GB
 #TITLE:Under Pressure
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:5
 #VOLUME:0,85
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.465Z
 #EDITION:SingStar Queen
 #GAP:27493
 : 0 7 9 Boom

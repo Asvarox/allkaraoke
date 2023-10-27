@@ -1,5 +1,6 @@
 #ID:nirvana-come-as-you-are
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:Come As You Are
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:56:52.563Z
+#LASTUPDATE:2023-10-27T14:01:15.435Z
 #EDITION:SingStar Rocks!
 #GAP:16896,29411764706
 : 23 11 59 Come 

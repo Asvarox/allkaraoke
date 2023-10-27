@@ -1,5 +1,6 @@
 #ID:wham-wake-me-up-before-you-go-go
 #ARTIST:Wham
+#ARTISTORIGIN:GB
 #TITLE:Wake Me Up Before You Go-Go
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.562Z
 #EDITION:SingStar '80s
 #GAP:-34,87515451174295
 : 16 2 48 Jit

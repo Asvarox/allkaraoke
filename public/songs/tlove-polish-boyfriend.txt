@@ -1,5 +1,6 @@
 #ID:tlove-polish-boyfriend
 #ARTIST:T.Love
+#ARTISTORIGIN:PL
 #TITLE:Polish Boyfriend
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.546Z
 #GAP:3784,900351699883
 F 9 3 7 I 
 F 13 3 7 am 

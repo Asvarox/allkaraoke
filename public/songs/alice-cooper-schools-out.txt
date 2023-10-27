@@ -1,5 +1,6 @@
 #ID:alice-cooper-schools-out
 #ARTIST:Alice Cooper
+#ARTISTORIGIN:US
 #TITLE:School’s Out
 #CREATOR:ultrastarsongs
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T21:00:58.345Z
+#LASTUPDATE:2023-10-27T14:01:15.192Z
 #GAP:20802,03289595269
 : 18 3 2 Well, 
 : 22 2 4 we 

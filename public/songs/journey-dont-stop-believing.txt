@@ -1,5 +1,6 @@
 #ID:journey-dont-stop-believing
 #ARTIST:Journey
+#ARTISTORIGIN:US
 #TITLE:Don't Stop Believing
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
@@ -11,6 +12,7 @@
 #VIDEOGAP:-1
 #GENRE:Classic Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.334Z
 #GAP:17753,570538902266
 : 16 3 20 Just 
 : 20 2 16 a 

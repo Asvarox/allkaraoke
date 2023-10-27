@@ -1,5 +1,6 @@
 #ID:pearl-jam-alive
 #ARTIST:Pearl Jam
+#ARTISTORIGIN:US
 #TITLE:Alive
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,91
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.447Z
 #EDITION:SingStar Amped
 #GAP:16985,29411764706
 F 23 9 36 Wah

@@ -1,5 +1,6 @@
 #ID:peter-schilling-major-tom-vollig-losgelost
 #ARTIST:Peter Schilling
+#ARTISTORIGIN:DE
 #TITLE:Major Tom (völlig losgelöst)
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:New Wave
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:22:49.175Z
+#LASTUPDATE:2023-10-27T14:01:15.451Z
 #EDITION:SingStar [DE]
 #GAP:37446,17511520737
 : 22 2 11 Gründ

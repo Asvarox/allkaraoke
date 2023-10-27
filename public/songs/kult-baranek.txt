@@ -1,5 +1,6 @@
 #ID:kult-baranek
 #ARTIST:Kult
+#ARTISTORIGIN:PL
 #TITLE:Baranek
 #CREATOR:oldkillerjones
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.356Z
 #GAP:8767
 F 0 3 16 U, 
 F 5 4 14 u, 

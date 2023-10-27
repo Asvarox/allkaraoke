@@ -1,5 +1,6 @@
 #ID:lizar-ciagle-pada
 #ARTIST:Lizar
+#ARTISTORIGIN:PL
 #TITLE:Ciągle Pada
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,81
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.377Z
 #GAP:5519
 : 0 2 14 Ciąg
 : 4 2 17 le

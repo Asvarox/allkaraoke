@@ -1,5 +1,6 @@
 #ID:guns-n-roses-november-rain
 #ARTIST:Guns N’ Roses
+#ARTISTORIGIN:US
 #TITLE:November Rain
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T20:07:23.365Z
+#LASTUPDATE:2023-10-27T14:01:15.310Z
 #EDITION:None
 #GAP:88833,31245105717
 : 21 3 8 When 

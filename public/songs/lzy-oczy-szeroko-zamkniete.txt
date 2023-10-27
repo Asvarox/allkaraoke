@@ -1,5 +1,6 @@
 #ID:lzy-oczy-szeroko-zamkniete
 #ARTIST:Lzy
+#ARTISTORIGIN:PL
 #TITLE:Oczy szeroko zamkniete
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.384Z
 #EDITION:SingStar ESKA
 #GAP:29860,272727272728
 : 21 4 59 Zos

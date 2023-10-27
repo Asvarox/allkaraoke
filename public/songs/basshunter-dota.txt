@@ -1,5 +1,6 @@
 #ID:basshunter-dota
 #ARTIST:Basshunter
+#ARTISTORIGIN:SE
 #TITLE:DotA
 #CREATOR:Beneblade
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
@@ -10,6 +11,7 @@
 #VIDEOID:c_cCsFU6pak
 #VIDEOGAP:0
 #LANGUAGE:Swedish
+#LASTUPDATE:2023-10-27T14:01:15.212Z
 #GAP:7819,142857142857
 : 19 2 4 Vi 
 : 23 2 4 sit

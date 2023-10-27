@@ -1,5 +1,6 @@
 #ID:avenged-sevenfold-nightmare
 #ARTIST:Avenged Sevenfold
+#ARTISTORIGIN:US
 #TITLE:Nightmare
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.204Z
 #EDITION:Rock Band Store 2010 Vol. 3
 #GAP:60918,59220092531
 : 26 7 9 Night

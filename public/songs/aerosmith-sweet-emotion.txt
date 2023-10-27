@@ -1,5 +1,6 @@
 #ID:aerosmith-sweet-emotion
 #ARTIST:Aerosmith
+#ARTISTORIGIN:US
 #TITLE:Sweet Emotion
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:-5
 #GENRE:Hard Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.187Z
 #EDITION:Rock Band Store 2013 Vol. 1
 #GAP:36800
 : 0 116 16 Sweet

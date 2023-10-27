@@ -1,5 +1,6 @@
 #ID:nocny-kochanek-kon-na-bialym-rycerzu
 #ARTIST:Nocny Kochanek
+#ARTISTORIGIN:PL
 #TITLE:Koń Na Białym Rycerzu
 #CREATOR:Asvarox
 #CREATORURL:https://github.com/Asvarox/olkaraoke
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Heavy Metal
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.438Z
 #EDITION:
 #GAP:26945
 : 16 4 9 Sa

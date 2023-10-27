@@ -1,5 +1,6 @@
 #ID:3-doors-down-here-without-you
 #ARTIST:3 Doors Down
+#ARTISTORIGIN:US
 #TITLE:Here without you
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
@@ -10,6 +11,7 @@
 #VIDEOID:kPBzTxZQG5Q
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.159Z
 #GAP:5662,554089709763
 : 19 1 0 A
 : 23 2 10  hun

@@ -1,5 +1,6 @@
 #ID:shakira-feat-rihanna-cant-remember-to-forget-you
 #ARTIST:Shakira feat. Rihanna
+#ARTISTORIGIN:CO
 #TITLE:Can’t Remember To Forget You
 #CREATOR:superstar90
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:07:41.436Z
+#LASTUPDATE:2023-10-27T14:01:15.492Z
 #EDITION:[DUET]-Songs
 #GAP:7081,880886827996
 #TRACKNAMES:["Shakira","Rihanna"]

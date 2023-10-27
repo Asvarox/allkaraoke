@@ -1,5 +1,6 @@
 #ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-rota
 #ARTIST:Reprezentacyjny Zespół Artystyczny Wojska Polskiego
+#ARTISTORIGIN:PL
 #TITLE:Rota
 #CREATOR:Beneblade
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,8
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.477Z
 #GAP:14935,610445651366
 : 18 11 -12 Nie 
 * 32 6 -7 rzu

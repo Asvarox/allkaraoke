@@ -1,5 +1,6 @@
 #ID:czerwone-gitary-tak-bardzo-sie-staralem
 #ARTIST:Czerwone Gitary
+#ARTISTORIGIN:PL
 #TITLE:Tak bardzo sie staralem
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
@@ -14,7 +15,7 @@
 #VOLUME:0,72
 #GENRE:None
 #LANGUAGE:Polish
-#LASTUPDATE:2023-06-28T18:56:32.654Z
+#LASTUPDATE:2023-10-27T14:01:15.260Z
 #GAP:1100
 : 22 6 -1 Kto 
 : 29 7 2 za 

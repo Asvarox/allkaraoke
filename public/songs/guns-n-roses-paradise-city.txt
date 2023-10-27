@@ -1,5 +1,6 @@
 #ID:guns-n-roses-paradise-city
 #ARTIST:Guns N' Roses
+#ARTISTORIGIN:US
 #TITLE:Paradise City
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:18:27.232Z
+#LASTUPDATE:2023-10-27T14:01:15.311Z
 #GAP:20820,561264822136
 : 13 2 6 Take 
 : 17 1 6 me 

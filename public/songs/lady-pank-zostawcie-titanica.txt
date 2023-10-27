@@ -1,5 +1,6 @@
 #ID:lady-pank-zostawcie-titanica
 #ARTIST:Lady Pank
+#ARTISTORIGIN:PL
 #TITLE:Zostawcie Titanica
 #CREATORURL:
 #BPM:132,16
@@ -9,6 +10,7 @@
 #VIDEOID:FhL0hCGgMj4
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.367Z
 #GAP:31254,510895883777
 : 9 2 8 Ja 
 : 11 2 6 wie

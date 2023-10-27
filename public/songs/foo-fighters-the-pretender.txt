@@ -1,5 +1,6 @@
 #ID:foo-fighters-the-pretender
 #ARTIST:Foo Fighters
+#ARTISTORIGIN:US
 #TITLE:The Pretender
 #CREATOR:
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Rock Alternativo
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T11:39:19.745Z
+#LASTUPDATE:2023-10-27T14:01:15.297Z
 #GAP:10096,005432897931
 : 23 9 16 Keep 
 : 33 8 14 you

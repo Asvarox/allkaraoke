@@ -1,5 +1,6 @@
 #ID:metro-station-shake-it
 #ARTIST:Metro Station
+#ARTISTORIGIN:US
 #TITLE:Shake It
 #CREATOR:ChiiO
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chiio
@@ -10,6 +11,7 @@
 #VIDEOID:_wjFahULCK8
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.403Z
 #GAP:19510,241379310344
 : 19 2 -6 I'll
 : 22 4 -6  take

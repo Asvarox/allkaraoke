@@ -1,5 +1,6 @@
 #ID:skid-row-18-life
 #ARTIST:Skid Row
+#ARTISTORIGIN:US
 #TITLE:18 & Life
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.497Z
 #GAP:21291,659574468085
 : 25 6 20 Ri
 : 33 7 20 cky 

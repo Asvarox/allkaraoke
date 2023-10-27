@@ -1,5 +1,6 @@
 #ID:rihanna-only-girl-in-the-world
 #ARTIST:Rihanna
+#ARTISTORIGIN:BB
 #TITLE:Only Girl (In The World)
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T20:56:12.697Z
+#LASTUPDATE:2023-10-27T14:01:15.480Z
 #GAP:16123,255832407554
 : 17 3 13 La, 
 : 21 3 11 la, 

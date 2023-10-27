@@ -1,5 +1,6 @@
 #ID:natasha-bedingfield-unwritten
 #ARTIST:Natasha Bedingfield
+#ARTISTORIGIN:GB
 #TITLE:Unwritten
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.426Z
 #GAP:13393,90243902439
 : 22 5 17 I 
 * 28 10 15 am 

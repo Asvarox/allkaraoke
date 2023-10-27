@@ -1,5 +1,6 @@
 #ID:disturbed-down-with-the-sickness
 #ARTIST:Disturbed
+#ARTISTORIGIN:US
 #TITLE:Down with the sickness
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:16
 #GENRE:Nu Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.270Z
 #EDITION:Rock Band 2
 #GAP:8704,902753220511
 - 0 291

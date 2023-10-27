@@ -1,5 +1,6 @@
 #ID:indochine-jai-demande-a-la-lune
 #ARTIST:Indochine
+#ARTISTORIGIN:FR
 #TITLE:J'ai Demandé A La Lune
 #CREATOR:lord_tenebro
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lord_tenebro
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:French
-#LASTUPDATE:2023-01-27T21:54:54.755Z
+#LASTUPDATE:2023-10-27T14:01:15.323Z
 #GAP:34741
 : 22 3 11 J'ai 
 : 26 2 9 de

@@ -1,5 +1,6 @@
 #ID:foreigner-i-want-to-know-what-love-is
 #ARTIST:Foreigner
+#ARTISTORIGIN:US
 #TITLE:I Want To Know What Love Is
 #CREATOR:dereinedervieleist
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T18:47:21.859Z
+#LASTUPDATE:2023-10-27T14:01:15.299Z
 #EDITION:SingStar ’80s [DE|PL|SE|UK|US]
 #GAP:14842,423681776134
 : 22 3 15 I’ve 

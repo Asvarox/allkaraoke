@@ -1,5 +1,6 @@
 #ID:tenacious-d-kickapoo
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Kickapoo
 #CREATOR:borax
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136
@@ -10,6 +11,7 @@
 #VIDEOID:hvvjiE4AdUI
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.517Z
 #GAP:11377,272727272728
 - -8 1
 - 1

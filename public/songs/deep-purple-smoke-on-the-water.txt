@@ -1,5 +1,6 @@
 #ID:deep-purple-smoke-on-the-water
 #ARTIST:Deep Purple
+#ARTISTORIGIN:GB
 #TITLE:Smoke On The Water
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.268Z
 #EDITION:SingStar Rocks
 #GAP:50950
 : 0 3 62 We

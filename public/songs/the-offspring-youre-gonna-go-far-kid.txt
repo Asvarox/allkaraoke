@@ -1,5 +1,6 @@
 #ID:the-offspring-youre-gonna-go-far-kid
 #ARTIST:The Offspring
+#ARTISTORIGIN:US
 #TITLE:You’re Gonna Go Far, Kid
 #CREATOR:snowtox
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.333Z
+#LASTUPDATE:2023-10-27T14:01:15.533Z
 #GAP:17628,657095264534
 : 17 2 16 Show 
 : 21 3 16 me 

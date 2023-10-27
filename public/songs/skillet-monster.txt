@@ -1,5 +1,6 @@
 #ID:skillet-monster
 #ARTIST:Skillet
+#ARTISTORIGIN:US
 #TITLE:Monster
 #CREATOR:slim_shadyy
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,9
 #GENRE:Christian Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.326Z
+#LASTUPDATE:2023-10-27T14:01:15.498Z
 #GAP:14410
 : 18 2 0 The 
 : 22 3 0 se

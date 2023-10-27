@@ -1,5 +1,6 @@
 #ID:the-cranberries-zombie
 #ARTIST:The Cranberries
+#ARTISTORIGIN:IE
 #TITLE:Zombie
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.527Z
 #EDITION:SingStar '90s
 #GAP:50088,24
 : 0 5 64 A

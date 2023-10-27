@@ -1,5 +1,6 @@
 #ID:the-who-behind-blue-eyes
 #ARTIST:The Who
+#ARTISTORIGIN:GB
 #TITLE:Behind Blue Eyes
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -12,6 +13,7 @@
 #VOLUME:0,9
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.540Z
 #EDITION:Rock Band Track Pack Classic Rock
 #GAP:7346,217510957089
 : 26 7 11 No 

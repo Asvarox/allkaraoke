@@ -1,5 +1,6 @@
 #ID:queen-i-want-it-all
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:I Want It All
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,85
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.466Z
 #EDITION:SingStar Queen
 #GAP:493,2355680710498
 : 12 2 57 I 

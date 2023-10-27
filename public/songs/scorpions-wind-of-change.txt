@@ -1,5 +1,6 @@
 #ID:scorpions-wind-of-change
 #ARTIST:Scorpions
+#ARTISTORIGIN:DE
 #TITLE:Wind of Change
 #CREATOR:a224
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3
@@ -10,6 +11,7 @@
 #VIDEOID:n4RjJKxsamQ
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.490Z
 #EDITION:SingStar Rocks
 #GAP:21930,83
 : 0 4 7 I

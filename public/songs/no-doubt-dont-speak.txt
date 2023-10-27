@@ -1,5 +1,6 @@
 #ID:no-doubt-dont-speak
 #ARTIST:No Doubt
+#ARTISTORIGIN:US
 #TITLE:Don't speak
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:29
 #GENRE:Pop Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.436Z
 #EDITION:Rock Band Store 2008 Vol. 4
 #GAP:36350
 : 0 3 17 You

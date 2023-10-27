@@ -1,5 +1,6 @@
 #ID:haddaway-jim-carrey-the-roxbury-guys-what-is-love
 #ARTIST:Haddaway & Jim Carrey & The Roxbury Guys
+#ARTISTORIGIN:DE
 #TITLE:What is love
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,91
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.312Z
 #GAP:3600
 : 0 3 2 What
 : 4 2 5  is

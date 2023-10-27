@@ -1,5 +1,6 @@
 #ID:scissor-sisters-any-which-way
 #ARTIST:Scissor Sisters
+#ARTISTORIGIN:US
 #TITLE:Any Which Way
 #CREATOR:REL
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Disco
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.041Z
+#LASTUPDATE:2023-10-27T14:01:15.487Z
 #GAP:19900
 : 20 4 10 Danc
 : 25 4 12 in’ 

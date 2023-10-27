@@ -1,5 +1,6 @@
 #ID:queen-bohemian-rhapsody
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Bohemian Rhapsody
 #CREATOR:ears
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=36923
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,9
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.463Z
 #EDITION:[DUET]-Songs
 #GAP:953,8628370457209
 #TRACKNAMES:["Freddie (+ Choirs)","Choirs (+ Freddie)"]

@@ -1,5 +1,6 @@
 #ID:czeslaw-niemen-dziwny-jest-ten-swiat
 #ARTIST:Czesław Niemen
+#ARTISTORIGIN:PL
 #TITLE:Dziwny jest ten świat
 #CREATOR:davidus01
 #CREATORURL:
@@ -10,6 +11,7 @@
 #VIDEOID:wTjLZwpmufw
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.261Z
 #GAP:15678,454680534918
 - -10 1
 - 1

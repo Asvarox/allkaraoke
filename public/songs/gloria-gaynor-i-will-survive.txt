@@ -1,5 +1,6 @@
 #ID:gloria-gaynor-i-will-survive
 #ARTIST:Gloria Gaynor
+#ARTISTORIGIN:US
 #TITLE:I Will Survive
 #CREATOR:Canni
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Disco
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T11:39:19.749Z
+#LASTUPDATE:2023-10-27T14:01:15.305Z
 #EDITION:SingStar Anthems
 #GAP:6197,857142857143
 : 22 4 9 First 

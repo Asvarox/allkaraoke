@@ -1,5 +1,6 @@
 #ID:motley-crue-kickstart-my-heart
 #ARTIST:Mötley Crüe
+#ARTISTORIGIN:US
 #TITLE:Kickstart my heart
 #CREATOR:
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,8
 #GENRE:Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-10-01T07:18:43.604Z
+#LASTUPDATE:2023-10-27T14:01:15.416Z
 #EDITION:Rock Band Store 2008 Vol. 4
 #GAP:51509,48259594543
 : 26 9 21 Oh

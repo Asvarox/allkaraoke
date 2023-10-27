@@ -1,5 +1,6 @@
 #ID:good-charlotte-girls-and-boys
 #ARTIST:Good Charlotte
+#ARTISTORIGIN:US
 #TITLE:Girls And Boys
 #CREATOR:Canni
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.284Z
+#LASTUPDATE:2023-10-27T14:01:15.306Z
 #EDITION:SingStar [ES|UK], SingStar Rocks! [UK]
 #GAP:6621,4792899408285
 : 18 4 3 E

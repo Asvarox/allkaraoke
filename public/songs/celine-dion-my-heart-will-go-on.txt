@@ -1,5 +1,6 @@
 #ID:celine-dion-my-heart-will-go-on
 #ARTIST:Céline Dion
+#ARTISTORIGIN:CA
 #TITLE:My Heart Will Go On
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-27T18:16:56.205Z
+#LASTUPDATE:2023-10-27T14:01:15.250Z
 #GAP:19435,933071582724
 : 26 20 16 E
 : 48 6 16 very 

@@ -1,5 +1,6 @@
 #ID:smash-mouth-all-star
 #ARTIST:Smash Mouth
+#ARTISTORIGIN:US
 #TITLE:All Star
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +11,7 @@
 #VIDEOID:L_jWHffIx5E
 #VIDEOGAP:36
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.501Z
 #GAP:37300
 : 0 6 6 Some
 : 8 3 13 bo

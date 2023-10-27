@@ -1,5 +1,6 @@
 #ID:fasolki-ogorek-wasaty
 #ARTIST:Fasolki
+#ARTISTORIGIN:PL
 #TITLE:Ogórek wąsaty
 #CREATOR:Pit33
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Dla dzieci
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.292Z
 #GAP:284,5440020289125
 : 8 2 0 We
 : 10 4 5 so

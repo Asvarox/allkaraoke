@@ -1,5 +1,6 @@
 #ID:kylie-minogue-in-your-eyes
 #ARTIST:Kylie Minogue
+#ARTISTORIGIN:AU
 #TITLE:In Your Eyes
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.357Z
 #EDITION:S'Star Popworld
 #GAP:15785,528865563181
 : 17 4 61 What

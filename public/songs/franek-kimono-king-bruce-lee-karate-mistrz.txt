@@ -1,5 +1,6 @@
 #ID:franek-kimono-king-bruce-lee-karate-mistrz
 #ARTIST:Franek Kimono
+#ARTISTORIGIN:PL
 #TITLE:King Bruce Lee Karate Mistrz
 #CREATOR:mgr_rybak
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Disco
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.300Z
 #GAP:27087,69462741052
 - -7 1
 - 1

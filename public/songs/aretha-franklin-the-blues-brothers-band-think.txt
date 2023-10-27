@@ -1,5 +1,6 @@
 #ID:aretha-franklin-the-blues-brothers-band-think
 #ARTIST:Aretha Franklin & The Blues Brothers Band
+#ARTISTORIGIN:US
 #TITLE:Think
 #CREATOR:bohning
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:soul
 #LANGUAGE:English
-#LASTUPDATE:2023-06-17T20:58:23.739Z
+#LASTUPDATE:2023-10-27T14:01:15.197Z
 #GAP:163534,3269726663
 : 26 2 8 You 
 : 29 5 10 bet

@@ -1,5 +1,6 @@
 #ID:imagine-dragons-radioactive
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Radioactive
 #CREATOR:dontellme
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,75
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.321Z
 #GAP:35040
 : 0 2 -3 I'm
 : 8 6 6  wa

@@ -1,5 +1,6 @@
 #ID:2-plus-1-chodz-pomaluj-moj-swiat
 #ARTIST:2 Plus 1
+#ARTISTORIGIN:PL
 #TITLE:Chodz, Pomaluj Mój Swiat
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -10,6 +11,7 @@
 #VIDEOID:8fL5mNR8lrw
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.157Z
 #GAP:1230
 : 0 1 0 Na
 : 2 1 2  na

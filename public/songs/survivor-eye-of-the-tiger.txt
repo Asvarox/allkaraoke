@@ -1,5 +1,6 @@
 #ID:survivor-eye-of-the-tiger
 #ARTIST:Survivor
+#ARTISTORIGIN:US
 #TITLE:Eye Of The Tiger
 #CREATOR:Hammy
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=574
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.509Z
 #EDITION:SingStar 80s
 #GAP:48785,540145985404
 : 15 3 67 Ri

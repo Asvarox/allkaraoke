@@ -1,5 +1,6 @@
 #ID:jason-mraz-im-yours
 #ARTIST:Jason Mraz
+#ARTISTORIGIN:US
 #TITLE:I'm yours
 #CREATOR:artax1979
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=artax1979
@@ -12,7 +13,7 @@
 #VOLUME:0,75
 #GENRE:Other
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T18:27:03.625Z
+#LASTUPDATE:2023-10-27T14:01:15.326Z
 #GAP:18186,754072308304
 : 20 3 13 Well
 : 24 4 15 ~, 

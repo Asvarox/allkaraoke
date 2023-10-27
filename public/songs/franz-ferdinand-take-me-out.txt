@@ -1,5 +1,6 @@
 #ID:franz-ferdinand-take-me-out
 #ARTIST:Franz Ferdinand
+#ARTISTORIGIN:GB
 #TITLE:Take Me Out
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.301Z
 #EDITION:SingStar Party English
 #GAP:4653,175908221798
 : 14 4 71 So

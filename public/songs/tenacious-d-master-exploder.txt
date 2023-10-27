@@ -1,5 +1,6 @@
 #ID:tenacious-d-master-exploder
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Master Exploder
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.518Z
 #EDITION:Rock Band 2
 #GAP:61550
 : 0 38 11 Ah

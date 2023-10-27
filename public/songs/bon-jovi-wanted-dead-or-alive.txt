@@ -1,5 +1,6 @@
 #ID:bon-jovi-wanted-dead-or-alive
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Wanted dead or alive
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:-17
 #GENRE:Glam Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.230Z
 #EDITION:Rock Band
 #GAP:31180
 : 0 3 14 It's

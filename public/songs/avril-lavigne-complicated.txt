@@ -1,5 +1,6 @@
 #ID:avril-lavigne-complicated
 #ARTIST:Avril Lavigne
+#ARTISTORIGIN:CA
 #TITLE:Complicated
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +11,7 @@
 #VIDEOID:5NPBIwQyPWE
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.206Z
 #EDITION:SingStar
 #GAP:32138,348049281314
 : 21 8 65 Chill

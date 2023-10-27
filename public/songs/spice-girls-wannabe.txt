@@ -1,5 +1,6 @@
 #ID:spice-girls-wannabe
 #ARTIST:Spice Girls
+#ARTISTORIGIN:GB
 #TITLE:Wannabe
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:45
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.505Z
 #EDITION:SingStar '90s
 #GAP:49247,06
 F 0 9 71 Yo

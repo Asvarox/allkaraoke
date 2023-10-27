@@ -1,5 +1,6 @@
 #ID:david-bisbal-ave-maria
 #ARTIST:David Bisbal
+#ARTISTORIGIN:ES
 #TITLE:Ave María
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,9
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.559Z
+#LASTUPDATE:2023-10-27T14:01:15.264Z
 #EDITION:SingStar Party
 #GAP:-36,72727272727252
 : 18 3 67 A

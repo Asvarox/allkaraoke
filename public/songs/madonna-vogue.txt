@@ -1,5 +1,6 @@
 #ID:madonna-vogue
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Vogue
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
@@ -12,6 +13,7 @@
 #VOLUME:0,91
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.389Z
 #GAP:-1447,9535683576955
 - 0 554
 - 554

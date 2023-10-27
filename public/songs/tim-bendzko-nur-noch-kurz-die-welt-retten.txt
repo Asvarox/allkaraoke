@@ -1,5 +1,6 @@
 #ID:tim-bendzko-nur-noch-kurz-die-welt-retten
 #ARTIST:Tim Bendzko
+#ARTISTORIGIN:DE
 #TITLE:Nur noch kurz die Welt retten
 #CREATOR:fepo
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T18:51:45.338Z
+#LASTUPDATE:2023-10-27T14:01:15.541Z
 #EDITION:None
 #GAP:17582,09985315712
 : 14 2 -5 Ich 

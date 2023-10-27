@@ -1,5 +1,6 @@
 #ID:psychostick-numbers-i-can-only-count-to-four
 #ARTIST:Psychostick
+#ARTISTORIGIN:US
 #TITLE:Numbers (I Can Only Count to Four)
 #CREATOR:Daniel Baur
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=177415
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Nu Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.393Z
+#LASTUPDATE:2023-10-27T14:01:15.461Z
 #GAP:-1,680672268907557
 F 4 3 1 I 
 F 8 4 0 can 

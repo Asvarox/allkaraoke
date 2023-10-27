@@ -1,5 +1,6 @@
 #ID:the-jacksons-blame-it-on-the-boogie
 #ARTIST:The Jacksons
+#ARTISTORIGIN:US
 #TITLE:Blame It On The Boogie
 #CREATOR:RetroGirl
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,5
 #GENRE:Disco
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.043Z
+#LASTUPDATE:2023-10-27T14:01:15.530Z
 #GAP:7402,438483706495
 F 15 1 17 Hi
 F 17 1 19 ~, 

@@ -1,5 +1,6 @@
 #ID:zz-top-sharp-dressed-man
 #ARTIST:ZZ Top
+#ARTISTORIGIN:US
 #TITLE:Sharp Dressed Man
 #CREATOR:NoeliaMicaela
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
@@ -10,6 +11,7 @@
 #VIDEOID:Pn2-b_opVTo
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.569Z
 #GAP:23022,016129032258
 : 33 14 3 Clean 
 : 49 6 0 shirt

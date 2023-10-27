@@ -1,5 +1,6 @@
 #ID:coldplay-yellow
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:Yellow
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Britpop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.257Z
 #GAP:34694,565217391304
 : 37 7 13 Look 
 : 51 6 15 at 

@@ -1,5 +1,6 @@
 #ID:ed-sheeran-photograph
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Photograph
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:1
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.279Z
 #GAP:16944,349565457305
 : 14 1 8 Lov
 : 17 1 8 ing 

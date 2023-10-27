@@ -1,5 +1,6 @@
 #ID:maroon-5-harder-to-breathe
 #ARTIST:Maroon 5
+#ARTISTORIGIN:US
 #TITLE:Harder to breathe
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:-1
 #GENRE:Pop Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.398Z
 #EDITION:Guitar Hero 5
 #GAP:5009,966665555518
 : 20 2 -1 How 

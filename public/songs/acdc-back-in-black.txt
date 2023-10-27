@@ -1,5 +1,6 @@
 #ID:acdc-back-in-black
 #ARTIST:AC/DC
+#ARTISTORIGIN:AU
 #TITLE:Back in Black
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,7 +13,7 @@
 #VOLUME:0,65
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-04T18:28:45.410Z
+#LASTUPDATE:2023-10-27T14:01:15.173Z
 #EDITION:AC/DC Live Rock Band Track Pack
 #GAP:40745,10177281681
 : 26 3 28 Back 

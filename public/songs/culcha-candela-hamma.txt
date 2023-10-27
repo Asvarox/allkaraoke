@@ -1,5 +1,6 @@
 #ID:culcha-candela-hamma
 #ARTIST:Culcha Candela
+#ARTISTORIGIN:DE
 #TITLE:Hamma!
 #CREATOR:Leki
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6
@@ -12,7 +13,7 @@
 #VOLUME:0,75
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:11:37.869Z
+#LASTUPDATE:2023-10-27T14:01:15.258Z
 #EDITION:SingStar Summer Party
 #GAP:2985,2941176470586
 F 23 10 0 Yeah 

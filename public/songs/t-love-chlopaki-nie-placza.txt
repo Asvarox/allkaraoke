@@ -1,5 +1,6 @@
 #ID:t-love-chlopaki-nie-placza
 #ARTIST:T. Love
+#ARTISTORIGIN:PL
 #TITLE:Chłopaki Nie Płaczą
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:51
 #VOLUME:1
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.512Z
 #GAP:58160
 : 0 2 -3  U
 : 4 2 -1 ~

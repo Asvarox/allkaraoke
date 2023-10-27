@@ -1,5 +1,6 @@
 #ID:enrique-iglesias-bailamos
 #ARTIST:Enrique Iglesias
+#ARTISTORIGIN:ES
 #TITLE:Bailamos
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
@@ -10,6 +11,7 @@
 #VIDEOID:Pv0PAchVGCw
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.285Z
 #GAP:10904
 F 0 3 7 Es
 F 4 2 7 ta

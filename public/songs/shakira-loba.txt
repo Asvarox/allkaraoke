@@ -1,5 +1,6 @@
 #ID:shakira-loba
 #ARTIST:Shakira
+#ARTISTORIGIN:CO
 #TITLE:Loba
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Pop Internacional
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.586Z
+#LASTUPDATE:2023-10-27T14:01:15.494Z
 #GAP:38960,65573770492
 : 33 12 6 Si
 : 49 6 6 gi

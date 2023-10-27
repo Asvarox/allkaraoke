@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-californication
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Californication
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -12,7 +13,7 @@
 #VOLUME:0,76
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:18:47.216Z
+#LASTUPDATE:2023-10-27T14:01:15.473Z
 #EDITION:Rock Band Store 2011 Vol. 3
 #GAP:22394,689900500078
 : 26 4 2 Psy

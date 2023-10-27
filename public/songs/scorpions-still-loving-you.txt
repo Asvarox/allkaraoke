@@ -1,5 +1,6 @@
 #ID:scorpions-still-loving-you
 #ARTIST:Scorpions
+#ARTISTORIGIN:DE
 #TITLE:Still Loving You
 #CREATOR:jockel1974
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T18:24:05.466Z
+#LASTUPDATE:2023-10-27T14:01:15.489Z
 #GAP:21620
 : 20 10 2 Time, 
 : 56 2 0 it 

@@ -1,5 +1,6 @@
 #ID:imagine-dragons-whatever-it-takes
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Whatever It Takes
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Pop
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.322Z
 #GAP:14205
 : 0 1 8 Fall
 : 2 1 8 ing

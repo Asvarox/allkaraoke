@@ -1,5 +1,6 @@
 #ID:budka-suflera-piaty-bieg
 #ARTIST:Budka Suflera
+#ARTISTORIGIN:PL
 #TITLE:Piąty Bieg
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:1
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.240Z
 #GAP:27820
 : 0 1 9 Czy
 : 2 1 9  to

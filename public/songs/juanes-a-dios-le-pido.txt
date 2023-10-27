@@ -1,5 +1,6 @@
 #ID:juanes-a-dios-le-pido
 #ARTIST:Juanes
+#ARTISTORIGIN:CO
 #TITLE:A Dios le pido
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #VOLUME:0,5
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.565Z
+#LASTUPDATE:2023-10-27T14:01:15.334Z
 #EDITION:SingStar
 #GAP:20261,845360824744
 : 26 7 64 Que 

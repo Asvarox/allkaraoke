@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-high-hopes
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:High Hopes
 #CREATOR:aac
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,75
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.314Z
+#LASTUPDATE:2023-10-27T14:01:15.442Z
 #GAP:15373,90243902439
 : 22 2 5 Had 
 : 26 2 7 to 

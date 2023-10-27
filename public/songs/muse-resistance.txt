@@ -1,5 +1,6 @@
 #ID:muse-resistance
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Resistance
 #CREATOR:1v4n
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=1v4n
@@ -10,6 +11,7 @@
 #VIDEOID:TPE9uSFFxrI
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.420Z
 #GAP:69440
 : 17 5 -8 Is 
 : 23 4 -4 our 

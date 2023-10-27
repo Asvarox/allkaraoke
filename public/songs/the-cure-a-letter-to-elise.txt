@@ -1,5 +1,6 @@
 #ID:the-cure-a-letter-to-elise
 #ARTIST:The Cure
+#ARTISTORIGIN:GB
 #TITLE:A letter to Elise
 #CREATOR:
 #CREATORURL:
@@ -14,7 +15,7 @@
 #VOLUME:0,9
 #GENRE:Rock Alternativo
 #LANGUAGE:English
-#LASTUPDATE:2023-07-28T07:42:46.551Z
+#LASTUPDATE:2023-10-27T14:01:15.528Z
 #GAP:27930
 : 20 3 18 Oh, 
 : 24 3 18 E

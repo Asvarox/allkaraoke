@@ -1,5 +1,6 @@
 #ID:the-killers-caution
 #ARTIST:The Killers
+#ARTISTORIGIN:US
 #TITLE:Caution
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:44
 #GENRE:Rock Alternativo
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.531Z
 #EDITION:Rock Band Store 2020
 #GAP:57793,79244965029
 : 24 1 11 Let 

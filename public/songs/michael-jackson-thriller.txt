@@ -1,5 +1,6 @@
 #ID:michael-jackson-thriller
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Thriller
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Funk
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.408Z
 #GAP:58010,59807643635
 - -31 1
 - 1

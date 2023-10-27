@@ -1,5 +1,6 @@
 #ID:dashboard-confessional-stolen
 #ARTIST:Dashboard Confessional
+#ARTISTORIGIN:US
 #TITLE:Stolen
 #CREATOR:Jhovanny+
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=jhovanny%2B
@@ -14,7 +15,7 @@
 #VOLUME:1
 #GENRE:pop rock
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T17:33:40.435Z
+#LASTUPDATE:2023-10-27T14:01:15.263Z
 #GAP:18895,51724137931
 : 14 2 -2 We 
 : 18 2 -2 watched 

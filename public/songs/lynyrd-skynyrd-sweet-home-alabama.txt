@@ -1,5 +1,6 @@
 #ID:lynyrd-skynyrd-sweet-home-alabama
 #ARTIST:Lynyrd Skynyrd
+#ARTISTORIGIN:US
 #TITLE:Sweet Home Alabama
 #CREATOR:eLiXj
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
@@ -14,7 +15,7 @@
 #VOLUME:0,7
 #GENRE:rock
 #LANGUAGE:English
-#LASTUPDATE:2023-09-19T18:36:35.628Z
+#LASTUPDATE:2023-10-27T14:01:15.383Z
 #EDITION:SingStar Lgnds
 #GAP:43,823529411764696
 F 10 6 48 One 

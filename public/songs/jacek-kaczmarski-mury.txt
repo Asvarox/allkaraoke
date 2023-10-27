@@ -1,5 +1,6 @@
 #ID:jacek-kaczmarski-mury
 #ARTIST:Jacek Kaczmarski
+#ARTISTORIGIN:PL
 #TITLE:Mury
 #CREATOR:zartas
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=113646
@@ -10,7 +11,7 @@
 #VIDEOID:4Qa__lJvpYY
 #VIDEOGAP:0
 #LANGUAGE:Polish
-#LASTUPDATE:2023-08-15T14:54:44.563Z
+#LASTUPDATE:2023-10-27T14:01:15.324Z
 #GAP:8470
 : 0 6 4 On 
 : 10 3 4 na

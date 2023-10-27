@@ -1,5 +1,6 @@
 #ID:verka-serduchka-dancing-lasha-tumbai
 #ARTIST:Verka Serduchka
+#ARTISTORIGIN:UA
 #TITLE:Dancing Lasha Tumbai
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-07-29T01:00:44.597Z
+#LASTUPDATE:2023-10-27T14:01:15.559Z
 #GAP:1410,2792054452007
 F 19 2 4 Hel
 F 23 2 4 lo, 

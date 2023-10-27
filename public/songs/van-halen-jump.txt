@@ -1,5 +1,6 @@
 #ID:van-halen-jump
 #ARTIST:Van Halen
+#ARTISTORIGIN:US
 #TITLE:Jump
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T22:13:52.054Z
+#LASTUPDATE:2023-10-27T14:01:15.555Z
 #EDITION:Guitar Hero Van Halen
 #GAP:6258,845438475137
 F 26 12 12 Ah

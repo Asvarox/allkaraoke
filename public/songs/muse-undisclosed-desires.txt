@@ -1,5 +1,6 @@
 #ID:muse-undisclosed-desires
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Undisclosed desires
 #CREATOR:webo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=webo
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock Alternativo
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.422Z
 #GAP:17780
 : 3 2 -2 I
 : 8 8 -2  know

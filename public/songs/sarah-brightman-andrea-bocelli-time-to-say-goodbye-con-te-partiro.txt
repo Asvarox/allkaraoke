@@ -1,5 +1,6 @@
 #ID:sarah-brightman-andrea-bocelli-time-to-say-goodbye-con-te-partiro
 #ARTIST:Sarah Brightman & Andrea Bocelli
+#ARTISTORIGIN:GB
 #TITLE:Time To Say Goodbye (Con te partirò)
 #CREATOR:Respeckt
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Opera
 #LANGUAGE:Italian
-#LASTUPDATE:2023-05-06T19:18:29.978Z
+#LASTUPDATE:2023-10-27T14:01:15.487Z
 #EDITION:[DUET]-Songs
 #GAP:22400,054397098822
 #TRACKNAMES:["Sarah Brightman","Andrea Bocelli"]

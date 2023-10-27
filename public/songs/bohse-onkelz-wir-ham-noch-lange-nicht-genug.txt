@@ -1,5 +1,6 @@
 #ID:bohse-onkelz-wir-ham-noch-lange-nicht-genug
 #ARTIST:Böhse Onkelz
+#ARTISTORIGIN:DE
 #TITLE:Wir ham’ noch lange nicht genug
 #CREATOR:Canni
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,6
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-10-12T18:16:49.079Z
+#LASTUPDATE:2023-10-27T14:01:15.226Z
 #EDITION:[SC]-Songs
 #GAP:46666,48648648649
 : 20 5 7 End

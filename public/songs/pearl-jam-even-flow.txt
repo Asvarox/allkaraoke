@@ -1,5 +1,6 @@
 #ID:pearl-jam-even-flow
 #ARTIST:Pearl Jam
+#ARTISTORIGIN:US
 #TITLE:Even Flow
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:9
 #GENRE:Grunge
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.448Z
 #EDITION:Rock Band Store 2009 Vol. 1
 #GAP:26116,765404918566
 : 27 29 18 Freez

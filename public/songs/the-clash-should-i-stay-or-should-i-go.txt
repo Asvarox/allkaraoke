@@ -1,5 +1,6 @@
 #ID:the-clash-should-i-stay-or-should-i-go
 #ARTIST:The Clash
+#ARTISTORIGIN:GB
 #TITLE:Should I Stay Or Should I GO
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.527Z
 #EDITION:SingStar Pop
 #GAP:11400
 - -19 1

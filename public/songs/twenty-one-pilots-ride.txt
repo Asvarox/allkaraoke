@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-ride
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:Ride
 #CREATOR:gun8
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Alternative, Indie, Rap
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.337Z
+#LASTUPDATE:2023-10-27T14:01:15.550Z
 #GAP:22770,9324630345
 : 20 3 -2 I 
 * 24 3 -2 just 

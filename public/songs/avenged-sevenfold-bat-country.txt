@@ -1,5 +1,6 @@
 #ID:avenged-sevenfold-bat-country
 #ARTIST:Avenged Sevenfold
+#ARTISTORIGIN:US
 #TITLE:Bat Country
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
@@ -11,6 +12,7 @@
 #VIDEOGAP:-3
 #GENRE:Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.203Z
 #EDITION:Guitar Hero Warriors of Rock
 #GAP:-1172,7704358304882
 - 0 167

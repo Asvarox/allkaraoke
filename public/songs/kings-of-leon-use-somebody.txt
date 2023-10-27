@@ -1,5 +1,6 @@
 #ID:kings-of-leon-use-somebody
 #ARTIST:Kings of Leon
+#ARTISTORIGIN:US
 #TITLE:Use Somebody
 #CREATOR:hamadad
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2689
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-06-08T08:00:42.686Z
+#LASTUPDATE:2023-10-27T14:01:15.352Z
 #EDITION:None
 #GAP:28810,00637890708
 : 19 2 0 I’ve 

@@ -1,5 +1,6 @@
 #ID:hoobastank-the-reason
 #ARTIST:Hoobastank
+#ARTISTORIGIN:US
 #TITLE:The Reason
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,6 +13,7 @@
 #VOLUME:0,81
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.315Z
 #EDITION:S'Star Popworld
 #GAP:29978
 : 0 7 52 I'm

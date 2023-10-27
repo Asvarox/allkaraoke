@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-house-of-gold
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:House Of Gold
 #CREATOR:gun8
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,61
 #GENRE:Alternative, Indie, Rap
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.336Z
+#LASTUPDATE:2023-10-27T14:01:15.550Z
 #GAP:8136,611514545375
 : 15 2 2 She 
 : 19 6 4 asked 

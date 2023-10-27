@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-this-is-gospel
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:This Is Gospel
 #CREATOR:FadingDream97
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.319Z
+#LASTUPDATE:2023-10-27T14:01:15.445Z
 #EDITION:None
 #GAP:4890,384615384615
 : 21 2 2 This 

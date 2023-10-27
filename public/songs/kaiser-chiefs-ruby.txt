@@ -1,5 +1,6 @@
 #ID:kaiser-chiefs-ruby
 #ARTIST:Kaiser Chiefs
+#ARTISTORIGIN:GB
 #TITLE:Ruby
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:-5
 #GENRE:Indie Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.341Z
 #EDITION:Lego Rock Band
 #GAP:7194,758848892008
 - -26 1

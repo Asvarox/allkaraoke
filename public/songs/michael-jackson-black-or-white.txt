@@ -1,5 +1,6 @@
 #ID:michael-jackson-black-or-white
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Black or white
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
@@ -11,6 +12,7 @@
 #VIDEOGAP:107
 #GENRE:Pop Internacional
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.406Z
 #GAP:158909,82418920094
 : 15 3 -1 I 
 : 19 3 4 took 

@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-dont-threaten-me-with-a-good-time
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:Don’t Threaten Me With A Good Time
 #CREATOR:princetongirl98
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,75
 #GENRE:Alternative
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.311Z
+#LASTUPDATE:2023-10-27T14:01:15.440Z
 #GAP:10233,491908595592
 : 25 3 8 Al
 : 30 7 1 right, 

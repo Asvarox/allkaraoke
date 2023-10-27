@@ -1,5 +1,6 @@
 #ID:myslovitz-scenariusz-dla-moich-sasiadow
 #ARTIST:Myslovitz
+#ARTISTORIGIN:PL
 #TITLE:Scenariusz Dla Moich Sąsiadów
 #CREATOR:tristen
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=117946
@@ -12,6 +13,7 @@
 #VOLUME:0,91
 #GENRE:Alternative Rock
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.424Z
 #EDITION:UltraStar
 #GAP:34380
 : 0 2 4 Kie

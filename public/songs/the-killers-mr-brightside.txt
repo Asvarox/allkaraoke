@@ -1,5 +1,6 @@
 #ID:the-killers-mr-brightside
 #ARTIST:The Killers
+#ARTISTORIGIN:US
 #TITLE:Mr. Brightside
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
@@ -11,6 +12,7 @@
 #VIDEOGAP:-1
 #GENRE:Alternativa
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.531Z
 #EDITION:Rock Band Store 2008 Vol. 4
 #GAP:9669,963678068209
 : 26 4 13 Com

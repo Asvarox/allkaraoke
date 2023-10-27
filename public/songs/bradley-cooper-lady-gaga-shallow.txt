@@ -1,5 +1,6 @@
 #ID:bradley-cooper-lady-gaga-shallow
 #ARTIST:Bradley Cooper & Lady Gaga
+#ARTISTORIGIN:US
 #TITLE:Shallow
 #CREATOR:Bene28
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:21:28.618Z
+#LASTUPDATE:2023-10-27T14:01:15.232Z
 #EDITION:[DUET]-Songs
 #GAP:15220,285520054385
 #TRACKNAMES:["Bradley Cooper","Lady Gaga"]

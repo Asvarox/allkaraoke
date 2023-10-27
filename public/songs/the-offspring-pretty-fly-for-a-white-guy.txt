@@ -1,5 +1,6 @@
 #ID:the-offspring-pretty-fly-for-a-white-guy
 #ARTIST:The Offspring
+#ARTISTORIGIN:US
 #TITLE:Pretty fly (for a white guy)
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
@@ -11,6 +12,7 @@
 #VIDEOGAP:3
 #GENRE:Punk Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.532Z
 #EDITION:Rock Band Store 2008 Vol. 4
 #GAP:6431,132075471698
 F 27 4 5 Give

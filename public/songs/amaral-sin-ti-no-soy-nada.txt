@@ -1,5 +1,6 @@
 #ID:amaral-sin-ti-no-soy-nada
 #ARTIST:Amaral
+#ARTISTORIGIN:ES
 #TITLE:Sin ti no soy nada
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.555Z
+#LASTUPDATE:2023-10-27T14:01:15.193Z
 #EDITION:SingStar Pop
 #GAP:7500
 : 20 4 60 Sin 

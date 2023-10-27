@@ -1,5 +1,6 @@
 #ID:linkin-park-numb
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Numb
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Nu Metal
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.376Z
 #GAP:21227,737392094503
 - -14 1
 - 1

@@ -1,5 +1,6 @@
 #ID:kayah-testosteron
 #ARTIST:Kayah
+#ARTISTORIGIN:PL
 #TITLE:Testosteron
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
@@ -10,6 +11,7 @@
 #VIDEOID:x9QKRpALphM
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.347Z
 #EDITION:SingStar ESKA
 #GAP:30846,77
 : 0 2 57 To

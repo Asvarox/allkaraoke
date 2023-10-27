@@ -1,5 +1,6 @@
 #ID:the-who-the-seeker
 #ARTIST:The Who
+#ARTISTORIGIN:GB
 #TITLE:The Seeker
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
@@ -12,6 +13,7 @@
 #VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.540Z
 #GAP:15666,691936750029
 : 18 1 1 I've 
 : 21 2 4 looked 

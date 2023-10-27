@@ -1,5 +1,6 @@
 #ID:feel-pokaz-na-co-cie-stac
 #ARTIST:Feel
+#ARTISTORIGIN:PL
 #TITLE:Pokaż na co Cię stać
 #CREATOR:davidus01
 #CREATORURL:
@@ -11,6 +12,7 @@
 #VIDEOGAP:9
 #VOLUME:0,9
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.293Z
 #GAP:20500
 : 6 2 5 Mo
 : 8 2 1 żesz 

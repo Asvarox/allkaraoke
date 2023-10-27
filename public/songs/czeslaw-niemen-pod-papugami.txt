@@ -1,5 +1,6 @@
 #ID:czeslaw-niemen-pod-papugami
 #ARTIST:Czeslaw Niemen
+#ARTISTORIGIN:PL
 #TITLE:Pod papugami
 #CREATOR:davidus01
 #CREATORURL:
@@ -10,6 +11,7 @@
 #VIDEOID:ePwwMgrPMW8
 #VIDEOGAP:0
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.261Z
 #GAP:19673,684210526317
 : 13 20 12 Pod 
 : 37 4 8 Pa

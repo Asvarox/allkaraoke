@@ -1,11 +1,13 @@
 #ID:adele-rolling-in-the-deep
 #ARTIST:Adele
+#ARTISTORIGIN:GB
 #TITLE:Rolling In The Deep
 #BPM:210
 #REALBPM:103
 #YEAR:2011
 #VIDEOID:rYEDA3JcQqw
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.179Z
 #GAP:4870
 : 0 4 19  There's
 : 6 6 19   a

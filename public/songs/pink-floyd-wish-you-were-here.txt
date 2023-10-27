@@ -1,5 +1,6 @@
 #ID:pink-floyd-wish-you-were-here
 #ARTIST:Pink Floyd
+#ARTISTORIGIN:GB
 #TITLE:Wish You Were Here
 #CREATOR:prgoenner
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Progressive rock
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T11:39:19.758Z
+#LASTUPDATE:2023-10-27T14:01:15.457Z
 #GAP:77171,42600359497
 : 17 2 12 So
 : 20 4 11 ~

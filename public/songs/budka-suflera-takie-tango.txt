@@ -1,5 +1,6 @@
 #ID:budka-suflera-takie-tango
 #ARTIST:Budka Suflera
+#ARTISTORIGIN:PL
 #TITLE:Takie tango
 #CREATOR:Maly
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=169980
@@ -12,6 +13,7 @@
 #VOLUME:1
 #GENRE:Pop
 #LANGUAGE:Polish
+#LASTUPDATE:2023-10-27T14:01:15.241Z
 #GAP:29100
 : 0 3 9 Na
 : 4 3 14  sa

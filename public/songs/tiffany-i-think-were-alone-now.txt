@@ -1,5 +1,6 @@
 #ID:tiffany-i-think-were-alone-now
 #ARTIST:Tiffany
+#ARTISTORIGIN:US
 #TITLE:I Think We're Alone Now
 #CREATOR:
 #CREATORURL:
@@ -12,7 +13,7 @@
 #VOLUME:1
 #GENRE:Synth Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:52:31.642Z
+#LASTUPDATE:2023-10-27T14:01:15.541Z
 #EDITION:SingStar Party English
 #GAP:31655,464157019094
 : 17 6 66 ''Chil- 

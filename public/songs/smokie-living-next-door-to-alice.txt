@@ -1,5 +1,6 @@
 #ID:smokie-living-next-door-to-alice
 #ARTIST:Smokie
+#ARTISTORIGIN:GB
 #TITLE:Living Next Door To Alice
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
@@ -14,7 +15,7 @@
 #VOLUME:0,6
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T18:14:07.157Z
+#LASTUPDATE:2023-10-27T14:01:15.502Z
 #GAP:7017,81842646826
 : 17 2 1 Sal
 : 21 1 4 ly 

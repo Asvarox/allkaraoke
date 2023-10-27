@@ -1,5 +1,6 @@
 #ID:kaarija-cha-cha-cha
 #ARTIST:Käärijä
+#ARTISTORIGIN:FI
 #TITLE:Cha Cha Cha
 #CREATOR:Tracks
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168173
@@ -13,7 +14,7 @@
 #VIDEOGAP:0
 #VOLUME:0,7
 #LANGUAGE:Finnish
-#LASTUPDATE:2023-06-08T07:52:27.751Z
+#LASTUPDATE:2023-10-27T14:01:15.341Z
 #EDITION:Eurovision Song Contest 2023
 #GAP:11277,06759981939
 F 21 1 0 Rank

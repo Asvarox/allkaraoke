@@ -1,5 +1,6 @@
 #ID:phantom-planet-california
 #ARTIST:Phantom Planet
+#ARTISTORIGIN:US
 #TITLE:California
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
@@ -13,7 +14,7 @@
 #VIDEOGAP:0
 #VOLUME:0,73
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T17:48:27.143Z
+#LASTUPDATE:2023-10-27T14:01:15.453Z
 #GAP:11128,621997471555
 : 16 3 8 We've 
 : 20 1 11 been 

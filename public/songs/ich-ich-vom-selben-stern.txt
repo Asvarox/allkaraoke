@@ -1,5 +1,6 @@
 #ID:ich-ich-vom-selben-stern
 #ARTIST:Ich + Ich
+#ARTISTORIGIN:DE
 #TITLE:Vom selben Stern
 #CREATOR:Leki
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6
@@ -12,7 +13,7 @@
 #VOLUME:0,5
 #GENRE:Pop
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:19:23.510Z
+#LASTUPDATE:2023-10-27T14:01:15.315Z
 #EDITION:SingStar Summer Party
 #GAP:21592,14285714286
 : 19 4 5 Steh 

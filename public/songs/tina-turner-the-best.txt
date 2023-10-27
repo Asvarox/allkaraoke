@@ -1,5 +1,6 @@
 #ID:tina-turner-the-best
 #ARTIST:Tina Turner
+#ARTISTORIGIN:US
 #TITLE:The Best
 #CREATOR:pauldiddy
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149
@@ -11,6 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Rock
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.542Z
 #EDITION:None
 #GAP:7987,4638379942135
 : 14 1 0 I 

@@ -1,5 +1,6 @@
 #ID:justin-timberlake-cant-stop-the-feeling
 #ARTIST:Justin Timberlake
+#ARTISTORIGIN:US
 #TITLE:Can't stop the feeling!
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
@@ -10,6 +11,7 @@
 #VIDEOID:p5RobDomh5U
 #VIDEOGAP:0
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.338Z
 #GAP:7503,689020613996
 F 15 4 14 Uh
 - 19 32

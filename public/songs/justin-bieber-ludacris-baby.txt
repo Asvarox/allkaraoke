@@ -1,5 +1,6 @@
 #ID:justin-bieber-ludacris-baby
 #ARTIST:Justin Bieber & Ludacris
+#ARTISTORIGIN:CA
 #TITLE:Baby
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pt/canciones?creador=vicktoben
@@ -12,7 +13,7 @@
 #VOLUME:0,7
 #GENRE:R&B
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.285Z
+#LASTUPDATE:2023-10-27T14:01:15.337Z
 #GAP:2084,230769230769
 * 17 3 15 Oh 
 : 21 3 17 uh 

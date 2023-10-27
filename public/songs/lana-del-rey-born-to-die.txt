@@ -1,5 +1,6 @@
 #ID:lana-del-rey-born-to-die
 #ARTIST:Lana Del Rey
+#ARTISTORIGIN:US
 #TITLE:Born To Die
 #CREATOR:
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben
@@ -14,7 +15,7 @@
 #VOLUME:0,7
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.301Z
+#LASTUPDATE:2023-10-27T14:01:15.368Z
 #GAP:21770,021549213743
 : 11 3 21 Feet
 : 15 3 23 ~ 

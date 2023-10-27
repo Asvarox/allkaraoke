@@ -1,5 +1,6 @@
 #ID:shakira-ft-freshlyground-waka-waka-this-time-for-africa
 #ARTIST:Shakira ft. Freshlyground
+#ARTISTORIGIN:CO
 #TITLE:Waka Waka (This Time for Africa)
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
@@ -11,6 +12,7 @@
 #VIDEOGAP:19
 #VOLUME:0,8
 #LANGUAGE:English
+#LASTUPDATE:2023-10-27T14:01:15.492Z
 #GAP:33730
 : 0 4 2 You're
 : 5 4 2  good
