@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { CircularProgress } from '@mui/material';
 import { MenuButton } from 'Elements/Menu';
 import events from 'GameEvents/GameEvents';
@@ -108,17 +109,17 @@ function SingStarMics(props: Props) {
             {showAdvancedTip && (
               <>
                 {!listChanged && (
-                  <h4 data-test="advanced-tip">
-                    If detection doesn't happen, try{' '}
+                  <ChromeIssue data-test="advanced-tip">
+                    If they don't get detected, try{' '}
                     <button onClick={() => props.changePreference('advanced')}>Advanced</button> section in the previous
                     menu.
-                  </h4>
+                  </ChromeIssue>
                 )}
-                {isChromium() && isWindows() && (
-                  <h4>
+                {isChromium() && !isWindows() && (
+                  <ChromeIssue>
                     <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any problems,
                     try using an alternative browser (eg. <strong>MS Edge</strong> or <strong>Firefox</strong>)
-                  </h4>
+                  </ChromeIssue>
                 )}
               </>
             )}
@@ -144,5 +145,10 @@ function SingStarMics(props: Props) {
     </>
   );
 }
+
+const ChromeIssue = styled.h4`
+  background: darkred;
+  padding: 1rem;
+`;
 
 export default SingStarMics;
