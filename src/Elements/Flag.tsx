@@ -1,12 +1,20 @@
 import { Song } from 'interfaces';
 import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 
-interface Props {
-  language: Song['language'];
-}
-export const Flag = ({ language, ...props }: Props) => {
-  const lang = Array.isArray(language) ? language[0] : language;
-  const isoCode = languageNameToIsoCode(lang);
+type Props =
+  | {
+      language: Song['language'];
+    }
+  | {
+      isocode: string;
+    };
+export const Flag = (props: Props) => {
+  const isoCode =
+    'isocode' in props
+      ? props.isocode?.toLowerCase()
+      : languageNameToIsoCode(Array.isArray(props.language) ? props.language[0] : props.language);
 
-  return <img src={`https://flagcdn.com/${isoCode}.svg`} alt={lang} {...props} />;
+  if (!isoCode) return null;
+
+  return <img src={`https://flagcdn.com/${isoCode}.svg`} alt={isoCode} {...props} />;
 };

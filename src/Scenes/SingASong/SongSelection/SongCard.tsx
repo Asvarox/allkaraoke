@@ -1,9 +1,9 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
-import { Flag } from 'Elements/Flag';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import SongFlag from 'Scenes/SingASong/SongSelection/SongCard/SongFlag';
 import { useSongStats } from 'Songs/stats/hooks';
 import { addDays, isAfter } from 'date-fns';
 import { SongPreview } from 'interfaces';
@@ -18,6 +18,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   handleClick?: (index: number) => void;
   video?: ReactNode;
 }
+
 export const FinalSongCard = ({
   song,
   focused,
@@ -70,7 +71,7 @@ export const FinalSongCard = ({
               <SongListEntryStats song={song} />
             </>
           )}
-          {!expanded && song.language !== 'English' && <Language language={song.language} />}
+          {!expanded && <Language song={song} />}
         </ExpandedData>
       </SongInfo>
       {children}
@@ -79,8 +80,7 @@ export const FinalSongCard = ({
   );
 };
 
-export const Language = styled(Flag)`
-  width: 3.15rem;
+export const Language = styled(SongFlag)`
   height: 2.75rem;
   object-fit: cover;
   border-top-right-radius: 1rem;

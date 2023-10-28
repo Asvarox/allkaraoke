@@ -87,10 +87,22 @@ class SongsService {
     ]);
     const lastVisitDate = new Date(lastVisit);
 
-    const localSongs = storageIndex.map((song) => song.id);
+    // Filter out local songs that were updated to default index
+    const storageIndexWithUpdatedSongs = storageIndex.filter((song) => {
+      const defaultSong = defaultIndex.find((localSong) => localSong.id === song.id);
+      if (!defaultSong) return true;
+      return isAfter(new Date(song.lastUpdate ?? 0), new Date(defaultSong.lastUpdate ?? 0));
+    });
+    const localSongs = storageIndexWithUpdatedSongs.map((song) => song.id);
+
+    storageIndex.forEach((song) => {
+      if (!localSongs.includes(song.id)) {
+        storage.removeItem(song.id);
+      }
+    });
 
     this.indexWithDeletedSongs = [
-      ...storageIndex,
+      ...storageIndexWithUpdatedSongs,
       ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
     ].map((song) => ({
       ...song,
