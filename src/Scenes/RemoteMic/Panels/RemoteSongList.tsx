@@ -34,7 +34,7 @@ function RemoteSongList({
   const [overrides, setOverrides] = useState<NetworkSongListMessage | undefined>();
   useEffect(() => {
     if (connectionStatus === 'connected' && overrides === undefined) {
-      RemoteMicClient.getSongList().then(setOverrides);
+      RemoteMicClient.getSongList().then(setOverrides).catch(console.warn);
     }
   }, [overrides, connectionStatus]);
 

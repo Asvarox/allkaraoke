@@ -60,7 +60,7 @@ function GameOverlay({
   const overlayHeight = overlayWidth * (height / width);
 
   const overlayScaleFactor = overlayHeight / height;
-  const resolutionScaleFactor = overlayWidth / MAX_RENDER_RESOLUTION_W;
+  // const resolutionScaleFactor = overlayWidth / MAX_RENDER_RESOLUTION_W;
 
   useEffect(() => {
     if (!canvas.current || !lyrics.current) return;
@@ -68,7 +68,7 @@ function GameOverlay({
     drawer.current = new CanvasDrawing(
       canvas.current,
       lyrics.current.offsetHeight * overlayScaleFactor,
-      resolutionScaleFactor,
+      // resolutionScaleFactor,
     );
     drawer.current.start();
 

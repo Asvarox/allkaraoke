@@ -3,7 +3,7 @@ import { Curtains, Plane, PlaneParams } from 'curtainsjs';
 
 export class Shaders {
   private curtains: Curtains;
-  private plane: Plane;
+  private plane: Plane | null = null;
   public constructor(private canvas: HTMLCanvasElement) {
     this.curtains = new Curtains({
       pixelRatio: 1,
@@ -12,6 +12,10 @@ export class Shaders {
     });
     const { gl } = this.curtains;
     // https://stackoverflow.com/a/39354174
+    if (!gl) {
+      console.info('WebGL not supported');
+      return;
+    }
     gl.enable(gl.BLEND);
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
 
@@ -69,19 +73,26 @@ export class Shaders {
   }
 
   public updatePlayerCenter = (playerNumber: number, x: number, y: number) => {
+    if (!this.plane) return;
     this.plane.uniforms[`p${playerNumber}center`].value = [x / this.canvas.width, 1 - y / this.canvas.height];
   };
 
   public updatePlayerForce = (playerNumber: number, force: number) => {
+    if (!this.plane) return;
     this.plane.uniforms[`p${playerNumber}force`].value = force;
   };
 
   public getPlayerForce = (playerNumber: number) => {
+    if (!this.plane) return;
     return this.plane.uniforms[`p${playerNumber}force`].value as number;
   };
 
   public cleanup = () => {
-    this.plane?.remove();
-    this.curtains?.dispose();
+    try {
+      this.plane?.remove();
+      this.curtains?.dispose();
+    } catch (e) {
+      console.warn(e);
+    }
   };
 }

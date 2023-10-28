@@ -13,6 +13,7 @@ function RemoteInputLag({}: Props) {
     setIsLoading(true);
     RemoteMicClient.getInputLag()
       .then(({ value }) => setCurrentValue(value))
+      .catch((e) => console.warn(e))
       .finally(() => setIsLoading(false));
   }, []);
 

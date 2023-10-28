@@ -9,7 +9,7 @@ export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,
 
 try {
   // @ts-expect-error
-  navigator?.keyboard?.lock(['Escape']);
+  navigator?.keyboard?.lock?.(['Escape']);
 } catch (e) {
   console.warn(e);
 }

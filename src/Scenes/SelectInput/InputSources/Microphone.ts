@@ -48,14 +48,14 @@ export class MicrophoneInputSource {
     null;
 
   public static getInputs = async (): Promise<InputSource[]> => {
-    await userMediaService.getUserMedia({ audio: true });
-
     let devices: MediaDeviceInfo[] = [];
 
     try {
+      await userMediaService.getUserMedia({ audio: true });
+
       devices = await userMediaService.enumerateDevices();
     } catch (e) {
-      captureException(e, { level: 'warning' });
+      captureException(e, { level: 'warning', extra: { message: 'Microphone.getInputs' } });
       console.warn(e);
     }
 
