@@ -1,5 +1,6 @@
 #ID:starship-we-built-this-city
 #ARTIST:Starship
+#ARTISTORIGIN:US
 #TITLE:We Built This City
 #CREATOR:mk90
 #CREATORURL:

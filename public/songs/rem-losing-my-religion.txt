@@ -1,5 +1,6 @@
 #ID:rem-losing-my-religion
 #ARTIST:R.E.M.
+#ARTISTORIGIN:US
 #TITLE:Losing My Religion
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

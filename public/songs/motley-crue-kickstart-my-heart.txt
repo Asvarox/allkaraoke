@@ -1,5 +1,6 @@
 #ID:motley-crue-kickstart-my-heart
 #ARTIST:Mötley Crüe
+#ARTISTORIGIN:US
 #TITLE:Kickstart my heart
 #CREATOR:
 #CREATORURL:

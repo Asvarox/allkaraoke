@@ -1,5 +1,6 @@
 #ID:guns-n-roses-november-rain
 #ARTIST:Guns N’ Roses
+#ARTISTORIGIN:US
 #TITLE:November Rain
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

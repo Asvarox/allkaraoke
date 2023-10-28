@@ -1,5 +1,6 @@
 #ID:ed-sheeran-photograph
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Photograph
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

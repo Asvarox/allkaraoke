@@ -1,5 +1,6 @@
 #ID:meskie-granie-orkiestra-poczatek
 #ARTIST:Męskie Granie Orkiestra
+#ARTISTORIGIN:PL
 #TITLE:Początek
 #CREATOR:Asvarox
 #CREATORURL:https://github.com/Asvarox/olkaraoke

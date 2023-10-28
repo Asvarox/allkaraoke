@@ -1,5 +1,6 @@
 #ID:maneskin-the-loneliest
 #ARTIST:Måneskin
+#ARTISTORIGIN:IT
 #TITLE:The Loneliest
 #CREATOR:Angs
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=angs

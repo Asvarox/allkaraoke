@@ -1,5 +1,6 @@
 #ID:britney-spears-toxic
 #ARTIST:Britney Spears
+#ARTISTORIGIN:US
 #TITLE:Toxic
 #CREATOR:Rubn4
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=rubn4

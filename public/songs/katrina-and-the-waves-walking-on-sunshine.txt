@@ -1,5 +1,6 @@
 #ID:katrina-and-the-waves-walking-on-sunshine
 #ARTIST:Katrina And The Waves
+#ARTISTORIGIN:GB
 #TITLE:Walking On Sunshine
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

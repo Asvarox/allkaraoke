@@ -1,5 +1,6 @@
 #ID:tina-turner-whats-love-got-to-do-with-it
 #ARTIST:Tina Turner
+#ARTISTORIGIN:US
 #TITLE:What’s Love Got To Do With It
 #CREATOR:NikNak
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8110

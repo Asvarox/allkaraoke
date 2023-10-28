@@ -1,5 +1,6 @@
 #ID:lenny-kravitz-are-you-gonna-go-my-way
 #ARTIST:Lenny Kravitz
+#ARTISTORIGIN:US
 #TITLE:Are You Gonna Go My Way
 #CREATOR:
 #CREATORURL:

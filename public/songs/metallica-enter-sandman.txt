@@ -1,5 +1,6 @@
 #ID:metallica-enter-sandman
 #ARTIST:Metallica
+#ARTISTORIGIN:US
 #TITLE:Enter Sandman
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

@@ -1,5 +1,6 @@
 #ID:nickelback-hero
 #ARTIST:Nickelback
+#ARTISTORIGIN:CA
 #TITLE:Hero
 #CREATOR:subkei
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei

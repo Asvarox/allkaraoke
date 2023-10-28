@@ -1,5 +1,6 @@
 #ID:dead-or-alive-you-spin-me-round-like-a-record
 #ARTIST:Dead Or Alive
+#ARTISTORIGIN:GB
 #TITLE:You Spin Me Round (Like A Record)
 #CREATOR:Canni
 #CREATORURL:

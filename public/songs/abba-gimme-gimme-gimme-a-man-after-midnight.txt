@@ -1,5 +1,6 @@
 #ID:abba-gimme-gimme-gimme-a-man-after-midnight
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Gimme! Gimme! Gimme! (A Man After Midnight)
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

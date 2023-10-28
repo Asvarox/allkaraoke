@@ -1,5 +1,6 @@
 #ID:muse-resistance
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Resistance
 #CREATOR:1v4n
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=1v4n

@@ -1,5 +1,6 @@
 #ID:akcent-przez-twe-oczy-zielone
 #ARTIST:Akcent
+#ARTISTORIGIN:RO
 #TITLE:Przez Twe oczy zielone
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

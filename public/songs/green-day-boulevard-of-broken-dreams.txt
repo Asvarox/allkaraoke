@@ -1,5 +1,6 @@
 #ID:green-day-boulevard-of-broken-dreams
 #ARTIST:Green Day
+#ARTISTORIGIN:US
 #TITLE:Boulevard of Broken Dreams
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

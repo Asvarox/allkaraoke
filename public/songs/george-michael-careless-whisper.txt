@@ -1,5 +1,6 @@
 #ID:george-michael-careless-whisper
 #ARTIST:George Michael
+#ARTISTORIGIN:GB
 #TITLE:Careless Whisper
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

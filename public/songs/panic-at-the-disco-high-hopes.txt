@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-high-hopes
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:High Hopes
 #CREATOR:aac
 #CREATORURL:

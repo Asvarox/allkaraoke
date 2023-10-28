@@ -1,5 +1,6 @@
 #ID:scorpions-rock-you-like-a-hurricane
 #ARTIST:Scorpions
+#ARTISTORIGIN:DE
 #TITLE:Rock You Like a Hurricane
 #CREATOR:
 #CREATORURL:

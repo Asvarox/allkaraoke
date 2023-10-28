@@ -1,5 +1,6 @@
 #ID:marilyn-manson-the-beautiful-people
 #ARTIST:Marilyn Manson
+#ARTISTORIGIN:US
 #TITLE:The Beautiful People
 #CREATOR:Gollum
 #CREATORURL:

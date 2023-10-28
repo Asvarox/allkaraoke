@@ -1,5 +1,6 @@
 #ID:juanes-la-camisa-negra
 #ARTIST:Juanes
+#ARTISTORIGIN:CO
 #TITLE:La camisa negra
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

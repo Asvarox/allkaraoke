@@ -1,5 +1,6 @@
 #ID:abba-dancing-queen
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Dancing Queen
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:foo-fighters-all-my-life
 #ARTIST:Foo Fighters
+#ARTISTORIGIN:US
 #TITLE:All My Life
 #CREATOR:mrfypower
 #CREATORURL:

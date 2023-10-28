@@ -1,5 +1,6 @@
 #ID:czeslaw-niemen-dziwny-jest-ten-swiat
 #ARTIST:Czesław Niemen
+#ARTISTORIGIN:PL
 #TITLE:Dziwny jest ten świat
 #CREATOR:davidus01
 #CREATORURL:

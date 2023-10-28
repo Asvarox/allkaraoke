@@ -1,5 +1,6 @@
 #ID:la-oreja-de-van-gogh-20-de-enero
 #ARTIST:La Oreja De Van Gogh
+#ARTISTORIGIN:ES
 #TITLE:20 De Enero
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

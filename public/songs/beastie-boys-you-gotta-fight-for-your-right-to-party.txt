@@ -1,5 +1,6 @@
 #ID:beastie-boys-you-gotta-fight-for-your-right-to-party
 #ARTIST:Beastie Boys
+#ARTISTORIGIN:US
 #TITLE:(You Gotta) Fight For Your Right (To Party)
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

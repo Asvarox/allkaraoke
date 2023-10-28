@@ -1,5 +1,6 @@
 #ID:stachursky-typ-niepokorny
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Typ Niepokorny
 #CREATOR:Pit33
 #CREATORURL:

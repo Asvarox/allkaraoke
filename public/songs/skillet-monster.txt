@@ -1,5 +1,6 @@
 #ID:skillet-monster
 #ARTIST:Skillet
+#ARTISTORIGIN:US
 #TITLE:Monster
 #CREATOR:slim_shadyy
 #CREATORURL:

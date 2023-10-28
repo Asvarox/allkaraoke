@@ -1,5 +1,6 @@
 #ID:rihanna-love-on-the-brain
 #ARTIST:Rihanna
+#ARTISTORIGIN:BB
 #TITLE:Love On The Brain
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

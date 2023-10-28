@@ -1,5 +1,6 @@
 #ID:cher-believe
 #ARTIST:Cher
+#ARTISTORIGIN:US
 #TITLE:Believe
 #CREATOR:zXz
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=zxz

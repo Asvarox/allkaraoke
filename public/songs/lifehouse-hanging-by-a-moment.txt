@@ -1,5 +1,6 @@
 #ID:lifehouse-hanging-by-a-moment
 #ARTIST:Lifehouse
+#ARTISTORIGIN:US
 #TITLE:Hanging By A Moment
 #CREATOR:Ceptic
 #CREATORURL:

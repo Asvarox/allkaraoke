@@ -1,5 +1,6 @@
 #ID:the-village-people-ymca
 #ARTIST:The Village People
+#ARTISTORIGIN:US
 #TITLE:YMCA
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

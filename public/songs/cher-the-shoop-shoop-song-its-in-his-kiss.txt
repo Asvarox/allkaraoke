@@ -1,5 +1,6 @@
 #ID:cher-the-shoop-shoop-song-its-in-his-kiss
 #ARTIST:Cher
+#ARTISTORIGIN:US
 #TITLE:The Shoop Shoop Song (It's in his kiss)
 #CREATOR:zXz
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=zxz

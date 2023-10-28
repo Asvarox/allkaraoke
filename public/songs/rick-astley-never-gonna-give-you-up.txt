@@ -1,5 +1,6 @@
 #ID:rick-astley-never-gonna-give-you-up
 #ARTIST:Rick Astley
+#ARTISTORIGIN:GB
 #TITLE:Never gonna give you up
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

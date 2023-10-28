@@ -1,5 +1,6 @@
 #ID:taylor-swift-i-knew-you-were-trouble
 #ARTIST:Taylor Swift
+#ARTISTORIGIN:US
 #TITLE:I Knew You Were Trouble
 #CREATOR:zencruzer
 #CREATORURL:

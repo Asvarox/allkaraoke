@@ -1,5 +1,6 @@
 #ID:andrzej-zaucha-gumisie
 #ARTIST:Andrzej Zaucha
+#ARTISTORIGIN:PL
 #TITLE:Gumisie
 #CREATOR:nomek4
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=29049

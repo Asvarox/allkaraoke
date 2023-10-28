@@ -1,5 +1,6 @@
 #ID:kings-of-leon-sex-on-fire
 #ARTIST:Kings Of Leon
+#ARTISTORIGIN:US
 #TITLE:Sex On Fire
 #CREATOR:klaxoo
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3762

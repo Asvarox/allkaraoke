@@ -1,5 +1,6 @@
 #ID:b52s-love-shack
 #ARTIST:B52s
+#ARTISTORIGIN:US
 #TITLE:Love Shack
 #CREATOR:Diddlmaus30mg
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1058

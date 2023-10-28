@@ -1,5 +1,6 @@
 #ID:christina-perri-a-thousand-years
 #ARTIST:Christina Perri
+#ARTISTORIGIN:US
 #TITLE:A Thousand Years
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero

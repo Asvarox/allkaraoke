@@ -1,5 +1,6 @@
 #ID:lady-gaga-born-this-way
 #ARTIST:Lady Gaga
+#ARTISTORIGIN:US
 #TITLE:Born This Way
 #CREATOR:klops_007
 #CREATORURL:

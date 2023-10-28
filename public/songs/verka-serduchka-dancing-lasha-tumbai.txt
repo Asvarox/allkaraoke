@@ -1,5 +1,6 @@
 #ID:verka-serduchka-dancing-lasha-tumbai
 #ARTIST:Verka Serduchka
+#ARTISTORIGIN:UA
 #TITLE:Dancing Lasha Tumbai
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

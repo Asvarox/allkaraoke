@@ -1,5 +1,6 @@
 #ID:britney-spears-baby-one-more-time
 #ARTIST:Britney Spears
+#ARTISTORIGIN:US
 #TITLE:Baby One More Time
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:marilyn-manson-sweet-dreams
 #ARTIST:Marilyn Manson
+#ARTISTORIGIN:US
 #TITLE:Sweet Dreams
 #CREATOR:haistshomie666
 #CREATORURL:

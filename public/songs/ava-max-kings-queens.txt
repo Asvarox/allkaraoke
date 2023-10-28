@@ -1,5 +1,6 @@
 #ID:ava-max-kings-queens
 #ARTIST:Ava Max
+#ARTISTORIGIN:US
 #TITLE:Kings & Queens
 #CREATOR:Volodia
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia

@@ -1,5 +1,6 @@
 #ID:psy-gangnam-style
 #ARTIST:Psy
+#ARTISTORIGIN:KR
 #TITLE:Gangnam Style
 #CREATOR:vicktoben
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=54350

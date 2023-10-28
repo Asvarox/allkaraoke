@@ -1,5 +1,6 @@
 #ID:kim-wilde-kids-in-america
 #ARTIST:Kim Wilde
+#ARTISTORIGIN:GB
 #TITLE:Kids In America
 #CREATOR:Canni
 #CREATORURL:

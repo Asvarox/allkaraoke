@@ -1,5 +1,6 @@
 #ID:usa-for-africa-we-are-the-world
 #ARTIST:USA for Africa
+#ARTISTORIGIN:US
 #TITLE:We Are the World
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero

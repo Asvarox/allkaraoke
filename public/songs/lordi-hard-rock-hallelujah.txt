@@ -1,5 +1,6 @@
 #ID:lordi-hard-rock-hallelujah
 #ARTIST:Lordi
+#ARTISTORIGIN:FI
 #TITLE:Hard Rock Hallelujah
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

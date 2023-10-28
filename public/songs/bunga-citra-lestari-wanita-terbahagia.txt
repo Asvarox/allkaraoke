@@ -1,5 +1,6 @@
 #ID:bunga-citra-lestari-wanita-terbahagia
 #ARTIST:Bunga Citra Lestari
+#ARTISTORIGIN:MY
 #TITLE:Wanita Terbahagia
 #CREATOR:wan99zhariff
 #CREATORURL:

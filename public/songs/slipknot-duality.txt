@@ -1,5 +1,6 @@
 #ID:slipknot-duality
 #ARTIST:Slipknot
+#ARTISTORIGIN:US
 #TITLE:Duality
 #CREATOR:FaKK
 #CREATORURL:

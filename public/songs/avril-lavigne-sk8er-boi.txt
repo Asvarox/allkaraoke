@@ -1,5 +1,6 @@
 #ID:avril-lavigne-sk8er-boi
 #ARTIST:Avril Lavigne
+#ARTISTORIGIN:CA
 #TITLE:Sk8er Boi
 #CREATOR:REL
 #CREATORURL:

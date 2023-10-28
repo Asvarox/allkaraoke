@@ -1,5 +1,6 @@
 #ID:pink-floyd-wish-you-were-here
 #ARTIST:Pink Floyd
+#ARTISTORIGIN:GB
 #TITLE:Wish You Were Here
 #CREATOR:prgoenner
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:abba-money-money-money
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Money Money Money
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:coldplay-paradise
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:Paradise
 #CREATOR:kaim21
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21

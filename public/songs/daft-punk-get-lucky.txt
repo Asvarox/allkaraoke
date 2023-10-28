@@ -1,5 +1,6 @@
 #ID:daft-punk-get-lucky
 #ARTIST:Daft Punk
+#ARTISTORIGIN:FR
 #TITLE:Get Lucky
 #CREATOR:gun88
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88

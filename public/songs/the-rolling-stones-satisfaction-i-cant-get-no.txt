@@ -1,5 +1,6 @@
 #ID:the-rolling-stones-satisfaction-i-cant-get-no
 #ARTIST:The Rolling Stones
+#ARTISTORIGIN:GB
 #TITLE:Satisfaction (I Can't Get No)
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip

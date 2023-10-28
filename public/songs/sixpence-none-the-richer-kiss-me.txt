@@ -1,5 +1,6 @@
 #ID:sixpence-none-the-richer-kiss-me
 #ARTIST:Sixpence None The Richer
+#ARTISTORIGIN:US
 #TITLE:Kiss Me
 #CREATOR:IC
 #CREATORURL:

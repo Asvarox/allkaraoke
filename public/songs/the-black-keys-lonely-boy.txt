@@ -1,5 +1,6 @@
 #ID:the-black-keys-lonely-boy
 #ARTIST:The Black Keys
+#ARTISTORIGIN:US
 #TITLE:Lonely boy
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

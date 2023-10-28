@@ -1,5 +1,6 @@
 #ID:nickelback-rockstar
 #ARTIST:Nickelback
+#ARTISTORIGIN:CA
 #TITLE:Rockstar
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

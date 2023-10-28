@@ -1,5 +1,6 @@
 #ID:lorde-royals
 #ARTIST:Lorde
+#ARTISTORIGIN:NZ
 #TITLE:Royals
 #CREATOR:vicktoben
 #CREATORURL:

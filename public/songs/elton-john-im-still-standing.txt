@@ -1,5 +1,6 @@
 #ID:elton-john-im-still-standing
 #ARTIST:Elton John
+#ARTISTORIGIN:GB
 #TITLE:I'm Still Standing
 #CREATOR:
 #CREATORURL:

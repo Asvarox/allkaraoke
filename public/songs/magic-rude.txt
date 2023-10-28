@@ -1,5 +1,6 @@
 #ID:magic-rude
 #ARTIST:Magic!
+#ARTISTORIGIN:CA
 #TITLE:Rude
 #CREATOR:Pantero
 #CREATORURL:

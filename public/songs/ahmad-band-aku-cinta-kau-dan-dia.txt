@@ -1,5 +1,6 @@
 #ID:ahmad-band-aku-cinta-kau-dan-dia
 #ARTIST:Ahmad Band
+#ARTISTORIGIN:ID
 #TITLE:Aku Cinta Kau Dan Dia
 #CREATOR:mssitohang
 #CREATORURL:

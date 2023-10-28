@@ -1,5 +1,6 @@
 #ID:michael-jackson-beat-it
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Beat It
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

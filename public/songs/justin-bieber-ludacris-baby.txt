@@ -1,5 +1,6 @@
 #ID:justin-bieber-ludacris-baby
 #ARTIST:Justin Bieber & Ludacris
+#ARTISTORIGIN:CA
 #TITLE:Baby
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pt/canciones?creador=vicktoben

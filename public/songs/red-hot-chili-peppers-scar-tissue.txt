@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-scar-tissue
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Scar Tissue
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

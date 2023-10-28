@@ -1,5 +1,6 @@
 #ID:queen-we-will-rock-you
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:We Will Rock You
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

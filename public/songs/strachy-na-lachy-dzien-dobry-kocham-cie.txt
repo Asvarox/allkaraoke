@@ -1,5 +1,6 @@
 #ID:strachy-na-lachy-dzien-dobry-kocham-cie
 #ARTIST:Strachy Na Lachy
+#ARTISTORIGIN:PL
 #TITLE:Dzien dobry kocham Cie
 #CREATOR:
 #CREATORURL:

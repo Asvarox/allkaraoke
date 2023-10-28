@@ -1,5 +1,6 @@
 #ID:republika-biala-flaga
 #ARTIST:Republika
+#ARTISTORIGIN:PL
 #TITLE:Biała flaga
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

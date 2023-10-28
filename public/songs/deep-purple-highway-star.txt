@@ -1,5 +1,6 @@
 #ID:deep-purple-highway-star
 #ARTIST:Deep Purple
+#ARTISTORIGIN:GB
 #TITLE:Highway Star
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor

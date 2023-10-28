@@ -1,5 +1,6 @@
 #ID:justin-bieber-nicki-minaj-beauty-and-a-beat
 #ARTIST:Justin Bieber & Nicki Minaj
+#ARTISTORIGIN:CA
 #TITLE:Beauty And A Beat
 #CREATOR:vicktoben
 #CREATORURL:

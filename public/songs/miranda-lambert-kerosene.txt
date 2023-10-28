@@ -1,5 +1,6 @@
 #ID:miranda-lambert-kerosene
 #ARTIST:Miranda Lambert
+#ARTISTORIGIN:US
 #TITLE:Kerosene
 #CREATOR:IC
 #CREATORURL:

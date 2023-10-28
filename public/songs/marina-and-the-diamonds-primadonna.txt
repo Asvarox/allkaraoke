@@ -1,5 +1,6 @@
 #ID:marina-and-the-diamonds-primadonna
 #ARTIST:Marina and the Diamonds
+#ARTISTORIGIN:GB
 #TITLE:Primadonna
 #CREATOR:ChrissyLeggs
 #CREATORURL:

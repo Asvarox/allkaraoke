@@ -1,5 +1,6 @@
 #ID:eurythmics-sweet-dreams-are-made-of-this
 #ARTIST:Eurythmics
+#ARTISTORIGIN:GB
 #TITLE:Sweet Dreams (Are Made Of This)
 #CREATOR:snake84
 #CREATORURL:

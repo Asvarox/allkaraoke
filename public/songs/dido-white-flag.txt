@@ -1,5 +1,6 @@
 #ID:dido-white-flag
 #ARTIST:Dido
+#ARTISTORIGIN:GB
 #TITLE:White Flag
 #CREATOR:
 #CREATORURL:

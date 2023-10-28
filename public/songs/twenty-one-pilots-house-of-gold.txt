@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-house-of-gold
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:House Of Gold
 #CREATOR:gun8
 #CREATORURL:

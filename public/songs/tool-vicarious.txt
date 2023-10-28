@@ -1,5 +1,6 @@
 #ID:tool-vicarious
 #ARTIST:Tool
+#ARTISTORIGIN:US
 #TITLE:Vicarious
 #CREATOR:Gollum
 #CREATORURL:

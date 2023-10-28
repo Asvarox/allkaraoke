@@ -1,5 +1,6 @@
 #ID:audioslave-cochise
 #ARTIST:Audioslave
+#ARTISTORIGIN:US
 #TITLE:Cochise
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

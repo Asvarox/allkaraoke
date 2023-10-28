@@ -1,5 +1,6 @@
 #ID:tina-turner-the-best
 #ARTIST:Tina Turner
+#ARTISTORIGIN:US
 #TITLE:The Best
 #CREATOR:pauldiddy
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149

@@ -1,5 +1,6 @@
 #ID:madonna-frozen
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Frozen
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo

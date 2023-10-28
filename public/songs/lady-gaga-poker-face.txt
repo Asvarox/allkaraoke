@@ -1,5 +1,6 @@
 #ID:lady-gaga-poker-face
 #ARTIST:Lady Gaga
+#ARTISTORIGIN:US
 #TITLE:Poker Face
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben

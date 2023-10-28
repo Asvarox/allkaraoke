@@ -1,5 +1,6 @@
 #ID:imagine-dragons-bad-liar
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Bad Liar
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

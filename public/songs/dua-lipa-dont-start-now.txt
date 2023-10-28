@@ -1,5 +1,6 @@
 #ID:dua-lipa-dont-start-now
 #ARTIST:Dua Lipa
+#ARTISTORIGIN:GB
 #TITLE:Don't Start Now
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

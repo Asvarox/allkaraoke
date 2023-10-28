@@ -1,5 +1,6 @@
 #ID:linkin-park-numb
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Numb
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor

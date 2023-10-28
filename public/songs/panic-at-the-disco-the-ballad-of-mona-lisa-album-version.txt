@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-the-ballad-of-mona-lisa-album-version
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:The Ballad Of Mona Lisa (Album Version)
 #CREATOR:FadingDream97
 #CREATORURL:

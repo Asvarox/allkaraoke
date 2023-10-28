@@ -1,5 +1,6 @@
 #ID:krzysztof-mielanczuk-tabaluga
 #ARTIST:Krzysztof Mielańczuk
+#ARTISTORIGIN:PL
 #TITLE:Tabaluga
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

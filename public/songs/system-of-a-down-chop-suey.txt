@@ -1,5 +1,6 @@
 #ID:system-of-a-down-chop-suey
 #ARTIST:System of a Down
+#ARTISTORIGIN:US
 #TITLE:Chop Suey!
 #CREATOR:IC
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:tina-turner-goldeneye
 #ARTIST:Tina Turner
+#ARTISTORIGIN:US
 #TITLE:GoldenEye
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

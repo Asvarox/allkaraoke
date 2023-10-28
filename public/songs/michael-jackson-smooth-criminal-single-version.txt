@@ -1,5 +1,6 @@
 #ID:michael-jackson-smooth-criminal-single-version
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Smooth Criminal (Single Version)
 #CREATOR:IC
 #CREATORURL:

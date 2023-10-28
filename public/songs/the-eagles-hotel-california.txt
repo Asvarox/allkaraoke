@@ -1,5 +1,6 @@
 #ID:the-eagles-hotel-california
 #ARTIST:The Eagles
+#ARTISTORIGIN:US
 #TITLE:Hotel California
 #CREATOR:mustangfred and asb
 #CREATORURL:

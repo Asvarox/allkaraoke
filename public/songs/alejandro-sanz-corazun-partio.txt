@@ -1,5 +1,6 @@
 #ID:alejandro-sanz-corazun-partio
 #ARTIST:Alejandro Sanz
+#ARTISTORIGIN:ES
 #TITLE:Corazón partío
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

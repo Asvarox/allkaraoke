@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-ride
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:Ride
 #CREATOR:gun8
 #CREATORURL:

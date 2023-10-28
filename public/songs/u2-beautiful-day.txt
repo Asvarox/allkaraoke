@@ -1,5 +1,6 @@
 #ID:u2-beautiful-day
 #ARTIST:U2
+#ARTISTORIGIN:IE
 #TITLE:Beautiful Day
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

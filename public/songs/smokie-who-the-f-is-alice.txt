@@ -1,5 +1,6 @@
 #ID:smokie-who-the-f-is-alice
 #ARTIST:Smokie
+#ARTISTORIGIN:GB
 #TITLE:Who The F… Is Alice?
 #CREATOR:IC
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411

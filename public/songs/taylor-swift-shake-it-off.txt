@@ -1,5 +1,6 @@
 #ID:taylor-swift-shake-it-off
 #ARTIST:Taylor Swift
+#ARTISTORIGIN:US
 #TITLE:Shake It Off
 #CREATOR:amro98
 #CREATORURL:

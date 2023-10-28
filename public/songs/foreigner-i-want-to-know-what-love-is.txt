@@ -1,5 +1,6 @@
 #ID:foreigner-i-want-to-know-what-love-is
 #ARTIST:Foreigner
+#ARTISTORIGIN:US
 #TITLE:I Want To Know What Love Is
 #CREATOR:dereinedervieleist
 #CREATORURL:

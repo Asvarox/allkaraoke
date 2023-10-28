@@ -1,5 +1,6 @@
 #ID:foo-fighters-walk
 #ARTIST:Foo Fighters
+#ARTISTORIGIN:US
 #TITLE:Walk
 #CREATOR:
 #CREATORURL:

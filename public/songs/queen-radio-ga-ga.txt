@@ -1,5 +1,6 @@
 #ID:queen-radio-ga-ga
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Radio Ga Ga
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

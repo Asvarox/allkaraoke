@@ -1,5 +1,6 @@
 #ID:no-doubt-its-my-life
 #ARTIST:No Doubt
+#ARTISTORIGIN:US
 #TITLE:It's My Life
 #CREATOR:
 #CREATORURL:

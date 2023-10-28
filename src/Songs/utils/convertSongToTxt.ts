@@ -20,6 +20,7 @@ export default function convertSongToTxt(song: Song) {
   const parsedValues: Record<keyof Omit<Song, 'tracks' | 'bar'>, string | undefined> = {
     id: toTxtValue('ID', song.id),
     artist: toTxtValue('ARTIST', song.artist),
+    artistOrigin: toTxtValue('ARTISTORIGIN', song.artistOrigin),
     title: toTxtValue('TITLE', song.title),
     author: toTxtValue('CREATOR', song.author),
     authorUrl: toTxtValue('CREATORURL', song.authorUrl),

@@ -1,5 +1,6 @@
 #ID:the-cranberries-zombie
 #ARTIST:The Cranberries
+#ARTISTORIGIN:IE
 #TITLE:Zombie
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:lady-gaga-yoz-and-i
 #ARTIST:Lady GaGa
+#ARTISTORIGIN:US
 #TITLE:Yoź And I
 #CREATOR:Silverbeam *vicktoben
 #CREATORURL:

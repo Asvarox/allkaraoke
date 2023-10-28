@@ -1,5 +1,6 @@
 #ID:muse-panic-station
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Panic Station
 #CREATOR:gun88
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88

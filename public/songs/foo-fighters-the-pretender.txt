@@ -1,5 +1,6 @@
 #ID:foo-fighters-the-pretender
 #ARTIST:Foo Fighters
+#ARTISTORIGIN:US
 #TITLE:The Pretender
 #CREATOR:
 #CREATORURL:

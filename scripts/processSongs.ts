@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { MusicBrainzApi } from 'musicbrainz-api';
+import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
 import { Song } from '../src/interfaces';
 import { fixDiacritics } from '../src/Scenes/Convert/Steps/utils/fixDiacritics';
@@ -8,6 +8,7 @@ import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 import clearString from '../src/utils/clearString';
 // @ts-ignore
 import scrapedBpmData from './scraped-bpm-data.json';
+// @ts-ignore
 
 const mbApi = new MusicBrainzApi({
   appName: 'Olkaraoke',
@@ -31,12 +32,13 @@ const SONGS_FOLDER = './public/songs';
     try {
       // await fillMissingRealBpm(songData, file);
       // await fillSongYear(songData);
+      await appendBandOrigin(songData);
     } catch (e) {
       console.error(e);
     }
     const finalSong = { ...songData, tracks };
     // finalSong.id = getSongId(finalSong);
-
+    //
     const fixedTxt = await fixAccentCharacters(
       convertSongToTxt(finalSong),
       Array.isArray(song.language) ? song.language[0] : song.language,
@@ -50,6 +52,34 @@ const SONGS_FOLDER = './public/songs';
 
 async function fixAccentCharacters(txt: string, language: string) {
   return fixDiacritics(txt, language.toLowerCase());
+}
+
+// async function appendBandOrigin(songData: Omit<Song, 'tracks'>) {
+//   if (songData.artistOrigin) {
+//     return;
+//   }
+//
+//   const bandOrigin = (bandOrigins as Record<string, string>)[songData.artist];
+//   if (bandOrigin) {
+//     songData.artistOrigin = bandOrigin;
+//   } else {
+//     console.log(`    [${songData.id}] Missing band origin`);
+//   }
+// }
+
+async function appendBandOrigin(songData: Omit<Song, 'tracks'>) {
+  console.log(` ${songData.artist} - ${songData.artistOrigin}`);
+  if (songData.artistOrigin) {
+    return;
+  }
+
+  const externalData = await mbApi.search<IArtistList>('artist', {
+    query: `"${songData.artist}"`,
+  });
+  if (externalData.count > 0) {
+    console.log(JSON.stringify(externalData, null, 2));
+    songData.artistOrigin = externalData.artists[0].country;
+  }
 }
 
 async function fillMissingRealBpm(songData: Omit<Song, 'tracks'>, file: string) {

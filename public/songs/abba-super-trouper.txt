@@ -1,5 +1,6 @@
 #ID:abba-super-trouper
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Super Trouper
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

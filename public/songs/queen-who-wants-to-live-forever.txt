@@ -1,5 +1,6 @@
 #ID:queen-who-wants-to-live-forever
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Who Wants to Live Forever
 #CREATOR:
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:johnny-cash-ring-of-fire
 #ARTIST:Johnny Cash
+#ARTISTORIGIN:US
 #TITLE:Ring Of Fire
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj

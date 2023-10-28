@@ -1,5 +1,6 @@
 #ID:bts-dynamite
 #ARTIST:BTS
+#ARTISTORIGIN:KR
 #TITLE:Dynamite
 #CREATOR:asdFer
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer

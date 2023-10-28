@@ -1,5 +1,6 @@
 #ID:beyonce-love-on-top
 #ARTIST:Beyoncé
+#ARTISTORIGIN:US
 #TITLE:Love On Top
 #CREATOR:lozboorman
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:the-black-eyed-peas-pump-it
 #ARTIST:The Black Eyed Peas
+#ARTISTORIGIN:US
 #TITLE:Pump It
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

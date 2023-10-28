@@ -1,5 +1,6 @@
 #ID:rammstein-amerika
 #ARTIST:Rammstein
+#ARTISTORIGIN:DE
 #TITLE:Amerika
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83

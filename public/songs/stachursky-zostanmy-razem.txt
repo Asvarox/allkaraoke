@@ -1,5 +1,6 @@
 #ID:stachursky-zostanmy-razem
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Zostanmy Razem
 #CREATOR:Lecter
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6125

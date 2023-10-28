@@ -1,5 +1,6 @@
 #ID:colbie-caillat-bubbly
 #ARTIST:Colbie Caillat
+#ARTISTORIGIN:US
 #TITLE:Bubbly
 #CREATOR:IC
 #CREATORURL:

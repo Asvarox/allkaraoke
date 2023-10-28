@@ -1,5 +1,6 @@
 #ID:europe-final-countdown
 #ARTIST:Europe
+#ARTISTORIGIN:SE
 #TITLE:Final Countdown
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

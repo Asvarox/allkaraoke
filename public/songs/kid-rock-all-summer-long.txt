@@ -1,5 +1,6 @@
 #ID:kid-rock-all-summer-long
 #ARTIST:Kid Rock
+#ARTISTORIGIN:US
 #TITLE:All Summer Long
 #CREATOR:Silverbeam
 #CREATORURL:

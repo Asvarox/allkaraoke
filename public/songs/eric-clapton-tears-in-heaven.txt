@@ -1,5 +1,6 @@
 #ID:eric-clapton-tears-in-heaven
 #ARTIST:Eric Clapton
+#ARTISTORIGIN:GB
 #TITLE:Tears in Heaven
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero

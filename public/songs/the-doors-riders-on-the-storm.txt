@@ -1,5 +1,6 @@
 #ID:the-doors-riders-on-the-storm
 #ARTIST:The Doors
+#ARTISTORIGIN:US
 #TITLE:Riders on the storm
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

@@ -1,5 +1,6 @@
 #ID:adele-someone-like-you
 #ARTIST:Adele
+#ARTISTORIGIN:GB
 #TITLE:Someone Like You
 #CREATOR:nauce
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nauce

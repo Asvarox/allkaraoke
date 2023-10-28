@@ -1,5 +1,6 @@
 #ID:bon-jovi-bad-medicine
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Bad Medicine
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero

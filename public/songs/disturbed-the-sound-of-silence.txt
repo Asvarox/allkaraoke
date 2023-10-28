@@ -1,5 +1,6 @@
 #ID:disturbed-the-sound-of-silence
 #ARTIST:Disturbed
+#ARTISTORIGIN:US
 #TITLE:The Sound Of Silence
 #CREATOR:subkei
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei

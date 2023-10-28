@@ -1,5 +1,6 @@
 #ID:madonna-die-another-day
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Die Another Day
 #CREATOR:Coppo
 #CREATORURL:

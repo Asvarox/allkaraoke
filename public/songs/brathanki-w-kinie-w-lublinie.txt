@@ -1,5 +1,6 @@
 #ID:brathanki-w-kinie-w-lublinie
 #ARTIST:BRAThANKI
+#ARTISTORIGIN:PL
 #TITLE:W kinie, w Lublinie
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

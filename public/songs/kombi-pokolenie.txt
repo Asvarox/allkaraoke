@@ -1,5 +1,6 @@
 #ID:kombi-pokolenie
 #ARTIST:Kombi
+#ARTISTORIGIN:PL
 #TITLE:Pokolenie
 #CREATORURL:
 #BPM:228

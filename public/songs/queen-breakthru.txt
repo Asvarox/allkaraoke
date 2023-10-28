@@ -1,5 +1,6 @@
 #ID:queen-breakthru
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Breakthru
 #CREATOR:
 #CREATORURL:

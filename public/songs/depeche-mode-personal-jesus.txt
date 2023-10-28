@@ -1,5 +1,6 @@
 #ID:depeche-mode-personal-jesus
 #ARTIST:Depeche Mode
+#ARTISTORIGIN:GB
 #TITLE:Personal Jesus
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

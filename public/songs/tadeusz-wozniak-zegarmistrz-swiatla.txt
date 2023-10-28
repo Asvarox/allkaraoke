@@ -1,5 +1,6 @@
 #ID:tadeusz-wozniak-zegarmistrz-swiatla
 #ARTIST:Tadeusz Woźniak
+#ARTISTORIGIN:PL
 #TITLE:Zegarmistrz światła
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

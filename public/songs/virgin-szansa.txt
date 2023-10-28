@@ -1,5 +1,6 @@
 #ID:virgin-szansa
 #ARTIST:Virgin
+#ARTISTORIGIN:PL
 #TITLE:Szansa
 #CREATOR:
 #CREATORURL:

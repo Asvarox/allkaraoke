@@ -1,5 +1,6 @@
 #ID:jarzebina-koko-euro-spoko
 #ARTIST:Jarzębina
+#ARTISTORIGIN:PL
 #TITLE:Koko Euro Spoko
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

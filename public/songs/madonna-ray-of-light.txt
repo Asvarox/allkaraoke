@@ -1,5 +1,6 @@
 #ID:madonna-ray-of-light
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Ray Of Light
 #CREATOR:
 #CREATORURL:

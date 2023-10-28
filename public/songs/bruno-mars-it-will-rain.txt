@@ -1,5 +1,6 @@
 #ID:bruno-mars-it-will-rain
 #ARTIST:Bruno Mars
+#ARTISTORIGIN:US
 #TITLE:It Will Rain
 #CREATOR:Coppolatte
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:kylie-minogue-in-your-eyes
 #ARTIST:Kylie Minogue
+#ARTISTORIGIN:AU
 #TITLE:In Your Eyes
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

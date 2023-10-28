@@ -1,5 +1,6 @@
 #ID:britney-spears-oops-i-did-it-again
 #ARTIST:Britney Spears
+#ARTISTORIGIN:US
 #TITLE:Oops! I did it again
 #CREATOR:zXz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz

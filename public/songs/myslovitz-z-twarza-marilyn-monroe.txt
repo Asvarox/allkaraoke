@@ -1,5 +1,6 @@
 #ID:myslovitz-z-twarza-marilyn-monroe
 #ARTIST:Myslovitz
+#ARTISTORIGIN:PL
 #TITLE:Z twarza Marilyn Monroe
 #CREATOR:davidus01
 #CREATORURL:

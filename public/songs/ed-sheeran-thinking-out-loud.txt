@@ -1,5 +1,6 @@
 #ID:ed-sheeran-thinking-out-loud
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Thinking out loud
 #CREATOR:Volodia
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia

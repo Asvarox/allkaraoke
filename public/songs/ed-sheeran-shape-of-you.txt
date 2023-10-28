@@ -1,5 +1,6 @@
 #ID:ed-sheeran-shape-of-you
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Shape of you
 #CREATOR:Volodia
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia

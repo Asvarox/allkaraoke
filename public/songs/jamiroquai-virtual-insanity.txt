@@ -1,5 +1,6 @@
 #ID:jamiroquai-virtual-insanity
 #ARTIST:Jamiroquai
+#ARTISTORIGIN:GB
 #TITLE:Virtual Insanity
 #CREATOR:Lorchen
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen

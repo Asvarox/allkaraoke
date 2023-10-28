@@ -1,5 +1,6 @@
 #ID:la-oreja-de-van-gogh-cuentame-al-oido
 #ARTIST:La Oreja de Van Gogh
+#ARTISTORIGIN:ES
 #TITLE:Cuéntame al oído
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

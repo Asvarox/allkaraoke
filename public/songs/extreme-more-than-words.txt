@@ -1,5 +1,6 @@
 #ID:extreme-more-than-words
 #ARTIST:Extreme
+#ARTISTORIGIN:US
 #TITLE:More Than Words
 #CREATOR:Canni
 #CREATORURL:

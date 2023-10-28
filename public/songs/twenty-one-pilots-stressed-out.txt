@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-stressed-out
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:Stressed Out
 #CREATOR:QuantenspringerXXX
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:survivor-eye-of-the-tiger
 #ARTIST:Survivor
+#ARTISTORIGIN:US
 #TITLE:Eye Of The Tiger
 #CREATOR:Hammy
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=574

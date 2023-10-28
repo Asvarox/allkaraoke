@@ -1,5 +1,6 @@
 #ID:toto-africa
 #ARTIST:Toto
+#ARTISTORIGIN:US
 #TITLE:Africa
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:michael-jackson-billie-jean
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Billie Jean
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip

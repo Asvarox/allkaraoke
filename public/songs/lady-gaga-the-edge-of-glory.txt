@@ -1,5 +1,6 @@
 #ID:lady-gaga-the-edge-of-glory
 #ARTIST:Lady GaGa
+#ARTISTORIGIN:US
 #TITLE:The Edge Of Glory
 #CREATOR:vicktoben
 #CREATORURL:

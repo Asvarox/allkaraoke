@@ -1,5 +1,6 @@
 #ID:twenty-one-pilots-tear-in-my-heart
 #ARTIST:twenty øne piløts
+#ARTISTORIGIN:US
 #TITLE:Tear In My Heart
 #CREATOR:REL
 #CREATORURL:

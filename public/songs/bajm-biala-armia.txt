@@ -1,5 +1,6 @@
 #ID:bajm-biala-armia
 #ARTIST:Bajm
+#ARTISTORIGIN:PL
 #TITLE:Biała Armia
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

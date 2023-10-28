@@ -1,5 +1,6 @@
 #ID:the-fray-how-to-save-a-life
 #ARTIST:The Fray
+#ARTISTORIGIN:US
 #TITLE:How To Save A Life
 #CREATOR:IC
 #CREATORURL:

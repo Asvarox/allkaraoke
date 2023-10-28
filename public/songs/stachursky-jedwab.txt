@@ -1,5 +1,6 @@
 #ID:stachursky-jedwab
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Jedwab
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

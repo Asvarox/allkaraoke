@@ -1,5 +1,6 @@
 #ID:juanes-a-dios-le-pido
 #ARTIST:Juanes
+#ARTISTORIGIN:CO
 #TITLE:A Dios le pido
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

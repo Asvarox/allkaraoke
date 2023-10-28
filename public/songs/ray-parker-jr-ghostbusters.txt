@@ -1,5 +1,6 @@
 #ID:ray-parker-jr-ghostbusters
 #ARTIST:Ray Parker Jr.
+#ARTISTORIGIN:US
 #TITLE:Ghostbusters
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

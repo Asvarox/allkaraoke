@@ -1,5 +1,6 @@
 #ID:shakira-feat-rihanna-cant-remember-to-forget-you
 #ARTIST:Shakira feat. Rihanna
+#ARTISTORIGIN:CO
 #TITLE:Can’t Remember To Forget You
 #CREATOR:superstar90
 #CREATORURL:

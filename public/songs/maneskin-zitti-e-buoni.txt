@@ -1,5 +1,6 @@
 #ID:maneskin-zitti-e-buoni
 #ARTIST:Måneskin
+#ARTISTORIGIN:IT
 #TITLE:Zitti e buoni
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

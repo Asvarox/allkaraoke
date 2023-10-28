@@ -1,5 +1,6 @@
 #ID:depeche-mode-its-no-good
 #ARTIST:Depeche Mode
+#ARTISTORIGIN:GB
 #TITLE:It's No Good
 #CREATOR:
 #CREATORURL:

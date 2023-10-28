@@ -1,5 +1,6 @@
 #ID:oasis-wonderwall
 #ARTIST:Oasis
+#ARTISTORIGIN:GB
 #TITLE:Wonderwall
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman

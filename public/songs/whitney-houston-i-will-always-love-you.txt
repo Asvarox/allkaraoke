@@ -1,5 +1,6 @@
 #ID:whitney-houston-i-will-always-love-you
 #ARTIST:Whitney Houston
+#ARTISTORIGIN:US
 #TITLE:I Will Always Love You
 #CREATOR:
 #CREATORURL:

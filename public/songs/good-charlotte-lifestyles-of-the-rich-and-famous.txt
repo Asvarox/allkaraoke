@@ -1,5 +1,6 @@
 #ID:good-charlotte-lifestyles-of-the-rich-and-famous
 #ARTIST:Good Charlotte
+#ARTISTORIGIN:US
 #TITLE:Lifestyles Of The Rich And Famous
 #CREATOR:masterxy
 #CREATORURL:

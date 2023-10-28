@@ -1,5 +1,6 @@
 #ID:faith-no-more-midlife-crisis-album-version
 #ARTIST:Faith No More
+#ARTISTORIGIN:US
 #TITLE:Midlife Crisis (Album Version)
 #CREATOR:Gollum
 #CREATORURL:

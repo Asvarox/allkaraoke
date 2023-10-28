@@ -1,5 +1,6 @@
 #ID:the-rolling-stones-paint-it-black
 #ARTIST:The Rolling Stones
+#ARTISTORIGIN:GB
 #TITLE:Paint It, Black
 #CREATOR:Peschi
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263

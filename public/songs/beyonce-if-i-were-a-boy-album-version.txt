@@ -1,5 +1,6 @@
 #ID:beyonce-if-i-were-a-boy-album-version
 #ARTIST:Beyoncé
+#ARTISTORIGIN:US
 #TITLE:If I Were A Boy (Album Version)
 #CREATOR:IC
 #CREATORURL:

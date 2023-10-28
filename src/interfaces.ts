@@ -54,6 +54,7 @@ export interface Song {
   sourceUrl: string | undefined;
   videoGap: number | undefined;
   artist: string;
+  artistOrigin: string | undefined;
   title: string;
   video: string;
   previewStart: number | undefined;

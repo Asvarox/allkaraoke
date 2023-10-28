@@ -1,5 +1,6 @@
 #ID:lana-del-rey-born-to-die
 #ARTIST:Lana Del Rey
+#ARTISTORIGIN:US
 #TITLE:Born To Die
 #CREATOR:
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben

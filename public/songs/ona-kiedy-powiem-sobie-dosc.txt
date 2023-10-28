@@ -1,5 +1,6 @@
 #ID:ona-kiedy-powiem-sobie-dosc
 #ARTIST:ONA
+#ARTISTORIGIN:PL
 #TITLE:Kiedy powiem sobie dość
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

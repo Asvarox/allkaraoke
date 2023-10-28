@@ -1,5 +1,6 @@
 #ID:kylie-minogue-the-loco-motion
 #ARTIST:Kylie Minogue
+#ARTISTORIGIN:AU
 #TITLE:The Loco-Motion
 #CREATOR:ConejoF1
 #CREATORURL:

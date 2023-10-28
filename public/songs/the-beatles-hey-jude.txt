@@ -1,5 +1,6 @@
 #ID:the-beatles-hey-jude
 #ARTIST:The Beatles
+#ARTISTORIGIN:GB
 #TITLE:Hey Jude
 #CREATOR:dekkard
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard

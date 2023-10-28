@@ -1,5 +1,6 @@
 #ID:bon-jovi-you-give-love-a-bad-name
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:You Give Love A Bad Name
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip

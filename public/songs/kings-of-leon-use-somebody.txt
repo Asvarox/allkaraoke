@@ -1,5 +1,6 @@
 #ID:kings-of-leon-use-somebody
 #ARTIST:Kings of Leon
+#ARTISTORIGIN:US
 #TITLE:Use Somebody
 #CREATOR:hamadad
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2689

@@ -1,5 +1,6 @@
 #ID:lorde-green-light
 #ARTIST:Lorde
+#ARTISTORIGIN:NZ
 #TITLE:Green Light
 #CREATOR:lozboorman
 #CREATORURL:

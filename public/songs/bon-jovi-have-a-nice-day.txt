@@ -1,5 +1,6 @@
 #ID:bon-jovi-have-a-nice-day
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Have a nice day
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

@@ -1,5 +1,6 @@
 #ID:prince-and-the-revolution-1999
 #ARTIST:Prince and the Revolution
+#ARTISTORIGIN:US
 #TITLE:1999
 #CREATOR:sledge
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=67506

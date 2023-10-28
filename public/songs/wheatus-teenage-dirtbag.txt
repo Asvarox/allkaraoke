@@ -1,5 +1,6 @@
 #ID:wheatus-teenage-dirtbag
 #ARTIST:Wheatus
+#ARTISTORIGIN:US
 #TITLE:Teenage Dirtbag
 #CREATOR:cal
 #CREATORURL:

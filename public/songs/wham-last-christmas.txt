@@ -1,5 +1,6 @@
 #ID:wham-last-christmas
 #ARTIST:Wham!
+#ARTISTORIGIN:GB
 #TITLE:Last Christmas
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb

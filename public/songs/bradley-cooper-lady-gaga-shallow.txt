@@ -1,5 +1,6 @@
 #ID:bradley-cooper-lady-gaga-shallow
 #ARTIST:Bradley Cooper & Lady Gaga
+#ARTISTORIGIN:US
 #TITLE:Shallow
 #CREATOR:Bene28
 #CREATORURL:

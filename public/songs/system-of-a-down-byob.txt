@@ -1,5 +1,6 @@
 #ID:system-of-a-down-byob
 #ARTIST:System of a Down
+#ARTISTORIGIN:US
 #TITLE:B.Y.O.B.
 #CREATOR:Jamin
 #CREATORURL:

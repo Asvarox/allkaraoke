@@ -1,5 +1,6 @@
 #ID:green-day-wake-me-up-when-september-ends
 #ARTIST:Green Day
+#ARTISTORIGIN:US
 #TITLE:Wake Me Up When September Ends
 #CREATOR:jusmo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=jusmo

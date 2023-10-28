@@ -1,5 +1,6 @@
 #ID:mana-clavado-en-un-bar
 #ARTIST:Maná
+#ARTISTORIGIN:MX
 #TITLE:Clavado en un bar
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero

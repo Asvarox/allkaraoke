@@ -1,5 +1,6 @@
 #ID:nirvana-in-bloom
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:In Bloom
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

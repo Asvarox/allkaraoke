@@ -1,5 +1,6 @@
 #ID:tlove-polish-boyfriend
 #ARTIST:T.Love
+#ARTISTORIGIN:PL
 #TITLE:Polish Boyfriend
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

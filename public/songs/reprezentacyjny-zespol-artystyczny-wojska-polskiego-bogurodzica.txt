@@ -1,5 +1,6 @@
 #ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-bogurodzica
 #ARTIST:Reprezentacyjny Zespół Artystyczny Wojska Polskiego
+#ARTISTORIGIN:PL
 #TITLE:Bogurodzica
 #CREATOR:Beneblade
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade

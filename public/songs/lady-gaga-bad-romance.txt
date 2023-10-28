@@ -1,5 +1,6 @@
 #ID:lady-gaga-bad-romance
 #ARTIST:Lady GaGa
+#ARTISTORIGIN:US
 #TITLE:Bad Romance
 #CREATOR:michas17j
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=14525

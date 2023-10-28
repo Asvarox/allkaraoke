@@ -1,5 +1,6 @@
 #ID:linkin-park-crawling
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Crawling
 #CREATOR:kaim21
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21

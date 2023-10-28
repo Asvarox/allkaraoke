@@ -1,5 +1,6 @@
 #ID:keha-tik-tok
 #ARTIST:Ke$ha
+#ARTISTORIGIN:US
 #TITLE:TiK ToK
 #CREATOR:klops_007
 #CREATORURL:

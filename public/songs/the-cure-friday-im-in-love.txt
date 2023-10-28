@@ -1,5 +1,6 @@
 #ID:the-cure-friday-im-in-love
 #ARTIST:The Cure
+#ARTISTORIGIN:GB
 #TITLE:Friday I'm in Love
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

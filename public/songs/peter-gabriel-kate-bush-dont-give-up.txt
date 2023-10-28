@@ -1,5 +1,6 @@
 #ID:peter-gabriel-kate-bush-dont-give-up
 #ARTIST:Peter Gabriel & Kate Bush
+#ARTISTORIGIN:GB
 #TITLE:Don’t Give Up
 #CREATOR:Caruso
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:michael-jackson-thriller
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Thriller
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

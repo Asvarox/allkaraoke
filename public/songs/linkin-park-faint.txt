@@ -1,5 +1,6 @@
 #ID:linkin-park-faint
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Faint
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83

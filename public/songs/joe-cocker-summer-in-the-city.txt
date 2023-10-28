@@ -1,5 +1,6 @@
 #ID:joe-cocker-summer-in-the-city
 #ARTIST:Joe Cocker
+#ARTISTORIGIN:GB
 #TITLE:Summer In The City
 #CREATOR:Leki
 #CREATORURL:

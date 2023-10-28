@@ -1,5 +1,6 @@
 #ID:big-cyc-swiat-wedlug-kiepskich
 #ARTIST:Big Cyc
+#ARTISTORIGIN:PL
 #TITLE:Swiat Wedlug Kiepskich
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

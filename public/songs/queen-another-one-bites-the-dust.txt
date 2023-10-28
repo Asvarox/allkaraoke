@@ -1,5 +1,6 @@
 #ID:queen-another-one-bites-the-dust
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Another One Bites the Dust
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

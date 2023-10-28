@@ -1,5 +1,6 @@
 #ID:muse-uprising
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Uprising
 #CREATOR:albanderuaz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz

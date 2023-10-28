@@ -1,5 +1,6 @@
 #ID:the-killers-mr-brightside
 #ARTIST:The Killers
+#ARTISTORIGIN:US
 #TITLE:Mr. Brightside
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

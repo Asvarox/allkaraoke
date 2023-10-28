@@ -1,5 +1,6 @@
 #ID:bee-gees-tragedy
 #ARTIST:Bee Gees
+#ARTISTORIGIN:GB
 #TITLE:Tragedy
 #CREATOR:
 #CREATORURL:

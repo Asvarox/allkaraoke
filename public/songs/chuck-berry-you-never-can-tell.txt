@@ -1,5 +1,6 @@
 #ID:chuck-berry-you-never-can-tell
 #ARTIST:Chuck Berry
+#ARTISTORIGIN:US
 #TITLE:You never can tell
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

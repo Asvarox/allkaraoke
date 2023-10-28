@@ -1,5 +1,6 @@
 #ID:linkin-park-waiting-for-the-end
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Waiting for the end
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

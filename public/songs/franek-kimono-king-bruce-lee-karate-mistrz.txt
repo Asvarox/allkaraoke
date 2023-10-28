@@ -1,5 +1,6 @@
 #ID:franek-kimono-king-bruce-lee-karate-mistrz
 #ARTIST:Franek Kimono
+#ARTISTORIGIN:PL
 #TITLE:King Bruce Lee Karate Mistrz
 #CREATOR:mgr_rybak
 #CREATORURL:

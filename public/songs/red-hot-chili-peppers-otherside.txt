@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-otherside
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Otherside
 #CREATOR:Spys4Darwin
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin

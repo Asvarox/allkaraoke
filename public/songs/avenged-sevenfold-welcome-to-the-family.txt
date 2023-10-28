@@ -1,5 +1,6 @@
 #ID:avenged-sevenfold-welcome-to-the-family
 #ARTIST:Avenged Sevenfold
+#ARTISTORIGIN:US
 #TITLE:Welcome To The Family
 #CREATOR:borax
 #CREATORURL:

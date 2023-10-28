@@ -1,5 +1,6 @@
 #ID:cyndi-lauper-girls-just-wanna-have-fun
 #ARTIST:Cyndi Lauper
+#ARTISTORIGIN:US
 #TITLE:Girls Just Wanna Have Fun
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

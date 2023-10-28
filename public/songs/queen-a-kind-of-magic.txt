@@ -1,5 +1,6 @@
 #ID:queen-a-kind-of-magic
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:A kind of magic
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

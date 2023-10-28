@@ -1,5 +1,6 @@
 #ID:nelly-furtado-say-it-right
 #ARTIST:Nelly Furtado
+#ARTISTORIGIN:CA
 #TITLE:Say It Right
 #CREATOR:dog
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:audioslave-be-yourself
 #ARTIST:Audioslave
+#ARTISTORIGIN:US
 #TITLE:Be Yourself
 #CREATOR:Spys4Darwin
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin

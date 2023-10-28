@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-under-the-bridge
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Under the bridge
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

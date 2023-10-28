@@ -1,5 +1,6 @@
 #ID:rupert-holmes-escape-the-pina-colada-song
 #ARTIST:Rupert Holmes
+#ARTISTORIGIN:GB
 #TITLE:Escape (The Pińa Colada Song)
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb

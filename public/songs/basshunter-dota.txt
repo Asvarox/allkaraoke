@@ -1,5 +1,6 @@
 #ID:basshunter-dota
 #ARTIST:Basshunter
+#ARTISTORIGIN:SE
 #TITLE:DotA
 #CREATOR:Beneblade
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade

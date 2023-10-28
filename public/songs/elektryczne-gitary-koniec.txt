@@ -1,5 +1,6 @@
 #ID:elektryczne-gitary-koniec
 #ARTIST:Elektryczne Gitary
+#ARTISTORIGIN:PL
 #TITLE:Koniec
 #CREATOR:davidus01
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:pink-floyd-high-hopes
 #ARTIST:Pink Floyd
+#ARTISTORIGIN:GB
 #TITLE:High Hopes
 #CREATOR:WingXero *Subkei
 #CREATORURL:

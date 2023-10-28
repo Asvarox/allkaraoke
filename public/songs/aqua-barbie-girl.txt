@@ -1,5 +1,6 @@
 #ID:aqua-barbie-girl
 #ARTIST:Aqua
+#ARTISTORIGIN:DK
 #TITLE:Barbie Girl
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

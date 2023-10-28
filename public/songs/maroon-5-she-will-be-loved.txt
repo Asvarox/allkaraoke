@@ -1,5 +1,6 @@
 #ID:maroon-5-she-will-be-loved
 #ARTIST:Maroon 5
+#ARTISTORIGIN:US
 #TITLE:She Will Be Loved
 #CREATOR:upalula
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula

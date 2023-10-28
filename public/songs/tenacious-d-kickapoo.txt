@@ -1,5 +1,6 @@
 #ID:tenacious-d-kickapoo
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Kickapoo
 #CREATOR:borax
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136

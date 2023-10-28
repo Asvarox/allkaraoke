@@ -1,5 +1,6 @@
 #ID:hoobastank-the-reason
 #ARTIST:Hoobastank
+#ARTISTORIGIN:US
 #TITLE:The Reason
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

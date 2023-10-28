@@ -1,5 +1,6 @@
 #ID:la-la-land-ryan-gosling-emma-stone-city-of-stars
 #ARTIST:La La Land (Ryan Gosling & Emma Stone)
+#ARTISTORIGIN:US
 #TITLE:City Of Stars
 #CREATOR:zrednaz
 #CREATORURL:

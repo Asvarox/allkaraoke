@@ -1,5 +1,6 @@
 #ID:the-beatles-come-together
 #ARTIST:The Beatles
+#ARTISTORIGIN:GB
 #TITLE:Come Together
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

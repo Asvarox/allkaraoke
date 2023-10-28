@@ -1,5 +1,6 @@
 #ID:perfekt-autobiografia
 #ARTIST:Perfekt
+#ARTISTORIGIN:PL
 #TITLE:Autobiografia
 #CREATORURL:
 #BPM:114

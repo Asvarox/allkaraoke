@@ -1,5 +1,6 @@
 #ID:blondie-the-tide-is-high
 #ARTIST:Blondie
+#ARTISTORIGIN:US
 #TITLE:The Tide Is High
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

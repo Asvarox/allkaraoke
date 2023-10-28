@@ -1,5 +1,6 @@
 #ID:pablo-alboran-solamente-tu
 #ARTIST:Pablo Alborán
+#ARTISTORIGIN:ES
 #TITLE:Solamente tú
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor

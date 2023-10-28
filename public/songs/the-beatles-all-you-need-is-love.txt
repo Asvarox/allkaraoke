@@ -1,5 +1,6 @@
 #ID:the-beatles-all-you-need-is-love
 #ARTIST:The Beatles
+#ARTISTORIGIN:GB
 #TITLE:All You Need Is Love
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

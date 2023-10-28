@@ -1,5 +1,6 @@
 #ID:lynyrd-skynyrd-free-bird
 #ARTIST:Lynyrd Skynyrd
+#ARTISTORIGIN:US
 #TITLE:Free Bird
 #CREATOR:
 #CREATORURL:

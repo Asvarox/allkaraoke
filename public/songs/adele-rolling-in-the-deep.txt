@@ -1,5 +1,6 @@
 #ID:adele-rolling-in-the-deep
 #ARTIST:Adele
+#ARTISTORIGIN:GB
 #TITLE:Rolling In The Deep
 #BPM:210
 #REALBPM:103

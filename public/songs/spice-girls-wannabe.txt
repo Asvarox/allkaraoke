@@ -1,5 +1,6 @@
 #ID:spice-girls-wannabe
 #ARTIST:Spice Girls
+#ARTISTORIGIN:GB
 #TITLE:Wannabe
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

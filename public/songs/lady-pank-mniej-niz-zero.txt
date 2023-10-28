@@ -1,5 +1,6 @@
 #ID:lady-pank-mniej-niz-zero
 #ARTIST:Lady Pank
+#ARTISTORIGIN:PL
 #TITLE:Mniej niż zero
 #CREATORURL:
 #BPM:134,1

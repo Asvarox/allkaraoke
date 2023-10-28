@@ -1,5 +1,6 @@
 #ID:imagine-dragons-wrecked
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Wrecked
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
