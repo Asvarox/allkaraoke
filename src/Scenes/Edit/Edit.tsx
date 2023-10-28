@@ -14,6 +14,7 @@ export default function Edit(props: Props) {
 
   if (!song.data) return <>Loading</>;
 
+  console.log(song.data);
   return (
     <Container>
       <div>
