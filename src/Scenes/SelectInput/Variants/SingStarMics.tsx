@@ -115,7 +115,7 @@ function SingStarMics(props: Props) {
                     menu.
                   </ChromeIssue>
                 )}
-                {isChromium() && !isWindows() && (
+                {isChromium() && isWindows() && (
                   <ChromeIssue>
                     <strong>Chrome</strong> is known for not handling SingStar mics well. If you notice any problems,
                     try using an alternative browser (eg. <strong>MS Edge</strong> or <strong>Firefox</strong>)
