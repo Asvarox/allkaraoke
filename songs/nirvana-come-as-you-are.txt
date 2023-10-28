@@ -1,5 +1,6 @@
 #ID:nirvana-come-as-you-are
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:Come As You Are
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

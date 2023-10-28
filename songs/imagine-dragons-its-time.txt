@@ -1,5 +1,6 @@
 #ID:imagine-dragons-its-time
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:It's Time
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

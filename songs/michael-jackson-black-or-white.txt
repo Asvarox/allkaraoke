@@ -1,5 +1,6 @@
 #ID:michael-jackson-black-or-white
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Black or white
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

@@ -1,5 +1,6 @@
 #ID:muse-undisclosed-desires
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Undisclosed desires
 #CREATOR:webo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=webo

@@ -1,5 +1,6 @@
 #ID:britney-spears-stronger
 #ARTIST:Britney Spears
+#ARTISTORIGIN:US
 #TITLE:Stronger
 #CREATOR:
 #CREATORURL:

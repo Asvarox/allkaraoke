@@ -1,5 +1,6 @@
 #ID:alaska-y-dinarama-a-quien-le-importa
 #ARTIST:Alaska y Dinarama
+#ARTISTORIGIN:ES
 #TITLE:A quién le importa
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

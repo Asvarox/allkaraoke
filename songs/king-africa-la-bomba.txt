@@ -1,5 +1,6 @@
 #ID:king-africa-la-bomba
 #ARTIST:King África
+#ARTISTORIGIN:AR
 #TITLE:La Bomba
 #CREATOR:
 #CREATORURL:

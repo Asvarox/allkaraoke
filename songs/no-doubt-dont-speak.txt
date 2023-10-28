@@ -1,5 +1,6 @@
 #ID:no-doubt-dont-speak
 #ARTIST:No Doubt
+#ARTISTORIGIN:US
 #TITLE:Don't speak
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

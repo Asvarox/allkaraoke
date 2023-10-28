@@ -1,5 +1,6 @@
 #ID:bon-jovi-its-my-life
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:It's my life
 #CREATOR:upalula
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula

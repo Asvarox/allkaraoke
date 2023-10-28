@@ -1,5 +1,6 @@
 #ID:guns-n-roses-sweet-child-omine
 #ARTIST:Guns N' Roses
+#ARTISTORIGIN:US
 #TITLE:Sweet Child O'Mine
 #CREATOR:Pacayaka
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka

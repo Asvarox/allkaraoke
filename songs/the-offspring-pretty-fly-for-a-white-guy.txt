@@ -1,5 +1,6 @@
 #ID:the-offspring-pretty-fly-for-a-white-guy
 #ARTIST:The Offspring
+#ARTISTORIGIN:US
 #TITLE:Pretty fly (for a white guy)
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

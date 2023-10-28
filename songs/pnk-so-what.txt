@@ -1,5 +1,6 @@
 #ID:pnk-so-what
 #ARTIST:P!nk
+#ARTISTORIGIN:US
 #TITLE:So What
 #CREATOR:Hun
 #CREATORURL:

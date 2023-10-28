@@ -1,5 +1,6 @@
 #ID:queen-dont-stop-me-now
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Don't Stop Me Now
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

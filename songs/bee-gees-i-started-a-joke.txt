@@ -1,5 +1,6 @@
 #ID:bee-gees-i-started-a-joke
 #ARTIST:Bee Gees
+#ARTISTORIGIN:GB
 #TITLE:I Started A Joke
 #CREATOR:mustangfred
 #CREATORURL:

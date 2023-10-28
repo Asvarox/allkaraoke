@@ -1,5 +1,6 @@
 #ID:the-killers-somebody-told-me
 #ARTIST:The Killers
+#ARTISTORIGIN:US
 #TITLE:Somebody Told Me
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2

@@ -1,5 +1,6 @@
 #ID:4-non-blondes-whats-up
 #ARTIST:4 Non Blondes
+#ARTISTORIGIN:US
 #TITLE:What’s Up?
 #CREATOR:a224
 #CREATORURL:

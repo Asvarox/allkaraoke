@@ -1,5 +1,6 @@
 #ID:ed-sheeran-i-see-fire
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:I See Fire
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

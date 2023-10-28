@@ -1,5 +1,6 @@
 #ID:madonna-like-a-virgin
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Like a Virgin
 #CREATOR:
 #CREATORURL:

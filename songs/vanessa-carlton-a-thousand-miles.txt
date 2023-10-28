@@ -1,5 +1,6 @@
 #ID:vanessa-carlton-a-thousand-miles
 #ARTIST:Vanessa Carlton
+#ARTISTORIGIN:US
 #TITLE:A thousand miles
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

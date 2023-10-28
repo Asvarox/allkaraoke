@@ -1,5 +1,6 @@
 #ID:disturbed-down-with-the-sickness
 #ARTIST:Disturbed
+#ARTISTORIGIN:US
 #TITLE:Down with the sickness
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

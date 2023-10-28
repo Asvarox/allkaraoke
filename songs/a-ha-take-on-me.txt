@@ -1,5 +1,6 @@
 #ID:a-ha-take-on-me
 #ARTIST:a-ha
+#ARTISTORIGIN:NO
 #TITLE:Take on me
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

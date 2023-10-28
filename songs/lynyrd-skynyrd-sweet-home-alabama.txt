@@ -1,5 +1,6 @@
 #ID:lynyrd-skynyrd-sweet-home-alabama
 #ARTIST:Lynyrd Skynyrd
+#ARTISTORIGIN:US
 #TITLE:Sweet Home Alabama
 #CREATOR:eLiXj
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:nirvana-smells-like-teen-spirit
 #ARTIST:Nirvana
+#ARTISTORIGIN:US
 #TITLE:Smells Like Teen Spirit
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

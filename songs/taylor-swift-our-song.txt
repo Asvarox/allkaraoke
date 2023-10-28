@@ -1,5 +1,6 @@
 #ID:taylor-swift-our-song
 #ARTIST:Taylor Swift
+#ARTISTORIGIN:US
 #TITLE:Our Song
 #CREATOR:IC
 #CREATORURL:

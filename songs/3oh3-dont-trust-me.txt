@@ -1,5 +1,6 @@
 #ID:3oh3-dont-trust-me
 #ARTIST:3OH!3
+#ARTISTORIGIN:US
 #TITLE:Don’t Trust Me
 #CREATOR:jalkazar
 #CREATORURL:

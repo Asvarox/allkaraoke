@@ -1,5 +1,6 @@
 #ID:slawomir-milosc-w-zakopanem
 #ARTIST:Slawomir
+#ARTISTORIGIN:PL
 #TITLE:Milosc w Zakopanem
 #CREATOR:cubitus
 #CREATORURL:

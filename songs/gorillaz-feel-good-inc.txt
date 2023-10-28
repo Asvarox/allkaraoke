@@ -1,5 +1,6 @@
 #ID:gorillaz-feel-good-inc
 #ARTIST:Gorillaz
+#ARTISTORIGIN:GB
 #TITLE:Feel Good Inc.
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

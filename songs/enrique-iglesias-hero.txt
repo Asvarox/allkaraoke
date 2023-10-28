@@ -1,5 +1,6 @@
 #ID:enrique-iglesias-hero
 #ARTIST:Enrique Iglesias
+#ARTISTORIGIN:ES
 #TITLE:Hero
 #CREATOR:perzu25
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2565

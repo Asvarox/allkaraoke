@@ -1,5 +1,6 @@
 #ID:pimpinela-olvidame-y-pega-la-vuelta
 #ARTIST:Pimpinela
+#ARTISTORIGIN:AR
 #TITLE:Olvídame y pega la vuelta
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

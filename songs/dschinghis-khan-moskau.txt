@@ -1,5 +1,6 @@
 #ID:dschinghis-khan-moskau
 #ARTIST:Dschinghis Khan
+#ARTISTORIGIN:DE
 #TITLE:Moskau
 #CREATOR:IC
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411

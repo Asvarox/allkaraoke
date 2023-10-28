@@ -1,5 +1,6 @@
 #ID:journey-dont-stop-believing
 #ARTIST:Journey
+#ARTISTORIGIN:US
 #TITLE:Don't Stop Believing
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor

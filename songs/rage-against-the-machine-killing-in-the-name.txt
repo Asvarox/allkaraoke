@@ -1,5 +1,6 @@
 #ID:rage-against-the-machine-killing-in-the-name
 #ARTIST:Rage Against The Machine
+#ARTISTORIGIN:US
 #TITLE:Killing In The Name
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip

@@ -1,5 +1,6 @@
 #ID:scissor-sisters-i-dont-feel-like-dancin
 #ARTIST:Scissor Sisters
+#ARTISTORIGIN:US
 #TITLE:I Don't Feel Like Dancin'
 #CREATOR:
 #CREATORURL:

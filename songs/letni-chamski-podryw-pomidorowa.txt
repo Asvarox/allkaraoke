@@ -1,5 +1,6 @@
 #ID:letni-chamski-podryw-pomidorowa
 #ARTIST:Letni, Chamski Podryw
+#ARTISTORIGIN:PL
 #TITLE:Pomidorowa
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

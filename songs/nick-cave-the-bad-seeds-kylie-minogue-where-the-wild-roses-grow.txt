@@ -1,5 +1,6 @@
 #ID:nick-cave-the-bad-seeds-kylie-minogue-where-the-wild-roses-grow
 #ARTIST:Nick Cave & The Bad Seeds + Kylie Minogue
+#ARTISTORIGIN:AU
 #TITLE:Where The Wild Roses Grow
 #CREATOR:RES
 #CREATORURL:

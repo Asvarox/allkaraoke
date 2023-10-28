@@ -1,5 +1,6 @@
 #ID:harry-styles-as-it-was
 #ARTIST:Harry Styles
+#ARTISTORIGIN:GB
 #TITLE:As It Was
 #CREATOR:Sebmolder
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sebmolder

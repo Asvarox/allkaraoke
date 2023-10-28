@@ -1,5 +1,6 @@
 #ID:chris-isaak-wicked-game
 #ARTIST:Chris Isaak
+#ARTISTORIGIN:US
 #TITLE:Wicked Game
 #CREATOR:Jesposo
 #CREATORURL:

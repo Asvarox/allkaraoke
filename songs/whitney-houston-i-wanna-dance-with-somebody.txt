@@ -1,5 +1,6 @@
 #ID:whitney-houston-i-wanna-dance-with-somebody
 #ARTIST:Whitney Houston
+#ARTISTORIGIN:US
 #TITLE:I Wanna Dance With Somebody
 #CREATOR:Lönne
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9523

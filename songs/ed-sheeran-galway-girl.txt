@@ -1,5 +1,6 @@
 #ID:ed-sheeran-galway-girl
 #ARTIST:Ed Sheeran
+#ARTISTORIGIN:GB
 #TITLE:Galway Girl
 #CREATOR:nezunobaka
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nezunobaka

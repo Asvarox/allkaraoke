@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-nine-in-the-afternoon-album-version
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:Nine In The Afternoon (Album Version)
 #CREATOR:JoM
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:terri-clark-girls-lie-too
 #ARTIST:Terri Clark
+#ARTISTORIGIN:CA
 #TITLE:Girls Lie Too
 #CREATOR:IC
 #CREATORURL:

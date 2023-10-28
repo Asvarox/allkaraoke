@@ -1,5 +1,6 @@
 #ID:abba-the-winner-takes-it-all
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:The Winner Takes It All
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:urszula-konik-na-biegunach
 #ARTIST:Urszula
+#ARTISTORIGIN:PL
 #TITLE:Konik na biegunach
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

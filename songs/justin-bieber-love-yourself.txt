@@ -1,5 +1,6 @@
 #ID:justin-bieber-love-yourself
 #ARTIST:Justin Bieber
+#ARTISTORIGIN:CA
 #TITLE:Love Yourself
 #CREATOR:amro98
 #CREATORURL:

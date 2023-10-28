@@ -1,5 +1,6 @@
 #ID:era-ameno
 #ARTIST:ERA
+#ARTISTORIGIN:FR
 #TITLE:Ameno
 #CREATOR:robertdjangelux
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=robertdjangelux

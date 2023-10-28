@@ -1,5 +1,6 @@
 #ID:falco-rock-me-amadeus
 #ARTIST:Falco
+#ARTISTORIGIN:AT
 #TITLE:Rock Me Amadeus
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

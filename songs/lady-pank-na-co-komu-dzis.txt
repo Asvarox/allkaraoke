@@ -1,5 +1,6 @@
 #ID:lady-pank-na-co-komu-dzis
 #ARTIST:Lady Pank
+#ARTISTORIGIN:PL
 #TITLE:Na co komu dziś
 #CREATORURL:
 #BPM:228

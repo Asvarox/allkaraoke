@@ -1,5 +1,6 @@
 #ID:alter-bridge-metalingus-edge-entrance
 #ARTIST:Alter Bridge
+#ARTISTORIGIN:US
 #TITLE:Metalingus (Edge Entrance)
 #CREATOR:Sabu
 #CREATORURL:

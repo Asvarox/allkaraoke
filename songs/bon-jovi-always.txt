@@ -1,5 +1,6 @@
 #ID:bon-jovi-always
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Always
 #CREATOR:suricatin
 #CREATORURL:

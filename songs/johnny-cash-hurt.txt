@@ -1,5 +1,6 @@
 #ID:johnny-cash-hurt
 #ARTIST:Johnny Cash
+#ARTISTORIGIN:US
 #TITLE:Hurt
 #CREATOR:
 #CREATORURL:

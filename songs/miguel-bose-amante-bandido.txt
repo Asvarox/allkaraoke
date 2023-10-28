@@ -1,5 +1,6 @@
 #ID:miguel-bose-amante-bandido
 #ARTIST:Miguel Bosé
+#ARTISTORIGIN:ES
 #TITLE:Amante Bandido
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

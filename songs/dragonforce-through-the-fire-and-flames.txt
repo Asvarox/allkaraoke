@@ -1,5 +1,6 @@
 #ID:dragonforce-through-the-fire-and-flames
 #ARTIST:DragonForce
+#ARTISTORIGIN:GB
 #TITLE:Through the fire and flames
 #CREATOR:ConejoF1
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=conejof1

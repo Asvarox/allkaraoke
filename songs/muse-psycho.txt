@@ -1,5 +1,6 @@
 #ID:muse-psycho
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Psycho
 #CREATOR:gun8
 #CREATORURL:

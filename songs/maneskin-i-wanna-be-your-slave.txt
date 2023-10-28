@@ -1,5 +1,6 @@
 #ID:maneskin-i-wanna-be-your-slave
 #ARTIST:Måneskin
+#ARTISTORIGIN:IT
 #TITLE:I Wanna Be Your Slave
 #CREATOR:Tracks
 #CREATORURL:

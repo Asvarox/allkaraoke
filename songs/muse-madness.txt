@@ -1,5 +1,6 @@
 #ID:muse-madness
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Madness
 #CREATOR:gun88
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88

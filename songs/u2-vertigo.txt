@@ -1,5 +1,6 @@
 #ID:u2-vertigo
 #ARTIST:U2
+#ARTISTORIGIN:IE
 #TITLE:Vertigo
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

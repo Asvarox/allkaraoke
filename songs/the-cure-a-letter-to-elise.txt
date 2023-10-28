@@ -1,5 +1,6 @@
 #ID:the-cure-a-letter-to-elise
 #ARTIST:The Cure
+#ARTISTORIGIN:GB
 #TITLE:A letter to Elise
 #CREATOR:
 #CREATORURL:

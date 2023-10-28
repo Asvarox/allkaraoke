@@ -1,5 +1,6 @@
 #ID:abba-mamma-mia
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Mamma Mia
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

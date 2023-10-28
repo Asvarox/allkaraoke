@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-this-is-gospel
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:This Is Gospel
 #CREATOR:FadingDream97
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:chumbawamba-tubthumping
 #ARTIST:Chumbawamba
+#ARTISTORIGIN:GB
 #TITLE:Tubthumping
 #CREATOR:Leki
 #CREATORURL:

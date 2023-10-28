@@ -1,5 +1,6 @@
 #ID:maciej-moleda-zrobie-mezczyzn-z-was
 #ARTIST:Maciej Molęda
+#ARTISTORIGIN:PL
 #TITLE:Zrobię mężczyzn z was
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

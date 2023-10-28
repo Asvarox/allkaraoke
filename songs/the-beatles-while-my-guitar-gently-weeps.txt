@@ -1,5 +1,6 @@
 #ID:the-beatles-while-my-guitar-gently-weeps
 #ARTIST:The Beatles
+#ARTISTORIGIN:GB
 #TITLE:While My Guitar Gently Weeps
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

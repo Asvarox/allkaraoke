@@ -1,5 +1,6 @@
 #ID:muse-feeling-good
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Feeling Good
 #CREATOR:Lesla
 #CREATORURL:

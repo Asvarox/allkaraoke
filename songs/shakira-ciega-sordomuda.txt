@@ -1,5 +1,6 @@
 #ID:shakira-ciega-sordomuda
 #ARTIST:Shakira
+#ARTISTORIGIN:CO
 #TITLE:Ciega, sordomuda
 #CREATOR:zXz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz

@@ -1,5 +1,6 @@
 #ID:muse-thought-contagion
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Thought Contagion
 #CREATOR:theecnemelc
 #CREATORURL:

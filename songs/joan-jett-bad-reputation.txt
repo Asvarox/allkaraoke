@@ -1,5 +1,6 @@
 #ID:joan-jett-bad-reputation
 #ARTIST:Joan Jett
+#ARTISTORIGIN:US
 #TITLE:Bad reputation
 #CREATOR:
 #CREATORURL:

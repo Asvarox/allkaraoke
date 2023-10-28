@@ -1,5 +1,6 @@
 #ID:the-police-message-in-a-bottle
 #ARTIST:The Police
+#ARTISTORIGIN:GB
 #TITLE:Message in a bottle
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

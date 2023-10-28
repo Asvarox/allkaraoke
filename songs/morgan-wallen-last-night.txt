@@ -1,5 +1,6 @@
 #ID:morgan-wallen-last-night
 #ARTIST:Morgan Wallen
+#ARTISTORIGIN:US
 #TITLE:Last Night
 #CREATOR:
 #CREATORURL:

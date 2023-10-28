@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-hey-look-ma-i-made-it
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:Hey Look Ma, I Made It
 #CREATOR:DoubleDee73
 #CREATORURL:

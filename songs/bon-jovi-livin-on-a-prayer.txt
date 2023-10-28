@@ -1,5 +1,6 @@
 #ID:bon-jovi-livin-on-a-prayer
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Livin' on a Prayer
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

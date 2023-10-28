@@ -1,5 +1,6 @@
 #ID:the-black-eyed-peas-i-gotta-feeling
 #ARTIST:The Black Eyed Peas
+#ARTISTORIGIN:US
 #TITLE:I Gotta Feeling
 #CREATOR:IC
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411

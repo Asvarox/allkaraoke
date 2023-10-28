@@ -1,5 +1,6 @@
 #ID:tenacious-d-master-exploder
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Master Exploder
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

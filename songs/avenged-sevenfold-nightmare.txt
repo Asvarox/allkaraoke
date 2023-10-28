@@ -1,5 +1,6 @@
 #ID:avenged-sevenfold-nightmare
 #ARTIST:Avenged Sevenfold
+#ARTISTORIGIN:US
 #TITLE:Nightmare
 #CREATOR:¡JKA!
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83

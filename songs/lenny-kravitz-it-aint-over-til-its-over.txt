@@ -1,5 +1,6 @@
 #ID:lenny-kravitz-it-aint-over-til-its-over
 #ARTIST:Lenny Kravitz
+#ARTISTORIGIN:US
 #TITLE:It Ain't Over 'Til It's Over
 #CREATOR:Sergeivodka
 #CREATORURL:

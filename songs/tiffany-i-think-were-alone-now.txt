@@ -1,5 +1,6 @@
 #ID:tiffany-i-think-were-alone-now
 #ARTIST:Tiffany
+#ARTISTORIGIN:US
 #TITLE:I Think We're Alone Now
 #CREATOR:
 #CREATORURL:

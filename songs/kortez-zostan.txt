@@ -1,5 +1,6 @@
 #ID:kortez-zostan
 #ARTIST:KORTEZ
+#ARTISTORIGIN:PL
 #TITLE:Zostań
 #CREATOR:Currymalker
 #CREATORURL:

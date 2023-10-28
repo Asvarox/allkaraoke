@@ -1,5 +1,6 @@
 #ID:aretha-franklin-the-blues-brothers-band-think
 #ARTIST:Aretha Franklin & The Blues Brothers Band
+#ARTISTORIGIN:US
 #TITLE:Think
 #CREATOR:bohning
 #CREATORURL:

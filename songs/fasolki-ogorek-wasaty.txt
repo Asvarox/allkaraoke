@@ -1,5 +1,6 @@
 #ID:fasolki-ogorek-wasaty
 #ARTIST:Fasolki
+#ARTISTORIGIN:PL
 #TITLE:Ogórek wąsaty
 #CREATOR:Pit33
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:linkin-park-in-the-end
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:In The End
 #CREATOR:MarioXIV
 #CREATORURL:

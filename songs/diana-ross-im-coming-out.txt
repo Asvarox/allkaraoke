@@ -1,5 +1,6 @@
 #ID:diana-ross-im-coming-out
 #ARTIST:Diana Ross
+#ARTISTORIGIN:US
 #TITLE:I’m Coming Out
 #CREATOR:Leki
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:red-hot-chili-peppers-dani-california
 #ARTIST:Red Hot Chili Peppers
+#ARTISTORIGIN:US
 #TITLE:Dani California
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

@@ -1,5 +1,6 @@
 #ID:bon-jovi-wanted-dead-or-alive
 #ARTIST:Bon Jovi
+#ARTISTORIGIN:US
 #TITLE:Wanted dead or alive
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

@@ -1,5 +1,6 @@
 #ID:smash-mouth-im-a-believer
 #ARTIST:Smash Mouth
+#ARTISTORIGIN:US
 #TITLE:I'm a believer
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

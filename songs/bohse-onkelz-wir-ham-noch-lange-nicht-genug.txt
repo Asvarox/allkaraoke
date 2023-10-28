@@ -1,5 +1,6 @@
 #ID:bohse-onkelz-wir-ham-noch-lange-nicht-genug
 #ARTIST:Böhse Onkelz
+#ARTISTORIGIN:DE
 #TITLE:Wir ham’ noch lange nicht genug
 #CREATOR:Canni
 #CREATORURL:

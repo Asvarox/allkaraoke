@@ -1,5 +1,6 @@
 #ID:kim-wilde-you-keep-me-hanging-on
 #ARTIST:Kim Wilde
+#ARTISTORIGIN:GB
 #TITLE:You keep me hanging on
 #CREATOR:mustangfred, PatTwo and asb
 #CREATORURL:

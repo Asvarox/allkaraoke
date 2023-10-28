@@ -1,5 +1,6 @@
 #ID:the-white-stripes-jolene
 #ARTIST:The White Stripes
+#ARTISTORIGIN:US
 #TITLE:Jolene
 #CREATOR:IC
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411

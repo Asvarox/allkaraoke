@@ -1,5 +1,6 @@
 #ID:tlove-king
 #ARTIST:T.Love
+#ARTISTORIGIN:PL
 #TITLE:King
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

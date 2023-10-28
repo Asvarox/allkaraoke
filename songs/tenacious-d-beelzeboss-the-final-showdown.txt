@@ -1,5 +1,6 @@
 #ID:tenacious-d-beelzeboss-the-final-showdown
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Beelzeboss (The Final Showdown)
 #CREATOR:Paisano87
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87

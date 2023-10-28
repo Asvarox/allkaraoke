@@ -1,5 +1,6 @@
 #ID:cyndi-lauper-time-after-time
 #ARTIST:Cyndi Lauper
+#ARTISTORIGIN:US
 #TITLE:Time After Time
 #CREATOR:d
 #CREATORURL:

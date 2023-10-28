@@ -1,5 +1,6 @@
 #ID:amy-macdonald-this-is-the-life
 #ARTIST:Amy MacDonald
+#ARTISTORIGIN:GB
 #TITLE:This Is The Life
 #CREATOR:IC
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411

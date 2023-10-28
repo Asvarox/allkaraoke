@@ -1,5 +1,6 @@
 #ID:shakira-gitana
 #ARTIST:Shakira
+#ARTISTORIGIN:CO
 #TITLE:Gitana
 #CREATOR:zXz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz

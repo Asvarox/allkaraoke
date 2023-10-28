@@ -1,5 +1,6 @@
 #ID:hey-mimo-wszystko
 #ARTIST:Hey
+#ARTISTORIGIN:PL
 #TITLE:Mimo wszystko
 #CREATORURL:
 #BPM:210

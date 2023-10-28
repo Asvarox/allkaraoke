@@ -1,5 +1,6 @@
 #ID:3-doors-down-when-im-gone
 #ARTIST:3 Doors Down
+#ARTISTORIGIN:US
 #TITLE:When I'm Gone
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

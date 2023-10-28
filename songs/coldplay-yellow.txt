@@ -1,5 +1,6 @@
 #ID:coldplay-yellow
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:Yellow
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman

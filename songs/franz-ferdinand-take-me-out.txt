@@ -1,5 +1,6 @@
 #ID:franz-ferdinand-take-me-out
 #ARTIST:Franz Ferdinand
+#ARTISTORIGIN:GB
 #TITLE:Take Me Out
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

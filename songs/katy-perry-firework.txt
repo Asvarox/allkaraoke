@@ -1,5 +1,6 @@
 #ID:katy-perry-firework
 #ARTIST:Katy Perry
+#ARTISTORIGIN:US
 #TITLE:Firework
 #CREATOR:michas17j
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=14525

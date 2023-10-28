@@ -1,5 +1,6 @@
 #ID:natalia-nykiel-pol-kroku-stad-vaiana
 #ARTIST:Natalia Nykiel
+#ARTISTORIGIN:PL
 #TITLE:Pół kroku stąd (Vaiana)
 #CREATOR:MrLudozzerca
 #CREATORURL:

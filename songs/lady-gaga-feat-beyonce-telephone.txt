@@ -1,5 +1,6 @@
 #ID:lady-gaga-feat-beyonce-telephone
 #ARTIST:Lady Gaga feat. Beyoncé
+#ARTISTORIGIN:US
 #TITLE:Telephone
 #CREATOR:petiboy20
 #CREATORURL:

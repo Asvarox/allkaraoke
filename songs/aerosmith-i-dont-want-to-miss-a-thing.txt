@@ -1,5 +1,6 @@
 #ID:aerosmith-i-dont-want-to-miss-a-thing
 #ARTIST:Aerosmith
+#ARTISTORIGIN:US
 #TITLE:I don't want to miss a thing
 #CREATOR:
 #CREATORURL:

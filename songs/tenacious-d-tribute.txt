@@ -1,5 +1,6 @@
 #ID:tenacious-d-tribute
 #ARTIST:Tenacious D
+#ARTISTORIGIN:US
 #TITLE:Tribute
 #CREATOR:Paisano87
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87

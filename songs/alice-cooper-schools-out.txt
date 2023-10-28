@@ -1,5 +1,6 @@
 #ID:alice-cooper-schools-out
 #ARTIST:Alice Cooper
+#ARTISTORIGIN:US
 #TITLE:School’s Out
 #CREATOR:ultrastarsongs
 #CREATORURL:

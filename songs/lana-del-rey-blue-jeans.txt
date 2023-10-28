@@ -1,5 +1,6 @@
 #ID:lana-del-rey-blue-jeans
 #ARTIST:Lana Del Rey
+#ARTISTORIGIN:US
 #TITLE:Blue Jeans
 #CREATOR:Daminou*Coppo
 #CREATORURL:

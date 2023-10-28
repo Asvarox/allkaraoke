@@ -1,5 +1,6 @@
 #ID:katarzyna-laska-mam-te-moc-kraina-lodu
 #ARTIST:Katarzyna Łaska
+#ARTISTORIGIN:PL
 #TITLE:Mam tę moc (Kraina lodu)
 #CREATOR:Currymalker
 #CREATORURL:

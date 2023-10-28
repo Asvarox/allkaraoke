@@ -1,5 +1,6 @@
 #ID:snow-patrol-chasing-cars
 #ARTIST:Snow Patrol
+#ARTISTORIGIN:GB
 #TITLE:Chasing Cars
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

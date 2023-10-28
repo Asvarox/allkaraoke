@@ -1,5 +1,6 @@
 #ID:ich-troje-powiedz
 #ARTIST:Ich Troje
+#ARTISTORIGIN:PL
 #TITLE:Powiedz
 #CREATORURL:
 #BPM:90

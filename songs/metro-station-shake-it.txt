@@ -1,5 +1,6 @@
 #ID:metro-station-shake-it
 #ARTIST:Metro Station
+#ARTISTORIGIN:US
 #TITLE:Shake It
 #CREATOR:ChiiO
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chiio

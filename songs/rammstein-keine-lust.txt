@@ -1,5 +1,6 @@
 #ID:rammstein-keine-lust
 #ARTIST:Rammstein
+#ARTISTORIGIN:DE
 #TITLE:Keine Lust
 #CREATOR:NoeliaMicaela
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela

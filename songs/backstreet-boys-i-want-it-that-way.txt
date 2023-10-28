@@ -1,5 +1,6 @@
 #ID:backstreet-boys-i-want-it-that-way
 #ARTIST:Backstreet Boys
+#ARTISTORIGIN:US
 #TITLE:I Want It That Way
 #CREATOR:Pantero
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero

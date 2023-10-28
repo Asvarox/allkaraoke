@@ -1,5 +1,6 @@
 #ID:madonna-like-a-prayer
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Like A Prayer
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

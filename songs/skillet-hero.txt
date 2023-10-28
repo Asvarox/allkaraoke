@@ -1,5 +1,6 @@
 #ID:skillet-hero
 #ARTIST:Skillet
+#ARTISTORIGIN:US
 #TITLE:Hero
 #CREATOR:Lorc
 #CREATORURL:

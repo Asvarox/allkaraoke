@@ -1,5 +1,6 @@
 #ID:lady-gaga-paparazzi
 #ARTIST:Lady Gaga
+#ARTISTORIGIN:US
 #TITLE:Paparazzi
 #CREATOR:IC
 #CREATORURL:

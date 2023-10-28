@@ -1,5 +1,6 @@
 #ID:rammstein-du-hast
 #ARTIST:Rammstein
+#ARTISTORIGIN:DE
 #TITLE:Du Hast
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

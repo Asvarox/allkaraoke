@@ -1,5 +1,6 @@
 #ID:vanilla-ice-ice-ice-baby
 #ARTIST:Vanilla Ice
+#ARTISTORIGIN:US
 #TITLE:Ice Ice Baby
 #CREATOR:melinas@upenn.edu
 #CREATORURL:

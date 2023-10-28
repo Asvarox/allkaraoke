@@ -1,5 +1,6 @@
 #ID:blur-song-2
 #ARTIST:Blur
+#ARTISTORIGIN:GB
 #TITLE:Song 2
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

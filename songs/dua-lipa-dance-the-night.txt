@@ -1,5 +1,6 @@
 #ID:dua-lipa-dance-the-night
 #ARTIST:Dua Lipa
+#ARTISTORIGIN:GB
 #TITLE:Dance The Night
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb

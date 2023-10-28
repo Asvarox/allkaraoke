@@ -1,5 +1,6 @@
 #ID:joan-jett-the-blackhearts-i-love-rock-n-roll
 #ARTIST:Joan Jett & The Blackhearts
+#ARTISTORIGIN:US
 #TITLE:I Love Rock N' Roll
 #CREATOR:
 #CREATORURL:

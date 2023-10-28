@@ -1,5 +1,6 @@
 #ID:christina-aguilera-beautiful
 #ARTIST:Christina Aguilera
+#ARTISTORIGIN:US
 #TITLE:Beautiful
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

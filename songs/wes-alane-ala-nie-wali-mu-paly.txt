@@ -1,5 +1,6 @@
 #ID:wes-alane-ala-nie-wali-mu-paly
 #ARTIST:Wes
+#ARTISTORIGIN:CM
 #TITLE:Alane (Ala nie wali mu pały)
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

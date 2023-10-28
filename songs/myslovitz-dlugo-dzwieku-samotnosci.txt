@@ -1,5 +1,6 @@
 #ID:myslovitz-dlugo-dzwieku-samotnosci
 #ARTIST:Myslovitz
+#ARTISTORIGIN:PL
 #TITLE:Długo dzwieku samotnosci
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

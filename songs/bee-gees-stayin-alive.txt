@@ -1,5 +1,6 @@
 #ID:bee-gees-stayin-alive
 #ARTIST:Bee Gees
+#ARTISTORIGIN:GB
 #TITLE:Stayin' Alive
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

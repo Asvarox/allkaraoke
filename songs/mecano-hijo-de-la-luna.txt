@@ -1,5 +1,6 @@
 #ID:mecano-hijo-de-la-luna
 #ARTIST:Mecano
+#ARTISTORIGIN:ES
 #TITLE:Hijo de la luna
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

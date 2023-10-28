@@ -1,5 +1,6 @@
 #ID:the-cure-boys-dont-cry
 #ARTIST:The Cure
+#ARTISTORIGIN:GB
 #TITLE:Boys Don't Cry
 #CREATOR:Kodaman
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman

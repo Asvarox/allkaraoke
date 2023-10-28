@@ -1,5 +1,6 @@
 #ID:myslovitz-scenariusz-dla-moich-sasiadow
 #ARTIST:Myslovitz
+#ARTISTORIGIN:PL
 #TITLE:Scenariusz Dla Moich Sąsiadów
 #CREATOR:tristen
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=117946

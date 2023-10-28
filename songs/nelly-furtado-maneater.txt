@@ -1,5 +1,6 @@
 #ID:nelly-furtado-maneater
 #ARTIST:Nelly Furtado
+#ARTISTORIGIN:CA
 #TITLE:Maneater
 #CREATOR:thursday
 #CREATORURL:

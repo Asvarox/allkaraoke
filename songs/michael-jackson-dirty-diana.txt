@@ -1,5 +1,6 @@
 #ID:michael-jackson-dirty-diana
 #ARTIST:Michael Jackson
+#ARTISTORIGIN:US
 #TITLE:Dirty Diana
 #CREATOR:
 #CREATORURL:

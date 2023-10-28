@@ -1,5 +1,6 @@
 #ID:slipknot-psychosocial
 #ARTIST:Slipknot
+#ARTISTORIGIN:US
 #TITLE:Psychosocial
 #CREATOR:Mischn
 #CREATORURL:

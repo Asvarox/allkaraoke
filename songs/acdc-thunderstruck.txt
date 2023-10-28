@@ -1,5 +1,6 @@
 #ID:acdc-thunderstruck
 #ARTIST:AC/DC
+#ARTISTORIGIN:AU
 #TITLE:Thunderstruck
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

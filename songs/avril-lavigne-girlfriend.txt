@@ -1,5 +1,6 @@
 #ID:avril-lavigne-girlfriend
 #ARTIST:Avril Lavigne
+#ARTISTORIGIN:CA
 #TITLE:Girlfriend
 #CREATOR:gilrael
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael

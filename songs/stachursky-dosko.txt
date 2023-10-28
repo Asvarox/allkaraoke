@@ -1,5 +1,6 @@
 #ID:stachursky-dosko
 #ARTIST:Stachursky
+#ARTISTORIGIN:PL
 #TITLE:Dosko
 #CREATOR:Asvarox
 #CREATORURL:https://github.com/Asvarox/olkaraoke

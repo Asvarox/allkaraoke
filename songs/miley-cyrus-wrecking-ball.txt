@@ -1,5 +1,6 @@
 #ID:miley-cyrus-wrecking-ball
 #ARTIST:Miley Cyrus
+#ARTISTORIGIN:US
 #TITLE:Wrecking Ball
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

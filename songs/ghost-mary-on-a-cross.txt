@@ -1,5 +1,6 @@
 #ID:ghost-mary-on-a-cross
 #ARTIST:Ghost
+#ARTISTORIGIN:SE
 #TITLE:Mary On A Cross
 #CREATOR:lukmuk
 #CREATORURL:

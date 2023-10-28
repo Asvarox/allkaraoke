@@ -1,5 +1,6 @@
 #ID:the-blues-brothers-everybody-needs-somebody-to-love
 #ARTIST:The Blues Brothers
+#ARTISTORIGIN:US
 #TITLE:Everybody needs somebody to love
 #CREATOR:
 #CREATORURL:

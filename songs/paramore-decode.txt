@@ -1,5 +1,6 @@
 #ID:paramore-decode
 #ARTIST:Paramore
+#ARTISTORIGIN:US
 #TITLE:Decode
 #CREATOR:mg
 #CREATORURL:

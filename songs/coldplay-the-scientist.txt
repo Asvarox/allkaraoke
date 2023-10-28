@@ -1,5 +1,6 @@
 #ID:coldplay-the-scientist
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:The Scientist
 #CREATOR:Pacayaka
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka

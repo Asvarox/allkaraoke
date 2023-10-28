@@ -1,5 +1,6 @@
 #ID:aerosmith-sweet-emotion
 #ARTIST:Aerosmith
+#ARTISTORIGIN:US
 #TITLE:Sweet Emotion
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

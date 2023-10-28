@@ -1,5 +1,6 @@
 #ID:tlove-stokrotka
 #ARTIST:T.Love
+#ARTISTORIGIN:PL
 #TITLE:Stokrotka
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

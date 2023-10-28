@@ -1,5 +1,6 @@
 #ID:majka-jezowska-a-ja-wole-moja-mame
 #ARTIST:Majka Jeżowska
+#ARTISTORIGIN:PL
 #TITLE:A ja wolę moją mamę
 #CREATOR:Corvus5
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:imagine-dragons-warriors
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Warriors
 #CREATOR:skream
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=skream

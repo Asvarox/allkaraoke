@@ -1,5 +1,6 @@
 #ID:linkin-park-lost
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Lost
 #CREATOR:DoubleDee
 #CREATORURL:

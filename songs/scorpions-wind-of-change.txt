@@ -1,5 +1,6 @@
 #ID:scorpions-wind-of-change
 #ARTIST:Scorpions
+#ARTISTORIGIN:DE
 #TITLE:Wind of Change
 #CREATOR:a224
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3

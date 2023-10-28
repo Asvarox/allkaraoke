@@ -1,5 +1,6 @@
 #ID:korn-freak-on-a-leash
 #ARTIST:KoRn
+#ARTISTORIGIN:US
 #TITLE:Freak On A Leash
 #CREATOR:Canni
 #CREATORURL:

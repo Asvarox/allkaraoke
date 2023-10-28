@@ -1,5 +1,6 @@
 #ID:grease-john-travolta-olivia-newton-john-youre-the-one-that-i-want
 #ARTIST:Grease (John Travolta & Olivia Newton-John)
+#ARTISTORIGIN:US
 #TITLE:You're the One that I Want
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

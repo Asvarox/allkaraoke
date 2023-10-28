@@ -1,5 +1,6 @@
 #ID:amaral-sin-ti-no-soy-nada
 #ARTIST:Amaral
+#ARTISTORIGIN:ES
 #TITLE:Sin ti no soy nada
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

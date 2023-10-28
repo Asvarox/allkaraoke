@@ -1,5 +1,6 @@
 #ID:queen-innuendo
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Innuendo
 #CREATOR:
 #CREATORURL:

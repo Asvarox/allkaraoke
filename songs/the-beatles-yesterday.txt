@@ -1,5 +1,6 @@
 #ID:the-beatles-yesterday
 #ARTIST:The Beatles
+#ARTISTORIGIN:GB
 #TITLE:Yesterday
 #CREATOR:dekkard
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard

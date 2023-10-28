@@ -1,5 +1,6 @@
 #ID:ben-e-king-stand-by-me
 #ARTIST:Ben E. King
+#ARTISTORIGIN:US
 #TITLE:Stand by me
 #CREATOR:
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:gotye-kimbra-somebody-that-i-used-to-know
 #ARTIST:Gotye & Kimbra
+#ARTISTORIGIN:AU
 #TITLE:Somebody That I Used To Know
 #CREATOR:vicktoben
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben

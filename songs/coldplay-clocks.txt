@@ -1,5 +1,6 @@
 #ID:coldplay-clocks
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:Clocks
 #CREATOR:albanderuaz
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz

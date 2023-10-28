@@ -1,5 +1,6 @@
 #ID:ylvis-the-fox
 #ARTIST:Ylvis
+#ARTISTORIGIN:NO
 #TITLE:The Fox
 #CREATOR:Lorchen
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen

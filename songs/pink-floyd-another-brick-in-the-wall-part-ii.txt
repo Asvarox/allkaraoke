@@ -1,5 +1,6 @@
 #ID:pink-floyd-another-brick-in-the-wall-part-ii
 #ARTIST:Pink Floyd
+#ARTISTORIGIN:GB
 #TITLE:Another Brick In The Wall (Part II)
 #CREATOR:robertdjangelux
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=robertdjangelux

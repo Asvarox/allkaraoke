@@ -1,5 +1,6 @@
 #ID:nino-bravo-un-beso-y-una-flor
 #ARTIST:Nino Bravo
+#ARTISTORIGIN:ES
 #TITLE:Un beso y una flor
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

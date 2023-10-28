@@ -1,5 +1,6 @@
 #ID:rupaul-sissy-that-walk
 #ARTIST:RuPaul
+#ARTISTORIGIN:US
 #TITLE:Sissy That Walk
 #CREATOR:REL
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=77104

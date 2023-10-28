@@ -1,5 +1,6 @@
 #ID:queen-one-vision
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:One Vision
 #CREATOR:
 #CREATORURL:

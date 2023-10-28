@@ -1,5 +1,6 @@
 #ID:alice-cooper-poison
 #ARTIST:Alice Cooper
+#ARTISTORIGIN:US
 #TITLE:Poison
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:dua-lipa-physical
 #ARTIST:Dua Lipa
+#ARTISTORIGIN:GB
 #TITLE:Physical
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

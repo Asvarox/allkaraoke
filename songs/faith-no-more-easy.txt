@@ -1,5 +1,6 @@
 #ID:faith-no-more-easy
 #ARTIST:Faith No More
+#ARTISTORIGIN:US
 #TITLE:Easy
 #CREATOR:Leki
 #CREATORURL:

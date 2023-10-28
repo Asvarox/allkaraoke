@@ -1,5 +1,6 @@
 #ID:coldplay-viva-la-vida
 #ARTIST:Coldplay
+#ARTISTORIGIN:GB
 #TITLE:Viva la vida
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:no-doubt-just-a-girl
 #ARTIST:No Doubt
+#ARTISTORIGIN:US
 #TITLE:Just A Girl
 #CREATOR:
 #CREATORURL:

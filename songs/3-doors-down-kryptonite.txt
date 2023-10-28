@@ -1,5 +1,6 @@
 #ID:3-doors-down-kryptonite
 #ARTIST:3 Doors Down
+#ARTISTORIGIN:US
 #TITLE:Kryptonite
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

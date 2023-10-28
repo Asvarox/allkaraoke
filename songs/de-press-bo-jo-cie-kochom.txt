@@ -1,5 +1,6 @@
 #ID:de-press-bo-jo-cie-kochom
 #ARTIST:De Press
+#ARTISTORIGIN:PL
 #TITLE:Bo Jo Cie Kochom
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

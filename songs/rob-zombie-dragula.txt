@@ -1,5 +1,6 @@
 #ID:rob-zombie-dragula
 #ARTIST:Rob Zombie
+#ARTISTORIGIN:US
 #TITLE:Dragula
 #CREATOR:geRt
 #CREATORURL:

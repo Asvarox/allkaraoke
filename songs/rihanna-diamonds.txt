@@ -1,5 +1,6 @@
 #ID:rihanna-diamonds
 #ARTIST:Rihanna
+#ARTISTORIGIN:BB
 #TITLE:Diamonds
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

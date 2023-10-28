@@ -1,5 +1,6 @@
 #ID:ich-ich-vom-selben-stern
 #ARTIST:Ich + Ich
+#ARTISTORIGIN:DE
 #TITLE:Vom selben Stern
 #CREATOR:Leki
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6

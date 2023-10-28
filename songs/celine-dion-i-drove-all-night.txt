@@ -1,5 +1,6 @@
 #ID:celine-dion-i-drove-all-night
 #ARTIST:Céline Dion
+#ARTISTORIGIN:CA
 #TITLE:I Drove All Night
 #CREATOR:DavidPingu
 #CREATORURL:

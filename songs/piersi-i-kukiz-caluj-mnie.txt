@@ -1,5 +1,6 @@
 #ID:piersi-i-kukiz-caluj-mnie
 #ARTIST:Piersi i Kukiz
+#ARTISTORIGIN:PL
 #TITLE:Caluj Mnie
 #CREATOR:jockel1974
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19

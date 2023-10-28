@@ -1,5 +1,6 @@
 #ID:drowning-pool-bodies
 #ARTIST:Drowning Pool
+#ARTISTORIGIN:US
 #TITLE:Bodies
 #CREATOR:subkei
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei

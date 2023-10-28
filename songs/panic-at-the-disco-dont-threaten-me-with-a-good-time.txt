@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-dont-threaten-me-with-a-good-time
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:Don’t Threaten Me With A Good Time
 #CREATOR:princetongirl98
 #CREATORURL:

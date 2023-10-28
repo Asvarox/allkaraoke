@@ -1,5 +1,6 @@
 #ID:abba-fernando
 #ARTIST:ABBA
+#ARTISTORIGIN:SE
 #TITLE:Fernando
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

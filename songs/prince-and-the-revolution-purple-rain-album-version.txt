@@ -1,5 +1,6 @@
 #ID:prince-and-the-revolution-purple-rain-album-version
 #ARTIST:Prince and the Revolution
+#ARTISTORIGIN:US
 #TITLE:Purple Rain (Album Version)
 #CREATOR:
 #CREATORURL:

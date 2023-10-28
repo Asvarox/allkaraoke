@@ -1,5 +1,6 @@
 #ID:bruno-mars-locked-out-of-heaven
 #ARTIST:Bruno Mars
+#ARTISTORIGIN:US
 #TITLE:Locked Out Of Heaven
 #CREATOR:Shabai Liu*Coppo
 #CREATORURL:

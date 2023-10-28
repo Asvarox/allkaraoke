@@ -1,5 +1,6 @@
 #ID:linkin-park-castle-of-glass
 #ARTIST:Linkin Park
+#ARTISTORIGIN:US
 #TITLE:Castle of glass
 #CREATOR:chelste
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chelste

@@ -1,5 +1,6 @@
 #ID:muse-hysteria
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Hysteria
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

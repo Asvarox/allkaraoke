@@ -1,5 +1,6 @@
 #ID:lizzo-juice
 #ARTIST:Lizzo
+#ARTISTORIGIN:US
 #TITLE:Juice
 #CREATOR:asb
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=asb

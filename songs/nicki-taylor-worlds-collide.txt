@@ -1,5 +1,6 @@
 #ID:nicki-taylor-worlds-collide
 #ARTIST:Nicki Taylor
+#ARTISTORIGIN:US
 #TITLE:Worlds Collide
 #CREATOR:Currymalker
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker

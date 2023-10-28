@@ -1,5 +1,6 @@
 #ID:kaiser-chiefs-ruby
 #ARTIST:Kaiser Chiefs
+#ARTISTORIGIN:GB
 #TITLE:Ruby
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

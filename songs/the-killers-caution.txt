@@ -1,5 +1,6 @@
 #ID:the-killers-caution
 #ARTIST:The Killers
+#ARTISTORIGIN:US
 #TITLE:Caution
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

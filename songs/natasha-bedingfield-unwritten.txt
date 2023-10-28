@@ -1,5 +1,6 @@
 #ID:natasha-bedingfield-unwritten
 #ARTIST:Natasha Bedingfield
+#ARTISTORIGIN:GB
 #TITLE:Unwritten
 #CREATOR:Klafhor
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor

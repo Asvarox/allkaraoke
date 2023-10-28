@@ -1,5 +1,6 @@
 #ID:elton-john-rupaul-dont-go-breaking-my-heart
 #ARTIST:Elton John & RuPaul
+#ARTISTORIGIN:GB
 #TITLE:Don’t Go Breaking My Heart
 #CREATOR:nomaddoe
 #CREATORURL:

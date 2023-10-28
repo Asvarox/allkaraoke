@@ -1,5 +1,6 @@
 #ID:tarzan-boy-tarzan
 #ARTIST:Tarzan Boy
+#ARTISTORIGIN:PL
 #TITLE:Tarzan
 #CREATOR:rafallus
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101

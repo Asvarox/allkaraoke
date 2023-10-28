@@ -1,5 +1,6 @@
 #ID:queen-bohemian-rhapsody
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:Bohemian Rhapsody
 #CREATOR:ears
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=36923

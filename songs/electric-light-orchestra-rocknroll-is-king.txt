@@ -1,5 +1,6 @@
 #ID:electric-light-orchestra-rocknroll-is-king
 #ARTIST:Electric Light Orchestra
+#ARTISTORIGIN:GB
 #TITLE:Rock'n'Roll Is King
 #CREATOR:jmfb
 #CREATORURL:

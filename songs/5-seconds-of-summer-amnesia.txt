@@ -1,5 +1,6 @@
 #ID:5-seconds-of-summer-amnesia
 #ARTIST:5 Seconds of Summer
+#ARTISTORIGIN:AU
 #TITLE:Amnesia
 #CREATOR:Sing-Girl
 #CREATORURL:

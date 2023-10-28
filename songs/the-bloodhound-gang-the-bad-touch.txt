@@ -1,5 +1,6 @@
 #ID:the-bloodhound-gang-the-bad-touch
 #ARTIST:The Bloodhound Gang
+#ARTISTORIGIN:US
 #TITLE:The bad touch
 #CREATOR:gollum
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum

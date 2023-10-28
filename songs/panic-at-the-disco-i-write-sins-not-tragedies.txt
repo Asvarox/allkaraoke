@@ -1,5 +1,6 @@
 #ID:panic-at-the-disco-i-write-sins-not-tragedies
 #ARTIST:Panic! at the Disco
+#ARTISTORIGIN:US
 #TITLE:I Write Sins Not Tragedies
 #CREATOR:Canni
 #CREATORURL:

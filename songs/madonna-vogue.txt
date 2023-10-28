@@ -1,5 +1,6 @@
 #ID:madonna-vogue
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Vogue
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo

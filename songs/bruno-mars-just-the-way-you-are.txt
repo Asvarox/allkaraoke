@@ -1,5 +1,6 @@
 #ID:bruno-mars-just-the-way-you-are
 #ARTIST:Bruno Mars
+#ARTISTORIGIN:US
 #TITLE:Just The Way You Are
 #CREATOR:savik1993
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=23692

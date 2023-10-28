@@ -1,5 +1,6 @@
 #ID:soundgarden-black-hole-sun
 #ARTIST:Soundgarden
+#ARTISTORIGIN:US
 #TITLE:Black Hole Sun
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

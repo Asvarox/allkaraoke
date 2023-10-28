@@ -1,5 +1,6 @@
 #ID:queen-david-bowie-under-pressure
 #ARTIST:Queen & David Bowie
+#ARTISTORIGIN:GB
 #TITLE:Under Pressure
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

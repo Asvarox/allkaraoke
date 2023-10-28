@@ -1,5 +1,6 @@
 #ID:rihanna-feat-calvin-harris-we-found-love
 #ARTIST:Rihanna feat. Calvin Harris
+#ARTISTORIGIN:BB
 #TITLE:We Found Love
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo

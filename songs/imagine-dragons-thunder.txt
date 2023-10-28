@@ -1,5 +1,6 @@
 #ID:imagine-dragons-thunder
 #ARTIST:Imagine Dragons
+#ARTISTORIGIN:US
 #TITLE:Thunder
 #CREATOR:mustangfred
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred

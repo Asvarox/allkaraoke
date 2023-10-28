@@ -1,5 +1,6 @@
 #ID:muse-dead-inside
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Dead Inside
 #CREATOR:gun88
 #CREATORURL:

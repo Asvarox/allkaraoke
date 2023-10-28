@@ -1,5 +1,6 @@
 #ID:blondie-one-way-or-another
 #ARTIST:Blondie
+#ARTISTORIGIN:US
 #TITLE:One way or another
 #CREATOR:
 #CREATORURL:

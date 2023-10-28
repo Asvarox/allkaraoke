@@ -1,5 +1,6 @@
 #ID:smash-mouth-all-star
 #ARTIST:Smash Mouth
+#ARTISTORIGIN:US
 #TITLE:All Star
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

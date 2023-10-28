@@ -1,5 +1,6 @@
 #ID:queen-i-want-it-all
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:I Want It All
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

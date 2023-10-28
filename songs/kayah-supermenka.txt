@@ -1,5 +1,6 @@
 #ID:kayah-supermenka
 #ARTIST:Kayah
+#ARTISTORIGIN:PL
 #TITLE:Supermenka
 #CREATOR:
 #CREATORURL:

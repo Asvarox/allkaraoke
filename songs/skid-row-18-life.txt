@@ -1,5 +1,6 @@
 #ID:skid-row-18-life
 #ARTIST:Skid Row
+#ARTISTORIGIN:US
 #TITLE:18 & Life
 #CREATOR:sanicsip
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip

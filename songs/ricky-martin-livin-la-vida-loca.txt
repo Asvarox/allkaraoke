@@ -1,5 +1,6 @@
 #ID:ricky-martin-livin-la-vida-loca
 #ARTIST:Ricky Martin
+#ARTISTORIGIN:PR
 #TITLE:Livin' La Vida Loca
 #CREATOR:pauldiddy
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149

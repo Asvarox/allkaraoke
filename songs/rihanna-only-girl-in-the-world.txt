@@ -1,5 +1,6 @@
 #ID:rihanna-only-girl-in-the-world
 #ARTIST:Rihanna
+#ARTISTORIGIN:BB
 #TITLE:Only Girl (In The World)
 #CREATOR:Coppo
 #CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo

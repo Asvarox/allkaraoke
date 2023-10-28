@@ -1,5 +1,6 @@
 #ID:queen-i-want-to-break-free
 #ARTIST:Queen
+#ARTISTORIGIN:GB
 #TITLE:I Want to Break Free
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

@@ -1,5 +1,6 @@
 #ID:joe-cocker-you-can-leave-your-hat-on
 #ARTIST:Joe Cocker
+#ARTISTORIGIN:GB
 #TITLE:You Can Leave Your Hat On
 #CREATOR:mk90
 #CREATORURL:

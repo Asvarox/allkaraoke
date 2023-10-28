@@ -1,5 +1,6 @@
 #ID:alejandro-sanz-amiga-mia
 #ARTIST:Alejandro Sanz
+#ARTISTORIGIN:ES
 #TITLE:Amiga mía
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

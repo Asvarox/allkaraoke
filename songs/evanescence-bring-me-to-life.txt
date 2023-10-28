@@ -1,5 +1,6 @@
 #ID:evanescence-bring-me-to-life
 #ARTIST:Evanescence
+#ARTISTORIGIN:US
 #TITLE:Bring Me to Life
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

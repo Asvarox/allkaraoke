@@ -1,5 +1,6 @@
 #ID:green-day-american-idiot
 #ARTIST:Green Day
+#ARTISTORIGIN:US
 #TITLE:American Idiot
 #CREATOR:TeLiXj
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj

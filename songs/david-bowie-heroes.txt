@@ -1,5 +1,6 @@
 #ID:david-bowie-heroes
 #ARTIST:David Bowie
+#ARTISTORIGIN:GB
 #TITLE:Heroes
 #CREATOR:pi
 #CREATORURL:

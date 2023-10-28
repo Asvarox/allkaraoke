@@ -1,5 +1,6 @@
 #ID:alanis-morissette-you-oughta-know
 #ARTIST:Alanis Morissette
+#ARTISTORIGIN:CA
 #TITLE:You Oughta Know
 #CREATOR:Hun
 #CREATORURL:

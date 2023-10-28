@@ -1,5 +1,6 @@
 #ID:madonna-hung-up
 #ARTIST:Madonna
+#ARTISTORIGIN:US
 #TITLE:Hung Up
 #CREATOR:upalula
 #CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula

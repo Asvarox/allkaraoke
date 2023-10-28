@@ -1,5 +1,6 @@
 #ID:paul-mccartney-michael-jackson-say-say-say
 #ARTIST:Paul McCartney & Michael Jackson
+#ARTISTORIGIN:GB
 #TITLE:Say Say Say
 #CREATOR:
 #CREATORURL:

@@ -1,5 +1,6 @@
 #ID:deep-purple-smoke-on-the-water
 #ARTIST:Deep Purple
+#ARTISTORIGIN:GB
 #TITLE:Smoke On The Water
 #CREATOR:Canni
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2

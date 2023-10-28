@@ -1,5 +1,6 @@
 #ID:muse-follow-me
 #ARTIST:Muse
+#ARTISTORIGIN:GB
 #TITLE:Follow Me
 #CREATOR:gun88
 #CREATORURL:

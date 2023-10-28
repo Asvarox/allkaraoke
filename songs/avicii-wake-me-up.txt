@@ -1,5 +1,6 @@
 #ID:avicii-wake-me-up
 #ARTIST:Avicii
+#ARTISTORIGIN:SE
 #TITLE:Wake Me Up
 #CREATOR:snake84
 #CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1645

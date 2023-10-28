@@ -1,5 +1,6 @@
 #ID:gfriend-me-gustas-tu
 #ARTIST:GFRIEND
+#ARTISTORIGIN:KR
 #TITLE:Me gustas tu
 #CREATOR:Amandine-z-z
 #CREATORURL:
