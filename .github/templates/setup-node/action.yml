@@ -9,7 +9,7 @@ runs:
     - uses: actions/setup-node@v3
       with:
         # Newer versions might fail https://github.com/yarnpkg/berry/issues/4778
-        node-version: '16.16.0'
+        node-version-file: '.nvmrc'
         cache: 'yarn'
     - run: yarn install
       shell: bash

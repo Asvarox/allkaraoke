@@ -148,5 +148,5 @@
     "vitest": "^0.34.6"
   },
   "homepage": "./",
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@4.0.1"
 }
