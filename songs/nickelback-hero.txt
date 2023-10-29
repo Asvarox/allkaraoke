@@ -8,11 +8,13 @@
 #REALBPM:74
 #YEAR:2002
 #SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Hero
-#VIDEOID:oPr8ZqRHTQo
+#VIDEOID:wQzn4a5qHT4
 #VIDEOGAP:0
+#VOLUME:1
 #GENRE:Rock
 #LANGUAGE:English
-#GAP:8513,531776208582
+#LASTUPDATE:2023-10-29T20:49:46.501Z
+#GAP:8563,531776208582
 : 20 3 3 I 
 : 25 3 1 am 
 : 32 6 -1 so 
