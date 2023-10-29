@@ -8,10 +8,12 @@
 #REALBPM:140
 #YEAR:2006
 #SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Basshunter&cancion=DotA
-#VIDEOID:c_cCsFU6pak
-#VIDEOGAP:0
+#VIDEOID:qTsaS1Tm-Ic
+#VIDEOGAP:2
+#VOLUME:0,5
 #LANGUAGE:Swedish
-#GAP:7819,142857142857
+#LASTUPDATE:2023-10-29T20:49:46.500Z
+#GAP:9819,142857142857
 : 19 2 4 Vi 
 : 23 2 4 sit
 : 27 2 7 ter 
@@ -31,6 +33,7 @@ F 89 3 5 I
 F 95 3 5 hear 
 F 99 2 5 you 
 F 103 6 5 man
+- 109 128
 - 128
 : 147 2 4 Vi 
 : 151 2 4 sit
@@ -51,6 +54,7 @@ F 217 3 5 I
 F 223 6 5 feel 
 F 231 3 5 you 
 F 235 6 5 man
+- 241 256
 - 256
 : 275 2 4 Vi 
 : 279 2 4 sit
@@ -111,7 +115,7 @@ F 235 6 5 man
 : 515 2 7 vi 
 : 519 3 7 slee
 : 525 5 -1 par
-- 533 552
+- 530 552
 - 552
 F 571 3 -1 Let's 
 F 577 3 -1 get 
@@ -237,7 +241,7 @@ F 583 5 -1 on!
 : 1091 1 7 vi 
 : 1095 4 7 slee
 : 1102 4 -1 par
-- 1125 2020
+- 1106 2020
 - 2020
 F 2039 3 -1 Have 
 F 2043 2 -1 one 
@@ -264,7 +268,7 @@ F 2138 4 5 I
 F 2145 2 5 hear 
 F 2148 3 5 you 
 F 2152 5 5 man
-- 2158 2177
+- 2157 2177
 - 2177
 : 2196 1 4 Vi 
 : 2199 2 4 sit
@@ -285,6 +289,7 @@ F 2267 3 5 I
 F 2273 6 5 feel 
 F 2280 3 5 you 
 F 2284 7 5 man
+- 2291 2305
 - 2305
 : 2324 1 4 Vi 
 : 2327 2 4 sit
@@ -305,6 +310,7 @@ F 2397 4 5 That's
 F 2403 3 5 more 
 F 2407 3 5 like 
 F 2411 3 5 it
+- 2414 2433
 - 2433
 : 2452 1 4 Vi 
 : 2455 2 4 sit
@@ -325,7 +331,7 @@ F 2523 3 5 Ex
 F 2527 2 5 cel
 F 2530 5 5 lent 
 F 2536 5 5 choice
-- 2542 2561
+- 2541 2561
 - 2561
 : 2580 1 4 Vi 
 : 2583 2 4 sit
@@ -386,7 +392,7 @@ F 2536 5 5 choice
 : 2820 1 7 vi 
 : 2823 3 7 slee
 : 2829 6 -1 par
-- 2836 2855
+- 2835 2855
 - 2855
 F 2874 4 -1 Let's 
 F 2881 2 -1 get 

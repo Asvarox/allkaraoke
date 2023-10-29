@@ -167,6 +167,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             </SongsGroup>
           </SongsGroupContainer>
         ))}
+        <AddSongs>
+          Missing a song? Try <a href="/convert">adding one</a> yourself!
+        </AddSongs>
       </SongListContainer>
       <Playlists
         setFilters={setFilters}
@@ -177,6 +180,13 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     </Container>
   );
 }
+
+const AddSongs = styled.span`
+  ${typography};
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 10rem;
+`;
 
 const Container = styled.div<{ songsPerRow: number }>`
   display: flex;

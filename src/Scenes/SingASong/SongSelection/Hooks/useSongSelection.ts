@@ -12,7 +12,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
   const navigate = useSmoothNavigate();
   const [keyboardControl, setKeyboardControl] = useState(true);
 
-  const handleKeyboarcControl = (value: boolean) => {
+  const handleKeyboardControl = (value: boolean) => {
     startViewTransition(() => {
       flushSync(() => {
         setKeyboardControl(value);
@@ -24,7 +24,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
   const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(
     keyboardControl,
     groupedSongList,
-    () => handleKeyboarcControl(false),
+    () => handleKeyboardControl(false),
     songList.length,
     filters,
     songsPerRow,
@@ -58,7 +58,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     focusedSong,
     focusedGroup,
     moveToSong,
-    setKeyboardControl: handleKeyboarcControl,
+    setKeyboardControl: handleKeyboardControl,
     keyboardControl,
     songPreview,
     songList: songList ?? [],
