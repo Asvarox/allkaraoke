@@ -1,5 +1,6 @@
 import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
+import { woosh } from 'SoundManager';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
@@ -17,6 +18,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
         setKeyboardControl(value);
       });
     });
+    woosh.play();
   };
 
   const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(

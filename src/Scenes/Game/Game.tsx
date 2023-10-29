@@ -1,5 +1,6 @@
 import CameraManager from 'Camera/CameraManager';
 import SingASong from 'Scenes/SingASong/SingASong';
+import { woosh } from 'SoundManager';
 import useFullscreen from 'hooks/useFullscreen';
 import { SingSetup, SongPreview } from 'interfaces';
 import { useState } from 'react';
@@ -26,6 +27,8 @@ function Game(props: Props) {
         setSingSetup(setup);
       });
     });
+
+    woosh.play();
   };
 
   useFullscreen();
