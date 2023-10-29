@@ -5,10 +5,11 @@ import events from 'GameEvents/GameEvents';
 import PlayersManager from 'Players/PlayersManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
+import { SongListEntryDetailsArtist, SongListEntryDetailsTitle } from 'Scenes/SingASong/SongSelection/SongCard';
 import useSong from 'Songs/hooks/useSong';
 import useBlockScroll from 'hooks/useBlockScroll';
 import useFullscreen from 'hooks/useFullscreen';
-import { GAME_MODE, SingSetup } from 'interfaces';
+import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import useViewportSize from '../../../hooks/useViewportSize';
 import generatePlayerChanges from './Helpers/generatePlayerChanges';
@@ -16,17 +17,16 @@ import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 
 interface Props {
-  video: string;
-  songId: string;
   singSetup: SingSetup;
+  songPreview: SongPreview;
   returnToSongSelection: () => void;
   restartSong: () => void;
 }
-function Singing({ video, songId, singSetup, returnToSongSelection, restartSong }: Props) {
+function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }: Props) {
   useFullscreen();
   useBlockScroll();
   const player = useRef<PlayerRef | null>(null);
-  const song = useSong(songId);
+  const song = useSong(songPreview.id);
 
   const { width, height } = useViewportSize();
   const [isEnded, setIsEnded] = useState(false);
@@ -64,7 +64,9 @@ function Singing({ video, songId, singSetup, returnToSongSelection, restartSong 
     return (
       <Container>
         <BackgroundContainer visible={isOverlayVisible}>
-          <Overlay video={video} width={width} height={height} />
+          <Overlay video={songPreview.video} width={width} height={height} />
+          <Artist>{songPreview.artist}</Artist>
+          <Title>{songPreview.title}</Title>
           <WaitForReadiness
             onFinish={() => {
               setIsTransitionTimeout(true);
@@ -140,5 +142,21 @@ const Overlay = (props: { video: string; width: number; height: number }) => (
     }}
   />
 );
+
+const Artist = styled(SongListEntryDetailsArtist)`
+  view-transition-name: song-preview-artist;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  font-size: 7rem;
+`;
+const Title = styled(SongListEntryDetailsTitle)`
+  view-transition-name: song-preview-title;
+  position: absolute;
+
+  font-size: 8rem;
+  top: 19rem;
+  left: 10rem;
+`;
 
 export default Singing;

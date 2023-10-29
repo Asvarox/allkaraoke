@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 interface Props {
   songPreview: SongPreview;
-  onPlay: (setup: SingSetup & { songId: string; video: string }) => void;
+  onPlay: (setup: SingSetup & { song: SongPreview }) => void;
   keyboardControl: boolean;
   onExitKeyboardControl: () => void;
 }
@@ -28,11 +28,11 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
       players: players,
     };
     events.songStarted.dispatch(songPreview, finalSetup);
-    onPlay({ songId: songPreview.id, video: songPreview.video, ...finalSetup });
+    onPlay({ song: songPreview, ...finalSetup });
   };
   return (
     <Container>
-      <MicCheck />
+      <MicCheck style={step === 'players' ? { viewTransitionName: 'player-mic-check-container' } : undefined} />
       <GameConfiguration>
         {step === 'song' && (
           <GameSettings

@@ -16,7 +16,7 @@ import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo,
 
 interface Props {
   songPreview: SongPreview;
-  onPlay: (setup: SingSetup & { songId: string; video: string }) => void;
+  onPlay: (setup: SingSetup & { song: SongPreview }) => void;
   keyboardControl: boolean;
   onExitKeyboardControl: () => void;
   top: number;

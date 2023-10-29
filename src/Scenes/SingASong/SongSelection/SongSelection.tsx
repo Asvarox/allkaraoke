@@ -18,12 +18,12 @@ import useBlockScroll from 'hooks/useBlockScroll';
 import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
-import { SingSetup } from 'interfaces';
+import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 interface Props {
-  onSongSelected: (songSetup: SingSetup & { songId: string; video: string }) => void;
+  onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
   preselectedSong: string | null;
 }
 

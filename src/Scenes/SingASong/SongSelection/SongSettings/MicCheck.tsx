@@ -6,9 +6,9 @@ import PlayersManager from 'Players/PlayersManager';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer';
-import { useEffect } from 'react';
+import { ComponentProps, useEffect } from 'react';
 
-export default function MicCheck() {
+export default function MicCheck(props: ComponentProps<typeof Container>) {
   // Force update when the name changes
   useEventListener(events.playerNameChanged);
 
@@ -20,7 +20,7 @@ export default function MicCheck() {
   const isSetup = inputs.some((input) => input.source !== 'Dummy');
 
   return (
-    <Container>
+    <Container {...props}>
       <MicChecksContainer>
         Microphone Check
         {isSetup ? (

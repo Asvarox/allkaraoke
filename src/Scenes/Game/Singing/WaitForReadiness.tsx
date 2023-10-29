@@ -67,34 +67,38 @@ function WaitForReadiness({ onFinish }: Props) {
 
   return (
     <>
-      {!areAllPlayersReady && (
-        <WaitingForReady>
+      <WaitingForReady>
+        {!areAllPlayersReady && (
           <span>
             Waiting for all players to click <strong>"Ready"</strong>
           </span>
-          <PlayerList>
-            {playerStatuses.map(({ confirmed, name, player }, index) => (
-              <PlayerEntry
-                className="ph-no-capture"
-                key={index}
-                data-test="player-confirm-status"
-                data-name={name}
-                data-confirmed={confirmed}>
+        )}
+        <PlayerList>
+          {playerStatuses.map(({ confirmed, name, player }, index) => (
+            <PlayerEntry
+              className="ph-no-capture"
+              key={index}
+              data-test="player-confirm-status"
+              data-name={name}
+              data-confirmed={confirmed}>
+              {!areAllPlayersReady && (
                 <ConfirmStatus>
                   {confirmed ? <CheckCircleOutline /> : <CircularProgress color="info" size="1em" />}
-                </ConfirmStatus>{' '}
-                <SinglePlayer player={player} />
-              </PlayerEntry>
-            ))}
-          </PlayerList>
+                </ConfirmStatus>
+              )}{' '}
+              <SinglePlayer player={player} />
+            </PlayerEntry>
+          ))}
+        </PlayerList>
+        {!areAllPlayersReady && (
           <TimeoutMessage>
             The song will start automatically in{' '}
             <strong>
               <CountUp end={0} start={AUTOSTART_TIMEOUT_S} duration={AUTOSTART_TIMEOUT_S} useEasing={false} />
             </strong>
           </TimeoutMessage>
-        </WaitingForReady>
-      )}
+        )}
+      </WaitingForReady>
       <audio
         src={backgroundMusic}
         ref={audio}
@@ -135,6 +139,7 @@ const PlayerList = styled.div`
   flex-direction: column;
   gap: 5rem;
   width: 50rem;
+  view-transition-name: player-mic-check-container;
 `;
 
 const PlayerEntry = styled.div`
