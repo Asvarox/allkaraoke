@@ -143,7 +143,7 @@ export default class CanvasDrawing {
       const beatsSinceLastHit = drawingData.currentBeat - lastPlayerNoteEnd;
 
       const forcePercent = Math.max(
-        Math.min(Math.pow((sungNotes - beatsSinceLastHit / 1.5) / MAX_LOOKUP_RANGE, 3), 0.99),
+        Math.min(Math.pow((sungNotes - beatsSinceLastHit / 1.5) / MAX_LOOKUP_RANGE, 3), 0.98),
         0,
       );
       this.shaders?.updatePlayerForce(drawingData.playerNumber, forcePercent);
