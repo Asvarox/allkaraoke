@@ -1699,6 +1699,98 @@
     "local": false
   },
   {
+    "id": "avril-lavigne-keep-holding-on-eragon",
+    "title": "Keep Holding On (\"Eragon\")",
+    "artist": "Avril Lavigne",
+    "language": "English",
+    "bpm": 350,
+    "bar": 4,
+    "gap": 9364.285714285714,
+    "video": "C-lKLXPngUo",
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-10-29T12:09:56.417Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 161,
+    "previewStart": 35,
+    "previewEnd": 75,
+    "volume": 0.97,
+    "author": "ussongs",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avrillavignekeepholdingoneragon",
+    "local": false
+  },
+  {
+    "id": "avril-lavigne-my-happy-ending",
+    "title": "My Happy Ending",
+    "artist": "Avril Lavigne",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 5335.294117647059,
+    "video": "0-zDFLbWK1Q",
+    "year": "2004",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-10-29T12:09:56.417Z",
+    "edition": "SingStar Pop Hits",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 170,
+    "previewStart": 48,
+    "previewEnd": 85,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avrillavignemyhappyending",
+    "local": false
+  },
+  {
+    "id": "avril-lavigne-nobodys-home",
+    "title": "Nobody’s Home",
+    "artist": "Avril Lavigne",
+    "language": "English",
+    "bpm": 368,
+    "bar": 4,
+    "gap": 20150.978260869564,
+    "video": "NGFSNE18Ywc",
+    "year": "2004",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-10-29T12:09:56.418Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 185,
+    "previewStart": 47,
+    "previewEnd": 76,
+    "volume": 0.72,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avrillavignenobodyshome",
+    "local": false
+  },
+  {
     "id": "avril-lavigne-sk8er-boi",
     "title": "Sk8er Boi",
     "artist": "Avril Lavigne",
@@ -1724,6 +1816,37 @@
     ],
     "tracksCount": 1,
     "search": "avrillavignesk8erboi",
+    "local": false
+  },
+  {
+    "id": "avril-lavigne-when-youre-gone",
+    "title": "When You’re Gone",
+    "artist": "Avril Lavigne",
+    "language": "English",
+    "bpm": 284,
+    "bar": 4,
+    "gap": 17086.478873239437,
+    "video": "0G3_kG5FFfQ",
+    "year": "2007",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-10-29T12:09:56.418Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 142,
+    "previewStart": 127,
+    "previewEnd": 181,
+    "volume": 0.76,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avrillavignewhenyouregone",
     "local": false
   },
   {
@@ -2585,6 +2708,35 @@
     ],
     "tracksCount": 1,
     "search": "blursong2",
+    "local": false
+  },
+  {
+    "id": "bohse-onkelz-terpentin",
+    "title": "Terpentin",
+    "artist": "Böhse Onkelz",
+    "language": "German",
+    "bpm": 210,
+    "bar": 4,
+    "gap": 21070,
+    "video": "Lq6-e8X_c_k",
+    "year": "1998",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-10-29T12:09:56.419Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 210,
+    "volume": 0.85,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1448",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bohseonkelzterpentin",
     "local": false
   },
   {
@@ -8114,6 +8266,34 @@
     "local": false
   },
   {
+    "id": "ikimono-gakari-blue-bird",
+    "title": "Blue Bird",
+    "artist": "Ikimono gakari",
+    "language": "Japanese",
+    "bpm": 304.08,
+    "bar": 4,
+    "gap": -79.26598263614846,
+    "video": "KpsJWFuVTdI",
+    "year": "2008",
+    "artistOrigin": "JP",
+    "lastUpdate": "2023-10-29T12:09:56.419Z",
+    "genre": "Anime",
+    "videoGap": 0,
+    "realBpm": 152,
+    "volume": 0.86,
+    "author": "reptils",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=5039",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ikimonogakaribluebird",
+    "local": false
+  },
+  {
     "id": "imagine-dragons-bad-liar",
     "title": "Bad Liar",
     "artist": "Imagine Dragons",
@@ -9207,6 +9387,34 @@
     "local": false
   },
   {
+    "id": "karel-gott-kavu-si-osladim",
+    "title": "Kávu si osladím",
+    "artist": "Karel Gott",
+    "language": "Czech",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 1118,
+    "video": "kV2CURXYKy4",
+    "year": "1972",
+    "artistOrigin": "CZ",
+    "lastUpdate": "2023-10-29T12:09:56.420Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 169,
+    "volume": 0.75,
+    "author": "vumpus",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "karelgottkavusiosladim",
+    "local": false
+  },
+  {
     "id": "katarzyna-laska-mam-te-moc-kraina-lodu",
     "title": "Mam tę moc (Kraina lodu)",
     "artist": "Katarzyna Łaska",
@@ -10237,6 +10445,34 @@
     ],
     "tracksCount": 1,
     "search": "larouxbulletproof",
+    "local": false
+  },
+  {
+    "id": "lacrimosa-stolzes-herz",
+    "title": "Stolzes Herz",
+    "artist": "Lacrimosa",
+    "language": "German",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 31603.90625,
+    "video": "F2tyEjsWjeA",
+    "year": "1997",
+    "artistOrigin": "CH",
+    "lastUpdate": "2023-10-29T12:09:56.420Z",
+    "genre": "None",
+    "videoGap": 1,
+    "realBpm": 256,
+    "volume": 0.9,
+    "author": "Lady-Crazy-Angel",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=5734",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lacrimosastolzesherz",
     "local": false
   },
   {
@@ -18044,6 +18280,35 @@
     ],
     "tracksCount": 1,
     "search": "slipknotpsychosocial",
+    "local": false
+  },
+  {
+    "id": "slipknot-sulfur",
+    "title": "Sulfur",
+    "artist": "Slipknot",
+    "language": "English",
+    "bpm": 398.91,
+    "bar": 4,
+    "gap": 48519.73339851094,
+    "video": "PAAvNmoqDq0",
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-10-29T12:09:56.421Z",
+    "edition": "Rock Band Store 2009 Vol. 4",
+    "genre": "Groove Metal",
+    "videoGap": 6,
+    "realBpm": 104,
+    "volume": 0.85,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slipknotsulfur",
     "local": false
   },
   {
