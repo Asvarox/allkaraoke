@@ -1,5 +1,6 @@
 import events from 'GameEvents/GameEvents';
 import { throttle } from 'lodash-es';
+import posthog from 'posthog-js';
 import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
 import {
   keyStrokes,
@@ -86,6 +87,7 @@ export class NetworkClient {
           events.karaokeConnectionStatusChange.dispatch('reconnecting');
         } else if (!this.connected) {
           events.karaokeConnectionStatusChange.dispatch('error', reason);
+          posthog.capture('remote_mic_connection_error', { reason });
         } else {
           events.karaokeConnectionStatusChange.dispatch('disconnected');
         }
