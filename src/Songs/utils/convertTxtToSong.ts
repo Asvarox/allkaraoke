@@ -1,4 +1,5 @@
 import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
+import { ValuesType } from 'utility-types';
 import getSongId from './getSongId';
 
 export const typesMap = {
@@ -7,6 +8,13 @@ export const typesMap = {
   '*': 'star',
   ':': 'normal',
 } as const;
+
+export const txtTypesMap: Record<ValuesType<typeof typesMap>, keyof typeof typesMap> = {
+  rap: 'R',
+  freestyle: 'F',
+  star: '*',
+  normal: ':',
+};
 
 export type SongTXTKeys =
   | 'ID'

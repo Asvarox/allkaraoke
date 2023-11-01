@@ -1,10 +1,6 @@
 import { Note, Song } from 'interfaces';
-import { invert } from 'lodash';
-import { ValuesType } from 'utility-types';
-import { SongTXTKeys, typesMap } from './convertTxtToSong';
+import { SongTXTKeys, txtTypesMap } from './convertTxtToSong';
 import isNotesSection from './isNotesSection';
-
-export const txtTypesMap = invert(typesMap) as any as Record<ValuesType<typeof typesMap>, keyof typeof typesMap>;
 
 function toTxtValue(key: SongTXTKeys, value: string | string[] | number | undefined) {
   if (value === undefined) return undefined;

@@ -5,7 +5,6 @@ import Settings from 'Scenes/Settings/Settings';
 import { Redirect, Route, Router, useLocation } from 'wouter';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
-import SongList from './Scenes/Edit/SongList';
 import Game from './Scenes/Game/Game';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import SelectInput from './Scenes/SelectInput/SelectInput';
@@ -28,7 +27,9 @@ import {
 } from 'Scenes/Settings/SettingsState';
 import Welcome from 'Scenes/Welcome/Welcome';
 import Toolbar from 'Toolbar/Toolbar';
-import { useEffect, useMemo } from 'react';
+import { Suspense, lazy, useEffect, useMemo } from 'react';
+
+const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
 
 function App() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
@@ -82,7 +83,14 @@ function App() {
                 <Route path="/" component={Welcome} />
               </GameScreens>
               <Route path="/convert" component={() => <Convert />} />
-              <Route path="/edit" component={SongList} />
+              <Route
+                path="/edit"
+                component={() => (
+                  <Suspense fallback={'Loading'}>
+                    <LazySongList />
+                  </Suspense>
+                )}
+              />
               <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
               <Route path="/edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
             </Router>

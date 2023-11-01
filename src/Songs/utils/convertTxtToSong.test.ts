@@ -1,17 +1,12 @@
 import { readdirSync, readFileSync } from 'fs';
 import { Note, Section, Song } from 'interfaces';
-import { invert } from 'lodash-es';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
-import convertTxtToSong, { typesMap } from 'Songs/utils/convertTxtToSong';
+import convertTxtToSong, { txtTypesMap } from 'Songs/utils/convertTxtToSong';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { generateNote } from 'utils/testUtils';
 
-const invertedMapTypes = invert(typesMap);
-
 const notesToText = (notes: Note[]) =>
-  notes
-    .map((note) => `${invertedMapTypes[note.type]} ${note.start} ${note.length} ${note.pitch} ${note.lyrics}`)
-    .join('\n');
+  notes.map((note) => `${txtTypesMap[note.type]} ${note.start} ${note.length} ${note.pitch} ${note.lyrics}`).join('\n');
 
 const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}) => {
   const lines: string[] = [];
