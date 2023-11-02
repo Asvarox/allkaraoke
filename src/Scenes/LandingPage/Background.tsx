@@ -28,8 +28,8 @@ function RandomTile({ videoIds }: { videoIds: string[] }) {
 function Background() {
   const isMobileDevice = useMemo(() => isMobile(), []);
 
-  const cols = isMobileDevice ? 3 : 6;
-  const rows = isMobileDevice ? 10 : 5;
+  const cols = isMobileDevice ? 3 : 5;
+  const rows = isMobileDevice ? 9 : 4;
 
   return (
     <Container cols={cols} rows={rows}>

@@ -34,7 +34,7 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
 
   const newSongIds: string[] = [];
 
-  response.results.map((result: any) => {
+  response.results.forEach((result: any) => {
     try {
       const song = convertTxtToSong(result.properties.song);
       if (!song.id) {
