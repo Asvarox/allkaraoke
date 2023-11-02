@@ -19,6 +19,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('remote-mics').click();
 
   // Connect blue microphone

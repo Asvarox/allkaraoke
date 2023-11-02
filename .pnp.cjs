@@ -85,6 +85,7 @@ const RAW_RUNTIME_STATE =
           ["happy-dom", "npm:12.9.0"],\
           ["howler", "npm:2.2.4"],\
           ["husky", "npm:8.0.3"],\
+          ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["latinize", "npm:0.5.0"],\
           ["lint-staged", "npm:14.0.1"],\
@@ -121,6 +122,7 @@ const RAW_RUNTIME_STATE =
           ["tinycolor2", "npm:1.6.0"],\
           ["ts-node", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:10.9.1"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+          ["typewriter-effect", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.21.0"],\
           ["unimported", "npm:1.30.0"],\
           ["use-persisted-state", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.3.3"],\
           ["utility-types", "npm:3.10.0"],\
@@ -14017,6 +14019,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["is-mobile", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "./.yarn/cache/is-mobile-npm-4.0.0-28382eb54e-1c4f32ab03.zip/node_modules/is-mobile/",\
+        "packageDependencies": [\
+          ["is-mobile", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["is-nan", [\
       ["npm:1.3.2", {\
         "packageLocation": "./.yarn/cache/is-nan-npm-1.3.2-a087d31a28-1f784d3472.zip/node_modules/is-nan/",\
@@ -16059,6 +16070,7 @@ const RAW_RUNTIME_STATE =
           ["happy-dom", "npm:12.9.0"],\
           ["howler", "npm:2.2.4"],\
           ["husky", "npm:8.0.3"],\
+          ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["latinize", "npm:0.5.0"],\
           ["lint-staged", "npm:14.0.1"],\
@@ -16095,6 +16107,7 @@ const RAW_RUNTIME_STATE =
           ["tinycolor2", "npm:1.6.0"],\
           ["ts-node", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:10.9.1"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+          ["typewriter-effect", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.21.0"],\
           ["unimported", "npm:1.30.0"],\
           ["use-persisted-state", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.3.3"],\
           ["utility-types", "npm:3.10.0"],\
@@ -16512,6 +16525,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/pend-npm-1.2.0-7a13d93266-6c72f52433.zip/node_modules/pend/",\
         "packageDependencies": [\
           ["pend", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["performance-now", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/performance-now-npm-2.1.0-45e3ce7e49-534e641aa8.zip/node_modules/performance-now/",\
+        "packageDependencies": [\
+          ["performance-now", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17134,6 +17156,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/quick-lru-npm-5.1.1-e38e0edce3-a516faa255.zip/node_modules/quick-lru/",\
         "packageDependencies": [\
           ["quick-lru", "npm:5.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["raf", [\
+      ["npm:3.4.1", {\
+        "packageLocation": "./.yarn/cache/raf-npm-3.4.1-c25d48d76e-4c4b4c826b.zip/node_modules/raf/",\
+        "packageDependencies": [\
+          ["raf", "npm:3.4.1"],\
+          ["performance-now", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19680,6 +19712,34 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/typescript-patch-3914634c3a-f79cc2ba80.zip/node_modules/typescript/",\
         "packageDependencies": [\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["typewriter-effect", [\
+      ["npm:2.21.0", {\
+        "packageLocation": "./.yarn/cache/typewriter-effect-npm-2.21.0-7c3a601393-eaefe01da5.zip/node_modules/typewriter-effect/",\
+        "packageDependencies": [\
+          ["typewriter-effect", "npm:2.21.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.21.0", {\
+        "packageLocation": "./.yarn/__virtual__/typewriter-effect-virtual-871f699520/0/cache/typewriter-effect-npm-2.21.0-7c3a601393-eaefe01da5.zip/node_modules/typewriter-effect/",\
+        "packageDependencies": [\
+          ["typewriter-effect", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.21.0"],\
+          ["@types/react", "npm:18.2.25"],\
+          ["@types/react-dom", "npm:18.2.11"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["raf", "npm:3.4.1"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

@@ -10,6 +10,7 @@ test.beforeEach(async ({ page, context }) => {
 test('Cooperation mode', async ({ page, browserName }, testInfo) => {
   test.slow();
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('advanced').click();
   await page.getByTestId('save-button').click();
 

@@ -10,6 +10,7 @@ test.beforeEach(async ({ page, context }) => {
 
 test('Source selection in sing settings', async ({ page, context }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -49,6 +50,7 @@ test('Source selection in sing settings', async ({ page, context }) => {
 
 test('Source selection in in-game menu', async ({ page, context }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await expect(page.getByTestId('advanced')).toBeVisible();
   await page.getByTestId('advanced').click();
   await page.getByTestId('save-button').click();
@@ -78,6 +80,7 @@ test('Source selection in in-game menu', async ({ page, context }) => {
 
 test('Source selection from remote mic', async ({ browser, page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('remote-mics').click();
 
   // Connect blue microphone

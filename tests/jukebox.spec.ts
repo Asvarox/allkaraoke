@@ -3,6 +3,7 @@ import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 test('Jukebox', async ({ page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('jukebox').click();

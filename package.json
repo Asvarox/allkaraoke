@@ -17,6 +17,7 @@
     "curtainsjs": "^8.1.5",
     "date-fns": "^2.30.0",
     "howler": "^2.2.4",
+    "is-mobile": "^4.0.0",
     "latinize": "^0.5.0",
     "localforage": "^1.10.0",
     "lodash-es": "^4.17.21",
@@ -36,6 +37,7 @@
     "remotion": "^4.0.46",
     "remotion-animated": "^2.0.0",
     "tinycolor2": "^1.6.0",
+    "typewriter-effect": "^2.21.0",
     "use-persisted-state": "^0.3.3",
     "uuid": "^8.3.2",
     "wouter": "^2.12.0"

@@ -12,6 +12,7 @@ test.use({ serviceWorkers: 'block' });
 
 test('Edit song', async ({ page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
   await page.getByTestId('manage-songs').click();
   await page.getByTestId('edit-songs').click();

@@ -3,12 +3,13 @@ import dotparty from 'Elements/dotparty.gif';
 import logo from 'Elements/logo.gif';
 import pride from 'Elements/pride.png';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { ComponentProps } from 'react';
 
 if (window.location.search.includes('pride')) {
   sessionStorage.setItem('pride', 'true');
 }
 
-export default function Logo(props: any) {
+export default function Logo(props: ComponentProps<typeof StyledLogo>) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
   if (mobilePhoneMode) {

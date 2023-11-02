@@ -1,5 +1,5 @@
 #ID:lady-gaga-the-edge-of-glory
-#ARTIST:Lady GaGa
+#ARTIST:Lady Gaga
 #ARTISTORIGIN:US
 #TITLE:The Edge Of Glory
 #CREATOR:vicktoben
@@ -12,7 +12,7 @@
 #VIDEOGAP:0
 #GENRE:Dance Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-25T01:02:11.386Z
+#LASTUPDATE:2023-11-02T19:36:39.127Z
 #GAP:19035,98406374502
 : 17 2 21 There 
 : 21 2 21 ain't 

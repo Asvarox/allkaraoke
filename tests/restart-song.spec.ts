@@ -9,6 +9,7 @@ test.beforeEach(async ({ page, context }) => {
 
 test('should restart the song and the scores', async ({ page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('advanced').click();
   await page.getByTestId('save-button').click();
 

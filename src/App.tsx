@@ -16,6 +16,7 @@ import { GameScreens } from 'Elements/GameScreens';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
+import LandingPage from 'Scenes/LandingPage/LandingPage';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
 import RemoteMicSettings from 'Scenes/Settings/RemoteMicSettings';
@@ -47,7 +48,7 @@ function App() {
 
   useEffect(() => {
     if (setupPreference === null && location === '/') {
-      navigate('/quick-setup');
+      navigate('/landing');
     } else if (setupPreference !== null && location === '/quick-setup') {
       navigate('/');
     }
@@ -81,6 +82,7 @@ function App() {
                 <Route path="/manage-songs" component={ManageSongs} />
                 <Route path="/exclude-languages" component={ExcludeLanguages} />
                 <Route path="/" component={Welcome} />
+                <Route path="/landing" component={LandingPage} />
               </GameScreens>
               <Route path="/convert" component={() => <Convert />} />
               <Route

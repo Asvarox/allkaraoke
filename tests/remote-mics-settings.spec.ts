@@ -11,6 +11,7 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
   const name = 'E2E Test Blue';
 
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('remote-mics').click();
 
   const remoteMic = await openAndConnectRemoteMic(page, context, name);
@@ -30,6 +31,7 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
 
 test('Should properly manage mics', async ({ browser, page, context }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('remote-mics').click();
 
   const remoteMic1 = await openAndConnectRemoteMic(page, await browser.newContext(), 'Player 1');

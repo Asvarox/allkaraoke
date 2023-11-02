@@ -18,6 +18,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('remote-mics').click();
 
   const remoteMic = await openRemoteMic(page, context);

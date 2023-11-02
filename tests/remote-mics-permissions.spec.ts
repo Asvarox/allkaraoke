@@ -9,6 +9,7 @@ test.beforeEach(async ({ page, context }) => {
 
 test('Should properly manage remote mics permission settings', async ({ page, context }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
   await page.getByTestId('settings').click();
   await page.getByTestId('remote-mics-settings').click();

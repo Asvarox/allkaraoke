@@ -15,6 +15,7 @@ test.use({ viewport: { width: 740, height: 360 } }); // Samsung S8+
 
 test('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('dismiss-mobile-mode').click();
   await expect(page.getByTestId('mics')).toBeVisible(); // Singstar Mics is hidden when in Mobile Mode
 });
@@ -26,6 +27,7 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('enable-mobile-mode').click();
   await page.getByTestId('remote-mics').click();
 

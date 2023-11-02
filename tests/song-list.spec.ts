@@ -30,6 +30,7 @@ test('Filters - PlayLists', async ({ page }) => {
     }`);
 
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -92,6 +93,7 @@ test('Filters - PlayLists', async ({ page }) => {
 
 test('Filters - Quick Search', async ({ page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -128,6 +130,7 @@ test('Filters - Quick Search', async ({ page }) => {
 
 test('Song List - Random song', async ({ page }) => {
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
 
   await test.step('Random song is selected on song list open', async () => {

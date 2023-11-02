@@ -32,6 +32,7 @@ const FINAL_PREVIEW_END = '80';
 test('Convert song', async ({ page }) => {
   test.slow();
   await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
   await page.getByTestId('skip').click();
   await page.getByTestId('manage-songs').click();
   await page.getByTestId('edit-songs').click();
