@@ -10,8 +10,8 @@ const e2eOverrides: PeerJSOption = isE2E()
   : {};
 
 const options: PeerJSOption = {
-  host: import.meta.env.VITE_APP_BACKEND_HOST,
-  path: '/peerjs',
+  // host: import.meta.env.VITE_APP_BACKEND_HOST,
+  // path: '/peerjs',
   ...e2eOverrides,
   // debug: 3,
 };
