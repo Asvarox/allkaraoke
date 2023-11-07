@@ -7,19 +7,21 @@ import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 
 const files = process.argv.slice(2);
-
 console.log(files);
-files.forEach(async (file) => {
-  if (!file.endsWith('.txt')) return;
 
-  const contents = readFileSync(file, 'utf-8');
-  const data = convertTxtToSong(contents);
+(async () => {
+  for (const file of files) {
+    if (!file.endsWith('.txt')) continue;
 
-  await updateLastUpdate(data);
-  await updateArtistOrigin(data);
+    const contents = readFileSync(file, 'utf-8');
+    const data = convertTxtToSong(contents);
 
-  writeFileSync(file, convertSongToTxt(data), 'utf-8');
-});
+    await updateLastUpdate(data);
+    await updateArtistOrigin(data);
+
+    writeFileSync(file, convertSongToTxt(data), 'utf-8');
+  }
+})();
 
 async function updateLastUpdate(song: Song) {
   const updateDate = new Date().toISOString();
@@ -32,17 +34,22 @@ const mbApi = new MusicBrainzApi({
   appContactInfo: 'tatarczyk.aleksander@gmail.com',
 });
 
+const foundOrigins: Record<string, string> = {};
 async function updateArtistOrigin(song: Song) {
   if (song.artistOrigin) return;
   const existingSong = songIndex.find((songFromIndex) => songFromIndex.artist === song.artist);
-  if (existingSong?.artistOrigin) {
+  if (foundOrigins[song.artist]) {
+    song.artistOrigin = foundOrigins[song.artist];
+  } else if (existingSong?.artistOrigin) {
     song.artistOrigin = existingSong.artistOrigin;
   } else {
+    console.log(`Looking for ${song.artist} origin`);
     const externalData = await mbApi.search<IArtistList>('artist', {
       query: `"${song.artist}"`,
     });
     if (externalData.count > 0) {
       song.artistOrigin = externalData.artists[0].country;
+      foundOrigins[song.artist] = song.artistOrigin!;
     }
   }
 }
