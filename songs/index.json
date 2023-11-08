@@ -245,6 +245,33 @@
     "local": false
   },
   {
+    "id": "5-seconds-of-summer-she-looks-so-perfect",
+    "title": "She looks so perfect",
+    "artist": "5 Seconds of Summer",
+    "language": "English",
+    "bpm": 320,
+    "bar": 4,
+    "gap": 3185.625,
+    "video": "X2BYmmTI04I",
+    "year": "2014",
+    "artistOrigin": "AU",
+    "lastUpdate": "2023-11-07T21:41:35.531Z",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 0.72,
+    "author": "Pantero",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "5secondsofsummershelookssoperfect",
+    "local": false
+  },
+  {
     "id": "a-ha-take-on-me",
     "title": "Take on me",
     "artist": "a-ha",
@@ -1263,6 +1290,34 @@
     "local": false
   },
   {
+    "id": "anna-margaret-something-about-the-sunshine",
+    "title": "Something About The Sunshine",
+    "artist": "Anna Margaret",
+    "language": "English",
+    "bpm": 249.96,
+    "bar": 4,
+    "gap": 23722.83677388382,
+    "video": "wdElaMA3gZU",
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.536Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 1,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "annamargaretsomethingaboutthesunshine",
+    "local": false
+  },
+  {
     "id": "aqua-barbie-girl",
     "title": "Barbie Girl",
     "artist": "Aqua",
@@ -1347,6 +1402,116 @@
     "local": false
   },
   {
+    "id": "ariana-grande-baby-i",
+    "title": "Baby I",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 204,
+    "bar": 4,
+    "gap": 8669.588235294117,
+    "video": "bJuWlMFToNo",
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.538Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.69,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandebabyi",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-breathin",
+    "title": "Breathin",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 400.06,
+    "bar": 4,
+    "gap": 9161.651852222167,
+    "video": "kN0iD0pI3o0",
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.540Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.75,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandebreathin",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-dangerous-woman",
+    "title": "Dangerous Woman",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 279.43,
+    "bar": 4,
+    "gap": 9971.066564076871,
+    "video": "9WbCfHutDSE",
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.544Z",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 0.66,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandedangerouswoman",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-everytime",
+    "title": "everytime",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 296,
+    "bar": 4,
+    "gap": 499.3243243243243,
+    "video": "MYvjW3zdCws",
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.545Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 148,
+    "volume": 0.7,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandeeverytime",
+    "local": false
+  },
+  {
     "id": "ariana-grande-feat-zedd-break-free",
     "title": "Break Free",
     "artist": "Ariana Grande feat. Zedd",
@@ -1373,6 +1538,88 @@
     ],
     "tracksCount": 1,
     "search": "arianagrandefeatzeddbreakfree",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-focus",
+    "title": "Focus",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 400.2,
+    "bar": 4,
+    "gap": 5036.005997001499,
+    "video": "lf_wVfwpfp8",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.546Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.64,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandefocus",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-god-is-a-woman",
+    "title": "God is a woman",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 389.26,
+    "bar": 4,
+    "gap": 343.09895699532444,
+    "video": "kHLHSlExFis",
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.547Z",
+    "videoGap": 0,
+    "realBpm": 145,
+    "volume": 0.74,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=ariana+grande",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandegodisawoman",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-goodnight-n-go",
+    "title": "goodnight n go",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 222,
+    "bar": 4,
+    "gap": 8211.486486486487,
+    "video": "sXJ2hajo6rw",
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.548Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 0.65,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandegoodnightngo",
     "local": false
   },
   {
@@ -1404,6 +1651,33 @@
     "local": false
   },
   {
+    "id": "ariana-grande-imagine",
+    "title": "Imagine",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 372.43,
+    "bar": 4,
+    "gap": 1821.099374379078,
+    "video": "7_rftpd0u0U",
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.549Z",
+    "videoGap": 0,
+    "realBpm": 63,
+    "volume": 0.63,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandeimagine",
+    "local": false
+  },
+  {
     "id": "ariana-grande-into-you",
     "title": "Into you",
     "artist": "Ariana Grande",
@@ -1432,6 +1706,116 @@
     "local": false
   },
   {
+    "id": "ariana-grande-moonlight",
+    "title": "Moonlight",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 204.9,
+    "bar": 4,
+    "gap": 14491.316251830161,
+    "video": "LN3UOb3iiTE",
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.550Z",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.61,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandemoonlight",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-my-everything",
+    "title": "My everything",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 237.42,
+    "bar": 4,
+    "gap": 7700.133181703311,
+    "video": "HxWSDUC-KTU",
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.551Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 61,
+    "volume": 0.6,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandemyeverything",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-nasa",
+    "title": "NASA",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 390,
+    "video": "-_aGvdfLTKY",
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.551Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 75,
+    "volume": 0.66,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandenasa",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-needy",
+    "title": "Needy",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 389.84,
+    "bar": 4,
+    "gap": 10655.589575210342,
+    "video": "Km__cJEJ3JI",
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.552Z",
+    "videoGap": 0,
+    "realBpm": 87,
+    "volume": 0.65,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandeneedy",
+    "local": false
+  },
+  {
     "id": "ariana-grande-no-tears-left-to-cry",
     "title": "No tears left to cry",
     "artist": "Ariana Grande",
@@ -1457,6 +1841,89 @@
     ],
     "tracksCount": 1,
     "search": "arianagrandenotearslefttocry",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-one-last-time",
+    "title": "One Last Time",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 50343,
+    "video": "BPgEgaPk62M",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.552Z",
+    "genre": "Blues",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.75,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandeonelasttime",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-positions",
+    "title": "Positions",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 246,
+    "bar": 4,
+    "gap": 1099.3902439024391,
+    "video": "AoAm4om0wTs",
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.553Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 144,
+    "volume": 0.64,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandepositions",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-the-weeknd-love-me-harder",
+    "title": "Love Me Harder",
+    "artist": "Ariana Grande & The Weeknd",
+    "language": "English",
+    "bpm": 198,
+    "bar": 4,
+    "gap": 11512.151515151516,
+    "video": "g5qU7p7yOY8",
+    "year": "2014",
+    "lastUpdate": "2023-11-07T21:41:35.554Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 99,
+    "volume": 0.65,
+    "author": "Nicolai (aac)*vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandetheweekndlovemeharder",
     "local": false
   },
   {
@@ -2545,6 +3012,33 @@
     "local": false
   },
   {
+    "id": "bizarrap-shakira-bzrp-music-sessions-vol-53",
+    "title": "Bzrp Music Sessions, Vol. 53",
+    "artist": "Bizarrap & Shakira",
+    "language": "Spanish",
+    "bpm": 243.97,
+    "bar": 4,
+    "gap": 1666.272492519572,
+    "video": "CocEMWdc7Ck",
+    "year": "2023",
+    "lastUpdate": "2023-11-07T21:41:35.701Z",
+    "genre": "Dance",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.65,
+    "author": "Shakira BZRP",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bizarrapshakirabzrpmusicsessionsvol53",
+    "local": false
+  },
+  {
     "id": "blanka-solo",
     "title": "Solo",
     "artist": "Blanka",
@@ -3430,6 +3924,33 @@
     "local": false
   },
   {
+    "id": "bts-butterfly",
+    "title": "Butterfly",
+    "artist": "BTS",
+    "language": "Korean",
+    "bpm": 307.28,
+    "bar": 4,
+    "gap": 225.69174694090077,
+    "video": "dblMFsHgB_Y",
+    "year": "2015",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-11-07T21:41:35.837Z",
+    "videoGap": 0,
+    "realBpm": 150,
+    "volume": 0.85,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btsbutterfly",
+    "local": false
+  },
+  {
     "id": "bts-dynamite",
     "title": "Dynamite",
     "artist": "BTS",
@@ -3699,6 +4220,34 @@
     ],
     "tracksCount": 1,
     "search": "carlyraejepsenireallylikeyou",
+    "local": false
+  },
+  {
+    "id": "cazuza-exagerado",
+    "title": "Exagerado",
+    "artist": "Cazuza",
+    "language": "Portuguese",
+    "bpm": 276,
+    "bar": 4,
+    "gap": 28596.739130434784,
+    "video": "KmVmoHg9zuU",
+    "year": "1985",
+    "artistOrigin": "BR",
+    "lastUpdate": "2023-11-07T21:41:35.838Z",
+    "genre": "Rock Brasileiro",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.8,
+    "author": "Tongas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cazuzaexagerado",
     "local": false
   },
   {
@@ -5381,6 +5930,62 @@
     "local": false
   },
   {
+    "id": "doja-cat-feat-sza-kiss-me-more",
+    "title": "Kiss Me More",
+    "artist": "Doja Cat feat. SZA",
+    "language": "English",
+    "bpm": 222.24,
+    "bar": 4,
+    "gap": 25582.580993520518,
+    "video": "0EVVKs6DQLo",
+    "year": "2021",
+    "lastUpdate": "2023-11-07T21:41:35.838Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 0.56,
+    "author": "asb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dojacatfeatszakissmemore",
+    "local": false
+  },
+  {
+    "id": "doja-cat-say-so",
+    "title": "Say So",
+    "artist": "Doja Cat",
+    "language": "English",
+    "bpm": 222.04,
+    "bar": 4,
+    "gap": 7706.669068636282,
+    "video": "pok8H_KF1FA",
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.953Z",
+    "videoGap": 0,
+    "realBpm": 111,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.72,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dojacatsayso",
+    "local": false
+  },
+  {
     "id": "donna-summer-i-feel-love",
     "title": "I Feel Love",
     "artist": "Donna Summer",
@@ -6721,6 +7326,37 @@
     "local": false
   },
   {
+    "id": "fergie-big-girls-dont-cry",
+    "title": "Big Girls Don't Cry",
+    "artist": "Fergie",
+    "language": "English",
+    "bpm": 225.8,
+    "bar": 4,
+    "gap": 26506.54295837024,
+    "video": "agrXgrAgQ0U",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:35.954Z",
+    "edition": "SingStar Pop 2",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 113,
+    "previewStart": 74,
+    "previewEnd": 117,
+    "volume": 0.95,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fergiebiggirlsdontcry",
+    "local": false
+  },
+  {
     "id": "fettes-brot-emanuela",
     "title": "Emanuela",
     "artist": "Fettes Brot",
@@ -7378,6 +8014,32 @@
     "local": false
   },
   {
+    "id": "giulia-be-menina-solta",
+    "title": "Menina Solta",
+    "artist": "Giulia Be",
+    "language": "Portuguese",
+    "bpm": 368,
+    "bar": 4,
+    "gap": 9458.978260869566,
+    "video": "vz9XHsctOtc",
+    "year": "2019",
+    "lastUpdate": "2023-11-07T21:41:35.955Z",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.71,
+    "author": "airBN",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "giuliabemeninasolta",
+    "local": false
+  },
+  {
     "id": "gloria-gaynor-i-will-survive",
     "title": "I Will Survive",
     "artist": "Gloria Gaynor",
@@ -7839,6 +8501,36 @@
     "local": false
   },
   {
+    "id": "gustavo-cerati-crimen",
+    "title": "Crimen",
+    "artist": "Gustavo Cerati",
+    "language": "Spanish",
+    "bpm": 214.46,
+    "bar": 4,
+    "gap": 25139.796418912618,
+    "video": "uLIs0j2WnlM",
+    "year": "2006",
+    "artistOrigin": "AR",
+    "lastUpdate": "2023-11-07T21:41:36.080Z",
+    "genre": "Rock",
+    "videoGap": 11,
+    "realBpm": 80,
+    "previewStart": 26,
+    "previewEnd": 43,
+    "volume": 0.9,
+    "author": "macacoso",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gustavoceraticrimen",
+    "local": false
+  },
+  {
     "id": "haddaway-jim-carrey-the-roxbury-guys-what-is-love",
     "title": "What is love",
     "artist": "Haddaway & Jim Carrey & The Roxbury Guys",
@@ -8025,6 +8717,286 @@
     ],
     "tracksCount": 1,
     "search": "heymimowszystko",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-a-night-to-remember",
+    "title": "A Night To Remember",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 5910,
+    "video": "p_Jp6bMKkt0",
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.081Z",
+    "edition": "Sing It HSM3",
+    "videoGap": 0,
+    "realBpm": 158,
+    "volume": 0.87,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalanighttoremember",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-bet-on-it",
+    "title": "Bet On It",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 6880,
+    "video": "k-t4vqd534Y",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.081Z",
+    "edition": "Disney Sing It",
+    "videoGap": 0,
+    "realBpm": 137,
+    "volume": 0.71,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalbetonit",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-breaking-free",
+    "title": "Breaking Free",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 10920,
+    "video": "0qj67KE5VXI",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.082Z",
+    "edition": "Disney Sing It",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 0.74,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalbreakingfree",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-can-i-have-this-dance",
+    "title": "Can I Have This Dance?",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 3900,
+    "video": "1RcP7Dsterg",
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.083Z",
+    "edition": "Sing It HSM3",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.7,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalcanihavethisdance",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-everyday",
+    "title": "Everyday",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 3550,
+    "video": "6dmujZr6ld4",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.083Z",
+    "edition": "Sing It HSM3",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.9,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicaleveryday",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-gotta-go-my-own-way",
+    "title": "Gotta Go My Own Way",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 17640,
+    "video": "pAzFRfzwT-g",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.084Z",
+    "edition": "Sing It HSM3",
+    "videoGap": 0,
+    "realBpm": 89,
+    "volume": 0.75,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalgottagomyownway",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-just-wanna-be-with-you",
+    "title": "Just Wanna Be With You",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 780,
+    "video": "mueirlYAwlI",
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.085Z",
+    "edition": "Sing It HSM3 USA",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.77,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicaljustwannabewithyou",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-start-of-something-new",
+    "title": "Start of Something New",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 8735,
+    "video": "zBG-sEGlULs",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.085Z",
+    "edition": "Disney Sing It",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.83,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalstartofsomethingnew",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-when-there-was-me-and-you",
+    "title": "When There Was Me And You",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 920,
+    "video": "GTZUvuduWPk",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.086Z",
+    "edition": "Sing It HSM3",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.65,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalwhentherewasmeandyou",
+    "local": false
+  },
+  {
+    "id": "high-school-musical-you-are-the-music-in-me",
+    "title": "You Are the Music in Me",
+    "artist": "High School Musical",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 40,
+    "video": "JzQQL5ZXn08",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.086Z",
+    "edition": "Disney Sing It",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.86,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "highschoolmusicalyouarethemusicinme",
     "local": false
   },
   {
@@ -9389,6 +10361,33 @@
     "local": false
   },
   {
+    "id": "kali-uchis-telepatia",
+    "title": "Telepatía",
+    "artist": "Kali Uchis",
+    "language": "Spanish",
+    "bpm": 336.04,
+    "bar": 4,
+    "gap": 15685.97405070825,
+    "video": "bn_p95HbHoQ",
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.087Z",
+    "videoGap": 0,
+    "realBpm": 84,
+    "volume": 0.73,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kaliuchistelepatia",
+    "local": false
+  },
+  {
     "id": "karel-gott-kavu-si-osladim",
     "title": "Kávu si osladím",
     "artist": "Karel Gott",
@@ -9414,6 +10413,33 @@
     ],
     "tracksCount": 1,
     "search": "karelgottkavusiosladim",
+    "local": false
+  },
+  {
+    "id": "karol-g-shakira-tqg",
+    "title": "TQG",
+    "artist": "KAROL G & Shakira",
+    "language": "Spanish",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 19875,
+    "video": "jZGpkLElSu8",
+    "year": "2023",
+    "lastUpdate": "2023-11-07T21:41:36.087Z",
+    "genre": "Reguetón",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.61,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "karolgshakiratqg",
     "local": false
   },
   {
@@ -10249,6 +11275,34 @@
     "local": false
   },
   {
+    "id": "kylie-minogue-get-outta-my-way",
+    "title": "Get Outta My Way",
+    "artist": "Kylie Minogue",
+    "language": "English",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 12673.90625,
+    "video": "BHGaW8lBlSk",
+    "year": "2010",
+    "artistOrigin": "AU",
+    "lastUpdate": "2023-11-07T21:41:36.216Z",
+    "genre": "Electropop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.84,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kylieminoguegetouttamyway",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-in-your-eyes",
     "title": "In Your Eyes",
     "artist": "Kylie Minogue",
@@ -10484,14 +11538,15 @@
     "language": "English",
     "bpm": 238.04,
     "bar": 4,
-    "gap": 12271.766089732819,
+    "gap": 12171.766089732819,
     "video": "qrO4YZeyl0I",
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-02T19:36:39.118Z",
+    "lastUpdate": "2023-11-07T21:41:36.217Z",
     "edition": "[SC]-Songs",
     "videoGap": 0,
     "realBpm": 117,
+    "volume": 0.85,
     "author": "michas17j",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=7752",
@@ -10576,13 +11631,14 @@
     "language": "English",
     "bpm": 357,
     "bar": 4,
-    "gap": 14431.596638655463,
+    "gap": 14281.596638655463,
     "video": "2Abk1jAONjw",
     "year": "2008",
-    "lastUpdate": "2023-11-02T19:36:39.124Z",
+    "lastUpdate": "2023-11-07T21:41:36.218Z",
     "edition": "[SC]-Songs",
     "videoGap": 0,
     "realBpm": 119,
+    "volume": 0.74,
     "author": "IC",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5498",
@@ -10661,14 +11717,15 @@
     "language": "English",
     "bpm": 256.02,
     "bar": 4,
-    "gap": 19035.98406374502,
+    "gap": 18935.98406374502,
     "video": "QeWBS0JBNzQ",
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-02T19:36:39.127Z",
+    "lastUpdate": "2023-11-07T21:41:36.341Z",
     "genre": "Dance Pop",
     "videoGap": 0,
     "realBpm": 128,
+    "volume": 0.81,
     "author": "vicktoben",
     "authorUrl": "",
     "sourceUrl": "",
@@ -10682,20 +11739,21 @@
     "local": false
   },
   {
-    "id": "lady-gaga-yoz-and-i",
-    "title": "Yoź And I",
+    "id": "lady-gaga-you-and-i",
+    "title": "You And I",
     "artist": "Lady Gaga",
     "language": "English",
     "bpm": 254.03,
     "bar": 4,
-    "gap": 58709.18155335984,
+    "gap": 58609.18155335984,
     "video": "X9YMU0WeBwU",
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-02T19:36:39.129Z",
+    "lastUpdate": "2023-11-07T21:41:36.341Z",
     "genre": "Pop",
     "videoGap": 0,
     "realBpm": 127,
+    "volume": 0.81,
     "author": "Silverbeam *vicktoben",
     "authorUrl": "",
     "sourceUrl": "",
@@ -10705,7 +11763,7 @@
       }
     ],
     "tracksCount": 1,
-    "search": "ladygagayozandi",
+    "search": "ladygagayouandi",
     "local": false
   },
   {
@@ -10887,6 +11945,88 @@
     ],
     "tracksCount": 1,
     "search": "lanadelreysummertimesadness",
+    "local": false
+  },
+  {
+    "id": "lasso-ojos-marrones",
+    "title": "Ojos marrones",
+    "artist": "Lasso",
+    "language": "Spanish",
+    "bpm": 240.04,
+    "bar": 4,
+    "gap": 22380.16663889352,
+    "video": "3oir_abWPXA",
+    "year": "2022",
+    "artistOrigin": "VE",
+    "lastUpdate": "2023-11-07T21:41:36.342Z",
+    "genre": "Pop",
+    "videoGap": 6,
+    "realBpm": 118,
+    "volume": 0.66,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lassoojosmarrones",
+    "local": false
+  },
+  {
+    "id": "lasso-te-veo",
+    "title": "Te veo",
+    "artist": "Lasso",
+    "language": "Spanish",
+    "bpm": 324.16,
+    "bar": 4,
+    "gap": 14717.9842053307,
+    "video": "BWZsP6nc8Fs",
+    "year": "2012",
+    "artistOrigin": "VE",
+    "lastUpdate": "2023-11-07T21:41:36.342Z",
+    "genre": "Pop/Funk",
+    "videoGap": 0,
+    "realBpm": 80,
+    "volume": 0.71,
+    "author": "Lasso",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lassoteveo",
+    "local": false
+  },
+  {
+    "id": "lasso-y-cami-odio-que-no-te-odio",
+    "title": "Odio que no te odio",
+    "artist": "Lasso y Cami",
+    "language": "Spanish",
+    "bpm": 257.29,
+    "bar": 4,
+    "gap": 12850.900462513118,
+    "video": "xxfkLWaHeZY",
+    "year": "2020",
+    "lastUpdate": "2023-11-07T21:41:36.343Z",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.65,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lassoycamiodioquenoteodio",
     "local": false
   },
   {
@@ -11665,6 +12805,34 @@
     "local": false
   },
   {
+    "id": "luis-enrique-yo-no-se-manana",
+    "title": "Yo no sé mañana",
+    "artist": "Luis Enrique",
+    "language": "Spanish",
+    "bpm": 380,
+    "bar": 4,
+    "gap": 2844.157894736842,
+    "video": "2PVi95J-FMo",
+    "year": "2009",
+    "artistOrigin": "NI",
+    "lastUpdate": "2023-11-07T21:41:36.468Z",
+    "genre": "Salsa",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.9,
+    "author": "Luis Enrique",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "luisenriqueyonosemanana",
+    "local": false
+  },
+  {
     "id": "lynyrd-skynyrd-free-bird",
     "title": "Free Bird",
     "artist": "Lynyrd Skynyrd",
@@ -12318,6 +13486,61 @@
     "local": false
   },
   {
+    "id": "marco-antonio-solis-a-donde-vamos-a-parar",
+    "title": "¿A dónde vamos a parar?",
+    "artist": "Marco Antonio Solís",
+    "language": "Spanish",
+    "bpm": 288.86,
+    "bar": 4,
+    "gap": 39026.362874749015,
+    "video": "vbufwMLhreg",
+    "year": "2010",
+    "artistOrigin": "MX",
+    "lastUpdate": "2023-11-07T21:41:36.469Z",
+    "genre": "",
+    "videoGap": 0,
+    "realBpm": 142,
+    "volume": 0.9,
+    "author": "kaim21",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marcoantoniosolisadondevamosaparar",
+    "local": false
+  },
+  {
+    "id": "marco-antonio-solis-si-no-te-hubieras-ido",
+    "title": "Si no te hubieras ido",
+    "artist": "Marco Antonio Solís",
+    "language": "Spanish",
+    "bpm": 380,
+    "bar": 4,
+    "gap": 25021.157894736843,
+    "video": "gH8oCh1nn88",
+    "year": "1998",
+    "artistOrigin": "MX",
+    "lastUpdate": "2023-11-07T21:41:36.469Z",
+    "videoGap": 0,
+    "realBpm": 94,
+    "volume": 0.8,
+    "author": "DaVIch0",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marcoantoniosolissinotehubierasido",
+    "local": false
+  },
+  {
     "id": "mariah-carey-without-you",
     "title": "Without you",
     "artist": "Mariah Carey",
@@ -12542,6 +13765,33 @@
     "local": false
   },
   {
+    "id": "maroon-5-feat-wiz-khalifa-payphone",
+    "title": "Payphone",
+    "artist": "Maroon 5 feat. Wiz Khalifa",
+    "language": "English",
+    "bpm": 220.04,
+    "bar": 4,
+    "gap": 38327.45864388293,
+    "video": "KRaWnd3LJfs",
+    "year": "2012",
+    "lastUpdate": "2023-11-07T21:41:36.470Z",
+    "genre": "Pop",
+    "videoGap": 38,
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Maroon%205%20feat.%20Wiz%20Khalifa",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maroon5featwizkhalifapayphone",
+    "local": false
+  },
+  {
     "id": "maroon-5-harder-to-breathe",
     "title": "Harder to breathe",
     "artist": "Maroon 5",
@@ -12739,6 +13989,119 @@
     ],
     "tracksCount": 1,
     "search": "mecanohijodelaluna",
+    "local": false
+  },
+  {
+    "id": "meghan-trainor-made-you-look",
+    "title": "Made You Look",
+    "artist": "Meghan Trainor",
+    "language": "English",
+    "bpm": 290,
+    "bar": 4,
+    "gap": 3297.2413793103447,
+    "video": "gPCCYMeXin0",
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.602Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 145,
+    "volume": 0.7,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "meghantrainormadeyoulook",
+    "local": false
+  },
+  {
+    "id": "melanie-martinez-alphabet-boy",
+    "title": "Alphabet Boy",
+    "artist": "Melanie Martinez",
+    "language": "English",
+    "bpm": 309.96,
+    "bar": 4,
+    "gap": 14682.739837398374,
+    "video": "NH-5aUFoF9g",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.602Z",
+    "videoGap": 0,
+    "realBpm": 155,
+    "volume": 0.59,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melaniemartinezalphabetboy",
+    "local": false
+  },
+  {
+    "id": "melanie-martinez-sippy-cup",
+    "title": "Sippy Cup",
+    "artist": "Melanie Martinez",
+    "language": "English",
+    "bpm": 269.94,
+    "bar": 4,
+    "gap": -74.40742387197156,
+    "video": "VdwaWp59qz8",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.603Z",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.69,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melaniemartinezsippycup",
+    "local": false
+  },
+  {
+    "id": "men-at-work-down-under",
+    "title": "Down Under",
+    "artist": "Men at Work",
+    "language": "English",
+    "bpm": 339.16,
+    "bar": 4,
+    "gap": 12809.780988324095,
+    "video": "XfR9iY5y94s",
+    "year": "1982",
+    "artistOrigin": "AU",
+    "lastUpdate": "2023-11-07T21:41:36.603Z",
+    "edition": "SingStar Rocks! Australian",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 107,
+    "previewStart": 68,
+    "previewEnd": 121,
+    "volume": 0.98,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "menatworkdownunder",
     "local": false
   },
   {
@@ -13286,6 +14649,32 @@
     ],
     "tracksCount": 1,
     "search": "mirandalambertkerosene",
+    "local": false
+  },
+  {
+    "id": "mon-laferte-ft-juanes-amarrame",
+    "title": "Amárrame",
+    "artist": "Mon Laferte ft. Juanes",
+    "language": "Spanish",
+    "bpm": 359.5,
+    "bar": 4,
+    "gap": 4239.609179415856,
+    "video": "l_ZyDlTfndE",
+    "year": "2017",
+    "lastUpdate": "2023-11-07T21:41:36.604Z",
+    "videoGap": 0,
+    "realBpm": 179,
+    "volume": 0.56,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "monlaferteftjuanesamarrame",
     "local": false
   },
   {
@@ -14404,6 +15793,33 @@
     "local": false
   },
   {
+    "id": "newjeans-new-jeans",
+    "title": "New Jeans",
+    "artist": "NewJeans",
+    "language": "Korean",
+    "bpm": 354.5,
+    "bar": 4,
+    "gap": 82384.48519040903,
+    "video": "kcelgrGY1h8",
+    "year": "2023",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-11-07T21:41:36.723Z",
+    "videoGap": 69,
+    "realBpm": 134,
+    "volume": 0.67,
+    "author": "Angs",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=angs",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "newjeansnewjeans",
+    "local": false
+  },
+  {
     "id": "nick-cave-the-bad-seeds-kylie-minogue-where-the-wild-roses-grow",
     "title": "Where The Wild Roses Grow",
     "artist": "Nick Cave & The Bad Seeds + Kylie Minogue",
@@ -14933,6 +16349,34 @@
     "local": false
   },
   {
+    "id": "olivia-rodrigo-good-4-u",
+    "title": "good 4 u",
+    "artist": "Olivia Rodrigo",
+    "language": "English",
+    "bpm": 332,
+    "bar": 4,
+    "gap": 20450.024096385543,
+    "video": "gNi_6U5Pm_o",
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:36.723Z",
+    "genre": "Pop",
+    "videoGap": 16,
+    "realBpm": 169,
+    "volume": 0.81,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oliviarodrigogood4u",
+    "local": false
+  },
+  {
     "id": "ona-kiedy-powiem-sobie-dosc",
     "title": "Kiedy powiem sobie dość",
     "artist": "ONA",
@@ -14956,6 +16400,168 @@
     ],
     "tracksCount": 1,
     "search": "onakiedypowiemsobiedosc",
+    "local": false
+  },
+  {
+    "id": "one-direction-best-song-ever",
+    "title": "Best Song Ever",
+    "artist": "One Direction",
+    "language": "English",
+    "bpm": 237,
+    "bar": 4,
+    "gap": 159008.3417721519,
+    "video": "o_v9MY_FMcw",
+    "year": "2013",
+    "lastUpdate": "2023-11-07T21:41:36.724Z",
+    "genre": "Pop",
+    "videoGap": 139,
+    "realBpm": 118,
+    "volume": 0.59,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionbestsongever",
+    "local": false
+  },
+  {
+    "id": "one-direction-kiss-you",
+    "title": "Kiss You",
+    "artist": "One Direction",
+    "language": "English",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 6990,
+    "video": "T4cdfRohhcg",
+    "year": "2013",
+    "lastUpdate": "2023-11-07T21:41:36.846Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.69,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionkissyou",
+    "local": false
+  },
+  {
+    "id": "one-direction-live-while-were-young",
+    "title": "Live While We're Young",
+    "artist": "One Direction",
+    "language": "English",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 6733.0952380952385,
+    "video": "AbPED9bisSc",
+    "year": "2013",
+    "lastUpdate": "2023-11-07T21:41:36.971Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.7,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionlivewhilewereyoung",
+    "local": false
+  },
+  {
+    "id": "one-direction-one-way-or-another-teenage-kicks",
+    "title": "One Way Or Another (Teenage Kicks)",
+    "artist": "One Direction",
+    "language": "English",
+    "bpm": 324,
+    "bar": 4,
+    "gap": 28180.48148148148,
+    "video": "36mCEZzzQ3o",
+    "year": "2013",
+    "lastUpdate": "2023-11-07T21:41:37.099Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 162,
+    "volume": 0.75,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectiononewayoranotherteenagekicks",
+    "local": false
+  },
+  {
+    "id": "one-direction-story-of-my-life",
+    "title": "Story Of My Life",
+    "artist": "One Direction",
+    "language": "English",
+    "bpm": 242,
+    "bar": 4,
+    "gap": 19224.26446280992,
+    "video": "W-TE_Ys4iwM",
+    "year": "2013",
+    "lastUpdate": "2023-11-07T21:41:37.228Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.7,
+    "author": "*vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionstoryofmylife",
+    "local": false
+  },
+  {
+    "id": "one-direction-what-makes-you-beautiful",
+    "title": "What Makes You Beautiful",
+    "artist": "One Direction",
+    "language": "English",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 10084,
+    "video": "QJO3ROT-A4E",
+    "year": "2012",
+    "lastUpdate": "2023-11-07T21:41:37.362Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.7,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionwhatmakesyoubeautiful",
     "local": false
   },
   {
@@ -14984,6 +16590,33 @@
     ],
     "tracksCount": 1,
     "search": "pabloalboransolamentetu",
+    "local": false
+  },
+  {
+    "id": "panda-los-malaventurados-no-lloran",
+    "title": "Los malaventurados no lloran",
+    "artist": "Panda",
+    "language": "Spanish",
+    "bpm": 344,
+    "bar": 4,
+    "gap": 10487.093023255813,
+    "video": "wvR7EtLuJfg",
+    "year": "2006",
+    "lastUpdate": "2023-11-07T21:41:37.487Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 172,
+    "volume": 0.72,
+    "author": "n3ggro",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=wvR7EtLuJfg&ab_channel=PXNDX",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pandalosmalaventuradosnolloran",
     "local": false
   },
   {
@@ -17257,6 +18890,34 @@
     "local": false
   },
   {
+    "id": "rihanna-sm",
+    "title": "S&M",
+    "artist": "Rihanna",
+    "language": "English",
+    "bpm": 256.02,
+    "bar": 4,
+    "gap": 336.519100070307,
+    "video": "KdS6HFQ_LUc",
+    "year": "2011",
+    "artistOrigin": "BB",
+    "lastUpdate": "2023-11-07T21:41:45.728Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.65,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rihannasm",
+    "local": false
+  },
+  {
     "id": "rihanna-umbrella",
     "title": "Umbrella",
     "artist": "Rihanna",
@@ -17808,6 +19469,149 @@
     "local": false
   },
   {
+    "id": "selena-gomez-kill-em-with-kindness",
+    "title": "Kill Em With Kindness",
+    "artist": "Selena Gomez",
+    "language": "English",
+    "bpm": 240.06,
+    "bar": 4,
+    "gap": 18675.24993751562,
+    "video": "HHP5MKgK0o8",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.730Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.94,
+    "author": "amro98*Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezkillemwithkindness",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-the-scene-love-you-like-a-love-song",
+    "title": "Love You Like A Love Song",
+    "artist": "Selena Gomez & The Scene",
+    "language": "English",
+    "bpm": 234.08,
+    "bar": 4,
+    "gap": 22150.70950102529,
+    "video": "EgT_us6AsDg",
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.731Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.61,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezthesceneloveyoulikealovesong",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-the-scene-naturally",
+    "title": "Naturally",
+    "artist": "Selena Gomez & The Scene",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 3100,
+    "video": "a_YR4dKArgo",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.733Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 133,
+    "volume": 0.91,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezthescenenaturally",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-the-scene-un-ano-sin-lluvia",
+    "title": "Un año sin lluvia",
+    "artist": "Selena Gomez & The Scene",
+    "language": "Spanish",
+    "bpm": 240,
+    "bar": 4,
+    "gap": -92,
+    "video": "D3fGfUKaVLE",
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.734Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.65,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezthesceneunanosinlluvia",
+    "local": false
+  },
+  {
+    "id": "shakin-stevens-you-drive-me-crazy",
+    "title": "You Drive Me Crazy",
+    "artist": "Shakin’ Stevens",
+    "language": "English",
+    "bpm": 244.46,
+    "bar": 4,
+    "gap": 7348.244293544956,
+    "video": "OFZH1ZqrRS0",
+    "year": "1980",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-07T21:41:45.736Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 119,
+    "previewStart": 40,
+    "previewEnd": 86,
+    "volume": 0.98,
+    "author": "Dynamic_Duo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shakinstevensyoudrivemecrazy",
+    "local": false
+  },
+  {
     "id": "shakira-ciega-sordomuda",
     "title": "Ciega, sordomuda",
     "artist": "Shakira",
@@ -17924,6 +19728,33 @@
     "local": false
   },
   {
+    "id": "shakira-las-de-la-intuicion",
+    "title": "Las de la intuición",
+    "artist": "Shakira",
+    "language": "Spanish",
+    "bpm": 125,
+    "bar": 4,
+    "gap": 15140,
+    "video": "GKlpL4FhzUs",
+    "year": "2005",
+    "artistOrigin": "CO",
+    "lastUpdate": "2023-11-07T21:41:45.737Z",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.75,
+    "author": "Montoy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shakiralasdelaintuicion",
+    "local": false
+  },
+  {
     "id": "shakira-loba",
     "title": "Loba",
     "artist": "Shakira",
@@ -17949,6 +19780,34 @@
     ],
     "tracksCount": 1,
     "search": "shakiraloba",
+    "local": false
+  },
+  {
+    "id": "shakira-si-te-vas",
+    "title": "Si te vas",
+    "artist": "Shakira",
+    "language": "Spanish",
+    "bpm": 431.42,
+    "bar": 4,
+    "gap": 8920.701821890501,
+    "video": "Ea655Ji3kKE",
+    "year": "1998",
+    "artistOrigin": "CO",
+    "lastUpdate": "2023-11-07T21:41:45.738Z",
+    "genre": "Rock/Pop",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 0.7,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shakirasitevas",
     "local": false
   },
   {
@@ -18033,6 +19892,33 @@
     ],
     "tracksCount": 1,
     "search": "shakirayalejandrosanzlatortura",
+    "local": false
+  },
+  {
+    "id": "shakira-y-maluma-chantaje",
+    "title": "Chantaje",
+    "artist": "Shakira y Maluma",
+    "language": "Spanish",
+    "bpm": 203.87,
+    "bar": 4,
+    "gap": 11716.508117918282,
+    "video": "6Mgqbai3fKo",
+    "year": "2016",
+    "lastUpdate": "2023-11-07T21:41:45.740Z",
+    "genre": "Latin",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.7,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shakiraymalumachantaje",
     "local": false
   },
   {
@@ -19118,6 +21004,90 @@
     "local": false
   },
   {
+    "id": "taylor-swift-22",
+    "title": "22",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 208,
+    "bar": 4,
+    "gap": 3635.3846153846152,
+    "video": "AgFeZr5ptV8",
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.860Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 104,
+    "volume": 0.75,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswift22",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-blank-space",
+    "title": "Blank Space",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 192.02,
+    "bar": 4,
+    "gap": 7759.4807832517445,
+    "video": "e-ORhEE9VVg",
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.862Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 192,
+    "volume": 0.5,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftblankspace",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-cruel-summer",
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 329.4117647058823,
+    "video": "ic8j13piAhQ",
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.864Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 170,
+    "volume": 0.75,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftcruelsummer",
+    "local": false
+  },
+  {
     "id": "taylor-swift-i-knew-you-were-trouble",
     "title": "I Knew You Were Trouble",
     "artist": "Taylor Swift",
@@ -19202,6 +21172,34 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftshakeitoff",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-style",
+    "title": "Style",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 190,
+    "bar": 4,
+    "gap": 29138.684210526317,
+    "video": "-CmadmM5cOk",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-07T21:41:45.865Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 0.75,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftstyle",
     "local": false
   },
   {
@@ -20064,6 +22062,35 @@
     "local": false
   },
   {
+    "id": "the-kooks-naive",
+    "title": "Naive",
+    "artist": "The Kooks",
+    "language": "English",
+    "bpm": 308.58,
+    "bar": 4,
+    "gap": 9426.19502236049,
+    "video": "3UIYasZ_F3w",
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-07T21:41:45.866Z",
+    "edition": "Band Hero",
+    "genre": "Pop Rock",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.81,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thekooksnaive",
+    "local": false
+  },
+  {
     "id": "the-offspring-pretty-fly-for-a-white-guy",
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
@@ -20356,6 +22383,62 @@
     ],
     "tracksCount": 1,
     "search": "theweekndcantfeelmyface",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-out-of-time",
+    "title": "Out of Time",
+    "artist": "The Weeknd",
+    "language": "English",
+    "bpm": 359.77,
+    "bar": 4,
+    "gap": 23630.36070267115,
+    "video": "2fDzCWNS3ig",
+    "year": "2022",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-07T21:41:45.867Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.69,
+    "author": "Tracks (USDB)",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=2fDzCWNS3ig",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndoutoftime",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-save-your-tears",
+    "title": "Save your tears",
+    "artist": "The Weeknd",
+    "language": "English",
+    "bpm": 357.11,
+    "bar": 4,
+    "gap": 7038.907255467503,
+    "video": "XXYlFuWEuKI",
+    "year": "2020",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-07T21:41:45.868Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.75,
+    "author": "mustangfred and volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndsaveyourtears",
     "local": false
   },
   {
@@ -22073,6 +24156,33 @@
     ],
     "tracksCount": 1,
     "search": "zbigniewwodeckichalupywelcometo",
+    "local": false
+  },
+  {
+    "id": "zedd-foxes-clarity",
+    "title": "Clarity",
+    "artist": "Zedd & Foxes",
+    "language": "English",
+    "bpm": 256.02,
+    "bar": 4,
+    "gap": 8844.98406374502,
+    "video": "IxxstCcJlsc",
+    "year": "2013",
+    "lastUpdate": "2023-11-07T21:41:45.869Z",
+    "genre": "Electronic",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.6,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "zeddfoxesclarity",
     "local": false
   },
   {
