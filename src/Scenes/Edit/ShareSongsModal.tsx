@@ -1,4 +1,5 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
+import { captureException } from '@sentry/react';
 import SongDao from 'Songs/SongsService';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import posthog from 'posthog-js';
@@ -14,13 +15,18 @@ const SHARE_SONGS_KEY = 'share-songs';
 export const useShareSongs = createPersistedState<boolean | null>(SHARE_SONGS_KEY);
 
 export const shareSong = async (id: string) => {
-  const isShareEnabled = storage.getValue(SHARE_SONGS_KEY);
+  try {
+    const isShareEnabled = storage.getValue(SHARE_SONGS_KEY);
 
-  if (!isShareEnabled) return;
+    if (!isShareEnabled) return;
 
-  const songData = await SongDao.get(id);
-  if (songData) {
-    posthog.capture('share-song', { song: convertSongToTxt(songData) });
+    const songData = await SongDao.get(id);
+    if (songData) {
+      posthog.capture('share-song', { song: convertSongToTxt(songData) });
+    }
+  } catch (e) {
+    console.error(e);
+    captureException(e);
   }
 };
 
