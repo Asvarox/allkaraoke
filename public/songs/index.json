@@ -9693,7 +9693,7 @@
   },
   {
     "id": "jeden-osiem-l-jak-zapomniec",
-    "title": "Jak zapomniec",
+    "title": "Jak zapomnieć",
     "artist": "Jeden Osiem L",
     "language": "Polish",
     "bpm": 340,
@@ -9702,6 +9702,7 @@
     "video": "qvv7t8Y0iWk",
     "year": "2004",
     "artistOrigin": "PL",
+    "lastUpdate": "2023-11-08T20:39:30.973Z",
     "edition": "SingStar ESKA",
     "genre": "Pop",
     "videoGap": 0,
