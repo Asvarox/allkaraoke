@@ -25,7 +25,7 @@ test('Edit song', async ({ page }) => {
   await expect(page.locator('[data-test="author-name"] input')).toHaveValue('author');
   await expect(page.locator('[data-test="author-url"] input')).toHaveValue('authorUrl');
   await expect(page.locator('[data-test="video-url"] input')).toHaveValue(
-    'https://www.youtube.com/watch?v=mcEVAY1H5As',
+    'https://www.youtube.com/watch?v=W9nZ6u15yis',
   );
 
   await page.getByTestId('next-button').click();
