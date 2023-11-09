@@ -45,7 +45,7 @@ export default class CanvasDrawing {
 
     this.drawFrame();
 
-    if (GraphicSetting.get() === 'high') {
+    if (false && GraphicSetting.get() === 'high') {
       try {
         this.shaders = new Shaders(this.canvas);
       } catch (e) {
