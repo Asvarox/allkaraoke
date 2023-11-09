@@ -26,6 +26,9 @@ function LandingPage() {
           <LogoIcon />
           <Logo />
         </LogoContainer>
+        <PlayButton onClick={() => navigate('/quick-setup')} data-test="enter-the-game">
+          Enter the game
+        </PlayButton>
         <Stats>
           <StatSegment>
             <StatsDescription>
@@ -76,9 +79,6 @@ function LandingPage() {
             <img src={screenshot2} alt="In-game screen" />
           </StatSegment>
         </Stats>
-        <PlayButton onClick={() => navigate('/quick-setup')} data-test="enter-the-game">
-          Enter the game
-        </PlayButton>
       </Container>
     </>
   );
