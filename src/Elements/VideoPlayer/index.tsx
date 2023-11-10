@@ -1,4 +1,3 @@
-import 'core-js/es/array/at';
 import { ComponentProps, ForwardedRef, forwardRef } from 'react';
 import OfflineVideoPlayer from './Offline';
 import YoutubeVideoPlayer, { VideoPlayerRef } from './Youtube';

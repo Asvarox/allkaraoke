@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { useTheme } from '@mui/material';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
+import { GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import {
   ExpandedData,
   FinalSongCard,
@@ -281,9 +281,9 @@ const SongBPMIndicator = (
     song: SongPreview;
   } & ComponentProps<typeof BaseSongBPMIndicator>,
 ) => {
-  const theme = useTheme();
+  const [graphicSetting] = useSettingValue(GraphicSetting);
 
-  if (theme.graphicSetting === 'low') return null;
+  if (graphicSetting === 'low') return null;
 
   const realBpm = props.song.realBpm ?? (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
   return (

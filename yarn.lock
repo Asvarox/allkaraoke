@@ -5261,13 +5261,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/howler@npm:^2.2.9":
-  version: 2.2.9
-  resolution: "@types/howler@npm:2.2.9"
-  checksum: d4fda8f5fa8af4fb4268604afa702cf139cd9de8fc135e1cefa532100596abf79dc7c8f2d559da2c0a1f20f7d6e67407ba2b90a93c5f645494ed37f4769eb602
-  languageName: node
-  linkType: hard
-
 "@types/http-cache-semantics@npm:*":
   version: 4.0.1
   resolution: "@types/http-cache-semantics@npm:4.0.1"
@@ -7600,13 +7593,6 @@ __metadata:
   version: 3.20.1
   resolution: "core-js-pure@npm:3.20.1"
   checksum: b52f1e3f403cd962693d0d5f31a865d0552b7e7afed3c083c4646979d8769e1767848dfa82d797233d30a5f62482b85c171099832a1593e305b8b5beed0acac8
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^3.33.0":
-  version: 3.33.0
-  resolution: "core-js@npm:3.33.0"
-  checksum: 940ad9c3bbc971d884c08da7cf4a3fe9b360011a35b9e93c35627c439419f0e852749a357bef5d072d5f8921d45b46bd886a3ebb6979628c292ecf787a50506f
   languageName: node
   linkType: hard
 
@@ -9962,13 +9948,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"howler@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "howler@npm:2.2.4"
-  checksum: e4177f6581ede99fdec68c2dc16a01e74ed3e4f3b28d4804030246f74f15a50311bd3d4d332a6e968a296e6bae1d0a8c8703e8e22d98ef8f5a3299e545e2fe55
-  languageName: node
-  linkType: hard
-
 "html-escaper@npm:^2.0.0":
   version: 2.0.2
   resolution: "html-escaper@npm:2.0.2"
@@ -11205,25 +11184,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lottie-react@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "lottie-react@npm:2.4.0"
-  dependencies:
-    lottie-web: "npm:^5.10.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 6b8e69922eaf3ff14ca09ecc8a4318487b18eb3f776801ddd85e8cbff6f05c7229e32f8e6c32f1e01d8564fb806e8b9a4956cb6fbf7b62ca9318feccc3d3923a
-  languageName: node
-  linkType: hard
-
-"lottie-web@npm:^5.10.2":
-  version: 5.10.2
-  resolution: "lottie-web@npm:5.10.2"
-  checksum: 129100139472d64ba194fab09107f2829761df198e4dfaa93d8a2cb2c306aea1968e16c89bc8cfbbefb9a6e2d86ff589f72a8b4a47b6b607a05de11ab3d10376
-  languageName: node
-  linkType: hard
-
 "loupe@npm:^2.3.6":
   version: 2.3.6
   resolution: "loupe@npm:2.3.6"
@@ -12186,7 +12146,6 @@ __metadata:
     "@testing-library/user-event": "npm:^14.5.1"
     "@types/curtainsjs": "npm:^8.1.1"
     "@types/dom-screen-wake-lock": "npm:^1.0.1"
-    "@types/howler": "npm:^2.2.9"
     "@types/latinize": "npm:^0.2.16"
     "@types/lodash": "npm:^4.14.199"
     "@types/lodash-es": "npm:^4.17.9"
@@ -12202,7 +12161,6 @@ __metadata:
     "@vitejs/plugin-react": "npm:^4.1.0"
     "@vitest/ui": "npm:^0.34.7"
     aubiojs: "npm:0.1.0"
-    core-js: "npm:^3.33.0"
     curtainsjs: "npm:^8.1.5"
     date-fns: "npm:^2.30.0"
     dotenv: "npm:^16.3.1"
@@ -12211,7 +12169,6 @@ __metadata:
     eslint-config-react-app: "npm:^7.0.1"
     eslint-plugin-no-only-tests: "npm:^3.1.0"
     happy-dom: "npm:^12.9.0"
-    howler: "npm:^2.2.4"
     husky: "npm:^8.0.3"
     is-mobile: "npm:^4.0.0"
     js-yaml: "npm:^4.1.0"
@@ -12220,7 +12177,6 @@ __metadata:
     localforage: "npm:^1.10.0"
     lodash: "npm:^4.17.21"
     lodash-es: "npm:^4.17.21"
-    lottie-react: "npm:^2.4.0"
     material-react-table: "npm:^1.15.0"
     msgpackr: "npm:^1.9.9"
     musicbrainz-api: "npm:^0.8.0"
@@ -15688,7 +15644,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.4.10":
+"vite@npm:^4.4.10, vite@npm:^4.4.11":
   version: 4.5.0
   resolution: "vite@npm:4.5.0"
   dependencies:
@@ -15725,46 +15681,6 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: b262ea4880ba7de8a77b0a665c771561ae3cb7f0d6c5b90e65298039755192550bf90cb96a2910d564506e2d499aa20e9becd330b835c34d414249083ac6e40c
-  languageName: node
-  linkType: hard
-
-"vite@npm:^4.4.11":
-  version: 4.4.11
-  resolution: "vite@npm:4.4.11"
-  dependencies:
-    esbuild: "npm:^0.18.10"
-    fsevents: "npm:~2.3.2"
-    postcss: "npm:^8.4.27"
-    rollup: "npm:^3.27.1"
-  peerDependencies:
-    "@types/node": ">= 14"
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.4.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 325e2955fe939bc5706aab2aa46498d98adace1df4d11f42cf4539754b886798b6bf7c247c94d23fb6cf3a569e56bad4a11561bf25e8e6dcc8c0e2f73ecc5e5b
   languageName: node
   linkType: hard
 
