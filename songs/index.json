@@ -272,6 +272,33 @@
     "local": false
   },
   {
+    "id": "a-ha-take-on-me-mtv-unplugged",
+    "title": "Take On Me (MTV Unplugged)",
+    "artist": "a-ha",
+    "language": "English",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 13515.23076923077,
+    "video": "-xKM3mGt2pE",
+    "year": "2017",
+    "artistOrigin": "NO",
+    "lastUpdate": "2023-11-09T21:07:15.438Z",
+    "videoGap": 0,
+    "realBpm": 65,
+    "volume": 1,
+    "author": "airBN",
+    "authorUrl": "",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20On%20Me%20(MTV%20Unplugged)",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ahatakeonmemtvunplugged",
+    "local": false
+  },
+  {
     "id": "a-ha-take-on-me",
     "title": "Take on me",
     "artist": "a-ha",
@@ -637,6 +664,34 @@
     ],
     "tracksCount": 1,
     "search": "adelesomeonelikeyou",
+    "local": false
+  },
+  {
+    "id": "adolescents-orquesta-persona-ideal",
+    "title": "Persona ideal",
+    "artist": "Adolescent's Orquesta",
+    "language": "Spanish",
+    "bpm": 302.76,
+    "bar": 4,
+    "gap": 12418.116131589377,
+    "video": "d9bRnGo2gjk",
+    "year": "1999",
+    "artistOrigin": "VE",
+    "lastUpdate": "2023-11-09T21:07:15.443Z",
+    "genre": "Salsa",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.7,
+    "author": "DaVIch0",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adolescentsorquestapersonaideal",
     "local": false
   },
   {
@@ -2399,6 +2454,36 @@
     "local": false
   },
   {
+    "id": "backstreet-boys-as-long-as-you-love-me",
+    "title": "As Long As You Love Me",
+    "artist": "Backstreet Boys",
+    "language": "English",
+    "bpm": 388.83,
+    "bar": 4,
+    "gap": 12296.990972918757,
+    "video": "0Gl2QnHNpkA",
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-09T21:07:15.446Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 98,
+    "previewStart": 100,
+    "previewEnd": 132,
+    "volume": 0.72,
+    "author": "znxineohp",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboysaslongasyouloveme",
+    "local": false
+  },
+  {
     "id": "backstreet-boys-everybody-backstreets-back",
     "title": "Everybody (Backstreet's Back)",
     "artist": "Backstreet Boys",
@@ -2447,6 +2532,35 @@
     ],
     "tracksCount": 1,
     "search": "backstreetboysiwantitthatway",
+    "local": false
+  },
+  {
+    "id": "backstreet-boys-incomplete",
+    "title": "Incomplete",
+    "artist": "Backstreet Boys",
+    "language": "English",
+    "bpm": 268.04,
+    "bar": 4,
+    "gap": 16780.687658558425,
+    "video": "WVe80iZtlYU",
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-09T21:07:15.448Z",
+    "videoGap": -4,
+    "realBpm": 134,
+    "previewStart": 115,
+    "previewEnd": 158,
+    "volume": 0.64,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboysincomplete",
     "local": false
   },
   {
@@ -3921,6 +4035,35 @@
     ],
     "tracksCount": 1,
     "search": "brunomarslockedoutofheaven",
+    "local": false
+  },
+  {
+    "id": "bryan-adams-rod-stewart-sting-all-for-love-the-three-musketeers",
+    "title": "All For Love (\"The Three Musketeers\")",
+    "artist": "Bryan Adams, Rod Stewart & Sting",
+    "language": "English",
+    "bpm": 298.48,
+    "bar": 4,
+    "gap": 59144.9075314929,
+    "video": "ofA3URC1wyk",
+    "year": "1993",
+    "lastUpdate": "2023-11-09T21:07:15.451Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 75,
+    "previewStart": 112,
+    "previewEnd": 156,
+    "volume": 0.78,
+    "author": "jockel1974",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bryanadamsrodstewartstingallforlovethethreemusketeers",
     "local": false
   },
   {
@@ -6497,6 +6640,36 @@
     "local": false
   },
   {
+    "id": "edward-sharpe-and-the-magnetic-zeros-home",
+    "title": "Home",
+    "artist": "Edward Sharpe And The Magnetic Zeros",
+    "language": "English",
+    "bpm": 224.64,
+    "bar": 4,
+    "gap": 18207.397435897437,
+    "video": "DHEOF_rcND8",
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-09T21:07:15.648Z",
+    "genre": "Folk",
+    "videoGap": 0,
+    "realBpm": 112,
+    "previewStart": 149,
+    "previewEnd": 182,
+    "volume": 0.79,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edwardsharpeandthemagneticzeroshome",
+    "local": false
+  },
+  {
     "id": "edyta-gorniak-mietek-szczesniak-dumka-na-dwa-serca",
     "title": "Dumka na dwa serca",
     "artist": "Edyta Górniak & Mietek Szcześniak",
@@ -6658,6 +6831,90 @@
     ],
     "tracksCount": 1,
     "search": "elenasiegman115",
+    "local": false
+  },
+  {
+    "id": "ellie-goulding-burn",
+    "title": "Burn",
+    "artist": "Ellie Goulding",
+    "language": "English",
+    "bpm": 332.22,
+    "bar": 4,
+    "gap": 10756.682318945277,
+    "video": "CGyEd0aKWZE",
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-09T21:07:15.650Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 87,
+    "volume": 0.73,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elliegouldingburn",
+    "local": false
+  },
+  {
+    "id": "ellie-goulding-lights",
+    "title": "Lights",
+    "artist": "Ellie Goulding",
+    "language": "English",
+    "bpm": 240.02,
+    "bar": 4,
+    "gap": 7050.083326389467,
+    "video": "0NKUpo_xKyQ",
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-09T21:07:15.651Z",
+    "genre": "Electropop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.7,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elliegouldinglights",
+    "local": false
+  },
+  {
+    "id": "ellie-goulding-love-me-like-you-do",
+    "title": "Love Me Like You Do",
+    "artist": "Ellie Goulding",
+    "language": "English",
+    "bpm": 190.04,
+    "bar": 4,
+    "gap": 19373.900231530206,
+    "video": "AJtDXIazrMo",
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-09T21:07:15.652Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 0.72,
+    "author": "Coppo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elliegouldinglovemelikeyoudo",
     "local": false
   },
   {
@@ -8037,6 +8294,37 @@
     ],
     "tracksCount": 1,
     "search": "giuliabemeninasolta",
+    "local": false
+  },
+  {
+    "id": "gloria-estefan-hoy",
+    "title": "Hoy",
+    "artist": "Gloria Estefan",
+    "language": "Spanish",
+    "bpm": 392,
+    "bar": 4,
+    "gap": 9245.102040816326,
+    "video": "cyblSDoRRxg",
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-09T21:07:15.654Z",
+    "edition": "SingStar [ES]",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 104,
+    "previewStart": 50,
+    "previewEnd": 100,
+    "volume": 0.69,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gloriaestefanhoy",
     "local": false
   },
   {
@@ -9585,6 +9873,36 @@
     "local": false
   },
   {
+    "id": "jack-white-lazaretto",
+    "title": "Lazaretto",
+    "artist": "Jack White",
+    "language": "English",
+    "bpm": 391.17,
+    "bar": 4,
+    "gap": 19703.500523801005,
+    "video": "dO8n-Zvulbk",
+    "year": "2014",
+    "lastUpdate": "2023-11-09T21:07:15.654Z",
+    "edition": "Rock Band 4",
+    "genre": "Garage Rock",
+    "videoGap": 0,
+    "realBpm": 118,
+    "previewStart": 52,
+    "previewEnd": 98,
+    "volume": 0.77,
+    "author": "Gollum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jackwhitelazaretto",
+    "local": false
+  },
+  {
     "id": "james-blunt-youre-beautiful",
     "title": "You're Beautiful",
     "artist": "James Blunt",
@@ -10003,6 +10321,33 @@
     ],
     "tracksCount": 1,
     "search": "johnnycashringoffire",
+    "local": false
+  },
+  {
+    "id": "jose-jose-amar-y-querer",
+    "title": "Amar y querer",
+    "artist": "José José",
+    "language": "Spanish",
+    "bpm": 263.98,
+    "bar": 4,
+    "gap": 16147.195242063794,
+    "video": "RBicJYn3tGw",
+    "year": "1977",
+    "lastUpdate": "2023-11-09T21:07:15.729Z",
+    "genre": "Balada",
+    "videoGap": 0,
+    "realBpm": 66,
+    "volume": 0.69,
+    "author": "JaVar61",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "josejoseamaryquerer",
     "local": false
   },
   {
@@ -14679,6 +15024,33 @@
     "local": false
   },
   {
+    "id": "mon-laferte-tu-falta-de-querer",
+    "title": "Tu falta de querer",
+    "artist": "Mon Laferte",
+    "language": "Spanish",
+    "bpm": 259.58,
+    "bar": 4,
+    "gap": 24060.643886277834,
+    "video": "WT-VE9OyAJk",
+    "year": "2015",
+    "artistOrigin": "MX",
+    "lastUpdate": "2023-11-09T21:07:15.799Z",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.9,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "monlafertetufaltadequerer",
+    "local": false
+  },
+  {
     "id": "monika-brodka-dziewczyna-mojego-chlopaka",
     "title": "Dziewczyna mojego chłopaka",
     "artist": "Monika Brodka",
@@ -15591,6 +15963,37 @@
     ],
     "tracksCount": 1,
     "search": "natashabedingfieldunwritten",
+    "local": false
+  },
+  {
+    "id": "nelly-furtado-all-good-things-come-to-an-end",
+    "title": "All Good Things (Come To An End)",
+    "artist": "Nelly Furtado",
+    "language": "English",
+    "bpm": 201.8,
+    "bar": 4,
+    "gap": 8473.696729435083,
+    "video": "4pBo-GL9SRg",
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-09T21:07:15.800Z",
+    "edition": "SingStar Hottest Hits",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 101,
+    "previewStart": 41,
+    "previewEnd": 80,
+    "volume": 0.8,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nellyfurtadoallgoodthingscometoanend",
     "local": false
   },
   {
@@ -18236,6 +18639,36 @@
     "local": false
   },
   {
+    "id": "radical-face-welcome-home",
+    "title": "Welcome Home",
+    "artist": "Radical Face",
+    "language": "English",
+    "bpm": 145,
+    "bar": 4,
+    "gap": 16307.517241379312,
+    "video": "P8a4iiOnzsc",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-09T21:07:15.801Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 145,
+    "previewStart": 63,
+    "previewEnd": 101,
+    "volume": 0.88,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "radicalfacewelcomehome",
+    "local": false
+  },
+  {
     "id": "radiohead-creep",
     "title": "Creep",
     "artist": "Radiohead",
@@ -18596,6 +19029,33 @@
     ],
     "tracksCount": 1,
     "search": "redhotchilipeppersunderthebridge",
+    "local": false
+  },
+  {
+    "id": "reik-inolvidable",
+    "title": "Inolvidable",
+    "artist": "Reik",
+    "language": "Spanish",
+    "bpm": 246.04,
+    "bar": 4,
+    "gap": 22612.548853844903,
+    "video": "zjpSX6fCPDc",
+    "year": "2008",
+    "artistOrigin": "MX",
+    "lastUpdate": "2023-11-09T21:07:15.801Z",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.7,
+    "author": "kaim21",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "reikinolvidable",
     "local": false
   },
   {
@@ -19049,6 +19509,63 @@
     ],
     "tracksCount": 1,
     "search": "robertchojnackiniecierpliwi",
+    "local": false
+  },
+  {
+    "id": "rocio-durcal-la-gata-bajo-la-lluvia",
+    "title": "La gata bajo la lluvia",
+    "artist": "Rocío Dúrcal",
+    "language": "Spanish",
+    "bpm": 356.39,
+    "bar": 4,
+    "gap": 15396.87064732456,
+    "video": "lOi4KbGuNJU",
+    "year": "1981",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-11-09T21:07:15.802Z",
+    "videoGap": 0,
+    "realBpm": 176,
+    "volume": 0.78,
+    "author": "kaim21",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rociodurcallagatabajolalluvia",
+    "local": false
+  },
+  {
+    "id": "rod-stewart-sailing",
+    "title": "Sailing",
+    "artist": "Rod Stewart",
+    "language": "English",
+    "bpm": 258.28,
+    "bar": 4,
+    "gap": 13182.699396004336,
+    "video": "FOt3oQ_k008",
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-09T21:07:15.803Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 129,
+    "previewStart": 75,
+    "previewEnd": 141,
+    "volume": 0.73,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rodstewartsailing",
     "local": false
   },
   {
@@ -21731,6 +22248,35 @@
     "local": false
   },
   {
+    "id": "the-cinematic-orchestra-to-build-a-home",
+    "title": "To build a home",
+    "artist": "The Cinematic Orchestra",
+    "language": "English",
+    "bpm": 280.62,
+    "bar": 4,
+    "gap": 50201.39170408381,
+    "video": "Wpov9na0sPM",
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-09T21:07:15.804Z",
+    "videoGap": 0,
+    "realBpm": 148,
+    "previewStart": 275,
+    "previewEnd": 340,
+    "volume": 0.75,
+    "author": "kaim21",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thecinematicorchestratobuildahome",
+    "local": false
+  },
+  {
     "id": "the-clash-should-i-stay-or-should-i-go",
     "title": "Should I Stay Or Should I GO",
     "artist": "The Clash",
@@ -21979,6 +22525,36 @@
     ],
     "tracksCount": 1,
     "search": "thejacksonsblameitontheboogie",
+    "local": false
+  },
+  {
+    "id": "the-kelly-family-i-cant-help-myself-i-love-you-i-want-you",
+    "title": "I Can’t Help Myself (I Love You, I Want You)",
+    "artist": "The Kelly Family",
+    "language": "English",
+    "bpm": 288.15,
+    "bar": 4,
+    "gap": 8710.931806350858,
+    "video": "e1xkb9y34YA",
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-09T21:07:15.805Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 95,
+    "previewStart": 80,
+    "previewEnd": 126,
+    "volume": 0.68,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thekellyfamilyicanthelpmyselfiloveyouiwantyou",
     "local": false
   },
   {
