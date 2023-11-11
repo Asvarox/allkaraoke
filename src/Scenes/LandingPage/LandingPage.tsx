@@ -118,6 +118,7 @@ const StatSegment = styled.div`
   img {
     margin-bottom: 4rem;
     width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     box-shadow: 0 0 2rem white;
     border-radius: 1rem;
