@@ -7,7 +7,7 @@ import ShareSongsModal, { useShareSongs } from 'Scenes/Edit/ShareSongsModal';
 import SongDao from 'Songs/SongsService';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
-import { format } from 'date-fns';
+import dayjs from 'dayjs';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { SongPreview } from 'interfaces';
 import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
@@ -57,7 +57,7 @@ export default function SongList(props: Props) {
         Cell: ({ cell }) => {
           const val = cell.getValue<string>();
 
-          return val && <abbr title={val}>{format(new Date(val), 'LLL do y')}</abbr>;
+          return val && <abbr title={val}>{dayjs(val).format('MMMM DD, YYYY')}</abbr>;
         },
         sortingFn: (b, a) => {
           return (

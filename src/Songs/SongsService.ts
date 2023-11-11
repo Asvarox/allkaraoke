@@ -3,7 +3,7 @@ import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
 import getSongId from 'Songs/utils/getSongId';
 import { lastVisit } from 'Stats/lastVisit';
-import { isAfter } from 'date-fns';
+import dayjs from 'dayjs';
 import { Song, SongPreview } from 'interfaces';
 import localForage from 'localforage';
 import { getSongPreview } from './utils';
@@ -85,13 +85,13 @@ class SongsService {
       this.getLocalIndex(),
       this.getDeletedSongsList(),
     ]);
-    const lastVisitDate = new Date(lastVisit);
+    const lastVisitDate = dayjs(lastVisit);
 
     // Filter out local songs that were updated to default index
     const storageIndexWithUpdatedSongs = storageIndex.filter((song) => {
       const defaultSong = defaultIndex.find((localSong) => localSong.id === song.id);
       if (!defaultSong) return true;
-      return isAfter(new Date(song.lastUpdate ?? 0), new Date(defaultSong.lastUpdate ?? 0));
+      return dayjs(song.lastUpdate ?? 0).isAfter(dayjs(defaultSong.lastUpdate ?? 0));
     });
     const localSongs = storageIndexWithUpdatedSongs.map((song) => song.id);
 
@@ -106,7 +106,7 @@ class SongsService {
       ...defaultIndex.filter((song) => !localSongs.includes(this.generateSongFile(song))),
     ].map((song) => ({
       ...song,
-      isNew: song.lastUpdate ? isAfter(new Date(song.lastUpdate), lastVisitDate) : false,
+      isNew: song.lastUpdate ? dayjs(song.lastUpdate).isAfter(lastVisitDate) : false,
       isDeleted: deletedSongs?.includes(this.generateSongFile(song)),
     }));
 

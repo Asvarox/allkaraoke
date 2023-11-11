@@ -1,5 +1,5 @@
-import { CircularProgress } from '@mui/material';
 import CameraManager from 'Camera/CameraManager';
+import Loader from 'Elements/Loader';
 import { MenuButton } from 'Elements/Menu';
 import MenuWithLogo from 'Elements/MenuWithLogo';
 import { nextValue, Switcher } from 'Elements/Switcher';
@@ -48,7 +48,7 @@ function Settings(props: Props) {
   };
 
   let cameraValue: ReactNode = 'Disabled';
-  if (isRequestInProgress) cameraValue = <CircularProgress size="0.9em" />;
+  if (isRequestInProgress) cameraValue = <Loader size="0.9em" />;
   else if (camera === null) cameraValue = 'Click to enable';
   else if (camera) cameraValue = 'Enabled';
 

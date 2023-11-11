@@ -1,7 +1,7 @@
 import { captureException } from '@sentry/react';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useSongIndex from 'Songs/hooks/useSongIndex';
-import { isAfter } from 'date-fns';
+import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
 import { uniq } from 'lodash-es';
 import { useDeferredValue, useMemo, useState } from 'react';
@@ -87,9 +87,9 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   },
   updatedAfter: (songList, after: string) => {
     if (!after) return songList;
-    const dateAfter = new Date(after);
+    const dateAfter = dayjs(after);
 
-    return songList.filter((song) => song.lastUpdate && isAfter(new Date(song.lastUpdate), dateAfter));
+    return songList.filter((song) => song.lastUpdate && dayjs(song.lastUpdate).isAfter(dateAfter));
   },
 };
 

@@ -5,7 +5,6 @@ import Settings from 'Scenes/Settings/Settings';
 import { Redirect, Route, Router, useLocation } from 'wouter';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
-import Game from './Scenes/Game/Game';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 
@@ -14,6 +13,7 @@ import { Theme, ThemeProvider, createTheme } from '@mui/material';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import { GameScreens } from 'Elements/GameScreens';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
+import Loader from 'Elements/Loader';
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import LandingPage from 'Scenes/LandingPage/LandingPage';
@@ -31,6 +31,7 @@ import Toolbar from 'Toolbar/Toolbar';
 import { Suspense, lazy, useEffect, useMemo } from 'react';
 
 const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
+const LazyGame = lazy(() => import('./Scenes/Game/Game'));
 
 function App() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
@@ -70,7 +71,11 @@ function App() {
               <GameScreens>
                 <Toolbar />
                 <Route path="/game/:songId?">
-                  {({ songId }) => <Game songId={songId ? decodeURIComponent(songId) : undefined} />}
+                  {({ songId }) => (
+                    <Suspense fallback={<Loader />}>
+                      <LazyGame songId={songId ? decodeURIComponent(songId) : undefined} />
+                    </Suspense>
+                  )}
                 </Route>
                 <Route path="/jukebox" component={Jukebox} />
                 <Route path="/remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
@@ -88,7 +93,7 @@ function App() {
               <Route
                 path="/edit"
                 component={() => (
-                  <Suspense fallback={'Loading'}>
+                  <Suspense fallback={<Loader />}>
                     <LazySongList />
                   </Suspense>
                 )}

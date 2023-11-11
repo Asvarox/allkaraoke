@@ -3,7 +3,7 @@ import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
-import { addDays } from 'date-fns';
+import dayjs from 'dayjs';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
@@ -25,7 +25,7 @@ const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
         { name: 'Classics', filters: { yearBefore: 1995 } },
         { name: 'Modern', filters: { yearAfter: 1995 } },
         { name: 'Duets', filters: { duet: true } },
-        { name: 'New', filters: { updatedAfter: addDays(new Date(), -31).toISOString() } },
+        { name: 'New', filters: { updatedAfter: dayjs().subtract(31, 'days').toISOString() } },
       ].filter((playlist): playlist is PlaylistEntry => playlist !== null),
     [songLanguages],
   );

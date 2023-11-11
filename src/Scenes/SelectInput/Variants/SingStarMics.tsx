@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { CircularProgress } from '@mui/material';
+import Loader from 'Elements/Loader';
 import { MenuButton } from 'Elements/Menu';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
@@ -95,7 +95,7 @@ function SingStarMics(props: Props) {
         {!isSetup && (
           <>
             <h3>
-              <CircularProgress size="0.85em" /> Connect your SingStar microphones.
+              <Loader size="0.85em" /> Connect your SingStar microphones.
             </h3>
             <h4 data-test="setup-not-completed">It can take a couple of seconds to detect after you connect them.</h4>
             {listChanged && (

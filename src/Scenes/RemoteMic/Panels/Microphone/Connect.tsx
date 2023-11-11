@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { QrCode2, Warning, Wifi } from '@mui/icons-material';
-import { CircularProgress } from '@mui/material';
 import { Input } from 'Elements/Input';
+import Loader from 'Elements/Loader';
 import { MenuButton } from 'Elements/Menu';
 import RemoteMicClient from 'RemoteMic/Network/Client';
 import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
@@ -78,7 +78,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
           data-test="player-name-input"
         />
         <ConnectButton type="submit" disabled={disabled} data-test="connect-button">
-          {connectionStatus === 'connecting' && <CircularProgress size={'1em'} />}
+          {connectionStatus === 'connecting' && <Loader size={'1em'} />}
           {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
         </ConnectButton>
         {(showConnectionTip || connectionError) && (

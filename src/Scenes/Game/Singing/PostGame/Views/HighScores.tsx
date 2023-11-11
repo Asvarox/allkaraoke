@@ -4,7 +4,7 @@ import { typography } from 'Elements/cssMixins';
 import ScoreText from 'Scenes/Game/Singing/GameOverlay/Components/ScoreText';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { useEditScore } from 'Songs/stats/hooks';
-import { format } from 'date-fns';
+import dayjs from 'dayjs';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import HighScoreRename from './HighScoreRename';
@@ -43,7 +43,7 @@ function HighScoresView({ onNextStep, highScores, singSetup, song }: Props) {
             <ScoreScore>
               <ScoreText score={score.score} />
             </ScoreScore>
-            <ScoreDate>{format(new Date(score.date), 'LLL do y')}</ScoreDate>
+            <ScoreDate>{dayjs(score.date).format('MMMM DD, YYYY')}</ScoreDate>
           </ScoreContainer>
         ))}
       </ScoresContainer>

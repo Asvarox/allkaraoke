@@ -1,6 +1,6 @@
 import { css, Global } from '@emotion/react';
 import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
-import { isAfter } from 'date-fns';
+import dayjs from 'dayjs';
 import { GameScreens } from 'Elements/GameScreens';
 import { SongPreview } from 'interfaces';
 import React from 'react';
@@ -14,13 +14,13 @@ import { getNewSongsSequenceLength, NewSongs } from 'videos/UpdateVideo/NewSongs
 import { getUpdatesSequenceLength, Updates } from 'videos/UpdateVideo/Updates';
 import songIndex from '../../public/songs/index.json';
 
-const lastUpdate = new Date('2023-09-01T09:26:15.631Z');
+const lastUpdate = dayjs('2023-09-01T09:26:15.631Z');
 
 const data = {
   date: new Date('2023-09-22T09:26:15.631Z'),
   songPack: null,
   newSongs: (songIndex as any as SongPreview[]).filter(
-    (song) => song.lastUpdate && isAfter(new Date(song.lastUpdate), lastUpdate),
+    (song) => song.lastUpdate && dayjs(song.lastUpdate).isAfter(lastUpdate),
   ),
   updates: [
     {

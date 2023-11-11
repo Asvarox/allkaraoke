@@ -3,7 +3,7 @@
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import analyze from 'rollup-plugin-visualizer';
-import { defineConfig, splitVendorChunkPlugin } from 'vite';
+import { defineConfig } from 'vite';
 import rewriteAll from 'vite-plugin-rewrite-all';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -28,7 +28,6 @@ export default defineConfig({
     tsconfigPaths(),
     analyze(),
     !customCert && basicSsl(),
-    splitVendorChunkPlugin(),
     rewriteAll(),
   ],
   base: './',

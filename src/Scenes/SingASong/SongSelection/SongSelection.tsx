@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { CircularProgress } from '@mui/material';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import Loader from 'Elements/Loader';
 import { focused, typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect } from 'GameEvents/hooks';
@@ -117,7 +117,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   if (isLoading) {
     return (
       <LoaderContainer>
-        <CircularProgress size="15em" color="secondary" />
+        <Loader size="15em" color="secondary" />
       </LoaderContainer>
     );
   }

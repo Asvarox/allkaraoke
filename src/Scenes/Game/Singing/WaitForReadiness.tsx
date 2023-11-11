@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { CheckCircleOutline } from '@mui/icons-material';
-import { CircularProgress } from '@mui/material';
+import Loader from 'Elements/Loader';
 import { typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
@@ -82,9 +82,7 @@ function WaitForReadiness({ onFinish }: Props) {
               data-name={name}
               data-confirmed={confirmed}>
               {!areAllPlayersReady && (
-                <ConfirmStatus>
-                  {confirmed ? <CheckCircleOutline /> : <CircularProgress color="info" size="1em" />}
-                </ConfirmStatus>
+                <ConfirmStatus>{confirmed ? <CheckCircleOutline /> : <Loader color="info" size="1em" />}</ConfirmStatus>
               )}{' '}
               <SinglePlayer player={player} />
             </PlayerEntry>

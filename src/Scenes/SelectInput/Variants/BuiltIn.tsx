@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Check, Error } from '@mui/icons-material';
-import { CircularProgress } from '@mui/material';
+import Loader from 'Elements/Loader';
 import { MenuButton } from 'Elements/Menu';
 import { Switcher, nextIndex } from 'Elements/Switcher';
 import events from 'GameEvents/GameEvents';
@@ -145,7 +145,7 @@ function BuiltIn(props: Props) {
                 <>
                   <h3>Make some noise to the microphone</h3>
                   <AudibleIconContainer>
-                    <CircularProgress size="1em" />
+                    <Loader size="1em" />
                   </AudibleIconContainer>
                 </>
               )}

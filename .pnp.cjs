@@ -74,7 +74,7 @@ const RAW_RUNTIME_STATE =
           ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.34.7"],\
           ["aubiojs", "npm:0.1.0"],\
           ["curtainsjs", "npm:8.1.5"],\
-          ["date-fns", "npm:2.30.0"],\
+          ["dayjs", "npm:1.11.10"],\
           ["dotenv", "npm:16.3.1"],\
           ["eslint", "npm:8.51.0"],\
           ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.0.0"],\
@@ -11050,12 +11050,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["date-fns", [\
-      ["npm:2.30.0", {\
-        "packageLocation": "./.yarn/cache/date-fns-npm-2.30.0-895c790e0f-70b3e8ea7a.zip/node_modules/date-fns/",\
+    ["dayjs", [\
+      ["npm:1.11.10", {\
+        "packageLocation": "./.yarn/cache/dayjs-npm-1.11.10-2b4382efc1-27e8f5bc01.zip/node_modules/dayjs/",\
         "packageDependencies": [\
-          ["date-fns", "npm:2.30.0"],\
-          ["@babel/runtime", "npm:7.23.2"]\
+          ["dayjs", "npm:1.11.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15992,7 +15991,7 @@ const RAW_RUNTIME_STATE =
           ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.34.7"],\
           ["aubiojs", "npm:0.1.0"],\
           ["curtainsjs", "npm:8.1.5"],\
-          ["date-fns", "npm:2.30.0"],\
+          ["dayjs", "npm:1.11.10"],\
           ["dotenv", "npm:16.3.1"],\
           ["eslint", "npm:8.51.0"],\
           ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.0.0"],\

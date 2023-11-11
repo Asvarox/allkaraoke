@@ -5,7 +5,7 @@ import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SongFlag from 'Scenes/SingASong/SongSelection/SongCard/SongFlag';
 import { useSongStats } from 'Songs/stats/hooks';
-import { addDays, isAfter } from 'date-fns';
+import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
 import { ComponentProps, ReactNode, useCallback } from 'react';
 
@@ -182,7 +182,7 @@ export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
   const stats = useSongStats(song);
   const lastPlayed = stats?.scores?.at(-1)?.date ?? false;
 
-  const playedToday = lastPlayed && isAfter(new Date(lastPlayed), addDays(new Date(), -1));
+  const playedToday = lastPlayed && dayjs(lastPlayed).isAfter(dayjs().subtract(1, 'days'));
 
   return stats?.plays ? (
     <SongStatIndicator data-test="song-stat-indicator">{playedToday ? 'Played today' : stats.plays}</SongStatIndicator>
