@@ -88,7 +88,7 @@ export default function SongList(props: Props) {
       <Grid container>
         <Grid item xs={3}>
           <Link to="/">
-            <a>Return to main menu</a>
+            <a data-test="main-menu-link">Return to main menu</a>
           </Link>
         </Grid>
         <Grid item xs={3}>
