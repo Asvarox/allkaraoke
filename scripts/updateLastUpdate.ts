@@ -29,6 +29,7 @@ async function updateLastUpdate(song: Song) {
 }
 
 const mbApi = new MusicBrainzApi({
+  botAccount: {},
   appName: 'Olkaraoke',
   appVersion: '0.1.0',
   appContactInfo: 'tatarczyk.aleksander@gmail.com',

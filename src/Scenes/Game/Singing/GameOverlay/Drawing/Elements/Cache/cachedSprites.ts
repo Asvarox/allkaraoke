@@ -1,4 +1,3 @@
-import { add } from 'lodash-es';
 import spriteMap, {
   smallNoteFragments,
   SpriteNames,
@@ -8,7 +7,7 @@ import createCanvas from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache
 const maxWidth = Math.max(...Object.values(spriteMap).map((sprite) => sprite.padding * 2 + sprite.width));
 const height = Object.values(spriteMap)
   .map((sprite) => sprite.padding * 2 + sprite.height)
-  .reduce(add, 0);
+  .reduce((a, e) => a + e, 0);
 
 const cachedCanvas = createCanvas(maxWidth, height);
 const ctx = cachedCanvas.getContext('2d')!;
