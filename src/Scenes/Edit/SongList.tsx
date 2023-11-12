@@ -140,7 +140,7 @@ export default function SongList(props: Props) {
                 }}
                 data-test="hide-song"
                 data-song={row.original.id}>
-                <VisibilityOff />
+                <Visibility />
               </IconButton>
             )}
             {row.original.isDeleted && (
@@ -152,7 +152,7 @@ export default function SongList(props: Props) {
                 }}
                 data-test="restore-song"
                 data-song={row.original.id}>
-                <Visibility />
+                <VisibilityOff />
               </IconButton>
             )}
             <IconButton
