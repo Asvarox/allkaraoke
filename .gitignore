@@ -125,4 +125,13 @@ test-results.json
 
 .eslintcache
 
+# Created by https://www.toptal.com/developers/gitignore/api/storybookjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=storybookjs
 
+### StorybookJs ###
+# gitignore template for the Storybook, UI guide for front apps
+# website: https://storybook.js.org/
+
+storybook-static/
+
+# End of https://www.toptal.com/developers/gitignore/api/storybookjs
