@@ -10,7 +10,7 @@ import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import dayjs from 'dayjs';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { SongPreview } from 'interfaces';
-import MaterialReactTable, { MRT_ColumnDef } from 'material-react-table';
+import { MRT_ColumnDef, MaterialReactTable } from 'material-react-table';
 import { useMemo } from 'react';
 import { Link } from 'wouter';
 
@@ -54,15 +54,11 @@ export default function SongList(props: Props) {
       {
         accessorKey: 'lastUpdate',
         header: 'Last Update',
+        sortUndefined: -1,
         Cell: ({ cell }) => {
           const val = cell.getValue<string>();
 
           return val && <abbr title={val}>{dayjs(val).format('MMMM DD, YYYY')}</abbr>;
-        },
-        sortingFn: (b, a) => {
-          return (
-            new Date(a.getValue<string>('lastUpdate')).getTime() - new Date(b.getValue<string>('lastUpdate')).getTime()
-          );
         },
       },
       {
@@ -102,6 +98,7 @@ export default function SongList(props: Props) {
           </Link>
         </Grid>
       </Grid>
+
       <MaterialReactTable
         data={data}
         columns={columns}
