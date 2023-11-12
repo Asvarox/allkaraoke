@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    groups:
+      storybook:
+        pattern: "^@storybook*"
+      eslint:
+        pattern: "*eslint*"
+      playwright:
+        pattern: "*playwright*"
+      vite:
+        patterns:
+          - "*vite*"
+          - "*vitest*"

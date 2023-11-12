@@ -28,6 +28,7 @@ jobs:
         uses: './.github/templates/setup-node'
       - run: yarn lint
       - run: yarn unimported
+      - run: yarn build-storybook
   ts-check:
     runs-on: ubuntu-latest
     steps:

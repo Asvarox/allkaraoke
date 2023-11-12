@@ -24,10 +24,13 @@
     "src/utils/range.ts",
     "src/utils/testUtils.ts"
   ],
-  "ignoreUnused": [],
+  "ignoreUnused": [
+    "@mui/system",
+    "@mui/x-date-pickers"
+  ],
   "ignoreUnresolved": [
-      "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw",
-      "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw",
+    "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw",
+    "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw",
     "utility-types"
   ],
   "entry": [

@@ -2725,7 +2725,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/base@npm:5.0.0-beta.23":
+"@mui/base@npm:5.0.0-beta.23, @mui/base@npm:^5.0.0-beta.22":
   version: 5.0.0-beta.23
   resolution: "@mui/base@npm:5.0.0-beta.23"
   dependencies:
@@ -2881,7 +2881,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/utils@npm:^5.14.17":
+"@mui/utils@npm:^5.14.16, @mui/utils@npm:^5.14.17":
   version: 5.14.17
   resolution: "@mui/utils@npm:5.14.17"
   dependencies:
@@ -2896,6 +2896,54 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 98c8b38075a2e3c2882eee8dccbbd5648747af63688ff2200acb63a7c3589864b3ea8bc067380bb3e4f46b09cec8b0fa144309644c0b9166bf194f76d89bc6fe
+  languageName: node
+  linkType: hard
+
+"@mui/x-date-pickers@npm:^6.18.1":
+  version: 6.18.1
+  resolution: "@mui/x-date-pickers@npm:6.18.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.2"
+    "@mui/base": "npm:^5.0.0-beta.22"
+    "@mui/utils": "npm:^5.14.16"
+    "@types/react-transition-group": "npm:^4.4.8"
+    clsx: "npm:^2.0.0"
+    prop-types: "npm:^15.8.1"
+    react-transition-group: "npm:^4.4.5"
+  peerDependencies:
+    "@emotion/react": ^11.9.0
+    "@emotion/styled": ^11.8.1
+    "@mui/material": ^5.8.6
+    "@mui/system": ^5.8.0
+    date-fns: ^2.25.0
+    date-fns-jalali: ^2.13.0-0
+    dayjs: ^1.10.7
+    luxon: ^3.0.2
+    moment: ^2.29.4
+    moment-hijri: ^2.1.2
+    moment-jalaali: ^0.7.4 || ^0.8.0 || ^0.9.0 || ^0.10.0
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/react":
+      optional: true
+    "@emotion/styled":
+      optional: true
+    date-fns:
+      optional: true
+    date-fns-jalali:
+      optional: true
+    dayjs:
+      optional: true
+    luxon:
+      optional: true
+    moment:
+      optional: true
+    moment-hijri:
+      optional: true
+    moment-jalaali:
+      optional: true
+  checksum: 5e15817cc4b60b8a16e2d75b8ca2398d372c4a6521503e72e7c7c951c5f123222f84a974ade4efbd2784f8e31502cc8f329485fa9a47f8e69d676456adae7441
   languageName: node
   linkType: hard
 
@@ -4846,40 +4894,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-table@npm:8.10.3":
-  version: 8.10.3
-  resolution: "@tanstack/react-table@npm:8.10.3"
+"@tanstack/react-table@npm:8.10.7":
+  version: 8.10.7
+  resolution: "@tanstack/react-table@npm:8.10.7"
   dependencies:
-    "@tanstack/table-core": "npm:8.10.3"
+    "@tanstack/table-core": "npm:8.10.7"
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 67bb453d6a99baec80176ee5ae9690517e87104480aacbeda4067eafd1c77146271dec86225f744b5bfb7413caa558efe1f1a53c668054481a7defe0604e7471
+  checksum: ed4eaa648854ce95264c66fd7cc0effafee35d4c34fc2d04b047be0bd48b70695e3e69b2798a4d8b4797de36bf3c0aa24973255d434d7fd4f95856760eb16031
   languageName: node
   linkType: hard
 
-"@tanstack/react-virtual@npm:3.0.0-beta.60":
-  version: 3.0.0-beta.60
-  resolution: "@tanstack/react-virtual@npm:3.0.0-beta.60"
+"@tanstack/react-virtual@npm:3.0.0-beta.68":
+  version: 3.0.0-beta.68
+  resolution: "@tanstack/react-virtual@npm:3.0.0-beta.68"
   dependencies:
-    "@tanstack/virtual-core": "npm:3.0.0-beta.60"
+    "@tanstack/virtual-core": "npm:3.0.0-beta.68"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: dae68e1348220f81f0aac1d01636a3e7f5792a5b9508d2925209f74501a29976accd0b2f8972507889d4ce9ec139bca3456f66b7515b045bcff3bee93af827b4
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 12a67b5d16a854df258a0974e57ffaab931b250b69a9a7109ad0c842546a7da3c35f353db1d9f639567112e7675fad790aa4efed397e8601ba7d728ba5e643f1
   languageName: node
   linkType: hard
 
-"@tanstack/table-core@npm:8.10.3":
-  version: 8.10.3
-  resolution: "@tanstack/table-core@npm:8.10.3"
-  checksum: 71b49354be6c4f1a15eabfa693347329726a352f7ac79c51ddb4905ad50b85881a8e90080a5924dd2cbff84334c5813346c456fcb429ae718d14bb2bb2d4a841
+"@tanstack/table-core@npm:8.10.7":
+  version: 8.10.7
+  resolution: "@tanstack/table-core@npm:8.10.7"
+  checksum: aa4150e03e4efe3d7a52485debbd7dc297e487a1ba0d1e1171ae84907cde8ea7e88794f812226542266ead8b7a2017c433323426eb50a1d5bc57a8b493fd5af2
   languageName: node
   linkType: hard
 
-"@tanstack/virtual-core@npm:3.0.0-beta.60":
-  version: 3.0.0-beta.60
-  resolution: "@tanstack/virtual-core@npm:3.0.0-beta.60"
-  checksum: 6f5819e5d8f66f887b8d670a8206f06258ef9bdbd9ef4339719056e27bdc045fc13742194b86b71a6e33cd22ff23d7d05e3e39093a294a21af712e91620b79bf
+"@tanstack/virtual-core@npm:3.0.0-beta.68":
+  version: 3.0.0-beta.68
+  resolution: "@tanstack/virtual-core@npm:3.0.0-beta.68"
+  checksum: 3c42e676079d3f8fae41139b187729cf69fcf84c945f093f5b42755c7d4f26ae2395156dcae70cea22dcad5fe4885f29441eb51f8f1e4a3ed5c19452a048be00
   languageName: node
   linkType: hard
 
@@ -11247,22 +11296,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"material-react-table@npm:^1.15.0":
-  version: 1.15.0
-  resolution: "material-react-table@npm:1.15.0"
+"material-react-table@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "material-react-table@npm:2.0.4"
   dependencies:
     "@tanstack/match-sorter-utils": "npm:8.8.4"
-    "@tanstack/react-table": "npm:8.10.3"
-    "@tanstack/react-virtual": "npm:3.0.0-beta.60"
+    "@tanstack/react-table": "npm:8.10.7"
+    "@tanstack/react-virtual": "npm:3.0.0-beta.68"
     highlight-words: "npm:1.2.2"
   peerDependencies:
-    "@emotion/react": ">=11"
-    "@emotion/styled": ">=11"
-    "@mui/icons-material": ">=5"
-    "@mui/material": ">=5"
-    react: ">=17.0"
-    react-dom: ">=17.0"
-  checksum: a05c92ad19e7a1192da273535de4b5572947eee33fd5e38402fcb3f118a3fd9570f309cc57bdc0ceadbe151fd51657bfb628048bd9e0311546ad208e0328603a
+    "@emotion/react": ">=11.11"
+    "@emotion/styled": ">=11.11"
+    "@mui/icons-material": ">=5.11"
+    "@mui/material": ">=5.13"
+    "@mui/x-date-pickers": ">=6.15.0"
+    react: ">=18.0"
+    react-dom: ">=18.0"
+  checksum: 2d2415a0177b8f4b661b565ada0233bee09c06e4f51a5730cf585a0024c7e4613a52b392f7f7c6e00df95e1851d0caa6fb3e7e4bf07cf89c428a2c9ad8aba3cd
   languageName: node
   linkType: hard
 
@@ -12034,6 +12084,8 @@ __metadata:
     "@mdx-js/react": "npm:^3.0.0"
     "@mui/icons-material": "npm:^5.14.16"
     "@mui/material": "npm:^5.14.17"
+    "@mui/system": "npm:^5.14.17"
+    "@mui/x-date-pickers": "npm:^6.18.1"
     "@playwright/experimental-ct-react": "npm:1.39.0"
     "@playwright/test": "npm:1.39.0"
     "@remotion/cli": "npm:^4.0.68"
@@ -12090,7 +12142,7 @@ __metadata:
     localforage: "npm:^1.10.0"
     lodash: "npm:^4.17.21"
     lodash-es: "npm:^4.17.21"
-    material-react-table: "npm:^1.15.0"
+    material-react-table: "npm:^2.0.4"
     msgpackr: "npm:^1.9.9"
     musicbrainz-api: "npm:^0.11.0"
     node-fetch: "npm:^3.3.2"
