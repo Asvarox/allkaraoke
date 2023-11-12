@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { typography } from 'Elements/cssMixins';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import dayjs from 'dayjs';
 import useKeyboard from 'hooks/useKeyboard';
@@ -66,12 +67,13 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
   );
 
   return (
-    <Container data-test="song-list-playlists">
+    <Container data-test="song-list-playlists" active={active}>
       {playlists.map((playlist) => (
         <Playlist
           key={playlist.name}
+          active={active}
           {...register(`playlist-${playlist.name}`, () => focusElement(`playlist-${playlist.name}`))}
-          {...(!active ? { focused: false, active: `playlist-${playlist.name}` === focused } : {})}>
+          {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>
           {playlist.name}
         </Playlist>
       ))}
@@ -79,8 +81,8 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
   );
 }
 
-const Container = styled.div`
-  background: rgba(0, 0, 0, 0.7);
+const Container = styled.div<{ active: boolean }>`
+  background: rgba(0, 0, 0, ${(props) => (props.active ? 0.75 : 0.5)});
   width: 100vh;
   transform-origin: top right;
   transform: rotate(-90deg);
@@ -98,9 +100,13 @@ const Container = styled.div`
   }
 `;
 
-const Playlist = styled(Button)<{ active?: boolean }>`
+const Playlist = styled(Button)<{ selected?: boolean; active: boolean }>`
   font-size: 3rem;
   flex: 1;
+  ${(props) => !props.focused && props.active && `background-color: transparent;`};
   padding: 1.5rem;
-  ${(props) => props.active === false && `opacity: .5;`}
+  ${(props) =>
+    props.selected
+      ? `box-shadow: inset 0px 0px 0px 4px ${styles.colors.text.active};`
+      : !props.active && `opacity: .5;`}
 `;
