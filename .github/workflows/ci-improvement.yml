@@ -2,7 +2,9 @@ name: CI/CD
 
 on:
   push:
-    branches: master
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
   unit-tests:
@@ -78,6 +80,7 @@ jobs:
           packagescript: 'test-ct'
   deploy:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
     steps:
       - uses: actions/checkout@v3
