@@ -177,9 +177,11 @@ export const useSongSelectionKeyboardNavigation = (
   };
 
   const navigateHorizontally = (direction: 1 | -1, ignoreFilters = false) => {
-    if (!ignoreFilters && direction === 1 && isAtLastColumn && !arePlaylistsVisible) {
-      setShowPlaylistsState([true, 'right']);
-    } else if (!ignoreFilters && direction === -1 && isAtFirstColumn && !arePlaylistsVisible) {
+    // Disable navigation to filters by going right since the filters are on the left
+    // if (!ignoreFilters && direction === 1 && isAtLastColumn && !arePlaylistsVisible) {
+    //   setShowPlaylistsState([true, 'right']);
+    // } else
+    if (!ignoreFilters && direction === -1 && isAtFirstColumn && !arePlaylistsVisible) {
       setShowPlaylistsState([true, 'left']);
     } else {
       moveCursor('x', direction);

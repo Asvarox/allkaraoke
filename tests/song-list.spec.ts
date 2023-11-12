@@ -43,9 +43,7 @@ test('Filters - PlayLists', async ({ page }) => {
   await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish');
 
   // Go to playlists
-  await page.keyboard.press('ArrowRight');
-  await page.keyboard.press('ArrowRight');
-  await page.keyboard.press('ArrowRight');
+  await page.keyboard.press('ArrowLeft');
 
   await page.keyboard.press('ArrowDown'); // Polish (first, as it has most songs)
   await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-focused', 'true');
