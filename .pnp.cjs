@@ -87,7 +87,7 @@ const RAW_RUNTIME_STATE =
           ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["latinize", "npm:0.5.0"],\
-          ["lint-staged", "npm:15.0.2"],\
+          ["lint-staged", "npm:15.1.0"],\
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
@@ -6065,7 +6065,7 @@ const RAW_RUNTIME_STATE =
           ["react-inspector", "virtual:cd305092862e4efc0a9ba08fed2da556a7dbe47cb695b424ae2ba96f6f1057015df57e8e7ca5d9c41fd2c351a28961966a7d151e183dea568ec82c80e4636cb4#npm:6.0.1"],\
           ["telejson", "npm:7.2.0"],\
           ["ts-dedent", "npm:2.2.0"],\
-          ["uuid", "npm:9.0.0"]\
+          ["uuid", "npm:9.0.1"]\
         ],\
         "packagePeers": [\
           "@types/react-dom",\
@@ -14666,10 +14666,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.0.2", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.0.2-9a94018c19-79c6487405.zip/node_modules/lint-staged/",\
+      ["npm:15.1.0", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.1.0-b45b212a0d-77aacab303.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.0.2"],\
+          ["lint-staged", "npm:15.1.0"],\
           ["chalk", "npm:5.3.0"],\
           ["commander", "npm:11.1.0"],\
           ["debug", "virtual:b86a9fb34323a98c6519528ed55faa0d9b44ca8879307c0b29aa384bde47ff59a7d0c9051b31246f14521dfb71ba3c5d6d0b35c29fffc17bf875aa6ad977d9e8#npm:4.3.4"],\
@@ -14679,7 +14679,7 @@ const RAW_RUNTIME_STATE =
           ["micromatch", "npm:4.0.5"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
-          ["yaml", "npm:2.3.3"]\
+          ["yaml", "npm:2.3.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15549,7 +15549,7 @@ const RAW_RUNTIME_STATE =
           ["jsontoxml", "npm:1.0.1"],\
           ["source-map-support", "npm:0.5.21"],\
           ["tough-cookie", "npm:4.1.3"],\
-          ["uuid", "npm:9.0.0"]\
+          ["uuid", "npm:9.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15985,7 +15985,7 @@ const RAW_RUNTIME_STATE =
           ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["latinize", "npm:0.5.0"],\
-          ["lint-staged", "npm:15.0.2"],\
+          ["lint-staged", "npm:15.1.0"],\
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
@@ -20080,13 +20080,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["uuid", [\
-      ["npm:9.0.0", {\
-        "packageLocation": "./.yarn/cache/uuid-npm-9.0.0-46c41e3e43-23857699a6.zip/node_modules/uuid/",\
-        "packageDependencies": [\
-          ["uuid", "npm:9.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:9.0.1", {\
         "packageLocation": "./.yarn/cache/uuid-npm-9.0.1-39a8442bc6-9d0b6adb72.zip/node_modules/uuid/",\
         "packageDependencies": [\
@@ -20880,10 +20873,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.3.3", {\
-        "packageLocation": "./.yarn/cache/yaml-npm-2.3.3-c5a47b9f8f-3b1a974b9d.zip/node_modules/yaml/",\
+      ["npm:2.3.4", {\
+        "packageLocation": "./.yarn/cache/yaml-npm-2.3.4-8bb6dc2c0d-f8207ce430.zip/node_modules/yaml/",\
         "packageDependencies": [\
-          ["yaml", "npm:2.3.3"]\
+          ["yaml", "npm:2.3.4"]\
         ],\
         "linkType": "HARD"\
       }]\

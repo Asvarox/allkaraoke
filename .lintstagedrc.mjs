@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 
 export default {
-  '*.{mjs,ts,tsx}': ['prettier --plugin=prettier-plugin-organize-imports --write', 'eslint --cache --fix'],
+  '*.{mjs,ts,tsx}': ['prettier --config ./.prettier.config.ci.js --write', 'eslint --cache --fix'],
   '*.{ts,tsx}': () => 'tsc --noEmit',
   'public/songs/*.txt': [
     'yarn ts-node scripts/updateLastUpdate.ts',
