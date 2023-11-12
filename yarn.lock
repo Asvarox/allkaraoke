@@ -10899,10 +10899,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"latinize@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "latinize@npm:0.5.0"
-  checksum: bc6b56c93379748d603e2051dd84929dc81690595a6a6b0491cba1f680ccbdeea65f6237a995259891b1615e4ea7cba0c98be3ab6caa340f1ae712a637e975fc
+"latinize@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "latinize@npm:2.0.0"
+  checksum: 5dfa41b3e0a6c73aa278e62d53578afd6372ef88cb9dbdd5928b9ba98c5a021ba9b783d2b9702513361fb28e7e58e5c4a362b2bbb24182aae178417bda2a81f2
   languageName: node
   linkType: hard
 
@@ -12130,7 +12130,7 @@ __metadata:
     husky: "npm:^8.0.3"
     is-mobile: "npm:^4.0.0"
     js-yaml: "npm:^4.1.0"
-    latinize: "npm:^0.5.0"
+    latinize: "npm:^2.0.0"
     lint-staged: "npm:^15.1.0"
     localforage: "npm:^1.10.0"
     lodash: "npm:^4.17.21"

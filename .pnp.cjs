@@ -86,7 +86,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:8.0.3"],\
           ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["latinize", "npm:0.5.0"],\
+          ["latinize", "npm:2.0.0"],\
           ["lint-staged", "npm:15.1.0"],\
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
@@ -14597,10 +14597,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["latinize", [\
-      ["npm:0.5.0", {\
-        "packageLocation": "./.yarn/cache/latinize-npm-0.5.0-b13696e3ae-bc6b56c933.zip/node_modules/latinize/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/latinize-npm-2.0.0-e8061af692-5dfa41b3e0.zip/node_modules/latinize/",\
         "packageDependencies": [\
-          ["latinize", "npm:0.5.0"]\
+          ["latinize", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15984,7 +15984,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:8.0.3"],\
           ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["latinize", "npm:0.5.0"],\
+          ["latinize", "npm:2.0.0"],\
           ["lint-staged", "npm:15.1.0"],\
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\

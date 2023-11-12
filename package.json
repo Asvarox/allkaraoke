@@ -18,7 +18,7 @@
     "curtainsjs": "^8.1.5",
     "dayjs": "^1.11.10",
     "is-mobile": "^4.0.0",
-    "latinize": "^0.5.0",
+    "latinize": "^2.0.0",
     "localforage": "^1.10.0",
     "lodash-es": "^4.17.21",
     "material-react-table": "^2.0.4",
