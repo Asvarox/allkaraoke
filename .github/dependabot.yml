@@ -7,11 +7,14 @@ updates:
     open-pull-requests-limit: 10
     groups:
       storybook:
-        pattern: "^@storybook*"
+        patterns:
+          - "^@storybook*"
       eslint:
-        pattern: "*eslint*"
+        patterns:
+          - "*eslint*"
       playwright:
-        pattern: "*playwright*"
+        patterns:
+          - "*playwright*"
       vite:
         patterns:
           - "*vite*"
