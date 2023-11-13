@@ -5653,10 +5653,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/youtube-player@npm:^5.5.8":
-  version: 5.5.8
-  resolution: "@types/youtube-player@npm:5.5.8"
-  checksum: f43a03bc3b0c4268bdb087ed78cf07dc0a315edb9178a1a9b0863df944acb71b239dc35f9e63545d6763aae50cb23e0d4927174d8f7ad9180bfb32867d7f3936
+"@types/youtube-player@npm:^5.5.10":
+  version: 5.5.10
+  resolution: "@types/youtube-player@npm:5.5.10"
+  checksum: a88f0f48275cfb4af497d63b95bbdbf2c42dc9c1c29ffe28dafe392875db2d5b2f3e90804b6bff3b01d9af10d4248f89a6d4cb1e0ec56d4f0d698157a2173df5
   languageName: node
   linkType: hard
 
@@ -12113,7 +12113,7 @@ __metadata:
     "@types/tinycolor2": "npm:^1.4.6"
     "@types/use-persisted-state": "npm:^0.3.4"
     "@types/uuid": "npm:^9.0.7"
-    "@types/youtube-player": "npm:^5.5.8"
+    "@types/youtube-player": "npm:^5.5.10"
     "@uriopass/nosleep.js": "npm:^0.12.2"
     "@vitejs/plugin-basic-ssl": "npm:^1.0.1"
     "@vitejs/plugin-react": "npm:^4.1.1"
