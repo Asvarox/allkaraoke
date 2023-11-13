@@ -5,6 +5,7 @@
     "**/*.test.{js,jsx,ts,tsx}",
     "**/*.spec.{js,jsx,ts,tsx}",
     "**/*.stories.{js,jsx,ts,tsx}",
+    "**/*.ct-story.{js,jsx,ts,tsx}",
     "**/tests/**",
     "**/__tests__/**",
     "**/*.d.ts"

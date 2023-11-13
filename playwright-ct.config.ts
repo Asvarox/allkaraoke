@@ -46,6 +46,18 @@ const config: PlaywrightTestConfig = defineConfig({
         reportCompressedSize: false,
       },
     },
+    launchOptions: {
+      args: [
+        // "--auto-open-devtools-for-tabs",
+        '--no-sandbox',
+        '--mute-audio',
+        '--allow-file-access-from-files',
+        '--use-fake-ui-for-media-stream',
+        '--use-fake-device-for-media-stream',
+        '--use-file-for-fake-audio-capture=tests/fixtures/test-440hz.wav',
+        !process.env.CI ? '--use-gl=egl' : '',
+      ],
+    },
   },
 
   /* Configure projects for major browsers */
