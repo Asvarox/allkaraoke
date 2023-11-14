@@ -12143,7 +12143,7 @@ __metadata:
     peerjs: "npm:^2.0.0-beta.3"
     playwright: "npm:^1.39.0"
     playwright-core: "npm:^1.39.0"
-    posthog-js: "npm:^1.88.4"
+    posthog-js: "npm:^1.89.1"
     prettier: "npm:^2.8.8"
     prettier-plugin-organize-imports: "npm:^3.2.4"
     pretty-quick: "npm:^3.1.3"
@@ -12750,12 +12750,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.88.4":
-  version: 1.88.4
-  resolution: "posthog-js@npm:1.88.4"
+"posthog-js@npm:^1.89.1":
+  version: 1.89.1
+  resolution: "posthog-js@npm:1.89.1"
   dependencies:
     fflate: "npm:^0.4.1"
-  checksum: 9c41d85a8279870de21ebd753687f6ebb4c054f78724d323d04a63f3585a367fd55fb81ebbdaca008139b49754efe8f6c5caaf138a0479885b40336429cc4890
+  checksum: 53f5778e67054964d8140de787528df396b51a32f5d7be3aa9bba5215f0f590e983072925c70043b8acf2f6342b23b9574e4e4a2d88721cdf0baec4fe4f42126
   languageName: node
   linkType: hard
 
