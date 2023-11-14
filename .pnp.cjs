@@ -100,7 +100,7 @@ const RAW_RUNTIME_STATE =
           ["playwright", "npm:1.39.0"],\
           ["playwright-core", "npm:1.39.0"],\
           ["posthog-js", "npm:1.88.4"],\
-          ["prettier", "npm:2.8.8"],\
+          ["prettier", "npm:3.1.0"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["pretty-quick", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.3"],\
           ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
@@ -15998,7 +15998,7 @@ const RAW_RUNTIME_STATE =
           ["playwright", "npm:1.39.0"],\
           ["playwright-core", "npm:1.39.0"],\
           ["posthog-js", "npm:1.88.4"],\
-          ["prettier", "npm:2.8.8"],\
+          ["prettier", "npm:3.1.0"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["pretty-quick", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.3"],\
           ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
@@ -16727,6 +16727,13 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:2.8.8"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.1.0", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.1.0-708d6027b1/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["prettier-plugin-organize-imports", [\
@@ -16747,7 +16754,7 @@ const RAW_RUNTIME_STATE =
           ["@types/volar__vue-typescript", null],\
           ["@volar/vue-language-plugin-pug", null],\
           ["@volar/vue-typescript", null],\
-          ["prettier", "npm:2.8.8"],\
+          ["prettier", "npm:3.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
         ],\
         "packagePeers": [\
@@ -16813,7 +16820,7 @@ const RAW_RUNTIME_STATE =
           ["ignore", "npm:5.2.4"],\
           ["mri", "npm:1.2.0"],\
           ["multimatch", "npm:4.0.0"],\
-          ["prettier", "npm:2.8.8"]\
+          ["prettier", "npm:3.1.0"]\
         ],\
         "packagePeers": [\
           "@types/prettier",\
