@@ -99,7 +99,7 @@ const RAW_RUNTIME_STATE =
           ["peerjs", "npm:2.0.0-beta.3"],\
           ["playwright", "npm:1.39.0"],\
           ["playwright-core", "npm:1.39.0"],\
-          ["posthog-js", "npm:1.89.1"],\
+          ["posthog-js", "npm:1.91.0"],\
           ["prettier", "npm:2.8.8"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["pretty-quick", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.3"],\
@@ -15997,7 +15997,7 @@ const RAW_RUNTIME_STATE =
           ["peerjs", "npm:2.0.0-beta.3"],\
           ["playwright", "npm:1.39.0"],\
           ["playwright-core", "npm:1.39.0"],\
-          ["posthog-js", "npm:1.89.1"],\
+          ["posthog-js", "npm:1.91.0"],\
           ["prettier", "npm:2.8.8"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["pretty-quick", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.3"],\
@@ -16702,10 +16702,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["posthog-js", [\
-      ["npm:1.89.1", {\
-        "packageLocation": "./.yarn/cache/posthog-js-npm-1.89.1-c783189c19-53f5778e67.zip/node_modules/posthog-js/",\
+      ["npm:1.91.0", {\
+        "packageLocation": "./.yarn/cache/posthog-js-npm-1.91.0-bbeb192303-a7308d61fd.zip/node_modules/posthog-js/",\
         "packageDependencies": [\
-          ["posthog-js", "npm:1.89.1"],\
+          ["posthog-js", "npm:1.91.0"],\
           ["fflate", "npm:0.4.8"]\
         ],\
         "linkType": "HARD"\
