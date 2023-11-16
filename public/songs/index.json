@@ -104,6 +104,34 @@
     "local": false
   },
   {
+    "id": "30-seconds-to-mars-a-beautiful-lie",
+    "title": "A Beautiful Lie",
+    "artist": "30 Seconds to Mars",
+    "language": "English",
+    "bpm": 320.04,
+    "bar": 4,
+    "gap": 120391.74803149607,
+    "video": "4Kvd-uquuhI",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:38.002Z",
+    "genre": "Alternative Rock",
+    "videoGap": 80,
+    "realBpm": 160,
+    "volume": 0.8,
+    "author": "a beautiful lie ",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=4Kvd-uquuhI&ab_channel=ThirtySecondsToMarsVEVO",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "30secondstomarsabeautifullie",
+    "local": false
+  },
+  {
     "id": "3oh3-dont-trust-me",
     "title": "Don’t Trust Me",
     "artist": "3OH!3",
@@ -325,6 +353,37 @@
     "local": false
   },
   {
+    "id": "a-perfect-circle-the-noose",
+    "title": "The Noose",
+    "artist": "A Perfect Circle",
+    "language": "English",
+    "bpm": 299.85,
+    "bar": 4,
+    "gap": 31199.499749874936,
+    "video": "ngZvHBUdYYY",
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:38.196Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 132,
+    "previewStart": 34,
+    "previewEnd": 64,
+    "volume": 0.79,
+    "author": "lava",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "The Noose",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aperfectcirclethenoose",
+    "local": false
+  },
+  {
     "id": "abba-dancing-queen",
     "title": "Dancing Queen",
     "artist": "ABBA",
@@ -479,6 +538,35 @@
     ],
     "tracksCount": 1,
     "search": "abbasupertrouper",
+    "local": false
+  },
+  {
+    "id": "abba-thank-you-for-the-music",
+    "title": "Thank You For The Music",
+    "artist": "ABBA",
+    "language": "English",
+    "bpm": 201.6,
+    "bar": 4,
+    "gap": 14352.738095238095,
+    "video": "0dcbw4IEY5w",
+    "year": "1977",
+    "artistOrigin": "SE",
+    "lastUpdate": "2023-11-16T06:24:38.335Z",
+    "edition": "SingStar ABBA",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 201,
+    "volume": 0.81,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbathankyouforthemusic",
     "local": false
   },
   {
@@ -1397,6 +1485,35 @@
     ],
     "tracksCount": 1,
     "search": "aquabarbiegirl",
+    "local": false
+  },
+  {
+    "id": "arcade-fire-wake-up",
+    "title": "Wake Up",
+    "artist": "Arcade Fire",
+    "language": "English",
+    "bpm": 297.5,
+    "bar": 4,
+    "gap": 29895.59663865546,
+    "video": "aTyKDWv4q38",
+    "year": "2003",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-16T06:24:38.336Z",
+    "videoGap": 3,
+    "realBpm": 139,
+    "previewStart": 157,
+    "previewEnd": 211,
+    "volume": 0.76,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arcadefirewakeup",
     "local": false
   },
   {
@@ -3099,6 +3216,35 @@
     "local": false
   },
   {
+    "id": "billy-boyd-the-last-goodbye",
+    "title": "The Last Goodbye",
+    "artist": "Billy Boyd",
+    "language": "English",
+    "bpm": 400,
+    "bar": 4,
+    "gap": 19547.5,
+    "video": "q8ir8rVl2Z4",
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:38.492Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 94,
+    "volume": 0.73,
+    "author": "Logge",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billyboydthelastgoodbye",
+    "local": false
+  },
+  {
     "id": "billy-joel-uptown-girl",
     "title": "Uptown Girl",
     "artist": "Billy Joel",
@@ -4038,6 +4184,34 @@
     "local": false
   },
   {
+    "id": "bruno-mars-when-i-was-your-man",
+    "title": "When I Was Your Man",
+    "artist": "Bruno Mars",
+    "language": "English",
+    "bpm": 304,
+    "bar": 4,
+    "gap": 23947.157894736843,
+    "video": "ekzHIouo8Q4",
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:38.661Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 73,
+    "volume": 0.65,
+    "author": "gun88",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "brunomarswheniwasyourman",
+    "local": false
+  },
+  {
     "id": "bryan-adams-rod-stewart-sting-all-for-love-the-three-musketeers",
     "title": "All For Love (\"The Three Musketeers\")",
     "artist": "Bryan Adams, Rod Stewart & Sting",
@@ -4203,6 +4377,34 @@
     "local": false
   },
   {
+    "id": "c-ute-massara-blue-jeans",
+    "title": "Massara Blue Jeans",
+    "artist": "C-ute",
+    "language": "Japanese",
+    "bpm": 310.02,
+    "bar": 4,
+    "gap": 26623.936520224503,
+    "video": "L9gDX4mfWtY",
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2023-11-16T06:24:38.663Z",
+    "videoGap": 0,
+    "realBpm": 155,
+    "volume": 0.7,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Massara Blue Jeans (まっさらブルージーンズ)",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cutemassarabluejeans",
+    "local": false
+  },
+  {
     "id": "cailin-russo-chrissy-costanza-phoenix",
     "title": "Phoenix",
     "artist": "Cailin Russo & Chrissy Costanza",
@@ -4363,6 +4565,35 @@
     ],
     "tracksCount": 1,
     "search": "carlyraejepsenireallylikeyou",
+    "local": false
+  },
+  {
+    "id": "cat-stevens-morning-has-broken",
+    "title": "Morning Has Broken",
+    "artist": "Cat Stevens",
+    "language": "English",
+    "bpm": 268.42,
+    "bar": 4,
+    "gap": 11754.113702406676,
+    "video": "uZAsfB1Np-8",
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:38.828Z",
+    "edition": "None",
+    "genre": "Oldies",
+    "videoGap": 0,
+    "realBpm": 133,
+    "volume": 0.7,
+    "author": "RES",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "catstevensmorninghasbroken",
     "local": false
   },
   {
@@ -4587,6 +4818,36 @@
     ],
     "tracksCount": 1,
     "search": "chertheshoopshoopsongitsinhiskiss",
+    "local": false
+  },
+  {
+    "id": "cheryl-cole-parachute",
+    "title": "Parachute",
+    "artist": "Cheryl Cole",
+    "language": "English",
+    "bpm": 232,
+    "bar": 4,
+    "gap": 8850.172413793103,
+    "video": "-AWoZmAxKxg",
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:38.975Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 117,
+    "previewStart": 27,
+    "previewEnd": 77,
+    "volume": 0.85,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cherylcoleparachute",
     "local": false
   },
   {
@@ -6430,6 +6691,34 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-bad-habits",
+    "title": "Bad Habits",
+    "artist": "Ed Sheeran",
+    "language": "English",
+    "bpm": 252.09,
+    "bar": 4,
+    "gap": 13428.456503629655,
+    "video": "orJSJGHjBLI",
+    "year": "2021",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:39.120Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.6,
+    "author": "Ultrastar Espana",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranbadhabits",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-galway-girl",
     "title": "Galway Girl",
     "artist": "Ed Sheeran",
@@ -6480,6 +6769,34 @@
     ],
     "tracksCount": 1,
     "search": "edsheerangivemelove",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-happier",
+    "title": "Happier",
+    "artist": "Ed Sheeran",
+    "language": "English",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 12310,
+    "video": "iWZmdoY1aTE",
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:39.276Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.68,
+    "author": "aac",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranhappier",
     "local": false
   },
   {
@@ -6558,6 +6875,33 @@
     ],
     "tracksCount": 1,
     "search": "edsheeranshapeofyou",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-shivers",
+    "title": "Shivers",
+    "artist": "Ed Sheeran",
+    "language": "English",
+    "bpm": 564,
+    "bar": 4,
+    "gap": 19929.36170212766,
+    "video": "Il0S8BoucSA",
+    "year": "2021",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:39.278Z",
+    "videoGap": 0,
+    "realBpm": 141,
+    "volume": 0.61,
+    "author": "Mamba99",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 38
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranshivers",
     "local": false
   },
   {
@@ -8014,6 +8358,36 @@
     "local": false
   },
   {
+    "id": "frank-sinatra-fly-me-to-the-moon-in-other-words",
+    "title": "Fly Me To The Moon (In Other Words)",
+    "artist": "Frank Sinatra",
+    "language": "English",
+    "bpm": 243.5,
+    "bar": 4,
+    "gap": 6864.373716632444,
+    "video": "ZEcqHA7dbwM",
+    "year": "1964",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:39.279Z",
+    "genre": "Jazz",
+    "videoGap": 0,
+    "realBpm": 119,
+    "previewStart": 6,
+    "previewEnd": 32,
+    "volume": 0.8,
+    "author": "pyoxkd",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "franksinatraflymetothemooninotherwords",
+    "local": false
+  },
+  {
     "id": "frankie-goes-to-hollywood-relax",
     "title": "Relax",
     "artist": "Frankie Goes To Hollywood",
@@ -8042,6 +8416,35 @@
     ],
     "tracksCount": 1,
     "search": "frankiegoestohollywoodrelax",
+    "local": false
+  },
+  {
+    "id": "frankie-valli-cant-take-my-eyes-off-you",
+    "title": "Can’t Take My Eyes Off You",
+    "artist": "Frankie Valli",
+    "language": "English",
+    "bpm": 243.48,
+    "bar": 4,
+    "gap": 14224.292755051749,
+    "video": "iObGpqXKBdY",
+    "year": "1967",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:39.597Z",
+    "edition": "None",
+    "genre": "Schlager",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.61,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "frankievallicanttakemyeyesoffyou",
     "local": false
   },
   {
@@ -8597,6 +9000,63 @@
     "local": false
   },
   {
+    "id": "green-day-holiday",
+    "title": "Holiday",
+    "artist": "Green Day",
+    "language": "English",
+    "bpm": 292.95,
+    "bar": 4,
+    "gap": 33227.13773681516,
+    "video": "A1OqtIqzScI",
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:39.791Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 147,
+    "volume": 0.79,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendayholiday",
+    "local": false
+  },
+  {
+    "id": "green-day-last-of-the-american-girls",
+    "title": "Last Of The American Girls",
+    "artist": "Green Day",
+    "language": "English",
+    "bpm": 231,
+    "bar": 4,
+    "gap": 2735.974025974026,
+    "video": "nWZxpN8X0pM",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:39.793Z",
+    "genre": "Punk",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.79,
+    "author": "jdogk",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendaylastoftheamericangirls",
+    "local": false
+  },
+  {
     "id": "green-day-wake-me-up-when-september-ends",
     "title": "Wake Me Up When September Ends",
     "artist": "Green Day",
@@ -8816,6 +9276,34 @@
     ],
     "tracksCount": 1,
     "search": "gustavoceraticrimen",
+    "local": false
+  },
+  {
+    "id": "gwen-stefani-eve-rich-girl",
+    "title": "Rich Girl",
+    "artist": "Gwen Stefani & Eve",
+    "language": "English",
+    "bpm": 392.08,
+    "bar": 4,
+    "gap": 5615.305039787798,
+    "video": "9rlNpWYQunY",
+    "year": "2004",
+    "lastUpdate": "2023-11-16T06:24:39.794Z",
+    "videoGap": 0,
+    "realBpm": 98,
+    "previewStart": 12,
+    "previewEnd": 59,
+    "volume": 0.68,
+    "author": "lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gwenstefanieverichgirl",
     "local": false
   },
   {
@@ -9816,6 +10304,34 @@
     ],
     "tracksCount": 1,
     "search": "indochinejaidemandealalune",
+    "local": false
+  },
+  {
+    "id": "israel-kamakawiwoole-somewhere-over-the-rainbow-what-a-wonderful-world",
+    "title": "Somewhere Over The Rainbow / What A Wonderful World",
+    "artist": "Israel Kamakawiwo’ole",
+    "language": "English",
+    "bpm": 326,
+    "bar": 4,
+    "gap": 13297.730061349694,
+    "video": "Z26BvHOD_sg",
+    "year": "1993",
+    "lastUpdate": "2023-11-16T06:24:39.957Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 85,
+    "volume": 0.7,
+    "author": "Amigrant",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "israelkamakawiwoolesomewhereovertherainbowwhatawonderfulworld",
     "local": false
   },
   {
@@ -14338,6 +14854,34 @@
     "local": false
   },
   {
+    "id": "meghan-trainor-lips-are-movin",
+    "title": "Lips Are Movin'",
+    "artist": "Meghan Trainor",
+    "language": "English",
+    "bpm": 278,
+    "bar": 4,
+    "gap": 1260.820143884892,
+    "video": "qDc_5zpBj7s",
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:40.104Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 139,
+    "volume": 0.87,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "meghantrainorlipsaremovin",
+    "local": false
+  },
+  {
     "id": "meghan-trainor-made-you-look",
     "title": "Made You Look",
     "artist": "Meghan Trainor",
@@ -16448,6 +16992,35 @@
     "local": false
   },
   {
+    "id": "nirvana-come-as-you-are-mtv-unplugged",
+    "title": "Come As You Are (MTV Unplugged)",
+    "artist": "Nirvana",
+    "language": "English",
+    "bpm": 394.76,
+    "bar": 4,
+    "gap": 24112.05795926639,
+    "video": "z9LiPuVRyU8",
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:40.264Z",
+    "edition": "Rock Band Store 2009 Vol. 4",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.6,
+    "author": "mustangfred",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanacomeasyouaremtvunplugged",
+    "local": false
+  },
+  {
     "id": "nirvana-come-as-you-are",
     "title": "Come As You Are",
     "artist": "Nirvana",
@@ -16560,6 +17133,35 @@
     ],
     "tracksCount": 1,
     "search": "nirvanasmellsliketeenspirit",
+    "local": false
+  },
+  {
+    "id": "nirvana-the-man-who-sold-the-world-mtv-unplugged",
+    "title": "The Man Who Sold The World (MTV Unplugged)",
+    "artist": "Nirvana",
+    "language": "English",
+    "bpm": 227.1,
+    "bar": 4,
+    "gap": 14739.247027741083,
+    "video": "fregObNcHC8",
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:40.433Z",
+    "edition": "None",
+    "genre": "Acoustic Rock",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.6,
+    "author": "ceasarea",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanathemanwhosoldtheworldmtvunplugged",
     "local": false
   },
   {
@@ -16966,6 +17568,65 @@
     ],
     "tracksCount": 1,
     "search": "onedirectionwhatmakesyoubeautiful",
+    "local": false
+  },
+  {
+    "id": "onerepublic-secrets",
+    "title": "Secrets",
+    "artist": "OneRepublic",
+    "language": "English",
+    "bpm": 296,
+    "bar": 4,
+    "gap": 20956.486486486487,
+    "video": "qHm9MG9xw1o",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:40.434Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 148,
+    "volume": 0.68,
+    "author": "cyangreen",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onerepublicsecrets",
+    "local": false
+  },
+  {
+    "id": "owl-city-fireflies",
+    "title": "Fireflies",
+    "artist": "Owl City",
+    "language": "English",
+    "bpm": 270.05,
+    "bar": 4,
+    "gap": 24030.18515089798,
+    "video": "psuRGfAaju4",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:40.584Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 180,
+    "volume": 0.84,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8168",
+    "tracks": [
+      {
+        "name": "Fireflies",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "owlcityfireflies",
     "local": false
   },
   {
@@ -19703,6 +20364,36 @@
     "local": false
   },
   {
+    "id": "s-snow-halation",
+    "title": "Snow Halation",
+    "artist": "µ's",
+    "language": "Japanese",
+    "bpm": 346.04,
+    "bar": 4,
+    "gap": 11787.005432897931,
+    "video": "OzGVz1ClxIc",
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2023-11-16T06:24:50.066Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 173,
+    "previewStart": 48,
+    "previewEnd": 95,
+    "volume": 0.7,
+    "author": "Beneblade",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=beneblade",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=%C2%B5%27s&cancion=Snow%20Halation",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ssnowhalation",
+    "local": false
+  },
+  {
     "id": "sanah-feat-daria-zawialow-eldorado",
     "title": "Eldorado",
     "artist": "Sanah feat. Daria Zawiałow",
@@ -21949,6 +22640,34 @@
     "local": false
   },
   {
+    "id": "the-beatles-here-comes-the-sun",
+    "title": "Here Comes The Sun",
+    "artist": "The Beatles",
+    "language": "English",
+    "bpm": 345.5,
+    "bar": 4,
+    "gap": 14261.447178002894,
+    "video": "KQetemT1sWc",
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-16T06:24:50.252Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 129,
+    "volume": 0.71,
+    "author": "RES",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeatlesherecomesthesun",
+    "local": false
+  },
+  {
     "id": "the-beatles-hey-jude",
     "title": "Hey Jude",
     "artist": "The Beatles",
@@ -22747,6 +23466,34 @@
     ],
     "tracksCount": 1,
     "search": "thepolicemessageinabottle",
+    "local": false
+  },
+  {
+    "id": "the-postal-service-such-great-heights",
+    "title": "Such Great Heights",
+    "artist": "The Postal Service",
+    "language": "English",
+    "bpm": 350,
+    "bar": 4,
+    "gap": 41064.28571428572,
+    "video": "0wrsZog8qXg",
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:50.255Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 175,
+    "volume": 0.87,
+    "author": "Palladian",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thepostalservicesuchgreatheights",
     "local": false
   },
   {
@@ -24705,6 +25452,36 @@
     ],
     "tracksCount": 1,
     "search": "ylvisthefox",
+    "local": false
+  },
+  {
+    "id": "young-the-giant-cough-syrup",
+    "title": "Cough Syrup",
+    "artist": "Young The Giant",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 15150,
+    "video": "UAsTlnjvetI",
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-16T06:24:50.394Z",
+    "genre": "Alternative",
+    "videoGap": 0,
+    "realBpm": 129,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.85,
+    "author": "REL",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "youngthegiantcoughsyrup",
     "local": false
   },
   {
