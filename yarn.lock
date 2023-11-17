@@ -3108,39 +3108,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/experimental-ct-core@npm:1.39.0":
-  version: 1.39.0
-  resolution: "@playwright/experimental-ct-core@npm:1.39.0"
+"@playwright/experimental-ct-core@npm:1.40.0":
+  version: 1.40.0
+  resolution: "@playwright/experimental-ct-core@npm:1.40.0"
   dependencies:
-    playwright: "npm:1.39.0"
-    playwright-core: "npm:1.39.0"
+    playwright: "npm:1.40.0"
+    playwright-core: "npm:1.40.0"
     vite: "npm:^4.4.10"
   bin:
     playwright: cli.js
-  checksum: dd31885eb78da5308670891370be33ec732d14bec59fb29304bdaae345ba3934c784e791e5b28bd5f911a853ca6a60561e7a2ee248bd5368a1d893f5e82f08c7
+  checksum: c26c68e580d806d4655ff21e2231ece5c02a2598d7919091664c7cff520dd89e440abc58a110e79545aacd483039392510f94e9ffddd8a79946de56599430343
   languageName: node
   linkType: hard
 
-"@playwright/experimental-ct-react@npm:1.39.0":
-  version: 1.39.0
-  resolution: "@playwright/experimental-ct-react@npm:1.39.0"
+"@playwright/experimental-ct-react@npm:1.40.0":
+  version: 1.40.0
+  resolution: "@playwright/experimental-ct-react@npm:1.40.0"
   dependencies:
-    "@playwright/experimental-ct-core": "npm:1.39.0"
+    "@playwright/experimental-ct-core": "npm:1.40.0"
     "@vitejs/plugin-react": "npm:^4.0.0"
   bin:
     playwright: cli.js
-  checksum: 2d082cb018be43e34f58b1cf5684fc3bb4b40176608abdeff8b6aa68a843592b984aeb071628373afc011ada2af0c664cf455df6aca4178d865f1721b94f4b5c
+  checksum: 2d673550eee46a348fd92b552915e659634026e751f54b3b4177ee3e334b86c1997b5ad3568af030b68eb2c1a3162d3f488c7ffe2b94e31cd19358731566e0f6
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.39.0":
-  version: 1.39.0
-  resolution: "@playwright/test@npm:1.39.0"
+"@playwright/test@npm:1.40.0":
+  version: 1.40.0
+  resolution: "@playwright/test@npm:1.40.0"
   dependencies:
-    playwright: "npm:1.39.0"
+    playwright: "npm:1.40.0"
   bin:
     playwright: cli.js
-  checksum: 5d039234609395f3eab46b5954b259bdd80dacf79efe531369c1633647dcafce25a78d497e61e671d661274bf66076426a1bd46be585c44addf23bb5bfaa15a2
+  checksum: 46ebd396d37b3e438019229f5c84bf4a8614f455245a51fd2d77a05f6065aefc41af30f26882415607c9e4adc2bb1511bd1f1ba06d7870fae0b5525768240acb
   languageName: node
   linkType: hard
 
@@ -12175,8 +12175,8 @@ __metadata:
     "@mui/material": "npm:^5.14.17"
     "@mui/system": "npm:^5.14.18"
     "@mui/x-date-pickers": "npm:^6.18.1"
-    "@playwright/experimental-ct-react": "npm:1.39.0"
-    "@playwright/test": "npm:1.39.0"
+    "@playwright/experimental-ct-react": "npm:1.40.0"
+    "@playwright/test": "npm:1.40.0"
     "@remotion/cli": "npm:^4.0.68"
     "@remotion/gif": "npm:^4.0.68"
     "@remotion/google-fonts": "npm:^4.0.68"
@@ -12237,8 +12237,8 @@ __metadata:
     node-fetch: "npm:^3.3.2"
     peer: "npm:^1.0.1"
     peerjs: "npm:^2.0.0-beta.3"
-    playwright: "npm:^1.39.0"
-    playwright-core: "npm:^1.39.0"
+    playwright: "npm:^1.40.0"
+    playwright-core: "npm:^1.40.0"
     posthog-js: "npm:^1.91.0"
     prettier: "npm:^2.8.8"
     prettier-plugin-organize-imports: "npm:^3.2.4"
@@ -12741,27 +12741,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.39.0, playwright-core@npm:^1.39.0":
-  version: 1.39.0
-  resolution: "playwright-core@npm:1.39.0"
+"playwright-core@npm:1.40.0, playwright-core@npm:^1.40.0":
+  version: 1.40.0
+  resolution: "playwright-core@npm:1.40.0"
   bin:
     playwright-core: cli.js
-  checksum: e4e01ddea024c7564bbfacdba5f545b004a4017b466af08ae90e5184da4f5bc61e74c96e37cc5e30b7d4f97341c0883cfb2038c8cfbfab65316d714f65b82d83
+  checksum: 2ce5245988b0e89ed3359476a83ad724484da349eae42e6c9dd4162a2180b1d37fe1750df45473a5a04a1590cb093d9f0df81e607b7f5c2c161f881436ee1a00
   languageName: node
   linkType: hard
 
-"playwright@npm:1.39.0, playwright@npm:^1.39.0":
-  version: 1.39.0
-  resolution: "playwright@npm:1.39.0"
+"playwright@npm:1.40.0, playwright@npm:^1.40.0":
+  version: 1.40.0
+  resolution: "playwright@npm:1.40.0"
   dependencies:
     fsevents: "npm:2.3.2"
-    playwright-core: "npm:1.39.0"
+    playwright-core: "npm:1.40.0"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     playwright: cli.js
-  checksum: 6f6b2f4381fccfbc560c4cd25e164f5093fec4e2046990587282e18618151d723b299b56c16741ce08e44a759c22e38c3e705b716d31238320e08e6ffcfa7319
+  checksum: 56352a177e712598f30bbe6da69027a065cb9ee50df512e186dfc9e479a68bd60bab2fee9278e943ab75d4109ad062b88556f3e7efdabfd1f91f728ccceee631
   languageName: node
   linkType: hard
 
