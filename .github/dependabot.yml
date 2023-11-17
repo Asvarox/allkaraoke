@@ -12,6 +12,9 @@ updates:
       eslint:
         patterns:
           - "*eslint*"
+      remotion:
+        patterns:
+          - "*remotion*"
       playwright:
         patterns:
           - "*playwright*"
