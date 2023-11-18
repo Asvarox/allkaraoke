@@ -4,7 +4,6 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import analyze from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vite';
-import rewriteAll from 'vite-plugin-rewrite-all';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 const fs = require('node:fs');
@@ -28,7 +27,6 @@ export default defineConfig({
     tsconfigPaths(),
     analyze(),
     !customCert && basicSsl(),
-    rewriteAll(),
   ],
   base: './',
   build: {

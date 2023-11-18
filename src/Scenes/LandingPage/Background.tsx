@@ -33,8 +33,8 @@ function Background() {
 
   return (
     <Container cols={cols} rows={rows}>
-      {new Array(cols * rows).fill(null).map(() => (
-        <RandomTile videoIds={songStats.videoIds} />
+      {new Array(cols * rows).fill(null).map((_, i) => (
+        <RandomTile videoIds={songStats.videoIds} key={i} />
       ))}
     </Container>
   );
