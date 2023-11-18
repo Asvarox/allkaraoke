@@ -1,12 +1,16 @@
 import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
 
 export default async function importSongFromSource(url: string) {
-  const urlObj = new URL(url);
+  try {
+    const urlObj = new URL(url);
 
-  if (urlObj.host === 'usdb.animux.de') {
-    return importUsDbAnimuxSong(url, urlObj);
-  } else if (urlObj.host === 'ultrastar-es.org') {
-    return importUltrastarEsSong(url);
+    if (urlObj.host === 'usdb.animux.de') {
+      return importUsDbAnimuxSong(url, urlObj);
+    } else if (urlObj.host === 'ultrastar-es.org') {
+      return importUltrastarEsSong(url);
+    }
+  } catch (e) {
+    console.warn(e);
   }
 }
 
