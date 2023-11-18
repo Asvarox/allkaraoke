@@ -121,14 +121,14 @@ const OptionIconContainer = styled.div`
     transition: 300ms;
     width: 3.6rem;
     height: 3.6rem;
-    color: rgba(${styles.colors.players[1].text});
+    color: ${styles.colors.players[1].text};
   }
 
   svg:first-of-type {
     top: 0.6rem;
     left: 1.25rem;
     position: absolute;
-    color: rgba(${styles.colors.players[0].text});
+    color: ${styles.colors.players[0].text};
     z-index: 100;
     transform: scaleX(-1);
   }

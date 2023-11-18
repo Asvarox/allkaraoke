@@ -6,7 +6,8 @@ import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/Setting
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
 import { Note } from 'interfaces';
-import { ComponentProps, Fragment, PropsWithChildren } from 'react';
+import { ComponentProps, Fragment, PropsWithChildren, useMemo } from 'react';
+import tinycolor from 'tinycolor2';
 import GameState from '../../GameState/GameState';
 import styles from '../Drawing/styles';
 
@@ -108,16 +109,23 @@ const BaseHeadstart = styled.span`
   right: 10rem;
 `;
 
-const Headstart = ({ percent, color }: { percent: number; color: string }) => (
-  <BaseHeadstart
-    style={{
-      transformOrigin: 'right',
-      transform: `scaleX(${Math.min(1, 2 - percent)})`,
-      right: `${Math.max(0, 1 - percent) * 15}rem`,
-      background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${color}, 0) 100%)`,
-    }}
-  />
-);
+const Headstart = ({ percent, color }: { percent: number; color: string }) => {
+  const rgbColor = useMemo(() => {
+    const rgb = tinycolor(color).toRgb();
+    return `${rgb.r}, ${rgb.g}, ${rgb.b}`;
+  }, [color]);
+
+  return (
+    <BaseHeadstart
+      style={{
+        transformOrigin: 'right',
+        transform: `scaleX(${Math.min(1, 2 - percent)})`,
+        right: `${Math.max(0, 1 - percent) * 15}rem`,
+        background: `linear-gradient(270deg, ${rgbColor}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${rgbColor}, 0) 100%)`,
+      }}
+    />
+  );
+};
 
 const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
   @keyframes blink {
@@ -164,7 +172,7 @@ const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number
   <BaseLyricActive
     style={{
       clipPath: `inset(0 ${(1 - (fill === 0 ? 0 : fill + 0.05)) * 100}% -5rem 0)`,
-      color: `rgb(${color})`,
+      color: `${color}`,
     }}>
     {children}
   </BaseLyricActive>
@@ -173,7 +181,7 @@ const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number
 const BasePassTheMicProgress = styled.div<{ color: string }>`
   position: absolute;
   height: 1rem;
-  background: rgb(${(props) => props.color});
+  background: ${(props) => props.color};
   width: 100%;
 `;
 
@@ -187,7 +195,9 @@ const PassTheMicProgress = (props: { progress: number } & ComponentProps<typeof 
   />
 );
 
-const PassTheMicSymbol = styled(SwapHorizIcon, { shouldForwardProp: (prop) => prop !== 'shouldShake' })<{
+const PassTheMicSymbol = styled(SwapHorizIcon, {
+  shouldForwardProp: (prop) => prop !== 'shouldShake',
+})<{
   shouldShake?: boolean;
 }>`
   @keyframes shake {

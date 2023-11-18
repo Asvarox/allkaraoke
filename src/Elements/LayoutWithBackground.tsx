@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
-import { blueFill, blueStroke, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
 export const BackgroundContext = createContext({
   visible: true,
@@ -36,7 +36,13 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
 
 export const BackgroundStatic = styled.div`
   background-color: white;
-  background-image: linear-gradient(-45deg, ${redStroke()}, ${blueFill()}, ${blueStroke()}, ${redStroke()});
+  background-image: linear-gradient(
+    -45deg,
+    ${colorSets.red.stroke},
+    ${colorSets.blue.text},
+    ${colorSets.blue.stroke},
+    ${colorSets.red.stroke}
+  );
   background-size: 400% 400%;
 
   width: 100%;

@@ -2,7 +2,16 @@ import styled from '@emotion/styled';
 import PlayersManager from 'Players/PlayersManager';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { usePlayerMicData } from 'hooks/players/usePlayerMic';
-import { ForwardedRef, forwardRef, useCallback, useState } from 'react';
+import { ForwardedRef, forwardRef, useCallback, useMemo, useState } from 'react';
+import tinycolor from 'tinycolor2';
+
+const usePlayerColor = (playerNumber: number) => {
+  return useMemo(() => {
+    if (!styles.colors.players[playerNumber]) return '0, 0, 0';
+    const rgb = tinycolor(styles.colors.players[playerNumber].text).toRgb();
+    return `${rgb.r}, ${rgb.g}, ${rgb.b}`;
+  }, [playerNumber]);
+};
 
 const VolumeIndicatorBase = styled.div<{ color: string }>`
   background: linear-gradient(270deg, rgba(${(props) => props.color}, 1) 0%, rgba(${(props) => props.color}, 0) 100%);
@@ -22,11 +31,11 @@ export const VolumeIndicator = forwardRef(
     { volume, playerNumber, ...rest }: { playerNumber: number; volume: number },
     ref: ForwardedRef<HTMLDivElement | null>,
   ) => {
+    const percent = `${Math.min(1, volume * 20)}`;
+    const color = usePlayerColor(playerNumber);
+
     const player = PlayersManager.getPlayer(playerNumber);
     if (!player) return null;
-
-    const percent = `${Math.min(1, volume * 20)}`;
-    const color = styles.colors.players[player.number].text;
 
     return <VolumeIndicatorBase color={color} {...rest} style={{ transform: `scaleX(${percent})` }} ref={ref} />;
   },
@@ -47,7 +56,7 @@ export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: numbe
   );
 
   usePlayerMicData(playerNumber, cb);
-  const color = styles.colors.players[playerNumber].text;
+  const color = usePlayerColor(playerNumber);
 
   return <VolumeIndicatorBase {...props} color={color} ref={setElem} />;
 };

@@ -1,68 +1,61 @@
-export const blueFillBase = '0, 153, 255';
-export const blueFill = (a = 1) => `rgba(${blueFillBase}, ${a})`;
-export const blueStroke = (a = 1) => `rgba(0, 77, 128, ${a})`;
-export const redFillBase = '255, 54, 54';
-export const redFill = (a = 1) => `rgba(${redFillBase}, ${a})`;
-export const redStroke = (a = 1) => `rgba(117, 25, 25, ${a})`;
+// gf = 52, 166, 95
+// gs = 15, 138, 95
+// rf = 245, 98, 77
+// rs = 204, 35, 30
 
-const playerColors = [
-  {
-    text: blueFillBase,
-    star: {
-      fill: 'rgba(255, 183, 0, .5)',
-      stroke: 'rgba(255, 183, 0, 0)',
-      lineWidth: 1,
-    },
-    perfect: {
-      fill: blueFill(1),
-      stroke: 'white',
-      lineWidth: 1,
-    },
-    starPerfect: {
-      fill: 'rgba(255, 213, 0, 1)',
-      stroke: 'rgba(255, 183, 0, 1)',
-      lineWidth: 2,
-    },
-    hit: {
-      fill: blueFill(0.9),
-      stroke: blueStroke(0),
-      lineWidth: 1,
-    },
-    miss: {
-      fill: blueFill(0.25),
-      stroke: blueStroke(1),
-      lineWidth: 1,
-    },
+import tinycolor from 'tinycolor2';
+
+export const blueFillBase = tinycolor('rgb(0, 153, 255)');
+export const blueStrokeBase = tinycolor('rgb(0, 77, 128)');
+export const blueFill = (a = 1) => blueFillBase.setAlpha(a).toRgbString();
+export const blueStroke = (a = 1) => blueStrokeBase.setAlpha(a).toRgbString();
+
+export const redFillBase = tinycolor('rgb(255, 54, 54)');
+export const redStrokeBase = tinycolor('rgb(117, 25, 25)');
+export const redFill = (a = 1) => redFillBase.setAlpha(a).toRgbString();
+export const redStroke = (a = 1) => redStrokeBase.setAlpha(a).toRgbString();
+
+export const goldFillBase = tinycolor('rgb(255, 213, 0)');
+export const goldStrokeBase = tinycolor('rgb(255, 183, 0)');
+
+const alpha = (color: tinycolor.Instance, a: number) => color.setAlpha(a).toRgbString();
+
+const colorSet = (fillBase: tinycolor.Instance, strokeBase: tinycolor.Instance) => ({
+  text: alpha(fillBase, 1),
+  stroke: alpha(strokeBase, 1),
+  star: {
+    fill: alpha(goldStrokeBase, 0.5),
+    stroke: alpha(goldStrokeBase, 0),
+    lineWidth: 1,
   },
-  {
-    text: redFillBase,
-    star: {
-      fill: 'rgba(255, 183, 0, .5)',
-      stroke: 'rgba(255, 183, 0, 0)',
-      lineWidth: 1,
-    },
-    perfect: {
-      fill: redFill(1),
-      stroke: 'white',
-      lineWidth: 1,
-    },
-    starPerfect: {
-      fill: 'rgba(255, 213, 0, 1)',
-      stroke: 'rgba(255, 183, 0, 1)',
-      lineWidth: 2,
-    },
-    hit: {
-      fill: redFill(0.9),
-      stroke: redStroke(0),
-      lineWidth: 1,
-    },
-    miss: {
-      fill: redFill(0.25),
-      stroke: redStroke(1),
-      lineWidth: 1,
-    },
+  perfect: {
+    fill: alpha(fillBase, 1),
+    stroke: 'white',
+    lineWidth: 1,
   },
-];
+  starPerfect: {
+    fill: alpha(goldFillBase, 1),
+    stroke: alpha(goldStrokeBase, 1),
+    lineWidth: 2,
+  },
+  hit: {
+    fill: alpha(fillBase, 0.9),
+    stroke: alpha(strokeBase, 0),
+    lineWidth: 1,
+  },
+  miss: {
+    fill: alpha(fillBase, 0.25),
+    stroke: alpha(strokeBase, 1),
+    lineWidth: 1,
+  },
+});
+
+export const colorSets = {
+  blue: colorSet(blueFillBase, blueStrokeBase),
+  red: colorSet(redFillBase, redStrokeBase),
+};
+
+const playerColors = [colorSets.blue, colorSets.red];
 
 const styles = {
   colors: {
@@ -75,7 +68,7 @@ const styles = {
       },
       star: {
         fill: 'rgba(158, 144, 106, 1)',
-        stroke: 'rgba(255, 183, 0, 1)',
+        stroke: alpha(goldStrokeBase, 1),
         lineWidth: 1,
       },
       freestyle: {

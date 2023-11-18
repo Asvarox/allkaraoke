@@ -69,10 +69,14 @@ const ScoreTextPlayer = styled(ContentElement)<{ color: string }>`
   padding-left: 10rem;
   padding-right: 10rem;
   font-size: 3.5rem;
-  color: rgb(${(props) => props.color});
+  color: ${(props) => props.color};
 `;
 
-const ScoreTextScore = styled(ScoreTextPlayer)<{ win: boolean; highscore: boolean; color: string }>`
+const ScoreTextScore = styled(ScoreTextPlayer)<{
+  win: boolean;
+  highscore: boolean;
+  color: string;
+}>`
   font-size: ${(props) => (props.win ? '10.5rem' : '5.5rem')};
   color: ${(props) => (props.win ? styles.colors.text.active : 'white')};
   //color: white;

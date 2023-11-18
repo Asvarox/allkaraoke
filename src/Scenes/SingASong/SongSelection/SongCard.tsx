@@ -132,7 +132,11 @@ export const SongCardContainer = styled.div`
   border-radius: 1rem;
 `;
 
-export const SongCardBackground = styled.div<{ focused: boolean; expanded: boolean }>`
+export const SongCardBackground = styled.div<{
+  focused: boolean;
+  expanded: boolean;
+}>`
+  background-color: ${styles.colors.text.inactive};
   position: absolute;
   z-index: -1;
   inset: 0;

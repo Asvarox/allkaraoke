@@ -7,6 +7,7 @@ import events from 'GameEvents/GameEvents';
 import { useEventEffect } from 'GameEvents/hooks';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import BackgroundThumbnail from 'Scenes/SingASong/SongSelection/BackgroundThumbnail';
 import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
 import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
 import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
@@ -68,7 +69,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       search: e.key,
     });
   };
-  useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, { enabled: !filters.search && keyboardControl });
+  useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, {
+    enabled: !filters.search && keyboardControl,
+  });
 
   const onRemoteSearch = useCallback(
     (search: string) => {
@@ -124,6 +127,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   return (
     <Container songsPerRow={songsPerRow}>
+      {songPreview && <SongImageBackground videoId={songPreview.video} />}
       {filters.search ? (
         <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
       ) : (
@@ -196,6 +200,16 @@ const Container = styled.div<{ songsPerRow: number }>`
   --song-item-width: ${(props) =>
     `calc(${100 / props.songsPerRow}% - ((${props.songsPerRow - 1} / ${props.songsPerRow}) * var(--song-list-gap)))`};
   --song-item-ratio: calc(16 / 9 * (4 / ${(props) => props.songsPerRow}));
+`;
+
+const SongImageBackground = styled(BackgroundThumbnail)`
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px) grayscale(90%);
+  opacity: 0.25;
+  object-fit: cover;
 `;
 
 const SongsGroupContainer = styled.div<{ highlight: boolean }>`

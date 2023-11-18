@@ -15,8 +15,8 @@ export const MicIcon = ({ ...props }: ComponentProps<typeof SvgIcon>) => (
 );
 
 export const MicIconRed = styled(MicIcon)`
-  fill: rgba(${styles.colors.players[1].text});
+  fill: ${styles.colors.players[1].text};
 `;
 export const MicIconBlue = styled(MicIcon)`
-  fill: rgba(${styles.colors.players[0].text});
+  fill: ${styles.colors.players[0].text};
 `;

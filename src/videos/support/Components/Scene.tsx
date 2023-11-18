@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { BackgroundStatic } from 'Elements/LayoutWithBackground';
-import { blueFill, blueStroke, redFill, redStroke } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { PropsWithChildren } from 'react';
 import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
 import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';
@@ -10,7 +10,7 @@ const BackgroundVariant = styled(BackgroundStatic)<{ red?: boolean }>`
   ${(props) =>
     props.red &&
     `
-            background: linear-gradient(-45deg, ${blueFill()}, ${redFill()}, ${redStroke()}, ${blueStroke()});
+            background: linear-gradient(-45deg, ${colorSets.blue.text}, ${colorSets.red.text}, ${colorSets.red.stroke}, ${colorSets.blue.stroke});
             background-size: 400% 400%;
     `};
   position: absolute;
