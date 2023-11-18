@@ -107,7 +107,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.2.0"],\
           ["react-countup", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.5.0"],\
           ["react-dom", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:18.2.0"],\
-          ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.4.7"],\
+          ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.4.1"],\
           ["react-refresh", "npm:0.14.0"],\
           ["react-toastify", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.1.3"],\
           ["react-use", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:17.4.0"],\
@@ -13737,15 +13737,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["hotkeys-js", [\
-      ["npm:3.9.4", {\
-        "packageLocation": "./.yarn/cache/hotkeys-js-npm-3.9.4-72eb676c60-7d1fc2cb5e.zip/node_modules/hotkeys-js/",\
-        "packageDependencies": [\
-          ["hotkeys-js", "npm:3.9.4"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["html-tags", [\
       ["npm:3.2.0", {\
         "packageLocation": "./.yarn/cache/html-tags-npm-3.2.0-cdd16b1446-a0c9e96ac2.zip/node_modules/html-tags/",\
@@ -16235,7 +16226,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.2.0"],\
           ["react-countup", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.5.0"],\
           ["react-dom", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:18.2.0"],\
-          ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.4.7"],\
+          ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.4.1"],\
           ["react-refresh", "npm:0.14.0"],\
           ["react-toastify", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.1.3"],\
           ["react-use", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:17.4.0"],\
@@ -17496,20 +17487,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["react-hotkeys-hook", [\
-      ["npm:3.4.7", {\
-        "packageLocation": "./.yarn/cache/react-hotkeys-hook-npm-3.4.7-e41eefbe9d-3233d1efe9.zip/node_modules/react-hotkeys-hook/",\
+      ["npm:4.4.1", {\
+        "packageLocation": "./.yarn/cache/react-hotkeys-hook-npm-4.4.1-3c6fa3b808-7bffc313c6.zip/node_modules/react-hotkeys-hook/",\
         "packageDependencies": [\
-          ["react-hotkeys-hook", "npm:3.4.7"]\
+          ["react-hotkeys-hook", "npm:4.4.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.4.7", {\
-        "packageLocation": "./.yarn/__virtual__/react-hotkeys-hook-virtual-b76730bd00/0/cache/react-hotkeys-hook-npm-3.4.7-e41eefbe9d-3233d1efe9.zip/node_modules/react-hotkeys-hook/",\
+      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.4.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-hotkeys-hook-virtual-e41a7101cf/0/cache/react-hotkeys-hook-npm-4.4.1-3c6fa3b808-7bffc313c6.zip/node_modules/react-hotkeys-hook/",\
         "packageDependencies": [\
-          ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.4.7"],\
+          ["react-hotkeys-hook", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.4.1"],\
           ["@types/react", "npm:18.2.37"],\
           ["@types/react-dom", "npm:18.2.15"],\
-          ["hotkeys-js", "npm:3.9.4"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:18.2.0"]\
         ],\

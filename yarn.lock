@@ -10111,13 +10111,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hotkeys-js@npm:3.9.4":
-  version: 3.9.4
-  resolution: "hotkeys-js@npm:3.9.4"
-  checksum: 7d1fc2cb5e6c2d5007cdd38b51ffce180462f04de17b4c1da451b0b921133dc9626e34f451b0769347ab4857315c9023ebc05a2c2c5b2ec52b26bbeb62142449
-  languageName: node
-  linkType: hard
-
 "html-tags@npm:^3.1.0":
   version: 3.2.0
   resolution: "html-tags@npm:3.2.0"
@@ -12313,7 +12306,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-countup: "npm:^6.5.0"
     react-dom: "npm:^18.2.0"
-    react-hotkeys-hook: "npm:^3.4.7"
+    react-hotkeys-hook: "npm:^4.4.1"
     react-refresh: "npm:^0.14.0"
     react-toastify: "npm:^9.1.3"
     react-use: "npm:^17.4.0"
@@ -13317,15 +13310,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hotkeys-hook@npm:^3.4.7":
-  version: 3.4.7
-  resolution: "react-hotkeys-hook@npm:3.4.7"
-  dependencies:
-    hotkeys-js: "npm:3.9.4"
+"react-hotkeys-hook@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "react-hotkeys-hook@npm:4.4.1"
   peerDependencies:
     react: ">=16.8.1"
     react-dom: ">=16.8.1"
-  checksum: 3233d1efe9347125076a2c0cdf783a4673001e7334fd2c7e501a25b76d6b7db5fd7923221d04065ec957f1162de18664ded4042f325ea2f2df4372a6d1dc9d64
+  checksum: 7bffc313c6f91d595ed3ed64093462452c0086b48264aa58471339943fb324093852b3cd1a679773fc80eed58acacb6ee1d15e018fbb38008d69feeeed2546b4
   languageName: node
   linkType: hard
 
