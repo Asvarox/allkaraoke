@@ -8,19 +8,32 @@ import menuNavigateSound from 'assets/menu_navigate.wav';
 
 class Sound {
   private sound: HTMLAudioElement;
-  constructor(private options: { src: string; volume?: number; loop?: boolean; preload?: boolean }) {
+  constructor(
+    private options: {
+      src: string;
+      volume?: number;
+      loop?: boolean;
+      preload?: boolean;
+    },
+  ) {
     this.sound = new Audio(options.src);
     this.sound.preload = options.preload ? 'auto' : 'none';
     this.sound.volume = options.volume ?? 1;
     this.sound.loop = options.loop ?? false;
   }
 
-  public play = () => {
-    if (this.playing()) {
-      const clonedNode = this.sound.cloneNode(true) as HTMLAudioElement;
-      clonedNode.play().then(() => clonedNode.remove());
+  public play = async () => {
+    try {
+      if (this.playing()) {
+        const clonedNode = this.sound.cloneNode(true) as HTMLAudioElement;
+        await clonedNode.play();
+        clonedNode.remove();
+      } else {
+        await this.sound.play();
+      }
+    } catch (data) {
+      return console.warn(data);
     }
-    return this.sound.play();
   };
 
   public pause = () => {

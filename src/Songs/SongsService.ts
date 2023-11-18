@@ -30,7 +30,10 @@ if (localStorage.getItem('MIGRATED_V1_SONGS') !== 'true') {
         const song = convertTxtToSong(convertSongToTxt(songData!));
 
         if (song) {
-          await storage.setItem(getSongId(song), { ...song, id: getSongId(song) });
+          await storage.setItem(getSongId(song), {
+            ...song,
+            id: getSongId(song),
+          });
         }
       } catch (e) {
         captureException(e);
@@ -45,7 +48,10 @@ class SongsService {
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
   public store = async (song: Song) => {
-    await storage.setItem(this.generateSongFile(song), { ...song, lastUpdate: new Date().toISOString() });
+    await storage.setItem(this.generateSongFile(song), {
+      ...song,
+      lastUpdate: new Date().toISOString(),
+    });
     await this.reloadIndex();
   };
 
@@ -147,7 +153,6 @@ class SongsService {
         try {
           return getSongPreview(song, true);
         } catch (e) {
-          captureException(e);
           console.error(e);
           return null;
         }
