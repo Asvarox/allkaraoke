@@ -63,7 +63,7 @@ const RAW_RUNTIME_STATE =
           ["@types/latinize", "npm:0.2.18"],\
           ["@types/lodash", "npm:4.14.201"],\
           ["@types/lodash-es", "npm:4.17.11"],\
-          ["@types/node", "npm:20.9.0"],\
+          ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.37"],\
           ["@types/react-dom", "npm:18.2.15"],\
           ["@types/react-refresh", "npm:0.14.4"],\
@@ -8374,6 +8374,14 @@ const RAW_RUNTIME_STATE =
           ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:20.9.1", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.9.1-a9f3f31ed9-b2b3f9ee31.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.9.1"],\
+          ["undici-types", "npm:5.26.5"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@types/node-fetch", [\
@@ -16191,7 +16199,7 @@ const RAW_RUNTIME_STATE =
           ["@types/latinize", "npm:0.2.18"],\
           ["@types/lodash", "npm:4.14.201"],\
           ["@types/lodash-es", "npm:4.17.11"],\
-          ["@types/node", "npm:20.9.0"],\
+          ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.37"],\
           ["@types/react-dom", "npm:18.2.15"],\
           ["@types/react-refresh", "npm:0.14.4"],\
@@ -19642,7 +19650,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.11"],\
           ["@tsconfig/node14", "npm:1.0.3"],\
           ["@tsconfig/node16", "npm:1.0.4"],\
-          ["@types/node", "npm:20.9.0"],\
+          ["@types/node", "npm:20.9.1"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
@@ -20469,7 +20477,7 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.0.0"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:20.9.0"],\
+          ["@types/node", "npm:20.9.1"],\
           ["@types/sass", null],\
           ["@types/stylus", null],\
           ["@types/sugarss", null],\
