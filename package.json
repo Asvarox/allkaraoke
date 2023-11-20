@@ -127,7 +127,7 @@
     "js-yaml": "^4.1.0",
     "lint-staged": "^15.1.0",
     "lodash": "^4.17.21",
-    "musicbrainz-api": "^0.11.0",
+    "musicbrainz-api": "^0.13.0",
     "node-fetch": "^3.3.2",
     "peer": "^1.0.1",
     "playwright": "^1.40.0",
