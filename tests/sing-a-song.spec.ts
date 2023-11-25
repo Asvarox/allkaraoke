@@ -95,11 +95,13 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   test.setTimeout(testInfo.timeout);
 
   // Song ending
-  await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByTestId('skip-animation-button')).toBeVisible({ timeout: 30_000 });
   await expect(page.getByTestId('player-0-name')).toHaveText('E2E Player 1');
   await expect(page.getByTestId('player-1-name')).toHaveText('E2E Player 2');
 
-  // High scores
+  // Skip waiting for stats
+  await page.getByTestId('skip-animation-button').click();
+  // Highscores
   await page.getByTestId('highscores-button').click();
 
   await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 1"]')).toBeVisible();
@@ -114,7 +116,6 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   // Check next song
   await page.getByTestId('play-next-song-button').click();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
   await expect(
     page.locator('[data-test="song-e2e-multitrack-polish-1994"] >> [data-test="song-stat-indicator"]'),
   ).toContainText('Played today', { ignoreCase: true });
@@ -141,6 +142,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await page.keyboard.press('Backspace');
   await page.getByTestId('button-exit-song').click();
 
+  // Skip waiting for stats
+  await page.getByTestId('skip-animation-button').click();
   await page.getByTestId('highscores-button').click();
   await expect(page.getByTestId('highscores-container')).toContainText('Updated name');
 });

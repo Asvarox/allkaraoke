@@ -100,7 +100,7 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
     await page.waitForTimeout(1500);
     await remoteMicRed.getByTestId('keyboard-enter').click();
 
-    await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId('skip-animation-button')).toBeVisible({ timeout: 15_000 });
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
@@ -114,6 +114,8 @@ test('Mobile phone mode should be playable', async ({ browser, page, browserName
   await expect(page.getByTestId('player-0-name')).toHaveText(P1_Name);
   await expect(page.getByTestId('player-1-name')).toHaveText(P2_Name);
 
+  await expect(page.getByTestId('skip-animation-button')).toBeVisible();
+  await remoteMicBluePage.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('highscores-button')).toBeVisible();
   await remoteMicBluePage.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('play-next-song-button')).toBeVisible();

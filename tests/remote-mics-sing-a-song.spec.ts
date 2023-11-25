@@ -139,6 +139,8 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   await expect(page.getByTestId('player-0-name')).toHaveText(P1_Name);
   await expect(page.getByTestId('player-1-name')).toHaveText(P2_Name);
 
+  await expect(page.getByTestId('skip-animation-button')).toBeVisible();
+  await remoteMicBluePage.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('highscores-button')).toBeVisible();
   await remoteMicBluePage.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('play-next-song-button')).toBeVisible();

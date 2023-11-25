@@ -37,7 +37,9 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
   await expect(page.getByTestId('players-score')).toBeVisible({ timeout: 15_000 });
   await expect(page.getByTestId('player-0-score')).not.toBeVisible();
   await expect(page.getByTestId('player-1-score')).not.toBeVisible();
-  await expect(page.getByTestId('highscores-button')).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByTestId('skip-animation-button')).toBeVisible({
+    timeout: 30_000,
+  });
 
   await expect(page.getByTestId('player-0-name')).toHaveText('Player #1, Player #2');
   await expect(page.getByTestId('player-1-name')).not.toBeVisible();
@@ -49,6 +51,7 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
   }).toPass();
 
   // High scores
+  await page.getByTestId('skip-animation-button').click();
   await page.getByTestId('highscores-button').click();
 
   await expect(

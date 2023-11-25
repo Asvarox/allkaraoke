@@ -48,7 +48,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
         {step === 'highscores' && (
           <HighScoresView onNextStep={onClickSongSelection} singSetup={singSetup} highScores={highScores} song={song} />
         )}
-        <PostGameTip active />
+        <PostGameTip $active />
       </Container>
     </SongPage>
   );
@@ -60,9 +60,11 @@ const Container = styled.div`
 
 export default PostGameView;
 
-const PostGameTip = styled(GameTip)<{ active: boolean }>`
+const PostGameTip = styled(GameTip, {
+  shouldForwardProp: (propName) => !propName.startsWith('$'),
+})<{ $active: boolean }>`
   transition: 300ms;
-  transform: scale(${({ active }) => (active ? 1 : 0)});
+  transform: scale(${({ $active }) => ($active ? 1 : 0)});
   position: absolute;
   bottom: 20rem;
   font-size: 3.2rem;

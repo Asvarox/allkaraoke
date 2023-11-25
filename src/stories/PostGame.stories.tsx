@@ -1,12 +1,12 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { MAX_POINTS, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
+import { MAX_POINTS, beatsToPoints, sumDetailedScore } from 'Scenes/Game/Singing/GameState/Helpers/calculateScore';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
 import { DetailedScore, GAME_MODE, SingSetup } from 'interfaces';
 import { ComponentProps } from 'react';
 import { ValuesType } from 'utility-types';
 import tuple from 'utils/tuple';
-import song from '../../public/songs/2-plus-1-chodz-pomaluj-moj-swiat.txt';
+import song from '../../public/songs/2-plus-1-chodz-pomaluj-moj-swiat.txt?raw';
 
 interface StoryArgs {
   player1Score: number;
@@ -22,7 +22,10 @@ export default {
   argTypes: {
     player1Score: { control: 'range', min: 0, max: 100 },
     player2Score: { control: 'range', min: 0, max: 100 },
-    gameMode: { control: 'radio', options: [GAME_MODE.DUEL, GAME_MODE.PASS_THE_MIC, GAME_MODE.CO_OP] },
+    gameMode: {
+      control: 'radio',
+      options: [GAME_MODE.DUEL, GAME_MODE.PASS_THE_MIC, GAME_MODE.CO_OP],
+    },
   },
   args: {
     player1Score: 69,
@@ -56,20 +59,21 @@ const Template: StoryFn<StoryArgs> = (args) => {
 
   const pointsPerBeat = MAX_POINTS / sumDetailedScore(maxPoints);
 
+  const maxScores = beatsToPoints(maxPoints, pointsPerBeat);
   const players = [
     {
       name: 'Player #1',
       playerNumber: 0,
       detailedScore: tuple([
         {
-          freestyle: (args.player1Score / 100) * maxPoints.freestyle * pointsPerBeat,
-          rap: (args.player1Score / 100) * maxPoints.rap * pointsPerBeat,
-          star: (args.player1Score / 100) * maxPoints.star * pointsPerBeat,
-          normal: (args.player1Score / 100) * maxPoints.normal * pointsPerBeat,
-          perfect: (args.player1Score / 100) * maxPoints.perfect * pointsPerBeat,
-          vibrato: (args.player1Score / 100) * maxPoints.vibrato * pointsPerBeat,
+          freestyle: ((args.player1Score * 3) / 100) * maxPoints.freestyle * pointsPerBeat,
+          rap: ((args.player1Score * 2) / 100 / 2) * maxPoints.rap * pointsPerBeat,
+          star: (args.player1Score / 100 / 3) * maxPoints.star * pointsPerBeat,
+          normal: ((args.player1Score * 4) / 100 / 4) * maxPoints.normal * pointsPerBeat,
+          perfect: (args.player1Score / 100 / 5) * maxPoints.perfect * pointsPerBeat,
+          vibrato: (args.player1Score / 100 / 6) * maxPoints.vibrato * pointsPerBeat,
         },
-        maxPoints,
+        maxScores,
       ]),
     },
     {
@@ -84,7 +88,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
           perfect: (args.player2Score / 100) * maxPoints.perfect * pointsPerBeat,
           vibrato: (args.player2Score / 100) * maxPoints.vibrato * pointsPerBeat,
         },
-        maxPoints,
+        maxScores,
       ]),
     },
   ];
@@ -125,7 +129,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
         {
           singSetupId: 'storybook-id',
           name: players[1].name,
-          score: sumDetailedScore(players[1].detailedScore[1]) * pointsPerBeat,
+          score: sumDetailedScore(players[1].detailedScore[1]),
           date: '2022-10-10',
         },
       ]}

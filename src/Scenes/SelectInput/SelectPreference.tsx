@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
+import { Badge } from 'Elements/Badge';
 import { MenuButton } from 'Elements/Menu';
 import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
 import { focused } from 'Elements/cssMixins';
@@ -47,6 +48,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             that will open Remote Mic website - no need to download an app!
           </OptionDescription>
         </div>
+        <Badge>Recommended</Badge>
       </Option>
       <Option
         {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in')}>
@@ -151,6 +153,7 @@ const moreInfoMixin = css`
 `;
 
 const Option = styled(MenuButton)<{ focused?: boolean }>`
+  position: relative;
   display: flex;
   align-items: center;
 

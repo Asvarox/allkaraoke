@@ -8,7 +8,7 @@ import PlayerScoreView from 'Scenes/Game/Singing/PostGame/Views/Results/PlayerSc
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 interface Props {
   onNextStep: () => void;
@@ -18,9 +18,38 @@ interface Props {
 }
 
 function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
-  useKeyboard({
-    accept: onNextStep,
-  });
+  // -1 so the animation starts from the first segment
+  const [segment, setSegment] = useState<number>(-1);
+
+  useEffect(() => {
+    if (segment < 0) {
+      setSegment(0);
+    } else if (segment < 4) {
+      const interval = setInterval(() => {
+        setSegment((segment) => segment + 1);
+      }, 1_500);
+      return () => {
+        clearInterval(interval);
+      };
+    }
+  }, [segment]);
+  const isAnimFinished = segment > 3;
+
+  const nextStep = () => {
+    if (!isAnimFinished) {
+      setSegment(5);
+    } else {
+      onNextStep();
+    }
+  };
+
+  useKeyboard(
+    {
+      accept: nextStep,
+    },
+    true,
+    [segment],
+  );
   const help = useMemo(
     () => ({
       accept: 'Next',
@@ -32,9 +61,6 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   const isCoop = singSetup.mode === GAME_MODE.CO_OP;
   const finalPlayers = isCoop ? [{ ...players[0], name: players.map((player) => player.name).join(', ') }] : players;
 
-  const [finishedAnims, setFinishedAnims] = useState(finalPlayers.map(() => false));
-  const isAnimDone = finishedAnims.every((anim) => anim);
-
   const playerScores = finalPlayers.map((player) => sumDetailedScore(player.detailedScore[0]));
   const highestScore = Math.max(...playerScores);
 
@@ -45,13 +71,8 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
           <PlayerScoreView
             playerNumber={player.playerNumber}
             useColors={!isCoop}
-            revealHighScore={isAnimDone}
-            setAnimDone={(which) =>
-              setFinishedAnims((current) => {
-                current[which] = true;
-                return [...current];
-              })
-            }
+            revealHighScore={segment > 3}
+            segment={segment}
             key={number}
             player={player}
             highScores={highScores}
@@ -60,8 +81,11 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
           />
         ))}
       </ScoresContainer>
-      <SongSelectionButton onClick={onNextStep} focused data-test="highscores-button">
-        Next
+      <SongSelectionButton
+        onClick={nextStep}
+        focused
+        data-test={isAnimFinished ? 'highscores-button' : 'skip-animation-button'}>
+        {isAnimFinished ? 'Next' : 'Skip'}
       </SongSelectionButton>
       {CameraManager.getPermissionStatus() && <StyledPhotoRoll />}
     </>
@@ -73,6 +97,9 @@ const ScoresContainer = styled.div`
   top: 20rem;
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 `;
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`

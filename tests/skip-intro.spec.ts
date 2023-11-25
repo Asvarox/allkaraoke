@@ -29,5 +29,5 @@ test('skip the intro from the song', async ({ page }) => {
   await page.waitForTimeout(1500);
   await page.keyboard.press('Enter');
 
-  await page.getByTestId('highscores-button').click({ timeout: 20_000 });
+  await page.getByTestId('skip-animation-button').click({ timeout: 20_000 });
 });
