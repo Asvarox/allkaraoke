@@ -8,6 +8,7 @@ import PlayerScoreView from 'Scenes/Game/Singing/PostGame/Views/Results/PlayerSc
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
+import posthog from 'posthog-js';
 import { useEffect, useMemo, useState } from 'react';
 
 interface Props {
@@ -37,6 +38,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
 
   const nextStep = () => {
     if (!isAnimFinished) {
+      posthog.capture('animation_skipped');
       setSegment(5);
     } else {
       onNextStep();
