@@ -9,12 +9,16 @@ export const focusable = (props: { focused?: boolean }) => css`
   }
 `;
 
+export const focusedStatic = css`
+  box-shadow: inset 0px 0px 0px 4px ${styles.colors.text.active};
+`;
+
 const focusAnimation = keyframes`
   100% {
     box-shadow: inset 0px 0px 0px 2px ${styles.colors.text.active};
   }
   50% {
-    box-shadow: inset 0px 0px 0px 4px ${styles.colors.text.active};
+    ${focusedStatic};
   }
   0% {
     box-shadow: inset 0px 0px 0px 2px ${styles.colors.text.active};

@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
-import { typography } from 'Elements/cssMixins';
+import { focusedStatic, typography } from 'Elements/cssMixins';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
-import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import dayjs from 'dayjs';
 import useKeyboard from 'hooks/useKeyboard';
@@ -105,8 +104,5 @@ const Playlist = styled(Button)<{ selected?: boolean; active: boolean }>`
   flex: 1;
   ${(props) => !props.focused && props.active && `background-color: transparent;`};
   padding: 1.5rem;
-  ${(props) =>
-    props.selected
-      ? `box-shadow: inset 0px 0px 0px 4px ${styles.colors.text.active};`
-      : !props.active && `opacity: .5;`}
+  ${(props) => (props.selected ? focusedStatic : !props.active && `opacity: .5;`)}
 `;

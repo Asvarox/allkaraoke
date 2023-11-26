@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import { ThumbUpAlt } from '@mui/icons-material';
+import CircleIcon from '@mui/icons-material/Circle';
 import ErrorIcon from '@mui/icons-material/Error';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import WarningIcon from '@mui/icons-material/Warning';
 import { typography } from 'Elements/cssMixins';
 import { inputStatus } from 'Scenes/Game/Singing/Input/Interface';
@@ -15,7 +14,7 @@ function PlayerStatus({ status, tooltipPosition = 'end', ...restProps }: Props) 
   return (
     <StatusContainer {...restProps}>
       {status === 'ok' ? (
-        <ThumbUpAlt data-test="status-ok" />
+        <OkIcon data-test="status-ok" />
       ) : status === 'unavailable' ? (
         <UnavailableIcon data-test="status-unavailable" />
       ) : (
@@ -52,7 +51,7 @@ const StatusContainer = styled.span`
   }
 `;
 
-const OkIcon = styled(SignalCellularAltIcon)`
+const OkIcon = styled(CircleIcon)`
   fill: #ffffff;
   stroke: black;
   stroke-width: 1px;
