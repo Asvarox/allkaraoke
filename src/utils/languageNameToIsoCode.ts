@@ -24,6 +24,7 @@ function generateLangMap() {
     Korean: 'kr',
     Swedish: 'se',
     Latin: 'va',
+    Japanese: 'jp',
   };
   return { ...langMap, ...langMap2 };
 }

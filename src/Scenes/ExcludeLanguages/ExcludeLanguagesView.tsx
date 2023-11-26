@@ -43,7 +43,7 @@ interface Props {
   closeText: string;
 }
 
-const MIN_SONGS_COUNT = isE2E() ? 0 : 3;
+const MIN_SONGS_COUNT = isE2E() ? 0 : 10;
 
 function ExcludeLanguagesView({ onClose, closeText }: Props) {
   const { register } = useKeyboardNav({ onBackspace: onClose });
