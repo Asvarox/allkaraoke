@@ -9,7 +9,7 @@
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.14.18",
     "@mui/system": "^5.14.18",
-    "@mui/x-date-pickers": "^6.18.1",
+    "@mui/x-date-pickers": "^6.18.2",
     "@remotion/gif": "^4.0.72",
     "@remotion/google-fonts": "^4.0.72",
     "@sentry/react": "^7.80.0",
