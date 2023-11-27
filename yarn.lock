@@ -12309,7 +12309,7 @@ __metadata:
     use-persisted-state: "npm:^0.3.3"
     utility-types: "npm:^3.10.0"
     uuid: "npm:^9.0.1"
-    vite: "npm:^5.0.0"
+    vite: "npm:^5.0.2"
     vite-tsconfig-paths: "npm:^4.2.1"
     vitest: "npm:^0.34.6"
     wouter: "npm:^2.12.1"
@@ -15777,9 +15777,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "vite@npm:5.0.0"
+"vite@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "vite@npm:5.0.2"
   dependencies:
     esbuild: "npm:^0.19.3"
     fsevents: "npm:~2.3.3"
@@ -15813,7 +15813,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 9a247a5657330ede5c131e782f2fb2adda77d493db2d528524378706108c1560ca4fe9ec0a865e5250978f5e2649c4da690834d2aab4dbf6175f1782cff6bd03
+  checksum: 74f1a6d49a02106796b5fcc04dbe4a92925fba413191718fb37485a29f606b7f80abd371a3ef6b598e8a04f05c09c0b9a5de6bf844dfecb7253798097ddaab35
   languageName: node
   linkType: hard
 
