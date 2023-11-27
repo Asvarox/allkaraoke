@@ -14,7 +14,7 @@
     "@remotion/google-fonts": "^4.0.72",
     "@sentry/react": "^7.81.1",
     "@uriopass/nosleep.js": "^0.12.2",
-    "aubiojs": "0.1.0",
+    "aubiojs": "0.2.1",
     "curtainsjs": "^8.1.5",
     "dayjs": "^1.11.10",
     "is-mobile": "^4.0.0",

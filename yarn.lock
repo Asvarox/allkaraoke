@@ -6813,10 +6813,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aubiojs@npm:0.1.0":
-  version: 0.1.0
-  resolution: "aubiojs@npm:0.1.0"
-  checksum: 2bf605812949bd6bd154e851a9be63be5bfa049bc16f87d9d03d736807aff900b8327de966d4c0bc032206a72cb920e479ef7afc6bda42767ad11cd1030532ba
+"aubiojs@npm:0.2.1":
+  version: 0.2.1
+  resolution: "aubiojs@npm:0.2.1"
+  checksum: 9e50b037edbd65ce3010d32452e55272b4e1001948a8c6450eb8c846af3f10b4ba9c8bcaf207b72e6de476e9713cd5a7b02f72a7d60b4ac93ed5fe7562cb364e
   languageName: node
   linkType: hard
 
@@ -12258,7 +12258,7 @@ __metadata:
     "@vitejs/plugin-basic-ssl": "npm:^1.0.2"
     "@vitejs/plugin-react": "npm:^4.2.0"
     "@vitest/ui": "npm:0.34.6"
-    aubiojs: "npm:0.1.0"
+    aubiojs: "npm:0.2.1"
     curtainsjs: "npm:^8.1.5"
     dayjs: "npm:^1.11.10"
     dotenv: "npm:^16.3.1"

@@ -75,7 +75,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-basic-ssl", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.2"],\
           ["@vitejs/plugin-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.2.0"],\
           ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.34.6"],\
-          ["aubiojs", "npm:0.1.0"],\
+          ["aubiojs", "npm:0.2.1"],\
           ["curtainsjs", "npm:8.1.5"],\
           ["dayjs", "npm:1.11.10"],\
           ["dotenv", "npm:16.3.1"],\
@@ -9977,10 +9977,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["aubiojs", [\
-      ["npm:0.1.0", {\
-        "packageLocation": "./.yarn/cache/aubiojs-npm-0.1.0-d4f97b5835-2bf6058129.zip/node_modules/aubiojs/",\
+      ["npm:0.2.1", {\
+        "packageLocation": "./.yarn/cache/aubiojs-npm-0.2.1-064b96606e-9e50b037ed.zip/node_modules/aubiojs/",\
         "packageDependencies": [\
-          ["aubiojs", "npm:0.1.0"]\
+          ["aubiojs", "npm:0.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16176,7 +16176,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-basic-ssl", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.2"],\
           ["@vitejs/plugin-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.2.0"],\
           ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.34.6"],\
-          ["aubiojs", "npm:0.1.0"],\
+          ["aubiojs", "npm:0.2.1"],\
           ["curtainsjs", "npm:8.1.5"],\
           ["dayjs", "npm:1.11.10"],\
           ["dotenv", "npm:16.3.1"],\
