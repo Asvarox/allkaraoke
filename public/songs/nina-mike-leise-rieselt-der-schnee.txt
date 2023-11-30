@@ -1,0 +1,128 @@
+#ID:nina-mike-leise-rieselt-der-schnee
+#ARTIST:Nina & Mike
+#ARTISTORIGIN:DE
+#TITLE:Leise rieselt der Schnee
+#CREATOR:Tom
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=17
+#BPM:204
+#REALBPM:114
+#YEAR:2003
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1571
+#VIDEOID:B21ssCKJ4Ws
+#VIDEOGAP:0
+#VOLUME:0,71
+#GENRE:None
+#LANGUAGE:German
+#LASTUPDATE:2023-11-30T16:28:15.348Z
+#EDITION:Christmas
+#GAP:5570,588235294117
+: 14 12 16 Lei
+: 27 6 16 se 
+: 34 7 14 rie
+: 42 9 16 selt 
+: 52 2 14 der 
+: 55 25 12 Schnee. 
+- 80 85
+- 85
+: 99 14 12 Still 
+: 114 6 9 und 
+: 121 8 12 starr 
+: 130 8 11 ruht 
+: 140 2 9 der 
+: 143 21 7 See. 
+- 164 174
+- 174
+: 188 6 14 Weih
+: 195 6 13 nacht
+: 202 5 14 lich 
+* 208 7 17 glän
+: 216 10 16 zet 
+: 227 3 14 der 
+: 231 22 12 Wald. 
+- 253 261
+- 261
+: 275 10 14 Freu
+: 286 3 9 e 
+: 290 5 9 dich 
+: 296 7 11 ’s Christ
+: 304 8 9 kind 
+: 314 5 11 kommt 
+: 320 22 12 bald. 
+- 342 394
+- 394
+: 408 11 16 In 
+: 420 6 16 den 
+: 427 6 14 Her
+: 434 10 16 zen 
+: 445 4 14 ist’s 
+: 450 26 12 warm. 
+- 476 479
+- 479
+: 493 13 12 Still 
+: 507 7 9 schweigt 
+: 515 6 12 Kum
+: 522 9 11 mer 
+: 533 4 9 und 
+: 538 26 7 Harm. 
+- 564 566
+- 566
+: 580 7 14 Sor
+: 588 9 13 ge 
+: 598 4 14 des 
+* 603 6 17 Le
+: 610 10 16 bens 
+: 621 3 14 ver
+: 625 21 12 hallt. 
+- 646 655
+- 655
+: 669 10 14 Freu
+: 680 2 9 e 
+: 683 6 9 dich 
+: 690 7 11 ’s Christ
+: 698 8 9 kind 
+: 708 4 11 kommt 
+: 713 21 12 bald. 
+- 734 873
+- 873
+: 887 14 17 Bald 
+: 902 5 17 ist 
+: 908 7 15 Hei
+: 916 10 17 li
+: 927 3 15 ge 
+: 931 23 13 Nacht. 
+- 954 960
+- 960
+: 974 14 13 Chor 
+: 989 6 10 der 
+: 996 6 13 En
+: 1003 10 12 gel 
+: 1014 3 10 er
+: 1018 23 8 wacht. 
+- 1041 1048
+- 1048
+: 1062 6 15 Hört 
+: 1069 10 14 nur 
+: 1080 3 15 wie 
+* 1084 7 18 lieb
+: 1092 7 17 lich 
+: 1101 3 15 es 
+: 1105 24 13 schallt. 
+- 1129 1135
+- 1135
+: 1149 10 15 Freu
+: 1160 3 10 e 
+: 1164 6 10 dich 
+: 1171 6 12 ’s Christ
+: 1178 9 10 kind 
+: 1188 5 12 kommt 
+: 1194 24 13 bald. 
+- 1218 1267
+- 1267
+: 1281 10 17 Freu
+: 1292 3 17 e 
+: 1296 6 17 dich 
+: 1303 7 15 ’s Christ
+: 1311 6 17 kind 
+: 1318 7 15 kommt 
+* 1326 22 13 bald. 
+E

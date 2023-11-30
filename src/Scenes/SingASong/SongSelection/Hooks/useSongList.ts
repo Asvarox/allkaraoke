@@ -19,6 +19,7 @@ export interface AppliedFilters {
   language?: string;
   excludeLanguages?: string[];
   search?: string;
+  edition?: string;
   updatedAfter?: string;
   duet?: boolean | null;
 }
@@ -27,6 +28,7 @@ export function isEmptyFilters(filters: AppliedFilters) {
   return (
     (!filters.language || filters.language === '') &&
     (!filters.search || filters.search === '') &&
+    (!filters.edition || filters.edition === '') &&
     (filters.duet === undefined || filters.duet === null) &&
     !filters.yearBefore &&
     !filters.yearAfter
@@ -85,6 +87,11 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
     return songList.filter((song) => Number(song.year) >= yearAfter);
   },
+  edition: (songList, genre: string) => {
+    const cleanSearch = clearString(genre);
+
+    return cleanSearch.length ? songList.filter((song) => clearString(song.edition ?? '') === genre) : songList;
+  },
   updatedAfter: (songList, after: string) => {
     if (!after) return songList;
     const dateAfter = dayjs(after);
@@ -110,7 +117,9 @@ export const useSongListFilter = (list: SongPreview[]) => {
   const availableLanguages = useLanguageFilter(list);
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
 
-  const [filters, setFilters] = useState<AppliedFilters>({ excludeLanguages: excludedLanguages ?? [] });
+  const [filters, setFilters] = useState<AppliedFilters>({
+    excludeLanguages: excludedLanguages ?? [],
+  });
   const deferredFilters = useDeferredValue(filters);
 
   const prefilteredList = useMemo(
@@ -157,14 +166,20 @@ export default function useSongList() {
         groups.push({
           letter: 'New',
           isNew: true,
-          songs: newSongs.map((song) => ({ song, index: filteredList.indexOf(song) })),
+          songs: newSongs.map((song) => ({
+            song,
+            index: filteredList.indexOf(song),
+          })),
         });
       }
     }
 
+    const nonAlphaRegex = /[^a-zA-Z]/;
+
     filteredList.forEach((song, index) => {
       try {
-        const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
+        const firstCharacter =
+          isFinite(+song.artist[0]) || nonAlphaRegex.test(song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
         let group = groups.find((group) => group.letter === firstCharacter);
         if (!group) {
           group = { letter: firstCharacter, songs: [] };

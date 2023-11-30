@@ -5,7 +5,7 @@ interface Props {}
 
 function ExcludeLanguages(props: Props) {
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('/');
+  const goBack = () => navigate('');
 
   return <ExcludeLanguagesView onClose={goBack} closeText="Return to Main Menu" />;
 }

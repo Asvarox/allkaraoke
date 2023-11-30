@@ -1,0 +1,276 @@
+#ID:amy-grant-its-the-most-wonderful-time-of-the-year
+#ARTIST:Amy Grant
+#ARTISTORIGIN:US
+#TITLE:It’s The Most Wonderful Time Of The Year
+#CREATOR:tigger_75
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3822
+#BPM:297,5
+#REALBPM:100
+#YEAR:1992
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10423
+#VIDEOID:mCMIyM-Elyw
+#VIDEOGAP:0
+#VOLUME:0,85
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:13.045Z
+#EDITION:Christmas
+#GAP:13491,596638655463
+: 20 4 12 It’s 
+: 26 4 13 the 
+: 32 12 15 most 
+: 48 7 15 won
+: 56 6 20 der
+: 64 4 17 ful 
+: 70 18 15 time 
+- 88
+: 92 4 13 Of 
+: 98 4 10 the 
+: 104 12 8 year 
+- 116 140
+- 140
+: 160 3 10 With 
+: 164 4 12 the 
+: 170 6 13 kids 
+: 178 4 10 jing
+: 184 4 10 le
+: 190 3 10 bel
+: 194 4 12 ling 
+- 198
+: 200 4 13 And 
+: 206 4 15 ev
+: 212 4 12 ery
+: 218 4 12 one 
+: 224 4 12 tell
+: 230 4 13 ing 
+: 236 4 15 you 
+: 242 4 17 be 
+: 248 3 13 of 
+: 252 4 17 good 
+: 260 8 20 cheer 
+- 268 278
+- 278
+: 298 4 19 It’s 
+: 304 4 17 the 
+: 310 12 15 most 
+: 328 4 15 won
+: 334 4 19 der
+: 340 4 17 ful 
+: 346 14 15 time 
+- 360
+: 372 3 13 Of 
+: 376 4 10 the 
+: 382 12 8 year 
+- 394 422
+- 422
+: 442 4 12 It’s 
+: 448 3 13 the 
+: 452 8 15 hap
+: 468 6 15 happ
+: 476 3 20 i
+: 480 4 17 est 
+: 488 18 15 sea
+: 508 8 13 son 
+: 518 4 10 of 
+: 524 12 8 all 
+- 536 560
+- 560
+: 580 4 10 With 
+: 586 5 12 those 
+: 592 6 13 ho
+: 600 3 10 li
+: 604 6 10 day 
+: 612 5 10 gree
+: 618 4 12 tings 
+- 622
+: 624 4 13 And 
+: 630 4 15 gay 
+: 636 3 12 hap
+: 640 4 12 py 
+: 646 4 12 meet
+: 652 4 13 ings 
+- 656
+: 658 4 15 When 
+: 664 4 17 friends 
+: 670 4 13 come 
+: 678 3 17 to 
+: 682 16 20 call 
+- 698 704
+- 704
+: 724 4 19 It’s 
+: 730 4 17 the 
+: 736 12 15 hap
+: 752 7 15 hap
+: 760 3 19 pi
+: 764 4 17 est 
+: 772 16 15 sea
+: 794 7 13 son 
+: 802 4 10 of 
+* 808 12 18 all 
+- 820 844
+- 844
+: 864 6 8 There’ll 
+: 872 4 8 be 
+: 878 5 17 par
+: 884 4 17 ties 
+: 890 4 17 for 
+: 896 4 17 host
+* 902 4 19 ing 
+- 906
+: 908 4 17 Marsh
+: 914 4 15 mal
+: 920 4 15 lows 
+: 926 4 15 for 
+: 932 4 15 toas
+* 938 4 20 ting 
+- 942
+: 944 3 15 And 
+: 948 4 13 car
+: 954 4 13 ol
+: 960 6 13 ing 
+: 968 4 13 out 
+: 974 3 17 in 
+: 978 3 15 the 
+: 982 12 12 snow 
+- 994
+: 1008 4 8 There’ll 
+: 1014 2 8 be 
+: 1018 4 16 sca
+: 1024 4 16 ry 
+: 1030 5 16 ghost 
+: 1036 5 16 sto
+: 1042 4 18 ry 
+- 1046
+: 1050 3 16 And 
+: 1054 6 15 tales 
+: 1062 4 15 of 
+: 1068 1 15 the 
+: 1070 5 15 glo
+: 1076 6 16 ries 
+- 1082
+: 1084 3 15 Of 
+: 1088 6 13 christ
+: 1096 3 13 mas
+: 1100 4 13 es 
+: 1106 4 13 long 
+: 1112 6 11 long 
+: 1120 4 13 a
+: 1126 8 15 go 
+- 1134
+: 1150 3 12 It’s 
+: 1154 4 13 the 
+: 1160 12 15 most 
+: 1178 7 15 won
+: 1186 4 20 der
+: 1192 4 17 ful 
+: 1198 14 15 time 
+- 1212
+: 1222 4 13 Of 
+: 1228 4 10 the 
+: 1234 12 8 year 
+- 1246 1274
+- 1274
+: 1294 4 10 There’ll 
+: 1300 2 12 be 
+: 1304 5 13 much 
+: 1310 4 10 mist
+: 1316 4 10 le
+: 1322 5 10 toe
+: 1328 3 12 ing 
+- 1331
+: 1332 7 13 And 
+: 1340 7 15 hearts 
+: 1348 4 12 will 
+: 1354 3 12 be 
+: 1358 5 12 glow
+: 1364 3 13 ing 
+- 1367
+: 1368 5 15 When 
+: 1374 7 17 love 
+: 1382 4 13 ones 
+: 1388 4 17 are 
+: 1394 12 20 near 
+- 1406 1416
+- 1416
+: 1436 3 19 It’s 
+: 1440 4 17 the 
+: 1448 12 15 most 
+: 1464 6 15 won
+: 1472 3 19 der
+: 1476 4 17 ful 
+: 1482 18 15 time 
+- 1500
+: 1506 4 19 Of 
+: 1512 4 22 the 
+: 1518 12 20 year 
+- 1530
+F 1540 0 0 
+- 1540
+F 1550 0 0 -Intro- 
+- 1550 1820
+- 1820
+F 1840 0 0 
+- 1840 1878
+- 1878
+: 1898 4 13 It’s 
+: 1904 4 14 the 
+: 1910 12 16 most 
+: 1926 7 16 won
+: 1934 5 21 der
+: 1940 6 18 ful 
+: 1948 14 16 time 
+- 1962
+: 1970 4 14 Of 
+: 1976 4 11 the 
+: 1982 16 9 year 
+- 1998 2020
+- 2020
+: 2040 5 11 There’ll 
+: 2046 4 13 be 
+: 2052 5 14 much 
+: 2058 4 11 mist
+: 2066 4 11 le
+: 2072 5 11 toe
+: 2078 3 13 ing 
+- 2081
+: 2082 4 14 And 
+: 2088 7 16 hearts 
+: 2096 4 13 will 
+: 2102 3 13 be 
+: 2106 5 13 glow
+: 2112 4 14 ing 
+- 2116
+: 2118 4 16 When 
+: 2124 4 18 love 
+: 2130 7 14 ones 
+: 2138 3 18 are 
+: 2142 16 21 near 
+- 2158 2164
+- 2164
+: 2184 4 20 It’s 
+: 2190 4 18 the 
+: 2196 12 16 most 
+: 2214 6 16 won
+: 2222 3 20 der
+: 2226 4 18 ful 
+: 2232 18 16 time 
+- 2250
+: 2258 4 13 It’s 
+: 2264 2 14 the 
+: 2268 12 16 most 
+: 2284 7 16 won
+: 2292 4 20 der
+: 2298 4 18 ful 
+: 2304 16 16 time 
+- 2320
+: 2328 4 13 It’s 
+: 2334 3 14 the 
+: 2338 14 16 most 
+: 2356 7 16 won
+* 2364 4 25 der
+* 2370 4 21 ful 
+: 2376 50 16 time 
+- 2426
+: 2434 6 20 Of 
+: 2442 4 23 the 
+: 2448 26 21 year 
+E

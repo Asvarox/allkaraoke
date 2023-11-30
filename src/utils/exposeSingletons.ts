@@ -8,6 +8,7 @@ import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import inputManager from 'Scenes/Game/Singing/Input/InputManager';
 import inputSources from 'Scenes/SelectInput/InputSources';
 import SongDao from 'Songs/SongsService';
+import * as SoundManager from 'SoundManager'; // @ts-ignore
 import UserMediaService from 'UserMedia/userMediaService';
 
 // @ts-ignore
@@ -25,6 +26,7 @@ window.__exposeSingletons = () => {
     CameraManager,
     UserMediaService,
     PlayersManager,
+    SoundManager,
   };
 };
 

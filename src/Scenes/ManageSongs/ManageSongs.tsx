@@ -9,7 +9,7 @@ interface Props {}
 
 function ManageSongs(props: Props) {
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('/');
+  const goBack = () => navigate('');
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
@@ -21,16 +21,16 @@ function ManageSongs(props: Props) {
   return (
     <MenuWithLogo>
       <h1>Manage Songs</h1>
-      <Link href="/exclude-languages" onClick={handleClick('/exclude-languages')}>
-        <MenuButton {...register('exclude-languages', () => navigate('/exclude-languages'))}>
+      <Link href="exclude-languages" onClick={handleClick('exclude-languages')}>
+        <MenuButton {...register('exclude-languages', () => navigate('exclude-languages'))}>
           Select Song Languages
         </MenuButton>
       </Link>
-      <Link href="/edit" onClick={handleClick('/edit')}>
-        <MenuButton {...register('edit-songs', () => navigate('/edit'))}>Edit songs</MenuButton>
+      <Link href="edit" onClick={handleClick('edit')}>
+        <MenuButton {...register('edit-songs', () => navigate('edit'))}>Edit songs</MenuButton>
       </Link>
-      <Link href="/convert" onClick={handleClick('/convert')}>
-        <MenuButton {...register('convert-song', () => navigate('/convert'))}>Convert UltraStar .txt</MenuButton>
+      <Link href="convert" onClick={handleClick('convert')}>
+        <MenuButton {...register('convert-song', () => navigate('convert'))}>Convert UltraStar .txt</MenuButton>
       </Link>
       <hr />
       <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>

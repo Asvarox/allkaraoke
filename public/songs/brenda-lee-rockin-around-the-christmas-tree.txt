@@ -1,0 +1,230 @@
+#ID:brenda-lee-rockin-around-the-christmas-tree
+#ARTIST:Brenda Lee
+#TITLE:Rockin’ Around The Christmas Tree
+#CREATOR:Tom
+#CREATORURL:
+#BPM:300
+#REALBPM:71
+#YEAR:1958
+#SOURCEURL:
+#PREVIEWSTART:11
+#PREVIEWEND:52
+#VIDEOID:DSHGd4lmLd4
+#VIDEOGAP:0
+#VOLUME:0,85
+#GENRE:Christmas
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:13.994Z
+#EDITION:Christmas
+#GAP:9800
+: 20 8 3 Rock
+: 29 2 3 ing 
+: 32 3 3 a
+: 36 11 5 round 
+: 53 3 5 the 
+: 57 6 3 christ
+: 64 5 3 mas 
+: 70 7 5 tree 
+- 77
+: 78 6 5 At 
+: 85 2 3 the 
+: 88 10 7 christ
+: 99 7 5 mas 
+: 107 8 1 par
+: 116 4 -2 ty 
+: 121 8 -5 hop 
+- 129 138
+- 138
+: 158 2 5 Mi
+: 161 3 5 stle
+: 165 5 5 toe 
+: 171 9 7 hung 
+: 183 7 7 where 
+: 191 4 5 you 
+: 196 6 5 can 
+: 203 7 7 see 
+- 210
+: 214 6 5 Ev
+: 221 3 5 ery 
+: 225 4 3 cou
+: 230 3 3 ple 
+: 234 4 4 who 
+: 239 9 5 tries 
+: 249 4 1 to 
+: 254 10 0 stop 
+- 264 270
+- 270
+: 290 7 3 Rock
+: 298 2 3 ing 
+: 301 4 3 a
+: 306 7 5 round 
+: 322 2 5 the 
+: 325 7 3 christ
+: 333 5 3 mas 
+: 339 6 5 tree, 
+- 345
+: 346 8 5 Let 
+: 355 2 3 the 
+: 358 8 7 christ
+: 367 6 5 mas 
+: 374 8 1 spi
+: 383 5 -2 rit 
+: 389 10 -5 ring 
+- 399 406
+- 406
+: 426 4 5 La
+: 431 2 5 ter 
+: 434 4 5 we’ll 
+: 439 11 7 have 
+: 451 6 7 some 
+: 458 6 5 pump
+: 465 8 5 kin 
+: 474 7 7 pie 
+- 481
+: 482 8 5 And 
+: 491 2 5 we’ll 
+: 494 6 3 do 
+: 501 9 4 some 
+: 511 6 5 ca
+: 518 6 -5 ro
+: 525 7 -4 ling. 
+- 532 540
+- 540
+: 560 9 5 You 
+: 570 7 4 will 
+: 578 8 5 get 
+: 587 7 4 a 
+: 595 9 5 sen
+: 605 5 -4 ti
+: 611 6 1 men
+: 618 8 5 tal 
+* 627 6 7 fee
+* 634 8 3 ling 
+- 642
+: 650 3 0 When 
+: 654 5 3 you 
+: 660 17 7 hear 
+- 677
+: 696 6 8 Voi
+: 703 7 7 ces 
+: 711 10 8 sing
+: 722 5 7 ing 
+: 728 10 8 let’s 
+: 739 4 5 be 
+: 744 7 7 jol
+: 752 6 8 ly, 
+- 758
+: 765 6 10 Deck 
+: 778 2 8 the 
+: 781 8 7 halls 
+: 790 5 5 with 
+: 796 11 3 boughs 
+: 808 5 5 of 
+: 814 9 7 hol
+: 824 4 3 ly 
+- 828
+: 832 5 3 Rock
+: 838 2 3 ing 
+: 841 4 3 a
+: 846 11 5 round 
+: 865 2 5 the 
+: 868 6 3 christ
+: 875 5 3 mas 
+: 881 7 5 tree, 
+- 888
+: 889 7 5 Have 
+: 897 2 3 a 
+: 900 6 7 hap
+: 907 7 5 py 
+: 915 9 1 ho
+: 925 4 -2 li
+: 930 8 -5 day 
+- 938 948
+- 948
+: 968 4 5 Ev
+: 973 3 5 ery 
+: 977 7 5 one’s 
+: 985 6 7 dan
+: 992 9 7 cing 
+: 1002 4 5 mer
+: 1007 6 5 ri
+: 1014 5 7 ly 
+- 1019
+: 1026 5 5 In 
+: 1032 2 5 the 
+: 1035 8 3 new 
+: 1044 8 4 old-
+: 1053 4 5 fa
+: 1058 6 -5 shioned 
+: 1065 7 -4 way. 
+- 1072 1626
+- 1626
+: 1646 7 5 You 
+: 1654 9 4 will 
+: 1664 9 5 get 
+: 1674 4 4 a 
+: 1680 10 5 sen
+: 1691 4 -4 ti
+: 1696 7 1 men
+: 1704 6 5 tal 
+* 1711 8 7 fee
+* 1720 7 3 ling 
+- 1727
+: 1736 3 0 When 
+: 1740 3 3 you 
+: 1744 18 7 hear 
+- 1762
+: 1782 7 8 Voi
+: 1790 8 7 ces 
+: 1799 8 8 sing
+: 1808 5 7 ing 
+: 1814 9 8 let’s 
+: 1824 5 5 be 
+: 1830 7 7 jol
+: 1838 4 8 ly, 
+- 1842
+: 1850 8 10 Deck 
+: 1864 1 8 the 
+: 1866 9 7 halls 
+: 1876 5 5 with 
+: 1882 10 3 boughs 
+: 1893 4 5 of 
+: 1898 10 7 hol
+: 1909 5 3 ly 
+- 1914
+: 1919 4 3 Rock
+: 1924 3 3 ing 
+: 1928 3 3 a
+: 1932 9 5 round 
+: 1949 3 5 the 
+: 1953 6 3 christ
+: 1960 5 3 mas 
+: 1966 6 5 tree, 
+- 1972
+: 1975 7 5 Have 
+: 1983 1 3 a 
+: 1985 9 7 hap
+: 1995 6 5 py 
+: 2002 8 1 ho
+: 2011 5 -2 li
+: 2017 6 -5 day 
+- 2023 2032
+- 2032
+: 2052 6 5 Ev
+: 2059 2 5 ery
+: 2062 8 5 one’s 
+: 2071 7 7 dan
+: 2079 8 7 cing 
+: 2088 4 5 mer
+: 2093 5 5 ri
+: 2099 5 7 ly 
+- 2104
+: 2112 5 5 In 
+: 2118 2 5 the 
+: 2121 8 3 new 
+: 2139 9 4 old-
+: 2155 15 5 fa
+: 2171 14 7 shioned 
+* 2186 8 10 wa
+* 2195 98 8 ~y. 
+E

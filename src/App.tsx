@@ -49,9 +49,9 @@ function App() {
 
   useEffect(() => {
     if (setupPreference === null && location === '/') {
-      navigate('/landing');
+      navigate('landing');
     } else if (setupPreference !== null && location === '/quick-setup') {
-      navigate('/');
+      navigate('');
     }
   }, []);
 
@@ -67,39 +67,39 @@ function App() {
       <ErrorBoundary fallback={ErrorFallback}>
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>
-            <Router>
+            <Router base={import.meta.env.BASE_URL}>
               <GameScreens>
                 <Toolbar />
-                <Route path="/game/:songId?">
+                <Route path="game/:songId?">
                   {({ songId }) => (
                     <Suspense fallback={<Loader />}>
                       <LazyGame songId={songId ? decodeURIComponent(songId) : undefined} />
                     </Suspense>
                   )}
                 </Route>
-                <Route path="/jukebox" component={Jukebox} />
-                <Route path="/remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
-                <Route path="/phone/:roomId">{({ roomId }) => <Redirect to={`/remote-mic/${roomId}`} />}</Route>
-                <Route path="/quick-setup" component={QuickSetup} />
-                <Route path="/select-input" component={SelectInput} />
-                <Route path="/settings" component={Settings} />
-                <Route path="/settings/remote-mics" component={RemoteMicSettings} />
-                <Route path="/manage-songs" component={ManageSongs} />
-                <Route path="/exclude-languages" component={ExcludeLanguages} />
-                <Route path="/" component={Welcome} />
-                <Route path="/landing" component={LandingPage} />
+                <Route path="jukebox" component={Jukebox} />
+                <Route path="remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
+                <Route path="phone/:roomId">{({ roomId }) => <Redirect to={`remote-mic/${roomId}`} />}</Route>
+                <Route path="quick-setup" component={QuickSetup} />
+                <Route path="select-input" component={SelectInput} />
+                <Route path="settings" component={Settings} />
+                <Route path="settings/remote-mics" component={RemoteMicSettings} />
+                <Route path="manage-songs" component={ManageSongs} />
+                <Route path="exclude-languages" component={ExcludeLanguages} />
+                <Route path="" component={Welcome} />
+                <Route path="landing" component={LandingPage} />
               </GameScreens>
-              <Route path="/convert" component={() => <Convert />} />
+              <Route path="convert" component={() => <Convert />} />
               <Route
-                path="/edit"
+                path="edit"
                 component={() => (
                   <Suspense fallback={<Loader />}>
                     <LazySongList />
                   </Suspense>
                 )}
               />
-              <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
-              <Route path="/edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
+              <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
+              <Route path="edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
             </Router>
           </KeyboardHelpProvider>
         </LayoutWithBackgroundProvider>

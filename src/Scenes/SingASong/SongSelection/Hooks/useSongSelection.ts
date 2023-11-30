@@ -47,7 +47,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
   useEffect(() => {
     if (preselected && songList.length && songList[focusedSong]) {
-      navigate(`/game/${encodeURIComponent(songList[focusedSong].id)}`, { replace: true, smooth: false });
+      navigate(`game/${encodeURIComponent(songList[focusedSong].id)}`, { replace: true, smooth: false });
     }
   }, [preselected, focusedSong, songList]);
 

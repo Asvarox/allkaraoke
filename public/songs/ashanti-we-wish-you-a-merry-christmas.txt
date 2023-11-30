@@ -1,0 +1,255 @@
+#ID:ashanti-we-wish-you-a-merry-christmas
+#ARTIST:Ashanti
+#ARTISTORIGIN:US
+#TITLE:We Wish You A Merry Christmas
+#CREATOR:britneyblisswilliams
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8929
+#BPM:278,78
+#REALBPM:155
+#YEAR:2003
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5929
+#PREVIEWSTART:22
+#PREVIEWEND:52
+#VIDEOID:4I5pTQ9Tr_s
+#VIDEOGAP:0
+#VOLUME:0,69
+#GENRE:Pop
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:13.420Z
+#EDITION:Christmas
+#GAP:3467,688499892388
+: 19 4 -2 We 
+: 27 4 3 wish 
+: 33 2 3 you 
+: 37 2 5 a 
+: 41 1 3 mer
+: 43 2 2 ry 
+: 47 6 0 Christ
+: 55 4 0 mas, 
+- 59
+: 63 4 0 We 
+: 71 4 5 wish 
+: 77 2 5 you 
+: 81 2 7 a 
+: 85 1 5 mer
+: 87 2 3 ry 
+: 91 6 2 Christ
+: 99 4 -2 mas 
+- 103
+: 105 4 -2 We 
+: 113 4 7 wish 
+: 121 2 7 you 
+: 125 2 8 a 
+: 129 1 7 mer
+: 131 2 5 ry 
+: 135 6 3 Christ
+: 143 4 0 mas 
+- 147
+: 149 3 -2 And 
+: 153 2 -2 a 
+: 157 4 0 hap
+* 163 6 5 py 
+: 171 6 2 new 
+: 179 6 3 year 
+- 185
+: 195 4 -2 Glad 
+: 201 5 3 ti
+: 207 6 3 dings 
+: 215 6 3 we 
+: 223 10 2 bring 
+: 237 6 2 to 
+: 245 4 3 you 
+: 251 6 2 and 
+: 259 6 0 your 
+: 267 6 -2 kin 
+- 273
+: 281 6 5 Glad 
+: 289 5 7 ti
+: 295 6 5 dings 
+: 303 4 3 for 
+: 309 4 10 Christ
+: 317 4 -2 mas 
+- 321
+: 325 1 -2 And 
+: 327 2 -2 a 
+: 331 6 0 hap
+: 339 6 5 py 
+: 347 6 2 new 
+: 355 6 3 year! 
+- 361
+: 369 4 -2 We’d 
+* 377 4 3 like 
+: 383 2 3 so
+: 387 2 5 me 
+: 391 1 3 luc
+: 393 2 2 ky 
+: 397 6 0 coo
+: 405 4 0 kies, 
+- 409
+: 413 4 0 We 
+: 421 4 5 want 
+: 427 2 5 so
+: 431 2 7 me 
+: 435 1 5 luc
+: 437 2 3 ky 
+: 441 6 2 coo
+: 449 4 -2 kies, 
+- 453
+: 455 4 -2 We 
+: 463 4 7 want 
+: 471 2 7 so
+: 475 2 8 me 
+: 479 1 7 luc
+: 481 2 5 ky 
+: 485 6 3 coo
+: 493 4 0 kies 
+- 497
+: 499 6 -2 Please 
+: 507 6 0 bring 
+: 515 4 5 it 
+: 521 4 2 right 
+: 529 6 3 here 
+- 535
+: 545 4 -2 Glad 
+: 551 5 3 ti
+: 557 6 3 dings 
+: 565 6 3 we 
+* 573 10 2 bring 
+: 587 6 2 to 
+: 595 4 3 you 
+: 601 6 2 and 
+: 609 6 0 your 
+: 617 6 -2 kin 
+- 623
+: 631 6 5 Glad 
+: 639 5 7 ti
+: 645 6 5 dings 
+: 653 4 3 for 
+: 659 4 10 Christ
+: 667 4 -2 mas 
+- 671
+: 675 1 -2 And 
+: 677 2 -2 a 
+: 681 6 0 hap
+: 689 6 5 py 
+: 697 6 2 new 
+: 705 6 3 year! 
+- 711
+: 719 4 -2 We 
+: 727 4 3 won’t 
+: 733 2 3 go 
+: 737 2 5 un
+: 741 3 3 til 
+: 745 2 2 we 
+: 749 4 0 get 
+: 755 4 0 some, 
+- 759
+: 763 4 0 We 
+* 771 4 5 won’t 
+: 777 2 5 go 
+: 781 2 7 un
+: 785 2 5 til 
+: 789 2 3 we 
+: 793 4 2 get 
+: 799 4 -2 some, 
+- 803
+: 805 4 -2 We 
+: 813 4 7 won’t 
+: 821 2 7 go 
+: 825 1 8 un
+: 827 2 7 til 
+: 831 2 5 we 
+: 835 6 3 get 
+: 843 4 0 some 
+- 847
+: 849 6 -2 So 
+: 857 6 0 bring 
+: 865 4 5 it 
+: 871 4 2 out 
+: 879 6 3 here 
+- 885
+: 895 4 -2 Glad 
+: 901 5 3 ti
+: 907 6 3 dings 
+: 915 6 3 we 
+: 923 10 2 bring 
+: 937 6 2 to 
+: 945 4 3 you 
+: 951 6 2 and 
+: 959 6 0 your 
+: 967 6 -2 kin 
+- 973
+: 981 6 5 Glad 
+: 989 5 7 ti
+* 995 6 5 dings 
+: 1003 4 3 for 
+: 1009 4 10 Christ
+: 1017 4 -2 mas 
+- 1021
+: 1025 1 -2 And 
+: 1027 2 -2 a 
+: 1031 6 0 hap
+: 1039 6 5 py 
+: 1047 6 2 new 
+: 1055 6 3 year! 
+- 1061
+: 1069 4 -1 We 
+: 1077 4 4 wish 
+: 1083 2 4 you 
+: 1087 2 6 a 
+: 1091 2 4 mer
+: 1095 2 3 ry 
+: 1099 4 1 Christ
+: 1105 4 1 mas, 
+- 1109
+: 1113 4 1 We 
+: 1121 4 6 wish 
+: 1127 2 6 you 
+: 1131 2 8 a 
+: 1135 2 6 mer
+: 1139 2 4 ry 
+: 1143 4 3 Christ
+: 1149 4 -1 mas 
+- 1153
+: 1155 4 -1 We 
+: 1163 4 8 wish 
+: 1169 4 8 you 
+: 1175 1 9 a 
+: 1177 3 8 mer
+: 1181 2 6 ry 
+: 1185 6 4 Christ
+: 1193 4 1 mas 
+- 1197
+: 1201 1 -1 And 
+: 1203 2 -1 a 
+: 1209 4 1 hap
+* 1215 4 6 py 
+: 1221 6 3 new 
+: 1229 6 4 year 
+- 1235
+: 1245 4 -2 Glad 
+: 1251 5 3 ti
+: 1257 6 3 dings 
+: 1265 6 3 we 
+: 1273 10 2 bring 
+: 1287 6 2 to 
+: 1295 4 3 you 
+: 1301 6 2 and 
+: 1309 6 0 your 
+: 1317 6 -2 kin 
+- 1323
+: 1331 6 5 Glad 
+: 1339 5 7 ti
+: 1345 6 5 dings 
+: 1353 4 3 for 
+: 1359 4 10 Christ
+: 1367 4 -2 mas 
+- 1371
+: 1375 1 -1 And 
+: 1377 2 -1 a 
+: 1381 6 1 hap
+: 1389 6 6 py 
+: 1399 6 3 new 
+: 1411 4 6 ye
+: 1417 22 4 ar! 
+E

@@ -1,20 +1,23 @@
 import { milliseconds } from 'interfaces';
 import { useEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
+import Listener from 'utils/Listener';
+import storage from 'utils/storage';
 
-class Setting<T> {
+class Setting<T> extends Listener<[T]> {
   private value: T | undefined = undefined;
 
-  private listeners: Array<(newValue: T) => void> = [];
   public constructor(
     private name: string,
     private defaultValue: T,
-    private driver: 'localStorage' | 'sessionStorage' = 'localStorage',
-  ) {}
+    private driver: 'local' | 'session' | 'memory' = 'local',
+  ) {
+    super();
+  }
 
   public get = (): T => {
     if (this.value === undefined) {
-      this.value = JSON.parse(window[this.driver].getItem(`settings-${this.name}`)!) ?? this.defaultValue;
+      this.value = storage[this.driver].getValue(`settings-${this.name}`)! ?? this.defaultValue;
     }
     return this.value as T;
   };
@@ -22,16 +25,8 @@ class Setting<T> {
   public set = (newValue: T) => {
     this.value = newValue;
 
-    window[this.driver].setItem(`settings-${this.name}`, JSON.stringify(newValue));
-    this.listeners.forEach((listener) => listener(newValue));
-  };
-
-  public addListener = (newListener: (newValue: T) => void) => {
-    this.listeners.push(newListener);
-
-    return () => {
-      this.listeners = this.listeners.filter((listener) => listener !== newListener);
-    };
+    storage[this.driver].storeValue(`settings-${this.name}`, newValue);
+    this.onUpdate(newValue);
   };
 }
 
@@ -44,7 +39,7 @@ const MIC_SETUP_PREFERENCE_KEY = 'mic-setup-preference';
 export const MicSetupPreferenceSetting = new Setting<ValuesType<typeof MicSetupPreference>>(
   MIC_SETUP_PREFERENCE_KEY,
   MicSetupPreference[0],
-  'sessionStorage',
+  'session',
 );
 
 export const FpsCount = [60, 30] as const;
@@ -67,6 +62,8 @@ export const BackgroundMusicSetting = new Setting<ValuesType<typeof BackgroundMu
   'background-music',
   BackgroundMusic[0],
 );
+
+export const ChristmasModeSetting = new Setting<boolean>('ChristmasModeSetting', false, 'memory');
 
 export function useSettingValue<T>(value: Setting<T>) {
   const [currentValue, setCurrentValue] = useState(value.get());

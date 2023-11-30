@@ -2,15 +2,17 @@ import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { focusedStatic, typography } from 'Elements/cssMixins';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
+import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import dayjs from 'dayjs';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
-import { useEffect, useMemo } from 'react';
+import { ReactNode, useEffect, useMemo } from 'react';
 
 interface PlaylistEntry {
   name: string;
+  display?: ReactNode;
   filters: AppliedFilters;
 }
 
@@ -20,12 +22,33 @@ const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
     () =>
       [
         { name: 'All', filters: {} },
-        { name: songLanguages[0].name, filters: { language: songLanguages[0].name } } as PlaylistEntry,
-        songLanguages[1] ? { name: songLanguages[1].name, filters: { language: songLanguages[1].name } } : null,
-        { name: 'Classics', filters: { yearBefore: 1995 } },
-        { name: 'Modern', filters: { yearAfter: 1995 } },
+        {
+          name: 'Christmas',
+          display: (
+            <>
+              <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
+              <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
+            </>
+          ),
+          filters: { edition: 'christmas' },
+        },
+        {
+          name: songLanguages[0].name,
+          filters: { language: songLanguages[0].name },
+        } as PlaylistEntry,
+        songLanguages[1]
+          ? {
+              name: songLanguages[1].name,
+              filters: { language: songLanguages[1].name },
+            }
+          : null,
+        // { name: "Classics", filters: { yearBefore: 1995 } },
+        // { name: "Modern", filters: { yearAfter: 1995 } },
         { name: 'Duets', filters: { duet: true } },
-        { name: 'New', filters: { updatedAfter: dayjs().subtract(31, 'days').toISOString() } },
+        {
+          name: 'New',
+          filters: { updatedAfter: dayjs().subtract(31, 'days').toISOString() },
+        },
       ].filter((playlist): playlist is PlaylistEntry => playlist !== null),
     [songLanguages],
   );
@@ -73,7 +96,7 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
           active={active}
           {...register(`playlist-${playlist.name}`, () => focusElement(`playlist-${playlist.name}`))}
           {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>
-          {playlist.name}
+          {playlist.display ?? playlist.name}
         </Playlist>
       ))}
     </Container>
@@ -92,6 +115,7 @@ const Container = styled.div<{ active: boolean }>`
   box-sizing: border-box;
   display: flex;
   flex-direction: row-reverse;
+  gap: 0;
 
   h2 {
     ${typography};
@@ -101,8 +125,9 @@ const Container = styled.div<{ active: boolean }>`
 
 const Playlist = styled(Button)<{ selected?: boolean; active: boolean }>`
   font-size: 3rem;
-  flex: 1;
+  justify-self: stretch;
+  flex-grow: 1;
   ${(props) => !props.focused && props.active && `background-color: transparent;`};
   padding: 1.5rem;
-  ${(props) => (props.selected ? focusedStatic : !props.active && `opacity: .5;`)}
+  ${(props) => (props.selected ? focusedStatic : !props.active && `opacity: .75;`)}
 `;

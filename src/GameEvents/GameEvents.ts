@@ -3,6 +3,7 @@ import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import {
   NetworkRemoteMicListMessage,
   NetworkSetPermissionsMessage,
+  NetworkStyleChangeMessage,
   NetworkSubscribeMessage,
   keyStrokes,
 } from 'RemoteMic/Network/messages';
@@ -101,6 +102,7 @@ export const events = {
   remoteMicListUpdated: new GameEvent<(list: NetworkRemoteMicListMessage['list']) => void>('remoteMicListUpdated'),
   remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
   remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),
+  remoteStyleChanged: new GameEvent<(style: NetworkStyleChangeMessage['style']) => void>('remoteStyleChanged'),
   remoteMicPermissionsSet: new GameEvent<(level: NetworkSetPermissionsMessage['level']) => void>(
     'remoteMicPermissionsSet',
   ),

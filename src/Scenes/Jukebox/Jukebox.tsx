@@ -24,7 +24,7 @@ function Jukebox(props: Props) {
   const songList = useSongIndex();
 
   const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-  const { register } = useKeyboardNav({ onBackspace: () => navigate('/') });
+  const { register } = useKeyboardNav({ onBackspace: () => navigate('') });
 
   useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 
@@ -32,7 +32,7 @@ function Jukebox(props: Props) {
 
   if (!shuffledList.length || !width || !height) return null;
 
-  const navigateUrl = `/game/${encodeURIComponent(shuffledList[currentlyPlaying].id)}`;
+  const navigateUrl = `game/${encodeURIComponent(shuffledList[currentlyPlaying].id)}`;
 
   return (
     <SongPage

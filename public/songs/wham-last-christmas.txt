@@ -10,8 +10,10 @@
 #SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas
 #VIDEOID:E8gmARGvPlI
 #VIDEOGAP:0
-#GENRE:Pop
+#GENRE:Christmas
 #LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:25.823Z
+#EDITION:Christmas
 #GAP:3537,681728880157
 : 21 3 -8 Ah, 
 : 26 7 -6 ha, 
