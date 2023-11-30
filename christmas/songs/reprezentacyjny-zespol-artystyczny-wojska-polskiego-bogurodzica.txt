@@ -1,0 +1,106 @@
+#ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-bogurodzica
+#ARTIST:Reprezentacyjny Zespół Artystyczny Wojska Polskiego
+#ARTISTORIGIN:PL
+#TITLE:Bogurodzica
+#CREATOR:Beneblade
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#BPM:224,74
+#REALBPM:42
+#YEAR:1989
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Bogurodzica
+#VIDEOID:NrhHjoyaHdo
+#VIDEOGAP:0
+#GENRE:Classical
+#LANGUAGE:Polish
+#GAP:34128,843107591
+: 15 33 2 Bo
+: 49 26 0 gu
+: 76 34 5 ro
+: 111 8 4 dzi
+: 120 7 2 ~
+: 128 7 0 ~
+: 136 34 2 ca
+- 174
+: 189 39 5 Dzie
+: 229 7 7 wi
+: 237 7 5 ~
+: 245 7 7 ~
+: 253 33 9 ca
+- 295
+: 310 35 12 Bo
+: 346 28 14 giem 
+: 377 34 12 Sła
+: 412 7 9 wie
+: 420 7 7 ~
+: 428 7 5 ~
+: 437 26 5 na
+- 470
+: 485 9 5 Ma
+: 495 7 7 ~
+: 503 7 9 ~
+: 511 9 7 ~
+: 521 9 4 ry
+: 531 9 0 ~
+: 541 32 2 ja
+- 588
+: 603 31 14 U 
+: 636 33 12 twe
+* 670 7 9 go
+* 678 7 7 ~
+* 686 6 5 ~ 
+* 693 7 7 sy
+* 701 7 5 ~
+* 709 7 7 ~
+: 717 26 9 na
+- 752
+: 767 32 12 Go
+: 801 33 14 spo
+: 835 7 12 dzi
+: 843 6 9 ~
+: 850 6 7 ~
+: 857 25 5 na
+- 893
+: 908 31 12 Ma
+: 941 7 9 tko
+: 949 7 7 ~
+: 957 26 5 ~
+- 983
+: 993 8 5 Zwo
+: 1002 7 7 ~
+: 1010 7 9 ~
+: 1018 7 7 ~
+: 1026 8 4 le
+: 1035 9 0 ~
+: 1045 32 2 na
+- 1082
+* 1097 8 5 Ma
+* 1106 7 7 ~
+* 1114 7 9 ~
+* 1122 8 7 ~
+: 1131 7 4 ry
+* 1139 9 0 ~
+: 1149 32 2 ja
+- 1184
+: 1199 33 5 Zysz
+: 1234 7 7 czy
+: 1242 7 5 ~
+: 1250 7 7 ~ 
+: 1258 36 9 nam
+- 1294
+: 1309 28 12 Spuś
+: 1340 21 11 ci 
+: 1362 36 14 nam
+- 1406
+: 1421 30 12 Ky
+: 1453 25 9 ri
+: 1479 8 7 e
+: 1489 26 5 ~
+- 1518
+* 1533 10 5 E
+* 1544 7 7 ~
+* 1553 8 9 ~
+* 1562 9 7 ~
+: 1572 11 4 lei
+: 1584 17 2 ~
+: 1602 58 2 son
+E

@@ -1,0 +1,191 @@
+#ID:pink-floyd-another-brick-in-the-wall-part-ii
+#ARTIST:Pink Floyd
+#ARTISTORIGIN:GB
+#TITLE:Another Brick In The Wall (Part II)
+#CREATOR:robertdjangelux
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=robertdjangelux
+#BPM:206
+#REALBPM:105
+#YEAR:1979
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pink%20Floyd&cancion=Another%20Brick%20In%20The%20Wall%20(Part%20II)
+#VIDEOID:HrxX9TBj2zY
+#VIDEOGAP:0
+#VOLUME:1
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:8703,582524271846
+- -13 1
+- 1
+: 14 4 14 We 
+: 19 5 16 don't 
+: 27 6 17 need 
+: 36 7 16 no
+- 43
+: 46 5 14 e
+: 53 4 16 du
+: 58 6 17 ca
+: 65 9 16 tion
+- 88 126
+- 126
+: 140 4 14 We 
+: 145 5 16 don't 
+: 152 7 17 need 
+: 160 8 16 no
+- 168
+: 173 5 14 thought 
+: 180 4 16 con
+* 186 16 17 trol
+- 216 248
+- 248
+: 262 3 9 No 
+: 267 4 14 dark 
+: 274 4 16 sar
+: 280 6 17 ca
+: 287 9 16 sm
+- 296
+: 299 7 14 in 
+: 307 2 16 the 
+: 311 6 17 class
+: 319 8 16 room
+- 341 379
+- 379
+: 393 6 14 Teach
+: 400 4 16 ers 
+: 405 6 17 leave 
+: 413 9 16 them
+- 422
+: 425 6 14 kids 
+: 433 3 16 a
+: 437 12 17 lone
+- 463 521
+- 521
+F 535 5 19 °Hey!
+- 541
+F 551 2 14 °Teach
+F 554 2 16 ers!
+- 557
+: 566 4 21 Leave 
+: 571 3 19 them 
+: 575 3 17 kids 
+: 579 2 19 a
+: 583 11 17 lone
+- 608 641
+- 641
+: 655 2 17 All 
+: 658 2 17 in 
+: 661 5 17 all 
+: 667 2 17 it's 
+: 671 3 17 just 
+: 675 5 17 an
+- 680
+: 685 1 7 a
+: 687 1 16 no
+: 689 3 16 ther 
+* 694 4 16 brick 
+* 699 4 14 in 
+: 705 3 12 the 
+: 710 9 14 wall
+- 733 768
+- 768
+: 782 2 17 All 
+: 785 2 17 in 
+: 788 5 17 all 
+: 794 2 17 you're 
+: 798 3 17 just 
+: 802 6 17 an
+- 808
+: 812 1 7 a
+: 814 1 16 no
+: 816 3 16 ther 
+: 821 5 16 brick 
+: 827 4 14 in 
+: 833 3 12 the 
+: 839 4 14 wall
+- 857 887
+- 887
+: 901 4 14 We 
+: 906 6 16 don't 
+: 914 6 17 need 
+: 922 6 16 no
+- 928
+: 933 5 14 e
+: 940 3 16 du
+: 944 6 17 ca
+: 952 7 16 tion
+- 973 1013
+- 1013
+: 1027 4 14 We 
+: 1032 5 16 don't 
+: 1039 6 17 need 
+: 1047 7 16 no
+- 1054
+: 1058 5 14 thought 
+: 1066 4 16 con
+: 1071 10 17 trol
+- 1095 1135
+- 1135
+: 1149 3 9 No 
+: 1153 5 14 dark 
+: 1160 4 16 sar
+: 1165 6 17 ca
+: 1173 9 16 sm
+- 1182
+: 1185 5 14 in 
+: 1191 3 16 the 
+: 1196 7 17 class
+: 1205 8 16 room
+- 1227 1265
+- 1265
+: 1279 4 14 Teach
+: 1284 5 16 ers 
+: 1292 6 17 leave 
+: 1300 8 16 them
+- 1308
+: 1311 4 14 kids 
+: 1318 3 16 a
+: 1323 9 17 lone
+- 1346 1408
+- 1408
+F 1422 5 19 °Hey!
+- 1428
+F 1436 4 14 °Teach
+F 1441 2 16 ers!
+- 1444
+: 1452 3 21 Leave 
+: 1456 2 19 them 
+: 1460 4 17 kids 
+: 1465 2 19 a
+: 1468 6 17 lone
+- 1488 1527
+- 1527
+: 1541 3 17 All 
+: 1545 2 17 in 
+: 1548 4 17 all 
+: 1553 1 17 it's 
+: 1556 4 17 just 
+: 1561 2 17 an
+- 1564
+* 1571 1 7 a
+* 1573 2 16 no
+* 1576 2 16 ther 
+* 1580 4 16 brick 
+* 1585 6 14 in 
+* 1592 2 12 the 
+* 1596 9 14 wall
+- 1619 1654
+- 1654
+: 1668 3 17 All 
+: 1672 2 17 in 
+: 1675 3 17 all 
+: 1679 3 17 you're 
+: 1683 4 17 just 
+: 1688 2 17 an
+- 1691
+: 1699 1 7 a
+: 1701 1 16 no
+: 1703 3 16 ther 
+: 1707 4 16 brick 
+: 1712 6 14 in 
+: 1719 2 12 the 
+: 1723 9 14 wall.
+E

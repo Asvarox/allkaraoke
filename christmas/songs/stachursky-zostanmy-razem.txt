@@ -1,0 +1,208 @@
+#ID:stachursky-zostanmy-razem
+#ARTIST:Stachursky
+#ARTISTORIGIN:PL
+#TITLE:Zostanmy Razem
+#CREATOR:Lecter
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6125
+#BPM:94,5
+#REALBPM:63
+#YEAR:1995
+#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5481
+#VIDEOID:xkq-6ppzRis
+#VIDEOGAP:0
+#VOLUME:0,8
+#LANGUAGE:Polish
+#GAP:34300
+: 0 1 62 Dzie
+: 1 2 65 ki Ci 
+: 3 1 62 ko
+: 4 1 65 cha
+: 5 1 62 nie, 
+: 6 3 67 za 
+: 9 2 62 twe 
+: 11 3 60 ser
+: 14 2 58 ce 
+- 17
+: 24 2 63 I 
+: 26 2 62 u
+: 28 2 60 rok 
+: 30 5 62 twoj, 
+- 36
+: 48 1 62 Dzie
+: 49 1 65 ki, 
+: 50 1 65 ze 
+: 51 1 62 co
+: 52 1 65 dzie
+: 53 1 62 nnie 
+: 54 4 67 przy 
+: 58 2 67 mnie 
+: 60 2 67 sto
+: 62 2 62 isz, 
+- 65
+: 72 2 63 Jak 
+: 74 2 65 a
+: 76 2 67 niol 
+: 78 4 67 stroz. 
+- 83
+: 86 2 69 Gdy 
+: 88 2 69 cie 
+: 90 2 69 nie 
+: 92 2 62 ma, 
+: 96 2 69 ko
+: 98 2 67 gos 
+: 100 1 65 mi 
+: 101 3 62 br
+: 104 1 60 a
+: 105 1 58 k
+- 108
+: 114 4 69 Czu
+: 118 2 69 je 
+: 120 2 72 pu
+: 122 2 72 stke 
+: 124 1 69 i 
+: 125 5 70 zal, 
+- 131
+: 132 2 70 Dla
+: 134 2 70 te
+: 136 2 67 go 
+: 138 5 70 zo
+: 143 5 70 stan
+: 148 2 69 my 
+: 150 2 70 ra
+: 152 3 65 zem, 
+- 156
+: 162 6 70 Zo
+: 168 4 70 stan
+: 172 2 69 my 
+: 174 2 70 ra
+: 176 4 65 zem, 
+- 181
+: 186 6 70 Zo
+: 192 4 70 stan
+: 196 2 69 my 
+: 198 2 70 ra
+: 200 6 67 zem 
+: 206 2 70 ja 
+: 208 2 72 i 
+: 210 18 72 ty. 
+- 231
+: 330 1 70 Wciaz 
+: 331 1 69 pa
+: 332 1 70 mie
+: 333 1 69 tam 
+: 334 1 70 tam
+: 335 1 69 ten 
+: 336 2 70 dzien, 
+- 339
+: 342 2 70 Smak 
+: 344 1 67 two
+: 345 1 65 ich 
+: 346 2 67 ust, 
+- 349
+: 354 2 67 W glo
+: 356 2 70 wach 
+: 358 2 67 wi
+: 360 2 70 ro
+: 362 2 70 wal 
+: 364 2 70 nam 
+: 366 4 67 swiat. 
+- 371
+: 378 1 70 Mo
+: 379 1 65 ze 
+: 380 1 65 lek
+: 381 1 65 ko 
+: 382 1 67 prze
+: 383 1 65 sa
+: 384 1 67 dzi
+: 385 1 62 lem, 
+- 387
+: 389 1 58 Lecz 
+: 390 1 62 wiesz, 
+: 391 1 58 jak 
+: 392 1 57 to 
+: 393 5 58 jest, 
+- 397
+: 402 2 70 Zy
+: 404 2 70 cie 
+: 406 3 70 tak 
+: 410 2 70 kro
+: 412 2 70 tko 
+: 414 4 70 trwa. 
+- 419
+: 422 2 69 Gdy 
+: 424 2 70 cie 
+: 426 2 69 nie 
+: 428 3 69 ma, 
+: 432 2 69 ko
+: 434 2 67 gos 
+: 436 2 65 mi 
+: 438 2 67 br
+: 440 1 65 a
+: 441 3 62 k
+- 445
+: 450 4 69 Czu
+: 454 2 69 je 
+: 456 2 74 pu
+: 458 2 72 stke 
+: 460 2 69 i 
+: 462 5 70 zal, 
+- 467
+: 468 2 70 Dla
+: 470 2 70 te
+: 472 2 67 go 
+: 474 5 70 zo
+: 479 5 70 stan
+: 484 2 69 my 
+: 486 2 70 ra
+: 488 3 65 zem, 
+- 494
+: 498 5 70 Zo
+: 503 5 70 stan
+: 508 2 69 my 
+: 510 2 70 ra
+: 512 4 65 zem, 
+- 517
+: 522 5 70 Zo
+: 527 5 70 stan
+: 532 2 69 my 
+: 534 2 70 ra
+: 536 5 67 zem, 
+- 541
+: 542 2 70 Ja 
+: 544 2 72 i 
+: 546 19 72 ty. 
+- 569
+: 570 5 70 Zo
+: 575 5 70 stan
+: 580 2 69 my 
+: 582 2 70 ra
+: 584 3 65 zem, 
+- 589
+: 594 5 70 Zo
+: 599 5 70 stan
+: 604 2 69 my 
+: 606 2 70 ra
+: 608 4 65 zem, 
+- 613
+: 618 5 70 Zo
+: 623 5 70 stan
+: 628 2 69 my 
+: 630 2 70 ra
+: 632 5 67 zem, 
+- 637
+: 638 2 70 Ja 
+: 640 2 72 i 
+: 642 19 72 ty, 
+- 661
+: 662 2 74 Ty 
+: 664 2 72 i 
+: 666 20 74 ja
+- 686
+: 686 1 72 a
+: 687 3 70 a
+: 690 1 72 a
+: 691 5 70 ah, 
+: 698 2 74 e
+: 700 2 70 e
+: 702 6 67 ej. 
+E

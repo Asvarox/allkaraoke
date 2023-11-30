@@ -1,0 +1,268 @@
+#ID:zielone-zabki-numerek-w-krzaczkach
+#ARTIST:Zielone Żabki
+#ARTISTORIGIN:PL
+#TITLE:Numerek w krzaczkach
+#CREATOR:Beneblade
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#BPM:356,36
+#REALBPM:83
+#YEAR:1988
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach
+#VIDEOID:RUoyikOPCmA
+#VIDEOGAP:0
+#VOLUME:0,9
+#LANGUAGE:Polish
+#GAP:21751,785610057246
+: 24 2 4 Naj
+: 29 2 4 pierw
+: 37 3 4  kil
+* 43 1 4 ka
+: 47 2 4  piw
+: 56 5 7  w knaj
+: 63 6 4 pie
+- 69
+: 89 3 6 Peł
+: 94 5 6 nej
+* 101 2 4  go
+* 105 2 6 ry
+: 109 2 6 czy
+: 113 6 4  i
+* 122 2 6  dy
+: 126 5 6 mu
+- 133
+: 157 2 4 Wśród
+: 165 1 4  spo
+: 170 3 4 co
+: 175 3 4 nych
+: 182 1 4  i
+: 186 2 4  pi
+: 190 4 7 ja
+: 195 2 4 nych
+: 202 3 4  twa
+: 207 1 4 rzy
+- 208
+: 215 1 4 Wśród
+: 221 2 -1  zgno
+: 224 2 -1 jo
+: 228 1 -3 nych
+* 236 1 -1  złu
+: 240 4 -1 dzeń
+- 268
+* 292 1 4 Po
+: 296 2 4 tem
+: 302 2 4  ku
+: 307 7 4 pi
+: 316 5 4 my
+* 325 2 7  wi
+: 329 5 4 no
+- 334
+: 358 2 6 Dzi
+: 362 5 6 siaj
+* 370 1 4  dzie
+: 374 2 6 sią
+: 379 3 6 ty,
+: 388 1 6  za
+* 392 2 10 czy
+: 396 2 6 na
+: 400 2 6  się
+: 405 3 6  ży
+: 410 3 6 cie
+- 413
+: 421 3 4 Pój
+: 426 3 7 dzie
+: 430 2 7 my
+: 434 2 4  do
+: 438 4 7  par
+: 445 3 4 ku
+- 448
+: 455 2 4 Bę
+* 459 2 7 dzie
+: 463 1 7 my
+: 467 2 4  się
+: 472 2 7  ko
+: 476 4 4 chać
+- 480
+* 493 2 -1 Mi
+: 496 2 -1 łość
+: 501 2 -3  jak
+: 505 3 -1  ży
+: 510 4 -1 cie
+- 514
+: 526 2 6 Mi
+: 529 2 6 łość
+: 534 2 4  jak
+* 539 3 7  pi
+: 545 12 6 cie
+- 557
+: 560 11 4 Nu
+: 573 11 4 me
+: 586 3 4 rek
+: 594 6 7  w krzacz
+: 606 7 4 kach
+- 613
+: 626 11 -1 Jak
+: 640 8 0  dwa
+: 653 5 -1  zwie
+: 662 9 0 rzacz
+: 675 7 -1 ki
+- 682
+: 695 10 4 Nu
+: 707 11 4 me
+: 720 3 4 rek
+: 729 6 7  w krzacz
+: 740 6 4 kach
+- 746
+: 762 2 -1 Z To
+: 766 6 -1 bą
+- 772
+* 796 1 6 Z To
+: 799 6 6 bą
+- 805
+: 828 12 4 Nu
+: 841 11 4 me
+: 854 2 4 rek
+* 863 5 7  w krzacz
+: 874 8 4 kach
+- 882
+: 896 11 -1 Jak
+: 909 8 0  pie
+: 921 5 -1 ski
+: 929 11 0  dwa
+: 942 8 -1 ~
+- 950
+: 964 10 4 Nu
+: 976 10 4 me
+: 988 2 4 rek
+: 997 5 7  w krzacz
+: 1008 9 4 kach
+- 1017
+: 1030 7 -1 Ty,
+* 1056 2 6  ty
+: 1061 3 6  i
+: 1066 8 6  ja
+- 1098 1343
+- 1343
+* 1367 2 7 Po
+: 1371 4 7 tem
+: 1376 3 4  ja
+: 1382 6 7  zej
+* 1390 2 4 dę
+: 1399 3 7  z cie
+: 1404 4 7 bie
+- 1408
+* 1429 2 7 A
+: 1433 4 6  ty
+* 1446 1 6  pop
+: 1450 2 6 ra
+: 1454 3 6 wisz
+* 1467 2 10  zmię
+* 1471 1 6 tą
+: 1475 2 6  su
+: 1479 4 6 kien
+: 1486 3 6 kę
+- 1489
+* 1500 1 7 Krzy
+* 1504 1 7 knę
+: 1508 1 4  chce
+: 1512 3 7  wię
+: 1519 4 4 cej,
+: 1530 1 4  ty
+: 1535 3 7  znów
+* 1542 2 4  za
+: 1546 2 7 py
+: 1550 4 4 tasz
+- 1554
+: 1564 2 -1 Czy
+: 1568 1 -1  jesz
+* 1576 2 -3 cze
+: 1581 2 -1  wie
+: 1586 5 -1 rzę,
+: 1593 2 -1  że
+: 1597 1 -3  to
+* 1601 2 -1  ta
+: 1606 4 -3 kie
+: 1613 3 -1  pię
+: 1619 4 -1 kne
+- 1623
+* 1630 3 4 Ko
+: 1634 6 4 lej
+: 1642 4 2 ny
+: 1648 3 4  raz
+* 1661 2 4  roz
+: 1668 2 4 rzu
+: 1672 5 2 cisz
+: 1681 2 4  no
+: 1685 3 4 gi
+- 1688
+* 1698 2 4 Ko
+: 1702 6 6 lej
+: 1710 2 4 ny
+: 1715 3 6  raz
+: 1726 2 6  wznie
+: 1730 2 4 siesz
+: 1735 2 6  w nie
+: 1740 4 4 bo
+* 1746 2 6  o
+: 1752 4 6 czy
+- 1756
+: 1765 2 6 Ko
+: 1769 6 7 lej
+: 1777 3 6 ny
+: 1782 3 7  raz
+: 1798 2 7  po
+* 1802 3 9 czu
+: 1807 2 7 jesz
+: 1815 7 7  ból
+- 1822
+: 1836 4 6 W miej
+: 1843 1 6 scu
+: 1846 2 4  co
+: 1849 4 6  wieszcz
+* 1870 2 6  pi
+: 1874 2 6 sze
+: 1877 1 6  o
+: 1879 2 4  roz
+: 1887 3 7 ko
+: 1893 3 6 szy
+- 1896
+: 1899 2 6 Ko
+: 1903 5 4 lej
+: 1911 3 2 ny
+: 1916 3 4  raz
+: 1929 1 4  roz
+* 1937 1 7 rzu
+: 1941 4 4 cisz
+: 1949 3 4  no
+: 1954 3 4 gi
+- 1957
+: 1967 2 4 Ko
+: 1970 6 6 lej
+: 1978 2 4 ny
+: 1983 3 6  raz
+* 1995 1 6  wznie
+* 1998 1 4 siesz
+: 2003 2 6  w nie
+: 2008 5 4 bo
+: 2015 2 6  o
+: 2021 4 6 czy
+- 2025
+* 2034 1 6 Ko
+: 2037 6 7 lej
+: 2045 3 6 ny
+: 2050 3 7  raz
+: 2067 1 7  po
+: 2071 2 9 czu
+: 2075 2 7 jesz
+: 2083 8 7  ból
+- 2091
+: 2104 5 6 W miej
+: 2112 1 6 scu
+: 2115 1 4  co
+: 2118 3 6  wieszcz
+: 2137 3 6  pi
+: 2142 2 6 sze
+: 2145 1 6  o
+: 2147 2 4  roz
+* 2155 4 7 ko
+: 2163 6 6 szy
+E

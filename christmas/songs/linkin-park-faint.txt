@@ -1,0 +1,522 @@
+#ID:linkin-park-faint
+#ARTIST:Linkin Park
+#ARTISTORIGIN:US
+#TITLE:Faint
+#CREATOR:¡JKA!
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#BPM:270
+#REALBPM:136
+#YEAR:2003
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint
+#VIDEOID:LYU-8IFcDPw
+#VIDEOGAP:0
+#GENRE:Nu Metal
+#LANGUAGE:English
+#GAP:28370
+- -17 1
+- 1
+: 18 7 -8 I 
+: 27 2 -6 am
+: 30 1 -8 ~ 
+F 32 1 -9 a 
+F 34 2 -8 lit
+F 37 1 -9 tle 
+F 39 1 -8 bit 
+F 41 1 -9 of 
+F 43 3 -9 lone
+F 47 1 -9 li
+F 49 3 -9 ness
+- 52
+F 56 2 -11 a 
+F 59 1 -11 lit
+F 61 1 -11 tle 
+F 63 1 -11 bit 
+F 65 1 -11 of 
+F 67 2 -11 dis
+F 71 1 -11 re
+F 73 4 -11 gard
+- 77
+F 83 3 -11 hand
+F 87 1 -11 ful 
+F 89 1 -11 of 
+F 91 1 -11 com
+F 93 2 -11 plaints
+- 95
+F 98 1 -11 but 
+F 100 2 -11 I 
+F 103 2 -11 can't 
+F 107 3 -11 help 
+F 111 1 -11 the 
+F 113 1 -11 fact
+- 114
+F 117 1 -11 that 
+F 119 1 -11 e
+F 121 1 -11 ve
+F 123 1 -11 ryone
+F 125 1 -11 ~ 
+F 127 1 -11 can 
+F 131 3 -11 see 
+F 135 1 -11 these 
+F 139 5 -11 scars
+- 144
+: 147 7 -8 I 
+: 155 1 -6 am
+: 157 2 -8 ~ 
+F 161 1 -11 what 
+F 163 3 -11 I 
+F 167 3 -11 want 
+F 172 2 -11 you 
+F 175 1 -11 to 
+F 177 3 -11 want
+- 180
+F 185 1 -11 what 
+F 187 3 -11 I 
+F 191 2 -11 want 
+F 196 1 -11 you 
+F 198 2 -11 to 
+F 201 3 -11 feel
+- 204
+F 207 1 -11 but 
+F 209 1 -11 it's 
+F 212 3 -11 like 
+F 216 2 -11 no 
+F 219 2 -11 mat
+F 222 1 -11 ter 
+F 224 1 -11 what 
+F 226 1 -11 I 
+F 228 1 -11 do
+- 229
+F 231 1 -11 I 
+F 233 4 -11 can't 
+F 238 1 -11 con
+F 240 1 -11 vince 
+F 243 1 -11 you
+- 244
+F 247 2 -11 to 
+F 251 1 -11 just 
+F 255 1 -11 be
+F 257 3 -11 lieve 
+F 261 1 -11 this 
+F 264 1 -11 is 
+F 267 6 -11 real
+- 273
+: 276 6 -6 so 
+: 283 3 -8 I 
+F 287 3 -11 let 
+F 292 6 -11 go, 
+F 300 2 -11 wat
+F 304 2 -11 ching 
+F 307 5 -11 you
+- 312
+F 316 1 -11 turn 
+F 318 2 -11 your 
+F 321 3 -11 back 
+F 325 2 -11 like 
+F 328 2 -11 you 
+F 331 3 -11 al
+F 335 2 -11 ways 
+F 340 4 -11 do
+- 344
+F 347 2 -11 face 
+F 351 1 -11 a
+F 353 3 -11 way 
+F 357 1 -11 and 
+F 359 1 -11 pre
+F 362 2 -11 tend 
+F 365 1 -11 that 
+F 367 2 -11 I'm 
+F 371 3 -11 not
+- 374
+F 377 1 -11 but 
+F 379 3 -11 I'll 
+F 383 1 -11 be 
+F 385 3 -11 here 
+F 390 1 -11 'cause 
+F 392 1 -11 you're 
+F 394 3 -11 all 
+F 398 1 -11 that 
+F 400 3 -11 I 
+F 404 4 -11 got
+- 408
+: 411 5 8 I
+: 417 5 6 ~ 
+: 423 6 8 can't
+: 430 2 6 ~ 
+: 435 11 8 feel 
+: 447 3 8 the 
+: 451 3 8 way 
+: 455 3 6 I 
+: 459 3 6 did 
+: 463 3 8 be
+: 467 7 8 fore
+- 474
+: 479 3 8 Don't 
+: 483 3 8 turn 
+: 487 3 6 your 
+: 491 3 6 back 
+: 495 2 8 on 
+: 498 5 8 me
+- 503
+: 506 4 8 I 
+: 511 4 8 won't 
+: 519 3 8 be
+: 523 3 6 ~ 
+: 527 2 8 ig
+: 531 5 8 nored
+- 536
+: 539 2 9 Time
+: 542 3 8 ~
+: 546 4 6 ~ 
+: 551 6 8 won't
+: 558 3 6 ~ 
+: 563 11 8 heal 
+: 575 2 8 this 
+: 579 3 8 da
+: 583 3 6 mage 
+: 588 2 6 a
+: 591 2 8 ny
+: 594 6 8 more
+- 600
+: 607 2 8 Don't 
+: 611 3 8 turn 
+: 615 3 6 your 
+: 619 3 6 back 
+: 623 3 8 on 
+: 627 4 8 me
+- 631
+: 634 4 8 I 
+: 639 7 8 won't 
+: 647 7 8 be 
+: 655 2 8 ig
+: 659 30 8 nored
+- 689
+: 693 5 -8 I 
+: 699 2 -6 am
+: 702 1 -8 ~ 
+F 705 1 -4 a 
+F 707 1 -4 lit
+F 709 1 -4 tle 
+F 711 3 -4 bit 
+F 715 1 -4 in
+F 717 2 -4 se
+F 721 5 -4 cure
+- 726
+F 729 1 -4 a 
+F 731 1 -4 lit
+F 733 1 -4 tle 
+F 735 2 -4 un
+F 740 2 -4 con
+F 743 1 -4 fi
+F 745 3 -4 dent
+- 748
+F 753 1 -4 'cause 
+F 755 3 -4 you 
+F 759 3 -4 don't 
+F 763 2 -4 un
+F 766 1 -4 ders
+F 769 1 -4 tand
+- 770
+F 773 1 -4 I 
+F 775 3 -4 do 
+F 779 1 -4 what 
+F 781 3 -4 I 
+F 785 1 -4 can
+- 786
+F 789 1 -4 but 
+F 791 3 -4 some
+F 795 3 -4 times 
+F 799 1 -4 I 
+F 801 3 -4 don't 
+F 805 2 -4 make 
+F 810 2 -4 sense
+- 812
+F 819 7 -8 I 
+F 827 1 -6 am
+F 829 1 -8 ~ 
+F 833 1 -4 what 
+F 836 2 -4 you 
+F 839 1 -4 ne
+F 841 2 -4 ver 
+F 844 1 -4 wan
+F 846 1 -4 na 
+F 849 5 -4 say
+- 854
+F 857 1 -4 but 
+F 859 3 -4 I've 
+F 863 1 -4 ne
+F 865 2 -4 ver 
+F 868 1 -4 had 
+F 870 2 -4 a 
+F 873 5 -4 doubt
+- 878
+F 881 1 -4 It's 
+F 883 3 -4 like 
+F 887 3 -4 no 
+F 891 1 -4 mat
+F 893 1 -4 ter 
+F 895 1 -4 what 
+F 897 1 -4 I 
+F 899 1 -4 do
+- 900
+F 902 2 -4 I 
+F 905 2 -4 can't 
+F 909 1 -4 con
+F 911 2 -4 vince 
+F 916 1 -4 you
+- 917
+F 919 1 -4 for 
+F 921 2 -4 once 
+F 925 2 -4 just 
+F 929 1 -4 to 
+F 931 2 -4 hear 
+F 935 2 -4 me 
+F 938 5 -4 out
+- 943
+: 947 7 -6 so 
+: 955 3 -8 I 
+F 959 4 -4 let 
+F 964 6 -4 go 
+F 971 3 -4 wat
+F 977 1 -4 ching 
+F 979 6 -4 you
+- 985
+F 988 2 -4 turn 
+F 991 2 -4 your 
+F 994 2 -4 back 
+F 998 1 -4 like 
+F 1000 3 -4 you 
+F 1004 2 -4 al
+F 1008 2 -4 ways 
+F 1012 4 -4 do
+- 1016
+F 1019 2 -4 face 
+F 1023 2 -4 a
+F 1026 1 -4 way 
+F 1028 2 -4 and 
+F 1031 1 -4 pre
+F 1034 1 -4 tend 
+F 1037 1 -4 that 
+F 1039 2 -4 I'm 
+F 1043 3 -4 not
+- 1046
+F 1049 1 -4 but 
+F 1051 3 -4 I'll 
+F 1055 2 -4 be 
+F 1058 2 -4 here 
+F 1061 1 -4 'cause
+- 1062
+F 1063 1 -4 you're 
+F 1065 3 -4 all 
+F 1069 1 -4 that 
+F 1071 3 -4 I've 
+F 1075 6 -4 got
+- 1096
+: 1114 6 8 I
+: 1121 5 6 ~ 
+: 1127 6 8 can't
+: 1134 1 6 ~ 
+: 1139 11 8 feel 
+: 1151 3 8 the 
+: 1155 3 8 way 
+: 1159 3 6 I 
+: 1163 3 6 did 
+: 1167 3 8 be
+: 1171 7 8 fore
+- 1178
+: 1183 3 8 Don't 
+: 1187 2 8 turn 
+: 1190 4 6 your 
+: 1195 3 6 back 
+: 1199 2 8 on 
+: 1203 4 8 me
+- 1207
+: 1210 4 8 I 
+: 1215 6 8 won't 
+: 1223 2 8 be
+: 1226 3 6 ~ 
+: 1230 3 8 ig
+: 1235 5 8 nored
+- 1240
+: 1243 2 9 Time
+: 1246 3 8 ~
+: 1250 4 6 ~ 
+: 1255 6 8 won't
+: 1262 2 6 ~ 
+: 1267 11 8 heal 
+: 1279 1 8 this 
+: 1283 3 8 da
+: 1287 2 6 mage 
+: 1291 3 6 a
+: 1295 2 8 ny
+: 1298 7 8 more
+- 1305
+: 1311 2 8 Don't 
+: 1315 2 8 turn 
+: 1318 2 6 your 
+: 1322 4 6 back 
+: 1327 2 8 on 
+: 1331 4 8 me
+- 1335
+: 1338 3 9 I 
+: 1342 2 9 won't
+: 1345 3 8 ~ 
+: 1350 7 8 be 
+: 1358 3 8 ig
+: 1363 33 8 nored
+- 1397
+: 1404 20 8 Now 
+: 1434 7 8 hear 
+: 1442 8 8 me 
+: 1451 5 8 out 
+: 1458 8 8 now
+- 1466
+: 1470 4 8 You're 
+: 1475 3 8 gon
+: 1479 2 8 na 
+: 1482 2 8 lis
+: 1487 2 8 ten 
+: 1491 2 8 to 
+: 1494 3 8 me, 
+: 1498 3 8 like 
+: 1502 4 8 it 
+: 1507 3 8 or 
+: 1511 5 8 not
+- 1516
+: 1523 5 8 Right 
+: 1530 22 8 now 
+: 1563 7 8 hear 
+: 1571 7 8 me 
+: 1579 6 8 out 
+: 1587 8 8 now
+- 1595
+: 1598 4 8 You're 
+: 1603 3 8 gon
+: 1607 3 8 na 
+: 1611 2 8 lis
+: 1614 4 8 ten 
+: 1619 2 8 to 
+: 1622 3 8 me, 
+: 1626 4 8 like 
+: 1631 2 8 it 
+: 1634 3 8 or 
+: 1638 7 8 not
+- 1646
+* 1658 7 -4 I
+* 1666 4 -6 ~ 
+* 1673 7 -4 can't 
+* 1683 8 -4 feel 
+: 1696 2 -4 the 
+: 1699 3 -4 way 
+: 1703 3 -6 I 
+: 1707 3 -6 did 
+: 1712 1 -4 be
+: 1715 5 -4 fore
+- 1720
+: 1727 2 -3 Don't 
+: 1731 3 -4 turn 
+: 1735 2 -6 your 
+: 1738 3 -6 back 
+: 1743 2 -4 on 
+: 1747 3 -6 me
+- 1750
+: 1755 4 13 I 
+: 1760 4 13 won't 
+: 1767 7 13 be 
+: 1775 2 13 ig
+: 1779 36 13 nored
+- 1815
+: 1818 5 8 I
+: 1824 6 6 ~ 
+: 1831 5 8 can't
+: 1837 2 6 ~ 
+: 1843 11 8 feel 
+: 1855 3 8 the 
+: 1859 2 8 way 
+: 1862 4 6 I 
+: 1867 3 6 did 
+: 1871 3 8 be
+: 1875 8 8 fore
+- 1883
+: 1887 3 8 Don't 
+: 1891 2 8 turn 
+: 1894 3 6 your 
+: 1898 4 6 back 
+: 1903 2 8 on 
+: 1906 4 8 me
+- 1910
+: 1914 3 8 I 
+: 1918 2 8 won't
+: 1921 2 6 ~ 
+: 1926 3 8 be
+: 1930 3 6 ~ 
+: 1934 2 8 ig
+: 1938 6 8 nored
+- 1944
+: 1947 2 9 time
+: 1950 2 8 ~
+: 1953 2 6 ~ 
+: 1958 6 8 won't
+: 1965 4 6 ~ 
+: 1971 8 8 heal
+- 1979
+: 1982 2 8 this 
+: 1987 2 8 da
+: 1990 3 6 mage 
+: 1995 2 6 a
+: 1998 3 8 ny
+: 2002 7 8 more
+- 2009
+: 2015 2 8 Don't 
+: 2019 2 8 turn 
+: 2022 3 6 your 
+: 2026 3 6 back 
+: 2031 2 8 on 
+: 2035 4 8 me
+- 2039
+: 2042 3 8 I 
+: 2046 3 8 won't
+: 2050 2 6 ~ 
+: 2055 3 8 be
+: 2059 2 6 ~ 
+: 2062 3 8 ig
+: 2067 4 8 nored
+- 2071
+: 2074 11 8 I 
+: 2087 2 8 can't
+: 2090 4 9 ~ 
+: 2099 41 8 feel
+- 2140
+: 2143 3 8 Don't 
+: 2147 2 8 turn 
+: 2150 3 6 your 
+: 2155 3 6 back 
+: 2159 2 8 on 
+: 2163 4 8 me
+- 2167
+: 2170 3 8 I 
+: 2174 3 8 won't
+: 2178 1 6 ~ 
+: 2183 6 8 be 
+: 2190 3 8 ig
+: 2195 5 8 nored
+- 2200
+: 2203 9 8 time 
+* 2215 1 8 won't
+* 2217 8 9 ~ 
+* 2227 64 8 heal
+- 2292
+: 2302 2 8 Don't 
+: 2306 3 8 turn 
+: 2310 3 6 your 
+: 2314 3 6 back 
+: 2319 2 8 on 
+: 2322 5 8 me
+- 2327
+: 2330 4 8 I 
+: 2335 2 8 won't
+: 2338 2 6 ~ 
+: 2343 3 8 be
+: 2347 3 6 ~ 
+: 2351 2 8 ig
+: 2354 9 8 nored
+E

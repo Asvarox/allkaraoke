@@ -1,0 +1,168 @@
+#ID:pokemon-opening-pl
+#ARTIST:Pokémon
+#TITLE:Opening (PL)
+#CREATOR:oldkillerjones
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
+#BPM:145,05
+#REALBPM:145
+#YEAR:1997
+#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15471
+#PREVIEWSTART:15
+#PREVIEWEND:45
+#VIDEOID:ferXnJM0GI8
+#VIDEOGAP:-1
+#GENRE:Anime
+#LANGUAGE:Polish
+#EDITION:UltraStar
+#GAP:4570
+: 0 2 2 Gdy 
+: 2 1 2 wyz
+: 4 2 2 wa
+: 6 4 2 nie 
+: 12 3 0 rzu
+: 16 1 -2 ci 
+: 18 1 -7 los 
+- 21
+: 26 1 -2 Z od
+: 28 1 2 wa
+: 30 3 2 gą 
+: 36 2 0 wstań 
+: 40 1 -2 i 
+: 42 5 0 walcz 
+- 49
+: 64 1 3 To 
+: 66 1 3 co 
+: 68 1 3 ci 
+: 74 1 3 o
+: 76 3 2 de
+: 80 1 0 brał 
+: 82 2 0 kto
+: 84 1 -2 ś 
+- 87
+: 90 1 -2 O
+: 92 1 2 dzy
+: 96 1 2 skasz 
+: 98 2 0 je
+: 102 1 -2 śliś 
+: 104 9 2 wart 
+- 115
+: 128 1 2 Ze 
+: 130 1 2 mną 
+: 132 2 2 chodź, 
+: 138 1 2 już 
+: 140 2 0 nad
+: 144 1 -2 szedł 
+: 146 2 -7 czas 
+- 150
+: 156 2 2 Nikt 
+: 160 3 2 nie 
+: 164 1 0 rów
+: 166 1 -2 ny 
+: 168 5 0 nam 
+- 175
+: 192 1 3 Już 
+: 194 1 3 zwy
+: 196 2 3 cię
+: 200 1 3 stwa 
+: 202 5 2 czu
+: 208 1 0 jesz 
+: 210 2 -2 smak 
+- 214
+: 218 1 -2 To 
+: 220 1 2 za
+: 224 1 2 wsze 
+: 226 2 0 był 
+: 230 1 -2 nasz 
+: 232 8 2 plan 
+- 242
+: 246 1 2 Po
+: 248 1 5 ke
+: 250 2 7 mon 
+- 254
+: 256 1 2 Czy 
+: 258 1 5 już 
+: 260 1 7 wszy
+: 262 2 7 stkie 
+: 266 4 7 ma
+: 270 7 5 sz? 
+- 279
+: 290 1 7 Mu
+: 292 1 7 si
+: 294 1 9 my 
+: 296 1 10 o
+: 298 2 9 ca
+: 302 2 7 lić 
+: 306 3 5 świat 
+- 310
+: 310 1 2 Po
+: 312 1 5 ke
+: 314 2 7 mon 
+- 318
+: 320 8 7 To 
+: 330 1 7 przy
+: 332 1 5 ja
+: 334 2 2 cie
+: 336 1 0 l 
+: 338 2 0 m
+: 340 1 -2 ój 
+- 342
+: 344 2 -2 Ra
+: 346 1 0 mię 
+: 348 3 2 w ra
+: 352 1 2 mię 
+: 354 2 0 wiel
+: 358 1 -2 ki 
+: 360 8 2 bój 
+- 370
+: 374 1 2 Po
+: 376 1 5 ke
+: 378 2 7 mon 
+- 382
+: 384 1 5 To 
+: 388 2 5 wła
+: 390 1 7 śnie, 
+: 394 1 5 to 
+: 396 2 5 wła
+: 400 1 7 śnie 
+: 402 4 7 t
+: 406 2 9 y
+: 408 2 5 ~ 
+- 412
+: 418 1 7 O
+: 420 1 7 dwa
+: 422 1 9 ga 
+: 424 1 10 nam 
+: 426 2 7 d
+: 428 2 9 o
+: 430 2 7 d
+: 432 1 5 a 
+: 434 4 5 sił 
+- 440
+: 444 2 3 Tre
+: 446 2 10 nuj 
+: 450 2 10 ze 
+: 454 2 3 mną, 
+: 458 2 5 nad
+: 462 2 10 szedł 
+: 466 4 10 czas 
+- 472
+: 476 4 10 Po
+: 482 5 10 ke
+: 488 6 9 mon 
+- 495
+: 496 1 5 Czy 
+: 498 1 2 już 
+: 500 1 5 wszy
+: 502 2 7 stkie 
+: 506 3 7 masz? 
+- 510
+: 512 1 5 Czy 
+: 514 1 2 już 
+: 516 1 5 wszy
+: 519 2 7 stkie 
+: 523 4 7 masz? 
+- 528
+: 528 1 2 Po
+: 530 1 5 ke
+: 532 2 7 mon 
+E

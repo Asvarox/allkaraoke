@@ -1,0 +1,249 @@
+#ID:disney-tarzan-twee-werelden
+#ARTIST:Disney Tarzan
+#TITLE:Twee Werelden
+#CREATOR:Kasia
+#CREATORURL:
+#BPM:110,3
+#REALBPM:111
+#YEAR:1999
+#SOURCEURL:
+#VIDEOID:WEzHazCoZgA
+#VIDEOGAP:0
+#GENRE:Disney
+#LANGUAGE:Dutch
+#LASTUPDATE:2023-01-27T21:50:33.867Z
+#GAP:51248,05077062557
+: 7 2 12 Ver
+: 9 2 12 trouw 
+: 11 2 12 op 
+: 13 2 12 dat 
+: 15 2 10 war 
+: 17 2 9 het 
+: 19 3 7 meest 
+: 22 3 7 van 
+: 25 3 9 houd
+: 29 3 5 t
+- 32
+: 39 2 12 Een 
+: 41 6 12 Ziel, 
+: 49 2 12 twee 
+: 51 3 14 we
+: 55 2 12 re
+: 57 4 12 lden
+- 61
+: 67 3 12 Lui
+: 71 2 5 ster 
+: 73 5 5 naar 
+- 78
+: 81 2 12 dat 
+: 83 4 12 hart 
+: 87 2 5 van 
+: 89 5 5 jouw 
+- 94
+: 97 2 5 Het 
+: 99 3 17 weest 
+: 102 3 16 je 
+: 105 3 12 steeds 
+: 109 2 9 de 
+: 111 11 14 we
+: 123 4 12 ~eg
+- 127
+: 133 2 12 Een 
+: 135 2 17 pa
+: 137 2 19 ra
+: 139 3 20 dijs 
+: 142 3 19 zo 
+: 145 4 15 zui
+: 149 2 12 ver 
+: 151 6 17 mooi
+- 157 158
+- 158
+: 165 2 12 In 
+: 167 2 17 de
+: 169 2 19 ze 
+: 171 3 20 wereld 
+: 175 3 19 van 
+: 179 3 15 ho
+: 183 6 12 op
+- 189 194
+- 194
+: 201 2 12 Het 
+: 203 2 15 le
+: 205 3 17 ven 
+: 209 4 17 gaat, 
+: 217 2 5 van
+: 219 2 10 zelf 
+: 221 2 10 hie
+: 223 4 10 ~r
+- 227
+: 231 2 12 Zach
+: 233 2 12 tjes 
+: 235 2 12 schu
+: 237 2 12 urt 
+: 239 2 10 het 
+: 241 2 9 zand 
+: 243 3 7 onder 
+: 246 3 7 je 
+: 249 3 9 voet
+: 253 4 5 en
+- 257
+: 263 2 12 Een 
+: 265 6 12 ziel, 
+: 273 2 12 twee 
+: 275 4 14 we
+: 279 2 12 re
+: 281 5 12 lden
+- 286
+: 291 3 12 Lui
+: 295 3 5 ster 
+: 298 5 5 naar
+- 303
+: 305 2 12 dat 
+: 307 4 12 hart 
+: 311 2 5 van
+: 313 5 5 jou
+- 318
+: 321 2 5 Het 
+: 323 3 17 wijst 
+: 326 3 16 je 
+: 329 3 12 steeds 
+: 333 2 9 de 
+: 335 11 14 we
+: 347 4 12 ~eg
+- 351 352
+- 352
+: 359 2 12 In 
+: 361 2 17 the 
+: 363 2 19 scha
+: 365 3 20 douw 
+: 368 3 19 van 
+: 371 2 15 het 
+: 373 2 12 wo
+: 375 5 17 ud
+- 380 385
+- 385
+: 392 2 12 Al
+: 394 3 17 een 
+: 397 3 19 liefde 
+: 400 2 20 hoort 
+: 402 3 19 hier 
+: 406 3 15 thu
+: 410 5 12 ~is
+- 415 419
+- 419
+: 426 1 12 Het 
+: 427 3 15 le
+: 430 3 17 ven 
+: 433 5 17 gaat, 
+: 442 2 5 van
+: 444 2 10 zelf 
+: 446 2 10 hie
+: 448 5 10 ~r
+- 453
+: 456 3 15 Og 
+: 459 1 15 en 
+: 460 2 15 Op 
+: 462 4 15 en
+- 466
+: 468 3 15 kijk 
+: 471 3 15 recht 
+: 474 2 17 voor
+: 476 6 17 uit
+- 482
+: 484 3 19 Geeft 
+: 487 3 19 kracht 
+: 490 2 19 aan 
+: 492 3 20 al 
+: 496 2 19 je 
+: 498 4 17 vrien
+: 502 4 15 den
+- 506 507
+- 507
+: 514 2 15 Bouw 
+: 516 4 15 hoge 
+: 520 2 15 mu
+: 522 6 15 uren
+- 528
+: 530 2 15 Ver
+: 533 3 15 sterk
+: 536 2 15 je 
+: 538 5 17 huis
+- 543
+: 546 2 15 Een 
+: 548 3 19 nieuw 
+: 551 3 20 le
+: 554 2 19 ven 
+: 556 2 17 wacht 
+: 558 3 15 je
+- 561
+: 562 2 10 Er 
+: 564 3 12 komt 
+: 567 3 15 nooit 
+: 570 4 17 een 
+: 574 3 14 vree
+: 578 3 10 mde 
+: 582 8 12 hier
+- 590 764
+- 764
+: 771 2 12 Geen 
+: 773 2 17 word 
+: 775 2 19 ver
+: 777 5 20 zacht 
+: 782 2 19 en 
+: 784 2 15 moe
+: 786 2 12 ders 
+: 788 7 17 pijn
+- 795 796
+- 796
+: 803 2 12 Of 
+: 805 2 17 maakt 
+: 807 2 19 en 
+: 809 3 20 treu
+: 813 2 19 rig 
+: 815 2 15 hart 
+: 817 3 17 weer 
+: 821 6 12 blij
+- 827 832
+- 832
+: 839 2 12 Een 
+: 841 2 15 droom 
+: 843 3 17 is 
+: 847 5 17 stuk, 
+: 855 2 5 is 
+: 857 3 8 hier 
+: 860 2 10 noog 
+: 862 4 10 hoop?
+- 866
+: 869 2 12 In 
+: 871 3 12 de 
+: 875 2 12 werte 
+: 877 2 10 klinkt 
+: 879 2 9 je 
+: 881 3 7 naam 
+: 884 3 7 ho
+: 887 3 9 or 
+: 891 4 5 je?
+- 895
+: 901 2 12 Een 
+: 903 6 12 ziel, 
+: 911 2 12 twee 
+: 913 4 14 we
+: 917 2 12 re
+: 919 5 12 lden
+- 924
+: 929 3 12 Lui
+: 933 2 5 ster 
+: 935 5 5 naar
+- 940
+: 943 2 12 dat 
+: 945 4 12 hart 
+: 949 2 5 van 
+: 951 5 5 jouw
+- 956
+: 959 2 5 Het 
+: 961 3 17 wijst 
+: 964 3 16 je 
+: 967 3 12 steeds 
+: 971 2 9 de 
+: 974 20 14 weg
+E

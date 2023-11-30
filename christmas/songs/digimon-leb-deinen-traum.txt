@@ -1,0 +1,203 @@
+#ID:digimon-leb-deinen-traum
+#ARTIST:Digimon
+#ARTISTORIGIN:JP
+#TITLE:Leb deinen Traum
+#CREATOR:DarkLink
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=203
+#BPM:339,3
+#REALBPM:165
+#YEAR:2000
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5996
+#PREVIEWSTART:41
+#PREVIEWEND:71
+#VIDEOID:6dPqHuETySk
+#VIDEOGAP:0
+#VOLUME:0,7
+#GENRE:None
+#LANGUAGE:German
+#LASTUPDATE:2023-08-20T08:30:36.904Z
+#GAP:16523,200707338638
+: 23 7 8 Du 
+: 31 5 11 wirst 
+: 37 5 11 noch 
+: 43 7 11 viel 
+: 51 3 8 er
+: 55 7 13 le
+: 63 14 11 ben 
+- 77
+: 89 7 8 Du 
+: 97 3 11 musst 
+: 101 3 11 die
+: 105 3 11 sen 
+: 109 7 11 Test 
+: 117 3 8 be
+: 121 7 13 ste
+: 129 10 15 hen 
+- 139
+: 147 2 8 Es 
+: 151 3 6 kommt 
+: 156 1 8 der 
+: 160 4 6 Ta
+: 165 6 4 ~g 
+- 171
+: 180 3 4 An 
+: 184 3 4 dem 
+: 189 7 7 du 
+: 197 5 6 dein 
+: 205 12 9 Ziel 
+* 218 3 7 er
+* 222 3 6 rei
+* 226 21 4 chst! 
+- 247 260
+- 260
+: 283 2 8 Ein 
+: 287 7 11 Di
+: 295 2 11 gi
+: 299 3 11 mon 
+: 303 2 11 wird 
+: 307 5 11 dich 
+: 315 3 8 be
+: 319 7 13 glei
+: 328 13 11 ten 
+- 341
+: 348 2 8 Der 
+: 353 4 8 be
+: 360 2 11 ste 
+: 363 7 11 Freund 
+: 373 6 11 al
+: 380 3 8 ler 
+: 386 6 13 Zei
+: 393 11 15 ten 
+- 404
+: 411 2 8 Ihr 
+: 414 5 6 seid 
+: 420 2 8 ein 
+: 424 5 6 Te
+: 430 8 4 am 
+- 438
+: 443 4 4 Wer
+: 448 3 4 det 
+: 452 7 7 al
+: 460 3 7 le 
+: 464 4 6 A
+: 469 2 6 ben
+: 472 5 9 teu
+: 478 2 9 er 
+* 481 2 7 be
+* 487 6 6 steh
+* 494 14 4 en 
+- 508 523
+- 523
+: 546 7 8 Wow 
+* 555 8 16 wow 
+* 564 6 15 wow 
+* 571 5 13 wow
+* 577 5 11 wow 
+* 583 12 8 wow 
+- 595
+: 607 2 8 Wir 
+: 612 4 6 blei
+: 617 1 8 ben 
+: 621 4 6 Freun
+: 626 1 4 de, 
+: 628 3 4 was 
+: 634 2 4 auch 
+: 637 2 4 im
+: 640 3 6 mer 
+* 645 2 4 pas
+* 649 18 8 siert! 
+- 667
+: 676 8 8 Wow 
+* 685 8 16 wow 
+* 694 7 15 wow 
+* 702 5 13 wow
+* 708 6 11 wow 
+* 715 15 8 wow 
+- 730
+: 743 5 8 Doch 
+: 751 4 9 wir 
+: 756 3 9 wis
+: 760 3 9 sen 
+: 764 5 11 nicht 
+- 769
+: 772 6 11 Was 
+: 781 7 12 mor
+: 789 2 12 gen 
+: 792 4 12 sein 
+* 797 19 14 wi~
+* 818 34 11 rd! 
+- 852 861
+- 861
+: 884 11 16 Leb 
+: 896 11 18 dei
+: 908 6 20 nen 
+: 917 10 18 Traum 
+: 928 8 18 denn 
+: 937 3 16 er 
+: 941 2 15 wird 
+: 945 11 16 wahr 
+- 956
+: 970 3 16 Geh 
+: 974 3 16 dei
+: 978 3 18 nen 
+: 983 5 20 Weg 
+: 991 3 18 stel
+: 995 2 18 le 
+: 999 2 16 dich 
+: 1003 3 16 der 
+: 1007 2 15 Ge
+: 1011 10 16 fahr 
+- 1021
+: 1031 3 11 Al
+: 1035 3 10 les 
+: 1040 2 11 was 
+: 1044 4 11 wich
+: 1052 5 11 tig 
+: 1060 6 13 ist 
+- 1066
+: 1076 2 13 Wirst 
+: 1081 2 16 du 
+: 1085 2 13 er
+: 1089 3 16 ken
+: 1093 3 13 nen, 
+: 1097 3 16 wenn 
+: 1101 3 13 die 
+: 1105 4 16 Zeit 
+: 1110 2 16 ge
+: 1114 3 20 kom
+: 1118 6 18 men 
+: 1126 4 16 ist 
+- 1130
+: 1134 2 16 Ja
+: 1137 8 18 ~! 
+: 1148 9 16 Greif 
+: 1159 9 18 nach 
+: 1171 5 20 den 
+: 1180 7 18 Ster
+: 1188 3 18 nen 
+: 1192 7 18 du 
+: 1200 2 16 bist 
+: 1205 3 15 be
+: 1209 10 16 reit 
+- 1219
+: 1234 3 13 Glaub 
+: 1238 2 16 an 
+: 1241 5 20 dich 
+: 1250 6 18 bald 
+: 1258 4 23 ist 
+: 1267 1 15 es 
+: 1270 2 15 so
+: 1274 9 16 weit 
+- 1283
+: 1295 3 16 Wir 
+: 1299 3 15 wer
+: 1303 2 13 den 
+: 1307 8 11 bei 
+: 1316 4 18 dir 
+: 1323 4 18 sei
+: 1328 9 16 ~n 
+- 1337
+* 1345 31 16 Sei 
+* 1377 31 14 be
+* 1410 63 16 reit! 
+E

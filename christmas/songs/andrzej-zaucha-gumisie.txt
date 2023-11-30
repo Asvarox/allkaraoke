@@ -1,0 +1,188 @@
+#ID:andrzej-zaucha-gumisie
+#ARTIST:Andrzej Zaucha
+#ARTISTORIGIN:PL
+#TITLE:Gumisie
+#CREATOR:nomek4
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=29049
+#BPM:270
+#REALBPM:72
+#YEAR:1985
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9110
+#PREVIEWSTART:3
+#PREVIEWEND:31
+#VIDEOID:bjFGmm2wIhI
+#VIDEOGAP:0
+#VOLUME:0,9
+#GENRE:None
+#LANGUAGE:Polish
+#LASTUPDATE:2023-06-28T19:18:27.556Z
+#GAP:2930
+: 18 4 14 Mi
+: 23 4 10 sie 
+: 29 3 14 har
+: 34 3 17 cu
+: 39 4 14 ją, 
+- 43
+: 44 3 17 Po 
+: 48 3 19 le
+: 52 5 21 sie 
+: 58 5 22 szar
+: 64 4 17 żu
+: 69 5 14 ją 
+- 74
+: 79 5 19 Wszę
+: 85 5 17 dzie 
+: 91 4 15 dziś 
+: 96 4 17 sły
+: 101 4 14 chać 
+: 107 3 17 do
+: 112 2 15 no
+: 116 3 14 śny 
+: 120 3 12 ich 
+: 125 11 17 śmiech 
+- 136
+: 140 5 14 Za
+: 147 3 10 wsze 
+: 153 3 14 zwy
+: 157 5 17 cię
+: 163 5 14 skie, 
+: 169 3 17 wa
+: 173 3 19 le
+: 178 4 21 czne 
+: 184 3 22 ry
+: 188 3 17 ce
+: 193 6 14 rskie 
+- 199
+: 202 5 19 Każ
+: 208 4 17 da 
+: 213 4 15 przy
+: 219 4 17 go
+: 224 6 14 da 
+: 231 4 17 za
+: 236 5 19 pie
+: 242 4 21 ra 
+: 247 3 22 nam 
+: 251 10 24 dech 
+- 261
+: 265 8 26 Zo
+: 274 4 27 bacz 
+: 279 17 29 sam, 
+- 296
+: 302 4 29 Jak 
+: 308 3 29 Gu
+: 312 3 29 mi
+: 316 3 27 sie 
+: 320 3 26 ska
+: 324 3 24 czą 
+: 329 6 26 tam 
+: 336 3 29 i 
+: 341 11 22 siam 
+- 352
+: 365 4 29 Bo 
+: 371 2 29 Gu
+: 374 2 29 mi
+: 378 2 27 sie 
+: 382 2 26 ca
+: 386 2 24 ły 
+: 390 5 26 świat 
+: 396 4 29 już 
+: 402 11 22 zna 
+- 413
+: 420 4 29 Gu
+: 425 3 27 miś 
+: 429 3 26 to 
+: 433 7 24 faj
+: 441 3 26 n
+: 445 3 24 y 
+: 449 24 22 miś 
+- 473 495
+- 495
+: 513 5 14 Ab
+: 519 4 10 ra
+: 524 4 14 ka
+: 529 5 17 dab
+: 535 4 14 ra 
+: 540 2 17 to 
+: 544 5 19 cza
+: 550 4 21 ry 
+: 555 3 22 i 
+: 559 5 17 ma
+: 565 5 14 gia 
+- 570
+: 572 3 17 Se
+: 576 4 19 kre
+: 581 4 17 tem 
+: 587 3 15 jest 
+: 591 5 17 prze
+: 597 3 14 pis 
+: 602 4 17 na 
+: 607 2 15 Gu
+: 610 3 14 mi
+: 614 3 12 sio
+: 618 2 10 wy 
+: 621 11 17 sok 
+- 632
+: 633 2 16 Tam 
+: 637 3 16 Ho
+: 641 4 12 kus 
+: 647 4 16 ma
+: 652 4 19 ro
+: 657 4 16 kus 
+: 663 4 19 dos
+: 668 5 21 tar
+: 674 3 23 cza 
+: 679 4 24 złych 
+: 684 3 19 po
+: 689 5 16 kus 
+- 694
+: 695 3 19 Lecz 
+: 699 4 21 mi
+: 704 3 19 sie 
+: 710 3 17 zwy
+: 714 4 19 cię
+: 719 5 16 żą, 
+- 724
+: 727 4 19 Dla 
+: 732 5 21 wro
+: 738 3 23 ga 
+: 742 2 24 to 
+: 746 11 26 szok 
+- 757
+: 760 6 28 Zo
+: 767 5 29 bacz 
+: 773 17 31 sam, 
+- 790
+: 796 5 31 Jak 
+: 803 2 31 Gu
+: 807 2 31 mi
+: 810 3 29 sie 
+: 814 3 28 ska
+: 818 3 26 czą 
+: 822 5 28 tam 
+: 829 2 31 i 
+: 833 11 24 siam 
+- 844
+: 857 4 31 Bo 
+: 864 3 31 gu
+: 868 3 31 mi
+: 872 3 29 sie 
+: 876 3 28 ca
+: 880 3 26 ły 
+: 885 5 28 świat 
+: 891 4 31 już 
+: 896 10 24 zna 
+- 906
+: 914 4 31 Gu
+: 919 3 29 miś 
+: 923 3 28 to 
+: 927 7 26 faj
+: 935 6 28 ny 
+: 942 18 24 miś 
+- 960
+: 976 4 31 Gu
+: 981 3 29 miś 
+: 985 3 28 to 
+: 989 7 26 faj
+: 997 6 28 ny 
+: 1004 24 36 miś 
+E

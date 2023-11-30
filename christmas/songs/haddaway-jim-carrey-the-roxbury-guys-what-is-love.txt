@@ -1,0 +1,246 @@
+#ID:haddaway-jim-carrey-the-roxbury-guys-what-is-love
+#ARTIST:Haddaway & Jim Carrey & The Roxbury Guys
+#ARTISTORIGIN:DE
+#TITLE:What is love
+#CREATOR:TeLiXj
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#BPM:253,91
+#REALBPM:123
+#YEAR:1996
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Haddaway&cancion=What%20is%20love
+#VIDEOID:HwVh8pmOot4
+#VIDEOGAP:0
+#VOLUME:0,91
+#LANGUAGE:English
+#GAP:3600
+: 0 3 2 What
+: 4 2 5  is
+: 7 10 7  love
+- 50
+: 132 6 7 yeah
+: 140 8 5  yeah
+- 181
+: 280 2 2 oh
+: 284 3 2  I
+: 288 6 0  don't
+: 296 11 2  know
+- 310
+: 312 2 2 why
+: 316 3 2  you're
+: 320 5 0  not
+: 328 12 2  there
+- 342
+: 344 2 0 I
+: 348 3 2  give
+: 352 3 3  you
+: 356 3 2  my
+: 360 4 2  love
+: 365 6 0 ~
+: 372 3 -2  but
+* 376 12 0  you
+: 389 2 -2  don't
+: 392 11 -2  care
+- 407
+: 409 2 2 so
+: 412 4 2  what
+: 417 5 0  is
+: 424 10 2  right
+- 438
+: 440 2 0 and
+: 444 3 2  what
+: 448 6 0  is
+: 456 12 2  wrong
+- 474
+: 476 3 2 give
+: 480 3 3  me
+: 484 2 2  your
+: 488 4 2  sign
+: 493 11 0 ~
+- 510
+: 512 3 2 what
+: 516 2 5  is
+: 519 10 7  love
+- 537
+: 540 3 2 ba
+: 544 3 3 by
+: 548 3 2  don't
+: 552 7 5  hurt
+: 560 7 2  me
+- 576
+: 580 3 2 don't
+: 584 7 5  hurt
+: 592 8 2  me
+- 609
+* 612 3 2 no
+* 616 8 0  more
+- 636
+: 640 3 2 what
+: 644 2 5  is
+: 647 10 7  love
+- 665
+: 668 3 2 ba
+: 672 3 3 by
+: 676 3 2  don't
+: 680 7 5  hurt
+: 688 7 2  me
+- 704
+: 708 3 2 don't
+: 712 7 5  hurt
+: 720 8 2  me
+- 737
+: 740 3 2 no
+: 744 8 0  more
+- 785
+: 1304 2 2 oh
+: 1308 3 2  I
+: 1312 6 0  don't
+: 1320 11 2  know
+- 1334
+: 1336 2 0 what
+: 1340 4 2  can
+: 1345 4 0  I
+: 1352 12 2  do
+- 1366
+: 1368 2 2 what
+: 1372 3 2  else
+: 1376 3 3  can
+: 1380 2 2  I
+* 1383 4 2  say
+* 1388 7 0 ~
+: 1397 3 0  it's
+: 1401 10 0  up
+: 1412 2 -2  to
+: 1416 8 -2  you
+- 1430
+: 1432 1 0 I
+: 1437 3 2  know
+: 1441 5 0  were
+: 1448 12 2  one
+- 1462
+: 1464 3 0 just
+: 1468 5 2  me
+: 1474 5 0  and
+: 1480 10 2  you
+- 1494
+: 1496 1 2 I
+: 1500 6 3  can't
+: 1508 3 2  go
+: 1512 16 0  on
+- 1534
+: 1536 3 2 what
+: 1540 2 5  is
+: 1543 10 7  love
+- 1561
+: 1564 3 2 ba
+: 1568 3 3 by
+: 1572 3 2  don't
+: 1576 7 5  hurt
+: 1584 7 2  me
+- 1600
+: 1604 3 2 don't
+: 1608 7 5  hurt
+: 1616 8 2  me
+- 1633
+: 1636 3 2 no
+: 1640 8 0  more
+- 1660
+: 1664 3 2 what
+: 1668 2 5  is
+: 1671 10 7  love
+- 1689
+: 1692 3 2 ba
+: 1696 3 3 by
+: 1700 3 2  don't
+: 1704 7 5  hurt
+: 1712 7 2  me
+- 1728
+: 1732 3 2 don't
+: 1736 7 5  hurt
+: 1744 8 2  me
+- 1761
+: 1764 3 2 no
+: 1768 8 0  more
+- 1809
+: 2049 3 2 what
+: 2053 2 5  is
+: 2056 10 7  love
+- 2099
+* 2177 3 2 what
+* 2181 2 5  is
+* 2184 10 7  love
+- 2227
+: 2305 3 2 what
+: 2309 2 5  is
+: 2312 10 7  love
+- 2329
+: 2332 3 2 ba
+: 2336 3 3 by
+: 2340 3 2  don't
+: 2344 7 5  hurt
+: 2352 7 2  me
+- 2368
+: 2372 3 2 don't
+: 2376 7 5  hurt
+: 2384 8 2  me
+- 2401
+: 2404 3 2 no
+: 2408 8 0  more
+- 2449
+: 3002 3 2 what
+: 3006 2 5  is
+: 3009 10 7  love
+- 3052
+: 3203 3 2 what
+: 3207 2 5  is
+: 3210 10 7  love
+- 3253
+* 3335 6 7 yeah
+* 3343 8 5  yeah
+- 3384
+: 3483 2 2 oh
+: 3487 3 2  I
+: 3491 6 0  don't
+: 3499 11 2  know
+- 3513
+: 3515 2 2 why
+: 3519 3 2  you're
+: 3523 5 0  not
+: 3531 12 2  there
+- 3545
+: 3547 2 0 I
+: 3551 3 2  give
+: 3555 3 3  you
+: 3559 3 2  my
+* 3563 4 2  love
+* 3568 6 0 ~
+: 3575 3 -2  but
+: 3579 12 0  you
+: 3592 2 -2  don't
+: 3595 11 -2  care
+- 3610
+: 3612 2 2 so
+: 3615 4 2  what
+: 3620 5 0  is
+: 3627 10 2  right
+- 3641
+: 3643 2 0 and
+: 3647 3 2  what
+: 3651 6 0  is
+: 3659 12 2  wrong
+- 3677
+: 3679 3 2 give
+: 3683 3 3  me
+: 3687 2 2  your
+: 3691 4 2  sign
+: 3696 11 0 ~
+- 3713
+: 3715 3 2 what
+: 3719 2 5  is
+: 3722 10 7  love
+- 3740
+: 3743 3 2 ba
+: 3747 3 3 by
+: 3751 3 2  don't
+: 3755 7 5  hurt
+: 3763 7 2  me
+E
