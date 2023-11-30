@@ -1,0 +1,1306 @@
+#ID:eminem-mockingbird
+#ARTIST:Eminem
+#ARTISTORIGIN:US
+#TITLE:Mockingbird
+#CREATOR:eminem
+#CREATORURL:
+#BPM:450
+#REALBPM:83
+#YEAR:2004
+#SOURCEURL:https://www.youtube.com/watch?v=S9bCLPwzSC0
+#VIDEOID:S9bCLPwzSC0
+#VIDEOGAP:0
+#VOLUME:0,72
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T17:22:31.077Z
+#GAP:8970
+R 30 9 11 Yeah
+- 39 58
+- 58
+R 88 4 14 I 
+R 93 3 14 know 
+R 97 4 14 some
+R 102 13 14 times
+- 115
+R 145 6 11 Things 
+R 152 4 11 may 
+R 157 8 11 not
+- 165
+R 174 3 11 Al
+R 178 4 11 ways 
+R 183 4 11 make 
+R 188 8 11 sense 
+R 197 1 11 to 
+R 199 2 11 you 
+R 202 6 11 right 
+R 209 11 13 now
+- 220 225
+- 225
+R 255 5 11 But 
+R 261 4 11 hey,
+- 265 273
+- 273
+R 303 2 7 What 
+R 306 4 11 dad
+R 311 3 11 dy 
+R 316 2 8 al
+R 319 4 10 ways 
+R 324 2 11 tell 
+R 327 4 11 you?
+- 331 337
+- 337
+R 367 9 11 Straigh
+R 377 4 11 ten 
+R 382 2 14 up 
+R 386 2 14 lit
+R 389 3 14 tle 
+R 393 7 11 sol
+R 401 10 14 dier
+- 411 412
+- 412
+R 442 6 16 Stif
+R 449 3 14 fen 
+R 453 3 16 up 
+R 457 3 15 that 
+R 461 3 11 up
+R 465 3 6 per 
+R 470 3 11 lip
+- 473 493
+- 493
+R 523 1 11 What 
+R 525 2 11 you 
+R 528 6 11 cry
+R 535 5 11 ing 
+R 541 1 11 a
+R 543 8 11 bout?
+- 551
+R 581 3 11 You 
+R 585 4 10 got 
+R 590 7 11 me
+- 597
+R 621 2 8 Hai
+R 624 6 7 lie, 
+R 631 2 8 I 
+R 634 5 10 know 
+R 640 3 9 you 
+R 644 6 9 miss 
+R 651 5 7 your 
+R 657 8 9 mom
+- 665
+R 670 3 11 And 
+R 674 2 11 I 
+R 677 4 11 know 
+R 682 4 11 you 
+R 687 5 11 miss 
+R 693 4 11 your 
+R 698 5 11 dad
+- 703
+R 707 2 13 Well 
+R 710 3 11 I'm 
+R 714 6 11 gone
+- 720
+R 724 2 13 But 
+R 727 3 13 I'm 
+R 731 2 13 try
+R 734 2 11 ing 
+R 737 2 11 to 
+R 740 7 13 give 
+R 748 2 12 you 
+R 751 3 11 the 
+R 755 5 14 life
+- 760
+R 764 3 15 That 
+R 768 3 7 I 
+R 772 4 7 ne
+R 777 5 9 ver 
+R 783 7 6 had
+- 790
+R 794 4 14 I 
+R 799 3 15 can 
+R 803 5 9 see 
+R 809 4 8 you're 
+R 814 9 10 sad,
+- 823
+R 828 2 11 E
+R 831 4 8 ven 
+R 836 4 11 when 
+R 841 2 11 you 
+R 844 11 11 smile,
+- 855
+R 861 2 11 E
+R 864 4 13 ven 
+R 869 4 11 when 
+R 874 5 11 you 
+R 880 9 11 laugh
+- 889
+R 893 2 13 I 
+R 897 3 13 can 
+R 901 6 14 see 
+R 909 3 11 it 
+R 913 3 13 in 
+R 917 4 13 your 
+R 922 8 11 eyes,
+- 930
+R 934 5 11 Deep 
+R 940 1 11 in
+R 942 6 11 side
+- 948
+R 952 3 9 You 
+R 956 3 11 want 
+R 960 3 11 to 
+R 964 8 11 cry
+- 972
+R 976 3 11 Cuz 
+R 980 3 11 you're 
+R 984 14 8 scared, 
+R 999 2 9 I 
+R 1002 5 9 ain't 
+R 1008 7 11 there
+- 1015
+R 1019 4 11 Dad
+R 1024 4 11 dy's 
+R 1029 4 11 with 
+R 1034 4 11 you 
+R 1040 2 13 in 
+R 1043 6 11 your 
+R 1050 5 11 pray
+R 1056 1 11 ers
+- 1057
+R 1060 2 11 No 
+R 1063 4 13 more 
+R 1068 4 13 cry
+R 1073 5 11 ing, 
+R 1080 5 13 wipe 
+R 1086 5 13 them 
+R 1092 7 11 tears
+- 1099
+R 1103 4 11 Dad
+R 1108 5 16 dy's 
+R 1114 5 14 here, 
+R 1120 3 7 no 
+R 1124 4 7 more 
+R 1129 4 7 night
+R 1134 9 6 mares
+- 1143
+R 1147 2 8 We 
+R 1150 5 11 gon' 
+R 1156 5 11 pull 
+R 1162 2 11 to
+R 1165 4 11 ge
+R 1170 4 8 ther 
+R 1176 7 11 through 
+R 1184 2 11 it, 
+R 1189 4 11 we 
+R 1194 5 13 gon' 
+R 1200 3 11 do 
+R 1204 1 11 it
+- 1205
+R 1208 6 11 La
+R 1215 3 11 nie, 
+R 1221 4 11 un
+R 1226 4 11 cle's 
+R 1231 4 13 cra
+R 1236 4 13 zy, 
+R 1241 7 11 ain't 
+R 1249 1 12 he?
+- 1250
+R 1253 5 14 Yeah 
+R 1259 3 12 but 
+R 1263 2 11 he 
+R 1266 8 11 loves 
+R 1275 3 10 you 
+R 1279 2 11 girl
+- 1281
+R 1285 3 8 And 
+R 1289 4 11 you 
+R 1295 8 8 better 
+R 1304 6 11 know 
+R 1311 2 14 it
+- 1313
+R 1317 3 11 We're 
+R 1321 5 11 all 
+R 1327 3 9 we 
+R 1331 4 9 got 
+R 1337 3 8 in 
+R 1341 5 11 this 
+R 1348 7 11 world
+- 1355
+R 1359 2 9 When 
+R 1362 2 11 it 
+R 1365 13 11 spins, 
+R 1381 2 13 when 
+R 1384 2 11 it 
+R 1388 11 11 swirls
+- 1399
+R 1403 2 14 When 
+R 1406 2 13 it 
+R 1409 13 14 whirls, 
+R 1425 2 14 when 
+R 1428 2 13 it 
+R 1431 11 15 twirls
+- 1442
+R 1446 3 16 Two 
+R 1450 5 15 lit
+R 1456 4 15 tle 
+R 1461 4 6 beau
+R 1466 1 15 ti
+R 1468 8 6 ful 
+R 1478 7 14 girls
+- 1485
+R 1489 3 8 Loo
+R 1493 2 6 kin' 
+R 1499 4 11 puz
+R 1504 4 8 zled, 
+R 1510 3 8 in 
+R 1514 3 11 a 
+R 1518 11 11 daze
+- 1529
+R 1533 2 11 I 
+R 1536 4 11 know 
+R 1542 2 11 it's 
+R 1547 2 11 con
+R 1550 5 11 fu
+R 1556 5 13 sing 
+R 1562 3 11 you
+- 1565
+R 1574 3 13 Dad
+R 1578 5 14 dy's 
+R 1585 2 11 al
+R 1588 5 13 ways 
+R 1595 3 14 on 
+R 1599 3 14 the 
+R 1603 9 11 move,
+- 1612
+R 1616 3 9 Mam
+R 1620 6 11 ma's 
+R 1627 3 8 al
+R 1631 6 11 ways 
+R 1638 2 10 on 
+R 1641 3 11 the 
+R 1645 6 8 news
+- 1651
+R 1655 1 11 I 
+R 1657 5 11 try 
+R 1663 2 11 to 
+R 1666 6 8 keep 
+R 1674 3 7 you 
+R 1678 4 8 shel
+R 1683 4 9 tered 
+R 1689 5 11 from 
+R 1695 1 11 it
+- 1696
+R 1699 3 9 But 
+R 1703 6 11 some
+R 1710 5 11 how 
+R 1716 2 11 it 
+R 1719 6 11 seems
+- 1725
+R 1729 2 11 The 
+R 1732 5 11 har
+R 1738 4 13 der 
+R 1744 3 14 that 
+R 1748 3 13 I 
+R 1753 4 12 try 
+R 1758 2 11 to 
+R 1763 4 15 do 
+R 1768 3 11 that,
+- 1771
+R 1775 3 14 The 
+R 1779 5 7 more 
+R 1785 4 8 it 
+R 1790 5 6 back
+R 1796 6 6 fires 
+R 1803 3 8 on 
+R 1807 4 7 me
+- 1811
+R 1819 3 9 All 
+R 1823 3 11 the 
+R 1828 6 8 things
+- 1834
+R 1838 5 11 Grow
+R 1844 3 7 ing 
+R 1849 5 8 up 
+R 1855 4 11 his 
+R 1860 4 11 dad
+R 1865 4 11 dy 
+R 1870 7 11 that 
+R 1878 2 11 he 
+R 1881 5 11 had 
+R 1887 2 11 to 
+R 1890 7 11 see
+- 1897
+R 1901 6 11 Dad
+R 1908 3 11 dy 
+R 1912 5 12 don't 
+R 1918 4 13 want 
+R 1923 5 12 you 
+R 1929 1 11 to 
+R 1931 5 13 see
+- 1936
+R 1940 3 11 But 
+R 1944 2 7 you 
+R 1947 6 8 see 
+R 1954 5 11 just 
+R 1960 4 11 as 
+R 1965 6 11 much 
+R 1972 3 8 as 
+R 1977 4 8 he 
+R 1982 1 8 did
+- 1983
+R 1987 3 8 We 
+R 1991 4 7 did 
+R 1996 6 11 not 
+R 2003 6 8 plan 
+R 2010 2 11 it 
+R 2013 4 8 to 
+R 2020 2 11 be 
+R 2023 5 11 this 
+R 2029 7 11 way,
+- 2036
+R 2040 5 11 Your 
+R 2046 2 11 mo
+R 2049 4 11 ther 
+R 2054 4 11 and 
+R 2059 4 11 me
+- 2063
+R 2067 2 11 But 
+R 2070 7 11 things 
+R 2078 3 11 have 
+R 2082 3 12 got
+R 2086 2 13 ten 
+R 2089 2 13 so 
+R 2092 6 13 bad 
+R 2099 3 11 bet
+R 2103 6 14 ween 
+R 2110 2 13 us
+- 2112
+R 2116 1 15 I 
+R 2118 3 15 don't 
+R 2122 8 16 see 
+R 2131 5 15 us 
+R 2137 1 14 e
+R 2139 5 7 ver 
+R 2146 3 8 be
+R 2150 3 14 ing 
+R 2155 5 7 to
+R 2161 4 6 ge
+R 2166 5 11 ther 
+R 2174 2 8 e
+R 2177 5 9 ver 
+R 2183 2 11 a
+R 2186 6 9 gain
+- 2192
+R 2197 7 11 Like 
+R 2205 3 11 we 
+R 2209 6 11 used 
+R 2216 3 11 to 
+R 2220 5 11 be 
+R 2226 4 11 when 
+R 2231 4 11 we 
+R 2236 4 13 was 
+R 2241 5 10 tee
+R 2247 4 11 na
+R 2252 4 13 gers
+- 2256
+R 2260 3 14 But 
+R 2264 4 11 then 
+R 2269 4 11 of 
+R 2275 3 13 course
+- 2278
+R 2282 1 11 E
+R 2284 6 7 ver
+R 2291 3 11 y
+R 2295 6 9 thing 
+R 2302 2 11 al
+R 2305 6 9 ways 
+R 2312 5 10 hap
+R 2318 4 11 pens 
+R 2323 3 11 for 
+R 2327 2 11 a 
+R 2330 5 7 rea
+R 2336 6 11 son
+- 2342
+R 2349 4 9 I 
+R 2354 5 6 guess 
+R 2360 2 7 it 
+R 2363 5 8 was 
+R 2369 4 11 ne
+R 2374 4 11 ver 
+R 2379 4 11 meant 
+R 2384 4 11 to 
+R 2389 4 11 be
+- 2393
+R 2397 3 11 But 
+R 2401 3 13 it's 
+R 2406 4 13 just 
+R 2411 4 11 some
+R 2416 6 11 thing 
+R 2423 4 13 we 
+R 2428 4 14 have 
+R 2433 5 13 no 
+R 2439 3 11 con
+R 2443 7 14 trol 
+R 2452 1 14 o
+R 2454 3 11 ver
+- 2457
+R 2461 3 11 And 
+R 2465 4 8 that's 
+R 2472 3 14 what 
+R 2476 5 15 des
+R 2482 4 8 ti
+R 2488 4 5 ny 
+R 2494 3 16 is
+- 2497
+R 2515 3 8 But 
+R 2519 4 11 no 
+R 2524 3 7 more 
+R 2528 5 11 wor
+R 2534 3 9 ries,
+- 2537
+R 2541 4 11 Rest 
+R 2546 3 11 your 
+R 2550 5 11 head 
+R 2556 4 11 and 
+R 2561 4 11 go 
+R 2566 3 11 to 
+R 2571 8 11 sleep
+- 2579
+R 2583 5 11 May
+R 2589 3 11 be 
+R 2593 5 13 one 
+R 2599 5 14 day 
+R 2605 3 11 we'll 
+R 2610 4 13 wake 
+R 2615 2 14 up
+- 2617
+R 2621 3 11 And 
+R 2625 6 11 this 
+R 2632 3 11 will 
+R 2636 5 11 all 
+R 2642 5 11 just 
+R 2648 4 8 be 
+R 2653 2 11 a 
+R 2656 9 8 dream
+- 2665
+: 2669 4 -3 Now
+: 2674 3 -1 ~ 
+: 2681 4 -1 hush 
+: 2691 3 7 lit
+: 2695 3 7 tle 
+: 2701 9 7 ba
+: 2711 3 7 by
+: 2715 3 9 ~, 
+: 2722 8 7 don't 
+: 2733 6 6 you 
+: 2744 6 6 cry
+- 2750
+: 2754 4 -1 Eve
+: 2759 2 -1 ry
+: 2764 7 6 thing's 
+: 2776 3 6 gon
+: 2780 2 6 na 
+: 2785 3 7 be 
+: 2789 4 6 al
+: 2796 10 4 right
+- 2806
+: 2818 3 -1 Stif
+: 2823 2 -1 fen 
+: 2827 5 -1 that
+: 2833 3 -1 up
+: 2838 3 -1 per 
+: 2843 3 -1 lip 
+: 2848 2 -1 up
+: 2851 3 4 ~ 
+: 2860 3 -1 lit
+: 2864 3 -1 tle 
+: 2871 9 -1 la
+: 2881 3 0 dy, 
+: 2885 3 -5 I 
+: 2892 8 -3 told 
+: 2903 3 -1 ya
+- 2906
+: 2913 4 -1 Dad
+: 2918 3 -1 dy's 
+: 2925 2 -1 here 
+: 2928 3 -5 to 
+: 2933 9 -3 hold 
+: 2946 3 -1 ya 
+: 2956 3 -5 through 
+: 2961 3 -6 the 
+: 2966 10 -8 night
+- 2976
+: 2987 3 -1 I 
+: 2992 4 -1 know 
+: 2998 4 -1 mom
+: 3003 3 -1 my's 
+: 3009 6 -1 not 
+: 3019 8 -1 here 
+: 3029 6 7 right 
+: 3041 8 7 now 
+: 3052 3 7 and 
+: 3056 3 9 we 
+: 3063 6 7 don't 
+: 3072 5 6 know 
+: 3084 7 6 why
+- 3091
+: 3099 3 -1 We 
+: 3105 7 6 fear 
+: 3114 4 6 how 
+: 3121 2 6 we 
+: 3125 3 7 feel 
+: 3130 3 6 in
+: 3137 10 4 side
+- 3147
+: 3158 3 -1 It 
+: 3163 3 -1 may 
+: 3169 3 -1 seem 
+: 3175 2 -1 a 
+: 3179 2 -1 lit
+: 3182 4 -1 tle 
+: 3190 8 4 cra
+: 3201 3 -1 zy, 
+: 3212 2 -1 pret
+: 3215 3 -5 ty 
+: 3222 10 -3 ba
+: 3233 4 -1 by
+- 3237
+: 3243 3 -1 But 
+: 3247 3 -5 I 
+: 3254 9 -3 pro
+: 3264 2 -1 mise 
+: 3276 8 -3 mom
+: 3285 2 -1 ma's 
+: 3291 1 -3 gon
+: 3293 2 -5 na 
+: 3296 2 -5 be 
+: 3300 6 -6 al
+: 3307 8 -8 right
+- 3315
+R 3332 3 11 It's 
+R 3337 6 11 fun
+R 3344 4 11 ny
+- 3348
+R 3359 4 11 I 
+R 3364 2 9 re
+R 3367 6 9 mem
+R 3374 4 8 ber 
+R 3379 5 8 back 
+R 3385 5 7 one 
+R 3391 2 11 year
+- 3393
+R 3397 4 11 When 
+R 3402 5 11 dad
+R 3408 4 11 dy 
+R 3413 5 11 had 
+R 3419 3 11 no 
+R 3424 6 11 money
+- 3430
+R 3434 5 11 Mom
+R 3440 3 11 my 
+R 3444 4 14 wrap
+R 3449 2 14 ped 
+R 3452 1 14 the 
+R 3454 5 13 Christ
+R 3460 5 11 mas 
+R 3466 5 13 pres
+R 3472 4 11 ents 
+R 3477 1 15 up
+- 3478
+R 3481 4 14 And 
+R 3486 7 6 stuck 
+R 3494 4 13 'em 
+R 3499 8 14 under 
+R 3508 5 15 the 
+R 3514 1 13 tree
+- 3515
+R 3519 3 14 And 
+R 3523 4 14 said 
+R 3528 7 7 some 
+R 3536 4 11 of 
+R 3541 4 11 'em 
+R 3546 3 11 were 
+R 3550 6 11 from 
+R 3557 4 11 me
+- 3561
+R 3567 4 11 Cuz 
+R 3572 5 11 dad
+R 3578 3 11 dy 
+R 3583 4 11 could
+R 3588 2 11 n't 
+R 3592 4 11 buy
+R 3597 4 11 'em
+- 3601
+R 3605 3 12 I'll 
+R 3610 1 11 ne
+R 3612 4 13 ver 
+R 3619 4 13 for 
+R 3624 6 13 get 
+R 3631 4 11 that 
+R 3636 4 13 Christ
+R 3641 3 11 mas
+- 3644
+R 3648 2 11 I 
+R 3651 6 11 sat 
+R 3658 4 11 up 
+R 3663 2 11 the 
+R 3666 5 11 whole 
+R 3672 5 11 night 
+R 3678 4 11 cry
+R 3683 2 11 ing
+- 3685
+R 3689 5 11 Cuz 
+R 3695 4 11 dad
+R 3700 2 11 dy 
+R 3703 7 10 felt 
+R 3711 4 10 like 
+R 3716 3 8 a 
+R 3720 10 11 bum
+- 3730
+R 3736 6 11 See 
+R 3743 5 11 dad
+R 3749 2 11 dy 
+R 3752 4 11 had 
+R 3757 3 11 a 
+R 3761 6 11 job
+- 3767
+R 3771 2 11 But 
+R 3774 3 11 his 
+R 3778 9 13 job 
+R 3788 1 14 was
+- 3789
+R 3792 1 14 To 
+R 3795 5 13 keep 
+R 3801 2 11 the 
+R 3804 8 15 food 
+R 3813 3 11 on 
+R 3817 3 16 the 
+R 3821 5 16 ta
+R 3827 4 11 ble 
+R 3832 3 13 for 
+R 3837 4 12 you 
+R 3842 5 13 and 
+R 3848 5 7 mom
+- 3853
+R 3857 2 13 And 
+R 3860 2 15 at 
+R 3863 3 15 the 
+R 3867 13 11 time
+- 3880
+R 3892 1 11 E
+R 3894 2 10 ver
+R 3897 2 11 y 
+R 3900 7 11 house 
+R 3908 3 11 that 
+R 3912 4 11 we 
+R 3917 7 11 lived 
+R 3925 1 14 in
+- 3926
+R 3930 2 11 Ei
+R 3933 5 11 ther 
+R 3939 5 11 kept 
+R 3945 4 11 get
+R 3950 4 11 ting 
+R 3955 5 13 bro
+R 3961 4 14 ken 
+R 3966 3 11 in
+R 3970 5 8 to 
+R 3976 6 15 and 
+R 3983 6 11 robbed
+- 3989
+R 3993 1 9 Or 
+R 3995 8 11 shot 
+R 4004 4 11 up 
+R 4009 4 7 on 
+R 4014 4 11 the 
+R 4019 8 9 block
+- 4027
+R 4031 3 14 And 
+R 4035 3 13 your 
+R 4039 12 11 mom
+- 4051
+R 4055 6 8 Was 
+R 4062 3 11 sa
+R 4066 7 11 ving 
+R 4074 2 11 mo
+R 4077 3 11 ney 
+R 4081 6 9 for 
+R 4088 5 11 you 
+R 4094 4 11 in 
+R 4099 3 11 a 
+R 4103 7 13 jar
+- 4110
+R 4114 3 11 Try
+R 4118 3 11 na 
+R 4122 8 13 start 
+R 4131 3 13 a 
+R 4135 4 14 pig
+R 4140 3 11 gy 
+R 4144 7 13 bank 
+R 4152 2 13 for 
+R 4155 3 15 you
+- 4158
+R 4162 3 15 So 
+R 4166 6 12 you 
+R 4173 4 14 could 
+R 4178 4 13 go 
+R 4183 2 14 to 
+R 4186 9 14 col
+R 4196 2 14 lege
+- 4198
+R 4202 1 15 Al
+R 4204 6 15 most 
+R 4211 4 11 had 
+R 4216 2 11 a 
+R 4219 6 8 thou
+R 4226 4 8 sand 
+R 4231 6 8 dol
+R 4238 5 11 lars
+- 4243
+R 4253 3 11 Till 
+R 4257 4 11 some 
+R 4262 4 11 one 
+R 4267 6 11 broke 
+R 4274 4 14 in 
+R 4279 3 11 and 
+R 4283 7 11 stole 
+R 4291 2 11 it
+- 4293
+R 4297 3 13 And 
+R 4301 3 13 I 
+R 4305 4 14 knew 
+R 4310 2 11 it 
+R 4313 5 14 hurt 
+R 4319 7 13 so 
+R 4327 2 11 bad
+- 4329
+R 4333 3 11 It 
+R 4337 6 11 broke 
+R 4344 4 9 your 
+R 4350 3 9 mom
+R 4354 3 11 ma's 
+R 4359 9 10 heart
+- 4368
+R 4372 4 13 And 
+R 4377 1 11 it 
+R 4379 6 11 seemed 
+R 4386 5 8 like 
+R 4392 1 9 e
+R 4394 2 11 ver
+R 4397 1 8 y
+R 4399 6 8 thing
+- 4405
+R 4409 2 11 Was 
+R 4412 5 11 just 
+R 4418 5 11 star
+R 4424 5 11 tin' 
+R 4430 1 11 to 
+R 4432 6 11 fall 
+R 4439 2 11 a
+R 4442 14 11 part
+- 4456
+R 4468 3 13 Mom 
+R 4472 2 13 and 
+R 4475 7 15 dad 
+R 4484 3 13 was 
+R 4488 5 11 ar
+R 4494 2 13 gu
+R 4497 3 15 in' 
+R 4501 3 15 a 
+R 4506 7 11 lot
+- 4513
+R 4517 5 13 So 
+R 4524 6 5 mom
+R 4531 3 14 ma 
+R 4535 5 13 moved 
+R 4541 1 14 back
+- 4542
+R 4546 3 12 On 
+R 4550 4 7 the 
+R 4555 7 11 Chal
+R 4563 5 11 mers 
+R 4569 1 7 in 
+R 4571 2 11 the 
+R 4574 10 11 flat
+- 4584
+R 4594 4 11 One 
+R 4599 4 11 bed
+R 4604 5 13 room 
+R 4610 2 11 a
+R 4613 11 11 part
+R 4625 1 13 ment
+- 4626
+R 4630 4 11 And 
+R 4635 5 13 dad 
+R 4641 5 14 moved 
+R 4647 1 13 back
+- 4648
+R 4652 2 11 To 
+R 4655 4 15 the 
+R 4660 5 15 other 
+R 4666 7 7 side 
+R 4674 3 11 of 
+R 4678 5 11 8 
+R 4684 5 11 mile 
+R 4690 3 11 on 
+R 4694 4 11 No
+R 4699 12 8 vara
+- 4711
+R 4717 3 13 And 
+R 4721 5 11 that's 
+R 4728 1 11 when
+- 4729
+R 4733 3 11 Dad
+R 4737 4 7 dy 
+R 4742 4 11 went 
+R 4747 5 11 to 
+R 4753 2 11 Ca
+R 4756 3 11 li
+R 4760 6 9 for
+R 4767 5 15 nia 
+R 4774 3 15 with 
+R 4778 6 11 his 
+R 4785 5 13 C
+R 4791 1 11 D
+- 4792
+R 4796 3 11 And 
+R 4800 4 11 met 
+R 4805 10 13 Dr. 
+R 4816 7 11 Dre
+- 4823
+R 4827 3 13 And 
+R 4831 7 13 flew 
+R 4839 3 15 you 
+R 4843 3 15 and 
+R 4847 6 14 mom
+R 4854 4 13 ma 
+R 4859 4 15 out 
+R 4864 2 15 to 
+R 4867 7 17 see 
+R 4875 6 13 me
+- 4881
+R 4888 3 11 But 
+R 4892 4 10 dad
+R 4897 4 8 dy 
+R 4902 5 11 had 
+R 4908 3 11 to 
+R 4912 8 11 work,
+- 4920
+R 4924 5 11 You 
+R 4930 2 11 and 
+R 4933 5 9 mom
+R 4939 3 11 ma 
+R 4943 6 11 had 
+R 4950 2 11 to 
+R 4953 9 11 leave 
+R 4963 1 11 me
+- 4964
+R 4967 4 11 Then 
+R 4972 1 11 you 
+R 4974 7 12 star
+R 4982 3 13 ted 
+R 4986 5 12 see
+R 4992 1 11 ing
+- 4993
+R 4997 7 14 Dad
+R 5005 3 11 dy 
+R 5010 3 11 on 
+R 5014 3 11 the 
+R 5018 6 7 T.
+R 5026 5 11 V.
+- 5031
+R 5035 4 5 And 
+R 5040 5 12 mom
+R 5046 4 11 ma 
+R 5052 2 9 did
+R 5055 3 11 n't 
+R 5059 8 11 like 
+R 5069 3 8 it
+- 5072
+R 5081 2 8 And 
+R 5084 3 7 you 
+R 5088 3 9 and 
+R 5092 5 11 La
+R 5098 1 11 ney
+- 5099
+R 5103 5 11 Were 
+R 5109 3 11 to 
+R 5113 8 11 young 
+R 5123 3 11 to 
+R 5127 1 11 un
+R 5129 2 11 der
+R 5132 10 11 stand 
+R 5143 1 11 it
+- 5144
+R 5147 4 13 Pa
+R 5152 3 14 pa 
+R 5157 5 11 was 
+R 5163 3 11 a 
+R 5168 3 15 rol
+R 5172 4 13 lin' 
+R 5177 9 15 stone,
+- 5186
+R 5190 4 15 Mom
+R 5195 3 16 ma 
+R 5199 3 13 de
+R 5203 6 14 vel
+R 5210 5 14 oped 
+R 5216 3 15 a 
+R 5221 5 14 ha
+R 5227 2 11 bit
+- 5229
+R 5233 3 9 And 
+R 5237 4 11 it 
+R 5242 5 11 all 
+R 5248 3 8 hap
+R 5252 2 9 pen
+R 5255 2 11 ed 
+R 5258 3 11 too 
+R 5262 5 11 fast
+- 5267
+R 5271 3 11 For 
+R 5275 3 11 ei
+R 5279 3 11 ther 
+R 5283 7 11 one 
+R 5291 2 11 of 
+R 5294 7 11 us 
+R 5302 2 11 to 
+R 5305 7 11 grab 
+R 5313 1 11 it
+- 5314
+R 5317 1 13 I
+R 5319 2 13 'm 
+R 5322 4 13 just 
+R 5327 5 11 sor
+R 5333 4 11 ry 
+R 5338 3 14 you 
+R 5342 5 14 where 
+R 5348 4 11 there
+- 5352
+R 5356 3 11 And 
+R 5360 4 11 had 
+R 5365 2 11 to 
+R 5368 6 8 wit
+R 5375 4 11 ness 
+R 5380 3 9 it 
+R 5384 6 10 first 
+R 5391 2 11 hand
+- 5393
+R 5397 4 12 Cuz 
+R 5402 5 11 all 
+R 5408 3 15 I 
+R 5412 4 11 e
+R 5417 4 8 ver 
+R 5422 9 11 wanted 
+R 5432 4 11 to 
+R 5437 5 11 do
+- 5442
+R 5451 2 11 Was 
+R 5454 1 11 to 
+R 5456 4 11 make 
+R 5461 4 11 you 
+R 5466 11 11 proud
+- 5477
+R 5489 2 14 Now 
+R 5492 3 13 I'm 
+R 5497 5 13 sit
+R 5503 6 13 tin 
+R 5510 3 14 in 
+R 5514 5 13 this 
+R 5520 4 15 emp
+R 5525 3 15 ty 
+R 5529 9 15 house,
+- 5538
+R 5545 6 16 Just 
+R 5552 2 15 re
+R 5555 6 7 min
+R 5562 4 14 is
+R 5567 1 12 cing
+- 5568
+R 5572 5 8 Look
+R 5578 3 7 in' 
+R 5582 3 11 at 
+R 5586 4 11 your 
+R 5591 6 9 ba
+R 5598 4 11 by 
+R 5603 5 11 pic
+R 5609 3 11 tures,
+- 5612
+R 5616 3 11 It 
+R 5620 4 11 just 
+R 5626 5 11 trips 
+R 5632 3 11 me 
+R 5636 4 11 out
+- 5640
+R 5644 2 11 To 
+R 5647 4 11 see 
+R 5652 3 11 how 
+R 5656 7 13 much 
+R 5664 4 14 you 
+R 5669 4 11 both 
+R 5674 3 11 have 
+R 5679 3 14 grown,
+- 5682
+R 5686 2 11 It's 
+R 5691 2 11 al
+R 5694 6 11 most 
+R 5701 3 11 like 
+R 5705 3 11 you're 
+R 5709 7 11 sis
+R 5717 4 11 ters 
+R 5722 9 11 now
+- 5731
+R 5749 10 7 Wow, 
+R 5764 6 8 guess 
+R 5771 3 11 you 
+R 5775 3 11 pret
+R 5779 2 11 ty 
+R 5784 6 11 much 
+R 5791 7 11 are
+- 5798
+R 5804 3 13 And 
+R 5808 3 11 dad
+R 5812 3 11 dy's 
+R 5816 7 11 still 
+R 5824 8 13 here
+- 5832
+R 5836 4 15 La
+R 5841 3 11 ney 
+R 5845 4 11 I'm 
+R 5851 5 13 tal
+R 5857 3 11 kin' 
+R 5861 1 15 to 
+R 5863 5 15 you 
+R 5871 6 8 too,
+- 5877
+R 5891 4 15 Dad
+R 5896 4 14 dy's 
+R 5903 5 15 still 
+R 5909 6 11 here
+- 5915
+R 5919 3 11 I 
+R 5923 5 11 like 
+R 5929 3 11 the 
+R 5933 8 11 sound 
+R 5942 2 11 of 
+R 5945 5 11 that, 
+R 5951 7 11 yeah
+- 5958
+R 5964 3 11 It's 
+R 5969 3 11 got 
+R 5973 2 13 a 
+R 5976 8 11 ring 
+R 5985 2 11 to 
+R 5988 3 11 it 
+R 5994 4 11 don't 
+R 6001 1 13 it?
+- 6002
+R 6006 10 12 Shh, 
+R 6021 5 12 mom
+R 6027 3 11 ma's 
+R 6033 7 9 only 
+R 6042 4 11 gone 
+R 6047 4 11 for 
+R 6052 3 11 the 
+R 6056 6 10 mo
+R 6063 6 8 ment
+- 6069
+: 6073 6 -3 Now
+: 6080 2 -1 ~ 
+: 6085 3 -1 hush 
+: 6095 3 7 lit
+: 6099 3 7 tle 
+: 6105 9 7 ba
+: 6116 3 7 by
+: 6120 3 9 ~, 
+: 6126 8 7 don't 
+: 6137 5 6 you 
+: 6148 6 6 cry
+- 6154
+: 6158 3 -1 Eve
+: 6163 2 -1 ry
+: 6168 7 6 thing's 
+: 6180 3 6 gon
+: 6184 3 6 na 
+: 6189 3 7 be 
+: 6193 4 6 al
+: 6200 11 4 right
+- 6211
+: 6222 3 -1 Stif
+: 6227 3 -1 fen 
+: 6232 3 -1 that 
+: 6236 4 -1 up
+: 6242 3 -1 per 
+: 6247 3 -1 lip 
+: 6253 2 -1 up
+: 6256 4 4 ~ 
+: 6264 3 -1 lit
+: 6268 2 -1 tle 
+: 6275 9 -1 la
+: 6285 3 0 dy, 
+: 6290 3 -5 I 
+: 6296 8 -3 told 
+: 6308 3 -1 ya
+- 6311
+: 6317 4 -1 Dad
+: 6322 3 -1 dy's 
+: 6329 2 -1 here 
+: 6332 3 -5 to 
+: 6338 8 -3 hold 
+: 6350 2 -1 ya 
+: 6360 3 -5 through 
+: 6365 3 -6 the 
+: 6370 11 -8 night
+- 6381
+: 6391 4 -1 I 
+: 6397 3 -1 know 
+: 6402 4 -1 mom
+: 6407 3 -1 my's 
+: 6414 6 -1 not 
+: 6422 8 -1 here 
+: 6434 5 7 right 
+: 6445 8 7 now 
+: 6456 2 7 and 
+: 6460 3 9 we 
+: 6467 6 7 don't 
+: 6476 6 6 know 
+: 6488 7 6 why
+- 6495
+: 6504 2 -1 We 
+: 6509 6 6 fear 
+: 6518 4 6 how 
+: 6525 2 6 we 
+: 6530 3 7 feel 
+: 6534 3 6 in
+: 6541 11 4 side
+- 6552
+: 6562 3 -1 It 
+: 6567 3 -1 may 
+: 6573 4 -1 seem 
+: 6579 3 -1 a 
+: 6584 2 -1 lit
+: 6587 3 -1 tle 
+: 6595 7 4 cra
+: 6606 4 -1 zy, 
+: 6617 2 -1 pret
+: 6620 3 -5 ty 
+: 6626 10 -3 ba
+: 6637 4 -1 by
+- 6641
+: 6647 3 -1 But 
+: 6651 3 -5 I 
+: 6658 9 -3 pro
+: 6668 3 -1 mise 
+: 6679 8 -3 mom
+: 6689 3 -1 ma's 
+: 6695 1 -3 gon
+: 6697 2 -5 na 
+: 6700 2 -5 be 
+: 6704 4 -6 al
+: 6711 10 -8 right
+- 6721
+: 6727 3 -1 And 
+: 6732 3 -1 if 
+: 6737 3 -1 you 
+: 6742 7 -1 ask 
+: 6753 2 7 me 
+: 6758 2 7 too
+- 6760
+: 6764 4 11 Dad
+: 6769 3 11 dy's 
+: 6775 3 19 gon
+: 6779 3 19 na 
+: 6785 7 19 buy 
+: 6795 3 19 you 
+: 6800 3 21 a 
+: 6806 9 19 mock
+: 6817 5 18 ing
+: 6827 10 18 bird
+- 6837
+: 6849 7 18 I'm
+: 6859 3 18 ma 
+: 6864 3 18 give 
+: 6870 3 19 you 
+: 6875 3 18 the 
+: 6881 11 16 world
+- 6892
+: 6902 3 11 I'm
+: 6907 3 11 ma 
+: 6913 4 11 buy 
+: 6918 3 11 a 
+: 6923 4 11 dia
+: 6928 4 11 mond 
+: 6935 6 16 ring 
+: 6946 3 11 for 
+: 6950 1 11 you
+- 6951
+: 6954 4 11 I'm
+: 6960 2 7 ma 
+: 6967 6 9 sing 
+: 6978 2 11 for 
+: 6982 2 11 you
+- 6984
+: 6988 4 11 I'll 
+: 6994 3 7 do 
+: 6998 3 11 a
+: 7002 3 9 ny
+: 7009 5 11 thing 
+: 7019 7 9 for 
+: 7030 3 11 you 
+: 7034 3 9 to 
+: 7041 2 7 see 
+: 7044 2 6 you 
+: 7051 10 4 smile
+- 7061
+: 7078 4 11 And 
+: 7084 3 11 if 
+: 7089 3 11 that 
+: 7094 4 11 mock
+: 7099 4 11 ing
+: 7105 8 11 bird 
+: 7115 5 19 don't 
+: 7127 6 19 sing
+- 7133
+: 7137 3 19 And 
+: 7141 4 21 that 
+: 7149 6 19 ring 
+: 7157 6 18 don't 
+: 7169 5 18 shine
+- 7174
+: 7178 3 11 I'm
+: 7182 3 7 ma 
+: 7190 5 18 break 
+: 7200 5 18 that 
+: 7211 3 19 bir
+: 7215 3 18 die's 
+: 7223 6 16 neck
+- 7229
+: 7243 3 11 I'd 
+: 7248 3 11 go 
+: 7254 5 11 back 
+: 7265 2 11 to 
+: 7269 2 11 the 
+: 7274 8 16 jew
+: 7284 3 11 ler 
+: 7290 2 11 who 
+: 7296 3 11 sold 
+: 7301 3 7 it 
+: 7307 7 9 to 
+: 7317 3 11 ya
+- 7320
+: 7328 3 11 And 
+: 7333 3 11 make 
+: 7339 3 11 him 
+: 7344 2 11 eat 
+: 7348 4 11 eve
+: 7354 3 7 ry 
+: 7361 8 9 ca
+: 7370 1 11 rat
+- 7371
+: 7374 4 19 Don't 
+: 7381 3 19 fuck 
+: 7386 3 18 with 
+: 7392 9 16 dad
+- 7401
+F 7420 1 15 Ha
+F 7423 1 15 ha
+E

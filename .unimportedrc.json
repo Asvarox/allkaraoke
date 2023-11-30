@@ -32,6 +32,7 @@
   "ignoreUnresolved": [
     "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw",
     "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw",
+    "../../../public/logo.svg?raw",
     "utility-types"
   ],
   "entry": [

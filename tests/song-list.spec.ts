@@ -7,7 +7,7 @@ test.beforeEach(async ({ page, context }) => {
   await mockSongs({ page, context });
 });
 
-test('Filters - PlayLists', async ({ page }) => {
+test.skip('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -66,6 +66,85 @@ test('Filters - PlayLists', async ({ page }) => {
   await expect(page.getByTestId('playlist-Modern')).toHaveAttribute('data-focused', 'true');
   await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
   await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+
+  await page.keyboard.press('ArrowDown'); // Duets
+  await expect(page.getByTestId('playlist-Duets')).toHaveAttribute('data-focused', 'true');
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+
+  await page.keyboard.press('ArrowDown'); // New
+  await expect(page.getByTestId('playlist-New')).toHaveAttribute('data-focused', 'true');
+  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+
+  await page.keyboard.press('ArrowDown'); // All
+  await expect(page.getByTestId('playlist-All')).toHaveAttribute('data-focused', 'true');
+  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+
+  await page.keyboard.press('ArrowRight'); // Leave the playlists
+  await page.getByTestId('playlist-Polish').click();
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+});
+
+test('Filters - PlayLists (Christmas)', async ({ page }) => {
+  // Make sure the new song mock is actually considered new
+  const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
+
+  // Update the Date accordingly in your test pages
+  await page.addInitScript(`{
+      // Extend Date constructor to default to fakeNow
+      Date = class extends Date {
+        constructor(...args) {
+          if (args.length === 0) {
+            super(${fakeNow});
+          } else {
+            super(...args);
+          }
+        }
+      }
+      // Override Date.now() to start from fakeNow
+      const __DateNowOffset = ${fakeNow} - Date.now();
+      const __DateNow = Date.now;
+      Date.now = () => __DateNow() + __DateNowOffset;
+    }`);
+
+  await page.goto('/?e2e-test');
+  await page.getByTestId('enter-the-game').click();
+  await page.getByTestId('skip').click();
+
+  await page.getByTestId('sing-a-song').click();
+  await expect(page.getByTestId('lang-Polish')).toBeVisible();
+  await page.getByTestId('close-exclude-languages').click();
+
+  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-christmas-english-1995')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+
+  await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish');
+
+  // Go to playlists
+  await page.keyboard.press('ArrowLeft');
+
+  await page.keyboard.press('ArrowDown'); // Christmas
+  await expect(page.getByTestId('playlist-Christmas')).toHaveAttribute('data-focused', 'true');
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+  await expect(page.getByTestId('song-e2e-english-polish-1994')).not.toBeVisible();
+  await expect(page.getByTestId('song-e2e-christmas-english-1995')).toBeVisible();
+
+  await page.keyboard.press('ArrowDown'); // Polish (first, as it has most songs)
+  await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-focused', 'true');
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+
+  await page.keyboard.press('ArrowDown'); // English
+  await expect(page.getByTestId('playlist-English')).toHaveAttribute('data-focused', 'true');
+  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
 
   await page.keyboard.press('ArrowDown'); // Duets
   await expect(page.getByTestId('playlist-Duets')).toHaveAttribute('data-focused', 'true');

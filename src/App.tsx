@@ -26,6 +26,7 @@ import {
   MobilePhoneModeSetting,
   useSettingValue,
 } from 'Scenes/Settings/SettingsState';
+import SocialMediaElements from 'Scenes/SocialMediaElements/SocialMediaElements';
 import Welcome from 'Scenes/Welcome/Welcome';
 import Toolbar from 'Toolbar/Toolbar';
 import { Suspense, lazy, useEffect, useMemo } from 'react';
@@ -88,6 +89,7 @@ function App() {
                 <Route path="exclude-languages" component={ExcludeLanguages} />
                 <Route path="" component={Welcome} />
                 <Route path="landing" component={LandingPage} />
+                <Route path="social-media-elements" component={SocialMediaElements} />
               </GameScreens>
               <Route path="convert" component={() => <Convert />} />
               <Route

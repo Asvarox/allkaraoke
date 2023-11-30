@@ -1,0 +1,446 @@
+#ID:steven-curtis-chapman-the-great-adventure
+#ARTIST:Steven Curtis Chapman
+#ARTISTORIGIN:US
+#TITLE:The Great Adventure
+#CREATOR:UltraSinger [GitHub] 0.0.1-2023-11-13 and mindtakerr
+#CREATORURL:
+#BPM:378,29
+#REALBPM:138
+#YEAR:1992
+#SOURCEURL:
+#VIDEOID:aIAuc5DWJ1M
+#VIDEOGAP:0
+#VOLUME:0,69
+#GENRE:ccm, contemporary christian, christian
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T17:22:32.221Z
+#GAP:2138,0696016326965
+* 25 5 7 Saddle 
+* 39 3 7 up 
+* 47 9 2 your 
+* 58 38 6 horses!
+- 96 428
+- 428
+: 453 12 2 Started 
+: 469 2 9 out 
+: 475 3 7 this 
+: 485 13 7 morning
+- 498 500
+- 500
+: 525 2 6 In 
+: 528 2 2 the 
+: 536 8 6 usual 
+: 549 12 9 way
+- 561 579
+- 579
+: 604 4 2 Chasing 
+: 615 5 2 thoughts 
+: 624 18 2 inside 
+: 648 8 7 my 
+: 659 8 7 head
+- 667
+: 692 2 1 Of 
+: 699 4 6 all 
+: 704 2 6 I 
+: 708 8 7 had 
+: 719 1 9 to 
+: 723 10 7 do 
+: 734 14 9 today
+- 748 759
+- 759
+: 784 8 9 Another 
+: 795 10 11 time 
+: 807 17 9 around 
+: 827 2 9 the 
+: 833 14 9 circle
+- 847
+: 865 5 9 Try 
+: 871 3 9 to 
+: 876 9 11 make 
+: 889 2 11 it 
+: 892 9 11 better 
+: 903 8 9 than 
+: 914 5 2 the 
+: 920 16 11 last
+- 936 947
+- 947
+: 972 3 1 I 
+: 977 10 2 opened 
+: 989 8 2 up 
+: 1000 5 6 the 
+: 1006 13 7 Bible
+- 1019
+: 1041 4 7 And 
+: 1045 3 7 I 
+: 1050 9 7 read 
+: 1060 8 9 about 
+: 1071 23 9 me
+- 1094 1121
+- 1121
+: 1146 3 11 Said 
+: 1151 4 2 I've 
+: 1157 13 2 been 
+: 1173 4 9 a 
+: 1179 14 2 prisoner
+- 1193
+: 1212 4 7 And 
+: 1217 8 7 God's 
+: 1228 7 9 grace 
+: 1238 3 4 had 
+: 1244 5 9 set 
+: 1250 3 4 me 
+: 1254 22 4 free
+- 1276 1279
+- 1279
+: 1304 5 9 And 
+: 1310 16 11 somewhere 
+: 1329 16 9 between 
+: 1347 5 9 the 
+: 1353 22 9 pages
+- 1375
+: 1392 3 11 It 
+: 1396 8 11 hit 
+: 1407 5 11 me 
+: 1413 4 11 like 
+: 1421 1 9 a 
+: 1424 24 2 lightning 
+: 1456 5 11 bolt
+- 1461
+: 1472 4 2 I 
+: 1478 3 9 saw 
+: 1483 2 9 a 
+: 1487 9 11 big 
+: 1499 6 7 fron
+: 1509 8 2 tier 
+: 1520 4 2 in 
+: 1526 2 4 front 
+: 1531 2 2 of 
+: 1536 17 2 me
+- 1553
+: 1562 4 6 And 
+: 1567 2 9 I 
+: 1571 7 11 heard 
+: 1582 12 2 somebody 
+: 1597 10 2 say
+- 1607
+* 1624 7 4 Let's 
+* 1633 30 4 go!
+- 1663
+: 1669 14 2 Saddle 
+: 1686 6 2 up 
+: 1695 9 6 your 
+: 1706 45 2 horses!
+- 1751
+: 1755 4 2 We've 
+: 1761 6 2 got 
+: 1768 1 7 a 
+: 1771 6 2 trail 
+: 1784 3 9 to 
+: 1787 18 9 blaze
+- 1805 1822
+- 1822
+: 1847 5 2 Through 
+: 1853 3 2 the 
+: 1858 8 2 wild 
+: 1868 9 6 blue 
+: 1879 31 6 yonder
+- 1910
+: 1911 5 2 Of 
+: 1917 14 2 God's 
+: 1934 23 2 amazing 
+: 1960 42 4 grace
+- 2002
+: 2019 8 9 Let's 
+: 2030 12 4 follow 
+: 2043 8 6 our 
+: 2053 14 6 lea
+: 2069 10 4 der 
+: 2080 20 2 into 
+: 2102 4 2 the 
+: 2106 19 2 glorious 
+: 2128 18 11 unknown
+- 2146 2173
+- 2173
+: 2198 8 11 This 
+: 2209 10 1 is 
+: 2221 3 11 the 
+: 2226 13 11 life 
+: 2242 10 1 like 
+: 2254 7 7 no 
+: 2263 33 2 other 
+: 2300 17 6 whoa 
+: 2320 22 4 whoa
+- 2342
+* 2351 8 7 This 
+* 2362 7 6 is 
+* 2373 3 2 the 
+* 2378 8 4 great 
+* 2389 51 2 adventure!
+- 2440 2467
+- 2467
+: 2492 49 2 Yeah
+- 2541 2559
+- 2559
+: 2584 5 6 Come 
+: 2596 3 2 on 
+: 2602 5 2 get 
+: 2612 13 2 ready
+- 2625
+: 2645 4 7 For 
+: 2652 2 6 the 
+: 2656 10 7 ride 
+: 2668 2 2 of 
+: 2672 8 9 your 
+: 2680 3 9 life
+- 2683 2706
+- 2706
+: 2731 9 11 Gonna 
+: 2742 9 2 leave 
+: 2753 5 2 long-
+: 2764 5 2 faced 
+: 2773 9 6 re
+: 2784 14 2 lig
+: 2798 13 2 ion
+- 2811
+: 2829 2 7 In 
+: 2832 1 4 a 
+: 2835 8 11 cloud 
+: 2845 2 4 of 
+: 2850 7 4 dust 
+: 2858 19 4 behind
+- 2877 2880
+- 2880
+: 2905 5 9 And 
+: 2911 20 11 discover 
+: 2932 3 11 all 
+: 2937 4 9 the 
+: 2943 9 9 new 
+: 2954 21 9 horizons
+- 2975
+: 2996 5 11 Just 
+: 3002 19 11 waiting 
+: 3023 4 2 to 
+: 3029 7 4 be 
+: 3038 31 4 explored
+- 3069
+* 3090 5 11 This 
+* 3105 2 2 is 
+* 3111 5 2 what 
+* 3122 9 9 we 
+* 3134 12 6 were 
+* 3150 21 2 created 
+* 3176 29 4 for!
+- 3205
+: 3208 18 6 Yeah
+- 3226
+: 3232 13 7 Saddle 
+: 3248 6 2 up 
+: 3258 8 6 your 
+: 3268 44 6 horses!
+- 3312
+: 3319 3 2 We've 
+: 3324 6 2 got 
+: 3331 1 9 a 
+: 3334 7 2 trail 
+: 3346 3 9 to 
+: 3351 12 9 blaze
+- 3363 3384
+- 3384
+: 3409 5 2 Through 
+: 3415 5 2 the 
+: 3420 11 2 wild 
+: 3431 8 6 blue 
+: 3440 34 6 yonder 
+: 3474 5 2 of 
+: 3480 16 2 God's 
+: 3502 18 2 amazing 
+: 3524 30 4 grace
+- 3554 3557
+- 3557
+: 3582 9 2 Let's 
+: 3594 10 4 follow 
+: 3606 8 6 our 
+: 3616 27 6 leader 
+: 3644 19 2 into 
+: 3665 6 2 the 
+: 3672 15 2 glorious 
+: 3691 23 11 unknown
+- 3714 3740
+- 3740
+: 3765 7 6 This 
+: 3773 9 6 is 
+: 3784 4 11 the 
+: 3790 11 11 life 
+: 3804 10 1 like 
+: 3816 8 7 no 
+: 3826 24 2 other 
+: 3864 16 6 whoa 
+: 3885 20 4 whoa
+- 3905
+: 3915 5 11 This 
+: 3929 5 6 is 
+: 3937 3 2 the 
+: 3942 11 4 great 
+: 3958 17 2 adventure!
+- 3975 3982
+- 3982
+: 4007 13 11 We'll 
+: 4023 19 1 travel 
+: 4045 27 11 over 
+: 4081 19 11 over 
+: 4103 26 6 mountains 
+: 4131 10 2 so 
+: 4143 32 1 high
+- 4175
+: 4188 18 1 We'll 
+: 4206 9 11 go 
+: 4215 6 9 through 
+: 4221 15 11 vall
+: 4236 14 9 eys 
+: 4250 33 9 below
+- 4283 4328
+- 4328
+: 4353 14 11 Still 
+: 4370 9 1 through 
+: 4382 7 2 it 
+: 4392 19 2 all
+- 4411
+: 4418 19 6 We'll 
+: 4441 16 4 find 
+: 4462 9 2 that
+- 4471
+: 4477 9 2 This 
+: 4487 9 2 is 
+: 4499 4 2 the 
+: 4505 16 1 greatest 
+: 4523 8 9 jour
+: 4533 9 9 ney
+- 4542
+: 4554 3 7 That 
+: 4560 3 9 the 
+: 4565 13 11 human 
+: 4580 7 2 heart 
+: 4588 5 2 will 
+: 4594 12 4 ev
+: 4606 12 6 er 
+: 4620 26 4 see
+- 4646
+: 4658 4 11 The 
+: 4662 7 11 love 
+: 4670 2 2 of 
+: 4674 8 2 God 
+: 4685 8 6 will 
+: 4695 15 6 take 
+: 4713 1 4 us 
+: 4717 5 4 far
+- 4722
+* 4743 10 6 Beyond 
+* 4754 7 4 our 
+* 4765 14 4 wildest 
+* 4782 41 7 dreams
+- 4823
+: 4830 79 2 Yeah!
+- 4909 4944
+- 4944
+: 4969 15 2 Oh 
+: 4989 4 2 saddle
+: 5004 4 2 up 
+: 5012 8 6 your 
+: 5023 17 2 horses
+- 5040
+: 5059 6 6 Come 
+: 5068 6 6 on 
+: 5078 5 2 get 
+: 5084 14 2 ready 
+: 5099 5 2 to 
+: 5105 14 6 ride
+: 5119 13 7 ~
+- 5132
+: 5144 9 2 Saddle 
+: 5158 2 2 up 
+: 5164 11 6 your 
+: 5178 15 6 hor
+: 5195 28 2 ses!
+- 5223
+: 5227 4 2 We've 
+: 5233 4 2 got 
+: 5239 4 2 a 
+: 5244 9 2 trail 
+: 5255 4 9 to 
+: 5260 16 9 blaze
+- 5276 5292
+- 5292
+: 5317 5 7 Through 
+: 5324 4 2 the 
+: 5330 7 2 wild 
+: 5340 6 6 blue 
+: 5350 17 6 yon
+: 5367 16 4 der 
+: 5385 3 2 of 
+: 5390 13 2 God's 
+: 5405 5 2 a
+: 5411 19 7 maz
+: 5433 11 6 ing 
+: 5443 35 4 grace
+- 5478
+: 5492 5 2 Let's 
+: 5502 11 2 follow 
+: 5519 4 6 our 
+: 5525 13 6 lea
+: 5538 12 6 der 
+: 5552 7 6 in
+: 5562 9 2 to 
+: 5573 4 2 the 
+: 5578 19 2 glorious
+: 5601 23 11 unknown
+- 5624 5648
+- 5648
+: 5673 8 6 This 
+: 5683 7 6 is 
+: 5694 3 11 the 
+: 5700 12 11 life 
+: 5715 7 11 like 
+: 5726 7 1 no
+: 5736 20 2 oth
+: 5758 12 2 er
+- 5770
+* 5774 16 6 This 
+* 5794 2 4 is 
+* 5798 3 4 the 
+* 5805 11 2 great 
+* 5818 18 7 adven
+* 5837 48 7 ture
+- 5885 5968
+- 5968
+: 5993 4 6 Come 
+: 5999 7 7 on 
+: 6009 3 11 this 
+: 6014 3 7 is 
+: 6020 2 2 the 
+: 6025 8 7 great 
+: 6036 45 2 adventure
+- 6081 6123
+- 6123
+: 6148 10 6 Saddle 
+: 6164 6 6 up
+- 6170
+: 6184 12 7 Saddle 
+: 6199 8 7 up 
+: 6210 9 9 your 
+: 6221 16 6 hor
+: 6238 58 2 ses
+- 6296 6320
+- 6320
+: 6345 8 2 We 
+: 6356 3 2 got 
+: 6361 4 11 a 
+: 6367 7 2 trail 
+: 6377 8 6 to 
+: 6388 20 6 blaze
+- 6408
+: 6420 7 6 Through 
+: 6430 16 7 God's 
+: 6448 17 7 amaz
+: 6465 16 4 ing 
+: 6485 52 2 grace
+E

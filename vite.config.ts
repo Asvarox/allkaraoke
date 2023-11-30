@@ -28,7 +28,7 @@ export default defineConfig({
     analyze(),
     !customCert && basicSsl(),
   ],
-  base: './',
+  base: '/',
   build: {
     outDir: 'build',
   },

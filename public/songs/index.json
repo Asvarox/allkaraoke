@@ -515,6 +515,38 @@
     "local": false
   },
   {
+    "id": "abba-one-of-us",
+    "title": "One Of Us",
+    "artist": "ABBA",
+    "language": "English",
+    "bpm": 329.28,
+    "bar": 4,
+    "gap": 3657.813411078717,
+    "video": "KoT5vV25Qng",
+    "year": "1981",
+    "artistOrigin": "SE",
+    "lastUpdate": "2023-11-30T17:22:31.064Z",
+    "edition": "SingStar ABBA",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 82,
+    "previewStart": 60,
+    "previewEnd": 136,
+    "volume": 0.67,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "One Of Us",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbaoneofus",
+    "local": false
+  },
+  {
     "id": "abba-super-trouper",
     "title": "Super Trouper",
     "artist": "ABBA",
@@ -7956,6 +7988,33 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-perfect",
+    "title": "Perfect",
+    "artist": "Ed sheeran",
+    "language": "English",
+    "bpm": 0,
+    "bar": 4,
+    "gap": null,
+    "video": "2Vv-BfVoq4g",
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.068Z",
+    "videoGap": 0,
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "Ed Sheeran",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+    "tracks": [
+      {
+        "start": null
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranperfect",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-photograph",
     "title": "Photograph",
     "artist": "Ed Sheeran",
@@ -8453,6 +8512,37 @@
     "local": false
   },
   {
+    "id": "elton-john-step-into-christmas",
+    "title": "Step Into Christmas",
+    "artist": "Elton John",
+    "language": "English",
+    "bpm": 291.9,
+    "bar": 4,
+    "gap": 13973.638232271325,
+    "video": "IbRtGMm96F8",
+    "year": "1973",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.072Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 141,
+    "previewStart": 100,
+    "previewEnd": 144,
+    "volume": 1,
+    "author": "lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohnstepintochristmas",
+    "local": false
+  },
+  {
     "id": "elvis-presley-cant-help-falling-in-love",
     "title": "Can’t Help Falling In Love",
     "artist": "Elvis Presley",
@@ -8536,6 +8626,33 @@
     ],
     "tracksCount": 1,
     "search": "eminemloseyourself",
+    "local": false
+  },
+  {
+    "id": "eminem-mockingbird",
+    "title": "Mockingbird",
+    "artist": "Eminem",
+    "language": "English",
+    "bpm": 450,
+    "bar": 4,
+    "gap": 8970,
+    "video": "S9bCLPwzSC0",
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:31.077Z",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.72,
+    "author": "eminem",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=S9bCLPwzSC0",
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eminemmockingbird",
     "local": false
   },
   {
@@ -9691,6 +9808,59 @@
     "local": false
   },
   {
+    "id": "fx-chu",
+    "title": "Chu~♡",
+    "artist": "f(x)",
+    "language": "Korean",
+    "bpm": 250.04,
+    "bar": 4,
+    "gap": 2600.1631738921774,
+    "video": "Cnz2n5VcV4Q",
+    "year": "2009",
+    "lastUpdate": "2023-11-30T17:22:31.079Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.67,
+    "author": "supergamekyu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fxchu",
+    "local": false
+  },
+  {
+    "id": "fx-la-cha-ta",
+    "title": "LA chA TA",
+    "artist": "f(x)",
+    "language": "Korean",
+    "bpm": 228,
+    "bar": 4,
+    "gap": 22043.157894736843,
+    "video": "H7MHZpSNJQc",
+    "year": "2011",
+    "lastUpdate": "2023-11-30T17:22:31.290Z",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.73,
+    "author": "supergamekyu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fxlachata",
+    "local": false
+  },
+  {
     "id": "gandalf-sax-guy-10-hours-hd",
     "title": "Sax Guy 10 Hours HD",
     "artist": "Gandalf",
@@ -9915,6 +10085,33 @@
     ],
     "tracksCount": 1,
     "search": "ghostmaryonacross",
+    "local": false
+  },
+  {
+    "id": "girls-generation-snsd-the-boys",
+    "title": "The Boys",
+    "artist": "Girls’ Generation (SNSD)",
+    "language": "English",
+    "bpm": 230,
+    "bar": 4,
+    "gap": 72421.73913043478,
+    "video": "NAf1e1Szw3Y",
+    "year": "2011",
+    "lastUpdate": "2023-11-30T17:22:31.436Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.73,
+    "author": "britneyblisswilliams",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "girlsgenerationsnsdtheboys",
     "local": false
   },
   {
@@ -11585,6 +11782,34 @@
     "local": false
   },
   {
+    "id": "indira-radic-alen-islamovic-lopov",
+    "title": "Lopov",
+    "artist": "Indira Radic & Alen Islamovic",
+    "language": "Serbian",
+    "bpm": 100,
+    "bar": 4,
+    "gap": 18150,
+    "video": "ADC0rpKUqcY",
+    "year": "2003",
+    "lastUpdate": "2023-11-30T17:22:31.643Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "previewStart": 13,
+    "previewEnd": 47,
+    "volume": 0.5,
+    "author": "Shadowscence",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "indiraradicalenislamoviclopov",
+    "local": false
+  },
+  {
     "id": "indochine-jai-demande-a-la-lune",
     "title": "J'ai Demandé A La Lune",
     "artist": "Indochine",
@@ -13104,6 +13329,122 @@
     ],
     "tracksCount": 1,
     "search": "kayahtestosteron",
+    "local": false
+  },
+  {
+    "id": "keane-crystal-ball",
+    "title": "Crystal Ball",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 248.5,
+    "bar": 4,
+    "gap": 37973.8430583501,
+    "video": "lKrFfp67NDQ",
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.813Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.74,
+    "author": "Ceptic",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1534",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keanecrystalball",
+    "local": false
+  },
+  {
+    "id": "keane-everybodys-changing",
+    "title": "Everybody’s Changing",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 376,
+    "bar": 4,
+    "gap": 21112.659574468085,
+    "video": "RSNmgE6L8AU",
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.814Z",
+    "edition": "SingStar Rocks!",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.69,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=545",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keaneeverybodyschanging",
+    "local": false
+  },
+  {
+    "id": "keane-somewhere-only-we-know",
+    "title": "Somewhere Only We Know",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 344,
+    "bar": 4,
+    "gap": 24887.093023255813,
+    "video": "Oextk-If8HQ",
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.815Z",
+    "edition": "SingStar The Dome",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 172,
+    "volume": 0.79,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=546",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keanesomewhereonlyweknow",
+    "local": false
+  },
+  {
+    "id": "keane-this-is-the-last-time",
+    "title": "This Is The Last Time",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 263.4,
+    "bar": 4,
+    "gap": 13484.9430523918,
+    "video": "u86VdOc3asA",
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.815Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 0.66,
+    "author": "Ceptic",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=421",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keanethisisthelasttime",
     "local": false
   },
   {
@@ -17462,6 +17803,89 @@
     "local": false
   },
   {
+    "id": "morat-cuando-nadie-ve",
+    "title": "Cuando nadie ve",
+    "artist": "Morat",
+    "language": "Spanish",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 550,
+    "video": "szeA9tvItJY",
+    "year": "2018",
+    "artistOrigin": "CO",
+    "lastUpdate": "2023-11-30T17:22:31.816Z",
+    "edition": "Let's Sing 12",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.77,
+    "author": "Zevac",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moratcuandonadieve",
+    "local": false
+  },
+  {
+    "id": "morat-no-se-va",
+    "title": "No se va",
+    "artist": "Morat",
+    "language": "Spanish",
+    "bpm": 368,
+    "bar": 4,
+    "gap": 12640.978260869566,
+    "video": "USDX0X-d588",
+    "year": "2019",
+    "artistOrigin": "CO",
+    "lastUpdate": "2023-11-30T17:22:31.817Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.74,
+    "author": "vicktoben (ultrastar-es.org)",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moratnoseva",
+    "local": false
+  },
+  {
+    "id": "morat-y-aitana-presiento",
+    "title": "Presiento",
+    "artist": "Morat y Aitana",
+    "language": "Spanish",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 2730,
+    "video": "ZueYnZFggoQ",
+    "year": "2019",
+    "lastUpdate": "2023-11-30T17:22:31.818Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 180,
+    "volume": 0.72,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moratyaitanapresiento",
+    "local": false
+  },
+  {
     "id": "morgan-wallen-last-night",
     "title": "Last Night",
     "artist": "Morgan Wallen",
@@ -18322,6 +18746,34 @@
     ],
     "tracksCount": 1,
     "search": "nct127highwaytoheaven",
+    "local": false
+  },
+  {
+    "id": "nct-dream-fireflies",
+    "title": "Fireflies",
+    "artist": "NCT DREAM",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 14450,
+    "video": "CUr5e6t3kSU",
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-11-30T17:22:32.040Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.68,
+    "author": "Amandine-z-z",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nctdreamfireflies",
     "local": false
   },
   {
@@ -19923,6 +20375,33 @@
     ],
     "tracksCount": 2,
     "search": "paulmccartneymichaeljacksonsaysaysay",
+    "local": false
+  },
+  {
+    "id": "paulina-rubio-feat-morat-mi-nuevo-vicio",
+    "title": "Mi nuevo vicio",
+    "artist": "Paulina Rubio feat. Morat",
+    "language": "Spanish",
+    "bpm": 288,
+    "bar": 4,
+    "gap": 27120.416666666668,
+    "video": "UKbhDRxm3Vc",
+    "year": "2015",
+    "lastUpdate": "2023-11-30T17:22:32.041Z",
+    "genre": "Pop",
+    "videoGap": 20,
+    "realBpm": 144,
+    "volume": 0.78,
+    "author": "jmfb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paulinarubiofeatmoratminuevovicio",
     "local": false
   },
   {
@@ -22437,6 +22916,35 @@
     "local": false
   },
   {
+    "id": "rusted-root-send-me-on-my-way",
+    "title": "Send Me On My Way",
+    "artist": "Rusted Root",
+    "language": "English",
+    "bpm": 468.3,
+    "bar": 4,
+    "gap": 7519.046764894298,
+    "video": "IGMabBGydC0",
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.219Z",
+    "videoGap": 0,
+    "realBpm": 119,
+    "previewStart": 107,
+    "previewEnd": 150,
+    "volume": 0.72,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rustedrootsendmeonmyway",
+    "local": false
+  },
+  {
     "id": "s-snow-halation",
     "title": "Snow Halation",
     "artist": "µ's",
@@ -22916,6 +23424,34 @@
     ],
     "tracksCount": 1,
     "search": "seventeendontwannacry",
+    "local": false
+  },
+  {
+    "id": "seventeen-hug",
+    "title": "Hug",
+    "artist": "SEVENTEEN",
+    "language": "Korean",
+    "bpm": 300,
+    "bar": 4,
+    "gap": -300,
+    "video": "wV8oKFqO2Gc",
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-11-30T17:22:32.220Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.67,
+    "author": "Amandine-z-z",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "seventeenhug",
     "local": false
   },
   {
@@ -24101,6 +24637,34 @@
     "local": false
   },
   {
+    "id": "steven-curtis-chapman-the-great-adventure",
+    "title": "The Great Adventure",
+    "artist": "Steven Curtis Chapman",
+    "language": "English",
+    "bpm": 378.29,
+    "bar": 4,
+    "gap": 2138.0696016326965,
+    "video": "aIAuc5DWJ1M",
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.221Z",
+    "genre": "ccm, contemporary christian, christian",
+    "videoGap": 0,
+    "realBpm": 138,
+    "volume": 0.69,
+    "author": "UltraSinger [GitHub] 0.0.1-2023-11-13 and mindtakerr",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stevencurtischapmanthegreatadventure",
+    "local": false
+  },
+  {
     "id": "strachy-na-lachy-dzien-dobry-kocham-cie",
     "title": "Dzien dobry kocham Cie",
     "artist": "Strachy Na Lachy",
@@ -24541,6 +25105,33 @@
     "local": false
   },
   {
+    "id": "taylor-swift-hey-stephen",
+    "title": "Hey Stephen",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 232.06,
+    "bar": 4,
+    "gap": 1340.423166422477,
+    "video": "tMhiHrL7rPE",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.221Z",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.69,
+    "author": "GiantCrab",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftheystephen",
+    "local": false
+  },
+  {
     "id": "taylor-swift-i-knew-you-were-trouble",
     "title": "I Knew You Were Trouble",
     "artist": "Taylor Swift",
@@ -24568,6 +25159,35 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftiknewyouweretrouble",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-love-story",
+    "title": "Love Story",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 238.02,
+    "bar": 4,
+    "gap": 15841.681371313334,
+    "video": "8xg3vE8Ie_E",
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.222Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 119,
+    "volume": 1,
+    "author": "oneoftheboys",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftlovestory",
     "local": false
   },
   {
@@ -24653,6 +25273,62 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftstyle",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-you-belong-with-me",
+    "title": "You Belong With Me",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 260.2,
+    "bar": 4,
+    "gap": 7219.984627209838,
+    "video": "VuNIsY6JdUw",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.223Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 1,
+    "author": "valelcbl",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftyoubelongwithme",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-youre-not-sorry",
+    "title": "You’re Not Sorry",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 268.38,
+    "bar": 4,
+    "gap": 13433.963782696177,
+    "video": "DNaSlUYIXBg",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.223Z",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 0.72,
+    "author": "Deathbird-66",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftyourenotsorry",
     "local": false
   },
   {
@@ -25375,6 +26051,37 @@
     ],
     "tracksCount": 1,
     "search": "thecurefridayiminlove",
+    "local": false
+  },
+  {
+    "id": "the-darkness-christmas-time-dont-let-the-bells-end",
+    "title": "Christmas Time (Don’t Let The Bells End)",
+    "artist": "The Darkness",
+    "language": "English",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 15811.774193548386,
+    "video": "lrVg1toMzuo",
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:32.224Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 124,
+    "previewStart": 29,
+    "previewEnd": 69,
+    "volume": 0.74,
+    "author": "ears",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thedarknesschristmastimedontletthebellsend",
     "local": false
   },
   {
@@ -27546,6 +28253,34 @@
     ],
     "tracksCount": 1,
     "search": "vonwegenlisbethbitch",
+    "local": false
+  },
+  {
+    "id": "weezer-perfect-situation",
+    "title": "Perfect Situation",
+    "artist": "Weezer",
+    "language": "English",
+    "bpm": 376,
+    "bar": 4,
+    "gap": 27602.659574468085,
+    "video": "jwv-iRvyDZg",
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.224Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 94,
+    "volume": 0.67,
+    "author": "gun88",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gun88",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Perfect%20Situation",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weezerperfectsituation",
     "local": false
   },
   {
