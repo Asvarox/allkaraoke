@@ -64,9 +64,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     e.stopPropagation();
     e.preventDefault();
 
-    setFilters({
+    setFilters((current) => ({
+      ...current,
       search: e.key,
-    });
+    }));
   };
   useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, {
     enabled: !filters.search && keyboardControl,
@@ -75,7 +76,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const onRemoteSearch = useCallback(
     (search: string) => {
       if (keyboardControl) {
-        setFilters({ search });
+        setFilters((current) => ({ search, ...current }));
       }
     },
     [keyboardControl],

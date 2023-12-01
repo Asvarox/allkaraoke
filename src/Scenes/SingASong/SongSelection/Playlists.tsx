@@ -8,7 +8,7 @@ import dayjs from 'dayjs';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { SongPreview } from 'interfaces';
-import { ReactNode, useEffect, useMemo } from 'react';
+import { Dispatch, ReactNode, SetStateAction, useEffect, useMemo } from 'react';
 
 interface PlaylistEntry {
   name: string;
@@ -56,7 +56,7 @@ const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
 
 interface Props {
   prefilteredList: SongPreview[];
-  setFilters: (filters: AppliedFilters) => void;
+  setFilters: Dispatch<SetStateAction<AppliedFilters>>;
   closePlaylist: (leavingKey: 'left' | 'right') => void;
   active: boolean;
 }
@@ -73,13 +73,6 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
     },
   });
 
-  useEffect(() => {
-    if (focused) {
-      const playlist = playlists.find((list) => `playlist-${list.name}` === focused);
-      playlist && setFilters(playlist.filters);
-    }
-  }, [focused, playlists]);
-
   useKeyboard(
     {
       left: () => closePlaylist('left'),
@@ -88,11 +81,30 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
     active,
   );
 
+  useEffect(() => {
+    const param = new URLSearchParams(window.location.search).get('playlist');
+    if (param) {
+      focusElement(`playlist-${param}`);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (focused) {
+      const playlist = playlists.find((list) => `playlist-${list.name}` === focused);
+      if (playlist) {
+        /// push query param to url containing playlist name
+        window.history.pushState({}, '', `?playlist=${playlist.name}`);
+        setFilters(playlist.filters);
+      }
+    }
+  }, [focused, playlists]);
+
   return (
     <Container data-test="song-list-playlists" active={active}>
       {playlists.map((playlist) => (
         <Playlist
           key={playlist.name}
+          data-selected={`playlist-${playlist.name}` === focused}
           active={active}
           {...register(`playlist-${playlist.name}`, () => focusElement(`playlist-${playlist.name}`))}
           {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>

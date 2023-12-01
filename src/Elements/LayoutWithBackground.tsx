@@ -24,7 +24,6 @@ export const useBackground = (shouldBeVisible: boolean, christmas = false) => {
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
   const [christmas, setChristmas] = useState(true);
-  console.log(visible, christmas);
 
   return (
     <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setChristmas }}>

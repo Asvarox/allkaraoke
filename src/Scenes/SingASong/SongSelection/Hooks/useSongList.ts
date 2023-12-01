@@ -3,7 +3,6 @@ import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/Setti
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import { uniq } from 'lodash-es';
 import { useDeferredValue, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
@@ -35,17 +34,6 @@ export function isEmptyFilters(filters: AppliedFilters) {
   );
 }
 
-export interface FiltersData {
-  language: {
-    current: string;
-    available: string[];
-  };
-  status: {
-    allSongs: number;
-    visible: number;
-  };
-}
-
 type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
 
 const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
@@ -58,8 +46,8 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
       return songLangs.includes(language);
     });
   },
-  excludeLanguages: (songList, languages: string[] = []) => {
-    if (languages.length === 0) return songList;
+  excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
+    if (languages.length === 0 || clearString(appliedFilters?.search ?? '').length) return songList;
 
     return songList.filter((song) => {
       const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
@@ -101,25 +89,15 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 };
 
 const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {
-  if (clearString(appliedFilters?.search ?? '').length) {
-    return filteringFunctions.search(list, appliedFilters.search);
-  }
   return Object.entries(appliedFilters)
     .filter((filters): filters is [keyof AppliedFilters, FilterFunc] => filters[0] in filteringFunctions)
-    .reduce((songList, [name, value]) => filteringFunctions[name](songList, value), list);
-};
-
-export const useLanguageFilter = (list: SongPreview[]) => {
-  return useMemo(() => uniq(['', ...list.map((song) => song.language ?? 'Unknown')].flat()), [list]);
+    .reduce((songList, [name, value]) => filteringFunctions[name](songList, value, appliedFilters), list);
 };
 
 export const useSongListFilter = (list: SongPreview[]) => {
-  const availableLanguages = useLanguageFilter(list);
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
 
-  const [filters, setFilters] = useState<AppliedFilters>({
-    excludeLanguages: excludedLanguages ?? [],
-  });
+  const [filters, setFilters] = useState<AppliedFilters>({});
   const deferredFilters = useDeferredValue(filters);
 
   const prefilteredList = useMemo(
@@ -135,24 +113,13 @@ export const useSongListFilter = (list: SongPreview[]) => {
     [list, deferredFilters, excludedLanguages],
   );
 
-  const filtersData: FiltersData = {
-    language: {
-      current: filters.language ?? '',
-      available: availableLanguages,
-    },
-    status: {
-      allSongs: list.length,
-      visible: filteredList.length,
-    },
-  };
-
-  return { filters, filteredList, filtersData, prefilteredList, setFilters };
+  return { filters, filteredList, prefilteredList, setFilters };
 };
 
 export default function useSongList() {
   const songList = useSongIndex();
 
-  const { filters, filtersData, filteredList, prefilteredList, setFilters } = useSongListFilter(songList.data);
+  const { filters, filteredList, prefilteredList, setFilters } = useSongListFilter(songList.data);
 
   const groupedSongList = useMemo(() => {
     if (filteredList.length === 0) return [];
@@ -200,7 +167,6 @@ export default function useSongList() {
     prefilteredList,
     groupedSongList,
     songList: filteredList,
-    filtersData,
     filters,
     setFilters,
     isLoading: songList.isLoading,

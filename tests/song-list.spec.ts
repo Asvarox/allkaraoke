@@ -203,6 +203,12 @@ test('Filters - Quick Search', async ({ page }) => {
   await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
   await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
   await expect(page.getByTestId('filters-search')).not.toBeVisible();
+
+  // Search in a playlist
+  await page.getByTestId('playlist-English').click();
+  await page.keyboard.type('multitrack');
+  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
 });
 
 test('Song List - Random song', async ({ page }) => {

@@ -8,7 +8,7 @@ import { randomInt } from 'utils/randomValue';
 import startViewTransition from 'utils/startViewTransition';
 
 export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
-  const { songList, prefilteredList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
+  const { songList, prefilteredList, groupedSongList, setFilters, filters, isLoading } = useSongList();
   const navigate = useSmoothNavigate();
   const [keyboardControl, setKeyboardControl] = useState(true);
 
@@ -47,7 +47,10 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
   useEffect(() => {
     if (preselected && songList.length && songList[focusedSong]) {
-      navigate(`game/${encodeURIComponent(songList[focusedSong].id)}`, { replace: true, smooth: false });
+      navigate(`game/${encodeURIComponent(songList[focusedSong].id)}${window.location.search}`, {
+        replace: true,
+        smooth: false,
+      });
     }
   }, [preselected, focusedSong, songList]);
 
@@ -62,7 +65,6 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     keyboardControl,
     songPreview,
     songList: songList ?? [],
-    filtersData,
     filters,
     setFilters,
     showFilters,
