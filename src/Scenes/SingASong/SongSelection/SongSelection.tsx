@@ -88,67 +88,67 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
-  if (!groupedSongList || !width) return <>Loading</>;
-
-  if (isLoading) {
-    return (
-      <LoaderContainer>
-        <Loader size="15em" color="secondary" />
-      </LoaderContainer>
-    );
-  }
+  const loading = isLoading || !groupedSongList || !width;
 
   return (
     <Container songsPerRow={songsPerRow}>
-      {songPreview && <SongImageBackground videoId={songPreview.video} />}
-      <AdditionalListControls
-        setFilters={setFilters}
-        filters={filters}
-        onRandom={randomSong}
-        keyboardControl={keyboardControl}
-      />
-      <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
-        {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
-        {songPreview && (
-          <SongPreview
-            songPreview={songPreview}
-            onPlay={onSongSelected}
-            keyboardControl={!keyboardControl}
-            onExitKeyboardControl={() => setKeyboardControl(true)}
-            top={previewTop}
-            left={previewLeft}
-            width={previewWidth}
-            height={previewHeight}
-            focusEffect={!showFilters}
+      {loading ? (
+        <LoaderContainer>
+          <Loader size="15em" color="secondary" />
+        </LoaderContainer>
+      ) : (
+        <>
+          {songPreview && <SongImageBackground videoId={songPreview.video} />}
+          <AdditionalListControls
+            setFilters={setFilters}
+            filters={filters}
+            onRandom={randomSong}
+            keyboardControl={keyboardControl}
           />
-        )}
-        {groupedSongList.map((group) => (
-          <SongsGroupContainer
-            {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
-            key={group.letter}
-            data-group-letter={group.letter}
-            highlight={group.letter === 'New'}>
-            <SongsGroupHeader>{group.letter}</SongsGroupHeader>
-            <SongsGroup>
-              {group.songs.map(({ song, index }) => (
-                <SongListEntry
-                  key={song.id}
-                  song={song}
-                  handleClick={focusedSong === index ? expandSong : moveToSong}
-                  focused={!showFilters && keyboardControl && index === focusedSong}
-                  index={index}
-                  data-index={index}
-                  data-focused={!showFilters && keyboardControl && index === focusedSong}
-                  data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
-                />
-              ))}
-            </SongsGroup>
-          </SongsGroupContainer>
-        ))}
-        <AddSongs>
-          Missing a song? Try <a href="convert">adding one</a> yourself!
-        </AddSongs>
-      </SongListContainer>
+          <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
+            {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
+            {songPreview && (
+              <SongPreview
+                songPreview={songPreview}
+                onPlay={onSongSelected}
+                keyboardControl={!keyboardControl}
+                onExitKeyboardControl={() => setKeyboardControl(true)}
+                top={previewTop}
+                left={previewLeft}
+                width={previewWidth}
+                height={previewHeight}
+                focusEffect={!showFilters}
+              />
+            )}
+            {groupedSongList.map((group) => (
+              <SongsGroupContainer
+                {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
+                key={group.letter}
+                data-group-letter={group.letter}
+                highlight={group.letter === 'New'}>
+                <SongsGroupHeader>{group.letter}</SongsGroupHeader>
+                <SongsGroup>
+                  {group.songs.map(({ song, index }) => (
+                    <SongListEntry
+                      key={song.id}
+                      song={song}
+                      handleClick={focusedSong === index ? expandSong : moveToSong}
+                      focused={!showFilters && keyboardControl && index === focusedSong}
+                      index={index}
+                      data-index={index}
+                      data-focused={!showFilters && keyboardControl && index === focusedSong}
+                      data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
+                    />
+                  ))}
+                </SongsGroup>
+              </SongsGroupContainer>
+            ))}
+            <AddSongs>
+              Missing a song? Try <a href="convert">adding one</a> yourself!
+            </AddSongs>
+          </SongListContainer>
+        </>
+      )}
       <Playlists
         setFilters={setFilters}
         active={showFilters}

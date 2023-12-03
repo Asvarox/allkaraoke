@@ -32,10 +32,12 @@ const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
           ),
           filters: { edition: 'christmas' },
         },
-        {
-          name: songLanguages[0].name,
-          filters: { language: songLanguages[0].name },
-        } as PlaylistEntry,
+        songLanguages[0]
+          ? ({
+              name: songLanguages[0].name,
+              filters: { language: songLanguages[0].name },
+            } as PlaylistEntry)
+          : null,
         songLanguages[1]
           ? {
               name: songLanguages[1].name,

@@ -221,6 +221,15 @@ test('Filters - Quick Search', async ({ page }) => {
     await page.getByTestId('search-song-button').click();
     await expect(page.getByTestId('filters-search')).toBeFocused();
   });
+
+  await test.step('Search button should close search when clicked with search opened', async () => {
+    // need to fix that - clicking the button doesn't close the search when it's empty
+    // await page.getByTestId('search-song-button').click();
+    // await expect(page.getByTestId('filters-search')).not.toBeVisible();
+    await page.keyboard.type('multitrack');
+    await page.getByTestId('search-song-button').click();
+    await expect(page.getByTestId('filters-search')).not.toBeVisible();
+  });
 });
 
 test('Song List - Random song', async ({ page }) => {
@@ -239,6 +248,13 @@ test('Song List - Random song', async ({ page }) => {
     await page.getByTestId('song-e2e-multitrack-polish-1994').click();
     await expect(page.getByTestId('song-preview')).not.toHaveAttribute('data-song', 'zzz-last-polish-1994');
     await page.keyboard.press('Shift+R');
+    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'zzz-last-polish-1994');
+  });
+
+  await test.step('Random song is selected on random song button click', async () => {
+    await page.getByTestId('song-e2e-multitrack-polish-1994').click();
+    await expect(page.getByTestId('song-preview')).not.toHaveAttribute('data-song', 'zzz-last-polish-1994');
+    await page.getByTestId('random-song-button').click();
     await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'zzz-last-polish-1994');
   });
 });

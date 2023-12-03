@@ -99,6 +99,7 @@ export const useSongListFilter = (list: SongPreview[]) => {
 
   const [filters, setFilters] = useState<AppliedFilters>({});
   const deferredFilters = useDeferredValue(filters);
+  console.log(filters, list.length);
 
   const prefilteredList = useMemo(
     () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
@@ -126,7 +127,7 @@ export default function useSongList() {
 
     const groups: SongGroup[] = [];
 
-    if (!filters.search) {
+    if (Object.keys(filters).length === 0) {
       const newSongs = filteredList.filter((song) => song.isNew);
 
       if (newSongs.length) {

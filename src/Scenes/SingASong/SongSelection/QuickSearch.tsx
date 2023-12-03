@@ -79,7 +79,7 @@ export default function QuickSearch({ setFilters, filters, keyboardControl, visi
   );
 
   useEffect(() => {
-    // Navigating to another playlist will blur the search input and clear the search - this hide the input
+    // Navigating to another playlist will blur the search input and clear the search - this hides the input
     if (!isFocused) {
       setVisible(!!filters.search);
     }
