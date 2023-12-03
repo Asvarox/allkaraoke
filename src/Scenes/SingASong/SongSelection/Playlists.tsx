@@ -1,71 +1,20 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { focusedStatic, typography } from 'Elements/cssMixins';
-import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
-import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
-import dayjs from 'dayjs';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { SongPreview } from 'interfaces';
-import { Dispatch, ReactNode, SetStateAction, useEffect, useMemo } from 'react';
-
-interface PlaylistEntry {
-  name: string;
-  display?: ReactNode;
-  filters: AppliedFilters;
-}
-
-const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
-  const songLanguages = useLanguageList(songs);
-  return useMemo(
-    () =>
-      [
-        { name: 'All', filters: {} },
-        {
-          name: 'Christmas',
-          display: (
-            <>
-              <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
-              <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
-            </>
-          ),
-          filters: { edition: 'christmas' },
-        },
-        songLanguages[0]
-          ? ({
-              name: songLanguages[0].name,
-              filters: { language: songLanguages[0].name },
-            } as PlaylistEntry)
-          : null,
-        songLanguages[1]
-          ? {
-              name: songLanguages[1].name,
-              filters: { language: songLanguages[1].name },
-            }
-          : null,
-        // { name: "Classics", filters: { yearBefore: 1995 } },
-        // { name: "Modern", filters: { yearAfter: 1995 } },
-        { name: 'Duets', filters: { duet: true } },
-        {
-          name: 'New',
-          filters: { updatedAfter: dayjs().subtract(31, 'days').toISOString() },
-        },
-      ].filter((playlist): playlist is PlaylistEntry => playlist !== null),
-    [songLanguages],
-  );
-};
+import { Dispatch, SetStateAction, useEffect } from 'react';
+import { PlaylistEntry } from 'Scenes/SingASong/SongSelection/Hooks/usePlaylists';
 
 interface Props {
-  prefilteredList: SongPreview[];
-  setFilters: Dispatch<SetStateAction<AppliedFilters>>;
+  selectedPlaylist: string | null;
+  setSelectedPlaylist: Dispatch<SetStateAction<string | null>>;
+  playlists: PlaylistEntry[];
   closePlaylist: (leavingKey: 'left' | 'right') => void;
   active: boolean;
 }
 
-export default function Playlists({ setFilters, active, closePlaylist, prefilteredList }: Props) {
-  const playlists = usePlaylists(prefilteredList);
-
+export default function Playlists({ active, closePlaylist, playlists, selectedPlaylist, setSelectedPlaylist }: Props) {
   const { register, focused, focusElement } = useKeyboardNav({
     enabled: active,
     additionalHelp: {
@@ -95,8 +44,10 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
       const playlist = playlists.find((list) => `playlist-${list.name}` === focused);
       if (playlist) {
         /// push query param to url containing playlist name
-        window.history.pushState({}, '', `?playlist=${playlist.name}`);
-        setFilters(playlist.filters);
+        const url = new URL(window.location.href);
+        url.searchParams.set('playlist', playlist.name);
+        window.history.pushState(null, '', url.toString());
+        setSelectedPlaylist(playlist.name);
       }
     }
   }, [focused, playlists]);
@@ -108,7 +59,12 @@ export default function Playlists({ setFilters, active, closePlaylist, prefilter
           key={playlist.name}
           data-selected={`playlist-${playlist.name}` === focused}
           active={active}
-          {...register(`playlist-${playlist.name}`, () => focusElement(`playlist-${playlist.name}`))}
+          {...register(
+            `playlist-${playlist.name}`,
+            () => focusElement(`playlist-${playlist.name}`),
+            undefined,
+            playlist.name === selectedPlaylist,
+          )}
           {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>
           {playlist.display ?? playlist.name}
         </Playlist>

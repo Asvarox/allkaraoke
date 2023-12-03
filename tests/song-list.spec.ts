@@ -255,6 +255,7 @@ test('Song List - Random song', async ({ page }) => {
     await page.getByTestId('song-e2e-multitrack-polish-1994').click();
     await expect(page.getByTestId('song-preview')).not.toHaveAttribute('data-song', 'zzz-last-polish-1994');
     await page.getByTestId('random-song-button').click();
-    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'zzz-last-polish-1994');
+    // Second random selects next-to-last song as there's mechanism that prevents selecting the same song twice
+    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'e2e-single-english-1995');
   });
 });

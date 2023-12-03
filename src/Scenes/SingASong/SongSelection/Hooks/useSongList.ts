@@ -1,9 +1,10 @@
 import { captureException } from '@sentry/react';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { usePlaylists } from 'Scenes/SingASong/SongSelection/Hooks/usePlaylists';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import { useDeferredValue, useMemo, useState } from 'react';
+import { useDeferredValue, useLayoutEffect, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
 export interface SongGroup {
@@ -21,17 +22,6 @@ export interface AppliedFilters {
   edition?: string;
   updatedAfter?: string;
   duet?: boolean | null;
-}
-
-export function isEmptyFilters(filters: AppliedFilters) {
-  return (
-    (!filters.language || filters.language === '') &&
-    (!filters.search || filters.search === '') &&
-    (!filters.edition || filters.edition === '') &&
-    (filters.duet === undefined || filters.duet === null) &&
-    !filters.yearBefore &&
-    !filters.yearAfter
-  );
 }
 
 type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
@@ -96,15 +86,26 @@ const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): Song
 
 export const useSongListFilter = (list: SongPreview[]) => {
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
-
-  const [filters, setFilters] = useState<AppliedFilters>({});
-  const deferredFilters = useDeferredValue(filters);
-  console.log(filters, list.length);
-
   const prefilteredList = useMemo(
     () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
     [list, excludedLanguages],
   );
+
+  const playlists = usePlaylists(prefilteredList);
+  const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
+    new URLSearchParams(window.location.search).get('playlist') ?? null,
+  );
+
+  const [filters, setFilters] = useState<AppliedFilters>(
+    playlists.find((p) => p.name === selectedPlaylist)?.filters ?? {},
+  );
+
+  useLayoutEffect(() => {
+    setFilters(playlists.find((p) => p.name === selectedPlaylist)?.filters ?? {});
+  }, [playlists, selectedPlaylist]);
+
+  const deferredFilters = useDeferredValue(filters);
+
   const filteredList = useMemo(
     () =>
       applyFilters(list, {
@@ -114,20 +115,25 @@ export const useSongListFilter = (list: SongPreview[]) => {
     [list, deferredFilters, excludedLanguages],
   );
 
-  return { filters, filteredList, prefilteredList, setFilters };
+  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists };
 };
 
 export default function useSongList() {
   const songList = useSongIndex();
 
-  const { filters, filteredList, prefilteredList, setFilters } = useSongListFilter(songList.data);
+  const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists } = useSongListFilter(
+    songList.data,
+  );
 
   const groupedSongList = useMemo(() => {
     if (filteredList.length === 0) return [];
 
     const groups: SongGroup[] = [];
 
-    if (Object.keys(filters).length === 0) {
+    // a hack for !filters.edition - due to a bug where selecting a song will make it look selected for both
+    // new and regular entry in the list. On Christmas, where most of the songs are new, it looks weird.
+    // When the bug is fixed, this can be removed.
+    if (!filters.search && !filters.edition) {
       const newSongs = filteredList.filter((song) => song.isNew);
 
       if (newSongs.length) {
@@ -165,11 +171,13 @@ export default function useSongList() {
   }, [filteredList, filters.search]);
 
   return {
-    prefilteredList,
     groupedSongList,
     songList: filteredList,
     filters,
     setFilters,
     isLoading: songList.isLoading,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
   };
 }

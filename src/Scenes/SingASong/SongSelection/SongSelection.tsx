@@ -51,9 +51,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     filters,
     setShowFilters,
     showFilters,
-    prefilteredList,
     isLoading,
     randomSong,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
   } = useSongSelection(preselectedSong, songsPerRow);
 
   const list = useRef<HTMLDivElement | null>(null);
@@ -150,10 +152,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         </>
       )}
       <Playlists
-        setFilters={setFilters}
+        selectedPlaylist={selectedPlaylist}
+        setSelectedPlaylist={setSelectedPlaylist}
+        playlists={playlists}
         active={showFilters}
         closePlaylist={setShowFilters}
-        prefilteredList={prefilteredList}
       />
     </Container>
   );

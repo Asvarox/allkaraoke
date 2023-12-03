@@ -8,7 +8,16 @@ import { randomInt } from 'utils/randomValue';
 import startViewTransition from 'utils/startViewTransition';
 
 export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
-  const { songList, prefilteredList, groupedSongList, setFilters, filters, isLoading } = useSongList();
+  const {
+    songList,
+    groupedSongList,
+    setFilters,
+    filters,
+    isLoading,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
+  } = useSongList();
   const navigate = useSmoothNavigate();
   const [keyboardControl, setKeyboardControl] = useState(true);
 
@@ -57,7 +66,6 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
   const songPreview = songList?.[focusedSong];
   return {
-    prefilteredList,
     groupedSongList,
     focusedSong,
     focusedGroup,
@@ -72,5 +80,8 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     setShowFilters,
     isLoading,
     randomSong,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
   };
 }
