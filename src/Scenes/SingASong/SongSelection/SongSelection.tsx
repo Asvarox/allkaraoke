@@ -2,25 +2,20 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Loader from 'Elements/Loader';
 import { focused, typography } from 'Elements/cssMixins';
-import events from 'GameEvents/GameEvents';
-import { useEventEffect } from 'GameEvents/hooks';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import AdditionalListControls from 'Scenes/SingASong/SongSelection/AdditionalListControls';
 import BackgroundThumbnail from 'Scenes/SingASong/SongSelection/BackgroundThumbnail';
 import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
 import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
-import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
-import SelectRandomTip from 'Scenes/SingASong/SongSelection/SelectRandomTip';
 import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
 import SongPreview from 'Scenes/SingASong/SongSelection/SongPreview';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useBlockScroll from 'hooks/useBlockScroll';
-import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
@@ -58,30 +53,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     showFilters,
     prefilteredList,
     isLoading,
+    randomSong,
   } = useSongSelection(preselectedSong, songsPerRow);
-
-  const onSearchSong = (e: KeyboardEvent) => {
-    e.stopPropagation();
-    e.preventDefault();
-
-    setFilters((current) => ({
-      ...current,
-      search: e.key,
-    }));
-  };
-  useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, {
-    enabled: !filters.search && keyboardControl,
-  });
-
-  const onRemoteSearch = useCallback(
-    (search: string) => {
-      if (keyboardControl) {
-        setFilters((current) => ({ search, ...current }));
-      }
-    },
-    [keyboardControl],
-  );
-  useEventEffect(events.remoteSongSearch, onRemoteSearch);
 
   const list = useRef<HTMLDivElement | null>(null);
   const { width, handleResize } = useViewportSize();
@@ -128,11 +101,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   return (
     <Container songsPerRow={songsPerRow}>
       {songPreview && <SongImageBackground videoId={songPreview.video} />}
-      {filters.search ? (
-        <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
-      ) : (
-        <SelectRandomTip keyboardControl={keyboardControl} />
-      )}
+      <AdditionalListControls
+        setFilters={setFilters}
+        filters={filters}
+        onRandom={randomSong}
+        keyboardControl={keyboardControl}
+      />
       <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
         {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
         {songPreview && (

@@ -47,7 +47,7 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     });
   },
   excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
-    if (languages.length === 0 || clearString(appliedFilters?.search ?? '').length) return songList;
+    if (languages.length === 0 || clearString(appliedFilters?.search ?? '').length > 2) return songList;
 
     return songList.filter((song) => {
       const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
@@ -58,7 +58,7 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   search: (songList, search: string) => {
     const cleanSearch = clearString(search);
 
-    return cleanSearch.length ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
+    return cleanSearch.length > 2 ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
   },
   duet: (songList, duet: boolean | null) => {
     if (duet === null) return songList;
@@ -75,10 +75,10 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
     return songList.filter((song) => Number(song.year) >= yearAfter);
   },
-  edition: (songList, genre: string) => {
-    const cleanSearch = clearString(genre);
+  edition: (songList, edition: string) => {
+    const cleanEdition = clearString(edition);
 
-    return cleanSearch.length ? songList.filter((song) => clearString(song.edition ?? '') === genre) : songList;
+    return cleanEdition.length ? songList.filter((song) => clearString(song.edition ?? '') === edition) : songList;
   },
   updatedAfter: (songList, after: string) => {
     if (!after) return songList;

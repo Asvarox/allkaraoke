@@ -32,7 +32,12 @@ import Toolbar from 'Toolbar/Toolbar';
 import { Suspense, lazy, useEffect, useMemo } from 'react';
 
 const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
-const LazyGame = lazy(() => import('./Scenes/Game/Game'));
+
+// This is a hack to preload the game scene so that it's ready when the user clicks on the game button
+// without increasing initial load time. Vite doesn't support prefetch yet
+// https://github.com/vitejs/vite/issues/10600
+const prefetchGame = import('./Scenes/Game/Game');
+const LazyGame = lazy(() => prefetchGame);
 
 function App() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);

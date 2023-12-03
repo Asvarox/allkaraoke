@@ -198,17 +198,29 @@ test('Filters - Quick Search', async ({ page }) => {
   await page.getByTestId('filters-search').clear();
   // Validate that na additional backspace doesn't close the song list
   await page.keyboard.press('Backspace');
+  await page.keyboard.press('Backspace');
 
   // The polish song is not visible anymore
   await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
   await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
   await expect(page.getByTestId('filters-search')).not.toBeVisible();
 
-  // Search in a playlist
-  await page.getByTestId('playlist-English').click();
-  await page.keyboard.type('multitrack');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Search should be scoped to a playlist', async () => {
+    await page.getByTestId('playlist-English').click();
+    await page.keyboard.type('multitrack');
+    await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+    await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  });
+
+  await test.step('Switching to another playlist clears the search', async () => {
+    await page.getByTestId('playlist-All').click();
+    await expect(page.getByTestId('filters-search')).not.toBeVisible();
+  });
+
+  await test.step('Search button should open and focus the search', async () => {
+    await page.getByTestId('search-song-button').click();
+    await expect(page.getByTestId('filters-search')).toBeFocused();
+  });
 });
 
 test('Song List - Random song', async ({ page }) => {

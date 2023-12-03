@@ -5,7 +5,7 @@ import { createContext, FunctionComponent, PropsWithChildren, useEffect, useStat
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import KeyboardHelpView from './HelpView';
 
-type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR';
+type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR' | 'alphanumeric';
 
 type remoteActions = 'search';
 

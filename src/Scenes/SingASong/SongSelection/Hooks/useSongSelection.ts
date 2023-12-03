@@ -21,14 +21,15 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     woosh.play();
   };
 
-  const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(
-    keyboardControl,
-    groupedSongList,
-    () => handleKeyboardControl(false),
-    songList.length,
-    filters,
-    songsPerRow,
-  );
+  const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters, randomSong] =
+    useSongSelectionKeyboardNavigation(
+      keyboardControl,
+      groupedSongList,
+      () => handleKeyboardControl(false),
+      songList.length,
+      filters,
+      songsPerRow,
+    );
 
   const [preselected, setPreselected] = useState(false);
   useEffect(() => {
@@ -70,5 +71,6 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     showFilters,
     setShowFilters,
     isLoading,
+    randomSong,
   };
 }

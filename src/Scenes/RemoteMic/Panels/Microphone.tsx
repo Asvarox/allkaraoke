@@ -10,6 +10,7 @@ import MicPreview from 'Scenes/RemoteMic/Panels/Microphone/MicPreview';
 import Ping from 'Scenes/RemoteMic/Panels/Microphone/Ping';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
+import { AutoEnableFullscreenSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import UserMediaEnabled from 'UserMedia/UserMediaEnabled';
 import { useState } from 'react';
 import isDev from 'utils/isDev';
@@ -35,12 +36,13 @@ function Microphone({
 }: Props) {
   const permissions = usePermissions();
   const [searchActive, setSearchActive] = useState(false);
+  const [autoEnableFullscreen] = useSettingValue(AutoEnableFullscreenSetting);
 
   const onConnect = async () => {
     setIsKeepAwakeOn(true);
 
     try {
-      if (!isDev()) {
+      if (!isDev() && autoEnableFullscreen) {
         await document.body.requestFullscreen();
         window.screen.orientation.unlock();
         await window.screen.orientation.lock?.('portrait');

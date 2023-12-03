@@ -28,6 +28,10 @@ export const Button = styled.button<{ focused?: boolean }>`
     :hover {
       ${focused};
     }
+
+    :active {
+      background: ${styles.colors.text.active};
+    }
   }
 `;
 // Disable for E2E as they wait for animation to finish (and since it's infinite they timeout)
