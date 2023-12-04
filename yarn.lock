@@ -11875,15 +11875,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msgpackr@npm:^1.9.9":
-  version: 1.9.9
-  resolution: "msgpackr@npm:1.9.9"
+"msgpackr@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "msgpackr@npm:1.10.0"
   dependencies:
     msgpackr-extract: "npm:^3.0.2"
   dependenciesMeta:
     msgpackr-extract:
       optional: true
-  checksum: 384d55e8d9ce5be19f2e4369c1bc185b2b0f56e140c5028b78a1ca7d30d8f32efe35f08b76b1c9a3a0dec2589a465fdae036486126b6e106f9ee63c9ec399873
+  checksum: 2f4330a5ce34fafaeddcb8dd1e830ba36b0943d8aad3d903fe68a220cd1e52603e569780b339e91802d7b1b636f00b9a3ea3ee49d123e591c0d15ee1c25eba8b
   languageName: node
   linkType: hard
 
@@ -12287,7 +12287,7 @@ __metadata:
     lodash: "npm:^4.17.21"
     lodash-es: "npm:^4.17.21"
     material-react-table: "npm:^2.0.4"
-    msgpackr: "npm:^1.9.9"
+    msgpackr: "npm:^1.10.0"
     musicbrainz-api: "npm:^0.11.0"
     node-fetch: "npm:^3.3.2"
     peer: "npm:^1.0.1"
