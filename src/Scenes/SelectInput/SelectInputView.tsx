@@ -27,7 +27,10 @@ const LAST_SELECTED_KEY = 'Previously selected input type';
 const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
 function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText, smooth = true }: Props) {
-  const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference>>(null);
+  const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
+  const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference>>(
+    storedPreference === 'skip' ? null : storedPreference,
+  );
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
@@ -37,8 +40,6 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
       !wasMonitoring && InputManager.stopMonitoring();
     };
   }, []);
-
-  const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
 
   const storePreference = (...args: Parameters<typeof setPreference>) => {
     if (smooth) {

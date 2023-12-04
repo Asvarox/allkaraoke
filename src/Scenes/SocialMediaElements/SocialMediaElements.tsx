@@ -50,7 +50,20 @@ const BackgroundPhoto = styled.div`
   align-items: center;
   justify-content: center;
   div {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
+
+    img:nth-of-type(1) {
+      width: 800px;
+      height: 300px;
+      object-fit: contain;
+    }
+
+    img:nth-of-type(2) {
+      transform: translate(-0px, 80px);
+      width: 180px;
+      height: 80px;
+      object-fit: contain;
+    }
   }
 `;
 

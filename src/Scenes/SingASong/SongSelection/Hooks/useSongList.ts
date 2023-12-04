@@ -4,7 +4,7 @@ import { usePlaylists } from 'Scenes/SingASong/SongSelection/Hooks/usePlaylists'
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import { useDeferredValue, useLayoutEffect, useMemo, useState } from 'react';
+import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
 export interface SongGroup {
@@ -96,23 +96,24 @@ export const useSongListFilter = (list: SongPreview[]) => {
     new URLSearchParams(window.location.search).get('playlist') ?? null,
   );
 
-  const [filters, setFilters] = useState<AppliedFilters>(
-    playlists.find((p) => p.name === selectedPlaylist)?.filters ?? {},
-  );
+  const [filters, setFilters] = useState<AppliedFilters>({});
 
-  useLayoutEffect(() => {
-    setFilters(playlists.find((p) => p.name === selectedPlaylist)?.filters ?? {});
-  }, [playlists, selectedPlaylist]);
+  useEffect(() => {
+    setFilters({});
+  }, [selectedPlaylist]);
 
   const deferredFilters = useDeferredValue(filters);
+
+  const playlistFilters = playlists.find((p) => p.name === selectedPlaylist)?.filters ?? null;
 
   const filteredList = useMemo(
     () =>
       applyFilters(list, {
+        ...playlistFilters,
         ...deferredFilters,
         excludeLanguages: excludedLanguages ?? [],
       }),
-    [list, deferredFilters, excludedLanguages],
+    [list, deferredFilters, excludedLanguages, playlistFilters],
   );
 
   return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists };

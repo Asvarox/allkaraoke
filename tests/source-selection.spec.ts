@@ -41,7 +41,6 @@ test('Source selection in sing settings', async ({ page, context }) => {
 
   // Make sure the input isn't monitored anymore if it's not in use
   await page.getByTestId('select-inputs-button').click();
-  await page.getByTestId('advanced').click();
   await page.getByTestId('player-0-source').click();
   await expect(remoteMic.getByTestId('monitoring-state')).toContainText('off', {
     ignoreCase: true,
@@ -72,7 +71,6 @@ test('Source selection in in-game menu', async ({ page, context }) => {
 
   // Make sure the input isn't monitored anymore if it's not in use
   await page.getByTestId('input-settings').click();
-  await page.getByTestId('advanced').click();
   await page.getByTestId('player-0-source').click();
   await page.getByTestId('save-button').click();
   await expectMonitoringToBeEnabled(page);
