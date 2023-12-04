@@ -1,3 +1,4 @@
+import christmasBackgroundMusicSound from 'assets/2020-12-16_-_Christmas_Rock_-_www.FesliyanStudios.com_Steve_Oxen.mp3';
 import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
 import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.mp3';
 import wooshSound from 'assets/60013__qubodup__whoosh.mp3';
@@ -22,9 +23,9 @@ class Sound {
     this.sound.loop = options.loop ?? false;
   }
 
-  public play = async () => {
+  public play = async (parallel = true) => {
     try {
-      if (this.playing()) {
+      if (parallel && this.playing()) {
         const clonedNode = this.sound.cloneNode(true) as HTMLAudioElement;
         await clonedNode.play();
         clonedNode.remove();
@@ -83,5 +84,19 @@ const classicBackgroundMusic = new Sound({
   volume: 0.4,
   loop: true,
 });
+const christmasBackgroundMusic = new Sound({
+  src: christmasBackgroundMusicSound,
+  volume: 0.25,
+  loop: true,
+});
 
-export { backgroundMusic, classicBackgroundMusic, menuBack, menuEnter, menuNavigate, waitFinished, woosh };
+export {
+  backgroundMusic,
+  christmasBackgroundMusic,
+  classicBackgroundMusic,
+  menuBack,
+  menuEnter,
+  menuNavigate,
+  waitFinished,
+  woosh,
+};

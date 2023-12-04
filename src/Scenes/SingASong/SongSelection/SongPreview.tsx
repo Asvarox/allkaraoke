@@ -1,7 +1,8 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { useBackground } from 'Elements/LayoutWithBackground';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { ChristmasModeSetting, GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import {
   ExpandedData,
   FinalSongCard,
@@ -9,6 +10,7 @@ import {
   SongListEntryDetailsTitle,
 } from 'Scenes/SingASong/SongSelection/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/SongSettings';
+import isChristmasSong from 'Songs/utils/isChristmasSong';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview } from 'interfaces';
@@ -28,6 +30,26 @@ interface Props {
 
 const PREVIEW_LENGTH = 30;
 
+const useChristmasSongTheme = (songPreview: SongPreview) => {
+  const [christmasMode, setChristmasMode] = useSettingValue(ChristmasModeSetting);
+  const christmasSong = isChristmasSong(songPreview);
+  useBackground(true, christmasSong);
+
+  useEffect(() => {
+    if (christmasSong) {
+      setChristmasMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!christmasMode && christmasSong) {
+      setChristmasMode(true);
+    } else if (christmasMode && !christmasSong) {
+      setChristmasMode(false);
+    }
+  }, [christmasMode, songPreview]);
+};
+
 export default function SongPreviewComponent({
   songPreview,
   top,
@@ -42,6 +64,7 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
+  useChristmasSongTheme(songPreview);
 
   const expanded = keyboardControl;
 

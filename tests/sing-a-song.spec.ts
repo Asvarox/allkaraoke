@@ -29,6 +29,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await expect(page.getByTestId('song-e2e-multitrack-polish-1994').getByTestId('multitrack-indicator')).toBeVisible();
   await expect(page.getByTestId('song-e2e-single-english-1995').getByTestId('multitrack-indicator')).not.toBeVisible();
 
+  await page.getByTestId('playlist-Polish').click();
+
   await page.keyboard.press('Enter'); // focus
   await expect(page.getByTestId('next-step-button')).toBeVisible();
 
@@ -119,6 +121,10 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await expect(
     page.locator('[data-test="song-e2e-multitrack-polish-1994"] >> [data-test="song-stat-indicator"]'),
   ).toContainText('Played today', { ignoreCase: true });
+
+  // Check if the playlist is still selected
+  await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-selected', 'true');
+  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
 
   // Check next song player names
   await page.keyboard.press('Enter'); // enter first song

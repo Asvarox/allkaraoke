@@ -1,18 +1,29 @@
 import styled from '@emotion/styled';
 import { Input } from 'Elements/Input';
-import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
-import { useEffect, useRef, useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
+import events from 'GameEvents/GameEvents';
+import { useEventEffect } from 'GameEvents/hooks';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
+import { Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 
 interface Props {
-  onSongFiltered: (filters: AppliedFilters) => void;
+  setFilters: Dispatch<SetStateAction<AppliedFilters>>;
+  setVisible: Dispatch<SetStateAction<boolean>>;
   filters: AppliedFilters;
-  showFilters: boolean;
+  keyboardControl: boolean;
+  visible: boolean;
 }
-export default function QuickSearch({ onSongFiltered, filters }: Props) {
+export default function QuickSearch({ setFilters, filters, keyboardControl, visible, setVisible }: Props) {
   const searchInput = useRef<HTMLInputElement | null>(null);
   const [isFocused, setIsFocused] = useState(false);
+
+  const setSearch = (value: string) => {
+    setFilters((current) => ({
+      ...current,
+      search: value,
+    }));
+  };
 
   const onLeave = () => {
     searchInput.current?.blur();
@@ -20,48 +31,63 @@ export default function QuickSearch({ onSongFiltered, filters }: Props) {
 
   useHotkeys('down', onLeave, { enabled: isFocused, enableOnTags: ['INPUT'] });
 
-  const focusSearch = (key?: string) => {
-    const searchLength = filters.search?.length ?? 0;
-    if (searchLength > 1) {
-      onSongFiltered({
-        ...filters,
-        search: ' ',
-      });
-    } else if (searchLength === 0 && key) {
-      onSongFiltered({
-        ...filters,
-        search: key,
-      });
-    }
+  const onSearchSong = (e: KeyboardEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
 
-    searchInput.current?.focus();
+    setSearch(e.key);
   };
 
   useHotkeys(
     REGULAR_ALPHA_CHARS,
     (e) => {
-      focusSearch(e.key);
+      onSearchSong(e);
+      setVisible(true);
     },
-    { enabled: !isFocused },
+    {
+      enabled: !filters.search && keyboardControl,
+    },
+  );
+
+  const onRemoteSearch = useCallback(
+    (search: string) => {
+      if (keyboardControl) {
+        setSearch(search);
+      }
+    },
+    [keyboardControl],
+  );
+  useEventEffect(events.remoteSongSearch, onRemoteSearch);
+
+  useHotkeys(
+    REGULAR_ALPHA_CHARS,
+    (e) => {
+      onSearchSong(e);
+      searchInput.current?.focus();
+    },
+    { enabled: !isFocused && keyboardControl },
+    [filters.search],
   );
 
   useHotkeys(
     'Backspace',
     (e) => {
-      focusSearch();
+      searchInput.current?.focus();
     },
-    { enabled: !isFocused },
+    { enabled: !isFocused && keyboardControl },
+    [filters.search],
   );
-  const setSearch = (value: string) => {
-    onSongFiltered({
-      ...filters,
-      search: value.trim(),
-    });
-  };
 
   useEffect(() => {
-    searchInput.current?.focus();
-  }, [searchInput]);
+    // Navigating to another playlist will blur the search input and clear the search - this hides the input
+    if (!isFocused) {
+      setVisible(!!filters.search);
+    }
+  }, [isFocused, filters.search, setVisible]);
+
+  if (!filters.search && !visible) {
+    return null;
+  }
 
   return (
     <Container data-test="song-list-search">
@@ -75,7 +101,14 @@ export default function QuickSearch({ onSongFiltered, filters }: Props) {
           <Input
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
+            onKeyDown={(e) => {
+              // Hide the search input when the user presses backspace and the search is empty
+              if (e.key === 'Backspace' && filters.search?.length === 0) {
+                setVisible(false);
+              }
+            }}
             focused={isFocused}
+            autoFocus
             label="Search"
             value={filters.search ?? ''}
             onChange={setSearch}

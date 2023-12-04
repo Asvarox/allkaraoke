@@ -1,0 +1,182 @@
+#ID:bing-crosby-white-christmas
+#ARTIST:Bing Crosby
+#ARTISTORIGIN:US
+#TITLE:White Christmas
+#CREATOR:Canni
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#BPM:369
+#REALBPM:90
+#YEAR:1942
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=201
+#VIDEOID:v5ryZdpEHqM
+#VIDEOGAP:0
+#VOLUME:1
+#GENRE:None
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:13.717Z
+#EDITION:Christmas
+#GAP:10653,739837398374
+: 25 68 1 I’m 
+: 95 8 2 drea
+: 105 16 1 ming 
+: 139 6 0 of 
+: 147 4 1 a 
+: 153 58 2 white 
+: 213 8 3 Christ
+: 223 48 4 mas 
+- 271 278
+- 278
+: 303 10 6 Just 
+: 315 14 8 like 
+: 331 4 9 the 
+* 337 34 11 ones 
+: 373 10 9 I 
+: 385 12 8 used 
+: 399 2 6 to 
+: 403 72 4 know 
+- 475 488
+- 488
+: 513 8 -3 Where 
+: 523 6 -1 the 
+: 531 30 1 tree 
+: 563 30 1 tops 
+: 597 4 1 glis
+: 603 26 6 ten 
+- 629
+: 649 14 4 And 
+: 665 10 -3 child
+: 677 44 -3 ren 
+: 723 4 -3 lis
+: 729 26 4 ten 
+- 755
+: 775 6 2 To 
+: 783 50 1 hear 
+: 853 10 1 slei
+: 865 4 2 ~gh 
+: 871 20 1 bells 
+: 893 6 -1 in 
+: 901 8 -3 the 
+: 911 86 -1 snow. 
+- 997 1010
+- 1010
+: 1035 64 1 I’m 
+: 1101 10 2 drea
+: 1113 24 1 ming 
+: 1157 4 0 of 
+: 1163 4 1 a 
+: 1169 56 2 white 
+: 1227 8 3 Christ
+: 1237 44 4 mas 
+- 1281 1292
+- 1292
+: 1317 8 6 With 
+: 1327 14 8 eve
+: 1343 10 9 ry 
+: 1355 8 11 Christ
+: 1365 12 9 mas 
+: 1379 28 8 card 
+: 1409 10 6 I 
+: 1421 78 4 write 
+- 1499
+: 1515 14 -3 May 
+: 1531 6 -1 your 
+: 1539 44 1 days 
+: 1605 4 1 be 
+: 1611 10 1 mer
+: 1623 34 6 ry 
+: 1659 14 4 and 
+* 1675 98 9 bright 
+- 1773
+: 1785 10 -3 And 
+: 1797 8 -1 may 
+: 1807 32 1 all 
+: 1841 30 1 your 
+: 1875 22 6 Christ
+: 1899 6 -4 ma
+: 1907 32 -4 ses 
+: 1941 4 -4 be 
+: 1947 68 -3 white. 
+- 2015 2052
+- 2052
+: 2077 60 1 I’m 
+: 2139 16 2 drea
+: 2157 14 1 ming 
+: 2175 12 0 of 
+: 2189 10 1 a 
+: 2201 58 2 white 
+: 2261 14 3 Christ
+: 2277 16 4 mas 
+- 2293 2314
+- 2314
+: 2339 14 6 Just 
+: 2355 12 8 like 
+: 2369 6 9 the 
+* 2377 22 11 ones 
+: 2401 10 9 I 
+: 2413 24 8 used 
+: 2439 4 6 to 
+: 2445 74 4 know 
+- 2519 2520
+- 2520
+: 2545 10 -3 Where 
+: 2557 10 -1 the 
+: 2569 30 1 tree 
+: 2601 26 1 tops 
+: 2629 12 1 glis
+: 2643 20 6 ten 
+- 2663
+: 2683 10 4 And 
+: 2695 28 9 chil
+: 2725 26 9 dren 
+: 2753 16 9 lis
+: 2771 16 4 ten 
+- 2787
+: 2809 8 2 To 
+: 2819 52 1 hear 
+: 2873 10 1 slei
+: 2885 6 2 ~gh 
+: 2893 12 1 bells 
+: 2907 12 -1 in 
+: 2921 10 -3 the 
+: 2933 96 -1 snow. 
+- 3029 3040
+- 3040
+: 3065 52 1 I’m 
+: 3119 14 2 drea
+: 3135 14 1 ming 
+: 3151 14 0 of 
+: 3167 12 1 a 
+: 3181 56 2 white 
+: 3239 14 3 Christ
+: 3255 32 4 mas 
+- 3287 3296
+- 3296
+: 3321 6 6 With 
+: 3329 14 8 eve
+: 3345 12 9 ry 
+: 3359 12 11 Christ
+: 3373 8 9 mas 
+: 3383 24 8 card 
+: 3409 10 6 I 
+: 3421 80 4 write 
+- 3501
+: 3513 16 -3 May 
+: 3531 10 -1 your 
+: 3543 34 1 days 
+: 3595 12 1 be 
+: 3609 18 1 mer
+: 3629 28 6 ry 
+: 3667 16 4 and 
+* 3685 128 9 bright 
+- 3813
+: 3829 14 -3 And 
+: 3845 12 -1 may 
+: 3859 36 1 all 
+: 3897 24 1 your 
+: 3933 2 1 Chri
+: 3937 16 6 ~st
+: 3963 10 -4 ma
+: 3975 32 -4 ses 
+: 4011 22 -4 be 
+: 4035 78 -3 white. 
+E

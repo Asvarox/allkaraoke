@@ -7,12 +7,26 @@ import useKeyboardHelp from 'hooks/useKeyboardHelp';
 import usePrevious from 'hooks/usePrevious';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { chunk, throttle } from 'lodash-es';
-import posthog from 'posthog-js';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import tuple from 'utils/tuple';
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
+  // const setCursorPosition = useCallback<Dispatch<SetStateAction<[number, number]>>>(
+  //   (action) => {
+  //     if (action instanceof Function) {
+  //       test((current) => {
+  //         const newPosition = action(current);
+  //         console.log('newPosition fnc', newPosition);
+  //         return newPosition;
+  //       });
+  //     } else {
+  //       console.log('newPosition', action);
+  //       test(action);
+  //     }
+  //   },
+  //   [test],
+  // );
   const songIndexMatrix = useMemo(
     () =>
       groups
@@ -147,7 +161,7 @@ export const useSongSelectionKeyboardNavigation = (
   const handleBackspace = () => {
     if (!blockBack && !appliedFilters.search) {
       menuBack.play();
-      navigate('/');
+      navigate('');
     }
   };
 
@@ -202,10 +216,7 @@ export const useSongSelectionKeyboardNavigation = (
       left: () => navigateHorizontally(-1),
       right: () => navigateHorizontally(1),
       back: handleBackspace,
-      random: () => {
-        randomSong();
-        posthog.capture('selectRandom');
-      },
+      random: randomSong,
     },
     enabled && !arePlaylistsVisible,
     [groupedSongs, cursorPosition, arePlaylistsVisible, appliedFilters, blockBack],
@@ -217,6 +228,7 @@ export const useSongSelectionKeyboardNavigation = (
       accept: null,
       back: null,
       shiftR: null,
+      alphanumeric: null,
       remote: ['search'],
     }),
     [],
@@ -238,5 +250,5 @@ export const useSongSelectionKeyboardNavigation = (
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
-  return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist]);
+  return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
 };

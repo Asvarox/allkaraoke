@@ -1,10 +1,10 @@
 import { captureException } from '@sentry/react';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { usePlaylists } from 'Scenes/SingASong/SongSelection/Hooks/usePlaylists';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import { uniq } from 'lodash-es';
-import { useDeferredValue, useMemo, useState } from 'react';
+import { useDeferredValue, useLayoutEffect, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
 export interface SongGroup {
@@ -19,29 +19,9 @@ export interface AppliedFilters {
   language?: string;
   excludeLanguages?: string[];
   search?: string;
+  edition?: string;
   updatedAfter?: string;
   duet?: boolean | null;
-}
-
-export function isEmptyFilters(filters: AppliedFilters) {
-  return (
-    (!filters.language || filters.language === '') &&
-    (!filters.search || filters.search === '') &&
-    (filters.duet === undefined || filters.duet === null) &&
-    !filters.yearBefore &&
-    !filters.yearAfter
-  );
-}
-
-export interface FiltersData {
-  language: {
-    current: string;
-    available: string[];
-  };
-  status: {
-    allSongs: number;
-    visible: number;
-  };
 }
 
 type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
@@ -56,8 +36,8 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
       return songLangs.includes(language);
     });
   },
-  excludeLanguages: (songList, languages: string[] = []) => {
-    if (languages.length === 0) return songList;
+  excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
+    if (languages.length === 0 || clearString(appliedFilters?.search ?? '').length > 2) return songList;
 
     return songList.filter((song) => {
       const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
@@ -68,7 +48,7 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   search: (songList, search: string) => {
     const cleanSearch = clearString(search);
 
-    return cleanSearch.length ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
+    return cleanSearch.length > 2 ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
   },
   duet: (songList, duet: boolean | null) => {
     if (duet === null) return songList;
@@ -85,6 +65,11 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
     return songList.filter((song) => Number(song.year) >= yearAfter);
   },
+  edition: (songList, edition: string) => {
+    const cleanEdition = clearString(edition);
+
+    return cleanEdition.length ? songList.filter((song) => clearString(song.edition ?? '') === edition) : songList;
+  },
   updatedAfter: (songList, after: string) => {
     if (!after) return songList;
     const dateAfter = dayjs(after);
@@ -94,29 +79,33 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 };
 
 const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {
-  if (clearString(appliedFilters?.search ?? '').length) {
-    return filteringFunctions.search(list, appliedFilters.search);
-  }
   return Object.entries(appliedFilters)
     .filter((filters): filters is [keyof AppliedFilters, FilterFunc] => filters[0] in filteringFunctions)
-    .reduce((songList, [name, value]) => filteringFunctions[name](songList, value), list);
-};
-
-export const useLanguageFilter = (list: SongPreview[]) => {
-  return useMemo(() => uniq(['', ...list.map((song) => song.language ?? 'Unknown')].flat()), [list]);
+    .reduce((songList, [name, value]) => filteringFunctions[name](songList, value, appliedFilters), list);
 };
 
 export const useSongListFilter = (list: SongPreview[]) => {
-  const availableLanguages = useLanguageFilter(list);
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
-
-  const [filters, setFilters] = useState<AppliedFilters>({ excludeLanguages: excludedLanguages ?? [] });
-  const deferredFilters = useDeferredValue(filters);
-
   const prefilteredList = useMemo(
     () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
     [list, excludedLanguages],
   );
+
+  const playlists = usePlaylists(prefilteredList);
+  const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
+    new URLSearchParams(window.location.search).get('playlist') ?? null,
+  );
+
+  const [filters, setFilters] = useState<AppliedFilters>(
+    playlists.find((p) => p.name === selectedPlaylist)?.filters ?? {},
+  );
+
+  useLayoutEffect(() => {
+    setFilters(playlists.find((p) => p.name === selectedPlaylist)?.filters ?? {});
+  }, [playlists, selectedPlaylist]);
+
+  const deferredFilters = useDeferredValue(filters);
+
   const filteredList = useMemo(
     () =>
       applyFilters(list, {
@@ -126,45 +115,45 @@ export const useSongListFilter = (list: SongPreview[]) => {
     [list, deferredFilters, excludedLanguages],
   );
 
-  const filtersData: FiltersData = {
-    language: {
-      current: filters.language ?? '',
-      available: availableLanguages,
-    },
-    status: {
-      allSongs: list.length,
-      visible: filteredList.length,
-    },
-  };
-
-  return { filters, filteredList, filtersData, prefilteredList, setFilters };
+  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists };
 };
 
 export default function useSongList() {
   const songList = useSongIndex();
 
-  const { filters, filtersData, filteredList, prefilteredList, setFilters } = useSongListFilter(songList.data);
+  const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists } = useSongListFilter(
+    songList.data,
+  );
 
   const groupedSongList = useMemo(() => {
     if (filteredList.length === 0) return [];
 
     const groups: SongGroup[] = [];
 
-    if (!filters.search) {
+    // a hack for !filters.edition - due to a bug where selecting a song will make it look selected for both
+    // new and regular entry in the list. On Christmas, where most of the songs are new, it looks weird.
+    // When the bug is fixed, this can be removed.
+    if (!filters.search && !filters.edition) {
       const newSongs = filteredList.filter((song) => song.isNew);
 
       if (newSongs.length) {
         groups.push({
           letter: 'New',
           isNew: true,
-          songs: newSongs.map((song) => ({ song, index: filteredList.indexOf(song) })),
+          songs: newSongs.map((song) => ({
+            song,
+            index: filteredList.indexOf(song),
+          })),
         });
       }
     }
 
+    const nonAlphaRegex = /[^a-zA-Z]/;
+
     filteredList.forEach((song, index) => {
       try {
-        const firstCharacter = isFinite(+song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
+        const firstCharacter =
+          isFinite(+song.artist[0]) || nonAlphaRegex.test(song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
         let group = groups.find((group) => group.letter === firstCharacter);
         if (!group) {
           group = { letter: firstCharacter, songs: [] };
@@ -182,12 +171,13 @@ export default function useSongList() {
   }, [filteredList, filters.search]);
 
   return {
-    prefilteredList,
     groupedSongList,
     songList: filteredList,
-    filtersData,
     filters,
     setFilters,
     isLoading: songList.isLoading,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
   };
 }

@@ -1,27 +1,21 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { useBackground } from 'Elements/LayoutWithBackground';
 import Loader from 'Elements/Loader';
 import { focused, typography } from 'Elements/cssMixins';
-import events from 'GameEvents/GameEvents';
-import { useEventEffect } from 'GameEvents/hooks';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import AdditionalListControls from 'Scenes/SingASong/SongSelection/AdditionalListControls';
 import BackgroundThumbnail from 'Scenes/SingASong/SongSelection/BackgroundThumbnail';
 import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
 import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
-import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
-import SelectRandomTip from 'Scenes/SingASong/SongSelection/SelectRandomTip';
 import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
 import SongPreview from 'Scenes/SingASong/SongSelection/SongPreview';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useBlockScroll from 'hooks/useBlockScroll';
-import { REGULAR_ALPHA_CHARS } from 'hooks/useKeyboard';
 import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
@@ -36,7 +30,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
 
   useBackgroundMusic(false);
-  useBackground(true);
+  // useBackground(true);
   useBlockScroll();
 
   const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
@@ -57,31 +51,12 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     filters,
     setShowFilters,
     showFilters,
-    prefilteredList,
     isLoading,
+    randomSong,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
   } = useSongSelection(preselectedSong, songsPerRow);
-
-  const onSearchSong = (e: KeyboardEvent) => {
-    e.stopPropagation();
-    e.preventDefault();
-
-    setFilters({
-      search: e.key,
-    });
-  };
-  useHotkeys(REGULAR_ALPHA_CHARS, onSearchSong, {
-    enabled: !filters.search && keyboardControl,
-  });
-
-  const onRemoteSearch = useCallback(
-    (search: string) => {
-      if (keyboardControl) {
-        setFilters({ search });
-      }
-    },
-    [keyboardControl],
-  );
-  useEventEffect(events.remoteSongSearch, onRemoteSearch);
 
   const list = useRef<HTMLDivElement | null>(null);
   const { width, handleResize } = useViewportSize();
@@ -115,71 +90,73 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
-  if (!groupedSongList || !width) return <>Loading</>;
-
-  if (isLoading) {
-    return (
-      <LoaderContainer>
-        <Loader size="15em" color="secondary" />
-      </LoaderContainer>
-    );
-  }
+  const loading = isLoading || !groupedSongList || !width;
 
   return (
     <Container songsPerRow={songsPerRow}>
-      {songPreview && <SongImageBackground videoId={songPreview.video} />}
-      {filters.search ? (
-        <QuickSearch showFilters={showFilters} onSongFiltered={setFilters} filters={filters} />
+      {loading ? (
+        <LoaderContainer>
+          <Loader size="15em" color="secondary" />
+        </LoaderContainer>
       ) : (
-        <SelectRandomTip keyboardControl={keyboardControl} />
-      )}
-      <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
-        {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
-        {songPreview && (
-          <SongPreview
-            songPreview={songPreview}
-            onPlay={onSongSelected}
-            keyboardControl={!keyboardControl}
-            onExitKeyboardControl={() => setKeyboardControl(true)}
-            top={previewTop}
-            left={previewLeft}
-            width={previewWidth}
-            height={previewHeight}
-            focusEffect={!showFilters}
+        <>
+          {songPreview && <SongImageBackground videoId={songPreview.video} />}
+          <AdditionalListControls
+            setFilters={setFilters}
+            filters={filters}
+            onRandom={randomSong}
+            keyboardControl={keyboardControl}
           />
-        )}
-        {groupedSongList.map((group) => (
-          <SongsGroupContainer
-            {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
-            key={group.letter}
-            data-group-letter={group.letter}
-            highlight={group.letter === 'New'}>
-            <SongsGroupHeader>{group.letter}</SongsGroupHeader>
-            <SongsGroup>
-              {group.songs.map(({ song, index }) => (
-                <SongListEntry
-                  key={song.id}
-                  song={song}
-                  handleClick={focusedSong === index ? expandSong : moveToSong}
-                  focused={!showFilters && keyboardControl && index === focusedSong}
-                  index={index}
-                  data-index={index}
-                  data-focused={!showFilters && keyboardControl && index === focusedSong}
-                  data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
-                />
-              ))}
-            </SongsGroup>
-          </SongsGroupContainer>
-        ))}
-        <AddSongs>
-          Missing a song? Try <a href="/convert">adding one</a> yourself!
-        </AddSongs>
-      </SongListContainer>
+          <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
+            {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
+            {songPreview && (
+              <SongPreview
+                songPreview={songPreview}
+                onPlay={onSongSelected}
+                keyboardControl={!keyboardControl}
+                onExitKeyboardControl={() => setKeyboardControl(true)}
+                top={previewTop}
+                left={previewLeft}
+                width={previewWidth}
+                height={previewHeight}
+                focusEffect={!showFilters}
+              />
+            )}
+            {groupedSongList.map((group) => (
+              <SongsGroupContainer
+                {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
+                key={group.letter}
+                data-group-letter={group.letter}
+                highlight={group.letter === 'New'}>
+                <SongsGroupHeader>{group.letter}</SongsGroupHeader>
+                <SongsGroup>
+                  {group.songs.map(({ song, index }) => (
+                    <SongListEntry
+                      key={song.id}
+                      song={song}
+                      handleClick={focusedSong === index ? expandSong : moveToSong}
+                      focused={!showFilters && keyboardControl && index === focusedSong}
+                      index={index}
+                      data-index={index}
+                      data-focused={!showFilters && keyboardControl && index === focusedSong}
+                      data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
+                    />
+                  ))}
+                </SongsGroup>
+              </SongsGroupContainer>
+            ))}
+            <AddSongs>
+              Missing a song? Try <a href="convert">adding one</a> yourself!
+            </AddSongs>
+          </SongListContainer>
+        </>
+      )}
       <Playlists
-        setFilters={setFilters}
+        selectedPlaylist={selectedPlaylist}
+        setSelectedPlaylist={setSelectedPlaylist}
+        playlists={playlists}
         active={showFilters}
         closePlaylist={setShowFilters}
-        prefilteredList={prefilteredList}
       />
     </Container>
   );

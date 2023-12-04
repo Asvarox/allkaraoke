@@ -14,7 +14,7 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
     ...options,
     headers: {
       ...options.headers,
-      Authorization: `Bearer ${process.env.POSTHOG_API_KEY}`,
+      Authorization: `Bearer ${process.env.VITE_APP_POSTHOG_KEY}`,
     },
   });
 

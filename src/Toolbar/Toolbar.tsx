@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { QrCode2 } from '@mui/icons-material';
-import { IconButton, Tooltip } from '@mui/material';
+import { IconButton } from '@mui/material';
+import { Tooltip } from 'Elements/Tooltip';
 import 'RemoteMic/eventListeners';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import 'Stats';

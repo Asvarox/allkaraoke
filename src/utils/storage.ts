@@ -9,13 +9,39 @@ const abstractStorage = (type: typeof sessionStorage | typeof localStorage) => (
       return null;
     }
 
-    return JSON.parse(val);
+    try {
+      return JSON.parse(val);
+    } catch (e) {
+      return val as T;
+    }
   },
 });
 
+class MemoryStorage {
+  private store: Record<string, any> = {};
+
+  public storeValue<T>(key: string, value: T) {
+    this.store[key] = value;
+  }
+
+  public getValue<T = any>(key: string): T | null {
+    const val = this.store[key];
+
+    if (val === undefined) {
+      return null;
+    }
+
+    return val;
+  }
+}
+
+const local = abstractStorage(localStorage);
+
 const storage = {
-  ...abstractStorage(localStorage),
+  ...local,
+  local,
   session: abstractStorage(sessionStorage),
+  memory: new MemoryStorage(),
 };
 
 export default storage;

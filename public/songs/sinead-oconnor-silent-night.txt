@@ -1,0 +1,206 @@
+#ID:sinead-oconnor-silent-night
+#ARTIST:Sinéad O’Connor
+#ARTISTORIGIN:IE
+#TITLE:Silent Night
+#CREATOR:britneyblisswilliams
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8929
+#BPM:220,88
+#REALBPM:42
+#YEAR:1991
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=6244
+#PREVIEWSTART:75
+#PREVIEWEND:105
+#VIDEOID:1uHNygqhBCs
+#VIDEOGAP:0
+#VOLUME:1
+#GENRE:Pop
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:25.237Z
+#EDITION:Christmas
+#GAP:9291,347337921043
+: 15 17 -1 Si
+: 33 5 1 ~ 
+: 39 10 -1 lent 
+: 53 26 -4 night, 
+: 91 17 -1 ho
+: 109 5 1 ~ 
+: 115 8 -1 ly 
+: 127 24 -4 night 
+- 151 152
+- 152
+: 167 26 6 All 
+: 195 6 6 is 
+: 209 20 3 calm, 
+: 233 2 1 we 
+: 239 16 -1 see, 
+: 263 8 4 all 
+: 275 8 -1 is 
+: 287 24 -1 bright 
+- 311 312
+- 312
+: 327 20 1 Round 
+: 351 8 1 young 
+: 363 19 4 vi
+: 383 6 3 r
+: 391 8 1 gin 
+: 403 17 -1 mo
+: 421 4 1 ther 
+: 427 8 -1 and 
+: 439 20 -4 child 
+- 459 468
+- 468
+: 483 19 1 Ho
+: 503 14 1 ly 
+* 519 16 4 in
+: 537 4 3 fant 
+: 543 8 1 so 
+: 557 21 -1 ten
+: 579 5 1 der 
+: 585 10 -1 and 
+: 597 22 -4 mild, 
+: 621 4 -6 we 
+: 629 6 -8 see 
+- 635 642
+- 642
+: 657 12 6 Sleep 
+: 671 8 6 in 
+: 683 21 9 hea
+: 705 5 6 ven
+: 711 6 3 ly 
+: 723 41 4 pea
+: 765 24 8 ce 
+- 789 792
+- 792
+: 807 13 4 Sle
+: 821 12 -1 ep 
+: 835 12 -4 in 
+: 849 17 -1 hea
+: 867 7 -3 ven
+: 875 6 -6 ly 
+: 887 30 -8 peace 
+- 917 950
+- 950
+: 965 17 -1 Si
+: 983 5 1 ~ 
+: 989 10 -1 lent 
+: 1003 26 -4 night, 
+: 1041 15 -1 ho
+: 1057 5 1 ~ 
+: 1063 8 -1 ly 
+: 1075 22 -4 night 
+- 1097 1098
+- 1098
+: 1113 19 6 Shep
+: 1133 8 6 herds 
+: 1147 20 3 first 
+: 1187 20 4 saw 
+: 1211 6 -1 the 
+: 1221 22 -1 sight 
+- 1243 1248
+- 1248
+: 1263 23 1 Glou
+: 1287 6 1 rious 
+* 1299 15 4 strea
+: 1315 4 3 ming 
+: 1323 8 1 from 
+: 1335 19 -1 hea
+: 1355 6 1 ven 
+: 1363 8 -1 a
+: 1375 16 -4 far 
+- 1391 1398
+- 1398
+: 1413 13 1 Hea
+: 1427 6 1 v’
+: 1435 8 1 nly 
+: 1447 8 4 host 
+: 1459 9 3 sin
+: 1469 5 1 gi
+: 1475 4 -1 ng 
+: 1483 17 -1 Al
+: 1501 5 1 lel
+: 1507 10 -1 lu
+: 1519 22 -4 ia 
+- 1541 1542
+- 1542
+: 1557 18 6 Christ 
+: 1579 8 6 the 
+: 1593 20 9 sa
+: 1615 4 6 vior 
+: 1623 4 3 is 
+: 1635 35 4 bo
+: 1671 60 8 rn 
+- 1731 1736
+- 1736
+: 1751 12 4 Chri
+: 1765 8 -1 st 
+: 1777 4 -4 the 
+: 1791 17 -1 sa
+: 1809 6 -3 vior 
+: 1819 4 -6 is 
+: 1831 28 -8 born 
+- 1859 1892
+- 1892
+: 1907 19 -1 Si
+: 1927 5 1 ~ 
+: 1933 10 -1 lent 
+* 1947 26 -4 night, 
+: 1991 15 -1 ho
+: 2007 6 1 ~ 
+: 2015 8 -1 ly 
+: 2027 24 -4 night 
+- 2051 2052
+- 2052
+: 2067 23 6 All 
+: 2091 8 6 is 
+: 2105 22 3 calm, 
+: 2129 4 1 we 
+: 2137 16 -1 see, 
+: 2165 12 4 all 
+: 2179 10 -1 is 
+: 2191 3 -1 bri
+: 2195 3 -3 ~ 
+: 2199 16 -4 ght 
+- 2215 2218
+- 2218
+: 2233 20 1 Round 
+: 2257 8 1 young 
+: 2271 19 4 vi
+: 2291 4 3 r
+: 2297 8 1 gin 
+: 2311 17 -1 mo
+: 2329 6 1 ther 
+: 2337 8 -1 and 
+: 2351 20 -4 child 
+- 2371 2376
+- 2376
+: 2391 20 1 Ho
+: 2413 10 1 ly 
+: 2427 19 4 in
+: 2447 4 3 fant 
+: 2453 6 1 so 
+: 2467 17 -1 ten
+: 2485 4 1 der 
+: 2493 8 -1 and 
+: 2507 18 -4 mild, 
+: 2531 4 -6 we 
+: 2537 6 -8 see 
+- 2543 2548
+- 2548
+: 2563 10 6 Sleep 
+: 2575 8 6 in 
+* 2589 19 9 hea
+: 2609 5 6 ven
+: 2615 6 3 ly 
+: 2629 33 4 pea
+: 2663 48 8 ce 
+- 2711 2720
+- 2720
+: 2735 7 9 Sle
+: 2743 6 8 ~ 
+: 2751 8 6 ep 
+: 2763 8 9 in 
+: 2773 13 8 hea
+: 2787 12 6 ven
+: 2801 6 3 ly 
+: 2817 78 4 peace 
+E

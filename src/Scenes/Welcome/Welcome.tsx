@@ -46,20 +46,20 @@ function Welcome() {
       )}
       <FacebookLink />
       <>
-        <Link href="/game/" onClick={handleClick('/game/')}>
-          <MenuButton {...register('sing-a-song', () => navigate('/game/'))}>Sing a song</MenuButton>
+        <Link href="game/" onClick={handleClick('game/')}>
+          <MenuButton {...register('sing-a-song', () => navigate('game/'))}>Sing a song</MenuButton>
         </Link>
-        <Link href="/select-input" onClick={handleClick('/select-input')}>
-          <MenuButton {...register('select-input', () => navigate('/select-input'))}>Setup Microphones</MenuButton>
+        <Link href="select-input" onClick={handleClick('select-input')}>
+          <MenuButton {...register('select-input', () => navigate('select-input'))}>Setup Microphones</MenuButton>
         </Link>
-        <Link href="/settings" onClick={handleClick('/settings')}>
-          <MenuButton {...register('settings', () => navigate('/settings'))}>Settings</MenuButton>
+        <Link href="settings" onClick={handleClick('settings')}>
+          <MenuButton {...register('settings', () => navigate('settings'))}>Settings</MenuButton>
         </Link>
-        <Link href="/jukebox" onClick={handleClick('/jukebox')}>
-          <MenuButton {...register('jukebox', () => navigate('/jukebox'))}>Jukebox</MenuButton>
+        <Link href="jukebox" onClick={handleClick('jukebox')}>
+          <MenuButton {...register('jukebox', () => navigate('jukebox'))}>Jukebox</MenuButton>
         </Link>
-        <Link href="/manage-songs" onClick={handleClick('/manage-songs')}>
-          <MenuButton {...register('manage-songs', () => navigate('/manage-songs'))}>Manage Songs</MenuButton>
+        <Link href="manage-songs" onClick={handleClick('manage-songs')}>
+          <MenuButton {...register('manage-songs', () => navigate('manage-songs'))}>Manage Songs</MenuButton>
         </Link>
       </>
     </MenuWithLogo>

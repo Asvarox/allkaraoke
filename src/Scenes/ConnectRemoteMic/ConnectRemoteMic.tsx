@@ -14,8 +14,8 @@ if (isWebsockets) {
 
 function ConnectRemoteMic() {
   // Validate if the component is rendered in a remote mic or in the "main" game via the URL
-  const [match, params] = useRoute<{ roomId: string }>('/remote-mic/:roomId');
-  linkObject.pathname = `/remote-mic/${match ? params.roomId : RemoteMicServer.getRoomId()}`;
+  const [match, params] = useRoute<{ roomId: string }>('remote-mic/:roomId');
+  linkObject.pathname = `${import.meta.env.BASE_URL}remote-mic/${match ? params.roomId : RemoteMicServer.getRoomId()}`;
   const link = linkObject.href;
 
   useEffect(() => {

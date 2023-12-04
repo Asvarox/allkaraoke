@@ -5,7 +5,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 type Callback = (e?: KeyboardEvent) => void;
 
 // All besides H (help) character
-export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z';
+export const REGULAR_ALPHA_CHARS = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,r,s,t,u,w,x,y,z,1,2,3,4,5,6,7,8,9,0';
 
 try {
   // @ts-expect-error

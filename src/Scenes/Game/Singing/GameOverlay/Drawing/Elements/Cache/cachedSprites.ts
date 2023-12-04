@@ -1,3 +1,4 @@
+import events from 'GameEvents/GameEvents';
 import spriteMap, {
   smallNoteFragments,
   SpriteNames,
@@ -16,7 +17,13 @@ let currentHeight = 0;
 const positions = Object.entries(spriteMap)
   .map(([name, sprite]) => {
     const pads = sprite.padding * 2;
-    const position = { name, x: 0, y: currentHeight, w: sprite.width + pads, h: sprite.height + pads };
+    const position = {
+      name,
+      x: 0,
+      y: currentHeight,
+      w: sprite.width + pads,
+      h: sprite.height + pads,
+    };
     currentHeight = currentHeight + sprite.height + pads;
 
     return position;
@@ -26,11 +33,19 @@ const positions = Object.entries(spriteMap)
     {} as Record<SpriteNames, { x: number; y: number; w: number; h: number }>,
   );
 
-currentHeight = 0;
-Object.entries(spriteMap).forEach(([key, entry]) => {
-  entry.draw(ctx, entry.padding, currentHeight + entry.padding, entry.width, entry.height);
-  currentHeight = currentHeight + entry.padding * 2 + entry.height;
-});
+const generateSpriteMap = () => {
+  /// clear canvas
+  ctx.clearRect(0, 0, maxWidth, height);
+  currentHeight = 0;
+  Object.entries(spriteMap).forEach(([key, entry]) => {
+    entry.draw(ctx, entry.padding, currentHeight + entry.padding, entry.width, entry.height);
+    currentHeight = currentHeight + entry.padding * 2 + entry.height;
+  });
+};
+
+generateSpriteMap();
+
+events.songStarted.subscribe(generateSpriteMap);
 
 export const getSprite = (sprite: SpriteNames, fragment: keyof typeof smallNoteFragments) => {
   return {

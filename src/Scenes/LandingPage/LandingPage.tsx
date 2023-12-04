@@ -26,7 +26,7 @@ function LandingPage() {
           <LogoIcon />
           <Logo />
         </LogoContainer>
-        <PlayButton onClick={() => navigate('/quick-setup')} data-test="enter-the-game">
+        <PlayButton onClick={() => navigate('quick-setup')} data-test="enter-the-game">
           Enter the game
         </PlayButton>
         <Stats>

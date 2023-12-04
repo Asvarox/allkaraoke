@@ -26,12 +26,18 @@ import {
   MobilePhoneModeSetting,
   useSettingValue,
 } from 'Scenes/Settings/SettingsState';
+import SocialMediaElements from 'Scenes/SocialMediaElements/SocialMediaElements';
 import Welcome from 'Scenes/Welcome/Welcome';
 import Toolbar from 'Toolbar/Toolbar';
 import { Suspense, lazy, useEffect, useMemo } from 'react';
 
 const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
-const LazyGame = lazy(() => import('./Scenes/Game/Game'));
+
+// This is a hack to preload the game scene so that it's ready when the user clicks on the game button
+// without increasing initial load time. Vite doesn't support prefetch yet
+// https://github.com/vitejs/vite/issues/10600
+const prefetchGame = import('./Scenes/Game/Game');
+const LazyGame = lazy(() => prefetchGame);
 
 function App() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
@@ -49,9 +55,9 @@ function App() {
 
   useEffect(() => {
     if (setupPreference === null && location === '/') {
-      navigate('/landing');
+      navigate('landing');
     } else if (setupPreference !== null && location === '/quick-setup') {
-      navigate('/');
+      navigate('');
     }
   }, []);
 
@@ -67,39 +73,40 @@ function App() {
       <ErrorBoundary fallback={ErrorFallback}>
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>
-            <Router>
+            <Router base={import.meta.env.BASE_URL}>
               <GameScreens>
                 <Toolbar />
-                <Route path="/game/:songId?">
+                <Route path="game/:songId?">
                   {({ songId }) => (
                     <Suspense fallback={<Loader />}>
                       <LazyGame songId={songId ? decodeURIComponent(songId) : undefined} />
                     </Suspense>
                   )}
                 </Route>
-                <Route path="/jukebox" component={Jukebox} />
-                <Route path="/remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
-                <Route path="/phone/:roomId">{({ roomId }) => <Redirect to={`/remote-mic/${roomId}`} />}</Route>
-                <Route path="/quick-setup" component={QuickSetup} />
-                <Route path="/select-input" component={SelectInput} />
-                <Route path="/settings" component={Settings} />
-                <Route path="/settings/remote-mics" component={RemoteMicSettings} />
-                <Route path="/manage-songs" component={ManageSongs} />
-                <Route path="/exclude-languages" component={ExcludeLanguages} />
-                <Route path="/" component={Welcome} />
-                <Route path="/landing" component={LandingPage} />
+                <Route path="jukebox" component={Jukebox} />
+                <Route path="remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
+                <Route path="phone/:roomId">{({ roomId }) => <Redirect to={`remote-mic/${roomId}`} />}</Route>
+                <Route path="quick-setup" component={QuickSetup} />
+                <Route path="select-input" component={SelectInput} />
+                <Route path="settings" component={Settings} />
+                <Route path="settings/remote-mics" component={RemoteMicSettings} />
+                <Route path="manage-songs" component={ManageSongs} />
+                <Route path="exclude-languages" component={ExcludeLanguages} />
+                <Route path="" component={Welcome} />
+                <Route path="landing" component={LandingPage} />
+                <Route path="social-media-elements" component={SocialMediaElements} />
               </GameScreens>
-              <Route path="/convert" component={() => <Convert />} />
+              <Route path="convert" component={() => <Convert />} />
               <Route
-                path="/edit"
+                path="edit"
                 component={() => (
                   <Suspense fallback={<Loader />}>
                     <LazySongList />
                   </Suspense>
                 )}
               />
-              <Route path="/edit/get-songs-bpms" component={GetSongsBPMs} />
-              <Route path="/edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
+              <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
+              <Route path="edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
             </Router>
           </KeyboardHelpProvider>
         </LayoutWithBackgroundProvider>

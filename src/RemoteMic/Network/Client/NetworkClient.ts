@@ -165,6 +165,8 @@ export class NetworkClient {
         events.remoteMicPermissionsSet.dispatch(data.level);
       } else if (type === 'remote-mics-list') {
         events.remoteMicListUpdated.dispatch(data.list);
+      } else if (type === 'style-change') {
+        events.remoteStyleChanged.dispatch(data.style);
       }
     });
   };

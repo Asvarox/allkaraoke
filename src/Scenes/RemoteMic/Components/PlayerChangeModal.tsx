@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
 import Modal from 'Elements/Modal';
+import gameEvents from 'GameEvents/GameEvents';
+import { useEventListener } from 'GameEvents/hooks';
 import RemoteMicClient from 'RemoteMic/Network/Client';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React from 'react';
@@ -13,6 +15,7 @@ interface Props {
 }
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
+  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
   const selectPlayer = (player: number | null) => {
     RemoteMicClient.requestPlayerChange(id, player);
     onModalClose();
@@ -30,7 +33,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
           onClick={() => selectPlayer(0)}
           disabled={0 === playerNumber}
           style={{ color: styles.colors.players[0].perfect.fill }}>
-          Blue
+          {style === 'christmas' ? 'Green' : 'Blue'}
         </MenuButton>
         <MenuButton
           size="small"

@@ -2,15 +2,16 @@ import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import events from 'GameEvents/GameEvents';
+import { default as events, default as gameEvents } from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
+import { restoreDefaultColors, switchToChristmasColors } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import BottomBar from 'Scenes/RemoteMic/BottomBar';
 import ConfirmWifiModal from 'Scenes/RemoteMic/Components/ConfrimWifiModal';
 import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/Microphone/ConfirmReadiness';
 import RemoteSettings from 'Scenes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from 'Scenes/RemoteMic/Panels/RemoteSongList';
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 interface Props {
   roomId: string;
@@ -23,7 +24,15 @@ export type ConnectionStatuses = Parameters<typeof events.karaokeConnectionStatu
 export type PhoneTabs = 'microphone' | 'song-list' | 'settings';
 
 function RemoteMic({ roomId }: Props) {
-  useBackground(true);
+  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
+  useLayoutEffect(() => {
+    if (style === 'christmas') {
+      switchToChristmasColors();
+    } else {
+      restoreDefaultColors();
+    }
+  }, [style]);
+  useBackground(true, style === 'christmas');
   const [activeTab, setActiveTab] = useState<PhoneTabs>('microphone');
 
   const [connectionStatus, connectionError] = useEventListener(events.karaokeConnectionStatusChange) ?? [

@@ -18,7 +18,7 @@ export default function Edit(props: Props) {
   return (
     <Container>
       <div>
-        <Link to="/edit">
+        <Link to="edit">
           <a>Return to the song list</a>
         </Link>
       </div>

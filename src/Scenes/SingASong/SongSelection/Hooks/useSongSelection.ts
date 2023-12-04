@@ -8,7 +8,16 @@ import { randomInt } from 'utils/randomValue';
 import startViewTransition from 'utils/startViewTransition';
 
 export default function useSongSelection(preselectedSong: string | null, songsPerRow: number) {
-  const { songList, prefilteredList, groupedSongList, filtersData, setFilters, filters, isLoading } = useSongList();
+  const {
+    songList,
+    groupedSongList,
+    setFilters,
+    filters,
+    isLoading,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
+  } = useSongList();
   const navigate = useSmoothNavigate();
   const [keyboardControl, setKeyboardControl] = useState(true);
 
@@ -21,14 +30,15 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     woosh.play();
   };
 
-  const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters] = useSongSelectionKeyboardNavigation(
-    keyboardControl,
-    groupedSongList,
-    () => handleKeyboardControl(false),
-    songList.length,
-    filters,
-    songsPerRow,
-  );
+  const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters, randomSong] =
+    useSongSelectionKeyboardNavigation(
+      keyboardControl,
+      groupedSongList,
+      () => handleKeyboardControl(false),
+      songList.length,
+      filters,
+      songsPerRow,
+    );
 
   const [preselected, setPreselected] = useState(false);
   useEffect(() => {
@@ -47,13 +57,15 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
   useEffect(() => {
     if (preselected && songList.length && songList[focusedSong]) {
-      navigate(`/game/${encodeURIComponent(songList[focusedSong].id)}`, { replace: true, smooth: false });
+      navigate(`game/${encodeURIComponent(songList[focusedSong].id)}${window.location.search}`, {
+        replace: true,
+        smooth: false,
+      });
     }
   }, [preselected, focusedSong, songList]);
 
   const songPreview = songList?.[focusedSong];
   return {
-    prefilteredList,
     groupedSongList,
     focusedSong,
     focusedGroup,
@@ -62,11 +74,14 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     keyboardControl,
     songPreview,
     songList: songList ?? [],
-    filtersData,
     filters,
     setFilters,
     showFilters,
     setShowFilters,
     isLoading,
+    randomSong,
+    selectedPlaylist,
+    setSelectedPlaylist,
+    playlists,
   };
 }

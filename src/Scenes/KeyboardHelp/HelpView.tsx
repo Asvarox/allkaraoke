@@ -17,7 +17,7 @@ const useIsVisible = createPersistedState('keyboard-help-visibility');
 export default function KeyboardHelpView({ help }: Props) {
   const [isCollapsed, setIsVisible] = useIsVisible(true);
 
-  useHotkeys('h', () => setIsVisible(!isCollapsed), undefined, [isCollapsed]);
+  useHotkeys('shift+h', () => setIsVisible(!isCollapsed), undefined, [isCollapsed]);
 
   const helps = Object.entries(help ?? {}).filter(([, value]) => value !== undefined);
 
@@ -51,9 +51,7 @@ export default function KeyboardHelpView({ help }: Props) {
             })}
             <Section>
               <SectionHelp>Show/hide this help</SectionHelp>
-              <SectionKeys>
-                <Kbd>H</Kbd>
-              </SectionKeys>
+              <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
             </Section>
           </>
         ) : (
@@ -89,6 +87,11 @@ const ShiftLetter = (letter: string) => () =>
       <Kbd>Shift</Kbd> + <Kbd>{letter.toUpperCase()}</Kbd>
     </>
   );
+const Alphanumeric = () => (
+  <>
+    <Kbd>start typing</Kbd>
+  </>
+);
 
 const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; defaultLabel: string }> = {
   'horizontal-vertical': { view: HorizontalVertical, defaultLabel: 'Navigate' },
@@ -97,6 +100,7 @@ const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; de
   accept: { view: Accept, defaultLabel: 'Select' },
   back: { view: Back, defaultLabel: 'Go back' },
   shiftR: { view: ShiftLetter('r'), defaultLabel: 'Pick random' },
+  alphanumeric: { view: Alphanumeric, defaultLabel: 'Search' },
 };
 
 const Section = styled.div`
@@ -138,8 +142,8 @@ const UseKeyboardIndicator = styled.div`
 
 const Container = styled.div<{ collapsed: boolean; visible: boolean }>`
   position: fixed;
-  top: 10rem;
-  right: 5.5rem;
+  top: 5rem;
+  right: 0;
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -149,6 +153,7 @@ const Container = styled.div<{ collapsed: boolean; visible: boolean }>`
   opacity: ${(props) => (props.collapsed ? 0.5 : 1)};
   visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
   cursor: pointer;
+  transform: scale(0.75);
 
   z-index: 10000;
 

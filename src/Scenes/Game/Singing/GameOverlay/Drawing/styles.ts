@@ -1,19 +1,15 @@
-// gf = 52, 166, 95
-// gs = 15, 138, 95
-// rf = 245, 98, 77
-// rs = 204, 35, 30
-
 import tinycolor from 'tinycolor2';
+
+export const christmasGreenFillBase = tinycolor('rgb(52, 166, 95)');
+export const christmasGreenStrokeBase = tinycolor('rgb(15, 138, 95)');
+export const christmasRedFillBase = tinycolor('rgb(245, 98, 77)');
+export const christmasRedStrokeBase = tinycolor('rgb(204, 35, 30)');
 
 export const blueFillBase = tinycolor('rgb(0, 153, 255)');
 export const blueStrokeBase = tinycolor('rgb(0, 77, 128)');
-export const blueFill = (a = 1) => blueFillBase.setAlpha(a).toRgbString();
-export const blueStroke = (a = 1) => blueStrokeBase.setAlpha(a).toRgbString();
 
 export const redFillBase = tinycolor('rgb(255, 54, 54)');
 export const redStrokeBase = tinycolor('rgb(117, 25, 25)');
-export const redFill = (a = 1) => redFillBase.setAlpha(a).toRgbString();
-export const redStroke = (a = 1) => redStrokeBase.setAlpha(a).toRgbString();
 
 export const goldFillBase = tinycolor('rgb(255, 213, 0)');
 export const goldStrokeBase = tinycolor('rgb(255, 183, 0)');
@@ -53,9 +49,11 @@ const colorSet = (fillBase: tinycolor.Instance, strokeBase: tinycolor.Instance) 
 export const colorSets = {
   blue: colorSet(blueFillBase, blueStrokeBase),
   red: colorSet(redFillBase, redStrokeBase),
+  christmasGreen: colorSet(christmasGreenFillBase, christmasGreenStrokeBase),
+  christmasRed: colorSet(christmasRedFillBase, christmasRedStrokeBase),
 };
 
-const playerColors = [colorSets.blue, colorSets.red];
+let playerColors = [colorSets.blue, colorSets.red];
 
 const styles = {
   colors: {
@@ -84,6 +82,19 @@ const styles = {
       inactive: 'grey',
     },
   },
+};
+export const switchToChristmasColors = () => {
+  if (playerColors[0] === colorSets.blue) {
+    playerColors = [colorSets.christmasGreen, colorSets.christmasRed];
+    styles.colors.players = playerColors;
+  }
+};
+
+export const restoreDefaultColors = () => {
+  if (playerColors[0] !== colorSets.blue) {
+    playerColors = [colorSets.blue, colorSets.red];
+    styles.colors.players = playerColors;
+  }
 };
 
 export default styles;

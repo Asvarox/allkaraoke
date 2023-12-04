@@ -119,6 +119,10 @@ export interface NetworkRemoteMicListMessage {
   t: 'remote-mics-list';
   list: Array<{ id: string; name: string; number: number | null }>;
 }
+export interface NetworkStyleChangeMessage {
+  t: 'style-change';
+  style: 'christmas' | 'normal';
+}
 
 export type NetworkMessages =
   | NetworkSubscribeMessage
@@ -144,4 +148,5 @@ export type NetworkMessages =
   | NetworkSetInputLagRequestMessage
   | NetworkGetInputLagRequestMessage
   | NetworkGetInputLagResponseMessage
+  | NetworkStyleChangeMessage
   | NetworkNewFrequencyMessage;
