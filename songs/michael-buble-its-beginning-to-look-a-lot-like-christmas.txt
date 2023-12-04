@@ -1,0 +1,332 @@
+#ID:michael-buble-its-beginning-to-look-a-lot-like-christmas
+#ARTIST:Michael Bublé
+#ARTISTORIGIN:CA
+#TITLE:It's Beginning to Look a lot Like Christmas
+#CREATOR:subkei
+#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
+#BPM:385,08
+#REALBPM:95
+#YEAR:2011
+#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Bubl%C3%A9&cancion=It's%20Beginning%20to%20Look%20a%20lot%20Like%20Christmas%20(Live)
+#VIDEOID:bYnqRzJTOYs
+#VIDEOGAP:0
+#VOLUME:1
+#GENRE:Swing
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:15.018Z
+#EDITION:Christmas
+#GAP:22241,22343409162
+: 26 4 -4 It's 
+: 41 3 -3 be
+: 46 4 -1 gin
+: 51 6 1 ning 
+: 64 4 -1 to 
+: 69 3 -2 look 
+: 75 6 -1 a 
+: 83 4 1 lot 
+: 96 12 4 like 
+: 116 2 8 Christ
+: 129 13 -1 mas
+- 142 170
+- 170
+: 196 1 7 Eve
+: 198 4 8 ~
+: 204 6 8 ry
+: 213 22 6 where 
+: 238 5 4 you 
+: 248 26 1 go
+- 274 285
+- 285
+: 311 3 1 Take 
+: 316 2 3 a 
+: 320 2 4 look 
+: 325 2 6 at 
+: 330 1 4 the 
+: 336 5 1 five 
+: 342 2 2 and 
+: 348 9 3 ten
+- 357
+: 381 1 -1 It's 
+: 387 1 1 glis
+: 389 2 3 ~
+: 395 2 4 ten
+: 398 3 3 ing 
+: 405 3 -1 once 
+: 411 1 -1 a
+: 414 18 1 gain
+- 432
+: 450 1 -1 With 
+: 456 3 3 can
+: 461 2 4 dy 
+: 467 13 6 canes 
+: 483 2 8 and 
+: 491 3 6 sil
+: 496 3 4 ver 
+: 501 7 3 lanes 
+: 511 1 4 a
+: 516 31 6 glow
+- 547 553
+- 553
+: 579 1 -4 It's 
+* 585 3 -3 be
+* 590 2 -1 gin
+* 593 6 1 ning 
+: 603 1 -1 to 
+: 607 4 -2 look 
+: 613 4 -1 a 
+: 620 4 1 lot 
+: 636 15 4 like 
+: 659 2 8 Christ
+: 671 13 -1 mas
+- 684 711
+- 711
+: 737 4 6 Toys
+: 743 8 8 ~ 
+: 756 10 8 in 
+: 768 3 6 eve
+: 773 4 4 ry 
+: 785 20 1 store
+- 805 822
+- 822
+: 848 2 1 But 
+: 853 1 3 the 
+: 859 3 4 pret
+: 864 1 6 ti
+: 866 5 4 est 
+: 875 5 3 sight 
+: 882 1 4 to 
+: 887 13 3 see
+- 900
+: 920 1 1 Is 
+: 927 5 1 the 
+: 934 4 -1 hol
+: 940 3 1 ly 
+: 945 3 4 that 
+: 951 2 8 will 
+: 955 19 11 be
+- 974
+: 977 6 -1 On 
+: 985 6 1 your 
+: 993 19 9 own 
+: 1026 20 3 front
+: 1053 4 -1 ~ 
+: 1060 20 4 door
+- 1080
+: 1105 1 1 A 
+: 1111 7 4 pair 
+: 1120 4 6 of 
+: 1127 2 8 hop
+: 1133 2 9 -a
+: 1137 4 8 long 
+* 1143 3 6 boots
+- 1146
+* 1151 1 8 And 
+* 1154 1 6 a 
+* 1159 3 4 pis
+* 1166 2 6 tol 
+: 1170 2 4 that 
+: 1177 3 3 shoots
+- 1180
+: 1183 1 4 Is 
+: 1189 2 6 the 
+: 1194 2 8 wish 
+: 1204 2 8 of 
+: 1211 3 6 Bar
+: 1216 2 4 ney 
+: 1220 3 3 and 
+: 1226 5 1 Ben
+- 1231 1232
+- 1232
+: 1258 2 4 Dolls
+: 1261 3 6 ~ 
+: 1267 1 8 that 
+: 1270 3 6 will 
+: 1277 3 4 talk 
+: 1282 1 6 and 
+: 1286 4 4 will 
+: 1294 4 3 go 
+: 1301 2 4 for 
+: 1304 4 3 a 
+: 1310 4 1 walk
+- 1314
+: 1317 1 3 Is 
+: 1321 2 4 the 
+: 1326 4 6 hope 
+: 1338 2 6 of 
+: 1343 2 4 Ja
+: 1348 2 3 nice 
+: 1353 4 1 and 
+: 1360 14 -1 Jen
+- 1374
+: 1387 5 -1 And 
+: 1394 7 11 Mom 
+: 1404 3 10 and 
+: 1410 6 9 Dad 
+: 1421 3 8 can 
+: 1427 6 6 hard
+: 1438 3 4 ly 
+: 1443 4 3 wait
+- 1447
+: 1454 2 1 For 
+: 1461 7 -1 school 
+: 1469 2 -2 to 
+: 1476 9 -1 start 
+: 1486 2 -2 a
+: 1492 9 -1 gain
+- 1501
+: 1515 2 -4 It's 
+: 1521 2 -3 be
+: 1526 2 -1 gin
+: 1529 6 1 ning 
+: 1538 4 -1 to 
+: 1544 4 -2 look 
+: 1551 5 -1 a 
+: 1557 4 1 lot 
+: 1572 15 4 like 
+: 1594 2 8 Christ
+: 1606 14 -1 mas
+- 1620 1643
+- 1643
+: 1669 2 6 Eve
+: 1672 4 8 ~
+: 1678 7 8 ry
+: 1688 20 6 where 
+: 1711 5 4 you 
+: 1721 30 1 go
+- 1751 1755
+- 1755
+: 1781 2 1 There's 
+: 1785 2 3 a 
+: 1792 4 4 tree 
+: 1797 4 6 in 
+: 1802 3 4 the 
+* 1809 3 1 Grand 
+* 1814 3 2 Ho
+* 1822 18 3 tel
+- 1840
+: 1854 3 3 One 
+: 1859 3 4 in 
+: 1864 2 3 the 
+: 1869 5 -1 park 
+: 1876 3 -1 as 
+: 1883 19 1 well
+- 1902
+: 1917 1 -1 It's 
+: 1924 2 1 the 
+: 1932 4 3 stur
+: 1937 2 4 dy 
+: 1944 7 6 kind
+- 1951
+: 1954 1 8 That 
+: 1958 2 6 does
+: 1962 3 4 n't 
+: 1967 9 3 mind 
+: 1978 1 4 the 
+: 1985 31 6 snow
+- 2016
+: 2040 1 -4 It's 
+: 2046 2 -3 be
+: 2051 2 -1 gin
+: 2054 6 1 ning 
+: 2063 4 -1 to 
+: 2069 4 -2 look 
+: 2076 5 -1 a 
+: 2082 4 1 lot 
+: 2096 15 4 like 
+: 2119 2 8 Christ
+: 2131 21 11 mas
+- 2152 2169
+- 2169
+: 2195 7 11 Soon
+: 2204 11 8 ~ 
+: 2216 2 8 the 
+: 2223 15 6 bells 
+: 2243 4 4 will 
+: 2255 22 1 start
+- 2277 2279
+- 2279
+: 2305 2 1 And 
+: 2310 1 3 the 
+: 2315 6 4 thing 
+: 2324 1 6 that 
+: 2327 3 4 will 
+: 2332 2 3 make 
+: 2337 4 4 them 
+: 2344 11 3 ring
+- 2355
+: 2376 2 1 Is 
+: 2382 2 1 the 
+: 2389 4 -1 car
+: 2394 3 1 ol 
+: 2400 2 4 that 
+: 2405 3 8 you 
+: 2411 23 11 sing
+- 2434
+: 2444 6 -1 Right 
+: 2452 5 1 with
+: 2460 21 9 in 
+: 2484 3 1 your
+: 2488 19 3 ~
+: 2508 6 -1 ~ 
+: 2517 22 4 heart
+- 2539 3066
+- 3066
+: 3092 2 11 It's 
+: 3103 3 8 be
+: 3109 2 11 gin
+: 3112 5 11 ning 
+: 3121 2 8 to 
+: 3125 2 6 look 
+: 3131 5 4 a 
+: 3138 4 3 lot 
+: 3152 14 1 like 
+: 3175 2 -3 Christ
+: 3187 18 -1 mas
+- 3205 3225
+- 3225
+* 3251 2 6 Toys
+* 3255 17 8 ~ 
+* 3276 9 8 in 
+* 3288 3 6 eve
+* 3293 4 4 ry 
+* 3302 49 1 store
+- 3351 3389
+- 3389
+: 3415 2 1 But 
+: 3422 1 3 the 
+: 3428 3 4 pret
+: 3432 1 6 ti
+: 3435 3 4 est 
+: 3444 17 3 sight 
+: 3466 1 4 to 
+: 3474 19 3 see
+- 3493 3501
+- 3501
+: 3527 1 -1 Is
+: 3530 1 1 ~ 
+: 3536 4 1 the 
+: 3545 5 -1 hol
+: 3553 5 1 ly 
+: 3563 6 4 that 
+: 3576 10 8 will 
+: 3589 2 9 be
+: 3593 52 11 ~
+- 3645
+: 3669 7 0 On 
+: 3680 6 1 your 
+: 3689 43 9 own 
+: 3739 19 3 front 
+: 3778 3 6 door
+: 3783 55 8 ~
+- 3838 3885
+- 3885
+: 3911 7 9 Sure 
+: 3923 2 8 it's 
+* 3949 2 -1 Christ
+* 3959 31 1 mas
+- 3990 4006
+- 4006
+: 4032 35 3 Once 
+: 4101 4 -1 a
+: 4110 82 4 more
+E

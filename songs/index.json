@@ -515,6 +515,38 @@
     "local": false
   },
   {
+    "id": "abba-one-of-us",
+    "title": "One Of Us",
+    "artist": "ABBA",
+    "language": "English",
+    "bpm": 329.28,
+    "bar": 4,
+    "gap": 3657.813411078717,
+    "video": "KoT5vV25Qng",
+    "year": "1981",
+    "artistOrigin": "SE",
+    "lastUpdate": "2023-11-30T17:22:31.064Z",
+    "edition": "SingStar ABBA",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 82,
+    "previewStart": 60,
+    "previewEnd": 136,
+    "volume": 0.67,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "One Of Us",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbaoneofus",
+    "local": false
+  },
+  {
     "id": "abba-super-trouper",
     "title": "Super Trouper",
     "artist": "ABBA",
@@ -1382,6 +1414,62 @@
     "local": false
   },
   {
+    "id": "amy-grant-its-the-most-wonderful-time-of-the-year",
+    "title": "It’s The Most Wonderful Time Of The Year",
+    "artist": "Amy Grant",
+    "language": "English",
+    "bpm": 297.5,
+    "bar": 4,
+    "gap": 13491.596638655463,
+    "video": "mCMIyM-Elyw",
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:13.045Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.85,
+    "author": "tigger_75",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3822",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10423",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "amygrantitsthemostwonderfultimeoftheyear",
+    "local": false
+  },
+  {
+    "id": "amy-grant-o-come-all-ye-faithful",
+    "title": "O Come All Ye Faithful",
+    "artist": "Amy Grant",
+    "language": "English",
+    "bpm": 297,
+    "bar": 4,
+    "gap": 12691.596638655463,
+    "video": "psMVs5rFMkY",
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:13.259Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.67,
+    "author": "tigger_75",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3822",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10422",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "amygrantocomeallyefaithful",
+    "local": false
+  },
+  {
     "id": "amy-macdonald-this-is-the-life",
     "title": "This Is The Life",
     "artist": "Amy MacDonald",
@@ -1515,6 +1603,66 @@
     ],
     "tracksCount": 1,
     "search": "andrzejzauchagumisie",
+    "local": false
+  },
+  {
+    "id": "andy-borg-stille-nacht-heilige-nacht",
+    "title": "Stille Nacht, heilige Nacht",
+    "artist": "Andy Borg",
+    "language": "German",
+    "bpm": 224,
+    "bar": 4,
+    "gap": 22495.535714285714,
+    "video": "M069q3E2caI",
+    "year": "1984",
+    "artistOrigin": "AT",
+    "lastUpdate": "2023-11-30T16:28:13.260Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=93",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "andyborgstillenachtheiligenacht",
+    "local": false
+  },
+  {
+    "id": "andy-williams-its-the-most-wonderful-time-of-the-year",
+    "title": "It’s The Most Wonderful Time Of The Year",
+    "artist": "Andy Williams",
+    "language": "English",
+    "bpm": 219.62,
+    "bar": 4,
+    "gap": 5945.503141790365,
+    "video": "cbZTfrhcamA",
+    "year": "1963",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:13.417Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 101,
+    "previewStart": 8,
+    "previewEnd": 49,
+    "volume": 0.82,
+    "author": "lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "andywilliamsitsthemostwonderfultimeoftheyear",
     "local": false
   },
   {
@@ -2184,6 +2332,34 @@
     "local": false
   },
   {
+    "id": "ariana-grande-santa-tell-me",
+    "title": "Santa tell me",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "bpm": 384.55,
+    "bar": 4,
+    "gap": 9608.827590690418,
+    "video": "nlR0MkrRklg",
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:13.419Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.81,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ariana%20Grande&cancion=Santa%20tell%20me",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandesantatellme",
+    "local": false
+  },
+  {
     "id": "ariana-grande-the-weeknd-love-me-harder",
     "title": "Love Me Harder",
     "artist": "Ariana Grande & The Weeknd",
@@ -2208,6 +2384,37 @@
     ],
     "tracksCount": 1,
     "search": "arianagrandetheweekndlovemeharder",
+    "local": false
+  },
+  {
+    "id": "ashanti-we-wish-you-a-merry-christmas",
+    "title": "We Wish You A Merry Christmas",
+    "artist": "Ashanti",
+    "language": "English",
+    "bpm": 278.78,
+    "bar": 4,
+    "gap": 3467.688499892388,
+    "video": "4I5pTQ9Tr_s",
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:13.420Z",
+    "edition": "Christmas",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 155,
+    "previewStart": 22,
+    "previewEnd": 52,
+    "volume": 0.69,
+    "author": "britneyblisswilliams",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8929",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5929",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ashantiwewishyouamerrychristmas",
     "local": false
   },
   {
@@ -2845,6 +3052,36 @@
     ],
     "tracksCount": 1,
     "search": "bajmmysliislowa",
+    "local": false
+  },
+  {
+    "id": "band-aid-do-they-know-its-christmas",
+    "title": "Do They Know It’s Christmas?",
+    "artist": "Band Aid",
+    "language": "English",
+    "bpm": 239.55,
+    "bar": 4,
+    "gap": 14718.121477770821,
+    "video": "j3fSknbR7Y4",
+    "year": "1984",
+    "lastUpdate": "2023-11-30T16:28:13.575Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 115,
+    "previewStart": 179,
+    "previewEnd": 209,
+    "volume": 0.95,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "https://youtu.be/j3fSknbR7Y4",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bandaiddotheyknowitschristmas",
     "local": false
   },
   {
@@ -3499,6 +3736,35 @@
     "local": false
   },
   {
+    "id": "bing-crosby-white-christmas",
+    "title": "White Christmas",
+    "artist": "Bing Crosby",
+    "language": "English",
+    "bpm": 369,
+    "bar": 4,
+    "gap": 10653.739837398374,
+    "video": "v5ryZdpEHqM",
+    "year": "1942",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:13.717Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=201",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bingcrosbywhitechristmas",
+    "local": false
+  },
+  {
     "id": "bizarrap-shakira-bzrp-music-sessions-vol-53",
     "title": "Bzrp Music Sessions, Vol. 53",
     "artist": "Bizarrap & Shakira",
@@ -3719,6 +3985,36 @@
     ],
     "tracksCount": 1,
     "search": "boano1",
+    "local": false
+  },
+  {
+    "id": "bobby-helms-jingle-bell-rock",
+    "title": "Jingle Bell Rock",
+    "artist": "Bobby Helms",
+    "language": "English",
+    "bpm": 241.8,
+    "bar": 4,
+    "gap": 21677.44416873449,
+    "video": "ZnDmmiiFSUU",
+    "year": "1957",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T12:36:41.871Z",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 119,
+    "previewStart": 39,
+    "previewEnd": 70,
+    "volume": 0.75,
+    "author": "c4_87",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bobbyhelmsjinglebellrock",
     "local": false
   },
   {
@@ -3986,6 +4282,37 @@
     "local": false
   },
   {
+    "id": "boney-m-feliz-navidad",
+    "title": "Feliz navidad",
+    "artist": "Boney M.",
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "bpm": 296,
+    "bar": 4,
+    "gap": 13557.241379310344,
+    "video": "BDFCRcWTkw4",
+    "year": "1981",
+    "lastUpdate": "2023-11-30T16:28:13.851Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 121,
+    "volume": 0.7,
+    "author": "JMz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=5869",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5325",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "boneymfeliznavidad",
+    "local": false
+  },
+  {
     "id": "boney-m-rasputin",
     "title": "Rasputin",
     "artist": "Boney M.",
@@ -4171,6 +4498,36 @@
     "local": false
   },
   {
+    "id": "brenda-lee-rockin-around-the-christmas-tree",
+    "title": "Rockin’ Around The Christmas Tree",
+    "artist": "Brenda Lee",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 9800,
+    "video": "DSHGd4lmLd4",
+    "year": "1958",
+    "lastUpdate": "2023-11-30T16:28:13.994Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 71,
+    "previewStart": 11,
+    "previewEnd": 52,
+    "volume": 0.85,
+    "author": "Tom",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "brendaleerockinaroundthechristmastree",
+    "local": false
+  },
+  {
     "id": "britney-spears-baby-one-more-time",
     "title": "Baby One More Time",
     "artist": "Britney Spears",
@@ -4250,6 +4607,35 @@
     ],
     "tracksCount": 1,
     "search": "britneyspearsimslave4u",
+    "local": false
+  },
+  {
+    "id": "britney-spears-my-only-wish-this-year",
+    "title": "My Only Wish (This Year)",
+    "artist": "Britney Spears",
+    "language": "English",
+    "bpm": 294.27,
+    "bar": 4,
+    "gap": 5380.528086451219,
+    "video": "VkGD-FpYoLA",
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:14.140Z",
+    "edition": "Christmas",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 147,
+    "volume": 0.64,
+    "author": "britneyblisswilliams",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8929",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6276",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "britneyspearsmyonlywishthisyear",
     "local": false
   },
   {
@@ -4492,6 +4878,37 @@
     ],
     "tracksCount": 1,
     "search": "brunomarswheniwasyourman",
+    "local": false
+  },
+  {
+    "id": "bryan-adams-christmas-time",
+    "title": "Christmas Time",
+    "artist": "Bryan Adams",
+    "language": "English",
+    "bpm": 305.03,
+    "bar": 4,
+    "gap": 7636.490181293644,
+    "video": "amk7AiEI43I",
+    "year": "1985",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-30T12:36:42.208Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 77,
+    "previewStart": 105,
+    "previewEnd": 156,
+    "volume": 0.73,
+    "author": "fepo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bryanadamschristmastime",
     "local": false
   },
   {
@@ -4993,6 +5410,37 @@
     "local": false
   },
   {
+    "id": "celine-dion-happy-xmas-war-is-over",
+    "title": "Happy Xmas (War Is Over)",
+    "artist": "Céline Dion",
+    "language": "English",
+    "bpm": 344.44,
+    "bar": 4,
+    "gap": 231.60840785042387,
+    "video": "tC4RNzwbNnI",
+    "year": "1998",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-30T12:36:42.327Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 86,
+    "previewStart": 90,
+    "previewEnd": 143,
+    "volume": 0.66,
+    "author": "britneyblisswilliams",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "celinedionhappyxmaswarisover",
+    "local": false
+  },
+  {
     "id": "celine-dion-i-drove-all-night",
     "title": "I Drove All Night",
     "artist": "Céline Dion",
@@ -5192,6 +5640,35 @@
     "local": false
   },
   {
+    "id": "chris-rea-driving-home-for-christmas",
+    "title": "Driving Home For Christmas",
+    "artist": "Chris Rea",
+    "language": "English",
+    "bpm": 360.4,
+    "bar": 4,
+    "gap": 21871.10987791343,
+    "video": "uSjq7x67kzM",
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T12:36:42.328Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.6,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=617",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chrisreadrivinghomeforchristmas",
+    "local": false
+  },
+  {
     "id": "christina-aguilera-beautiful",
     "title": "Beautiful",
     "artist": "Christina Aguilera",
@@ -5387,6 +5864,37 @@
     "local": false
   },
   {
+    "id": "cliff-richard-mistletoe-and-wine",
+    "title": "Mistletoe and Wine",
+    "artist": "Cliff Richard",
+    "language": "English",
+    "bpm": 249.54,
+    "bar": 4,
+    "gap": 10877.119740322192,
+    "video": "rZCEBibnRM8",
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T16:28:14.141Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 133,
+    "previewStart": 66,
+    "previewEnd": 106,
+    "volume": 0.77,
+    "author": "Currymalker",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cliffrichardmistletoeandwine",
+    "local": false
+  },
+  {
     "id": "colbie-caillat-bubbly",
     "title": "Bubbly",
     "artist": "Colbie Caillat",
@@ -5413,6 +5921,37 @@
     ],
     "tracksCount": 1,
     "search": "colbiecaillatbubbly",
+    "local": false
+  },
+  {
+    "id": "coldplay-christmas-lights",
+    "title": "Christmas Lights",
+    "artist": "Coldplay",
+    "language": "English",
+    "bpm": 262.03,
+    "bar": 4,
+    "gap": 30656.828989047055,
+    "video": "z1rYmzQ8C9Q",
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T16:28:14.142Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 66,
+    "previewStart": 138,
+    "previewEnd": 196,
+    "volume": 0.85,
+    "author": "MuhCow",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "coldplaychristmaslights",
     "local": false
   },
   {
@@ -6124,6 +6663,66 @@
     ],
     "tracksCount": 1,
     "search": "deadoraliveyouspinmeroundlikearecord",
+    "local": false
+  },
+  {
+    "id": "dean-martin-let-it-snow-let-it-snow-let-it-snow",
+    "title": "Let It Snow! Let It Snow! Let It Snow!",
+    "artist": "Dean Martin",
+    "language": "English",
+    "bpm": 229.46,
+    "bar": 4,
+    "gap": 6719.436938900026,
+    "video": "Rnil5LyK_B0",
+    "year": "1959",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:14.142Z",
+    "edition": "Christmas",
+    "genre": "Folk",
+    "videoGap": 0,
+    "realBpm": 115,
+    "previewStart": 10,
+    "previewEnd": 40,
+    "volume": 0.9,
+    "author": "RetroGirl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=157487",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=23226",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deanmartinletitsnowletitsnowletitsnow",
+    "local": false
+  },
+  {
+    "id": "dean-martin-rudolph-the-red-nosed-reindeer",
+    "title": "Rudolph The Red Nosed Reindeer",
+    "artist": "Dean Martin",
+    "language": "English",
+    "bpm": 208.22,
+    "bar": 4,
+    "gap": 6179.023685730792,
+    "video": "M47xvJE6GAg",
+    "year": "1959",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:14.287Z",
+    "edition": "Christmas",
+    "genre": "Folk",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.91,
+    "author": "RetroGirl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=157487",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=23225",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deanmartinrudolphtherednosedreindeer",
     "local": false
   },
   {
@@ -7199,6 +7798,34 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-and-elton-john-merry-christmas",
+    "title": "Merry Christmas",
+    "artist": "Ed Sheeran and Elton John",
+    "language": "English",
+    "bpm": 392.75,
+    "bar": 4,
+    "gap": 474.0019096117122,
+    "video": "Q_yuO8UNGmY",
+    "year": "2021",
+    "lastUpdate": "2023-11-30T16:28:14.288Z",
+    "edition": "Christmas",
+    "genre": "Christmas song, Carol, Pop",
+    "videoGap": 0,
+    "realBpm": 114,
+    "volume": 0.72,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran%20and%20Elton%20John&cancion=Merry%20Christmas",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranandeltonjohnmerrychristmas",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-bad-habits",
     "title": "Bad Habits",
     "artist": "Ed Sheeran",
@@ -7358,6 +7985,33 @@
     ],
     "tracksCount": 1,
     "search": "edsheeranlegohouse",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-perfect",
+    "title": "Perfect",
+    "artist": "Ed sheeran",
+    "language": "English",
+    "bpm": 0,
+    "bar": 4,
+    "gap": null,
+    "video": "2Vv-BfVoq4g",
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.068Z",
+    "videoGap": 0,
+    "realBpm": 1,
+    "volume": 0.5,
+    "author": "Ed Sheeran",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+    "tracks": [
+      {
+        "start": null
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranperfect",
     "local": false
   },
   {
@@ -7858,6 +8512,37 @@
     "local": false
   },
   {
+    "id": "elton-john-step-into-christmas",
+    "title": "Step Into Christmas",
+    "artist": "Elton John",
+    "language": "English",
+    "bpm": 291.9,
+    "bar": 4,
+    "gap": 13973.638232271325,
+    "video": "IbRtGMm96F8",
+    "year": "1973",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.072Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 141,
+    "previewStart": 100,
+    "previewEnd": 144,
+    "volume": 1,
+    "author": "lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohnstepintochristmas",
+    "local": false
+  },
+  {
     "id": "elvis-presley-cant-help-falling-in-love",
     "title": "Can’t Help Falling In Love",
     "artist": "Elvis Presley",
@@ -7941,6 +8626,33 @@
     ],
     "tracksCount": 1,
     "search": "eminemloseyourself",
+    "local": false
+  },
+  {
+    "id": "eminem-mockingbird",
+    "title": "Mockingbird",
+    "artist": "Eminem",
+    "language": "English",
+    "bpm": 450,
+    "bar": 4,
+    "gap": 8970,
+    "video": "S9bCLPwzSC0",
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:31.077Z",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.72,
+    "author": "eminem",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=S9bCLPwzSC0",
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eminemmockingbird",
     "local": false
   },
   {
@@ -8979,6 +9691,35 @@
     "local": false
   },
   {
+    "id": "frank-sinatra-santa-claus-is-coming-to-town",
+    "title": "Santa Claus Is Coming To Town",
+    "artist": "Frank Sinatra",
+    "language": "English",
+    "bpm": 284,
+    "bar": 4,
+    "gap": 5996.478873239436,
+    "video": "ndFTOleoHGs",
+    "year": "1947",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T12:36:42.722Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 141,
+    "volume": 0.75,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=832",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "franksinatrasantaclausiscomingtotown",
+    "local": false
+  },
+  {
     "id": "frankie-goes-to-hollywood-relax",
     "title": "Relax",
     "artist": "Frankie Goes To Hollywood",
@@ -9064,6 +9805,59 @@
     ],
     "tracksCount": 1,
     "search": "franzferdinandtakemeout",
+    "local": false
+  },
+  {
+    "id": "fx-chu",
+    "title": "Chu~♡",
+    "artist": "f(x)",
+    "language": "Korean",
+    "bpm": 250.04,
+    "bar": 4,
+    "gap": 2600.1631738921774,
+    "video": "Cnz2n5VcV4Q",
+    "year": "2009",
+    "lastUpdate": "2023-11-30T17:22:31.079Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.67,
+    "author": "supergamekyu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fxchu",
+    "local": false
+  },
+  {
+    "id": "fx-la-cha-ta",
+    "title": "LA chA TA",
+    "artist": "f(x)",
+    "language": "Korean",
+    "bpm": 228,
+    "bar": 4,
+    "gap": 22043.157894736843,
+    "video": "H7MHZpSNJQc",
+    "year": "2011",
+    "lastUpdate": "2023-11-30T17:22:31.290Z",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.73,
+    "author": "supergamekyu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fxlachata",
     "local": false
   },
   {
@@ -9207,6 +10001,35 @@
     "local": false
   },
   {
+    "id": "george-michael-december-song-i-dreamed-of-christmas",
+    "title": "December song (I dreamed of Christmas)",
+    "artist": "George Michael",
+    "language": "English",
+    "bpm": 295.76,
+    "bar": 4,
+    "gap": 14681.664051934,
+    "video": "l-xzyD00_fI",
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T16:28:14.424Z",
+    "edition": "Christmas",
+    "genre": "Chistmas song",
+    "videoGap": 14,
+    "realBpm": 74,
+    "volume": 0.83,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=December%20song%20(I%20dreamed%20of%20Christmas)",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "georgemichaeldecembersongidreamedofchristmas",
+    "local": false
+  },
+  {
     "id": "gfriend-me-gustas-tu",
     "title": "Me gustas tu",
     "artist": "GFRIEND",
@@ -9262,6 +10085,33 @@
     ],
     "tracksCount": 1,
     "search": "ghostmaryonacross",
+    "local": false
+  },
+  {
+    "id": "girls-generation-snsd-the-boys",
+    "title": "The Boys",
+    "artist": "Girls’ Generation (SNSD)",
+    "language": "English",
+    "bpm": 230,
+    "bar": 4,
+    "gap": 72421.73913043478,
+    "video": "NAf1e1Szw3Y",
+    "year": "2011",
+    "lastUpdate": "2023-11-30T17:22:31.436Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.73,
+    "author": "britneyblisswilliams",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "girlsgenerationsnsdtheboys",
     "local": false
   },
   {
@@ -9509,6 +10359,35 @@
     ],
     "tracksCount": 1,
     "search": "gotyekimbrasomebodythatiusedtoknow",
+    "local": false
+  },
+  {
+    "id": "graham-bonney-o-du-frohliche",
+    "title": "O Du Fröhliche",
+    "artist": "Graham Bonney",
+    "language": "German",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 14500,
+    "video": "NR-_QvA8Bxg",
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T16:28:14.425Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.69,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=889",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "grahambonneyodufrohliche",
     "local": false
   },
   {
@@ -10552,6 +11431,38 @@
     "local": false
   },
   {
+    "id": "idina-menzel-with-michael-buble-baby-its-cold-outside",
+    "title": "Baby It’s Cold Outside",
+    "artist": "Idina Menzel with Michael Bublé",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 43400,
+    "video": "6bbuBubZ1yE",
+    "year": "2014",
+    "lastUpdate": "2023-11-30T16:28:14.556Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 113,
+    "volume": 0.76,
+    "author": "matthu",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=116579",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20441",
+    "tracks": [
+      {
+        "name": "Michael Bublé",
+        "start": 56
+      },
+      {
+        "name": "Idina Menzel",
+        "start": 20
+      }
+    ],
+    "tracksCount": 2,
+    "search": "idinamenzelwithmichaelbublebabyitscoldoutside",
+    "local": false
+  },
+  {
     "id": "igor-kwiatkowski-drobnostka",
     "title": "Drobnostka",
     "artist": "Igor Kwiatkowski",
@@ -10868,6 +11779,34 @@
     ],
     "tracksCount": 1,
     "search": "imaginedragonswrecked",
+    "local": false
+  },
+  {
+    "id": "indira-radic-alen-islamovic-lopov",
+    "title": "Lopov",
+    "artist": "Indira Radic & Alen Islamovic",
+    "language": "Serbian",
+    "bpm": 100,
+    "bar": 4,
+    "gap": 18150,
+    "video": "ADC0rpKUqcY",
+    "year": "2003",
+    "lastUpdate": "2023-11-30T17:22:31.643Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "previewStart": 13,
+    "previewEnd": 47,
+    "volume": 0.5,
+    "author": "Shadowscence",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "indiraradicalenislamoviclopov",
     "local": false
   },
   {
@@ -11428,6 +12367,35 @@
     ],
     "tracksCount": 1,
     "search": "joecockeryoucanleaveyourhaton",
+    "local": false
+  },
+  {
+    "id": "john-lennon-happy-xmas-war-is-over",
+    "title": "Happy Xmas (War Is Over)",
+    "artist": "John Lennon",
+    "language": "English",
+    "bpm": 226,
+    "bar": 4,
+    "gap": 2044.424778761062,
+    "video": "flA5ndOyZbI",
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T12:36:42.723Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 73,
+    "volume": 0.75,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1006",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnlennonhappyxmaswarisover",
     "local": false
   },
   {
@@ -12230,6 +13198,35 @@
     "local": false
   },
   {
+    "id": "kay-starr-everybodys-waitin-for-the-man-with-the-bag",
+    "title": "(Everybody’s Waitin’ For) The Man With The Bag",
+    "artist": "Kay Starr",
+    "language": "English",
+    "bpm": 272.28,
+    "bar": 4,
+    "gap": 5818.373732921992,
+    "video": "cfzK-pXE5-A",
+    "year": "1950",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:14.711Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 141,
+    "volume": 0.67,
+    "author": "lozboorman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=91773",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=19330",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kaystarreverybodyswaitinforthemanwiththebag",
+    "local": false
+  },
+  {
     "id": "kayah-bregovic-spij-kochanie-spij",
     "title": "Śpij kochanie śpij",
     "artist": "Kayah & Bregovic",
@@ -12332,6 +13329,122 @@
     ],
     "tracksCount": 1,
     "search": "kayahtestosteron",
+    "local": false
+  },
+  {
+    "id": "keane-crystal-ball",
+    "title": "Crystal Ball",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 248.5,
+    "bar": 4,
+    "gap": 37973.8430583501,
+    "video": "lKrFfp67NDQ",
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.813Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.74,
+    "author": "Ceptic",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1534",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keanecrystalball",
+    "local": false
+  },
+  {
+    "id": "keane-everybodys-changing",
+    "title": "Everybody’s Changing",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 376,
+    "bar": 4,
+    "gap": 21112.659574468085,
+    "video": "RSNmgE6L8AU",
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.814Z",
+    "edition": "SingStar Rocks!",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.69,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=545",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keaneeverybodyschanging",
+    "local": false
+  },
+  {
+    "id": "keane-somewhere-only-we-know",
+    "title": "Somewhere Only We Know",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 344,
+    "bar": 4,
+    "gap": 24887.093023255813,
+    "video": "Oextk-If8HQ",
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.815Z",
+    "edition": "SingStar The Dome",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 172,
+    "volume": 0.79,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=546",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keanesomewhereonlyweknow",
+    "local": false
+  },
+  {
+    "id": "keane-this-is-the-last-time",
+    "title": "This Is The Last Time",
+    "artist": "Keane",
+    "language": "English",
+    "bpm": 263.4,
+    "bar": 4,
+    "gap": 13484.9430523918,
+    "video": "u86VdOc3asA",
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:31.815Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 0.66,
+    "author": "Ceptic",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=421",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keanethisisthelasttime",
     "local": false
   },
   {
@@ -14222,6 +15335,38 @@
     "local": false
   },
   {
+    "id": "little-mix-silent-night",
+    "title": "Silent Night",
+    "artist": "Little Mix",
+    "language": "English",
+    "bpm": 220.88,
+    "bar": 4,
+    "gap": 3281.3473379210427,
+    "video": "obhHmNqNTcw",
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T16:28:14.865Z",
+    "edition": "Christmas",
+    "genre": "Christmas Songs",
+    "videoGap": 0,
+    "realBpm": 55,
+    "volume": 0.85,
+    "author": "Sing-Girl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=19403",
+    "tracks": [
+      {
+        "start": 15
+      },
+      {
+        "start": 283
+      }
+    ],
+    "tracksCount": 2,
+    "search": "littlemixsilentnight",
+    "local": false
+  },
+  {
     "id": "lizar-ciagle-pada",
     "title": "Ciągle Pada",
     "artist": "Lizar",
@@ -15215,6 +16360,35 @@
     "local": false
   },
   {
+    "id": "mariah-carey-all-i-want-for-christmas-is-you",
+    "title": "All I Want For Christmas Is You",
+    "artist": "Mariah Carey",
+    "language": "English",
+    "bpm": 300.3,
+    "bar": 4,
+    "gap": 6630.9990009990015,
+    "video": "yXQViqx6GMY",
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:15.015Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 150,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mariahcareyalliwantforchristmasisyou",
+    "local": false
+  },
+  {
     "id": "mariah-carey-always-be-my-baby",
     "title": "Always be my baby",
     "artist": "Mariah Carey",
@@ -15830,6 +17004,37 @@
     "local": false
   },
   {
+    "id": "melanie-thornton-wonderful-dream-holidays-are-coming",
+    "title": "Wonderful Dream (Holidays Are Coming)",
+    "artist": "Melanie Thornton",
+    "language": "English",
+    "bpm": 300.22,
+    "bar": 4,
+    "gap": 2150.732795949637,
+    "video": "xbN6HJLxxIY",
+    "year": "2000",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-11-30T16:28:15.017Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 75,
+    "previewStart": 52,
+    "previewEnd": 97,
+    "volume": 0.78,
+    "author": "michas17j",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melaniethorntonwonderfuldreamholidaysarecoming",
+    "local": false
+  },
+  {
     "id": "men-at-work-down-under",
     "title": "Down Under",
     "artist": "Men at Work",
@@ -15992,6 +17197,35 @@
     ],
     "tracksCount": 1,
     "search": "mezotabbkasiawilksacrum",
+    "local": false
+  },
+  {
+    "id": "michael-buble-its-beginning-to-look-a-lot-like-christmas",
+    "title": "It's Beginning to Look a lot Like Christmas",
+    "artist": "Michael Bublé",
+    "language": "English",
+    "bpm": 385.08,
+    "bar": 4,
+    "gap": 22241.22343409162,
+    "video": "bYnqRzJTOYs",
+    "year": "2011",
+    "artistOrigin": "CA",
+    "lastUpdate": "2023-11-30T16:28:15.018Z",
+    "edition": "Christmas",
+    "genre": "Swing",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Bubl%C3%A9&cancion=It's%20Beginning%20to%20Look%20a%20lot%20Like%20Christmas%20(Live)",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michaelbubleitsbeginningtolookalotlikechristmas",
     "local": false
   },
   {
@@ -16566,6 +17800,89 @@
     ],
     "tracksCount": 1,
     "search": "morandiangels",
+    "local": false
+  },
+  {
+    "id": "morat-cuando-nadie-ve",
+    "title": "Cuando nadie ve",
+    "artist": "Morat",
+    "language": "Spanish",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 550,
+    "video": "szeA9tvItJY",
+    "year": "2018",
+    "artistOrigin": "CO",
+    "lastUpdate": "2023-11-30T17:22:31.816Z",
+    "edition": "Let's Sing 12",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.77,
+    "author": "Zevac",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moratcuandonadieve",
+    "local": false
+  },
+  {
+    "id": "morat-no-se-va",
+    "title": "No se va",
+    "artist": "Morat",
+    "language": "Spanish",
+    "bpm": 368,
+    "bar": 4,
+    "gap": 12640.978260869566,
+    "video": "USDX0X-d588",
+    "year": "2019",
+    "artistOrigin": "CO",
+    "lastUpdate": "2023-11-30T17:22:31.817Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.74,
+    "author": "vicktoben (ultrastar-es.org)",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moratnoseva",
+    "local": false
+  },
+  {
+    "id": "morat-y-aitana-presiento",
+    "title": "Presiento",
+    "artist": "Morat y Aitana",
+    "language": "Spanish",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 2730,
+    "video": "ZueYnZFggoQ",
+    "year": "2019",
+    "lastUpdate": "2023-11-30T17:22:31.818Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 180,
+    "volume": 0.72,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moratyaitanapresiento",
     "local": false
   },
   {
@@ -17432,6 +18749,34 @@
     "local": false
   },
   {
+    "id": "nct-dream-fireflies",
+    "title": "Fireflies",
+    "artist": "NCT DREAM",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 14450,
+    "video": "CUr5e6t3kSU",
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-11-30T17:22:32.040Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.68,
+    "author": "Amandine-z-z",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nctdreamfireflies",
+    "local": false
+  },
+  {
     "id": "nelly-furtado-all-good-things-come-to-an-end",
     "title": "All Good Things (Come To An End)",
     "artist": "Nelly Furtado",
@@ -17631,6 +18976,35 @@
     ],
     "tracksCount": 1,
     "search": "netflixtossacointoyourwitcher",
+    "local": false
+  },
+  {
+    "id": "new-kids-on-the-block-merry-merry-christmas",
+    "title": "Merry, Merry Christmas",
+    "artist": "New Kids On The Block",
+    "language": "English",
+    "bpm": 311.74,
+    "bar": 4,
+    "gap": 14389.542567524219,
+    "video": "YNMmoFRllsM",
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:15.174Z",
+    "edition": "Christmas",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.66,
+    "author": "britneyblisswilliams",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8929",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6247",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "newkidsontheblockmerrymerrychristmas",
     "local": false
   },
   {
@@ -17882,6 +19256,35 @@
     ],
     "tracksCount": 1,
     "search": "nickitaylorworldscollide",
+    "local": false
+  },
+  {
+    "id": "nina-mike-leise-rieselt-der-schnee",
+    "title": "Leise rieselt der Schnee",
+    "artist": "Nina & Mike",
+    "language": "German",
+    "bpm": 204,
+    "bar": 4,
+    "gap": 5570.588235294117,
+    "video": "B21ssCKJ4Ws",
+    "year": "2003",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-11-30T16:28:15.348Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 114,
+    "volume": 0.71,
+    "author": "Tom",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=17",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1571",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ninamikeleiserieseltderschnee",
     "local": false
   },
   {
@@ -18975,6 +20378,33 @@
     "local": false
   },
   {
+    "id": "paulina-rubio-feat-morat-mi-nuevo-vicio",
+    "title": "Mi nuevo vicio",
+    "artist": "Paulina Rubio feat. Morat",
+    "language": "Spanish",
+    "bpm": 288,
+    "bar": 4,
+    "gap": 27120.416666666668,
+    "video": "UKbhDRxm3Vc",
+    "year": "2015",
+    "lastUpdate": "2023-11-30T17:22:32.041Z",
+    "genre": "Pop",
+    "videoGap": 20,
+    "realBpm": 144,
+    "volume": 0.78,
+    "author": "jmfb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paulinarubiofeatmoratminuevovicio",
+    "local": false
+  },
+  {
     "id": "paulina-rubio-y-yo-sigo-aqui",
     "title": "Y yo sigo aquí",
     "artist": "Paulina Rubio",
@@ -19639,6 +21069,35 @@
     "local": false
   },
   {
+    "id": "pointer-sisters-christmas-in-new-york",
+    "title": "Christmas in New York",
+    "artist": "Pointer Sisters",
+    "language": "English",
+    "bpm": 251.86,
+    "bar": 4,
+    "gap": 2357.532756293179,
+    "video": "UhD81e6Aass",
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:24.730Z",
+    "edition": "Christmas",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.71,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Pointer%20Sisters&cancion=Christmas%20in%20New%20York",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pointersisterschristmasinnewyork",
+    "local": false
+  },
+  {
     "id": "pokemon-opening-pl",
     "title": "Opening (PL)",
     "artist": "Pokémon",
@@ -19664,6 +21123,34 @@
     ],
     "tracksCount": 1,
     "search": "pokemonopeningpl",
+    "local": false
+  },
+  {
+    "id": "pretenders-have-yourself-a-merry-little-christmas",
+    "title": "Have Yourself A Merry Little Christmas",
+    "artist": "Pretenders",
+    "language": "English",
+    "bpm": 297.5,
+    "bar": 4,
+    "gap": 8821.596638655461,
+    "video": "qOFQy0VDrgA",
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T16:28:24.932Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.93,
+    "author": "tigger_75",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3822",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10425",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pretendershaveyourselfamerrylittlechristmas",
     "local": false
   },
   {
@@ -20110,6 +21597,37 @@
     ],
     "tracksCount": 1,
     "search": "queenradiogaga",
+    "local": false
+  },
+  {
+    "id": "queen-thank-god-its-christmas",
+    "title": "Thank God It’s Christmas",
+    "artist": "Queen",
+    "language": "English",
+    "bpm": 287.85,
+    "bar": 4,
+    "gap": 139.90099009900996,
+    "video": "EIfZXSXRsYI",
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T12:36:43.151Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 72,
+    "previewStart": 91,
+    "previewEnd": 138,
+    "volume": 0.74,
+    "author": "Tom",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "queenthankgoditschristmas",
     "local": false
   },
   {
@@ -21207,6 +22725,63 @@
     "local": false
   },
   {
+    "id": "rolf-zuckowski-und-seine-freunde-gloria-hort-ihr-wie-die-engel-singen",
+    "title": "Gloria (Hört ihr, wie die Engel singen)",
+    "artist": "Rolf Zuckowski und seine Freunde",
+    "language": "German",
+    "bpm": 231.28,
+    "bar": 4,
+    "gap": 20437.153234175024,
+    "video": "53snEGVxAuA",
+    "year": "1987",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-11-30T16:28:25.070Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.78,
+    "author": "Usdx",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=31002",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10991",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rolfzuckowskiundseinefreundegloriahortihrwiedieengelsingen",
+    "local": false
+  },
+  {
+    "id": "rolf-zuckowski-und-seine-freunde-in-der-weihnachtsbackerei",
+    "title": "In der Weihnachtsbäckerei",
+    "artist": "Rolf Zuckowski und seine Freunde",
+    "language": "German",
+    "bpm": 295.5,
+    "bar": 4,
+    "gap": 12029.591836734693,
+    "video": "IFZqDcFU4Ow",
+    "year": "1987",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-11-30T16:28:25.235Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 147,
+    "volume": 0.76,
+    "author": "Tom",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=17",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1564",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rolfzuckowskiundseinefreundeinderweihnachtsbackerei",
+    "local": false
+  },
+  {
     "id": "roxette-it-must-have-been-love",
     "title": "It Must Have Been Love",
     "artist": "Roxette",
@@ -21338,6 +22913,35 @@
     ],
     "tracksCount": 1,
     "search": "rupertholmesescapethepinacoladasong",
+    "local": false
+  },
+  {
+    "id": "rusted-root-send-me-on-my-way",
+    "title": "Send Me On My Way",
+    "artist": "Rusted Root",
+    "language": "English",
+    "bpm": 468.3,
+    "bar": 4,
+    "gap": 7519.046764894298,
+    "video": "IGMabBGydC0",
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.219Z",
+    "videoGap": 0,
+    "realBpm": 119,
+    "previewStart": 107,
+    "previewEnd": 150,
+    "volume": 0.72,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rustedrootsendmeonmyway",
     "local": false
   },
   {
@@ -21823,6 +23427,63 @@
     "local": false
   },
   {
+    "id": "seventeen-hug",
+    "title": "Hug",
+    "artist": "SEVENTEEN",
+    "language": "Korean",
+    "bpm": 300,
+    "bar": 4,
+    "gap": -300,
+    "video": "wV8oKFqO2Gc",
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-11-30T17:22:32.220Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.67,
+    "author": "Amandine-z-z",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "seventeenhug",
+    "local": false
+  },
+  {
+    "id": "shakin-stevens-merry-christmas-everyone",
+    "title": "Merry Christmas Everyone",
+    "artist": "Shakin’ Stevens",
+    "language": "English",
+    "bpm": 202.72,
+    "bar": 4,
+    "gap": 7904.088397790056,
+    "video": "N-PyWfVkjZc",
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T12:36:43.151Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.7,
+    "author": "dereinedervieleist",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4910",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5260",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shakinstevensmerrychristmaseveryone",
+    "local": false
+  },
+  {
     "id": "shakin-stevens-you-drive-me-crazy",
     "title": "You Drive Me Crazy",
     "artist": "Shakin’ Stevens",
@@ -22222,6 +23883,37 @@
     "local": false
   },
   {
+    "id": "sinead-oconnor-silent-night",
+    "title": "Silent Night",
+    "artist": "Sinéad O’Connor",
+    "language": "English",
+    "bpm": 220.88,
+    "bar": 4,
+    "gap": 9291.347337921043,
+    "video": "1uHNygqhBCs",
+    "year": "1991",
+    "artistOrigin": "IE",
+    "lastUpdate": "2023-11-30T16:28:25.237Z",
+    "edition": "Christmas",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 42,
+    "previewStart": 75,
+    "previewEnd": 105,
+    "volume": 1,
+    "author": "britneyblisswilliams",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8929",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6244",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sineadoconnorsilentnight",
+    "local": false
+  },
+  {
     "id": "sixpence-none-the-richer-kiss-me",
     "title": "Kiss Me",
     "artist": "Sixpence None The Richer",
@@ -22330,6 +24022,35 @@
     ],
     "tracksCount": 1,
     "search": "skilletmonster",
+    "local": false
+  },
+  {
+    "id": "slade-merry-xma-everybody",
+    "title": "Merry Xmaƨ Everybody",
+    "artist": "Slade",
+    "language": "English",
+    "bpm": 230.62,
+    "bar": 4,
+    "gap": 6300.120198588973,
+    "video": "PTslBTBl1X8",
+    "year": "1973",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-12-03T14:26:13.162Z",
+    "edition": "Christmas",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.75,
+    "author": "Tom",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slademerryxmaeverybody",
     "local": false
   },
   {
@@ -22916,6 +24637,34 @@
     "local": false
   },
   {
+    "id": "steven-curtis-chapman-the-great-adventure",
+    "title": "The Great Adventure",
+    "artist": "Steven Curtis Chapman",
+    "language": "English",
+    "bpm": 378.29,
+    "bar": 4,
+    "gap": 2138.0696016326965,
+    "video": "aIAuc5DWJ1M",
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.221Z",
+    "genre": "ccm, contemporary christian, christian",
+    "videoGap": 0,
+    "realBpm": 138,
+    "volume": 0.69,
+    "author": "UltraSinger [GitHub] 0.0.1-2023-11-13 and mindtakerr",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stevencurtischapmanthegreatadventure",
+    "local": false
+  },
+  {
     "id": "strachy-na-lachy-dzien-dobry-kocham-cie",
     "title": "Dzien dobry kocham Cie",
     "artist": "Strachy Na Lachy",
@@ -23356,6 +25105,33 @@
     "local": false
   },
   {
+    "id": "taylor-swift-hey-stephen",
+    "title": "Hey Stephen",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 232.06,
+    "bar": 4,
+    "gap": 1340.423166422477,
+    "video": "tMhiHrL7rPE",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.221Z",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.69,
+    "author": "GiantCrab",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftheystephen",
+    "local": false
+  },
+  {
     "id": "taylor-swift-i-knew-you-were-trouble",
     "title": "I Knew You Were Trouble",
     "artist": "Taylor Swift",
@@ -23383,6 +25159,35 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftiknewyouweretrouble",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-love-story",
+    "title": "Love Story",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 238.02,
+    "bar": 4,
+    "gap": 15841.681371313334,
+    "video": "8xg3vE8Ie_E",
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.222Z",
+    "edition": "None",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 119,
+    "volume": 1,
+    "author": "oneoftheboys",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftlovestory",
     "local": false
   },
   {
@@ -23468,6 +25273,62 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftstyle",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-you-belong-with-me",
+    "title": "You Belong With Me",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 260.2,
+    "bar": 4,
+    "gap": 7219.984627209838,
+    "video": "VuNIsY6JdUw",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.223Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 1,
+    "author": "valelcbl",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftyoubelongwithme",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-youre-not-sorry",
+    "title": "You’re Not Sorry",
+    "artist": "Taylor Swift",
+    "language": "English",
+    "bpm": 268.38,
+    "bar": 4,
+    "gap": 13433.963782696177,
+    "video": "DNaSlUYIXBg",
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.223Z",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 0.72,
+    "author": "Deathbird-66",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftyourenotsorry",
     "local": false
   },
   {
@@ -24193,6 +26054,37 @@
     "local": false
   },
   {
+    "id": "the-darkness-christmas-time-dont-let-the-bells-end",
+    "title": "Christmas Time (Don’t Let The Bells End)",
+    "artist": "The Darkness",
+    "language": "English",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 15811.774193548386,
+    "video": "lrVg1toMzuo",
+    "year": "2003",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-11-30T17:22:32.224Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 124,
+    "previewStart": 29,
+    "previewEnd": 69,
+    "volume": 0.74,
+    "author": "ears",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thedarknesschristmastimedontletthebellsend",
+    "local": false
+  },
+  {
     "id": "the-doors-riders-on-the-storm",
     "title": "Riders on the storm",
     "artist": "The Doors",
@@ -24501,6 +26393,39 @@
     "local": false
   },
   {
+    "id": "the-pogues-feat-kirsty-maccoll-fairytale-of-new-york",
+    "title": "Fairytale Of New York",
+    "artist": "The Pogues feat. Kirsty MacColl",
+    "language": "English",
+    "bpm": 222,
+    "bar": 4,
+    "gap": 9246.486486486487,
+    "video": "j9jbdgZidu8",
+    "year": "1987",
+    "lastUpdate": "2023-11-30T16:28:25.540Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 78,
+    "previewStart": 94,
+    "previewEnd": 137,
+    "volume": 0.65,
+    "author": "Caruso",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      },
+      {
+        "start": 1216
+      }
+    ],
+    "tracksCount": 2,
+    "search": "thepoguesfeatkirstymaccollfairytaleofnewyork",
+    "local": false
+  },
+  {
     "id": "the-police-message-in-a-bottle",
     "title": "Message in a bottle",
     "artist": "The Police",
@@ -24657,6 +26582,37 @@
     ],
     "tracksCount": 1,
     "search": "therollingstonessatisfactionicantgetno",
+    "local": false
+  },
+  {
+    "id": "the-ronettes-sleigh-ride",
+    "title": "Sleigh Ride",
+    "artist": "The Ronettes",
+    "language": "English",
+    "bpm": 358.8,
+    "bar": 4,
+    "gap": 24716.655518394648,
+    "video": "DkXIJe8CaIc",
+    "year": "1963",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:25.680Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 92,
+    "previewStart": 59,
+    "previewEnd": 94,
+    "volume": 0.78,
+    "author": "daggeg",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theronettessleighride",
     "local": false
   },
   {
@@ -25558,6 +27514,34 @@
     "local": false
   },
   {
+    "id": "tracy-chapman-o-holy-night",
+    "title": "O Holy Night",
+    "artist": "Tracy Chapman",
+    "language": "English",
+    "bpm": 260,
+    "bar": 4,
+    "gap": 32189.23076923077,
+    "video": "MZWI1GuJwCU",
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T16:28:25.681Z",
+    "edition": "Christmas",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.74,
+    "author": "znxineohp",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1716",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10484",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tracychapmanoholynight",
+    "local": false
+  },
+  {
     "id": "tsa-marsz-wilkow-tv",
     "title": "Marsz wilków (TV)",
     "artist": "TSA",
@@ -26272,6 +28256,34 @@
     "local": false
   },
   {
+    "id": "weezer-perfect-situation",
+    "title": "Perfect Situation",
+    "artist": "Weezer",
+    "language": "English",
+    "bpm": 376,
+    "bar": 4,
+    "gap": 27602.659574468085,
+    "video": "jwv-iRvyDZg",
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-11-30T17:22:32.224Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 94,
+    "volume": 0.67,
+    "author": "gun88",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gun88",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Perfect%20Situation",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weezerperfectsituation",
+    "local": false
+  },
+  {
     "id": "wes-alane-ala-nie-wali-mu-paly",
     "title": "Alane (Ala nie wali mu pały)",
     "artist": "Wes",
@@ -26337,7 +28349,9 @@
     "video": "E8gmARGvPlI",
     "year": "1984",
     "artistOrigin": "GB",
-    "genre": "Pop",
+    "lastUpdate": "2023-11-30T16:28:25.823Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
     "videoGap": 0,
     "realBpm": 108,
     "author": "asb",

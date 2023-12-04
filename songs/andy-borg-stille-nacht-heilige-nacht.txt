@@ -1,0 +1,176 @@
+#ID:andy-borg-stille-nacht-heilige-nacht
+#ARTIST:Andy Borg
+#ARTISTORIGIN:AT
+#TITLE:Stille Nacht, heilige Nacht
+#CREATOR:Canni
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#BPM:224
+#REALBPM:97
+#YEAR:1984
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=93
+#VIDEOID:M069q3E2caI
+#VIDEOGAP:0
+#VOLUME:1
+#GENRE:None
+#LANGUAGE:German
+#LASTUPDATE:2023-11-30T16:28:13.260Z
+#EDITION:Christmas
+#GAP:22495,535714285714
+: 15 15 7 Sti
+: 31 5 9 ~l
+: 37 12 7 le 
+: 51 22 4 Nacht, 
+: 85 15 7 Hei
+: 101 5 9 li
+: 107 9 7 ge 
+: 117 24 4 Nacht. 
+- 141
+: 153 19 14 Al
+: 173 10 14 les 
+: 185 28 11 schläft, 
+: 219 21 12 ein
+: 241 11 12 sam 
+: 253 22 7 wacht. 
+- 275
+: 287 23 9 Nur 
+: 311 8 9 das 
+: 321 17 12 trau
+: 339 5 11 te 
+: 345 9 9 hoch
+: 355 15 7 hei
+: 371 5 9 li
+: 377 11 7 ge 
+: 389 24 4 Paar. 
+- 413
+: 423 21 9 Hol
+: 445 8 9 der 
+: 455 17 12 Kna
+: 473 5 11 be 
+: 479 9 9 im 
+: 489 15 7 loc
+: 505 7 9 ki
+: 513 10 7 gem 
+: 525 24 4 Haar. 
+- 549
+: 557 23 14 Schlaf 
+: 581 9 14 in 
+* 591 17 17 Himm
+: 609 5 14 li
+: 615 9 11 scher 
+* 625 35 12 Ru
+* 661 24 16 ~h! 
+- 685
+: 693 17 12 Schla
+: 711 5 7 f 
+: 717 8 4 in 
+* 727 17 7 Himm
+: 745 5 5 li
+: 751 10 2 scher 
+* 763 32 0 Ruh! 
+- 795 882
+- 882
+: 897 15 7 Sti
+: 913 5 9 ~l
+: 919 11 7 le 
+: 931 24 4 Nacht, 
+: 965 15 7 Hei
+: 981 5 9 li
+: 987 11 7 ge 
+: 999 26 4 Nacht. 
+- 1025
+: 1033 21 14 Hir
+: 1055 11 14 ten 
+: 1067 24 11 erst 
+: 1101 21 12 kund
+: 1123 11 12 ge
+: 1135 24 7 macht. 
+- 1159
+: 1169 21 9 Durch 
+: 1191 9 9 der 
+: 1201 17 12 En
+: 1219 5 11 gel 
+: 1225 9 9 Hal
+: 1235 15 7 le
+: 1251 5 9 ~
+: 1257 11 7 lu
+: 1269 24 4 ja, 
+- 1293
+: 1305 21 9 Tönt 
+: 1327 9 9 es 
+: 1337 15 12 la
+: 1353 7 11 ut 
+: 1361 11 9 von 
+: 1373 15 7 Fe
+: 1389 5 9 rn 
+: 1395 11 7 und 
+: 1407 24 4 Nah. 
+- 1431
+: 1441 19 14 Christ 
+: 1461 11 14 der 
+* 1473 17 17 Ret
+* 1491 5 14 ter 
+: 1497 12 11 ist 
+* 1511 29 12 da
+* 1541 28 16 ~! 
+- 1569
+: 1575 15 12 Chri
+: 1591 5 7 ~st 
+: 1597 11 4 der 
+* 1609 17 7 Ret
+* 1627 5 5 ter 
+: 1633 11 2 ist 
+* 1645 34 0 da! 
+- 1679 1694
+- 1694
+: 1709 15 8 Sti
+: 1725 5 10 ~l
+: 1731 11 8 le 
+: 1743 24 5 Nacht, 
+: 1777 17 8 Hei
+: 1795 5 10 li
+: 1801 11 8 ge 
+: 1813 26 5 Nacht. 
+- 1839
+: 1847 21 15 Got
+: 1869 12 15 tes 
+: 1883 26 12 Sohn, 
+: 1917 19 13 o 
+: 1937 13 13 wie 
+: 1951 24 8 lacht. 
+- 1975
+: 1981 23 10 Lieb 
+: 2005 9 10 aus 
+: 2015 15 13 dei
+: 2031 5 12 ~
+: 2037 11 10 nem 
+: 2049 17 8 gött
+: 2067 5 10 li
+: 2073 9 8 chen 
+: 2083 26 5 Mund, 
+- 2109
+: 2117 19 10 Da 
+: 2137 11 10 uns 
+: 2149 15 13 schlä
+: 2165 7 12 ~gt 
+: 2173 11 10 die 
+: 2185 17 8 ret
+: 2203 5 10 ten
+: 2209 8 8 de 
+: 2221 22 5 Stund, 
+- 2243
+: 2255 19 15 Christ 
+: 2275 9 15 in 
+* 2285 19 18 dei
+: 2305 5 15 ner 
+: 2311 11 12 Ge
+* 2323 31 13 bu
+* 2355 26 17 ~rt! 
+- 2381
+: 2387 17 13 Chri
+: 2405 5 8 ~st 
+: 2411 11 5 in 
+* 2423 17 8 dei
+: 2441 5 6 ner 
+: 2447 11 3 Ge
+* 2459 34 1 burt! 
+E

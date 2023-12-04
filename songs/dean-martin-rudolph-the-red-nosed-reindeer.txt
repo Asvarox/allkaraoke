@@ -1,0 +1,306 @@
+#ID:dean-martin-rudolph-the-red-nosed-reindeer
+#ARTIST:Dean Martin
+#ARTISTORIGIN:US
+#TITLE:Rudolph The Red Nosed Reindeer
+#CREATOR:RetroGirl
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=157487
+#BPM:208,22
+#REALBPM:136
+#YEAR:1959
+#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23225
+#VIDEOID:M47xvJE6GAg
+#VIDEOGAP:0
+#VOLUME:0,91
+#GENRE:Folk
+#LANGUAGE:English
+#LASTUPDATE:2023-11-30T16:28:14.287Z
+#EDITION:Christmas
+#GAP:6179,023685730792
+: 14 2 2 Ru
+: 17 4 4 dolph, 
+: 24 1 2 the 
+: 26 2 -1 red-
+: 32 5 7 nosed 
+: 38 3 4 rein
+: 42 1 4 deer
+: 44 3 2 ~ 
+- 47
+: 60 5 2 Had 
+: 66 1 4 a 
+: 68 2 2 ve
+: 71 2 4 ry 
+: 77 2 7 shi
+: 80 2 4 ny 
+: 84 1 7 nose
+: 86 8 6 ~ 
+- 94
+: 108 3 0 And 
+: 113 2 2 if 
+: 119 2 0 you 
+: 122 4 -3 e
+: 127 2 6 ver 
+: 134 3 4 saw 
+: 138 2 2 it 
+- 140 142
+- 142
+: 156 4 2 You 
+: 161 1 4 would 
+: 163 2 2 e
+: 166 3 4 ven 
+: 173 1 2 say 
+* 175 1 4 it 
+* 179 1 4 glows
+* 181 5 -1 ~ 
+- 186 190
+- 190
+: 204 5 2 All 
+: 210 4 4 of 
+: 216 1 2 the 
+: 218 4 -1 o
+: 224 2 7 ther 
+: 229 4 4 rein
+: 234 1 4 deer
+: 236 3 2 ~ 
+- 239
+: 251 2 2 Used 
+: 257 1 4 to 
+: 259 3 2 laugh 
+: 263 2 4 and 
+: 268 2 7 call 
+: 271 2 4 him 
+: 275 1 7 names
+: 277 6 6 ~ 
+- 283 287
+- 287
+: 301 3 0 They 
+: 305 4 2 ne
+: 310 2 0 ver 
+: 313 2 -3 let 
+: 319 4 6 poor 
+* 325 3 4 Ru
+* 329 7 2 dy 
+- 336
+: 347 4 2 Join 
+: 352 1 4 in 
+: 354 2 2 a
+: 357 2 4 ny 
+: 360 4 2 rein
+: 366 1 4 deer
+: 368 1 9 ~ 
+: 370 1 9 games
+: 372 6 7 ~ 
+- 378 382
+- 382
+: 396 3 4 Then 
+: 402 3 4 one 
+: 409 2 7 fog
+: 412 5 4 gy 
+: 424 2 2 Christ
+: 427 2 -1 mas 
+: 430 7 2 Eve 
+- 437
+: 448 2 0 San
+: 451 1 4 ta 
+: 454 1 2 came
+: 456 6 4 ~ 
+: 463 1 0 to 
+: 466 1 2 say
+: 468 6 -1 ~ 
+- 474 480
+- 480
+: 494 4 -3 Ru
+: 499 4 -3 dolph 
+: 506 3 2 with 
+: 510 4 4 your 
+: 516 4 6 nose 
+: 523 2 6 so 
+: 527 5 6 bright 
+- 532
+: 540 6 7 Won’t 
+: 547 2 4 you 
+: 551 6 6 guide 
+: 559 3 4 my 
+: 565 5 2 sleigh 
+* 571 2 0 to
+* 574 3 0 night
+* 578 3 -3 ~? 
+- 581
+: 590 2 2 Then 
+: 593 3 4 how
+: 597 1 2 ~ 
+: 599 2 2 the 
+: 602 4 -1 rein
+: 609 4 7 deer 
+: 614 3 4 loved 
+: 618 2 2 him 
+- 620 622
+- 622
+: 636 3 2 As 
+: 641 3 4 they 
+: 645 2 2 shou
+: 648 1 4 ted 
+: 650 3 2 out 
+: 655 3 7 with 
+: 660 2 7 glee
+: 663 6 6 ~ 
+- 669 672
+- 672
+: 686 4 0 Ru
+: 691 3 2 dy, 
+: 695 2 0 the 
+* 700 2 -3 red-
+* 704 5 6 nosed 
+: 712 3 4 rein
+: 716 1 2 deer
+: 718 4 2 ~ 
+- 722
+: 734 4 2 You’ll 
+: 739 2 4 go 
+: 742 3 2 down 
+: 746 2 4 in 
+: 751 2 9 his
+: 758 1 4 to
+: 760 11 7 ry 
+- 771 772
+- 772
+F 786 2 2 Ru
+F 789 6 4 dolph, 
+F 796 1 2 the 
+F 798 4 -1 red-
+F 804 5 7 nosed 
+F 810 4 4 rein
+F 816 8 2 deer 
+- 824
+F 835 4 2 Had 
+F 840 1 4 a 
+F 842 3 2 ve
+F 846 1 4 ry 
+F 848 6 2 shi
+F 855 4 7 ny 
+F 861 14 6 nose 
+- 875
+F 885 3 0 And 
+F 889 5 2 if 
+F 895 2 0 you 
+F 898 4 -3 e
+F 904 3 6 ver 
+F 910 5 4 saw 
+F 916 5 2 it 
+- 921
+F 934 4 2 You 
+F 939 1 4 would 
+F 941 2 2 e
+F 944 2 4 ven 
+F 947 4 2 say 
+F 952 4 4 it 
+F 959 19 -1 glows 
+- 978
+F 984 3 2 All 
+F 988 5 4 of 
+F 994 1 2 the 
+F 996 5 -1 o
+F 1002 5 7 ther 
+F 1009 5 4 rein
+F 1015 12 2 deer 
+- 1027
+F 1033 4 2 Used 
+F 1038 1 4 to 
+F 1040 2 2 laugh 
+F 1043 2 4 and 
+F 1046 5 2 call 
+F 1052 5 7 him 
+F 1058 14 6 names 
+- 1072
+F 1083 3 0 They 
+F 1087 5 2 ne
+F 1093 1 0 ver 
+F 1095 5 -3 let 
+F 1102 5 6 poor 
+F 1108 5 4 Ru
+F 1114 11 2 dolph 
+- 1125
+F 1132 4 2 Join 
+F 1137 1 4 in 
+F 1139 2 2 a
+F 1142 2 4 ny 
+F 1145 5 2 rein
+F 1151 5 9 deer 
+F 1158 12 7 game 
+- 1170
+: 1181 4 4 Then 
+: 1187 2 4 one 
+: 1193 3 7 fog
+: 1197 5 4 gy 
+* 1206 3 2 Christ
+* 1210 2 -1 mas 
+* 1213 9 2 Eve 
+- 1222
+: 1235 2 0 San
+: 1239 1 4 ta 
+: 1243 4 2 came 
+: 1249 1 0 to 
+: 1253 8 -1 say 
+- 1261 1267
+- 1267
+: 1281 3 -3 Ru
+: 1285 3 -3 dolph 
+: 1291 3 2 mit 
+: 1295 4 4 your 
+: 1301 5 6 nose 
+: 1308 2 6 so 
+: 1311 8 6 bright 
+- 1319
+: 1328 6 7 Won’t 
+: 1336 2 7 you 
+: 1339 3 6 guide 
+: 1345 3 4 mine 
+: 1353 4 2 sleigh 
+: 1358 2 0 to
+: 1361 4 0 night
+: 1366 3 -3 ~? 
+- 1369
+: 1376 2 2 Then 
+: 1379 2 2 how
+: 1382 3 4 ~ 
+: 1386 1 2 the 
+: 1388 4 -1 rein
+: 1395 3 7 deer 
+: 1400 4 4 loved 
+: 1405 2 2 him 
+- 1407 1408
+- 1408
+: 1422 3 2 As 
+: 1427 2 4 they 
+: 1431 2 2 shou
+: 1434 1 4 ted 
+: 1436 4 2 out 
+: 1443 2 7 with 
+: 1447 2 7 glee
+: 1450 11 6 ~ 
+- 1461
+: 1473 3 0 Ru
+: 1477 5 2 dy, 
+* 1483 1 0 the 
+* 1485 3 -3 red 
+* 1491 3 6 big 
+: 1497 4 4 rein
+: 1503 1 2 deer
+: 1505 7 2 ~ 
+- 1512
+: 1522 4 2 You’ll 
+: 1528 3 2 go 
+: 1534 4 4 down 
+: 1540 4 2 in 
+: 1545 9 9 his
+: 1558 10 2 to
+: 1570 3 7 ry
+: 1574 16 7 ~ 
+- 1590 1605
+- 1605
+F 1619 2 2 Ru
+F 1622 5 2 dolph 
+- 1627 1653
+- 1653
+F 1667 3 2 Ru
+F 1671 6 2 dolph 
+E
