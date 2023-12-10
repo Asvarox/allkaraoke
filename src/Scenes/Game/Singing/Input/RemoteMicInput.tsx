@@ -18,6 +18,12 @@ class RemoteMicInput implements InputInterface {
 
     return val ?? this.frequencies;
   };
+  public clearFrequencies = (deviceId?: string) => {
+    RemoteMicManager.getRemoteMicById(deviceId ?? '')
+      ?.getInput()
+      .clearFrequencies();
+  };
+
   public getVolumes = (deviceId?: string) => {
     const val = RemoteMicManager.getRemoteMicById(deviceId ?? '')
       ?.getInput()

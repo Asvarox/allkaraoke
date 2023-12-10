@@ -16,10 +16,13 @@ class RemoteMicInput {
   getFrequencies = () => {
     const freqs = this.frequencies;
 
-    if (Array.isArray(freqs[0])) {
-      this.frequencies = [freqs[0].at(-1)!];
-    }
     return freqs;
+  };
+
+  clearFrequencies = () => {
+    if (Array.isArray(this.frequencies[0])) {
+      this.frequencies = [this.frequencies[0].at(-1)!];
+    }
   };
   getVolumes = () => this.volumes;
 
@@ -45,6 +48,7 @@ class RemoteMicInput {
     return this.requestReadinessPromise!;
   };
   startMonitoring = async () => {
+    this.connection?.off('data', this.handleRTCData);
     sendMessage(this.connection, 'start-monitor');
 
     this.connection?.on('data', this.handleRTCData);

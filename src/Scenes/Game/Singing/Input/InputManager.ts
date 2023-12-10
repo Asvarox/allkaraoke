@@ -41,6 +41,14 @@ class InputManager {
     return frequencies[input.channel];
   };
 
+  public clearPlayerCachedFrequencies = (playerNumber: number) => {
+    const input = PlayersManager.getPlayer(playerNumber)?.input;
+    // Player got removed
+    if (!input) return 0;
+
+    this.sourceNameToInput(input.source).clearFrequencies(input.deviceId);
+  };
+
   public getPlayerVolume = (playerNumber: number) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     if (!input) {

@@ -71,6 +71,7 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
     return this.frequencies;
   };
   public getVolumes = () => this.volumes;
+  public clearFrequencies = (deviceId?: string) => undefined;
 
   public stopMonitoring = async () => {
     if (!this.startedMonitoring) return;

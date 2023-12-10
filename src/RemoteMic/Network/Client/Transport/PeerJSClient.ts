@@ -8,7 +8,6 @@ import peerJSOptions from 'utils/peerJSOptions';
 export class PeerJSClientTransport extends Listener<[NetworkMessages]> implements ClientTransport {
   private peer: Peer | null = null;
   private connection: DataConnection | null = null;
-  private roomId: string | null = null;
 
   private unavailableIdRetries = 0;
   private unavailableIdRetryTimeout: any = null;

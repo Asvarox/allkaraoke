@@ -65,6 +65,7 @@ class PlayerState {
           frequencyRecords: [...(lastNote.frequencyRecords ?? [])],
         };
       }
+      InputManager.clearPlayerCachedFrequencies(this.number);
     } else {
       this.updatePlayerNotes(currentTimestamp, frequency);
     }

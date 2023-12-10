@@ -76,6 +76,7 @@ class MicInput extends Listener<[[number, number], [number, number]]> implements
     return this.frequencies;
   };
   public getVolumes = () => this.volumes;
+  public clearFrequencies = (deviceId?: string) => undefined;
 
   public stopMonitoring = async () => {
     if (!this.startedMonitoring) return;

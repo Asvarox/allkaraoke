@@ -80,6 +80,12 @@ export class NetworkClient {
         this.connectToServer(roomId, name, silent);
       },
       (reason, event) => {
+        if (reason === 'unavailable-id') {
+          // create new id if the old one is taken
+          this.setClientId(v4());
+          this.connect(roomId, name, silent);
+          return;
+        }
         console.log('closed connection :o', reason, event);
         window.removeEventListener('beforeunload', this.disconnect);
 

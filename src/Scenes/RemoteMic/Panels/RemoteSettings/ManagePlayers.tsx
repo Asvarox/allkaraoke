@@ -55,11 +55,11 @@ const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }
       <RemoteMicEntry
         onClick={() => setOpen(true)}
         data-test="remote-mic-entry"
-        data-id={mic.id}
+        data-id={mic.id ?? mic.name}
         value={permission}
         size="small">
         <PlayerNumberCircle number={mic.number} />
-        <RemoteMicId>{mic.id.slice(-4)}</RemoteMicId>
+        <RemoteMicId>{mic.id?.slice(-4) ?? '????'}</RemoteMicId>
         <RemoteMicName className="ph-no-capture" isSelf={mic.id === RemoteMicClient.getClientId()}>
           {mic.name}
         </RemoteMicName>
