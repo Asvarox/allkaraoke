@@ -8,7 +8,7 @@ updates:
     groups:
       storybook:
         patterns:
-          - "^@storybook*"
+          - "@storybook*"
       eslint:
         patterns:
           - "*eslint*"
@@ -22,3 +22,5 @@ updates:
         patterns:
           - "*vite*"
           - "*vitest*"
+        exclude-patterns:
+          - "@storybook*"
