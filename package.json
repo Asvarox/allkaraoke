@@ -86,7 +86,7 @@
     "@remotion/cli": "^4.0.76",
     "@storybook/addon-actions": "^7.5.3",
     "@storybook/addon-docs": "^7.5.3",
-    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-essentials": "^7.6.4",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
     "@storybook/addons": "^7.5.3",
