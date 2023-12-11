@@ -40,7 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@remotion/cli", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.76"],\
           ["@remotion/gif", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.76"],\
           ["@remotion/google-fonts", "npm:4.0.76"],\
-          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.81.1"],\
+          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.86.0"],\
           ["@storybook/addon-actions", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.5.3"],\
           ["@storybook/addon-docs", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.5.3"],\
           ["@storybook/addon-essentials", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.5.3"],\
@@ -6169,58 +6169,71 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@sentry-internal/tracing", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-internal-tracing-npm-7.81.1-478ad1e166-2bae510d77.zip/node_modules/@sentry-internal/tracing/",\
+    ["@sentry-internal/feedback", [\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-internal-feedback-npm-7.86.0-40b8f59e4f-5777bd59d1.zip/node_modules/@sentry-internal/feedback/",\
         "packageDependencies": [\
-          ["@sentry-internal/tracing", "npm:7.81.1"],\
-          ["@sentry/core", "npm:7.81.1"],\
-          ["@sentry/types", "npm:7.81.1"],\
-          ["@sentry/utils", "npm:7.81.1"]\
+          ["@sentry-internal/feedback", "npm:7.86.0"],\
+          ["@sentry/core", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"],\
+          ["@sentry/utils", "npm:7.86.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@sentry-internal/tracing", [\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-internal-tracing-npm-7.86.0-535de8f6c4-b6e71603bc.zip/node_modules/@sentry-internal/tracing/",\
+        "packageDependencies": [\
+          ["@sentry-internal/tracing", "npm:7.86.0"],\
+          ["@sentry/core", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"],\
+          ["@sentry/utils", "npm:7.86.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/browser", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-browser-npm-7.81.1-894c96578e-cd06f364a1.zip/node_modules/@sentry/browser/",\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-browser-npm-7.86.0-f317854fdf-6eed5cdebb.zip/node_modules/@sentry/browser/",\
         "packageDependencies": [\
-          ["@sentry/browser", "npm:7.81.1"],\
-          ["@sentry-internal/tracing", "npm:7.81.1"],\
-          ["@sentry/core", "npm:7.81.1"],\
-          ["@sentry/replay", "npm:7.81.1"],\
-          ["@sentry/types", "npm:7.81.1"],\
-          ["@sentry/utils", "npm:7.81.1"]\
+          ["@sentry/browser", "npm:7.86.0"],\
+          ["@sentry-internal/feedback", "npm:7.86.0"],\
+          ["@sentry-internal/tracing", "npm:7.86.0"],\
+          ["@sentry/core", "npm:7.86.0"],\
+          ["@sentry/replay", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"],\
+          ["@sentry/utils", "npm:7.86.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/core", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-core-npm-7.81.1-0567ade1ed-3bb001c147.zip/node_modules/@sentry/core/",\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-core-npm-7.86.0-3ff0511f68-1913e6f843.zip/node_modules/@sentry/core/",\
         "packageDependencies": [\
-          ["@sentry/core", "npm:7.81.1"],\
-          ["@sentry/types", "npm:7.81.1"],\
-          ["@sentry/utils", "npm:7.81.1"]\
+          ["@sentry/core", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"],\
+          ["@sentry/utils", "npm:7.86.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/react", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-react-npm-7.81.1-adb05263d4-660894a157.zip/node_modules/@sentry/react/",\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-react-npm-7.86.0-58e0c82273-130a0a9164.zip/node_modules/@sentry/react/",\
         "packageDependencies": [\
-          ["@sentry/react", "npm:7.81.1"]\
+          ["@sentry/react", "npm:7.86.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.81.1", {\
-        "packageLocation": "./.yarn/__virtual__/@sentry-react-virtual-797ec32e43/0/cache/@sentry-react-npm-7.81.1-adb05263d4-660894a157.zip/node_modules/@sentry/react/",\
+      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.86.0", {\
+        "packageLocation": "./.yarn/__virtual__/@sentry-react-virtual-2dc282b601/0/cache/@sentry-react-npm-7.86.0-58e0c82273-130a0a9164.zip/node_modules/@sentry/react/",\
         "packageDependencies": [\
-          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.81.1"],\
-          ["@sentry/browser", "npm:7.81.1"],\
-          ["@sentry/types", "npm:7.81.1"],\
-          ["@sentry/utils", "npm:7.81.1"],\
+          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.86.0"],\
+          ["@sentry/browser", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"],\
+          ["@sentry/utils", "npm:7.86.0"],\
           ["@types/react", "npm:18.2.38"],\
           ["hoist-non-react-statics", "npm:3.3.2"],\
           ["react", "npm:18.2.0"]\
@@ -6233,33 +6246,33 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@sentry/replay", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-replay-npm-7.81.1-4270fa53f1-8ba893cc98.zip/node_modules/@sentry/replay/",\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-replay-npm-7.86.0-05e28e905e-74b9fc96ab.zip/node_modules/@sentry/replay/",\
         "packageDependencies": [\
-          ["@sentry/replay", "npm:7.81.1"],\
-          ["@sentry-internal/tracing", "npm:7.81.1"],\
-          ["@sentry/core", "npm:7.81.1"],\
-          ["@sentry/types", "npm:7.81.1"],\
-          ["@sentry/utils", "npm:7.81.1"]\
+          ["@sentry/replay", "npm:7.86.0"],\
+          ["@sentry-internal/tracing", "npm:7.86.0"],\
+          ["@sentry/core", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"],\
+          ["@sentry/utils", "npm:7.86.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/types", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-types-npm-7.81.1-25b2224b06-26164e48ae.zip/node_modules/@sentry/types/",\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-types-npm-7.86.0-09732a404b-37b66fc550.zip/node_modules/@sentry/types/",\
         "packageDependencies": [\
-          ["@sentry/types", "npm:7.81.1"]\
+          ["@sentry/types", "npm:7.86.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/utils", [\
-      ["npm:7.81.1", {\
-        "packageLocation": "./.yarn/cache/@sentry-utils-npm-7.81.1-82f929ee04-12a13adced.zip/node_modules/@sentry/utils/",\
+      ["npm:7.86.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-utils-npm-7.86.0-12987ed1a2-b96e8fec6e.zip/node_modules/@sentry/utils/",\
         "packageDependencies": [\
-          ["@sentry/utils", "npm:7.81.1"],\
-          ["@sentry/types", "npm:7.81.1"]\
+          ["@sentry/utils", "npm:7.86.0"],\
+          ["@sentry/types", "npm:7.86.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16175,7 +16188,7 @@ const RAW_RUNTIME_STATE =
           ["@remotion/cli", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.76"],\
           ["@remotion/gif", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.76"],\
           ["@remotion/google-fonts", "npm:4.0.76"],\
-          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.81.1"],\
+          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.86.0"],\
           ["@storybook/addon-actions", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.5.3"],\
           ["@storybook/addon-docs", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.5.3"],\
           ["@storybook/addon-essentials", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.5.3"],\
