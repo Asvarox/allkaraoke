@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["@types/tinycolor2", "npm:1.4.6"],\
           ["@types/use-persisted-state", "npm:0.3.4"],\
           ["@types/uuid", "npm:9.0.7"],\
-          ["@types/youtube-player", "npm:5.5.10"],\
+          ["@types/youtube-player", "npm:5.5.11"],\
           ["@uriopass/nosleep.js", "npm:0.12.2"],\
           ["@vitejs/plugin-basic-ssl", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.2"],\
           ["@vitejs/plugin-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.2.0"],\
@@ -9698,10 +9698,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/youtube-player", [\
-      ["npm:5.5.10", {\
-        "packageLocation": "./.yarn/cache/@types-youtube-player-npm-5.5.10-0d45d7eda7-a88f0f4827.zip/node_modules/@types/youtube-player/",\
+      ["npm:5.5.11", {\
+        "packageLocation": "./.yarn/cache/@types-youtube-player-npm-5.5.11-612612c1e9-a14e974b5c.zip/node_modules/@types/youtube-player/",\
         "packageDependencies": [\
-          ["@types/youtube-player", "npm:5.5.10"]\
+          ["@types/youtube-player", "npm:5.5.11"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17296,7 +17296,7 @@ const RAW_RUNTIME_STATE =
           ["@types/tinycolor2", "npm:1.4.6"],\
           ["@types/use-persisted-state", "npm:0.3.4"],\
           ["@types/uuid", "npm:9.0.7"],\
-          ["@types/youtube-player", "npm:5.5.10"],\
+          ["@types/youtube-player", "npm:5.5.11"],\
           ["@uriopass/nosleep.js", "npm:0.12.2"],\
           ["@vitejs/plugin-basic-ssl", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.0.2"],\
           ["@vitejs/plugin-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.2.0"],\

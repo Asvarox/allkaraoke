@@ -113,7 +113,7 @@
     "@types/tinycolor2": "^1.4.6",
     "@types/use-persisted-state": "^0.3.4",
     "@types/uuid": "^9.0.7",
-    "@types/youtube-player": "^5.5.10",
+    "@types/youtube-player": "^5.5.11",
     "@vitejs/plugin-basic-ssl": "^1.0.2",
     "@vitejs/plugin-react": "^4.2.0",
     "@vitest/ui": "0.34.6",
