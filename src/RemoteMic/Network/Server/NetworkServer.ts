@@ -4,7 +4,6 @@ import { NetworkMessages } from 'RemoteMic/Network/messages';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
-import { v4 } from 'uuid';
 
 const ROOM_ID_KEY = 'room_id_key';
 
@@ -15,7 +14,10 @@ export class NetworkServer {
 
   public constructor(private transport: ServerTransport) {
     if (!this.roomId) {
-      this.roomId = v4();
+      this.roomId = '';
+      for (let i = 0; i < 5; i++) {
+        this.roomId += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+      }
     }
     this.transportName = transport.name;
 

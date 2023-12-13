@@ -17,7 +17,7 @@ export class PeerJSClientTransport extends Listener<[NetworkMessages]> implement
     onConnect: () => void,
     onClose: (reason: transportCloseReason, originalEvent: any) => void,
   ) => {
-    this.connection = this.peer!.connect(roomId);
+    this.connection = this.peer!.connect(`allkaraoke-party-room-${roomId}`);
 
     this.connection.on('open', () => {
       onConnect();
