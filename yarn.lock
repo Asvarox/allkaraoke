@@ -1767,7 +1767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.23.4":
+"@babel/runtime@npm:^7.23.4, @babel/runtime@npm:^7.23.5":
   version: 7.23.6
   resolution: "@babel/runtime@npm:7.23.6"
   dependencies:
@@ -2967,11 +2967,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.14.18":
-  version: 5.14.18
-  resolution: "@mui/icons-material@npm:5.14.18"
+"@mui/icons-material@npm:^5.15.0":
+  version: 5.15.0
+  resolution: "@mui/icons-material@npm:5.15.0"
   dependencies:
-    "@babel/runtime": "npm:^7.23.2"
+    "@babel/runtime": "npm:^7.23.5"
   peerDependencies:
     "@mui/material": ^5.0.0
     "@types/react": ^17.0.0 || ^18.0.0
@@ -2979,7 +2979,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 20da1445f033edf017d7d447c74fb27e90d4a9f3a631f617252a4806b69364792e01aa7010939c90e37d8ce7adf4218ec27066bd8ec0db40295f64365fd18a5e
+  checksum: 48a1c32a334bafe53723445ce29f73f920150b9421118909fbca37857f635ab802e3f49a247b7bbaf06f0d2b879deed9a9462df4dbd8d3c06cec29638c6a2d12
   languageName: node
   linkType: hard
 
@@ -12625,7 +12625,7 @@ __metadata:
     "@emotion/styled": "npm:^11.11.0"
     "@fontsource/roboto": "npm:^5.0.8"
     "@mdx-js/react": "npm:^3.0.0"
-    "@mui/icons-material": "npm:^5.14.18"
+    "@mui/icons-material": "npm:^5.15.0"
     "@mui/material": "npm:^5.14.20"
     "@mui/system": "npm:^5.14.18"
     "@mui/x-date-pickers": "npm:^6.18.2"
