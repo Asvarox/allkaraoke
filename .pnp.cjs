@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["@types/dom-screen-wake-lock", "npm:1.0.3"],\
           ["@types/latinize", "npm:0.2.18"],\
           ["@types/lodash", "npm:4.14.201"],\
-          ["@types/lodash-es", "npm:4.17.11"],\
+          ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.38"],\
           ["@types/react-dom", "npm:18.2.17"],\
@@ -10544,10 +10544,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/lodash-es", [\
-      ["npm:4.17.11", {\
-        "packageLocation": "./.yarn/cache/@types-lodash-es-npm-4.17.11-c8d3264075-87516f652e.zip/node_modules/@types/lodash-es/",\
+      ["npm:4.17.12", {\
+        "packageLocation": "./.yarn/cache/@types-lodash-es-npm-4.17.12-87dce3f795-56b9a43334.zip/node_modules/@types/lodash-es/",\
         "packageDependencies": [\
-          ["@types/lodash-es", "npm:4.17.11"],\
+          ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/lodash", "npm:4.14.201"]\
         ],\
         "linkType": "HARD"\
@@ -18664,7 +18664,7 @@ const RAW_RUNTIME_STATE =
           ["@types/dom-screen-wake-lock", "npm:1.0.3"],\
           ["@types/latinize", "npm:0.2.18"],\
           ["@types/lodash", "npm:4.14.201"],\
-          ["@types/lodash-es", "npm:4.17.11"],\
+          ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.38"],\
           ["@types/react-dom", "npm:18.2.17"],\
