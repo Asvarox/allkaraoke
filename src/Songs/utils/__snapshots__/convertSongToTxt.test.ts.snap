@@ -10,7 +10,7 @@ exports[`convertSongToTxt > should properly convert the song 1`] = `
 #VIDEOID:W9nZ6u15yis
 #LANGUAGE:Polish
 #GAP:1000
-#TRACKNAMES:[null,\\"test track 2\\"]
+#TRACKNAMES:[null,"test track 2"]
 : 5 10 9 Second 
 * 20 10 10 Third 
 - 40
