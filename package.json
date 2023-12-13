@@ -139,7 +139,7 @@
     "rollup-plugin-visualizer": "^5.9.2",
     "serve": "14.2.1",
     "storybook": "^7.6.4",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "unimported": "^1.30.0",
     "utility-types": "^3.10.0",
