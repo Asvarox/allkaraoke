@@ -1,5 +1,5 @@
-#ID:30-seconds-to-mars-a-beautiful-lie
-#ARTIST:30 Seconds to Mars
+#ID:thirty-seconds-to-mars-a-beautiful-lie
+#ARTIST:Thirty Seconds to Mars
 #ARTISTORIGIN:US
 #TITLE:A Beautiful Lie
 #CREATOR:a beautiful lie 
@@ -13,7 +13,7 @@
 #VOLUME:0,8
 #GENRE:Alternative Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-11-16T06:24:38.002Z
+#LASTUPDATE:2023-12-15T05:36:09.938Z
 #GAP:120391,74803149607
 : 21 3 9 Lie
 : 25 16 11 ~ 
