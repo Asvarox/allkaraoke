@@ -25,6 +25,36 @@
     "local": false
   },
   {
+    "id": "2ne1-i-dont-care",
+    "title": "I Don’t Care",
+    "artist": "2NE1",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 264,
+    "bar": 4,
+    "gap": 17817.272727272728,
+    "video": "4MgAxMO1KD0",
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2023-12-15T05:36:08.381Z",
+    "videoGap": 0,
+    "realBpm": 132,
+    "volume": 0.68,
+    "author": "lyonor",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "2ne1idontcare",
+    "local": false
+  },
+  {
     "id": "3-doors-down-here-without-you",
     "title": "Here without you",
     "artist": "3 Doors Down",
@@ -101,34 +131,6 @@
     ],
     "tracksCount": 1,
     "search": "3doorsdownwhenimgone",
-    "local": false
-  },
-  {
-    "id": "30-seconds-to-mars-a-beautiful-lie",
-    "title": "A Beautiful Lie",
-    "artist": "30 Seconds to Mars",
-    "language": "English",
-    "bpm": 320.04,
-    "bar": 4,
-    "gap": 120391.74803149607,
-    "video": "4Kvd-uquuhI",
-    "year": "2007",
-    "artistOrigin": "US",
-    "lastUpdate": "2023-11-16T06:24:38.002Z",
-    "genre": "Alternative Rock",
-    "videoGap": 80,
-    "realBpm": 160,
-    "volume": 0.8,
-    "author": "a beautiful lie ",
-    "authorUrl": "",
-    "sourceUrl": "https://www.youtube.com/watch?v=4Kvd-uquuhI&ab_channel=ThirtySecondsToMarsVEVO",
-    "tracks": [
-      {
-        "start": 21
-      }
-    ],
-    "tracksCount": 1,
-    "search": "30secondstomarsabeautifullie",
     "local": false
   },
   {
@@ -3256,6 +3258,64 @@
     "local": false
   },
   {
+    "id": "bebe-rexha-y-david-guetta-im-good-blue",
+    "title": "I'm good (Blue)",
+    "artist": "Bebe Rexha y David Guetta",
+    "language": "English",
+    "bpm": 255.91,
+    "bar": 4,
+    "gap": 15571.555937634324,
+    "video": "90RLzVUuXe4",
+    "year": "2022",
+    "lastUpdate": "2023-12-15T05:36:08.384Z",
+    "genre": "Dance, electronic",
+    "videoGap": 2,
+    "realBpm": 128,
+    "previewStart": 33,
+    "previewEnd": 63,
+    "volume": 0.59,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "beberexhaydavidguettaimgoodblue",
+    "local": false
+  },
+  {
+    "id": "bebe-rexha-y-david-guetta-im-good-blue",
+    "title": "I'm good (Blue)",
+    "artist": "Bebe Rexha y David Guetta",
+    "language": "English",
+    "bpm": 255.91,
+    "bar": 4,
+    "gap": 15571.555937634324,
+    "video": "90RLzVUuXe4",
+    "year": "2022",
+    "lastUpdate": "2023-12-15T05:36:08.547Z",
+    "genre": "Dance, electronic",
+    "videoGap": 2,
+    "realBpm": 128,
+    "previewStart": 33,
+    "previewEnd": 63,
+    "volume": 0.59,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "beberexhaydavidguettaimgoodblue",
+    "local": false
+  },
+  {
     "id": "bee-gees-i-started-a-joke",
     "title": "I Started A Joke",
     "artist": "Bee Gees",
@@ -4047,6 +4107,67 @@
     ],
     "tracksCount": 1,
     "search": "bobbyhelmsjinglebellrock",
+    "local": false
+  },
+  {
+    "id": "bohse-onkelz-deutschland-im-herbst",
+    "title": "Deutschland im Herbst",
+    "artist": "Böhse Onkelz",
+    "language": "German",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 76630,
+    "video": "BGtYcU-sWow",
+    "year": "1993",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-12-15T05:36:08.668Z",
+    "edition": "None",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 180,
+    "previewStart": 66,
+    "previewEnd": 90,
+    "volume": 0.68,
+    "author": "fepo",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=11775",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bohseonkelzdeutschlandimherbst",
+    "local": false
+  },
+  {
+    "id": "bohse-onkelz-hier-sind-die-onkelz",
+    "title": "Hier sind die Onkelz",
+    "artist": "Böhse Onkelz",
+    "language": "German",
+    "bpm": 409.72,
+    "bar": 4,
+    "gap": 18131.520062481693,
+    "video": "7vAxgzGg9D4",
+    "year": "1995",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-12-15T05:36:08.669Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 204,
+    "previewStart": 46,
+    "previewEnd": 90,
+    "volume": 0.6,
+    "author": "fepo",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=13059",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bohseonkelzhiersinddieonkelz",
     "local": false
   },
   {
@@ -7098,6 +7219,34 @@
     "local": false
   },
   {
+    "id": "diego-torres-color-esperanza",
+    "title": "Color esperanza",
+    "artist": "Diego Torres",
+    "language": "Spanish",
+    "bpm": 382,
+    "bar": 4,
+    "gap": 3633.157894736842,
+    "video": "Nb1VOQRs-Vs",
+    "year": "2001",
+    "artistOrigin": "AR",
+    "lastUpdate": "2023-12-15T05:36:08.670Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 101,
+    "volume": 0.73,
+    "author": "Hanso",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "diegotorrescoloresperanza",
+    "local": false
+  },
+  {
     "id": "digimon-leb-deinen-traum",
     "title": "Leb deinen Traum",
     "artist": "Digimon",
@@ -7530,6 +7679,33 @@
     "local": false
   },
   {
+    "id": "dragon-ball-z-chala-head-chala",
+    "title": "Chala Head Chala",
+    "artist": "Dragon Ball Z",
+    "language": "Spanish",
+    "bpm": 220,
+    "bar": 4,
+    "gap": 12157.272727272728,
+    "video": "cie7scVUdQE",
+    "year": "1989",
+    "lastUpdate": "2023-12-15T05:36:08.671Z",
+    "genre": "None",
+    "videoGap": 2,
+    "realBpm": 155,
+    "volume": 0.82,
+    "author": "Mat",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dragonballzchalaheadchala",
+    "local": false
+  },
+  {
     "id": "dragon-ball-z-du-wirst-unbesiegbar-sein",
     "title": "Du Wirst Unbesiegbar Sein",
     "artist": "Dragon Ball Z",
@@ -7827,6 +8003,35 @@
     ],
     "tracksCount": 1,
     "search": "dzemwehikulczasu",
+    "local": false
+  },
+  {
+    "id": "dzrt-para-mim-tanto-me-faz",
+    "title": "Para mim tanto me faz",
+    "artist": "D’ZRT",
+    "language": "Portuguese",
+    "bpm": 283.9,
+    "bar": 4,
+    "gap": 7656.12539626629,
+    "video": "hblH8DMMRGs",
+    "year": "2005",
+    "artistOrigin": "PT",
+    "lastUpdate": "2023-12-15T05:36:08.821Z",
+    "edition": "SingStar Pop Hits [PT]",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 142,
+    "volume": 0.73,
+    "author": "rodas fafe",
+    "authorUrl": "hblH8DMMRGs",
+    "sourceUrl": "hblH8DMMRGs",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dzrtparamimtantomefaz",
     "local": false
   },
   {
@@ -8685,6 +8890,34 @@
     ],
     "tracksCount": 1,
     "search": "eminemmockingbird",
+    "local": false
+  },
+  {
+    "id": "enej-zbudujemy-dom",
+    "title": "Zbudujemy dom",
+    "artist": "Enej",
+    "language": "Polish",
+    "bpm": 210,
+    "bar": 4,
+    "gap": 25510,
+    "video": "4SUHlka_Kbs",
+    "year": "2015",
+    "artistOrigin": "PL",
+    "lastUpdate": "2023-12-15T05:36:08.821Z",
+    "genre": "",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.7,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Enej&cancion=Zbudujemy%20dom",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "enejzbudujemydom",
     "local": false
   },
   {
@@ -10372,6 +10605,61 @@
     "local": false
   },
   {
+    "id": "gorillaz-19-2000",
+    "title": "19-2000",
+    "artist": "Gorillaz",
+    "language": "English",
+    "bpm": 359.5,
+    "bar": 4,
+    "gap": 29857.214484679665,
+    "video": "WXR-bCF5dbM",
+    "year": "2001",
+    "lastUpdate": "2023-12-15T05:36:08.822Z",
+    "genre": "Alternative",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.79,
+    "author": "SirSkydrop / LilPeep1337",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gorillaz192000",
+    "local": false
+  },
+  {
+    "id": "gorillaz-clint-eastwood",
+    "title": "Clint Eastwood",
+    "artist": "Gorillaz",
+    "language": "English",
+    "bpm": 297.5,
+    "bar": 4,
+    "gap": 26609.59663865546,
+    "video": "1V_xRb0x9aw",
+    "year": "2001",
+    "lastUpdate": "2023-12-15T05:36:08.949Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.81,
+    "author": "Ampersand",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gorillazclinteastwood",
+    "local": false
+  },
+  {
     "id": "gorillaz-feel-good-inc",
     "title": "Feel Good Inc.",
     "artist": "Gorillaz",
@@ -10396,6 +10684,34 @@
     ],
     "tracksCount": 1,
     "search": "gorillazfeelgoodinc",
+    "local": false
+  },
+  {
+    "id": "gorillaz-on-melancholy-hill",
+    "title": "On Melancholy Hill",
+    "artist": "Gorillaz",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 70840,
+    "video": "04mfKJWDSzI",
+    "year": "2010",
+    "lastUpdate": "2023-12-15T05:36:09.082Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.95,
+    "author": "mugib",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gorillazonmelancholyhill",
     "local": false
   },
   {
@@ -13395,6 +13711,35 @@
     "local": false
   },
   {
+    "id": "kda-ft-madison-beer-gi-dle-lexie-liu-jaira-burns-seraphine-more",
+    "title": "MORE",
+    "artist": "KDA ft. Madison Beer, (G)I-DLE, Lexie Liu, Jaira Burns, Seraphine",
+    "language": "English",
+    "bpm": 284,
+    "bar": 4,
+    "gap": 3564.478873239437,
+    "video": "3VTkBuxU4yk",
+    "year": "2020",
+    "lastUpdate": "2023-12-15T05:36:09.210Z",
+    "genre": "Kpop",
+    "videoGap": 0,
+    "realBpm": 142,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.6,
+    "author": "Currymalker",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kdaftmadisonbeergidlelexieliujairaburnsseraphinemore",
+    "local": false
+  },
+  {
     "id": "keane-crystal-ball",
     "title": "Crystal Ball",
     "artist": "Keane",
@@ -14242,6 +14587,36 @@
     "local": false
   },
   {
+    "id": "la-oreja-de-van-gogh-jueves",
+    "title": "Jueves",
+    "artist": "La Oreja de Van Gogh",
+    "language": "Spanish",
+    "bpm": 210.78,
+    "bar": 4,
+    "gap": 30773.700540848276,
+    "video": "cQHkDCaa5Ac",
+    "year": "2008",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-15T05:36:09.352Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 104,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.86,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "laorejadevangoghjueves",
+    "local": false
+  },
+  {
     "id": "la-oreja-de-van-gogh-rosas",
     "title": "Rosas",
     "artist": "La Oreja de Van Gogh",
@@ -14741,6 +15116,35 @@
     ],
     "tracksCount": 1,
     "search": "lanadelreysummertimesadness",
+    "local": false
+  },
+  {
+    "id": "las-ketchup-asereje",
+    "title": "Aserejé",
+    "artist": "Las Ketchup",
+    "language": "Spanish",
+    "bpm": 370,
+    "bar": 4,
+    "gap": 9816.486486486487,
+    "video": "V0PisGe66mY",
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-15T05:36:09.353Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 185,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lasketchupasereje",
     "local": false
   },
   {
@@ -15596,6 +16000,34 @@
     "local": false
   },
   {
+    "id": "loreen-euphoria",
+    "title": "Euphoria",
+    "artist": "Loreen",
+    "language": "English",
+    "bpm": 266.57,
+    "bar": 4,
+    "gap": 9525.132835652925,
+    "video": "Pfo-8z86x80",
+    "year": "2012",
+    "artistOrigin": "SE",
+    "lastUpdate": "2023-12-15T05:36:09.354Z",
+    "genre": "Dance-Pop",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.74,
+    "author": "Loreen",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "loreeneuphoria",
+    "local": false
+  },
+  {
     "id": "loreen-tattoo-en-vivo",
     "title": "Tattoo (En vivo)",
     "artist": "Loreen",
@@ -16203,6 +16635,34 @@
     ],
     "tracksCount": 1,
     "search": "manaclavadoenunbar",
+    "local": false
+  },
+  {
+    "id": "mana-en-el-muelle-de-san-blas",
+    "title": "En el muelle de San Blas",
+    "artist": "Maná",
+    "language": "Spanish",
+    "bpm": 376,
+    "bar": 4,
+    "gap": 27042.659574468085,
+    "video": "teprNzF6J1I",
+    "year": "1997",
+    "artistOrigin": "MX",
+    "lastUpdate": "2023-12-15T05:36:09.355Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 1,
+    "author": "cooly123",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manaenelmuelledesanblas",
     "local": false
   },
   {
@@ -18508,6 +18968,34 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-cancer",
+    "title": "Cancer",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 11700,
+    "video": "wc2s9skF_58",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.356Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 70,
+    "volume": 0.66,
+    "author": "chiio",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromancecancer",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-disenchanted",
     "title": "Disenchanted",
     "artist": "My Chemical Romance",
@@ -18537,6 +19025,124 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-famous-last-words",
+    "title": "Famous Last Words",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 246,
+    "bar": 4,
+    "gap": 1124.3902439024391,
+    "video": "8bbTtPL1jRs",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.356Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.75,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromancefamouslastwords",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-helena",
+    "title": "Helena",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 430,
+    "video": "UCCyoocDxBA",
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.357Z",
+    "edition": "SingStar Pop Hits",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.81,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromancehelena",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-im-not-okay-i-promise",
+    "title": "I’m Not Okay (I Promise)",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 359.6,
+    "bar": 4,
+    "gap": 25798.88765294772,
+    "video": "lIqBXPtolcw",
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.358Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 178,
+    "previewStart": 60,
+    "previewEnd": 91,
+    "volume": 0.45,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromanceimnotokayipromise",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-mama",
+    "title": "Mama",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 211.03,
+    "bar": 4,
+    "gap": 20134.880822631854,
+    "video": "GEvLye15sq0",
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.358Z",
+    "edition": "None",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 209,
+    "volume": 0.75,
+    "author": "synonomy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromancemama",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-teenagers",
     "title": "Teenagers",
     "artist": "My Chemical Romance",
@@ -18563,6 +19169,35 @@
     ],
     "tracksCount": 1,
     "search": "mychemicalromanceteenagers",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-the-ghost-of-you",
+    "title": "The Ghost Of You",
+    "artist": "My Chemical Romance",
+    "language": "English",
+    "bpm": 291.74,
+    "bar": 4,
+    "gap": 17183.102762733943,
+    "video": "uCUpvTMis-Y",
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.359Z",
+    "edition": "[SC]-Songs",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 146,
+    "volume": 0.7,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromancetheghostofyou",
     "local": false
   },
   {
@@ -20526,6 +21161,34 @@
     "local": false
   },
   {
+    "id": "paulo-gonzo-olavo-bilac-jardins-proibidos",
+    "title": "Jardins Proibidos",
+    "artist": "Paulo Gonzo & Olavo Bilac",
+    "language": "Portuguese",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 13685.29411764706,
+    "video": "sIGIuLL_pZE",
+    "year": "1992",
+    "lastUpdate": "2023-12-15T05:36:09.360Z",
+    "edition": "SingStar Pop Hits [PT]",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 75,
+    "volume": 0.66,
+    "author": "wildnight",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paulogonzoolavobilacjardinsproibidos",
+    "local": false
+  },
+  {
     "id": "pearl-jam-alive",
     "title": "Alive",
     "artist": "Pearl Jam",
@@ -21100,6 +21763,62 @@
     ],
     "tracksCount": 1,
     "search": "piotrrubikpsalmdlaciebie",
+    "local": false
+  },
+  {
+    "id": "placebo-feat-david-bowie-without-you-im-nothing",
+    "title": "Without You I’m Nothing",
+    "artist": "Placebo feat. David Bowie",
+    "language": "English",
+    "bpm": 299.45,
+    "bar": 4,
+    "gap": 30048.163299382202,
+    "video": "BLmypIo-wFY",
+    "year": "1998",
+    "lastUpdate": "2023-12-15T05:36:09.522Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 133,
+    "previewStart": 112,
+    "previewEnd": 142,
+    "volume": 0.84,
+    "author": "lava",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4557",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "placebofeatdavidbowiewithoutyouimnothing",
+    "local": false
+  },
+  {
+    "id": "placebo-special-k",
+    "title": "Special K",
+    "artist": "Placebo",
+    "language": "English",
+    "bpm": 299.8,
+    "bar": 4,
+    "gap": 23859.332888592395,
+    "video": "-6FvsKo162U",
+    "year": "2000",
+    "lastUpdate": "2023-12-15T05:36:09.655Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 159,
+    "volume": 0.71,
+    "author": "lava",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4588",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "placebospecialk",
     "local": false
   },
   {
@@ -23098,6 +23817,34 @@
     "local": false
   },
   {
+    "id": "sabaton-back-in-control",
+    "title": "Back in Control",
+    "artist": "Sabaton",
+    "language": "English",
+    "bpm": 430,
+    "bar": 4,
+    "gap": 18441.372093023256,
+    "video": "EmWOznX2uUQ",
+    "year": "2006",
+    "artistOrigin": "SE",
+    "lastUpdate": "2023-12-15T05:36:09.784Z",
+    "genre": "Power Metal",
+    "videoGap": 0,
+    "realBpm": 106,
+    "volume": 0.84,
+    "author": "Sabaton",
+    "authorUrl": "https://www.youtube.com/channel/UCjQhd1APsd5NQhiVZV7GYzg",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sabatonbackincontrol",
+    "local": false
+  },
+  {
     "id": "sanah-feat-daria-zawialow-eldorado",
     "title": "Eldorado",
     "artist": "Sanah feat. Daria Zawiałow",
@@ -24290,6 +25037,35 @@
     "local": false
   },
   {
+    "id": "smash-into-pieces-six-feet-under",
+    "title": "Six Feet Under",
+    "artist": "Smash Into Pieces",
+    "language": "English",
+    "bpm": 387.16,
+    "bar": 4,
+    "gap": 7662.664531459862,
+    "video": "QRgrAEX6sR4",
+    "year": "2023",
+    "artistOrigin": "SE",
+    "lastUpdate": "2023-12-15T05:36:09.785Z",
+    "videoGap": 7,
+    "realBpm": 97,
+    "previewStart": 33,
+    "previewEnd": 66,
+    "volume": 0.65,
+    "author": "askus",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "smashintopiecessixfeetunder",
+    "local": false
+  },
+  {
     "id": "smash-mouth-all-star-but-the-whole-song-is-sung-on-a-c-note",
     "title": "All Star but the whole song is sung on a C Note",
     "artist": "Smash Mouth",
@@ -24481,6 +25257,34 @@
     ],
     "tracksCount": 1,
     "search": "snowpatrolchasingcars",
+    "local": false
+  },
+  {
+    "id": "soda-stereo-de-musica-ligera",
+    "title": "De música ligera",
+    "artist": "Soda Stereo",
+    "language": "Spanish",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 22900,
+    "video": "T_FkEw27XJ0",
+    "year": "1990",
+    "artistOrigin": "AR",
+    "lastUpdate": "2023-12-15T05:36:09.786Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.8,
+    "author": "vssonic",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sodastereodemusicaligera",
     "local": false
   },
   {
@@ -26492,6 +27296,33 @@
     "local": false
   },
   {
+    "id": "the-little-mermaid-part-of-your-world",
+    "title": "Part Of Your World",
+    "artist": "The Little Mermaid",
+    "language": "English",
+    "bpm": 400,
+    "bar": 4,
+    "gap": 6901.5,
+    "video": "SXKlJuO07eM",
+    "year": "1989",
+    "lastUpdate": "2023-12-15T05:36:09.787Z",
+    "genre": "Soundtrack",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 1,
+    "author": "Vikuo",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thelittlemermaidpartofyourworld",
+    "local": false
+  },
+  {
     "id": "the-offspring-pretty-fly-for-a-white-guy",
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
@@ -27125,6 +27956,63 @@
     ],
     "tracksCount": 1,
     "search": "thewhowontgetfooledagain",
+    "local": false
+  },
+  {
+    "id": "thirty-seconds-to-mars-a-beautiful-lie",
+    "title": "A Beautiful Lie",
+    "artist": "Thirty Seconds to Mars",
+    "language": "English",
+    "bpm": 320.04,
+    "bar": 4,
+    "gap": 120391.74803149607,
+    "video": "4Kvd-uquuhI",
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.938Z",
+    "genre": "Alternative Rock",
+    "videoGap": 80,
+    "realBpm": 160,
+    "volume": 0.8,
+    "author": "a beautiful lie ",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=4Kvd-uquuhI&ab_channel=ThirtySecondsToMarsVEVO",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thirtysecondstomarsabeautifullie",
+    "local": false
+  },
+  {
+    "id": "thirty-seconds-to-mars-the-kill-bury-me",
+    "title": "The Kill (Bury Me)",
+    "artist": "Thirty Seconds to Mars",
+    "language": "English",
+    "bpm": 362,
+    "bar": 4,
+    "gap": 7285.5248618784535,
+    "video": "3c4_jTnsegM",
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.940Z",
+    "edition": "[SC]-Songs",
+    "genre": "Alternative Rock",
+    "videoGap": 0,
+    "realBpm": 183,
+    "volume": 0.8,
+    "author": "DarkNox",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=123",
+    "sourceUrl": "https://www.youtube.com/watch?v=3c4_jTnsegM",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thirtysecondstomarsthekillburyme",
     "local": false
   },
   {
@@ -28407,6 +29295,35 @@
     ],
     "tracksCount": 1,
     "search": "vonwegenlisbethbitch",
+    "local": false
+  },
+  {
+    "id": "weezer-buddy-holly",
+    "title": "Buddy Holly",
+    "artist": "Weezer",
+    "language": "English",
+    "bpm": 398.49,
+    "bar": 4,
+    "gap": 1603.6633290672253,
+    "video": "gV5iQJLpVnM",
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-15T05:36:09.941Z",
+    "edition": "Rock Band Track Pack Vol. 1",
+    "genre": "Power Pop",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.75,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weezerbuddyholly",
     "local": false
   },
   {

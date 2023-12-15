@@ -1,0 +1,269 @@
+#ID:bohse-onkelz-deutschland-im-herbst
+#ARTIST:Böhse Onkelz
+#ARTISTORIGIN:DE
+#TITLE:Deutschland im Herbst
+#CREATOR:fepo
+#CREATORURL:
+#BPM:360
+#REALBPM:180
+#YEAR:1993
+#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=11775
+#PREVIEWSTART:66
+#PREVIEWEND:90
+#VIDEOID:BGtYcU-sWow
+#VIDEOGAP:0
+#VOLUME:0,68
+#GENRE:Rock
+#LANGUAGE:German
+#LASTUPDATE:2023-12-15T05:36:08.668Z
+#EDITION:None
+#GAP:76630
+: 24 2 0 Ich 
+: 28 2 0 se
+: 33 2 -2 he 
+: 37 3 -3 al
+: 43 3 -3 le 
+: 53 5 -3 ge
+: 61 2 -3 gen 
+: 65 4 0 al
+: 72 4 0 le 
+- 76
+: 100 4 -1 Je
+: 107 5 0 der 
+: 115 5 -1 ge
+: 124 3 -1 gen 
+: 130 5 0 je
+: 137 4 -3 den 
+- 141
+: 156 2 0 Kei
+: 160 2 -1 ne 
+: 165 3 -3 Ach
+: 171 4 -3 tung 
+: 179 3 -3 vor 
+: 186 3 -1 sich 
+: 193 12 0 selbst 
+- 205
+: 221 2 0 Kei
+: 224 2 0 ne 
+: 229 4 -1 Ach
+: 236 4 0 tung 
+: 244 3 -1 vor 
+: 250 4 2 dem 
+: 257 7 0 Le
+: 267 4 -3 ben 
+- 271
+: 280 2 0 Ich 
+: 284 2 -1 se
+: 287 2 -3 he 
+: 292 5 -3 blin
+: 300 4 -3 den 
+: 307 7 -3 Hass, 
+: 324 2 0 blin
+: 330 2 0 de 
+: 334 9 0 Wut 
+- 343
+: 356 4 -3 Fei
+: 364 4 -1 ge 
+* 371 6 -1 Mor
+: 380 3 -1 de, 
+: 387 2 0 Kin
+: 392 5 -3 der
+: 399 5 -3 blut 
+- 404
+: 409 2 0 Ich 
+: 412 2 0 se
+: 415 2 -2 he 
+: 419 6 -3 brau
+: 427 2 -3 ne 
+: 432 8 -3 Schei
+: 442 2 -3 ße 
+: 448 6 0 tö
+: 456 5 0 ten 
+- 461
+: 472 2 -1 Ich 
+: 476 1 0 se
+: 480 1 0 he 
+: 484 7 -1 Dich 
+- 491 499
+- 499
+: 523 6 4 Deutsch
+: 532 4 4 land 
+: 539 3 7 im 
+: 545 13 4 Herbst 
+- 558 629
+- 629
+: 653 7 4 Deutsch
+: 662 4 4 land 
+: 669 2 7 im 
+: 673 13 4 Herbst 
+- 686 757
+- 757
+: 781 5 -3 Deutsch
+* 789 6 -3 land 
+: 798 2 0 im 
+: 802 15 -3 Herbst 
+- 817 885
+- 885
+: 909 5 0 Deutsch
+: 916 5 0 land 
+: 925 2 0 im 
+: 929 16 0 Herbst 
+- 945 1012
+- 1012
+: 1036 5 4 Deutsch
+: 1044 5 4 land 
+: 1052 2 4 im 
+: 1058 18 4 Herbst 
+- 1076 1281
+- 1281
+: 1305 2 0 Ich 
+: 1310 2 0 hö
+: 1313 2 -2 re 
+: 1317 5 -3 wei
+: 1324 13 -3 ße 
+: 1340 2 -3 Ge
+: 1343 6 0 räu
+: 1351 9 0 sche 
+- 1360
+: 1379 5 -1 Ras
+: 1387 5 0 sen
+* 1395 7 0 rei
+: 1404 2 -1 ne 
+: 1409 6 0 Lie
+: 1417 7 -3 der 
+- 1424
+: 1433 2 0 Ich 
+: 1437 2 0 hö
+: 1441 2 -1 re 
+: 1445 5 -3 hirn
+: 1452 3 -3 lo
+: 1458 2 -3 se 
+: 1465 4 -1 Pa
+: 1472 7 0 ro
+: 1482 6 0 len 
+- 1488
+: 1501 1 0 Von 
+: 1503 2 -3 I
+: 1508 5 -1 dio
+: 1516 6 -1 ten 
+: 1526 3 -1 und 
+: 1532 2 2 Ver
+: 1537 3 0 lie
+: 1543 9 -3 rern 
+- 1552
+: 1561 2 0 Ich 
+: 1564 2 0 hör’ 
+: 1567 2 -2 die 
+: 1570 8 -3 Lü
+: 1580 4 -3 gen 
+: 1587 4 -3 der 
+: 1594 4 -3 Re
+: 1600 5 0 gie
+: 1607 9 0 rung 
+- 1616
+: 1631 2 0 Die 
+: 1635 7 -1 Lü
+: 1644 3 -1 ge 
+: 1649 6 -1 Eu
+: 1658 4 0 res 
+: 1664 6 0 Le
+: 1672 6 -3 bens 
+- 1678
+: 1689 2 0 Ich 
+: 1692 2 0 hör’ 
+: 1695 2 -1 die 
+: 1699 6 -3 Lü
+: 1707 6 -3 gen 
+: 1715 2 -3 ü
+: 1719 4 -1 ber 
+: 1726 6 0 uns 
+- 1732
+: 1745 2 0 Ich 
+: 1749 4 0 hö
+: 1755 4 0 re 
+: 1763 10 -1 Dich 
+- 1773 1779
+- 1779
+: 1803 6 4 Deutsch
+: 1811 6 4 land 
+: 1819 3 7 im 
+: 1824 12 4 Herbst 
+- 1836 1908
+- 1908
+: 1932 5 4 Deutsch
+: 1940 5 4 land 
+: 1948 2 7 im 
+: 1952 19 4 Herbst 
+- 1971 2036
+- 2036
+: 2060 5 -3 Deutsch
+: 2068 6 -3 land 
+: 2077 2 -1 im 
+: 2081 12 -3 Herbst 
+- 2093 2163
+- 2163
+: 2187 5 -3 Deutsch
+: 2195 5 -3 land 
+: 2204 2 -3 im 
+: 2208 13 -3 Herbst 
+- 2221 2292
+- 2292
+: 2316 6 4 Deutsch
+: 2324 5 4 land 
+: 2333 2 4 im 
+: 2337 12 4 Herbst 
+- 2349 3572
+- 3572
+: 3596 6 4 Deutsch
+: 3604 5 4 land 
+: 3612 2 7 im 
+: 3616 12 4 Herbst 
+- 3628 3700
+- 3700
+: 3724 5 4 Deutsch
+: 3731 6 4 land 
+: 3740 2 7 im 
+: 3744 14 4 Herbst 
+- 3758 3828
+- 3828
+: 3852 6 -3 Deutsch
+: 3861 6 -3 land 
+: 3870 2 0 im 
+: 3874 18 -3 Herbst 
+- 3892 3955
+- 3955
+: 3979 5 0 Deutsch
+: 3987 6 0 land 
+: 3996 2 -3 im 
+: 4000 14 0 Herbst 
+- 4014 4083
+- 4083
+: 4107 5 -3 Deutsch
+: 4114 6 -3 land 
+: 4123 2 -3 im 
+: 4127 12 -3 Herbst 
+- 4139 4212
+- 4212
+: 4236 6 -3 Deutsch
+: 4244 6 -3 land 
+: 4253 2 -3 im 
+: 4257 15 -3 Herbst 
+- 4272 4340
+- 4340
+: 4364 6 4 Deutsch
+: 4372 6 4 land 
+: 4380 2 2 im 
+: 4384 13 4 Herbst 
+- 4397 4467
+- 4467
+: 4491 6 -1 Deutsch
+: 4500 6 0 land 
+: 4509 2 0 im 
+: 4514 19 -3 Herbst 
+- 4533 4596
+- 4596
+: 4620 4 4 Deutsch
+: 4627 5 4 land 
+: 4636 2 3 im 
+: 4640 16 4 Herbst 
+E
