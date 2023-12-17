@@ -1,15 +1,19 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import openAndConnectRemoteMic, { connectRemoteMic } from './steps/openAndConnectRemoteMic';
+import { connectRemoteMic, openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
 
-test.beforeEach(async ({ page, context }) => {
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
 
-test('Should properly manage remote mics permission settings', async ({ page, context }) => {
+test('Should properly manage remote mics permission settings', async ({ page, context, browser }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
   await page.getByTestId('settings').click();
   await page.getByTestId('remote-mics-settings').click();
@@ -23,7 +27,7 @@ test('Should properly manage remote mics permission settings', async ({ page, co
   });
 
   await page.getByTestId('quick-connect-phone').click();
-  const remoteMic = await openAndConnectRemoteMic(page, context, 'E2E Test Blue');
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'E2E Test Blue');
   await page.getByTestId('quick-connect-close').click();
 
   await test.step('newly connected phone gets default permission', async () => {

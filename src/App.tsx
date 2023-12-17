@@ -84,7 +84,7 @@ function App() {
                   )}
                 </Route>
                 <Route path="jukebox" component={Jukebox} />
-                <Route path="remote-mic/:roomId">{({ roomId }) => <RemoteMic roomId={roomId!} />}</Route>
+                <Route path="remote-mic/:roomId?">{({ roomId }) => <RemoteMic roomId={roomId} />}</Route>
                 <Route path="phone/:roomId">{({ roomId }) => <Redirect to={`remote-mic/${roomId}`} />}</Route>
                 <Route path="quick-setup" component={QuickSetup} />
                 <Route path="select-input" component={SelectInput} />

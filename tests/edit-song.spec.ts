@@ -1,7 +1,11 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 
-test.beforeEach(async ({ page, context }) => {
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
@@ -12,7 +16,7 @@ test.use({ serviceWorkers: 'block' });
 
 test('Edit song', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
   await page.getByTestId('manage-songs').click();
   await page.getByTestId('edit-songs').click();

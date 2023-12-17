@@ -34,3 +34,8 @@ export const typography = css`
   -webkit-text-stroke: thin black;
   color: white;
 `;
+
+export const mobileMQ = '@media (hover: none)';
+export const desktopMQ = '@media (hover: hover)';
+
+export const landscapeMQ = '  @media (max-height: 500px) and (min-aspect-ratio: 16/10)';

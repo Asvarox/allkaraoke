@@ -5,18 +5,19 @@ import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
 
-const ROOM_ID_KEY = 'room_id_key';
+const GAME_CODE_KEY = 'room_id_key';
+export const GAME_CODE_LENGTH = 5;
 
 export class NetworkServer {
-  private roomId = window.sessionStorage.getItem(ROOM_ID_KEY)!;
+  private gameCode = window.sessionStorage.getItem(GAME_CODE_KEY)!;
   private started = false;
   public transportName: string;
 
   public constructor(private transport: ServerTransport) {
-    if (!this.roomId) {
-      this.roomId = '';
-      for (let i = 0; i < 5; i++) {
-        this.roomId += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+    if (!this.gameCode) {
+      this.gameCode = '';
+      for (let i = 0; i < GAME_CODE_LENGTH; i++) {
+        this.gameCode += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
       }
     }
     this.transportName = transport.name;
@@ -30,11 +31,11 @@ export class NetworkServer {
   public start = () => {
     if (this.started) return;
     this.started = true;
-    console.log('connection started', this.roomId);
-    window.sessionStorage.setItem(ROOM_ID_KEY, this.roomId);
+    console.log('connection started', this.gameCode);
+    window.sessionStorage.setItem(GAME_CODE_KEY, this.gameCode);
 
     this.transport.connect(
-      this.roomId,
+      this.gameCode,
       () => {
         this.transport.addListener((event, sender) => {
           const type = event.t;
@@ -85,5 +86,5 @@ export class NetworkServer {
     );
   };
 
-  public getRoomId = () => this.roomId;
+  public getGameCode = () => this.gameCode;
 }

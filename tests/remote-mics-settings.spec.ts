@@ -1,20 +1,24 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import openAndConnectRemoteMic, { connectRemoteMic } from './steps/openAndConnectRemoteMic';
+import { connectRemoteMic, openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
 
-test.beforeEach(async ({ page, context }) => {
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
 
-test('Should properly reset data settings', async ({ browser, page, context }) => {
+test('Should properly reset data settings', async ({ browser, page }) => {
   const name = 'E2E Test Blue';
 
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('remote-mics').click();
 
-  const remoteMic = await openAndConnectRemoteMic(page, context, name);
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, name);
 
   await remoteMic.reload();
 
@@ -31,11 +35,11 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
 
 test('Should properly manage mics', async ({ browser, page, context }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('remote-mics').click();
 
-  const remoteMic1 = await openAndConnectRemoteMic(page, await browser.newContext(), 'Player 1');
-  const remoteMic2 = await openAndConnectRemoteMic(page, await browser.newContext(), 'Player 2');
+  const remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+  const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 2');
   await expect(remoteMic2.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
 
   await test.step('Changes other players number', async () => {

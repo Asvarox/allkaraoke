@@ -1,9 +1,14 @@
 import { expect, test } from '@playwright/test';
-import { initTestMode, mockSongs } from './helpers';
+import { initTestMode, mockRandom, mockSongs } from './helpers';
 import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
-test.beforeEach(async ({ page, context }) => {
-  await initTestMode({ page, context }, 1);
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
+  await initTestMode({ page, context });
+  await mockRandom({ page, context }, 1);
   await mockSongs({ page, context });
 });
 
@@ -30,7 +35,7 @@ test.skip('Filters - PlayLists', async ({ page }) => {
     }`);
 
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -112,7 +117,7 @@ test('Filters - PlayLists (Christmas)', async ({ page }) => {
     }`);
 
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -170,7 +175,7 @@ test('Filters - PlayLists (Christmas)', async ({ page }) => {
 
 test('Filters - Quick Search', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -234,7 +239,7 @@ test('Filters - Quick Search', async ({ page }) => {
 
 test('Song List - Random song', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await test.step('Random song is selected on song list open', async () => {

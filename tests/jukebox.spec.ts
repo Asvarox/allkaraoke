@@ -1,9 +1,18 @@
 import { expect, test } from '@playwright/test';
 import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
+import initialise from './PageObjects/initialise';
+import { initTestMode } from './helpers';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
+  await initTestMode({ page, context });
+});
+
 test('Jukebox', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('jukebox').click();

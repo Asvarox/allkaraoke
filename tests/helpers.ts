@@ -20,11 +20,14 @@ export const mockSongs = async ({ page }: { page: Page; context: BrowserContext 
   }
 };
 
-export const initTestMode = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
+export const initTestMode = async ({ context }: { page: Page; context: BrowserContext }) => {
+  await context.addInitScript(() => {
+    window.isE2ETests = true;
+  });
+};
+export const mockRandom = async ({ context }: { page: Page; context: BrowserContext }, randomValue = 0.5) => {
   await context.addInitScript((randomValue) => {
     window.Math.random = () => randomValue;
-
-    window.isE2ETests = true;
   }, randomValue);
 };
 

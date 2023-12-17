@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { typography } from 'Elements/cssMixins';
+import { focused, typography } from 'Elements/cssMixins';
 import RemoteMicServer, { isWebsockets } from 'RemoteMic/Network/Server';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { QRCodeSVG } from 'qrcode.react';
@@ -12,10 +12,21 @@ if (isWebsockets) {
   linkObject.searchParams.set('transport', 'websocket');
 }
 
+function RoomCode({ gameCode, ...props }: { gameCode: string }) {
+  return (
+    <GameCode {...props}>
+      {gameCode.split('').map((letter, i) => (
+        <span key={i}>{letter}</span>
+      ))}
+    </GameCode>
+  );
+}
+
 function ConnectRemoteMic() {
   // Validate if the component is rendered in a remote mic or in the "main" game via the URL
-  const [match, params] = useRoute<{ roomId: string }>('remote-mic/:roomId');
-  linkObject.pathname = `${import.meta.env.BASE_URL}remote-mic/${match ? params.roomId : RemoteMicServer.getRoomId()}`;
+  const [match, params] = useRoute<{ gameCode: string }>('remote-mic/:gameCode');
+  const gameCode = match ? params.gameCode : RemoteMicServer.getGameCode();
+  linkObject.pathname = `${import.meta.env.BASE_URL}remote-mic/${gameCode}`;
   const link = linkObject.href;
 
   useEffect(() => {
@@ -31,16 +42,22 @@ function ConnectRemoteMic() {
       </QRCode>
       <Description>
         <QRCodeInstruction>
-          <h3>Use your phone as a microphone</h3>
+          <h3>
+            Game code: <RoomCode gameCode={gameCode} data-test="game-code" />
+          </h3>
           <ol>
             <li>
-              Open <b>Camera App</b> on your phone
+              Go to{' '}
+              <a href={linkObject.origin} target="_blank" rel="noreferrer">
+                allkaraoke.party
+              </a>{' '}
+              on your phone
             </li>
             <li>
-              Point the camera to the <b>QR Code</b> on the left
+              Click on <b>Join game</b>
             </li>
             <li>
-              Open <b>the link</b> that should appear
+              Enter the code <RoomCode gameCode={gameCode} />
             </li>
             <li>Follow the instructions</li>
           </ol>
@@ -94,6 +111,16 @@ const CopyButton = styled.button`
   }
 `;
 
+const GameCode = styled.strong`
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  gap: 1.5rem;
+
+  ${focused};
+`;
+
 const InputCopy = styled.input`
   padding: 1rem;
   box-sizing: border-box;
@@ -139,21 +166,25 @@ const Description = styled.div`
   }
 
   h3 {
-    margin-bottom: 1.9rem;
+    margin-bottom: 1rem;
   }
   h4 {
-    margin: 1.25rem 0;
+    margin: 1rem 0;
   }
 
   ol {
     padding-left: 2.3rem;
-    margin: 1.25rem 0;
+    margin: 0 0 1.25rem 0;
     list-style: decimal inside;
   }
   li {
     color: white;
-    font-size: 1.9rem;
+    font-size: 2rem;
     line-height: 3.2rem;
+
+    ${GameCode} {
+      line-height: 1;
+    }
   }
 `;
 
