@@ -11,7 +11,7 @@ import { uniqBy } from 'lodash-es';
 import { useEffect, useMemo, useState } from 'react';
 
 interface Props {
-  roomId: string;
+  roomId: string | undefined;
   connectionStatus: ConnectionStatuses;
   connectionError?: transportErrorReason;
   isKeepAwakeOn: boolean;

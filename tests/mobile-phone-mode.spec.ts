@@ -1,9 +1,17 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 import navigateWithKeyboard from './steps/navigateWithKeyboard';
-import openAndConnectRemoteMic, { connectRemoteMic } from './steps/openAndConnectRemoteMic';
+import {
+  connectRemoteMic,
+  openAndConnectRemoteMicDirectly,
+  openAndConnectRemoteMicWithCode,
+} from './steps/openAndConnectRemoteMic';
 
-test.beforeEach(async ({ page, context }) => {
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
@@ -15,7 +23,7 @@ test.use({ viewport: { width: 740, height: 360 } }); // Samsung S8+
 
 test('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('dismiss-mobile-mode').click();
   await expect(page.getByTestId('mics')).toBeVisible(); // Singstar Mics is hidden when in Mobile Mode
 });
@@ -23,19 +31,19 @@ test('Mobile phone mode should be dismissible', async ({ page }) => {
 const P1_Name = 'E2E Test Blue';
 const P2_Name = 'E2E Test Red';
 
-test('Mobile phone mode should be playable', async ({ browser, page, browserName }) => {
+test('Mobile phone mode should be playable', async ({ browser, context, page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('enable-mobile-mode').click();
   await page.getByTestId('remote-mics').click();
 
   // Connect blue microphone
-  const remoteMicBluePage = await openAndConnectRemoteMic(page, await browser.newContext(), P1_Name);
+  const remoteMicBluePage = await openAndConnectRemoteMicWithCode(page, browser, P1_Name);
 
   // Connect red microphone
-  const remoteMicRed = await openAndConnectRemoteMic(page, await browser.newContext(), P2_Name);
+  const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, P2_Name);
 
   // Assert auto selection of inputs
   await expect(page.getByTestId('mic-check-p0')).toContainText(P1_Name, { ignoreCase: true });

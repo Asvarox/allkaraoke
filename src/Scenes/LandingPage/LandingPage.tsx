@@ -3,7 +3,8 @@ import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
-import { focused, typography } from 'Elements/cssMixins';
+import { DesktopOnly, MobileOnly } from 'Elements/RWD';
+import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
 import Background from 'Scenes/LandingPage/Background';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
@@ -22,13 +23,17 @@ function LandingPage() {
       <GithubRibbon />
       <Background />
       <Container>
-        <LogoContainer>
-          <LogoIcon />
-          <Logo />
-        </LogoContainer>
-        <PlayButton onClick={() => navigate('quick-setup')} data-test="enter-the-game">
-          Enter the game
-        </PlayButton>
+        <DesktopOnly>
+          <LogoContainer>
+            <LogoIcon />
+            <Logo />
+          </LogoContainer>
+        </DesktopOnly>
+        <DesktopOnly>
+          <PlayButton onClick={() => navigate('quick-setup')} data-test="enter-the-game" focused>
+            Enter the game
+          </PlayButton>
+        </DesktopOnly>
         <Stats>
           <StatSegment>
             <StatsDescription>
@@ -74,11 +79,25 @@ function LandingPage() {
               </StatSubText>
             </StatText>
           </StatSegment>
-          <StatSegment>
+          <ScreenshotSegment>
             <img src={screenshot1} alt="Song list screen" />
             <img src={screenshot2} alt="In-game screen" />
-          </StatSegment>
+          </ScreenshotSegment>
         </Stats>
+        <JoinExistingTip>
+          Using this device as remote microphone?
+          <button onClick={() => navigate('remote-mic')} data-test="join-existing-game">
+            Join existing game
+          </button>
+        </JoinExistingTip>
+        <MobileButtonsContainer>
+          <PlayButton onClick={() => navigate('remote-mic')} data-test="join-existing-game" focused>
+            Join game (with <strong>Game Code</strong>)
+          </PlayButton>
+          <PlayButton onClick={() => navigate('quick-setup')} data-test="enter-the-game">
+            Start new game
+          </PlayButton>
+        </MobileButtonsContainer>
       </Container>
     </>
   );
@@ -96,6 +115,12 @@ const Stats = styled.div`
   padding: 6rem;
   box-sizing: border-box;
   width: 110rem;
+  font-size: 2.5rem;
+  ${mobileMQ} {
+    width: 90%;
+    flex-direction: column;
+    font-size: 5rem;
+  }
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 
@@ -109,30 +134,10 @@ const StatsDescription = styled.span`
   text-align: justify;
 `;
 
-const StatSegment = styled.div`
-  ${typography};
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  img {
-    margin-bottom: 4rem;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    box-shadow: 0 0 2rem white;
-    border-radius: 1rem;
-  }
-  img:last-of-type {
-    margin-bottom: 0;
-  }
-`;
-const StatText = styled.div`
-  height: 7rem;
-`;
+const StatText = styled.div``;
 const StatSubText = styled.div`
   padding-top: 0.5rem;
-  font-size: 1.75rem;
+  font-size: 0.6em;
   text-align: right;
 
   .Typewriter {
@@ -140,13 +145,68 @@ const StatSubText = styled.div`
   }
 `;
 
+const StatSegment = styled.div`
+  ${typography};
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+`;
+
+const ScreenshotSegment = styled(StatSegment)`
+  ${landscapeMQ} {
+    display: none;
+  }
+  ${mobileMQ} {
+    flex-direction: row;
+  }
+  gap: 4rem;
+  img {
+    width: 100%;
+    ${mobileMQ} {
+      // 2rem - the gap (4rem) divided by 2
+      width: calc(50% - 2rem);
+    }
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    box-shadow: 0 0 2rem white;
+    border-radius: 1rem;
+  }
+`;
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  ${landscapeMQ} {
+    flex-direction: row;
+  }
   align-items: center;
   justify-content: center;
   height: 100vh;
   gap: 3rem;
+`;
+
+const MobileButtonsContainer = styled(MobileOnly)`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  //flex: 0.5;
+  width: 90%;
+
+  button {
+    width: 100%;
+    flex: 1;
+    min-height: 30rem;
+  }
+`;
+
+const JoinExistingTip = styled.h3`
+  ${mobileMQ} {
+    display: none;
+  }
+  text-align: right;
+  width: 110rem;
+  margin-top: -2.5rem !important;
 `;
 
 const PlayButton = styled(Button)`
@@ -154,7 +214,8 @@ const PlayButton = styled(Button)`
   padding: 1rem 7rem;
   background: black;
   width: 110rem;
-  ${focused};
+  ${focusable};
+  transform: none;
 `;
 
 export default LandingPage;

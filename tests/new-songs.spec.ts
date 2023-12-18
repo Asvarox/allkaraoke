@@ -1,7 +1,11 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 
-test.beforeEach(async ({ page, context }) => {
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
@@ -19,7 +23,7 @@ test('New songs - displays new song twice by default and doesnt show it in filte
   );
 
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.waitForTimeout(100);
   await page.getByTestId('skip').click();
 
@@ -51,7 +55,7 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
   );
 
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();
@@ -64,7 +68,7 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
 
 test('New songs - doesnt display new songs on first visit', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('skip').click();
 
   await page.getByTestId('sing-a-song').click();

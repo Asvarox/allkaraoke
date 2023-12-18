@@ -44,7 +44,7 @@ export default function BottomBar({ active, setActiveTab }: Props) {
 const Container = styled.div`
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
   display: flex;
   align-items: stretch;
   width: 100%;
@@ -54,7 +54,7 @@ const Container = styled.div`
   @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
     max-width: 400px;
     transform: scale(0.75);
-    transform-origin: bottom left;
+    transform-origin: bottom right;
   }
 `;
 

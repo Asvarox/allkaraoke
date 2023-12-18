@@ -3,7 +3,11 @@ import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
 import { connectRemoteMic, openRemoteMic } from './steps/openAndConnectRemoteMic';
 
-test.beforeEach(async ({ page, context }) => {
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
@@ -18,7 +22,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
   await page.getByTestId('remote-mics').click();
 
   const remoteMic = await openRemoteMic(page, context);

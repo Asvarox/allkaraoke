@@ -14,7 +14,7 @@ import RemoteSongList from 'Scenes/RemoteMic/Panels/RemoteSongList';
 import { useLayoutEffect, useState } from 'react';
 
 interface Props {
-  roomId: string;
+  roomId: string | undefined;
 }
 
 const noSleep = new NoSleep();
@@ -54,7 +54,7 @@ function RemoteMic({ roomId }: Props) {
       }
       setIsKeepAwakeOn(turnOn);
     } catch (e) {
-      console.warn('Couldnt set wakelock', e);
+      console.warn("Couldn't set wakelock", e);
     }
   };
 
@@ -68,41 +68,43 @@ function RemoteMic({ roomId }: Props) {
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
       <Container id="phone-ui-container">
-        {activeTab === 'microphone' && (
-          <Microphone
-            roomId={roomId}
-            monitoringStarted={monitoringStarted}
-            setMonitoringStarted={setMonitoringStarted}
-            connectionStatus={connectionStatus}
-            setIsKeepAwakeOn={setIsKeepAwakeOn}
-            isKeepAwakeOn={isKeepAwakeOn}
-            connectionError={connectionError}
-          />
-        )}
-        {activeTab === 'song-list' && (
-          <RemoteSongList
-            roomId={roomId}
-            monitoringStarted={monitoringStarted}
-            setMonitoringStarted={setMonitoringStarted}
-            connectionStatus={connectionStatus}
-            setIsKeepAwakeOn={setIsKeepAwakeOn}
-            isKeepAwakeOn={isKeepAwakeOn}
-            connectionError={connectionError}
-          />
-        )}
-        {activeTab === 'settings' && (
-          <RemoteSettings
-            roomId={roomId}
-            monitoringStarted={monitoringStarted}
-            setMonitoringStarted={setMonitoringStarted}
-            connectionStatus={connectionStatus}
-            setIsKeepAwakeOn={setIsKeepAwakeOn}
-            isKeepAwakeOn={isKeepAwakeOn}
-            connectionError={connectionError}
-          />
-        )}
-        <BottomBarFiller />
-        <BottomBar setActiveTab={setActiveTab} active={activeTab} />
+        <>
+          {activeTab === 'microphone' && (
+            <Microphone
+              roomId={roomId}
+              monitoringStarted={monitoringStarted}
+              setMonitoringStarted={setMonitoringStarted}
+              connectionStatus={connectionStatus}
+              setIsKeepAwakeOn={setIsKeepAwakeOn}
+              isKeepAwakeOn={isKeepAwakeOn}
+              connectionError={connectionError}
+            />
+          )}
+          {activeTab === 'song-list' && (
+            <RemoteSongList
+              roomId={roomId}
+              monitoringStarted={monitoringStarted}
+              setMonitoringStarted={setMonitoringStarted}
+              connectionStatus={connectionStatus}
+              setIsKeepAwakeOn={setIsKeepAwakeOn}
+              isKeepAwakeOn={isKeepAwakeOn}
+              connectionError={connectionError}
+            />
+          )}
+          {activeTab === 'settings' && (
+            <RemoteSettings
+              roomId={roomId}
+              monitoringStarted={monitoringStarted}
+              setMonitoringStarted={setMonitoringStarted}
+              connectionStatus={connectionStatus}
+              setIsKeepAwakeOn={setIsKeepAwakeOn}
+              isKeepAwakeOn={isKeepAwakeOn}
+              connectionError={connectionError}
+            />
+          )}
+          <BottomBarFiller />
+          <BottomBar setActiveTab={setActiveTab} active={activeTab} />
+        </>
       </Container>
     </>
   );

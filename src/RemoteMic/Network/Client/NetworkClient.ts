@@ -63,7 +63,8 @@ export class NetworkClient {
 
   public connect = (roomId: string, name: string, silent: boolean) => {
     if (this.clientId === null) this.setClientId(v4());
-    this.roomId = roomId;
+    const lcRoomId = roomId.toLowerCase();
+    this.roomId = lcRoomId;
 
     if (this.transport.isConnected()) {
       console.log('not reconnecting', this.transport);
@@ -77,13 +78,13 @@ export class NetworkClient {
       this.clientId,
       this.roomId,
       () => {
-        this.connectToServer(roomId, name, silent);
+        this.connectToServer(lcRoomId, name, silent);
       },
       (reason, event) => {
         if (reason === 'unavailable-id') {
           // create new id if the old one is taken
           this.setClientId(v4());
-          this.connect(roomId, name, silent);
+          this.connect(lcRoomId, name, silent);
           return;
         }
         console.log('closed connection :o', reason, event);
@@ -106,7 +107,7 @@ export class NetworkClient {
 
         if (!this.reconnecting && this.connected) {
           this.reconnecting = true;
-          setTimeout(() => this.reconnect(roomId, name), 1500);
+          setTimeout(() => this.reconnect(lcRoomId, name), 1500);
         }
         this.connected = false;
       },

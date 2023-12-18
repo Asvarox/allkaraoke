@@ -1,9 +1,12 @@
 import { expect, test } from '@playwright/test';
-import { initTestMode, mockSongs, stubUserMedia } from './helpers';
-import openAndConnectRemoteMic from './steps/openAndConnectRemoteMic';
+import { mockSongs, stubUserMedia } from './helpers';
+import { openAndConnectRemoteMicWithCode } from './steps/openAndConnectRemoteMic';
 
-test.beforeEach(async ({ page, context }) => {
-  await initTestMode({ page, context });
+import initialise from './PageObjects/initialise';
+
+let pages: ReturnType<typeof initialise>;
+test.beforeEach(async ({ page, context, browser }) => {
+  pages = initialise(page, context, browser);
   await mockSongs({ page, context });
 });
 
@@ -11,7 +14,7 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
   const { connectDevices, disconnectDevices } = await stubUserMedia({ page, context });
 
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
 
   await page.getByTestId('mics').click();
   await expect(page.getByTestId('advanced-tip')).toBeVisible();
@@ -40,7 +43,7 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
 test('Default device is selected currently selected mic is disconnected', async ({ page, context }) => {
   const { connectDevices, disconnectDevices } = await stubUserMedia({ page, context });
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
 
   const newDevice = {
     id: 'new-device',
@@ -64,7 +67,7 @@ test('Default device is selected currently selected mic is disconnected', async 
 test('Properly labels multichannel devices', async ({ page, context }) => {
   const { connectDevices } = await stubUserMedia({ page, context });
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
 
   const newDevice = {
     id: 'multichannel-device',
@@ -82,14 +85,14 @@ test('Properly labels multichannel devices', async ({ page, context }) => {
   await expect(page.getByTestId('player-0-input')).toContainText('Multichannel (ch 2)', { ignoreCase: true });
 });
 
-test('Remote mic is deselected when it disconnects', async ({ page, context }) => {
+test('Remote mic is deselected when it disconnects', async ({ page, context, browser }) => {
   await stubUserMedia({ page, context });
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
 
   await page.getByTestId('advanced').click();
 
-  const remoteMic = await openAndConnectRemoteMic(page, context, 'Remote Mic Test');
+  const remoteMic = await openAndConnectRemoteMicWithCode(page, browser, 'Remote Mic Test');
 
   await expect(page.getByTestId('player-0-source')).toContainText('Remote microphone', { ignoreCase: true });
   await expect(page.getByTestId('player-0-input')).toContainText('Remote Mic Test', { ignoreCase: true });
@@ -105,7 +108,7 @@ test('Remote mic is deselected when it disconnects', async ({ page, context }) =
 test('Default microphone is selected for built-in', async ({ page, context }) => {
   const { connectDevices } = await stubUserMedia({ page, context });
   await page.goto('/?e2e-test');
-  await page.getByTestId('enter-the-game').click();
+  await pages.landingPage.enterTheGame();
 
   await connectDevices({
     id: 'not-related-device',
