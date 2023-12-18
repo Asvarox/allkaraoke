@@ -6,7 +6,6 @@ import { default as events, default as gameEvents } from 'GameEvents/GameEvents'
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
 import { restoreDefaultColors, switchToChristmasColors } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import BottomBar from 'Scenes/RemoteMic/BottomBar';
-import ConfirmWifiModal from 'Scenes/RemoteMic/Components/ConfrimWifiModal';
 import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/Microphone/ConfirmReadiness';
 import RemoteSettings from 'Scenes/RemoteMic/Panels/RemoteSettings';
@@ -64,7 +63,6 @@ function RemoteMic({ roomId }: Props) {
 
   return (
     <>
-      <ConfirmWifiModal />
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
       <Container id="phone-ui-container">

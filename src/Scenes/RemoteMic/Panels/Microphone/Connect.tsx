@@ -6,6 +6,7 @@ import { MenuButton } from 'Elements/Menu';
 import RemoteMicClient from 'RemoteMic/Network/Client';
 import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import { GAME_CODE_LENGTH } from 'RemoteMic/Network/Server/NetworkServer';
+import ConfirmWifiModal from 'Scenes/RemoteMic/Components/ConfrimWifiModal';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import { MAX_NAME_LENGTH } from 'consts';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
@@ -26,6 +27,7 @@ const usePersistedName = createPersistedState<string>('remote_mic_name');
 function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionError }: Props) {
   const [name, setName] = usePersistedName('');
   const firstInputRef = useRef<HTMLInputElement | null>(null);
+  const secondInputRef = useRef<HTMLInputElement | null>(null);
   const [customRoomId, setCustomRoomId] = useState<string>('');
   const navigate = useSmoothNavigate();
 
@@ -45,8 +47,10 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
   const handleConnect: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
-    if (name === '') {
+    if (!roomId && customRoomId.length !== GAME_CODE_LENGTH) {
       firstInputRef.current?.focus();
+    } else if (name === '') {
+      (secondInputRef.current ?? firstInputRef.current)?.focus();
     } else {
       connectToServer();
     }
@@ -77,6 +81,11 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
 
   return isVisible ? (
     <>
+      <ConfirmWifiModal
+        onClose={() => {
+          firstInputRef.current?.focus();
+        }}
+      />
       <Form onSubmit={handleConnect}>
         {roomId === undefined && (
           <GCInput
@@ -108,7 +117,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
           placeholder="Enter your name…"
           value={name}
           onChange={setName}
-          ref={roomId ? firstInputRef : undefined}
+          ref={roomId ? firstInputRef : secondInputRef}
           disabled={disabled}
           autoFocus
           data-test="player-name-input"
