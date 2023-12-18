@@ -141,7 +141,7 @@
     "storybook": "^7.6.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
-    "unimported": "^1.30.0",
+    "unimported": "^1.31.1",
     "utility-types": "^3.10.0",
     "vite": "^5.0.8",
     "vite-tsconfig-paths": "^4.2.2",
