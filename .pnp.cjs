@@ -101,7 +101,7 @@ const RAW_RUNTIME_STATE =
           ["playwright", "npm:1.40.1"],\
           ["playwright-core", "npm:1.40.1"],\
           ["posthog-js", "npm:1.95.1"],\
-          ["prettier", "npm:2.8.8"],\
+          ["prettier", "npm:3.1.1"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
           ["react", "npm:18.2.0"],\
@@ -18712,7 +18712,7 @@ const RAW_RUNTIME_STATE =
           ["playwright", "npm:1.40.1"],\
           ["playwright-core", "npm:1.40.1"],\
           ["posthog-js", "npm:1.95.1"],\
-          ["prettier", "npm:2.8.8"],\
+          ["prettier", "npm:3.1.1"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
           ["react", "npm:18.2.0"],\
@@ -19450,6 +19450,13 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:2.8.8"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.1.1", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.1.1-072c31ec21/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["prettier-plugin-organize-imports", [\
@@ -19470,7 +19477,7 @@ const RAW_RUNTIME_STATE =
           ["@types/volar__vue-typescript", null],\
           ["@volar/vue-language-plugin-pug", null],\
           ["@volar/vue-typescript", null],\
-          ["prettier", "npm:2.8.8"],\
+          ["prettier", "npm:3.1.1"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
         ],\
         "packagePeers": [\
