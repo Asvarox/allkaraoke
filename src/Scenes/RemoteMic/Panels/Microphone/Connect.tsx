@@ -9,6 +9,7 @@ import { GAME_CODE_LENGTH } from 'RemoteMic/Network/Server/NetworkServer';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import { MAX_NAME_LENGTH } from 'consts';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import posthog from 'posthog-js';
 import { FormEventHandler, useEffect, useRef, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
 
@@ -52,6 +53,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
   };
 
   useEffect(() => {
+    posthog.capture(roomId ? 'remote-mic-qrcode' : 'remote-mic-manual');
     firstInputRef.current?.focus();
   }, []);
   useEffect(() => {
