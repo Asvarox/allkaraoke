@@ -6,16 +6,19 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React, { useEffect } from 'react';
 import storage from 'utils/storage';
 
-interface Props {}
+interface Props {
+  onClose?: () => void;
+}
 
 const CONFIRM_WIFI_KEY = 'confirmed-wifi';
 
-export default function ConfirmWifiModal({}: Props) {
+export default function ConfirmWifiModal({ onClose }: Props) {
   const [closed, setClosed] = React.useState(storage.session.getValue(CONFIRM_WIFI_KEY) ?? false);
 
   const closeModal = () => {
     storage.session.storeValue(CONFIRM_WIFI_KEY, true);
     setClosed(true);
+    onClose?.();
   };
 
   useEffect(() => {
