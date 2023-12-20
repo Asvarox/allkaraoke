@@ -37,7 +37,8 @@ export type SongTXTKeys =
   | 'ARTISTORIGIN'
   | 'BPM'
   | 'GAP'
-  | 'VIDEOID';
+  | 'VIDEOID'
+  | 'VIDEO'; // #VIDEO is used on https://usdb.animux.de
 
 function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'string'): string | undefined;
 function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'array'): string[] | undefined;
@@ -104,21 +105,27 @@ export default function convertTxtToSong(
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
   const title = getPropertyValueFromTxt(text, 'TITLE') ?? '';
   const artist = getPropertyValueFromTxt(text, 'ARTIST') ?? '';
+  const rawVideo = getPropertyValueFromTxt(text, 'VIDEOID') ?? getPropertyValueFromTxt(text, 'VIDEO') ?? '';
+  // Extracting ID from https://usdb.animux.de format
+  const video = rawVideo.match(/=([^,]+)/)?.[0] ?? rawVideo;
 
   const song: Song = {
     id: getPropertyValueFromTxt(text, 'ID') ?? getSongId({ title, artist }),
     title,
     artist,
+    video,
     language: getPropertyValueFromTxt(text, 'LANGUAGE', 'array') ?? [],
     bpm: Number(getPropertyValueFromTxt(text, 'BPM')?.replace(',', '.') ?? 0),
     bar: 4,
     gap: Number(getPropertyValueFromTxt(text, 'GAP')?.replace(',', '.') ?? 0),
-    video: getPropertyValueFromTxt(text, 'VIDEOID') ?? '',
     ...additionalData,
     tracks: [],
   };
 
-  if (song.video === '' && videoLink) {
+  // Either ID is entered or try to parse link
+  if (song.video === '' && videoLink?.length === 11) {
+    song.video = videoLink;
+  } else if (song.video === '' && videoLink) {
     try {
       const linkUrl = new URL(videoLink);
       song.video = linkUrl.searchParams.get('v') || 'Invalid link';
