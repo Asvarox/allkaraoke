@@ -58,6 +58,11 @@ function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type: 'string' |
   return value;
 }
 
+function getEmbeddedYoutubeVideoId(txt: string) {
+  const regex = new RegExp(`#VIDEO\\:v=(.*?),`);
+  return txt.match(regex)?.[1];
+}
+
 const LINE_BREAK_RELATIVE_REGEXP = /- -?\d+ -?\d+/;
 
 export function getVideoId(url: string) {
@@ -105,9 +110,7 @@ export default function convertTxtToSong(
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
   const title = getPropertyValueFromTxt(text, 'TITLE') ?? '';
   const artist = getPropertyValueFromTxt(text, 'ARTIST') ?? '';
-  const rawVideo = getPropertyValueFromTxt(text, 'VIDEOID') ?? getPropertyValueFromTxt(text, 'VIDEO') ?? '';
-  // Extracting ID from https://usdb.animux.de format
-  const video = rawVideo.match(/=(.*?),/)?.[1] ?? rawVideo;
+  const video = getPropertyValueFromTxt(text, 'VIDEOID') ?? getEmbeddedYoutubeVideoId(text) ?? '';
 
   const song: Song = {
     id: getPropertyValueFromTxt(text, 'ID') ?? getSongId({ title, artist }),
