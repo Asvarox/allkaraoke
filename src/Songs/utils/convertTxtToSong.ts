@@ -107,7 +107,7 @@ export default function convertTxtToSong(
   const artist = getPropertyValueFromTxt(text, 'ARTIST') ?? '';
   const rawVideo = getPropertyValueFromTxt(text, 'VIDEOID') ?? getPropertyValueFromTxt(text, 'VIDEO') ?? '';
   // Extracting ID from https://usdb.animux.de format
-  const video = rawVideo.match(/=([^,]+)/)?.[0] ?? rawVideo;
+  const video = rawVideo.match(/=(.*?),/)?.[1] ?? rawVideo;
 
   const song: Song = {
     id: getPropertyValueFromTxt(text, 'ID') ?? getSongId({ title, artist }),
@@ -123,7 +123,7 @@ export default function convertTxtToSong(
   };
 
   // Either ID is entered or try to parse link
-  if (song.video === '' && videoLink?.length === 11) {
+  if (videoLink?.length === 11) {
     song.video = videoLink;
   } else if (song.video === '' && videoLink) {
     try {

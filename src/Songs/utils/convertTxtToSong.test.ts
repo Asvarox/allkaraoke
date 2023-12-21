@@ -35,9 +35,47 @@ E`;
 };
 
 const videoUrl = 'https://www.youtube.com/watch?v=videoUrl';
+const videoId = '12345678901';
 const sourceUrl = 'sourceUrl';
 const author = 'author';
 const authorUrl = 'authorUrl';
+const usdb_animux_de = `
+#ARTIST:Tears For Fears
+#TITLE:Woman In Chains
+#MP3:Tears For Fears - Woman In Chains.mp3
+#CREATOR:Zevac
+#COVER:Tears For Fears - Woman In Chains [CO].jpg
+#BACKGROUND:Tears For Fears - Woman In Chains [BG].jpg
+#YEAR:1989
+#LANGUAGE:English
+#BPM:320
+#GAP:61100
+#VIDEO:v=QzkK3ZtI9SU,co=woman-in-chains-527f82543d19d.jpg,bg=tears-for-fears-629b760b75972.jpg
+#END:380000
+: 0 2 0 You 
+: 4 3 5 bet
+: 8 3 7 ter 
+E
+`;
+
+const usdb_animux_de_notes = [
+  { length: 2, lyrics: 'You ', pitch: 0, start: 0, type: 'normal' },
+  { length: 3, lyrics: 'bet', pitch: 5, start: 4, type: 'normal' },
+  { length: 3, lyrics: 'ter ', pitch: 7, start: 8, type: 'normal' },
+];
+const usdb_animux_de_song = {
+  author: 'Zevac',
+  artist: 'Tears For Fears',
+  title: 'Woman In Chains',
+  id: 'tears-for-fears-woman-in-chains',
+  language: 'English',
+  bpm: 320,
+  bar: 4,
+  gap: 61100,
+  video: 'QzkK3ZtI9SU',
+  year: '1989',
+  tracks: [{ sections: [{ notes: usdb_animux_de_notes, start: 0, type: 'notes' }] }],
+} as any;
 
 const songStub = {
   sourceUrl,
@@ -90,8 +128,8 @@ describe('convertTxtToSong', () => {
 
       const inputSongTxt = generateSongTxt([sections]);
 
-      const expectedSong: Song = { ...songStub, tracks: [{ sections }] };
-      const result = convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl);
+      const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: videoId };
+      const result = convertTxtToSong(inputSongTxt, videoId, author, authorUrl, sourceUrl);
 
       expect(result.tracks).toHaveLength(1);
       expect(result).toEqual(expectedSong);
@@ -123,5 +161,12 @@ describe('convertTxtToSong', () => {
 
       expect(convertTxtToSong(convertSongToTxt(song))).toEqual(song);
     });
+  });
+
+  it('should convert usdb.animux.de format', () => {
+    const parsed = convertTxtToSong(usdb_animux_de);
+    const clean = Object.fromEntries(Object.entries(parsed).filter(([, value]) => value !== undefined));
+
+    expect(clean).toEqual(usdb_animux_de_song);
   });
 });
