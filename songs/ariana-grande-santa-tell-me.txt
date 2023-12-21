@@ -10,9 +10,9 @@
 #SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ariana%20Grande&cancion=Santa%20tell%20me
 #VIDEOID:nlR0MkrRklg
 #VIDEOGAP:0
-#VOLUME:0,81
+#VOLUME:0,87
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:13.419Z
+#LASTUPDATE:2023-12-21T21:45:03.308Z
 #EDITION:Christmas
 #GAP:9608,827590690418
 : 26 5 -1 San
