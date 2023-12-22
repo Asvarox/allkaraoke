@@ -8833,6 +8833,37 @@
     "local": false
   },
   {
+    "id": "edurne-siempre-es-navidad-junto-a-ti",
+    "title": "Siempre es Navidad junto a ti",
+    "artist": "Edurne",
+    "video": "5bIpVZcMvjw",
+    "language": "Spanish",
+    "bpm": 300.35,
+    "bar": 4,
+    "gap": 2051.165307141668,
+    "year": "2020",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-22T17:20:06.551Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 149,
+    "previewStart": 29,
+    "previewEnd": 68,
+    "volume": 0.91,
+    "author": "Volodia",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edurnesiempreesnavidadjuntoati",
+    "local": false
+  },
+  {
     "id": "edward-sharpe-and-the-magnetic-zeros-home",
     "title": "Home",
     "artist": "Edward Sharpe And The Magnetic Zeros",
@@ -16792,6 +16823,37 @@
     ],
     "tracksCount": 1,
     "search": "loreentattooenvivo",
+    "local": false
+  },
+  {
+    "id": "los-bukis-navidad-sin-ti",
+    "title": "Navidad sin ti",
+    "artist": "Los Bukis",
+    "video": "Qg6RYiH4Ipo",
+    "language": "Spanish",
+    "bpm": 323.46,
+    "bar": 4,
+    "gap": 13100.781116675942,
+    "year": "1987",
+    "artistOrigin": "MX",
+    "lastUpdate": "2023-12-22T17:20:06.751Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 80,
+    "previewStart": 162,
+    "previewEnd": 199,
+    "volume": 0.71,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "losbukisnavidadsinti",
     "local": false
   },
   {
@@ -27942,6 +28004,37 @@
     ],
     "tracksCount": 1,
     "search": "terriclarkgirlslietoo",
+    "local": false
+  },
+  {
+    "id": "the-baseballs-ring-ring-a-lovely-sound",
+    "title": "Ring Ring (A Lovely Sound)",
+    "artist": "The Baseballs",
+    "video": "ea-DoaHixWA",
+    "language": "English",
+    "bpm": 260.32,
+    "bar": 4,
+    "gap": 10411.436385986479,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2023-12-22T17:20:06.899Z",
+    "edition": "Christmas",
+    "genre": "Christmas",
+    "videoGap": 0,
+    "realBpm": 130,
+    "previewStart": 38,
+    "previewEnd": 74,
+    "volume": 0.66,
+    "author": "jmfb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebaseballsringringalovelysound",
     "local": false
   },
   {
