@@ -1,0 +1,352 @@
+#ID:kanye-west-father-stretch-my-hands-pt-1
+#ARTIST:Kanye West
+#ARTISTORIGIN:US
+#TITLE:Father Stretch My Hands Pt. 1
+#CREATOR:Aurman
+#CREATORURL:
+#BPM:226
+#REALBPM:113
+#YEAR:2016
+#SOURCEURL:
+#VIDEOID:wuO4_P_8p-Q
+#VIDEOGAP:0
+#VOLUME:0,69
+#LANGUAGE:English
+#LASTUPDATE:2023-12-22T16:33:52.777Z
+#GAP:-195,57522123893807
+: 15 7 7 You’re 
+: 23 3 6 the 
+: 27 7 6 only 
+: 35 13 2 power 
+- 48
+: 51 16 7 (Power) 
+- 67
+: 76 18 7 You’re 
+- 94
+: 95 2 9 The 
+: 98 5 4 only 
+: 104 14 7 power 
+- 118
+: 120 5 4 That 
+: 126 4 2 can 
+- 130
+: 143 6 7 You’re 
+: 150 4 6 the 
+: 155 6 6 only 
+: 162 15 2 power 
+- 177
+: 179 14 7 (Power) 
+- 193
+: 200 19 7 You’re 
+- 219
+: 223 2 9 The 
+: 226 6 4 only 
+: 233 14 7 power 
+- 247
+: 248 5 4 That 
+: 254 4 11 can 
+- 258 457
+- 457
+* 472 1 4 If 
+* 474 2 4 young 
+* 479 7 7 Metro 
+* 487 3 4 don’t 
+* 495 2 4 trust 
+* 498 3 4 you 
+* 502 3 4 I’m 
+* 506 2 4 gon’ 
+* 510 3 4 shoot 
+* 514 1 0 you - 
+- 515
+: 520 6 11 Beautiful 
+: 527 13 9 morning, 
+- 540
+: 544 2 11 You’re 
+: 547 2 11 the 
+: 550 3 0 sun 
+: 554 1 0 in 
+: 556 3 11 my 
+: 560 7 11 morning, 
+: 568 5 9 babe 
+- 573
+: 583 4 9 Nothing 
+: 588 17 2 unwanted 
+- 605 634
+- 634
+: 649 5 9 Beautiful 
+: 655 11 9 morning, 
+- 666
+: 671 2 11 You’re 
+: 674 2 11 the 
+: 677 3 0 sun 
+: 681 1 0 in 
+: 683 3 11 my 
+: 687 7 9 morning, 
+: 695 5 9 babe 
+- 700
+: 711 4 9 Nothing 
+: 716 17 2 unwanted 
+- 733 741
+- 741
+: 756 2 2 I 
+: 759 3 2 just 
+: 763 1 2 want 
+: 765 2 2 to 
+: 768 3 0 feel 
+: 772 7 0 liberated, 
+: 780 7 11 I, 
+- 787
+: 788 6 9 I, 
+: 795 2 11 na
+: 799 2 6 na
+: 802 2 9 na 
+- 804 806
+- 806
+: 821 2 2 I 
+: 824 3 2 just 
+: 828 1 2 want 
+: 830 2 2 to 
+: 833 3 0 feel 
+: 837 7 0 liberated, 
+: 845 6 11 I, 
+- 851
+: 852 6 9 I, 
+: 859 2 9 na
+: 863 2 4 na
+: 866 2 4 na 
+- 868 869
+- 869
+: 884 3 9 If 
+: 888 2 2 I 
+: 891 5 2 ever 
+: 897 13 0 instigated, 
+- 910
+: 914 8 7 I’m 
+- 922
+: 923 16 9 Sorry 
+- 939
+: 948 1 2 Tell 
+: 950 1 4 me, 
+: 952 3 2 who 
+: 956 2 2 in 
+: 959 3 2 here 
+: 963 1 2 can 
+: 965 6 0 relate 
+: 972 6 9 I, 
+- 978
+: 979 3 9 I, 
+: 983 9 9 I 
+- 992 1007
+- 1007
+* 1022 1 4 Now 
+* 1024 1 9 if 
+* 1026 2 11 I 
+* 1030 4 11 fuck 
+* 1036 3 4 this 
+* 1040 8 2 model 
+- 1048
+* 1053 1 4 And 
+* 1055 2 11 she 
+* 1058 3 11 just 
+* 1062 5 0 bleached 
+* 1068 2 6 her 
+* 1071 9 11 asshole 
+- 1080
+* 1086 1 4 And 
+* 1088 1 9 I 
+* 1090 1 11 get 
+* 1093 5 0 bleach 
+* 1099 1 4 on 
+* 1101 2 4 my 
+* 1104 2 2 T
+* 1107 5 11 shirt 
+- 1112
+* 1120 6 11 I’mma 
+* 1127 1 0 feel 
+* 1129 3 9 like 
+* 1133 2 4 an 
+* 1136 8 11 asshole 
+- 1144
+: 1152 1 4 I 
+: 1154 3 9 was 
+: 1158 3 9 high 
+: 1162 2 9 when 
+: 1165 2 7 I 
+: 1168 2 9 met 
+: 1171 3 9 her 
+- 1174
+: 1184 1 0 We 
+: 1186 2 0 was 
+: 1189 2 0 down 
+: 1192 2 11 in 
+: 1195 14 0 Tribeca 
+- 1209
+: 1212 1 9 She 
+: 1214 1 9 get 
+: 1216 2 9 under 
+: 1219 1 9 your 
+: 1221 4 9 skin 
+: 1226 1 9 if 
+: 1228 2 7 you 
+: 1231 4 9 let 
+: 1236 2 7 her 
+- 1238
+: 1242 2 0 She 
+: 1245 2 11 get 
+: 1248 2 11 under 
+: 1251 1 11 your 
+: 1253 3 0 skin 
+: 1257 1 11 if 
+: 1259 1 0 you 
+: 1261 1 11 uh 
+- 1262
+: 1267 1 9 I 
+: 1269 2 11 don’t 
+: 1272 4 11 even 
+: 1277 2 11 want 
+: 1280 1 9 to 
+: 1282 2 9 talk 
+: 1285 3 9 about 
+: 1289 3 9 it 
+- 1292
+: 1293 1 11 I 
+: 1295 2 11 don’t 
+: 1298 2 11 even 
+: 1301 2 11 want 
+: 1304 1 9 to 
+: 1306 2 11 talk 
+: 1309 2 9 about 
+: 1312 2 9 it 
+- 1314
+: 1316 1 9 I 
+: 1318 2 11 don’t 
+: 1321 3 11 even 
+: 1325 1 11 want 
+: 1327 1 7 to 
+: 1329 5 7 say 
+: 1335 11 11 nothing 
+- 1346
+: 1348 6 11 Everybody 
+: 1355 2 11 gon’ 
+: 1358 7 7 say 
+: 1366 13 11 something 
+- 1379
+: 1380 1 9 I’d 
+: 1382 1 11 be 
+: 1384 3 11 worried 
+: 1388 1 11 if 
+: 1390 1 0 they 
+: 1392 4 6 said 
+: 1399 36 9 nothing 
+- 1435
+: 1436 7 2 Remind 
+: 1444 0 11 me 
+: 1445 4 0 where 
+: 1450 5 0 I 
+: 1456 1 2 know 
+: 1458 4 0 you 
+: 1463 5 0 from 
+- 1468
+: 1469 3 4 She 
+: 1473 4 2 looking 
+: 1478 3 0 like 
+: 1482 5 2 she 
+: 1488 2 0 owe 
+: 1491 1 2 you 
+: 1493 4 0 some’ 
+- 1497
+: 1502 1 7 You 
+: 1504 2 2 know 
+: 1507 1 11 just 
+: 1509 3 0 what 
+: 1514 1 0 we 
+: 1516 2 0 want 
+- 1518
+: 1523 1 0 I 
+: 1525 1 0 want 
+: 1527 1 0 to 
+: 1529 2 0 wake 
+: 1532 3 11 up 
+: 1536 3 11 with 
+: 1540 3 9 you 
+: 1544 3 9 in 
+: 1548 2 7 my 
+- 1550
+: 1551 1 7 Beautiful 
+: 1553 8 7 morning, 
+- 1561
+: 1568 3 11 You’re 
+: 1572 1 11 the 
+: 1574 3 11 sun 
+: 1578 4 7 in 
+: 1583 4 9 my 
+: 1590 13 9 morning, 
+: 1604 2 2 babe 
+- 1606
+: 1607 5 2 Nothing 
+: 1613 26 2 unwanted 
+- 1639 1656
+- 1656
+: 1671 6 11 Beautiful 
+: 1678 11 9 morning, 
+- 1689
+: 1696 2 11 You’re 
+: 1699 1 11 the 
+: 1701 4 0 sun 
+: 1706 2 11 in 
+: 1709 2 11 my 
+: 1712 7 11 morning, 
+: 1720 8 9 babe 
+- 1728
+: 1736 4 2 Nothing 
+: 1741 14 2 unwanted 
+- 1755 1764
+- 1764
+: 1779 2 2 I 
+: 1782 5 2 just 
+: 1788 1 2 want 
+: 1790 1 2 to 
+: 1792 4 0 feel 
+: 1797 6 0 liberated, 
+: 1804 2 11 I, 
+- 1806
+: 1807 10 9 I, 
+: 1818 3 9 na
+: 1822 3 9 na
+: 1826 3 4 na 
+- 1829
+: 1844 2 2 I 
+: 1847 3 2 just 
+: 1851 1 2 want 
+: 1853 2 2 to 
+: 1856 3 0 feel 
+: 1860 7 0 liberated, 
+: 1868 7 11 I, 
+- 1875
+: 1877 6 9 I, 
+: 1884 2 7 na
+: 1888 2 6 na
+: 1891 2 4 na 
+- 1893 1896
+- 1896
+: 1911 3 2 If 
+: 1915 2 2 I 
+: 1918 3 2 ever 
+: 1922 13 0 instigated, 
+- 1935
+: 1941 7 7 I’m 
+- 1948
+: 1949 16 9 Sorry 
+- 1965
+: 1972 1 2 Tell 
+: 1974 1 4 me 
+: 1976 3 4 who 
+: 1980 2 2 in 
+: 1983 3 2 here 
+: 1987 1 2 can 
+: 1989 6 0 relate, 
+: 1996 6 9 I, 
+- 2002
+: 2006 3 7 I, 
+: 2010 9 9 I 
+E
