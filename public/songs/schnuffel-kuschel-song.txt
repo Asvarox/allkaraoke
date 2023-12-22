@@ -1,0 +1,106 @@
+#ID:schnuffel-kuschel-song
+#ARTIST:Schnuffel
+#ARTISTORIGIN:DE
+#TITLE:Kuschel Song
+#CREATOR:LittleLex
+#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2430
+#BPM:264
+#REALBPM:132
+#YEAR:2008
+#SOURCEURL:https://usdb.animux.de/?link=detail&id=5112
+#PREVIEWSTART:23
+#PREVIEWEND:42
+#VIDEOID:zAHZoUa-hAg
+#VIDEOGAP:0
+#VOLUME:0,63
+#GENRE:None
+#LANGUAGE:German
+#LASTUPDATE:2023-12-22T16:33:53.567Z
+#GAP:6037,272727272727
+: 18 6 7 Du 
+: 26 5 5 bist 
+: 34 5 7 mein 
+: 42 4 3 aller
+: 48 3 3 lieb
+: 54 2 5 ster 
+: 58 11 3 Schatz 
+- 69
+: 82 5 7 An 
+: 90 6 5 dei
+: 98 5 7 ner 
+: 106 4 2 Sei
+: 112 1 2 te 
+: 114 2 2 ist 
+: 118 2 3 mein 
+: 122 8 2 Platz. 
+- 130
+: 146 2 -2 Weil 
+: 150 2 -2 ich 
+: 154 1 0 dich 
+: 158 1 -2 so 
+: 162 2 0 ger
+: 166 2 -2 ne 
+: 170 1 12 kusch
+: 174 6 10 el 
+- 180
+: 194 3 8 Bist 
+: 202 10 7 du 
+: 214 2 7 mein 
+: 218 5 5 süss
+: 226 4 5 er 
+: 234 1 5 Schnuff
+: 238 7 3 el. 
+- 245 256
+- 256
+: 274 2 -2 Kusch
+: 278 2 -2 el, 
+: 282 2 0 Kusch
+: 286 2 -2 el, 
+: 290 2 0 Kusch
+: 294 2 -2 el, 
+: 298 2 3 Kusch
+: 302 8 3 el! 
+- 310 320
+- 320
+: 338 2 -2 Bist 
+: 342 2 -2 mein 
+: 346 3 0 klein
+: 350 2 -2 er 
+: 354 2 0 sü
+: 358 2 -2 sser 
+: 362 1 2 Schnuff
+: 366 9 2 el. 
+- 375 384
+- 384
+: 402 2 -2 Bist 
+: 406 2 -2 mein 
+: 410 3 0 klein
+: 414 2 -2 er 
+: 418 2 0 süss
+: 422 2 -2 er 
+: 426 3 12 Ste
+: 430 8 10 rn 
+- 438
+: 450 5 8 Hab 
+: 458 7 7 dich 
+: 470 2 7 zum 
+: 474 3 5 kusch
+: 482 5 5 eln 
+: 490 9 3 gern. 
+- 499 536
+- 536
+: 554 6 7 Na
+: 562 6 3 na 
+: 570 6 7 na
+: 578 6 3 na 
+: 586 6 7 na
+: 594 6 3 na 
+: 602 6 7 na
+: 610 6 3 na 
+: 618 7 10 Na
+: 626 6 7 na 
+: 634 6 10 na
+: 642 6 7 na 
+: 650 6 5 na
+: 658 5 5 na 
+E
