@@ -61,7 +61,7 @@ const RAW_RUNTIME_STATE =
           ["@types/curtainsjs", "npm:8.1.3"],\
           ["@types/dom-screen-wake-lock", "npm:1.0.3"],\
           ["@types/latinize", "npm:0.2.18"],\
-          ["@types/lodash", "npm:4.14.201"],\
+          ["@types/lodash", "npm:4.14.202"],\
           ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.38"],\
@@ -10541,6 +10541,13 @@ const RAW_RUNTIME_STATE =
           ["@types/lodash", "npm:4.14.201"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.14.202", {\
+        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.202-76de3e302b-1bb9760a5b.zip/node_modules/@types/lodash/",\
+        "packageDependencies": [\
+          ["@types/lodash", "npm:4.14.202"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@types/lodash-es", [\
@@ -18672,7 +18679,7 @@ const RAW_RUNTIME_STATE =
           ["@types/curtainsjs", "npm:8.1.3"],\
           ["@types/dom-screen-wake-lock", "npm:1.0.3"],\
           ["@types/latinize", "npm:0.2.18"],\
-          ["@types/lodash", "npm:4.14.201"],\
+          ["@types/lodash", "npm:4.14.202"],\
           ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.38"],\
