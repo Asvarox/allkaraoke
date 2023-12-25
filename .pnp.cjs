@@ -100,7 +100,7 @@ const RAW_RUNTIME_STATE =
           ["peerjs", "npm:2.0.0-beta.3"],\
           ["playwright", "npm:1.40.1"],\
           ["playwright-core", "npm:1.40.1"],\
-          ["posthog-js", "npm:1.95.1"],\
+          ["posthog-js", "npm:1.96.1"],\
           ["prettier", "npm:2.8.8"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
@@ -18711,7 +18711,7 @@ const RAW_RUNTIME_STATE =
           ["peerjs", "npm:2.0.0-beta.3"],\
           ["playwright", "npm:1.40.1"],\
           ["playwright-core", "npm:1.40.1"],\
-          ["posthog-js", "npm:1.95.1"],\
+          ["posthog-js", "npm:1.96.1"],\
           ["prettier", "npm:2.8.8"],\
           ["prettier-plugin-organize-imports", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.2.4"],\
           ["qrcode.react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:3.1.0"],\
@@ -19425,10 +19425,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["posthog-js", [\
-      ["npm:1.95.1", {\
-        "packageLocation": "./.yarn/cache/posthog-js-npm-1.95.1-8f4a996d39-36c733c03f.zip/node_modules/posthog-js/",\
+      ["npm:1.96.1", {\
+        "packageLocation": "./.yarn/cache/posthog-js-npm-1.96.1-ce57ec0f68-be621e5490.zip/node_modules/posthog-js/",\
         "packageDependencies": [\
-          ["posthog-js", "npm:1.95.1"],\
+          ["posthog-js", "npm:1.96.1"],\
           ["fflate", "npm:0.4.8"]\
         ],\
         "linkType": "HARD"\
