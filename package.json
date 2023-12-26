@@ -136,7 +136,7 @@
     "prettier-plugin-organize-imports": "^3.2.4",
     "react-refresh": "^0.14.0",
     "rollup-plugin-analyzer": "^4.0.0",
-    "rollup-plugin-visualizer": "^5.9.2",
+    "rollup-plugin-visualizer": "^5.11.0",
     "serve": "14.2.1",
     "storybook": "^7.6.5",
     "ts-node": "^10.9.2",

@@ -13451,7 +13451,7 @@ __metadata:
     remotion: "npm:^4.0.77"
     remotion-animated: "npm:^2.0.0"
     rollup-plugin-analyzer: "npm:^4.0.0"
-    rollup-plugin-visualizer: "npm:^5.9.2"
+    rollup-plugin-visualizer: "npm:^5.11.0"
     serve: "npm:14.2.1"
     storybook: "npm:^7.6.5"
     tinycolor2: "npm:^1.6.0"
@@ -15073,22 +15073,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^5.9.2":
-  version: 5.9.2
-  resolution: "rollup-plugin-visualizer@npm:5.9.2"
+"rollup-plugin-visualizer@npm:^5.11.0":
+  version: 5.11.0
+  resolution: "rollup-plugin-visualizer@npm:5.11.0"
   dependencies:
     open: "npm:^8.4.0"
     picomatch: "npm:^2.3.1"
     source-map: "npm:^0.7.4"
     yargs: "npm:^17.5.1"
   peerDependencies:
-    rollup: 2.x || 3.x
+    rollup: 2.x || 3.x || 4.x
   peerDependenciesMeta:
     rollup:
       optional: true
   bin:
     rollup-plugin-visualizer: dist/bin/cli.js
-  checksum: 9cc5b140cdb384cd16538537ed41b8ecc97a21ee1fe7974775c6fbbb7522ed1733da7c47ab8b619c9b4f190de5de3b2ad34303afe94f943c41f2ce2ec621b6cb
+  checksum: 947238aa22706a47a4d3e8ce616855f0e5cb969ed9f61b9a268eaede0a86f461ecb38e27b4e6bf00f4b5e3f63677667f65e0d4af89a659a5160f74add1f192bb
   languageName: node
   linkType: hard
 
