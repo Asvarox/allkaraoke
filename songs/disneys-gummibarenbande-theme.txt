@@ -1,0 +1,190 @@
+#ID:disneys-gummibarenbande-theme
+#ARTIST:Disney’s Gummibärenbande
+#TITLE:Theme
+#CREATOR:Bunnysun17
+#CREATORURL:
+#BPM:214,44
+#REALBPM:140
+#YEAR:1991
+#SOURCEURL:
+#PREVIEWSTART:20
+#PREVIEWEND:52
+#VIDEOID:YO1GBsuzTWU
+#VIDEOGAP:0
+#VOLUME:0,88
+#LANGUAGE:German
+#LASTUPDATE:2023-12-28T19:33:19.658Z
+#EDITION:Themes
+#GAP:3970,70509233352
+: 14 3 2 Mu
+: 18 3 -2 tig 
+: 22 3 2 und 
+: 26 3 5 freund
+: 30 3 2 lich 
+- 33
+: 34 3 5 So 
+: 38 3 7 tap
+: 43 3 9 fer 
+: 47 2 10 und 
+: 50 3 5 gläu
+: 54 4 2 big 
+- 58
+: 63 3 7 Fröh
+: 67 3 5 lich 
+: 71 3 3 und 
+: 75 2 5 frech 
+- 77
+: 79 3 2 Kämp
+: 84 2 5 fen 
+: 88 2 3 sie 
+: 91 4 2 auch 
+: 96 3 -2 für 
+: 100 5 0 dich 
+- 105
+: 113 3 2 Le
+: 117 3 -2 ben 
+: 121 3 2 im 
+: 125 3 5 Wald 
+- 128
+: 129 3 2 Un
+: 133 3 5 ter 
+: 137 3 7 Bäu
+: 141 3 9 men 
+: 145 3 10 und 
+: 149 3 5 Stei
+: 153 3 2 nen 
+- 156
+: 162 3 7 In 
+: 166 3 5 ih
+: 170 2 3 ren 
+: 174 2 5 Höh
+: 178 2 2 len 
+- 180
+: 182 3 5 Da 
+: 186 3 7 sind 
+: 191 2 9 sie 
+: 195 2 10 zu 
+: 199 5 12 Haus 
+- 204
+: 210 5 14 Gum
+: 216 3 15 mi
+: 220 10 17 bären 
+- 230
+: 238 4 17 Hüp
+: 243 3 17 fen 
+: 247 2 17 hier 
+: 250 2 15 und 
+: 253 2 14 dort 
+: 256 2 12 und 
+: 259 5 14 ü
+: 265 2 17 ber
+: 268 6 10 all 
+- 274
+: 288 4 17 Sie 
+: 293 2 17 sind 
+: 296 2 17 für 
+: 299 2 15 dich 
+: 302 2 14 da 
+: 305 2 12 wenn 
+: 308 5 14 du 
+: 314 3 17 sie 
+: 318 5 10 brauchst 
+- 323
+: 330 4 17 Das 
+: 336 5 15 sind 
+: 342 2 14 die 
+: 345 5 12 Gum
+: 351 2 10 mi
+: 354 6 10 bären 
+- 360 393
+- 393
+: 407 3 2 Lasst 
+: 411 3 -2 euch 
+: 415 3 2 ver
+: 419 3 5 zau
+: 423 4 2 bern 
+- 427
+: 428 3 5 Von 
+: 432 3 7 ih
+: 436 3 9 rem 
+: 440 3 10 Ge
+: 444 3 5 heim
+: 448 2 2 nis 
+- 450
+: 453 2 5 Der 
+: 456 4 7 Saft 
+: 461 3 5 bringt 
+: 465 2 3 die 
+: 469 3 5 Kraft 
+- 472
+: 478 2 2 Das 
+: 481 2 3 A
+: 484 1 2 ben
+: 486 2 0 teu
+: 489 3 -2 er 
+: 493 3 0 lacht 
+- 496
+: 502 2 0 Ge
+: 505 3 4 mein
+: 509 3 0 sam 
+: 514 2 4 könnt 
+: 517 3 7 ihr 
+- 520
+: 521 3 4 So 
+: 525 3 7 viel 
+: 529 4 9 mehr 
+: 534 3 11 noch 
+: 538 3 12 er
+: 542 3 7 le
+: 546 3 4 ben 
+- 549
+: 554 4 9 Kommt 
+: 559 3 7 doch 
+: 563 3 5 hier 
+: 567 4 7 her 
+- 571
+: 575 3 7 Und 
+: 579 3 9 singt 
+: 583 3 11 ein
+: 587 3 12 fach 
+: 591 4 14 mit 
+- 595
+: 604 4 16 Gum
+: 609 3 17 mi
+: 613 9 19 bären 
+- 622
+: 632 4 19 Hüp
+: 637 2 19 fen 
+: 640 2 19 hier 
+: 643 2 17 und 
+: 646 2 16 dort 
+: 649 2 14 und 
+: 652 5 16 ü
+: 658 2 19 ber
+: 661 5 12 all 
+- 666
+: 680 4 19 Sie 
+: 685 3 19 sind 
+: 689 2 19 für 
+: 692 2 17 dich 
+: 695 2 16 da 
+: 698 3 14 wenn 
+: 702 4 16 du 
+: 707 3 19 sie 
+: 711 6 12 brauchst 
+- 717
+: 724 4 19 Das 
+: 729 5 17 sind 
+: 735 3 16 die 
+: 739 4 14 Gum
+: 744 2 12 mi
+: 747 6 12 bären 
+- 753 758
+- 758
+: 772 4 19 Das 
+: 778 5 17 sind 
+: 784 3 16 die 
+: 788 4 17 Gum
+: 793 3 19 mi
+: 797 6 24 bären 
+E

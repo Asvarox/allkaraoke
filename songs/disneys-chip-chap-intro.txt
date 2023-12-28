@@ -1,0 +1,190 @@
+#ID:disneys-chip-chap-intro
+#ARTIST:Disney’s Chip & Chap
+#TITLE:Intro
+#CREATOR:purgatorio
+#CREATORURL:
+#BPM:286,6
+#REALBPM:143
+#YEAR:1991 
+#SOURCEURL:
+#VIDEOID:75Tk80ekPJw
+#VIDEOGAP:0
+#VOLUME:0,98
+#GENRE:None
+#LANGUAGE:German
+#LASTUPDATE:2023-12-28T19:33:18.756Z
+#EDITION:[SC]-Songs
+#GAP:3885,582693649686
+: 19 9 -5 Räu
+: 29 8 2 ber, 
+: 49 11 -5 Die
+: 61 8 2 be 
+- 69
+: 87 6 -5 Gehen 
+: 95 6 -2 auf 
+: 103 5 2 Ga
+: 109 7 0 no
+: 117 3 -2 ven
+: 121 8 -3 tour 
+- 129
+: 133 6 -6 Doch 
+: 141 8 -5 zwei 
+: 153 10 2 ganz 
+: 173 9 -5 Lie
+: 183 8 2 be 
+- 191
+: 209 6 -5 Sind 
+: 217 6 -2 schon 
+: 225 6 2 auf 
+: 233 5 2 ih
+: 239 3 0 rer 
+: 243 6 0 Spur 
+- 249
+: 253 3 0 Ist 
+: 257 4 0 der 
+: 263 5 3 Fall 
+: 269 4 2 auch 
+: 275 8 2 schwer 
+- 283
+: 291 3 -2 Der 
+: 295 4 3 Weg 
+: 303 3 2 auch 
+: 307 5 2 weit 
+- 312
+: 313 3 -2 Sie 
+: 317 4 -2 sind 
+: 323 8 0 stets 
+: 333 3 2 für 
+: 337 6 2 dich 
+: 345 5 0 be
+: 351 6 2 reit 
+- 357
+: 359 3 5 Chip 
+: 363 3 5 Chip 
+: 367 3 5 Chip 
+: 371 3 5 Chip 
+: 375 5 5 und 
+: 381 8 4 Chap 
+- 389
+: 401 3 6 Rit
+: 405 3 6 ter 
+: 409 4 3 des 
+: 415 5 4 Rechts 
+- 420
+: 421 3 5 Chip 
+: 425 3 5 Chip 
+: 429 3 5 Chip 
+: 433 3 5 Chip 
+: 437 5 5 und 
+: 443 7 4 Chap 
+- 450
+* 451 3 12 Den 
+: 455 3 12 Bö
+: 459 3 9 sen 
+: 463 3 7 geht 
+: 467 4 4 es 
+: 473 8 5 schlecht 
+- 481
+: 483 3 5 Sie 
+: 487 3 5 lö
+: 491 3 5 sen 
+: 495 3 5 je
+: 499 5 5 den 
+: 505 8 7 Fall 
+- 513
+: 519 5 5 Was 
+: 525 3 3 sie 
+: 529 4 2 auch 
+: 535 8 3 tun 
+- 543
+: 551 3 0 Das 
+: 555 3 0 Bö
+: 559 3 0 se 
+: 563 3 3 hat 
+: 567 3 5 nie 
+* 571 6 7 Zeit 
+: 579 3 5 sich 
+: 583 5 5 aus
+: 589 7 3 zu
+: 597 6 5 ruhen 
+- 603
+: 605 3 8 Chip 
+: 609 3 8 Chip 
+: 613 3 8 Chip 
+: 617 3 8 Chip 
+: 621 5 8 und 
+: 627 8 7 Chap 
+- 635
+: 647 3 10 Rit
+: 651 3 10 ter 
+: 655 3 7 des 
+: 659 7 8 Rechts 
+- 666
+: 667 3 8 Chip 
+: 671 3 8 Chip 
+: 675 3 8 Chip 
+: 679 3 8 Chip 
+: 683 5 8 und 
+: 689 7 7 Chap 
+- 696
+* 697 3 12 Den 
+: 701 3 12 Bö
+: 705 3 9 sen 
+: 709 3 7 geht 
+: 713 4 4 es 
+: 719 8 5 schlecht 
+- 727
+: 729 3 8 Sie 
+: 733 1 8 lö
+: 735 3 8 sen 
+: 739 3 8 je
+: 743 6 8 den 
+: 751 8 10 Fall 
+- 759
+: 765 5 8 Dank 
+: 771 3 6 ih
+: 775 6 5 rem 
+: 783 10 6 Mut 
+- 793
+: 799 3 3 Wird 
+: 803 2 3 es 
+: 807 6 6 am 
+* 815 5 10 En
+: 821 7 8 de 
+: 829 7 8 al
+: 837 6 6 les 
+: 845 4 8 gut 
+- 849
+: 851 3 11 Chip 
+: 855 3 11 Chip 
+: 859 3 11 Chip 
+: 863 3 11 Chip 
+: 867 5 11 und 
+: 873 10 10 Chap 
+- 883
+: 893 3 13 Rit
+: 897 3 13 ter 
+: 901 3 10 des 
+: 905 7 11 Rechts 
+- 912
+: 913 3 11 Chip 
+: 917 3 11 Chip 
+: 921 3 11 Chip 
+: 925 3 11 Chip 
+: 929 5 11 und 
+: 935 7 10 Chap 
+- 942
+* 943 3 13 Den 
+: 947 3 13 Bö
+: 951 3 10 sen 
+: 955 3 8 geht 
+: 959 4 6 es 
+: 965 7 8 schlecht 
+- 972
+: 973 3 11 Chip 
+: 977 3 11 Chip 
+: 981 3 11 Chip 
+: 985 3 11 Chip 
+* 989 8 11 und 
+* 999 8 13 Chap 
+E
