@@ -91,7 +91,17 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
     }
   }, [excludedLanguages, languageList]);
 
-  const areAllLanguagesExcluded = excludedLanguages?.length === languageList.length;
+  const areAllLanguagesExcluded = useMemo(
+    () => languageList.every((language) => excludedLanguages?.includes(language.name)),
+    [excludedLanguages, languageList],
+  );
+
+  // If the language list changes (e.g. MIN_SONGS_COUNT is increased), remove any excluded languages that are no longer available
+  useEffect(() => {
+    if (excludedLanguages?.find((language) => !languageList.find((lang) => lang.name === language))) {
+      setExcludedLanguages(excludedLanguages.filter((language) => languageList.find((lang) => lang.name === language)));
+    }
+  }, [languageList, excludedLanguages, setExcludedLanguages]);
 
   return (
     <MenuWithLogo>
