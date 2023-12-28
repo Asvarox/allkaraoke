@@ -64,7 +64,7 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  useChristmasSongTheme(songPreview);
+  // useChristmasSongTheme(songPreview);
 
   const expanded = keyboardControl;
 
