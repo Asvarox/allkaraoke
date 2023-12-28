@@ -1,5 +1,4 @@
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
-import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
@@ -17,16 +16,16 @@ export const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
     () =>
       [
         { name: 'All', filters: {} },
-        {
-          name: 'Christmas',
-          display: (
-            <>
-              <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
-              <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
-            </>
-          ),
-          filters: { edition: 'christmas' },
-        },
+        // {
+        //   name: 'Christmas',
+        //   display: (
+        //     <>
+        //       <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
+        //       <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
+        //     </>
+        //   ),
+        //   filters: { edition: 'christmas' },
+        // },
         songLanguages[0]
           ? ({
               name: songLanguages[0].name,
@@ -39,8 +38,8 @@ export const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
               filters: { language: songLanguages[1].name },
             }
           : null,
-        // { name: "Classics", filters: { yearBefore: 1995 } },
-        // { name: "Modern", filters: { yearAfter: 1995 } },
+        { name: 'Classics', filters: { yearBefore: 1995 } },
+        { name: 'Modern', filters: { yearAfter: 1995 } },
         { name: 'Duets', filters: { duet: true } },
         {
           name: 'New',
