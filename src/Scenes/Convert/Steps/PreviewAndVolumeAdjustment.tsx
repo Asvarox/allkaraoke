@@ -59,6 +59,9 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const previewEnd = data.previewEnd ?? previewStart + 30;
   const [duration, setDuration] = useState<number | null>(null);
   useEffect(() => {
+    if (reference.current) {
+      reference.current.currentTime = 35;
+    }
     player.current?.getInternalPlayer()?.getDuration().then(setDuration);
   }, []);
 
@@ -119,6 +122,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
             controls
             src={backgroundMusic}
             loop
+            onLoad={(e) => (e.currentTarget.currentTime = 35)}
             onPlay={(e) => {
               e.currentTarget.volume = 0.5;
               setIsReferencePlaying(true);

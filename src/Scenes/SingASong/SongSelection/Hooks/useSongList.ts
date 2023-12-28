@@ -137,7 +137,7 @@ export default function useSongList() {
     if (!filters.search && !filters.edition) {
       const newSongs = filteredList.filter((song) => song.isNew);
 
-      if (newSongs.length) {
+      if (newSongs.length && newSongs.length < 50) {
         groups.push({
           letter: 'New',
           isNew: true,

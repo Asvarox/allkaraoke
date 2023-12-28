@@ -1,0 +1,240 @@
+#ID:disneys-die-eiskonigin-willst-du-einen-schneemann-bauen
+#ARTIST:Disney’s Die Eiskönigin
+#TITLE:Willst du einen Schneemann bauen
+#CREATOR:usdxah
+#CREATORURL:
+#BPM:300
+#REALBPM:132
+#YEAR:2015
+#SOURCEURL:
+#VIDEOID:MjvczrTqy8o
+#VIDEOGAP:0
+#VOLUME:0,99
+#LANGUAGE:German
+#LASTUPDATE:2023-12-28T19:33:19.327Z
+#GAP:7600
+: 20 2 3 Willst 
+: 24 2 3 du 
+: 28 2 3 ein
+: 32 2 -2 en 
+: 36 2 3 Schnee
+: 40 2 -7 mann 
+: 45 6 -5 bau
+: 53 19 7 en? 
+- 72
+: 88 2 3 Los 
+: 92 4 3 komm 
+: 98 2 -2 und 
+: 102 2 3 spiel 
+: 105 2 7 mit 
+: 109 20 5 mir! 
+- 129 134
+- 134
+: 154 2 3 Ich 
+: 159 3 3 sah 
+: 164 2 -2 dich 
+: 168 4 3 schon 
+: 173 2 7 so 
+: 176 2 8 lang’ 
+: 180 2 7 nicht 
+: 184 5 3 mehr, 
+- 189
+: 197 2 3 Ver
+: 201 2 8 miss 
+: 205 2 7 dich 
+: 208 5 3 sehr. 
+- 213
+: 221 2 3 Was 
+: 225 2 3 ist 
+: 229 2 -2 nur 
+: 233 2 3 los 
+: 238 2 7 mit 
+: 241 23 10 dir? 
+- 264
+: 284 2 10 Wir 
+: 288 2 10 waren 
+: 292 2 8 wie 
+: 296 2 7 Pech 
+: 299 3 8 und 
+: 305 3 10 Schwe
+: 310 3 3 fel. 
+- 313
+: 333 2 3 Doch 
+: 337 5 5 jetzt 
+: 346 2 7 nicht 
+: 350 7 3 mehr. 
+- 357
+: 366 2 5 Sag 
+: 370 3 7 mir 
+: 375 5 5 bit
+: 382 2 3 te 
+: 386 5 5 nur 
+: 394 5 7 wie
+: 401 27 12 so! 
+- 428
+: 446 2 3 Willst 
+: 450 2 3 du 
+: 454 2 3 ein
+: 458 2 -2 en 
+: 462 2 3 Schnee
+: 465 2 7 mann 
+: 470 6 5 bau
+: 478 19 7 en? 
+- 497
+: 504 2 3 Oder 
+: 507 2 3 viel
+: 511 2 3 leicht 
+: 515 3 3 was 
+: 520 2 -2 an
+: 523 2 3 der
+: 527 2 7 es 
+: 531 7 5 bau
+: 540 28 3 en? 
+- 568 576
+- 576
+: 596 4 3 Gut 
+: 602 8 2 dann 
+: 613 31 3 nicht... 
+- 644 957
+- 957
+: 977 2 3 Willst 
+: 981 2 3 du 
+: 985 2 3 ein
+: 989 2 -2 en 
+: 993 2 3 Schnee
+: 996 2 7 mann 
+: 1001 6 5 bau
+: 1009 19 7 en? 
+- 1028
+: 1035 2 3 Und 
+: 1039 2 3 Fahr
+: 1043 2 3 rad 
+: 1046 3 3 fahr
+: 1051 2 -2 en 
+: 1054 2 3 hier 
+: 1058 2 7 im 
+: 1062 11 5 Saal? 
+- 1073 1077
+- 1077
+: 1097 2 3 Ich 
+: 1100 2 3 wür
+: 1104 2 3 de 
+: 1108 2 3 jetzt 
+: 1112 3 -2 so 
+: 1117 2 3 ger
+: 1120 2 7 ne 
+: 1124 2 8 mit 
+: 1128 2 7 dir 
+: 1132 5 3 spielen... 
+- 1137
+: 1141 2 -2 All
+: 1145 4 3 ein 
+: 1151 2 7 zu 
+: 1154 3 8 sein 
+: 1159 2 7 ist 
+: 1162 2 3 ei
+: 1166 2 3 ne 
+: 1169 3 3 fürcht
+: 1173 2 -2 er
+: 1177 2 3 lich
+: 1181 2 10 e 
+* 1185 11 10 Qual. 
+- 1196 1205
+- 1205
+: 1225 2 10 Ich 
+: 1229 2 10 fühl
+: 1233 2 8 e 
+: 1236 2 7 mich 
+: 1240 2 8 so 
+: 1244 4 10 ein
+: 1250 8 3 sam. 
+- 1258
+: 1266 2 -2 All
+: 1270 2 3 es 
+: 1273 4 5 ist 
+: 1279 4 7 so 
+: 1285 7 3 leer. 
+- 1292
+: 1300 2 5 Ich 
+: 1304 3 7 sta
+: 1310 3 5 rr
+: 1315 2 3 e 
+* 1319 2 5 nur 
+* 1323 2 5 auf 
+: 1327 5 7 die 
+: 1334 22 12 Uhr. 
+- 1356 2769
+- 2769
+: 2789 5 3 Bit
+: 2800 2 -2 te 
+: 2804 4 3 re
+: 2810 3 7 de 
+: 2815 6 5 mit 
+: 2824 10 7 mir! 
+- 2834 2844
+- 2844
+: 2864 2 3 Al
+: 2867 2 3 le 
+: 2870 2 3 fra
+: 2873 2 3 gen 
+: 2877 3 -2 wo 
+: 2882 4 3 du 
+: 2887 2 7 bi
+: 2894 7 5 st. 
+- 2901 2922
+- 2922
+: 2942 2 3 Sie 
+: 2946 2 3 sagen: 
+: 2950 2 3 Sei 
+: 2956 3 3 mu
+: 2962 4 -2 tig! 
+- 2966
+: 2971 2 3 Ich 
+: 2974 2 7 ver
+: 2979 5 8 suche 
+: 2986 4 7 es 
+: 2994 3 3 ja. 
+- 2997
+: 3014 2 -2 Ich 
+: 3017 3 3 bin 
+: 3022 3 7 doch 
+: 3027 3 8 für 
+: 3033 3 7 dich 
+: 3039 4 3 da. 
+- 3043
+: 3053 4 3 Lass 
+: 3061 3 7 mich 
+: 3066 4 3 doch 
+: 3073 31 10 rein! 
+- 3104
+: 3118 2 10 Wir 
+: 3122 2 10 ha
+: 3126 2 8 ben 
+: 3130 2 7 nur 
+: 3134 2 8 uns 
+: 3141 3 10 bei
+: 3145 3 3 de, 
+- 3148
+: 3165 3 -2 Nur 
+: 3170 3 3 d
+: 3176 6 5 u 
+: 3185 3 7 und 
+: 3190 6 3 ich. 
+- 3196
+: 3212 5 7 Was 
+: 3219 4 5 soll
+: 3225 3 3 en 
+: 3230 7 5 wir 
+: 3240 5 7 nur 
+* 3249 51 12 tun? 
+- 3300 3353
+- 3353
+: 3373 3 3 Willst 
+: 3378 3 3 du 
+: 3383 2 3 ein
+: 3387 2 -2 en 
+: 3390 3 3 Schnee
+: 3396 2 7 mann 
+* 3401 7 5 bau
+* 3410 10 7 en? 
+E

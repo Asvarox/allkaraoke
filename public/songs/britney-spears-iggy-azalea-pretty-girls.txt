@@ -1,0 +1,840 @@
+#ID:britney-spears-iggy-azalea-pretty-girls
+#ARTIST:Britney Spears & Iggy Azalea
+#TITLE:Pretty Girls
+#CREATOR:Coppolatte
+#CREATORURL:
+#BPM:206
+#REALBPM:103
+#YEAR:2015
+#SOURCEURL:
+#VIDEOID:uV2uebhnqOw
+#VIDEOGAP:0
+#VOLUME:0,83
+#GENRE:Pop
+#LANGUAGE:English
+#LASTUPDATE:2023-12-28T19:33:07.462Z
+#GAP:10860,582524271846
+: 14 3 7 All 
+: 18 2 9 a
+: 22 3 5 round 
+: 26 2 5 the 
+: 30 5 3 world 
+- 35
+: 38 1 2 Pret
+: 40 2 2 ty 
+: 44 5 0 girls 
+- 49
+: 54 2 2 Wipe 
+: 58 1 2 the 
+: 60 3 7 floor 
+- 63
+: 66 2 2 With 
+: 70 3 2 all 
+: 74 1 2 the 
+: 76 5 0 boys 
+- 81
+: 86 3 2 Pour 
+: 90 1 2 the 
+: 92 3 7 drinks 
+- 95
+: 102 3 2 Bring 
+: 106 1 2 the 
+: 108 5 0 noise 
+- 113
+: 124 1 9 We’re 
+: 126 2 9 just 
+* 130 2 9 so 
+* 134 1 12 pret
+* 136 3 9 ty 
+- 139
+: 142 3 7 All 
+: 146 2 9 a
+: 150 3 5 round 
+: 154 2 5 the 
+: 158 5 3 world 
+- 163
+: 166 1 2 Pret
+: 168 2 2 ty 
+: 172 5 0 girls 
+- 177
+: 182 2 2 Jump 
+: 186 1 2 the 
+: 188 5 7 line 
+- 193
+: 198 3 2 To 
+: 202 1 2 the 
+: 204 3 0 front 
+- 207
+: 210 2 2 Do 
+: 214 2 2 what 
+: 218 1 2 we 
+: 220 3 7 like 
+- 223
+: 226 2 2 Get 
+: 230 2 2 what 
+: 234 1 2 we 
+: 236 5 0 want 
+- 241
+: 252 1 9 We’re 
+: 254 2 9 just 
+: 258 2 9 so 
+: 262 1 12 pret
+: 264 3 9 ty 
+- 267
+: 270 9 5 Hey 
+- 279
+: 282 1 5 Don’t 
+: 284 2 5 you 
+: 287 2 5 know 
+: 290 1 5 that 
+: 292 2 5 it’s 
+: 295 2 5 al
+: 298 1 5 ways 
+: 300 2 5 the 
+: 304 7 5 same? 
+- 311
+: 314 1 5 From 
+: 316 2 5 Aus
+: 319 2 5 tral
+: 322 1 5 i
+: 324 2 5 a 
+* 327 2 5 ’round 
+* 330 1 5 to 
+* 332 2 5 L
+* 336 5 5 A 
+- 341
+: 345 1 2 You 
+: 347 2 4 can 
+: 350 2 5 bet
+: 353 1 2 cha’, 
+- 354
+: 356 1 4 Wher
+: 358 2 5 e
+: 361 1 2 ver 
+: 363 2 4 the 
+: 366 5 5 girls 
+: 374 5 4 go 
+* 382 5 2 boys 
+* 390 5 1 fol
+* 398 7 5 low 
+- 405
+: 410 1 5 We 
+: 412 2 5 be 
+: 415 2 5 keep
+: 418 1 5 ing 
+: 420 2 5 them 
+: 423 2 5 up 
+: 426 1 5 on 
+: 428 2 5 their 
+: 432 5 5 toes 
+- 437
+: 442 1 2 They 
+: 444 2 4 can 
+: 447 2 5 laugh, 
+: 450 1 2 but 
+: 452 2 4 they 
+: 455 2 5 don’t 
+: 458 1 2 get 
+: 460 2 4 the 
+: 464 5 5 jokes 
+- 469
+: 474 1 5 Just 
+: 476 2 5 you 
+: 479 2 5 watch, 
+: 482 1 5 they’re 
+: 484 2 5 so 
+: 487 2 5 pre
+: 490 1 5 dict
+: 492 2 5 a
+: 496 3 5 ble 
+- 499
+: 502 5 2 Some 
+: 510 5 1 things 
+: 518 1 -5 don’t
+: 520 3 -3 ~
+: 524 1 -5 ~ 
+: 526 3 -5 change 
+- 529
+: 532 1 2 The 
+: 534 2 2 girls 
+: 538 3 2 roll 
+: 542 3 7 up 
+- 545
+F 550 1 9 Wind
+F 552 1 9 ows 
+F 554 3 9 roll 
+F 558 3 9 down 
+- 561
+: 566 3 2 Eyes 
+: 570 2 2 on 
+: 574 3 7 us 
+- 577
+F 582 3 9 Jaws 
+F 586 1 9 on 
+F 588 1 9 the 
+F 590 5 9 ground 
+- 595
+: 598 2 2 Watch 
+: 602 2 2 them 
+: 606 3 7 go 
+- 609
+F 612 1 9 It’s 
+F 614 3 9 just 
+F 618 3 9 so 
+F 622 1 9 fun
+F 624 5 9 ny 
+- 629
+: 634 2 7 Like 
+: 638 2 9 bees 
+: 642 1 9 to 
+: 644 1 7 the 
+: 646 1 9 ho
+: 648 3 7 ney 
+- 651
+: 654 3 7 All 
+: 658 2 9 a
+: 662 3 5 round 
+: 666 2 5 the 
+: 670 5 3 world 
+- 675
+: 678 1 2 Pret
+: 680 2 2 ty 
+: 684 5 0 girls 
+- 689
+: 694 2 2 Wipe 
+: 698 1 2 the 
+: 700 3 7 floor 
+- 703
+: 706 2 2 With 
+: 710 3 2 all 
+: 714 1 2 the 
+: 716 5 0 boys 
+- 721
+: 726 3 2 Pour 
+: 730 1 2 the 
+: 732 3 7 drinks 
+- 735
+: 742 3 2 Bring 
+: 746 1 2 the 
+: 748 5 0 noise 
+- 753
+: 764 1 9 We’re 
+: 766 2 9 just 
+: 770 2 9 so 
+: 774 1 12 pret
+: 776 3 9 ty 
+- 779
+: 782 3 7 All 
+: 786 2 9 a
+: 790 3 5 round 
+: 794 2 5 the 
+: 798 5 3 world 
+- 803
+: 806 1 2 Pret
+: 808 2 2 ty 
+: 812 5 0 girls 
+- 817
+: 822 2 2 Jump 
+: 826 1 2 the 
+: 828 5 7 line 
+- 833
+: 838 3 2 To 
+: 842 1 2 the 
+: 844 3 0 front 
+- 847
+: 850 2 2 Do 
+: 854 2 2 what 
+: 858 1 2 we 
+: 860 3 7 like 
+- 863
+: 866 2 2 Get 
+: 870 2 2 what 
+: 874 1 2 we 
+: 876 5 0 want 
+- 881
+: 892 1 9 We’re 
+: 894 2 9 just 
+: 898 2 9 so 
+: 902 1 12 pret
+: 904 3 9 ty 
+- 907
+: 910 3 5 Tell 
+: 914 5 5 me 
+- 919
+: 922 1 5 It 
+: 924 2 5 is 
+: 927 2 5 true 
+: 930 1 5 that 
+: 932 2 5 these 
+: 935 2 5 men 
+: 938 1 5 are 
+: 940 2 5 to 
+: 944 5 5 Mars? 
+- 949
+: 954 1 5 Is 
+: 956 2 5 that 
+: 959 2 5 why 
+: 962 1 5 they 
+: 964 2 5 be 
+: 967 2 5 act
+: 970 1 5 ing 
+: 972 2 5 biz
+: 976 5 5 arre? 
+- 981
+: 985 1 5 E
+: 987 2 5 very 
+: 990 2 5 time 
+: 993 1 5 I 
+: 995 2 5 walk 
+: 998 2 5 out 
+: 1001 1 5 of 
+: 1003 2 5 my 
+: 1006 5 5 house 
+- 1011
+: 1014 5 4 It’s 
+: 1022 5 2 like 
+: 1030 5 1 "Hey, 
+: 1038 3 5 ba
+: 1042 5 5 by" 
+- 1047
+: 1052 1 2 They 
+: 1054 2 9 don’t 
+: 1057 2 9 see 
+: 1060 1 9 me 
+: 1062 2 7 rol
+: 1065 2 7 ling 
+: 1068 3 5 my 
+: 1072 7 2 eyes 
+- 1079
+: 1084 1 2 They 
+: 1086 2 9 buz
+: 1089 2 9 zing 
+: 1092 1 9 a
+: 1094 2 7 round 
+: 1097 2 7 me 
+: 1100 3 12 like 
+: 1104 7 9 flies 
+- 1111
+: 1118 2 9 They 
+: 1121 2 9 got 
+: 1124 1 9 one 
+: 1126 2 7 thing 
+: 1129 2 7 on 
+: 1132 3 5 their 
+: 1136 3 7 minds 
+- 1139
+: 1142 5 2 Some 
+: 1150 5 1 things 
+* 1158 1 -5 don’t
+* 1160 3 -3 ~
+* 1164 1 -5 ~ 
+* 1166 3 -5 change 
+- 1169
+: 1172 1 2 The 
+: 1174 2 2 girls 
+: 1178 3 2 roll 
+: 1182 3 7 up 
+- 1185
+F 1190 1 9 Wind
+F 1192 1 9 ows 
+F 1194 3 9 roll 
+F 1198 3 9 down 
+- 1201
+: 1206 3 2 Eyes 
+: 1210 2 2 on 
+: 1214 3 7 us 
+- 1217
+F 1222 3 9 Jaws 
+F 1226 1 9 on 
+F 1228 1 9 the 
+F 1230 5 9 ground 
+- 1235
+: 1238 2 2 Watch 
+: 1242 2 2 them 
+: 1246 3 7 go 
+- 1249
+F 1252 1 9 It’s 
+F 1254 3 9 just 
+F 1258 3 9 so 
+F 1262 1 9 fun
+F 1264 5 9 ny 
+- 1269
+: 1274 2 7 Like 
+: 1278 2 9 bees 
+* 1282 1 9 to 
+* 1284 1 7 the 
+* 1286 1 9 ho
+* 1288 3 7 ney 
+- 1291
+: 1294 3 7 All 
+: 1298 2 9 a
+: 1302 3 5 round 
+: 1306 2 5 the 
+: 1310 5 3 world 
+- 1315
+: 1318 1 2 Pret
+: 1320 2 2 ty 
+: 1324 5 0 girls 
+- 1329
+: 1334 2 2 Wipe 
+: 1338 1 2 the 
+: 1340 3 7 floor 
+- 1343
+: 1346 2 2 With 
+: 1350 3 2 all 
+: 1354 1 2 the 
+: 1356 5 0 boys 
+- 1361
+: 1366 3 2 Pour 
+* 1370 1 2 the 
+* 1372 3 7 drinks 
+- 1375
+: 1382 3 2 Bring 
+: 1386 1 2 the 
+: 1388 5 0 noise 
+- 1393
+: 1404 1 9 We’re 
+: 1406 2 9 just 
+: 1410 2 9 so 
+: 1414 1 12 pret
+: 1416 3 9 ty 
+- 1419
+: 1422 3 7 All 
+: 1426 2 9 a
+: 1430 3 5 round 
+: 1434 2 5 the 
+: 1438 5 3 world 
+- 1443
+: 1446 1 2 Pret
+: 1448 2 2 ty 
+: 1452 5 0 girls 
+- 1457
+: 1462 2 2 Jump 
+: 1466 1 2 the 
+: 1468 5 7 line 
+- 1473
+: 1478 3 2 To 
+: 1482 1 2 the 
+: 1484 3 0 front 
+- 1487
+: 1490 2 2 Do 
+: 1494 2 2 what 
+: 1498 1 2 we 
+: 1500 3 7 like 
+- 1503
+: 1506 2 2 Get 
+: 1510 2 2 what 
+: 1514 1 2 we 
+: 1516 5 0 want 
+- 1521
+: 1532 1 9 We’re 
+: 1534 2 9 just 
+: 1538 2 9 so 
+* 1542 1 12 pret
+* 1544 3 9 ty 
+- 1547 1590
+- 1590
+F 1604 3 9 Hi 
+F 1608 5 9 girls! 
+- 1613
+F 1616 3 9 Hi 
+F 1620 3 9 B! 
+- 1623
+F 1626 1 9 Who’s 
+F 1628 1 9 the 
+F 1630 1 9 new 
+F 1632 3 9 hot
+F 1636 1 9 tie? 
+- 1637
+F 1640 3 9 Yeah, 
+F 1644 1 9 she 
+F 1646 1 9 looks 
+F 1648 3 9 like 
+F 1652 1 9 to
+F 1654 1 9 tal
+F 1656 1 9 ly 
+F 1658 1 9 for
+F 1660 1 9 eign 
+- 1661
+F 1664 3 9 She 
+F 1668 1 9 is 
+- 1669
+F 1672 1 9 She’s 
+F 1674 3 9 like 
+F 1678 1 9 to
+F 1680 1 9 tally 
+F 1682 3 9 from 
+F 1686 1 9 an
+F 1688 1 9 o
+F 1690 1 9 ther 
+F 1692 1 9 pla
+F 1694 2 9 net 
+- 1696
+F 1704 7 9 No 
+F 1714 7 9 way! 
+- 1721
+F 1726 3 9 This 
+F 1730 3 9 phone 
+F 1734 1 9 is 
+F 1736 1 9 to
+F 1738 1 9 tal
+F 1740 1 9 ly 
+F 1742 3 9 brok
+F 1746 3 9 en 
+- 1749
+F 1752 1 9 I 
+F 1754 3 9 can 
+F 1758 3 9 to
+F 1762 1 9 tal
+F 1764 3 9 ly 
+F 1768 3 9 fix 
+F 1772 1 9 it 
+F 1774 3 9 for 
+F 1778 9 9 ya 
+- 1787
+F 1790 3 9 Fix 
+F 1794 1 9 it 
+F 1796 3 9 for 
+F 1800 7 9 me 
+- 1807 1870
+- 1870
+F 1884 3 9 Those 
+F 1888 3 9 are 
+F 1892 1 9 ra
+F 1894 1 9 di
+F 1896 1 9 cal 
+F 1898 1 9 a
+F 1900 1 9 li
+F 1902 1 9 en 
+F 1904 3 9 po
+F 1908 2 9 wers 
+- 1910
+F 1912 5 9 Yeah 
+- 1917
+F 1920 1 9 Let 
+F 1922 1 9 me 
+F 1924 3 9 call 
+F 1928 1 9 your 
+F 1930 5 9 friend 
+- 1935
+F 1938 3 9 To
+F 1942 1 9 tal
+F 1944 3 9 ly 
+- 1947 1958
+- 1958
+F 1972 1 9 Hel
+F 1974 3 9 lo, 
+F 1980 5 9 girls? 
+- 1985
+F 1990 3 9 We’re 
+F 1994 9 9 like 
+F 2004 3 9 to
+F 2008 3 9 tal
+F 2012 3 9 ly 
+- 2015
+F 2026 7 9 Like 
+- 2033
+F 2044 5 9 To
+F 2050 1 9 tal
+F 2052 1 9 ly 
+F 2054 3 9 com
+F 2058 1 9 ing 
+F 2060 3 9 o
+F 2064 1 9 ver 
+F 2066 5 9 right 
+F 2072 3 9 now! 
+- 2075
+F 2078 5 9 Let’s 
+F 2084 9 9 go! 
+- 2093 2094
+- 2094
+: 2108 1 9 We’re 
+: 2110 2 9 just 
+: 2114 2 9 so 
+: 2118 1 12 pret
+: 2120 5 9 ty 
+- 2125
+: 2126 3 7 All 
+: 2130 2 9 a
+: 2134 3 5 round 
+: 2138 2 5 the 
+: 2142 5 3 world 
+- 2147
+: 2150 1 2 Pret
+: 2152 2 2 ty 
+: 2156 5 0 girls 
+- 2161
+: 2166 2 2 Jump 
+: 2170 1 2 the 
+: 2172 5 7 line 
+- 2177
+: 2182 3 2 To 
+: 2186 1 2 the 
+: 2188 3 0 front 
+- 2191
+: 2194 2 2 Do 
+: 2198 2 2 what 
+: 2202 1 2 we 
+: 2204 3 7 like 
+- 2207
+: 2210 2 2 Get 
+: 2214 2 2 what 
+: 2218 1 2 we 
+: 2220 5 0 want 
+- 2225
+: 2236 1 9 We’re 
+: 2238 2 9 just 
+: 2242 2 9 so 
+* 2246 1 12 pret
+* 2248 3 9 ty
+* 2252 3 7 ~
+* 2256 1 5 ~
+* 2258 7 2 ~ 
+- 2265
+F 2268 3 9 Still 
+F 2272 1 9 kil
+F 2274 1 9 ling 
+F 2276 3 9 them 
+F 2280 3 9 soft
+F 2284 1 9 ly 
+- 2285
+F 2288 1 9 I 
+F 2290 3 9 would 
+F 2294 3 9 spend 
+F 2298 3 9 time 
+F 2302 1 9 with 
+F 2304 1 9 you 
+- 2305
+F 2306 1 9 But 
+F 2308 1 9 that 
+F 2310 1 9 would 
+F 2312 1 9 cost 
+F 2314 1 9 me 
+- 2315
+F 2316 1 9 They 
+F 2318 1 9 pray 
+F 2320 1 9 that 
+F 2322 1 9 Ig
+F 2324 1 9 gy-
+F 2326 1 9 Ig
+F 2328 1 9 gy 
+- 2329
+F 2330 1 9 Give 
+F 2332 1 9 ’em 
+F 2334 3 9 one 
+F 2338 3 9 more 
+F 2342 1 9 chance 
+- 2343
+F 2344 1 9 But 
+F 2346 1 9 bu
+F 2348 1 9 sy 
+F 2350 1 9 Ig
+F 2352 1 9 gy 
+F 2354 1 9 would
+F 2356 1 9 n’t 
+F 2358 1 9 e
+F 2360 1 9 ven 
+- 2361
+F 2362 1 9 Give 
+F 2364 1 9 ’em 
+F 2366 3 9 one 
+F 2370 3 9 more 
+F 2374 1 9 plance 
+- 2375
+F 2378 1 9 See, 
+F 2380 1 9 it’s 
+F 2382 1 9 a 
+- 2383
+F 2386 3 9 Thin 
+F 2390 1 9 line 
+F 2392 1 9 bet
+F 2394 1 9 ween 
+F 2396 1 9 the 
+F 2398 1 9 beau
+F 2400 1 9 ty 
+F 2402 1 9 and 
+F 2404 1 9 the 
+F 2406 1 9 beast 
+- 2407
+F 2410 3 9 Slim 
+F 2414 3 9 waist, 
+F 2418 3 9 thick 
+F 2422 1 9 cake 
+- 2423
+F 2424 1 9 The 
+F 2426 3 9 whole 
+F 2430 3 9 world 
+F 2434 1 9 want 
+F 2436 1 9 a 
+F 2438 1 9 piece 
+- 2439
+F 2442 3 9 Bad 
+F 2446 3 9 girl, 
+F 2450 3 9 good 
+- 2453
+F 2456 1 9 Would 
+F 2458 1 9 make 
+F 2460 1 9 you 
+F 2462 3 9 lose 
+F 2466 1 9 your 
+F 2468 1 9 mind 
+- 2469
+F 2472 1 9 All 
+F 2474 1 9 of 
+F 2476 1 9 the 
+F 2478 3 9 boys 
+F 2482 1 9 beg
+F 2484 1 9 ging 
+F 2486 1 9 Brit
+F 2488 1 9 ney 
+- 2489
+F 2490 1 9 Hit 
+F 2492 1 9 ’em 
+F 2494 3 9 one 
+F 2498 3 9 more 
+F 2502 3 9 time 
+- 2505
+F 2508 5 9 Iggs 
+- 2513 2568
+- 2568
+F 2582 3 9 All 
+F 2586 1 9 the 
+F 2588 3 9 boys, 
+F 2592 5 9 boys, 
+F 2598 5 9 boys 
+- 2603 2630
+- 2630
+F 2644 1 9 What’s 
+F 2646 2 9 up, 
+F 2650 1 9 Brit
+F 2652 3 9 ney? 
+- 2655
+F 2658 3 9 Uh, 
+F 2662 5 9 uh 
+- 2667
+: 2670 3 7 All 
+: 2674 2 9 a
+: 2678 3 5 round 
+: 2682 2 5 the 
+: 2686 5 3 world 
+- 2691
+: 2694 1 2 Pret
+: 2696 2 2 ty 
+: 2700 5 0 girls 
+- 2705
+: 2710 2 2 Wipe 
+: 2714 1 2 the 
+: 2716 3 7 floor 
+- 2719
+: 2722 2 2 With 
+: 2726 3 2 all 
+: 2730 1 2 the 
+: 2732 5 0 boys 
+- 2737
+: 2742 3 2 Pour 
+: 2746 1 2 the 
+: 2748 3 7 drinks 
+- 2751
+: 2758 3 2 Bring 
+: 2762 1 2 the 
+: 2764 5 0 noise 
+- 2769
+: 2780 1 9 We’re 
+: 2782 2 9 just 
+: 2786 2 9 so 
+: 2790 1 12 pret
+: 2792 3 9 ty 
+- 2795
+: 2798 3 7 All 
+: 2802 2 9 a
+: 2806 3 5 round 
+: 2810 2 5 the 
+: 2814 5 3 world 
+- 2819
+: 2822 1 2 Pret
+: 2824 2 2 ty 
+: 2828 5 0 girls 
+- 2833
+* 2838 2 2 Jump 
+* 2842 1 2 the 
+* 2844 5 7 line 
+- 2849
+: 2854 3 2 To 
+: 2858 1 2 the 
+: 2860 3 0 front 
+- 2863
+: 2866 2 2 Do 
+: 2870 2 2 what 
+: 2874 1 2 we 
+: 2876 3 7 like 
+- 2879
+: 2882 2 2 Get 
+* 2886 2 2 what 
+* 2890 1 2 we 
+* 2892 5 0 want 
+- 2897
+: 2908 1 9 We’re 
+: 2910 2 9 just 
+: 2914 2 9 so 
+: 2918 1 12 pret
+: 2920 5 9 ty 
+- 2925 3292
+- 3292
+F 3306 3 9 All 
+F 3310 1 9 the 
+F 3312 3 9 boys, 
+F 3316 5 9 boys, 
+F 3322 5 9 boys 
+- 3327 3354
+- 3354
+F 3368 1 9 What’s 
+F 3370 2 9 up, 
+F 3374 1 9 Brit
+F 3376 3 9 ney? 
+- 3379
+F 3382 3 9 Uh, 
+F 3386 5 9 uh 
+- 3391
+: 3394 3 7 All 
+: 3398 2 9 a
+: 3402 3 5 round 
+: 3406 2 5 the 
+: 3410 5 3 world 
+- 3415
+: 3418 1 2 Pret
+: 3420 2 2 ty 
+: 3424 5 0 girls 
+- 3429
+: 3434 2 2 Wipe 
+: 3438 1 2 the 
+: 3440 3 7 floor 
+- 3443
+: 3446 2 2 With 
+: 3450 3 2 all 
+: 3454 1 2 the 
+: 3456 5 0 boys 
+- 3461
+: 3466 3 2 Pour 
+: 3470 1 2 the 
+: 3472 3 7 drinks 
+- 3475
+: 3482 3 2 Bring 
+: 3486 1 2 the 
+: 3488 5 0 noise 
+- 3493
+: 3504 1 9 We’re 
+: 3506 2 9 just 
+: 3510 2 9 so 
+: 3514 1 12 pret
+: 3516 3 9 ty 
+- 3519
+: 3522 3 7 All 
+: 3526 2 9 a
+: 3530 3 5 round 
+: 3534 2 5 the 
+: 3538 5 3 world 
+- 3543
+: 3546 1 2 Pret
+: 3548 2 2 ty 
+: 3552 5 0 girls. 
+E

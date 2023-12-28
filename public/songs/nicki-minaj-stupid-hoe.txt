@@ -1,0 +1,953 @@
+#ID:nicki-minaj-stupid-hoe
+#ARTIST:Nicki Minaj
+#ARTISTORIGIN:US
+#TITLE:Stupid Hoe
+#CREATOR:Coppo
+#CREATORURL:
+#BPM:200
+#REALBPM:99
+#YEAR:2012
+#SOURCEURL:
+#VIDEOID:T6j4f8cHBIM
+#VIDEOGAP:0
+#VOLUME:0,77
+#GENRE:R&B
+#LANGUAGE:English
+#LASTUPDATE:2023-12-28T19:33:32.208Z
+#GAP:5525
+F 13 5 6 Uh
+- 18
+F 29 5 6 Yo
+- 34
+F 45 5 6 Yo
+- 50
+F 59 1 6 I 
+F 61 1 6 get 
+F 63 1 6 it 
+F 65 1 6 crack
+F 67 1 6 ing 
+F 69 1 6 like 
+F 71 1 6 a 
+F 73 3 6 bad 
+F 77 3 6 back
+- 80
+F 85 3 6 Bitch 
+F 89 1 6 talk
+F 91 1 6 in' 
+F 93 1 6 she 
+F 95 1 6 the 
+F 97 1 6 queen
+- 98
+F 101 1 6 When 
+F 103 1 6 she 
+F 105 1 6 look
+F 107 1 6 in' 
+F 109 1 6 like 
+F 111 1 6 a 
+F 113 3 6 lab 
+F 117 3 6 rat
+- 120
+F 125 3 6 I'm 
+F 129 3 6 An
+F 133 1 6 ge
+F 135 3 6 li
+F 139 1 6 na, 
+F 141 3 6 you 
+F 145 1 6 Jen
+F 147 1 6 ni
+F 149 3 6 fer
+- 152
+F 155 1 6 C'
+F 157 5 6 mon 
+F 163 1 6 bitch
+- 164
+F 167 1 6 You 
+F 169 3 6 see 
+F 173 3 6 where 
+F 177 3 6 Brad 
+F 181 1 6 at?
+- 182
+: 185 3 0 Ice 
+: 189 1 -1 my 
+: 191 3 2 wrist-
+: 195 1 -1 es
+- 196
+: 197 1 -1 Then 
+: 199 1 -1 I 
+: 201 3 0 piss 
+: 205 1 -1 on 
+: 207 3 2 bit
+: 211 1 -1 ches
+- 212
+: 213 1 -1 You 
+: 215 1 -1 could 
+: 217 3 0 suck 
+: 221 1 -1 my 
+: 223 3 2 diz
+: 227 1 -1 nick
+- 228
+: 229 1 -1 If 
+: 231 1 -1 you 
+: 233 3 0 take 
+: 237 1 -1 this 
+: 239 3 2 jizz-
+: 243 1 -1 is
+- 244
+: 245 1 -1 You 
+: 247 1 -1 don't 
+: 249 3 0 like 
+: 253 1 -1 them 
+: 255 3 2 dis
+: 259 1 -1 ses
+- 260
+: 261 1 -1 Give 
+: 263 1 -1 my 
+: 265 3 0 ass 
+: 269 1 -1 some 
+: 271 3 2 kis
+: 275 1 -1 ses
+- 276
+: 277 1 -1 Yeah, 
+: 279 1 -1 they 
+: 281 3 0 know 
+: 285 1 -1 what 
+: 287 3 2 this 
+: 291 1 -1 is
+- 292
+: 293 1 -1 Giv
+: 295 1 -1 in' 
+: 297 3 0 this 
+: 301 1 -1 some 
+: 303 3 2 bus
+: 307 1 -1 iness
+- 308
+F 309 1 0 Cuz 
+F 311 1 0 I 
+F 313 1 0 pull 
+F 315 1 0 up 
+F 317 1 0 and 
+F 319 1 0 I'm 
+F 321 1 0 stunt
+F 323 1 0 in'
+- 324
+F 325 1 0 But 
+F 327 1 0 I 
+F 329 1 0 ain't 
+F 331 1 0 a 
+F 333 3 0 stunt
+F 337 5 0 man
+- 342
+F 345 1 0 Yes, 
+F 347 1 0 I'm 
+F 349 1 0 rock
+F 351 1 0 in' 
+F 353 1 0 Jor
+F 355 1 0 dans
+- 356
+F 357 1 0 But 
+F 359 1 0 I 
+F 361 1 0 ain't 
+F 363 1 0 a 
+F 365 3 0 jump
+F 369 5 0 in'
+- 374
+F 377 1 -1 Bit
+F 379 1 -1 ches 
+F 381 1 -1 play 
+F 383 1 -1 the 
+F 385 1 -1 back
+- 386
+F 387 1 -1 Cuz 
+F 389 1 -1 they 
+F 391 1 -1 know 
+F 393 1 -1 I'm 
+F 395 1 -1 the 
+F 397 3 -1 front
+F 401 5 -1 man
+- 406
+F 409 1 -1 Put 
+F 411 1 -1 me 
+F 413 1 -1 on 
+F 415 1 -1 a 
+F 417 1 -1 dol
+F 419 1 -1 lar
+- 420
+F 421 1 -1 Cuz 
+F 423 1 -1 I'm 
+F 425 1 -1 who 
+F 427 1 -1 they 
+F 429 3 -1 trust 
+F 433 3 -1 in
+- 436
+F 439 1 -1 Ey 
+F 441 3 -1 yo 
+F 445 3 -1 S
+F 449 3 -1 B
+- 452
+F 455 3 -1 What 
+F 459 1 -1 the 
+F 461 3 -1 fuck's 
+F 465 3 -1 good?
+- 468
+F 471 1 -1 We 
+F 473 3 -1 ship 
+F 477 1 -1 pla
+F 479 1 -1 ti
+F 481 1 -1 num
+- 482
+F 485 1 -1 Them 
+F 487 1 -1 bit
+F 489 1 -1 ches 
+F 491 1 -1 is 
+F 493 1 -1 ship
+F 495 1 -1 pin' 
+F 497 3 -1 wood
+- 500
+F 503 1 -1 Them 
+F 505 1 -1 nap
+F 507 1 -1 py 
+F 509 1 -1 head
+F 511 1 -1 ed 
+F 513 3 -1 hoes
+- 516
+F 519 3 -1 But 
+F 523 1 -1 my 
+F 525 1 -1 kit
+F 527 1 -1 chen 
+F 529 3 -1 good
+- 532
+: 535 1 5 I 
+: 537 1 3 wish 
+: 539 1 2 I 
+: 541 1 2 wish 
+: 543 1 2 I 
+: 545 1 2 wish 
+: 547 1 2 I 
+: 549 1 3 wish 
+: 551 1 5 I 
+: 553 1 3 wish 
+: 555 1 2 a 
+: 557 1 -1 bitch
+- 558
+: 561 3 -1 Would
+: 565 127 -3 ~
+- 692
+F 701 1 -1 You 
+F 703 1 -1 a 
+F 705 1 -1 stu
+F 707 1 -1 pid 
+F 709 1 -1 hoe
+- 710
+F 713 1 -1 You 
+F 715 1 -1 a, 
+F 717 1 -1 you 
+F 719 1 -1 a 
+F 721 1 -1 stu
+F 723 1 -1 pid 
+F 725 3 -1 hoe
+- 728
+F 733 1 -1 You 
+F 735 1 -1 a 
+F 737 1 -1 stu
+F 739 1 -1 pid 
+F 741 1 -1 hoe
+- 742
+F 745 1 -1 You 
+F 747 1 -1 a, 
+F 749 1 -1 you 
+F 751 1 -1 a 
+F 753 1 -1 stu
+F 755 1 -1 pid 
+F 757 3 -1 hoe
+- 760
+F 765 1 -1 You 
+F 767 1 -1 a 
+F 769 1 -1 stu
+F 771 1 -1 pid 
+F 773 1 -1 hoe
+- 774
+F 777 1 -1 You 
+F 779 1 -1 a, 
+F 781 1 -1 you 
+F 783 1 -1 a 
+F 785 1 -1 stu
+F 787 1 -1 pid 
+F 789 1 -1 hoe
+- 790
+F 793 1 -1 You 
+F 795 1 -1 a 
+F 797 1 -1 stu
+F 799 1 -1 pid 
+F 801 1 -1 hoe
+- 802
+F 805 1 -1 Yeah
+F 807 1 -1 ~ 
+F 809 1 -1 you 
+F 811 1 -1 a, 
+F 813 1 -1 you 
+F 815 1 -1 a 
+F 817 1 -1 stu
+F 819 1 -1 pid 
+F 821 3 -1 hoe
+- 824
+F 829 1 -1 You 
+F 831 1 -1 a 
+F 833 1 -1 stu
+F 835 1 -1 pid 
+F 837 1 -1 hoe
+- 838
+F 841 1 -1 You 
+F 843 1 -1 a, 
+F 845 1 -1 you 
+F 847 1 -1 a 
+F 849 1 -1 stu
+F 851 1 -1 pid
+- 852
+F 853 1 -1 Stu
+F 855 1 -1 pid, 
+F 857 1 -1 stu
+F 859 1 -1 pid
+- 860
+F 861 1 -1 You 
+F 863 1 -1 a 
+F 865 1 -1 stu
+F 867 1 -1 pid 
+F 869 1 -1 hoe
+- 870
+F 873 1 -1 You 
+F 875 1 -1 a, 
+F 877 1 -1 you 
+F 879 1 -1 a 
+F 881 1 -1 stu
+F 883 1 -1 pid
+- 884
+F 885 1 -1 Stu
+F 887 1 -1 pid, 
+F 889 1 -1 stu
+F 891 1 -1 pid
+- 892
+F 893 1 -1 You 
+F 895 1 -1 a 
+F 897 1 -1 stu
+F 899 1 -1 pid 
+F 901 1 -1 hoe
+- 902
+F 905 1 -1 You 
+F 907 1 -1 a, 
+F 909 1 -1 you 
+F 911 1 -1 a 
+F 913 1 -1 stu
+F 915 1 -1 pid
+- 916
+F 917 1 -1 Stu
+F 919 1 -1 pid, 
+F 921 1 -1 stu
+F 923 1 -1 pid
+- 924
+F 925 1 -1 Stu
+F 927 1 -1 pid 
+F 929 1 -1 hoe
+- 930
+F 933 1 -1 Yeah
+F 935 1 -1 ~ 
+F 937 1 -1 you 
+F 939 1 -1 a, 
+F 941 1 -1 you 
+F 943 1 -1 a 
+F 945 1 -1 stu
+F 947 1 -1 pid 
+F 949 3 -1 hoe
+- 952
+F 957 3 -1 Look 
+F 961 1 -1 bub
+F 963 3 -1 bles
+- 966
+F 969 1 -1 Go 
+F 971 1 -1 back 
+F 973 1 -1 to 
+F 975 1 -1 ya 
+F 977 1 -1 ha
+F 979 1 -1 bi
+F 981 3 -1 tat
+- 984
+F 989 3 -1 M
+F 993 3 -1 J 
+F 997 3 -1 gone 
+F 1001 1 -1 and 
+F 1003 3 -1 I 
+F 1007 1 -1 ain't 
+F 1009 1 -1 hav
+F 1011 1 -1 in' 
+F 1013 1 -1 that
+- 1014
+F 1017 1 -1 How 
+F 1019 1 -1 you 
+F 1021 3 -1 gon' 
+F 1025 1 -1 be 
+F 1027 1 -1 the 
+F 1029 1 -1 stunt
+- 1030
+F 1033 1 -1 Dou
+F 1035 1 -1 ble 
+F 1037 1 -1 to 
+F 1039 1 -1 the 
+F 1041 1 -1 nig
+F 1043 1 -1 ga 
+F 1045 3 -1 mon
+F 1049 1 -1 key
+- 1050
+F 1053 1 -1 Top 
+F 1055 1 -1 of 
+F 1057 1 -1 that 
+F 1059 1 -1 I'm 
+F 1061 1 -1 in 
+F 1063 1 -1 the 
+F 1065 1 -1 Phan
+F 1067 1 -1 tom
+- 1068
+F 1069 1 -1 Look
+F 1071 1 -1 in' 
+F 1073 1 -1 hel
+F 1075 1 -1 la 
+F 1077 1 -1 chun
+F 1079 1 -1 ky
+- 1080
+: 1081 3 0 Ice 
+: 1085 1 -1 my 
+: 1087 3 2 wrist-
+: 1091 1 -1 es
+- 1092
+: 1093 1 -1 Then 
+: 1095 1 -1 I 
+: 1097 3 0 piss 
+: 1101 1 -1 on 
+: 1103 3 2 bit
+: 1107 1 -1 ches
+- 1108
+: 1109 1 -1 You 
+: 1111 1 -1 could 
+: 1113 3 0 suck 
+: 1117 1 -1 my 
+: 1119 3 2 diz
+: 1123 1 -1 nick
+- 1124
+: 1125 1 -1 If 
+: 1127 1 -1 you 
+: 1129 3 0 take 
+: 1133 1 -1 this 
+: 1135 3 2 jizz-
+: 1139 1 -1 is
+- 1140
+: 1141 1 -1 You 
+: 1143 1 -1 don't 
+: 1145 3 0 like 
+: 1149 1 -1 them 
+: 1151 3 2 dis
+: 1155 1 -1 ses
+- 1156
+: 1157 1 -1 Give 
+: 1159 1 -1 my 
+: 1161 3 0 ass 
+: 1165 1 -1 some 
+: 1167 3 2 kis
+: 1171 1 -1 ses
+- 1172
+: 1173 1 -1 Yeah, 
+: 1175 1 -1 they 
+: 1177 3 0 know 
+: 1181 1 -1 what 
+: 1183 3 2 this 
+: 1187 1 -1 is
+- 1188
+: 1189 1 -1 Giv
+: 1191 1 -1 in' 
+: 1193 3 0 this 
+: 1197 1 -1 some 
+: 1199 3 2 bus
+: 1203 1 -1 iness
+- 1204
+F 1205 1 0 Cuz 
+F 1207 1 0 I 
+F 1209 1 0 pull 
+F 1211 1 0 up 
+F 1213 1 0 in 
+F 1215 1 0 the 
+F 1217 1 0 Porshe
+- 1218
+F 1221 1 0 But 
+F 1223 1 0 I 
+F 1225 1 0 ain't 
+F 1227 1 0 a 
+F 1229 3 0 Ros
+F 1233 5 0 sie
+- 1238
+F 1241 1 0 Pret
+F 1243 1 0 ty 
+F 1245 1 0 bit
+F 1247 1 0 ches 
+F 1249 1 0 on
+F 1251 1 0 ly
+- 1252
+F 1253 1 0 Could 
+F 1255 1 0 get 
+F 1257 1 0 in 
+F 1259 1 0 my 
+F 1261 3 0 pos
+F 1265 5 0 se
+- 1270
+F 1273 1 0 Yes, 
+F 1275 1 0 my 
+F 1277 1 0 name 
+F 1279 1 0 is 
+F 1281 1 0 Ro
+F 1283 1 0 man
+- 1284
+F 1285 1 0 Last 
+F 1287 1 0 name 
+F 1289 1 0 is 
+F 1291 1 0 Zo
+F 1293 3 0 lans
+F 1297 5 0 ki
+- 1302
+F 1305 3 0 But 
+F 1309 1 0 no 
+F 1311 1 0 re
+F 1313 1 0 la
+F 1315 1 0 tion
+- 1316
+F 1317 1 0 To 
+F 1319 1 0 Ro
+F 1321 1 0 man 
+F 1323 1 0 Po
+F 1325 3 0 lans
+F 1329 3 0 ki
+- 1332
+F 1335 1 0 Hey 
+F 1337 3 0 yo 
+F 1341 1 0 Ba
+F 1343 1 0 by 
+F 1345 3 0 Pop
+- 1348
+F 1351 3 0 Fuck 
+F 1355 1 0 you 
+F 1357 1 0 and 
+F 1359 1 0 your 
+F 1361 3 0 E
+F 1365 3 0 P
+- 1368
+F 1373 3 0 Who's 
+F 1377 1 0 gas
+F 1379 1 0 sin' 
+F 1381 1 0 this 
+F 1383 7 0 ho?
+- 1390
+F 1393 3 0 B
+F 1397 3 0 P?
+- 1400 1404
+- 1404
+F 1417 5 0 Hmmm
+- 1422
+F 1425 5 0 Thinks
+- 1430
+F 1433 3 0 One, 
+F 1437 3 0 two, 
+F 1441 1 0 three
+- 1442
+F 1443 1 0 Do 
+F 1445 1 0 the 
+F 1447 1 0 Nic
+F 1449 1 0 ki 
+F 1451 1 0 Mi
+F 1453 3 0 naj 
+F 1457 1 0 blink
+- 1458
+F 1461 1 0 Cuz 
+F 1463 1 0 these 
+F 1465 3 0 hoes 
+F 1469 3 0 so 
+F 1473 3 0 bust
+F 1477 1 0 ed
+- 1478
+F 1479 3 0 Hoes 
+F 1485 3 0 so 
+F 1489 3 0 crus
+F 1493 1 0 ty
+- 1494
+F 1495 1 0 These 
+F 1497 1 0 bit
+F 1499 1 0 ches 
+F 1501 1 0 in 
+F 1503 1 0 my 
+F 1505 3 0 sons 
+F 1509 1 0 and
+- 1510
+F 1511 3 0 I 
+F 1515 1 0 don't 
+F 1517 3 0 want 
+F 1521 3 0 cus
+F 1525 1 0 tody
+- 1526
+F 1527 1 0 These 
+F 1529 3 0 hoes 
+F 1533 3 0 so 
+F 1537 3 0 bus
+F 1541 1 0 ted
+- 1542
+F 1543 3 0 Hoes
+F 1547 1 0 ~ 
+F 1549 3 0 so 
+F 1553 3 0 crus
+F 1557 1 0 ty
+- 1558
+F 1559 1 0 These 
+F 1561 1 0 bit
+F 1563 1 0 ches 
+F 1565 1 0 in 
+F 1567 1 0 my 
+F 1569 3 0 sons 
+F 1573 1 0 and
+- 1574
+F 1575 3 0 I 
+F 1579 1 0 don't 
+F 1581 3 0 want 
+F 1585 3 0 cus
+F 1589 1 0 to
+F 1591 1 0 dy
+- 1592
+F 1597 1 0 You 
+F 1599 1 0 a 
+F 1601 1 0 stu
+F 1603 1 0 pid 
+F 1605 1 0 hoe
+- 1606
+F 1609 1 0 You 
+F 1611 1 0 a, 
+F 1613 1 0 you 
+F 1615 1 0 a 
+F 1617 1 0 stu
+F 1619 1 0 pid 
+F 1621 3 0 hoe
+- 1624
+F 1629 1 0 You 
+F 1631 1 0 a 
+F 1633 1 0 stu
+F 1635 1 0 pid 
+F 1637 1 0 hoe
+- 1638
+F 1641 1 0 You 
+F 1643 1 0 a, 
+F 1645 1 0 you 
+F 1647 1 0 a 
+F 1649 1 0 stu
+F 1651 1 0 pid 
+F 1653 3 0 hoe
+- 1656
+F 1661 1 0 You 
+F 1663 1 0 a 
+F 1665 1 0 stu
+F 1667 1 0 pid 
+F 1669 1 0 hoe
+- 1670
+F 1673 1 0 You 
+F 1675 1 0 a, 
+F 1677 1 0 you 
+F 1679 1 0 a 
+F 1681 1 0 stu
+F 1683 1 0 pid 
+F 1685 1 0 hoe
+- 1686
+F 1689 1 0 You 
+F 1691 1 0 a 
+F 1693 1 0 stu
+F 1695 1 0 pid 
+F 1697 1 0 hoe
+- 1698
+F 1701 1 0 Yeah
+F 1703 1 0 ~ 
+F 1705 1 0 you 
+F 1707 1 0 a, 
+F 1709 1 0 you 
+F 1711 1 0 a 
+F 1713 1 0 stu
+F 1715 1 0 pid 
+F 1717 3 0 hoe
+- 1720
+F 1725 1 0 You 
+F 1727 1 0 a 
+F 1729 1 0 stu
+F 1731 1 0 pid 
+F 1733 1 0 hoe
+- 1734
+F 1737 1 0 You 
+F 1739 1 0 a, 
+F 1741 1 0 you 
+F 1743 1 0 a 
+F 1745 1 0 stu
+F 1747 1 0 pid
+- 1748
+F 1749 1 0 Stu
+F 1751 1 0 pid, 
+F 1753 1 0 stu
+F 1755 1 0 pid
+- 1756
+F 1757 1 0 You 
+F 1759 1 0 a 
+F 1761 1 0 stu
+F 1763 1 0 pid 
+F 1765 1 0 hoe
+- 1766
+F 1769 1 0 You 
+F 1771 1 0 a, 
+F 1773 1 0 you 
+F 1775 1 0 a 
+F 1777 1 0 stu
+F 1779 1 0 pid
+- 1780
+F 1781 1 0 Stu
+F 1783 1 0 pid, 
+F 1785 1 0 stu
+F 1787 1 0 pid
+- 1788
+F 1789 1 0 You 
+F 1791 1 0 a 
+F 1793 1 0 stu
+F 1795 1 0 pid 
+F 1797 1 0 hoe
+- 1798
+F 1801 1 0 You 
+F 1803 1 0 a, 
+F 1805 1 0 you 
+F 1807 1 0 a 
+F 1809 1 0 stu
+F 1811 1 0 pid
+- 1812
+F 1813 1 0 Stu
+F 1815 1 0 pid, 
+F 1817 1 0 stu
+F 1819 1 0 pid
+- 1820
+F 1821 1 0 Stu
+F 1823 1 0 pid 
+F 1825 1 0 hoe
+- 1826
+F 1829 1 0 Yeah
+F 1831 1 0 ~ 
+F 1833 1 0 you 
+F 1835 1 0 a, 
+F 1837 1 0 you 
+F 1839 1 0 a 
+F 1841 1 0 stu
+F 1843 1 0 pid 
+F 1845 3 0 hoe
+- 1848
+F 1857 1 0 If 
+F 1859 1 0 you 
+F 1861 3 0 cute
+- 1864
+F 1869 1 0 Then 
+F 1871 1 0 your 
+F 1873 1 0 crew 
+F 1875 1 0 can 
+F 1877 3 0 roll
+- 1880
+F 1889 1 0 If 
+F 1891 1 0 you 
+F 1893 3 0 sex
+F 1897 1 0 y
+- 1898
+F 1901 1 0 Eat 
+F 1903 1 0 my 
+F 1905 1 0 coo
+F 1907 1 0 ca 
+F 1909 3 0 raw
+- 1912
+F 1921 1 0 Put 
+F 1923 1 0 ya 
+F 1925 3 0 cape 
+F 1929 1 0 on
+- 1930
+F 1933 1 0 You 
+F 1935 1 0 a 
+F 1937 1 0 su
+F 1939 1 0 per 
+F 1941 3 0 hoe
+- 1944
+F 1953 1 0 Twen
+F 1955 1 0 ty 
+F 1957 3 0 twelve
+- 1960
+F 1963 1 0 I'm 
+F 1965 1 0 at 
+F 1967 1 0 the 
+F 1969 1 0 su
+F 1971 1 0 per 
+F 1973 1 0 ball!
+- 1974
+: 1977 2 -2 Stu
+: 1981 1 -2 pid 
+: 1983 2 1 hoes 
+: 1987 1 1 is 
+: 1989 2 3 my 
+: 1993 2 5 e
+: 1997 1 -2 ne
+: 1999 3 -2 my
+- 2002
+: 2009 2 -2 Stu
+: 2013 1 -2 pid 
+: 2015 2 1 hoes 
+* 2019 1 1 is 
+* 2021 2 3 so 
+* 2025 3 5 wack
+- 2028
+: 2041 2 -2 Stu
+: 2045 1 -2 pid 
+: 2047 2 1 hoe 
+: 2051 1 1 should
+: 2053 1 3 a 
+: 2055 1 3 be
+: 2057 2 5 friend
+: 2061 1 -2 ed 
+: 2063 3 -2 me
+- 2066
+: 2070 1 -2 Then 
+: 2072 1 3 she 
+: 2074 1 3 could
+: 2076 1 3 've 
+: 2078 3 1 pro
+: 2082 1 1 bably 
+: 2084 2 0 came 
+: 2088 3 -2 back
+- 2091 2092
+- 2092
+: 2105 2 -2 Stu
+: 2109 1 -2 pid 
+: 2111 2 1 hoes 
+: 2115 1 1 is 
+: 2117 2 3 my 
+: 2121 2 5 e
+: 2125 1 -2 ne
+: 2127 3 -2 my
+- 2130
+: 2137 2 -2 Stu
+: 2141 1 -2 pid 
+: 2143 2 1 hoes 
+: 2147 1 1 is 
+: 2149 2 3 so 
+: 2153 3 5 wack
+- 2156
+: 2169 2 -2 Stu
+: 2173 1 -2 pid 
+: 2175 2 1 hoe 
+: 2179 1 1 should
+: 2181 1 3 a 
+: 2183 1 3 be
+: 2185 2 5 friend
+: 2189 1 -2 ed 
+: 2191 3 -2 me
+- 2194
+: 2198 1 -2 Then 
+: 2200 1 3 she 
+: 2202 1 3 could
+: 2204 1 3 've 
+* 2206 3 1 pro
+* 2210 1 1 bably 
+: 2212 2 0 came 
+: 2216 3 -2 back
+- 2219
+: 2225 3 8 You 
+: 2229 2 5 a 
+: 2233 5 8 stu
+: 2241 4 4 pid 
+: 2247 3 2 hoe
+: 2251 1 -1 ~
+- 2252
+: 2257 3 8 You 
+: 2261 2 5 a 
+: 2265 5 8 stu
+: 2273 4 4 pid 
+: 2279 3 2 hoe
+: 2283 1 -1 ~
+- 2284
+: 2289 3 8 You 
+: 2293 2 5 a 
+* 2297 7 8 stu
+* 2305 7 13 ~
+* 2313 7 15 ~
+* 2321 3 18 pid
+* 2325 2 13 ~ 
+* 2329 13 13 hoe
+- 2342
+F 2347 1 1 And 
+F 2349 1 1 I 
+F 2351 1 1 ain't 
+F 2353 1 1 hit 
+F 2355 1 1 that 
+F 2357 1 1 note 
+F 2359 1 1 but
+- 2360
+: 2361 1 1 Fuck 
+: 2363 1 -2 you 
+: 2365 1 -2 stu
+: 2367 1 -2 pid 
+: 2369 1 -2 hoe
+- 2370
+: 2371 1 -2 Yes, 
+: 2373 1 -2 fuck 
+: 2375 1 -2 you 
+: 2377 1 -2 stu
+: 2379 1 -2 pid 
+: 2381 3 -2 hoe
+- 2384
+: 2387 1 1 I 
+: 2389 3 1 said 
+: 2393 1 1 fuck 
+: 2395 1 -1 you 
+: 2397 1 -1 stu
+: 2399 1 -1 pid 
+: 2401 1 -1 hoe
+- 2402
+: 2403 1 -1 And 
+: 2405 1 -1 fuck 
+: 2407 1 -1 you 
+: 2409 1 -1 stu
+: 2411 1 -1 pid 
+: 2413 3 -1 hoe
+- 2416
+: 2419 1 1 I 
+: 2421 3 1 said 
+: 2425 1 -2 fuck 
+: 2427 1 -2 you 
+: 2429 1 -2 stu
+: 2431 1 -2 pid 
+: 2433 1 -2 hoe
+- 2434
+: 2435 1 -2 And 
+: 2437 1 -2 fuck 
+: 2439 1 -2 you 
+: 2441 1 -2 stu
+: 2443 1 -2 pid 
+: 2445 3 -2 hoe
+- 2448
+: 2451 1 1 I 
+: 2453 3 1 said 
+: 2457 1 1 fuck 
+: 2459 1 -2 you 
+: 2461 1 -2 stu
+: 2463 1 -2 pid 
+: 2465 1 -2 hoe
+- 2466
+: 2467 1 -2 And 
+: 2469 1 -2 fuck 
+: 2471 1 -2 you 
+: 2473 1 -2 stu
+: 2475 1 -2 pid 
+: 2477 3 -2 hoe
+- 2480
+F 2488 2 -1 I 
+F 2491 2 -1 am 
+F 2494 2 -1 a 
+F 2497 4 -1 fe
+F 2502 4 -1 male 
+F 2507 4 -1 Wee
+F 2512 4 -1 zy!
+E
