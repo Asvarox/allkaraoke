@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { useBackground } from 'Elements/LayoutWithBackground';
 import Loader from 'Elements/Loader';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
@@ -30,7 +31,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const songsPerRow = mobilePhoneMode ? MAX_SONGS_PER_ROW - 1 : MAX_SONGS_PER_ROW;
 
   useBackgroundMusic(false);
-  // useBackground(true);
+  useBackground(true);
   useBlockScroll();
 
   const [{ previewTop, previewLeft, previewWidth, previewHeight }, setPositions] = useState({
