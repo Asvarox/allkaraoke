@@ -3,8 +3,8 @@ import { Casino, Search } from '@mui/icons-material';
 import { Button } from 'Elements/Button';
 import { Tooltip } from 'Elements/Tooltip';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import QuickSearch from 'Scenes/SingASong/SongSelection/Components/QuickSearch';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
-import QuickSearch from 'Scenes/SingASong/SongSelection/QuickSearch';
 import { Dispatch, SetStateAction, useState } from 'react';
 
 interface Props {

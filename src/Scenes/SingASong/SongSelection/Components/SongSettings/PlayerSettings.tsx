@@ -7,7 +7,7 @@ import PlayersManager from 'Players/PlayersManager';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings/SinglePlayer';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/Components/SongSettings/PlayerSettings/SinglePlayer';
 import { PLAYER_NAMES_SESSION_STORAGE_KEY } from 'hooks/players/consts';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { PlayerSetup, SongPreview } from 'interfaces';

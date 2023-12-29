@@ -5,12 +5,13 @@ import Loader from 'Elements/Loader';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import AdditionalListControls from 'Scenes/SingASong/SongSelection/AdditionalListControls';
-import BackgroundThumbnail from 'Scenes/SingASong/SongSelection/BackgroundThumbnail';
+import AdditionalListControls from 'Scenes/SingASong/SongSelection/Components/AdditionalListControls';
+import BackgroundThumbnail from 'Scenes/SingASong/SongSelection/Components/BackgroundThumbnail';
+import Playlists from 'Scenes/SingASong/SongSelection/Components/Playlists';
+import { FinalSongCard } from 'Scenes/SingASong/SongSelection/Components/SongCard';
+import SongGroupsNavigation from 'Scenes/SingASong/SongSelection/Components/SongGroupsNavigation';
+import SongPreview from 'Scenes/SingASong/SongSelection/Components/SongPreview';
 import useSongSelection from 'Scenes/SingASong/SongSelection/Hooks/useSongSelection';
-import Playlists from 'Scenes/SingASong/SongSelection/Playlists';
-import { FinalSongCard } from 'Scenes/SingASong/SongSelection/SongCard';
-import SongPreview from 'Scenes/SingASong/SongSelection/SongPreview';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useBlockScroll from 'hooks/useBlockScroll';
 import usePrevious from 'hooks/usePrevious';
@@ -109,6 +110,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
             keyboardControl={keyboardControl}
           />
           <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
+            <SongGroupsNavigation groupedSongList={groupedSongList} containerRef={list} selectSong={moveToSong} />
             {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
             {songPreview && (
               <SongPreview
@@ -185,7 +187,7 @@ const SongImageBackground = styled(BackgroundThumbnail)`
   inset: 0;
   width: 100%;
   height: 100%;
-  filter: blur(5px) grayscale(90%);
+  filter: blur(7px) grayscale(90%);
   opacity: 0.25;
   object-fit: cover;
 `;
@@ -231,9 +233,7 @@ const SongsGroupHeader = styled.div`
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
   font-size: 3.5rem;
-  position: sticky;
   z-index: 1;
-  top: calc(-1 * var(--song-list-gap));
   color: ${styles.colors.text.active};
   background: rgba(0, 0, 0, 0.7);
 `;
@@ -244,7 +244,7 @@ const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
   display: flex;
   flex-direction: column;
   gap: var(--song-list-gap);
-  padding: 4.5rem 0;
+  padding: 10rem 0;
   overflow-y: auto;
   overflow-x: clip;
   box-sizing: border-box;

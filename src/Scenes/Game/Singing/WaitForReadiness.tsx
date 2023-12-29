@@ -5,7 +5,7 @@ import { typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
-import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
 import { waitFinished } from 'SoundManager';
 import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';

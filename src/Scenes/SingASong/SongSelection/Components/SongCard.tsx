@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import SongFlag from 'Scenes/SingASong/SongSelection/SongCard/SongFlag';
+import SongFlag from 'Scenes/SingASong/SongSelection/Components/SongCard/SongFlag';
 import { useSongStats } from 'Songs/stats/hooks';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';

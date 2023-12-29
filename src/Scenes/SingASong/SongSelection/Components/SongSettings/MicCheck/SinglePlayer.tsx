@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { PlayerMicCheck } from 'Elements/VolumeIndicator';
 import { PlayerEntity } from 'Players/PlayersManager';
-import Ping from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
-import PlayerStatus from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Status';
+import Ping from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/Ping';
+import PlayerStatus from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 import usePlayerMicStatus from 'hooks/players/usePlayerMicStatus';
 
 interface Props {

@@ -11,7 +11,8 @@ import { useEffect } from 'react';
 import { useUpdate } from 'react-use';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { DefaultRemoteMicPermission, RemoteMicPermissions, useSettingValue } from 'Scenes/Settings/SettingsState';
-import { useDevicePing } from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/Ping';
+
+import { useDevicePing } from 'Scenes/SelectInput/hooks/useDevicePing';
 
 interface Props {}
 

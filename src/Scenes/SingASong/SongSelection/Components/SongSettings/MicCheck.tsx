@@ -4,8 +4,8 @@ import events from 'GameEvents/GameEvents';
 import { useEventListener, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
 import InputManager from 'Scenes/Game/Singing/Input/InputManager';
-import NoiseDetection from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/NoiseDetection';
-import SinglePlayer from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck/SinglePlayer';
+import NoiseDetection from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/NoiseDetection';
+import SinglePlayer from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
 import { ComponentProps, useEffect } from 'react';
 
 export default function MicCheck(props: ComponentProps<typeof Container>) {

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import events from 'GameEvents/GameEvents';
-import GameSettings from 'Scenes/SingASong/SongSelection/SongSettings/GameSettings';
-import MicCheck from 'Scenes/SingASong/SongSelection/SongSettings/MicCheck';
-import PlayerSettings from 'Scenes/SingASong/SongSelection/SongSettings/PlayerSettings';
+import GameSettings from 'Scenes/SingASong/SongSelection/Components/SongSettings/GameSettings';
+import MicCheck from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck';
+import PlayerSettings from 'Scenes/SingASong/SongSelection/Components/SongSettings/PlayerSettings';
 import { PlayerSetup, SingSetup, SongPreview } from 'interfaces';
 import { useState } from 'react';
 

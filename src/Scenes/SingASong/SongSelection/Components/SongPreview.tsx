@@ -8,8 +8,8 @@ import {
   FinalSongCard,
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
-} from 'Scenes/SingASong/SongSelection/SongCard';
-import SongSettings from 'Scenes/SingASong/SongSelection/SongSettings';
+} from 'Scenes/SingASong/SongSelection/Components/SongCard';
+import SongSettings from 'Scenes/SingASong/SongSelection/Components/SongSettings';
 import isChristmasSong from 'Songs/utils/isChristmasSong';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';

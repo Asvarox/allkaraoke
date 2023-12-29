@@ -5,7 +5,10 @@ import events from 'GameEvents/GameEvents';
 import PlayersManager from 'Players/PlayersManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
-import { SongListEntryDetailsArtist, SongListEntryDetailsTitle } from 'Scenes/SingASong/SongSelection/SongCard';
+import {
+  SongListEntryDetailsArtist,
+  SongListEntryDetailsTitle,
+} from 'Scenes/SingASong/SongSelection/Components/SongCard';
 import useSong from 'Songs/hooks/useSong';
 import useBlockScroll from 'hooks/useBlockScroll';
 import useFullscreen from 'hooks/useFullscreen';

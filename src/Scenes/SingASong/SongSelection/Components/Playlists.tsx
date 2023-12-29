@@ -79,6 +79,7 @@ const Container = styled.div<{ active: boolean }>`
   transform-origin: top right;
   transform: rotate(-90deg);
   position: absolute;
+  z-index: 200;
   left: -100vh;
   top: 0;
   font-size: 3.6rem;
