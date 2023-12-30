@@ -2007,6 +2007,37 @@
     "local": false
   },
   {
+    "id": "antonia-font-alegria",
+    "title": "Alegria",
+    "artist": "Antonia Font",
+    "video": "5SwbBPQVOrE",
+    "language": [
+      "Catalan",
+      "Spanish"
+    ],
+    "bpm": 360,
+    "bar": 4,
+    "gap": 7758,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:02.689Z",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.87,
+    "author": "xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "antoniafontalegria",
+    "local": false
+  },
+  {
     "id": "aqua-barbie-girl",
     "title": "Barbie Girl",
     "artist": "Aqua",
@@ -5546,6 +5577,63 @@
     "local": false
   },
   {
+    "id": "breaking-benjamin-i-will-not-bow",
+    "title": "I Will Not Bow",
+    "artist": "Breaking Benjamin",
+    "video": "7qrRzNidzIc",
+    "language": "English",
+    "bpm": 398.29,
+    "bar": 4,
+    "gap": 7823.152978985161,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-30T08:02:02.694Z",
+    "edition": "Rock Band Store 2009 Vol. 3",
+    "genre": "Alternative Metal",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 0.81,
+    "author": "Gollum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminiwillnotbow",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-the-diary-of-jane",
+    "title": "The Diary Of Jane",
+    "artist": "Breaking Benjamin",
+    "video": "0MUeHF1SOm8",
+    "language": "English",
+    "bpm": 334,
+    "bar": 4,
+    "gap": 38611.976047904194,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-30T08:02:02.699Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 167,
+    "volume": 0.92,
+    "author": "jdogk",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminthediaryofjane",
+    "local": false
+  },
+  {
     "id": "breakout-kiedy-bylem-malym-chlopcem",
     "title": "Kiedy byłem małym chłopcem",
     "artist": "Breakout",
@@ -6908,6 +6996,34 @@
     "local": false
   },
   {
+    "id": "camp-rock-2-tu-eres-mi-cancion",
+    "title": "Tú eres mi canción",
+    "artist": "Camp Rock 2",
+    "video": "vzz1BjRlBm8",
+    "language": "Spanish",
+    "bpm": 207.78,
+    "bar": 4,
+    "gap": -252.3834825295986,
+    "year": "2010",
+    "lastUpdate": "2023-12-30T08:02:02.700Z",
+    "genre": "Soundtrack",
+    "videoGap": 0,
+    "realBpm": 60,
+    "volume": 0.98,
+    "author": "xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "camprock2tueresmicancion",
+    "local": false
+  },
+  {
     "id": "carlos-baute-y-marta-sanchez-colgando-en-tus-manos",
     "title": "Colgando en tus manos",
     "artist": "Carlos Baute y Marta Sánchez",
@@ -7274,6 +7390,93 @@
     ],
     "tracksCount": 1,
     "search": "celinedionmyheartwillgoon",
+    "local": false
+  },
+  {
+    "id": "chenoa-cuando-tu-vas",
+    "title": "Cuando tú vas",
+    "artist": "Chenoa",
+    "video": "E2N6UahtzK4",
+    "language": "Spanish",
+    "bpm": 272,
+    "bar": 4,
+    "gap": 842.3529411764706,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:02.911Z",
+    "edition": "SingStar Latino",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.86,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chenoacuandotuvas",
+    "local": false
+  },
+  {
+    "id": "chenoa-lady-marmalade",
+    "title": "Lady Marmalade",
+    "artist": "Chenoa",
+    "video": "RLDJLwT11PQ",
+    "language": "English",
+    "bpm": 220,
+    "bar": 4,
+    "gap": 986.2727272727275,
+    "year": "2006",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:02.913Z",
+    "edition": "SingStar OT",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.98,
+    "author": "xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chenoaladymarmalade",
+    "local": false
+  },
+  {
+    "id": "chenoa-todo-ira-bien",
+    "title": "Todo Irá Bien",
+    "artist": "Chenoa",
+    "video": "mdpNhu9l6Xo",
+    "language": "Spanish",
+    "bpm": 196,
+    "bar": 4,
+    "gap": 1200.1020408163263,
+    "year": "2007",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:02.914Z",
+    "edition": "SingStar SP",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.93,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chenoatodoirabien",
     "local": false
   },
   {
@@ -10140,6 +10343,37 @@
     "local": false
   },
   {
+    "id": "dragon-ball-z-llum-foc-destruccio",
+    "title": "Llum, foc, destrucció",
+    "artist": "Dragon Ball Z",
+    "video": "fxT7wM-3_Jc",
+    "language": [
+      "Catalan",
+      "Spanish"
+    ],
+    "bpm": 320.9,
+    "bar": 4,
+    "gap": 10568.385789965721,
+    "year": "1992",
+    "lastUpdate": "2023-12-30T08:02:02.915Z",
+    "genre": "Anime",
+    "videoGap": 0,
+    "realBpm": 215,
+    "volume": 0.5,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dragonballzllumfocdestruccio",
+    "local": false
+  },
+  {
     "id": "dragonforce-through-the-fire-and-flames",
     "title": "Through the fire and flames",
     "artist": "DragonForce",
@@ -12937,6 +13171,34 @@
     ],
     "tracksCount": 1,
     "search": "georgemichaeldecembersongidreamedofchristmas",
+    "local": false
+  },
+  {
+    "id": "george-michael-fastlove",
+    "title": "Fastlove",
+    "artist": "George Michael",
+    "video": "SHAQlFq6TFg",
+    "language": "English",
+    "bpm": 209.3,
+    "bar": 4,
+    "gap": -88.33970377448645,
+    "year": "1996",
+    "artistOrigin": "GB",
+    "lastUpdate": "2023-12-30T08:02:03.068Z",
+    "genre": "Jazz+Funk",
+    "videoGap": 0,
+    "realBpm": 104,
+    "volume": 0.81,
+    "author": "Maxbb",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "georgemichaelfastlove",
     "local": false
   },
   {
@@ -16004,6 +16266,63 @@
     ],
     "tracksCount": 1,
     "search": "journeydontstopbelieving",
+    "local": false
+  },
+  {
+    "id": "juan-magan-bailando-por-ahi",
+    "title": "Bailando por ahí",
+    "artist": "Juan Magan",
+    "video": "StVS6i2U_is",
+    "language": "Spanish",
+    "bpm": 260.1,
+    "bar": 4,
+    "gap": -90.39215686274508,
+    "year": "2011",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:03.069Z",
+    "genre": "Latina",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.86,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Xavi_vinolas",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanmaganbailandoporahi",
+    "local": false
+  },
+  {
+    "id": "juan-magan-ella-no-sigue-modas",
+    "title": "Ella no sigue modas",
+    "artist": "Juan Magan",
+    "video": "22_rwa9FXwc",
+    "language": "Spanish",
+    "bpm": 400,
+    "bar": 4,
+    "gap": 12667.5,
+    "year": "2011",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:03.070Z",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.98,
+    "author": "xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanmaganellanosiguemodas",
     "local": false
   },
   {
@@ -19203,6 +19522,62 @@
     ],
     "tracksCount": 1,
     "search": "linkinparkgivenup",
+    "local": false
+  },
+  {
+    "id": "linkin-park-ill-be-gone",
+    "title": "I’ll Be Gone",
+    "artist": "Linkin Park",
+    "video": "yTyi4ZBLC_I",
+    "language": "English",
+    "bpm": 280,
+    "bar": 4,
+    "gap": 27632.14285714286,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-30T08:02:03.071Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 140,
+    "volume": 0.78,
+    "author": "SweetStar",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparkillbegone",
+    "local": false
+  },
+  {
+    "id": "linkin-park-in-my-remains",
+    "title": "In My Remains",
+    "artist": "Linkin Park",
+    "video": "5tkLkbe7WHM",
+    "language": "English",
+    "bpm": 202,
+    "bar": 4,
+    "gap": 32164.653465346535,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-30T08:02:03.073Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 101,
+    "volume": 0.7,
+    "author": "SweetStar",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparkinmyremains",
     "local": false
   },
   {
@@ -25432,6 +25807,64 @@
     ],
     "tracksCount": 1,
     "search": "onerepublicsecrets",
+    "local": false
+  },
+  {
+    "id": "operacion-triunfo-camina",
+    "title": "Camina",
+    "artist": "Operación Triunfo",
+    "video": "mfyBu5ZuuY8",
+    "language": "Spanish",
+    "bpm": 219.89,
+    "bar": 4,
+    "gap": 7113.761107826641,
+    "year": "2017",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:03.074Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.9,
+    "author": "xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "operaciontriunfocamina",
+    "local": false
+  },
+  {
+    "id": "operacion-triunfo-revolucion-sexual",
+    "title": "Revolución sexual",
+    "artist": "Operación Triunfo",
+    "video": "S3wWC67bGVA",
+    "language": "Spanish",
+    "bpm": 234.01,
+    "bar": 4,
+    "gap": 8834.402803299005,
+    "year": "2017",
+    "artistOrigin": "ES",
+    "lastUpdate": "2023-12-30T08:02:03.075Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 60,
+    "volume": 0.92,
+    "author": "Xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "operaciontriunforevolucionsexual",
     "local": false
   },
   {
@@ -32438,6 +32871,37 @@
     "local": false
   },
   {
+    "id": "terapia-de-shock-sense-tu",
+    "title": "Sense tu",
+    "artist": "Teràpia de Shock",
+    "video": "x_Zd3KoEtRk",
+    "language": [
+      "Catalan",
+      "Spanish"
+    ],
+    "bpm": 240,
+    "bar": 4,
+    "gap": 6213,
+    "year": "2008",
+    "lastUpdate": "2023-12-30T08:02:03.076Z",
+    "genre": "Pop - Rock",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 0.71,
+    "author": "xavi_vinolas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "xavi_vinolas",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "terapiadeshocksensetu",
+    "local": false
+  },
+  {
     "id": "terri-clark-girls-lie-too",
     "title": "Girls Lie Too",
     "artist": "Terri Clark",
@@ -35514,6 +35978,62 @@
     ],
     "tracksCount": 1,
     "search": "vanessacarltonathousandmiles",
+    "local": false
+  },
+  {
+    "id": "vanessa-hudgens-say-ok",
+    "title": "Say OK",
+    "artist": "Vanessa Hudgens",
+    "video": "F5VvvVxuKko",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 3930,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-30T08:02:03.257Z",
+    "edition": "Disney Sing It",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.71,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vanessahudgenssayok",
+    "local": false
+  },
+  {
+    "id": "vanessa-hudgens-sneakernight",
+    "title": "Sneakernight",
+    "artist": "Vanessa Hudgens",
+    "video": "HRqOjhNN4hQ",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 2430,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2023-12-30T08:02:03.258Z",
+    "edition": "Sing It Pop Hits",
+    "videoGap": 0,
+    "realBpm": 104,
+    "volume": 0.66,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vanessahudgenssneakernight",
     "local": false
   },
   {

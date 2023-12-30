@@ -25,6 +25,7 @@ function generateLangMap() {
     Swedish: 'se',
     Latin: 'va',
     Japanese: 'jp',
+    Catalan: 'cat', // by default, it's `ca` which conflicts with Canadian French
   };
   return { ...langMap, ...langMap2 };
 }

@@ -1,6 +1,8 @@
 import { Song } from 'interfaces';
 import languageNameToIsoCode from 'utils/languageNameToIsoCode';
 
+const overrides = import.meta.glob('./Flag/flags/*.svg', { as: 'url', eager: true });
+
 type Props =
   | {
       language: Song['language'];
@@ -16,5 +18,7 @@ export const Flag = (props: Props) => {
 
   if (!isoCode) return null;
 
-  return <img src={`https://flagcdn.com/${isoCode}.svg`} alt={isoCode} {...props} />;
+  const customFlag = overrides[`./Flag/flags/${isoCode}.svg`];
+
+  return <img src={customFlag ?? `https://flagcdn.com/${isoCode}.svg`} alt={isoCode} {...props} />;
 };
