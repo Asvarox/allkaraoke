@@ -12,10 +12,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@adobe/css-tools@npm:^4.3.1":
-  version: 4.3.1
-  resolution: "@adobe/css-tools@npm:4.3.1"
-  checksum: 039a42ffdd41ecf3abcaf09c9fef0ffd634ccbe81c04002fc989e74564eba99bb19169a8f48dadf6442aa2c5c9f0925a7b27ec5c36a1ed1a3515fe77d6930996
+"@adobe/css-tools@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "@adobe/css-tools@npm:4.3.2"
+  checksum: 973dcb7ba5141f57ec726ddec2e94e8947361bb0c5f0e8ebd1e8aa3a84b28e66db4ad843908825f99730d59784ff3c43868b014a7268676a65950cdb850c42cc
   languageName: node
   linkType: hard
 
@@ -6060,11 +6060,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.1.4":
-  version: 6.1.4
-  resolution: "@testing-library/jest-dom@npm:6.1.4"
+"@testing-library/jest-dom@npm:^6.1.6":
+  version: 6.1.6
+  resolution: "@testing-library/jest-dom@npm:6.1.6"
   dependencies:
-    "@adobe/css-tools": "npm:^4.3.1"
+    "@adobe/css-tools": "npm:^4.3.2"
     "@babel/runtime": "npm:^7.9.2"
     aria-query: "npm:^5.0.0"
     chalk: "npm:^3.0.0"
@@ -6086,7 +6086,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: e5a0cdb96eec509c0c85f2b7a0d08fc1c9f6c10aa49bba0d738bf4bb114c3472b92ace5067aedfaaf848ae13b38ba9296047c219aa24b66c87aa16de33341fdb
+  checksum: 324a790c3c56a95b916ec602d239607f0f9f20691f1234b0dbbc6aec5d41a8fdedc67c1f0ca2121989d6268fe8044ffaa36c8637d4f4455d3f0359e8fceac31a
   languageName: node
   linkType: hard
 
@@ -13407,7 +13407,7 @@ __metadata:
     "@storybook/react": "npm:^7.6.6"
     "@storybook/react-vite": "npm:^7.6.6"
     "@storybook/testing-library": "npm:^0.2.2"
-    "@testing-library/jest-dom": "npm:^6.1.4"
+    "@testing-library/jest-dom": "npm:^6.1.6"
     "@testing-library/react": "npm:^14.1.2"
     "@testing-library/user-event": "npm:^14.5.1"
     "@types/curtainsjs": "npm:^8.1.3"
