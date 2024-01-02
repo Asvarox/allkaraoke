@@ -13462,7 +13462,7 @@ __metadata:
     msgpackr: "npm:^1.10.0"
     musicbrainz-api: "npm:^0.11.0"
     node-fetch: "npm:^3.3.2"
-    peer: "npm:^1.0.1"
+    peer: "npm:^1.0.2"
     peerjs: "npm:^2.0.0-beta.3"
     playwright: "npm:^1.40.1"
     playwright-core: "npm:^1.40.1"
@@ -13826,9 +13826,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"peer@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "peer@npm:1.0.1"
+"peer@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "peer@npm:1.0.2"
   dependencies:
     "@types/express": "npm:^4.17.3"
     "@types/ws": "npm:^7.2.3 || ^8.0.0"
@@ -13839,7 +13839,7 @@ __metadata:
     yargs: "npm:^17.6.2"
   bin:
     peerjs: dist/bin/peerjs.js
-  checksum: 26ea6107d40ce9dd3d659abac92515d808c211a1f51e4c9b039cbbff121c662446d174adea41685493406ec70705a60c61f1382745366e2ee556a49eed866bb6
+  checksum: cd7513976e4bb7abacf220893c6623da73bad76ce90ab6fe252eb85b9a4bb8073c151bc61e1f6eef83264457a4f95d8d3606c9604a06de3847eefb209a5681af
   languageName: node
   linkType: hard
 
