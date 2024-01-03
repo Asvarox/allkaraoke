@@ -16,7 +16,6 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
-  //TestID = data-test
   await page.getByTestId('remote-mics').click();
   await page.getByTestId('save-button').click();
   await page.getByTestId('manage-songs').click();
