@@ -17,6 +17,11 @@ export class EditSongsPagePO {
     await this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`).click();
   }
 
+  public async editSong(songName: string, songID: string) {
+    this.searchSongs(songName);
+    await this.page.locator(`[data-test="edit-song"][data-song="${songID}"]`).click();
+  }
+
   public async goToMainMenu() {
     await this.page.getByTestId('main-menu-link').click();
   }

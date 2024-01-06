@@ -6,4 +6,8 @@ export class SongLanguagesPagePO {
   public async continueAndGoToSongList() {
     await this.page.getByTestId('close-exclude-languages').click();
   }
+
+  public getLanguageEntry(language: string) {
+    return this.page.getByTestId(`lang-${language}`);
+  }
 }
