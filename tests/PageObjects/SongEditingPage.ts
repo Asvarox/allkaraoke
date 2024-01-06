@@ -1,6 +1,4 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
-import { Simulate } from 'react-dom/test-utils';
-import click = Simulate.click;
 
 export class SongEditingPagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
@@ -30,7 +28,7 @@ export class SongEditingPagePO {
   }
 
   public get songLanguageInput() {
-    return this.page.locator("[data-test='song-language']");
+    return this.page.getByTestId('song-language');
   }
 
   public get releaseYearInput() {
