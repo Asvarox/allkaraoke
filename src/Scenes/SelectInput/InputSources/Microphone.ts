@@ -51,7 +51,7 @@ export class MicrophoneInputSource {
     let devices: MediaDeviceInfo[] = [];
 
     try {
-      await userMediaService.getUserMedia({ audio: true });
+      await userMediaService.getUserMedia({ audio: true, video: false });
 
       devices = await userMediaService.enumerateDevices();
     } catch (e) {
@@ -59,21 +59,38 @@ export class MicrophoneInputSource {
       console.warn(e);
     }
 
-    MicrophoneInputSource.inputList = (devices as any as Array<MediaStreamTrack & MediaDeviceInfo>)
-      .filter((device) => device.kind === 'audioinput')
-      .map((device) => {
-        const channels = device.getCapabilities?.()?.channelCount?.max ?? 1;
+    const inputList = await Promise.all(
+      devices
+        .filter((device) => device.kind === 'audioinput')
+        .map(async (device) => {
+          // device.getCapabilities() stopped returning channelCount, so instead we have to get
+          // the stream and check the track's settings to get the channel count
+          let channels = 1;
+          try {
+            const stream = await userMediaService.getUserMedia({
+              audio: {
+                deviceId: { exact: device.deviceId },
+                echoCancellation: { exact: false },
+              },
+              video: false,
+            });
+            channels = stream.getAudioTracks()[0].getSettings().channelCount ?? 1;
+          } catch (e) {
+            captureException(e, { level: 'warning', extra: { message: 'Microphone.getInputs' } });
+            console.warn(e);
+          }
 
-        return range(0, channels).map((channel) => ({
-          label: mapInputName(device.label, channel, channels),
-          channel,
-          channels,
-          deviceId: device.deviceId,
-          id: getInputId({ deviceId: device.deviceId, channel }),
-          preferred: getPreferred(device.label, channel, channels),
-        }));
-      })
-      .flat();
+          return range(0, channels).map((channel) => ({
+            label: mapInputName(device.label, channel, channels),
+            channel,
+            channels,
+            deviceId: device.deviceId,
+            id: getInputId({ deviceId: device.deviceId, channel }),
+            preferred: getPreferred(device.label, channel, channels),
+          }));
+        }),
+    );
+    MicrophoneInputSource.inputList = inputList.flat();
 
     return MicrophoneInputSource.inputList;
   };
