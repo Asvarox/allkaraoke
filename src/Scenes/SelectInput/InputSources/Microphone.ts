@@ -76,7 +76,6 @@ export class MicrophoneInputSource {
             });
             channels = stream.getAudioTracks()[0].getSettings().channelCount ?? 1;
           } catch (e) {
-            captureException(e, { level: 'warning', extra: { message: 'Microphone.getInputs' } });
             console.warn(e);
           }
 
