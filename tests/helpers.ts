@@ -62,6 +62,29 @@ export const stubUserMedia = async ({ context, page }: { page: Page; context: Br
       return data;
     };
 
+    const getUserMedia = async (capabilities: MediaStreamConstraints) => {
+      // @ts-ignore
+      if (capabilities.audio?.deviceId?.exact) {
+        // @ts-ignore
+        const device = mediaDevices.find((device) => device.id === capabilities.audio?.deviceId.exact);
+
+        if (!device) {
+          throw new OverconstrainedError('Device not found');
+        } else {
+          return {
+            getAudioTracks: () => [
+              {
+                getSettings: () => ({
+                  deviceId: device.id,
+                  channelCount: device.channels ?? 1,
+                }),
+              },
+            ],
+          };
+        }
+      }
+    };
+
     console.log(AudioBuffer);
 
     const callbacks: Record<string, Array<() => void>> = {
@@ -69,7 +92,7 @@ export const stubUserMedia = async ({ context, page }: { page: Page; context: Br
     };
     Object.defineProperty(window.navigator, 'mediaDevices', {
       value: {
-        getUserMedia: () => Promise.resolve({}),
+        getUserMedia,
         enumerateDevices: () => Promise.resolve(getMediaDevices()),
         addEventListener: (e: 'devicechange', callback: () => void) => callbacks[e].push(callback),
         removeEventListener: (e: 'devicechange', callback: () => void) =>
