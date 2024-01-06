@@ -48,6 +48,7 @@ export default function ConvertView({ song }: Props) {
     previewStart: song?.previewStart ?? undefined,
     previewEnd: song?.previewEnd ?? undefined,
     genre: song?.genre,
+    edition: song?.edition,
   });
 
   const [editedSong, setEditedSong] = useState<Song | undefined>(song);

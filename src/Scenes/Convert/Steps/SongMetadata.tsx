@@ -14,6 +14,7 @@ export interface SongMetadataEntity {
   previewStart: number | undefined;
   previewEnd: number | undefined;
   genre?: string;
+  edition?: string;
 }
 
 interface Props {
@@ -50,6 +51,18 @@ export default function SongMetadata(props: Props) {
     ],
     [songList.data],
   );
+  const definedEditions = useMemo(
+    () =>
+      [
+        ...new Set(
+          songList.data
+            .map((song) => song.edition)
+            .filter(Boolean)
+            .map((edition) => edition!.toLowerCase().replace(/\b\w/g, (l) => l.toUpperCase().trim())),
+        ),
+      ].sort(),
+    [songList.data],
+  );
 
   const searchGoogle = (phrase: string) => {
     window.open(
@@ -83,7 +96,7 @@ export default function SongMetadata(props: Props) {
           data-test="song-title"
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={3}>
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -102,6 +115,31 @@ export default function SongMetadata(props: Props) {
               label="Song genre (optional)"
               size="small"
               data-test="song-genre"
+              fullWidth
+            />
+          )}
+        />
+      </Grid>
+      <Grid item xs={3}>
+        <Autocomplete
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') {
+              event.preventDefault();
+            }
+          }}
+          freeSolo
+          disableClearable
+          options={definedEditions}
+          value={props.data.edition ?? ''}
+          onChange={(e, newValue) => props.onChange({ ...props.data, edition: newValue })}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              onBlur={(e) => props.onChange({ ...props.data, genre: e.target.value })}
+              label="Song edition (optional)"
+              size="small"
+              data-test="song-edition"
+              helperText="Songs with the same theme, e.g. 'Christmas'"
               fullWidth
             />
           )}
