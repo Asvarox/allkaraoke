@@ -10,6 +10,7 @@ export default function useSongIndex(includeDeleted = false) {
   const loadSongs = () => SongDao.getIndex(includeDeleted).then(setSongIndex);
 
   useEffect(() => {
+    // setTimeout(loadSongs, 3000);
     loadSongs();
   }, []);
 

@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
+import { Skeleton } from '@mui/material';
 import { Flag } from 'Elements/Flag';
 import { MenuButton } from 'Elements/Menu';
 import MenuWithLogo from 'Elements/MenuWithLogo';
@@ -49,7 +50,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
   const { register } = useKeyboardNav({ onBackspace: onClose });
 
   const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
-  const { data } = useSongIndex();
+  const { data, isLoading } = useSongIndex();
   const availableLanguages = useLanguageList(data);
   const languageList = useMemo(
     () => availableLanguages.filter(({ name, count }) => languageNameToIsoCode(name) && count >= MIN_SONGS_COUNT),
@@ -107,6 +108,14 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
     <MenuWithLogo>
       <h1>Select Song Languages</h1>
       <LanguageListContainer>
+        {isLoading &&
+          new Array(6).fill(0).map((_, i) => (
+            <Skeleton variant="rectangular" width="100%" height="10rem" key={i}>
+              <LanguageEntry excluded focused={false}>
+                <Flag language="English" />
+              </LanguageEntry>
+            </Skeleton>
+          ))}
         {languageList.map(({ name, count }) => {
           const excluded = excludedLanguages?.includes(name) ?? false;
           return (
@@ -133,7 +142,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
       <NextButtonContainer>
         <MenuButton
           {...register('close-exclude-languages', onClose, undefined, true, {
-            disabled: areAllLanguagesExcluded,
+            disabled: areAllLanguagesExcluded || isLoading,
           })}>
           {closeText}
         </MenuButton>
@@ -176,6 +185,9 @@ const Check = styled.div`
 
 const LanguageListContainer = styled.div`
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 const LanguageName = styled.span`
   transition: 300ms;
@@ -220,6 +232,7 @@ const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }
   gap: 2rem;
   font-size: 3rem;
   padding-left: 3rem;
+  margin: 0;
 
   position: relative;
 

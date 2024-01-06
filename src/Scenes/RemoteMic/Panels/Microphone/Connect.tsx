@@ -26,6 +26,7 @@ const usePersistedName = createPersistedState<string>('remote_mic_name');
 
 function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionError }: Props) {
   const [name, setName] = usePersistedName('');
+  const [errorReset, setErrorReset] = useState(false);
   const firstInputRef = useRef<HTMLInputElement | null>(null);
   const secondInputRef = useRef<HTMLInputElement | null>(null);
   const [customRoomId, setCustomRoomId] = useState<string>('');
@@ -46,6 +47,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
 
   const handleConnect: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
+    setErrorReset(false);
 
     if (!roomId && customRoomId.length !== GAME_CODE_LENGTH) {
       firstInputRef.current?.focus();
@@ -79,6 +81,8 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
     }
   }, [connectionStatus]);
 
+  const shouldShowError = connectionStatus === 'error' && !errorReset;
+
   return isVisible ? (
     <>
       <ConfirmWifiModal
@@ -100,6 +104,11 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
             focused={false}
             autoFocus
             data-test="game-code-input"
+            onFocus={() => {
+              if (connectionStatus === 'error') {
+                setErrorReset(true);
+              }
+            }}
             onPaste={(event) => {
               // When Ctrl+V, remove whitespaces before changing the value
               event.preventDefault();
@@ -124,13 +133,13 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
         />
         <ConnectButton type="submit" disabled={disabled} data-test="connect-button">
           {connectionStatus === 'connecting' && <Loader size={'1em'} />}
-          {connectionStatus === 'uninitialised' ? 'Connect' : connectionStatus.toUpperCase()}
+          {connectionStatus === 'uninitialised' || errorReset ? 'Connect' : connectionStatus.toUpperCase()}
         </ConnectButton>
       </Form>
-      {(showConnectionTip || connectionError) && (
+      {(showConnectionTip || shouldShowError) && (
         <>
           {showConnectionTip && <h3>If it doesn't connect</h3>}
-          {connectionError && (
+          {shouldShowError && (
             <>
               <h3>
                 <strong>
@@ -142,57 +151,66 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
                 Error code: <strong>{connectionError}</strong>
               </h6>
               <br />
-            </>
-          )}
-          {connectionError === 'peer-unavailable' ? (
-            <>
-              <h4>The game seems to be offline 🤔</h4>
-              <h5>
-                1. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
-              </h5>
-              <h5>
-                2. Scan the{' '}
-                <strong>
-                  <QrCode2 /> QR Code
-                </strong>{' '}
-                again
-              </h5>
-              <h5>
-                3. Make sure you are in the same{' '}
-                <strong>
-                  <Wifi /> Wi-Fi
-                </strong>
-              </h5>
-            </>
-          ) : connectionError === 'network' ? (
-            <>
-              <h4>No internet access 💀</h4>
-              <h5>
-                Make sure you are in the same{' '}
-                <strong>
-                  <Wifi /> Wi-Fi
-                </strong>
-                and that it has internet connection
-              </h5>
-            </>
-          ) : (
-            <>
-              <h5>
-                1. Make sure you are in the same{' '}
-                <strong>
-                  <Wifi /> Wi-Fi
-                </strong>
-              </h5>
-              <h5>
-                2. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
-              </h5>
-              <h5>
-                3. Scan the{' '}
-                <strong>
-                  <QrCode2 /> QR Code
-                </strong>{' '}
-                again
-              </h5>
+              {connectionError === 'peer-unavailable' ? (
+                <>
+                  <h4>
+                    {roomId === undefined ? 'Game with this code not found 🤔' : 'The game seems to be offline 🤔'}
+                  </h4>
+                  {roomId === undefined && (
+                    <h5>
+                      1. Is the code <strong>{customRoomId.toUpperCase()}</strong> correct?
+                    </h5>
+                  )}
+                  <h5>
+                    {roomId === undefined ? 2 : 1}. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                  </h5>
+                  {roomId !== undefined && (
+                    <h5>
+                      2. Scan the{' '}
+                      <strong>
+                        <QrCode2 /> QR Code
+                      </strong>{' '}
+                      again
+                    </h5>
+                  )}
+                  <h5>
+                    3. Make sure you are in the same{' '}
+                    <strong>
+                      <Wifi /> Wi-Fi
+                    </strong>
+                  </h5>
+                </>
+              ) : connectionError === 'network' ? (
+                <>
+                  <h4>No internet access 💀</h4>
+                  <h5>
+                    Make sure you are in the same{' '}
+                    <strong>
+                      <Wifi /> Wi-Fi
+                    </strong>
+                    and that it has internet connection
+                  </h5>
+                </>
+              ) : (
+                <>
+                  <h5>
+                    1. Make sure you are in the same{' '}
+                    <strong>
+                      <Wifi /> Wi-Fi
+                    </strong>
+                  </h5>
+                  <h5>
+                    2. Refresh (<strong>F5</strong>) the Karaoke Game on the PC
+                  </h5>
+                  <h5>
+                    3. Scan the{' '}
+                    <strong>
+                      <QrCode2 /> QR Code
+                    </strong>{' '}
+                    again
+                  </h5>
+                </>
+              )}
             </>
           )}
         </>

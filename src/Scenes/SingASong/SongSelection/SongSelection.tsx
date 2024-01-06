@@ -1,7 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { useBackground } from 'Elements/LayoutWithBackground';
-import Loader from 'Elements/Loader';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
@@ -97,9 +96,16 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   return (
     <Container songsPerRow={songsPerRow}>
       {loading ? (
-        <LoaderContainer>
-          <Loader size="15em" color="secondary" />
-        </LoaderContainer>
+        <SongListContainer>
+          <SongsGroupContainer>
+            <SongsGroupHeader>&nbsp;&nbsp;</SongsGroupHeader>
+            <SongsGroup>
+              {new Array(16).fill(0).map((_, i) => (
+                <SongListEntrySkeleton key={i} />
+              ))}
+            </SongsGroup>
+          </SongsGroupContainer>
+        </SongListContainer>
       ) : (
         <>
           {songPreview && <SongImageBackground videoId={songPreview.video} />}
@@ -192,7 +198,7 @@ const SongImageBackground = styled(BackgroundThumbnail)`
   object-fit: cover;
 `;
 
-const SongsGroupContainer = styled.div<{ highlight: boolean }>`
+const SongsGroupContainer = styled.div<{ highlight?: boolean }>`
   padding: 0 4.5rem 0 11rem;
   ${(props) =>
     props.highlight &&
@@ -238,7 +244,7 @@ const SongsGroupHeader = styled.div`
   background: rgba(0, 0, 0, 0.7);
 `;
 
-const SongListContainer = styled.div<{ active: boolean; dim: boolean }>`
+const SongListContainer = styled.div<{ active?: boolean; dim?: boolean }>`
   position: relative;
   flex: 1 1 auto;
   display: flex;
@@ -262,6 +268,23 @@ const SongsGroup = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--song-list-gap);
+`;
+
+const SongListEntrySkeleton = styled.div`
+  background: black;
+  flex-basis: var(--song-item-width);
+  aspect-ratio: var(--song-item-ratio);
+  border-radius: 1rem;
+  animation: skeleton 1s ease-in-out infinite alternate;
+
+  @keyframes skeleton {
+    0% {
+      opacity: 0.65;
+    }
+    100% {
+      opacity: 0.75;
+    }
+  }
 `;
 
 const SongListEntry = memo(styled(FinalSongCard)`
