@@ -111,7 +111,7 @@ describe('convertTxtToSong', () => {
 
         // uncomment to get the failing file
         // console.log(file);
-        const txt = readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' });
+        const txt = readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }).replace(/\r\n/g, '\n');
 
         const song = convertTxtToSong(txt);
 
@@ -121,7 +121,8 @@ describe('convertTxtToSong', () => {
 
     it.skip('Useful to debug specific failing song file', () => {
       const file = 'name';
-      const song: Song = JSON.parse(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+      const txt = readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }).replace(/\r\n/g, '\n');
+      const song = convertTxtToSong(txt);
 
       expect(convertTxtToSong(convertSongToTxt(song))).toEqual(song);
     });
