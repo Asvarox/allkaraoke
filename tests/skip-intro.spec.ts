@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 import initialise from './PageObjects/initialise';
 
@@ -11,27 +10,26 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
+const expectedLanguage = 'Polish';
+const expectedSongID = 'e2e-skip-intro-polish';
+
 test('skip the intro from the song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('advanced').click();
-  await page.getByTestId('save-button').click();
+  await pages.inputSelectionPage.selectAdvancedSetup();
+  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.mainMenuPage.goToSingSong();
 
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
+  await expect(pages.songLanguagesPage.getLanguageEntry(expectedLanguage)).toBeVisible();
+  await pages.songLanguagesPage.continueAndGoToSongList();
 
-  await expect(page.getByTestId('song-e2e-skip-intro-polish')).toBeVisible();
-  await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish');
+  await expect(pages.songListPage.getSongElement(expectedSongID)).toBeVisible();
+  await pages.songListPage.navigateToSongWithKeyboard(expectedSongID);
   await page.keyboard.press('Enter'); // enter first song
 
-  await page.getByTestId('next-step-button').click();
-  await page.getByTestId('play-song-button').click();
+  await pages.songPreviewPage.goNext();
+  await pages.songPreviewPage.playTheSong();
 
-  await page.waitForTimeout(1500);
-  await expect(page.getByTestId('skip-intro-info')).toBeVisible();
-  await page.waitForTimeout(1500);
-  await page.keyboard.press('Enter');
-
-  await page.getByTestId('skip-animation-button').click({ timeout: 20_000 });
+  await pages.gamePage.skipIntro();
+  await pages.postGame.skipScoresAnimation();
 });

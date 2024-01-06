@@ -14,31 +14,36 @@ test.beforeEach(async ({ page, context, browser }) => {
 // Not disabling it globally so in case SW breaks the app it is caught by other tests
 test.use({ serviceWorkers: 'block' });
 
+const songName = 'E2E';
+const songID = 'e2e-single-english-1995';
+const expectedURL = 'sourceUrl';
+const expectedAuthorName = 'author';
+const expectedAuthorURL = 'authorUrl';
+const expectedVideoURL = 'https://www.youtube.com/watch?v=W9nZ6u15yis';
+const expectedSongLanguage = 'English';
+const expectedReleaseYear = '1995';
+const expectedSongBPM = '200';
+
 test('Edit song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
-  await page.getByTestId('manage-songs').click();
-  await page.getByTestId('edit-songs').click();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToManageSongs();
+  await pages.manageSongsPage.goToEditSongs();
+  await pages.editSongsPage.editSong(songName, songID);
 
-  await page.locator('[data-test="edit-song"][data-song="e2e-single-english-1995"]').click();
+  await expect(pages.songEditingPage.urlSourceInput).toHaveValue(expectedURL);
 
-  await expect(page.locator('[data-test="source-url"] input')).toHaveValue('sourceUrl');
+  await pages.songEditingPage.goNext();
+  await expect(pages.songEditingPage.authorNameInput).toHaveValue(expectedAuthorName);
+  await expect(pages.songEditingPage.authorUrlInput).toHaveValue(expectedAuthorURL);
+  await expect(pages.songEditingPage.videoUrlInput).toHaveValue(expectedVideoURL);
 
-  await page.getByTestId('next-button').click();
-  await expect(page.locator('[data-test="author-name"] input')).toHaveValue('author');
-  await expect(page.locator('[data-test="author-url"] input')).toHaveValue('authorUrl');
-  await expect(page.locator('[data-test="video-url"] input')).toHaveValue(
-    'https://www.youtube.com/watch?v=W9nZ6u15yis',
-  );
+  await pages.songEditingPage.goNext();
+  await expect(pages.songEditingPage.songLyrics).toBeVisible();
 
-  await page.getByTestId('next-button').click();
-
-  await expect(page.getByTestId('sync-lyrics')).toBeVisible();
-
-  await page.getByTestId('next-button').click();
-
-  await expect(page.locator('[data-test="song-language"]')).toContainText('English');
-  await expect(page.locator('[data-test="release-year"] input')).toHaveValue('1995');
-  await expect(page.locator('[data-test="song-bpm"] input')).toHaveValue('200');
+  await pages.songEditingPage.goNext();
+  await expect(pages.songEditingPage.songLanguageInput).toContainText(expectedSongLanguage);
+  await expect(pages.songEditingPage.releaseYearInput).toHaveValue(expectedReleaseYear);
+  await expect(pages.songEditingPage.bpmSongInput).toHaveValue(expectedSongBPM);
 });
