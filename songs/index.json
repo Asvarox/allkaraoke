@@ -1474,6 +1474,34 @@
     "local": false
   },
   {
+    "id": "alizee-jen-ai-marre",
+    "title": "J’en ai marre !",
+    "artist": "Alizée",
+    "video": "G4LIM9VYhB0",
+    "language": "French",
+    "bpm": 250,
+    "bar": 4,
+    "gap": 15110,
+    "year": "2003",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-01-07T06:25:25.591Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.89,
+    "author": "Cori93",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alizeejenaimarre",
+    "local": false
+  },
+  {
     "id": "alter-bridge-metalingus-edge-entrance",
     "title": "Metalingus (Edge Entrance)",
     "artist": "Alter Bridge",
@@ -2089,6 +2117,36 @@
     ],
     "tracksCount": 1,
     "search": "aquaturnbacktime",
+    "local": false
+  },
+  {
+    "id": "ar-rahman-the-pussycat-dolls-feat-nicole-scherzinger-jai-ho-you-are-my-destiny",
+    "title": "Jai Ho! (You Are My Destiny)",
+    "artist": "A.R. Rahman & The Pussycat Dolls feat. Nicole Scherzinger",
+    "video": "Yc5OyXmHD0w",
+    "language": "English",
+    "bpm": 272.8,
+    "bar": 4,
+    "gap": 6100.263929618768,
+    "year": "2009",
+    "lastUpdate": "2024-01-07T06:25:25.596Z",
+    "edition": "SingStar Chart Hits",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 136,
+    "previewStart": 120,
+    "previewEnd": 148,
+    "volume": 0.87,
+    "author": "perzu25",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arrahmanthepussycatdollsfeatnicolescherzingerjaihoyouaremydestiny",
     "local": false
   },
   {
@@ -3067,6 +3125,33 @@
     "local": false
   },
   {
+    "id": "ateens-cant-help-falling-in-love",
+    "title": "Can’t Help Falling In Love",
+    "artist": "A★Teens",
+    "video": "WICybxYndzA",
+    "language": "English",
+    "bpm": 236.05,
+    "bar": 4,
+    "gap": -125.18343571277268,
+    "year": "2002",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-01-07T06:25:25.764Z",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.79,
+    "author": "seanie627",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ateenscanthelpfallinginlove",
+    "local": false
+  },
+  {
     "id": "audioslave-be-yourself",
     "title": "Be Yourself",
     "artist": "Audioslave",
@@ -3254,6 +3339,61 @@
     ],
     "tracksCount": 1,
     "search": "avamaxmilliondollarbaby",
+    "local": false
+  },
+  {
+    "id": "ava-max-omg-whats-happening",
+    "title": "OMG What’s Happening",
+    "artist": "Ava Max",
+    "video": "hZ7Zw_ohxvU",
+    "language": "English",
+    "bpm": 248,
+    "bar": 4,
+    "gap": 14041.774193548386,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-07T06:25:25.765Z",
+    "videoGap": 0,
+    "realBpm": 124,
+    "volume": 0.63,
+    "author": "Mamba99",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avamaxomgwhatshappening",
+    "local": false
+  },
+  {
+    "id": "ava-max-salt",
+    "title": "Salt",
+    "artist": "Ava Max",
+    "video": "PKWHYLtmAGA",
+    "language": "English",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 7313.90625,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-07T06:25:25.766Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.64,
+    "author": "Mamba99",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avamaxsalt",
     "local": false
   },
   {
@@ -3897,6 +4037,34 @@
     ],
     "tracksCount": 1,
     "search": "bandaiddotheyknowitschristmas",
+    "local": false
+  },
+  {
+    "id": "banda-eva-arere",
+    "title": "Areré",
+    "artist": "Banda Eva",
+    "video": "lEJ9E6EsRiE",
+    "language": "Portuguese",
+    "bpm": 326,
+    "bar": 4,
+    "gap": 23107.730061349692,
+    "year": "1997",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:25.767Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 326,
+    "volume": 0.74,
+    "author": "RYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bandaevaarere",
     "local": false
   },
   {
@@ -6752,6 +6920,33 @@
     "local": false
   },
   {
+    "id": "bts-butter",
+    "title": "Butter",
+    "artist": "BTS",
+    "video": "WMweEpGlu_U",
+    "language": "English",
+    "bpm": 220.06,
+    "bar": 4,
+    "gap": 9297.55157684268,
+    "year": "2021",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-07T06:25:25.768Z",
+    "videoGap": 0,
+    "realBpm": 110,
+    "volume": 0.68,
+    "author": "RYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btsbutter",
+    "local": false
+  },
+  {
     "id": "bts-butterfly",
     "title": "Butterfly",
     "artist": "BTS",
@@ -6831,6 +7026,33 @@
     "local": false
   },
   {
+    "id": "bts-permission-to-dance",
+    "title": "Permission To Dance",
+    "artist": "BTS",
+    "video": "CuklIb9d3fI",
+    "language": "English",
+    "bpm": 249.84,
+    "bar": 4,
+    "gap": 21339.346781940443,
+    "year": "2021",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-07T06:25:25.769Z",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.66,
+    "author": "RYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btspermissiontodance",
+    "local": false
+  },
+  {
     "id": "budka-suflera-piaty-bieg",
     "title": "Piąty Bieg",
     "artist": "Budka Suflera",
@@ -6887,6 +7109,37 @@
     "local": false
   },
   {
+    "id": "budka-suflera-za-ostatni-grosz",
+    "title": "Za ostatni grosz",
+    "artist": "Budka Suflera",
+    "video": "PYpg4BypJoA",
+    "language": "Polish",
+    "bpm": 300.8,
+    "bar": 4,
+    "gap": 15750,
+    "year": "1982",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-01-07T06:25:25.770Z",
+    "edition": "SingStar ’80s [PL]",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 95,
+    "previewStart": 63,
+    "previewEnd": 90,
+    "volume": 0.96,
+    "author": "jockel1974",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "budkasuflerazaostatnigrosz",
+    "local": false
+  },
+  {
     "id": "bunga-citra-lestari-wanita-terbahagia",
     "title": "Wanita Terbahagia",
     "artist": "Bunga Citra Lestari",
@@ -6940,6 +7193,34 @@
     ],
     "tracksCount": 1,
     "search": "cutemassarabluejeans",
+    "local": false
+  },
+  {
+    "id": "caetano-veloso-sozinho",
+    "title": "Sozinho",
+    "artist": "Caetano Veloso",
+    "video": "e7utABB3V_A",
+    "language": "Portuguese",
+    "bpm": 246,
+    "bar": 4,
+    "gap": 8174.390243902439,
+    "year": "1998",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:25.770Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 83,
+    "volume": 0.96,
+    "author": "RYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "caetanovelososozinho",
     "local": false
   },
   {
@@ -7021,6 +7302,34 @@
     ],
     "tracksCount": 1,
     "search": "camprock2tueresmicancion",
+    "local": false
+  },
+  {
+    "id": "capital-inicial-primeiros-erros-chove",
+    "title": "Primeiros erros (Chove)",
+    "artist": "Capital Inicial",
+    "video": "YfVg-B5WrEM",
+    "language": "Portuguese",
+    "bpm": 238.72,
+    "bar": 4,
+    "gap": 34104.63806970509,
+    "year": "2000",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:25.771Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "Zodte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "capitalinicialprimeiroserroschove",
     "local": false
   },
   {
@@ -7643,6 +7952,33 @@
     ],
     "tracksCount": 1,
     "search": "chicagoyouretheinspiration",
+    "local": false
+  },
+  {
+    "id": "chitaozinho-xororo-sinonimos",
+    "title": "Sinônimos",
+    "artist": "Chitãozinho & Xororó",
+    "video": "URN-Ikkc4CI",
+    "language": "Portuguese",
+    "bpm": 220,
+    "bar": 4,
+    "gap": 21347.272727272728,
+    "year": "2004",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:25.772Z",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 0.99,
+    "author": "raphasantiago",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chitaozinhoxororosinonimos",
     "local": false
   },
   {
@@ -9326,6 +9662,91 @@
     "local": false
   },
   {
+    "id": "destinys-child-bootylicious",
+    "title": "Bootylicious",
+    "artist": "Destiny’s Child",
+    "video": "IyYnnUcgeMc",
+    "language": "English",
+    "bpm": 207,
+    "bar": 4,
+    "gap": 8725.507246376812,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-07T06:25:25.773Z",
+    "edition": "SingStar R&B",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 103,
+    "volume": 0.65,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "destinyschildbootylicious",
+    "local": false
+  },
+  {
+    "id": "destinys-child-lose-my-breath",
+    "title": "Lose My Breath",
+    "artist": "Destiny’s Child",
+    "video": "AqeIiF0DlTg",
+    "language": "English",
+    "bpm": 398.85,
+    "bar": 4,
+    "gap": 7654.580669424596,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-07T06:25:25.774Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.65,
+    "author": "Leroidukitch",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "destinyschildlosemybreath",
+    "local": false
+  },
+  {
+    "id": "destinys-child-say-my-name",
+    "title": "Say My Name",
+    "artist": "Destiny’s Child",
+    "video": "sQgd6MccwZc",
+    "language": "English",
+    "bpm": 276.02,
+    "bar": 4,
+    "gap": 721.8100137671182,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-07T06:25:25.775Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 137,
+    "volume": 0.63,
+    "author": "petersen123",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "destinyschildsaymyname",
+    "local": false
+  },
+  {
     "id": "diana-ross-im-coming-out",
     "title": "I’m Coming Out",
     "artist": "Diana Ross",
@@ -9859,6 +10280,34 @@
     ],
     "tracksCount": 2,
     "search": "disneysherculesiwontsayiminlove",
+    "local": false
+  },
+  {
+    "id": "disneys-kim-possible-christina-milian-call-me-beep-me",
+    "title": "Call Me, Beep Me",
+    "artist": "Disney’s Kim Possible (Christina Milian)",
+    "video": "5Y-X1Uz4NgU",
+    "language": "English",
+    "bpm": 245.2,
+    "bar": 4,
+    "gap": 3531.2071778140294,
+    "year": "2001",
+    "lastUpdate": "2024-01-07T06:25:25.777Z",
+    "videoGap": 0,
+    "realBpm": 120,
+    "previewStart": 26,
+    "previewEnd": 54,
+    "volume": 0.98,
+    "author": "DoubleDee73",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyskimpossiblechristinamiliancallmebeepme",
     "local": false
   },
   {
@@ -10568,6 +11017,33 @@
     "local": false
   },
   {
+    "id": "dua-lipa-houdini",
+    "title": "Houdini",
+    "artist": "Dua Lipa",
+    "video": "suAR1PYFNYA",
+    "language": "English",
+    "bpm": 233.94,
+    "bar": 4,
+    "gap": 20124.09592203129,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-07T06:25:25.922Z",
+    "videoGap": 0,
+    "realBpm": 117,
+    "volume": 0.67,
+    "author": "Lozboorman",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dualipahoudini",
+    "local": false
+  },
+  {
     "id": "dua-lipa-physical",
     "title": "Physical",
     "artist": "Dua Lipa",
@@ -11263,6 +11739,35 @@
     "local": false
   },
   {
+    "id": "elektryczne-gitary-dzieci-wybiegly",
+    "title": "Dzieci wybiegły",
+    "artist": "Elektryczne Gitary",
+    "video": "q4EM1jSg92k",
+    "language": "Polish",
+    "bpm": 280,
+    "bar": 4,
+    "gap": 6452.142857142857,
+    "year": "1996",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-01-07T06:25:25.923Z",
+    "videoGap": 0,
+    "realBpm": 140,
+    "previewStart": 76,
+    "previewEnd": 104,
+    "volume": 0.91,
+    "author": "rafallus",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elektrycznegitarydzieciwybiegly",
+    "local": false
+  },
+  {
     "id": "elektryczne-gitary-jestem-z-miasta",
     "title": "Jestem z Miasta",
     "artist": "Elektryczne Gitary",
@@ -11477,6 +11982,36 @@
     "local": false
   },
   {
+    "id": "elton-john-rocket-man-i-think-its-going-to-be-a-long-long-time",
+    "title": "Rocket Man (I Think It’s Going To Be A Long Long Time)",
+    "artist": "Elton John",
+    "video": "DtVBCG6ThDk",
+    "language": "English",
+    "bpm": 273.95,
+    "bar": 4,
+    "gap": 2424.418689541887,
+    "year": "1972",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-07T06:25:25.924Z",
+    "edition": "SingStar Legends [AU|DE|ES|FR|IT|UK]",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 137,
+    "volume": 0.8,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Rocket Man - Elton John",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohnrocketmanithinkitsgoingtobealonglongtime",
+    "local": false
+  },
+  {
     "id": "elton-john-rupaul-dont-go-breaking-my-heart",
     "title": "Don’t Go Breaking My Heart",
     "artist": "Elton John & RuPaul",
@@ -11680,6 +12215,33 @@
     ],
     "tracksCount": 1,
     "search": "enejzbudujemydom",
+    "local": false
+  },
+  {
+    "id": "engenheiros-do-hawaii-era-um-garoto-que-como-eu-amava-os-beatles-e-os-rolling-stones",
+    "title": "Era um garoto que como eu amava os Beatles e os Rolling Stones",
+    "artist": "Engenheiros do Hawaii",
+    "video": "tFsou8Szb3M",
+    "language": "Portuguese",
+    "bpm": 260.4,
+    "bar": 4,
+    "gap": 14662.988505747126,
+    "year": "1990",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:25.925Z",
+    "videoGap": 0,
+    "realBpm": 261,
+    "volume": 0.82,
+    "author": "porkaum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "engenheirosdohawaiieraumgarotoquecomoeuamavaosbeatleseosrollingstones",
     "local": false
   },
   {
@@ -11980,6 +12542,33 @@
     ],
     "tracksCount": 2,
     "search": "extrememorethanwords",
+    "local": false
+  },
+  {
+    "id": "fabio-jr-alma-gemea",
+    "title": "Alma Gêmea",
+    "artist": "Fábio Jr.",
+    "video": "S5SAZGSL6LI",
+    "language": "Portuguese",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 15005,
+    "year": "1994",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:25.926Z",
+    "videoGap": 0,
+    "realBpm": 98,
+    "volume": 0.84,
+    "author": "wildnight",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fabiojralmagemea",
     "local": false
   },
   {
@@ -12373,6 +12962,37 @@
     ],
     "tracksCount": 1,
     "search": "fettesbrotemanuela",
+    "local": false
+  },
+  {
+    "id": "fifty-fifty-cupid-twin-version",
+    "title": "Cupid (Twin Version)",
+    "artist": "FIFTY FIFTY",
+    "video": "jgCVkQhlScc",
+    "language": "English",
+    "bpm": 480,
+    "bar": 4,
+    "gap": 20520,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-07T06:25:25.927Z",
+    "genre": "K-Pop",
+    "videoGap": 7,
+    "realBpm": 120,
+    "volume": 0.59,
+    "author": "FritzB",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 32
+      },
+      {
+        "start": 692
+      }
+    ],
+    "tracksCount": 2,
+    "search": "fiftyfiftycupidtwinversion",
     "local": false
   },
   {
@@ -13287,6 +13907,34 @@
     "local": false
   },
   {
+    "id": "girls-generation-snsd-gee",
+    "title": "Gee",
+    "artist": "Girls’ Generation (SNSD)",
+    "video": "U7mPqycQ0tQ",
+    "language": "Korean",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 22020,
+    "year": "2009",
+    "lastUpdate": "2024-01-07T06:25:25.929Z",
+    "edition": "None",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.63,
+    "author": "lop",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "girlsgenerationsnsdgee",
+    "local": false
+  },
+  {
     "id": "girls-generation-snsd-the-boys",
     "title": "The Boys",
     "artist": "Girls’ Generation (SNSD)",
@@ -14031,6 +14679,33 @@
     "local": false
   },
   {
+    "id": "gusttavo-lima-balada",
+    "title": "Balada",
+    "artist": "Gusttavo Lima",
+    "video": "Z1ZKaR-9Kt4",
+    "language": "Portuguese",
+    "bpm": 256,
+    "bar": 4,
+    "gap": 7573.90625,
+    "year": "2011",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:26.057Z",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.83,
+    "author": "RYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gusttavolimabalada",
+    "local": false
+  },
+  {
     "id": "gwen-stefani-eve-rich-girl",
     "title": "Rich Girl",
     "artist": "Gwen Stefani & Eve",
@@ -14608,6 +15283,33 @@
     ],
     "tracksCount": 1,
     "search": "highschoolmusicalyouarethemusicinme",
+    "local": false
+  },
+  {
+    "id": "hilary-duff-wake-up",
+    "title": "Wake Up",
+    "artist": "Hilary Duff",
+    "video": "OguSuFENucg",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 5100,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-07T06:25:26.058Z",
+    "videoGap": 0,
+    "realBpm": 121,
+    "volume": 0.89,
+    "author": "jockel1974",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hilaryduffwakeup",
     "local": false
   },
   {
@@ -15956,6 +16658,35 @@
     "local": false
   },
   {
+    "id": "jimi-jamison-im-always-here-baywatch-theme",
+    "title": "I’m Always Here (Baywatch Theme)",
+    "artist": "Jimi Jamison",
+    "video": "ilAJJ3WHg6g",
+    "language": "English",
+    "bpm": 240.4,
+    "bar": 4,
+    "gap": 23111.663893510817,
+    "year": "1994",
+    "lastUpdate": "2024-01-07T06:25:26.059Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 121,
+    "previewStart": 32,
+    "previewEnd": 81,
+    "volume": 0.85,
+    "author": "snake84",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jimijamisonimalwaysherebaywatchtheme",
+    "local": false
+  },
+  {
     "id": "joan-jett-bad-reputation",
     "title": "Bad reputation",
     "artist": "Joan Jett",
@@ -16434,6 +17165,62 @@
     ],
     "tracksCount": 1,
     "search": "junkominagawasayakaoharaeternaleternity",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-feat-big-sean-as-long-as-you-love-me",
+    "title": "As Long As You Love Me",
+    "artist": "Justin Bieber feat. Big Sean",
+    "video": "R4em3LKQCAQ",
+    "language": "English",
+    "bpm": 280,
+    "bar": 4,
+    "gap": 87662.14285714286,
+    "year": "2012",
+    "lastUpdate": "2024-01-07T06:25:26.199Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 140,
+    "previewStart": 138,
+    "previewEnd": 168,
+    "volume": 0.87,
+    "author": "BYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberfeatbigseanaslongasyouloveme",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-feat-jaden-smith-never-say-never",
+    "title": "Never Say Never",
+    "artist": "Justin Bieber feat. Jaden Smith",
+    "video": "_Z5-P9v3F8w",
+    "language": "English",
+    "bpm": 388.4,
+    "bar": 4,
+    "gap": 436.2203913491245,
+    "year": "2010",
+    "lastUpdate": "2024-01-07T06:25:26.334Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.68,
+    "author": "gaspar17",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberfeatjadensmithneversaynever",
     "local": false
   },
   {
@@ -17937,6 +18724,35 @@
     "local": false
   },
   {
+    "id": "kwiat-jabloni-dzis-pozno-pojde-spac",
+    "title": "Dziś późno pójdę spać",
+    "artist": "Kwiat Jabłoni",
+    "video": "FWDXwrgdm9w",
+    "language": "Polish",
+    "bpm": 396.63,
+    "bar": 4,
+    "gap": 17060.715830875124,
+    "year": "2018",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-01-07T06:25:26.472Z",
+    "videoGap": 0,
+    "realBpm": 145,
+    "previewStart": 148,
+    "previewEnd": 186,
+    "volume": 0.81,
+    "author": "Ikjas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kwiatjablonidzispoznopojdespac",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-cant-get-you-out-of-my-head",
     "title": "Can't Get You Out Of My Head",
     "artist": "Kylie Minogue",
@@ -18833,6 +19649,37 @@
     ],
     "tracksCount": 1,
     "search": "lanadelreyvideogames",
+    "local": false
+  },
+  {
+    "id": "larval-stage-planning-trip-innocent-of-d",
+    "title": "Trip -Innocent of D-",
+    "artist": "Larval Stage Planning",
+    "video": "9olx_dSo8fU",
+    "language": "Japanese",
+    "bpm": 82,
+    "bar": 4,
+    "gap": 22868.365853658535,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-01-07T06:25:26.473Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 82,
+    "previewStart": 49,
+    "previewEnd": 74,
+    "volume": 0.77,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Trip -Innocent of D-",
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "larvalstageplanningtripinnocentofd",
     "local": false
   },
   {
@@ -20344,6 +21191,33 @@
     ],
     "tracksCount": 1,
     "search": "lplostonyou",
+    "local": false
+  },
+  {
+    "id": "lucas-lucco-aham",
+    "title": "Aham",
+    "artist": "Lucas Lucco",
+    "video": "_bjbJgeCRvQ",
+    "language": "Portuguese",
+    "bpm": 368.4,
+    "bar": 4,
+    "gap": 20442.084690553747,
+    "year": "2018",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:26.475Z",
+    "videoGap": 0,
+    "realBpm": 92,
+    "volume": 0.75,
+    "author": "airBN",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lucasluccoaham",
     "local": false
   },
   {
@@ -22753,6 +23627,34 @@
     ],
     "tracksCount": 1,
     "search": "michaeljacksonthriller",
+    "local": false
+  },
+  {
+    "id": "michel-telo-ai-se-eu-te-pego",
+    "title": "Ai se eu te pego!",
+    "artist": "Michel Teló",
+    "video": "hcm55lU9knw",
+    "language": "Portuguese",
+    "bpm": 288,
+    "bar": 4,
+    "gap": -87.5,
+    "year": "2011",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:26.476Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 127,
+    "volume": 0.76,
+    "author": "RYoshi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michelteloaiseeutepego",
     "local": false
   },
   {
@@ -25403,6 +26305,33 @@
     "local": false
   },
   {
+    "id": "no-secrets-thats-what-girls-do",
+    "title": "That’s What Girls Do",
+    "artist": "No Secrets",
+    "video": "x-jQ9Bh3qpg",
+    "language": "English",
+    "bpm": 244,
+    "bar": 4,
+    "gap": 7766.393442622951,
+    "year": "2002",
+    "lastUpdate": "2024-01-07T06:25:26.477Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.83,
+    "author": "seanie627",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nosecretsthatswhatgirlsdo",
+    "local": false
+  },
+  {
     "id": "nocny-kochanek-andzeju",
     "title": "Andzeju",
     "artist": "Nocny Kochanek",
@@ -25697,6 +26626,33 @@
     ],
     "tracksCount": 1,
     "search": "onedirectionlivewhilewereyoung",
+    "local": false
+  },
+  {
+    "id": "one-direction-night-changes",
+    "title": "Night Changes",
+    "artist": "One Direction",
+    "video": "syFZfO_wfMQ",
+    "language": "English",
+    "bpm": 480.16,
+    "bar": 4,
+    "gap": 7350.333222259247,
+    "year": "2014",
+    "lastUpdate": "2024-01-07T06:25:26.612Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "Sing-Girl",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionnightchanges",
     "local": false
   },
   {
@@ -26288,6 +27244,32 @@
     ],
     "tracksCount": 1,
     "search": "panicatthediscovictorious",
+    "local": false
+  },
+  {
+    "id": "papas-da-lingua-eu-sei",
+    "title": "Eu sei",
+    "artist": "Papas da Língua",
+    "video": "I6Xd1t9fdrk",
+    "language": "Portuguese",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 19680,
+    "year": "2000",
+    "lastUpdate": "2024-01-07T06:25:26.766Z",
+    "videoGap": 0,
+    "realBpm": 108,
+    "volume": 0.82,
+    "author": "Raitova",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "papasdalinguaeusei",
     "local": false
   },
   {
@@ -27183,6 +28165,33 @@
     "local": false
   },
   {
+    "id": "pitty-teto-de-vidro",
+    "title": "Teto de Vidro",
+    "artist": "Pitty",
+    "video": "hWhl6ijsAXw",
+    "language": "Portuguese",
+    "bpm": 384,
+    "bar": 4,
+    "gap": 28659.375,
+    "year": "2003",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-07T06:25:26.903Z",
+    "videoGap": 0,
+    "realBpm": 96,
+    "volume": 0.84,
+    "author": "fabiossmn",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pittytetodevidro",
+    "local": false
+  },
+  {
     "id": "placebo-feat-david-bowie-without-you-im-nothing",
     "title": "Without You I’m Nothing",
     "artist": "Placebo feat. David Bowie",
@@ -27495,6 +28504,32 @@
     ],
     "tracksCount": 2,
     "search": "princeroycefeatshakiradejavu",
+    "local": false
+  },
+  {
+    "id": "psy-feat-suga-of-bts-that-that",
+    "title": "That That",
+    "artist": "Psy feat. Suga of BTS",
+    "video": "8dJyRm2jJ-U",
+    "language": "English",
+    "bpm": 259.8,
+    "bar": 4,
+    "gap": 12418.475750577367,
+    "year": "2022",
+    "lastUpdate": "2024-01-07T06:25:26.905Z",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.68,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "psyfeatsugaofbtsthatthat",
     "local": false
   },
   {
@@ -29778,6 +30813,33 @@
     ],
     "tracksCount": 1,
     "search": "seankingstonbeautifulgirls",
+    "local": false
+  },
+  {
+    "id": "sean-kingston-justin-bieber-eenie-meenie",
+    "title": "Eenie Meenie",
+    "artist": "Sean Kingston / Justin Bieber",
+    "video": "prmmCg5bKxA",
+    "language": "English",
+    "bpm": 479.5,
+    "bar": 4,
+    "gap": 7138.95724713243,
+    "year": "2010",
+    "lastUpdate": "2024-01-07T06:25:27.039Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 121,
+    "volume": 0.64,
+    "author": "britneyblisswilliams",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "seankingstonjustinbiebereeniemeenie",
     "local": false
   },
   {

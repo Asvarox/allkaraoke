@@ -1,0 +1,449 @@
+#ID:chitaozinho-xororo-sinonimos
+#ARTIST:Chitãozinho & Xororó
+#ARTISTORIGIN:BR
+#TITLE:Sinônimos
+#CREATOR:raphasantiago
+#CREATORURL:
+#BPM:220
+#REALBPM:111
+#YEAR:2004
+#SOURCEURL:
+#VIDEOID:URN-Ikkc4CI
+#VIDEOGAP:0
+#VOLUME:0,99
+#LANGUAGE:Portuguese
+#LASTUPDATE:2024-01-07T06:25:25.772Z
+#GAP:21347,272727272728
+F 15 2 0 Quan
+F 18 2 0 to 
+F 21 2 0 tempo 
+F 24 1 0 o 
+F 26 1 0 co
+F 28 1 0 ra
+F 30 10 0 ção 
+- 40
+F 54 4 0 Le
+F 59 2 0 va 
+F 62 3 0 prá 
+F 66 3 0 sa
+F 70 26 0 ber 
+- 96 127
+- 127
+F 142 1 0 Que’o 
+F 144 2 0 si
+F 147 2 0 nô
+F 150 1 0 ni
+F 152 2 0 mo 
+F 155 2 0 de’a
+F 158 14 0 mar 
+- 172
+F 179 4 0 É 
+F 184 4 0 so
+F 189 5 0 fre
+F 195 25 0 ~r 
+- 220 255
+- 255
+F 270 2 0 No 
+F 273 1 0 a
+F 275 1 0 ro
+F 277 1 0 ma 
+F 279 2 0 de 
+F 282 2 0 a
+F 285 4 0 mo
+F 290 2 0 res 
+F 293 4 0 pode 
+F 298 2 0 ha
+F 301 6 0 ver 
+- 307
+F 317 3 0 Es
+F 321 5 0 pi
+F 327 30 0 nhos 
+- 357 379
+- 379
+F 394 1 0 É 
+F 396 1 0 co
+F 398 2 0 mo 
+F 401 2 0 ter 
+F 404 1 0 mu
+F 406 2 0 lhe
+F 409 3 0 res 
+F 413 3 0 e 
+F 417 2 0 mi
+F 420 8 0 lhõ
+F 429 2 0 es 
+- 431
+F 434 3 0 E 
+F 438 4 0 ser 
+F 443 3 0 so
+F 447 3 0 zi
+F 451 8 0 ~
+F 460 30 0 nho 
+- 490 507
+- 507
+F 522 2 0 Na 
+F 525 2 0 so
+F 528 1 0 li
+F 530 2 0 dão 
+F 533 2 0 de 
+F 536 2 0 ca
+F 539 10 0 ~
+F 550 3 0 sa 
+- 553
+F 561 3 0 Des
+F 565 4 0 can
+F 570 9 0 sa
+F 580 16 0 ~r 
+- 596 636
+- 636
+F 651 1 0 O 
+F 653 2 0 sen
+F 656 1 0 ti
+F 658 2 0 do 
+F 661 1 0 da 
+F 663 3 0 vi
+F 667 6 0 ~
+F 674 3 0 da, 
+- 677
+F 688 4 0 En
+F 693 4 0 con
+F 698 3 0 tra
+F 702 16 0 ~r 
+- 718
+F 728 2 0 Quem 
+F 731 3 0 pode 
+F 735 2 0 di
+F 738 2 0 zer 
+F 741 4 0 onde 
+- 745
+F 747 3 0 A 
+F 751 2 0 fe
+F 754 2 0 li
+F 757 3 0 ci
+F 761 1 0 da
+F 763 6 0 ~
+F 770 2 0 de 
+F 773 4 0 es
+F 778 20 0 tá 
+- 798 815
+- 815
+F 830 3 0 O’a
+F 834 4 0 mor 
+F 839 1 0 é 
+F 841 4 0 fei
+F 846 2 0 to 
+F 849 4 0 de 
+F 854 2 0 pai
+F 857 4 0 xões 
+- 861
+F 864 1 0 E 
+F 866 3 0 quan
+F 870 2 0 do 
+F 873 4 0 per
+F 878 3 0 de 
+F 882 3 0 a 
+F 886 2 0 ra
+F 889 10 0 zão 
+- 899 902
+- 902
+F 917 1 0 Não 
+F 919 7 0 sa
+F 927 4 0 be 
+F 932 3 0 quem 
+F 936 4 0 vai 
+F 942 3 0 ma
+F 946 5 0 chu
+F 952 3 0 car 
+- 955
+F 958 3 0 Quem 
+F 962 2 0 a
+F 965 3 0 ma 
+F 969 3 0 nun
+F 973 2 0 ca 
+F 976 4 0 sen
+F 981 2 0 te 
+F 984 6 0 medo 
+- 990
+F 992 4 0 De 
+F 997 2 0 con
+F 1000 4 0 tar 
+F 1006 1 0 o 
+F 1008 4 0 seus 
+F 1013 2 0 se
+F 1016 5 0 gre
+F 1022 10 0 do 
+- 1032
+F 1044 3 0 Si
+F 1048 5 0 nô
+F 1054 2 0 ni
+F 1057 3 0 mo 
+F 1061 2 0 de’a
+F 1064 5 0 mor 
+F 1070 4 0 é 
+F 1076 2 0 a
+F 1079 7 0 ma
+F 1087 24 0 ~r. 
+- 1111 1962
+- 1962
+F 1977 2 0 O’a
+F 1980 4 0 mor 
+F 1985 1 0 é 
+F 1987 4 0 fei
+F 1992 2 0 to 
+F 1995 4 0 de 
+F 2000 2 0 pai
+F 2003 3 0 xões 
+- 2006
+F 2009 2 0 E 
+F 2012 3 0 quan
+F 2016 2 0 do 
+F 2019 4 0 per
+F 2024 2 0 de 
+F 2027 3 0 a 
+F 2031 2 0 ra
+F 2034 12 0 zão 
+- 2046 2047
+- 2047
+F 2062 2 0 Não 
+F 2065 6 0 sa
+F 2072 4 0 be 
+F 2077 3 0 quem 
+F 2081 4 0 vai 
+F 2087 3 0 ma
+F 2091 6 0 chu
+F 2098 2 0 car 
+- 2100
+F 2104 2 0 Quem 
+F 2107 3 0 a
+F 2111 2 0 ma 
+F 2114 3 0 nun
+F 2118 2 0 ca 
+F 2121 4 0 sen
+F 2126 2 0 te 
+F 2129 4 0 medo 
+- 2133
+F 2138 3 0 De 
+F 2142 2 0 con
+F 2145 4 0 tar 
+F 2150 1 0 o 
+F 2152 4 0 seus 
+F 2158 2 0 se
+F 2161 4 0 gre
+F 2166 13 0 do 
+- 2179
+F 2189 3 0 Si
+F 2193 4 0 nô
+F 2198 3 0 ni
+F 2202 2 0 mo 
+F 2206 3 0 de’a
+F 2210 4 0 mor 
+F 2215 4 0 é 
+F 2220 4 0 a
+F 2225 3 0 mar 
+- 2228
+F 2231 2 0 O’a
+F 2234 4 0 mor 
+F 2239 1 0 é 
+F 2241 4 0 fei
+F 2246 2 0 to 
+F 2249 4 0 de 
+F 2254 2 0 pai
+F 2257 3 0 xões 
+- 2260
+F 2263 2 0 E 
+F 2266 3 0 quan
+F 2270 2 0 do 
+F 2273 4 0 per
+F 2278 3 0 de 
+F 2282 3 0 a 
+F 2286 2 0 ra
+F 2289 10 0 zão 
+- 2299 2302
+- 2302
+F 2317 2 0 Não 
+F 2320 6 0 sa
+F 2327 4 0 be 
+F 2332 3 0 quem 
+F 2336 5 0 vai 
+F 2342 3 0 ma
+F 2346 6 0 chu
+F 2353 2 0 car 
+- 2355
+F 2359 2 0 Quem 
+F 2362 2 0 a
+F 2365 3 0 ma 
+F 2370 2 0 nun
+F 2373 2 0 ca 
+F 2376 4 0 sen
+F 2381 3 0 te 
+F 2385 4 0 medo 
+- 2389
+F 2393 3 0 De 
+F 2397 3 0 con
+F 2401 4 0 tar 
+F 2406 1 0 o 
+F 2408 4 0 seus 
+F 2413 2 0 se
+F 2416 4 0 gre
+F 2421 16 0 do 
+- 2437
+F 2444 3 0 Si
+F 2448 4 0 nô
+F 2453 2 0 ni
+F 2456 3 0 mo 
+F 2460 3 0 de’a
+F 2464 4 0 mor 
+F 2470 4 0 é 
+F 2475 3 0 a
+F 2479 4 0 ma
+F 2484 25 0 ~r. 
+- 2509 2735
+- 2735
+F 2750 1 0 Quem 
+F 2752 2 0 re
+F 2755 1 0 ve
+F 2757 1 0 la
+F 2759 2 0 rá 
+F 2762 1 0 o 
+F 2764 1 0 mis
+F 2766 7 0 té
+F 2774 2 0 rio 
+- 2776 2779
+- 2779
+F 2794 2 0 Que 
+F 2797 4 0 tem 
+F 2803 3 0 a 
+F 2808 16 0 fé. 
+- 2824 2989
+- 2989
+F 3004 2 0 Como 
+F 3007 2 0 é 
+F 3010 2 0 tris
+F 3013 2 0 te 
+F 3016 1 0 a 
+F 3018 2 0 tris
+F 3021 3 0 te
+F 3025 2 0 za 
+- 3027
+F 3028 4 0 Men
+F 3033 2 0 di
+F 3036 4 0 gan
+F 3041 2 0 do 
+F 3045 2 0 um 
+F 3048 3 0 so
+F 3052 3 0 rri
+F 3056 28 0 so. 
+- 3084 3233
+- 3233
+F 3248 2 0 O’a
+F 3251 3 0 mor 
+F 3256 1 0 é 
+F 3258 5 0 fei
+F 3264 2 0 to 
+F 3267 3 0 de 
+F 3271 2 0 pai
+F 3274 4 0 xões 
+- 3278
+F 3281 1 0 E 
+F 3283 3 0 quan
+F 3287 2 0 do 
+F 3290 4 0 per
+F 3295 2 0 de 
+F 3299 3 0 a 
+F 3303 2 0 ra
+F 3306 10 0 zão 
+- 3316 3318
+- 3318
+F 3333 2 0 Não 
+F 3336 7 0 sa
+F 3344 3 0 be 
+F 3349 3 0 quem 
+F 3353 4 0 vai 
+F 3359 4 0 ma
+F 3364 5 0 chu
+F 3370 3 0 car 
+- 3373
+F 3377 2 0 Quem 
+F 3380 2 0 a
+F 3383 2 0 ma 
+F 3386 4 0 nun
+F 3391 2 0 ca 
+F 3394 4 0 sen
+F 3399 2 0 te 
+F 3402 4 0 medo 
+- 3406
+F 3410 3 0 De 
+F 3414 3 0 con
+F 3418 4 0 tar 
+F 3423 1 0 o 
+F 3425 4 0 seus 
+F 3431 2 0 se
+F 3434 4 0 gre
+F 3439 12 0 do 
+- 3451
+F 3461 3 0 Si
+F 3465 4 0 nô
+F 3470 3 0 ni
+F 3474 3 0 mo 
+F 3478 3 0 de’a
+F 3482 4 0 mor 
+F 3487 4 0 é 
+F 3492 4 0 a
+F 3497 3 0 mar 
+- 3500
+F 3504 1 0 O’a
+F 3506 4 0 mor 
+F 3511 1 0 é 
+F 3513 4 0 fei
+F 3518 2 0 to 
+F 3521 4 0 de 
+F 3526 2 0 pai
+F 3529 3 0 xões 
+- 3532
+F 3535 2 0 E 
+F 3538 3 0 quan
+F 3542 2 0 do 
+F 3545 4 0 per
+F 3550 3 0 de 
+F 3554 3 0 a 
+F 3558 2 0 ra
+F 3561 8 0 zão 
+- 3569 3573
+- 3573
+F 3588 2 0 Não 
+F 3591 6 0 sa
+F 3598 4 0 be 
+F 3603 4 0 quem 
+F 3609 3 0 vai 
+F 3614 4 0 ma
+F 3619 5 0 chu
+F 3625 3 0 car 
+- 3628
+F 3630 3 0 Quem 
+F 3634 3 0 a
+F 3638 2 0 ma 
+F 3641 3 0 nun
+F 3645 2 0 ca 
+F 3648 4 0 sen
+F 3653 3 0 te 
+F 3657 4 0 medo 
+- 3661
+F 3664 3 0 De 
+F 3668 3 0 con
+F 3672 5 0 tar 
+F 3678 1 0 o 
+F 3680 4 0 seus 
+F 3685 3 0 se
+F 3689 4 0 gre
+F 3694 12 0 do 
+- 3706
+F 3716 3 0 Si
+F 3720 4 0 nô
+F 3725 3 0 ni
+F 3729 3 0 mo 
+F 3733 3 0 de’a
+F 3737 4 0 mor 
+F 3742 4 0 é 
+F 3747 3 0 a
+F 3751 3 0 ma
+F 3755 25 0 ~r. 
+E
