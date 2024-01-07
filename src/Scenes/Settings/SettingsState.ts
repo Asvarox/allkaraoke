@@ -48,6 +48,7 @@ export const FPSCountSetting = new Setting<ValuesType<typeof FpsCount>>('fps-cou
 export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_LANGUAGES_KEY_V2', null);
 
 export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_MODE_KEY', null);
+export const KeyboardHelpVisibilitySetting = new Setting<boolean>('keyboard-help-visibility', true);
 
 export const InputLagSetting = new Setting<milliseconds>('INPUT_LAG', 0);
 

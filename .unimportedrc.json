@@ -22,6 +22,7 @@
     "src/hooks/useEffectDebugger.ts",
     "src/setupTests.ts",
     "src/utils/TestCanvas.tsx",
+    "src/utils/delayPromise.ts",
     "src/utils/range.ts",
     "src/utils/testUtils.ts"
   ],
@@ -30,9 +31,9 @@
     "@mui/x-date-pickers"
   ],
   "ignoreUnresolved": [
+    "../../../public/logo.svg?raw",
     "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw",
     "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw",
-    "../../../public/logo.svg?raw",
     "utility-types"
   ],
   "entry": [

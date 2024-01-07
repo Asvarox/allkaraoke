@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { QrCode2 } from '@mui/icons-material';
+import { Help, HelpOutline, QrCode2 } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { Tooltip } from 'Elements/Tooltip';
 import 'RemoteMic/eventListeners';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { KeyboardHelpVisibilitySetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import 'Stats';
 import FullscreenButton from 'Toolbar/Fullscreen';
 import QRCodeModal from 'Toolbar/QRCodeModal';
@@ -12,6 +12,7 @@ import { useState } from 'react';
 function Toolbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const [isHelpVisible, setIsHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
 
   const closeModal = () => setIsModalOpen(false);
 
@@ -19,6 +20,11 @@ function Toolbar() {
     <>
       {isModalOpen && <QRCodeModal closeModal={closeModal} />}
       <ToolbarContainer>
+        <Tooltip title="Toggle help">
+          <HelpButton size="small" onClick={() => setIsHelpVisible(!isHelpVisible)} data-test="toggle-help">
+            {isHelpVisible ? <Help /> : <HelpOutline />}
+          </HelpButton>
+        </Tooltip>
         <FullscreenButton />
         <Tooltip title="Connect phone">
           <IconButton
@@ -78,6 +84,10 @@ const ToolbarContainer = styled.div`
   display: flex;
   gap: 0.75rem;
   border-bottom-left-radius: 1.5rem;
+`;
+
+const HelpButton = styled(IconButton)`
+  scale: 0.9;
 `;
 
 export default Toolbar;

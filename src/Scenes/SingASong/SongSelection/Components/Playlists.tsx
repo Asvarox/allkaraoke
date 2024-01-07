@@ -95,7 +95,7 @@ const Container = styled.div<{ active: boolean }>`
 `;
 
 const Playlist = styled(Button)<{ selected?: boolean; active: boolean }>`
-  font-size: 3rem;
+  font-size: 2.75rem;
   justify-self: stretch;
   flex-grow: 1;
   ${(props) => !props.focused && props.active && `background-color: transparent;`};

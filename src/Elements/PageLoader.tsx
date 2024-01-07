@@ -24,15 +24,14 @@ const Container = styled.div<{ visible: boolean }>`
   transition: 500ms;
   opacity: ${(props) => (props.visible ? 1 : 0)};
   position: fixed;
-  top: 0;
-  left: 0;
-  transform-origin: center;
-  transform: translate(50vw, 50vh);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Logo = styled(LogoIcon)`
-  transform-origin: bottom;
-  transform: scale(2);
+  transform: translate(-1.75rem, -0.8rem) scale(2);
 
   svg {
     @keyframes pulse {

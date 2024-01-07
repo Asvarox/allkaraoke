@@ -84,7 +84,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
   top: 0;
-  left: 6.5rem;
+  left: 6.2rem;
   padding: 1rem 0 1.5rem 2rem;
   width: 100%;
   z-index: 100;
@@ -98,7 +98,7 @@ const SongsGroupButton = styled(Button)<{ active: boolean }>`
   ${typography};
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   z-index: 1;
   color: ${styles.colors.text.default};
   background: ${(props) => (props.active ? styles.colors.lines.star.stroke : 'rgba(0, 0, 0, 0.7)')};

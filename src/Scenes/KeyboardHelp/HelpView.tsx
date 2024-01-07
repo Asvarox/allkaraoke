@@ -1,27 +1,22 @@
 import styled from '@emotion/styled';
 import { KeyboardReturn } from '@mui/icons-material';
-import HelpIcon from '@mui/icons-material/Help';
 import { typography } from 'Elements/cssMixins';
-import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { KeyboardHelpVisibilitySetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { supportsEscAsBack } from 'hooks/useKeyboard';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import createPersistedState from 'use-persisted-state';
 import { RegularHelpEntry } from './Context';
 interface Props {
   help: RegularHelpEntry;
 }
 
-const useIsVisible = createPersistedState('keyboard-help-visibility');
-
 export default function KeyboardHelpView({ help }: Props) {
-  const [isCollapsed, setIsVisible] = useIsVisible(true);
+  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
+  const [isCollapsed, setIsVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
 
   useHotkeys('shift+h', () => setIsVisible(!isCollapsed), undefined, [isCollapsed]);
 
   const helps = Object.entries(help ?? {}).filter(([, value]) => value !== undefined);
-
-  const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
   if (mobilePhoneMode) {
     return null;
@@ -35,7 +30,7 @@ export default function KeyboardHelpView({ help }: Props) {
         collapsed={!isCollapsed}
         visible={!!helps.length}
         data-collapsed={!isCollapsed}>
-        {isCollapsed ? (
+        {isCollapsed && (
           <>
             <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
             {helps.map(([type, label]) => {
@@ -54,8 +49,6 @@ export default function KeyboardHelpView({ help }: Props) {
               <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
             </Section>
           </>
-        ) : (
-          <HelpIcon onClick={() => setIsVisible(!isCollapsed)} />
         )}
       </Container>
     </>
@@ -150,12 +143,12 @@ const Container = styled.div<{ collapsed: boolean; visible: boolean }>`
   flex-direction: column;
   gap: 1rem;
   width: ${(props) => (props.collapsed ? 'auto' : '34rem')};
-  opacity: ${(props) => (props.collapsed ? 0.5 : 1)};
+  opacity: ${(props) => (props.collapsed ? 0 : 1)};
   visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
   cursor: pointer;
   transform: scale(0.75);
 
-  z-index: 10000;
+  z-index: 1000;
 
   @media (max-width: 560px) {
     display: none;
