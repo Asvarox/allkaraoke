@@ -59,7 +59,12 @@ export const events = {
 
   songStarted: new GameEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted', false),
   songEnded: new GameEvent<
-    (song: Song | SongPreview, singSetup: SingSetup, scores: Array<{ name: string; score: number }>) => void
+    (
+      song: Song | SongPreview,
+      singSetup: SingSetup,
+      scores: Array<{ name: string; score: number }>,
+      progress: number,
+    ) => void
   >('songEnded', false),
 
   remoteMicConnected: new GameEvent<(remoteMic: { id: string; name: string; silent: boolean }) => void>(

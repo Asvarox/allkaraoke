@@ -7,19 +7,26 @@ import posthog from 'posthog-js';
 
 const trackSongData =
   (event: string) =>
-  ({ artist, title }: Song | SongPreview, setup: SingSetup, scores: Array<{ name: string; score: number }> = []) => {
+  (
+    { artist, title, id }: Song | SongPreview,
+    setup: SingSetup,
+    scores: Array<{ name: string; score: number }> = [],
+    progress?: number,
+  ) => {
     const sameScores = scores.length > 1 && scores.every((score) => score.score === scores[0].score);
 
     const inputs: Record<string, InputSourceNames> = {};
     PlayersManager.getPlayers().forEach((player, index) => (inputs[`input${index}`] = player.input.source));
 
     posthog.capture(event, {
+      songId: id,
       name: `${artist} - ${title}`,
       artist,
       title,
       mode: setup.mode,
       tolerance: setup.tolerance,
       players: setup.players.length,
+      progress: progress ?? null,
       sameScores,
       mobilePhoneMode: !!MobilePhoneModeSetting.get(),
       ...inputs,

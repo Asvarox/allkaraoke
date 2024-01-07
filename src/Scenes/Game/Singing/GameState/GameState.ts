@@ -1,4 +1,5 @@
 import PlayerState from 'Scenes/Game/Singing/GameState/PlayerState';
+import getSongBeatCount from 'Songs/utils/getSongBeatCount';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import tuple from 'utils/tuple';
@@ -86,6 +87,10 @@ export class GameStateClass {
 
       return tuple([beatsToPoints(counts, pointsPerBeat), beatsToPoints(maxCounts, pointsPerBeat)]);
     }
+  };
+
+  public getSongCompletionProgress = () => {
+    return Math.max(0, Math.min(1, this.getCurrentBeat() / getSongBeatCount(this.getSong()!)));
   };
 
   public startInputMonitoring = async () => {

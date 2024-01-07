@@ -102,7 +102,8 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                       name: player.getName(),
                       score: GameState.getPlayerScore(player.number),
                     }));
-              events.songEnded.dispatch(song.data!, singSetup, scores);
+              const progress = GameState.getSongCompletionProgress();
+              events.songEnded.dispatch(song.data!, singSetup, scores, progress);
               setIsEnded(true);
             }}
             singSetup={singSetup}

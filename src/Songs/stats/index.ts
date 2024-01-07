@@ -2,10 +2,13 @@ import events from 'GameEvents/GameEvents';
 import localForage from 'localforage';
 import { getSongKey, SongStats, storeSongStats } from 'Songs/stats/common';
 
-events.songEnded.subscribe(async (song, setup, scores) => {
+events.songEnded.subscribe(async (song, setup, scores, progress) => {
+  if (scores.every((score) => score.score === 0)) {
+    return;
+  }
   let currentState = await localForage.getItem<SongStats>(getSongKey(song));
 
-  const score = { setup, scores, date: new Date().toISOString() };
+  const score = { setup, scores, date: new Date().toISOString(), progress };
   if (currentState) {
     // there might be cases where only { plays: number } is stored
     currentState.scores = [...(currentState?.scores ?? []), score];
