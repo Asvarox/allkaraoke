@@ -1,0 +1,212 @@
+#ID:disneys-kim-possible-christina-milian-call-me-beep-me
+#ARTIST:Disney’s Kim Possible (Christina Milian)
+#TITLE:Call Me, Beep Me
+#CREATOR:DoubleDee73
+#CREATORURL:
+#BPM:245,2
+#REALBPM:120
+#YEAR:2001
+#SOURCEURL:
+#PREVIEWSTART:26
+#PREVIEWEND:54
+#VIDEOID:5Y-X1Uz4NgU
+#VIDEOGAP:0
+#VOLUME:0,98
+#LANGUAGE:English
+#LASTUPDATE:2024-01-07T06:25:25.777Z
+#GAP:3531,2071778140294
+: 16 1 7 I’m 
+: 18 3 11 your 
+: 22 3 14 ba
+: 26 2 13 sic 
+: 30 3 13 a
+: 34 4 11 verage 
+: 40 3 7 girl 
+- 43
+: 48 1 7 And 
+: 50 3 10 I’m 
+: 54 3 14 here 
+: 58 1 13 to 
+: 62 3 13 save 
+: 66 4 11 the 
+: 72 5 7 world 
+- 77
+: 80 1 10 You 
+: 83 2 10 can’t 
+: 86 2 13 stop 
+: 90 2 12 me 
+: 95 2 12 cause 
+: 98 3 12 I’m 
+* 104 3 3 Kim 
+* 112 4 10 Pos
+* 120 5 9 si
+* 128 3 5 ble 
+- 131
+: 144 2 10 There 
+: 147 2 10 is 
+: 150 2 14 no
+: 154 3 17 thing 
+: 158 3 19 I 
+: 162 4 17 can’t 
+* 168 4 14 do 
+- 172
+: 179 2 10 When 
+: 182 3 13 dan
+: 186 2 12 ger 
+: 191 2 12 comes 
+: 195 2 10 just 
+- 197
+: 201 3 14 Know 
+: 206 1 15 that 
+: 209 3 14 I 
+: 214 1 12 am 
+: 217 3 10 on 
+: 222 3 17 my 
+: 228 7 14 way
+: 237 6 12 ~
+: 245 4 14 ~ 
+- 249
+: 261 1 7 It 
+: 266 2 19 does
+: 270 2 19 n’t 
+: 274 2 19 mat
+: 277 2 19 ter 
+: 281 2 19 where 
+: 285 6 19 or 
+: 293 6 18 when 
+: 301 5 18 there’s 
+: 309 5 19 trou
+: 317 3 21 ble 
+- 320
+: 325 4 22 If 
+: 332 2 22 you 
+: 336 4 22 just 
+: 344 3 22 call 
+: 348 6 22 my 
+: 356 5 21 name 
+- 361
+: 369 6 14 Kim 
+: 377 3 12 Pos
+: 381 2 10 si
+: 385 4 7 ble 
+- 389
+: 393 2 14 Call 
+: 397 3 14 me, 
+: 401 2 14 beep 
+: 405 3 14 me 
+: 409 1 14 if 
+: 411 1 12 you 
+: 413 1 14 wan
+: 415 1 12 na 
+: 417 2 14 reach 
+: 421 2 14 me 
+- 423
+: 425 1 12 When 
+: 427 1 10 you 
+: 429 1 12 wan
+: 431 1 10 na 
+: 433 2 12 page 
+: 437 3 14 me 
+: 441 2 12 it’s 
+: 445 2 10 o
+: 449 2 10 kay 
+- 451
+: 453 2 5 When
+: 457 2 7 e
+: 461 3 10 ver 
+: 465 3 12 you 
+: 469 6 14 need 
+: 477 2 15 me 
+: 481 3 14 ba
+: 485 3 10 by 
+- 488
+: 489 2 12 Call 
+: 493 2 12 me, 
+: 497 2 12 beep 
+: 501 2 12 me 
+: 505 1 12 if 
+: 507 1 10 you 
+: 509 1 12 wan
+: 511 1 10 na 
+: 513 2 12 reach 
+: 517 3 10 me 
+- 520
+: 521 5 14 Call 
+: 529 4 10 me, 
+: 537 4 14 beep 
+: 545 3 10 me 
+- 548
+: 556 1 14 If 
+: 558 1 13 you 
+: 560 3 14 wan
+: 564 2 13 na 
+: 568 7 14 reach 
+: 576 4 10 me 
+- 580
+: 594 3 7 Doe
+: 598 3 7 sn’t 
+: 602 2 7 mat
+: 606 2 7 ter 
+: 610 5 7 where 
+: 618 3 6 doe
+: 622 3 6 sn’t 
+: 626 2 6 mat
+: 630 2 7 ter 
+: 634 4 9 when 
+- 638 641
+- 641
+: 657 2 10 I 
+: 661 2 10 will 
+: 665 2 10 be 
+: 669 2 10 there 
+: 673 2 10 for 
+: 677 2 10 you 
+: 681 3 9 till 
+: 685 1 10 the 
+: 689 2 9 ve
+: 693 2 10 ry 
+: 697 7 12 end 
+- 704
+: 713 4 14 Dan
+: 719 3 12 ger 
+: 724 2 10 or 
+: 729 4 14 trou
+: 735 2 12 ble 
+- 737
+: 740 2 10 I’m 
+: 744 4 14 there 
+: 752 2 12 on 
+: 756 2 10 the 
+: 760 5 14 dou
+: 766 2 12 ble 
+- 768
+: 773 3 12 You 
+: 777 4 14 know 
+: 783 3 15 that 
+: 788 3 17 you 
+: 793 3 19 al
+: 798 4 21 ways 
+: 804 3 22 can 
+: 809 5 21 call 
+- 814
+* 817 5 21 Kim 
+* 825 3 22 Pos
+* 829 3 21 si
+* 833 4 19 ble 
+- 837
+F 852 1 14 So 
+F 855 1 10 what’s 
+F 858 1 11 the 
+F 860 1 7 sitch? 
+- 861
+: 873 2 12 Call 
+: 877 2 12 me, 
+: 881 2 12 beep 
+: 885 2 12 me 
+: 889 1 12 if 
+: 891 1 10 you 
+: 893 1 12 wan
+: 895 1 12 na 
+: 897 2 12 reach 
+: 901 3 10 me 
+E
