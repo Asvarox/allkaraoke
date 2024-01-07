@@ -13,7 +13,7 @@ import { Theme, ThemeProvider, createTheme } from '@mui/material';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import { GameScreens } from 'Elements/GameScreens';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
-import Loader from 'Elements/Loader';
+import PageLoader from 'Elements/PageLoader';
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
 import LandingPage from 'Scenes/LandingPage/LandingPage';
@@ -78,7 +78,7 @@ function App() {
                 <Toolbar />
                 <Route path="game/:songId?">
                   {({ songId }) => (
-                    <Suspense fallback={<Loader />}>
+                    <Suspense fallback={<PageLoader />}>
                       <LazyGame songId={songId ? decodeURIComponent(songId) : undefined} />
                     </Suspense>
                   )}
@@ -100,7 +100,7 @@ function App() {
               <Route
                 path="edit"
                 component={() => (
-                  <Suspense fallback={<Loader />}>
+                  <Suspense fallback={<PageLoader />}>
                     <LazySongList />
                   </Suspense>
                 )}
