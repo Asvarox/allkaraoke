@@ -105,6 +105,12 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   };
 
   useEffect(() => {
+    document
+      .querySelector(`[data-test="${currentlySelected}"]`)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, [currentlySelected]);
+
+  useEffect(() => {
     let newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
     debug && newElements.length && console.log('new elements', newElements);
     elementList.current = [...newElementList.current];
