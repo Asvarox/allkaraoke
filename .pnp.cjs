@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.38"],\
           ["@types/react-dom", "npm:18.2.18"],\
-          ["@types/react-refresh", "npm:0.14.4"],\
+          ["@types/react-refresh", "npm:0.14.5"],\
           ["@types/tinycolor2", "npm:1.4.6"],\
           ["@types/use-persisted-state", "npm:0.3.4"],\
           ["@types/uuid", "npm:9.0.7"],\
@@ -10837,10 +10837,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/react-refresh", [\
-      ["npm:0.14.4", {\
-        "packageLocation": "./.yarn/cache/@types-react-refresh-npm-0.14.4-d1a83184dd-6c94cd6273.zip/node_modules/@types/react-refresh/",\
+      ["npm:0.14.5", {\
+        "packageLocation": "./.yarn/cache/@types-react-refresh-npm-0.14.5-47cdf59dc8-28b8ba6430.zip/node_modules/@types/react-refresh/",\
         "packageDependencies": [\
-          ["@types/react-refresh", "npm:0.14.4"],\
+          ["@types/react-refresh", "npm:0.14.5"],\
           ["@types/babel__core", "npm:7.20.4"],\
           ["csstype", "npm:3.1.2"]\
         ],\
@@ -18794,7 +18794,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.9.1"],\
           ["@types/react", "npm:18.2.38"],\
           ["@types/react-dom", "npm:18.2.18"],\
-          ["@types/react-refresh", "npm:0.14.4"],\
+          ["@types/react-refresh", "npm:0.14.5"],\
           ["@types/tinycolor2", "npm:1.4.6"],\
           ["@types/use-persisted-state", "npm:0.3.4"],\
           ["@types/uuid", "npm:9.0.7"],\
