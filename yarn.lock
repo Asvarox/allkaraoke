@@ -6535,12 +6535,12 @@ __metadata:
   linkType: hard
 
 "@types/react-refresh@npm:^0":
-  version: 0.14.4
-  resolution: "@types/react-refresh@npm:0.14.4"
+  version: 0.14.5
+  resolution: "@types/react-refresh@npm:0.14.5"
   dependencies:
     "@types/babel__core": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 6c94cd6273953dd5d55f2c5e80b5c32b34fd9d8ad667e3b85cf18eac9ec482ea51712726c19ebb4a22d4cf90d028d7d4ee32f89776e6638d60b5029a9ce7decc
+  checksum: 28b8ba64309c17c7b272fb55749c20adc43734af12a2c68433bf103455e19bfc348c6850d1603413d3c1dc01b1ec6c698e73b01a5589cbf0682e9ccbe1012153
   languageName: node
   linkType: hard
 
