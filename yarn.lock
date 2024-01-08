@@ -6573,14 +6573,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.38":
-  version: 18.2.38
-  resolution: "@types/react@npm:18.2.38"
+"@types/react@npm:^18.2.47":
+  version: 18.2.47
+  resolution: "@types/react@npm:18.2.47"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 9f9b9925c979e848d572dce6fff34951708127ba6b1fd4306c93fbcab74f5c6cff2b2e47d4222339eeb6c19d264e93450cb2ad6b255c73c536d0a1e2093cc98a
+  checksum: 0a98c2ef8303909f78c973ac9731cb671f3a0b96bc5213b538d1a50cbaae6e51b6befd64845a9cb95af8528767315d5bd99a85608eb716c020393c7d33a9b477
   languageName: node
   linkType: hard
 
@@ -13334,7 +13334,7 @@ __metadata:
     "@types/lodash": "npm:^4.14.202"
     "@types/lodash-es": "npm:^4.17.12"
     "@types/node": "npm:^20.9.1"
-    "@types/react": "npm:^18.2.38"
+    "@types/react": "npm:^18.2.47"
     "@types/react-dom": "npm:^18.2.18"
     "@types/react-refresh": "npm:^0"
     "@types/tinycolor2": "npm:^1.4.6"
