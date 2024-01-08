@@ -66,6 +66,7 @@ export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; dura
                 transform: 'scale(1.5)',
               }}
               src={thumbSrc}
+              placeholder={undefined}
             />
           )}
         </SAnimated>

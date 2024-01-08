@@ -77,6 +77,7 @@ export const UpdateVideo: React.FC<{}> = () => {
             extrapolateLeft: 'clamp',
           })
         }
+        placeholder={undefined}
       />
       <Global
         styles={css`
