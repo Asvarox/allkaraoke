@@ -62,8 +62,8 @@ test('Filters - PlayLists', async ({ page }) => {
   await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
   await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
 
-  await page.keyboard.press('ArrowDown'); // Classics
-  await expect(page.getByTestId('playlist-Classics')).toHaveAttribute('data-focused', 'true');
+  await page.keyboard.press('ArrowDown'); // Oldies
+  await expect(page.getByTestId('playlist-Oldies')).toHaveAttribute('data-focused', 'true');
   await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
   await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
 

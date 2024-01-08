@@ -38,7 +38,7 @@ export const usePlaylists = (songs: SongPreview[]): PlaylistEntry[] => {
               filters: { language: songLanguages[1].name },
             }
           : null,
-        { name: 'Classics', filters: { yearBefore: 1995 } },
+        { name: 'Oldies', filters: { yearBefore: 1995 } },
         { name: 'Modern', filters: { yearAfter: 1995 } },
         { name: 'Duets', filters: { duet: true } },
         {
