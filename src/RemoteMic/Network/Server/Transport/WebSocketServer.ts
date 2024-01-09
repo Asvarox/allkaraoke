@@ -21,7 +21,7 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
   public readonly name = 'WebSockets';
   private connection: WebSocket | null = null;
 
-  public constructor(private pswd: string) {
+  public constructor() {
     super();
   }
 
@@ -33,7 +33,7 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
     this.connection = new WebSocket(WEBSOCKETS_SERVER);
     this.connection.binaryType = 'arraybuffer';
     this.connection.onopen = () => {
-      this.connection?.send(pack({ t: 'register-room', id: roomId, pswd: this.pswd }));
+      this.connection?.send(pack({ t: 'register-room', id: roomId }));
       onConnect();
 
       this.connection?.addEventListener('message', (message) => {
