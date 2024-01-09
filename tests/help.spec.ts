@@ -12,12 +12,17 @@ test.beforeEach(async ({ page, context, browser }) => {
 test('Help', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
-  await expect(page.getByTestId('sing-a-song')).toBeVisible();
-  await expect(page.getByTestId('help-container')).toHaveAttribute('data-collapsed', 'false');
-  await page.keyboard.press('Shift+h'); // toggle help
-  await expect(page.getByTestId('help-container')).toHaveAttribute('data-collapsed', 'true');
+  await pages.inputSelectionPage.skipToMainMenu();
+
+  await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
+  await pages.mainMenuPage.helpContainerElement.click();
+  await expect(pages.mainMenuPage.helpContainerElement).not.toBeVisible();
   await page.reload();
-  await expect(page.getByTestId('sing-a-song')).toBeVisible();
-  await expect(page.getByTestId('help-container')).toHaveAttribute('data-collapsed', 'true');
+  await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+  await expect(pages.mainMenuPage.helpContainerElement).not.toBeVisible();
+  await pages.mainMenuPage.toggleHelpButton.click();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
+  await page.keyboard.press('Shift+h'); // toggle help
+  await expect(pages.mainMenuPage.helpContainerElement).not.toBeVisible();
 });

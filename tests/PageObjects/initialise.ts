@@ -3,6 +3,7 @@ import { AdvancedConnectionPagePO } from './AdvancedConnectionPage';
 import { EditSongsPagePO } from './EditSongsPage';
 import { GamePagePO } from './GamePage';
 import { InputSelectionPagePO } from './InputSelectionPage';
+import { JukeboxPagePO } from './JukeboxPage';
 import { LandingPagePO } from './LandingPage';
 import { MainMenuPagePO } from './MainMenuPage';
 import { ManageSongsPagePO } from './ManageSongsPage';
@@ -28,5 +29,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     songPreviewPage: new SongPreviewPagePO(page, context, browser),
     gamePage: new GamePagePO(page, context, browser),
     postGame: new PostGamePO(page, context, browser),
+    jukebox: new JukeboxPagePO(page, context, browser),
   };
 }
