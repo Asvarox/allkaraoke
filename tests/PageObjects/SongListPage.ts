@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongListPagePO {
@@ -14,5 +14,17 @@ export class SongListPagePO {
 
   public async navigateToSongWithKeyboard(songID: string) {
     await navigateWithKeyboard(this.page, `song-${songID}`);
+  }
+
+  public get songListElement() {
+    return this.page.getByTestId('song-list-container');
+  }
+
+  public get songPreviewElement() {
+    return this.page.getByTestId('song-preview');
+  }
+
+  public expectSelectedSongToBe(expectedSong: string) {
+    return expect(this.songPreviewElement).toHaveAttribute('data-song', expectedSong);
   }
 }
