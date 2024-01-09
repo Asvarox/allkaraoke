@@ -24,7 +24,7 @@ export class SongListPagePO {
     return this.page.getByTestId('song-preview');
   }
 
-  public equalityOfPreviewSongWithExpected(expectedSong: string) {
+  public expectSelectedSongToBe(expectedSong: string) {
     return expect(this.songPreviewElement).toHaveAttribute('data-song', expectedSong);
   }
 }

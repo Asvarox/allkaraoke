@@ -32,7 +32,7 @@ export class JukeboxPagePO {
     return this.jukeboxElement.getAttribute('data-song');
   }
 
-  public expectSkipSongWorks(songName: string) {
+  public expectCurrentSongNotToBe(songName: string) {
     return expect(this.jukeboxElement).not.toHaveAttribute('data-song', songName);
   }
 }
