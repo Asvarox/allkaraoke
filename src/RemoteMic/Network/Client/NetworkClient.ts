@@ -231,7 +231,7 @@ export class NetworkClient {
     );
 
   private sendEvent = <T extends NetworkMessages>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
-    if (!this.transport!.isConnected()) {
+    if (!this.transport?.isConnected()) {
       console.debug('not connected, skipping', type, payload);
     } else {
       this.transport!.sendEvent({ t: type, ...payload } as T);
@@ -244,24 +244,24 @@ export class NetworkClient {
   ): Promise<T> => {
     return new Promise<T>((resolve, reject) => {
       const timeout = setTimeout(() => {
-        this.transport!.removeListener(callback);
+        this.transport?.removeListener(callback);
         reject(`${t} timed out waiting for ${response}`);
       }, 10_000);
 
       const callback = (event: NetworkMessages) => {
         if (event.t === response) {
           clearTimeout(timeout);
-          this.transport!.removeListener(callback);
+          this.transport?.removeListener(callback);
           resolve(event as T);
         }
       };
-      this.transport!.addListener(callback);
+      this.transport?.addListener(callback);
 
       this.sendEvent(t, payload);
     });
   };
 
   public disconnect = () => {
-    this.transport!.close();
+    this.transport?.close();
   };
 }
