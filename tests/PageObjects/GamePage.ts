@@ -30,7 +30,7 @@ export class GamePagePO {
     }).toPass({ timeout: 15_000 });
   }
 
-  public async expectPlayersScoreToBe() {
-    await expect(this.playersScoreElement).toHaveAttribute('data-score', '0', { timeout: 15_000 });
+  public async expectPlayersScoreToBe(expected: number) {
+    await expect(this.playersScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
   }
 }

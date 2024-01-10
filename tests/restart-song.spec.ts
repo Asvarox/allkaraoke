@@ -28,5 +28,5 @@ test('should restart the song and the scores', async ({ page }) => {
 
   await page.keyboard.press('Backspace');
   await pages.gamePage.restartSong();
-  await pages.gamePage.expectPlayersScoreToBe();
+  await pages.gamePage.expectPlayersScoreToBe(0);
 });
