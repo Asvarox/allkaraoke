@@ -1,9 +1,12 @@
 import events from 'GameEvents/GameEvents';
+import { PeerJSServerTransport } from 'RemoteMic/Network/Server/Transport/PeerJSServer';
+import { WebSocketServerTransport } from 'RemoteMic/Network/Server/Transport/WebSocketServer';
 import { ServerTransport } from 'RemoteMic/Network/Server/Transport/interface';
 import { NetworkMessages } from 'RemoteMic/Network/messages';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
+import posthog from 'posthog-js';
 
 const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
@@ -11,16 +14,15 @@ export const GAME_CODE_LENGTH = 5;
 export class NetworkServer {
   private gameCode = window.sessionStorage.getItem(GAME_CODE_KEY)!;
   private started = false;
-  public transportName: string;
+  private transport: ServerTransport | undefined;
 
-  public constructor(private transport: ServerTransport) {
+  public constructor() {
     if (!this.gameCode) {
       this.gameCode = '';
       for (let i = 0; i < GAME_CODE_LENGTH; i++) {
         this.gameCode += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
       }
     }
-    this.transportName = transport.name;
 
     window.addEventListener('beforeunload', () => {
       RemoteMicManager.getRemoteMics().forEach((remoteMic) => remoteMic.connection.close());
@@ -29,6 +31,11 @@ export class NetworkServer {
   }
 
   public start = () => {
+    if (!this.transport) {
+      this.transport = posthog.isFeatureEnabled('websockets_remote_mics')
+        ? new WebSocketServerTransport()
+        : new PeerJSServerTransport();
+    }
     if (this.started) return;
     this.started = true;
     console.log('connection started', this.gameCode);
@@ -37,7 +44,7 @@ export class NetworkServer {
     this.transport.connect(
       this.gameCode,
       () => {
-        this.transport.addListener((event, sender) => {
+        this.transport!.addListener((event, sender) => {
           const type = event.t;
           if (type === 'register') {
             RemoteMicManager.addRemoteMic(event.id, event.name, sender, event.silent);

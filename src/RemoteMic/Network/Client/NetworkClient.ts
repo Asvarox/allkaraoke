@@ -2,6 +2,8 @@ import events from 'GameEvents/GameEvents';
 import { throttle } from 'lodash-es';
 import posthog from 'posthog-js';
 import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
+import { PeerJSClientTransport } from 'RemoteMic/Network/Client/Transport/PeerJSClient';
+import { WebSocketClientTransport } from 'RemoteMic/Network/Client/Transport/WebSocketClient';
 import {
   keyStrokes,
   NetworkGetInputLagResponseMessage,
@@ -31,6 +33,7 @@ export type transportCloseReason = string;
 export type transportErrorReason = string;
 
 export class NetworkClient {
+  private transport: ClientTransport | undefined;
   private clientId = storage.getValue(MIC_ID_KEY);
   private roomId: string | null = null;
 
@@ -38,8 +41,6 @@ export class NetworkClient {
   private connected = false;
 
   private frequencies: number[] = [];
-
-  public constructor(private transport: ClientTransport) {}
 
   private sendFrequencies = throttle((volume: number) => {
     const freqs = this.frequencies.map((freq) => roundTo(freq, 2));
@@ -62,6 +63,11 @@ export class NetworkClient {
   };
 
   public connect = (roomId: string, name: string, silent: boolean) => {
+    if (!this.transport) {
+      this.transport = posthog.isFeatureEnabled('websockets_remote_mics')
+        ? new WebSocketClientTransport()
+        : new PeerJSClientTransport();
+    }
     if (this.clientId === null) this.setClientId(v4());
     const lcRoomId = roomId.toLowerCase();
     this.roomId = lcRoomId;
@@ -125,9 +131,12 @@ export class NetworkClient {
     this.sendEvent('ping', { p: this.pingStart });
   };
 
+  private reportPing = throttle((ping: number) => posthog.capture('remote_mic_ping', { ping }), 10_000);
+
   private onPong = () => {
     this.latency = getPingTime() - this.pingStart;
     this.pinging = false;
+    this.reportPing(this.latency);
 
     setTimeout(this.ping, 1000);
   };
@@ -140,7 +149,7 @@ export class NetworkClient {
     this.ping();
     window.addEventListener('beforeunload', this.disconnect);
 
-    this.transport.addListener((data) => {
+    this.transport!.addListener((data) => {
       const type = data.t;
 
       if (type === 'start-monitor') {
@@ -222,10 +231,10 @@ export class NetworkClient {
     );
 
   private sendEvent = <T extends NetworkMessages>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
-    if (!this.transport.isConnected()) {
+    if (!this.transport?.isConnected()) {
       console.debug('not connected, skipping', type, payload);
     } else {
-      this.transport.sendEvent({ t: type, ...payload } as T);
+      this.transport!.sendEvent({ t: type, ...payload } as T);
     }
   };
 
@@ -235,24 +244,24 @@ export class NetworkClient {
   ): Promise<T> => {
     return new Promise<T>((resolve, reject) => {
       const timeout = setTimeout(() => {
-        this.transport.removeListener(callback);
+        this.transport?.removeListener(callback);
         reject(`${t} timed out waiting for ${response}`);
       }, 10_000);
 
       const callback = (event: NetworkMessages) => {
         if (event.t === response) {
           clearTimeout(timeout);
-          this.transport.removeListener(callback);
+          this.transport?.removeListener(callback);
           resolve(event as T);
         }
       };
-      this.transport.addListener(callback);
+      this.transport?.addListener(callback);
 
       this.sendEvent(t, payload);
     });
   };
 
   public disconnect = () => {
-    this.transport.close();
+    this.transport?.close();
   };
 }

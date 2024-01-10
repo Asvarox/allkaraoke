@@ -12,7 +12,7 @@ export default function SocialMediaElements() {
       <IconLogo dangerouslySetInnerHTML={{ __html: logo }} />
       <BackgroundPhoto>
         <Logo />
-        <ChristmasTree>🎁</ChristmasTree>
+        {/*<ChristmasTree>🎁</ChristmasTree>*/}
       </BackgroundPhoto>
     </>
   );
@@ -26,10 +26,10 @@ const IconLogo = styled.svg`
   padding: 30px;
 
   path:nth-of-type(1) {
-    fill: ${colorSets.christmasRed.stroke} !important;
+    fill: ${colorSets.red.text} !important;
   }
   path:nth-of-type(2) {
-    fill: ${colorSets.christmasGreen.text} !important;
+    fill: ${colorSets.blue.text} !important;
   }
 `;
 
@@ -41,10 +41,10 @@ const BackgroundPhoto = styled.div`
   background-color: black;
   background-image: linear-gradient(
     120deg,
-    ${colorSets.christmasRed.stroke},
-    ${colorSets.christmasRed.hit.fill} 49.9%,
-    ${colorSets.christmasGreen.hit.fill} 50.1%,
-    ${colorSets.christmasGreen.stroke}
+    ${colorSets.red.stroke},
+    ${colorSets.red.hit.fill} 49.9%,
+    ${colorSets.blue.hit.fill} 50.1%,
+    ${colorSets.blue.stroke}
   );
   display: flex;
   align-items: center;
