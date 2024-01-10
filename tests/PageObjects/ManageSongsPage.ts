@@ -6,4 +6,8 @@ export class ManageSongsPagePO {
   public async goToEditSongs() {
     await this.page.getByTestId('edit-songs').click();
   }
+
+  public async goToSelectSongLanguage() {
+    await this.page.getByTestId('exclude-languages').click();
+  }
 }
