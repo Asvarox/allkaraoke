@@ -19,7 +19,6 @@ const song3 = 'e2e-multitrack-polish-1994';
 test('exclude languages from first start and menu', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.pause();
   await pages.inputSelectionPage.selectAdvancedSetup();
   await pages.advancedConnectionPage.saveAndGoToSing();
 
