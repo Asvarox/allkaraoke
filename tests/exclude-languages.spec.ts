@@ -24,7 +24,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
 
   await test.step('Exclude Polish', async () => {
     await pages.mainMenuPage.goToSingSong();
-    await pages.songLanguagesPage.unselectLanguage(language1); // turn off 'Polish'!
+    await pages.songLanguagesPage.unselectLanguage(language1);
     await pages.songLanguagesPage.continueAndGoToSongList();
     await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
     await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
@@ -32,7 +32,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
   });
 
   await test.step('Exclude English', async () => {
-    await page.keyboard.press('Backspace'); // Main menu
+    await page.keyboard.press('Backspace');
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
     await pages.songLanguagesPage.selectLanguage(language1);
@@ -45,7 +45,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
   });
 
   await test.step('Include all', async () => {
-    await page.keyboard.press('Backspace'); // Main menu
+    await page.keyboard.press('Backspace');
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
     await pages.songLanguagesPage.selectLanguage(language2);
@@ -57,7 +57,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
   });
 
   await test.step('exclude all', async () => {
-    await page.keyboard.press('Backspace'); // Main menu
+    await page.keyboard.press('Backspace');
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
     await pages.songLanguagesPage.unselectLanguage(language2);
