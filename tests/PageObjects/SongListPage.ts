@@ -27,4 +27,16 @@ export class SongListPagePO {
   public expectSelectedSongToBe(expectedSong: string) {
     return expect(this.songPreviewElement).toHaveAttribute('data-song', expectedSong);
   }
+
+  public get fullscreenElement() {
+    return this.page.locator('[data-test="toggle-fullscreen"] svg');
+  }
+
+  public async expectFullscreenIsOff() {
+    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
+  }
+
+  public async expectFullscreenIsOn() {
+    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenExitIcon');
+  }
 }
