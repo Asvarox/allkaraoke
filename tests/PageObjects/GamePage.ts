@@ -22,11 +22,15 @@ export class GamePagePO {
     return this.playersScoreElement.getAttribute('data-score');
   }
 
-  public async waitForPlayersScoreToBeGreaterThan() {
+  public async waitForPlayersScoreToBeGreaterThan(expected: number) {
     await expect(async () => {
       const p1score = await this.currentPlayersScore;
 
-      expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
+      expect(parseInt(p1score!, 10)).toBeGreaterThan(expected);
     }).toPass({ timeout: 15_000 });
+  }
+
+  public async expectPlayersScoreToBe(expected: number) {
+    await expect(this.playersScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
   }
 }

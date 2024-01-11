@@ -24,9 +24,9 @@ test('should restart the song and the scores', async ({ page }) => {
   await page.keyboard.press('Enter');
   await pages.songPreviewPage.goNext();
   await pages.songPreviewPage.playTheSong();
-  await pages.gamePage.waitForPlayersScoreToBeGreaterThan();
+  await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
 
   await page.keyboard.press('Backspace');
   await pages.gamePage.restartSong();
-  await expect(pages.gamePage.playersScoreElement).toHaveAttribute('data-score', '0', { timeout: 15_000 });
+  await pages.gamePage.expectPlayersScoreToBe(0);
 });
