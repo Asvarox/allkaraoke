@@ -65,7 +65,11 @@ export const BackgroundMusicSetting = new Setting<ValuesType<typeof BackgroundMu
 );
 
 export const ChristmasModeSetting = new Setting<boolean>('ChristmasModeSetting', false, 'memory');
-export const AutoEnableFullscreenSetting = new Setting<boolean>('AutoEnableFullscreenSetting', true, 'session');
+export const AutoEnableFullscreenSetting = new Setting<boolean>(
+  'AutoEnableFullscreenSetting',
+  true,
+  process.env.NODE_ENV === 'development' ? 'local' : 'session',
+);
 
 export function useSettingValue<T>(value: Setting<T>) {
   const [currentValue, setCurrentValue] = useState(value.get());

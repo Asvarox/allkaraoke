@@ -6,7 +6,7 @@ export default function useFullscreen() {
 
   useEffect(() => {
     try {
-      if (autoEnableFullscreen && process.env.NODE_ENV !== 'development') {
+      if (autoEnableFullscreen) {
         document.body.requestFullscreen().catch(console.info);
       }
     } catch (e) {}
