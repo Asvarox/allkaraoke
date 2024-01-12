@@ -25,6 +25,7 @@ function FullscreenButton() {
   return (
     <Tooltip title="Toggle fullscreen">
       <IconButton
+        data-test="toggle-fullscreen"
         size="small"
         onClick={async () => {
           try {
