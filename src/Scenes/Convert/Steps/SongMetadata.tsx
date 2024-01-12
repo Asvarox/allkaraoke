@@ -71,6 +71,7 @@ export default function SongMetadata(props: Props) {
     );
   };
   const isSearchableForVideo = !!props.songTitle && !!props.songArtist;
+  const isRealBpmInvalid = +(props.data?.realBpm ?? 0) > 200;
 
   return (
     <Grid container spacing={2} sx={{ mt: 6 }}>
@@ -194,7 +195,17 @@ export default function SongMetadata(props: Props) {
           value={props.data.realBpm}
           onChange={(e) => props.onChange({ ...props.data, realBpm: e.target.value })}
           label="Song (real) BPM"
-          helperText="The actual tempo of the song. Click the 'Lookup' button to look for it on Google"
+          focused={isRealBpmInvalid ? true : undefined}
+          helperText={
+            isRealBpmInvalid ? (
+              <>
+                Usually songs don't have higher BPM than <b>200</b>. Make sure the value is correct
+              </>
+            ) : (
+              "The actual tempo of the song. Click the 'Lookup' button to look for it on Google"
+            )
+          }
+          color={isRealBpmInvalid ? 'warning' : undefined}
           fullWidth
           type="number"
           size="small"
