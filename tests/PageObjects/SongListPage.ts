@@ -32,11 +32,11 @@ export class SongListPagePO {
     return this.page.locator('[data-test="toggle-fullscreen"] svg');
   }
 
-  public async expectFullscreenIsOff() {
+  public async expectFullscreenToBeOff() {
     await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
   }
 
-  public async expectFullscreenIsOn() {
+  public async expectFullscreenToBeOn() {
     await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenExitIcon');
   }
 }

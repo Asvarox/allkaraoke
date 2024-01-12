@@ -35,7 +35,7 @@ export class MainMenuPagePO {
     await this.fullscreenElement.click();
   }
 
-  public async expectFullscreenIsOff() {
+  public async expectFullscreenToBeOff() {
     await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
   }
 }
