@@ -83,7 +83,7 @@ export default function SongList(props: Props) {
       <NormalizeFontSize />
       <Grid container>
         <Grid item xs={3}>
-          <Link to="">
+          <Link to="menu">
             <a data-test="main-menu-link">Return to main menu</a>
           </Link>
         </Grid>

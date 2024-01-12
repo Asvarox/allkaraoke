@@ -6,6 +6,7 @@ import Logo from 'Elements/Logo';
 import { DesktopOnly, MobileOnly } from 'Elements/RWD';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
 import Background from 'Scenes/LandingPage/Background';
+import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import Typewriter from 'typewriter-effect';
@@ -15,7 +16,8 @@ import screenshot2 from './screenshot2.webp';
 import songStats from './songStats.json';
 
 function LandingPage() {
-  const navigate = useSmoothNavigate();
+  const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
+  const smoothNavigate = useSmoothNavigate();
   useBackground(true);
 
   return (
@@ -30,7 +32,10 @@ function LandingPage() {
           </LogoContainer>
         </DesktopOnly>
         <DesktopOnly>
-          <PlayButton onClick={() => navigate('quick-setup')} data-test="enter-the-game" focused>
+          <PlayButton
+            onClick={() => smoothNavigate(setupPreference === null ? 'quick-setup' : 'menu')}
+            data-test="enter-the-game"
+            focused>
             Enter the game
           </PlayButton>
         </DesktopOnly>
@@ -86,15 +91,15 @@ function LandingPage() {
         </Stats>
         <JoinExistingTip>
           Using this device as remote microphone?
-          <button onClick={() => navigate('remote-mic')} data-test="join-existing-game">
+          <button onClick={() => smoothNavigate('remote-mic')} data-test="join-existing-game">
             Join existing game
           </button>
         </JoinExistingTip>
         <MobileButtonsContainer>
-          <PlayButton onClick={() => navigate('remote-mic')} data-test="join-existing-game" focused>
+          <PlayButton onClick={() => smoothNavigate('remote-mic')} data-test="join-existing-game" focused>
             Join game (with <strong>Game Code</strong>)
           </PlayButton>
-          <PlayButton onClick={() => navigate('quick-setup')} data-test="enter-the-game">
+          <PlayButton onClick={() => smoothNavigate('quick-setup')} data-test="enter-the-game">
             Start new game
           </PlayButton>
         </MobileButtonsContainer>

@@ -11,7 +11,7 @@ function SelectInput(props: Props) {
 
   return (
     <MenuWithLogo>
-      <SelectInputView onFinish={() => navigate('')} closeButtonText={'Go to main menu'} />
+      <SelectInputView onFinish={() => navigate('menu')} closeButtonText={'Go to main menu'} />
     </MenuWithLogo>
   );
 }

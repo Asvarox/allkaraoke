@@ -9,7 +9,7 @@ interface Props {}
 
 function ManageSongs(props: Props) {
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('');
+  const goBack = () => navigate('menu');
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 

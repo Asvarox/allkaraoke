@@ -163,7 +163,7 @@ export default function ConvertView({ song }: Props) {
       <Container>
         {!isEdit && (
           <div style={{ marginBottom: '1rem' }}>
-            <Link to="">
+            <Link to="menu">
               <a>Return to the main menu</a>
             </Link>
           </div>
