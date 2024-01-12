@@ -8,6 +8,7 @@ import { LandingPagePO } from './LandingPage';
 import { MainMenuPagePO } from './MainMenuPage';
 import { ManageSongsPagePO } from './ManageSongsPage';
 import { PostGamePO } from './PostGame';
+import { RemoteMicMainPagePO } from './RemoteMic/RemoteMicMainPage';
 import { SmartphonesConnectionPagePO } from './SmartphonesConnectionPage';
 import { SongEditingPagePO } from './SongEditingPage';
 import { SongLanguagesPagePO } from './SongLanguagesPage';
@@ -30,5 +31,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     gamePage: new GamePagePO(page, context, browser),
     postGame: new PostGamePO(page, context, browser),
     jukebox: new JukeboxPagePO(page, context, browser),
+    remoteMicMainPage: new RemoteMicMainPagePO(page, context, browser),
   };
 }

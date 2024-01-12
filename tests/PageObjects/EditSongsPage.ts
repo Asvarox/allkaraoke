@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class EditSongsPagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
@@ -10,6 +10,10 @@ export class EditSongsPagePO {
   public async hideSong(songName: string, songID: string) {
     await this.searchSongs(songName);
     await this.page.locator(`[data-test="hide-song"][data-song="${songID}"]`).click();
+  }
+
+  public async expectHideSongNotToBeVisible(songID: string) {
+    await expect(this.page.locator(`[data-test="hide-song"][data-song="${songID}"]`)).not.toBeVisible();
   }
 
   public async restoreSong(songName: string, songID: string) {
@@ -24,5 +28,18 @@ export class EditSongsPagePO {
 
   public async goToMainMenu() {
     await this.page.getByTestId('main-menu-link').click();
+  }
+
+  public async goToImportUltrastar() {
+    await this.page.getByTestId('convert-song').click();
+  }
+
+  public async disagreeToShareAddSongs() {
+    await this.page.getByTestId('share-songs-disagree').click();
+  }
+
+  public async expectSongToBeVisible(songName: string, songID: string) {
+    await this.searchSongs(songName);
+    await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
   }
 }

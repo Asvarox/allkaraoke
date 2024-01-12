@@ -19,6 +19,10 @@ export class SongEditingPagePO {
     return this.page.locator('[data-test="video-url"] input');
   }
 
+  public async enterVideoURL(videoUrl: string) {
+    await this.videoUrlInput.fill(videoUrl);
+  }
+
   public async goNext() {
     await this.page.getByTestId('next-button').click();
   }
@@ -37,5 +41,17 @@ export class SongEditingPagePO {
 
   public get bpmSongInput() {
     return this.page.locator('[data-test="song-bpm"] input');
+  }
+
+  public get txtInput() {
+    return this.page.getByTestId('input-txt');
+  }
+
+  public async enterSongTXT(txtFile: string) {
+    await this.txtInput.fill(txtFile);
+  }
+
+  public async saveChanges() {
+    await this.page.getByTestId('save-button').click();
   }
 }
