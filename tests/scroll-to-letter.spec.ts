@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { test } from '@playwright/test';
 
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockRandom, mockSongs } from './helpers';
@@ -16,11 +16,9 @@ const groupName = 'Z';
 test('Scrolling to letter works', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await pages.songListPage.goToGroupNavigation(groupName);
-
-  await expect(page.locator(`[data-group-letter=${groupName}]`)).toBeInViewport();
+  await pages.songListPage.expectGroupToBeInViewport(groupName);
 });
