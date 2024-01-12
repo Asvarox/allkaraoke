@@ -1834,6 +1834,34 @@
     "local": false
   },
   {
+    "id": "anastacia-left-outside-alone",
+    "title": "Left Outside Alone",
+    "artist": "Anastacia",
+    "video": "uzR5jM9UeJA",
+    "language": "English",
+    "bpm": 340,
+    "bar": 4,
+    "gap": 1665.2941176470588,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.274Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 102,
+    "volume": 0.74,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anastacialeftoutsidealone",
+    "local": false
+  },
+  {
     "id": "andrzej-zaucha-gumisie",
     "title": "Gumisie",
     "artist": "Andrzej Zaucha",
@@ -1948,6 +1976,33 @@
     ],
     "tracksCount": 1,
     "search": "aniadabrowskanigdywiecejnietanczzemna",
+    "local": false
+  },
+  {
+    "id": "anitta-boys-dont-cry",
+    "title": "Boys Don’t Cry",
+    "artist": "Anitta",
+    "video": "PkzJgGZBFDg",
+    "language": "English",
+    "bpm": 328.07,
+    "bar": 4,
+    "gap": 13354.117109153534,
+    "year": "2022",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-01-12T06:24:15.498Z",
+    "videoGap": 0,
+    "realBpm": 164,
+    "volume": 0.65,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anittaboysdontcry",
     "local": false
   },
   {
@@ -2429,6 +2484,34 @@
     "local": false
   },
   {
+    "id": "ariana-grande-daydreamin",
+    "title": "Daydreamin’",
+    "artist": "Ariana Grande",
+    "video": "eLQMGYHVJ_I",
+    "language": "English",
+    "bpm": 364.48,
+    "bar": 4,
+    "gap": 6532.291483757683,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.643Z",
+    "genre": "Pop, R&B",
+    "videoGap": 0,
+    "realBpm": 114,
+    "volume": 0.69,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandedaydreamin",
+    "local": false
+  },
+  {
     "id": "ariana-grande-everytime",
     "title": "everytime",
     "artist": "Ariana Grande",
@@ -2620,6 +2703,34 @@
     ],
     "tracksCount": 1,
     "search": "arianagrandegreedy",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-honeymoon-avenue",
+    "title": "Honeymoon Avenue",
+    "artist": "Ariana Grande",
+    "video": "_tJM74eZy04",
+    "language": "English",
+    "bpm": 320,
+    "bar": 4,
+    "gap": 14755.625,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.645Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.66,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandehoneymoonavenue",
     "local": false
   },
   {
@@ -2844,6 +2955,34 @@
     "local": false
   },
   {
+    "id": "ariana-grande-only-1",
+    "title": "Only 1",
+    "artist": "Ariana Grande",
+    "video": "qukswgSkkzc",
+    "language": "English",
+    "bpm": 202.96,
+    "bar": 4,
+    "gap": -33.437130469057934,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.646Z",
+    "genre": "Pop, Hip-Hop",
+    "videoGap": 0,
+    "realBpm": 101,
+    "volume": 0.63,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandeonly1",
+    "local": false
+  },
+  {
     "id": "ariana-grande-positions",
     "title": "Positions",
     "artist": "Ariana Grande",
@@ -2897,6 +3036,34 @@
     ],
     "tracksCount": 1,
     "search": "arianagrandesantatellme",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-tattooed-heart",
+    "title": "Tattooed Heart",
+    "artist": "Ariana Grande",
+    "video": "H6DeIBK0yuc",
+    "language": "English",
+    "bpm": 400,
+    "bar": 4,
+    "gap": 3157.5,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.648Z",
+    "genre": "Pop, R&B",
+    "videoGap": 0,
+    "realBpm": 72,
+    "volume": 0.74,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandetattooedheart",
     "local": false
   },
   {
@@ -4376,6 +4543,87 @@
     ],
     "tracksCount": 1,
     "search": "belanovarosapastel",
+    "local": false
+  },
+  {
+    "id": "belinda-boba-nina-nice",
+    "title": "Boba niña nice",
+    "artist": "Belinda",
+    "video": "g0_pUybrC5E",
+    "language": "Spanish",
+    "bpm": 284,
+    "bar": 4,
+    "gap": 6862.478873239436,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.650Z",
+    "videoGap": 0,
+    "realBpm": 141,
+    "volume": 0.88,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "belindabobaninanice",
+    "local": false
+  },
+  {
+    "id": "belinda-lo-siento",
+    "title": "Lo siento",
+    "artist": "Belinda",
+    "video": "Y4MdFzbkZh4",
+    "language": "Spanish",
+    "bpm": 200,
+    "bar": 4,
+    "gap": 23461,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.799Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.74,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "belindalosiento",
+    "local": false
+  },
+  {
+    "id": "belinda-pitbull-egoista",
+    "title": "Egoísta",
+    "artist": "Belinda & Pitbull",
+    "video": "S88LJBJhvwo",
+    "language": "Spanish",
+    "bpm": 250.1,
+    "bar": 4,
+    "gap": 8396.407836865254,
+    "year": "2010",
+    "lastUpdate": "2024-01-12T06:24:15.801Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.96,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "belindapitbullegoista",
     "local": false
   },
   {
@@ -15313,6 +15561,35 @@
     "local": false
   },
   {
+    "id": "hilary-duff-what-dreams-are-made-of",
+    "title": "What Dreams Are Made Of",
+    "artist": "Hilary Duff",
+    "video": "o-0XPVNAHrQ",
+    "language": "English",
+    "bpm": 253.8,
+    "bar": 4,
+    "gap": 975.2718676122931,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.943Z",
+    "videoGap": 0,
+    "realBpm": 126,
+    "previewStart": 115,
+    "previewEnd": 145,
+    "volume": 0.91,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hilaryduffwhatdreamsaremadeof",
+    "local": false
+  },
+  {
     "id": "hillsong-united-oceans-where-feet-may-fail",
     "title": "Oceans (Where Feet May Fail)",
     "artist": "Hillsong United",
@@ -25607,6 +25884,33 @@
     "local": false
   },
   {
+    "id": "nick-jonas-jealous",
+    "title": "Jealous",
+    "artist": "Nick Jonas",
+    "video": "yw04QD1LaB0",
+    "language": "English",
+    "bpm": 372.12,
+    "bar": 4,
+    "gap": 5532.2605611093195,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:15.946Z",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.65,
+    "author": "amro98",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickjonasjealous",
+    "local": false
+  },
+  {
     "id": "nickelback-hero",
     "title": "Hero",
     "artist": "Nickelback",
@@ -33265,6 +33569,33 @@
     "local": false
   },
   {
+    "id": "sza-kill-bill",
+    "title": "Kill Bill",
+    "artist": "SZA",
+    "video": "MSRcC626prw",
+    "language": "English",
+    "bpm": 367,
+    "bar": 4,
+    "gap": 71109.0735694823,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-12T06:24:16.093Z",
+    "videoGap": 59,
+    "realBpm": 89,
+    "volume": 0.77,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "szakillbill",
+    "local": false
+  },
+  {
     "id": "szanty-morskie-opowiesci",
     "title": "Morskie Opowieści",
     "artist": "Szanty",
@@ -35472,6 +35803,33 @@
     "local": false
   },
   {
+    "id": "the-weeknd-call-out-my-name",
+    "title": "Call Out My Name",
+    "artist": "The Weeknd",
+    "video": "M4ZoCHID9GI",
+    "language": "English",
+    "bpm": 396.93,
+    "bar": 4,
+    "gap": 13047.458997808179,
+    "year": "2018",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-01-12T06:24:16.240Z",
+    "videoGap": 0,
+    "realBpm": 134,
+    "volume": 0.69,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndcalloutmyname",
+    "local": false
+  },
+  {
     "id": "the-weeknd-cant-feel-my-face",
     "title": "Can't Feel My Face",
     "artist": "The Weeknd",
@@ -35496,6 +35854,36 @@
     ],
     "tracksCount": 1,
     "search": "theweekndcantfeelmyface",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-feat-ariana-grande-save-your-tears",
+    "title": "Save Your Tears",
+    "artist": "The Weeknd feat. Ariana Grande",
+    "video": "LIIDh-qI9oI",
+    "language": "English",
+    "bpm": 236,
+    "bar": 4,
+    "gap": 18263.050847457627,
+    "year": "2020",
+    "lastUpdate": "2024-01-12T06:24:16.242Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.69,
+    "author": "DoubleDee73",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      },
+      {
+        "start": 376
+      }
+    ],
+    "tracksCount": 2,
+    "search": "theweekndfeatarianagrandesaveyourtears",
     "local": false
   },
   {
@@ -36289,6 +36677,36 @@
     ],
     "tracksCount": 1,
     "search": "tomaszkarolakzabioreciewlasnietam",
+    "local": false
+  },
+  {
+    "id": "tommy-february6-everyday-at-the-bus-stop",
+    "title": "Everyday at the Bus Stop",
+    "artist": "Tommy february6",
+    "video": "xY5yazcNpCI",
+    "language": [
+      "Japanese",
+      "English"
+    ],
+    "bpm": 244,
+    "bar": 4,
+    "gap": -66.80327868852459,
+    "year": "2001",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-01-12T06:24:16.389Z",
+    "videoGap": 0,
+    "realBpm": 122,
+    "volume": 0.94,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tommyfebruary6everydayatthebusstop",
     "local": false
   },
   {
