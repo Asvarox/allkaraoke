@@ -178,8 +178,8 @@ const Disclaimer = styled.h4`
 
 const Check = styled.div`
   svg {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
 `;
 
@@ -208,13 +208,13 @@ const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
   bottom: 0;
   right: 0;
   img {
-    width: 17rem;
-    height: 10rem;
+    width: 14rem;
+    height: 8rem;
     object-fit: cover;
   }
   overflow: hidden;
-  width: 17rem;
-  height: 10rem;
+  width: 14rem;
+  height: 8rem;
 `;
 
 const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }>`
@@ -230,9 +230,10 @@ const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }
   display: flex;
   align-items: center;
   gap: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-left: 3rem;
   margin: 0;
+  height: 8rem;
 
   position: relative;
 
