@@ -9,6 +9,7 @@ import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import dayjs from 'dayjs';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import { buildUrl } from 'hooks/useSmoothNavigate';
 import { SongPreview } from 'interfaces';
 import { MRT_ColumnDef, MaterialReactTable } from 'material-react-table';
 import { useMemo } from 'react';
@@ -109,7 +110,7 @@ export default function SongList(props: Props) {
           <>
             <IconButton
               title="Edit the song"
-              href={`edit/${encodeURIComponent(row.original.id)}`}
+              href={buildUrl(`song`, { song: row.original.id })}
               data-test="edit-song"
               data-song={row.original.id}>
               <EditIcon />

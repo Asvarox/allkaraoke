@@ -10,11 +10,8 @@ import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/Microphone/ConfirmReadiness';
 import RemoteSettings from 'Scenes/RemoteMic/Panels/RemoteSettings';
 import RemoteSongList from 'Scenes/RemoteMic/Panels/RemoteSongList';
+import useQueryParam from 'hooks/useQueryParam';
 import { useLayoutEffect, useState } from 'react';
-
-interface Props {
-  roomId: string | undefined;
-}
 
 const noSleep = new NoSleep();
 
@@ -22,7 +19,8 @@ export type ConnectionStatuses = Parameters<typeof events.karaokeConnectionStatu
 
 export type PhoneTabs = 'microphone' | 'song-list' | 'settings';
 
-function RemoteMic({ roomId }: Props) {
+function RemoteMic() {
+  const roomId = useQueryParam('room');
   const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
   useLayoutEffect(() => {
     if (style === 'christmas') {

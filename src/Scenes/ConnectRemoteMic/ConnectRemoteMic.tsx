@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { focused, typography } from 'Elements/cssMixins';
 import RemoteMicServer from 'RemoteMic/Network/Server';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import useQueryParam from 'hooks/useQueryParam';
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect } from 'react';
 import { useRoute } from 'wouter';
@@ -20,9 +21,11 @@ function RoomCode({ gameCode, ...props }: { gameCode: string }) {
 
 function ConnectRemoteMic() {
   // Validate if the component is rendered in a remote mic or in the "main" game via the URL
-  const [match, params] = useRoute<{ gameCode: string }>('remote-mic/:gameCode');
-  const gameCode = match ? params.gameCode : RemoteMicServer.getGameCode();
-  linkObject.pathname = `${import.meta.env.BASE_URL}remote-mic/${gameCode}`;
+  const [match] = useRoute('remote-mic');
+  const gameCode = useQueryParam('room') ?? RemoteMicServer.getGameCode();
+  linkObject.pathname = `${import.meta.env.BASE_URL}remote-mic`;
+  linkObject.searchParams.set('room', gameCode);
+
   const link = linkObject.href;
 
   useEffect(() => {

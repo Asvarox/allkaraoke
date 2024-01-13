@@ -16,7 +16,7 @@ import { useState } from 'react';
 import isDev from 'utils/isDev';
 
 interface Props {
-  roomId: string | undefined;
+  roomId: string | null;
   connectionStatus: ConnectionStatuses;
   connectionError?: transportErrorReason;
   isKeepAwakeOn: boolean;

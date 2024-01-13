@@ -15,7 +15,7 @@ import { FormEventHandler, useEffect, useRef, useState } from 'react';
 import createPersistedState from 'use-persisted-state';
 
 interface Props {
-  roomId: string | undefined;
+  roomId: string | null;
   isVisible: boolean;
   connectionStatus: ConnectionStatuses;
   onConnect: (silent: boolean) => void;
@@ -36,7 +36,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
 
   useEffect(() => {
     if (connectionStatus === 'connected' && !roomId) {
-      navigate(`remote-mic/${customRoomId}`);
+      navigate(`remote-mic/`, { room: customRoomId });
     }
   }, [connectionStatus, roomId, customRoomId]);
 
@@ -91,7 +91,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
         }}
       />
       <Form onSubmit={handleConnect}>
-        {roomId === undefined && (
+        {!roomId && (
           <GCInput
             ref={firstInputRef}
             placeholder="_____"

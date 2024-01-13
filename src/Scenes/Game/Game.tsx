@@ -2,21 +2,19 @@ import CameraManager from 'Camera/CameraManager';
 import SingASong from 'Scenes/SingASong/SingASong';
 import { woosh } from 'SoundManager';
 import useFullscreen from 'hooks/useFullscreen';
+import useQueryParam from 'hooks/useQueryParam';
 import { SingSetup, SongPreview } from 'interfaces';
 import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import startViewTransition from 'utils/startViewTransition';
 import Singing from './Singing/Singing';
 
-interface Props {
-  songId?: string;
-}
+function Game() {
+  const songId = useQueryParam('song');
 
-function Game(props: Props) {
   const [singSetup, setSingSetup] = useState<(SingSetup & { song: SongPreview }) | null>(null);
-  const [preselectedSong, setPreselectedSong] = useState<string | null>(props.songId ?? null);
+  const [preselectedSong, setPreselectedSong] = useState<string | null>(songId ?? null);
   const [resetKey, setResetKey] = useState(0);
-
   const handleSelect = (setup: SingSetup & { song: SongPreview }) => {
     // @ts-expect-error
     document.getElementById('preview-video-container')!.style.viewTransitionName = 'song-preview-video';

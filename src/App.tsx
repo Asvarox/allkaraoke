@@ -66,23 +66,21 @@ function App() {
                 <Route path="menu" component={Welcome} />
                 <Route path="exclude-languages" component={ExcludeLanguages} />
                 <Route path="jukebox" component={Jukebox} />
-                <Route path="game/:songId?">
-                  {({ songId }) => (
-                    <Suspense fallback={<PageLoader />}>
-                      <LazyGame songId={songId ? decodeURIComponent(songId) : undefined} />
-                    </Suspense>
-                  )}
+                <Route path="game">
+                  <Suspense fallback={<PageLoader />}>
+                    <LazyGame />
+                  </Suspense>
                 </Route>
                 <Route path="select-input" component={SelectInput} />
                 <Route path="settings" component={Settings} />
                 <Route path="settings/remote-mics" component={RemoteMicSettings} />
-                <Route path="remote-mic/:roomId?">{({ roomId }) => <RemoteMic roomId={roomId} />}</Route>
+                <Route path="remote-mic" component={RemoteMic} />
                 <Route path="social-media-elements" component={SocialMediaElements} />
                 <Route path="manage-songs" component={ManageSongs} />
               </GameScreens>
               <Route path="convert" component={() => <Convert />} />
               <Route
-                path="edit"
+                path="edit/list"
                 component={() => (
                   <Suspense fallback={<PageLoader />}>
                     <LazySongList />
@@ -90,7 +88,9 @@ function App() {
                 )}
               />
               <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
-              <Route path="edit/:songId">{({ songId }) => <Edit songId={songId!} />}</Route>
+              <Route path="edit/song">
+                <Edit />
+              </Route>
             </Router>
           </KeyboardHelpProvider>
         </LayoutWithBackgroundProvider>

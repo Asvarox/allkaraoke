@@ -26,8 +26,8 @@ function ManageSongs(props: Props) {
           Select Song Languages
         </MenuButton>
       </Link>
-      <Link href="edit" onClick={handleClick('edit')}>
-        <MenuButton {...register('edit-songs', () => navigate('edit'))}>Edit songs</MenuButton>
+      <Link href="edit/list" onClick={handleClick('edit/list')}>
+        <MenuButton {...register('edit-songs', () => navigate('edit/list'))}>Edit songs</MenuButton>
       </Link>
       <Link href="convert" onClick={handleClick('convert')}>
         <MenuButton {...register('convert-song', () => navigate('convert'))}>Convert UltraStar .txt</MenuButton>
