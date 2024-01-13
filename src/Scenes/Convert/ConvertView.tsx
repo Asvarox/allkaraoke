@@ -199,7 +199,7 @@ export default function ConvertView({ song }: Props) {
               if (!isEdit) {
                 shareSong(finalSong!.id);
               }
-              navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? '' : null, song: null });
+              navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
             }
           }}>
           {steps.at(currentStep) === 'basic-data' && (

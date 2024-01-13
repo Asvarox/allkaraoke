@@ -16,34 +16,44 @@ export const txtTypesMap: Record<ValuesType<typeof typesMap>, keyof typeof types
   normal: ':',
 };
 
-export type SongTXTKeys =
-  | 'ID'
-  | 'TRACKNAMES'
-  | 'YEAR'
-  | 'LASTUPDATE'
-  | 'EDITION'
-  | 'GENRE'
-  | 'LANGUAGE'
-  | 'VIDEOGAP'
-  | 'REALBPM'
-  | 'PREVIEWSTART'
-  | 'PREVIEWEND'
-  | 'VOLUME'
-  | 'CREATOR'
-  | 'CREATORURL'
-  | 'SOURCEURL'
-  | 'TITLE'
-  | 'ARTIST'
-  | 'ARTISTORIGIN'
-  | 'BPM'
-  | 'GAP'
-  | 'VIDEOID'
-  | 'VIDEO'; // #VIDEO is used on https://usdb.animux.de
+export const songTXTKeys = [
+  'ID',
+  'TRACKNAMES',
+  'YEAR',
+  'LASTUPDATE',
+  'EDITION',
+  'GENRE',
+  'LANGUAGE',
+  'VIDEOGAP',
+  'REALBPM',
+  'PREVIEWSTART',
+  'PREVIEWEND',
+  'VOLUME',
+  'CREATOR',
+  'CREATORURL',
+  'SOURCEURL',
+  'TITLE',
+  'ARTIST',
+  'ARTISTORIGIN',
+  'BPM',
+  'GAP',
+  'VIDEOID',
+] as const;
 
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'string'): string | undefined;
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'array'): string[] | undefined;
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type?: 'number'): number | undefined;
-function getPropertyValueFromTxt(txt: string, key: SongTXTKeys, type: 'string' | 'number' | 'array' = 'string') {
+export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO';
+
+function getUnknownProps(txt: string) {
+  return txt
+    .split('\n')
+    .filter(
+      (line) => line.startsWith('#') && !(songTXTKeys as unknown as string[]).includes(line.substring(1).split(':')[0]),
+    );
+}
+
+function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type?: 'string'): string | undefined;
+function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type?: 'array'): string[] | undefined;
+function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type?: 'number'): number | undefined;
+function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type: 'string' | 'number' | 'array' = 'string') {
   const regex = new RegExp(`#${key}\\:(.*)`);
 
   const value = txt.match(regex)?.[1];
@@ -104,8 +114,7 @@ export default function convertTxtToSong(
     author: getPropertyValueFromTxt(text, 'CREATOR') ?? author,
     authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
     sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,
-    // todo upgrade eslint and use `satisfies` instead of `as`
-  } as ExtractOptional<Song>;
+  } satisfies ExtractOptional<Song>;
 
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
   const title = getPropertyValueFromTxt(text, 'TITLE') ?? '';
@@ -123,6 +132,7 @@ export default function convertTxtToSong(
     gap: Number(getPropertyValueFromTxt(text, 'GAP')?.replace(',', '.') ?? 0),
     ...additionalData,
     tracks: [],
+    unsupportedProps: getUnknownProps(text),
   };
 
   // Either ID is entered or try to parse link
@@ -175,7 +185,7 @@ export default function convertTxtToSong(
       const [type, start, length, pitch, ...lyrics] = split;
 
       (lastSection as NotesSection).notes.push({
-        type: typesMap[type as 'R' | '*' | ':'] ?? 'normal',
+        type: typesMap[type as keyof typeof typesMap] ?? 'normal',
         start: Number(start),
         length: Number(length),
         pitch: Number(pitch),

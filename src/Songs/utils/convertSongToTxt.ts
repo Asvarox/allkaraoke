@@ -1,8 +1,8 @@
 import { Note, Song } from 'interfaces';
-import { SongTXTKeys, txtTypesMap } from './convertTxtToSong';
+import { knownSongTxtKeys, txtTypesMap } from './convertTxtToSong';
 import isNotesSection from './isNotesSection';
 
-function toTxtValue(key: SongTXTKeys, value: string | string[] | number | undefined) {
+function toTxtValue(key: knownSongTxtKeys, value: string | string[] | number | undefined) {
   if (value === undefined) return undefined;
   return `#${key}:${
     typeof value === 'number' ? value.toString(10).replace('.', ',') : Array.isArray(value) ? value.join(', ') : value
@@ -13,7 +13,7 @@ const notesToText = (notes: Note[]) =>
   notes.map((note) => `${txtTypesMap[note.type]} ${note.start} ${note.length} ${note.pitch} ${note.lyrics}`).join('\n');
 
 export default function convertSongToTxt(song: Song) {
-  const parsedValues: Record<keyof Omit<Song, 'tracks' | 'bar'>, string | undefined> = {
+  const parsedValues: Record<keyof Omit<Song, 'tracks' | 'bar' | 'unsupportedProps'>, string | undefined> = {
     id: toTxtValue('ID', song.id),
     artist: toTxtValue('ARTIST', song.artist),
     artistOrigin: toTxtValue('ARTISTORIGIN', song.artistOrigin),
@@ -54,6 +54,7 @@ export default function convertSongToTxt(song: Song) {
 
   return Object.values(parsedValues)
     .concat(trackNames.filter(Boolean).length ? toTxtValue('TRACKNAMES', JSON.stringify(trackNames)) : [])
+    .concat(...(song.unsupportedProps ?? []))
     .concat(lines)
     .concat('E')
     .filter((value) => value !== undefined)

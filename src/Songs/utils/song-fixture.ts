@@ -22,6 +22,7 @@ export const mulitrack: Song = {
   previewEnd: undefined,
   volume: undefined,
   realBpm: 100,
+  unsupportedProps: ['#SOMEPROP: some value', '#SOMEPROP2: some value2'],
   tracks: [
     {
       sections: [
