@@ -13,7 +13,7 @@
 #VOLUME:0,96
 #GENRE:Rap
 #LANGUAGE:English
-#LASTUPDATE:2023-11-23T06:46:28.370Z
+#LASTUPDATE:2024-01-14T08:17:52.667Z
 #GAP:33350,78543220711
 F 23 3 0 Look 
 - 26 61
@@ -106,12 +106,12 @@ R 614 2 0 on
 R 617 2 0 the 
 R 621 3 0 sur
 R 625 2 0 face 
-R 629 2 0 he 
-R 632 2 0 looks 
-R 637 5 0 calm 
-R 644 4 0 and 
-R 650 2 0 rea
-R 653 2 0 dy 
+G 629 2 0 he
+G 632 2 0 looks
+G 637 5 0 calm
+G 644 4 0 and
+G 650 2 0 rea
+G 653 2 0 dy
 - 655
 R 657 2 0 To 
 R 661 4 0 drop 
@@ -230,7 +230,7 @@ R 1220 5 0 don’t
 R 1226 4 0 mat
 R 1231 2 0 ter, 
 R 1234 4 0 he’s 
-R 1239 3 0 dope 
+G 1239 3 0 dope
 - 1242
 R 1249 1 0 He 
 R 1251 4 0 knows 
@@ -777,8 +777,8 @@ R 3796 6 0 kept
 R 3803 6 0 rhy
 R 3810 1 0 min’ 
 R 3812 2 0 and 
-R 3817 5 0 stepped 
-R 3823 6 0 right 
+G 3817 5 0 stepped
+G 3823 6 0 right
 - 3829
 R 3830 1 0 In 
 R 3832 2 0 the 
@@ -1008,9 +1008,9 @@ R 4888 5 0 not
 R 4895 4 0 grow 
 R 4900 5 0 old 
 R 4907 3 0 in 
-R 4911 6 0 Sa
-R 4918 4 0 lem’s 
-R 4923 5 0 Lot 
+G 4911 6 0 Sa
+G 4918 4 0 lem’s
+G 4923 5 0 Lot
 - 4928
 R 4933 2 0 So 
 R 4936 2 0 here 
