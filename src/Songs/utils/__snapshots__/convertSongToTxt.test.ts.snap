@@ -13,8 +13,8 @@ exports[`convertSongToTxt > should properly convert the song 1`] = `
 #TRACKNAMES:[null,"test track 2"]
 #SOMEPROP: some value
 #SOMEPROP2: some value2
-: 5 10 9 Second 
-* 20 10 10 Third 
+G 5 10 9 Second 
+R 20 10 10 Third 
 - 40
 : 50 10 11 Fourth 
 : 80 10 9 Seventh 

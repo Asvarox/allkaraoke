@@ -1,4 +1,4 @@
-import { PlayerNote } from 'interfaces';
+import { Note, PlayerNote } from 'interfaces';
 import { SpriteNames } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/spriteMap';
 import drawSpriteWithStartAndEnd from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/spriteWithStartAndEnd';
 
@@ -21,6 +21,8 @@ const getSpriteName = (playerNumber: number, isHit: boolean, isPerfect: boolean,
   return spriteName as SpriteNames;
 };
 
+const starNoteTypes: Note['type'][] = ['star', 'rapstar'];
+
 export default function drawPlayerNote(
   ctx: CanvasRenderingContext2D,
   x: number,
@@ -30,7 +32,12 @@ export default function drawPlayerNote(
   isHit: boolean,
   playerNote: PlayerNote,
 ) {
-  const spriteName = getSpriteName(playerNumber, isHit, playerNote.isPerfect, playerNote.note.type === 'star');
+  const spriteName = getSpriteName(
+    playerNumber,
+    isHit,
+    playerNote.isPerfect,
+    starNoteTypes.includes(playerNote.note.type),
+  );
 
   drawSpriteWithStartAndEnd(ctx, spriteName, x, y, width);
 }

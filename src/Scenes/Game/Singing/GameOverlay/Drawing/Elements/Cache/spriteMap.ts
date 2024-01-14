@@ -154,6 +154,14 @@ const spriteMap = {
     padding: SHADOW_PAD,
     fragments: bigNoteFragments,
   },
+  noteRapstar: {
+    draw: (ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number) =>
+      drawRawNote(ctx, x, y, w, h, 'rapstar'),
+    width: BIG_NOTE_HEIGHT + 1,
+    height: BIG_NOTE_HEIGHT,
+    padding: SHADOW_PAD,
+    fragments: bigNoteFragments,
+  },
 };
 
 export type SpriteNames = keyof typeof spriteMap;

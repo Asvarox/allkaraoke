@@ -31,14 +31,14 @@ export const mulitrack: Song = {
           start: 0,
           notes: [
             {
-              type: 'normal',
+              type: 'rapstar',
               start: 5,
               length: 10,
               pitch: 9,
               lyrics: 'Second ',
             },
             {
-              type: 'star',
+              type: 'rap',
               start: 20,
               length: 10,
               pitch: 10,

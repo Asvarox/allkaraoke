@@ -7,6 +7,7 @@ export const typesMap = {
   F: 'freestyle',
   '*': 'star',
   ':': 'normal',
+  G: 'rapstar',
 } as const;
 
 export const txtTypesMap: Record<ValuesType<typeof typesMap>, keyof typeof typesMap> = {
@@ -14,6 +15,7 @@ export const txtTypesMap: Record<ValuesType<typeof typesMap>, keyof typeof types
   freestyle: 'F',
   star: '*',
   normal: ':',
+  rapstar: 'G',
 };
 
 export const songTXTKeys = [
