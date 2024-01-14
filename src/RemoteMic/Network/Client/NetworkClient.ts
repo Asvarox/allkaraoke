@@ -16,18 +16,11 @@ import {
 import sendMessage from 'RemoteMic/Network/sendMessage';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
+import { roundTo } from 'utils/roundTo';
 import storage from 'utils/storage';
 import { v4 } from 'uuid';
 
 export const MIC_ID_KEY = 'MIC_CLIENT_ID';
-
-const roundTo = (num: number, precision: number) => {
-  if (num === 0) return 0;
-
-  const multiplier = Math.pow(10, precision);
-
-  return Math.round(num * multiplier) / multiplier;
-};
 
 export type transportCloseReason = string;
 export type transportErrorReason = string;
