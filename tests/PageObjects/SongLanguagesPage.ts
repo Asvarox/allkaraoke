@@ -21,6 +21,14 @@ export class SongLanguagesPagePO {
     await this.getLanguageEntry(language).click();
   }
 
+  public async ensureSongLanguageIsSelected(language: string) {
+    const attributeValue = await this.getCheckbox(language).getAttribute('data-testid');
+
+    if (attributeValue === 'CheckBoxOutlineBlankIcon') {
+      await this.getLanguageEntry(language).click();
+    }
+  }
+
   public async continueAndGoToSongList() {
     await this.page.getByTestId('close-exclude-languages').click();
   }
