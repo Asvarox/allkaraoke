@@ -13,16 +13,19 @@ test('Help', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.skipToMainMenu();
-
   await expect(pages.mainMenuPage.singSongElement).toBeVisible();
-  await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
+  await pages.mainMenuPage.expectHelpContainerToBeVisible();
+
   await pages.mainMenuPage.helpContainerElement.click();
-  await expect(pages.mainMenuPage.helpContainerElement).not.toBeVisible();
+  await pages.mainMenuPage.expectHelpContainerToBeHidden();
+
   await page.reload();
   await expect(pages.mainMenuPage.singSongElement).toBeVisible();
-  await expect(pages.mainMenuPage.helpContainerElement).not.toBeVisible();
-  await pages.mainMenuPage.toggleHelpButton.click();
-  await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
+  await pages.mainMenuPage.expectHelpContainerToBeHidden();
+
+  await pages.mainMenuPage.toggleHelp();
+  await pages.mainMenuPage.expectHelpContainerToBeVisible();
+
   await page.keyboard.press('Shift+h'); // toggle help
-  await expect(pages.mainMenuPage.helpContainerElement).not.toBeVisible();
+  await pages.mainMenuPage.expectHelpContainerToBeHidden();
 });
