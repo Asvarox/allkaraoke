@@ -17,10 +17,8 @@ test.beforeEach(async ({ page, context, browser }) => {
 test.use({ serviceWorkers: 'block' });
 
 const P1_Name = 'E2E Test Blue';
-const songName = 'Last song';
 const songID = 'zzz-last-polish-1994';
 const videoURL = 'https://www.youtube.com/watch?v=8YKAHgwLEMg';
-const convertedSongName = 'test';
 const convertedSongID = 'convert-test';
 
 test('Remote mic song list', async ({ page, context, browserName }) => {
@@ -45,8 +43,8 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await pages.smartphonesConnectionPage.saveAndGoToSing();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
-    await pages.editSongsPage.hideSong(songName, songID);
-    await pages.editSongsPage.expectSongToBeHidden(songName, songID);
+    await pages.editSongsPage.hideSong(songID);
+    await pages.editSongsPage.expectSongToBeHidden(songID);
     await expect(remoteMic.getByTestId(songID)).not.toBeVisible();
   });
 
@@ -59,7 +57,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await pages.songEditingPage.goNext();
     await pages.songEditingPage.saveChanges();
     await pages.editSongsPage.disagreeToShareAddSongs();
-    await pages.editSongsPage.expectSongToBeVisible(convertedSongName, convertedSongID);
+    await pages.editSongsPage.expectSongToBeVisible(convertedSongID);
     await remoteMic.getByTestId('menu-song-list').click();
     await expect(remoteMic.getByTestId(convertedSongID)).toBeVisible();
   });

@@ -3,32 +3,32 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 export class EditSongsPagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
 
-  public async searchSongs(songName: string) {
-    await this.page.locator('[placeholder="Search"]').fill(songName);
+  public async searchSongs(songID: string) {
+    await this.page.locator('[placeholder="Search"]').fill(songID);
   }
 
-  public async hideSong(songName: string, songID: string) {
-    await this.searchSongs(songName);
+  public async hideSong(songID: string) {
+    await this.searchSongs(songID);
     await this.page.locator(`[data-test="hide-song"][data-song="${songID}"]`).click();
   }
 
-  public async expectSongToBeHidden(songName: string, songID: string) {
-    await this.searchSongs(songName);
+  public async expectSongToBeHidden(songID: string) {
+    await this.searchSongs(songID);
     await expect(this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`)).toBeVisible();
   }
 
-  public async restoreSong(songName: string, songID: string) {
-    await this.searchSongs(songName);
+  public async restoreSong(songID: string) {
+    await this.searchSongs(songID);
     await this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`).click();
   }
 
-  public async expectSongToBeVisible(songName: string, songID: string) {
-    await this.searchSongs(songName);
+  public async expectSongToBeVisible(songID: string) {
+    await this.searchSongs(songID);
     await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
   }
 
-  public async editSong(songName: string, songID: string) {
-    await this.searchSongs(songName);
+  public async editSong(songID: string) {
+    await this.searchSongs(songID);
     await this.page.locator(`[data-test="edit-song"][data-song="${songID}"]`).click();
   }
 

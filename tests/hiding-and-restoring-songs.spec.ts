@@ -10,7 +10,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const songName = 'New Christmas';
 const songID = 'e2e-christmas-english-1995';
 
 test('Hiding and restoring songs works', async ({ page }) => {
@@ -20,7 +19,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await pages.smartphonesConnectionPage.saveAndGoToSing();
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
-  await pages.editSongsPage.hideSong(songName, songID);
+  await pages.editSongsPage.hideSong(songID);
   await pages.editSongsPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
@@ -31,7 +30,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await page.goBack();
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
-  await pages.editSongsPage.restoreSong(songName, songID);
+  await pages.editSongsPage.restoreSong(songID);
   await pages.editSongsPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
 
