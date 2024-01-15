@@ -31,14 +31,6 @@ export class MainMenuPagePO {
     return this.page.getByTestId('help-container');
   }
 
-  public async expectHelpContainerToBeVisible() {
-    await expect(this.helpContainerElement).toHaveAttribute('data-collapsed', 'false');
-  }
-
-  public async expectHelpContainerToBeHidden() {
-    await expect(this.helpContainerElement).toHaveAttribute('data-collapsed', 'true');
-  }
-
   public get fullscreenElement() {
     return this.page.locator('[data-test="toggle-fullscreen"] svg');
   }

@@ -12,9 +12,9 @@ interface Props {
 
 export default function KeyboardHelpView({ help }: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const [isCollapsed, setIsVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
+  const [isVisible, setIsVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
 
-  useHotkeys('shift+h', () => setIsVisible(!isCollapsed), undefined, [isCollapsed]);
+  useHotkeys('shift+h', () => setIsVisible(!isVisible), undefined, [isVisible]);
 
   const helps = Object.entries(help ?? {}).filter(([, value]) => value !== undefined);
 
@@ -26,11 +26,9 @@ export default function KeyboardHelpView({ help }: Props) {
     <>
       <Container
         data-test="help-container"
-        onClick={() => setIsVisible(!isCollapsed)}
-        collapsed={!isCollapsed}
-        visible={!!helps.length}
-        data-collapsed={!isCollapsed}>
-        {isCollapsed && (
+        onClick={() => setIsVisible(!isVisible)}
+        visible={!!helps.length && isVisible}>
+        {isVisible && (
           <>
             <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
             {helps.map(([type, label]) => {
@@ -133,7 +131,7 @@ const UseKeyboardIndicator = styled.div`
   visibility: hidden;
 `;
 
-const Container = styled.div<{ collapsed: boolean; visible: boolean }>`
+const Container = styled.div<{ visible: boolean }>`
   position: fixed;
   top: 5rem;
   right: 0;
@@ -142,8 +140,7 @@ const Container = styled.div<{ collapsed: boolean; visible: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: ${(props) => (props.collapsed ? 'auto' : '34rem')};
-  opacity: ${(props) => (props.collapsed ? 0 : 1)};
+  width: 34rem;
   visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
   cursor: pointer;
   transform: scale(0.75);

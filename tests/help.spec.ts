@@ -14,18 +14,18 @@ test('Help', async ({ page }) => {
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.skipToMainMenu();
   await expect(pages.mainMenuPage.singSongElement).toBeVisible();
-  await pages.mainMenuPage.expectHelpContainerToBeVisible();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
 
   await pages.mainMenuPage.helpContainerElement.click();
-  await pages.mainMenuPage.expectHelpContainerToBeHidden();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
 
   await page.reload();
   await expect(pages.mainMenuPage.singSongElement).toBeVisible();
-  await pages.mainMenuPage.expectHelpContainerToBeHidden();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
 
   await pages.mainMenuPage.toggleHelp();
-  await pages.mainMenuPage.expectHelpContainerToBeVisible();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
 
   await page.keyboard.press('Shift+h'); // toggle help
-  await pages.mainMenuPage.expectHelpContainerToBeHidden();
+  await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
 });
