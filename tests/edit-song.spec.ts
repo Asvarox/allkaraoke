@@ -14,7 +14,6 @@ test.beforeEach(async ({ page, context, browser }) => {
 // Not disabling it globally so in case SW breaks the app it is caught by other tests
 test.use({ serviceWorkers: 'block' });
 
-const songName = 'E2E';
 const songID = 'e2e-single-english-1995';
 const expectedURL = 'sourceUrl';
 const expectedAuthorName = 'author';
@@ -30,7 +29,7 @@ test('Edit song', async ({ page }) => {
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
-  await pages.editSongsPage.editSong(songName, songID);
+  await pages.editSongsPage.editSong(songID);
 
   await expect(pages.songEditingPage.urlSourceInput).toHaveValue(expectedURL);
 
