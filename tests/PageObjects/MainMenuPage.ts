@@ -19,12 +19,24 @@ export class MainMenuPagePO {
     await this.page.getByTestId('manage-songs').click();
   }
 
-  public get toggleHelpButton() {
+  public get helpButton() {
     return this.page.getByTestId('toggle-help');
   }
 
+  public async toggleHelp() {
+    await this.helpButton.click();
+  }
+
   public get helpContainerElement() {
-    return this.page.getByText('Show/hide this help');
+    return this.page.getByTestId('help-container');
+  }
+
+  public async expectHelpContainerToBeVisible() {
+    await expect(this.helpContainerElement).toHaveAttribute('data-collapsed', 'false');
+  }
+
+  public async expectHelpContainerToBeHidden() {
+    await expect(this.helpContainerElement).toHaveAttribute('data-collapsed', 'true');
   }
 
   public get fullscreenElement() {
