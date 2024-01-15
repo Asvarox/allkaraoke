@@ -46,7 +46,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
     await pages.editSongsPage.hideSong(songName, songID);
-    await pages.editSongsPage.expectHideSongNotToBeVisible(songID);
+    await pages.editSongsPage.expectSongToBeHidden(songName, songID);
     await expect(remoteMic.getByTestId(songID)).not.toBeVisible();
   });
 

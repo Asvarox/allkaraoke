@@ -12,13 +12,19 @@ export class EditSongsPagePO {
     await this.page.locator(`[data-test="hide-song"][data-song="${songID}"]`).click();
   }
 
-  public async expectHideSongNotToBeVisible(songID: string) {
-    await expect(this.page.locator(`[data-test="hide-song"][data-song="${songID}"]`)).not.toBeVisible();
+  public async expectSongToBeHidden(songName: string, songID: string) {
+    await this.searchSongs(songName);
+    await expect(this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`)).toBeVisible();
   }
 
   public async restoreSong(songName: string, songID: string) {
     await this.searchSongs(songName);
     await this.page.locator(`[data-test="restore-song"][data-song="${songID}"]`).click();
+  }
+
+  public async expectSongToBeVisible(songName: string, songID: string) {
+    await this.searchSongs(songName);
+    await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
   }
 
   public async editSong(songName: string, songID: string) {
@@ -36,10 +42,5 @@ export class EditSongsPagePO {
 
   public async disagreeToShareAddSongs() {
     await this.page.getByTestId('share-songs-disagree').click();
-  }
-
-  public async expectSongToBeVisible(songName: string, songID: string) {
-    await this.searchSongs(songName);
-    await expect(this.page.locator(`[data-test="hide-song"][data-song = "${songID}"]`)).toBeVisible();
   }
 }
