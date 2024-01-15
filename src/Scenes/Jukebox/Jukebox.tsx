@@ -5,7 +5,7 @@ import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import useSmoothNavigate, { buildUrl } from 'hooks/useSmoothNavigate';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
@@ -24,7 +24,7 @@ function Jukebox(props: Props) {
   const songList = useSongIndex();
 
   const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-  const { register } = useKeyboardNav({ onBackspace: () => navigate('') });
+  const { register } = useKeyboardNav({ onBackspace: () => navigate('menu') });
 
   useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 
@@ -32,7 +32,7 @@ function Jukebox(props: Props) {
 
   if (!shuffledList.length || !width || !height) return null;
 
-  const navigateUrl = `game/${encodeURIComponent(shuffledList[currentlyPlaying].id)}`;
+  const navigateUrl = buildUrl(`game`, { song: shuffledList[currentlyPlaying].id });
 
   return (
     <SongPage

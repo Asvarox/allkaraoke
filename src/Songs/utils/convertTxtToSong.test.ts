@@ -8,7 +8,7 @@ import { generateNote } from 'utils/testUtils';
 const notesToText = (notes: Note[]) =>
   notes.map((note) => `${txtTypesMap[note.type]} ${note.start} ${note.length} ${note.pitch} ${note.lyrics}`).join('\n');
 
-const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}) => {
+const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}, unknownProps: string[] = []) => {
   const lines: string[] = [];
   trackSections.forEach(([first, ...sections]) => {
     if (!isNotesSection(first)) throw Error(`first section must contain notes, got ${JSON.stringify(first)}`);
@@ -31,6 +31,7 @@ const generateSongTxt = (trackSections: Section[][], data: Partial<Song> = {}) =
 #LANGUAGE:${data?.language ?? 'language'}
 #GAP:${data?.gap ?? '0'}
 ${data?.video ? `#VIDEO:${data?.video}\n` : ''}
+${unknownProps.join('\n')}
 ${lines.join('\n')}
 E`;
 };
@@ -53,7 +54,8 @@ const songStub = {
   bar: 4,
   gap: 0,
   video: expect.anything(),
-} as any;
+  unsupportedProps: [],
+} satisfies Partial<Song>;
 
 describe('convertTxtToSong', () => {
   it('should convert single track', () => {
@@ -64,7 +66,7 @@ describe('convertTxtToSong', () => {
 
     const inputSongTxt = generateSongTxt([sections]);
 
-    const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: 'videoUrl' };
+    const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: 'videoUrl' } as any;
 
     expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
   });
@@ -75,10 +77,15 @@ describe('convertTxtToSong', () => {
         { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
         { start: 15, type: 'notes', notes: [generateNote(17), generateNote(20)] },
       ];
+      const unknownProps = ['#SOMEPROP: some value', '#SOMEPROP2: some value2'];
 
-      const inputSongTxt = generateSongTxt([sections, sections]);
+      const inputSongTxt = generateSongTxt([sections, sections], {}, unknownProps);
 
-      const expectedSong: Song = { ...songStub, tracks: [{ sections }, { sections }] };
+      const expectedSong: Song = {
+        ...songStub,
+        tracks: [{ sections }, { sections }],
+        unsupportedProps: unknownProps,
+      } as any;
 
       expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
     });
@@ -92,7 +99,7 @@ describe('convertTxtToSong', () => {
 
       const inputSongTxt = generateSongTxt([sections]);
 
-      const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: videoId };
+      const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: videoId } as any;
       const result = convertTxtToSong(inputSongTxt, videoId, author, authorUrl, sourceUrl);
 
       expect(result.tracks).toHaveLength(1);

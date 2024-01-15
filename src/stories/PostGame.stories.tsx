@@ -51,6 +51,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
   const maxPoints: DetailedScore = {
     freestyle: 10,
     rap: 10,
+    rapstar: 0,
     star: 90,
     normal: 705,
     perfect: 375,
@@ -68,6 +69,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
         {
           freestyle: ((args.player1Score * 3) / 100) * maxPoints.freestyle * pointsPerBeat,
           rap: ((args.player1Score * 2) / 100 / 2) * maxPoints.rap * pointsPerBeat,
+          rapstar: 0,
           star: (args.player1Score / 100 / 3) * maxPoints.star * pointsPerBeat,
           normal: ((args.player1Score * 4) / 100 / 4) * maxPoints.normal * pointsPerBeat,
           perfect: (args.player1Score / 100 / 5) * maxPoints.perfect * pointsPerBeat,
@@ -83,6 +85,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
         {
           freestyle: (args.player2Score / 100) * maxPoints.freestyle * pointsPerBeat,
           rap: (args.player2Score / 100) * maxPoints.rap * pointsPerBeat,
+          rapstar: 0,
           star: (args.player2Score / 100) * maxPoints.star * pointsPerBeat,
           normal: (args.player2Score / 100) * maxPoints.normal * pointsPerBeat,
           perfect: (args.player2Score / 100) * maxPoints.perfect * pointsPerBeat,

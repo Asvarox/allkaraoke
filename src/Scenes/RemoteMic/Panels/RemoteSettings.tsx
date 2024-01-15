@@ -8,7 +8,7 @@ import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
 
 interface Props {
-  roomId: string | undefined;
+  roomId: string | null;
   connectionStatus: ConnectionStatuses;
   connectionError?: transportErrorReason;
   isKeepAwakeOn: boolean;

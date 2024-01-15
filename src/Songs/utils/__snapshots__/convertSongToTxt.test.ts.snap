@@ -11,8 +11,10 @@ exports[`convertSongToTxt > should properly convert the song 1`] = `
 #LANGUAGE:Polish
 #GAP:1000
 #TRACKNAMES:[null,"test track 2"]
-: 5 10 9 Second 
-* 20 10 10 Third 
+#SOMEPROP: some value
+#SOMEPROP2: some value2
+G 5 10 9 Second 
+R 20 10 10 Third 
 - 40
 : 50 10 11 Fourth 
 : 80 10 9 Seventh 

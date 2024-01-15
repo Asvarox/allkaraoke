@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { MenuContainer } from 'Elements/Menu';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const FBEmbedCode = (width: number, height: number) => {
   const settings = {
@@ -27,13 +27,24 @@ const FBEmbedCode = (width: number, height: number) => {
 function FacebookLink() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
+  const [show, setShow] = useState(false);
   const [width, setWidth] = useState(200);
   const fbRef = useCallback((node: HTMLDivElement) => {
     setWidth(Math.round(node?.getBoundingClientRect().width) ?? 200);
   }, []);
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true);
+    }, 750);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
   return (
-    <Container small={!!mobilePhoneMode}>
+    <Container small={!!mobilePhoneMode} show={show}>
       <div
         dangerouslySetInnerHTML={{ __html: FBEmbedCode(350, 750) }}
         style={{
@@ -48,7 +59,9 @@ function FacebookLink() {
   );
 }
 
-const Container = styled(MenuContainer)<{ small: boolean }>`
+const Container = styled(MenuContainer)<{ small: boolean; show: boolean }>`
+  transition: 1000ms;
+  opacity: ${(props) => (props.show ? 1 : 0)};
   position: absolute;
   top: 2rem;
   right: 10rem;

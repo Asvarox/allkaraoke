@@ -1,6 +1,7 @@
+import { typesMap } from 'Songs/utils/convertTxtToSong';
 import { ValuesType } from 'utility-types';
 
-export type NoteType = 'normal' | 'star' | 'freestyle' | 'rap';
+export type NoteType = ValuesType<typeof typesMap>;
 export interface Note {
   start: number;
   length: number;
@@ -66,6 +67,7 @@ export interface Song {
   tracks: SongTrack[];
   volume: number | undefined;
   id: string;
+  unsupportedProps: string[];
 }
 
 export interface SongTrack {

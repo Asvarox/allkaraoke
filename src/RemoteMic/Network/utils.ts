@@ -1,13 +1,13 @@
-import * as msgpackr from 'msgpackr';
+import { pack as msgpackrPack, unpack as msgpackrUnpack } from 'msgpackr';
 
 export function getPingTime() {
   return Date.now();
 }
 
 export const pack = <T>(data: T): Buffer => {
-  return msgpackr.pack(data);
+  return msgpackrPack(data);
 };
 
 export const unpack = <T>(buffer: Uint8Array): T => {
-  return msgpackr.unpack(buffer);
+  return msgpackrUnpack(buffer);
 };

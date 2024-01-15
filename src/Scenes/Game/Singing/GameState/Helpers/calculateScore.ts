@@ -10,6 +10,7 @@ export const MAX_POINTS = 3_500_000;
 const noteTypesMultipliers: DetailedScore = {
   freestyle: 0.25,
   rap: 0.25,
+  rapstar: 0.5,
   star: 2,
   normal: 1,
   perfect: 0.5,
@@ -19,6 +20,7 @@ const noteTypesMultipliers: DetailedScore = {
 const countsToBeats = (counts: DetailedScore): DetailedScore => ({
   freestyle: counts.freestyle * noteTypesMultipliers.freestyle,
   rap: counts.rap * noteTypesMultipliers.rap,
+  rapstar: counts.rapstar * noteTypesMultipliers.rapstar,
   star: counts.star * noteTypesMultipliers.star,
   normal: counts.normal * noteTypesMultipliers.normal,
   perfect: counts.perfect * noteTypesMultipliers.perfect,
@@ -31,6 +33,7 @@ export const sumDetailedScore = (counts: DetailedScore) =>
 export const beatsToPoints = (counts: DetailedScore, pointsPerBeat: number): DetailedScore => ({
   freestyle: counts.freestyle * pointsPerBeat,
   rap: counts.rap * pointsPerBeat,
+  rapstar: counts.rapstar * pointsPerBeat,
   star: counts.star * pointsPerBeat,
   normal: counts.normal * pointsPerBeat,
   perfect: counts.perfect * pointsPerBeat,
@@ -40,6 +43,7 @@ export const beatsToPoints = (counts: DetailedScore, pointsPerBeat: number): Det
 export const addDetailedScores = (s1: DetailedScore, s2: DetailedScore): DetailedScore => ({
   freestyle: s1.freestyle + s2.freestyle,
   rap: s1.rap + s2.rap,
+  rapstar: s1.rapstar + s2.rapstar,
   star: s1.star + s2.star,
   normal: s1.normal + s2.normal,
   perfect: s1.perfect + s2.perfect,
@@ -49,6 +53,7 @@ export const addDetailedScores = (s1: DetailedScore, s2: DetailedScore): Detaile
 export const divideDetailedScores = (counts: DetailedScore, divideBy: number): DetailedScore => ({
   freestyle: counts.freestyle / divideBy,
   rap: counts.rap / divideBy,
+  rapstar: counts.rapstar / divideBy,
   star: counts.star / divideBy,
   normal: counts.normal / divideBy,
   perfect: counts.perfect / divideBy,
@@ -60,6 +65,7 @@ const countSungBeats = memoize((song: Song): DetailedScore[] => {
     const counts: DetailedScore = {
       freestyle: 0,
       rap: 0,
+      rapstar: 0,
       star: 0,
       normal: 0,
       perfect: 0,
@@ -85,6 +91,7 @@ export function calculateDetailedScoreData(playerNotes: PlayerNote[], song: Song
   const counts: DetailedScore = {
     freestyle: 0,
     rap: 0,
+    rapstar: 0,
     star: 0,
     normal: 0,
     perfect: 0,

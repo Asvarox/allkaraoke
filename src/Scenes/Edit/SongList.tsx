@@ -9,6 +9,8 @@ import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import dayjs from 'dayjs';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import useQueryParam from 'hooks/useQueryParam';
+import { buildUrl } from 'hooks/useSmoothNavigate';
 import { SongPreview } from 'interfaces';
 import { MRT_ColumnDef, MaterialReactTable } from 'material-react-table';
 import { useMemo } from 'react';
@@ -22,12 +24,15 @@ export default function SongList(props: Props) {
   const { data, reload } = useSongIndex(true);
   const [shareSongs, setShareSongs] = useShareSongs(null);
 
-  const searchParams = new URLSearchParams(window.location.search);
-  const initialSearch = searchParams?.get('search');
-  const createdId = searchParams?.get('id');
+  const created = useQueryParam('created');
+  const songId = useQueryParam('id');
 
   const columns: MRT_ColumnDef<SongPreview>[] = useMemo(
     () => [
+      {
+        accessorKey: 'id',
+        header: 'ID',
+      },
       {
         accessorKey: 'artist',
         header: 'Artist',
@@ -54,7 +59,7 @@ export default function SongList(props: Props) {
       {
         accessorKey: 'lastUpdate',
         header: 'Last Update',
-        sortUndefined: -1,
+        sortUndefined: -1 as -1,
         Cell: ({ cell }) => {
           const val = cell.getValue<string>();
 
@@ -79,11 +84,11 @@ export default function SongList(props: Props) {
 
   return (
     <Container>
-      <ShareSongsModal id={createdId} />
+      {created && <ShareSongsModal id={songId} />}
       <NormalizeFontSize />
       <Grid container>
         <Grid item xs={3}>
-          <Link to="">
+          <Link to="menu">
             <a data-test="main-menu-link">Return to main menu</a>
           </Link>
         </Grid>
@@ -107,13 +112,11 @@ export default function SongList(props: Props) {
         enableRowActions
         renderRowActions={({ row }) => (
           <>
-            <IconButton
-              title="Edit the song"
-              href={`edit/${encodeURIComponent(row.original.id)}`}
-              data-test="edit-song"
-              data-song={row.original.id}>
-              <EditIcon />
-            </IconButton>
+            <Link to={buildUrl(`edit/song`, { song: row.original.id })}>
+              <IconButton title="Edit the song" data-test="edit-song" data-song={row.original.id}>
+                <EditIcon />
+              </IconButton>
+            </Link>
             <IconButton
               title="Download .txt file"
               onClick={async () => {
@@ -174,8 +177,8 @@ export default function SongList(props: Props) {
         )}
         initialState={{
           density: 'compact',
-          columnVisibility: { local: false, isDeleted: false, video: false },
-          globalFilter: initialSearch,
+          columnVisibility: { local: false, isDeleted: false, video: false, id: false },
+          globalFilter: songId,
           showGlobalFilter: true,
         }}
         enableDensityToggle={false}

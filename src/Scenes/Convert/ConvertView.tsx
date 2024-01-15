@@ -163,7 +163,7 @@ export default function ConvertView({ song }: Props) {
       <Container>
         {!isEdit && (
           <div style={{ marginBottom: '1rem' }}>
-            <Link to="">
+            <Link to="menu">
               <a>Return to the main menu</a>
             </Link>
           </div>
@@ -199,7 +199,7 @@ export default function ConvertView({ song }: Props) {
               if (!isEdit) {
                 shareSong(finalSong!.id);
               }
-              navigate(`edit?search=${encodeURIComponent(finalSong!.title)}${!isEdit ? `&id=${finalSong!.id}` : ''}`);
+              navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
             }
           }}>
           {steps.at(currentStep) === 'basic-data' && (

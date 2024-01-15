@@ -15,6 +15,8 @@ export default function drawRawNote(
     applyColor(ctx, styles.colors.lines.star);
   } else if (noteType === 'freestyle' || noteType === 'rap') {
     applyColor(ctx, styles.colors.lines.freestyle);
+  } else if (noteType === 'rapstar') {
+    applyColor(ctx, { ...styles.colors.lines.star, fill: styles.colors.lines.freestyle.fill });
   } else {
     applyColor(ctx, styles.colors.lines.normal);
   }
