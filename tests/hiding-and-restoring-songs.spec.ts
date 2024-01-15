@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
@@ -25,7 +25,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.ensureSongLanguageIsSelected(language);
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await pages.songListPage.expectSongToBeHidden(songID);
+  await expect(pages.songListPage.getSongElement(songID)).not.toBeVisible();
 
   await page.keyboard.press('Backspace');
   await page.keyboard.press('Backspace');
@@ -34,5 +34,5 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await pages.editSongsPage.restoreSong(songID);
   await pages.editSongsPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
-  await pages.songListPage.expectSongToBeVisible(songID);
+  await expect(pages.songListPage.getSongElement(songID)).toBeVisible();
 });

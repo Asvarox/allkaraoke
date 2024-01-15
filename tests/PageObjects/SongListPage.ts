@@ -12,14 +12,6 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
-  public async expectSongToBeHidden(songID: string) {
-    await expect(this.getSongElement(songID)).not.toBeVisible();
-  }
-
-  public async expectSongToBeVisible(songID: string) {
-    await expect(this.getSongElement(songID)).toBeVisible();
-  }
-
   public async navigateToSongWithKeyboard(songID: string) {
     await navigateWithKeyboard(this.page, `song-${songID}`);
   }
