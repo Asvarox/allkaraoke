@@ -11,6 +11,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 const songID = 'e2e-christmas-english-1995';
+const language = 'English';
 
 test('Hiding and restoring songs works', async ({ page }) => {
   await page.goto('/?e2e-test');
@@ -22,17 +23,16 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await pages.editSongsPage.hideSong(songID);
   await pages.editSongsPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
+  await pages.songLanguagesPage.ensureSongLanguageIsSelected(language);
   await pages.songLanguagesPage.continueAndGoToSongList();
+  await expect(pages.songListPage.getSongElement(songID)).not.toBeVisible();
 
-  await expect(page.getByTestId(`song-${songID}`)).not.toBeVisible();
-
-  await page.goBack();
-  await page.goBack();
+  await page.keyboard.press('Backspace');
+  await page.keyboard.press('Backspace');
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
   await pages.editSongsPage.restoreSong(songID);
   await pages.editSongsPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
-
-  await expect(page.getByTestId(`song-${songID}`)).toBeVisible();
+  await expect(pages.songListPage.getSongElement(songID)).toBeVisible();
 });
