@@ -43,4 +43,24 @@ export class EditSongsPagePO {
   public async disagreeToShareAddSongs() {
     await this.page.getByTestId('share-songs-disagree').click();
   }
+
+  public get lastUpdateElement() {
+    return this.page.locator('[aria-label="Sort by Last Update descending"] svg');
+  }
+
+  public async sortByLastUpdateDESC() {
+    await this.lastUpdateElement.click();
+  }
+
+  public getTableRowElement(index: number) {
+    return this.page.locator('table tr.MuiTableRow-root').nth(index);
+  }
+
+  public async expectRowLastUpdateColumnToBeEmpty(index: number) {
+    await expect(this.getTableRowElement(index).locator('td').nth(4)).toBeEmpty();
+  }
+
+  public async expectRowLastUpdateColumnToBe(index: number, date: string) {
+    await expect(this.getTableRowElement(index).locator('abbr')).toHaveAttribute('title', date);
+  }
 }
