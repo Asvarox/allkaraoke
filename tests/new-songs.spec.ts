@@ -12,6 +12,9 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 const LAST_VISIT_NO_NEW_SONGS = new Date('2023-01-16T10:35:39.918Z').getTime();
 const LAST_VISIT_NEW_SONG = new Date('2023-01-14T10:35:39.918Z').getTime();
+const song = 'e2e-new-english-1995';
+const newGroupSong = 'e2e-new-english-1995-new-group';
+const playlistName = 'English';
 
 test('New songs - displays new song twice by default and doesnt show it in filters', async ({ page }) => {
   await page.addInitScript(
@@ -25,24 +28,21 @@ test('New songs - displays new song twice by default and doesnt show it in filte
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await page.waitForTimeout(100);
-  await page.getByTestId('skip').click();
-
+  await pages.inputSelectionPage.skipToMainMenu();
   await page.waitForTimeout(500);
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
-
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-new-english-1995-new-group')).toBeVisible();
+  await pages.mainMenuPage.goToSingSong();
+  await pages.songLanguagesPage.continueAndGoToSongList();
+  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
 
   // Should still show new group when playlists are used
-  await page.getByTestId('playlist-English').click();
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-new-english-1995-new-group')).toBeVisible();
+  await pages.songListPage.goToPlaylist(playlistName);
+  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
 
   await page.keyboard.type('playwright');
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-new-english-1995-new-group')).not.toBeVisible();
+  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
 });
 
 test('New songs - doesnt display new songs if the visit is after', async ({ page }) => {
@@ -56,25 +56,19 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
-
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
-
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-new-english-1995-new-group')).not.toBeVisible();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToSingSong();
+  await pages.songLanguagesPage.continueAndGoToSongList();
+  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
 });
 
 test('New songs - doesnt display new songs on first visit', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
-
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
-
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-new-english-1995-new-group')).not.toBeVisible();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToSingSong();
+  await pages.songLanguagesPage.continueAndGoToSongList();
+  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
 });
