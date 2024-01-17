@@ -52,15 +52,50 @@ export class EditSongsPagePO {
     await this.lastUpdateElement.click();
   }
 
-  public getTableRowElement(index: number) {
-    return this.page.locator('table tr.MuiTableRow-root').nth(index);
+  public getTableRowElement(rowNumber: number) {
+    return this.page.locator('table tr.MuiTableRow-root').nth(rowNumber);
   }
 
-  public async expectRowLastUpdateColumnToBeEmpty(index: number) {
-    await expect(this.getTableRowElement(index).locator('td').nth(4)).toBeEmpty();
+  public getColumnHeader(name: string) {
+    return this.page.locator(`[title="${name}"]`);
   }
 
-  public async expectRowLastUpdateColumnToBe(index: number, date: string) {
-    await expect(this.getTableRowElement(index).locator('abbr')).toHaveAttribute('title', date);
+  public getTableCellElement(rowNumber: number, cellNumber: number) {
+    return this.getTableRowElement(rowNumber).locator('td').nth(cellNumber);
   }
-}
+
+  public async expectRowLastUpdateColumnToBeEmpty(rowNumber: number) {
+    await expect(this.getTableRowElement(rowNumber).locator('td').nth(4)).toBeEmpty();
+  }
+
+  public async expectRowLastUpdateColumnToBe(rowNumber: number, date: string) {
+    await expect(this.getTableRowElement(rowNumber).locator('abbr')).toHaveAttribute('title', date);
+  }
+
+  public async expandShowOrHideColumnList() {
+    await this.page.locator('[aria-label="Show/Hide columns"]').click();
+  }
+
+  public async toggleColumnVisibility(name: string) {
+    await this.expandShowOrHideColumnList();
+    await this.page
+      .locator('span.MuiTypography-body1.MuiFormControlLabel-label')
+      .getByText(`${name}`, { exact: true })
+      .click();
+    await this.page.locator('.MuiBackdrop-invisible').click();
+  }
+
+  public async hideAllColumns() {
+    await this.expandShowOrHideColumnList();
+    await this.page.locator('.MuiButton-textPrimary').getByText('Hide all', { exact: true }).click();
+  }
+
+  public async showFiltersVisibility() {
+    await this.page.locator('[aria-label="Show/Hide filters"] [data-testid="FilterListIcon"]').click();
+  }
+
+  public async filterByColumnName(name: string, phrase: string) {
+    await this.showFiltersVisibility();
+    await this.page.locator(`[title="Filter by ${name}"]`).fill(phrase);
+  }
+} //
