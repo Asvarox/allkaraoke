@@ -5944,50 +5944,50 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/match-sorter-utils@npm:8.8.4":
-  version: 8.8.4
-  resolution: "@tanstack/match-sorter-utils@npm:8.8.4"
+"@tanstack/match-sorter-utils@npm:8.11.3":
+  version: 8.11.3
+  resolution: "@tanstack/match-sorter-utils@npm:8.11.3"
   dependencies:
     remove-accents: "npm:0.4.2"
-  checksum: 25a109c72414ce439dba914f0756b52ef29e1d0a008f9c0f3f79af24cdf8a129500c9304a9877f5c9cd2713e394915297cfc07c249b8e1f78bd2f026643de0b8
+  checksum: 9bd1b5ee09a0a4993ce6194702d7a15177774a1ae6d9dc9486c6ffbcdcbbf75431126568b305c497f257709c0d2f924ee8d5b75c5de029f98a2aac59794a5c9b
   languageName: node
   linkType: hard
 
-"@tanstack/react-table@npm:8.10.7":
-  version: 8.10.7
-  resolution: "@tanstack/react-table@npm:8.10.7"
+"@tanstack/react-table@npm:8.11.6":
+  version: 8.11.6
+  resolution: "@tanstack/react-table@npm:8.11.6"
   dependencies:
-    "@tanstack/table-core": "npm:8.10.7"
+    "@tanstack/table-core": "npm:8.11.6"
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: ed4eaa648854ce95264c66fd7cc0effafee35d4c34fc2d04b047be0bd48b70695e3e69b2798a4d8b4797de36bf3c0aa24973255d434d7fd4f95856760eb16031
+  checksum: b8b73d987d3656c3046697d89884438c4dcecfd7a567d6492823d067cb3c7466030065b3e970f59bbd9e413e829f179601353a31ff426a06f7a955c7dd4add5a
   languageName: node
   linkType: hard
 
-"@tanstack/react-virtual@npm:3.0.0-beta.68":
-  version: 3.0.0-beta.68
-  resolution: "@tanstack/react-virtual@npm:3.0.0-beta.68"
+"@tanstack/react-virtual@npm:3.0.1":
+  version: 3.0.1
+  resolution: "@tanstack/react-virtual@npm:3.0.1"
   dependencies:
-    "@tanstack/virtual-core": "npm:3.0.0-beta.68"
+    "@tanstack/virtual-core": "npm:3.0.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 12a67b5d16a854df258a0974e57ffaab931b250b69a9a7109ad0c842546a7da3c35f353db1d9f639567112e7675fad790aa4efed397e8601ba7d728ba5e643f1
+  checksum: c923a524964a5d1da68464edff26267b5c5f84809ed6f2001f6a3d36219bba97c779633d801e4801b1653969a24b714b8262593355a3e7036fb510d8ac40963d
   languageName: node
   linkType: hard
 
-"@tanstack/table-core@npm:8.10.7":
-  version: 8.10.7
-  resolution: "@tanstack/table-core@npm:8.10.7"
-  checksum: aa4150e03e4efe3d7a52485debbd7dc297e487a1ba0d1e1171ae84907cde8ea7e88794f812226542266ead8b7a2017c433323426eb50a1d5bc57a8b493fd5af2
+"@tanstack/table-core@npm:8.11.6":
+  version: 8.11.6
+  resolution: "@tanstack/table-core@npm:8.11.6"
+  checksum: f3a286f2f6bc4831d076cc4a59036b92309e2e9286256704bfb69c06c22a28172417e403422c31a9199f0a82a799d6252f60e5c211994afb84e73be95af96d87
   languageName: node
   linkType: hard
 
-"@tanstack/virtual-core@npm:3.0.0-beta.68":
-  version: 3.0.0-beta.68
-  resolution: "@tanstack/virtual-core@npm:3.0.0-beta.68"
-  checksum: 3c42e676079d3f8fae41139b187729cf69fcf84c945f093f5b42755c7d4f26ae2395156dcae70cea22dcad5fe4885f29441eb51f8f1e4a3ed5c19452a048be00
+"@tanstack/virtual-core@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@tanstack/virtual-core@npm:3.0.0"
+  checksum: 667941444b70773a8fc37b907718fcdbcf90b15660f427b06d6c140b72eea636d8609a8ba5ee3d2cb363066a8085fbf5b804fd08d5cfefd432cf1a14fa7c2355
   languageName: node
   linkType: hard
 
@@ -12546,13 +12546,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"material-react-table@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "material-react-table@npm:2.0.4"
+"material-react-table@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "material-react-table@npm:2.6.1"
   dependencies:
-    "@tanstack/match-sorter-utils": "npm:8.8.4"
-    "@tanstack/react-table": "npm:8.10.7"
-    "@tanstack/react-virtual": "npm:3.0.0-beta.68"
+    "@tanstack/match-sorter-utils": "npm:8.11.3"
+    "@tanstack/react-table": "npm:8.11.6"
+    "@tanstack/react-virtual": "npm:3.0.1"
     highlight-words: "npm:1.2.2"
   peerDependencies:
     "@emotion/react": ">=11.11"
@@ -12562,7 +12562,7 @@ __metadata:
     "@mui/x-date-pickers": ">=6.15.0"
     react: ">=18.0"
     react-dom: ">=18.0"
-  checksum: 2d2415a0177b8f4b661b565ada0233bee09c06e4f51a5730cf585a0024c7e4613a52b392f7f7c6e00df95e1851d0caa6fb3e7e4bf07cf89c428a2c9ad8aba3cd
+  checksum: 8620f177e8590ced5cf30592ddc01796b438c4e66688eca0bf76c3c110bc0d5e5a3defa3886c708a581ae50ce4bc58c84f40a656fc465c44ced721096131aa77
   languageName: node
   linkType: hard
 
@@ -13408,7 +13408,7 @@ __metadata:
     localforage: "npm:^1.10.0"
     lodash: "npm:^4.17.21"
     lodash-es: "npm:^4.17.21"
-    material-react-table: "npm:^2.0.4"
+    material-react-table: "npm:^2.6.1"
     msgpackr: "npm:^1.10.0"
     musicbrainz-api: "npm:^0.11.0"
     node-fetch: "npm:^3.3.2"
