@@ -52,7 +52,7 @@ export class EditSongsPagePO {
     await this.lastUpdateElement.click();
   }
 
-  public getTableRowElement(rowNumber: number) {
+  public getTableRow(rowNumber: number) {
     return this.page.locator('table tr.MuiTableRow-root').nth(rowNumber);
   }
 
@@ -60,16 +60,8 @@ export class EditSongsPagePO {
     return this.page.locator(`[title="${name}"]`);
   }
 
-  public getTableCellElement(rowNumber: number, cellNumber: number) {
-    return this.getTableRowElement(rowNumber).locator('td').nth(cellNumber);
-  }
-
-  public async expectRowLastUpdateColumnToBeEmpty(rowNumber: number) {
-    await expect(this.getTableRowElement(rowNumber).locator('td').nth(4)).toBeEmpty();
-  }
-
-  public async expectRowLastUpdateColumnToBe(rowNumber: number, date: string) {
-    await expect(this.getTableRowElement(rowNumber).locator('abbr')).toHaveAttribute('title', date);
+  public getTableCell(rowNumber: number, cellNumber: number) {
+    return this.getTableRow(rowNumber).locator('td').nth(cellNumber);
   }
 
   public async expandShowOrHideColumnList() {
@@ -98,4 +90,4 @@ export class EditSongsPagePO {
     await this.showFiltersVisibility();
     await this.page.locator(`[title="Filter by ${name}"]`).fill(phrase);
   }
-} //
+}
