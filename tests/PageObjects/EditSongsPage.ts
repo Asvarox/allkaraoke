@@ -43,4 +43,51 @@ export class EditSongsPagePO {
   public async disagreeToShareAddSongs() {
     await this.page.getByTestId('share-songs-disagree').click();
   }
+
+  public get lastUpdateElement() {
+    return this.page.locator('[aria-label="Sort by Last Update descending"] svg');
+  }
+
+  public async sortByLastUpdateDESC() {
+    await this.lastUpdateElement.click();
+  }
+
+  public getTableRow(rowNumber: number) {
+    return this.page.locator('table tr.MuiTableRow-root').nth(rowNumber);
+  }
+
+  public getColumnHeader(name: string) {
+    return this.page.locator(`[title="${name}"]`);
+  }
+
+  public getTableCell(rowNumber: number, cellNumber: number) {
+    return this.getTableRow(rowNumber).locator('td').nth(cellNumber);
+  }
+
+  public async expandShowOrHideColumnList() {
+    await this.page.locator('[aria-label="Show/Hide columns"]').click();
+  }
+
+  public async toggleColumnVisibility(name: string) {
+    await this.expandShowOrHideColumnList();
+    await this.page
+      .locator('span.MuiTypography-body1.MuiFormControlLabel-label')
+      .getByText(`${name}`, { exact: true })
+      .click();
+    await this.page.locator('.MuiBackdrop-invisible').click();
+  }
+
+  public async hideAllColumns() {
+    await this.expandShowOrHideColumnList();
+    await this.page.locator('.MuiButton-textPrimary').getByText('Hide all', { exact: true }).click();
+  }
+
+  public async showFiltersVisibility() {
+    await this.page.locator('[aria-label="Show/Hide filters"] [data-testid="FilterListIcon"]').click();
+  }
+
+  public async filterByColumnName(name: string, phrase: string) {
+    await this.showFiltersVisibility();
+    await this.page.locator(`[title="Filter by ${name}"]`).fill(phrase);
+  }
 }
