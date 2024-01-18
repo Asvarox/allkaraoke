@@ -51,17 +51,24 @@ export const mulitrack: Song = {
           start: 40,
           notes: [
             {
-              type: 'normal',
+              type: 'freestyle',
               start: 50,
               length: 10,
               pitch: 11,
               lyrics: 'Fourth ',
             },
             {
-              type: 'normal',
+              type: 'star',
               start: 80,
-              length: 10,
+              length: 5,
               pitch: 9,
+              lyrics: 'Seventh ',
+            },
+            {
+              type: 'normal',
+              start: 86,
+              length: 4,
+              pitch: 10,
               lyrics: 'Seventh ',
             },
           ],

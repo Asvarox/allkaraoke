@@ -10,6 +10,7 @@ export default function drawRawNote(
   width: number,
   height: number,
   noteType: Note['type'],
+  playerNumber?: number,
 ) {
   if (noteType === 'star') {
     applyColor(ctx, styles.colors.lines.star);
@@ -22,7 +23,7 @@ export default function drawRawNote(
   }
 
   ctx.shadowBlur = 10;
-  ctx.shadowColor = 'rgb(31,31,31)';
+  ctx.shadowColor = playerNumber !== undefined ? styles.colors.players[playerNumber].miss.stroke : 'rgb(31,31,31)';
   ctx.shadowOffsetX = 0;
   ctx.shadowOffsetY = 0;
   roundRect(ctx!, x, y, width, height, 100, true, true, 0.075);

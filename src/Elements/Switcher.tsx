@@ -5,7 +5,8 @@ import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { ValuesType } from 'utility-types';
 
 interface Props extends PropsWithChildren {
-  focused: boolean;
+  focused?: boolean;
+  disabled?: boolean;
   label: ReactNode;
   value: ReactNode;
   info?: ReactNode;
@@ -30,9 +31,9 @@ export function nextValue<T extends readonly any[]>(
   return values[nextValueIndex(values, current, direction)];
 }
 
-export const Switcher = ({ focused, label, value, onClick, info, children, ...restProps }: Props) => (
+export const Switcher = ({ focused, disabled, label, value, onClick, info, children, ...restProps }: Props) => (
   <Container>
-    <ConfigurationPosition focused={focused} onClick={onClick} {...restProps}>
+    <ConfigurationPosition focused={focused} onClick={onClick} disabled={disabled} {...restProps}>
       <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
       {children ?? null}
     </ConfigurationPosition>
@@ -49,7 +50,7 @@ export const InfoText = styled.div`
   text-align: justify;
 `;
 
-const ConfigurationPosition = styled.span<{ focused: boolean; expanded?: boolean }>`
+const ConfigurationPosition = styled.span<{ focused?: boolean; expanded?: boolean; disabled?: boolean }>`
   background: rgba(0, 0, 0, 0.7);
 
   width: auto;
@@ -57,13 +58,13 @@ const ConfigurationPosition = styled.span<{ focused: boolean; expanded?: boolean
 
   text-align: right;
   font-size: ${({ expanded }) => (expanded ? '6rem' : '2.7rem')};
-  cursor: pointer;
+  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
   padding: 0.65rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  ${focusable}
+  ${(props) => !props.disabled && focusable}
 `;
 
 const ConfigValue = styled.span`

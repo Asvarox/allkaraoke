@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import tuple from 'utils/tuple';
 
 export const usePlayerMicData = (
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   onMeasure: ([volume, frequency]: [number, number]) => void,
   enabled = true,
   intervalMs = 1000 / FPSCountSetting.get(),
@@ -25,7 +25,7 @@ export const usePlayerMicData = (
 };
 
 const usePlayerMic = (
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   intervalMs = 1000 / FPSCountSetting.get(),
   onMeasure?: ([volume, frequency]: [number, number]) => void,
 ) => {

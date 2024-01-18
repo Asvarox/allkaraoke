@@ -34,7 +34,7 @@ export const GAME_MODE = {
 
 export interface PlayerSetup {
   track: number;
-  number: number;
+  number: 0 | 1 | 2 | 3;
 }
 
 export interface SingSetup {

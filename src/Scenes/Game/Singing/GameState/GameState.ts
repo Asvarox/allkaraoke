@@ -48,13 +48,14 @@ export class GameStateClass {
   public setDuration = (duration: number) => (this.duration = duration);
   public getDuration = () => this.duration;
 
-  public getPlayer = (playerNumber: number) => this.playerStates.find((player) => player.getNumber() === playerNumber);
+  public getPlayer = (playerNumber: 0 | 1 | 2 | 3) =>
+    this.playerStates.find((player) => player.getNumber() === playerNumber);
 
   public getPlayers = () => this.playerStates;
 
   public getPlayerCount = () => this.playerStates.length;
 
-  public getPlayerScore = (player: number) => {
+  public getPlayerScore = (player: 0 | 1 | 2 | 3) => {
     if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
       const score = this.getPlayers().reduce((curr, playerState) => curr + playerState.getScore(), 0);
 
@@ -64,7 +65,7 @@ export class GameStateClass {
     }
   };
 
-  public getPlayerDetailedScore = (player: number) => {
+  public getPlayerDetailedScore = (player: 0 | 1 | 2 | 3) => {
     if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
       const scores = this.getPlayers().map((playerState) => playerState.getDetailedScore());
 

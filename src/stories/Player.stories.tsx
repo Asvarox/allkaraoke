@@ -1,15 +1,17 @@
 import { Meta, StoryFn } from '@storybook/react';
+import PlayersManager from 'Players/PlayersManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
 import { processSong } from 'Songs/hooks/useSong';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
-import { GAME_MODE, PlayerSetup, SingSetup } from 'interfaces';
+import { GAME_MODE, SingSetup } from 'interfaces';
 import { ComponentProps, useEffect, useRef } from 'react';
 import { ValuesType } from 'utility-types';
 
 interface StoryArgs {
   tolerance: number;
   speed: number;
+  playerNum: number;
   gameMode: ValuesType<typeof GAME_MODE>;
 }
 
@@ -19,11 +21,13 @@ export default {
   component: Player,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
+    playerNum: { control: { type: 'range', min: 1, max: 4, step: 1 } },
     speed: { control: { type: 'range', min: 1, max: 200, step: 1 } },
     tolerance: { control: { type: 'range', min: 0, max: 6, step: 1 } },
     gameMode: { control: 'radio', options: [GAME_MODE.DUEL, GAME_MODE.PASS_THE_MIC, GAME_MODE.CO_OP] },
   },
   args: {
+    playerNum: 2,
     tolerance: 3,
     speed: 100,
     gameMode: GAME_MODE.DUEL,
@@ -36,20 +40,19 @@ const Template: StoryFn<StoryArgs> = (args) => {
 
   const singSetup: SingSetup = {
     tolerance: args.tolerance,
-    players: [
-      { number: 0, track: 0 },
-      { number: 1, track: 0 },
-    ],
+    players: new Array(args.playerNum).fill(0).map((t, i) => ({ number: i as 0 | 1 | 2 | 3, track: 0 })),
     id: 'storybook-id',
     mode: args.gameMode,
   };
+  PlayersManager.getPlayers().forEach((player) => PlayersManager.removePlayer(player.number));
+  singSetup.players.map((player) => PlayersManager.addPlayer(player.number));
 
-  const players: PlayerSetup[] = [
-    {
-      number: 0,
-      track: 0,
-    },
-  ];
+  console.log(singSetup, PlayersManager.getPlayers());
+  useEffect(() => {
+    GameState.resetSingSetup();
+    GameState.setSingSetup(singSetup);
+    GameState.setSong(song);
+  }, [args.tolerance, args.playerNum, args.gameMode]);
 
   const ref = useRef<PlayerRef | null>(null);
 
@@ -74,7 +77,7 @@ const Template: StoryFn<StoryArgs> = (args) => {
             ref.current?.play();
           }, 100);
         }}
-        players={players}
+        players={singSetup.players}
         singSetup={singSetup}
         width={1280}
         height={720}
@@ -96,10 +99,10 @@ const txtfile = `
 #VIDEOID:W9nZ6u15yis
 #BPM:200
 #GAP:500
-: 0 4 1 When
-: 6 2 0  a
-: 9 2 -2  hum
-: 11 4 -4 ble
+R 0 4 1 When
+F 6 2 0  a
+* 9 2 -2  hum
+G 11 4 -4 ble
 : 16 6 -2  bard
 - 30
 * 36 8 3 Graced

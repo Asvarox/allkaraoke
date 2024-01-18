@@ -8,7 +8,7 @@ export default function drawRawPlayerNote(
   y: number,
   width: number,
   height: number,
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   isHit: boolean,
   isPerfect: boolean,
   isStar: boolean,

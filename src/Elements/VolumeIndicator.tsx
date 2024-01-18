@@ -5,7 +5,7 @@ import { usePlayerMicData } from 'hooks/players/usePlayerMic';
 import { ForwardedRef, forwardRef, useCallback, useMemo, useState } from 'react';
 import tinycolor from 'tinycolor2';
 
-const usePlayerColor = (playerNumber: number) => {
+const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   return useMemo(() => {
     if (!styles.colors.players[playerNumber]) return '0, 0, 0';
     const rgb = tinycolor(styles.colors.players[playerNumber].text).toRgb();
@@ -26,11 +26,13 @@ const VolumeIndicatorBase = styled.div<{ color: string }>`
   pointer-events: none;
 `;
 
+interface Props {
+  playerNumber: 0 | 1 | 2 | 3;
+  volume: number;
+}
+
 export const VolumeIndicator = forwardRef(
-  (
-    { volume, playerNumber, ...rest }: { playerNumber: number; volume: number },
-    ref: ForwardedRef<HTMLDivElement | null>,
-  ) => {
+  ({ volume, playerNumber, ...rest }: Props, ref: ForwardedRef<HTMLDivElement | null>) => {
     const percent = `${Math.min(1, volume * 20)}`;
     const color = usePlayerColor(playerNumber);
 
@@ -41,7 +43,7 @@ export const VolumeIndicator = forwardRef(
   },
 );
 
-export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: number }) => {
+export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: 0 | 1 | 2 | 3 }) => {
   const [elem, setElem] = useState<HTMLDivElement | null>();
 
   const cb = useCallback(

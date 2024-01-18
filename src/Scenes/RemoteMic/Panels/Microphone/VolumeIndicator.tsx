@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 interface Props {
   volume: number;
-  playerNumber: number | null;
+  playerNumber: 0 | 1 | 2 | 3 | null;
   frequency: number | null;
   isMicOn: boolean;
   isConnected: boolean;

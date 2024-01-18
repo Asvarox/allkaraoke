@@ -1,5 +1,5 @@
-import { FrequencyRecord, PlayerNote, Section, Song } from 'interfaces';
 import isNotesSection from 'Songs/utils/isNotesSection';
+import { FrequencyRecord, PlayerNote, Section, Song } from 'interfaces';
 
 export const pitchPadding = 6;
 
@@ -66,7 +66,7 @@ export default function calculateData({
 }
 
 export interface DrawingData {
-  playerNumber: number;
+  playerNumber: 0 | 1 | 2 | 3;
   playerIndex: number;
   playerCount: number;
   song: Song;

@@ -2,8 +2,8 @@ import { Note, PlayerNote } from 'interfaces';
 import { SpriteNames } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/Cache/spriteMap';
 import drawSpriteWithStartAndEnd from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/spriteWithStartAndEnd';
 
-const getSpriteName = (playerNumber: number, isHit: boolean, isPerfect: boolean, isStar: boolean) => {
-  let spriteName = playerNumber === 0 ? 'blue' : 'red';
+const getSpriteName = (playerNumber: 0 | 1 | 2 | 3, isHit: boolean, isPerfect: boolean, isStar: boolean) => {
+  let spriteName = `p${playerNumber}`;
   if (isPerfect && isStar) {
     spriteName = `${spriteName}StarPerfect`;
   } else if (isPerfect) {
@@ -28,7 +28,7 @@ export default function drawPlayerNote(
   x: number,
   y: number,
   width: number,
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   isHit: boolean,
   playerNote: PlayerNote,
 ) {

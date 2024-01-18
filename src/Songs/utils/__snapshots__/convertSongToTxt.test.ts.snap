@@ -16,8 +16,9 @@ exports[`convertSongToTxt > should properly convert the song 1`] = `
 G 5 10 9 Second 
 R 20 10 10 Third 
 - 40
-: 50 10 11 Fourth 
-: 80 10 9 Seventh 
+F 50 10 11 Fourth 
+* 80 5 9 Seventh 
+: 86 4 10 Seventh 
 - 100 120
 - 130
 : 140 10 10 Eight 

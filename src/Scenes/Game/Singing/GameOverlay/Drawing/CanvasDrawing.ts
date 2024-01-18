@@ -1,6 +1,7 @@
 import { captureException } from '@sentry/react';
 import events from 'GameEvents/GameEvents';
 import PlayersManager from 'Players/PlayersManager';
+import { drawPlayerCanvas } from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/debugPlayerCanvas';
 import getNoteColor from 'Scenes/Game/Singing/GameOverlay/Drawing/Elements/utils/getNoteColor';
 import SungTriangle from 'Scenes/Game/Singing/GameOverlay/Drawing/Particles/SungTriangle';
 import { Shaders } from 'Scenes/Game/Singing/GameOverlay/Drawing/Shaders/Shaders';
@@ -100,7 +101,7 @@ export default class CanvasDrawing {
     }
   };
 
-  private drawPlayer = (playerNumber: number, ctx: CanvasRenderingContext2D) => {
+  private drawPlayer = (playerNumber: 0 | 1 | 2 | 3, ctx: CanvasRenderingContext2D) => {
     const drawingData = this.getDrawingData(playerNumber);
     const { currentSection } = calculateData(drawingData);
 
@@ -118,7 +119,7 @@ export default class CanvasDrawing {
     if (GraphicSetting.get() === 'high') {
       this.drawFlare(ctx, drawingData, displacements);
     }
-
+    false && drawPlayerCanvas(drawingData);
     false && debugPitches(ctx!, drawingData);
   };
 
@@ -160,7 +161,7 @@ export default class CanvasDrawing {
     drawingData.currentSection.notes.forEach((note) => {
       const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true, displacements[note.start]);
 
-      drawNote(ctx, x, y, w, note);
+      drawNote(ctx, x, y, w, note, drawingData.playerNumber);
     });
   };
 
@@ -236,7 +237,7 @@ export default class CanvasDrawing {
     }
   };
 
-  private onSectionEnd = (playerNumber: number) => {
+  private onSectionEnd = (playerNumber: 0 | 1 | 2 | 3) => {
     if (GameState.isPlaying()) {
       const drawingData = this.getDrawingData(playerNumber, -1);
       if (!isNotesSection(drawingData.currentSection)) return;
@@ -251,7 +252,7 @@ export default class CanvasDrawing {
       section.notes.forEach((note) => {
         const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
 
-        ParticleManager.add(new FadeoutNote(x, y, w, note));
+        ParticleManager.add(new FadeoutNote(x, y, w, note, drawingData.playerNumber));
       });
     }
   };
@@ -305,7 +306,7 @@ export default class CanvasDrawing {
     return displacements;
   };
 
-  private getDrawingData = (playerNumber: number, sectionShift = 0): DrawingData => {
+  private getDrawingData = (playerNumber: 0 | 1 | 2 | 3, sectionShift = 0): DrawingData => {
     const players = PlayersManager.getPlayers();
     const playerIndex = players.findIndex((player) => player.number === playerNumber);
     const playerCount = players.length;

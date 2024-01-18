@@ -3,7 +3,7 @@ import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import { inputStatus } from 'Scenes/Game/Singing/Input/Interface';
 
 const usePlayerMicStatus = (
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   intervalMs = 333,
   onMeasure?: ([volume, frequency]: [number, number]) => void,
 ) => {

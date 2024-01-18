@@ -86,7 +86,7 @@ export class RemoteMic {
 
   public getInput = () => this.input;
 
-  public setPlayerNumber = (playerNumber: number | null) => {
+  public setPlayerNumber = (playerNumber: 0 | 1 | 2 | 3 | null) => {
     sendMessage(this.connection, 'set-player-number', { playerNumber });
   };
 

@@ -98,6 +98,10 @@ function LandingPage() {
                 </a>
               </StatSubText>
             </StatText>
+            <StatText>
+              ▸ Supports <strong>1-4</strong> players
+              <StatSubText>When using phones as microphones</StatSubText>
+            </StatText>
           </StatSegment>
           <ScreenshotSegment>
             <img src={screenshot1} alt="Song list screen" />
@@ -137,7 +141,7 @@ const Stats = styled.div`
   padding: 6rem;
   box-sizing: border-box;
   width: 110rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   ${mobileMQ} {
     width: 90%;
     flex-direction: column;
@@ -179,20 +183,29 @@ const ScreenshotSegment = styled(StatSegment)`
   ${landscapeMQ} {
     display: none;
   }
+
   ${mobileMQ} {
     flex-direction: row;
   }
+
   gap: 4rem;
+
   img {
     width: 100%;
+
     ${mobileMQ} {
       // 2rem - the gap (4rem) divided by 2
       width: calc(50% - 2rem);
     }
+
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    box-shadow: 0 0 2rem white;
+    box-shadow: 0 0 5rem rgba(114, 155, 255, 0.5);
     border-radius: 1rem;
+  }
+
+  img:nth-child(2) {
+    box-shadow: 0 0 10rem rgb(19, 19, 19);
   }
 `;
 
@@ -206,6 +219,11 @@ const Container = styled.div`
   justify-content: center;
   height: 100vh;
   gap: 3rem;
+
+  strong,
+  a {
+    text-shadow: 0 0 5rem orange;
+  }
 `;
 
 const MobileButtonsContainer = styled(MobileOnly)`

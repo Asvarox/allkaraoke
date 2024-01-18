@@ -3,7 +3,7 @@ import PlayersManager from 'Players/PlayersManager';
 import { useDevicePing } from 'Scenes/SelectInput/hooks/useDevicePing';
 
 interface Props {
-  playerNumber: number;
+  playerNumber: 0 | 1 | 2 | 3;
 }
 
 function Ping({ playerNumber, ...restProps }: Props) {

@@ -117,42 +117,56 @@ function GameOverlay({
         </>
       )}
       <DurationBar players={playerSetups} />
-      {showMultipleLines && (
-        <Lyrics player={players[0]} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
-      )}
+      <LyricsWrapper>
+        {showMultipleLines && (
+          <Lyrics
+            player={players[0]}
+            playerChanges={playerChanges}
+            effectsEnabled={effectsEnabled}
+            showMultipleLines={showMultipleLines}
+          />
+        )}
+      </LyricsWrapper>
       <Scores>
         {effectsEnabled && (
           <>
             {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (
-              <span data-test="players-score" data-score={GameState.getPlayerScore(0)}>
+              <Score data-test="players-score" data-score={GameState.getPlayerScore(0)}>
                 <ScoreText score={GameState.getPlayerScore(0)} />
-              </span>
+              </Score>
             ) : (
               PlayersManager.getPlayers().map((player) => (
-                <span
+                <Score
                   key={player.number}
                   data-test={`player-${player.number}-score`}
                   data-score={GameState.getPlayerScore(player.number)}>
                   <ScoreText score={GameState.getPlayerScore(player.number)} />
-                </span>
+                </Score>
               ))
             )}
           </>
         )}
       </Scores>
-      <div ref={lyrics}>
+      <LyricsWrapper ref={lyrics}>
         <Lyrics
+          showMultipleLines={showMultipleLines}
           player={players[showMultipleLines ? 1 : 0]}
           playerChanges={playerChanges}
           bottom
           effectsEnabled={effectsEnabled}
         />
-      </div>
+      </LyricsWrapper>
     </Screen>
   );
 }
 
 export default GameOverlay;
+
+const LyricsWrapper = styled.div`
+  height: 15rem;
+  padding: 2rem 0;
+  box-sizing: border-box;
+`;
 
 const Screen = styled.div`
   height: 100%;
@@ -191,10 +205,11 @@ const Scores = styled.div`
   box-sizing: border-box;
   font-size: 5.5rem;
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-around;
   padding-right: 4rem;
   flex-direction: column;
   text-align: right;
   z-index: 1;
 `;
+
+const Score = styled.span``;

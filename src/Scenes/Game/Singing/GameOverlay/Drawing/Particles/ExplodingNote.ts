@@ -12,7 +12,7 @@ export default class ExplodingNoteParticle implements Particle {
     x: number,
     y: number,
     width: number,
-    playerNumber: number,
+    playerNumber: 0 | 1 | 2 | 3,
     note: Note,
     particleManager: typeof ParticleManager,
   ) {

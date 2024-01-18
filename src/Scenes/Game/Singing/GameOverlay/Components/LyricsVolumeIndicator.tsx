@@ -11,12 +11,12 @@ interface Props {
   bottom?: boolean;
 }
 
-function LyricsVolumeIndicator({ player, bottom = false }: Props) {
+function LyricsVolumeIndicator({ player, bottom = false, ...props }: Props) {
   const playerVolume = InputManager.getPlayerVolume(player.number);
   const status = usePlayerMicStatus(player.number);
 
   return (
-    <Container>
+    <Container {...props}>
       {status !== 'unavailable' && <VolumeIndicator playerNumber={player.number} volume={playerVolume} />}
       <StyledPlayerStatus status={status} tooltipPosition="start" />
       <StyledPing playerNumber={player.number} />
@@ -25,24 +25,21 @@ function LyricsVolumeIndicator({ player, bottom = false }: Props) {
 }
 
 const Container = styled.div`
-  position: absolute;
   width: 20rem;
-  right: 0;
-  top: 0;
-  height: 100%;
+  position: relative;
 `;
 
 const StyledPlayerStatus = styled(PlayerStatus)`
   top: auto;
   right: 1rem;
-  bottom: 1rem;
+  bottom: -0.5rem;
 `;
 const StyledPing = styled(Ping)`
   z-index: 2;
   font-size: 2rem;
   margin-right: 1rem;
   -webkit-text-stroke: 0.1rem black;
-  bottom: 1.5rem;
+  //bottom: 1rem;
 `;
 
 export default LyricsVolumeIndicator;

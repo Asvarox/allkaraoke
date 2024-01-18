@@ -20,6 +20,10 @@ export function useEventEffect<T1 extends AnyFunc, T2 extends AnyFunc>(
   events: [GameEvent<T1>, GameEvent<T2>],
   effect: T1 | T2,
 ): void;
+export function useEventEffect<T1 extends AnyFunc, T2 extends AnyFunc, T3 extends AnyFunc>(
+  events: [GameEvent<T1>, GameEvent<T2>, GameEvent<T3>],
+  effect: T1 | T2 | T3,
+): void;
 export function useEventEffect<T1 extends AnyFunc>(events: GameEvent<T1>, effect: T1): void;
 export function useEventEffect<T extends AnyFunc>(event: GameEvent<T> | GameEvent<T>[], effect: T) {
   const eventList = Array.isArray(event) ? event : [event];

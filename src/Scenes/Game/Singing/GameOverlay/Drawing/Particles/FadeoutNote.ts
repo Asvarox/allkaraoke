@@ -9,7 +9,13 @@ export default class FadeoutNote implements Particle {
   public finished = false;
   public ttl = initialTtl;
 
-  constructor(private x: number, private y: number, private width: number, private note: Note) {}
+  constructor(
+    private x: number,
+    private y: number,
+    private width: number,
+    private note: Note,
+    private playerNumber: 0 | 1 | 2 | 3,
+  ) {}
 
   public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
     const percentage = this.ttl / initialTtl;
@@ -18,7 +24,7 @@ export default class FadeoutNote implements Particle {
     ctx.globalAlpha = percentage;
     ctx.translate(0, BIG_NOTE_HEIGHT * (1 - percentage));
 
-    drawNote(ctx, this.x, this.y, this.width, this.note);
+    drawNote(ctx, this.x, this.y, this.width, this.note, this.playerNumber);
 
     ctx.globalAlpha = 1;
     ctx.restore();
