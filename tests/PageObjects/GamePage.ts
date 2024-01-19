@@ -10,8 +10,24 @@ export class GamePagePO {
     await this.page.keyboard.press('Enter');
   }
 
-  public async restartSong() {
+  public async goToPauseMenu() {
+    await this.page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
+  }
+
+  public async goToRestartSong() {
     await this.page.getByTestId('button-restart-song').click();
+  }
+
+  public get resumeSongButton() {
+    return this.page.getByTestId('button-resume-song');
+  }
+
+  public async gotoResumeSong() {
+    await this.resumeSongButton.click();
+  }
+
+  public async goToExitSong() {
+    await this.page.getByTestId('button-exit-song').click();
   }
 
   public get playersScoreElement() {
