@@ -1,0 +1,567 @@
+#ID:blackpink-how-you-like-that
+#ARTIST:BLACKPINK
+#ARTISTORIGIN:KR
+#TITLE:How You Like That
+#CREATOR:asdFer
+#CREATORURL:
+#BPM:389,8
+#REALBPM:130
+#YEAR:2020
+#SOURCEURL:
+#VIDEOID:ioNng23DkIM
+#VIDEOGAP:0
+#VOLUME:0,66
+#LANGUAGE:Korean
+#LASTUPDATE:2024-01-19T05:46:34.153Z
+#GAP:6518,486916367368
+#MP3:BLACKPINK - How You Like That.mp3
+#COVER:BLACKPINK - How You Like That.jpg
+#VIDEO:BLACKPINK - How You Like That.mp4
+#MEDLEYSTARTBEAT:887
+#MEDLEYENDBEAT:1672
+F 26 8 -4 BLACK
+F 38 8 -2 PINK 
+F 50 3 -2 in 
+F 55 4 -2 your 
+F 62 4 -4 a
+F 68 3 -5 re
+F 73 6 4 a
+- 79 138
+- 138
+: 164 3 3 Bo
+: 170 3 3 ran 
+: 176 3 5 deu
+: 182 12 6 shi
+- 194
+: 211 2 5 Mu
+: 214 1 6 ~
+: 217 3 6 neo
+: 223 3 5 jeo
+: 229 12 1 sseo
+- 241
+: 259 3 1 Ba
+: 265 3 1 da
+: 271 3 1 geul 
+: 277 3 8 ttul
+: 283 3 10 ~
+: 289 3 10 ko 
+: 295 3 10 jeo 
+: 301 3 10 ji
+: 307 3 8 hal
+: 313 8 6 kka
+: 325 3 6 ji
+: 330 1 8 ~
+: 333 1 6 ~
+: 336 8 3 ~
+- 344
+: 356 3 3 Ot 
+: 362 3 3 kkeut
+: 368 3 5 ja
+: 374 12 6 rak
+- 386
+: 403 3 5 Jap
+: 409 3 6 ge
+: 415 3 5 tta
+: 422 16 1 go
+- 438
+: 451 3 1 Jeo 
+: 457 3 1 no
+: 463 3 1 pi 
+: 469 3 8 du
+: 475 3 10 ~ 
+: 481 3 10 so
+: 487 3 10 neul 
+: 493 1 8 ppeo
+: 496 1 10 ~
+: 499 3 8 deo
+: 505 8 6 bwa
+: 517 2 6 do
+: 521 1 8 ~
+: 523 1 6 ~
+: 526 10 3 ~
+- 536
+: 553 3 3 Da
+: 559 4 5 shi 
+: 566 2 5 kam
+: 570 2 6 ~
+: 575 5 6 kam
+: 583 3 3 han 
+: 589 2 3 i
+: 593 2 6 ~
+: 598 5 6 go
+: 606 4 3 se 
+: 613 2 3 Light
+: 617 2 5 ~ 
+: 622 5 5 up 
+: 630 5 1 the 
+: 638 8 1 sky
+- 646
+: 655 4 1 Ni 
+: 663 2 8 du
+: 667 2 10 ~ 
+: 672 4 10 nu
+: 679 4 10 neul 
+: 686 2 8 bo
+: 690 2 10 ~
+: 695 4 8 myeo 
+: 702 4 6 I’ll 
+: 709 2 10 kiss
+: 713 4 11 ~ 
+: 720 4 11 you 
+* 727 4 11 good
+* 734 1 8 bye
+* 737 1 10 ~
+* 740 1 8 ~
+* 743 6 6 ~
+- 749
+: 759 5 6 Shil
+: 768 5 6 keot 
+: 776 3 3 bi
+: 783 1 5 u
+: 786 3 6 ~
+: 792 4 6 seo
+: 799 2 3 ra 
+: 806 1 3 kkol
+: 809 3 5 ~
+: 815 4 5 joeu
+: 822 4 1 ni
+: 829 6 1 kka
+- 835
+: 841 1 1 I
+: 844 4 1 je 
+: 853 1 6 neo
+: 856 4 6 hi 
+: 865 1 8 ha
+: 868 4 8 na 
+: 878 8 10 dul 
+: 889 6 8 set
+- 895
+: 913 5 3 Ha, 
+: 925 3 3 how 
+: 930 4 3 you 
+: 937 6 3 like 
+R 949 6 15 that?
+- 955 994
+- 994
+: 1020 1 8 You 
+: 1023 6 8 gon' 
+: 1032 7 8 like 
+* 1044 6 10 that, 
+* 1056 3 6 that 
+* 1062 3 5 that 
+* 1068 6 3 that, 
+: 1080 6 3 that
+- 1086
+: 1093 3 4 That 
+: 1099 3 -1 that 
+: 1105 6 4 that
+- 1111
+: 1116 3 3 How 
+: 1121 4 3 you 
+: 1128 6 3 like 
+R 1140 6 15 that?
+- 1146
+F 1158 1 3 Ba
+F 1161 2 3 ra
+F 1165 4 3 bim 
+F 1171 1 3 ba
+F 1174 2 3 ra
+F 1178 3 3 bum 
+F 1183 4 3 bum
+F 1189 6 3 bum
+- 1195
+: 1213 2 8 How 
+: 1218 4 8 you 
+: 1225 6 8 like 
+: 1237 6 10 that, 
+: 1249 3 6 that 
+: 1255 3 5 that 
+: 1261 6 3 that, 
+: 1273 6 3 that
+- 1279
+: 1285 3 4 That 
+: 1291 3 -1 that 
+* 1297 6 4 that, 
+* 1309 6 3 that
+- 1315
+R 1321 5 3 Now
+- 1326
+R 1344 1 7 Look 
+R 1347 2 7 at 
+R 1351 9 7 you, 
+R 1363 3 5 now 
+R 1368 1 5 look 
+R 1371 2 3 at 
+R 1375 3 1 me
+- 1378
+R 1392 1 7 Look 
+R 1395 2 7 at 
+R 1399 9 7 you, 
+R 1411 3 5 now 
+R 1416 1 5 look 
+R 1419 2 3 at 
+R 1423 3 1 me
+- 1426
+R 1440 1 7 Look 
+R 1443 2 7 at 
+R 1447 9 7 you, 
+R 1459 3 5 now 
+R 1464 1 5 look 
+R 1467 2 3 at 
+R 1471 1 1 me
+- 1472
+: 1476 3 4 How 
+: 1482 3 -1 you 
+: 1488 6 4 like 
+: 1500 6 3 that
+- 1506
+R 1512 5 3 Now
+- 1517
+R 1535 1 7 Look 
+R 1538 2 7 at 
+R 1542 9 7 you, 
+R 1554 3 5 now 
+R 1559 1 5 look 
+R 1562 2 4 at 
+R 1566 3 1 me
+- 1569
+R 1583 1 7 Look 
+R 1586 2 7 at 
+R 1590 9 7 you, 
+R 1602 3 6 now 
+R 1607 1 6 look 
+R 1610 2 4 at 
+R 1614 3 1 me
+- 1617
+R 1631 1 7 Look 
+R 1634 2 7 at 
+R 1638 9 7 you, 
+R 1650 3 6 now 
+R 1655 1 6 look 
+R 1658 2 4 at 
+R 1662 2 1 me
+- 1664
+* 1668 3 4 How 
+* 1674 3 -1 you 
+* 1680 6 4 like 
+* 1692 6 3 that
+- 1698
+F 1714 2 3 Your 
+F 1717 4 3 girl 
+F 1722 1 3 need 
+F 1725 1 3 it 
+F 1728 4 3 all 
+F 1734 4 3 and 
+F 1740 3 3 that's 
+F 1746 4 3 a 
+F 1752 2 3 hun
+F 1755 4 3 dred
+- 1759
+F 1764 1 3 Baek 
+F 1767 1 3 gae 
+F 1770 1 3 jun
+F 1773 1 3 ge 
+F 1776 3 3 baek 
+F 1781 4 3 nae 
+F 1788 4 3 mok
+F 1794 4 3 seul 
+F 1800 1 3 weon
+F 1802 1 3 hae
+- 1803
+F 1806 1 3 Kar
+F 1808 2 3 ma 
+F 1812 2 3 come 
+F 1815 2 3 and 
+F 1819 4 3 get 
+F 1825 1 3 some
+- 1826
+F 1830 3 3 Tta
+F 1836 3 3 ka
+F 1842 3 3 ji
+F 1848 3 3 man 
+F 1854 3 3 eo
+F 1860 5 3 jjeol 
+F 1867 3 3 su 
+F 1873 3 3 eop
+F 1879 3 3 ja
+F 1885 1 3 na
+- 1886
+F 1890 4 3 What's 
+F 1897 3 3 up, 
+F 1903 3 3 I'm 
+F 1909 3 3 right 
+F 1915 6 3 back
+- 1921
+F 1939 1 3 Ban
+F 1941 2 3 ga
+F 1945 4 3 swe
+F 1951 3 3 reul 
+F 1956 4 3 Cock 
+F 1962 6 3 back
+- 1968
+F 1987 4 3 Plain 
+F 1993 4 3 Jane 
+F 1999 4 3 get 
+F 2005 3 3 hi
+F 2010 2 3 jacked
+- 2012
+F 2016 3 3 Don't 
+F 2022 3 3 like 
+F 2028 1 3 me?
+- 2029
+F 2033 3 4 Then 
+F 2039 2 4 tell 
+F 2043 1 4 me 
+F 2045 1 4 how 
+F 2048 2 4 you 
+F 2052 5 4 like 
+F 2059 6 4 that, 
+F 2070 4 4 like 
+F 2076 8 4 that
+- 2084
+: 2094 4 3 Deo 
+: 2101 5 6 kam
+: 2110 5 6 kam
+: 2118 5 3 han 
+: 2126 1 5 i
+: 2129 2 6 ~
+: 2134 5 6 go
+: 2142 4 3 se 
+: 2149 1 3 Shine
+: 2152 2 5 ~ 
+: 2158 5 5 like 
+: 2166 4 1 the 
+: 2173 8 1 stars
+- 2181
+: 2191 3 1 Geu 
+: 2198 2 8 mi
+: 2202 2 10 ~
+: 2207 4 10 so
+: 2214 4 10 reul 
+: 2221 2 8 tti
+: 2225 2 10 ~
+: 2230 4 8 myeo 
+* 2237 4 6 I’ll 
+* 2245 1 10 kiss
+* 2248 4 11 ~ 
+* 2255 4 11 you 
+: 2262 4 11 good
+: 2268 2 8 bye
+: 2272 1 10 ~
+: 2274 1 8 ~
+: 2277 6 6 ~
+- 2283
+: 2293 2 5 Shil
+: 2297 2 6 ~
+: 2302 5 6 keot 
+: 2310 4 3 bi
+: 2317 1 5 u
+: 2320 3 6 ~
+: 2326 4 6 seo
+: 2333 3 3 ra 
+: 2340 2 3 kkol
+: 2344 2 5 ~
+: 2349 5 5 joeu
+: 2357 4 1 ni
+: 2364 6 1 kka
+- 2370
+: 2375 1 1 I
+: 2378 4 1 je 
+: 2387 1 6 neo
+: 2390 4 6 hi 
+: 2399 1 8 ha
+: 2402 4 8 na 
+: 2412 8 10 dul 
+: 2424 7 8 set
+- 2431
+: 2448 5 3 Ha, 
+: 2460 3 3 how 
+: 2465 4 3 you 
+: 2472 6 3 like 
+R 2484 6 15 that?
+- 2490 2529
+- 2529
+: 2555 1 8 You 
+: 2558 6 8 gon' 
+: 2567 7 8 like 
+: 2579 6 10 that, 
+: 2591 3 6 that 
+: 2597 3 5 that 
+: 2603 6 3 that, 
+: 2615 6 3 that
+- 2621
+* 2628 3 4 That 
+* 2634 3 -1 that 
+* 2640 6 4 that
+- 2646
+: 2651 3 3 How 
+: 2656 4 3 you 
+: 2663 6 3 like 
+R 2675 6 15 that?
+- 2681
+F 2693 1 3 Ba
+F 2696 2 3 ra
+F 2700 4 3 bim 
+F 2706 1 3 ba
+F 2709 2 3 ra
+F 2713 3 3 bum 
+F 2718 4 3 bum
+F 2724 6 3 bum
+- 2730
+: 2748 2 8 How 
+: 2753 4 8 you 
+: 2760 6 8 like 
+: 2772 6 10 that, 
+: 2784 3 6 that 
+: 2790 3 5 that 
+: 2796 6 3 that, 
+: 2808 6 3 that
+- 2814
+: 2820 3 4 That 
+: 2826 3 -1 that 
+: 2832 6 4 that, 
+: 2844 6 3 that
+- 2850
+R 2856 5 3 Now
+- 2861
+R 2879 1 7 Look 
+R 2882 2 7 at 
+R 2886 9 7 you, 
+R 2898 3 5 now 
+R 2903 1 5 look 
+R 2906 2 3 at 
+R 2910 3 1 me
+- 2913
+R 2927 1 7 Look 
+R 2930 2 7 at 
+R 2934 9 7 you, 
+R 2946 3 5 now 
+R 2951 1 5 look 
+R 2954 2 3 at 
+R 2958 3 1 me
+- 2961
+R 2975 1 7 Look 
+R 2978 2 7 at 
+R 2982 9 7 you, 
+R 2994 3 5 now 
+R 2999 1 5 look 
+R 3002 2 3 at 
+R 3006 1 1 me
+- 3007
+: 3011 3 4 How 
+: 3017 3 -1 you 
+: 3023 6 4 like 
+: 3035 6 3 that
+- 3041
+R 3047 5 3 Now
+- 3052
+R 3070 1 7 Look 
+R 3073 2 7 at 
+R 3077 9 7 you, 
+R 3089 3 5 now 
+R 3094 1 5 look 
+R 3097 2 4 at 
+R 3101 3 1 me
+- 3104
+R 3118 1 7 Look 
+R 3121 2 7 at 
+R 3125 9 7 you, 
+R 3137 3 6 now 
+R 3142 1 6 look 
+R 3145 2 4 at 
+R 3149 3 1 me
+- 3152
+R 3166 1 7 Look 
+R 3169 2 7 at 
+R 3173 9 7 you, 
+R 3185 3 6 now 
+R 3190 1 6 look 
+R 3193 2 4 at 
+R 3197 2 1 me
+- 3199
+: 3203 3 4 How 
+: 3209 3 -1 you 
+: 3215 6 4 like 
+: 3227 6 3 that
+- 3233 3237
+- 3237
+: 3263 3 10 Nal
+: 3269 3 6 gae 
+: 3276 2 10 i
+: 3282 3 6 reun 
+: 3288 3 10 chae
+: 3294 3 6 ro 
+: 3300 7 8 chu
+: 3313 7 6 ra
+: 3324 3 3 kae
+: 3330 9 6 tteon 
+: 3342 2 8 nal
+: 3346 4 6 ~
+- 3350
+: 3360 3 10 Eo
+: 3366 3 6 duun 
+: 3373 2 10 na
+: 3379 3 6 nal 
+: 3385 3 10 so
+: 3391 3 6 ge 
+: 3397 7 8 ga
+: 3410 7 6 cheo 
+: 3421 3 6 i
+: 3427 2 8 tteon
+: 3431 5 10 ~ 
+: 3439 8 10 nal
+- 3447
+: 3457 3 10 Geu
+: 3463 3 6 ttae
+: 3469 3 10 jjeu
+: 3475 3 6 me 
+: 3481 3 10 neon 
+: 3487 3 6 nal 
+: 3493 7 8 kkeun
+: 3505 7 6 nae
+: 3516 5 3 ya 
+: 3524 6 6 hae
+: 3534 1 6 sseo
+- 3535
+F 3539 3 4 Look 
+F 3545 3 4 up 
+F 3551 3 4 in 
+F 3557 3 4 the 
+F 3563 8 4 sky
+- 3571
+F 3575 3 4 It's 
+F 3581 3 4 a 
+F 3587 9 4 bird, 
+F 3599 3 4 it's 
+F 3605 3 4 a 
+F 3611 18 4 plane
+- 3629 3778
+- 3778
+F 3804 2 4 Bring 
+F 3807 3 4 out 
+F 3812 2 4 your 
+F 3816 4 4 boss 
+F 3822 7 4 bitch
+- 3829 3975
+- 3975
+F 4001 3 4 BLACK
+F 4006 8 4 PINK!
+- 4014 4065
+- 4065
+: 4091 3 3 How 
+: 4096 4 3 you 
+: 4103 6 3 like 
+R 4115 6 15 that
+- 4121 4161
+- 4161
+: 4187 1 8 You 
+: 4190 6 8 gon' 
+: 4199 7 8 like 
+: 4211 8 10 that
+- 4219 4256
+- 4256
+* 4282 3 3 How 
+* 4287 4 3 you 
+* 4294 6 3 like 
+G 4306 6 15 that
+E

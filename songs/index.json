@@ -4070,6 +4070,37 @@
     "local": false
   },
   {
+    "id": "ayumi-hamasaki-boys-girls",
+    "title": "Boys & Girls",
+    "artist": "Ayumi Hamasaki",
+    "video": "Sw_cTMqHQ1w",
+    "language": "Japanese",
+    "bpm": 270,
+    "bar": 4,
+    "gap": 102.22222222222229,
+    "year": "1999",
+    "lastUpdate": "2024-01-19T05:46:33.804Z",
+    "genre": "J-Pop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.73,
+    "author": "raxkito",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Ayumi Hamasaki - Boys & Girls.mp3",
+      "#VIDEO:v=Sw_cTMqHQ1w"
+    ],
+    "tracksCount": 1,
+    "search": "ayumihamasakiboysgirls",
+    "local": false
+  },
+  {
     "id": "b52s-love-shack",
     "title": "Love Shack",
     "artist": "B52s",
@@ -4215,6 +4246,38 @@
     "local": false
   },
   {
+    "id": "backstreet-boys-get-down-youre-the-one-for-me",
+    "title": "Get Down (You’re The One For Me)",
+    "artist": "Backstreet Boys",
+    "video": "0LSYuZRSGcY",
+    "language": "English",
+    "bpm": 451.8,
+    "bar": 4,
+    "gap": -86.01593625498003,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.007Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 112,
+    "volume": 0.79,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Backstreet Boys - Get Down (You’re The One For Me).mp3",
+      "#VIDEO:v=0LSYuZRSGcY,co=get-down-youre-the-one-for-me-611faf6eb03b3.jpg,bg=backstreet-boys-53384ef447186.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboysgetdownyouretheoneforme",
+    "local": false
+  },
+  {
     "id": "backstreet-boys-i-want-it-that-way",
     "title": "I Want It That Way",
     "artist": "Backstreet Boys",
@@ -4268,6 +4331,41 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "backstreetboysincomplete",
+    "local": false
+  },
+  {
+    "id": "backstreet-boys-larger-than-life",
+    "title": "Larger Than Life",
+    "artist": "Backstreet Boys",
+    "video": "MEb2CecR11I",
+    "language": "English",
+    "bpm": 270.07,
+    "bar": 4,
+    "gap": 74560.25919206132,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.008Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 107,
+    "previewStart": 102,
+    "previewEnd": 132,
+    "volume": 0.94,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Backstreet Boys - Larger Than Life.mp3",
+      "#VIDEO:",
+      "#START:51.5"
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboyslargerthanlife",
     "local": false
   },
   {
@@ -5091,6 +5189,38 @@
     "local": false
   },
   {
+    "id": "big-bang-fantastic-baby",
+    "title": "Fantastic Baby",
+    "artist": "Big Bang",
+    "video": "AAbokV76tkU",
+    "language": "Korean",
+    "bpm": 260.06,
+    "bar": 4,
+    "gap": 4939.457048373452,
+    "year": "2012",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-01-19T05:46:34.009Z",
+    "genre": "K-Pop",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.63,
+    "author": "Fuuchan107",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Big Bang - Fantastic Baby.mp3",
+      "#VIDEO:v=AAbokV76tkU"
+    ],
+    "tracksCount": 1,
+    "search": "bigbangfantasticbaby",
+    "local": false
+  },
+  {
     "id": "big-cyc-facet-to-swinia",
     "title": "Facet To Swinia",
     "artist": "Big Cyc",
@@ -5236,6 +5366,36 @@
     "local": false
   },
   {
+    "id": "billie-eilish-khalid-lovely",
+    "title": "Lovely",
+    "artist": "Billie Eilish & Khalid",
+    "video": "V1Pl8CzNzCw",
+    "language": "English",
+    "bpm": 400.9,
+    "bar": 4,
+    "gap": 20339.77301072587,
+    "year": "2018",
+    "lastUpdate": "2024-01-19T05:46:34.010Z",
+    "videoGap": 0,
+    "realBpm": 113,
+    "volume": 0.69,
+    "author": "RetroGirl",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Billie Eilish & Khalid - Lovely.mp3",
+      "#VIDEO:v=ryT512TA4nA"
+    ],
+    "tracksCount": 1,
+    "search": "billieeilishkhalidlovely",
+    "local": false
+  },
+  {
     "id": "billy-boyd-the-last-goodbye",
     "title": "The Last Goodbye",
     "artist": "Billy Boyd",
@@ -5378,6 +5538,345 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "blackfoossheyheywickie",
+    "local": false
+  },
+  {
+    "id": "blackpink-as-if-its-your-last",
+    "title": "As if it's your last",
+    "artist": "BLACKPINK",
+    "video": "Amq-qlqbjYA",
+    "language": "Korean",
+    "bpm": 250.05,
+    "bar": 4,
+    "gap": 15502.203959208158,
+    "year": "2017",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.151Z",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.62,
+    "author": "RAE",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=Amq-qlqbjYA&ab_channel=BLACKPINK",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - As if it's your last.mp3",
+      "#COVER:BLACKPINK - As if it's your last.jpg",
+      "#VIDEO:BLACKPINK - As if it's your last.mp4",
+      "#MEDLEYSTARTBEAT:992",
+      "#MEDLEYENDBEAT:1384"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkasifitsyourlast",
+    "local": false
+  },
+  {
+    "id": "blackpink-boombayah",
+    "title": "BOOMBAYAH",
+    "artist": "BLACKPINK",
+    "video": "bwmSjveL3Lc",
+    "language": "Korean",
+    "bpm": 250.04,
+    "bar": 4,
+    "gap": 16163.163173892179,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.152Z",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.71,
+    "author": "RAE",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=bwmSjveL3Lc&pp=ygUJYm9vbWJheWFo",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - BOOMBAYAH.mp3",
+      "#COVER:BLACKPINK - BOOMBAYAH.jpg",
+      "#VIDEO:BLACKPINK - BOOMBAYAH.mp4",
+      "#MEDLEYSTARTBEAT:640",
+      "#MEDLEYENDBEAT:1595"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkboombayah",
+    "local": false
+  },
+  {
+    "id": "blackpink-ddu-du-ddu-du",
+    "title": "DDU-DU DDU-DU",
+    "artist": "BLACKPINK",
+    "video": "IHNzOHi8sJs",
+    "language": "Korean",
+    "bpm": 280.04,
+    "bar": 4,
+    "gap": 23402.288244536496,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.152Z",
+    "videoGap": 0,
+    "realBpm": 140,
+    "volume": 0.66,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - DDU-DU DDU-DU.mp3",
+      "#COVER:BLACKPINK - DDU-DU DDU-DU.jpg",
+      "#VIDEO:BLACKPINK - DDU-DU DDU-DU.mp4",
+      "#MEDLEYSTARTBEAT:521",
+      "#MEDLEYENDBEAT:1219"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkddududdudu",
+    "local": false
+  },
+  {
+    "id": "blackpink-how-you-like-that",
+    "title": "How You Like That",
+    "artist": "BLACKPINK",
+    "video": "ioNng23DkIM",
+    "language": "Korean",
+    "bpm": 389.8,
+    "bar": 4,
+    "gap": 6518.486916367368,
+    "year": "2020",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.153Z",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.66,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - How You Like That.mp3",
+      "#COVER:BLACKPINK - How You Like That.jpg",
+      "#VIDEO:BLACKPINK - How You Like That.mp4",
+      "#MEDLEYSTARTBEAT:887",
+      "#MEDLEYENDBEAT:1672"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkhowyoulikethat",
+    "local": false
+  },
+  {
+    "id": "blackpink-kill-this-love",
+    "title": "Kill this love",
+    "artist": "BLACKPINK",
+    "video": "2S24-y0Ij3Y",
+    "language": "Korean",
+    "bpm": 400.9,
+    "bar": 4,
+    "gap": 3074.7730107258667,
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.155Z",
+    "videoGap": 0,
+    "realBpm": 132,
+    "volume": 0.7,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - Kill this love.mp3",
+      "#COVER:BLACKPINK - Kill this love.jpg",
+      "#VIDEO:BLACKPINK - Kill this love.mp4",
+      "#MEDLEYSTARTBEAT:1463",
+      "#MEDLEYENDBEAT:2274"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkkillthislove",
+    "local": false
+  },
+  {
+    "id": "blackpink-lovesick-girls",
+    "title": "Lovesick Girls",
+    "artist": "BLACKPINK",
+    "video": "dyRsYk0LyA8",
+    "language": "Korean",
+    "bpm": 255.95,
+    "bar": 4,
+    "gap": 1676.7116624340692,
+    "year": "2020",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.156Z",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.66,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - Lovesick Girls.mp3",
+      "#COVER:BLACKPINK - Lovesick Girls.jpg",
+      "#VIDEO:BLACKPINK - Lovesick Girls.mp4",
+      "#MEDLEYSTARTBEAT:885",
+      "#MEDLEYENDBEAT:1378"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinklovesickgirls",
+    "local": false
+  },
+  {
+    "id": "blackpink-pink-venom",
+    "title": "Pink Venom",
+    "artist": "BLACKPINK",
+    "video": "gQlMMD8auMs",
+    "language": "Korean",
+    "bpm": 357.83,
+    "bar": 4,
+    "gap": 12839.9356677752,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.157Z",
+    "videoGap": 0,
+    "realBpm": 90,
+    "volume": 0.67,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - Pink Venom.mp3",
+      "#COVER:BLACKPINK - Pink Venom.jpg",
+      "#VIDEO:BLACKPINK - Pink Venom.mp4",
+      "#MEDLEYSTARTBEAT:1002",
+      "#MEDLEYENDBEAT:1499"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkpinkvenom",
+    "local": false
+  },
+  {
+    "id": "blackpink-playing-with-fire",
+    "title": "Playing with fire",
+    "artist": "BLACKPINK",
+    "video": "9pdj4iJD08s",
+    "language": "Korean",
+    "bpm": 388.29,
+    "bar": 4,
+    "gap": 20520.59607509851,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.158Z",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.69,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - Playing with fire.mp3",
+      "#COVER:BLACKPINK - Playing with fire.jpg",
+      "#VIDEO:BLACKPINK - Playing with fire.mp4",
+      "#MEDLEYSTARTBEAT:1048",
+      "#MEDLEYENDBEAT:1540"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkplayingwithfire",
+    "local": false
+  },
+  {
+    "id": "blackpink-selena-gomez-ice-cream",
+    "title": "Ice Cream",
+    "artist": "BLACKPINK & Selena Gomez",
+    "video": "vRXZj0DzXIA",
+    "language": "English",
+    "bpm": 381.28,
+    "bar": 4,
+    "gap": 12573.47083508183,
+    "year": "2020",
+    "lastUpdate": "2024-01-19T05:46:34.159Z",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 0.66,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK & Selena Gomez - Ice Cream.mp3",
+      "#COVER:BLACKPINK & Selena Gomez - Ice Cream.jpeg",
+      "#VIDEO:BLACKPINK & Selena Gomez - Ice Cream.mp4",
+      "#MEDLEYSTARTBEAT:1986",
+      "#MEDLEYENDBEAT:2891"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkselenagomezicecream",
+    "local": false
+  },
+  {
+    "id": "blackpink-whistle",
+    "title": "WHISTLE",
+    "artist": "BLACKPINK",
+    "video": "dISNgvVpWlo",
+    "language": "Korean",
+    "bpm": 274.59,
+    "bar": 4,
+    "gap": 18370.715830875124,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.298Z",
+    "videoGap": 4,
+    "realBpm": 103,
+    "volume": 0.64,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:BLACKPINK - WHISTLE.mp3",
+      "#COVER:BLACKPINK - WHISTLE.jpg",
+      "#VIDEO:BLACKPINK - WHISTLE.mp4",
+      "#MEDLEYSTARTBEAT:1380",
+      "#MEDLEYENDBEAT:1710"
+    ],
+    "tracksCount": 1,
+    "search": "blackpinkwhistle",
     "local": false
   },
   {
@@ -6157,6 +6656,42 @@
     "local": false
   },
   {
+    "id": "brandy-monica-the-boy-is-mine",
+    "title": "The Boy Is Mine",
+    "artist": "Brandy & Monica",
+    "video": "qSIOp_K5GMw",
+    "language": "English",
+    "bpm": 372,
+    "bar": 4,
+    "gap": 21581.93548387097,
+    "year": "1998",
+    "lastUpdate": "2024-01-19T05:46:34.300Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 93,
+    "volume": 0.8,
+    "author": "anthem_1",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Brandy",
+        "start": 25
+      },
+      {
+        "name": "Monica",
+        "start": 25
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Brandy & Monica - The Boy Is Mine [DUET].mp3",
+      "#VIDEO:v=qSIOp_K5GMw,co=https://www.steveyb.co.uk/wp-content/gallery/brandy-1/Brandy-Sing06TheBoyIsMine.jpg,bg=https://www.okayplayer.com/wp-content/uploads/2020/09/the-biggest-moments-from-brandy-and-monicas-r-b-verzuz-battle-1-scaled.jpeg,p1=Brandy,p2=Monica"
+    ],
+    "tracksCount": 2,
+    "search": "brandymonicatheboyismine",
+    "local": false
+  },
+  {
     "id": "brathanki-czerwone-korale",
     "title": "Czerwone korale",
     "artist": "BRAThANKI",
@@ -6355,6 +6890,38 @@
     "local": false
   },
   {
+    "id": "bring-me-the-horizon-throne",
+    "title": "Throne",
+    "artist": "Bring Me The Horizon",
+    "video": "Ow_qI_F2ZJI",
+    "language": "English",
+    "bpm": 287.75,
+    "bar": 4,
+    "gap": 24729.55690703736,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:34.432Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 144,
+    "volume": 0.73,
+    "author": "ps2devil",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Bring Me The Horizon - Throne.mp3",
+      "#VIDEO:v=Ow_qI_F2ZJI,co=throne-560cefaa7639d.jpg,bg=bring-me-the-horizon-54ad24ebf3d6c.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonthrone",
+    "local": false
+  },
+  {
     "id": "britney-spears-anticipating",
     "title": "Anticipating",
     "artist": "Britney Spears",
@@ -6441,6 +7008,38 @@
     "local": false
   },
   {
+    "id": "britney-spears-breathe-on-me",
+    "title": "Breathe On Me",
+    "artist": "Britney Spears",
+    "video": "tTxVmao5log",
+    "language": "English",
+    "bpm": 224.35,
+    "bar": 4,
+    "gap": 18307.102741252507,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.433Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 0.68,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Britney Spears - Breathe On Me.mp3",
+      "#VIDEO:a=tTxVmao5log,co=https://i.discogs.com/tm5UmLVITA132xZiuWizxKp09Mgn4B5cws-1bi7ISJc/rs:fit/g:sm/q:90/h:590/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NTU0/MzktMTM3MTIzMzcx/MS05Mzc3LmpwZWc.jpeg,bg=spears-britney-4fc96d845d4a3.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "britneyspearsbreatheonme",
+    "local": false
+  },
+  {
     "id": "britney-spears-cant-make-you-love-me",
     "title": "Can't Make You Love Me",
     "artist": "Britney Spears",
@@ -6467,6 +7066,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "britneyspearscantmakeyouloveme",
+    "local": false
+  },
+  {
+    "id": "britney-spears-chris-cox-megamix",
+    "title": "Chris Cox Megamix",
+    "artist": "Britney Spears",
+    "video": "Wg2kHdUnZxw",
+    "language": "English",
+    "bpm": 216,
+    "bar": 4,
+    "gap": 10747.777777777777,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.434Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 107,
+    "volume": 0.66,
+    "author": "DavidPingu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Britney Spears - Chris Cox Megamix.mp3",
+      "#VIDEO:"
+    ],
+    "tracksCount": 1,
+    "search": "britneyspearschriscoxmegamix",
     "local": false
   },
   {
@@ -7079,6 +7710,38 @@
     "local": false
   },
   {
+    "id": "britney-spears-touch-of-my-hand",
+    "title": "Touch Of My Hand",
+    "artist": "Britney Spears",
+    "video": "62G0WSnOp8Y",
+    "language": "English",
+    "bpm": 200.2,
+    "bar": 4,
+    "gap": 26065.974025974025,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.436Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 99,
+    "volume": 0.6,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Britney Spears - Touch Of My Hand.mp3",
+      "#VIDEO:"
+    ],
+    "tracksCount": 1,
+    "search": "britneyspearstouchofmyhand",
+    "local": false
+  },
+  {
     "id": "britney-spears-toxic",
     "title": "Toxic",
     "artist": "Britney Spears",
@@ -7162,6 +7825,41 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "britneyspearsyoudrivemecrazy",
+    "local": false
+  },
+  {
+    "id": "bruno-mars-cardi-b-finesse-remix",
+    "title": "Finesse (Remix)",
+    "artist": "Bruno Mars & Cardi B",
+    "video": "LsoLEjrDogU",
+    "language": "English",
+    "bpm": 300,
+    "bar": 4,
+    "gap": 3550,
+    "year": "2017",
+    "lastUpdate": "2024-01-19T05:46:34.438Z",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.59,
+    "author": "",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Bruno Mars & Cardi B - Finesse (Remix).webm",
+      "#VIDEO:Bruno Mars & Cardi B - Finesse (Remix).webm",
+      "#COVER:Bruno Mars & Cardi B - Finesse (Remix).jpg",
+      "#MEDLEYSTARTBEAT:1263",
+      "#MEDLEYENDBEAT:1634",
+      "#FIXER:TeLiXj",
+      "#END:215000"
+    ],
+    "tracksCount": 1,
+    "search": "brunomarscardibfinesseremix",
     "local": false
   },
   {
@@ -9335,6 +10033,40 @@
     "local": false
   },
   {
+    "id": "crowded-house-dont-dream-its-over",
+    "title": "Don’t Dream It’s Over",
+    "artist": "Crowded House",
+    "video": "J9gKyRmic20",
+    "language": "English",
+    "bpm": 328,
+    "bar": 4,
+    "gap": 23233.90243902439,
+    "year": "1986",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-01-19T05:46:34.584Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 82,
+    "previewStart": 53,
+    "previewEnd": 83,
+    "volume": 0.73,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Crowded House - Don’t Dream It’s Over.mp3",
+      "#VIDEO:v=J9gKyRmic20,co=lastfm.freetls.fastly.net/i/u/ar0/4977ed429be947158c1c919b62b70aa0.jpg,bg=crowded-house-52344bf709a5a.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "crowdedhousedontdreamitsover",
+    "local": false
+  },
+  {
     "id": "culcha-candela-hamma",
     "title": "Hamma!",
     "artist": "Culcha Candela",
@@ -10938,6 +11670,37 @@
     "local": false
   },
   {
+    "id": "disneys-moana-dwayne-johnson-youre-welcome",
+    "title": "You’re Welcome",
+    "artist": "Disney’s Moana (Dwayne Johnson)",
+    "video": "79DijItQXMM",
+    "language": "English",
+    "bpm": 271.45,
+    "bar": 4,
+    "gap": 8135.341683551298,
+    "year": "2016",
+    "lastUpdate": "2024-01-19T05:46:34.585Z",
+    "videoGap": 0,
+    "realBpm": 135,
+    "volume": 0.99,
+    "author": "askusbloodfist",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Disney’s Moana (Dwayne Johnson) - You’re Welcome.mp3",
+      "#VIDEO:v=79DijItQXMM,co=https://m.media-amazon.com/images/I/91fPziriuVL.jpg",
+      "#END:165000"
+    ],
+    "tracksCount": 1,
+    "search": "disneysmoanadwaynejohnsonyourewelcome",
+    "local": false
+  },
+  {
     "id": "disneys-pocahontas-das-farbenspiel-des-winds",
     "title": "Das Farbenspiel des Winds",
     "artist": "Disney’s Pocahontas",
@@ -11320,6 +12083,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "dojacatsayso",
+    "local": false
+  },
+  {
+    "id": "dolly-parton-jolene",
+    "title": "Jolene",
+    "artist": "Dolly Parton",
+    "video": "Ixrje2rXLMA",
+    "language": "English",
+    "bpm": 220.47,
+    "bar": 4,
+    "gap": 8349.452986800925,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.722Z",
+    "genre": "Country",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 0.69,
+    "author": "Silverbeam",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=42",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4096",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Dolly Parton - Jolene.mp3",
+      "#VIDEO:a=Ixrje2rXLMA,co=jolene-5b2cf47daeb96.jpg,bg=parton-dolly-5e64449b0abbb.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "dollypartonjolene",
     "local": false
   },
   {
@@ -13078,6 +13873,38 @@
     "local": false
   },
   {
+    "id": "eric-clapton-i-shot-the-sheriff",
+    "title": "I Shot The Sheriff",
+    "artist": "Eric Clapton",
+    "video": "L0xLLPJ0bOw",
+    "language": "English",
+    "bpm": 377.9,
+    "bar": 4,
+    "gap": -296.62344535591427,
+    "year": "1974",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:34.723Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 0.8,
+    "author": "Caruso",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Eric Clapton - I Shot The Sheriff.mp3",
+      "#VIDEO:a=L0xLLPJ0bOw,co=www.nacionrock.com/wp-content/uploads/125930-a.jpg,co-rotate=-0.5,co-crop=26-26-2076-2076,co-resize=1920-1920,co-contrast=1.2,bg=eric-clapton-4ddfc04114515.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "ericclaptonishotthesheriff",
+    "local": false
+  },
+  {
     "id": "eric-clapton-tears-in-heaven",
     "title": "Tears in Heaven",
     "artist": "Eric Clapton",
@@ -14451,6 +15278,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "geiersturzflugbruttosozialprodukt",
+    "local": false
+  },
+  {
+    "id": "genesis-land-of-confusion",
+    "title": "Land Of Confusion",
+    "artist": "Genesis",
+    "video": "TlBIa8z_Mts",
+    "language": "English",
+    "bpm": 232,
+    "bar": 4,
+    "gap": 27050.172413793105,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:34.725Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.99,
+    "author": "IC",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Genesis - Land Of Confusion.mp3",
+      "#VIDEO:v=TlBIa8z_Mts,co=land-of-confusion-5fb2732392d62.jpg,bg=genesis-5f00fbe0e1e59.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "genesislandofconfusion",
     "local": false
   },
   {
@@ -16823,6 +17682,41 @@
     "local": false
   },
   {
+    "id": "ioi-very-very-very",
+    "title": "Very Very Very",
+    "artist": "I.O.I",
+    "video": "GdxvD7r58ng",
+    "language": "Korean",
+    "bpm": 308.06,
+    "bar": 4,
+    "gap": 5506.47192105434,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.732Z",
+    "genre": "Kpop",
+    "videoGap": 0,
+    "realBpm": 103,
+    "volume": 0.68,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:I.O.I - Very Very Very.mp3",
+      "#COVER:I.O.I - Very Very Very.jpg",
+      "#VIDEO:I.O.I - Very Very Very.mp4",
+      "#MEDLEYSTARTBEAT:2584",
+      "#MEDLEYENDBEAT:2919"
+    ],
+    "tracksCount": 1,
+    "search": "ioiveryveryvery",
+    "local": false
+  },
+  {
     "id": "israel-kamakawiwoole-somewhere-over-the-rainbow-what-a-wonderful-world",
     "title": "Somewhere Over The Rainbow / What A Wonderful World",
     "artist": "Israel Kamakawiwo’ole",
@@ -16849,6 +17743,40 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "israelkamakawiwoolesomewhereovertherainbowwhatawonderfulworld",
+    "local": false
+  },
+  {
+    "id": "ive-love-dive",
+    "title": "LOVE DIVE",
+    "artist": "IVE",
+    "video": "Y8JFxS1HlDo",
+    "language": "Korean",
+    "bpm": 238.28,
+    "bar": 4,
+    "gap": 7448.781601477253,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.735Z",
+    "videoGap": 0,
+    "realBpm": 118,
+    "volume": 0.66,
+    "author": "RAE",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=Y8JFxS1HlDo&pp=ygUJbG92ZSBkaXZl",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:IVE - LOVE DIVE.mp3",
+      "#COVER:IVE - LOVE DIVE.jpg",
+      "#VIDEO:IVE - LOVE DIVE.mp4",
+      "#MEDLEYSTARTBEAT:589",
+      "#MEDLEYENDBEAT:1102"
+    ],
+    "tracksCount": 1,
+    "search": "ivelovedive",
     "local": false
   },
   {
@@ -17342,6 +18270,41 @@
     "local": false
   },
   {
+    "id": "jennie-solo",
+    "title": "SOLO",
+    "artist": "JENNIE",
+    "video": "b73BI9eUkjM",
+    "language": "Korean",
+    "bpm": 380,
+    "bar": 4,
+    "gap": 5101.157894736842,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.738Z",
+    "genre": "Kpop",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 0.69,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:JENNIE - SOLO.mp3",
+      "#COVER:JENNIE - SOLO.jpg",
+      "#VIDEO:JENNIE - SOLO.mp4",
+      "#MEDLEYSTARTBEAT:960",
+      "#MEDLEYENDBEAT:1484"
+    ],
+    "tracksCount": 1,
+    "search": "jenniesolo",
+    "local": false
+  },
+  {
     "id": "jennifer-lopez-aint-it-funny",
     "title": "Ain’t It Funny",
     "artist": "Jennifer Lopez",
@@ -17540,6 +18503,43 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "jewelintuition",
+    "local": false
+  },
+  {
+    "id": "jim-croce-time-in-a-bottle",
+    "title": "Time in a Bottle",
+    "artist": "Jim Croce",
+    "video": "dO1rMeYnOmM",
+    "language": "English",
+    "bpm": 276,
+    "bar": 4,
+    "gap": 12160.739130434782,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.740Z",
+    "genre": "Classical",
+    "videoGap": 0,
+    "realBpm": 134,
+    "previewStart": 60,
+    "volume": 0.65,
+    "author": "Jim Croce - Time in a bottle",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=dO1rMeYnOmM&t=19s",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#COVER: ",
+      "#MP3: ",
+      "#VIDEO: ",
+      "#BACKGROUND: ",
+      "#RELATIVE: No",
+      "#USDB:1047"
+    ],
+    "tracksCount": 1,
+    "search": "jimcrocetimeinabottle",
     "local": false
   },
   {
@@ -17782,6 +18782,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "johnnycashringoffire",
+    "local": false
+  },
+  {
+    "id": "joji-slow-dancing-in-the-dark",
+    "title": "Slow Dancing In The Dark",
+    "artist": "Joji",
+    "video": "K3Qzzggn--s",
+    "language": "English",
+    "bpm": 344.68,
+    "bar": 4,
+    "gap": 21509.071602645934,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.745Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 89,
+    "volume": 0.74,
+    "author": "krasserdude",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Joji - Slow Dancing In The Dark.mp3",
+      "#VIDEO:v=K3Qzzggn--s"
+    ],
+    "tracksCount": 1,
+    "search": "jojislowdancinginthedark",
     "local": false
   },
   {
@@ -20587,6 +21619,40 @@
     "local": false
   },
   {
+    "id": "lana-del-rey-feat-the-weeknd-lust-for-life",
+    "title": "Lust for Life",
+    "artist": "Lana Del Rey feat. The Weeknd",
+    "video": "eP4eqhWc7sI",
+    "language": "English",
+    "bpm": 400,
+    "bar": 4,
+    "gap": 34602.5,
+    "year": "2017",
+    "lastUpdate": "2024-01-19T05:46:34.750Z",
+    "genre": "Pop",
+    "videoGap": 21,
+    "realBpm": 100,
+    "volume": 0.61,
+    "author": "wolf359",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Lana Del Rey feat. The Weeknd - Lust for Life.mp3",
+      "#VIDEO:Lana Del Rey feat. The Weeknd - Lust for Life.webm",
+      "#COVER:Lana Del Rey feat. The Weeknd - Lust for Life.jpg",
+      "#MEDLEYENDBEAT:2486",
+      "#MEDLEYSTARTBEAT:991"
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreyfeattheweekndlustforlife",
+    "local": false
+  },
+  {
     "id": "lana-del-rey-summertime-sadness",
     "title": "Summertime Sadness",
     "artist": "Lana Del Rey",
@@ -20641,6 +21707,42 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "lanadelreyvideogames",
+    "local": false
+  },
+  {
+    "id": "lana-del-rey-young-and-beautiful",
+    "title": "Young and Beautiful",
+    "artist": "Lana Del Rey",
+    "video": "o_1aF54DO60",
+    "language": "English",
+    "bpm": 225.62,
+    "bar": 4,
+    "gap": 14607.747983334812,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:34.899Z",
+    "genre": "Baroque pop",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.64,
+    "author": "Currymalker",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Lana Del Rey - Young and Beautiful.mp3",
+      "#COVER:Lana Del Rey - Young and Beautiful [CO].jpg",
+      "#VIDEO:Lana Del Rey - Young and Beautiful.mp4",
+      "#MEDLEYSTARTBEAT:1513",
+      "#MEDLEYENDBEAT:1971",
+      "#END:233000"
+    ],
+    "tracksCount": 1,
+    "search": "lanadelreyyoungandbeautiful",
     "local": false
   },
   {
@@ -20817,6 +21919,108 @@
     "local": false
   },
   {
+    "id": "le-sserafim-antifragile",
+    "title": "ANTIFRAGILE",
+    "artist": "LE SSERAFIM",
+    "video": "pyf8cbqyfPs",
+    "language": "Korean",
+    "bpm": 210.1,
+    "bar": 4,
+    "gap": 17245.47596382675,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.904Z",
+    "videoGap": 4,
+    "realBpm": 105,
+    "volume": 0.6,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:LE SSERAFIM - ANTIFRAGILE.mp3",
+      "#COVER:LE SSERAFIM - ANTIFRAGILE.jpg",
+      "#VIDEO:LE SSERAFIM - ANTIFRAGILE.mp4",
+      "#MEDLEYSTARTBEAT:645",
+      "#MEDLEYENDBEAT:1019"
+    ],
+    "tracksCount": 1,
+    "search": "lesserafimantifragile",
+    "local": false
+  },
+  {
+    "id": "le-sserafim-blue-flame",
+    "title": "Blue Flame",
+    "artist": "LE SSERAFIM",
+    "video": "Hqvdr91LoSI",
+    "language": "Korean",
+    "bpm": 224.56,
+    "bar": 4,
+    "gap": 4590.04061275383,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.906Z",
+    "videoGap": 0,
+    "realBpm": 112,
+    "volume": 0.63,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:LE SSERAFIM - Blue Flame.mp3",
+      "#COVER:LE SSERAFIM - Blue Flame.jpg",
+      "#VIDEO:LE SSERAFIM - Blue Flame.mp4",
+      "#MEDLEYSTARTBEAT:601",
+      "#MEDLEYENDBEAT:1115"
+    ],
+    "tracksCount": 1,
+    "search": "lesserafimblueflame",
+    "local": false
+  },
+  {
+    "id": "le-sserafim-fearless",
+    "title": "FEARLESS",
+    "artist": "LE SSERAFIM",
+    "video": "4vbDFu0PUew",
+    "language": "Korean",
+    "bpm": 208.21,
+    "bar": 4,
+    "gap": -257.34119398684015,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:34.909Z",
+    "videoGap": 0,
+    "realBpm": 104,
+    "volume": 0.71,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:LE SSERAFIM - FEARLESS.mp3",
+      "#COVER:LE SSERAFIM - FEARLESS.jpg",
+      "#VIDEO:LE SSERAFIM - FEARLESS.mp4",
+      "#MEDLEYSTARTBEAT:645",
+      "#MEDLEYENDBEAT:894"
+    ],
+    "tracksCount": 1,
+    "search": "lesserafimfearless",
+    "local": false
+  },
+  {
     "id": "league-of-legends-gods",
     "title": "GODS",
     "artist": "League of Legends",
@@ -20841,6 +22045,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "leagueoflegendsgods",
+    "local": false
+  },
+  {
+    "id": "led-zeppelin-stairway-to-heaven",
+    "title": "Stairway To Heaven",
+    "artist": "Led Zeppelin",
+    "video": "ovFSEHH_yJw",
+    "language": "English",
+    "bpm": 255.2,
+    "bar": 4,
+    "gap": 52310.78369905956,
+    "year": "1971",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:34.911Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 82,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1097",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Led Zeppelin - Stairway To Heaven.mp3",
+      "#VIDEO:v=ovFSEHH_yJw,co=stairway-to-heaven-5ec195eb15fd8.jpg,bg=led-zeppelin-5590acf21c3b4.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "ledzeppelinstairwaytoheaven",
     "local": false
   },
   {
@@ -21156,6 +22392,69 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "lifehouseyouandme",
+    "local": false
+  },
+  {
+    "id": "lil-nas-x-feat-billy-ray-cyrus-old-town-road-remix",
+    "title": "Old Town Road (Remix)",
+    "artist": "Lil Nas X feat. Billy Ray Cyrus",
+    "video": "r7qovpFAGrQ",
+    "language": "English",
+    "bpm": 272,
+    "bar": 4,
+    "gap": 11857.35294117647,
+    "year": "2019",
+    "lastUpdate": "2024-01-19T05:46:34.912Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.74,
+    "author": "Vaney",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Lil Nas X feat. Billy Ray Cyrus - Old Town Road (Remix).mp3",
+      "#VIDEO:a=7ysFgElQtjI,co=lastfm.freetls.fastly.net/i/u/ar0/9bd5d10731be5c4934c573d4088fc4b4.jpg,bg=www.musikexpress.de/wp-content/uploads/2021/06/30/14/gettyimages-1192815144-scaled-e1625056086127.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "lilnasxfeatbillyraycyrusoldtownroadremix",
+    "local": false
+  },
+  {
+    "id": "lily-allen-not-fair",
+    "title": "Not Fair",
+    "artist": "Lily Allen",
+    "video": "fUYaosyR4bE",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 32350,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:35.057Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 121,
+    "volume": 0.97,
+    "author": "keenan",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Lily Allen - Not Fair.mp3",
+      "#VIDEO:v=fUYaosyR4bE,co=https://www.steveyb.co.uk/wp-content/gallery/Lily-Allen/LilyAllen-Sing07NotFair.jpg,bg=lily-allen-4e9ebb5ac8c67.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "lilyallennotfair",
     "local": false
   },
   {
@@ -25060,6 +26359,40 @@
     "local": false
   },
   {
+    "id": "momoland-bboom-bboom",
+    "title": "BBoom BBoom",
+    "artist": "MOMOLAND",
+    "video": "JQGRg8XBnB4",
+    "language": "Korean",
+    "bpm": 252,
+    "bar": 4,
+    "gap": 13286.095238095239,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.061Z",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.84,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:MOMOLAND - BBoom BBoom.mp3",
+      "#COVER:MOMOLAND - BBoom BBoom.jpg",
+      "#VIDEO:MOMOLAND - BBoom BBoom.webm",
+      "#MEDLEYSTARTBEAT:908",
+      "#MEDLEYENDBEAT:1425"
+    ],
+    "tracksCount": 1,
+    "search": "momolandbboombboom",
+    "local": false
+  },
+  {
     "id": "mon-laferte-ft-juanes-amarrame",
     "title": "Amárrame",
     "artist": "Mon Laferte ft. Juanes",
@@ -26163,6 +27496,37 @@
     "local": false
   },
   {
+    "id": "my-little-pony-this-day-aria",
+    "title": "This Day Aria",
+    "artist": "My Little Pony",
+    "video": "O266NUUShwY",
+    "language": "English",
+    "bpm": 360,
+    "bar": 4,
+    "gap": 1580,
+    "year": "2013",
+    "lastUpdate": "2024-01-19T05:46:35.062Z",
+    "genre": "Pony",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 1,
+    "author": "amadas",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:My Little Pony - This Day Aria.mp3",
+      "#VIDEO:"
+    ],
+    "tracksCount": 1,
+    "search": "mylittleponythisdayaria",
+    "local": false
+  },
+  {
     "id": "myslovitz-dlugo-dzwieku-samotnosci",
     "title": "Długo dzwieku samotnosci",
     "artist": "Myslovitz",
@@ -26269,6 +27633,103 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "myslovitzztwarzamarilynmonroe",
+    "local": false
+  },
+  {
+    "id": "n-sync-i-want-you-back",
+    "title": "I Want You Back",
+    "artist": "★N Sync",
+    "video": "is6gtilerPk",
+    "language": "English",
+    "bpm": 336,
+    "bar": 4,
+    "gap": -222.14285714285722,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.218Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 112,
+    "volume": 0.78,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:★N Sync - I Want You Back.mp3",
+      "#VIDEO:v=is6gtilerPk,co=i-want-you-back-611aca8767924.jpg,bg=nsync-4ee7ea890b62e.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "nsynciwantyouback",
+    "local": false
+  },
+  {
+    "id": "n-sync-its-gonna-be-me",
+    "title": "It’s Gonna Be Me",
+    "artist": "★N Sync",
+    "video": "CA8YyvoGdJc",
+    "language": "English",
+    "bpm": 247.56,
+    "bar": 4,
+    "gap": 18629.946679592827,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.222Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 164,
+    "volume": 0.75,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:★N Sync - It’s Gonna Be Me.mp3",
+      "#VIDEO:v=CA8YyvoGdJc,co=its-gonna-be-me-611aca8784035.jpg,bg=nsync-52477f8dc6903.jpg",
+      "#START:4.0"
+    ],
+    "tracksCount": 1,
+    "search": "nsyncitsgonnabeme",
+    "local": false
+  },
+  {
+    "id": "n-sync-tearin-up-my-heart",
+    "title": "Tearin’ Up My Heart",
+    "artist": "★N Sync",
+    "video": "_ZcmuKsyvzg",
+    "language": "English",
+    "bpm": 220.02,
+    "bar": 4,
+    "gap": -262.6343059721844,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.224Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 109,
+    "volume": 0.68,
+    "author": "pauldiddy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:★N Sync - Tearin’ Up My Heart.mp3",
+      "#VIDEO:v=_ZcmuKsyvzg,co=tearin-up-my-heart-611bb01b959c6.jpg,bg=nsync-4ee7ea890b62e.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "nsynctearinupmyheart",
     "local": false
   },
   {
@@ -26749,6 +28210,108 @@
     "local": false
   },
   {
+    "id": "newjeans-attention",
+    "title": "Attention",
+    "artist": "NewJeans",
+    "video": "x8RIixqumUc",
+    "language": "Korean",
+    "bpm": 271.88,
+    "bar": 4,
+    "gap": 26684.914815359716,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.231Z",
+    "videoGap": 0,
+    "realBpm": 105,
+    "volume": 0.59,
+    "author": "RAE",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=x8RIixqumUc&pp=ygUTYXR0ZW50aW9uIG5ldyBqZWFucw%3D%3D",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:NewJeans - Attention.mp3",
+      "#COVER:NewJeans - Attention.jpeg",
+      "#VIDEO:NewJeans - Attention.mp4",
+      "#MEDLEYSTARTBEAT:636",
+      "#MEDLEYENDBEAT:983"
+    ],
+    "tracksCount": 1,
+    "search": "newjeansattention",
+    "local": false
+  },
+  {
+    "id": "newjeans-cool-with-you",
+    "title": "Cool With You",
+    "artist": "NewJeans",
+    "video": "zsYSSVoQnP4",
+    "language": "Korean",
+    "bpm": 270.25,
+    "bar": 4,
+    "gap": 81404.9250693802,
+    "year": "2023",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.233Z",
+    "videoGap": 67,
+    "realBpm": 135,
+    "volume": 0.67,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:NewJeans - Cool With You.mp3",
+      "#COVER:NewJeans - Cool With You.jpg",
+      "#VIDEO:NewJeans - Cool With You.mp4",
+      "#MEDLEYSTARTBEAT:484",
+      "#MEDLEYENDBEAT:987"
+    ],
+    "tracksCount": 1,
+    "search": "newjeanscoolwithyou",
+    "local": false
+  },
+  {
+    "id": "newjeans-hype-boy",
+    "title": "Hype Boy",
+    "artist": "NewJeans",
+    "video": "S4UEJePR0UE",
+    "language": "Korean",
+    "bpm": 200.25,
+    "bar": 4,
+    "gap": 18242.21722846442,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.239Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.64,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:NewJeans - Hype Boy.mp3",
+      "#COVER:NewJeans - Hype Boy.jpeg",
+      "#VIDEO:NewJeans - Hype Boy.mp4",
+      "#MEDLEYSTARTBEAT:446",
+      "#MEDLEYENDBEAT:959"
+    ],
+    "tracksCount": 1,
+    "search": "newjeanshypeboy",
+    "local": false
+  },
+  {
     "id": "newjeans-new-jeans",
     "title": "New Jeans",
     "artist": "NewJeans",
@@ -26774,6 +28337,40 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "newjeansnewjeans",
+    "local": false
+  },
+  {
+    "id": "newjeans-omg",
+    "title": "OMG",
+    "artist": "NewJeans",
+    "video": "sVTy_wmn5SU",
+    "language": "Korean",
+    "bpm": 279.78,
+    "bar": 4,
+    "gap": 2720.342483379798,
+    "year": "2023",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.247Z",
+    "videoGap": 0,
+    "realBpm": 126,
+    "volume": 0.64,
+    "author": "RAE",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=sVTy_wmn5SU&pp=ygUDT01H",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:NewJeans - OMG.mp3",
+      "#COVER:NewJeans - OMG.jpg",
+      "#VIDEO:NewJeans - OMG.mp4",
+      "#MEDLEYSTARTBEAT:801",
+      "#MEDLEYENDBEAT:1362"
+    ],
+    "tracksCount": 1,
+    "search": "newjeansomg",
     "local": false
   },
   {
@@ -28101,6 +29698,40 @@
     "local": false
   },
   {
+    "id": "orange-caramel-catallena",
+    "title": "Catallena",
+    "artist": "Orange Caramel",
+    "video": "Med2XipHJJM",
+    "language": "Korean",
+    "bpm": 254.04,
+    "bar": 4,
+    "gap": 15367.221067548417,
+    "year": "2014",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.250Z",
+    "videoGap": 0,
+    "realBpm": 127,
+    "volume": 0.68,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Orange Caramel - Catallena.mp3",
+      "#COVER:Orange Caramel - Catallena.jpg",
+      "#VIDEO:Orange Caramel - Catallena.mp4",
+      "#MEDLEYSTARTBEAT:768",
+      "#MEDLEYENDBEAT:1277"
+    ],
+    "tracksCount": 1,
+    "search": "orangecaramelcatallena",
+    "local": false
+  },
+  {
     "id": "os-quatro-e-meia-ola-solidao",
     "title": "Olá Solidão",
     "artist": "Os Quatro e Meia",
@@ -28566,6 +30197,36 @@
     "local": false
   },
   {
+    "id": "paramore-all-i-wanted",
+    "title": "All I Wanted",
+    "artist": "Paramore",
+    "video": "W7nmB20qJv4",
+    "language": "English",
+    "bpm": 288.06,
+    "bar": 4,
+    "gap": 12710.622786919392,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.251Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 144,
+    "volume": 0.83,
+    "author": "bober0610",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "All I Wanted",
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [],
+    "tracksCount": 1,
+    "search": "paramorealliwanted",
+    "local": false
+  },
+  {
     "id": "paramore-decode",
     "title": "Decode",
     "artist": "Paramore",
@@ -28592,6 +30253,66 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "paramoredecode",
+    "local": false
+  },
+  {
+    "id": "paramore-still-into-you",
+    "title": "Still Into You",
+    "artist": "Paramore",
+    "video": "OblL026SvD4",
+    "language": "English",
+    "bpm": 272,
+    "bar": 4,
+    "gap": 11457.35294117647,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.251Z",
+    "genre": "Alternative",
+    "videoGap": 0,
+    "realBpm": 136,
+    "volume": 0.82,
+    "author": "ai-chan",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [],
+    "tracksCount": 1,
+    "search": "paramorestillintoyou",
+    "local": false
+  },
+  {
+    "id": "paramore-thats-what-you-get",
+    "title": "That’s What You Get",
+    "artist": "Paramore",
+    "video": "1kz6hNDlEEg",
+    "language": "English",
+    "bpm": 262,
+    "bar": 4,
+    "gap": 10756.717557251908,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.252Z",
+    "videoGap": 0,
+    "realBpm": 131,
+    "volume": 0.68,
+    "author": "matteymaz",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Paramore - That’s What You Get.mp3",
+      "#VIDEO:v=1kz6hNDlEEg,co=thats-what-you-get-52ce14691f927.jpg,bg=paramore-4ddc35709ae29.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "paramorethatswhatyouget",
     "local": false
   },
   {
@@ -29264,6 +30985,37 @@
     "local": false
   },
   {
+    "id": "phil-collins-in-the-air-tonight",
+    "title": "In The Air Tonight",
+    "artist": "Phil Collins",
+    "video": "cuHvKksNriE",
+    "language": "English",
+    "bpm": 285.15,
+    "bar": 4,
+    "gap": 50950.52603892688,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:35.253Z",
+    "videoGap": 0,
+    "realBpm": 95,
+    "volume": 0.91,
+    "author": "Peschi",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Phil Collins - In The Air Tonight (Album Version).mp3",
+      "#VIDEO:a=cuHvKksNriE,co=in-the-air-tonight-5896e6889dac2.jpg,bg=collins-phil-5728afd00f7ee.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "philcollinsintheairtonight",
+    "local": false
+  },
+  {
     "id": "piersi-i-kukiz-caluj-mnie",
     "title": "Caluj Mnie",
     "artist": "Piersi i Kukiz",
@@ -29518,6 +31270,67 @@
     "local": false
   },
   {
+    "id": "pixies-where-is-my-mind",
+    "title": "Where Is My Mind",
+    "artist": "Pixies",
+    "video": "FSCgfI3OG7s",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 14950,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.253Z",
+    "genre": "Rock",
+    "videoGap": 0,
+    "realBpm": 81,
+    "volume": 0.75,
+    "author": "hamadad",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Pixies - Where Is My Mind? (Fight Club Version).mp3",
+      "#VIDEO:v=FSCgfI3OG7s,co=https://i.ytimg.com/vi/XcV3rLSbY8E/maxresdefault.jpg,co-crop=280-0-720-720,bg=pixies-4e3a8a6c4bcc2.jpg",
+      "#START:11.0"
+    ],
+    "tracksCount": 1,
+    "search": "pixieswhereismymind",
+    "local": false
+  },
+  {
+    "id": "placebo-every-you-every-me",
+    "title": "Every You Every Me",
+    "artist": "Placebo",
+    "video": "OMaycNcPsHI",
+    "language": "English",
+    "bpm": 266.1,
+    "bar": 4,
+    "gap": 15185.343855693349,
+    "year": "1998",
+    "lastUpdate": "2024-01-19T05:46:35.253Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 133,
+    "volume": 0.88,
+    "author": "ultrastarsongs",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4356",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [],
+    "tracksCount": 1,
+    "search": "placeboeveryyoueveryme",
+    "local": false
+  },
+  {
     "id": "placebo-feat-david-bowie-without-you-im-nothing",
     "title": "Without You I’m Nothing",
     "artist": "Placebo feat. David Bowie",
@@ -29722,6 +31535,36 @@
     "local": false
   },
   {
+    "id": "post-malone-feat-21-savage-rockstar",
+    "title": "Rockstar",
+    "artist": "Post Malone feat. 21 Savage",
+    "video": "4GFAZBKZVJY",
+    "language": "English",
+    "bpm": 313.99,
+    "bar": 4,
+    "gap": 13646.78333704895,
+    "year": "2017",
+    "lastUpdate": "2024-01-19T05:46:35.405Z",
+    "videoGap": 0,
+    "realBpm": 160,
+    "volume": 0.75,
+    "author": "AnormusNerd",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Post Malone feat. 21 Savage - Rockstar.mp3",
+      "#VIDEO:v=UceaB4D0jpo"
+    ],
+    "tracksCount": 1,
+    "search": "postmalonefeat21savagerockstar",
+    "local": false
+  },
+  {
     "id": "pretenders-have-yourself-a-merry-little-christmas",
     "title": "Have Yourself A Merry Little Christmas",
     "artist": "Pretenders",
@@ -29778,6 +31621,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "princeandtherevolution1999",
+    "local": false
+  },
+  {
+    "id": "prince-and-the-revolution-kiss",
+    "title": "Kiss",
+    "artist": "Prince and the Revolution",
+    "video": "H9tEvfIsDyo",
+    "language": "English",
+    "bpm": 222.65,
+    "bar": 4,
+    "gap": 13449.445317763306,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:35.561Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 111,
+    "volume": 0.65,
+    "author": "crappy",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Prince and the Revolution - Kiss.mp3",
+      "#VIDEO:v=H9tEvfIsDyo,co=kiss-579aad39477fd.jpg,bg=prince-5120f5ed8c0f9.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "princeandtherevolutionkiss",
     "local": false
   },
   {
@@ -30477,6 +32352,38 @@
     "local": false
   },
   {
+    "id": "radiohead-fake-plastic-trees",
+    "title": "Fake Plastic Trees",
+    "artist": "Radiohead",
+    "video": "n5h0qHwNrHk",
+    "language": "English",
+    "bpm": 240,
+    "bar": 4,
+    "gap": 5440,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:35.563Z",
+    "genre": "Alternative Rock",
+    "videoGap": 0,
+    "realBpm": 74,
+    "volume": 0.92,
+    "author": "Gollum",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Radiohead - Fake Plastic Trees.mp3",
+      "#VIDEO:v=n5h0qHwNrHk,co=fake-plastic-trees-5ecabb739fe3f.jpg,bg=radiohead-51b42744e2be3.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "radioheadfakeplastictrees",
+    "local": false
+  },
+  {
     "id": "radiohead-high-and-dry",
     "title": "High And Dry",
     "artist": "Radiohead",
@@ -30505,6 +32412,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "radioheadhighanddry",
+    "local": false
+  },
+  {
+    "id": "radiohead-karma-police",
+    "title": "Karma Police",
+    "artist": "Radiohead",
+    "video": "1uYWYWPc9HU",
+    "language": "English",
+    "bpm": 295.4,
+    "bar": 4,
+    "gap": 26634.4278943805,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:35.564Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 75,
+    "volume": 0.81,
+    "author": "Diddlmaus30mg",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Radiohead - Karma Police.mp3",
+      "#VIDEO:v=1uYWYWPc9HU,co=karma-police-5ecc00dd57d95.jpg,bg=radiohead-51b42744e2be3.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "radioheadkarmapolice",
     "local": false
   },
   {
@@ -30920,6 +32859,109 @@
     "local": false
   },
   {
+    "id": "red-velvet-peek-a-boo",
+    "title": "Peek-A-Boo",
+    "artist": "Red Velvet",
+    "video": "6uJf2IT2Zh8",
+    "language": "Korean",
+    "bpm": 229.97,
+    "bar": 4,
+    "gap": 23922.611514545377,
+    "year": "2017",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.565Z",
+    "genre": "Other",
+    "videoGap": 0,
+    "realBpm": 115,
+    "volume": 0.62,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Red Velvet - Peek-A-Boo.mp3",
+      "#COVER:Red Velvet - Peek-A-Boo.jpg",
+      "#VIDEO:Red Velvet - Peek-A-Boo.mp4",
+      "#MEDLEYSTARTBEAT:1560",
+      "#MEDLEYENDBEAT:1818"
+    ],
+    "tracksCount": 1,
+    "search": "redvelvetpeekaboo",
+    "local": false
+  },
+  {
+    "id": "red-velvet-psycho",
+    "title": "Psycho",
+    "artist": "Red Velvet",
+    "video": "Z7yNvMzz2zg",
+    "language": "Korean",
+    "bpm": 387.66,
+    "bar": 4,
+    "gap": 2846.963782696177,
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.568Z",
+    "videoGap": 0,
+    "realBpm": 140,
+    "volume": 0.63,
+    "author": "RAE",
+    "authorUrl": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=Z7yNvMzz2zg&pp=ygUGcHN5Y2hv",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Red Velvet - Psycho.mp3",
+      "#COVER:Red Velvet - Psycho.jpg",
+      "#VIDEO:Red Velvet - Psycho.mp4",
+      "#MEDLEYSTARTBEAT:1320",
+      "#MEDLEYENDBEAT:2054"
+    ],
+    "tracksCount": 1,
+    "search": "redvelvetpsycho",
+    "local": false
+  },
+  {
+    "id": "red-velvet-russian-roulette",
+    "title": "Russian Roulette",
+    "artist": "Red Velvet",
+    "video": "QslJYDX3o8s",
+    "language": "Korean",
+    "bpm": 260.11,
+    "bar": 4,
+    "gap": -246.34700703548492,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.571Z",
+    "videoGap": 0,
+    "realBpm": 130,
+    "volume": 0.64,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Red Velvet - Russian Roulette.mp3",
+      "#COVER:Red Velvet - Russian Roulette.jpg",
+      "#VIDEO:Red Velvet - Russian Roulette.mp4",
+      "#MEDLEYSTARTBEAT:756",
+      "#MEDLEYENDBEAT:1247"
+    ],
+    "tracksCount": 1,
+    "search": "redvelvetrussianroulette",
+    "local": false
+  },
+  {
     "id": "reik-inolvidable",
     "title": "Inolvidable",
     "artist": "Reik",
@@ -31250,6 +33292,35 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "rihannafeatcalvinharriswefoundlove",
+    "local": false
+  },
+  {
+    "id": "rihanna-feat-mikky-ekko-stay",
+    "title": "Stay",
+    "artist": "Rihanna feat. Mikky Ekko",
+    "video": "JF8BRvqGCNs",
+    "language": "English",
+    "bpm": 224.04,
+    "bar": 4,
+    "gap": 16345.71505088377,
+    "year": "2012",
+    "lastUpdate": "2024-01-19T05:46:35.573Z",
+    "genre": "R&B",
+    "videoGap": 0,
+    "realBpm": 112,
+    "volume": 0.74,
+    "author": "Coppolatte",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "name": "Stay",
+        "start": 15
+      }
+    ],
+    "unsupportedProps": [],
+    "tracksCount": 1,
+    "search": "rihannafeatmikkyekkostay",
     "local": false
   },
   {
@@ -33232,6 +35303,36 @@
     "local": false
   },
   {
+    "id": "silk-sonic-bruno-mars-anderson-paak-leave-the-door-open",
+    "title": "Leave The Door Open",
+    "artist": "Silk Sonic - Bruno Mars & Anderson .Paak",
+    "video": "adLGHcj_fmA",
+    "language": "English",
+    "bpm": 295.57,
+    "bar": 4,
+    "gap": 15755.012010691207,
+    "year": "2021",
+    "lastUpdate": "2024-01-19T05:46:35.754Z",
+    "videoGap": 0,
+    "realBpm": 148,
+    "volume": 0.81,
+    "author": "Tracks",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Silk Sonic - Bruno Mars & Anderson .Paak - Leave The Door Open.mp3",
+      "#VIDEO:v=adLGHcj_fmA,co=an-evening-with-silk-sonic-6190e1a580de0.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "silksonicbrunomarsandersonpaakleavethedooropen",
+    "local": false
+  },
+  {
     "id": "sinead-oconnor-silent-night",
     "title": "Silent Night",
     "artist": "Sinéad O’Connor",
@@ -33261,6 +35362,41 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "sineadoconnorsilentnight",
+    "local": false
+  },
+  {
+    "id": "sistar-shake-it",
+    "title": "SHAKE IT",
+    "artist": "SISTAR",
+    "video": "x9-TIy7WPQI",
+    "language": "Korean",
+    "bpm": 238,
+    "bar": 4,
+    "gap": -187.32773109243692,
+    "year": "2015",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:35.939Z",
+    "genre": "Kpop",
+    "videoGap": 0,
+    "realBpm": 119,
+    "volume": 0.66,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:SISTAR - SHAKE IT.mp3",
+      "#COVER:SISTAR - SHAKE IT.jpg",
+      "#VIDEO:SISTAR - SHAKE IT.mp4",
+      "#MEDLEYSTARTBEAT:892",
+      "#MEDLEYENDBEAT:1336"
+    ],
+    "tracksCount": 1,
+    "search": "sistarshakeit",
     "local": false
   },
   {
@@ -34334,6 +36470,38 @@
     "local": false
   },
   {
+    "id": "stephen-sanchez-until-i-found-you",
+    "title": "Until I Found You",
+    "artist": "Stephen Sanchez",
+    "video": "GxldQ9eX2wo",
+    "language": "English",
+    "bpm": 202.1,
+    "bar": 4,
+    "gap": 9615.131123206333,
+    "year": "2021",
+    "lastUpdate": "2024-01-19T05:46:35.940Z",
+    "videoGap": 0,
+    "realBpm": 100,
+    "volume": 0.69,
+    "author": "schere-r-ki",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Stephen Sanchez - Until I Found You.mp3",
+      "#COVER:Stephen Sanchez - Until I Found You [CO].jpg",
+      "#BACKGROUND:Stephen Sanchez - Until I Found You [BG].jpg",
+      "#VIDEO:v=GxldQ9eX2wo,co=https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b4/1a/06/b41a0606-87ba-1b74-5c57-dee5f2a751a2/22UMGIM72565.rgb.jpg/1200x1200bb.jpg,bg=sanchez-stephen-6338cd7da2790.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "stephensanchezuntilifoundyou",
+    "local": false
+  },
+  {
     "id": "steven-curtis-chapman-the-great-adventure",
     "title": "The Great Adventure",
     "artist": "Steven Curtis Chapman",
@@ -34623,6 +36791,35 @@
     "local": false
   },
   {
+    "id": "sylver-turn-the-tide",
+    "title": "Turn The Tide",
+    "artist": "Sylver",
+    "video": "6TzCjhSdCp8",
+    "language": "English",
+    "bpm": 276.04,
+    "bar": 4,
+    "gap": 27821.880886827996,
+    "year": "2000",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-01-19T05:46:36.098Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 138,
+    "volume": 1,
+    "author": "karmidi",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1816",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [],
+    "tracksCount": 1,
+    "search": "sylverturnthetide",
+    "local": false
+  },
+  {
     "id": "sylwia-grzeszczak-liber-co-z-nami-bedzie",
     "title": "Co z nami bedzie?",
     "artist": "Sylwia Grzeszczak & Liber",
@@ -34651,6 +36848,38 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "sylwiagrzeszczaklibercoznamibedzie",
+    "local": false
+  },
+  {
+    "id": "system-of-a-down-aerials",
+    "title": "Aerials",
+    "artist": "System of a Down",
+    "video": "L-iepu3EtyE",
+    "language": "English",
+    "bpm": 322.2,
+    "bar": 4,
+    "gap": 40322.34636871509,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:36.100Z",
+    "genre": "None",
+    "videoGap": 0,
+    "realBpm": 79,
+    "volume": 0.89,
+    "author": "Sabu",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:System of a Down - Aerials.mp3",
+      "#VIDEO:v=L-iepu3EtyE,co=aerials-53e6616f5bf47.jpg,bg=system-of-a-down-4def4d1583fcc.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "systemofadownaerials",
     "local": false
   },
   {
@@ -36625,6 +38854,38 @@
     "local": false
   },
   {
+    "id": "the-neighbourhood-sweater-weather",
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "video": "GCdwKhTtNNw",
+    "language": "English",
+    "bpm": 327.8,
+    "bar": 4,
+    "gap": 19743.28859060403,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-01-19T05:46:36.102Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 123,
+    "volume": 0.72,
+    "author": "EmilySavereux",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:The Neighbourhood - Sweater Weather.mp3",
+      "#VIDEO:v=GCdwKhTtNNw,co=https://lastfm.freetls.fastly.net/i/u/ar0/9e542f78df5ba4708f999e29e1d5bbff.jpg,bg=neighbourhood-the-5363ae373dfa7.jpg"
+    ],
+    "tracksCount": 1,
+    "search": "theneighbourhoodsweaterweather",
+    "local": false
+  },
+  {
     "id": "the-offspring-pretty-fly-for-a-white-guy",
     "title": "Pretty fly (for a white guy)",
     "artist": "The Offspring",
@@ -38432,6 +40693,384 @@
     "local": false
   },
   {
+    "id": "twice-alcohol-free",
+    "title": "Alcohol-Free",
+    "artist": "TWICE",
+    "video": "XA2YEHn-A8Q",
+    "language": "Korean",
+    "bpm": 388.16,
+    "bar": 4,
+    "gap": 7705.259686727123,
+    "year": "2021",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.104Z",
+    "videoGap": 0,
+    "realBpm": 97,
+    "volume": 0.65,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - Alcohol-Free.mp3",
+      "#COVER:TWICE - Alcohol-Free.jpg",
+      "#VIDEO:TWICE - Alcohol-Free.mp4",
+      "#MEDLEYSTARTBEAT:1024",
+      "#MEDLEYENDBEAT:2030"
+    ],
+    "tracksCount": 1,
+    "search": "twicealcoholfree",
+    "local": false
+  },
+  {
+    "id": "twice-cheer-up",
+    "title": "CHEER UP",
+    "artist": "TWICE",
+    "video": "c7rCyll5AeY",
+    "language": "Korean",
+    "bpm": 346.2,
+    "bar": 4,
+    "gap": 21896.466204506065,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.106Z",
+    "genre": "Kpop",
+    "videoGap": 1,
+    "realBpm": 173,
+    "volume": 0.65,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - CHEER UP.mp3",
+      "#COVER:TWICE - CHEER UP.jpg",
+      "#VIDEO:TWICE - CHEER UP.mp4",
+      "#MEDLEYSTARTBEAT:2609",
+      "#MEDLEYENDBEAT:3121"
+    ],
+    "tracksCount": 1,
+    "search": "twicecheerup",
+    "local": false
+  },
+  {
+    "id": "twice-cry-for-me",
+    "title": "CRY FOR ME",
+    "artist": "TWICE",
+    "video": "9KW7hojmoaI",
+    "language": "Korean",
+    "bpm": 287.91,
+    "bar": 4,
+    "gap": 13625.107325205794,
+    "year": "2020",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.113Z",
+    "videoGap": 0,
+    "realBpm": 145,
+    "volume": 0.59,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - CRY FOR ME.mp3",
+      "#COVER:TWICE - CRY FOR ME.jpg",
+      "#VIDEO:TWICE - CRY FOR ME.mp4",
+      "#MEDLEYSTARTBEAT:778",
+      "#MEDLEYENDBEAT:1276"
+    ],
+    "tracksCount": 1,
+    "search": "twicecryforme",
+    "local": false
+  },
+  {
+    "id": "twice-fancy",
+    "title": "FANCY",
+    "artist": "TWICE",
+    "video": "kOHB85vDuow",
+    "language": "Korean",
+    "bpm": 266.47,
+    "bar": 4,
+    "gap": 14831.752730138478,
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.116Z",
+    "videoGap": 0,
+    "realBpm": 132,
+    "volume": 0.66,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - FANCY.mp3",
+      "#COVER:TWICE - FANCY.jpg",
+      "#VIDEO:TWICE - FANCY.mp4",
+      "#MEDLEYSTARTBEAT:774",
+      "#MEDLEYENDBEAT:1268"
+    ],
+    "tracksCount": 1,
+    "search": "twicefancy",
+    "local": false
+  },
+  {
+    "id": "twice-feel-special",
+    "title": "Feel Special",
+    "artist": "TWICE",
+    "video": "3ymwOvzhwHs",
+    "language": "Korean",
+    "bpm": 258,
+    "bar": 4,
+    "gap": 11901.627906976744,
+    "year": "2019",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.121Z",
+    "genre": "Kpop",
+    "videoGap": 0,
+    "realBpm": 128,
+    "volume": 0.61,
+    "author": "vicktoben",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - Feel Special.mp3",
+      "#COVER:TWICE - Feel Special [CO].png",
+      "#VIDEO:TWICE - Feel Special.webm",
+      "#MEDLEYSTARTBEAT:672",
+      "#MEDLEYENDBEAT:1222"
+    ],
+    "tracksCount": 1,
+    "search": "twicefeelspecial",
+    "local": false
+  },
+  {
+    "id": "twice-i-cant-stop-me",
+    "title": "I CAN'T STOP ME",
+    "artist": "TWICE",
+    "video": "CM4CkVFmTds",
+    "language": "Korean",
+    "bpm": 300.81,
+    "bar": 4,
+    "gap": 14262.692729629998,
+    "year": "2020",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.123Z",
+    "videoGap": 0,
+    "realBpm": 150,
+    "volume": 0.63,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - I CAN'T STOP ME.mp3",
+      "#COVER:TWICE - I CAN'T STOP ME.jpg",
+      "#VIDEO:TWICE - I CAN'T STOP ME.mp4",
+      "#MEDLEYSTARTBEAT:545",
+      "#MEDLEYENDBEAT:1289"
+    ],
+    "tracksCount": 1,
+    "search": "twiceicantstopme",
+    "local": false
+  },
+  {
+    "id": "twice-like-ooh-ahh",
+    "title": "Like OOH-AHH",
+    "artist": "TWICE",
+    "video": "0rtV5esQT6I",
+    "language": "Korean",
+    "bpm": 284.02,
+    "bar": 4,
+    "gap": 12375.549538764875,
+    "year": "2015",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.124Z",
+    "genre": "Kpop",
+    "videoGap": 0,
+    "realBpm": 142,
+    "volume": 0.64,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - Like OOH-AHH.mp3",
+      "#COVER:TWICE - Like OOH-AHH.jpg",
+      "#VIDEO:TWICE - Like OOH-AHH.mp4",
+      "#MEDLEYSTARTBEAT:2072",
+      "#MEDLEYENDBEAT:2594"
+    ],
+    "tracksCount": 1,
+    "search": "twicelikeoohahh",
+    "local": false
+  },
+  {
+    "id": "twice-moonlight-sunrise",
+    "title": "Moonlight Sunrise",
+    "artist": "TWICE",
+    "video": "cKlEE_EYuNM",
+    "language": "Korean",
+    "bpm": 250.31,
+    "bar": 4,
+    "gap": 8526.263233590347,
+    "year": "2023",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.125Z",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.69,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - Moonlight Sunrise.mp3",
+      "#COVER:TWICE - Moonlight Sunrise.jpg",
+      "#VIDEO:TWICE - Moonlight Sunrise.mp4",
+      "#MEDLEYSTARTBEAT:849",
+      "#MEDLEYENDBEAT:1105"
+    ],
+    "tracksCount": 1,
+    "search": "twicemoonlightsunrise",
+    "local": false
+  },
+  {
+    "id": "twice-talk-that-talk",
+    "title": "Talk that Talk",
+    "artist": "TWICE",
+    "video": "k6jqx9kZgPM",
+    "language": "Korean",
+    "bpm": 240.07,
+    "bar": 4,
+    "gap": 8596.291581622027,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.126Z",
+    "videoGap": 0,
+    "realBpm": 120,
+    "volume": 0.57,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - Talk that Talk.mp3",
+      "#COVER:TWICE - Talk that Talk.jpg",
+      "#VIDEO:TWICE - Talk that Talk.mp4",
+      "#MEDLEYSTARTBEAT:740",
+      "#MEDLEYENDBEAT:1016"
+    ],
+    "tracksCount": 1,
+    "search": "twicetalkthattalk",
+    "local": false
+  },
+  {
+    "id": "twice-tt",
+    "title": "TT",
+    "artist": "TWICE",
+    "video": "ePpPVE-GGJw",
+    "language": "Korean",
+    "bpm": 260.02,
+    "bar": 4,
+    "gap": 43019.30620721483,
+    "year": "2016",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.127Z",
+    "genre": "Kpop",
+    "videoGap": 18,
+    "realBpm": 130,
+    "volume": 0.56,
+    "author": "Subkei",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - TT.mp3",
+      "#COVER:TWICE - TT.jpg",
+      "#VIDEO:TWICE - TT.mp4",
+      "#MEDLEYSTARTBEAT:2020",
+      "#MEDLEYENDBEAT:2531"
+    ],
+    "tracksCount": 1,
+    "search": "twicett",
+    "local": false
+  },
+  {
+    "id": "twice-what-is-love",
+    "title": "What is Love?",
+    "artist": "TWICE",
+    "video": "i0p1bmr0EmE",
+    "language": "Korean",
+    "bpm": 338.04,
+    "bar": 4,
+    "gap": 5559.410720624778,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.128Z",
+    "videoGap": 0,
+    "realBpm": 170,
+    "volume": 0.66,
+    "author": "asdFer",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:TWICE - What is Love.mp3",
+      "#COVER:TWICE - What is Love.jpg",
+      "#VIDEO:TWICE - What is Love.mp4",
+      "#MEDLEYSTARTBEAT:948",
+      "#MEDLEYENDBEAT:1470"
+    ],
+    "tracksCount": 1,
+    "search": "twicewhatislove",
+    "local": false
+  },
+  {
     "id": "u2-beautiful-day",
     "title": "Beautiful Day",
     "artist": "U2",
@@ -38745,6 +41384,41 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "utadahikarusimpleandclean",
+    "local": false
+  },
+  {
+    "id": "valeria-lynch-que-ganas-de-no-verte-nunca-mas",
+    "title": "Qué ganas de no verte nunca más",
+    "artist": "Valeria Lynch",
+    "video": "dK39yZNnhHc",
+    "language": "Spanish",
+    "bpm": 250.94,
+    "bar": 4,
+    "gap": 8128.820833665418,
+    "year": "1984",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-01-19T05:46:36.129Z",
+    "genre": "Balada",
+    "videoGap": 0,
+    "realBpm": 125,
+    "volume": 0.83,
+    "author": "hache6975",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Valeria Lynch - Qué ganas de no verte nunca más.mp3",
+      "#VIDEO:Valeria Lynch - Qué ganas de no verte nunca más.mp4",
+      "#COVER:Valeria Lynch - Qué ganas de no verte nunca más [CO].jpg",
+      "#MEDLEYSTARTBEAT:1534",
+      "#MEDLEYENDBEAT:2285"
+    ],
+    "tracksCount": 1,
+    "search": "valerialynchqueganasdenovertenuncamas",
     "local": false
   },
   {
@@ -39805,6 +42479,69 @@
     "unsupportedProps": [],
     "tracksCount": 1,
     "search": "wojciechbujoczekkrolszamanow",
+    "local": false
+  },
+  {
+    "id": "wonder-girls-tell-me",
+    "title": "Tell Me",
+    "artist": "Wonder Girls",
+    "video": "3vVHy0XoIN4",
+    "language": "Korean",
+    "bpm": 254,
+    "bar": 4,
+    "gap": 38674.06299212598,
+    "year": "2007",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-01-19T05:46:36.130Z",
+    "videoGap": 22,
+    "realBpm": 127,
+    "volume": 0.79,
+    "author": "Rubn4",
+    "authorUrl": "",
+    "sourceUrl": "",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [
+      "#MP3:Wonder Girls - Tell Me.mp3",
+      "#COVER:Wonder Girls - Tell Me.jpg",
+      "#VIDEO:Wonder Girls - Tell Me.mp4",
+      "#MEDLEYSTARTBEAT:512",
+      "#MEDLEYENDBEAT:1021"
+    ],
+    "tracksCount": 1,
+    "search": "wondergirlstellme",
+    "local": false
+  },
+  {
+    "id": "yazoo-nobodys-diary",
+    "title": "Nobody’s Diary",
+    "artist": "Yazoo",
+    "video": "1qq7jTPkjVg",
+    "language": "English",
+    "bpm": 259.16,
+    "bar": 4,
+    "gap": 14616.051859854917,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-01-19T05:46:36.131Z",
+    "genre": "Pop",
+    "videoGap": 0,
+    "realBpm": 129,
+    "volume": 0.5,
+    "author": "Fepo",
+    "authorUrl": "",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=19961",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "unsupportedProps": [],
+    "tracksCount": 1,
+    "search": "yazoonobodysdiary",
     "local": false
   },
   {

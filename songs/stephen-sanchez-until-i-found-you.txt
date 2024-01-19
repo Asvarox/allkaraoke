@@ -1,0 +1,258 @@
+#ID:stephen-sanchez-until-i-found-you
+#ARTIST:Stephen Sanchez
+#TITLE:Until I Found You
+#CREATOR:schere-r-ki
+#CREATORURL:
+#BPM:202,1
+#REALBPM:100
+#YEAR:2021
+#SOURCEURL:
+#VIDEOID:GxldQ9eX2wo
+#VIDEOGAP:0
+#VOLUME:0,69
+#LANGUAGE:English
+#LASTUPDATE:2024-01-19T05:46:35.940Z
+#GAP:9615,131123206333
+#MP3:Stephen Sanchez - Until I Found You.mp3
+#COVER:Stephen Sanchez - Until I Found You [CO].jpg
+#BACKGROUND:Stephen Sanchez - Until I Found You [BG].jpg
+#VIDEO:v=GxldQ9eX2wo,co=https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b4/1a/06/b41a0606-87ba-1b74-5c57-dee5f2a751a2/22UMGIM72565.rgb.jpg/1200x1200bb.jpg,bg=sanchez-stephen-6338cd7da2790.jpg
+: 13 7 2 Geor
+: 21 20 -7 gia 
+- 41
+: 53 7 0 Wrap 
+: 61 3 2 me 
+: 65 7 0 up 
+: 73 3 -2 in 
+: 77 7 -2 all 
+: 85 8 -7 your- 
+: 97 7 -7 I 
+: 105 7 2 want 
+: 113 12 -7 you 
+- 125 136
+- 136
+: 149 7 0 In 
+: 157 3 2 my 
+: 161 7 0 arms 
+: 169 3 -2 Oh 
+: 173 7 -2 let 
+: 181 8 -7 me 
+: 197 7 2 hold 
+: 205 8 5 you 
+- 213 228
+- 228
+: 241 3 -7 I’ll 
+: 245 7 7 ne
+: 253 3 5 ver 
+: 257 7 2 let 
+: 265 3 5 you 
+: 269 7 2 go 
+: 277 3 0 a
+: 281 8 2 gain 
+- 289
+: 297 3 2 Like 
+: 301 3 0 I 
+: 305 12 -2 did 
+: 321 7 -2 Oh I 
+: 329 11 3 used 
+: 341 11 2 to 
+: 353 12 0 say 
+- 365
+: 369 3 -7 I 
+: 373 3 -7 would 
+: 377 7 -5 ne
+: 385 3 -5 ver 
+: 389 7 3 fall 
+: 397 3 2 in 
+: 401 7 -3 love 
+: 409 3 -3 a
+: 413 3 -3 gain 
+: 417 3 -2 un
+: 421 3 0 til 
+: 425 8 2 I 
+: 437 11 5 found 
+: 449 12 2 her 
+- 461
+: 465 3 -7 I 
+: 469 3 -7 said 
+: 473 7 -5 I 
+: 481 3 -5 would 
+: 485 7 3 ne
+: 493 3 2 ver 
+: 497 7 -3 fall 
+: 505 3 -3 un
+: 509 7 -2 less 
+: 517 3 0 it’s 
+: 521 4 2 you 
+: 529 3 5 I 
+: 533 7 5 fall 
+: 541 3 2 in
+: 545 3 2 to 
+: 549 8 0 ~o 
+- 557
+: 561 3 -7 I 
+: 565 3 -7 was 
+: 569 8 -5 lost with
+: 581 7 3 in 
+: 589 3 2 the 
+: 593 7 -3 dark
+: 601 3 -3 ness 
+: 605 7 -2 but 
+: 613 3 0 then 
+: 617 8 2 I 
+: 629 11 5 found 
+: 641 8 2 her 
+- 649
+: 653 7 7 I 
+: 661 3 5 fo
+: 665 7 2 und 
+: 673 35 3 you 
+: 709 3 2 ~u 
+: 713 24 0 ~u 
+- 737 768
+- 768
+: 781 7 2 Geor
+: 789 20 -7 gia 
+- 809
+: 821 7 0 Pulled 
+: 829 3 2 me 
+: 833 7 0 in 
+: 841 3 -2 I 
+: 845 7 -2 asked 
+: 853 8 -7 to 
+: 869 7 2 love 
+: 877 12 -7 her 
+- 889 904
+- 904
+: 917 7 0 Once 
+: 925 3 2 a
+: 929 7 0 gain 
+: 937 3 -2 you 
+: 941 7 -2 fell 
+: 949 8 -7 I 
+: 965 7 2 caught 
+: 973 8 5 you 
+- 981 996
+- 996
+: 1009 3 -7 I’ll 
+: 1013 7 7 ne
+: 1021 3 5 ver 
+: 1025 7 2 let 
+: 1033 3 5 you 
+: 1037 7 2 go 
+: 1045 3 0 a
+: 1049 8 2 gain 
+: 1065 3 2 like 
+: 1069 3 0 I 
+: 1073 12 -2 did 
+- 1085
+: 1089 7 -2 Oh I 
+: 1097 11 3 used 
+: 1109 11 2 to 
+: 1121 12 0 say 
+- 1133
+: 1137 3 -7 I 
+: 1141 3 -7 would 
+: 1145 7 -5 ne
+: 1153 3 -5 ver 
+: 1157 7 3 fall 
+: 1165 3 2 in 
+: 1169 7 -3 love 
+: 1177 3 -3 a
+: 1181 3 -3 gain 
+: 1185 3 -2 un
+: 1189 3 0 til 
+: 1193 8 2 I 
+: 1205 11 5 found 
+: 1217 12 2 her 
+- 1229
+: 1233 3 -7 I 
+: 1237 3 -7 said 
+: 1241 7 -5 I 
+: 1249 3 -5 would 
+: 1253 7 3 ne
+: 1261 3 2 ver 
+: 1265 7 -3 fall 
+: 1273 3 -3 un
+: 1277 7 -2 less 
+: 1285 3 0 it’s 
+: 1289 4 2 you 
+: 1297 3 5 I 
+: 1301 7 5 fall 
+: 1309 3 2 in
+: 1313 3 2 to 
+: 1317 8 0 ~o 
+- 1325
+: 1329 3 -7 I 
+: 1333 3 -7 was 
+: 1337 8 -5 lost with
+: 1349 7 3 in 
+: 1357 3 2 the 
+: 1361 7 -3 dark
+: 1369 3 -3 ness 
+: 1373 7 -2 but 
+: 1381 3 0 then 
+: 1385 8 2 I 
+: 1397 11 5 found 
+: 1409 8 2 her 
+- 1417
+: 1421 7 7 I 
+: 1429 3 5 fo
+: 1433 7 2 und 
+: 1441 35 3 you 
+: 1477 3 2 ~u 
+: 1481 24 0 ~u 
+- 1505 1700
+- 1700
+: 1713 3 -7 I 
+: 1717 3 -7 would 
+: 1721 7 -5 ne
+: 1729 3 -5 ver 
+: 1733 7 3 fall 
+: 1741 3 2 in 
+: 1745 7 -3 love 
+: 1753 3 -3 a
+: 1757 3 -3 gain 
+: 1761 3 -2 un
+: 1765 3 0 til 
+: 1769 8 2 I 
+: 1781 11 5 found 
+: 1793 12 2 her 
+- 1805
+: 1809 3 -7 I 
+: 1813 3 -7 said 
+: 1817 7 -5 I 
+: 1825 3 -5 would 
+: 1829 7 3 ne
+: 1837 3 2 ver 
+: 1841 7 -3 fall 
+: 1849 3 -3 un
+: 1853 7 -2 less 
+: 1861 3 0 it’s 
+: 1865 4 2 you 
+: 1873 3 5 I 
+: 1877 7 5 fall 
+: 1885 3 2 in
+: 1889 3 2 to 
+: 1893 8 0 ~o 
+- 1901
+: 1905 3 -7 I 
+: 1909 3 -7 was 
+: 1913 8 -5 lost with
+: 1925 7 3 in 
+: 1933 3 2 the 
+: 1937 7 -3 dark
+: 1945 3 -3 ness 
+: 1949 7 -2 but 
+: 1957 3 0 then 
+: 1961 8 2 I 
+: 1973 11 5 found 
+: 1985 8 2 her 
+- 1993
+: 1997 7 7 I 
+: 2005 3 5 fo
+: 2009 7 2 und 
+: 2017 35 3 you 
+: 2053 3 2 ~u 
+: 2057 36 0 ~u 
+E
