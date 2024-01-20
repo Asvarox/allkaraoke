@@ -1,18 +1,16 @@
-#ID:monika-brodka-dziewczyna-mojego-chlopaka
 #ARTIST:Monika Brodka
-#ARTISTORIGIN:PL
 #TITLE:Dziewczyna mojego chłopaka
-#CREATOR:
-#CREATORURL:davidus01
 #BPM:100
-#REALBPM:99
 #YEAR:2004
-#SOURCEURL:
-#VIDEOID:8_icFGaCtsc
+#VIDEO:v=8_icFGaCtsc
 #VIDEOGAP:-1
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-01T21:23:06.731Z
 #GAP:28850
+#ALLKARAOKE_ID:monika-brodka-dziewczyna-mojego-chlopaka
+#ALLKARAOKE_LASTUPDATE:2023-01-01T21:23:06.731Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:davidus01
+#ALLKARAOKE_REALBPM:99
 : 7 2 2 Jak 
 : 9 2 2 zwy
 : 11 2 4 kle 

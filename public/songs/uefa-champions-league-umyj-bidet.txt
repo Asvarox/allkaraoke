@@ -1,17 +1,16 @@
-#ID:uefa-champions-league-umyj-bidet
 #ARTIST:UEFA
 #TITLE:Champions League (Umyj Bidet)
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:113,35
-#REALBPM:125
 #YEAR:1992
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10892
-#VIDEOID:Pa5yG1JdvLA
-#VIDEOGAP:0
+#VIDEO:v=Pa5yG1JdvLA
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-27T22:38:53.515Z
 #GAP:25853,33215703573
+#ALLKARAOKE_ID:uefa-champions-league-umyj-bidet
+#ALLKARAOKE_LASTUPDATE:2023-01-27T22:38:53.515Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10892
 : 8 2 14 Sły
 * 12 8 19 sza
 : 22 2 14 łem 

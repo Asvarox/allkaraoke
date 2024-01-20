@@ -1,19 +1,18 @@
-#ID:edyta-gorniak-mietek-szczesniak-dumka-na-dwa-serca
 #ARTIST:Edyta Górniak & Mietek Szcześniak
 #TITLE:Dumka na dwa serca
 #CREATOR:Pure6
-#CREATORURL:
 #BPM:153,95
-#REALBPM:77
 #YEAR:1999
-#SOURCEURL:
-#VIDEOID:wcXAKhwsl6o
+#VIDEO:v=wcXAKhwsl6o
 #VIDEOGAP:-1
-#VOLUME:0,9
 #GENRE:Soundtrack
 #LANGUAGE:Polish
 #GAP:8773,65768106528
-#TRACKNAMES:["Edyta Górniak","Mietek Szcześniak"]
+#ALLKARAOKE_ID:edyta-gorniak-mietek-szczesniak-dumka-na-dwa-serca
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_VOLUME:0,9
+#P1:Edyta Górniak
+#P2:Mietek Szcześniak
 : 10 4 14 Mój 
 : 17 2 14 so
 : 20 4 13 ko

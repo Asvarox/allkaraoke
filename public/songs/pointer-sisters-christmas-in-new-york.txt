@@ -1,21 +1,20 @@
-#ID:pointer-sisters-christmas-in-new-york
 #ARTIST:Pointer Sisters
-#ARTISTORIGIN:US
 #TITLE:Christmas in New York
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:251,86
-#REALBPM:126
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pointer%20Sisters&cancion=Christmas%20in%20New%20York
-#VIDEOID:UhD81e6Aass
-#VIDEOGAP:0
-#VOLUME:0,71
+#VIDEO:v=UhD81e6Aass
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:24.730Z
-#EDITION:Christmas
 #GAP:2357,532756293179
+#EDITION:Christmas
+#ALLKARAOKE_ID:pointer-sisters-christmas-in-new-york
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:24.730Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pointer%20Sisters&cancion=Christmas%20in%20New%20York
+#ALLKARAOKE_VOLUME:0,71
 F 17 1 7 Oh
 F 19 3 9 ~, 
 F 25 1 4 yeah

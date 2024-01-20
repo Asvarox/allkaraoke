@@ -1,18 +1,15 @@
-#ID:lana-del-rey-summertime-sadness
 #ARTIST:Lana Del Rey
-#ARTISTORIGIN:US
 #TITLE:Summertime Sadness
-#CREATOR:
-#CREATORURL:
 #BPM:224,06
-#REALBPM:112
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey
-#VIDEOID:nVjsGKrE6E8
-#VIDEOGAP:0
+#VIDEO:v=nVjsGKrE6E8
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:27:22.036Z
 #GAP:33583,80469517093
+#ALLKARAOKE_ID:lana-del-rey-summertime-sadness
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:27:22.036Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey
 : 15 3 13 Kiss 
 : 19 3 13 me 
 : 23 3 13 hard 

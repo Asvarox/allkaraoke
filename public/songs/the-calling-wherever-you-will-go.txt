@@ -1,20 +1,19 @@
-#ID:the-calling-wherever-you-will-go
 #ARTIST:The Calling
-#ARTISTORIGIN:US
 #TITLE:Wherever You Will Go
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:224,2
-#REALBPM:112
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Calling&cancion=Wherever%20You%20Will%20Go
-#VIDEOID:iAP9AF6DCu4
-#VIDEOGAP:0
+#VIDEO:v=iAP9AF6DCu4
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-06T23:57:54.276Z
-#EDITION:SingStar Rock Ballads
 #GAP:8095,4317573595
+#EDITION:SingStar Rock Ballads
+#ALLKARAOKE_ID:the-calling-wherever-you-will-go
+#ALLKARAOKE_LASTUPDATE:2023-01-06T23:57:54.276Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Calling&cancion=Wherever%20You%20Will%20Go
 : 15 3 45 So 
 : 19 7 49 late
 : 27 8 50 ly

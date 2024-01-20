@@ -1,22 +1,20 @@
-#ID:fred-rottcher-pokemon-theme-german
 #ARTIST:Fred Röttcher
-#ARTISTORIGIN:DE
 #TITLE:Pokémon Theme (German)
 #CREATOR:Ultorex
-#CREATORURL:
 #BPM:290,02
-#REALBPM:145
 #YEAR:2000
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=15907
 #PREVIEWSTART:38
-#PREVIEWEND:94
-#VIDEOID:LUlZ5n0cyak
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=LUlZ5n0cyak
 #GENRE:Anime
 #LANGUAGE:German
-#LASTUPDATE:2023-12-22T16:33:52.506Z
 #GAP:6677,309151093028
+#ALLKARAOKE_ID:fred-rottcher-pokemon-theme-german
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:52.506Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=15907
+#ALLKARAOKE_PREVIEWEND:94
+#ALLKARAOKE_VOLUME:0,7
 : 19 2 -5 Ich 
 : 23 3 2 will 
 : 27 2 2 der 

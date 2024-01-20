@@ -1,19 +1,18 @@
-#ID:celine-dion-garou-sous-le-vent
 #ARTIST:Céline Dion & Garou
 #TITLE:Sous le vent
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:141
-#REALBPM:141
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion%20%26%20Garou&cancion=Sous%20le%20vent
-#VIDEOID:a2_ss9y-VjE
-#VIDEOGAP:0
+#VIDEO:v=a2_ss9y-VjE
 #GENRE:Pop
 #LANGUAGE:French
-#LASTUPDATE:2023-01-26T03:23:17.114Z
-#EDITION:SS Pop Hits 4
 #GAP:28592,55319148936
+#EDITION:SS Pop Hits 4
+#ALLKARAOKE_ID:celine-dion-garou-sous-le-vent
+#ALLKARAOKE_LASTUPDATE:2023-01-26T03:23:17.114Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:141
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion%20%26%20Garou&cancion=Sous%20le%20vent
 : 9 2 45 Et 
 : 11 1 57 si 
 : 13 1 57 tu 

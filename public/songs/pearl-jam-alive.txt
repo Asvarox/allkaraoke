@@ -1,20 +1,19 @@
-#ID:pearl-jam-alive
 #ARTIST:Pearl Jam
-#ARTISTORIGIN:US
 #TITLE:Alive
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:150
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Alive
-#VIDEOID:qM0zINtulhM
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=qM0zINtulhM
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Amped
 #GAP:16985,29411764706
+#EDITION:SingStar Amped
+#ALLKARAOKE_ID:pearl-jam-alive
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Alive
+#ALLKARAOKE_VOLUME:0,91
 F 23 9 36 Wah
 - 55 412
 - 412

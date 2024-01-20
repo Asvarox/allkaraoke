@@ -1,19 +1,18 @@
-#ID:green-day-wake-me-up-when-september-ends
 #ARTIST:Green Day
-#ARTISTORIGIN:US
 #TITLE:Wake Me Up When September Ends
 #CREATOR:jusmo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=jusmo
 #BPM:340
-#REALBPM:105
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Wake%20Me%20Up%20When%20September%20Ends
-#VIDEOID:rdpBZ5_b48g
-#VIDEOGAP:0
-#VOLUME:0,59
+#VIDEO:v=rdpBZ5_b48g
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T18:59:20.459Z
 #GAP:8445,29411764706
+#ALLKARAOKE_ID:green-day-wake-me-up-when-september-ends
+#ALLKARAOKE_LASTUPDATE:2023-04-19T18:59:20.459Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=jusmo
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Wake%20Me%20Up%20When%20September%20Ends
+#ALLKARAOKE_VOLUME:0,59
 : 23 18 -3 Sum
 : 43 10 -1 mer 
 : 55 18 -1 has 

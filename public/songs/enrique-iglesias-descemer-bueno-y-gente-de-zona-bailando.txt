@@ -1,20 +1,19 @@
-#ID:enrique-iglesias-descemer-bueno-y-gente-de-zona-bailando
 #ARTIST:Enrique Iglesias, Descemer Bueno y Gente de Zona
 #TITLE:Bailando
 #CREATOR:Volodia
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #BPM:364,04
-#REALBPM:91
 #YEAR:2014
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias%2C%20Descemer%20Bueno%20y%20Gente%20de%20Zona&cancion=Bailando
-#VIDEOID:NUsoVlDFqZg
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=NUsoVlDFqZg
 #GENRE:Reggaeton
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.561Z
-#EDITION:UltraStar canciones del verano
 #GAP:20905,097681573454
+#EDITION:UltraStar canciones del verano
+#ALLKARAOKE_ID:enrique-iglesias-descemer-bueno-y-gente-de-zona-bailando
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.561Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
+#ALLKARAOKE_REALBPM:91
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias%2C%20Descemer%20Bueno%20y%20Gente%20de%20Zona&cancion=Bailando
+#ALLKARAOKE_VOLUME:0,6
 F 24 2 11 Je, 
 F 30 1 11 je, 
 F 34 3 11 je, 

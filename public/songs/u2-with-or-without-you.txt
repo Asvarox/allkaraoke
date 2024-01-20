@@ -1,19 +1,18 @@
-#ID:u2-with-or-without-you
 #ARTIST:U2
-#ARTISTORIGIN:IE
 #TITLE:With or without you
 #CREATOR:Kodaman
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
 #BPM:219,96
-#REALBPM:112
 #YEAR:1987
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=With%20or%20without%20you
-#VIDEOID:ujNeHIo7oTE
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=ujNeHIo7oTE
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:28473
+#ALLKARAOKE_ID:u2-with-or-without-you
+#ALLKARAOKE_ARTISTORIGIN:IE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=With%20or%20without%20you
+#ALLKARAOKE_VOLUME:0,9
 : 0 3 14 See
 : 6 3 16  the
 : 10 3 18  stone

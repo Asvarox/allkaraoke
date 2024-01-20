@@ -1,17 +1,16 @@
-#ID:ed-sheeran-thinking-out-loud
 #ARTIST:Ed Sheeran
-#ARTISTORIGIN:GB
 #TITLE:Thinking out loud
 #CREATOR:Volodia
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #BPM:316,04
-#REALBPM:78
 #YEAR:2014
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Thinking%20out%20loud
-#VIDEOID:lp-EO5I60KA
-#VIDEOGAP:0
+#VIDEO:v=lp-EO5I60KA
 #LANGUAGE:English
 #GAP:8042,290722693329
+#ALLKARAOKE_ID:ed-sheeran-thinking-out-loud
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
+#ALLKARAOKE_REALBPM:78
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Thinking%20out%20loud
 : 21 2 -6 When 
 : 24 3 -3 your 
 : 30 2 -3 legs

@@ -1,22 +1,18 @@
-#ID:stephen-sanchez-until-i-found-you
 #ARTIST:Stephen Sanchez
 #TITLE:Until I Found You
 #CREATOR:schere-r-ki
-#CREATORURL:
 #BPM:202,1
-#REALBPM:100
 #YEAR:2021
-#SOURCEURL:
-#VIDEOID:GxldQ9eX2wo
-#VIDEOGAP:0
-#VOLUME:0,69
+#VIDEO:v=GxldQ9eX2wo
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:35.940Z
 #GAP:9615,131123206333
+#ALLKARAOKE_ID:stephen-sanchez-until-i-found-you
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:35.940Z
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:0,69
 #MP3:Stephen Sanchez - Until I Found You.mp3
 #COVER:Stephen Sanchez - Until I Found You [CO].jpg
 #BACKGROUND:Stephen Sanchez - Until I Found You [BG].jpg
-#VIDEO:v=GxldQ9eX2wo,co=https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b4/1a/06/b41a0606-87ba-1b74-5c57-dee5f2a751a2/22UMGIM72565.rgb.jpg/1200x1200bb.jpg,bg=sanchez-stephen-6338cd7da2790.jpg
 : 13 7 2 Geor
 : 21 20 -7 gia 
 - 41

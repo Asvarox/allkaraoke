@@ -1,18 +1,17 @@
-#ID:imagine-dragons-its-time
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:It's Time
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:280,02
-#REALBPM:105
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=It's%20Time
-#VIDEOID:sENM2wA_FTg
-#VIDEOGAP:0
+#VIDEO:v=sENM2wA_FTg
 #GENRE:Alternative
 #LANGUAGE:English
 #GAP:18082
+#ALLKARAOKE_ID:imagine-dragons-its-time
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=It's%20Time
 : 0 3 9 So
 : 5 1 9  this
 : 10 1 6  is

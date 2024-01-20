@@ -1,19 +1,19 @@
-#ID:alejandro-sanz-corazun-partio
 #ARTIST:Alejandro Sanz
-#ARTISTORIGIN:ES
 #TITLE:Corazón partío
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:321
-#REALBPM:160
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alejandro%20Sanz&cancion=Coraz%C3%B3n%20part%C3%ADo
-#VIDEOID:ZMUqIoDtSwc
+#VIDEO:v=ZMUqIoDtSwc
 #VIDEOGAP:-4
-#VOLUME:0,7
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.553Z
 #GAP:23668,69158878505
+#ALLKARAOKE_ID:alejandro-sanz-corazun-partio
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.553Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alejandro%20Sanz&cancion=Coraz%C3%B3n%20part%C3%ADo
+#ALLKARAOKE_VOLUME:0,7
 : 21 3 7 Ya 
 : 25 3 9 lo 
 : 29 7 9 ves

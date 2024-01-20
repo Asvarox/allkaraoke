@@ -1,17 +1,16 @@
-#ID:ylvis-the-fox
 #ARTIST:Ylvis
-#ARTISTORIGIN:NO
 #TITLE:The Fox
 #CREATOR:Lorchen
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
 #BPM:258,58
-#REALBPM:128
 #YEAR:2013
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ylvis&cancion=The%20Fox
-#VIDEOID:jofNR_WkoCE
-#VIDEOGAP:0
+#VIDEO:v=jofNR_WkoCE
 #LANGUAGE:English
 #GAP:11770,844844922267
+#ALLKARAOKE_ID:ylvis-the-fox
+#ALLKARAOKE_ARTISTORIGIN:NO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ylvis&cancion=The%20Fox
 : 17 2 6 Dog
 : 20 3 8 ~ 
 : 25 3 8 goes

@@ -1,19 +1,19 @@
-#ID:queen-another-one-bites-the-dust
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:Another One Bites the Dust
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:220,66
-#REALBPM:112
 #YEAR:1980
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Another%20One%20Bites%20the%20Dust
-#VIDEOID:rY0WxgSXdEE
+#VIDEO:v=rY0WxgSXdEE
 #VIDEOGAP:5
-#VOLUME:0,85
 #LANGUAGE:English
-#EDITION:SingStar Queen
 #GAP:25041,67
+#EDITION:SingStar Queen
+#ALLKARAOKE_ID:queen-another-one-bites-the-dust
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Another%20One%20Bites%20the%20Dust
+#ALLKARAOKE_VOLUME:0,85
 F 0 6 67 Ooh
 - 8
 F 16 3 67 Let's

@@ -1,18 +1,17 @@
-#ID:imagine-dragons-bad-liar
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Bad Liar
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:203,22
-#REALBPM:89
 #YEAR:2019
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Bad%20Liar
-#VIDEOID:I-QfPUz1es8
-#VIDEOGAP:0
+#VIDEO:v=I-QfPUz1es8
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:28190
+#ALLKARAOKE_ID:imagine-dragons-bad-liar
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Bad%20Liar
 : 0 2 4 Oh,
 : 3 3 4  hush,
 : 12 6 7  my

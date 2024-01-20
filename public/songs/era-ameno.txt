@@ -1,17 +1,17 @@
-#ID:era-ameno
 #ARTIST:ERA
-#ARTISTORIGIN:FR
 #TITLE:Ameno
 #CREATOR:robertdjangelux
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=robertdjangelux
 #BPM:240
-#REALBPM:102
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ERA&cancion=Ameno
-#VIDEOID:onjPLuZp6hY
+#VIDEO:v=onjPLuZp6hY
 #VIDEOGAP:31
 #LANGUAGE:Latin
 #GAP:33370
+#ALLKARAOKE_ID:era-ameno
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=robertdjangelux
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ERA&cancion=Ameno
 : 16 3 10 Do
 : 21 2 11 ri
 : 25 5 11 me

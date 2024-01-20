@@ -1,17 +1,14 @@
-#ID:kayah-bregovic-spij-kochanie-spij
 #ARTIST:Kayah & Bregovic
-#ARTISTORIGIN:PL
 #TITLE:Śpij kochanie śpij
 #CREATOR:Yooma
-#CREATORURL:
 #BPM:194
-#REALBPM:100
 #YEAR:1999
-#SOURCEURL:
-#VIDEOID:95De6ax4QTA
-#VIDEOGAP:0
+#VIDEO:v=95De6ax4QTA
 #LANGUAGE:Polish
 #GAP:-72,91752577319596
+#ALLKARAOKE_ID:kayah-bregovic-spij-kochanie-spij
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:100
 : 6 6 0 O
 : 13 6 2 o
 : 20 7 3 o

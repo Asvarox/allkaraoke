@@ -1,19 +1,18 @@
-#ID:survivor-eye-of-the-tiger
 #ARTIST:Survivor
-#ARTISTORIGIN:US
 #TITLE:Eye Of The Tiger
 #CREATOR:Hammy
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=574
 #BPM:218,7
-#REALBPM:108
 #YEAR:1982
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2361
-#VIDEOID:btPJPFnesV4
-#VIDEOGAP:0
+#VIDEO:v=btPJPFnesV4
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar 80s
 #GAP:48785,540145985404
+#EDITION:SingStar 80s
+#ALLKARAOKE_ID:survivor-eye-of-the-tiger
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=574
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2361
 : 15 3 67 Ri
 : 19 2 70 sin' 
 : 21 4 67 up

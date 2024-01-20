@@ -1,18 +1,17 @@
-#ID:jacek-kaczmarski-mury
 #ARTIST:Jacek Kaczmarski
-#ARTISTORIGIN:PL
 #TITLE:Mury
 #CREATOR:zartas
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=113646
 #BPM:203,0125
-#REALBPM:114
 #YEAR:1980
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=17614
-#VIDEOID:4Qa__lJvpYY
-#VIDEOGAP:0
+#VIDEO:v=4Qa__lJvpYY
 #LANGUAGE:Polish
-#LASTUPDATE:2023-08-15T14:54:44.563Z
 #GAP:8470
+#ALLKARAOKE_ID:jacek-kaczmarski-mury
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.563Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=113646
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=17614
 : 0 6 4 On 
 : 10 3 4 na
 : 15 4 6 tchnio

@@ -1,19 +1,18 @@
-#ID:red-hot-chili-peppers-dani-california
 #ARTIST:Red Hot Chili Peppers
-#ARTISTORIGIN:US
 #TITLE:Dani California
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:388,94
-#REALBPM:96
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Dani%20California
-#VIDEOID:Sb5aq5HcS1A
-#VIDEOGAP:0
+#VIDEO:v=Sb5aq5HcS1A
 #GENRE:Rock Internacional
 #LANGUAGE:English
-#EDITION:Rock Band
 #GAP:15421,274643903944
+#EDITION:Rock Band
+#ALLKARAOKE_ID:red-hot-chili-peppers-dani-california
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Dani%20California
 : 26 2 11 Get
 : 29 4 11 ting 
 : 34 2 11 born

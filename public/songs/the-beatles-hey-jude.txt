@@ -1,18 +1,17 @@
-#ID:the-beatles-hey-jude
 #ARTIST:The Beatles
-#ARTISTORIGIN:GB
 #TITLE:Hey Jude
 #CREATOR:dekkard
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
 #BPM:299,2
-#REALBPM:74
 #YEAR:1970
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Hey%20Jude
-#VIDEOID:mQER0A0ej0M
-#VIDEOGAP:0
+#VIDEO:v=mQER0A0ej0M
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:-896
+#ALLKARAOKE_ID:the-beatles-hey-jude
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Hey%20Jude
 - -19 1
 - 1
 : 20 11 11 Hey, 

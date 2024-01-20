@@ -1,19 +1,18 @@
-#ID:the-doors-riders-on-the-storm
 #ARTIST:The Doors
-#ARTISTORIGIN:US
 #TITLE:Riders on the storm
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:390,04
-#REALBPM:99
 #YEAR:1971
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Doors&cancion=Riders%20on%20the%20storm
-#VIDEOID:1hrgT_ZDUvs
-#VIDEOGAP:0
+#VIDEO:v=1hrgT_ZDUvs
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 4
 #GAP:48644,10255358425
+#EDITION:Rock Band Store 2010 Vol. 4
+#ALLKARAOKE_ID:the-doors-riders-on-the-storm
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Doors&cancion=Riders%20on%20the%20storm
 : 26 6 4 Ri
 : 33 6 4 ders 
 : 42 6 7 on 

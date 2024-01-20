@@ -1,18 +1,17 @@
-#ID:muse-reapers
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Reapers
 #CREATOR:gun88
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
 #BPM:384
-#REALBPM:96
 #YEAR:2015
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Reapers
-#VIDEOID:gcNEC9NaJuE
-#VIDEOGAP:0
+#VIDEO:v=gcNEC9NaJuE
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:29877
+#ALLKARAOKE_ID:muse-reapers
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Reapers
 * 0 20 5 Home
 - 30
 : 40 3 -3 It's

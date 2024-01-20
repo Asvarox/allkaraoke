@@ -1,18 +1,18 @@
-#ID:the-beatles-yesterday
 #ARTIST:The Beatles
-#ARTISTORIGIN:GB
 #TITLE:Yesterday
 #CREATOR:dekkard
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
 #BPM:300
-#REALBPM:96
 #YEAR:1965
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Yesterday
-#VIDEOID:NrgmdOz227I
+#VIDEO:v=NrgmdOz227I
 #VIDEOGAP:3
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:4350
+#ALLKARAOKE_ID:the-beatles-yesterday
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dekkard
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Yesterday
 - -19 1
 - 1
 : 20 4 7 Yes

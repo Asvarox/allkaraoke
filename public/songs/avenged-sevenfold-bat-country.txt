@@ -1,19 +1,19 @@
-#ID:avenged-sevenfold-bat-country
 #ARTIST:Avenged Sevenfold
-#ARTISTORIGIN:US
 #TITLE:Bat Country
 #CREATOR:¡JKA!
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #BPM:398,32
-#REALBPM:123
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Bat%20Country
-#VIDEOID:IHS3qJdxefY
+#VIDEO:v=IHS3qJdxefY
 #VIDEOGAP:-3
 #GENRE:Metal
 #LANGUAGE:English
-#EDITION:Guitar Hero Warriors of Rock
 #GAP:-1172,7704358304882
+#EDITION:Guitar Hero Warriors of Rock
+#ALLKARAOKE_ID:avenged-sevenfold-bat-country
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Bat%20Country
 - 0 167
 - 167
 F 194 228 12 Mah!

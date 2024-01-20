@@ -1,20 +1,19 @@
-#ID:boney-m-feliz-navidad
 #ARTIST:Boney M.
 #TITLE:Feliz navidad
 #CREATOR:JMz
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=5869
 #BPM:296
-#REALBPM:121
 #YEAR:1981
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5325
-#VIDEOID:BDFCRcWTkw4
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=BDFCRcWTkw4
 #GENRE:None
 #LANGUAGE:English, Spanish
-#LASTUPDATE:2023-11-30T16:28:13.851Z
-#EDITION:Christmas
 #GAP:13557,241379310344
+#EDITION:Christmas
+#ALLKARAOKE_ID:boney-m-feliz-navidad
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:13.851Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=5869
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5325
+#ALLKARAOKE_VOLUME:0,7
 : 19 3 11 Fe
 : 23 8 16 liz 
 : 35 3 15 Na

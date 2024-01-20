@@ -1,18 +1,17 @@
-#ID:muse-knights-of-cydonia
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Knights of Cydonia
 #CREATOR:Spys4Darwin
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
 #BPM:274
-#REALBPM:136
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Knights%20of%20Cydonia
-#VIDEOID:G_sBOsh-vyI
-#VIDEOGAP:0
+#VIDEO:v=G_sBOsh-vyI
 #GENRE:Alternative Rock
 #LANGUAGE:English
 #GAP:19630
+#ALLKARAOKE_ID:muse-knights-of-cydonia
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Knights%20of%20Cydonia
 : 0 11 4 Ah
 : 14 12 4  Ah
 : 29 24 2  Ah

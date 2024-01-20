@@ -1,21 +1,20 @@
-#ID:chris-rea-driving-home-for-christmas
 #ARTIST:Chris Rea
-#ARTISTORIGIN:GB
 #TITLE:Driving Home For Christmas
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:360,4
-#REALBPM:90
 #YEAR:1986
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=617
-#VIDEOID:uSjq7x67kzM
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=uSjq7x67kzM
 #GENRE:Christmas
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T12:36:42.328Z
-#EDITION:Christmas
 #GAP:21871,10987791343
+#EDITION:Christmas
+#ALLKARAOKE_ID:chris-rea-driving-home-for-christmas
+#ALLKARAOKE_LASTUPDATE:2023-11-30T12:36:42.328Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=617
+#ALLKARAOKE_VOLUME:0,6
 : 24 3 13 I’m 
 : 28 5 13 dri
 : 34 5 11 vin’ 

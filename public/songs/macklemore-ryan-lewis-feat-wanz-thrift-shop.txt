@@ -1,21 +1,20 @@
-#ID:macklemore-ryan-lewis-feat-wanz-thrift-shop
 #ARTIST:Macklemore & Ryan Lewis feat. Wanz
 #TITLE:Thrift Shop
 #CREATOR:gun8
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
 #BPM:380
-#REALBPM:190
 #YEAR:2012
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=15450
 #PREVIEWSTART:31
-#PREVIEWEND:61
-#VIDEOID:QK8mJJJvaes
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=QK8mJJJvaes
 #GENRE:Hip-Hop
 #LANGUAGE:English
-#LASTUPDATE:2023-12-22T16:33:53.125Z
 #GAP:-298,9473684210526
+#ALLKARAOKE_ID:macklemore-ryan-lewis-feat-wanz-thrift-shop
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:53.125Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
+#ALLKARAOKE_REALBPM:190
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=15450
+#ALLKARAOKE_PREVIEWEND:61
+#ALLKARAOKE_VOLUME:0,75
 F 2 4 -12 What 
 - 6
 F 14 4 -12 What 

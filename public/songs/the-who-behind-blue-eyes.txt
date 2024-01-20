@@ -1,20 +1,19 @@
-#ID:the-who-behind-blue-eyes
 #ARTIST:The Who
-#ARTISTORIGIN:GB
 #TITLE:Behind Blue Eyes
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:393,24
-#REALBPM:137
 #YEAR:1971
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Behind%20Blue%20Eyes
-#VIDEOID:KmbCOMM8peo
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=KmbCOMM8peo
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:Rock Band Track Pack Classic Rock
 #GAP:7346,217510957089
+#EDITION:Rock Band Track Pack Classic Rock
+#ALLKARAOKE_ID:the-who-behind-blue-eyes
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:137
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Behind%20Blue%20Eyes
+#ALLKARAOKE_VOLUME:0,9
 : 26 7 11 No 
 : 34 4 11 one 
 : 45 9 11 knows 

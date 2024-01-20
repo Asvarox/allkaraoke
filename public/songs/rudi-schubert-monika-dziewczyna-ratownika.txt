@@ -1,18 +1,17 @@
-#ID:rudi-schubert-monika-dziewczyna-ratownika
 #ARTIST:Rudi Schubert
-#ARTISTORIGIN:DE
 #TITLE:Monika dziewczyna ratownika
 #CREATOR:jockel1974
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #BPM:372
-#REALBPM:95
 #YEAR:1985
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2957
-#VIDEOID:jHv0M0i6Gu4
-#VIDEOGAP:0
+#VIDEO:v=jHv0M0i6Gu4
 #GENRE:Pop
 #LANGUAGE:Polish
 #GAP:4221,935483870968
+#ALLKARAOKE_ID:rudi-schubert-monika-dziewczyna-ratownika
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2957
 : 25 4 4 Na 
 : 31 4 9 pla
 : 35 6 9 ży 

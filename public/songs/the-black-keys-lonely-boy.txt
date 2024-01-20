@@ -1,19 +1,18 @@
-#ID:the-black-keys-lonely-boy
 #ARTIST:The Black Keys
-#ARTISTORIGIN:US
 #TITLE:Lonely boy
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:397,67
-#REALBPM:166
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Keys&cancion=Lonely%20boy
-#VIDEOID:a_426RiwST8
-#VIDEOGAP:0
+#VIDEO:v=a_426RiwST8
 #GENRE:Garage Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2012 Vol. 3
 #GAP:38471,56763145322
+#EDITION:Rock Band Store 2012 Vol. 3
+#ALLKARAOKE_ID:the-black-keys-lonely-boy
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:166
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Keys&cancion=Lonely%20boy
 - -26 1
 - 1
 : 27 7 11 Well 

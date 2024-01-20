@@ -1,18 +1,17 @@
-#ID:imagine-dragons-radioactive
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Radioactive
 #CREATOR:dontellme
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
 #BPM:400
-#REALBPM:68
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Radioactive
-#VIDEOID:ktvTqknDobU
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=ktvTqknDobU
 #LANGUAGE:English
 #GAP:35040
+#ALLKARAOKE_ID:imagine-dragons-radioactive
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
+#ALLKARAOKE_REALBPM:68
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Radioactive
+#ALLKARAOKE_VOLUME:0,75
 : 0 2 -3 I'm
 : 8 6 6  wa
 : 16 4 6 king

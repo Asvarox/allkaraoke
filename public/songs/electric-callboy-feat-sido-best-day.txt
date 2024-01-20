@@ -1,21 +1,20 @@
-#ID:electric-callboy-feat-sido-best-day
 #ARTIST:Electric Callboy feat. Sido
 #TITLE:Best Day
 #CREATOR:Su-Metal
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=156515
 #BPM:356,96
-#REALBPM:107
 #YEAR:2015
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=25973
 #PREVIEWSTART:68
-#PREVIEWEND:90
-#VIDEOID:Mj0e1DvUFk8
-#VIDEOGAP:0
-#VOLUME:0,73
+#VIDEO:v=Mj0e1DvUFk8
 #GENRE:Metal
 #LANGUAGE:English, German
-#LASTUPDATE:2023-12-22T16:33:52.367Z
 #GAP:29741,483639623486
+#ALLKARAOKE_ID:electric-callboy-feat-sido-best-day
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:52.367Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=156515
+#ALLKARAOKE_REALBPM:107
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=25973
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,73
 : 24 4 5 Like 
 : 31 3 4 a 
 : 39 6 4 wis

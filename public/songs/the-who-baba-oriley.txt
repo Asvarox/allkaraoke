@@ -1,20 +1,19 @@
-#ID:the-who-baba-oriley
 #ARTIST:The Who
-#ARTISTORIGIN:GB
 #TITLE:Baba O'Riley
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:405,93
-#REALBPM:117
 #YEAR:1969
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Baba%20O'Riley
-#VIDEOID:QRTNm6GLJYI
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=QRTNm6GLJYI
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:Rock Band Track Pack Classic Rock
 #GAP:64881,72126819701
+#EDITION:Rock Band Track Pack Classic Rock
+#ALLKARAOKE_ID:the-who-baba-oriley
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Baba%20O'Riley
+#ALLKARAOKE_VOLUME:0,9
 : 27 3 21 Out 
 : 35 8 21 here 
 : 45 2 19 in 

@@ -1,18 +1,17 @@
-#ID:rage-against-the-machine-killing-in-the-name
 #ARTIST:Rage Against The Machine
-#ARTISTORIGIN:US
 #TITLE:Killing In The Name
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:365,28
-#REALBPM:88
 #YEAR:1992
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rage%20Against%20The%20Machine&cancion=Killing%20In%20The%20Name
-#VIDEOID:bWXazVhlyxQ
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=bWXazVhlyxQ
 #LANGUAGE:English
 #GAP:39623,454664914585
+#ALLKARAOKE_ID:rage-against-the-machine-killing-in-the-name
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:88
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rage%20Against%20The%20Machine&cancion=Killing%20In%20The%20Name
+#ALLKARAOKE_VOLUME:1
 * 24 3 18 Kill
 : 29 2 16 ing 
 : 33 2 16 in 

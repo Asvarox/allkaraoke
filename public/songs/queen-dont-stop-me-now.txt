@@ -1,19 +1,18 @@
-#ID:queen-dont-stop-me-now
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:Don't Stop Me Now
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:308,8
-#REALBPM:160
 #YEAR:1978
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Don't%20Stop%20Me%20Now
-#VIDEOID:HgzGwKwLmgM
-#VIDEOGAP:0
+#VIDEO:v=HgzGwKwLmgM
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Rocks! English
 #GAP:162,92227979274617
+#EDITION:SingStar Rocks! English
+#ALLKARAOKE_ID:queen-dont-stop-me-now
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Don't%20Stop%20Me%20Now
 - -20 1
 - 1
 : 21 6 55 To

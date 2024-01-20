@@ -1,17 +1,16 @@
-#ID:brathanki-czerwone-korale
 #ARTIST:BRAThANKI
-#ARTISTORIGIN:PL
 #TITLE:Czerwone korale
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:321,44
-#REALBPM:65
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=Czerwone%20korale
-#VIDEOID:SG8B4DT6ud8
-#VIDEOGAP:0
+#VIDEO:v=SG8B4DT6ud8
 #LANGUAGE:Polish
 #GAP:646
+#ALLKARAOKE_ID:brathanki-czerwone-korale
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:65
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=Czerwone%20korale
 * 0 3 5 Czer
 * 5 3 4 wo
 * 10 2 7 ne

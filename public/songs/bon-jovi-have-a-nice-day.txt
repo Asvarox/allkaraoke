@@ -1,19 +1,19 @@
-#ID:bon-jovi-have-a-nice-day
 #ARTIST:Bon Jovi
-#ARTISTORIGIN:US
 #TITLE:Have a nice day
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:399,41
-#REALBPM:129
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Have%20a%20nice%20day
-#VIDEOID:uCg2BoKiuOM
+#VIDEO:v=uCg2BoKiuOM
 #VIDEOGAP:19
 #GENRE:Hard Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 4
 #GAP:27459
+#EDITION:Rock Band Store 2010 Vol. 4
+#ALLKARAOKE_ID:bon-jovi-have-a-nice-day
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Have%20a%20nice%20day
 : 0 11 23 Why
 : 12 3 11  you
 : 17 5 13  wan

@@ -1,22 +1,20 @@
-#ID:la-la-land-ryan-gosling-emma-stone-city-of-stars
 #ARTIST:La La Land (Ryan Gosling & Emma Stone)
-#ARTISTORIGIN:US
 #TITLE:City Of Stars
 #CREATOR:zrednaz
-#CREATORURL:
 #BPM:215,48
-#REALBPM:98
 #YEAR:2016
-#SOURCEURL:
-#VIDEOID:GTWqwSNQCcg
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=GTWqwSNQCcg
 #GENRE:Musical
 #LANGUAGE:English
-#LASTUPDATE:2023-07-26T20:10:02.033Z
-#EDITION:[DUET]-Songs
 #GAP:7995,431594579543
-#TRACKNAMES:["Ryan Gosling","Emma Stone"]
+#EDITION:[DUET]-Songs
+#ALLKARAOKE_ID:la-la-land-ryan-gosling-emma-stone-city-of-stars
+#ALLKARAOKE_LASTUPDATE:2023-07-26T20:10:02.033Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_VOLUME:0,5
+#P1:Ryan Gosling
+#P2:Emma Stone
 : 14 6 19 Ci
 : 21 3 21 ty 
 : 25 3 22 of 

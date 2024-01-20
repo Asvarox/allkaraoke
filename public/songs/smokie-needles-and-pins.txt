@@ -1,22 +1,21 @@
-#ID:smokie-needles-and-pins
 #ARTIST:Smokie
-#ARTISTORIGIN:GB
 #TITLE:Needles And Pins
 #CREATOR:nascituruz
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=7129
 #BPM:238,16
-#REALBPM:119
 #YEAR:1977
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8379
 #PREVIEWSTART:64
-#PREVIEWEND:98
-#VIDEOID:0S-t45AGIpc
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=0S-t45AGIpc
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T18:32:41.950Z
 #GAP:13452,274101444407
+#ALLKARAOKE_ID:smokie-needles-and-pins
+#ALLKARAOKE_LASTUPDATE:2023-06-28T18:32:41.950Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=7129
+#ALLKARAOKE_REALBPM:119
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8379
+#ALLKARAOKE_PREVIEWEND:98
+#ALLKARAOKE_VOLUME:0,6
 : 16 2 13 I 
 : 20 2 11 saw 
 : 24 2 13 her 

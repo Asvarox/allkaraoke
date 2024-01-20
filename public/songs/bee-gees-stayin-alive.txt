@@ -1,19 +1,18 @@
-#ID:bee-gees-stayin-alive
 #ARTIST:Bee Gees
-#ARTISTORIGIN:GB
 #TITLE:Stayin' Alive
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:396,61
-#REALBPM:103
 #YEAR:1977
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bee%20Gees&cancion=Stayin'%20Alive
-#VIDEOID:fNFzfwLM72c
-#VIDEOGAP:0
+#VIDEO:v=fNFzfwLM72c
 #GENRE:Disco
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 4
 #GAP:13318,39873146913
+#EDITION:Rock Band Store 2010 Vol. 4
+#ALLKARAOKE_ID:bee-gees-stayin-alive
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bee%20Gees&cancion=Stayin'%20Alive
 : 26 6 17 Well 
 : 33 2 20 you 
 : 37 5 22 can 

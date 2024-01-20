@@ -1,20 +1,19 @@
-#ID:u2-vertigo
 #ARTIST:U2
-#ARTISTORIGIN:IE
 #TITLE:Vertigo
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:280
-#REALBPM:144
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Vertigo
-#VIDEOID:98W9QuMq-2k
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=98W9QuMq-2k
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Lgnds
 #GAP:5946,43
+#EDITION:SingStar Lgnds
+#ALLKARAOKE_ID:u2-vertigo
+#ALLKARAOKE_ARTISTORIGIN:IE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Vertigo
+#ALLKARAOKE_VOLUME:1
 F 0 8 48 Unos
 F 16 6 48  dos
 F 32 7 48  tres

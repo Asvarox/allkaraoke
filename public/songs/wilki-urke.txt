@@ -1,18 +1,17 @@
-#ID:wilki-urke
 #ARTIST:Wilki
-#ARTISTORIGIN:PL
 #TITLE:Urke
 #CREATOR:ccoollkkaa
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8855
 #BPM:128
-#REALBPM:129
 #YEAR:2003
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5663
-#VIDEOID:8YKAHgwLEMg
-#VIDEOGAP:0
+#VIDEO:v=8YKAHgwLEMg
 #GENRE:Rock
 #LANGUAGE:Polish
 #GAP:14795,3125
+#ALLKARAOKE_ID:wilki-urke
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8855
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5663
 - -8 1
 - 1
 : 9 2 9 Nic 

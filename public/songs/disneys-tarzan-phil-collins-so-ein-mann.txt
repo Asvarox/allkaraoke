@@ -1,20 +1,17 @@
-#ID:disneys-tarzan-phil-collins-so-ein-mann
 #ARTIST:Disney’s Tarzan (Phil Collins)
 #TITLE:So ein Mann
 #CREATOR:dungi
-#CREATORURL:
 #BPM:283,5
-#REALBPM:142
 #YEAR:1999
-#SOURCEURL:
-#VIDEOID:AbfGOohwP_4
-#VIDEOGAP:0
-#VOLUME:0,82
+#VIDEO:v=AbfGOohwP_4
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-12-28T19:33:20.171Z
-#EDITION:SingStar best of Disney
 #GAP:12884,708994708995
+#EDITION:SingStar best of Disney
+#ALLKARAOKE_ID:disneys-tarzan-phil-collins-so-ein-mann
+#ALLKARAOKE_LASTUPDATE:2023-12-28T19:33:20.171Z
+#ALLKARAOKE_REALBPM:142
+#ALLKARAOKE_VOLUME:0,82
 : 19 8 14 Oh 
 : 28 2 14 das 
 : 32 3 14 Wis

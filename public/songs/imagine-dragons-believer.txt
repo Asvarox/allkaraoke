@@ -1,19 +1,18 @@
-#ID:imagine-dragons-believer
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Believer
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:375,03
-#REALBPM:123
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Believer
-#VIDEOID:7wtfhZwyrcc
-#VIDEOGAP:0
-#VOLUME:0,71
+#VIDEO:v=7wtfhZwyrcc
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:7739
+#ALLKARAOKE_ID:imagine-dragons-believer
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Believer
+#ALLKARAOKE_VOLUME:0,71
 : 0 3 -2 First
 : 11 4 5  things
 : 24 3 3  first

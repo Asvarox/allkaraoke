@@ -1,18 +1,17 @@
-#ID:acdc-highway-to-hell
 #ARTIST:AC/DC
-#ARTISTORIGIN:AU
 #TITLE:Highway To Hell
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:232,14
-#REALBPM:117
 #YEAR:1979
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Highway%20To%20Hell
-#VIDEOID:l482T0yNkeo
-#VIDEOGAP:0
+#VIDEO:v=l482T0yNkeo
 #GENRE:Hard Rock
 #LANGUAGE:English
 #GAP:17212,757301628328
+#ALLKARAOKE_ID:acdc-highway-to-hell
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Highway%20To%20Hell
 - -14 1
 - 1
 : 15 1 2 Liv

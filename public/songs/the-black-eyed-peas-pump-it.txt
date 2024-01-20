@@ -1,19 +1,18 @@
-#ID:the-black-eyed-peas-pump-it
 #ARTIST:The Black Eyed Peas
-#ARTISTORIGIN:US
 #TITLE:Pump It
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:307,24
-#REALBPM:152
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Eyed%20Peas&cancion=Pump%20It
-#VIDEOID:ZaI2IlHwmgQ
-#VIDEOGAP:0
+#VIDEO:v=ZaI2IlHwmgQ
 #GENRE:Rap
 #LANGUAGE:English
-#EDITION:SingStar R&B
 #GAP:15554,564640020832
+#EDITION:SingStar R&B
+#ALLKARAOKE_ID:the-black-eyed-peas-pump-it
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Black%20Eyed%20Peas&cancion=Pump%20It
 : 20 4 69 Ha 
 : 36 4 69 ha 
 : 52 60 69 haa

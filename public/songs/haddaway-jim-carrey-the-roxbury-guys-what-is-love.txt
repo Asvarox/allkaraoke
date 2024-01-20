@@ -1,18 +1,17 @@
-#ID:haddaway-jim-carrey-the-roxbury-guys-what-is-love
 #ARTIST:Haddaway & Jim Carrey & The Roxbury Guys
-#ARTISTORIGIN:DE
 #TITLE:What is love
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:253,91
-#REALBPM:123
 #YEAR:1996
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Haddaway&cancion=What%20is%20love
-#VIDEOID:HwVh8pmOot4
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=HwVh8pmOot4
 #LANGUAGE:English
 #GAP:3600
+#ALLKARAOKE_ID:haddaway-jim-carrey-the-roxbury-guys-what-is-love
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Haddaway&cancion=What%20is%20love
+#ALLKARAOKE_VOLUME:0,91
 : 0 3 2 What
 : 4 2 5  is
 : 7 10 7  love

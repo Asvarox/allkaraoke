@@ -1,17 +1,17 @@
-#ID:madonna-hung-up
 #ARTIST:Madonna
-#ARTISTORIGIN:US
 #TITLE:Hung Up
 #CREATOR:upalula
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
 #BPM:500
-#REALBPM:123
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?busqueda=madonna+hung+up
-#VIDEOID:z-52QAImb_A
+#VIDEO:v=z-52QAImb_A
 #VIDEOGAP:1
 #LANGUAGE:English
 #GAP:1488
+#ALLKARAOKE_ID:madonna-hung-up
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?busqueda=madonna+hung+up
 : 33 8 62 Time
 : 49 8 57  goes
 : 65 12 62  by

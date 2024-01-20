@@ -1,20 +1,19 @@
-#ID:shakira-y-alejandro-sanz-la-tortura
 #ARTIST:Shakira y Alejandro Sanz
-#ARTISTORIGIN:CO
 #TITLE:La tortura
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:200
-#REALBPM:100
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira%20y%20Alejandro%20Sanz&cancion=La%20tortura
-#VIDEOID:Dsp_8Lm1eSk
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=Dsp_8Lm1eSk
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.587Z
 #GAP:14101
+#ALLKARAOKE_ID:shakira-y-alejandro-sanz-la-tortura
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.587Z
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira%20y%20Alejandro%20Sanz&cancion=La%20tortura
+#ALLKARAOKE_VOLUME:0,5
 F 13 1 16 Ay 
 F 15 1 16 pa
 F 17 1 16 yi

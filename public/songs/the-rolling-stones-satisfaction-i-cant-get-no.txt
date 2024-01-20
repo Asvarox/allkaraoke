@@ -1,17 +1,17 @@
-#ID:the-rolling-stones-satisfaction-i-cant-get-no
 #ARTIST:The Rolling Stones
-#ARTISTORIGIN:GB
 #TITLE:Satisfaction (I Can't Get No)
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:283,4
-#REALBPM:138
 #YEAR:1966
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Rolling%20Stones&cancion=Satisfaction%20(I%20Can't%20Get%20No)
-#VIDEOID:nrIPxlFzDi0
+#VIDEO:v=nrIPxlFzDi0
 #VIDEOGAP:-3
 #LANGUAGE:English
 #GAP:13677,142857142857
+#ALLKARAOKE_ID:the-rolling-stones-satisfaction-i-cant-get-no
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Rolling%20Stones&cancion=Satisfaction%20(I%20Can't%20Get%20No)
 - -18 1
 - 1
 : 19 9 -5 I 

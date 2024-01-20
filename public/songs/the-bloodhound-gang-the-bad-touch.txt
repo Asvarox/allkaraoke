@@ -1,18 +1,17 @@
-#ID:the-bloodhound-gang-the-bad-touch
 #ARTIST:The Bloodhound Gang
-#ARTISTORIGIN:US
 #TITLE:The bad touch
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:492
-#REALBPM:123
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Bloodhound%20Gang&cancion=The%20bad%20touch
-#VIDEOID:xat1GVnl8-k
-#VIDEOGAP:0
+#VIDEO:v=xat1GVnl8-k
 #GENRE:Post punk
 #LANGUAGE:English
 #GAP:14143,90243902439
+#ALLKARAOKE_ID:the-bloodhound-gang-the-bad-touch
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Bloodhound%20Gang&cancion=The%20bad%20touch
 - -32 1
 - 1
 F 33 3 0 I'd 

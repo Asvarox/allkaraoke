@@ -1,20 +1,20 @@
-#ID:guns-n-roses-sweet-child-omine
 #ARTIST:Guns N' Roses
-#ARTISTORIGIN:US
 #TITLE:Sweet Child O'Mine
 #CREATOR:Pacayaka
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka
 #BPM:256
-#REALBPM:63
 #YEAR:1987
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Sweet%20Child%20O%C2%B4Mine
-#VIDEOID:HlEuo9aR7Qo
+#VIDEO:v=HlEuo9aR7Qo
 #VIDEOGAP:20
-#VOLUME:1
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:12:21.117Z
 #GAP:48676,90625
+#ALLKARAOKE_ID:guns-n-roses-sweet-child-omine
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:12:21.117Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka
+#ALLKARAOKE_REALBPM:63
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Sweet%20Child%20O%C2%B4Mine
+#ALLKARAOKE_VOLUME:1
 : 17 3 8 She's 
 : 22 2 8 got 
 : 25 1 8 a 

@@ -1,17 +1,16 @@
-#ID:big-cyc-swiat-wedlug-kiepskich
 #ARTIST:Big Cyc
-#ARTISTORIGIN:PL
 #TITLE:Swiat Wedlug Kiepskich
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:188,36
-#REALBPM:187
 #YEAR:2000
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11261
-#VIDEOID:sOPysIhN-V4
-#VIDEOGAP:0
+#VIDEO:v=sOPysIhN-V4
 #LANGUAGE:Polish
 #GAP:15803,748354215331
+#ALLKARAOKE_ID:big-cyc-swiat-wedlug-kiepskich
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:187
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11261
 : 13 2 10 W kieps
 : 17 1 10 kim 
 : 19 1 10 świe

@@ -1,21 +1,18 @@
-#ID:lana-del-rey-feat-the-weeknd-lust-for-life
 #ARTIST:Lana Del Rey feat. The Weeknd
 #TITLE:Lust for Life
 #CREATOR:wolf359
-#CREATORURL:
 #BPM:400
-#REALBPM:100
 #YEAR:2017
-#SOURCEURL:
-#VIDEOID:eP4eqhWc7sI
+#VIDEO:v=eP4eqhWc7sI
 #VIDEOGAP:21
-#VOLUME:0,61
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:34.750Z
 #GAP:34602,5
+#ALLKARAOKE_ID:lana-del-rey-feat-the-weeknd-lust-for-life
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:34.750Z
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:0,61
 #MP3:Lana Del Rey feat. The Weeknd - Lust for Life.mp3
-#VIDEO:Lana Del Rey feat. The Weeknd - Lust for Life.webm
 #COVER:Lana Del Rey feat. The Weeknd - Lust for Life.jpg
 #MEDLEYENDBEAT:2486
 #MEDLEYSTARTBEAT:991

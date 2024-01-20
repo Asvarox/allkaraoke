@@ -1,20 +1,19 @@
-#ID:mana-clavado-en-un-bar
 #ARTIST:Maná
-#ARTISTORIGIN:MX
 #TITLE:Clavado en un bar
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:296,4
-#REALBPM:148
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Man%C3%A1&cancion=Clavado%20en%20un%20bar
-#VIDEOID:fBrX8ym3dBM
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=fBrX8ym3dBM
 #GENRE:90's Español
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.579Z
 #GAP:-146,68016194331994
+#ALLKARAOKE_ID:mana-clavado-en-un-bar
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.579Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Man%C3%A1&cancion=Clavado%20en%20un%20bar
+#ALLKARAOKE_VOLUME:0,8
 - 0 147
 - 147
 : 167 3 18 A

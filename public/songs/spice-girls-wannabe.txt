@@ -1,19 +1,19 @@
-#ID:spice-girls-wannabe
 #ARTIST:Spice Girls
-#ARTISTORIGIN:GB
 #TITLE:Wannabe
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:110
 #YEAR:1996
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Spice%20Girls&cancion=Wannabe
-#VIDEOID:gJLIiF15wjQ
+#VIDEO:v=gJLIiF15wjQ
 #VIDEOGAP:45
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '90s
 #GAP:49247,06
+#EDITION:SingStar '90s
+#ALLKARAOKE_ID:spice-girls-wannabe
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Spice%20Girls&cancion=Wannabe
 F 0 9 71 Yo
 F 10 2 71  I'll
 F 13 2 71  tell

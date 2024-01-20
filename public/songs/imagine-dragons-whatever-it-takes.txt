@@ -1,18 +1,17 @@
-#ID:imagine-dragons-whatever-it-takes
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Whatever It Takes
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:270,2
-#REALBPM:68
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Whatever%20It%20Takes
-#VIDEOID:gOsM-DYAEhY
-#VIDEOGAP:0
+#VIDEO:v=gOsM-DYAEhY
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:14205
+#ALLKARAOKE_ID:imagine-dragons-whatever-it-takes
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:68
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Whatever%20It%20Takes
 : 0 1 8 Fall
 : 2 1 8 ing
 : 4 3 8  too

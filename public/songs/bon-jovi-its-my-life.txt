@@ -1,17 +1,17 @@
-#ID:bon-jovi-its-my-life
 #ARTIST:Bon Jovi
-#ARTISTORIGIN:US
 #TITLE:It's my life
 #CREATOR:upalula
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
 #BPM:240,1
-#REALBPM:120
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=It's%20my%20life
-#VIDEOID:vx2u5uUu3DE
+#VIDEO:v=vx2u5uUu3DE
 #VIDEOGAP:23
 #LANGUAGE:English
 #GAP:34064
+#ALLKARAOKE_ID:bon-jovi-its-my-life
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=It's%20my%20life
 : 0 3 10 This
 : 4 2 12  ain't
 : 7 1 12  a

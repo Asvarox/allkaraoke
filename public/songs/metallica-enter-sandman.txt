@@ -1,19 +1,19 @@
-#ID:metallica-enter-sandman
 #ARTIST:Metallica
-#ARTISTORIGIN:US
 #TITLE:Enter Sandman
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:398,01
-#REALBPM:123
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman
-#VIDEOID:CD-E-LDc384
+#VIDEO:v=CD-E-LDc384
 #VIDEOGAP:2
 #GENRE:Metal
 #LANGUAGE:English
-#EDITION:Rock Band
 #GAP:72602,4376271953
+#EDITION:Rock Band
+#ALLKARAOKE_ID:metallica-enter-sandman
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman
 : 27 5 19 Say 
 : 33 4 19 your 
 : 40 7 19 pra

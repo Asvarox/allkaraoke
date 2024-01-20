@@ -1,19 +1,18 @@
-#ID:the-beatles-come-together
 #ARTIST:The Beatles
-#ARTISTORIGIN:GB
 #TITLE:Come Together
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:328,48
-#REALBPM:83
 #YEAR:1969
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Come%20Together
-#VIDEOID:oolpPmuK2I8
-#VIDEOGAP:0
+#VIDEO:v=oolpPmuK2I8
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:The Beatles Rock Band
 #GAP:573,3511933755481
+#EDITION:The Beatles Rock Band
+#ALLKARAOKE_ID:the-beatles-come-together
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Come%20Together
 - -21 1
 - 1
 F 10 2 15 Shoot 

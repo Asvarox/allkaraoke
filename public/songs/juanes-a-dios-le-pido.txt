@@ -1,20 +1,19 @@
-#ID:juanes-a-dios-le-pido
 #ARTIST:Juanes
-#ARTISTORIGIN:CO
 #TITLE:A Dios le pido
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:388
-#REALBPM:97
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=A%20Dios%20le%20pido
-#VIDEOID:kMIaYXxLnUA
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=kMIaYXxLnUA
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.565Z
-#EDITION:SingStar
 #GAP:20261,845360824744
+#EDITION:SingStar
+#ALLKARAOKE_ID:juanes-a-dios-le-pido
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.565Z
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=A%20Dios%20le%20pido
+#ALLKARAOKE_VOLUME:0,5
 : 26 7 64 Que 
 : 34 7 64 mis 
 : 42 7 64 o

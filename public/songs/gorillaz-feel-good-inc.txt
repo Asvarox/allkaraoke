@@ -1,19 +1,18 @@
-#ID:gorillaz-feel-good-inc
 #ARTIST:Gorillaz
-#ARTISTORIGIN:GB
 #TITLE:Feel Good Inc.
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:277
-#REALBPM:136
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Gorillaz&cancion=Feel%20Good%20Inc.
-#VIDEOID:HyHNuVaZJ-k
-#VIDEOGAP:0
+#VIDEO:v=HyHNuVaZJ-k
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Pop USA
 #GAP:21743,270758122744
+#EDITION:SingStar Pop USA
+#ALLKARAOKE_ID:gorillaz-feel-good-inc
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Gorillaz&cancion=Feel%20Good%20Inc.
 : 18 4 65 Feel
 : 26 4 63  good
 - 45 63

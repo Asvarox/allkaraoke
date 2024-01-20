@@ -1,18 +1,17 @@
-#ID:the-white-stripes-jolene
 #ARTIST:The White Stripes
-#ARTISTORIGIN:US
 #TITLE:Jolene
 #CREATOR:IC
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #BPM:300
-#REALBPM:111
 #YEAR:2000
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3606
-#VIDEOID:yXlULkwhgrc
-#VIDEOGAP:0
+#VIDEO:v=yXlULkwhgrc
 #LANGUAGE:English
-#EDITION:[SC]-Songs
 #GAP:45200
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:the-white-stripes-jolene
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:111
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3606
 - -19 1
 - 1
 : 20 5 2 Jo

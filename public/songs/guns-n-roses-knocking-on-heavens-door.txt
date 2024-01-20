@@ -1,18 +1,17 @@
-#ID:guns-n-roses-knocking-on-heavens-door
 #ARTIST:Guns N' Roses
-#ARTISTORIGIN:US
 #TITLE:Knocking On Heavens Door
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:264,9
-#REALBPM:66
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Knocking%20On%20Heavens%20Door
-#VIDEOID:f8OHybVhQwc
-#VIDEOGAP:0
+#VIDEO:v=f8OHybVhQwc
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:7730
+#ALLKARAOKE_ID:guns-n-roses-knocking-on-heavens-door
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:66
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Knocking%20On%20Heavens%20Door
 : 0 47 6 Uh
 : 48 8 6 ~
 : 57 21 5 ~

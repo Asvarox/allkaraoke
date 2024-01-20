@@ -1,21 +1,20 @@
-#ID:acdc-back-in-black
 #ARTIST:AC/DC
-#ARTISTORIGIN:AU
 #TITLE:Back in Black
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:395,98
-#REALBPM:97
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Back%20in%20Black%20(Live)
-#VIDEOID:6vImyP5EYc8
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=6vImyP5EYc8
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-04T18:28:45.410Z
-#EDITION:AC/DC Live Rock Band Track Pack
 #GAP:40745,10177281681
+#EDITION:AC/DC Live Rock Band Track Pack
+#ALLKARAOKE_ID:acdc-back-in-black
+#ALLKARAOKE_LASTUPDATE:2023-05-04T18:28:45.410Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Back%20in%20Black%20(Live)
+#ALLKARAOKE_VOLUME:0,65
 : 26 3 28 Back 
 : 31 3 28 in 
 : 38 12 28 black

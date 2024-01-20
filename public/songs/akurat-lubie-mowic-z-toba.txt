@@ -1,18 +1,17 @@
-#ID:akurat-lubie-mowic-z-toba
 #ARTIST:Akurat
-#ARTISTORIGIN:PL
 #TITLE:Lubię Mówić Z Tobą
 #CREATOR:oldkillerjones
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
 #BPM:338,04
-#REALBPM:85
 #YEAR:2002
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=16844
-#VIDEOID:UhyeywiEzKo
-#VIDEOGAP:0
+#VIDEO:v=UhyeywiEzKo
 #GENRE:Rock
 #LANGUAGE:Polish
 #GAP:11046,410720624779
+#ALLKARAOKE_ID:akurat-lubie-mowic-z-toba
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=16844
 : 23 2 61 Kie
 : 25 2 61 dy 
 : 30 7 61 z ser

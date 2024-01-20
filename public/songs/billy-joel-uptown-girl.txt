@@ -1,19 +1,18 @@
-#ID:billy-joel-uptown-girl
 #ARTIST:Billy Joel
-#ARTISTORIGIN:US
 #TITLE:Uptown Girl
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:258,6
-#REALBPM:129
 #YEAR:1983
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Billy%20Joel&cancion=Uptown%20Girl
-#VIDEOID:hCuMWrfXG4E
-#VIDEOGAP:0
+#VIDEO:v=hCuMWrfXG4E
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '80s
 #GAP:11849,921113689095
+#EDITION:SingStar '80s
+#ALLKARAOKE_ID:billy-joel-uptown-girl
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Billy%20Joel&cancion=Uptown%20Girl
 : 17 8 64 Ah
 : 25 8 63 ~
 : 33 8 64 ~

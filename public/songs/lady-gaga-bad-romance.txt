@@ -1,20 +1,19 @@
-#ID:lady-gaga-bad-romance
 #ARTIST:Lady Gaga
-#ARTISTORIGIN:US
 #TITLE:Bad Romance
 #CREATOR:michas17j
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=14525
 #BPM:238,04
-#REALBPM:117
 #YEAR:2009
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=7752
-#VIDEOID:qrO4YZeyl0I
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=qrO4YZeyl0I
 #LANGUAGE:English
-#LASTUPDATE:2023-11-07T21:41:36.217Z
-#EDITION:[SC]-Songs
 #GAP:12171,766089732819
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:lady-gaga-bad-romance
+#ALLKARAOKE_LASTUPDATE:2023-11-07T21:41:36.217Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=14525
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=7752
+#ALLKARAOKE_VOLUME:0,85
 : 16 3 0 O
 : 20 3 2 ~
 : 24 3 4 ~

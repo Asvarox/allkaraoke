@@ -1,17 +1,16 @@
-#ID:coldplay-viva-la-vida
 #ARTIST:Coldplay
-#ARTISTORIGIN:GB
 #TITLE:Viva la vida
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:276,02
-#REALBPM:136
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida
-#VIDEOID:dvgZkm1xWPE
-#VIDEOGAP:0
+#VIDEO:v=dvgZkm1xWPE
 #LANGUAGE:English
 #GAP:12605,810013767119
+#ALLKARAOKE_ID:coldplay-viva-la-vida
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida
 : 18 3 8 I 
 : 22 3 12 used 
 : 30 4 12 to 

@@ -1,17 +1,16 @@
-#ID:boney-m-sunny
 #ARTIST:Boney M.
 #TITLE:Sunny
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:244,43
-#REALBPM:121
 #YEAR:1976
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Sunny
-#VIDEOID:S-u6qdeaPoE
-#VIDEOGAP:0
+#VIDEO:v=S-u6qdeaPoE
 #GENRE:Disco
 #LANGUAGE:English
 #GAP:27550,535599901454
+#ALLKARAOKE_ID:boney-m-sunny
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Sunny
 : 16 2 7 Sun
 : 20 1 5 ny
 : 22 3 7 ~

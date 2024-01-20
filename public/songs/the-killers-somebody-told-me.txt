@@ -1,19 +1,18 @@
-#ID:the-killers-somebody-told-me
 #ARTIST:The Killers
-#ARTISTORIGIN:US
 #TITLE:Somebody Told Me
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:276,04
-#REALBPM:138
 #YEAR:2004
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=296
-#VIDEOID:Y5fBdpreJiU
-#VIDEOGAP:0
+#VIDEO:v=Y5fBdpreJiU
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Rocks
 #GAP:21046,880886827996
+#EDITION:SingStar Rocks
+#ALLKARAOKE_ID:the-killers-somebody-told-me
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=296
 : 18 3 58 Break
 : 22 3 58 ing 
 : 26 4 63 my 

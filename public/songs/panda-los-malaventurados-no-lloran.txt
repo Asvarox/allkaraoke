@@ -1,19 +1,17 @@
-#ID:panda-los-malaventurados-no-lloran
 #ARTIST:Panda
 #TITLE:Los malaventurados no lloran
 #CREATOR:n3ggro
-#CREATORURL:
 #BPM:344
-#REALBPM:172
 #YEAR:2006
-#SOURCEURL:https://www.youtube.com/watch?v=wvR7EtLuJfg&ab_channel=PXNDX
-#VIDEOID:wvR7EtLuJfg
-#VIDEOGAP:0
-#VOLUME:0,72
+#VIDEO:v=wvR7EtLuJfg
 #GENRE:None
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-11-07T21:41:37.487Z
 #GAP:10487,093023255813
+#ALLKARAOKE_ID:panda-los-malaventurados-no-lloran
+#ALLKARAOKE_LASTUPDATE:2023-11-07T21:41:37.487Z
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=wvR7EtLuJfg&ab_channel=PXNDX
+#ALLKARAOKE_VOLUME:0,72
 : 23 3 4 Sé 
 : 28 6 0 que es
 : 36 6 3 tá en 

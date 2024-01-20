@@ -1,20 +1,20 @@
-#ID:queen-the-show-must-go-on
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:The Show Must Go On
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:334
-#REALBPM:83
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=The%20Show%20Must%20Go%20On
-#VIDEOID:t99KH0TR-J4
+#VIDEO:v=t99KH0TR-J4
 #VIDEOGAP:6
-#VOLUME:0,85
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Rock Ballads
 #GAP:25940,12
+#EDITION:SingStar Rock Ballads
+#ALLKARAOKE_ID:queen-the-show-must-go-on
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=The%20Show%20Must%20Go%20On
+#ALLKARAOKE_VOLUME:0,85
 : 0 4 62 Emp
 : 7 3 62 ty
 : 14 4 61  spa

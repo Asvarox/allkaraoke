@@ -1,19 +1,18 @@
-#ID:sun-stroke-project-olia-tira-run-away-moldova
 #ARTIST:Sun Stroke Project & Olia Tira
 #TITLE:Run away (Moldova)
 #CREATOR:gaspar17
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
 #BPM:260,12
-#REALBPM:130
 #YEAR:2010
-#SOURCEURL:http://usdb.animux.de/?link=detail&id=9560
 #PREVIEWSTART:47
-#VIDEOID:pHXDMe6QV-U
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=pHXDMe6QV-U
 #LANGUAGE:English
-#EDITION:ESC 2010
 #GAP:28830,683223127788
+#EDITION:ESC 2010
+#ALLKARAOKE_ID:sun-stroke-project-olia-tira-run-away-moldova
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/?link=detail&id=9560
+#ALLKARAOKE_VOLUME:0,85
 : 17 10 22 O
 : 29 2 20 ~
 : 33 2 22 ~

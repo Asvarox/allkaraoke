@@ -1,18 +1,17 @@
-#ID:tarzan-mensenkind
 #ARTIST:Tarzan
 #TITLE:Mensenkind
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:295,4
-#REALBPM:142
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tarzan&cancion=Mensenkind
-#VIDEOID:gZEuR9LFNQQ
-#VIDEOGAP:0
+#VIDEO:v=gZEuR9LFNQQ
 #LANGUAGE:Dutch
-#LASTUPDATE:2023-01-27T21:07:31.905Z
-#EDITION:SingStar zingt met Disney
 #GAP:11388,4278943805
+#EDITION:SingStar zingt met Disney
+#ALLKARAOKE_ID:tarzan-mensenkind
+#ALLKARAOKE_LASTUPDATE:2023-01-27T21:07:31.905Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:142
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tarzan&cancion=Mensenkind
 : 20 6 63 O 
 : 27 2 63 de 
 : 31 4 63 kracht 

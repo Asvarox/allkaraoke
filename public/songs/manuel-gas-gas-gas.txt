@@ -1,18 +1,17 @@
-#ID:manuel-gas-gas-gas
 #ARTIST:Manuel
-#ARTISTORIGIN:DE
 #TITLE:Gas Gas Gas
 #CREATOR:Judsi
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=124518
 #BPM:307,99
-#REALBPM:154
 #YEAR:2007
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=20731
-#VIDEOID:ljwUlY9WW1I
-#VIDEOGAP:0
+#VIDEO:v=ljwUlY9WW1I
 #GENRE:Eurobeat
 #LANGUAGE:English
 #GAP:52060,23952076366
+#ALLKARAOKE_ID:manuel-gas-gas-gas
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=124518
+#ALLKARAOKE_REALBPM:154
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=20731
 : 21 5 1 Guess 
 : 30 6 0 you're 
 : 38 4 0 rea

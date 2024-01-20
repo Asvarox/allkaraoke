@@ -1,18 +1,17 @@
-#ID:britney-spears-toxic
 #ARTIST:Britney Spears
-#ARTISTORIGIN:US
 #TITLE:Toxic
 #CREATOR:Rubn4
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=rubn4
 #BPM:286,02
-#REALBPM:144
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic
-#VIDEOID:LOZuxwVk7TU
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=LOZuxwVk7TU
 #LANGUAGE:English
 #GAP:14220
+#ALLKARAOKE_ID:britney-spears-toxic
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=rubn4
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic
+#ALLKARAOKE_VOLUME:0,91
 : 0 2 0 Ba
 : 4 2 2 by,
 : 8 2 3  can't

@@ -1,18 +1,17 @@
-#ID:avicii-wake-me-up
 #ARTIST:Avicii
-#ARTISTORIGIN:SE
 #TITLE:Wake Me Up
 #CREATOR:snake84
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1645
 #BPM:248
-#REALBPM:123
 #YEAR:2013
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15877
-#VIDEOID:IcrbM1l_BoI
-#VIDEOGAP:0
+#VIDEO:v=IcrbM1l_BoI
 #LANGUAGE:English
-#LASTUPDATE:2022-12-30T13:12:33.920Z
 #GAP:7511,774193548387
+#ALLKARAOKE_ID:avicii-wake-me-up
+#ALLKARAOKE_LASTUPDATE:2022-12-30T13:12:33.920Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1645
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15877
 : 17 1 11 Fee
 : 19 1 11 ling 
 : 21 2 11 my 

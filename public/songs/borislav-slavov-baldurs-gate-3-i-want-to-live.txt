@@ -1,20 +1,17 @@
-#ID:borislav-slavov-baldurs-gate-3-i-want-to-live
 #ARTIST:Borislav Slavov (Baldur's Gate 3)
-#ARTISTORIGIN:BG
 #TITLE:I Want To Live
 #CREATOR:UltraSinger [GitHub] 0.0.4
-#CREATORURL:https://github.com/rakuri255/UltraSinger
 #BPM:380
-#REALBPM:77
 #YEAR:2023
-#SOURCEURL:
-#VIDEOID:a_74syM2Wg0
-#VIDEOGAP:0
-#VOLUME:0,72
-#GENRE:
+#VIDEO:v=a_74syM2Wg0
 #LANGUAGE:English
-#LASTUPDATE:2023-12-28T19:33:06.819Z
 #GAP:16390,157894736843
+#ALLKARAOKE_ID:borislav-slavov-baldurs-gate-3-i-want-to-live
+#ALLKARAOKE_LASTUPDATE:2023-12-28T19:33:06.819Z
+#ALLKARAOKE_ARTISTORIGIN:BG
+#ALLKARAOKE_CREATORURL:https://github.com/rakuri255/UltraSinger
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_VOLUME:0,72
 : 25 3 14 I 
 : 30 5 13 feel 
 : 36 5 9 your 

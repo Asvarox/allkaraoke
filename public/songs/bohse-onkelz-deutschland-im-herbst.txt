@@ -1,23 +1,21 @@
-#ID:bohse-onkelz-deutschland-im-herbst
 #ARTIST:Böhse Onkelz
-#ARTISTORIGIN:DE
 #TITLE:Deutschland im Herbst
 #CREATOR:fepo
-#CREATORURL:
 #BPM:360
-#REALBPM:180
 #YEAR:1993
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=11775
 #PREVIEWSTART:66
-#PREVIEWEND:90
-#VIDEOID:BGtYcU-sWow
-#VIDEOGAP:0
-#VOLUME:0,68
+#VIDEO:v=BGtYcU-sWow
 #GENRE:Rock
 #LANGUAGE:German
-#LASTUPDATE:2023-12-15T05:36:08.668Z
-#EDITION:None
 #GAP:76630
+#EDITION:None
+#ALLKARAOKE_ID:bohse-onkelz-deutschland-im-herbst
+#ALLKARAOKE_LASTUPDATE:2023-12-15T05:36:08.668Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=11775
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,68
 : 24 2 0 Ich 
 : 28 2 0 se
 : 33 2 -2 he 

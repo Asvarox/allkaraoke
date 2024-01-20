@@ -1,21 +1,20 @@
-#ID:prince-and-the-revolution-1999
 #ARTIST:Prince and the Revolution
-#ARTISTORIGIN:US
 #TITLE:1999
 #CREATOR:sledge
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=67506
 #BPM:238
-#REALBPM:119
 #YEAR:1985
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=16760
-#VIDEOID:rblt2EtFfC4
-#VIDEOGAP:0
-#VOLUME:0,56
+#VIDEO:v=rblt2EtFfC4
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-03-06T13:53:15.234Z
-#EDITION:None
 #GAP:34311,596638655465
+#EDITION:None
+#ALLKARAOKE_ID:prince-and-the-revolution-1999
+#ALLKARAOKE_LASTUPDATE:2023-03-06T13:53:15.234Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=67506
+#ALLKARAOKE_REALBPM:119
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=16760
+#ALLKARAOKE_VOLUME:0,56
 : 16 2 0 I 
 : 20 2 0 was 
 : 24 3 9 drea

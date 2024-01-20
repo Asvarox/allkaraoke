@@ -1,17 +1,17 @@
-#ID:lmfao-lauren-bennett-goon-rock-party-rock-anthem
 #ARTIST:LMFAO, Lauren Bennett & Goon Rock
 #TITLE:Party Rock Anthem
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:260,02
-#REALBPM:130
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=LMFAO%2C%20Lauren%20Bennett%20%26%20Goon%20Rock&cancion=Party%20Rock%20Anthem
-#VIDEOID:KQ6zr6kCPj8
+#VIDEO:v=KQ6zr6kCPj8
 #VIDEOGAP:85
 #GENRE:Electropop
 #LANGUAGE:English
 #GAP:101814,30620721483
+#ALLKARAOKE_ID:lmfao-lauren-bennett-goon-rock-party-rock-anthem
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=LMFAO%2C%20Lauren%20Bennett%20%26%20Goon%20Rock&cancion=Party%20Rock%20Anthem
 F 17 2 24 Par
 F 21 2 24 ty 
 F 25 4 24 Rock

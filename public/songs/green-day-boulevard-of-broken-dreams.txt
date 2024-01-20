@@ -1,18 +1,17 @@
-#ID:green-day-boulevard-of-broken-dreams
 #ARTIST:Green Day
-#ARTISTORIGIN:US
 #TITLE:Boulevard of Broken Dreams
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:333,7
-#REALBPM:82
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Boulevard%20of%20Broken%20Dreams
-#VIDEOID:Soa3gO7tL-c
-#VIDEOGAP:0
+#VIDEO:v=Soa3gO7tL-c
 #GENRE:Rock Internacional
 #LANGUAGE:English
 #GAP:38023
+#ALLKARAOKE_ID:green-day-boulevard-of-broken-dreams
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:82
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Boulevard%20of%20Broken%20Dreams
 : 0 4 -7 I 
 : 8 4 -7 walk 
 : 16 4 -5 a 

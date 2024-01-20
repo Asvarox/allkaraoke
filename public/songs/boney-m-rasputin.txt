@@ -1,16 +1,15 @@
-#ID:boney-m-rasputin
 #ARTIST:Boney M.
 #TITLE:Rasputin
 #CREATOR:Rubn4
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
 #BPM:253,5
-#REALBPM:64
 #YEAR:1978
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Rasputin
-#VIDEOID:Nl_Eo2QzqU4
-#VIDEOGAP:0
+#VIDEO:v=Nl_Eo2QzqU4
 #LANGUAGE:English
 #GAP:49733,08284023669
+#ALLKARAOKE_ID:boney-m-rasputin
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
+#ALLKARAOKE_REALBPM:64
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Rasputin
 F 17 3 -6 There
 F 21 3 -6  live
 F 25 3 -6  a

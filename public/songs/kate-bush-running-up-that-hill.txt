@@ -1,20 +1,19 @@
-#ID:kate-bush-running-up-that-hill
 #ARTIST:Kate Bush
-#ARTISTORIGIN:GB
 #TITLE:Running Up That Hill
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #BPM:216,54
-#REALBPM:108
 #YEAR:1985
-#SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Running+Up+That+Hill
-#VIDEOID:wp43OdtAAkM
-#VIDEOGAP:0
+#VIDEO:v=wp43OdtAAkM
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T21:19:32.279Z
-#EDITION:SingStar '80s
 #GAP:25441,202272097533
+#EDITION:SingStar '80s
+#ALLKARAOKE_ID:kate-bush-running-up-that-hill
+#ALLKARAOKE_LASTUPDATE:2023-01-28T21:19:32.279Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Running+Up+That+Hill
 : 14 2 67 It 
 : 16 2 67 does
 : 18 2 67 n't 

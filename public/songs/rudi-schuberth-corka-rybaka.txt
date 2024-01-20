@@ -1,20 +1,19 @@
-#ID:rudi-schuberth-corka-rybaka
 #ARTIST:Rudi Schuberth
-#ARTISTORIGIN:PL
 #TITLE:Córka Rybaka
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:293,71
-#REALBPM:87
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rudi%20Schuberth&cancion=C%C3%B3rka%20Rybaka
-#VIDEOID:b3M_zl8FRLA
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=b3M_zl8FRLA
 #GENRE:Pop
 #LANGUAGE:Polish
-#EDITION:SingStar '80s Polish
 #GAP:4691,4098360655735
+#EDITION:SingStar '80s Polish
+#ALLKARAOKE_ID:rudi-schuberth-corka-rybaka
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rudi%20Schuberth&cancion=C%C3%B3rka%20Rybaka
+#ALLKARAOKE_VOLUME:1
 : 20 4 61 Gdy
 : 26 4 61  ksie
 : 32 3 64 zyc

@@ -1,19 +1,18 @@
-#ID:rihanna-love-on-the-brain
 #ARTIST:Rihanna
-#ARTISTORIGIN:BB
 #TITLE:Love On The Brain
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:172
-#REALBPM:172
 #YEAR:2016
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Love%20On%20The%20Brain
-#VIDEOID:QMP-o8WXSPM
-#VIDEOGAP:0
+#VIDEO:v=QMP-o8WXSPM
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T21:00:25.478Z
 #GAP:14390,697674418605
+#ALLKARAOKE_ID:rihanna-love-on-the-brain
+#ALLKARAOKE_LASTUPDATE:2023-01-28T21:00:25.478Z
+#ALLKARAOKE_ARTISTORIGIN:BB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Love%20On%20The%20Brain
 : 11 2 2 And 
 : 15 2 6 you 
 : 19 3 11 got 

@@ -1,19 +1,18 @@
-#ID:sanah-feat-daria-zawialow-eldorado
 #ARTIST:Sanah feat. Daria Zawiałow
-#ARTISTORIGIN:PL
 #TITLE:Eldorado
 #CREATOR:domekdlakromek
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=182875
 #BPM:275,13
-#REALBPM:138
 #YEAR:2022
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27020
-#VIDEOID:nN2eZos7HN0
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=nN2eZos7HN0
 #LANGUAGE:Polish
-#LASTUPDATE:2023-06-08T08:24:40.232Z
 #GAP:6338,645731108931
+#ALLKARAOKE_ID:sanah-feat-daria-zawialow-eldorado
+#ALLKARAOKE_LASTUPDATE:2023-06-08T08:24:40.232Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=182875
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27020
+#ALLKARAOKE_VOLUME:0,7
 : 18 11 0 Mnie 
 : 31 3 0 wy
 : 35 3 0 wia

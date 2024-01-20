@@ -1,18 +1,17 @@
-#ID:skid-row-18-life
 #ARTIST:Skid Row
-#ARTISTORIGIN:US
 #TITLE:18 & Life
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:376
-#REALBPM:90
 #YEAR:1989
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Skid%20Row&cancion=18%20%26%20Life
-#VIDEOID:Ghd2bkIadG4
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=Ghd2bkIadG4
 #LANGUAGE:English
 #GAP:21291,659574468085
+#ALLKARAOKE_ID:skid-row-18-life
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Skid%20Row&cancion=18%20%26%20Life
+#ALLKARAOKE_VOLUME:1
 : 25 6 20 Ri
 : 33 7 20 cky 
 : 42 6 18 was 

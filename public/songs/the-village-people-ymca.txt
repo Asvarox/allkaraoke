@@ -1,19 +1,18 @@
-#ID:the-village-people-ymca
 #ARTIST:The Village People
-#ARTISTORIGIN:US
 #TITLE:YMCA
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:254,3
-#REALBPM:127
 #YEAR:1978
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA
-#VIDEOID:CS9OO0S5w2k
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=CS9OO0S5w2k
 #LANGUAGE:English
-#EDITION:SingStar
 #GAP:10866,062992125984
+#EDITION:SingStar
+#ALLKARAOKE_ID:the-village-people-ymca
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:127
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Village%20People&cancion=YMCA
+#ALLKARAOKE_VOLUME:0,9
 : 17 3 61 Young 
 : 21 4 58 man
 - 25

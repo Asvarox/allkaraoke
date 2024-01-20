@@ -1,20 +1,19 @@
-#ID:ariana-grande-santa-tell-me
 #ARTIST:Ariana Grande
-#ARTISTORIGIN:US
 #TITLE:Santa tell me
 #CREATOR:asdFer
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
 #BPM:384,55
-#REALBPM:96
 #YEAR:2014
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ariana%20Grande&cancion=Santa%20tell%20me
-#VIDEOID:nlR0MkrRklg
-#VIDEOGAP:0
-#VOLUME:0,87
+#VIDEO:v=nlR0MkrRklg
 #LANGUAGE:English
-#LASTUPDATE:2023-12-21T21:45:03.308Z
-#EDITION:Christmas
 #GAP:9608,827590690418
+#EDITION:Christmas
+#ALLKARAOKE_ID:ariana-grande-santa-tell-me
+#ALLKARAOKE_LASTUPDATE:2023-12-21T21:45:03.308Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ariana%20Grande&cancion=Santa%20tell%20me
+#ALLKARAOKE_VOLUME:0,87
 : 26 5 -1 San
 : 34 5 2 ta, 
 : 42 2 2 tell

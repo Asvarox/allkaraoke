@@ -1,17 +1,16 @@
-#ID:backstreet-boys-i-want-it-that-way
 #ARTIST:Backstreet Boys
-#ARTISTORIGIN:US
 #TITLE:I Want It That Way
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:395,8
-#REALBPM:99
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=I%20Want%20It%20That%20Way
-#VIDEOID:4fndeDfaWCg
-#VIDEOGAP:0
+#VIDEO:v=4fndeDfaWCg
 #LANGUAGE:English
 #GAP:8802,653865588682
+#ALLKARAOKE_ID:backstreet-boys-i-want-it-that-way
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=I%20Want%20It%20That%20Way
 : 26 4 11 Yeah
 : 31 2 13 ~
 : 34 11 11 ~

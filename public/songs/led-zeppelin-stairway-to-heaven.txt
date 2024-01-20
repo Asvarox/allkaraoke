@@ -1,22 +1,19 @@
-#ID:led-zeppelin-stairway-to-heaven
 #ARTIST:Led Zeppelin
-#ARTISTORIGIN:GB
 #TITLE:Stairway To Heaven
 #CREATOR:Canni
-#CREATORURL:
 #BPM:255,2
-#REALBPM:82
 #YEAR:1971
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1097
-#VIDEOID:ovFSEHH_yJw
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=ovFSEHH_yJw
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:34.911Z
 #GAP:52310,78369905956
+#ALLKARAOKE_ID:led-zeppelin-stairway-to-heaven
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:34.911Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:82
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1097
+#ALLKARAOKE_VOLUME:1
 #MP3:Led Zeppelin - Stairway To Heaven.mp3
-#VIDEO:v=ovFSEHH_yJw,co=stairway-to-heaven-5ec195eb15fd8.jpg,bg=led-zeppelin-5590acf21c3b4.jpg
 : 17 7 -3 There’s 
 : 25 3 -1 a 
 : 29 15 0 la

@@ -1,19 +1,18 @@
-#ID:audioslave-cochise
 #ARTIST:Audioslave
-#ARTISTORIGIN:US
 #TITLE:Cochise
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:322
-#REALBPM:81
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Cochise
-#VIDEOID:KDMvN45sjo4
-#VIDEOGAP:0
+#VIDEO:v=KDMvN45sjo4
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Amped
 #GAP:60449,739130434784
+#EDITION:SingStar Amped
+#ALLKARAOKE_ID:audioslave-cochise
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Cochise
 : 21 7 71 Well 
 : 29 4 71 I've 
 : 37 4 71 been 

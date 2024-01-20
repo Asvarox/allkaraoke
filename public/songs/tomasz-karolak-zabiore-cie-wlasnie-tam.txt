@@ -1,19 +1,18 @@
-#ID:tomasz-karolak-zabiore-cie-wlasnie-tam
 #ARTIST:Tomasz Karolak
-#ARTISTORIGIN:PL
 #TITLE:Zabiorę Cię właśnie tam
 #CREATOR:Angelyina
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1550
 #BPM:160,13
-#REALBPM:75
 #YEAR:2009
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3815
-#VIDEOID:WPYGIieg5ws
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=WPYGIieg5ws
 #LANGUAGE:Polish
-#LASTUPDATE:2023-07-27T18:16:56.206Z
 #GAP:20639,587210391557
+#ALLKARAOKE_ID:tomasz-karolak-zabiore-cie-wlasnie-tam
+#ALLKARAOKE_LASTUPDATE:2023-07-27T18:16:56.206Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1550
+#ALLKARAOKE_REALBPM:75
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3815
+#ALLKARAOKE_VOLUME:0,8
 : 11 2 -1 Za
 : 15 4 6 bio
 : 21 2 4 rę 

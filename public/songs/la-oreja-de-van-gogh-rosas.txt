@@ -1,21 +1,20 @@
-#ID:la-oreja-de-van-gogh-rosas
 #ARTIST:La Oreja de Van Gogh
-#ARTISTORIGIN:ES
 #TITLE:Rosas
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:214
-#REALBPM:107
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Rosas
-#VIDEOID:nYnLVWXmRm8
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=nYnLVWXmRm8
 #GENRE:Rock
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.575Z
-#EDITION:SingStar Party
 #GAP:10833,691588785046
+#EDITION:SingStar Party
+#ALLKARAOKE_ID:la-oreja-de-van-gogh-rosas
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.575Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:107
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Rosas
+#ALLKARAOKE_VOLUME:0,6
 : 14 3 69 En 
 : 18 3 73 un 
 : 22 3 73 dí

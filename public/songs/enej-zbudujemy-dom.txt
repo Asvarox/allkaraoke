@@ -1,20 +1,18 @@
-#ID:enej-zbudujemy-dom
 #ARTIST:Enej
-#ARTISTORIGIN:PL
 #TITLE:Zbudujemy dom
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:210
-#REALBPM:105
 #YEAR:2015
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enej&cancion=Zbudujemy%20dom
-#VIDEOID:4SUHlka_Kbs
-#VIDEOGAP:0
-#VOLUME:0,7
-#GENRE:
+#VIDEO:v=4SUHlka_Kbs
 #LANGUAGE:Polish
-#LASTUPDATE:2023-12-15T05:36:08.821Z
 #GAP:25510
+#ALLKARAOKE_ID:enej-zbudujemy-dom
+#ALLKARAOKE_LASTUPDATE:2023-12-15T05:36:08.821Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enej&cancion=Zbudujemy%20dom
+#ALLKARAOKE_VOLUME:0,7
 : 14 2 4 Przyj
 : 18 2 4 dzie 
 : 22 3 0 ta

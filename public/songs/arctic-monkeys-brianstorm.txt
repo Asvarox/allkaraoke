@@ -1,20 +1,19 @@
-#ID:arctic-monkeys-brianstorm
 #ARTIST:Arctic Monkeys
-#ARTISTORIGIN:GB
 #TITLE:Brianstorm
 #CREATOR:reck0ning
-#CREATORURL:https://usdb.animux.de/index.php?link=profil&id=53676
 #BPM:329,98
-#REALBPM:165
 #YEAR:2007
-#SOURCEURL:https://www.youtube.com/watch?v=30w8DyEJ__0
-#VIDEOID:30w8DyEJ__0
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=30w8DyEJ__0
 #GENRE:Indie Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-12-22T16:33:51.876Z
 #GAP:37779,939390266074
+#ALLKARAOKE_ID:arctic-monkeys-brianstorm
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:51.876Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=profil&id=53676
+#ALLKARAOKE_REALBPM:165
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=30w8DyEJ__0
+#ALLKARAOKE_VOLUME:0,7
 : 22 6 11 Bri
 : 30 12 12 an 
 - 42 44

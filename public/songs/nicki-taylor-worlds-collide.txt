@@ -1,17 +1,16 @@
-#ID:nicki-taylor-worlds-collide
 #ARTIST:Nicki Taylor
-#ARTISTORIGIN:US
 #TITLE:Worlds Collide
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:440,16
-#REALBPM:110
 #YEAR:2015
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nicki%20Taylor&cancion=Worlds%20Collide
-#VIDEOID:4Twd965VzX4
-#VIDEOGAP:0
+#VIDEO:v=4Twd965VzX4
 #LANGUAGE:English
 #GAP:943
+#ALLKARAOKE_ID:nicki-taylor-worlds-collide
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nicki%20Taylor&cancion=Worlds%20Collide
 : 0 6 10 Ah
 : 8 12 9 ~
 : 24 6 7 ~

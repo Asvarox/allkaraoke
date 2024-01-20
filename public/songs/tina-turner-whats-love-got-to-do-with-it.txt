@@ -1,19 +1,18 @@
-#ID:tina-turner-whats-love-got-to-do-with-it
 #ARTIST:Tina Turner
-#ARTISTORIGIN:US
 #TITLE:What’s Love Got To Do With It
 #CREATOR:NikNak
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8110
 #BPM:350
-#REALBPM:98
 #YEAR:1985
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5510
-#VIDEOID:oGpFcHTxjZs
-#VIDEOGAP:0
+#VIDEO:v=oGpFcHTxjZs
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Legends
 #GAP:19444,285714285714
+#EDITION:SingStar Legends
+#ALLKARAOKE_ID:tina-turner-whats-love-got-to-do-with-it
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8110
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5510
 : 23 7 56 You 
 : 30 9 63 must 
 : 41 8 61 un

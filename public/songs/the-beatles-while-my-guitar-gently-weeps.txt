@@ -1,19 +1,18 @@
-#ID:the-beatles-while-my-guitar-gently-weeps
 #ARTIST:The Beatles
-#ARTISTORIGIN:GB
 #TITLE:While My Guitar Gently Weeps
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:347,13
-#REALBPM:116
 #YEAR:1968
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=While%20My%20Guitar%20Gently%20Weeps
-#VIDEOID:YFDg-pgE0Hk
-#VIDEOGAP:0
+#VIDEO:v=YFDg-pgE0Hk
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:The Beatles Rock Band
 #GAP:15656,136029729496
+#EDITION:The Beatles Rock Band
+#ALLKARAOKE_ID:the-beatles-while-my-guitar-gently-weeps
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=While%20My%20Guitar%20Gently%20Weeps
 - -22 1
 - 1
 : 23 2 4 I 

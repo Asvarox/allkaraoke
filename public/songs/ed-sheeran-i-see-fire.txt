@@ -1,18 +1,17 @@
-#ID:ed-sheeran-i-see-fire
 #ARTIST:Ed Sheeran
-#ARTISTORIGIN:GB
 #TITLE:I See Fire
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:206,6
-#REALBPM:76
 #YEAR:2013
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=I%20See%20Fire
-#VIDEOID:2fngvQS_PmQ
-#VIDEOGAP:0
+#VIDEO:v=2fngvQS_PmQ
 #GENRE:Soundtracks
 #LANGUAGE:English
 #GAP:-183,39181286549865
+#ALLKARAOKE_ID:ed-sheeran-i-see-fire
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=I%20See%20Fire
 : 14 9 10 Oh, 
 : 28 3 13 mis
 : 32 2 15 ty 

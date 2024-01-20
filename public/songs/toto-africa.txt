@@ -1,19 +1,18 @@
-#ID:toto-africa
 #ARTIST:Toto
-#ARTISTORIGIN:US
 #TITLE:Africa
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:186,2
-#REALBPM:92
 #YEAR:1983
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa
-#VIDEOID:FTQbiNvZqaY
-#VIDEOGAP:0
+#VIDEO:v=FTQbiNvZqaY
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Rock Ballads
 #GAP:23443,9187432286
+#EDITION:SingStar Rock Ballads
+#ALLKARAOKE_ID:toto-africa
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Toto&cancion=Africa
 : 12 1 47 I 
 : 14 1 51 hear 
 : 16 1 54 the 

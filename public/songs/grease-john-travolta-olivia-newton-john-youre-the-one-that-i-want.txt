@@ -1,18 +1,17 @@
-#ID:grease-john-travolta-olivia-newton-john-youre-the-one-that-i-want
 #ARTIST:Grease (John Travolta & Olivia Newton-John)
-#ARTISTORIGIN:US
 #TITLE:You're the One that I Want
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:221,79
-#REALBPM:107
 #YEAR:1978
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Grease%20(John%20Travolta%20%26%20Olivia%20Newton-John)&cancion=You're%20the%20One%20that%20I%20Want
-#VIDEOID:itRFjzQICJU
-#VIDEOGAP:0
+#VIDEO:v=itRFjzQICJU
 #GENRE:Musical
 #LANGUAGE:English
 #GAP:7434,575085725022
+#ALLKARAOKE_ID:grease-john-travolta-olivia-newton-john-youre-the-one-that-i-want
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:107
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Grease%20(John%20Travolta%20%26%20Olivia%20Newton-John)&cancion=You're%20the%20One%20that%20I%20Want
 F 14 4 0 San
 F 19 2 0 dy?
 - 21 40

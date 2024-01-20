@@ -1,17 +1,16 @@
-#ID:eric-clapton-tears-in-heaven
 #ARTIST:Eric Clapton
-#ARTISTORIGIN:GB
 #TITLE:Tears in Heaven
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:306,06
-#REALBPM:77
 #YEAR:1992
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Eric%20Clapton&cancion=Tears%20in%20Heaven
-#VIDEOID:JxPj3GAYYZ0
-#VIDEOGAP:0
+#VIDEO:v=JxPj3GAYYZ0
 #LANGUAGE:English
 #GAP:12857,800039208
+#ALLKARAOKE_ID:eric-clapton-tears-in-heaven
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Eric%20Clapton&cancion=Tears%20in%20Heaven
 : 20 6 13 Would 
 : 28 4 9 you 
 : 36 1 14 know

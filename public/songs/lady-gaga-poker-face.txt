@@ -1,20 +1,19 @@
-#ID:lady-gaga-poker-face
 #ARTIST:Lady Gaga
-#ARTISTORIGIN:US
 #TITLE:Poker Face
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:357,03
-#REALBPM:117
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Poker%20Face
-#VIDEOID:bESGLojNYSo
-#VIDEOGAP:0
-#VOLUME:0,651
+#VIDEO:v=bESGLojNYSo
 #GENRE:Dance
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 1
 #GAP:-800
+#EDITION:Rock Band Store 2010 Vol. 1
+#ALLKARAOKE_ID:lady-gaga-poker-face
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Poker%20Face
+#ALLKARAOKE_VOLUME:0,651
 : 606 4 23 I
 : 612 4 23  wan
 * 618 2 23 na

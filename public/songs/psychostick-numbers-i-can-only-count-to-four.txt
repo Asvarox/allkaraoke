@@ -1,20 +1,19 @@
-#ID:psychostick-numbers-i-can-only-count-to-four
 #ARTIST:Psychostick
-#ARTISTORIGIN:US
 #TITLE:Numbers (I Can Only Count to Four)
 #CREATOR:Daniel Baur
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=177415
 #BPM:297,5
-#REALBPM:130
 #YEAR:2011
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27125
-#VIDEOID:u8ccGjar4Es
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=u8ccGjar4Es
 #GENRE:Nu Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.393Z
 #GAP:-1,680672268907557
+#ALLKARAOKE_ID:psychostick-numbers-i-can-only-count-to-four
+#ALLKARAOKE_LASTUPDATE:2023-07-22T21:15:10.393Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=177415
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27125
+#ALLKARAOKE_VOLUME:0,7
 F 4 3 1 I 
 F 8 4 0 can 
 F 13 4 1 on

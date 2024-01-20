@@ -1,19 +1,18 @@
-#ID:dua-lipa-physical
 #ARTIST:Dua Lipa
-#ARTISTORIGIN:GB
 #TITLE:Physical
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:294
-#REALBPM:147
 #YEAR:2020
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Physical
-#VIDEOID:9HDEHj2yzew
-#VIDEOGAP:0
+#VIDEO:v=9HDEHj2yzew
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T21:58:17.527Z
 #GAP:34029,59183673469
+#ALLKARAOKE_ID:dua-lipa-physical
+#ALLKARAOKE_LASTUPDATE:2023-01-27T21:58:17.527Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:147
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Physical
 : 20 3 0 Com
 : 24 2 0 mon 
 : 28 3 0 love

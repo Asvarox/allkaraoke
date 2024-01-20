@@ -1,18 +1,18 @@
-#ID:amy-macdonald-this-is-the-life
 #ARTIST:Amy MacDonald
-#ARTISTORIGIN:GB
 #TITLE:This Is The Life
 #CREATOR:IC
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #BPM:379,96
-#REALBPM:192
 #YEAR:2007
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=4314
-#VIDEOID:iRYvuS9OxdA
+#VIDEO:v=iRYvuS9OxdA
 #VIDEOGAP:3
 #LANGUAGE:English
-#EDITION:[SC]-Songs
 #GAP:15258,05400568481
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:amy-macdonald-this-is-the-life
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:192
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=4314
 : 25 3 -1 O
 : 29 3 1 ~h, 
 : 33 2 1 the 

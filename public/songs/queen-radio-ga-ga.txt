@@ -1,20 +1,20 @@
-#ID:queen-radio-ga-ga
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:Radio Ga Ga
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:224,6
-#REALBPM:112
 #YEAR:1983
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Radio%20Ga%20Ga
-#VIDEOID:azdwsXLmrHE
+#VIDEO:v=azdwsXLmrHE
 #VIDEOGAP:5
-#VOLUME:1
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Anthem
 #GAP:61549,02
+#EDITION:SingStar Anthem
+#ALLKARAOKE_ID:queen-radio-ga-ga
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Radio%20Ga%20Ga
+#ALLKARAOKE_VOLUME:1
 : 0 3 60 I'd
 : 4 6 60  sit
 : 11 4 62  a

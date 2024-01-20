@@ -1,21 +1,19 @@
-#ID:lenny-kravitz-are-you-gonna-go-my-way
 #ARTIST:Lenny Kravitz
-#ARTISTORIGIN:US
 #TITLE:Are You Gonna Go My Way
-#CREATOR:
-#CREATORURL:
 #BPM:384,71
-#REALBPM:129
 #YEAR:1993
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lenny%20Kravitz&cancion=Are%20You%20Gonna%20Go%20My%20Way
-#VIDEOID:8LhCd1W2V0Q
+#VIDEO:v=8LhCd1W2V0Q
 #VIDEOGAP:2
-#VOLUME:0,75
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-09-19T18:36:35.626Z
-#EDITION:Rock Band Store 2009 Vol. 1
 #GAP:32396,24938265187
+#EDITION:Rock Band Store 2009 Vol. 1
+#ALLKARAOKE_ID:lenny-kravitz-are-you-gonna-go-my-way
+#ALLKARAOKE_LASTUPDATE:2023-09-19T18:36:35.626Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lenny%20Kravitz&cancion=Are%20You%20Gonna%20Go%20My%20Way
+#ALLKARAOKE_VOLUME:0,75
 : 26 4 16 I 
 : 32 4 16 was 
 : 39 15 19 born

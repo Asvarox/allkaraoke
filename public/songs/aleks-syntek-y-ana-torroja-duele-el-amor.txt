@@ -1,20 +1,19 @@
-#ID:aleks-syntek-y-ana-torroja-duele-el-amor
 #ARTIST:Aleks Syntek y Ana Torroja
 #TITLE:Duele el amor
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:260
-#REALBPM:130
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aleks%20Syntek%20y%20Ana%20Torroja&cancion=Duele%20el%20amor
-#VIDEOID:VuDc8HQ3Rbg
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=VuDc8HQ3Rbg
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.554Z
-#EDITION:SingStar Latino
 #GAP:-454,76923076923094
+#EDITION:SingStar Latino
+#ALLKARAOKE_ID:aleks-syntek-y-ana-torroja-duele-el-amor
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.554Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aleks%20Syntek%20y%20Ana%20Torroja&cancion=Duele%20el%20amor
+#ALLKARAOKE_VOLUME:1
 : 17 7 61 Due
 : 25 6 59 le el 
 : 33 6 57 a

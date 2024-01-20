@@ -1,18 +1,17 @@
-#ID:wes-alane-ala-nie-wali-mu-paly
 #ARTIST:Wes
-#ARTISTORIGIN:CM
 #TITLE:Alane (Ala nie wali mu pały)
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:244
-#REALBPM:122
 #YEAR:1996
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=9876
-#VIDEOID:1tU8plYDEwA
-#VIDEOGAP:0
+#VIDEO:v=1tU8plYDEwA
 #GENRE:MORE
 #LANGUAGE:Polish
 #GAP:800
+#ALLKARAOKE_ID:wes-alane-ala-nie-wali-mu-paly
+#ALLKARAOKE_ARTISTORIGIN:CM
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=9876
 : 0 2 8 Z mas
 : 4 30 8 łem
 : 36 3 9 ~

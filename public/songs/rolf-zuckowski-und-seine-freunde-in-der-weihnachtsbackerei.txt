@@ -1,21 +1,20 @@
-#ID:rolf-zuckowski-und-seine-freunde-in-der-weihnachtsbackerei
 #ARTIST:Rolf Zuckowski und seine Freunde
-#ARTISTORIGIN:DE
 #TITLE:In der Weihnachtsbäckerei
 #CREATOR:Tom
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=17
 #BPM:295,5
-#REALBPM:147
 #YEAR:1987
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1564
-#VIDEOID:IFZqDcFU4Ow
-#VIDEOGAP:0
-#VOLUME:0,76
+#VIDEO:v=IFZqDcFU4Ow
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-11-30T16:28:25.235Z
-#EDITION:Christmas
 #GAP:12029,591836734693
+#EDITION:Christmas
+#ALLKARAOKE_ID:rolf-zuckowski-und-seine-freunde-in-der-weihnachtsbackerei
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:25.235Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=17
+#ALLKARAOKE_REALBPM:147
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1564
+#ALLKARAOKE_VOLUME:0,76
 : 20 3 19 In 
 : 24 2 17 der 
 : 27 4 16 Weih

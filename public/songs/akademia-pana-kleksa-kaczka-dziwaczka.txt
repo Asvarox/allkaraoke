@@ -1,17 +1,17 @@
-#ID:akademia-pana-kleksa-kaczka-dziwaczka
 #ARTIST:Akademia Pana Kleksa
 #TITLE:Kaczka dziwaczka
 #CREATOR:jockel1974
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #BPM:119,45
-#REALBPM:100
 #YEAR:1984
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2892
-#VIDEOID:yTY2LX3GG9Y
+#VIDEO:v=yTY2LX3GG9Y
 #VIDEOGAP:35
 #GENRE:Dla dzieci
 #LANGUAGE:Polish
 #GAP:35200
+#ALLKARAOKE_ID:akademia-pana-kleksa-kaczka-dziwaczka
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2892
 : 33 2 7 Nad 
 : 35 3 3 rzecz
 : 38 2 0 ką 

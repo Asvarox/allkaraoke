@@ -1,21 +1,20 @@
-#ID:michael-buble-its-beginning-to-look-a-lot-like-christmas
 #ARTIST:Michael Bublé
-#ARTISTORIGIN:CA
 #TITLE:It's Beginning to Look a lot Like Christmas
 #CREATOR:subkei
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
 #BPM:385,08
-#REALBPM:95
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Bubl%C3%A9&cancion=It's%20Beginning%20to%20Look%20a%20lot%20Like%20Christmas%20(Live)
-#VIDEOID:bYnqRzJTOYs
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=bYnqRzJTOYs
 #GENRE:Swing
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:15.018Z
-#EDITION:Christmas
 #GAP:22241,22343409162
+#EDITION:Christmas
+#ALLKARAOKE_ID:michael-buble-its-beginning-to-look-a-lot-like-christmas
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:15.018Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Bubl%C3%A9&cancion=It's%20Beginning%20to%20Look%20a%20lot%20Like%20Christmas%20(Live)
+#ALLKARAOKE_VOLUME:1
 : 26 4 -4 It's 
 : 41 3 -3 be
 : 46 4 -1 gin

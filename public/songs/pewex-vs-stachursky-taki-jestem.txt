@@ -1,17 +1,17 @@
-#ID:pewex-vs-stachursky-taki-jestem
 #ARTIST:Pewex vs Stachursky
-#ARTISTORIGIN:PL
 #TITLE:Taki Jestem
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:128,02
-#REALBPM:130
 #YEAR:1995
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12388
-#VIDEOID:G0nTL5QRnSM
+#VIDEO:v=G0nTL5QRnSM
 #VIDEOGAP:6
 #LANGUAGE:Polish
 #GAP:13156
+#ALLKARAOKE_ID:pewex-vs-stachursky-taki-jestem
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12388
 - 0 263
 - 263
 : 272 1 10 Je

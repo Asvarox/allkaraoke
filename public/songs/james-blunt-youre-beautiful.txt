@@ -1,19 +1,18 @@
-#ID:james-blunt-youre-beautiful
 #ARTIST:James Blunt
-#ARTISTORIGIN:GB
 #TITLE:You're Beautiful
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:81
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=James%20Blunt&cancion=You're%20Beautiful
-#VIDEOID:oofSnsGkops
-#VIDEOGAP:0
+#VIDEO:v=oofSnsGkops
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Pop USA
 #GAP:14367,65
+#EDITION:SingStar Pop USA
+#ALLKARAOKE_ID:james-blunt-youre-beautiful
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=James%20Blunt&cancion=You're%20Beautiful
 : 0 7 55 My
 : 8 4 58  life
 : 14 3 55  is

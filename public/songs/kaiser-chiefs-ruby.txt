@@ -1,19 +1,19 @@
-#ID:kaiser-chiefs-ruby
 #ARTIST:Kaiser Chiefs
-#ARTISTORIGIN:GB
 #TITLE:Ruby
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:398,92
-#REALBPM:92
 #YEAR:2007
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kaiser%20Chiefs&cancion=Ruby
-#VIDEOID:qObzgUfCl28
+#VIDEO:v=qObzgUfCl28
 #VIDEOGAP:-5
 #GENRE:Indie Rock
 #LANGUAGE:English
-#EDITION:Lego Rock Band
 #GAP:7194,758848892008
+#EDITION:Lego Rock Band
+#ALLKARAOKE_ID:kaiser-chiefs-ruby
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kaiser%20Chiefs&cancion=Ruby
 - -26 1
 - 1
 : 27 4 8 Da 

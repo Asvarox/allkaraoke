@@ -1,20 +1,19 @@
-#ID:pimpinela-olvidame-y-pega-la-vuelta
 #ARTIST:Pimpinela
-#ARTISTORIGIN:AR
 #TITLE:Olvídame y pega la vuelta
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:308,8
-#REALBPM:77
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pimpinela&cancion=Olv%C3%ADdame%20y%20pega%20la%20vuelta
-#VIDEOID:fOHrY0jV6Hg
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=fOHrY0jV6Hg
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.583Z
-#EDITION:SingStar Cla ES
 #GAP:3036,922279792746
+#EDITION:SingStar Cla ES
+#ALLKARAOKE_ID:pimpinela-olvidame-y-pega-la-vuelta
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.583Z
+#ALLKARAOKE_ARTISTORIGIN:AR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pimpinela&cancion=Olv%C3%ADdame%20y%20pega%20la%20vuelta
+#ALLKARAOKE_VOLUME:0,65
 : 21 2 34 Ha
 : 25 2 34 ce 
 : 29 2 34 dos 

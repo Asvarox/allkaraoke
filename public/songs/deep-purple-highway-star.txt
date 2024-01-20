@@ -1,21 +1,20 @@
-#ID:deep-purple-highway-star
 #ARTIST:Deep Purple
-#ARTISTORIGIN:GB
 #TITLE:Highway Star
 #CREATOR:Klafhor
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #BPM:207,6
-#REALBPM:173
 #YEAR:1972
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Deep%20Purple&cancion=Highway%20Star
-#VIDEOID:UAKCR7kQMTQ
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=UAKCR7kQMTQ
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-06-08T08:11:24.266Z
-#EDITION:Rock Band
 #GAP:33262,439306358385
+#EDITION:Rock Band
+#ALLKARAOKE_ID:deep-purple-highway-star
+#ALLKARAOKE_LASTUPDATE:2023-06-08T08:11:24.266Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
+#ALLKARAOKE_REALBPM:173
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Deep%20Purple&cancion=Highway%20Star
+#ALLKARAOKE_VOLUME:0,6
 : 14 3 31 No
 : 19 1 31 bod
 : 21 1 31 y 

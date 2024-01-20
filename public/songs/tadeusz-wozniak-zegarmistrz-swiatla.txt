@@ -1,18 +1,18 @@
-#ID:tadeusz-wozniak-zegarmistrz-swiatla
 #ARTIST:Tadeusz Woźniak
-#ARTISTORIGIN:PL
 #TITLE:Zegarmistrz światła
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:229,92
-#REALBPM:87
 #YEAR:1972
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tadeusz%20Wo%C5%BAniak&cancion=Zegarmistrz%20%C5%9Bwiat%C5%82a
-#VIDEOID:A41PF4lUkrg
-#VOLUME:0,8
+#VIDEO:v=A41PF4lUkrg
 #GENRE:Ballade
 #LANGUAGE:Polish
 #GAP:9228
+#ALLKARAOKE_ID:tadeusz-wozniak-zegarmistrz-swiatla
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tadeusz%20Wo%C5%BAniak&cancion=Zegarmistrz%20%C5%9Bwiat%C5%82a
+#ALLKARAOKE_VOLUME:0,8
 : 0 2 -13 A
 : 3 2 -6  kie
 : 6 2 -6 dy

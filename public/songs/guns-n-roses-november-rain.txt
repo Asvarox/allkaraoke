@@ -1,20 +1,19 @@
-#ID:guns-n-roses-november-rain
 #ARTIST:Guns N’ Roses
-#ARTISTORIGIN:US
 #TITLE:November Rain
 #CREATOR:jockel1974
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #BPM:319,25
-#REALBPM:84
 #YEAR:1991
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2531
-#VIDEOID:8SbUC-UaAxE
-#VIDEOGAP:0
+#VIDEO:v=8SbUC-UaAxE
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T20:07:23.365Z
-#EDITION:None
 #GAP:88833,31245105717
+#EDITION:None
+#ALLKARAOKE_ID:guns-n-roses-november-rain
+#ALLKARAOKE_LASTUPDATE:2023-01-28T20:07:23.365Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
+#ALLKARAOKE_REALBPM:84
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2531
 : 21 3 8 When 
 : 26 7 11 I 
 : 35 5 13 look 

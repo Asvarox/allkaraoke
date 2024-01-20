@@ -1,18 +1,17 @@
-#ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-bogurodzica
 #ARTIST:Reprezentacyjny Zespół Artystyczny Wojska Polskiego
-#ARTISTORIGIN:PL
 #TITLE:Bogurodzica
 #CREATOR:Beneblade
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #BPM:224,74
-#REALBPM:42
 #YEAR:1989
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Bogurodzica
-#VIDEOID:NrhHjoyaHdo
-#VIDEOGAP:0
+#VIDEO:v=NrhHjoyaHdo
 #GENRE:Classical
 #LANGUAGE:Polish
 #GAP:34128,843107591
+#ALLKARAOKE_ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-bogurodzica
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#ALLKARAOKE_REALBPM:42
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Bogurodzica
 : 15 33 2 Bo
 : 49 26 0 gu
 : 76 34 5 ro

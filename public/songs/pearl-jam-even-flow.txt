@@ -1,19 +1,19 @@
-#ID:pearl-jam-even-flow
 #ARTIST:Pearl Jam
-#ARTISTORIGIN:US
 #TITLE:Even Flow
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:399,71
-#REALBPM:108
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Even%20Flow
-#VIDEOID:CxKWTzr-k6s
+#VIDEO:v=CxKWTzr-k6s
 #VIDEOGAP:9
 #GENRE:Grunge
 #LANGUAGE:English
-#EDITION:Rock Band Store 2009 Vol. 1
 #GAP:26116,765404918566
+#EDITION:Rock Band Store 2009 Vol. 1
+#ALLKARAOKE_ID:pearl-jam-even-flow
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pearl%20Jam&cancion=Even%20Flow
 : 27 29 18 Freez
 : 59 21 12 ing
 : 81 3 11 ~

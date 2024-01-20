@@ -1,22 +1,19 @@
-#ID:elton-john-rocket-man-i-think-its-going-to-be-a-long-long-time
 #ARTIST:Elton John
-#ARTISTORIGIN:GB
 #TITLE:Rocket Man (I Think It’s Going To Be A Long Long Time)
 #CREATOR:Canni
-#CREATORURL:
 #BPM:273,95
-#REALBPM:137
 #YEAR:1972
-#SOURCEURL:
-#VIDEOID:DtVBCG6ThDk
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=DtVBCG6ThDk
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2024-01-07T06:25:25.924Z
-#EDITION:SingStar Legends [AU|DE|ES|FR|IT|UK]
 #GAP:2424,418689541887
-#TRACKNAMES:["Rocket Man - Elton John"]
+#EDITION:SingStar Legends [AU|DE|ES|FR|IT|UK]
+#ALLKARAOKE_ID:elton-john-rocket-man-i-think-its-going-to-be-a-long-long-time
+#ALLKARAOKE_LASTUPDATE:2024-01-07T06:25:25.924Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:137
+#ALLKARAOKE_VOLUME:0,8
+#P1:Rocket Man - Elton John
 : 18 3 7 She 
 : 22 6 10 packed 
 : 33 2 7 my 

@@ -1,17 +1,16 @@
-#ID:coldplay-the-scientist
 #ARTIST:Coldplay
-#ARTISTORIGIN:GB
 #TITLE:The Scientist
 #CREATOR:Pacayaka
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka
 #BPM:292,4
-#REALBPM:74
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=The%20Scientist
-#VIDEOID:RB-RcX5DS5A
-#VIDEOGAP:0
+#VIDEO:v=RB-RcX5DS5A
 #LANGUAGE:English
 #GAP:1025,30779753762
+#ALLKARAOKE_ID:coldplay-the-scientist
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pacayaka
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=The%20Scientist
 : 19 6 5 Come 
 : 27 3 7 up 
 : 34 6 5 to 

@@ -1,18 +1,17 @@
-#ID:ed-sheeran-galway-girl
 #ARTIST:Ed Sheeran
-#ARTISTORIGIN:GB
 #TITLE:Galway Girl
 #CREATOR:nezunobaka
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nezunobaka
 #BPM:399,6
-#REALBPM:99
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Galway%20Girl
-#VIDEOID:87gWaABqGYs
-#VIDEOGAP:0
+#VIDEO:v=87gWaABqGYs
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:1676,4864864864865
+#ALLKARAOKE_ID:ed-sheeran-galway-girl
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nezunobaka
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Galway%20Girl
 : 27 1 -3 She 
 : 33 4 6 played 
 : 41 2 4 the 

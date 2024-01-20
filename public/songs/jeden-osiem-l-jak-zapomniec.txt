@@ -1,21 +1,20 @@
-#ID:jeden-osiem-l-jak-zapomniec
 #ARTIST:Jeden Osiem L
-#ARTISTORIGIN:PL
 #TITLE:Jak zapomnieć
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:85
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jeden%20Osiem%20L&cancion=Jak%20zapomniec
-#VIDEOID:qvv7t8Y0iWk
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=qvv7t8Y0iWk
 #GENRE:Pop
 #LANGUAGE:Polish
-#LASTUPDATE:2023-11-08T20:39:30.973Z
-#EDITION:SingStar ESKA
 #GAP:10564,29411764706
+#EDITION:SingStar ESKA
+#ALLKARAOKE_ID:jeden-osiem-l-jak-zapomniec
+#ALLKARAOKE_LASTUPDATE:2023-11-08T20:39:30.973Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jeden%20Osiem%20L&cancion=Jak%20zapomniec
+#ALLKARAOKE_VOLUME:0,81
 : 23 2 59 Ile
 : 27 2 59 ~
 : 31 2 59 dał

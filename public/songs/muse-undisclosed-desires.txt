@@ -1,18 +1,17 @@
-#ID:muse-undisclosed-desires
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Undisclosed desires
 #CREATOR:webo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=webo
 #BPM:240
-#REALBPM:117
 #YEAR:2009
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Undisclosed%20desires
-#VIDEOID:R8OOWcsFj0U
-#VIDEOGAP:0
+#VIDEO:v=R8OOWcsFj0U
 #GENRE:Rock Alternativo
 #LANGUAGE:English
 #GAP:17780
+#ALLKARAOKE_ID:muse-undisclosed-desires
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=webo
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Undisclosed%20desires
 : 3 2 -2 I
 : 8 8 -2  know
 : 21 4 0  you've

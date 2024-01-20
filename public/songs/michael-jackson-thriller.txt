@@ -1,18 +1,17 @@
-#ID:michael-jackson-thriller
 #ARTIST:Michael Jackson
-#ARTISTORIGIN:US
 #TITLE:Thriller
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:474,12
-#REALBPM:116
 #YEAR:1982
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller
-#VIDEOID:WAVX-MlBfew
-#VIDEOGAP:0
+#VIDEO:v=WAVX-MlBfew
 #GENRE:Funk
 #LANGUAGE:English
 #GAP:58010,59807643635
+#ALLKARAOKE_ID:michael-jackson-thriller
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller
 - -31 1
 - 1
 : 32 4 11 It's 

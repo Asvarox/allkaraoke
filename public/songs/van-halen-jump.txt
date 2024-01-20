@@ -1,20 +1,19 @@
-#ID:van-halen-jump
 #ARTIST:Van Halen
-#ARTISTORIGIN:US
 #TITLE:Jump
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:392,63
-#REALBPM:129
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Van%20Halen&cancion=Jump
-#VIDEOID:SwYN7mTi6HM
-#VIDEOGAP:0
+#VIDEO:v=SwYN7mTi6HM
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T22:13:52.054Z
-#EDITION:Guitar Hero Van Halen
 #GAP:6258,845438475137
+#EDITION:Guitar Hero Van Halen
+#ALLKARAOKE_ID:van-halen-jump
+#ALLKARAOKE_LASTUPDATE:2023-01-27T22:13:52.054Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Van%20Halen&cancion=Jump
 F 26 12 12 Ah
 F 40 7 14 ~
 F 49 11 16 ~

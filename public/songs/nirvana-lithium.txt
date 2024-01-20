@@ -1,20 +1,19 @@
-#ID:nirvana-lithium
 #ARTIST:Nirvana
-#ARTISTORIGIN:US
 #TITLE:Lithium
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:246,4
-#REALBPM:123
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Lithium
-#VIDEOID:pkcJEvMcnEg
-#VIDEOGAP:0
-#VOLUME:0,62
+#VIDEO:v=pkcJEvMcnEg
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:00:38.298Z
-#EDITION:SingStar '90s USA
 #GAP:7828,9740259740265
+#EDITION:SingStar '90s USA
+#ALLKARAOKE_ID:nirvana-lithium
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:00:38.298Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Lithium
+#ALLKARAOKE_VOLUME:0,62
 : 16 5 54 I'm 
 : 24 5 54 so 
 : 32 2 52 hap

@@ -1,19 +1,18 @@
-#ID:ricky-martin-livin-la-vida-loca
 #ARTIST:Ricky Martin
-#ARTISTORIGIN:PR
 #TITLE:Livin' La Vida Loca
 #CREATOR:pauldiddy
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149
 #BPM:177,84
-#REALBPM:178
 #YEAR:1999
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5383
-#VIDEOID:p47fEXGabaY
-#VIDEOGAP:0
+#VIDEO:v=p47fEXGabaY
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:Ante Eppinger
 #GAP:12090,854251012146
+#EDITION:Ante Eppinger
+#ALLKARAOKE_ID:ricky-martin-livin-la-vida-loca
+#ALLKARAOKE_ARTISTORIGIN:PR
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149
+#ALLKARAOKE_REALBPM:178
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5383
 : 12 2 20 She's 
 : 16 4 20 in
 : 22 1 16 to 

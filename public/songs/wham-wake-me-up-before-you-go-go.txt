@@ -1,19 +1,18 @@
-#ID:wham-wake-me-up-before-you-go-go
 #ARTIST:Wham
-#ARTISTORIGIN:GB
 #TITLE:Wake Me Up Before You Go-Go
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:240,2
-#REALBPM:162
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go
-#VIDEOID:pIgZ7gMze7A
-#VIDEOGAP:0
+#VIDEO:v=pIgZ7gMze7A
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '80s
 #GAP:-34,87515451174295
+#EDITION:SingStar '80s
+#ALLKARAOKE_ID:wham-wake-me-up-before-you-go-go
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:162
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wham&cancion=Wake%20Me%20Up%20Before%20You%20Go-Go
 : 16 2 48 Jit
 : 20 1 48 ter
 : 22 3 48 bug

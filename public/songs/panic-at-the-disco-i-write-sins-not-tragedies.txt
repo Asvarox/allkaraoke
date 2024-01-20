@@ -1,21 +1,18 @@
-#ID:panic-at-the-disco-i-write-sins-not-tragedies
 #ARTIST:Panic! at the Disco
-#ARTISTORIGIN:US
 #TITLE:I Write Sins Not Tragedies
 #CREATOR:Canni
-#CREATORURL:
 #BPM:340
-#REALBPM:170
 #YEAR:2006
-#SOURCEURL:
-#VIDEOID:vc6vs-l5dkc
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=vc6vs-l5dkc
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.315Z
-#EDITION:SingStar Pop
 #GAP:10415,29411764706
+#EDITION:SingStar Pop
+#ALLKARAOKE_ID:panic-at-the-disco-i-write-sins-not-tragedies
+#ALLKARAOKE_LASTUPDATE:2023-10-15T11:26:31.315Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:170
+#ALLKARAOKE_VOLUME:0,9
 : 23 6 -3 Oh 
 - 29
 : 43 3 -3 Well 

@@ -1,20 +1,19 @@
-#ID:thirty-seconds-to-mars-a-beautiful-lie
 #ARTIST:Thirty Seconds to Mars
-#ARTISTORIGIN:US
 #TITLE:A Beautiful Lie
 #CREATOR:a beautiful lie 
-#CREATORURL:
 #BPM:320,04
-#REALBPM:160
 #YEAR:2007
-#SOURCEURL:https://www.youtube.com/watch?v=4Kvd-uquuhI&ab_channel=ThirtySecondsToMarsVEVO
-#VIDEOID:4Kvd-uquuhI
+#VIDEO:v=4Kvd-uquuhI
 #VIDEOGAP:80
-#VOLUME:0,8
 #GENRE:Alternative Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-12-15T05:36:09.938Z
 #GAP:120391,74803149607
+#ALLKARAOKE_ID:thirty-seconds-to-mars-a-beautiful-lie
+#ALLKARAOKE_LASTUPDATE:2023-12-15T05:36:09.938Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=4Kvd-uquuhI&ab_channel=ThirtySecondsToMarsVEVO
+#ALLKARAOKE_VOLUME:0,8
 : 21 3 9 Lie
 : 25 16 11 ~ 
 : 44 3 9 a

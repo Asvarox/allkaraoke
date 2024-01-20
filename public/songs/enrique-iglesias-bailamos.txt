@@ -1,17 +1,16 @@
-#ID:enrique-iglesias-bailamos
 #ARTIST:Enrique Iglesias
-#ARTISTORIGIN:ES
 #TITLE:Bailamos
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:400,48
-#REALBPM:99
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias&cancion=Bailamos
-#VIDEOID:Pv0PAchVGCw
-#VIDEOGAP:0
+#VIDEO:v=Pv0PAchVGCw
 #LANGUAGE:English
 #GAP:10904
+#ALLKARAOKE_ID:enrique-iglesias-bailamos
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Enrique%20Iglesias&cancion=Bailamos
 F 0 3 7 Es
 F 4 2 7 ta
 F 7 2 7  no

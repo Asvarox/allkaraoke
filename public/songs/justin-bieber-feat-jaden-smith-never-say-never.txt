@@ -1,19 +1,16 @@
-#ID:justin-bieber-feat-jaden-smith-never-say-never
 #ARTIST:Justin Bieber feat. Jaden Smith
 #TITLE:Never Say Never
 #CREATOR:gaspar17
-#CREATORURL:
 #BPM:388,4
-#REALBPM:97
 #YEAR:2010
-#SOURCEURL:
-#VIDEOID:_Z5-P9v3F8w
-#VIDEOGAP:0
-#VOLUME:0,68
+#VIDEO:v=_Z5-P9v3F8w
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2024-01-07T06:25:26.334Z
 #GAP:436,2203913491245
+#ALLKARAOKE_ID:justin-bieber-feat-jaden-smith-never-say-never
+#ALLKARAOKE_LASTUPDATE:2024-01-07T06:25:26.334Z
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_VOLUME:0,68
 : 19 4 14 Ne
 : 27 4 12 ver 
 : 35 4 11 say 

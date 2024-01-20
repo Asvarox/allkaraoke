@@ -1,18 +1,18 @@
-#ID:muse-supermassive-black-hole
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Supermassive Black Hole
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:239,99
-#REALBPM:117
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Supermassive%20Black%20Hole
-#VIDEOID:Xsp3_a-PMTw
+#VIDEO:v=Xsp3_a-PMTw
 #VIDEOGAP:1
 #GENRE:Rock Alternativo
 #LANGUAGE:English
 #GAP:32162,410840468867
+#ALLKARAOKE_ID:muse-supermassive-black-hole
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Supermassive%20Black%20Hole
 : 16 3 11 Oh,
 : 20 3 9 ~ 
 : 24 2 9 ba

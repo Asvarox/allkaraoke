@@ -1,19 +1,19 @@
-#ID:bon-jovi-wanted-dead-or-alive
 #ARTIST:Bon Jovi
-#ARTISTORIGIN:US
 #TITLE:Wanted dead or alive
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:382,7
-#REALBPM:74
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Wanted%20dead%20or%20alive
-#VIDEOID:SRvCvsRp5ho
+#VIDEO:v=SRvCvsRp5ho
 #VIDEOGAP:-17
 #GENRE:Glam Metal
 #LANGUAGE:English
-#EDITION:Rock Band
 #GAP:31180
+#EDITION:Rock Band
+#ALLKARAOKE_ID:bon-jovi-wanted-dead-or-alive
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Wanted%20dead%20or%20alive
 : 0 3 14 It's
 : 5 4 17  all
 : 11 4 12 ~

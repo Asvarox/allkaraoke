@@ -1,17 +1,15 @@
-#ID:piotr-rubik-psalm-dla-ciebie
 #ARTIST:Piotr Rubik
-#ARTISTORIGIN:PL
 #TITLE:Psalm dla ciebie
 #CREATOR:davidus01
-#CREATORURL:
 #BPM:100
-#REALBPM:100
 #YEAR:2006
-#SOURCEURL:
-#VIDEOID:9-zQr3ATnM8
+#VIDEO:v=9-zQr3ATnM8
 #VIDEOGAP:9
 #LANGUAGE:Polish
 #GAP:18650
+#ALLKARAOKE_ID:piotr-rubik-psalm-dla-ciebie
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:100
 : 7 7 7 Choć 
 : 15 2 3 nie 
 : 17 2 5 masz 

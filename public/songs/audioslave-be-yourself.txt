@@ -1,18 +1,17 @@
-#ID:audioslave-be-yourself
 #ARTIST:Audioslave
-#ARTISTORIGIN:US
 #TITLE:Be Yourself
 #CREATOR:Spys4Darwin
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
 #BPM:233,76
-#REALBPM:117
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Be%20Yourself
-#VIDEOID:WC5FdFlUcl0
-#VIDEOGAP:0
+#VIDEO:v=WC5FdFlUcl0
 #GENRE:Alternative Rock
 #LANGUAGE:English
 #GAP:34043,30595482546
+#ALLKARAOKE_ID:audioslave-be-yourself
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Audioslave&cancion=Be%20Yourself
 : 16 3 7 Some
 : 20 2 10 one 
 : 24 3 10 falls 

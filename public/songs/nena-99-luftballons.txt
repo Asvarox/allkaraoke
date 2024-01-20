@@ -1,21 +1,20 @@
-#ID:nena-99-luftballons
 #ARTIST:Nena
-#ARTISTORIGIN:DE
 #TITLE:99 Luftballons
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:190,6
-#REALBPM:97
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nena&cancion=99%20Luftballons
-#VIDEOID:Fpu5a0Bl8eY
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=Fpu5a0Bl8eY
 #GENRE:Rock
 #LANGUAGE:German
-#LASTUPDATE:2023-06-12T20:54:31.896Z
-#EDITION:SingStar '80s German
 #GAP:2700,91500524659
+#EDITION:SingStar '80s German
+#ALLKARAOKE_ID:nena-99-luftballons
+#ALLKARAOKE_LASTUPDATE:2023-06-12T20:54:31.896Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nena&cancion=99%20Luftballons
+#ALLKARAOKE_VOLUME:0,9
 : 13 2 65 Hast 
 : 18 2 67 du 
 : 20 2 63 et

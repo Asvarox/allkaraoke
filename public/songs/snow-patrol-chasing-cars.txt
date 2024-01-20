@@ -1,19 +1,18 @@
-#ID:snow-patrol-chasing-cars
 #ARTIST:Snow Patrol
-#ARTISTORIGIN:GB
 #TITLE:Chasing Cars
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:208
-#REALBPM:103
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Snow%20Patrol&cancion=Chasing%20Cars
-#VIDEOID:GemKqzILV4w
-#VIDEOGAP:0
+#VIDEO:v=GemKqzILV4w
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SSHottestHitsGE
 #GAP:1703,3846153846155
+#EDITION:SSHottestHitsGE
+#ALLKARAOKE_ID:snow-patrol-chasing-cars
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Snow%20Patrol&cancion=Chasing%20Cars
 - -13 1
 - 1
 : 14 3 52 We'll 

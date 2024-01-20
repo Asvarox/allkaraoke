@@ -1,19 +1,18 @@
-#ID:queen-i-want-it-all
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:I Want It All
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:184,66
-#REALBPM:92
 #YEAR:1989
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20It%20All
-#VIDEOID:hFDcoX7s6rE
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=hFDcoX7s6rE
 #LANGUAGE:English
-#EDITION:SingStar Queen
 #GAP:493,2355680710498
+#EDITION:SingStar Queen
+#ALLKARAOKE_ID:queen-i-want-it-all
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20It%20All
+#ALLKARAOKE_VOLUME:0,85
 : 12 2 57 I 
 : 16 3 57 want 
 : 20 2 59 it 

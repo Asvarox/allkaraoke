@@ -1,18 +1,17 @@
-#ID:disneys-pocahontas-edyta-gorniak-kolorowy-wiatr
 #ARTIST:Disney’s Pocahontas (Edyta Górniak)
 #TITLE:Kolorowy Wiatr
 #CREATOR:vaquel
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=180336
 #BPM:326,7
-#REALBPM:91
 #YEAR:1995
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=26438
-#VIDEOID:UityBuZoXv0
-#VIDEOGAP:0
+#VIDEO:v=UityBuZoXv0
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-04T18:33:31.803Z
-#EDITION:All for Children vol.1
 #GAP:2261,2941176470586
+#EDITION:All for Children vol.1
+#ALLKARAOKE_ID:disneys-pocahontas-edyta-gorniak-kolorowy-wiatr
+#ALLKARAOKE_LASTUPDATE:2023-01-04T18:33:31.803Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=180336
+#ALLKARAOKE_REALBPM:91
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=26438
 - 0 1
 - 1
 : 23 2 9 Ty 

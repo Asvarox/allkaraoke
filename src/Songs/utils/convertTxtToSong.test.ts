@@ -149,6 +149,19 @@ describe('convertTxtToSong', () => {
     expect(parsed.video).toEqual('QzkK3ZtI9SU');
   });
 
+  it('should convert usdb.animux.de proper video format with just the video id ', () => {
+    const sections: Section[] = [
+      { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
+      { start: 5, type: 'notes', notes: [generateNote(7), generateNote(10)] },
+    ];
+    const parsed = convertTxtToSong(
+      generateSongTxt([sections], {
+        video: 'v=QzkK3ZtI9SU',
+      }),
+    );
+    expect(parsed.video).toEqual('QzkK3ZtI9SU');
+  });
+
   it('should ignore usdb.animux.de invalid video format', () => {
     const sections: Section[] = [
       { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
@@ -161,5 +174,28 @@ describe('convertTxtToSong', () => {
     );
 
     expect(parsed.video).toEqual('');
+  });
+
+  describe('deprecated properties support', () => {
+    const sections: Section[] = [
+      { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
+      { start: 5, type: 'notes', notes: [generateNote(7), generateNote(10)] },
+    ];
+    it('should properly handle parsing #TRACKNAMES', () => {
+      const data = ['#TRACKNAMES:["Tenacious D","Devil","Combined"]'];
+
+      const parsed = convertTxtToSong(generateSongTxt([sections, sections, sections], {}, data));
+
+      expect(parsed.tracks[0].name).toEqual('Tenacious D');
+      expect(parsed.tracks[1].name).toEqual('Devil');
+      expect(parsed.tracks[2].name).toEqual('Combined');
+    });
+    it('should properly handle parsing #VIDEOID', () => {
+      const data = ['#VIDEOID:QzkK3ZtI9SU'];
+
+      const parsed = convertTxtToSong(generateSongTxt([sections], {}, data));
+
+      expect(parsed.video).toEqual('QzkK3ZtI9SU');
+    });
   });
 });

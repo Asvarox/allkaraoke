@@ -1,19 +1,16 @@
-#ID:nocny-kochanek-kon-na-bialym-rycerzu
 #ARTIST:Nocny Kochanek
-#ARTISTORIGIN:PL
 #TITLE:Koń Na Białym Rycerzu
 #CREATOR:Asvarox
-#CREATORURL:https://github.com/Asvarox/olkaraoke
 #BPM:240
-#REALBPM:66
 #YEAR:2019
-#SOURCEURL:
-#VIDEOID:mxkHG08weUk
-#VIDEOGAP:0
+#VIDEO:v=mxkHG08weUk
 #GENRE:Heavy Metal
 #LANGUAGE:Polish
-#EDITION:
 #GAP:26945
+#ALLKARAOKE_ID:nocny-kochanek-kon-na-bialym-rycerzu
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://github.com/Asvarox/olkaraoke
+#ALLKARAOKE_REALBPM:66
 : 16 4 9 Sa
 : 20 5 9 mot
 : 25 4 9 na 

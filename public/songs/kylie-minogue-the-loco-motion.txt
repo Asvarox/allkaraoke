@@ -1,18 +1,16 @@
-#ID:kylie-minogue-the-loco-motion
 #ARTIST:Kylie Minogue
-#ARTISTORIGIN:AU
 #TITLE:The Loco-Motion
 #CREATOR:ConejoF1
-#CREATORURL:
 #BPM:258
-#REALBPM:138
 #YEAR:1988
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue
-#VIDEOID:POWsFzSFLCE
-#VIDEOGAP:0
+#VIDEO:v=POWsFzSFLCE
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T23:08:56.910Z
 #GAP:14731,627906976744
+#ALLKARAOKE_ID:kylie-minogue-the-loco-motion
+#ALLKARAOKE_LASTUPDATE:2023-02-24T23:08:56.910Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue
 : 17 3 3 E
 : 21 3 5 very
 : 25 3 3 bo

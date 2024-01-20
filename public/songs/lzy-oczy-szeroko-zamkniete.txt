@@ -1,19 +1,18 @@
-#ID:lzy-oczy-szeroko-zamkniete
 #ARTIST:Lzy
-#ARTISTORIGIN:PL
 #TITLE:Oczy szeroko zamkniete
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:308
-#REALBPM:77
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lzy&cancion=Oczy%20szeroko%20zamkniete
-#VIDEOID:IO1evhvjJZs
-#VIDEOGAP:0
+#VIDEO:v=IO1evhvjJZs
 #GENRE:Pop
 #LANGUAGE:Polish
-#EDITION:SingStar ESKA
 #GAP:29860,272727272728
+#EDITION:SingStar ESKA
+#ALLKARAOKE_ID:lzy-oczy-szeroko-zamkniete
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lzy&cancion=Oczy%20szeroko%20zamkniete
 : 21 4 59 Zos
 : 29 11 60 tan
 : 42 3 60 ~

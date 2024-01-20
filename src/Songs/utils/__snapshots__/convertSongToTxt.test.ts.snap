@@ -1,16 +1,16 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`convertSongToTxt > should properly convert the song 1`] = `
-"#ID:multitrack
-#ARTIST:E2ETest
+"#ARTIST:E2ETest
 #TITLE:Multitrack
 #BPM:350
-#REALBPM:100
 #YEAR:1994
-#VIDEOID:W9nZ6u15yis
+#VIDEO:v=W9nZ6u15yis
 #LANGUAGE:Polish
 #GAP:1000
-#TRACKNAMES:[null,"test track 2"]
+#ALLKARAOKE_ID:multitrack
+#ALLKARAOKE_REALBPM:100
+#P2:test track 2
 #SOMEPROP: some value
 #SOMEPROP2: some value2
 G 5 10 9 Second 

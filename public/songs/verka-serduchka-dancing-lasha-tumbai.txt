@@ -1,20 +1,20 @@
-#ID:verka-serduchka-dancing-lasha-tumbai
 #ARTIST:Verka Serduchka
-#ARTISTORIGIN:UA
 #TITLE:Dancing Lasha Tumbai
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:287,96
-#REALBPM:144
 #YEAR:2007
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=12352
-#VIDEOID:RODg5ZlPct4
+#VIDEO:v=RODg5ZlPct4
 #VIDEOGAP:5
-#VOLUME:1
 #GENRE:Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-07-29T01:00:44.597Z
 #GAP:1410,2792054452007
+#ALLKARAOKE_ID:verka-serduchka-dancing-lasha-tumbai
+#ALLKARAOKE_LASTUPDATE:2023-07-29T01:00:44.597Z
+#ALLKARAOKE_ARTISTORIGIN:UA
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=12352
+#ALLKARAOKE_VOLUME:1
 F 19 2 4 Hel
 F 23 2 4 lo, 
 F 27 1 4 eve

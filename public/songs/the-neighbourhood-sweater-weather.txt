@@ -1,22 +1,18 @@
-#ID:the-neighbourhood-sweater-weather
 #ARTIST:The Neighbourhood
-#ARTISTORIGIN:US
 #TITLE:Sweater Weather
 #CREATOR:EmilySavereux
-#CREATORURL:
 #BPM:327,8
-#REALBPM:123
 #YEAR:2012
-#SOURCEURL:
-#VIDEOID:GCdwKhTtNNw
-#VIDEOGAP:0
-#VOLUME:0,72
+#VIDEO:v=GCdwKhTtNNw
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:36.102Z
 #GAP:19743,28859060403
+#ALLKARAOKE_ID:the-neighbourhood-sweater-weather
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:36.102Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_VOLUME:0,72
 #MP3:The Neighbourhood - Sweater Weather.mp3
-#VIDEO:v=GCdwKhTtNNw,co=https://lastfm.freetls.fastly.net/i/u/ar0/9e542f78df5ba4708f999e29e1d5bbff.jpg,bg=neighbourhood-the-5363ae373dfa7.jpg
 : 22 6 0 All 
 : 31 4 -2 I 
 : 42 13 2 am 

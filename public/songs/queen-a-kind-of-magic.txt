@@ -1,19 +1,18 @@
-#ID:queen-a-kind-of-magic
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:A kind of magic
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:256,8
-#REALBPM:129
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=A%20kind%20of%20magic
-#VIDEOID:0p_1QSUsbsM
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=0p_1QSUsbsM
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:6550
+#ALLKARAOKE_ID:queen-a-kind-of-magic
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=A%20kind%20of%20magic
+#ALLKARAOKE_VOLUME:1
 : 0 3 -3 It's
 : 4 2 -3  a
 : 7 4 -6  kind

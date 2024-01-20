@@ -1,18 +1,17 @@
-#ID:bonnie-tyler-holding-out-for-a-hero
 #ARTIST:Bonnie Tyler
-#ARTISTORIGIN:GB
 #TITLE:Holding Out For A Hero
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:298,9
-#REALBPM:152
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bonnie%20Tyler&cancion=Holding%20Out%20For%20A%20Hero
-#VIDEOID:bWcASV2sey0
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=bWcASV2sey0
 #LANGUAGE:English
 #GAP:32356,319839411175
+#ALLKARAOKE_ID:bonnie-tyler-holding-out-for-a-hero
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bonnie%20Tyler&cancion=Holding%20Out%20For%20A%20Hero
+#ALLKARAOKE_VOLUME:0,91
 : 20 3 2 Where 
 : 24 2 4 have 
 : 28 6 4 all 

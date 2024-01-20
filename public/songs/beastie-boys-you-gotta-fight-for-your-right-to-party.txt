@@ -1,18 +1,18 @@
-#ID:beastie-boys-you-gotta-fight-for-your-right-to-party
 #ARTIST:Beastie Boys
-#ARTISTORIGIN:US
 #TITLE:(You Gotta) Fight For Your Right (To Party)
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:269,6
-#REALBPM:134
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)
-#VIDEOID:eBShN8qT4lk
+#VIDEO:v=eBShN8qT4lk
 #VIDEOGAP:16
 #GENRE:Rap Rock
 #LANGUAGE:English
 #GAP:38050
+#ALLKARAOKE_ID:beastie-boys-you-gotta-fight-for-your-right-to-party
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Beastie%20Boys&cancion=(You%20Gotta)%20Fight%20For%20Your%20Right%20(To%20Party)
 : 18 4 13 Kick 
 : 23 4 11 it!
 - 45 271

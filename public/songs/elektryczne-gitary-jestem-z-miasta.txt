@@ -1,17 +1,16 @@
-#ID:elektryczne-gitary-jestem-z-miasta
 #ARTIST:Elektryczne Gitary
-#ARTISTORIGIN:PL
 #TITLE:Jestem z Miasta
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:119,91
-#REALBPM:126
 #YEAR:1992
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11488
-#VIDEOID:skK2b-zYO3w
-#VIDEOGAP:0
+#VIDEO:v=skK2b-zYO3w
 #LANGUAGE:Polish
 #GAP:6620,416493127864
+#ALLKARAOKE_ID:elektryczne-gitary-jestem-z-miasta
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11488
 : 8 1 0 Jes
 : 10 1 2 tem 
 : 13 2 4 z mias

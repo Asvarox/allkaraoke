@@ -1,19 +1,18 @@
-#ID:amy-winehouse-rehab
 #ARTIST:Amy Winehouse
-#ARTISTORIGIN:GB
 #TITLE:Rehab
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #BPM:291
-#REALBPM:73
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse
-#VIDEOID:KUmZp8pR1uc
-#VIDEOGAP:0
+#VIDEO:v=KUmZp8pR1uc
 #LANGUAGE:English
-#LASTUPDATE:2023-01-29T00:09:00.060Z
-#EDITION:SS Pop 2009
 #GAP:1356,6185567010311
+#EDITION:SS Pop 2009
+#ALLKARAOKE_ID:amy-winehouse-rehab
+#ALLKARAOKE_LASTUPDATE:2023-01-29T00:09:00.060Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:73
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse
 : 19 3 53 They 
 : 24 3 55 tried 
 : 29 3 57 to 

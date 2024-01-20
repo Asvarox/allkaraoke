@@ -1,21 +1,21 @@
-#ID:rammstein-du-hast
 #ARTIST:Rammstein
-#ARTISTORIGIN:DE
 #TITLE:Du Hast
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:399,41
-#REALBPM:125
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Du%20Hast
-#VIDEOID:W3q8Od5qJio
+#VIDEO:v=W3q8Od5qJio
 #VIDEOGAP:-4
-#VOLUME:0,8
 #GENRE:Industrial
 #LANGUAGE:German
-#LASTUPDATE:2023-04-19T20:27:41.209Z
-#EDITION:Rock Band 3
 #GAP:29518,00435642573
+#EDITION:Rock Band 3
+#ALLKARAOKE_ID:rammstein-du-hast
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:27:41.209Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Du%20Hast
+#ALLKARAOKE_VOLUME:0,8
 : 27 15 17 Du
 - 42 45
 - 45

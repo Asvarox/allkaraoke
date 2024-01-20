@@ -1,20 +1,19 @@
-#ID:amy-grant-its-the-most-wonderful-time-of-the-year
 #ARTIST:Amy Grant
-#ARTISTORIGIN:US
 #TITLE:It’s The Most Wonderful Time Of The Year
 #CREATOR:tigger_75
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3822
 #BPM:297,5
-#REALBPM:100
 #YEAR:1992
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10423
-#VIDEOID:mCMIyM-Elyw
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=mCMIyM-Elyw
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:13.045Z
-#EDITION:Christmas
 #GAP:13491,596638655463
+#EDITION:Christmas
+#ALLKARAOKE_ID:amy-grant-its-the-most-wonderful-time-of-the-year
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:13.045Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3822
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10423
+#ALLKARAOKE_VOLUME:0,85
 : 20 4 12 It’s 
 : 26 4 13 the 
 : 32 12 15 most 
