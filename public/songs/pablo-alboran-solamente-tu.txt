@@ -1,20 +1,19 @@
-#ID:pablo-alboran-solamente-tu
 #ARTIST:Pablo Alborán
-#ARTISTORIGIN:ES
 #TITLE:Solamente tú
 #CREATOR:Klafhor
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #BPM:280
-#REALBPM:140
 #YEAR:2010
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pablo%20Albor%C3%A1n&cancion=Solamente%20t%C3%BA
-#VIDEOID:F0rwOsAteXM
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=F0rwOsAteXM
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.582Z
 #GAP:23552,14285714286
+#ALLKARAOKE_ID:pablo-alboran-solamente-tu
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.582Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Pablo%20Albor%C3%A1n&cancion=Solamente%20t%C3%BA
+#ALLKARAOKE_VOLUME:0,8
 : 19 3 13 Re
 : 23 6 18 gá
 : 30 4 16 la

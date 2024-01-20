@@ -1,19 +1,19 @@
-#ID:aerosmith-sweet-emotion
 #ARTIST:Aerosmith
-#ARTISTORIGIN:US
 #TITLE:Sweet Emotion
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:393,85
-#REALBPM:99
 #YEAR:1975
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Sweet%20Emotion
-#VIDEOID:82cJgPXU-ik
+#VIDEO:v=82cJgPXU-ik
 #VIDEOGAP:-5
 #GENRE:Hard Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2013 Vol. 1
 #GAP:36800
+#EDITION:Rock Band Store 2013 Vol. 1
+#ALLKARAOKE_ID:aerosmith-sweet-emotion
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Sweet%20Emotion
 : 0 116 16 Sweet
 : 123 4 13  e
 : 131 57 14 mo

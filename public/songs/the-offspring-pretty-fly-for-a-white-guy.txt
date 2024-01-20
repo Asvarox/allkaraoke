@@ -1,19 +1,19 @@
-#ID:the-offspring-pretty-fly-for-a-white-guy
 #ARTIST:The Offspring
-#ARTISTORIGIN:US
 #TITLE:Pretty fly (for a white guy)
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:397,5
-#REALBPM:144
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Offspring&cancion=Pretty%20fly%20(for%20a%20white%20guy)
-#VIDEOID:QtTR-_Klcq8
+#VIDEO:v=QtTR-_Klcq8
 #VIDEOGAP:3
 #GENRE:Punk Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2008 Vol. 4
 #GAP:6431,132075471698
+#EDITION:Rock Band Store 2008 Vol. 4
+#ALLKARAOKE_ID:the-offspring-pretty-fly-for-a-white-guy
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Offspring&cancion=Pretty%20fly%20(for%20a%20white%20guy)
 F 27 4 5 Give
 F 32 3 5  it
 F 37 4 5  to

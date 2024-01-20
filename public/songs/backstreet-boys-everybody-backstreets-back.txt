@@ -1,18 +1,18 @@
-#ID:backstreet-boys-everybody-backstreets-back
 #ARTIST:Backstreet Boys
-#ARTISTORIGIN:US
 #TITLE:Everybody (Backstreet's Back)
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:216,12
-#REALBPM:108
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=Everybody%20(Backstreet's%20Back)
-#VIDEOID:6M6samPEMpM
+#VIDEO:v=6M6samPEMpM
 #VIDEOGAP:73
 #GENRE:Pop Internacional
 #LANGUAGE:English
 #GAP:97195
+#ALLKARAOKE_ID:backstreet-boys-everybody-backstreets-back
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=Everybody%20(Backstreet's%20Back)
 : 0 3 5 E
 : 4 3 3 very
 : 8 11 3 bo

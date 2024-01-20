@@ -1,18 +1,18 @@
-#ID:muse-panic-station
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Panic Station
 #CREATOR:gun88
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
 #BPM:420
-#REALBPM:104
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Panic%20Station
-#VIDEOID:6uBK5kvakD8
+#VIDEO:v=6uBK5kvakD8
 #VIDEOGAP:56
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:65803
+#ALLKARAOKE_ID:muse-panic-station
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Panic%20Station
 : 0 6 4 You
 : 8 6 2  won't
 : 16 6 4  get

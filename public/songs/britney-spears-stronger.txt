@@ -1,18 +1,15 @@
-#ID:britney-spears-stronger
 #ARTIST:Britney Spears
-#ARTISTORIGIN:US
 #TITLE:Stronger
-#CREATOR:
-#CREATORURL:
 #BPM:324,15
-#REALBPM:108
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
-#VIDEOID:AJWtLf4-WWs
-#VIDEOGAP:0
+#VIDEO:v=AJWtLf4-WWs
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:51:35.582Z
 #GAP:18651,952799629802
+#ALLKARAOKE_ID:britney-spears-stronger
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:51:35.582Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
 : 22 4 11 Uh
 : 28 3 10 ~ 
 : 34 8 10 hey

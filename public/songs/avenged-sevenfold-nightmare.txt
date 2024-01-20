@@ -1,19 +1,18 @@
-#ID:avenged-sevenfold-nightmare
 #ARTIST:Avenged Sevenfold
-#ARTISTORIGIN:US
 #TITLE:Nightmare
 #CREATOR:¡JKA!
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #BPM:393,38
-#REALBPM:129
 #YEAR:2010
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare
-#VIDEOID:94bGzWyHbu0
-#VIDEOGAP:0
+#VIDEO:v=94bGzWyHbu0
 #GENRE:Metal
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 3
 #GAP:60918,59220092531
+#EDITION:Rock Band Store 2010 Vol. 3
+#ALLKARAOKE_ID:avenged-sevenfold-nightmare
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare
 : 26 7 9 Night
 : 37 7 8 mare
 : 45 200 9 ~

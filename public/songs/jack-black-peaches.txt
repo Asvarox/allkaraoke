@@ -1,20 +1,19 @@
-#ID:jack-black-peaches
 #ARTIST:Jack Black
-#ARTISTORIGIN:US
 #TITLE:Peaches
 #CREATOR:aveican
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=aveican
 #BPM:370
-#REALBPM:93
 #YEAR:2023
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jack%20Black&cancion=Peaches
-#VIDEOID:VAiHHUMUp-4
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=VAiHHUMUp-4
 #GENRE:Comedy
 #LANGUAGE:English
-#LASTUPDATE:2023-07-27T19:14:16.139Z
 #GAP:17277,486486486487
+#ALLKARAOKE_ID:jack-black-peaches
+#ALLKARAOKE_LASTUPDATE:2023-07-27T19:14:16.139Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=aveican
+#ALLKARAOKE_REALBPM:93
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jack%20Black&cancion=Peaches
+#ALLKARAOKE_VOLUME:0,6
 F 25 2 0 This 
 F 29 4 0 one
 - 33 34

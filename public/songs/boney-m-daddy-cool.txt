@@ -1,16 +1,16 @@
-#ID:boney-m-daddy-cool
 #ARTIST:Boney M
 #TITLE:Daddy Cool
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:247,78
-#REALBPM:123
 #YEAR:1976
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M&cancion=Daddy%20Cool
-#VIDEOID:tHyHOUShOg8
+#VIDEO:v=tHyHOUShOg8
 #VIDEOGAP:-4
 #LANGUAGE:English
 #GAP:3357,5461106655976
+#ALLKARAOKE_ID:boney-m-daddy-cool
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Boney%20M&cancion=Daddy%20Cool
 : 17 3 5 She's
 : 21 3 5  cra
 : 25 3 5 zy

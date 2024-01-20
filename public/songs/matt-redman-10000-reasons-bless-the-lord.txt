@@ -1,22 +1,21 @@
-#ID:matt-redman-10000-reasons-bless-the-lord
 #ARTIST:Matt Redman
-#ARTISTORIGIN:GB
 #TITLE:10,000 Reasons (Bless The Lord)
 #CREATOR:GeoffUys
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=110311
 #BPM:290,27
-#REALBPM:73
 #YEAR:2013
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17160
 #PREVIEWSTART:70
-#PREVIEWEND:98
-#VIDEOID:XtwIT8JjddM
-#VIDEOGAP:0
-#VOLUME:0,72
+#VIDEO:v=XtwIT8JjddM
 #GENRE:Worship
 #LANGUAGE:English
-#LASTUPDATE:2023-12-22T16:33:53.275Z
 #GAP:11328,155510386881
+#ALLKARAOKE_ID:matt-redman-10000-reasons-bless-the-lord
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:53.275Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=110311
+#ALLKARAOKE_REALBPM:73
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17160
+#ALLKARAOKE_PREVIEWEND:98
+#ALLKARAOKE_VOLUME:0,72
 : 19 6 -1 Bless 
 : 27 6 2 the 
 : 35 14 4 Lord 

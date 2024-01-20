@@ -1,18 +1,17 @@
-#ID:psy-gangnam-style
 #ARTIST:Psy
-#ARTISTORIGIN:KR
 #TITLE:Gangnam Style
 #CREATOR:vicktoben
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=54350
 #BPM:264
-#REALBPM:132
 #YEAR:2012
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=14414
-#VIDEOID:9bZkp7q19f0
-#VIDEOGAP:0
+#VIDEO:v=9bZkp7q19f0
 #GENRE:K-Pop
 #LANGUAGE:Korean
 #GAP:8833,272727272728
+#ALLKARAOKE_ID:psy-gangnam-style
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=54350
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=14414
 F 18 3 2 O
 F 22 3 2 ppan 
 F 26 3 2 gang

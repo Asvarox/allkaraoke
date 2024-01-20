@@ -1,19 +1,18 @@
-#ID:linkin-park-castle-of-glass
 #ARTIST:Linkin Park
-#ARTISTORIGIN:US
 #TITLE:Castle of glass
 #CREATOR:chelste
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chelste
 #BPM:324
-#REALBPM:108
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Castle%20of%20glass
 #PREVIEWSTART:169
-#VIDEOID:ScNNfyq3d_w
-#VIDEOGAP:0
+#VIDEO:v=ScNNfyq3d_w
 #GENRE:Rock Alternative
 #LANGUAGE:English
 #GAP:89927,48148148147
+#ALLKARAOKE_ID:linkin-park-castle-of-glass
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chelste
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Castle%20of%20glass
 - -21 1
 - 1
 : 22 4 1 Take 

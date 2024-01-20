@@ -1,19 +1,18 @@
-#ID:madonna-vogue
 #ARTIST:Madonna
-#ARTISTORIGIN:US
 #TITLE:Vogue
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:232,6
-#REALBPM:116
 #YEAR:1990
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Vogue
-#VIDEOID:GuJQSAiODqI
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=GuJQSAiODqI
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:-1447,9535683576955
+#ALLKARAOKE_ID:madonna-vogue
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Vogue
+#ALLKARAOKE_VOLUME:0,91
 - 0 554
 - 554
 F 570 3 -3 Strike

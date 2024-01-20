@@ -1,19 +1,18 @@
-#ID:juanes-la-camisa-negra
 #ARTIST:Juanes
-#ARTISTORIGIN:CO
 #TITLE:La camisa negra
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:193,8
-#REALBPM:97
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=La%20camisa%20negra
-#VIDEOID:kRt2sRyup6A
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=kRt2sRyup6A
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.566Z
 #GAP:42718,808049535604
+#ALLKARAOKE_ID:juanes-la-camisa-negra
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.566Z
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Juanes&cancion=La%20camisa%20negra
+#ALLKARAOKE_VOLUME:0,65
 : 13 1 1 Ten
 : 15 1 1 go 
 : 17 1 1 la 

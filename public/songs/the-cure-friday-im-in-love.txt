@@ -1,19 +1,18 @@
-#ID:the-cure-friday-im-in-love
 #ARTIST:The Cure
-#ARTISTORIGIN:GB
 #TITLE:Friday I'm in Love
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:272
-#REALBPM:136
 #YEAR:1992
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Friday%20I'm%20in%20Love
-#VIDEOID:mGgMZpGYiy8
-#VIDEOGAP:0
+#VIDEO:v=mGgMZpGYiy8
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar '90s
 #GAP:32495,352941176472
+#EDITION:SingStar '90s
+#ALLKARAOKE_ID:the-cure-friday-im-in-love
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Friday%20I'm%20in%20Love
 : 18 3 58 I 
 : 22 4 58 don't 
 : 30 5 58 care 

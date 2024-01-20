@@ -1,19 +1,18 @@
-#ID:oasis-wonderwall
 #ARTIST:Oasis
-#ARTISTORIGIN:GB
 #TITLE:Wonderwall
 #CREATOR:Kodaman
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
 #BPM:348
-#REALBPM:87
 #YEAR:1995
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Oasis&cancion=Wonderwall
-#VIDEOID:6hzrDeceEKc
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=6hzrDeceEKc
 #GENRE:Britpop
 #LANGUAGE:English
 #GAP:37718,620689655174
+#ALLKARAOKE_ID:oasis-wonderwall
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Oasis&cancion=Wonderwall
+#ALLKARAOKE_VOLUME:0,81
 : 23 6 13 To
 : 31 10 11 day
 : 44 2 9  is

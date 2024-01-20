@@ -1,19 +1,19 @@
-#ID:disturbed-down-with-the-sickness
 #ARTIST:Disturbed
-#ARTISTORIGIN:US
 #TITLE:Down with the sickness
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:395,9
-#REALBPM:90
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=Down%20with%20the%20sickness
-#VIDEOID:09LTT0xwdfw
+#VIDEO:v=09LTT0xwdfw
 #VIDEOGAP:16
 #GENRE:Nu Metal
 #LANGUAGE:English
-#EDITION:Rock Band 2
 #GAP:8704,902753220511
+#EDITION:Rock Band 2
+#ALLKARAOKE_ID:disturbed-down-with-the-sickness
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=Down%20with%20the%20sickness
 - 0 291
 - 291
 F 317 7 15 Ooh 

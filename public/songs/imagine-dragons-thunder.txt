@@ -1,18 +1,17 @@
-#ID:imagine-dragons-thunder
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Thunder
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:224,71
-#REALBPM:83
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Thunder
-#VIDEOID:fKopy74weus
-#VIDEOGAP:0
+#VIDEO:v=fKopy74weus
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:22950
+#ALLKARAOKE_ID:imagine-dragons-thunder
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Thunder
 : 0 2 12 Just
 : 3 1 9  a
 : 6 3 12  young

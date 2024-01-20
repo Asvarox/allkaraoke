@@ -1,18 +1,17 @@
-#ID:bon-jovi-livin-on-a-prayer
 #ARTIST:Bon Jovi
-#ARTISTORIGIN:US
 #TITLE:Livin' on a Prayer
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:244,8
-#REALBPM:122
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer
-#VIDEOID:lDK9QqIzhwk
-#VIDEOGAP:0
+#VIDEO:v=lDK9QqIzhwk
 #LANGUAGE:English
-#EDITION:SS Pop 2009
 #GAP:39735,78
+#EDITION:SS Pop 2009
+#ALLKARAOKE_ID:bon-jovi-livin-on-a-prayer
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer
 F 0 1 53 Once
 F 2 4 53  upon
 F 8 3 53  a

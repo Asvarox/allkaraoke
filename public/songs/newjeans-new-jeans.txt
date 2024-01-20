@@ -1,19 +1,19 @@
-#ID:newjeans-new-jeans
 #ARTIST:NewJeans
-#ARTISTORIGIN:KR
 #TITLE:New Jeans
 #CREATOR:Angs
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=angs
 #BPM:354,5
-#REALBPM:134
 #YEAR:2023
-#SOURCEURL:https://ultrastar-es.org/en/canciones
-#VIDEOID:kcelgrGY1h8
+#VIDEO:v=kcelgrGY1h8
 #VIDEOGAP:69
-#VOLUME:0,67
 #LANGUAGE:Korean
-#LASTUPDATE:2023-11-07T21:41:36.723Z
 #GAP:82384,48519040903
+#ALLKARAOKE_ID:newjeans-new-jeans
+#ALLKARAOKE_LASTUPDATE:2023-11-07T21:41:36.723Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=angs
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones
+#ALLKARAOKE_VOLUME:0,67
 : 24 3 4 Look, 
 : 29 3 4 it's 
 : 35 5 2 a 

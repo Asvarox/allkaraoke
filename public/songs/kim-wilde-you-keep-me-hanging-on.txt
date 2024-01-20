@@ -1,19 +1,17 @@
-#ID:kim-wilde-you-keep-me-hanging-on
 #ARTIST:Kim Wilde
-#ARTISTORIGIN:GB
 #TITLE:You keep me hanging on
 #CREATOR:mustangfred, PatTwo and asb
-#CREATORURL:
 #BPM:246,92
-#REALBPM:134
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=You+keep+me+hanging+on
-#VIDEOID:xJZF-skCY-M
-#VIDEOGAP:0
+#VIDEO:v=xJZF-skCY-M
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:22:42.008Z
 #GAP:15095,025271342945
+#ALLKARAOKE_ID:kim-wilde-you-keep-me-hanging-on
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:22:42.008Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=You+keep+me+hanging+on
 : 16 2 10 Keep
 : 19 3 12 ~ 
 : 25 1 10 me

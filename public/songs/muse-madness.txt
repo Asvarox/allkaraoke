@@ -1,18 +1,17 @@
-#ID:muse-madness
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Madness
 #CREATOR:gun88
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
 #BPM:360
-#REALBPM:89
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Madness
-#VIDEOID:Ek0SgwWmF9w
-#VIDEOGAP:0
+#VIDEO:v=Ek0SgwWmF9w
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:27001
+#ALLKARAOKE_ID:muse-madness
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Madness
 : 0 2 10 M
 : 4 2 10  m
 : 8 2 10  m

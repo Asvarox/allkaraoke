@@ -1,18 +1,17 @@
-#ID:muse-uprising
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Uprising
 #CREATOR:albanderuaz
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
 #BPM:512
-#REALBPM:129
 #YEAR:2009
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Uprising
-#VIDEOID:w8KQmps-Sog
-#VIDEOGAP:0
+#VIDEO:v=w8KQmps-Sog
 #GENRE:Alternative
 #LANGUAGE:English
 #GAP:38963,90625
+#ALLKARAOKE_ID:muse-uprising
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Uprising
 : 34 2 0 The 
 : 38 10 2 pa
 : 50 2 0 ra

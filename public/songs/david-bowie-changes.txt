@@ -1,20 +1,19 @@
-#ID:david-bowie-changes
 #ARTIST:David Bowie
-#ARTISTORIGIN:GB
 #TITLE:Changes
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:219,4
-#REALBPM:112
 #YEAR:1972
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bowie&cancion=Changes
-#VIDEOID:4BgF7Y3q-as
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=4BgF7Y3q-as
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Amped
 #GAP:8249,272727272728
+#EDITION:SingStar Amped
+#ALLKARAOKE_ID:david-bowie-changes
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bowie&cancion=Changes
+#ALLKARAOKE_VOLUME:0,81
 F 15 3 58 Oh 
 F 19 2 51 yeah
 - 36 71

@@ -1,19 +1,18 @@
-#ID:indochine-jai-demande-a-la-lune
 #ARTIST:Indochine
-#ARTISTORIGIN:FR
 #TITLE:J'ai Demandé A La Lune
 #CREATOR:lord_tenebro
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lord_tenebro
 #BPM:330
-#REALBPM:110
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Indochine&cancion=J'ai%20Demand%C3%A9%20A%20La%20Lune
-#VIDEOID:KAOmC5qT02w
-#VIDEOGAP:0
+#VIDEO:v=KAOmC5qT02w
 #GENRE:Rock
 #LANGUAGE:French
-#LASTUPDATE:2023-01-27T21:54:54.755Z
 #GAP:34741
+#ALLKARAOKE_ID:indochine-jai-demande-a-la-lune
+#ALLKARAOKE_LASTUPDATE:2023-01-27T21:54:54.755Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lord_tenebro
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Indochine&cancion=J'ai%20Demand%C3%A9%20A%20La%20Lune
 : 22 3 11 J'ai 
 : 26 2 9 de
 : 29 10 11 man

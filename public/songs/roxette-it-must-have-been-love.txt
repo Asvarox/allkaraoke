@@ -1,19 +1,18 @@
-#ID:roxette-it-must-have-been-love
 #ARTIST:Roxette
-#ARTISTORIGIN:SE
 #TITLE:It Must Have Been Love
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:322,4
-#REALBPM:136
 #YEAR:1990
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Roxette&cancion=It%20Must%20Have%20Been%20Love
-#VIDEOID:k2C5TjS2sh4
-#VIDEOGAP:0
+#VIDEO:v=k2C5TjS2sh4
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Rock Ballads
 #GAP:16981,952853598013
+#EDITION:SingStar Rock Ballads
+#ALLKARAOKE_ID:roxette-it-must-have-been-love
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Roxette&cancion=It%20Must%20Have%20Been%20Love
 : 21 2 64 Must 
 : 25 2 64 have 
 : 29 5 64 been 

@@ -1,21 +1,20 @@
-#ID:david-bisbal-ave-maria
 #ARTIST:David Bisbal
-#ARTISTORIGIN:ES
 #TITLE:Ave María
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:264
-#REALBPM:132
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bisbal&cancion=Ave%20Mar%C3%ADa
-#VIDEOID:gra-sIV1n4U
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=gra-sIV1n4U
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.559Z
-#EDITION:SingStar Party
 #GAP:-36,72727272727252
+#EDITION:SingStar Party
+#ALLKARAOKE_ID:david-bisbal-ave-maria
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.559Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=David%20Bisbal&cancion=Ave%20Mar%C3%ADa
+#ALLKARAOKE_VOLUME:0,9
 : 18 3 67 A
 : 22 3 65 ve 
 : 26 3 63 Ma

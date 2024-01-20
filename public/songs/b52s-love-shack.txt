@@ -1,19 +1,18 @@
-#ID:b52s-love-shack
 #ARTIST:B52s
-#ARTISTORIGIN:US
 #TITLE:Love Shack
 #CREATOR:Diddlmaus30mg
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1058
 #BPM:266,766
-#REALBPM:134
 #YEAR:1989
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3334
-#VIDEOID:9SOryJvTAGs
-#VIDEOGAP:0
+#VIDEO:v=9SOryJvTAGs
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar 90s
 #GAP:4087,4974687436716
+#EDITION:SingStar 90s
+#ALLKARAOKE_ID:b52s-love-shack
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1058
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3334
 F 18 3 60 If 
 F 26 3 60 you 
 F 30 3 60 see 

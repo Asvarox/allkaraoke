@@ -1,17 +1,14 @@
-#ID:myslovitz-z-twarza-marilyn-monroe
 #ARTIST:Myslovitz
-#ARTISTORIGIN:PL
 #TITLE:Z twarza Marilyn Monroe
 #CREATOR:davidus01
-#CREATORURL:
 #BPM:246
-#REALBPM:123
 #YEAR:1996
-#SOURCEURL:
-#VIDEOID:E3fqn1aBZ5Q
-#VIDEOGAP:0
+#VIDEO:v=E3fqn1aBZ5Q
 #LANGUAGE:Polish
 #GAP:1924,3902439024391
+#ALLKARAOKE_ID:myslovitz-z-twarza-marilyn-monroe
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:123
 : 16 6 4 Hej 
 : 24 4 4 dziew
 : 29 7 2 czy

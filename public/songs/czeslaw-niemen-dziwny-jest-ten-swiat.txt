@@ -1,17 +1,14 @@
-#ID:czeslaw-niemen-dziwny-jest-ten-swiat
 #ARTIST:Czesław Niemen
-#ARTISTORIGIN:PL
 #TITLE:Dziwny jest ten świat
 #CREATOR:davidus01
-#CREATORURL:
 #BPM:161,52
-#REALBPM:80
 #YEAR:1967
-#SOURCEURL:
-#VIDEOID:wTjLZwpmufw
-#VIDEOGAP:0
+#VIDEO:v=wTjLZwpmufw
 #LANGUAGE:Polish
 #GAP:15678,454680534918
+#ALLKARAOKE_ID:czeslaw-niemen-dziwny-jest-ten-swiat
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:80
 - -10 1
 - 1
 : 11 4 24 Dzi

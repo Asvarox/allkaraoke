@@ -1,19 +1,18 @@
-#ID:jet-are-you-gonna-be-my-girl
 #ARTIST:Jet
-#ARTISTORIGIN:AU
 #TITLE:Are You Gonna Be My Girl
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:350,4
-#REALBPM:103
 #YEAR:2003
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=997
-#VIDEOID:tuK6n2Lkza0
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=tuK6n2Lkza0
 #LANGUAGE:English
-#EDITION:Ultrastar Rocks!
 #GAP:22250
+#EDITION:Ultrastar Rocks!
+#ALLKARAOKE_ID:jet-are-you-gonna-be-my-girl
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=997
+#ALLKARAOKE_VOLUME:0,81
 : 0 22 52 Go
 - 32
 : 214 2 64 It's

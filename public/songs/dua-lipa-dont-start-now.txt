@@ -1,19 +1,18 @@
-#ID:dua-lipa-dont-start-now
 #ARTIST:Dua Lipa
-#ARTISTORIGIN:GB
 #TITLE:Don't Start Now
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:248
-#REALBPM:124
 #YEAR:2019
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Don't%20Start%20Now
-#VIDEOID:oygrmJFKYZY
-#VIDEOGAP:0
+#VIDEO:v=oygrmJFKYZY
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T22:00:45.606Z
 #GAP:2721,7741935483873
+#ALLKARAOKE_ID:dua-lipa-dont-start-now
+#ALLKARAOKE_LASTUPDATE:2023-01-27T22:00:45.606Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Don't%20Start%20Now
 : 17 2 -1 If 
 : 21 3 11 you 
 : 25 5 9 don't 

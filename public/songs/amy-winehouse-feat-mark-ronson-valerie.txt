@@ -1,17 +1,16 @@
-#ID:amy-winehouse-feat-mark-ronson-valerie
 #ARTIST:Amy Winehouse feat. Mark Ronson
 #TITLE:Valerie
 #CREATOR:Haek
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=haek
 #BPM:318,8
-#REALBPM:106
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse+feat.+Mark+Ronson
-#VIDEOID:bixuI_GV5I0
-#VIDEOGAP:0
+#VIDEO:v=bixuI_GV5I0
 #LANGUAGE:English
-#LASTUPDATE:2023-01-29T00:03:57.819Z
 #GAP:59371,91969887076
+#ALLKARAOKE_ID:amy-winehouse-feat-mark-ronson-valerie
+#ALLKARAOKE_LASTUPDATE:2023-01-29T00:03:57.819Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=haek
+#ALLKARAOKE_REALBPM:106
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse+feat.+Mark+Ronson
 : 21 4 10 Well, 
 : 27 3 12 some
 : 33 6 15 times 

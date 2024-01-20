@@ -1,21 +1,21 @@
-#ID:red-hot-chili-peppers-under-the-bridge
 #ARTIST:Red Hot Chili Peppers
-#ARTISTORIGIN:US
 #TITLE:Under the bridge
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:399,89
-#REALBPM:85
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Under%20the%20bridge
-#VIDEOID:GLvohMXgcBo
+#VIDEO:v=GLvohMXgcBo
 #VIDEOGAP:1
-#VOLUME:0,77
 #GENRE:Rock alternativo
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:41:41.113Z
-#EDITION:Rock Band Store 2008 Vol. 3
 #GAP:28237,474686867172
+#EDITION:Rock Band Store 2008 Vol. 3
+#ALLKARAOKE_ID:red-hot-chili-peppers-under-the-bridge
+#ALLKARAOKE_LASTUPDATE:2023-04-19T19:41:41.113Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Under%20the%20bridge
+#ALLKARAOKE_VOLUME:0,77
 : 27 10 20 Some
 : 39 9 20 times 
 : 50 5 20 I

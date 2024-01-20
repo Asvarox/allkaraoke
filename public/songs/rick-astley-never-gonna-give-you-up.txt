@@ -1,18 +1,17 @@
-#ID:rick-astley-never-gonna-give-you-up
 #ARTIST:Rick Astley
-#ARTISTORIGIN:GB
 #TITLE:Never gonna give you up
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:227,22
-#REALBPM:112
 #YEAR:1987
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up
-#VIDEOID:dQw4w9WgXcQ
-#VIDEOGAP:0
+#VIDEO:v=dQw4w9WgXcQ
 #LANGUAGE:English
-#EDITION:SingStar English
 #GAP:17757,770266701875
+#EDITION:SingStar English
+#ALLKARAOKE_ID:rick-astley-never-gonna-give-you-up
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up
 : 15 4 58 We're 
 : 19 4 60 no 
 : 23 4 61 stran

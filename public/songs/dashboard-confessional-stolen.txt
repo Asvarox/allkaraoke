@@ -1,22 +1,21 @@
-#ID:dashboard-confessional-stolen
 #ARTIST:Dashboard Confessional
-#ARTISTORIGIN:US
 #TITLE:Stolen
 #CREATOR:Jhovanny+
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=jhovanny%2B
 #BPM:203
-#REALBPM:102
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dashboard%20Confessional&cancion=Stolen
 #PREVIEWSTART:97
-#PREVIEWEND:129
-#VIDEOID:j82FBbgpUy4
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=j82FBbgpUy4
 #GENRE:pop rock
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T17:33:40.435Z
 #GAP:18895,51724137931
+#ALLKARAOKE_ID:dashboard-confessional-stolen
+#ALLKARAOKE_LASTUPDATE:2023-06-28T17:33:40.435Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=jhovanny%2B
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dashboard%20Confessional&cancion=Stolen
+#ALLKARAOKE_PREVIEWEND:129
+#ALLKARAOKE_VOLUME:1
 : 14 2 -2 We 
 : 18 2 -2 watched 
 : 21 1 -2 the 

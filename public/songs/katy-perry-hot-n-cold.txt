@@ -1,19 +1,19 @@
-#ID:katy-perry-hot-n-cold
 #ARTIST:Katy Perry
-#ARTISTORIGIN:US
 #TITLE:Hot N Cold
 #CREATOR:Klafhor
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #BPM:264
-#REALBPM:129
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold
-#VIDEOID:kTHNpusq654
+#VIDEO:v=kTHNpusq654
 #VIDEOGAP:32
-#VOLUME:0,91
 #GENRE:Pop/Rock
 #LANGUAGE:English
 #GAP:36450
+#ALLKARAOKE_ID:katy-perry-hot-n-cold
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold
+#ALLKARAOKE_VOLUME:0,91
 : 0 6 11 You
 - 16
 : 20 3 11 change

@@ -1,19 +1,18 @@
-#ID:the-who-the-seeker
 #ARTIST:The Who
-#ARTISTORIGIN:GB
 #TITLE:The Seeker
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:278,88
-#REALBPM:90
 #YEAR:1970
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=The%20Seeker
-#VIDEOID:egma0rGjtoo
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=egma0rGjtoo
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:15666,691936750029
+#ALLKARAOKE_ID:the-who-the-seeker
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=The%20Seeker
+#ALLKARAOKE_VOLUME:0,85
 : 18 1 1 I've 
 : 21 2 4 looked 
 : 28 3 4 un

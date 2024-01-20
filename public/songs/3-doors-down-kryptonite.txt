@@ -1,19 +1,18 @@
-#ID:3-doors-down-kryptonite
 #ARTIST:3 Doors Down
-#ARTISTORIGIN:US
 #TITLE:Kryptonite
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:99
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Kryptonite
-#VIDEOID:xPU8OAjjS4k
-#VIDEOGAP:0
+#VIDEO:v=xPU8OAjjS4k
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Pop USA
 #GAP:19629,29411764706
+#EDITION:SingStar Pop USA
+#ALLKARAOKE_ID:3-doors-down-kryptonite
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Kryptonite
 : 23 2 57 Well
 : 25 6 59  I
 : 32 4 59  took

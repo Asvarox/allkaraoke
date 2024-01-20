@@ -1,18 +1,17 @@
-#ID:rupert-holmes-escape-the-pina-colada-song
 #ARTIST:Rupert Holmes
-#ARTISTORIGIN:GB
 #TITLE:Escape (The Pińa Colada Song)
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:279,86
-#REALBPM:136
 #YEAR:1979
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rupert%20Holmes&cancion=Escape%20(The%20Pi%C3%B1a%20Colada%20Song)
-#VIDEOID:zROIlspgOjM
-#VIDEOGAP:0
+#VIDEO:v=zROIlspgOjM
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:13753,633673979846
+#ALLKARAOKE_ID:rupert-holmes-escape-the-pina-colada-song
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rupert%20Holmes&cancion=Escape%20(The%20Pi%C3%B1a%20Colada%20Song)
 : 19 3 -3 I 
 : 24 1 -5 was 
 : 28 7 -3 tired 

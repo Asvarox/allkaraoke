@@ -1,18 +1,16 @@
-#ID:kylie-minogue-cant-get-you-out-of-my-head
 #ARTIST:Kylie Minogue
-#ARTISTORIGIN:AU
 #TITLE:Can't Get You Out Of My Head
 #CREATOR:upalula
-#CREATORURL:
 #BPM:251,98
-#REALBPM:126
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue
-#VIDEOID:c18441Eh_WE
-#VIDEOGAP:0
+#VIDEO:v=c18441Eh_WE
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T23:06:01.892Z
 #GAP:15229,014921819193
+#ALLKARAOKE_ID:kylie-minogue-cant-get-you-out-of-my-head
+#ALLKARAOKE_LASTUPDATE:2023-02-24T23:06:01.892Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie+Minogue
 : 17 5 5 La 
 : 25 5 5 la 
 : 33 3 5 la

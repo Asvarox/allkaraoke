@@ -1,20 +1,16 @@
-#ID:silk-sonic-bruno-mars-anderson-paak-leave-the-door-open
 #ARTIST:Silk Sonic - Bruno Mars & Anderson .Paak
 #TITLE:Leave The Door Open
 #CREATOR:Tracks
-#CREATORURL:
 #BPM:295,57
-#REALBPM:148
 #YEAR:2021
-#SOURCEURL:
-#VIDEOID:adLGHcj_fmA
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=adLGHcj_fmA
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:35.754Z
 #GAP:15755,012010691207
+#ALLKARAOKE_ID:silk-sonic-bruno-mars-anderson-paak-leave-the-door-open
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:35.754Z
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_VOLUME:0,81
 #MP3:Silk Sonic - Bruno Mars & Anderson .Paak - Leave The Door Open.mp3
-#VIDEO:v=adLGHcj_fmA,co=an-evening-with-silk-sonic-6190e1a580de0.jpg
 : 20 3 0 Said 
 : 25 5 -3 ba
 : 31 1 -5 ~

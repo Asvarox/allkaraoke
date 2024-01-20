@@ -1,19 +1,18 @@
-#ID:enrique-iglesias-hero
 #ARTIST:Enrique Iglesias
-#ARTISTORIGIN:ES
 #TITLE:Hero
 #CREATOR:perzu25
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2565
 #BPM:304,7
-#REALBPM:76
 #YEAR:2001
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5607
-#VIDEOID:koJlIGDImiU
-#VIDEOGAP:0
+#VIDEO:v=koJlIGDImiU
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:None
 #GAP:3550
+#EDITION:None
+#ALLKARAOKE_ID:enrique-iglesias-hero
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2565
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5607
 F 0 4 4 Let
 F 4 2 1  me
 F 8 4 4  be

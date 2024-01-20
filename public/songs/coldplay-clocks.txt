@@ -1,18 +1,18 @@
-#ID:coldplay-clocks
 #ARTIST:Coldplay
-#ARTISTORIGIN:GB
 #TITLE:Clocks
 #CREATOR:albanderuaz
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
 #BPM:262
-#REALBPM:129
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Clocks
-#VIDEOID:d020hcWA_Wg
+#VIDEO:v=d020hcWA_Wg
 #VIDEOGAP:1
 #GENRE:Other
 #LANGUAGE:English
 #GAP:35480
+#ALLKARAOKE_ID:coldplay-clocks
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=albanderuaz
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Clocks
 : 0 7 15 Lights
 : 8 6 15  go
 : 15 7 15  out

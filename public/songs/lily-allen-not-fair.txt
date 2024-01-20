@@ -1,22 +1,18 @@
-#ID:lily-allen-not-fair
 #ARTIST:Lily Allen
-#ARTISTORIGIN:GB
 #TITLE:Not Fair
 #CREATOR:keenan
-#CREATORURL:
 #BPM:240
-#REALBPM:121
 #YEAR:2009
-#SOURCEURL:
-#VIDEOID:fUYaosyR4bE
-#VIDEOGAP:0
-#VOLUME:0,97
+#VIDEO:v=fUYaosyR4bE
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:35.057Z
 #GAP:32350
+#ALLKARAOKE_ID:lily-allen-not-fair
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:35.057Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_VOLUME:0,97
 #MP3:Lily Allen - Not Fair.mp3
-#VIDEO:v=fUYaosyR4bE,co=https://www.steveyb.co.uk/wp-content/gallery/Lily-Allen/LilyAllen-Sing07NotFair.jpg,bg=lily-allen-4e9ebb5ac8c67.jpg
 : 16 2 5 Oh! 
 : 20 3 4 He 
 : 24 3 2 treats 

@@ -1,20 +1,19 @@
-#ID:shakira-ciega-sordomuda
 #ARTIST:Shakira
-#ARTISTORIGIN:CO
 #TITLE:Ciega, sordomuda
 #CREATOR:zXz
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
 #BPM:239,92
-#REALBPM:120
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Ciega%2C%20sordomuda
-#VIDEOID:B3gbisdtJnA
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=B3gbisdtJnA
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.584Z
 #GAP:22025,666555518506
+#ALLKARAOKE_ID:shakira-ciega-sordomuda
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.584Z
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Ciega%2C%20sordomuda
+#ALLKARAOKE_VOLUME:0,6
 : 16 2 20 Se 
 : 20 2 20 me a
 : 24 2 20 ca

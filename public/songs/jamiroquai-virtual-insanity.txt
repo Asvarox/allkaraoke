@@ -1,18 +1,18 @@
-#ID:jamiroquai-virtual-insanity
 #ARTIST:Jamiroquai
-#ARTISTORIGIN:GB
 #TITLE:Virtual Insanity
 #CREATOR:Lorchen
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
 #BPM:368,16
-#REALBPM:92
 #YEAR:1996
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jamiroquai&cancion=Virtual%20Insanity
-#VIDEOID:4JkIs37a2JE
+#VIDEO:v=4JkIs37a2JE
 #VIDEOGAP:5
-#VOLUME:0,85
 #LANGUAGE:English
 #GAP:6479
+#ALLKARAOKE_ID:jamiroquai-virtual-insanity
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=lorchen
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jamiroquai&cancion=Virtual%20Insanity
+#ALLKARAOKE_VOLUME:0,85
 : 0 7 22 Ooh
 : 8 22 20 ~,
 - 31

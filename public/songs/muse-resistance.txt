@@ -1,17 +1,16 @@
-#ID:muse-resistance
 #ARTIST:Muse
-#ARTISTORIGIN:GB
 #TITLE:Resistance
 #CREATOR:1v4n
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=1v4n
 #BPM:250
-#REALBPM:135
 #YEAR:2009
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Resistance
-#VIDEOID:TPE9uSFFxrI
-#VIDEOGAP:0
+#VIDEO:v=TPE9uSFFxrI
 #LANGUAGE:English
 #GAP:69440
+#ALLKARAOKE_ID:muse-resistance
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=1v4n
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Resistance
 : 17 5 -8 Is 
 : 23 4 -4 our 
 : 28 7 -1 se

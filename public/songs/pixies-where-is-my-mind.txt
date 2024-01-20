@@ -1,22 +1,18 @@
-#ID:pixies-where-is-my-mind
 #ARTIST:Pixies
-#ARTISTORIGIN:US
 #TITLE:Where Is My Mind
 #CREATOR:hamadad
-#CREATORURL:
 #BPM:240
-#REALBPM:81
 #YEAR:1988
-#SOURCEURL:
-#VIDEOID:FSCgfI3OG7s
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=FSCgfI3OG7s
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2024-01-19T05:46:35.253Z
 #GAP:14950
+#ALLKARAOKE_ID:pixies-where-is-my-mind
+#ALLKARAOKE_LASTUPDATE:2024-01-19T05:46:35.253Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_VOLUME:0,75
 #MP3:Pixies - Where Is My Mind? (Fight Club Version).mp3
-#VIDEO:v=FSCgfI3OG7s,co=https://i.ytimg.com/vi/XcV3rLSbY8E/maxresdefault.jpg,co-crop=280-0-720-720,bg=pixies-4e3a8a6c4bcc2.jpg
 #START:11.0
 : 16 9 4 O
 : 26 24 3 ho 

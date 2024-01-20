@@ -32,19 +32,20 @@ const SONGS_FOLDER = './public/songs';
     try {
       // await fillMissingRealBpm(songData, file);
       // await fillSongYear(songData);
-      await appendBandOrigin(songData);
+      // await appendBandOrigin(songData);
     } catch (e) {
       console.error(e);
     }
     const finalSong = { ...songData, tracks };
     // finalSong.id = getSongId(finalSong);
     //
-    const fixedTxt = await fixAccentCharacters(
-      convertSongToTxt(finalSong),
-      Array.isArray(song.language) ? song.language[0] : song.language,
-    );
+    // const txt = await fixAccentCharacters(
+    //   convertSongToTxt(finalSong),
+    //   Array.isArray(song.language) ? song.language[0] : song.language,
+    // );
+    const txt = convertSongToTxt(finalSong);
 
-    writeFileSync(`${SONGS_FOLDER}/${finalSong.id}.txt`, fixedTxt, {
+    writeFileSync(`${SONGS_FOLDER}/${finalSong.id}.txt`, txt, {
       encoding: 'utf-8',
     });
   }

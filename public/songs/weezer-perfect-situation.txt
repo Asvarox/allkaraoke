@@ -1,20 +1,19 @@
-#ID:weezer-perfect-situation
 #ARTIST:Weezer
-#ARTISTORIGIN:US
 #TITLE:Perfect Situation
 #CREATOR:gun88
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=gun88
 #BPM:376
-#REALBPM:94
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Perfect%20Situation
-#VIDEOID:jwv-iRvyDZg
-#VIDEOGAP:0
-#VOLUME:0,67
+#VIDEO:v=jwv-iRvyDZg
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T17:22:32.224Z
 #GAP:27602,659574468085
+#ALLKARAOKE_ID:weezer-perfect-situation
+#ALLKARAOKE_LASTUPDATE:2023-11-30T17:22:32.224Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=gun88
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Weezer&cancion=Perfect%20Situation
+#ALLKARAOKE_VOLUME:0,67
 : 25 7 11 What's 
 : 34 4 10 the 
 : 40 7 6 deal 

@@ -1,17 +1,16 @@
-#ID:bruno-mars-grenade
 #ARTIST:Bruno Mars
-#ARTISTORIGIN:US
 #TITLE:Grenade
 #CREATOR:savik1993
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=23692
 #BPM:221,03
-#REALBPM:112
 #YEAR:2010
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11157
-#VIDEOID:SR6iYWJxHqs
-#VIDEOGAP:0
+#VIDEO:v=SR6iYWJxHqs
 #LANGUAGE:English
 #GAP:3782,0386372890557
+#ALLKARAOKE_ID:bruno-mars-grenade
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=23692
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11157
 : 15 2 5 Ea
 : 19 2 5 sy 
 : 23 2 -3 come

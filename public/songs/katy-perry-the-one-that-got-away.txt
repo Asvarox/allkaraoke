@@ -1,20 +1,19 @@
-#ID:katy-perry-the-one-that-got-away
 #ARTIST:Katy Perry
-#ARTISTORIGIN:US
 #TITLE:The One That Got Away
 #CREATOR:Katy Perry
-#CREATORURL:
 #BPM:268
-#REALBPM:134
 #YEAR:2011
-#SOURCEURL:https://youtu.be/Ahha3Cqe_fk?si=pgLM8kAekzw7cyAg
-#VIDEOID:Ahha3Cqe_fk
+#VIDEO:v=Ahha3Cqe_fk
 #VIDEOGAP:6
-#VOLUME:0,77
 #GENRE:Pop/Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-11-23T06:46:39.030Z
 #GAP:20002,537313432837
+#ALLKARAOKE_ID:katy-perry-the-one-that-got-away
+#ALLKARAOKE_LASTUPDATE:2023-11-23T06:46:39.030Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_SOURCEURL:https://youtu.be/Ahha3Cqe_fk?si=pgLM8kAekzw7cyAg
+#ALLKARAOKE_VOLUME:0,77
 : 18 3 4 Sum
 : 22 3 6 mer 
 : 26 3 6 af

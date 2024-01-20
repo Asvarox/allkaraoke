@@ -1,19 +1,19 @@
-#ID:maroon-5-feat-wiz-khalifa-payphone
 #ARTIST:Maroon 5 feat. Wiz Khalifa
 #TITLE:Payphone
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/es/canciones?creador=coppo
 #BPM:220,04
-#REALBPM:110
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Maroon%205%20feat.%20Wiz%20Khalifa
-#VIDEOID:KRaWnd3LJfs
+#VIDEO:v=KRaWnd3LJfs
 #VIDEOGAP:38
-#VOLUME:1
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-11-07T21:41:36.470Z
 #GAP:38327,45864388293
+#ALLKARAOKE_ID:maroon-5-feat-wiz-khalifa-payphone
+#ALLKARAOKE_LASTUPDATE:2023-11-07T21:41:36.470Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Maroon%205%20feat.%20Wiz%20Khalifa
+#ALLKARAOKE_VOLUME:1
 : 15 2 3 I'm 
 : 19 3 4 at 
 : 23 2 6 a 

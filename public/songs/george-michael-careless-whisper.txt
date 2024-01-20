@@ -1,20 +1,19 @@
-#ID:george-michael-careless-whisper
 #ARTIST:George Michael
-#ARTISTORIGIN:GB
 #TITLE:Careless Whisper
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:305,6
-#REALBPM:77
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=Careless%20Whisper
-#VIDEOID:izGwDsrQ1eQ
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=izGwDsrQ1eQ
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar
 #GAP:14024,324607329843
+#EDITION:SingStar
+#ALLKARAOKE_ID:george-michael-careless-whisper
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=Careless%20Whisper
+#ALLKARAOKE_VOLUME:0,91
 : 20 2 -3 Whoah
 : 24 2 0 ~,
 : 28 2 2  whoah

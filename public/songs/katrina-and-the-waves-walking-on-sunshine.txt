@@ -1,20 +1,19 @@
-#ID:katrina-and-the-waves-walking-on-sunshine
 #ARTIST:Katrina And The Waves
-#ARTISTORIGIN:GB
 #TITLE:Walking On Sunshine
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:220,32
-#REALBPM:108
 #YEAR:1985
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine
-#VIDEOID:iPUmE-tne5U
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=iPUmE-tne5U
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '80s
 #GAP:8723,758169934641
+#EDITION:SingStar '80s
+#ALLKARAOKE_ID:katrina-and-the-waves-walking-on-sunshine
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Katrina%20And%20The%20Waves&cancion=Walking%20On%20Sunshine
+#ALLKARAOKE_VOLUME:0,9
 F 15 3 70 Ow
 - 18 78
 - 78

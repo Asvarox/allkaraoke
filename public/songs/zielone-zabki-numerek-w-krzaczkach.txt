@@ -1,18 +1,17 @@
-#ID:zielone-zabki-numerek-w-krzaczkach
 #ARTIST:Zielone Żabki
-#ARTISTORIGIN:PL
 #TITLE:Numerek w krzaczkach
 #CREATOR:Beneblade
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #BPM:356,36
-#REALBPM:83
 #YEAR:1988
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach
-#VIDEOID:RUoyikOPCmA
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=RUoyikOPCmA
 #LANGUAGE:Polish
 #GAP:21751,785610057246
+#ALLKARAOKE_ID:zielone-zabki-numerek-w-krzaczkach
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Zielone%20%C5%BBabki&cancion=Numerek%20w%20krzaczkach
+#ALLKARAOKE_VOLUME:0,9
 : 24 2 4 Naj
 : 29 2 4 pierw
 : 37 3 4  kil

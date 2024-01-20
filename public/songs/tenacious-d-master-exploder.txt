@@ -1,20 +1,20 @@
-#ID:tenacious-d-master-exploder
 #ARTIST:Tenacious D
-#ARTISTORIGIN:US
 #TITLE:Master Exploder
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:388,12
-#REALBPM:74
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Master%20Exploder
-#VIDEOID:80DtQD5BQ_A
+#VIDEO:v=80DtQD5BQ_A
 #VIDEOGAP:45
-#VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:Rock Band 2
 #GAP:61550
+#EDITION:Rock Band 2
+#ALLKARAOKE_ID:tenacious-d-master-exploder
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Master%20Exploder
+#ALLKARAOKE_VOLUME:0,85
 : 0 38 11 Ah
 : 41 41 12 ~
 : 85 39 14 ~

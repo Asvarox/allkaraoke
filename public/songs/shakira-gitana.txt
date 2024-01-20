@@ -1,20 +1,19 @@
-#ID:shakira-gitana
 #ARTIST:Shakira
-#ARTISTORIGIN:CO
 #TITLE:Gitana
 #CREATOR:zXz
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
 #BPM:186
-#REALBPM:93
 #YEAR:2010
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Gitana
-#VIDEOID:QL8-8badzks
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=QL8-8badzks
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.585Z
 #GAP:21320,25806451613
+#ALLKARAOKE_ID:shakira-gitana
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.585Z
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=zxz
+#ALLKARAOKE_REALBPM:93
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Gitana
+#ALLKARAOKE_VOLUME:0,65
 : 12 3 17 Nun
 : 18 3 15 ca u
 : 24 3 18 sé un 

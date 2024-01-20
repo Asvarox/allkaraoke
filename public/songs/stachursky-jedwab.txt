@@ -1,18 +1,18 @@
-#ID:stachursky-jedwab
 #ARTIST:Stachursky
-#ARTISTORIGIN:PL
 #TITLE:Jedwab
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:228
-#REALBPM:113
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Stachursky&cancion=Jedwab
-#VIDEOID:W2eJv-ib29s
-#VOLUME:1
+#VIDEO:v=W2eJv-ib29s
 #LANGUAGE:Polish
-#EDITION:SS Polskie Hity
 #GAP:17565,79
+#EDITION:SS Polskie Hity
+#ALLKARAOKE_ID:stachursky-jedwab
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Stachursky&cancion=Jedwab
+#ALLKARAOKE_VOLUME:1
 : 0 3 45 O
 : 4 3 45 fia
 : 8 3 45 ru

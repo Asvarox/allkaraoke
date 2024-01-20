@@ -1,19 +1,19 @@
-#ID:the-killers-caution
 #ARTIST:The Killers
-#ARTISTORIGIN:US
 #TITLE:Caution
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:356,01
-#REALBPM:89
 #YEAR:2020
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Caution
-#VIDEOID:WrpBgN_iUnA
+#VIDEO:v=WrpBgN_iUnA
 #VIDEOGAP:44
 #GENRE:Rock Alternativo
 #LANGUAGE:English
-#EDITION:Rock Band Store 2020
 #GAP:57793,79244965029
+#EDITION:Rock Band Store 2020
+#ALLKARAOKE_ID:the-killers-caution
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Caution
 : 24 1 11 Let 
 : 27 3 14 me 
 : 31 1 14 in

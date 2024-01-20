@@ -1,18 +1,17 @@
-#ID:kings-of-leon-sex-on-fire
 #ARTIST:Kings Of Leon
-#ARTISTORIGIN:US
 #TITLE:Sex On Fire
 #CREATOR:klaxoo
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3762
 #BPM:311,5
-#REALBPM:152
 #YEAR:2009
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=4848
-#VIDEOID:RF0HhrwIwp0
-#VIDEOGAP:0
+#VIDEO:v=RF0HhrwIwp0
 #LANGUAGE:English
-#EDITION:[SC]-Songs
 #GAP:27638,76404494382
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:kings-of-leon-sex-on-fire
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3762
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=4848
 : 21 3 16 Lay 
 : 25 2 16 where 
 : 29 2 16 you're 

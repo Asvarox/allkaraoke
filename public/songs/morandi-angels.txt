@@ -1,18 +1,18 @@
-#ID:morandi-angels
 #ARTIST:Morandi
-#ARTISTORIGIN:RO
 #TITLE:Angels
 #CREATOR:klops_007
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=12657
 #BPM:257,8
-#REALBPM:129
 #YEAR:2008
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=7848
-#VIDEOID:1RyjqHE_UkU
+#VIDEO:v=1RyjqHE_UkU
 #VIDEOGAP:-3
-#VOLUME:0,71
 #LANGUAGE:English
 #GAP:18536,86113266098
+#ALLKARAOKE_ID:morandi-angels
+#ALLKARAOKE_ARTISTORIGIN:RO
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=12657
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=7848
+#ALLKARAOKE_VOLUME:0,71
 : 17 10 12 Peo
 : 28 8 11 ple 
 : 43 3 7 stop 

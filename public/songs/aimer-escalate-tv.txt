@@ -1,20 +1,19 @@
-#ID:aimer-escalate-tv
 #ARTIST:Aimer
-#ARTISTORIGIN:JP
 #TITLE:Escalate (TV)
 #CREATOR:Zevac
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=181957
 #BPM:350
-#REALBPM:87
 #YEAR:2023
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=28024
-#VIDEOID:Xcx6MVs2o8E
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=Xcx6MVs2o8E
 #GENRE:Pop
 #LANGUAGE:Japanese
-#LASTUPDATE:2023-12-22T16:33:51.871Z
 #GAP:4754,285714285715
+#ALLKARAOKE_ID:aimer-escalate-tv
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:51.871Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=181957
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=28024
+#ALLKARAOKE_VOLUME:1
 : 23 3 -4 Who
 : 27 7 -2 ~ 
 : 39 4 -2 sings 

@@ -1,18 +1,18 @@
-#ID:kayah-testosteron
 #ARTIST:Kayah
-#ARTISTORIGIN:PL
 #TITLE:Testosteron
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:248
-#REALBPM:124
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kayah&cancion=Testosteron
-#VIDEOID:x9QKRpALphM
+#VIDEO:v=x9QKRpALphM
 #GENRE:Pop
 #LANGUAGE:Polish
-#EDITION:SingStar ESKA
 #GAP:30846,77
+#EDITION:SingStar ESKA
+#ALLKARAOKE_ID:kayah-testosteron
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kayah&cancion=Testosteron
 : 0 2 57 To
 : 4 2 57  przez
 : 8 10 64  Cie

@@ -1,20 +1,19 @@
-#ID:harry-styles-as-it-was
 #ARTIST:Harry Styles
-#ARTISTORIGIN:GB
 #TITLE:As It Was
 #CREATOR:Sebmolder
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sebmolder
 #BPM:342,33
-#REALBPM:174
 #YEAR:2022
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Harry%20Styles&cancion=As%20It%20Was
-#VIDEOID:H5v3kku4y6Q
-#VIDEOGAP:0
-#VOLUME:0,56
+#VIDEO:v=H5v3kku4y6Q
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-20T14:11:00.162Z
 #GAP:-193,44316887214086
+#ALLKARAOKE_ID:harry-styles-as-it-was
+#ALLKARAOKE_LASTUPDATE:2023-05-20T14:11:00.162Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sebmolder
+#ALLKARAOKE_REALBPM:174
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Harry%20Styles&cancion=As%20It%20Was
+#ALLKARAOKE_VOLUME:0,56
 - 0 316
 - 316
 : 339 3 1 Hold

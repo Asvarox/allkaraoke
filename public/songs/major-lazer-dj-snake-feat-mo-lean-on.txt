@@ -1,21 +1,20 @@
-#ID:major-lazer-dj-snake-feat-mo-lean-on
 #ARTIST:Major Lazer & DJ Snake feat. MØ
 #TITLE:Lean On
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
 #BPM:392
-#REALBPM:98
 #YEAR:2015
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Major%20Lazer%20%26%20DJ%20Snake%20feat.%20M%C3%98
 #PREVIEWSTART:45
-#PREVIEWEND:75
-#VIDEOID:YqeW9_5kURI
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=YqeW9_5kURI
 #GENRE:EDM
 #LANGUAGE:English
-#LASTUPDATE:2023-10-20T17:17:05.721Z
 #GAP:9205,102040816326
+#ALLKARAOKE_ID:major-lazer-dj-snake-feat-mo-lean-on
+#ALLKARAOKE_LASTUPDATE:2023-10-20T17:17:05.721Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Major%20Lazer%20%26%20DJ%20Snake%20feat.%20M%C3%98
+#ALLKARAOKE_PREVIEWEND:75
+#ALLKARAOKE_VOLUME:0,6
 : 26 2 5 Do 
 : 30 3 5 you 
 : 34 2 7 re

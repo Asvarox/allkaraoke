@@ -1,21 +1,21 @@
-#ID:bill-medley-jennifer-warnes-ive-had-the-time-of-my-life
 #ARTIST:Bill Medley & Jennifer Warnes
 #TITLE:I've Had The Time Of My Life
 #CREATOR:Wegti
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=22349
 #BPM:217,6
-#REALBPM:109
 #YEAR:1987
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10541
-#VIDEOID:4BQLE_RrTSU
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=4BQLE_RrTSU
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T17:32:24.631Z
-#EDITION:[DUET]-Songs
 #GAP:1266,9926470588234
-#TRACKNAMES:["Bill Medley","Jennifer Warnes"]
+#EDITION:[DUET]-Songs
+#ALLKARAOKE_ID:bill-medley-jennifer-warnes-ive-had-the-time-of-my-life
+#ALLKARAOKE_LASTUPDATE:2023-05-06T17:32:24.631Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=22349
+#ALLKARAOKE_REALBPM:109
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10541
+#ALLKARAOKE_VOLUME:0,5
+#P1:Bill Medley
+#P2:Jennifer Warnes
 : 15 3 -1 Now 
 : 22 12 4 I've 
 : 53 6 4 had 

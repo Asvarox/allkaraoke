@@ -1,18 +1,18 @@
-#ID:shakira-ft-freshlyground-waka-waka-this-time-for-africa
 #ARTIST:Shakira ft. Freshlyground
-#ARTISTORIGIN:CO
 #TITLE:Waka Waka (This Time for Africa)
 #CREATOR:Klafhor
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #BPM:252
-#REALBPM:127
 #YEAR:2010
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29
-#VIDEOID:pRpeEdMmmQ0
+#VIDEO:v=pRpeEdMmmQ0
 #VIDEOGAP:19
-#VOLUME:0,8
 #LANGUAGE:English
 #GAP:33730
+#ALLKARAOKE_ID:shakira-ft-freshlyground-waka-waka-this-time-for-africa
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
+#ALLKARAOKE_REALBPM:127
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29
+#ALLKARAOKE_VOLUME:0,8
 : 0 4 2 You're
 : 5 4 2  good
 : 10 5 4  sol

@@ -1,18 +1,17 @@
-#ID:beyonce-halo
 #ARTIST:Beyoncé
-#ARTISTORIGIN:US
 #TITLE:Halo
 #CREATOR:perzu25
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2565
 #BPM:320,02
-#REALBPM:81
 #YEAR:2008
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5894
-#VIDEOID:bnVUHWCynig
-#VIDEOGAP:0
+#VIDEO:v=bnVUHWCynig
 #GENRE:R&B
 #LANGUAGE:English
 #GAP:24515,686519592524
+#ALLKARAOKE_ID:beyonce-halo
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2565
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5894
 : 21 2 4 Re
 : 25 3 13 mem
 : 29 2 13 ber 

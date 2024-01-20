@@ -1,20 +1,20 @@
-#ID:dua-lipa-dance-the-night
 #ARTIST:Dua Lipa
-#ARTISTORIGIN:GB
 #TITLE:Dance The Night
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:220,06
-#REALBPM:110
 #YEAR:2023
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Dance%20The%20Night
-#VIDEOID:OiC1rgCPmUQ
+#VIDEO:v=OiC1rgCPmUQ
 #VIDEOGAP:21
-#VOLUME:0,55
 #GENRE:Dance
 #LANGUAGE:English
-#LASTUPDATE:2023-06-08T07:42:46.013Z
 #GAP:27254,551576842678
+#ALLKARAOKE_ID:dua-lipa-dance-the-night
+#ALLKARAOKE_LASTUPDATE:2023-06-08T07:42:46.013Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dua%20Lipa&cancion=Dance%20The%20Night
+#ALLKARAOKE_VOLUME:0,55
 : 15 2 7 Ba
 : 18 3 9 ~
 : 24 5 7 by, 

@@ -1,20 +1,18 @@
-#ID:justin-bieber-nicki-minaj-beauty-and-a-beat
 #ARTIST:Justin Bieber & Nicki Minaj
-#ARTISTORIGIN:CA
 #TITLE:Beauty And A Beat
 #CREATOR:vicktoben
-#CREATORURL:
 #BPM:256,04
-#REALBPM:128
 #YEAR:2012
-#SOURCEURL:https://www.youtube.com/watch?v=Ys7-6_t7OEQ
-#VIDEOID:Ys7-6_t7OEQ
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=Ys7-6_t7OEQ
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-01T07:18:43.603Z
 #GAP:37726,06186533354
+#ALLKARAOKE_ID:justin-bieber-nicki-minaj-beauty-and-a-beat
+#ALLKARAOKE_LASTUPDATE:2023-10-01T07:18:43.603Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Ys7-6_t7OEQ
+#ALLKARAOKE_VOLUME:0,5
 F 17 7 0 Yeah
 - 24 56
 - 56

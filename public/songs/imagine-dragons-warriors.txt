@@ -1,19 +1,18 @@
-#ID:imagine-dragons-warriors
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Warriors
 #CREATOR:skream
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=skream
 #BPM:304
-#REALBPM:156
 #YEAR:2014
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Warriors
-#VIDEOID:fmI_Ndrxy14
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=fmI_Ndrxy14
 #GENRE:Alternative rock
 #LANGUAGE:English
 #GAP:8812
+#ALLKARAOKE_ID:imagine-dragons-warriors
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=skream
+#ALLKARAOKE_REALBPM:156
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Warriors
+#ALLKARAOKE_VOLUME:0,81
 : 0 1 -13 As
 : 4 1 -10  a
 : 9 11 -8  child

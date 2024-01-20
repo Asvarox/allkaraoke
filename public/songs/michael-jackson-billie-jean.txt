@@ -1,18 +1,18 @@
-#ID:michael-jackson-billie-jean
 #ARTIST:Michael Jackson
-#ARTISTORIGIN:US
 #TITLE:Billie Jean
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:234,28
-#REALBPM:116
 #YEAR:1982
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean
-#VIDEOID:Zi_XLOBDo_Y
+#VIDEO:v=Zi_XLOBDo_Y
 #VIDEOGAP:-4
-#VOLUME:0,71
 #LANGUAGE:English
 #GAP:30378
+#ALLKARAOKE_ID:michael-jackson-billie-jean
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean
+#ALLKARAOKE_VOLUME:0,71
 : 0 4 13 She
 : 6 2 13  was
 : 10 2 13  more

@@ -1,17 +1,16 @@
-#ID:against-the-current-legends-never-die
 #ARTIST:Against The Current
-#ARTISTORIGIN:US
 #TITLE:Legends Never Die
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:279,9
-#REALBPM:140
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Against%20The%20Current&cancion=Legends%20Never%20Die
-#VIDEOID:r6zIGXun57U
-#VIDEOGAP:0
+#VIDEO:v=r6zIGXun57U
 #LANGUAGE:English
 #GAP:12217
+#ALLKARAOKE_ID:against-the-current-legends-never-die
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Against%20The%20Current&cancion=Legends%20Never%20Die
 : 0 2 -1 Leg
 : 4 2 0 ~
 : 8 6 0 ends

@@ -1,17 +1,16 @@
-#ID:dave-rodgers-deja-vu
 #ARTIST:Dave Rodgers
-#ARTISTORIGIN:IT
 #TITLE:Deja Vu
 #CREATOR:Beneblade
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #BPM:308
-#REALBPM:152
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dave%20Rodgers&cancion=Deja%20Vu
-#VIDEOID:dv13gl0a-FA
-#VIDEOGAP:0
+#VIDEO:v=dv13gl0a-FA
 #LANGUAGE:English
 #GAP:38882,27272727273
+#ALLKARAOKE_ID:dave-rodgers-deja-vu
+#ALLKARAOKE_ARTISTORIGIN:IT
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Dave%20Rodgers&cancion=Deja%20Vu
 : 21 6 0 Shoot 
 * 29 2 3 your 
 : 33 6 -2 bod

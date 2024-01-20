@@ -1,23 +1,22 @@
-#ID:smokie-who-the-f-is-alice
 #ARTIST:Smokie
-#ARTISTORIGIN:GB
 #TITLE:Who The F… Is Alice?
 #CREATOR:IC
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #BPM:248
-#REALBPM:128
 #YEAR:1994
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3784
 #PREVIEWSTART:39
-#PREVIEWEND:67
-#VIDEOID:L4pp3qyq5tc
-#VIDEOGAP:0
-#VOLUME:0,56
+#VIDEO:v=L4pp3qyq5tc
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T18:22:00.177Z
-#EDITION:[SC]-Songs
 #GAP:7071,774193548387
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:smokie-who-the-f-is-alice
+#ALLKARAOKE_LASTUPDATE:2023-06-28T18:22:00.177Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3784
+#ALLKARAOKE_PREVIEWEND:67
+#ALLKARAOKE_VOLUME:0,56
 : 17 3 16 Sal
 : 21 2 16 ly 
 : 25 3 14 ca

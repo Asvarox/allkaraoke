@@ -1,17 +1,16 @@
-#ID:linkin-park-crawling
 #ARTIST:Linkin Park
-#ARTISTORIGIN:US
 #TITLE:Crawling
 #CREATOR:kaim21
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
 #BPM:210,25
-#REALBPM:103
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Crawling
-#VIDEOID:Gd9OhYroLN0
-#VIDEOGAP:0
+#VIDEO:v=Gd9OhYroLN0
 #LANGUAGE:English
 #GAP:25912,189060642093
+#ALLKARAOKE_ID:linkin-park-crawling
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Crawling
 - -13 1
 - 1
 : 14 12 20 Crawl

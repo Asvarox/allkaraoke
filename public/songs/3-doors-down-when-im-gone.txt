@@ -1,19 +1,18 @@
-#ID:3-doors-down-when-im-gone
 #ARTIST:3 Doors Down
-#ARTISTORIGIN:US
 #TITLE:When I'm Gone
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:297
-#REALBPM:74
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=When%20I'm%20Gone
-#VIDEOID:pFq1eT9tMJ4
-#VIDEOGAP:0
+#VIDEO:v=pFq1eT9tMJ4
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Pop 2
 #GAP:20698,89898989899
+#EDITION:SingStar Pop 2
+#ALLKARAOKE_ID:3-doors-down-when-im-gone
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=When%20I'm%20Gone
 : 20 3 57 There's
 : 24 3 57  a
 : 28 4 57 no

@@ -1,19 +1,18 @@
-#ID:cher-believe
 #ARTIST:Cher
-#ARTISTORIGIN:US
 #TITLE:Believe
 #CREATOR:zXz
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=zxz
 #BPM:260
-#REALBPM:133
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=cher&idioma=en
-#VIDEOID:sObgS3dxBac
-#VIDEOGAP:0
+#VIDEO:v=sObgS3dxBac
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T20:43:47.202Z
 #GAP:28762,23076923077
+#ALLKARAOKE_ID:cher-believe
+#ALLKARAOKE_LASTUPDATE:2023-01-28T20:43:47.202Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=zxz
+#ALLKARAOKE_REALBPM:133
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=cher&idioma=en
 : 17 2 10 No 
 : 21 2 10 mat
 : 25 2 8 ter 

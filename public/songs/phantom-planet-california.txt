@@ -1,21 +1,19 @@
-#ID:phantom-planet-california
 #ARTIST:Phantom Planet
-#ARTISTORIGIN:US
 #TITLE:California
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:237,3
-#REALBPM:79
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Phantom%20Planet&cancion=California
-#PREVIEWSTART:0
-#PREVIEWEND:52
-#VIDEOID:wq-S8CIU7VA
-#VIDEOGAP:0
-#VOLUME:0,73
+#VIDEO:v=wq-S8CIU7VA
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T17:48:27.143Z
 #GAP:11128,621997471555
+#ALLKARAOKE_ID:phantom-planet-california
+#ALLKARAOKE_LASTUPDATE:2023-06-28T17:48:27.143Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:79
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Phantom%20Planet&cancion=California
+#ALLKARAOKE_PREVIEWEND:52
+#ALLKARAOKE_VOLUME:0,73
 : 16 3 8 We've 
 : 20 1 11 been 
 : 22 3 13 on 

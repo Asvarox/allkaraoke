@@ -1,20 +1,19 @@
-#ID:deep-purple-smoke-on-the-water
 #ARTIST:Deep Purple
-#ARTISTORIGIN:GB
 #TITLE:Smoke On The Water
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:300
-#REALBPM:114
 #YEAR:1976
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=667
-#VIDEOID:zUwEIt9ez7M
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=zUwEIt9ez7M
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Rocks
 #GAP:50950
+#EDITION:SingStar Rocks
+#ALLKARAOKE_ID:deep-purple-smoke-on-the-water
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=667
+#ALLKARAOKE_VOLUME:0,81
 : 0 3 62 We
 : 4 7 67  all
 : 16 9 67  came

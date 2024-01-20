@@ -1,21 +1,19 @@
-#ID:iggy-pop-the-passenger
 #ARTIST:Iggy Pop
-#ARTISTORIGIN:US
 #TITLE:The Passenger
 #CREATOR:Desidiosus
-#CREATORURL:
 #BPM:398,05
-#REALBPM:68
 #YEAR:1977
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=11710
-#VIDEOID:-fWw7FE9tTo
-#VIDEOGAP:0
-#VOLUME:0,74
+#VIDEO:v=-fWw7FE9tTo
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-12-28T19:33:21.122Z
-#EDITION:Lego Rock Band
 #GAP:20892,539881924382
+#EDITION:Lego Rock Band
+#ALLKARAOKE_ID:iggy-pop-the-passenger
+#ALLKARAOKE_LASTUPDATE:2023-12-28T19:33:21.122Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:68
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=11710
+#ALLKARAOKE_VOLUME:0,74
 : 27 4 2 I 
 : 32 6 4 am 
 : 39 2 2 the 

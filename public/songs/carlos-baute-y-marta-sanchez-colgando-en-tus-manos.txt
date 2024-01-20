@@ -1,20 +1,19 @@
-#ID:carlos-baute-y-marta-sanchez-colgando-en-tus-manos
 #ARTIST:Carlos Baute y Marta Sánchez
-#ARTISTORIGIN:VE
 #TITLE:Colgando en tus manos
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:240,04
-#REALBPM:120
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Carlos%20Baute%20y%20Marta%20S%C3%A1nchez&cancion=Colgando%20en%20tus%20manos
-#VIDEOID:qExd-3oCTl4
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=qExd-3oCTl4
 #GENRE:Dueto
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.556Z
 #GAP:10192,166638893517
+#ALLKARAOKE_ID:carlos-baute-y-marta-sanchez-colgando-en-tus-manos
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.556Z
+#ALLKARAOKE_ARTISTORIGIN:VE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Carlos%20Baute%20y%20Marta%20S%C3%A1nchez&cancion=Colgando%20en%20tus%20manos
+#ALLKARAOKE_VOLUME:0,5
 : 16 1 18 Qui
 : 18 1 18 zá
 : 20 1 18 no

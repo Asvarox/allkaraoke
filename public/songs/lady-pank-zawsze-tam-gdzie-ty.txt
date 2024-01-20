@@ -1,18 +1,17 @@
-#ID:lady-pank-zawsze-tam-gdzie-ty
 #ARTIST:Lady Pank
-#ARTISTORIGIN:PL
 #TITLE:Zawsze tam gdzie Ty
 #CREATOR:jockel1974
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #BPM:189,65
-#REALBPM:95
 #YEAR:1990
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2930
-#VIDEOID:fyoCXePXQF0
-#VIDEOGAP:0
+#VIDEO:v=fyoCXePXQF0
 #GENRE:Rock
 #LANGUAGE:Polish
 #GAP:22650
+#ALLKARAOKE_ID:lady-pank-zawsze-tam-gdzie-ty
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2930
 : 0 5 7 Za
 : 5 4 7 mie
 : 9 3 7 nię 

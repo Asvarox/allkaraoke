@@ -1,19 +1,18 @@
-#ID:abba-gimme-gimme-gimme-a-man-after-midnight
 #ARTIST:ABBA
-#ARTISTORIGIN:SE
 #TITLE:Gimme! Gimme! Gimme! (A Man After Midnight)
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:236,7
-#REALBPM:127
 #YEAR:1979
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)
-#VIDEOID:XEjLoHdbVeE
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=XEjLoHdbVeE
 #LANGUAGE:English
-#EDITION:SingStar ABBA
 #GAP:37739
+#EDITION:SingStar ABBA
+#ALLKARAOKE_ID:abba-gimme-gimme-gimme-a-man-after-midnight
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:127
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)
+#ALLKARAOKE_VOLUME:1
 : 0 7 74 Half
 : 8 8 72  past
 : 17 4 69  twelve

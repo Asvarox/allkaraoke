@@ -1,22 +1,21 @@
-#ID:smokie-living-next-door-to-alice
 #ARTIST:Smokie
-#ARTISTORIGIN:GB
 #TITLE:Living Next Door To Alice
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:252,68
-#REALBPM:126
 #YEAR:1976
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smokie&cancion=Living%20Next%20Door%20To%20Alice
 #PREVIEWSTART:100
-#PREVIEWEND:131
-#VIDEOID:Z6qnRS36EgE
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=Z6qnRS36EgE
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T18:14:07.157Z
 #GAP:7017,81842646826
+#ALLKARAOKE_ID:smokie-living-next-door-to-alice
+#ALLKARAOKE_LASTUPDATE:2023-06-28T18:14:07.157Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smokie&cancion=Living%20Next%20Door%20To%20Alice
+#ALLKARAOKE_PREVIEWEND:131
+#ALLKARAOKE_VOLUME:0,6
 : 17 2 1 Sal
 : 21 1 4 ly 
 : 25 7 2 called

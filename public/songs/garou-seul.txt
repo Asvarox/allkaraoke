@@ -1,19 +1,19 @@
-#ID:garou-seul
 #ARTIST:Garou
-#ARTISTORIGIN:CA
 #TITLE:Seul
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:318
-#REALBPM:106
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Garou&cancion=Seul
-#VIDEOID:svuEn_HfgHw
+#VIDEO:v=svuEn_HfgHw
 #VIDEOGAP:1
 #GENRE:Pop
 #LANGUAGE:French
-#LASTUPDATE:2023-01-27T22:23:20.375Z
 #GAP:10679,433962264151
+#ALLKARAOKE_ID:garou-seul
+#ALLKARAOKE_LASTUPDATE:2023-01-27T22:23:20.375Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:106
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Garou&cancion=Seul
 : 21 9 2 Tant 
 : 34 2 2 de 
 : 38 16 2 fois 

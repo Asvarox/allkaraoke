@@ -1,21 +1,20 @@
-#ID:dean-martin-rudolph-the-red-nosed-reindeer
 #ARTIST:Dean Martin
-#ARTISTORIGIN:US
 #TITLE:Rudolph The Red Nosed Reindeer
 #CREATOR:RetroGirl
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=157487
 #BPM:208,22
-#REALBPM:136
 #YEAR:1959
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23225
-#VIDEOID:M47xvJE6GAg
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=M47xvJE6GAg
 #GENRE:Folk
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:14.287Z
-#EDITION:Christmas
 #GAP:6179,023685730792
+#EDITION:Christmas
+#ALLKARAOKE_ID:dean-martin-rudolph-the-red-nosed-reindeer
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.287Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=157487
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23225
+#ALLKARAOKE_VOLUME:0,91
 : 14 2 2 Ru
 : 17 4 4 dolph, 
 : 24 1 2 the 

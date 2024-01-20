@@ -1,18 +1,17 @@
-#ID:avril-lavigne-girlfriend
 #ARTIST:Avril Lavigne
-#ARTISTORIGIN:CA
 #TITLE:Girlfriend
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:328,11
-#REALBPM:81
 #YEAR:2007
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avril%20Lavigne&cancion=Girlfriend
-#VIDEOID:Bg59q4puhmg
-#VIDEOGAP:0
+#VIDEO:v=Bg59q4puhmg
 #GENRE:Pop Rock
 #LANGUAGE:English
 #GAP:12061,239736673677
+#ALLKARAOKE_ID:avril-lavigne-girlfriend
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avril%20Lavigne&cancion=Girlfriend
 : 22 5 9 Hey! 
 : 30 5 9 Hey! 
 : 38 5 9 You! 

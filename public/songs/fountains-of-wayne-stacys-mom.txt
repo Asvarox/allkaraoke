@@ -1,19 +1,18 @@
-#ID:fountains-of-wayne-stacys-mom
 #ARTIST:Fountains Of Wayne
-#ARTISTORIGIN:US
 #TITLE:Stacy's Mom
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:236,06
-#REALBPM:118
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Fountains%20Of%20Wayne&cancion=Stacy's%20Mom
-#VIDEOID:dZLfasMPOU4
-#VIDEOGAP:0
+#VIDEO:v=dZLfasMPOU4
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:S'Star Popworld
 #GAP:7116,309328136915
+#EDITION:S'Star Popworld
+#ALLKARAOKE_ID:fountains-of-wayne-stacys-mom
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Fountains%20Of%20Wayne&cancion=Stacy's%20Mom
 - -15 1
 - 1
 : 16 2 56 Sta

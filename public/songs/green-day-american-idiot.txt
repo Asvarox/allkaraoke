@@ -1,19 +1,18 @@
-#ID:green-day-american-idiot
 #ARTIST:Green Day
-#ARTISTORIGIN:US
 #TITLE:American Idiot
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:279
-#REALBPM:184
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=American%20Idiot
-#VIDEOID:Ee_uujKuJMI
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=Ee_uujKuJMI
 #LANGUAGE:English
-#LASTUPDATE:2023-06-08T08:15:16.130Z
 #GAP:10398,494623655914
+#ALLKARAOKE_ID:green-day-american-idiot
+#ALLKARAOKE_LASTUPDATE:2023-06-08T08:15:16.130Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:184
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=American%20Idiot
+#ALLKARAOKE_VOLUME:0,65
 : 19 2 15 Don't 
 : 22 2 15 wan
 : 25 2 15 na 

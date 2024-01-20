@@ -1,17 +1,16 @@
-#ID:2-plus-1-chodz-pomaluj-moj-swiat
 #ARTIST:2 Plus 1
-#ARTISTORIGIN:PL
 #TITLE:Chodz, Pomaluj Mój Swiat
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:144,29
-#REALBPM:76
 #YEAR:1972
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10933
-#VIDEOID:8fL5mNR8lrw
-#VIDEOGAP:0
+#VIDEO:v=8fL5mNR8lrw
 #LANGUAGE:Polish
 #GAP:1230
+#ALLKARAOKE_ID:2-plus-1-chodz-pomaluj-moj-swiat
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10933
 : 0 1 0 Na
 : 2 1 2  na
 : 4 3 4  na

@@ -1,20 +1,19 @@
-#ID:amy-winehouse-back-to-black
 #ARTIST:Amy Winehouse
-#ARTISTORIGIN:GB
 #TITLE:Back To Black
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #BPM:252
-#REALBPM:123
 #YEAR:2007
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse
-#VIDEOID:TJAfLE39ZZ8
-#VIDEOGAP:0
+#VIDEO:v=TJAfLE39ZZ8
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-29T00:06:04.393Z
-#EDITION:SingStar R&B
 #GAP:15178,095238095239
+#EDITION:SingStar R&B
+#ALLKARAOKE_ID:amy-winehouse-back-to-black
+#ALLKARAOKE_LASTUPDATE:2023-01-29T00:06:04.393Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse
 : 17 11 62 He
 : 28 2 64 ~
 : 30 2 62 ~

@@ -1,21 +1,20 @@
-#ID:culcha-candela-hamma
 #ARTIST:Culcha Candela
-#ARTISTORIGIN:DE
 #TITLE:Hamma!
 #CREATOR:Leki
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6
 #BPM:340
-#REALBPM:100
 #YEAR:2007
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3067
-#VIDEOID:orykWFd45iI
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=orykWFd45iI
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:11:37.869Z
-#EDITION:SingStar Summer Party
 #GAP:2985,2941176470586
+#EDITION:SingStar Summer Party
+#ALLKARAOKE_ID:culcha-candela-hamma
+#ALLKARAOKE_LASTUPDATE:2023-06-22T19:11:37.869Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3067
+#ALLKARAOKE_VOLUME:0,75
 F 23 10 0 Yeah 
 - 33
 F 50 11 0 Whoo 

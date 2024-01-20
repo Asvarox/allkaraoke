@@ -1,17 +1,16 @@
-#ID:vengaboys-we-like-to-party
 #ARTIST:Vengaboys
-#ARTISTORIGIN:NL
 #TITLE:We Like To Party
 #CREATOR:Rubn4
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
 #BPM:272
-#REALBPM:136
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=We%20Like%20To%20Party
-#VIDEOID:6Zbi0XmGtMw
-#VIDEOGAP:0
+#VIDEO:v=6Zbi0XmGtMw
 #LANGUAGE:English
 #GAP:13202,35294117647
+#ALLKARAOKE_ID:vengaboys-we-like-to-party
+#ALLKARAOKE_ARTISTORIGIN:NL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=We%20Like%20To%20Party
 F 18 3 0 We 
 F 26 3 0 like 
 F 32 1 0 to 

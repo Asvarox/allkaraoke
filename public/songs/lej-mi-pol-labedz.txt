@@ -1,18 +1,18 @@
-#ID:lej-mi-pol-labedz
 #ARTIST:Lej mi pól
 #TITLE:Labedz
 #CREATOR:MrLudozzerca
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167141
 #BPM:228,02
-#REALBPM:114
 #YEAR:2021
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=26848
-#VIDEOID:zZN4n3xzNEM
+#VIDEO:v=zZN4n3xzNEM
 #VIDEOGAP:14
-#VOLUME:0,7
 #LANGUAGE:Polish
-#LASTUPDATE:2023-04-01T08:34:25.244Z
 #GAP:30943,24445224103
+#ALLKARAOKE_ID:lej-mi-pol-labedz
+#ALLKARAOKE_LASTUPDATE:2023-04-01T08:34:25.244Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167141
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=26848
+#ALLKARAOKE_VOLUME:0,7
 F 15 11 9 Hu 
 - 26 32
 - 32

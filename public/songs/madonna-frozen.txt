@@ -1,19 +1,18 @@
-#ID:madonna-frozen
 #ARTIST:Madonna
-#ARTISTORIGIN:US
 #TITLE:Frozen
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
 #BPM:216
-#REALBPM:108
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Frozen
-#VIDEOID:XS088Opj9o0
-#VIDEOGAP:0
+#VIDEO:v=XS088Opj9o0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T23:59:19.273Z
 #GAP:18202,777777777777
+#ALLKARAOKE_ID:madonna-frozen
+#ALLKARAOKE_LASTUPDATE:2023-01-28T23:59:19.273Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Frozen
 : 14 2 8 You 
 : 18 3 8 on
 : 22 2 8 ly 

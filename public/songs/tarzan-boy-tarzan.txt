@@ -1,17 +1,16 @@
-#ID:tarzan-boy-tarzan
 #ARTIST:Tarzan Boy
-#ARTISTORIGIN:PL
 #TITLE:Tarzan
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:270,08
-#REALBPM:135
 #YEAR:1996
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12313
-#VIDEOID:UlCCg93okG0
-#VIDEOGAP:0
+#VIDEO:v=UlCCg93okG0
 #LANGUAGE:Polish
 #GAP:3137,2962085308054
+#ALLKARAOKE_ID:tarzan-boy-tarzan
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12313
 F 18 4 -1 Tar
 F 24 4 -1 zan,
 - 38 56

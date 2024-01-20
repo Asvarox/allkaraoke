@@ -1,20 +1,19 @@
-#ID:evanescence-bring-me-to-life
 #ARTIST:Evanescence
-#ARTISTORIGIN:US
 #TITLE:Bring Me to Life
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:379,84
-#REALBPM:96
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life
-#VIDEOID:3YxaaGgTQYM
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=3YxaaGgTQYM
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar PopHit
 #GAP:16910
+#EDITION:SingStar PopHit
+#ALLKARAOKE_ID:evanescence-bring-me-to-life
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life
+#ALLKARAOKE_VOLUME:0,81
 : 0 2 9 How
 : 4 18 11 ~
 : 24 5 9 ~

@@ -1,18 +1,17 @@
-#ID:michael-jackson-feat-justin-timberlake-love-never-felt-so-good
 #ARTIST:Michael Jackson feat. Justin Timberlake
-#ARTISTORIGIN:US
 #TITLE:Love Never Felt So Good
 #CREATOR:Leroidukitch
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=105252
 #BPM:235
-#REALBPM:118
 #YEAR:1984
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18461
-#VIDEOID:oG08ukJPtR8
-#VIDEOGAP:0
+#VIDEO:v=oG08ukJPtR8
 #GENRE:Other
 #LANGUAGE:English
 #GAP:1874,723404255319
+#ALLKARAOKE_ID:michael-jackson-feat-justin-timberlake-love-never-felt-so-good
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=105252
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18461
 F 16 8 -3 Dance!
 - 24 65
 - 65

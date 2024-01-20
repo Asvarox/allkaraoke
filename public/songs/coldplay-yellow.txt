@@ -1,18 +1,17 @@
-#ID:coldplay-yellow
 #ARTIST:Coldplay
-#ARTISTORIGIN:GB
 #TITLE:Yellow
 #CREATOR:Kodaman
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
 #BPM:552
-#REALBPM:86
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow
-#VIDEOID:yKNxeF4KMsY
-#VIDEOGAP:0
+#VIDEO:v=yKNxeF4KMsY
 #GENRE:Britpop
 #LANGUAGE:English
 #GAP:34694,565217391304
+#ALLKARAOKE_ID:coldplay-yellow
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
+#ALLKARAOKE_REALBPM:86
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow
 : 37 7 13 Look 
 : 51 6 15 at 
 : 62 2 13 the 

@@ -1,18 +1,18 @@
-#ID:aerosmith-crazy
 #ARTIST:Aerosmith
-#ARTISTORIGIN:US
 #TITLE:Crazy
 #CREATOR:kaim21
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
 #BPM:321,08
-#REALBPM:81
 #YEAR:1994
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy
-#VIDEOID:LGM5GkINMMI
+#VIDEO:v=LGM5GkINMMI
 #VIDEOGAP:15
-#VOLUME:0,91
 #LANGUAGE:English
 #GAP:15830
+#ALLKARAOKE_ID:aerosmith-crazy
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy
+#ALLKARAOKE_VOLUME:0,91
 F 0 2 13 come
 F 3 5 13  'ere
 F 9 4 13  ba

@@ -1,20 +1,19 @@
-#ID:la-oreja-de-van-gogh-cuentame-al-oido
 #ARTIST:La Oreja de Van Gogh
-#ARTISTORIGIN:ES
 #TITLE:Cuéntame al oído
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:266,08
-#REALBPM:133
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Cu%C3%A9ntame%20al%20o%C3%ADdo
-#VIDEOID:YqecOmezgSw
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=YqecOmezgSw
 #GENRE:Pop Nacional
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.573Z
 #GAP:6315,267588695129
+#ALLKARAOKE_ID:la-oreja-de-van-gogh-cuentame-al-oido
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.573Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:133
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20de%20Van%20Gogh&cancion=Cu%C3%A9ntame%20al%20o%C3%ADdo
+#ALLKARAOKE_VOLUME:0,6
 : 18 6 7 Cuén
 : 26 3 5 ta
 : 30 6 5 me al 

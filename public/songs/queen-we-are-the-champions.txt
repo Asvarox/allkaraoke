@@ -1,19 +1,19 @@
-#ID:queen-we-are-the-champions
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:We Are the Champions
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:189,8
-#REALBPM:46
 #YEAR:1977
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Are%20the%20Champions
-#VIDEOID:04854XqcfCY
+#VIDEO:v=04854XqcfCY
 #VIDEOGAP:5
-#VOLUME:1
 #LANGUAGE:English
-#EDITION:SingStar Queen
 #GAP:5393,52
+#EDITION:SingStar Queen
+#ALLKARAOKE_ID:queen-we-are-the-champions
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:46
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Are%20the%20Champions
+#ALLKARAOKE_VOLUME:1
 : 0 3 55 I've
 : 4 3 58  paid
 : 8 4 60  my

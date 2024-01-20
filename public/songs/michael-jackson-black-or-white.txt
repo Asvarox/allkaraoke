@@ -1,18 +1,18 @@
-#ID:michael-jackson-black-or-white
 #ARTIST:Michael Jackson
-#ARTISTORIGIN:US
 #TITLE:Black or white
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:230,02
-#REALBPM:117
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Black%20or%20white
-#VIDEOID:F2AitTPI5U0
+#VIDEO:v=F2AitTPI5U0
 #VIDEOGAP:107
 #GENRE:Pop Internacional
 #LANGUAGE:English
 #GAP:158909,82418920094
+#ALLKARAOKE_ID:michael-jackson-black-or-white
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Black%20or%20white
 : 15 3 -1 I 
 : 19 3 4 took 
 : 23 3 8 my 

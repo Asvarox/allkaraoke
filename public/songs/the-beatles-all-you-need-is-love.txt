@@ -1,19 +1,18 @@
-#ID:the-beatles-all-you-need-is-love
 #ARTIST:The Beatles
-#ARTISTORIGIN:GB
 #TITLE:All You Need Is Love
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:309,87
-#REALBPM:103
 #YEAR:1967
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=All%20You%20Need%20Is%20Love
-#VIDEOID:_7xMfIp-irg
-#VIDEOGAP:0
+#VIDEO:v=_7xMfIp-irg
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:The Beatles Rock Band
 #GAP:7873,444670345629
+#EDITION:The Beatles Rock Band
+#ALLKARAOKE_ID:the-beatles-all-you-need-is-love
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=All%20You%20Need%20Is%20Love
 - -20 1
 - 1
 : 21 19 23 Love 

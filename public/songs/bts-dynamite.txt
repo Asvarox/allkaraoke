@@ -1,17 +1,17 @@
-#ID:bts-dynamite
 #ARTIST:BTS
-#ARTISTORIGIN:KR
 #TITLE:Dynamite
 #CREATOR:asdFer
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
 #BPM:228,02
-#REALBPM:114
 #YEAR:2020
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite
-#VIDEOID:gdZLi9oWNZg
+#VIDEO:v=gdZLi9oWNZg
 #VIDEOGAP:20
 #LANGUAGE:English
 #GAP:22812,24445224103
+#ALLKARAOKE_ID:bts-dynamite
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite
 : 15 2 4 'Cause, 
 : 20 1 11 ah
 : 22 3 13 ~ 

@@ -1,20 +1,17 @@
-#ID:britney-spears-everytime
 #ARTIST:Britney Spears
-#ARTISTORIGIN:US
 #TITLE:Everytime
 #CREATOR:michas17j
-#CREATORURL:
 #BPM:219,75
-#REALBPM:110
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
-#VIDEOID:8YzabSdk7ZA
-#VIDEOGAP:0
+#VIDEO:v=8YzabSdk7ZA
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:49:20.044Z
-#EDITION:
 #GAP:24042,109215017066
+#ALLKARAOKE_ID:britney-spears-everytime
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:49:20.044Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney+Spears
 : 15 5 7 No
 : 23 2 3 tice 
 : 27 17 5 me

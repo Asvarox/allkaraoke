@@ -1,17 +1,17 @@
-#ID:christina-perri-a-thousand-years
 #ARTIST:Christina Perri
-#ARTISTORIGIN:US
 #TITLE:A Thousand Years
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:376,1
-#REALBPM:73
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Christina%20Perri&cancion=A%20Thousand%20Years
-#VIDEOID:rtOvBOTyX00
+#VIDEO:v=rtOvBOTyX00
 #VIDEOGAP:3
 #LANGUAGE:English
 #GAP:19531,924754054773
+#ALLKARAOKE_ID:christina-perri-a-thousand-years
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:73
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Christina%20Perri&cancion=A%20Thousand%20Years
 : 25 15 10 Heart 
 : 57 15 10 beats 
 : 89 15 10 fast

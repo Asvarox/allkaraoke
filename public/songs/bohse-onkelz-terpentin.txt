@@ -1,21 +1,19 @@
-#ID:bohse-onkelz-terpentin
 #ARTIST:Böhse Onkelz
-#ARTISTORIGIN:DE
 #TITLE:Terpentin
 #CREATOR:Canni
-#CREATORURL:
 #BPM:210
-#REALBPM:210
 #YEAR:1998
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1448
-#VIDEOID:Lq6-e8X_c_k
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=Lq6-e8X_c_k
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-10-29T12:09:56.419Z
-#EDITION:[SC]-Songs
 #GAP:21070
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:bohse-onkelz-terpentin
+#ALLKARAOKE_LASTUPDATE:2023-10-29T12:09:56.419Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:210
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1448
+#ALLKARAOKE_VOLUME:0,85
 : 14 2 5 Wir 
 : 17 2 5 wol
 : 20 3 5 len 

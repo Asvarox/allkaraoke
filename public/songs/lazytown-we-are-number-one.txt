@@ -1,17 +1,16 @@
-#ID:lazytown-we-are-number-one
 #ARTIST:LazyTown
 #TITLE:We are number one
 #CREATOR:Jeff54
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=140546
 #BPM:323,79
-#REALBPM:162
 #YEAR:2014
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=21044
-#VIDEOID:PfYnvDL0Qcw
-#VIDEOGAP:0
+#VIDEO:v=PfYnvDL0Qcw
 #GENRE:Children's music
 #LANGUAGE:English
 #GAP:32918,82090243677
+#ALLKARAOKE_ID:lazytown-we-are-number-one
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=140546
+#ALLKARAOKE_REALBPM:162
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=21044
 : 22 5 5 Hey!
 - 49 103
 - 103

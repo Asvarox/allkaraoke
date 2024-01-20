@@ -1,21 +1,19 @@
-#ID:alejandro-sanz-amiga-mia
 #ARTIST:Alejandro Sanz
-#ARTISTORIGIN:ES
 #TITLE:Amiga mía
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:236
-#REALBPM:144
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alejandro%20Sanz&cancion=Amiga%20m%C3%ADa
-#VIDEOID:44Qh0p9xE6o
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=44Qh0p9xE6o
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.552Z
-#EDITION:
 #GAP:12803,050847457627
+#ALLKARAOKE_ID:alejandro-sanz-amiga-mia
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.552Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alejandro%20Sanz&cancion=Amiga%20m%C3%ADa
+#ALLKARAOKE_VOLUME:0,7
 : 16 2 13 A
 : 19 2 6 mi
 : 22 2 11 ga 

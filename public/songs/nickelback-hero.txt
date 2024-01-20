@@ -1,20 +1,19 @@
-#ID:nickelback-hero
 #ARTIST:Nickelback
-#ARTISTORIGIN:CA
 #TITLE:Hero
 #CREATOR:subkei
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
 #BPM:294,56
-#REALBPM:74
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Hero
-#VIDEOID:wQzn4a5qHT4
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=wQzn4a5qHT4
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-10-29T20:49:46.501Z
 #GAP:8563,531776208582
+#ALLKARAOKE_ID:nickelback-hero
+#ALLKARAOKE_LASTUPDATE:2023-10-29T20:49:46.501Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Hero
+#ALLKARAOKE_VOLUME:1
 : 20 3 3 I 
 : 25 3 1 am 
 : 32 6 -1 so 

@@ -1,17 +1,16 @@
-#ID:metro-station-shake-it
 #ARTIST:Metro Station
-#ARTISTORIGIN:US
 #TITLE:Shake It
 #CREATOR:ChiiO
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chiio
 #BPM:290
-#REALBPM:152
 #YEAR:2009
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metro%20Station&cancion=Shake%20It
-#VIDEOID:_wjFahULCK8
-#VIDEOGAP:0
+#VIDEO:v=_wjFahULCK8
 #LANGUAGE:English
 #GAP:19510,241379310344
+#ALLKARAOKE_ID:metro-station-shake-it
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=chiio
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metro%20Station&cancion=Shake%20It
 : 19 2 -6 I'll
 : 22 4 -6  take
 : 27 3 -6  you

@@ -1,19 +1,19 @@
-#ID:rammstein-keine-lust
 #ARTIST:Rammstein
-#ARTISTORIGIN:DE
 #TITLE:Keine Lust
 #CREATOR:NoeliaMicaela
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
 #BPM:276,15
-#REALBPM:138
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Keine%20Lust
-#VIDEOID:1M4ADcMn3dA
+#VIDEO:v=1M4ADcMn3dA
 #VIDEOGAP:103
-#VOLUME:0,7
 #LANGUAGE:German
-#LASTUPDATE:2023-04-19T20:32:58.191Z
 #GAP:133491,27050516024
+#ALLKARAOKE_ID:rammstein-keine-lust
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:32:58.191Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Keine%20Lust
+#ALLKARAOKE_VOLUME:0,7
 F 18 1 0 Ich 
 F 20 1 0 hab' 
 F 22 1 0 kei

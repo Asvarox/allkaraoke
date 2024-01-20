@@ -1,21 +1,20 @@
-#ID:john-lennon-happy-xmas-war-is-over
 #ARTIST:John Lennon
-#ARTISTORIGIN:GB
 #TITLE:Happy Xmas (War Is Over)
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:226
-#REALBPM:73
 #YEAR:1971
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1006
-#VIDEOID:flA5ndOyZbI
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=flA5ndOyZbI
 #GENRE:Christmas
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T12:36:42.723Z
-#EDITION:Christmas
 #GAP:2044,424778761062
+#EDITION:Christmas
+#ALLKARAOKE_ID:john-lennon-happy-xmas-war-is-over
+#ALLKARAOKE_LASTUPDATE:2023-11-30T12:36:42.723Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:73
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1006
+#ALLKARAOKE_VOLUME:0,75
 : 15 5 -3 So 
 : 21 3 -1 this 
 : 25 3 1 is 

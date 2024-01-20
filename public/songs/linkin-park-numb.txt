@@ -1,18 +1,17 @@
-#ID:linkin-park-numb
 #ARTIST:Linkin Park
-#ARTISTORIGIN:US
 #TITLE:Numb
 #CREATOR:Klafhor
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #BPM:220,1
-#REALBPM:112
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Numb
-#VIDEOID:kXYiU_JCYtU
-#VIDEOGAP:0
+#VIDEO:v=kXYiU_JCYtU
 #GENRE:Nu Metal
 #LANGUAGE:English
 #GAP:21227,737392094503
+#ALLKARAOKE_ID:linkin-park-numb
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Numb
 - -14 1
 - 1
 : 15 3 13 Tired 

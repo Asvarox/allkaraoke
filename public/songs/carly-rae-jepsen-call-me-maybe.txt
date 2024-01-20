@@ -1,17 +1,16 @@
-#ID:carly-rae-jepsen-call-me-maybe
 #ARTIST:Carly Rae Jepsen
-#ARTISTORIGIN:CA
 #TITLE:Call Me Maybe
 #CREATOR:dontellme
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
 #BPM:240
-#REALBPM:117
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Carly%20Rae%20Jepsen&cancion=Call%20Me%20Maybe
-#VIDEOID:fWNaR-rxAic
-#VIDEOGAP:0
+#VIDEO:v=fWNaR-rxAic
 #LANGUAGE:English
 #GAP:3473
+#ALLKARAOKE_ID:carly-rae-jepsen-call-me-maybe
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=dontellme
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Carly%20Rae%20Jepsen&cancion=Call%20Me%20Maybe
 : 16 2 -3 I
 : 20 3 -1  threw
 : 24 2 -1  a

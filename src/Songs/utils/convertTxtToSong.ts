@@ -1,5 +1,6 @@
 import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
 import { ValuesType } from 'utility-types';
+import notFalsy from '../../utils/notFalsy';
 import getSongId from './getSongId';
 
 export const typesMap = {
@@ -19,30 +20,39 @@ export const txtTypesMap: Record<ValuesType<typeof typesMap>, keyof typeof types
 };
 
 export const songTXTKeys = [
-  'ID',
   'TRACKNAMES',
   'YEAR',
-  'LASTUPDATE',
   'EDITION',
   'GENRE',
   'LANGUAGE',
   'VIDEOGAP',
-  'REALBPM',
   'PREVIEWSTART',
-  'PREVIEWEND',
-  'VOLUME',
   'CREATOR',
-  'CREATORURL',
-  'SOURCEURL',
   'TITLE',
   'ARTIST',
-  'ARTISTORIGIN',
   'BPM',
   'GAP',
+  'ID',
+  'LASTUPDATE',
+  'VOLUME',
+  'REALBPM',
+  'PREVIEWEND',
+  'CREATORURL',
+  'SOURCEURL',
+  'ARTISTORIGIN',
   'VIDEOID',
+  'ALLKARAOKE_ID',
+  'ALLKARAOKE_LASTUPDATE',
+  'ALLKARAOKE_VOLUME',
+  'ALLKARAOKE_REALBPM',
+  'ALLKARAOKE_PREVIEWEND',
+  'ALLKARAOKE_CREATORURL',
+  'ALLKARAOKE_SOURCEURL',
+  'ALLKARAOKE_ARTISTORIGIN',
+  'ALLKARAOKE_VIDEOID',
 ] as const;
 
-export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO';
+export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO' | 'P1' | 'P2';
 
 function getUnknownProps(txt: string) {
   return txt
@@ -52,27 +62,36 @@ function getUnknownProps(txt: string) {
     );
 }
 
-function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type?: 'string'): string | undefined;
-function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type?: 'array'): string[] | undefined;
-function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type?: 'number'): number | undefined;
-function getPropertyValueFromTxt(txt: string, key: knownSongTxtKeys, type: 'string' | 'number' | 'array' = 'string') {
-  const regex = new RegExp(`#${key}\\:(.*)`);
+function getPropertyValueFromTxt(txt: string, keys: knownSongTxtKeys[], type?: 'string'): string | undefined;
+function getPropertyValueFromTxt(txt: string, keys: knownSongTxtKeys[], type?: 'array'): string[] | undefined;
+function getPropertyValueFromTxt(txt: string, keys: knownSongTxtKeys[], type?: 'number'): number | undefined;
+function getPropertyValueFromTxt(
+  txt: string,
+  keys: knownSongTxtKeys[],
+  type: 'string' | 'number' | 'array' = 'string',
+) {
+  const getValue = (key: knownSongTxtKeys) => {
+    const regex = new RegExp(`#${key}\\:(.*)`);
 
-  const value = txt.match(regex)?.[1];
-  if (value === undefined) return undefined;
-  if (type === 'number') {
-    return Number(value.replace(',', '.')) ?? 0;
-  } else if (type === 'array') {
-    const vals = value.split(', ');
+    const value = txt.match(regex)?.[1];
+    if (value === undefined) return undefined;
+    if (type === 'number') {
+      return Number(value.replace(',', '.')) ?? 0;
+    } else if (type === 'array') {
+      const vals = value.split(', ');
 
-    return vals.length > 1 ? vals : value;
-  }
-  return value;
+      return vals.length > 1 ? vals : value;
+    }
+    return value;
+  };
+
+  return keys.map(getValue).filter(notFalsy).at(0);
 }
 
 function getEmbeddedYoutubeVideoId(txt: string) {
-  const regex = new RegExp(`#VIDEO\\:v=(.*?),`);
-  return txt.match(regex)?.[1];
+  const value = getPropertyValueFromTxt(txt, ['VIDEO']) ?? '';
+  const regex = new RegExp(`v=(.*?)(,|$)`);
+  return value.match(regex)?.[1];
 }
 
 const LINE_BREAK_RELATIVE_REGEXP = /- -?\d+ -?\d+/;
@@ -93,6 +112,15 @@ function safeJsonParse<T extends any, DV extends any = T>(str: any, defaultValue
   }
 }
 
+function getTrackNames(txt: string) {
+  const p1 = getPropertyValueFromTxt(txt, ['P1']);
+  const p2 = getPropertyValueFromTxt(txt, ['P2']);
+  if (p1 || p2) return [p1, p2];
+  const trackNames: string[] = safeJsonParse<string[]>(getPropertyValueFromTxt(txt, ['TRACKNAMES']), []);
+
+  return trackNames;
+}
+
 export default function convertTxtToSong(
   text: string,
   videoLink?: string,
@@ -100,38 +128,39 @@ export default function convertTxtToSong(
   authorUrl?: string,
   sourceUrl?: string,
 ): Song {
-  const trackNames: string[] = safeJsonParse<string[]>(getPropertyValueFromTxt(text, 'TRACKNAMES'), []);
+  const trackNames = getTrackNames(text);
 
   const additionalData = {
-    year: getPropertyValueFromTxt(text, 'YEAR'),
-    artistOrigin: getPropertyValueFromTxt(text, 'ARTISTORIGIN'),
-    lastUpdate: getPropertyValueFromTxt(text, 'LASTUPDATE'),
-    edition: getPropertyValueFromTxt(text, 'EDITION'),
-    genre: getPropertyValueFromTxt(text, 'GENRE'),
-    videoGap: getPropertyValueFromTxt(text, 'VIDEOGAP', 'number'),
-    realBpm: getPropertyValueFromTxt(text, 'REALBPM', 'number'),
-    previewStart: getPropertyValueFromTxt(text, 'PREVIEWSTART', 'number'),
-    previewEnd: getPropertyValueFromTxt(text, 'PREVIEWEND', 'number'),
-    volume: getPropertyValueFromTxt(text, 'VOLUME', 'number'),
-    author: getPropertyValueFromTxt(text, 'CREATOR') ?? author,
-    authorUrl: getPropertyValueFromTxt(text, 'CREATORURL') ?? authorUrl,
-    sourceUrl: getPropertyValueFromTxt(text, 'SOURCEURL') ?? sourceUrl,
+    year: getPropertyValueFromTxt(text, ['YEAR']),
+    artistOrigin: getPropertyValueFromTxt(text, ['ALLKARAOKE_ARTISTORIGIN', 'ARTISTORIGIN']),
+    lastUpdate: getPropertyValueFromTxt(text, ['ALLKARAOKE_LASTUPDATE', 'LASTUPDATE']),
+    edition: getPropertyValueFromTxt(text, ['EDITION']),
+    genre: getPropertyValueFromTxt(text, ['GENRE']),
+    videoGap: getPropertyValueFromTxt(text, ['VIDEOGAP'], 'number'),
+    realBpm: getPropertyValueFromTxt(text, ['ALLKARAOKE_REALBPM', 'REALBPM'], 'number'),
+    previewStart: getPropertyValueFromTxt(text, ['PREVIEWSTART'], 'number'),
+    previewEnd: getPropertyValueFromTxt(text, ['ALLKARAOKE_PREVIEWEND', 'PREVIEWEND'], 'number'),
+    volume: getPropertyValueFromTxt(text, ['ALLKARAOKE_VOLUME', 'VOLUME'], 'number'),
+    author: getPropertyValueFromTxt(text, ['CREATOR']) ?? author,
+    authorUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_CREATORURL', 'CREATORURL']) ?? authorUrl,
+    sourceUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_SOURCEURL', 'SOURCEURL']) ?? sourceUrl,
   } satisfies ExtractOptional<Song>;
 
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);
-  const title = getPropertyValueFromTxt(text, 'TITLE') ?? '';
-  const artist = getPropertyValueFromTxt(text, 'ARTIST') ?? '';
-  const video = getPropertyValueFromTxt(text, 'VIDEOID') ?? getEmbeddedYoutubeVideoId(text) ?? '';
+  const title = getPropertyValueFromTxt(text, ['TITLE']) ?? '';
+  const artist = getPropertyValueFromTxt(text, ['ARTIST']) ?? '';
+  const video =
+    getPropertyValueFromTxt(text, ['ALLKARAOKE_VIDEOID', 'VIDEOID']) ?? getEmbeddedYoutubeVideoId(text) ?? '';
 
   const song: Song = {
-    id: getPropertyValueFromTxt(text, 'ID') ?? getSongId({ title, artist }),
+    id: getPropertyValueFromTxt(text, ['ALLKARAOKE_ID', 'ID']) ?? getSongId({ title, artist }),
     title,
     artist,
     video,
-    language: getPropertyValueFromTxt(text, 'LANGUAGE', 'array') ?? [],
-    bpm: Number(getPropertyValueFromTxt(text, 'BPM')?.replace(',', '.') ?? 0),
+    language: getPropertyValueFromTxt(text, ['LANGUAGE'], 'array') ?? [],
+    bpm: Number(getPropertyValueFromTxt(text, ['BPM'])?.replace(',', '.') ?? 0),
     bar: 4,
-    gap: Number(getPropertyValueFromTxt(text, 'GAP')?.replace(',', '.') ?? 0),
+    gap: Number(getPropertyValueFromTxt(text, ['GAP'])?.replace(',', '.') ?? 0),
     ...additionalData,
     tracks: [],
     unsupportedProps: getUnknownProps(text),

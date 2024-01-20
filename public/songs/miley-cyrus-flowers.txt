@@ -1,20 +1,19 @@
-#ID:miley-cyrus-flowers
 #ARTIST:Miley Cyrus
-#ARTISTORIGIN:US
 #TITLE:Flowers
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:236
-#REALBPM:118
 #YEAR:2023
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Flowers
-#VIDEOID:G7KNmW9a75Y
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=G7KNmW9a75Y
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-05-20T14:21:10.091Z
 #GAP:7393,050847457627
+#ALLKARAOKE_ID:miley-cyrus-flowers
+#ALLKARAOKE_LASTUPDATE:2023-05-20T14:21:10.091Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Flowers
+#ALLKARAOKE_VOLUME:0,6
 : 16 1 -1 We
 : 18 1 0 ~ 
 : 20 2 -1 were 

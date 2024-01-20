@@ -1,17 +1,17 @@
-#ID:linkin-park-what-ive-done
 #ARTIST:Linkin Park
-#ARTISTORIGIN:US
 #TITLE:What I've done
 #CREATOR:paranoik
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paranoik
 #BPM:240,22
-#REALBPM:58
 #YEAR:2007
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=What%20I've%20done
-#VIDEOID:8sgycukafqQ
+#VIDEO:v=8sgycukafqQ
 #VIDEOGAP:-1
 #LANGUAGE:English
 #GAP:41894,91582715844
+#ALLKARAOKE_ID:linkin-park-what-ive-done
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paranoik
+#ALLKARAOKE_REALBPM:58
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=What%20I've%20done
 - -15 1
 - 1
 : 16 7 10 In 

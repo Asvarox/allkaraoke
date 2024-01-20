@@ -1,21 +1,20 @@
-#ID:red-hot-chili-peppers-californication
 #ARTIST:Red Hot Chili Peppers
-#ARTISTORIGIN:US
 #TITLE:Californication
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:387,04
-#REALBPM:96
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Californication
-#VIDEOID:YlUKcNNmywk
-#VIDEOGAP:0
-#VOLUME:0,76
+#VIDEO:v=YlUKcNNmywk
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:18:47.216Z
-#EDITION:Rock Band Store 2011 Vol. 3
 #GAP:22394,689900500078
+#EDITION:Rock Band Store 2011 Vol. 3
+#ALLKARAOKE_ID:red-hot-chili-peppers-californication
+#ALLKARAOKE_LASTUPDATE:2023-04-19T19:18:47.216Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Californication
+#ALLKARAOKE_VOLUME:0,76
 : 26 4 2 Psy
 : 34 2 2 chic 
 : 41 6 4 spies 

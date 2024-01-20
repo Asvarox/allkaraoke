@@ -1,19 +1,18 @@
-#ID:ariana-grande-god-is-a-woman
 #ARTIST:Ariana Grande
-#ARTISTORIGIN:US
 #TITLE:God is a woman
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben
 #BPM:389,26
-#REALBPM:145
 #YEAR:2018
-#SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=ariana+grande
-#VIDEOID:kHLHSlExFis
-#VIDEOGAP:0
-#VOLUME:0,74
+#VIDEO:v=kHLHSlExFis
 #LANGUAGE:English
-#LASTUPDATE:2023-11-07T21:41:35.547Z
 #GAP:343,09895699532444
+#ALLKARAOKE_ID:ariana-grande-god-is-a-woman
+#ALLKARAOKE_LASTUPDATE:2023-11-07T21:41:35.547Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=ariana+grande
+#ALLKARAOKE_VOLUME:0,74
 : 26 5 8 You
 : 33 10 10 ~
 - 43

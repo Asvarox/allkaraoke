@@ -1,19 +1,18 @@
-#ID:the-clash-should-i-stay-or-should-i-go
 #ARTIST:The Clash
-#ARTISTORIGIN:GB
 #TITLE:Should I Stay Or Should I GO
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:300,5
-#REALBPM:113
 #YEAR:1982
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Clash&cancion=Should%20I%20Stay%20Or%20Should%20I%20GO
-#VIDEOID:F4MZSq27pvk
-#VIDEOGAP:0
+#VIDEO:v=F4MZSq27pvk
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Pop
 #GAP:11400
+#EDITION:SingStar Pop
+#ALLKARAOKE_ID:the-clash-should-i-stay-or-should-i-go
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Clash&cancion=Should%20I%20Stay%20Or%20Should%20I%20GO
 - -19 1
 - 1
 F 20 8 74 Woo

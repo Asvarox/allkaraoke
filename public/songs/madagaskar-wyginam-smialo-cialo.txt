@@ -1,16 +1,13 @@
-#ID:madagaskar-wyginam-smialo-cialo
 #ARTIST:Madagaskar
 #TITLE:Wyginam śmiało ciało
 #CREATOR:michas17j
-#CREATORURL:
 #BPM:519,96
-#REALBPM:123
 #YEAR:2005
-#SOURCEURL:
-#VIDEOID:0O2ubAf40fo
-#VIDEOGAP:0
+#VIDEO:v=0O2ubAf40fo
 #LANGUAGE:Polish
 #GAP:1009,6390491576276
+#ALLKARAOKE_ID:madagaskar-wyginam-smialo-cialo
+#ALLKARAOKE_REALBPM:123
 : 24 7 0 Wy
 : 32 7 0 gi
 : 40 5 0 nam 

@@ -1,19 +1,18 @@
-#ID:blondie-the-tide-is-high
 #ARTIST:Blondie
-#ARTISTORIGIN:US
 #TITLE:The Tide Is High
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:196
-#REALBPM:96
 #YEAR:1980
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Blondie&cancion=The%20Tide%20Is%20High
-#VIDEOID:-0skjm-uJSs
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=-0skjm-uJSs
 #LANGUAGE:English
-#EDITION:SingStar SP English
 #GAP:28892,63730569948
+#EDITION:SingStar SP English
+#ALLKARAOKE_ID:blondie-the-tide-is-high
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Blondie&cancion=The%20Tide%20Is%20High
+#ALLKARAOKE_VOLUME:0,91
 : 13 2 54 The
 : 17 7 59  tide
 : 25 5 59  is

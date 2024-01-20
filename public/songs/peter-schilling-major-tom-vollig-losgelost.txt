@@ -1,21 +1,20 @@
-#ID:peter-schilling-major-tom-vollig-losgelost
 #ARTIST:Peter Schilling
-#ARTISTORIGIN:DE
 #TITLE:Major Tom (völlig losgelöst)
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:325,5
-#REALBPM:142
 #YEAR:1982
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1298
-#VIDEOID:KQRaj1vcnrs
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=KQRaj1vcnrs
 #GENRE:New Wave
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T19:22:49.175Z
-#EDITION:SingStar [DE]
 #GAP:37446,17511520737
+#EDITION:SingStar [DE]
+#ALLKARAOKE_ID:peter-schilling-major-tom-vollig-losgelost
+#ALLKARAOKE_LASTUPDATE:2023-06-22T19:22:49.175Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:142
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1298
+#ALLKARAOKE_VOLUME:0,65
 : 22 2 11 Gründ
 : 26 2 16 lich 
 : 30 2 18 durch

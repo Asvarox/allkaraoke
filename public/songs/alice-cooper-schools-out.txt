@@ -1,20 +1,18 @@
-#ID:alice-cooper-schools-out
 #ARTIST:Alice Cooper
-#ARTISTORIGIN:US
 #TITLE:School’s Out
 #CREATOR:ultrastarsongs
-#CREATORURL:
 #BPM:272,85
-#REALBPM:135
 #YEAR:1972
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=4067
-#VIDEOID:RWgTD_0jxeE
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=RWgTD_0jxeE
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-07-23T21:00:58.345Z
 #GAP:20802,03289595269
+#ALLKARAOKE_ID:alice-cooper-schools-out
+#ALLKARAOKE_LASTUPDATE:2023-07-23T21:00:58.345Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=4067
+#ALLKARAOKE_VOLUME:0,6
 : 18 3 2 Well, 
 : 22 2 4 we 
 : 26 5 7 got 

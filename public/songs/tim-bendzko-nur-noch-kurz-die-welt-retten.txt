@@ -1,21 +1,20 @@
-#ID:tim-bendzko-nur-noch-kurz-die-welt-retten
 #ARTIST:Tim Bendzko
-#ARTISTORIGIN:DE
 #TITLE:Nur noch kurz die Welt retten
 #CREATOR:fepo
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
 #BPM:204,3
-#REALBPM:102
 #YEAR:2011
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12290
-#VIDEOID:4BAKb2p450Q
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=4BAKb2p450Q
 #GENRE:Pop
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T18:51:45.338Z
-#EDITION:None
 #GAP:17582,09985315712
+#EDITION:None
+#ALLKARAOKE_ID:tim-bendzko-nur-noch-kurz-die-welt-retten
+#ALLKARAOKE_LASTUPDATE:2023-06-22T18:51:45.338Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12290
+#ALLKARAOKE_VOLUME:0,5
 : 14 2 -5 Ich 
 : 18 2 -3 wär’ 
 : 22 2 0 so 

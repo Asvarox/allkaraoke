@@ -1,17 +1,16 @@
-#ID:akcent-przez-twe-oczy-zielone
 #ARTIST:Akcent
-#ARTISTORIGIN:RO
 #TITLE:Przez Twe oczy zielone
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:275,46
-#REALBPM:138
 #YEAR:2014
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Akcent&cancion=Przez%20Twe%20oczy%20zielone
-#VIDEOID:cxtnot8lY4U
-#VIDEOGAP:0
+#VIDEO:v=cxtnot8lY4U
 #LANGUAGE:Polish
 #GAP:52399,82138967545
+#ALLKARAOKE_ID:akcent-przez-twe-oczy-zielone
+#ALLKARAOKE_ARTISTORIGIN:RO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Akcent&cancion=Przez%20Twe%20oczy%20zielone
 : 18 2 -7 Od
 : 22 2 -7 kąd 
 : 26 3 -7 zo

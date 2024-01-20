@@ -1,21 +1,20 @@
-#ID:dschinghis-khan-moskau
 #ARTIST:Dschinghis Khan
-#ARTISTORIGIN:DE
 #TITLE:Moskau
 #CREATOR:IC
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #BPM:263
-#REALBPM:131
 #YEAR:1979
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=4304
-#VIDEOID:EPdn9_h2dCY
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=EPdn9_h2dCY
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T18:58:16.594Z
-#EDITION:[SC]-Songs
 #GAP:25113,384030418252
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:dschinghis-khan-moskau
+#ALLKARAOKE_LASTUPDATE:2023-06-22T18:58:16.594Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:131
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=4304
+#ALLKARAOKE_VOLUME:0,75
 : 18 5 5 Mos
 : 30 12 12 kau, 
 - 42 47

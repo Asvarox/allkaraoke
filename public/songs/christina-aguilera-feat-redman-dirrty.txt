@@ -1,19 +1,18 @@
-#ID:christina-aguilera-feat-redman-dirrty
 #ARTIST:Christina Aguilera feat. Redman
 #TITLE:Dirrty
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
 #BPM:199,9
-#REALBPM:100
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Christina%20Aguilera%20feat.%20Redman
-#VIDEOID:4Rg3sAb8Id8
-#VIDEOGAP:0
-#VOLUME:0,61
+#VIDEO:v=4Rg3sAb8Id8
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-04-29T21:51:39.081Z
 #GAP:404,5122561280641
+#ALLKARAOKE_ID:christina-aguilera-feat-redman-dirrty
+#ALLKARAOKE_LASTUPDATE:2023-04-29T21:51:39.081Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Christina%20Aguilera%20feat.%20Redman
+#ALLKARAOKE_VOLUME:0,61
 F 13 4 6 Ah
 - 17
 F 30 3 6 Dir

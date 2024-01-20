@@ -1,20 +1,19 @@
-#ID:mecano-hijo-de-la-luna
 #ARTIST:Mecano
-#ARTISTORIGIN:ES
 #TITLE:Hijo de la luna
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:240
-#REALBPM:179
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Mecano&cancion=Hijo%20de%20la%20luna
-#VIDEOID:OwGG5fX7bxY
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=OwGG5fX7bxY
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.580Z
-#EDITION:SS Mecano
 #GAP:9037
+#EDITION:SS Mecano
+#ALLKARAOKE_ID:mecano-hijo-de-la-luna
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.580Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:179
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Mecano&cancion=Hijo%20de%20la%20luna
+#ALLKARAOKE_VOLUME:0,8
 : 16 2 61 Ton
 : 19 2 63 to el 
 : 22 2 64 que 

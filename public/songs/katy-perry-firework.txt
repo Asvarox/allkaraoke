@@ -1,19 +1,18 @@
-#ID:katy-perry-firework
 #ARTIST:Katy Perry
-#ARTISTORIGIN:US
 #TITLE:Firework
 #CREATOR:michas17j
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=14525
 #BPM:248,2
-#REALBPM:123
 #YEAR:2010
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10301
-#VIDEOID:QGJuMBdaqIw
-#VIDEOGAP:0
+#VIDEO:v=QGJuMBdaqIw
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:michas17j
 #GAP:14302,602739726028
+#EDITION:michas17j
+#ALLKARAOKE_ID:katy-perry-firework
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=14525
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=10301
 : 17 2 0 Do 
 : 21 2 3 you 
 : 25 2 3 e

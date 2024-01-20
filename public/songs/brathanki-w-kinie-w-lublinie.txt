@@ -1,17 +1,16 @@
-#ID:brathanki-w-kinie-w-lublinie
 #ARTIST:BRAThANKI
-#ARTISTORIGIN:PL
 #TITLE:W kinie, w Lublinie
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:306
-#REALBPM:153
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=W%20kinie%2C%20w%20Lublinie
-#VIDEOID:kWRhdN2XusA
-#VIDEOGAP:0
+#VIDEO:v=kWRhdN2XusA
 #LANGUAGE:Polish
 #GAP:27170
+#ALLKARAOKE_ID:brathanki-w-kinie-w-lublinie
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:153
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=W%20kinie%2C%20w%20Lublinie
 : 0 2 7 O
 : 4 6 7  świ
 : 12 3 6 cie

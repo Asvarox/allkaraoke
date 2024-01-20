@@ -1,20 +1,19 @@
-#ID:u2-beautiful-day
 #ARTIST:U2
-#ARTISTORIGIN:IE
 #TITLE:Beautiful Day
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:272,56
-#REALBPM:136
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Beautiful%20Day
-#VIDEOID:co6WMzDOh1o
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=co6WMzDOh1o
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Pop Hits
 #GAP:13208,1
+#EDITION:SingStar Pop Hits
+#ALLKARAOKE_ID:u2-beautiful-day
+#ALLKARAOKE_ARTISTORIGIN:IE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=U2&cancion=Beautiful%20Day
+#ALLKARAOKE_VOLUME:0,8
 : 0 4 45 The
 : 4 2 52  heart
 : 8 4 52  is

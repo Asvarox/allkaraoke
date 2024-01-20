@@ -1,21 +1,19 @@
-#ID:stachursky-dosko
 #ARTIST:Stachursky
-#ARTISTORIGIN:PL
 #TITLE:Dosko
 #CREATOR:Asvarox
-#CREATORURL:https://github.com/Asvarox/olkaraoke
 #BPM:240
-#REALBPM:134
 #YEAR:2009
-#SOURCEURL:
 #PREVIEWSTART:83
-#VIDEOID:TU7V5_Jy-RI
-#VIDEOGAP:0
+#VIDEO:v=TU7V5_Jy-RI
 #GENRE:Unknown
 #LANGUAGE:Polish
-#EDITION:
 #GAP:83195
-#TRACKNAMES:["No to ja poproszę colę","On chce jednak colę"]
+#ALLKARAOKE_ID:stachursky-dosko
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://github.com/Asvarox/olkaraoke
+#ALLKARAOKE_REALBPM:134
+#P1:No to ja poproszę colę
+#P2:On chce jednak colę
 : 16 4 -10 Po
 : 20 4 -10 tęż
 : 24 4 -10 na

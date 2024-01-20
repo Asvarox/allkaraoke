@@ -1,18 +1,17 @@
-#ID:goo-goo-dolls-iris
 #ARTIST:Goo Goo Dolls
-#ARTISTORIGIN:US
 #TITLE:Iris
 #CREATOR:Kodaman
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
 #BPM:314
-#REALBPM:77
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Goo%20Goo%20Dolls&cancion=Iris
-#VIDEOID:NdYWuo9OFAw
-#VIDEOGAP:0
+#VIDEO:v=NdYWuo9OFAw
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:11033,815286624204
+#ALLKARAOKE_ID:goo-goo-dolls-iris
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Goo%20Goo%20Dolls&cancion=Iris
 - -20 1
 - 1
 : 21 3 2 And 

@@ -1,19 +1,17 @@
-#ID:bruno-mars-locked-out-of-heaven
 #ARTIST:Bruno Mars
-#ARTISTORIGIN:US
 #TITLE:Locked Out Of Heaven
 #CREATOR:Shabai Liu*Coppo
-#CREATORURL:
 #BPM:147
-#REALBPM:144
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars
-#VIDEOID:e-fA-gBCkj0
-#VIDEOGAP:0
+#VIDEO:v=e-fA-gBCkj0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:55:38.742Z
 #GAP:5754,591836734694
+#ALLKARAOKE_ID:bruno-mars-locked-out-of-heaven
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:55:38.742Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars
 : 10 2 5 Oh 
 : 14 2 10 yeah 
 : 18 3 9 yeah

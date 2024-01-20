@@ -1,19 +1,18 @@
-#ID:justin-timberlake-what-goes-around-comes-around-radio-edit
 #ARTIST:Justin Timberlake
-#ARTISTORIGIN:US
 #TITLE:What Goes Around... Comes Around (Radio Edit)
 #CREATOR:Ceptic
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9
 #BPM:304
-#REALBPM:77
 #YEAR:2006
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=427
-#VIDEOID:IC8qPpnD0uE
-#VIDEOGAP:0
+#VIDEO:v=IC8qPpnD0uE
 #GENRE:None
 #LANGUAGE:English
-#EDITION:None
 #GAP:20663,157894736843
+#EDITION:None
+#ALLKARAOKE_ID:justin-timberlake-what-goes-around-comes-around-radio-edit
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=427
 : 20 4 -3 Hey 
 : 28 12 0 girl! 
 - 40

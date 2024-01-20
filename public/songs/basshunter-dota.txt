@@ -1,19 +1,19 @@
-#ID:basshunter-dota
 #ARTIST:Basshunter
-#ARTISTORIGIN:SE
 #TITLE:DotA
 #CREATOR:Beneblade
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #BPM:280
-#REALBPM:140
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Basshunter&cancion=DotA
-#VIDEOID:qTsaS1Tm-Ic
+#VIDEO:v=qTsaS1Tm-Ic
 #VIDEOGAP:2
-#VOLUME:0,5
 #LANGUAGE:Swedish
-#LASTUPDATE:2023-10-29T20:49:46.500Z
 #GAP:9819,142857142857
+#ALLKARAOKE_ID:basshunter-dota
+#ALLKARAOKE_LASTUPDATE:2023-10-29T20:49:46.500Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Basshunter&cancion=DotA
+#ALLKARAOKE_VOLUME:0,5
 : 19 2 4 Vi 
 : 23 2 4 sit
 : 27 2 7 ter 

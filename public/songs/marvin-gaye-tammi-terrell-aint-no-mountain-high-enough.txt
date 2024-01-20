@@ -1,20 +1,20 @@
-#ID:marvin-gaye-tammi-terrell-aint-no-mountain-high-enough
 #ARTIST:Marvin Gaye & Tammi Terrell
-#ARTISTORIGIN:US
 #TITLE:Ain't No Mountain High Enough
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:260
-#REALBPM:129
 #YEAR:1967
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=1169
-#VIDEOID:IC5PL0XImjw
-#VIDEOGAP:0
+#VIDEO:v=IC5PL0XImjw
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar R&B
 #GAP:5750,2307692307695
-#TRACKNAMES:["Marvin Gaye","Tammi Terrell"]
+#EDITION:SingStar R&B
+#ALLKARAOKE_ID:marvin-gaye-tammi-terrell-aint-no-mountain-high-enough
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=1169
+#P1:Marvin Gaye
+#P2:Tammi Terrell
 : 17 2 6 Lis
 : 23 3 4 ten 
 : 30 4 2 ba

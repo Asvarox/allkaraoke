@@ -1,18 +1,17 @@
-#ID:abba-super-trouper
 #ARTIST:ABBA
-#ARTISTORIGIN:SE
 #TITLE:Super Trouper
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:236,2
-#REALBPM:118
 #YEAR:1980
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Super%20Trouper
-#VIDEOID:BshxCIjNEjY
-#VIDEOGAP:0
+#VIDEO:v=BshxCIjNEjY
 #LANGUAGE:English
-#EDITION:SingStar ABBA
 #GAP:2625
+#EDITION:SingStar ABBA
+#ALLKARAOKE_ID:abba-super-trouper
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Super%20Trouper
 : 0 5 67 Su
 : 8 5 67 per
 : 16 5 65  trou

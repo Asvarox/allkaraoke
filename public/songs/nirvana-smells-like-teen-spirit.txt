@@ -1,21 +1,20 @@
-#ID:nirvana-smells-like-teen-spirit
 #ARTIST:Nirvana
-#ARTISTORIGIN:US
 #TITLE:Smells Like Teen Spirit
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:117
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Smells%20Like%20Teen%20Spirit
-#VIDEOID:hTWKbfoikeg
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=hTWKbfoikeg
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:58:43.439Z
-#EDITION:SingStar Lgnds
 #GAP:25479,29411764706
+#EDITION:SingStar Lgnds
+#ALLKARAOKE_ID:nirvana-smells-like-teen-spirit
+#ALLKARAOKE_LASTUPDATE:2023-04-19T19:58:43.439Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Smells%20Like%20Teen%20Spirit
+#ALLKARAOKE_VOLUME:0,7
 : 23 6 60 Load 
 : 30 7 63 up 
 : 41 6 65 on 

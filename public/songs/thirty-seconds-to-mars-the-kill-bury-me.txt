@@ -1,21 +1,20 @@
-#ID:thirty-seconds-to-mars-the-kill-bury-me
 #ARTIST:Thirty Seconds to Mars
-#ARTISTORIGIN:US
 #TITLE:The Kill (Bury Me)
 #CREATOR:DarkNox
-#CREATORURL:https://usdb.animux.de/index.php?link=profil&id=123
 #BPM:362
-#REALBPM:183
 #YEAR:2005
-#SOURCEURL:https://www.youtube.com/watch?v=3c4_jTnsegM
-#VIDEOID:3c4_jTnsegM
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=3c4_jTnsegM
 #GENRE:Alternative Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-12-15T05:36:09.940Z
-#EDITION:[SC]-Songs
 #GAP:7285,5248618784535
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:thirty-seconds-to-mars-the-kill-bury-me
+#ALLKARAOKE_LASTUPDATE:2023-12-15T05:36:09.940Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=profil&id=123
+#ALLKARAOKE_REALBPM:183
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=3c4_jTnsegM
+#ALLKARAOKE_VOLUME:0,8
 : 24 4 19 What 
 : 29 6 18 if 
 : 37 8 14 I 

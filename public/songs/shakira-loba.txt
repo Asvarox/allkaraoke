@@ -1,20 +1,20 @@
-#ID:shakira-loba
 #ARTIST:Shakira
-#ARTISTORIGIN:CO
 #TITLE:Loba
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:488
-#REALBPM:122
 #YEAR:2009
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Loba
-#VIDEOID:C7ssrLSheg4
+#VIDEO:v=C7ssrLSheg4
 #VIDEOGAP:-1
-#VOLUME:0,7
 #GENRE:Pop Internacional
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.586Z
 #GAP:38960,65573770492
+#ALLKARAOKE_ID:shakira-loba
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.586Z
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Loba
+#ALLKARAOKE_VOLUME:0,7
 : 33 12 6 Si
 : 49 6 6 gi
 : 57 12 4 lo

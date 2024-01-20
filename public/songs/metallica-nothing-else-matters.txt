@@ -1,19 +1,18 @@
-#ID:metallica-nothing-else-matters
 #ARTIST:Metallica
-#ARTISTORIGIN:US
 #TITLE:Nothing Else Matters
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:285,4
-#REALBPM:71
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Nothing%20Else%20Matters
-#VIDEOID:tAGnKpE4NCI
-#VIDEOGAP:0
-#VOLUME:0,71
+#VIDEO:v=tAGnKpE4NCI
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:60750
+#ALLKARAOKE_ID:metallica-nothing-else-matters
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:71
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Nothing%20Else%20Matters
+#ALLKARAOKE_VOLUME:0,71
 : 0 3 2 So
 : 8 9 4  close,
 - 22

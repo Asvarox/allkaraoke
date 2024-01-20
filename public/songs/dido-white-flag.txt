@@ -1,20 +1,17 @@
-#ID:dido-white-flag
 #ARTIST:Dido
-#ARTISTORIGIN:GB
 #TITLE:White Flag
-#CREATOR:
-#CREATORURL:
 #BPM:170
-#REALBPM:170
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?busqueda=dido&sid=f2cc9a5f771564826373ad4b16ed189c
-#VIDEOID:j-fWDrZSiZs
-#VIDEOGAP:0
+#VIDEO:v=j-fWDrZSiZs
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:16:48.512Z
-#EDITION:SingStar Party English
 #GAP:10323,411764705883
+#EDITION:SingStar Party English
+#ALLKARAOKE_ID:dido-white-flag
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:16:48.512Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:170
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?busqueda=dido&sid=f2cc9a5f771564826373ad4b16ed189c
 : 11 4 65 I 
 : 15 4 62 know 
 : 23 4 65 you 

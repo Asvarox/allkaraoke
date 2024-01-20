@@ -1,17 +1,17 @@
-#ID:smash-mouth-all-star
 #ARTIST:Smash Mouth
-#ARTISTORIGIN:US
 #TITLE:All Star
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:208
-#REALBPM:103
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star
-#VIDEOID:L_jWHffIx5E
+#VIDEO:v=L_jWHffIx5E
 #VIDEOGAP:36
 #LANGUAGE:English
 #GAP:37300
+#ALLKARAOKE_ID:smash-mouth-all-star
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star
 : 0 6 6 Some
 : 8 3 13 bo
 * 12 3 10 dy

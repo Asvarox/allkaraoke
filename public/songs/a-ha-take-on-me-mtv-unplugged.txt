@@ -1,19 +1,17 @@
-#ID:a-ha-take-on-me-mtv-unplugged
 #ARTIST:a-ha
-#ARTISTORIGIN:NO
 #TITLE:Take On Me (MTV Unplugged)
 #CREATOR:airBN
-#CREATORURL:
 #BPM:260
-#REALBPM:65
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20On%20Me%20(MTV%20Unplugged)
-#VIDEOID:-xKM3mGt2pE
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=-xKM3mGt2pE
 #LANGUAGE:English
-#LASTUPDATE:2023-11-09T21:07:15.438Z
 #GAP:13515,23076923077
+#ALLKARAOKE_ID:a-ha-take-on-me-mtv-unplugged
+#ALLKARAOKE_LASTUPDATE:2023-11-09T21:07:15.438Z
+#ALLKARAOKE_ARTISTORIGIN:NO
+#ALLKARAOKE_REALBPM:65
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20On%20Me%20(MTV%20Unplugged)
+#ALLKARAOKE_VOLUME:1
 : 17 1 -3 Talk
 : 19 1 1 ~
 : 21 5 2 ~

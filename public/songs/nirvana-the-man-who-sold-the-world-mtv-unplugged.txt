@@ -1,21 +1,18 @@
-#ID:nirvana-the-man-who-sold-the-world-mtv-unplugged
 #ARTIST:Nirvana
-#ARTISTORIGIN:US
 #TITLE:The Man Who Sold The World (MTV Unplugged)
 #CREATOR:ceasarea
-#CREATORURL:
 #BPM:227,1
-#REALBPM:115
 #YEAR:1993
-#SOURCEURL:
-#VIDEOID:fregObNcHC8
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=fregObNcHC8
 #GENRE:Acoustic Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-11-16T06:24:40.433Z
-#EDITION:None
 #GAP:14739,247027741083
+#EDITION:None
+#ALLKARAOKE_ID:nirvana-the-man-who-sold-the-world-mtv-unplugged
+#ALLKARAOKE_LASTUPDATE:2023-11-16T06:24:40.433Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_VOLUME:0,6
 : 15 5 8 We 
 : 22 6 6 passed 
 : 31 5 4 u

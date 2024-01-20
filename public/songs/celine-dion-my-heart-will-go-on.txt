@@ -1,20 +1,20 @@
-#ID:celine-dion-my-heart-will-go-on
 #ARTIST:Céline Dion
-#ARTISTORIGIN:CA
 #TITLE:My Heart Will Go On
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:384,59
-#REALBPM:98
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On
-#VIDEOID:A3QAqZQYLIQ
+#VIDEO:v=A3QAqZQYLIQ
 #VIDEOGAP:1
-#VOLUME:0,8
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-27T18:16:56.205Z
 #GAP:19435,933071582724
+#ALLKARAOKE_ID:celine-dion-my-heart-will-go-on
+#ALLKARAOKE_LASTUPDATE:2023-07-27T18:16:56.205Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On
+#ALLKARAOKE_VOLUME:0,8
 : 26 20 16 E
 : 48 6 16 very 
 : 56 14 16 night 

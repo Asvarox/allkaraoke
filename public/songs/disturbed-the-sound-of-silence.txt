@@ -1,19 +1,18 @@
-#ID:disturbed-the-sound-of-silence
 #ARTIST:Disturbed
-#ARTISTORIGIN:US
 #TITLE:The Sound Of Silence
 #CREATOR:subkei
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
 #BPM:213,18
-#REALBPM:85
 #YEAR:2015
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=The%20Sound%20Of%20Silence
-#VIDEOID:u9Dg-g7t2l4
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=u9Dg-g7t2l4
 #LANGUAGE:English
-#LASTUPDATE:2023-05-21T20:55:27.616Z
 #GAP:21404,91697157332
+#ALLKARAOKE_ID:disturbed-the-sound-of-silence
+#ALLKARAOKE_LASTUPDATE:2023-05-21T20:55:27.616Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=The%20Sound%20Of%20Silence
+#ALLKARAOKE_VOLUME:0,5
 : 14 1 -6 Hel
 : 18 4 -6 lo 
 : 26 3 -3 dark

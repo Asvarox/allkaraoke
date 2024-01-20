@@ -1,20 +1,19 @@
-#ID:guns-n-roses-paradise-city
 #ARTIST:Guns N' Roses
-#ARTISTORIGIN:US
 #TITLE:Paradise City
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:202,4
-#REALBPM:99
 #YEAR:1987
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Paradise%20City
-#VIDEOID:Rbm6GXllBiw
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=Rbm6GXllBiw
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:18:27.232Z
 #GAP:20820,561264822136
+#ALLKARAOKE_ID:guns-n-roses-paradise-city
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:18:27.232Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Paradise%20City
+#ALLKARAOKE_VOLUME:0,8
 : 13 2 6 Take 
 : 17 1 6 me 
 : 19 6 6 down 

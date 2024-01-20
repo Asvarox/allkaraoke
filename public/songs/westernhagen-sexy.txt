@@ -1,21 +1,20 @@
-#ID:westernhagen-sexy
 #ARTIST:Westernhagen
-#ARTISTORIGIN:DE
 #TITLE:Sexy
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:239,68
-#REALBPM:120
 #YEAR:1989
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1160
-#VIDEOID:6XhtjcPtjrA
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=6XhtjcPtjrA
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-06-22T18:56:03.996Z
-#EDITION:SingStar ’80s [DE]
 #GAP:33039,08249228459
+#EDITION:SingStar ’80s [DE]
+#ALLKARAOKE_ID:westernhagen-sexy
+#ALLKARAOKE_LASTUPDATE:2023-06-22T18:56:03.996Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=1160
+#ALLKARAOKE_VOLUME:0,8
 : 16 4 5 Se
 : 24 6 5 xy 
 - 30

@@ -1,20 +1,19 @@
-#ID:utada-hikaru-simple-and-clean
 #ARTIST:Utada Hikaru
-#ARTISTORIGIN:JP
 #TITLE:Simple And Clean
 #CREATOR:SUBKEI
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=18501
 #BPM:352
-#REALBPM:88
 #YEAR:2002
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=14590
-#VIDEOID:B1nDzB1P8GM
-#VIDEOGAP:0
-#VOLUME:0,72
+#VIDEO:v=B1nDzB1P8GM
 #GENRE:Game
 #LANGUAGE:English
-#LASTUPDATE:2023-12-22T16:33:54.017Z
 #GAP:26,931818181818187
+#ALLKARAOKE_ID:utada-hikaru-simple-and-clean
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:54.017Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=18501
+#ALLKARAOKE_REALBPM:88
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=14590
+#ALLKARAOKE_VOLUME:0,72
 : 5 8 -5 When 
 : 19 8 2 you 
 : 31 12 0 walk 

@@ -1,20 +1,19 @@
-#ID:system-of-a-down-toxicity
 #ARTIST:System of a Down
-#ARTISTORIGIN:US
 #TITLE:Toxicity
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:395,8
-#REALBPM:112
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity
-#VIDEOID:iywaBOMvYLI
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=iywaBOMvYLI
 #GENRE:Metal Alternativo
 #LANGUAGE:English
-#EDITION:Rock Band Store 2008 Vol. 3
 #GAP:50540
+#EDITION:Rock Band Store 2008 Vol. 3
+#ALLKARAOKE_ID:system-of-a-down-toxicity
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity
+#ALLKARAOKE_VOLUME:0,8
 : 0 6 14 Con
 : 7 6 14 ver
 : 14 5 12 ~

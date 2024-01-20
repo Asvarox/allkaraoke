@@ -1,19 +1,18 @@
-#ID:guns-n-roses-dont-cry
 #ARTIST:Guns N' Roses
-#ARTISTORIGIN:US
 #TITLE:Don't Cry
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:244
-#REALBPM:62
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Don't%20Cry
-#VIDEOID:zRIbf6JqkNc
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=zRIbf6JqkNc
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:14:16.458Z
 #GAP:18016,39344262295
+#ALLKARAOKE_ID:guns-n-roses-dont-cry
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:14:16.458Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:62
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Guns%20N'%20Roses&cancion=Don't%20Cry
+#ALLKARAOKE_VOLUME:1
 : 16 51 9 Uh
 : 68 6 9 ~
 : 75 6 9 ~

@@ -1,20 +1,19 @@
-#ID:justin-bieber-ludacris-baby
 #ARTIST:Justin Bieber & Ludacris
-#ARTISTORIGIN:CA
 #TITLE:Baby
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pt/canciones?creador=vicktoben
 #BPM:260
-#REALBPM:65
 #YEAR:2010
-#SOURCEURL:https://ultrastar-es.org/pt/canciones?artista=Justin%20Bieber%20&%20Ludacris&cancion=Baby
-#VIDEOID:kffacxfA7G4
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=kffacxfA7G4
 #GENRE:R&B
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.285Z
 #GAP:2084,230769230769
+#ALLKARAOKE_ID:justin-bieber-ludacris-baby
+#ALLKARAOKE_LASTUPDATE:2023-10-15T11:26:31.285Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pt/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:65
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pt/canciones?artista=Justin%20Bieber%20&%20Ludacris&cancion=Baby
+#ALLKARAOKE_VOLUME:0,7
 * 17 3 15 Oh 
 : 21 3 17 uh 
 : 25 3 19 oh

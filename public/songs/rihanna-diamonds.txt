@@ -1,18 +1,17 @@
-#ID:rihanna-diamonds
 #ARTIST:Rihanna
-#ARTISTORIGIN:BB
 #TITLE:Diamonds
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:184
-#REALBPM:92
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Diamonds
-#VIDEOID:lWA2pjMjpBs
-#VIDEOGAP:0
+#VIDEO:v=lWA2pjMjpBs
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:39446,739130434784
+#ALLKARAOKE_ID:rihanna-diamonds
+#ALLKARAOKE_ARTISTORIGIN:BB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Diamonds
 : 12 3 -1 Shine 
 : 16 3 6 bright 
 : 20 1 -1 like 
