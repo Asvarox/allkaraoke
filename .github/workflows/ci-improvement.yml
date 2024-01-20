@@ -18,22 +18,13 @@ jobs:
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: yarn test:ci
-      - uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: unit-tests-image-diffs
-          path: |
-            src/**/__diff_output__/*
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: yarn prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check
-      - run: yarn lint
-      - run: yarn unimported
-      - run: yarn build-storybook
+      - run: yarn npm-run-all --continue-on-error prettier-check lint types-check test:ci build-storybook unimported
   ts-check:
     runs-on: ubuntu-latest
     steps:

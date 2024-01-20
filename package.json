@@ -66,6 +66,9 @@
     "build-storybook": "storybook build",
     "video-start": "remotion preview src/videos/index.ts --port 4000",
     "video-render": "remotion render src/videos/index.ts UpdateVideo out/video.mp4",
+    "unimported": "unimported",
+    "types-check": "tsc --noEmit",
+    "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check",
     "postinstall": "husky install"
   },
   "browserslist": {
@@ -131,6 +134,7 @@
     "lodash": "^4.17.21",
     "musicbrainz-api": "^0.11.0",
     "node-fetch": "^3.3.2",
+    "npm-run-all": "^4.1.5",
     "peer": "^1.0.2",
     "playwright": "^1.40.1",
     "playwright-core": "^1.40.1",
