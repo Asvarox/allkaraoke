@@ -1,21 +1,20 @@
-#ID:graham-bonney-o-du-frohliche
 #ARTIST:Graham Bonney
-#ARTISTORIGIN:GB
 #TITLE:O Du Fröhliche
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:240
-#REALBPM:93
 #YEAR:2007
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=889
-#VIDEOID:NR-_QvA8Bxg
-#VIDEOGAP:0
-#VOLUME:0,69
+#VIDEO:v=NR-_QvA8Bxg
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-11-30T16:28:14.425Z
-#EDITION:Christmas
 #GAP:14500
+#EDITION:Christmas
+#ALLKARAOKE_ID:graham-bonney-o-du-frohliche
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.425Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:93
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=889
+#ALLKARAOKE_VOLUME:0,69
 : 16 19 9 O 
 : 36 19 11 du 
 : 56 15 9 fröh

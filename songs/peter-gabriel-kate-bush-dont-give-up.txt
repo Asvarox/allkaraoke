@@ -1,22 +1,20 @@
-#ID:peter-gabriel-kate-bush-dont-give-up
 #ARTIST:Peter Gabriel & Kate Bush
-#ARTISTORIGIN:GB
 #TITLE:Don’t Give Up
 #CREATOR:Caruso
-#CREATORURL:
 #BPM:322,72
-#REALBPM:86
 #YEAR:1986
-#SOURCEURL:
-#VIDEOID:VjEq-r2agqc
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=VjEq-r2agqc
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-06T19:03:13.407Z
-#EDITION:[DUET]-Songs
 #GAP:40577,441745166085
-#TRACKNAMES:["Peter Gabriel","Kate Bush"]
+#EDITION:[DUET]-Songs
+#ALLKARAOKE_ID:peter-gabriel-kate-bush-dont-give-up
+#ALLKARAOKE_LASTUPDATE:2023-05-06T19:03:13.407Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:86
+#ALLKARAOKE_VOLUME:1
+#P1:Peter Gabriel
+#P2:Kate Bush
 : 22 2 7 In 
 : 26 4 12 this 
 : 34 6 12 proud 

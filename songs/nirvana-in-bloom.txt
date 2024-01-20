@@ -1,21 +1,21 @@
-#ID:nirvana-in-bloom
 #ARTIST:Nirvana
-#ARTISTORIGIN:US
 #TITLE:In Bloom
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:399,1
-#REALBPM:79
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=In%20Bloom
-#VIDEOID:PbgKEjNBHqM
+#VIDEO:v=PbgKEjNBHqM
 #VIDEOGAP:20
-#VOLUME:0,7
 #GENRE:Grunge
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T20:05:03.704Z
-#EDITION:Rock Band
 #GAP:46385,216737659735
+#EDITION:Rock Band
+#ALLKARAOKE_ID:nirvana-in-bloom
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:05:03.704Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:79
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=In%20Bloom
+#ALLKARAOKE_VOLUME:0,7
 : 27 25 17 Sell 
 : 54 3 10 the 
 : 61 30 13 kids 

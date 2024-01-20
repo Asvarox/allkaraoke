@@ -1,18 +1,17 @@
-#ID:maroon-5-she-will-be-loved
 #ARTIST:Maroon 5
-#ARTISTORIGIN:US
 #TITLE:She Will Be Loved
 #CREATOR:upalula
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
 #BPM:408
-#REALBPM:102
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved
-#VIDEOID:nIjVuRTm-dc
-#VIDEOGAP:0
+#VIDEO:v=nIjVuRTm-dc
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:20907,35294117647
+#ALLKARAOKE_ID:maroon-5-she-will-be-loved
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=upalula
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved
 : 27 4 15 Beau
 : 33 4 15 ty 
 : 41 6 15 queen 

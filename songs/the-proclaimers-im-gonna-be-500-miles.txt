@@ -1,18 +1,17 @@
-#ID:the-proclaimers-im-gonna-be-500-miles
 #ARTIST:The Proclaimers
-#ARTISTORIGIN:GB
 #TITLE:I'm gonna be (500 miles)
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:270
-#REALBPM:129
 #YEAR:1988
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Proclaimers&cancion=I%27m%20gonna%20be%20(500%20miles)
-#VIDEOID:tbNlMtqrYS0
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=tbNlMtqrYS0
 #LANGUAGE:English
 #GAP:7016
+#ALLKARAOKE_ID:the-proclaimers-im-gonna-be-500-miles
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Proclaimers&cancion=I%27m%20gonna%20be%20(500%20miles)
+#ALLKARAOKE_VOLUME:0,85
 : 0 3 9 When
 : 4 4 10  I
 : 9 3 12  wake

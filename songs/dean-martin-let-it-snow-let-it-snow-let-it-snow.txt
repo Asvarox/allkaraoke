@@ -1,23 +1,22 @@
-#ID:dean-martin-let-it-snow-let-it-snow-let-it-snow
 #ARTIST:Dean Martin
-#ARTISTORIGIN:US
 #TITLE:Let It Snow! Let It Snow! Let It Snow!
 #CREATOR:RetroGirl
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=157487
 #BPM:229,46
-#REALBPM:115
 #YEAR:1959
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23226
 #PREVIEWSTART:10
-#PREVIEWEND:40
-#VIDEOID:Rnil5LyK_B0
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=Rnil5LyK_B0
 #GENRE:Folk
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:14.142Z
-#EDITION:Christmas
 #GAP:6719,436938900026
+#EDITION:Christmas
+#ALLKARAOKE_ID:dean-martin-let-it-snow-let-it-snow-let-it-snow
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.142Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=157487
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23226
+#ALLKARAOKE_PREVIEWEND:40
+#ALLKARAOKE_VOLUME:0,9
 : 15 5 8 Oh, 
 : 21 2 8 the 
 : 24 3 8 wea

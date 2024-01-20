@@ -1,20 +1,19 @@
-#ID:camilo-sesto-vivir-asi-es-morir-de-amor
 #ARTIST:Camilo Sesto
-#ARTISTORIGIN:ES
 #TITLE:Vivir así es morir de amor
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:102
 #YEAR:1978
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Camilo%20Sesto&cancion=Vivir%20as%C3%AD%20es%20morir%20de%20amor
-#VIDEOID:0xyfnlWs9QA
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=0xyfnlWs9QA
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-07-23T21:00:58.347Z
-#EDITION:SingStar MegaHits
 #GAP:10579,29411764706
+#EDITION:SingStar MegaHits
+#ALLKARAOKE_ID:camilo-sesto-vivir-asi-es-morir-de-amor
+#ALLKARAOKE_LASTUPDATE:2023-07-23T21:00:58.347Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Camilo%20Sesto&cancion=Vivir%20as%C3%AD%20es%20morir%20de%20amor
+#ALLKARAOKE_VOLUME:0,75
 : 23 4 12 Siem
 : 30 3 12 pre 
 : 34 4 12 me 

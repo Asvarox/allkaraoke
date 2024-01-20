@@ -1,20 +1,20 @@
-#ID:olaf-henning-cowboy-und-indianer
 #ARTIST:Olaf Henning
-#ARTISTORIGIN:DE
 #TITLE:Cowboy und Indianer
 #CREATOR:pauldiddy
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149
 #BPM:271,8
-#REALBPM:136
 #YEAR:2000
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=4547#
-#VIDEOID:-dIRsi3j0uU
+#VIDEO:v=-dIRsi3j0uU
 #VIDEOGAP:13
-#VOLUME:0,78
 #GENRE:Schlager
 #LANGUAGE:German
-#LASTUPDATE:2023-12-22T16:33:53.415Z
 #GAP:27727,352941176472
+#ALLKARAOKE_ID:olaf-henning-cowboy-und-indianer
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:53.415Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2149
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=4547#
+#ALLKARAOKE_VOLUME:0,78
 : 18 4 8 Komm 
 : 25 5 8 hol 
 : 33 4 7 das 

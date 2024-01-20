@@ -1,23 +1,20 @@
-#ID:andy-williams-its-the-most-wonderful-time-of-the-year
 #ARTIST:Andy Williams
-#ARTISTORIGIN:US
 #TITLE:It’s The Most Wonderful Time Of The Year
 #CREATOR:lozboorman
-#CREATORURL:
 #BPM:219,62
-#REALBPM:101
 #YEAR:1963
-#SOURCEURL:
 #PREVIEWSTART:8
-#PREVIEWEND:49
-#VIDEOID:cbZTfrhcamA
-#VIDEOGAP:0
-#VOLUME:0,82
+#VIDEO:v=cbZTfrhcamA
 #GENRE:Christmas
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:13.417Z
-#EDITION:Christmas
 #GAP:5945,503141790365
+#EDITION:Christmas
+#ALLKARAOKE_ID:andy-williams-its-the-most-wonderful-time-of-the-year
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:13.417Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:101
+#ALLKARAOKE_PREVIEWEND:49
+#ALLKARAOKE_VOLUME:0,82
 : 15 2 6 It’s 
 : 19 2 7 the 
 : 24 4 9 most 

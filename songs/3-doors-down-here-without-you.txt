@@ -1,17 +1,16 @@
-#ID:3-doors-down-here-without-you
 #ARTIST:3 Doors Down
-#ARTISTORIGIN:US
 #TITLE:Here without you
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:288,04
-#REALBPM:72
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you
-#VIDEOID:kPBzTxZQG5Q
-#VIDEOGAP:0
+#VIDEO:v=kPBzTxZQG5Q
 #LANGUAGE:English
 #GAP:5662,554089709763
+#ALLKARAOKE_ID:3-doors-down-here-without-you
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:72
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you
 : 19 1 0 A
 : 23 2 10  hun
 : 26 2 12 ~

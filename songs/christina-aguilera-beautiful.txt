@@ -1,18 +1,17 @@
-#ID:christina-aguilera-beautiful
 #ARTIST:Christina Aguilera
-#ARTISTORIGIN:US
 #TITLE:Beautiful
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:304,6
-#REALBPM:76
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful
-#VIDEOID:eAfyFTzZDMM
-#VIDEOGAP:0
+#VIDEO:v=eAfyFTzZDMM
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:1528
+#ALLKARAOKE_ID:christina-aguilera-beautiful
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Christina%20Aguilera&cancion=Beautiful
 F 0 3 6 Don't
 F 4 1 6  look
 F 6 3 6  at

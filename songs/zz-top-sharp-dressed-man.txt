@@ -1,17 +1,16 @@
-#ID:zz-top-sharp-dressed-man
 #ARTIST:ZZ Top
-#ARTISTORIGIN:US
 #TITLE:Sharp Dressed Man
 #CREATOR:NoeliaMicaela
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
 #BPM:496
-#REALBPM:123
 #YEAR:1983
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ZZ%20Top&cancion=Sharp%20Dressed%20Man
-#VIDEOID:Pn2-b_opVTo
-#VIDEOGAP:0
+#VIDEO:v=Pn2-b_opVTo
 #LANGUAGE:English
 #GAP:23022,016129032258
+#ALLKARAOKE_ID:zz-top-sharp-dressed-man
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=noeliamicaela
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ZZ%20Top&cancion=Sharp%20Dressed%20Man
 : 33 14 3 Clean 
 : 49 6 0 shirt
 : 57 16 3 ~,

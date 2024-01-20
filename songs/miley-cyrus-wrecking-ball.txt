@@ -1,18 +1,17 @@
-#ID:miley-cyrus-wrecking-ball
 #ARTIST:Miley Cyrus
-#ARTISTORIGIN:US
 #TITLE:Wrecking Ball
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:239,96
-#REALBPM:117
 #YEAR:2013
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Wrecking%20Ball
-#VIDEOID:My2FRPA3Gf8
-#VIDEOGAP:0
+#VIDEO:v=My2FRPA3Gf8
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:8775
+#ALLKARAOKE_ID:miley-cyrus-wrecking-ball
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Wrecking%20Ball
 : 0 1 7 We
 : 2 2 9 ~
 : 8 5 2  claiwed,

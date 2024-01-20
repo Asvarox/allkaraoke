@@ -1,17 +1,16 @@
-#ID:tina-turner-goldeneye
 #ARTIST:Tina Turner
-#ARTISTORIGIN:US
 #TITLE:GoldenEye
 #CREATOR:jockel1974
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #BPM:204,25
-#REALBPM:102
 #YEAR:1995
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2599
-#VIDEOID:4hGQ97tCTOs
-#VIDEOGAP:0
+#VIDEO:v=4hGQ97tCTOs
 #LANGUAGE:English
 #GAP:23461,8482252142
+#ALLKARAOKE_ID:tina-turner-goldeneye
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2599
 : 14 3 0 See 
 : 18 3 -2 re
 : 22 3 -4 flec

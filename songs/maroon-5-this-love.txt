@@ -1,19 +1,18 @@
-#ID:maroon-5-this-love
 #ARTIST:Maroon 5
-#ARTISTORIGIN:US
 #TITLE:This Love
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:190,2
-#REALBPM:96
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=This%20Love
-#VIDEOID:XPpTgCho5ZA
-#VIDEOGAP:0
+#VIDEO:v=XPpTgCho5ZA
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Party English
 #GAP:21533,6
+#EDITION:SingStar Party English
+#ALLKARAOKE_ID:maroon-5-this-love
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=This%20Love
 : 0 2 59 I
 : 3 4 59  was
 : 7 4 59  so

@@ -1,19 +1,18 @@
-#ID:alice-cooper-poison
 #ARTIST:Alice Cooper
-#ARTISTORIGIN:US
 #TITLE:Poison
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:240
-#REALBPM:117
 #YEAR:1989
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alice%20Cooper&cancion=Poison
-#VIDEOID:Qq4j1LtCdww
-#VIDEOGAP:0
+#VIDEO:v=Qq4j1LtCdww
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar '80s
 #GAP:37687
+#EDITION:SingStar '80s
+#ALLKARAOKE_ID:alice-cooper-poison
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alice%20Cooper&cancion=Poison
 : 16 4 53 Your
 : 24 9 53  cruel
 - 33

@@ -1,19 +1,18 @@
-#ID:nina-chuba-wildberry-lillet
 #ARTIST:Nina Chuba
-#ARTISTORIGIN:DE
 #TITLE:Wildberry Lillet
 #CREATOR:Mamba99
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=156400
 #BPM:280
-#REALBPM:140
 #YEAR:2022
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=26094
-#VIDEOID:95xDIF5zYCo
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=95xDIF5zYCo
 #LANGUAGE:German
-#LASTUPDATE:2023-12-22T16:33:53.414Z
 #GAP:762,1428571428572
+#ALLKARAOKE_ID:nina-chuba-wildberry-lillet
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:53.414Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=156400
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=26094
+#ALLKARAOKE_VOLUME:0,65
 : 19 2 1 Ich 
 : 23 2 1 will 
 : 27 1 4 Im

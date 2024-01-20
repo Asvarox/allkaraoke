@@ -1,17 +1,16 @@
-#ID:justin-timberlake-rock-your-body
 #ARTIST:Justin Timberlake
-#ARTISTORIGIN:US
 #TITLE:Rock Your Body
 #CREATOR:Tita
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=98
 #BPM:404,4
-#REALBPM:99
 #YEAR:2002
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=1938
-#VIDEOID:TSVHoHyErBQ
-#VIDEOGAP:0
+#VIDEO:v=TSVHoHyErBQ
 #LANGUAGE:English
 #GAP:8288,516320474777
+#ALLKARAOKE_ID:justin-timberlake-rock-your-body
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=98
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=1938
 : 27 6 4 Don't 
 : 35 5 11 be 
 : 43 5 9 so 

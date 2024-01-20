@@ -1,20 +1,20 @@
-#ID:pokemon-opening-pl
 #ARTIST:Pokémon
 #TITLE:Opening (PL)
 #CREATOR:oldkillerjones
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
 #BPM:145,05
-#REALBPM:145
 #YEAR:1997
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15471
 #PREVIEWSTART:15
-#PREVIEWEND:45
-#VIDEOID:ferXnJM0GI8
+#VIDEO:v=ferXnJM0GI8
 #VIDEOGAP:-1
 #GENRE:Anime
 #LANGUAGE:Polish
-#EDITION:UltraStar
 #GAP:4570
+#EDITION:UltraStar
+#ALLKARAOKE_ID:pokemon-opening-pl
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=76763
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=15471
+#ALLKARAOKE_PREVIEWEND:45
 : 0 2 2 Gdy 
 : 2 1 2 wyz
 : 4 2 2 wa

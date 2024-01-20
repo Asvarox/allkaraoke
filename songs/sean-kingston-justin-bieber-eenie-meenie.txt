@@ -1,19 +1,16 @@
-#ID:sean-kingston-justin-bieber-eenie-meenie
 #ARTIST:Sean Kingston / Justin Bieber
 #TITLE:Eenie Meenie
 #CREATOR:britneyblisswilliams
-#CREATORURL:
 #BPM:479,5
-#REALBPM:121
 #YEAR:2010
-#SOURCEURL:
-#VIDEOID:prmmCg5bKxA
-#VIDEOGAP:0
-#VOLUME:0,64
+#VIDEO:v=prmmCg5bKxA
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2024-01-07T06:25:27.039Z
 #GAP:7138,95724713243
+#ALLKARAOKE_ID:sean-kingston-justin-bieber-eenie-meenie
+#ALLKARAOKE_LASTUPDATE:2024-01-07T06:25:27.039Z
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_VOLUME:0,64
 : 32 2 26 She’s 
 : 36 4 25 in
 : 44 4 25 de

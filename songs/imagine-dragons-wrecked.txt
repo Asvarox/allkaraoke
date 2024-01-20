@@ -1,18 +1,17 @@
-#ID:imagine-dragons-wrecked
 #ARTIST:Imagine Dragons
-#ARTISTORIGIN:US
 #TITLE:Wrecked
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:348,88
-#REALBPM:94
 #YEAR:2021
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Wrecked
-#VIDEOID:Y2NkuFIlLEo
-#VIDEOGAP:0
+#VIDEO:v=Y2NkuFIlLEo
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:9318,121302453566
+#ALLKARAOKE_ID:imagine-dragons-wrecked
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Wrecked
 : 23 1 -7 Days
 : 25 1 -5 ~ 
 : 31 1 -7 pass

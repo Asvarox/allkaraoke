@@ -1,19 +1,19 @@
-#ID:no-doubt-dont-speak
 #ARTIST:No Doubt
-#ARTISTORIGIN:US
 #TITLE:Don't speak
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:397,02
-#REALBPM:76
 #YEAR:1995
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak
-#VIDEOID:TR3Vdo5etCQ
+#VIDEO:v=TR3Vdo5etCQ
 #VIDEOGAP:29
 #GENRE:Pop Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2008 Vol. 4
 #GAP:36350
+#EDITION:Rock Band Store 2008 Vol. 4
+#ALLKARAOKE_ID:no-doubt-dont-speak
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak
 : 0 3 17 You
 : 4 3 19  and
 : 10 21 17  me

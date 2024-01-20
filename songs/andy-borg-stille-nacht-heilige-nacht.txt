@@ -1,21 +1,20 @@
-#ID:andy-borg-stille-nacht-heilige-nacht
 #ARTIST:Andy Borg
-#ARTISTORIGIN:AT
 #TITLE:Stille Nacht, heilige Nacht
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:224
-#REALBPM:97
 #YEAR:1984
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=93
-#VIDEOID:M069q3E2caI
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=M069q3E2caI
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-11-30T16:28:13.260Z
-#EDITION:Christmas
 #GAP:22495,535714285714
+#EDITION:Christmas
+#ALLKARAOKE_ID:andy-borg-stille-nacht-heilige-nacht
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:13.260Z
+#ALLKARAOKE_ARTISTORIGIN:AT
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=93
+#ALLKARAOKE_VOLUME:1
 : 15 15 7 Sti
 : 31 5 9 ~l
 : 37 12 7 le 

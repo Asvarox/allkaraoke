@@ -1,18 +1,15 @@
-#ID:franek-kimono-king-bruce-lee-karate-mistrz
 #ARTIST:Franek Kimono
-#ARTISTORIGIN:PL
 #TITLE:King Bruce Lee Karate Mistrz
 #CREATOR:mgr_rybak
-#CREATORURL:
 #BPM:120,49
-#REALBPM:126
 #YEAR:1984
-#SOURCEURL:
-#VIDEOID:cSDYYYe3wUs
-#VIDEOGAP:0
+#VIDEO:v=cSDYYYe3wUs
 #GENRE:Disco
 #LANGUAGE:Polish
 #GAP:27087,69462741052
+#ALLKARAOKE_ID:franek-kimono-king-bruce-lee-karate-mistrz
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:126
 - -7 1
 - 1
 : 8 2 -9 Nie 

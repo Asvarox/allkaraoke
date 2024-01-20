@@ -1,21 +1,21 @@
-#ID:usa-for-africa-we-are-the-world
 #ARTIST:USA for Africa
-#ARTISTORIGIN:US
 #TITLE:We Are the World
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:290,2
-#REALBPM:73
 #YEAR:1985
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=USA%20for%20Africa&cancion=We%20Are%20the%20World
 #PREVIEWSTART:183
-#PREVIEWEND:212
-#VIDEOID:D9ZKyYFyiFA
+#VIDEO:v=D9ZKyYFyiFA
 #VIDEOGAP:-1
-#VOLUME:0,67
 #LANGUAGE:English
-#LASTUPDATE:2023-06-28T18:02:16.398Z
 #GAP:23826,91867677464
+#ALLKARAOKE_ID:usa-for-africa-we-are-the-world
+#ALLKARAOKE_LASTUPDATE:2023-06-28T18:02:16.398Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:73
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=USA%20for%20Africa&cancion=We%20Are%20the%20World
+#ALLKARAOKE_PREVIEWEND:212
+#ALLKARAOKE_VOLUME:0,67
 : 19 3 6 There 
 : 23 3 8 comes 
 : 27 3 6 a 

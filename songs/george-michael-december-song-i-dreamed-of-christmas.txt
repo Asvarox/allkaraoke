@@ -1,21 +1,21 @@
-#ID:george-michael-december-song-i-dreamed-of-christmas
 #ARTIST:George Michael
-#ARTISTORIGIN:GB
 #TITLE:December song (I dreamed of Christmas)
 #CREATOR:Volodia
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #BPM:295,76
-#REALBPM:74
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=December%20song%20(I%20dreamed%20of%20Christmas)
-#VIDEOID:l-xzyD00_fI
+#VIDEO:v=l-xzyD00_fI
 #VIDEOGAP:14
-#VOLUME:0,83
 #GENRE:Chistmas song
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:14.424Z
-#EDITION:Christmas
 #GAP:14681,664051934
+#EDITION:Christmas
+#ALLKARAOKE_ID:george-michael-december-song-i-dreamed-of-christmas
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.424Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
+#ALLKARAOKE_REALBPM:74
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=December%20song%20(I%20dreamed%20of%20Christmas)
+#ALLKARAOKE_VOLUME:0,83
 F 20 7 -4 Mer
 F 29 3 -2 ry 
 F 38 6 0 Christ

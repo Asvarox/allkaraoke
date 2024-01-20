@@ -1,20 +1,19 @@
-#ID:franz-ferdinand-take-me-out
 #ARTIST:Franz Ferdinand
-#ARTISTORIGIN:GB
 #TITLE:Take Me Out
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:209,2
-#REALBPM:104
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Franz%20Ferdinand&cancion=Take%20Me%20Out
-#VIDEOID:GhCXAiNz9Jo
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=GhCXAiNz9Jo
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Party English
 #GAP:4653,175908221798
+#EDITION:SingStar Party English
+#ALLKARAOKE_ID:franz-ferdinand-take-me-out
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Franz%20Ferdinand&cancion=Take%20Me%20Out
+#ALLKARAOKE_VOLUME:0,85
 : 14 4 71 So
 : 20 4 74  if
 : 26 3 76  you're

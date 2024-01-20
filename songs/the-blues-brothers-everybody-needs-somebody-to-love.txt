@@ -1,19 +1,15 @@
-#ID:the-blues-brothers-everybody-needs-somebody-to-love
 #ARTIST:The Blues Brothers
-#ARTISTORIGIN:US
 #TITLE:Everybody needs somebody to love
-#CREATOR:
-#CREATORURL:
 #BPM:387,92
-#REALBPM:194
 #YEAR:1980
-#SOURCEURL:
-#VIDEOID:EHV0zs0kVGg
-#VIDEOGAP:0
+#VIDEO:v=EHV0zs0kVGg
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-02-25T00:19:03.521Z
 #GAP:17,322334501959176
+#ALLKARAOKE_ID:the-blues-brothers-everybody-needs-somebody-to-love
+#ALLKARAOKE_LASTUPDATE:2023-02-25T00:19:03.521Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:194
 F 10 2 16 One 
 F 26 4 16 Two
 - 30

@@ -1,19 +1,18 @@
-#ID:whitney-houston-i-wanna-dance-with-somebody
 #ARTIST:Whitney Houston
-#ARTISTORIGIN:US
 #TITLE:I Wanna Dance With Somebody
 #CREATOR:Lönne
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9523
 #BPM:238
-#REALBPM:117
 #YEAR:1987
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5780
-#VIDEOID:eH3giaIzONA
-#VIDEOGAP:0
+#VIDEO:v=eH3giaIzONA
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Anthems
 #GAP:29452,59663865546
+#EDITION:SingStar Anthems
+#ALLKARAOKE_ID:whitney-houston-i-wanna-dance-with-somebody
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9523
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=5780
 : 16 8 66 Ah
 - 24 65
 - 65

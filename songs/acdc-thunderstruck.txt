@@ -1,21 +1,20 @@
-#ID:acdc-thunderstruck
 #ARTIST:AC/DC
-#ARTISTORIGIN:AU
 #TITLE:Thunderstruck
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:395,05
-#REALBPM:132
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Thunderstruck%20(Live)
-#VIDEOID:Af0P6XEkI7Y
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=Af0P6XEkI7Y
 #GENRE:Hard Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-04T18:35:33.482Z
-#EDITION:AC/DC Live Rock Band Track Pack
 #GAP:2312,7831920010126
+#EDITION:AC/DC Live Rock Band Track Pack
+#ALLKARAOKE_ID:acdc-thunderstruck
+#ALLKARAOKE_LASTUPDATE:2023-05-04T18:35:33.482Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Thunderstruck%20(Live)
+#ALLKARAOKE_VOLUME:0,7
 : 26 4 11 Ha 
 : 32 2 14 ha 
 : 36 3 11 oh 

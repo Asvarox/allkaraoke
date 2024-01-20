@@ -1,18 +1,17 @@
-#ID:petula-clark-downtown
 #ARTIST:Petula Clark
-#ARTISTORIGIN:GB
 #TITLE:Downtown
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:231,2
-#REALBPM:59
 #YEAR:1964
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Petula%20Clark&cancion=Downtown
-#VIDEOID:Wv5nd-3BRr4
-#VIDEOGAP:0
+#VIDEO:v=Wv5nd-3BRr4
 #LANGUAGE:English
-#EDITION:SingStar English
 #GAP:7840,050847457627
+#EDITION:SingStar English
+#ALLKARAOKE_ID:petula-clark-downtown
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:59
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Petula%20Clark&cancion=Downtown
 - 0 1
 - 1
 : 16 4 59 When 

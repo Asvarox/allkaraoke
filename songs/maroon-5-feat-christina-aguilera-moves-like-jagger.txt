@@ -1,18 +1,18 @@
-#ID:maroon-5-feat-christina-aguilera-moves-like-jagger
 #ARTIST:Maroon 5 feat. Christina Aguilera
-#ARTISTORIGIN:US
 #TITLE:Moves Like Jagger
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:255,68
-#REALBPM:128
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205%20feat.%20Christina%20Aguilera&cancion=Moves%20Like%20Jagger
-#VIDEOID:iEPTlhBmwRg
+#VIDEO:v=iEPTlhBmwRg
 #VIDEOGAP:46
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:74686
+#ALLKARAOKE_ID:maroon-5-feat-christina-aguilera-moves-like-jagger
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205%20feat.%20Christina%20Aguilera&cancion=Moves%20Like%20Jagger
 : 0 2 11 Just
 : 4 2 11  shoot
 : 8 3 13  for

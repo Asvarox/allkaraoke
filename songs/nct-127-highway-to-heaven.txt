@@ -1,20 +1,19 @@
-#ID:nct-127-highway-to-heaven
 #ARTIST:NCT 127
-#ARTISTORIGIN:KR
 #TITLE:Highway To Heaven
 #CREATOR:Amandine-z-z
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=154539
 #BPM:300
-#REALBPM:113
 #YEAR:2019
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23733
-#VIDEOID:iFoqGyWhMws
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=iFoqGyWhMws
 #GENRE:K-Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-11-23T06:46:39.543Z
 #GAP:11300
+#ALLKARAOKE_ID:nct-127-highway-to-heaven
+#ALLKARAOKE_LASTUPDATE:2023-11-23T06:46:39.543Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=154539
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=23733
+#ALLKARAOKE_VOLUME:0,75
 : 20 4 10 My 
 : 30 4 3 bo
 : 35 3 1 ~

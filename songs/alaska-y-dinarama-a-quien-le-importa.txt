@@ -1,21 +1,20 @@
-#ID:alaska-y-dinarama-a-quien-le-importa
 #ARTIST:Alaska y Dinarama
-#ARTISTORIGIN:ES
 #TITLE:A quién le importa
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:261,5
-#REALBPM:130
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alaska%20y%20Dinarama&cancion=A%20qui%C3%A9n%20le%20importa
-#VIDEOID:2uQhdDtdXg0
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=2uQhdDtdXg0
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.549Z
-#EDITION:SingStar Esp.
 #GAP:16775,85659655832
+#EDITION:SingStar Esp.
+#ALLKARAOKE_ID:alaska-y-dinarama-a-quien-le-importa
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.549Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Alaska%20y%20Dinarama&cancion=A%20qui%C3%A9n%20le%20importa
+#ALLKARAOKE_VOLUME:1
 : 17 3 59 La 
 : 21 3 59 gen
 : 25 3 60 te 

@@ -1,18 +1,17 @@
-#ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-rota
 #ARTIST:Reprezentacyjny Zespół Artystyczny Wojska Polskiego
-#ARTISTORIGIN:PL
 #TITLE:Rota
 #CREATOR:Beneblade
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
 #BPM:268,82
-#REALBPM:51
 #YEAR:1989
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Rota
-#VIDEOID:o_VL6ZYv2bE
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=o_VL6ZYv2bE
 #LANGUAGE:Polish
 #GAP:14935,610445651366
+#ALLKARAOKE_ID:reprezentacyjny-zespol-artystyczny-wojska-polskiego-rota
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=beneblade
+#ALLKARAOKE_REALBPM:51
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Reprezentacyjny%20Zesp%C3%B3%C5%82%20Artystyczny%20Wojska%20Polskiego&cancion=Rota
+#ALLKARAOKE_VOLUME:0,8
 : 18 11 -12 Nie 
 * 32 6 -7 rzu
 * 39 4 -5 cim 

@@ -1,19 +1,16 @@
-#ID:majka-jezowska-a-ja-wole-moja-mame
 #ARTIST:Majka Jeżowska
-#ARTISTORIGIN:PL
 #TITLE:A ja wolę moją mamę
 #CREATOR:Corvus5
-#CREATORURL:
 #BPM:212,96
-#REALBPM:112
 #YEAR:1985
-#SOURCEURL:
-#VIDEOID:X6ZpumEE3xs
-#VIDEOGAP:0
+#VIDEO:v=X6ZpumEE3xs
 #GENRE:Pop
 #LANGUAGE:Polish
-#EDITION:Singstar 80s Polish
 #GAP:19553,108386288375
+#EDITION:Singstar 80s Polish
+#ALLKARAOKE_ID:majka-jezowska-a-ja-wole-moja-mame
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:112
 - 0 1
 - 1
 : 15 3 17 Pew

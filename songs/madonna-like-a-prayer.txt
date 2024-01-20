@@ -1,18 +1,17 @@
-#ID:madonna-like-a-prayer
 #ARTIST:Madonna
-#ARTISTORIGIN:US
 #TITLE:Like A Prayer
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:223,43
-#REALBPM:112
 #YEAR:1989
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Like%20A%20Prayer
-#VIDEOID:79fzeNUqQbQ
-#VIDEOGAP:0
+#VIDEO:v=79fzeNUqQbQ
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:13324,278562488826
+#ALLKARAOKE_ID:madonna-like-a-prayer
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Like%20A%20Prayer
 : 15 4 5 Life
 : 23 6 5  is
 : 30 7 5  a

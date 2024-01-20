@@ -1,20 +1,19 @@
-#ID:red-hot-chili-peppers-otherside
 #ARTIST:Red Hot Chili Peppers
-#ARTISTORIGIN:US
 #TITLE:Otherside
 #CREATOR:Spys4Darwin
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
 #BPM:258
-#REALBPM:123
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Otherside
-#VIDEOID:rn_YodiJO6k
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=rn_YodiJO6k
 #GENRE:Alternative
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:02:18.532Z
 #GAP:8491,627906976744
+#ALLKARAOKE_ID:red-hot-chili-peppers-otherside
+#ALLKARAOKE_LASTUPDATE:2023-04-19T19:02:18.532Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=spys4darwin
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Otherside
+#ALLKARAOKE_VOLUME:0,7
 : 17 3 16 How 
 : 22 9 16 long, 
 : 34 6 14 how 

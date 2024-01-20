@@ -1,18 +1,17 @@
-#ID:chuck-berry-you-never-can-tell
 #ARTIST:Chuck Berry
-#ARTISTORIGIN:US
 #TITLE:You never can tell
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:314,5
-#REALBPM:157
 #YEAR:1964
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Chuck%20Berry&cancion=You%20never%20can%20tell
-#VIDEOID:WSLMN6g_Od4
-#VIDEOGAP:0
+#VIDEO:v=WSLMN6g_Od4
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:-132,3370429252783
+#ALLKARAOKE_ID:chuck-berry-you-never-can-tell
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:157
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Chuck%20Berry&cancion=You%20never%20can%20tell
 - -20 1
 - 1
 F 12 2 7 La

@@ -1,19 +1,19 @@
-#ID:the-killers-mr-brightside
 #ARTIST:The Killers
-#ARTISTORIGIN:US
 #TITLE:Mr. Brightside
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:396,73
-#REALBPM:148
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside
-#VIDEOID:gGdGFtwCNBE
+#VIDEO:v=gGdGFtwCNBE
 #VIDEOGAP:-1
 #GENRE:Alternativa
 #LANGUAGE:English
-#EDITION:Rock Band Store 2008 Vol. 4
 #GAP:9669,963678068209
+#EDITION:Rock Band Store 2008 Vol. 4
+#ALLKARAOKE_ID:the-killers-mr-brightside
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside
 : 26 4 13 Com
 : 31 4 13 ing 
 : 36 4 13 out 

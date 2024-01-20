@@ -1,20 +1,19 @@
-#ID:hoobastank-the-reason
 #ARTIST:Hoobastank
-#ARTISTORIGIN:US
 #TITLE:The Reason
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:332
-#REALBPM:83
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason
-#VIDEOID:fV4DiAyExN0
-#VIDEOGAP:0
-#VOLUME:0,81
+#VIDEO:v=fV4DiAyExN0
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:S'Star Popworld
 #GAP:29978
+#EDITION:S'Star Popworld
+#ALLKARAOKE_ID:hoobastank-the-reason
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason
+#ALLKARAOKE_VOLUME:0,81
 : 0 7 52 I'm
 : 8 7 52  not
 : 16 10 54  a

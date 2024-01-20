@@ -1,20 +1,20 @@
-#ID:disneys-the-lion-king-hakuna-matata
 #ARTIST:Disney’s The Lion King
 #TITLE:Hakuna Matata
 #CREATOR:matthu
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=116579
 #BPM:383,2
-#REALBPM:85
 #YEAR:1994
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18284
-#VIDEOID:BAoCYwefq1A
-#VIDEOGAP:0
+#VIDEO:v=BAoCYwefq1A
 #GENRE:TV
 #LANGUAGE:English
-#LASTUPDATE:2023-01-04T18:10:55.358Z
-#EDITION:[DUET]-Songs
 #GAP:-65,44885177453034
-#TRACKNAMES:["Timon","Pumba & Simba"]
+#EDITION:[DUET]-Songs
+#ALLKARAOKE_ID:disneys-the-lion-king-hakuna-matata
+#ALLKARAOKE_LASTUPDATE:2023-01-04T18:10:55.358Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=116579
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18284
+#P1:Timon
+#P2:Pumba & Simba
 F 17 3 -24 Ha
 F 23 7 -24 ku
 F 31 2 -24 na 

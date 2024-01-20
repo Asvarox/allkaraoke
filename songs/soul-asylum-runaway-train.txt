@@ -1,18 +1,17 @@
-#ID:soul-asylum-runaway-train
 #ARTIST:Soul Asylum
-#ARTISTORIGIN:US
 #TITLE:Runaway Train
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:117
 #YEAR:1993
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Soul%20Asylum&cancion=Runaway%20Train
-#VIDEOID:NRtvqT_wMeY
-#VIDEOGAP:0
+#VIDEO:v=NRtvqT_wMeY
 #LANGUAGE:English
-#EDITION:SingStar Amped German
 #GAP:16179,29411764706
+#EDITION:SingStar Amped German
+#ALLKARAOKE_ID:soul-asylum-runaway-train
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Soul%20Asylum&cancion=Runaway%20Train
 : 23 5 60 Call
 : 28 5 60  you
 : 34 3 60  up

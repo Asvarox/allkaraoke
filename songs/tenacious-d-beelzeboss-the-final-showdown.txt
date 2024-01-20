@@ -1,20 +1,21 @@
-#ID:tenacious-d-beelzeboss-the-final-showdown
 #ARTIST:Tenacious D
-#ARTISTORIGIN:US
 #TITLE:Beelzeboss (The Final Showdown)
 #CREATOR:Paisano87
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
 #BPM:310,25
-#REALBPM:130
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Beelzeboss%20(The%20Final%20Showdown)
-#VIDEOID:y8-LH_VUROk
+#VIDEO:v=y8-LH_VUROk
 #VIDEOGAP:4
-#VOLUME:1
 #GENRE:Freak Metal
 #LANGUAGE:English
 #GAP:29984,689766317486
-#TRACKNAMES:["Tenacious D","Devil","Combined"]
+#ALLKARAOKE_ID:tenacious-d-beelzeboss-the-final-showdown
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Beelzeboss%20(The%20Final%20Showdown)
+#ALLKARAOKE_VOLUME:1
+#P1:Tenacious D
+#P2:Devil
 - 0 74
 - 74
 : 95 36 24 Fuck

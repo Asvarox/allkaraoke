@@ -1,18 +1,17 @@
-#ID:abba-fernando
 #ARTIST:ABBA
-#ARTISTORIGIN:SE
 #TITLE:Fernando
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:210,1
-#REALBPM:112
 #YEAR:1976
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Fernando
-#VIDEOID:dQsjAbZDx-4
-#VIDEOGAP:0
+#VIDEO:v=dQsjAbZDx-4
 #LANGUAGE:English
-#EDITION:SingStar ABBA
 #GAP:27094
+#EDITION:SingStar ABBA
+#ALLKARAOKE_ID:abba-fernando
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Fernando
 : 0 1 61 Can
 : 2 1 61  you
 : 4 4 61  hear

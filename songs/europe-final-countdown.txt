@@ -1,19 +1,18 @@
-#ID:europe-final-countdown
 #ARTIST:Europe
-#ARTISTORIGIN:SE
 #TITLE:Final Countdown
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:235,26
-#REALBPM:116
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Europe&cancion=Final%20Countdown
-#VIDEOID:9jK-NcRmVcw
-#VIDEOGAP:0
+#VIDEO:v=9jK-NcRmVcw
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '80s
 #GAP:54891,67
+#EDITION:SingStar '80s
+#ALLKARAOKE_ID:europe-final-countdown
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Europe&cancion=Final%20Countdown
 : 0 2 73 Da
 : 2 2 71  da
 : 4 7 73  da

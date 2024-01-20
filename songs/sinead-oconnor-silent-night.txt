@@ -1,23 +1,22 @@
-#ID:sinead-oconnor-silent-night
 #ARTIST:Sinéad O’Connor
-#ARTISTORIGIN:IE
 #TITLE:Silent Night
 #CREATOR:britneyblisswilliams
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8929
 #BPM:220,88
-#REALBPM:42
 #YEAR:1991
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=6244
 #PREVIEWSTART:75
-#PREVIEWEND:105
-#VIDEOID:1uHNygqhBCs
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=1uHNygqhBCs
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:25.237Z
-#EDITION:Christmas
 #GAP:9291,347337921043
+#EDITION:Christmas
+#ALLKARAOKE_ID:sinead-oconnor-silent-night
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:25.237Z
+#ALLKARAOKE_ARTISTORIGIN:IE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8929
+#ALLKARAOKE_REALBPM:42
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=6244
+#ALLKARAOKE_PREVIEWEND:105
+#ALLKARAOKE_VOLUME:1
 : 15 17 -1 Si
 : 33 5 1 ~ 
 : 39 10 -1 lent 

@@ -1,18 +1,18 @@
-#ID:michael-jackson-beat-it
 #ARTIST:Michael Jackson
-#ARTISTORIGIN:US
 #TITLE:Beat It
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:277,64
-#REALBPM:136
 #YEAR:1982
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Beat%20It
-#VIDEOID:oRdxUFDoQe0
+#VIDEO:v=oRdxUFDoQe0
 #VIDEOGAP:-1
 #GENRE:Pop Internacional
 #LANGUAGE:English
 #GAP:59440,490851462324
+#ALLKARAOKE_ID:michael-jackson-beat-it
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Beat%20It
 - -18 1
 - 1
 : 19 3 10 They 

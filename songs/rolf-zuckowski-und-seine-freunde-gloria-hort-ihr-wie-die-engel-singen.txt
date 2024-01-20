@@ -1,20 +1,19 @@
-#ID:rolf-zuckowski-und-seine-freunde-gloria-hort-ihr-wie-die-engel-singen
 #ARTIST:Rolf Zuckowski und seine Freunde
-#ARTISTORIGIN:DE
 #TITLE:Gloria (Hört ihr, wie die Engel singen)
 #CREATOR:Usdx
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=31002
 #BPM:231,28
-#REALBPM:117
 #YEAR:1987
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10991
-#VIDEOID:53snEGVxAuA
-#VIDEOGAP:0
-#VOLUME:0,78
+#VIDEO:v=53snEGVxAuA
 #LANGUAGE:German
-#LASTUPDATE:2023-11-30T16:28:25.070Z
-#EDITION:Christmas
 #GAP:20437,153234175024
+#EDITION:Christmas
+#ALLKARAOKE_ID:rolf-zuckowski-und-seine-freunde-gloria-hort-ihr-wie-die-engel-singen
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:25.070Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=31002
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10991
+#ALLKARAOKE_VOLUME:0,78
 : 15 5 8 Hört 
 : 23 5 8 ihr, 
 : 31 5 8 wie 

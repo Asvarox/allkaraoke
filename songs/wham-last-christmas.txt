@@ -1,20 +1,19 @@
-#ID:wham-last-christmas
 #ARTIST:Wham!
-#ARTISTORIGIN:GB
 #TITLE:Last Christmas
 #CREATOR:asb
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
 #BPM:320,17
-#REALBPM:108
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas
-#VIDEOID:E8gmARGvPlI
-#VIDEOGAP:0
+#VIDEO:v=E8gmARGvPlI
 #GENRE:Christmas
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:25.823Z
-#EDITION:Christmas
 #GAP:3537,681728880157
+#EDITION:Christmas
+#ALLKARAOKE_ID:wham-last-christmas
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:25.823Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asb
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas
 : 21 3 -8 Ah, 
 : 26 7 -6 ha, 
 : 39 3 -3 hoo, 

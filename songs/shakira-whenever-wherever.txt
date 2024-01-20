@@ -1,18 +1,17 @@
-#ID:shakira-whenever-wherever
 #ARTIST:Shakira
-#ARTISTORIGIN:CO
 #TITLE:Whenever wherever
 #CREATOR:Klafhor
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #BPM:423
-#REALBPM:108
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Whenever%20wherever
-#VIDEOID:weRHyjj34ZE
-#VIDEOGAP:0
+#VIDEO:v=weRHyjj34ZE
 #GENRE:Latino
 #LANGUAGE:English
 #GAP:15984,09219858156
+#ALLKARAOKE_ID:shakira-whenever-wherever
+#ALLKARAOKE_ARTISTORIGIN:CO
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Shakira&cancion=Whenever%20wherever
 : 28 4 20 Lu
 : 33 3 20 cky 
 : 37 3 20 you 

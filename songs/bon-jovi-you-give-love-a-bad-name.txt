@@ -1,17 +1,16 @@
-#ID:bon-jovi-you-give-love-a-bad-name
 #ARTIST:Bon Jovi
-#ARTISTORIGIN:US
 #TITLE:You Give Love A Bad Name
 #CREATOR:sanicsip
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
 #BPM:248
-#REALBPM:123
 #YEAR:1986
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=You%20Give%20Love%20A%20Bad%20Name
-#VIDEOID:KrZHPOeOxQQ
-#VIDEOGAP:0
+#VIDEO:v=KrZHPOeOxQQ
 #LANGUAGE:English
 #GAP:6950
+#ALLKARAOKE_ID:bon-jovi-you-give-love-a-bad-name
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=You%20Give%20Love%20A%20Bad%20Name
 : 0 5 7 Shot
 : 6 3 7  through
 : 10 3 7  the

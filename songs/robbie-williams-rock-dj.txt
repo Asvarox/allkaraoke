@@ -1,17 +1,17 @@
-#ID:robbie-williams-rock-dj
 #ARTIST:Robbie Williams
-#ARTISTORIGIN:GB
 #TITLE:Rock DJ
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:412,08
-#REALBPM:103
 #YEAR:2000
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Robbie%20Williams&cancion=Rock%20DJ
-#VIDEOID:BnO3nijfYmU
+#VIDEO:v=BnO3nijfYmU
 #VIDEOGAP:-1
 #LANGUAGE:English
 #GAP:8417,181129877694
+#ALLKARAOKE_ID:robbie-williams-rock-dj
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Robbie%20Williams&cancion=Rock%20DJ
 F 27 7 7 Me
 F 35 3 7  with
 F 39 3 7  the

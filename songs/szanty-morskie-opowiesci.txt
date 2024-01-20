@@ -1,18 +1,17 @@
-#ID:szanty-morskie-opowiesci
 #ARTIST:Szanty
 #TITLE:Morskie Opowieści
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:229,78
-#REALBPM:130
 #YEAR:2001
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11616
-#VIDEOID:7p8VYixEWYM
-#VIDEOGAP:0
-#VOLUME:0,9
+#VIDEO:v=7p8VYixEWYM
 #LANGUAGE:Polish
-#LASTUPDATE:2023-08-15T14:54:44.587Z
 #GAP:-699,1974932544173
+#ALLKARAOKE_ID:szanty-morskie-opowiesci
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.587Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=11616
+#ALLKARAOKE_VOLUME:0,9
 : 15 1 9 Kie
 : 17 1 9 dy 
 : 19 1 9 rum 

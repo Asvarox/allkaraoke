@@ -1,18 +1,18 @@
-#ID:vanessa-carlton-a-thousand-miles
 #ARTIST:Vanessa Carlton
-#ARTISTORIGIN:US
 #TITLE:A thousand miles
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:380
-#REALBPM:96
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vanessa%20Carlton&cancion=A%20thousand%20miles
-#VIDEOID:Cwkej79U3ek
+#VIDEO:v=Cwkej79U3ek
 #VIDEOGAP:19
 #GENRE:Pop Internacional
 #LANGUAGE:English
 #GAP:29595,15789473684
+#ALLKARAOKE_ID:vanessa-carlton-a-thousand-miles
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vanessa%20Carlton&cancion=A%20thousand%20miles
 : 25 3 6 Mak
 : 29 3 6 ing 
 : 33 3 6 my 

@@ -1,20 +1,19 @@
-#ID:maneskin-zitti-e-buoni
 #ARTIST:Måneskin
-#ARTISTORIGIN:IT
 #TITLE:Zitti e buoni
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:412
-#REALBPM:103
 #YEAR:2021
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=Zitti%20e%20buoni
-#VIDEOID:QN1odfjtMoo
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=QN1odfjtMoo
 #GENRE:Rock
 #LANGUAGE:Italian
-#LASTUPDATE:2023-05-20T14:16:08.865Z
 #GAP:9666,990291262136
+#ALLKARAOKE_ID:maneskin-zitti-e-buoni
+#ALLKARAOKE_LASTUPDATE:2023-05-20T14:16:08.865Z
+#ALLKARAOKE_ARTISTORIGIN:IT
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=Zitti%20e%20buoni
+#ALLKARAOKE_VOLUME:0,5
 : 27 1 4 Lo
 : 30 2 7 ro 
 : 34 1 4 non 

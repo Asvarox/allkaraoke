@@ -1,17 +1,16 @@
-#ID:wojciech-bujoczek-krol-szamanow
 #ARTIST:Wojciech Bujoczek
 #TITLE:Król Szamanów
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:300,66
-#REALBPM:140
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w
-#VIDEOID:d4VbQ80v3Is
-#VIDEOGAP:0
+#VIDEO:v=d4VbQ80v3Is
 #GENRE:Anime
 #LANGUAGE:Polish
 #GAP:2941,195170624626
+#ALLKARAOKE_ID:wojciech-bujoczek-krol-szamanow
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Wojciech%20Bujoczek&cancion=Kr%C3%B3l%20Szaman%C3%B3w
 : 20 2 0 O
 : 24 6 0 twórz
 : 32 4 0  o

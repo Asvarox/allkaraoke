@@ -1,17 +1,16 @@
-#ID:danzel-pump-it-up
 #ARTIST:Danzel
-#ARTISTORIGIN:BE
 #TITLE:Pump it up
 #CREATOR:Leroidukitch
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=105252
 #BPM:260
-#REALBPM:129
 #YEAR:2004
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=21060
-#VIDEOID:0HtyF0jux2Q
-#VIDEOGAP:0
+#VIDEO:v=0HtyF0jux2Q
 #LANGUAGE:English
 #GAP:236,9230769230769
+#ALLKARAOKE_ID:danzel-pump-it-up
+#ALLKARAOKE_ARTISTORIGIN:BE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=105252
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=21060
 - 0 35
 - 35
 : 52 3 11 You 

@@ -1,18 +1,18 @@
-#ID:the-rembrandts-ill-be-there-for-you
 #ARTIST:The Rembrandts
-#ARTISTORIGIN:US
 #TITLE:I'll Be There for You
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:381,64
-#REALBPM:93
 #YEAR:1995
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You
-#VIDEOID:q-9kPks0IfE
+#VIDEO:v=q-9kPks0IfE
 #VIDEOGAP:2
-#VOLUME:1
 #LANGUAGE:English
 #GAP:12821
+#ALLKARAOKE_ID:the-rembrandts-ill-be-there-for-you
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:93
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Rembrandts&cancion=I'll%20Be%20There%20for%20You
+#ALLKARAOKE_VOLUME:1
 : 0 1 4 So
 : 4 6 9  no
 : 12 5 11  one

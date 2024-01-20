@@ -1,20 +1,19 @@
-#ID:udo-lindenberg-apache-207-komet
 #ARTIST:Udo Lindenberg & Apache 207
 #TITLE:Komet
 #CREATOR:Mamba99
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=156400
 #BPM:230
-#REALBPM:115
 #YEAR:2023
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=27047
 #PREVIEWSTART:82
-#PREVIEWEND:122
-#VIDEOID:0nYDnTTJgFI
-#VIDEOGAP:0
-#VOLUME:0,5
+#VIDEO:v=0nYDnTTJgFI
 #LANGUAGE:German
-#LASTUPDATE:2023-12-22T16:33:53.878Z
 #GAP:23981,739130434784
+#ALLKARAOKE_ID:udo-lindenberg-apache-207-komet
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:53.878Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=156400
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27047
+#ALLKARAOKE_PREVIEWEND:122
+#ALLKARAOKE_VOLUME:0,5
 : 15 2 10 Da-
 : 19 4 9 da-
 : 27 2 5 da

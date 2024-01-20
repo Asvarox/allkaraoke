@@ -1,19 +1,18 @@
-#ID:rupaul-sissy-that-walk
 #ARTIST:RuPaul
-#ARTISTORIGIN:US
 #TITLE:Sissy That Walk
 #CREATOR:REL
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=77104
 #BPM:300
-#REALBPM:126
 #YEAR:2014
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=20467
-#VIDEOID:M4d20Tyzlv0
-#VIDEOGAP:0
+#VIDEO:v=M4d20Tyzlv0
 #GENRE:Unknown
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T22:33:36.001Z
 #GAP:7300
+#ALLKARAOKE_ID:rupaul-sissy-that-walk
+#ALLKARAOKE_LASTUPDATE:2023-01-27T22:33:36.001Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=77104
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=20467
 : 20 4 4 Pick 
 : 25 4 4 my
 : 30 8 4 self 

@@ -1,18 +1,14 @@
-#ID:fasolki-ogorek-wasaty
 #ARTIST:Fasolki
-#ARTISTORIGIN:PL
 #TITLE:Ogórek wąsaty
 #CREATOR:Pit33
-#CREATORURL:
 #BPM:112,99
-#REALBPM:0
 #YEAR:1988
-#SOURCEURL:
-#VIDEOID:pRDaV-8zoR4
-#VIDEOGAP:0
+#VIDEO:v=pRDaV-8zoR4
 #GENRE:Dla dzieci
 #LANGUAGE:Polish
 #GAP:284,5440020289125
+#ALLKARAOKE_ID:fasolki-ogorek-wasaty
+#ALLKARAOKE_ARTISTORIGIN:PL
 : 8 2 0 We
 : 10 4 5 so
 : 14 2 5 ło 

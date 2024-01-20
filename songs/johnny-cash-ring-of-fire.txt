@@ -1,20 +1,19 @@
-#ID:johnny-cash-ring-of-fire
 #ARTIST:Johnny Cash
-#ARTISTORIGIN:US
 #TITLE:Ring Of Fire
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
 #BPM:208
-#REALBPM:105
 #YEAR:1963
-#SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Ring+Of+Fire&idioma=en
-#VIDEOID:1Osyw6Svv8U
-#VIDEOGAP:0
+#VIDEO:v=1Osyw6Svv8U
 #GENRE:Misc
 #LANGUAGE:English
-#LASTUPDATE:2023-01-27T21:01:18.375Z
-#EDITION:SingStar Lgnds
 #GAP:8220,543078412391
+#EDITION:SingStar Lgnds
+#ALLKARAOKE_ID:johnny-cash-ring-of-fire
+#ALLKARAOKE_LASTUPDATE:2023-01-27T21:01:18.375Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Ring+Of+Fire&idioma=en
 : 14 8 50 Love
 - 22
 : 33 1 50 Is 

@@ -1,19 +1,17 @@
-#ID:meskie-granie-orkiestra-poczatek
 #ARTIST:Męskie Granie Orkiestra
-#ARTISTORIGIN:PL
 #TITLE:Początek
 #CREATOR:Asvarox
-#CREATORURL:https://github.com/Asvarox/olkaraoke
 #BPM:330
-#REALBPM:110
 #YEAR:2018
-#SOURCEURL:
-#VIDEOID:QRxH-II0OsA
+#VIDEO:v=QRxH-II0OsA
 #VIDEOGAP:32
 #GENRE:Pop
 #LANGUAGE:Polish
-#EDITION:
 #GAP:40095
+#ALLKARAOKE_ID:meskie-granie-orkiestra-poczatek
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://github.com/Asvarox/olkaraoke
+#ALLKARAOKE_REALBPM:110
 : 22 6 -9 Sny 
 : 30 5 3 po
 : 35 6 3 cho

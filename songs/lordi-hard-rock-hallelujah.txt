@@ -1,19 +1,18 @@
-#ID:lordi-hard-rock-hallelujah
 #ARTIST:Lordi
-#ARTISTORIGIN:FI
 #TITLE:Hard Rock Hallelujah
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:246,4
-#REALBPM:123
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lordi&cancion=Hard%20Rock%20Hallelujah
-#VIDEOID:-6Xl9tBWt54
-#VIDEOGAP:0
+#VIDEO:v=-6Xl9tBWt54
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Legendat
 #GAP:8339,974025974027
+#EDITION:SingStar Legendat
+#ALLKARAOKE_ID:lordi-hard-rock-hallelujah
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lordi&cancion=Hard%20Rock%20Hallelujah
 : 16 8 58 Hard
 : 32 7 58  rock
 - 39

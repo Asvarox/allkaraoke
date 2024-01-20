@@ -1,19 +1,19 @@
-#ID:queen-david-bowie-under-pressure
 #ARTIST:Queen & David Bowie
-#ARTISTORIGIN:GB
 #TITLE:Under Pressure
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:225,4
-#REALBPM:114
 #YEAR:1981
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen%20%26%20David%20Bowie&cancion=Under%20Pressure
-#VIDEOID:a01QQZyl-_I
+#VIDEO:v=a01QQZyl-_I
 #VIDEOGAP:5
-#VOLUME:0,85
 #LANGUAGE:English
-#EDITION:SingStar Queen
 #GAP:27493
+#EDITION:SingStar Queen
+#ALLKARAOKE_ID:queen-david-bowie-under-pressure
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen%20%26%20David%20Bowie&cancion=Under%20Pressure
+#ALLKARAOKE_VOLUME:0,85
 : 0 7 9 Boom
 : 8 3 7  boom
 : 12 4 6  bah

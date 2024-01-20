@@ -1,21 +1,20 @@
-#ID:little-mix-silent-night
 #ARTIST:Little Mix
-#ARTISTORIGIN:GB
 #TITLE:Silent Night
 #CREATOR:Sing-Girl
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9581
 #BPM:220,88
-#REALBPM:55
 #YEAR:2011
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=19403
-#VIDEOID:obhHmNqNTcw
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=obhHmNqNTcw
 #GENRE:Christmas Songs
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:14.865Z
-#EDITION:Christmas
 #GAP:3281,3473379210427
+#EDITION:Christmas
+#ALLKARAOKE_ID:little-mix-silent-night
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.865Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9581
+#ALLKARAOKE_REALBPM:55
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=19403
+#ALLKARAOKE_VOLUME:0,85
 : 15 18 1 Si
 : 35 4 3 ~
 : 41 6 1 lent 

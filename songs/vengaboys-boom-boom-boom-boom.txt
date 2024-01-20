@@ -1,18 +1,17 @@
-#ID:vengaboys-boom-boom-boom-boom
 #ARTIST:Vengaboys
-#ARTISTORIGIN:NL
 #TITLE:Boom, Boom, Boom, Boom!!
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
 #BPM:276,98
-#REALBPM:136
 #YEAR:1998
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=Boom%2C%20Boom%2C%20Boom%2C%20Boom!!
-#VIDEOID:llyiQ4I-mcQ
-#VIDEOGAP:0
+#VIDEO:v=llyiQ4I-mcQ
 #GENRE:Dance
 #LANGUAGE:English
 #GAP:6175,200375478374
+#ALLKARAOKE_ID:vengaboys-boom-boom-boom-boom
+#ALLKARAOKE_ARTISTORIGIN:NL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Vengaboys&cancion=Boom%2C%20Boom%2C%20Boom%2C%20Boom!!
 : 18 7 18 Oh
 : 26 3 15 ~
 : 30 2 13 ~, 

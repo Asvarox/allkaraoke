@@ -1,18 +1,17 @@
-#ID:rihanna-umbrella
 #ARTIST:Rihanna
-#ARTISTORIGIN:BB
 #TITLE:Umbrella
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:240
-#REALBPM:174
 #YEAR:2007
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Umbrella
-#VIDEOID:CvBfHwUxHIk
-#VIDEOGAP:0
+#VIDEO:v=CvBfHwUxHIk
 #LANGUAGE:English
-#EDITION:SingStar SP
 #GAP:2162,5
+#EDITION:SingStar SP
+#ALLKARAOKE_ID:rihanna-umbrella
+#ALLKARAOKE_ARTISTORIGIN:BB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:174
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Umbrella
 F 0 2 48 Uh
 F 3 2 48  huh,
 F 8 2 48  uh

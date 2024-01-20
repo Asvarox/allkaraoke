@@ -1,20 +1,19 @@
-#ID:la-oreja-de-van-gogh-20-de-enero
 #ARTIST:La Oreja De Van Gogh
-#ARTISTORIGIN:ES
 #TITLE:20 De Enero
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:145
-#REALBPM:145
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20De%20Van%20Gogh&cancion=20%20De%20Enero
-#VIDEOID:QmhcdlvUIUY
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=QmhcdlvUIUY
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.571Z
-#EDITION:SingStar
 #GAP:9873,51724137931
+#EDITION:SingStar
+#ALLKARAOKE_ID:la-oreja-de-van-gogh-20-de-enero
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.571Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=La%20Oreja%20De%20Van%20Gogh&cancion=20%20De%20Enero
+#ALLKARAOKE_VOLUME:0,65
 : 10 2 60 Pen
 : 12 3 64 sé
 - 15 16

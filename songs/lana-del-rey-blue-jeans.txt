@@ -1,19 +1,17 @@
-#ID:lana-del-rey-blue-jeans
 #ARTIST:Lana Del Rey
-#ARTISTORIGIN:US
 #TITLE:Blue Jeans
 #CREATOR:Daminou*Coppo
-#CREATORURL:
 #BPM:235,92
-#REALBPM:118
 #YEAR:2012
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey
-#VIDEOID:JRWox-i6aAk
-#VIDEOGAP:0
+#VIDEO:v=JRWox-i6aAk
 #GENRE:Alternative
 #LANGUAGE:English
-#LASTUPDATE:2023-02-24T22:29:16.735Z
 #GAP:40312,70600203459
+#ALLKARAOKE_ID:lana-del-rey-blue-jeans
+#ALLKARAOKE_LASTUPDATE:2023-02-24T22:29:16.735Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey
 : 16 7 12 Blue 
 : 24 11 10 Jeans
 - 35

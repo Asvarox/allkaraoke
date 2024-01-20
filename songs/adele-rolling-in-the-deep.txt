@@ -1,13 +1,13 @@
-#ID:adele-rolling-in-the-deep
 #ARTIST:Adele
-#ARTISTORIGIN:GB
 #TITLE:Rolling In The Deep
 #BPM:210
-#REALBPM:103
 #YEAR:2011
-#VIDEOID:rYEDA3JcQqw
+#VIDEO:v=rYEDA3JcQqw
 #LANGUAGE:English
 #GAP:4870
+#ALLKARAOKE_ID:adele-rolling-in-the-deep
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:103
 : 0 4 19  There's
 : 6 6 19   a
 : 16 1 17   fi

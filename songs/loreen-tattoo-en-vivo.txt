@@ -1,22 +1,21 @@
-#ID:loreen-tattoo-en-vivo
 #ARTIST:Loreen
-#ARTISTORIGIN:SE
 #TITLE:Tattoo (En vivo)
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:300
-#REALBPM:150
 #YEAR:2023
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Loreen&cancion=Tattoo%20(En%20vivo)
 #PREVIEWSTART:66
-#PREVIEWEND:96
-#VIDEOID:BE2Fj0W4jP4
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=BE2Fj0W4jP4
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-07-27T19:14:16.143Z
 #GAP:28780
+#ALLKARAOKE_ID:loreen-tattoo-en-vivo
+#ALLKARAOKE_LASTUPDATE:2023-07-27T19:14:16.143Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Loreen&cancion=Tattoo%20(En%20vivo)
+#ALLKARAOKE_PREVIEWEND:96
+#ALLKARAOKE_VOLUME:1
 : 20 3 1 I 
 : 24 2 -1 don't 
 : 28 3 -2 wan

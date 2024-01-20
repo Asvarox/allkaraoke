@@ -1,19 +1,19 @@
-#ID:queen-i-want-to-break-free
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:I Want to Break Free
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:217,38
-#REALBPM:108
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20to%20Break%20Free
-#VIDEOID:f4Mc-NYPHaQ
+#VIDEO:v=f4Mc-NYPHaQ
 #VIDEOGAP:5
-#VOLUME:0,85
 #LANGUAGE:English
-#EDITION:SingStar Queen
 #GAP:45729,09
+#EDITION:SingStar Queen
+#ALLKARAOKE_ID:queen-i-want-to-break-free
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=I%20Want%20to%20Break%20Free
+#ALLKARAOKE_VOLUME:0,85
 : 0 3 59 I
 : 4 2 64  want
 : 10 2 66  to

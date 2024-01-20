@@ -1,19 +1,19 @@
-#ID:maroon-5-harder-to-breathe
 #ARTIST:Maroon 5
-#ARTISTORIGIN:US
 #TITLE:Harder to breathe
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:299,99
-#REALBPM:152
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=Harder%20to%20breathe
-#VIDEOID:rV8NHsmVMPE
+#VIDEO:v=rV8NHsmVMPE
 #VIDEOGAP:-1
 #GENRE:Pop Rock
 #LANGUAGE:English
-#EDITION:Guitar Hero 5
 #GAP:5009,966665555518
+#EDITION:Guitar Hero 5
+#ALLKARAOKE_ID:maroon-5-harder-to-breathe
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=Harder%20to%20breathe
 : 20 2 -1 How 
 : 24 3 1 dare 
 : 28 1 1 you 

@@ -1,20 +1,19 @@
-#ID:rammstein-amerika
 #ARTIST:Rammstein
-#ARTISTORIGIN:DE
 #TITLE:Amerika
 #CREATOR:¡JKA!
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #BPM:250
-#REALBPM:63
 #YEAR:2004
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Amerika
-#VIDEOID:Rr8ljRgcJNM
-#VIDEOGAP:0
-#VOLUME:0,68
+#VIDEO:v=Rr8ljRgcJNM
 #GENRE:Metal Industrial
 #LANGUAGE:German
-#LASTUPDATE:2023-04-19T20:21:35.737Z
 #GAP:-70
+#ALLKARAOKE_ID:rammstein-amerika
+#ALLKARAOKE_LASTUPDATE:2023-04-19T20:21:35.737Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#ALLKARAOKE_REALBPM:63
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rammstein&cancion=Amerika
+#ALLKARAOKE_VOLUME:0,68
 - 0 48
 - 48
 : 65 3 -5 A

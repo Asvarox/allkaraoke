@@ -1,17 +1,16 @@
-#ID:tenacious-d-kickapoo
 #ARTIST:Tenacious D
-#ARTISTORIGIN:US
 #TITLE:Kickapoo
 #CREATOR:borax
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136
 #BPM:132
-#REALBPM:130
 #YEAR:2006
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=1893
-#VIDEOID:hvvjiE4AdUI
-#VIDEOGAP:0
+#VIDEO:v=hvvjiE4AdUI
 #LANGUAGE:English
 #GAP:11377,272727272728
+#ALLKARAOKE_ID:tenacious-d-kickapoo
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=1893
 - -8 1
 - 1
 : 9 2 65 A 

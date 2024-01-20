@@ -1,19 +1,19 @@
-#ID:linkin-park-bleed-it-out
 #ARTIST:Linkin Park
-#ARTISTORIGIN:US
 #TITLE:Bleed It Out
 #CREATOR:¡JKA!
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #BPM:396,69
-#REALBPM:144
 #YEAR:2007
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out
-#VIDEOID:OnuuYcqhzCE
+#VIDEO:v=OnuuYcqhzCE
 #VIDEOGAP:2
 #GENRE:Alt. Rock
 #LANGUAGE:English
-#EDITION:Guitar Hero Warriors of Rock
 #GAP:9716,864554185888
+#EDITION:Guitar Hero Warriors of Rock
+#ALLKARAOKE_ID:linkin-park-bleed-it-out
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out
 - -25 1
 - 1
 F 26 5 0 Yeah 

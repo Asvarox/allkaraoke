@@ -1,18 +1,17 @@
-#ID:pharrell-williams-happy
 #ARTIST:Pharrell Williams
-#ARTISTORIGIN:US
 #TITLE:Happy
 #CREATOR:gun8
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
 #BPM:319,75
-#REALBPM:160
 #YEAR:2013
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=16651
-#VIDEOID:ZbZSe6N_BXs
-#VIDEOGAP:0
+#VIDEO:v=ZbZSe6N_BXs
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:6504,855355746677
+#ALLKARAOKE_ID:pharrell-williams-happy
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=16651
 : 21 2 12 It 
 : 25 2 17 might 
 : 29 5 17 seem 

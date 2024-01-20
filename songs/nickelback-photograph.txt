@@ -1,19 +1,19 @@
-#ID:nickelback-photograph
 #ARTIST:Nickelback
-#ARTISTORIGIN:CA
 #TITLE:Photograph
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:398,64
-#REALBPM:145
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Photograph
-#VIDEOID:BB0DU4DoPP4
+#VIDEO:v=BB0DU4DoPP4
 #VIDEOGAP:-6
 #GENRE:Rock Alternativo
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 2
 #GAP:954,5552101093172
+#EDITION:Rock Band Store 2010 Vol. 2
+#ALLKARAOKE_ID:nickelback-photograph
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Photograph
 : 27 4 17 Look 
 : 32 4 19 at 
 : 39 3 19 this 

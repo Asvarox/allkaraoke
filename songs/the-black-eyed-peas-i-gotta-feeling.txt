@@ -1,18 +1,17 @@
-#ID:the-black-eyed-peas-i-gotta-feeling
 #ARTIST:The Black Eyed Peas
-#ARTISTORIGIN:US
 #TITLE:I Gotta Feeling
 #CREATOR:IC
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #BPM:256,05
-#REALBPM:129
 #YEAR:2009
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=7281
-#VIDEOID:uSD4vsh1zDA
-#VIDEOGAP:0
+#VIDEO:v=uSD4vsh1zDA
 #LANGUAGE:English
-#EDITION:[SC]-Songs
 #GAP:29014,100761570007
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:the-black-eyed-peas-i-gotta-feeling
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=7281
 : 17 2 4 I 
 : 21 2 9 got 
 : 25 2 7 a 

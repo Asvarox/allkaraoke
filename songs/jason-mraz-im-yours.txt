@@ -1,20 +1,20 @@
-#ID:jason-mraz-im-yours
 #ARTIST:Jason Mraz
-#ARTISTORIGIN:US
 #TITLE:I'm yours
 #CREATOR:artax1979
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=artax1979
 #BPM:302,04
-#REALBPM:76
 #YEAR:2008
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jason%20Mraz&cancion=I'm%20yours
-#VIDEOID:EkHTsc9PU2A
+#VIDEO:v=EkHTsc9PU2A
 #VIDEOGAP:4
-#VOLUME:0,75
 #GENRE:Other
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T18:27:03.625Z
 #GAP:18186,754072308304
+#ALLKARAOKE_ID:jason-mraz-im-yours
+#ALLKARAOKE_LASTUPDATE:2023-04-19T18:27:03.625Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=artax1979
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jason%20Mraz&cancion=I'm%20yours
+#ALLKARAOKE_VOLUME:0,75
 : 20 3 13 Well
 : 24 4 15 ~, 
 : 32 3 15 you 

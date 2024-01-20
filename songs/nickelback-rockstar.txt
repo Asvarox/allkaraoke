@@ -1,19 +1,18 @@
-#ID:nickelback-rockstar
 #ARTIST:Nickelback
-#ARTISTORIGIN:CA
 #TITLE:Rockstar
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:398,9
-#REALBPM:144
 #YEAR:2005
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Rockstar
-#VIDEOID:DmeUuoxyt_E
-#VIDEOGAP:0
+#VIDEO:v=DmeUuoxyt_E
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 2
 #GAP:84,70794685384772
+#EDITION:Rock Band Store 2010 Vol. 2
+#ALLKARAOKE_ID:nickelback-rockstar
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=Rockstar
 : 27 4 11 I'm 
 : 33 4 9 through 
 : 38 2 7 with 

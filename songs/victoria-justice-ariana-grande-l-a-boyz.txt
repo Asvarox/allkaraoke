@@ -1,18 +1,15 @@
-#ID:victoria-justice-ariana-grande-l-a-boyz
 #ARTIST:Victoria Justice & Ariana Grande
 #TITLE:L. A. Boyz
 #CREATOR:Mamba99
-#CREATORURL:
 #BPM:300
-#REALBPM:149
 #YEAR:2012
-#SOURCEURL:
-#VIDEOID:SiLRDy4prbw
-#VIDEOGAP:0
-#VOLUME:0,71
+#VIDEO:v=SiLRDy4prbw
 #LANGUAGE:English
-#LASTUPDATE:2023-12-28T19:33:42.896Z
 #GAP:6040
+#ALLKARAOKE_ID:victoria-justice-ariana-grande-l-a-boyz
+#ALLKARAOKE_LASTUPDATE:2023-12-28T19:33:42.896Z
+#ALLKARAOKE_REALBPM:149
+#ALLKARAOKE_VOLUME:0,71
 : 20 2 3 Dri
 : 24 2 3 ving 
 : 28 4 3 down 

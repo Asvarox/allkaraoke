@@ -1,19 +1,19 @@
-#ID:rem-losing-my-religion
 #ARTIST:R.E.M.
-#ARTISTORIGIN:US
 #TITLE:Losing My Religion
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:378,4
-#REALBPM:123
 #YEAR:1991
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=R.E.M.&cancion=Losing%20My%20Religion
-#VIDEOID:xwtdhWltSIg
+#VIDEO:v=xwtdhWltSIg
 #VIDEOGAP:18
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:Rock Band Store 2009 Vol. 1
 #GAP:31260,292953285825
+#EDITION:Rock Band Store 2009 Vol. 1
+#ALLKARAOKE_ID:rem-losing-my-religion
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=R.E.M.&cancion=Losing%20My%20Religion
 - -24 1
 - 1
 : 25 40 11 Oh 

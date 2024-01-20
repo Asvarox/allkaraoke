@@ -1,17 +1,16 @@
-#ID:letni-chamski-podryw-pomidorowa
 #ARTIST:Letni, Chamski Podryw
-#ARTISTORIGIN:PL
 #TITLE:Pomidorowa
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:360
-#REALBPM:0
 #YEAR:2015
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=pomidorowa
-#VIDEOID:RleTwu7ueac
+#VIDEO:v=RleTwu7ueac
 #VIDEOGAP:19
 #LANGUAGE:Polish
 #GAP:22740
+#ALLKARAOKE_ID:letni-chamski-podryw-pomidorowa
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?cancion=pomidorowa
 : 0 2 7 Ju
 * 4 3 7 tro
 * 9 2 0  zno

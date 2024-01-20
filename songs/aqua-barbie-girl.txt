@@ -1,19 +1,18 @@
-#ID:aqua-barbie-girl
 #ARTIST:Aqua
-#ARTISTORIGIN:DK
 #TITLE:Barbie Girl
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:260,2
-#REALBPM:129
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aqua&cancion=Barbie%20Girl
-#VIDEOID:ZyhrYis509A
-#VIDEOGAP:0
+#VIDEO:v=ZyhrYis509A
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '90s
 #GAP:8107,984627209838
+#EDITION:SingStar '90s
+#ALLKARAOKE_ID:aqua-barbie-girl
+#ALLKARAOKE_ARTISTORIGIN:DK
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aqua&cancion=Barbie%20Girl
 F 17 5 36 Hiya
 F 23 7 36  Barbie
 - 30

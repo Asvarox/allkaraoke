@@ -1,20 +1,20 @@
-#ID:falco-rock-me-amadeus
 #ARTIST:Falco
-#ARTISTORIGIN:AT
 #TITLE:Rock Me Amadeus
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:177,1
-#REALBPM:176
 #YEAR:1985
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Falco&cancion=Rock%20Me%20Amadeus
-#VIDEOID:cVikZ8Oe_XA
+#VIDEO:v=cVikZ8Oe_XA
 #VIDEOGAP:25
-#VOLUME:0,65
 #LANGUAGE:German
-#LASTUPDATE:2023-07-12T20:46:41.666Z
-#EDITION:SingStar German
 #GAP:50149,62507058159
+#EDITION:SingStar German
+#ALLKARAOKE_ID:falco-rock-me-amadeus
+#ALLKARAOKE_LASTUPDATE:2023-07-12T20:46:41.666Z
+#ALLKARAOKE_ARTISTORIGIN:AT
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:176
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Falco&cancion=Rock%20Me%20Amadeus
+#ALLKARAOKE_VOLUME:0,65
 : 12 2 57 Er 
 : 14 2 57 war 
 : 16 2 57 ein 

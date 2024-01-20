@@ -1,18 +1,17 @@
-#ID:krzysztof-mielanczuk-tabaluga
 #ARTIST:Krzysztof Mielańczuk
-#ARTISTORIGIN:PL
 #TITLE:Tabaluga
 #CREATOR:Currymalker
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
 #BPM:292
-#REALBPM:144
 #YEAR:1997
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Krzysztof%20Miela%C5%84czuk&cancion=Tabaluga
-#VIDEOID:FK3Wd1cBTqs
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=FK3Wd1cBTqs
 #LANGUAGE:Polish
 #GAP:5988,972602739726
+#ALLKARAOKE_ID:krzysztof-mielanczuk-tabaluga
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:144
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Krzysztof%20Miela%C5%84czuk&cancion=Tabaluga
+#ALLKARAOKE_VOLUME:0,91
 : 19 1 -5 O
 : 21 2 0 ~
 : 25 1 2 to 

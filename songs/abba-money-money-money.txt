@@ -1,18 +1,17 @@
-#ID:abba-money-money-money
 #ARTIST:ABBA
-#ARTISTORIGIN:SE
 #TITLE:Money Money Money
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:339,2
-#REALBPM:120
 #YEAR:1976
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Money%20Money%20Money
-#VIDEOID:ETxmCCsMoD0
-#VIDEOGAP:0
+#VIDEO:v=ETxmCCsMoD0
 #LANGUAGE:English
-#EDITION:SingStar ABBA
 #GAP:12866
+#EDITION:SingStar ABBA
+#ALLKARAOKE_ID:abba-money-money-money
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Money%20Money%20Money
 : 0 3 52 I
 : 6 4 52  work
 : 12 3 53  all

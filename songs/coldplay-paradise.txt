@@ -1,17 +1,16 @@
-#ID:coldplay-paradise
 #ARTIST:Coldplay
-#ARTISTORIGIN:GB
 #TITLE:Paradise
 #CREATOR:kaim21
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
 #BPM:279,32
-#REALBPM:68
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Paradise
-#VIDEOID:1G4isv_Fylg
-#VIDEOGAP:0
+#VIDEO:v=1G4isv_Fylg
 #LANGUAGE:English
 #GAP:33297,66490047258
+#ALLKARAOKE_ID:coldplay-paradise
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kaim21
+#ALLKARAOKE_REALBPM:68
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Paradise
 : 19 2 14 Uh 
 : 23 2 12 uh 
 : 28 5 14 uh 

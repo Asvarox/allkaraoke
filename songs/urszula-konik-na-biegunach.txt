@@ -1,19 +1,18 @@
-#ID:urszula-konik-na-biegunach
 #ARTIST:Urszula
-#ARTISTORIGIN:PL
 #TITLE:Konik na biegunach
 #CREATOR:jockel1974
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
 #BPM:132,25
-#REALBPM:126
 #YEAR:1996
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2851
-#VIDEOID:j35p7ljELvM
-#VIDEOGAP:0
-#VOLUME:0,8
+#VIDEO:v=j35p7ljELvM
 #GENRE:Pop
 #LANGUAGE:Polish
 #GAP:-200
+#ALLKARAOKE_ID:urszula-konik-na-biegunach
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=19
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2851
+#ALLKARAOKE_VOLUME:0,8
 : 68 3 9 Za 
 : 72 2 9 rok, 
 : 74 2 7 mo

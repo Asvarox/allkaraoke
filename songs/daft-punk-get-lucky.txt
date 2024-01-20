@@ -1,19 +1,18 @@
-#ID:daft-punk-get-lucky
 #ARTIST:Daft Punk
-#ARTISTORIGIN:FR
 #TITLE:Get Lucky
 #CREATOR:gun88
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
 #BPM:232,1
-#REALBPM:116
 #YEAR:2013
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Daft%20Punk&cancion=Get%20Lucky
-#VIDEOID:CCHdMIEGaaM
-#VIDEOGAP:0
-#VOLUME:0,91
+#VIDEO:v=CCHdMIEGaaM
 #GENRE:Electronic Music
 #LANGUAGE:English
 #GAP:15010
+#ALLKARAOKE_ID:daft-punk-get-lucky
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gun88
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Daft%20Punk&cancion=Get%20Lucky
+#ALLKARAOKE_VOLUME:0,91
 : 0 4 4 Like
 : 6 2 6  the
 : 10 3 11  le

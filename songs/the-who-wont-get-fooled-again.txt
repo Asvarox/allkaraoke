@@ -1,20 +1,20 @@
-#ID:the-who-wont-get-fooled-again
 #ARTIST:The Who
-#ARTISTORIGIN:GB
 #TITLE:Won't get fooled again
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:398,33
-#REALBPM:136
 #YEAR:1971
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Won't%20get%20fooled%20again
-#VIDEOID:_NzLs-xSss0
+#VIDEO:v=_NzLs-xSss0
 #VIDEOGAP:5
-#VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:Rock Band
 #GAP:43115,89281950926
+#EDITION:Rock Band
+#ALLKARAOKE_ID:the-who-wont-get-fooled-again
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Who&cancion=Won't%20get%20fooled%20again
+#ALLKARAOKE_VOLUME:0,85
 : 27 5 9 We'll 
 : 34 3 9 be 
 : 40 9 13 fight

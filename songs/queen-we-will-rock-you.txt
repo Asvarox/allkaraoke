@@ -1,19 +1,19 @@
-#ID:queen-we-will-rock-you
 #ARTIST:Queen
-#ARTISTORIGIN:GB
 #TITLE:We Will Rock You
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:162,8
-#REALBPM:81
 #YEAR:1977
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Will%20Rock%20You
-#VIDEOID:-tJYN-eG1zk
+#VIDEO:v=-tJYN-eG1zk
 #VIDEOGAP:5
-#VOLUME:0,9
 #LANGUAGE:English
-#EDITION:SingStar Queen
 #GAP:18372,85
+#EDITION:SingStar Queen
+#ALLKARAOKE_ID:queen-we-will-rock-you
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=We%20Will%20Rock%20You
+#ALLKARAOKE_VOLUME:0,9
 : 0 1 62 Bud
 : 2 1 64 dy
 : 4 1 64  you're

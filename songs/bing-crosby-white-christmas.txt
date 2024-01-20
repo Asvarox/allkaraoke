@@ -1,21 +1,20 @@
-#ID:bing-crosby-white-christmas
 #ARTIST:Bing Crosby
-#ARTISTORIGIN:US
 #TITLE:White Christmas
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:369
-#REALBPM:90
 #YEAR:1942
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=201
-#VIDEOID:v5ryZdpEHqM
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=v5ryZdpEHqM
 #GENRE:None
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:13.717Z
-#EDITION:Christmas
 #GAP:10653,739837398374
+#EDITION:Christmas
+#ALLKARAOKE_ID:bing-crosby-white-christmas
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:13.717Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=201
+#ALLKARAOKE_VOLUME:1
 : 25 68 1 I’m 
 : 95 8 2 drea
 : 105 16 1 ming 

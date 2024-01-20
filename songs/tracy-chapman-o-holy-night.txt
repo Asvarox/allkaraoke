@@ -1,20 +1,19 @@
-#ID:tracy-chapman-o-holy-night
 #ARTIST:Tracy Chapman
-#ARTISTORIGIN:US
 #TITLE:O Holy Night
 #CREATOR:znxineohp
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1716
 #BPM:260
-#REALBPM:92
 #YEAR:1997
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10484
-#VIDEOID:MZWI1GuJwCU
-#VIDEOGAP:0
-#VOLUME:0,74
+#VIDEO:v=MZWI1GuJwCU
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:25.681Z
-#EDITION:Christmas
 #GAP:32189,23076923077
+#EDITION:Christmas
+#ALLKARAOKE_ID:tracy-chapman-o-holy-night
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:25.681Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1716
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=10484
+#ALLKARAOKE_VOLUME:0,74
 : 17 15 5 O 
 : 33 7 5 ho
 : 41 7 6 ly 

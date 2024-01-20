@@ -1,18 +1,18 @@
-#ID:ed-sheeran-shape-of-you
 #ARTIST:Ed Sheeran
-#ARTISTORIGIN:GB
 #TITLE:Shape of you
 #CREATOR:Volodia
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #BPM:383,95
-#REALBPM:96
 #YEAR:2017
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Shape%20of%20you
-#VIDEOID:JGwWNGJdvx8
+#VIDEO:v=JGwWNGJdvx8
 #VIDEOGAP:6
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:14855,242739940097
+#ALLKARAOKE_ID:ed-sheeran-shape-of-you
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Shape%20of%20you
 : 26 1 -13 The 
 : 30 7 -8 club 
 : 38 1 -8 is

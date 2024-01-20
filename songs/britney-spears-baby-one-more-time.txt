@@ -1,19 +1,18 @@
-#ID:britney-spears-baby-one-more-time
 #ARTIST:Britney Spears
-#ARTISTORIGIN:US
 #TITLE:Baby One More Time
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:240
-#REALBPM:92
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Baby%20One%20More%20Time
-#VIDEOID:C-u5WLJ9Yk4
-#VIDEOGAP:0
+#VIDEO:v=C-u5WLJ9Yk4
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar Pop Hits
 #GAP:18400
+#EDITION:SingStar Pop Hits
+#ALLKARAOKE_ID:britney-spears-baby-one-more-time
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Britney%20Spears&cancion=Baby%20One%20More%20Time
 : 0 3 60 Oh
 : 5 3 60  ba
 : 10 3 60 by,

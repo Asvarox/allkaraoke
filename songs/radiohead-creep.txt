@@ -1,19 +1,18 @@
-#ID:radiohead-creep
 #ARTIST:Radiohead
-#ARTISTORIGIN:GB
 #TITLE:Creep
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:92
 #YEAR:1992
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Radiohead&cancion=Creep
-#VIDEOID:XFkzRNyygfk
-#VIDEOGAP:0
+#VIDEO:v=XFkzRNyygfk
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:SingStar '90s
 #GAP:17976,29411764706
+#EDITION:SingStar '90s
+#ALLKARAOKE_ID:radiohead-creep
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Radiohead&cancion=Creep
 : 23 2 57 When 
 : 26 3 57 you 
 : 30 3 54 were 

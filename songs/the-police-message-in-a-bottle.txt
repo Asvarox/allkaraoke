@@ -1,19 +1,18 @@
-#ID:the-police-message-in-a-bottle
 #ARTIST:The Police
-#ARTISTORIGIN:GB
 #TITLE:Message in a bottle
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:395,9
-#REALBPM:152
 #YEAR:1979
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Police&cancion=Message%20in%20a%20bottle
-#VIDEOID:MbXWrmQW-OE
-#VIDEOGAP:0
+#VIDEO:v=MbXWrmQW-OE
 #GENRE:New Wave
 #LANGUAGE:English
-#EDITION:Rock Band Track Pack Vol. 2
 #GAP:6535,102040816327
+#EDITION:Rock Band Track Pack Vol. 2
+#ALLKARAOKE_ID:the-police-message-in-a-bottle
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Police&cancion=Message%20in%20a%20bottle
 : 26 5 20 Just 
 : 32 4 16 a 
 : 37 13 16 cast

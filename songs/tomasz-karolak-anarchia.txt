@@ -1,17 +1,16 @@
-#ID:tomasz-karolak-anarchia
 #ARTIST:Tomasz Karolak
-#ARTISTORIGIN:PL
 #TITLE:Anarchia
 #CREATOR:Angelyina
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1550
 #BPM:159,99
-#REALBPM:160
 #YEAR:2008
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3810
-#VIDEOID:kXlEez3xpPY
-#VIDEOGAP:0
+#VIDEO:v=kXlEez3xpPY
 #LANGUAGE:Polish
 #GAP:38538,685542846426
+#ALLKARAOKE_ID:tomasz-karolak-anarchia
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1550
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=3810
 : 11 2 -3 Co 
 : 13 2 -3 wy 
 : 15 2 -3 chce

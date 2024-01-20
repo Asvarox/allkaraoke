@@ -1,19 +1,18 @@
-#ID:rihanna-only-girl-in-the-world
 #ARTIST:Rihanna
-#ARTISTORIGIN:BB
 #TITLE:Only Girl (In The World)
 #CREATOR:Coppo
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
 #BPM:252,04
-#REALBPM:126
 #YEAR:2010
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=rihanna&idioma=en
-#VIDEOID:pa14VNsdSYM
-#VIDEOGAP:0
+#VIDEO:v=pa14VNsdSYM
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-01-28T20:56:12.697Z
 #GAP:16123,255832407554
+#ALLKARAOKE_ID:rihanna-only-girl-in-the-world
+#ALLKARAOKE_LASTUPDATE:2023-01-28T20:56:12.697Z
+#ALLKARAOKE_ARTISTORIGIN:BB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=rihanna&idioma=en
 : 17 3 13 La, 
 : 21 3 11 la, 
 : 29 3 9 la,

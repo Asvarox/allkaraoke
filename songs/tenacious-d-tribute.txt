@@ -1,19 +1,19 @@
-#ID:tenacious-d-tribute
 #ARTIST:Tenacious D
-#ARTISTORIGIN:US
 #TITLE:Tribute
 #CREATOR:Paisano87
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
 #BPM:300
-#REALBPM:94
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute
-#VIDEOID:_lK4cX5xGiQ
+#VIDEO:v=_lK4cX5xGiQ
 #VIDEOGAP:52
-#VOLUME:0,85
 #GENRE:Rock
 #LANGUAGE:English
 #GAP:58100
+#ALLKARAOKE_ID:tenacious-d-tribute
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paisano87
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute
+#ALLKARAOKE_VOLUME:0,85
 : 28 3 9 This
 F 32 2 9  is
 F 35 2 9  the

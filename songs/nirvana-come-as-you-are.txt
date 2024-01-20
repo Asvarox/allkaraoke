@@ -1,21 +1,20 @@
-#ID:nirvana-come-as-you-are
 #ARTIST:Nirvana
-#ARTISTORIGIN:US
 #TITLE:Come As You Are
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:340
-#REALBPM:60
 #YEAR:1992
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Come%20As%20You%20Are
-#VIDEOID:vabnZ9-ex7o
-#VIDEOGAP:0
-#VOLUME:0,65
+#VIDEO:v=vabnZ9-ex7o
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:56:52.563Z
-#EDITION:SingStar Rocks!
 #GAP:16896,29411764706
+#EDITION:SingStar Rocks!
+#ALLKARAOKE_ID:nirvana-come-as-you-are
+#ALLKARAOKE_LASTUPDATE:2023-04-19T19:56:52.563Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:60
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Come%20As%20You%20Are
+#ALLKARAOKE_VOLUME:0,65
 : 23 11 59 Come 
 : 45 9 62 as 
 : 57 5 64 you 

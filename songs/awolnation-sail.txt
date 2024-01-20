@@ -1,18 +1,17 @@
-#ID:awolnation-sail
 #ARTIST:Awolnation
-#ARTISTORIGIN:US
 #TITLE:Sail
 #CREATOR:koro008
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6689
 #BPM:239
-#REALBPM:119
 #YEAR:2010
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=14022
-#VIDEOID:tgIqecROs5M
-#VIDEOGAP:0
+#VIDEO:v=tgIqecROs5M
 #GENRE:Alternative
 #LANGUAGE:English
 #GAP:31795,81589958159
+#ALLKARAOKE_ID:awolnation-sail
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=6689
+#ALLKARAOKE_REALBPM:119
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=14022
 : 16 10 6 Sail
 - 42 284
 - 284

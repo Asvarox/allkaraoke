@@ -1,18 +1,17 @@
-#ID:bon-jovi-bad-medicine
 #ARTIST:Bon Jovi
-#ARTISTORIGIN:US
 #TITLE:Bad Medicine
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:399,5
-#REALBPM:117
 #YEAR:1988
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Bad%20Medicine
-#VIDEOID:eOUtsybozjg
-#VIDEOGAP:0
+#VIDEO:v=eOUtsybozjg
 #LANGUAGE:English
-#EDITION:Rock Band Store 2010 Vol. 4
 #GAP:46460
+#EDITION:Rock Band Store 2010 Vol. 4
+#ALLKARAOKE_ID:bon-jovi-bad-medicine
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Bad%20Medicine
 : 0 5 19 Your
 : 7 12 16  love
 : 20 3 14  is

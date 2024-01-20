@@ -1,18 +1,17 @@
-#ID:ava-max-kings-queens
 #ARTIST:Ava Max
-#ARTISTORIGIN:US
 #TITLE:Kings & Queens
 #CREATOR:Volodia
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
 #BPM:259,98
-#REALBPM:130
 #YEAR:2020
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ava%20Max&cancion=Kings%20%26%20Queens
-#VIDEOID:jH1RNk8954Q
-#VIDEOGAP:0
+#VIDEO:v=jH1RNk8954Q
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:-129,2707131317793
+#ALLKARAOKE_ID:ava-max-kings-queens
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=volodia
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ava%20Max&cancion=Kings%20%26%20Queens
 : 9 3 1 If 
 : 14 1 6 all
 : 16 2 8 ~ 

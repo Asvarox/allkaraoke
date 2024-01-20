@@ -1,19 +1,18 @@
-#ID:ray-parker-jr-ghostbusters
 #ARTIST:Ray Parker Jr.
-#ARTISTORIGIN:US
 #TITLE:Ghostbusters
 #CREATOR:gollum
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
 #BPM:230,72
-#REALBPM:116
 #YEAR:1984
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ray%20Parker%20Jr.&cancion=Ghostbusters
-#VIDEOID:Fe93CLbHjxQ
-#VIDEOGAP:0
+#VIDEO:v=Fe93CLbHjxQ
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:Lego Rock Band
 #GAP:25729,479750778817
+#EDITION:Lego Rock Band
+#ALLKARAOKE_ID:ray-parker-jr-ghostbusters
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gollum
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Ray%20Parker%20Jr.&cancion=Ghostbusters
 F 15 4 4 Ghost
 F 23 2 6 bust
 F 27 2 2 ers

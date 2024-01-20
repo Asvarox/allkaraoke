@@ -1,18 +1,17 @@
-#ID:gotye-kimbra-somebody-that-i-used-to-know
 #ARTIST:Gotye & Kimbra
-#ARTISTORIGIN:AU
 #TITLE:Somebody That I Used To Know
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:258
-#REALBPM:129
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Gotye%20%26%20Kimbra&cancion=Somebody%20That%20I%20Used%20To%20Know
-#VIDEOID:8UVNT4wvIGY
-#VIDEOGAP:0
+#VIDEO:v=8UVNT4wvIGY
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:18177,627906976744
+#ALLKARAOKE_ID:gotye-kimbra-somebody-that-i-used-to-know
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Gotye%20%26%20Kimbra&cancion=Somebody%20That%20I%20Used%20To%20Know
 - -16 1
 - 1
 : 17 3 19 Now 

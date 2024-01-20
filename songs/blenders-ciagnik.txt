@@ -1,18 +1,18 @@
-#ID:blenders-ciagnik
 #ARTIST:Blenders
-#ARTISTORIGIN:PL
 #TITLE:Ciągnik
 #CREATOR:rafallus
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
 #BPM:189,66
-#REALBPM:95
 #YEAR:1996
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12062
-#VIDEOID:eP5wNDeGqLk
+#VIDEO:v=eP5wNDeGqLk
 #VIDEOGAP:-1
 #LANGUAGE:Polish
-#LASTUPDATE:2023-01-15T13:17:14.247Z
 #GAP:10895,844353052831
+#ALLKARAOKE_ID:blenders-ciagnik
+#ALLKARAOKE_LASTUPDATE:2023-01-15T13:17:14.247Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12062
 : 13 6 10 La, 
 : 21 4 8 la, 
 : 27 2 6 la, 

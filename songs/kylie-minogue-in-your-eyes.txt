@@ -1,19 +1,18 @@
-#ID:kylie-minogue-in-your-eyes
 #ARTIST:Kylie Minogue
-#ARTISTORIGIN:AU
 #TITLE:In Your Eyes
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:247,7
-#REALBPM:123
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie%20Minogue&cancion=In%20Your%20Eyes
-#VIDEOID:OjETibEMbJY
-#VIDEOGAP:0
+#VIDEO:v=OjETibEMbJY
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:S'Star Popworld
 #GAP:15785,528865563181
+#EDITION:S'Star Popworld
+#ALLKARAOKE_ID:kylie-minogue-in-your-eyes
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Kylie%20Minogue&cancion=In%20Your%20Eyes
 : 17 4 61 What
 : 23 4 61  on
 : 29 8 61  earth

@@ -1,18 +1,17 @@
-#ID:linkin-park-faint
 #ARTIST:Linkin Park
-#ARTISTORIGIN:US
 #TITLE:Faint
 #CREATOR:¡JKA!
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #BPM:270
-#REALBPM:136
 #YEAR:2003
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint
-#VIDEOID:LYU-8IFcDPw
-#VIDEOGAP:0
+#VIDEO:v=LYU-8IFcDPw
 #GENRE:Nu Metal
 #LANGUAGE:English
 #GAP:28370
+#ALLKARAOKE_ID:linkin-park-faint
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint
 - -17 1
 - 1
 : 18 7 -8 I 

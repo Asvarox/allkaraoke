@@ -1,17 +1,14 @@
-#ID:elektryczne-gitary-koniec
 #ARTIST:Elektryczne Gitary
-#ARTISTORIGIN:PL
 #TITLE:Koniec
 #CREATOR:davidus01
-#CREATORURL:
 #BPM:187,4
-#REALBPM:98
 #YEAR:1992
-#SOURCEURL:
-#VIDEOID:dB62xkejDIc
-#VIDEOGAP:0
+#VIDEO:v=dB62xkejDIc
 #LANGUAGE:Polish
 #GAP:10499,48772678762
+#ALLKARAOKE_ID:elektryczne-gitary-koniec
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:98
 : 12 2 7 To 
 : 14 2 7 już 
 : 17 2 7 jest 

@@ -1,20 +1,19 @@
-#ID:drowning-pool-bodies
 #ARTIST:Drowning Pool
-#ARTISTORIGIN:US
 #TITLE:Bodies
 #CREATOR:subkei
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
 #BPM:261,52
-#REALBPM:131
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Drowning%20Pool&cancion=Bodies
-#VIDEOID:04F4xlWSFh0
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=04F4xlWSFh0
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-07-22T21:15:10.383Z
 #GAP:1811,9311716121138
+#ALLKARAOKE_ID:drowning-pool-bodies
+#ALLKARAOKE_LASTUPDATE:2023-07-22T21:15:10.383Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:131
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Drowning%20Pool&cancion=Bodies
+#ALLKARAOKE_VOLUME:0,7
 F 17 2 -2 Let 
 F 21 2 -4 the 
 F 25 3 0 bod

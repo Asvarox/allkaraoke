@@ -1,17 +1,16 @@
-#ID:justin-timberlake-cant-stop-the-feeling
 #ARTIST:Justin Timberlake
-#ARTISTORIGIN:US
 #TITLE:Can't stop the feeling!
 #CREATOR:Pantero
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
 #BPM:226,06
-#REALBPM:113
 #YEAR:2016
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Can't%20stop%20the%20feeling!
-#VIDEOID:p5RobDomh5U
-#VIDEOGAP:0
+#VIDEO:v=p5RobDomh5U
 #LANGUAGE:English
 #GAP:7503,689020613996
+#ALLKARAOKE_ID:justin-timberlake-cant-stop-the-feeling
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=pantero
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Can't%20stop%20the%20feeling!
 F 15 4 14 Uh
 - 19 32
 - 32

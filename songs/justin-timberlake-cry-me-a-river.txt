@@ -1,17 +1,16 @@
-#ID:justin-timberlake-cry-me-a-river
 #ARTIST:Justin Timberlake
-#ARTISTORIGIN:US
 #TITLE:Cry Me A River
 #CREATOR:Rubn4
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
 #BPM:295,7
-#REALBPM:73
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Cry%20Me%20A%20River
-#VIDEOID:DksSPZTZES0
-#VIDEOGAP:0
+#VIDEO:v=DksSPZTZES0
 #LANGUAGE:English
 #GAP:25921,45823469733
+#ALLKARAOKE_ID:justin-timberlake-cry-me-a-river
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=rubn4
+#ALLKARAOKE_REALBPM:73
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Justin%20Timberlake&cancion=Cry%20Me%20A%20River
 : 20 2 8 You 
 : 24 2 11 were 
 : 28 2 8 my 

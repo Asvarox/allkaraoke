@@ -1,19 +1,18 @@
-#ID:vengaboys-uncle-john-from-jamaica
 #ARTIST:Vengaboys
-#ARTISTORIGIN:NL
 #TITLE:Uncle John From Jamaica
 #CREATOR:fepo
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
 #BPM:312
-#REALBPM:103
 #YEAR:2000
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12146
-#VIDEOID:pKksMJY1z0g
-#VIDEOGAP:0
+#VIDEO:v=pKksMJY1z0g
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:Fepo eigene
 #GAP:10807,384615384615
+#EDITION:Fepo eigene
+#ALLKARAOKE_ID:vengaboys-uncle-john-from-jamaica
+#ALLKARAOKE_ARTISTORIGIN:NL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=12146
 : 21 9 9 Na 
 : 33 3 7 na 
 : 39 3 5 na 

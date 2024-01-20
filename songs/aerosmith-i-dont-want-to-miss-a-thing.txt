@@ -1,17 +1,13 @@
-#ID:aerosmith-i-dont-want-to-miss-a-thing
 #ARTIST:Aerosmith
-#ARTISTORIGIN:US
 #TITLE:I don't want to miss a thing
-#CREATOR:
-#CREATORURL:
 #BPM:483,6
-#REALBPM:121
 #YEAR:1998
-#SOURCEURL:
-#VIDEOID:JkK8g6FMEXE
-#VIDEOGAP:0
+#VIDEO:v=JkK8g6FMEXE
 #LANGUAGE:English
 #GAP:30870
+#ALLKARAOKE_ID:aerosmith-i-dont-want-to-miss-a-thing
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:121
 : 4 8 9 I
 : 16 4 9  could
 : 26 8 6  stay

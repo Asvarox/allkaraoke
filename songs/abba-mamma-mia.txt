@@ -1,18 +1,17 @@
-#ID:abba-mamma-mia
 #ARTIST:ABBA
-#ARTISTORIGIN:SE
 #TITLE:Mamma Mia
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:273,4
-#REALBPM:136
 #YEAR:1975
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Mamma%20Mia
-#VIDEOID:unfzfe8f9NI
-#VIDEOGAP:0
+#VIDEO:v=unfzfe8f9NI
 #LANGUAGE:English
-#EDITION:SingStar ABBA
 #GAP:14563
+#EDITION:SingStar ABBA
+#ALLKARAOKE_ID:abba-mamma-mia
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Mamma%20Mia
 : 0 6 57 I've
 : 8 6 62  been
 : 17 3 61  cheat

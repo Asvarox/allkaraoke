@@ -1,18 +1,17 @@
-#ID:smash-mouth-im-a-believer
 #ARTIST:Smash Mouth
-#ARTISTORIGIN:US
 #TITLE:I'm a believer
 #CREATOR:gilrael
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #BPM:329,48
-#REALBPM:161
 #YEAR:2001
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=I'm%20a%20believer
-#VIDEOID:0mYBSayCsH0
-#VIDEOGAP:0
+#VIDEO:v=0mYBSayCsH0
 #GENRE:Banda sonora
 #LANGUAGE:English
 #GAP:5350
+#ALLKARAOKE_ID:smash-mouth-im-a-believer
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
+#ALLKARAOKE_REALBPM:161
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=I'm%20a%20believer
 : 0 3 -8 I
 : 4 4 -6 ~
 : 12 4 -6  thought

@@ -1,18 +1,17 @@
-#ID:aerosmith-dream-on
 #ARTIST:Aerosmith
-#ARTISTORIGIN:US
 #TITLE:Dream on
 #CREATOR:gouthamma
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gouthamma
 #BPM:288
-#REALBPM:78
 #YEAR:1973
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Dream%20on
-#VIDEOID:89dGC8de0CA
-#VIDEOGAP:0
+#VIDEO:v=89dGC8de0CA
 #GENRE:Other
 #LANGUAGE:English
 #GAP:38206
+#ALLKARAOKE_ID:aerosmith-dream-on
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gouthamma
+#ALLKARAOKE_REALBPM:78
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Dream%20on
 : 0 3 -2 E
 : 4 9 0 very
 : 14 19 5  time

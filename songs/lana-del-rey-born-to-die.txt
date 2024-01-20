@@ -1,22 +1,20 @@
-#ID:lana-del-rey-born-to-die
 #ARTIST:Lana Del Rey
-#ARTISTORIGIN:US
 #TITLE:Born To Die
-#CREATOR:
-#CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben
 #BPM:171,7
-#REALBPM:96
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Lana%20Del%20Rey&cancion=Born%20To%20Die
 #PREVIEWSTART:66
-#PREVIEWEND:84
-#VIDEOID:E_jWcIDqXq0
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=E_jWcIDqXq0
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-10-15T11:26:31.301Z
 #GAP:21770,021549213743
+#ALLKARAOKE_ID:lana-del-rey-born-to-die
+#ALLKARAOKE_LASTUPDATE:2023-10-15T11:26:31.301Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Lana%20Del%20Rey&cancion=Born%20To%20Die
+#ALLKARAOKE_PREVIEWEND:84
+#ALLKARAOKE_VOLUME:0,7
 : 11 3 21 Feet
 : 15 3 23 ~ 
 : 19 6 23 don't 

@@ -1,21 +1,20 @@
-#ID:keane-everybodys-changing
 #ARTIST:Keane
-#ARTISTORIGIN:GB
 #TITLE:Everybody’s Changing
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:376
-#REALBPM:93
 #YEAR:2004
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=545
-#VIDEOID:RSNmgE6L8AU
-#VIDEOGAP:0
-#VOLUME:0,69
+#VIDEO:v=RSNmgE6L8AU
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T17:22:31.814Z
-#EDITION:SingStar Rocks!
 #GAP:21112,659574468085
+#EDITION:SingStar Rocks!
+#ALLKARAOKE_ID:keane-everybodys-changing
+#ALLKARAOKE_LASTUPDATE:2023-11-30T17:22:31.814Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:93
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=545
+#ALLKARAOKE_VOLUME:0,69
 : 25 22 4 You 
 : 49 22 2 say 
 : 73 6 0 you 

@@ -1,21 +1,20 @@
-#ID:julieta-venegas-limun-y-sal
 #ARTIST:Julieta Venegas
-#ARTISTORIGIN:MX
 #TITLE:Limón Y Sal
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:222
-#REALBPM:111
 #YEAR:2006
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Julieta%20Venegas&cancion=Lim%C3%B3n%20Y%20Sal
-#VIDEOID:tIpzfs5tBJU
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=tIpzfs5tBJU
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.570Z
-#EDITION:SingStar Latino
 #GAP:6350,486486486487
+#EDITION:SingStar Latino
+#ALLKARAOKE_ID:julieta-venegas-limun-y-sal
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.570Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:111
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Julieta%20Venegas&cancion=Lim%C3%B3n%20Y%20Sal
+#ALLKARAOKE_VOLUME:0,6
 : 15 8 56 Uuh
 : 23 8 59 ~
 : 31 8 58 ~

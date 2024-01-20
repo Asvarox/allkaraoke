@@ -1,19 +1,18 @@
-#ID:the-rolling-stones-paint-it-black
 #ARTIST:The Rolling Stones
-#ARTISTORIGIN:GB
 #TITLE:Paint It, Black
 #CREATOR:Peschi
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
 #BPM:318
-#REALBPM:159
 #YEAR:1966
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2157
-#VIDEOID:O4irXQhgMqg
-#VIDEOGAP:0
+#VIDEO:v=O4irXQhgMqg
 #GENRE:Rock
 #LANGUAGE:English
-#EDITION:SingStar Rocks
 #GAP:13814,433962264151
+#EDITION:SingStar Rocks
+#ALLKARAOKE_ID:the-rolling-stones-paint-it-black
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
+#ALLKARAOKE_REALBPM:159
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=2157
 : 21 5 53 I 
 : 29 4 55 see 
 : 35 5 56 a 

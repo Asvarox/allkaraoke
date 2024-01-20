@@ -1,17 +1,16 @@
-#ID:smash-mouth-all-star-but-the-whole-song-is-sung-on-a-c-note
 #ARTIST:Smash Mouth
-#ARTISTORIGIN:US
 #TITLE:All Star but the whole song is sung on a C Note
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:208
-#REALBPM:103
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star
-#VIDEOID:qVIyE5717AU
-#VIDEOGAP:0
+#VIDEO:v=qVIyE5717AU
 #LANGUAGE:English
 #GAP:200
+#ALLKARAOKE_ID:smash-mouth-all-star-but-the-whole-song-is-sung-on-a-c-note
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star
 : 0 6 12 Some
 : 8 3 12 bo
 * 12 3 12 dy

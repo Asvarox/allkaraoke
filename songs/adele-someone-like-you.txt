@@ -1,18 +1,17 @@
-#ID:adele-someone-like-you
 #ARTIST:Adele
-#ARTISTORIGIN:GB
 #TITLE:Someone Like You
 #CREATOR:nauce
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nauce
 #BPM:270
-#REALBPM:72
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)
-#VIDEOID:hLQl3WQQoQ0
-#VIDEOGAP:0
+#VIDEO:v=hLQl3WQQoQ0
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:13065
+#ALLKARAOKE_ID:adele-someone-like-you
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nauce
+#ALLKARAOKE_REALBPM:72
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)
 : 18 2 1 I
 : 21 19 4 ~ 
 : 42 17 1 heard

@@ -1,20 +1,19 @@
-#ID:maneskin-the-loneliest
 #ARTIST:Måneskin
-#ARTISTORIGIN:IT
 #TITLE:The Loneliest
 #CREATOR:Angs
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=angs
 #BPM:260
-#REALBPM:65
 #YEAR:2022
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=The%20Loneliest
-#VIDEOID:odWKEfp2QMY
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=odWKEfp2QMY
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-05-20T14:13:53.968Z
 #GAP:15917,23076923077
+#ALLKARAOKE_ID:maneskin-the-loneliest
+#ALLKARAOKE_LASTUPDATE:2023-05-20T14:13:53.968Z
+#ALLKARAOKE_ARTISTORIGIN:IT
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=angs
+#ALLKARAOKE_REALBPM:65
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=M%C3%A5neskin&cancion=The%20Loneliest
+#ALLKARAOKE_VOLUME:0,6
 : 17 4 6 You'll 
 : 24 6 2 be 
 : 32 3 6 the 

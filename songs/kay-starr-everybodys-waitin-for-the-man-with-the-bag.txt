@@ -1,21 +1,20 @@
-#ID:kay-starr-everybodys-waitin-for-the-man-with-the-bag
 #ARTIST:Kay Starr
-#ARTISTORIGIN:US
 #TITLE:(Everybody’s Waitin’ For) The Man With The Bag
 #CREATOR:lozboorman
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=91773
 #BPM:272,28
-#REALBPM:141
 #YEAR:1950
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=19330
-#VIDEOID:cfzK-pXE5-A
-#VIDEOGAP:0
-#VOLUME:0,67
+#VIDEO:v=cfzK-pXE5-A
 #GENRE:Christmas
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T16:28:14.711Z
-#EDITION:Christmas
 #GAP:5818,373732921992
+#EDITION:Christmas
+#ALLKARAOKE_ID:kay-starr-everybodys-waitin-for-the-man-with-the-bag
+#ALLKARAOKE_LASTUPDATE:2023-11-30T16:28:14.711Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=91773
+#ALLKARAOKE_REALBPM:141
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=19330
+#ALLKARAOKE_VOLUME:0,67
 : 18 5 7 Old 
 : 27 3 11 M
 : 33 1 7 r.

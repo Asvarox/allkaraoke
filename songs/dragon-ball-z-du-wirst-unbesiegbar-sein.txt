@@ -1,19 +1,18 @@
-#ID:dragon-ball-z-du-wirst-unbesiegbar-sein
 #ARTIST:Dragon Ball Z
 #TITLE:Du Wirst Unbesiegbar Sein
 #CREATOR:Mr Flow
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=4450
 #BPM:339
-#REALBPM:170
 #YEAR:1990
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5008
-#VIDEOID:EO090Z7Cjqc
-#VIDEOGAP:0
-#VOLUME:0,75
+#VIDEO:v=EO090Z7Cjqc
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-08-20T08:30:36.906Z
 #GAP:18512,300884955752
+#ALLKARAOKE_ID:dragon-ball-z-du-wirst-unbesiegbar-sein
+#ALLKARAOKE_LASTUPDATE:2023-08-20T08:30:36.906Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=4450
+#ALLKARAOKE_REALBPM:170
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5008
+#ALLKARAOKE_VOLUME:0,75
 : 23 3 4 Du 
 : 27 3 2 hast 
 : 31 3 4 längst 

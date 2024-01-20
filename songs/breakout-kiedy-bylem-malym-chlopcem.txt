@@ -1,18 +1,15 @@
-#ID:breakout-kiedy-bylem-malym-chlopcem
 #ARTIST:Breakout
-#ARTISTORIGIN:PL
 #TITLE:Kiedy byłem małym chłopcem
 #CREATOR:Pit33
-#CREATORURL:
 #BPM:241,3
-#REALBPM:120
 #YEAR:1971
-#SOURCEURL:
-#VIDEOID:lWXSUuosxtk
-#VIDEOGAP:0
+#VIDEO:v=lWXSUuosxtk
 #GENRE:Blues
 #LANGUAGE:Polish
 #GAP:23489,81589958159
+#ALLKARAOKE_ID:breakout-kiedy-bylem-malym-chlopcem
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_REALBPM:120
 : 16 3 14 Kie
 : 20 2 11 dy 
 : 24 3 9 by

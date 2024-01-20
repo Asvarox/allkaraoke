@@ -1,22 +1,21 @@
-#ID:owl-city-fireflies
 #ARTIST:Owl City
-#ARTISTORIGIN:US
 #TITLE:Fireflies
 #CREATOR:gaspar17
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
 #BPM:270,05
-#REALBPM:180
 #YEAR:2009
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8168
-#VIDEOID:psuRGfAaju4
-#VIDEOGAP:0
-#VOLUME:0,84
+#VIDEO:v=psuRGfAaju4
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-11-16T06:24:40.584Z
-#EDITION:None
 #GAP:24030,18515089798
-#TRACKNAMES:["Fireflies"]
+#EDITION:None
+#ALLKARAOKE_ID:owl-city-fireflies
+#ALLKARAOKE_LASTUPDATE:2023-11-16T06:24:40.584Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8168
+#ALLKARAOKE_VOLUME:0,84
+#P1:Fireflies
 : 18 2 -2 You 
 : 21 4 5 would 
 : 27 4 5 not 

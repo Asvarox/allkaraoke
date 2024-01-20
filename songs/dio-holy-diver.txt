@@ -1,20 +1,20 @@
-#ID:dio-holy-diver
 #ARTIST:Dio
-#ARTISTORIGIN:US
 #TITLE:Holy Diver
 #CREATOR:Ultrastar-Songs
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=815
 #BPM:368,6
-#REALBPM:184
 #YEAR:1983
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8329
-#VIDEOID:2lvs2FzF64o
+#VIDEO:v=2lvs2FzF64o
 #VIDEOGAP:45
-#VOLUME:0,81
 #GENRE:Heavy Metal
 #LANGUAGE:English
-#LASTUPDATE:2023-12-22T16:33:52.197Z
 #GAP:59392,63700488334
+#ALLKARAOKE_ID:dio-holy-diver
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:52.197Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=815
+#ALLKARAOKE_REALBPM:184
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8329
+#ALLKARAOKE_VOLUME:0,81
 : 25 14 7 Hmm 
 : 41 2 5 hmm 
 : 45 2 3 hmm 

@@ -1,21 +1,20 @@
-#ID:keane-somewhere-only-we-know
 #ARTIST:Keane
-#ARTISTORIGIN:GB
 #TITLE:Somewhere Only We Know
 #CREATOR:Canni
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
 #BPM:344
-#REALBPM:172
 #YEAR:2004
-#SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=546
-#VIDEOID:Oextk-If8HQ
-#VIDEOGAP:0
-#VOLUME:0,79
+#VIDEO:v=Oextk-If8HQ
 #GENRE:Rock
 #LANGUAGE:English
-#LASTUPDATE:2023-11-30T17:22:31.815Z
-#EDITION:SingStar The Dome
 #GAP:24887,093023255813
+#EDITION:SingStar The Dome
+#ALLKARAOKE_ID:keane-somewhere-only-we-know
+#ALLKARAOKE_LASTUPDATE:2023-11-30T17:22:31.815Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=546
+#ALLKARAOKE_VOLUME:0,79
 : 23 7 -3 I 
 : 31 6 4 walked 
 : 39 3 4 a

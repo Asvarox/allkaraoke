@@ -1,19 +1,18 @@
-#ID:jesse-joy-corre
 #ARTIST:Jesse & Joy
 #TITLE:!Corre!
 #CREATOR:vicktoben
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
 #BPM:304
-#REALBPM:152
 #YEAR:2011
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jesse%20%26%20Joy&cancion=%C2%A1Corre!
-#VIDEOID:P2hM9CLAMu4
-#VIDEOGAP:0
-#VOLUME:0,85
+#VIDEO:v=P2hM9CLAMu4
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.564Z
 #GAP:44448,15789473684
+#ALLKARAOKE_ID:jesse-joy-corre
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.564Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben
+#ALLKARAOKE_REALBPM:152
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Jesse%20%26%20Joy&cancion=%C2%A1Corre!
+#ALLKARAOKE_VOLUME:0,85
 : 20 2 6 Me 
 : 24 2 15 mi
 : 28 4 18 ras 

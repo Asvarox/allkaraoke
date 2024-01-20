@@ -1,18 +1,17 @@
-#ID:abba-the-winner-takes-it-all
 #ARTIST:ABBA
-#ARTISTORIGIN:SE
 #TITLE:The Winner Takes It All
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:339,36
-#REALBPM:61
 #YEAR:1980
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=The%20Winner%20Takes%20It%20All
-#VIDEOID:92cwKCU8Z5c
-#VIDEOGAP:0
+#VIDEO:v=92cwKCU8Z5c
 #LANGUAGE:English
-#EDITION:SingStar ABBA
 #GAP:35114
+#EDITION:SingStar ABBA
+#ALLKARAOKE_ID:abba-the-winner-takes-it-all
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:61
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=The%20Winner%20Takes%20It%20All
 : 0 7 61 I
 : 7 6 63  don't
 : 14 4 65  wan

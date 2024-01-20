@@ -1,18 +1,17 @@
-#ID:scorpions-wind-of-change
 #ARTIST:Scorpions
-#ARTISTORIGIN:DE
 #TITLE:Wind of Change
 #CREATOR:a224
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3
 #BPM:303,6
-#REALBPM:75
 #YEAR:1991
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=538
-#VIDEOID:n4RjJKxsamQ
-#VIDEOGAP:0
+#VIDEO:v=n4RjJKxsamQ
 #LANGUAGE:English
-#EDITION:SingStar Rocks
 #GAP:21930,83
+#EDITION:SingStar Rocks
+#ALLKARAOKE_ID:scorpions-wind-of-change
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=3
+#ALLKARAOKE_REALBPM:75
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=538
 : 0 4 7 I
 : 5 4 12  fol
 : 9 11 14 low

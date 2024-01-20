@@ -1,19 +1,18 @@
-#ID:vengaboys-were-going-to-ibiza
 #ARTIST:Vengaboys
-#ARTISTORIGIN:NL
 #TITLE:We’re going to Ibiza
 #CREATOR:fepo
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
 #BPM:311,97
-#REALBPM:104
 #YEAR:1998
-#SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18159
-#VIDEOID:MXXRHpVed3M
-#VIDEOGAP:0
+#VIDEO:v=MXXRHpVed3M
 #GENRE:Pop
 #LANGUAGE:English
-#EDITION:Fepo eigene
 #GAP:-63,223194537936365
+#EDITION:Fepo eigene
+#ALLKARAOKE_ID:vengaboys-were-going-to-ibiza
+#ALLKARAOKE_ARTISTORIGIN:NL
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=18159
 F 15 2 5 Hel
 F 18 2 5 lo 
 F 23 2 5 par

@@ -1,21 +1,20 @@
-#ID:amaral-sin-ti-no-soy-nada
 #ARTIST:Amaral
-#ARTISTORIGIN:ES
 #TITLE:Sin ti no soy nada
 #CREATOR:TeLiXj
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #BPM:300
-#REALBPM:122
 #YEAR:2002
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Amaral&cancion=Sin%20ti%20no%20soy%20nada
-#VIDEOID:qcC92ZnhGQY
-#VIDEOGAP:0
-#VOLUME:0,7
+#VIDEO:v=qcC92ZnhGQY
 #GENRE:Pop
 #LANGUAGE:Spanish
-#LASTUPDATE:2023-08-15T14:54:44.555Z
-#EDITION:SingStar Pop
 #GAP:7500
+#EDITION:SingStar Pop
+#ALLKARAOKE_ID:amaral-sin-ti-no-soy-nada
+#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.555Z
+#ALLKARAOKE_ARTISTORIGIN:ES
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Amaral&cancion=Sin%20ti%20no%20soy%20nada
+#ALLKARAOKE_VOLUME:0,7
 : 20 4 60 Sin 
 : 26 5 65 ti 
 : 33 5 64 no 

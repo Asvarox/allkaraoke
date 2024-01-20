@@ -1,21 +1,19 @@
-#ID:bohse-onkelz-wir-ham-noch-lange-nicht-genug
 #ARTIST:Böhse Onkelz
-#ARTISTORIGIN:DE
 #TITLE:Wir ham’ noch lange nicht genug
 #CREATOR:Canni
-#CREATORURL:
 #BPM:296
-#REALBPM:148
 #YEAR:1991
-#SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1450
-#VIDEOID:L_3YJOZmmfk
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=L_3YJOZmmfk
 #GENRE:None
 #LANGUAGE:German
-#LASTUPDATE:2023-10-12T18:16:49.079Z
-#EDITION:[SC]-Songs
 #GAP:46666,48648648649
+#EDITION:[SC]-Songs
+#ALLKARAOKE_ID:bohse-onkelz-wir-ham-noch-lange-nicht-genug
+#ALLKARAOKE_LASTUPDATE:2023-10-12T18:16:49.079Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=1450
+#ALLKARAOKE_VOLUME:0,6
 : 20 5 7 End
 : 28 5 0 lich 
 : 36 5 0 wie

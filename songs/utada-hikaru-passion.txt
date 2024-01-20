@@ -1,20 +1,19 @@
-#ID:utada-hikaru-passion
 #ARTIST:Utada Hikaru
-#ARTISTORIGIN:JP
 #TITLE:Passion
 #CREATOR:ReDsKiN
-#CREATORURL:http://usdb.animux.de/index.php?link=profil&id=4123
 #BPM:436
-#REALBPM:109
 #YEAR:2005
-#SOURCEURL:https://usdb.animux.de/?link=detail&id=4903
-#VIDEOID:kT-YtuzNqIY
-#VIDEOGAP:0
-#VOLUME:1
+#VIDEO:v=kT-YtuzNqIY
 #GENRE:J-Pop
 #LANGUAGE:Japanese
-#LASTUPDATE:2023-12-22T16:33:54.016Z
 #GAP:3922,293577981651
+#ALLKARAOKE_ID:utada-hikaru-passion
+#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:54.016Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=4123
+#ALLKARAOKE_REALBPM:109
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=4903
+#ALLKARAOKE_VOLUME:1
 : 29 7 16 Ah 
 : 38 5 20 ~
 : 49 7 23 ~

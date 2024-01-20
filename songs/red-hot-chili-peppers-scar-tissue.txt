@@ -1,20 +1,19 @@
-#ID:red-hot-chili-peppers-scar-tissue
 #ARTIST:Red Hot Chili Peppers
-#ARTISTORIGIN:US
 #TITLE:Scar Tissue
 #CREATOR:mustangfred
-#CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
 #BPM:360
-#REALBPM:89
 #YEAR:1999
-#SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Scar%20Tissue
-#VIDEOID:mzJj5-lubeM
-#VIDEOGAP:0
-#VOLUME:0,6
+#VIDEO:v=mzJj5-lubeM
 #GENRE:Pop
 #LANGUAGE:English
-#LASTUPDATE:2023-04-19T19:53:19.016Z
 #GAP:10372
+#ALLKARAOKE_ID:red-hot-chili-peppers-scar-tissue
+#ALLKARAOKE_LASTUPDATE:2023-04-19T19:53:19.016Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Scar%20Tissue
+#ALLKARAOKE_VOLUME:0,6
 : 24 7 9 Scar 
 : 33 4 9 tis
 : 38 3 7 sue 
