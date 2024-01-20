@@ -11,27 +11,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  unit-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: './.github/templates/setup-node'
-      - run: yarn test:ci
-  lint:
+  quick-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: yarn npm-run-all --continue-on-error prettier-check lint types-check test:ci build-storybook unimported
-  ts-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: './.github/templates/setup-node'
-      - run: yarn tsc --noEmit
   e2e-tests-run-chromium:
     runs-on: ubuntu-latest
     env:
@@ -78,7 +64,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'unit-tests', 'lint', 'ts-check']
+    needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'quick-checks']
     steps:
       - uses: actions/checkout@v3
         with:
