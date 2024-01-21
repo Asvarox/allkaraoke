@@ -43,8 +43,8 @@ test('Should return proper coordinates to draw a legit small note', async ({ mou
     const ctx = canvas.getContext('2d')!;
 
     const start = drawSprite(ctx, 'p0Miss', 'start', 10, 10);
-    drawSprite(ctx, 'p0Hit', 'middle', 10 + start.w, 10, 40);
-    drawSprite(ctx, 'p0Hit', 'end', 10 + start.w + 40, 10);
+    drawSprite(ctx, 'p0Miss', 'middle', 10 + start.w, 10, 40);
+    drawSprite(ctx, 'p0Miss', 'end', 10 + start.w + 40, 10);
   });
 
   await expect(await component.screenshot()).toMatchSnapshot('proper-legit-small-note.png', {

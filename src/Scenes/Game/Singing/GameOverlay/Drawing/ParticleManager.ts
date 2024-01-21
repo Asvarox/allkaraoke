@@ -21,6 +21,8 @@ class ParticleManager {
   };
 
   public add = (particle: Particle) => this.particles.push(particle);
+
+  public clearAll = () => (this.particles = []);
 }
 
 export default new ParticleManager();

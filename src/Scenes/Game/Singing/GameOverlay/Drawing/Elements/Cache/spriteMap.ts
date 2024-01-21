@@ -35,8 +35,8 @@ const getPlayerSprite = (
 ) => ({
   draw: (ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number) =>
     drawRawPlayerNote(ctx, x, y, w, h, playerNumber, isHit, isPerfect, isStar),
-  width: NOTE_HEIGHT + 1,
-  height: NOTE_HEIGHT,
+  width: isBig ? BIG_NOTE_HEIGHT : NOTE_HEIGHT + 1,
+  height: isBig ? BIG_NOTE_HEIGHT : NOTE_HEIGHT,
   padding: SHADOW_PAD,
   fragments: isBig ? bigNoteFragments : smallNoteFragments,
 });

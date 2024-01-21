@@ -79,6 +79,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
         </BackgroundContainer>
         {song.data && (
           <Player
+            pauseMenu
             ref={player}
             onStatusChange={setPlayerState}
             playerChanges={playerChanges}

@@ -11,7 +11,7 @@ test('Mic input should properly return frequencies', async ({ mount, page }) => 
 
     const frequencies: [number, number][] = [];
 
-    await new Promise((resolve) => setTimeout(resolve, 100));
+    await new Promise((resolve) => setTimeout(resolve, 200));
     for (let i = 0; i < 20; i++) {
       frequencies.push(await MicInput.getFrequencies());
       await new Promise((resolve) => setTimeout(resolve, 100));

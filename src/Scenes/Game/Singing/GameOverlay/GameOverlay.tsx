@@ -5,7 +5,7 @@ import SkipIntro from 'Scenes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'Scenes/Game/Singing/GameOverlay/Components/SkipOutro';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
-import { useEffect, useRef } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
@@ -31,22 +31,41 @@ interface Props {
 
 const MAX_RENDER_RESOLUTION_W = 1920;
 
-function GameOverlay({
-  currentStatus,
-  width,
-  height,
-  playerSetups,
-  onSongEnd,
-  playerChanges,
-  effectsEnabled,
-  videoPlayerRef,
-  isPauseMenuVisible,
-}: Props) {
+const GameOverlay = forwardRef(function (
+  {
+    currentStatus,
+    width,
+    height,
+    playerSetups,
+    onSongEnd,
+    playerChanges,
+    effectsEnabled,
+    videoPlayerRef,
+    isPauseMenuVisible,
+  }: Props,
+  fRef,
+) {
   const [graphicLevel] = useSettingValue(GraphicSetting);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const canvas = useRef<HTMLCanvasElement | null>(null);
   const drawer = useRef<CanvasDrawing | null>(null);
   const lyrics = useRef<HTMLDivElement | null>(null);
+
+  const overlayWidth = MAX_RENDER_RESOLUTION_W;
+  const overlayHeight = overlayWidth * (height / width);
+
+  const overlayScaleFactor = overlayHeight / height;
+
+  useImperativeHandle(
+    fRef,
+    () => {
+      return {
+        pause: () => drawer.current?.pause(),
+        resume: () => drawer.current?.resume(),
+      };
+    },
+    [drawer.current, lyrics.current?.offsetHeight, overlayScaleFactor],
+  );
 
   useEffect(() => {
     GameState.startInputMonitoring();
@@ -56,10 +75,6 @@ function GameOverlay({
     };
   }, []);
 
-  const overlayWidth = MAX_RENDER_RESOLUTION_W;
-  const overlayHeight = overlayWidth * (height / width);
-
-  const overlayScaleFactor = overlayHeight / height;
   // const resolutionScaleFactor = overlayWidth / MAX_RENDER_RESOLUTION_W;
 
   useEffect(() => {
@@ -75,7 +90,7 @@ function GameOverlay({
     return () => {
       drawer.current?.end();
     };
-  }, [canvas.current, lyrics.current?.offsetHeight, overlayScaleFactor]);
+  }, [lyrics.current?.offsetHeight, overlayScaleFactor]);
 
   useEffect(() => {
     if (isPauseMenuVisible && drawer.current?.isPlaying()) {
@@ -158,7 +173,7 @@ function GameOverlay({
       </LyricsWrapper>
     </Screen>
   );
-}
+});
 
 export default GameOverlay;
 
