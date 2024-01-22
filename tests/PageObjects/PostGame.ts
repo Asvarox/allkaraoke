@@ -19,12 +19,8 @@ export class PostGamePO {
     await this.page.getByTestId('highscores-button').click();
   }
 
-  public getEditPlayerNameHighscoreInput(playerName: string) {
+  public getPlayerNameHighScoreInput(playerName: string) {
     return this.page.locator(`[data-test="input-edit-highscore"][data-original-name="${playerName}"]`);
-  }
-
-  public async expectPlayerNameToBeVisibleOnHighscoreList(playerName: string) {
-    await expect(this.getEditPlayerNameHighscoreInput(playerName)).toBeVisible();
   }
 
   public async navigateAndUpdateHighestScorePlayerNameByKeyboard(newName: string) {
@@ -35,7 +31,7 @@ export class PostGamePO {
     await this.page.waitForTimeout(500); // It takes 300ms to save the score
   }
 
-  public get highscoresContainer() {
+  public get highScoresContainer() {
     return this.page.getByTestId('highscores-container');
   }
 

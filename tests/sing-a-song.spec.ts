@@ -38,8 +38,8 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await expect(pages.songPreviewPage.nextButton).not.toBeVisible();
 
   await pages.songListPage.navigateToSongWithKeyboard(song2);
-  await expect(pages.songListPage.duetSongIcon(song2)).toBeVisible();
-  await expect(pages.songListPage.duetSongIcon(song1)).not.toBeVisible();
+  await expect(pages.songListPage.getDuetSongIcon(song2)).toBeVisible();
+  await expect(pages.songListPage.getDuetSongIcon(song1)).not.toBeVisible();
 
   await pages.songListPage.goToPlaylist(playlistName);
   await pages.songListPage.approveSelectedSongByKeyboard();
@@ -56,17 +56,17 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.songPreviewPage.navigateToGoNextByKeyboard();
 
   // Player 1
-  await expect(pages.songPreviewPage.playerNameInput(player1)).toBeVisible();
+  await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
   await pages.songPreviewPage.navigateAndEnterPlayerNameByKeyboard(player1, player1Name);
-  await pages.songPreviewPage.expectEnteredPlayerNameToBeVisible(player1, player1Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBe(player1, player1Name);
 
   await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsByKeyboard(player1);
   await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1, track2);
 
   // Player 2
-  await expect(pages.songPreviewPage.playerNameInput(player2)).toBeVisible();
+  await expect(pages.songPreviewPage.getPlayerNameInput(player2)).toBeVisible();
   await pages.songPreviewPage.navigateAndEnterPlayerNameByKeyboard(player2, player2Name);
-  await pages.songPreviewPage.expectEnteredPlayerNameToBeVisible(player2, player2Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBe(player2, player2Name);
 
   await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsByKeyboard(player2);
   await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2, track1);
@@ -96,18 +96,18 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.postGame.expectPlayerNameToBeDisplayed(player2, player2Name);
   await pages.postGame.skipScoresAnimation();
   await pages.postGame.goNext();
-  await pages.postGame.expectPlayerNameToBeVisibleOnHighscoreList(player1Name);
-  await pages.postGame.expectPlayerNameToBeVisibleOnHighscoreList(player2Name);
+  await expect(pages.postGame.getPlayerNameHighScoreInput(player1Name)).toBeVisible();
+  await expect(pages.postGame.getPlayerNameHighScoreInput(player2Name)).toBeVisible();
 
   await pages.postGame.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
   await pages.postGame.goToSelectNewSong();
-  await pages.songListPage.expectSongPlayedTodayIndicatorToBe(song2);
-  await pages.songListPage.expectPlaylistToBeVisibleAsSelected(playlistName);
+  await pages.songListPage.expectSongToBeMarkedAsPlayedToday(song2);
+  await pages.songListPage.expectPlaylistToBeSelected(playlistName);
   await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
   await pages.songListPage.approveSelectedSongByKeyboard();
   await pages.songPreviewPage.navigateToGoNextByKeyboard();
-  await pages.songPreviewPage.expectEnteredPlayerNameToBeVisibleInNextSong(player1, player1Name);
-  await pages.songPreviewPage.expectEnteredPlayerNameToBeVisibleInNextSong(player2, player2Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player1, player1Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player2, player2Name);
 
   await pages.songPreviewPage.expectRecentPlayerListToContainName(updatedName);
   await pages.songPreviewPage.playTheSong();
@@ -120,5 +120,5 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.gamePage.goToExitSong();
   await pages.postGame.skipScoresAnimation();
   await pages.postGame.goNext();
-  await expect(pages.postGame.highscoresContainer).toContainText(updatedName);
+  await expect(pages.postGame.highScoresContainer).toContainText(updatedName);
 });

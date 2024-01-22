@@ -52,15 +52,15 @@ export class SongListPagePO {
     await this.getPlaylistElement(name).click();
   }
 
-  public async expectPlaylistToBeVisibleAsSelected(name: string) {
+  public async expectPlaylistToBeSelected(name: string) {
     await expect(this.getPlaylistElement(name)).toHaveAttribute('data-selected', 'true');
   }
 
-  public duetSongIcon(songID: string) {
+  public getDuetSongIcon(songID: string) {
     return this.getSongElement(songID).getByTestId('multitrack-indicator');
   }
 
-  public async expectSongPlayedTodayIndicatorToBe(songID: string) {
+  public async expectSongToBeMarkedAsPlayedToday(songID: string) {
     await expect(this.getSongElement(songID).getByTestId('song-stat-indicator')).toContainText('Played today', {
       ignoreCase: true,
     });

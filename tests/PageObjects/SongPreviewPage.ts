@@ -50,7 +50,7 @@ export class SongPreviewPagePO {
     await expect(this.difficultySettingsElement).toHaveAttribute('data-test-value', `${level}`);
   }
 
-  public playerNameInput(playerNumber: number) {
+  public getPlayerNameInput(playerNumber: number) {
     return this.page.getByTestId(`player-${playerNumber}-name`);
   }
 
@@ -69,21 +69,21 @@ export class SongPreviewPagePO {
     await this.enterPlayerNameByKeyboard(playerName);
   }
 
-  public async expectEnteredPlayerNameToBeVisible(playerNumber: number, playerName: string) {
-    await expect(this.playerNameInput(playerNumber)).toHaveAttribute('value', `${playerName}`);
+  public async expectEnteredPlayerNameToBe(playerNumber: number, playerName: string) {
+    await expect(this.getPlayerNameInput(playerNumber)).toHaveAttribute('value', `${playerName}`);
   }
 
-  public async expectEnteredPlayerNameToBeVisibleInNextSong(playerNumber: number, playerName: string) {
-    await expect(this.playerNameInput(playerNumber)).toHaveAttribute('placeholder', `${playerName}`);
+  public async expectEnteredPlayerNameToBePrefilledWith(playerNumber: number, playerName: string) {
+    await expect(this.getPlayerNameInput(playerNumber)).toHaveAttribute('placeholder', `${playerName}`);
   }
 
   public async expectRecentPlayerListToContainName(name: string) {
-    await this.playerNameInput(0).click();
+    await this.getPlayerNameInput(0).click();
     await expect(this.page.locator('role=listbox')).toContainText(`${name}`);
     await this.page.keyboard.press('Enter');
   }
 
-  public playerTrackSettingsElement(playerNumber: number) {
+  public getPlayerTrackSettings(playerNumber: number) {
     return this.page.getByTestId(`player-${playerNumber}-track-setting`);
   }
 
@@ -93,6 +93,6 @@ export class SongPreviewPagePO {
   }
 
   public async expectPlayerTrackNumberToBe(playerNumber: number, trackNumber: number) {
-    await expect(this.playerTrackSettingsElement(playerNumber)).toHaveAttribute('data-test-value', `${trackNumber}`);
+    await expect(this.getPlayerTrackSettings(playerNumber)).toHaveAttribute('data-test-value', `${trackNumber}`);
   }
 }
