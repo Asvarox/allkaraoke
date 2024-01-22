@@ -47,7 +47,26 @@ export class SongListPagePO {
   public getPlaylistElement(name: string) {
     return this.page.getByTestId(`playlist-${name}`);
   }
+
   public async goToPlaylist(name: string) {
     await this.getPlaylistElement(name).click();
+  }
+
+  public async expectPlaylistToBeSelected(name: string) {
+    await expect(this.getPlaylistElement(name)).toHaveAttribute('data-selected', 'true');
+  }
+
+  public getDuetSongIcon(songID: string) {
+    return this.getSongElement(songID).getByTestId('multitrack-indicator');
+  }
+
+  public async expectSongToBeMarkedAsPlayedToday(songID: string) {
+    await expect(this.getSongElement(songID).getByTestId('song-stat-indicator')).toContainText('Played today', {
+      ignoreCase: true,
+    });
+  }
+
+  public async approveSelectedSongByKeyboard() {
+    await this.page.keyboard.press('Enter');
   }
 }
