@@ -136,7 +136,7 @@ export default function SongMetadata(props: Props) {
           renderInput={(params) => (
             <TextField
               {...params}
-              onBlur={(e) => props.onChange({ ...props.data, genre: e.target.value })}
+              onBlur={(e) => props.onChange({ ...props.data, edition: e.target.value })}
               label="Song edition (optional)"
               size="small"
               data-test="song-edition"
