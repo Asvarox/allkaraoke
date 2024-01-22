@@ -125,7 +125,7 @@ const RAW_RUNTIME_STATE =
           ["typewriter-effect", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.21.0"],\
           ["unimported", "npm:1.30.0"],\
           ["use-persisted-state", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.3.3"],\
-          ["utility-types", "npm:3.10.0"],\
+          ["utility-types", "npm:3.11.0"],\
           ["uuid", "npm:9.0.1"],\
           ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.0.11"],\
           ["vite-tsconfig-paths", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.3.1"],\
@@ -19055,7 +19055,7 @@ const RAW_RUNTIME_STATE =
           ["typewriter-effect", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.21.0"],\
           ["unimported", "npm:1.30.0"],\
           ["use-persisted-state", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:0.3.3"],\
-          ["utility-types", "npm:3.10.0"],\
+          ["utility-types", "npm:3.11.0"],\
           ["uuid", "npm:9.0.1"],\
           ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.0.11"],\
           ["vite-tsconfig-paths", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.3.1"],\
@@ -23457,10 +23457,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["utility-types", [\
-      ["npm:3.10.0", {\
-        "packageLocation": "./.yarn/cache/utility-types-npm-3.10.0-747e7c6549-3ca80abfb9.zip/node_modules/utility-types/",\
+      ["npm:3.11.0", {\
+        "packageLocation": "./.yarn/cache/utility-types-npm-3.11.0-5b9c56f39f-a3c51463fc.zip/node_modules/utility-types/",\
         "packageDependencies": [\
-          ["utility-types", "npm:3.10.0"]\
+          ["utility-types", "npm:3.11.0"]\
         ],\
         "linkType": "HARD"\
       }]\
