@@ -15788,25 +15788,28 @@
     "id": "grease-john-travolta-olivia-newton-john-youre-the-one-that-i-want",
     "title": "You're the One that I Want",
     "artist": "Grease (John Travolta & Olivia Newton-John)",
-    "video": "itRFjzQICJU",
+    "video": "7oKPYe53h78",
     "language": "English",
-    "bpm": 221.79,
+    "bpm": 212.89,
     "bar": 4,
-    "gap": 7434.575085725022,
+    "gap": 41966.52684972271,
     "year": "1978",
     "artistOrigin": "US",
+    "lastUpdate": "2024-01-22T06:10:22.819Z",
     "genre": "Musical",
+    "videoGap": 40,
     "realBpm": 107,
+    "volume": 0.98,
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Grease%20(John%20Travolta%20%26%20Olivia%20Newton-John)&cancion=You're%20the%20One%20that%20I%20Want",
     "tracks": [
       {
-        "start": 14
+        "start": 15
       }
     ],
     "unsupportedProps": [
-      "#VIDEO:v=itRFjzQICJU"
+      "#VIDEO:v=7oKPYe53h78"
     ],
     "tracksCount": 1,
     "search": "greasejohntravoltaolivianewtonjohnyouretheonethatiwant",
@@ -21233,22 +21236,24 @@
     "id": "lady-pank-mniej-niz-zero",
     "title": "Mniej niż zero",
     "artist": "Lady Pank",
-    "video": "JFHanoST-vI",
+    "video": "Lc-26SnSmok",
     "language": "Polish",
-    "bpm": 134.1,
+    "bpm": 136,
     "bar": 4,
-    "gap": 19663.28859060403,
+    "gap": 19013.28859060403,
     "year": "1983",
     "artistOrigin": "PL",
-    "videoGap": 10,
+    "lastUpdate": "2024-01-22T06:10:22.824Z",
+    "videoGap": 6,
     "realBpm": 136,
+    "volume": 0.69,
     "tracks": [
       {
         "start": 9
       }
     ],
     "unsupportedProps": [
-      "#VIDEO:v=JFHanoST-vI"
+      "#VIDEO:v=Lc-26SnSmok"
     ],
     "tracksCount": 1,
     "search": "ladypankmniejnizzero",
@@ -30734,14 +30739,14 @@
     "id": "pimpinela-olvidame-y-pega-la-vuelta",
     "title": "Olvídame y pega la vuelta",
     "artist": "Pimpinela",
-    "video": "fOHrY0jV6Hg",
+    "video": "WqyVbMvbE7Q",
     "language": "Spanish",
     "bpm": 308.8,
     "bar": 4,
-    "gap": 3036.922279792746,
+    "gap": 6436.922279792746,
     "year": "1984",
     "artistOrigin": "AR",
-    "lastUpdate": "2023-08-15T14:54:44.583Z",
+    "lastUpdate": "2024-01-22T06:10:22.829Z",
     "edition": "SingStar Cla ES",
     "realBpm": 77,
     "volume": 0.65,
@@ -30754,7 +30759,7 @@
       }
     ],
     "unsupportedProps": [
-      "#VIDEO:v=fOHrY0jV6Hg"
+      "#VIDEO:v=WqyVbMvbE7Q"
     ],
     "tracksCount": 1,
     "search": "pimpinelaolvidameypegalavuelta",
@@ -34027,17 +34032,17 @@
     "id": "secondhand-serenade-fall-for-you",
     "title": "Fall For You",
     "artist": "Secondhand Serenade",
-    "video": "DEXDDyb6t2o",
+    "video": "38HKpyVQZUo",
     "language": "English",
     "bpm": 240,
     "bar": 4,
     "gap": 290,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.324Z",
+    "lastUpdate": "2024-01-22T06:10:22.830Z",
     "genre": "Folk Rock",
     "realBpm": 85,
-    "volume": 1,
+    "volume": 0.98,
     "author": "jalkazar",
     "tracks": [
       {
@@ -34045,7 +34050,7 @@
       }
     ],
     "unsupportedProps": [
-      "#VIDEO:v=DEXDDyb6t2o"
+      "#VIDEO:v=38HKpyVQZUo"
     ],
     "tracksCount": 1,
     "search": "secondhandserenadefallforyou",
