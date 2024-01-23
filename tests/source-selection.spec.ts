@@ -24,7 +24,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await pages.songListPage.getSongElement(song1).dblclick();
+  await pages.songListPage.openPreviewForSong(song1);
   await pages.songPreviewPage.goNext();
   await pages.songPreviewPage.setupMics();
   await pages.inputSelectionPage.selectAdvancedSetup();
@@ -59,7 +59,7 @@ test('Source selection in in-game menu', async ({ page, context, browser }) => {
   await pages.advancedConnectionPage.saveAndGoToSing();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await pages.songListPage.getSongElement(song1).dblclick();
+  await pages.songListPage.openPreviewForSong(song1);
   await pages.songPreviewPage.goNext();
   await pages.songPreviewPage.playTheSong();
   await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
