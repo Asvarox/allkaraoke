@@ -95,4 +95,8 @@ export class SongPreviewPagePO {
   public async expectPlayerTrackNumberToBe(playerNumber: number, trackNumber: number) {
     await expect(this.getPlayerTrackSettings(playerNumber)).toHaveAttribute('data-test-value', `${trackNumber}`);
   }
+
+  public async setupMics() {
+    await this.page.getByTestId('select-inputs-button').click();
+  }
 }
