@@ -24,7 +24,7 @@
     "material-react-table": "^2.7.0",
     "msgpackr": "^1.10.0",
     "peerjs": "^2.0.0-beta.3",
-    "posthog-js": "^1.98.2",
+    "posthog-js": "^1.101.0",
     "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
