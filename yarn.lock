@@ -13703,7 +13703,7 @@ __metadata:
     playwright: "npm:^1.40.1"
     playwright-core: "npm:^1.40.1"
     posthog-js: "npm:^1.101.0"
-    prettier: "npm:^2.8.8"
+    prettier: "npm:^3.2.4"
     prettier-plugin-organize-imports: "npm:^3.2.4"
     qrcode.react: "npm:^3.1.0"
     react: "npm:^18.2.0"
@@ -14407,12 +14407,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.0, prettier@npm:^2.8.8":
+"prettier@npm:^2.8.0":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
   bin:
     prettier: bin-prettier.js
   checksum: 00cdb6ab0281f98306cd1847425c24cbaaa48a5ff03633945ab4c701901b8e96ad558eb0777364ffc312f437af9b5a07d0f45346266e8245beaf6247b9c62b24
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "prettier@npm:3.2.4"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: e2b735d0552501b3a7ac8bd3ba3b6de2920bb35bd4cd02d08cb9057ebe3e96d83b9a7e4b903d987b7530a50223b12c74d107c154337236ae2c68156ba1e65cd2
   languageName: node
   linkType: hard
 
