@@ -13712,7 +13712,7 @@ __metadata:
     react-hotkeys-hook: "npm:^3.4.7"
     react-refresh: "npm:^0.14.0"
     react-toastify: "npm:^9.1.3"
-    react-use: "npm:^17.4.3"
+    react-use: "npm:^17.5.0"
     react-youtube: "npm:^10.1.0"
     remotion: "npm:^4.0.84"
     remotion-animated: "npm:^2.0.0"
@@ -14912,9 +14912,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-use@npm:^17.4.3":
-  version: 17.4.3
-  resolution: "react-use@npm:17.4.3"
+"react-use@npm:^17.5.0":
+  version: 17.5.0
+  resolution: "react-use@npm:17.5.0"
   dependencies:
     "@types/js-cookie": "npm:^2.2.6"
     "@xobotyi/scrollbar-width": "npm:^1.9.5"
@@ -14933,7 +14933,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 773ca6285ae4a09b5bccfd8305ff4689dac7fa5c282691d089b243561a272b40b34d4b0c6d1a7c8b0eb8ae6d3ae2791a6102bd56664bf964f425284a6652cc30
+  checksum: 5d81fe0902303d3ed7810cdd56c6cae12b08124a3d4fcbfa3924327105b81447b039ea9d6aff20aac3c13999f949000870a7a2fa29fe20ed844ac26606462fa0
   languageName: node
   linkType: hard
 
