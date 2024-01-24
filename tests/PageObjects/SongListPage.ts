@@ -12,6 +12,10 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
+  public async selectSong(songID: string) {
+    await this.getSongElement(songID).click();
+  }
+
   public async openPreviewForSong(songID: string) {
     await this.getSongElement(songID).dblclick();
   }
@@ -24,12 +28,20 @@ export class SongListPagePO {
     return this.page.getByTestId('song-list-container');
   }
 
+  public get searchInput() {
+    return this.page.getByTestId('filters-search');
+  }
+
   public get songPreviewElement() {
     return this.page.getByTestId('song-preview');
   }
 
-  public expectSelectedSongToBe(expectedSong: string) {
-    return expect(this.songPreviewElement).toHaveAttribute('data-song', expectedSong);
+  public expectSelectedSongToBe(songID: string) {
+    return expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
+  }
+
+  public expectSelectedSongNotToBe(songID: string) {
+    return expect(this.songPreviewElement).not.toHaveAttribute('data-song', songID);
   }
 
   public get fullscreenElement() {
@@ -54,6 +66,14 @@ export class SongListPagePO {
 
   public async goToPlaylist(name: string) {
     await this.getPlaylistElement(name).click();
+  }
+
+  public get searchButton() {
+    return this.page.getByTestId('search-song-button');
+  }
+
+  public get pickRandomButton() {
+    return this.page.getByTestId('random-song-button');
   }
 
   public async expectPlaylistToBeSelected(name: string) {
