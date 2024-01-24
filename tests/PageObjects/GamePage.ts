@@ -30,6 +30,10 @@ export class GamePagePO {
     await this.page.getByTestId('button-exit-song').click();
   }
 
+  public async microphonesSettings() {
+    await this.page.getByTestId('input-settings').click();
+  }
+
   public get playersScoreElement() {
     return this.page.getByTestId('players-score');
   }

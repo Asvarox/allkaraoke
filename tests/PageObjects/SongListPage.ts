@@ -12,6 +12,10 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
+  public async openPreviewForSong(songID: string) {
+    await this.getSongElement(songID).dblclick();
+  }
+
   public async navigateToSongWithKeyboard(songID: string) {
     await navigateWithKeyboard(this.page, `song-${songID}`);
   }
