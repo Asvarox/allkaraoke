@@ -12,7 +12,7 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
-  public async selectSong(songID: string) {
+  public async focusSong(songID: string) {
     await this.getSongElement(songID).click();
   }
 

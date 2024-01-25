@@ -303,14 +303,14 @@ test('Song List - Random song', async ({ page }) => {
   });
 
   await test.step('Random song is selected on shortcut', async () => {
-    await pages.songListPage.selectSong(polOldDuetSong);
+    await pages.songListPage.focusSong(polOldDuetSong);
     await pages.songListPage.expectSelectedSongNotToBe(lastSong);
     await page.keyboard.press('Shift+R');
     await pages.songListPage.expectSelectedSongToBe(lastSong);
   });
 
   await test.step('Random song is selected on random song button click', async () => {
-    await pages.songListPage.selectSong(polOldDuetSong);
+    await pages.songListPage.focusSong(polOldDuetSong);
     await pages.songListPage.expectSelectedSongNotToBe(lastSong);
     await pages.songListPage.pickRandomButton.click();
     // Second random selects next-to-last song as there's mechanism that prevents selecting the same song twice
