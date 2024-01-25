@@ -31,5 +31,5 @@ test('skip the intro from the song', async ({ page }) => {
   await pages.songPreviewPage.playTheSong();
 
   await pages.gamePage.skipIntro();
-  await pages.postGame.skipScoresAnimation();
+  await pages.postGameResultsPage.skipScoresAnimation();
 });

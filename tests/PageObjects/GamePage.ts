@@ -34,12 +34,16 @@ export class GamePagePO {
     await this.page.getByTestId('input-settings').click();
   }
 
-  public get playersScoreElement() {
+  public getPlayerScoreElement(playerNumber: number) {
+    return this.page.getByTestId(`player-${playerNumber}-score`);
+  }
+
+  public get playersCoopScoreElement() {
     return this.page.getByTestId('players-score');
   }
 
   public get currentPlayersScore() {
-    return this.playersScoreElement.getAttribute('data-score');
+    return this.playersCoopScoreElement.getAttribute('data-score');
   }
 
   public async waitForPlayersScoreToBeGreaterThan(expected: number) {
@@ -51,6 +55,6 @@ export class GamePagePO {
   }
 
   public async expectPlayersScoreToBe(expected: number) {
-    await expect(this.playersScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
+    await expect(this.playersCoopScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
   }
 }

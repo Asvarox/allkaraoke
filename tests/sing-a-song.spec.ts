@@ -91,16 +91,16 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   test.setTimeout(testInfo.timeout);
 
-  await expect(pages.postGame.skipScoreElement).toBeVisible({ timeout: 30_000 });
-  await pages.postGame.expectPlayerNameToBeDisplayed(player1, player1Name);
-  await pages.postGame.expectPlayerNameToBeDisplayed(player2, player2Name);
-  await pages.postGame.skipScoresAnimation();
-  await pages.postGame.goNext();
-  await expect(pages.postGame.getPlayerNameHighScoreInput(player1Name)).toBeVisible();
-  await expect(pages.postGame.getPlayerNameHighScoreInput(player2Name)).toBeVisible();
+  await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 30_000 });
+  await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
+  await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2, player2Name);
+  await pages.postGameResultsPage.skipScoresAnimation();
+  await pages.postGameResultsPage.goNext();
+  await expect(pages.postGameHighScoresPage.getPlayerNameInput(player1Name)).toBeVisible();
+  await expect(pages.postGameHighScoresPage.getPlayerNameInput(player2Name)).toBeVisible();
 
-  await pages.postGame.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
-  await pages.postGame.goToSelectNewSong();
+  await pages.postGameHighScoresPage.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
+  await pages.postGameHighScoresPage.goToSelectNewSong();
   await pages.songListPage.expectSongToBeMarkedAsPlayedToday(song2);
   await pages.songListPage.expectPlaylistToBeSelected(playlistName);
   await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
@@ -118,7 +118,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await expect(pages.gamePage.resumeSongButton).not.toBeVisible();
   await page.keyboard.press('Backspace'); // go to pause menu
   await pages.gamePage.goToExitSong();
-  await pages.postGame.skipScoresAnimation();
-  await pages.postGame.goNext();
-  await expect(pages.postGame.highScoresContainer).toContainText(updatedName);
+  await pages.postGameResultsPage.skipScoresAnimation();
+  await pages.postGameResultsPage.goNext();
+  await expect(pages.postGameHighScoresPage.highScoresContainer).toContainText(updatedName);
 });
