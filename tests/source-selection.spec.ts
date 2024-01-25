@@ -37,9 +37,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
     await pages.advancedConnectionPage.expectConnectedAlertToBeShownForPlayer(player1Name);
     await pages.advancedConnectionPage.saveAndGoToSing();
     await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(blueMicNum, player1Name);
-  });
-
-  await test.step('Make sure the microphone of new device is being monitored', async () => {
+    // microphone of new device is being monitored
     await expect(remoteMicBlue.getByTestId('monitoring-state')).toContainText('on', {
       ignoreCase: true,
     });
@@ -63,14 +61,14 @@ test('Source selection in in-game menu', async ({ page, context, browser }) => {
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
 
-  await test.step('Play the song and wait for players greater-than-expected score', async () => {
+  await test.step('Play the song', async () => {
     await pages.songListPage.openPreviewForSong(song1);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
   });
 
-  await test.step('Make sure the input is not monitored anymore if it is not in use', async () => {
+  await test.step('Changing input is possible in-game', async () => {
     await page.keyboard.press('Backspace');
     await pages.gamePage.microphonesSettings();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMicNum);
