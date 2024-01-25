@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockRandom, mockSongs } from './helpers';
-import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 import initialise from './PageObjects/initialise';
 
@@ -11,6 +10,26 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockRandom({ page, context }, 1);
   await mockSongs({ page, context });
 });
+const polishPlaylist = 'Polish';
+const englishPlaylist = 'English';
+const oldPlaylist = 'Oldies';
+const modPlaylist = 'Modern';
+const duetsPlaylist = 'Duets';
+const newPlaylist = 'New';
+const allPlaylist = 'All';
+const xmasPlaylist = 'Christmas';
+
+const engModSong = 'e2e-single-english-1995';
+const polOldDuetSong = 'e2e-multitrack-polish-1994';
+const polEngSong = 'e2e-english-polish-1994';
+const polSong = 'e2e-skip-intro-polish';
+const engNewSong = 'e2e-new-english-1995';
+const xmasSong = 'e2e-christmas-english-1995';
+const lastSong = 'zzz-last-polish-1994';
+
+const polishSongTitle = 'multitrack';
+const polishLang = 'Polish';
+const englishLang = 'English';
 
 test('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
@@ -36,62 +55,82 @@ test('Filters - PlayLists', async ({ page }) => {
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToSingSong();
 
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
+  await test.step('Make sure proper song languages are selected', async () => {
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(englishLang);
+  });
 
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+  await test.step('Check if songs are visible in all songs', async () => {
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+  });
 
-  await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish');
+  await test.step('Going to polish-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowLeft');
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(polishPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 
-  // Go to playlists
-  await page.keyboard.press('ArrowLeft');
+  await test.step('Going to english-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Polish (first, as it has most songs)
-  await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Going to oldies-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(oldPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // English
-  await expect(page.getByTestId('playlist-English')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
+  await test.step('Going to modern-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(modPlaylist);
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Oldies
-  await expect(page.getByTestId('playlist-Oldies')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Going to duets-playlist, and check songs and duet icon visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getDuetSongIcon(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Modern
-  await expect(page.getByTestId('playlist-Modern')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+  await test.step('Going to new-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(newPlaylist);
+    await expect(pages.songListPage.getSongElement(engNewSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Duets
-  await expect(page.getByTestId('playlist-Duets')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Going to all-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // New
-  await expect(page.getByTestId('playlist-New')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-
-  await page.keyboard.press('ArrowDown'); // All
-  await expect(page.getByTestId('playlist-All')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-
-  await page.keyboard.press('ArrowRight'); // Leave the playlists
-  await page.getByTestId('playlist-Polish').click();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Leave the playlists and check songs visibility', async () => {
+    await page.keyboard.press('ArrowRight');
+    await pages.songListPage.goToPlaylist(polishPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 });
 
 test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
@@ -118,149 +157,163 @@ test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToSingSong();
 
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
+  await test.step('Make sure proper song languages are selected', async () => {
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(englishLang);
+  });
 
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-christmas-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
+  await test.step('Check if songs are visible in all songs', async () => {
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+  });
 
-  await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish');
+  await test.step('Going to Christmas-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowLeft');
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(xmasPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+  });
 
-  // Go to playlists
-  await page.keyboard.press('ArrowLeft');
+  await test.step('Going to polish-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(polishPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Christmas
-  await expect(page.getByTestId('playlist-Christmas')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).not.toBeVisible();
-  await expect(page.getByTestId('song-e2e-christmas-english-1995')).toBeVisible();
+  await test.step('Going to english-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Polish (first, as it has most songs)
-  await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Going to duets-playlist, and check songs and duet icon visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getDuetSongIcon(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // English
-  await expect(page.getByTestId('playlist-English')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
+  await test.step('Going to new-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(newPlaylist);
+    await expect(pages.songListPage.getSongElement(engNewSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // Duets
-  await expect(page.getByTestId('playlist-Duets')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Going to all-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
+    await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+  });
 
-  await page.keyboard.press('ArrowDown'); // New
-  await expect(page.getByTestId('playlist-New')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-new-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-
-  await page.keyboard.press('ArrowDown'); // All
-  await expect(page.getByTestId('playlist-All')).toHaveAttribute('data-focused', 'true');
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-
-  await page.keyboard.press('ArrowRight'); // Leave the playlists
-  await page.getByTestId('playlist-Polish').click();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-english-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+  await test.step('Leave the playlists and check songs visibility', async () => {
+    await page.keyboard.press('ArrowRight');
+    await pages.songListPage.goToPlaylist(polishPlaylist);
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+  });
 });
 
 test('Filters - Quick Search', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToSingSong();
 
-  await page.getByTestId('sing-a-song').click();
-
-  await test.step('exclude polish songs', async () => {
-    await page.getByTestId('lang-Polish').click();
-    await page.getByTestId('close-exclude-languages').click();
+  await test.step('Exclusion polish language - polish songs should be invisible', async () => {
+    await pages.songLanguagesPage.unselectLanguage(polishLang);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
   });
 
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
+  await test.step('Quick search [in All-playlist] to find polish song, even if language is excluded', async () => {
+    await page.keyboard.type(polishSongTitle);
+    await expect(pages.songListPage.searchInput).toBeVisible();
+    await page.keyboard.press('ArrowDown');
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await pages.songListPage.expectSelectedSongToBe(polOldDuetSong);
+  });
 
-  // Quick search
-  await page.keyboard.type('multitrack');
-  await expect(page.getByTestId('filters-search')).toBeVisible();
-  await page.keyboard.press('ArrowDown');
-  // finds polish song even if the language excluded
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
-  await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'e2e-multitrack-polish-1994');
+  await test.step('Polish song is invisible again after clearing search', async () => {
+    await page.keyboard.press('Backspace');
+    await expect(pages.songListPage.searchInput).toBeFocused();
+    await pages.songListPage.searchInput.clear();
+    // Validate that na additional backspace doesn't close the song list
+    await page.keyboard.press('Backspace');
+    await page.keyboard.press('Backspace');
+    await expect(pages.songListPage.searchInput).not.toBeVisible();
 
-  // Clear search
-  await page.keyboard.press('Backspace');
-  await expect(page.getByTestId('filters-search')).toBeFocused();
-  await page.getByTestId('filters-search').clear();
-  // Validate that na additional backspace doesn't close the song list
-  await page.keyboard.press('Backspace');
-  await page.keyboard.press('Backspace');
-
-  // The polish song is not visible anymore
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await expect(page.getByTestId('filters-search')).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+  });
 
   await test.step('Search should be scoped to a playlist', async () => {
-    await page.getByTestId('playlist-English').click();
-    await page.keyboard.type('multitrack');
-    await expect(page.getByTestId('song-e2e-multitrack-polish-1994')).not.toBeVisible();
-    await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
+    await pages.songListPage.goToPlaylist(englishPlaylist);
+    await page.keyboard.type(polishSongTitle);
+    await expect(pages.songListPage.searchInput).toBeVisible();
+    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
-  await test.step('Switching to another playlist clears the search', async () => {
-    await page.getByTestId('playlist-All').click();
-    await expect(page.getByTestId('filters-search')).not.toBeVisible();
+  await test.step('Switching to another playlist clears the search, search window is not visible', async () => {
+    await pages.songListPage.goToPlaylist(allPlaylist);
+    await expect(pages.songListPage.searchInput).not.toBeVisible();
   });
 
   await test.step('Search button should open and focus the search', async () => {
-    await page.getByTestId('search-song-button').click();
-    await expect(page.getByTestId('filters-search')).toBeFocused();
+    await pages.songListPage.searchButton.click();
+    await expect(pages.songListPage.searchInput).toBeFocused();
   });
 
   await test.step('Search button should close search when clicked with search opened', async () => {
     // need to fix that - clicking the button doesn't close the search when it's empty
-    // await page.getByTestId('search-song-button').click();
-    // await expect(page.getByTestId('filters-search')).not.toBeVisible();
-    await page.keyboard.type('multitrack');
-    await page.getByTestId('search-song-button').click();
-    await expect(page.getByTestId('filters-search')).not.toBeVisible();
+    await page.keyboard.type(polishSongTitle);
+    await pages.songListPage.searchButton.click();
+    await expect(pages.songListPage.searchInput).not.toBeVisible();
   });
 });
 
 test('Song List - Random song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
+  await pages.inputSelectionPage.skipToMainMenu();
 
   await test.step('Random song is selected on song list open', async () => {
-    await page.getByTestId('sing-a-song').click();
-    await expect(page.getByTestId('lang-Polish')).toBeVisible();
-    await page.getByTestId('close-exclude-languages').click();
-    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'zzz-last-polish-1994');
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songListPage.expectSelectedSongToBe(lastSong);
   });
 
   await test.step('Random song is selected on shortcut', async () => {
-    await page.getByTestId('song-e2e-multitrack-polish-1994').click();
-    await expect(page.getByTestId('song-preview')).not.toHaveAttribute('data-song', 'zzz-last-polish-1994');
+    await pages.songListPage.focusSong(polOldDuetSong);
+    await pages.songListPage.expectSelectedSongNotToBe(lastSong);
     await page.keyboard.press('Shift+R');
-    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'zzz-last-polish-1994');
+    await pages.songListPage.expectSelectedSongToBe(lastSong);
   });
 
   await test.step('Random song is selected on random song button click', async () => {
-    await page.getByTestId('song-e2e-multitrack-polish-1994').click();
-    await expect(page.getByTestId('song-preview')).not.toHaveAttribute('data-song', 'zzz-last-polish-1994');
-    await page.getByTestId('random-song-button').click();
+    await pages.songListPage.focusSong(polOldDuetSong);
+    await pages.songListPage.expectSelectedSongNotToBe(lastSong);
+    await pages.songListPage.pickRandomButton.click();
     // Second random selects next-to-last song as there's mechanism that prevents selecting the same song twice
-    await expect(page.getByTestId('song-preview')).toHaveAttribute('data-song', 'e2e-single-english-1995');
+    await pages.songListPage.expectSelectedSongToBe(engModSong);
   });
 });
