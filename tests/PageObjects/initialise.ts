@@ -7,7 +7,8 @@ import { JukeboxPagePO } from './JukeboxPage';
 import { LandingPagePO } from './LandingPage';
 import { MainMenuPagePO } from './MainMenuPage';
 import { ManageSongsPagePO } from './ManageSongsPage';
-import { PostGamePO } from './PostGame';
+import { PostGameHighScoresPagePO } from './PostGameHighScoresPage';
+import { PostGameResultsPagePO } from './PostGameResultsPage';
 import { RemoteMicMainPagePO } from './RemoteMic/RemoteMicMainPage';
 import { SmartphonesConnectionPagePO } from './SmartphonesConnectionPage';
 import { SongEditingPagePO } from './SongEditingPage';
@@ -29,8 +30,9 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     advancedConnectionPage: new AdvancedConnectionPagePO(page, context, browser),
     songPreviewPage: new SongPreviewPagePO(page, context, browser),
     gamePage: new GamePagePO(page, context, browser),
-    postGame: new PostGamePO(page, context, browser),
-    jukebox: new JukeboxPagePO(page, context, browser),
+    postGameResultsPage: new PostGameResultsPagePO(page, context, browser),
+    postGameHighScoresPage: new PostGameHighScoresPagePO(page, context, browser),
+    jukeboxPage: new JukeboxPagePO(page, context, browser),
     remoteMicMainPage: new RemoteMicMainPagePO(page, context, browser),
   };
 }
