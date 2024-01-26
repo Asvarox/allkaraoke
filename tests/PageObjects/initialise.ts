@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 import { AdvancedConnectionPagePO } from './AdvancedConnectionPage';
+import { ComputersMicConnectionPagePO } from './ComputersMicConnectionPage';
 import { EditSongsPagePO } from './EditSongsPage';
 import { GamePagePO } from './GamePage';
 import { InputSelectionPagePO } from './InputSelectionPage';
@@ -10,6 +11,7 @@ import { ManageSongsPagePO } from './ManageSongsPage';
 import { PostGameHighScoresPagePO } from './PostGameHighScoresPage';
 import { PostGameResultsPagePO } from './PostGameResultsPage';
 import { RemoteMicMainPagePO } from './RemoteMic/RemoteMicMainPage';
+import { SingstarConnectionPagePO } from './SingstarConnectionPage';
 import { SmartphonesConnectionPagePO } from './SmartphonesConnectionPage';
 import { SongEditingPagePO } from './SongEditingPage';
 import { SongLanguagesPagePO } from './SongLanguagesPage';
@@ -34,5 +36,7 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     postGameHighScoresPage: new PostGameHighScoresPagePO(page, context, browser),
     jukeboxPage: new JukeboxPagePO(page, context, browser),
     remoteMicMainPage: new RemoteMicMainPagePO(page, context, browser),
+    singstarConnectionPage: new SingstarConnectionPagePO(page, context, browser),
+    computersMicConnectionPage: new ComputersMicConnectionPagePO(page, context, browser),
   };
 }
