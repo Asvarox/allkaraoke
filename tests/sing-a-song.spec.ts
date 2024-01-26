@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 import initialise from './PageObjects/initialise';
 
@@ -11,76 +10,68 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
+const song1 = 'e2e-single-english-1995';
+const song2 = 'e2e-multitrack-polish-1994';
+const playlistName = 'Polish';
+const modeName = 'Pass The Mic';
+const levelName = 'Hard';
+const player1 = 0;
+const player2 = 1;
+const player1Name = 'E2E Player 1';
+const player2Name = 'E2E Player 2';
+const track1 = 1;
+const track2 = 2;
+const updatedName = 'Updated name';
+
 test('Sing a song', async ({ page, browserName }, testInfo) => {
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('advanced').click();
-  await page.getByTestId('save-button').click();
-
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
-
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-
-  await page.keyboard.press('Enter'); // enter first song
-  await expect(page.getByTestId('next-step-button')).toBeVisible();
+  await pages.inputSelectionPage.selectAdvancedSetup();
+  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.mainMenuPage.goToSingSong();
+  await pages.songLanguagesPage.continueAndGoToSongList();
+  await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
+  await pages.songListPage.approveSelectedSongByKeyboard();
+  await expect(pages.songPreviewPage.nextButton).toBeVisible();
   await page.keyboard.press(browserName === 'firefox' ? 'Backspace' : 'Escape'); // check if escape works for Chrome
-  await expect(page.getByTestId('next-step-button')).not.toBeVisible();
-  await navigateWithKeyboard(page, 'song-e2e-multitrack-polish-1994');
+  await expect(pages.songPreviewPage.nextButton).not.toBeVisible();
 
-  await expect(page.getByTestId('song-e2e-multitrack-polish-1994').getByTestId('multitrack-indicator')).toBeVisible();
-  await expect(page.getByTestId('song-e2e-single-english-1995').getByTestId('multitrack-indicator')).not.toBeVisible();
+  await pages.songListPage.navigateToSongWithKeyboard(song2);
+  await expect(pages.songListPage.getDuetSongIcon(song2)).toBeVisible();
+  await expect(pages.songListPage.getDuetSongIcon(song1)).not.toBeVisible();
 
-  await page.getByTestId('playlist-Polish').click();
+  await pages.songListPage.goToPlaylist(playlistName);
+  await pages.songListPage.approveSelectedSongByKeyboard();
 
-  await page.keyboard.press('Enter'); // focus
-  await expect(page.getByTestId('next-step-button')).toBeVisible();
-
-  // Game mode
-  await navigateWithKeyboard(page, 'game-mode-setting');
+  await pages.songPreviewPage.navigateToGameModeSettingsByKeyboard();
   await page.keyboard.press('Enter'); // change to duel
   await page.keyboard.press('Enter'); // change to pass the mic
-  await expect(page.getByTestId('game-mode-setting')).toHaveAttribute('data-test-value', 'Pass The Mic');
+  await pages.songPreviewPage.expectGameModeToBe(modeName);
 
-  // Difficulty
-  await navigateWithKeyboard(page, 'difficulty-setting');
+  await pages.songPreviewPage.navigateToDifficultySettingsByKeyboard();
   await page.keyboard.press('Enter'); // change to hard
-  await expect(page.getByTestId('difficulty-setting')).toHaveAttribute('data-test-value', 'Hard');
+  await pages.songPreviewPage.expectGameDifficultyLevelToBe(levelName);
 
-  await navigateWithKeyboard(page, 'next-step-button');
-  await page.keyboard.press('Enter', { delay: 40 }); // Go to next step
+  await pages.songPreviewPage.navigateToGoNextByKeyboard();
 
   // Player 1
-  // Name
-  await expect(page.getByTestId('player-0-name')).toBeVisible();
-  await navigateWithKeyboard(page, 'player-0-name');
-  await page.keyboard.press('Enter', { delay: 40 }); // activate
-  await expect(page.getByTestId('player-0-name')).toBeFocused();
-  await page.keyboard.type('E2E Player 1'); // enter
-  await page.keyboard.press('Enter'); // save
-  await expect(page.getByTestId('player-0-name')).not.toBeFocused();
-  // Track
-  await navigateWithKeyboard(page, 'player-0-track-setting');
-  await page.keyboard.press('Enter'); // change to track 2
-  await expect(page.getByTestId('player-0-track-setting')).toHaveAttribute('data-test-value', '2');
+  await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
+  await pages.songPreviewPage.navigateAndEnterPlayerNameByKeyboard(player1, player1Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBe(player1, player1Name);
+
+  await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsByKeyboard(player1);
+  await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1, track2);
 
   // Player 2
-  // Name
-  await navigateWithKeyboard(page, 'player-1-name');
-  await page.keyboard.press('Enter'); // activate
-  await expect(page.getByTestId('player-1-name')).toBeFocused();
-  await page.keyboard.type('E2E Player 2'); // enter
-  // Track
-  await navigateWithKeyboard(page, 'player-1-track-setting');
-  await expect(page.getByTestId('player-1-name')).not.toBeFocused();
-  await page.keyboard.press('Enter'); // change to track 1
-  await expect(page.getByTestId('player-1-track-setting')).toHaveAttribute('data-test-value', '1');
+  await expect(pages.songPreviewPage.getPlayerNameInput(player2)).toBeVisible();
+  await pages.songPreviewPage.navigateAndEnterPlayerNameByKeyboard(player2, player2Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBe(player2, player2Name);
 
-  // Start song
-  await navigateWithKeyboard(page, 'play-song-button');
-  await page.keyboard.press('Enter');
+  await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsByKeyboard(player2);
+  await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2, track1);
+
+  await pages.songPreviewPage.navigateToPlayTheSongByKeyboard();
 
   const p1CL = '[data-test="lyrics-current-player-0"]';
   const p1NL = '[data-test="lyrics-next-player-0"]';
@@ -100,60 +91,34 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   test.setTimeout(testInfo.timeout);
 
-  // Song ending
-  await expect(page.getByTestId('skip-animation-button')).toBeVisible({ timeout: 30_000 });
-  await expect(page.getByTestId('player-0-name')).toHaveText('E2E Player 1');
-  await expect(page.getByTestId('player-1-name')).toHaveText('E2E Player 2');
+  await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 30_000 });
+  await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
+  await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2, player2Name);
+  await pages.postGameResultsPage.skipScoresAnimation();
+  await pages.postGameResultsPage.goNext();
+  await expect(pages.postGameHighScoresPage.getPlayerNameInput(player1Name)).toBeVisible();
+  await expect(pages.postGameHighScoresPage.getPlayerNameInput(player2Name)).toBeVisible();
 
-  // Skip waiting for stats
-  await page.getByTestId('skip-animation-button').click();
-  // Highscores
-  await page.getByTestId('highscores-button').click();
+  await pages.postGameHighScoresPage.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
+  await pages.postGameHighScoresPage.goToSelectNewSong();
+  await pages.songListPage.expectSongToBeMarkedAsPlayedToday(song2);
+  await pages.songListPage.expectPlaylistToBeSelected(playlistName);
+  await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
+  await pages.songListPage.approveSelectedSongByKeyboard();
+  await pages.songPreviewPage.navigateToGoNextByKeyboard();
+  await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player1, player1Name);
+  await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player2, player2Name);
 
-  await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 1"]')).toBeVisible();
-  await expect(page.locator('[data-test="input-edit-highscore"][data-original-name="E2E Player 2"]')).toBeVisible();
-
-  // Edit a highscore name
-  await page.keyboard.press('ArrowDown'); // highest score player
-  await page.keyboard.type('Updated name');
-  await page.keyboard.press('Enter');
-  await page.keyboard.press('ArrowUp');
-  await page.waitForTimeout(500); // It takes 300ms to save the score
-
-  // Check next song
-  await page.getByTestId('play-next-song-button').click();
-  await expect(
-    page.locator('[data-test="song-e2e-multitrack-polish-1994"] >> [data-test="song-stat-indicator"]'),
-  ).toContainText('Played today', { ignoreCase: true });
-
-  // Check if the playlist is still selected
-  await expect(page.getByTestId('playlist-Polish')).toHaveAttribute('data-selected', 'true');
-  await expect(page.getByTestId('song-e2e-single-english-1995')).not.toBeVisible();
-
-  // Check next song player names
-  await page.keyboard.press('Enter'); // enter first song
-  await expect(page.getByTestId('next-step-button')).toBeVisible();
-  await page.keyboard.press('Enter');
-  await expect(page.getByTestId('player-0-name')).toHaveAttribute('placeholder', 'E2E Player 1');
-  await expect(page.getByTestId('player-1-name')).toHaveAttribute('placeholder', 'E2E Player 2');
-
-  // Check if recent player list contains updated name
-  await page.getByTestId('player-0-name').click();
-  await expect(page.locator('role=listbox')).toContainText('Updated name');
-  await page.keyboard.press('Enter');
-  await page.getByTestId('play-song-button').click();
-
-  // Check updated highscore
+  await pages.songPreviewPage.expectRecentPlayerListToContainName(updatedName);
+  await pages.songPreviewPage.playTheSong();
   await expect(page.locator(p1CL)).toBeVisible();
   await page.waitForTimeout(1000); // otherwise the click might happen before the game actually starts
-  await page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
-  await page.getByTestId('button-resume-song').click(); // Check resume song
-  await expect(page.getByTestId('button-resume-song')).not.toBeVisible();
-  await page.keyboard.press('Backspace');
-  await page.getByTestId('button-exit-song').click();
-
-  // Skip waiting for stats
-  await page.getByTestId('skip-animation-button').click();
-  await page.getByTestId('highscores-button').click();
-  await expect(page.getByTestId('highscores-container')).toContainText('Updated name');
+  await pages.gamePage.goToPauseMenu();
+  await pages.gamePage.gotoResumeSong();
+  await expect(pages.gamePage.resumeSongButton).not.toBeVisible();
+  await page.keyboard.press('Backspace'); // go to pause menu
+  await pages.gamePage.goToExitSong();
+  await pages.postGameResultsPage.skipScoresAnimation();
+  await pages.postGameResultsPage.goNext();
+  await expect(pages.postGameHighScoresPage.highScoresContainer).toContainText(updatedName);
 });

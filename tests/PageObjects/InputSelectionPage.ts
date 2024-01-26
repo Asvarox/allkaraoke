@@ -15,8 +15,12 @@ export class InputSelectionPagePO {
     await this.page.getByTestId('mics').click();
   }
 
+  public get advancedButton() {
+    return this.page.getByTestId('advanced');
+  }
+
   public async selectAdvancedSetup() {
-    await this.page.getByTestId('advanced').click();
+    await this.advancedButton.click();
   }
 
   public async skipToMainMenu() {

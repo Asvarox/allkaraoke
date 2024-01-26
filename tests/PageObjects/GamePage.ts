@@ -10,16 +10,40 @@ export class GamePagePO {
     await this.page.keyboard.press('Enter');
   }
 
-  public async restartSong() {
+  public async goToPauseMenu() {
+    await this.page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
+  }
+
+  public async goToRestartSong() {
     await this.page.getByTestId('button-restart-song').click();
   }
 
-  public get playersScoreElement() {
+  public get resumeSongButton() {
+    return this.page.getByTestId('button-resume-song');
+  }
+
+  public async gotoResumeSong() {
+    await this.resumeSongButton.click();
+  }
+
+  public async goToExitSong() {
+    await this.page.getByTestId('button-exit-song').click();
+  }
+
+  public async microphonesSettings() {
+    await this.page.getByTestId('input-settings').click();
+  }
+
+  public getPlayerScoreElement(playerNumber: number) {
+    return this.page.getByTestId(`player-${playerNumber}-score`);
+  }
+
+  public get playersCoopScoreElement() {
     return this.page.getByTestId('players-score');
   }
 
   public get currentPlayersScore() {
-    return this.playersScoreElement.getAttribute('data-score');
+    return this.playersCoopScoreElement.getAttribute('data-score');
   }
 
   public async waitForPlayersScoreToBeGreaterThan(expected: number) {
@@ -31,6 +55,6 @@ export class GamePagePO {
   }
 
   public async expectPlayersScoreToBe(expected: number) {
-    await expect(this.playersScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
+    await expect(this.playersCoopScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
   }
 }

@@ -15,12 +15,12 @@ test('Jukebox', async ({ page }) => {
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToJukebox();
 
-  const previousSong = await pages.jukebox.currentSongName;
-  await pages.jukebox.navigateToSkipSongByKeyboard();
-  await pages.jukebox.expectCurrentSongNotToBe(previousSong!);
+  const previousSong = await pages.jukeboxPage.currentSongName;
+  await pages.jukeboxPage.navigateToSkipSongByKeyboard();
+  await pages.jukeboxPage.expectCurrentSongNotToBe(previousSong!);
 
-  const expectedSong = await pages.jukebox.currentSongName;
-  await pages.jukebox.navigateToSingSongByKeyboard();
+  const expectedSong = await pages.jukeboxPage.currentSongName;
+  await pages.jukeboxPage.navigateToSingSongByKeyboard();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await pages.songListPage.expectSelectedSongToBe(expectedSong!);
 });

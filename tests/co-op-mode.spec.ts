@@ -1,7 +1,6 @@
 import { expect, test } from '@playwright/test';
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockSongs } from './helpers';
-import navigateWithKeyboard from './steps/navigateWithKeyboard';
 
 let pages: ReturnType<typeof initialise>;
 test.beforeEach(async ({ page, context, browser }) => {
@@ -10,54 +9,57 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
+const polishLang = 'Polish';
+const polSong = 'e2e-multitrack-polish-1994';
+const gameMode = 'Cooperation';
+const blueMicNum = 0;
+const redMicNum = 1;
+const player1Name = 'Player #1';
+const player2Name = 'Player #2';
+
 test('Cooperation mode', async ({ page, browserName }, testInfo) => {
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('advanced').click();
-  await page.getByTestId('save-button').click();
+  await pages.inputSelectionPage.selectAdvancedSetup();
+  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.mainMenuPage.goToSingSong();
 
-  await page.getByTestId('sing-a-song').click();
-  await expect(page.getByTestId('lang-Polish')).toBeVisible();
-  await page.getByTestId('close-exclude-languages').click();
-
-  await expect(page.getByTestId('song-e2e-single-english-1995')).toBeVisible();
-  await navigateWithKeyboard(page, 'song-e2e-multitrack-polish-1994');
-
-  await page.keyboard.press('Enter'); // focus
-  await expect(page.getByTestId('next-step-button')).toBeVisible();
-
-  // Game mode
-  await expect(page.getByTestId('game-mode-setting')).toHaveAttribute('data-test-value', 'Cooperation');
-
-  await navigateWithKeyboard(page, 'next-step-button');
-  await page.keyboard.press('Enter', { delay: 40 }); // Go to next step
-
-  // Start song
-  await navigateWithKeyboard(page, 'play-song-button');
-  await page.keyboard.press('Enter');
-
-  await expect(page.getByTestId('players-score')).toBeVisible({ timeout: 15_000 });
-  await expect(page.getByTestId('player-0-score')).not.toBeVisible();
-  await expect(page.getByTestId('player-1-score')).not.toBeVisible();
-  await expect(page.getByTestId('skip-animation-button')).toBeVisible({
-    timeout: 30_000,
+  await test.step('Make sure song language is selected', async () => {
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
+    await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
-  await expect(page.getByTestId('player-0-name')).toHaveText('Player #1, Player #2');
-  await expect(page.getByTestId('player-1-name')).not.toBeVisible();
+  await test.step('Navigate to song', async () => {
+    await expect(pages.songListPage.getSongElement(polSong)).toBeVisible();
+    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+    await pages.songListPage.approveSelectedSongByKeyboard();
+    await expect(pages.songPreviewPage.nextButton).toBeVisible();
+  });
 
-  await expect(async () => {
-    const p1score = await page.getByTestId('player-0-score').getAttribute('data-score');
+  await test.step('Set Cooperation game mode and navigate to song', async () => {
+    await pages.songPreviewPage.expectGameModeToBe(gameMode);
+    await pages.songPreviewPage.navigateToGoNextByKeyboard();
+    await pages.songPreviewPage.navigateToPlayTheSongByKeyboard();
+  });
 
-    expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
-  }).toPass();
+  await test.step('Players cooperation score is visible', async () => {
+    await expect(pages.gamePage.playersCoopScoreElement).toBeVisible({ timeout: 15_000 });
+    await expect(pages.gamePage.getPlayerScoreElement(blueMicNum)).not.toBeVisible();
+    await expect(pages.gamePage.getPlayerScoreElement(redMicNum)).not.toBeVisible();
+  });
 
-  // High scores
-  await page.getByTestId('skip-animation-button').click();
-  await page.getByTestId('highscores-button').click();
+  await test.step('Names of cooperating players are visible', async () => {
+    await expect(pages.postGameResultsPage.playersNamesCoopElement).toBeVisible({ timeout: 30_000 });
+    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
+    await expect(pages.postGameResultsPage.getPlayerNameElement(redMicNum)).not.toBeVisible();
+  });
 
-  await expect(
-    page.locator('[data-test="input-edit-highscore"][data-original-name="Player #1, Player #2"]'),
-  ).toBeVisible();
+  await test.step('Skip to high scores - players names are visible', async () => {
+    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
+    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
+    await pages.postGameResultsPage.skipScoresAnimation();
+    await pages.postGameResultsPage.goNext();
+    await expect(pages.postGameHighScoresPage.getPlayersNamesCoopInput(player1Name, player2Name)).toBeVisible();
+  });
 });

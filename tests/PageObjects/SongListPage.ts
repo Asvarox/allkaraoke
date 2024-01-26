@@ -12,6 +12,14 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
+  public async focusSong(songID: string) {
+    await this.getSongElement(songID).click();
+  }
+
+  public async openPreviewForSong(songID: string) {
+    await this.getSongElement(songID).dblclick();
+  }
+
   public async navigateToSongWithKeyboard(songID: string) {
     await navigateWithKeyboard(this.page, `song-${songID}`);
   }
@@ -20,12 +28,20 @@ export class SongListPagePO {
     return this.page.getByTestId('song-list-container');
   }
 
+  public get searchInput() {
+    return this.page.getByTestId('filters-search');
+  }
+
   public get songPreviewElement() {
     return this.page.getByTestId('song-preview');
   }
 
-  public expectSelectedSongToBe(expectedSong: string) {
-    return expect(this.songPreviewElement).toHaveAttribute('data-song', expectedSong);
+  public expectSelectedSongToBe(songID: string) {
+    return expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
+  }
+
+  public expectSelectedSongNotToBe(songID: string) {
+    return expect(this.songPreviewElement).not.toHaveAttribute('data-song', songID);
   }
 
   public get fullscreenElement() {
@@ -47,7 +63,34 @@ export class SongListPagePO {
   public getPlaylistElement(name: string) {
     return this.page.getByTestId(`playlist-${name}`);
   }
+
   public async goToPlaylist(name: string) {
     await this.getPlaylistElement(name).click();
+  }
+
+  public get searchButton() {
+    return this.page.getByTestId('search-song-button');
+  }
+
+  public get pickRandomButton() {
+    return this.page.getByTestId('random-song-button');
+  }
+
+  public async expectPlaylistToBeSelected(name: string) {
+    await expect(this.getPlaylistElement(name)).toHaveAttribute('data-selected', 'true');
+  }
+
+  public getDuetSongIcon(songID: string) {
+    return this.getSongElement(songID).getByTestId('multitrack-indicator');
+  }
+
+  public async expectSongToBeMarkedAsPlayedToday(songID: string) {
+    await expect(this.getSongElement(songID).getByTestId('song-stat-indicator')).toContainText('Played today', {
+      ignoreCase: true,
+    });
+  }
+
+  public async approveSelectedSongByKeyboard() {
+    await this.page.keyboard.press('Enter');
   }
 }
