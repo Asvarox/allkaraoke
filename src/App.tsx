@@ -16,6 +16,7 @@ import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import PageLoader from 'Elements/PageLoader';
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
 import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
+import Game from 'Scenes/Game/Game';
 import LandingPage from 'Scenes/LandingPage/LandingPage';
 import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
 import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
@@ -28,11 +29,12 @@ import { Suspense, lazy, useMemo } from 'react';
 
 const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
 
-// This is a hack to preload the game scene so that it's ready when the user clicks on the game button
-// without increasing initial load time. Vite doesn't support prefetch yet
-// https://github.com/vitejs/vite/issues/10600
-const prefetchGame = import('./Scenes/Game/Game');
-const LazyGame = lazy(() => prefetchGame);
+// Commenting this out as there are many failed to fetch errors coming from Googlebot
+// // This is a hack to preload the game scene so that it's ready when the user clicks on the game button
+// // without increasing initial load time. Vite doesn't support prefetch yet
+// // https://github.com/vitejs/vite/issues/10600
+// const prefetchGame = import('./Scenes/Game/Game');
+// const LazyGame = lazy(() => prefetchGame);
 
 function App() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
@@ -67,9 +69,10 @@ function App() {
                 <Route path="exclude-languages" component={ExcludeLanguages} />
                 <Route path="jukebox" component={Jukebox} />
                 <Route path="game">
-                  <Suspense fallback={<PageLoader />}>
-                    <LazyGame />
-                  </Suspense>
+                  {/*<Suspense fallback={<PageLoader />}>*/}
+                  <Game />
+                  {/*<LazyGame />*/}
+                  {/*</Suspense>*/}
                 </Route>
                 <Route path="select-input" component={SelectInput} />
                 <Route path="settings" component={Settings} />
