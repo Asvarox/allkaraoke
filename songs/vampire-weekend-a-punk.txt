@@ -1,0 +1,288 @@
+#ARTIST:Vampire Weekend
+#TITLE:A-Punk
+#CREATOR:Gollum
+#BPM:350,07
+#YEAR:2008
+#PREVIEWSTART:71
+#VIDEO:v=_XC2mqcMMGQ
+#GENRE:Indie Rock
+#LANGUAGE:English
+#GAP:15834,48281772217
+#ALLKARAOKE_ID:vampire-weekend-a-punk
+#ALLKARAOKE_LASTUPDATE:2024-01-26T17:05:38.132Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:175
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=_XC2mqcMMGQ
+#ALLKARAOKE_PREVIEWEND:94
+#ALLKARAOKE_VOLUME:0,69
+#MP3:Vampire Weekend - A-Punk.mp3
+: 23 2 6 Jo
+: 27 2 7 han
+: 30 2 6 na 
+: 35 4 6 drove 
+: 42 4 6 slow
+: 47 5 7 ly 
+: 55 4 2 in
+: 63 6 2 to 
+: 70 2 2 the 
+: 75 2 2 ci
+: 78 3 2 ty 
+- 81
+: 87 2 4 The 
+: 90 3 6 Hud
+: 97 2 6 son 
+: 101 7 6 Ri
+* 109 2 6 ver 
+: 113 5 6 all 
+: 122 5 6 filled 
+: 128 2 4 with 
+: 135 6 2 snow 
+- 141
+: 150 2 2 She 
+: 155 5 6 spied 
+: 163 4 6 the 
+: 168 3 6 ring 
+: 175 5 6 on 
+: 181 2 6 His 
+: 185 6 6 Ho
+: 193 2 4 nor’s 
+: 199 5 2 fin
+: 206 4 -3 ger 
+- 210
+: 219 15 6 Oh
+: 235 11 4 ~
+* 247 10 2 ~ 
+- 257 320
+- 320
+: 343 2 2 A 
+: 347 4 6 thou
+: 352 3 6 sand 
+: 358 6 6 years 
+: 367 4 6 in 
+: 375 4 6 one 
+- 379
+: 384 4 2 Piece 
+: 391 2 2 of 
+: 395 6 2 sil
+: 403 2 2 ver, 
+: 406 2 2 she 
+: 410 2 6 took 
+: 415 3 6 it 
+: 423 5 6 from 
+: 431 3 6 his 
+- 434
+: 443 2 6 Li
+: 446 3 6 ly 
+: 451 5 6 white 
+: 459 5 6 hand 
+- 464
+: 475 3 6 Showed 
+: 479 4 6 no 
+: 487 4 6 fear 
+: 495 5 6 she’d 
+: 506 5 6 seen 
+: 514 2 4 the 
+: 519 5 2 thing 
+- 524
+: 531 2 -3 In 
+: 534 2 -3 the 
+: 538 5 -3 Young 
+: 547 3 -3 Men’s 
+: 555 5 -5 Wing 
+* 563 2 -6 at 
+: 568 4 -10 Sloan 
+: 575 7 -10 Ket
+: 583 3 -10 ter
+: 587 5 -10 ing 
+- 592 900
+- 900
+: 923 2 2 Look 
+: 927 5 2 out
+: 935 6 2 side 
+: 943 1 2 at 
+: 946 3 2 the 
+* 951 4 2 rain
+: 959 4 -3 coats 
+: 967 5 -3 co
+* 974 2 -3 ming 
+: 980 5 -3 say, 
+: 987 5 -1 oh 
+- 992 1028
+- 1028
+: 1051 1 2 Look 
+: 1054 4 2 out
+: 1063 6 2 side 
+: 1070 1 2 at 
+: 1074 3 2 the 
+: 1079 3 2 rain
+: 1086 3 -3 coats 
+: 1094 6 -3 co
+: 1102 2 -3 ming 
+: 1107 5 -3 say, 
+: 1115 6 -1 oh 
+- 1121 1192
+- 1192
+F 1215 4 5 Ay 
+F 1223 4 5 ay 
+F 1231 4 5 ay 
+F 1239 4 5 ay 
+- 1243 1256
+- 1256
+F 1279 4 5 Ay 
+F 1287 4 5 ay 
+F 1295 3 5 ay 
+- 1298
+: 1302 2 6 His 
+: 1306 3 6 Ho
+: 1310 2 6 nor 
+: 1315 4 6 drove 
+: 1322 3 6 south
+: 1327 4 6 ward 
+* 1335 3 6 see
+: 1343 6 2 king 
+: 1351 1 2 e
+: 1355 3 2 xo
+: 1359 1 2 ti
+: 1363 2 2 ca 
+- 1365
+: 1371 5 6 Down 
+: 1379 2 6 to 
+* 1382 2 6 the 
+: 1387 3 6 Pue
+: 1392 4 6 blo 
+: 1399 4 6 huts 
+: 1408 4 2 of 
+: 1416 1 2 New 
+: 1419 1 2 Me
+: 1423 1 2 xi
+: 1427 3 2 co 
+- 1430
+: 1436 3 6 Cut 
+: 1440 4 6 his 
+: 1448 3 6 teeth 
+: 1456 4 6 on 
+: 1464 3 6 tur
+: 1472 6 2 quoise 
+: 1480 2 2 har
+: 1484 2 2 mo
+: 1488 1 2 ni
+: 1492 4 2 cas 
+- 1496
+: 1500 11 6 Oh
+: 1512 3 4 ~ 
+: 1517 4 4 oh
+: 1522 4 2 ~ 
+: 1529 8 2 oh 
+- 1537 1604
+- 1604
+: 1627 2 -3 I 
+: 1632 2 -1 saw 
+: 1635 3 -1 Jo
+: 1640 5 2 han
+: 1647 4 -3 na 
+: 1655 8 2 down 
+: 1664 4 2 in 
+- 1668
+: 1672 2 2 The 
+: 1676 3 4 su
+: 1680 2 2 ~b
+: 1684 2 2 way, 
+: 1688 2 -5 she 
+: 1692 2 -3 took 
+: 1695 2 -3 an 
+* 1699 1 -1 a
+: 1704 5 1 part
+: 1712 2 -3 ment 
+: 1715 4 -3 in 
+- 1719
+: 1723 3 2 Wa
+: 1728 2 2 shing
+: 1732 2 4 ton 
+: 1736 7 2 Heights 
+- 1743
+: 1755 3 6 Half 
+: 1760 3 6 of 
+: 1764 2 6 the 
+: 1767 3 6 ring 
+* 1775 9 2 lies 
+: 1787 6 6 here 
+: 1795 3 4 with 
+: 1801 5 2 me 
+- 1806
+: 1812 2 -3 But 
+: 1816 3 -3 the 
+* 1820 3 -3 o
+: 1824 5 -3 ther 
+: 1832 5 -5 half’s 
+: 1844 1 -5 at 
+: 1848 2 -10 the 
+: 1852 3 -10 bot
+: 1857 2 -10 tom 
+* 1861 2 -10 of 
+: 1864 2 -10 the 
+* 1869 7 -10 sea 
+- 1876 2181
+- 2181
+: 2204 2 2 Look 
+: 2208 4 2 out
+: 2216 6 2 side 
+: 2224 1 2 at 
+: 2228 2 2 the 
+: 2232 4 2 rain
+: 2240 3 -3 coats 
+: 2248 5 -3 co
+: 2256 2 -3 ming 
+: 2260 5 -3 say, 
+: 2268 5 -1 oh 
+- 2273 2309
+- 2309
+* 2332 2 2 Look 
+: 2336 4 2 out
+: 2344 6 2 side 
+: 2352 1 2 at 
+: 2355 3 2 the 
+: 2360 4 2 rain
+* 2367 3 -3 coats 
+: 2375 5 -3 co
+: 2383 1 -3 ming 
+: 2388 5 -3 say, 
+: 2396 8 -1 oh 
+- 2404 2438
+- 2438
+: 2461 2 6 Look 
+: 2464 4 6 out
+: 2473 6 6 side 
+: 2480 1 6 at 
+: 2485 3 6 the 
+: 2489 4 6 rain
+: 2496 4 2 coats 
+: 2504 5 2 co
+: 2511 1 2 ming 
+: 2516 5 -3 say, 
+: 2524 5 -1 oh 
+- 2529 2565
+- 2565
+: 2588 2 6 Look 
+: 2592 4 6 out
+* 2600 6 6 side 
+: 2608 1 6 at 
+: 2612 3 6 the 
+: 2616 5 6 rain
+: 2624 4 2 coats 
+: 2632 5 2 co
+: 2639 2 2 ming 
+: 2644 6 -3 say, 
+: 2653 20 -1 oh 
+- 2673 2728
+- 2728
+F 2751 4 5 Ay 
+F 2759 4 5 ay 
+F 2767 4 5 ay 
+F 2775 4 5 ay 
+- 2779 2792
+- 2792
+F 2815 4 5 Ay 
+F 2823 4 5 ay 
+F 2831 4 5 ay 
+F 2839 4 5 ay 
+E
