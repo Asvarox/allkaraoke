@@ -1,0 +1,214 @@
+#ARTIST:Creedence Clearwater Revival
+#TITLE:Who’ll Stop The Rain
+#CREATOR:ultrastarsongs
+#BPM:246
+#YEAR:1969
+#PREVIEWSTART:45
+#VIDEO:v=T9MXNbpXQ3g
+#GENRE:None
+#LANGUAGE:English
+#GAP:10994,390243902439
+#EDITION:Oldie
+#ALLKARAOKE_ID:creedence-clearwater-revival-wholl-stop-the-rain
+#ALLKARAOKE_LASTUPDATE:2024-01-26T17:05:26.949Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_PREVIEWEND:89
+#ALLKARAOKE_VOLUME:0,88
+#MP3:Creedence Clearwater Revival - Who’ll Stop The Rain.mp3
+: 16 6 11 Long 
+: 24 2 14 as 
+: 28 9 14 I 
+: 40 2 14 re
+: 44 6 14 mem
+: 52 6 11 ber 
+- 58 60
+- 60
+: 76 2 9 The 
+: 80 2 9 rain
+: 84 5 7 ~ 
+: 91 6 7 been 
+: 99 3 7 com
+: 104 2 7 in’ 
+: 108 12 7 down 
+- 120 128
+- 128
+: 144 6 11 Clouds 
+: 152 2 14 of 
+* 156 6 14 mys
+* 164 5 14 t’ry 
+: 172 6 14 pou
+: 180 7 11 rin’ 
+- 187 188
+- 188
+: 204 2 9 Con
+: 208 6 9 fu
+: 216 2 7 sion 
+: 220 6 7 on 
+: 228 2 9 the
+: 232 2 11 ~ 
+: 236 14 11 ground 
+- 250 255
+- 255
+: 271 2 19 Good 
+: 275 6 19 men 
+* 283 6 19 through
+: 291 2 16 ~ 
+: 295 2 16 the 
+: 299 5 14 a
+: 306 8 11 ges 
+- 314 317
+- 317
+: 333 10 19 Try’n’ 
+: 345 2 19 to 
+: 349 6 19 find 
+: 357 2 16 the 
+: 361 8 14 sun 
+- 369 380
+- 380
+: 396 2 19 And 
+: 400 6 19 I 
+: 408 5 19 won
+: 416 6 16 der, 
+* 427 2 14 still 
+* 431 6 14 I 
+: 439 6 14 won
+: 447 2 9 der
+: 451 3 11 ~ 
+- 454
+: 459 13 16 Who’ll 
+: 475 6 16 stop 
+: 483 2 16 the 
+: 487 6 16 rain
+: 495 14 11 ~? 
+- 509 538
+- 538
+: 554 2 11 I 
+: 558 5 14 went 
+: 565 9 14 down 
+* 577 2 14 Vir
+* 581 5 14 gi
+* 588 6 11 nia 
+- 594
+: 609 2 9 Seek
+: 613 2 9 in’ 
+: 617 6 9 shel
+: 625 2 7 ter 
+: 629 10 7 from 
+: 641 2 7 the 
+: 645 10 7 storm 
+- 655 665
+- 665
+: 681 2 11 Caught 
+: 685 6 14 up 
+: 693 10 14 in 
+: 705 2 11 the 
+: 709 6 14 fa
+: 717 8 11 ble 
+- 725
+: 741 2 9 I 
+: 745 2 9 watched
+: 749 2 7 ~ 
+: 753 2 7 the 
+: 757 6 7 to
+: 765 6 11 wer 
+* 773 12 11 grow 
+- 785 793
+- 793
+: 809 2 19 Five 
+: 813 6 19 year 
+: 821 10 19 plans 
+: 833 2 16 and 
+: 837 6 14 new 
+: 845 8 11 deals 
+- 853 856
+- 856
+* 872 6 19 Wrapped 
+: 880 2 19 in 
+: 884 6 19 gol
+: 892 6 16 den 
+: 900 12 14 chains 
+- 912 919
+- 919
+: 935 2 19 And 
+: 939 6 19 I 
+: 947 5 19 won
+: 955 6 16 der 
+- 961
+: 967 2 14 Still 
+: 971 6 14 I 
+: 979 6 14 won
+: 987 2 9 der
+: 991 3 11 ~ 
+- 994
+* 998 13 16 Who’ll 
+: 1014 6 16 stop 
+: 1022 2 16 the 
+: 1026 6 16 rain
+: 1034 14 11 ~? 
+- 1048 1267
+- 1267
+* 1283 5 11 Heard 
+: 1291 2 14 the 
+: 1295 5 14 sin
+: 1303 5 14 gers 
+: 1311 5 14 play
+: 1318 8 11 in’ 
+- 1326 1330
+- 1330
+: 1346 2 9 How
+: 1350 2 7 ~ 
+: 1354 2 7 we 
+: 1358 10 7 cheered 
+: 1370 2 7 for 
+: 1374 10 7 more 
+- 1384 1390
+- 1390
+: 1406 2 11 The 
+: 1410 3 11 crowd 
+: 1415 9 14 had 
+: 1426 6 14 rushed 
+: 1434 2 14 to
+: 1438 5 14 get
+: 1445 6 11 her 
+- 1451 1458
+- 1458
+* 1474 2 9 Try
+* 1478 6 7 in’ 
+: 1486 6 7 to 
+: 1494 6 11 keep 
+: 1502 12 11 worm 
+- 1514 1521
+- 1521
+: 1537 6 19 Still 
+: 1545 2 19 the 
+: 1549 6 19 rain 
+: 1557 6 16 kept 
+: 1565 6 14 pour
+: 1573 8 11 in’ 
+- 1581 1584
+- 1584
+: 1600 2 19 Fal
+: 1604 6 19 lin’ 
+: 1612 6 19 on 
+: 1620 6 16 my 
+* 1628 12 14 ears 
+- 1640 1647
+- 1647
+: 1663 2 19 And 
+: 1667 6 19 I 
+: 1675 5 19 won
+: 1683 6 16 der 
+- 1689
+: 1695 2 14 Still 
+: 1699 6 14 I 
+: 1707 6 14 won
+: 1715 2 9 der
+: 1719 3 11 ~ 
+- 1722
+: 1727 13 16 Who’ll 
+: 1743 6 16 stop 
+* 1751 2 16 the 
+* 1755 6 16 rain
+* 1763 22 11 ~? 
+E
