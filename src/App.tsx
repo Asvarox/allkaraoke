@@ -26,6 +26,7 @@ import SocialMediaElements from 'Scenes/SocialMediaElements/SocialMediaElements'
 import Welcome from 'Scenes/Welcome/Welcome';
 import Toolbar from 'Toolbar/Toolbar';
 import { Suspense, lazy, useMemo } from 'react';
+import routePaths from 'routePaths';
 
 const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
 
@@ -63,27 +64,25 @@ function App() {
             <Router base={import.meta.env.BASE_URL}>
               <GameScreens>
                 <Toolbar />
-                <Route path="" component={LandingPage} />
-                <Route path="quick-setup" component={QuickSetup} />
-                <Route path="menu" component={Welcome} />
-                <Route path="exclude-languages" component={ExcludeLanguages} />
-                <Route path="jukebox" component={Jukebox} />
-                <Route path="game">
-                  {/*<Suspense fallback={<PageLoader />}>*/}
+                <Route path={routePaths.INDEX} component={LandingPage} />
+                <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
+                <Route path={routePaths.MENU} component={Welcome} />
+                <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
+                <Route path={routePaths.JUKEBOX} component={Jukebox} />
+                <Route path={routePaths.GAME}>
+                  {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
                   <Game />
-                  {/*<LazyGame />*/}
-                  {/*</Suspense>*/}
                 </Route>
-                <Route path="select-input" component={SelectInput} />
-                <Route path="settings" component={Settings} />
-                <Route path="settings/remote-mics" component={RemoteMicSettings} />
-                <Route path="remote-mic" component={RemoteMic} />
+                <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
+                <Route path={routePaths.SETTINGS} component={Settings} />
+                <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />
+                <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
+                <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
                 <Route path="social-media-elements" component={SocialMediaElements} />
-                <Route path="manage-songs" component={ManageSongs} />
               </GameScreens>
-              <Route path="convert" component={() => <Convert />} />
+              <Route path={routePaths.CONVERT} component={() => <Convert />} />
               <Route
-                path="edit/list"
+                path={routePaths.EDIT_SONGS_LIST}
                 component={() => (
                   <Suspense fallback={<PageLoader />}>
                     <LazySongList />
@@ -91,7 +90,7 @@ function App() {
                 )}
               />
               <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
-              <Route path="edit/song">
+              <Route path={routePaths.EDIT_SONG}>
                 <Edit />
               </Route>
             </Router>

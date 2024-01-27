@@ -48,7 +48,7 @@
     "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key --no-request-logging -p ${PORT:-3010} build",
     "prod:serve": "yarn start:production",
     "serve:prod": "yarn start:production",
-    "build": "vite build",
+    "build": "vite build && ts-node scripts/createIndexHtmlForKnownRoutes.ts",
     "build:serve": "yarn build && yarn start:production",
     "build:serve:sourcemap": "yarn build --sourcemap true && yarn start:production",
     "test": "vitest",
