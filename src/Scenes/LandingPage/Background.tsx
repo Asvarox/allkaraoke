@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import AnimatedTile from 'Scenes/LandingPage/AnimatedTile';
 import isMobile from 'is-mobile';
 import { useEffect, useMemo, useState } from 'react';
-import isPrerendering from 'utils/isPrerendering';
+import isPreRendering from 'utils/isPreRendering';
 import { randomInt } from 'utils/randomValue';
 import songStats from './songStats.json';
 
@@ -11,7 +11,7 @@ const maxTime = 20_000;
 
 function RandomTile({ videoIds, index }: { videoIds: string[]; index: number }) {
   const [videoId, setVideoId] = useState(videoIds[index]);
-  const [time, setTime] = useState(randomInt(isPrerendering ? 5_000 : 1_000, maxTime - minTime));
+  const [time, setTime] = useState(randomInt(isPreRendering ? 5_000 : 1_000, maxTime - minTime));
 
   useEffect(() => {
     const interval = setTimeout(() => {

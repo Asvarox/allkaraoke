@@ -12,7 +12,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import isDev from 'utils/isDev';
 import isE2E from 'utils/isE2E';
-import isPrerendering from 'utils/isPrerendering';
+import isPreRendering from 'utils/isPreRendering';
 import { v4 } from 'uuid';
 import App from './App';
 import './index.css';
@@ -51,9 +51,10 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   });
 }
 
+// https://github.com/emotion-js/emotion/issues/2404
 const emotionCache = createCache({
   key: 'emotion-cache-no-speedy',
-  speedy: false,
+  speedy: !isPreRendering,
 });
 
 const container = document.getElementById('root');
@@ -61,15 +62,8 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 
 root.render(
-  !isPrerendering ? (
-    <>
-      <App />
-      <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
-    </>
-  ) : (
-    <CacheProvider value={emotionCache}>
-      <App />
-      <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
-    </CacheProvider>
-  ),
+  <CacheProvider value={emotionCache}>
+    <App />
+    <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
+  </CacheProvider>,
 );
