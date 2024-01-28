@@ -1,4 +1,5 @@
 import CameraManager from 'Camera/CameraManager';
+import NoPrerender from 'Elements/NoPrerender';
 import SingASong from 'Scenes/SingASong/SingASong';
 import { woosh } from 'SoundManager';
 import useFullscreen from 'hooks/useFullscreen';
@@ -32,7 +33,7 @@ function Game() {
   useFullscreen();
 
   return (
-    <>
+    <NoPrerender>
       {singSetup ? (
         <Singing
           restartSong={() => {
@@ -50,7 +51,7 @@ function Game() {
       ) : (
         <SingASong onSongSelected={handleSelect} preselectedSong={preselectedSong} />
       )}
-    </>
+    </NoPrerender>
   );
 }
 export default Game;

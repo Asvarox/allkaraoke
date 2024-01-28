@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
+import NoPrerender from 'Elements/NoPrerender';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
@@ -35,33 +36,35 @@ function Jukebox(props: Props) {
   const navigateUrl = buildUrl(`game`, { song: shuffledList[currentlyPlaying].id });
 
   return (
-    <SongPage
-      width={width}
-      height={height}
-      songData={shuffledList[currentlyPlaying]}
-      data-test="jukebox-container"
-      data-song={shuffledList[currentlyPlaying].id}
-      background={
-        <VideoPlayer
-          autoplay
-          controls
-          width={width}
-          height={height}
-          volume={shuffledList[currentlyPlaying]?.volume}
-          video={shuffledList[currentlyPlaying].video}
-          startAt={shuffledList[currentlyPlaying].videoGap}
-          onStateChange={(state) => {
-            if (state === VideoState.ENDED) playNext();
-          }}
-        />
-      }>
-      <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
-      <Link to={navigateUrl}>
-        <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
-          Sing this song
-        </PlayThisSongButton>
-      </Link>
-    </SongPage>
+    <NoPrerender>
+      <SongPage
+        width={width}
+        height={height}
+        songData={shuffledList[currentlyPlaying]}
+        data-test="jukebox-container"
+        data-song={shuffledList[currentlyPlaying].id}
+        background={
+          <VideoPlayer
+            autoplay
+            controls
+            width={width}
+            height={height}
+            volume={shuffledList[currentlyPlaying]?.volume}
+            video={shuffledList[currentlyPlaying].video}
+            startAt={shuffledList[currentlyPlaying].videoGap}
+            onStateChange={(state) => {
+              if (state === VideoState.ENDED) playNext();
+            }}
+          />
+        }>
+        <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
+        <Link to={navigateUrl}>
+          <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
+            Sing this song
+          </PlayThisSongButton>
+        </Link>
+      </SongPage>
+    </NoPrerender>
   );
 }
 

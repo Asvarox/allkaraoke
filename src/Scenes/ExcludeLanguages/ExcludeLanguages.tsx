@@ -1,3 +1,4 @@
+import NoPrerender from 'Elements/NoPrerender';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import ExcludeLanguagesView from './ExcludeLanguagesView';
 
@@ -7,7 +8,11 @@ function ExcludeLanguages(props: Props) {
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('menu');
 
-  return <ExcludeLanguagesView onClose={goBack} closeText="Return to Main Menu" />;
+  return (
+    <NoPrerender>
+      <ExcludeLanguagesView onClose={goBack} closeText="Return to Main Menu" />
+    </NoPrerender>
+  );
 }
 
 export default ExcludeLanguages;

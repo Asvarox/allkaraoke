@@ -75,7 +75,7 @@ export interface SongTrack {
   sections: Section[];
 }
 
-export interface SongPreview extends Omit<Song, 'tracks'> {
+export interface SongPreview extends Omit<Song, 'tracks' | 'unsupportedProps' | 'bar'> {
   id: string;
   tracksCount: number;
   tracks: Array<Pick<SongTrack, 'name'> & { start: number }>;
@@ -83,6 +83,7 @@ export interface SongPreview extends Omit<Song, 'tracks'> {
   isNew?: boolean;
   isDeleted?: boolean;
   local?: boolean;
+  bar?: number;
 }
 
 export interface FrequencyRecord {
