@@ -1,12 +1,12 @@
-/// <reference types="vitest" />
-
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
-import analyze from 'rollup-plugin-visualizer';
-import { defineConfig } from 'vite';
+import fs from 'node:fs';
+import path from 'node:path';
+import { visualizer } from 'rollup-plugin-visualizer';
+import { htmlPrerender } from 'vite-plugin-html-prerender';
 import tsconfigPaths from 'vite-tsconfig-paths';
-
-const fs = require('node:fs');
+import { defineConfig } from 'vitest/config';
+import routePaths from './src/routePaths';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';
@@ -25,8 +25,20 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
-    analyze(),
+    visualizer(),
     !customCert && basicSsl(),
+
+    htmlPrerender({
+      staticDir: path.join(__dirname, 'build'),
+      routes: Object.values(routePaths).map((route) => `/${route}`),
+      minify: {
+        collapseBooleanAttributes: true,
+        collapseWhitespace: true,
+        decodeEntities: true,
+        keepClosingSlash: true,
+        sortAttributes: true,
+      },
+    }),
   ],
   base: '/',
   build: {

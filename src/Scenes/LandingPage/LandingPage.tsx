@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
+import NoPrerender from 'Elements/NoPrerender';
 import { DesktopOnly, MobileOnly } from 'Elements/RWD';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
 import Background from 'Scenes/LandingPage/Background';
@@ -51,16 +52,18 @@ function LandingPage() {
               ▸ <strong>{songStats.songs}</strong> songs in <strong>{songStats.languages.length}</strong> languages
               <StatSubText>
                 Artists such as{' '}
-                <strong>
-                  <Typewriter
-                    options={{
-                      strings: songStats.artists,
-                      autoStart: true,
-                      loop: true,
-                      delay: 100,
-                    }}
-                  />
-                </strong>
+                <NoPrerender>
+                  <strong>
+                    <Typewriter
+                      options={{
+                        strings: songStats.artists,
+                        autoStart: true,
+                        loop: true,
+                        delay: 100,
+                      }}
+                    />
+                  </strong>
+                </NoPrerender>
               </StatSubText>
             </StatText>
             <StatText>

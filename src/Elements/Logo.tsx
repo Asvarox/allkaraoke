@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import dotparty from 'Elements/dotparty.gif';
-import logo from 'Elements/logo.gif';
+import logoMp4 from 'Elements/logo.mp4';
+import logoWebm from 'Elements/logo.webm';
 import pride from 'Elements/pride.png';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { ComponentProps } from 'react';
@@ -17,13 +18,19 @@ export default function Logo(props: ComponentProps<typeof StyledLogo>) {
   }
   return (
     <Container>
-      {sessionStorage.getItem('pride') === 'true' && <PrideLogo src={pride} alt="AllKaraoke Pride logo part 1" />}
-      <StyledLogo src={logo} alt="AllKaraoke logo" {...props} />
+      {sessionStorage.getItem('pride') === 'true' && (
+        // @ts-expect-error
+        <PrideLogo as="img" src={pride} alt="AllKaraoke Pride logo part 1" />
+      )}
+      <StyledLogo {...props} autoPlay loop muted playsInline>
+        <source src={logoWebm} type="video/webm" />
+        <source src={logoMp4} type="video/mp4" />
+      </StyledLogo>
       <DotParty src={dotparty} alt="AllKaraoke Pride logo part 2" />
     </Container>
   );
 }
-const StyledLogo = styled.img`
+const StyledLogo = styled.video`
   width: 66rem;
   height: 16.4rem;
 `;

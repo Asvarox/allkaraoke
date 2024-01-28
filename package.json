@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.15.5",
     "@mui/material": "^5.15.5",
     "@mui/system": "^5.15.5",
@@ -48,7 +48,7 @@
     "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key --no-request-logging -p ${PORT:-3010} build",
     "prod:serve": "yarn start:production",
     "serve:prod": "yarn start:production",
-    "build": "vite build && ts-node scripts/createIndexHtmlForKnownRoutes.ts",
+    "build": "vite build",
     "build:serve": "yarn build && yarn start:production",
     "build:serve:sourcemap": "yarn build --sourcemap true && yarn start:production",
     "test": "vitest",
@@ -150,6 +150,7 @@
     "unimported": "^1.30.0",
     "utility-types": "^3.11.0",
     "vite": "^5.0.12",
+    "vite-plugin-html-prerender": "^0.2.0",
     "vite-tsconfig-paths": "^4.3.1",
     "vitest": "^1.2.1"
   },

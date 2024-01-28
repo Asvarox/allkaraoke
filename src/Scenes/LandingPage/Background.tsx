@@ -2,15 +2,16 @@ import styled from '@emotion/styled';
 import AnimatedTile from 'Scenes/LandingPage/AnimatedTile';
 import isMobile from 'is-mobile';
 import { useEffect, useMemo, useState } from 'react';
+import isPrerendering from 'utils/isPrerendering';
 import { randomInt } from 'utils/randomValue';
 import songStats from './songStats.json';
 
-const minTime = 10000;
-const maxTime = 20000;
+const minTime = 10_000;
+const maxTime = 20_000;
 
-function RandomTile({ videoIds }: { videoIds: string[] }) {
-  const [videoId, setVideoId] = useState(videoIds[randomInt(0, videoIds.length - 1)]);
-  const [time, setTime] = useState(randomInt(0, maxTime - minTime));
+function RandomTile({ videoIds, index }: { videoIds: string[]; index: number }) {
+  const [videoId, setVideoId] = useState(videoIds[index]);
+  const [time, setTime] = useState(randomInt(isPrerendering ? 5_000 : 1_000, maxTime - minTime));
 
   useEffect(() => {
     const interval = setTimeout(() => {
@@ -34,7 +35,7 @@ function Background() {
   return (
     <Container cols={cols} rows={rows}>
       {new Array(cols * rows).fill(null).map((_, i) => (
-        <RandomTile videoIds={songStats.videoIds} key={i} />
+        <RandomTile videoIds={songStats.videoIds} key={i} index={i} />
       ))}
     </Container>
   );

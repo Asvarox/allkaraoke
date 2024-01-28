@@ -1,5 +1,5 @@
-import '@fontsource/roboto';
-import '@fontsource/roboto/900.css';
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
 import 'GameEvents/eventListeners';
 import 'Stats';
 import 'utils/array-at-polyfill';
@@ -12,6 +12,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import isDev from 'utils/isDev';
 import isE2E from 'utils/isE2E';
+import isPrerendering from 'utils/isPrerendering';
 import { v4 } from 'uuid';
 import App from './App';
 import './index.css';
@@ -50,12 +51,25 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   });
 }
 
+const emotionCache = createCache({
+  key: 'emotion-cache-no-speedy',
+  speedy: false,
+});
+
 const container = document.getElementById('root');
+
 const root = createRoot(container!);
 
 root.render(
-  <>
-    <App />
-    <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
-  </>,
+  !isPrerendering ? (
+    <>
+      <App />
+      <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
+    </>
+  ) : (
+    <CacheProvider value={emotionCache}>
+      <App />
+      <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
+    </CacheProvider>
+  ),
 );
