@@ -7,7 +7,39 @@ export class AdvancedConnectionPagePO {
     await this.page.getByTestId('save-button').click();
   }
 
+  public get changeInputTypeButton() {
+    return this.page.getByTestId('back-button');
+  }
+  public async goBackToInputSelectionPage() {
+    await this.changeInputTypeButton.click();
+  }
+
+  public getPlayerMicSource(playerNumber: number) {
+    return this.page.getByTestId(`player-${playerNumber}-source`);
+  }
+
+  public async expectPlayerMicSourceToBe(playerNumber: number, name: string) {
+    await expect(this.getPlayerMicSource(playerNumber)).toContainText(name, { ignoreCase: true });
+  }
+
+  public async togglePlayerMicrophoneSource(playerNumber: number) {
+    await this.getPlayerMicSource(playerNumber).click();
+  }
+
+  public getMicInputName(playerNumber: number) {
+    return this.page.getByTestId(`player-${playerNumber}-input`);
+  }
+
+  public async expectMicInputNameToBe(playerNumber: number, name: string) {
+    await expect(this.getMicInputName(playerNumber)).toContainText(name, { ignoreCase: true });
+  }
+
+  public async toggleMicInputName(playerNumber: number) {
+    await this.getMicInputName(playerNumber).click();
+  }
+
   public getPlayerNameInput(playerNumber: number) {
+    // in Advanced mode, if player is using remote mic/smartphone, input is visible as player's name
     return this.page.getByTestId(`player-${playerNumber}-input`);
   }
 
@@ -19,9 +51,5 @@ export class AdvancedConnectionPagePO {
     await expect(this.page.locator('.Toastify')).toContainText(`${playerName} connected`, {
       ignoreCase: true,
     });
-  }
-
-  public async togglePlayerMicrophoneSource(playerNumber: number) {
-    await this.page.getByTestId(`player-${playerNumber}-source`).click();
   }
 }
