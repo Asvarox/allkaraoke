@@ -10640,7 +10640,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fflate@npm:^0.4.1":
+"fflate@npm:^0.4.8":
   version: 0.4.8
   resolution: "fflate@npm:0.4.8"
   checksum: c0c75029bcbefd0b47cede4ad2a3698f571e38d3d93dfbb96d744c655ec3bf5e31111044c2c01fa3965109874f5be8b5a6b3686b958392693689665cbabf3ece
@@ -13958,7 +13958,7 @@ __metadata:
     peerjs: "npm:^2.0.0-beta.3"
     playwright: "npm:^1.40.1"
     playwright-core: "npm:^1.40.1"
-    posthog-js: "npm:^1.101.0"
+    posthog-js: "npm:^1.103.1"
     prettier: "npm:^2.8.8"
     prettier-plugin-organize-imports: "npm:^3.2.4"
     qrcode.react: "npm:^3.1.0"
@@ -14659,13 +14659,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.101.0":
-  version: 1.101.0
-  resolution: "posthog-js@npm:1.101.0"
+"posthog-js@npm:^1.103.1":
+  version: 1.103.1
+  resolution: "posthog-js@npm:1.103.1"
   dependencies:
-    fflate: "npm:^0.4.1"
+    fflate: "npm:^0.4.8"
     preact: "npm:^10.19.3"
-  checksum: 04913c8dcd6aacaf353e60fbfdeb24010bc7fad2fdf4ea69e889c07e38f0010d5e932a125a7136a381839b34f747a653cb82c8e8c6070fee0a2c01597a9f69d2
+  checksum: 5173f01e74e3cc18b0fc7da98e3818bce14d135d3f33ff3f3c72193dfd22598b6c8b74ba2c7f7d91d453359b798d277eb48bc705249d929a6814bff7605efa89
   languageName: node
   linkType: hard
 
