@@ -10,28 +10,33 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
+const gameCode = '12345';
+const gameCodeIncorr = '123';
+const playerName = 'test';
+
 test('Should provide proper ux for manual connection', async ({ browser, page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.joinExistingGame();
-  await page.getByTestId('confirm-wifi-connection').click();
-
-  await expect(page.getByTestId('game-code-input')).toBeFocused();
+  await pages.joinExistingGamePage.confirmWifiConnection();
 
   await test.step('Should focus on game code input when not provided', async () => {
-    await page.getByTestId('player-name-input').focus();
-    await page.getByTestId('connect-button').click();
-    await expect(page.getByTestId('game-code-input')).toBeFocused();
+    await pages.joinExistingGamePage.gameCodeInput.focus();
+    await pages.joinExistingGamePage.playerNameInput.focus();
+    await pages.joinExistingGamePage.connectWithGame();
+    await expect(pages.joinExistingGamePage.gameCodeInput).toBeFocused();
+    await expect(pages.joinExistingGamePage.playerNameInput).toBeEmpty();
   });
 
   await test.step('Should focus on player name input when game code is provided but name is not', async () => {
-    await page.getByTestId('game-code-input').fill('12345');
-    await page.getByTestId('connect-button').click();
-    await expect(page.getByTestId('player-name-input')).toBeFocused();
+    await pages.joinExistingGamePage.gameCodeInput.fill(gameCode);
+    await pages.joinExistingGamePage.connectWithGame();
+    await expect(pages.joinExistingGamePage.playerNameInput).toBeFocused();
   });
+
   await test.step('Should focus on game code if it does not have the right length', async () => {
-    await page.getByTestId('game-code-input').fill('123');
-    await page.getByTestId('player-name-input').fill('test');
-    await page.getByTestId('connect-button').click();
-    await expect(page.getByTestId('game-code-input')).toBeFocused();
+    await pages.joinExistingGamePage.gameCodeInput.fill(gameCodeIncorr);
+    await pages.joinExistingGamePage.playerNameInput.fill(playerName);
+    await pages.joinExistingGamePage.connectWithGame();
+    await expect(pages.joinExistingGamePage.gameCodeInput).toBeFocused();
   });
 });
