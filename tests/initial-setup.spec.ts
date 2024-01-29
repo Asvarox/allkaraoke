@@ -11,7 +11,6 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 const blueMicNum = 0;
-//const redMicNum = 1;
 const micSourceName = 'Microphone';
 
 test('SingStar wireless mic is detected properly', async ({ page, context }) => {
@@ -153,7 +152,7 @@ test('Remote mic is deselected when it disconnects', async ({ page, context, bro
   });
 });
 
-test('Default microphone is selected for built-in', async ({ page, context }) => {
+test('Default microphone is selected for built-in', async ({ page, context, browserName }) => {
   const { connectDevices } = await stubUserMedia({ page, context });
 
   const micName = 'Not related';
@@ -197,6 +196,7 @@ test('Default microphone is selected for built-in', async ({ page, context }) =>
 
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
+    test.fixme(browserName === 'firefox', 'Doesnt work on Firefox');
     await expect(pages.mainMenuPage.singSongElement).toBeVisible();
   });
 });

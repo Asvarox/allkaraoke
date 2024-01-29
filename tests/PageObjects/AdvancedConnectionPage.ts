@@ -19,7 +19,7 @@ export class AdvancedConnectionPagePO {
   }
 
   public async expectPlayerMicSourceToBe(playerNumber: number, name: string) {
-    await expect(this.getPlayerMicSource(playerNumber)).toContainText(`${name}`, { ignoreCase: true });
+    await expect(this.getPlayerMicSource(playerNumber)).toContainText(name, { ignoreCase: true });
   }
 
   public async togglePlayerMicrophoneSource(playerNumber: number) {
@@ -31,7 +31,7 @@ export class AdvancedConnectionPagePO {
   }
 
   public async expectMicInputNameToBe(playerNumber: number, name: string) {
-    await expect(this.getMicInputName(playerNumber)).toContainText(`${name}`, { ignoreCase: true });
+    await expect(this.getMicInputName(playerNumber)).toContainText(name, { ignoreCase: true });
   }
 
   public async toggleMicInputName(playerNumber: number) {
