@@ -63,7 +63,7 @@ const RAW_RUNTIME_STATE =
           ["@types/latinize", "npm:0.2.18"],\
           ["@types/lodash", "npm:4.14.202"],\
           ["@types/lodash-es", "npm:4.17.12"],\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["@types/react", "npm:18.2.47"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["@types/react-refresh", "npm:0.14.5"],\
@@ -10627,10 +10627,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:20.11.4", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.11.4-aca6154269-207e17fa3a.zip/node_modules/@types/node/",\
+      ["npm:20.11.10", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.11.10-169269fe65-41ca9c7e7c.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
@@ -19277,7 +19277,7 @@ const RAW_RUNTIME_STATE =
           ["@types/latinize", "npm:0.2.18"],\
           ["@types/lodash", "npm:4.14.202"],\
           ["@types/lodash-es", "npm:4.17.12"],\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["@types/react", "npm:18.2.47"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["@types/react-refresh", "npm:0.14.5"],\
@@ -23114,7 +23114,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.11"],\
           ["@tsconfig/node14", "npm:1.0.3"],\
           ["@tsconfig/node16", "npm:1.0.4"],\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
@@ -24065,7 +24065,7 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:45c2d3e72dec6a9444cd6b60defc1e6586b0e21a9fb6eec369608572312edb70b6ae75fdb14e48aa3ca5616a257e56d3f3d66caf2b217655916c2c950d9cbc90#npm:5.0.7"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["@types/sass", null],\
           ["@types/stylus", null],\
           ["@types/sugarss", null],\
@@ -24143,7 +24143,7 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.0.12"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["@types/sass", null],\
           ["@types/stylus", null],\
           ["@types/sugarss", null],\
@@ -24244,7 +24244,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:20.11.4"],\
+          ["@types/node", "npm:20.11.10"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
