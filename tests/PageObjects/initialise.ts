@@ -4,6 +4,7 @@ import { ComputersMicConnectionPagePO } from './ComputersMicConnectionPage';
 import { EditSongsPagePO } from './EditSongsPage';
 import { GamePagePO } from './GamePage';
 import { InputSelectionPagePO } from './InputSelectionPage';
+import { JoinExistingGamePagePO } from './JoinExistingGamePage';
 import { JukeboxPagePO } from './JukeboxPage';
 import { LandingPagePO } from './LandingPage';
 import { MainMenuPagePO } from './MainMenuPage';
@@ -38,5 +39,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     remoteMicMainPage: new RemoteMicMainPagePO(page, context, browser),
     singstarConnectionPage: new SingstarConnectionPagePO(page, context, browser),
     computersMicConnectionPage: new ComputersMicConnectionPagePO(page, context, browser),
+    joinExistingGamePage: new JoinExistingGamePagePO(page, context, browser),
   };
 }
