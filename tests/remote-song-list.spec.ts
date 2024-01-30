@@ -40,7 +40,7 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
     await remoteMic.getByTestId('menu-microphone').click();
     await connectRemoteMic(remoteMic);
 
-    await pages.smartphonesConnectionPage.saveAndGoToSing();
+    await pages.smartphonesConnectionPage.goToMainMenuPage();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
     await pages.editSongsPage.hideSong(songID);

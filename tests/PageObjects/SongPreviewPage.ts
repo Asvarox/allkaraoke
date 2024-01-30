@@ -12,8 +12,8 @@ export class SongPreviewPagePO {
     await this.nextButton.click();
   }
 
-  public async navigateToGoNextByKeyboard() {
-    await navigateWithKeyboard(this.page, 'next-step-button');
+  public async navigateToGoNextWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'next-step-button', remoteMic);
     await this.page.keyboard.press('Enter', { delay: 40 });
   }
 
@@ -21,8 +21,8 @@ export class SongPreviewPagePO {
     await this.page.getByTestId('play-song-button').click();
   }
 
-  public async navigateToPlayTheSongByKeyboard() {
-    await navigateWithKeyboard(this.page, 'play-song-button');
+  public async navigateToPlayTheSongWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'play-song-button', remoteMic);
     await this.page.keyboard.press('Enter');
   }
 
@@ -30,8 +30,8 @@ export class SongPreviewPagePO {
     return this.page.getByTestId('game-mode-setting');
   }
 
-  public async navigateToGameModeSettingsByKeyboard() {
-    await navigateWithKeyboard(this.page, 'game-mode-setting');
+  public async navigateToGameModeSettingsWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'game-mode-setting', remoteMic);
   }
 
   public async expectGameModeToBe(modeName: string) {
@@ -42,8 +42,8 @@ export class SongPreviewPagePO {
     return this.page.getByTestId('difficulty-setting');
   }
 
-  public async navigateToDifficultySettingsByKeyboard() {
-    await navigateWithKeyboard(this.page, 'difficulty-setting');
+  public async navigateToDifficultySettingsWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'difficulty-setting', remoteMic);
   }
 
   public async expectGameDifficultyLevelToBe(level: string) {
@@ -54,19 +54,19 @@ export class SongPreviewPagePO {
     return this.page.getByTestId(`player-${playerNumber}-name`);
   }
 
-  public async navigateToChangePlayerNameByKeyboard(playerNumber: number) {
-    await navigateWithKeyboard(this.page, `player-${playerNumber}-name`);
+  public async navigateToChangePlayerNameWithKeyboard(playerNumber: number, remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, `player-${playerNumber}-name`, remoteMic);
     await this.page.keyboard.press('Enter', { delay: 40 });
   }
 
-  public async enterPlayerNameByKeyboard(playerName: string) {
+  public async enterPlayerNameWithKeyboard(playerName: string) {
     await this.page.keyboard.type(playerName);
     await this.page.keyboard.press('Enter');
   }
 
-  public async navigateAndEnterPlayerNameByKeyboard(playerNumber: number, playerName: string) {
-    await this.navigateToChangePlayerNameByKeyboard(playerNumber);
-    await this.enterPlayerNameByKeyboard(playerName);
+  public async navigateAndEnterPlayerNameWithKeyboard(playerNumber: number, playerName: string) {
+    await this.navigateToChangePlayerNameWithKeyboard(playerNumber);
+    await this.enterPlayerNameWithKeyboard(playerName);
   }
 
   public async expectEnteredPlayerNameToBe(playerNumber: number, playerName: string) {
@@ -87,8 +87,8 @@ export class SongPreviewPagePO {
     return this.page.getByTestId(`player-${playerNumber}-track-setting`);
   }
 
-  public async navigateAndTogglePlayerTrackSettingsByKeyboard(playerNumber: number) {
-    await navigateWithKeyboard(this.page, `player-${playerNumber}-track-setting`);
+  public async navigateAndTogglePlayerTrackSettingsWithKeyboard(playerNumber: number, remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, `player-${playerNumber}-track-setting`, remoteMic);
     await this.page.keyboard.press('Enter');
   }
 
@@ -98,5 +98,22 @@ export class SongPreviewPagePO {
 
   public async setupMics() {
     await this.page.getByTestId('select-inputs-button').click();
+  }
+
+  public getUnavailableStatusPlayer(playerNumber: number) {
+    return this.page.getByTestId(`indicator-player-${playerNumber}`).getByTestId('status-unavailable');
+  }
+
+  public async expectConnectedAlertToBeShownForPlayer(playerName: string) {
+    await expect(this.page.locator('.Toastify')).toContainText(`${playerName} connected`, {
+      ignoreCase: true,
+    });
+  }
+
+  public async expectPlayerConfirmationStatusToBe(playerName: string) {
+    await expect(this.page.locator(`[data-test="player-confirm-status"][data-name="${playerName}"]`)).toHaveAttribute(
+      'data-confirmed',
+      'true',
+    );
   }
 }

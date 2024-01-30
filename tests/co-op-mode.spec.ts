@@ -39,8 +39,8 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
 
   await test.step('Set Cooperation game mode and navigate to song', async () => {
     await pages.songPreviewPage.expectGameModeToBe(gameMode);
-    await pages.songPreviewPage.navigateToGoNextByKeyboard();
-    await pages.songPreviewPage.navigateToPlayTheSongByKeyboard();
+    await pages.songPreviewPage.navigateToGoNextWithKeyboard();
+    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
   });
 
   await test.step('Players cooperation score is visible', async () => {

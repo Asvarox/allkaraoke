@@ -1,10 +1,19 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SmartphonesConnectionPagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
 
-  public async saveAndGoToSing() {
-    await this.page.getByTestId('save-button').click();
+  public get singSongButton() {
+    return this.page.getByTestId('save-button');
+  }
+
+  public async goToMainMenuPage() {
+    await this.singSongButton.click();
+  }
+
+  public async navigateToMainMenuWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'save-button', remoteMic);
   }
 
   public getPlayerMicCheck(playerNumber: number) {
@@ -13,5 +22,11 @@ export class SmartphonesConnectionPagePO {
 
   public async expectPlayerNameToBe(playerNumber: number, playerName: string) {
     await expect(this.getPlayerMicCheck(playerNumber)).toContainText(playerName, { ignoreCase: true });
+  }
+
+  public async expectConnectedAlertToBeShownForPlayer(playerName: string) {
+    await expect(this.page.locator('.Toastify')).toContainText(`${playerName} connected`, {
+      ignoreCase: true,
+    });
   }
 }

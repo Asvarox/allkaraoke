@@ -1,11 +1,16 @@
 import { Browser, BrowserContext, Page, expect } from '@playwright/test';
+import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class GamePagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
 
+  public get skipIntroElement() {
+    return this.page.getByTestId('skip-intro-info');
+  }
+
   public async skipIntro() {
     await this.page.waitForTimeout(1500);
-    await expect(this.page.getByTestId('skip-intro-info')).toBeVisible();
+    await expect(this.skipIntroElement).toBeVisible();
     await this.page.waitForTimeout(1500);
     await this.page.keyboard.press('Enter');
   }
@@ -14,8 +19,16 @@ export class GamePagePO {
     await this.page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
   }
 
+  public get restartButton() {
+    return this.page.getByTestId('button-restart-song');
+  }
+
   public async goToRestartSong() {
-    await this.page.getByTestId('button-restart-song').click();
+    await this.restartButton.click();
+  }
+
+  public async navigateToRestartSongWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'button-restart-song', remoteMic);
   }
 
   public get resumeSongButton() {
@@ -56,5 +69,9 @@ export class GamePagePO {
 
   public async expectPlayersScoreToBe(expected: number) {
     await expect(this.playersCoopScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
+  }
+
+  public getSongLyricsForPlayerElement(playerNumber: number) {
+    return this.page.getByTestId(`lyrics-current-player-${playerNumber}`);
   }
 }
