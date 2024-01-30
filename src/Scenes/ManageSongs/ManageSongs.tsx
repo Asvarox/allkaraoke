@@ -1,9 +1,8 @@
 import { MenuButton } from 'Elements/Menu';
 import MenuWithLogo from 'Elements/MenuWithLogo';
+import SmoothLink from 'Elements/SmoothLink';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { MouseEventHandler } from 'react';
-import { Link } from 'wouter';
 
 interface Props {}
 
@@ -13,25 +12,20 @@ function ManageSongs(props: Props) {
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
-  const handleClick: (url: string) => MouseEventHandler<HTMLAnchorElement> = (url) => (e) => {
-    e.preventDefault();
-    navigate(url);
-  };
-
   return (
     <MenuWithLogo>
       <h1>Manage Songs</h1>
-      <Link href="exclude-languages" onClick={handleClick('exclude-languages')}>
+      <SmoothLink to="exclude-languages">
         <MenuButton {...register('exclude-languages', () => navigate('exclude-languages'))}>
           Select Song Languages
         </MenuButton>
-      </Link>
-      <Link href="edit/list" onClick={handleClick('edit/list')}>
+      </SmoothLink>
+      <SmoothLink to="edit/list">
         <MenuButton {...register('edit-songs', () => navigate('edit/list'))}>Edit songs</MenuButton>
-      </Link>
-      <Link href="convert" onClick={handleClick('convert')}>
+      </SmoothLink>
+      <SmoothLink to="convert">
         <MenuButton {...register('convert-song', () => navigate('convert'))}>Convert UltraStar .txt</MenuButton>
-      </Link>
+      </SmoothLink>
       <hr />
       <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>
     </MenuWithLogo>

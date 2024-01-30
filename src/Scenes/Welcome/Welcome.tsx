@@ -2,25 +2,19 @@ import styled from '@emotion/styled';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import { MenuButton } from 'Elements/Menu';
 import MenuWithLogo from 'Elements/MenuWithLogo';
+import SmoothLink from 'Elements/SmoothLink';
 import { typography } from 'Elements/cssMixins';
 import { BackgroundMusicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import FacebookLink from 'Scenes/Welcome/FacebookLink';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { MouseEventHandler } from 'react';
-import { Link } from 'wouter';
 
 function Welcome() {
   const [backgroundMusicSelection] = useSettingValue(BackgroundMusicSetting);
   useBackground(true);
 
   const navigate = useSmoothNavigate();
-
-  const handleClick: (url: string) => MouseEventHandler<HTMLAnchorElement> = (url) => (e) => {
-    e.preventDefault();
-    navigate(url);
-  };
 
   useBackgroundMusic(/* true */ false);
   const { register } = useKeyboardNav();
@@ -46,21 +40,21 @@ function Welcome() {
       )}
       <FacebookLink />
       <>
-        <Link href="game/" onClick={handleClick('game/')}>
+        <SmoothLink to="game/">
           <MenuButton {...register('sing-a-song', () => navigate('game/'))}>Sing a song</MenuButton>
-        </Link>
-        <Link href="select-input" onClick={handleClick('select-input')}>
+        </SmoothLink>
+        <SmoothLink to="select-input">
           <MenuButton {...register('select-input', () => navigate('select-input'))}>Setup Microphones</MenuButton>
-        </Link>
-        <Link href="settings" onClick={handleClick('settings')}>
+        </SmoothLink>
+        <SmoothLink to="settings">
           <MenuButton {...register('settings', () => navigate('settings'))}>Settings</MenuButton>
-        </Link>
-        <Link href="jukebox" onClick={handleClick('jukebox')}>
+        </SmoothLink>
+        <SmoothLink to="jukebox">
           <MenuButton {...register('jukebox', () => navigate('jukebox'))}>Jukebox</MenuButton>
-        </Link>
-        <Link href="manage-songs" onClick={handleClick('manage-songs')}>
+        </SmoothLink>
+        <SmoothLink to="manage-songs">
           <MenuButton {...register('manage-songs', () => navigate('manage-songs'))}>Manage Songs</MenuButton>
-        </Link>
+        </SmoothLink>
       </>
     </MenuWithLogo>
   );

@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import NoPrerender from 'Elements/NoPrerender';
+import SmoothLink from 'Elements/SmoothLink';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
@@ -10,7 +11,6 @@ import useSmoothNavigate, { buildUrl } from 'hooks/useSmoothNavigate';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
-import { Link } from 'wouter';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
 
@@ -58,11 +58,11 @@ function Jukebox(props: Props) {
           />
         }>
         <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
-        <Link to={navigateUrl}>
+        <SmoothLink to={navigateUrl}>
           <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
             Sing this song
           </PlayThisSongButton>
-        </Link>
+        </SmoothLink>
       </SongPage>
     </NoPrerender>
   );

@@ -5,11 +5,13 @@ import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
 import NoPrerender from 'Elements/NoPrerender';
 import { DesktopOnly, MobileOnly } from 'Elements/RWD';
+import SmoothLink from 'Elements/SmoothLink';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
 import Background from 'Scenes/LandingPage/Background';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { useHotkeys } from 'react-hotkeys-hook';
 import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
 import screenshot1 from './screenshot1.webp';
@@ -18,8 +20,19 @@ import songStats from './songStats.json';
 
 function LandingPage() {
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
-  const smoothNavigate = useSmoothNavigate();
+  const navigate = useSmoothNavigate();
+
   useBackground(true);
+
+  const nextPage = setupPreference === null ? 'quick-setup' : 'menu';
+
+  useHotkeys(
+    'enter',
+    () => {
+      navigate(nextPage);
+    },
+    [nextPage],
+  );
 
   return (
     <>
@@ -33,12 +46,11 @@ function LandingPage() {
           </LogoContainer>
         </DesktopOnly>
         <DesktopOnly>
-          <PlayButton
-            onClick={() => smoothNavigate(setupPreference === null ? 'quick-setup' : 'menu')}
-            data-test="enter-the-game"
-            focused>
-            Enter the game
-          </PlayButton>
+          <SmoothLink to={nextPage}>
+            <PlayButton data-test="enter-the-game" focused>
+              Enter the game
+            </PlayButton>
+          </SmoothLink>
         </DesktopOnly>
         <Stats>
           <StatSegment>
@@ -94,17 +106,19 @@ function LandingPage() {
         </Stats>
         <JoinExistingTip>
           Using this device as remote microphone?
-          <button onClick={() => smoothNavigate('remote-mic')} data-test="join-existing-game">
-            Join existing game
-          </button>
+          <SmoothLink to="remote-mic">
+            <button data-test="join-existing-game">Join existing game</button>
+          </SmoothLink>
         </JoinExistingTip>
         <MobileButtonsContainer>
-          <PlayButton onClick={() => smoothNavigate('remote-mic')} data-test="join-existing-game" focused>
-            Join game (with <strong>Game Code</strong>)
-          </PlayButton>
-          <PlayButton onClick={() => smoothNavigate('quick-setup')} data-test="enter-the-game">
-            Start new game
-          </PlayButton>
+          <SmoothLink to="remote-mic">
+            <PlayButton data-test="join-existing-game" focused>
+              Join game (with <strong>Game Code</strong>)
+            </PlayButton>
+          </SmoothLink>
+          <SmoothLink to={'quick-setup'}>
+            <PlayButton data-test="enter-the-game">Start new game</PlayButton>
+          </SmoothLink>
         </MobileButtonsContainer>
       </Container>
     </>
