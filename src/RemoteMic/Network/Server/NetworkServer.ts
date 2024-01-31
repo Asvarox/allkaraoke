@@ -47,7 +47,7 @@ export class NetworkServer {
         this.transport!.addListener((event, sender) => {
           const type = event.t;
           if (type === 'register') {
-            RemoteMicManager.addRemoteMic(event.id, event.name, sender, event.silent);
+            RemoteMicManager.addRemoteMic(event.id, event.name, sender, event.silent, event.lag);
           } else if (type === 'unregister') {
             RemoteMicManager.removeRemoteMic(sender.peer, true);
           } else if (type === 'subscribe-event') {
@@ -71,6 +71,17 @@ export class NetworkServer {
                 deleted,
               });
             });
+          } else if (type === 'get-microphone-lag-request') {
+            const microphone = RemoteMicManager.getRemoteMicById(sender.peer);
+            if (microphone) {
+              sender.send({ t: 'get-microphone-lag-response', value: microphone.getInput().getInputLag() });
+            }
+          } else if (type === 'set-microphone-lag-request') {
+            const microphone = RemoteMicManager.getRemoteMicById(sender.peer);
+            if (microphone) {
+              microphone.getInput().setInputLag(event.value);
+              sender.send({ t: 'get-microphone-lag-response', value: microphone.getInput().getInputLag() });
+            }
           } else if (RemoteMicManager.getPermission(sender.peer) === 'write') {
             if (type === 'keystroke') {
               events.remoteKeyboardPressed.dispatch(event.key);
@@ -78,11 +89,11 @@ export class NetworkServer {
               events.remoteSongSearch.dispatch(event.search);
             } else if (type === 'request-mic-select') {
               events.playerChangeRequested.dispatch(event.id, event.playerNumber);
-            } else if (type === 'get-input-lag-request') {
-              sender.send({ t: 'get-input-lag-response', value: InputLagSetting.get() });
-            } else if (type === 'set-input-lag-request') {
+            } else if (type === 'get-game-input-lag-request') {
+              sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
+            } else if (type === 'set-game-input-lag-request') {
               InputLagSetting.set(event.value);
-              sender.send({ t: 'get-input-lag-response', value: InputLagSetting.get() });
+              sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
             }
           }
         });

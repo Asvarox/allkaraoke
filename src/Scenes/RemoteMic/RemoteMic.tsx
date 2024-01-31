@@ -87,17 +87,7 @@ function RemoteMic() {
               connectionError={connectionError}
             />
           )}
-          {activeTab === 'settings' && (
-            <RemoteSettings
-              roomId={roomId}
-              monitoringStarted={monitoringStarted}
-              setMonitoringStarted={setMonitoringStarted}
-              connectionStatus={connectionStatus}
-              setIsKeepAwakeOn={setIsKeepAwakeOn}
-              isKeepAwakeOn={isKeepAwakeOn}
-              connectionError={connectionError}
-            />
-          )}
+          {activeTab === 'settings' && <RemoteSettings />}
           <BottomBarFiller />
           <BottomBar setActiveTab={setActiveTab} active={activeTab} />
         </>

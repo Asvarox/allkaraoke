@@ -1,21 +1,23 @@
 import events from 'GameEvents/GameEvents';
-import { throttle } from 'lodash-es';
-import posthog from 'posthog-js';
-import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
 import { PeerJSClientTransport } from 'RemoteMic/Network/Client/Transport/PeerJSClient';
 import { WebSocketClientTransport } from 'RemoteMic/Network/Client/Transport/WebSocketClient';
+import { ClientTransport } from 'RemoteMic/Network/Client/Transport/interface';
 import {
-  keyStrokes,
-  NetworkGetInputLagResponseMessage,
+  NetworkGetGameInputLagResponseMessage,
+  NetworkGetMicrophoneLagResponseMessage,
   NetworkMessages,
   NetworkRequestMicSelectMessage,
   NetworkSongListMessage,
   NetworkSubscribeMessage,
   NetworkUnsubscribeMessage,
+  keyStrokes,
 } from 'RemoteMic/Network/messages';
 import sendMessage from 'RemoteMic/Network/sendMessage';
 import { getPingTime } from 'RemoteMic/Network/utils';
 import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
+import { RemoteMicrophoneLagSetting } from 'Scenes/Settings/SettingsState';
+import { throttle } from 'lodash-es';
+import posthog from 'posthog-js';
 import { roundTo } from 'utils/roundTo';
 import storage from 'utils/storage';
 import { v4 } from 'uuid';
@@ -138,7 +140,7 @@ export class NetworkClient {
     this.connected = true;
     this.reconnecting = false;
     events.karaokeConnectionStatusChange.dispatch('connected');
-    this.sendEvent('register', { name, id: this.clientId!, silent });
+    this.sendEvent('register', { name, id: this.clientId!, silent, lag: RemoteMicrophoneLagSetting.get() });
     this.ping();
     window.addEventListener('beforeunload', this.disconnect);
 
@@ -214,13 +216,27 @@ export class NetworkClient {
 
   public getSongList = () => this.sendRequest<NetworkSongListMessage>({ t: 'request-songlist' }, 'songlist');
 
-  public getInputLag = () =>
-    this.sendRequest<NetworkGetInputLagResponseMessage>({ t: 'get-input-lag-request' }, 'get-input-lag-response');
+  public getGameInputLag = () =>
+    this.sendRequest<NetworkGetGameInputLagResponseMessage>(
+      { t: 'get-game-input-lag-request' },
+      'get-game-input-lag-response',
+    );
 
-  public setInputLag = (value: number) =>
-    this.sendRequest<NetworkGetInputLagResponseMessage>(
-      { t: 'set-input-lag-request', value },
-      'get-input-lag-response',
+  public setGameInputLag = (value: number) =>
+    this.sendRequest<NetworkGetGameInputLagResponseMessage>(
+      { t: 'set-game-input-lag-request', value },
+      'get-game-input-lag-response',
+    );
+  public getMicrophoneInputLag = () =>
+    this.sendRequest<NetworkGetMicrophoneLagResponseMessage>(
+      { t: 'get-microphone-lag-request' },
+      'get-microphone-lag-response',
+    );
+
+  public setMicrophoneInputLag = (value: number) =>
+    this.sendRequest<NetworkGetMicrophoneLagResponseMessage>(
+      { t: 'set-microphone-lag-request', value },
+      'get-microphone-lag-response',
     );
 
   private sendEvent = <T extends NetworkMessages>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {

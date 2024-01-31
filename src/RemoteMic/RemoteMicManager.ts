@@ -19,9 +19,9 @@ class RemoteMicManager extends Listener<[string, NetworkSetPermissionsMessage['l
     RememberedSubscriptionsKey,
   ) ?? { 'remote-mics': [] };
 
-  public addRemoteMic = (id: string, name: string, connection: SenderInterface, silent: boolean) => {
+  public addRemoteMic = (id: string, name: string, connection: SenderInterface, silent: boolean, lag: number) => {
     this.remoteMics = this.remoteMics.filter((remoteMic) => remoteMic.id !== id);
-    this.remoteMics = [...this.remoteMics, new RemoteMic(id, name, connection)];
+    this.remoteMics = [...this.remoteMics, new RemoteMic(id, name, connection, lag)];
     this.setPermission(id, this.getPermission(id));
 
     events.remoteMicConnected.dispatch({ id, name, silent });

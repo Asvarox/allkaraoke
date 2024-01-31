@@ -28,7 +28,7 @@ const InputLag = forwardRef<HTMLInputElement, Props>(({ ...restProps }, forwarde
           inputRef.current?.blur();
         }
       }}
-      info="If the sound is not synchorised with the lyrics, use this to compensate it."
+      info="If the sound is not synchronised with the lyrics, use this to compensate it."
       {...restProps}
     />
   );

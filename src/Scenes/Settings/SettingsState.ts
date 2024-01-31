@@ -52,6 +52,9 @@ export const KeyboardHelpVisibilitySetting = new Setting<boolean>('keyboard-help
 
 export const InputLagSetting = new Setting<milliseconds>('INPUT_LAG', 0);
 
+// Used in remote mics
+export const RemoteMicrophoneLagSetting = new Setting<milliseconds>('REMOTE_MIC_INPUT_LAG', 0, 'session');
+
 export const RemoteMicPermissions = ['write', 'read'] as const;
 export const DefaultRemoteMicPermission = new Setting<ValuesType<typeof RemoteMicPermissions>>(
   'DefaultRemoteMicPermission',

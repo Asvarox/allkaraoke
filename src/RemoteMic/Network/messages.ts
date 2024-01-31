@@ -9,6 +9,7 @@ export interface NetworkRegisterMessage {
   id: string;
   name: string;
   silent: boolean;
+  lag: number;
 }
 
 export interface NetworkUnregisterMessage {
@@ -93,17 +94,31 @@ export interface NetworkSearchSongMessage {
   search: string;
 }
 
-export interface NetworkSetInputLagRequestMessage {
-  t: 'set-input-lag-request';
+export interface NetworkSetGameInputLagRequestMessage {
+  t: 'set-game-input-lag-request';
   value: number;
 }
 
-export interface NetworkGetInputLagRequestMessage {
-  t: 'get-input-lag-request';
+export interface NetworkGetGameInputLagRequestMessage {
+  t: 'get-game-input-lag-request';
 }
 
-export interface NetworkGetInputLagResponseMessage {
-  t: 'get-input-lag-response';
+export interface NetworkGetGameInputLagResponseMessage {
+  t: 'get-game-input-lag-response';
+  value: number;
+}
+
+export interface NetworkGetMicrophoneLagRequestMessage {
+  t: 'get-microphone-lag-request';
+}
+
+export interface NetworkGetMicrophoneLagResponseMessage {
+  t: 'get-microphone-lag-response';
+  value: number;
+}
+
+export interface NetworkSetMicrophoneLagRequestMessage {
+  t: 'set-microphone-lag-request';
   value: number;
 }
 
@@ -145,8 +160,11 @@ export type NetworkMessages =
   | NetworkRequestSongListMessage
   | NetworkSongListMessage
   | NetworkSearchSongMessage
-  | NetworkSetInputLagRequestMessage
-  | NetworkGetInputLagRequestMessage
-  | NetworkGetInputLagResponseMessage
+  | NetworkSetGameInputLagRequestMessage
+  | NetworkGetGameInputLagRequestMessage
+  | NetworkGetGameInputLagResponseMessage
+  | NetworkGetMicrophoneLagRequestMessage
+  | NetworkGetMicrophoneLagResponseMessage
+  | NetworkSetMicrophoneLagRequestMessage
   | NetworkStyleChangeMessage
   | NetworkNewFrequencyMessage;

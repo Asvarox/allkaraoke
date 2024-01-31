@@ -1,11 +1,14 @@
 import styled from '@emotion/styled';
-import { MenuButton } from 'Elements/Menu';
+import { MenuButton, MenuContainer } from 'Elements/Menu';
+import Modal from 'Elements/Modal';
 import RemoteMicClient from 'RemoteMic/Network/Client';
-import { MIC_ID_KEY, transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
+import { transportErrorReason } from 'RemoteMic/Network/Client/NetworkClient';
 import RemoteInputLag from 'Scenes/RemoteMic/Panels/RemoteSettings/InputLag';
 import ManagePlayers from 'Scenes/RemoteMic/Panels/RemoteSettings/ManagePlayers';
+import MicrophoneSettings from 'Scenes/RemoteMic/Panels/RemoteSettings/MicrophoneSettings';
 import { ConnectionStatuses } from 'Scenes/RemoteMic/RemoteMic';
 import usePermissions from 'Scenes/RemoteMic/hooks/usePermissions';
+import { useState } from 'react';
 
 interface Props {
   roomId: string | null;
@@ -17,46 +20,72 @@ interface Props {
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
 
-function RemoteSettings({
-  roomId,
-  monitoringStarted,
-  setMonitoringStarted,
-  isKeepAwakeOn,
-  setIsKeepAwakeOn,
-  connectionError,
-  connectionStatus,
-}: Props) {
+function RemoteSettings() {
   const permissions = usePermissions();
-  const reset = () => {
-    RemoteMicClient.disconnect();
-    localStorage.removeItem('remote_mic_name');
-    localStorage.removeItem(MIC_ID_KEY);
-    window.location.reload();
-  };
+  const [openedPanel, setOpenedPanel] = useState<'microphone' | 'manage' | null>(
+    permissions === 'write' ? null : 'microphone',
+  );
   return (
     <Container>
       <h3>
         Remote mic ID:{' '}
         <strong data-test="remote-mic-id">{RemoteMicClient.getClientId()?.slice(-4).toUpperCase() ?? '----'}</strong>
       </h3>
-      <MenuButton onClick={reset} size="small" data-test="reset-microphone">
-        Reset microphone
-      </MenuButton>
-      <h5>Removes all persisted microphone data.</h5>
       <hr />
-      {permissions === 'write' && <ManagePlayers />}
-      {permissions === 'write' && <RemoteInputLag />}
+      {permissions === 'write' && openedPanel === null && (
+        <>
+          <MenuButton
+            onClick={() => setOpenedPanel('microphone')}
+            size="small"
+            data-test="microphone-settings"
+            disabled={openedPanel === 'microphone'}>
+            Microphone settings
+          </MenuButton>
+          <MenuButton
+            onClick={() => setOpenedPanel('manage')}
+            size="small"
+            data-test="manage-game"
+            disabled={openedPanel === 'manage'}>
+            Manage the game
+          </MenuButton>
+        </>
+      )}
+      {permissions !== 'write' && <MicrophoneSettings />}
+      {openedPanel !== null && permissions === 'write' && (
+        <Modal onClose={() => setOpenedPanel(null)}>
+          <MenuContainer>
+            <ModalHeader>{openedPanel === 'microphone' ? 'Microphone settings' : 'Manage game'}</ModalHeader>
+            {openedPanel === 'microphone' && <MicrophoneSettings />}
+            {openedPanel === 'manage' && (
+              <>
+                <ManagePlayers />
+                <RemoteInputLag />
+              </>
+            )}
+            <hr />
+            <MenuButton onClick={() => setOpenedPanel(null)} size="small" data-test="close-modal">
+              Close
+            </MenuButton>
+          </MenuContainer>
+        </Modal>
+      )}
     </Container>
   );
 }
+
 export default RemoteSettings;
 
 const Container = styled.div`
+  flex-grow: 1;
   font-size: 2.6rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 1.5rem;
+  justify-content: center;
+  padding: 5rem 1.5rem 1.5rem;
   box-sizing: border-box;
   gap: 1rem;
+`;
+
+const ModalHeader = styled.h1`
+  font-size: 3.25rem !important;
 `;

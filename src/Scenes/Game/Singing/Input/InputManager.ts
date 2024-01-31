@@ -60,11 +60,11 @@ class InputManager {
   };
 
   public getPlayerInputLag = (playerNumber: number) => {
-    const player = PlayersManager.getPlayer(playerNumber);
-    if (!player) {
+    const input = PlayersManager.getPlayer(playerNumber)?.input;
+    if (!input) {
       return 0;
     } else {
-      return this.sourceNameToInput(player.input.source).getInputLag();
+      return this.sourceNameToInput(input.source).getInputLag(input.deviceId);
     }
   };
 

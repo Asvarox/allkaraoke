@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
-import { typography } from 'Elements/cssMixins';
 import RemoteMicClient from 'RemoteMic/Network/Client';
+import NumericInput from 'Scenes/RemoteMic/Components/NumericInput';
 import { useEffect, useState } from 'react';
 
 interface Props {}
@@ -11,57 +10,32 @@ function RemoteInputLag({}: Props) {
 
   useEffect(() => {
     setIsLoading(true);
-    RemoteMicClient.getInputLag()
+    RemoteMicClient.getGameInputLag()
       .then(({ value }) => setCurrentValue(value))
       .catch((e) => console.warn(e))
       .finally(() => setIsLoading(false));
   }, []);
 
-  const changeValue = (change: number) => {
+  const changeValue = (newValue: number) => {
     setIsLoading(true);
-    RemoteMicClient.setInputLag(currentValue + change)
+    RemoteMicClient.setGameInputLag(newValue)
       .then(({ value }) => setCurrentValue(value))
       .finally(() => setIsLoading(false));
   };
 
   return (
     <>
-      <h3>Adjust input lag</h3>
-      <Container>
-        <Button onClick={() => changeValue(-50)} disabled={isLoading}>
-          -
-        </Button>
-        <Value>
-          <strong>{currentValue}</strong>ms
-        </Value>
-        <Button onClick={() => changeValue(+50)} disabled={isLoading}>
-          +
-        </Button>
-      </Container>
+      <h3>Adjust game input lag</h3>
+      <NumericInput
+        value={currentValue}
+        onChange={changeValue}
+        disabled={isLoading}
+        unit="ms"
+        data-test="game-input-lag"
+      />
+      <h6>If the sound is not synchronised with the lyrics, use this to compensate it.</h6>
     </>
   );
 }
+
 export default RemoteInputLag;
-
-const Button = styled.button`
-  background: black;
-  padding: 1rem 2rem;
-  border: none;
-  font-size: 3rem;
-  ${typography};
-  :disabled {
-    opacity: 0.5;
-  }
-`;
-
-const Value = styled.div`
-  flex: 1;
-  text-align: center;
-`;
-const Container = styled.div`
-  ${typography};
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  background: black;
-`;
