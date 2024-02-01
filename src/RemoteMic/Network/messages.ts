@@ -30,7 +30,7 @@ export interface NetworkStopMonitorMessage {
 
 export interface NetworkPlayerNumberMessage {
   t: 'set-player-number';
-  playerNumber: number | null;
+  playerNumber: 0 | 1 | 2 | 3 | null;
 }
 
 export interface NetworkNewFrequencyMessage {
@@ -76,7 +76,7 @@ export interface NetworkSongListMessage {
 export interface NetworkRequestMicSelectMessage {
   t: 'request-mic-select';
   id: string;
-  playerNumber: number | null;
+  playerNumber: 0 | 1 | 2 | 3 | null;
 }
 
 export interface NetworkRemoteKeyboardMessage {
@@ -132,7 +132,7 @@ export interface NetworkUnsubscribeMessage {
 }
 export interface NetworkRemoteMicListMessage {
   t: 'remote-mics-list';
-  list: Array<{ id: string; name: string; number: number | null }>;
+  list: Array<{ id: string; name: string; number: 0 | 1 | 2 | 3 | null }>;
 }
 export interface NetworkStyleChangeMessage {
   t: 'style-change';

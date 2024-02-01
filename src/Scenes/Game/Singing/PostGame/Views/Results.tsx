@@ -67,7 +67,7 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
   const highestScore = Math.max(...playerScores);
 
   return (
-    <>
+    <Container>
       <ScoresContainer>
         {finalPlayers.map((player, number) => (
           <PlayerScoreView
@@ -90,26 +90,35 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
         {isAnimFinished ? 'Next' : 'Skip'}
       </SongSelectionButton>
       {CameraManager.getPermissionStatus() && <StyledPhotoRoll />}
-    </>
+    </Container>
   );
 }
+const Container = styled.div`
+  position: absolute;
+  padding: 20rem 15rem 10rem 15rem;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
 
 const ScoresContainer = styled.div`
-  position: absolute;
-  top: 20rem;
-  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 15rem;
+  flex: 1;
 `;
 
 const SongSelectionButton = styled(Button)<{ focused: boolean }>`
-  position: absolute;
-  bottom: 4rem;
-  right: 2rem;
   width: 40rem;
   font-size: 1.9vw;
+  //margin-bottom: 10rem;
+  margin-left: auto;
 `;
 
 const StyledPhotoRoll = styled(CameraRoll)`

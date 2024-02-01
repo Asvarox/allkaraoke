@@ -31,7 +31,7 @@ function RemoteMics(props: Props) {
     // list is not yet updated with the connected remote mic.
     // The event sequence is wrongly remoteMicConnected -> playerInputChanged -> inputListChanged - needs to be fixed
     // e.g. remove remoteMicConnected event?
-    [events.inputListChanged, events.playerInputChanged],
+    [events.inputListChanged, events.playerInputChanged, events.playerRemoved],
     () => {
       return PlayersManager.getInputs()
         .map((input) => (input.source === 'Remote Microphone' ? input : null))

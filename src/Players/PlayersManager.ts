@@ -9,6 +9,7 @@ import { debounce } from 'lodash-es';
 import storage from 'utils/storage';
 
 const SELECTED_INPUTS_KEY = 'playerselectedinputs';
+export const MAX_PLAYERS = 4;
 
 export interface SelectedPlayerInput {
   source: InputSourceNames;
@@ -18,7 +19,7 @@ export interface SelectedPlayerInput {
 
 export class PlayerEntity {
   public nameOverride: string = '';
-  constructor(public number: number, public input: SelectedPlayerInput, public name?: string) {}
+  constructor(public number: 0 | 1 | 2 | 3, public input: SelectedPlayerInput, public name?: string) {}
 
   public changeInput = (input: InputSourceNames, channel = 0, deviceId?: string) => {
     let restartMonitoringPromise: null | Promise<void> = null;
@@ -60,7 +61,6 @@ export class PlayerEntity {
 }
 
 class PlayersManager {
-  public readonly MAX_PLAYERS = 2;
   private minPlayerNumber = 2;
 
   private players: PlayerEntity[] = [];
@@ -167,7 +167,7 @@ class PlayersManager {
     events.minPlayerNumberChanged.dispatch(previousMinPlayerNumber, minPlayerNumber);
   };
 
-  public addPlayer = (playerNumber: number) => {
+  public addPlayer = (playerNumber: 0 | 1 | 2 | 3) => {
     if (GameState.isPlaying() || this.getPlayer(playerNumber)) {
       return;
     }
@@ -181,7 +181,7 @@ class PlayersManager {
     return newPlayer;
   };
 
-  public removePlayer = (playerNumber: number) => {
+  public removePlayer = (playerNumber: 0 | 1 | 2 | 3) => {
     if (GameState.isPlaying()) {
       return;
     }
@@ -189,6 +189,11 @@ class PlayersManager {
 
     if (player) {
       this.players = this.players.filter((player) => player.number !== playerNumber);
+      if (this.players.length < this.minPlayerNumber) {
+        this.addPlayer(
+          new Array(MAX_PLAYERS).fill(0).find((_, index) => !this.players.find((player) => player.number === index))!,
+        );
+      }
       this.storePlayers();
       events.playerRemoved.dispatch(player);
     }

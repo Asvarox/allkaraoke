@@ -9,7 +9,7 @@ import PlayerNumberCircle from 'Scenes/RemoteMic/Components/PlayerNumberCircle';
 import { memo, useState } from 'react';
 
 interface Props {
-  playerNumber: number | null;
+  playerNumber: 0 | 1 | 2 | 3 | null;
 }
 
 export default memo(function PlayerChange({ playerNumber }: Props) {

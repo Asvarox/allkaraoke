@@ -8,7 +8,6 @@ import { toast } from 'react-toastify';
 events.playerRemoved.subscribe((player) => {
   if (player.input.source === RemoteMicrophoneInputSource.inputName) {
     const remoteMic = RemoteMicManager.getRemoteMicById(player.input.deviceId!);
-
     if (remoteMic) {
       remoteMic.setPlayerNumber(null);
     }
@@ -50,10 +49,16 @@ events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
   const currentPlayer = PlayersManager.getPlayers().find((player) => player.input.deviceId === phoneId);
 
   if (currentPlayer) {
-    currentPlayer.changeInput('Dummy', 0);
+    PlayersManager.removePlayer(currentPlayer.number);
   }
   if (newPlayerNumber !== null) {
-    PlayersManager.getPlayer(newPlayerNumber)?.changeInput('Remote Microphone', 0, phoneId);
+    const player = PlayersManager.getPlayer(newPlayerNumber);
+
+    if (player) {
+      player.changeInput('Remote Microphone', 0, phoneId);
+    } else {
+      PlayersManager.addPlayer(newPlayerNumber)?.changeInput('Remote Microphone', 0, phoneId);
+    }
   }
 });
 

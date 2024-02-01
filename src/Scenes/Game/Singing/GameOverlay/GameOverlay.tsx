@@ -5,7 +5,7 @@ import SkipIntro from 'Scenes/Game/Singing/GameOverlay/Components/SkipIntro';
 import SkipOutro from 'Scenes/Game/Singing/GameOverlay/Components/SkipOutro';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { GAME_MODE, PlayerSetup, Song } from 'interfaces';
-import { useEffect, useRef } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
 import GameState from '../GameState/GameState';
 import DurationBar from './Components/DurationBar';
 import Lyrics from './Components/Lyrics';
@@ -31,22 +31,41 @@ interface Props {
 
 const MAX_RENDER_RESOLUTION_W = 1920;
 
-function GameOverlay({
-  currentStatus,
-  width,
-  height,
-  playerSetups,
-  onSongEnd,
-  playerChanges,
-  effectsEnabled,
-  videoPlayerRef,
-  isPauseMenuVisible,
-}: Props) {
+const GameOverlay = forwardRef(function (
+  {
+    currentStatus,
+    width,
+    height,
+    playerSetups,
+    onSongEnd,
+    playerChanges,
+    effectsEnabled,
+    videoPlayerRef,
+    isPauseMenuVisible,
+  }: Props,
+  fRef,
+) {
   const [graphicLevel] = useSettingValue(GraphicSetting);
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const canvas = useRef<HTMLCanvasElement | null>(null);
   const drawer = useRef<CanvasDrawing | null>(null);
   const lyrics = useRef<HTMLDivElement | null>(null);
+
+  const overlayWidth = MAX_RENDER_RESOLUTION_W;
+  const overlayHeight = overlayWidth * (height / width);
+
+  const overlayScaleFactor = overlayHeight / height;
+
+  useImperativeHandle(
+    fRef,
+    () => {
+      return {
+        pause: () => drawer.current?.pause(),
+        resume: () => drawer.current?.resume(),
+      };
+    },
+    [drawer.current, lyrics.current?.offsetHeight, overlayScaleFactor],
+  );
 
   useEffect(() => {
     GameState.startInputMonitoring();
@@ -56,10 +75,6 @@ function GameOverlay({
     };
   }, []);
 
-  const overlayWidth = MAX_RENDER_RESOLUTION_W;
-  const overlayHeight = overlayWidth * (height / width);
-
-  const overlayScaleFactor = overlayHeight / height;
   // const resolutionScaleFactor = overlayWidth / MAX_RENDER_RESOLUTION_W;
 
   useEffect(() => {
@@ -75,7 +90,7 @@ function GameOverlay({
     return () => {
       drawer.current?.end();
     };
-  }, [canvas.current, lyrics.current?.offsetHeight, overlayScaleFactor]);
+  }, [lyrics.current?.offsetHeight, overlayScaleFactor]);
 
   useEffect(() => {
     if (isPauseMenuVisible && drawer.current?.isPlaying()) {
@@ -117,42 +132,56 @@ function GameOverlay({
         </>
       )}
       <DurationBar players={playerSetups} />
-      {showMultipleLines && (
-        <Lyrics player={players[0]} playerChanges={playerChanges} effectsEnabled={effectsEnabled} />
-      )}
+      <LyricsWrapper>
+        {showMultipleLines && (
+          <Lyrics
+            player={players[0]}
+            playerChanges={playerChanges}
+            effectsEnabled={effectsEnabled}
+            showMultipleLines={showMultipleLines}
+          />
+        )}
+      </LyricsWrapper>
       <Scores>
         {effectsEnabled && (
           <>
             {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (
-              <span data-test="players-score" data-score={GameState.getPlayerScore(0)}>
+              <Score data-test="players-score" data-score={GameState.getPlayerScore(0)}>
                 <ScoreText score={GameState.getPlayerScore(0)} />
-              </span>
+              </Score>
             ) : (
               PlayersManager.getPlayers().map((player) => (
-                <span
+                <Score
                   key={player.number}
                   data-test={`player-${player.number}-score`}
                   data-score={GameState.getPlayerScore(player.number)}>
                   <ScoreText score={GameState.getPlayerScore(player.number)} />
-                </span>
+                </Score>
               ))
             )}
           </>
         )}
       </Scores>
-      <div ref={lyrics}>
+      <LyricsWrapper ref={lyrics}>
         <Lyrics
+          showMultipleLines={showMultipleLines}
           player={players[showMultipleLines ? 1 : 0]}
           playerChanges={playerChanges}
           bottom
           effectsEnabled={effectsEnabled}
         />
-      </div>
+      </LyricsWrapper>
     </Screen>
   );
-}
+});
 
 export default GameOverlay;
+
+const LyricsWrapper = styled.div`
+  height: 15rem;
+  padding: 2rem 0;
+  box-sizing: border-box;
+`;
 
 const Screen = styled.div`
   height: 100%;
@@ -191,10 +220,11 @@ const Scores = styled.div`
   box-sizing: border-box;
   font-size: 5.5rem;
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-around;
   padding-right: 4rem;
   flex-direction: column;
   text-align: right;
   z-index: 1;
 `;
+
+const Score = styled.span``;

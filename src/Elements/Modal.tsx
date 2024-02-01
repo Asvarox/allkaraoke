@@ -25,7 +25,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 20001;
   overflow: auto;
 `;
 
@@ -36,6 +36,6 @@ const Backdrop = styled.div`
   background: rgba(0, 0, 0, 0.7);
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 20000;
   backdrop-filter: blur(20px);
 `;

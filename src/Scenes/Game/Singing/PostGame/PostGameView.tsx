@@ -11,7 +11,7 @@ import HighScoresView from './Views/HighScores';
 
 export interface PlayerScore {
   detailedScore: [DetailedScore, DetailedScore];
-  playerNumber: number;
+  playerNumber: 0 | 1 | 2 | 3;
   name: string;
 }
 

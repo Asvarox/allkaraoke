@@ -46,15 +46,15 @@ export class GameEvent<T extends (...args: any[]) => void> {
 }
 
 export const events = {
-  sectionChange: new GameEvent<(player: number, previousSectionIndex: number) => void>(
+  sectionChange: new GameEvent<(player: 0 | 1 | 2 | 3, previousSectionIndex: number) => void>(
     'sectionChange',
     undefined,
     false,
   ),
-  // newPlayerNote: new GameEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
-  // playerNoteUpdate: new GameEvent<(player: number, playerNote: PlayerNote) => void>('//', true),
+  // newPlayerNote: new GameEvent<(player: 0 | 1 |2 | 3, playerNote: PlayerNote) => void>('//', true),
+  // playerNoteUpdate: new GameEvent<(player: 0 | 1 |2 | 3, playerNote: PlayerNote) => void>('//', true),
 
-  playerAdded: new GameEvent<(playerNumber: number) => void>('playerAdded', false),
+  playerAdded: new GameEvent<(playerNumber: 0 | 1 | 2 | 3) => void>('playerAdded', false),
   playerRemoved: new GameEvent<(player: PlayerEntity) => void>('playerRemoved', false),
 
   songStarted: new GameEvent<(song: Song | SongPreview, singSetup: SingSetup) => void>('songStarted', false),
@@ -73,22 +73,28 @@ export const events = {
   remoteMicDisconnected: new GameEvent<(remoteMic: { id: string; name: string }, silent: boolean) => void>(
     'remoteMicDisconnected',
   ),
-  playerNameChanged: new GameEvent<(playerNumber: number, oldName: string | undefined) => void>('playerNameChanged'),
+  playerNameChanged: new GameEvent<(playerNumber: 0 | 1 | 2 | 3, oldName: string | undefined) => void>(
+    'playerNameChanged',
+  ),
   playerInputChanged: new GameEvent<
-    (playerNumber: number, oldInput: SelectedPlayerInput | undefined, newInput: SelectedPlayerInput | undefined) => void
+    (
+      playerNumber: 0 | 1 | 2 | 3,
+      oldInput: SelectedPlayerInput | undefined,
+      newInput: SelectedPlayerInput | undefined,
+    ) => void
   >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.source, new: newI?.source })),
   inputListChanged: new GameEvent<(initial: boolean) => void>('inputListChanged'),
 
   karaokeConnectionStatusChange: new GameEvent<
     (status: 'connecting' | 'connected' | 'disconnected' | 'reconnecting' | 'error', e?: transportErrorReason) => void
   >('karaokeConnectionStatusChange'),
-  remoteMicPlayerSet: new GameEvent<(playerNumber: number | null) => void>('remoteMicPlayerSet'),
+  remoteMicPlayerSet: new GameEvent<(playerNumber: 0 | 1 | 2 | 3 | null) => void>('remoteMicPlayerSet'),
   remoteMicMonitoringStarted: new GameEvent('remoteMicMonitoringStarted'),
   remoteMicMonitoringStopped: new GameEvent('remoteMicMonitoringStopped'),
 
   micMonitoringStarted: new GameEvent('micMonitoringStarted'),
   micMonitoringStopped: new GameEvent('micMonitoringStopped'),
-  playerChangeRequested: new GameEvent<(remoteMicId: string, newPlayerNumber: number | null) => void>(
+  playerChangeRequested: new GameEvent<(remoteMicId: string, newPlayerNumber: 0 | 1 | 2 | 3 | null) => void>(
     'playerChangeRequested',
     true,
   ),

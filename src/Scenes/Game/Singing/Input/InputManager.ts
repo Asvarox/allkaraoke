@@ -22,7 +22,7 @@ class InputManager {
     });
   }
 
-  public getInputStatus = (playerNumber: number) => {
+  public getInputStatus = (playerNumber: 0 | 1 | 2 | 3) => {
     const player = PlayersManager.getPlayer(playerNumber);
     if (!player) return 'unavailable';
 
@@ -31,7 +31,7 @@ class InputManager {
     return source.getStatus(player.input.deviceId, player.input.channel);
   };
 
-  public getPlayerFrequency = (playerNumber: number) => {
+  public getPlayerFrequency = (playerNumber: 0 | 1 | 2 | 3) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     // Player got removed
     if (!input) return 0;
@@ -41,7 +41,7 @@ class InputManager {
     return frequencies[input.channel];
   };
 
-  public clearPlayerCachedFrequencies = (playerNumber: number) => {
+  public clearPlayerCachedFrequencies = (playerNumber: 0 | 1 | 2 | 3) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     // Player got removed
     if (!input) return 0;
@@ -49,7 +49,7 @@ class InputManager {
     this.sourceNameToInput(input.source).clearFrequencies(input.deviceId);
   };
 
-  public getPlayerVolume = (playerNumber: number) => {
+  public getPlayerVolume = (playerNumber: 0 | 1 | 2 | 3) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     if (!input) {
       return 0;
@@ -59,7 +59,7 @@ class InputManager {
     return volumes[input.channel];
   };
 
-  public getPlayerInputLag = (playerNumber: number) => {
+  public getPlayerInputLag = (playerNumber: 0 | 1 | 2 | 3) => {
     const input = PlayersManager.getPlayer(playerNumber)?.input;
     if (!input) {
       return 0;

@@ -3,7 +3,7 @@ import styles from '../../styles';
 
 export function getColor(
   ctx: CanvasRenderingContext2D,
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   isStar: boolean,
   isHit: boolean,
   isPerfect: boolean,
@@ -23,7 +23,7 @@ export function getColor(
 
 export default function getNoteColor(
   ctx: CanvasRenderingContext2D,
-  playerNumber: number,
+  playerNumber: 0 | 1 | 2 | 3,
   isHit: boolean,
   playerNote: PlayerNote,
 ) {

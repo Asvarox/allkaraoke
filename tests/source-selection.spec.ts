@@ -90,7 +90,7 @@ test('Source selection from remote mic', async ({ browser, context, page }) => {
     await remoteMicRed.getByTestId('change-player').click();
     await remoteMicRed.getByTestId('change-to-player-0').click();
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(blueMicNum, player2Name);
-    await pages.smartphonesConnectionPage.expectPlayerNameToBe(redMicNum, player2NameDefault);
+    await expect(pages.smartphonesConnectionPage.getPlayerMicCheck(1)).not.toBeVisible();
   });
 
   await test.step('Change player1 to red mic', async () => {
@@ -103,6 +103,6 @@ test('Source selection from remote mic', async ({ browser, context, page }) => {
   await test.step('Unset a player', async () => {
     await remoteMicBlue.getByTestId('change-player').click();
     await remoteMicBlue.getByTestId('change-to-unset').click();
-    await pages.smartphonesConnectionPage.expectPlayerNameToBe(redMicNum, player2NameDefault);
+    await expect(pages.smartphonesConnectionPage.getPlayerMicCheck(1)).not.toBeVisible();
   });
 });

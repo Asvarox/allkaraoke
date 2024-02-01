@@ -44,7 +44,7 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
     [],
   );
 
-  const updatePlayer = (playerNumber: number) => (newSetup: PlayerSetup) => {
+  const updatePlayer = (playerNumber: 0 | 1 | 2 | 3) => (newSetup: PlayerSetup) => {
     setPlayerSetup((current) => current.map((setup) => (setup.number === playerNumber ? newSetup : setup)));
   };
 

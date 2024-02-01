@@ -72,17 +72,17 @@ export class Shaders {
     this.canvas.style.visibility = 'hidden';
   }
 
-  public updatePlayerCenter = (playerNumber: number, x: number, y: number) => {
+  public updatePlayerCenter = (playerNumber: 0 | 1 | 2 | 3, x: number, y: number) => {
     if (!this.plane) return;
     this.plane.uniforms[`p${playerNumber}center`].value = [x / this.canvas.width, 1 - y / this.canvas.height];
   };
 
-  public updatePlayerForce = (playerNumber: number, force: number) => {
+  public updatePlayerForce = (playerNumber: 0 | 1 | 2 | 3, force: number) => {
     if (!this.plane) return;
     this.plane.uniforms[`p${playerNumber}force`].value = force;
   };
 
-  public getPlayerForce = (playerNumber: number) => {
+  public getPlayerForce = (playerNumber: 0 | 1 | 2 | 3) => {
     if (!this.plane) return;
     return this.plane.uniforms[`p${playerNumber}force`].value as number;
   };

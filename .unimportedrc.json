@@ -21,6 +21,7 @@
     "src/hooks/useCallbackDebugger.ts",
     "src/hooks/useEffectDebugger.ts",
     "src/setupTests.ts",
+    "src/stories/songFixture.ts",
     "src/utils/TestCanvas.tsx",
     "src/utils/delayPromise.ts",
     "src/utils/range.ts",

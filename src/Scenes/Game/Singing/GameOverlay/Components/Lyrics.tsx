@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
-import { PlayerEntity } from 'Players/PlayersManager';
+import PlayersManager, { PlayerEntity } from 'Players/PlayersManager';
 import LyricsVolumeIndicator from 'Scenes/Game/Singing/GameOverlay/Components/LyricsVolumeIndicator';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import isNotesSection from 'Songs/utils/isNotesSection';
@@ -16,9 +16,10 @@ interface Props {
   bottom?: boolean;
   playerChanges: number[][];
   effectsEnabled: boolean;
+  showMultipleLines: boolean;
 }
 
-function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props) {
+function Lyrics({ player, playerChanges, bottom = false, effectsEnabled, showMultipleLines }: Props) {
   const playerState = GameState.getPlayer(player.number)!;
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const playerColor = styles.colors.players[player.number].text;
@@ -43,7 +44,17 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
 
   return (
     <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
-      {!mobilePhoneMode && effectsEnabled && <LyricsVolumeIndicator player={player} />}
+      {!mobilePhoneMode && effectsEnabled && (
+        <VolumeIndicatorContainer>
+          {showMultipleLines ? (
+            <SLyricsVolumeIndicator player={player} />
+          ) : (
+            GameState.getPlayers().map((player) => (
+              <SLyricsVolumeIndicator key={player.getNumber()} player={PlayersManager.getPlayer(player.getNumber())!} />
+            ))
+          )}
+        </VolumeIndicatorContainer>
+      )}
       {timeToNextChange < Infinity && (
         <PassTheMicProgress color={playerColor} progress={passTheMicProgress <= 1 ? passTheMicProgress * 100 : 0} />
       )}
@@ -95,6 +106,21 @@ function Lyrics({ player, playerChanges, bottom = false, effectsEnabled }: Props
     </LyricsContainer>
   );
 }
+
+const SLyricsVolumeIndicator = styled(LyricsVolumeIndicator)`
+  flex: 1;
+`;
+
+const VolumeIndicatorContainer = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`;
 
 const HeadstartContainer = styled.span`
   position: relative;
@@ -153,7 +179,6 @@ const LyricsContainer = styled.div<{ shouldBlink: boolean; bottom: boolean }>`
   width: 100%;
   text-align: center;
   line-height: 1;
-  margin: 2rem 0;
   position: relative;
   ${(props) => (props.shouldBlink ? `animation: blink 350ms ease-in-out infinite both;` : ``)}
 `;

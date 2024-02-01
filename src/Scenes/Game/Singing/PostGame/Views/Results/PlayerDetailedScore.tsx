@@ -6,7 +6,7 @@ import ScoreBar from 'Scenes/Game/Singing/PostGame/Views/Results/ScoreBar';
 import Typewriter from 'typewriter-effect';
 
 interface Props {
-  playerNumber: number;
+  playerNumber: 0 | 1 | 2 | 3;
   player: PlayerScore;
   segment: number;
 }
@@ -66,14 +66,15 @@ function PlayerDetailedScore({ playerNumber, player, segment }: Props) {
 
 const ScoreBarContainer = styled.div`
   position: relative;
-  height: 4rem;
-  width: 100rem;
-  background: rgba(0, 0, 0, 0.5);
+  height: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 0.5rem;
   border-radius: 1rem;
   gap: 0.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
 `;
 
 const ScoreDescription = styled.span`
@@ -82,7 +83,7 @@ const ScoreDescription = styled.span`
   font-size: 3rem;
   text-align: right;
   white-space: nowrap;
-  top: 5rem;
+  top: 6rem;
   left: 1rem;
   display: block;
 `;

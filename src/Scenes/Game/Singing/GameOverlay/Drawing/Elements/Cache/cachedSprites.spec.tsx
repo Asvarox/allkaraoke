@@ -8,7 +8,7 @@ test('Should draw a proper sprite map', async ({ mount, page }) => {
 
   await page.evaluate(() => {
     const { getSprite } = window.CanvasTestApi.Elements;
-    const { canvas } = getSprite('redMiss', 'start');
+    const { canvas } = getSprite('p1Miss', 'start');
 
     document.getElementById('root')!.prepend(canvas);
   });
@@ -25,9 +25,9 @@ test('Should return proper coordinates to draw a legit note', async ({ mount, pa
     const canvas = document.getElementById('canvas')! as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
 
-    const start = drawSprite(ctx, 'blueHit', 'start', 10, 10);
-    drawSprite(ctx, 'blueHit', 'middle', 10 + start.w, 10, 40);
-    drawSprite(ctx, 'blueHit', 'end', 10 + start.w + 40, 10);
+    const start = drawSprite(ctx, 'p0Hit', 'start', 10, 10);
+    drawSprite(ctx, 'p0Hit', 'middle', 10 + start.w, 10, 40);
+    drawSprite(ctx, 'p0Hit', 'end', 10 + start.w + 40, 10);
   });
 
   await expect(await component.screenshot()).toMatchSnapshot('proper-legit-note.png', { maxDiffPixelRatio: 0.01 });
@@ -42,9 +42,9 @@ test('Should return proper coordinates to draw a legit small note', async ({ mou
     const canvas = document.getElementById('canvas')! as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
 
-    const start = drawSprite(ctx, 'blueMiss', 'start', 10, 10);
-    drawSprite(ctx, 'blueMiss', 'middle', 10 + start.w, 10, 40);
-    drawSprite(ctx, 'blueMiss', 'end', 10 + start.w + 40, 10);
+    const start = drawSprite(ctx, 'p0Miss', 'start', 10, 10);
+    drawSprite(ctx, 'p0Miss', 'middle', 10 + start.w, 10, 40);
+    drawSprite(ctx, 'p0Miss', 'end', 10 + start.w + 40, 10);
   });
 
   await expect(await component.screenshot()).toMatchSnapshot('proper-legit-small-note.png', {

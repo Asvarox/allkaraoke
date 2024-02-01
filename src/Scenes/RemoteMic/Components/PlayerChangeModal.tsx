@@ -9,14 +9,14 @@ import React from 'react';
 
 interface Props {
   id: string;
-  playerNumber: number | null;
+  playerNumber: 0 | 1 | 2 | 3 | null;
   onModalClose: () => void;
   header?: React.ReactNode;
 }
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
   const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
-  const selectPlayer = (player: number | null) => {
+  const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
     RemoteMicClient.requestPlayerChange(id, player);
     onModalClose();
   };
@@ -42,6 +42,22 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
           disabled={1 === playerNumber}
           style={{ color: styles.colors.players[1].perfect.fill }}>
           Red
+        </MenuButton>
+        <MenuButton
+          size="small"
+          data-test="change-to-player-2"
+          onClick={() => selectPlayer(2)}
+          disabled={2 === playerNumber}
+          style={{ color: styles.colors.players[2].perfect.fill }}>
+          Green
+        </MenuButton>
+        <MenuButton
+          size="small"
+          data-test="change-to-player-3"
+          onClick={() => selectPlayer(3)}
+          disabled={3 === playerNumber}
+          style={{ color: styles.colors.players[3].perfect.fill }}>
+          Yellow
         </MenuButton>
         <MenuButton size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
           Unassign

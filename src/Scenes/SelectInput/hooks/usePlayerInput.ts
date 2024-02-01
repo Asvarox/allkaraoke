@@ -7,7 +7,7 @@ import { InputSourceList, InputSourceNames } from 'Scenes/SelectInput/InputSourc
 import { useEffect } from 'react';
 import tuple from 'utils/tuple';
 
-export function usePlayerInput(playerNumber: number, sources: Record<InputSourceNames, InputSourceList>) {
+export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<InputSourceNames, InputSourceList>) {
   const sourceList = Object.keys(sources) as Array<InputSourceNames>;
   const [selectedPlayerInput, playerInputData] = useEventListenerSelector(
     [events.playerInputChanged, events.inputListChanged],

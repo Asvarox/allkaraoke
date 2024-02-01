@@ -36,6 +36,7 @@ interface Props extends ComponentProps<typeof Container> {
   playerChanges?: number[][];
 
   effectsEnabled?: boolean;
+  pauseMenu?: boolean;
   restartSong?: () => void;
 }
 
@@ -75,6 +76,7 @@ function Player(
     effectsEnabled = true,
     singSetup,
     restartSong,
+    pauseMenu = false,
     ...restProps
   }: Props,
   ref: ForwardedRef<PlayerRef>,
@@ -83,7 +85,7 @@ function Player(
   const [currentTime, setCurrentTime] = useState(0);
   const [currentStatus, setCurrentStatus] = useState(VideoState.UNSTARTED);
   const [inputLag] = useSettingValue(InputLagSetting);
-  const [pauseMenu, setPauseMenu] = useState(false);
+  const [pauseMenuVisible, setPauseMenuVisible] = useState(false);
 
   useEffect(() => {
     GameState.setSong(song);
@@ -130,20 +132,20 @@ function Player(
     [setCurrentStatus, onStatusChange],
   );
 
-  const isPauseMenuAvailable = effectsEnabled && onSongEnd !== undefined;
+  const isPauseMenuAvailable = pauseMenu;
 
   const openPauseMenu = () => {
-    setPauseMenu(true);
+    setPauseMenuVisible(true);
     player.current?.pauseVideo();
   };
 
   const closePauseMenu = () => {
-    setPauseMenu(false);
+    setPauseMenuVisible(false);
     player.current?.playVideo();
   };
 
   const togglePauseMenu = () => {
-    if (pauseMenu) {
+    if (pauseMenuVisible) {
       closePauseMenu();
     } else {
       openPauseMenu();
@@ -158,20 +160,20 @@ function Player(
       previousStatus !== VideoState.BUFFERING &&
       currentStatus === VideoState.PAUSED;
 
-    if (currentStatus === VideoState.PLAYING && pauseMenu) {
+    if (currentStatus === VideoState.PLAYING && pauseMenuVisible) {
       player.current?.pauseVideo();
-    } else if (wasJustPaused && !pauseMenu) {
+    } else if (wasJustPaused && !pauseMenuVisible) {
       // Someone clicked on the video
-      setPauseMenu(true);
+      setPauseMenuVisible(true);
     }
-  }, [pauseMenu, currentStatus, previousStatus, isPauseMenuAvailable]);
+  }, [pauseMenuVisible, currentStatus, previousStatus, isPauseMenuAvailable]);
 
   useKeyboard(
     {
       back: togglePauseMenu,
     },
     isPauseMenuAvailable,
-    [pauseMenu],
+    [pauseMenuVisible],
   );
 
   const help = useMemo(
@@ -183,7 +185,7 @@ function Player(
   useKeyboardHelp(help, effectsEnabled);
   return (
     <Container {...restProps}>
-      {pauseMenu && <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} />}
+      {pauseMenuVisible && <PauseMenu onExit={onSongEnd} onResume={closePauseMenu} onRestart={restartSong!} />}
       {currentStatus !== VideoState.UNSTARTED && (
         <Overlay
           style={{
@@ -191,7 +193,7 @@ function Player(
             height: `${height}px`,
           }}>
           <GameOverlay
-            isPauseMenuVisible={pauseMenu}
+            isPauseMenuVisible={pauseMenuVisible}
             effectsEnabled={effectsEnabled}
             playerChanges={playerChanges}
             duration={duration}

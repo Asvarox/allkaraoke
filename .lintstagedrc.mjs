@@ -14,7 +14,7 @@ export default {
         const linuxFileName = file.replace('darwin.png', 'linux.png');
 
         if (!files.includes(linuxFileName)) {
-          execSync(`rm ${linuxFileName}`);
+          execSync(`rm ${linuxFileName} || true`);
           execSync(`cp ${file} ${linuxFileName}`);
 
           return `git add ${linuxFileName}`;

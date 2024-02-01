@@ -66,7 +66,7 @@ function useIsPlayerMicAudible(inputLabel: string) {
 }
 
 function BuiltIn(props: Props) {
-  usePlayerNumberPreset(1);
+  usePlayerNumberPreset(1, 1);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
   const { Microphone } = useMicrophoneList(true);
@@ -97,7 +97,7 @@ function BuiltIn(props: Props) {
   };
 
   useEffect(autoselect, []);
-  useEventEffect(events.inputListChanged, autoselect);
+  useEventEffect([events.inputListChanged, events.playerInputChanged, events.playerRemoved], autoselect);
 
   const cycleMic = () => {
     const currentIndex = Microphone.list.findIndex((mic) => mic.label === selectedMic);

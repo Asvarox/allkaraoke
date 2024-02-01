@@ -94,7 +94,7 @@ export const ContentElement = styled.span`
   backdrop-filter: blur(0.5rem);
   ${typography};
   padding: 0.5rem 2rem;
-  margin: 0 0 1rem 2rem;
+  margin: 0 0 1rem 0;
 `;
 
 const SongTitle = styled(ContentElement)`
