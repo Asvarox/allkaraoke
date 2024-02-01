@@ -50,6 +50,7 @@ const config: PlaywrightTestConfig = defineConfig({
       args: [
         // "--auto-open-devtools-for-tabs",
         '--no-sandbox',
+        '--font-render-hinting=none', // https://github.com/microsoft/playwright/issues/20097
         '--mute-audio',
         '--allow-file-access-from-files',
         '--use-fake-ui-for-media-stream',

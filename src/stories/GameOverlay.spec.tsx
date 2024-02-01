@@ -16,6 +16,15 @@ for (const playerNum of playerNums) {
       />,
     );
 
+    // The actual fonts break the snapshot tests, so we replace them with Arial
+    await page.addStyleTag({
+      content: `
+      * {
+    font-family: Arial !important;
+    }
+      `,
+    });
+
     await page.waitForTimeout(500);
 
     await page.evaluate(() => {
