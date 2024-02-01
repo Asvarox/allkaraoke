@@ -84,7 +84,7 @@ test('Should properly manage mics', async ({ browser, page, context }) => {
     await expect(remoteMic2.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
     await remoteMic1.getByTestId('close-modal').click();
     await remoteMic1.getByTestId('menu-microphone').click();
-    await expect(remoteMic1.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
+    await expect(remoteMic1.getByTestId('indicator')).toHaveAttribute('data-player-number', '2');
   });
 });
 
