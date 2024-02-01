@@ -21,7 +21,7 @@ const FINAL_SOURCE_URL = 'https://example.com/source-url';
 const FINAL_AUTHOR = 'Author E2E Test';
 const FINAL_AUTHOR_URL = 'https://example.com/author-url';
 const FINAL_VIDEO_GAP = '40';
-const FINAL_GAP = '4000';
+const FINAL_LYRICS_GAP = '4000';
 const FINAL_BPM = '200';
 const FINAL_TRACKS = 2;
 const FINAL_TRACK_1_SECTIONS = 10;
@@ -33,21 +33,22 @@ const FINAL_GENRE = 'Final Genre';
 const FINAL_PREVIEW_START = '60';
 const FINAL_PREVIEW_END = '80';
 
-const expectedBPM = '200';
-const expectedYear = '1992';
-
 const videoGapShift = '10';
-const entranceGapShift = '10000';
-const gapShift = '1000';
-
+const lyricsGapShift = '1000';
+const entranceLyricsGapShift = '10000';
 const trackNum1 = 1;
 const trackNum2 = 2;
-
+const trackNum2Line = 'Second Track';
 const line1 = 0;
 const line2 = 1;
 const line3 = 2;
 const line4 = 3;
 const line10 = 9;
+const autoGenLine2Value = '20';
+const changedLine2Value = '40';
+const autoGenLine3Value = '56';
+const changedLine3Value = '76';
+const autoGenLine4Value = '103';
 
 test('Convert song', async ({ page }) => {
   test.slow();
@@ -59,190 +60,210 @@ test('Convert song', async ({ page }) => {
 
   await test.step('Enter basic song info', async () => {
     await pages.editSongsPage.goToImportUltrastar();
-    await expect(pages.songEditingPage.basicSongInfoPreview).toBeVisible();
-    await expect(pages.songEditingPage.previousButton).toBeDisabled();
-    await pages.songEditingPage.enterSourceURL(FINAL_SOURCE_URL);
-    await pages.songEditingPage.enterSongTXT(txtfile);
+    await expect(pages.songEditBasicInfoPage.pageContainer).toBeVisible();
+    await expect(pages.songEditBasicInfoPage.previousButton).toBeDisabled();
+    await pages.songEditBasicInfoPage.enterSourceURL(FINAL_SOURCE_URL);
+    await pages.songEditBasicInfoPage.enterSongTXT(txtfile);
   });
-  await test.step('Go to author and video step', async () => {
-    await pages.songEditingPage.nextStep();
-    await expect(pages.songEditingPage.basicSongInfoPreview).not.toBeVisible();
-    await expect(pages.songEditingPage.previousButton).toBeEnabled();
-    await expect(pages.songEditingPage.authorAndVideoInfoPreview).toBeVisible();
+
+  await test.step('Change steps', async () => {
+    await pages.songEditBasicInfoPage.nextStep();
+    await expect(pages.songEditAuthorAndVideoPage.pageContainer).toBeVisible();
+    await expect(pages.songEditAuthorAndVideoPage.previousButton).toBeEnabled();
+
+    await pages.songEditAuthorAndVideoPage.previousStep();
+    await expect(pages.songEditBasicInfoPage.pageContainer).toBeVisible();
+    await expect(pages.songEditBasicInfoPage.previousButton).toBeDisabled();
   });
-  await test.step('Go back to basic song info step', async () => {
-    await pages.songEditingPage.previousStep();
-    await expect(pages.songEditingPage.basicSongInfoPreview).toBeVisible();
-    await expect(pages.songEditingPage.authorAndVideoInfoPreview).not.toBeVisible();
-    await expect(pages.songEditingPage.previousButton).toBeDisabled();
-  });
+
   await test.step('Enter inputs in author and video step', async () => {
-    // Author and vid
-    await pages.songEditingPage.nextStep();
-    await expect(pages.songEditingPage.videoLookupButton).toBeEnabled();
-    await pages.songEditingPage.enterAuthorName(FINAL_AUTHOR);
-    await pages.songEditingPage.enterAuthorURL(FINAL_AUTHOR_URL);
-    await pages.songEditingPage.enterVideoURL(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
+    await pages.songEditBasicInfoPage.nextStep();
+    await expect(pages.songEditAuthorAndVideoPage.videoLookupButton).toBeEnabled();
+    await pages.songEditAuthorAndVideoPage.enterAuthorName(FINAL_AUTHOR);
+    await pages.songEditAuthorAndVideoPage.enterAuthorURL(FINAL_AUTHOR_URL);
+    await pages.songEditAuthorAndVideoPage.enterVideoURL(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
   });
 
-  await test.step('Make sure entered data stays', async () => {
-    await pages.songEditingPage.nextStep();
-    await expect(pages.songEditingPage.authorAndVideoInfoPreview).not.toBeVisible();
-    await pages.songEditingPage.previousStep();
-    await expect(pages.songEditingPage.authorAndVideoInfoPreview).toBeVisible();
-    await expect(pages.songEditingPage.videoUrlInput).toHaveValue(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
-    await expect(pages.songEditingPage.authorNameInput).toHaveValue(FINAL_AUTHOR);
+  await test.step('Make sure entered in previous step data stays', async () => {
+    await pages.songEditAuthorAndVideoPage.nextStep();
+    await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
+    await pages.songEditSyncLyricsToVideoPage.previousStep();
+    await expect(pages.songEditAuthorAndVideoPage.pageContainer).toBeVisible();
+    await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue(
+      `https://www.youtube.com/watch?v=${VIDEO_ID}`,
+    );
+    await expect(pages.songEditAuthorAndVideoPage.authorNameInput).toHaveValue(FINAL_AUTHOR);
 
-    await pages.songEditingPage.nextStep();
+    await pages.songEditAuthorAndVideoPage.nextStep();
   });
 
-  await test.step('Toggle time seek controls works', async () => {
+  await test.step('Toggle time seek controls', async () => {
     const timeControls = ['+0.5', '+1', '+5', '+10', '-0.5', '-1', '-5', '-10'];
-
     {
       for (const control of timeControls) {
-        await page.locator(`[data-test="seek${control}s"]`).click(); // todo
+        await pages.songEditSyncLyricsToVideoPage.toggleTimeSeekControls(control);
         await page.waitForTimeout(50);
       }
     }
   });
 
-  await test.step('Toggle playback speed controls works', async () => {
+  await test.step('Toggle playback speed controls', async () => {
     const speedControls = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2];
     {
       for (const control of speedControls) {
-        await pages.songEditingPage.togglePlaybackSpeedControls(control);
-        await expect(page.getByTestId('current-speed')).toHaveText(`${control * 100}%`); //todo
+        await pages.songEditSyncLyricsToVideoPage.togglePlaybackSpeedControls(control);
+        await pages.songEditSyncLyricsToVideoPage.expectCurrentPlaybackSpeedToBeVisible(control);
       }
     }
   });
 
-  await test.step('Toggle video gap shift controls works, enter value', async () => {
+  await test.step('Toggle video gap shift controls - video gap indicates lyrics gap value', async () => {
     const entranceVideoGapShift = '0';
     const videoGapControls = ['+1', '+5', '+10', '-1', '-5', '-10'];
-
     {
       let previousValue = Number(entranceVideoGapShift);
       for (const control of videoGapControls) {
         previousValue = +control + previousValue;
-        await pages.songEditingPage.toggleVideoGapShiftControls(control);
-        await expect(pages.songEditingPage.videoGapShiftInput).toHaveValue(String(previousValue));
+        await pages.songEditSyncLyricsToVideoPage.toggleVideoGapShiftControls(control);
+        await expect(pages.songEditSyncLyricsToVideoPage.videoGapShiftInput).toHaveValue(String(previousValue));
       }
     }
-    await pages.songEditingPage.enterVideoGapShift(videoGapShift);
-    await expect(pages.songEditingPage.gapShiftInput).toHaveValue(entranceGapShift);
+    await pages.songEditSyncLyricsToVideoPage.enterVideoGapShift(videoGapShift);
+    await expect(pages.songEditSyncLyricsToVideoPage.lyricsGapShiftInput).toHaveValue(entranceLyricsGapShift);
   });
 
-  // Lyrics gap
-  await test.step('Toggle gap shift controls works, enter value', async () => {
+  await test.step('Toggle lyrics gap shift controls - enter new value', async () => {
     const gapControls = ['+0.05', '+0.5', '+1', '-0.05', '-0.5', '-1'];
-
     {
-      let previousValue = Number(entranceGapShift);
+      let previousValue = Number(entranceLyricsGapShift);
       for (const control of gapControls) {
         previousValue = +control * 1000 + previousValue;
-        await pages.songEditingPage.toggleGapShiftControls(control);
-        await expect(pages.songEditingPage.gapShiftInput).toHaveValue(String(previousValue));
+        await pages.songEditSyncLyricsToVideoPage.toggleLyricsGapShiftControls(control);
+        await expect(pages.songEditSyncLyricsToVideoPage.lyricsGapShiftInput).toHaveValue(String(previousValue));
       }
     }
-    await pages.songEditingPage.enterGapShift(gapShift);
+    await pages.songEditSyncLyricsToVideoPage.enterLyricsGapShift(lyricsGapShift);
   });
 
-  await test.step('Enter desired end time and lyrics bpm values', async () => {
-    await pages.songEditingPage.enterDesiredEndTime('29575'); // Initial value + final gap / 2
-    await expect(pages.songEditingPage.desiredLyricsBpmElement).toContainText('200'); // może zmienne w stepie?
-    await pages.songEditingPage.enterChangedLyricsBPM(FINAL_BPM);
+  await test.step('Entering desired song end time indicates estimated tempo BPM of the lyrics', async () => {
+    const endTime = '29575';
+
+    await pages.songEditSyncLyricsToVideoPage.enterDesiredSongEndTime(endTime); // Initial value + final gap / 2
+    await expect(pages.songEditSyncLyricsToVideoPage.estProperTempoBpmElement).toContainText(FINAL_BPM);
+    await pages.songEditSyncLyricsToVideoPage.enterLyricsBPM(FINAL_BPM);
   });
 
-  await test.step('Change to track number 2', async () => {
-    await pages.songEditingPage.goToTrackNumber(trackNum2);
-    await expect(pages.songEditingPage.trackButton(trackNum2)).toBeDisabled();
-    await pages.songEditingPage.enterTrackName(TRACK_2_NAME);
-    await expect(pages.songEditingPage.textLineElement(line1)).toContainText('Second Track');
+  await test.step('Go to track number 2', async () => {
+    await pages.songEditSyncLyricsToVideoPage.goToSongTrack(trackNum2);
+    await expect(pages.songEditSyncLyricsToVideoPage.getTrackButton(trackNum2)).toBeDisabled();
+    await pages.songEditSyncLyricsToVideoPage.enterSongTrackName(TRACK_2_NAME);
+    await expect(pages.songEditSyncLyricsToVideoPage.getTextLineElement(line1)).toContainText(trackNum2Line);
   });
 
-  await test.step('Change to track number 1', async () => {
-    await pages.songEditingPage.goToTrackNumber(trackNum1);
-    await expect(pages.songEditingPage.textLineElement(line1)).not.toContainText('Second Track');
-    await pages.songEditingPage.clickOnTextLine(line1);
-    await expect(pages.songEditingPage.useGapInfo).toBeVisible();
+  await test.step('Go to track number 1', async () => {
+    await pages.songEditSyncLyricsToVideoPage.goToSongTrack(trackNum1);
+    await expect(pages.songEditSyncLyricsToVideoPage.getTextLineElement(line1)).not.toContainText(trackNum2Line);
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line1);
+    await expect(pages.songEditSyncLyricsToVideoPage.useGapInfo).toBeVisible();
   });
 
-  // Moving a section changes the time of subsequent sections
-  await pages.songEditingPage.clickOnTextLine(line2);
-  await pages.songEditingPage.enterStartBeat('40');
+  await test.step('Moving a section changes the time of subsequent sections', async () => {
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line2);
+    await expect(pages.songEditSyncLyricsToVideoPage.changeStartBeatInput).toHaveValue(autoGenLine2Value);
+    await pages.songEditSyncLyricsToVideoPage.enterStartBeat(changedLine2Value);
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line3);
+    await expect(pages.songEditSyncLyricsToVideoPage.changeStartBeatInput).toHaveValue(changedLine3Value);
+  });
 
-  await pages.songEditingPage.clickOnTextLine(line3);
-  await expect(pages.songEditingPage.changeStartBeatInput).toHaveValue('76');
-  await pages.songEditingPage.undoLastChange();
+  await test.step('Undo the last change', async () => {
+    await pages.songEditSyncLyricsToVideoPage.undoLastChange();
+    await expect(pages.songEditSyncLyricsToVideoPage.changeStartBeatInput).toHaveValue(autoGenLine3Value);
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line2);
+    await expect(pages.songEditSyncLyricsToVideoPage.changeStartBeatInput).toHaveValue(autoGenLine2Value);
+  });
 
-  await expect(pages.songEditingPage.changeStartBeatInput).toHaveValue('56');
+  await test.step('Deleting a section doesnt change the time of subsequent sections', async () => {
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line3);
+    const textLine3 = await pages.songEditSyncLyricsToVideoPage.getTextLineElement(line3).innerText();
 
-  const textLine3 = await pages.songEditingPage.textLineElement(line3).innerText();
+    await expect(pages.songEditSyncLyricsToVideoPage.getTextLineElement(line3)).toContainText(textLine3);
+    await pages.songEditSyncLyricsToVideoPage.deleteTextLine();
+    await expect(pages.songEditSyncLyricsToVideoPage.getTextLineElement(line3)).not.toContainText(textLine3);
+    await expect(pages.songEditSyncLyricsToVideoPage.changeStartBeatInput).toHaveValue(autoGenLine4Value); // on line3
 
-  await expect(pages.songEditingPage.textLineElement(line3)).toContainText(textLine3);
+    await pages.songEditSyncLyricsToVideoPage.undoLastChange();
+    await expect(pages.songEditSyncLyricsToVideoPage.getTextLineElement(line3)).toContainText(textLine3);
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line4);
+    await expect(pages.songEditSyncLyricsToVideoPage.changeStartBeatInput).toHaveValue(autoGenLine4Value);
 
-  // Deleting a section doesn't change the time of subsequent sections
-  await pages.songEditingPage.deleteTextLine();
-  await expect(pages.songEditingPage.textLineElement(line3)).not.toContainText(textLine3);
+    await pages.songEditSyncLyricsToVideoPage.clickOnTextLine(line10);
+    await pages.songEditSyncLyricsToVideoPage.deleteTextLine();
+  });
 
-  await expect(pages.songEditingPage.changeStartBeatInput).toHaveValue('103'); // next section
-  await pages.songEditingPage.undoLastChange();
-  await expect(pages.songEditingPage.textLineElement(line3)).toContainText(textLine3);
+  await test.step('Make sure entered in previous step data stays', async () => {
+    await pages.songEditSyncLyricsToVideoPage.nextStep();
+    await pages.songEditMetadataPage.previousStep();
+    await expect(pages.songEditSyncLyricsToVideoPage.videoGapShiftInput).toHaveValue(videoGapShift);
+    await expect(pages.songEditSyncLyricsToVideoPage.lyricsGapShiftInput).toHaveValue(lyricsGapShift);
+    await expect(pages.songEditSyncLyricsToVideoPage.changeLyricsBpmInput).toHaveValue(FINAL_BPM);
+  });
 
-  await pages.songEditingPage.clickOnTextLine(line4);
-  await expect(pages.songEditingPage.changeStartBeatInput).toHaveValue('103'); // next section
-  await pages.songEditingPage.clickOnTextLine(line10);
-  await pages.songEditingPage.deleteTextLine();
+  await test.step('Enter song metadata', async () => {
+    const autoGenName = 'convert';
+    const autoGenTitle = 'test';
+    const autoGenGenre = 'genre';
+    const autoGenYear = '1992';
+    const autoGenSongBPM = '200';
 
-  await pages.songEditingPage.nextStep();
-  await pages.songEditingPage.previousStep();
-  await expect(pages.songEditingPage.videoGapShiftInput).toHaveValue(videoGapShift);
-  await expect(pages.songEditingPage.gapShiftInput).toHaveValue(gapShift);
-  await expect(pages.songEditingPage.changeLyricsBpmInput).toHaveValue(FINAL_BPM);
+    await pages.songEditSyncLyricsToVideoPage.nextStep();
+    await expect(pages.songEditMetadataPage.pageContainer).toBeVisible();
+    await expect(pages.songEditMetadataPage.songArtistInput).toHaveValue(autoGenName);
+    await pages.songEditMetadataPage.enterSongArtist(FINAL_ARTIST);
 
-  await pages.songEditingPage.nextStep();
+    await expect(pages.songEditMetadataPage.songTitleInput).toHaveValue(autoGenTitle);
+    await pages.songEditMetadataPage.enterSongTitle(FINAL_TITLE);
 
-  // Song metadata
-  await expect(pages.songEditingPage.songArtistInput).toHaveValue('convert');
-  await pages.songEditingPage.enterSongArtist(FINAL_ARTIST);
+    await expect(pages.songEditMetadataPage.songGenreInput).toHaveValue(autoGenGenre);
+    await pages.songEditMetadataPage.enterSongGenre(FINAL_GENRE);
 
-  await expect(pages.songEditingPage.songTitleInput).toHaveValue('test');
-  await pages.songEditingPage.enterSongTitle(FINAL_TITLE);
+    await expect(pages.songEditMetadataPage.selectedLanguagePreview).toContainText(FINAL_LANG[0]);
+    await pages.songEditMetadataPage.enterSongLanguage(FINAL_LANG[1]);
+    await page.keyboard.press('Enter');
 
-  await expect(pages.songEditingPage.songGenreInput).toHaveValue('genre');
-  await pages.songEditingPage.enterSongGenre(FINAL_GENRE);
+    await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(autoGenYear);
+    await pages.songEditMetadataPage.enterReleaseYear(FINAL_YEAR);
 
-  await expect(pages.songEditingPage.selectedLanguagePreview).toContainText(FINAL_LANG[0]);
-  await pages.songEditingPage.enterSongLanguage(FINAL_LANG[1]);
-  await page.keyboard.press('Enter');
+    await expect(pages.songEditMetadataPage.bpmSongInput).toHaveValue(autoGenSongBPM);
+    await pages.songEditMetadataPage.enterSongBPM(FINAL_SONG_BPM);
+  });
 
-  await expect(pages.songEditingPage.releaseYearInput).toHaveValue(expectedYear);
-  await pages.songEditingPage.enterReleaseYear(FINAL_YEAR);
+  await test.step('Set start and end point of the song preview', async () => {
+    await expect(pages.songEditMetadataPage.startOfSongPreview).toHaveValue(String(+FINAL_VIDEO_GAP + 60));
+    await expect(pages.songEditMetadataPage.endOfSongPreview).toHaveValue(String(+FINAL_VIDEO_GAP + 60 + 30));
 
-  await expect(pages.songEditingPage.bpmSongInput).toHaveValue('200'); // FINAL_BPM? Te 200...
-  await pages.songEditingPage.enterSongBPM(FINAL_SONG_BPM);
+    await pages.songEditMetadataPage.shiftStartOfSongPreview(FINAL_PREVIEW_START);
+    await pages.songEditMetadataPage.shiftEndOfSongPreview(FINAL_PREVIEW_END);
+  });
 
-  await expect(pages.songEditingPage.startOfSongPreview).toHaveValue(String(+FINAL_VIDEO_GAP + 60));
-  await expect(pages.songEditingPage.endOfSongPreview).toHaveValue(String(+FINAL_VIDEO_GAP + 60 + 30));
+  await test.step('Set song volume', async () => {
+    const autoGenVolume = '0.25';
 
-  await pages.songEditingPage.shiftStartOfSongPreview(FINAL_PREVIEW_START);
-  await pages.songEditingPage.shiftEndOfSongPreview(FINAL_PREVIEW_END);
+    await expect(pages.songEditMetadataPage.currentSongVolumeLevel).toHaveValue(autoGenVolume);
+    await pages.songEditMetadataPage.changeTheVolumeOfTheSong(FINAL_VOLUME);
+  });
 
-  await expect(pages.songEditingPage.currentSongVolumeLevel).toHaveValue('0.25');
-  await pages.songEditingPage.changeTheVolumeOfTheSong(FINAL_VOLUME);
+  await test.step('Disagree to share added song with other players', async () => {
+    await expect(pages.songEditMetadataPage.nextButton).not.toBeVisible();
+    await expect(pages.songEditMetadataPage.saveButton).toBeVisible();
+    await pages.songEditMetadataPage.saveChanges();
+    await pages.editSongsPage.disagreeToShareAddSongs();
+    await expect(pages.editSongsPage.shareSongSwitch).not.toBeChecked();
+  });
 
-  // Download song
-  await expect(pages.songEditingPage.nextButton).not.toBeVisible();
-  await expect(pages.songEditingPage.saveButton).toBeVisible();
-  await pages.songEditingPage.saveChanges();
-  await pages.editSongsPage.disagreeToShareAddSongs();
-  await expect(pages.editSongsPage.shareSongSwitch).not.toBeChecked();
-
+  // download converted song - settings
   const convertedSongId = getSongId({ artist: FINAL_ARTIST, title: FINAL_TITLE });
   const [download] = await Promise.all([
     page.waitForEvent('download'),
-    //page.locator(`[data-test="download-song"][data-song="${convertedSongId}"]`).click(),
     pages.editSongsPage.downloadSong(convertedSongId),
   ]);
 
@@ -269,7 +290,7 @@ test('Convert song', async ({ page }) => {
   expect(convertedSong.year).toEqual(FINAL_YEAR);
   expect(convertedSong.realBpm).toEqual(+FINAL_SONG_BPM);
   expect(convertedSong.videoGap).toEqual(+FINAL_VIDEO_GAP);
-  expect(convertedSong.gap).toEqual(+FINAL_GAP);
+  expect(convertedSong.gap).toEqual(+FINAL_LYRICS_GAP);
   expect(convertedSong.bpm).toEqual(+FINAL_BPM);
   expect(convertedSong.volume).toEqual(+FINAL_VOLUME);
   expect(convertedSong.tracks).toHaveLength(FINAL_TRACKS);
@@ -279,13 +300,16 @@ test('Convert song', async ({ page }) => {
   expect(convertedSong.tracks[0].name).not.toBeDefined();
   expect(convertedSong.tracks[1].name).toEqual(TRACK_2_NAME);
 
-  await pages.editSongsPage.goToImportUltrastar();
-  await pages.songEditingPage.enterSongTXT(downloadedContent);
-  await expect(pages.songEditingPage.duplicateSongAlert).toBeVisible();
-  await page.goBack();
+  await test.step('Duplicate song alert when adding the same song', async () => {
+    await pages.editSongsPage.goToImportUltrastar();
+    await pages.songEditBasicInfoPage.enterSongTXT(downloadedContent);
+    await expect(pages.songEditBasicInfoPage.duplicateSongAlert).toBeVisible();
+    await page.goBack();
+  });
 
-  page.on('dialog', (dialog) => dialog.accept());
-
-  await pages.editSongsPage.deleteSong(convertedSongId);
-  await expect(pages.editSongsPage.deleteSongButton(convertedSongId)).not.toBeVisible();
+  await test.step('Delete converted song', async () => {
+    page.on('dialog', (dialog) => dialog.accept());
+    await pages.editSongsPage.deleteSong(convertedSongId);
+    await expect(pages.editSongsPage.deleteSongButton(convertedSongId)).not.toBeVisible();
+  });
 });
