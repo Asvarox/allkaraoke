@@ -20,8 +20,8 @@ export class SongListPagePO {
     await this.getSongElement(songID).dblclick();
   }
 
-  public async navigateToSongWithKeyboard(songID: string) {
-    await navigateWithKeyboard(this.page, `song-${songID}`);
+  public async navigateToSongWithKeyboard(songID: string, remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, `song-${songID}`, remoteMic);
   }
 
   public get songListElement() {

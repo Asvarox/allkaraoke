@@ -44,34 +44,34 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.songListPage.goToPlaylist(playlistName);
   await pages.songListPage.approveSelectedSongByKeyboard();
 
-  await pages.songPreviewPage.navigateToGameModeSettingsByKeyboard();
+  await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
   await page.keyboard.press('Enter'); // change to duel
   await page.keyboard.press('Enter'); // change to pass the mic
   await pages.songPreviewPage.expectGameModeToBe(modeName);
 
-  await pages.songPreviewPage.navigateToDifficultySettingsByKeyboard();
+  await pages.songPreviewPage.navigateToDifficultySettingsWithKeyboard();
   await page.keyboard.press('Enter'); // change to hard
   await pages.songPreviewPage.expectGameDifficultyLevelToBe(levelName);
 
-  await pages.songPreviewPage.navigateToGoNextByKeyboard();
+  await pages.songPreviewPage.navigateToGoNextWithKeyboard();
 
   // Player 1
   await expect(pages.songPreviewPage.getPlayerNameInput(player1)).toBeVisible();
-  await pages.songPreviewPage.navigateAndEnterPlayerNameByKeyboard(player1, player1Name);
+  await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player1, player1Name);
   await pages.songPreviewPage.expectEnteredPlayerNameToBe(player1, player1Name);
 
-  await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsByKeyboard(player1);
+  await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player1);
   await pages.songPreviewPage.expectPlayerTrackNumberToBe(player1, track2);
 
   // Player 2
   await expect(pages.songPreviewPage.getPlayerNameInput(player2)).toBeVisible();
-  await pages.songPreviewPage.navigateAndEnterPlayerNameByKeyboard(player2, player2Name);
+  await pages.songPreviewPage.navigateAndEnterPlayerNameWithKeyboard(player2, player2Name);
   await pages.songPreviewPage.expectEnteredPlayerNameToBe(player2, player2Name);
 
-  await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsByKeyboard(player2);
+  await pages.songPreviewPage.navigateAndTogglePlayerTrackSettingsWithKeyboard(player2);
   await pages.songPreviewPage.expectPlayerTrackNumberToBe(player2, track1);
 
-  await pages.songPreviewPage.navigateToPlayTheSongByKeyboard();
+  await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard();
 
   const p1CL = '[data-test="lyrics-current-player-0"]';
   const p1NL = '[data-test="lyrics-next-player-0"]';
@@ -105,7 +105,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.songListPage.expectPlaylistToBeSelected(playlistName);
   await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
   await pages.songListPage.approveSelectedSongByKeyboard();
-  await pages.songPreviewPage.navigateToGoNextByKeyboard();
+  await pages.songPreviewPage.navigateToGoNextWithKeyboard();
   await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player1, player1Name);
   await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(player2, player2Name);
 

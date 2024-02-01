@@ -23,7 +23,11 @@ export class PostGameHighScoresPagePO {
     return this.page.getByTestId('highscores-container');
   }
 
+  public get selectSongButton() {
+    return this.page.getByTestId('play-next-song-button');
+  }
+
   public async goToSelectNewSong() {
-    await this.page.getByTestId('play-next-song-button').click();
+    await this.selectSongButton.click();
   }
 }

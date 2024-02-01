@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongLanguagesPagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
@@ -31,6 +32,10 @@ export class SongLanguagesPagePO {
 
   public async continueAndGoToSongList() {
     await this.page.getByTestId('close-exclude-languages').click();
+  }
+
+  public async navigateToSongListWithKeyboard(remoteMic?: Page) {
+    await navigateWithKeyboard(this.page, 'close-exclude-languages', remoteMic);
   }
 
   public get allLanguagesExcludedAlert() {

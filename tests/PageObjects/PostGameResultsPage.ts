@@ -43,7 +43,11 @@ export class PostGameResultsPagePO {
     }).toPass();
   }
 
+  public get nextButton() {
+    return this.page.getByTestId('highscores-button');
+  }
+
   public async goNext() {
-    await this.page.getByTestId('highscores-button').click();
+    await this.nextButton.click();
   }
 }
