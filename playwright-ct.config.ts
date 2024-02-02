@@ -7,6 +7,8 @@ import tsconfigPaths from 'vite-tsconfig-paths';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = defineConfig({
+  // by default playwright adds platform (linux/windows etc.) to the snapshot path which is not needed
+  snapshotPathTemplate: './__snapshots__/{testFilePath}/{arg}{ext}',
   testDir: './src/',
   testMatch: '*.spec.tsx',
   /* The base directory, relative to the config file, for snapshot files created with toMatchSnapshot and toHaveScreenshot. */
