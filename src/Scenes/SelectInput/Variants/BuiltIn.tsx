@@ -97,7 +97,7 @@ function BuiltIn(props: Props) {
   };
 
   useEffect(autoselect, []);
-  useEventEffect([events.inputListChanged, events.playerInputChanged, events.playerRemoved], autoselect);
+  useEventEffect([events.inputListChanged, events.playerRemoved], autoselect);
 
   const cycleMic = () => {
     const currentIndex = Microphone.list.findIndex((mic) => mic.label === selectedMic);
