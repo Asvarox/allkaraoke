@@ -8,6 +8,7 @@ import { DesktopOnly, MobileOnly } from 'Elements/RWD';
 import SmoothLink from 'Elements/SmoothLink';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
 import Background from 'Scenes/LandingPage/Background';
+import LayoutGame from 'Scenes/LayoutGame';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
@@ -35,7 +36,7 @@ function LandingPage() {
   );
 
   return (
-    <>
+    <LayoutGame toolbar={false}>
       <GithubRibbon />
       <Background />
       <Container>
@@ -125,7 +126,7 @@ function LandingPage() {
           </SmoothLink>
         </MobileButtonsContainer>
       </Container>
-    </>
+    </LayoutGame>
   );
 }
 
@@ -204,7 +205,7 @@ const ScreenshotSegment = styled(StatSegment)`
     border-radius: 1rem;
   }
 
-  img:nth-child(2) {
+  img:nth-of-type(2) {
     box-shadow: 0 0 10rem rgb(19, 19, 19);
   }
 `;

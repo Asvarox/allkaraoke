@@ -5,6 +5,7 @@ import events from 'GameEvents/GameEvents';
 import PlayersManager from 'Players/PlayersManager';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import WaitForReadiness from 'Scenes/Game/Singing/WaitForReadiness';
+import LayoutGame from 'Scenes/LayoutGame';
 import {
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
@@ -65,53 +66,55 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
     );
   } else {
     return (
-      <Container>
-        <BackgroundContainer visible={isOverlayVisible}>
-          <Overlay video={songPreview.video} width={width} height={height} />
-          <Artist>{songPreview.artist}</Artist>
-          <Title>{songPreview.title}</Title>
-          <WaitForReadiness
-            onFinish={() => {
-              setIsTransitionTimeout(true);
-              player.current?.play();
-            }}
-          />
-        </BackgroundContainer>
-        {song.data && (
-          <Player
-            pauseMenu
-            ref={player}
-            onStatusChange={setPlayerState}
-            playerChanges={playerChanges}
-            players={singSetup.players}
-            song={song.data}
-            width={width}
-            height={height}
-            autoplay={false}
-            onSongEnd={() => {
-              const scores =
-                GameState.getSingSetup()?.mode === GAME_MODE.CO_OP
-                  ? [
-                      {
-                        name: PlayersManager.getPlayers()
-                          .map((player) => player.getName())
-                          .join(', '),
-                        score: GameState.getPlayerScore(0),
-                      },
-                    ]
-                  : PlayersManager.getPlayers().map((player) => ({
-                      name: player.getName(),
-                      score: GameState.getPlayerScore(player.number),
-                    }));
-              const progress = GameState.getSongCompletionProgress();
-              events.songEnded.dispatch(song.data!, singSetup, scores, progress);
-              setIsEnded(true);
-            }}
-            singSetup={singSetup}
-            restartSong={restartSong}
-          />
-        )}
-      </Container>
+      <LayoutGame>
+        <Container>
+          <BackgroundContainer visible={isOverlayVisible}>
+            <Overlay video={songPreview.video} width={width} height={height} />
+            <Artist>{songPreview.artist}</Artist>
+            <Title>{songPreview.title}</Title>
+            <WaitForReadiness
+              onFinish={() => {
+                setIsTransitionTimeout(true);
+                player.current?.play();
+              }}
+            />
+          </BackgroundContainer>
+          {song.data && (
+            <Player
+              pauseMenu
+              ref={player}
+              onStatusChange={setPlayerState}
+              playerChanges={playerChanges}
+              players={singSetup.players}
+              song={song.data}
+              width={width}
+              height={height}
+              autoplay={false}
+              onSongEnd={() => {
+                const scores =
+                  GameState.getSingSetup()?.mode === GAME_MODE.CO_OP
+                    ? [
+                        {
+                          name: PlayersManager.getPlayers()
+                            .map((player) => player.getName())
+                            .join(', '),
+                          score: GameState.getPlayerScore(0),
+                        },
+                      ]
+                    : PlayersManager.getPlayers().map((player) => ({
+                        name: player.getName(),
+                        score: GameState.getPlayerScore(player.number),
+                      }));
+                const progress = GameState.getSongCompletionProgress();
+                events.songEnded.dispatch(song.data!, singSetup, scores, progress);
+                setIsEnded(true);
+              }}
+              singSetup={singSetup}
+              restartSong={restartSong}
+            />
+          )}
+        </Container>
+      </LayoutGame>
     );
   }
 }

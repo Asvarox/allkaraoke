@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import LayoutGame from 'Scenes/LayoutGame';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import AdditionalListControls from 'Scenes/SingASong/SongSelection/Components/AdditionalListControls';
 import BackgroundThumbnail from 'Scenes/SingASong/SongSelection/Components/BackgroundThumbnail';
@@ -94,80 +95,82 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const loading = isLoading || !groupedSongList || !width;
 
   return (
-    <Container songsPerRow={songsPerRow}>
-      {loading ? (
-        <SongListContainer>
-          <SongsGroupContainer>
-            <SongsGroupHeader>&nbsp;&nbsp;</SongsGroupHeader>
-            <SongsGroup>
-              {new Array(16).fill(0).map((_, i) => (
-                <SongListEntrySkeleton key={i} />
-              ))}
-            </SongsGroup>
-          </SongsGroupContainer>
-        </SongListContainer>
-      ) : (
-        <>
-          {songPreview && <SongImageBackground videoId={songPreview.video} />}
-          <AdditionalListControls
-            setFilters={setFilters}
-            filters={filters}
-            onRandom={randomSong}
-            keyboardControl={keyboardControl}
-          />
-          <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
-            <SongGroupsNavigation groupedSongList={groupedSongList} containerRef={list} selectSong={moveToSong} />
-            {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
-            {songPreview && (
-              <SongPreview
-                songPreview={songPreview}
-                onPlay={onSongSelected}
-                keyboardControl={!keyboardControl}
-                onExitKeyboardControl={() => setKeyboardControl(true)}
-                top={previewTop}
-                left={previewLeft}
-                width={previewWidth}
-                height={previewHeight}
-                focusEffect={!showFilters}
-              />
-            )}
-            {groupedSongList.map((group) => (
-              <SongsGroupContainer
-                {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
-                key={group.letter}
-                data-group-letter={group.letter}
-                highlight={group.letter === 'New'}>
-                <SongsGroupHeader>{group.letter}</SongsGroupHeader>
-                <SongsGroup>
-                  {group.songs.map(({ song, index }) => (
-                    <SongListEntry
-                      key={song.id}
-                      song={song}
-                      handleClick={focusedSong === index ? expandSong : moveToSong}
-                      focused={!showFilters && keyboardControl && index === focusedSong}
-                      index={index}
-                      data-index={index}
-                      data-focused={!showFilters && keyboardControl && index === focusedSong}
-                      data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
-                    />
-                  ))}
-                </SongsGroup>
-              </SongsGroupContainer>
-            ))}
-            <AddSongs>
-              Missing a song? Try <a href="convert">adding one</a> yourself!
-            </AddSongs>
+    <LayoutGame>
+      <Container songsPerRow={songsPerRow}>
+        {loading ? (
+          <SongListContainer>
+            <SongsGroupContainer>
+              <SongsGroupHeader>&nbsp;&nbsp;</SongsGroupHeader>
+              <SongsGroup>
+                {new Array(16).fill(0).map((_, i) => (
+                  <SongListEntrySkeleton key={i} />
+                ))}
+              </SongsGroup>
+            </SongsGroupContainer>
           </SongListContainer>
-        </>
-      )}
-      <Playlists
-        selectedPlaylist={selectedPlaylist}
-        setSelectedPlaylist={setSelectedPlaylist}
-        playlists={playlists}
-        active={showFilters}
-        closePlaylist={setShowFilters}
-      />
-    </Container>
+        ) : (
+          <>
+            {songPreview && <SongImageBackground videoId={songPreview.video} />}
+            <AdditionalListControls
+              setFilters={setFilters}
+              filters={filters}
+              onRandom={randomSong}
+              keyboardControl={keyboardControl}
+            />
+            <SongListContainer ref={list} active={keyboardControl} data-test="song-list-container" dim={showFilters}>
+              <SongGroupsNavigation groupedSongList={groupedSongList} containerRef={list} selectSong={moveToSong} />
+              {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
+              {songPreview && (
+                <SongPreview
+                  songPreview={songPreview}
+                  onPlay={onSongSelected}
+                  keyboardControl={!keyboardControl}
+                  onExitKeyboardControl={() => setKeyboardControl(true)}
+                  top={previewTop}
+                  left={previewLeft}
+                  width={previewWidth}
+                  height={previewHeight}
+                  focusEffect={!showFilters}
+                />
+              )}
+              {groupedSongList.map((group) => (
+                <SongsGroupContainer
+                  {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
+                  key={group.letter}
+                  data-group-letter={group.letter}
+                  highlight={group.letter === 'New'}>
+                  <SongsGroupHeader>{group.letter}</SongsGroupHeader>
+                  <SongsGroup>
+                    {group.songs.map(({ song, index }) => (
+                      <SongListEntry
+                        key={song.id}
+                        song={song}
+                        handleClick={focusedSong === index ? expandSong : moveToSong}
+                        focused={!showFilters && keyboardControl && index === focusedSong}
+                        index={index}
+                        data-index={index}
+                        data-focused={!showFilters && keyboardControl && index === focusedSong}
+                        data-test={`song-${song.id}${group.isNew ? '-new-group' : ''}`}
+                      />
+                    ))}
+                  </SongsGroup>
+                </SongsGroupContainer>
+              ))}
+              <AddSongs>
+                Missing a song? Try <a href="convert">adding one</a> yourself!
+              </AddSongs>
+            </SongListContainer>
+          </>
+        )}
+        <Playlists
+          selectedPlaylist={selectedPlaylist}
+          setSelectedPlaylist={setSelectedPlaylist}
+          playlists={playlists}
+          active={showFilters}
+          closePlaylist={setShowFilters}
+        />
+      </Container>
+    </LayoutGame>
   );
 }
 
@@ -304,10 +307,3 @@ const SongListEntry = memo(styled(FinalSongCard)`
     content-visibility: auto;
   contain-intrinsic-size: calc(var(--song-item-width) * (1 / var(--song-item-ratio)));
 `);
-
-const LoaderContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-`;

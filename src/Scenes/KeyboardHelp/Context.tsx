@@ -15,6 +15,7 @@ export type HelpEntry = RegularHelpEntry & { remote?: remoteActions[] };
 export const KeyboardHelpContext = createContext({
   setKeyboard: (name: string, helpEntry: HelpEntry): void => {},
   unsetKeyboard: (name: string): void => {},
+  hasContent: false,
 });
 
 type KeyboardsList = Record<string, HelpEntry>;
@@ -49,8 +50,10 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
 
   const { remote, ...rest } = help ?? {};
 
+  const hasContent = !!Object.values(rest).length;
+
   return (
-    <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard }}>
+    <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard, hasContent }}>
       {children}
       <KeyboardHelpView help={rest} />
     </KeyboardHelpContext.Provider>

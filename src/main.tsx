@@ -54,7 +54,7 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
 
 // https://github.com/emotion-js/emotion/issues/2404
 const emotionCache = createCache({
-  key: 'emotion-cache-no-speedy',
+  key: 'ec',
   speedy: !isPreRendering,
 });
 

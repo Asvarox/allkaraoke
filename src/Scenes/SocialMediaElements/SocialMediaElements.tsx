@@ -2,19 +2,20 @@ import styled from '@emotion/styled';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import LayoutGame from 'Scenes/LayoutGame';
 import logo from '../../../public/logo.svg?raw';
 
 export default function SocialMediaElements() {
   useBackground(false);
 
   return (
-    <>
+    <LayoutGame>
       <IconLogo dangerouslySetInnerHTML={{ __html: logo }} />
       <BackgroundPhoto>
         <Logo />
         {/*<ChristmasTree>🎁</ChristmasTree>*/}
       </BackgroundPhoto>
-    </>
+    </LayoutGame>
   );
 }
 

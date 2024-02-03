@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { MenuButton, MenuContainer } from 'Elements/Menu';
+import LayoutGame from 'Scenes/LayoutGame';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 
 function SuggestMobilePhone() {
@@ -17,24 +18,26 @@ function SuggestMobilePhone() {
   };
 
   return (
-    <Container>
-      <Modal>
-        <h1>Use Mobile Phone Mode?</h1>
-        <h3>
-          The regular version of the game isn't optimal for smaller screens. Enable the Mobile Phone Mode to adjust the
-          UI and gameplay elements. Use this, or connect other mobiles to sing songs.
-        </h3>
-        <h3>
-          You can always change the setting in the <strong>Settings</strong> menu.
-        </h3>
-        <MenuButton focused onClick={setPhoneMode} data-test="enable-mobile-mode">
-          Enable Mobile Phone Mode
-        </MenuButton>
-        <MenuButton onClick={() => setMobilePhoneMode(false)} data-test="dismiss-mobile-mode">
-          Dismiss
-        </MenuButton>
-      </Modal>
-    </Container>
+    <LayoutGame>
+      <Container>
+        <Modal>
+          <h1>Use Mobile Phone Mode?</h1>
+          <h3>
+            The regular version of the game isn't optimal for smaller screens. Enable the Mobile Phone Mode to adjust
+            the UI and gameplay elements. Use this, or connect other mobiles to sing songs.
+          </h3>
+          <h3>
+            You can always change the setting in the <strong>Settings</strong> menu.
+          </h3>
+          <MenuButton focused onClick={setPhoneMode} data-test="enable-mobile-mode">
+            Enable Mobile Phone Mode
+          </MenuButton>
+          <MenuButton onClick={() => setMobilePhoneMode(false)} data-test="dismiss-mobile-mode">
+            Dismiss
+          </MenuButton>
+        </Modal>
+      </Container>
+    </LayoutGame>
   );
 }
 

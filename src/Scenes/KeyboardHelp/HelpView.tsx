@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { KeyboardReturn } from '@mui/icons-material';
 import { typography } from 'Elements/cssMixins';
 import { KeyboardHelpVisibilitySetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { supportsEscAsBack } from 'hooks/useKeyboard';
@@ -66,11 +65,7 @@ const HorizontalVerticalBase = ({ vertical = false, horizontal = false }) => (
 const Horizontal = () => <HorizontalVerticalBase horizontal />;
 const Vertical = () => <HorizontalVerticalBase vertical />;
 const HorizontalVertical = () => <HorizontalVerticalBase vertical horizontal />;
-const Accept = () => (
-  <Kbd>
-    Enter <KeyboardReturn />
-  </Kbd>
-);
+const Accept = () => <Kbd>Enter ⏎</Kbd>;
 const Back = () => (supportsEscAsBack ? <Kbd>Escape</Kbd> : <Kbd>Backspace ⌫</Kbd>);
 const ShiftLetter = (letter: string) => () =>
   (

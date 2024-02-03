@@ -11,7 +11,6 @@ import SelectInput from './Scenes/SelectInput/SelectInput';
 import { Global, css } from '@emotion/react';
 import { Theme, ThemeProvider, createTheme } from '@mui/material';
 import { ErrorFallback } from 'Elements/ErrorFallback';
-import { GameScreens } from 'Elements/GameScreens';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import PageLoader from 'Elements/PageLoader';
 import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
@@ -24,7 +23,6 @@ import RemoteMicSettings from 'Scenes/Settings/RemoteMicSettings';
 import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import SocialMediaElements from 'Scenes/SocialMediaElements/SocialMediaElements';
 import Welcome from 'Scenes/Welcome/Welcome';
-import Toolbar from 'Toolbar/Toolbar';
 import { Suspense, lazy, useMemo } from 'react';
 import routePaths from 'routePaths';
 
@@ -62,24 +60,21 @@ function App() {
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>
             <Router base={import.meta.env.BASE_URL}>
-              <GameScreens>
-                <Toolbar />
-                <Route path={routePaths.INDEX} component={LandingPage} />
-                <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
-                <Route path={routePaths.MENU} component={Welcome} />
-                <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
-                <Route path={routePaths.JUKEBOX} component={Jukebox} />
-                <Route path={routePaths.GAME}>
-                  {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
-                  <Game />
-                </Route>
-                <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
-                <Route path={routePaths.SETTINGS} component={Settings} />
-                <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />
-                <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
-                <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
-                <Route path="social-media-elements" component={SocialMediaElements} />
-              </GameScreens>
+              <Route path={routePaths.INDEX} component={LandingPage} />
+              <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
+              <Route path={routePaths.MENU} component={Welcome} />
+              <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
+              <Route path={routePaths.JUKEBOX} component={Jukebox} />
+              <Route path={routePaths.GAME}>
+                {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
+                <Game />
+              </Route>
+              <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
+              <Route path={routePaths.SETTINGS} component={Settings} />
+              <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />
+              <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
+              <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
+              <Route path="social-media-elements" component={SocialMediaElements} />
               <Route path={routePaths.CONVERT} component={() => <Convert />} />
               <Route
                 path={routePaths.EDIT_SONGS_LIST}

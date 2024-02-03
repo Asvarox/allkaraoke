@@ -5,6 +5,7 @@ import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import { default as events, default as gameEvents } from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
 import { restoreDefaultColors, switchToChristmasColors } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import LayoutGame from 'Scenes/LayoutGame';
 import BottomBar from 'Scenes/RemoteMic/BottomBar';
 import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
 import ConfirmReadiness from 'Scenes/RemoteMic/Panels/Microphone/ConfirmReadiness';
@@ -60,7 +61,7 @@ function RemoteMic() {
   };
 
   return (
-    <>
+    <LayoutGame>
       <ConfirmReadiness onConfirm={onConfirm} />
       <NormalizeFontSize size={10} />
       <Container id="phone-ui-container">
@@ -92,7 +93,7 @@ function RemoteMic() {
           <BottomBar setActiveTab={setActiveTab} active={activeTab} />
         </>
       </Container>
-    </>
+    </LayoutGame>
   );
 }
 export default RemoteMic;

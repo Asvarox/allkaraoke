@@ -3,6 +3,7 @@ import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
 import { MenuContainer } from 'Elements/Menu';
 import RecommendedBrowsers from 'Elements/RecommendedBrowsers';
+import LayoutGame from 'Scenes/LayoutGame';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import { PropsWithChildren } from 'react';
 
@@ -13,14 +14,14 @@ function MenuWithLogo({ children, supportedBrowsers }: Props) {
   useBackground(true);
 
   return (
-    <>
+    <LayoutGame>
       <GithubRibbon />
       <Container>
         <Logo />
         {supportedBrowsers && <RecommendedBrowsers />}
         <MenuContainer>{children}</MenuContainer>
       </Container>
-    </>
+    </LayoutGame>
   );
 }
 

@@ -4,6 +4,7 @@ import { useBackground } from 'Elements/LayoutWithBackground';
 import NoPrerender from 'Elements/NoPrerender';
 import SmoothLink from 'Elements/SmoothLink';
 import VideoPlayer, { VideoState } from 'Elements/VideoPlayer';
+import LayoutGame from 'Scenes/LayoutGame';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -36,35 +37,37 @@ function Jukebox(props: Props) {
   const navigateUrl = buildUrl(`game`, { song: shuffledList[currentlyPlaying].id });
 
   return (
-    <NoPrerender>
-      <SongPage
-        width={width}
-        height={height}
-        songData={shuffledList[currentlyPlaying]}
-        data-test="jukebox-container"
-        data-song={shuffledList[currentlyPlaying].id}
-        background={
-          <VideoPlayer
-            autoplay
-            controls
-            width={width}
-            height={height}
-            volume={shuffledList[currentlyPlaying]?.volume}
-            video={shuffledList[currentlyPlaying].video}
-            startAt={shuffledList[currentlyPlaying].videoGap}
-            onStateChange={(state) => {
-              if (state === VideoState.ENDED) playNext();
-            }}
-          />
-        }>
-        <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
-        <SmoothLink to={navigateUrl}>
-          <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
-            Sing this song
-          </PlayThisSongButton>
-        </SmoothLink>
-      </SongPage>
-    </NoPrerender>
+    <LayoutGame>
+      <NoPrerender>
+        <SongPage
+          width={width}
+          height={height}
+          songData={shuffledList[currentlyPlaying]}
+          data-test="jukebox-container"
+          data-song={shuffledList[currentlyPlaying].id}
+          background={
+            <VideoPlayer
+              autoplay
+              controls
+              width={width}
+              height={height}
+              volume={shuffledList[currentlyPlaying]?.volume}
+              video={shuffledList[currentlyPlaying].video}
+              startAt={shuffledList[currentlyPlaying].videoGap}
+              onStateChange={(state) => {
+                if (state === VideoState.ENDED) playNext();
+              }}
+            />
+          }>
+          <SkipSongButton {...register('skip-button', playNext)}>Skip</SkipSongButton>
+          <SmoothLink to={navigateUrl}>
+            <PlayThisSongButton {...register('sing-button', () => navigate(navigateUrl), undefined, true)}>
+              Sing this song
+            </PlayThisSongButton>
+          </SmoothLink>
+        </SongPage>
+      </NoPrerender>
+    </LayoutGame>
   );
 }
 

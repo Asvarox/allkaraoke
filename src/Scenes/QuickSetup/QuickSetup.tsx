@@ -40,7 +40,7 @@ function QuickSetup(props: Props) {
         <SuggestMobileMode />
       ) : (
         <MenuWithLogo>
-          <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" smooth={false} />
+          <SelectInputView onFinish={onFinish} closeButtonText="Sing a song" smooth />
         </MenuWithLogo>
       )}
     </>
