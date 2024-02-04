@@ -29,6 +29,7 @@ test('Edit song', async ({ page }) => {
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
+  await page.pause();
   await pages.editSongsPage.editSong(songID);
 
   await expect(pages.songEditingPage.urlSourceInput).toHaveValue(expectedURL);
