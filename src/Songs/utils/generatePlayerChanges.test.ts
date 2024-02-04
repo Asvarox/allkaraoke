@@ -1,7 +1,7 @@
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import generatePlayerChanges from 'Songs/utils/generatePlayerChanges';
 import { readFileSync } from 'fs';
 import { generateSection, generateSong } from 'utils/testUtils';
-import generatePlayerChanges from './generatePlayerChanges';
 
 describe('generatePlayerChanges', () => {
   it('should generate 10 parts', () => {

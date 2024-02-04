@@ -1,4 +1,4 @@
-import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHeadstart';
+import addHeadstart from 'Songs/utils/processSong/addHeadstart';
 import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('addHeadstart', () => {

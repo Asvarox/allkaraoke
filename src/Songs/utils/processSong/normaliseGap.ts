@@ -1,4 +1,4 @@
-import { Section, Song } from 'interfaces';
+import { Section, Song, SongTrack } from 'interfaces';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
@@ -21,6 +21,11 @@ const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
       }
     })
     .filter((section) => isNotesSection(section) || section.start - section.end > 0); // clear empty pause sections
+
+const normaliseGapForTrack = (track: SongTrack, shiftBeats: number) => ({
+  ...track,
+  sections: shiftSections(track.sections, shiftBeats),
+});
 
 export default function normaliseGap(song: Song): Song {
   const beatLength = getSongBeatLength(song);
@@ -45,6 +50,7 @@ export default function normaliseGap(song: Song): Song {
   return {
     ...song,
     gap,
-    tracks: song.tracks.map((track) => ({ ...track, sections: shiftSections(track.sections, shiftBeats) })),
+    tracks: song.tracks.map((track) => normaliseGapForTrack(track, shiftBeats)),
+    mergedTrack: normaliseGapForTrack(song.mergedTrack, shiftBeats),
   };
 }

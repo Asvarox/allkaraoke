@@ -5,8 +5,8 @@ import CanvasDrawing from 'Scenes/Game/Singing/GameOverlay/Drawing';
 import ParticleManager from 'Scenes/Game/Singing/GameOverlay/Drawing/ParticleManager';
 import GameOverlay from 'Scenes/Game/Singing/GameOverlay/GameOverlay';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import { processSong } from 'Songs/hooks/useSong';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import { processSong } from 'Songs/utils/processSong/processSong';
 import { GAME_MODE, SingSetup } from 'interfaces';
 import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
@@ -105,7 +105,6 @@ const Template: StoryFn<StoryArgs> = (args) => {
           GameState.setSingSetup(singSetup);
           GameState.setSong(song);
         }}
-        playerChanges={[[], []]}
         playerSetups={singSetup.players}
         width={1280}
         isPauseMenuVisible={false}

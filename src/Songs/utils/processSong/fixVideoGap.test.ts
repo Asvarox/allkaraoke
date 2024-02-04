@@ -1,4 +1,4 @@
-import fixVideoGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/fixVideoGap';
+import fixVideoGap from 'Songs/utils/processSong/fixVideoGap';
 import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('fixVideoGap', () => {

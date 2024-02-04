@@ -6,14 +6,14 @@ import ListTracks from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ListTr
 import ManipulateBpm from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ManipulateBpm';
 import ShiftGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ShiftGap';
 import ShiftVideoGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Components/ShiftVideoGap';
-import addHeadstart from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/addHeadstart';
-import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
-import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
-import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
 import Player, { PlayerRef } from 'Scenes/Game/Singing/Player';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
+import addHeadstart from 'Songs/utils/processSong/addHeadstart';
+import normaliseGap from 'Songs/utils/processSong/normaliseGap';
+import normaliseLyricSpaces from 'Songs/utils/processSong/normaliseLyricSpaces';
+import normaliseSectionPaddings from 'Songs/utils/processSong/normaliseSectionPaddings';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash-es';
 import { useEffect, useMemo, useRef, useState } from 'react';

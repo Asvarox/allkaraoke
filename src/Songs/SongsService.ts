@@ -1,7 +1,9 @@
 import { captureException } from '@sentry/react';
 import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
+import { generatePlayerChangesForTrack } from 'Songs/utils/generatePlayerChanges';
 import getSongId from 'Songs/utils/getSongId';
+import mergeTracks from 'Songs/utils/mergeTracks';
 import { lastVisit } from 'Stats/lastVisit';
 import dayjs from 'dayjs';
 import { Song, SongPreview } from 'interfaces';
@@ -145,7 +147,21 @@ class SongsService {
     return this.reloadIndex();
   };
 
-  private getLocal = async (songId: string) => storage.getItem<Song>(decodeURIComponent(songId));
+  private getLocal = async (songId: string) =>
+    storage.getItem<Song>(decodeURIComponent(songId)).then((song) => {
+      if (song) {
+        return {
+          ...song,
+          mergedTrack: mergeTracks(song.tracks, song),
+          tracks: song.tracks.map((track) => ({
+            ...track,
+            changes: generatePlayerChangesForTrack(track, song),
+          })),
+        };
+      }
+      return null;
+    });
+
   public getLocalIndex = async () => {
     const allSongs = await Promise.all((await this.getKeys()).map(this.getLocal));
 

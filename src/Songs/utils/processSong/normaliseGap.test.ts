@@ -1,4 +1,4 @@
-import normaliseGap from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseGap';
+import normaliseGap from 'Songs/utils/processSong/normaliseGap';
 import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('normaliseGap', () => {

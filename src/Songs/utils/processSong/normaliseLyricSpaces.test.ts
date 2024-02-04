@@ -1,4 +1,4 @@
-import normaliseLyricSpaces from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseLyricSpaces';
+import normaliseLyricSpaces from 'Songs/utils/processSong/normaliseLyricSpaces';
 import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('normaliseLyricSpaces', () => {

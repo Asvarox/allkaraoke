@@ -16,7 +16,10 @@ const notesToText = (notes: Note[]) =>
 const getMetadataKey = (meta: string) => meta.split(':')[0];
 
 export default function convertSongToTxt(song: Song) {
-  const parsedValues: Record<keyof Omit<Song, 'tracks' | 'bar' | 'unsupportedProps'>, string | undefined> = {
+  const parsedValues: Record<
+    keyof Omit<Song, 'tracks' | 'bar' | 'unsupportedProps' | 'mergedTrack'>,
+    string | undefined
+  > = {
     artist: toTxtValue('ARTIST', song.artist),
     title: toTxtValue('TITLE', song.title),
     author: toTxtValue('CREATOR', song.author),

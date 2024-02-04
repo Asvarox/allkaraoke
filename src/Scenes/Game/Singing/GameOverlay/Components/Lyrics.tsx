@@ -5,7 +5,7 @@ import LyricsVolumeIndicator from 'Scenes/Game/Singing/GameOverlay/Components/Ly
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import isNotesSection from 'Songs/utils/isNotesSection';
 import { getFirstNoteStartFromSections } from 'Songs/utils/notesSelectors';
-import { Note } from 'interfaces';
+import { GAME_MODE, Note } from 'interfaces';
 import { ComponentProps, Fragment, PropsWithChildren, useMemo } from 'react';
 import tinycolor from 'tinycolor2';
 import GameState from '../../GameState/GameState';
@@ -14,16 +14,16 @@ import styles from '../Drawing/styles';
 interface Props {
   player: PlayerEntity;
   bottom?: boolean;
-  playerChanges: number[][];
   effectsEnabled: boolean;
   showMultipleLines: boolean;
 }
 
-function Lyrics({ player, playerChanges, bottom = false, effectsEnabled, showMultipleLines }: Props) {
+function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: Props) {
   const playerState = GameState.getPlayer(player.number)!;
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const playerColor = styles.colors.players[player.number].text;
-  const thisPlayerChanges = playerChanges[playerState.getTrackIndex()] ?? [];
+  const thisPlayerChanges =
+    GameState.getSingSetup()?.mode === GAME_MODE.PASS_THE_MIC ? playerState.getTrack().changes : [];
   const section = playerState.getCurrentSection();
   const nextSection = playerState.getNextSection();
   const subsequentSection = playerState.getNextSection(2);

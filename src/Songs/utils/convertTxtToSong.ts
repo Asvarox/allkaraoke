@@ -1,7 +1,9 @@
 import { ExtractOptional, NotesSection, Section, Song } from 'interfaces';
 import { ValuesType } from 'utility-types';
 import notFalsy from '../../utils/notFalsy';
+import { generatePlayerChangesForTrack } from './generatePlayerChanges';
 import getSongId from './getSongId';
+import mergeTracks from './mergeTracks';
 
 export const typesMap = {
   R: 'rap',
@@ -164,6 +166,7 @@ export default function convertTxtToSong(
     ...additionalData,
     tracks: [],
     unsupportedProps: getUnknownProps(text),
+    mergedTrack: {} as any,
   };
 
   // Either ID is entered or try to parse link
@@ -191,8 +194,9 @@ export default function convertTxtToSong(
     // than a new track
     if (Number(split[1]) < lastStart * 0.75 && sections.length) {
       // new track (song is a duet)
-      if (trackNames[song.tracks.length]) song.tracks.push({ sections, name: trackNames[song.tracks.length] });
-      else song.tracks.push({ sections });
+      if (trackNames[song.tracks.length])
+        song.tracks.push({ sections, name: trackNames[song.tracks.length], changes: [] });
+      else song.tracks.push({ sections, changes: [] });
       sections = [];
     }
 
@@ -226,14 +230,22 @@ export default function convertTxtToSong(
     }
   });
 
-  if (trackNames[song.tracks.length]) song.tracks.push({ sections, name: trackNames[song.tracks.length] });
-  else song.tracks.push({ sections });
+  if (trackNames[song.tracks.length]) song.tracks.push({ sections, name: trackNames[song.tracks.length], changes: [] });
+  else song.tracks.push({ sections, changes: [] });
 
-  song.tracks = song.tracks.map((track) => ({
-    ...track,
-    // get rid of sections with no notes
-    sections: track.sections.filter((section) => section.type === 'pause' || section.notes.length),
-  }));
+  song.tracks = song.tracks
+    .map((track) => ({
+      ...track,
+      // get rid of sections with no notes
+      sections: track.sections.filter((section) => section.type === 'pause' || section.notes.length),
+      changes: [],
+    }))
+    .map((track) => ({
+      ...track,
+      changes: generatePlayerChangesForTrack(track, song),
+    }));
+
+  song.mergedTrack = mergeTracks(song.tracks, song);
 
   return song;
 }

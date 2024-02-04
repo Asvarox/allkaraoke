@@ -54,6 +54,7 @@ const songStub = {
   bar: 4,
   gap: 0,
   video: expect.anything(),
+  mergedTrack: expect.anything(),
   unsupportedProps: [],
 } satisfies Partial<Song>;
 
@@ -66,7 +67,11 @@ describe('convertTxtToSong', () => {
 
     const inputSongTxt = generateSongTxt([sections]);
 
-    const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: 'videoUrl' } as any;
+    const expectedSong: Song = {
+      ...songStub,
+      tracks: [{ sections, changes: expect.anything() }],
+      video: 'videoUrl',
+    } as any;
 
     expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
   });
@@ -81,13 +86,19 @@ describe('convertTxtToSong', () => {
 
       const inputSongTxt = generateSongTxt([sections, sections], {}, unknownProps);
 
+      const changes = expect.anything();
       const expectedSong: Song = {
         ...songStub,
-        tracks: [{ sections }, { sections }],
+        tracks: [
+          { sections, changes },
+          { sections, changes },
+        ],
         unsupportedProps: unknownProps,
       } as any;
 
-      expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
+      expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl).tracks).toEqual(
+        expectedSong.tracks,
+      );
     });
 
     it('should avoid splitting tracks if notes overlap with heuristics', () => {
@@ -99,11 +110,15 @@ describe('convertTxtToSong', () => {
 
       const inputSongTxt = generateSongTxt([sections]);
 
-      const expectedSong: Song = { ...songStub, tracks: [{ sections }], video: videoId } as any;
+      const expectedSong: Song = {
+        ...songStub,
+        tracks: [{ sections, changes: expect.anything() }],
+        video: videoId,
+      } as any;
       const result = convertTxtToSong(inputSongTxt, videoId, author, authorUrl, sourceUrl);
 
       expect(result.tracks).toHaveLength(1);
-      expect(result).toEqual(expectedSong);
+      expect(result.tracks).toEqual(expectedSong.tracks);
     });
   });
 

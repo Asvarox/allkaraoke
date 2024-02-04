@@ -1,4 +1,4 @@
-import normaliseSectionPaddings from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
+import normaliseSectionPaddings from 'Songs/utils/processSong/normaliseSectionPaddings';
 import { generateNote, generateSong } from 'utils/testUtils';
 
 describe('normaliseSectionPaddings', () => {

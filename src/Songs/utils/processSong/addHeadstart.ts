@@ -1,7 +1,7 @@
-import { Section, Song } from 'interfaces';
-import { HEADSTART_MS } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/normaliseSectionPaddings';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import isNotesSection from 'Songs/utils/isNotesSection';
+import { HEADSTART_MS } from 'Songs/utils/processSong/normaliseSectionPaddings';
+import { Section, Song, SongTrack } from 'interfaces';
 
 const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
   sections.map((section, index) => {
@@ -20,6 +20,13 @@ const shiftSections = (sections: Section[], shiftBeats: number): Section[] =>
     }
   });
 
+const addHeadstartToTrack = (track: SongTrack, actualHeadstart: number) => {
+  return {
+    ...track,
+    sections: shiftSections(track.sections, actualHeadstart),
+  };
+};
+
 export default function addHeadstart(song: Song): Song {
   const beatLength = getSongBeatLength(song);
   const desiredHeadstart = Math.round(HEADSTART_MS / beatLength);
@@ -32,6 +39,7 @@ export default function addHeadstart(song: Song): Song {
   return {
     ...song,
     gap,
-    tracks: song.tracks.map((track) => ({ ...track, sections: shiftSections(track.sections, actualHeadstart) })),
+    tracks: song.tracks.map((track) => addHeadstartToTrack(track, actualHeadstart)),
+    mergedTrack: addHeadstartToTrack(song.mergedTrack, actualHeadstart),
   };
 }

@@ -1,4 +1,4 @@
-import { NotesSection, Section, Song } from 'interfaces';
+import { NotesSection, Section, Song, SongTrack } from 'interfaces';
 import getSongBeatLength from 'Songs/utils/getSongBeatLength';
 import isNotesSection from 'Songs/utils/isNotesSection';
 
@@ -38,8 +38,13 @@ const addPauseSections = (sections: NotesSection[], padSizeBeats = 10): Section[
   return sectionsWithPauses;
 };
 
-// Triest its best to add enough headstart to sections so the player can see the lyrics and notes
-// in advance. If possible, will also make the section a bit longer so it doesn't end abruptly
+const normaliseSectionPaddingsForTrack = (track: SongTrack, desiredPadding: number) => ({
+  ...track,
+  sections: addPauseSections(shortenNoteSections(track.sections.filter(isNotesSection)), desiredPadding),
+});
+
+// Tries its best to add enough headstart to sections so the player can see the lyrics and notes
+// in advance. If possible, will also make the section a bit longer, so it doesn't end abruptly
 export default function normaliseSectionPaddings(song: Song): Song {
   const beatLength = getSongBeatLength(song);
   const desiredPadding = Math.round(HEADSTART_MS / beatLength);
@@ -47,9 +52,7 @@ export default function normaliseSectionPaddings(song: Song): Song {
 
   return {
     ...song,
-    tracks: song.tracks.map((track) => ({
-      ...track,
-      sections: addPauseSections(shortenNoteSections(track.sections.filter(isNotesSection)), desiredPadding),
-    })),
+    tracks: song.tracks.map((track) => normaliseSectionPaddingsForTrack(track, desiredPadding)),
+    mergedTrack: normaliseSectionPaddingsForTrack(song.mergedTrack, desiredPadding),
   };
 }

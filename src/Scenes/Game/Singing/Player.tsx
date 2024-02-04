@@ -33,7 +33,6 @@ interface Props extends ComponentProps<typeof Container> {
   onSongEnd: () => void;
   onStatusChange?: (status: VideoState) => void;
   players: PlayerSetup[];
-  playerChanges?: number[][];
 
   effectsEnabled?: boolean;
   pauseMenu?: boolean;
@@ -72,7 +71,6 @@ function Player(
     onSongEnd,
     onStatusChange,
     players,
-    playerChanges = [[], []],
     effectsEnabled = true,
     singSetup,
     restartSong,
@@ -195,7 +193,6 @@ function Player(
           <GameOverlay
             isPauseMenuVisible={pauseMenuVisible}
             effectsEnabled={effectsEnabled}
-            playerChanges={playerChanges}
             duration={duration}
             currentStatus={currentStatus}
             song={song}
