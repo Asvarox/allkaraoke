@@ -9,7 +9,10 @@ class RemoteMicInput {
 
   private requestReadinessPromise: null | Promise<boolean> = null;
 
-  public constructor(private connection: SenderInterface, private inputLag: number) {}
+  public constructor(
+    private connection: SenderInterface,
+    private inputLag: number,
+  ) {}
 
   getChannelsCount = () => 1;
 
@@ -78,7 +81,12 @@ export class RemoteMic {
   private input: RemoteMicInput;
   private pingTime: number = 9999;
   private pingInterval: ReturnType<typeof setTimeout> | null = null;
-  constructor(public id: string, public name: string, public connection: SenderInterface, lag: number) {
+  constructor(
+    public id: string,
+    public name: string,
+    public connection: SenderInterface,
+    lag: number,
+  ) {
     this.input = new RemoteMicInput(connection, lag);
 
     this.pingClient();

@@ -17,7 +17,10 @@ class PlayerState {
 
   private storedSectionIndex = 0;
 
-  public constructor(private number: 0 | 1 | 2 | 3, private gameState: GameStateClass) {
+  public constructor(
+    private number: 0 | 1 | 2 | 3,
+    private gameState: GameStateClass,
+  ) {
     this.getTrack()
       .sections.filter(isNotesSection)
       .forEach((section) =>

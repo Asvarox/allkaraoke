@@ -21,7 +21,12 @@ export default class RayParticle implements Particle {
   private velocityY;
   private maxWidth;
 
-  constructor(private x: number, private y: number, seed: number, widthModifier: number) {
+  constructor(
+    private x: number,
+    private y: number,
+    seed: number,
+    widthModifier: number,
+  ) {
     this.ttl = initialTtl;
     this.velocityX = velocity * Math.random() - velocity / 2;
     this.velocityY = velocity * Math.random() - velocity / 2;

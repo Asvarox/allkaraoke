@@ -67,12 +67,11 @@ const Vertical = () => <HorizontalVerticalBase vertical />;
 const HorizontalVertical = () => <HorizontalVerticalBase vertical horizontal />;
 const Accept = () => <Kbd>Enter ⏎</Kbd>;
 const Back = () => (supportsEscAsBack ? <Kbd>Escape</Kbd> : <Kbd>Backspace ⌫</Kbd>);
-const ShiftLetter = (letter: string) => () =>
-  (
-    <>
-      <Kbd>Shift</Kbd> + <Kbd>{letter.toUpperCase()}</Kbd>
-    </>
-  );
+const ShiftLetter = (letter: string) => () => (
+  <>
+    <Kbd>Shift</Kbd> + <Kbd>{letter.toUpperCase()}</Kbd>
+  </>
+);
 const Alphanumeric = () => (
   <>
     <Kbd>start typing</Kbd>
@@ -169,7 +168,9 @@ const Kbd = styled.kbd<{ disabled?: boolean }>`
   line-height: 1.4;
   font-size: 1.6rem;
   display: inline-block;
-  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0.2rem #ffffff;
+  box-shadow:
+    0 0.1rem 0 rgba(0, 0, 0, 0.2),
+    inset 0 0 0 0.2rem #ffffff;
   background-color: rgb(247, 247, 247);
   text-shadow: 0 0.1rem 0 #fff;
   font-weight: normal;

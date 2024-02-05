@@ -18,7 +18,11 @@ export default class SungTriangle implements Particle {
   private initialAngle;
   private heightModifier;
 
-  constructor(private x: number, private y: number, private color: string) {
+  constructor(
+    private x: number,
+    private y: number,
+    private color: string,
+  ) {
     this.startingTtl = this.ttl = spreadValue(baseTtlMs, ttlSpreadMs);
     this.velocityX = velocityModifier * Math.random() - velocityModifier / 2;
     this.velocityY = velocityModifier * Math.random() - velocityModifier / 2;

@@ -138,7 +138,7 @@
     "peer": "^1.0.2",
     "playwright": "^1.41.1",
     "playwright-core": "^1.41.1",
-    "prettier": "^2.8.8",
+    "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "react-refresh": "^0.14.0",
     "rollup-plugin-analyzer": "^4.0.0",
@@ -157,6 +157,9 @@
   "homepage": "./",
   "packageManager": "yarn@4.0.2",
   "dependenciesMeta": {
+    "prettier-plugin-organize-imports@3.2.4": {
+      "unplugged": true
+    },
     "typescript@5.3.3": {
       "unplugged": true
     },
