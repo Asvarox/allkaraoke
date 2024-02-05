@@ -1,10 +1,10 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Laptop, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
+import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
 import { Badge } from 'Elements/Badge';
 import { MenuButton } from 'Elements/Menu';
 import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
-import { focused } from 'Elements/cssMixins';
+import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useKeyboardNav from 'hooks/useKeyboardNav';
@@ -49,6 +49,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
           </OptionDescription>
         </div>
         <Badge>Recommended</Badge>
+        <PlayersNumber>
+          <PeopleAlt />
+          <strong>1-4</strong>
+        </PlayersNumber>
       </Option>
       <Option
         {...register('built-in', () => onPreferenceSelected('built-in'), undefined, previouslySelected === 'built-in')}>
@@ -63,6 +67,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             party
           </OptionDescription>
         </div>
+        <PlayersNumber>
+          <Person />
+          <strong>1</strong>
+        </PlayersNumber>
       </Option>
       <hr />
       {!mobilePhoneMode && (
@@ -78,6 +86,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
               <strong>automatically</strong>.
             </OptionDescription>
           </div>
+          <PlayersNumber>
+            <PeopleAlt />
+            <strong>2</strong>
+          </PlayersNumber>
         </Option>
       )}
       <Option
@@ -92,6 +104,10 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             Assign the specific device to a player manually, e.g. if you don't have regular SingStar microphones.
           </OptionDescription>
         </div>
+        <PlayersNumber>
+          <PeopleAlt />
+          <strong>1-4</strong>
+        </PlayersNumber>
       </Option>
       <hr />
       <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
@@ -100,6 +116,21 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
     </>
   );
 }
+
+const PlayersNumber = styled.div`
+  ${typography};
+  //width: 15rem;
+  position: absolute;
+  inset: auto 0.5rem 0.5rem auto;
+  svg {
+    font-size: 0.9em;
+  }
+
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
 
 const OptionDescription = styled.div<{ focused?: boolean }>`
   padding: 0 3rem 0 6rem;

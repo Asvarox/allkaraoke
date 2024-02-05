@@ -114,7 +114,7 @@ export default function SongList(props: Props) {
           enableRowActions
           renderRowActions={({ row }) => (
             <>
-              <Link to={buildUrl(`edit/song`, { song: row.original.id })}>
+              <Link to={buildUrl(`edit/song`, { song: row.original.id, id: null })}>
                 <IconButton title="Edit the song" data-test="edit-song" data-song={row.original.id}>
                   <EditIcon />
                 </IconButton>

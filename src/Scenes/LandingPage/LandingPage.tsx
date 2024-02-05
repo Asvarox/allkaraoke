@@ -25,7 +25,7 @@ function LandingPage() {
 
   useBackground(true);
 
-  const nextPage = setupPreference === null ? 'quick-setup' : 'menu';
+  const nextPage = setupPreference === null ? 'quick-setup/' : 'menu/';
 
   useHotkeys(
     'enter',
@@ -111,17 +111,17 @@ function LandingPage() {
         </Stats>
         <JoinExistingTip>
           Using this device as remote microphone?
-          <SmoothLink to="remote-mic">
+          <SmoothLink to="remote-mic/">
             <button data-test="join-existing-game">Join existing game</button>
           </SmoothLink>
         </JoinExistingTip>
         <MobileButtonsContainer>
-          <SmoothLink to="remote-mic">
+          <SmoothLink to="remote-mic/">
             <PlayButton data-test="join-existing-game" focused>
               Join game (with <strong>Game Code</strong>)
             </PlayButton>
           </SmoothLink>
-          <SmoothLink to={'quick-setup'}>
+          <SmoothLink to="quick-setup/">
             <PlayButton data-test="enter-the-game">Start new game</PlayButton>
           </SmoothLink>
         </MobileButtonsContainer>

@@ -15,15 +15,15 @@ function ManageSongs(props: Props) {
   return (
     <MenuWithLogo>
       <h1>Manage Songs</h1>
-      <SmoothLink to="exclude-languages">
+      <SmoothLink to="exclude-languages/">
         <MenuButton {...register('exclude-languages', () => navigate('exclude-languages'))}>
           Select Song Languages
         </MenuButton>
       </SmoothLink>
-      <SmoothLink to="edit/list">
+      <SmoothLink to="edit/list/">
         <MenuButton {...register('edit-songs', () => navigate('edit/list'))}>Edit songs</MenuButton>
       </SmoothLink>
-      <SmoothLink to="convert">
+      <SmoothLink to="convert/">
         <MenuButton {...register('convert-song', () => navigate('convert'))}>Convert UltraStar .txt</MenuButton>
       </SmoothLink>
       <hr />
