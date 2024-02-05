@@ -40,7 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@remotion/cli", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.84"],\
           ["@remotion/gif", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.84"],\
           ["@remotion/google-fonts", "npm:4.0.84"],\
-          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.98.0"],\
+          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.99.0"],\
           ["@storybook/addon-actions", "npm:7.6.12"],\
           ["@storybook/addon-docs", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.6.12"],\
           ["@storybook/addon-essentials", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.6.12"],\
@@ -8629,85 +8629,85 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@sentry-internal/feedback", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-internal-feedback-npm-7.98.0-bbd3fadd07-3366822ab3.zip/node_modules/@sentry-internal/feedback/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-internal-feedback-npm-7.99.0-2a044e7aab-591549b37b.zip/node_modules/@sentry-internal/feedback/",\
         "packageDependencies": [\
-          ["@sentry-internal/feedback", "npm:7.98.0"],\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"]\
+          ["@sentry-internal/feedback", "npm:7.99.0"],\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry-internal/replay-canvas", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-internal-replay-canvas-npm-7.98.0-a444a96ee2-96fc2416c9.zip/node_modules/@sentry-internal/replay-canvas/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-internal-replay-canvas-npm-7.99.0-a7b2af931e-3365e2ec44.zip/node_modules/@sentry-internal/replay-canvas/",\
         "packageDependencies": [\
-          ["@sentry-internal/replay-canvas", "npm:7.98.0"],\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/replay", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"]\
+          ["@sentry-internal/replay-canvas", "npm:7.99.0"],\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/replay", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry-internal/tracing", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-internal-tracing-npm-7.98.0-b35ecd7b6e-fbd6cf01f4.zip/node_modules/@sentry-internal/tracing/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-internal-tracing-npm-7.99.0-b7594121b6-2187c2d7d0.zip/node_modules/@sentry-internal/tracing/",\
         "packageDependencies": [\
-          ["@sentry-internal/tracing", "npm:7.98.0"],\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"]\
+          ["@sentry-internal/tracing", "npm:7.99.0"],\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/browser", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-browser-npm-7.98.0-042a41aa80-18d98207ea.zip/node_modules/@sentry/browser/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-browser-npm-7.99.0-58ac988046-5de81dea58.zip/node_modules/@sentry/browser/",\
         "packageDependencies": [\
-          ["@sentry/browser", "npm:7.98.0"],\
-          ["@sentry-internal/feedback", "npm:7.98.0"],\
-          ["@sentry-internal/replay-canvas", "npm:7.98.0"],\
-          ["@sentry-internal/tracing", "npm:7.98.0"],\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/replay", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"]\
+          ["@sentry/browser", "npm:7.99.0"],\
+          ["@sentry-internal/feedback", "npm:7.99.0"],\
+          ["@sentry-internal/replay-canvas", "npm:7.99.0"],\
+          ["@sentry-internal/tracing", "npm:7.99.0"],\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/replay", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/core", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-core-npm-7.98.0-cd8aa44aea-fa2221c577.zip/node_modules/@sentry/core/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-core-npm-7.99.0-6a1aa5b009-211093fbab.zip/node_modules/@sentry/core/",\
         "packageDependencies": [\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"]\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/react", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-react-npm-7.98.0-7ff227a732-c2e7b378ed.zip/node_modules/@sentry/react/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-react-npm-7.99.0-3e99a1d181-5fa6a7aa9a.zip/node_modules/@sentry/react/",\
         "packageDependencies": [\
-          ["@sentry/react", "npm:7.98.0"]\
+          ["@sentry/react", "npm:7.99.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.98.0", {\
-        "packageLocation": "./.yarn/__virtual__/@sentry-react-virtual-55e3baecfc/0/cache/@sentry-react-npm-7.98.0-7ff227a732-c2e7b378ed.zip/node_modules/@sentry/react/",\
+      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.99.0", {\
+        "packageLocation": "./.yarn/__virtual__/@sentry-react-virtual-bae22b2d60/0/cache/@sentry-react-npm-7.99.0-3e99a1d181-5fa6a7aa9a.zip/node_modules/@sentry/react/",\
         "packageDependencies": [\
-          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.98.0"],\
-          ["@sentry/browser", "npm:7.98.0"],\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"],\
+          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.99.0"],\
+          ["@sentry/browser", "npm:7.99.0"],\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"],\
           ["@types/react", "npm:18.2.47"],\
           ["hoist-non-react-statics", "npm:3.3.2"],\
           ["react", "npm:18.2.0"]\
@@ -8720,33 +8720,33 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@sentry/replay", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-replay-npm-7.98.0-662591177a-fd3577c143.zip/node_modules/@sentry/replay/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-replay-npm-7.99.0-d147e1a2e4-6bada9b046.zip/node_modules/@sentry/replay/",\
         "packageDependencies": [\
-          ["@sentry/replay", "npm:7.98.0"],\
-          ["@sentry-internal/tracing", "npm:7.98.0"],\
-          ["@sentry/core", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"],\
-          ["@sentry/utils", "npm:7.98.0"]\
+          ["@sentry/replay", "npm:7.99.0"],\
+          ["@sentry-internal/tracing", "npm:7.99.0"],\
+          ["@sentry/core", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"],\
+          ["@sentry/utils", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/types", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-types-npm-7.98.0-f025acb8ce-3b9bd8929b.zip/node_modules/@sentry/types/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-types-npm-7.99.0-ac73b9b51d-153584178c.zip/node_modules/@sentry/types/",\
         "packageDependencies": [\
-          ["@sentry/types", "npm:7.98.0"]\
+          ["@sentry/types", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sentry/utils", [\
-      ["npm:7.98.0", {\
-        "packageLocation": "./.yarn/cache/@sentry-utils-npm-7.98.0-fb8ed7102b-b4697bd8a1.zip/node_modules/@sentry/utils/",\
+      ["npm:7.99.0", {\
+        "packageLocation": "./.yarn/cache/@sentry-utils-npm-7.99.0-2eaa34ee8f-5626380f04.zip/node_modules/@sentry/utils/",\
         "packageDependencies": [\
-          ["@sentry/utils", "npm:7.98.0"],\
-          ["@sentry/types", "npm:7.98.0"]\
+          ["@sentry/utils", "npm:7.99.0"],\
+          ["@sentry/types", "npm:7.99.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19285,7 +19285,7 @@ const RAW_RUNTIME_STATE =
           ["@remotion/cli", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.84"],\
           ["@remotion/gif", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.0.84"],\
           ["@remotion/google-fonts", "npm:4.0.84"],\
-          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.98.0"],\
+          ["@sentry/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.99.0"],\
           ["@storybook/addon-actions", "npm:7.6.12"],\
           ["@storybook/addon-docs", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.6.12"],\
           ["@storybook/addon-essentials", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.6.12"],\
