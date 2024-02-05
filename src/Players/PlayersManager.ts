@@ -19,7 +19,11 @@ export interface SelectedPlayerInput {
 
 export class PlayerEntity {
   public nameOverride: string = '';
-  constructor(public number: 0 | 1 | 2 | 3, public input: SelectedPlayerInput, public name?: string) {}
+  constructor(
+    public number: 0 | 1 | 2 | 3,
+    public input: SelectedPlayerInput,
+    public name?: string,
+  ) {}
 
   public changeInput = (input: InputSourceNames, channel = 0, deviceId?: string) => {
     let restartMonitoringPromise: null | Promise<void> = null;

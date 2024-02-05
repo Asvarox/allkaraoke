@@ -39,7 +39,7 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     tracks: tracks.map((sections) => ({ sections, changes: [] })),
     mergedTrack: { sections: [], changes: [] },
     ...data,
-  } as any as Song);
+  }) as any as Song;
 
 export const generateSection = (start: number, length: number, notesCount: number): Section => ({
   type: 'notes',

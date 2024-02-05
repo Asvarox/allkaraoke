@@ -153,7 +153,9 @@ const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
   color: rgb(51, 51, 51);
   font-weight: normal;
   font-size: 2.5rem;
-  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0.2rem #ffffff;
+  box-shadow:
+    0 0.1rem 0 rgba(0, 0, 0, 0.2),
+    inset 0 0 0 0.2rem #ffffff;
   background-color: rgb(247, 247, 247);
   text-shadow: 0 0.1rem 0 #fff;
 `;

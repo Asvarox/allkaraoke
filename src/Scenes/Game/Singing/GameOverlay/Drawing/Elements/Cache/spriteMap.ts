@@ -66,7 +66,7 @@ const getAllPlayerSprites = (playerNumber: 0 | 1 | 2 | 3) =>
     [`p${playerNumber}StarMiss`]: getPlayerSprite(playerNumber, false, false, true, false),
     [`p${playerNumber}StarHit`]: getPlayerSprite(playerNumber, true, false, true, true),
     [`p${playerNumber}StarPerfect`]: getPlayerSprite(playerNumber, true, true, true, true),
-  } as Record<PlayerSpriteNames, ReturnType<typeof getPlayerSprite>>);
+  }) as Record<PlayerSpriteNames, ReturnType<typeof getPlayerSprite>>;
 
 const spriteMap = {
   ...getAllPlayerSprites(0),

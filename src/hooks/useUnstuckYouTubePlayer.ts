@@ -12,9 +12,12 @@ function useUnstuckOnStartSong(currentStatus: number) {
   const [playerKey, setPlayerKey] = useState(1);
   useEffect(() => {
     if (currentStatus === YouTube.PlayerState.UNSTARTED) {
-      const timeout = setTimeout(() => {
-        setPlayerKey((current) => current + 1);
-      }, 5000 + playerKey * 2500);
+      const timeout = setTimeout(
+        () => {
+          setPlayerKey((current) => current + 1);
+        },
+        5000 + playerKey * 2500,
+      );
 
       return () => {
         clearTimeout(timeout);

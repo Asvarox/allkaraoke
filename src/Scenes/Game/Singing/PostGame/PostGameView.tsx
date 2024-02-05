@@ -95,7 +95,9 @@ const PostGameTip = styled(GameTip, {
     color: rgb(51, 51, 51);
     line-height: 1.4;
     display: inline-block;
-    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0.2rem #ffffff;
+    box-shadow:
+      0 0.1rem 0 rgba(0, 0, 0, 0.2),
+      inset 0 0 0 0.2rem #ffffff;
     background-color: rgb(247, 247, 247);
     text-shadow: 0 0.1rem 0 #fff;
     font-weight: normal;

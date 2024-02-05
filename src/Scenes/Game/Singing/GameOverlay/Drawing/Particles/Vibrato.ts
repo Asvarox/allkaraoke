@@ -6,7 +6,13 @@ export default class VibratoParticle implements Particle {
   public finished = false;
   public ttl = (2 / 60) * 1000;
 
-  constructor(private x: number, private y: number, private w: number, private h: number, private seed: number) {}
+  constructor(
+    private x: number,
+    private y: number,
+    private w: number,
+    private h: number,
+    private seed: number,
+  ) {}
   public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, delta: number) => {
     ctx.strokeStyle = 'rgba(255,255,255,.25)';
     ctx.lineWidth = 2;
