@@ -117,7 +117,7 @@
     "@types/react-refresh": "^0",
     "@types/tinycolor2": "^1.4.6",
     "@types/use-persisted-state": "^0.3.4",
-    "@types/uuid": "^9.0.7",
+    "@types/uuid": "^9.0.8",
     "@types/youtube-player": "^5.5.11",
     "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react": "^4.2.1",
