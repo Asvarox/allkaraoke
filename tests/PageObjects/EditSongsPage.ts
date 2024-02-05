@@ -32,6 +32,20 @@ export class EditSongsPagePO {
     await this.page.locator(`[data-test="edit-song"][data-song="${songID}"]`).click();
   }
 
+  public async downloadSong(songID: string) {
+    await this.searchSongs(songID);
+    await this.page.locator(`[data-test="download-song"][data-song="${songID}"]`).click();
+  }
+
+  public deleteSongButton(songID: string) {
+    return this.page.locator(`[data-test="delete-song"][data-song="${songID}"]`);
+  }
+
+  public async deleteSong(songID: string) {
+    await this.searchSongs(songID);
+    await this.deleteSongButton(songID).click();
+  }
+
   public async goToMainMenu() {
     await this.page.getByTestId('main-menu-link').click();
   }
@@ -42,6 +56,10 @@ export class EditSongsPagePO {
 
   public async disagreeToShareAddSongs() {
     await this.page.getByTestId('share-songs-disagree').click();
+  }
+
+  public get shareSongSwitch() {
+    return this.page.getByTestId('share-songs-switch').getByRole('checkbox');
   }
 
   public get lastUpdateElement() {

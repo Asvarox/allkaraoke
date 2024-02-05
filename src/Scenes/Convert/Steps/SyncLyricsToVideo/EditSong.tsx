@@ -178,7 +178,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               Use <strong>Video shift gap</strong> to crop the beginning of the video if it starts with an intro.
             </HelpText>
             <HelpText>
-              Use <strong>Shift gap</strong> to sync the start of the lyrics to the video. You can lower the{' '}
+              Use <strong>Lyrics shift gap</strong> to sync the start of the lyrics to the video. You can lower the{' '}
               <strong>Playback speed</strong> above to make sure you got it just right.
             </HelpText>
           </Grid>

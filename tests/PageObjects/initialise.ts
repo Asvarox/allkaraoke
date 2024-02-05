@@ -14,7 +14,10 @@ import { PostGameResultsPagePO } from './PostGameResultsPage';
 import { RemoteMicMainPagePO } from './RemoteMic/RemoteMicMainPage';
 import { SingstarConnectionPagePO } from './SingstarConnectionPage';
 import { SmartphonesConnectionPagePO } from './SmartphonesConnectionPage';
-import { SongEditingPagePO } from './SongEditingPage';
+import { SongEditAuthorAndVideoPagePO } from './SongEditAuthorAndVideoPage';
+import { SongEditBasicInfoPagePO } from './SongEditBasicInfoPage';
+import { SongEditMetadataPagePO } from './SongEditMetadataPage';
+import { SongEditSyncLyricsToVideoPagePO } from './SongEditSyncLyricsToVideoPage';
 import { SongLanguagesPagePO } from './SongLanguagesPage';
 import { SongListPagePO } from './SongListPage';
 import { SongPreviewPagePO } from './SongPreviewPage';
@@ -29,7 +32,10 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     smartphonesConnectionPage: new SmartphonesConnectionPagePO(page, context, browser),
     manageSongsPage: new ManageSongsPagePO(page, context, browser),
     editSongsPage: new EditSongsPagePO(page, context, browser),
-    songEditingPage: new SongEditingPagePO(page, context, browser),
+    songEditBasicInfoPage: new SongEditBasicInfoPagePO(page, context, browser),
+    songEditAuthorAndVideoPage: new SongEditAuthorAndVideoPagePO(page, context, browser),
+    songEditSyncLyricsToVideoPage: new SongEditSyncLyricsToVideoPagePO(page, context, browser),
+    songEditMetadataPage: new SongEditMetadataPagePO(page, context, browser),
     advancedConnectionPage: new AdvancedConnectionPagePO(page, context, browser),
     songPreviewPage: new SongPreviewPagePO(page, context, browser),
     gamePage: new GamePagePO(page, context, browser),
