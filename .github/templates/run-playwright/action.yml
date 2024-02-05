@@ -15,7 +15,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - uses: actions/cache@v3
+    - uses: actions/cache@v4
       id: playwright-cache
       with:
         path: |
@@ -29,7 +29,7 @@ runs:
     - run: yarn playwright install-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
-    - uses: nick-fields/retry@v2
+    - uses: nick-fields/retry@v3
       name: CT Test run ${{ inputs.packagescript }} (${{ inputs.project }})
       with:
         timeout_minutes: 20

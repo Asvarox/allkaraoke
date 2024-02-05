@@ -14,7 +14,7 @@ jobs:
   quick-checks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: yarn npm-run-all --continue-on-error prettier-check lint types-check test:ci build-storybook unimported
@@ -24,7 +24,7 @@ jobs:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run E2E tests
@@ -43,7 +43,7 @@ jobs:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run E2E tests
@@ -54,7 +54,7 @@ jobs:
   ct-tests-run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run CT tests
@@ -66,7 +66,7 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'quick-checks']
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 30
       - uses: actions/download-artifact@v3
