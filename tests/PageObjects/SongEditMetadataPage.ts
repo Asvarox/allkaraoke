@@ -11,19 +11,15 @@ export class SongEditMetadataPagePO {
     return this.page.getByTestId('previous-button');
   }
 
-  public async previousStep() {
+  public async goBackToSyncLyricsStep() {
     await this.previousButton.click();
-  }
-
-  public get nextButton() {
-    return this.page.getByTestId('next-button');
   }
 
   public get saveButton() {
     return this.page.getByTestId('save-button');
   }
 
-  public async saveChanges() {
+  public async saveAndGoToEditSongsPage() {
     await this.saveButton.click();
   }
 
@@ -51,16 +47,16 @@ export class SongEditMetadataPagePO {
     await this.songGenreInput.fill(name);
   }
 
+  public get songLanguageElement() {
+    return this.page.getByTestId('song-language');
+  }
+
   public get songLanguageInput() {
-    return this.page.locator('[data-test="song-language"] input');
+    return this.songLanguageElement.locator('input');
   }
 
   public async enterSongLanguage(language: string) {
     await this.songLanguageInput.fill(language);
-  }
-
-  public get selectedLanguagePreview() {
-    return this.page.getByTestId('song-language');
   }
 
   public get releaseYearInput() {
@@ -79,23 +75,23 @@ export class SongEditMetadataPagePO {
     await this.bpmSongInput.fill(songBPM);
   }
 
-  public get songTimelineElement() {
+  public get songPreviewElement() {
     return this.page.getByTestId('song-preview');
   }
 
   public get startOfSongPreview() {
-    return this.songTimelineElement.locator('input[data-index="0"]');
+    return this.songPreviewElement.locator('input[data-index="0"]');
   }
 
-  public async shiftStartOfSongPreview(timeSec: string) {
+  public async setStartOfSongPreview(timeSec: string) {
     await this.startOfSongPreview.fill(timeSec);
   }
 
   public get endOfSongPreview() {
-    return this.songTimelineElement.locator('input[data-index="1"]');
+    return this.songPreviewElement.locator('input[data-index="1"]');
   }
 
-  public async shiftEndOfSongPreview(timeSec: string) {
+  public async setEndOfSongPreview(timeSec: string) {
     await this.endOfSongPreview.fill(timeSec);
   }
 
@@ -103,7 +99,7 @@ export class SongEditMetadataPagePO {
     return this.page.locator('[data-test="volume"] input');
   }
 
-  public async changeTheVolumeOfTheSong(finalValue: string) {
+  public async setTheVolumeOfTheSong(finalValue: string) {
     await this.currentSongVolumeLevel.fill(finalValue);
   }
 }

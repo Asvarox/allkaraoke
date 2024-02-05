@@ -12,7 +12,7 @@ interface Props {
 export default function ShiftGap({ current, onChange, player, finalGap }: Props) {
   return (
     <Box sx={{ flex: 1 }}>
-      <Typography variant={'h6'}>Gap shift (final: {msec(finalGap, player)})</Typography>
+      <Typography variant={'h6'}>Lyrics Gap shift (final: {msec(finalGap, player)})</Typography>
       <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
         <ButtonGroup sx={{ flex: 1 }}>
           <Button sx={{ flex: 1, px: 1 }} onClick={() => onChange(current - 1000)} data-test="shift-gap-1s">

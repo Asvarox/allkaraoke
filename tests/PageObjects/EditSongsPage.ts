@@ -33,7 +33,7 @@ export class EditSongsPagePO {
   }
 
   public async downloadSong(songID: string) {
-    // bez search?
+    await this.searchSongs(songID);
     await this.page.locator(`[data-test="download-song"][data-song="${songID}"]`).click();
   }
 
@@ -42,7 +42,7 @@ export class EditSongsPagePO {
   }
 
   public async deleteSong(songID: string) {
-    // bez search?
+    await this.searchSongs(songID);
     await this.deleteSongButton(songID).click();
   }
 

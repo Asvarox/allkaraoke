@@ -51,11 +51,11 @@ test('Remote mic song list', async ({ page, context, browserName }) => {
   await test.step('Song list contains custom songs after connecting', async () => {
     await pages.editSongsPage.goToImportUltrastar();
     await pages.songEditBasicInfoPage.enterSongTXT(txtfile);
-    await pages.songEditBasicInfoPage.nextStep();
+    await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
     await pages.songEditAuthorAndVideoPage.enterVideoURL(videoURL);
-    await pages.songEditAuthorAndVideoPage.nextStep();
-    await pages.songEditSyncLyricsToVideoPage.nextStep();
-    await pages.songEditMetadataPage.saveChanges();
+    await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
+    await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
+    await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
     await pages.editSongsPage.disagreeToShareAddSongs();
     await pages.editSongsPage.expectSongToBeVisible(convertedSongID);
     await remoteMic.getByTestId('menu-song-list').click();

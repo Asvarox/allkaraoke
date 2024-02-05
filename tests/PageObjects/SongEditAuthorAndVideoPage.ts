@@ -11,7 +11,7 @@ export class SongEditAuthorAndVideoPagePO {
     return this.page.getByTestId('previous-button');
   }
 
-  public async previousStep() {
+  public async goBackToBasicInfoStep() {
     await this.previousButton.click();
   }
 
@@ -19,7 +19,7 @@ export class SongEditAuthorAndVideoPagePO {
     return this.page.getByTestId('next-button');
   }
 
-  public async nextStep() {
+  public async goToSyncLyricsStep() {
     await this.nextButton.click();
   }
 

@@ -33,16 +33,16 @@ test('Edit song', async ({ page }) => {
 
   await expect(pages.songEditBasicInfoPage.urlSourceInput).toHaveValue(expectedURL);
 
-  await pages.songEditBasicInfoPage.nextStep();
+  await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
   await expect(pages.songEditAuthorAndVideoPage.authorNameInput).toHaveValue(expectedAuthorName);
   await expect(pages.songEditAuthorAndVideoPage.authorUrlInput).toHaveValue(expectedAuthorURL);
   await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue(expectedVideoURL);
 
-  await pages.songEditAuthorAndVideoPage.nextStep();
+  await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
   await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
 
-  await pages.songEditSyncLyricsToVideoPage.nextStep();
-  await expect(pages.songEditMetadataPage.selectedLanguagePreview).toContainText(expectedSongLanguage);
+  await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
+  await expect(pages.songEditMetadataPage.songLanguageElement).toContainText(expectedSongLanguage);
   await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(expectedReleaseYear);
   await expect(pages.songEditMetadataPage.bpmSongInput).toHaveValue(expectedSongBPM);
 });

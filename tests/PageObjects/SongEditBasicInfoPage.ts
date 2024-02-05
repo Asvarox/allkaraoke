@@ -15,7 +15,7 @@ export class SongEditBasicInfoPagePO {
     return this.page.getByTestId('next-button');
   }
 
-  public async nextStep() {
+  public async goToAuthorAndVideoStep() {
     await this.nextButton.click();
   }
 

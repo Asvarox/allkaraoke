@@ -11,7 +11,7 @@ export class SongEditSyncLyricsToVideoPagePO {
     return this.page.getByTestId('previous-button');
   }
 
-  public async previousStep() {
+  public async goBackToAuthorAndVideoStep() {
     await this.previousButton.click();
   }
 
@@ -19,19 +19,19 @@ export class SongEditSyncLyricsToVideoPagePO {
     return this.page.getByTestId('next-button');
   }
 
-  public async nextStep() {
+  public async goToMetadataStep() {
     await this.nextButton.click();
   }
 
-  public async toggleTimeSeekControls(control: string) {
+  public async timeSeekControls(control: string) {
     await this.page.locator(`[data-test="seek${control}s"]`).click();
   }
 
-  public async togglePlaybackSpeedControls(control: number) {
+  public async setPlaybackSpeedControls(control: number) {
     await this.page.locator(`[data-test="speed-${control}"]`).click();
   }
 
-  public async expectCurrentPlaybackSpeedToBeVisible(control: number) {
+  public async expectCurrentPlaybackSpeedToBe(control: number) {
     await expect(this.page.getByTestId('current-speed')).toHaveText(`${control * 100}%`);
   }
 
@@ -43,8 +43,8 @@ export class SongEditSyncLyricsToVideoPagePO {
     await this.videoGapShiftInput.fill(value);
   }
 
-  public async toggleVideoGapShiftControls(control: string) {
-    await this.page.locator(`[data-test="shift-video-gap${control}s"]`).click();
+  public async changeVideoGapShiftBy(value: string) {
+    await this.page.locator(`[data-test="shift-video-gap${value}s"]`).click();
   }
 
   public get lyricsGapShiftInput() {
@@ -55,8 +55,8 @@ export class SongEditSyncLyricsToVideoPagePO {
     await this.lyricsGapShiftInput.fill(value);
   }
 
-  public async toggleLyricsGapShiftControls(control: string) {
-    await this.page.locator(`[data-test="shift-gap${control}s"]`).click();
+  public async changeLyricsGapShiftBy(value: string) {
+    await this.page.locator(`[data-test="shift-gap${value}s"]`).click();
   }
 
   public get desiredSongEndTimeInput() {
