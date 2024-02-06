@@ -45,7 +45,7 @@ const isSectionOverlapping = (sections: NotesSection[], section: NotesSection) =
 };
 
 export default function mergeTracks(tracks: Song['tracks'], song: Song) {
-  if (tracks.length === 1) {
+  if (!tracks || tracks.length === 1) {
     return tracks[0];
   }
   const notesSections = tracks.map((track) => track.sections.filter(isNotesSection));
