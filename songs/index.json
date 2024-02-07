@@ -11172,30 +11172,6 @@
     "local": false
   },
   {
-    "id": "ed-sheeran-perfect",
-    "title": "Perfect",
-    "artist": "Ed sheeran",
-    "video": "2Vv-BfVoq4g",
-    "language": "English",
-    "bpm": 0,
-    "gap": null,
-    "year": "2017",
-    "artistOrigin": "GB",
-    "lastUpdate": "2023-11-30T17:22:31.068Z",
-    "realBpm": 1,
-    "volume": 0.5,
-    "author": "Ed Sheeran",
-    "sourceUrl": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
-    "tracks": [
-      {
-        "start": null
-      }
-    ],
-    "tracksCount": 1,
-    "search": "edsheeranperfect",
-    "local": false
-  },
-  {
     "id": "ed-sheeran-photograph",
     "title": "Photograph",
     "artist": "Ed Sheeran",
