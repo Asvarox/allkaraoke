@@ -77,7 +77,7 @@ export interface SongTrack {
   changes: number[];
 }
 
-export interface SongPreview extends Omit<Song, 'tracks' | 'unsupportedProps' | 'bar'> {
+export interface SongPreview extends Omit<Song, 'tracks' | 'unsupportedProps' | 'bar' | 'mergedTrack'> {
   id: string;
   tracksCount: number;
   tracks: Array<Pick<SongTrack, 'name'> & { start: number }>;
