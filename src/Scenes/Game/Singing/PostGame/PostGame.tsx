@@ -1,10 +1,10 @@
 import PlayersManager from 'Players/PlayersManager';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import useHighScores from 'Scenes/Game/Singing/PostGame/hooks/useHighScores';
+import LayoutGame from 'Scenes/LayoutGame';
 import { SingSetup, Song } from 'interfaces';
 import { useMemo } from 'react';
 import GameState from '../GameState/GameState';
-import LayoutGame from 'Scenes/LayoutGame';
 
 interface Props {
   width: number;
