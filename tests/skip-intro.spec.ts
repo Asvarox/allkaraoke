@@ -19,7 +19,6 @@ test('skip the intro from the song', async ({ page }) => {
   await pages.inputSelectionPage.selectAdvancedSetup();
   await pages.advancedConnectionPage.saveAndGoToSing();
   await pages.mainMenuPage.goToSingSong();
-
   await expect(pages.songLanguagesPage.getLanguageEntry(expectedLanguage)).toBeVisible();
   await pages.songLanguagesPage.continueAndGoToSongList();
 
