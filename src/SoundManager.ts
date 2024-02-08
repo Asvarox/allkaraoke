@@ -1,6 +1,7 @@
 import christmasBackgroundMusicSound from 'assets/2020-12-16_-_Christmas_Rock_-_www.FesliyanStudios.com_Steve_Oxen.mp3';
 import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
 import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.mp3';
+import waitForReadinessSound from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
 import wooshSound from 'assets/60013__qubodup__whoosh.mp3';
 import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
 import menuBackSound from 'assets/menu_back.wav';
@@ -51,52 +52,43 @@ class Sound {
   };
 }
 
-const menuNavigate = new Sound({
+export const menuNavigate = new Sound({
   src: menuNavigateSound,
 });
 
-const menuEnter = new Sound({
+export const menuEnter = new Sound({
   src: menuEnterSound,
 });
 
-const menuBack = new Sound({
+export const menuBack = new Sound({
   src: menuBackSound,
 });
 
-const waitFinished = new Sound({
+export const waitFinished = new Sound({
   src: waitFinishedSound,
   preload: true,
 });
 
-const woosh = new Sound({
+export const woosh = new Sound({
   src: wooshSound,
   preload: true,
   volume: 0.5,
 });
 
-const backgroundMusic = new Sound({
+export const backgroundMusic = new Sound({
   src: backgroundMusicSound,
   volume: 0.3,
   loop: true,
 });
-const classicBackgroundMusic = new Sound({
+export const classicBackgroundMusic = new Sound({
   src: classicBackgroundMusicSound,
   volume: 0.4,
   loop: true,
 });
-const christmasBackgroundMusic = new Sound({
+export const christmasBackgroundMusic = new Sound({
   src: christmasBackgroundMusicSound,
   volume: 0.25,
   loop: true,
 });
 
-export {
-  backgroundMusic,
-  christmasBackgroundMusic,
-  classicBackgroundMusic,
-  menuBack,
-  menuEnter,
-  menuNavigate,
-  waitFinished,
-  woosh,
-};
+export const waitForReadinessMusic = new Sound({ src: waitForReadinessSound, volume: 0.8 });

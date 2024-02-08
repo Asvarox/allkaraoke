@@ -147,20 +147,20 @@ class SongsService {
     return this.reloadIndex();
   };
 
-  private getLocal = async (songId: string) =>
-    storage.getItem<Song>(decodeURIComponent(songId)).then((song) => {
-      if (song) {
-        return {
-          ...song,
-          mergedTrack: mergeTracks(song.tracks, song),
-          tracks: song.tracks.map((track) => ({
-            ...track,
-            changes: generatePlayerChangesForTrack(track, song),
-          })),
-        };
-      }
-      return null;
-    });
+  private getLocal = async (songId: string) => {
+    const song = await storage.getItem<Song>(decodeURIComponent(songId));
+    if (song && !!song.tracks) {
+      return {
+        ...song,
+        mergedTrack: mergeTracks(song.tracks, song),
+        tracks: song.tracks.map((track) => ({
+          ...track,
+          changes: generatePlayerChangesForTrack(track, song),
+        })),
+      };
+    }
+    return null;
+  };
 
   public getLocalIndex = async () => {
     const allSongs = await Promise.all((await this.getKeys()).map(this.getLocal));

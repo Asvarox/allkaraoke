@@ -22,6 +22,35 @@ const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
 if (isSentryEnabled) {
   init({
     dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
+    ignoreErrors: [
+      'ResizeObserver loop limit exceeded',
+      'ResizeObserver loop completed with undelivered notifications.',
+      'NotAllowedError: Document is not focused.',
+      'Error: Socket was destroyed!',
+      /TypeError: Failed to fetch/,
+      // https://docs.sentry.io/platforms/javascript/configuration/filtering/#using--1
+      // Random plugins/extensions
+      'top.GLOBALS',
+      // See: http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html
+      'originalCreateNotification',
+      'canvas.contentDocument',
+      'MyApp_RemoveAllHighlights',
+      'http://tt.epicplay.com',
+      "Can't find variable: ZiteReader",
+      'jigsaw is not defined',
+      'ComboSearch is not defined',
+      'http://loading.retry.widdit.com/',
+      'atomicFindClose',
+      // Facebook borked
+      'fb_xd_fragment',
+      // ISP "optimizing" proxy - `Cache-Control: no-transform` seems to
+      // reduce this. (thanks @acdha)
+      // See http://stackoverflow.com/questions/4113268
+      'bmi_SafeAddOnload',
+      'EBCallBackMessageReceived',
+      // See http://toolbar.conduit.com/Developer/HtmlAndGadget/Methods/JSInjection.aspx
+      'conduitPage',
+    ],
 
     // Set tracesSampleRate to 1.0 to capture 100%
     // of transactions for performance monitoring.
@@ -49,7 +78,7 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
       }
     },
   });
-  // posthog.featureFlags.override(['websockets_remote_mics']);
+  posthog.featureFlags.override({ websockets_remote_mics: false });
 }
 
 // https://github.com/emotion-js/emotion/issues/2404

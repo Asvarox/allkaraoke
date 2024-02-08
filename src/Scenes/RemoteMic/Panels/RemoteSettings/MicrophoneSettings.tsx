@@ -32,6 +32,7 @@ function MicrophoneSettings() {
     setIsLoading(true);
     RemoteMicClient.setMicrophoneInputLag(newValue)
       .then(({ value }) => setCurrentValue(value))
+      .catch((e) => console.warn(e))
       .finally(() => setIsLoading(false));
   };
 
