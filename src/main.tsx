@@ -78,7 +78,7 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
       }
     },
   });
-  posthog.featureFlags.override({ websockets_remote_mics: false });
+  // posthog.featureFlags.override({ websockets_remote_mics: false });
 }
 
 // https://github.com/emotion-js/emotion/issues/2404
