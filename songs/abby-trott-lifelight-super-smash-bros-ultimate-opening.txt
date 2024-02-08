@@ -1,0 +1,312 @@
+#ARTIST:Abby Trott
+#TITLE:Lifelight (Super Smash Bros Ultimate Opening)
+#CREATOR:mouton5000
+#BPM:355,88
+#YEAR:2018
+#VIDEO:v=eP165tiRd24
+#GENRE:Video Game
+#LANGUAGE:English
+#GAP:2848,423063954142
+#ALLKARAOKE_ID:abby-trott-lifelight-super-smash-bros-ultimate-opening
+#ALLKARAOKE_LASTUPDATE:2024-02-08T06:16:42.032Z
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_VOLUME:0,99
+#MP3:Abby Trott - Lifelight (Super Smash Bros Ultimate Opening).mp3
+: 24 9 2 Co
+: 34 7 4 lours 
+: 42 9 5 weave 
+: 52 4 2 in
+: 57 4 5 to 
+: 62 4 12 a 
+: 67 9 11 spi
+: 77 6 9 re 
+: 84 5 11 of 
+: 90 16 7 flame 
+- 106
+: 112 8 10 Dis
+: 121 4 9 tant 
+: 126 13 7 sparks 
+: 140 4 5 call 
+: 145 4 7 to 
+: 150 4 9 a 
+: 155 6 7 past 
+: 162 6 5 still 
+: 169 6 7 un
+: 176 18 4 named 
+- 194
+: 198 8 2 Bear 
+: 207 5 4 this 
+: 213 13 5 torch 
+: 227 3 2 a
+: 231 4 5 gainst 
+: 236 3 12 the 
+: 240 8 11 cold 
+: 249 8 9 of 
+: 258 4 11 the 
+: 263 13 14 night 
+- 276
+: 284 6 10 Search 
+: 291 8 9 your 
+: 300 10 7 soul 
+: 311 4 5 and 
+: 316 5 7 re
+: 322 4 9 a
+: 327 7 7 wa
+: 335 7 5 ken 
+: 343 5 7 the 
+: 349 6 4 un
+: 356 7 7 dy
+: 364 7 12 ing 
+: 372 81 14 light 
+- 453 520
+- 520
+: 544 8 5 On 
+: 553 9 7 that 
+: 563 16 4 day 
+: 581 2 2 when 
+: 584 2 4 the 
+: 587 7 5 sky 
+: 595 8 7 fell 
+: 604 3 9 a
+: 608 18 7 way 
+- 626
+: 631 9 5 Our 
+: 641 9 7 world 
+: 651 8 4 came 
+: 660 6 2 to 
+: 667 4 0 an 
+: 672 38 2 end 
+- 710
+: 717 9 5 In 
+: 727 10 7 our 
+: 738 15 4 eyes 
+: 754 2 2 did 
+: 757 2 4 a 
+: 760 7 5 fa
+: 768 4 7 ding 
+: 773 8 9 sun
+: 782 6 7 rise 
+: 789 5 4 in 
+: 795 4 0 the 
+: 800 17 2 dark? 
+- 817
+: 824 8 2 Glim
+: 833 6 4 me
+: 840 4 5 ring 
+: 845 23 7 sha
+: 869 14 9 dows 
+- 883
+: 887 10 5 Si
+: 898 9 7 lence 
+: 908 14 4 grows 
+: 926 1 2 in 
+: 928 1 4 the 
+: 930 9 5 spa
+: 940 6 7 ces 
+: 947 4 9 be
+: 952 17 7 tween 
+- 969
+: 973 10 5 Stret
+: 985 12 7 ching 
+: 998 6 4 out 
+: 1005 5 2 be
+: 1011 5 0 yond 
+: 1017 36 2 time 
+- 1053
+: 1061 9 5 Ri
+: 1071 10 7 sing 
+: 1083 13 4 up 
+: 1099 2 2 as 
+: 1102 1 4 a 
+: 1104 7 5 cho
+: 1112 8 7 rus 
+: 1121 3 9 of 
+: 1125 8 7 souls 
+: 1134 8 4 finds 
+: 1143 3 0 a 
+: 1147 18 2 voice 
+- 1165
+: 1169 7 2 Fli
+: 1177 7 4 cke
+: 1185 4 5 ring 
+: 1190 9 7 through 
+: 1200 11 12 the 
+: 1212 18 9 void 
+- 1230
+: 1234 6 7 These 
+: 1241 8 7 lit
+: 1250 2 7 tle 
+: 1253 22 7 sparks 
+: 1276 9 5 cling 
+: 1286 4 3 on
+: 1291 7 5 to 
+: 1299 18 0 life 
+- 1317
+: 1321 5 9 E
+: 1327 8 9 very
+: 1336 5 9 one 
+: 1342 9 9 caught 
+: 1352 5 5 in 
+: 1358 3 2 the 
+: 1362 10 0 strug
+: 1373 14 -2 gle 
+- 1387
+: 1391 3 -2 And 
+: 1395 6 -3 then 
+: 1402 3 -2 the 
+: 1406 16 -5 storms 
+: 1423 3 7 of 
+: 1427 11 7 change 
+: 1439 3 2 they 
+: 1443 16 1 fan 
+: 1460 5 1 the 
+: 1466 5 4 flames 
+- 1471
+: 1475 7 10 Scat
+: 1483 4 9 te
+: 1488 4 7 ring 
+: 1493 18 7 a
+: 1512 7 7 shes 
+: 1520 4 6 to 
+: 1525 4 7 the 
+: 1530 43 9 wind 
+- 1573
+: 1579 7 2 E
+: 1587 5 4 very 
+: 1593 11 5 soul 
+: 1605 5 2 con
+: 1611 4 5 tains 
+: 1616 5 12 a 
+: 1622 8 11 whis
+: 1631 7 9 per 
+: 1639 4 11 of 
+: 1644 16 7 light 
+- 1660
+: 1664 8 10 Glea
+: 1673 5 9 ming 
+: 1679 11 7 fain
+: 1691 7 5 tly 
+: 1699 4 7 as 
+: 1704 4 9 it 
+: 1709 6 7 dwin
+: 1716 7 5 dles 
+: 1724 4 7 from 
+: 1729 17 4 sight 
+- 1746
+: 1752 9 2 No 
+: 1762 5 4 es
+: 1768 11 5 cape 
+: 1780 4 2 no 
+: 1785 4 5 grea
+: 1790 4 12 ter 
+: 1795 7 11 fate 
+: 1803 7 9 to 
+: 1811 4 11 be 
+: 1816 20 14 made 
+- 1836
+: 1840 5 10 In 
+: 1846 9 9 the 
+: 1856 9 7 end 
+: 1866 3 5 the 
+: 1870 5 7 chains 
+: 1876 3 9 of 
+: 1880 9 7 time 
+: 1890 7 5 will 
+: 1898 3 7 not 
+: 1902 16 4 break 
+- 1918
+: 1923 8 2 Co
+: 1932 6 4 lours 
+: 1939 12 5 weave 
+: 1952 4 2 in
+: 1957 5 5 to 
+: 1963 3 12 a 
+: 1967 8 11 spi
+: 1976 6 9 re 
+: 1983 5 11 of 
+: 1989 16 7 flame 
+- 2005
+: 2009 7 10 Dis
+: 2017 5 9 tant 
+: 2023 14 7 sparks 
+: 2038 4 5 call 
+: 2043 4 7 to 
+: 2048 4 9 a 
+: 2053 6 7 past 
+: 2060 10 5 still 
+: 2071 3 7 un
+: 2075 16 4 named 
+- 2091
+: 2097 7 2 Bear 
+: 2105 6 4 this 
+: 2112 11 5 torch 
+: 2124 5 2 a
+: 2130 4 5 gainst 
+: 2135 4 12 the 
+: 2140 8 11 cold 
+: 2149 5 9 of 
+: 2155 5 11 the 
+* 2161 17 14 night 
+- 2178
+: 2182 9 10 Search 
+: 2192 4 9 your 
+: 2197 12 7 soul 
+: 2210 4 5 and 
+: 2215 5 7 re
+: 2221 4 9 a
+: 2226 6 7 wa
+: 2233 8 5 ken 
+: 2242 4 7 the 
+: 2247 7 4 un
+: 2255 7 7 dy
+: 2263 5 12 ing 
+* 2269 81 14 light 
+- 2350 2417
+- 2417
+: 2441 8 3 Co
+: 2450 7 5 lours 
+: 2458 11 6 weave 
+: 2470 4 3 in
+: 2475 4 6 to 
+: 2480 4 13 a 
+: 2485 9 12 spi
+: 2495 6 10 re 
+: 2502 4 12 of 
+: 2507 16 8 flame 
+- 2523
+: 2528 6 11 Dis
+: 2535 6 10 tant 
+: 2542 11 8 sparks 
+: 2554 5 6 call 
+: 2560 6 8 to 
+: 2567 4 10 a 
+: 2572 6 8 past 
+: 2579 6 6 still 
+: 2586 4 8 un
+: 2591 14 5 named 
+- 2605
+: 2615 7 3 Bear 
+: 2623 6 5 this 
+: 2630 11 6 torch 
+: 2642 5 3 a
+: 2648 4 6 gainst 
+: 2653 4 13 the 
+: 2658 7 12 cold 
+: 2666 7 10 of 
+: 2674 3 12 the 
+* 2678 17 15 night 
+- 2695
+: 2700 6 11 Light 
+: 2707 6 10 will 
+: 2714 12 8 guide 
+: 2727 7 6 you 
+: 2735 5 8 on 
+: 2741 3 10 your 
+: 2745 5 8 way 
+: 2751 8 6 to 
+: 2760 4 8 the 
+: 2765 7 5 ul
+: 2773 6 8 ti
+: 2780 5 13 mate 
+* 2786 84 15 fight 
+E

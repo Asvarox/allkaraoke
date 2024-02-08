@@ -1,0 +1,326 @@
+#ARTIST:Tate McRae
+#TITLE:greedy
+#BPM:295,89
+#YEAR:2023
+#VIDEO:v=To4SWGZkEPk
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:8302,109702930144
+#ALLKARAOKE_ID:tate-mcrae-greedy
+#ALLKARAOKE_LASTUPDATE:2024-02-08T06:16:42.850Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:111
+#ALLKARAOKE_VOLUME:0,54
+#MP3:Tate McRae - greedy.mp3
+#COVER:Tate McRae - greedy [CO].jpg
+#BACKGROUND:Tate McRae - greedy [BG].jpg
+: 20 4 1 He 
+: 24 7 -1 said, 
+: 31 5 -1 "Are 
+: 36 4 -1 you 
+: 40 6 -1 se
+: 46 6 -3 ri
+: 52 4 -6 ous? 
+: 56 7 -1 I've 
+: 63 5 -1 tried, 
+: 68 6 -1 but 
+: 74 4 -1 I 
+: 78 6 -1 can't 
+: 84 4 -1 fi-
+: 88 6 -3 gure 
+G 94 10 -6 out
+- 104
+G 104 4 -1 I've 
+G 108 6 1 been 
+G 114 8 -1 next 
+G 122 2 -1 to 
+G 124 4 -1 you 
+G 128 8 -1 all 
+G 136 7 -1 night 
+G 143 5 1 and 
+G 148 4 -1 still 
+G 152 4 -1 don't 
+G 156 4 -1 know
+: 160 4 -1 ~ 
+: 164 8 -1 what
+: 172 5 -3 you're 
+: 177 7 -6 about
+- 184
+: 188 4 -1 You 
+: 192 6 1 keep 
+: 198 6 -1 ta- 
+: 204 12 -1 (ta-ta-) 
+: 216 4 -1 tal
+: 220 4 -1 kin', 
+: 228 4 1 but 
+: 232 4 -1 not 
+: 236 4 -1 much 
+: 240 8 -1 co
+: 248 4 -3 min'
+: 252 4 -3 out 
+: 256 8 -4 your 
+: 264 6 -6 mouth
+- 270
+: 276 4 -1 Can't 
+: 280 4 1 you 
+: 284 8 -1 tell 
+: 292 4 -1 that 
+: 296 4 1 I 
+: 300 4 -1 want 
+: 304 8 -1 you?"
+: 312 16 -3 I say, yeah
+- 328
+: 328 4 11 I
+: 332 6 9 would 
+: 338 6 11 want 
+: 344 6 11 my
+: 350 18 6 self 
+: 368 3 6 Baby,
+: 371 5 14 please 
+: 376 8 14 be
+: 384 4 14 lieve 
+: 388 8 13 me
+- 396
+: 416 4 11 I'll
+: 420 4 9 put 
+: 424 7 11 you 
+: 431 5 11 through 
+: 436 12 6 hell 
+: 452 4 6 Just 
+: 456 1 6 to
+: 457 7 6 know 
+: 464 4 11 me, 
+: 468 6 11 yeah, 
+: 474 5 11 yeah
+- 479 480
+- 480
+: 500 1 11 So
+: 501 7 11 sure 
+: 508 8 11 of 
+: 516 9 6 your
+: 525 4 6 self 
+: 536 4 14 Ba
+: 540 2 14 by,
+: 542 4 14 don't 
+: 546 6 14 get 
+: 552 6 14 gree
+: 558 10 13 dy
+- 568
+: 584 4 11 That
+: 588 4 9 shit 
+: 592 7 11 won't 
+: 599 9 11 end
+: 608 8 9 well
+: 616 8 6 O 
+: 624 2 9 oh
+: 626 2 16 ~
+: 628 8 13 ~, 
+: 636 8 11 end 
+: 644 20 9 well
+- 664 724
+- 724
+: 744 4 1 I 
+: 748 7 -1 see 
+: 755 5 -1 you 
+: 760 4 -1 eyein' 
+: 764 6 -1 me 
+: 770 6 -3 down, 
+: 776 4 -6 but 
+: 780 7 -1 you'll 
+: 787 11 -1 never
+: 798 4 -1 know 
+: 802 6 -1 much 
+: 808 4 -1 past 
+: 813 1 -3 my 
+: 814 6 -3 name
+- 820
+: 824 4 -6 Or 
+: 828 4 -1 how 
+: 832 6 1 I'm 
+: 838 8 -1 run
+: 846 2 -1 nin' 
+: 848 4 -1 this 
+: 852 8 -1 room 
+: 860 7 -1 a
+: 867 5 1 round 
+: 872 4 -1 and 
+: 876 8 -1 that
+: 884 4 -1 I'm 
+: 888 8 -1 still 
+: 896 1 -2 half 
+: 897 5 -3 your 
+: 902 7 -6 age
+- 909
+: 916 4 -1 Yeah, 
+: 920 6 1 you're 
+: 926 6 -1 loo- 
+: 932 12 -1 (loo-loo-) 
+: 944 4 -1 loo
+: 948 4 -1 kin' 
+: 952 4 1 at 
+: 960 4 -1 me 
+: 964 4 -1 like
+: 968 4 -3 I'm 
+: 972 4 -3 some 
+: 976 8 -3 sweet 
+: 984 8 -4 es
+* 992 8 -6 cape
+- 1000
+: 1000 4 -1 Ob
+: 1004 12 1 vious 
+: 1016 4 -1 that 
+: 1020 4 -1 you
+: 1024 4 -1 want 
+: 1028 12 -1 me, 
+: 1040 4 -1 but 
+: 1044 4 -1 I
+: 1048 5 -1 said
+- 1053
+: 1053 7 11 I 
+: 1060 6 9 would 
+: 1066 6 11 want 
+: 1073 18 6 myself 
+: 1092 3 6 Ba-
+: 1095 3 14 by, 
+: 1098 6 14 please 
+: 1104 4 14 be
+: 1108 6 14 lieve 
+: 1114 10 14 me
+- 1124
+: 1140 4 11 I'll 
+: 1144 4 9 put 
+: 1148 4 11 you 
+: 1152 7 13 through 
+: 1159 13 9 hell 
+: 1176 5 11 Just
+: 1202 7 11 ~
+: 1181 1 11 to 
+: 1182 1 11 know 
+: 1183 7 11 me, 
+: 1192 4 11 yeah, 
+: 1196 6 11 yeah
+- 1202 1204
+- 1204
+: 1224 4 11 So 
+: 1228 4 11 sure 
+: 1232 7 11 of 
+: 1239 8 11 your
+: 1247 9 6 self 
+: 1260 4 6 Ba-
+: 1264 2 14 by, 
+: 1266 4 14 don't 
+: 1270 6 14 get 
+* 1276 6 14 gree
+* 1282 10 13 dy
+- 1292
+: 1308 4 11 That, 
+: 1312 4 11 shit 
+: 1316 4 14 won't
+: 1323 9 11 end 
+: 1332 8 9 well, 
+* 1340 20 18 Oh, 
+: 1360 7 6 end 
+: 1368 24 9 well
+- 1392 1408
+- 1408
+: 1428 4 1 He 
+: 1432 7 -1 said, 
+: 1439 5 -1 "I'm 
+: 1444 4 -1 just 
+: 1448 6 -1 cu
+: 1454 6 -3 rious,
+- 1460
+: 1460 4 -6 is 
+: 1464 7 -1 this 
+: 1471 5 -1 for
+: 1482 4 -1 real 
+: 1486 6 -1 or 
+: 1492 4 -1 just 
+: 1512 1 6 an 
+: 1496 6 -3 act?
+- 1502
+: 1502 10 -6 Can't 
+: 1512 4 -1 tell 
+: 1516 6 1 if 
+: 1522 8 -1 you 
+: 1530 2 -1 love 
+: 1532 4 -1 or 
+: 1536 8 -1 hate 
+: 1544 7 -1 me,
+: 1556 4 -1 never 
+: 1560 8 -1 met 
+: 1568 12 -1 someone 
+: 1580 4 -1 like 
+: 1584 8 -1 that
+- 1592
+: 1596 4 -3 Drive 
+: 1600 4 -3 me 
+: 1605 7 -6 so 
+: 1612 4 -1 (so, 
+: 1616 6 1 so) 
+: 1622 6 -1 cra
+: 1628 8 -1 zy, 
+: 1636 4 -1 did 
+: 1640 4 -1 you 
+: 1644 8 1 know
+: 1652 4 -1 you 
+: 1656 8 -1 got 
+: 1664 4 -3 that 
+: 1668 1 -3 ef
+: 1669 11 -3 fect?"
+- 1680
+F 1680 6 -6 I 
+F 1686 1 -6 said, 
+F 1700 8 -6 "Lemme 
+F 1708 7 -6 check",
+F 1723 1 5 yeah
+- 1724
+: 1736 7 11 I 
+: 1743 6 9 would 
+: 1749 6 11 want 
+: 1756 18 6 myself 
+* 1775 3 6 Ba-
+* 1778 3 14 by, 
+* 1781 6 14 please 
+* 1787 4 14 be
+* 1791 6 14 lieve 
+* 1797 10 14 me
+- 1807
+: 1824 4 11 I'll 
+: 1828 4 9 put 
+: 1832 4 11 you 
+: 1836 7 13 through 
+: 1843 13 9 hell 
+: 1860 5 11 Just
+: 1865 1 11 to 
+: 1866 1 11 know 
+: 1868 1 11 me, 
+: 1872 7 11 yeah, 
+: 1881 11 11 yeah
+- 1892
+: 1908 1 11 So 
+: 1909 4 11 sure 
+: 1913 4 11 of 
+: 1917 7 11 your
+: 1924 16 11 self 
+: 1944 4 6 Ba-
+: 1948 4 6 by, 
+: 1953 2 14 don't 
+: 1955 4 14 get 
+: 1959 6 14 gree
+: 1965 11 14 dy
+- 1976
+: 1992 4 11 That 
+: 1996 4 11 shit 
+: 2000 4 9 won't
+: 2004 9 11 end 
+: 2013 13 9 well 
+: 2028 20 18 Ooh, 
+: 2049 7 6 end
+: 2056 7 6 well
+- 2063 2080
+- 2080
+F 2100 24 6 I would want
+F 2124 34 6 myself 
+F 2180 220 6 (repeat)
+E
