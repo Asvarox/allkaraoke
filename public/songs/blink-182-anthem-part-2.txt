@@ -1,0 +1,277 @@
+#ARTIST:Blink 182
+#TITLE:Anthem Part 2
+#BPM:206,28
+#YEAR:2001
+#PREVIEWSTART:93
+#VIDEO:v=s_hzK4DkNSI
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:45581,96625945317
+#ALLKARAOKE_ID:blink-182-anthem-part-2
+#ALLKARAOKE_LASTUPDATE:2024-02-08T06:16:42.291Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_PREVIEWEND:110
+#ALLKARAOKE_VOLUME:0,85
+#MP3:Blink 182 - Anthem Part 2.mp3
+#COVER:Blink 182 - Anthem Part 2.jpg
+: 14 7 4 Ev
+: 22 7 2 ery
+: 30 7 4 thing 
+: 38 7 2 has 
+: 46 3 4 fa
+: 50 3 4 llen 
+: 54 7 2 to 
+: 62 7 0 pie
+: 70 6 0 ces
+- 76
+: 79 6 4 earth 
+: 86 7 2 is 
+: 94 7 4 dy
+: 102 7 2 ing, 
+: 110 7 4 help 
+: 118 7 2 me 
+: 126 7 0 Je
+: 134 6 0 sus
+- 140
+: 144 5 7 we 
+: 150 7 5 need 
+: 158 7 4 guid
+: 166 7 0 ance, 
+: 174 7 5 we've 
+: 182 7 4 been 
+: 190 7 0 mis
+: 198 6 2 led
+- 204
+: 207 6 7 young 
+: 214 7 5 and 
+: 222 7 4 hos
+: 230 7 0 tile 
+* 238 7 5 but 
+* 246 7 4 not 
+* 254 7 0 stu
+* 262 8 0 pid
+- 270 321
+- 321
+: 335 6 4 Cor
+: 342 7 2 porate 
+: 350 7 4 lea
+: 358 7 2 ders, 
+: 366 7 4 po
+: 374 7 2 li
+: 382 7 0 ti
+: 390 6 0 cians
+- 396
+: 399 6 4 kids 
+: 406 7 2 can't 
+: 414 7 4 vote, 
+: 422 7 2 a
+: 430 7 4 dults 
+: 438 7 2 e
+: 446 7 0 lect 
+: 454 6 0 them
+- 460
+: 463 6 7 laws 
+: 470 7 5 that 
+: 478 7 4 rule 
+: 486 7 0 the 
+: 494 7 5 school 
+: 502 7 4 and 
+: 510 7 0 work
+: 518 6 2 place
+- 524
+: 527 6 7 signs 
+: 534 7 5 that 
+: 542 7 4 cau
+: 550 6 0 tion 
+: 557 8 5 six
+: 566 7 4 teen's 
+: 574 6 0 un
+: 581 9 0 safe
+- 590 634
+- 634
+* 648 1 7 We 
+* 650 1 7 re
+* 652 1 5 ally 
+* 654 15 4 need 
+* 670 12 0 to 
+: 686 7 4 see 
+: 694 7 0 this 
+: 702 7 2 through
+- 709
+: 712 1 7 we 
+: 714 1 7 nev
+: 716 1 5 er 
+: 718 15 4 want
+: 734 11 0 ed 
+: 746 3 0 to 
+: 750 7 4 be 
+: 758 7 0 a
+: 766 7 2 bused
+- 773
+: 776 1 7 we'll 
+: 778 1 7 nev
+: 780 1 5 er 
+: 782 15 4 give 
+: 798 12 0 up, 
+: 814 7 0 it's 
+: 822 7 7 no 
+: 830 8 2 use
+- 838
+: 842 3 2 if 
+: 846 5 4 we're 
+: 852 5 0 fucked 
+: 858 3 0 up, 
+: 862 5 5 you're 
+: 868 5 0 to 
+: 874 8 0 blame
+- 882 992
+- 992
+: 1006 7 4 Let 
+: 1014 7 2 this 
+: 1022 7 4 train
+: 1030 7 2 wreck 
+: 1038 7 4 burn 
+: 1046 7 2 more 
+: 1054 7 0 slow
+: 1062 6 0 ly
+- 1068
+: 1071 6 4 kids 
+: 1078 7 2 are 
+: 1086 7 4 vic
+: 1094 7 2 tims 
+: 1102 7 4 in 
+: 1110 6 2 this 
+: 1118 7 0 sto
+: 1126 5 0 ry
+- 1131
+: 1134 7 7 drown 
+: 1142 7 5 the 
+: 1150 7 4 youth 
+: 1158 7 0 with 
+: 1166 7 5 use
+: 1174 7 4 less 
+: 1182 7 0 warn
+: 1190 6 2 ings
+- 1196
+: 1199 6 7 teen
+: 1206 7 5 age 
+: 1214 7 4 rules, 
+: 1222 7 0 they're 
+: 1230 7 5 fucked 
+: 1238 7 4 and 
+: 1246 7 0 bor
+: 1254 8 0 ing
+- 1262 1306
+- 1306
+: 1320 1 7 We 
+: 1322 1 7 re
+: 1324 1 5 ally 
+: 1326 15 4 need 
+: 1342 12 0 to 
+: 1358 7 4 see 
+: 1366 7 0 this 
+: 1374 7 2 through
+- 1381
+: 1384 1 7 we 
+: 1386 1 7 nev
+: 1388 1 5 er 
+: 1390 15 4 want
+: 1406 11 0 ed 
+* 1418 3 0 to 
+* 1422 7 4 be 
+* 1430 7 0 a
+* 1438 7 2 bused
+- 1445
+: 1448 1 7 we'll 
+: 1450 1 7 nev
+: 1452 1 5 er 
+: 1454 15 4 give 
+: 1470 12 0 up, 
+: 1486 7 0 it's 
+: 1494 7 7 no 
+: 1502 8 2 use
+- 1510
+: 1514 3 2 if 
+: 1518 5 4 we're 
+: 1524 5 0 fucked 
+: 1530 3 0 up, 
+: 1534 5 5 you're 
+: 1540 5 0 to 
+: 1546 8 0 blame
+- 1554 1664
+- 1664
+: 1678 7 4 Ev
+: 1686 7 2 ery
+: 1694 7 4 thing 
+: 1702 7 2 has 
+: 1710 3 4 fa
+: 1714 3 4 llen 
+: 1718 7 2 to 
+: 1726 7 0 pie
+: 1734 6 0 ces
+- 1740
+: 1743 6 4 ev
+: 1750 7 2 ery
+: 1758 7 4 thing 
+: 1766 7 2 has 
+: 1774 3 4 fa
+: 1778 3 4 llen 
+: 1782 7 2 to 
+: 1790 7 0 pie
+: 1798 6 0 ces
+- 1804
+: 1807 6 4 ev
+: 1814 7 2 ery
+: 1822 7 4 thing 
+: 1830 7 2 has 
+: 1838 3 4 fa
+: 1842 3 4 llen 
+: 1846 7 2 to 
+: 1854 7 0 pie
+: 1862 6 0 ces
+- 1868
+: 1871 6 4 ev
+: 1878 7 2 ery
+: 1886 7 4 thing 
+: 1894 7 2 has 
+: 1902 3 4 fa
+: 1906 3 4 llen 
+: 1910 15 0 to...
+- 1925
+: 1928 1 7 We 
+: 1930 1 7 re
+: 1932 1 5 ally 
+: 1934 15 4 need 
+: 1950 12 0 to 
+: 1966 7 4 see 
+: 1974 7 0 this 
+: 1982 7 2 through
+- 1989
+: 1992 1 7 we 
+: 1994 1 7 nev
+: 1996 1 5 er 
+: 1998 15 4 want
+: 2014 11 0 ed 
+: 2026 3 0 to 
+: 2030 7 4 be 
+: 2038 7 0 a
+: 2046 7 2 bused
+- 2053
+: 2056 1 7 we'll 
+: 2058 1 7 nev
+: 2060 1 5 er 
+: 2062 15 4 give 
+: 2078 12 0 up, 
+: 2094 7 0 it's 
+: 2102 7 7 no 
+: 2110 8 2 use
+- 2118
+* 2122 3 2 if 
+* 2126 5 4 we're 
+* 2132 5 0 fucked 
+* 2138 3 0 up, 
+* 2142 7 5 you're 
+* 2150 7 7 to 
+* 2158 8 7 blame
+E

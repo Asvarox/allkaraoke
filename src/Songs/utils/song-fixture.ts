@@ -23,8 +23,13 @@ export const mulitrack: Song = {
   volume: undefined,
   realBpm: 100,
   unsupportedProps: ['#SOMEPROP: some value', '#SOMEPROP2: some value2'],
+  mergedTrack: {
+    changes: [],
+    sections: [],
+  },
   tracks: [
     {
+      changes: [],
       sections: [
         {
           type: 'notes',
@@ -176,6 +181,7 @@ export const mulitrack: Song = {
           ],
         },
       ],
+      changes: [],
     },
   ],
 };

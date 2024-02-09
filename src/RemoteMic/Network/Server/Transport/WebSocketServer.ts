@@ -60,7 +60,10 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
 type callback = (data: any) => void;
 
 class SenderWrapper implements SenderInterface {
-  constructor(public peer: string, private socket: WebSocket) {}
+  constructor(
+    public peer: string,
+    private socket: WebSocket,
+  ) {}
 
   public send = (payload: NetworkMessages) => {
     const data = { t: 'forward', recipients: [this.peer], payload };

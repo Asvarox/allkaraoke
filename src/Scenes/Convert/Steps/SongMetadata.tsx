@@ -74,7 +74,7 @@ export default function SongMetadata(props: Props) {
   const isRealBpmInvalid = +(props.data?.realBpm ?? 0) > 200;
 
   return (
-    <Grid container spacing={2} sx={{ mt: 6 }}>
+    <Grid container spacing={2} data-test="song-metadata" sx={{ mt: 6 }}>
       <Grid item xs={6}>
         <TextField
           value={props.data.artist}

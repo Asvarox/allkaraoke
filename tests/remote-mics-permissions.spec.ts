@@ -44,28 +44,28 @@ test('Should properly manage remote mics permission settings', async ({ page, co
     await pages.settingsPage.expectDefaultPermissionToBeRead();
     await pages.settingsPage.expectConnectedDevicePermissionToBeRead();
 
-    await expect(remoteMic.getByTestId('no-permissions-message')).toBeVisible();
-    await expect(remoteMic.getByTestId('remote-keyboard')).not.toBeVisible();
-    await expect(remoteMic.getByTestId('change-player')).not.toBeVisible();
-    await remoteMic.getByTestId('menu-settings').click();
-    await expect(remoteMic.getByTestId('manage-game')).not.toBeVisible();
+    await expect(remoteMic._page.getByTestId('no-permissions-message')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('remote-keyboard')).not.toBeVisible();
+    await expect(remoteMic._page.getByTestId('change-player')).not.toBeVisible();
+    await remoteMic._page.getByTestId('menu-settings').click();
+    await expect(remoteMic._page.getByTestId('manage-game')).not.toBeVisible();
   });
 
   await test.step('Write access allows for keyboard and change player', async () => {
     await pages.settingsPage.toggleConnectedDevicePermission();
     await pages.settingsPage.expectConnectedDevicePermissionToBeWrite();
 
-    await expect(remoteMic.getByTestId('manage-game')).toBeVisible();
-    await remoteMic.getByTestId('menu-microphone').click();
-    await expect(remoteMic.getByTestId('remote-keyboard')).toBeVisible();
-    await expect(remoteMic.getByTestId('change-player')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('manage-game')).toBeVisible();
+    await remoteMic._page.getByTestId('menu-microphone').click();
+    await expect(remoteMic._page.getByTestId('remote-keyboard')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('change-player')).toBeVisible();
   });
 
   await test.step('Selected permission is persisted for the remote mic', async () => {
-    await remoteMic.reload();
-    await connectRemoteMic(remoteMic);
+    await remoteMic._page.reload();
+    await connectRemoteMic(remoteMic._page);
 
-    await expect(remoteMic.getByTestId('remote-keyboard')).toBeVisible();
-    await expect(remoteMic.getByTestId('change-player')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('remote-keyboard')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('change-player')).toBeVisible();
   });
 });

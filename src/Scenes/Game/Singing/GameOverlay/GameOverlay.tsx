@@ -24,7 +24,6 @@ interface Props {
   playerSetups: PlayerSetup[];
   duration: number;
   effectsEnabled: boolean;
-  playerChanges: number[][];
   videoPlayerRef: VideoPlayerRef | null;
   isPauseMenuVisible: boolean;
 }
@@ -32,17 +31,7 @@ interface Props {
 const MAX_RENDER_RESOLUTION_W = 1920;
 
 const GameOverlay = forwardRef(function (
-  {
-    currentStatus,
-    width,
-    height,
-    playerSetups,
-    onSongEnd,
-    playerChanges,
-    effectsEnabled,
-    videoPlayerRef,
-    isPauseMenuVisible,
-  }: Props,
+  { currentStatus, width, height, playerSetups, onSongEnd, effectsEnabled, videoPlayerRef, isPauseMenuVisible }: Props,
   fRef,
 ) {
   const [graphicLevel] = useSettingValue(GraphicSetting);
@@ -134,12 +123,7 @@ const GameOverlay = forwardRef(function (
       <DurationBar players={playerSetups} />
       <LyricsWrapper>
         {showMultipleLines && (
-          <Lyrics
-            player={players[0]}
-            playerChanges={playerChanges}
-            effectsEnabled={effectsEnabled}
-            showMultipleLines={showMultipleLines}
-          />
+          <Lyrics player={players[0]} effectsEnabled={effectsEnabled} showMultipleLines={showMultipleLines} />
         )}
       </LyricsWrapper>
       <Scores>
@@ -166,7 +150,6 @@ const GameOverlay = forwardRef(function (
         <Lyrics
           showMultipleLines={showMultipleLines}
           player={players[showMultipleLines ? 1 : 0]}
-          playerChanges={playerChanges}
           bottom
           effectsEnabled={effectsEnabled}
         />

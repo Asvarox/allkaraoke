@@ -314,8 +314,8 @@ export default class CanvasDrawing {
     const playerState = GameState.getPlayer(playerNumber)!;
     const currentSectionIndex = playerState.getCurrentSectionIndex() + sectionShift ?? 0;
     const song = GameState.getSong()!;
-    const track = playerState.getTrackIndex();
-    const currentSection = song.tracks[track].sections[currentSectionIndex];
+    const track = playerState.getTrack();
+    const currentSection = track.sections[currentSectionIndex];
     const playerNotes = playerState.getPlayerNotes();
 
     return {
@@ -331,7 +331,7 @@ export default class CanvasDrawing {
       frequencies: playerState.getPlayerFrequencies(),
       playerNotes,
       currentPlayerNotes: playerNotes.filter((note) => note.note.start >= (currentSection?.start ?? Infinity)),
-      track: playerState.getTrackIndex(),
+      track,
       currentBeat: GameState.getCurrentBeat(),
       currentSectionIndex,
       currentSection,

@@ -1,0 +1,26 @@
+#ARTIST:Christmas Tests
+#TITLE:New Christmas
+#CREATOR:author
+#BPM:200
+#YEAR:1995
+#VIDEO:v=W9nZ6u15yis
+#LANGUAGE:English
+#GAP:1000
+#EDITION:Christmas
+#ALLKARAOKE_ID:e2e-christmas-english-1995
+#ALLKARAOKE_LASTUPDATE:2023-01-15T10:35:39.918Z
+#ALLKARAOKE_CREATORURL:authorUrl
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:sourceUrl
+: 0 10 0 First 
+: 15 10 0 Second 
+: 30 10 0 Third 
+- 50
+: 60 10 0 Fourth 
+: 75 10 0 Fifth 
+: 90 10 0 Seventh 
+- 110 130
+- 140
+: 150 10 0 Eight 
+: 165 10 0 Nine 
+E

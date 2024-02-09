@@ -108,6 +108,8 @@ export class GameStateClass {
   public resetPlayerNotes = () => {
     this.playerStates.forEach((player) => player.resetNotes());
   };
+
+  public isMergedTrack = () => this.getSingSetup()?.players.length !== 2;
 }
 
 export default new GameStateClass();

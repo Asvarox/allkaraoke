@@ -51,7 +51,9 @@ const AdditionalInfo = styled.div`
 
   img {
     margin: 1.5rem 0 0.5rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem 0.5rem rgba(255, 255, 255, 0.5);
+    box-shadow:
+      0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5),
+      inset 0 0 0.5rem 0.5rem rgba(255, 255, 255, 0.5);
     border: 0.5rem solid white;
     border-radius: 1rem;
     box-sizing: border-box;

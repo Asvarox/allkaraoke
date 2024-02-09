@@ -14,9 +14,8 @@ import useSong from 'Songs/hooks/useSong';
 import useBlockScroll from 'hooks/useBlockScroll';
 import useFullscreen from 'hooks/useFullscreen';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import useViewportSize from '../../../hooks/useViewportSize';
-import generatePlayerChanges from './Helpers/generatePlayerChanges';
 import Player, { PlayerRef } from './Player';
 import PostGame from './PostGame/PostGame';
 
@@ -36,13 +35,6 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
   const [isEnded, setIsEnded] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(true);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
-
-  const playerChanges = useMemo(() => {
-    if (!song.data) return [];
-    if (singSetup.mode !== GAME_MODE.PASS_THE_MIC) return song.data.tracks.map(() => []);
-
-    return generatePlayerChanges(song.data);
-  }, [song.data, singSetup]);
 
   const [isTransitionTimeout, setIsTransitionTimeout] = useState(false);
 
@@ -84,7 +76,6 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
               pauseMenu
               ref={player}
               onStatusChange={setPlayerState}
-              playerChanges={playerChanges}
               players={singSetup.players}
               song={song.data}
               width={width}

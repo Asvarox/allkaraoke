@@ -1,6 +1,7 @@
 import PlayersManager from 'Players/PlayersManager';
 import PostGameView from 'Scenes/Game/Singing/PostGame/PostGameView';
 import useHighScores from 'Scenes/Game/Singing/PostGame/hooks/useHighScores';
+import LayoutGame from 'Scenes/LayoutGame';
 import { SingSetup, Song } from 'interfaces';
 import { useMemo } from 'react';
 import GameState from '../GameState/GameState';
@@ -26,15 +27,17 @@ function PostGame({ song, width, height, onClickSongSelection, singSetup }: Prop
   );
 
   return (
-    <PostGameView
-      singSetup={singSetup}
-      song={song}
-      width={width}
-      height={height}
-      onClickSongSelection={onClickSongSelection}
-      players={playerScores}
-      highScores={highScores}
-    />
+    <LayoutGame>
+      <PostGameView
+        singSetup={singSetup}
+        song={song}
+        width={width}
+        height={height}
+        onClickSongSelection={onClickSongSelection}
+        players={playerScores}
+        highScores={highScores}
+      />
+    </LayoutGame>
   );
 }
 

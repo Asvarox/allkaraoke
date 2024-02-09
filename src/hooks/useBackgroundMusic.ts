@@ -9,8 +9,8 @@ export default function useBackgroundMusic(play: boolean) {
   const music = christmasMode
     ? christmasBackgroundMusic
     : backgroundMusicSelection === 'Classic'
-    ? classicBackgroundMusic
-    : backgroundMusic;
+      ? classicBackgroundMusic
+      : backgroundMusic;
 
   useEffect(() => {
     if (play) {

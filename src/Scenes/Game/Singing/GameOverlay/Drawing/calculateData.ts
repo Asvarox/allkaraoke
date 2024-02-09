@@ -1,5 +1,5 @@
 import isNotesSection from 'Songs/utils/isNotesSection';
-import { FrequencyRecord, PlayerNote, Section, Song } from 'interfaces';
+import { FrequencyRecord, PlayerNote, Section, Song, SongTrack } from 'interfaces';
 
 export const pitchPadding = 6;
 
@@ -40,7 +40,7 @@ export default function calculateData({
   playerCount,
   paddingVertical,
 }: DrawingData) {
-  const sections = song.tracks[track].sections;
+  const sections = track.sections;
   const currentSection = sections[currentSectionIndex];
   const nextSection = sections[currentSectionIndex + 1];
 
@@ -79,7 +79,7 @@ export interface DrawingData {
   frequencies: FrequencyRecord[];
   playerNotes: PlayerNote[];
   currentPlayerNotes: PlayerNote[];
-  track: number;
+  track: SongTrack;
 
   currentBeat: number;
   paddingVertical: number;

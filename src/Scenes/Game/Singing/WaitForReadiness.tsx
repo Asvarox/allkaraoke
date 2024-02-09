@@ -6,9 +6,8 @@ import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
 import SinglePlayer from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
-import { waitFinished } from 'SoundManager';
-import backgroundMusic from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
-import { SyntheticEvent, useEffect, useRef, useState } from 'react';
+import { waitFinished, waitForReadinessMusic } from 'SoundManager';
+import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import sleep from 'utils/sleep';
 
@@ -19,7 +18,6 @@ interface Props {
 const AUTOSTART_TIMEOUT_S = 15;
 
 function WaitForReadiness({ onFinish }: Props) {
-  const audio = useRef<HTMLAudioElement>(null);
   const [areAllPlayersReady, setAreAllPlayersReady] = useState(false);
 
   const [confirmedPlayers, setConfirmedPlayers] = useState<string[]>([]);
@@ -47,13 +45,13 @@ function WaitForReadiness({ onFinish }: Props) {
       // Only start the music if waiting for readiness takes some time
       await sleep(250);
       if (!allInputsReady) {
-        await audio?.current?.play();
+        await waitForReadinessMusic.play();
       }
 
       await Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]);
-      if (!audio?.current?.paused) waitFinished.play();
+      if (waitForReadinessMusic.playing()) waitFinished.play();
       await sleep(500);
-      audio?.current?.pause();
+      waitForReadinessMusic.pause();
       await sleep(1000);
       onFinish();
     })();
@@ -97,15 +95,6 @@ function WaitForReadiness({ onFinish }: Props) {
           </TimeoutMessage>
         )}
       </WaitingForReady>
-      <audio
-        src={backgroundMusic}
-        ref={audio}
-        hidden
-        autoPlay={false}
-        onPlay={(e: SyntheticEvent<HTMLAudioElement>) => {
-          e.currentTarget.volume = 0.8;
-        }}
-      />
     </>
   );
 }

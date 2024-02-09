@@ -17,7 +17,10 @@ class PlayerState {
 
   private storedSectionIndex = 0;
 
-  public constructor(private number: 0 | 1 | 2 | 3, private gameState: GameStateClass) {
+  public constructor(
+    private number: 0 | 1 | 2 | 3,
+    private gameState: GameStateClass,
+  ) {
     this.getTrack()
       .sections.filter(isNotesSection)
       .forEach((section) =>
@@ -143,7 +146,13 @@ class PlayerState {
 
   public getTrackIndex = () =>
     this.gameState.getSingSetup()!.players.find((player) => player.number === this.number)!.track;
-  public getTrack = () => this.gameState.getSong()!.tracks[this.getTrackIndex()];
+  public getTrack = () => {
+    if (this.gameState.isMergedTrack()) {
+      return this.gameState.getSong()?.mergedTrack!;
+    } else {
+      return this.gameState.getSong()!.tracks[this.getTrackIndex()];
+    }
+  };
 
   public resetNotes = () => {
     this.playerNotes = [];

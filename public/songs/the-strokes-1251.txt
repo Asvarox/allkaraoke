@@ -1,0 +1,203 @@
+#ARTIST:The Strokes
+#TITLE:12:51
+#CREATOR:hamadad
+#BPM:290
+#YEAR:2003
+#VIDEO:v=LPAVDHo1Elc
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:28307,241379310344
+#ALLKARAOKE_ID:the-strokes-1251
+#ALLKARAOKE_LASTUPDATE:2024-02-08T06:16:42.902Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_VOLUME:0,82
+#MP3:The Strokes - 12:51.mp3
+: 19 8 8 Talk 
+: 29 2 4 to 
+: 33 5 6 me 
+: 40 2 4 now 
+: 44 6 8 I’m 
+: 52 14 6 ol
+: 68 7 4 der 
+- 75
+: 80 3 4 Your 
+: 85 5 6 friend 
+: 92 3 4 told 
+: 97 6 4 you 
+: 105 2 4 ’cause 
+: 109 5 6 I 
+: 116 16 4 told 
+: 133 10 3 her 
+- 143
+: 147 8 8 Fri
+: 156 3 6 day 
+: 161 6 8 night’s 
+: 169 2 4 have 
+: 173 7 8 been 
+: 182 13 6 lone
+: 196 10 4 ly 
+- 206
+: 211 7 6 Change 
+: 220 3 4 your 
+: 225 7 4 plans 
+: 234 2 4 and 
+: 238 4 6 then 
+: 244 14 4 phone 
+: 260 12 3 me 
+- 272 512
+- 512
+: 531 7 8 We 
+: 540 3 6 could 
+: 545 5 6 go 
+: 552 3 4 and 
+: 557 5 8 get 
+: 564 16 6 for
+: 581 9 4 ties 
+- 590
+: 595 7 6 Fuck 
+: 604 3 4 go
+: 609 5 4 in’ 
+: 616 2 4 to 
+: 620 6 6 that 
+: 628 14 4 par
+: 643 7 3 ty 
+- 650
+: 655 3 8 Oh 
+: 660 4 8 rea
+: 665 2 8 lly 
+: 669 2 4 your 
+: 673 6 4 folks 
+: 681 2 4 are 
+* 685 5 11 a
+: 692 13 9 way 
+: 707 8 8 now 
+- 715
+: 719 6 6 Al
+: 726 3 6 right 
+: 731 4 3 let’s 
+: 737 4 3 go 
+: 743 3 3 you 
+: 748 8 6 con
+: 757 13 4 vinced 
+: 772 11 3 me 
+- 783 1025
+- 1025
+* 1044 12 9 Twelve 
+* 1059 7 9 fif
+* 1067 6 9 ty 
+* 1076 11 9 one 
+- 1087
+: 1093 5 9 Is 
+: 1100 6 8 the 
+: 1108 10 9 time 
+- 1118
+: 1123 10 9 My 
+: 1138 13 8 voice 
+- 1151
+: 1155 8 8 Found 
+: 1165 4 7 the 
+: 1172 11 9 words 
+: 1188 9 9 I 
+: 1201 12 9 sought 
+- 1213
+: 1217 3 9 Is 
+: 1222 4 9 it 
+: 1228 8 9 this 
+: 1238 11 11 stage 
+: 1252 9 11 I 
+: 1268 10 11 want 
+: 1284 9 4 the 
+- 1293
+: 1300 14 0 World 
+: 1316 14 4 is 
+: 1332 24 11 shut
+* 1357 6 9 ting 
+: 1365 10 8 up 
+- 1375
+: 1387 5 4 For 
+: 1393 9 4 us 
+- 1402
+: 1408 3 8 Oh 
+: 1413 5 8 we 
+: 1420 7 9 were 
+: 1429 12 9 tense 
+: 1444 10 9 for 
+- 1454
+: 1459 11 9 Sure 
+: 1473 3 9 but 
+: 1478 4 9 we 
+: 1484 6 9 was 
+: 1492 11 11 con
+* 1506 12 11 fi
+: 1524 24 11 dent 
+- 1548
+: 1556 7 8 Kiss 
+: 1565 2 6 me 
+: 1569 6 6 now 
+: 1577 2 4 that 
+: 1581 6 8 I’m 
+* 1589 13 6 ol
+: 1603 12 4 der 
+- 1615
+: 1620 5 6 I 
+: 1627 4 4 won’t 
+: 1633 5 4 try 
+: 1640 2 3 to 
+: 1644 7 6 con
+: 1652 14 4 trol 
+: 1668 9 3 you 
+- 1677
+: 1684 7 8 Fri
+: 1692 2 6 day 
+: 1696 7 6 night’s 
+: 1705 2 4 have 
+: 1709 6 8 been 
+: 1717 14 6 lone
+: 1732 10 4 ly 
+- 1742
+: 1747 5 6 Take 
+: 1755 2 4 it 
+: 1759 7 4 slow 
+: 1768 2 3 but 
+: 1772 6 6 don’t 
+: 1780 14 4 warn 
+: 1796 10 3 me 
+- 1806
+: 1811 7 8 We’d 
+: 1820 4 6 go 
+: 1826 5 6 out 
+: 1833 2 4 and 
+: 1837 6 11 get 
+: 1845 14 9 for
+: 1860 12 8 ties 
+- 1872
+: 1877 6 6 Then 
+: 1885 2 4 we’d 
+: 1889 6 4 go 
+: 1897 2 3 to 
+: 1900 7 6 some 
+: 1909 15 4 par
+: 1925 6 3 ty 
+- 1931
+: 1936 3 8 Oh 
+: 1940 4 8 rea
+: 1945 2 8 lly 
+: 1949 2 4 your 
+: 1953 5 4 folks 
+: 1960 3 4 are 
+: 1965 6 11 a
+* 1973 13 9 way 
+: 1988 7 8 now 
+- 1995
+: 2000 3 6 Al
+: 2005 5 6 right 
+: 2012 5 6 I’m 
+: 2020 5 4 co
+: 2026 10 4 ming 
+- 2036
+: 2048 7 8 I’ll 
+: 2057 2 6 be 
+: 2061 3 4 right 
+: 2066 13 4 there 
+E

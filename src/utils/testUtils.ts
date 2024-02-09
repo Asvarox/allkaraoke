@@ -36,9 +36,10 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     gap: 0,
     bpm: 60, // makes it easy to calc - beatLength = 1ms
     bar: 1000, // makes it easy to calc - beatLength = 1ms
-    tracks: tracks.map((sections) => ({ sections })),
+    tracks: tracks.map((sections) => ({ sections, changes: [] })),
+    mergedTrack: { sections: [], changes: [] },
     ...data,
-  } as any as Song);
+  }) as any as Song;
 
 export const generateSection = (start: number, length: number, notesCount: number): Section => ({
   type: 'notes',

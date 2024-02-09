@@ -1,0 +1,14 @@
+#ARTIST:1 E2ETest
+#TITLE:Skip Intro song
+#BPM:200
+#YEAR:1990
+#VIDEO:v=Vueyx9TBEqE
+#LANGUAGE:Polish
+#GAP:27000
+#ALLKARAOKE_ID:e2e-skip-intro-polish
+: 5 10 9 Second 
+: 20 10 10 Third 
+- 35
+: 40 1 11 Fourth 
+: 45 1 9 Seventh 
+E

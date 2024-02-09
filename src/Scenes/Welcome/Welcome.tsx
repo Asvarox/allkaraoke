@@ -43,17 +43,17 @@ function Welcome() {
         <SmoothLink to="game/">
           <MenuButton {...register('sing-a-song', () => navigate('game/'))}>Sing a song</MenuButton>
         </SmoothLink>
-        <SmoothLink to="select-input">
-          <MenuButton {...register('select-input', () => navigate('select-input'))}>Setup Microphones</MenuButton>
+        <SmoothLink to="select-input/">
+          <MenuButton {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</MenuButton>
         </SmoothLink>
-        <SmoothLink to="settings">
-          <MenuButton {...register('settings', () => navigate('settings'))}>Settings</MenuButton>
+        <SmoothLink to="settings/">
+          <MenuButton {...register('settings', () => navigate('settings/'))}>Settings</MenuButton>
         </SmoothLink>
-        <SmoothLink to="jukebox">
-          <MenuButton {...register('jukebox', () => navigate('jukebox'))}>Jukebox</MenuButton>
+        <SmoothLink to="jukebox/">
+          <MenuButton {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</MenuButton>
         </SmoothLink>
-        <SmoothLink to="manage-songs">
-          <MenuButton {...register('manage-songs', () => navigate('manage-songs'))}>Manage Songs</MenuButton>
+        <SmoothLink to="manage-songs/">
+          <MenuButton {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</MenuButton>
         </SmoothLink>
       </>
     </MenuWithLogo>

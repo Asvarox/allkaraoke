@@ -32,7 +32,8 @@ export default function ManipulateBpm({ current, onChange, player, song }: Props
         helperText={
           !!desiredLastNoteEnd ? (
             <>
-              Est. proper Tempo (BPM): <Pre data-test="desired-bpm">{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
+              Estimated proper Tempo (BPM) of the lyrics:{' '}
+              <Pre data-test="desired-bpm">{calculateProperBPM(desiredLastNoteEnd, song)}</Pre>
             </>
           ) : (
             ' '

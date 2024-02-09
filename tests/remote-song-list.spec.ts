@@ -21,44 +21,45 @@ const songID = 'zzz-last-polish-1994';
 const videoURL = 'https://www.youtube.com/watch?v=8YKAHgwLEMg';
 const convertedSongID = 'convert-test';
 
-test('Remote mic song list', async ({ page, context, browserName }) => {
+test('Remote mic song list', async ({ page, context, browser, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectSmartphones();
 
-  const remoteMic = await openRemoteMic(page, context);
-  await remoteMic.getByTestId('player-name-input').fill(P1_Name);
+  const remoteMic = await openRemoteMic(page, context, browser);
+  console.log(remoteMic);
+  await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
 
   await test.step('Song list is available without connecting', async () => {
-    await remoteMic.getByTestId('menu-song-list').click();
-    await expect(remoteMic.getByTestId(songID)).toBeVisible();
+    await remoteMic._page.getByTestId('menu-song-list').click();
+    await expect(remoteMic._page.getByTestId(songID)).toBeVisible();
   });
 
   await test.step('Song list doesnt contain removed songs after connecting', async () => {
-    await remoteMic.getByTestId('menu-microphone').click();
-    await connectRemoteMic(remoteMic);
+    await remoteMic._page.getByTestId('menu-microphone').click();
+    await connectRemoteMic(remoteMic._page);
 
     await pages.smartphonesConnectionPage.goToMainMenuPage();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
     await pages.editSongsPage.hideSong(songID);
     await pages.editSongsPage.expectSongToBeHidden(songID);
-    await expect(remoteMic.getByTestId(songID)).not.toBeVisible();
+    await expect(remoteMic._page.getByTestId(songID)).not.toBeVisible();
   });
 
   await test.step('Song list contains custom songs after connecting', async () => {
     await pages.editSongsPage.goToImportUltrastar();
-    await pages.songEditingPage.enterSongTXT(txtfile);
-    await pages.songEditingPage.goNext();
-    await pages.songEditingPage.enterVideoURL(videoURL);
-    await pages.songEditingPage.goNext();
-    await pages.songEditingPage.goNext();
-    await pages.songEditingPage.saveChanges();
+    await pages.songEditBasicInfoPage.enterSongTXT(txtfile);
+    await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
+    await pages.songEditAuthorAndVideoPage.enterVideoURL(videoURL);
+    await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
+    await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
+    await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
     await pages.editSongsPage.disagreeToShareAddSongs();
     await pages.editSongsPage.expectSongToBeVisible(convertedSongID);
-    await remoteMic.getByTestId('menu-song-list').click();
-    await expect(remoteMic.getByTestId(convertedSongID)).toBeVisible();
+    await remoteMic._page.getByTestId('menu-song-list').click();
+    await expect(remoteMic._page.getByTestId(convertedSongID)).toBeVisible();
   });
 });

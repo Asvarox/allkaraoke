@@ -1,5 +1,6 @@
 import { SVGProps, useMemo } from 'react';
 import { Easing, interpolate, random, useCurrentFrame } from 'remotion';
+import range from 'utils/range';
 
 interface TransitionCircleProps extends SVGProps<SVGCircleElement> {
   delay: number;
@@ -27,7 +28,7 @@ const daySeed = new Date().toDateString();
 export const TransitionCircles: React.FC<Props> = ({ delay, duration, id }) => {
   const randomizedCircles = useMemo(
     () =>
-      new Array(CIRCLE_NUM).fill(true).map((a, i) => {
+      range(CIRCLE_NUM).map((a, i) => {
         return {
           x: random(`${daySeed}-${id}-random-x-${i}`),
           y: random(`${daySeed}-${id}-random-y-${i}`),

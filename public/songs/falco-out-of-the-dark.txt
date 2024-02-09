@@ -1,0 +1,469 @@
+#ARTIST:Falco
+#TITLE:Out Of The Dark
+#CREATOR:Dynamic_Duo
+#BPM:280,12
+#YEAR:1998
+#VIDEO:v=cyrdPtEHKzE
+#GENRE:None
+#LANGUAGE:German, English
+#GAP:24022,57889475939
+#ALLKARAOKE_ID:falco-out-of-the-dark
+#ALLKARAOKE_LASTUPDATE:2024-02-08T06:16:42.366Z
+#ALLKARAOKE_ARTISTORIGIN:AT
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:0,83
+#MP3:Falco - Out Of The Dark.mp3
+#START:4.0
+F 19 2 9 Ich 
+F 22 2 11 krieg’ 
+F 25 2 10 von 
+F 29 2 9 dir 
+F 33 2 9 nie
+F 37 2 9 mals 
+F 41 2 9 ge
+F 45 2 9 nug 
+- 47
+F 50 2 9 Du 
+F 54 2 11 bist 
+F 58 2 10 in 
+F 62 2 9 je
+F 66 2 9 dem 
+F 70 2 9 A
+F 74 2 9 tem
+F 78 2 9 zug 
+- 80
+F 82 2 9 Al
+F 85 2 12 les 
+F 88 4 9 dreht 
+F 97 2 9 sich 
+F 101 2 12 nur 
+F 105 2 12 um 
+F 109 4 12 dich 
+- 113
+F 118 2 9 Wa
+F 121 2 12 rum 
+F 125 2 9 aus
+F 129 2 9 ge
+F 133 2 9 rech
+F 137 2 9 net 
+F 141 3 9 ich 
+- 144
+F 149 2 12 Zähl’ 
+F 152 2 12 die 
+F 156 3 12 Stun
+F 160 2 9 den, 
+F 164 2 12 die 
+F 167 2 12 Se
+F 171 3 12 kun
+F 176 2 9 den 
+- 178
+F 181 2 9 Doch 
+F 185 2 9 die 
+F 189 2 11 Zeit 
+F 193 2 11 scheint 
+F 197 3 11 still 
+F 202 2 9 zu 
+F 205 2 9 steh’n 
+- 207
+F 209 2 11 Hab 
+F 213 2 11 mich 
+F 217 2 11 ge
+F 220 4 11 schun
+F 225 2 9 den, 
+F 233 2 11 ge
+F 236 4 12 wun
+F 241 2 7 den 
+- 243
+F 258 2 11 Lass’ 
+F 262 2 10 mich 
+F 266 4 12 geh’n 
+- 270
+F 273 2 11 Was 
+F 277 3 11 willst 
+F 281 2 11 du 
+F 285 6 12 noch 
+- 291
+F 301 4 9 Willst 
+F 306 2 9 du 
+F 310 2 9 mei
+F 314 2 9 ne 
+F 317 3 9 Ta
+F 321 2 9 ge 
+F 325 4 9 zähl’n 
+- 329
+F 337 3 11 Wa
+F 341 2 11 rum 
+F 345 2 9 musst 
+F 349 3 12 du 
+F 357 5 12 mich 
+- 362
+F 369 2 9 Mit 
+F 373 2 12 mei
+F 377 2 11 ner 
+F 381 2 11 Sehn
+F 385 2 9 sucht 
+F 389 5 9 quäl’n 
+- 394
+F 405 3 11 Dei
+F 409 2 9 ne 
+F 413 3 11 Höl
+F 417 2 9 le 
+- 419
+F 433 3 11 Brennt 
+F 438 2 11 in 
+F 442 3 9 mir 
+- 445
+F 450 2 11 Du 
+F 453 2 11 bist 
+F 457 2 11 mein 
+F 461 2 12 Ü
+F 465 2 11 ber
+F 468 2 11 le
+F 473 3 10 bens
+F 477 2 9 e
+F 481 2 9 li
+F 485 4 7 xier 
+- 489 494
+- 494
+F 513 2 11 Ich 
+F 517 2 11 bin 
+F 521 2 9 zer
+F 525 2 11 ris
+F 529 2 9 sen 
+- 531 566
+- 566
+F 585 2 4 Wann 
+F 589 2 4 kommst 
+F 593 2 4 du 
+F 597 2 3 mei
+F 601 2 3 ne 
+F 605 3 9 Wun
+F 609 2 9 den 
+F 613 2 9 küs
+F 617 2 9 sen 
+- 619 634
+- 634
+: 653 2 21 Out 
+: 657 2 21 of 
+: 661 2 19 the 
+* 665 6 21 dark 
+- 671 702
+- 702
+F 721 2 9 Hörst 
+F 725 2 9 du 
+F 728 2 9 die 
+F 731 3 9 Stim
+F 735 2 9 me, 
+F 740 2 9 die 
+F 744 2 9 dir 
+F 748 4 9 sagt 
+- 752 760
+- 760
+: 779 3 21 In
+: 784 2 21 to 
+: 788 2 19 the 
+* 792 7 19 light 
+- 799 830
+- 830
+: 849 2 12 I 
+: 853 3 19 give 
+: 858 3 19 up 
+: 866 2 17 and 
+: 872 5 17 close 
+: 880 3 17 my
+: 884 2 14 ~ 
+: 891 6 14 eyes 
+- 897
+: 909 2 21 Out 
+: 913 2 21 of 
+: 917 2 19 the 
+: 921 7 21 dark 
+- 928 958
+- 958
+F 977 2 9 Hörst 
+F 981 2 9 du 
+F 985 2 9 die 
+F 988 4 9 Stim
+F 993 2 9 me, 
+F 998 2 9 die 
+F 1002 2 9 dir 
+F 1005 5 9 sagt 
+- 1010 1018
+- 1018
+: 1037 2 12 In
+: 1041 2 12 to 
+: 1045 2 19 the 
+: 1049 6 19 light 
+- 1055 1086
+- 1086
+: 1105 2 19 I 
+: 1109 2 19 give 
+: 1113 3 19 up 
+: 1122 2 17 and 
+: 1126 2 17 you 
+: 1130 4 17 waste 
+: 1138 3 16 your 
+: 1145 8 14 tears 
+- 1153
+: 1169 2 11 To 
+: 1173 2 11 the 
+* 1177 6 9 night 
+- 1183 1277
+- 1277
+F 1296 2 9 Ich 
+F 1300 2 9 bin 
+F 1304 2 9 be
+F 1308 5 7 reit 
+- 1313
+F 1320 2 9 Denn 
+F 1324 2 9 es 
+F 1328 2 9 ist 
+F 1332 5 7 Zeit 
+- 1337
+F 1344 2 9 Für 
+F 1348 2 9 un
+F 1352 2 9 ser’n 
+F 1356 2 9 Pakt 
+F 1361 3 9 ü
+F 1365 1 9 ber 
+F 1368 2 9 die 
+F 1372 3 9 E
+F 1376 2 9 wig
+F 1380 5 9 keit 
+- 1385
+F 1392 2 9 Du 
+F 1396 2 9 bist 
+F 1400 2 9 schon 
+F 1404 4 9 da, 
+F 1412 2 9 ganz 
+F 1416 4 9 nah 
+- 1420
+F 1425 2 9 Ich 
+F 1428 2 9 kann 
+F 1432 2 9 dich 
+F 1436 5 9 spür’n 
+- 1441
+F 1449 2 9 Lass 
+F 1452 2 9 mich 
+F 1456 2 9 ver
+F 1460 4 9 führ’n 
+- 1464
+F 1473 2 9 Lass 
+F 1477 2 9 mich 
+F 1481 2 9 ent
+F 1485 4 9 führ’n 
+- 1489
+F 1492 3 9 Heu
+F 1496 2 9 te 
+F 1500 3 9 Nacht 
+F 1504 2 9 zum 
+F 1508 3 9 letz
+F 1512 2 9 ten 
+F 1516 4 9 Mal 
+F 1521 2 9 er
+F 1524 3 9 ge
+F 1528 2 9 ben 
+F 1532 3 9 dei
+F 1536 2 9 ner 
+F 1539 6 9 Macht 
+- 1545
+F 1552 3 9 Reich 
+F 1556 2 9 mir 
+F 1560 2 9 die 
+F 1564 4 9 Hand 
+- 1568
+F 1577 2 9 Mein 
+F 1580 4 9 Le
+F 1585 2 9 ben 
+- 1587
+F 1596 2 9 Nenn’ 
+F 1600 2 9 mir 
+F 1604 2 9 den 
+F 1608 4 9 Preis 
+- 1612
+F 1617 2 9 Ich 
+F 1620 3 9 schenk 
+F 1624 2 9 dir 
+F 1628 2 9 ges
+F 1631 2 9 tern, 
+F 1636 3 9 heut’ 
+F 1641 2 9 und 
+F 1644 3 9 mor
+F 1648 2 9 gen 
+- 1650
+F 1655 2 9 Dann 
+F 1659 4 9 schließt 
+F 1664 2 9 sich 
+F 1668 2 9 der 
+F 1672 4 9 Kreis 
+- 1676
+F 1680 3 9 Kein 
+F 1684 2 9 Weg 
+F 1688 2 9 zu
+F 1692 4 9 rück 
+- 1696
+F 1704 2 9 Das 
+F 1708 2 9 wei
+F 1712 2 9 ße 
+F 1716 3 9 Licht 
+- 1719
+F 1720 2 9 Kommt 
+F 1724 3 9 nä
+F 1728 2 9 her, 
+F 1732 2 9 Stück 
+F 1736 2 9 für 
+F 1740 3 9 Stück 
+- 1743
+F 1744 2 9 Will 
+F 1748 2 9 mich 
+F 1752 2 9 er
+F 1756 3 9 ge
+F 1760 2 9 ben 
+- 1762 1789
+- 1789
+F 1808 2 9 Muss 
+F 1812 2 9 ich 
+F 1816 2 9 denn 
+F 1820 3 9 ster
+F 1824 2 9 ben 
+- 1826 1853
+- 1853
+F 1872 2 9 Um 
+F 1876 2 9 zu 
+F 1880 3 9 le
+F 1884 2 9 ben 
+- 1886 1911
+- 1911
+: 1930 2 21 Out 
+: 1934 2 21 of 
+: 1938 2 19 the 
+* 1942 6 21 dark 
+- 1948 1979
+- 1979
+F 1998 2 9 Hörst 
+F 2002 2 9 du 
+F 2006 2 9 die 
+F 2009 3 9 Stim
+F 2013 2 9 me, 
+F 2018 2 9 die 
+F 2022 2 9 dir 
+F 2026 5 9 sagt 
+- 2031 2038
+- 2038
+: 2057 2 21 In
+: 2061 2 21 to 
+: 2065 2 19 the 
+* 2069 5 19 light 
+- 2074 2106
+- 2106
+: 2125 3 12 I 
+: 2129 3 19 give 
+: 2134 3 19 up 
+: 2142 2 17 and 
+: 2148 5 17 close 
+: 2156 3 17 my
+: 2160 2 14 ~ 
+: 2167 6 14 eyes 
+- 2173
+: 2187 2 21 Out 
+: 2191 2 21 of 
+: 2195 2 19 the 
+* 2199 6 21 dark 
+- 2205 2236
+- 2236
+F 2255 2 9 Hörst 
+F 2259 2 9 du 
+F 2262 2 9 die 
+F 2265 3 9 Stim
+F 2269 2 9 me, 
+F 2275 2 9 die 
+F 2279 2 9 dir 
+F 2283 5 9 sagt 
+- 2288 2296
+- 2296
+: 2315 2 12 In
+: 2319 2 12 to 
+: 2323 2 19 the 
+* 2326 6 19 light 
+- 2332 2363
+- 2363
+: 2382 2 19 I 
+: 2386 2 19 give 
+: 2391 3 19 up 
+: 2399 2 17 and 
+: 2403 2 17 you 
+: 2407 4 17 waste 
+: 2415 3 16 your 
+: 2422 8 14 tears 
+- 2430
+: 2447 2 11 To 
+: 2451 2 11 the 
+: 2455 5 9 night 
+- 2460 2999
+- 2999
+: 3018 2 21 Out 
+: 3022 2 21 of 
+: 3026 2 19 the 
+* 3030 6 21 dark 
+- 3036 3067
+- 3067
+F 3086 2 9 Hörst 
+F 3090 2 9 du 
+F 3093 2 9 die 
+F 3096 3 9 Stim
+F 3100 2 9 me, 
+F 3106 2 9 die 
+F 3110 2 9 dir 
+F 3114 5 9 sagt 
+- 3119 3127
+- 3127
+: 3146 2 12 In
+: 3150 2 21 to 
+: 3154 2 19 the 
+: 3158 5 19 light 
+- 3163 3195
+- 3195
+: 3214 3 12 I 
+: 3218 3 19 give 
+: 3223 3 19 up 
+: 3231 2 17 and 
+: 3237 5 17 close 
+: 3245 3 17 my
+: 3249 2 14 ~ 
+: 3256 6 14 eyes 
+- 3262
+: 3273 2 21 Out 
+: 3277 2 21 of 
+: 3281 2 19 the 
+* 3285 6 21 dark 
+- 3291 3323
+- 3323
+F 3342 2 9 Hörst 
+F 3346 2 9 du 
+F 3349 2 9 die 
+F 3352 3 9 Stim
+F 3356 2 9 me, 
+F 3362 2 9 die 
+F 3366 2 9 dir 
+F 3370 6 9 sagt 
+- 3376 3382
+- 3382
+: 3401 2 12 In
+: 3405 2 12 to 
+: 3409 2 19 the 
+: 3413 6 19 light 
+- 3419 3449
+- 3449
+: 3468 2 19 I 
+: 3472 2 19 give 
+: 3477 3 19 up 
+: 3483 2 17 and 
+: 3487 2 17 you 
+: 3491 4 17 waste 
+: 3499 3 16 your 
+: 3506 8 14 tears 
+- 3514
+: 3533 2 11 To 
+: 3537 2 11 the 
+: 3541 4 9 night 
+E

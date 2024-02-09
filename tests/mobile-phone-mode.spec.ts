@@ -49,8 +49,8 @@ test('Mobile phone mode should be playable', async ({ browser, context, page, br
   await expect(page.getByTestId('mic-check-p0')).toContainText(P1_Name, { ignoreCase: true });
   await expect(page.getByTestId('mic-check-p1')).toContainText(P2_Name, { ignoreCase: true });
 
-  await navigateWithKeyboard(page, 'save-button', remoteMicBluePage);
-  await remoteMicBluePage.getByTestId('keyboard-enter').click();
+  await navigateWithKeyboard(page, 'save-button', remoteMicBluePage._page);
+  await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
 
   await expect(page.getByTestId('sing-a-song')).toBeVisible();
 
@@ -58,11 +58,11 @@ test('Mobile phone mode should be playable', async ({ browser, context, page, br
   await page.waitForTimeout(500);
   await page.reload();
 
-  await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {
+  await expect(remoteMicBluePage._page.getByTestId('connect-button')).toContainText('Connected', {
     ignoreCase: true,
   });
 
-  await expect(remoteMicRed.getByTestId('connect-button')).toContainText('Connected', {
+  await expect(remoteMicRed._page.getByTestId('connect-button')).toContainText('Connected', {
     ignoreCase: true,
   });
 
@@ -76,37 +76,37 @@ test('Mobile phone mode should be playable', async ({ browser, context, page, br
   ]);
 
   // Check if the mics are reselected after they refresh
-  await remoteMicBluePage.reload();
-  await remoteMicBluePage.getByTestId('player-name-input').fill(P1_Name);
-  await connectRemoteMic(remoteMicBluePage);
-  await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
+  await remoteMicBluePage._page.reload();
+  await remoteMicBluePage._page.getByTestId('player-name-input').fill(P1_Name);
+  await connectRemoteMic(remoteMicBluePage._page);
+  await expect(remoteMicBluePage._page.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
 
-  await remoteMicRed.reload();
-  await remoteMicRed.getByTestId('player-name-input').fill(P2_Name);
-  await connectRemoteMic(remoteMicRed);
-  await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
+  await remoteMicRed._page.reload();
+  await remoteMicRed._page.getByTestId('player-name-input').fill(P2_Name);
+  await connectRemoteMic(remoteMicRed._page);
+  await expect(remoteMicRed._page.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
 
   await test.step('Start singing a song', async () => {
-    await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
-    await navigateWithKeyboard(page, 'close-exclude-languages', remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await navigateWithKeyboard(page, 'sing-a-song', remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
+    await navigateWithKeyboard(page, 'close-exclude-languages', remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
 
-    await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish', remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish', remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
 
-    await navigateWithKeyboard(page, 'next-step-button', remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
-    await navigateWithKeyboard(page, 'play-song-button', remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
+    await navigateWithKeyboard(page, 'next-step-button', remoteMicRed._page);
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
+    await navigateWithKeyboard(page, 'play-song-button', remoteMicRed._page);
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
   });
 
   await test.step('Check if skip intro is possible', async () => {
-    await remoteMicBluePage.getByTestId('ready-button').click();
-    await remoteMicRed.getByTestId('ready-button').click();
-    await expect(remoteMicRed.getByTestId('keyboard-enter')).not.toBeDisabled({ timeout: 8_000 });
+    await remoteMicBluePage._page.getByTestId('ready-button').click();
+    await remoteMicRed._page.getByTestId('ready-button').click();
+    await expect(remoteMicRed._page.getByTestId('keyboard-enter')).not.toBeDisabled({ timeout: 8_000 });
     await page.waitForTimeout(1500);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
 
     await expect(page.getByTestId('skip-animation-button')).toBeVisible({ timeout: 15_000 });
   });
@@ -123,10 +123,10 @@ test('Mobile phone mode should be playable', async ({ browser, context, page, br
   await expect(page.getByTestId('player-1-name')).toHaveText(P2_Name);
 
   await expect(page.getByTestId('skip-animation-button')).toBeVisible();
-  await remoteMicBluePage.getByTestId('keyboard-enter').click();
+  await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('highscores-button')).toBeVisible();
-  await remoteMicBluePage.getByTestId('keyboard-enter').click();
+  await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('play-next-song-button')).toBeVisible();
-  await remoteMicBluePage.getByTestId('keyboard-enter').click();
+  await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
   await expect(page.getByTestId('song-e2e-skip-intro-polish')).toBeVisible();
 });

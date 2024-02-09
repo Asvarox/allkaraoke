@@ -34,7 +34,7 @@ function Jukebox(props: Props) {
 
   if (!shuffledList.length || !width || !height) return null;
 
-  const navigateUrl = buildUrl(`game`, { song: shuffledList[currentlyPlaying].id });
+  const navigateUrl = buildUrl(`game/`, { song: shuffledList[currentlyPlaying].id });
 
   return (
     <LayoutGame>
