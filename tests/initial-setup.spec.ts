@@ -147,7 +147,7 @@ test('Remote mic is deselected when it disconnects', async ({ page, context, bro
   });
 
   await test.step('Close remote mic', async () => {
-    await remoteMicBlue.close();
+    await remoteMicBlue._page.close();
     await pages.advancedConnectionPage.expectPlayerNameToBe(blueMicNum, playerNameDef);
   });
 });

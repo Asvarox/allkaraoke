@@ -38,7 +38,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
     await pages.advancedConnectionPage.saveAndGoToSing();
     await pages.songPreviewPage.expectEnteredPlayerNameToBePrefilledWith(blueMicNum, player1Name);
     // microphone of new device is being monitored
-    await expect(remoteMicBlue.getByTestId('monitoring-state')).toContainText('on', {
+    await expect(remoteMicBlue._page.getByTestId('monitoring-state')).toContainText('on', {
       ignoreCase: true,
     });
   });
@@ -46,7 +46,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
   await test.step('Make sure the input is not monitored anymore if it is not in use', async () => {
     await pages.songPreviewPage.setupMics();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMicNum);
-    await expect(remoteMicBlue.getByTestId('monitoring-state')).toContainText('off', {
+    await expect(remoteMicBlue._page.getByTestId('monitoring-state')).toContainText('off', {
       ignoreCase: true,
     });
   });
@@ -87,22 +87,22 @@ test('Source selection from remote mic', async ({ browser, context, page }) => {
   const remoteMicRed = await openAndConnectRemoteMicDirectly(page, browser, player2Name);
 
   await test.step('Change player2 to blue mic', async () => {
-    await remoteMicRed.getByTestId('change-player').click();
-    await remoteMicRed.getByTestId('change-to-player-0').click();
+    await remoteMicRed._page.getByTestId('change-player').click();
+    await remoteMicRed._page.getByTestId('change-to-player-0').click();
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(blueMicNum, player2Name);
     await expect(pages.smartphonesConnectionPage.getPlayerMicCheck(1)).not.toBeVisible();
   });
 
   await test.step('Change player1 to red mic', async () => {
-    await remoteMicBlue.getByTestId('change-player').click();
-    await remoteMicBlue.getByTestId('change-to-player-1').click();
+    await remoteMicBlue._page.getByTestId('change-player').click();
+    await remoteMicBlue._page.getByTestId('change-to-player-1').click();
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(blueMicNum, player2Name);
     await pages.smartphonesConnectionPage.expectPlayerNameToBe(redMicNum, player1Name);
   });
 
   await test.step('Unset a player', async () => {
-    await remoteMicBlue.getByTestId('change-player').click();
-    await remoteMicBlue.getByTestId('change-to-unset').click();
+    await remoteMicBlue._page.getByTestId('change-player').click();
+    await remoteMicBlue._page.getByTestId('change-to-unset').click();
     await expect(pages.smartphonesConnectionPage.getPlayerMicCheck(1)).not.toBeVisible();
   });
 });

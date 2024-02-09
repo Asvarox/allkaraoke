@@ -49,8 +49,8 @@ test('Remote mic should connect, be selectable and control the game', async ({
   });
 
   await test.step('Navigate to main menu by phone', async () => {
-    await pages.smartphonesConnectionPage.navigateToMainMenuWithKeyboard(remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await pages.smartphonesConnectionPage.navigateToMainMenuWithKeyboard(remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await expect(pages.mainMenuPage.singSongElement).toBeVisible();
   });
 
@@ -58,10 +58,10 @@ test('Remote mic should connect, be selectable and control the game', async ({
     await page.waitForTimeout(500);
     await page.reload();
 
-    await expect(remoteMicBluePage.getByTestId('connect-button')).toContainText('Connected', {
+    await expect(remoteMicBluePage._page.getByTestId('connect-button')).toContainText('Connected', {
       ignoreCase: true,
     });
-    await expect(remoteMicRed.getByTestId('connect-button')).toContainText('Connected', {
+    await expect(remoteMicRed._page.getByTestId('connect-button')).toContainText('Connected', {
       ignoreCase: true,
     });
 
@@ -72,75 +72,75 @@ test('Remote mic should connect, be selectable and control the game', async ({
   });
 
   await test.step('Navigate to song list by phone', async () => {
-    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
-    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
+    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
     await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
   });
 
   await test.step('Search song remotely and navigate', async () => {
-    await remoteMicBluePage.getByTestId('search-song-input').fill(songTitle);
+    await remoteMicBluePage._page.getByTestId('search-song-input').fill(songTitle);
     await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
     await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
 
-    await pages.songListPage.navigateToSongWithKeyboard(song2, remoteMicBluePage);
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
-    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
+    await pages.songListPage.navigateToSongWithKeyboard(song2, remoteMicBluePage._page);
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
+    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMicRed._page);
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
   });
 
   await test.step('Check if the mics are reselected after they refresh', async () => {
     // Blue microphone
-    await remoteMicBluePage.reload();
+    await remoteMicBluePage._page.reload();
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(blueMicNum)).toBeVisible();
-    await remoteMicBluePage.getByTestId('player-name-input').fill(P1_Name);
-    await connectRemoteMic(remoteMicBluePage);
-    await expect(remoteMicBluePage.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
+    await remoteMicBluePage._page.getByTestId('player-name-input').fill(P1_Name);
+    await connectRemoteMic(remoteMicBluePage._page);
+    await expect(remoteMicBluePage._page.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(blueMicNum)).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(P1_Name);
 
     // Red microphone
-    await remoteMicRed.reload();
+    await remoteMicRed._page.reload();
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(redMicNum)).toBeVisible();
-    await remoteMicRed.getByTestId('player-name-input').fill(P2_Name);
-    await connectRemoteMic(remoteMicRed);
-    await expect(remoteMicRed.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
+    await remoteMicRed._page.getByTestId('player-name-input').fill(P2_Name);
+    await connectRemoteMic(remoteMicRed._page);
+    await expect(remoteMicRed._page.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(redMicNum)).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(P2_Name);
 
-    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
+    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMicRed._page);
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
   });
 
   await test.step('Expect confirmation status from players', async () => {
-    await remoteMicBluePage.getByTestId('ready-button').click();
+    await remoteMicBluePage._page.getByTestId('ready-button').click();
     await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(P1_Name);
-    await remoteMicRed.getByTestId('ready-button').click();
+    await remoteMicRed._page.getByTestId('ready-button').click();
     await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(P2_Name);
   });
 
   await test.step('Check if restart song is possible', async () => {
     await expect(pages.gamePage.getSongLyricsForPlayerElement(blueMicNum)).toBeVisible({ timeout: 10_000 });
-    await expect(remoteMicBluePage.getByTestId('keyboard-enter')).not.toBeDisabled();
+    await expect(remoteMicBluePage._page.getByTestId('keyboard-enter')).not.toBeDisabled();
 
-    await remoteMicBluePage.getByTestId('keyboard-backspace').click();
+    await remoteMicBluePage._page.getByTestId('keyboard-backspace').click();
     await expect(pages.gamePage.restartButton).toBeVisible();
-    await pages.gamePage.navigateToRestartSongWithKeyboard(remoteMicRed);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
+    await pages.gamePage.navigateToRestartSongWithKeyboard(remoteMicRed._page);
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
   });
 
   await test.step('Play song', async () => {
     await page.waitForTimeout(500);
-    await remoteMicBluePage.getByTestId('ready-button').click();
+    await remoteMicBluePage._page.getByTestId('ready-button').click();
     await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(P1_Name);
-    await remoteMicRed.getByTestId('ready-button').click();
+    await remoteMicRed._page.getByTestId('ready-button').click();
     await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(P2_Name);
 
     await expect(pages.gamePage.skipIntroElement).toBeVisible();
     await page.waitForTimeout(1500);
-    await remoteMicRed.getByTestId('keyboard-enter').click();
+    await remoteMicRed._page.getByTestId('keyboard-enter').click();
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
@@ -154,11 +154,11 @@ test('Remote mic should connect, be selectable and control the game', async ({
 
   await test.step('Go to select new song', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
-    await remoteMicBluePage.getByTestId('keyboard-enter').click();
+    await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
   });
 });

@@ -20,10 +20,6 @@ export class MainMenuPagePO {
     await navigateWithKeyboard(this.page, 'sing-a-song', remoteMic);
   }
 
-  public async goToSetupMicrophones() {
-    await this.page.getByTestId('select-input').click();
-  }
-
   public async goToJukebox() {
     await this.page.getByTestId('jukebox').click();
   }

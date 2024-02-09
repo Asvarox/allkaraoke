@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, Page, devices, expect, test } from '@playwright/test';
+import initialiseRemoteMic from '../PageObjects/RemoteMic/initialiseRemoteMic';
 import initialise from '../PageObjects/initialise';
 import { initTestMode, mockSongs } from '../helpers';
 
@@ -8,7 +9,7 @@ export async function connectRemoteMic(remoteMicPage: Page) {
     ignoreCase: true,
   });
 }
-export async function openRemoteMic(page: Page, context: BrowserContext) {
+export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser) {
   const remoteMic = await context.newPage();
   await mockSongs({ page: remoteMic, context });
   await initTestMode({ page: remoteMic, context });
@@ -17,7 +18,7 @@ export async function openRemoteMic(page: Page, context: BrowserContext) {
   await remoteMic.goto(serverUrl);
   await remoteMic.getByTestId('confirm-wifi-connection').click();
 
-  return remoteMic;
+  return initialiseRemoteMic(remoteMic, context, browser);
 }
 
 export async function openAndConnectRemoteMicDirectly(page: Page, browser: Browser, name: string) {
@@ -27,10 +28,10 @@ export async function openAndConnectRemoteMicDirectly(page: Page, browser: Brows
       // Firefox doesn't support isMobile
       isMobile: browser.browserType().name() !== 'firefox',
     });
-    const remoteMic = await openRemoteMic(page, context);
+    const remoteMic = await openRemoteMic(page, context, browser);
 
-    await remoteMic.getByTestId('player-name-input').fill(name);
-    await connectRemoteMic(remoteMic);
+    await remoteMic._page.getByTestId('player-name-input').fill(name);
+    await connectRemoteMic(remoteMic._page);
 
     return remoteMic;
   });
@@ -59,6 +60,6 @@ export async function openAndConnectRemoteMicWithCode(page: Page, browser: Brows
     await remoteMic.getByTestId('player-name-input').fill(name);
     await connectRemoteMic(remoteMic);
 
-    return remoteMic;
+    return initialiseRemoteMic(remoteMic, context, browser);
   });
 }

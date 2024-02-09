@@ -11,46 +11,61 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
+const playerName = 'E2E Test Blue';
+
 test('Should properly manage remote mics permission settings', async ({ page, context, browser }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('skip').click();
-  await page.getByTestId('settings').click();
-  await page.getByTestId('remote-mics-settings').click();
+  await pages.inputSelectionPage.skipToMainMenu();
+  await pages.mainMenuPage.goToSetting();
+  await pages.settingsPage.openRemoteMicSettings();
 
-  await test.step('sets and remembers default permission', async () => {
-    await expect(await page.getByTestId('default-permission')).toContainText('WRITE', { ignoreCase: true });
-    await page.getByTestId('default-permission').click();
-    await expect(await page.getByTestId('default-permission')).toContainText('READ', { ignoreCase: true });
+  await test.step('Sets and remembers default permission', async () => {
+    await pages.settingsPage.expectDefaultPermissionToBeWrite();
+    await pages.settingsPage.toggleDefaultPermission();
+    await pages.settingsPage.expectDefaultPermissionToBeRead();
+
     await page.reload();
-    await expect(await page.getByTestId('default-permission')).toContainText('READ', { ignoreCase: true });
+    await pages.settingsPage.expectDefaultPermissionToBeRead();
   });
 
-  await page.getByTestId('quick-connect-phone').click();
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'E2E Test Blue');
-  await page.getByTestId('quick-connect-close').click();
-
-  await test.step('newly connected phone gets default permission', async () => {
-    await expect(await remoteMic.getByTestId('no-permissions-message')).toBeVisible();
-    await expect(await remoteMic.getByTestId('remote-keyboard')).not.toBeVisible();
-    await expect(await remoteMic.getByTestId('change-player')).not.toBeVisible();
-    await remoteMic.getByTestId('menu-settings').click();
-    await expect(await remoteMic.getByTestId('manage-game')).not.toBeVisible();
+  await test.step('Open quick connect phone', async () => {
+    await pages.settingsPage.quickConnectPhone();
   });
 
-  await test.step('write access allows for keyboard and change player', async () => {
-    await page.getByTestId('remote-mic-entry').click();
-    await expect(await remoteMic.getByTestId('manage-game')).toBeVisible();
-    await remoteMic.getByTestId('menu-microphone').click();
-    await expect(await remoteMic.getByTestId('remote-keyboard')).toBeVisible();
-    await expect(await remoteMic.getByTestId('change-player')).toBeVisible();
+  // Connect mic
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
+
+  await test.step('Close quick connect', async () => {
+    await pages.settingsPage.closeQuickConnectPhone();
   });
 
-  await test.step('selected permission is persisted for the remote mic', async () => {
-    await remoteMic.reload();
-    await connectRemoteMic(remoteMic);
+  await test.step('Newly connected phone gets default permission', async () => {
+    await pages.settingsPage.expectDefaultPermissionToBeRead();
+    await pages.settingsPage.expectConnectedDevicePermissionToBeRead();
 
-    await expect(await remoteMic.getByTestId('remote-keyboard')).toBeVisible();
-    await expect(await remoteMic.getByTestId('change-player')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('no-permissions-message')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('remote-keyboard')).not.toBeVisible();
+    await expect(remoteMic._page.getByTestId('change-player')).not.toBeVisible();
+    await remoteMic._page.getByTestId('menu-settings').click();
+    await expect(remoteMic._page.getByTestId('manage-game')).not.toBeVisible();
+  });
+
+  await test.step('Write access allows for keyboard and change player', async () => {
+    await pages.settingsPage.toggleConnectedDevicePermission();
+    await pages.settingsPage.expectConnectedDevicePermissionToBeWrite();
+
+    await expect(remoteMic._page.getByTestId('manage-game')).toBeVisible();
+    await remoteMic._page.getByTestId('menu-microphone').click();
+    await expect(remoteMic._page.getByTestId('remote-keyboard')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('change-player')).toBeVisible();
+  });
+
+  await test.step('Selected permission is persisted for the remote mic', async () => {
+    await remoteMic._page.reload();
+    await connectRemoteMic(remoteMic._page);
+
+    await expect(remoteMic._page.getByTestId('remote-keyboard')).toBeVisible();
+    await expect(remoteMic._page.getByTestId('change-player')).toBeVisible();
   });
 });
