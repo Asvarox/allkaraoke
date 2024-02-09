@@ -93,7 +93,7 @@ const RAW_RUNTIME_STATE =
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
           ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.7.0"],\
-          ["msgpackr", "npm:1.10.0"],\
+          ["msgpackr", "npm:1.10.1"],\
           ["musicbrainz-api", "npm:0.11.0"],\
           ["node-fetch", "npm:3.3.2"],\
           ["npm-run-all", "npm:4.1.5"],\
@@ -18787,10 +18787,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["msgpackr", [\
-      ["npm:1.10.0", {\
-        "packageLocation": "./.yarn/cache/msgpackr-npm-1.10.0-40ff8e56d8-2f4330a5ce.zip/node_modules/msgpackr/",\
+      ["npm:1.10.1", {\
+        "packageLocation": "./.yarn/cache/msgpackr-npm-1.10.1-5c5ff5c553-9fc78c7843.zip/node_modules/msgpackr/",\
         "packageDependencies": [\
-          ["msgpackr", "npm:1.10.0"],\
+          ["msgpackr", "npm:1.10.1"],\
           ["msgpackr-extract", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
@@ -19338,7 +19338,7 @@ const RAW_RUNTIME_STATE =
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
           ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.7.0"],\
-          ["msgpackr", "npm:1.10.0"],\
+          ["msgpackr", "npm:1.10.1"],\
           ["musicbrainz-api", "npm:0.11.0"],\
           ["node-fetch", "npm:3.3.2"],\
           ["npm-run-all", "npm:4.1.5"],\
