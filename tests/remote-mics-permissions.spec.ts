@@ -18,7 +18,7 @@ test('Should properly manage remote mics permission settings', async ({ page, co
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSetting();
-  await pages.settingsPage.remoteMicSettings();
+  await pages.settingsPage.openRemoteMicSettings();
 
   await test.step('Sets and remembers default permission', async () => {
     await pages.settingsPage.expectDefaultPermissionToBeWrite();

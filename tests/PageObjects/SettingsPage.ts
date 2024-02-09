@@ -3,7 +3,7 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 export class SettingsPagePO {
   constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
 
-  public async remoteMicSettings() {
+  public async openRemoteMicSettings() {
     await this.page.getByTestId('remote-mics-settings').click();
   }
 
