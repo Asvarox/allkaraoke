@@ -78,7 +78,7 @@ const RAW_RUNTIME_STATE =
           ["aubiojs", "npm:0.1.0"],\
           ["curtainsjs", "npm:8.1.5"],\
           ["dayjs", "npm:1.11.10"],\
-          ["dotenv", "npm:16.3.1"],\
+          ["dotenv", "npm:16.4.1"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.1.0"],\
           ["eslint-config-react-app", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.1"],\
@@ -14350,6 +14350,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["npm:16.4.1", {\
+        "packageLocation": "./.yarn/cache/dotenv-npm-16.4.1-07f53222f2-8da2025063.zip/node_modules/dotenv/",\
+        "packageDependencies": [\
+          ["dotenv", "npm:16.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:9.0.2", {\
         "packageLocation": "./.yarn/cache/dotenv-npm-9.0.2-fd127dfe81-8a31ab90b0.zip/node_modules/dotenv/",\
         "packageDependencies": [\
@@ -19323,7 +19330,7 @@ const RAW_RUNTIME_STATE =
           ["aubiojs", "npm:0.1.0"],\
           ["curtainsjs", "npm:8.1.5"],\
           ["dayjs", "npm:1.11.10"],\
-          ["dotenv", "npm:16.3.1"],\
+          ["dotenv", "npm:16.4.1"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-prettier", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:9.1.0"],\
           ["eslint-config-react-app", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:7.0.1"],\
