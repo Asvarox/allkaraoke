@@ -2,7 +2,11 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongListPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public async goToGroupNavigation(groupName: any) {
     await this.page.getByTestId(`group-navigation-${groupName}`).click();
@@ -92,5 +96,9 @@ export class SongListPagePO {
 
   public async approveSelectedSongByKeyboard() {
     await this.page.keyboard.press('Enter');
+  }
+
+  public async expectSongToBeVisibleAsNew(songID: string) {
+    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
   }
 }
