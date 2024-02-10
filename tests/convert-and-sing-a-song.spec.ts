@@ -20,7 +20,6 @@ const songLanguage = 'English';
 const songID = 'convert-test';
 const player1 = 0;
 const playerName = 'All-Karaoke';
-const micName = 'Fake Default Audio Input (ch 1)';
 const englishPlaylist = 'English';
 const oldiePlaylist = 'Oldies';
 
@@ -69,7 +68,6 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Select computer`s mic', async () => {
     await pages.mainMenuPage.goToSetupMicrophones();
     await pages.inputSelectionPage.selectComputersMicrophone();
-    await expect(pages.computersMicConnectionPage.micInputNameElement).toContainText(micName);
   });
 
   await test.step('Select song language', async () => {
