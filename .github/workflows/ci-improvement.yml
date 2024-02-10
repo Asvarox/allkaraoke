@@ -117,6 +117,7 @@ jobs:
         shell: bash
       - name: Deploy PR 🚀
         uses: JamesIves/github-pages-deploy-action@v4
+        continue-on-error: true
         with:
           folder: build # The folder the action should deploy.
           target-folder: prs/${{ github.event.number }} # The folder the action should deploy to.
