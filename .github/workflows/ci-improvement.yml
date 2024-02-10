@@ -33,6 +33,7 @@ jobs:
           packagescript: 'e2e'
           project: 'chromium'
       - uses: actions/upload-artifact@v3
+        name: Upload built app for PROD deployment
         if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
         with:
           name: built-app
@@ -65,10 +66,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: ['e2e-tests-run-chromium', 'e2e-tests-run-firefox', 'ct-tests-run', 'quick-checks']
+    environment:
+      name: production
+      url: https://allkaraoke.party/
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 30
+          fetch-depth: 30 # needed for Sentry to get list of commits released
       - uses: actions/download-artifact@v3
         with:
           name: built-app
@@ -76,7 +80,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
 
       - name: Create Sentry release
@@ -97,3 +100,25 @@ jobs:
             https://eu.posthog.com/api/projects/281/annotations/
         env:
           POSTHOG_PAT_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+  deploy-branch:
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/master'
+    environment:
+      name: prs
+      url: https://allkaraoke.party/prs/${{ github.event.number }}/
+    env:
+      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
+      VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: yarn build --base /prs/${{ github.event.number }}/ && rm -rf build/songs
+        shell: bash
+      - name: Deploy PR 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
+          target-folder: prs/${{ github.event.number }} # The folder the action should deploy to.
+          clean-exclude: |
+            !prs/${{ github.event.number }}/

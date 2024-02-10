@@ -1,5 +1,5 @@
 import { css, Global } from '@emotion/react';
-import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
+import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
 import dayjs from 'dayjs';
 import { GameScreens } from 'Elements/GameScreens';
 import { SongPreview } from 'interfaces';

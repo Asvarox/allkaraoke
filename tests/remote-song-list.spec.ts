@@ -29,7 +29,6 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic = await openRemoteMic(page, context, browser);
-  console.log(remoteMic);
   await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
 
   await test.step('Song list is available without connecting', async () => {
