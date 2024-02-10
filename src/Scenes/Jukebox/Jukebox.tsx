@@ -26,7 +26,7 @@ function Jukebox(props: Props) {
   const songList = useSongIndex();
 
   const [shuffledList, setShuffledList] = useState<SongPreview[]>([]);
-  const { register } = useKeyboardNav({ onBackspace: () => navigate('menu') });
+  const { register } = useKeyboardNav({ onBackspace: () => navigate('menu/') });
 
   useEffect(() => songList.data && setShuffledList(shuffle(songList.data)), [songList.data]);
 

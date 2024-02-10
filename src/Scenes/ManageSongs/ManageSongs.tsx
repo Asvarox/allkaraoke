@@ -8,7 +8,7 @@ interface Props {}
 
 function ManageSongs(props: Props) {
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('menu');
+  const goBack = () => navigate('menu/');
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
@@ -16,15 +16,15 @@ function ManageSongs(props: Props) {
     <MenuWithLogo>
       <h1>Manage Songs</h1>
       <SmoothLink to="exclude-languages/">
-        <MenuButton {...register('exclude-languages', () => navigate('exclude-languages'))}>
+        <MenuButton {...register('exclude-languages', () => navigate('exclude-languages/'))}>
           Select Song Languages
         </MenuButton>
       </SmoothLink>
       <SmoothLink to="edit/list/">
-        <MenuButton {...register('edit-songs', () => navigate('edit/list'))}>Edit songs</MenuButton>
+        <MenuButton {...register('edit-songs', () => navigate('edit/list/'))}>Edit songs</MenuButton>
       </SmoothLink>
       <SmoothLink to="convert/">
-        <MenuButton {...register('convert-song', () => navigate('convert'))}>Convert UltraStar .txt</MenuButton>
+        <MenuButton {...register('convert-song', () => navigate('convert/'))}>Convert UltraStar .txt</MenuButton>
       </SmoothLink>
       <hr />
       <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>

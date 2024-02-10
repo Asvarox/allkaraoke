@@ -1,12 +1,12 @@
-import christmasBackgroundMusicSound from 'assets/2020-12-16_-_Christmas_Rock_-_www.FesliyanStudios.com_Steve_Oxen.mp3';
-import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.wav';
-import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.mp3';
-import waitForReadinessSound from 'assets/459342__papaninkasettratat__cinematic-music-short.mp3';
+import christmasBackgroundMusicSound from 'assets/2020-12-16_-_Christmas_Rock_-_www.FesliyanStudios.com_Steve_Oxen.ogg';
+import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.ogg';
+import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.ogg';
+import waitForReadinessSound from 'assets/459342__papaninkasettratat__cinematic-music-short.ogg';
 import wooshSound from 'assets/60013__qubodup__whoosh.mp3';
-import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
-import menuBackSound from 'assets/menu_back.wav';
-import menuEnterSound from 'assets/menu_enter.wav';
-import menuNavigateSound from 'assets/menu_navigate.wav';
+import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
+import menuBackSound from 'assets/menu_back.mp3';
+import menuEnterSound from 'assets/menu_enter.mp3';
+import menuNavigateSound from 'assets/menu_navigate.mp3';
 
 class Sound {
   private sound: HTMLAudioElement;

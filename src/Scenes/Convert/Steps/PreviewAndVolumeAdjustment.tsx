@@ -1,7 +1,7 @@
 import { Box, Slider } from '@mui/material';
 import { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import { msec } from 'Scenes/Convert/Steps/SyncLyricsToVideo/Helpers/formatMs';
-import backgroundMusic from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.mp3';
+import backgroundMusic from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
 import { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 

@@ -19,7 +19,7 @@ interface Props {}
 function RemoteMicSettings(props: Props) {
   useBackgroundMusic(false);
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('settings');
+  const goBack = () => navigate('settings/');
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 

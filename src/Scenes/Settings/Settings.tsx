@@ -24,7 +24,7 @@ interface Props {}
 function Settings(props: Props) {
   useBackgroundMusic(false);
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('menu');
+  const goBack = () => navigate('menu/');
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
@@ -88,13 +88,13 @@ function Settings(props: Props) {
         info="Adjust the game to a smaller screen. Disables option to sing in duets."
       />
       <hr />
-      <MenuButton {...register('remote-mics-settings', () => navigate('settings/remote-mics'))} size="small">
+      <MenuButton {...register('remote-mics-settings', () => navigate('settings/remote-mics/'))} size="small">
         Remote Microphones Settings
       </MenuButton>
-      <MenuButton {...register('setup-mics-button', () => navigate('select-input'))} size="small">
+      <MenuButton {...register('setup-mics-button', () => navigate('select-input/'))} size="small">
         Setup Microphones
       </MenuButton>
-      <MenuButton {...register('manage-songs-button', () => navigate('manage-songs'))} size="small">
+      <MenuButton {...register('manage-songs-button', () => navigate('manage-songs/'))} size="small">
         Manage Songs
       </MenuButton>
       <MenuButton {...register('back-button', goBack)}>Return To Main Menu</MenuButton>

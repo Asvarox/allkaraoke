@@ -6,7 +6,7 @@ interface Props {}
 
 function ExcludeLanguages(props: Props) {
   const navigate = useSmoothNavigate();
-  const goBack = () => navigate('menu');
+  const goBack = () => navigate('menu/');
 
   return (
     <NoPrerender>

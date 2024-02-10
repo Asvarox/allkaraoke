@@ -161,7 +161,7 @@ export const useSongSelectionKeyboardNavigation = (
   const handleBackspace = () => {
     if (!blockBack && !appliedFilters.search) {
       menuBack.play();
-      navigate('menu');
+      navigate('menu/');
     }
   };
 
