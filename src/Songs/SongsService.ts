@@ -61,7 +61,7 @@ class SongsService {
     const localSong = await this.getLocal(songId);
 
     if (!localSong) {
-      return await fetch(`${import.meta.env.BASE_URL}songs/${songId}.txt`)
+      return await fetch(`/songs/${songId}.txt`)
         .then((response) => response.text())
         .then(convertTxtToSong);
     }
@@ -89,9 +89,7 @@ class SongsService {
 
   public reloadIndex = async () => {
     const [defaultIndex, storageIndex, deletedSongs] = await Promise.all([
-      fetch(`${import.meta.env.BASE_URL}songs/index.json`).then(
-        (response) => response.json() as Promise<SongPreview[]>,
-      ),
+      fetch(`/songs/index.json`).then((response) => response.json() as Promise<SongPreview[]>),
       this.getLocalIndex(),
       this.getDeletedSongsList(),
     ]);
