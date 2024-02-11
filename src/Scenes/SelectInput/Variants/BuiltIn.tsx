@@ -69,7 +69,7 @@ function BuiltIn(props: Props) {
   usePlayerNumberPreset(1, 1);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
 
-  const { Microphone } = useMicrophoneList(true);
+  const { Microphone } = useMicrophoneList(true, 'Microphone');
 
   const selectedMic = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {
     const selected = PlayersManager.getInputs().find((input) => input.source === 'Microphone');

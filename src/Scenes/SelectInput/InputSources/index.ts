@@ -20,8 +20,11 @@ class InputSourceListManager {
       [MicrophoneInputSource.inputName]: this.initialiseInputSource(MicrophoneInputSource, true),
       [DummyInputSource.inputName]: this.initialiseInputSource(DummyInputSource),
       [RemoteMicrophoneInputSource.inputName]: this.initialiseInputSource(RemoteMicrophoneInputSource),
-      [DrawingTestInputSource.inputName]: this.initialiseInputSource(DrawingTestInputSource),
     };
+    if (import.meta.env.MODE === 'test') {
+      // @ts-expect-error
+      this.inputList[DrawingTestInputSource.inputName] = this.initialiseInputSource(DummyInputSource);
+    }
   }
 
   private initialiseInputSource = <T extends InputSourceManagerInterface>(source: T, lazily = false) => {

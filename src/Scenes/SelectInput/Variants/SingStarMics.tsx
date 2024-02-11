@@ -29,7 +29,7 @@ interface Props {
 function SingStarMics(props: Props) {
   usePlayerNumberPreset(2);
   const { register } = useKeyboardNav({ onBackspace: props.onBack });
-  const { Microphone } = useMicrophoneList(true);
+  const { Microphone } = useMicrophoneList(true, 'Microphone');
   const [showAdvancedTip, setShowAdvancedTip] = useState(false);
 
   const isSetup = useEventListenerSelector([events.playerInputChanged, events.inputListChanged], () => {

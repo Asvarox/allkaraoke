@@ -25,7 +25,7 @@ test('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await page.getByTestId('dismiss-mobile-mode').click();
-  await expect(page.getByTestId('mics')).toBeVisible(); // Singstar Mics is hidden when in Mobile Mode
+  await expect(page.getByTestId('multiple-mics')).toBeVisible(); // Multiple Mics is hidden when in Mobile Mode
 });
 
 const P1_Name = 'E2E Test Blue';

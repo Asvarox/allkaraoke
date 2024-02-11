@@ -2,10 +2,9 @@ import { captureException } from '@sentry/react';
 import events from 'GameEvents/GameEvents';
 import AubioStrategy from 'Scenes/Game/Singing/Input/MicStrategies/Aubio';
 import userMediaService from 'UserMedia/userMediaService';
-import Listener from 'utils/Listener';
 import InputInterface from './Interface';
 
-class MicInput extends Listener<[[number, number], [number, number]]> implements InputInterface {
+export class MicInput implements InputInterface {
   private stream: MediaStream | null = null;
   private context: AudioContext | null = null;
 
@@ -57,8 +56,6 @@ class MicInput extends Listener<[[number, number], [number, number]]> implements
           this.frequencies = await Promise.all([strategy.getFrequency(dataCh0), strategy.getFrequency(dataCh1)]);
 
           this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
-
-          this.onUpdate(this.frequencies, this.volumes);
         }, this.context.sampleRate / analyserCh0.fftSize);
 
         events.micMonitoringStarted.dispatch();
@@ -95,7 +92,6 @@ class MicInput extends Listener<[[number, number], [number, number]]> implements
   };
 
   public getInputLag = () => 180;
-  public getChannelsCount = () => 2;
 
   private calculateVolume(input: Float32Array) {
     let i;
