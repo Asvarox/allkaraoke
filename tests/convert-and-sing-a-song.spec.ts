@@ -19,7 +19,9 @@ const songYear = '1992';
 const songLanguage = 'English';
 const songID = 'convert-test';
 const player1 = 0;
-const playerName = 'All-Karaoke';
+const player2 = 1;
+const player1Name = 'All';
+const player2Name = 'Karaoke';
 const englishPlaylist = 'English';
 const oldiePlaylist = 'Oldies';
 
@@ -65,13 +67,13 @@ test('Convert and sing a song', async ({ page }) => {
     await pages.editSongsPage.goToMainMenu();
   });
 
-  await test.step('Select computer`s mic', async () => {
+  await test.step('Select advanced setup', async () => {
     await pages.mainMenuPage.goToSetupMicrophones();
-    await pages.inputSelectionPage.selectComputersMicrophone();
+    await pages.inputSelectionPage.selectAdvancedSetup();
   });
 
   await test.step('Select song language', async () => {
-    await pages.computersMicConnectionPage.goToMainMenuPage();
+    await pages.advancedConnectionPage.saveAndGoToSing();
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
   });
@@ -85,22 +87,28 @@ test('Convert and sing a song', async ({ page }) => {
     await pages.songPreviewPage.goNext();
   });
 
-  await test.step('Set player`s name', async () => {
+  await test.step('Set players names', async () => {
     await pages.songPreviewPage.getPlayerNameInput(player1).click();
-    await pages.songPreviewPage.enterPlayerNameWithKeyboard(playerName);
+    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player1Name);
+
+    await pages.songPreviewPage.getPlayerNameInput(player2).click();
+    await pages.songPreviewPage.enterPlayerNameWithKeyboard(player2Name);
   });
 
   await test.step('Play the song', async () => {
     await pages.songPreviewPage.playTheSong();
     await expect(pages.gamePage.getSongLyricsForPlayerElement(player1)).toBeVisible();
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(player2)).toBeVisible();
   });
 
-  await test.step('Check if the entered player`s name is displayed', async () => {
+  await test.step('Check if the entered players names are displayed', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 20_000 });
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, playerName);
+    await pages.postGameResultsPage.expectPlayersNamesCoopToBeDisplayed(player1Name, player2Name);
   });
 
   await test.step('Check if the song is visible in the new-songs category', async () => {
+    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
+    await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToPostGameHighScoresStep();
     await pages.postGameHighScoresPage.goToSelectNewSong();
     await pages.songListPage.expectSongToBeVisibleAsNew(songID);
