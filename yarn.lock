@@ -12842,7 +12842,7 @@ __metadata:
     peerjs: "npm:^2.0.0-beta.3"
     playwright: "npm:^1.41.2"
     playwright-core: "npm:^1.41.2"
-    posthog-js: "npm:^1.103.1"
+    posthog-js: "npm:^1.105.7"
     prettier: "npm:^3.2.5"
     prettier-plugin-organize-imports: "npm:^3.2.4"
     qrcode.react: "npm:^3.1.0"
@@ -13534,13 +13534,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.103.1":
-  version: 1.103.1
-  resolution: "posthog-js@npm:1.103.1"
+"posthog-js@npm:^1.105.7":
+  version: 1.105.7
+  resolution: "posthog-js@npm:1.105.7"
   dependencies:
     fflate: "npm:^0.4.8"
     preact: "npm:^10.19.3"
-  checksum: 5173f01e74e3cc18b0fc7da98e3818bce14d135d3f33ff3f3c72193dfd22598b6c8b74ba2c7f7d91d453359b798d277eb48bc705249d929a6814bff7605efa89
+  checksum: 3eef020aa0cb9813e0c1d121c582f75d470368e9b90b889cef6bb684d955455cdded07877efd2f90ee808b389d3fac8a2ecc2ee45b79dc4a1d44c960f24f24e2
   languageName: node
   linkType: hard
 
