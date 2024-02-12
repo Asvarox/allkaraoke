@@ -59,7 +59,7 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
     await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
     await pages.postGameResultsPage.skipScoresAnimation();
-    await pages.postGameResultsPage.goToPostGameHighScoresStep();
+    await pages.postGameResultsPage.goToHighScoresStep();
     await expect(pages.postGameHighScoresPage.getPlayersNamesCoopInput(player1Name, player2Name)).toBeVisible();
   });
 });

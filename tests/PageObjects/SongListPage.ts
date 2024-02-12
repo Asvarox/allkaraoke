@@ -32,10 +32,6 @@ export class SongListPagePO {
     return this.page.getByTestId('song-list-container');
   }
 
-  public get searchInput() {
-    return this.page.getByTestId('filters-search');
-  }
-
   public get songPreviewElement() {
     return this.page.getByTestId('song-preview');
   }
@@ -74,6 +70,16 @@ export class SongListPagePO {
 
   public get searchButton() {
     return this.page.getByTestId('search-song-button');
+  }
+
+  public get searchInput() {
+    return this.page.getByTestId('filters-search');
+  }
+
+  public async searchSong(songID: string) {
+    await this.searchButton.click();
+    await expect(this.searchInput).toBeVisible();
+    await this.page.keyboard.type(songID);
   }
 
   public get pickRandomButton() {

@@ -80,9 +80,7 @@ test('Convert and sing a song', async ({ page }) => {
 
   await test.step('Search and pick up converted song', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await pages.songListPage.searchButton.click();
-    await expect(pages.songListPage.searchInput).toBeVisible();
-    await page.keyboard.type(songID);
+    await pages.songListPage.searchSong(songID);
     await pages.songListPage.openPreviewForSong(songID);
     await pages.songPreviewPage.goNext();
   });
@@ -109,7 +107,7 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Check if the song is visible in the new-songs category', async () => {
     await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
-    await pages.postGameResultsPage.goToPostGameHighScoresStep();
+    await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSelectNewSong();
     await pages.songListPage.expectSongToBeVisibleAsNew(songID);
   });

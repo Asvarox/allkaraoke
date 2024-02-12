@@ -51,7 +51,7 @@ export class PostGameResultsPagePO {
     return this.page.getByTestId('highscores-button');
   }
 
-  public async goToPostGameHighScoresStep() {
+  public async goToHighScoresStep() {
     await this.nextButton.click();
   }
 }
