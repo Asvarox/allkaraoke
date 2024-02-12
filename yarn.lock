@@ -3125,9 +3125,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/x-date-pickers@npm:^6.19.3":
-  version: 6.19.3
-  resolution: "@mui/x-date-pickers@npm:6.19.3"
+"@mui/x-date-pickers@npm:^6.19.4":
+  version: 6.19.4
+  resolution: "@mui/x-date-pickers@npm:6.19.4"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     "@mui/base": "npm:^5.0.0-beta.22"
@@ -3169,7 +3169,7 @@ __metadata:
       optional: true
     moment-jalaali:
       optional: true
-  checksum: cf81929b8e41925d9dde5338af357449858ddec220b95131b97f39c41593ecf9777f1e487cc291290776c2885ac15e7255e72dad8cd8478c1ce8f3db079df012
+  checksum: 45064d558e3c316f35604c0fbc2c150ee646aabba405d334043158f2d6c6635470188cccc08508e682881c0d6cde38ad9c775d156369a8453461c1cca7be9e08
   languageName: node
   linkType: hard
 
@@ -12775,7 +12775,7 @@ __metadata:
     "@mui/icons-material": "npm:^5.15.9"
     "@mui/material": "npm:^5.15.9"
     "@mui/system": "npm:^5.15.9"
-    "@mui/x-date-pickers": "npm:^6.19.3"
+    "@mui/x-date-pickers": "npm:^6.19.4"
     "@playwright/experimental-ct-react": "npm:1.41.2"
     "@playwright/test": "npm:1.41.2"
     "@remotion/cli": "npm:^4.0.84"
