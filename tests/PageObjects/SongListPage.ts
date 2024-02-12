@@ -2,7 +2,11 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongListPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public async goToGroupNavigation(groupName: any) {
     await this.page.getByTestId(`group-navigation-${groupName}`).click();
@@ -26,10 +30,6 @@ export class SongListPagePO {
 
   public get songListElement() {
     return this.page.getByTestId('song-list-container');
-  }
-
-  public get searchInput() {
-    return this.page.getByTestId('filters-search');
   }
 
   public get songPreviewElement() {
@@ -72,6 +72,16 @@ export class SongListPagePO {
     return this.page.getByTestId('search-song-button');
   }
 
+  public get searchInput() {
+    return this.page.getByTestId('filters-search');
+  }
+
+  public async searchSong(songID: string) {
+    await this.searchButton.click();
+    await expect(this.searchInput).toBeVisible();
+    await this.page.keyboard.type(songID);
+  }
+
   public get pickRandomButton() {
     return this.page.getByTestId('random-song-button');
   }
@@ -92,5 +102,9 @@ export class SongListPagePO {
 
   public async approveSelectedSongByKeyboard() {
     await this.page.keyboard.press('Enter');
+  }
+
+  public async expectSongToBeVisibleAsNew(songID: string) {
+    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
   }
 }

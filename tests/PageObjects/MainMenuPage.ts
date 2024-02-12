@@ -2,7 +2,11 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class MainMenuPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get singSongElement() {
     return this.page.getByTestId('sing-a-song');
@@ -14,6 +18,10 @@ export class MainMenuPagePO {
 
   public async navigateToSongListWithKeyboard(remoteMic?: Page) {
     await navigateWithKeyboard(this.page, 'sing-a-song', remoteMic);
+  }
+
+  public async goToSetupMicrophones() {
+    await this.page.getByTestId('select-input').click();
   }
 
   public async goToSetting() {
