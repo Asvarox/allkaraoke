@@ -31,6 +31,7 @@ test('SingStar wireless mic is detected properly', async ({ page, context }) => 
   await pages.landingPage.enterTheGame();
 
   await test.step('Go to Singstar mic', async () => {
+    await pages.inputSelectionPage.selectMultipleMicrophones();
     await pages.inputSelectionPage.selectSingstarMicrophones();
     await expect(pages.singstarConnectionPage.detectionAdvancedTip).toBeVisible();
   });

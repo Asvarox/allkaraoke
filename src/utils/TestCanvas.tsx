@@ -53,7 +53,9 @@ export const TestCanvas = (props: Props) => {
       tolerance: 2,
     });
 
+    // @ts-expect-error
     PlayersManager.getPlayer(0)!.changeInput('DrawingTest', 0);
+    // @ts-expect-error
     PlayersManager.getPlayer(1)!.changeInput('DrawingTest', 1);
   }, []);
 

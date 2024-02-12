@@ -35,6 +35,7 @@ const config: PlaywrightTestConfig = defineConfig({
     ctPort: 3100,
 
     ctViteConfig: {
+      mode: 'test',
       plugins: [
         react({
           babel: {

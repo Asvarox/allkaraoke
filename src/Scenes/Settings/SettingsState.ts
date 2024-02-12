@@ -34,7 +34,15 @@ export const GraphicsLevel = ['high', 'low'] as const;
 const GRAPHICS_LEVEL_KEY = 'graphics-level';
 export const GraphicSetting = new Setting<ValuesType<typeof GraphicsLevel>>(GRAPHICS_LEVEL_KEY, GraphicsLevel[0]);
 
-export const MicSetupPreference = [null, 'skip', 'remoteMics', 'mics', 'advanced', 'built-in'] as const;
+export const MicSetupPreference = [
+  null,
+  'skip',
+  'remoteMics',
+  'singstar-mics',
+  'different-mics',
+  'advanced',
+  'built-in',
+] as const;
 const MIC_SETUP_PREFERENCE_KEY = 'mic-setup-preference';
 export const MicSetupPreferenceSetting = new Setting<ValuesType<typeof MicSetupPreference>>(
   MIC_SETUP_PREFERENCE_KEY,
