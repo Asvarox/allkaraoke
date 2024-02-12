@@ -127,6 +127,6 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Song should be marked as played today', async () => {
-    //await pages.songListPage.expectSongToBeMarkedAsPlayedToday(songID);
+    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(songID);
   });
 });
