@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class InputSelectionPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public async selectSmartphones() {
     await this.page.getByTestId('remote-mics').click();
@@ -12,7 +16,11 @@ export class InputSelectionPagePO {
   }
 
   public async selectSingstarMicrophones() {
-    await this.page.getByTestId('mics').click();
+    await this.page.getByTestId('singstar-mics').click();
+  }
+
+  public async selectMultipleMicrophones() {
+    await this.page.getByTestId('multiple-mics').click();
   }
 
   public get advancedButton() {

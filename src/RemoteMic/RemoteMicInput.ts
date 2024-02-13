@@ -14,8 +14,6 @@ class RemoteMicInput {
     private inputLag: number,
   ) {}
 
-  getChannelsCount = () => 1;
-
   getFrequencies = () => {
     const freqs = this.frequencies;
 

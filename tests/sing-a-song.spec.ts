@@ -95,7 +95,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1, player1Name);
   await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2, player2Name);
   await pages.postGameResultsPage.skipScoresAnimation();
-  await pages.postGameResultsPage.goNext();
+  await pages.postGameResultsPage.goToHighScoresStep();
   await expect(pages.postGameHighScoresPage.getPlayerNameInput(player1Name)).toBeVisible();
   await expect(pages.postGameHighScoresPage.getPlayerNameInput(player2Name)).toBeVisible();
 
@@ -119,6 +119,6 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await page.keyboard.press('Backspace'); // go to pause menu
   await pages.gamePage.goToExitSong();
   await pages.postGameResultsPage.skipScoresAnimation();
-  await pages.postGameResultsPage.goNext();
+  await pages.postGameResultsPage.goToHighScoresStep();
   await expect(pages.postGameHighScoresPage.highScoresContainer).toContainText(updatedName);
 });

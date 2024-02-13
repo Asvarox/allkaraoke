@@ -90,7 +90,6 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
   };
 
   public getInputLag = () => 180;
-  public getChannelsCount = () => 2;
 
   private calculateVolume(input: Float32Array) {
     let i;

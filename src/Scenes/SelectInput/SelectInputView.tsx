@@ -3,6 +3,8 @@ import InputManager from 'Scenes/Game/Singing/Input/InputManager';
 import SelectPreference from 'Scenes/SelectInput/SelectPreference';
 import Advanced from 'Scenes/SelectInput/Variants/Advanced';
 import BuiltIn from 'Scenes/SelectInput/Variants/BuiltIn';
+import DifferentMics from 'Scenes/SelectInput/Variants/DifferentMics';
+import MultipleMics from 'Scenes/SelectInput/Variants/MultipleMics';
 import RemoteMics from 'Scenes/SelectInput/Variants/RemoteMics';
 import SingStarMics from 'Scenes/SelectInput/Variants/SingStarMics';
 import Skip from 'Scenes/SelectInput/Variants/Skip';
@@ -28,7 +30,7 @@ const previouslySelected = localStorage.getItem(LAST_SELECTED_KEY);
 
 function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipText, smooth = true }: Props) {
   const [storedPreference, setStoredPreference] = useSettingValue(MicSetupPreferenceSetting);
-  const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference>>(
+  const [preference, setPreference] = useState<ValuesType<typeof MicSetupPreference> | 'multiple-mics'>(
     storedPreference === 'skip' ? null : storedPreference,
   );
   const [isComplete, setIsComplete] = useState(false);
@@ -100,11 +102,28 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
           changePreference={setPreference}
         />
       )}
-      {preference === 'mics' && (
+      {preference === 'multiple-mics' && (
+        <MultipleMics
+          onSetupComplete={setIsComplete}
+          onBack={back}
+          closeButtonText={closeButtonText}
+          changePreference={setPreference}
+        />
+      )}
+      {preference === 'singstar-mics' && (
         <SingStarMics
           onSetupComplete={setIsComplete}
           onBack={back}
-          onSave={onSave('mics')}
+          onSave={onSave('singstar-mics')}
+          closeButtonText={closeButtonText}
+          changePreference={setPreference}
+        />
+      )}
+      {preference === 'different-mics' && (
+        <DifferentMics
+          onSetupComplete={setIsComplete}
+          onBack={back}
+          onSave={onSave('singstar-mics')}
           closeButtonText={closeButtonText}
           changePreference={setPreference}
         />

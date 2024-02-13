@@ -3,7 +3,7 @@ import PlayersManager from 'Players/PlayersManager';
 import DrawingTestInput from 'Scenes/Game/Singing/Input/DrawingTestInput';
 import dummyInput from 'Scenes/Game/Singing/Input/DummyInput';
 import InputInterface from 'Scenes/Game/Singing/Input/Interface';
-import MicInput from 'Scenes/Game/Singing/Input/MicInput';
+import MicInput from 'Scenes/Game/Singing/Input/MultiMicInput';
 import RemoteMicInput from 'Scenes/Game/Singing/Input/RemoteMicInput';
 import { DrawingTestInputSource } from 'Scenes/SelectInput/InputSources/DrawingTest';
 import { MicrophoneInputSource } from 'Scenes/SelectInput/InputSources/Microphone';
@@ -91,6 +91,7 @@ class InputManager {
   // todo: Create eg. "InputSourceManager" and have the logic there?
   public sourceNameToInput = (sourceName: InputSourceNames): InputInterface => {
     if (sourceName === MicrophoneInputSource.inputName) return MicInput;
+    // @ts-expect-error
     if (sourceName === DrawingTestInputSource.inputName) return DrawingTestInput;
     if (sourceName === RemoteMicrophoneInputSource.inputName) return RemoteMicInput;
     return dummyInput;

@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class PostGameResultsPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get skipScoreElement() {
     return this.page.getByTestId('skip-animation-button');
@@ -47,7 +51,7 @@ export class PostGameResultsPagePO {
     return this.page.getByTestId('highscores-button');
   }
 
-  public async goNext() {
+  public async goToHighScoresStep() {
     await this.nextButton.click();
   }
 }

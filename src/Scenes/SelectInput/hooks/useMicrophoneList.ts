@@ -1,18 +1,25 @@
 import events from 'GameEvents/GameEvents';
 import { useEventListenerSelector } from 'GameEvents/hooks';
 import inputSourceListManager from 'Scenes/SelectInput/InputSources';
-import { InputSource } from 'Scenes/SelectInput/InputSources/interfaces';
+import { InputSourceNames } from 'Scenes/SelectInput/InputSources/interfaces';
 import { useEffect } from 'react';
 
-export interface SourceInputDefault {
-  list: InputSource[];
-  getDefault: () => string | null;
-}
+export function useMicrophoneList(load = false, focus?: InputSourceNames) {
+  const inputs = useEventListenerSelector(events.inputListChanged, () => {
+    const list = { ...inputSourceListManager.getInputList() };
 
-export type SourceMap = Record<string, SourceInputDefault>;
+    if (focus) {
+      return { [focus]: list[focus] } as const;
+    }
 
-export function useMicrophoneList(load = false) {
-  const inputs = useEventListenerSelector(events.inputListChanged, () => inputSourceListManager.getInputList());
+    for (const key in list) {
+      if (list[key as InputSourceNames].list.length === 0) {
+        delete list[key as InputSourceNames];
+      }
+    }
+
+    return list;
+  });
 
   useEffect(() => {
     if (load) {

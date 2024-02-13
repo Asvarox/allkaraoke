@@ -7,7 +7,7 @@ import { InputSourceList, InputSourceNames } from 'Scenes/SelectInput/InputSourc
 import { useEffect } from 'react';
 import tuple from 'utils/tuple';
 
-export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<InputSourceNames, InputSourceList>) {
+export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<string, InputSourceList>) {
   const sourceList = Object.keys(sources) as Array<InputSourceNames>;
   const [selectedPlayerInput, playerInputData] = useEventListenerSelector(
     [events.playerInputChanged, events.inputListChanged],
@@ -32,7 +32,8 @@ export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<Inpu
   const cycleSource = (startingIndex?: number) => {
     const nextSource = nextValue(sourceList, selectedPlayerInput?.source ?? sourceList[0]);
 
-    const input = startingIndex ? sources[nextSource].list[startingIndex] : sources[nextSource].getDefault();
+    const input =
+      startingIndex !== undefined ? sources[nextSource].list[startingIndex] : sources[nextSource].getDefault();
 
     PlayersManager.getPlayer(playerNumber)?.changeInput(nextSource, input?.channel, input?.deviceId);
   };

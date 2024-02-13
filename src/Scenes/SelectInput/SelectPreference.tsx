@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode, Usb } from '@mui/icons-material';
+import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
 import { Badge } from 'Elements/Badge';
 import { MenuButton } from 'Elements/Menu';
 import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
@@ -8,9 +8,10 @@ import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useKeyboardNav from 'hooks/useKeyboardNav';
+import { ValuesType } from 'utility-types';
 
 interface Props {
-  onPreferenceSelected: (preference: (typeof MicSetupPreference)[number]) => void;
+  onPreferenceSelected: (preference: ValuesType<typeof MicSetupPreference> | 'multiple-mics') => void;
   previouslySelected: string | null;
   skipText?: string;
   onBack?: () => void;
@@ -48,7 +49,6 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             that will open Remote Mic website - no need to download an app!
           </OptionDescription>
         </div>
-        <Badge>Recommended</Badge>
         <PlayersNumber>
           <PeopleAlt />
           <strong>1-4</strong>
@@ -74,18 +74,25 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
       </Option>
       <hr />
       {!mobilePhoneMode && (
-        <Option {...register('mics', () => onPreferenceSelected('mics'), undefined, previouslySelected === 'mics')}>
+        <Option
+          {...register(
+            'multiple-mics',
+            () => onPreferenceSelected('multiple-mics'),
+            undefined,
+            previouslySelected === 'multiple-mics',
+          )}>
           <OptionIconContainer>
             <MicIconBlue />
             <MicIconRed />
           </OptionIconContainer>
           <div>
-            SingStar (-ish) microphones
+            Multiple microphones
             <OptionDescription>
-              Select this option and <Usb /> connect your Mics to the computer. It should be selected{' '}
-              <strong>automatically</strong>.
+              Use either <strong>SingStar</strong> or <strong>multiple microphones</strong> connected to the device for
+              each player
             </OptionDescription>
           </div>
+          <Badge>New</Badge>
           <PlayersNumber>
             <PeopleAlt />
             <strong>2</strong>
