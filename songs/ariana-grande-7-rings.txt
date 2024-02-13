@@ -1,0 +1,653 @@
+#ARTIST:Ariana Grande
+#TITLE:7 Rings
+#CREATOR:varisha
+#BPM:382,59
+#YEAR:2019
+#VIDEO:v=QYh6mYIJG2Y
+#LANGUAGE:English
+#GAP:12608,632008154944
+#ALLKARAOKE_ID:ariana-grande-7-rings
+#ALLKARAOKE_LASTUPDATE:2024-02-13T06:15:26.246Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:0,7
+#MP3:Ariana Grande - 7 Rings.mp3
+#COVER:Ariana Grande - 7 Rings.jpg
+#MEDLEYSTARTBEAT:708
+#MEDLEYENDBEAT:1053
+F 26 5 -4 Yeah
+- 31
+: 37 4 1 Break
+: 45 4 6 fast 
+: 52 4 8 at 
+: 59 4 3 Tiffa
+: 67 4 1 ny's 
+: 75 3 1 and 
+: 82 4 -4 bot
+: 89 4 1 tles 
+: 96 4 1 of 
+: 104 4 3 bub
+: 111 5 1 bles
+- 116
+: 125 4 1 Girls 
+: 133 3 6 with 
+: 140 5 8 tat
+: 148 4 3 toos 
+: 155 4 1 who 
+: 162 3 1 like 
+: 170 3 -4 get
+: 176 4 1 ting 
+: 183 4 1 in 
+: 191 4 3 trou
+: 198 4 1 ble
+- 202
+: 212 4 1 Lash
+: 219 2 6 es
+: 222 2 8 ~ 
+: 226 4 6 and 
+: 234 4 1 dia
+: 242 3 3 monds
+- 245
+: 249 4 -1 A
+: 257 4 -1 T
+: 264 2 4 M
+: 267 2 6 ~ 
+: 271 4 4 ma
+: 279 11 -3 chines
+- 290
+: 301 4 -4 Buy 
+: 308 4 -3 my
+: 315 4 -1 self 
+: 323 4 1 all 
+: 330 4 3 of 
+* 337 4 4 my 
+* 345 4 6 fa
+* 352 2 6 vor
+* 355 2 8 ~
+* 360 3 6 ite 
+* 366 12 0 things
+- 378
+: 387 4 1 Been 
+: 395 4 6 through 
+: 402 4 8 some 
+: 409 5 3 bad 
+: 418 3 1 shit, 
+: 424 4 1 I 
+: 432 4 -4 should 
+: 439 4 1 be 
+: 446 4 1 a 
+: 454 5 3 sad 
+: 462 5 1 bitch
+- 467
+: 476 4 1 Who 
+: 483 2 6 woul
+: 486 1 8 ~
+: 490 3 8 da 
+: 497 4 3 thought 
+: 505 4 1 it'd 
+: 512 4 1 turn 
+: 520 3 -4 me 
+: 527 4 1 to 
+: 534 4 1 a 
+: 541 5 3 sav
+: 549 4 1 age?
+- 553
+: 563 4 1 Rath
+: 570 2 6 er
+: 573 2 8 ~ 
+: 577 4 6 be 
+: 585 4 1 tied 
+: 592 2 3 up 
+: 600 4 -1 with 
+: 607 4 -1 cuffs 
+: 615 2 4 and
+: 618 2 6 ~ 
+: 622 4 4 not 
+: 629 11 6 strings
+- 640
+: 650 1 6 Write
+: 653 2 8 ~ 
+: 658 1 6 my
+: 661 2 8 ~ 
+: 665 1 6 own
+: 668 2 8 ~ 
+: 672 1 6 checks
+: 675 2 8 ~ 
+: 680 1 6 like
+: 683 2 8 ~ 
+: 687 1 6 I
+: 690 2 8 ~ 
+: 695 1 6 write
+: 698 2 8 ~ 
+: 702 3 8 what 
+: 708 4 4 I 
+: 715 10 6 sing
+- 725
+R 731 3 -4 My 
+R 737 4 1 wrist, 
+R 754 2 -1 stop 
+R 759 2 -3 watch
+R 763 4 -5 in'
+- 767
+R 775 3 -4 My 
+R 781 4 1 neck 
+R 798 2 -1 is 
+R 803 2 -3 flos
+R 807 4 -5 sin'
+- 811
+R 818 3 -4 Make 
+R 824 5 -1 big 
+R 841 2 -4 de
+R 846 2 -2 pos
+R 850 4 0 its
+- 854
+R 862 3 -4 My 
+R 868 4 0 gloss 
+R 885 2 -1 is 
+R 890 2 -3 pop
+R 894 5 -5 pin'
+- 899
+G 905 3 -4 You 
+G 911 4 -2 like 
+G 928 3 -4 my 
+G 934 4 3 hair?
+- 938
+R 949 3 -4 Gee, 
+R 955 5 -1 thanks
+- 960
+R 971 2 -4 Just 
+R 976 2 -2 bought 
+R 980 3 -4 it
+- 983
+R 992 4 -4 I 
+R 998 2 -1 see 
+R 1001 4 1 it, 
+R 1014 4 -4 I 
+R 1020 2 -2 like 
+R 1024 4 0 it
+- 1028
+R 1037 4 -4 I 
+R 1043 2 -2 want 
+R 1046 4 0 it, 
+R 1059 4 -2 I 
+R 1065 2 -4 got 
+R 1069 3 -6 it
+- 1072
+R 1081 4 -4 I 
+R 1087 2 -2 want 
+R 1090 4 0 it, 
+R 1103 4 -2 I 
+R 1109 2 -4 got 
+R 1113 3 -6 it
+- 1116
+R 1124 4 -4 I 
+R 1130 2 -2 want 
+R 1133 4 0 it, 
+R 1146 4 -2 I 
+R 1152 2 -4 got 
+R 1156 3 -6 it
+- 1159
+R 1168 4 -4 I 
+R 1174 2 -2 want 
+R 1177 4 0 it, 
+R 1190 4 -2 I 
+R 1196 2 -4 got 
+R 1200 3 -6 it
+- 1203
+R 1212 4 -4 I 
+R 1218 2 -2 want 
+R 1221 4 0 it, 
+R 1234 4 -2 I 
+R 1240 2 -4 got 
+R 1244 3 -6 it
+- 1247
+R 1255 3 -4 You 
+R 1261 4 -2 like 
+R 1278 3 -4 my 
+R 1284 4 3 hair?
+- 1288
+R 1299 3 -4 Gee, 
+R 1305 5 -1 thanks
+- 1310
+G 1321 2 -4 Just 
+G 1326 2 -2 bought 
+G 1330 3 -4 it
+- 1333
+R 1342 4 -4 I 
+R 1348 2 -1 see 
+R 1351 4 1 it, 
+R 1364 4 -4 I 
+R 1370 2 -2 like 
+R 1373 4 0 it
+- 1377
+R 1387 4 -4 I 
+R 1393 2 -2 want 
+R 1396 4 0 it, 
+R 1409 4 -2 I 
+R 1415 2 -4 got 
+R 1419 3 -6 it
+- 1422
+: 1436 4 1 Wear
+: 1444 4 8 ing 
+: 1451 4 8 a 
+: 1458 4 3 ring, 
+: 1466 4 1 but 
+: 1474 3 1 ain't 
+: 1481 4 -4 gon' 
+: 1488 4 1 be 
+: 1495 4 1 no 
+: 1503 4 3 "Mrs
+: 1510 4 1 ~."
+- 1514
+: 1523 4 1 Bought 
+: 1531 1 6 match
+: 1534 1 8 ~
+: 1538 4 8 ing 
+: 1545 4 3 dia
+: 1553 4 1 monds 
+: 1561 3 1 for 
+* 1568 4 -4 six 
+* 1575 4 1 of 
+* 1582 4 1 my 
+* 1590 4 3 bitch
+* 1597 5 1 es
+- 1602
+: 1613 4 1 I'd 
+: 1620 1 6 rath
+: 1623 2 8 ~
+: 1627 4 6 er 
+: 1634 4 1 spoil 
+: 1641 1 1 all
+: 1644 2 3 ~ 
+: 1648 4 -1 my 
+: 1655 4 -1 friends 
+: 1663 1 4 with
+: 1666 1 6 ~ 
+: 1670 4 4 my 
+: 1677 2 4 rich
+: 1680 2 6 ~
+: 1684 8 1 es
+- 1692
+: 1699 4 3 Think 
+: 1706 4 3 re
+: 1714 4 1 tail 
+: 1721 2 1 ther
+: 1725 2 3 ~
+: 1729 4 3 a
+: 1736 4 1 py 
+: 1743 2 1 my
+: 1746 1 3 ~ 
+: 1750 4 3 new 
+: 1757 4 1 ad
+: 1764 4 4 dic
+: 1771 2 1 tion
+: 1775 6 3 ~
+- 1781
+: 1787 4 1 Who
+: 1794 1 6 ev
+: 1797 1 8 ~
+: 1801 4 8 er 
+: 1808 5 3 said 
+: 1816 4 1 mo
+: 1823 4 1 ney 
+: 1831 3 -4 can't 
+: 1838 4 1 solve 
+: 1845 4 1 your 
+: 1853 4 3 pro
+: 1860 5 1 blems
+- 1865
+: 1875 4 1 Must 
+: 1882 1 6 not
+: 1885 1 8 ~ 
+: 1889 4 8 have 
+: 1896 4 3 had 
+: 1903 4 1 e
+: 1911 3 1 nough 
+: 1918 4 -4 mo
+: 1925 4 1 ney 
+: 1932 3 1 to 
+: 1939 5 3 solve 
+: 1947 5 1 'em
+- 1952
+: 1962 4 1 They 
+: 1969 1 6 say
+: 1972 2 8 ~, 
+: 1977 4 6 "Which 
+: 1984 3 1 one?"
+- 1987
+: 1991 1 1 I
+: 1993 2 3 ~ 
+: 1998 4 -1 say, 
+: 2005 5 -1 "Nah, 
+: 2013 1 4 I
+: 2016 2 6 ~ 
+: 2021 4 4 want 
+: 2027 1 4 all 
+: 2030 2 6 of 
+: 2035 4 1 'em"
+- 2039
+* 2050 1 9 Hap
+* 2053 2 11 ~
+* 2057 1 6 pi
+* 2060 2 8 ~
+* 2064 4 4 ness 
+: 2071 4 6 is 
+: 2078 4 6 the 
+: 2086 4 4 same 
+: 2093 1 4 price
+: 2096 2 6 ~ 
+: 2101 3 6 as 
+: 2107 4 4 red-
+: 2114 1 4 bot
+: 2117 2 6 ~
+: 2122 3 1 toms
+- 2125
+R 2130 3 -4 My 
+R 2136 5 -1 smile 
+R 2153 2 -1 is 
+R 2158 2 -3 beam
+R 2162 4 -5 in'
+- 2166
+R 2174 3 -4 My 
+R 2180 4 -1 skin 
+R 2197 2 -1 is 
+R 2202 2 -3 gleam
+R 2206 3 -5 in'
+- 2209
+R 2218 3 -4 The 
+R 2224 4 0 way 
+R 2240 3 -4 it 
+R 2246 12 0 shine
+- 2258
+R 2262 3 -4 I 
+R 2268 4 -1 know 
+R 2283 3 -1 you've 
+R 2289 2 -3 seen 
+R 2293 3 -5 it
+- 2296
+R 2305 3 -5 I 
+R 2311 5 -2 bought 
+R 2327 3 -5 a 
+R 2333 6 -2 crib
+- 2339
+R 2349 3 -5 just 
+R 2355 5 -2 for 
+R 2371 2 -5 the 
+R 2376 2 -2 clo
+R 2381 4 -2 set
+- 2385
+R 2393 3 -5 Both 
+R 2399 6 -2 his 
+R 2414 3 -5 and 
+R 2420 6 -2 hers
+- 2426
+R 2436 4 -4 I 
+R 2442 2 -2 want 
+R 2445 4 0 it, 
+R 2458 4 -2 I 
+R 2464 2 -4 got 
+R 2468 3 -6 it
+- 2471
+R 2480 4 -4 I 
+R 2486 2 -2 want 
+R 2489 4 0 it, 
+R 2502 4 -2 I 
+R 2508 2 -4 got 
+R 2512 3 -6 it
+- 2515
+R 2523 4 -4 I 
+R 2529 2 -2 want 
+R 2532 4 0 it, 
+R 2545 4 -2 I 
+R 2551 2 -4 got 
+R 2555 3 -6 it
+- 2558
+R 2567 4 -4 I 
+R 2573 2 -2 want 
+R 2576 4 0 it, 
+R 2589 4 -2 I 
+R 2595 2 -4 got 
+R 2599 3 -6 it
+- 2602
+R 2611 4 -4 I 
+R 2617 2 -2 want 
+R 2620 4 0 it, 
+R 2633 4 -2 I 
+R 2639 2 -4 got 
+R 2643 3 -6 it
+- 2646
+R 2655 3 -4 You 
+R 2661 4 -2 like 
+R 2678 3 -4 my 
+R 2684 4 3 hair?
+- 2688
+R 2699 3 -4 Gee, 
+R 2705 5 -1 thanks
+- 2710
+R 2721 2 -4 Just 
+R 2726 2 -2 bought 
+R 2730 3 -4 it
+- 2733
+R 2742 4 -4 I 
+R 2748 2 -1 see 
+R 2751 4 1 it, 
+R 2764 4 -4 I 
+R 2770 2 -2 like 
+R 2773 4 0 it
+- 2777
+G 2787 4 -4 I 
+G 2793 2 -2 want 
+G 2796 4 0 it, 
+G 2809 4 -2 I 
+G 2815 2 -4 got 
+G 2818 1 -6 it
+- 2819
+R 2821 1 1 I 
+R 2823 1 1 got 
+R 2826 3 1 my 
+R 2831 3 1 re
+R 2837 4 4 ceipts, 
+R 2844 1 4 be 
+R 2847 1 4 look
+R 2850 2 4 in' 
+R 2854 2 1 like 
+R 2859 5 4 phone 
+R 2867 2 1 num
+R 2871 3 1 bers
+- 2874
+R 2880 1 4 If 
+R 2882 1 4 it 
+R 2885 3 4 ain't 
+R 2890 2 4 mo
+R 2893 2 4 ney, 
+R 2897 2 4 then 
+R 2901 6 4 wrong 
+R 2910 1 1 num
+R 2913 2 1 ber
+- 2915
+R 2923 5 6 Black 
+R 2931 5 6 card 
+R 2938 1 6 is 
+R 2940 3 6 my 
+R 2946 1 -1 busi
+R 2949 3 -1 ness 
+R 2954 3 -1 card
+- 2957
+R 2961 2 -1 The 
+R 2965 2 4 way 
+R 2969 2 4 it 
+R 2972 2 1 be 
+R 2976 1 4 set
+R 2979 3 4 tin' 
+R 2984 2 1 the 
+R 2988 6 4 tone 
+R 2996 2 1 for 
+R 3000 3 -1 me
+- 3003
+R 3010 1 8 I 
+R 3013 3 8 don't 
+R 3021 1 1 mean 
+R 3024 3 1 to 
+R 3032 5 3 brag
+- 3037
+R 3041 1 -4 but 
+R 3044 1 -4 I 
+R 3047 1 -4 be 
+R 3050 2 -4 like, 
+R 3054 1 -4 "Put 
+R 3057 3 -4 it 
+R 3066 1 1 in 
+R 3069 3 1 the 
+R 3076 8 3 bag," 
+R 3088 4 -4 yeah
+- 3092
+R 3099 3 8 When 
+R 3104 3 8 you 
+R 3110 3 11 see 
+R 3115 3 9 them 
+R 3121 7 8 racks
+- 3128
+R 3132 3 6 They 
+R 3137 3 4 stacked 
+R 3143 7 1 up 
+R 3154 3 6 like 
+R 3159 3 4 my 
+R 3165 8 1 ass, 
+R 3177 3 -1 yeah
+- 3180
+G 3185 5 13 Shoot, 
+R 3197 2 8 go 
+R 3201 1 8 from 
+R 3204 2 8 the 
+R 3208 2 8 store 
+R 3211 1 8 to 
+R 3214 2 8 the 
+R 3218 5 13 booth
+- 3223
+R 3230 2 8 Make 
+R 3233 1 8 it 
+R 3235 2 8 all 
+R 3240 2 8 back 
+R 3244 2 8 in 
+R 3248 2 8 one 
+R 3252 4 13 loop
+- 3256
+R 3262 1 8 Give 
+R 3265 1 8 me 
+R 3268 3 8 the 
+R 3273 6 13 loot
+- 3279
+R 3285 1 8 Nev
+R 3288 1 8 er 
+R 3291 2 8 mind, 
+R 3295 2 8 I 
+R 3299 1 8 got 
+R 3302 2 8 the 
+R 3307 5 13 juice
+- 3312
+R 3317 2 8 Noth
+R 3321 1 8 ing 
+R 3324 1 8 but 
+R 3327 2 8 net 
+R 3331 2 8 when 
+R 3335 2 8 we 
+R 3340 5 13 shoot
+- 3345
+R 3350 1 6 Look 
+R 3353 1 8 at 
+R 3356 2 8 my 
+R 3361 5 6 neck, 
+R 3371 1 8 look 
+R 3374 1 8 at 
+R 3377 2 8 my 
+R 3382 5 6 jet
+- 3387
+R 3391 1 4 Ain't 
+R 3394 1 6 got 
+R 3397 2 8 e
+R 3401 2 8 nough 
+R 3405 2 6 mo
+R 3409 1 6 ney 
+R 3412 2 6 to 
+R 3416 1 6 pay 
+R 3419 1 8 me 
+R 3422 2 8 res
+R 3426 5 1 pect
+- 3431
+R 3437 3 6 Ain't 
+R 3443 3 8 no 
+R 3448 1 6 budg
+R 3451 2 6 et 
+R 3455 2 6 when 
+R 3459 2 6 I'm 
+R 3463 1 4 on 
+R 3466 2 1 the 
+R 3471 5 6 set
+- 3476
+G 3482 3 4 If 
+G 3487 3 6 I 
+G 3493 1 8 like 
+G 3496 1 6 it, 
+G 3499 2 4 then 
+G 3503 2 8 that's 
+G 3507 1 6 what 
+G 3510 2 4 I 
+G 3514 6 8 get, 
+R 3524 2 1 yeah
+- 3526
+R 3530 4 -4 I 
+R 3536 2 -2 want 
+R 3539 4 0 it, 
+R 3552 4 -2 I 
+R 3558 2 -4 got 
+R 3562 3 -6 it
+- 3565
+R 3574 4 -4 I 
+R 3580 2 -2 want 
+R 3583 4 0 it, 
+R 3596 4 -2 I 
+R 3602 2 -4 got 
+R 3606 3 -6 it
+- 3609
+R 3617 4 -4 I 
+R 3623 2 -2 want 
+R 3626 4 0 it, 
+R 3639 4 -2 I 
+R 3645 2 -4 got 
+R 3649 3 -6 it
+- 3652
+R 3661 4 -4 I 
+R 3667 2 -2 want 
+R 3670 4 0 it, 
+R 3683 4 -2 I 
+R 3689 2 -4 got 
+R 3693 3 -6 it
+- 3696
+R 3704 3 -4 You 
+R 3710 4 -2 like 
+R 3727 3 -4 my 
+R 3733 4 3 hair?
+- 3737
+R 3748 3 -4 Gee, 
+R 3754 5 -1 thanks
+- 3759
+R 3770 2 -4 Just 
+R 3775 2 -2 bought 
+R 3779 3 -4 it
+- 3782
+R 3791 4 -4 I 
+R 3797 2 -1 see 
+R 3800 4 1 it, 
+R 3813 4 -4 I 
+R 3819 2 -2 like 
+R 3822 4 0 it
+- 3826
+G 3836 4 -4 I 
+G 3842 2 -2 want 
+G 3845 4 0 it, 
+G 3858 4 -2 I 
+G 3864 2 -4 got 
+G 3868 3 -6 it
+- 3871
+F 3875 8 8 (Yeah)
+E
