@@ -43,7 +43,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: P
   const beatsBetweenSectionAndNote = hasNotes ? getFirstNoteStartFromSections([section]) - section.start : 0;
 
   return (
-    <LyricsContainer shouldBlink={shouldBlink} bottom={bottom}>
+    <LyricsContainer shouldBlink={shouldBlink} bottom={bottom} data-test={`lyrics-container-player-${player.number}`}>
       {!mobilePhoneMode && effectsEnabled && (
         <VolumeIndicatorContainer>
           {showMultipleLines ? (
@@ -147,7 +147,7 @@ const Headstart = ({ percent, color }: { percent: number; color: string }) => {
         transformOrigin: 'right',
         transform: `scaleX(${Math.min(1, 2 - percent)})`,
         right: `${Math.max(0, 1 - percent) * 15}rem`,
-        background: `linear-gradient(270deg, ${rgbColor}, 1) 0%, rgba(${color}, 0.5) 25%, rgba(${rgbColor}, 0) 100%)`,
+        background: `linear-gradient(270deg, rgba(${rgbColor}, 1) 0%, rgba(${rgbColor}, 0.5) 25%, rgba(${rgbColor}, 0) 100%)`,
       }}
     />
   );
