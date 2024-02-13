@@ -26,7 +26,9 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
 };
 
 (async () => {
-  const response = await makeRequest(`/api/projects/${PROJECT_ID}/events?event=share-song&after=${AFTER_DATE}`);
+  const response = await makeRequest(
+    `/api/projects/${PROJECT_ID}/events?event=share-song&after=${AFTER_DATE}&limit=200`,
+  );
 
   const fetchedSongIds: string[] = fs.existsSync('./scripts/fetchedSongIds.json')
     ? require('./fetchedSongIds.json')

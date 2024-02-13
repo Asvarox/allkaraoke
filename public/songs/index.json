@@ -1464,6 +1464,30 @@
     "local": false
   },
   {
+    "id": "alicia-keys-fallin",
+    "title": "Fallin'",
+    "artist": "Alicia Keys",
+    "video": "Urdlvw0SSEc",
+    "language": "English",
+    "bpm": 127.76,
+    "gap": 11353.331246086413,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:25.924Z",
+    "genre": "Urban",
+    "realBpm": 96,
+    "volume": 0.91,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aliciakeysfallin",
+    "local": false
+  },
+  {
     "id": "alicia-keys-no-one",
     "title": "No one",
     "artist": "Alicia Keys",
@@ -2131,6 +2155,35 @@
     "local": false
   },
   {
+    "id": "anthony-gonzalez-proud-corazon-de-coco",
+    "title": "Proud corazon (De \"Coco\")",
+    "artist": "Anthony Gonzalez",
+    "video": "B0lchjz1RQg",
+    "language": [
+      "Spanish",
+      "English"
+    ],
+    "bpm": 337.69,
+    "gap": 8798.352927240961,
+    "year": "2017",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-02-13T06:15:25.925Z",
+    "genre": "Disney",
+    "realBpm": 86,
+    "previewStart": 43,
+    "previewEnd": 59,
+    "volume": 0.99,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anthonygonzalezproudcorazondecoco",
+    "local": false
+  },
+  {
     "id": "antonia-font-alegria",
     "title": "Alegria",
     "artist": "Antonia Font",
@@ -2155,6 +2208,29 @@
     ],
     "tracksCount": 1,
     "search": "antoniafontalegria",
+    "local": false
+  },
+  {
+    "id": "anuel-aa-daddy-yankee-karol-g-ozuna-j-balvin-china",
+    "title": "China",
+    "artist": "Anuel Aa, Daddy Yankee, Karol G, Ozuna & J Balvin",
+    "video": "0VR3dfZf9Yg",
+    "language": "Spanish",
+    "bpm": 210,
+    "gap": -134.28571428571428,
+    "year": "2019",
+    "lastUpdate": "2024-02-13T06:15:25.929Z",
+    "genre": "Reggaeton",
+    "realBpm": 105,
+    "volume": 0.72,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anuelaadaddyyankeekarolgozunajbalvinchina",
     "local": false
   },
   {
@@ -2380,6 +2456,31 @@
     "local": false
   },
   {
+    "id": "arctic-monkeys-i-bet-you-look-good-on-the-dancefloor",
+    "title": "I Bet You Look Good On The Dancefloor",
+    "artist": "Arctic Monkeys",
+    "video": "CYpn8yUnX_c",
+    "language": "English",
+    "bpm": 308.7,
+    "gap": 26819.591836734693,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T06:15:26.244Z",
+    "genre": "None",
+    "realBpm": 102,
+    "volume": 0.92,
+    "author": "IC",
+    "sourceUrl": "https://www.youtube.com/watch?v=pK7egZaT3hs",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arcticmonkeysibetyoulookgoodonthedancefloor",
+    "local": false
+  },
+  {
     "id": "aretha-franklin-the-blues-brothers-band-think",
     "title": "Think",
     "artist": "Aretha Franklin & The Blues Brothers Band",
@@ -2401,6 +2502,29 @@
     ],
     "tracksCount": 1,
     "search": "arethafranklinthebluesbrothersbandthink",
+    "local": false
+  },
+  {
+    "id": "ariana-grande-7-rings",
+    "title": "7 Rings",
+    "artist": "Ariana Grande",
+    "video": "QYh6mYIJG2Y",
+    "language": "English",
+    "bpm": 382.59,
+    "gap": 12608.632008154944,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.246Z",
+    "realBpm": 140,
+    "volume": 0.7,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrande7rings",
     "local": false
   },
   {
@@ -3531,6 +3655,102 @@
     ],
     "tracksCount": 1,
     "search": "avengedsevenfoldwelcometothefamily",
+    "local": false
+  },
+  {
+    "id": "aventura-cuando-volveras",
+    "title": "Cuando volveras",
+    "artist": "Aventura",
+    "video": "TviYVNPCs2c",
+    "language": "Spanish",
+    "bpm": 252,
+    "gap": 15507.095238095239,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.249Z",
+    "genre": "Bachata",
+    "realBpm": 123,
+    "volume": 0.72,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aventuracuandovolveras",
+    "local": false
+  },
+  {
+    "id": "aventura-dile-al-amor",
+    "title": "Dile al amor",
+    "artist": "Aventura",
+    "video": "0XCot42qTvA",
+    "language": "Spanish",
+    "bpm": 256,
+    "gap": 39053.90625,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.251Z",
+    "genre": "Bachata",
+    "videoGap": 10,
+    "realBpm": 124,
+    "volume": 0.81,
+    "author": "DaVIch0",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aventuradilealamor",
+    "local": false
+  },
+  {
+    "id": "aventura-ft-don-omar-ella-y-yo",
+    "title": "Ella y yo",
+    "artist": "Aventura ft. Don Omar",
+    "video": "Lg_Pn45gyMs",
+    "language": "Spanish",
+    "bpm": 352.05,
+    "gap": 20212.02556455049,
+    "year": "2005",
+    "lastUpdate": "2024-02-13T06:15:26.252Z",
+    "genre": "Reggaeton",
+    "realBpm": 176,
+    "volume": 0.74,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aventuraftdonomarellayyo",
+    "local": false
+  },
+  {
+    "id": "aventura-mi-hermanita",
+    "title": "Mi hermanita",
+    "artist": "Aventura",
+    "video": "mVYQSAm8hB0",
+    "language": "Spanish",
+    "bpm": 252,
+    "gap": 63756.09523809524,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.318Z",
+    "genre": "Bachata",
+    "videoGap": 50,
+    "realBpm": 126,
+    "volume": 0.79,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aventuramihermanita",
     "local": false
   },
   {
@@ -6346,6 +6566,30 @@
     "local": false
   },
   {
+    "id": "breaking-benjamin-so-cold",
+    "title": "So Cold",
+    "artist": "Breaking Benjamin",
+    "video": "pzMvqv_3nfM",
+    "language": "English",
+    "bpm": 239.83,
+    "gap": 62239.291164574905,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.319Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 0.84,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminsocold",
+    "local": false
+  },
+  {
     "id": "breaking-benjamin-the-diary-of-jane",
     "title": "The Diary Of Jane",
     "artist": "Breaking Benjamin",
@@ -8940,6 +9184,34 @@
     "local": false
   },
   {
+    "id": "clouseau-daar-gaat-ze",
+    "title": "Daar Gaat Ze",
+    "artist": "Clouseau",
+    "video": "OSDV7IGNmwI",
+    "language": "Dutch",
+    "bpm": 174.1,
+    "gap": 7193.268811028145,
+    "year": "1989",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-02-13T06:15:26.320Z",
+    "genre": "Pop",
+    "realBpm": 87,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.68,
+    "author": "christophe",
+    "authorUrl": "https://usdb.eu/user/christophe",
+    "sourceUrl": "https://usdb.eu/Clouseau/DaarGaatZe/88",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "clouseaudaargaatze",
+    "local": false
+  },
+  {
     "id": "colbie-caillat-bubbly",
     "title": "Bubbly",
     "artist": "Colbie Caillat",
@@ -9276,6 +9548,29 @@
     ],
     "tracksCount": 1,
     "search": "creedhigher",
+    "local": false
+  },
+  {
+    "id": "creed-my-sacrifice",
+    "title": "My Sacrifice",
+    "artist": "Creed",
+    "video": "O-fyNgHdmLI",
+    "language": "English",
+    "bpm": 292.2,
+    "gap": 32104.64065708419,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.321Z",
+    "realBpm": 146,
+    "volume": 0.8,
+    "author": "znxineohp",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "creedmysacrifice",
     "local": false
   },
   {
@@ -9708,6 +10003,148 @@
     ],
     "tracksCount": 1,
     "search": "czeslawniemenpodpapugami",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-con-snow-con-calma",
+    "title": "Con calma",
+    "artist": "Daddy Yankee con Snow",
+    "video": "DiItGE3eAyQ",
+    "language": "Spanish",
+    "bpm": 300,
+    "gap": 4400,
+    "year": "2019",
+    "lastUpdate": "2024-02-13T06:15:26.323Z",
+    "genre": "Reggaeton",
+    "realBpm": 94,
+    "volume": 0.68,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeeconsnowconcalma",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-ft-j-alvarez-el-amante",
+    "title": "El amante",
+    "artist": "Daddy Yankee ft. J Alvarez",
+    "video": "YY33oEDtJv0",
+    "language": "Spanish",
+    "bpm": 359.55,
+    "gap": 21976.748435544432,
+    "year": "2012",
+    "lastUpdate": "2024-02-13T06:15:26.389Z",
+    "genre": "Reggaeton",
+    "realBpm": 180,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeeftjalvarezelamante",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-llamado-de-emergencia",
+    "title": "Llamado de emergencia",
+    "artist": "Daddy Yankee",
+    "video": "0dCa3m91flU",
+    "language": "Spanish",
+    "bpm": 392,
+    "gap": 7279.102040816327,
+    "year": "2008",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T06:15:26.473Z",
+    "genre": "Reggaeton",
+    "realBpm": 98,
+    "volume": 0.75,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeellamadodeemergencia",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-lo-que-paso-paso",
+    "title": "Lo que paso, paso",
+    "artist": "Daddy Yankee",
+    "video": "wbsH00-FHEE",
+    "language": "Spanish",
+    "bpm": 388,
+    "gap": 9138.845360824742,
+    "year": "2004",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T06:15:26.475Z",
+    "genre": "Reggaeton",
+    "realBpm": 97,
+    "volume": 0.78,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeeloquepasopaso",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-lovumba",
+    "title": "Lovumba",
+    "artist": "Daddy Yankee",
+    "video": "9TeyuDnwyrw",
+    "language": "Spanish",
+    "bpm": 242.02,
+    "gap": 29425.346417651435,
+    "year": "2012",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T06:15:26.476Z",
+    "genre": "Reggaeton",
+    "realBpm": 118,
+    "volume": 0.69,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeelovumba",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-perros-salvajes",
+    "title": "Perros salvajes",
+    "artist": "Daddy Yankee",
+    "video": "W_zfS_rqg7c",
+    "language": "Spanish",
+    "bpm": 352.04,
+    "gap": 25606.99772753096,
+    "year": "2012",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T06:15:26.477Z",
+    "genre": "Reggaeton",
+    "realBpm": 86,
+    "volume": 0.72,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeeperrossalvajes",
     "local": false
   },
   {
@@ -10857,6 +11294,29 @@
     "local": false
   },
   {
+    "id": "disneys-aladin-a-whole-new-world",
+    "title": "A Whole New World",
+    "artist": "Disney's Aladin",
+    "video": "EXTLJmYsaUQ",
+    "language": "English",
+    "bpm": 230.4,
+    "gap": 22589.4375,
+    "year": "1992",
+    "lastUpdate": "2024-02-13T06:15:26.479Z",
+    "genre": "Disney",
+    "realBpm": 108,
+    "volume": 0.81,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysaladinawholenewworld",
+    "local": false
+  },
+  {
     "id": "disneys-arielle-unter-dem-meer",
     "title": "Unter dem Meer",
     "artist": "Disney’s Arielle",
@@ -11095,6 +11555,30 @@
     ],
     "tracksCount": 1,
     "search": "disneysmoanadwaynejohnsonyourewelcome",
+    "local": false
+  },
+  {
+    "id": "disneys-moana-how-far-ill-go",
+    "title": "How Far I'll Go",
+    "artist": "Disney's Moana",
+    "video": "cPAbx5kgCJo",
+    "language": "English",
+    "bpm": 336,
+    "gap": 2294.8571428571427,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.571Z",
+    "genre": "Disney",
+    "realBpm": 84,
+    "volume": 0.99,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysmoanahowfarillgo",
     "local": false
   },
   {
@@ -13148,6 +13632,29 @@
     ],
     "tracksCount": 1,
     "search": "enriqueiglesiasdescemerbuenoygentedezonabailando",
+    "local": false
+  },
+  {
+    "id": "enrique-iglesias-escape",
+    "title": "Escape",
+    "artist": "Enrique Iglesias",
+    "video": "9mQJaXwGPlg",
+    "language": "English",
+    "bpm": 252,
+    "gap": 13938.095238095239,
+    "year": "2001",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-02-13T06:15:26.572Z",
+    "realBpm": 126,
+    "volume": 0.75,
+    "author": "gun8",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "enriqueiglesiasescape",
     "local": false
   },
   {
@@ -17116,6 +17623,30 @@
     "local": false
   },
   {
+    "id": "interpol-evil",
+    "title": "Evil",
+    "artist": "Interpol",
+    "video": "dkpgz3uQ58U",
+    "language": "English",
+    "bpm": 255.4,
+    "gap": 6101.566170712607,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.573Z",
+    "genre": "Rock",
+    "realBpm": 128,
+    "volume": 0.77,
+    "author": "hamadad",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "interpolevil",
+    "local": false
+  },
+  {
     "id": "ioi-very-very-very",
     "title": "Very Very Very",
     "artist": "I.O.I",
@@ -20428,6 +20959,32 @@
     "local": false
   },
   {
+    "id": "la-bouche-be-my-lover",
+    "title": "Be My Lover",
+    "artist": "La Bouche",
+    "video": "ViP87WipSm0",
+    "language": "English",
+    "bpm": 269.62,
+    "gap": -291.2677101105259,
+    "year": "1995",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-02-13T06:15:26.574Z",
+    "genre": "None",
+    "realBpm": 135,
+    "volume": 0.8,
+    "author": "snake84",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1645",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=7981",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "labouchebemylover",
+    "local": false
+  },
+  {
     "id": "la-factoria-eddy-lover-perdoname",
     "title": "Perdóname",
     "artist": "La Factoria & Eddy Lover",
@@ -21701,6 +22258,30 @@
     ],
     "tracksCount": 1,
     "search": "lilnasxfeatbillyraycyrusoldtownroadremix",
+    "local": false
+  },
+  {
+    "id": "lil-nas-x-montero-call-me-by-your-name",
+    "title": "MONTERO (Call Me By Your Name)",
+    "artist": "Lil Nas X",
+    "video": "6swmTBVI83k",
+    "language": "English",
+    "bpm": 267,
+    "gap": 19667.76404494382,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.576Z",
+    "genre": "Pop",
+    "realBpm": 179,
+    "volume": 0.54,
+    "author": "fokozlecja",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lilnasxmonterocallmebyyourname",
     "local": false
   },
   {
@@ -23584,6 +24165,30 @@
     ],
     "tracksCount": 1,
     "search": "mandarynayougiveloveabadname",
+    "local": false
+  },
+  {
+    "id": "mandy-moore-when-will-my-life-begin",
+    "title": "When Will My Life Begin",
+    "artist": "Mandy Moore",
+    "video": "kRXmAIHYQR4",
+    "language": "English",
+    "bpm": 431.88,
+    "gap": 12552.775771047513,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.577Z",
+    "genre": "Disney",
+    "realBpm": 108,
+    "volume": 0.73,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mandymoorewhenwillmylifebegin",
     "local": false
   },
   {
@@ -29283,6 +29888,31 @@
     "local": false
   },
   {
+    "id": "paramore-pressure",
+    "title": "Pressure",
+    "artist": "Paramore",
+    "video": "y-MaaxgdUT4",
+    "language": "English",
+    "bpm": 324.01,
+    "gap": 12361.512916268017,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.578Z",
+    "genre": "Pop Punk",
+    "realBpm": 162,
+    "previewStart": 29,
+    "previewEnd": 61,
+    "volume": 0.84,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramorepressure",
+    "local": false
+  },
+  {
     "id": "paramore-still-into-you",
     "title": "Still Into You",
     "artist": "Paramore",
@@ -30575,6 +31205,30 @@
     ],
     "tracksCount": 1,
     "search": "pnksowhat",
+    "local": false
+  },
+  {
+    "id": "poets-of-the-fall-lift",
+    "title": "Lift",
+    "artist": "Poets Of The Fall",
+    "video": "ompevuR1644",
+    "language": "English",
+    "bpm": 308.06,
+    "gap": 22797.47192105434,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2024-02-13T06:15:26.579Z",
+    "genre": "Rock",
+    "realBpm": 154,
+    "volume": 0.8,
+    "author": "ps2devil",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "poetsofthefalllift",
     "local": false
   },
   {
@@ -36390,6 +37044,32 @@
     "local": false
   },
   {
+    "id": "system-of-a-down-i-e-a-i-a-i-o",
+    "title": "I-E-A-I-A-I-O",
+    "artist": "System Of A Down",
+    "video": "eudOwe3Rz-0",
+    "language": "English",
+    "bpm": 560,
+    "gap": 28434.928571428572,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T06:15:26.581Z",
+    "genre": "Metal",
+    "realBpm": 133,
+    "previewStart": 57,
+    "previewEnd": 73,
+    "volume": 0.76,
+    "author": "Kirie-sama",
+    "tracks": [
+      {
+        "start": 37
+      }
+    ],
+    "tracksCount": 1,
+    "search": "systemofadownieaiaio",
+    "local": false
+  },
+  {
     "id": "system-of-a-down-question",
     "title": "Question!",
     "artist": "System of a Down",
@@ -38868,6 +39548,31 @@
     "local": false
   },
   {
+    "id": "the-vines-get-free",
+    "title": "Get Free",
+    "artist": "The Vines",
+    "video": "Y8X8KK90jc8",
+    "language": "English",
+    "bpm": 388.18,
+    "gap": 5107.0873146622735,
+    "year": "2002",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-02-13T06:15:26.581Z",
+    "genre": "Garage Rock Revival",
+    "realBpm": 139,
+    "previewStart": 28,
+    "previewEnd": 51,
+    "volume": 0.98,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thevinesgetfree",
+    "local": false
+  },
+  {
     "id": "the-weeknd-blinding-lights",
     "title": "Blinding Lights",
     "artist": "The Weeknd",
@@ -39240,6 +39945,30 @@
     ],
     "tracksCount": 1,
     "search": "thirtysecondstomarsthekillburyme",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-i-hate-everything-about-you",
+    "title": "I Hate Everything About You",
+    "artist": "Three Days Grace",
+    "video": "tYEA6WuBS-A",
+    "language": "English",
+    "bpm": 275.5,
+    "gap": 4171.739130434782,
+    "year": "2003",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-13T06:15:26.582Z",
+    "genre": "Rock",
+    "realBpm": 138,
+    "volume": 0.77,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "threedaysgraceihateeverythingaboutyou",
     "local": false
   },
   {
@@ -40525,6 +41254,29 @@
     ],
     "tracksCount": 1,
     "search": "u2withorwithoutyou",
+    "local": false
+  },
+  {
+    "id": "udo-jurgens-ein-ehrenwertes-haus",
+    "title": "Ein ehrenwertes Haus",
+    "artist": "Udo Jürgens",
+    "video": "PXLiQdFClR4",
+    "language": "German",
+    "bpm": 240.22,
+    "gap": 15420.915827158438,
+    "year": "1974",
+    "artistOrigin": "AT",
+    "lastUpdate": "2024-02-13T06:15:26.583Z",
+    "realBpm": 119,
+    "volume": 0.71,
+    "author": "MasterChristian",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "udojurgenseinehrenwerteshaus",
     "local": false
   },
   {

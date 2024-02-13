@@ -1,5 +1,4 @@
 import { SongPreview } from 'interfaces';
-import { uniq } from 'lodash-es';
 
 const data = {
   language: {
@@ -20,18 +19,22 @@ type Data = typeof data;
 
 const index: SongPreview[] = require('../public/songs/index.json');
 
+/// group songs by artist property
+const artistGroups: Record<string, SongPreview[]> = {};
 index.forEach((song) => {
-  Object.entries(data).forEach(([key, val]) => {
-    if (key in song && !!song[key as keyof Data]) {
-      const toPush = song[key as keyof Data];
-      val.kinds = val.kinds.concat(Array.isArray(toPush) ? toPush : [toPush!]);
-    } else {
-      val.missing.push(song.id);
-    }
-  });
-});
-Object.entries(data).forEach(([key, val]) => {
-  val.kinds = uniq(val.kinds);
+  if (!artistGroups[song.artist]) {
+    artistGroups[song.artist] = [];
+  }
+  artistGroups[song.artist].push(song);
 });
 
-console.log(JSON.stringify(data, undefined, 2));
+console.log(
+  JSON.stringify(
+    Object.values(artistGroups)
+      .map((songs) => songs.length)
+      .filter((length) => length > 3)
+      .reduce((acc, length) => acc + length, 0),
+    undefined,
+    2,
+  ),
+);
