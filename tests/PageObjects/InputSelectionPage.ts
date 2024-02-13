@@ -31,7 +31,15 @@ export class InputSelectionPagePO {
     await this.advancedButton.click();
   }
 
+  public get skipButton() {
+    return this.page.getByTestId('skip');
+  }
+
   public async skipToMainMenu() {
-    await this.page.getByTestId('skip').click();
+    await this.skipButton.click();
+  }
+
+  public async goBackToSongPreview() {
+    await this.skipButton.click();
   }
 }
