@@ -1,0 +1,284 @@
+#ARTIST:Xavier Rudd
+#TITLE:Stoney Creek
+#CREATOR:Sebastian Moebus
+#BPM:125
+#YEAR:2022
+#PREVIEWSTART:113
+#VIDEO:v=mcDWBckYN18
+#GENRE:Indie
+#LANGUAGE:English
+#GAP:61930
+#ALLKARAOKE_ID:xavier-rudd-stoney-creek
+#ALLKARAOKE_LASTUPDATE:2024-02-13T05:38:56.070Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_PREVIEWEND:147
+#ALLKARAOKE_VOLUME:0,64
+#MP3:Xavier Rudd - Stoney Creek.mp3
+#COVER:Xavier Rudd - Stoney Creek [CO].jpg
+#BACKGROUND:Xavier Rudd - Stoney Creek [BG].jpg
+: 8 16 5 Ba
+: 24 6 3 by 
+: 31 2 1 the 
+: 34 4 1 wind 
+: 38 4 5 is 
+: 42 3 3 blo
+: 45 1 3 wi
+: 46 3 3 ng 
+- 49 68
+- 68
+: 76 3 5 So 
+: 79 2 1 rest 
+: 81 4 1 your 
+: 85 9 1 weary 
+: 94 4 1 head 
+: 98 4 1 here 
+: 102 4 1 on 
+: 106 4 0 my 
+: 110 4 1 kn
+: 114 3 -2 e
+: 117 1 -4 e 
+- 118 140
+- 140
+: 148 11 5 There
+: 159 2 3 's 
+: 161 2 3 no 
+: 163 2 3 way 
+: 166 4 1 we
+: 170 2 1 're 
+: 172 3 5 getting 
+: 176 4 3 on 
+: 180 2 3 the 
+: 183 3 3 oc
+: 186 1 1 ea
+: 187 4 3 n 
+- 191 205
+- 205
+* 213 3 1 So 
+* 216 3 5 fuck 
+* 219 5 1 ev
+* 224 2 1 ery
+* 226 5 1 thing 
+* 231 5 1 else 
+* 236 4 1 and 
+* 240 3 1 let
+* 243 2 0 's 
+* 245 2 1 ju
+* 247 2 -2 st 
+* 249 6 -4 be
+- 255 277
+- 277
+: 285 13 5 In
+: 298 2 3 di 
+: 300 2 3 pup 
+: 303 3 3 well 
+: 307 2 1 she 
+: 309 3 1 just 
+: 313 4 5 found 
+: 317 2 3 a 
+: 320 2 3 ch
+: 322 2 3 ic
+: 324 7 3 ken 
+- 331 346
+- 346
+: 354 3 5 we 
+: 357 4 1 found 
+: 361 2 1 a 
+: 364 5 1 sweet 
+: 369 7 1 place 
+: 377 1 1 to 
+: 379 3 1 rest 
+: 383 2 0 our 
+: 386 5 1 fe
+: 391 1 -2 e
+: 392 2 -4 t 
+- 394 413
+- 413
+: 421 2 1 With 
+: 423 12 5 ho
+: 435 3 3 ney
+: 438 4 3 bird 
+: 442 4 3 there 
+: 446 2 1 ain
+: 448 2 1 't 
+: 450 4 5 no
+: 454 3 3 thing 
+: 458 3 3 mi
+: 461 2 3 ss
+: 463 3 3 ing
+- 466 484
+- 484
+: 492 2 5 Ha
+: 494 4 1 zel 
+: 499 4 1 eyes 
+: 503 2 1 the 
+: 505 2 1 most 
+: 507 4 1 beau
+: 511 2 1 ti
+: 513 3 1 ful 
+: 516 4 1 red 
+: 520 4 0 i've 
+: 525 4 1 s
+: 529 1 -2 ee
+: 530 2 -4 n 
+- 532 549
+- 549
+: 557 1 -9 This 
+: 558 3 -7 is 
+: 562 4 -7 home 
+- 566 588
+- 588
+: 596 13 1 H
+: 609 5 0 o
+: 614 4 -2 me 
+- 618 828
+- 828
+: 836 14 1 Spend
+: 850 2 3 ing 
+: 852 6 5 time 
+: 860 4 5 here 
+: 864 4 3 in 
+: 869 3 3 this 
+: 872 2 3 is
+: 874 8 1 land 
+- 882 895
+- 895
+: 903 2 -2 It 
+: 905 2 5 seems 
+: 908 4 1 the 
+: 912 4 1 whole 
+: 916 4 1 wide 
+: 920 7 1 world 
+: 927 2 1 has 
+: 929 4 1 gone 
+: 933 5 0 cra
+: 938 4 1 z
+: 942 1 -2 y
+: 943 1 -4 ~ 
+- 944 965
+- 965
+: 973 2 1 So 
+: 975 12 5 take 
+: 987 1 3 m
+: 988 2 3 y 
+: 990 2 3 Ha
+: 992 4 1 nd, 
+: 997 2 1 let's 
+: 999 2 5 walk 
+: 1002 5 3 this 
+: 1008 2 3 to
+: 1010 1 3 get
+: 1011 1 1 he
+: 1012 4 3 r 
+- 1016 1036
+- 1036
+: 1044 2 5 Teach 
+: 1046 4 1 our 
+: 1050 4 1 lit
+: 1054 4 1 tle 
+: 1059 6 1 man 
+: 1065 2 1 the 
+: 1068 4 1 best 
+: 1072 4 0 we 
+: 1076 4 1 s
+: 1080 2 -2 e
+: 1082 1 -4 e 
+- 1083 1103
+- 1103
+: 1111 2 1 Cos 
+: 1113 11 5 Ba
+: 1124 4 8 ~
+: 1128 2 8 b
+: 1130 4 6 y 
+: 1134 2 6 the 
+: 1136 5 6 wind 
+: 1141 4 5 is 
+: 1146 2 5 blow
+: 1148 13 5 i
+: 1161 4 3 n
+: 1165 5 1 g 
+- 1170 1172
+- 1172
+: 1180 4 5 There ain't 
+: 1184 4 1 no 
+: 1188 5 1 ot
+: 1193 4 1 her 
+: 1197 4 1 place 
+: 1201 4 1 I'd 
+: 1205 7 1 rath
+: 1212 2 0 er 
+: 1215 3 1 be
+: 1218 1 -2 ~
+: 1219 1 -4 ~
+- 1220 1253
+- 1253
+: 1261 3 1 And 
+: 1264 2 1 the 
+: 1266 9 3 wind 
+: 1275 4 3 owes 
+: 1279 4 1 me 
+: 1283 3 1 no
+: 1286 2 1 th
+: 1288 2 -2 in
+: 1290 2 -4 g 
+- 1292 1323
+- 1323
+: 1331 2 1 But 
+: 1333 2 1 it's 
+: 1335 6 3 blown 
+: 1341 2 3 me 
+: 1343 7 3 here 
+: 1350 2 5 with 
+: 1352 16 5 yo
+: 1368 6 3 u
+: 1374 4 1 ~ 
+: 1379 6 5 o
+: 1385 4 3 h
+: 1389 4 1 ~
+- 1393
+: 1400 2 1 And 
+: 1402 2 1 it 
+: 1404 2 1 can 
+: 1406 5 3 blow 
+: 1411 3 3 until 
+: 1414 2 3 it's 
+: 1416 4 1 th
+: 1420 6 1 rou
+: 1426 1 -2 g
+: 1427 1 -4 h 
+- 1428 1447
+- 1447
+: 1455 2 1 Cos 
+: 1457 15 5 Ba
+: 1472 5 3 by, 
+: 1477 2 3 the 
+: 1479 3 1 wi
+: 1482 3 1 nd 
+: 1485 4 5 is 
+: 1489 4 3 blo
+: 1493 3 3 wi
+: 1496 4 3 ng 
+- 1500 1517
+- 1517
+: 1525 4 5 There aint' 
+: 1529 4 1 no 
+: 1533 4 1 ot
+: 1537 4 1 her 
+: 1542 5 1 place 
+: 1547 3 1 I'd 
+: 1550 7 1 rath
+: 1557 2 0 er 
+: 1559 4 1 be 
+: 1563 1 -2 ~
+: 1564 1 -4 ~ 
+- 1565 1583
+- 1583
+: 1591 2 -9 This 
+: 1593 2 -7 is 
+: 1596 4 -7 home 
+- 1600 1622
+- 1622
+: 1630 14 1 H
+: 1644 4 0 o
+: 1648 5 -2 me 
+E

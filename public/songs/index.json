@@ -3534,6 +3534,56 @@
     "local": false
   },
   {
+    "id": "aventura-por-un-segundo",
+    "title": "Por un segundo",
+    "artist": "Aventura",
+    "video": "GHLVjriwzFg",
+    "language": "Spanish",
+    "bpm": 299.8,
+    "gap": 59350,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.154Z",
+    "genre": "Bachata",
+    "videoGap": 46,
+    "realBpm": 129,
+    "volume": 0.7,
+    "author": "CHELSTE",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aventuraporunsegundo",
+    "local": false
+  },
+  {
+    "id": "aventura-un-beso",
+    "title": "Un beso",
+    "artist": "Aventura",
+    "video": "uBwk106e3es",
+    "language": "Spanish",
+    "bpm": 252.5,
+    "gap": 43947.09523809524,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.156Z",
+    "genre": "Bachata",
+    "videoGap": 28,
+    "realBpm": 125,
+    "volume": 0.72,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aventuraunbeso",
+    "local": false
+  },
+  {
     "id": "avicii-waiting-for-love",
     "title": "Waiting For Love",
     "artist": "Avicii",
@@ -4008,6 +4058,28 @@
     "local": false
   },
   {
+    "id": "backstreet-boys-ill-never-break-your-heart",
+    "title": "I'll Never Break Your Heart",
+    "artist": "Backstreet Boys",
+    "video": "kDcCSiakaU4",
+    "language": "English",
+    "bpm": 323.94,
+    "gap": 483.2928320059269,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.159Z",
+    "realBpm": 162,
+    "volume": 0.66,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboysillneverbreakyourheart",
+    "local": false
+  },
+  {
     "id": "backstreet-boys-incomplete",
     "title": "Incomplete",
     "artist": "Backstreet Boys",
@@ -4056,6 +4128,28 @@
     ],
     "tracksCount": 1,
     "search": "backstreetboyslargerthanlife",
+    "local": false
+  },
+  {
+    "id": "backstreet-boys-quit-playing-games-with-my-heart",
+    "title": "Quit playing games (with my heart)",
+    "artist": "Backstreet Boys",
+    "video": "Ug88HO2mg44",
+    "language": "English",
+    "bpm": 400.08,
+    "gap": 10137.702459508098,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.160Z",
+    "realBpm": 100,
+    "volume": 0.68,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "backstreetboysquitplayinggameswithmyheart",
     "local": false
   },
   {
@@ -4333,6 +4427,29 @@
     ],
     "tracksCount": 1,
     "search": "beberexhaydavidguettaimgoodblue",
+    "local": false
+  },
+  {
+    "id": "becky-g-ft-bad-bunny-mayores",
+    "title": "Mayores",
+    "artist": "Becky G ft. Bad Bunny",
+    "video": "GMFewiplIbw",
+    "language": "Spanish",
+    "bpm": 388,
+    "gap": 8359.845360824742,
+    "year": "2017",
+    "lastUpdate": "2024-02-13T05:38:33.161Z",
+    "genre": "Reggaeton",
+    "realBpm": 97,
+    "volume": 0.66,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "beckygftbadbunnymayores",
     "local": false
   },
   {
@@ -5623,6 +5740,32 @@
     ],
     "tracksCount": 1,
     "search": "bobmarleythewailerscouldyoubeloved",
+    "local": false
+  },
+  {
+    "id": "bob-marley-the-wailers-three-little-birds",
+    "title": "Three Little Birds",
+    "artist": "Bob Marley & The Wailers",
+    "video": "HNBCVM4KbUM",
+    "language": "English",
+    "bpm": 296.7,
+    "gap": 12998.877654196158,
+    "year": "1977",
+    "artistOrigin": "JM",
+    "lastUpdate": "2024-02-13T05:38:33.368Z",
+    "genre": "Reggae",
+    "realBpm": 73,
+    "previewStart": 66,
+    "previewEnd": 116,
+    "volume": 0.85,
+    "author": "fepo",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bobmarleythewailersthreelittlebirds",
     "local": false
   },
   {
@@ -7655,6 +7798,32 @@
     "local": false
   },
   {
+    "id": "camila-cabello-feat-daddy-yankee-havana-remix",
+    "title": "Havana (Remix)",
+    "artist": "Camila Cabello feat. Daddy Yankee",
+    "video": "qooQd8AA7_M",
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "bpm": 373.7,
+    "gap": 8387.521273748996,
+    "year": "2017",
+    "lastUpdate": "2024-02-13T05:38:33.370Z",
+    "genre": "Latin",
+    "realBpm": 105,
+    "volume": 0.76,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "camilacabellofeatdaddyyankeehavanaremix",
+    "local": false
+  },
+  {
     "id": "camilo-sesto-vivir-asi-es-morir-de-amor",
     "title": "Vivir así es morir de amor",
     "artist": "Camilo Sesto",
@@ -7775,6 +7944,30 @@
     ],
     "tracksCount": 1,
     "search": "carlosbauteymartasanchezcolgandoentusmanos",
+    "local": false
+  },
+  {
+    "id": "carlos-rivera-recuerdame",
+    "title": "Recuerdame",
+    "artist": "Carlos Rivera",
+    "video": "cfzmjgpx-VE",
+    "language": "Spanish",
+    "bpm": 320,
+    "gap": 11488.625,
+    "year": "2017",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-02-13T05:38:33.463Z",
+    "genre": "Disney",
+    "realBpm": 80,
+    "volume": 0.74,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carlosriverarecuerdame",
     "local": false
   },
   {
@@ -8320,6 +8513,30 @@
     ],
     "tracksCount": 1,
     "search": "chicagoyouretheinspiration",
+    "local": false
+  },
+  {
+    "id": "chino-y-nacho-con-daddy-yankee-andas-en-mi-cabeza",
+    "title": "Andas en mi cabeza",
+    "artist": "Chino y Nacho con Daddy Yankee",
+    "video": "AMTAQ-AJS4Y",
+    "language": "Spanish",
+    "bpm": 416.2,
+    "gap": 49791.869774147046,
+    "year": "2016",
+    "lastUpdate": "2024-02-13T05:38:33.466Z",
+    "genre": "Reggaeton",
+    "videoGap": 36,
+    "realBpm": 104,
+    "volume": 0.62,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chinoynachocondaddyyankeeandasenmicabeza",
     "local": false
   },
   {
@@ -9491,6 +9708,103 @@
     ],
     "tracksCount": 1,
     "search": "czeslawniemenpodpapugami",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-pose",
+    "title": "Pose",
+    "artist": "Daddy Yankee",
+    "video": "dn28nlMOYfg",
+    "language": "Spanish",
+    "bpm": 234,
+    "gap": 27794.358974358973,
+    "year": "2008",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:33.538Z",
+    "genre": "Reggaeton",
+    "videoGap": 5,
+    "realBpm": 117,
+    "volume": 0.69,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeepose",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-prince-royce-ven-conmigo",
+    "title": "Ven conmigo",
+    "artist": "Daddy Yankee & Prince Royce",
+    "video": "AYlulqyApjc",
+    "language": "Spanish",
+    "bpm": 240,
+    "gap": 873,
+    "year": "2011",
+    "lastUpdate": "2024-02-13T05:38:33.541Z",
+    "genre": "Reggaeton",
+    "realBpm": 120,
+    "previewStart": 85,
+    "previewEnd": 120,
+    "volume": 0.67,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeeprinceroycevenconmigo",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-que-tengo-que-hacer",
+    "title": "Que tengo que hacer",
+    "artist": "Daddy Yankee",
+    "video": "uHgnebZ_jYo",
+    "language": "Spanish",
+    "bpm": 216,
+    "gap": 19955.777777777777,
+    "year": "2009",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:33.610Z",
+    "genre": "Reggaeton",
+    "realBpm": 108,
+    "volume": 0.64,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeequetengoquehacer",
+    "local": false
+  },
+  {
+    "id": "daddy-yankee-y-ozuna-la-rompe-corazones",
+    "title": "La rompe corazones",
+    "artist": "Daddy Yankee y Ozuna",
+    "video": "d-5dc8CuOvw",
+    "language": "Spanish",
+    "bpm": 354.11,
+    "gap": 3136.366750444777,
+    "year": "2017",
+    "lastUpdate": "2024-02-13T05:38:33.612Z",
+    "genre": "Reggaeton",
+    "realBpm": 176,
+    "volume": 0.66,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeeyozunalarompecorazones",
     "local": false
   },
   {
@@ -10784,6 +11098,30 @@
     "local": false
   },
   {
+    "id": "disneys-pocahontas-colors-of-the-wind",
+    "title": "Colors of the wind",
+    "artist": "Disney's Pocahontas",
+    "video": "O9MvdMqKvpU",
+    "language": "English",
+    "bpm": 237.9,
+    "gap": -187.4653215636822,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.694Z",
+    "genre": "Disney",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyspocahontascolorsofthewind",
+    "local": false
+  },
+  {
     "id": "disneys-pocahontas-das-farbenspiel-des-winds",
     "title": "Das Farbenspiel des Winds",
     "artist": "Disney’s Pocahontas",
@@ -10827,6 +11165,53 @@
     ],
     "tracksCount": 1,
     "search": "disneyspocahontasedytagorniakkolorowywiatr",
+    "local": false
+  },
+  {
+    "id": "disneys-tangled-i-see-the-light",
+    "title": "I See The Light",
+    "artist": "Disney's Tangled",
+    "video": "ILRs2r6lcHY",
+    "language": "English",
+    "bpm": 400,
+    "gap": 9559.5,
+    "year": "2010",
+    "lastUpdate": "2024-02-13T05:38:33.696Z",
+    "genre": "Disney",
+    "realBpm": 97,
+    "volume": 0.8,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneystanglediseethelight",
+    "local": false
+  },
+  {
+    "id": "disneys-tangled-when-will-my-life-begin",
+    "title": "When Will My Life Begin",
+    "artist": "Disney's Tangled",
+    "video": "kRXmAIHYQR4",
+    "language": "English",
+    "bpm": 431.88,
+    "gap": 12552.775771047513,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.764Z",
+    "genre": "Disney",
+    "realBpm": 108,
+    "volume": 0.73,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneystangledwhenwillmylifebegin",
     "local": false
   },
   {
@@ -11041,6 +11426,55 @@
     ],
     "tracksCount": 1,
     "search": "djotzinikpeinsternderdeinennamentragt",
+    "local": false
+  },
+  {
+    "id": "dj-snake-selena-gomez-ozuna-cardi-b-taki-taki",
+    "title": "Taki Taki",
+    "artist": "DJ Snake, Selena Gomez, Ozuna, Cardi B",
+    "video": "ixkoVwKQaJg",
+    "language": "Spanish",
+    "bpm": 386.49,
+    "gap": 18862.918264379416,
+    "year": "2018",
+    "lastUpdate": "2024-02-13T05:38:33.766Z",
+    "genre": "Reggaeton",
+    "realBpm": 96,
+    "volume": 0.66,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "djsnakeselenagomezozunacardibtakitaki",
+    "local": false
+  },
+  {
+    "id": "djavan-samurai",
+    "title": "Samurai",
+    "artist": "Djavan",
+    "video": "3-qwqrQXsXQ",
+    "language": "Portuguese",
+    "bpm": 341.08,
+    "gap": 11918.507095109651,
+    "year": "1983",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-02-13T05:38:33.836Z",
+    "realBpm": 85,
+    "previewStart": 90,
+    "previewEnd": 112,
+    "volume": 0.67,
+    "author": "Lorchen",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=12697",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "djavansamurai",
     "local": false
   },
   {
@@ -12422,6 +12856,54 @@
     "local": false
   },
   {
+    "id": "elvis-crespo-pintame",
+    "title": "PÌntame",
+    "artist": "Elvis Crespo",
+    "video": "ZemZjPCXe0A",
+    "language": "Spanish",
+    "bpm": 120,
+    "gap": 440,
+    "year": "1999",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:33.897Z",
+    "genre": "Merengue",
+    "realBpm": 119,
+    "volume": 0.67,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elviscrespopintame",
+    "local": false
+  },
+  {
+    "id": "elvis-crespo-suavemente",
+    "title": "Suavemente",
+    "artist": "Elvis Crespo",
+    "video": "WPiEbYSF9kE",
+    "language": "Spanish",
+    "bpm": 248.32,
+    "gap": -498.84149484536084,
+    "year": "1998",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:33.899Z",
+    "genre": "Merengue",
+    "realBpm": 124,
+    "volume": 0.69,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elviscresposuavemente",
+    "local": false
+  },
+  {
     "id": "elvis-presley-cant-help-falling-in-love",
     "title": "Can’t Help Falling In Love",
     "artist": "Elvis Presley",
@@ -12544,6 +13026,31 @@
     ],
     "tracksCount": 1,
     "search": "eminemmockingbird",
+    "local": false
+  },
+  {
+    "id": "empire-of-the-sun-we-are-the-people",
+    "title": "We Are The People",
+    "artist": "Empire Of The Sun",
+    "video": "hN5X4kGhAtU",
+    "language": "English",
+    "bpm": 245.97,
+    "gap": 44594.27125259178,
+    "year": "2008",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-02-13T05:38:33.901Z",
+    "genre": "Pop",
+    "realBpm": 123,
+    "volume": 0.72,
+    "author": "ultrastarsongs",
+    "sourceUrl": "https://www.youtube.com/watch?v=hN5X4kGhAtU&feature=youtu.be",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "empireofthesunwearethepeople",
     "local": false
   },
   {
@@ -13091,6 +13598,31 @@
     ],
     "tracksCount": 1,
     "search": "falloutboycenturies",
+    "local": false
+  },
+  {
+    "id": "fall-out-boy-dead-on-arrival",
+    "title": "Dead on Arrival",
+    "artist": "Fall Out Boy",
+    "video": "qL02p9KhABo",
+    "language": "English",
+    "bpm": 395.4,
+    "gap": 8303.657056145676,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:33.905Z",
+    "genre": "Rock",
+    "realBpm": 101,
+    "previewStart": 40,
+    "previewEnd": 60,
+    "volume": 0.86,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "falloutboydeadonarrival",
     "local": false
   },
   {
@@ -14245,6 +14777,30 @@
     ],
     "tracksCount": 1,
     "search": "genesisthecarpetcrawlers1999",
+    "local": false
+  },
+  {
+    "id": "gente-de-zona-y-marc-anthony-la-gozadera",
+    "title": "La gozadera",
+    "artist": "Gente de Zona y Marc Anthony",
+    "video": "VMp55KH_3wo",
+    "language": "Spanish",
+    "bpm": 380.04,
+    "gap": 32714.2617619198,
+    "year": "2015",
+    "lastUpdate": "2024-02-13T05:38:33.906Z",
+    "genre": "Latin",
+    "videoGap": 19,
+    "realBpm": 95,
+    "volume": 0.72,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gentedezonaymarcanthonylagozadera",
     "local": false
   },
   {
@@ -15458,6 +16014,28 @@
     "local": false
   },
   {
+    "id": "henry-valentino-uschi-im-wagen-vor-mir",
+    "title": "Im Wagen vor mir",
+    "artist": "Henry Valentino & Uschi",
+    "video": "dZR7w2Jeks8",
+    "language": "German",
+    "bpm": 244.1,
+    "gap": -224.35067595247853,
+    "year": "1977",
+    "lastUpdate": "2024-02-13T05:38:34.007Z",
+    "realBpm": 93,
+    "volume": 0.97,
+    "author": "RES",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "henryvalentinouschiimwagenvormir",
+    "local": false
+  },
+  {
     "id": "hercules-no-hablare-de-mi-amor",
     "title": "No hablaré de mi amor",
     "artist": "Hércules",
@@ -16610,6 +17188,30 @@
     "local": false
   },
   {
+    "id": "j-balvin-ginza",
+    "title": "Ginza",
+    "artist": "J. Balvin",
+    "video": "zZjSX01P5dE",
+    "language": "Spanish",
+    "bpm": 204,
+    "gap": 64613.58823529412,
+    "year": "2014",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-02-13T05:38:34.080Z",
+    "genre": "Reggaeton",
+    "realBpm": 102,
+    "volume": 0.73,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jbalvinginza",
+    "local": false
+  },
+  {
     "id": "jacek-kaczmarski-mury",
     "title": "Mury",
     "artist": "Jacek Kaczmarski",
@@ -16710,6 +17312,30 @@
     "local": false
   },
   {
+    "id": "james-blunt-goodbye-my-lover",
+    "title": "Goodbye My Lover",
+    "artist": "James Blunt",
+    "video": "wVyggTKDcOE",
+    "language": "English",
+    "bpm": 285,
+    "gap": 10100,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:34.081Z",
+    "genre": "None",
+    "realBpm": 90,
+    "volume": 0.6,
+    "author": "Hamelin",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jamesbluntgoodbyemylover",
+    "local": false
+  },
+  {
     "id": "james-blunt-youre-beautiful",
     "title": "You're Beautiful",
     "artist": "James Blunt",
@@ -16732,6 +17358,33 @@
     ],
     "tracksCount": 1,
     "search": "jamesbluntyourebeautiful",
+    "local": false
+  },
+  {
+    "id": "james-morrison-feat-nelly-furtado-broken-strings",
+    "title": "Broken Strings",
+    "artist": "James Morrison feat. Nelly Furtado",
+    "video": "26PAgklYYvo",
+    "language": "English",
+    "bpm": 336,
+    "gap": 6807.857142857143,
+    "year": "2008",
+    "lastUpdate": "2024-02-13T05:38:34.087Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "volume": 0.76,
+    "author": "hamadad",
+    "sourceUrl": "https://www.youtube.com/watch?v=26PAgklYYvo&feature=youtu.be",
+    "tracks": [
+      {
+        "start": 22
+      },
+      {
+        "start": 1940
+      }
+    ],
+    "tracksCount": 2,
+    "search": "jamesmorrisonfeatnellyfurtadobrokenstrings",
     "local": false
   },
   {
@@ -17715,6 +18368,173 @@
     ],
     "tracksCount": 1,
     "search": "journeydontstopbelieving",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-a-pedir-su-mano",
+    "title": "A pedir su mano",
+    "artist": "Juan Luis Guerra",
+    "video": "0lGBwSiStfE",
+    "language": "Spanish",
+    "bpm": 290,
+    "gap": 13157.241379310344,
+    "year": "1990",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:34.163Z",
+    "genre": "Merengue",
+    "realBpm": 142,
+    "volume": 0.69,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerraapedirsumano",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-la-bilirrubina",
+    "title": "La bilirrubina",
+    "artist": "Juan Luis Guerra",
+    "video": "K8PpV3yK5iA",
+    "language": "Spanish",
+    "bpm": 259.94,
+    "gap": 5839.004385627452,
+    "year": "1991",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:34.164Z",
+    "genre": "Merengue",
+    "realBpm": 130,
+    "volume": 0.7,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerralabilirrubina",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-las-avispas",
+    "title": "Las avispas",
+    "artist": "Juan Luis Guerra",
+    "video": "ejhJF__T9Bo",
+    "language": "Spanish",
+    "bpm": 258,
+    "gap": 6131.627906976744,
+    "year": "2004",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:34.166Z",
+    "genre": "Merengue",
+    "realBpm": 130,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerralasavispas",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-ojala-que-llueva-cafe",
+    "title": "Ojala que llueva cafe",
+    "artist": "Juan Luis Guerra",
+    "video": "suQC8d-YkeU",
+    "language": "Spanish",
+    "bpm": 240.4,
+    "gap": 14270,
+    "year": "1990",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:34.168Z",
+    "genre": "Merengue",
+    "videoGap": 1,
+    "realBpm": 115,
+    "volume": 0.64,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerraojalaquelluevacafe",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-palomita-blanca",
+    "title": "Palomita blanca",
+    "artist": "Juan Luis Guerra",
+    "video": "ty4AR-bno-I",
+    "language": "Spanish",
+    "bpm": 252,
+    "gap": 14698.095238095239,
+    "year": "1998",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:34.169Z",
+    "genre": "Bachata",
+    "realBpm": 127,
+    "volume": 0.89,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerrapalomitablanca",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-y-440-burbujas-de-amor",
+    "title": "Burbujas de amor",
+    "artist": "Juan Luis Guerra y 4.40",
+    "video": "v0ckuv1xBm0",
+    "language": "Spanish",
+    "bpm": 251,
+    "gap": 4050.06374501992,
+    "year": "1990",
+    "lastUpdate": "2024-02-13T05:38:34.172Z",
+    "genre": "Bachata",
+    "realBpm": 125,
+    "volume": 0.8,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerray440burbujasdeamor",
+    "local": false
+  },
+  {
+    "id": "juan-luis-guerra-y-romeo-santos-frio-frio",
+    "title": "Frio, frio",
+    "artist": "Juan Luis Guerra y Romeo Santos",
+    "video": "zF1P6qIwasg",
+    "language": "Spanish",
+    "bpm": 253,
+    "gap": 14471.09486166008,
+    "year": "2013",
+    "lastUpdate": "2024-02-13T05:38:34.240Z",
+    "genre": "Bachata",
+    "realBpm": 122,
+    "volume": 0.73,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "juanluisguerrayromeosantosfriofrio",
     "local": false
   },
   {
@@ -18951,6 +19771,32 @@
     ],
     "tracksCount": 1,
     "search": "kelliepicklerredhighheels",
+    "local": false
+  },
+  {
+    "id": "kenya-grace-strangers",
+    "title": "Strangers",
+    "artist": "Kenya Grace",
+    "video": "S2TaAcwC_zI",
+    "language": "English",
+    "bpm": 340,
+    "gap": -374.7058823529412,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:34.300Z",
+    "genre": "Drum and Bass",
+    "realBpm": 171,
+    "volume": 0.6,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28679",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kenyagracestrangers",
     "local": false
   },
   {
@@ -20497,6 +21343,29 @@
     "local": false
   },
   {
+    "id": "lea-salonga-and-brad-kane-a-whole-new-world",
+    "title": "A Whole New World",
+    "artist": "Lea Salonga and Brad Kane",
+    "video": "EXTLJmYsaUQ",
+    "language": "English",
+    "bpm": 230.4,
+    "gap": 22525,
+    "year": "1992",
+    "lastUpdate": "2024-02-13T05:38:34.366Z",
+    "genre": "Disney",
+    "realBpm": 108,
+    "volume": 0.81,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "leasalongaandbradkaneawholenewworld",
+    "local": false
+  },
+  {
     "id": "league-of-legends-gods",
     "title": "GODS",
     "artist": "League of Legends",
@@ -21454,6 +22323,30 @@
     "local": false
   },
   {
+    "id": "lionel-richie-say-you-say-me",
+    "title": "Say You Say Me",
+    "artist": "Lionel Richie",
+    "video": "9OfoTaLXrUo",
+    "language": "English",
+    "bpm": 256.15,
+    "gap": 15045.489556900253,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:34.451Z",
+    "genre": "slow",
+    "realBpm": 82,
+    "volume": 0.88,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lionelrichiesayyousayme",
+    "local": false
+  },
+  {
     "id": "little-mix-feat-stormzy-power",
     "title": "Power",
     "artist": "Little Mix feat. Stormzy",
@@ -21885,6 +22778,52 @@
     ],
     "tracksCount": 1,
     "search": "luisenriqueyonosemanana",
+    "local": false
+  },
+  {
+    "id": "luis-fonsi-feat-daddy-yankee-despacito",
+    "title": "Despacito",
+    "artist": "Luis Fonsi feat. Daddy Yankee",
+    "video": "kJQP7kiw5Fk",
+    "language": "Spanish",
+    "bpm": 358.41,
+    "gap": 26728.563739851008,
+    "year": "2017",
+    "lastUpdate": "2024-02-13T05:38:34.455Z",
+    "genre": "Reggaeton",
+    "realBpm": 178,
+    "volume": 0.74,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "luisfonsifeatdaddyyankeedespacito",
+    "local": false
+  },
+  {
+    "id": "lunay-daddy-yankee-bad-bunny-soltera-remix",
+    "title": "Soltera (Remix)",
+    "artist": "Lunay, Daddy Yankee, Bad Bunny",
+    "video": "8zQTfGbyY5I",
+    "language": "Spanish",
+    "bpm": 375.5,
+    "gap": 2069.3315579227697,
+    "year": "2019",
+    "lastUpdate": "2024-02-13T05:38:44.716Z",
+    "genre": "Reggaeton",
+    "realBpm": 92,
+    "volume": 0.65,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lunaydaddyyankeebadbunnysolteraremix",
     "local": false
   },
   {
@@ -22396,6 +23335,129 @@
     "local": false
   },
   {
+    "id": "maluma-borro-cassette",
+    "title": "Borro Cassette",
+    "artist": "Maluma",
+    "video": "Xk0wdDTTPA0",
+    "language": "Spanish",
+    "bpm": 352,
+    "gap": 35392.88636363636,
+    "year": "2015",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-02-13T05:38:44.766Z",
+    "genre": "Reggaeton",
+    "realBpm": 96,
+    "volume": 0.66,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malumaborrocassette",
+    "local": false
+  },
+  {
+    "id": "maluma-el-perdedor",
+    "title": "El perdedor",
+    "artist": "Maluma",
+    "video": "PJniSb91tvo",
+    "language": "Spanish",
+    "bpm": 348.22,
+    "gap": 53314.24702774108,
+    "year": "2015",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-02-13T05:38:44.769Z",
+    "genre": "Reggaeton",
+    "videoGap": 39,
+    "realBpm": 174,
+    "volume": 0.63,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malumaelperdedor",
+    "local": false
+  },
+  {
+    "id": "maluma-felices-los-4",
+    "title": "Felices los 4",
+    "artist": "Maluma",
+    "video": "t_jHrUE5IOk",
+    "language": "Spanish",
+    "bpm": 376.02,
+    "gap": 43752.71262166906,
+    "year": "2017",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-02-13T05:38:44.771Z",
+    "genre": "Reggaeton",
+    "videoGap": 30,
+    "realBpm": 94,
+    "volume": 0.67,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malumafeliceslos4",
+    "local": false
+  },
+  {
+    "id": "maluma-hawai",
+    "title": "Hawai",
+    "artist": "Maluma",
+    "video": "pK060iUFWXg",
+    "language": "Spanish",
+    "bpm": 180.05,
+    "gap": 21524.27770063871,
+    "year": "2020",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-02-13T05:38:44.772Z",
+    "genre": "Reggaeton",
+    "videoGap": 8,
+    "realBpm": 180,
+    "volume": 0.64,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malumahawai",
+    "local": false
+  },
+  {
+    "id": "maluma-hp",
+    "title": "HP",
+    "artist": "Maluma",
+    "video": "iMEhjsiHbwM",
+    "language": "Spanish",
+    "bpm": 368.04,
+    "gap": 9571.089012063907,
+    "year": "2019",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-02-13T05:38:44.774Z",
+    "genre": "Reggaeton",
+    "realBpm": 170,
+    "volume": 0.62,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malumahp",
+    "local": false
+  },
+  {
     "id": "mana-clavado-en-un-bar",
     "title": "Clavado en un bar",
     "artist": "Maná",
@@ -22443,6 +23505,33 @@
     ],
     "tracksCount": 1,
     "search": "manaenelmuelledesanblas",
+    "local": false
+  },
+  {
+    "id": "mana-y-prince-royce-el-verdadero-amor-perdona",
+    "title": "El verdadero amor perdona",
+    "artist": "Mana y Prince Royce",
+    "video": "z8682aknioA",
+    "language": "Spanish",
+    "bpm": 454.64,
+    "gap": 21538.20587717755,
+    "year": "2011",
+    "lastUpdate": "2024-02-13T05:38:44.777Z",
+    "genre": "Bachata",
+    "videoGap": 8,
+    "realBpm": 113,
+    "volume": 0.97,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 30
+      },
+      {
+        "start": 545
+      }
+    ],
+    "tracksCount": 2,
+    "search": "manayprinceroyceelverdaderoamorperdona",
     "local": false
   },
   {
@@ -22850,6 +23939,30 @@
     ],
     "tracksCount": 1,
     "search": "mariahcareyhero",
+    "local": false
+  },
+  {
+    "id": "mariah-carey-my-all",
+    "title": "My All",
+    "artist": "Mariah Carey",
+    "video": "mIhI23gBBPQ",
+    "language": "English",
+    "bpm": 324,
+    "gap": 6596.481481481482,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:44.835Z",
+    "genre": "Pop",
+    "realBpm": 108,
+    "volume": 0.7,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mariahcareymyall",
     "local": false
   },
   {
@@ -24007,6 +25120,30 @@
     "local": false
   },
   {
+    "id": "michael-jackson-i-just-cant-stop-loving-you",
+    "title": "I just can't stop loving you",
+    "artist": "Michael Jackson",
+    "video": "fKBiYBWRYDM",
+    "language": "English",
+    "bpm": 200.45,
+    "gap": 256.18882514342727,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:44.838Z",
+    "genre": "Ballad",
+    "realBpm": 100,
+    "volume": 0.68,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michaeljacksonijustcantstoplovingyou",
+    "local": false
+  },
+  {
     "id": "michael-jackson-smooth-criminal-single-version",
     "title": "Smooth Criminal (Single Version)",
     "artist": "Michael Jackson",
@@ -24052,6 +25189,30 @@
     ],
     "tracksCount": 1,
     "search": "michaeljacksonthriller",
+    "local": false
+  },
+  {
+    "id": "michael-jackson-you-are-not-alone",
+    "title": "You are not alone",
+    "artist": "Michael Jackson",
+    "video": "pAyKJAtDNCw",
+    "language": "English",
+    "bpm": 240,
+    "gap": 8922,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:44.839Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.67,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michaeljacksonyouarenotalone",
     "local": false
   },
   {
@@ -24353,6 +25514,30 @@
     "local": false
   },
   {
+    "id": "mitski-washing-machine-heart",
+    "title": "Washing Machine Heart",
+    "artist": "Mitski",
+    "video": "3vjkh-acmTE",
+    "language": "English",
+    "bpm": 391.56,
+    "gap": 5703.98406374502,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:44.839Z",
+    "realBpm": 105,
+    "volume": 0.7,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=3vjkh-acmTE&feature=youtu.be",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mitskiwashingmachineheart",
+    "local": false
+  },
+  {
     "id": "momoland-bboom-bboom",
     "title": "BBoom BBoom",
     "artist": "MOMOLAND",
@@ -24418,6 +25603,55 @@
     ],
     "tracksCount": 1,
     "search": "monlafertetufaltadequerer",
+    "local": false
+  },
+  {
+    "id": "monchy-y-alexandra-no-es-una-novela",
+    "title": "No es una novela",
+    "artist": "Monchy y Alexandra",
+    "video": "4Ll1pP8j0jw",
+    "language": "Spanish",
+    "bpm": 256,
+    "gap": 14803.90625,
+    "year": "2006",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:44.841Z",
+    "genre": "Bachata",
+    "realBpm": 128,
+    "volume": 0.6,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "monchyyalexandranoesunanovela",
+    "local": false
+  },
+  {
+    "id": "monchy-y-alexandra-perdidos",
+    "title": "Perdidos",
+    "artist": "Monchy y Alexandra",
+    "video": "ByU6ABQ1cp8",
+    "language": "Spanish",
+    "bpm": 260,
+    "gap": 23599.23076923077,
+    "year": "2004",
+    "artistOrigin": "DO",
+    "lastUpdate": "2024-02-13T05:38:44.842Z",
+    "genre": "Bachata",
+    "videoGap": 1,
+    "realBpm": 130,
+    "volume": 0.6,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "monchyyalexandraperdidos",
     "local": false
   },
   {
@@ -25600,6 +26834,30 @@
     "local": false
   },
   {
+    "id": "natti-natasha-x-ozuna-criminal",
+    "title": "Criminal",
+    "artist": "Natti Natasha X Ozuna",
+    "video": "VqEbCxg2bNI",
+    "language": "Spanish",
+    "bpm": 320.21,
+    "gap": 32623.27057243684,
+    "year": "2017",
+    "lastUpdate": "2024-02-13T05:38:44.843Z",
+    "genre": "Reggaeton",
+    "videoGap": 19,
+    "realBpm": 80,
+    "volume": 0.68,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nattinatashaxozunacriminal",
+    "local": false
+  },
+  {
     "id": "nct-127-highway-to-heaven",
     "title": "Highway To Heaven",
     "artist": "NCT 127",
@@ -26377,6 +27635,128 @@
     ],
     "tracksCount": 1,
     "search": "nickitaylorworldscollide",
+    "local": false
+  },
+  {
+    "id": "nicky-jam-el-amante",
+    "title": "El amante",
+    "artist": "Nicky Jam",
+    "video": "YG2p6XBuSKA",
+    "language": "Spanish",
+    "bpm": 360,
+    "gap": 39512,
+    "year": "2017",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:44.900Z",
+    "genre": "Reggaeton",
+    "videoGap": 26,
+    "realBpm": 180,
+    "volume": 0.68,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickyjamelamante",
+    "local": false
+  },
+  {
+    "id": "nicky-jam-travesuras",
+    "title": "Travesuras",
+    "artist": "Nicky Jam",
+    "video": "OxxggwHFj7M",
+    "language": "Spanish",
+    "bpm": 376,
+    "gap": 69941.65957446808,
+    "year": "2014",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:44.902Z",
+    "genre": "Reggaeton",
+    "videoGap": 56,
+    "realBpm": 94,
+    "volume": 0.69,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickyjamtravesuras",
+    "local": false
+  },
+  {
+    "id": "nicky-jam-y-enrique-iglesias-el-perdon",
+    "title": "El perdon",
+    "artist": "Nicky Jam y Enrique Iglesias",
+    "video": "1m7TF2nVV1c",
+    "language": "Spanish",
+    "bpm": 320,
+    "gap": 25270.625,
+    "year": "2015",
+    "lastUpdate": "2024-02-13T05:38:44.903Z",
+    "genre": "Latin",
+    "videoGap": 11,
+    "realBpm": 180,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickyjamyenriqueiglesiaselperdon",
+    "local": false
+  },
+  {
+    "id": "nicky-jam-y-j-balvin-x",
+    "title": "X",
+    "artist": "Nicky Jam y J Balvin",
+    "video": "_I_D_8Z4sJE",
+    "language": "Spanish",
+    "bpm": 300,
+    "gap": 3950,
+    "year": "2018",
+    "lastUpdate": "2024-02-13T05:38:44.991Z",
+    "genre": "Latin",
+    "realBpm": 180,
+    "previewStart": 35,
+    "previewEnd": 71,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickyjamyjbalvinx",
+    "local": false
+  },
+  {
+    "id": "nicky-jam-y-ozuna-te-robare",
+    "title": "Te robare",
+    "artist": "Nicky Jam y Ozuna",
+    "video": "aA_kuFTV-P8",
+    "language": "Spanish",
+    "bpm": 352.63,
+    "gap": 11137.099906417492,
+    "year": "2019",
+    "lastUpdate": "2024-02-13T05:38:45.048Z",
+    "genre": "Reggaeton",
+    "realBpm": 176,
+    "volume": 0.7,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nickyjamyozunaterobare",
     "local": false
   },
   {
@@ -27289,6 +28669,33 @@
     "local": false
   },
   {
+    "id": "owl-city-carly-rae-jepsen-good-time",
+    "title": "Good Time",
+    "artist": "Owl City & Carly Rae Jepsen",
+    "video": "H7HmzwI67ec",
+    "language": "English",
+    "bpm": 252,
+    "gap": 288.0952380952382,
+    "year": "2012",
+    "lastUpdate": "2024-02-13T05:38:45.118Z",
+    "genre": "Classical",
+    "realBpm": 126,
+    "previewStart": 54,
+    "previewEnd": 83,
+    "volume": 0.7,
+    "author": "ChrissyLeggs",
+    "authorUrl": "https://usdb.eu/user/christophe",
+    "sourceUrl": "https://usdb.eu/OwlCity/GoodTime/1860",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "owlcitycarlyraejepsengoodtime",
+    "local": false
+  },
+  {
     "id": "owl-city-fireflies",
     "title": "Fireflies",
     "artist": "Owl City",
@@ -27314,6 +28721,153 @@
     ],
     "tracksCount": 1,
     "search": "owlcityfireflies",
+    "local": false
+  },
+  {
+    "id": "ozuna-baila-baila-baila",
+    "title": "BAILA BAILA BAILA",
+    "artist": "Ozuna",
+    "video": "32F2d-wj4Xw",
+    "language": "Spanish",
+    "bpm": 400.22,
+    "gap": 35066.056568887114,
+    "year": "2019",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:45.195Z",
+    "genre": "Reggaeton",
+    "videoGap": 21,
+    "realBpm": 100,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozunabailabailabaila",
+    "local": false
+  },
+  {
+    "id": "ozuna-dile-que-tu-me-quieres",
+    "title": "Dile que tu me quieres",
+    "artist": "Ozuna",
+    "video": "WAcnWtZjDWE",
+    "language": "Spanish",
+    "bpm": 364.82,
+    "gap": 39974.211994956415,
+    "year": "2017",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:45.197Z",
+    "genre": "Reggaeton",
+    "videoGap": 26,
+    "realBpm": 88,
+    "volume": 0.65,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozunadilequetumequieres",
+    "local": false
+  },
+  {
+    "id": "ozuna-se-preparo",
+    "title": "Se preparo",
+    "artist": "Ozuna",
+    "video": "KWGrPNqz4uc",
+    "language": "Spanish",
+    "bpm": 342.39,
+    "gap": 49203.37711381758,
+    "year": "2017",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:45.199Z",
+    "genre": "Reggaeton",
+    "videoGap": 35,
+    "realBpm": 171,
+    "volume": 0.64,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozunasepreparo",
+    "local": false
+  },
+  {
+    "id": "ozuna-si-no-te-quiere",
+    "title": "Si no te quiere",
+    "artist": "Ozuna",
+    "video": "Lqx9k2MjvwE",
+    "language": "Spanish",
+    "bpm": 368.1,
+    "gap": 28.249388753056223,
+    "year": "2017",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-02-13T05:38:45.201Z",
+    "genre": "Reggaeton",
+    "realBpm": 92,
+    "volume": 0.66,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": -3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozunasinotequiere",
+    "local": false
+  },
+  {
+    "id": "ozuna-y-manuel-turizo-vaina-loca",
+    "title": "Vaina loca",
+    "artist": "Ozuna y Manuel Turizo",
+    "video": "SLOLI44uK3s",
+    "language": "Spanish",
+    "bpm": 300,
+    "gap": 1610,
+    "year": "2018",
+    "lastUpdate": "2024-02-13T05:38:45.203Z",
+    "genre": "Reggaeton",
+    "realBpm": 94,
+    "previewStart": 30,
+    "previewEnd": 60,
+    "volume": 0.67,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozunaymanuelturizovainaloca",
+    "local": false
+  },
+  {
+    "id": "ozuna-y-romeo-santos-el-farsante-remix",
+    "title": "El farsante (Remix)",
+    "artist": "Ozuna y Romeo Santos",
+    "video": "wfWkmURBNv8",
+    "language": "Spanish",
+    "bpm": 273.9,
+    "gap": 54356.23877327492,
+    "year": "2018",
+    "lastUpdate": "2024-02-13T05:38:45.270Z",
+    "genre": "Reggaeton",
+    "videoGap": 40,
+    "realBpm": 120,
+    "volume": 0.63,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozunayromeosantoselfarsanteremix",
     "local": false
   },
   {
@@ -27700,6 +29254,32 @@
     ],
     "tracksCount": 1,
     "search": "paramoredecode",
+    "local": false
+  },
+  {
+    "id": "paramore-emergency",
+    "title": "Emergency",
+    "artist": "Paramore",
+    "video": "mgJ8BZi3vTA",
+    "language": "English",
+    "bpm": 300,
+    "gap": 10900,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.333Z",
+    "genre": "Rock",
+    "realBpm": 168,
+    "previewStart": 48,
+    "previewEnd": 86,
+    "volume": 0.7,
+    "author": "EL imazomattias",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramoreemergency",
     "local": false
   },
   {
@@ -28420,6 +30000,53 @@
     "local": false
   },
   {
+    "id": "phil-collins-a-groovy-kind-of-love",
+    "title": "A Groovy Kind Of Love",
+    "artist": "Phil Collins",
+    "video": "HsC_SARyPzk",
+    "language": "English",
+    "bpm": 240,
+    "gap": 34050,
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:45.334Z",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "philcollinsagroovykindoflove",
+    "local": false
+  },
+  {
+    "id": "phil-collins-against-all-odds",
+    "title": "Against All Odds",
+    "artist": "Phil Collins",
+    "video": "CkGg1bzfSys",
+    "language": "English",
+    "bpm": 240,
+    "gap": 9189,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:45.335Z",
+    "genre": "Rock",
+    "realBpm": 116,
+    "volume": 0.74,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "philcollinsagainstallodds",
+    "local": false
+  },
+  {
     "id": "phil-collins-another-day-in-paradise",
     "title": "Another Day In Paradise",
     "artist": "Phil Collins",
@@ -28467,6 +30094,31 @@
     "local": false
   },
   {
+    "id": "phil-collins-one-more-night",
+    "title": "One More Night",
+    "artist": "Phil Collins",
+    "video": "zKVq-P3z5Vg",
+    "language": "English",
+    "bpm": 272.78,
+    "gap": 15498.191363003152,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:45.337Z",
+    "genre": "Ballad",
+    "videoGap": 1,
+    "realBpm": 136,
+    "volume": 1,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "philcollinsonemorenight",
+    "local": false
+  },
+  {
     "id": "phil-collins-youll-be-in-my-heart",
     "title": "You’ll Be In My Heart",
     "artist": "Phil Collins",
@@ -28511,6 +30163,31 @@
     ],
     "tracksCount": 1,
     "search": "philipbaileywithphilcollinseasylover",
+    "local": false
+  },
+  {
+    "id": "phoebe-bridgers-motion-sickness",
+    "title": "Motion Sickness",
+    "artist": "Phoebe Bridgers",
+    "video": "9sfYpolGCu8",
+    "language": "English",
+    "bpm": 214,
+    "gap": 10208.691588785046,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.339Z",
+    "genre": "Pop",
+    "realBpm": 107,
+    "volume": 0.73,
+    "author": "nuemlha",
+    "sourceUrl": "https://www.youtube.com/watch?v=9sfYpolGCu8",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "phoebebridgersmotionsickness",
     "local": false
   },
   {
@@ -29215,6 +30892,32 @@
     "local": false
   },
   {
+    "id": "prince-royce-darte-un-beso",
+    "title": "Darte un beso",
+    "artist": "Prince Royce",
+    "video": "bdOXnTbyk0g",
+    "language": "Spanish",
+    "bpm": 280.3,
+    "gap": 16643.232251159472,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.340Z",
+    "genre": "Bachata",
+    "realBpm": 140,
+    "previewStart": 70,
+    "previewEnd": 120,
+    "volume": 0.7,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "princeroycedarteunbeso",
+    "local": false
+  },
+  {
     "id": "prince-royce-feat-shakira-deja-vu",
     "title": "Deja vu",
     "artist": "Prince Royce feat. Shakira",
@@ -29568,6 +31271,34 @@
     ],
     "tracksCount": 1,
     "search": "queeninnuendo",
+    "local": false
+  },
+  {
+    "id": "queen-killer-queen",
+    "title": "Killer Queen",
+    "artist": "Queen",
+    "video": "9K-Jmg93Xj8",
+    "language": "English",
+    "bpm": 389.44,
+    "gap": 6726.740621218233,
+    "year": "1974",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:45.341Z",
+    "genre": "Rock",
+    "realBpm": 118,
+    "previewStart": 8,
+    "previewEnd": 38,
+    "volume": 0.95,
+    "author": "Queen",
+    "sourceUrl": "https://www.youtube.com/watch?v=2ZBtPf7FOoM",
+    "tracks": [
+      {
+        "name": "Killer queen",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "queenkillerqueen",
     "local": false
   },
   {
@@ -29966,6 +31697,32 @@
     ],
     "tracksCount": 1,
     "search": "radwimpsfeattoakasuzume",
+    "local": false
+  },
+  {
+    "id": "rage-against-the-machine-guerrilla-radio",
+    "title": "Guerrilla Radio",
+    "artist": "Rage Against the Machine",
+    "video": "Rm1nCYOZB-s",
+    "language": "English",
+    "bpm": 393.8,
+    "gap": 47473.649568308785,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.343Z",
+    "genre": "Rap Metal",
+    "videoGap": 7,
+    "realBpm": 104,
+    "previewStart": 85,
+    "previewEnd": 105,
+    "volume": 0.89,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rageagainstthemachineguerrillaradio",
     "local": false
   },
   {
@@ -30427,6 +32184,30 @@
     "local": false
   },
   {
+    "id": "reik-ft-maluma-amigos-con-derechos",
+    "title": "Amigos con derechos",
+    "artist": "Reik ft. Maluma",
+    "video": "0vTopF6wwZg",
+    "language": "Spanish",
+    "bpm": 368.04,
+    "gap": 31916.089012063905,
+    "year": "2018",
+    "lastUpdate": "2024-02-13T05:38:45.446Z",
+    "genre": "Reggaeton",
+    "videoGap": 18,
+    "realBpm": 92,
+    "volume": 0.72,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "reikftmalumaamigosconderechos",
+    "local": false
+  },
+  {
     "id": "reik-inolvidable",
     "title": "Inolvidable",
     "artist": "Reik",
@@ -30447,6 +32228,55 @@
     ],
     "tracksCount": 1,
     "search": "reikinolvidable",
+    "local": false
+  },
+  {
+    "id": "reik-ozuna-y-wisin-me-niego",
+    "title": "Me Niego",
+    "artist": "Reik, Ozuna y Wisin",
+    "video": "JyqD_zfXfi8",
+    "language": "Spanish",
+    "bpm": 376.04,
+    "gap": 74382.76566322731,
+    "year": "2018",
+    "lastUpdate": "2024-02-13T05:38:45.511Z",
+    "genre": "Reggaeton",
+    "videoGap": 60,
+    "realBpm": 94,
+    "volume": 0.64,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "reikozunaywisinmeniego",
+    "local": false
+  },
+  {
+    "id": "rem-everybody-hurts",
+    "title": "Everybody Hurts",
+    "artist": "R.E.M.",
+    "video": "5rOiW_xY-kc",
+    "language": "English",
+    "bpm": 340,
+    "gap": 20325.29411764706,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.572Z",
+    "genre": "Pop",
+    "realBpm": 94,
+    "volume": 0.72,
+    "author": "Canni",
+    "sourceUrl": "https://www.youtube.com/watch?v=5rOiW_xY-kc&feature=youtu.be",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "remeverybodyhurts",
     "local": false
   },
   {
@@ -30642,6 +32472,30 @@
     "local": false
   },
   {
+    "id": "richard-marx-right-here-waiting",
+    "title": "Right here waiting",
+    "artist": "Richard Marx",
+    "video": "S_E2EHVxNAE",
+    "language": "English",
+    "bpm": 359.56,
+    "gap": 43861.77628212259,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.573Z",
+    "genre": "Ballad",
+    "realBpm": 177,
+    "volume": 0.79,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "richardmarxrightherewaiting",
+    "local": false
+  },
+  {
     "id": "rick-astley-never-gonna-give-you-up",
     "title": "Never gonna give you up",
     "artist": "Rick Astley",
@@ -30688,6 +32542,29 @@
     ],
     "tracksCount": 1,
     "search": "rickymartinlivinlavidaloca",
+    "local": false
+  },
+  {
+    "id": "ricky-martin-y-maluma-vente-paca",
+    "title": "Vente pa'ca",
+    "artist": "Ricky Martin y Maluma",
+    "video": "iOe6dI2JhgU",
+    "language": "Spanish",
+    "bpm": 400,
+    "gap": 46755.5,
+    "year": "2016",
+    "lastUpdate": "2024-02-13T05:38:45.576Z",
+    "genre": "Reggaeton",
+    "realBpm": 100,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rickymartinymalumaventepaca",
     "local": false
   },
   {
@@ -31152,6 +33029,79 @@
     ],
     "tracksCount": 1,
     "search": "rolfzuckowskiundseinefreundeinderweihnachtsbackerei",
+    "local": false
+  },
+  {
+    "id": "romeo-santos-eres-mia",
+    "title": "Eres mÌa",
+    "artist": "Romeo Santos",
+    "video": "8iPcqtHoR3U",
+    "language": "Spanish",
+    "bpm": 246.02,
+    "gap": 53474.469555320706,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.634Z",
+    "genre": "Bachata",
+    "videoGap": 40,
+    "realBpm": 123,
+    "volume": 0.53,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "romeosantoseresmia",
+    "local": false
+  },
+  {
+    "id": "romeo-santos-ft-usher-promise",
+    "title": "Promise",
+    "artist": "Romeo Santos Ft. Usher",
+    "video": "_TrCbDtRxbU",
+    "language": "Spanish",
+    "bpm": 266,
+    "gap": 14473.962406015038,
+    "year": "2011",
+    "lastUpdate": "2024-02-13T05:38:45.637Z",
+    "genre": "Bachata",
+    "realBpm": 133,
+    "volume": 0.52,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "romeosantosftusherpromise",
+    "local": false
+  },
+  {
+    "id": "romeo-santos-propuesta-indecente",
+    "title": "Propuesta indecente",
+    "artist": "Romeo Santos",
+    "video": "QFs3PIZb3js",
+    "language": "Spanish",
+    "bpm": 732.54,
+    "gap": 36724.64182160701,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.695Z",
+    "genre": "Bachata",
+    "videoGap": 23,
+    "realBpm": 123,
+    "volume": 0.66,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 49
+      }
+    ],
+    "tracksCount": 1,
+    "search": "romeosantospropuestaindecente",
     "local": false
   },
   {
@@ -31651,6 +33601,30 @@
     ],
     "tracksCount": 2,
     "search": "sarahbrightmanandreabocellitimetosaygoodbyecontepartiro",
+    "local": false
+  },
+  {
+    "id": "savage-garden-truly-madly-deeply",
+    "title": "Truly Madly Deeply",
+    "artist": "Savage Garden",
+    "video": "WQnAxOQxQIU",
+    "language": "English",
+    "bpm": 252.24,
+    "gap": 15159.058039961941,
+    "year": "1997",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-02-13T05:38:45.697Z",
+    "genre": "Pop Rock",
+    "realBpm": 166,
+    "volume": 0.78,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "savagegardentrulymadlydeeply",
     "local": false
   },
   {
@@ -33561,6 +35535,30 @@
     "local": false
   },
   {
+    "id": "spandau-ballet-true",
+    "title": "True",
+    "artist": "Spandau Ballet",
+    "video": "AR8D2yqgQ1U",
+    "language": "English",
+    "bpm": 390.9,
+    "gap": 10000,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-13T05:38:45.698Z",
+    "genre": "Pop",
+    "realBpm": 95,
+    "volume": 0.71,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "spandauballettrue",
+    "local": false
+  },
+  {
     "id": "spice-girls-holler",
     "title": "Holler",
     "artist": "Spice Girls",
@@ -33948,6 +35946,29 @@
     ],
     "tracksCount": 1,
     "search": "stevencurtischapmanthegreatadventure",
+    "local": false
+  },
+  {
+    "id": "stevie-wonder-i-just-called-to-say-i-love-you",
+    "title": "I Just Called to Say I Love You",
+    "artist": "Stevie Wonder",
+    "video": "wyXNQiRCfRg",
+    "language": "English",
+    "bpm": 224,
+    "gap": 5694.535714285715,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.700Z",
+    "realBpm": 114,
+    "volume": 0.85,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "steviewonderijustcalledtosayiloveyou",
     "local": false
   },
   {
@@ -34707,6 +36728,30 @@
     "local": false
   },
   {
+    "id": "taylor-swift-all-too-well-10-minute-version",
+    "title": "All Too Well (10 Minute Version)",
+    "artist": "Taylor Swift",
+    "video": "sRxrwjOtIag",
+    "language": "English",
+    "bpm": 398.44,
+    "gap": 21843.53578957936,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.704Z",
+    "realBpm": 93,
+    "volume": 0.76,
+    "author": "UltraSinger [GitHub]",
+    "sourceUrl": "https://www.youtube.com/watch?v=sRxrwjOtIag&feature=youtu.be",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftalltoowell10minuteversion",
+    "local": false
+  },
+  {
     "id": "taylor-swift-all-too-well",
     "title": "All Too Well",
     "artist": "Taylor Swift",
@@ -34727,6 +36772,31 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftalltoowell",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-better-than-revenge",
+    "title": "Better Than Revenge",
+    "artist": "Taylor Swift",
+    "video": "KaTrCOBBJ1I",
+    "language": "English",
+    "bpm": 583.92,
+    "gap": 16428.15043156597,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.706Z",
+    "genre": "Pop",
+    "realBpm": 145,
+    "volume": 0.74,
+    "author": "GiantCrab",
+    "sourceUrl": "https://www.youtube.com/watch?v=KaTrCOBBJ1I&feature=youtu.be",
+    "tracks": [
+      {
+        "start": 39
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftbetterthanrevenge",
     "local": false
   },
   {
@@ -36500,6 +38570,32 @@
     "local": false
   },
   {
+    "id": "the-pussycat-dolls-hush-hush-hush-hush",
+    "title": "Hush Hush; Hush Hush",
+    "artist": "The Pussycat Dolls",
+    "video": "3BBsF7VIQyo",
+    "language": "English",
+    "bpm": 259.86,
+    "gap": 4198.702378203649,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.708Z",
+    "genre": "R&B",
+    "realBpm": 131,
+    "volume": 0.65,
+    "author": "Bakus",
+    "sourceUrl": "https://www.youtube.com/watch?v=3BBsF7VIQyo",
+    "tracks": [
+      {
+        "name": "The Pussycat Dolls - Hush Hush",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thepussycatdollshushhushhushhush",
+    "local": false
+  },
+  {
     "id": "the-pussycat-dolls-sway",
     "title": "Sway",
     "artist": "The Pussycat Dolls",
@@ -36723,6 +38819,30 @@
     "local": false
   },
   {
+    "id": "the-temptations-my-girl",
+    "title": "My Girl",
+    "artist": "The Temptations",
+    "video": "8Ff2Z0Dq2sg",
+    "language": "English",
+    "bpm": 210.77,
+    "gap": 7806.903561043047,
+    "year": "1964",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.708Z",
+    "genre": "R&B",
+    "realBpm": 105,
+    "volume": 0.69,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thetemptationsmygirl",
+    "local": false
+  },
+  {
     "id": "the-village-people-ymca",
     "title": "YMCA",
     "artist": "The Village People",
@@ -36815,6 +38935,30 @@
     ],
     "tracksCount": 1,
     "search": "theweekndcantfeelmyface",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-earned-it",
+    "title": "Earned it",
+    "artist": "The Weeknd",
+    "video": "waU75jdUnYw",
+    "language": "English",
+    "bpm": 239.8,
+    "gap": 35849.16597164304,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-13T05:38:45.710Z",
+    "genre": "Soundtracks",
+    "realBpm": 120,
+    "volume": 0.67,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndearnedit",
     "local": false
   },
   {
@@ -37655,6 +39799,29 @@
     ],
     "tracksCount": 1,
     "search": "tommyfebruary6everydayatthebusstop",
+    "local": false
+  },
+  {
+    "id": "toni-braxton-un-break-my-heart",
+    "title": "Un-break My Heart",
+    "artist": "Toni Braxton",
+    "video": "p2Rch6WvPJE",
+    "language": "English",
+    "bpm": 400,
+    "gap": 19813.5,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:45.711Z",
+    "realBpm": 110,
+    "volume": 0.73,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tonibraxtonunbreakmyheart",
     "local": false
   },
   {
@@ -38565,6 +40732,29 @@
     "local": false
   },
   {
+    "id": "usher-pitbull-dj-got-us-falling-in-love-again",
+    "title": "DJ Got Us Falling In Love Again",
+    "artist": "Usher & Pitbull",
+    "video": "C-dvTjK_07c",
+    "language": "English",
+    "bpm": 239.98,
+    "gap": 27189.916659721643,
+    "year": "2010",
+    "lastUpdate": "2024-02-13T05:38:45.713Z",
+    "genre": "R&B",
+    "realBpm": 119,
+    "volume": 0.62,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "usherpitbulldjgotusfallinginloveagain",
+    "local": false
+  },
+  {
     "id": "utada-hikaru-hikari",
     "title": "Hikari",
     "artist": "Utada Hikaru",
@@ -39357,6 +41547,30 @@
     "local": false
   },
   {
+    "id": "whitney-houston-greatest-love-of-all",
+    "title": "Greatest Love Of All",
+    "artist": "Whitney Houston",
+    "video": "IYzlVDlE72w",
+    "language": "English",
+    "bpm": 262.8,
+    "gap": 18192.602739726026,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:55.986Z",
+    "genre": "Pop",
+    "realBpm": 129,
+    "volume": 0.73,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitneyhoustongreatestloveofall",
+    "local": false
+  },
+  {
     "id": "whitney-houston-i-have-nothing",
     "title": "I Have Nothing",
     "artist": "Whitney Houston",
@@ -39427,6 +41641,31 @@
     ],
     "tracksCount": 1,
     "search": "whitneyhoustoniwillalwaysloveyou",
+    "local": false
+  },
+  {
+    "id": "whitney-houston-saving-all-my-love-for-you",
+    "title": "Saving All My Love For You",
+    "artist": "Whitney Houston",
+    "video": "ewxmv2tyeRs",
+    "language": "English",
+    "bpm": 298.2,
+    "gap": 15177.89898989899,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-13T05:38:55.993Z",
+    "genre": "slow",
+    "videoGap": 1,
+    "realBpm": 99,
+    "volume": 0.8,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitneyhoustonsavingallmyloveforyou",
     "local": false
   },
   {
@@ -39629,6 +41868,29 @@
     "local": false
   },
   {
+    "id": "wisin-y-carlos-vives-ft-daddy-yankee-nota-de-amor",
+    "title": "Nota de amor",
+    "artist": "Wisin y Carlos Vives ft. Daddy Yankee",
+    "video": "wZRWpr1G1Qw",
+    "language": "Spanish",
+    "bpm": 388.84,
+    "gap": 6161.016767822241,
+    "year": "2015",
+    "lastUpdate": "2024-02-13T05:38:56.000Z",
+    "genre": "Reggaeton",
+    "realBpm": 98,
+    "volume": 0.64,
+    "author": "varisha",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "wisinycarlosvivesftdaddyyankeenotadeamor",
+    "local": false
+  },
+  {
     "id": "wisin-y-ozuna-escpate-conmigo",
     "title": "Esc·pate Conmigo",
     "artist": "Wisin y Ozuna",
@@ -39721,6 +41983,32 @@
     ],
     "tracksCount": 1,
     "search": "wondergirlstellme",
+    "local": false
+  },
+  {
+    "id": "xavier-rudd-stoney-creek",
+    "title": "Stoney Creek",
+    "artist": "Xavier Rudd",
+    "video": "mcDWBckYN18",
+    "language": "English",
+    "bpm": 125,
+    "gap": 61930,
+    "year": "2022",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-02-13T05:38:56.070Z",
+    "genre": "Indie",
+    "realBpm": 116,
+    "previewStart": 113,
+    "previewEnd": 147,
+    "volume": 0.64,
+    "author": "Sebastian Moebus",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "xavierruddstoneycreek",
     "local": false
   },
   {
