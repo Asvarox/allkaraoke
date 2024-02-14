@@ -5,7 +5,7 @@ import 'Stats';
 import 'utils/array-at-polyfill';
 import 'utils/exposeSingletons';
 
-import { BrowserTracing, init, setUser } from '@sentry/react';
+import { init, setUser } from '@sentry/react';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { ToastContainer, toast } from 'react-toastify';
@@ -22,14 +22,12 @@ const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
 
 if (isSentryEnabled) {
   init({
-    integrations: [new BrowserTracing()],
-
     dsn: import.meta.env.VITE_APP_SENTRY_DSN_URL,
     ignoreErrors: sentryIgnoreErrors,
     // Set tracesSampleRate to 1.0 to capture 100%
     // of transactions for performance monitoring.
     // We recommend adjusting this value in production
-    tracesSampleRate: 0.1,
+    tracesSampleRate: 1.0,
     environment: isDev() ? 'development' : isE2E() ? 'e2e' : 'production',
     tunnel: import.meta.env.VITE_APP_SENTRY_TUNNEL,
   });

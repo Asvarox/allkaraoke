@@ -1,4 +1,3 @@
-import { sentryVitePlugin } from '@sentry/vite-plugin';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import fs from 'node:fs';
@@ -39,9 +38,6 @@ export default defineConfig({
         keepClosingSlash: true,
         sortAttributes: true,
       },
-    }),
-    sentryVitePlugin({
-      disable: true, // todo configure the thing
     }),
   ],
   base: '/',
