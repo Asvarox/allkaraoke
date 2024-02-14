@@ -13,7 +13,7 @@ test('Should draw a proper sprite map', async ({ mount, page }) => {
     document.getElementById('root')!.prepend(canvas);
   });
 
-  await expect(await component.screenshot()).toMatchSnapshot('proper-sprite-map.png', { maxDiffPixelRatio: 0.01 });
+  await expect(await component.screenshot()).toMatchSnapshot('proper-sprite-map.png', { maxDiffPixelRatio: 0.005 });
 });
 
 test('Should return proper coordinates to draw a legit note', async ({ mount, page }) => {
@@ -30,7 +30,7 @@ test('Should return proper coordinates to draw a legit note', async ({ mount, pa
     drawSprite(ctx, 'p0Hit', 'end', 10 + start.w + 40, 10);
   });
 
-  await expect(await component.screenshot()).toMatchSnapshot('proper-legit-note.png', { maxDiffPixelRatio: 0.01 });
+  await expect(await component.screenshot()).toMatchSnapshot('proper-legit-note.png', { maxDiffPixelRatio: 0.005 });
 });
 
 test('Should return proper coordinates to draw a legit small note', async ({ mount, page }) => {
@@ -48,6 +48,6 @@ test('Should return proper coordinates to draw a legit small note', async ({ mou
   });
 
   await expect(await component.screenshot()).toMatchSnapshot('proper-legit-small-note.png', {
-    maxDiffPixelRatio: 0.01,
+    maxDiffPixelRatio: 0.005,
   });
 });

@@ -30,7 +30,7 @@ test('Should properly draw game state', async ({ mount, page }) => {
     }
   });
 
-  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
+  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.005 });
 });
 
 test('should draw missed note above the target note if the distance is positive', async ({ mount, page }) => {
@@ -65,5 +65,5 @@ test('should draw missed note above the target note if the distance is positive'
   );
 
   // Expected - red should be below, blue above the target note
-  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
+  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.005 });
 });

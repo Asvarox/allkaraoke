@@ -25,7 +25,7 @@ test('Should draw a proper note when it is shorter than minimum', async ({ mount
     tuple([playerNote]),
   );
 
-  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
+  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.005 });
 });
 
 test('Should draw multiple notes', async ({ mount, page }) => {
@@ -47,5 +47,5 @@ test('Should draw multiple notes', async ({ mount, page }) => {
     tuple([playerNote]),
   );
 
-  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
+  await expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.005 });
 });

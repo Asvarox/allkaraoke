@@ -12,7 +12,7 @@ for (const playerNum of playerNums) {
         tolerance={6}
         gameMode={GAME_MODE.DUEL}
         speed={100}
-        progress={39}
+        progress={35}
       />,
     );
 
@@ -33,5 +33,19 @@ for (const playerNum of playerNums) {
     });
 
     expect(await component.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.01 });
+
+    // Hide the font to make comparison easier
+    await page.addStyleTag({
+      content: `
+      * {
+      color: transparent !important;
+  -webkit-text-stroke: 0 black !important;
+    }
+      `,
+    });
+
+    expect(await component.getByTestId(`lyrics-container-player-0`).screenshot()).toMatchSnapshot({
+      maxDiffPixelRatio: 0.03,
+    });
   });
 }
