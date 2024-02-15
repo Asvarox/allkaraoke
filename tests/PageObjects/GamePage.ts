@@ -78,4 +78,21 @@ export class GamePagePO {
   public getSongLyricsForPlayerElement(playerNumber: number) {
     return this.page.getByTestId(`lyrics-container-player-${playerNumber}`);
   }
+
+  public get songArtistAndTitleContainer() {
+    return this.page.locator('.ec-12jgvzs-BackgroundContainer');
+  }
+
+  public async expectArtistAndSongTitleToBeShown(artist: string, title: string) {
+    await expect(this.songArtistAndTitleContainer.locator('span').nth(0)).toHaveText(artist);
+    await expect(this.songArtistAndTitleContainer.locator('span').nth(1)).toHaveText(title);
+  }
+
+  public get changeIndicatorIcon() {
+    return this.page.getByTestId('SwapHorizIcon');
+  }
+
+  public get passTheMicProgressElement() {
+    return this.page.locator('.ec-15mhstp-BasePassTheMicProgress');
+  }
 }

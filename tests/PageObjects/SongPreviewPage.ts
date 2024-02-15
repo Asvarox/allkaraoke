@@ -2,7 +2,11 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongPreviewPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get nextButton() {
     return this.page.getByTestId('next-step-button');
@@ -28,6 +32,10 @@ export class SongPreviewPagePO {
 
   public get gameModeSettingsElement() {
     return this.page.getByTestId('game-mode-setting');
+  }
+
+  public async toggleGameMode() {
+    await this.gameModeSettingsElement.click();
   }
 
   public async navigateToGameModeSettingsWithKeyboard(remoteMic?: Page) {
