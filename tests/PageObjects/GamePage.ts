@@ -80,12 +80,13 @@ export class GamePagePO {
   }
 
   public get songArtistAndTitleContainer() {
-    return this.page.locator('.ec-12jgvzs-BackgroundContainer');
+    return this.page.getByTestId('background-container');
   }
 
   public async expectArtistAndSongTitleToBeShown(artist: string, title: string) {
-    await expect(this.songArtistAndTitleContainer.locator('span').nth(0)).toHaveText(artist);
-    await expect(this.songArtistAndTitleContainer.locator('span').nth(1)).toHaveText(title);
+    await expect(this.songArtistAndTitleContainer).toBeVisible();
+    await expect(this.page.getByTestId('song-artist')).toHaveText(artist);
+    await expect(this.page.getByTestId('song-title')).toHaveText(title);
   }
 
   public get changeIndicatorIcon() {
@@ -93,6 +94,6 @@ export class GamePagePO {
   }
 
   public get passTheMicProgressElement() {
-    return this.page.locator('.ec-15mhstp-BasePassTheMicProgress');
+    return this.page.getByTestId('pass-the-mic');
   }
 }

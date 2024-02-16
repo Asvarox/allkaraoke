@@ -111,4 +111,9 @@ export class SongListPagePO {
   public async expectSongToBeVisibleAsNew(songID: string) {
     await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
   }
+
+  public async goBackToMainMenu() {
+    await this.page.waitForTimeout(500);
+    await this.page.keyboard.press('Backspace');
+  }
 }

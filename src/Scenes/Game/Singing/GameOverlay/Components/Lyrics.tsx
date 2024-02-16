@@ -212,6 +212,7 @@ const BasePassTheMicProgress = styled.div<{ color: string }>`
 
 const PassTheMicProgress = (props: { progress: number } & ComponentProps<typeof BasePassTheMicProgress>) => (
   <BasePassTheMicProgress
+    data-test="pass-the-mic"
     style={{
       transformOrigin: 'left',
       transform: `scaleX(${props.progress / 100})`,
