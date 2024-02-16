@@ -78,7 +78,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
 
   const register = (
     name: string,
-    onActive: () => void,
+    onActive: (e?: Event) => void,
     help?: string,
     isDefault = false,
     { propName = 'onClick', disabled = false } = {},

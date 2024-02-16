@@ -56,7 +56,6 @@ const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }
         onClick={() => setOpen(true)}
         data-test="remote-mic-entry"
         data-id={mic.id ?? mic.name}
-        value={permission}
         size="small">
         <PlayerNumberCircle number={mic.number} />
         <RemoteMicId>{mic.id?.slice(-4) ?? '????'}</RemoteMicId>

@@ -1,6 +1,7 @@
 const errors = [
   'AbortError: Version change transaction was aborted in upgradeneeded event handler.',
   'The object can not be found here.',
+  'Document is hidden.',
   "Failed to register a ServiceWorker for scope ('https://allkaraoke.party/') with script",
   'NotAllowedError: Permission denied by system',
   'ResizeObserver loop limit exceeded',

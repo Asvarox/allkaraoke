@@ -1,19 +1,23 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Button } from './Button';
 
 type ButtonSizes = 'small' | 'normal';
 
-export const MenuButton = styled(Button)<{ focused?: boolean; size?: ButtonSizes }>`
+export const MenuButton = styled(Button)<{ focused?: boolean; disabled?: boolean; size?: ButtonSizes }>`
   margin: 0.5rem 0;
   height: ${(props) => (props.size === 'small' ? '5rem' : '10rem')};
   border: 0 solid black;
 
-  :disabled {
-    cursor: default;
-    color: #989898;
-    background-color: #212121;
-    border-width: 0.3rem;
-  }
+  ${(props) =>
+    props.disabled &&
+    css`
+      cursor: default;
+      color: #989898;
+      background-color: #212121;
+      border-width: 0.3rem;
+      pointer-events: none;
+    `}
 `;
 
 export const MenuContainer = styled.div`

@@ -27,7 +27,7 @@ export const PlayerSelector = (props: Props) => {
         </Header>
       ) : (
         <SwitcherWithPlayerHeader
-          {...(props.readonly ? {} : props.register(`player-${player.number}-source`, cycleSource))}
+          {...(props.readonly ? {} : props.register(`player-${player.number}-source`, () => cycleSource()))}
           label={<span className="ph-no-capture">{player.getName()} Source</span>}
           value={source}
           disabled={props.readonly}

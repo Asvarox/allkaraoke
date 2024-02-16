@@ -4,10 +4,47 @@ import { focused, typography } from 'Elements/cssMixins';
 import isE2E from 'utils/isE2E';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
+export const LinkButton = styled.a<{ focused?: boolean }>`
+  padding: 0.1rem 0.3rem;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: 0;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  ${typography};
+
+  pointer-events: auto;
+  ${(props) => props.focused && buttonFocused};
+  box-sizing: border-box;
+
+  transition: 300ms;
+
+  :not(:disabled) {
+    :hover {
+      ${focused};
+    }
+
+    :active {
+      background: ${styles.colors.text.active};
+    }
+  }
+`;
+
 export const Button = styled.button<{ focused?: boolean }>`
   padding: 0.1rem 0.3rem;
   font-size: 2.6rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   cursor: pointer;
   border: 0;

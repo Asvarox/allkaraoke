@@ -2,8 +2,10 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
 import { Badge } from 'Elements/Badge';
+import { LinkButton } from 'Elements/Button';
 import { MenuButton } from 'Elements/Menu';
 import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
+import SmoothLink from 'Elements/SmoothLink';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
@@ -117,9 +119,18 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         </PlayersNumber>
       </Option>
       <hr />
-      <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
-        {skipText || 'Skip'}
-      </MenuButton>
+      <SmoothLink
+        to="menu/"
+        onClick={(e) => {
+          e?.preventDefault();
+          onPreferenceSelected('skip');
+        }}>
+        <MenuButton
+          as={LinkButton}
+          {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
+          {skipText || 'Skip'}
+        </MenuButton>
+      </SmoothLink>
     </>
   );
 }
