@@ -229,6 +229,7 @@ const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }
   ${typography};
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
   font-size: 2.5rem;
   padding-left: 3rem;
