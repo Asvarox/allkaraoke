@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { LinkButton } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import { MenuButton } from 'Elements/Menu';
 import MenuWithLogo from 'Elements/MenuWithLogo';
@@ -41,19 +42,29 @@ function Welcome() {
       <FacebookLink />
       <>
         <SmoothLink to="game/">
-          <MenuButton {...register('sing-a-song', () => navigate('game/'))}>Sing a song</MenuButton>
+          <MenuButton as={LinkButton} {...register('sing-a-song', () => navigate('game/'))}>
+            Sing a song
+          </MenuButton>
         </SmoothLink>
         <SmoothLink to="select-input/">
-          <MenuButton {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</MenuButton>
+          <MenuButton as={LinkButton} {...register('select-input', () => navigate('select-input/'))}>
+            Setup Microphones
+          </MenuButton>
         </SmoothLink>
         <SmoothLink to="settings/">
-          <MenuButton {...register('settings', () => navigate('settings/'))}>Settings</MenuButton>
+          <MenuButton as={LinkButton} {...register('settings', () => navigate('settings/'))}>
+            Settings
+          </MenuButton>
         </SmoothLink>
         <SmoothLink to="jukebox/">
-          <MenuButton {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</MenuButton>
+          <MenuButton as={LinkButton} {...register('jukebox', () => navigate('jukebox/'))}>
+            Jukebox
+          </MenuButton>
         </SmoothLink>
         <SmoothLink to="manage-songs/">
-          <MenuButton {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</MenuButton>
+          <MenuButton as={LinkButton} {...register('manage-songs', () => navigate('manage-songs/'))}>
+            Manage Songs
+          </MenuButton>
         </SmoothLink>
       </>
     </MenuWithLogo>

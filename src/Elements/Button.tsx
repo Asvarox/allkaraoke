@@ -4,10 +4,12 @@ import { focused, typography } from 'Elements/cssMixins';
 import isE2E from 'utils/isE2E';
 import styles from '../Scenes/Game/Singing/GameOverlay/Drawing/styles';
 
-export const Button = styled.button<{ focused?: boolean }>`
+const buttonCss = (focused?: boolean) => css`
   padding: 0.1rem 0.3rem;
   font-size: 2.6rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   cursor: pointer;
   border: 0;
@@ -19,19 +21,39 @@ export const Button = styled.button<{ focused?: boolean }>`
   ${typography};
 
   pointer-events: auto;
-  ${(props) => props.focused && buttonFocused};
+  ${focused && buttonFocused};
   box-sizing: border-box;
 
   transition: 300ms;
+`;
+
+const buttonNotDisabledCss = css`
+  :hover {
+    ${focused};
+  }
+
+  :active {
+    background: ${styles.colors.text.active};
+  }
+`;
+
+export const LinkButton = styled.a<{ focused?: boolean; disabled?: boolean }>`
+  ${(props) => buttonCss(props.focused)};
+
+  && {
+    // increases specificity to override global styles
+    color: white;
+    text-decoration: none;
+  }
+
+  ${(props) => !props.disabled && buttonNotDisabledCss};
+`;
+
+export const Button = styled.button<{ focused?: boolean }>`
+  ${(props) => buttonCss(props.focused)};
 
   :not(:disabled) {
-    :hover {
-      ${focused};
-    }
-
-    :active {
-      background: ${styles.colors.text.active};
-    }
+    ${buttonNotDisabledCss};
   }
 `;
 // Disable for E2E as they wait for animation to finish (and since it's infinite they timeout)

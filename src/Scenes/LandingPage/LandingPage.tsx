@@ -1,6 +1,6 @@
 // import songs from '../../../public/songs/index.json';
 import styled from '@emotion/styled';
-import { Button } from 'Elements/Button';
+import { LinkButton } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
 import NoPrerender from 'Elements/NoPrerender';
@@ -12,6 +12,7 @@ import LayoutGame from 'Scenes/LayoutGame';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { useEffect, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
@@ -35,6 +36,14 @@ function LandingPage() {
     [nextPage],
   );
 
+  const [showTypewriter, setShowTypewriter] = useState(false);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowTypewriter(true);
+    }, 4000);
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <LayoutGame toolbar={false}>
       <GithubRibbon />
@@ -48,7 +57,7 @@ function LandingPage() {
         </DesktopOnly>
         <DesktopOnly>
           <SmoothLink to={nextPage}>
-            <PlayButton data-test="enter-the-game" focused>
+            <PlayButton data-test="enter-the-game" focused as="a">
               Enter the game
             </PlayButton>
           </SmoothLink>
@@ -67,14 +76,18 @@ function LandingPage() {
                 Artists such as{' '}
                 <NoPrerender>
                   <strong>
-                    <Typewriter
-                      options={{
-                        strings: songStats.artists,
-                        autoStart: true,
-                        loop: true,
-                        delay: 100,
-                      }}
-                    />
+                    {showTypewriter ? (
+                      <Typewriter
+                        options={{
+                          strings: songStats.artists,
+                          autoStart: true,
+                          loop: true,
+                          delay: 100,
+                        }}
+                      />
+                    ) : (
+                      songStats.artists.at(-1)
+                    )}
                   </strong>
                 </NoPrerender>
               </StatSubText>
@@ -89,7 +102,10 @@ function LandingPage() {
               ▸ Use <strong>phones</strong> as microphones
               <StatSubText>No need to download an app</StatSubText>
             </StatText>
-
+            <StatText>
+              ▸ Supports <strong>1-4</strong> players
+              <StatSubText>When using phones as microphones</StatSubText>
+            </StatText>
             <StatText>
               ▸ <strong>100% Free</strong> and open source
               <StatSubText>
@@ -98,10 +114,6 @@ function LandingPage() {
                   GitHub repository
                 </a>
               </StatSubText>
-            </StatText>
-            <StatText>
-              ▸ Supports <strong>1-4</strong> players
-              <StatSubText>When using phones as microphones</StatSubText>
             </StatText>
           </StatSegment>
           <ScreenshotSegment>
@@ -112,13 +124,15 @@ function LandingPage() {
         <JoinExistingTip>
           Using this device as remote microphone?
           <SmoothLink to="remote-mic/">
-            <button data-test="join-existing-game">Join existing game</button>
+            <a data-test="join-existing-game">Join existing game</a>
           </SmoothLink>
         </JoinExistingTip>
         <MobileButtonsContainer>
           <SmoothLink to="remote-mic/">
             <PlayButton data-test="join-existing-game" focused>
-              Join game (with <strong>Game Code</strong>)
+              <span>
+                Join game (with <strong>Game Code</strong>)
+              </span>
             </PlayButton>
           </SmoothLink>
           <SmoothLink to="quick-setup/">
@@ -234,7 +248,7 @@ const MobileButtonsContainer = styled(MobileOnly)`
   //flex: 0.5;
   width: 90%;
 
-  button {
+  a {
     width: 100%;
     flex: 1;
     min-height: 30rem;
@@ -250,7 +264,7 @@ const JoinExistingTip = styled.h3`
   margin-top: -2.5rem !important;
 `;
 
-const PlayButton = styled(Button)`
+const PlayButton = styled(LinkButton)`
   font-size: 9rem;
   padding: 1rem 7rem;
   background: black;
