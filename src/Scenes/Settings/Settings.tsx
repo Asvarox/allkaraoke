@@ -7,6 +7,7 @@ import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { ReactNode, useEffect, useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import InputLag from 'Scenes/Settings/InputLag';
 import {
   BackgroundMusic,
@@ -54,6 +55,9 @@ function Settings(props: Props) {
 
   return (
     <MenuWithLogo>
+      <Helmet>
+        <title>Settings | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       <h1>Settings</h1>
       <Switcher
         {...register('graphics-level', () => setGraphicLevel(nextValue(GraphicsLevel, graphicLevel)))}

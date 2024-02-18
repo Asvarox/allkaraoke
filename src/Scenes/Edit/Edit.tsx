@@ -3,6 +3,7 @@ import Convert from 'Scenes/Convert/Convert';
 import useSong from 'Songs/hooks/useSong';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useQueryParam from 'hooks/useQueryParam';
+import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 
 export default function Edit() {
@@ -14,8 +15,11 @@ export default function Edit() {
 
   return (
     <Container>
+      <Helmet>
+        <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       <div>
-        <Link to="edit/list">
+        <Link to="edit/list/">
           <a>Return to the song list</a>
         </Link>
       </div>

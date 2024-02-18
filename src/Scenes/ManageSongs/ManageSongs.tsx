@@ -4,6 +4,7 @@ import MenuWithLogo from 'Elements/MenuWithLogo';
 import SmoothLink from 'Elements/SmoothLink';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { Helmet } from 'react-helmet';
 
 interface Props {}
 
@@ -15,6 +16,9 @@ function ManageSongs(props: Props) {
 
   return (
     <MenuWithLogo>
+      <Helmet>
+        <title>Manage Songs | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       <h1>Manage Songs</h1>
       <SmoothLink to="exclude-languages/">
         <MenuButton as={LinkButton} {...register('exclude-languages', () => navigate('exclude-languages/'))}>

@@ -3,12 +3,11 @@ import { useLayoutEffect, useState } from 'react';
 import { usePreviousDistinct } from 'react-use';
 
 function Tile({ videoId, ...props }: Props) {
+  const imageUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
   return (
-    <Image
-      src={`https://img.youtube.com/vi/${videoId}/0.jpg`}
-      alt={`Thumbnail image for YouTube video ${videoId}`}
-      {...props}
-    />
+    <>
+      <Image src={imageUrl} alt={`Thumbnail image for YouTube video ${videoId}`} {...props} />
+    </>
   );
 }
 

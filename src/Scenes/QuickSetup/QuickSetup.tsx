@@ -4,6 +4,7 @@ import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useMemo } from 'react';
+import { Helmet } from 'react-helmet';
 import isDev from 'utils/isDev';
 
 interface Props {
@@ -36,6 +37,9 @@ function QuickSetup(props: Props) {
 
   return (
     <>
+      <Helmet>
+        <title>Select Input | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       {mobilePhoneMode === null && isMobile ? (
         <SuggestMobileMode />
       ) : (

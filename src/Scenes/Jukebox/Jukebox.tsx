@@ -12,6 +12,7 @@ import useSmoothNavigate, { buildUrl } from 'hooks/useSmoothNavigate';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import useViewportSize from '../../hooks/useViewportSize';
 import SongPage from '../Game/SongPage';
 
@@ -38,6 +39,9 @@ function Jukebox(props: Props) {
 
   return (
     <LayoutGame>
+      <Helmet>
+        <title>Jukebox | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       <NoPrerender>
         <SongPage
           width={width}
