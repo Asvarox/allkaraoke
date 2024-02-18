@@ -13,6 +13,7 @@ import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/Sett
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
 import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
@@ -46,6 +47,9 @@ function LandingPage() {
 
   return (
     <LayoutGame toolbar={false}>
+      <Helmet>
+        <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       <GithubRibbon />
       <Background />
       <Container>

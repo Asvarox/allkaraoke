@@ -10,6 +10,7 @@ import FacebookLink from 'Scenes/Welcome/FacebookLink';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { Helmet } from 'react-helmet';
 
 function Welcome() {
   const [backgroundMusicSelection] = useSettingValue(BackgroundMusicSetting);
@@ -21,6 +22,9 @@ function Welcome() {
   const { register } = useKeyboardNav();
   return (
     <MenuWithLogo>
+      <Helmet>
+        <title>Main Menu | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
       {backgroundMusicSelection !== 'Classic' && (
         <BackgroundMusicCredit>
           <span>

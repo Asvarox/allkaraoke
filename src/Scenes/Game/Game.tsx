@@ -7,6 +7,7 @@ import useQueryParam from 'hooks/useQueryParam';
 import { SingSetup, SongPreview } from 'interfaces';
 import { useState } from 'react';
 import { flushSync } from 'react-dom';
+import { Helmet } from 'react-helmet';
 import startViewTransition from 'utils/startViewTransition';
 import Singing from './Singing/Singing';
 
@@ -33,25 +34,30 @@ function Game() {
   useFullscreen();
 
   return (
-    <NoPrerender>
-      {singSetup ? (
-        <Singing
-          restartSong={() => {
-            CameraManager.restartRecord();
-            setResetKey((current) => current + 1);
-          }}
-          key={resetKey}
-          songPreview={singSetup.song}
-          singSetup={singSetup}
-          returnToSongSelection={() => {
-            setPreselectedSong(singSetup.song.id);
-            setSingSetup(null);
-          }}
-        />
-      ) : (
-        <SingASong onSongSelected={handleSelect} preselectedSong={preselectedSong} />
-      )}
-    </NoPrerender>
+    <>
+      <Helmet>
+        <title>Game | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+      </Helmet>
+      <NoPrerender>
+        {singSetup ? (
+          <Singing
+            restartSong={() => {
+              CameraManager.restartRecord();
+              setResetKey((current) => current + 1);
+            }}
+            key={resetKey}
+            songPreview={singSetup.song}
+            singSetup={singSetup}
+            returnToSongSelection={() => {
+              setPreselectedSong(singSetup.song.id);
+              setSingSetup(null);
+            }}
+          />
+        ) : (
+          <SingASong onSongSelected={handleSelect} preselectedSong={preselectedSong} />
+        )}
+      </NoPrerender>
+    </>
   );
 }
 export default Game;
