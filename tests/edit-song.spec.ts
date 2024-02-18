@@ -26,24 +26,34 @@ const expectedSongBPM = '200';
 test('Edit song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
-  await pages.mainMenuPage.goToManageSongs();
-  await pages.manageSongsPage.goToEditSongs();
-  await page.pause();
-  await pages.editSongsPage.editSong(songID);
 
-  await expect(pages.songEditBasicInfoPage.urlSourceInput).toHaveValue(expectedURL);
+  await test.step('Go to Edit Song Page and pick up the song to edit', async () => {
+    await pages.inputSelectionPage.skipToMainMenu();
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToEditSongs();
+    await pages.editSongsPage.editSong(songID);
+  });
 
-  await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
-  await expect(pages.songEditAuthorAndVideoPage.authorNameInput).toHaveValue(expectedAuthorName);
-  await expect(pages.songEditAuthorAndVideoPage.authorUrlInput).toHaveValue(expectedAuthorURL);
-  await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue(expectedVideoURL);
+  await test.step('Check basic song info', async () => {
+    await expect(pages.songEditBasicInfoPage.urlSourceInput).toHaveValue(expectedURL);
+  });
 
-  await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
-  await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
+  await test.step('Check info about author and video', async () => {
+    await pages.songEditBasicInfoPage.goToAuthorAndVideoStep();
+    await expect(pages.songEditAuthorAndVideoPage.authorNameInput).toHaveValue(expectedAuthorName);
+    await expect(pages.songEditAuthorAndVideoPage.authorUrlInput).toHaveValue(expectedAuthorURL);
+    await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue(expectedVideoURL);
+  });
 
-  await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
-  await expect(pages.songEditMetadataPage.songLanguageElement).toContainText(expectedSongLanguage);
-  await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(expectedReleaseYear);
-  await expect(pages.songEditMetadataPage.bpmSongInput).toHaveValue(expectedSongBPM);
+  await test.step('Go to sync lyrics to video Step', async () => {
+    await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
+    await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();
+  });
+
+  await test.step('Check song metadata', async () => {
+    await pages.songEditSyncLyricsToVideoPage.goToMetadataStep();
+    await expect(pages.songEditMetadataPage.songLanguageElement).toContainText(expectedSongLanguage);
+    await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(expectedReleaseYear);
+    await expect(pages.songEditMetadataPage.bpmSongInput).toHaveValue(expectedSongBPM);
+  });
 });
