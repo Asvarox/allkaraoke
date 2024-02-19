@@ -215,6 +215,7 @@ const ScreenshotSegment = styled(StatSegment)`
     ${mobileMQ} {
       // 2rem - the gap (4rem) divided by 2
       width: calc(50% - 2rem);
+      height: 50rem;
     }
 
     aspect-ratio: 16 / 9;
