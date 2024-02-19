@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { LinkButton } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
-import NoPrerender from 'Elements/NoPrerender';
 import { DesktopOnly, MobileOnly } from 'Elements/RWD';
 import SmoothLink from 'Elements/SmoothLink';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
@@ -78,22 +77,20 @@ function LandingPage() {
               ▸ <strong>{songStats.songs}</strong> songs in <strong>{songStats.languages.length}</strong> languages
               <StatSubText>
                 Artists such as{' '}
-                <NoPrerender>
-                  <strong>
-                    {showTypewriter ? (
-                      <Typewriter
-                        options={{
-                          strings: songStats.artists,
-                          autoStart: true,
-                          loop: true,
-                          delay: 100,
-                        }}
-                      />
-                    ) : (
-                      songStats.artists.at(-1)
-                    )}
-                  </strong>
-                </NoPrerender>
+                <strong>
+                  {showTypewriter ? (
+                    <Typewriter
+                      options={{
+                        strings: songStats.artists,
+                        autoStart: true,
+                        loop: true,
+                        delay: 100,
+                      }}
+                    />
+                  ) : (
+                    songStats.artists.at(-1)
+                  )}
+                </strong>
               </StatSubText>
             </StatText>
             <StatText>
