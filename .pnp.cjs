@@ -93,7 +93,7 @@ const RAW_RUNTIME_STATE =
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
-          ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.7.0"],\
+          ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.11.3"],\
           ["msgpackr", "npm:1.10.1"],\
           ["musicbrainz-api", "npm:0.11.0"],\
           ["node-fetch", "npm:3.3.2"],\
@@ -8531,28 +8531,28 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@tanstack/match-sorter-utils", [\
-      ["npm:8.11.3", {\
-        "packageLocation": "./.yarn/cache/@tanstack-match-sorter-utils-npm-8.11.3-170f90ae68-9bd1b5ee09.zip/node_modules/@tanstack/match-sorter-utils/",\
+      ["npm:8.11.8", {\
+        "packageLocation": "./.yarn/cache/@tanstack-match-sorter-utils-npm-8.11.8-a88c700633-a74863bca3.zip/node_modules/@tanstack/match-sorter-utils/",\
         "packageDependencies": [\
-          ["@tanstack/match-sorter-utils", "npm:8.11.3"],\
+          ["@tanstack/match-sorter-utils", "npm:8.11.8"],\
           ["remove-accents", "npm:0.4.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@tanstack/react-table", [\
-      ["npm:8.11.6", {\
-        "packageLocation": "./.yarn/cache/@tanstack-react-table-npm-8.11.6-8d6eca8e43-b8b73d987d.zip/node_modules/@tanstack/react-table/",\
+      ["npm:8.12.0", {\
+        "packageLocation": "./.yarn/cache/@tanstack-react-table-npm-8.12.0-c4f59838fd-4fe03b995e.zip/node_modules/@tanstack/react-table/",\
         "packageDependencies": [\
-          ["@tanstack/react-table", "npm:8.11.6"]\
+          ["@tanstack/react-table", "npm:8.12.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:77be710d800bb6e490e818322d8da12b76bc56433c2521acf1b6153d4fa5a75e2999d9be218f9d1ff84284cd156c2211363e0471ca027581fab5c34c197e0fc1#npm:8.11.6", {\
-        "packageLocation": "./.yarn/__virtual__/@tanstack-react-table-virtual-3b7dc8050f/0/cache/@tanstack-react-table-npm-8.11.6-8d6eca8e43-b8b73d987d.zip/node_modules/@tanstack/react-table/",\
+      ["virtual:d6b18c43ccdef7cd90edfb4cd844e6d7c9940b5e2982647cad17a6c3a97c2df18757ac7ad9852d1c17d4391d0aa848c3f3bdb18cb0a21107f9258f272baba447#npm:8.12.0", {\
+        "packageLocation": "./.yarn/__virtual__/@tanstack-react-table-virtual-41b401b801/0/cache/@tanstack-react-table-npm-8.12.0-c4f59838fd-4fe03b995e.zip/node_modules/@tanstack/react-table/",\
         "packageDependencies": [\
-          ["@tanstack/react-table", "virtual:77be710d800bb6e490e818322d8da12b76bc56433c2521acf1b6153d4fa5a75e2999d9be218f9d1ff84284cd156c2211363e0471ca027581fab5c34c197e0fc1#npm:8.11.6"],\
-          ["@tanstack/table-core", "npm:8.11.6"],\
+          ["@tanstack/react-table", "virtual:d6b18c43ccdef7cd90edfb4cd844e6d7c9940b5e2982647cad17a6c3a97c2df18757ac7ad9852d1c17d4391d0aa848c3f3bdb18cb0a21107f9258f272baba447#npm:8.12.0"],\
+          ["@tanstack/table-core", "npm:8.12.0"],\
           ["@types/react", "npm:18.2.47"],\
           ["@types/react-dom", "npm:18.2.19"],\
           ["react", "npm:18.2.0"],\
@@ -8568,17 +8568,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@tanstack/react-virtual", [\
-      ["npm:3.0.1", {\
-        "packageLocation": "./.yarn/cache/@tanstack-react-virtual-npm-3.0.1-4ec4d04e6c-c923a52496.zip/node_modules/@tanstack/react-virtual/",\
+      ["npm:3.0.4", {\
+        "packageLocation": "./.yarn/cache/@tanstack-react-virtual-npm-3.0.4-0a806530ab-d99a18c78c.zip/node_modules/@tanstack/react-virtual/",\
         "packageDependencies": [\
-          ["@tanstack/react-virtual", "npm:3.0.1"]\
+          ["@tanstack/react-virtual", "npm:3.0.4"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:77be710d800bb6e490e818322d8da12b76bc56433c2521acf1b6153d4fa5a75e2999d9be218f9d1ff84284cd156c2211363e0471ca027581fab5c34c197e0fc1#npm:3.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/@tanstack-react-virtual-virtual-6e578bc044/0/cache/@tanstack-react-virtual-npm-3.0.1-4ec4d04e6c-c923a52496.zip/node_modules/@tanstack/react-virtual/",\
+      ["virtual:d6b18c43ccdef7cd90edfb4cd844e6d7c9940b5e2982647cad17a6c3a97c2df18757ac7ad9852d1c17d4391d0aa848c3f3bdb18cb0a21107f9258f272baba447#npm:3.0.4", {\
+        "packageLocation": "./.yarn/__virtual__/@tanstack-react-virtual-virtual-cf9b1dfbf9/0/cache/@tanstack-react-virtual-npm-3.0.4-0a806530ab-d99a18c78c.zip/node_modules/@tanstack/react-virtual/",\
         "packageDependencies": [\
-          ["@tanstack/react-virtual", "virtual:77be710d800bb6e490e818322d8da12b76bc56433c2521acf1b6153d4fa5a75e2999d9be218f9d1ff84284cd156c2211363e0471ca027581fab5c34c197e0fc1#npm:3.0.1"],\
+          ["@tanstack/react-virtual", "virtual:d6b18c43ccdef7cd90edfb4cd844e6d7c9940b5e2982647cad17a6c3a97c2df18757ac7ad9852d1c17d4391d0aa848c3f3bdb18cb0a21107f9258f272baba447#npm:3.0.4"],\
           ["@tanstack/virtual-core", "npm:3.0.0"],\
           ["@types/react", "npm:18.2.47"],\
           ["@types/react-dom", "npm:18.2.19"],\
@@ -8595,10 +8595,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@tanstack/table-core", [\
-      ["npm:8.11.6", {\
-        "packageLocation": "./.yarn/cache/@tanstack-table-core-npm-8.11.6-d935b9c313-f3a286f2f6.zip/node_modules/@tanstack/table-core/",\
+      ["npm:8.12.0", {\
+        "packageLocation": "./.yarn/cache/@tanstack-table-core-npm-8.12.0-6e128c99eb-a1b127e4b0.zip/node_modules/@tanstack/table-core/",\
         "packageDependencies": [\
-          ["@tanstack/table-core", "npm:8.11.6"]\
+          ["@tanstack/table-core", "npm:8.12.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16656,25 +16656,25 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["material-react-table", [\
-      ["npm:2.7.0", {\
-        "packageLocation": "./.yarn/cache/material-react-table-npm-2.7.0-ecd148725a-95e2145f24.zip/node_modules/material-react-table/",\
+      ["npm:2.11.3", {\
+        "packageLocation": "./.yarn/cache/material-react-table-npm-2.11.3-3370d21e05-51f8278e5b.zip/node_modules/material-react-table/",\
         "packageDependencies": [\
-          ["material-react-table", "npm:2.7.0"]\
+          ["material-react-table", "npm:2.11.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.7.0", {\
-        "packageLocation": "./.yarn/__virtual__/material-react-table-virtual-77be710d80/0/cache/material-react-table-npm-2.7.0-ecd148725a-95e2145f24.zip/node_modules/material-react-table/",\
+      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.11.3", {\
+        "packageLocation": "./.yarn/__virtual__/material-react-table-virtual-d6b18c43cc/0/cache/material-react-table-npm-2.11.3-3370d21e05-51f8278e5b.zip/node_modules/material-react-table/",\
         "packageDependencies": [\
-          ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.7.0"],\
+          ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.11.3"],\
           ["@emotion/react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:11.11.3"],\
           ["@emotion/styled", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:11.11.0"],\
           ["@mui/icons-material", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.15.9"],\
           ["@mui/material", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:5.15.9"],\
           ["@mui/x-date-pickers", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:6.19.4"],\
-          ["@tanstack/match-sorter-utils", "npm:8.11.3"],\
-          ["@tanstack/react-table", "virtual:77be710d800bb6e490e818322d8da12b76bc56433c2521acf1b6153d4fa5a75e2999d9be218f9d1ff84284cd156c2211363e0471ca027581fab5c34c197e0fc1#npm:8.11.6"],\
-          ["@tanstack/react-virtual", "virtual:77be710d800bb6e490e818322d8da12b76bc56433c2521acf1b6153d4fa5a75e2999d9be218f9d1ff84284cd156c2211363e0471ca027581fab5c34c197e0fc1#npm:3.0.1"],\
+          ["@tanstack/match-sorter-utils", "npm:8.11.8"],\
+          ["@tanstack/react-table", "virtual:d6b18c43ccdef7cd90edfb4cd844e6d7c9940b5e2982647cad17a6c3a97c2df18757ac7ad9852d1c17d4391d0aa848c3f3bdb18cb0a21107f9258f272baba447#npm:8.12.0"],\
+          ["@tanstack/react-virtual", "virtual:d6b18c43ccdef7cd90edfb4cd844e6d7c9940b5e2982647cad17a6c3a97c2df18757ac7ad9852d1c17d4391d0aa848c3f3bdb18cb0a21107f9258f272baba447#npm:3.0.4"],\
           ["@types/emotion__react", null],\
           ["@types/emotion__styled", null],\
           ["@types/mui__icons-material", null],\
@@ -17667,7 +17667,7 @@ const RAW_RUNTIME_STATE =
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
-          ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.7.0"],\
+          ["material-react-table", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:2.11.3"],\
           ["msgpackr", "npm:1.10.1"],\
           ["musicbrainz-api", "npm:0.11.0"],\
           ["node-fetch", "npm:3.3.2"],\
