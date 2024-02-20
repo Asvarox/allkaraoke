@@ -1,0 +1,188 @@
+#ARTIST:Lyn
+#TITLE:BREAK IN TO BREAK OUT
+#CREATOR:Currymalker
+#BPM:280,02
+#YEAR:2018
+#VIDEO:v=HU_Z8RKo_Ow
+#GENRE:Anime
+#LANGUAGE:English
+#GAP:14365,215556031711
+#ALLKARAOKE_ID:lyn-break-in-to-break-out
+#ALLKARAOKE_LASTUPDATE:2024-02-20T21:16:30.751Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:0,98
+#MP3:Lyn - BREAK IN TO BREAK OUT (TV).mp3
+#COVER:Lyn - BREAK IN TO BREAK OUT (TV) [CO].jpg
+#MEDLEYSTARTBEAT:556
+#MEDLEYENDBEAT:1020
+: 19 2 -3 You’re 
+: 23 5 -4 strik
+: 31 2 -3 ing 
+: 35 2 -1 me 
+: 39 6 -3 down
+- 45
+: 51 2 -3 With 
+: 55 6 -4 games 
+: 63 2 -3 and 
+: 67 2 -3 lies
+: 71 2 -1 ~
+- 73
+: 83 2 -3 I 
+: 87 5 -4 trust
+: 95 2 -3 ed 
+: 99 2 -1 you 
+: 103 6 -3 but 
+: 111 3 -1 I 
+* 119 2 -1 found
+* 123 5 1 ~
+- 128
+: 147 2 -3 Your 
+: 151 6 -4 on
+: 159 2 -3 ly 
+: 163 2 -1 true 
+: 167 6 -3 friend 
+: 175 5 -1 is 
+: 183 2 -1 your
+: 187 2 1 ~ 
+* 191 5 -8 de
+: 199 2 -8 sire
+: 203 15 -6 ~
+- 218
+: 231 2 -6 For 
+: 235 2 -6 play
+: 239 2 -4 ~
+: 243 2 -3 in' 
+: 247 11 -4 around
+- 258
+: 275 2 -3 You're 
+: 279 6 -4 out 
+: 287 2 -4 of 
+: 291 2 -1 your 
+: 295 5 -3 mind
+- 300
+: 307 2 -3 You've 
+* 311 5 -4 lost 
+: 319 2 -3 con
+: 323 2 -3 trol
+: 327 4 -1 ~
+- 331
+: 339 2 -3 I'm 
+: 343 6 -4 gon
+: 351 2 -3 na 
+: 355 2 -1 take 
+: 359 4 -3 back 
+: 367 4 -1 what's 
+: 375 2 -1 mine
+: 379 1 1 ~
+- 380
+* 383 10 -8 You 
+: 395 9 -6 ne'er 
+: 407 9 -6 have 
+: 419 3 -1 my 
+: 424 8 -4 soul
+- 432
+: 451 6 -6 This 
+: 459 2 -6 time
+: 463 6 -4 ~ 
+: 471 6 -4 you 
+: 479 2 -4 have 
+: 483 2 -3 real
+: 487 6 -1 ly 
+: 495 6 -1 stepped 
+: 503 2 2 a
+: 507 6 4 cross 
+: 515 6 -1 the 
+: 523 1 -1 line
+: 525 38 1 ~
+- 563
+: 575 2 1 Thieves 
+: 579 2 4 in 
+: 583 2 1 a 
+: 587 2 8 pal
+: 591 30 6 ace
+- 621
+* 635 4 4 Full 
+: 643 2 -1 of 
+: 647 6 -1 tales 
+: 655 2 1 and 
+: 659 8 1 lies
+- 667 684
+- 684
+: 703 2 1 We 
+: 707 2 4 got 
+* 711 2 1 a 
+* 715 2 11 stake 
+: 719 44 9 in
+- 763
+: 767 2 1 Com
+: 771 2 11 in’ 
+: 775 9 9 out
+- 784 812
+- 812
+* 831 2 1 Ex
+* 835 2 4 pose 
+: 839 2 1 the 
+: 843 2 8 mal
+: 847 36 6 ice
+- 883
+: 891 4 4 That 
+: 899 2 -1 you 
+: 903 5 -1 chose 
+: 911 2 1 to 
+: 915 6 1 hide
+- 921 940
+- 940
+: 959 2 1 It’s 
+: 963 2 4 just 
+: 967 2 1 a 
+: 971 2 11 break-
+: 975 45 9 in
+- 1020
+: 1023 2 1 To 
+: 1027 2 11 break 
+: 1031 8 9 out
+- 1039 1080
+- 1080
+* 1099 2 8 Break
+* 1103 2 9 ~
+* 1107 6 9 in’ 
+: 1115 5 9 in
+- 1120
+: 1127 2 8 So
+: 1131 2 9 ~ 
+: 1135 6 9 we 
+: 1143 2 9 can 
+: 1147 5 8 break 
+: 1155 2 9 out
+: 1159 1 11 ~
+- 1160
+: 1163 6 9 Break
+: 1171 6 9 in’ 
+: 1179 5 9 in
+- 1184
+* 1191 2 8 So
+* 1195 2 9 ~ 
+: 1199 6 9 we 
+: 1207 2 9 can 
+: 1211 5 8 break 
+: 1219 2 9 out
+: 1223 1 11 ~
+- 1224
+: 1227 6 9 Break
+: 1235 6 9 in’ 
+: 1243 5 9 in
+- 1248
+: 1255 2 8 So
+: 1259 2 9 ~ 
+: 1263 6 9 we 
+: 1271 2 9 can 
+: 1275 5 8 break 
+: 1283 2 9 out
+: 1287 1 11 ~
+- 1288
+: 1291 8 9 Break
+* 1303 10 6 in’ 
+: 1315 2 11 out
+: 1319 31 13 ~
+E

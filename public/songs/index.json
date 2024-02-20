@@ -1190,6 +1190,31 @@
     "local": false
   },
   {
+    "id": "akon-lonely",
+    "title": "Lonely",
+    "artist": "Akon",
+    "video": "6EEW-9NDM5k",
+    "language": "English",
+    "bpm": 360.4,
+    "gap": 591.1098779134295,
+    "year": "2004",
+    "artistOrigin": "SN",
+    "lastUpdate": "2024-02-20T21:16:29.955Z",
+    "genre": "R&B",
+    "realBpm": 90,
+    "volume": 0.93,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Lonely",
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "akonlonely",
+    "local": false
+  },
+  {
     "id": "akurat-lubie-mowic-z-toba",
     "title": "Lubię Mówić Z Tobą",
     "artist": "Akurat",
@@ -3393,6 +3418,54 @@
     "local": false
   },
   {
+    "id": "aurora-a-dangerous-thing",
+    "title": "A Dangerous Thing",
+    "artist": "AURORA",
+    "video": "zaaEvo_8i4Y",
+    "language": "English",
+    "bpm": 210,
+    "gap": 3190,
+    "year": "2022",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-02-20T21:16:29.958Z",
+    "genre": "Pop",
+    "realBpm": 50,
+    "volume": 0.68,
+    "author": "Warbeet",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "auroraadangerousthing",
+    "local": false
+  },
+  {
+    "id": "aurora-running-with-the-wolves",
+    "title": "Running With The Wolves",
+    "artist": "AURORA",
+    "video": "Xlm2iMsYM2Q",
+    "language": "English",
+    "bpm": 327.78,
+    "gap": 1083.227164561596,
+    "year": "2015",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-02-20T21:16:29.960Z",
+    "genre": "Pop",
+    "realBpm": 164,
+    "volume": 0.7,
+    "author": "Redeemer",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aurorarunningwiththewolves",
+    "local": false
+  },
+  {
     "id": "ava-max-born-to-the-night",
     "title": "Born To The Night",
     "artist": "Ava Max",
@@ -5211,6 +5284,54 @@
     "local": false
   },
   {
+    "id": "big-time-rush-any-kind-of-guy",
+    "title": "Any Kind Of Guy",
+    "artist": "Big Time Rush",
+    "video": "koUpqQRkJis",
+    "language": "English",
+    "bpm": 300,
+    "gap": 8250,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:29.961Z",
+    "realBpm": 112,
+    "volume": 0.75,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Any Kind Of Guy",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bigtimerushanykindofguy",
+    "local": false
+  },
+  {
+    "id": "big-time-rush-boyfriend",
+    "title": "Boyfriend",
+    "artist": "Big Time Rush",
+    "video": "jUOdO5dqPeU",
+    "language": "English",
+    "bpm": 331.69,
+    "gap": -457.89833881033496,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:29.963Z",
+    "realBpm": 164,
+    "volume": 0.84,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Boyfriend",
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bigtimerushboyfriend",
+    "local": false
+  },
+  {
     "id": "bigflo-oli-dommage",
     "title": "Dommage",
     "artist": "Bigflo & Oli",
@@ -5357,6 +5478,29 @@
     ],
     "tracksCount": 1,
     "search": "billyboydthelastgoodbye",
+    "local": false
+  },
+  {
+    "id": "billy-joel-piano-man",
+    "title": "Piano Man",
+    "artist": "Billy Joel",
+    "video": "gxEPV4kolz0",
+    "language": "English",
+    "bpm": 240,
+    "gap": 29440,
+    "year": "1973",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:29.964Z",
+    "realBpm": 178,
+    "volume": 0.97,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billyjoelpianoman",
     "local": false
   },
   {
@@ -8807,6 +8951,30 @@
     "local": false
   },
   {
+    "id": "chris-brown-feat-benny-benassi-beautiful-people",
+    "title": "Beautiful People",
+    "artist": "Chris Brown feat. Benny Benassi",
+    "video": "XeZ9bP2FXEw",
+    "language": "English",
+    "bpm": 256.4,
+    "gap": 18995.460218408734,
+    "year": "2011",
+    "lastUpdate": "2024-02-20T21:16:29.966Z",
+    "genre": "Dance",
+    "realBpm": 128,
+    "volume": 0.69,
+    "author": "AngelosTag",
+    "sourceUrl": "https://www.youtube.com/watch?v=0uqeqnwRLZo",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chrisbrownfeatbennybenassibeautifulpeople",
+    "local": false
+  },
+  {
     "id": "chris-isaak-wicked-game",
     "title": "Wicked Game",
     "artist": "Chris Isaak",
@@ -9499,6 +9667,30 @@
     "local": false
   },
   {
+    "id": "corey-hart-sunglasses-at-night",
+    "title": "Sunglasses at night",
+    "artist": "Corey Hart",
+    "video": "56HSPQHSqEE",
+    "language": "English",
+    "bpm": 257.03,
+    "gap": 15205.897910749718,
+    "year": "1983",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-20T21:16:30.318Z",
+    "genre": "New Wave",
+    "realBpm": 127,
+    "volume": 0.74,
+    "author": "asb",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "coreyhartsunglassesatnight",
+    "local": false
+  },
+  {
     "id": "coti-con-paulina-rubio-y-julieta-venegas-nada-fue-un-error",
     "title": "Nada fue un error",
     "artist": "Coti con Paulina Rubio y Julieta Venegas",
@@ -9571,6 +9763,56 @@
     ],
     "tracksCount": 1,
     "search": "creedmysacrifice",
+    "local": false
+  },
+  {
+    "id": "creedence-clearwater-revival-have-you-ever-seen-the-rain",
+    "title": "Have You Ever Seen The Rain",
+    "artist": "Creedence Clearwater Revival",
+    "video": "u1V8YRJnr4Q",
+    "language": "English",
+    "bpm": 231.96,
+    "gap": 28190.00517330574,
+    "year": "1970",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:30.319Z",
+    "genre": "None",
+    "realBpm": 116,
+    "volume": 0.9,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Have You Ever See The Rain",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "creedenceclearwaterrevivalhaveyoueverseentherain",
+    "local": false
+  },
+  {
+    "id": "creedence-clearwater-revival-i-put-a-spell-on-you",
+    "title": "I Put A Spell On You",
+    "artist": "Creedence Clearwater Revival",
+    "video": "KWxDGQm2hKk",
+    "language": "English",
+    "bpm": 207.9,
+    "gap": 16929.89898989899,
+    "year": "1968",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:30.319Z",
+    "genre": "None",
+    "realBpm": 100,
+    "volume": 0.76,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "I Put A Spell On You",
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "creedenceclearwaterrevivaliputaspellonyou",
     "local": false
   },
   {
@@ -10294,6 +10536,33 @@
     "local": false
   },
   {
+    "id": "daisuke-ishiwatari-smell-of-the-game",
+    "title": "Smell Of The Game",
+    "artist": "Daisuke Ishiwatari",
+    "video": "2GcKrCnDBf4",
+    "language": "English",
+    "bpm": 314.17,
+    "gap": 27297.358118216252,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-02-20T21:16:30.320Z",
+    "genre": "Rock",
+    "realBpm": 104,
+    "volume": 0.92,
+    "author": "Booker255",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=181920",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=26601",
+    "tracks": [
+      {
+        "name": "Smell of The Game",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daisukeishiwatarismellofthegame",
+    "local": false
+  },
+  {
     "id": "danger-dan-das-ist-alles-von-der-kunstfreiheit-gedeckt",
     "title": "Das ist alles von der Kunstfreiheit gedeckt",
     "artist": "Danger Dan",
@@ -10518,6 +10787,54 @@
     "local": false
   },
   {
+    "id": "david-guetta-feat-chris-willis-love-dont-let-me-go",
+    "title": "Love, Don’t Let Me Go",
+    "artist": "David Guetta feat. Chris Willis",
+    "video": "Qdaovst-cqA",
+    "language": "English",
+    "bpm": 254,
+    "gap": -487.1653543307087,
+    "year": "2001",
+    "lastUpdate": "2024-02-20T21:16:30.321Z",
+    "genre": "None",
+    "realBpm": 127,
+    "volume": 0.7,
+    "author": "visby",
+    "tracks": [
+      {
+        "name": "Love Don't Let Me Go",
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidguettafeatchriswillislovedontletmego",
+    "local": false
+  },
+  {
+    "id": "david-guetta-feat-chris-willis-love-is-gone",
+    "title": "Love Is Gone",
+    "artist": "David Guetta feat. Chris Willis",
+    "video": "beGjncfEPt8",
+    "language": "English",
+    "bpm": 256,
+    "gap": 20123.90625,
+    "year": "2007",
+    "lastUpdate": "2024-02-20T21:16:30.395Z",
+    "genre": "None",
+    "realBpm": 128,
+    "volume": 0.77,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Love Is Gone",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidguettafeatchriswillisloveisgone",
+    "local": false
+  },
+  {
     "id": "david-guetta-feat-flo-rida-nicki-minaj-where-them-girls-at",
     "title": "Where Them Girls At?",
     "artist": "David Guetta feat. Flo Rida & Nicki Minaj",
@@ -10538,6 +10855,30 @@
     ],
     "tracksCount": 1,
     "search": "davidguettafeatfloridanickiminajwherethemgirlsat",
+    "local": false
+  },
+  {
+    "id": "david-guetta-feat-kelly-rowland-when-love-takes-over",
+    "title": "When Love Takes Over",
+    "artist": "David Guetta feat. Kelly Rowland",
+    "video": "zudbz4hOcbc",
+    "language": "English",
+    "bpm": 259.95,
+    "gap": 6319.042123485286,
+    "year": "2009",
+    "lastUpdate": "2024-02-20T21:16:30.446Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.83,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "When Love Takes Over",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidguettafeatkellyrowlandwhenlovetakesover",
     "local": false
   },
   {
@@ -10774,6 +11115,29 @@
     ],
     "tracksCount": 1,
     "search": "deichkindremmidemmiyippieyippieyeah",
+    "local": false
+  },
+  {
+    "id": "demi-lovato-feat-cher-lloyd-really-dont-care",
+    "title": "Really Don’t Care",
+    "artist": "Demi Lovato feat. Cher Lloyd",
+    "video": "OJGUbwVMBeA",
+    "language": "English",
+    "bpm": 242.02,
+    "gap": 16588.346417651435,
+    "year": "2013",
+    "lastUpdate": "2024-02-20T21:16:30.514Z",
+    "genre": "Pop",
+    "realBpm": 121,
+    "volume": 0.77,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "demilovatofeatcherlloydreallydontcare",
     "local": false
   },
   {
@@ -12034,6 +12398,30 @@
     "local": false
   },
   {
+    "id": "doki-doki-literature-club-your-reality",
+    "title": "Your Reality",
+    "artist": "Doki Doki Literature Club!",
+    "video": "CAL4WMpBNs0",
+    "language": "English",
+    "bpm": 210,
+    "gap": 8610,
+    "year": "2017",
+    "lastUpdate": "2024-02-20T21:16:30.591Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "previewEnd": 172,
+    "volume": 0.73,
+    "author": "masterxy",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dokidokiliteratureclubyourreality",
+    "local": false
+  },
+  {
     "id": "dolly-parton-jolene",
     "title": "Jolene",
     "artist": "Dolly Parton",
@@ -12252,6 +12640,30 @@
     ],
     "tracksCount": 1,
     "search": "drakebellfoundaway",
+    "local": false
+  },
+  {
+    "id": "drake-feat-wizkid-kyla-one-dance",
+    "title": "One Dance",
+    "artist": "Drake feat. Wizkid & Kyla",
+    "video": "FOqKN-ouAUE",
+    "language": "English",
+    "bpm": 208,
+    "gap": 2180.3846153846152,
+    "year": "2016",
+    "lastUpdate": "2024-02-20T21:16:30.666Z",
+    "genre": "Pop",
+    "realBpm": 104,
+    "volume": 0.63,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "One Dance",
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "drakefeatwizkidkylaonedance",
     "local": false
   },
   {
@@ -14394,6 +14806,29 @@
     ],
     "tracksCount": 2,
     "search": "fiftyfiftycupidtwinversion",
+    "local": false
+  },
+  {
+    "id": "fifty-fifty-cupid",
+    "title": "Cupid",
+    "artist": "FIFTY FIFTY",
+    "video": "D4LOq1bFTxE",
+    "language": "English",
+    "bpm": 239.84,
+    "gap": 1599.3328885923947,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-20T21:16:30.746Z",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "asdFer",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fiftyfiftycupid",
     "local": false
   },
   {
@@ -22118,6 +22553,30 @@
     "local": false
   },
   {
+    "id": "leona-lewis-run",
+    "title": "Run",
+    "artist": "Leona Lewis",
+    "video": "jqpAgMxhx30",
+    "language": "English",
+    "bpm": 283.14,
+    "gap": 13363.43081161263,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-20T21:16:30.748Z",
+    "genre": "Pop",
+    "realBpm": 142,
+    "volume": 0.85,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "leonalewisrun",
+    "local": false
+  },
+  {
     "id": "letni-chamski-podryw-pomidorowa",
     "title": "Pomidorowa",
     "artist": "Letni, Chamski Podryw",
@@ -23132,6 +23591,30 @@
     "local": false
   },
   {
+    "id": "lorde-ribs",
+    "title": "Ribs",
+    "artist": "Lorde",
+    "video": "b7pE8AG1jjE",
+    "language": "English",
+    "bpm": 255.98,
+    "gap": 47103.828424095635,
+    "year": "2013",
+    "artistOrigin": "NZ",
+    "lastUpdate": "2024-02-20T21:16:30.750Z",
+    "genre": "Indie Pop",
+    "realBpm": 128,
+    "volume": 0.68,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lorderibs",
+    "local": false
+  },
+  {
     "id": "lorde-royals",
     "title": "Royals",
     "artist": "Lorde",
@@ -23405,6 +23888,30 @@
     ],
     "tracksCount": 1,
     "search": "lunaydaddyyankeebadbunnysolteraremix",
+    "local": false
+  },
+  {
+    "id": "lyn-break-in-to-break-out",
+    "title": "BREAK IN TO BREAK OUT",
+    "artist": "Lyn",
+    "video": "HU_Z8RKo_Ow",
+    "language": "English",
+    "bpm": 280.02,
+    "gap": 14365.215556031711,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-02-20T21:16:30.751Z",
+    "genre": "Anime",
+    "realBpm": 140,
+    "volume": 0.98,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lynbreakintobreakout",
     "local": false
   },
   {
@@ -25157,6 +25664,32 @@
     "local": false
   },
   {
+    "id": "maryla-rodowicz-niech-zyje-bal",
+    "title": "Niech żyje bal",
+    "artist": "Maryla Rodowicz",
+    "video": "HmpTvKhMp0w",
+    "language": "Polish",
+    "bpm": 300,
+    "gap": 17900,
+    "year": "1992",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-02-20T21:16:30.753Z",
+    "genre": "None",
+    "realBpm": 150,
+    "volume": 0.91,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=2938",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marylarodowiczniechzyjebal",
+    "local": false
+  },
+  {
     "id": "matchbox-twenty-how-far-weve-come",
     "title": "How Far We've Come",
     "artist": "Matchbox Twenty",
@@ -26140,6 +26673,32 @@
     ],
     "tracksCount": 1,
     "search": "mitskiwashingmachineheart",
+    "local": false
+  },
+  {
+    "id": "modern-talking-cheri-cheri-lady",
+    "title": "Cheri, Cheri Lady",
+    "artist": "Modern Talking",
+    "video": "eNvUS-6PTbs",
+    "language": "English",
+    "bpm": 228.2,
+    "gap": 16894.022787028924,
+    "year": "1985",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-02-20T21:16:30.756Z",
+    "genre": "Pop",
+    "realBpm": 114,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 0.79,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "moderntalkingchericherilady",
     "local": false
   },
   {
@@ -31015,6 +31574,76 @@
     "local": false
   },
   {
+    "id": "pitbull-feat-chris-brown-international-love",
+    "title": "International Love",
+    "artist": "Pitbull feat. Chris Brown",
+    "video": "CdXesX6mYUE",
+    "language": "English",
+    "bpm": 240,
+    "gap": 15800,
+    "year": "2011",
+    "lastUpdate": "2024-02-20T21:16:30.757Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.68,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "International Love",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pitbullfeatchrisbrowninternationallove",
+    "local": false
+  },
+  {
+    "id": "pitbull-feat-marc-anthony-rain-over-me",
+    "title": "Rain Over Me",
+    "artist": "Pitbull feat. Marc Anthony",
+    "video": "SmM0653YvXU",
+    "language": "English",
+    "bpm": 256.1,
+    "gap": 9484.295197188598,
+    "year": "2011",
+    "lastUpdate": "2024-02-20T21:16:30.832Z",
+    "realBpm": 128,
+    "volume": 0.7,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Rain Over Me",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pitbullfeatmarcanthonyrainoverme",
+    "local": false
+  },
+  {
+    "id": "pitbull-feat-ne-yo-afrojack-nayer-give-me-everything",
+    "title": "Give Me Everything",
+    "artist": "Pitbull feat. Ne-Yo, Afrojack & Nayer",
+    "video": "EPo5wWmKEaI",
+    "language": "English",
+    "bpm": 258,
+    "gap": -345.813953488372,
+    "year": "2011",
+    "lastUpdate": "2024-02-20T21:16:30.938Z",
+    "realBpm": 129,
+    "volume": 0.76,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Give Me Everything",
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pitbullfeatneyoafrojacknayergivemeeverything",
+    "local": false
+  },
+  {
     "id": "pitty-teto-de-vidro",
     "title": "Teto de Vidro",
     "artist": "Pitty",
@@ -32556,6 +33185,28 @@
     "local": false
   },
   {
+    "id": "rasmussen-higher-ground",
+    "title": "Higher Ground",
+    "artist": "Rasmussen",
+    "video": "XeraDSzu0nw",
+    "language": "English",
+    "bpm": 320,
+    "gap": 14125.625,
+    "year": "2018",
+    "lastUpdate": "2024-02-20T21:16:31.009Z",
+    "realBpm": 82,
+    "volume": 0.95,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rasmussenhigherground",
+    "local": false
+  },
+  {
     "id": "ray-parker-jr-ghostbusters",
     "title": "Ghostbusters",
     "artist": "Ray Parker Jr.",
@@ -33686,6 +34337,30 @@
     "local": false
   },
   {
+    "id": "roman-lob-standing-still",
+    "title": "Standing Still",
+    "artist": "Roman Lob",
+    "video": "tzMye6AV8BQ",
+    "language": "English",
+    "bpm": 216.13,
+    "gap": 7028.362559570629,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-02-20T21:16:31.112Z",
+    "genre": "Pop",
+    "realBpm": 108,
+    "volume": 0.89,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "romanlobstandingstill",
+    "local": false
+  },
+  {
     "id": "romeo-santos-eres-mia",
     "title": "Eres mÌa",
     "artist": "Romeo Santos",
@@ -33780,6 +34455,31 @@
     ],
     "tracksCount": 1,
     "search": "romeosantosymarcanthonyyotambien",
+    "local": false
+  },
+  {
+    "id": "rosalia-feat-the-weeknd-la-fama",
+    "title": "La fama",
+    "artist": "ROSALÍA feat. The Weeknd",
+    "video": "e-CEd6xrRQc",
+    "language": "Spanish",
+    "bpm": 272.79,
+    "gap": 28079.227647641044,
+    "year": "2021",
+    "lastUpdate": "2024-02-20T21:16:31.113Z",
+    "genre": "Bachata",
+    "videoGap": 15,
+    "realBpm": 136,
+    "volume": 0.64,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "La Fama",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rosaliafeattheweekndlafama",
     "local": false
   },
   {
@@ -36917,6 +37617,30 @@
     "local": false
   },
   {
+    "id": "swedish-house-mafia-the-weeknd-moth-to-a-flame",
+    "title": "Moth To A Flame",
+    "artist": "Swedish House Mafia & The Weeknd",
+    "video": "u9n7Cw-4_HQ",
+    "language": "English",
+    "bpm": 240,
+    "gap": 2320,
+    "year": "2021",
+    "lastUpdate": "2024-02-20T21:16:31.173Z",
+    "realBpm": 120,
+    "volume": 0.62,
+    "author": "AngelosTag",
+    "sourceUrl": "https://www.youtube.com/watch?v=u9n7Cw-4_HQ",
+    "tracks": [
+      {
+        "name": "Moth To A Flame",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "swedishhousemafiatheweekndmothtoaflame",
+    "local": false
+  },
+  {
     "id": "sylver-turn-the-tide",
     "title": "Turn The Tide",
     "artist": "Sylver",
@@ -37384,6 +38108,29 @@
     "local": false
   },
   {
+    "id": "tatsuya-kitani-rapport",
+    "title": "Rapport",
+    "artist": "Tatsuya Kitani",
+    "video": "k4eSya1zIl8",
+    "language": "Japanese",
+    "bpm": 248,
+    "gap": 31421.774193548386,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-02-20T21:16:31.238Z",
+    "realBpm": 124,
+    "volume": 0.98,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tatsuyakitanirapport",
+    "local": false
+  },
+  {
     "id": "taylor-swift-22",
     "title": "22",
     "artist": "Taylor Swift",
@@ -37599,6 +38346,30 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftlovestory",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-lover",
+    "title": "Lover",
+    "artist": "Taylor Swift",
+    "video": "-BjZmE2gtdo",
+    "language": "English",
+    "bpm": 205.5,
+    "gap": 22178.10218978102,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:31.240Z",
+    "genre": "Pop",
+    "realBpm": 205,
+    "volume": 0.5,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftlover",
     "local": false
   },
   {
@@ -38552,6 +39323,30 @@
     "local": false
   },
   {
+    "id": "the-cranberries-ode-to-my-family",
+    "title": "Ode To My Family",
+    "artist": "The Cranberries",
+    "video": "Zz-DJr1Qs54",
+    "language": "English",
+    "bpm": 375.7,
+    "gap": 33011.8631887144,
+    "year": "1994",
+    "artistOrigin": "IE",
+    "lastUpdate": "2024-02-20T21:16:31.241Z",
+    "genre": "Pop",
+    "realBpm": 94,
+    "volume": 0.75,
+    "author": "Peschi",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thecranberriesodetomyfamily",
+    "local": false
+  },
+  {
     "id": "the-cranberries-zombie",
     "title": "Zombie",
     "artist": "The Cranberries",
@@ -38772,6 +39567,31 @@
     ],
     "tracksCount": 1,
     "search": "thegreatestshowmanthegreatestshow",
+    "local": false
+  },
+  {
+    "id": "the-jackson-5-i-want-you-back",
+    "title": "I Want You Back",
+    "artist": "The Jackson 5",
+    "video": "QQXm-5-CEtI",
+    "language": "English",
+    "bpm": 392.4,
+    "gap": 19736.11620795107,
+    "year": "1969",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-02-20T21:16:31.243Z",
+    "genre": "Pop",
+    "realBpm": 98,
+    "volume": 0.79,
+    "author": "NikNak",
+    "tracks": [
+      {
+        "name": "I Want You Back",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thejackson5iwantyouback",
     "local": false
   },
   {
@@ -39250,6 +40070,31 @@
     "local": false
   },
   {
+    "id": "the-psychedelic-furs-love-my-way",
+    "title": "Love My Way",
+    "artist": "The Psychedelic Furs",
+    "video": "LGD9i718kBU",
+    "language": "English",
+    "bpm": 397.4,
+    "gap": 16022.658227848102,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-20T21:16:31.244Z",
+    "genre": "Post-Punk",
+    "videoGap": 2,
+    "realBpm": 126,
+    "volume": 0.92,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thepsychedelicfurslovemyway",
+    "local": false
+  },
+  {
     "id": "the-pussycat-dolls-hush-hush-hush-hush",
     "title": "Hush Hush; Hush Hush",
     "artist": "The Pussycat Dolls",
@@ -39573,6 +40418,29 @@
     "local": false
   },
   {
+    "id": "the-weeknd-after-hours",
+    "title": "After Hours",
+    "artist": "The Weeknd",
+    "video": "v5PZw1Wr-l0",
+    "language": "English",
+    "bpm": 218,
+    "gap": 9816.697247706423,
+    "year": "2020",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-20T21:16:31.247Z",
+    "realBpm": 109,
+    "volume": 0.63,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndafterhours",
+    "local": false
+  },
+  {
     "id": "the-weeknd-blinding-lights",
     "title": "Blinding Lights",
     "artist": "The Weeknd",
@@ -39693,6 +40561,80 @@
     "local": false
   },
   {
+    "id": "the-weeknd-feat-daft-punk-i-feel-it-coming",
+    "title": "I Feel It Coming",
+    "artist": "The Weeknd feat. Daft Punk",
+    "video": "qFLhGq0060w",
+    "language": "English",
+    "bpm": 371.8,
+    "gap": 18611.393222162453,
+    "year": "2016",
+    "lastUpdate": "2024-02-20T21:16:31.248Z",
+    "genre": "None",
+    "realBpm": 93,
+    "volume": 0.67,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "I Feel It Coming",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndfeatdaftpunkifeelitcoming",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-feat-daft-punk-starboy",
+    "title": "Starboy",
+    "artist": "The Weeknd feat. Daft Punk",
+    "video": "34Na4j8AVgA",
+    "language": "English",
+    "bpm": 372,
+    "gap": 56331.93548387097,
+    "year": "2016",
+    "lastUpdate": "2024-02-20T21:16:31.320Z",
+    "genre": "None",
+    "realBpm": 186,
+    "volume": 0.64,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Starboy",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndfeatdaftpunkstarboy",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-in-the-night",
+    "title": "In The Night",
+    "artist": "The Weeknd",
+    "video": "2iFa5We6zqw",
+    "language": "English",
+    "bpm": 224,
+    "gap": 55665.53571428572,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-20T21:16:31.367Z",
+    "genre": "R&B, Indie, Dubstep",
+    "realBpm": 168,
+    "volume": 0.82,
+    "author": "AngelosTag",
+    "sourceUrl": "https://www.youtube.com/watch?v=2iFa5We6zqw",
+    "tracks": [
+      {
+        "name": "In The Night",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndinthenight",
+    "local": false
+  },
+  {
     "id": "the-weeknd-out-of-time",
     "title": "Out of Time",
     "artist": "The Weeknd",
@@ -39718,6 +40660,54 @@
     "local": false
   },
   {
+    "id": "the-weeknd-party-monster",
+    "title": "Party Monster",
+    "artist": "The Weeknd",
+    "video": "diW6jXhLE0E",
+    "language": "English",
+    "bpm": 232.5,
+    "gap": 11697.741935483871,
+    "year": "2016",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-20T21:16:31.369Z",
+    "realBpm": 78,
+    "volume": 0.67,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Party Monster",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndpartymonster",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-sacrifice",
+    "title": "Sacrifice",
+    "artist": "The Weeknd",
+    "video": "VafTMsrnSTU",
+    "language": "English",
+    "bpm": 309.24,
+    "gap": 53121.373690337605,
+    "year": "2022",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-20T21:16:31.371Z",
+    "realBpm": 122,
+    "volume": 0.69,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "Sacrifice",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndsacrifice",
+    "local": false
+  },
+  {
     "id": "the-weeknd-save-your-tears",
     "title": "Save your tears",
     "artist": "The Weeknd",
@@ -39739,6 +40729,29 @@
     ],
     "tracksCount": 1,
     "search": "theweekndsaveyourtears",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-take-my-breath",
+    "title": "Take My Breath",
+    "artist": "The Weeknd",
+    "video": "rhTl_OyehF8",
+    "language": "English",
+    "bpm": 241.95,
+    "gap": 28658.059516429013,
+    "year": "2021",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-02-20T21:16:31.372Z",
+    "realBpm": 121,
+    "volume": 0.67,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theweekndtakemybreath",
     "local": false
   },
   {
@@ -40454,6 +41467,30 @@
     ],
     "tracksCount": 1,
     "search": "tokiohotelandeinerseiteichbinda",
+    "local": false
+  },
+  {
+    "id": "tom-odell-another-love",
+    "title": "Another Love",
+    "artist": "Tom Odell",
+    "video": "MwpMEbgC7DA",
+    "language": "English",
+    "bpm": 245,
+    "gap": 19640.408163265307,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-02-20T21:16:31.376Z",
+    "genre": "Singer/Songwriter",
+    "realBpm": 123,
+    "volume": 0.77,
+    "author": "prgoenner",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomodellanotherlove",
     "local": false
   },
   {
@@ -41481,6 +42518,30 @@
     ],
     "tracksCount": 1,
     "search": "usaforafricawearetheworld",
+    "local": false
+  },
+  {
+    "id": "usher-feat-pitbull-dj-got-us-fallin-in-love",
+    "title": "DJ Got Us Fallin’ In Love",
+    "artist": "Usher feat. Pitbull",
+    "video": "C-dvTjK_07c",
+    "language": "English",
+    "bpm": 240,
+    "gap": 27140,
+    "year": "2010",
+    "lastUpdate": "2024-02-20T21:16:31.378Z",
+    "genre": "None",
+    "realBpm": 120,
+    "volume": 0.67,
+    "author": "AngelosTag",
+    "tracks": [
+      {
+        "name": "DJ Got Us Fallin' In Love",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "usherfeatpitbulldjgotusfallininlove",
     "local": false
   },
   {
@@ -42952,6 +44013,29 @@
     ],
     "tracksCount": 1,
     "search": "zielonezabkinumerekwkrzaczkach",
+    "local": false
+  },
+  {
+    "id": "zoe-wees-control",
+    "title": "Control",
+    "artist": "Zoe Wees",
+    "video": "UrGS_6_HglU",
+    "language": "English",
+    "bpm": 228,
+    "gap": 7273.1578947368425,
+    "year": "2020",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-02-20T21:16:41.712Z",
+    "realBpm": 114,
+    "volume": 0.66,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "zoeweescontrol",
     "local": false
   },
   {

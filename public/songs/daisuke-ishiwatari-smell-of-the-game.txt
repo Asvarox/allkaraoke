@@ -1,0 +1,481 @@
+#ARTIST:Daisuke Ishiwatari
+#TITLE:Smell Of The Game
+#CREATOR:Booker255
+#BPM:314,17
+#YEAR:2021
+#VIDEO:v=2GcKrCnDBf4
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:27297,358118216252
+#ALLKARAOKE_ID:daisuke-ishiwatari-smell-of-the-game
+#ALLKARAOKE_LASTUPDATE:2024-02-20T21:16:30.320Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=181920
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=26601
+#ALLKARAOKE_VOLUME:0,92
+#P1:Smell of The Game
+#MP3:Daisuke Ishiwatari - Smell Of The Game.mp3
+: 21 6 7 I 
+: 29 6 5 know 
+: 38 8 3 who 
+: 50 4 0 I 
+: 57 5 5 am
+: 63 5 3 ~ 
+- 68
+: 73 3 0 The 
+: 80 4 0 moon
+: 87 3 0 lit 
+: 93 6 0 lake 
+: 102 5 3 told 
+: 111 6 3 me 
+- 117
+: 129 6 0 "This 
+: 148 6 0 is 
+: 166 6 3 who 
+: 175 6 3 you 
+: 184 17 3 are" 
+- 201
+: 214 7 7 My 
+: 223 5 5 fangs 
+: 232 4 3 are 
+: 237 6 0 so 
+: 244 8 5 lo
+: 253 10 3 ng 
+- 263
+: 267 4 0 My 
+: 274 3 0 nails 
+: 281 3 0 are 
+: 289 1 0 shar
+: 291 1 0 per 
+: 293 1 0 than 
+* 296 13 12 ice 
+- 309
+: 323 10 0 That 
+: 341 13 5 is 
+: 359 40 7 me 
+- 399
+: 407 21 -5 I 
+: 432 21 -4 won
+: 456 17 0 der 
+: 474 21 -1 what 
+: 503 21 3 that 
+: 527 21 5 will 
+: 551 21 7 prove? 
+- 572
+: 576 4 3 That 
+: 582 3 0 is 
+: 588 3 3 bull
+: 594 3 5 shit! 
+- 597
+: 600 10 7 Bla
+: 613 8 3 zing! 
+- 621
+: 625 3 3 Still 
+: 631 3 0 my 
+: 638 3 3 heart 
+: 643 2 5 is 
+: 649 10 8 bla
+: 662 7 7 zing! 
+- 669
+: 674 3 3 If 
+: 679 2 0 the 
+: 685 4 3 "words" 
+: 692 3 5 ki
+: 698 3 3 lled 
+: 704 3 3 me 
+- 707
+: 710 3 3 I
+: 714 3 -1 ~ 
+: 721 10 -1 dont 
+: 734 4 -4 need 
+: 740 2 -5 a 
+* 745 9 7 new 
+* 758 10 8 world 
+* 770 9 7 or
+* 782 6 5 der
+* 789 3 3 ~ 
+- 792
+: 794 7 5 You...
+: 802 9 3 ~ 
+: 817 4 3 soon 
+: 824 4 0 you 
+: 831 2 3 will 
+: 837 9 8 know
+: 847 10 7 ~ 
+- 857
+: 865 4 7 We 
+: 872 3 7 al
+: 879 3 5 rea
+: 885 3 3 dy 
+: 892 3 1 know 
+: 897 2 1 the 
+: 903 2 1 smell 
+: 909 9 1 of 
+: 921 7 1 the 
+: 932 31 3 game 
+- 963 1258
+- 1258
+: 1279 4 7 Do 
+: 1285 3 5 you 
+: 1290 3 3 know 
+: 1296 9 0 who 
+: 1307 3 -2 you 
+: 1314 5 5 are?
+: 1320 7 3 ~ 
+- 1327
+F 1331 3 3 When 
+F 1338 3 3 you 
+F 1344 3 3 speak 
+F 1350 7 3 your 
+F 1360 14 3 words 
+- 1374
+F 1386 9 3 Don’t 
+F 1402 9 3 sound 
+F 1421 8 3 like 
+F 1432 5 3 your 
+F 1440 17 3 own 
+- 1457
+: 1470 9 5 You’re 
+: 1482 4 5 trapped 
+: 1496 1 5 in 
+: 1500 3 5 a 
+: 1505 2 5 dark 
+: 1510 3 5 cell 
+: 1514 12 5 created 
+: 1530 4 5 by 
+: 1537 3 5 this 
+: 1543 16 5 world 
+- 1559
+F 1579 13 3 "That 
+F 1598 12 3 is 
+F 1615 6 3 who 
+F 1624 7 3 you 
+F 1635 19 3 are" 
+- 1654
+F 1670 4 3 Norms, 
+F 1677 4 3 stan
+F 1683 3 3 dards, 
+F 1689 4 3 rules 
+F 1695 3 3 and 
+F 1701 3 3 guide
+F 1707 3 3 lines 
+F 1713 3 3 must 
+F 1719 3 3 be 
+F 1725 3 3 kept 
+- 1728
+F 1730 3 3 So 
+F 1736 4 3 time 
+F 1743 1 3 to 
+F 1746 2 3 wake 
+F 1752 9 3 up! 
+- 1761
+F 1765 4 3 Gra
+F 1772 3 3 vi
+F 1778 1 3 ty 
+F 1784 4 3 keeps 
+F 1791 3 3 us 
+F 1798 3 3 on 
+F 1804 2 3 the 
+F 1809 19 3 ground 
+- 1828
+: 1833 4 3 That 
+: 1839 3 0 is 
+: 1845 3 3 bull
+: 1852 3 5 shit! 
+- 1855
+: 1858 10 7 Bla
+: 1870 8 3 zing! 
+- 1878
+: 1882 4 3 Still 
+: 1888 3 0 my 
+: 1895 3 3 heart 
+: 1900 3 5 is 
+: 1906 9 8 bla
+: 1918 8 7 zing! 
+- 1926
+: 1930 3 3 If 
+: 1936 3 0 I 
+: 1942 3 3 lose 
+: 1948 4 5 my
+: 1953 5 3 ~ 
+: 1961 3 3 wings 
+- 1964
+: 1966 4 3 I
+: 1971 6 -1 ~ 
+: 1979 6 -1 dont
+: 1986 3 -3 ~ 
+: 1990 3 -3 need 
+: 1996 3 -4 a 
+: 2002 10 7 new 
+: 2015 9 8 world 
+: 2027 7 7 or
+: 2036 3 5 der
+: 2040 3 3 ~ 
+- 2043
+: 2050 3 5 You
+: 2054 13 3 ~ 
+: 2074 4 3 can’t 
+: 2081 3 0 feel 
+: 2088 2 3 a 
+: 2093 8 8 thing
+: 2102 14 7 ~ 
+- 2116
+: 2123 4 7 We 
+: 2129 4 7 al
+: 2136 2 5 rea
+: 2142 3 3 dy 
+: 2151 13 6 know 
+: 2165 3 5 the 
+: 2172 4 6 smell
+: 2177 5 5 ~ 
+: 2184 5 6 of 
+: 2191 5 5 the 
+: 2202 13 7 game 
+- 2215
+: 2216 7 3 Remem
+: 2226 3 0 ber 
+: 2232 4 3 you 
+: 2239 3 5 are 
+: 2244 10 7 bla
+: 2257 8 3 zing! 
+- 2265
+: 2268 4 3 Still 
+: 2275 3 0 your 
+: 2281 3 3 heart 
+: 2287 3 5 is 
+: 2293 8 8 bla
+: 2305 8 7 zing! 
+- 2313
+: 2317 3 3 If 
+: 2323 3 0 the 
+: 2329 4 3 "words" 
+: 2334 5 5 made
+: 2340 2 3 ~ 
+: 2346 4 3 you 
+- 2350
+: 2353 4 3 I
+: 2358 4 -1 ~ 
+: 2365 8 -1 dont 
+: 2377 4 -3 need 
+: 2383 2 -4 a 
+: 2389 9 7 new 
+: 2402 9 8 world 
+: 2414 9 7 or
+: 2425 4 5 der
+: 2430 4 3 ~ 
+- 2434
+: 2437 4 5 You...
+: 2442 13 3 ~ 
+: 2461 4 3 soon 
+: 2468 3 0 you 
+: 2474 2 3 will 
+: 2480 9 8 know
+: 2490 13 7 ~ 
+- 2503
+: 2509 4 7 We 
+: 2516 3 7 al
+: 2522 3 5 rea
+: 2528 4 3 dy 
+: 2535 4 0 know 
+: 2541 3 0 the 
+: 2546 3 0 smell 
+: 2553 8 0 of 
+: 2564 7 0 the 
+: 2575 46 3 game 
+- 2621 3531
+- 3531
+F 3552 9 3 What 
+F 3565 10 3 am 
+F 3580 12 3 I? 
+- 3592 3827
+- 3827
+F 3848 7 3 Man
+F 3858 19 3 kind 
+F 3889 7 3 knew 
+F 3903 2 3 that 
+F 3907 2 3 they 
+F 3911 4 3 can
+F 3918 3 3 not 
+F 3922 13 3 change 
+F 3942 2 3 so
+F 3946 1 3 cie
+F 3949 2 3 ty 
+- 3951
+F 3969 9 3 So 
+F 3982 1 3 ins
+F 3986 4 3 tead 
+F 3993 2 3 of 
+F 3997 2 3 re
+F 4001 2 3 flec
+F 4006 4 3 ting 
+F 4012 2 3 on 
+F 4016 2 3 them
+F 4021 16 3 selves, 
+F 4043 8 3 they 
+F 4054 11 3 blamed 
+F 4068 4 3 the 
+F 4076 16 3 beasts 
+- 4092 4095
+- 4095
+F 4116 3 3 But 
+F 4120 2 3 they 
+F 4124 3 3 found 
+F 4130 3 3 beau
+F 4135 4 3 ty 
+F 4141 3 3 in 
+F 4146 1 3 the 
+F 4149 9 3 lives 
+F 4160 4 3 of 
+F 4170 15 3 beasts 
+- 4185
+F 4198 2 3 And 
+F 4202 7 3 couldn’t 
+F 4212 9 3 lie 
+F 4224 2 3 to 
+F 4228 2 3 them
+F 4232 5 3 selves 
+F 4239 2 3 a
+F 4245 3 3 bout 
+F 4251 17 3 it 
+- 4268
+: 4271 3 -6 I’m 
+: 4277 3 -4 just 
+: 4284 3 -4 a 
+: 4289 3 -4 small 
+: 4296 8 -3 part 
+: 4308 2 -3 of 
+: 4314 2 -3 the 
+* 4320 50 2 world... 
+- 4370
+F 4378 6 3 But 
+F 4387 7 3 no 
+F 4397 7 3 one 
+F 4407 3 3 could 
+F 4411 3 3 break 
+F 4418 71 3 me!!! 
+- 4489 4807
+- 4807
+: 4828 6 3 Can’t 
+: 4836 3 0 you 
+: 4842 4 3 see 
+: 4849 2 5 I’m 
+: 4855 10 7 bla
+: 4867 9 3 zing? 
+- 4876
+: 4880 3 3 Still 
+: 4886 3 0 my 
+: 4892 3 3 heart 
+: 4897 2 5 is 
+: 4903 9 8 bla
+: 4916 8 7 zing 
+- 4924
+: 4928 3 3 If 
+: 4933 2 0 the 
+: 4939 2 3 "words" 
+: 4944 4 5 ki
+: 4951 3 3 lled 
+: 4957 3 3 me 
+- 4960
+: 4963 9 7 I 
+: 4975 9 5 dont 
+: 4987 3 3 need 
+: 4993 3 0 a 
+: 4999 9 7 new 
+: 5011 10 8 world 
+: 5024 8 7 or
+: 5035 4 5 der
+: 5040 4 3 ~ 
+- 5044
+: 5047 8 5 You...
+: 5056 9 3 ~ 
+: 5071 4 3 my 
+: 5078 3 0 tribe 
+: 5084 3 3 is 
+: 5090 5 0 my 
+: 5102 10 7 world
+: 5113 3 5 ~
+: 5117 7 7 ~
+: 5125 7 5 ~
+: 5133 10 3 ~ 
+- 5143
+: 5149 4 2 Your 
+: 5156 3 3 "words" 
+: 5162 3 2 will 
+: 5167 3 3 ne 
+: 5172 3 2 ver 
+: 5178 7 3 make 
+: 5187 6 2 me 
+: 5198 3 6 di
+: 5204 3 6 sap
+: 5210 5 7 pear 
+- 5215
+: 5217 3 3 That 
+: 5223 3 0 is 
+: 5229 3 3 bull
+: 5235 3 5 shit! 
+- 5238
+: 5241 9 7 Bla
+: 5254 7 3 zing! 
+- 5261
+: 5265 3 3 Still 
+: 5271 3 0 my 
+: 5278 3 3 heart 
+: 5283 3 5 is 
+: 5290 10 8 bla
+: 5302 7 7 zing! 
+- 5309
+: 5313 3 3 If 
+: 5319 3 0 the 
+: 5326 2 3 "words" 
+* 5332 5 10 ki
+* 5339 3 8 lled 
+* 5344 3 8 me 
+- 5347
+: 5350 16 8 I 
+: 5368 4 7 dont 
+: 5374 3 5 need 
+: 5380 3 3 a 
+: 5386 8 3 new 
+: 5398 9 5 world 
+: 5410 9 7 or
+: 5422 4 5 der
+: 5427 4 3 ~ 
+- 5431
+: 5434 5 5 You...
+: 5440 11 3 ~ 
+: 5457 3 3 soon 
+: 5464 3 0 you 
+: 5471 3 3 will 
+: 5478 9 8 know
+: 5488 14 7 ~ 
+- 5502
+: 5506 4 7 We 
+: 5513 3 7 al
+: 5519 3 5 rea
+: 5525 7 3 dy 
+: 5535 2 0 know 
+: 5540 3 0 the 
+: 5545 3 0 smell 
+: 5550 8 0 of 
+: 5561 13 3 the 
+- 5574
+: 5579 4 0 Know 
+: 5586 3 0 the 
+: 5592 2 0 smell 
+: 5597 10 0 of 
+: 5609 13 3 the 
+- 5622
+: 5628 3 0 Know 
+: 5634 3 0 the 
+: 5640 2 0 smell 
+: 5645 9 0 of 
+: 5658 13 3 the 
+- 5671
+: 5675 4 0 Know 
+: 5682 3 0 the 
+: 5688 3 0 smell 
+: 5695 9 0 of 
+: 5706 7 0 the 
+: 5717 55 3 game 
+E
