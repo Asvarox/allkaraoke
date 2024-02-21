@@ -1,5 +1,6 @@
 import { defineConfig, devices, PlaywrightTestConfig } from '@playwright/experimental-ct-react';
 import react from '@vitejs/plugin-react';
+import * as process from 'process';
 import tsconfigPaths from 'vite-tsconfig-paths';
 // playwright.config.ts
 
@@ -7,8 +8,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = defineConfig({
-  // by default playwright adds platform (linux/windows etc.) to the snapshot path which is not needed
-  snapshotPathTemplate: './__snapshots__/{testFilePath}/{arg}{ext}',
+  snapshotPathTemplate: process.env.CI ? './__snapshots__/{testFilePath}/{arg}{ext}' : undefined,
   testDir: './src/',
   testMatch: '*.spec.tsx',
   /* The base directory, relative to the config file, for snapshot files created with toMatchSnapshot and toHaveScreenshot. */
