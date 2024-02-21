@@ -19,7 +19,7 @@ const polSongTitle = 'Multitrack';
 const duetsPlaylist = 'Duets';
 
 test('Sing a song intended for a duet as a single player', async ({ page, browserName }) => {
-  test.fixme(browserName === 'firefox', 'Test fails super often on FF');
+  test.fixme(browserName === 'firefox', 'Test fails, because the mic in FF doesn`t work');
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
@@ -88,7 +88,7 @@ const spanishLang = 'Spanish';
 const gameMode = 'Pass The Mic';
 
 test('Sing a duet song in pass-the-mic mode as a single connected player', async ({ page, browserName }) => {
-  test.fixme(browserName === 'firefox', 'Test fails super often on FF');
+  test.fixme(browserName === 'firefox', 'Test fails, because the mic in FF doesn`t work');
   test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();

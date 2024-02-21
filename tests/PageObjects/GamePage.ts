@@ -94,6 +94,6 @@ export class GamePagePO {
   }
 
   public get passTheMicProgressElement() {
-    return this.page.getByTestId('pass-the-mic');
+    return this.page.getByTestId('pass-the-mic-progress');
   }
 }
