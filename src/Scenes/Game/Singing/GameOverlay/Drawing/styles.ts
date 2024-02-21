@@ -49,8 +49,8 @@ const colorSet = (fillBase: tinycolor.Instance, strokeBase: tinycolor.Instance) 
 export const colorSets = {
   blue: colorSet(blueFillBase, blueStrokeBase),
   red: colorSet(redFillBase, redStrokeBase),
-  green: colorSet(tinycolor('rgb(0,183,0)'), tinycolor('rgb(0,84,0)')),
-  yellow: colorSet(tinycolor('rgb(239,209,0)'), tinycolor('rgb(114,84,0)')),
+  yellow: colorSet(tinycolor('rgb(0,183,0)'), tinycolor('rgb(0,84,0)')),
+  green: colorSet(tinycolor('rgb(239,209,0)'), tinycolor('rgb(114,84,0)')),
   christmasGreen: colorSet(christmasGreenFillBase, christmasGreenStrokeBase),
   christmasRed: colorSet(christmasRedFillBase, christmasRedStrokeBase),
 };
