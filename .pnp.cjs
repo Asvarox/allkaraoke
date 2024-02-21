@@ -89,7 +89,7 @@ const RAW_RUNTIME_STATE =
           ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["latinize", "npm:0.5.0"],\
-          ["lint-staged", "npm:15.2.0"],\
+          ["lint-staged", "npm:15.2.2"],\
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\
@@ -16241,16 +16241,16 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.2.0", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.0-2aacd96825-2a20e9b15f.zip/node_modules/lint-staged/",\
+      ["npm:15.2.2", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.2-da1e8ea74f-5855ae7abf.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.2.0"],\
+          ["lint-staged", "npm:15.2.2"],\
           ["chalk", "npm:5.3.0"],\
           ["commander", "npm:11.1.0"],\
           ["debug", "virtual:b86a9fb34323a98c6519528ed55faa0d9b44ca8879307c0b29aa384bde47ff59a7d0c9051b31246f14521dfb71ba3c5d6d0b35c29fffc17bf875aa6ad977d9e8#npm:4.3.4"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.0.0"],\
-          ["listr2", "npm:8.0.0"],\
+          ["listr2", "npm:8.0.1"],\
           ["micromatch", "npm:4.0.5"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
@@ -16260,10 +16260,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["listr2", [\
-      ["npm:8.0.0", {\
-        "packageLocation": "./.yarn/cache/listr2-npm-8.0.0-24640e7d69-d5a53b6d5f.zip/node_modules/listr2/",\
+      ["npm:8.0.1", {\
+        "packageLocation": "./.yarn/cache/listr2-npm-8.0.1-634f89e3e8-3fa83e8b70.zip/node_modules/listr2/",\
         "packageDependencies": [\
-          ["listr2", "npm:8.0.0"],\
+          ["listr2", "npm:8.0.1"],\
           ["cli-truncate", "npm:4.0.0"],\
           ["colorette", "npm:2.0.20"],\
           ["eventemitter3", "npm:5.0.1"],\
@@ -17663,7 +17663,7 @@ const RAW_RUNTIME_STATE =
           ["is-mobile", "npm:4.0.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["latinize", "npm:0.5.0"],\
-          ["lint-staged", "npm:15.2.0"],\
+          ["lint-staged", "npm:15.2.2"],\
           ["localforage", "npm:1.10.0"],\
           ["lodash", "npm:4.17.21"],\
           ["lodash-es", "npm:4.17.21"],\

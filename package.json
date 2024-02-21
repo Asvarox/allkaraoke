@@ -132,7 +132,7 @@
     "happy-dom": "^12.10.3",
     "husky": "^8.0.3",
     "js-yaml": "^4.1.0",
-    "lint-staged": "^15.2.0",
+    "lint-staged": "^15.2.2",
     "lodash": "^4.17.21",
     "musicbrainz-api": "^0.11.0",
     "node-fetch": "^3.3.2",
