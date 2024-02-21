@@ -60,10 +60,10 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
     return (
       <LayoutGame>
         <Container>
-          <BackgroundContainer visible={isOverlayVisible}>
+          <BackgroundContainer visible={isOverlayVisible} data-test="background-container">
             <Overlay video={songPreview.video} width={width} height={height} />
-            <Artist>{songPreview.artist}</Artist>
-            <Title>{songPreview.title}</Title>
+            <Artist data-test="song-artist">{songPreview.artist}</Artist>
+            <Title data-test="song-title">{songPreview.title}</Title>
             <WaitForReadiness
               onFinish={() => {
                 setIsTransitionTimeout(true);

@@ -94,6 +94,10 @@ export class SongListPagePO {
     return this.getSongElement(songID).getByTestId('multitrack-indicator');
   }
 
+  public async expectSongToBeMarkedWithLanguageFlagIcon(songID: string, language: string) {
+    await expect(this.getSongElement(songID).locator('img')).toHaveAttribute('language', language);
+  }
+
   public async expectSongToBeMarkedAsPlayedToday(songID: string) {
     await expect(this.getSongElement(songID).getByTestId('song-stat-indicator')).toContainText('Played today', {
       ignoreCase: true,
@@ -106,5 +110,10 @@ export class SongListPagePO {
 
   public async expectSongToBeVisibleAsNew(songID: string) {
     await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
+  }
+
+  public async goBackToMainMenu() {
+    await this.page.waitForTimeout(500);
+    await this.page.keyboard.press('Backspace');
   }
 }

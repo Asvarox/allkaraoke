@@ -2,7 +2,11 @@ import { Browser, BrowserContext, Page, expect } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class GamePagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get skipIntroElement() {
     return this.page.getByTestId('skip-intro-info');
@@ -72,6 +76,24 @@ export class GamePagePO {
   }
 
   public getSongLyricsForPlayerElement(playerNumber: number) {
-    return this.page.getByTestId(`lyrics-current-player-${playerNumber}`);
+    return this.page.getByTestId(`lyrics-container-player-${playerNumber}`);
+  }
+
+  public get songArtistAndTitleContainer() {
+    return this.page.getByTestId('background-container');
+  }
+
+  public async expectArtistAndSongTitleToBeShown(artist: string, title: string) {
+    await expect(this.songArtistAndTitleContainer).toBeVisible();
+    await expect(this.page.getByTestId('song-artist')).toHaveText(artist);
+    await expect(this.page.getByTestId('song-title')).toHaveText(title);
+  }
+
+  public get changeIndicatorIcon() {
+    return this.page.getByTestId('SwapHorizIcon');
+  }
+
+  public get passTheMicProgressElement() {
+    return this.page.getByTestId('pass-the-mic-progress');
   }
 }

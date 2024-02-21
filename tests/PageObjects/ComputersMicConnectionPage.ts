@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class ComputersMicConnectionPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get micInputNameElement() {
     return this.page.getByTestId('selected-mic');
@@ -19,11 +23,15 @@ export class ComputersMicConnectionPagePO {
     await this.changeInputTypeButton.click();
   }
 
-  public get mainMenuButton() {
+  public get saveButton() {
     return this.page.getByTestId('save-button');
   }
 
   public async goToMainMenuPage() {
-    await this.mainMenuButton.click();
+    await this.saveButton.click();
+  }
+
+  public async continueToTheSong() {
+    await this.saveButton.click();
   }
 }
