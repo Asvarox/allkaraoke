@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 import initialise from './PageObjects/initialise';
 import { initTestMode, mockRandom, mockSongs } from './helpers';
@@ -11,14 +11,29 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockRandom({ page, context }, 0);
 });
 
+const language = 'English';
 const groupName = 'Z';
 
 test('Scrolling to letter works', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.skipToMainMenu();
-  await pages.mainMenuPage.goToSingSong();
-  await pages.songLanguagesPage.continueAndGoToSongList();
-  await pages.songListPage.goToGroupNavigation(groupName);
-  await pages.songListPage.expectGroupToBeInViewport(groupName);
+
+  await test.step('Go to song list page', async () => {
+    await pages.landingPage.enterTheGame();
+    await pages.inputSelectionPage.skipToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+  });
+
+  await test.step('Pick up at least 1 song language', async () => {
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(language);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('Preview of random song should be visible', async () => {
+    await expect(pages.songListPage.songPreviewElement).toBeVisible();
+  });
+
+  await test.step('Select a group name - the app scroll to the letter, showing results in the viewport', async () => {
+    await pages.songListPage.goToGroupNavigation(groupName);
+    await pages.songListPage.expectGroupToBeInViewport(groupName);
+  });
 });
