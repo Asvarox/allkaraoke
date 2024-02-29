@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Locator, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongLanguagesPagePO {
@@ -37,14 +37,16 @@ export class SongLanguagesPagePO {
     return this.isLanguageSelected(languageCheckbox);
   }
 
-  private async isLanguageSelected(language: any) {
-    const languageCheckboxValue = await language.getAttribute('data-testid');
+  private async isLanguageSelected(languageCheckbox: Locator) {
+    const languageCheckboxValue = await languageCheckbox.getAttribute('data-testid');
     return languageCheckboxValue === 'CheckBoxIcon';
   }
 
   public async ensureAllLanguagesAreSelected() {
-    await expect(this.page.locator('[data-test^="lang-"] svg').first()).toBeVisible();
-    const languages = await this.page.locator('[data-test^="lang-"] svg').all();
+    const languageCheckbox = this.page.locator('[data-test^="lang-"] svg');
+
+    await expect(languageCheckbox.first()).toBeVisible();
+    const languages = await languageCheckbox.all();
 
     for (const language of languages) {
       if (!(await this.isLanguageSelected(language))) {
