@@ -3418,6 +3418,29 @@
     "local": false
   },
   {
+    "id": "audioslave-like-a-stone",
+    "title": "Like A Stone",
+    "artist": "Audioslave",
+    "video": "7QU1nvuxaMA",
+    "language": "English",
+    "bpm": 215.75,
+    "gap": 19486.65121668598,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-03-12T20:42:56.139Z",
+    "realBpm": 108,
+    "volume": 0.77,
+    "author": "KirianLeon",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "audioslavelikeastone",
+    "local": false
+  },
+  {
     "id": "aurora-a-dangerous-thing",
     "title": "A Dangerous Thing",
     "artist": "AURORA",
@@ -13950,6 +13973,33 @@
     "local": false
   },
   {
+    "id": "enej-kamien-z-napisem-love",
+    "title": "Kamień z napisem LOVE",
+    "artist": "Enej",
+    "video": "vBj5P71Mci4",
+    "language": "Polish",
+    "bpm": 379.84,
+    "gap": 9750.742207245155,
+    "year": "2015",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-03-12T20:42:56.141Z",
+    "realBpm": 95,
+    "previewStart": 57,
+    "previewEnd": 90,
+    "volume": 0.7,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Enej&cancion=Kamie%C5%84%20z%20napisem%20LOVE",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "enejkamienznapisemlove",
+    "local": false
+  },
+  {
     "id": "enej-zbudujemy-dom",
     "title": "Zbudujemy dom",
     "artist": "Enej",
@@ -16536,6 +16586,61 @@
     "local": false
   },
   {
+    "id": "grzegorz-hyzy-pod-wiatr",
+    "title": "Pod wiatr",
+    "artist": "Grzegorz Hyży",
+    "video": "sTcRcwCocIg",
+    "language": "Polish",
+    "bpm": 279.96,
+    "gap": 14600.99742820403,
+    "year": "2016",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-03-12T20:42:56.530Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "previewStart": 98,
+    "previewEnd": 136,
+    "volume": 0.67,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Grzegorz%20Hy%C5%BCy&cancion=Pod%20wiatr",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "grzegorzhyzypodwiatr",
+    "local": false
+  },
+  {
+    "id": "grzegorz-turnau-cichosza",
+    "title": "Cichosza",
+    "artist": "Grzegorz Turnau",
+    "video": "m98MBACe1xk",
+    "language": "Polish",
+    "bpm": 381.4,
+    "gap": 19980.780283167278,
+    "year": "1993",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-03-12T20:42:56.611Z",
+    "realBpm": 93,
+    "previewStart": 58,
+    "previewEnd": 120,
+    "volume": 0.75,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Grzegorz%20Turnau&cancion=Cichosza",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "grzegorzturnaucichosza",
+    "local": false
+  },
+  {
     "id": "guns-n-roses-dont-cry",
     "title": "Don't Cry",
     "artist": "Guns N' Roses",
@@ -16634,6 +16739,30 @@
     ],
     "tracksCount": 1,
     "search": "gunsnrosesparadisecity",
+    "local": false
+  },
+  {
+    "id": "guns-n-roses-patience",
+    "title": "Patience",
+    "artist": "Guns N’ Roses",
+    "video": "ErvgV4P6Fzc",
+    "language": "English",
+    "bpm": 400.7,
+    "gap": 7949.268779635637,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-03-12T20:42:56.695Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 0.82,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gunsnrosespatience",
     "local": false
   },
   {
@@ -23915,6 +24044,30 @@
     "local": false
   },
   {
+    "id": "lyn-dark-sun-tv",
+    "title": "Dark Sun (TV)",
+    "artist": "Lyn",
+    "video": "yH23LPDKxtM",
+    "language": "English",
+    "bpm": 260.1,
+    "gap": 15220.607843137255,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-03-12T20:42:56.698Z",
+    "genre": "Anime",
+    "realBpm": 130,
+    "volume": 0.99,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lyndarksuntv",
+    "local": false
+  },
+  {
     "id": "lynyrd-skynyrd-free-bird",
     "title": "Free Bird",
     "artist": "Lynyrd Skynyrd",
@@ -24085,6 +24238,29 @@
     ],
     "tracksCount": 1,
     "search": "madagaskarwyginamsmialocialo",
+    "local": false
+  },
+  {
+    "id": "madcon-feat-ray-dalton-dont-worry",
+    "title": "Don’t Worry",
+    "artist": "Madcon feat. Ray Dalton",
+    "video": "qlPx6tmAIlM",
+    "language": "English",
+    "bpm": 245.97,
+    "gap": -455.89828027808267,
+    "year": "2015",
+    "lastUpdate": "2024-03-12T20:42:56.704Z",
+    "genre": "None",
+    "realBpm": 123,
+    "volume": 0.72,
+    "author": "QuantenspringerXXX",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "madconfeatraydaltondontworry",
     "local": false
   },
   {
@@ -27949,6 +28125,34 @@
     "local": false
   },
   {
+    "id": "natalia-szroeder-lustra",
+    "title": "Lustra",
+    "artist": "Natalia Szroeder",
+    "video": "X9doLGPa2T4",
+    "language": "Polish",
+    "bpm": 339.8,
+    "gap": 11214.696880517951,
+    "year": "2016",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-03-12T20:42:56.776Z",
+    "genre": "Pop",
+    "realBpm": 85,
+    "previewStart": 35,
+    "previewEnd": 81,
+    "volume": 0.64,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Natalia%20Szroeder&cancion=Lustra",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nataliaszroederlustra",
+    "local": false
+  },
+  {
     "id": "natalie-imbruglia-torn",
     "title": "Torn",
     "artist": "Natalie Imbruglia",
@@ -28327,6 +28531,30 @@
     ],
     "tracksCount": 1,
     "search": "netflixtossacointoyourwitcher",
+    "local": false
+  },
+  {
+    "id": "netta-toy",
+    "title": "Toy",
+    "artist": "Netta",
+    "video": "CziHrYYSyPc",
+    "language": "English",
+    "bpm": 260.53,
+    "gap": 26201.225962461136,
+    "year": "2018",
+    "artistOrigin": "IL",
+    "lastUpdate": "2024-03-12T20:42:56.846Z",
+    "edition": "ESC 2018",
+    "realBpm": 130,
+    "volume": 0.66,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nettatoy",
     "local": false
   },
   {
@@ -31377,6 +31605,33 @@
     ],
     "tracksCount": 1,
     "search": "phoebebridgersmotionsickness",
+    "local": false
+  },
+  {
+    "id": "piekni-i-mlodzi-ona-jest-taka-cudowna",
+    "title": "Ona jest taka cudowna",
+    "artist": "Piękni i Młodzi",
+    "video": "cU1C7IzcLnw",
+    "language": "Polish",
+    "bpm": 260,
+    "gap": 18750.23076923077,
+    "year": "2014",
+    "lastUpdate": "2024-03-12T20:42:56.924Z",
+    "genre": "Disco",
+    "realBpm": 130,
+    "previewStart": 128,
+    "previewEnd": 183,
+    "volume": 0.54,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Pi%C4%99kni%20i%20M%C5%82odzi&cancion=Ona%20jest%20taka%20cudowna",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "piekniimlodzionajesttakacudowna",
     "local": false
   },
   {
@@ -34958,6 +35213,33 @@
     "local": false
   },
   {
+    "id": "sarsa-naucz-mnie",
+    "title": "Naucz mnie",
+    "artist": "Sarsa",
+    "video": "05Qdu0jkihU",
+    "language": "Polish",
+    "bpm": 360,
+    "gap": 12942,
+    "year": "2015",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-03-12T20:42:57.049Z",
+    "realBpm": 90,
+    "previewStart": 68,
+    "previewEnd": 109,
+    "volume": 0.66,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Sarsa&cancion=Naucz%20mnie",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sarsanauczmnie",
+    "local": false
+  },
+  {
     "id": "savage-garden-truly-madly-deeply",
     "title": "Truly Madly Deeply",
     "artist": "Savage Garden",
@@ -37694,6 +37976,34 @@
     "local": false
   },
   {
+    "id": "sylwia-grzeszczak-tamta-dziewczyna",
+    "title": "Tamta dziewczyna",
+    "artist": "Sylwia Grzeszczak",
+    "video": "M5UqFj-uk78",
+    "language": "Polish",
+    "bpm": 254.6,
+    "gap": 13788.428908091124,
+    "year": "2016",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-03-12T20:42:57.120Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "previewStart": 38,
+    "previewEnd": 81,
+    "volume": 0.66,
+    "author": "Currymalker / chusall",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Sylwia%20Grzeszczak&cancion=Tamta%20dziewczyna",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sylwiagrzeszczaktamtadziewczyna",
+    "local": false
+  },
+  {
     "id": "system-of-a-down-aerials",
     "title": "Aerials",
     "artist": "System of a Down",
@@ -39894,6 +40204,30 @@
     "local": false
   },
   {
+    "id": "the-mamas-the-papas-california-dreamin",
+    "title": "California Dreamin’",
+    "artist": "The Mamas & The Papas",
+    "video": "KOok1WzZbOY",
+    "language": "English",
+    "bpm": 225.5,
+    "gap": 11812.217294900222,
+    "year": "1965",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-03-12T20:42:57.189Z",
+    "genre": "Folk Rock",
+    "realBpm": 112,
+    "volume": 0.71,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "themamasthepapascaliforniadreamin",
+    "local": false
+  },
+  {
     "id": "the-neighbourhood-sweater-weather",
     "title": "Sweater Weather",
     "artist": "The Neighbourhood",
@@ -41565,6 +41899,35 @@
     ],
     "tracksCount": 1,
     "search": "tommyfebruary6everydayatthebusstop",
+    "local": false
+  },
+  {
+    "id": "tones-and-i-dance-monkey",
+    "title": "Dance Monkey",
+    "artist": "Tones And I",
+    "video": "q0hyYWKXF0Q",
+    "language": "English",
+    "bpm": 392.08,
+    "gap": 22991.3050397878,
+    "year": "2019",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-03-12T20:42:57.266Z",
+    "genre": "Pop",
+    "videoGap": 9,
+    "realBpm": 98,
+    "previewStart": 65,
+    "previewEnd": 101,
+    "volume": 0.82,
+    "author": "Mustangfred / lolomazz / chusall",
+    "authorUrl": "https://usdb.eu/user/lolomazz",
+    "sourceUrl": "https://usdb.eu/TonesAndI/DanceMonkey/773",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tonesandidancemonkey",
     "local": false
   },
   {
