@@ -27,6 +27,7 @@ test('Jukebox', async ({ page }) => {
   await test.step('After click to sing a song, that song should appear as a preview in the song list', async () => {
     const expectedSong = await pages.jukeboxPage.currentSongName;
     await pages.jukeboxPage.navigateToSingSongByKeyboard();
+    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.expectSelectedSongToBe(expectedSong!);
   });
