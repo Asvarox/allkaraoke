@@ -1,0 +1,187 @@
+#ARTIST:Lyn
+#TITLE:Dark Sun (TV)
+#CREATOR:Currymalker
+#BPM:260,1
+#YEAR:2018
+#VIDEO:v=yH23LPDKxtM
+#GENRE:Anime
+#LANGUAGE:English
+#GAP:15220,607843137255
+#ALLKARAOKE_ID:lyn-dark-sun-tv
+#ALLKARAOKE_LASTUPDATE:2024-03-12T20:42:56.698Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:0,99
+#MP3:Lyn - Dark Sun (TV).mp3
+#COVER:Lyn - Dark Sun (TV) [CO].jpg
+#MEDLEYSTARTBEAT:628
+#MEDLEYENDBEAT:1003
+: 17 2 -6 They 
+: 21 4 4 say 
+: 27 4 2 a 
+: 33 14 1 choice
+- 47
+: 58 1 1 In 
+: 61 3 2 the 
+: 66 1 -1 dark
+: 69 16 1 ~
+: 91 4 -3 est 
+: 100 10 -3 hour
+- 110
+: 121 3 -3 Is 
+: 126 1 -1 the 
+: 129 2 -1 way
+: 133 7 1 ~
+: 142 2 -1 ~ 
+: 146 11 -1 we
+- 157
+: 166 2 -3 Find
+: 170 6 -1 ~ 
+* 178 9 -3 out
+- 187
+: 198 2 -5 What
+: 202 6 -3 ~ 
+: 210 10 -5 we 
+: 222 6 -1 are 
+: 230 2 1 made
+: 234 2 2 ~
+: 238 2 1 ~ 
+: 242 14 1 of
+- 256
+* 273 3 -6 But 
+: 278 1 4 if 
+: 282 5 2 I 
+: 289 2 -1 chose
+: 293 13 1 ~
+- 306
+* 314 2 1 As 
+* 318 2 6 a 
+: 322 2 -1 blind
+: 326 15 1 ~ 
+: 347 5 -3 man 
+: 354 11 -3 would
+- 365
+: 377 3 2 On
+: 382 2 4 ly 
+: 386 9 6 hear
+: 402 11 -1 ing
+- 413
+: 422 1 -3 Voic
+: 425 4 -1 ~
+: 431 2 -3 ~
+: 435 9 -3 es
+- 444
+: 453 2 -5 In
+: 457 6 -3 ~
+* 465 11 -5 side 
+: 478 5 -1 my 
+: 485 2 1 head
+: 489 6 2 ~
+: 497 2 1 ~
+- 499
+: 505 2 2 Can 
+: 509 3 4 I 
+: 514 2 4 say
+: 518 43 6 ~
+- 561
+: 570 2 2 Eve
+: 574 2 4 ry 
+: 578 2 4 foe
+: 582 42 6 ~
+- 624
+* 630 8 2 Me
+- 638
+: 645 7 2 Dark 
+: 654 8 4 Sun
+- 662
+: 670 2 -1 You 
+: 674 2 7 shone
+: 678 2 9 ~ 
+: 682 2 4 like 
+: 686 5 4 a 
+: 694 11 2 threat
+- 705
+: 710 6 2 Wait
+: 718 1 2 ing
+: 721 3 4 ~
+- 724
+: 730 4 -1 To 
+: 737 1 4 strike
+: 740 2 6 ~
+: 744 1 4 ~
+: 747 17 6 ~
+- 764
+: 774 5 2 Dark 
+: 782 8 4 Sun
+- 790
+: 797 2 2 But 
+* 802 5 11 some
+: 809 3 4 how 
+: 814 1 4 you 
+: 818 9 2 fed
+- 827
+: 834 2 2 My 
+: 838 2 1 hun
+: 842 2 2 ger 
+: 846 2 4 for 
+: 850 2 -1 a 
+: 854 4 2 life
+- 858
+* 861 2 1 Not 
+* 865 2 2 ruled 
+* 869 3 4 by 
+: 874 6 -1 your 
+: 882 11 2 night
+- 893
+: 902 6 2 Dark 
+: 910 8 4 Sun
+- 918
+: 926 3 2 Wher
+* 931 1 7 ev
+* 934 3 9 ~
+: 939 1 4 er 
+: 942 2 4 you
+: 946 2 2 ~ 
+: 951 7 2 shine
+- 958
+: 966 4 2 Eyes 
+: 974 8 4 turn
+- 982
+: 987 5 -1 A
+: 994 1 4 way
+: 997 2 6 ~
+: 1001 1 4 ~
+: 1003 17 6 ~
+- 1020
+: 1030 5 2 Dark 
+: 1038 9 4 Sun
+- 1047
+: 1053 2 2 What 
+: 1058 6 11 choic
+* 1066 2 2 es 
+* 1070 3 4 have 
+: 1075 10 2 I
+- 1085
+: 1090 2 2 But 
+: 1094 2 1 live 
+: 1098 2 2 an
+: 1102 2 4 oth
+: 1106 2 -1 er 
+: 1110 2 2 day
+: 1114 1 1 ~
+- 1115
+: 1118 2 1 Live 
+: 1122 2 2 an
+: 1126 2 4 oth
+: 1130 4 -1 er 
+: 1138 12 2 day
+- 1150
+: 1158 5 2 Live 
+: 1166 1 2 one
+: 1169 5 4 ~ 
+* 1179 4 -1 more 
+: 1186 1 4 day
+: 1189 2 6 ~
+: 1193 1 4 ~
+: 1196 57 6 ~
+E
