@@ -6,7 +6,7 @@
     <link rel="manifest" href="/manifest.json" />
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' });
+        navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(console.warn);
       }
     </script>
     <meta name="theme-color" content="#ffa500"/>
