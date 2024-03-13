@@ -1,0 +1,307 @@
+#ARTIST:Fabio Rovazzi
+#TITLE:Andiamo a comandare
+#MP3:Fabio Rovazzi - Andiamo a comandare.mp3
+#CREATOR:PowerOric
+#YEAR:2016
+#LANGUAGE:Italian
+#BPM:256
+#GAP:20000
+#VIDEO:v=Kifn_WVGReM,co=andiamo-a-comandare-5946b6b1bbc6f.jpg
+#START:19.0
+F 0 8 12 Ma guardi signor Rovazzi 
+- 10
+F 16 8 12 Ho im mano qua la sua cartella 
+- 26
+F 38 8 12 E devo dirle che tra tutti i valori 
+- 48
+F 66 8 12 Le è salito l’andare a comandare 
+- 76
+F 95 8 12 Mi spiace 
+- 105
+F 134 14 12 Ho un problema nella testa, 
+F 154 12 12 funziona a metà 
+- 168
+F 171 10 12 Ogni tanto parte 
+F 185 10 12 un suono che fa 
+- 197
+F 261 16 12 E ogni volta che mi parte, 
+F 282 12 12 sito imbarazzante 
+- 296
+F 298 12 12 Come quella volta 
+F 312 12 12 che stavo al ristorante 
+- 326
+F 391 16 12 Posso offrirti da bere, 
+F 411 12 12 lei dice "va bene" 
+- 425
+F 428 10 12 Solo che quando 
+F 442 12 12 le passo il bicchiere 
+- 456
+F 523 14 12 E’ una malattia, 
+F 539 12 12 è pericolosa 
+- 553
+F 555 12 12 Statemi lontano, 
+F 571 12 12 è contagiosa 
+- 585
+: 652 4 24 Non 
+: 659 4 24 so 
+: 667 4 22 se 
+: 674 4 15 son 
+: 681 2 20 paz
+: 686 4 20 zo 
+- 692
+: 695 2 19 O 
+: 699 2 19 so
+: 703 2 19 no un 
+: 707 2 19 ge
+: 710 2 15 nio 
+- 714
+: 716 4 24 Fac
+: 723 4 24 cio i 
+: 731 4 22 sel
+: 740 4 27 fie 
+: 745 2 20 mos
+: 750 4 20 si 
+- 756
+* 759 2 20 Al
+* 762 2 20 la 
+* 765 1 19 Gue 
+* 767 2 19 Pe
+* 771 2 19 que
+* 775 2 23 no 
+- 779
+: 781 4 24 Non 
+: 788 4 24 mi 
+: 796 4 22 fu
+: 803 4 15 mo 
+: 810 2 20 can
+: 815 4 20 ne 
+- 821
+: 824 1 19 So
+: 826 1 19 no 
+: 828 2 19 an
+: 832 2 19 che a
+: 836 2 19 ste
+: 839 2 15 mio 
+- 843
+* 845 4 24 Io 
+* 852 4 24 non 
+* 860 4 22 fac
+* 867 4 27 cio 
+* 874 2 20 brut
+* 879 4 20 to 
+- 885
+: 887 10 27 Ma... 
+- 898
+: 899 2 12 Col 
+: 903 2 14 trat
+: 907 2 15 to
+: 911 2 14 re in 
+: 915 2 15 tan
+: 919 2 14 gen
+: 923 2 15 zia
+: 927 2 15 le 
+- 931
+* 936 2 12 An
+* 940 2 12 dia
+* 944 2 12 mo a 
+* 948 2 12 co
+* 952 2 12 man
+* 956 2 12 da
+* 960 2 11 re 
+- 963
+: 964 2 12 Scat
+: 968 2 14 to 
+: 972 2 15 fo
+: 976 2 14 to 
+: 980 2 15 col 
+: 984 2 14 mio 
+: 988 2 15 ca
+: 992 2 15 ne 
+- 996
+: 1000 2 12 An
+: 1004 2 12 dia
+: 1008 2 12 mo a 
+: 1012 2 12 co
+: 1016 2 12 man
+: 1020 2 12 da
+: 1024 2 11 re 
+- 1027
+: 1028 2 16 In 
+: 1032 2 16 cia
+: 1036 2 16 bat
+: 1040 2 15 te 
+: 1044 2 16 nel 
+: 1048 2 15 lo
+: 1052 2 16 ca
+: 1056 2 16 le 
+- 1060
+* 1064 2 12 An
+* 1068 2 12 dia
+* 1072 2 12 mo a 
+* 1076 2 12 co
+* 1080 2 12 man
+* 1084 2 12 da
+* 1088 2 12 re 
+- 1091
+: 1092 2 12 Spac
+: 1096 2 14 cio 
+: 1100 2 15 ac
+: 1104 2 14 qua 
+: 1108 2 15 mi
+: 1112 2 14 ne
+: 1116 2 15 ra
+: 1120 2 15 le 
+- 1124
+: 1144 2 12 An
+: 1148 2 12 dia
+: 1152 2 12 mo a 
+: 1156 2 12 co
+: 1160 2 12 man
+: 1164 2 12 da... 
+- 1168
+: 1272 2 12 An
+: 1276 2 12 dia
+: 1280 2 12 mo a 
+: 1284 2 12 co
+: 1288 2 12 man
+: 1292 2 12 da... 
+- 1296
+F 1415 14 12 Ho un problema nella testa, 
+F 1435 12 12 funziona a metà 
+- 1449
+F 1452 10 12 Ogni tanto parte 
+F 1466 10 12 un suono che fa 
+- 1478
+F 1542 16 12 Ho la testa che gira, 
+F 1563 12 12 come il kebab 
+- 1577
+F 1579 12 12 Spengo la musica 
+F 1595 12 12 dentro il tuo club 
+- 1609
+F 1640 12 12 Rovazzi 
+F 1656 22 12 ma che cazzo fai 
+- 1680
+: 1763 4 24 Non 
+: 1770 4 24 so 
+: 1778 4 22 se 
+: 1785 4 15 son 
+: 1792 2 20 paz
+: 1797 4 20 zo 
+- 1803
+* 1806 2 19 O 
+* 1810 2 19 so
+* 1814 2 19 no un 
+* 1818 2 19 ge
+* 1821 2 15 nio 
+- 1825
+: 1827 4 24 Fac
+: 1834 4 24 cio i 
+: 1842 4 22 sel
+: 1851 4 27 fie 
+: 1856 2 20 mos
+: 1861 4 20 si 
+- 1867
+: 1870 2 20 Al
+: 1873 2 20 la 
+: 1876 1 19 Gue 
+: 1878 2 19 Pe
+: 1882 2 19 que
+: 1886 2 23 no 
+- 1890
+* 1892 4 24 Non 
+* 1899 4 24 mi 
+* 1907 4 22 fu
+* 1914 4 15 mo 
+* 1921 2 20 can
+* 1926 4 20 ne 
+- 1932
+: 1935 1 19 So
+: 1937 1 19 no 
+: 1939 2 19 an
+: 1943 2 19 che a
+: 1947 2 19 ste
+: 1950 2 15 mio 
+- 1954
+: 1956 4 24 Io 
+: 1963 4 24 non 
+: 1971 4 22 fac
+: 1978 4 27 cio 
+: 1985 2 20 brut
+: 1990 4 20 to 
+- 1996
+* 1998 10 27 Ma... 
+- 2009
+: 2010 2 12 Col 
+: 2014 2 14 trat
+: 2018 2 15 to
+: 2022 2 14 re in 
+: 2026 2 15 tan
+: 2030 2 14 gen
+: 2034 2 15 zia
+: 2038 2 15 le 
+- 2042
+: 2047 2 12 An
+: 2051 2 12 dia
+: 2055 2 12 mo a 
+: 2059 2 12 co
+: 2063 2 12 man
+: 2067 2 12 da
+: 2071 2 11 re 
+- 2074
+: 2075 2 12 Scat
+: 2079 2 14 to 
+: 2083 2 15 fo
+: 2087 2 14 to 
+: 2091 2 15 col 
+: 2095 2 14 mio 
+: 2099 2 15 ca
+: 2103 2 15 ne 
+- 2107
+* 2111 2 12 An
+* 2115 2 12 dia
+* 2119 2 12 mo a 
+* 2123 2 12 co
+* 2127 2 12 man
+* 2131 2 12 da
+* 2135 2 11 re 
+- 2138
+: 2139 2 16 In 
+: 2143 2 16 cia
+: 2147 2 16 bat
+: 2151 2 15 te 
+: 2155 2 16 nel 
+: 2159 2 15 lo
+: 2163 2 16 ca
+: 2167 2 16 le 
+- 2171
+: 2175 2 12 An
+: 2179 2 12 dia
+: 2183 2 12 mo a 
+: 2187 2 12 co
+: 2191 2 12 man
+: 2195 2 12 da
+: 2199 2 12 re 
+- 2202
+: 2203 2 12 Spac
+: 2207 2 14 cio 
+: 2211 2 15 ac
+: 2215 2 14 qua 
+: 2219 2 15 mi
+: 2223 2 14 ne
+: 2227 2 15 ra
+: 2231 2 15 le 
+- 2235
+* 2255 2 12 An
+* 2259 2 12 dia
+* 2263 2 12 mo a 
+* 2267 2 12 co
+* 2271 2 12 man
+* 2275 2 12 da... 
+- 2279
+: 2383 2 12 An
+: 2387 2 12 dia
+: 2391 2 12 mo a 
+: 2395 2 12 co
+: 2399 2 12 man
+: 2403 2 12 da... 
+E

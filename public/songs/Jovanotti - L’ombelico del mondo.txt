@@ -1,0 +1,615 @@
+#ARTIST:Jovanotti
+#TITLE:L’ombelico del mondo
+#MP3:Jovanotti - L’ombelico del mondo.mp3
+#CREATOR:Psychognom
+#EDITION:SingStar Italian Party 2
+#GENRE:None
+#YEAR:1995
+#LANGUAGE:Italian
+#BPM:220
+#GAP:42280
+#VIDEO:v=EpBD4ThRa2U,co=https://7.allegroimg.com/s1024/0c9f0b/707b930b48ecb5d1d6563418fd77,co-crop=243-3-768-768,bg=jovanotti-531fa1eb37b9c.jpg
+F 0 3 2 Questo 
+F 4 3 2 è 
+- 8
+: 8 3 3 L’om
+: 12 1 3 be
+: 14 3 3 li
+: 18 1 3 co 
+: 20 3 3 del 
+: 24 3 3 mon
+: 28 12 2 do 
+- 42
+F 64 7 2 He 
+- 72
+: 72 3 3 L’om
+: 76 1 3 be
+: 78 3 3 li
+: 82 1 3 co 
+: 84 3 3 del 
+: 88 3 3 mon
+: 92 12 2 do 
+- 106
+F 128 3 2 Questo 
+F 132 3 2 è 
+- 136
+: 136 3 3 L’om
+: 140 1 3 be
+: 142 3 3 li
+: 146 1 3 co 
+: 148 3 3 del 
+: 152 3 3 mon
+: 156 12 2 do 
+- 170
+F 192 7 2 Oh 
+- 200
+: 200 3 3 L’om
+: 204 1 3 be
+: 206 3 3 li
+: 210 1 3 co 
+: 212 3 3 del 
+: 216 3 3 mon
+: 220 12 2 do 
+- 234
+F 254 1 2 È 
+F 256 1 2 qui 
+F 258 1 2 che 
+F 260 1 2 si 
+F 262 1 2 in
+F 264 1 2 con
+F 266 1 2 tra
+F 268 1 2 no 
+- 270
+F 270 2 2 Fac
+F 273 2 2 ce 
+F 276 2 2 stra
+F 279 3 2 ne 
+- 284
+F 287 2 0 Di 
+F 290 2 0 una 
+F 293 2 0 bel
+F 296 2 0 lez
+F 299 1 0 za 
+F 301 1 0 un 
+F 303 1 0 po’ 
+- 305
+F 305 1 0 Dis
+F 307 3 0 ar
+F 311 3 0 man
+F 315 2 0 te 
+- 318
+F 318 3 2 Pel
+F 322 2 2 le 
+F 325 1 2 di 
+F 327 1 2 e
+F 329 1 2 ba
+F 331 1 2 no 
+F 333 1 2 di 
+F 335 1 2 un 
+F 337 2 2 pa
+F 340 1 2 dre 
+- 342
+F 342 1 2 In
+F 344 1 2 di
+F 346 1 2 ge
+F 348 1 2 no 
+F 350 1 2 e 
+F 352 1 2 oc
+F 354 1 2 chi 
+- 356
+F 356 2 0 Sme
+F 359 3 0 ral
+F 363 2 0 do 
+F 366 1 0 come 
+F 368 1 0 il 
+F 370 1 0 dia
+F 372 4 0 man
+F 377 3 0 te 
+- 382
+F 384 2 2 Fac
+F 387 2 2 ce 
+F 390 1 2 me
+F 392 2 2 tic
+F 395 2 2 ce 
+F 398 1 2 di 
+F 400 2 2 raz
+F 403 2 2 ze 
+F 406 2 2 nuo
+F 409 4 2 ve 
+- 414
+F 415 2 0 Come 
+F 418 2 0 il 
+F 421 1 0 mil
+F 423 2 0 len
+F 426 2 0 nio 
+F 429 1 0 che 
+- 431
+F 431 2 0 Sta 
+F 434 2 0 ini
+F 438 2 0 zian
+F 441 4 0 do 
+F 446 1 2 e 
+F 448 3 2 questo 
+F 452 3 2 è 
+- 456
+F 456 2 2 L’om
+F 460 1 2 be
+F 462 2 2 li
+F 466 1 2 co 
+F 468 2 2 del 
+F 472 2 2 mon
+F 476 3 2 do 
+- 480
+F 480 2 0 E 
+F 484 2 0 noi 
+F 488 1 0 stia
+F 490 2 0 mo 
+F 494 2 0 già 
+F 498 3 0 bal
+F 502 2 0 lan
+F 506 5 0 do 
+- 512
+F 512 3 2 Questo 
+F 516 3 2 è 
+- 520
+: 520 3 3 L’om
+: 524 1 3 be
+: 526 3 3 li
+: 530 1 3 co 
+: 532 3 3 del 
+: 536 3 3 mon
+: 540 12 2 do 
+- 554
+F 576 7 2 Oh 
+- 584
+: 584 3 3 L’om
+: 588 1 3 be
+: 590 3 3 li
+: 594 1 3 co 
+: 596 3 3 del 
+: 600 3 3 mon
+: 604 12 2 do 
+- 618
+: 640 3 2 Questo 
+: 644 3 2 è 
+: 648 3 3 l’om
+: 652 1 3 be
+: 654 3 3 li
+: 658 1 3 co 
+: 660 3 3 del 
+: 664 3 3 mon
+: 668 3 2 do 
+- 672
+F 672 1 2 Do
+F 674 1 2 ve 
+F 676 1 2 non 
+F 678 1 2 si 
+F 680 1 2 sa 
+F 682 1 2 do
+F 684 1 2 ve 
+F 686 1 2 si 
+- 688
+F 688 1 2 Va 
+F 690 1 2 a 
+F 692 1 2 fi
+F 694 2 2 ni
+F 697 3 2 re 
+- 701
+F 702 2 0 E 
+F 705 4 0 ri
+F 710 1 0 sa
+F 712 2 0 len
+F 716 1 0 do 
+- 718
+F 718 2 0 Den
+F 722 1 0 tro 
+F 724 3 0 se 
+F 728 2 0 stes
+F 732 1 0 si 
+- 734
+F 734 2 0 Al
+F 738 1 0 la 
+F 740 3 0 sor
+F 744 2 0 gen
+F 747 2 0 te 
+- 750
+F 750 1 0 Del 
+F 752 2 0 res
+F 755 2 0 pi
+F 758 1 0 ra
+F 760 4 0 re 
+- 765
+F 766 1 2 È 
+F 768 1 2 qui 
+F 770 1 2 che 
+F 772 1 2 si 
+F 774 1 2 in
+F 776 1 2 con
+F 778 2 2 tra
+F 781 1 2 no 
+- 783
+F 783 2 2 Uo
+F 786 2 2 mi
+F 789 1 2 ni 
+F 791 1 2 nu
+F 793 2 2 di 
+- 797
+F 798 1 0 Con 
+F 800 2 0 un 
+F 804 1 0 ba
+F 806 2 0 gag
+F 809 2 0 lio 
+F 812 1 0 di 
+F 814 2 0 fan
+F 818 1 0 ta
+F 820 2 0 si
+F 823 2 0 a 
+- 827
+F 828 3 2 Ques
+F 832 3 2 to 
+F 836 2 2 è 
+- 839
+F 840 3 2 L’om
+F 844 1 2 be
+F 846 3 2 li
+F 850 1 2 co 
+F 852 3 2 del 
+F 856 3 2 mon
+F 860 3 2 do 
+- 864
+F 864 1 0 Sen
+F 866 1 0 ti 
+F 868 3 0 che 
+F 872 1 0 sa
+F 874 2 0 le 
+- 877
+F 878 2 0 Ques
+F 882 1 0 ta 
+F 884 2 0 ener
+F 888 3 0 gi
+F 892 3 0 a 
+- 896
+F 896 3 2 Questo 
+F 900 3 2 è 
+- 904
+: 904 3 3 L’om
+: 908 1 3 be
+: 910 3 3 li
+: 914 1 3 co 
+: 916 3 3 del 
+: 920 3 3 mon
+: 924 12 2 do 
+- 938
+F 960 7 2 Oh 
+- 968
+F 968 3 3 L’om
+F 972 1 3 be
+F 974 3 3 li
+F 978 1 3 co 
+F 980 3 3 del 
+F 984 3 3 mon
+F 988 12 2 do 
+- 1002
+F 1024 3 2 Questo 
+F 1028 3 2 è 
+- 1032
+* 1032 3 3 L’om
+: 1036 1 3 be
+: 1038 3 3 li
+: 1042 1 3 co 
+: 1044 3 3 del 
+- 1049
+F 1050 3 3 Mon
+F 1054 16 2 do 
+- 1072
+F 1088 7 2 He 
+- 1096
+: 1096 3 3 L’om
+: 1100 1 3 be
+: 1102 3 3 li
+: 1106 1 3 co 
+: 1108 3 3 del 
+: 1112 3 3 mon
+: 1116 12 2 do 
+- 1130
+F 1281 3 2 Questo 
+F 1285 3 2 è 
+F 1289 3 2 l’om
+F 1293 1 2 be
+F 1295 3 2 li
+F 1299 1 2 co 
+F 1301 1 2 del 
+F 1303 2 2 mon
+F 1306 2 2 do 
+- 1310
+F 1311 1 2 È 
+F 1313 1 2 qui 
+F 1315 1 2 che 
+F 1317 1 2 c’è 
+F 1319 1 2 il 
+- 1321
+F 1321 1 0 Poz
+F 1323 1 0 zo 
+F 1325 1 0 dell’ 
+F 1327 1 0 im
+F 1329 1 0 ma
+F 1331 1 0 gi
+F 1333 2 0 na
+F 1337 2 0 zio
+F 1340 3 0 ne 
+- 1344
+F 1345 1 2 Do
+F 1347 1 2 ve 
+F 1349 2 2 con
+F 1353 1 2 ver
+F 1355 1 2 go
+F 1357 1 2 no 
+F 1359 1 2 le 
+- 1361
+F 1361 1 2 Es
+F 1363 1 2 pe
+F 1365 1 2 ri
+F 1367 2 2 en
+F 1371 2 2 ze 
+- 1374
+F 1375 1 0 E 
+F 1377 2 0 si 
+F 1381 2 0 tras
+F 1385 1 0 for
+F 1387 1 0 ma
+F 1389 1 0 no 
+F 1391 1 0 in 
+- 1393
+F 1393 1 0 Es
+F 1395 1 0 pres
+F 1397 1 0 si
+F 1399 2 0 o
+F 1403 2 0 ne 
+- 1407
+F 1409 2 2 Do
+F 1412 2 2 ve 
+F 1415 1 2 la 
+F 1417 2 2 vi
+F 1420 2 2 ta 
+F 1423 1 2 si 
+F 1425 1 2 fa 
+F 1427 2 2 pre
+F 1430 2 2 zi
+F 1433 2 2 o
+F 1436 1 2 sa 
+- 1438
+F 1438 1 0 E 
+F 1440 1 0 il 
+F 1442 1 0 nos
+F 1444 2 0 tro 
+F 1447 1 0 a
+F 1449 1 0 mo
+F 1451 1 0 re 
+- 1453
+F 1453 1 0 Di
+F 1455 2 0 ven
+F 1459 1 0 ta 
+F 1461 2 0 azi
+F 1464 2 0 o
+F 1467 1 0 ni 
+- 1470
+F 1473 1 2 Do
+F 1475 1 2 ve 
+F 1477 2 2 le 
+F 1481 1 2 re
+F 1483 1 2 go
+F 1485 2 2 le 
+- 1488
+F 1489 1 2 Non 
+F 1491 1 2 e
+F 1493 2 2 sis
+F 1498 1 2 to
+F 1500 1 2 no 
+F 1502 1 0 e
+F 1504 2 0 sis
+F 1508 1 0 to
+F 1510 1 0 no 
+- 1512
+F 1513 2 0 So
+F 1516 2 0 lo 
+F 1519 2 0 le 
+F 1522 2 0 ecce
+F 1526 3 0 zio
+F 1531 5 0 ni 
+- 1537
+F 1537 3 2 Questo 
+F 1541 3 2 è 
+- 1545
+: 1545 3 3 L’om
+: 1549 1 3 be
+: 1551 3 3 li
+: 1555 1 3 co 
+: 1557 3 3 del 
+: 1561 3 3 mon
+: 1565 12 2 do 
+- 1579
+F 1601 7 2 He 
+- 1609
+: 1609 3 3 L’om
+: 1613 1 3 be
+: 1615 3 3 li
+: 1619 1 3 co 
+: 1621 3 3 del 
+: 1625 3 3 mon
+: 1629 12 2 do 
+- 1643
+F 1921 3 2 Questo 
+F 1925 3 2 è 
+F 1929 3 2 l’om
+F 1933 1 2 be
+F 1935 2 2 li
+F 1938 1 2 co 
+F 1940 2 2 del 
+F 1943 2 2 mon
+F 1946 2 2 do 
+- 1950
+F 1951 1 0 È 
+F 1953 3 0 qui 
+F 1957 3 0 che 
+F 1961 2 0 na
+F 1965 1 0 sce 
+F 1967 1 0 l’e
+F 1969 3 0 ner
+F 1973 3 0 gi
+F 1977 3 0 a 
+- 1982
+F 1985 2 2 Cen
+F 1988 2 2 tro 
+F 1991 1 2 nev
+F 1993 2 2 ral
+F 1996 2 2 gi
+F 1999 1 2 co 
+- 2001
+F 2001 2 2 Del 
+F 2004 2 2 nuo
+F 2007 1 2 vo 
+F 2009 3 2 mon
+F 2013 1 2 do 
+- 2015
+F 2015 1 2 Da 
+F 2017 3 2 qui 
+F 2021 3 2 che 
+F 2025 3 2 parte 
+F 2029 1 2 og
+F 2031 1 2 ni 
+F 2033 3 2 nuo
+F 2037 1 2 va 
+F 2039 2 2 vi
+F 2042 3 2 a 
+- 2047
+F 2049 2 0 Dal
+F 2052 2 0 le 
+F 2055 1 0 pro
+F 2057 2 0 vin
+F 2060 2 0 ce 
+F 2063 1 0 del 
+- 2065
+F 2065 3 0 Gran
+F 2069 1 0 de 
+F 2071 1 0 im
+F 2073 3 0 pe
+F 2077 1 0 ro 
+- 2079
+F 2079 2 2 Sen
+F 2083 1 2 to 
+F 2085 1 2 u
+F 2087 1 2 na 
+F 2089 1 2 vo
+F 2091 1 2 ce 
+F 2093 1 2 che 
+- 2095
+F 2095 2 2 Si 
+F 2099 1 2 sta 
+F 2101 1 2 al
+F 2104 3 2 zan
+F 2109 1 2 do 
+- 2111
+F 2111 2 0 Ques
+F 2115 1 0 to 
+F 2117 2 0 è 
+F 2120 2 0 l’om
+F 2124 1 0 be
+F 2127 1 0 li
+F 2129 1 0 co 
+F 2131 1 0 del 
+F 2134 2 0 mon
+F 2138 2 0 do 
+- 2142
+F 2145 2 2 E 
+F 2148 2 2 noi 
+F 2152 2 2 stia
+F 2155 2 2 mo 
+F 2159 2 2 già 
+F 2163 1 2 bal
+F 2166 2 2 lan
+F 2170 6 2 do 
+- 2177
+F 2177 3 2 Questo 
+F 2181 3 2 è 
+- 2185
+: 2185 3 3 L’om
+: 2189 1 3 be
+: 2191 3 3 li
+: 2195 1 3 co 
+: 2197 3 3 del 
+: 2201 3 3 mon
+: 2205 22 2 do
+: 2228 9 0 ~ 
+- 2239
+F 2241 7 2 He 
+- 2249
+: 2249 3 3 L’om
+: 2253 1 3 be
+: 2255 3 3 li
+: 2259 1 3 co 
+: 2261 3 3 del 
+- 2265
+F 2266 3 3 Mon
+F 2270 12 2 do 
+- 2284
+F 2361 2 0 A 
+F 2364 2 0 bai
+F 2367 6 0 lar 
+- 2375
+F 2501 2 0 Hue
+F 2505 1 0 pa, 
+F 2507 2 0 hue
+F 2511 1 0 pa, 
+F 2513 2 0 hue
+F 2517 1 0 pa, 
+F 2519 2 0 hue
+F 2523 8 0 pa 
+- 2533
+F 2555 4 0 Ay
+F 2561 2 0 la 
+F 2564 4 0 ma 
+- 2570
+: 2670 4 7 Ay
+: 2675 3 7 la 
+: 2679 3 7 ma 
+: 2683 3 5 ma 
+: 2687 3 5 ma 
+: 2691 3 3 ma 
+: 2695 6 3 ma 
+- 2703
+: 2796 4 7 Ma 
+: 2801 2 7 ma 
+: 2805 3 7 ma 
+- 2809
+: 2809 2 8 Ma 
+: 2812 2 7 ma 
+: 2815 2 5 ma 
+: 2818 1 3 ma 
+: 2820 2 5 ma 
+: 2823 2 3 ma 
+: 2826 2 2 ma 
+* 2829 11 0 ma 
+- 2842
+: 2851 3 0 Ma 
+: 2855 2 2 ma 
+: 2858 2 3 ma 
+: 2861 1 5 ma 
+: 2863 2 3 ma 
+: 2866 2 2 ma 
+: 2869 2 0 ma 
+: 2872 2 2 ma 
+- 2875
+: 2875 2 3 Ma 
+: 2878 2 2 ma 
+: 2881 2 0 ma 
+: 2884 2 -2 ma 
+: 2887 6 0 ma 
+- 2895
+: 2953 3 7 L’om
+: 2957 1 7 be
+: 2959 3 7 li
+: 2964 1 7 co 
+: 2966 3 7 del 
+: 2970 3 5 mon
+: 2974 9 5 do 
+E

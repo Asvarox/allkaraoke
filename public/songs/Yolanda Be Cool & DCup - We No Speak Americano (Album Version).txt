@@ -1,0 +1,153 @@
+#ARTIST:Yolanda Be Cool & DCup
+#TITLE:We No Speak Americano (Album Version)
+#MP3:Yolanda Be Cool & DCup - We No Speak Americano (Album Version).mp3
+#CREATOR:rafallus
+#EDITION:None
+#GENRE:Dance
+#YEAR:2010
+#LANGUAGE:Italian
+#BPM:300
+#GAP:15510
+#VIDEO:a=lj2gs8DuJXk,co=gfx2.decks.de/decks/gfx/co_large/front/end_q/bvl-gq.jpg,bg=mi4l.s3.amazonaws.com/uploads/2020/12/Sllash-Doppe-press-kit-2020-2.jpg
+: 0 2 -2 Com
+: 4 2 0 me 
+: 7 2 1 te 
+: 10 2 3 po’ 
+- 14
+: 154 2 -2 Com
+: 158 2 0 me 
+: 161 2 1 te 
+: 164 2 3 po’ 
+- 168
+: 308 2 -2 Com
+: 311 2 0 me 
+: 314 2 1 te 
+: 317 2 3 po’ 
+: 323 2 1 ca
+: 327 2 1 pi 
+: 332 2 3 chi 
+: 337 2 1 te 
+: 341 3 1 vo 
+: 347 3 -2 be
+: 352 2 -2 ne 
+- 356
+: 385 2 0 Si 
+: 388 2 0 tu 
+: 391 2 1 le 
+: 394 3 3 pa
+: 399 2 1 rle 
+: 403 2 1 ‘mmiez
+: 406 2 1 zo 
+: 410 2 3 A
+: 415 2 1 me
+: 418 3 1 ri
+: 423 3 -2 ca
+: 427 3 -2 no? 
+- 432
+: 461 5 1 Quan
+: 467 2 1 do 
+: 470 2 1 se 
+: 473 2 1 fa 
+: 477 2 1 l’am
+: 481 2 3 more 
+: 486 2 0 sot
+: 491 2 1 to 
+: 495 4 3 ’a 
+: 501 6 1 lu
+: 508 8 1 na 
+- 518
+: 538 5 -1 Co
+: 544 2 1 me 
+: 547 2 1 te 
+: 550 2 1 ve
+: 553 2 3 ne 
+: 557 2 1 ’ca
+: 560 1 -2 pa 
+: 562 2 -2 e 
+: 565 2 -2 di: 
+* 569 3 -2 “I 
+* 574 2 0 love 
+* 578 2 1 you!?“ 
+- 582
+: 638 2 1 Fa, 
+: 642 2 1 fa 
+: 645 2 1 l’a
+: 648 1 1 me
+: 650 2 1 ri
+: 654 3 -2 ca
+: 659 3 -2 no! 
+- 664
+: 945 2 1 Fa, 
+: 949 2 1 fa 
+: 952 2 1 l’a
+: 955 1 1 me
+: 957 2 1 ri
+: 962 3 -2 ca
+: 967 3 -2 no! 
+- 972
+* 1253 2 1 Fa, 
+* 1257 2 1 fa 
+* 1260 2 1 l’a
+* 1263 1 1 me
+* 1265 2 1 ri
+* 1269 3 -2 ca
+* 1274 3 -2 no! 
+- 1279
+: 1718 2 1 Fa 
+: 1721 2 1 l’a
+: 1724 1 1 me
+: 1726 2 1 ri
+: 1730 3 -2 ca
+: 1735 3 -2 no! 
+- 1740
+: 2022 2 1 Fa, 
+: 2026 2 1 fa 
+: 2029 2 1 l’a
+: 2032 1 1 me
+: 2034 2 1 ri
+: 2038 3 -2 ca
+: 2043 3 -2 no! 
+- 2048
+: 3058 2 1 Fa, 
+: 3062 2 1 fa 
+: 3065 2 1 l’a
+: 3068 1 1 me
+: 3070 2 1 ri
+: 3074 3 -2 ca
+: 3079 3 -2 no! 
+- 3084
+: 3364 2 1 Fa, 
+: 3368 2 1 fa 
+: 3371 2 1 l’a
+: 3374 1 1 me
+: 3376 2 1 ri
+: 3380 3 -2 ca
+: 3385 3 -2 no! 
+- 3390
+: 3678 2 2 Whis
+: 3682 2 0 ky, 
+: 3686 2 0 so
+: 3689 3 0 da 
+: 3694 2 -2 e 
+: 3698 3 -2 rock 
+: 3703 2 0 ’n’ 
+: 3707 4 -2 roll 
+- 3713
+: 3714 2 2 Whis
+: 3718 2 0 ky, 
+: 3722 2 0 so
+: 3725 3 0 da 
+: 3730 2 -2 e 
+: 3734 3 -2 rock 
+: 3739 2 0 ’n’ 
+: 3743 4 -2 roll 
+- 3749
+: 3754 2 2 Whis
+: 3758 2 0 ky, 
+: 3762 2 0 so
+: 3765 3 0 da 
+: 3770 2 -2 e 
+: 3774 3 -2 rock 
+: 3779 2 0 ’n’ 
+: 3783 4 -2 roll 
+E
