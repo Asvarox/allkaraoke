@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class EditSongsPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public async searchSongs(songID: string) {
     await this.page.locator('[placeholder="Search"]').fill(songID);
@@ -50,8 +54,12 @@ export class EditSongsPagePO {
     await this.page.getByTestId('main-menu-link').click();
   }
 
-  public async goToImportUltrastar() {
-    await this.page.getByTestId('convert-song').click();
+  public get importUltrastarButton() {
+    return this.page.getByTestId('convert-song');
+  }
+
+  public async goToConvertSong() {
+    await this.importUltrastarButton.click();
   }
 
   public async disagreeToShareAddSongs() {

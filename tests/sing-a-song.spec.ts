@@ -28,7 +28,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.advancedConnectionPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
   await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
@@ -100,7 +100,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await expect(pages.postGameHighScoresPage.getPlayerNameInput(player2Name)).toBeVisible();
 
   await pages.postGameHighScoresPage.navigateAndUpdateHighestScorePlayerNameByKeyboard(updatedName);
-  await pages.postGameHighScoresPage.goToSelectNewSong();
+  await pages.postGameHighScoresPage.goToSongList();
   await pages.songListPage.expectSongToBeMarkedAsPlayedToday(song2);
   await pages.songListPage.expectPlaylistToBeSelected(playlistName);
   await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
@@ -113,11 +113,10 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   await pages.songPreviewPage.playTheSong();
   await expect(page.locator(p1CL)).toBeVisible();
   await page.waitForTimeout(1000); // otherwise the click might happen before the game actually starts
-  await pages.gamePage.goToPauseMenu();
-  await pages.gamePage.gotoResumeSong();
+  await pages.gamePage.goToPauseMenu(); // another pause-menu opening method
+  await pages.gamePage.resumeSongButton.click();
   await expect(pages.gamePage.resumeSongButton).not.toBeVisible();
-  await page.keyboard.press('Backspace'); // go to pause menu
-  await pages.gamePage.goToExitSong();
+  await pages.gamePage.exitSong();
   await pages.postGameResultsPage.skipScoresAnimation();
   await pages.postGameResultsPage.goToHighScoresStep();
   await expect(pages.postGameHighScoresPage.highScoresContainer).toContainText(updatedName);

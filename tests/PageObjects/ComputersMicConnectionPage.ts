@@ -19,19 +19,19 @@ export class ComputersMicConnectionPagePO {
     return this.page.getByTestId('back-button');
   }
 
-  public async goBackToInputSelectionPage() {
+  public async goBackToInputSelection() {
     await this.changeInputTypeButton.click();
   }
 
-  public get saveButton() {
+  public get singSongButton() {
     return this.page.getByTestId('save-button');
   }
 
-  public async goToMainMenuPage() {
-    await this.saveButton.click();
+  public async goToMainMenu() {
+    await this.singSongButton.click();
   }
 
   public async continueToTheSong() {
-    await this.saveButton.click();
+    await this.singSongButton.click();
   }
 }

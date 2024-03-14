@@ -1,16 +1,25 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class AdvancedConnectionPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
-  public async saveAndGoToSing() {
-    await this.page.getByTestId('save-button').click();
+  public get singSongButton() {
+    return this.page.getByTestId('save-button');
+  }
+
+  public async goToMainMenu() {
+    await this.singSongButton.click();
   }
 
   public get changeInputTypeButton() {
     return this.page.getByTestId('back-button');
   }
-  public async goBackToInputSelectionPage() {
+
+  public async goBackToInputSelection() {
     await this.changeInputTypeButton.click();
   }
 

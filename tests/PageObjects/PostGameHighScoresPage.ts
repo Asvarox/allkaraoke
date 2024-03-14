@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class PostGameHighScoresPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public getPlayerNameInput(playerName: string) {
     return this.page.locator(`[data-test="input-edit-highscore"][data-original-name="${playerName}"]`);
@@ -27,7 +31,7 @@ export class PostGameHighScoresPagePO {
     return this.page.getByTestId('play-next-song-button');
   }
 
-  public async goToSelectNewSong() {
+  public async goToSongList() {
     await this.selectSongButton.click();
   }
 }

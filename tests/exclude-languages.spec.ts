@@ -20,7 +20,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.advancedConnectionPage.goToMainMenu();
 
   await test.step('Exclude Polish', async () => {
     await pages.mainMenuPage.goToSingSong();
