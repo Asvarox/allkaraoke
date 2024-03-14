@@ -23,11 +23,16 @@ export class GamePagePO {
     await this.page.locator('body').click({ force: true, position: { x: 350, y: 350 } });
   }
 
+  public async goToPauseMenuByKeyboard() {
+    await this.page.keyboard.press('Backspace');
+  }
+
   public get restartButton() {
     return this.page.getByTestId('button-restart-song');
   }
 
-  public async goToRestartSong() {
+  public async restartSong() {
+    await this.goToPauseMenuByKeyboard();
     await this.restartButton.click();
   }
 
