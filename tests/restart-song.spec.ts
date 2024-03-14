@@ -10,23 +10,40 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const songID = 'e2e-multitrack-polish-1994';
+const song = {
+  ID: 'e2e-multitrack-polish-1994',
+  language: 'Polish',
+};
 
 test('should restart the song and the scores', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.saveAndGoToSing();
-  await pages.mainMenuPage.goToSingSong();
-  await pages.songLanguagesPage.continueAndGoToSongList();
-  await expect(pages.songListPage.getSongElement(songID)).toBeVisible();
-  await pages.songListPage.navigateToSongWithKeyboard(songID);
-  await page.keyboard.press('Enter');
-  await pages.songPreviewPage.goNext();
-  await pages.songPreviewPage.playTheSong();
-  await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
 
-  await page.keyboard.press('Backspace');
-  await pages.gamePage.goToRestartSong();
-  await pages.gamePage.expectPlayersScoreToBe(0);
+  await test.step('Select Advanced setup', async () => {
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.saveAndGoToSing();
+  });
+
+  await test.step('Ensure song language is selected', async () => {
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('Choose the song', async () => {
+    await expect(pages.songListPage.getSongElement(song.ID)).toBeVisible();
+    await pages.songListPage.navigateToSongWithKeyboard(song.ID);
+    await pages.songListPage.approveSelectedSongByKeyboard();
+  });
+
+  await test.step('Go to play the song', async () => {
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.playTheSong();
+    await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
+  });
+
+  await test.step('After restarting, the song should be played from the beginning - with score 0', async () => {
+    await pages.gamePage.restartSong();
+    await pages.gamePage.expectPlayersScoreToBe(0);
+  });
 });
