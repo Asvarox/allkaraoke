@@ -59,7 +59,7 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
   useKeyboardHelp(help, shouldBeVisible);
 
   return !mobilePhoneMode && canSkip ? (
-    <Container visible={shouldBeVisible}>
+    <Container visible={shouldBeVisible} data-test="skip-outro-info">
       Press <Kbd>Enter</Kbd> to skip the outro
     </Container>
   ) : null;
