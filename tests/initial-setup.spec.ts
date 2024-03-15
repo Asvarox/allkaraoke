@@ -174,7 +174,7 @@ test('Default microphone is selected for built-in', async ({ page, context, brow
   });
 
   await test.step('Go to advanced setup and toggle mic input', async () => {
-    await pages.computersMicConnectionPage.goBackToInputSelectionPage();
+    await pages.computersMicConnectionPage.goBackToInputSelection();
     await pages.inputSelectionPage.selectAdvancedSetup();
     await pages.advancedConnectionPage.expectMicInputNameToBe(blueMicNum, micNameDef);
 
@@ -183,7 +183,7 @@ test('Default microphone is selected for built-in', async ({ page, context, brow
   });
 
   await test.step('Go back to computer mic and toggle mic again', async () => {
-    await pages.advancedConnectionPage.goBackToInputSelectionPage();
+    await pages.advancedConnectionPage.goBackToInputSelection();
     await pages.inputSelectionPage.selectComputersMicrophone();
     await expect(pages.computersMicConnectionPage.micInputNameElement).toContainText(micName);
 
@@ -192,7 +192,7 @@ test('Default microphone is selected for built-in', async ({ page, context, brow
   });
 
   await test.step('Check if the initial setup does not show after reopen page', async () => {
-    await pages.computersMicConnectionPage.goToMainMenuPage();
+    await pages.computersMicConnectionPage.goToMainMenu();
     await expect(pages.mainMenuPage.singSongElement).toBeVisible();
 
     await page.goto('/?e2e-test');

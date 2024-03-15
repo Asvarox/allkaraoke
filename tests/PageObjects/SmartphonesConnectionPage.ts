@@ -2,13 +2,17 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SmartphonesConnectionPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get singSongButton() {
     return this.page.getByTestId('save-button');
   }
 
-  public async goToMainMenuPage() {
+  public async goToMainMenu() {
     await this.singSongButton.click();
   }
 

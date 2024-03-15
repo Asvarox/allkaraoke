@@ -44,11 +44,13 @@ export class GamePagePO {
     return this.page.getByTestId('button-resume-song');
   }
 
-  public async gotoResumeSong() {
+  public async resumeSong() {
+    await this.goToPauseMenuByKeyboard();
     await this.resumeSongButton.click();
   }
 
-  public async goToExitSong() {
+  public async exitSong() {
+    await this.goToPauseMenuByKeyboard();
     await this.page.getByTestId('button-exit-song').click();
   }
 

@@ -17,7 +17,7 @@ test('Hiding and restoring songs works', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectSmartphones();
-  await pages.smartphonesConnectionPage.goToMainMenuPage();
+  await pages.smartphonesConnectionPage.goToMainMenu();
   await pages.mainMenuPage.goToManageSongs();
   await pages.manageSongsPage.goToEditSongs();
   await pages.editSongsPage.hideSong(songID);

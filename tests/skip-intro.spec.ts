@@ -17,7 +17,7 @@ test('skip the intro from the song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.advancedConnectionPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await expect(pages.songLanguagesPage.getLanguageEntry(expectedLanguage)).toBeVisible();
   await pages.songLanguagesPage.continueAndGoToSongList();

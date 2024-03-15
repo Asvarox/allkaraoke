@@ -21,7 +21,7 @@ test('should restart the song and the scores', async ({ page }) => {
 
   await test.step('Select Advanced setup', async () => {
     await pages.inputSelectionPage.selectAdvancedSetup();
-    await pages.advancedConnectionPage.saveAndGoToSing();
+    await pages.advancedConnectionPage.goToMainMenu();
   });
 
   await test.step('Ensure song language is selected', async () => {

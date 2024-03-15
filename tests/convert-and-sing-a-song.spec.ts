@@ -34,7 +34,7 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Go to convert new song', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToEditSongs();
-    await pages.editSongsPage.goToImportUltrastar();
+    await pages.editSongsPage.goToConvertSong();
   });
 
   await test.step('Enter basic song info', async () => {
@@ -73,7 +73,7 @@ test('Convert and sing a song', async ({ page }) => {
   });
 
   await test.step('Select song language', async () => {
-    await pages.advancedConnectionPage.saveAndGoToSing();
+    await pages.advancedConnectionPage.goToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(songLanguage);
   });
@@ -108,7 +108,7 @@ test('Convert and sing a song', async ({ page }) => {
     await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(50);
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
-    await pages.postGameHighScoresPage.goToSelectNewSong();
+    await pages.postGameHighScoresPage.goToSongList();
     await pages.songListPage.expectSongToBeVisibleAsNew(songID);
   });
 

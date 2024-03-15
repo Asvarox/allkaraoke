@@ -22,7 +22,7 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.saveAndGoToSing();
+  await pages.advancedConnectionPage.goToMainMenu();
   await pages.mainMenuPage.goToSingSong();
 
   await test.step('Make sure song language is selected', async () => {

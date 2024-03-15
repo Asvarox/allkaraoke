@@ -59,7 +59,7 @@ test('Convert song', async ({ page }) => {
   await pages.manageSongsPage.goToEditSongs();
 
   await test.step('Enter basic song info', async () => {
-    await pages.editSongsPage.goToImportUltrastar();
+    await pages.editSongsPage.goToConvertSong();
     await expect(pages.songEditBasicInfoPage.pageContainer).toBeVisible();
     await expect(pages.songEditBasicInfoPage.previousButton).toBeDisabled();
     await pages.songEditBasicInfoPage.enterSourceURL(FINAL_SOURCE_URL);
@@ -296,7 +296,7 @@ test('Convert song', async ({ page }) => {
   expect(convertedSong.tracks[1].name).toEqual(TRACK_2_NAME);
 
   await test.step('Duplicate song alert when adding the same song', async () => {
-    await pages.editSongsPage.goToImportUltrastar();
+    await pages.editSongsPage.goToConvertSong();
     await pages.songEditBasicInfoPage.enterSongTXT(downloadedContent);
     await expect(pages.songEditBasicInfoPage.duplicateSongAlert).toBeVisible();
     await page.goBack();
