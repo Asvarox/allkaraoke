@@ -4,10 +4,13 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SongFlag from 'Scenes/SingASong/SongSelection/Components/SongCard/SongFlag';
+import FavoritesService from 'Songs/FavoritesService';
 import { useSongStats } from 'Songs/stats/hooks';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
+import posthog from 'posthog-js';
 import { ComponentProps, ReactNode, useCallback } from 'react';
+import { FeatureFlags } from 'utils/featureFlags';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;
@@ -15,6 +18,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   index?: number;
   expanded?: boolean;
   background?: boolean;
+  favorite?: boolean;
   handleClick?: (index: number) => void;
   video?: ReactNode;
 }
@@ -22,6 +26,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
 export const FinalSongCard = ({
   song,
   focused,
+  favorite,
   video,
   children,
   index,
@@ -44,12 +49,19 @@ export const FinalSongCard = ({
         />
       )}
       <SongInfo expanded={expanded}>
-        {!expanded && <SongCardStatsIndicator song={song} />}
-        {song.tracksCount > 1 && !expanded && (
-          <MultiTrackIndicator data-test="multitrack-indicator">
-            <PeopleAltIcon />
-            &nbsp; Duet
-          </MultiTrackIndicator>
+        {!expanded && (
+          <SongCardTopRightContainer>
+            {song.tracksCount > 1 && !expanded && (
+              <MultiTrackIndicator data-test="multitrack-indicator">
+                <PeopleAltIcon />
+                &nbsp; Duet
+              </MultiTrackIndicator>
+            )}
+            <SongCardStatsIndicator song={song} />
+            {posthog.isFeatureEnabled(FeatureFlags.Favorites) && (
+              <SongCardFavorite favorite={favorite} songId={song.id} />
+            )}
+          </SongCardTopRightContainer>
         )}
         <SongListEntryDetailsArtist expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
         <SongListEntryDetailsTitle expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
@@ -182,6 +194,19 @@ export const SongAuthor = styled(SongListEntryDetailsTitle)`
   margin-top: 3rem;
 `;
 
+const SongCardTopRightContainer = styled.div`
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  width: 100%;
+`;
+
 export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
   const stats = useSongStats(song);
   const lastPlayed = stats?.scores?.at(-1)?.date ?? false;
@@ -194,9 +219,6 @@ export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
 };
 
 const SongStatIndicator = styled.div`
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
   padding: 0 1rem;
   height: 2.75rem;
   min-width: 2.75rem;
@@ -210,9 +232,39 @@ const SongStatIndicator = styled.div`
   justify-content: center;
   text-transform: uppercase;
 `;
+
+export const SongCardFavorite = ({ favorite, songId }: { songId: string; favorite?: boolean }) => {
+  return (
+    <SongCardFavoriteBase
+      favorite={favorite}
+      data-test="song-favorite-indicator"
+      onClick={(e) => {
+        e.stopPropagation();
+        console.log('songId', songId, !favorite);
+
+        FavoritesService.setFavorite(songId, !favorite);
+      }}>
+      {/*{favorite ? '★' : '☆'}*/}★
+    </SongCardFavoriteBase>
+  );
+};
+
+const SongCardFavoriteBase = styled.div<{ favorite?: boolean }>`
+  height: 2.75rem;
+  min-width: 2.75rem;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  ${typography};
+  color: ${(props) => (props.favorite ? styles.colors.text.active : 'white')};
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+`;
 const MultiTrackIndicator = styled(SongStatIndicator)`
-  left: 0.5rem;
-  right: auto;
+  margin-right: auto;
 
   svg {
     width: 1.75rem;

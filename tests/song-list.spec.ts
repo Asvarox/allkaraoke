@@ -73,6 +73,7 @@ test('Filters - PlayLists', async ({ page }) => {
   await test.step('Going to polish-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowLeft');
     await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(polishPlaylist);
     await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
     await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
@@ -94,13 +95,6 @@ test('Filters - PlayLists', async ({ page }) => {
     await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
-  await test.step('Going to modern-playlist and check songs visibility', async () => {
-    await page.keyboard.press('ArrowDown');
-    await pages.songListPage.expectPlaylistToBeSelected(modPlaylist);
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-  });
-
   await test.step('Going to duets-playlist, and check songs and duet icon visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
@@ -117,6 +111,7 @@ test('Filters - PlayLists', async ({ page }) => {
   });
 
   await test.step('Going to all-playlist and check songs visibility', async () => {
+    await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
     await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();

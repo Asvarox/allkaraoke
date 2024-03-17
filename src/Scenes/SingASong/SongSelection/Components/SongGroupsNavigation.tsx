@@ -98,7 +98,7 @@ const SongsGroupButton = styled(Button)<{ active: boolean }>`
   ${typography};
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  font-size: 2.75rem;
+  font-size: 2.3rem;
   z-index: 1;
   color: ${styles.colors.text.default};
   background: ${(props) => (props.active ? styles.colors.lines.star.stroke : 'rgba(0, 0, 0, 0.7)')};

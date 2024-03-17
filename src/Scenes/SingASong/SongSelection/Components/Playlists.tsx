@@ -46,7 +46,7 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
         /// push query param to url containing playlist name
         const url = new URL(window.location.href);
         url.searchParams.set('playlist', playlist.name);
-        window.history.pushState(null, '', url.toString());
+        window.history.replaceState(null, '', url.toString());
         setSelectedPlaylist(playlist.name);
       }
     }
@@ -82,7 +82,6 @@ const Container = styled.div<{ active: boolean }>`
   z-index: 200;
   left: -100vh;
   top: 0;
-  font-size: 3.6rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: row-reverse;
@@ -95,10 +94,10 @@ const Container = styled.div<{ active: boolean }>`
 `;
 
 const Playlist = styled(Button)<{ selected?: boolean; active: boolean }>`
-  font-size: 2.75rem;
+  font-size: 2.3rem;
   justify-self: stretch;
   flex-grow: 1;
   ${(props) => !props.focused && props.active && `background-color: transparent;`};
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   ${(props) => (props.selected ? focusedStatic : !props.active && `opacity: .75;`)}
 `;

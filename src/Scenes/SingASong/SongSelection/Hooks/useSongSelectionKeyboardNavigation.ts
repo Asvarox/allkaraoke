@@ -12,21 +12,9 @@ import tuple from 'utils/tuple';
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
-  // const setCursorPosition = useCallback<Dispatch<SetStateAction<[number, number]>>>(
-  //   (action) => {
-  //     if (action instanceof Function) {
-  //       test((current) => {
-  //         const newPosition = action(current);
-  //         console.log('newPosition fnc', newPosition);
-  //         return newPosition;
-  //       });
-  //     } else {
-  //       console.log('newPosition', action);
-  //       test(action);
-  //     }
-  //   },
-  //   [test],
-  // );
+
+  // creates a "hash" of the groups to detect changes
+  const groupShape = useMemo(() => groups.map(({ songs }) => songs.length).join(','), [groups]);
   const songIndexMatrix = useMemo(
     () =>
       groups
@@ -37,7 +25,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
           ),
         )
         .flat(),
-    [groups],
+    [groupShape],
   );
   const songGroupMatrix = useMemo(
     () =>

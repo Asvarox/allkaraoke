@@ -1,5 +1,3 @@
-import { captureException } from '@sentry/react';
-import convertSongToTxt from 'Songs/utils/convertSongToTxt';
 import convertTxtToSong from 'Songs/utils/convertTxtToSong';
 import { generatePlayerChangesForTrack } from 'Songs/utils/generatePlayerChanges';
 import getSongId from 'Songs/utils/getSongId';
@@ -15,36 +13,6 @@ const storage = localForage.createInstance({
 });
 
 const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
-
-const legacyStorage = localForage.createInstance({
-  name: 'songs',
-});
-const LEGACY_DELETED_SONGS_KEY = 'DELETED_SONGS';
-
-if (localStorage.getItem('MIGRATED_V1_SONGS') !== 'true') {
-  (async () => {
-    const legacyIndex = (await legacyStorage.keys()).filter((key) => key !== LEGACY_DELETED_SONGS_KEY);
-
-    legacyIndex.map(async (key) => {
-      try {
-        const songData = await legacyStorage.getItem<Song>(key);
-        // validate the song (if it is actual song and not some random data)
-        const song = convertTxtToSong(convertSongToTxt(songData!));
-
-        if (song) {
-          await storage.setItem(getSongId(song), {
-            ...song,
-            id: getSongId(song),
-          });
-        }
-      } catch (e) {
-        captureException(e);
-        console.error(e);
-      }
-    });
-    localStorage.setItem('MIGRATED_V1_SONGS', 'true');
-  })();
-}
 
 class SongsService {
   private finalIndex: SongPreview[] | null = null;

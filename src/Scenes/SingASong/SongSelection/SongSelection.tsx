@@ -130,7 +130,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   left={previewLeft}
                   width={previewWidth}
                   height={previewHeight}
-                  focusEffect={!showFilters}
                 />
               )}
               {groupedSongList.map((group) => (
@@ -141,8 +140,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   highlight={group.letter === 'New'}>
                   <SongsGroupHeader>{group.letter}</SongsGroupHeader>
                   <SongsGroup>
-                    {group.songs.map(({ song, index }) => (
+                    {group.songs.map(({ song, index, favorite }) => (
                       <SongListEntry
+                        favorite={favorite}
                         key={song.id}
                         song={song}
                         handleClick={focusedSong === index ? expandSong : moveToSong}

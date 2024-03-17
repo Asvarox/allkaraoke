@@ -14,6 +14,8 @@ export const mockSongs = async ({ page }: { page: Page; context: BrowserContext 
   const index = songs.map(({ song }) => getSongPreview(song));
   await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
 
+  await page.route('/mostPopularSongs.json', (route) => route.fulfill({ status: 200, body: JSON.stringify({}) }));
+
   for (const song of songs) {
     await page.route(`/songs/${song.song.id}.txt`, (route) =>
       route.fulfill({ status: 200, body: convertSongToTxt(song.song) }),

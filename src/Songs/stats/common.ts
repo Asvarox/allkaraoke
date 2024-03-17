@@ -20,3 +20,15 @@ export const fetchSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>
 export const storeSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>, stats: SongStats) => {
   await localForage.setItem<SongStats>(getSongKey(song), stats);
 };
+
+export const getAllStats = async () => {
+  const keys = await localForage.keys();
+  const stats: Record<string, SongStats> = {};
+  await Promise.all(
+    keys.map(async (key) => {
+      stats[key] = (await localForage.getItem<SongStats>(key))!;
+    }),
+  );
+
+  return stats;
+};

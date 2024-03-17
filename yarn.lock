@@ -6385,6 +6385,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@welldone-software/why-did-you-render@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@welldone-software/why-did-you-render@npm:8.0.1"
+  dependencies:
+    lodash: "npm:^4"
+  peerDependencies:
+    react: ^18
+  checksum: bfa9ad79bd61d6d003733f21842eb79eda33f19354aed85a6bec860ace51d7276aff52a0947a982c00e992baef94b8c4dc63545713d5df72a7d014adaa74cc99
+  languageName: node
+  linkType: hard
+
 "@xobotyi/scrollbar-width@npm:^1.9.5":
   version: 1.9.5
   resolution: "@xobotyi/scrollbar-width@npm:1.9.5"
@@ -11761,7 +11772,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.21":
+"lodash@npm:^4, lodash@npm:^4.17.15, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: c08619c038846ea6ac754abd6dd29d2568aa705feb69339e836dfa8d8b09abbb2f859371e86863eda41848221f9af43714491467b5b0299122431e202bb0c532
@@ -12849,6 +12860,7 @@ __metadata:
     "@vitejs/plugin-basic-ssl": "npm:^1.1.0"
     "@vitejs/plugin-react": "npm:^4.2.1"
     "@vitest/ui": "npm:1.3.1"
+    "@welldone-software/why-did-you-render": "npm:^8.0.1"
     aubiojs: "npm:0.1.0"
     curtainsjs: "npm:^8.1.5"
     dayjs: "npm:^1.11.10"

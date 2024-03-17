@@ -76,6 +76,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-basic-ssl", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.1.0"],\
           ["@vitejs/plugin-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.2.1"],\
           ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.3.1"],\
+          ["@welldone-software/why-did-you-render", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.0.1"],\
           ["aubiojs", "npm:0.1.0"],\
           ["curtainsjs", "npm:8.1.5"],\
           ["dayjs", "npm:1.11.10"],\
@@ -10280,6 +10281,29 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@welldone-software/why-did-you-render", [\
+      ["npm:8.0.1", {\
+        "packageLocation": "./.yarn/cache/@welldone-software-why-did-you-render-npm-8.0.1-39e5a3b1b2-bfa9ad79bd.zip/node_modules/@welldone-software/why-did-you-render/",\
+        "packageDependencies": [\
+          ["@welldone-software/why-did-you-render", "npm:8.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/@welldone-software-why-did-you-render-virtual-81a9d06415/0/cache/@welldone-software-why-did-you-render-npm-8.0.1-39e5a3b1b2-bfa9ad79bd.zip/node_modules/@welldone-software/why-did-you-render/",\
+        "packageDependencies": [\
+          ["@welldone-software/why-did-you-render", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.0.1"],\
+          ["@types/react", "npm:18.2.47"],\
+          ["lodash", "npm:4.17.21"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@xobotyi/scrollbar-width", [\
       ["npm:1.9.5", {\
         "packageLocation": "./.yarn/cache/@xobotyi-scrollbar-width-npm-1.9.5-00ae5c32d1-026ccd174e.zip/node_modules/@xobotyi/scrollbar-width/",\
@@ -17664,6 +17688,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-basic-ssl", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.1.0"],\
           ["@vitejs/plugin-react", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:4.2.1"],\
           ["@vitest/ui", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:1.3.1"],\
+          ["@welldone-software/why-did-you-render", "virtual:f65adab4d12639aadd150041edf5007fd44e542935060e69e7ed5838a159165b018e799c43c554bd887bc8690b054797762410d8b722c81c8193924be027b204#npm:8.0.1"],\
           ["aubiojs", "npm:0.1.0"],\
           ["curtainsjs", "npm:8.1.5"],\
           ["dayjs", "npm:1.11.10"],\

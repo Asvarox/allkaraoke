@@ -11,16 +11,19 @@ import LayoutGame from 'Scenes/LayoutGame';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import { useFeatureFlagEnabled } from 'posthog-js/react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
 import Typewriter from 'typewriter-effect';
+import { FeatureFlags } from 'utils/featureFlags';
 import LogoIcon from './LogoIcon';
 import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
 import songStats from './songStats.json';
 
 function LandingPage() {
+  const isBackgroundEnabled = useFeatureFlagEnabled(FeatureFlags.LandingPageBackground);
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
   const navigate = useSmoothNavigate();
 
@@ -50,7 +53,7 @@ function LandingPage() {
         <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <GithubRibbon />
-      <Background />
+      {isBackgroundEnabled && <Background />}
       <Container>
         <DesktopOnly>
           <LogoContainer>
@@ -161,7 +164,10 @@ const Stats = styled.div`
   ${mobileMQ} {
     width: 90%;
     flex-direction: column;
-    font-size: 5rem;
+    font-size: 8.5rem;
+  }
+  ${landscapeMQ} {
+    font-size: 4.9rem;
   }
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
@@ -174,12 +180,19 @@ const Stats = styled.div`
 const StatsDescription = styled.span`
   line-height: 1.5;
   text-align: justify;
+
+  ${mobileMQ} {
+    font-size: 8.5rem;
+  }
+  ${landscapeMQ} {
+    font-size: 4.9rem;
+  }
 `;
 
 const StatText = styled.div``;
 const StatSubText = styled.div`
   padding-top: 0.5rem;
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-align: right;
 
   .Typewriter {
