@@ -62,23 +62,31 @@ export class GamePagePO {
     return this.page.getByTestId(`player-${playerNumber}-score`);
   }
 
+  public async getCurrentPlayerScore(playerNumber: number) {
+    return this.getPlayerScoreElement(playerNumber).getAttribute('data-score');
+  }
+
+  public async expectPlayerScoreValueToBe(playerNumber: number, expectedScore: string) {
+    await expect(this.getPlayerScoreElement(playerNumber)).toHaveAttribute('data-score', expectedScore);
+  }
+
   public get playersCoopScoreElement() {
     return this.page.getByTestId('players-score');
   }
 
-  public get currentPlayersScore() {
+  public get currentPlayersCoopScore() {
     return this.playersCoopScoreElement.getAttribute('data-score');
   }
 
   public async waitForPlayersScoreToBeGreaterThan(expected: number) {
     await expect(async () => {
-      const p1score = await this.currentPlayersScore;
+      const p1score = await this.currentPlayersCoopScore;
 
       expect(parseInt(p1score!, 10)).toBeGreaterThan(expected);
     }).toPass({ timeout: 15_000 });
   }
 
-  public async expectPlayersScoreToBe(expected: number) {
+  public async expectPlayersScoreValueToBe(expected: number) {
     await expect(this.playersCoopScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
   }
 
