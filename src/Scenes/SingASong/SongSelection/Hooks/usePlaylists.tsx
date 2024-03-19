@@ -19,7 +19,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             name: 'Selection',
             display: (
               <>
-                Selection&nbsp;<strong> ★</strong>
+                <strong>★</strong>&nbsp;Selection&nbsp;<strong>★</strong>
               </>
             ),
             filters: {

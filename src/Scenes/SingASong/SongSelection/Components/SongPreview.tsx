@@ -26,6 +26,7 @@ interface Props {
   left: number;
   width: number;
   height: number;
+  isPopular: boolean;
 }
 
 const PREVIEW_LENGTH = 30;
@@ -59,6 +60,7 @@ export default function SongPreviewComponent({
   keyboardControl,
   onExitKeyboardControl,
   onPlay,
+  isPopular,
 }: Props) {
   const isFavorite = useMemo(() => FavoritesService.isFavorite(songPreview.id), [songPreview.id]);
   const [showVideo, setShowVideo] = useState(false);
@@ -105,6 +107,7 @@ export default function SongPreviewComponent({
         <SongBPMIndicator width={videoWidth} height={videoHeight} left={left} top={top} song={songPreview} />
       )}
       <SongPreviewContainer
+        isPopular={isPopular}
         favorite={isFavorite}
         background={expanded || showVideo}
         video={

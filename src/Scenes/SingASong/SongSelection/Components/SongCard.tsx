@@ -1,15 +1,17 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { FiberNewOutlined, Star } from '@mui/icons-material';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SongFlag from 'Scenes/SingASong/SongSelection/Components/SongCard/SongFlag';
+import { filteringFunctions } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import FavoritesService from 'Songs/FavoritesService';
 import { useSongStats } from 'Songs/stats/hooks';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
-import { ComponentProps, ReactNode, useCallback } from 'react';
+import { ComponentProps, ReactNode, useCallback, useMemo } from 'react';
 import { FeatureFlags } from 'utils/featureFlags';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
@@ -21,6 +23,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   favorite?: boolean;
   handleClick?: (index: number) => void;
   video?: ReactNode;
+  isPopular: boolean;
 }
 
 export const FinalSongCard = ({
@@ -31,6 +34,7 @@ export const FinalSongCard = ({
   children,
   index,
   handleClick,
+  isPopular,
   background = true,
   expanded = false,
   ...restProps
@@ -57,7 +61,7 @@ export const FinalSongCard = ({
                 &nbsp; Duet
               </MultiTrackIndicator>
             )}
-            <SongCardStatsIndicator song={song} />
+            <SongCardStatsIndicator song={song} isPopular={isPopular} />
             {posthog.isFeatureEnabled(FeatureFlags.Favorites) && (
               <SongCardFavorite favorite={favorite} songId={song.id} />
             )}
@@ -207,30 +211,50 @@ const SongCardTopRightContainer = styled.div`
   width: 100%;
 `;
 
-export const SongCardStatsIndicator = ({ song }: { song: SongPreview }) => {
+export const SongCardStatsIndicator = ({ song, isPopular }: { song: SongPreview; isPopular: boolean }) => {
+  const isRecentlyUpdated = useMemo(() => filteringFunctions.recentlyUpdated([song]).length > 0, [song]);
+
   const stats = useSongStats(song);
   const lastPlayed = stats?.scores?.at(-1)?.date ?? false;
-
   const playedToday = lastPlayed && dayjs(lastPlayed).isAfter(dayjs().subtract(1, 'days'));
 
   return stats?.plays ? (
-    <SongStatIndicator data-test="song-stat-indicator">{playedToday ? 'Played today' : stats.plays}</SongStatIndicator>
+    <SongIndicatorStat data-test="song-stat-indicator">{playedToday ? 'Played today' : stats.plays}</SongIndicatorStat>
+  ) : isRecentlyUpdated ? (
+    <SongIndicatorIcon>
+      <FiberNewOutlined />
+    </SongIndicatorIcon>
+  ) : isPopular && song.language.includes('English') ? (
+    <SongIndicatorIcon>
+      <Star />
+    </SongIndicatorIcon>
   ) : null;
 };
 
-const SongStatIndicator = styled.div`
-  padding: 0 1rem;
+const SongIndicator = styled.div`
   height: 2.75rem;
   min-width: 2.75rem;
   box-sizing: border-box;
-  border-radius: 5rem;
   color: white;
-  background: rgba(0, 0, 0, 0.75);
   font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+`;
+
+const SongIndicatorStat = styled(SongIndicator)`
+  padding: 0 1rem;
+`;
+
+const SongIndicatorIcon = styled(SongIndicator)`
+  svg {
+    fill: ${styles.colors.text.active};
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `;
 
 export const SongCardFavorite = ({ favorite, songId }: { songId: string; favorite?: boolean }) => {
@@ -263,7 +287,7 @@ const SongCardFavoriteBase = styled.div<{ favorite?: boolean }>`
   justify-content: center;
   text-transform: uppercase;
 `;
-const MultiTrackIndicator = styled(SongStatIndicator)`
+const MultiTrackIndicator = styled(SongIndicatorStat)`
   margin-right: auto;
 
   svg {
