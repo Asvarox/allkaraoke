@@ -1,0 +1,213 @@
+#ARTIST:Digimon
+#TITLE:Mariposa
+#CREATOR:chulengo
+#BPM:329,9
+#YEAR:1999
+#VIDEO:v=h5kmqxh_k6E
+#GENRE:Dibujos animados
+#LANGUAGE:Spanish
+#GAP:16795,69687784177
+#ALLKARAOKE_ID:digimon-mariposa
+#ALLKARAOKE_LASTUPDATE:2024-03-20T06:29:32.902Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=chulengo
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Digimon&cancion=Mariposa
+#ALLKARAOKE_VOLUME:0,81
+#MP3:Digimon - Mariposa.mp3
+#COVER:Digimon - Mariposa.jpg
+: 22 2 -4 So
+: 26 2 -1 la
+: 30 2 -1 men
+: 34 2 -4 te 
+: 38 6 -1 quie
+: 46 2 -4 ro a
+: 50 6 1 mar
+: 58 6 -1 te
+- 64
+: 78 2 -6 Y 
+: 82 3 -6 to
+: 86 3 -4 ~
+: 90 2 -1 do 
+: 94 2 -1 mi 
+: 98 2 -4 ca
+: 102 6 -1 lor 
+: 110 3 -4 brin
+: 114 7 1 dar
+* 122 8 3 te
+- 130
+: 138 2 -4 Te ha
+: 142 2 -6 ré ol
+: 146 2 -4 vi
+: 150 2 -6 dar
+: 154 10 -8 ~
+- 164
+: 170 2 -8 E
+: 174 3 -8 sas 
+: 178 7 -5 pe
+: 186 3 -5 nas 
+: 190 2 -5 que 
+: 194 5 -3 te ha
+: 202 3 -5 cen 
+: 206 3 -6 mal
+: 210 6 -8 ~
+- 216 252
+- 252
+: 274 4 -4 Hay 
+: 282 3 -1 que 
+: 286 3 -1 dar 
+: 290 2 -4 el 
+: 294 5 -1 sen
+: 302 2 -4 ti
+: 306 5 1 mien
+: 314 6 -1 to
+- 320
+: 338 5 -4 Ca
+: 346 2 -1 da 
+: 350 3 -1 mo
+: 354 3 -4 men
+: 358 6 -1 to 
+: 366 3 -4 vi
+: 370 6 1 vir
+* 378 3 1 lo
+* 382 5 3 ~
+- 387
+: 394 2 -4 Te ha
+: 398 2 -6 ré ol
+: 402 3 -4 vi
+: 406 4 -6 dar
+: 411 4 -8 ~
+- 415
+: 426 2 -8 E
+: 430 3 -8 sas 
+: 434 5 -5 pe
+: 442 3 -6 nas 
+: 446 3 -8 que 
+: 450 6 -3 te ha
+: 458 3 -5 cen 
+: 462 3 -6 mal
+: 466 8 -8 ~
+- 474 500
+- 500
+: 522 2 -4 Con 
+: 526 2 -4 el 
+: 530 2 -4 a
+: 534 5 4 mor
+: 542 6 3 ~
+: 550 2 1 ~
+: 554 7 -1 ~
+: 563 12 -4 ~
+- 575
+: 586 3 -4 Se 
+: 590 3 -6 pue
+: 594 3 -4 de 
+: 598 4 -6 siem
+: 606 2 -8 pre 
+: 610 3 -8 pen
+: 614 3 -8 sar 
+: 618 3 -6 lo 
+: 622 3 -4 me
+: 626 6 -3 jor
+: 634 10 -4 ~
+- 644
+: 650 2 -4 Con 
+: 654 2 -4 el 
+: 658 2 -4 a
+* 662 6 4 mor
+* 670 6 3 ~
+* 678 2 1 ~
+* 682 6 -1 ~
+* 691 12 -4 ~
+- 703
+: 718 7 -4 Los 
+: 726 3 -3 sue
+: 730 3 -4 ños 
+: 734 2 -3 que 
+: 738 7 -1 ten
+: 746 2 -3 gas 
+: 750 3 -1 se 
+: 754 7 0 van 
+: 762 2 -1 a 
+: 766 3 0 cum
+: 770 18 2 plir
+: 790 32 -1 ~
+- 822 832
+- 832
+: 854 6 4 Si 
+: 862 3 4 tú 
+: 866 10 6 lo 
+: 878 5 8 de
+: 886 7 6 se
+: 894 3 6 as 
+: 898 7 6 pue
+: 906 3 4 des 
+: 910 3 3 vo
+: 914 14 4 lar
+- 928
+: 942 2 1 Só
+: 946 2 4 lo 
+: 950 4 8 tie
+: 955 5 6 nes 
+: 962 7 4 que 
+: 970 6 6 con
+: 978 3 6 fíar
+: 982 7 4 ~
+- 989
+: 994 7 4 Mu
+: 1002 3 3 cho 
+: 1006 3 1 en 
+: 1010 8 -1 ti y 
+: 1022 3 -4 se
+: 1026 11 1 guir
+- 1037
+: 1042 3 1 Pue
+: 1046 3 4 des 
+: 1050 2 1 con
+: 1054 3 4 tar 
+: 1058 2 1 con
+: 1062 2 4 mi
+: 1066 2 1 go 
+: 1070 3 1 te 
+* 1074 4 8 doy
+- 1078
+* 1082 2 8 to
+: 1086 2 6 do 
+: 1090 3 6 mi a
+: 1094 2 4 po
+: 1098 3 4 yo
+: 1102 2 6 ~
+- 1104
+: 1110 6 4 Si 
+: 1118 3 4 tú 
+: 1122 10 6 lo 
+: 1134 5 8 de
+: 1142 7 6 seas
+: 1150 3 6 ~ 
+: 1154 7 6 pue
+: 1162 3 4 des 
+: 1166 3 3 vo
+: 1170 15 4 lar
+- 1185
+: 1198 3 1 Si 
+: 1202 3 4 tú 
+: 1206 4 8 quie
+: 1211 6 6 res 
+: 1218 3 6 el 
+: 1222 3 11 cie
+: 1226 3 3 lo al
+: 1230 3 3 can
+: 1234 12 4 zar
+- 1246
+: 1250 7 4 Y 
+: 1258 3 3 las 
+: 1262 3 1 es
+: 1266 5 -1 tre
+: 1274 3 3 llas 
+: 1278 3 6 to
+* 1282 3 6 car
+* 1286 8 4 ~
+- 1294
+: 1302 28 4 Di
+: 1334 28 2 gi
+: 1365 106 4 mon
+E
