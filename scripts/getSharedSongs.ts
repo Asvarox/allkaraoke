@@ -45,6 +45,7 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
         console.log(`Song ${song.id} already fetched`);
       } else if (!currentSongs.find((currentSong) => currentSong.id === song.id)) {
         newSongIds.push(song.id);
+        song.lastUpdate = new Date().toISOString();
         fs.writeFileSync(`./public/songs/${song.id}.txt`, result.properties.song);
         console.log(`Added song ${song.id}`);
       } else {

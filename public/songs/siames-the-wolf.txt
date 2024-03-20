@@ -1,0 +1,312 @@
+#ARTIST:SIAMÉS
+#TITLE:The Wolf
+#CREATOR:LegecyWolf
+#BPM:96
+#YEAR:2016
+#PREVIEWSTART:48
+#VIDEO:v=lX44CAz-JhU
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:24342,5
+#ALLKARAOKE_ID:siames-the-wolf
+#ALLKARAOKE_LASTUPDATE:2024-03-20T06:29:33.840Z
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=27172
+#ALLKARAOKE_PREVIEWEND:78
+#ALLKARAOKE_VOLUME:0,68
+#MP3:SIAMÉS - The Wolf.mp3
+#COVER:SIAMÉS - The Wolf [CO].jpg
+#BACKGROUND:SIAMÉS - The Wolf [BG].jpg
+: 6 1 -2 Each 
+: 7 1 -4 and 
+: 8 2 -2 ever
+: 10 1 1 y 
+: 12 7 -2 day
+- 19
+: 21 1 -9 hid
+: 22 1 -7 ing 
+: 23 2 -9 from 
+: 25 1 -11 the 
+: 26 5 -9 sun
+: 31 5 -14 shine
+- 36
+: 37 1 -2 Wan
+: 38 1 -3 de
+: 39 1 -4 ring 
+: 40 1 -2 in 
+: 41 1 -2 the 
+: 42 10 -2 shade,
+- 52
+: 54 1 -7 not 
+: 56 2 5 too 
+* 58 3 -10 old, 
+: 62 1 -7 not 
+: 64 1 -7 too 
+* 66 2 -9 young
+- 68
+: 69 1 -2 Ever
+: 70 1 -4 y 
+: 71 2 -2 night 
+: 73 1 1 a
+: 74 10 -2 gain
+- 84
+: 85 1 -9 dan
+: 86 1 -7 cing 
+: 87 2 -7 with 
+: 89 1 -11 the 
+: 90 5 -9 moon
+: 95 5 -14 light
+- 100
+: 101 1 -2 Some
+: 103 1 -4 where 
+: 104 1 -2 far 
+: 106 1 -3 a
+: 107 8 -2 way
+- 115
+: 118 2 -6 I 
+: 120 2 5 can 
+: 122 3 3 hear 
+: 125 3 1 your 
+: 130 2 -2 call
+- 132 140
+- 140
+: 146 1 5 I'm 
+: 147 2 5 out 
+: 149 2 1 of 
+: 151 2 6 my 
+: 153 4 5 head, 
+: 157 2 1 of 
+: 160 1 6 my 
+: 162 3 5 heart 
+: 165 1 1 and 
+: 167 1 6 my 
+: 169 4 6 mind
+- 173
+: 174 1 -2 'Cause 
+: 176 1 -2 you 
+: 177 1 -2 can 
+: 178 2 1 run, 
+: 181 2 1 but 
+: 183 2 1 you 
+: 185 4 0 can't 
+* 189 4 -2 hide,
+- 193
+: 196 1 0 I'm 
+: 197 3 1 gonna 
+: 201 1 0 make 
+: 203 1 5 you 
+* 205 4 -2 mine
+- 209
+: 212 1 5 Out 
+: 214 1 1 of 
+: 216 1 6 my 
+: 218 3 12 head, 
+: 222 1 1 of 
+: 224 1 6 my 
+: 226 2 5 heart 
+: 229 1 1 and 
+: 231 1 5 my 
+: 233 3 6 mind
+- 236
+: 238 1 -2 'Cause 
+: 240 1 -2 I 
+: 242 1 -2 can 
+: 243 2 1 feel 
+: 245 1 1 how 
+: 247 1 1 your 
+: 250 2 0 flesh 
+: 254 1 -2 now 
+: 255 1 -2 is 
+: 258 2 20 cry
+: 261 3 12 ing 
+: 266 2 17 out 
+: 269 4 15 for 
+* 273 9 17 more
+- 282 336
+- 336
+: 342 1 -2 Ain't 
+: 343 1 -4 no 
+: 344 2 -2 fai
+: 346 1 1 ry
+: 347 9 -2 tail
+- 356
+: 357 1 5 what 
+: 358 1 11 I 
+: 359 1 -9 see 
+: 361 1 -11 in 
+: 362 4 3 your 
+: 367 5 -14 eyes
+- 372
+: 373 1 -2 Await
+: 374 1 1 ting 
+: 376 1 -2 your 
+: 377 2 1 mis
+: 380 8 -2 take,
+- 388
+: 390 1 -7 not 
+: 392 1 -7 too 
+* 394 2 3 close, 
+: 397 1 -7 not 
+: 399 1 -7 too 
+* 401 3 -10 far
+- 404
+: 405 1 -2 Snea
+: 406 1 -4 king 
+: 408 1 -2 in 
+: 409 1 1 the 
+: 411 7 -2 pain
+- 418
+: 421 1 -9 e
+: 422 1 -7 very 
+: 424 1 3 truth 
+: 425 1 -11 be
+: 426 4 -9 comes 
+: 431 5 -13 lie
+- 436
+: 437 1 -2 I 
+: 438 1 -2 won't 
+: 439 1 -2 trust 
+* 442 1 1 my
+* 444 2 3 se
+* 447 1 1 l
+* 448 3 -2 f
+- 451
+: 454 1 5 Once 
+: 455 1 5 I 
+: 458 3 3 hear 
+: 463 1 13 your 
+: 466 2 -2 call
+- 468 476
+- 476
+: 482 1 5 I'm 
+: 484 1 5 out 
+: 486 1 1 of 
+: 487 1 6 my 
+: 489 3 5 head, 
+: 493 1 1 of 
+: 495 1 6 my 
+: 497 4 5 heart 
+: 502 1 5 and 
+: 504 1 6 my 
+: 505 4 5 mind
+- 509
+: 510 1 -2 'Cause 
+: 511 1 -2 you 
+: 513 1 -2 can 
+: 514 3 5 run, 
+: 517 1 1 but 
+: 519 2 1 you 
+: 521 3 6 can't 
+: 525 4 -2 hide,
+- 529
+: 532 1 1 I'm 
+: 533 3 1 gonna 
+: 536 2 1 make 
+: 540 1 -2 you 
+: 541 4 -2 mine
+- 545
+: 548 1 5 Out 
+: 550 1 1 of 
+: 551 1 6 my 
+: 553 3 17 head, 
+: 557 1 5 of 
+: 559 1 6 my 
+: 561 4 5 heart 
+: 566 1 8 and 
+: 568 1 6 my 
+: 569 4 5 mind
+- 573
+: 574 1 -2 'Cause 
+: 575 1 -2 I 
+: 576 2 -2 can 
+* 579 2 1 feel 
+* 582 1 1 how 
+* 583 1 1 your 
+: 584 4 0 flesh 
+: 589 1 5 now 
+: 591 1 -2 is 
+: 594 2 1 cry
+: 597 3 0 ing 
+: 601 3 -2 out 
+: 605 3 -4 for 
+: 609 7 2 more
+- 616 731
+- 731
+F 737 2 -2 I'm 
+F 739 2 -2 out 
+F 741 2 -2 of 
+F 743 2 0 my 
+F 745 4 0 head, 
+F 749 2 1 of 
+F 751 2 3 my 
+F 753 4 5 heart 
+F 757 2 5 and 
+F 759 2 6 my 
+F 761 4 6 mind
+- 765 797
+- 797
+F 803 2 -2 Out 
+F 805 2 -2 of 
+F 807 2 0 my 
+F 809 4 0 head, 
+F 813 2 1 of 
+F 815 2 3 my 
+F 817 4 5 heart 
+F 821 2 5 and 
+F 823 2 6 my 
+F 825 4 6 mind
+- 829 859
+- 859
+: 865 1 5 I'm 
+: 867 1 5 out 
+: 869 1 1 of 
+: 871 1 5 my 
+: 873 3 5 head, 
+: 877 1 1 of 
+: 879 1 5 my 
+: 881 3 5 heart 
+: 885 1 1 and 
+: 887 1 6 my 
+: 889 4 5 mind
+- 893
+: 893 1 -2 'Cause 
+: 894 1 -2 you 
+: 896 1 -2 can 
+: 898 1 -2 run, 
+: 900 1 1 but 
+: 902 1 1 you 
+: 904 3 0 can't 
+: 908 4 -1 hide,
+- 912
+: 915 1 0 I'm 
+: 917 2 1 gonna 
+: 920 2 0 make 
+: 923 1 -2 you 
+: 924 5 -2 mine
+- 929
+: 931 1 5 Out 
+: 933 1 1 of 
+: 935 1 5 my 
+: 937 4 5 head, 
+: 941 1 1 of 
+: 943 1 5 my 
+: 945 3 5 heart 
+: 949 1 1 and 
+: 951 1 6 my 
+: 953 3 5 mind
+- 956
+: 957 1 -2 'Cause 
+: 958 1 -2 I 
+: 960 1 -2 can 
+: 962 2 1 feel 
+: 964 1 1 how 
+: 966 2 1 your 
+: 969 2 0 flesh 
+: 972 1 -2 now 
+: 974 1 -2 is 
+: 977 3 1 cry
+: 980 3 0 ing 
+: 984 4 -2 out 
+: 989 3 -4 for 
+* 993 7 -2 more
+E
