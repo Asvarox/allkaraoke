@@ -86,7 +86,7 @@ export class GamePagePO {
     }).toPass({ timeout: 15_000 });
   }
 
-  public async expectPlayersScoreValueToBe(expected: number) {
+  public async expectPlayersCoopScoreValueToBe(expected: number) {
     await expect(this.playersCoopScoreElement).toHaveAttribute('data-score', `${expected}`, { timeout: 15_000 });
   }
 

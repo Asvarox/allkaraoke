@@ -72,12 +72,14 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await pages.songListPage.approveSelectedSongByKeyboard();
   });
 
-  await test.step('Set game mode and difficulty level', async () => {
+  await test.step('Set game mode', async () => {
     await pages.songPreviewPage.navigateToGameModeSettingsWithKeyboard();
     await page.keyboard.press('Enter'); // change to duel
     await page.keyboard.press('Enter'); // change to pass the mic
     await pages.songPreviewPage.expectGameModeToBe(gameMode);
+  });
 
+  await test.step('Set difficulty level', async () => {
     await pages.songPreviewPage.navigateToDifficultySettingsWithKeyboard();
     await page.keyboard.press('Enter'); // change to hard
     await pages.songPreviewPage.expectGameDifficultyLevelToBe(gameLevel);
