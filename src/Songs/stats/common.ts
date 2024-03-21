@@ -8,6 +8,7 @@ export interface SongStats {
     setup: SingSetup;
     scores: Array<{ name: string; score: number }>;
     date: string;
+    progress?: number;
   }>;
 }
 

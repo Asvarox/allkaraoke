@@ -59,15 +59,20 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
         (song) =>
           !languagesToExclude.some((language) =>
             Array.isArray(song.language) ? song.language.includes(language) : song.language === language,
-          ),
+          ) || song.local,
       )
       .map((song) => song.id)
       .filter((song) => favorites.value![song] !== false);
     const favoriteSongs = Object.keys(favorites.value!).filter((song) => favorites.value![song] === true);
+
+    const actuallySungSongs = Object.keys(sungSongs.value!).filter((song) =>
+      sungSongs.value![song].scores.some((score) => (score.progress ?? 0) > 0.8),
+    );
+
     return {
       popular: [
         ...new Set([
-          ...Object.keys(sungSongs.value!),
+          ...actuallySungSongs,
           ...finalPopularSongs,
           ...favoriteSongs,
           ...songsToAdd,
