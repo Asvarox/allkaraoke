@@ -1,5 +1,6 @@
 import { SingSetup, SongPreview } from 'interfaces';
 import localForage from 'localforage';
+import SongsService from 'Songs/SongsService';
 
 export interface SongStats {
   plays: number;
@@ -10,7 +11,9 @@ export interface SongStats {
   }>;
 }
 
-export const getSongKey = (song: Pick<SongPreview, 'artist' | 'title'>) => `${song.artist}-${song.title}`.toLowerCase();
+export const getSongKeyOld = (song: Pick<SongPreview, 'artist' | 'title'>) =>
+  `${song.artist}-${song.title}`.toLowerCase();
+export const getSongKey = (song: Pick<SongPreview, 'artist' | 'title'>) => SongsService.generateSongFile(song);
 
 export const fetchSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>) => {
   const storageKey = getSongKey(song);
@@ -32,3 +35,22 @@ export const getAllStats = async () => {
 
   return stats;
 };
+
+if (localStorage.getItem('stats_v2') === null) {
+  (async () => {
+    const [songs, stats] = await Promise.all([SongsService.getIndex(), getAllStats()]);
+    await Promise.all(
+      songs
+        .filter((song) => stats[getSongKeyOld(song)])
+        .map(async (song) => {
+          const oldKey = getSongKeyOld(song);
+          const newKey = SongsService.generateSongFile(song);
+
+          await localForage.setItem(newKey, stats[oldKey]);
+          // await localForage.removeItem(oldKey);
+        }),
+    );
+
+    localStorage.setItem('stats_v2', 'true');
+  })();
+}
