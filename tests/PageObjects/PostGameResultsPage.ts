@@ -35,6 +35,10 @@ export class PostGameResultsPagePO {
     return this.page.getByTestId(`player-${playerNumber}-score`);
   }
 
+  public async expectPlayerScoreValueToBe(playerNumber: number, expectedValue: string) {
+    await expect(this.getPlayerScoreElement(playerNumber)).toHaveAttribute('data-score', expectedValue);
+  }
+
   public get playersCoopScoreElement() {
     return this.page.getByTestId(`player-0-score`);
   }
