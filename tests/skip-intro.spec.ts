@@ -10,25 +10,43 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-const expectedLanguage = 'Polish';
-const expectedSongID = 'e2e-skip-intro-polish';
+const player1 = 0;
+const player2 = 1;
+
+const song = {
+  ID: 'e2e-skip-intro-polish',
+  language: 'Polish',
+};
 
 test('skip the intro from the song', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectAdvancedSetup();
-  await pages.advancedConnectionPage.goToMainMenu();
-  await pages.mainMenuPage.goToSingSong();
-  await expect(pages.songLanguagesPage.getLanguageEntry(expectedLanguage)).toBeVisible();
-  await pages.songLanguagesPage.continueAndGoToSongList();
 
-  await expect(pages.songListPage.getSongElement(expectedSongID)).toBeVisible();
-  await pages.songListPage.navigateToSongWithKeyboard(expectedSongID);
-  await page.keyboard.press('Enter'); // enter first song
+  await test.step('Select Advanced setup', async () => {
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToMainMenu();
+  });
 
-  await pages.songPreviewPage.goNext();
-  await pages.songPreviewPage.playTheSong();
+  await test.step('Ensure song language is selected', async () => {
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
 
-  await pages.gamePage.skipIntro();
-  await pages.postGameResultsPage.skipScoresAnimation();
+  await test.step('Choose the song and play it', async () => {
+    await expect(pages.songListPage.getSongElement(song.ID)).toBeVisible();
+    await pages.songListPage.navigateToSongWithKeyboard(song.ID);
+    await pages.songListPage.approveSelectedSongByKeyboard();
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.playTheSong();
+  });
+
+  await test.step('When skip intro - player goes to the sung part of the song', async () => {
+    await expect(pages.gamePage.skipIntroElement).toBeVisible();
+    await pages.gamePage.skipIntro();
+    await expect(pages.gamePage.skipIntroElement).not.toBeVisible();
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1)).toBeVisible();
+    await expect(pages.gamePage.getSongLyricsForPlayerElement(player2)).toBeVisible();
+    await pages.postGameResultsPage.skipScoresAnimation();
+  });
 });
