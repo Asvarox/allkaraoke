@@ -55,6 +55,10 @@ export class SongLanguagesPagePO {
     }
   }
 
+  public async goBackToMainMenu() {
+    await this.page.getByTestId('close-exclude-languages').click();
+  }
+
   public async continueAndGoToSongList() {
     await this.page.getByTestId('close-exclude-languages').click();
   }
