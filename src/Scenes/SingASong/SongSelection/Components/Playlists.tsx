@@ -54,21 +54,31 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
 
   return (
     <Container data-test="song-list-playlists" active={active}>
-      {playlists.map((playlist) => (
-        <Playlist
-          key={playlist.name}
-          data-selected={`playlist-${playlist.name}` === focused}
-          active={active}
-          {...register(
-            `playlist-${playlist.name}`,
-            () => focusElement(`playlist-${playlist.name}`),
-            undefined,
-            playlist.name === selectedPlaylist,
-          )}
-          {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>
-          {playlist.display ?? playlist.name}
-        </Playlist>
-      ))}
+      {playlists.map(({ Wrapper, ...playlist }) => {
+        const child = (
+          <Playlist
+            key={playlist.name}
+            data-selected={`playlist-${playlist.name}` === focused}
+            active={active}
+            {...register(
+              `playlist-${playlist.name}`,
+              () => focusElement(`playlist-${playlist.name}`),
+              undefined,
+              playlist.name === selectedPlaylist,
+            )}
+            {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>
+            {playlist.display ?? playlist.name}
+          </Playlist>
+        );
+
+        return Wrapper ? (
+          <Wrapper key={playlist.name} active={active} focused={`playlist-${playlist.name}` === focused}>
+            {child}
+          </Wrapper>
+        ) : (
+          child
+        );
+      })}
     </Container>
   );
 }

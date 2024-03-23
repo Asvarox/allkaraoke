@@ -1,11 +1,13 @@
+import { ClosableTooltip } from 'Elements/Tooltip';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { SongPreview } from 'interfaces';
-import { ReactNode, useMemo } from 'react';
+import { ReactElement, ReactNode, useMemo } from 'react';
 
 export interface PlaylistEntry {
   name: string;
   display?: ReactNode;
+  Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
 }
 
@@ -17,10 +19,21 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
       : [
           {
             name: 'Selection',
+            Wrapper: ({ children, active, focused }) => (
+              <ClosableTooltip
+                open={active && focused ? true : undefined}
+                oneTime={false}
+                timeoutMs={15_000}
+                dismissKey="selection-playlist"
+                placement={'right'}
+                title={<>A combination of songs you might like and popular with other players</>}>
+                {children}
+              </ClosableTooltip>
+            ),
             display: (
-              <>
+              <span>
                 <strong>★</strong>&nbsp;Selection&nbsp;<strong>★</strong>
-              </>
+              </span>
             ),
             filters: {
               specificSongs: recommended,
