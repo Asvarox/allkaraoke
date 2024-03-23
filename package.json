@@ -12,7 +12,7 @@
     "@mui/x-date-pickers": "^6.19.5",
     "@remotion/gif": "^4.0.84",
     "@remotion/google-fonts": "^4.0.84",
-    "@sentry/react": "^7.102.0",
+    "@sentry/react": "^7.108.0",
     "@uriopass/nosleep.js": "^0.12.2",
     "aubiojs": "0.1.0",
     "curtainsjs": "^8.1.5",
