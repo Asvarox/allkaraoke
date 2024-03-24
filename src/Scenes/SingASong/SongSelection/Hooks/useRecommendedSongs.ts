@@ -55,12 +55,7 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
       .flat();
     const languagesToExclude = [...new Set([...finalPopularSongs, ...popularSongLanguages])];
     const songsToAdd = songs
-      .filter(
-        (song) =>
-          !languagesToExclude.some((language) =>
-            Array.isArray(song.language) ? song.language.includes(language) : song.language === language,
-          ) || song.local,
-      )
+      .filter((song) => !languagesToExclude.some((language) => song.language.includes(language)) || song.local)
       .map((song) => song.id)
       .filter((song) => favorites.value![song] !== false);
     const favoriteSongs = Object.keys(favorites.value!).filter((song) => favorites.value![song] === true);
