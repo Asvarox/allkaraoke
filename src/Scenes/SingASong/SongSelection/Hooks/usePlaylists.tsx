@@ -21,12 +21,18 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             name: 'Selection',
             Wrapper: ({ children, active, focused }) => (
               <ClosableTooltip
-                open={active && focused ? true : undefined}
+                {...(active && focused ? { open: true } : {})}
                 oneTime={false}
                 timeoutMs={15_000}
                 dismissKey="selection-playlist"
                 placement={'right'}
-                title={<>A combination of songs you might like and popular with other players</>}>
+                title={
+                  <>
+                    A combination of songs you might like and popular with other players.
+                    <br />
+                    <br /> <strong>Search</strong> is performed across all the songs.
+                  </>
+                }>
                 {children}
               </ClosableTooltip>
             ),

@@ -20,6 +20,10 @@ export const Tooltip = styled(ToBeStyledTooltip)`
       background: rgba(0, 0, 0, 0.85);
     }
   }
+
+  strong {
+    color: ${styles.colors.text.active};
+  }
 `;
 
 const getDismissKey = (key: string) => `tooltip_dismissed_${key}`;

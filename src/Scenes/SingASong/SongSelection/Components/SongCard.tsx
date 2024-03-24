@@ -61,7 +61,7 @@ export const FinalSongCard = ({
                 &nbsp; Duet
               </MultiTrackIndicator>
             )}
-            <SongCardStatsIndicator song={song} isPopular={isPopular} />
+            <SongCardStatsIndicator song={song} isPopular={isPopular} focused={!!video} />
             {posthog.isFeatureEnabled(FeatureFlags.Favorites) && (
               <SongCardFavorite favorite={favorite} songId={song.id} />
             )}
@@ -211,7 +211,15 @@ const SongCardTopRightContainer = styled.div`
   width: 100%;
 `;
 
-export const SongCardStatsIndicator = ({ song, isPopular }: { song: SongPreview; isPopular: boolean }) => {
+export const SongCardStatsIndicator = ({
+  song,
+  isPopular,
+  focused,
+}: {
+  song: SongPreview;
+  isPopular: boolean;
+  focused: boolean;
+}) => {
   const isRecentlyUpdated = useMemo(() => filteringFunctions.recentlyUpdated([song]).length > 0, [song]);
 
   const stats = useSongStats(song);
@@ -219,15 +227,32 @@ export const SongCardStatsIndicator = ({ song, isPopular }: { song: SongPreview;
   const playedToday = lastPlayed && dayjs(lastPlayed).isAfter(dayjs().subtract(1, 'days'));
 
   return stats?.plays ? (
-    <SongIndicatorStat data-test="song-stat-indicator">{playedToday ? 'Played today' : stats.plays}</SongIndicatorStat>
+    <SongIndicatorStat data-test="song-stat-indicator">
+      {playedToday ? (
+        'Played today'
+      ) : (
+        <>
+          {focused ? (
+            <>
+              Played {stats.plays} time{stats.plays > 1 && 's'}
+            </>
+          ) : (
+            stats.plays
+          )}
+        </>
+      )}
+    </SongIndicatorStat>
   ) : isRecentlyUpdated ? (
-    <SongIndicatorIcon>
-      <FiberNewOutlined />
+    <SongIndicatorIcon white>
+      {focused ? <SongIndicatorLabel>Added recently</SongIndicatorLabel> : <FiberNewOutlined />}
     </SongIndicatorIcon>
   ) : isPopular && song.language.includes('English') ? (
-    <SongIndicatorIcon>
-      <Star />
-    </SongIndicatorIcon>
+    <>
+      <SongIndicatorIcon>
+        {focused && <SongIndicatorLabel>Popular</SongIndicatorLabel>}
+        <Star />
+      </SongIndicatorIcon>
+    </>
   ) : null;
 };
 
@@ -243,15 +268,30 @@ const SongIndicator = styled.div`
   text-transform: uppercase;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 0.5rem;
+  //transition: 500ms;
 `;
 
 const SongIndicatorStat = styled(SongIndicator)`
   padding: 0 1rem;
 `;
 
-const SongIndicatorIcon = styled(SongIndicator)`
+const SongIndicatorLabel = styled.div`
+  padding: 0 0.5rem;
+  line-height: 0;
+  margin-top: 0.2rem;
+
+  & + svg {
+    margin-left: -0.25rem;
+  }
+`;
+
+const SongIndicatorIcon = styled(SongIndicator)<{ white?: boolean }>`
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   svg {
-    fill: ${styles.colors.text.active};
+    fill: ${(props) => (props.white ? 'white' : styles.colors.text.active)};
     width: 2.5rem;
     height: 2.5rem;
   }
