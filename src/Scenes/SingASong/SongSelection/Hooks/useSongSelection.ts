@@ -1,7 +1,6 @@
 import useSongList from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useSongSelectionKeyboardNavigation } from 'Scenes/SingASong/SongSelection/Hooks/useSongSelectionKeyboardNavigation';
 import { woosh } from 'SoundManager';
-import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { randomInt } from 'utils/randomValue';
@@ -18,7 +17,6 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     setSelectedPlaylist,
     playlists,
   } = useSongList();
-  const navigate = useSmoothNavigate();
   const [keyboardControl, setKeyboardControl] = useState(true);
 
   const handleKeyboardControl = (value: boolean) => {
@@ -57,13 +55,10 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
   useEffect(() => {
     if (preselected && songList.length && songList[focusedSong]) {
-      navigate(
-        `game`,
-        { song: songList[focusedSong].id },
-        {
-          replace: true,
-        },
-      );
+      /// push query param to url containing playlist name
+      const url = new URL(window.location.href);
+      url.searchParams.set('song', songList[focusedSong].id);
+      window.history.replaceState(null, '', url.toString());
     }
   }, [preselected, focusedSong, songList]);
 
