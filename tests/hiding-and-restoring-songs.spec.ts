@@ -9,30 +9,49 @@ test.beforeEach(async ({ page, context, browser }) => {
   await initTestMode({ page, context });
   await mockSongs({ page, context });
 });
-
-const songID = 'e2e-christmas-english-1995';
-const language = 'English';
+const song = {
+  ID: 'e2e-christmas-english-1995',
+  language: 'English',
+};
 
 test('Hiding and restoring songs works', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectSmartphones();
-  await pages.smartphonesConnectionPage.goToMainMenu();
-  await pages.mainMenuPage.goToManageSongs();
-  await pages.manageSongsPage.goToEditSongs();
-  await pages.editSongsPage.hideSong(songID);
-  await pages.editSongsPage.goToMainMenu();
-  await pages.mainMenuPage.goToSingSong();
-  await pages.songLanguagesPage.ensureSongLanguageIsSelected(language);
-  await pages.songLanguagesPage.continueAndGoToSongList();
-  await expect(pages.songListPage.getSongElement(songID)).not.toBeVisible();
 
-  await page.keyboard.press('Backspace');
-  await page.keyboard.press('Backspace');
-  await pages.mainMenuPage.goToManageSongs();
-  await pages.manageSongsPage.goToEditSongs();
-  await pages.editSongsPage.restoreSong(songID);
-  await pages.editSongsPage.goToMainMenu();
-  await pages.mainMenuPage.goToSingSong();
-  await expect(pages.songListPage.getSongElement(songID)).toBeVisible();
+  await test.step('Select Smartphones setup', async () => {
+    await pages.inputSelectionPage.selectSmartphones();
+    await pages.smartphonesConnectionPage.goToMainMenu();
+  });
+
+  await test.step('Ensure song language is selected', async () => {
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToSelectSongLanguage();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.goBackToMainMenu();
+  });
+
+  await test.step('Go to Edit Songs Page', async () => {
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToEditSongs();
+  });
+
+  await test.step('The song, after hiding, should not be visible in song list', async () => {
+    await pages.editSongsPage.hideSong(song.ID);
+    await pages.editSongsPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+    await expect(pages.songListPage.getSongElement(song.ID)).not.toBeVisible();
+  });
+
+  await test.step('Go back to Edit Songs Page', async () => {
+    await pages.songListPage.goBackToMainMenu();
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToEditSongs();
+  });
+
+  await test.step('After restoring, the song should be visible again in song list', async () => {
+    await pages.editSongsPage.restoreSong(song.ID);
+    await pages.editSongsPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+    await expect(pages.songListPage.getSongElement(song.ID)).toBeVisible();
+  });
 });
