@@ -6,7 +6,7 @@ export const mulitrack: Song = {
   artistOrigin: undefined,
   title: 'Multitrack',
   video: 'W9nZ6u15yis',
-  language: 'Polish',
+  language: ['Polish'],
   year: '1994',
   gap: 1000,
   bpm: 350,

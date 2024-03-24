@@ -22,6 +22,10 @@ interface Props {
   song?: Song;
 }
 
+function isEmptyValue<T>(v: T | T[] | undefined) {
+  return Array.isArray(v) ? v.length === 0 : !v;
+}
+
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 
 export default function ConvertView({ song }: Props) {
@@ -43,13 +47,14 @@ export default function ConvertView({ song }: Props) {
     title: song?.title ?? '',
     realBpm: song?.realBpm ? String(song.realBpm) : '',
     year: song?.year ?? '',
-    language: song?.language ?? '',
+    language: song?.language ?? [],
     volume: song?.volume ?? 0,
     previewStart: song?.previewStart ?? undefined,
     previewEnd: song?.previewEnd ?? undefined,
     genre: song?.genre,
     edition: song?.edition,
   });
+  console.log(song?.language);
 
   const [editedSong, setEditedSong] = useState<Song | undefined>(song);
 
@@ -65,13 +70,16 @@ export default function ConvertView({ song }: Props) {
           sourceUrl: basicData.sourceUrl,
         };
       if (!basicData.txtInput) return undefined;
-      return convertTxtToSong(
+      const result = convertTxtToSong(
         basicData.txtInput,
         authorAndVid.video,
         authorAndVid.author,
         authorAndVid.authorUrl,
         basicData.sourceUrl,
       );
+      console.log(result.language);
+
+      return result;
     } catch (e: any) {
       error.current = e.message;
       console.error(e);
@@ -119,7 +127,7 @@ export default function ConvertView({ song }: Props) {
       (
         ['year', 'language', 'realBpm', 'genre', 'artist', 'title', 'volume', 'previewStart', 'previewEnd'] as const
       ).forEach((property) => {
-        if (!!conversionResult[property] && !metadataEntity[property]) {
+        if (!!conversionResult[property] && isEmptyValue(metadataEntity[property])) {
           setMetadataEntity((current) => ({
             ...current,
             [property]: conversionResult[property],

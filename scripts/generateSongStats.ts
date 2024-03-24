@@ -17,7 +17,7 @@ songStats.videoIds = uniq(
     .slice(0, 200)
     .map((song) => song.video),
 );
-songStats.artists = shuffle(uniq(index.filter((song) => song.language === 'English').map((song) => song.artist)));
+songStats.artists = shuffle(uniq(index.filter((song) => song.language[0] === 'English').map((song) => song.artist)));
 songStats.songs = index.length;
 
 writeFileSync('./src/Scenes/LandingPage/songStats.json', JSON.stringify(songStats, undefined, 2));

@@ -49,7 +49,7 @@ const songStub = {
   artist: 'ArtistTest',
   title: 'TitleTest',
   id: 'IdTest',
-  language: 'language',
+  language: ['language'],
   bpm: 60,
   bar: 4,
   gap: 0,

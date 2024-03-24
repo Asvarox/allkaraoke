@@ -82,7 +82,7 @@ function getPropertyValueFromTxt(
     } else if (type === 'array') {
       const vals = value.split(', ');
 
-      return vals.length > 1 ? vals : value;
+      return vals;
     }
     return value;
   };

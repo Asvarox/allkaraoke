@@ -6,7 +6,7 @@ describe('SongCard', () => {
   it('SongFlag should not render for GB', async () => {
     const song = generateSong([], {
       artistOrigin: 'GB',
-      language: 'English',
+      language: ['English'],
     });
     render(<SongFlag song={song} />);
 
@@ -15,7 +15,7 @@ describe('SongCard', () => {
   it('SongFlag should not render for US', async () => {
     const song = generateSong([], {
       artistOrigin: 'US',
-      language: 'English',
+      language: ['English'],
     });
     render(<SongFlag song={song} />);
 
@@ -25,7 +25,7 @@ describe('SongCard', () => {
   it('SongFlag should render for US origin if the language is not English', async () => {
     const song = generateSong([], {
       artistOrigin: 'US',
-      language: 'Spanish',
+      language: ['Spanish'],
     });
     render(<SongFlag song={song} />);
 
@@ -35,7 +35,7 @@ describe('SongCard', () => {
   it('SongFlag should render for non UK/US origin if the language is English', async () => {
     const song = generateSong([], {
       artistOrigin: 'NZ',
-      language: 'English',
+      language: ['English'],
     });
     render(<SongFlag song={song} />);
 
@@ -45,7 +45,7 @@ describe('SongCard', () => {
   it('SongFlag should render language flag for non Spanish origin if the language is not Spanish', async () => {
     const song = generateSong([], {
       artistOrigin: 'PL',
-      language: 'Spanish',
+      language: ['Spanish'],
     });
     render(<SongFlag song={song} />);
 
@@ -55,7 +55,7 @@ describe('SongCard', () => {
   it('SongFlag should render origin flag for Spanish origin if the language is Spanish', async () => {
     const song = generateSong([], {
       artistOrigin: 'MX',
-      language: 'Spanish',
+      language: ['Spanish'],
     });
     render(<SongFlag song={song} />);
 

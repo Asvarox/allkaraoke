@@ -11,6 +11,7 @@ export const getSongPreview = (
 ): SongPreview => ({
   ...songData,
   id: getSongId(songData),
+  language: !Array.isArray(songData.language) ? [songData.language as string] : songData.language,
   tracksCount: songData.tracks.length,
   tracks: songData.tracks.map(({ name, sections }) => ({
     name,

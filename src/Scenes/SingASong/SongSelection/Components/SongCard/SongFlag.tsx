@@ -10,7 +10,7 @@ interface Props {
   song: Pick<SongPreview, 'language' | 'artistOrigin'>;
 }
 export default function SongFlag({ song, ...props }: Props) {
-  const lang = Array.isArray(song.language) ? song.language[0] : song.language;
+  const lang = song.language[0];
 
   const isLangArtistOrigin = useMemo(() => {
     if (!song.artistOrigin) return false;
@@ -21,7 +21,7 @@ export default function SongFlag({ song, ...props }: Props) {
     <>
       {isLangArtistOrigin && !SKIPPED_ORIGINS.includes(song.artistOrigin!) ? (
         <Flag isocode={song.artistOrigin!} {...props} />
-      ) : song.language !== 'English' ? (
+      ) : song.language[0] !== 'English' ? (
         <Flag language={song.language} {...props} />
       ) : null}
     </>

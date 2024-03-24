@@ -9,7 +9,7 @@ export interface SongMetadataEntity {
   title: string;
   year: string;
   realBpm: string;
-  language: string | string[];
+  language: string[];
   volume: number;
   previewStart: number | undefined;
   previewEnd: number | undefined;

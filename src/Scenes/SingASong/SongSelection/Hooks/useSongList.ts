@@ -31,18 +31,14 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     if (language === '') return songList;
 
     return songList.filter((song) => {
-      const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
-
-      return songLangs.includes(language);
+      return song.language.includes(language);
     });
   },
   excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
     if (languages.length === 0 || clearString(appliedFilters?.search ?? '').length > 2) return songList;
 
     return songList.filter((song) => {
-      const songLangs = Array.isArray(song.language) ? song.language : [song.language!];
-
-      return !songLangs.every((songLang) => languages.includes(songLang!));
+      return !song.language.every((songLang) => languages.includes(songLang!));
     });
   },
   search: (songList, search: string) => {

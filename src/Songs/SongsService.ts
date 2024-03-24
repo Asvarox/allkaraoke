@@ -150,6 +150,7 @@ class SongsService {
     if (song && !!song.tracks) {
       return {
         ...song,
+        language: !Array.isArray(song.language) ? [song.language as string] : song.language,
         mergedTrack: mergeTracks(song.tracks, song),
         tracks: song.tracks.map((track) => ({
           ...track,

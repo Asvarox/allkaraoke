@@ -112,7 +112,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
           new Array(6).fill(0).map((_, i) => (
             <Skeleton variant="rectangular" width="100%" height="10rem" key={i}>
               <LanguageEntry excluded focused={false}>
-                <Flag language="English" />
+                <Flag language={['English']} />
               </LanguageEntry>
             </Skeleton>
           ))}
@@ -125,7 +125,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
                 <LanguageName>{name}</LanguageName> ({count} songs)
               </span>
               <LanguageFlagBackground excluded={excluded}>
-                <Flag language={name} />
+                <Flag language={[name]} />
               </LanguageFlagBackground>
             </LanguageEntry>
           );
