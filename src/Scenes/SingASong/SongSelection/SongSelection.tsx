@@ -17,7 +17,7 @@ import useBlockScroll from 'hooks/useBlockScroll';
 import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
-import { memo, useCallback, useEffect, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
@@ -59,6 +59,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
     setSelectedPlaylist,
     playlists,
   } = useSongSelection(preselectedSong, songsPerRow);
+  const songPreviewInGroup = useMemo(
+    () =>
+      groupedSongList
+        .map((group) => group.songs)
+        .flat()
+        .find((song) => song.song.id === songPreview.id),
+    [songPreview, groupedSongList],
+  );
 
   const list = useRef<HTMLDivElement | null>(null);
   const { width, handleResize } = useViewportSize();
@@ -122,6 +130,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
               {songPreview && (
                 <SongPreview
+                  isPopular={!!songPreviewInGroup?.isPopular}
                   songPreview={songPreview}
                   onPlay={onSongSelected}
                   keyboardControl={!keyboardControl}
@@ -130,7 +139,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   left={previewLeft}
                   width={previewWidth}
                   height={previewHeight}
-                  focusEffect={!showFilters}
                 />
               )}
               {groupedSongList.map((group) => (
@@ -141,8 +149,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   highlight={group.letter === 'New'}>
                   <SongsGroupHeader>{group.letter}</SongsGroupHeader>
                   <SongsGroup>
-                    {group.songs.map(({ song, index }) => (
+                    {group.songs.map(({ song, index, favorite, isPopular }) => (
                       <SongListEntry
+                        isPopular={isPopular}
+                        favorite={favorite}
                         key={song.id}
                         song={song}
                         handleClick={focusedSong === index ? expandSong : moveToSong}

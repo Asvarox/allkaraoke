@@ -7,6 +7,7 @@ import RemoteMicManager from 'RemoteMic/RemoteMicManager';
 import { InputLagSetting } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
 import posthog from 'posthog-js';
+import { FeatureFlags } from 'utils/featureFlags';
 
 const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
@@ -32,7 +33,7 @@ export class NetworkServer {
 
   public start = () => {
     if (!this.transport) {
-      this.transport = posthog.isFeatureEnabled('websockets_remote_mics')
+      this.transport = posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics)
         ? new WebSocketServerTransport()
         : new PeerJSServerTransport();
     }

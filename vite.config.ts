@@ -23,6 +23,7 @@ export default defineConfig({
       babel: {
         plugins: ['@emotion'],
       },
+      jsxImportSource: '@welldone-software/why-did-you-render',
     }),
     tsconfigPaths(),
     visualizer(),

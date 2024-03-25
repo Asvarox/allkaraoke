@@ -1,6 +1,7 @@
 import { captureException } from '@sentry/react';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { usePlaylists } from 'Scenes/SingASong/SongSelection/Hooks/usePlaylists';
+import useRecommendedSongs from 'Scenes/SingASong/SongSelection/Hooks/useRecommendedSongs';
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
@@ -9,7 +10,7 @@ import clearString from 'utils/clearString';
 
 export interface SongGroup {
   letter: string;
-  songs: Array<{ index: number; song: SongPreview }>;
+  songs: Array<{ index: number; song: SongPreview; favorite?: boolean; isPopular: boolean }>;
   isNew?: boolean;
 }
 
@@ -20,13 +21,16 @@ export interface AppliedFilters {
   excludeLanguages?: string[];
   search?: string;
   edition?: string;
-  updatedAfter?: string;
+  recentlyUpdated?: boolean | null;
   duet?: boolean | null;
+  specificSongs?: string[];
 }
 
 type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
 
-const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
+const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedFilters?.search ?? '').length > 2;
+
+export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   language: (songList, language: string) => {
     if (language === '') return songList;
 
@@ -35,7 +39,7 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     });
   },
   excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
-    if (languages.length === 0 || clearString(appliedFilters?.search ?? '').length > 2) return songList;
+    if (languages.length === 0 || isSearchApplied(appliedFilters)) return songList;
 
     return songList.filter((song) => {
       return !song.language.every((songLang) => languages.includes(songLang!));
@@ -66,28 +70,33 @@ const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
     return cleanEdition.length ? songList.filter((song) => clearString(song.edition ?? '') === edition) : songList;
   },
-  updatedAfter: (songList, after: string) => {
-    if (!after) return songList;
-    const dateAfter = dayjs(after);
+  recentlyUpdated: (songList) => {
+    const after = dayjs().subtract(31, 'days');
 
-    return songList.filter((song) => song.lastUpdate && dayjs(song.lastUpdate).isAfter(dateAfter));
+    return songList.filter((song) => song.lastUpdate && dayjs(song.lastUpdate).isAfter(after));
+  },
+  specificSongs: (songList, specificSongs: string[], appliedFilters: AppliedFilters) => {
+    if (isSearchApplied(appliedFilters)) return songList;
+
+    return songList.filter((song) => specificSongs.includes(song.id));
   },
 };
 
 const applyFilters = (list: SongPreview[], appliedFilters: AppliedFilters): SongPreview[] => {
   return Object.entries(appliedFilters)
     .filter((filters): filters is [keyof AppliedFilters, FilterFunc] => filters[0] in filteringFunctions)
-    .reduce((songList, [name, value]) => filteringFunctions[name](songList, value, appliedFilters), list);
+    .reduce((songList, [name, value]) => filteringFunctions[name](songList, value, appliedFilters, list), list);
 };
 
-export const useSongListFilter = (list: SongPreview[]) => {
+export const useSongListFilter = (list: SongPreview[], popular: string[], isLoading: boolean) => {
   const [excludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
   const prefilteredList = useMemo(
     () => applyFilters(list, { excludeLanguages: excludedLanguages ?? [] }),
     [list, excludedLanguages],
   );
 
-  const playlists = usePlaylists(prefilteredList);
+  const playlists = usePlaylists(prefilteredList, popular, isLoading);
+
   const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
     new URLSearchParams(window.location.search).get('playlist') ?? null,
   );
@@ -100,16 +109,16 @@ export const useSongListFilter = (list: SongPreview[]) => {
 
   const deferredFilters = useDeferredValue(filters);
 
-  const playlistFilters = playlists.find((p) => p.name === selectedPlaylist)?.filters ?? null;
+  const playlist = playlists.find((p) => p.name === selectedPlaylist) ?? playlists[0];
 
   const filteredList = useMemo(
     () =>
       applyFilters(list, {
-        ...playlistFilters,
+        ...(playlist?.filters ?? {}),
         ...deferredFilters,
         excludeLanguages: excludedLanguages ?? [],
       }),
-    [list, deferredFilters, excludedLanguages, playlistFilters],
+    [list, deferredFilters, excludedLanguages, playlist],
   );
 
   return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists };
@@ -117,9 +126,17 @@ export const useSongListFilter = (list: SongPreview[]) => {
 
 export default function useSongList() {
   const songList = useSongIndex();
+  const {
+    value: { popular, favorites },
+    loading,
+  } = useRecommendedSongs(songList.data);
+
+  const isLoading = songList.isLoading || loading;
 
   const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists } = useSongListFilter(
     songList.data,
+    popular,
+    isLoading,
   );
 
   const groupedSongList = useMemo(() => {
@@ -140,6 +157,8 @@ export default function useSongList() {
           songs: newSongs.map((song) => ({
             song,
             index: filteredList.indexOf(song),
+            favorite: favorites[song.id],
+            isPopular: popular.includes(song.id),
           })),
         });
       }
@@ -157,7 +176,7 @@ export default function useSongList() {
           groups.push(group);
         }
 
-        group.songs.push({ index: index, song });
+        group.songs.push({ index: index, song, favorite: favorites[song.id], isPopular: popular.includes(song.id) });
       } catch (e) {
         console.error(e);
         captureException(e);
@@ -165,14 +184,14 @@ export default function useSongList() {
     });
 
     return groups;
-  }, [filteredList, filters.search]);
+  }, [filteredList, filters.search, favorites, popular, filters.edition]);
 
   return {
     groupedSongList,
     songList: filteredList,
     filters,
     setFilters,
-    isLoading: songList.isLoading,
+    isLoading,
     selectedPlaylist,
     setSelectedPlaylist,
     playlists,

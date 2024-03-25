@@ -40,7 +40,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
 
   const [preselected, setPreselected] = useState(false);
   useEffect(() => {
-    if (!preselected && songList.length) {
+    if (!preselected && songList.length && !isLoading) {
       const preselectedSongIndex = songList.findIndex((song) => song.id === preselectedSong);
       const firstNewSongIndex = songList.findIndex((song) => song.isNew);
 
@@ -51,16 +51,16 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
       moveToSong(songIndex);
       setPreselected(true);
     }
-  }, [songList, moveToSong, preselectedSong]);
+  }, [songList, moveToSong, preselectedSong, isLoading]);
 
   useEffect(() => {
-    if (preselected && songList.length && songList[focusedSong]) {
+    if (preselected && songList.length && songList[focusedSong] && !isLoading) {
       /// push query param to url containing playlist name
       const url = new URL(window.location.href);
       url.searchParams.set('song', songList[focusedSong].id);
       window.history.replaceState(null, '', url.toString());
     }
-  }, [preselected, focusedSong, songList]);
+  }, [preselected, focusedSong, songList, isLoading]);
 
   const songPreview = songList?.[focusedSong];
   return {

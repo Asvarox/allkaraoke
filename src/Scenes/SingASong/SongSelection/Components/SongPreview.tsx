@@ -10,6 +10,7 @@ import {
   SongListEntryDetailsTitle,
 } from 'Scenes/SingASong/SongSelection/Components/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/Components/SongSettings';
+import FavoritesService from 'Songs/FavoritesService';
 import isChristmasSong from 'Songs/utils/isChristmasSong';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
@@ -25,7 +26,7 @@ interface Props {
   left: number;
   width: number;
   height: number;
-  focusEffect: boolean;
+  isPopular: boolean;
 }
 
 const PREVIEW_LENGTH = 30;
@@ -59,8 +60,9 @@ export default function SongPreviewComponent({
   keyboardControl,
   onExitKeyboardControl,
   onPlay,
-  focusEffect,
+  isPopular,
 }: Props) {
+  const isFavorite = useMemo(() => FavoritesService.isFavorite(songPreview.id), [songPreview.id]);
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
@@ -105,6 +107,8 @@ export default function SongPreviewComponent({
         <SongBPMIndicator width={videoWidth} height={videoHeight} left={left} top={top} song={songPreview} />
       )}
       <SongPreviewContainer
+        isPopular={isPopular}
+        favorite={isFavorite}
         background={expanded || showVideo}
         video={
           <Video show={showVideo} expanded={expanded} height={finalHeight} id="preview-video-container">

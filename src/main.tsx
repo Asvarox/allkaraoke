@@ -4,6 +4,7 @@ import 'GameEvents/eventListeners';
 import 'Stats';
 import 'utils/array-at-polyfill';
 import 'utils/exposeSingletons';
+import 'utils/wdyr';
 
 import { browserTracingIntegration, init, setUser } from '@sentry/react';
 import posthog from 'posthog-js';
