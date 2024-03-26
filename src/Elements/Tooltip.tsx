@@ -14,6 +14,7 @@ export const Tooltip = styled(ToBeStyledTooltip)`
   font-size: 2rem;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
+  max-width: 45rem;
   ${typography};
   .MuiTooltip-arrow {
     &::before {
