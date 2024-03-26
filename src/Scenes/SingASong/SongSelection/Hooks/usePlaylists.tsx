@@ -69,6 +69,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
               }
             : null,
           { name: 'Oldies', filters: { yearBefore: 1995 } },
+          { name: 'Modern', filters: { yearAfter: 1995 } },
           { name: 'Duets', filters: { duet: true } },
           {
             name: 'New',
