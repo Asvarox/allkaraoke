@@ -32,6 +32,12 @@ export class SongLanguagesPagePO {
     }
   }
 
+  public async ensureSongLanguageIsDeselected(language: string) {
+    if (await this.isLanguageSelectedStr(language)) {
+      await this.getCheckbox(language).click();
+    }
+  }
+
   private async isLanguageSelectedStr(language: string) {
     const languageCheckbox = this.getCheckbox(language);
     return this.isLanguageSelected(languageCheckbox);
