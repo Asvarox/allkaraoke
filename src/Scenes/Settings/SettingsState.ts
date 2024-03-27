@@ -1,5 +1,5 @@
 import { milliseconds } from 'interfaces';
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
 import Listener from 'utils/Listener';
 import storage from 'utils/storage';
@@ -85,7 +85,7 @@ export const AutoEnableFullscreenSetting = new Setting<boolean>(
 export function useSettingValue<T>(value: Setting<T>) {
   const [currentValue, setCurrentValue] = useState(value.get());
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     return value.addListener(setCurrentValue);
   }, [value]);
 
