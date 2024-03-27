@@ -68,7 +68,6 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.manageSongsPage.goToSelectSongLanguage();
     await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language2);
     await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language1);
-    test.fail(true, 'To remove after #233 is fixed');
     await expect(pages.songLanguagesPage.allLanguagesExcludedAlert).toBeVisible();
   });
 });
