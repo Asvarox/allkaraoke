@@ -2,6 +2,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import fs from 'node:fs';
 import path from 'node:path';
+import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { htmlPrerender } from 'vite-plugin-html-prerender';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -21,9 +22,29 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: ['@emotion'],
+        plugins: [
+          '@emotion',
+          // https://mui.com/material-ui/guides/minimizing-bundle-size/
+          [
+            'transform-imports',
+            {
+              '@mui/icons-material': {
+                transform: '@mui/icons-material/${member}',
+                preventFullImport: true,
+              },
+              '@mui/material': {
+                transform: '@mui/material/${member}',
+                preventFullImport: true,
+              },
+              'lodash-es': {
+                transform: 'lodash-es/${member}',
+                preventFullImport: true,
+              },
+            },
+          ],
+        ],
       },
-      jsxImportSource: '@welldone-software/why-did-you-render',
+      jsxImportSource: process.env.NODE_ENV === 'development' ? '@welldone-software/why-did-you-render' : undefined,
     }),
     tsconfigPaths(),
     visualizer(),

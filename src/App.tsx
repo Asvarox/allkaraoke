@@ -9,7 +9,7 @@ import Jukebox from './Scenes/Jukebox/Jukebox';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 
 import { Global, css } from '@emotion/react';
-import { Theme, ThemeProvider, createTheme } from '@mui/material';
+import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import PageLoader from 'Elements/PageLoader';
