@@ -3560,153 +3560,158 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remotion/bundler@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/bundler@npm:4.0.84"
+"@remotion/bundler@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/bundler@npm:4.0.134"
   dependencies:
+    "@remotion/studio": "npm:4.0.134"
+    "@remotion/studio-shared": "npm:4.0.134"
     css-loader: "npm:5.2.7"
     esbuild: "npm:0.18.6"
     react-refresh: "npm:0.9.0"
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
+    source-map: "npm:0.7.3"
     style-loader: "npm:2.0.0"
     webpack: "npm:5.83.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 1a8d4ff0b5d1ebbb258c18cb85a56aef9a0c2aca230aaf5c85e78e3a13f836201463f6cfdf12a6ac823406894e76e41f2764494a4c50a730b83abd8dab635edd
+  checksum: eedef4de7ed781cbbb0925aefd5130515a788a131cae9d6c21e00c2405a7dcda881e9a55e16c15158ff10e54a6402e165b1ecc17bd6fd4edbcada0111c0d62ce
   languageName: node
   linkType: hard
 
-"@remotion/cli@npm:^4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/cli@npm:4.0.84"
+"@remotion/cli@npm:^4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/cli@npm:4.0.134"
   dependencies:
-    "@remotion/bundler": "npm:4.0.84"
-    "@remotion/media-utils": "npm:4.0.84"
-    "@remotion/player": "npm:4.0.84"
-    "@remotion/renderer": "npm:4.0.84"
-    "@remotion/studio": "npm:4.0.84"
+    "@remotion/bundler": "npm:4.0.134"
+    "@remotion/media-utils": "npm:4.0.134"
+    "@remotion/player": "npm:4.0.134"
+    "@remotion/renderer": "npm:4.0.134"
+    "@remotion/studio": "npm:4.0.134"
+    "@remotion/studio-server": "npm:4.0.134"
     dotenv: "npm:9.0.2"
     minimist: "npm:1.2.6"
     prompts: "npm:2.4.2"
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   bin:
     remotion: remotion-cli.js
-  checksum: 16383ed8981d9972fb0ac71987c926161c960b55843e73a41e7815d9377e02b80f01614f2563ff4d7f926d1f524c7c10e8d677d6a44ef94e87ff9a399c1793f6
+    remotionb: remotionb-cli.js
+  checksum: 4ce0ada4e55d3b49088a1afb489a31a011a8202cd9ede57ea96024c897e99a4a9980c2adb6dc6e293204abc4807d590f0088d112c12a9dd112c3b4184a3623ec
   languageName: node
   linkType: hard
 
-"@remotion/compositor-darwin-arm64@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-darwin-arm64@npm:4.0.84"
+"@remotion/compositor-darwin-arm64@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-darwin-arm64@npm:4.0.134"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@remotion/compositor-darwin-x64@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-darwin-x64@npm:4.0.84"
+"@remotion/compositor-darwin-x64@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-darwin-x64@npm:4.0.134"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@remotion/compositor-linux-arm64-gnu@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-linux-arm64-gnu@npm:4.0.84"
+"@remotion/compositor-linux-arm64-gnu@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-linux-arm64-gnu@npm:4.0.134"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@remotion/compositor-linux-arm64-musl@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-linux-arm64-musl@npm:4.0.84"
+"@remotion/compositor-linux-arm64-musl@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-linux-arm64-musl@npm:4.0.134"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@remotion/compositor-linux-x64-gnu@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-linux-x64-gnu@npm:4.0.84"
+"@remotion/compositor-linux-x64-gnu@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-linux-x64-gnu@npm:4.0.134"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@remotion/compositor-linux-x64-musl@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-linux-x64-musl@npm:4.0.84"
+"@remotion/compositor-linux-x64-musl@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-linux-x64-musl@npm:4.0.134"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@remotion/compositor-win32-x64-msvc@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/compositor-win32-x64-msvc@npm:4.0.84"
+"@remotion/compositor-win32-x64-msvc@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/compositor-win32-x64-msvc@npm:4.0.134"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@remotion/gif@npm:^4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/gif@npm:4.0.84"
+"@remotion/gif@npm:^4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/gif@npm:4.0.134"
   dependencies:
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 3502665ea31d21fcf9df82724daa2d0e7a85f8ce2e56c92b1f2a9b337b942cd2c628bcd2d431553c6618d954a9a0494ea059ce8517b9ac09231522a4062044e9
+  checksum: 805a91f986dd24816744d90db3edb6d7576e1bb110c18c60ac1fe912d4eb5fc889b2833f0cfd2200f4ba0e45e50c9479668a5260391be0af2c54f11538fe465c
   languageName: node
   linkType: hard
 
-"@remotion/google-fonts@npm:^4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/google-fonts@npm:4.0.84"
+"@remotion/google-fonts@npm:^4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/google-fonts@npm:4.0.134"
   dependencies:
-    remotion: "npm:4.0.84"
-  checksum: 5401810681057f3783d49dd7d1a3463be7327a2e3d2f27ff21b37b528851b77c86d2f8806eed54f5782c80af0b6f0fb56f2cf086b53c4b1d67832d01a8469f2b
+    remotion: "npm:4.0.134"
+  checksum: b107baa25bc85ca0dc05c6694b6763cc0f9907c0071fee6cafdfac62580bfab146fd580a448c35e8c8d2de67bb21cab4018ed1b99fc4189157a0ad5a66197f73
   languageName: node
   linkType: hard
 
-"@remotion/media-utils@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/media-utils@npm:4.0.84"
+"@remotion/media-utils@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/media-utils@npm:4.0.134"
   dependencies:
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: e1aeebec5be4f05a609afe7f41b2141b5efca37a36de984ac0666042d95e403ff4b925f9b75a0153fd85260dbc3db96e45fd436cb1a490791d9139693891d666
+  checksum: d4d8ac1ae3ef26c6e96585d7b3333dbf8688b4127ea8073d5e1fd3f520abc82395275e455b770ce6ff2ab60f1ce7e64dd551fe39eef16f645d3be3777d04e9d6
   languageName: node
   linkType: hard
 
-"@remotion/player@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/player@npm:4.0.84"
+"@remotion/player@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/player@npm:4.0.134"
   dependencies:
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 0ba205eb1d489cf69d788544ac652f2f3f4bb028274bae12262921cd33418d367f0c79568337dac289b44e127e4dec61674da82dbfedad14d195260d127f73cf
+  checksum: ec03380d5fb949265c8bf04725665f9316a07d73dfe02cc97bab4ecde4d1619bd05d8d66196a03804e39020dc30e1abf0d181a6c0f695e43ea19731f0a62b371
   languageName: node
   linkType: hard
 
-"@remotion/renderer@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/renderer@npm:4.0.84"
+"@remotion/renderer@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/renderer@npm:4.0.134"
   dependencies:
-    "@remotion/compositor-darwin-arm64": "npm:4.0.84"
-    "@remotion/compositor-darwin-x64": "npm:4.0.84"
-    "@remotion/compositor-linux-arm64-gnu": "npm:4.0.84"
-    "@remotion/compositor-linux-arm64-musl": "npm:4.0.84"
-    "@remotion/compositor-linux-x64-gnu": "npm:4.0.84"
-    "@remotion/compositor-linux-x64-musl": "npm:4.0.84"
-    "@remotion/compositor-win32-x64-msvc": "npm:4.0.84"
+    "@remotion/compositor-darwin-arm64": "npm:4.0.134"
+    "@remotion/compositor-darwin-x64": "npm:4.0.134"
+    "@remotion/compositor-linux-arm64-gnu": "npm:4.0.134"
+    "@remotion/compositor-linux-arm64-musl": "npm:4.0.134"
+    "@remotion/compositor-linux-x64-gnu": "npm:4.0.134"
+    "@remotion/compositor-linux-x64-musl": "npm:4.0.134"
+    "@remotion/compositor-win32-x64-msvc": "npm:4.0.134"
     execa: "npm:5.1.1"
     extract-zip: "npm:2.0.1"
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
     source-map: "npm:^0.8.0-beta.0"
     ws: "npm:8.7.0"
   peerDependencies:
@@ -3727,24 +3732,49 @@ __metadata:
       optional: true
     "@remotion/compositor-win32-x64-msvc":
       optional: true
-  checksum: 8f31e70aa74de33e2af8361f3b8f8e1fa74adebeeba09321d352eb631c4afc4359cc14382a62e22ee04e25d3b7a320ea0ff1f8033c8b91e0b71d790f6c0e2a02
+  checksum: 94e04880d84882131aacf089f533a35721a4fed63e721993215a7f6be558572fcd6aba8c6c908a855691afbfbab268a3b5f74f28c43504537977bde368a86f7d
   languageName: node
   linkType: hard
 
-"@remotion/studio@npm:4.0.84":
-  version: 4.0.84
-  resolution: "@remotion/studio@npm:4.0.84"
+"@remotion/studio-server@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/studio-server@npm:4.0.134"
   dependencies:
-    "@remotion/bundler": "npm:4.0.84"
-    "@remotion/media-utils": "npm:4.0.84"
-    "@remotion/player": "npm:4.0.84"
-    "@remotion/renderer": "npm:4.0.84"
+    "@remotion/bundler": "npm:4.0.134"
+    "@remotion/renderer": "npm:4.0.134"
+    "@remotion/studio-shared": "npm:4.0.134"
     memfs: "npm:3.4.3"
     open: "npm:^8.4.2"
-    remotion: "npm:4.0.84"
+    remotion: "npm:4.0.134"
     semver: "npm:7.5.3"
     source-map: "npm:0.7.3"
-  checksum: 65978c867b319b0fb4efd844f2d540a90b3e09154d24117be42fd0496731c35db417a12a2fb4ea32bf1a9bf841d4419dae72b986d7cd4690efed66aaed380cb2
+  checksum: 7b3ade1d63e9a116663c9649e4f45001cf57e019618d6298037bb69a48adc04bc84ca61d16feb7becd7fe972c8c02e26a270d7dc80b19992af59b8f85b913f3f
+  languageName: node
+  linkType: hard
+
+"@remotion/studio-shared@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/studio-shared@npm:4.0.134"
+  dependencies:
+    remotion: "npm:4.0.134"
+  checksum: 65405925c96ed6d0738db7265322a2b1419cc616266541c8813b193b222ed68e21f9add7c4c4a74d414a85812f28f29175a6f4935c6d5ac230af331fbee80088
+  languageName: node
+  linkType: hard
+
+"@remotion/studio@npm:4.0.134":
+  version: 4.0.134
+  resolution: "@remotion/studio@npm:4.0.134"
+  dependencies:
+    "@remotion/media-utils": "npm:4.0.134"
+    "@remotion/player": "npm:4.0.134"
+    "@remotion/renderer": "npm:4.0.134"
+    "@remotion/studio-shared": "npm:4.0.134"
+    memfs: "npm:3.4.3"
+    open: "npm:^8.4.2"
+    remotion: "npm:4.0.134"
+    semver: "npm:7.5.3"
+    source-map: "npm:0.7.3"
+  checksum: 84ca18489460450faebe62a69402c6f79cdc7c74d069743815c5915384c781c1aecbe24b9eb1cfb0953073b76da70e646f4973987a4cf6b97a16dbeae6137a0e
   languageName: node
   linkType: hard
 
@@ -12710,9 +12740,9 @@ __metadata:
     "@mui/x-date-pickers": "npm:^6.19.5"
     "@playwright/experimental-ct-react": "npm:1.41.2"
     "@playwright/test": "npm:1.41.2"
-    "@remotion/cli": "npm:^4.0.84"
-    "@remotion/gif": "npm:^4.0.84"
-    "@remotion/google-fonts": "npm:^4.0.84"
+    "@remotion/cli": "npm:^4.0.134"
+    "@remotion/gif": "npm:^4.0.134"
+    "@remotion/google-fonts": "npm:^4.0.134"
     "@sentry/react": "npm:^7.108.0"
     "@storybook/addon-actions": "npm:^8.0.5"
     "@storybook/addon-docs": "npm:^8.0.5"
@@ -12790,7 +12820,7 @@ __metadata:
     react-toastify: "npm:^9.1.3"
     react-use: "npm:^17.5.0"
     react-youtube: "npm:^10.1.0"
-    remotion: "npm:^4.0.84"
+    remotion: "npm:^4.0.134"
     remotion-animated: "npm:^2.0.0"
     rollup-plugin-analyzer: "npm:^4.0.0"
     rollup-plugin-visualizer: "npm:^5.12.0"
@@ -14339,13 +14369,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remotion@npm:4.0.84, remotion@npm:^4.0.84":
-  version: 4.0.84
-  resolution: "remotion@npm:4.0.84"
+"remotion@npm:4.0.134, remotion@npm:^4.0.134":
+  version: 4.0.134
+  resolution: "remotion@npm:4.0.134"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 743ebbfe5744e794490e728903e9dd7b58bb9498ae13d2bfdb1be489d7cf459d5c2782459fa4098b1873e782c456b97f5cb2b654fecfba6603b7f4db21e74b50
+  checksum: 4957b13928429d55576ff1af4b493506085d9882631e961b7227d848aabbafdf46b5f4b620f2376f6b90a214526239185b9239c427326867b8b9553064d1b550
   languageName: node
   linkType: hard
 
