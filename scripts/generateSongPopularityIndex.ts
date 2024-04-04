@@ -7,7 +7,7 @@ dotenv.config({ path: '.env.local' });
 const API_URL = 'https://eu.posthog.com';
 const PROJECT_ID = '281';
 
-const TOP_SONGS_COUNT = 250;
+const TOP_SONGS_COUNT = 500;
 
 const makeRequest = async (url: string, options: RequestInit = {}) => {
   const response = await fetch(`${API_URL}${url}`, {
@@ -46,7 +46,7 @@ interface Response {
               where event = 'songEnded'
                 and created_at >= (now() - INTERVAL 45 DAY)
               group by properties.songId
-              order by sessions desc limit 2000
+              order by sessions desc limit ${currentSongs.length}
           `,
       },
     }),

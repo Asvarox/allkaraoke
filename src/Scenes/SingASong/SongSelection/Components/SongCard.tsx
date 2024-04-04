@@ -10,9 +10,7 @@ import FavoritesService from 'Songs/FavoritesService';
 import { useSongStats } from 'Songs/stats/hooks';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import posthog from 'posthog-js';
 import { ComponentProps, ReactNode, useCallback, useMemo } from 'react';
-import { FeatureFlags } from 'utils/featureFlags';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;
@@ -20,7 +18,6 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   index?: number;
   expanded?: boolean;
   background?: boolean;
-  favorite?: boolean;
   handleClick?: (index: number) => void;
   video?: ReactNode;
   isPopular: boolean;
@@ -29,7 +26,6 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
 export const FinalSongCard = ({
   song,
   focused,
-  favorite,
   video,
   children,
   index,
@@ -62,9 +58,6 @@ export const FinalSongCard = ({
               </MultiTrackIndicator>
             )}
             <SongCardStatsIndicator song={song} isPopular={isPopular} focused={!!video} />
-            {posthog.isFeatureEnabled(FeatureFlags.Favorites) && (
-              <SongCardFavorite favorite={favorite} songId={song.id} />
-            )}
           </SongCardTopRightContainer>
         )}
         <SongListEntryDetailsArtist expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>

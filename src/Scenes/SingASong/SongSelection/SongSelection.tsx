@@ -149,10 +149,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   highlight={group.letter === 'New'}>
                   <SongsGroupHeader>{group.letter}</SongsGroupHeader>
                   <SongsGroup>
-                    {group.songs.map(({ song, index, favorite, isPopular }) => (
+                    {group.songs.map(({ song, index, isPopular }) => (
                       <SongListEntry
                         isPopular={isPopular}
-                        favorite={favorite}
                         key={song.id}
                         song={song}
                         handleClick={focusedSong === index ? expandSong : moveToSong}
