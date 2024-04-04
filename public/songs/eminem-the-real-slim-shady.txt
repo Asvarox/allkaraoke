@@ -1,0 +1,1403 @@
+#ARTIST:Eminem
+#TITLE:The Real Slim Shady
+#CREATOR:DoubleDee
+#BPM:418
+#YEAR:2000
+#VIDEO:v=FA2j9qlFyDU
+#GENRE:Hip-Hop
+#LANGUAGE:English
+#GAP:2825,215311004785
+#ALLKARAOKE_ID:eminem-the-real-slim-shady
+#ALLKARAOKE_LASTUPDATE:2024-04-04T19:51:49.176Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_VOLUME:0,77
+#MP3:Eminem - The Real Slim Shady.mp3
+#COVER:Eminem - The Real Slim Shady [CO].jpg
+#BACKGROUND:Eminem - The Real Slim Shady [BG].jpg
+: 28 2 -2 May 
+: 32 2 -2 I 
+: 36 4 0 have 
+: 44 2 0 your 
+: 48 2 0 at
+: 52 2 0 ten
+: 58 2 0 tion, 
+: 64 4 0 please? 
+- 68 84
+- 84
+: 112 2 -2 May 
+: 116 2 -2 I 
+: 120 4 0 have 
+: 126 2 -1 your 
+: 130 1 0 at
+: 134 2 2 ten
+: 140 3 2 tion, 
+: 146 5 2 please? 
+- 151 161
+- 161
+: 189 3 0 Will 
+: 195 2 0 the 
+: 200 3 3 real 
+: 208 3 3 Slim 
+: 216 4 3 Sha
+: 223 2 -1 dy 
+: 232 3 0 please 
+: 240 4 0 stand 
+: 248 3 0 up? 
+- 251 260
+- 260
+: 288 4 0 I 
+: 296 2 0 re
+: 299 5 2 peat: 
+- 304
+: 327 2 0 Will 
+: 331 2 0 the 
+: 336 3 3 real 
+: 344 2 3 Slim 
+: 352 3 3 Sha
+: 360 2 0 dy 
+: 370 4 2 please 
+: 380 4 1 stand 
+: 389 4 2 up? 
+- 393
+R 416 2 0 We’re 
+R 420 1 0 gon
+R 422 1 0 na 
+R 424 2 7 have 
+R 428 1 0 a 
+R 432 3 7 prob
+R 436 2 7 lem 
+R 440 3 7 here 
+- 443
+R 456 2 3 Y’all 
+R 460 2 -5 act 
+R 464 2 -5 like 
+R 468 2 -5 you’ve 
+R 472 2 0 ne
+R 476 2 0 ver 
+R 480 3 0 seen 
+R 484 2 2 a 
+R 488 2 3 white 
+R 496 2 -4 per
+R 500 2 -5 son 
+R 504 2 -5 be
+R 508 4 -5 fore 
+- 512
+R 520 3 8 Jaws 
+R 524 2 9 all 
+R 528 2 7 on 
+R 532 2 6 the 
+R 536 3 11 floor 
+R 544 2 6 like 
+R 549 3 9 Pam, 
+R 555 2 6 like 
+R 560 2 9 Tom
+R 564 2 8 my 
+R 568 2 6 just 
+R 572 2 9 burst 
+R 580 2 6 in 
+R 584 2 11 the 
+R 588 1 9 door 
+- 589
+R 592 2 6 And 
+R 596 2 11 star
+R 600 2 7 ted 
+R 604 2 9 whoop
+R 608 2 8 in’ 
+R 612 1 7 her 
+R 616 5 9 ass 
+R 624 2 9 worse 
+R 629 2 7 than 
+R 633 2 7 be
+R 637 3 9 fore 
+- 640
+R 644 2 7 They 
+R 648 2 10 first 
+R 654 2 7 were 
+R 657 2 7 di
+R 660 3 10 vorced, 
+R 670 2 11 throw
+R 674 1 10 in’ 
+R 676 1 10 her 
+R 680 2 10 o
+R 683 2 7 ver 
+R 688 2 11 fur
+R 692 2 7 ni
+R 696 2 7 ture 
+- 698
+R 710 2 12 It’s 
+R 714 2 14 the 
+R 718 2 14 re
+R 722 2 17 turn 
+R 726 1 15 of 
+R 728 3 14 the… 
+G 736 2 9 "Ah, 
+G 742 4 8 wait, 
+G 751 3 8 no 
+G 757 5 7 way, 
+G 767 2 9 you’re 
+G 772 2 9 kid
+G 776 2 7 ding 
+- 778
+R 786 2 17 He 
+R 789 2 16 di
+R 793 2 15 dn’t 
+R 796 2 15 just 
+R 802 3 12 say 
+R 810 2 8 what 
+R 814 2 8 I 
+R 817 3 10 think 
+R 822 2 7 he 
+R 826 4 7 did, 
+R 834 2 6 did 
+R 838 2 7 he?" 
+- 840
+R 852 2 7 And 
+R 856 2 12 Doc
+R 860 2 12 tor 
+R 866 3 14 Dre 
+R 874 4 8 said… 
+R 896 2 17 no
+R 900 3 14 thing, 
+R 904 2 10 you 
+R 908 3 10 i
+R 912 2 12 di
+R 916 1 12 ots 
+- 917
+R 920 2 1 Doc
+R 926 1 1 tor 
+R 928 4 1 Dre’s 
+R 937 3 4 dead, 
+R 944 2 1 he’s 
+R 948 2 1 locked 
+R 953 2 1 in 
+R 956 2 0 my 
+R 960 4 3 base
+R 968 2 -5 ment 
+- 970
+R 980 2 6 Fe
+R 984 1 5 mi
+R 988 1 3 nist 
+R 992 2 3 wo
+R 996 2 2 men 
+R 1000 2 3 love 
+R 1008 2 -4 E
+R 1012 2 -5 mi
+R 1016 2 -5 nem 
+- 1018
+G 1024 2 14 "Chic
+G 1028 2 14 ka, 
+G 1032 2 -2 chic
+G 1036 2 -2 ka, 
+R 1040 2 -4 chic
+R 1043 2 -4 ka, 
+R 1048 3 -4 Slim 
+R 1056 2 -4 Sha
+R 1061 2 -5 dy, 
+R 1065 3 2 I’m 
+R 1072 2 -4 sick 
+R 1076 2 -6 of 
+R 1081 4 -5 him 
+- 1085
+R 1089 2 5 Look 
+R 1093 2 0 at 
+R 1097 3 -5 him 
+R 1104 2 -4 wal
+R 1109 2 -2 king 
+R 1113 2 -4 a
+R 1117 3 -2 round 
+R 1125 4 -4 grab
+R 1130 2 -3 bing 
+R 1133 2 -3 his 
+G 1139 2 -2 you-
+G 1143 2 -3 know-
+G 1149 4 -2 what 
+- 1153
+R 1159 3 -2 Flip
+R 1163 2 -2 ping 
+R 1167 2 -3 the 
+G 1171 2 -2 you-
+G 1175 2 -2 know-
+G 1181 3 -3 who." 
+R 1188 4 1 "Yeah, 
+R 1195 1 -5 but 
+R 1197 2 -6 he’s 
+R 1203 2 1 so 
+R 1211 3 0 cute 
+R 1218 2 -6 though" 
+- 1220
+R 1224 2 0 Yeah, 
+R 1227 2 3 I 
+R 1231 3 -2 pro
+R 1235 1 -2 ba
+R 1237 2 -2 bly 
+R 1241 2 -3 got 
+R 1244 2 -2 a 
+R 1248 2 -2 cou
+R 1252 2 -2 ple 
+R 1255 2 -2 of 
+R 1259 4 -2 screws 
+R 1267 2 -2 up 
+R 1271 2 -2 in 
+R 1275 2 -3 my 
+R 1279 2 -2 head 
+R 1285 3 -2 loose 
+- 1288
+R 1292 2 -3 But 
+R 1296 2 -2 no 
+R 1300 4 0 worse 
+R 1308 2 -2 than 
+R 1313 2 -2 what’s 
+R 1317 1 -2 go
+R 1320 2 -3 in’ 
+R 1324 2 -1 on 
+R 1328 2 -2 in 
+R 1331 2 -3 your 
+R 1335 2 -2 pa
+R 1339 2 -3 rents’ 
+R 1343 2 -1 bed
+R 1351 3 -2 rooms 
+- 1354
+R 1363 2 0 Some
+R 1367 5 -5 times, 
+R 1375 1 -5 I 
+R 1378 2 -5 wan
+R 1381 2 -6 na 
+R 1384 2 -4 get 
+R 1387 2 -5 on 
+R 1392 3 -2 T
+R 1397 2 0 V 
+R 1403 1 -4 and 
+R 1405 2 -4 just 
+R 1408 2 -2 let 
+R 1414 3 0 loose 
+R 1421 2 -4 but 
+R 1426 4 0 can’t 
+- 1430
+R 1435 1 -5 But 
+R 1437 1 -5 it’s 
+R 1440 3 1 cool 
+R 1445 2 0 for 
+R 1449 3 -1 Tom 
+R 1457 4 3 Green 
+R 1464 1 -3 to 
+R 1466 2 -2 hump 
+R 1469 2 -2 a 
+R 1472 2 0 dead 
+R 1477 3 2 moose 
+- 1480
+G 1484 2 -3 "My 
+G 1487 2 0 bum 
+G 1491 2 3 is 
+G 1495 2 -5 on 
+G 1499 2 -2 your 
+G 1503 3 3 lips, 
+R 1516 2 -3 my 
+R 1520 2 2 bum 
+R 1524 2 0 is 
+R 1528 2 -5 on 
+R 1532 2 0 your 
+R 1536 3 3 lips" 
+- 1539
+R 1548 2 -3 And 
+R 1552 2 -2 if 
+R 1556 2 -3 I’m 
+R 1560 2 3 lu
+R 1564 2 -2 cky, 
+R 1568 2 -2 you 
+R 1572 3 3 might 
+R 1576 2 -2 just 
+R 1580 3 3 give 
+R 1584 2 -4 it 
+R 1588 2 -5 a 
+G 1592 2 -4 lit
+G 1596 2 -3 tle 
+G 1600 3 3 kiss 
+- 1603
+R 1612 2 -5 And 
+R 1616 2 2 that’s 
+R 1620 2 1 the 
+R 1624 2 2 mes
+R 1628 2 -5 sage 
+R 1632 2 -5 that 
+R 1636 2 -3 we 
+R 1640 2 -4 de
+R 1644 2 3 li
+R 1648 2 -5 ver 
+R 1652 2 -5 to 
+R 1656 2 -3 lit
+R 1659 2 2 tle 
+R 1664 2 4 kids 
+- 1666
+R 1672 2 4 And 
+R 1676 2 8 ex
+R 1680 3 1 pect 
+R 1684 2 4 them 
+R 1688 2 6 not 
+R 1692 2 9 to 
+R 1696 2 1 know 
+R 1700 2 6 what 
+R 1704 2 1 a 
+R 1708 2 4 wo
+R 1711 3 9 man’s 
+R 1716 2 6 cli
+R 1720 2 1 to
+R 1724 2 11 ris 
+R 1728 3 6 is 
+- 1731
+R 1736 2 -1 Of 
+R 1740 3 6 course 
+R 1748 2 0 they’re 
+R 1752 2 -1 gon
+R 1756 2 -1 na 
+R 1760 3 -1 know 
+R 1764 2 -1 what 
+R 1768 2 -2 in
+R 1772 2 -1 ter
+R 1776 4 -1 course 
+R 1784 2 -2 is 
+- 1786
+R 1790 1 -2 By 
+R 1792 2 -2 the 
+R 1796 2 -2 time 
+R 1800 2 -3 they 
+R 1804 3 -2 hit 
+R 1808 3 -2 fourth 
+R 1816 2 -2 grade 
+- 1818
+R 1822 2 -2 They 
+R 1825 2 -2 got 
+R 1829 2 -2 the 
+R 1833 2 -2 Dis
+R 1837 2 2 co
+R 1841 2 -1 ve
+R 1845 2 -4 ry 
+R 1849 2 -4 Chan
+R 1853 2 -5 nel, 
+R 1857 2 0 don’t 
+R 1865 3 2 they? 
+- 1868
+R 1876 2 6 We 
+R 1880 2 4 ain’t 
+R 1884 2 -3 no
+R 1888 2 -4 thing 
+R 1892 2 -4 but 
+R 1896 2 -3 mam
+R 1904 3 1 mals… 
+- 1907
+R 1917 3 8 Well, 
+R 1925 2 1 some 
+R 1929 2 -4 of 
+R 1933 2 -5 us, 
+R 1937 2 -2 can
+R 1941 2 -4 ni
+R 1945 1 -8 bals 
+- 1946
+R 1949 2 6 Who 
+R 1953 2 9 cut 
+R 1957 2 6 o
+R 1961 2 8 ther 
+R 1965 2 9 peo
+R 1969 2 6 ple 
+R 1973 3 9 o
+R 1977 2 6 pen 
+R 1980 2 8 like 
+R 1985 3 9 can
+R 1989 2 4 ta
+R 1992 3 6 loupes 
+- 1995
+R 2008 3 9 But 
+R 2012 2 1 if 
+R 2016 2 6 we 
+R 2020 2 2 can 
+R 2024 2 6 hump 
+R 2028 2 9 dead 
+R 2032 2 1 a
+R 2036 2 11 ni
+R 2040 2 8 mals 
+R 2044 2 6 and 
+R 2048 2 9 an
+R 2052 2 9 te
+R 2056 2 6 lopes 
+- 2058
+R 2062 2 9 Then 
+R 2066 2 9 there’s 
+R 2070 2 9 no 
+R 2074 2 1 rea
+R 2078 2 8 son 
+R 2082 1 9 that 
+R 2084 2 6 a 
+R 2088 2 1 man 
+- 2090
+R 2094 2 2 And 
+R 2098 1 6 a
+R 2100 2 9 no
+R 2104 2 8 ther 
+R 2108 3 11 man 
+R 2113 2 9 can’t 
+R 2117 2 6 e
+R 2121 3 1 lope 
+- 2124
+R 2135 2 6 But 
+R 2138 2 9 if 
+R 2141 2 8 you 
+R 2145 2 9 feel 
+R 2149 2 9 like 
+R 2152 3 9 I 
+R 2158 2 11 feel, 
+R 2165 2 6 I 
+R 2169 2 4 got 
+R 2173 2 8 the 
+R 2177 2 8 an
+R 2181 2 6 ti
+R 2185 2 1 dote 
+- 2187
+R 2193 2 4 Wo
+R 2197 2 3 men 
+R 2201 2 -1 wave 
+R 2205 2 -1 your 
+R 2209 2 -1 pan
+R 2213 2 -3 ty
+R 2217 3 -3 hose; 
+- 2220
+R 2225 2 6 Sing 
+R 2229 2 4 the 
+R 2233 2 1 cho
+R 2237 2 1 rus, 
+R 2241 2 4 and 
+R 2245 2 4 it 
+R 2249 1 4 goes 
+- 2250
+* 2256 6 5 I’m 
+* 2264 3 4 Slim 
+* 2272 2 3 Sha
+* 2276 2 2 dy, 
+: 2280 2 2 yes 
+: 2284 3 2 I’m 
+: 2292 2 0 the 
+: 2296 3 0 real 
+: 2304 2 2 Sha
+: 2308 1 0 dy 
+- 2309
+: 2312 2 0 All 
+: 2316 2 0 you 
+: 2320 2 0 o
+: 2324 2 2 ther 
+: 2328 3 2 Slim 
+: 2336 2 2 Sha
+: 2340 2 0 dys 
+: 2344 2 0 are 
+: 2348 2 2 just 
+: 2356 2 2 i
+: 2360 2 0 mi
+: 2368 2 0 ta
+: 2372 1 0 ting 
+- 2373
+: 2376 2 0 So 
+: 2380 2 5 won’t 
+: 2388 2 3 the 
+: 2392 2 2 real 
+: 2400 2 0 Slim 
+: 2408 2 0 Sha
+: 2412 2 0 dy 
+: 2417 3 3 please 
+: 2424 2 -7 stand 
+: 2432 4 -5 up 
+- 2436
+: 2448 3 3 Please 
+: 2456 3 -7 stand 
+: 2464 3 -5 up, 
+: 2480 3 3 please 
+: 2488 3 -7 stand 
+: 2496 3 -5 up? 
+- 2499
+: 2508 2 0 ’Cause 
+: 2512 3 5 I’m 
+: 2520 3 3 Slim 
+: 2528 3 2 Sha
+: 2532 2 0 dy, 
+: 2536 2 2 yes 
+: 2540 2 2 I’m 
+: 2548 2 0 the 
+: 2552 2 0 real 
+: 2560 2 0 Sha
+: 2564 1 0 dy 
+- 2565
+: 2568 2 0 All 
+: 2572 2 0 you 
+: 2576 2 0 o
+: 2580 2 0 ther 
+: 2584 3 0 Slim 
+: 2592 2 0 Sha
+: 2596 2 0 dys 
+: 2600 2 0 are 
+: 2604 2 0 just 
+: 2612 2 0 i
+: 2616 2 0 mi
+: 2624 2 0 ta
+: 2628 1 0 ting 
+- 2629
+: 2632 2 0 So 
+: 2636 2 5 won’t 
+: 2644 2 3 the 
+: 2648 2 2 real 
+: 2656 2 0 Slim 
+: 2664 2 0 Sha
+: 2668 2 0 dy 
+: 2672 3 3 please 
+: 2680 2 -7 stand 
+: 2688 2 -7 up 
+- 2690
+: 2704 2 3 Please 
+: 2712 2 -7 stand 
+: 2720 2 -5 up, 
+: 2736 2 3 please 
+: 2744 2 -7 stand 
+: 2752 2 -5 up? 
+- 2754
+R 2760 3 12 Will 
+R 2768 2 17 Smith 
+R 2774 2 11 don’t 
+R 2777 2 9 got
+R 2780 2 9 ta 
+R 2784 2 11 cuss 
+R 2789 2 9 in 
+R 2792 2 8 his 
+R 2796 2 8 raps 
+R 2804 2 9 to 
+R 2808 2 9 sell 
+R 2816 2 6 re
+R 2820 2 2 cords 
+- 2822
+R 2829 2 2 Well 
+R 2832 2 9 I 
+R 2839 2 8 do, 
+R 2849 2 6 so 
+R 2854 2 8 fuck 
+R 2861 2 9 him 
+R 2866 3 6 and 
+R 2872 2 10 fuck 
+R 2880 2 8 you, 
+R 2885 2 8 too 
+- 2887
+R 2892 2 -1 You 
+R 2896 2 6 think 
+R 2900 2 6 I 
+R 2904 2 4 give 
+R 2908 2 9 a 
+R 2912 2 8 damn 
+R 2916 2 9 a
+R 2920 2 9 bout 
+R 2924 2 8 a 
+R 2928 3 9 Gram
+R 2934 3 11 my? 
+- 2937
+R 2944 3 9 Half 
+R 2948 2 6 o’ 
+R 2952 2 8 you 
+R 2956 2 11 cri
+R 2960 2 6 tics 
+R 2964 2 6 can’t 
+R 2968 2 9 e
+R 2972 2 6 ven 
+R 2976 2 4 sto
+R 2980 2 8 mach 
+R 2984 2 8 me, 
+- 2986
+R 2992 2 6 Let 
+R 2996 2 9 a
+R 3000 2 9 lone 
+R 3008 3 9 stand 
+R 3015 1 1 me 
+- 3016
+R 3020 2 1 "But 
+R 3024 4 6 Slim, 
+R 3033 2 6 what 
+R 3037 2 1 if 
+R 3041 2 2 you 
+R 3044 5 4 win, 
+R 3052 2 6 woul
+R 3055 2 6 dn’t 
+R 3058 2 2 it 
+R 3062 2 1 be 
+R 3066 5 2 weird?" 
+- 3071
+R 3079 3 2 Why, 
+R 3088 2 6 so 
+R 3092 1 4 you 
+R 3094 3 8 guys 
+R 3103 2 6 can 
+R 3106 2 9 just 
+R 3110 3 8 lie 
+R 3119 2 6 to 
+R 3123 2 9 get 
+R 3127 2 11 me 
+R 3131 3 11 here? 
+- 3134
+R 3140 3 9 So 
+R 3144 2 8 you 
+R 3148 3 6 can 
+R 3160 2 13 sit 
+R 3164 2 11 me 
+R 3168 2 13 here 
+R 3176 2 11 next 
+R 3180 2 9 to 
+R 3184 3 13 Brit
+R 3188 2 9 ney 
+R 3196 3 13 Spears? 
+- 3199
+R 3204 2 11 Yo 
+R 3209 2 8 shit, 
+R 3215 2 6 Chris
+R 3218 2 9 ti
+R 3222 2 9 na 
+R 3226 2 13 A
+R 3230 2 9 gui
+R 3233 2 8 le
+R 3236 2 8 ra 
+R 3241 2 9 bet
+R 3244 2 8 ter 
+R 3250 4 9 switch 
+R 3256 2 11 me 
+R 3261 4 12 chairs 
+- 3265
+R 3269 3 9 So 
+R 3273 2 6 I 
+R 3277 2 11 can 
+R 3281 2 9 sit 
+R 3286 2 9 next 
+R 3292 2 9 to 
+R 3296 2 6 Car
+R 3300 2 9 son 
+R 3304 3 9 Da
+R 3308 2 9 ly 
+R 3312 2 6 and 
+R 3317 3 11 Fred 
+R 3325 3 11 Durst 
+- 3328
+R 3336 2 6 And 
+R 3340 2 9 hear 
+R 3344 2 9 ’em 
+R 3348 2 6 ar
+R 3352 1 9 gue 
+R 3354 2 9 o
+R 3358 2 8 ver 
+R 3362 2 9 who 
+R 3366 2 9 she 
+R 3370 2 9 gave 
+R 3376 3 6 head 
+R 3384 2 9 to 
+R 3388 3 11 first 
+- 3391
+R 3402 1 11 Lit
+R 3404 2 6 tle 
+R 3408 2 9 bitch 
+R 3416 2 9 put 
+R 3420 2 13 me 
+R 3424 2 11 on 
+R 3429 3 8 blast 
+R 3437 2 8 on 
+R 3441 3 6 M
+R 3447 3 8 T
+R 3453 3 6 V 
+- 3456
+R 3463 2 13 "Yeah 
+R 3468 2 13 he’s 
+R 3473 2 1 cute, 
+R 3478 2 7 but 
+R 3481 2 8 I 
+R 3486 2 13 think 
+R 3490 2 8 he’s 
+R 3495 2 11 mar
+R 3498 2 9 ried 
+R 3501 2 8 to 
+R 3506 3 12 Kim, 
+* 3514 3 12 he
+* 3521 3 13 he" 
+- 3524
+R 3528 2 11 I 
+R 3532 2 9 should 
+R 3536 4 9 down
+R 3542 3 9 load 
+R 3547 2 9 her 
+R 3551 2 13 au
+R 3556 2 9 di
+R 3559 2 8 o 
+R 3563 2 9 on 
+R 3568 2 9 M
+R 3574 2 11 P
+R 3582 2 13 3 
+- 3584
+R 3588 2 9 And 
+R 3592 2 11 show 
+R 3596 2 10 the 
+R 3600 3 11 whole 
+R 3604 4 13 world 
+R 3612 2 9 how 
+R 3616 2 14 you 
+R 3620 2 11 gave 
+R 3625 2 11 E
+R 3629 2 11 mi
+R 3633 2 13 nem 
+R 3638 2 11 V
+R 3645 3 13 D 
+- 3648
+: 3664 2 12 I’m 
+: 3668 2 17 sick 
+: 3672 2 15 of 
+: 3676 2 12 you 
+: 3680 2 12 lit
+: 3684 2 12 tle 
+: 3688 2 12 girl 
+: 3692 2 11 and 
+: 3696 2 12 boy 
+: 3704 3 12 groups; 
+: 3708 2 12 all 
+: 3712 2 11 you 
+: 3716 2 12 do 
+: 3720 2 12 is 
+: 3724 2 12 an
+: 3728 2 12 noy 
+: 3736 1 7 me 
+- 3737
+R 3741 2 10 So 
+R 3745 2 12 I 
+R 3748 2 10 have 
+R 3752 2 8 been 
+R 3756 3 13 sent 
+R 3764 2 13 here 
+R 3768 2 9 to 
+R 3772 2 8 de
+R 3776 2 12 stroy 
+R 3784 2 11 you 
+- 3786
+R 3796 2 9 And 
+R 3800 2 12 there’s 
+R 3804 2 12 a 
+R 3808 2 16 mil
+R 3812 2 13 lion 
+R 3816 2 11 of 
+R 3820 2 9 us 
+R 3824 2 8 just 
+R 3829 2 9 like 
+R 3837 3 8 me 
+- 3840
+R 3844 2 4 Who 
+R 3848 2 8 cuss 
+R 3854 3 9 like 
+R 3862 2 6 me, 
+R 3868 2 2 who 
+R 3872 2 2 just 
+R 3876 2 8 don’t 
+R 3880 2 8 give 
+R 3884 2 2 a 
+R 3888 2 11 fuck 
+R 3894 3 9 like 
+R 3903 1 8 me 
+- 3904
+R 3908 3 1 Who 
+R 3912 3 9 dress 
+R 3920 3 11 like 
+R 3926 3 11 me, 
+R 3938 3 9 walk, 
+R 3945 3 11 talk, 
+R 3951 1 6 and 
+R 3953 2 9 act 
+R 3960 2 11 like 
+R 3968 1 13 me 
+- 3969
+R 3972 2 6 And 
+R 3976 2 9 just 
+R 3983 2 11 might 
+R 3990 3 13 be 
+R 3996 2 6 the 
+R 4000 2 11 next 
+R 4006 2 13 best 
+R 4013 2 16 thing 
+R 4021 2 1 but 
+R 4025 2 8 not 
+R 4031 3 11 quite 
+R 4037 3 15 me 
+- 4040
+* 4048 5 5 I’m 
+* 4056 3 3 Slim 
+* 4064 2 2 Sha
+* 4068 2 0 dy, 
+: 4072 2 0 yes 
+: 4076 3 2 I’m 
+: 4084 2 0 the 
+: 4088 3 0 real 
+: 4096 2 2 Sha
+: 4100 1 0 dy 
+- 4101
+: 4104 2 0 All 
+: 4108 2 0 you 
+: 4112 2 0 o
+: 4116 2 2 ther 
+: 4120 3 2 Slim 
+: 4128 2 2 Sha
+: 4132 2 0 dys 
+: 4136 2 0 are 
+: 4140 2 2 just 
+: 4148 2 2 i
+: 4152 2 0 mi
+: 4160 2 0 ta
+: 4164 1 0 ting 
+- 4165
+: 4168 2 0 So 
+: 4172 2 5 won’t 
+: 4180 2 3 the 
+: 4184 2 2 real 
+: 4192 2 0 Slim 
+: 4200 2 0 Sha
+: 4204 2 0 dy 
+: 4208 3 3 please 
+: 4216 2 -7 stand 
+: 4224 4 -5 up 
+- 4228
+* 4240 3 3 Please 
+* 4248 3 -7 stand 
+* 4256 3 -5 up, 
+: 4272 3 3 please 
+: 4280 3 -7 stand 
+: 4288 3 -5 up? 
+- 4291
+: 4300 2 0 ’Cause 
+: 4304 3 5 I’m 
+: 4312 3 3 Slim 
+: 4320 3 2 Sha
+: 4324 2 0 dy, 
+: 4328 2 2 yes 
+: 4332 2 2 I’m 
+: 4340 2 0 the 
+: 4344 2 0 real 
+: 4352 2 0 Sha
+: 4356 1 0 dy 
+- 4357
+: 4360 2 0 All 
+: 4364 2 0 you 
+: 4368 2 0 o
+: 4372 2 0 ther 
+: 4376 3 0 Slim 
+: 4384 2 0 Sha
+: 4388 2 0 dys 
+: 4392 2 0 are 
+: 4396 2 0 just 
+: 4404 2 0 i
+: 4408 2 0 mi
+: 4416 2 0 ta
+: 4420 1 0 ting 
+- 4421
+: 4424 2 0 So 
+: 4428 2 5 won’t 
+: 4436 2 3 the 
+: 4440 2 0 real 
+: 4448 2 0 Slim 
+: 4456 2 0 Sha
+: 4460 2 0 dy 
+: 4464 3 3 please 
+: 4472 2 -7 stand 
+: 4480 2 -5 up 
+- 4482
+: 4496 2 3 Please 
+: 4504 2 -7 stand 
+: 4512 2 -5 up, 
+: 4528 2 3 please 
+: 4536 2 -7 stand 
+: 4544 1 -5 up? 
+- 4545
+R 4549 2 1 I’m 
+R 4552 2 1 like 
+R 4556 2 1 a 
+R 4560 2 1 head 
+R 4568 2 1 trip 
+R 4573 2 0 to 
+R 4576 2 1 lis
+R 4580 2 -1 ten 
+R 4584 2 -4 to, 
+R 4594 1 0 ’cause 
+R 4596 2 1 I’m 
+R 4600 2 2 on
+R 4604 2 2 ly 
+R 4608 2 4 gi
+R 4612 2 2 ving 
+R 4616 1 1 you 
+- 4617
+R 4621 3 2 Things 
+R 4628 2 1 you 
+R 4632 2 2 joke 
+R 4636 2 2 a
+R 4640 2 1 bout 
+R 4644 2 1 with 
+R 4648 2 2 your 
+R 4652 2 4 friends, 
+- 4654
+R 4660 2 1 In
+R 4664 2 2 side 
+R 4668 2 6 your 
+R 4672 2 1 li
+R 4676 2 1 vin’ 
+R 4681 3 1 room 
+- 4684
+: 4688 2 0 The 
+: 4691 2 0 on
+: 4694 2 0 ly 
+: 4697 2 3 dif
+: 4701 2 0 f’rence 
+: 4705 2 0 is 
+: 4708 2 0 I 
+: 4712 2 0 got 
+: 4716 2 0 the 
+: 4720 3 0 balls 
+- 4723
+: 4728 2 -1 To 
+: 4733 2 0 say 
+: 4736 2 0 it 
+: 4740 2 0 in 
+: 4744 2 0 front 
+: 4748 2 0 of 
+: 4753 3 0 y’all 
+- 4756
+: 4760 3 0 And 
+: 4764 2 0 I 
+: 4768 2 0 don’t 
+: 4772 2 0 got
+: 4776 2 0 ta 
+: 4780 2 0 be 
+: 4784 3 0 false 
+- 4787
+: 4792 2 -1 Or 
+: 4796 3 0 su
+: 4800 2 0 gar-
+: 4804 4 0 coat 
+: 4809 2 0 it 
+: 4812 2 0 at 
+: 4816 3 0 all 
+- 4819
+: 4830 3 0 I 
+: 4834 2 0 just 
+: 4838 2 0 get 
+: 4842 2 0 on 
+: 4846 2 0 the 
+: 4849 4 0 mic 
+: 4855 2 0 and 
+: 4862 2 3 spit 
+: 4865 1 0 it 
+- 4866
+: 4870 2 -1 And 
+: 4873 2 0 whe
+: 4877 2 0 ther 
+: 4881 2 -1 you 
+: 4885 2 0 like 
+: 4889 2 0 to 
+: 4893 2 0 ad
+: 4897 2 2 mit 
+: 4901 2 0 it 
+- 4903
+: 4913 2 0 I 
+: 4919 2 0 just 
+: 4925 2 2 shit 
+: 4929 1 0 it 
+- 4930
+: 4933 3 0 Bet
+: 4937 2 0 ter 
+: 4941 2 0 than 
+: 4945 2 0 nine
+: 4949 2 0 ty 
+: 4953 2 0 per
+: 4957 2 0 cent 
+: 4961 2 0 of 
+: 4965 2 0 you 
+: 4969 2 0 rap
+: 4973 2 0 pers 
+: 4977 2 0 out 
+: 4985 2 -5 can 
+- 4987
+: 4993 2 0 Then 
+: 4997 2 0 you 
+: 5001 2 0 won
+: 5005 2 0 der 
+: 5009 2 0 how 
+: 5016 2 0 can 
+: 5021 2 0 kids 
+: 5027 2 0 eat 
+: 5031 2 0 up 
+: 5035 3 0 these 
+: 5040 2 0 al
+: 5046 1 -1 bums 
+- 5047
+: 5051 3 0 Like 
+: 5056 2 0 Val
+: 5062 2 -1 iums 
+- 5064
+: 5068 2 -1 It’s 
+: 5072 2 3 fun
+: 5076 2 -5 ny, 
+- 5078
+: 5088 1 -5 ’Cause 
+: 5090 2 0 at 
+: 5093 2 0 the 
+: 5097 2 0 rate 
+: 5101 2 2 I’m 
+: 5105 2 -1 go
+: 5109 2 -1 ing, 
+: 5113 2 -1 when 
+: 5117 2 -1 I’m 
+: 5121 2 0 thir
+: 5125 2 0 ty 
+- 5127
+: 5134 2 0 I’ll 
+: 5138 2 0 be 
+: 5142 2 0 the 
+: 5145 2 0 on
+: 5148 2 0 ly 
+: 5152 2 0 per
+: 5160 1 0 son 
+: 5162 1 0 in 
+: 5164 1 0 the 
+: 5167 2 0 nur
+: 5173 2 0 sin’ 
+: 5176 2 0 home 
+: 5184 3 0 flir
+: 5189 2 0 ting 
+- 5191
+: 5200 2 0 Pin
+: 5204 2 0 chin’ 
+: 5208 2 0 nur
+: 5213 2 -1 ses 
+: 5216 3 0 as
+: 5222 2 -1 ses, 
+: 5226 1 0 while 
+: 5228 2 0 I’m 
+: 5232 3 0 ja
+: 5238 1 0 ckin’ 
+: 5240 2 0 off 
+: 5244 2 0 with 
+: 5248 3 0 Jer
+: 5255 1 0 gens 
+- 5256
+: 5260 1 0 And 
+: 5262 1 0 I’m 
+: 5264 3 0 jer
+: 5270 2 0 kin’, 
+: 5274 2 0 but 
+: 5278 1 0 this 
+: 5280 2 0 whole 
+: 5285 2 0 bag 
+: 5290 2 -1 of 
+: 5294 2 0 Vi
+: 5298 2 0 a
+: 5303 2 0 gra 
+: 5306 2 0 isn
+: 5309 2 0 ’t 
+: 5313 2 0 wor
+: 5319 2 0 kin’ 
+- 5321
+: 5328 1 -1 In 
+: 5330 1 0 eve
+: 5332 2 0 ry 
+: 5336 2 0 sin
+: 5340 2 0 gle 
+: 5344 2 0 per
+: 5351 2 0 son 
+: 5354 1 0 there’s 
+: 5356 1 0 a 
+: 5360 3 0 Slim 
+: 5368 3 0 Sha
+: 5372 2 0 dy 
+: 5376 2 0 lur
+: 5382 1 0 kin’ 
+- 5383
+: 5386 2 0 Who 
+: 5389 2 0 could 
+: 5393 2 -1 be 
+: 5396 3 0 wor
+: 5401 2 0 kin’ 
+: 5405 2 0 at 
+: 5408 2 0 Bur
+: 5412 2 0 ger 
+: 5417 2 0 King, 
+- 5419
+: 5425 2 0 Spit
+: 5429 2 0 tin’ 
+: 5433 2 0 on 
+: 5437 2 0 your 
+: 5440 2 0 on
+: 5444 2 0 ion 
+: 5448 3 0 rings 
+- 5451
+: 5463 2 -1 Or 
+: 5466 2 0 in 
+: 5469 2 0 the 
+: 5472 3 0 par
+: 5477 2 0 king 
+: 5481 3 0 lot 
+: 5488 3 0 cir
+: 5493 2 0 c
+: 5497 2 0 ling, 
+: 5504 3 2 screa
+: 5510 1 0 min’ 
+* 5512 2 0 "I 
+* 5517 2 0 don’t 
+* 5521 2 0 give 
+* 5524 2 0 a 
+* 5529 3 2 fuck" 
+- 5532
+: 5536 2 0 With 
+: 5540 2 -1 his 
+: 5544 2 0 win
+: 5548 2 0 dows 
+: 5553 3 0 down 
+: 5560 2 0 and 
+: 5564 2 0 his 
+: 5568 2 3 sys
+: 5572 2 0 tem 
+: 5576 2 0 up 
+- 5578
+* 5589 2 3 So 
+* 5593 2 3 will 
+* 5597 2 4 the 
+* 5601 2 5 real 
+* 5608 2 3 Sha
+* 5613 2 2 dy 
+: 5617 2 3 please 
+: 5626 3 -7 stand 
+: 5633 3 -5 up 
+- 5636
+: 5640 2 -4 And 
+: 5646 2 -2 put 
+: 5653 2 4 one 
+: 5656 2 3 of 
+: 5660 2 2 those 
+: 5665 2 2 fin
+: 5669 2 0 gers 
+: 5673 2 0 on 
+: 5681 3 3 each 
+: 5689 3 -7 hand 
+: 5697 3 -5 up 
+- 5700
+: 5705 2 -1 And 
+: 5709 2 0 be 
+: 5713 2 3 proud 
+: 5721 2 0 to 
+: 5725 2 0 be 
+: 5729 2 0 out
+: 5733 2 0 ta 
+: 5737 2 0 your 
+: 5741 4 3 mind 
+: 5749 2 0 and 
+: 5753 2 0 out
+: 5757 2 0 ta 
+: 5760 2 0 con
+: 5765 3 3 trol 
+- 5768
+: 5773 2 0 And 
+: 5777 2 0 one 
+: 5784 2 3 more 
+: 5792 3 3 time, 
+: 5800 2 3 loud 
+: 5804 2 3 as 
+: 5808 2 3 you 
+: 5812 3 3 can, 
+G 5820 3 5 how 
+G 5824 2 3 does 
+G 5828 2 4 it 
+G 5832 3 5 go? 
+- 5835
+* 5840 5 5 I’m 
+* 5848 3 3 Slim 
+* 5856 2 2 Sha
+* 5860 2 0 dy, 
+: 5864 2 0 yes 
+: 5868 3 2 I’m 
+: 5876 2 0 the 
+: 5880 3 0 real 
+: 5888 2 2 Sha
+: 5892 1 0 dy 
+- 5893
+: 5896 2 0 All 
+: 5900 2 0 you 
+: 5904 2 0 o
+: 5908 2 0 ther 
+: 5912 3 2 Slim 
+: 5920 2 2 Sha
+: 5924 2 0 dys 
+: 5928 2 0 are 
+: 5932 2 2 just 
+: 5940 2 2 i
+: 5944 2 0 mi
+: 5952 2 2 ta
+: 5956 1 0 ting 
+- 5957
+: 5960 2 0 So 
+: 5964 2 5 won’t 
+: 5972 2 3 the 
+: 5976 2 2 real 
+: 5984 2 0 Slim 
+: 5992 2 0 Sha
+: 5996 2 0 dy 
+: 6000 3 3 please 
+: 6008 2 -7 stand 
+: 6016 4 -5 up 
+- 6020
+* 6032 3 3 Please 
+* 6040 3 -7 stand 
+* 6048 3 -5 up, 
+: 6064 3 3 please 
+: 6072 3 -7 stand 
+: 6080 3 -5 up? 
+- 6083
+: 6092 2 0 ’Cause 
+: 6096 3 5 I’m 
+: 6104 3 3 Slim 
+: 6112 3 2 Sha
+: 6116 2 0 dy, 
+: 6120 2 2 yes 
+: 6124 2 2 I’m 
+: 6132 2 0 the 
+: 6136 2 0 real 
+: 6144 2 0 Sha
+: 6148 1 0 dy 
+- 6149
+: 6152 2 0 All 
+: 6156 2 0 you 
+: 6160 2 0 o
+: 6164 2 0 ther 
+: 6168 3 0 Slim 
+: 6176 2 0 Sha
+: 6180 2 0 dys 
+: 6184 2 0 are 
+: 6188 2 0 just 
+: 6196 2 0 i
+: 6200 2 0 mi
+: 6208 2 0 ta
+: 6212 1 0 ting 
+- 6213
+: 6216 2 0 So 
+: 6220 2 5 won’t 
+: 6228 2 3 the 
+: 6232 2 0 real 
+: 6240 2 0 Slim 
+: 6248 2 0 Sha
+: 6252 2 0 dy 
+: 6256 3 3 please 
+: 6264 2 -7 stand 
+: 6272 2 -5 up 
+- 6274
+: 6288 2 3 Please 
+: 6296 2 -7 stand 
+: 6304 2 -5 up, 
+: 6320 2 3 please 
+: 6328 2 -7 stand 
+: 6336 2 -5 up? 
+- 6338
+: 6348 2 0 ’Cause 
+: 6352 3 5 I’m 
+: 6360 3 3 Slim 
+: 6368 3 2 Sha
+: 6372 2 0 dy, 
+: 6376 2 2 yes 
+: 6380 2 2 I’m 
+: 6388 2 0 the 
+: 6392 2 0 real 
+: 6400 2 0 Sha
+: 6404 1 0 dy 
+- 6405
+: 6408 2 0 All 
+: 6412 2 0 you 
+: 6416 2 0 o
+: 6420 2 0 ther 
+: 6424 3 0 Slim 
+: 6432 2 0 Sha
+: 6436 2 0 dys 
+: 6440 2 0 are 
+: 6444 2 0 just 
+: 6452 2 0 i
+: 6456 2 0 mi
+: 6464 2 0 ta
+: 6468 1 0 ting 
+- 6469
+: 6472 2 0 So 
+: 6476 2 5 won’t 
+: 6484 2 3 the 
+: 6488 2 0 real 
+: 6496 2 0 Slim 
+: 6504 2 0 Sha
+: 6508 2 0 dy 
+: 6512 3 3 please 
+: 6520 2 -7 stand 
+: 6528 2 -5 up 
+- 6530
+: 6544 2 3 Please 
+: 6552 2 -7 stand 
+: 6560 2 -5 up, 
+: 6576 2 3 please 
+: 6584 2 -7 stand 
+: 6592 2 -5 up? 
+- 6594
+: 6604 2 0 ’Cause 
+: 6608 3 5 I’m 
+: 6616 3 3 Slim 
+: 6624 3 2 Sha
+: 6628 2 0 dy, 
+: 6632 2 2 yes 
+: 6636 2 2 I’m 
+: 6644 2 0 the 
+: 6648 2 0 real 
+: 6656 2 0 Sha
+: 6660 1 0 dy 
+- 6661
+: 6664 2 0 All 
+: 6668 2 0 you 
+: 6672 2 0 o
+: 6676 2 0 ther 
+: 6680 3 0 Slim 
+: 6688 2 0 Sha
+: 6692 2 0 dys 
+: 6696 2 0 are 
+: 6700 2 0 just 
+: 6708 2 0 i
+: 6712 2 0 mi
+: 6720 2 0 ta
+: 6724 1 0 ting 
+- 6725
+: 6728 2 0 So 
+: 6732 2 5 won’t 
+: 6740 2 3 the 
+: 6744 2 0 real 
+: 6752 2 0 Slim 
+: 6760 2 0 Sha
+: 6764 2 0 dy 
+: 6768 3 3 please 
+: 6776 2 -7 stand 
+: 6784 2 -5 up 
+- 6786
+: 6800 2 3 Please 
+: 6808 2 -7 stand 
+: 6816 2 -5 up, 
+: 6832 2 3 please 
+: 6840 2 -7 stand 
+: 6848 2 -5 up? 
+- 6850 6854
+- 6854
+: 6882 2 -7 Ha
+: 6885 2 -5 ha, 
+R 6924 2 0 guess 
+R 6928 3 0 there’s 
+R 6932 2 0 a 
+R 6936 2 0 Slim 
+R 6944 2 0 Sha
+R 6952 2 0 dy 
+R 6956 1 0 in 
+R 6958 1 0 all 
+R 6964 1 0 of 
+R 6966 3 0 us 
+- 6969 7004
+- 7004
+G 7032 2 0 Fuck 
+G 7040 2 0 it, 
+G 7084 2 0 let’s 
+G 7088 3 0 all 
+G 7098 3 0 stand 
+G 7108 2 0 up 
+E

@@ -1,7 +1,10 @@
 import dotenv from 'dotenv';
 import fs from 'fs';
+import { Song } from 'interfaces';
 import currentSongs from '../public/songs/index.json';
+import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import getSongId from '../src/Songs/utils/getSongId';
 
 dotenv.config({ path: '.env.local' });
 
@@ -25,6 +28,36 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
   return response.json();
 };
 
+const normalizeSong = (song: Song): Song => {
+  if (song.title.toLowerCase().trim().endsWith('[duet]')) {
+    song.title = song.title.slice(0, -6);
+  } else if (song.title.toLowerCase().endsWith('(tv)')) {
+    song.title = song.title.slice(0, -4);
+  } else if (song.title.toLowerCase().endsWith('(album version)')) {
+    song.title = song.title.slice(0, -15);
+  }
+  song.title = song.title.trim();
+
+  song.language = song.language.map((lang) => {
+    if (lang.toLowerCase().startsWith('espa')) {
+      return 'Spanish';
+    } else if (lang.toLowerCase().endsWith('(romanized)')) {
+      return lang.slice(0, -11).trim();
+    } else if (lang.toLowerCase().endsWith('(brazil)')) {
+      return 'Portuguese';
+    }
+    return lang;
+  });
+
+  song.lastUpdate = new Date().toISOString();
+
+  // @ts-ignore
+  song.id = undefined;
+  song.id = getSongId(song);
+
+  return song;
+};
+
 (async () => {
   const response = await makeRequest(
     `/api/projects/${PROJECT_ID}/events?event=share-song&after=${AFTER_DATE}&limit=200`,
@@ -38,15 +71,19 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
 
   response.results.forEach((result: any) => {
     try {
-      const song = convertTxtToSong(result.properties.song);
+      let song = convertTxtToSong(result.properties.song);
       if (!song.id) {
         console.log('Song has no ID', song);
-      } else if (fetchedSongIds.includes(song.id)) {
+        return;
+      }
+      normalizeSong(song);
+
+      if (fetchedSongIds.includes(song.id)) {
         console.log(`Song ${song.id} already fetched`);
       } else if (!currentSongs.find((currentSong) => currentSong.id === song.id)) {
         newSongIds.push(song.id);
         song.lastUpdate = new Date().toISOString();
-        fs.writeFileSync(`./public/songs/${song.id}.txt`, result.properties.song);
+        fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
         console.log(`Added song ${song.id}`);
       } else {
         console.log(`Song ${song.id} already exists`);
