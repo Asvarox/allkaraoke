@@ -18,6 +18,7 @@ import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Link } from 'wouter';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
@@ -166,7 +167,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 </SongsGroupContainer>
               ))}
               <AddSongs>
-                Missing a song? Try <a href="convert">adding one</a> yourself!
+                Missing a song? Try{' '}
+                <Link to="convert/">
+                  <a>adding one</a>
+                </Link>{' '}
+                yourself!
               </AddSongs>
             </SongListContainer>
           </>
