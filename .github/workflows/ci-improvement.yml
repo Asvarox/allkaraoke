@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: yarn npm-run-all --continue-on-error prettier-check lint types-check test:ci build-storybook unimported
+      - run: yarn npm-run-all --continue-on-error prettier-check lint types-check test build-storybook unimported
   e2e-tests-run-chromium:
     runs-on: ubuntu-latest
     env:
@@ -32,12 +32,6 @@ jobs:
         with:
           packagescript: 'e2e'
           project: 'chromium'
-      - uses: actions/upload-artifact@v3
-        name: Upload built app for PROD deployment
-        if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
-        with:
-          name: built-app
-          path: build
   e2e-tests-run-firefox:
     runs-on: ubuntu-latest
     env:
@@ -101,10 +95,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 30 # needed for Sentry to get list of commits released
-      - uses: actions/download-artifact@v3
-        with:
-          name: built-app
-          path: build
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

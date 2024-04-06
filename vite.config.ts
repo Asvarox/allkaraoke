@@ -65,6 +65,8 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'build',
+    sourcemap: !process.env.FAST_BUILD,
+    reportCompressedSize: !process.env.FAST_BUILD,
   },
   server: {
     port: 3000,
