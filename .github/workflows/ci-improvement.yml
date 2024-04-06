@@ -91,6 +91,9 @@ jobs:
     environment:
       name: production
       url: https://allkaraoke.party/
+    env:
+      VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
+      VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:
