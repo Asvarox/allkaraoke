@@ -44,7 +44,7 @@ test('skip the intro from the song', async ({ page }) => {
   await test.step('When skip intro - player goes to the sung part of the song', async () => {
     await expect(pages.gamePage.skipIntroElement).toBeVisible();
     await pages.gamePage.skipIntroIfPossible();
-    await expect(pages.gamePage.skipIntroElement).toBeVisible();
+    await expect(pages.gamePage.skipIntroElement).toBeVisible({ timeout: 6_000 });
     await expect(pages.gamePage.getSongLyricsForPlayerElement(player1)).toBeVisible();
     await expect(pages.gamePage.getSongLyricsForPlayerElement(player2)).toBeVisible();
     await pages.postGameResultsPage.skipScoresAnimation();

@@ -93,6 +93,7 @@ export const Language = styled(SongFlag)`
   height: 2.75rem;
   object-fit: cover;
   border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   position: absolute;
   z-index: -1;
   left: 0rem;
@@ -146,6 +147,7 @@ export const SongCardBackground = styled.div<{
   expanded: boolean;
 }>`
   background-color: ${styles.colors.text.inactive};
+  ${(props) => !props.expanded && 'border-radius: 1rem;'}
   position: absolute;
   z-index: -1;
   inset: 0;

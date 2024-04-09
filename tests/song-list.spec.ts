@@ -312,6 +312,7 @@ test('Song List - Random song', async ({ page }) => {
   });
 
   await test.step('Random song is selected on random song button click', async () => {
+    await page.waitForTimeout(500); // trying to focus song mid-scroll can make it not exist in the virtual list
     await pages.songListPage.focusSong(polOldDuetSong);
     await pages.songListPage.expectSelectedSongNotToBe(lastSong);
     await pages.songListPage.pickRandomButton.click();

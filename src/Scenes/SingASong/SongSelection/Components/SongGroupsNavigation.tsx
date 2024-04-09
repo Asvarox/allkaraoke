@@ -6,55 +6,54 @@ import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import { useEffect, useState } from 'react';
 
 interface Props {
-  containerRef: React.RefObject<HTMLDivElement>;
   groupedSongList: SongGroup[];
-  selectSong: (songIndex: number) => void;
+  onScrollToGroup: (group: SongGroup) => void;
+  container: any;
 }
 
-export default function SongGroupsNavigation({ groupedSongList, containerRef, selectSong }: Props) {
+export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup, container }: Props) {
   const [activeGroups, setActiveGroups] = useState<string[]>([]);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const id = entry.target.getAttribute('data-group-letter')!;
 
-          if (entry.isIntersecting) {
-            setActiveGroups((current) => [...current, id]);
-          } else {
-            setActiveGroups((current) => current.filter((group) => group !== id));
-          }
-        });
-      },
-      { threshold: 0.05 },
-    );
-    groupedSongList.forEach((group) => {
-      const element = document.querySelector(`[data-group-letter="${group.letter}"]`);
-      if (element) {
-        observer.observe(element);
-      }
+  useEffect(() => {
+    // This is slightly complicated logic needed due to virtualization of the list
+    // Intersection observer is used to detect which group header is currently visible.
+    // Mutation observer catches changes in the list, e.g. if the group header appears or disappears
+    // When it happens it restarts the intersection observer with currently attached groups
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute('data-group-letter')!;
+
+        if (entry.isIntersecting) {
+          setActiveGroups((current) => [...current, id]);
+        } else {
+          setActiveGroups((current) => current.filter((group) => group !== id));
+        }
+      });
     });
-    return () => {
+
+    const mutationObserver = new MutationObserver(() => {
+      const element = document.querySelectorAll(`[data-group-letter]`);
       observer.disconnect();
       setActiveGroups([]);
-    };
-  }, [groupedSongList]);
 
-  const scrollToGroup = (group: SongGroup) => {
-    selectSong(group.songs[0].index);
+      element.forEach((el) => {
+        observer.observe(el);
+      });
+    });
 
-    // wait for the song to be selected and scrolled into view - then override the scroll and scroll to the group instead
-    setTimeout(() => {
-      const element = document.querySelector(`[data-group-letter="${group.letter}"]`);
-      if (element && containerRef.current) {
-        // calculate 10rem offset from top
-        const offset = 10 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    if (container) {
+      mutationObserver.observe(container, {
+        childList: true,
+        subtree: true,
+      });
 
-        const topPos = element.getBoundingClientRect().top + containerRef.current.scrollTop - offset;
-        containerRef.current.scrollTo({ top: topPos, behavior: 'smooth' });
-      }
-    }, 20);
-  };
+      return () => {
+        mutationObserver.disconnect();
+        setActiveGroups([]);
+        observer.disconnect();
+      };
+    }
+  }, [groupedSongList, container]);
 
   return (
     <>
@@ -65,7 +64,7 @@ export default function SongGroupsNavigation({ groupedSongList, containerRef, se
             <SongsGroupButton
               key={group.letter}
               active={active}
-              onClick={() => scrollToGroup(group)}
+              onClick={() => onScrollToGroup(group)}
               data-active={active}
               data-test={`group-navigation-${group.letter}`}>
               {group.letter}
@@ -84,12 +83,12 @@ const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
   top: 0;
-  left: 6.2rem;
+  left: var(--song-sidebar-weight);
   padding: 1rem 0 1.5rem 2rem;
   width: 100%;
   z-index: 100;
   gap: 1rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
 `;
 
 const SongsGroupButton = styled(Button)<{ active: boolean }>`

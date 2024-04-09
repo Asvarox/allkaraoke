@@ -217,6 +217,14 @@ function Player(
           startAt={song.videoGap ?? 0}
           onStateChange={onStateChangeCallback}
         />
+        {currentStatus === VideoState.PLAYING && (
+          <GoFastButton
+            data-test="make-song-go-fast"
+            onClick={() => {
+              player.current?.setPlaybackSpeed(2);
+            }}
+          />
+        )}
       </PlayerContainer>
     </Container>
   );
@@ -240,6 +248,16 @@ const Overlay = styled.div`
 const PlayerContainer = styled.div`
   overflow: hidden;
   height: 100%;
+`;
+
+const GoFastButton = styled.div`
+  width: 30px;
+  height: 30px;
+  opacity: 0.01;
+  background: black;
+  position: absolute;
+  bottom: calc(100vh / 2 - 15px);
+  left: 0;
 `;
 
 export default forwardRef(Player);

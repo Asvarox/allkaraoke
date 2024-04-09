@@ -13,6 +13,15 @@ export class SongListPagePO {
   }
 
   public getSongElement(songID: string) {
+    this.page.evaluate(
+      async ([songID]) => {
+        while (!window.__songList) {
+          await new Promise((resolve) => setTimeout(resolve, 20));
+        }
+        window.__songList?.scrollToSong(songID);
+      },
+      [songID],
+    );
     return this.page.getByTestId(`song-${songID}`);
   }
 
@@ -21,14 +30,23 @@ export class SongListPagePO {
   }
 
   public async focusSong(songID: string) {
-    await this.getSongElement(songID).click();
+    const song = this.getSongElement(songID);
+    await song.click();
   }
 
   public async openPreviewForSong(songID: string) {
-    await this.getSongElement(songID).dblclick();
+    const song = this.getSongElement(songID);
+    await this.page.waitForTimeout(100);
+    await song.dblclick();
   }
 
   public async navigateToSongWithKeyboard(songID: string, remoteMic?: Page) {
+    await this.page.evaluate(async () => {
+      while (!window.__virtualListDisable) {
+        await new Promise((resolve) => setTimeout(resolve, 20));
+      }
+      await window.__virtualListDisable();
+    });
     await navigateWithKeyboard(this.page, `song-${songID}`, remoteMic);
   }
 
@@ -110,6 +128,10 @@ export class SongListPagePO {
 
   public async approveSelectedSongByKeyboard() {
     await this.page.keyboard.press('Enter');
+  }
+
+  public async expectSongToBeVisibleAsNew(songID: string) {
+    await expect(this.getSongElement(`${songID}-new-group`)).toBeVisible();
   }
 
   public async goBackToMainMenu() {

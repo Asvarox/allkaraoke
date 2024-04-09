@@ -23,6 +23,7 @@ export class SongPreviewPagePO {
 
   public async playTheSong() {
     await this.page.getByTestId('play-song-button').click();
+    await this.page.getByTestId('make-song-go-fast').click();
   }
 
   public async navigateToPlayTheSongWithKeyboard(remoteMic?: Page) {

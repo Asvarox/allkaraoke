@@ -28,11 +28,13 @@ export default async function navigateWithKeyboard(page: Page, targetTestId: str
     const navigableElements = await page.locator('[data-focused]:not([data-unfocusable] [data-focused])');
     const handles = await navigableElements.elementHandles();
 
-    let rectangles = await Promise.all(
-      handles.map(async (handle) => {
-        return [handle, (await handle.boundingBox())!] as const;
-      }),
-    );
+    let rectangles = (
+      await Promise.all(
+        handles.map(async (handle) => {
+          return [handle, (await handle.boundingBox())!] as const;
+        }),
+      )
+    ).filter(([, rect]) => rect !== null);
 
     // Matrix of navigable elements -- the value is data-test
     const rows: string[][] = [];
@@ -52,7 +54,7 @@ export default async function navigateWithKeyboard(page: Page, targetTestId: str
     // we started from the bottom (last) elements
     rows.reverse();
 
-    const startingElement = (await (await page.locator('[data-focused="true"]')).getAttribute('data-test'))!;
+    const startingElement = (await page.locator('[data-focused="true"]').getAttribute('data-test'))!;
     const start = findInMatrix(rows, startingElement);
     const [finishX, finishY] = findInMatrix(rows, targetTestId);
 
