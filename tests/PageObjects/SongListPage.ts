@@ -16,6 +16,10 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
+  public get getSelectedSongID() {
+    return this.songPreviewElement.getAttribute('data-song');
+  }
+
   public async focusSong(songID: string) {
     await this.getSongElement(songID).click();
   }
@@ -28,8 +32,8 @@ export class SongListPagePO {
     await navigateWithKeyboard(this.page, `song-${songID}`, remoteMic);
   }
 
-  public get songListElement() {
-    return this.page.getByTestId('song-list-container');
+  public get songListContainer() {
+    return this.page.locator('[data-test="song-list-container"]');
   }
 
   public get songPreviewElement() {
@@ -108,12 +112,32 @@ export class SongListPagePO {
     await this.page.keyboard.press('Enter');
   }
 
-  public async expectSongToBeVisibleAsNew(songID: string) {
-    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
-  }
-
   public async goBackToMainMenu() {
     await this.page.waitForTimeout(500);
     await this.page.keyboard.press('Backspace');
+  }
+
+  public get selectionPlaylistTip() {
+    return this.page.locator("[role='tooltip']");
+  }
+
+  public async closeTheSelectionPlaylistTip() {
+    await this.selectionPlaylistTip.getByText('Close').click();
+  }
+
+  public async expectSongToBeMarkedAsPopular(songID: string) {
+    await expect(this.getSongElement(songID).getByTestId('StarIcon')).toBeVisible();
+  }
+
+  public async expectPlaylistContainSongsMarkedAsPopular() {
+    await expect(this.songListContainer.locator('[data-testid="StarIcon"]').first()).toBeVisible();
+  }
+
+  public async expectSongToBeMarkedAsNewInNewGroup(songID: string) {
+    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
+  }
+
+  public async expectPlaylistContainSongsMarkedAsNew() {
+    await expect(this.songListContainer.locator('[data-testid ="FiberNewOutlinedIcon"]').first()).toBeVisible();
   }
 }

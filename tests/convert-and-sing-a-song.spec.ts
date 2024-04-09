@@ -109,21 +109,21 @@ test('Convert and sing a song', async ({ page }) => {
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
-    await pages.songListPage.expectSongToBeVisibleAsNew(songID);
+    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
   });
 
   await test.step('Go to language playlist and check visibility', async () => {
     await pages.songListPage.goToPlaylist(englishPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
     await expect(pages.songListPage.getSongElement(songID)).toBeVisible();
-    await pages.songListPage.expectSongToBeVisibleAsNew(songID);
+    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
   });
 
   await test.step('Go to playlist containing the song`s release year and check visibility', async () => {
     await pages.songListPage.goToPlaylist(oldiePlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(oldiePlaylist);
     await expect(pages.songListPage.getSongElement(songID)).toBeVisible();
-    await pages.songListPage.expectSongToBeVisibleAsNew(songID);
+    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
   });
 
   await test.step('Song should be marked as played today', async () => {
