@@ -130,7 +130,9 @@ export class SongListPagePO {
   }
 
   public async expectPlaylistContainSongsMarkedAsPopular() {
-    await expect(this.songListContainer.locator('[data-testid="StarIcon"]').first()).toBeVisible();
+    const popSongs = this.songListContainer.locator('[data-testid="StarIcon"]').last();
+    await expect(popSongs).toBeVisible();
+    await popSongs.click();
   }
 
   public async expectSongToBeMarkedAsNewInNewGroup(songID: string) {
@@ -138,6 +140,8 @@ export class SongListPagePO {
   }
 
   public async expectPlaylistContainSongsMarkedAsNew() {
-    await expect(this.songListContainer.locator('[data-testid ="FiberNewOutlinedIcon"]').first()).toBeVisible();
+    const newSongs = this.songListContainer.locator('[data-testid ="FiberNewOutlinedIcon"]').first();
+    await expect(newSongs).toBeVisible();
+    await newSongs.click();
   }
 }
