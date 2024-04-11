@@ -10,11 +10,9 @@ import {
   ReactElement,
   ReactNode,
   Ref,
-  useEffect,
   useImperativeHandle,
   useMemo,
   useRef,
-  useState,
 } from 'react';
 import { Components, GroupedVirtuoso, LocationOptions, LogLevel, VirtuosoHandle } from 'react-virtuoso';
 import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
@@ -38,26 +36,12 @@ interface Props<T> {
   ListRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
   GroupRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
   perRow: number;
-}
-
-declare global {
-  interface Window {
-    __virtualListDisable: () => Promise<void>;
-  }
+  itemHeight: number;
 }
 
 function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedListMethods>) {
   const baseUnit = useBaseUnitPx();
   const virtuoso = useRef<VirtuosoHandle>(null);
-  const [disable, setDisable] = useState(false);
-
-  useEffect(() => {
-    window.__virtualListDisable = async () => {
-      setDisable(true);
-      virtuoso.current?.scrollTo({ top: 1000 });
-      virtuoso.current?.scrollTo({ top: 0 });
-    };
-  }, []);
 
   const groupedRows = useMemo(() => {
     return props.groups.map((group) => {
@@ -91,21 +75,22 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         virtuoso.current?.scrollToIndex({ index: rowsToScroll, behavior: 'smooth', align: 'start' });
       },
       scrollToSongInGroup: async (group, index, behavior = 'smooth') => {
-        const groupIndex = props.groups.findIndex((g) => g.letter === group);
+        let groupIndex = props.groups.findIndex((g) => g.letter === group);
 
+        if (groupIndex === -1) {
+          groupIndex = props.groups.findIndex((g) => g.songs.some((s) => s.index === index));
+        }
         if (groupIndex === -1) {
           return;
         }
 
         const songIndex = props.groups[groupIndex].songs.findIndex((s) => s.index === index);
-        if (songIndex === -1) {
-          return;
-        }
 
         const rowsToScroll = groupedRows
           .slice(0, groupIndex)
           .reduce((acc, { rows }) => acc + rows.length, Math.floor(songIndex / props.perRow));
 
+        console.log('scrollToSongInGroup', songIndex, rowsToScroll);
         virtuoso.current?.scrollToIndex?.({
           index: rowsToScroll,
           behavior: isE2E() ? 'auto' : behavior,
@@ -117,7 +102,11 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
   return (
     <GroupedVirtuoso
-      increaseViewportBy={disable ? Infinity : baseUnit * 50}
+      // itemSize={() => props.itemHeight}
+      // defaultItemHeight={props.itemHeight}
+      fixedItemHeight={props.itemHeight}
+      key={props.itemHeight}
+      increaseViewportBy={baseUnit * 50}
       style={styles}
       logLevel={LogLevel.DEBUG}
       components={props.components}

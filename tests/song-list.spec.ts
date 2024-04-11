@@ -67,7 +67,7 @@ test('Filters - PlayLists', async ({ page }) => {
     await pages.songLanguagesPage.continueAndGoToSongList();
     await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
     await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+    await pages.songListPage.focusSong(polSong);
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {
@@ -172,7 +172,7 @@ test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
     await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
     await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
     await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+    await pages.songListPage.focusSong(polSong);
   });
 
   await test.step('Going to Christmas-playlist and check songs visibility', async () => {

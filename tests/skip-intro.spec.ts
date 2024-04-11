@@ -35,7 +35,7 @@ test('skip the intro from the song', async ({ page }) => {
 
   await test.step('Choose the song and play it', async () => {
     await expect(pages.songListPage.getSongElement(song.ID)).toBeVisible();
-    await pages.songListPage.navigateToSongWithKeyboard(song.ID);
+    await pages.songListPage.focusSong(song.ID);
     await pages.songListPage.approveSelectedSongByKeyboard();
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();

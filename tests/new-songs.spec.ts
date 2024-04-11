@@ -32,8 +32,10 @@ test('New songs - displays new song twice by default and doesnt show it in filte
   await page.waitForTimeout(500);
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
   await expect(pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
+  await page.waitForTimeout(5000);
+  // await page.pause();
+  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
 
   // Should still show new group when playlists are used
   await pages.songListPage.goToPlaylist(playlistName);

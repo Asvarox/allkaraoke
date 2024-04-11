@@ -1,5 +1,4 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
-import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class SongListPagePO {
   constructor(
@@ -12,16 +11,20 @@ export class SongListPagePO {
     await this.page.getByTestId(`group-navigation-${groupName}`).click();
   }
 
-  public getSongElement(songID: string) {
-    this.page.evaluate(
+  private ensureSongIsScrolledTo(songID: string) {
+    return this.page.evaluate(
       async ([songID]) => {
         while (!window.__songList) {
           await new Promise((resolve) => setTimeout(resolve, 20));
         }
-        window.__songList?.scrollToSong(songID);
+        console.log(songID, window.__songList?.scrollToSong(songID));
       },
       [songID],
     );
+  }
+
+  public getSongElement(songID: string, shouldEnsure = true) {
+    if (shouldEnsure) this.ensureSongIsScrolledTo(songID);
     return this.page.getByTestId(`song-${songID}`);
   }
 
@@ -30,24 +33,16 @@ export class SongListPagePO {
   }
 
   public async focusSong(songID: string) {
-    const song = this.getSongElement(songID);
+    await this.ensureSongIsScrolledTo(songID);
+    const song = this.getSongElement(songID, false);
     await song.click();
   }
 
   public async openPreviewForSong(songID: string) {
-    const song = this.getSongElement(songID);
+    await this.ensureSongIsScrolledTo(songID);
+    const song = this.getSongElement(songID, false);
     await this.page.waitForTimeout(100);
     await song.dblclick();
-  }
-
-  public async navigateToSongWithKeyboard(songID: string, remoteMic?: Page) {
-    await this.page.evaluate(async () => {
-      while (!window.__virtualListDisable) {
-        await new Promise((resolve) => setTimeout(resolve, 20));
-      }
-      await window.__virtualListDisable();
-    });
-    await navigateWithKeyboard(this.page, `song-${songID}`, remoteMic);
   }
 
   public get songListContainer() {
@@ -117,11 +112,15 @@ export class SongListPagePO {
   }
 
   public async expectSongToBeMarkedWithLanguageFlagIcon(songID: string, language: string) {
-    await expect(this.getSongElement(songID).locator('img')).toHaveAttribute('language', language);
+    await this.ensureSongIsScrolledTo(songID);
+    const song = this.getSongElement(songID, false);
+    await expect(song.locator('img')).toHaveAttribute('language', language);
   }
 
   public async expectSongToBeMarkedAsPlayedToday(songID: string) {
-    await expect(this.getSongElement(songID).getByTestId('song-stat-indicator')).toContainText('Played today', {
+    await this.ensureSongIsScrolledTo(songID);
+    const song = this.getSongElement(songID, false);
+    await expect(song.getByTestId('song-stat-indicator')).toContainText('Played today', {
       ignoreCase: true,
     });
   }
@@ -131,7 +130,9 @@ export class SongListPagePO {
   }
 
   public async expectSongToBeVisibleAsNew(songID: string) {
-    await expect(this.getSongElement(`${songID}-new-group`)).toBeVisible();
+    await this.ensureSongIsScrolledTo(`${songID}-new-group`);
+    const song = this.getSongElement(`${songID}-new-group`, false);
+    await expect(song).toBeVisible();
   }
 
   public async goBackToMainMenu() {

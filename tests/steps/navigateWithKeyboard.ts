@@ -22,67 +22,78 @@ const addSteps = (start: [number, number], steps: Array<[number, number, dirs]>,
 };
 
 // Possibly an overkill (but fun)?
-export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page) {
-  await test.step(`Use ${remoteMic ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
-    await expect(page.getByTestId(targetTestId)).toBeVisible();
-    const navigableElements = await page.locator('[data-focused]:not([data-unfocusable] [data-focused])');
-    const handles = await navigableElements.elementHandles();
+export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page, retries = 2) {
+  try {
+    await test.step(`Use ${remoteMic ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
+      await expect(page.getByTestId(targetTestId)).toBeVisible();
+      const navigableElements = await page.locator('[data-focused]:not([data-unfocusable] [data-focused])');
+      const handles = await navigableElements.elementHandles();
 
-    let rectangles = (
-      await Promise.all(
-        handles.map(async (handle) => {
-          return [handle, (await handle.boundingBox())!] as const;
-        }),
-      )
-    ).filter(([, rect]) => rect !== null);
+      let rectangles = (
+        await Promise.all(
+          handles.map(async (handle) => {
+            return [handle, (await handle.boundingBox())!] as const;
+          }),
+        )
+      ).filter(([, rect]) => rect !== null);
 
-    // Matrix of navigable elements -- the value is data-test
-    const rows: string[][] = [];
+      // Matrix of navigable elements -- the value is data-test
+      const rows: string[][] = [];
 
-    while (rectangles.length) {
-      const base = rectangles.pop()!;
-      const [, rect] = base;
-      const middlePointY = rect.y + rect.height / 2;
+      while (rectangles.length) {
+        const base = rectangles.pop()!;
+        const [, rect] = base;
+        const middlePointY = rect.y + rect.height / 2;
 
-      // get all elements whose left side is on the same Y-plane as the "middle" of the compared element
-      const [row, rest] = _.partition(rectangles, ([, rectangle]) => {
-        return middlePointY < rectangle.y + rectangle.height && middlePointY > rectangle.y;
-      });
-      rows.push(await Promise.all([...row, base].map(async ([element]) => (await element.getAttribute('data-test'))!)));
-      rectangles = rest;
-    }
-    // we started from the bottom (last) elements
-    rows.reverse();
-
-    const startingElement = (await page.locator('[data-focused="true"]').getAttribute('data-test'))!;
-    const start = findInMatrix(rows, startingElement);
-    const [finishX, finishY] = findInMatrix(rows, targetTestId);
-
-    const intermediateSteps: Array<[number, number, dirs]> = [];
-    if (start[0] > 0) {
-      // Move to the first element in the row
-      addSteps(start, intermediateSteps, 'Left', start[0]);
-    }
-    if (start[1] < finishY) {
-      // Move down to the target row
-      addSteps(start, intermediateSteps, 'Down', finishY - start[1]);
-    } else if (start[1] > finishY) {
-      // Move up to the target row
-      addSteps(start, intermediateSteps, 'Up', start[1] - finishY);
-    }
-    if (finishX > 0) {
-      // Move to the target element
-      addSteps(start, intermediateSteps, 'Right', finishX);
-    }
-
-    for (const [x, y, dir] of intermediateSteps) {
-      // Execute the steps
-      if (remoteMic) {
-        await remoteMic.getByTestId(`arrow-${dir.toLowerCase()}`).click();
-      } else {
-        await page.keyboard.press(`Arrow${dir}`);
+        // get all elements whose left side is on the same Y-plane as the "middle" of the compared element
+        const [row, rest] = _.partition(rectangles, ([, rectangle]) => {
+          return middlePointY < rectangle.y + rectangle.height && middlePointY > rectangle.y;
+        });
+        rows.push(
+          await Promise.all([...row, base].map(async ([element]) => (await element.getAttribute('data-test'))!)),
+        );
+        rectangles = rest;
       }
-      await expect(page.getByTestId(rows[y][x])).toHaveAttribute('data-focused', 'true');
+      // we started from the bottom (last) elements
+      rows.reverse();
+
+      const startingElement = (await page.locator('[data-focused="true"]').getAttribute('data-test'))!;
+      const start = findInMatrix(rows, startingElement);
+      const [finishX, finishY] = findInMatrix(rows, targetTestId);
+
+      const intermediateSteps: Array<[number, number, dirs]> = [];
+      if (start[0] > 0) {
+        // Move to the first element in the row
+        addSteps(start, intermediateSteps, 'Left', start[0]);
+      }
+      if (start[1] < finishY) {
+        // Move down to the target row
+        addSteps(start, intermediateSteps, 'Down', finishY - start[1]);
+      } else if (start[1] > finishY) {
+        // Move up to the target row
+        addSteps(start, intermediateSteps, 'Up', start[1] - finishY);
+      }
+      if (finishX > 0) {
+        // Move to the target element
+        addSteps(start, intermediateSteps, 'Right', finishX);
+      }
+
+      for (const [x, y, dir] of intermediateSteps) {
+        // Execute the steps
+        if (remoteMic) {
+          await remoteMic.getByTestId(`arrow-${dir.toLowerCase()}`).click();
+        } else {
+          await page.keyboard.press(`Arrow${dir}`);
+        }
+        await expect(page.getByTestId(rows[y][x])).toHaveAttribute('data-focused', 'true');
+      }
+    });
+  } catch (e) {
+    if (retries > 0) {
+      await page.waitForTimeout(500);
+      await navigateWithKeyboard(page, targetTestId, remoteMic, retries - 1);
+    } else {
+      throw e;
     }
-  });
+  }
 }

@@ -48,10 +48,10 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
       if (preselectedSongIndex > -1) songIndex = preselectedSongIndex;
       else if (firstNewSongIndex > -1) songIndex = preselectedSongIndex;
 
-      moveToSong(songIndex);
       setPreselected(true);
+      moveToSong(songIndex);
     }
-  }, [songList, moveToSong, preselectedSong, isLoading]);
+  }, [moveToSong, preselected, focusedSong, songList, preselectedSong, isLoading]);
 
   useEffect(() => {
     if (preselected && songList.length && songList[focusedSong] && !isLoading) {
@@ -76,7 +76,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
     setFilters,
     showFilters,
     setShowFilters,
-    isLoading,
+    isLoading: isLoading || !preselected,
     randomSong,
     selectedPlaylist,
     setSelectedPlaylist,

@@ -30,6 +30,8 @@ type FilterFunc = (songList: SongPreview[], ...args: any) => SongPreview[];
 
 const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedFilters?.search ?? '').length > 2;
 
+const emptyFilters: AppliedFilters = {};
+
 export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   language: (songList, language: string) => {
     if (language === '') return songList;
@@ -100,11 +102,10 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
   const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
     new URLSearchParams(window.location.search).get('playlist') ?? null,
   );
-
-  const [filters, setFilters] = useState<AppliedFilters>({});
+  const [filters, setFilters] = useState<AppliedFilters>(emptyFilters);
 
   useEffect(() => {
-    setFilters({});
+    setFilters(emptyFilters);
   }, [selectedPlaylist]);
 
   const deferredFilters = useDeferredValue(filters);
@@ -127,7 +128,7 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
 export default function useSongList() {
   const songList = useSongIndex();
   const {
-    value: { popular, favorites },
+    value: { popular },
     loading,
   } = useRecommendedSongs(songList.data);
 
@@ -184,7 +185,7 @@ export default function useSongList() {
     });
 
     return groups;
-  }, [filteredList, filters.search, favorites, popular, filters.edition]);
+  }, [filteredList, filters.search, popular, filters.edition]);
 
   return {
     groupedSongList,

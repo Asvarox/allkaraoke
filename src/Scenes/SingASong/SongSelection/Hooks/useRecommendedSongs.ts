@@ -52,11 +52,10 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
 
     return {
       popular: [...new Set([...actuallySungSongs, ...finalPopularSongs, ...songsToAdd, ...recentlyUpdatedSongs])],
-      favorites: {},
     };
   }, [excludedLanguages, loading, popularSongs.value, songs, sungSongs.value]);
 
-  const defaultValue = useMemo(() => ({ popular: [], favorites: {} as Record<string, boolean> }), []);
+  const defaultValue = useMemo(() => ({ popular: [] }), []);
 
   return { value: value ?? defaultValue, loading };
 }

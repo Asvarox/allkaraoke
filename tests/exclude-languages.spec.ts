@@ -40,7 +40,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.manageSongsPage.goToSelectSongLanguage();
     await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language1);
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(language2);
-    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
     await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
@@ -54,7 +54,7 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.manageSongsPage.goToSelectSongLanguage();
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(language1);
     await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language2);
-    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
     await expect(pages.songListPage.getSongElement(song2)).toBeVisible();

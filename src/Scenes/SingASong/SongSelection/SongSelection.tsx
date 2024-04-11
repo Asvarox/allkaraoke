@@ -31,7 +31,7 @@ interface Props {
 declare global {
   interface Window {
     __songList?: {
-      scrollToSong: (songId: string) => void;
+      scrollToSong: (songId: string) => boolean;
     };
   }
 }
@@ -75,11 +75,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   useBackgroundMusic(false);
   useBackground(true);
   useBlockScroll();
-
-  const [{ previewTop, previewLeft }, setPositions] = useState({
-    previewTop: 0,
-    previewLeft: 0,
-  });
   const {
     focusedGroup,
     focusedSong,
@@ -104,7 +99,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       groupedSongList
         .map((group) => group.songs)
         .flat()
-        .find((song) => song.song.id === songPreview.id),
+        .find((song) => song.song.id === songPreview?.id),
     [songPreview, groupedSongList],
   );
 
@@ -118,8 +113,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   useEffect(() => {
     handleResize(); // Recalculate width/height to account possible scrollbar appearing
-    list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
-  }, [width, list, focusedSong, focusedGroup, groupedSongList]);
+    if (!isLoading) {
+      list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
+    }
+  }, [width, list, focusedSong, focusedGroup, groupedSongList, isLoading]);
 
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
@@ -127,6 +124,10 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   const container = useRef<HTMLDivElement>(null);
 
+  const [{ previewTop, previewLeft }, setPositions] = useState({
+    previewTop: 0,
+    previewLeft: 0,
+  });
   useEffect(() => {
     const observer = new MutationObserver(() => {
       const soughtElement = document.querySelector<HTMLDivElement>(`[data-song-index="${focusedSong}"`);
@@ -136,10 +137,13 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
           previewLeft: soughtElement.offsetLeft,
           previewTop: soughtElement.offsetTop,
         });
+      } else if (!soughtElement && previewTop === 0) {
+        // The initial scroll didn't work - try again so the preview is in the right place
+        list.current?.scrollToSongInGroup(focusedGroup, focusedSong, 'auto');
       }
     });
 
-    if (container.current) {
+    if (container.current && !isLoading) {
       observer.observe(container.current, {
         childList: true,
         subtree: true,
@@ -148,18 +152,26 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
       return () => observer.disconnect();
     }
-  }, [focusedSong, previewTop, previewLeft]);
+  }, [focusedSong, previewTop, previewLeft, focusedGroup, isLoading]);
 
   // API for Playwright as with virtualization it's super tricky to test
   useEffect(() => {
     const getSongIndex = (songId: string) => songList.findIndex((song) => song.id === songId);
     window.__songList = {
       scrollToSong: (songId: string) => {
-        const songGroup = groupedSongList.find((group) => group.songs.some((song) => song.song.id === songId));
+        // If the song is in a new group, we need to remove the '-new-group' suffix
+        const [cleanSongId] = songId.split('-new-group');
+        const isNewGroup = songId.endsWith('-new-group');
+        const songGroup = groupedSongList.find(
+          (group) => !!group.isNew === isNewGroup && group.songs.some((song) => song.song.id === cleanSongId),
+        );
+
         if (songGroup) {
-          const songIndex = getSongIndex(songId);
+          const songIndex = getSongIndex(cleanSongId);
           list.current?.scrollToSongInGroup(songGroup.letter, songIndex, 'auto');
+          return true;
         }
+        return false;
       },
     };
 
@@ -173,7 +185,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       <Container
         songsPerRow={songsPerRow}
         style={{
-          '--song-group-header-height': `${Math.floor(songEntryHeight / 1.5)}px`,
+          '--song-group-header-height': `${Math.floor(songEntryHeight)}px`,
           '--song-entry-width': `${Math.floor(songEntryWidth)}px`,
           '--song-entry-height': `${Math.floor(songEntryHeight)}px`,
           '--song-list-gap': `${Math.floor(LIST_GAP_REM * baseUnit)}px`,
@@ -221,6 +233,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 GroupRowWrapper={GroupRow}
                 ref={list}
                 groups={groupedSongList}
+                itemHeight={Math.floor(songEntryHeight) + Math.floor(LIST_GAP_REM * baseUnit)}
                 components={components}
                 renderGroup={(group) => (
                   <SongsGroupContainer

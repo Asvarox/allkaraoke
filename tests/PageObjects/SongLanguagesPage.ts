@@ -67,7 +67,7 @@ export class SongLanguagesPagePO {
 
   public async continueAndGoToSongList() {
     await this.page.getByTestId('close-exclude-languages').click();
-    await this.page.waitForTimeout(2500);
+    await expect(this.page.getByTestId('song-preview')).toBeVisible();
   }
 
   public async navigateToSongListWithKeyboard(remoteMic?: Page) {
