@@ -21,6 +21,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 const selectionPlaylist = 'Selection';
+const engLanguage = 'English';
 
 const convertedSong = {
   ID: 'selection-test-new-convert-song',
@@ -29,10 +30,58 @@ const convertedSong = {
   author: 'Selection txt',
   sourceURL: 'https://example.com/source-url',
   videoID: 'W9nZ6u15yis',
-  language: 'English',
 };
 
-test('Selection playlist contain songs marked as new and popular', async ({ page }) => {
+const unknownSong = {
+  ID: 'e2e-christmas-english-1995',
+  title: 'New Christmas',
+};
+
+test('Adding completed song to the Selection playlist', async ({ page }) => {
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+
+  await test.step('Select Advanced setup', async () => {
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToMainMenu();
+  });
+
+  await test.step('Ensure song language is selected', async () => {
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('Navigate to the Selection playlist by keyboard', async () => {
+    await pages.songListPage.goToPlaylist('All');
+    await page.keyboard.press('ArrowLeft');
+    await page.keyboard.press('ArrowUp');
+    await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
+  });
+
+  await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
+    await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
+    await pages.songListPage.searchSong(unknownSong.title);
+    await pages.songListPage.focusSong(unknownSong.ID);
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.playTheSong();
+    pages.gamePage.skipIntroIfPossible();
+  });
+
+  await test.step('Skip to the Song list', async () => {
+    await pages.postGameResultsPage.skipScoresAnimation();
+    await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.goToSongList();
+  });
+
+  await test.step('After singing, the completed song should be added to Selection playlist as one of favourite', async () => {
+    await pages.songListPage.goToPlaylist(selectionPlaylist);
+    await expect(pages.songListPage.getSongElement(unknownSong.ID)).toBeVisible();
+    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unknownSong.ID);
+  });
+});
+
+test('Selection playlist contain songs marked as new and popular as well', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
@@ -65,7 +114,7 @@ test('Selection playlist contain songs marked as new and popular', async ({ page
   });
 
   await test.step('Ensure song language is selected', async () => {
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(convertedSong.language);
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
@@ -75,8 +124,8 @@ test('Selection playlist contain songs marked as new and popular', async ({ page
   });
 
   await test.step('Selection playlist should contain both new and popular songs', async () => {
-    await pages.songListPage.expectPlaylistContainSongsMarkedAsNew();
     await pages.songListPage.expectPlaylistContainSongsMarkedAsPopular();
+    await pages.songListPage.expectPlaylistContainSongsMarkedAsNew();
   });
 });
 
@@ -92,7 +141,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Go to the Song Languages - choose correct one', async () => {
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsSelected(convertedSong.language);
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
     await pages.songLanguagesPage.goBackToMainMenu();
   });
 
@@ -108,7 +157,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Play the song', async () => {
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
-    await pages.gamePage.skipIntro();
+    await pages.gamePage.skipIntroIfPossible();
   });
 
   await test.step('Skip to the Song List', async () => {
@@ -124,7 +173,7 @@ test('After singing a popular song, the popularity indicator changes to `played 
     await expect(pages.songListPage.selectionPlaylistTip).not.toBeVisible();
   });
 
-  await test.step('After singing, the song indicator should be changed from `popular` to `played`', async () => {
+  await test.step('After singing, the song indicator should be changed from `popular` to `played today`', async () => {
     await pages.songListPage.expectSongToBeMarkedAsPlayedToday(popSongID!);
   });
 });

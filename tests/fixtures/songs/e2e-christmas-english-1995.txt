@@ -18,9 +18,5 @@
 - 50
 : 60 10 0 Fourth 
 : 75 10 0 Fifth 
-: 90 10 0 Seventh 
-- 110 130
-- 140
-: 150 10 0 Eight 
-: 165 10 0 Nine 
+: 90 10 0 Seventh
 E
