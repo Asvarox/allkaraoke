@@ -1,3 +1,4 @@
+import { backgroundTheme } from 'Elements/LayoutWithBackground';
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
 import { RemoteMicPermissions } from 'Scenes/Settings/SettingsState';
 import { Params } from 'hooks/useKeyboard';
@@ -136,7 +137,7 @@ export interface NetworkRemoteMicListMessage {
 }
 export interface NetworkStyleChangeMessage {
   t: 'style-change';
-  style: 'christmas' | 'normal';
+  style: backgroundTheme;
 }
 
 export type NetworkMessages =

@@ -22,7 +22,7 @@ export type PhoneTabs = 'microphone' | 'song-list' | 'settings';
 
 function RemoteMic() {
   const roomId = useQueryParam('room');
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
+  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
   useLayoutEffect(() => {
     if (style === 'christmas') {
       switchToChristmasColors();
@@ -30,7 +30,7 @@ function RemoteMic() {
       restoreDefaultColors();
     }
   }, [style]);
-  useBackground(true, style === 'christmas');
+  useBackground(true, style);
   const [activeTab, setActiveTab] = useState<PhoneTabs>('microphone');
 
   const [connectionStatus, connectionError] = useEventListener(events.karaokeConnectionStatusChange) ?? [

@@ -3,40 +3,42 @@ import styled from '@emotion/styled';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
+export type backgroundTheme = 'regular' | 'christmas';
+
 export const BackgroundContext = createContext({
   visible: true,
   setVisibility: (visible: boolean): void => undefined,
-  setChristmas: (visible: boolean): void => undefined,
+  setTheme: (theme: backgroundTheme): void => undefined,
 });
 
-export const useBackground = (shouldBeVisible: boolean, christmas = false) => {
-  const { setVisibility, setChristmas } = useContext(BackgroundContext);
+export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme = 'regular') => {
+  const { setVisibility, setTheme } = useContext(BackgroundContext);
 
   useEffect(() => {
     setVisibility(shouldBeVisible);
   }, [shouldBeVisible, setVisibility]);
 
   useEffect(() => {
-    setChristmas(christmas);
-  }, [christmas, setChristmas]);
+    setTheme(theme);
+  }, [theme, setTheme]);
 };
 
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
-  const [christmas, setChristmas] = useState(false);
+  const [theme, setTheme] = useState<backgroundTheme>('regular');
 
   return (
-    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setChristmas }}>
-      {visible && <Background christmas={christmas} />}
+    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme }}>
+      {visible && <Background bgtheme={theme} />}
       {children}
     </BackgroundContext.Provider>
   );
 }
 
-export const BackgroundStatic = styled.div<{ christmas?: boolean }>`
+export const BackgroundStatic = styled.div<{ bgtheme: backgroundTheme }>`
   background-color: white;
   ${(props) =>
-    props.christmas
+    props.bgtheme === 'christmas'
       ? css`
           background-image: linear-gradient(
             -45deg,

@@ -15,7 +15,7 @@ interface Props {
 }
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
+  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
   const selectPlayer = (player: 0 | 1 | 2 | 3 | null) => {
     RemoteMicClient.requestPlayerChange(id, player);
     onModalClose();

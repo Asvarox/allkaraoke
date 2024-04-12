@@ -8,11 +8,11 @@ const enableChristmasMode = () => {
 
 const disableChristmasMode = () => {
   restoreDefaultColors();
-  RemoteMicManager.broadcast({ t: 'style-change', style: 'normal' });
+  RemoteMicManager.broadcast({ t: 'style-change', style: 'regular' });
 };
 
-// ChristmasModeSetting.addListener((enabled) => {
-//   if (enabled) {
+// BackgroundThemeSetting.addListener((style) => {
+//   if (style === 'christmas') {
 //     enableChristmasMode();
 //   } else {
 //     disableChristmasMode();
@@ -20,7 +20,7 @@ const disableChristmasMode = () => {
 // });
 //
 // events.remoteMicConnected.subscribe((remoteMic) => {
-//   if (ChristmasModeSetting.get()) {
+//   if (BackgroundThemeSetting.get() === 'christmas') {
 //     RemoteMicManager.getRemoteMicById(remoteMic.id)?.connection.send({ t: 'style-change', style: 'christmas' });
 //   }
 // });

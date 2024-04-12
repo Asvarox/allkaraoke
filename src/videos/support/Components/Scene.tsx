@@ -38,6 +38,7 @@ export const Scene: React.FC<Props> = ({ children, delay = 0, transition = true,
     <>
       {transition && <TransitionCircles delay={delay} duration={30} id={id} />}
       <BackgroundVariant
+        bgtheme="regular"
         data-id={id}
         red={color === 'red'}
         style={{

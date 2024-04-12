@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { ChristmasModeSetting, GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import {
   ExpandedData,
   FinalSongCard,
@@ -31,23 +31,23 @@ interface Props {
 const PREVIEW_LENGTH = 30;
 
 const useChristmasSongTheme = (songPreview: SongPreview) => {
-  const [christmasMode, setChristmasMode] = useSettingValue(ChristmasModeSetting);
+  const [backgroundTheme, setBackgroundTheme] = useSettingValue(BackgroundThemeSetting);
   const christmasSong = isChristmasSong(songPreview);
-  useBackground(true, christmasSong);
+  useBackground(true, christmasSong ? 'christmas' : 'regular');
 
   useEffect(() => {
     if (christmasSong) {
-      setChristmasMode(true);
+      setBackgroundTheme('christmas');
     }
   }, []);
 
   useEffect(() => {
-    if (!christmasMode && christmasSong) {
-      setChristmasMode(true);
-    } else if (christmasMode && !christmasSong) {
-      setChristmasMode(false);
+    if (backgroundTheme !== 'christmas' && christmasSong) {
+      setBackgroundTheme('christmas');
+    } else if (backgroundTheme === 'christmas' && !christmasSong) {
+      setBackgroundTheme('regular');
     }
-  }, [christmasMode, songPreview]);
+  }, [backgroundTheme, songPreview]);
 };
 
 export default function SongPreviewComponent({

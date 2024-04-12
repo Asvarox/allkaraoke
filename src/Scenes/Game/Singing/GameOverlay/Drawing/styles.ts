@@ -5,6 +5,12 @@ export const christmasGreenStrokeBase = tinycolor('rgb(15, 138, 95)');
 export const christmasRedFillBase = tinycolor('rgb(245, 98, 77)');
 export const christmasRedStrokeBase = tinycolor('rgb(204, 35, 30)');
 
+export const eurovisionYellowFillBase = tinycolor('rgb(245, 220, 21)');
+export const eurovisionPinkFillBase = tinycolor('rgb(255, 70, 223)');
+export const eurovisionOrangeFillBase = tinycolor('rgb(255, 119, 20)');
+export const eurovisionBlueFillBase = tinycolor('rgb(31, 192, 223)');
+export const eurovisionVioletFillBase = tinycolor('rgb(102, 44, 182)');
+
 export const blueFillBase = tinycolor('rgb(0, 153, 255)');
 export const blueStrokeBase = tinycolor('rgb(0, 77, 128)');
 
@@ -51,8 +57,15 @@ export const colorSets = {
   red: colorSet(redFillBase, redStrokeBase),
   green: colorSet(tinycolor('rgb(0,183,0)'), tinycolor('rgb(0,84,0)')),
   yellow: colorSet(tinycolor('rgb(239,209,0)'), tinycolor('rgb(114,84,0)')),
+
   christmasGreen: colorSet(christmasGreenFillBase, christmasGreenStrokeBase),
   christmasRed: colorSet(christmasRedFillBase, christmasRedStrokeBase),
+
+  eurovisionYellow: colorSet(eurovisionYellowFillBase, eurovisionYellowFillBase),
+  eurovisionPink: colorSet(eurovisionPinkFillBase, eurovisionPinkFillBase),
+  eurovisionOrange: colorSet(eurovisionOrangeFillBase, eurovisionOrangeFillBase),
+  eurovisionBlue: colorSet(eurovisionBlueFillBase, eurovisionBlueFillBase),
+  eurovisionViolet: colorSet(eurovisionVioletFillBase, eurovisionVioletFillBase),
 };
 
 let playerColors = [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow];
