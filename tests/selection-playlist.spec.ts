@@ -66,7 +66,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
     await pages.songListPage.focusSong(unknownSong.ID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
-    pages.gamePage.skipIntroIfPossible();
+    await pages.gamePage.skipIntroIfPossible();
   });
 
   await test.step('Skip to the Song list', async () => {
@@ -124,6 +124,55 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
     await pages.songListPage.goToPlaylist(selectionPlaylist);
     await expect(pages.songListPage.getSongElement(unknownSong.ID)).toBeVisible();
   });
+});
+
+test('A song that is less than 80% complete is not adding to the Selection playlist', async ({ page }) => {
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+
+  await test.step('Select Advanced setup', async () => {
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToMainMenu();
+  });
+
+  await test.step('Ensure song language is selected', async () => {
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('Search the song - expect song is not visible in Selection playlist yet', async () => {
+    await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
+    await pages.songListPage.closeTheSelectionPlaylistTip();
+    await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
+    await pages.songListPage.searchSong(unknownSong.title);
+  });
+
+  await test.step('Toggle game mode to `Cooperation` and play the song', async () => {
+    await pages.songListPage.openPreviewForSong(unknownSong.ID);
+    await pages.songPreviewPage.toggleGameMode();
+    await pages.songPreviewPage.toggleGameMode();
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.playTheSong();
+  });
+
+  await test.step('After reach the expected score - exit the game', async () => {
+    await pages.gamePage.skipIntroIfPossible();
+    await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
+    await pages.gamePage.exitSong();
+  });
+
+  await test.step('Skip to the Song list', async () => {
+    await pages.postGameResultsPage.skipScoresAnimation();
+    await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.goToSongList();
+  });
+
+  await test.step('A song that is less then 80% complete, should not be added to the Selection playlist', async () => {});
+  await pages.songListPage.goToPlaylist(selectionPlaylist);
+  await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
+  await pages.songListPage.searchSong(unknownSong.title);
+  await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unknownSong.ID);
 });
 
 test('Selection playlist contain songs marked as new and popular as well', async ({ page }) => {
