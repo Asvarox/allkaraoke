@@ -24,6 +24,8 @@ function Welcome() {
     <MenuWithLogo>
       <Helmet>
         <title>Main Menu | AllKaraoke.Party - Free Online Karaoke Party Game</title>
+        <link rel="preload" href="/songs/index.json" as="fetch" type="application/json" crossOrigin="anonymous" />
+        <link rel="preload" href="/mostPopularSongs.json" as="fetch" type="application/json" crossOrigin="anonymous" />
       </Helmet>
       {backgroundMusicSelection !== 'Classic' && (
         <BackgroundMusicCredit>

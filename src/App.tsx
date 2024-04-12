@@ -2,14 +2,14 @@ import { ErrorBoundary, withProfiler } from '@sentry/react';
 import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
 import RemoteMic from 'Scenes/RemoteMic/RemoteMic';
 import Settings from 'Scenes/Settings/Settings';
-import { Route, Router } from 'wouter';
+import { Route, Router, Switch } from 'wouter';
 import Convert from './Scenes/Convert/Convert';
 import Edit from './Scenes/Edit/Edit';
 import Jukebox from './Scenes/Jukebox/Jukebox';
 import SelectInput from './Scenes/SelectInput/SelectInput';
 
 import { Global, css } from '@emotion/react';
-import { Theme, ThemeProvider, createTheme } from '@mui/material';
+import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
 import { ErrorFallback } from 'Elements/ErrorFallback';
 import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
 import PageLoader from 'Elements/PageLoader';
@@ -60,34 +60,36 @@ function App() {
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>
             <Router base={import.meta.env.BASE_URL}>
-              <Route path={routePaths.INDEX} component={LandingPage} />
-              <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
-              <Route path={routePaths.MENU} component={Welcome} />
-              <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
-              <Route path={routePaths.JUKEBOX} component={Jukebox} />
-              <Route path={routePaths.GAME}>
-                {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
-                <Game />
-              </Route>
-              <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
-              <Route path={routePaths.SETTINGS} component={Settings} />
-              <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />
-              <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
-              <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
-              <Route path="social-media-elements" component={SocialMediaElements} />
-              <Route path={routePaths.CONVERT} component={() => <Convert />} />
-              <Route
-                path={routePaths.EDIT_SONGS_LIST}
-                component={() => (
-                  <Suspense fallback={<PageLoader />}>
-                    <LazySongList />
-                  </Suspense>
-                )}
-              />
-              <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
-              <Route path={routePaths.EDIT_SONG}>
-                <Edit />
-              </Route>
+              <Switch>
+                <Route path={routePaths.QUICK_SETUP} component={QuickSetup} />
+                <Route path={routePaths.MENU} component={Welcome} />
+                <Route path={routePaths.EXCLUDE_LANGUAGES} component={ExcludeLanguages} />
+                <Route path={routePaths.JUKEBOX} component={Jukebox} />
+                <Route path={routePaths.GAME}>
+                  {/*<Suspense fallback={<PageLoader />}><LazyGame /></Suspense>*/}
+                  <Game />
+                </Route>
+                <Route path={routePaths.SELECT_INPUT} component={SelectInput} />
+                <Route path={routePaths.SETTINGS} component={Settings} />
+                <Route path={routePaths.SETTINGS_REMOTE_MICS} component={RemoteMicSettings} />
+                <Route path={routePaths.REMOTE_MIC} component={RemoteMic} />
+                <Route path={routePaths.MANAGE_SONGS} component={ManageSongs} />
+                <Route path="social-media-elements" component={SocialMediaElements} />
+                <Route path={routePaths.CONVERT} component={() => <Convert />} />
+                <Route
+                  path={routePaths.EDIT_SONGS_LIST}
+                  component={() => (
+                    <Suspense fallback={<PageLoader />}>
+                      <LazySongList />
+                    </Suspense>
+                  )}
+                />
+                <Route path="edit/get-songs-bpms" component={GetSongsBPMs} />
+                <Route path={routePaths.EDIT_SONG}>
+                  <Edit />
+                </Route>
+                <Route path={routePaths.INDEX} component={LandingPage} />
+              </Switch>
             </Router>
           </KeyboardHelpProvider>
         </LayoutWithBackgroundProvider>

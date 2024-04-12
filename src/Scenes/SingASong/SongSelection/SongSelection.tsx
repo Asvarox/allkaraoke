@@ -18,6 +18,7 @@ import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Link } from 'wouter';
 
 interface Props {
   onSongSelected: (songSetup: SingSetup & { song: SongPreviewEntity }) => void;
@@ -149,10 +150,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   highlight={group.letter === 'New'}>
                   <SongsGroupHeader>{group.letter}</SongsGroupHeader>
                   <SongsGroup>
-                    {group.songs.map(({ song, index, favorite, isPopular }) => (
+                    {group.songs.map(({ song, index, isPopular }) => (
                       <SongListEntry
                         isPopular={isPopular}
-                        favorite={favorite}
                         key={song.id}
                         song={song}
                         handleClick={focusedSong === index ? expandSong : moveToSong}
@@ -167,7 +167,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 </SongsGroupContainer>
               ))}
               <AddSongs>
-                Missing a song? Try <a href="convert">adding one</a> yourself!
+                Missing a song? Try{' '}
+                <Link to="convert/">
+                  <a>adding one</a>
+                </Link>{' '}
+                yourself!
               </AddSongs>
             </SongListContainer>
           </>

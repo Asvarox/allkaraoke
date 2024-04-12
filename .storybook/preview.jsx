@@ -1,5 +1,5 @@
 import { Global } from '@emotion/react';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useMemo } from 'react';
 import '../src/index.css';
 import styles from '../src/styles';

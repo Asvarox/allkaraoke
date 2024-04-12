@@ -30,8 +30,8 @@ function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: P
   const currentBeat = GameState.getCurrentBeat();
   const beatLength = GameState.getSongBeatLength();
 
-  const previousChange = Math.max(0, ...thisPlayerChanges.filter((beat) => beat <= section?.start ?? -Infinity));
-  const nextChange = thisPlayerChanges.find((beat) => beat > section?.start ?? Infinity) ?? Infinity;
+  const previousChange = Math.max(0, ...thisPlayerChanges.filter((beat) => beat <= (section?.start ?? -Infinity)));
+  const nextChange = thisPlayerChanges.find((beat) => beat > (section?.start ?? Infinity)) ?? Infinity;
   const timeToNextChange = (nextChange - currentBeat) * beatLength;
 
   const passTheMicProgress = (nextChange - currentBeat) / (nextChange - previousChange);

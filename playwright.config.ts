@@ -143,7 +143,8 @@ const config: PlaywrightTestConfig = {
   webServer: [
     prodRun
       ? {
-          command: process.env.CI ? 'yarn build:serve:sourcemap' : 'yarn build:serve',
+          // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
+          command: process.env.CI ? 'yarn build:serve:e2e' : 'yarn build:serve:e2e:fast',
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,

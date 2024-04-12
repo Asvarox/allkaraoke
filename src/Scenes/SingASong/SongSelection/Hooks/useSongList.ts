@@ -10,7 +10,7 @@ import clearString from 'utils/clearString';
 
 export interface SongGroup {
   letter: string;
-  songs: Array<{ index: number; song: SongPreview; favorite?: boolean; isPopular: boolean }>;
+  songs: Array<{ index: number; song: SongPreview; isPopular: boolean }>;
   isNew?: boolean;
 }
 
@@ -157,7 +157,7 @@ export default function useSongList() {
           songs: newSongs.map((song) => ({
             song,
             index: filteredList.indexOf(song),
-            favorite: favorites[song.id],
+
             isPopular: popular.includes(song.id),
           })),
         });
@@ -176,7 +176,7 @@ export default function useSongList() {
           groups.push(group);
         }
 
-        group.songs.push({ index: index, song, favorite: favorites[song.id], isPopular: popular.includes(song.id) });
+        group.songs.push({ index: index, song, isPopular: popular.includes(song.id) });
       } catch (e) {
         console.error(e);
         captureException(e);

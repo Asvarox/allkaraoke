@@ -28,7 +28,7 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
   );
 
   const canSkip = useMemo(() => {
-    const singingEndTime = beatToMs(singingEndBeat, GameState.getSong()!);
+    const singingEndTime = beatToMs(singingEndBeat, GameState.getSong()!) + (GameState.getSong()?.gap ?? 0);
 
     return isEnabled && duration * 1000 > singingEndTime + SHOW_OUTRO_THRESHOLD_MS;
   }, [duration, singingEndBeat, isEnabled]);
@@ -59,7 +59,7 @@ function SkipOutro({ onSongEnd, isEnabled }: Props) {
   useKeyboardHelp(help, shouldBeVisible);
 
   return !mobilePhoneMode && canSkip ? (
-    <Container visible={shouldBeVisible} data-test="skip-outro-info">
+    <Container visible={shouldBeVisible} data-test="skip-outro-info" data-visible={shouldBeVisible}>
       Press <Kbd>Enter</Kbd> to skip the outro
     </Container>
   ) : null;

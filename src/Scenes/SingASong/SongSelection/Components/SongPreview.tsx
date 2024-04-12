@@ -10,7 +10,6 @@ import {
   SongListEntryDetailsTitle,
 } from 'Scenes/SingASong/SongSelection/Components/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/Components/SongSettings';
-import FavoritesService from 'Songs/FavoritesService';
 import isChristmasSong from 'Songs/utils/isChristmasSong';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
@@ -62,7 +61,6 @@ export default function SongPreviewComponent({
   onPlay,
   isPopular,
 }: Props) {
-  const isFavorite = useMemo(() => FavoritesService.isFavorite(songPreview.id), [songPreview.id]);
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
@@ -108,7 +106,6 @@ export default function SongPreviewComponent({
       )}
       <SongPreviewContainer
         isPopular={isPopular}
-        favorite={isFavorite}
         background={expanded || showVideo}
         video={
           <Video show={showVideo} expanded={expanded} height={finalHeight} id="preview-video-container">

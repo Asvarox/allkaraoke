@@ -1,0 +1,290 @@
+#ARTIST:The Doors
+#TITLE:Break On Through
+#CREATOR:Peschi
+#BPM:367,7
+#YEAR:1966
+#VIDEO:v=rOpQjD-rX0g
+#GENRE:None
+#LANGUAGE:English
+#GAP:9250,978260869566
+#ALLKARAOKE_ID:the-doors-break-on-through
+#ALLKARAOKE_LASTUPDATE:2024-04-04T19:51:50.004Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_VOLUME:0,73
+#MP3:The Doors - Break On Through.mp3
+: 25 3 -1 You 
+: 29 3 -1 know 
+: 33 3 -1 the 
+: 37 7 -1 day 
+: 45 7 -1 des
+: 53 7 -1 troys 
+: 61 3 -3 the 
+: 65 8 -1 night 
+- 73 76
+- 76
+: 101 6 2 Night 
+: 109 3 2 de
+: 113 9 2 vides 
+: 123 5 1 the 
+: 129 8 -1 day 
+- 137 138
+- 138
+: 163 7 -1 Tried 
+: 171 4 -1 to 
+: 177 8 2 run 
+- 185
+: 199 5 2 Tried 
+: 205 3 -1 to 
+: 209 12 2 hide 
+- 221
+: 229 3 7 Break 
+: 233 6 7 on 
+: 241 8 4 through 
+- 249
+: 255 3 7 To 
+: 259 3 4 the 
+: 263 3 7 o
+: 267 5 7 ther 
+: 273 10 4 side 
+- 283
+: 295 3 7 Break 
+: 299 5 7 on 
+: 305 6 4 through 
+- 311
+: 317 3 7 To 
+: 321 3 4 the 
+: 325 3 7 o
+: 329 5 7 ther 
+: 335 12 4 side 
+- 347
+: 359 3 2 Break 
+: 363 4 2 on 
+: 369 8 4 through 
+- 377
+: 381 3 -1 To 
+: 385 3 -2 the 
+: 389 3 -1 o
+: 393 4 -8 ther 
+: 399 10 -8 side 
+- 409 518
+- 518
+: 543 3 -1 We 
+: 547 3 -1 cha
+: 551 3 -1 sed 
+: 555 7 -1 our 
+: 563 7 -1 plea
+: 571 5 -3 sures 
+: 577 10 -1 here 
+- 587 590
+- 590
+: 615 3 2 Dug 
+: 619 5 2 our 
+: 625 7 2 trea
+: 633 7 1 sures 
+: 641 12 -1 there 
+- 653
+: 665 3 -1 But 
+: 669 3 -1 can 
+: 673 3 2 you 
+: 677 7 -1 still 
+: 685 5 -1 re
+: 691 8 2 call 
+- 699
+: 707 3 2 The 
+: 711 5 -1 time 
+: 717 5 2 we 
+: 723 10 2 cried 
+- 733
+: 745 5 7 Break 
+: 751 5 7 on 
+: 757 9 4 through 
+- 766
+: 767 5 7 To 
+: 773 3 4 the 
+: 777 3 7 o
+: 781 7 7 ther 
+: 789 12 4 side 
+- 801
+: 811 5 7 Break 
+: 817 5 7 on 
+: 823 8 4 through 
+- 831
+: 835 3 7 To 
+: 839 3 4 the 
+: 843 3 7 o
+: 847 7 7 ther 
+: 855 12 4 side 
+- 867 1442
+- 1442
+: 1467 9 4 E
+: 1477 9 4 very
+: 1487 9 4 bo
+: 1497 12 4 dy 
+: 1523 15 4 loves 
+: 1539 9 4 my 
+: 1549 11 4 ba
+: 1561 10 4 by 
+- 1571
+: 1593 9 4 E
+: 1603 9 4 very
+: 1613 9 4 bo
+: 1623 12 4 dy 
+: 1655 13 4 loves 
+: 1669 9 4 my 
+: 1679 9 4 ba
+: 1689 12 4 by 
+- 1701
+: 1711 5 7 She 
+: 1717 5 7 get 
+: 1723 14 7 high 
+- 1737 1750
+- 1750
+: 1775 7 7 She 
+: 1783 5 7 get 
+: 1789 14 7 high 
+- 1803 1812
+- 1812
+: 1837 5 7 She 
+: 1843 5 7 get 
+: 1849 16 7 high 
+- 1865 1876
+- 1876
+: 1901 5 7 She 
+: 1907 5 7 get 
+: 1913 7 7 high 
+- 1920
+: 1921 11 1 Ye
+: 1933 21 5 ee
+: 1955 9 0 e
+: 1965 12 -3 ah 
+- 1977 2056
+- 2056
+: 2081 5 -1 I 
+: 2087 3 -1 found 
+: 2091 3 -1 an 
+: 2095 7 -1 is
+: 2103 5 -1 land 
+: 2109 3 -1 in 
+: 2113 7 -3 your 
+: 2121 16 -1 arms 
+- 2137
+: 2159 7 2 Coun
+: 2167 5 2 try 
+: 2173 5 2 in 
+: 2179 7 1 your 
+: 2187 18 -1 eyes 
+- 2205
+: 2225 7 -1 Arms 
+: 2233 5 -1 that 
+: 2239 7 2 chain 
+: 2247 6 -1 us 
+- 2253
+: 2263 5 2 Eyes 
+: 2269 3 -1 that 
+: 2273 10 2 lie 
+- 2283
+: 2291 5 7 Break 
+: 2297 7 7 on 
+: 2305 8 4 through 
+- 2313
+: 2317 3 7 To 
+: 2321 3 4 the 
+: 2325 3 7 o
+: 2329 7 7 ther 
+: 2337 12 4 side 
+- 2349
+: 2359 7 7 Break 
+: 2367 5 7 on 
+: 2373 8 4 through 
+- 2381
+: 2383 3 7 To 
+: 2387 3 4 the 
+: 2391 3 7 o
+: 2395 7 7 ther 
+: 2403 10 4 side 
+- 2413
+: 2423 5 2 Break 
+: 2429 5 2 on 
+: 2435 6 4 through 
+- 2441
+: 2443 10 -1 Owww 
+: 2477 5 -2 o
+: 2483 5 -1 h
+: 2489 7 -3 ye
+: 2497 9 -5 a
+: 2507 34 -8 aah 
+- 2541 2664
+- 2664
+: 2689 7 6 Made 
+: 2697 5 0 the 
+: 2703 10 2 scene 
+- 2713
+: 2723 5 4 Week 
+: 2729 5 2 to 
+: 2735 10 4 week 
+- 2745
+: 2757 5 4 Day 
+: 2763 3 2 to 
+: 2767 12 4 day 
+- 2779
+: 2789 7 4 Hour 
+: 2797 3 2 to 
+: 2801 12 4 hour 
+- 2813
+: 2821 3 4 The 
+: 2825 7 4 gate 
+: 2833 3 4 is 
+: 2837 12 4 straight 
+- 2849
+: 2861 5 2 Deep 
+: 2867 5 2 and 
+: 2873 10 4 wild 
+- 2883
+: 2893 5 7 Break 
+: 2899 3 7 on 
+: 2903 12 4 through 
+- 2915
+: 2921 3 7 To 
+: 2925 3 4 the 
+: 2929 3 7 o
+: 2933 5 7 ther 
+: 2939 10 4 side 
+- 2949
+: 2961 5 7 Break 
+: 2967 5 7 on 
+: 2973 8 4 through 
+- 2981
+: 2985 3 7 To 
+: 2989 3 4 the 
+: 2993 3 7 o
+: 2997 5 7 ther 
+: 3003 14 4 side 
+- 3017
+: 3029 5 4 Break 
+: 3035 5 4 on 
+: 3041 10 4 through 
+- 3051
+: 3061 5 4 Break 
+: 3067 5 4 on 
+: 3073 12 4 through 
+- 3085
+: 3095 5 4 Break 
+: 3101 5 4 on 
+: 3107 10 4 through 
+- 3117
+: 3127 5 4 Break 
+: 3133 5 4 on 
+: 3139 10 4 through 
+- 3149
+: 3163 8 4 Yeah 
+: 3179 8 4 yeah 
+: 3195 8 4 yeah 
+: 3215 8 4 yeah 
+- 3223
+: 3227 10 4 Yeah 
+: 3243 10 4 yeah 
+: 3259 10 4 yeah 
+: 3277 10 4 yeah 
+: 3293 12 4 yeah 
+E
