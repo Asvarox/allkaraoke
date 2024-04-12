@@ -21,6 +21,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 const selectionPlaylist = 'Selection';
+const engPlaylist = 'English';
 const engLanguage = 'English';
 
 const convertedSong = {
@@ -78,6 +79,50 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
     await expect(pages.songListPage.getSongElement(unknownSong.ID)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unknownSong.ID);
+  });
+});
+
+test('Adding song in above 80% complete to the Selection playlist', async ({ page }) => {
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+
+  await test.step('Select Advanced setup', async () => {
+    await pages.inputSelectionPage.selectAdvancedSetup();
+    await pages.advancedConnectionPage.goToMainMenu();
+  });
+
+  await test.step('Go to the Song languages - choose correct one', async () => {
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToSelectSongLanguage();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(engLanguage);
+    await pages.songLanguagesPage.goBackToMainMenu();
+  });
+
+  await test.step('Go to the Song list and choose the song - ensure song is not visible in Selection playlist yet', async () => {
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
+    await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
+    await pages.songListPage.goToPlaylist(engPlaylist);
+    await pages.songListPage.openPreviewForSong(unknownSong.ID);
+  });
+
+  await test.step('Play the song and after above 80% complete - exit the song', async () => {
+    await pages.songPreviewPage.goNext();
+    await pages.songPreviewPage.playTheSong();
+    await pages.gamePage.skipIntroIfPossible();
+    await page.waitForTimeout(7000);
+    await pages.gamePage.exitSong();
+  });
+
+  await test.step('Skip to the Song list', async () => {
+    await pages.postGameResultsPage.skipScoresAnimation();
+    await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.goToSongList();
+  });
+
+  await test.step('A song that is more than 80% complete, should be added to the Selection playlist', async () => {
+    await pages.songListPage.goToPlaylist(selectionPlaylist);
+    await expect(pages.songListPage.getSongElement(unknownSong.ID)).toBeVisible();
   });
 });
 

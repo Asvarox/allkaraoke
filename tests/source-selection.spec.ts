@@ -26,7 +26,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
   await pages.songLanguagesPage.continueAndGoToSongList();
   await pages.songListPage.openPreviewForSong(song1);
   await pages.songPreviewPage.goNext();
-  await pages.songPreviewPage.setupMics();
+  await pages.songPreviewPage.goToInputSelection();
   await pages.inputSelectionPage.selectAdvancedSetup();
 
   // Connect microphone
@@ -44,7 +44,7 @@ test('Source selection in sing settings', async ({ page, context, browser }) => 
   });
 
   await test.step('Make sure the input is not monitored anymore if it is not in use', async () => {
-    await pages.songPreviewPage.setupMics();
+    await pages.songPreviewPage.goToInputSelection();
     await pages.advancedConnectionPage.togglePlayerMicrophoneSource(blueMicNum);
     await expect(remoteMicBlue._page.getByTestId('monitoring-state')).toContainText('off', {
       ignoreCase: true,

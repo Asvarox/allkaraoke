@@ -104,7 +104,7 @@ export class SongPreviewPagePO {
     await expect(this.getPlayerTrackSettings(playerNumber)).toHaveAttribute('data-test-value', `${trackNumber}`);
   }
 
-  public async setupMics() {
+  public async goToInputSelection() {
     await this.page.getByTestId('select-inputs-button').click();
   }
 
