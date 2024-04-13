@@ -26,6 +26,7 @@ interface Props {
   width: number;
   height: number;
   isPopular: boolean;
+  forceFlag: boolean;
 }
 
 const PREVIEW_LENGTH = 30;
@@ -64,6 +65,7 @@ export default function SongPreviewComponent({
   onExitKeyboardControl,
   onPlay,
   isPopular,
+  forceFlag,
 }: Props) {
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
@@ -109,6 +111,7 @@ export default function SongPreviewComponent({
         <SongBPMIndicator width={videoWidth} height={videoHeight} left={left} top={top} song={songPreview} />
       )}
       <SongPreviewContainer
+        forceFlag={forceFlag}
         isPopular={isPopular}
         background={expanded || showVideo}
         video={

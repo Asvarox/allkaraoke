@@ -102,6 +102,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
   const loading = isLoading || !groupedSongList || !width;
+  const forceFlag = selectedPlaylist === 'Eurovision';
 
   return (
     <LayoutGame>
@@ -131,6 +132,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               {groupedSongList.length === 0 && <NoSongsFound>No songs found</NoSongsFound>}
               {songPreview && (
                 <SongPreview
+                  forceFlag={forceFlag}
                   isPopular={!!songPreviewInGroup?.isPopular}
                   songPreview={songPreview}
                   onPlay={onSongSelected}
@@ -152,6 +154,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   <SongsGroup>
                     {group.songs.map(({ song, index, isPopular }) => (
                       <SongListEntry
+                        forceFlag={forceFlag}
                         isPopular={isPopular}
                         key={song.id}
                         song={song}

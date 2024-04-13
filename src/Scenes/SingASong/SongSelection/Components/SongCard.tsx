@@ -17,6 +17,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   handleClick?: (index: number) => void;
   video?: ReactNode;
   isPopular: boolean;
+  forceFlag: boolean;
 }
 
 export const FinalSongCard = ({
@@ -29,6 +30,7 @@ export const FinalSongCard = ({
   isPopular,
   background = true,
   expanded = false,
+  forceFlag = false,
   ...restProps
 }: Props) => {
   const onClickCallback = useCallback(() => (handleClick ? handleClick(index!) : undefined), [handleClick, index]);
@@ -66,7 +68,7 @@ export const FinalSongCard = ({
               <SongListEntryStats song={song} />
             </>
           )}
-          {!expanded && <Language song={song} />}
+          {!expanded && <Language song={song} forceFlag={forceFlag} />}
         </ExpandedData>
       </SongInfo>
       {children}
