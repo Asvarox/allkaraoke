@@ -10,6 +10,7 @@
 #EDITION:ESC 2024
 #ALLKARAOKE_ID:isaak-always-on-the-run
 #ALLKARAOKE_LASTUPDATE:2024-04-12T19:13:54.804Z
+#ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=184581
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28750
