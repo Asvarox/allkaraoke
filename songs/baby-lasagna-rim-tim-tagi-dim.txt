@@ -10,6 +10,7 @@
 #EDITION:ESC 2024
 #ALLKARAOKE_ID:baby-lasagna-rim-tim-tagi-dim
 #ALLKARAOKE_LASTUPDATE:2024-04-12T19:19:42.650Z
+#ALLKARAOKE_ARTISTORIGIN:HR
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=175474
 #ALLKARAOKE_REALBPM:128
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28759
