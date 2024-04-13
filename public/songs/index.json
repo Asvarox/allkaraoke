@@ -633,6 +633,35 @@
     "local": false
   },
   {
+    "id": "abba-waterloo",
+    "title": "Waterloo",
+    "artist": "ABBA",
+    "video": "Sj_9CiNkkn4",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.3,
+    "gap": 7103.2007073386385,
+    "year": "1974",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-13T05:30:17.705Z",
+    "edition": "ESC 1974",
+    "genre": "Pop",
+    "realBpm": 148,
+    "volume": 0.75,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4990",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbawaterloo",
+    "local": false
+  },
+  {
     "id": "abby-trott-lifelight-super-smash-bros-ultimate-opening",
     "title": "Lifelight (Super Smash Bros Ultimate Opening)",
     "artist": "Abby Trott",
@@ -4717,6 +4746,34 @@
     "local": false
   },
   {
+    "id": "baby-lasagna-rim-tim-tagi-dim",
+    "title": "Rim Tim Tagi Dim",
+    "artist": "Baby Lasagna",
+    "video": "kmg8EAD-Kjw",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.92,
+    "gap": -125.6723976242576,
+    "year": "2024",
+    "lastUpdate": "2024-04-12T19:19:42.650Z",
+    "edition": "ESC 2024",
+    "genre": "Techno",
+    "realBpm": 128,
+    "volume": 0.8,
+    "author": "Mircosoft93",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28759",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "babylasagnarimtimtagidim",
+    "local": false
+  },
+  {
     "id": "babymetal-gimme-chocolate",
     "title": "Gimme Chocolate!",
     "artist": "Babymetal",
@@ -5628,7 +5685,7 @@
     "year": "2003",
     "artistOrigin": "GB",
     "lastUpdate": "2023-12-22T16:33:51.882Z",
-    "edition": "SingStar",
+    "edition": "ESC 2003",
     "realBpm": 130,
     "volume": 0.72,
     "author": "TeLiXj",
@@ -6704,6 +6761,7 @@
     "gap": 4285.151515151515,
     "year": "2023",
     "lastUpdate": "2023-09-19T18:36:35.623Z",
+    "edition": "ESC 2023",
     "genre": "Pop",
     "videoGap": 1,
     "realBpm": 99,
@@ -8687,6 +8745,34 @@
     ],
     "tracksCount": 1,
     "search": "britneyspearsyoudrivemecrazy",
+    "local": false
+  },
+  {
+    "id": "brotherhood-of-man-save-your-kisses-for-me",
+    "title": "Save Your Kisses For Me",
+    "artist": "Brotherhood Of Man",
+    "video": "6OW1JJwqVRQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 278.85,
+    "gap": 3466.8443726440496,
+    "year": "1976",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-13T05:12:41.308Z",
+    "edition": "ESC 1976",
+    "realBpm": 94,
+    "volume": 0.98,
+    "author": "Dynamic_Duo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=49073",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12523",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "brotherhoodofmansaveyourkissesforme",
     "local": false
   },
   {
@@ -11018,6 +11104,34 @@
     ],
     "tracksCount": 1,
     "search": "coldplayyellow",
+    "local": false
+  },
+  {
+    "id": "conchita-wurst-rise-like-a-phoenix",
+    "title": "Rise Like A Phoenix",
+    "artist": "Conchita Wurst",
+    "video": "ToqNa0rqUtY",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 11443.90243902439,
+    "year": "2014",
+    "artistOrigin": "AT",
+    "lastUpdate": "2024-04-12T19:49:38.874Z",
+    "edition": "ESC 2014",
+    "realBpm": 82,
+    "volume": 0.83,
+    "author": "aac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=98211",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17208",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "conchitawurstriselikeaphoenix",
     "local": false
   },
   {
@@ -14219,6 +14333,36 @@
     "local": false
   },
   {
+    "id": "domenico-modugno-nel-blu-dipinto-di-blu-volare",
+    "title": "Nel blu dipinto di blu (Volare)",
+    "artist": "Domenico Modugno",
+    "video": "uF9mRDW6Gg8",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 257.9,
+    "gap": 71091.89099526066,
+    "year": "1958",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-04-12T19:40:58.652Z",
+    "edition": "ESC 1958",
+    "genre": "None",
+    "videoGap": 57,
+    "realBpm": 132,
+    "volume": 0.77,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21623",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "domenicomodugnonelbludipintodibluvolare",
+    "local": false
+  },
+  {
     "id": "don-mclean-american-pie",
     "title": "American Pie",
     "artist": "Don McLean",
@@ -14668,6 +14812,34 @@
     ],
     "tracksCount": 1,
     "search": "dualipaphysical",
+    "local": false
+  },
+  {
+    "id": "duncan-laurence-arcade",
+    "title": "Arcade",
+    "artist": "Duncan Laurence",
+    "video": "afLScXH8uts",
+    "language": [
+      "English"
+    ],
+    "bpm": 288,
+    "gap": 12120.416666666666,
+    "year": "2019",
+    "artistOrigin": "NL",
+    "lastUpdate": "2024-04-13T05:09:27.518Z",
+    "edition": "ESC 2019",
+    "realBpm": 72,
+    "volume": 0.74,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=22418",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "duncanlaurencearcade",
     "local": false
   },
   {
@@ -16181,6 +16353,35 @@
     "local": false
   },
   {
+    "id": "eric-saade-popular",
+    "title": "Popular",
+    "artist": "Eric Saade",
+    "video": "-04pUETT7oI",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 21890,
+    "year": "2011",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-12T19:53:00.228Z",
+    "edition": "ESC 2011",
+    "videoGap": 12,
+    "realBpm": 125,
+    "volume": 0.98,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12012",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ericsaadepopular",
+    "local": false
+  },
+  {
     "id": "europe-final-countdown",
     "title": "Final Countdown",
     "artist": "Europe",
@@ -17336,6 +17537,34 @@
     "local": false
   },
   {
+    "id": "france-gall-poupee-de-cire-poupee-de-son",
+    "title": "Poupée de cire, poupée de son",
+    "artist": "France Gall",
+    "video": "rRva0YOVtcI",
+    "language": [
+      "French"
+    ],
+    "bpm": 295.9,
+    "gap": 10736.143967556607,
+    "year": "1965",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-13T05:02:32.664Z",
+    "edition": "ESC 1965",
+    "realBpm": 148,
+    "volume": 0.74,
+    "author": "Coco",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=771",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3076",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "francegallpoupeedecirepoupeedeson",
+    "local": false
+  },
+  {
     "id": "francisca-valenzuela-peces",
     "title": "Peces",
     "artist": "Francisca Valenzuela",
@@ -18277,6 +18506,34 @@
     ],
     "tracksCount": 1,
     "search": "ghostmaryonacross",
+    "local": false
+  },
+  {
+    "id": "gina-g-ooh-aah-just-a-little-bit",
+    "title": "Ooh Aah… Just A Little Bit",
+    "artist": "Gina G",
+    "video": "KiLw45oAuD0",
+    "language": [
+      "English"
+    ],
+    "bpm": 262,
+    "gap": 21726.717557251908,
+    "year": "1996",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-04-13T05:00:17.324Z",
+    "edition": "ESC 1996",
+    "realBpm": 131,
+    "volume": 0.75,
+    "author": "lozboorman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=91773",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17182",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ginagoohaahjustalittlebit",
     "local": false
   },
   {
@@ -20802,6 +21059,34 @@
     "local": false
   },
   {
+    "id": "isaak-always-on-the-run",
+    "title": "Always On The Run",
+    "artist": "ISAAK",
+    "video": "3BjQPLLxEFQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": -116.36363636363635,
+    "year": "2024",
+    "lastUpdate": "2024-04-12T19:13:54.804Z",
+    "edition": "ESC 2024",
+    "genre": "Pop",
+    "realBpm": 110,
+    "volume": 0.69,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28750",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "isaakalwaysontherun",
+    "local": false
+  },
+  {
     "id": "israel-kamakawiwoole-somewhere-over-the-rainbow-what-a-wonderful-world",
     "title": "Somewhere Over The Rainbow / What A Wonderful World",
     "artist": "Israel Kamakawiwo’ole",
@@ -22938,7 +23223,7 @@
     "year": "2023",
     "artistOrigin": "FI",
     "lastUpdate": "2023-06-08T07:52:27.751Z",
-    "edition": "Eurovision Song Contest 2023",
+    "edition": "ESC 2023",
     "realBpm": 155,
     "previewStart": 86,
     "previewEnd": 116,
@@ -23021,7 +23306,7 @@
     "year": "2022",
     "artistOrigin": "UA",
     "lastUpdate": "2024-03-20T06:29:33.167Z",
-    "edition": "ESC 2022 Ukraine",
+    "edition": "ESC 2022",
     "realBpm": 105,
     "previewStart": 13,
     "previewEnd": 45,
@@ -26070,6 +26355,36 @@
     "local": false
   },
   {
+    "id": "let-3-mama-sc",
+    "title": "Mama ŠČ",
+    "artist": "Let 3",
+    "video": "AyKj8jA0Qoc",
+    "language": [
+      "Croatian"
+    ],
+    "bpm": 269.97,
+    "gap": 11979.888876541838,
+    "year": "2023",
+    "artistOrigin": "HR",
+    "lastUpdate": "2024-04-12T19:11:59.636Z",
+    "edition": "ESC 2023",
+    "realBpm": 135,
+    "previewStart": 27,
+    "previewEnd": 57,
+    "volume": 0.83,
+    "author": "sansan323",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=182000",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27436",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "let3mamasc",
+    "local": false
+  },
+  {
     "id": "letni-chamski-podryw-pomidorowa",
     "title": "Pomidorowa",
     "artist": "Letni, Chamski Podryw",
@@ -27287,7 +27602,7 @@
     "gap": 8339.974025974027,
     "year": "2006",
     "artistOrigin": "FI",
-    "edition": "SingStar Legendat",
+    "edition": "ESC 2006",
     "genre": "Pop",
     "realBpm": 123,
     "author": "TeLiXj",
@@ -27315,6 +27630,7 @@
     "year": "2012",
     "artistOrigin": "SE",
     "lastUpdate": "2023-12-15T05:36:09.354Z",
+    "edition": "ESC 2012",
     "genre": "Dance-Pop",
     "realBpm": 130,
     "volume": 0.74,
@@ -27329,8 +27645,8 @@
     "local": false
   },
   {
-    "id": "loreen-tattoo-en-vivo",
-    "title": "Tattoo (En vivo)",
+    "id": "loreen-tattoo",
+    "title": "Tattoo",
     "artist": "Loreen",
     "video": "BE2Fj0W4jP4",
     "language": [
@@ -27341,6 +27657,7 @@
     "year": "2023",
     "artistOrigin": "SE",
     "lastUpdate": "2023-07-27T19:14:16.143Z",
+    "edition": "ESC 2023",
     "genre": "Pop",
     "realBpm": 150,
     "previewStart": 66,
@@ -27355,7 +27672,7 @@
       }
     ],
     "tracksCount": 1,
-    "search": "loreentattooenvivo",
+    "search": "loreentattoo",
     "local": false
   },
   {
@@ -28665,6 +28982,7 @@
     "year": "2021",
     "artistOrigin": "IT",
     "lastUpdate": "2023-05-20T14:16:08.865Z",
+    "edition": "ESC 2021",
     "genre": "Rock",
     "realBpm": 103,
     "volume": 0.5,
@@ -28704,6 +29022,34 @@
     ],
     "tracksCount": 1,
     "search": "manowarkingsofmetal",
+    "local": false
+  },
+  {
+    "id": "mans-zelmerlow-heroes",
+    "title": "Heroes",
+    "artist": "Måns Zelmerlöw",
+    "video": "5sGOwFVUU0I",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.48,
+    "gap": 5213.7604636188025,
+    "year": "2016",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-12T16:25:51.450Z",
+    "edition": "ESC 2015",
+    "realBpm": 124,
+    "volume": 0.9,
+    "author": "daggeg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1835",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18315",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manszelmerlowheroes",
     "local": false
   },
   {
@@ -28830,6 +29176,35 @@
     ],
     "tracksCount": 1,
     "search": "marcoantoniosolissinotehubierasido",
+    "local": false
+  },
+  {
+    "id": "marcus-martinus-unforgettable",
+    "title": "Unforgettable",
+    "artist": "Marcus & Martinus",
+    "video": "yekc8t0rJqA",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.93,
+    "gap": 11002.052066857606,
+    "year": "2024",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-12T19:17:41.753Z",
+    "edition": "ESC 2024",
+    "videoGap": 2,
+    "realBpm": 117,
+    "volume": 0.96,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28844",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marcusmartinusunforgettable",
     "local": false
   },
   {
@@ -30571,6 +30946,7 @@
     "year": "2018",
     "artistOrigin": "DE",
     "lastUpdate": "2024-02-08T06:16:42.448Z",
+    "edition": "ESC 2018",
     "genre": "Pop",
     "realBpm": 75,
     "volume": 0.6,
@@ -31009,6 +31385,34 @@
     ],
     "tracksCount": 1,
     "search": "mitskiwashingmachineheart",
+    "local": false
+  },
+  {
+    "id": "mocedades-eres-tu",
+    "title": "Eres tú",
+    "artist": "Mocedades",
+    "video": "A5vaIjBQnmk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 165.3,
+    "gap": 15733.668639053254,
+    "year": "1973",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-13T05:28:00.746Z",
+    "edition": "ESC 1973",
+    "realBpm": 81,
+    "volume": 0.89,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Mocedades&cancion=Eres%20t%C3%BA",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mocedadeserestu",
     "local": false
   },
   {
@@ -32747,6 +33151,35 @@
     ],
     "tracksCount": 1,
     "search": "nellyfurtadosayitright",
+    "local": false
+  },
+  {
+    "id": "nemo-the-code",
+    "title": "The Code",
+    "artist": "Nemo",
+    "video": "kiGDvM14Kwg",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.78,
+    "gap": 4046.8377773954926,
+    "year": "2024",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-12T19:15:44.718Z",
+    "edition": "ESC 2024",
+    "genre": "Pop, Drum'n'Bass",
+    "realBpm": 160,
+    "volume": 0.68,
+    "author": "Mircosoft93",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28801",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nemothecode",
     "local": false
   },
   {
@@ -38330,6 +38763,7 @@
     "gap": 14125.625,
     "year": "2018",
     "lastUpdate": "2024-02-20T21:16:31.009Z",
+    "edition": "ESC 2018",
     "realBpm": 82,
     "volume": 0.95,
     "author": "Knuddel",
@@ -38791,6 +39225,7 @@
     "year": "2023",
     "artistOrigin": "CH",
     "lastUpdate": "2024-01-26T17:05:28.129Z",
+    "edition": "ESC 2023",
     "genre": "Pop",
     "realBpm": 138,
     "volume": 0.78,
@@ -39602,6 +40037,7 @@
     "year": "2012",
     "artistOrigin": "DE",
     "lastUpdate": "2024-02-20T21:16:31.112Z",
+    "edition": "ESC 2012",
     "genre": "Pop",
     "realBpm": 108,
     "volume": 0.89,
@@ -39718,6 +40154,34 @@
     ],
     "tracksCount": 1,
     "search": "romeosantosymarcanthonyyotambien",
+    "local": false
+  },
+  {
+    "id": "rosa-linn-snap",
+    "title": "Snap",
+    "artist": "Rosa Linn",
+    "video": "Lo4_K4relMg",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 3855.2941176470586,
+    "year": "2022",
+    "artistOrigin": "AM",
+    "lastUpdate": "2024-04-13T05:15:54.250Z",
+    "edition": "ESC 2022",
+    "realBpm": 112,
+    "volume": 0.71,
+    "author": "askusbloodfist",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=103587",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26245",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rosalinnsnap",
     "local": false
   },
   {
@@ -40733,6 +41197,35 @@
     ],
     "tracksCount": 1,
     "search": "selenagomezthesceneunanosinlluvia",
+    "local": false
+  },
+  {
+    "id": "sergio-dalma-bailar-pegados",
+    "title": "Bailar pegados",
+    "artist": "Sergio Dalma",
+    "video": "zlmRGWNJE3c",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 287.7,
+    "gap": 17132.416666666664,
+    "year": "1991",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-13T05:06:42.946Z",
+    "edition": "ESC 1991",
+    "videoGap": 1,
+    "realBpm": 70,
+    "volume": 0.92,
+    "author": "marague248",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=marague248",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Sergio%20Dalma&cancion=Bailar%20pegados",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sergiodalmabailarpegados",
     "local": false
   },
   {
@@ -43141,8 +43634,8 @@
     "local": false
   },
   {
-    "id": "sun-stroke-project-olia-tira-run-away-moldova",
-    "title": "Run away (Moldova)",
+    "id": "sun-stroke-project-olia-tira-run-away",
+    "title": "Run away",
     "artist": "Sun Stroke Project & Olia Tira",
     "video": "pHXDMe6QV-U",
     "language": [
@@ -43164,7 +43657,7 @@
       }
     ],
     "tracksCount": 1,
-    "search": "sunstrokeprojectoliatirarunawaymoldova",
+    "search": "sunstrokeprojectoliatirarunaway",
     "local": false
   },
   {
@@ -47662,6 +48155,33 @@
     "local": false
   },
   {
+    "id": "tom-dice-me-and-my-guitar",
+    "title": "Me And My Guitar",
+    "artist": "Tom Dice",
+    "video": "zcwr9s1Wce4",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 31443.90625,
+    "year": "2010",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-04-12T19:24:37.904Z",
+    "edition": "ESC 2010",
+    "videoGap": 29,
+    "realBpm": 129,
+    "volume": 0.92,
+    "author": "gaspar17",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomdicemeandmyguitar",
+    "local": false
+  },
+  {
     "id": "tom-odell-another-love",
     "title": "Another Love",
     "artist": "Tom Odell",
@@ -49315,6 +49835,7 @@
     "year": "2007",
     "artistOrigin": "UA",
     "lastUpdate": "2023-07-29T01:00:44.597Z",
+    "edition": "ESC 2007",
     "genre": "Metal",
     "videoGap": 5,
     "realBpm": 144,
@@ -50050,6 +50571,35 @@
     ],
     "tracksCount": 1,
     "search": "willienelsonandmerlehaggardpanchoandlefty",
+    "local": false
+  },
+  {
+    "id": "windows95man-no-rules",
+    "title": "No Rules!",
+    "artist": "Windows95man",
+    "video": "aaIxsEPoS28",
+    "language": [
+      "English"
+    ],
+    "bpm": 319.87,
+    "gap": 345.2249351298965,
+    "year": "2024",
+    "artistOrigin": "FI",
+    "lastUpdate": "2024-04-12T19:11:30.863Z",
+    "edition": "ESC 2024",
+    "genre": "Alternative Pop, Synth-Pop",
+    "realBpm": 160,
+    "volume": 0.7,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28752",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "windows95mannorules",
     "local": false
   },
   {
