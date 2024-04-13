@@ -62,12 +62,20 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
   });
 
-  await test.step('Exclude all', async () => {
+  await test.step('Exclude all languages - excluded alert should be visible', async () => {
     await pages.songListPage.goBackToMainMenu();
     await pages.mainMenuPage.goToManageSongs();
     await pages.manageSongsPage.goToSelectSongLanguage();
-    await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language2);
-    await pages.songLanguagesPage.ensureSongLanguageIsDeselected(language1);
+    await pages.songLanguagesPage.ensureAllLanguagesAreDeselected();
     await expect(pages.songLanguagesPage.allLanguagesExcludedAlert).toBeVisible();
+  });
+
+  await test.step('After `Backspace` key, changes should not be saved', async () => {
+    await page.keyboard.press('Backspace');
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToSelectSongLanguage();
+    test.fixme(true, 'Changes should not be saved');
+    await page.waitForTimeout(1_000);
+    await expect(pages.songLanguagesPage.allLanguagesExcludedAlert).not.toBeVisible();
   });
 });

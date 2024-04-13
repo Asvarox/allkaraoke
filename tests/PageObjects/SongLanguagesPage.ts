@@ -16,11 +16,6 @@ export class SongLanguagesPagePO {
     return this.page.locator(`[data-test = "lang-${language}"] svg`);
   }
 
-  public async selectLanguage(language: string) {
-    await expect(this.getCheckbox(language)).toHaveAttribute('data-testid', 'CheckBoxOutlineBlankIcon');
-    await this.getLanguageEntry(language).click();
-  }
-
   public async unselectLanguage(language: string) {
     await expect(this.getCheckbox(language)).toHaveAttribute('data-testid', 'CheckBoxIcon');
     await this.getLanguageEntry(language).click();
@@ -48,14 +43,28 @@ export class SongLanguagesPagePO {
     return languageCheckboxValue === 'CheckBoxIcon';
   }
 
-  public async ensureAllLanguagesAreSelected() {
+  public async getAllLanguageCheckboxes() {
     const languageCheckbox = this.page.locator('[data-test^="lang-"] svg');
-
     await expect(languageCheckbox.first()).toBeVisible();
-    const languages = await languageCheckbox.all();
+
+    return languageCheckbox.all();
+  }
+
+  public async ensureAllLanguagesAreSelected() {
+    const languages = await this.getAllLanguageCheckboxes();
 
     for (const language of languages) {
       if (!(await this.isLanguageSelected(language))) {
+        await language.click();
+      }
+    }
+  }
+
+  public async ensureAllLanguagesAreDeselected() {
+    const languages = await this.getAllLanguageCheckboxes();
+
+    for (const language of languages) {
+      if (await this.isLanguageSelected(language)) {
         await language.click();
       }
     }
