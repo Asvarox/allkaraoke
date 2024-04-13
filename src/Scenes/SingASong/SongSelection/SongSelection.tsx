@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { useBackground } from 'Elements/LayoutWithBackground';
+import { BackgroundContext, useBackground } from 'Elements/LayoutWithBackground';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import LayoutGame from 'Scenes/LayoutGame';
@@ -17,7 +17,7 @@ import useBlockScroll from 'hooks/useBlockScroll';
 import usePrevious from 'hooks/usePrevious';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ComponentProps, memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'wouter';
 
 interface Props {
@@ -205,7 +205,16 @@ const Container = styled.div<{ songsPerRow: number }>`
   --song-item-ratio: calc(16 / 9 * (4 / ${(props) => props.songsPerRow}));
 `;
 
-const SongImageBackground = styled(BackgroundThumbnail)`
+const SongImageBackground = (props: ComponentProps<typeof SongImageBackgroundBase>) => {
+  const { theme } = useContext(BackgroundContext);
+  if (theme === 'eurovision') {
+    return null;
+  }
+
+  return <SongImageBackgroundBase {...props} />;
+};
+
+const SongImageBackgroundBase = styled(BackgroundThumbnail)`
   position: fixed;
   inset: 0;
   width: 100%;

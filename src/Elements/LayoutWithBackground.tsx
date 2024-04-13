@@ -2,11 +2,13 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { roundTo } from 'utils/roundTo';
 
-export type backgroundTheme = 'regular' | 'christmas';
+export type backgroundTheme = 'regular' | 'christmas' | 'eurovision';
 
 export const BackgroundContext = createContext({
   visible: true,
+  theme: 'regular' as backgroundTheme,
   setVisibility: (visible: boolean): void => undefined,
   setTheme: (theme: backgroundTheme): void => undefined,
 });
@@ -23,13 +25,27 @@ export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme =
   }, [theme, setTheme]);
 };
 
+const escBars = new Array(21).fill(0).map((_, i) => roundTo(1.2 + Math.sin(i / 2.5 + 1.5), 1));
+
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
   const [theme, setTheme] = useState<backgroundTheme>('regular');
 
   return (
-    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme }}>
-      {visible && <Background bgtheme={theme} />}
+    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
+      {visible && (
+        <Background bgtheme={theme}>
+          {theme === 'eurovision' &&
+            escBars.map((flex, i) => (
+              <EscBar
+                key={i}
+                style={{
+                  flex,
+                  animationDelay: `-${(escBars.length - i) / 7}s`,
+                }}></EscBar>
+            ))}
+        </Background>
+      )}
       {children}
     </BackgroundContext.Provider>
   );
@@ -49,19 +65,49 @@ export const BackgroundStatic = styled.div<{ bgtheme: backgroundTheme }>`
           );
           background-size: 400% 400%;
         `
-      : css`
-          background-image: linear-gradient(
-            -45deg,
-            ${colorSets.red.stroke},
-            ${colorSets.blue.text},
-            ${colorSets.blue.stroke},
-            ${colorSets.red.stroke}
-          );
-          background-size: 400% 400%;
-        `}
+      : props.bgtheme === 'eurovision'
+        ? css`
+            display: flex;
+          `
+        : css`
+            background-image: linear-gradient(
+              -45deg,
+              ${colorSets.red.stroke},
+              ${colorSets.blue.text},
+              ${colorSets.blue.stroke},
+              ${colorSets.red.stroke}
+            );
+            background-size: 400% 400%;
+          `}
 
   width: 100%;
   height: 100%;
+`;
+
+const EscBar = styled.div`
+  transform: scale(1.1, 4);
+  background-color: white;
+  background-image: linear-gradient(
+    0deg,
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionYellow.text},
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionOrange.text},
+    ${colorSets.eurovisionPink.text}
+  );
+  background-size: 200% 50%;
+  height: 100%;
+  animation: escGradient 46s linear infinite;
+  flex: 1;
+
+  @keyframes escGradient {
+    0% {
+      background-position: 0% 800%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
 `;
 
 const Background = styled(BackgroundStatic)`
