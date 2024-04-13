@@ -8,6 +8,7 @@ import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 import clearString from '../src/utils/clearString';
 // @ts-ignore
 import escSongs from './escSongs.json';
+// @ts-ignore
 import scrapedBpmData from './scraped-bpm-data.json';
 
 // @ts-ignore
@@ -145,7 +146,7 @@ async function fillSongYear(songData: Omit<Song, 'tracks'>) {
 }
 
 async function setEurovisionEdition(songData: Omit<Song, 'tracks'>) {
-  const escSong = escSongs.find((escSong) =>
+  const escSong = (escSongs as any[]).find((escSong) =>
     clearString(songData.id).endsWith(clearString(escSong.artist.replaceAll(' and ', '') + escSong.song)),
   );
   if (escSong) {
