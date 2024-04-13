@@ -1,0 +1,343 @@
+#ARTIST:France Gall
+#TITLE:Poupée de cire, poupée de son
+#CREATOR:Coco
+#BPM:295,9
+#YEAR:1965
+#VIDEO:v=rRva0YOVtcI
+#LANGUAGE:French
+#GAP:10736,143967556607
+#EDITION:ESC 1965
+#ALLKARAOKE_ID:france-gall-poupee-de-cire-poupee-de-son
+#ALLKARAOKE_LASTUPDATE:2024-04-13T05:02:32.664Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=771
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3076
+#ALLKARAOKE_VOLUME:0,74
+#MP3:France Gall - Poupée de cire, poupée de son.mp3
+#START:5.5
+: 20 8 8 Je 
+: 30 7 8 suis 
+: 38 7 7 une 
+: 46 7 5 pou
+: 54 7 3 pée 
+: 62 7 1 de 
+: 70 7 0 ci
+: 78 4 0 re 
+- 82
+: 84 6 5 U
+: 92 7 5 ne 
+: 100 3 3 pou
+: 104 3 -4 pée 
+: 108 3 -2 de 
+: 112 10 0 son 
+- 122 128
+- 128
+: 148 6 -2 Mon 
+: 156 3 -2 cœur 
+: 160 3 0 est 
+: 164 7 1 gra
+: 172 3 0 vé 
+: 176 3 -2 dans 
+: 180 3 0 mes 
+* 184 4 5 chan
+: 192 7 8 sons 
+- 199
+: 200 3 5 Pou
+: 204 3 7 pée 
+: 208 3 8 de 
+: 212 4 7 cire, 
+* 220 4 7 pou
+: 228 2 2 pée 
+: 234 4 2 de 
+: 242 8 0 son 
+- 250 256
+- 256
+: 276 7 8 Suis 
+: 284 7 8 je 
+: 292 7 7 meil
+: 300 7 5 leure 
+: 308 7 3 suis 
+: 316 7 1 je 
+: 324 6 0 pi
+: 332 7 0 re 
+- 339
+: 340 7 5 Qu’une 
+: 348 7 5 pou
+: 356 3 3 pée 
+: 360 3 -4 de 
+: 364 3 -2 sa
+: 368 10 0 lon 
+- 378 384
+- 384
+: 404 6 -2 Je 
+: 412 3 -2 vois 
+: 416 3 0 la 
+: 420 7 1 vie 
+: 428 3 0 en 
+: 432 3 -2 ro
+: 436 3 0 se 
+: 440 6 5 bon
+* 448 7 8 bon 
+- 455
+: 456 3 5 Pou
+: 460 3 7 pée 
+: 464 3 8 de 
+: 468 4 7 cire, 
+: 476 4 7 pou
+: 484 2 4 pée 
+: 488 4 4 de 
+* 496 16 5 son 
+- 512
+* 532 2 3 Mes 
+* 540 2 3 dis
+* 548 2 3 ques 
+* 556 2 3 sont 
+: 564 2 5 un 
+: 568 2 5 mi
+: 576 12 0 roir 
+- 588
+: 592 2 -2 Dans 
+: 596 2 -4 le
+: 600 2 -4 quel 
+: 604 2 -4 cha
+: 608 2 -4 cun 
+: 612 2 -4 peut 
+: 616 2 -4 me 
+: 624 14 -7 voir 
+- 638 640
+- 640
+: 660 2 3 Je 
+: 668 2 0 suis 
+: 676 2 3 par
+: 684 2 0 tout 
+: 692 2 1 à 
+: 696 2 1 la 
+: 704 14 0 fois 
+- 718
+: 720 2 -2 Bri
+: 724 2 -4 sée 
+: 728 2 -4 en 
+: 732 2 -4 mille 
+: 736 2 -4 é
+: 740 2 0 clats 
+: 744 2 0 de 
+* 752 14 0 voix 
+- 766 768
+- 768
+: 788 6 8 Au
+: 796 7 8 tour 
+: 804 7 7 de 
+: 812 6 5 moi 
+: 820 6 3 j’en
+: 828 6 1 tends 
+: 836 15 0 rire 
+- 851
+: 852 6 5 Les 
+: 860 6 5 pou
+: 868 3 3 pées 
+: 872 3 -4 de 
+: 876 3 -2 chif
+: 880 16 0 fons 
+- 896
+: 916 6 -2 Cel
+: 924 3 -2 les 
+: 928 2 0 qui 
+: 932 6 1 dan
+: 940 3 0 sent 
+: 944 3 -2 sur 
+: 948 3 0 mes 
+: 952 4 5 chan
+: 960 9 8 sons 
+- 969
+: 970 1 5 Pou
+: 972 3 7 pée 
+: 976 3 8 de 
+* 980 6 7 cire, 
+: 988 6 7 pou
+* 996 3 2 pée 
+* 1000 4 2 de 
+: 1008 8 0 son 
+- 1016 1024
+- 1024
+: 1044 7 8 El
+: 1052 6 8 les 
+: 1060 6 7 se 
+: 1068 6 5 lais
+: 1076 6 3 sent 
+: 1084 4 1 sé
+: 1092 14 0 duire 
+- 1106
+: 1108 7 5 Pour 
+: 1116 7 5 un 
+: 1124 3 3 oui 
+: 1128 3 -4 pour 
+: 1132 3 -2 un 
+: 1136 20 0 non 
+- 1156
+: 1172 6 -2 L’a
+: 1180 3 -2 mour 
+: 1184 3 0 n’est 
+* 1188 7 1 pas 
+: 1196 3 0 que 
+: 1200 3 -2 dans 
+: 1204 3 0 les 
+: 1208 4 5 chan
+: 1216 7 8 sons 
+- 1223
+: 1224 3 5 Pou
+: 1228 3 7 pée 
+: 1232 3 8 de 
+: 1236 6 7 cire, 
+: 1244 6 7 pou
+* 1252 3 4 pée 
+* 1256 6 4 de 
+: 1264 8 5 son 
+- 1272 1792
+- 1792
+: 1812 2 3 Mes 
+: 1820 2 3 dis
+: 1828 2 3 ques 
+: 1836 2 3 sont 
+* 1844 2 5 un 
+* 1848 2 5 mi
+: 1856 12 0 roir 
+- 1868
+: 1872 2 -2 Dans 
+: 1876 2 -4 le
+: 1880 2 -4 quel 
+: 1884 2 -4 cha
+: 1888 2 -4 cun 
+: 1892 2 -4 peut 
+: 1896 2 -4 me 
+* 1904 14 -7 voir 
+- 1918 1920
+- 1920
+: 1940 2 3 Je 
+: 1948 2 0 suis 
+: 1956 2 3 par
+: 1964 2 0 tout 
+: 1972 2 1 à 
+: 1976 2 1 la 
+: 1984 14 0 fois 
+- 1998
+: 2000 2 -2 Bri
+: 2004 2 -4 sée 
+: 2008 2 -4 en 
+: 2012 2 -4 mille 
+: 2016 2 -4 é
+: 2020 2 0 clats 
+: 2024 2 0 de 
+* 2032 20 0 voix 
+- 2052
+* 2068 8 8 Seu
+: 2078 7 8 le 
+: 2086 2 8 par
+: 2092 7 5 fois 
+: 2100 7 3 je 
+: 2108 7 1 sou 
+: 2116 7 0 pi
+: 2124 7 0 re 
+- 2131
+: 2132 6 5 Je 
+: 2140 7 5 me 
+: 2148 3 3 dis 
+: 2152 3 -4 à 
+: 2156 3 -2 quoi 
+: 2160 20 0 bon 
+- 2180
+: 2196 6 -2 Chan
+: 2204 3 -2 ter 
+: 2208 3 0 ain
+: 2212 7 1 si 
+: 2220 3 0 l’a
+: 2224 3 -2 mour 
+: 2228 3 0 sans 
+: 2232 4 5 rai
+: 2238 8 8 son 
+- 2246
+* 2248 3 5 Sans 
+: 2252 3 7 rien 
+* 2256 3 8 con
+: 2260 4 7 naî
+* 2268 4 7 tre 
+: 2276 2 2 des 
+: 2282 4 2 gar
+: 2290 14 0 çons 
+- 2304 2306
+- 2306
+: 2326 5 8 Je 
+: 2332 7 8 n’suis 
+: 2340 7 7 qu’une 
+: 2348 7 5 pou
+: 2356 7 3 pée 
+: 2364 7 1 de 
+: 2372 6 0 ci
+: 2380 7 0 re 
+- 2387
+: 2388 7 5 Qu’u
+: 2396 7 5 ne 
+: 2404 3 3 pou
+: 2408 3 -4 pée 
+: 2412 3 -2 de 
+: 2416 18 0 son 
+- 2434
+: 2452 6 -2 Sous 
+: 2460 3 -2 le 
+: 2464 3 0 so
+: 2468 7 1 leil 
+: 2476 3 0 de 
+: 2480 3 -2 mes 
+* 2484 3 0 che
+* 2488 6 5 veux 
+: 2496 7 8 blonds 
+- 2503
+: 2504 3 5 Pou
+: 2508 3 7 pée 
+: 2512 3 8 de 
+: 2516 4 7 cire, 
+: 2524 4 7 pou
+: 2532 2 4 pée 
+: 2538 4 4 de 
+: 2544 10 5 son 
+- 2554 2560
+- 2560
+: 2580 6 -2 Mais 
+: 2588 3 -2 un 
+: 2592 3 0 jour 
+: 2596 7 1 je 
+: 2604 3 0 vi
+: 2608 3 -2 vrais 
+: 2612 3 0 mes 
+: 2616 6 5 chan
+: 2624 7 8 sons 
+- 2631
+: 2632 3 5 Pou
+: 2636 3 7 pée 
+: 2640 3 8 de 
+: 2644 4 7 cire, 
+: 2652 4 7 pou
+: 2660 2 4 pée 
+: 2666 4 4 de 
+: 2672 8 5 son 
+- 2680 2688
+- 2688
+: 2708 6 -2 Sans 
+: 2716 3 -2 crain
+: 2720 3 0 dre 
+: 2724 7 1 la 
+: 2732 3 0 cha
+: 2736 3 -2 leur 
+: 2740 3 0 des 
+: 2744 6 5 gar
+: 2752 7 8 çons 
+- 2759
+* 2760 3 5 Pou
+* 2764 3 7 pée 
+* 2768 3 8 de 
+* 2772 4 7 cire, 
+* 2780 4 7 pou
+* 2788 2 4 pée 
+* 2794 4 4 de 
+* 2800 6 5 son 
+E
