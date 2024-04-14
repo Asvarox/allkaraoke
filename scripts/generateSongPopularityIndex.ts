@@ -46,7 +46,7 @@ interface Response {
               where event = 'songEnded'
                 and created_at >= (now() - INTERVAL 45 DAY)
               group by properties.songId
-              order by sessions desc limit ${currentSongs.length}
+              order by sessions desc, played desc limit ${currentSongs.length}
           `,
       },
     }),
