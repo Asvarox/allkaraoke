@@ -25,32 +25,58 @@ export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme =
   }, [theme, setTheme]);
 };
 
-const escBars = new Array(21).fill(0).map((_, i) => roundTo(1.2 + Math.sin(i / 2.5 + 1.5), 1));
-
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
   const [theme, setTheme] = useState<backgroundTheme>('regular');
 
   return (
     <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
-      {visible && (
-        <Background bgtheme={theme}>
-          {theme === 'eurovision' &&
-            escBars.map((flex, i) => (
-              <EscBar
-                key={i}
-                style={{
-                  flex,
-                  animationDelay: `-${(escBars.length - i) / 7}s`,
-                }}></EscBar>
-            ))}
-        </Background>
-      )}
+      {visible && <Background bgtheme={theme}>{theme === 'eurovision' && <EurovisionTheme />}</Background>}
       {children}
     </BackgroundContext.Provider>
   );
 }
 
+const escBars = new Array(21).fill(0).map((_, i) => roundTo(1.2 + Math.sin(i / 2.5 + 1.5), 1));
+export const EurovisionTheme = () => (
+  <>
+    {escBars.map((flex, i) => (
+      <EscBar
+        key={i}
+        style={{
+          flex,
+          animationDelay: `-${(escBars.length - i) / 7}s`,
+        }}
+      />
+    ))}
+  </>
+);
+
+const EscBar = styled.div`
+  transform: scale(1.1, 4);
+
+  background-image: linear-gradient(
+    0deg,
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionYellow.text},
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionOrange.text},
+    ${colorSets.eurovisionPink.text}
+  );
+  background-size: 200% 50%;
+  height: 100%;
+  animation: escGradient 46s linear infinite;
+  flex: 1;
+
+  @keyframes escGradient {
+    0% {
+      background-position: 0% 800%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+`;
 export const BackgroundStatic = styled.div<{ bgtheme: backgroundTheme }>`
   background-color: white;
   ${(props) =>
@@ -82,32 +108,6 @@ export const BackgroundStatic = styled.div<{ bgtheme: backgroundTheme }>`
 
   width: 100%;
   height: 100%;
-`;
-
-const EscBar = styled.div`
-  transform: scale(1.1, 4);
-  background-color: white;
-  background-image: linear-gradient(
-    0deg,
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionYellow.text},
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionOrange.text},
-    ${colorSets.eurovisionPink.text}
-  );
-  background-size: 200% 50%;
-  height: 100%;
-  animation: escGradient 46s linear infinite;
-  flex: 1;
-
-  @keyframes escGradient {
-    0% {
-      background-position: 0% 800%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
-  }
 `;
 
 const Background = styled(BackgroundStatic)`

@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
-import { useBackground } from 'Elements/LayoutWithBackground';
+import { EurovisionTheme, useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import LayoutGame from 'Scenes/LayoutGame';
+import eurovisionIcon from 'Scenes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import logo from '../../../public/logo.svg?raw';
 
 export default function SocialMediaElements() {
@@ -10,21 +11,55 @@ export default function SocialMediaElements() {
 
   return (
     <LayoutGame>
-      <IconLogo dangerouslySetInnerHTML={{ __html: logo }} />
+      <LogoContainer>
+        <IconLogo dangerouslySetInnerHTML={{ __html: logo }} />
+        <ESCBarsLogo>
+          <EurovisionTheme />
+        </ESCBarsLogo>
+      </LogoContainer>
       <BackgroundPhoto>
+        <ESCBarsBackground>
+          <EurovisionTheme />
+        </ESCBarsBackground>
         <Logo />
         {/*<ChristmasTree>🎁</ChristmasTree>*/}
+        <EurovisionLogo src={eurovisionIcon} alt="Eurovision" />
       </BackgroundPhoto>
     </LayoutGame>
   );
 }
 
+const LogoContainer = styled.div`
+  width: 400px;
+  aspect-ratio: 1/1;
+  position: relative;
+  padding: 30px;
+  //background: #222222;
+`;
+
+const ESCBarsLogo = styled.div`
+  display: flex;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  div {
+    background-image: linear-gradient(
+      0deg,
+      ${colorSets.eurovisionViolet.text},
+      ${colorSets.eurovisionBlue.text},
+      ${colorSets.eurovisionYellow.text},
+      ${colorSets.eurovisionBlue.text},
+      ${colorSets.eurovisionViolet.text}
+    );
+  }
+`;
+
 const IconLogo = styled.svg`
   width: 400px;
   aspect-ratio: 1/1;
   object-fit: contain;
-  background: #222222;
-  padding: 30px;
+  filter: drop-shadow(0 0 10px rgb(0 0 0 / 0.6));
 
   path:nth-of-type(1) {
     fill: ${colorSets.red.text} !important;
@@ -34,10 +69,24 @@ const IconLogo = styled.svg`
   }
 `;
 
+const ESCBarsBackground = styled(ESCBarsLogo)`
+  div {
+    background-image: linear-gradient(
+      0deg,
+      ${colorSets.eurovisionPink.text},
+      ${colorSets.eurovisionOrange.text},
+      ${colorSets.eurovisionYellow.text},
+      ${colorSets.eurovisionPink.text}
+    );
+  }
+`;
+
 const BackgroundPhoto = styled.div`
+  overflow: hidden;
   position: relative;
-  height: 693px;
-  width: 2048px;
+  height: calc(693px / 1);
+  width: calc(2048px / 1);
+  transform: scale(1);
 
   background-color: black;
   background-image: linear-gradient(
@@ -51,21 +100,26 @@ const BackgroundPhoto = styled.div`
   align-items: center;
   justify-content: center;
   div {
-    margin-bottom: 160px;
+    //margin-bottom: 160px;
 
-    img:nth-of-type(1) {
-      width: 800px;
-      height: 300px;
-      object-fit: contain;
-    }
+    //video:nth-of-type(1) {
+    //  width: 800px;
+    //  height: 300px;
+    //  object-fit: contain;
+    //}
 
-    img:nth-of-type(2) {
-      transform: translate(-0px, 80px);
-      width: 180px;
-      height: 80px;
-      object-fit: contain;
-    }
+    //img:nth-of-type(1) {
+    //  transform: translate(-0px, 80px);
+    //  width: 180px;
+    //  height: 80px;
+    //  object-fit: contain;
+    //}
   }
+`;
+
+const EurovisionLogo = styled.img`
+  margin-left: 4rem;
+  transform: scale(1.5);
 `;
 
 const ChristmasTree = styled.span`
