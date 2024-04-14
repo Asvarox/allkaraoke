@@ -58,7 +58,11 @@ export const SongCardStatsIndicator = ({
     </SongIndicatorStat>
   ) : isESCSong ? (
     <SongIndicatorIcon white>
-      {focused && <SongIndicatorLabel>{song.edition?.replace('ESC', 'Eurovision')}</SongIndicatorLabel>}
+      {
+        <SongIndicatorLabel>
+          {focused ? song.edition?.replace('ESC', 'Eurovision') : song.edition?.replace('ESC ', '')}
+        </SongIndicatorLabel>
+      }
       <EurovisionIcon src={eurovisionIcon} alt={song.edition} />
     </SongIndicatorIcon>
   ) : isRecentlyUpdated ? (
@@ -128,6 +132,7 @@ const SongIndicatorIcon = styled(SongIndicator)<{ white?: boolean }>`
 
 const EurovisionIcon = styled.img`
   padding: 0.35rem;
+  margin: 0 0.15rem 0 -0.35rem;
   box-sizing: border-box;
 `;
 
