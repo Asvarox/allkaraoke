@@ -407,14 +407,18 @@ const SongListHeaderPadding = styled.div`
 `;
 
 const GroupRow = styled.div<{ group: SongGroup }>`
+  position: sticky;
+  top: 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: calc(var(--song-list-gap) / 2) var(--song-list-padding-right) calc(var(--song-list-gap) / 2)
     var(--song-list-padding-left);
+  z-index: 1;
 `;
 
 const ListRow = styled(GroupRow)<{ group: SongGroup }>`
+  position: static;
   ${(props) =>
     props.group.isNew &&
     css`

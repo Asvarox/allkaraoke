@@ -17,9 +17,9 @@ import {
 import { Components, GroupedVirtuoso, LocationOptions, LogLevel, VirtuosoHandle } from 'react-virtuoso';
 import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import isE2E from 'utils/isE2E';
+import { CustomVirtualization } from 'Scenes/SingASong/SongSelection/Components/CustomVirtualization';
 
 export interface VirtualizedListMethods {
-  virtuoso: VirtuosoHandle | null;
   scrollToTop: () => void;
   scrollToSongInGroup: (group: string, songId: number, behavior?: LocationOptions['behavior']) => Promise<void>;
   scrollToGroup: (group: string) => void;
@@ -32,7 +32,6 @@ interface Props<T> {
   placeholder?: ReactNode;
   renderGroup: (group: SongGroup) => ReactNode;
   renderItem: (item: SongGroup['songs'][number], group: SongGroup) => ReactNode;
-  footer?: ReactNode;
   ListRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
   GroupRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
   perRow: number;
@@ -60,7 +59,6 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
   useImperativeHandle(
     ref,
     (): VirtualizedListMethods => ({
-      virtuoso: virtuoso.current,
       scrollToTop: () => {
         virtuoso.current?.scrollTo({ top: 0 });
         window.scrollTo(0, 0);
@@ -90,7 +88,6 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
           .slice(0, groupIndex)
           .reduce((acc, { rows }) => acc + rows.length, Math.floor(songIndex / props.perRow));
 
-        console.log('scrollToSongInGroup', songIndex, rowsToScroll);
         virtuoso.current?.scrollToIndex?.({
           index: rowsToScroll,
           behavior: isE2E() ? 'auto' : behavior,
@@ -101,34 +98,70 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
   );
 
   return (
-    <GroupedVirtuoso
-      // itemSize={() => props.itemHeight}
-      // defaultItemHeight={props.itemHeight}
-      fixedItemHeight={props.itemHeight}
-      key={props.itemHeight}
-      increaseViewportBy={baseUnit * 50}
-      style={styles}
-      logLevel={LogLevel.DEBUG}
-      components={props.components}
-      context={props.context}
-      groupContent={(index) => (
-        <GroupRowWrapper group={groupedRows[index].group}>
-          {props.renderGroup(groupedRows[index].group)}
-        </GroupRowWrapper>
-      )}
-      ref={virtuoso}
-      groupCounts={groupSizes}
-      itemContent={(index, groupIndex) => (
-        <ListRowWrapper group={groupedRows[groupIndex].group}>
-          {flatRows[index].map((song) => props.renderItem(song, groupedRows[groupIndex].group))}
-          {props.placeholder &&
-            flatRows[index].length < props.perRow &&
-            new Array(props.perRow - flatRows[index].length)
-              .fill(null)
-              .map((_, i) => <Fragment key={i}>{props.placeholder}</Fragment>)}
-        </ListRowWrapper>
-      )}
-    />
+    <>
+      <CustomVirtualization
+        overScan={props.itemHeight * 2}
+        itemHeight={props.itemHeight}
+        groupHeight={props.itemHeight}
+        key={props.itemHeight}
+        // increaseViewportBy={baseUnit * 50}
+        // style={styles}
+        // logLevel={LogLevel.DEBUG}
+        // components={props.components}
+        context={props.context}
+        groupContent={(index, groupProps) => {
+          if (!groupedRows[index]) {
+            debugger;
+          }
+          return (
+            <GroupRowWrapper group={groupedRows[index].group} {...groupProps}>
+              {props.renderGroup(groupedRows[index].group)}
+            </GroupRowWrapper>
+          );
+        }}
+        // ref={virtuoso}
+        groupSizes={groupSizes}
+        itemContent={(index, groupIndex) => (
+          <ListRowWrapper group={groupedRows[groupIndex].group}>
+            {flatRows[index].map((song) => props.renderItem(song, groupedRows[groupIndex].group))}
+            {props.placeholder &&
+              flatRows[index].length < props.perRow &&
+              new Array(props.perRow - flatRows[index].length)
+                .fill(null)
+                .map((_, i) => <Fragment key={i}>{props.placeholder}</Fragment>)}
+          </ListRowWrapper>
+        )}
+      />
+
+      {/*<GroupedVirtuoso*/}
+      {/*  // itemSize={() => props.itemHeight}*/}
+      {/*  // defaultItemHeight={props.itemHeight}*/}
+      {/*  fixedItemHeight={props.itemHeight}*/}
+      {/*  key={props.itemHeight}*/}
+      {/*  increaseViewportBy={baseUnit * 50}*/}
+      {/*  style={styles}*/}
+      {/*  logLevel={LogLevel.DEBUG}*/}
+      {/*  components={props.components}*/}
+      {/*  context={props.context}*/}
+      {/*  groupContent={(index) => (*/}
+      {/*    <GroupRowWrapper group={groupedRows[index].group}>*/}
+      {/*      {props.renderGroup(groupedRows[index].group)}*/}
+      {/*    </GroupRowWrapper>*/}
+      {/*  )}*/}
+      {/*  ref={virtuoso}*/}
+      {/*  groupCounts={groupSizes}*/}
+      {/*  itemContent={(index, groupIndex) => (*/}
+      {/*    <ListRowWrapper group={groupedRows[groupIndex].group}>*/}
+      {/*      {flatRows[index].map((song) => props.renderItem(song, groupedRows[groupIndex].group))}*/}
+      {/*      {props.placeholder &&*/}
+      {/*        flatRows[index].length < props.perRow &&*/}
+      {/*        new Array(props.perRow - flatRows[index].length)*/}
+      {/*          .fill(null)*/}
+      {/*          .map((_, i) => <Fragment key={i}>{props.placeholder}</Fragment>)}*/}
+      {/*    </ListRowWrapper>*/}
+      {/*  )}*/}
+      {/*/>*/}
+    </>
   );
 }
 
