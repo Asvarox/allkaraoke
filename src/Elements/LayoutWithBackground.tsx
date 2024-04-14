@@ -42,9 +42,11 @@ export const EurovisionTheme = () => (
   <>
     {escBars.map((flex, i) => (
       <EscBar
+        disableAnimation={window.location.href.includes('/remote-mic')}
         key={i}
         style={{
           flex,
+          backgroundPositionY: `${10 + i * 1.5}%`,
           animationDelay: `-${(escBars.length - i) / 7}s`,
         }}
       />
@@ -52,7 +54,7 @@ export const EurovisionTheme = () => (
   </>
 );
 
-const EscBar = styled.div`
+const EscBar = styled.div<{ disableAnimation: boolean }>`
   transform: scale(1.1, 4);
 
   background-image: linear-gradient(
@@ -65,8 +67,12 @@ const EscBar = styled.div`
   );
   background-size: 200% 50%;
   height: 100%;
-  animation: escGradient 46s linear infinite;
-  flex: 1;
+  ${(props) =>
+    !props.disableAnimation &&
+    css`
+      animation: escGradient 46s linear infinite;
+      flex: 1;
+    `}
 
   @keyframes escGradient {
     0% {
