@@ -114,6 +114,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   useEffect(() => {
     handleResize(); // Recalculate width/height to account possible scrollbar appearing
     if (!isLoading) {
+      console.log(list.current);
       list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
     }
   }, [width, list, focusedSong, focusedGroup, groupedSongList, isLoading]);
@@ -137,9 +138,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
           previewLeft: soughtElement.offsetLeft,
           previewTop: soughtElement.offsetTop,
         });
-      } else if (!soughtElement && previewTop === 0) {
-        // The initial scroll didn't work - try again so the preview is in the right place
-        list.current?.scrollToSongInGroup(focusedGroup, focusedSong, 'auto');
       }
     });
 

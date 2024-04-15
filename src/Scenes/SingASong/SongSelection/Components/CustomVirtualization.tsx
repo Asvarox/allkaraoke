@@ -11,12 +11,14 @@ import {
   useEffect,
   useImperativeHandle,
   useMemo,
+  useRef,
   useState,
 } from 'react';
 import { Components } from 'react-virtuoso';
 import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 
 export interface CustomVirtualizedListMethods {
+  getItemPositionY: (index: number) => number;
   scrollTo: (pos: number) => void;
   scrollToIndex: (index: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
   scrollToGroup: (groupIndex: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
@@ -56,14 +58,8 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
 
   const totalHeight = itemsPositions.at(-1)?.bottom ?? 0;
 
-  const [viewportElement, setViewportElement] = useState<HTMLDivElement | null>(null);
-  const [viewportHeight, setViewportHeight] = useState(2000);
-  const measuredRef = useCallback((node: HTMLDivElement) => {
-    if (node !== null) {
-      setViewportElement(node);
-      setViewportHeight(node.getBoundingClientRect().height);
-    }
-  }, []);
+  const viewportElementRef = useRef<HTMLDivElement | null>(null);
+  const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? window.innerHeight;
 
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
@@ -81,36 +77,26 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
   const [[rangeFrom, rangeTo], setItemsRange] = useState(computeVisibleItemsRange(0));
 
   useEffect(() => {
-    if (viewportElement) {
-      // update viewport size on resize
-      const observer = new ResizeObserver((entries) => {
-        for (let entry of entries) {
-          const { height } = entry.contentRect;
-          setViewportHeight(height);
-        }
-      });
-      observer.observe(viewportElement);
-
+    if (viewportElementRef.current) {
       // if the new scrollTop would cause different changes the range to render, update it
       const onScroll = () => {
-        const newItemsRange = computeVisibleItemsRange(viewportElement.scrollTop);
+        const newItemsRange = computeVisibleItemsRange(viewportElementRef.current?.scrollTop ?? 0);
         if (rangeFrom !== newItemsRange[0] || rangeTo !== newItemsRange[1]) {
           setItemsRange(newItemsRange);
         }
       };
 
-      viewportElement.addEventListener('scroll', onScroll);
+      viewportElementRef.current.addEventListener('scroll', onScroll);
 
-      if (viewportElement.scrollTop > totalHeight) {
-        viewportElement.scrollTo({ top: 0 });
+      if (viewportElementRef.current.scrollTop > totalHeight) {
+        viewportElementRef.current.scrollTo({ top: 0 });
       }
 
       return () => {
-        observer.disconnect();
-        viewportElement.removeEventListener('scroll', onScroll);
+        viewportElementRef.current?.removeEventListener('scroll', onScroll);
       };
     }
-  }, [viewportElement, rangeFrom, rangeTo, computeVisibleItemsRange, totalHeight]);
+  }, [rangeFrom, rangeTo, computeVisibleItemsRange, totalHeight]);
 
   const countPxDistance = useCallback(
     (from: number, to: number) => (itemsPositions[to]?.bottom ?? 0) - (itemsPositions[from]?.bottom ?? 0),
@@ -141,19 +127,21 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     ref,
     (): CustomVirtualizedListMethods => ({
       scrollTo: (pos: number) => {
-        viewportElement?.scrollTo({ top: pos });
+        viewportElementRef.current?.scrollTo({ top: pos });
       },
       scrollToIndex: async (index, behavior = 'smooth', align = 'center') => {
         const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
         if (item) {
-          const scrollPos = (props.itemHeight + (align === 'center' ? viewportHeight : 0)) / 2;
-          viewportElement?.scrollTo({ top: item.bottom - scrollPos, behavior });
+          const scrollPos =
+            (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
+          console.log(item.bottom, scrollPos);
+          viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
         }
       },
       scrollToGroup: async (groupIndex, behavior = 'smooth', align = 'top') => {
         const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
         if (item) {
-          viewportElement?.scrollTo({ top: item.bottom - props.groupHeight, behavior });
+          viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeight, behavior });
         }
       },
     }),
@@ -162,7 +150,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
 
   return (
     <>
-      <Viewport ref={measuredRef}>
+      <Viewport ref={viewportElementRef}>
         <Wrapper
           style={{
             height: totalHeight,

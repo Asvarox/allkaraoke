@@ -58,6 +58,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
   useImperativeHandle(
     ref,
     (): VirtualizedListMethods => ({
+      getItemPosition: (group: string, songId: number) => {},
       scrollToGroup: (group: string) => {
         const groupIndex = props.groups.findIndex((g) => g.letter === group);
 
