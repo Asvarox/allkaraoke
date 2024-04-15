@@ -1,13 +1,9 @@
 import styled from '@emotion/styled';
-import useBaseUnitPx from 'hooks/useBaseUnitPx';
-import { chunk } from 'lodash-es';
 import {
-  ComponentType,
   CSSProperties,
   ForwardedRef,
   forwardRef,
   Fragment,
-  PropsWithChildren,
   ReactElement,
   ReactNode,
   Ref,
@@ -15,22 +11,15 @@ import {
   useEffect,
   useImperativeHandle,
   useMemo,
-  useRef,
   useState,
 } from 'react';
-import { Components, GroupedVirtuoso, LocationOptions, LogLevel, VirtuosoHandle } from 'react-virtuoso';
+import { Components } from 'react-virtuoso';
 import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
-import isE2E from 'utils/isE2E';
-import { positions } from '@mui/system';
-import { useMeasure, useScroll } from 'react-use';
 
-export interface VirtualizedListMethods {
+export interface CustomVirtualizedListMethods {
   scrollTo: (pos: number) => void;
-  scrollToIndex: (
-    index: number,
-    behavior?: LocationOptions['behavior'],
-    align?: LocationOptions['align'],
-  ) => Promise<void>;
+  scrollToIndex: (index: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
+  scrollToGroup: (groupIndex: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
 }
 
 interface Props<T> {
@@ -39,28 +28,16 @@ interface Props<T> {
   itemHeight: number;
   itemContent: (index: number, groupIndex: number, props?: { style: CSSProperties }) => ReactNode;
   groupContent: (index: number, props?: { style: CSSProperties }) => ReactNode;
-  // components: Components<SongGroup, T>;
+  components: Components<SongGroup, T>;
   context: T;
   groupSizes: number[];
-  // items: any[];
 }
 
-function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedListMethods>) {
-  const virtuoso = useRef<HTMLDivElement>(null);
-
-  useImperativeHandle(
-    ref,
-    (): VirtualizedListMethods => ({
-      scrollTo: (pos: number) => {
-        virtuoso.current?.scrollTo({ top: pos });
-      },
-      scrollToIndex: async (index, behavior = 'smooth', align = 'center') => {},
-    }),
-  );
-
+function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomVirtualizedListMethods>) {
   const itemsPositions = useMemo(() => {
     const sizes: Array<{ type: 'group' | 'item'; bottom: number; index: number; groupIndex: number }> = [];
 
+    // build the list of items with their positions
     props.groupSizes.forEach((groupSize, index) => {
       sizes.push({ index, type: 'group', bottom: (sizes.at(-1)?.bottom ?? 0) + props.groupHeight, groupIndex: index });
       for (let i = 0; i < groupSize; i++) {
@@ -81,6 +58,12 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<Virtual
 
   const [viewportElement, setViewportElement] = useState<HTMLDivElement | null>(null);
   const [viewportHeight, setViewportHeight] = useState(2000);
+  const measuredRef = useCallback((node: HTMLDivElement) => {
+    if (node !== null) {
+      setViewportElement(node);
+      setViewportHeight(node.getBoundingClientRect().height);
+    }
+  }, []);
 
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
@@ -97,15 +80,9 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<Virtual
 
   const [[rangeFrom, rangeTo], setItemsRange] = useState(computeVisibleItemsRange(0));
 
-  const measuredRef = useCallback((node: HTMLDivElement) => {
-    if (node !== null) {
-      setViewportElement(node);
-      setViewportHeight(node.getBoundingClientRect().height);
-    }
-  }, []);
-
   useEffect(() => {
     if (viewportElement) {
+      // update viewport size on resize
       const observer = new ResizeObserver((entries) => {
         for (let entry of entries) {
           const { height } = entry.contentRect;
@@ -114,44 +91,44 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<Virtual
       });
       observer.observe(viewportElement);
 
+      // if the new scrollTop would cause different changes the range to render, update it
       const onScroll = () => {
         const newItemsRange = computeVisibleItemsRange(viewportElement.scrollTop);
         if (rangeFrom !== newItemsRange[0] || rangeTo !== newItemsRange[1]) {
-          console.log(viewportElement.scrollTop, rangeFrom, ' -> ', newItemsRange[0], viewportHeight);
           setItemsRange(newItemsRange);
         }
       };
 
       viewportElement.addEventListener('scroll', onScroll);
 
+      if (viewportElement.scrollTop > totalHeight) {
+        viewportElement.scrollTo({ top: 0 });
+      }
+
       return () => {
         observer.disconnect();
         viewportElement.removeEventListener('scroll', onScroll);
       };
     }
-  }, [viewportElement, rangeFrom, rangeTo, computeVisibleItemsRange]);
+  }, [viewportElement, rangeFrom, rangeTo, computeVisibleItemsRange, totalHeight]);
 
-  const countPadding = useCallback(
-    (from: number, to: number) =>
-      itemsPositions
-        .slice(from, to)
-        .reduce((acc, item) => acc + (item.type === 'group' ? props.groupHeight : props.itemHeight), 0),
-    [itemsPositions, props.groupHeight, props.itemHeight],
+  const countPxDistance = useCallback(
+    (from: number, to: number) => (itemsPositions[to]?.bottom ?? 0) - (itemsPositions[from]?.bottom ?? 0),
+    [itemsPositions],
   );
 
-  const paddingTop = useMemo(() => countPadding(0, rangeFrom), [rangeFrom, countPadding]);
+  const paddingTop = useMemo(() => countPxDistance(0, rangeFrom), [rangeFrom, countPxDistance]);
 
-  // In case the group elements of the first items to render is not on the list, we need to render it manually
-  // with the correct padding
+  // If the group is large enough, it might happen that the 'group' item is not in range to be rendered, even though
+  // it's sticky. In that case, we need to render it manually.
   const groupToRender = itemsPositions.slice(0, rangeFrom).findLastIndex(({ type }) => type === 'group');
 
   const itemsToRender = itemsPositions.slice(rangeFrom, rangeTo);
-  const groupedItemsToRender: Array<(typeof itemsToRender)[number]>[] = [];
 
-  if (groupToRender !== -1) {
-    groupedItemsToRender.push([]);
-  }
-
+  // To make position: sticky work, we need to render the group-type items in separate divs, so they collapse
+  // on reaching the end if it.
+  // If the group header needs to be rendered manually, add fake group to the grouted items list
+  const groupedItemsToRender: Array<(typeof itemsToRender)[number]>[] = groupToRender !== -1 ? [[]] : [];
   for (let i = 0; i < itemsToRender.length; i++) {
     const item = itemsToRender[i];
     if (item.type === 'group') {
@@ -160,35 +137,54 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<Virtual
     groupedItemsToRender.at(-1)?.push(item);
   }
 
-  if (groupToRender === -1 && groupedItemsToRender[0][0]?.type !== 'group') {
-    console.log('wat', groupToRender, groupedItemsToRender);
-  }
-
-  console.log(groupToRender, groupedItemsToRender);
+  useImperativeHandle(
+    ref,
+    (): CustomVirtualizedListMethods => ({
+      scrollTo: (pos: number) => {
+        viewportElement?.scrollTo({ top: pos });
+      },
+      scrollToIndex: async (index, behavior = 'smooth', align = 'center') => {
+        const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
+        if (item) {
+          const scrollPos = (props.itemHeight + (align === 'center' ? viewportHeight : 0)) / 2;
+          viewportElement?.scrollTo({ top: item.bottom - scrollPos, behavior });
+        }
+      },
+      scrollToGroup: async (groupIndex, behavior = 'smooth', align = 'top') => {
+        const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
+        if (item) {
+          viewportElement?.scrollTo({ top: item.bottom - props.groupHeight, behavior });
+        }
+      },
+    }),
+  );
+  const { Header, Footer, EmptyPlaceholder } = props.components ?? {};
 
   return (
     <>
       <Viewport ref={measuredRef}>
-        {viewportHeight > 0 && (
-          <Wrapper
-            style={{
-              height: totalHeight,
-              paddingTop: groupToRender !== -1 ? paddingTop - props.groupHeight : paddingTop,
-            }}>
-            {groupedItemsToRender.map((group, index) => (
-              <div key={index}>
-                {index === 0 && groupToRender !== -1 && props.groupContent(itemsPositions[groupToRender].index)}
-                {group.map(({ index, type, bottom, groupIndex }) => {
-                  return (
-                    <Fragment key={`${bottom}`}>
-                      {type === 'group' ? props.groupContent(index) : props.itemContent(index, groupIndex)}
-                    </Fragment>
-                  );
-                })}
-              </div>
-            ))}
-          </Wrapper>
-        )}
+        <Wrapper
+          style={{
+            height: totalHeight,
+            paddingTop: groupToRender !== -1 ? paddingTop - props.groupHeight : paddingTop,
+          }}>
+          {Header && <Header context={props.context} />}
+          {groupedItemsToRender.map((group, index) => (
+            // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
+            <div key={(group[0] ?? itemsPositions[groupToRender]).groupIndex}>
+              {index === 0 && groupToRender !== -1 && props.groupContent(itemsPositions[groupToRender].index)}
+              {group.map(({ index, type, bottom, groupIndex }) => {
+                return (
+                  <Fragment key={`${bottom}`}>
+                    {type === 'group' ? props.groupContent(index) : props.itemContent(index, groupIndex)}
+                  </Fragment>
+                );
+              })}
+            </div>
+          ))}
+        </Wrapper>
+        {groupedItemsToRender.length === 0 && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
+        {Footer && <Footer context={props.context} />}
       </Viewport>
     </>
   );
@@ -205,11 +201,7 @@ const Viewport = styled.div`
   width: 100%;
 `;
 
-const styles: CSSProperties = {
-  overflowX: 'hidden',
-};
-
 // https://stackoverflow.com/a/58473012
 export const CustomVirtualization = forwardRef(CustomVirtualizationInner) as <T>(
-  p: Props<T> & { ref?: Ref<VirtualizedListMethods> },
+  p: Props<T> & { ref?: Ref<CustomVirtualizedListMethods> },
 ) => ReactElement;
