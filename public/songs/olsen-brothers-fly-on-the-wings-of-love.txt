@@ -1,0 +1,306 @@
+#ARTIST:Olsen Brothers
+#TITLE:Fly On The Wings Of Love
+#CREATOR:Diddlmaus30mg
+#BPM:208
+#YEAR:2000
+#VIDEO:v=F-JwiYlg5Gc
+#LANGUAGE:English
+#GAP:26750,384615384617
+#EDITION:ESC 2000
+#ALLKARAOKE_ID:olsen-brothers-fly-on-the-wings-of-love
+#ALLKARAOKE_LASTUPDATE:2024-04-16T19:52:25.618Z
+#ALLKARAOKE_ARTISTORIGIN:DK
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1058
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3518
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Olsen Brothers - Fly On The Wings Of Love (ESC 2000 Denmark).mp3
+: 14 2 6 In 
+: 17 3 6 the 
+: 22 3 6 summ
+: 26 1 7 er
+: 28 6 9 night 
+- 34
+: 48 2 9 When 
+: 52 1 9 the 
+: 54 4 14 moon 
+: 60 3 13 shines 
+: 64 6 9 bright 
+- 70
+: 78 2 7 Feel
+: 81 3 6 ing 
+: 85 6 7 love 
+: 93 3 9 for
+: 97 3 6 ev
+: 102 5 4 er 
+- 107 128
+- 128
+: 142 1 6 And 
+: 144 2 6 the 
+: 147 3 6 heat 
+: 151 1 7 is 
+: 153 3 9 on 
+- 156 158
+- 158
+: 172 3 9 When 
+: 176 1 9 the 
+: 178 5 14 day
+: 184 3 13 light’s 
+: 188 6 9 gone 
+- 194
+: 196 3 7 Still 
+: 212 5 7 hap
+: 218 4 7 py 
+: 225 3 9 to
+: 229 4 6 geth
+: 234 4 4 er. 
+- 238 246
+- 246
+: 260 2 16 There’s 
+: 263 2 14 just 
+: 268 2 13 one 
+: 272 2 14 more 
+: 276 2 16 thing 
+: 280 2 14 i’d 
+: 284 3 6 like 
+: 288 2 9 to 
+: 292 6 11 add 
+- 298 310
+- 310
+: 324 3 16 She’s 
+: 328 2 14 the 
+: 332 1 13 great
+: 334 3 14 est 
+: 339 4 16 love 
+: 346 1 14 I’ve 
+: 348 1 13 ev
+: 351 3 14 er 
+: 355 6 16 had. 
+- 361 390
+- 390
+: 404 5 9 Fly 
+: 410 4 14 on 
+: 416 2 13 the 
+: 421 10 14 wings 
+: 432 2 6 of 
+: 436 8 11 love 
+- 444 454
+- 454
+: 468 4 9 Fly 
+: 474 5 14 ba
+: 480 3 13 by 
+: 484 11 14 fly 
+: 496 1 16 ~ 
+: 498 10 14 ~ 
+- 508 516
+- 516
+: 530 6 9 Reach
+: 538 5 14 ing 
+: 544 3 13 the 
+: 548 5 14 stars 
+: 556 2 6 a
+: 561 10 11 bove 
+- 571 582
+- 582
+: 596 5 11 Touch
+: 602 5 9 ing 
+: 608 3 6 the 
+: 612 4 6 sky
+: 617 4 4 ~ 
+- 621 668
+- 668
+: 682 3 6 And 
+: 686 2 6 as 
+: 690 3 6 time 
+: 694 3 7 goes 
+: 698 8 9 by 
+- 706
+: 718 5 9 There’s a 
+: 724 3 14 lot 
+: 728 3 13 to 
+: 732 8 9 try 
+- 740
+: 750 2 7 And 
+: 753 1 6 i’m 
+: 757 6 7 feel
+: 764 4 9 ing 
+: 769 3 6 luc
+: 773 4 4 ky. 
+- 777 800
+- 800
+: 814 1 6 In 
+: 816 1 6 the 
+: 820 3 6 soft
+: 824 3 7 est 
+: 828 6 9 sand 
+- 834
+: 842 6 9 Smiling 
+: 850 4 14 hand 
+: 855 2 13 in 
+: 859 6 9 hand 
+- 865
+: 876 4 7 Love 
+: 881 1 6 is 
+: 885 6 7 all 
+: 892 2 9 a
+: 896 6 6 round 
+: 904 8 4 me. 
+- 912 918
+- 918
+: 932 3 16 There’s 
+: 936 1 14 just 
+: 939 2 13 one 
+: 944 2 14 more 
+: 948 2 16 thing 
+: 952 2 14 i’d 
+: 956 3 6 like 
+: 960 2 9 to 
+: 964 8 11 add 
+- 972 980
+- 980
+: 994 3 16 She’s 
+: 999 2 14 the 
+: 1004 2 13 great
+: 1007 4 14 est 
+: 1012 4 16 love 
+: 1018 3 14 I’ve 
+: 1022 1 13 ev
+: 1024 1 14 er 
+: 1028 12 16 had. 
+- 1040 1060
+- 1060
+: 1074 6 9 Fly 
+: 1082 4 14 on 
+: 1088 4 13 the 
+: 1093 8 14 wings 
+: 1104 3 6 of 
+: 1108 10 11 love 
+- 1118 1128
+- 1128
+: 1142 4 9 Fly 
+: 1148 4 14 ba
+: 1153 2 13 by 
+: 1157 8 14 fly 
+: 1167 2 16 ~ 
+: 1170 12 14 ~ 
+- 1182 1190
+- 1190
+: 1204 6 9 Reach
+: 1211 4 14 ing 
+: 1216 2 13 the 
+: 1220 6 14 stars 
+: 1228 2 6 a
+: 1232 8 11 bove 
+- 1240 1254
+- 1254
+: 1268 4 11 Touch
+: 1274 6 9 ing 
+: 1281 2 6 the 
+: 1284 4 6 sky
+: 1290 8 4 ~ 
+- 1298 1314
+- 1314
+: 1328 4 9 If 
+: 1333 7 14 you 
+: 1341 3 13 just 
+: 1345 9 16 fly~ 
+: 1355 16 14 ~ 
+- 1371 1382
+- 1382
+: 1396 6 9 Fly 
+: 1403 2 14 on 
+: 1408 2 13 the 
+: 1412 8 14 wings 
+: 1421 2 6 of 
+: 1425 10 11 love 
+- 1435 1446
+- 1446
+: 1460 6 9 Reach
+: 1467 2 14 ing 
+: 1472 2 13 the 
+: 1477 7 14 stars 
+: 1485 2 6 a
+: 1489 8 11 bove 
+- 1497 1510
+- 1510
+: 1524 4 11 Touch
+: 1530 5 9 ing 
+: 1537 2 6 the 
+: 1541 4 6 sky
+: 1546 12 4 ~ 
+- 1558 1576
+- 1576
+: 1590 6 9 Fly 
+: 1597 2 14 on 
+: 1602 2 13 the 
+: 1607 10 14 wings 
+: 1619 2 6 of 
+: 1624 10 11 love 
+- 1634 1642
+- 1642
+: 1656 4 9 Fly 
+: 1662 3 14 ba
+: 1666 3 13 by 
+: 1672 7 14 fly 
+: 1680 3 16 ~ 
+: 1684 14 14 ~ 
+- 1698 1702
+- 1702
+: 1716 6 9 Reach
+: 1724 4 14 ing 
+: 1730 2 13 the 
+: 1734 7 14 stars 
+: 1742 2 6 a
+: 1746 10 11 bove 
+- 1756 1766
+- 1766
+: 1780 4 11 Touch
+: 1786 8 9 ing 
+: 1796 2 6 the 
+: 1801 4 6 sky
+: 1806 8 4 ~ 
+- 1814 1830
+- 1830
+: 1844 5 11 Fly 
+: 1850 4 16 on 
+: 1856 2 15 the 
+: 1860 10 16 wings 
+: 1872 2 8 of 
+: 1877 10 13 love 
+- 1887 1894
+- 1894
+: 1908 6 11 Fly 
+: 1915 4 16 ba
+: 1920 4 15 by 
+: 1925 10 16 fly 
+: 1936 2 18 ~ 
+: 1939 14 16 ~ 
+- 1953 1956
+- 1956
+: 1970 6 11 Reach
+: 1978 5 16 ing 
+: 1984 3 15 the 
+: 1988 6 16 stars 
+: 1996 2 8 a
+: 2000 12 13 bove 
+- 2012 2022
+- 2022
+: 2036 4 13 Touch
+: 2042 6 11 ing 
+: 2049 2 8 the 
+: 2053 5 8 sky
+: 2059 10 6 ~ 
+- 2069 2082
+- 2082
+: 2096 4 11 If 
+: 2102 6 16 you 
+: 2109 2 15 just 
+: 2114 7 18 fly
+: 2122 16 16 ~ 
+- 2138 2146
+- 2146
+: 2160 4 11 On 
+: 2166 9 16 wings 
+: 2176 1 15 of 
+: 2178 26 16 love 
+E
