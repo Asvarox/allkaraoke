@@ -6,7 +6,7 @@ import { useMemo } from 'react';
 import { useAsync } from 'react-use';
 
 const POPULAR_SONGS_MIN_COUNT = 250;
-const POPULAR_SONGS_MAX_COUNT = 500;
+const POPULAR_SONGS_MAX_COUNT = 750;
 
 export default function useRecommendedSongs(songs: SongPreview[]) {
   const popularSongs = useAsync(
@@ -43,7 +43,7 @@ export default function useRecommendedSongs(songs: SongPreview[]) {
     // Given how many songs we already have, compute how many songs to take from each language
     const popularSongsCount = Math.max(
       POPULAR_SONGS_MIN_COUNT,
-      POPULAR_SONGS_MAX_COUNT - Math.round(songsToAdd.length / 2),
+      POPULAR_SONGS_MAX_COUNT - Math.round(songsToAdd.length / 1.75),
     );
 
     const finalPopularSongs = popularSongLanguages

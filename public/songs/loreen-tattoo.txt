@@ -1,5 +1,5 @@
 #ARTIST:Loreen
-#TITLE:Tattoo (En vivo)
+#TITLE:Tattoo
 #CREATOR:vicktoben
 #BPM:300
 #YEAR:2023
@@ -8,7 +8,8 @@
 #GENRE:Pop
 #LANGUAGE:English
 #GAP:28780
-#ALLKARAOKE_ID:loreen-tattoo-en-vivo
+#EDITION:ESC 2023
+#ALLKARAOKE_ID:loreen-tattoo
 #ALLKARAOKE_LASTUPDATE:2023-07-27T19:14:16.143Z
 #ALLKARAOKE_ARTISTORIGIN:SE
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=vicktoben

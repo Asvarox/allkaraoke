@@ -6,6 +6,7 @@ import songIndex from '../public/songs/index.json';
 import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 
+const foundOrigins: Record<string, string> = {};
 const files = process.argv.slice(2);
 console.log(files);
 
@@ -35,7 +36,6 @@ const mbApi = new MusicBrainzApi({
   appContactInfo: 'tatarczyk.aleksander@gmail.com',
 });
 
-const foundOrigins: Record<string, string> = {};
 async function updateArtistOrigin(song: Song) {
   if (song.artistOrigin) return;
   const existingSong = songIndex.find((songFromIndex) => songFromIndex.artist === song.artist);

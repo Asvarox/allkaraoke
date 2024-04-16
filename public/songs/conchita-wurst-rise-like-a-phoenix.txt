@@ -1,0 +1,338 @@
+#ARTIST:Conchita Wurst
+#TITLE:Rise Like A Phoenix
+#CREATOR:aac
+#BPM:328
+#YEAR:2014
+#VIDEO:v=ToqNa0rqUtY
+#LANGUAGE:English
+#GAP:11443,90243902439
+#EDITION:ESC 2014
+#ALLKARAOKE_ID:conchita-wurst-rise-like-a-phoenix
+#ALLKARAOKE_LASTUPDATE:2024-04-12T19:49:38.874Z
+#ALLKARAOKE_ARTISTORIGIN:AT
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=98211
+#ALLKARAOKE_REALBPM:82
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17208
+#ALLKARAOKE_VOLUME:0,83
+#MP3:Conchita Wurst - Rise Like A Phoenix (ESC 2014 Austria).mp3
+: 22 2 -3 Wa
+: 26 2 -3 king 
+: 30 2 -3 in 
+: 34 2 -3 the 
+: 38 2 -3 rub
+* 44 4 -3 ble 
+- 48 60
+- 60
+: 82 6 0 Wal
+: 92 2 0 king 
+: 96 4 0 o
+: 102 4 -3 ver 
+* 110 10 0 glass 
+- 120 128
+- 128
+: 150 2 -2 Neigh
+: 154 4 -2 bors 
+: 160 4 -2 say 
+: 166 4 -2 we’re 
+: 172 4 -2 troub
+: 180 4 -2 le 
+- 184 192
+- 192
+: 214 4 -3 Well 
+: 222 4 -3 that 
+: 230 4 -3 time 
+: 238 4 -3 has 
+* 248 10 -3 passed 
+- 258
+: 280 2 -3 Pee
+: 284 2 -3 ring 
+: 290 4 -3 from 
+: 296 4 -5 the 
+: 302 4 -3 mir
+: 308 6 -3 ror 
+- 314
+: 336 6 0 No, 
+: 350 2 0 that 
+: 354 2 0 is
+: 358 4 -3 n’t 
+: 364 6 0 me 
+- 370 386
+- 386
+: 408 4 -2 Stran
+: 416 2 -2 ger 
+: 420 2 -2 get
+: 424 2 -2 ting 
+* 428 6 -2 nea
+: 438 6 -2 rer 
+- 444
+: 464 4 -3 Who 
+: 472 4 -3 can 
+: 480 4 -2 this 
+: 488 4 -3 per
+: 496 4 -2 son 
+: 504 10 -3 be 
+- 514 532
+- 532
+: 554 16 5 You 
+: 576 2 4 would
+: 580 2 2 n’t 
+* 586 16 5 know 
+: 608 2 4 me 
+: 612 4 2 at 
+: 618 12 -3 all 
+- 630
+: 646 4 -3 To
+: 652 10 -3 day 
+- 662 692
+- 692
+: 714 4 -5 From 
+: 722 4 -2 the 
+: 730 4 -3 fa
+: 738 4 2 ding 
+: 746 4 1 light 
+: 754 4 5 I 
+: 764 10 4 fly 
+- 774
+: 780 20 9 Rise 
+: 808 4 7 like 
+: 816 4 5 a 
+: 824 4 5 phoe
+* 830 8 7 nix 
+- 838
+: 856 4 7 Out 
+: 864 4 7 of 
+: 872 2 5 the 
+: 876 8 9 a
+: 888 4 7 shes 
+- 892
+: 896 4 5 See
+: 904 4 4 king 
+: 912 18 7 ra
+: 936 4 5 ther 
+: 942 4 4 than 
+: 950 4 4 ven
+: 958 8 5 geance 
+- 966 972
+- 972
+: 994 4 5 Re
+: 1002 2 4 tri
+* 1006 6 7 bu
+: 1016 6 5 tion 
+- 1022
+: 1026 4 4 You 
+: 1034 4 2 were 
+: 1042 18 5 warned 
+- 1060
+: 1074 6 5 Once 
+: 1086 4 4 I’m 
+: 1098 4 2 trans
+: 1106 20 7 formed 
+- 1126
+: 1138 6 7 Once 
+: 1150 8 5 I’m 
+: 1162 8 4 re
+* 1172 18 9 born 
+- 1190
+: 1204 4 0 You 
+: 1212 4 2 know 
+: 1220 4 5 I 
+: 1228 4 7 will 
+: 1236 18 9 rise 
+: 1260 6 7 like 
+: 1270 4 5 a 
+: 1278 4 5 phoe
+: 1286 8 7 nix 
+- 1294 1302
+- 1302
+: 1324 4 2 But 
+: 1332 4 5 you’re
+: 1340 4 2 ~ 
+: 1348 10 2 my 
+: 1366 18 4 flame 
+- 1384 1424
+- 1424
+: 1446 2 -3 Go 
+: 1450 2 -3 a
+: 1454 4 -3 bout 
+: 1460 2 -5 your 
+: 1468 4 -3 busi
+* 1476 6 -3 ness 
+- 1482 1484
+- 1484
+: 1506 4 0 Act 
+: 1516 2 0 as 
+: 1520 4 0 if 
+: 1526 4 -3 you’re 
+: 1536 10 0 free 
+- 1546 1552
+- 1552
+: 1574 4 2 No
+: 1582 2 2 one 
+: 1586 4 2 could 
+: 1592 4 0 have 
+: 1600 4 2 wit
+: 1608 6 2 nessed 
+- 1614
+: 1622 4 4 What 
+: 1630 4 5 you 
+: 1636 4 4 did 
+: 1644 2 5 to 
+* 1648 12 4 me 
+- 1660 1690
+- 1690
+: 1712 4 2 Cause 
+: 1720 16 5 you 
+: 1744 2 4 would
+: 1748 2 2 n’t 
+: 1752 14 5 know 
+: 1774 2 4 me 
+: 1778 4 2 to
+: 1786 8 -3 day 
+- 1794 1816
+- 1816
+: 1838 4 3 And 
+: 1846 4 3 you 
+: 1856 4 3 have 
+: 1864 4 2 got 
+: 1872 4 0 to 
+: 1880 22 3 see 
+- 1902 1904
+- 1904
+: 1926 4 2 To 
+: 1936 2 0 be
+: 1940 2 0 lieve
+* 1944 42 1 ~ 
+- 1986
+: 2008 4 -5 From 
+: 2016 4 -2 the 
+: 2024 4 -3 fa
+: 2032 4 2 ding 
+: 2040 4 1 light 
+: 2048 4 5 I 
+: 2056 10 4 fly 
+- 2066
+: 2072 20 9 Rise 
+: 2098 4 7 like 
+: 2106 4 5 a 
+: 2114 4 5 phoe
+: 2122 8 7 nix 
+- 2130
+: 2144 4 7 Out 
+: 2150 4 7 of 
+: 2158 4 5 the 
+* 2164 6 9 a
+: 2174 4 7 shes 
+- 2178
+: 2182 4 5 See
+: 2190 4 4 king 
+: 2198 18 7 ra
+: 2222 4 5 ther 
+: 2228 2 4 than 
+: 2232 4 4 ven
+: 2242 8 5 geance 
+- 2250 2256
+- 2256
+: 2278 4 5 Re
+: 2286 4 4 tri
+: 2292 6 7 bu
+: 2302 4 5 tion 
+- 2306
+: 2310 4 4 You 
+: 2318 4 2 were 
+* 2326 16 5 warned 
+- 2342
+: 2358 6 5 Once 
+: 2370 4 4 I’m 
+: 2382 4 2 trans
+: 2390 16 7 formed 
+- 2406
+: 2424 6 7 Once 
+: 2434 8 5 I’m 
+: 2446 4 4 re
+: 2454 4 2 ~
+: 2462 40 2 born 
+- 2502 2520
+- 2520
+: 2542 4 2 I 
+: 2550 4 9 rise 
+: 2558 4 7 up 
+: 2566 4 5 to 
+: 2574 4 7 the 
+* 2582 12 5 sky
+* 2598 28 2 ~ 
+- 2626 2640
+- 2640
+: 2662 4 -3 You 
+: 2668 2 -3 threw 
+: 2672 4 -3 me 
+: 2678 4 -2 down
+: 2684 4 -3 ~ 
+: 2692 8 -3 but 
+- 2700 2702
+- 2702
+: 2724 4 9 I’m 
+: 2732 4 9 gon
+: 2738 4 7 na 
+: 2746 84 9 fly 
+- 2830
+: 2834 8 9 And 
+* 2854 16 10 rise 
+: 2876 6 9 like 
+: 2886 4 7 a 
+: 2894 4 5 phoe
+: 2902 8 7 nix 
+- 2910
+: 2926 4 7 Out 
+: 2934 4 7 of 
+: 2942 2 5 the 
+: 2946 8 9 a
+: 2958 4 7 shes 
+- 2962
+: 2966 4 5 See
+: 2974 4 4 king 
+: 2982 16 7 ra
+: 3002 4 5 ther 
+: 3010 4 4 than 
+: 3018 4 4 ven
+: 3026 8 5 geance 
+- 3034 3040
+- 3040
+: 3062 4 5 Re
+: 3068 4 4 tri
+* 3074 6 7 bu
+: 3086 4 5 tion 
+- 3090
+: 3092 4 4 You 
+: 3100 4 2 were 
+: 3110 14 5 warned 
+- 3124
+: 3140 6 5 Once 
+: 3152 4 4 I’m 
+: 3162 4 2 trans
+* 3172 18 7 formed 
+- 3190
+: 3204 6 7 Once 
+: 3216 8 5 I’m 
+: 3228 4 4 re
+: 3236 18 9 born 
+- 3254
+: 3268 4 0 You 
+: 3276 4 2 know 
+: 3284 4 5 I 
+: 3292 4 7 will 
+: 3300 16 9 rise 
+: 3320 4 7 like 
+: 3330 4 5 a 
+: 3338 4 5 phoe
+: 3346 6 7 nix 
+- 3352 3368
+- 3368
+: 3390 4 4 But 
+* 3400 14 5 you’re 
+: 3422 12 1 my 
+- 3434
+* 3450 32 2 Flame
+* 3484 28 4 ~
+* 3514 36 5 ~
+* 3552 72 9 ~ 
+E

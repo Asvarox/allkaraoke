@@ -7,9 +7,11 @@ import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
 import clearString from '../src/utils/clearString';
 // @ts-ignore
-import scrapedBpmData from './scraped-bpm-data.json';
+import escSongs from './escSongs.json';
 // @ts-ignore
+import scrapedBpmData from './scraped-bpm-data.json';
 
+// @ts-ignore
 const mbApi = new MusicBrainzApi({
   appName: 'Olkaraoke',
   appVersion: '0.1.0',
@@ -30,6 +32,7 @@ const SONGS_FOLDER = './public/songs';
     console.log(`"${song.artist}" "${song.title}"`);
     const { tracks, ...songData } = song;
     try {
+      await setEurovisionEdition(songData);
       // await fillMissingRealBpm(songData, file);
       // await fillSongYear(songData);
       // await appendBandOrigin(songData);
@@ -139,5 +142,15 @@ async function fillSongYear(songData: Omit<Song, 'tracks'>) {
         clearString(songData.title),
       );
     }
+  }
+}
+
+async function setEurovisionEdition(songData: Omit<Song, 'tracks'>) {
+  const escSong = (escSongs as any[]).find((escSong) =>
+    clearString(songData.id).endsWith(clearString(escSong.artist.replaceAll(' and ', '') + escSong.song)),
+  );
+  if (escSong) {
+    console.log('found', escSong);
+    songData.edition = `ESC ${escSong.year}`;
   }
 }
