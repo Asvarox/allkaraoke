@@ -45,7 +45,7 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
 
   await test.step('Select computer`s mic', async () => {
     await pages.songPreviewPage.goNext();
-    await pages.songPreviewPage.setupMics();
+    await pages.songPreviewPage.goToInputSelection();
     await pages.inputSelectionPage.selectComputersMicrophone();
   });
 

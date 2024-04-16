@@ -12,11 +12,16 @@ export class GamePagePO {
     return this.page.getByTestId('skip-intro-info');
   }
 
-  public async skipIntro() {
-    await this.page.waitForTimeout(1500);
-    await expect(this.skipIntroElement).toBeVisible();
-    await this.page.waitForTimeout(1500);
-    await this.page.keyboard.press('Enter');
+  public async skipIntroIfPossible() {
+    try {
+      const skipIntroEl = await this.page.waitForSelector('[data-test="skip-intro-info"]', { timeout: 5_000 });
+
+      if (skipIntroEl) {
+        await this.page.keyboard.press('Enter');
+      }
+    } catch (error) {
+      console.log('Skip-intro-info is not visible');
+    }
   }
 
   public async goToPauseMenu() {

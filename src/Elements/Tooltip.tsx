@@ -61,7 +61,9 @@ export const ClosableTooltip = ({
           {props.title}
           {opened && (
             <OkButtonWrapper>
-              <OkButton onClick={handleClose}>Close</OkButton>
+              <OkButton data-test="close-tooltip-button" onClick={handleClose}>
+                Close
+              </OkButton>
             </OkButtonWrapper>
           )}
         </>
