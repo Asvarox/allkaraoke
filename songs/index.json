@@ -1632,6 +1632,34 @@
     "local": false
   },
   {
+    "id": "alexander-rybak-fairytale",
+    "title": "Fairytale",
+    "artist": "Alexander Rybak",
+    "video": "oEQfZxQ7TPk",
+    "language": [
+      "English"
+    ],
+    "bpm": 324.03,
+    "gap": 18441.57578002037,
+    "year": "2009",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-16T19:52:25.608Z",
+    "edition": "ESC 2009",
+    "realBpm": 108,
+    "volume": 0.8,
+    "author": "klops_007",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=12657",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=6576",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alexanderrybakfairytale",
+    "local": false
+  },
+  {
     "id": "alice-cooper-poison",
     "title": "Poison",
     "artist": "Alice Cooper",
@@ -9218,6 +9246,34 @@
     "local": false
   },
   {
+    "id": "bucks-fizz-making-your-mind-up",
+    "title": "Making Your Mind Up",
+    "artist": "Bucks Fizz",
+    "video": "h4-lKMGII_k",
+    "language": [
+      "English"
+    ],
+    "bpm": 348,
+    "gap": 10588.620689655172,
+    "year": "1980",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-16T19:52:25.611Z",
+    "edition": "ESC 1980",
+    "realBpm": 174,
+    "volume": 0.78,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=587",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bucksfizzmakingyourmindup",
+    "local": false
+  },
+  {
     "id": "budka-suflera-piaty-bieg",
     "title": "Piąty Bieg",
     "artist": "Budka Suflera",
@@ -12132,6 +12188,34 @@
     "local": false
   },
   {
+    "id": "dadi-og-gagnamagnid-think-about-things",
+    "title": "Think About Things",
+    "artist": "Daði og Gagnamagnið",
+    "video": "VFZNvj-HfBU",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.97,
+    "gap": 44315.94440288223,
+    "year": "2020",
+    "artistOrigin": "IS",
+    "lastUpdate": "2024-04-16T19:52:25.612Z",
+    "edition": "ESC 2020",
+    "realBpm": 127,
+    "volume": 0.73,
+    "author": "daggeg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1835",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=24511",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dadioggagnamagnidthinkaboutthings",
+    "local": false
+  },
+  {
     "id": "daft-punk-around-the-world",
     "title": "Around The World",
     "artist": "Daft Punk",
@@ -12211,6 +12295,35 @@
     ],
     "tracksCount": 1,
     "search": "daisukeishiwatarismellofthegame",
+    "local": false
+  },
+  {
+    "id": "dana-international-diva",
+    "title": "Diva",
+    "artist": "Dana International",
+    "video": "NsPksS8QWWY",
+    "language": [
+      "English"
+    ],
+    "bpm": 267.9,
+    "gap": 8592.161254199327,
+    "year": "1998",
+    "artistOrigin": "IL",
+    "lastUpdate": "2024-04-16T19:52:25.613Z",
+    "edition": "ESC 1998",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 0.72,
+    "author": "Cybergirl76",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=89215",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=15904",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "danainternationaldiva",
     "local": false
   },
   {
@@ -23509,6 +23622,35 @@
     "local": false
   },
   {
+    "id": "katrina-and-the-waves-love-shine-a-light",
+    "title": "Love Shine A Light",
+    "artist": "Katrina And The Waves",
+    "video": "5XPATo43cy4",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": -117.09756097560978,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-16T19:52:25.614Z",
+    "edition": "ESC 1997",
+    "genre": "Pop",
+    "realBpm": 84,
+    "volume": 0.84,
+    "author": "Bardotje",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11730",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=7857",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katrinaandthewavesloveshinealight",
+    "local": false
+  },
+  {
     "id": "katrina-and-the-waves-walking-on-sunshine",
     "title": "Walking On Sunshine",
     "artist": "Katrina And The Waves",
@@ -26174,6 +26316,34 @@
     "local": false
   },
   {
+    "id": "lena-satellite",
+    "title": "Satellite",
+    "artist": "Lena",
+    "video": "8QSgNM9yNjo",
+    "language": [
+      "English"
+    ],
+    "bpm": 285,
+    "gap": 13190,
+    "year": "2010",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-16T19:52:25.616Z",
+    "edition": "Esc 2010",
+    "realBpm": 90,
+    "volume": 0.75,
+    "author": "Basti",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4898",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=9037",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lenasatellite",
+    "local": false
+  },
+  {
     "id": "lenny-kravitz-are-you-gonna-go-my-way",
     "title": "Are You Gonna Go My Way",
     "artist": "Lenny Kravitz",
@@ -27864,6 +28034,35 @@
     ],
     "tracksCount": 1,
     "search": "luisfonsifeatdaddyyankeedespacito",
+    "local": false
+  },
+  {
+    "id": "lulu-boom-bang-a-bang",
+    "title": "Boom Bang-A-Bang",
+    "artist": "Lulu",
+    "video": "BTq9T3SbS4M",
+    "language": [
+      "English"
+    ],
+    "bpm": 370.25,
+    "gap": 6964.909115032507,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-16T19:52:25.618Z",
+    "edition": "ESC 1969",
+    "genre": "Oldies",
+    "realBpm": 183,
+    "volume": 0.87,
+    "author": "triplesam",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=64666",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13372",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "luluboombangabang",
     "local": false
   },
   {
@@ -34609,6 +34808,34 @@
     "local": false
   },
   {
+    "id": "olsen-brothers-fly-on-the-wings-of-love",
+    "title": "Fly On The Wings Of Love",
+    "artist": "Olsen Brothers",
+    "video": "F-JwiYlg5Gc",
+    "language": [
+      "English"
+    ],
+    "bpm": 208,
+    "gap": 26750.384615384617,
+    "year": "2000",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-04-16T19:52:25.618Z",
+    "edition": "ESC 2000",
+    "realBpm": 104,
+    "volume": 0.75,
+    "author": "Diddlmaus30mg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1058",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3518",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "olsenbrothersflyonthewingsoflove",
+    "local": false
+  },
+  {
     "id": "ona-kiedy-powiem-sobie-dosc",
     "title": "Kiedy powiem sobie dość",
     "artist": "ONA",
@@ -40646,6 +40873,34 @@
     "local": false
   },
   {
+    "id": "sam-ryder-space-man",
+    "title": "Space Man",
+    "artist": "Sam Ryder",
+    "video": "udsMTb2NIak",
+    "language": [
+      "English"
+    ],
+    "bpm": 350.64,
+    "gap": 21156.084873374402,
+    "year": "2022",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-16T19:52:25.620Z",
+    "edition": "ESC 2022",
+    "realBpm": 80,
+    "volume": 0.6,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=25782",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "samryderspaceman",
+    "local": false
+  },
+  {
     "id": "samra-capital-bra-wieder-lila",
     "title": "Wieder Lila",
     "artist": "Samra & Capital Bra",
@@ -44747,6 +45002,34 @@
     ],
     "tracksCount": 1,
     "search": "taylorswiftyourenotsorry",
+    "local": false
+  },
+  {
+    "id": "teach-in-ding-a-dong",
+    "title": "Ding-a-dong",
+    "artist": "Teach-In",
+    "video": "yIUn_u3nSoo",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 4002.142857142857,
+    "year": "1975",
+    "artistOrigin": "NL",
+    "lastUpdate": "2024-04-16T19:52:25.621Z",
+    "edition": "ESC 1975",
+    "realBpm": 139,
+    "volume": 0.85,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=21667",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "teachindingadong",
     "local": false
   },
   {
