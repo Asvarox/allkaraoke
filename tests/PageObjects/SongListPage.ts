@@ -16,6 +16,10 @@ export class SongListPagePO {
     return this.page.getByTestId(`song-${songID}`);
   }
 
+  public get getSelectedSongID() {
+    return this.songPreviewElement.getAttribute('data-song');
+  }
+
   public async focusSong(songID: string) {
     await this.getSongElement(songID).click();
   }
@@ -28,8 +32,8 @@ export class SongListPagePO {
     await navigateWithKeyboard(this.page, `song-${songID}`, remoteMic);
   }
 
-  public get songListElement() {
-    return this.page.getByTestId('song-list-container');
+  public get songListContainer() {
+    return this.page.locator('[data-test="song-list-container"]');
   }
 
   public get songPreviewElement() {
@@ -108,12 +112,40 @@ export class SongListPagePO {
     await this.page.keyboard.press('Enter');
   }
 
-  public async expectSongToBeVisibleAsNew(songID: string) {
-    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
-  }
-
   public async goBackToMainMenu() {
     await this.page.waitForTimeout(500);
     await this.page.keyboard.press('Backspace');
+  }
+
+  public get selectionPlaylistTip() {
+    return this.page.getByRole('tooltip');
+  }
+
+  public async closeTheSelectionPlaylistTip() {
+    await this.page.getByTestId('close-tooltip-button').click();
+  }
+
+  public get popularityIcon() {
+    return this.page.locator('[data-testid="StarIcon"]');
+  }
+
+  public async expectSongToBeMarkedAsPopular(songID: string) {
+    await expect(this.getSongElement(songID).locator(this.popularityIcon)).toBeVisible();
+  }
+
+  public async expectPlaylistContainSongsMarkedAsPopular() {
+    const popSongs = this.songListContainer.locator(this.popularityIcon).last();
+    await expect(popSongs).toBeVisible();
+    await popSongs.click();
+  }
+
+  public async expectSongToBeMarkedAsNewInNewGroup(songID: string) {
+    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
+  }
+
+  public async expectPlaylistContainSongsMarkedAsNew() {
+    const newSongs = this.songListContainer.locator('[data-testid ="FiberNewOutlinedIcon"]').first();
+    await expect(newSongs).toBeVisible();
+    await newSongs.click();
   }
 }
