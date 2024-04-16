@@ -33,7 +33,7 @@ const convertedSong = {
   videoID: 'W9nZ6u15yis',
 };
 
-const unknownSong = {
+const unpopularSong = {
   ID: 'e2e-christmas-english-1995',
   title: 'New Christmas',
 };
@@ -61,9 +61,9 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
   });
 
   await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
-    await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
-    await pages.songListPage.searchSong(unknownSong.title);
-    await pages.songListPage.focusSong(unknownSong.ID);
+    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await pages.songListPage.searchSong(unpopularSong.title);
+    await pages.songListPage.focusSong(unpopularSong.ID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
     await pages.gamePage.skipIntroIfPossible();
@@ -77,8 +77,8 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
 
   await test.step('After singing, the completed song should be added to Selection playlist as one of favourite', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unknownSong.ID)).toBeVisible();
-    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unknownSong.ID);
+    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).toBeVisible();
+    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unpopularSong.ID);
   });
 });
 
@@ -101,9 +101,9 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Go to the Song list and choose the song - ensure song is not visible in Selection playlist yet', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
+    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.goToPlaylist(engPlaylist);
-    await pages.songListPage.openPreviewForSong(unknownSong.ID);
+    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
   });
 
   await test.step('Play the song and after above 80% complete - exit the song', async () => {
@@ -122,7 +122,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
 
   await test.step('A song that is more than 80% complete, should be added to the Selection playlist', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unknownSong.ID)).toBeVisible();
+    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).toBeVisible();
   });
 });
 
@@ -144,12 +144,12 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   await test.step('Search the song - expect song is not visible in Selection playlist yet', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
     await pages.songListPage.closeTheSelectionPlaylistTip();
-    await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
-    await pages.songListPage.searchSong(unknownSong.title);
+    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await pages.songListPage.searchSong(unpopularSong.title);
   });
 
   await test.step('Toggle game mode to `Cooperation` and play the song', async () => {
-    await pages.songListPage.openPreviewForSong(unknownSong.ID);
+    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
     await pages.songPreviewPage.toggleGameMode();
     await pages.songPreviewPage.toggleGameMode();
     await pages.songPreviewPage.goNext();
@@ -168,11 +168,12 @@ test('A song that is less than 80% complete is not adding to the Selection playl
     await pages.postGameHighScoresPage.goToSongList();
   });
 
-  await test.step('A song that is less then 80% complete, should not be added to the Selection playlist', async () => {});
-  await pages.songListPage.goToPlaylist(selectionPlaylist);
-  await expect(pages.songListPage.getSongElement(unknownSong.ID)).not.toBeVisible();
-  await pages.songListPage.searchSong(unknownSong.title);
-  await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unknownSong.ID);
+  await test.step('A song that is less then 80% complete, should not be added to the Selection playlist', async () => {
+    await pages.songListPage.goToPlaylist(selectionPlaylist);
+    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await pages.songListPage.searchSong(unpopularSong.title);
+    await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unpopularSong.ID);
+  });
 });
 
 test('Selection playlist contain songs marked as new and popular as well', async ({ page }) => {

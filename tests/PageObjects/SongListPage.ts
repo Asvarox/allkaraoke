@@ -118,19 +118,23 @@ export class SongListPagePO {
   }
 
   public get selectionPlaylistTip() {
-    return this.page.locator("[role='tooltip']");
+    return this.page.getByRole('tooltip');
   }
 
   public async closeTheSelectionPlaylistTip() {
-    await this.selectionPlaylistTip.getByText('Close').click();
+    await this.page.getByTestId('close-tooltip-button').click();
+  }
+
+  public get popularityIcon() {
+    return this.page.locator('[data-testid="StarIcon"]');
   }
 
   public async expectSongToBeMarkedAsPopular(songID: string) {
-    await expect(this.getSongElement(songID).getByTestId('StarIcon')).toBeVisible();
+    await expect(this.getSongElement(songID).locator(this.popularityIcon)).toBeVisible();
   }
 
   public async expectPlaylistContainSongsMarkedAsPopular() {
-    const popSongs = this.songListContainer.locator('[data-testid="StarIcon"]').last();
+    const popSongs = this.songListContainer.locator(this.popularityIcon).last();
     await expect(popSongs).toBeVisible();
     await popSongs.click();
   }
