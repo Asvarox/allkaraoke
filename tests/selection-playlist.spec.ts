@@ -61,12 +61,12 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
   });
 
   await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
-    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
     await pages.songListPage.focusSong(unpopularSong.ID);
+    await pages.songListPage.openPreviewForSong(unpopularSong.ID);
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
-    await pages.gamePage.skipIntroIfPossible();
   });
 
   await test.step('Skip to the Song list', async () => {
@@ -77,7 +77,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
 
   await test.step('After singing, the completed song should be added to Selection playlist as one of favourite', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unpopularSong.ID);
   });
 });
@@ -101,16 +101,16 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
   await test.step('Go to the Song list and choose the song - ensure song is not visible in Selection playlist yet', async () => {
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.goToPlaylist(engPlaylist);
+    await pages.songListPage.focusSong(unpopularSong.ID);
     await pages.songListPage.openPreviewForSong(unpopularSong.ID);
   });
 
   await test.step('Play the song and after above 80% complete - exit the song', async () => {
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
-    await pages.gamePage.skipIntroIfPossible();
-    await page.waitForTimeout(7000);
+    await page.waitForTimeout(3_500);
     await pages.gamePage.exitSong();
   });
 
@@ -122,7 +122,7 @@ test('Adding song in above 80% complete to the Selection playlist', async ({ pag
 
   await test.step('A song that is more than 80% complete, should be added to the Selection playlist', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).toBeVisible();
   });
 });
 
@@ -144,7 +144,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   await test.step('Search the song - expect song is not visible in Selection playlist yet', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
     await pages.songListPage.closeTheSelectionPlaylistTip();
-    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
   });
 
@@ -157,7 +157,6 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   });
 
   await test.step('After reach the expected score - exit the game', async () => {
-    await pages.gamePage.skipIntroIfPossible();
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
     await pages.gamePage.exitSong();
   });
@@ -170,7 +169,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
 
   await test.step('A song that is less then 80% complete, should not be added to the Selection playlist', async () => {
     await pages.songListPage.goToPlaylist(selectionPlaylist);
-    await expect(pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
     await pages.songListPage.expectSongToBeMarkedAsPlayedToday(unpopularSong.ID);
   });
@@ -252,7 +251,6 @@ test('After singing a popular song, the popularity indicator changes to `played 
   await test.step('Play the song', async () => {
     await pages.songPreviewPage.goNext();
     await pages.songPreviewPage.playTheSong();
-    await pages.gamePage.skipIntroIfPossible();
   });
 
   await test.step('Skip to the Song List', async () => {

@@ -139,11 +139,13 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
         viewportElementRef.current?.scrollTo({ top: pos });
       },
       scrollToIndex: async (index, behavior = 'auto', align = 'center') => {
+        console.log('scrollToIndex', index, behavior, align);
         const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
+        console.log('item', item);
         if (item) {
           const scrollPos =
             (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
-          console.log(item.bottom, scrollPos);
+          console.log(item, item.bottom, scrollPos);
           viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
         }
       },

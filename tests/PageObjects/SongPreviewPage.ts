@@ -21,9 +21,19 @@ export class SongPreviewPagePO {
     await this.page.keyboard.press('Enter', { delay: 40 });
   }
 
-  public async playTheSong() {
+  public async playTheSong(skipIntro = true) {
     await this.page.getByTestId('play-song-button').click();
     await this.page.getByTestId('make-song-go-fast').click();
+    if (skipIntro) {
+      this.page
+        .waitForSelector('[data-test="skip-intro-info"]', { timeout: 5_000 })
+        .then((isVisible) => {
+          if (isVisible) {
+            this.page.keyboard.press('Enter');
+          }
+        })
+        .catch(() => undefined);
+    }
   }
 
   public async navigateToPlayTheSongWithKeyboard(remoteMic?: Page) {

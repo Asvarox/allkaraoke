@@ -80,8 +80,8 @@ test('Remote mic should connect, be selectable and control the game', async ({
 
   await test.step('Search song remotely and navigate', async () => {
     await remoteMicBluePage._page.getByTestId('search-song-input').fill(songTitle);
-    await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
 
     await pages.songListPage.focusSong(song2);
     await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
@@ -157,6 +157,6 @@ test('Remote mic should connect, be selectable and control the game', async ({
     await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
     await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
-    await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
   });
 });

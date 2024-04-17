@@ -38,7 +38,7 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
     await pages.songListPage.focusSong(duetPolSong);
-    await expect(pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
+    await expect(await pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetPolSong, polishLang);
     await pages.songListPage.openPreviewForSong(duetPolSong);
   });
@@ -107,7 +107,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   await test.step('Go to duet playlist and pick up the song', async () => {
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await expect(pages.songListPage.getDuetSongIcon(duetSpanSong)).toBeVisible();
+    await expect(await pages.songListPage.getDuetSongIcon(duetSpanSong)).toBeVisible();
   });
 
   await test.step('Check visibility of song language flag and open song', async () => {

@@ -7,24 +7,30 @@ export class SongListPagePO {
     private browser: Browser,
   ) {}
 
-  public async goToGroupNavigation(groupName: any) {
+  public async goToGroupNavigation(groupName: string) {
     await this.page.getByTestId(`group-navigation-${groupName}`).click();
   }
 
-  private ensureSongIsScrolledTo(songID: string) {
-    return this.page.evaluate(
-      async ([songID]) => {
-        while (!window.__songList) {
-          await new Promise((resolve) => setTimeout(resolve, 20));
-        }
-        console.log(songID, window.__songList?.scrollToSong(songID));
-      },
-      [songID],
-    );
+  private async ensureSongIsScrolledTo(songID: string) {
+    if (await this.page.getByTestId(`song-${songID}`).isVisible()) return;
+
+    try {
+      return this.page.evaluate(
+        async ([songID]) => {
+          while (!window.__songList) {
+            await new Promise((resolve) => setTimeout(resolve, 20));
+          }
+          console.log(songID, window.__songList?.scrollToSong(songID));
+        },
+        [songID],
+      );
+    } catch (e) {
+      console.log(e);
+    }
   }
 
-  public getSongElement(songID: string, shouldEnsure = true) {
-    if (shouldEnsure) this.ensureSongIsScrolledTo(songID);
+  public async getSongElement(songID: string, shouldEnsure = true) {
+    if (shouldEnsure) await this.ensureSongIsScrolledTo(songID);
     return this.page.getByTestId(`song-${songID}`);
   }
 
@@ -36,18 +42,13 @@ export class SongListPagePO {
     const currentlyFocused = await this.songPreviewElement.getAttribute('data-song');
     if (currentlyFocused !== songID) {
       await this.ensureSongIsScrolledTo(songID);
-      const song = this.getSongElement(songID, false);
+      const song = await this.getSongElement(songID, false);
       await song.click();
     }
   }
 
   public async openPreviewForSong(songID: string) {
-    await this.getSongElement(songID).dblclick();
-
-    // const song = this.getSongElement(songID);
-    // await song.click();
-    // await expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
-    // await song.click({ force: true });
+    await (await this.getSongElement(songID)).dblclick();
   }
 
   public get songListContainer() {
@@ -112,19 +113,19 @@ export class SongListPagePO {
     await expect(this.getPlaylistElement(name)).toHaveAttribute('data-selected', 'true');
   }
 
-  public getDuetSongIcon(songID: string) {
-    return this.getSongElement(songID).getByTestId('multitrack-indicator');
+  public async getDuetSongIcon(songID: string) {
+    return (await this.getSongElement(songID)).getByTestId('multitrack-indicator');
   }
 
   public async expectSongToBeMarkedWithLanguageFlagIcon(songID: string, language: string) {
     await this.ensureSongIsScrolledTo(songID);
-    const song = this.getSongElement(songID, false);
+    const song = await this.getSongElement(songID, false);
     await expect(song.locator('img')).toHaveAttribute('language', language);
   }
 
   public async expectSongToBeMarkedAsPlayedToday(songID: string) {
     await this.ensureSongIsScrolledTo(songID);
-    const song = this.getSongElement(songID, false);
+    const song = await this.getSongElement(songID, false);
     await expect(song.getByTestId('song-stat-indicator')).toContainText('Played today', {
       ignoreCase: true,
     });
@@ -136,7 +137,7 @@ export class SongListPagePO {
 
   public async expectSongToBeVisibleAsNew(songID: string) {
     await this.ensureSongIsScrolledTo(`${songID}-new-group`);
-    const song = this.getSongElement(`${songID}-new-group`, false);
+    const song = await this.getSongElement(`${songID}-new-group`, false);
     await expect(song).toBeVisible();
   }
 
@@ -157,10 +158,6 @@ export class SongListPagePO {
     return this.page.locator('[data-testid="StarIcon"]');
   }
 
-  public async expectSongToBeMarkedAsPopular(songID: string) {
-    await expect(this.getSongElement(songID).locator(this.popularityIcon)).toBeVisible();
-  }
-
   public async expectPlaylistContainSongsMarkedAsPopular() {
     const popSongs = this.songListContainer.locator(this.popularityIcon).last();
     await expect(popSongs).toBeVisible();
@@ -168,11 +165,11 @@ export class SongListPagePO {
   }
 
   public async expectSongToBeMarkedAsNewInNewGroup(songID: string) {
-    await expect(this.page.locator('[data-group-letter="New"]').getByTestId(`song-${songID}-new-group`)).toBeVisible();
+    await expect(await this.getSongElement(`${songID}-new-group`)).toBeVisible();
   }
 
   public async expectPlaylistContainSongsMarkedAsNew() {
-    const newSongs = this.songListContainer.locator('[data-testid ="FiberNewOutlinedIcon"]').first();
+    const newSongs = this.songListContainer.locator('[data-testid="FiberNewOutlinedIcon"]').first();
     await expect(newSongs).toBeVisible();
     await newSongs.click();
   }

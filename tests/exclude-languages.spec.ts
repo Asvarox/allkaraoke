@@ -29,9 +29,9 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(language2);
     await pages.songLanguagesPage.continueAndGoToSongList();
     await pages.songListPage.goToPlaylist(allPlaylist);
-    await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(song3)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song3)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
   });
 
   await test.step('Exclude Polish', async () => {
@@ -43,9 +43,9 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
-    await expect(pages.songListPage.getSongElement(song1)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(song3)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song3)).not.toBeVisible();
   });
 
   await test.step('Exclude English', async () => {
@@ -57,9 +57,9 @@ test('exclude languages from first start and menu', async ({ page }) => {
     await pages.songLanguagesPage.goBackToMainMenu();
     await pages.mainMenuPage.goToSingSong();
     await pages.songListPage.goToPlaylist(allPlaylist);
-    await expect(pages.songListPage.getSongElement(song2)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(song3)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(song1)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song2)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song3)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1)).not.toBeVisible();
   });
 
   await test.step('Exclude all', async () => {

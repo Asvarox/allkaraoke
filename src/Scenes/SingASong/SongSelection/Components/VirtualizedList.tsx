@@ -118,7 +118,8 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
       },
       scrollToSongInGroup: async (group, index, behavior = 'smooth') => {
         const songRowIndex = getSongRow(group, index);
-        if (songRowIndex) {
+        console.log('songRowIndex', songRowIndex);
+        if (songRowIndex !== undefined) {
           virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'auto' : behavior);
         }
       },
