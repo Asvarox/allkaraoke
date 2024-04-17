@@ -20,7 +20,7 @@ const duetsPlaylist = 'Duets';
 
 test('Sing a song intended for a duet as a single player', async ({ page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails, because the mic in FF doesn`t work');
-  test.slow();
+  // test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 

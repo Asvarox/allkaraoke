@@ -1,6 +1,7 @@
 import { chunk } from 'lodash-es';
 import {
   ComponentType,
+  CSSProperties,
   ForwardedRef,
   forwardRef,
   Fragment,
@@ -8,6 +9,7 @@ import {
   ReactElement,
   ReactNode,
   Ref,
+  useCallback,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -21,6 +23,7 @@ import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
 import isE2E from 'utils/isE2E';
 
 export interface VirtualizedListMethods {
+  getSongPosition: (group: string, index: number) => { x: number; y: number } | undefined;
   scrollToSongInGroup: (group: string, songId: number, behavior?: LocationOptions['behavior']) => Promise<void>;
   scrollToGroup: (group: string) => void;
 }
@@ -31,11 +34,13 @@ interface Props<T> {
   groups: SongGroup[];
   placeholder?: ReactNode;
   renderGroup: (group: SongGroup) => ReactNode;
-  renderItem: (item: SongGroup['songs'][number], group: SongGroup) => ReactNode;
+  renderItem: (item: SongGroup['songs'][number], group: SongGroup, props?: { style: CSSProperties }) => ReactNode;
   ListRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
   GroupRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
   perRow: number;
   itemHeight: number;
+  focusedSong: number;
+  focusedGroup: string;
 }
 
 function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedListMethods>) {
@@ -55,24 +60,38 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
   const { ListRowWrapper, GroupRowWrapper } = props;
 
-  useImperativeHandle(
-    ref,
-    (): VirtualizedListMethods => ({
-      getItemPosition: (group: string, songId: number) => {},
-      scrollToGroup: (group: string) => {
-        const groupIndex = props.groups.findIndex((g) => g.letter === group);
+  const getGroupIndex = useCallback(
+    (group: string, index: number) => {
+      let groupIndex = props.groups.findIndex((g) => g.letter === group);
 
-        if (groupIndex === -1) {
-          return;
-        }
-        virtuoso.current?.scrollToGroup(groupIndex, 'smooth');
-      },
-      scrollToSongInGroup: async (group, index, behavior = 'smooth') => {
-        let groupIndex = props.groups.findIndex((g) => g.letter === group);
+      if (groupIndex === -1) {
+        return props.groups.findIndex((g) => g.songs.some((s) => s.index === index));
+      }
+      return groupIndex;
+    },
+    [props.groups],
+  );
 
-        if (groupIndex === -1) {
-          groupIndex = props.groups.findIndex((g) => g.songs.some((s) => s.index === index));
-        }
+  const getSongRow = useCallback(
+    (group: string, index: number) => {
+      let groupIndex = getGroupIndex(group, index);
+      if (groupIndex === -1) {
+        return;
+      }
+
+      const songIndex = props.groups[groupIndex].songs.findIndex((s) => s.index === index);
+
+      return groupedRows
+        .slice(0, groupIndex)
+        .reduce((acc, { rows }) => acc + rows.length, Math.floor(songIndex / props.perRow));
+    },
+    [getGroupIndex, groupedRows, props.groups, props.perRow],
+  );
+
+  useImperativeHandle(ref, (): VirtualizedListMethods => {
+    return {
+      getSongPosition: (group, index) => {
+        let groupIndex = getGroupIndex(group, index);
         if (groupIndex === -1) {
           return;
         }
@@ -83,14 +102,33 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
           .slice(0, groupIndex)
           .reduce((acc, { rows }) => acc + rows.length, Math.floor(songIndex / props.perRow));
 
-        virtuoso.current?.scrollToIndex(rowsToScroll, isE2E() ? 'auto' : behavior);
+        const y = virtuoso.current?.getItemPositionY(rowsToScroll) ?? -1;
+
+        const x = songIndex % props.perRow;
+
+        return { x, y };
       },
-    }),
-  );
+      scrollToGroup: (group: string) => {
+        const groupIndex = props.groups.findIndex((g) => g.letter === group);
+
+        if (groupIndex === -1) {
+          return;
+        }
+        virtuoso.current?.scrollToGroup(groupIndex, 'smooth');
+      },
+      scrollToSongInGroup: async (group, index, behavior = 'smooth') => {
+        const songRowIndex = getSongRow(group, index);
+        if (songRowIndex) {
+          virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'auto' : behavior);
+        }
+      },
+    };
+  });
 
   return (
     <>
       <CustomVirtualization
+        forceRenderItem={getSongRow(props.focusedGroup, props.focusedSong) ?? -1}
         overScan={props.itemHeight * 2}
         itemHeight={props.itemHeight}
         groupHeight={props.itemHeight}
@@ -104,8 +142,8 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         )}
         ref={virtuoso}
         groupSizes={groupSizes}
-        itemContent={(index, groupIndex) => (
-          <ListRowWrapper group={groupedRows[groupIndex].group}>
+        itemContent={(index, groupIndex, itemProps) => (
+          <ListRowWrapper group={groupedRows[groupIndex].group} {...itemProps}>
             {flatRows[index].map((song) => props.renderItem(song, groupedRows[groupIndex].group))}
             {props.placeholder &&
               flatRows[index].length < props.perRow &&

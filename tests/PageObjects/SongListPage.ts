@@ -33,16 +33,21 @@ export class SongListPagePO {
   }
 
   public async focusSong(songID: string) {
-    await this.ensureSongIsScrolledTo(songID);
-    const song = this.getSongElement(songID, false);
-    await song.click();
+    const currentlyFocused = await this.songPreviewElement.getAttribute('data-song');
+    if (currentlyFocused !== songID) {
+      await this.ensureSongIsScrolledTo(songID);
+      const song = this.getSongElement(songID, false);
+      await song.click();
+    }
   }
 
   public async openPreviewForSong(songID: string) {
-    await this.ensureSongIsScrolledTo(songID);
-    const song = this.getSongElement(songID, false);
-    await this.page.waitForTimeout(100);
-    await song.dblclick();
+    await this.getSongElement(songID).dblclick();
+
+    // const song = this.getSongElement(songID);
+    // await song.click();
+    // await expect(this.songPreviewElement).toHaveAttribute('data-song', songID);
+    // await song.click({ force: true });
   }
 
   public get songListContainer() {

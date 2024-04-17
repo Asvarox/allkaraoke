@@ -111,46 +111,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const songEntryWidth = (listWidth - (songsPerRow - 1) * LIST_GAP_REM * baseUnit) / songsPerRow;
   const songEntryHeight = songEntryWidth * (9 / 16);
 
-  useEffect(() => {
-    handleResize(); // Recalculate width/height to account possible scrollbar appearing
-    if (!isLoading) {
-      console.log(list.current);
-      list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
-    }
-  }, [width, list, focusedSong, focusedGroup, groupedSongList, isLoading]);
-
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
   const loading = isLoading || !groupedSongList || !width;
 
   const container = useRef<HTMLDivElement>(null);
-
-  const [{ previewTop, previewLeft }, setPositions] = useState({
-    previewTop: 0,
-    previewLeft: 0,
-  });
-  useEffect(() => {
-    const observer = new MutationObserver(() => {
-      const soughtElement = document.querySelector<HTMLDivElement>(`[data-song-index="${focusedSong}"`);
-
-      if (soughtElement && (previewTop !== soughtElement.offsetTop || previewLeft !== soughtElement.offsetLeft)) {
-        setPositions({
-          previewLeft: soughtElement.offsetLeft,
-          previewTop: soughtElement.offsetTop,
-        });
-      }
-    });
-
-    if (container.current && !isLoading) {
-      observer.observe(container.current, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-      });
-
-      return () => observer.disconnect();
-    }
-  }, [focusedSong, previewTop, previewLeft, focusedGroup, isLoading]);
 
   // API for Playwright as with virtualization it's super tricky to test
   useEffect(() => {
@@ -177,6 +142,32 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       delete window.__songList;
     };
   }, [groupedSongList, songList]);
+
+  const [{ previewTop, previewLeft }, setPositions] = useState({
+    previewTop: 0,
+    previewLeft: 0,
+  });
+  useEffect(() => {
+    const song = document.querySelector<HTMLDivElement>(
+      `[data-song-index="${focusedSong}"][data-group="${focusedGroup}"]`,
+    );
+    if (!isLoading && song) {
+      setPositions({
+        previewTop: song.offsetTop + (song.parentNode as HTMLDivElement).offsetTop,
+        previewLeft: song.offsetLeft,
+      });
+    } else if (!isLoading) {
+      debugger;
+      console.warn('!!!!!!!!!!!! Song not found !!!!!!!!!!!!');
+    }
+  }, [focusedSong, focusedGroup, isLoading, width]);
+
+  useEffect(() => {
+    handleResize(); // Recalculate width/height to account possible scrollbar appearing
+    if (!isLoading) {
+      list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
+    }
+  }, [width, focusedSong, focusedGroup, groupedSongList, isLoading, handleResize]);
 
   return (
     <LayoutGame>
@@ -227,6 +218,8 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               data-test="song-list-container"
               ref={container}>
               <VirtualizedList
+                focusedSong={focusedSong}
+                focusedGroup={focusedGroup}
                 ListRowWrapper={ListRow}
                 GroupRowWrapper={GroupRow}
                 ref={list}
@@ -242,19 +235,24 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   </SongsGroupContainer>
                 )}
                 perRow={songsPerRow}
-                renderItem={(songItem, group) => (
-                  <SongListEntry
-                    isPopular={songItem.isPopular}
-                    key={songItem.song.id}
-                    song={songItem.song}
-                    handleClick={focusedSong === songItem.index ? expandSong : moveToSong}
-                    focused={!showFilters && keyboardControl && songItem.index === focusedSong}
-                    index={songItem.index}
-                    data-song-index={songItem.index}
-                    data-focused={!showFilters && keyboardControl && songItem.index === focusedSong}
-                    data-test={`song-${songItem.song.id}${group.isNew ? '-new-group' : ''}`}
-                  />
-                )}
+                renderItem={(songItem, group) => {
+                  const isFocused = songItem.index === focusedSong && group.letter === focusedGroup;
+                  return (
+                    <SongListEntry
+                      isPopular={songItem.isPopular}
+                      key={songItem.song.id}
+                      song={songItem.song}
+                      handleClick={isFocused ? expandSong : moveToSong}
+                      focused={!showFilters && keyboardControl && isFocused}
+                      index={songItem.index}
+                      groupLetter={group.letter}
+                      data-song-index={songItem.index}
+                      data-focused={!showFilters && keyboardControl && songItem.index === focusedSong}
+                      data-test={`song-${songItem.song.id}${group.isNew ? '-new-group' : ''}`}
+                      data-group={group.letter}
+                    />
+                  );
+                }}
                 placeholder={<SongListEntrySkeleton style={{ visibility: 'hidden' }} />}
                 context={{
                   songPreview: {
@@ -404,19 +402,22 @@ const SongListHeaderPadding = styled.div`
   //height: var(--song-list-gap);
 `;
 
-const GroupRow = styled.div<{ group: SongGroup }>`
-  position: sticky;
-  top: 0;
+const BaseRow = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: calc(var(--song-list-gap) / 2) var(--song-list-padding-right) calc(var(--song-list-gap) / 2)
     var(--song-list-padding-left);
-  z-index: 1;
 `;
 
-const ListRow = styled(GroupRow)<{ group: SongGroup }>`
-  position: static;
+const GroupRow = styled(BaseRow)`
+  position: sticky;
+  top: 0;
+  z-index: 3;
+`;
+
+const ListRow = styled(BaseRow)<{ group: SongGroup }>`
+  position: relative; // this way the song preview position is computed properly
   ${(props) =>
     props.group.isNew &&
     css`

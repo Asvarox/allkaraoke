@@ -16,9 +16,10 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;
   focused: boolean;
   index?: number;
+  groupLetter?: string;
   expanded?: boolean;
   background?: boolean;
-  handleClick?: (index: number) => void;
+  handleClick?: (index: number, groupLetter?: string) => void;
   video?: ReactNode;
   isPopular: boolean;
 }
@@ -29,13 +30,17 @@ export const FinalSongCard = ({
   video,
   children,
   index,
+  groupLetter,
   handleClick,
   isPopular,
   background = true,
   expanded = false,
   ...restProps
 }: Props) => {
-  const onClickCallback = useCallback(() => (handleClick ? handleClick(index!) : undefined), [handleClick, index]);
+  const onClickCallback = useCallback(
+    () => (handleClick ? handleClick(index!, groupLetter) : undefined),
+    [handleClick, index, groupLetter],
+  );
 
   return (
     <SongCardContainer {...restProps} onClick={handleClick ? onClickCallback : undefined}>

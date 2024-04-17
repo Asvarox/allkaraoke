@@ -25,15 +25,22 @@ export interface CustomVirtualizedListMethods {
 }
 
 interface Props<T> {
+  forceRenderItem: number;
   overScan: number;
   groupHeight: number;
   itemHeight: number;
-  itemContent: (index: number, groupIndex: number, props?: { style: CSSProperties }) => ReactNode;
+  itemContent: (
+    index: number,
+    groupIndex: number,
+    props?: { style?: CSSProperties } & Record<`data-${string}`, string | number>,
+  ) => ReactNode;
   groupContent: (index: number, props?: { style: CSSProperties }) => ReactNode;
   components: Components<SongGroup, T>;
   context: T;
   groupSizes: number[];
 }
+
+const isBetween = (value: number, min: number, max: number) => value >= min && value < max;
 
 function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomVirtualizedListMethods>) {
   const itemsPositions = useMemo(() => {
@@ -126,10 +133,12 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
   useImperativeHandle(
     ref,
     (): CustomVirtualizedListMethods => ({
+      getItemPositionY: (index) =>
+        (itemsPositions.find((item) => item.type === 'item' && item.index === index)?.bottom ?? -1) - props.itemHeight,
       scrollTo: (pos: number) => {
         viewportElementRef.current?.scrollTo({ top: pos });
       },
-      scrollToIndex: async (index, behavior = 'smooth', align = 'center') => {
+      scrollToIndex: async (index, behavior = 'auto', align = 'center') => {
         const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
         if (item) {
           const scrollPos =
@@ -138,7 +147,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
         }
       },
-      scrollToGroup: async (groupIndex, behavior = 'smooth', align = 'top') => {
+      scrollToGroup: async (groupIndex, behavior = 'auto', align = 'top') => {
         const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
         if (item) {
           viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeight, behavior });
@@ -147,6 +156,10 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     }),
   );
   const { Header, Footer, EmptyPlaceholder } = props.components ?? {};
+
+  const forcedItemIndex = itemsPositions.findIndex(
+    (item) => item.type === 'item' && item.index === props.forceRenderItem,
+  );
 
   return (
     <>
@@ -157,6 +170,21 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
             paddingTop: groupToRender !== -1 ? paddingTop - props.groupHeight : paddingTop,
           }}>
           {Header && <Header context={props.context} />}
+          {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
+            <>
+              {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
+                style: {
+                  width: '100%',
+                  position: 'absolute',
+                  top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
+                  left: 0,
+                  boxSizing: 'border-box',
+                },
+                'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
+                'data-virtualized-index': itemsPositions[forcedItemIndex].index,
+              })}
+            </>
+          )}
           {groupedItemsToRender.map((group, index) => (
             // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
             <div key={(group[0] ?? itemsPositions[groupToRender]).groupIndex}>
@@ -164,7 +192,12 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
               {group.map(({ index, type, bottom, groupIndex }) => {
                 return (
                   <Fragment key={`${bottom}`}>
-                    {type === 'group' ? props.groupContent(index) : props.itemContent(index, groupIndex)}
+                    {type === 'group'
+                      ? props.groupContent(index)
+                      : props.itemContent(index, groupIndex, {
+                          'data-virtualized-bottom': bottom,
+                          'data-virtualized-index': index,
+                        })}
                   </Fragment>
                 );
               })}
