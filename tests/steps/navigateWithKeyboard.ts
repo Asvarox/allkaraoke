@@ -25,7 +25,7 @@ const addSteps = (start: [number, number], steps: Array<[number, number, dirs]>,
 export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page) {
   await test.step(`Use ${remoteMic ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
     await expect(page.getByTestId(targetTestId)).toBeVisible();
-    const navigableElements = await page.locator('[data-focused]:not([data-unfocusable] [data-focused])');
+    const navigableElements = await page.locator('[data-focused]:not([data-unfocusable])');
     const handles = await navigableElements.elementHandles();
 
     let rectangles = await Promise.all(

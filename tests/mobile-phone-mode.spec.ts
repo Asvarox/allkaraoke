@@ -91,8 +91,9 @@ test('Mobile phone mode should be playable', async ({ browser, context, page, br
     await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
     await navigateWithKeyboard(page, 'close-exclude-languages', remoteMicBluePage._page);
     await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
+    await page.waitForTimeout(500); // let the list with virtualization load
 
-    await navigateWithKeyboard(page, 'song-e2e-skip-intro-polish', remoteMicBluePage._page);
+    await pages.songListPage.focusSong('e2e-skip-intro-polish');
     await remoteMicBluePage._page.getByTestId('keyboard-enter').click();
 
     await navigateWithKeyboard(page, 'next-step-button', remoteMicRed._page);

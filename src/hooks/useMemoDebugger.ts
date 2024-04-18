@@ -1,8 +1,8 @@
 import usePrevious from 'hooks/usePrevious';
 import { isEqual } from 'lodash-es';
-import { useEffect } from 'react';
+import { useMemo } from 'react';
 
-export default function useEffectDebugger(effectHook: any, dependencies: any[], dependencyNames: any[] = []) {
+export default function useMemoDebugger(memoHook: any, dependencies: any[], dependencyNames: any[] = []) {
   const previousDeps = usePrevious(dependencies);
 
   const changedDeps = dependencies.reduce((accum, dependency, index) => {
@@ -22,8 +22,8 @@ export default function useEffectDebugger(effectHook: any, dependencies: any[], 
   }, {});
 
   if (Object.keys(changedDeps).length) {
-    console.log('[use-effect-debugger] ', changedDeps);
+    console.log('[use-memo-debugger] ', changedDeps);
   }
 
-  useEffect(effectHook, dependencies);
+  return useMemo(memoHook, dependencies);
 }

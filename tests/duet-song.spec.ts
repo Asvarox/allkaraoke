@@ -20,7 +20,7 @@ const duetsPlaylist = 'Duets';
 
 test('Sing a song intended for a duet as a single player', async ({ page, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails, because the mic in FF doesn`t work');
-  test.slow();
+  // test.slow();
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
 
@@ -37,8 +37,8 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
   await test.step('Go to duets-playlist and pick up the song', async () => {
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await pages.songListPage.navigateToSongWithKeyboard(duetPolSong);
-    await expect(pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
+    await pages.songListPage.focusSong(duetPolSong);
+    await expect(await pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetPolSong, polishLang);
     await pages.songListPage.openPreviewForSong(duetPolSong);
   });
@@ -107,12 +107,12 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   await test.step('Go to duet playlist and pick up the song', async () => {
     await pages.songListPage.goToPlaylist(duetsPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await expect(pages.songListPage.getDuetSongIcon(duetSpanSong)).toBeVisible();
+    await expect(await pages.songListPage.getDuetSongIcon(duetSpanSong)).toBeVisible();
   });
 
   await test.step('Check visibility of song language flag and open song', async () => {
     await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetSpanSong, spanishLang);
-    await pages.songListPage.navigateToSongWithKeyboard(duetSpanSong);
+    await pages.songListPage.focusSong(duetSpanSong);
     await pages.songListPage.openPreviewForSong(duetSpanSong);
   });
 

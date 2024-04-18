@@ -55,7 +55,11 @@ export default forwardRef(function DirectVideoPlayer(
 
         return time;
       },
-      setPlaybackSpeed: () => undefined,
+      setPlaybackSpeed: (speed: number) => {
+        if (player.current) {
+          player.current.playbackRate = speed;
+        }
+      },
       setVolume: () => undefined,
       getCurrentTime: () => {
         return Promise.resolve(player.current?.currentTime ?? 0);

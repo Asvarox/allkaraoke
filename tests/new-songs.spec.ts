@@ -32,17 +32,17 @@ test('New songs - displays new song twice by default and doesnt show it in filte
   await page.waitForTimeout(500);
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
-  await expect(pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(song)).toBeVisible();
 
   // Should still show new group when playlists are used
   await pages.songListPage.goToPlaylist(playlistName);
-  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
-  await expect(pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(newGroupSong)).toBeVisible();
 
   await page.keyboard.type('playwright');
-  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
-  await expect(pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
+  await expect(await pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
 });
 
 test('New songs - doesnt display new songs if the visit is after', async ({ page }) => {
@@ -59,8 +59,8 @@ test('New songs - doesnt display new songs if the visit is after', async ({ page
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
-  await expect(pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
+  await expect(await pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
 });
 
 test('New songs - doesnt display new songs on first visit', async ({ page }) => {
@@ -69,6 +69,6 @@ test('New songs - doesnt display new songs on first visit', async ({ page }) => 
   await pages.inputSelectionPage.skipToMainMenu();
   await pages.mainMenuPage.goToSingSong();
   await pages.songLanguagesPage.continueAndGoToSongList();
-  await expect(pages.songListPage.getSongElement(song)).toBeVisible();
-  await expect(pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
+  await expect(await pages.songListPage.getSongElement(song)).toBeVisible();
+  await expect(await pages.songListPage.getSongElement(newGroupSong)).not.toBeVisible();
 });

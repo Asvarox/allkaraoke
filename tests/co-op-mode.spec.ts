@@ -31,8 +31,8 @@ test('Cooperation mode', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('Navigate to song', async () => {
-    await expect(pages.songListPage.getSongElement(polSong)).toBeVisible();
-    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+    await expect(await pages.songListPage.getSongElement(polSong)).toBeVisible();
+    await pages.songListPage.focusSong(polSong);
     await pages.songListPage.approveSelectedSongByKeyboard();
     await expect(pages.songPreviewPage.nextButton).toBeVisible();
   });

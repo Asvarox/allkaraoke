@@ -65,9 +65,9 @@ test('Filters - PlayLists', async ({ page }) => {
 
   await test.step('Check if songs are visible in all songs', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+    await expect(await pages.songListPage.getSongElement(engModSong, false)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await pages.songListPage.focusSong(polSong);
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {
@@ -75,63 +75,63 @@ test('Filters - PlayLists', async ({ page }) => {
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(polishPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
   await test.step('Going to english-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
   });
 
   await test.step('Going to oldies-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(oldPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
   await test.step('Going to modern-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(modPlaylist);
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
   });
 
   await test.step('Going to duets-playlist, and check songs and duet icon visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getDuetSongIcon(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getDuetSongIcon(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
   await test.step('Going to new-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(newPlaylist);
-    await expect(pages.songListPage.getSongElement(engNewSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engNewSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
   });
 
   await test.step('Going to all-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
   });
 
   await test.step('Leave the playlists and check songs visibility', async () => {
     await page.keyboard.press('ArrowRight');
     await pages.songListPage.goToPlaylist(polishPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 });
 
@@ -169,65 +169,65 @@ test.skip('Filters - PlayLists (Christmas)', async ({ page }) => {
 
   await test.step('Check if songs are visible in all songs', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await pages.songListPage.navigateToSongWithKeyboard(polSong);
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await pages.songListPage.focusSong(polSong);
   });
 
   await test.step('Going to Christmas-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowLeft');
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(xmasPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(xmasSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(polishPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
   await test.step('Going to english-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
   });
 
   await test.step('Going to duets-playlist, and check songs and duet icon visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getDuetSongIcon(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getDuetSongIcon(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
   await test.step('Going to new-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(newPlaylist);
-    await expect(pages.songListPage.getSongElement(engNewSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engNewSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
   });
 
   await test.step('Going to all-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
   });
 
   await test.step('Leave the playlists and check songs visibility', async () => {
     await page.keyboard.press('ArrowRight');
     await pages.songListPage.goToPlaylist(polishPlaylist);
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polEngSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 });
 
@@ -240,16 +240,16 @@ test('Filters - Quick Search', async ({ page }) => {
   await test.step('Exclusion polish language - polish songs should be invisible', async () => {
     await pages.songLanguagesPage.unselectLanguage(polishLang);
     await pages.songLanguagesPage.continueAndGoToSongList();
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
   });
 
   await test.step('Quick search [in All-playlist] to find polish song, even if language is excluded', async () => {
     await page.keyboard.type(polishSongTitle);
     await expect(pages.songListPage.searchInput).toBeVisible();
     await page.keyboard.press('ArrowDown');
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
     await pages.songListPage.expectSelectedSongToBe(polOldDuetSong);
   });
 
@@ -262,16 +262,16 @@ test('Filters - Quick Search', async ({ page }) => {
     await page.keyboard.press('Backspace');
     await expect(pages.songListPage.searchInput).not.toBeVisible();
 
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
   });
 
   await test.step('Search should be scoped to a playlist', async () => {
     await pages.songListPage.goToPlaylist(englishPlaylist);
     await page.keyboard.type(polishSongTitle);
     await expect(pages.songListPage.searchInput).toBeVisible();
-    await expect(pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-    await expect(pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 
   await test.step('Switching to another playlist clears the search, search window is not visible', async () => {
@@ -312,6 +312,7 @@ test('Song List - Random song', async ({ page }) => {
   });
 
   await test.step('Random song is selected on random song button click', async () => {
+    await page.waitForTimeout(500); // trying to focus song mid-scroll can make it not exist in the virtual list
     await pages.songListPage.focusSong(polOldDuetSong);
     await pages.songListPage.expectSelectedSongNotToBe(lastSong);
     await pages.songListPage.pickRandomButton.click();

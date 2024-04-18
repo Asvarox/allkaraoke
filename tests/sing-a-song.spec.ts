@@ -54,7 +54,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('Check preview of song1 and go back to Song List', async () => {
-    await expect(pages.songListPage.getSongElement(song1.ID)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1.ID)).toBeVisible();
     await pages.songListPage.approveSelectedSongByKeyboard();
     await expect(pages.songPreviewPage.nextButton).toBeVisible();
     await page.keyboard.press(browserName === 'firefox' ? 'Backspace' : 'Escape'); // check if escape works for Chrome
@@ -62,9 +62,9 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
   });
 
   await test.step('Check visibility of duet icon in duet song', async () => {
-    await pages.songListPage.navigateToSongWithKeyboard(song2.ID);
-    await expect(pages.songListPage.getDuetSongIcon(song2.ID)).toBeVisible();
-    await expect(pages.songListPage.getDuetSongIcon(song1.ID)).not.toBeVisible();
+    await pages.songListPage.focusSong(song2.ID);
+    await expect(await pages.songListPage.getDuetSongIcon(song2.ID)).toBeVisible();
+    await expect(await pages.songListPage.getDuetSongIcon(song1.ID)).not.toBeVisible();
   });
 
   await test.step('Go to playlist and open preview of the song', async () => {
@@ -150,7 +150,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('Choose another song from the playlist', async () => {
     await pages.songListPage.expectPlaylistToBeSelected(song2.playlistName);
-    await expect(pages.songListPage.getSongElement(song1.ID)).not.toBeVisible();
+    await expect(await pages.songListPage.getSongElement(song1.ID)).not.toBeVisible();
     await pages.songListPage.approveSelectedSongByKeyboard();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard();
   });

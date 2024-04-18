@@ -19,6 +19,7 @@
     "src/Scenes/Game/Singing/Input/MicStrategies/Yin.ts",
     "src/Songs/utils/song-fixture.ts",
     "src/hooks/useCallbackDebugger.ts",
+    "src/hooks/useMemoDebugger.ts",
     "src/hooks/useEffectDebugger.ts",
     "src/setupTests.ts",
     "src/stories/songFixture.ts",
