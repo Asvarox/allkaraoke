@@ -1,6 +1,6 @@
 import { HelpEntry } from 'Scenes/KeyboardHelp/Context';
-import selectRandomSong from 'Scenes/SingASong/SongSelection/Hooks/selectRandomSong';
-import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+import selectRandomSong from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/selectRandomSong';
+import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 import { menuBack, menuEnter, menuNavigate } from 'SoundManager';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardHelp from 'hooks/useKeyboardHelp';
@@ -25,7 +25,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
           ),
         )
         .flat(),
-    [groupShape],
+    [groupShape, itemsPerRow],
   );
   const songGroupMatrix = useMemo(
     () =>
@@ -37,15 +37,18 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
           ),
         )
         .flat(),
-    [groups],
+    [groupShape, itemsPerRow],
   );
+
   const previousMatrix = usePrevious(songIndexMatrix ?? []);
 
   const isAtLastColumn = cursorPosition[0] === songIndexMatrix[cursorPosition[1]]?.length - 1;
 
   const moveToSong = useCallback(
-    (songIndex: number) => {
-      const y = songIndexMatrix.findIndex((columns) => columns.includes(songIndex));
+    (songIndex: number, groupLetter?: string) => {
+      const y = songIndexMatrix.findIndex(
+        (columns, index) => columns.includes(songIndex) && (!groupLetter || groupLetter === songGroupMatrix[index][0]),
+      );
       const x = songIndexMatrix[y]?.indexOf(songIndex);
       if (x >= 0 && y >= 0) {
         setCursorPosition([x ?? 0, y ?? 0]);

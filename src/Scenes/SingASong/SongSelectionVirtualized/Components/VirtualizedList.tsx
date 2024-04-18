@@ -18,8 +18,8 @@ import { Components, LocationOptions } from 'react-virtuoso';
 import {
   CustomVirtualization,
   CustomVirtualizedListMethods,
-} from 'Scenes/SingASong/SongSelection/Components/CustomVirtualization';
-import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+} from 'Scenes/SingASong/SongSelectionVirtualized/Components/CustomVirtualization';
+import { SongGroup } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 import isE2E from 'utils/isE2E';
 
 export interface VirtualizedListMethods {
@@ -39,6 +39,7 @@ interface Props<T> {
   GroupRowWrapper: ComponentType<PropsWithChildren<{ group?: SongGroup }>>;
   perRow: number;
   itemHeight: number;
+  groupHeight: number;
   focusedSong: number;
   focusedGroup: string;
 }
@@ -118,7 +119,6 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
       },
       scrollToSongInGroup: async (group, index, behavior = 'smooth') => {
         const songRowIndex = getSongRow(group, index);
-        console.log('songRowIndex', songRowIndex);
         if (songRowIndex !== undefined) {
           virtuoso.current?.scrollToIndex(songRowIndex, isE2E() ? 'auto' : behavior);
         }
@@ -132,7 +132,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         forceRenderItem={getSongRow(props.focusedGroup, props.focusedSong) ?? -1}
         overScan={props.itemHeight * 2}
         itemHeight={props.itemHeight}
-        groupHeight={props.itemHeight}
+        groupHeight={props.groupHeight}
         key={props.itemHeight}
         components={props.components}
         context={props.context}

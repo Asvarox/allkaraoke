@@ -15,7 +15,7 @@ import {
   useState,
 } from 'react';
 import { Components } from 'react-virtuoso';
-import { SongGroup } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+import { SongGroup } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 
 export interface CustomVirtualizedListMethods {
   getItemPositionY: (index: number) => number;
@@ -110,7 +110,8 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     [itemsPositions],
   );
 
-  const paddingTop = useMemo(() => countPxDistance(0, rangeFrom), [rangeFrom, countPxDistance]);
+  // we want to count from 0px, and -1 will point to non-existing element
+  const paddingTop = useMemo(() => countPxDistance(-1, rangeFrom - 1), [rangeFrom, countPxDistance]);
 
   // If the group is large enough, it might happen that the 'group' item is not in range to be rendered, even though
   // it's sticky. In that case, we need to render it manually.
@@ -139,13 +140,10 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
         viewportElementRef.current?.scrollTo({ top: pos });
       },
       scrollToIndex: async (index, behavior = 'auto', align = 'center') => {
-        console.log('scrollToIndex', index, behavior, align);
         const item = itemsPositions.find((item) => item.type === 'item' && item.index === index);
-        console.log('item', item);
         if (item) {
           const scrollPos =
             (props.itemHeight + (align === 'center' ? viewportElementRef.current?.clientHeight! : 0)) / 2;
-          console.log(item, item.bottom, scrollPos);
           viewportElementRef.current?.scrollTo({ top: item.bottom - scrollPos, behavior });
         }
       },

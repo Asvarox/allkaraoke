@@ -4,7 +4,7 @@ import { focusedStatic, typography } from 'Elements/cssMixins';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import { Dispatch, SetStateAction, useEffect } from 'react';
-import { PlaylistEntry } from 'Scenes/SingASong/SongSelection/Hooks/usePlaylists';
+import { PlaylistEntry } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/usePlaylists';
 
 interface Props {
   selectedPlaylist: string | null;
@@ -86,6 +86,7 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
 const Container = styled.div<{ active: boolean }>`
   background: rgba(0, 0, 0, ${(props) => (props.active ? 0.75 : 0.5)});
   width: 100vh;
+  height: var(--song-sidebar-weight);
   transform-origin: top right;
   transform: rotate(-90deg);
   position: absolute;

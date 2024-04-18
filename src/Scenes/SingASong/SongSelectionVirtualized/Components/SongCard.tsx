@@ -4,8 +4,8 @@ import { FiberNewOutlined, Star } from '@mui/icons-material';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
-import SongFlag from 'Scenes/SingASong/SongSelection/Components/SongCard/SongFlag';
-import { filteringFunctions } from 'Scenes/SingASong/SongSelection/Hooks/useSongList';
+import SongFlag from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/SongFlag';
+import { filteringFunctions } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 import FavoritesService from 'Songs/FavoritesService';
 import { useSongStats } from 'Songs/stats/hooks';
 import dayjs from 'dayjs';
@@ -16,9 +16,10 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;
   focused: boolean;
   index?: number;
+  groupLetter?: string;
   expanded?: boolean;
   background?: boolean;
-  handleClick?: (index: number) => void;
+  handleClick?: (index: number, groupLetter?: string) => void;
   video?: ReactNode;
   isPopular: boolean;
 }
@@ -29,13 +30,17 @@ export const FinalSongCard = ({
   video,
   children,
   index,
+  groupLetter,
   handleClick,
   isPopular,
   background = true,
   expanded = false,
   ...restProps
 }: Props) => {
-  const onClickCallback = useCallback(() => (handleClick ? handleClick(index!) : undefined), [handleClick, index]);
+  const onClickCallback = useCallback(
+    () => (handleClick ? handleClick(index!, groupLetter) : undefined),
+    [handleClick, index, groupLetter],
+  );
 
   return (
     <SongCardContainer {...restProps} onClick={handleClick ? onClickCallback : undefined}>
@@ -93,6 +98,7 @@ export const Language = styled(SongFlag)`
   height: 2.75rem;
   object-fit: cover;
   border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   position: absolute;
   z-index: -1;
   left: 0rem;
@@ -146,6 +152,7 @@ export const SongCardBackground = styled.div<{
   expanded: boolean;
 }>`
   background-color: ${styles.colors.text.inactive};
+  ${(props) => !props.expanded && 'border-radius: 1rem;'}
   position: absolute;
   z-index: -1;
   inset: 0;
