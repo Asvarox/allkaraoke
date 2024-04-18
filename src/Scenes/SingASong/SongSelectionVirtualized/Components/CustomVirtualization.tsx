@@ -14,14 +14,18 @@ import {
   useRef,
   useState,
 } from 'react';
-import { Components } from 'react-virtuoso';
-import { SongGroup } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 
 export interface CustomVirtualizedListMethods {
   getItemPositionY: (index: number) => number;
   scrollTo: (pos: number) => void;
   scrollToIndex: (index: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
   scrollToGroup: (groupIndex: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
+}
+
+export interface Components<T> {
+  Header?: (props: { context?: T }) => ReactNode;
+  Footer?: (props: { context?: T }) => ReactNode;
+  EmptyPlaceholder?: (props: { context?: T }) => ReactNode;
 }
 
 interface Props<T> {
@@ -35,7 +39,7 @@ interface Props<T> {
     props?: { style?: CSSProperties } & Record<`data-${string}`, string | number>,
   ) => ReactNode;
   groupContent: (index: number, props?: { style: CSSProperties }) => ReactNode;
-  components: Components<SongGroup, T>;
+  components: Components<T>;
   context: T;
   groupSizes: number[];
 }

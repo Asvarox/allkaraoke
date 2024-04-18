@@ -7,6 +7,7 @@ import LayoutGame from 'Scenes/LayoutGame';
 import { MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import AdditionalListControls from 'Scenes/SingASong/SongSelectionVirtualized/Components/AdditionalListControls';
 import BackgroundThumbnail from 'Scenes/SingASong/SongSelectionVirtualized/Components/BackgroundThumbnail';
+import { Components } from 'Scenes/SingASong/SongSelectionVirtualized/Components/CustomVirtualization';
 import Playlists from 'Scenes/SingASong/SongSelectionVirtualized/Components/Playlists';
 import { FinalSongCard } from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard';
 import SongGroupsNavigation from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongGroupsNavigation';
@@ -23,7 +24,6 @@ import useBlockScroll from 'hooks/useBlockScroll';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { ComponentProps, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Components } from 'react-virtuoso';
 import { Link } from 'wouter';
 
 interface Props {
@@ -47,12 +47,9 @@ const LIST_PADDING_RIGHT_REM = 4.5;
 const LIST_PADDING_LEFT_REM = LIST_SIDEBAR_WEIGHT_REM + LIST_PADDING_RIGHT_REM;
 const LIST_GAP_REM = 3.5;
 
-const components: Components<
-  any,
-  {
-    songPreview: ComponentProps<typeof SongPreview>;
-  }
-> = {
+const components: Components<{
+  songPreview: ComponentProps<typeof SongPreview>;
+}> = {
   Header: ({ context }) => (
     <>
       <SongListHeaderPadding />

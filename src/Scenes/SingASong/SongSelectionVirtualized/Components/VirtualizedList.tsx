@@ -14,8 +14,8 @@ import {
   useMemo,
   useRef,
 } from 'react';
-import { Components, LocationOptions } from 'react-virtuoso';
 import {
+  Components,
   CustomVirtualization,
   CustomVirtualizedListMethods,
 } from 'Scenes/SingASong/SongSelectionVirtualized/Components/CustomVirtualization';
@@ -24,12 +24,12 @@ import isE2E from 'utils/isE2E';
 
 export interface VirtualizedListMethods {
   getSongPosition: (group: string, index: number) => { x: number; y: number } | undefined;
-  scrollToSongInGroup: (group: string, songId: number, behavior?: LocationOptions['behavior']) => Promise<void>;
+  scrollToSongInGroup: (group: string, songId: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
   scrollToGroup: (group: string) => void;
 }
 
 interface Props<T> {
-  components: Components<SongGroup, T>;
+  components: Components<T>;
   context: T;
   groups: SongGroup[];
   placeholder?: ReactNode;

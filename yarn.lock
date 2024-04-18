@@ -12834,7 +12834,6 @@ __metadata:
     react-refresh: "npm:^0.14.0"
     react-toastify: "npm:^9.1.3"
     react-use: "npm:^17.5.0"
-    react-virtuoso: "npm:^4.7.7"
     react-youtube: "npm:^10.1.0"
     remotion: "npm:^4.0.84"
     remotion-animated: "npm:^2.0.0"
@@ -14105,16 +14104,6 @@ __metadata:
     react: "*"
     react-dom: "*"
   checksum: 5d81fe0902303d3ed7810cdd56c6cae12b08124a3d4fcbfa3924327105b81447b039ea9d6aff20aac3c13999f949000870a7a2fa29fe20ed844ac26606462fa0
-  languageName: node
-  linkType: hard
-
-"react-virtuoso@npm:^4.7.7":
-  version: 4.7.7
-  resolution: "react-virtuoso@npm:4.7.7"
-  peerDependencies:
-    react: ">=16 || >=17 || >= 18"
-    react-dom: ">=16 || >=17 || >= 18"
-  checksum: f2156dcbd6c4ca15bdafb838f219943d99a8f5755be69a2c10ada6c0990c50377a64716953eceb3fb8ece981aac733f1121e0f2d2e4d265bb4fc853270e806a7
   languageName: node
   linkType: hard
 
