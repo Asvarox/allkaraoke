@@ -1,0 +1,365 @@
+#ARTIST:Nicole
+#TITLE:Ein bißchen Frieden
+#CREATOR:IC
+#BPM:336,7
+#YEAR:1982
+#VIDEO:v=W9S3YMmIFdw
+#GENRE:Schlager
+#LANGUAGE:German
+#GAP:17239,89901989902
+#EDITION:ESC 1982
+#ALLKARAOKE_ID:nicole-ein-bisschen-frieden
+#ALLKARAOKE_LASTUPDATE:2024-04-18T04:25:23.477Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5148
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Nicole - Ein bißchen Frieden.mp3
+: 22 4 1 Wie 
+: 28 4 1 ei
+: 34 4 1 ne 
+: 40 8 6 Blu
+: 50 8 6 me 
+: 62 4 6 am 
+: 68 4 5 Win
+: 74 4 6 ter
+: 80 4 8 be
+: 86 8 1 ginn 
+- 94
+: 108 4 1 Und 
+: 114 4 1 so 
+: 120 4 1 wie 
+: 126 4 1 ein 
+: 132 8 8 Feu
+: 142 8 8 er 
+: 152 4 8 im 
+: 158 4 6 ei
+: 164 4 8 si
+: 170 4 10 gen 
+: 176 8 1 Wind 
+- 184
+: 206 4 1 Wie 
+: 212 4 1 ei
+: 218 4 1 ne 
+: 224 8 10 Pup
+: 234 8 10 pe, 
+: 244 4 10 die 
+: 250 4 8 kei
+: 256 6 10 ner 
+: 264 6 11 mehr 
+: 272 8 3 mag, 
+- 280
+: 290 4 3 Fühl’ 
+: 296 4 1 ich 
+: 302 4 1 mich 
+: 308 4 1 an 
+: 314 14 5 man
+: 330 10 3 chem 
+: 342 16 1 Tag 
+- 358 360
+- 360
+: 382 4 1 Dann 
+: 388 4 1 seh 
+: 394 4 1 ich 
+: 400 4 1 die 
+: 406 8 6 Wol
+: 416 8 6 ken 
+- 424
+: 426 4 6 Die 
+: 432 4 5 ü
+: 438 4 6 ber 
+: 444 4 8 uns 
+: 450 8 1 sind 
+- 458
+: 472 4 1 Und 
+: 478 4 1 hö
+: 484 3 1 re 
+: 488 6 1 die 
+: 496 8 8 Schrei
+: 506 8 8 e 
+- 514
+: 516 6 8 Der 
+: 524 4 6 Vö
+: 530 3 8 gel 
+: 534 4 10 im 
+: 540 8 1 Wind 
+- 548
+: 564 4 1 Ich 
+: 570 4 1 sing
+: 576 3 1 e 
+: 580 6 1 aus 
+: 588 6 10 Angst 
+- 594
+: 596 8 10 Vor 
+: 608 4 10 dem 
+: 614 4 8 Dun
+: 620 6 10 keln 
+: 628 8 11 mein 
+: 638 8 3 Lied 
+- 646
+: 654 4 3 Und 
+: 660 4 1 hof
+: 666 4 1 fe, 
+: 672 4 1 dass 
+: 678 12 10 nichts 
+: 694 10 8 ge
+: 706 22 6 schieht 
+- 728 748
+- 748
+: 770 4 -2 Ein 
+: 776 8 -2 biß
+: 786 4 -1 chen 
+: 792 10 1 Frie
+: 804 8 1 den, 
+: 814 4 1 ein 
+: 820 10 3 biß
+: 832 4 1 chen 
+: 838 8 5 Son
+: 848 6 5 ne 
+- 854
+: 860 4 5 Für 
+: 866 8 5 die
+: 876 4 6 se 
+: 882 10 8 Er
+: 894 8 8 de, 
+: 904 4 6 auf 
+: 910 10 5 der 
+: 922 4 3 wir 
+: 928 8 3 woh
+: 938 6 1 nen 
+- 944
+: 950 4 -2 Ein 
+: 956 8 -2 biß
+: 966 4 -1 chen 
+: 972 10 1 Frie
+: 984 8 1 den, 
+: 994 4 1 ein 
+: 1000 10 3 biß
+: 1012 4 1 chen 
+: 1018 8 5 Freu
+: 1028 6 5 de, 
+- 1034
+: 1042 4 5 Ein 
+: 1048 8 5 biß
+: 1058 4 6 chen 
+: 1064 10 8 Wär
+: 1076 8 8 me, 
+: 1086 4 6 das 
+: 1092 10 10 wünsch’ 
+: 1104 10 8 ich 
+: 1116 8 6 mir 
+- 1124
+: 1134 4 -2 Ein 
+: 1140 8 -2 biß
+: 1150 4 -1 chen 
+: 1156 10 1 Frie
+: 1168 8 1 den, 
+: 1178 4 1 ein 
+: 1184 10 3 biß
+: 1196 4 1 chen 
+: 1202 8 5 träu
+: 1212 6 5 men 
+- 1218
+: 1226 4 5 Und 
+: 1232 8 5 dass 
+: 1242 4 6 die 
+: 1248 10 8 Men
+: 1260 8 8 schen 
+: 1270 4 6 nicht 
+: 1276 10 5 so 
+: 1288 4 3 oft 
+: 1294 8 3 wei
+: 1304 6 1 nen 
+- 1310
+: 1316 4 -2 Ein 
+: 1322 8 -2 biß
+: 1332 4 -1 chen 
+: 1338 10 1 Frie
+: 1350 8 1 den, 
+: 1360 4 1 ein 
+: 1366 10 3 biß
+: 1378 4 1 chen 
+: 1384 8 5 Lie
+: 1394 6 5 be, 
+- 1400
+: 1408 4 5 Daß 
+: 1414 8 5 ich 
+: 1424 4 6 die 
+: 1430 10 8 Hoff
+: 1442 8 8 nung 
+: 1452 4 6 nie 
+: 1458 8 10 mehr 
+: 1470 10 8 ver
+: 1482 28 6 lier’ 
+- 1510 1544
+- 1544
+: 1566 4 1 Ich 
+: 1572 4 1 weiß, 
+: 1578 3 1 mei
+: 1582 6 1 ne 
+: 1590 8 6 Lie
+: 1600 8 6 der, 
+- 1608
+: 1610 4 6 Die 
+: 1616 4 5 än
+: 1622 4 6 dern 
+: 1628 4 8 nicht 
+: 1634 8 1 viel 
+- 1642
+: 1658 4 1 Ich 
+: 1664 3 1 bin 
+: 1668 4 1 nur 
+: 1674 4 1 ein 
+: 1680 8 8 Mäd
+: 1690 6 8 chen 
+- 1696
+: 1700 6 8 Das 
+: 1708 4 6 sagt 
+: 1714 4 8 was 
+: 1720 4 10 es 
+: 1726 8 1 fühlt 
+- 1734
+: 1748 4 -2 Al
+: 1754 4 1 lein 
+: 1760 3 1 bin 
+: 1764 4 1 ich 
+: 1770 8 10 hilf
+: 1780 10 10 los, 
+- 1790
+: 1792 6 10 Ein 
+: 1800 4 8 Vo
+: 1806 4 10 gel 
+: 1812 8 11 im 
+: 1822 6 3 Wind 
+- 1828
+: 1836 4 3 Der 
+: 1842 6 1 spürt 
+: 1850 4 1 das 
+: 1856 4 1 der 
+: 1862 14 10 Sturm 
+: 1878 8 8 be
+: 1888 22 6 ginnt 
+- 1910 1932
+- 1932
+: 1954 4 -2 Ein 
+: 1960 8 -2 biß
+: 1970 4 -1 chen 
+: 1976 10 1 Frie
+: 1988 8 1 den, 
+: 1998 4 1 ein 
+: 2004 10 3 biß
+: 2016 4 1 chen 
+: 2022 8 5 Son
+: 2032 6 5 ne, 
+- 2038
+: 2044 4 5 Für 
+: 2050 8 5 die
+: 2060 4 6 se 
+: 2066 10 8 Er
+: 2078 8 8 de, 
+: 2088 4 6 auf 
+: 2094 10 5 der 
+: 2106 4 3 wir 
+: 2112 8 3 woh
+: 2122 6 1 nen 
+- 2128
+: 2136 4 -2 Ein 
+: 2142 8 -2 biß
+: 2152 4 -1 chen 
+: 2158 10 1 Frie
+: 2170 8 1 den, 
+: 2180 4 1 ein 
+: 2186 10 3 biß
+: 2198 4 1 chen 
+: 2204 8 5 Freu
+: 2214 6 5 de, 
+- 2220
+: 2226 4 5 Ein 
+: 2232 8 5 biß
+: 2242 4 6 chen 
+: 2248 10 8 Wär
+: 2260 8 8 me, 
+: 2270 4 6 das 
+: 2276 10 10 wünsch’ 
+: 2288 10 8 ich 
+: 2300 8 6 mir 
+- 2308
+: 2318 4 -1 Ein 
+: 2324 8 -1 biß
+: 2334 4 0 chen 
+: 2340 10 2 Frie
+: 2352 8 2 den, 
+: 2364 4 2 ein 
+: 2370 8 4 biß
+: 2380 4 2 chen 
+: 2386 8 6 träu
+: 2396 6 6 men 
+- 2402
+: 2410 4 6 Und 
+: 2416 8 6 dass 
+: 2426 4 7 die 
+: 2432 10 9 Men
+: 2444 8 9 schen 
+: 2454 4 7 nicht 
+: 2460 10 6 so 
+: 2472 4 4 oft 
+: 2478 8 4 wei
+: 2488 6 2 nen 
+- 2494
+: 2500 4 -1 Ein 
+: 2506 8 -1 biß
+: 2516 4 0 chen 
+: 2522 10 2 Frie
+: 2534 8 2 den, 
+: 2544 4 2 ein 
+: 2550 10 4 biß
+: 2562 4 2 chen 
+: 2568 8 6 Lie
+: 2578 6 6 be 
+- 2584
+: 2592 4 6 Daß 
+: 2598 8 6 ich 
+: 2608 4 7 die 
+: 2614 10 9 Hoff
+: 2626 8 9 nung 
+: 2636 4 7 nie 
+: 2642 8 11 mehr 
+: 2652 8 9 ver
+: 2664 14 7 lier’ 
+- 2678 2688
+- 2688
+: 2710 30 11 Sing 
+: 2744 10 9 mit 
+: 2756 18 12 mir 
+: 2790 10 6 ein 
+: 2802 28 9 klei
+: 2834 10 2 nes 
+: 2846 16 7 Lied, 
+- 2862 2870
+- 2870
+: 2892 30 11 Daß 
+: 2926 10 9 die 
+: 2938 20 12 Welt 
+: 2972 10 6 in 
+: 2984 30 9 Frie
+: 3016 10 2 den 
+: 3028 16 7 lebt 
+- 3044 3052
+- 3052
+: 3074 30 11 Singt 
+: 3108 10 9 mit 
+: 3120 18 12 mir 
+: 3154 10 6 ein 
+: 3166 28 9 klei
+: 3198 10 2 nes 
+: 3210 24 7 Lied, 
+- 3234
+: 3256 30 11 Daß 
+: 3290 10 9 die 
+: 3302 16 12 Welt 
+: 3336 10 6 in 
+: 3348 38 9 Frie
+: 3390 12 2 den 
+: 3406 56 7 lebt 
+E

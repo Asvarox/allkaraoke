@@ -1,0 +1,301 @@
+#ARTIST:Sandie Shaw
+#TITLE:Puppet On A String
+#CREATOR:uweotto
+#BPM:250,5
+#YEAR:1967
+#VIDEO:v=Ga1kMdJCc_Q
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:5362,035928143712
+#EDITION:ESC 1967
+#ALLKARAOKE_ID:sandie-shaw-puppet-on-a-string
+#ALLKARAOKE_LASTUPDATE:2024-04-18T04:25:23.479Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1489
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12678
+#ALLKARAOKE_VOLUME:0,92
+#MP3:Sandie Shaw - Puppet On A String.mp3
+: 17 45 7 I 
+- 62
+: 66 2 5 Won
+: 69 2 4 der 
+: 73 2 2 if 
+: 77 2 0 one 
+: 81 2 -1 day 
+: 85 3 7 that, 
+- 88
+: 92 2 -1 You’ll 
+: 96 2 -3 say 
+: 101 3 7 that, 
+: 108 2 -3 you 
+: 112 5 -5 care 
+- 117
+: 121 2 7 If 
+: 125 2 9 you 
+: 128 2 12 say 
+: 132 2 12 you 
+: 136 2 14 love 
+: 140 2 16 me 
+: 144 2 14 mad
+: 148 4 19 ly, 
+- 152
+: 156 2 9 I’ll 
+: 160 3 9 glad
+: 165 4 17 ly, 
+: 172 2 11 be 
+: 176 4 7 there 
+- 180
+: 183 2 -5 Like 
+: 187 2 -3 a 
+: 191 2 -1 pup
+: 195 2 0 pet 
+: 199 2 2 on 
+: 203 2 5 a 
+: 207 2 5 stri
+* 212 61 7 ~ng 
+- 273 320
+- 320
+: 337 5 16 Love 
+: 345 4 19 is 
+: 352 5 12 just 
+: 360 2 11 like 
+: 364 2 9 a 
+: 368 3 11 mer
+: 372 2 14 ry-
+: 376 2 11 go-
+: 380 2 9 rou
+: 384 3 7 ~nd 
+- 387
+: 396 3 5 With 
+: 402 4 5 all 
+: 409 3 5 the 
+: 416 3 5 fun 
+: 421 2 4 of 
+: 425 2 2 a 
+: 429 3 2 fai
+: 434 17 0 ~r 
+- 451
+: 466 4 4 One 
+: 473 5 7 day 
+: 481 4 0 I’m 
+: 488 3 0 feel
+: 492 2 -3 ing 
+: 496 3 -1 down 
+: 501 2 2 on 
+: 506 2 -1 the 
+: 510 3 -5 grou
+: 515 4 -5 ~nd 
+- 519
+: 530 4 5 Then 
+: 537 4 5 I’m 
+: 544 3 5 up 
+: 549 3 4 in 
+: 554 2 2 the 
+: 558 3 2 ai
+: 564 16 0 ~r 
+- 580
+: 595 3 9 Are 
+: 601 4 9 you 
+: 607 3 9 lead
+: 612 3 7 ing 
+: 617 2 5 me 
+: 621 2 5 o
+: 625 17 7 ~n? 
+- 642
+: 652 3 7 To
+: 657 3 6 mor
+: 663 4 6 row 
+: 672 3 6 will 
+: 676 2 7 you 
+: 680 3 9 be 
+: 684 3 9 go
+* 689 43 11 ~ne? 
+- 732 735
+- 735
+: 752 41 7 I 
+- 793
+: 799 5 5 Won
+: 805 2 4 der 
+: 809 2 2 if 
+: 813 2 0 one 
+: 817 2 -1 day 
+: 821 3 7 that, 
+- 824
+: 828 2 -1 You’ll 
+: 832 2 -3 say 
+: 837 3 7 that, 
+: 844 2 -3 you 
+: 848 5 -5 care 
+- 853
+: 858 2 7 If 
+: 862 2 9 you 
+: 865 2 11 say 
+: 869 2 12 you 
+: 873 2 14 love 
+: 877 2 16 me 
+: 881 2 14 mad
+: 885 4 19 ly, 
+- 889
+: 893 2 9 I’ll 
+: 897 3 9 glad
+: 902 4 17 ly, 
+: 909 2 11 be 
+: 913 4 7 there 
+- 917
+: 919 3 -5 Like 
+: 923 3 -3 a 
+: 927 3 -1 pup
+: 931 3 0 pet 
+: 935 3 2 on 
+: 939 3 5 a 
+: 943 3 5 stri
+: 948 61 7 ~ng 
+- 1009 1057
+- 1057
+: 1074 4 4 I 
+: 1081 4 7 may 
+: 1089 6 0 win 
+: 1097 2 -1 on 
+: 1101 2 -3 the 
+: 1105 2 0 rou
+: 1109 3 2 ~nd
+: 1114 3 -1 a
+: 1119 2 -5 bou
+: 1123 3 -5 ~t 
+- 1126
+: 1139 4 5 Then 
+: 1147 3 5 I’ll 
+: 1153 3 5 lose 
+: 1158 2 4 on 
+: 1162 2 2 the 
+: 1166 4 2 swi
+: 1172 13 0 ~ngs 
+- 1185 1189
+- 1189
+: 1206 3 4 In 
+: 1212 3 7 or 
+: 1218 3 0 out, 
+: 1225 3 -1 there 
+: 1230 2 -3 is 
+: 1233 2 -1 ne
+: 1238 2 2 ver 
+: 1242 2 -1 a 
+: 1246 2 -5 dou
+: 1249 3 -5 ~bt 
+- 1252
+: 1266 4 5 Just 
+: 1274 3 5 who’s 
+: 1281 3 5 pull
+: 1286 2 4 ing 
+: 1290 2 2 the 
+: 1294 3 2 stri
+: 1299 16 0 ~ngs 
+- 1315
+: 1331 4 9 I’m 
+: 1339 4 9 all 
+: 1346 2 9 tied 
+: 1350 2 7 up 
+: 1354 2 5 in 
+: 1359 14 7 you 
+- 1373
+: 1390 2 7 But 
+: 1394 5 6 where’s 
+: 1402 3 6 it 
+: 1409 3 7 lead
+: 1414 2 7 ing 
+: 1418 2 9 me 
+: 1421 3 9 to
+: 1426 19 11 ~? 
+- 1445 1472
+- 1472
+: 1489 44 7 I 
+- 1533
+: 1534 7 5 Won
+: 1543 2 4 der 
+: 1547 2 2 if 
+: 1551 2 0 one 
+: 1555 2 -1 day 
+: 1559 3 7 that, 
+- 1562
+: 1565 2 -1 You’ll 
+: 1569 2 -3 say 
+: 1574 3 7 that, 
+: 1581 2 -3 you 
+: 1585 5 -5 care 
+- 1590
+: 1594 2 7 If 
+: 1598 2 9 you 
+: 1602 2 11 say 
+: 1606 2 12 you 
+: 1610 2 14 love 
+: 1614 2 16 me 
+: 1618 2 14 mad
+: 1622 4 19 ly, 
+- 1626
+: 1629 2 9 I’ll 
+: 1633 3 9 glad
+: 1638 4 17 ly, 
+: 1645 2 11 be 
+: 1649 4 7 there 
+- 1653
+: 1656 3 -5 Like 
+: 1660 3 -3 a 
+: 1664 3 -1 pup
+: 1668 3 0 pet 
+: 1672 3 2 on 
+: 1676 3 4 a 
+: 1680 3 5 stri
+: 1685 61 7 ~ng 
+- 1746 1791
+- 1791
+: 1808 44 8 I 
+- 1852
+: 1854 5 6 Won
+: 1860 2 5 der 
+: 1864 2 3 if 
+: 1868 2 1 one 
+: 1872 2 0 day 
+: 1876 3 8 that, 
+- 1879
+: 1884 2 0 You’ll 
+: 1888 2 -2 say 
+: 1893 3 8 that, 
+: 1900 2 -2 you 
+: 1904 5 -4 care 
+- 1909
+: 1912 2 8 If 
+: 1916 2 10 you 
+: 1920 2 12 say 
+: 1924 2 13 you 
+: 1928 2 15 love 
+: 1932 2 17 me 
+: 1936 2 15 mad
+: 1940 4 20 ly, 
+- 1944
+: 1947 2 10 I’ll 
+: 1951 3 10 glad
+: 1956 4 18 ly, 
+: 1963 2 12 be 
+: 1967 4 8 there 
+- 1971
+: 1974 3 -4 Like 
+: 1978 3 -2 a 
+: 1982 3 0 pup
+: 1986 3 1 pet 
+: 1990 3 3 on 
+: 1994 3 5 a 
+: 1998 3 6 stri
+: 2003 61 8 ~ng 
+- 2064 2084
+- 2084
+: 2101 2 -4 Like 
+: 2105 2 -2 a 
+: 2109 3 0 pup
+: 2114 2 1 pet 
+: 2118 2 3 on 
+: 2122 2 1 a 
+- 2124 2150
+- 2150
+: 2167 7 1 String 
+E

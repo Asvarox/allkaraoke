@@ -35,6 +35,8 @@ const normalizeSong = (song: Song): Song => {
     song.title = song.title.slice(0, -4);
   } else if (song.title.toLowerCase().endsWith('(album version)')) {
     song.title = song.title.slice(0, -15);
+  } else if (song.title.toLowerCase().endsWith('(movie version)')) {
+    song.title = song.title.slice(0, -15);
   }
   song.title = song.title.trim();
 

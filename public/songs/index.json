@@ -6779,6 +6779,35 @@
     "local": false
   },
   {
+    "id": "blanche-city-lights",
+    "title": "City Lights",
+    "artist": "Blanche",
+    "video": "xbomdE81_mA",
+    "language": [
+      "English"
+    ],
+    "bpm": 390.06,
+    "gap": 5890.153822488848,
+    "year": "2017",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-04-18T04:25:23.451Z",
+    "edition": "ESC 2017",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.72,
+    "author": "Cybergirl76",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=89215",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20841",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blanchecitylights",
+    "local": false
+  },
+  {
     "id": "blanka-solo",
     "title": "Solo",
     "artist": "Blanka",
@@ -10023,6 +10052,34 @@
     ],
     "tracksCount": 1,
     "search": "celinedionmyheartwillgoon",
+    "local": false
+  },
+  {
+    "id": "celine-dion-ne-partez-pas-sans-moi",
+    "title": "Ne partez pas sans moi",
+    "artist": "Céline Dion",
+    "video": "fc15NK89NjI",
+    "language": [
+      "French"
+    ],
+    "bpm": 288.14,
+    "gap": 12440.897480391477,
+    "year": "1988",
+    "artistOrigin": "CH",
+    "lastUpdate": "2024-04-18T04:25:23.454Z",
+    "edition": "ESC 1988",
+    "realBpm": 144,
+    "volume": 0.71,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=25068",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "celinedionnepartezpassansmoi",
     "local": false
   },
   {
@@ -14793,6 +14850,35 @@
     "local": false
   },
   {
+    "id": "dschinghis-khan-dschinghis-khan",
+    "title": "Dschinghis Khan",
+    "artist": "Dschinghis Khan",
+    "video": "3zkECb2QqXU",
+    "language": [
+      "German"
+    ],
+    "bpm": 282,
+    "gap": 139.36170212765967,
+    "year": "1979",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-18T04:25:23.456Z",
+    "edition": "ESC 1979",
+    "genre": "Schlager",
+    "realBpm": 141,
+    "volume": 0.78,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5129",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dschinghiskhandschinghiskhan",
+    "local": false
+  },
+  {
     "id": "dschinghis-khan-moskau",
     "title": "Moskau",
     "artist": "Dschinghis Khan",
@@ -15724,6 +15810,34 @@
     "local": false
   },
   {
+    "id": "eleni-foureira-fuego",
+    "title": "Fuego",
+    "artist": "Eleni Foureira",
+    "video": "54PHdAEmJkM",
+    "language": [
+      "English"
+    ],
+    "bpm": 202,
+    "gap": 19204.653465346535,
+    "year": "2018",
+    "artistOrigin": "GR",
+    "lastUpdate": "2024-04-18T04:25:23.457Z",
+    "edition": "ESC 2018",
+    "realBpm": 101,
+    "volume": 0.61,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=21883",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elenifoureirafuego",
+    "local": false
+  },
+  {
     "id": "ellie-goulding-burn",
     "title": "Burn",
     "artist": "Ellie Goulding",
@@ -16148,6 +16262,34 @@
     ],
     "tracksCount": 1,
     "search": "eminemtherealslimshady",
+    "local": false
+  },
+  {
+    "id": "emmelie-de-forest-only-teardrops",
+    "title": "Only Teardrops",
+    "artist": "Emmelie de Forest",
+    "video": "KTlKyLa7ZLg",
+    "language": [
+      "English"
+    ],
+    "bpm": 222,
+    "gap": 6086.486486486487,
+    "year": "2013",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-04-18T04:25:23.459Z",
+    "edition": "ESC 2013",
+    "realBpm": 111,
+    "volume": 0.7,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15663",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "emmeliedeforestonlyteardrops",
     "local": false
   },
   {
@@ -17677,6 +17819,34 @@
     ],
     "tracksCount": 1,
     "search": "francegallpoupeedecirepoupeedeson",
+    "local": false
+  },
+  {
+    "id": "francesco-gabbani-occidentalis-karma",
+    "title": "Occidentali’s Karma",
+    "artist": "Francesco Gabbani",
+    "video": "-OnRxfhbHB4",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 228,
+    "gap": 3083.157894736842,
+    "year": "2017",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-04-18T04:25:23.461Z",
+    "edition": "ESC 2017",
+    "realBpm": 114,
+    "volume": 0.72,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20669",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "francescogabbanioccidentaliskarma",
     "local": false
   },
   {
@@ -19872,6 +20042,34 @@
     "local": false
   },
   {
+    "id": "helena-paparizou-my-number-one",
+    "title": "My Number One",
+    "artist": "Helena Paparizou",
+    "video": "r0CmpaSV0tc",
+    "language": [
+      "English"
+    ],
+    "bpm": 226.6,
+    "gap": 2797.060900264784,
+    "year": "2005",
+    "artistOrigin": "GR",
+    "lastUpdate": "2024-04-18T04:25:23.463Z",
+    "edition": "ESC 2005",
+    "realBpm": 113,
+    "volume": 0.74,
+    "author": "ouzohotte",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10357",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8279",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "helenapaparizoumynumberone",
+    "local": false
+  },
+  {
     "id": "helene-fischer-atemlos-durch-die-nacht",
     "title": "Atemlos durch die Nacht",
     "artist": "Helene Fischer",
@@ -20699,6 +20897,35 @@
     ],
     "tracksCount": 1,
     "search": "ikimonogakaribluebird",
+    "local": false
+  },
+  {
+    "id": "il-volo-grande-amore",
+    "title": "Grande amore",
+    "artist": "Il Volo",
+    "video": "w1f6o1HQBvg",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 284,
+    "gap": 12946.478873239437,
+    "year": "2015",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-04-18T04:25:23.464Z",
+    "edition": "ESC 2015",
+    "genre": "Pop",
+    "realBpm": 142,
+    "volume": 0.76,
+    "author": "gun8",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=80048",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18235",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ilvolograndeamore",
     "local": false
   },
   {
@@ -22514,6 +22741,62 @@
     ],
     "tracksCount": 1,
     "search": "johnnycashsolitaryman",
+    "local": false
+  },
+  {
+    "id": "johnny-logan-hold-me-now",
+    "title": "Hold Me Now",
+    "artist": "Johnny Logan",
+    "video": "TReAKhrTqKY",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 5940,
+    "year": "1987",
+    "artistOrigin": "IE",
+    "lastUpdate": "2024-04-18T04:25:23.466Z",
+    "edition": "ESC 1987",
+    "realBpm": 73,
+    "volume": 0.78,
+    "author": "williluegger",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=667",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3711",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnnyloganholdmenow",
+    "local": false
+  },
+  {
+    "id": "johnny-logan-whats-another-year",
+    "title": "What’s Another Year",
+    "artist": "Johnny Logan",
+    "video": "-V5RW1-ia2Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 208.46,
+    "gap": 17972.612491605105,
+    "year": "1980",
+    "artistOrigin": "IE",
+    "lastUpdate": "2024-04-18T04:25:23.466Z",
+    "edition": "ESC 1980",
+    "realBpm": 107,
+    "volume": 0.72,
+    "author": "Zevac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=181957",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26733",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnnyloganwhatsanotheryear",
     "local": false
   },
   {
@@ -24347,6 +24630,38 @@
     ],
     "tracksCount": 1,
     "search": "kehatiktok",
+    "local": false
+  },
+  {
+    "id": "keiino-spirit-in-the-sky",
+    "title": "Spirit In The Sky",
+    "artist": "KEiiNO",
+    "video": "Ud7mYAI4Vtk",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.45,
+    "gap": 4269.204131724279,
+    "year": "2019",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-18T04:25:23.470Z",
+    "edition": "ESC 2019",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 0.65,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27302",
+    "tracks": [
+      {
+        "start": 16
+      },
+      {
+        "start": 292
+      }
+    ],
+    "tracksCount": 2,
+    "search": "keiinospiritinthesky",
     "local": false
   },
   {
@@ -27576,6 +27891,35 @@
     "local": false
   },
   {
+    "id": "loic-nottet-rhythm-inside",
+    "title": "Rhythm Inside",
+    "artist": "Loïc Nottet",
+    "video": "IjH-HYAFICg",
+    "language": [
+      "English"
+    ],
+    "bpm": 270.09,
+    "gap": 15860.333222259247,
+    "year": "2015",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-04-18T04:25:23.471Z",
+    "edition": "ESC 2015",
+    "genre": "RnB",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18655",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "loicnottetrhythminside",
+    "local": false
+  },
+  {
     "id": "loituma-ievas-polka",
     "title": "Ieva’s Polka",
     "artist": "Loituma",
@@ -28715,6 +29059,34 @@
     "local": false
   },
   {
+    "id": "mahmood-soldi",
+    "title": "Soldi",
+    "artist": "Mahmood",
+    "video": "22lISUXgSUw",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 380,
+    "gap": 5373.157894736842,
+    "year": "2019",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-04-18T04:25:23.474Z",
+    "edition": "ESC 2019",
+    "realBpm": 95,
+    "volume": 0.61,
+    "author": "daggeg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1835",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=22507",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mahmoodsoldi",
+    "local": false
+  },
+  {
     "id": "majka-jezowska-a-ja-wole-moja-mame",
     "title": "A ja wolę moją mamę",
     "artist": "Majka Jeżowska",
@@ -29720,6 +30092,34 @@
     ],
     "tracksCount": 1,
     "search": "mariahcareywithoutyou",
+    "local": false
+  },
+  {
+    "id": "marija-serifovic-molitva",
+    "title": "Molitva",
+    "artist": "Marija Šerifović",
+    "video": "FSueQN1QvV4",
+    "language": [
+      "Serbian"
+    ],
+    "bpm": 240,
+    "gap": 15130,
+    "year": "2007",
+    "artistOrigin": "RS",
+    "lastUpdate": "2024-04-18T04:25:23.475Z",
+    "edition": "ESC 2007",
+    "realBpm": 81,
+    "volume": 0.92,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21656",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marijaserifovicmolitva",
     "local": false
   },
   {
@@ -34152,6 +34552,35 @@
     ],
     "tracksCount": 1,
     "search": "nickyjamyozunaterobare",
+    "local": false
+  },
+  {
+    "id": "nicole-ein-bisschen-frieden",
+    "title": "Ein bißchen Frieden",
+    "artist": "Nicole",
+    "video": "W9S3YMmIFdw",
+    "language": [
+      "German"
+    ],
+    "bpm": 336.7,
+    "gap": 17239.89901989902,
+    "year": "1982",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-18T04:25:23.477Z",
+    "edition": "ESC 1982",
+    "genre": "Schlager",
+    "realBpm": 118,
+    "volume": 0.74,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5148",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nicoleeinbisschenfrieden",
     "local": false
   },
   {
@@ -40604,6 +41033,34 @@
     "local": false
   },
   {
+    "id": "ruslana-wild-dances",
+    "title": "Wild Dances",
+    "artist": "Ruslana",
+    "video": "sv64W74fC-s",
+    "language": [
+      "English"
+    ],
+    "bpm": 344,
+    "gap": 32947.09302325582,
+    "year": "2004",
+    "artistOrigin": "UA",
+    "lastUpdate": "2024-04-18T04:25:23.477Z",
+    "edition": "ESC 2004",
+    "realBpm": 172,
+    "volume": 0.8,
+    "author": "claudio bertozzi",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3021",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6564",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ruslanawilddances",
+    "local": false
+  },
+  {
     "id": "rusted-root-send-me-on-my-way",
     "title": "Send Me On My Way",
     "artist": "Rusted Root",
@@ -40873,6 +41330,34 @@
     "local": false
   },
   {
+    "id": "salvador-sobral-amar-pelos-dois",
+    "title": "Amar pelos dois",
+    "artist": "Salvador Sobral",
+    "video": "ymFVfzu-2mw",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 200,
+    "gap": 24665,
+    "year": "2017",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-04-18T04:25:23.478Z",
+    "edition": "ESC 2017",
+    "realBpm": 87,
+    "volume": 0.73,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21578",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "salvadorsobralamarpelosdois",
+    "local": false
+  },
+  {
     "id": "sam-ryder-space-man",
     "title": "Space Man",
     "artist": "Sam Ryder",
@@ -40949,6 +41434,35 @@
     ],
     "tracksCount": 1,
     "search": "sanahfeatdariazawialoweldorado",
+    "local": false
+  },
+  {
+    "id": "sandie-shaw-puppet-on-a-string",
+    "title": "Puppet On A String",
+    "artist": "Sandie Shaw",
+    "video": "Ga1kMdJCc_Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.5,
+    "gap": 5362.035928143712,
+    "year": "1967",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-18T04:25:23.479Z",
+    "edition": "ESC 1967",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.92,
+    "author": "uweotto",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1489",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12678",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sandieshawpuppetonastring",
     "local": false
   },
   {
@@ -45900,6 +46414,34 @@
     "local": false
   },
   {
+    "id": "the-common-linnets-calm-after-the-storm",
+    "title": "Calm After The Storm",
+    "artist": "The Common Linnets",
+    "video": "hkrF8uC92O4",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.95,
+    "gap": 6949.833305550925,
+    "year": "2014",
+    "artistOrigin": "NL",
+    "lastUpdate": "2024-04-18T04:25:23.480Z",
+    "edition": "ESC 2014",
+    "realBpm": 116,
+    "volume": 0.81,
+    "author": "lava",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=94",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17242",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thecommonlinnetscalmafterthestorm",
+    "local": false
+  },
+  {
     "id": "the-cranberries-ode-to-my-family",
     "title": "Ode To My Family",
     "artist": "The Cranberries",
@@ -48685,6 +49227,34 @@
     "local": false
   },
   {
+    "id": "toto-cutugno-insieme-1992",
+    "title": "Insieme: 1992",
+    "artist": "Toto Cutugno",
+    "video": "q7oSgpucj8Q",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 280.5,
+    "gap": -1026.042780748663,
+    "year": "1990",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-04-18T04:25:23.481Z",
+    "edition": "ESC 1990",
+    "realBpm": 100,
+    "volume": 0.96,
+    "author": "sons78",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1150",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=7835",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "totocutugnoinsieme1992",
+    "local": false
+  },
+  {
     "id": "toto-hold-the-line",
     "title": "Hold The Line",
     "artist": "Toto",
@@ -50138,6 +50708,35 @@
     ],
     "tracksCount": 1,
     "search": "verkaserduchkadancinglashatumbai",
+    "local": false
+  },
+  {
+    "id": "vicky-leandros-apres-toi",
+    "title": "Après toi",
+    "artist": "Vicky Leandros",
+    "video": "erssX76HEws",
+    "language": [
+      "French"
+    ],
+    "bpm": 214.2,
+    "gap": 11428.691588785046,
+    "year": "1972",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-18T04:25:23.482Z",
+    "edition": "ESC 1972",
+    "genre": "None",
+    "realBpm": 117,
+    "volume": 0.81,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=2729",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vickyleandrosaprestoi",
     "local": false
   },
   {
