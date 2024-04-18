@@ -1,16 +1,12 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { FiberNewOutlined, Star } from '@mui/icons-material';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import SongFlag from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/SongFlag';
-import { filteringFunctions } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
-import FavoritesService from 'Songs/FavoritesService';
+import { TopContainer } from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/TopContainer';
 import { useSongStats } from 'Songs/stats/hooks';
-import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import { ComponentProps, ReactNode, useCallback, useMemo } from 'react';
+import { ComponentProps, ReactNode, useCallback } from 'react';
 
 interface Props extends ComponentProps<typeof SongCardContainer> {
   song: SongPreview;
@@ -22,6 +18,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   handleClick?: (index: number, groupLetter?: string) => void;
   video?: ReactNode;
   isPopular: boolean;
+  forceFlag: boolean;
 }
 
 export const FinalSongCard = ({
@@ -35,6 +32,7 @@ export const FinalSongCard = ({
   isPopular,
   background = true,
   expanded = false,
+  forceFlag = false,
   ...restProps
 }: Props) => {
   const onClickCallback = useCallback(
@@ -54,17 +52,7 @@ export const FinalSongCard = ({
         />
       )}
       <SongInfo expanded={expanded}>
-        {!expanded && (
-          <SongCardTopRightContainer>
-            {song.tracksCount > 1 && !expanded && (
-              <MultiTrackIndicator data-test="multitrack-indicator">
-                <PeopleAltIcon />
-                &nbsp; Duet
-              </MultiTrackIndicator>
-            )}
-            <SongCardStatsIndicator song={song} isPopular={isPopular} focused={!!video} />
-          </SongCardTopRightContainer>
-        )}
+        {!expanded && <TopContainer song={song} isPopular={isPopular} video={video} />}
         <SongListEntryDetailsArtist expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
         <SongListEntryDetailsTitle expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
         <ExpandedData expanded={expanded}>
@@ -85,7 +73,7 @@ export const FinalSongCard = ({
               <SongListEntryStats song={song} />
             </>
           )}
-          {!expanded && <Language song={song} />}
+          {!expanded && <Language song={song} forceFlag={forceFlag} />}
         </ExpandedData>
       </SongInfo>
       {children}
@@ -196,144 +184,6 @@ export const SongListEntryDetailsTitle = styled(SongListEntryDetails)`
 export const SongAuthor = styled(SongListEntryDetailsTitle)`
   font-size: 3rem;
   margin-top: 3rem;
-`;
-
-const SongCardTopRightContainer = styled.div`
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  padding: 0 0.5rem;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  width: 100%;
-`;
-
-export const SongCardStatsIndicator = ({
-  song,
-  isPopular,
-  focused,
-}: {
-  song: SongPreview;
-  isPopular: boolean;
-  focused: boolean;
-}) => {
-  const isRecentlyUpdated = useMemo(() => filteringFunctions.recentlyUpdated([song]).length > 0, [song]);
-
-  const stats = useSongStats(song);
-  const lastPlayed = stats?.scores?.at(-1)?.date ?? false;
-  const playedToday = lastPlayed && dayjs(lastPlayed).isAfter(dayjs().subtract(1, 'days'));
-
-  return stats?.plays ? (
-    <SongIndicatorStat data-test="song-stat-indicator">
-      {playedToday ? (
-        'Played today'
-      ) : (
-        <>
-          {focused ? (
-            <>
-              Played {stats.plays} time{stats.plays > 1 && 's'}
-            </>
-          ) : (
-            stats.plays
-          )}
-        </>
-      )}
-    </SongIndicatorStat>
-  ) : isRecentlyUpdated ? (
-    <SongIndicatorIcon white>
-      {focused ? <SongIndicatorLabel>Added recently</SongIndicatorLabel> : <FiberNewOutlined />}
-    </SongIndicatorIcon>
-  ) : isPopular && song.language.includes('English') ? (
-    <>
-      <SongIndicatorIcon>
-        {focused && <SongIndicatorLabel>Popular</SongIndicatorLabel>}
-        <Star />
-      </SongIndicatorIcon>
-    </>
-  ) : null;
-};
-
-const SongIndicator = styled.div`
-  height: 2.75rem;
-  min-width: 2.75rem;
-  box-sizing: border-box;
-  color: white;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  //transition: 500ms;
-`;
-
-const SongIndicatorStat = styled(SongIndicator)`
-  padding: 0 1rem;
-`;
-
-const SongIndicatorLabel = styled.div`
-  padding: 0 0.5rem;
-  line-height: 0;
-  margin-top: 0.2rem;
-
-  & + svg {
-    margin-left: -0.25rem;
-  }
-`;
-
-const SongIndicatorIcon = styled(SongIndicator)<{ white?: boolean }>`
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  svg {
-    fill: ${(props) => (props.white ? 'white' : styles.colors.text.active)};
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-`;
-
-export const SongCardFavorite = ({ favorite, songId }: { songId: string; favorite?: boolean }) => {
-  return (
-    <SongCardFavoriteBase
-      favorite={favorite}
-      data-test="song-favorite-indicator"
-      onClick={(e) => {
-        e.stopPropagation();
-        console.log('songId', songId, !favorite);
-
-        FavoritesService.setFavorite(songId, !favorite);
-      }}>
-      {/*{favorite ? '★' : '☆'}*/}★
-    </SongCardFavoriteBase>
-  );
-};
-
-const SongCardFavoriteBase = styled.div<{ favorite?: boolean }>`
-  height: 2.75rem;
-  min-width: 2.75rem;
-  box-sizing: border-box;
-  border-radius: 5rem;
-  ${typography};
-  color: ${(props) => (props.favorite ? styles.colors.text.active : 'white')};
-  font-weight: bold;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-`;
-const MultiTrackIndicator = styled(SongIndicatorStat)`
-  margin-right: auto;
-
-  svg {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
 `;
 
 export const SongListEntryStats = ({ song }: { song: SongPreview }) => {
