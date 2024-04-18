@@ -233,10 +233,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 groupHeight={Math.floor(songGroupHeight) + Math.floor(LIST_GAP_REM * baseUnit)}
                 components={components}
                 renderGroup={(group) => (
-                  <SongsGroupContainer
-                    {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
-                    key={group.letter}
-                    highlight={group.letter === 'New'}>
+                  <SongsGroupContainer key={group.letter} highlight={group.letter === 'New'}>
                     <SongsGroupHeader data-group-letter={group.letter}>{group.letter}</SongsGroupHeader>
                   </SongsGroupContainer>
                 )}
@@ -245,6 +242,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                   const isFocused = songItem.index === focusedSong && group.letter === focusedGroup;
                   return (
                     <SongListEntry
+                      {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
                       isPopular={songItem.isPopular}
                       key={songItem.song.id}
                       song={songItem.song}
