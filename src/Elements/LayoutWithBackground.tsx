@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { roundTo } from 'utils/roundTo';
+import eurovisionBg from './eurovisionbg.svg';
 
 export type backgroundTheme = 'regular' | 'christmas' | 'eurovision';
 
@@ -37,35 +37,17 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   );
 }
 
-const escBars = new Array(21).fill(0).map((_, i) => roundTo(1.2 + Math.sin(i / 2.5 + 1.5), 1));
 export const EurovisionTheme = () => (
   <>
-    {escBars.map((flex, i) => (
-      <EscBar
-        disableAnimation={window.location.href.includes('/remote-mic')}
-        key={i}
-        style={{
-          flex,
-          backgroundPositionY: `${10 + i * 1.5}%`,
-          animationDelay: `-${(escBars.length - i) / 7}s`,
-        }}
-      />
-    ))}
+    <EscBar disableAnimation={window.location.href.includes('/remote-mic')} />
   </>
 );
 
 const EscBar = styled.div<{ disableAnimation: boolean }>`
-  transform: scale(1.1, 4);
+  transform: scale(1, 4);
 
-  background-image: linear-gradient(
-    0deg,
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionYellow.text},
-    ${colorSets.eurovisionPink.text},
-    ${colorSets.eurovisionOrange.text},
-    ${colorSets.eurovisionPink.text}
-  );
-  background-size: 200% 50%;
+  background-image: url(${eurovisionBg});
+  background-size: 100% 50%;
   height: 100%;
   ${(props) =>
     !props.disableAnimation &&
