@@ -184,14 +184,18 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         }}>
         {loading ? (
           <SongListContainer>
-            <SongsGroupContainer>
-              <SongsGroupHeader>&nbsp;&nbsp;</SongsGroupHeader>
-              <SongsGroup>
-                {new Array(16).fill(0).map((_, i) => (
+            <GroupRow>
+              <SongsGroupContainer>
+                <SongsGroupHeader>&nbsp;&nbsp;&nbsp;</SongsGroupHeader>
+              </SongsGroupContainer>
+            </GroupRow>
+            {new Array(4).fill(0).map((_, i) => (
+              <ListRow>
+                {new Array(4).fill(0).map((_, i) => (
                   <SongListEntrySkeleton key={i} />
                 ))}
-              </SongsGroup>
-            </SongsGroupContainer>
+              </ListRow>
+            ))}
           </SongListContainer>
         ) : (
           <>
@@ -359,13 +363,6 @@ const SongListContainer = styled.div<{ active?: boolean; dim?: boolean }>`
   opacity: ${(props) => (props.dim ? 0.5 : 1)};
 `;
 
-const SongsGroup = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: var(--song-list-gap);
-`;
-
 const SongListEntrySkeleton = styled.div`
   background: black;
   flex-basis: var(--song-entry-width);
@@ -416,10 +413,10 @@ const GroupRow = styled(BaseRow)`
   z-index: 3;
 `;
 
-const ListRow = styled(BaseRow)<{ group: SongGroup }>`
+const ListRow = styled(BaseRow)<{ group?: SongGroup }>`
   position: relative; // this way the song preview position is computed properly
   ${(props) =>
-    props.group.isNew &&
+    props.group?.isNew &&
     css`
       background: rgba(0, 0, 0, 0.7);
     `}

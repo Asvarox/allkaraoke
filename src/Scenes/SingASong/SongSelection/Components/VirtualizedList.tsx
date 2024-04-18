@@ -35,8 +35,8 @@ interface Props<T> {
   placeholder?: ReactNode;
   renderGroup: (group: SongGroup) => ReactNode;
   renderItem: (item: SongGroup['songs'][number], group: SongGroup, props?: { style: CSSProperties }) => ReactNode;
-  ListRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
-  GroupRowWrapper: ComponentType<PropsWithChildren<{ group: SongGroup }>>;
+  ListRowWrapper: ComponentType<PropsWithChildren<{ group?: SongGroup }>>;
+  GroupRowWrapper: ComponentType<PropsWithChildren<{ group?: SongGroup }>>;
   perRow: number;
   itemHeight: number;
   focusedSong: number;
