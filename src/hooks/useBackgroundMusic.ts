@@ -6,11 +6,12 @@ export default function useBackgroundMusic(play: boolean) {
   const [christmasMode] = useSettingValue(BackgroundThemeSetting);
   const [backgroundMusicSelection] = useSettingValue(BackgroundMusicSetting);
 
-  const music = christmasMode
-    ? christmasBackgroundMusic
-    : backgroundMusicSelection === 'Classic'
-      ? classicBackgroundMusic
-      : backgroundMusic;
+  const music =
+    christmasMode === 'christmas'
+      ? christmasBackgroundMusic
+      : backgroundMusicSelection === 'Classic'
+        ? classicBackgroundMusic
+        : backgroundMusic;
 
   useEffect(() => {
     if (play) {
