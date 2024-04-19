@@ -8,6 +8,7 @@ import { SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { FeatureFlags } from 'utils/featureFlags';
+import useFeatureFlag from 'utils/useFeatureFlag';
 
 export interface PlaylistEntry {
   name: string;
@@ -18,6 +19,7 @@ export interface PlaylistEntry {
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
   const songLanguages = useLanguageList(songs);
+  const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
 
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];
@@ -56,17 +58,19 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     const all: PlaylistEntry = { name: 'All', filters: {} };
     const playlists: Array<PlaylistEntry | null> = [
       selectionOnTop ? selection : all,
-      {
-        name: 'Eurovision',
-        display: (
-          <EurovisionDisplay>
-            Euro
-            <EurovisionLogo src={eurovisionIcon} alt="Eurovision logo" />
-            ision
-          </EurovisionDisplay>
-        ),
-        filters: { edition: 'esc' },
-      },
+      isEurovisionEnabled
+        ? {
+            name: 'Eurovision',
+            display: (
+              <EurovisionDisplay>
+                Euro
+                <EurovisionLogo src={eurovisionIcon} alt="Eurovision logo" />
+                ision
+              </EurovisionDisplay>
+            ),
+            filters: { edition: 'esc' },
+          }
+        : null,
       selectionOnTop ? all : selection,
       // {
       //   name: 'Christmas',

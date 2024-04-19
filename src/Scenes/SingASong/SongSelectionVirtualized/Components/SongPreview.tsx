@@ -15,6 +15,8 @@ import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview } from 'interfaces';
 import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { FeatureFlags } from 'utils/featureFlags';
+import useFeatureFlag from 'utils/useFeatureFlag';
 
 interface Props {
   songPreview: SongPreview;
@@ -70,7 +72,8 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  useSpecialSongTheme(songPreview, 'eurovision', isEurovisionSong);
+  const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
+  useSpecialSongTheme(songPreview, 'regular', isEurovisionEnabled ? isEurovisionSong : () => false);
 
   const expanded = keyboardControl;
 

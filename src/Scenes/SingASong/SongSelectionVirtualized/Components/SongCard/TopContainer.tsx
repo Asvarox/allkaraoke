@@ -9,6 +9,8 @@ import { isEurovisionSong } from 'Songs/utils/specialSongsThemeChecks';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
 import { ReactNode, useMemo } from 'react';
+import { FeatureFlags } from 'utils/featureFlags';
+import useFeatureFlag from 'utils/useFeatureFlag';
 
 export const TopContainer = (props: { song: SongPreview; isPopular: boolean; video?: ReactNode }) => {
   return (
@@ -34,7 +36,9 @@ export const SongCardStatsIndicator = ({
   focused: boolean;
 }) => {
   const isRecentlyUpdated = useMemo(() => filteringFunctions.recentlyUpdated([song]).length > 0, [song]);
-  const isESCSong = isEurovisionSong(song);
+  const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
+
+  const isESCSong = isEurovisionEnabled && isEurovisionSong(song);
 
   const stats = useSongStats(song);
   const lastPlayed = stats?.scores?.at(-1)?.date ?? false;
