@@ -59,7 +59,7 @@ const components: Components<{
   Footer: () => (
     <AddSongs>
       Missing a song? Try{' '}
-      <Link to="/convert/">
+      <Link to="convert/">
         <a>adding one</a>
       </Link>{' '}
       yourself!
@@ -158,7 +158,6 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
         previewLeft: song.offsetLeft,
       });
     } else if (!isLoading) {
-      debugger;
       console.warn('!!!!!!!!!!!! Song not found !!!!!!!!!!!!');
     }
   }, [focusedSong, focusedGroup, isLoading, width]);

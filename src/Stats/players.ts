@@ -19,7 +19,6 @@ events.songStarted.subscribe((_, singSetup) => {
 });
 
 events.songScoreUpdated.subscribe((_, __, newName) => {
-  debugger;
   let currentNames = JSON.parse(window.sessionStorage.getItem(PLAYER_NAMES_SESSION_STORAGE_KEY)!) || [];
 
   const newNamesSet = [...currentNames].concat(newName);
