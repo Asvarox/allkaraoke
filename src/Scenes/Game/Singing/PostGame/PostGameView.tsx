@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { GameTip } from 'Elements/GameTip';
 import { typography } from 'Elements/cssMixins';
 import ResultsView from 'Scenes/Game/Singing/PostGame/Views/Results';
-import { ChristmasModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { BackgroundThemeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import { DetailedScore, SingSetup, Song } from 'interfaces';
 import { useState } from 'react';
@@ -33,7 +33,7 @@ interface Props {
 }
 
 function PostGameView({ song, width, height, onClickSongSelection, players, highScores, singSetup }: Props) {
-  const [isChristmasMode] = useSettingValue(ChristmasModeSetting);
+  const [backgroundTheme] = useSettingValue(BackgroundThemeSetting);
   useBackgroundMusic(true);
   const [step, setStep] = useState<'results' | 'highscores'>('results');
 
@@ -53,7 +53,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
         )}
         <PostGameTip $active />
       </Container>
-      {isChristmasMode && (
+      {backgroundTheme === 'christmas' && (
         <ChristmasMusicCredit>
           Credit to <a href="https://www.FesliyanStudios.com">https://www.FesliyanStudios.com</a> for the background
           music.

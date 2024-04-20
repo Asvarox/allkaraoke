@@ -2,41 +2,73 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import eurovisionBg from './eurovisionbg.svg';
+
+export type backgroundTheme = 'regular' | 'christmas' | 'eurovision';
 
 export const BackgroundContext = createContext({
   visible: true,
+  theme: 'regular' as backgroundTheme,
   setVisibility: (visible: boolean): void => undefined,
-  setChristmas: (visible: boolean): void => undefined,
+  setTheme: (theme: backgroundTheme): void => undefined,
 });
 
-export const useBackground = (shouldBeVisible: boolean, christmas = false) => {
-  const { setVisibility, setChristmas } = useContext(BackgroundContext);
+export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme = 'regular') => {
+  const { setVisibility, setTheme } = useContext(BackgroundContext);
 
   useEffect(() => {
     setVisibility(shouldBeVisible);
   }, [shouldBeVisible, setVisibility]);
 
   useEffect(() => {
-    setChristmas(christmas);
-  }, [christmas, setChristmas]);
+    setTheme(theme);
+  }, [theme, setTheme]);
 };
 
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
-  const [christmas, setChristmas] = useState(false);
+  const [theme, setTheme] = useState<backgroundTheme>('regular');
 
   return (
-    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setChristmas }}>
-      {visible && <Background christmas={christmas} />}
+    <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
+      {visible && <Background bgtheme={theme}>{theme === 'eurovision' && <EurovisionTheme />}</Background>}
       {children}
     </BackgroundContext.Provider>
   );
 }
 
-export const BackgroundStatic = styled.div<{ christmas?: boolean }>`
+export const EurovisionTheme = () => (
+  <>
+    <EscBar disableAnimation={window.location.href.includes('/remote-mic')} />
+  </>
+);
+
+const EscBar = styled.div<{ disableAnimation: boolean }>`
+  transform: scale(1, 4);
+
+  background-image: url(${eurovisionBg});
+  background-size: 100% 50%;
+  height: 100%;
+  ${(props) =>
+    !props.disableAnimation &&
+    css`
+      animation: escGradient 46s linear infinite;
+      flex: 1;
+    `}
+
+  @keyframes escGradient {
+    0% {
+      background-position: 0% 800%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+`;
+export const BackgroundStatic = styled.div<{ bgtheme: backgroundTheme }>`
   background-color: white;
   ${(props) =>
-    props.christmas
+    props.bgtheme === 'christmas'
       ? css`
           background-image: linear-gradient(
             -45deg,
@@ -47,16 +79,20 @@ export const BackgroundStatic = styled.div<{ christmas?: boolean }>`
           );
           background-size: 400% 400%;
         `
-      : css`
-          background-image: linear-gradient(
-            -45deg,
-            ${colorSets.red.stroke},
-            ${colorSets.blue.text},
-            ${colorSets.blue.stroke},
-            ${colorSets.red.stroke}
-          );
-          background-size: 400% 400%;
-        `}
+      : props.bgtheme === 'eurovision'
+        ? css`
+            display: flex;
+          `
+        : css`
+            background-image: linear-gradient(
+              -45deg,
+              ${colorSets.red.stroke},
+              ${colorSets.blue.text},
+              ${colorSets.blue.stroke},
+              ${colorSets.red.stroke}
+            );
+            background-size: 400% 400%;
+          `}
 
   width: 100%;
   height: 100%;

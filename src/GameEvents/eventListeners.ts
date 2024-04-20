@@ -1,4 +1,4 @@
 import 'Camera/eventListeners';
-import 'GameEvents/christmasMode';
+import 'GameEvents/specialTheme';
 import 'RemoteMic/eventListeners';
 import 'Scenes/Game/eventListeners';

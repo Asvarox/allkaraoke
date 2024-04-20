@@ -4,7 +4,7 @@ import { useBackground } from 'Elements/LayoutWithBackground';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
 import { default as events, default as gameEvents } from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListener } from 'GameEvents/hooks';
-import { restoreDefaultColors, switchToChristmasColors } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { switchToTheme } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import LayoutGame from 'Scenes/LayoutGame';
 import BottomBar from 'Scenes/RemoteMic/BottomBar';
 import Microphone from 'Scenes/RemoteMic/Panels/Microphone';
@@ -22,15 +22,11 @@ export type PhoneTabs = 'microphone' | 'song-list' | 'settings';
 
 function RemoteMic() {
   const roomId = useQueryParam('room');
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
+  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
   useLayoutEffect(() => {
-    if (style === 'christmas') {
-      switchToChristmasColors();
-    } else {
-      restoreDefaultColors();
-    }
+    switchToTheme(style);
   }, [style]);
-  useBackground(true, style === 'christmas');
+  useBackground(true, style);
   const [activeTab, setActiveTab] = useState<PhoneTabs>('microphone');
 
   const [connectionStatus, connectionError] = useEventListener(events.karaokeConnectionStatusChange) ?? [

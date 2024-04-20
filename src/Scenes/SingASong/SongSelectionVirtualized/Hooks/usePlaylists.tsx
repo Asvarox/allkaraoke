@@ -1,10 +1,14 @@
+import styled from '@emotion/styled';
 import { ClosableTooltip } from 'Elements/Tooltip';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
+import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import eurovisionIcon from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/eurovision-icon.svg';
 import { AppliedFilters } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 import { SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { FeatureFlags } from 'utils/featureFlags';
+import useFeatureFlag from 'utils/useFeatureFlag';
 
 export interface PlaylistEntry {
   name: string;
@@ -15,6 +19,7 @@ export interface PlaylistEntry {
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
   const songLanguages = useLanguageList(songs);
+  const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
 
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];
@@ -53,6 +58,19 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     const all: PlaylistEntry = { name: 'All', filters: {} };
     const playlists: Array<PlaylistEntry | null> = [
       selectionOnTop ? selection : all,
+      isEurovisionEnabled
+        ? {
+            name: 'Eurovision',
+            display: (
+              <EurovisionDisplay>
+                Euro
+                <EurovisionLogo src={eurovisionIcon} alt="Eurovision logo" />
+                ision
+              </EurovisionDisplay>
+            ),
+            filters: { edition: 'esc' },
+          }
+        : null,
       selectionOnTop ? all : selection,
       // {
       //   name: 'Christmas',
@@ -77,7 +95,6 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
           }
         : null,
       { name: 'Oldies', filters: { yearBefore: 1995 } },
-      { name: 'Modern', filters: { yearAfter: 1995 } },
       { name: 'Duets', filters: { duet: true } },
       {
         name: 'New',
@@ -88,3 +105,57 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
   }, [songLanguages, isLoading, recommended]);
 };
+
+const EurovisionDisplay = styled.span`
+  background-image: linear-gradient(
+    90deg,
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionViolet.text},
+    ${colorSets.eurovisionPink.text},
+    ${colorSets.eurovisionBlue.text},
+    ${colorSets.eurovisionPink.text}
+  );
+
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  align-items: center;
+    animation: playlist-gradient 15s linear infinite;
+    
+
+    @keyframes playlist-gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 400% 400%;
+        }
+`;
+
+const EurovisionLogo = styled.img`
+  width: 1em;
+  height: 1em;
+  animation: heartbeat 1.5s infinite;
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(0.85);
+    }
+    10% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(0.85);
+    }
+    30% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.85);
+    }
+    100% {
+      transform: scale(0.85);
+    }
+  }
+`;

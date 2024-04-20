@@ -41,7 +41,7 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     });
   },
   excludeLanguages: (songList, languages: string[] = [], appliedFilters: AppliedFilters) => {
-    if (languages.length === 0 || isSearchApplied(appliedFilters)) return songList;
+    if (languages.length === 0 || isSearchApplied(appliedFilters) || appliedFilters.edition === 'esc') return songList;
 
     return songList.filter((song) => {
       return !song.language.every((songLang) => languages.includes(songLang!));
@@ -70,7 +70,9 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   edition: (songList, edition: string) => {
     const cleanEdition = clearString(edition);
 
-    return cleanEdition.length ? songList.filter((song) => clearString(song.edition ?? '') === edition) : songList;
+    return cleanEdition.length
+      ? songList.filter((song) => clearString(song.edition ?? '').includes(edition))
+      : songList;
   },
   recentlyUpdated: (songList) => {
     const after = dayjs().subtract(31, 'days');

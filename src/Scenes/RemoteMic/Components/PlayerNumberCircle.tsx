@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function PlayerNumberCircle({ number, ...restProps }: Props) {
-  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['normal'];
+  const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
   const forceUpdate = useUpdate();
   useEffect(() => {
     forceUpdate();
