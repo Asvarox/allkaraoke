@@ -3,6 +3,7 @@ import { CacheProvider } from '@emotion/react';
 import 'GameEvents/eventListeners';
 import 'Stats';
 import 'utils/array-at-polyfill';
+import 'utils/array-findLastIndex-polyfill';
 import 'utils/exposeSingletons';
 import 'utils/wdyr';
 
