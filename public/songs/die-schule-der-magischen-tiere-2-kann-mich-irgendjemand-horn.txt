@@ -1,0 +1,401 @@
+#ARTIST:Die Schule der magischen Tiere 2
+#TITLE:Kann mich irgendjemand hör'n
+#CREATOR:Knuddel
+#BPM:389,81
+#YEAR:2017
+#VIDEO:v=USwjj7s6QWA
+#GENRE:Ballad
+#LANGUAGE:German
+#GAP:14535,512583053282
+#ALLKARAOKE_ID:die-schule-der-magischen-tiere-2-kann-mich-irgendjemand-horn
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:24.487Z
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_VOLUME:0,86
+#MP3:Die Schule der magischen Tiere 2 - Kann mich irgendjemand hör'n.mp3
+#COVER:Die Schule der magischen Tiere 2 - Kann mich irgendjemand hör'n [CO].jpg
+#BACKGROUND:Die Schule der magischen Tiere 2 - Kann mich irgendjemand hör'n [BG].jpg
+: 26 3 3 Es 
+: 31 4 3 fühlt 
+: 37 8 5 sich 
+: 48 9 7 an 
+: 87 4 1 in 
+: 93 8 8 mein
+: 104 3 8 em 
+: 109 7 8 ar
+: 119 4 7 men 
+: 128 18 5 Herz
+- 146
+: 171 3 5 Als 
+: 176 8 8 trifft 
+: 187 3 8 auch 
+: 192 8 8 mich 
+: 202 6 5 ihr 
+: 211 17 3 Schwert
+- 228
+: 248 3 3 Wenn 
+: 253 3 3 ich 
+: 259 7 5 ih
+: 268 3 7 re 
+: 273 9 7 Klin
+: 285 6 3 gen 
+: 296 10 8 hö
+: 309 4 7 re
+- 313 329
+- 329
+: 355 3 3 Als 
+: 360 3 3 ob 
+: 365 6 5 der 
+: 374 14 7 Kampf 
+: 415 4 8 nich′ 
+: 422 7 10 vor 
+: 432 3 8 dem 
+: 437 8 8 To
+: 448 3 7 re 
+: 455 18 5 herrscht
+- 473
+: 499 3 9 Als 
+: 504 6 10 ob 
+: 512 6 8 er 
+: 520 6 8 in 
+: 528 8 6 mir 
+: 540 12 3 wär
+- 552 556
+- 556
+: 582 3 3 Und 
+: 587 8 3 droht 
+: 597 3 5 mich 
+: 602 12 5 zu 
+: 618 6 4 zer
+: 627 7 8 stö
+: 637 6 7 ren
+- 643
+: 654 2 2 Ich 
+: 658 8 3 würd 
+: 669 7 8 so 
+: 683 9 8 ger
+: 695 4 7 ne 
+: 703 7 5 tau
+: 714 8 2 schen
+- 722
+: 739 3 3 Di
+: 744 4 3 a
+: 752 7 5 dem 
+: 765 11 5 ge
+: 779 4 3 gen 
+: 786 15 3 Helm
+- 801
+: 819 2 3 Ich 
+: 823 8 3 will 
+: 834 11 8 kämp
+: 848 4 8 fen 
+: 862 4 7 da 
+: 869 11 5 drau
+: 883 5 2 ßen
+- 888
+: 904 5 3 An
+: 913 9 5 statt 
+: 928 7 5 mit 
+: 942 4 3 mir 
+: 949 17 3 selbst
+- 966 989
+- 989
+: 1015 8 3 Whoa-
+: 1027 8 5 oh-
+: 1038 8 7 oh, 
+* 1067 4 3 kann 
+* 1073 4 3 mich 
+* 1079 6 9 ir
+* 1089 5 8 gend
+* 1097 5 8 je
+* 1105 4 7 mand 
+* 1113 14 5 hör'n
+- 1127
+: 1149 2 5 Durch 
+: 1153 3 5 das 
+: 1158 8 9 Cha
+: 1169 7 8 os 
+: 1179 4 8 und 
+: 1186 6 7 den 
+: 1195 10 3 Lärm?
+- 1205
+: 1227 3 3 Ver
+: 1231 3 3 dammt, 
+: 1236 3 3 ich 
+: 1242 7 3 fühl 
+: 1251 5 3 mich 
+: 1259 10 5 so 
+: 1273 8 3 al
+: 1284 8 8 lei
+: 1296 8 7 ne
+- 1304 1315
+- 1315
+: 1341 8 3 Whoa-
+: 1353 8 5 oh-
+: 1364 8 7 oh, 
+* 1395 3 3 kann 
+* 1400 4 3 mich 
+* 1406 6 9 ir
+* 1416 5 8 gend
+* 1425 6 8 je
+* 1434 5 7 mand 
+* 1442 13 5 seh′n
+- 1455
+: 1479 2 7 Wie 
+: 1483 4 8 ich 
+: 1490 8 9 hier 
+: 1500 2 9 am 
+: 1504 9 8 Fens
+: 1516 4 7 ter 
+: 1523 14 3 steh?
+- 1537
+: 1559 2 3 Mein 
+: 1563 3 3 Herz 
+: 1568 10 3 schwer 
+: 1580 3 5 wie 
+: 1585 14 5 tau
+: 1602 4 3 send 
+: 1609 9 8 Stei
+: 1621 4 7 ne
+- 1625 1648
+- 1648
+: 1674 8 3 Um 
+: 1684 7 3 mich 
+: 1694 8 8 rum 
+: 1705 8 9 wird's 
+: 1716 3 9 im
+: 1721 3 7 mer 
+: 1728 12 7 dunk
+: 1743 5 5 ler
+- 1748
+: 1762 3 3 Doch 
+: 1766 2 3 ich 
+: 1769 4 3 kann 
+: 1775 9 8 nichts 
+: 1786 9 10 da
+: 1798 4 11 ge
+: 1804 2 9 gen 
+: 1810 14 7 tun
+- 1824
+: 1846 4 3 Mei
+: 1852 3 3 ne 
+: 1858 9 8 Welt 
+: 1869 9 10 geht 
+: 1880 4 10 lang
+: 1886 3 7 sam 
+: 1893 10 7 un
+: 1906 6 5 ter
+- 1912
+: 1927 2 3 Und 
+: 1930 2 3 ich 
+: 1933 3 3 schau 
+: 1939 11 7 hilf
+: 1954 4 8 los 
+: 1961 5 8 da
+: 1968 2 7 bei 
+: 1974 16 8 zu
+- 1990
+: 1999 8 3 Whoa-
+: 2011 8 5 oh-
+: 2022 8 7 oh, 
+* 2050 3 3 kann 
+* 2055 4 3 mich 
+* 2062 8 4 ir
+* 2073 5 5 gend
+* 2082 5 5 je
+* 2090 3 3 mand 
+* 2097 8 3 hör'n?
+- 2105 2133
+- 2133
+: 2159 4 3 Ich 
+: 2165 6 3 bin 
+: 2174 4 5 ge
+: 2181 11 7 fang′n 
+: 2224 2 1 in 
+: 2229 5 9 ein
+: 2237 3 8 em 
+: 2243 8 8 Kleid 
+: 2255 5 7 aus 
+: 2263 14 5 Samt
+- 2277 2279
+- 2279
+: 2305 2 5 In 
+: 2309 9 9 Gold 
+: 2320 2 8 und 
+: 2324 11 8 Sil
+: 2338 5 7 ber
+: 2347 14 3 glanz
+- 2361
+: 2381 3 3 Währ
+: 2386 2 3 end 
+: 2391 7 5 wir 
+: 2401 3 7 die 
+: 2406 13 7 Burg 
+: 2423 6 3 ver
+: 2432 6 8 lie
+: 2441 4 7 ren
+- 2445 2462
+- 2462
+: 2488 2 3 Ihr 
+: 2492 6 3 sagt, 
+: 2502 3 3 ich 
+: 2508 10 7 kann 
+: 2550 3 3 nicht 
+: 2556 7 9 stark 
+: 2565 6 8 sein 
+: 2575 3 8 wie 
+: 2581 7 7 ein 
+: 2590 8 5 Mann
+- 2598 2605
+- 2605
+: 2631 3 7 Doch 
+: 2636 8 9 glaubt 
+: 2647 8 8 mir, 
+: 2657 6 8 ir
+: 2666 4 7 gend
+: 2673 14 3 wann
+- 2687
+: 2710 3 3 Werd 
+: 2715 2 3 ich 
+: 2720 7 5 al
+: 2729 2 5 le 
+: 2734 13 7 hier 
+: 2751 4 2 be
+: 2758 8 8 sie
+: 2769 5 7 gen
+- 2774
+: 2787 3 3 Ich 
+: 2792 6 3 würd 
+: 2801 9 8 so 
+: 2815 10 8 ger
+: 2828 3 7 ne 
+: 2836 9 5 tau
+: 2848 5 2 schen
+- 2853
+: 2873 3 3 Di
+: 2879 3 3 a
+: 2885 6 5 dem 
+: 2898 12 5 ge
+: 2913 3 2 gen 
+: 2919 9 3 Helm
+- 2928
+: 2951 3 3 Ich 
+: 2957 5 3 will 
+: 2966 10 8 kämp
+: 2979 10 8 fen 
+: 2993 5 7 da 
+: 3001 8 5 drau
+: 3012 4 2 ßen
+- 3016
+: 3042 3 2 An
+: 3048 6 5 statt 
+: 3062 6 5 mit 
+: 3075 8 3 mir 
+: 3087 14 3 selbst
+- 3101 3124
+- 3124
+: 3150 8 3 Whoa-
+: 3162 8 5 oh-
+: 3173 8 7 oh, 
+: 3202 3 1 kann 
+: 3207 3 1 mich 
+: 3213 6 9 ir
+: 3222 5 8 gend
+: 3230 7 8 je
+: 3240 6 7 mand 
+: 3249 12 5 hör′n
+- 3261
+: 3283 3 5 Durch 
+: 3288 3 5 das 
+: 3294 9 9 Cha
+: 3307 3 8 os 
+: 3312 6 8 und 
+: 3320 8 7 den 
+: 3331 9 3 Lärm?
+- 3340
+: 3361 3 3 Ver
+: 3365 3 3 dammt, 
+: 3370 3 3 ich 
+: 3375 8 3 fühl 
+: 3385 4 3 mich 
+: 3391 12 5 so 
+: 3407 8 3 al
+: 3419 8 8 lei
+: 3430 8 7 ne
+- 3438 3449
+- 3449
+: 3475 8 3 Whoa-
+: 3487 8 5 oh-
+: 3498 8 7 oh, 
+: 3529 3 1 kann 
+: 3534 3 1 mich 
+: 3541 5 9 ir
+: 3550 5 8 gend
+: 3558 5 8 je
+: 3567 5 7 mand 
+: 3575 13 5 seh'n
+- 3588
+: 3613 2 7 Wie 
+: 3617 3 8 ich 
+: 3623 8 9 hier 
+: 3633 2 8 am 
+: 3637 9 8 Fens
+: 3649 4 7 ter 
+: 3657 13 3 steh?
+- 3670
+: 3693 3 3 Mein 
+: 3697 3 3 Herz 
+: 3702 9 3 schwer 
+: 3713 4 5 wie 
+: 3720 12 5 tau
+: 3736 4 3 send 
+: 3743 8 8 Stei
+: 3755 6 7 ne
+- 3761 3780
+- 3780
+: 3806 9 3 Um 
+: 3817 10 3 mich 
+: 3830 6 9 rum 
+: 3838 10 10 wird′s 
+: 3850 3 10 im
+: 3855 3 7 mer 
+: 3862 13 7 dunk
+: 3878 5 5 ler
+- 3883
+: 3895 3 3 Doch 
+: 3899 3 3 ich 
+: 3904 4 3 kann 
+: 3911 6 8 nichts 
+: 3920 8 10 da
+* 3931 5 12 ge
+: 3938 3 8 gen 
+: 3944 11 7 tun
+- 3955
+: 3980 5 3 Mei
+: 3987 2 3 ne 
+: 3992 7 9 Welt 
+: 4003 9 10 geht 
+: 4014 5 10 lang
+: 4022 3 7 sam 
+: 4028 10 6 un
+: 4041 3 5 ter
+- 4044
+: 4059 2 3 Und 
+: 4064 2 3 ich 
+: 4068 3 3 schau 
+: 4074 11 7 hilf
+: 4088 4 8 los 
+: 4094 6 8 da
+: 4103 3 7 bei 
+: 4109 15 8 zu
+- 4124
+: 4130 8 3 Whoa-
+: 4142 8 5 oh-
+: 4153 8 7 oh, 
+* 4186 3 7 kann 
+* 4191 3 7 mich 
+* 4197 7 5 ir
+* 4207 4 5 gend
+* 4214 5 5 je
+* 4222 5 3 mand 
+* 4231 8 3 hör'n?
+E

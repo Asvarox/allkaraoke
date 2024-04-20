@@ -1,0 +1,287 @@
+#ARTIST:3-nen E-Gumi Utatan
+#TITLE:Seishun Satsubatsuron
+#CREATOR:subkei
+#BPM:292,02
+#YEAR:2015
+#VIDEO:v=Mj9lxF1feyc
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:3278,039449352784
+#ALLKARAOKE_ID:3-nen-e-gumi-utatan-seishun-satsubatsuron
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:23.812Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:146
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=3-nen%20E-Gumi%20Utatan&cancion=Seishun%20Satsubatsuron%20(TV)
+#ALLKARAOKE_VOLUME:0,86
+#P1:Seishun Satsubatsuron
+#MP3:3-nen E-Gumi Utatan - Seishun Satsubatsuron (TV).mp3
+#COVER:3-nen E-Gumi Utatan - Seishun Satsubatsuron (TV).jpg
+#MEDLEYSTARTBEAT:1104
+#MEDLEYENDBEAT:1483
+F 19 12 11 Sei
+F 35 12 12 shun 
+F 51 1 13 sa
+F 55 1 13 tsu
+F 57 1 13 ba
+F 59 1 13 tsu
+F 61 23 13 ron!
+- 84 188
+- 188
+: 207 2 19 Ku
+: 211 3 24 chi 
+: 215 3 19 ni 
+: 219 2 17 da
+: 223 2 19 su 
+: 227 4 17 no 
+: 233 3 16 wa
+- 236
+: 239 2 4 Ji
+: 243 3 5 kko
+: 247 2 4 u 
+: 251 2 5 su
+: 255 2 7 ru 
+: 259 4 4 to
+: 265 3 0 ki
+- 268
+: 271 1 2 So
+: 273 1 4 re 
+: 275 5 5 ga 
+* 285 1 5 ka
+* 289 1 5 kko
+* 291 2 7 i
+* 294 3 5 i 
+* 299 2 4 ko
+: 303 1 4 to 
+: 307 4 0 shi
+: 315 2 0 tte
+: 319 2 0 ru 
+: 323 4 -2 sa
+- 327 356
+- 356
+: 375 2 12 O
+: 379 2 12 mo
+: 383 3 19 i 
+: 387 5 19 wa 
+: 395 3 17 ma
+: 399 1 15 yo
+: 401 3 17 u
+- 404
+: 407 2 5 Ma
+: 411 2 12 yo
+: 415 3 5 e
+: 419 5 5 do 
+: 427 1 4 su
+: 430 1 2 su
+: 432 5 4 mu
+- 437
+: 451 2 2 Mi
+: 454 1 2 gi
+: 456 1 2 te 
+: 458 3 2 to 
+* 463 2 4 mi
+* 466 1 4 gi
+* 468 1 4 a
+* 471 3 4 shi 
+: 475 3 5 i
+: 479 2 7 ~
+: 483 11 9 ssho 
+: 495 2 9 ni 
+: 499 4 11 de 
+: 506 3 7 so
+: 511 2 2 u 
+: 515 31 9 da
+- 546 560
+- 560
+: 579 7 21 Nan 
+: 591 2 14 nan
+: 595 7 14 da 
+: 607 1 21 i
+: 609 1 21 ra
+: 611 3 21 i
+: 615 3 19 ra 
+: 619 2 17 no 
+: 623 2 16 ha
+: 627 2 17 do
+: 631 1 19 u 
+: 633 5 19 wa
+- 638
+: 643 7 7 Bo
+: 655 1 0 ku
+: 657 1 0 ra 
+* 659 5 0 no 
+: 671 2 7 son
+: 675 3 7 za
+: 679 3 5 i 
+* 683 1 4 no 
+* 687 2 2 sho
+* 691 2 4 u
+* 695 1 5 me
+* 697 5 5 i?
+- 702
+: 707 4 17 Tsu
+: 713 3 10 ki 
+: 719 2 17 wo 
+: 723 3 19 mi
+: 729 3 12 a
+: 735 2 19 ge 
+: 739 3 21 ta
+: 745 3 14 ka
+: 750 3 21 ma
+: 755 13 22 ru
+- 768
+: 775 4 24 Saa 
+: 783 2 24 saa! 
+: 787 3 24 satsu 
+: 793 1 24 satsu 
+* 795 2 24 sa
+* 799 3 24 ttou 
+: 807 38 26 start!
+- 845 848
+- 848
+: 867 2 3 Ya
+: 871 2 7 ri
+: 875 2 10 ki
+: 879 2 7 tte
+: 883 2 8 na
+: 887 2 7 i 
+: 891 2 3 ka
+: 895 2 -2 ra 
+: 899 2 3 ya
+: 903 2 7 ri
+: 907 2 8 ki
+: 911 1 7 re
+: 913 8 10 nai
+- 921
+: 931 2 3 Ya
+: 935 2 7 ri
+: 939 2 10 ki
+: 943 2 7 tte
+: 947 2 8 na
+: 951 2 7 i 
+: 955 2 3 ka
+: 959 2 0 ra 
+: 963 2 3 ya
+: 967 2 3 ri
+: 971 2 5 ki
+: 975 2 3 re
+: 979 5 3 nai
+- 984
+: 995 2 3 Ge
+: 999 2 7 n
+: 1003 2 8 jo
+: 1007 2 7 u 
+: 1011 2 8 da
+: 1015 1 7 ha 
+: 1018 5 3 wo 
+: 1027 2 3 chi
+: 1031 2 8 i
+: 1035 2 10 sa
+: 1039 2 8 na 
+: 1043 2 11 ko
+: 1047 1 10 e 
+: 1049 6 8 de
+- 1055
+: 1063 2 10 Ya
+: 1067 2 10 ga
+: 1071 2 10 te 
+: 1075 3 10 ze
+: 1083 3 10 kkyou 
+* 1091 2 10 shi
+* 1095 2 10 ta
+* 1099 2 10 ku 
+: 1103 3 10 na
+: 1107 3 10 ru 
+: 1115 5 11 ah!
+- 1120
+: 1123 2 4 Ya
+: 1127 2 8 ri
+: 1131 2 9 ki
+: 1135 2 8 tte
+: 1139 2 9 na
+: 1143 2 8 i 
+: 1147 2 4 ka
+: 1151 2 -1 ra 
+: 1155 2 4 ya
+: 1159 2 8 ri
+: 1163 2 9 ki
+: 1167 1 8 re
+: 1169 8 11 nai
+- 1177
+: 1187 2 4 Ya
+: 1191 2 8 ri
+: 1195 2 9 ki
+: 1199 2 8 tte
+: 1203 2 9 na
+: 1207 2 8 i 
+: 1211 2 4 ka
+: 1215 2 1 ra 
+: 1219 2 4 ya
+: 1223 2 4 ri
+: 1227 2 4 ki
+: 1231 2 4 re
+: 1235 6 4 nai
+- 1241
+: 1251 2 4 Dou
+: 1255 3 4 se, 
+* 1263 2 8 to 
+* 1267 2 9 iu 
+* 1271 1 8 no 
+* 1273 4 4 wa 
+: 1283 2 4 ka
+: 1287 2 8 n
+: 1291 3 11 ta
+: 1295 2 9 n 
+: 1299 2 12 da
+: 1303 1 11 ke
+: 1305 7 9 do
+- 1312
+: 1319 2 11 I
+: 1323 2 11 ma 
+: 1327 2 11 wa 
+: 1331 2 11 a
+: 1335 3 11 ga
+: 1339 2 11 i
+: 1343 3 11 te 
+: 1347 2 11 mi
+: 1351 3 11 ta
+: 1355 5 11 in
+: 1363 10 16 da
+- 1373
+: 1383 2 11 Ki
+: 1387 2 11 mi 
+: 1391 2 11 to 
+: 1395 2 11 ha
+: 1399 2 11 ji
+: 1403 2 11 ke
+: 1407 2 11 te 
+: 1411 1 11 mi
+: 1413 1 11 ta
+: 1415 2 11 in
+: 1419 12 16 da
+- 1431
+: 1443 4 16 Sa
+: 1449 2 14 re
+: 1454 2 11 do 
+* 1459 2 9 sei
+* 1465 2 10 shun 
+: 1469 4 9 wa 
+: 1475 2 7 mi
+: 1480 3 4 rai 
+: 1486 3 2 he 
+: 1491 11 4 go!
+- 1502 1540
+- 1540
+F 1559 2 16 Saa 
+F 1563 2 16 saa 
+F 1567 5 16 saa!
+- 1572 1600
+- 1600
+F 1619 2 16 Sei
+F 1623 2 16 shun 
+F 1627 1 16 sa
+F 1629 1 16 tsu
+F 1631 1 16 ba
+F 1633 1 16 tsu
+F 1635 3 16 ron!
+E

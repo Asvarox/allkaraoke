@@ -1,0 +1,273 @@
+#ARTIST:System of a Down
+#TITLE:Innervision
+#CREATOR:Phoskito
+#BPM:319,76
+#YEAR:2002
+#VIDEO:v=NklhTCw1TiA
+#GENRE:Heavy Metal
+#LANGUAGE:English
+#GAP:11984,886164623467
+#ALLKARAOKE_ID:system-of-a-down-innervision
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.390Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1066
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3112
+#ALLKARAOKE_VOLUME:0,93
+#P1:Innervision
+#MP3:System of a Down - Innervision.mp3
+: 21 4 5 I 
+: 27 8 3 have 
+: 37 3 1 a 
+: 43 3 3 h
+: 48 3 1 o
+: 53 9 0 me, 
+- 62
+: 65 3 5 Long
+: 70 8 3 ing 
+: 80 3 1 to 
+: 86 3 3 r
+: 91 2 1 o
+: 96 9 0 am 
+- 105
+: 107 3 5 I 
+: 112 6 7 have 
+: 122 2 3 to 
+: 128 4 7 find 
+: 134 7 5 you, 
+- 141
+: 149 2 5 I 
+: 155 8 7 have 
+: 165 2 3 to 
+: 171 2 7 meet 
+: 176 7 5 you 
+- 183
+* 191 5 17 Sanc
+* 197 5 15 tum 
+* 206 4 13 your 
+* 213 4 15 f
+* 218 4 13 a
+* 224 8 12 ce, 
+- 232
+* 235 3 17 Slow
+* 240 6 15 ing 
+* 249 4 13 your 
+* 256 3 15 p
+* 261 3 13 a
+* 266 7 12 ce 
+- 273
+: 277 3 5 I 
+: 282 7 7 need 
+: 293 4 3 your 
+: 299 3 7 gui
+: 304 9 5 dance, 
+- 313
+: 320 3 5 I 
+: 325 7 7 need 
+: 335 3 3 to 
+: 341 3 7 seek 
+: 346 2 5 my 
+- 348
+: 352 17 5 In
+: 372 18 5 ner
+: 394 18 5 vi
+: 415 18 5 sio
+: 437 70 7 n 
+- 507
+* 523 18 13 In
+* 544 17 12 ner
+* 566 18 13 vi
+* 587 17 13 sio
+* 608 82 12 n 
+- 690
+: 704 3 5 My 
+: 709 5 3 pu
+: 719 3 1 pils 
+: 725 5 3 d
+: 731 4 1 a
+: 736 7 0 nce, 
+- 743
+: 747 3 5 Lost 
+: 752 6 3 in 
+: 762 2 1 a 
+: 767 3 3 tr
+: 772 2 1 a
+: 778 7 0 nce 
+- 785
+: 790 3 5 Your 
+: 795 7 7 sac
+: 805 3 3 red 
+: 810 4 7 sil
+: 816 9 5 ence, 
+- 825
+: 832 3 5 Los
+: 837 6 7 ing 
+: 847 4 3 all 
+: 853 4 7 vio
+: 859 8 5 lence 
+- 867
+: 874 3 5 Stars 
+: 879 6 3 in 
+: 888 3 1 their 
+: 895 4 3 pl
+: 901 3 1 a
+: 906 7 0 ce, 
+- 913
+: 917 4 5 Mir
+: 923 7 3 ror 
+: 932 3 1 your 
+: 938 4 3 f
+: 944 4 1 a
+: 949 8 0 ce 
+- 957
+: 960 3 5 I 
+: 965 7 7 need 
+: 975 3 3 to 
+: 981 3 7 find 
+: 986 8 5 you, 
+- 994
+: 1002 3 5 I 
+: 1007 7 7 need 
+: 1017 3 3 to 
+: 1023 3 7 seek 
+: 1028 2 5 my 
+- 1030
+: 1034 17 5 In
+: 1055 12 5 ner
+: 1076 16 5 vi
+: 1098 15 5 sio
+: 1118 79 7 n 
+- 1197
+: 1205 16 13 In
+: 1224 18 12 ner
+: 1247 17 13 vi
+: 1268 18 13 sio
+: 1288 76 12 n 
+- 1364
+: 1374 16 13 In
+: 1395 18 12 ner
+: 1417 17 13 vi
+: 1438 18 13 sio
+: 1458 78 12 n 
+- 1536
+: 1540 1 1 It’s 
+: 1543 1 5 ne
+: 1545 2 5 ver 
+: 1548 2 5 too 
+: 1551 2 5 late 
+: 1555 2 5 to 
+: 1558 1 5 re
+: 1560 1 5 in
+: 1562 1 5 vent 
+: 1567 1 5 the 
+: 1569 3 5 bi
+: 1573 2 5 cy
+: 1576 2 5 cle 
+- 1578
+: 1582 3 5 Small 
+: 1586 3 5 breaks 
+: 1590 3 5 for 
+: 1596 1 5 the 
+: 1599 2 5 new 
+: 1604 2 5 Giving 
+: 1607 1 5 you 
+: 1609 3 8 life, 
+- 1612
+: 1615 3 8 Giv
+: 1619 2 8 ing 
+: 1622 2 7 you 
+: 1628 32 7 fo
+: 1664 3 5 ~
+: 1669 29 7 rce 
+- 1698
+: 1710 1 4 It’s 
+: 1712 1 8 ne
+: 1714 1 8 ver 
+: 1716 2 8 too 
+: 1719 1 8 late 
+: 1724 1 8 to 
+: 1726 1 8 re
+: 1728 1 8 in
+: 1731 2 8 vent 
+: 1735 1 8 the 
+: 1738 3 8 bi
+: 1742 2 8 cy
+: 1746 2 8 cle 
+- 1748
+: 1753 2 8 Small 
+: 1756 3 8 breaks 
+: 1761 3 8 for 
+: 1767 1 8 the 
+: 1770 2 8 new 
+: 1775 2 8 Giving 
+: 1778 1 8 you 
+: 1780 2 8 life, 
+- 1782
+: 1785 3 8 Giving 
+: 1789 2 8 you 
+: 1792 2 7 fo
+: 1798 32 7 ~
+: 1834 3 5 rce
+: 1839 29 4 ~ 
+- 1868
+* 1883 40 20 Vi
+* 1926 36 20 sio
+* 1965 51 19 n! 
+- 2016 2376
+- 2376
+: 2397 3 5 There’s 
+: 2401 3 8 on
+: 2407 3 8 ly 
+: 2412 4 8 one 
+: 2419 6 5 true 
+: 2428 6 8 path 
+: 2438 2 5 in 
+: 2444 7 8 li
+: 2454 11 5 fe 
+- 2465
+: 2483 2 5 The 
+: 2488 5 7 road 
+: 2496 4 7 that 
+: 2502 2 7 leads 
+: 2508 1 8 to 
+* 2511 4 10 a
+: 2518 2 7 ll, 
+: 2525 2 7 leads 
+: 2531 2 7 to 
+: 2536 12 7 one 
+- 2548 2549
+- 2549
+: 2570 3 5 There’s 
+: 2575 3 8 on
+: 2581 2 8 ly 
+: 2586 4 8 one 
+* 2593 6 12 true 
+: 2602 7 8 path 
+: 2612 2 5 in 
+: 2618 7 8 li
+: 2627 11 5 fe 
+- 2638
+: 2658 2 5 The 
+: 2662 5 7 road 
+: 2668 2 7 that 
+: 2673 3 7 leads 
+: 2679 1 8 to 
+* 2682 56 10 one. 
+- 2738
+: 2754 17 13 In
+: 2775 19 12 ner
+: 2797 19 13 vi
+: 2820 20 13 sio
+: 2842 85 12 n 
+- 2927
+: 2937 3 5 Your 
+: 2943 8 7 sa
+: 2954 2 3 cred 
+: 2959 3 7 si
+: 2964 9 5 lence, 
+: 2980 5 5 lo
+: 2986 7 7 sing 
+: 2996 3 3 all 
+: 3001 3 7 vio
+: 3007 7 5 lence 
+E

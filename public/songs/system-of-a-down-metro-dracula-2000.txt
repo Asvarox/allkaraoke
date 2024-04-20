@@ -1,0 +1,280 @@
+#ARTIST:System of a Down
+#TITLE:Metro (Dracula 2000)
+#CREATOR:FaKK
+#BPM:368
+#YEAR:2001
+#VIDEO:v=usuqPQ7luEo
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:38980,97826086957
+#ALLKARAOKE_ID:system-of-a-down-metro-dracula-2000
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.392Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=44
+#ALLKARAOKE_REALBPM:189
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3198
+#ALLKARAOKE_VOLUME:0,91
+#P1:Metro
+#MP3:System of a Down - Metro (Dracula 2000).mp3
+: 25 15 -5 I’m 
+: 41 7 -7 a
+: 49 7 -7 lo
+* 57 20 -5 one 
+- 77
+: 81 3 -7 Sit
+: 85 3 -5 ting 
+: 89 3 -5 with 
+: 93 3 -5 my 
+: 97 5 -4 bro
+: 103 7 -5 ken 
+* 111 16 -5 glass 
+- 127 132
+- 132
+: 157 7 -7 My 
+: 165 13 -5 four 
+* 179 24 0 walls 
+- 203
+: 205 3 -4 Fo
+: 209 2 -4 low 
+: 212 7 -4 me 
+: 220 4 -7 through 
+* 225 10 -4 my 
+* 237 15 -5 past 
+- 252 274
+- 274
+: 299 3 -5 I 
+: 303 3 -7 was 
+: 307 3 -5 on 
+: 311 3 -7 a 
+: 315 3 -5 pa
+: 319 6 -7 ris 
+* 326 14 -5 train 
+- 340
+: 363 3 0 I 
+: 367 7 -2 e
+: 375 7 0 merged 
+: 383 7 -2 in 
+: 391 5 0 lon
+: 397 5 -2 don 
+* 403 12 -5 rain 
+- 415
+: 417 7 -5 And 
+: 425 6 -5 you 
+: 432 4 -5 wai
+: 437 3 -7 ting 
+: 441 11 -5 there 
+- 452
+: 455 3 -5 Swim
+: 459 3 -5 ming 
+: 463 6 -5 through 
+: 470 3 -4 ap
+: 474 3 -4 pol
+: 478 3 -4 o
+: 482 7 -4 gie
+* 490 15 -5 es 
+- 505 528
+- 528
+: 553 1 7 I 
+: 555 3 7 re
+: 559 3 7 mem
+: 563 7 7 ber 
+: 571 6 7 sear
+: 578 5 7 ching 
+: 584 5 7 for 
+: 590 6 7 the 
+: 597 3 7 per
+: 601 5 7 fect 
+: 607 12 7 words 
+- 619 631
+- 631
+: 656 1 5 I 
+: 658 3 5 was 
+: 662 3 5 hop
+: 666 5 5 ing 
+: 672 5 7 you 
+: 678 6 7 might 
+: 685 7 3 change 
+: 693 6 2 your 
+* 700 16 0 mind 
+- 716 728
+- 728
+: 753 2 7 I 
+: 756 2 7 re
+: 759 3 7 mem
+: 763 5 7 ber 
+: 769 2 7 a 
+: 772 5 7 sol
+: 778 6 7 dier 
+: 785 5 7 stan
+: 791 7 7 ding 
+: 799 5 7 next 
+: 805 3 7 to 
+* 809 20 7 me 
+- 829
+: 849 7 5 Ri
+: 857 5 5 ding 
+: 863 6 5 on 
+: 870 5 5 the 
+: 876 7 7 met
+: 884 10 3 ro
+: 895 5 2 o
+* 901 52 0 o 
+- 953 1164
+- 1164
+: 1189 7 3 I 
+: 1197 7 3 was 
+: 1205 7 3 smi
+: 1213 7 0 ling 
+: 1221 7 0 as 
+: 1229 7 0 you 
+: 1237 3 -2 took 
+: 1241 7 0 my 
+: 1249 8 0 hand 
+- 1257
+: 1269 7 3 Saw 
+: 1277 7 0 the 
+: 1285 7 0 moon 
+: 1293 7 0 we 
+: 1301 3 -2 spoke 
+: 1305 7 0 in 
+: 1313 8 0 france 
+- 1321
+: 1333 7 3 You 
+: 1341 7 0 were 
+: 1349 7 0 past 
+: 1357 7 0 the 
+: 1365 3 -2 shal
+: 1369 7 0 low 
+: 1377 8 0 words 
+- 1385
+: 1395 5 4 Years 
+: 1401 7 5 have 
+: 1409 9 4 passed 
+: 1419 7 0 and 
+: 1427 5 4 still 
+: 1433 6 5 the 
+* 1440 15 0 hurt 
+- 1455
+: 1459 7 3 You 
+: 1467 7 0 were 
+: 1475 7 0 past 
+: 1483 6 0 the 
+: 1490 4 -2 shal
+: 1495 7 0 low 
+: 1503 8 0 words 
+- 1511
+: 1521 5 4 Years 
+: 1527 7 5 have 
+: 1535 9 4 passed 
+: 1545 7 0 and 
+: 1553 5 4 still 
+: 1559 6 5 the 
+* 1566 16 0 hurt 
+- 1582
+: 1586 3 7 I 
+: 1590 3 5 can 
+: 1594 3 7 see 
+: 1598 3 5 you 
+* 1602 15 7 now 
+- 1617
+: 1618 3 7 Smi
+: 1622 3 5 ling 
+: 1626 3 7 as 
+: 1630 3 5 i 
+: 1634 7 7 pulled 
+: 1642 3 5 a
+: 1646 5 7 wa
+: 1652 8 10 y 
+- 1660
+: 1681 12 7 So
+: 1696 17 7 rry 
+- 1713
+: 1717 1 7 I 
+: 1719 3 7 re
+: 1723 3 7 mem
+: 1727 5 7 ber 
+: 1733 3 7 the 
+: 1737 5 7 le
+: 1743 5 7 ter 
+: 1749 5 7 wrin
+: 1755 6 7 kled 
+: 1762 1 7 in 
+: 1764 5 7 my 
+: 1770 12 7 hand 
+- 1782 1794
+- 1794
+: 1819 5 5 "Ill 
+: 1825 5 5 love 
+: 1831 5 5 you 
+: 1837 5 7 al
+: 1843 7 7 ways" 
+: 1851 5 3 filled 
+: 1857 7 2 my 
+* 1865 16 0 eyes 
+- 1881 1895
+- 1895
+: 1920 2 7 I 
+: 1923 3 7 re
+: 1927 2 7 mem
+: 1930 5 7 ber 
+: 1936 3 7 the 
+: 1940 8 7 night 
+: 1949 3 7 we 
+: 1953 9 7 walked 
+: 1963 1 8 a
+: 1965 7 7 long 
+: 1973 3 5 the 
+* 1977 20 3 Seine 
+- 1997
+: 2015 7 5 Ri
+: 2023 7 5 ding 
+: 2031 5 5 on 
+: 2037 4 5 the 
+: 2042 10 7 met
+: 2053 8 3 ro
+: 2062 5 2 o
+* 2068 45 0 o 
+- 2113 2784
+- 2784
+: 2809 1 7 I 
+: 2811 2 7 re
+: 2814 2 7 mem
+: 2817 3 7 ber 
+: 2821 3 7 a 
+: 2825 5 7 fee
+: 2831 5 7 ling 
+: 2837 5 7 com
+: 2843 5 7 ing 
+: 2849 3 7 ov
+: 2853 4 7 er 
+: 2858 12 7 me 
+- 2870 2877
+- 2877
+: 2902 2 7 Then 
+: 2905 3 7 the 
+: 2909 3 7 sol
+: 2913 5 7 dier 
+: 2919 5 7 turned 
+: 2925 5 7 and 
+: 2931 6 7 walked 
+: 2938 3 7 a
+* 2942 16 7 way 
+- 2958 2968
+- 2968
+* 2993 16 7 Fuck 
+* 3017 16 7 you 
+- 3033
+: 3036 5 7 For 
+: 3042 5 7 lov
+: 3048 12 7 ing 
+* 3061 26 7 me 
+- 3087
+: 3089 6 5 Ri
+: 3096 5 5 ding 
+: 3102 6 5 on 
+: 3109 5 5 the 
+: 3115 9 7 me
+: 3125 7 3 tro
+: 3133 6 2 o
+* 3140 28 0 o 
+E

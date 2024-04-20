@@ -1,0 +1,465 @@
+#ARTIST:Creepy Nuts
+#TITLE:Bling-Bang-Bang-Born
+#CREATOR:Rubn4
+#BPM:314
+#YEAR:2024
+#VIDEO:v=_yGkn9tI_0M
+#LANGUAGE:Japanese
+#GAP:846,8152866242037
+#ALLKARAOKE_ID:creepy-nuts-bling-bang-bang-born
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:24.419Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:159
+#ALLKARAOKE_VOLUME:0,79
+#MP3:Creepy Nuts - Bling-Bang-Bang-Born (TV).mp3
+#COVER:Creepy Nuts - Bling-Bang-Bang-Born (TV).jpg
+#MEDLEYSTARTBEAT:1268
+#MEDLEYENDBEAT:1511
+R 21 2 0 Chii
+R 25 2 0 to, 
+R 29 2 0 gift
+R 33 2 0 ed, 
+R 37 1 0 a
+R 39 1 0 ra
+R 41 1 0 wa
+R 43 1 0 za, 
+R 45 2 0 want
+R 49 1 0 ed
+- 50
+R 53 2 0 Kin
+R 57 2 0 ki, 
+R 61 2 0 kin
+R 65 2 0 jite, 
+R 69 1 0 a
+R 71 1 0 ki
+R 73 1 0 ra
+R 75 1 0 ka 
+R 77 2 0 mou
+R 81 1 0 ten
+- 82
+R 85 2 0 Han
+R 89 1 0 so
+R 91 1 0 ku, 
+R 93 2 0 iji
+R 97 2 0 gen, 
+R 101 1 0 ko
+R 103 1 0 no 
+R 105 1 0 yo 
+R 107 1 0 no 
+R 109 2 0 mon 
+R 113 1 0 de 
+R 115 1 0 wa 
+R 117 2 0 nai 
+R 121 1 0 desu
+- 122
+R 125 1 0 Mu
+R 127 1 0 ri 
+R 129 2 0 gee, 
+R 133 1 0 so
+R 135 1 0 re 
+R 137 1 0 kii
+R 139 1 0 te
+R 141 2 0 nai 
+R 145 3 0 tte
+- 148
+R 157 2 0 Rai
+R 161 1 0 ba
+R 163 1 0 ru 
+R 165 1 0 ku
+R 167 1 0 chi 
+R 169 1 0 wo 
+R 171 1 0 so
+R 173 2 0 roe
+R 177 3 0 te
+- 180
+R 189 2 0 Rai
+R 193 1 0 ba
+R 195 1 0 ru 
+R 197 1 0 ku
+R 199 1 0 chi 
+R 201 1 0 wo 
+R 203 1 0 so
+R 205 2 0 roe
+R 209 1 0 te
+- 210
+R 213 1 0 Ba
+R 215 1 0 gu 
+R 217 2 0 de, 
+R 221 1 0 ma
+R 223 1 0 gu
+R 225 2 0 re, 
+R 229 1 0 mi
+R 231 1 0 to
+R 233 1 0 me
+R 235 1 0 nee 
+R 237 2 0 ze
+R 241 1 0 ttee
+- 242
+R 245 2 0 Maji 
+R 249 2 0 de? 
+R 253 1 0 ko
+R 255 1 0 re 
+R 257 1 0 wo 
+R 259 1 0 ma 
+R 261 2 0 zen
+R 265 1 0 bu 
+R 267 1 0 na
+R 269 1 0 ma
+R 271 1 0 mi 
+R 273 3 0 de?
+- 276 324
+- 324
+* 345 2 -3 It's 
+* 349 1 4 na
+* 351 1 4 ma
+* 353 3 4 mi 
+: 361 2 2 It's 
+: 365 1 4 na
+: 367 1 4 ma
+: 369 2 4 mi 
+: 373 2 4 yeah
+: 377 2 0 ~ 
+: 381 2 0 yeah
+: 385 2 -1 ~ 
+: 389 5 -1 yeah 
+: 397 3 4 yeah
+- 400
+: 405 3 -3 Bling 
+: 417 2 5 Bang 
+: 421 3 4 Bang
+- 424
+: 437 3 -3 Bling 
+: 443 3 -3 Bang 
+: 449 2 5 Bang 
+: 453 3 4 Born
+- 456
+* 469 3 -3 Bling 
+* 481 2 5 Bang 
+* 485 3 4 Bang
+- 488
+: 501 3 -3 Bling 
+: 507 3 -1 Bang 
+: 513 2 -4 Bang 
+: 517 1 -3 Born
+- 518
+R 521 1 0 Ji
+R 523 1 0 tsu
+R 525 2 0 ryo
+R 529 1 0 ku 
+R 531 1 0 wo 
+R 533 2 0 ha
+R 537 2 0 kki 
+R 541 1 0 shiki
+R 543 1 0 ru 
+R 545 2 0 mae 
+R 549 1 0 ni
+- 550
+R 553 2 0 Ai
+R 557 1 0 te 
+R 559 1 0 no 
+R 561 1 0 hou 
+R 563 1 0 ga 
+R 565 2 0 ba
+R 569 1 0 kku
+R 571 1 0 re
+R 573 1 0 te 
+R 575 1 0 ku
+R 577 2 0 ra
+R 581 1 0 shii
+- 582
+R 585 2 0 A
+R 589 1 0 ga
+R 591 1 0 ri
+R 593 1 0 ki
+R 595 1 0 ru 
+R 597 2 0 haa
+R 601 1 0 do
+R 603 1 0 ru 
+R 605 1 0 ve
+R 607 1 0 ry 
+R 609 2 0 hap
+R 613 1 0 py
+- 614
+R 617 2 0 A
+R 621 1 0 ki
+R 623 1 0 ra
+R 625 1 0 ka 
+R 627 1 0 ni 
+R 629 2 0 dan
+R 633 2 0 totsu 
+R 637 1 0 de 
+R 639 1 0 pi
+R 641 2 0 kai
+R 645 1 0 chi
+- 646
+R 649 2 0 Ai
+R 653 1 0 ka
+R 655 1 0 wa
+R 657 2 0 razu 
+R 661 2 0 da
+R 665 2 0 ppi 
+R 669 1 0 shite
+R 671 1 0 ru 
+R 673 2 0 mai
+R 677 3 0 nichi
+- 680 698
+- 698
+R 719 1 0 Da
+R 721 1 0 re 
+R 723 1 0 no 
+R 725 2 0 na
+R 729 1 0 na
+R 731 2 0 hi
+R 735 1 0 ka
+R 737 2 0 ri 
+R 741 1 0 mo 
+R 743 2 0 i
+R 747 1 0 ra
+R 749 1 0 nai 
+R 751 1 0 o
+R 753 1 0 mae 
+R 755 1 0 no 
+R 757 3 0 ice 
+R 763 1 0 yo
+R 765 2 0 ri 
+R 769 2 0 i
+R 773 3 0 cy
+- 776
+R 785 1 0 O
+R 787 1 0 re, 
+R 789 2 0 pa
+R 793 1 0 tto 
+R 795 1 0 mi 
+R 797 1 0 de
+R 799 1 0 ki
+R 801 2 0 na
+R 805 2 0 i 
+R 809 1 0 ko
+R 811 1 0 to 
+R 813 2 0 ba
+R 817 1 0 kka
+R 819 1 0 ri 
+R 821 2 0 da 
+R 825 1 0 ke
+R 827 1 0 do 
+R 829 1 0 ver
+R 831 1 0 y 
+R 833 2 0 hap
+R 837 3 0 py
+- 840
+R 853 2 0 A
+R 857 1 0 ki
+R 859 1 0 re
+R 861 1 0 te
+R 863 1 0 ru 
+R 865 2 0 mawa
+R 869 2 0 ri 
+R 873 1 0 me
+R 875 1 0 gu
+R 877 1 0 ma
+R 879 1 0 re
+R 881 1 0 te
+R 883 1 0 ru 
+R 885 2 0 ka
+R 889 1 0 zo
+R 891 1 0 ku 
+R 893 1 0 to
+R 895 1 0 mo
+R 897 2 0 da
+R 901 3 0 chi
+- 904
+R 913 2 0 Mou 
+R 917 2 0 han
+R 921 1 0 so
+R 923 1 0 ku 
+R 925 1 0 te
+R 927 1 0 ki 
+R 929 2 0 ta
+R 933 2 0 chii
+R 937 1 0 chi 
+R 939 1 0 mi
+R 941 1 0 na 
+R 943 1 0 o
+R 945 1 0 re 
+R 947 1 0 ni 
+R 949 2 0 ma
+R 953 2 0 kase
+R 957 1 0 to
+R 959 1 0 ke
+R 961 2 0 ba 
+R 965 3 0 ii
+- 968
+R 977 2 0 Kyou
+R 981 2 0 ka
+R 985 1 0 sho 
+R 987 1 0 ni 
+R 989 2 0 nai, 
+R 993 2 0 mon
+R 997 2 0 dai
+R 1001 1 0 shuu 
+R 1003 1 0 ni 
+R 1005 2 0 nai 
+R 1009 2 0 chou 
+R 1013 2 0 ba
+R 1017 1 0 do 
+R 1019 1 0 na 
+R 1021 2 0 maji
+R 1025 2 0 na
+R 1029 3 0 i
+- 1032
+F 1037 1 0 Lis
+F 1039 1 0 ten
+- 1040
+: 1045 2 4 Ka
+: 1049 2 3 ga
+: 1053 2 4 mi 
+: 1057 2 3 yo 
+: 1061 2 4 ka
+: 1065 2 3 ga
+: 1069 2 4 mi 
+: 1073 2 4 ko
+: 1077 2 4 ta
+: 1081 2 0 e
+: 1085 5 0 cha
+: 1093 3 0 tte
+- 1096
+: 1101 2 4 Who's 
+: 1105 2 2 the 
+: 1109 3 0 best? 
+: 1117 2 4 I'm 
+: 1121 2 2 the 
+: 1125 3 0 best! 
+: 1133 5 2 Oh 
+: 1141 5 4 yeah
+: 1149 2 5 ~
+: 1153 2 4 ~
+: 1157 3 2 ~
+- 1160
+* 1173 2 4 Na
+* 1177 2 3 ma
+* 1181 2 4 mi 
+* 1185 2 3 no 
+* 1189 2 4 ma
+* 1193 2 3 ma 
+: 1197 2 4 ike
+: 1201 2 4 ru 
+: 1205 2 4 to
+: 1209 2 0 ko 
+: 1213 5 0 ma
+: 1221 3 0 de
+- 1224
+: 1229 2 4 To 
+: 1233 2 2 the 
+: 1237 3 0 next 
+: 1245 2 4 to 
+: 1249 2 2 the 
+: 1253 5 0 ichi
+: 1261 5 -1 ban 
+: 1269 2 -1 u
+: 1273 3 -3 e
+- 1276
+: 1289 2 -3 Now 
+: 1293 2 -1 sing
+: 1297 2 0 in 
+: 1301 3 4 Bling 
+: 1307 3 0 Bang 
+: 1313 2 0 Bang, 
+: 1317 3 2 Bling 
+: 1323 3 -1 Bang 
+: 1329 2 -1 Bang, 
+: 1333 3 0 Bling 
+: 1339 3 -3 Bang 
+: 1345 2 -3 Bang 
+: 1349 3 -1 Born
+- 1352
+* 1365 3 4 Bling 
+* 1371 3 0 Bang 
+* 1377 2 0 Bang, 
+* 1381 3 2 Bling 
+* 1387 3 -1 Bang 
+: 1393 2 -1 Bang, 
+: 1397 3 0 Bling 
+: 1403 3 -3 Bang 
+: 1409 2 -3 Bang 
+: 1413 3 -1 Born
+- 1416
+: 1429 3 4 Bling 
+: 1435 3 0 Bang 
+: 1441 2 0 Bang, 
+: 1445 3 2 Bling 
+: 1451 3 -1 Bang 
+: 1457 2 -1 Bang, 
+: 1461 3 0 Bling 
+: 1467 3 -3 Bang 
+: 1473 2 -3 Bang 
+: 1477 3 -1 Born
+- 1480
+: 1485 2 4 To 
+: 1489 2 2 the 
+: 1493 3 0 next, 
+: 1501 2 4 to 
+: 1505 2 2 the 
+: 1509 5 0 ichi
+: 1517 5 -1 ban 
+: 1525 2 -1 u
+: 1529 3 -3 e
+- 1532 1536
+- 1536
+: 1557 5 4 Ey 
+: 1565 5 4 day 
+: 1573 1 4 o
+: 1575 2 2 re 
+: 1579 2 0 no 
+: 1583 1 -1 ma
+: 1585 1 -1 ma 
+: 1587 1 -1 de 
+: 1589 2 -3 i
+: 1593 2 -1 ru 
+* 1597 2 0 da
+* 1601 2 2 ke 
+* 1605 2 4 de 
+* 1609 2 4 chou 
+* 1613 3 4 flex
+- 1616
+: 1621 5 4 Ey 
+: 1629 5 4 day 
+: 1637 1 4 da
+: 1639 2 2 re
+: 1643 2 0 mo 
+: 1647 1 0 kuchi 
+: 1649 2 -1 wo 
+: 1653 2 -3 ha
+: 1657 2 0 sa
+: 1661 2 -1 me
+: 1665 2 -4 na
+: 1669 3 -3 i
+- 1672
+: 1685 5 4 Ey 
+: 1693 5 4 day 
+: 1701 1 4 o
+: 1703 2 2 re 
+: 1707 2 0 no 
+: 1711 1 -1 ma
+: 1713 1 -1 ma 
+: 1715 1 -1 de 
+: 1717 2 -3 i
+: 1721 2 -1 ru 
+: 1725 2 0 da
+: 1729 2 2 ke 
+: 1733 2 4 de 
+: 1737 2 4 chou 
+: 1741 3 4 flex
+- 1744
+* 1749 5 4 Ey 
+* 1757 5 4 day 
+* 1765 1 4 da
+* 1767 2 2 re
+* 1771 2 0 mo 
+: 1775 1 0 kuchi 
+: 1777 2 -1 wo 
+: 1781 2 -3 ha
+: 1785 2 0 me
+: 1789 2 -1 se
+: 1793 2 -4 na
+: 1797 3 -3 i
+E

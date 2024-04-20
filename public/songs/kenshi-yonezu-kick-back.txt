@@ -1,0 +1,332 @@
+#ARTIST:Kenshi Yonezu
+#TITLE:KICK BACK
+#CREATOR:Currymalker
+#BPM:408
+#YEAR:2022
+#VIDEO:v=dFlDRhvM4L0
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:8611,35294117647
+#ALLKARAOKE_ID:kenshi-yonezu-kick-back
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:24.838Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=chainsaw+man
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Kenshi Yonezu - KICK BACK (TV).mp3
+#COVER:Kenshi Yonezu - KICK BACK (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1148
+#MEDLEYENDBEAT:1796
+F 27 2 -3 Do
+F 31 5 -2 ryoku
+- 36
+F 43 2 -2 Mi
+F 47 6 -2 rai
+- 53
+F 59 2 -2 A 
+F 63 2 -2 beau
+F 67 2 -3 ti
+F 71 4 -3 ful 
+F 79 6 -2 star
+- 85
+F 91 2 -3 Do
+F 95 5 -2 ryoku
+- 100
+F 107 2 -2 Mi
+F 111 5 -2 rai
+- 116
+F 123 2 -2 A 
+F 127 2 -2 beau
+F 131 2 -3 ti
+F 135 4 -3 ful 
+F 143 5 -2 star
+- 148
+F 155 2 -3 Do
+F 159 5 -2 ryoku
+- 164
+F 171 2 -2 Mi
+F 175 6 -2 rai
+- 181
+F 187 2 -2 A 
+F 191 2 -2 beau
+F 195 2 -3 ti
+F 199 4 -3 ful 
+F 207 5 -2 star
+- 212
+F 219 2 -3 Do
+F 223 5 -2 ryoku
+- 228
+F 235 2 -2 Mi
+F 239 5 -2 rai
+- 244
+F 251 2 -2 A 
+F 255 2 -2 beau
+F 259 2 -3 ti
+F 263 4 -3 ful 
+F 271 8 -2 star
+- 279
+: 295 6 5 Ran
+: 303 2 4 do
+: 307 5 5 rii 
+: 315 5 4 kyou 
+: 323 2 0 wa 
+: 327 2 -2 ga
+: 331 6 -3 raa
+: 339 2 -2 ki 
+: 343 2 0 de 
+: 347 4 1 luck
+* 355 6 -8 y 
+: 363 12 -7 day
+- 375 396
+- 396
+: 423 5 5 Ka
+: 431 2 4 ta
+: 435 6 5 rii 
+: 443 6 4 a
+: 451 2 0 bu
+: 455 2 -2 ra 
+: 459 6 -3 yo
+: 467 2 -2 go
+: 471 2 0 re 
+: 475 6 1 mo 
+: 483 2 0 ko
+: 487 2 1 re 
+: 491 6 3 de 
+: 499 6 1 bye 
+: 507 12 0 bye
+- 519
+: 539 2 -2 Da
+: 543 2 -3 re 
+: 547 4 -2 da
+- 551
+* 555 2 2 Da
+* 559 2 1 re 
+: 563 4 2 da
+- 567
+: 571 6 4 A
+: 579 2 5 ta
+: 583 2 4 ma 
+: 587 2 2 no 
+: 591 2 1 na
+: 595 5 4 ka
+- 600
+: 603 6 2 Yo
+: 611 2 -3 bi
+: 615 2 -5 ka
+: 619 2 -7 ke
+: 623 2 -5 ru 
+: 627 2 -3 ko
+: 631 2 -3 e 
+: 635 11 -5 wa
+- 646
+: 655 2 -5 A
+: 659 2 -7 re 
+: 663 2 -5 ga 
+: 667 2 -3 ho
+: 671 8 -2 shii
+- 679
+: 687 2 -2 Ko
+: 691 2 -3 re 
+: 695 2 -2 ga 
+: 699 2 0 ho
+: 703 5 2 shii 
+: 711 2 -2 to 
+: 715 2 -2 u
+: 719 4 0 ta
+: 727 6 -3 ttei
+* 735 6 -5 ~
+: 743 14 -5 ru
+- 757 764
+- 764
+: 791 2 -4 Shi
+: 795 2 -2 a
+: 799 6 -1 wa
+: 807 2 -2 se 
+: 811 2 -4 ni 
+: 815 2 -6 na
+: 819 2 -6 ri
+: 823 10 -4 tai
+- 833
+* 847 4 -4 Raku
+: 855 2 1 shi
+: 859 2 3 ~
+: 863 6 1 te 
+: 871 4 -1 i
+: 877 1 -2 ki
+: 879 6 -2 tei
+: 887 10 -1 tai
+- 897
+: 911 2 -1 Ko
+: 915 2 -1 no 
+: 919 2 4 te
+: 923 2 6 ~ 
+: 927 5 4 ni 
+: 935 6 3 tsuka
+: 943 6 1 mi
+: 951 2 1 tai
+: 955 2 3 ~
+* 959 16 0 ~
+- 975
+: 983 6 -4 A
+: 991 6 -6 na
+: 999 6 -4 ta 
+: 1007 6 -3 no 
+: 1015 6 -1 so
+: 1023 10 1 no
+- 1033
+: 1039 2 1 Mu
+: 1043 6 3 ~
+: 1051 2 0 ~
+: 1055 6 0 ne
+: 1063 6 -4 ~ 
+: 1071 8 -4 no 
+: 1087 2 3 na
+: 1091 10 4 ~
+: 1103 41 3 ka
+- 1144 1148
+- 1148
+: 1175 5 8 Hap
+: 1183 6 1 py 
+: 1191 6 3 de 
+: 1199 2 4 u
+: 1203 4 6 me
+* 1211 4 -3 tsuku
+: 1219 2 3 shite
+: 1223 5 4 ~
+- 1228
+: 1231 5 -3 Rest 
+: 1239 5 -3 in 
+: 1247 5 -4 peace 
+: 1255 6 3 ma
+: 1263 2 -4 de 
+: 1267 5 -6 i
+: 1275 6 -4 kou 
+: 1283 2 -1 ze
+: 1287 6 1 ~
+- 1293
+: 1303 4 -4 I
+: 1311 2 -6 tsuka 
+: 1315 2 -8 mi
+: 1319 5 -6 ta
+- 1324
+: 1327 2 -6 Ji
+: 1331 2 -4 go
+: 1335 2 -3 ku 
+: 1339 2 -3 mo 
+* 1343 6 -1 ii 
+: 1351 2 -3 to
+: 1355 2 -4 ko
+: 1359 4 -6 ro
+- 1363
+: 1367 14 1 Ai 
+* 1383 2 -1 wo 
+* 1387 2 -3 ba
+* 1391 2 -4 ra
+: 1395 2 3 mai
+: 1399 2 4 ~
+: 1403 13 3 te
+- 1416
+: 1431 1 6 I
+: 1433 3 8 ~ 
+: 1439 6 1 love 
+: 1447 5 3 you 
+: 1455 2 4 ke
+: 1459 4 6 na
+: 1467 5 -3 shite 
+: 1475 2 3 kure
+: 1479 5 4 ~
+- 1484
+: 1487 6 3 Zen
+: 1495 2 1 bu 
+: 1499 2 1 u
+* 1503 4 0 ba
+* 1511 6 9 tte 
+: 1519 2 8 wa
+: 1523 4 6 ra
+: 1531 4 8 tte 
+: 1539 2 6 kure 
+: 1543 6 4 my 
+: 1551 2 3 hon
+: 1555 3 4 ey
+- 1558
+: 1575 6 4 Do
+: 1583 4 3 ryoku 
+: 1591 6 -1 mi
+: 1599 6 1 rai 
+: 1607 2 -1 beau
+: 1611 2 -1 ti
+: 1615 4 1 ful 
+: 1623 7 1 star
+- 1630
+: 1639 6 4 Do
+: 1647 4 3 ryoku 
+: 1655 6 -1 mi
+: 1663 5 1 rai 
+: 1671 2 -1 beau
+: 1675 2 -1 ti
+: 1679 5 1 ful 
+: 1687 6 1 star
+- 1693
+* 1703 5 8 Do
+: 1711 4 7 ryoku 
+: 1719 5 8 mi
+: 1727 5 7 rai 
+: 1735 2 8 beau
+: 1739 2 8 ti
+: 1743 4 7 ful 
+: 1751 6 8 star
+- 1757
+: 1767 6 8 Nan
+: 1775 6 6 ka 
+: 1783 5 4 wasu
+: 1791 5 6 re
+: 1799 4 4 cha
+: 1807 5 3 tten 
+: 1815 2 -1 da
+: 1819 4 -4 ~
+- 1823
+F 1835 2 -2 Mi
+F 1839 6 -2 rai
+- 1845
+F 1851 2 -2 A 
+F 1855 2 -2 beau
+F 1859 2 -3 ti
+F 1863 4 -3 ful 
+F 1871 6 -2 star
+- 1877
+F 1883 2 -3 Do
+F 1887 5 -2 ryoku
+- 1892
+F 1899 2 -2 Mi
+F 1903 6 -2 rai
+- 1909
+F 1915 2 -2 A 
+F 1919 2 -2 beau
+F 1923 2 -3 ti
+F 1927 4 -3 ful 
+F 1935 5 -2 star
+- 1940
+F 1947 2 -3 Do
+F 1951 4 -2 ryoku
+- 1955
+F 1963 2 -2 Mi
+F 1967 5 -2 rai
+- 1972
+F 1979 2 -2 A 
+F 1983 2 -2 beau
+F 1987 2 -3 ti
+F 1991 4 -3 ful 
+F 1999 5 -2 star
+- 2004
+F 2011 2 -3 Do
+F 2015 4 -2 ryoku
+- 2019
+F 2027 2 -2 Mi
+F 2031 5 -2 rai
+- 2036
+F 2043 5 -1 Beau
+F 2051 5 -1 ti
+F 2059 4 -1 ful 
+F 2067 11 -2 star
+E

@@ -1,0 +1,238 @@
+#ARTIST:Avenged Sevenfold
+#TITLE:Roman Sky
+#CREATOR:Zevac
+#BPM:261,15
+#YEAR:2016
+#VIDEO:v=nFF6p-4LSkg
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:29403,549684089605
+#ALLKARAOKE_ID:avenged-sevenfold-roman-sky
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:24.338Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=181957
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=27476
+#ALLKARAOKE_VOLUME:0,97
+#P1:Roman Sky
+#MP3:Avenged Sevenfold - Roman Sky.mp3
+#COVER:Avenged Sevenfold - Roman Sky [CO].jpg
+#BACKGROUND:Avenged Sevenfold - Roman Sky [BG].jpg
+: 17 6 -8 As 
+: 25 7 -7 the 
+: 34 9 -5 em
+: 46 9 -3 bers 
+: 58 6 -3 rose
+: 65 13 -1 ~ 
+- 78
+: 81 6 -8 Through 
+: 89 6 -7 the 
+* 97 10 -5 Ro
+* 109 4 -5 man
+* 114 4 -3 ~ 
+* 122 9 -10 sky
+* 132 50 -8 ~ 
+- 182 257
+- 257
+: 274 7 -8 Tell 
+: 283 5 -7 me 
+: 290 11 -5 were 
+: 303 8 -3 you 
+: 315 7 -3 calm
+: 323 13 -1 ~ 
+- 336
+: 339 3 -8 When 
+: 346 5 -7 they 
+: 354 9 -5 took 
+: 366 4 -5 your
+: 371 6 -3 ~ 
+: 379 8 -10 life
+: 388 51 -8 ~? 
+- 439 530
+- 530
+: 547 6 -3 Just 
+: 555 2 -5 be
+: 559 3 -7 fore 
+: 564 2 -8 you 
+: 568 36 -7 go 
+- 604
+: 613 4 -8 Tell 
+: 619 2 -7 us 
+: 624 10 -5 how 
+: 636 3 -3 the 
+: 641 6 -5 heav
+: 648 3 -7 ens 
+* 656 12 -12 flow 
+- 668
+: 676 3 -3 Weight
+: 680 3 -3 ~
+: 684 2 -5 less 
+: 689 2 -7 ev
+: 692 2 -8 er
+: 695 41 -7 more 
+- 736
+: 740 7 -8 As 
+: 749 2 -7 you 
+: 753 8 -5 walk 
+: 764 4 -3 be
+: 769 5 -5 yond 
+: 777 4 -7 that 
+: 785 13 -12 door 
+- 798
+: 805 6 -3 Shine 
+: 813 3 -5 for
+: 817 3 -7 ev
+: 821 1 -8 er 
+: 826 49 -7 true 
+- 875 1157
+- 1157
+: 1174 7 -8 Shared 
+: 1183 5 -7 with 
+: 1190 9 -5 us 
+: 1203 9 -3 the 
+* 1214 5 -3 world
+* 1220 15 -1 ~ 
+- 1235
+: 1238 7 -8 Well 
+: 1247 4 -7 be
+: 1254 9 -5 fore 
+: 1265 11 -3 your 
+: 1280 6 -10 time
+: 1287 62 -8 ~ 
+- 1349 1414
+- 1414
+: 1431 6 -8 Though 
+: 1439 5 -7 they 
+: 1447 9 -5 took 
+: 1459 9 -3 your 
+: 1470 6 -3 voice
+: 1477 15 -1 ~ 
+- 1492
+: 1497 5 4 Words 
+: 1505 6 5 for
+: 1512 3 5 e
+: 1516 7 7 ~
+: 1524 3 7 ver
+: 1528 5 9 ~ 
+: 1537 6 2 shine
+: 1544 45 4 ~ 
+: 1591 4 4 yeah
+: 1596 3 2 ~
+: 1600 3 4 ~
+: 1604 4 2 ~
+: 1609 23 4 ~
+: 1633 11 4 ~ 
+- 1644 1687
+- 1687
+: 1704 6 9 Just 
+: 1712 2 7 be
+: 1716 3 5 fore 
+: 1721 2 4 you 
+: 1725 39 5 go 
+- 1764
+: 1769 5 4 Tell 
+: 1776 2 5 us 
+: 1781 10 7 how 
+: 1793 2 9 the 
+: 1797 7 7 heav
+: 1805 4 5 ens 
+: 1814 11 0 flow 
+- 1825
+: 1834 7 9 Weight
+: 1842 2 7 less 
+: 1846 3 5 ev
+: 1850 1 4 er
+: 1853 39 5 more 
+- 1892
+: 1897 7 4 As 
+: 1906 2 5 you 
+: 1910 9 7 walk 
+: 1921 4 9 be
+: 1926 6 7 yond 
+: 1934 5 5 that 
+: 1943 13 0 door 
+- 1956
+: 1962 6 9 Shine 
+: 1971 3 7 for
+: 1975 2 5 ev
+: 1978 2 4 er 
+: 1982 60 5 true 
+- 2042 2830
+- 2830
+: 2847 4 4 As 
+: 2853 4 5 they 
+: 2862 9 7 spoke 
+: 2874 9 9 your 
+* 2886 3 9 fate
+* 2890 9 11 ~ 
+- 2899
+: 2902 4 4 A 
+: 2910 6 4 fear
+: 2918 3 5 less 
+: 2926 9 7 man 
+: 2938 8 9 re
+: 2951 6 2 plied
+: 2958 48 4 ~ 
+- 3006 3080
+- 3080
+: 3097 4 4 "As 
+: 3103 6 4 you 
+: 3111 4 5 will 
+: 3119 9 7 sen
+: 3132 5 9 tence 
+: 3143 3 9 me
+: 3147 7 11 ~ 
+- 3154
+: 3159 4 4 Your 
+: 3167 6 4 fear 
+: 3175 4 5 is 
+: 3184 10 7 be
+: 3195 3 7 yond
+: 3199 5 9 ~ 
+: 3208 7 2 mine"
+: 3216 43 4 ~ 
+: 3261 7 4 yeah
+: 3269 2 2 ~
+: 3272 2 4 ~
+: 3275 3 2 ~
+: 3279 23 4 ~
+: 3303 12 4 ~ 
+- 3315 3360
+- 3360
+: 3377 5 9 Just 
+: 3384 2 7 be
+: 3388 3 5 fore 
+: 3393 2 4 you 
+: 3397 36 5 go 
+- 3433
+: 3441 4 4 Tell 
+: 3447 2 5 us 
+: 3452 11 7 how 
+: 3465 1 7 the
+: 3467 1 9 ~ 
+* 3470 6 7 hea
+* 3477 4 5 vens 
+* 3487 11 0 flow 
+- 3498
+: 3505 6 9 Weight
+: 3513 2 7 less 
+: 3517 3 5 ev
+: 3521 1 4 er
+: 3525 37 5 more 
+- 3562
+: 3569 6 4 As 
+: 3577 2 5 you 
+: 3581 9 7 walk 
+: 3593 1 7 be
+: 3595 1 9 ~
+: 3597 6 7 yond 
+: 3605 5 5 that 
+: 3614 12 0 door 
+- 3626
+: 3633 6 9 Shine 
+: 3641 3 7 for
+: 3645 2 5 ev
+: 3648 2 4 er 
+: 3653 73 5 true
+: 3727 2 4 ~ 
+E

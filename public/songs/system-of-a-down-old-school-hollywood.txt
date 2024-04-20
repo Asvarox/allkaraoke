@@ -1,0 +1,381 @@
+#ARTIST:System of a Down
+#TITLE:Old School Hollywood
+#CREATOR:borax
+#BPM:326
+#YEAR:2005
+#VIDEO:v=31a56mYvVY8
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:4957,730061349694
+#ALLKARAOKE_ID:system-of-a-down-old-school-hollywood
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.393Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136
+#ALLKARAOKE_REALBPM:163
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3966
+#ALLKARAOKE_VOLUME:0,92
+#P1:Old School Hollywood
+#MP3:System of a Down - Old School Hollywood.mp3
+: 22 7 6 Old 
+: 30 8 6 school 
+: 86 3 6 Hol
+: 90 3 6 ly
+: 94 8 6 wood 
+: 150 12 6 base
+: 164 8 6 ball. 
+- 172 188
+- 188
+: 210 7 6 Old 
+: 218 7 6 school 
+: 226 3 6 Hol
+: 230 3 6 ly
+: 234 7 6 wood 
+: 242 15 6 base
+: 258 8 6 ball. 
+- 266 504
+- 504
+: 526 7 12 To
+: 534 7 0 ny 
+: 542 7 12 Dan
+: 550 7 0 za 
+: 558 7 6 cuts 
+: 566 4 6 in 
+: 574 15 7 line 
+- 589
+: 590 7 6 Old 
+: 598 7 6 school 
+: 606 3 6 Hol
+: 610 3 6 ly
+: 614 7 6 wood, 
+: 622 7 6 washed 
+: 630 7 6 up 
+: 638 1 6 Hol
+: 640 1 6 ly
+: 642 8 6 wood. 
+- 650
+: 652 3 9 Stan
+: 656 3 9 ding 
+: 660 3 8 in 
+: 664 3 7 the 
+: 668 3 9 sun 
+: 672 4 6 I’m 
+: 680 3 9 wast
+: 684 4 6 ing 
+: 692 4 9 my 
+: 700 8 8 ti
+: 710 4 6 me 
+- 714
+: 716 7 6 Old 
+: 724 7 6 school 
+: 732 3 6 Hol
+: 736 3 6 ly
+: 740 7 6 wood, 
+: 748 7 6 washed 
+: 756 7 6 up 
+: 764 1 6 Hol
+: 766 1 6 ly
+: 768 8 6 wood. 
+- 776
+: 778 7 6 Old 
+: 786 8 6 school 
+: 796 3 6 Hol
+: 800 3 6 ly
+: 804 7 6 wood 
+: 812 8 9 ba
+: 822 4 4 se
+: 828 8 4 ball 
+- 836
+: 842 7 6 Jack 
+: 850 3 6 Gi
+: 854 7 6 lar
+: 862 8 6 di’s 
+: 874 7 11 ten 
+: 882 7 9 feet 
+: 890 5 8 ta
+: 896 6 6 ll. 
+- 902
+: 906 7 6 Old 
+: 914 7 6 school 
+: 922 3 6 Hol
+: 926 3 6 ly
+: 930 7 6 wood 
+: 938 7 9 ba
+: 946 4 4 se
+: 954 8 4 ball 
+- 962
+: 970 7 6 Me 
+: 978 7 6 and 
+: 986 7 6 Fran
+: 994 7 9 kie 
+* 1002 5 8 A
+* 1008 3 9 va
+* 1012 41 8 lo
+* 1054 3 9 ~
+* 1058 3 8 ~
+* 1062 4 6 n. 
+- 1066 1106
+- 1106
+: 1128 7 6 Old 
+: 1136 7 6 school 
+: 1144 3 13 Hol
+: 1148 3 13 ly
+: 1152 7 11 wood, 
+: 1160 7 4 washed 
+: 1168 7 4 up 
+: 1176 3 7 Hol
+: 1180 3 7 ly
+: 1184 8 7 wood. 
+- 1192 1234
+- 1234
+: 1256 7 6 Old 
+: 1264 7 6 school 
+: 1272 3 13 Hol
+: 1276 3 13 ly
+: 1280 7 11 wood, 
+: 1288 7 4 washed 
+: 1296 7 4 up 
+: 1304 3 7 Hol
+: 1308 3 7 ly
+: 1312 7 7 wood. 
+- 1319
+: 1320 7 12 Hey 
+: 1328 7 0 man, 
+: 1336 7 12 don’t 
+: 1344 7 0 you 
+: 1352 7 6 touch 
+: 1360 4 6 my 
+: 1366 8 7 belt 
+- 1374
+: 1382 7 6 Old 
+: 1390 7 6 school 
+: 1398 3 6 Hol
+: 1402 3 6 ly
+: 1406 7 6 wood, 
+: 1414 7 6 washed 
+: 1422 7 6 up 
+: 1430 3 6 Hol
+: 1434 3 6 ly
+: 1438 7 6 wood. 
+- 1445
+: 1446 3 9 Stan
+: 1450 3 9 ding 
+: 1454 3 8 in 
+: 1458 3 7 the 
+: 1462 4 9 sun 
+: 1470 3 6 I’m 
+: 1474 4 9 a
+: 1480 4 6 bout 
+: 1486 3 9 to 
+: 1490 3 8 m
+: 1494 8 10 e
+: 1504 4 6 lt 
+- 1508
+: 1512 7 6 Old 
+: 1520 7 6 school 
+: 1528 3 6 Hol
+: 1532 3 6 ly
+: 1536 7 6 wood, 
+: 1544 7 6 washed 
+: 1552 7 6 up 
+: 1560 3 6 Hol
+: 1564 3 6 ly
+: 1568 7 6 wood. 
+- 1575
+: 1576 7 6 Old 
+: 1584 7 6 school 
+: 1592 3 6 Hol
+: 1596 3 6 ly
+: 1600 7 6 wood 
+: 1608 10 9 ba
+: 1620 3 4 se
+: 1624 8 4 ball 
+- 1632
+: 1640 7 6 Jack 
+: 1648 3 6 Gi
+: 1652 7 6 lar
+: 1660 8 6 di’s 
+: 1672 7 11 ten 
+: 1680 7 9 feet 
+: 1688 3 8 ta
+: 1692 8 6 ll. 
+- 1700
+: 1704 7 6 Old 
+: 1712 7 6 school 
+: 1720 3 6 Hol
+: 1724 3 6 ly
+: 1728 7 6 wood 
+: 1736 10 9 ba
+: 1748 3 4 se
+: 1752 8 4 ball 
+- 1760
+: 1768 7 6 Me 
+: 1776 7 6 and 
+: 1784 7 6 Fran
+: 1792 8 9 kie 
+* 1802 5 8 A
+* 1808 3 9 va
+* 1812 72 8 lo
+* 1886 3 9 ~
+* 1890 3 8 ~
+* 1894 4 6 n. 
+- 1898 2004
+- 2004
+: 2026 7 6 Old 
+: 2034 7 6 school 
+: 2042 3 13 Hol
+: 2046 3 13 ly
+: 2050 7 11 wood, 
+: 2058 7 4 washed 
+: 2066 7 4 up 
+: 2074 3 7 Hol
+: 2078 3 7 ly
+: 2082 8 7 wood. 
+- 2090 2132
+- 2132
+: 2154 7 6 Old 
+: 2162 7 6 school 
+: 2170 3 13 Hol
+: 2174 3 13 ly
+: 2178 7 11 wood, 
+: 2186 7 4 washed 
+: 2194 7 4 up 
+: 2202 3 7 Hol
+: 2206 3 7 ly
+: 2210 8 7 wood. 
+- 2218 2330
+- 2330
+: 2352 7 6 Old 
+: 2360 7 6 school 
+: 2368 3 6 Hol
+: 2372 3 6 ly
+: 2376 7 6 wood 
+: 2384 15 6 base
+: 2400 8 6 ball. 
+- 2408
+: 2416 7 6 Old 
+: 2424 7 6 school 
+: 2432 3 6 Hol
+: 2436 3 6 ly
+: 2440 8 6 wood 
+: 2458 7 6 base
+: 2466 8 6 ball. 
+- 2474
+: 2482 7 6 Old 
+: 2490 7 6 school 
+: 2498 3 6 Hol
+: 2502 3 6 ly
+: 2506 8 6 wood 
+: 2524 7 6 base
+: 2532 8 6 ball. 
+- 2540
+: 2548 7 6 Old 
+: 2556 7 6 school 
+: 2564 3 6 Hol
+: 2568 3 6 ly
+: 2572 8 6 wood 
+: 2588 7 6 base
+: 2596 8 6 ball. 
+- 2604
+: 2612 7 6 Old 
+: 2620 7 6 school 
+: 2628 3 6 Hol
+: 2632 3 6 ly
+: 2636 8 6 wood 
+: 2652 7 6 base
+: 2660 8 6 ball. 
+- 2668
+: 2678 7 6 Old 
+: 2686 7 6 school 
+: 2694 3 6 Hol
+: 2698 3 6 ly
+: 2702 8 6 wood 
+: 2718 7 6 base
+: 2726 8 6 ball. 
+- 2734
+: 2742 7 6 Old 
+: 2750 7 6 school 
+: 2758 3 6 Hol
+: 2762 3 6 ly
+: 2766 8 6 wood 
+: 2776 10 9 ba
+: 2788 3 4 se
+: 2792 8 4 ball 
+- 2800
+: 2808 7 6 Jack 
+: 2816 3 6 Gi
+: 2820 7 6 lar
+: 2828 8 6 di’s 
+: 2842 7 11 ten 
+: 2850 7 9 feet 
+: 2858 3 8 ta
+: 2862 8 6 ll. 
+- 2870
+: 2876 7 6 Old 
+: 2884 7 6 school 
+: 2892 3 6 Hol
+: 2896 3 6 ly
+: 2900 7 6 wood 
+: 2908 10 9 ba
+: 2920 3 4 se
+: 2924 8 4 ball 
+- 2932
+: 2942 7 6 Me 
+: 2950 7 6 and 
+: 2958 7 6 Fran
+: 2966 7 9 kie 
+* 2974 7 8 A
+* 2982 3 9 va
+* 2986 52 8 lo
+* 3042 46 16 ~
+* 3090 3 9 ~
+* 3094 3 8 ~
+* 3098 4 6 n. 
+- 3102 3212
+- 3212
+: 3234 7 6 Old 
+: 3242 7 6 school 
+: 3250 3 13 Hol
+: 3254 3 13 ly
+: 3258 7 11 wood, 
+: 3266 7 4 washed 
+: 3274 7 4 up 
+: 3282 3 7 Hol
+: 3286 3 7 ly
+: 3290 8 7 wood. 
+- 3298 3340
+- 3340
+: 3362 7 6 Old 
+: 3370 7 6 school 
+: 3378 3 13 Hol
+: 3382 3 13 ly
+: 3386 7 11 wood, 
+: 3394 7 4 washed 
+: 3402 7 4 up 
+: 3410 3 7 Hol
+: 3414 3 7 ly
+: 3418 8 7 wood. 
+- 3426 3468
+- 3468
+: 3490 7 6 Old 
+: 3498 7 6 school 
+: 3506 3 13 Hol
+: 3510 3 13 ly
+: 3514 7 11 wood, 
+: 3522 7 13 washed 
+: 3530 7 13 up 
+* 3538 3 13 Hol
+* 3542 3 13 ly
+: 3546 8 17 wood. 
+- 3554 3594
+- 3594
+: 3616 7 6 Old 
+: 3624 7 6 school 
+: 3632 3 13 Hol
+: 3636 3 13 ly
+: 3640 7 11 wood, 
+: 3648 7 13 washed 
+: 3656 8 13 up 
+* 3666 3 13 Hol
+* 3670 3 13 ly
+: 3674 8 17 wood. 
+E
