@@ -73,7 +73,11 @@ export default function SongPreviewComponent({
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
   const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
-  useSpecialSongTheme(songPreview, 'regular', isEurovisionEnabled ? isEurovisionSong : () => false);
+  useSpecialSongTheme(
+    songPreview,
+    isEurovisionEnabled ? 'eurovision' : 'regular',
+    isEurovisionEnabled ? isEurovisionSong : () => false,
+  );
 
   const expanded = keyboardControl;
 
