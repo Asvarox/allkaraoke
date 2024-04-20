@@ -25,11 +25,14 @@ export class SongPreviewPagePO {
     await this.page.getByTestId('play-song-button').click();
     await this.page.getByTestId('make-song-go-fast').click();
     if (skipIntro) {
-      this.page
-        .waitForSelector('[data-test="skip-intro-info"]', { timeout: 5_000 })
-        .then((isVisible) => {
+      const locator = this.page.locator('[data-test="skip-intro-info"]');
+
+      locator
+        .waitFor({ timeout: 5_000 })
+        .then(async () => {
+          const isVisible = await locator.isVisible();
           if (isVisible) {
-            this.page.keyboard.press('Enter');
+            await this.page.keyboard.press('Enter');
           }
         })
         .catch(() => undefined);
