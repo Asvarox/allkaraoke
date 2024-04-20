@@ -27,6 +27,7 @@ export class SongLanguagesPagePO {
   }
 
   public async ensureSongLanguageIsSelected(language: string) {
+    await this.page.waitForTimeout(100);
     if (!(await this.isLanguageSelectedStr(language))) {
       await this.getCheckbox(language).click();
     }
