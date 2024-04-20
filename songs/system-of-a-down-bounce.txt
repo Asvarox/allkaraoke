@@ -1,0 +1,328 @@
+#ARTIST:System of a Down
+#TITLE:Bounce
+#CREATOR:borax
+#BPM:280
+#YEAR:2001
+#VIDEO:v=AmBYA0GZIEY
+#GENRE:None
+#LANGUAGE:English
+#GAP:262,8571428571429
+#ALLKARAOKE_ID:system-of-a-down-bounce
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.382Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=136
+#ALLKARAOKE_REALBPM:93
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=4724
+#ALLKARAOKE_VOLUME:0,76
+#P1:Bounce
+#MP3:System of a Down - Bounce.mp3
+: 2 6 9 Jump! 
+: 48 6 9 Bounce! 
+: 94 7 9 Down! 
+: 141 5 9 Up! 
+- 146 169
+- 169
+: 188 4 9 Jump! 
+- 192
+F 193 2 9 Po
+F 196 2 9 go, 
+: 199 2 9 po
+: 202 2 9 go, 
+: 205 2 9 po
+: 208 2 9 go, 
+: 211 2 9 po
+: 214 2 9 go, 
+: 217 2 9 po
+: 220 2 9 go, 
+: 223 2 9 po
+: 226 2 9 go, 
+: 229 2 9 po
+: 232 2 9 go 
+- 234
+: 235 5 9 Bounce! 
+- 240
+F 241 2 9 Po
+F 244 2 9 go, 
+: 247 2 9 po
+: 250 2 9 go, 
+: 253 2 9 po
+: 256 2 9 go, 
+: 259 2 9 po
+: 262 2 9 go, 
+: 265 2 9 po
+: 268 2 9 go, 
+: 271 2 9 po
+: 274 2 9 go, 
+: 277 2 9 po
+: 280 2 9 go 
+- 282
+: 284 5 9 Down! 
+: 308 4 9 Up! 
+- 312 313
+- 313
+: 332 5 9 Jump! 
+: 344 5 9 Bounce! 
+: 355 4 9 Up! 
+: 367 5 9 Down! 
+- 372
+: 381 2 8 I 
+: 385 2 9 went 
+: 388 4 8 out 
+: 394 2 8 on 
+: 397 1 9 a 
+: 400 4 8 date 
+- 404
+: 406 2 8 With 
+: 409 1 9 a 
+: 412 3 8 girl, 
+: 417 2 8 a 
+: 420 2 13 bit 
+: 424 2 13 late. 
+- 426
+F 430 2 8 She 
+F 433 2 8 had 
+F 438 2 8 so 
+F 441 1 8 ma
+F 443 2 8 ny 
+F 446 5 8 friends, 
+- 451
+: 454 2 15 Gli
+: 457 2 15 ding 
+: 461 2 15 through 
+: 464 2 15 ma
+: 467 2 16 ny 
+: 470 4 15 hands. 
+- 474
+F 477 3 8 I 
+F 483 2 8 brought 
+F 487 4 8 my 
+F 493 2 8 po
+F 496 2 8 go 
+F 501 2 8 stick, 
+- 503
+F 506 2 8 Just 
+F 509 2 8 to 
+F 513 2 8 show 
+F 517 2 8 her 
+F 521 1 8 a 
+F 524 2 8 trick. 
+- 526
+F 529 2 8 She 
+F 532 3 8 had 
+F 538 1 8 so 
+F 540 1 8 ma
+F 542 1 8 ny 
+F 545 5 8 friends, 
+- 550
+: 552 3 15 Gli
+: 556 2 15 ding 
+: 559 2 15 through 
+: 562 2 15 ma
+: 565 2 16 ny 
+: 568 3 15 hands. 
+- 571
+: 574 4 9 Jump! 
+- 578
+F 580 2 9 Po
+F 583 2 9 go, 
+: 586 2 9 po
+: 589 2 9 go, 
+: 592 2 9 po
+: 595 2 9 go, 
+: 598 2 9 po
+: 601 2 9 go, 
+: 604 2 9 po
+: 607 2 9 go, 
+: 610 2 9 po
+: 613 2 9 go, 
+: 616 2 9 po
+: 619 1 9 go 
+- 620
+: 621 4 9 Bounce! 
+- 625
+F 627 2 9 Po
+F 630 2 9 go, 
+: 633 2 9 po
+: 636 2 9 go, 
+: 639 2 9 po
+: 642 2 9 go, 
+: 645 2 9 po
+: 648 2 9 go, 
+: 651 2 9 po
+: 654 2 9 go, 
+: 657 2 9 po
+: 660 2 9 go, 
+: 663 2 9 po
+: 666 2 9 go 
+- 668
+: 669 5 9 Down! 
+: 694 4 9 Up! 
+- 698 699
+- 699
+: 718 4 9 Jump! 
+: 730 5 9 Bounce! 
+: 741 4 9 Up! 
+: 753 5 9 Down! 
+- 758
+: 768 2 13 Un
+: 771 2 14 an
+: 774 5 16 nounced 
+: 781 2 13 twi
+: 784 1 15 ster 
+: 786 4 16 games, 
+- 790
+: 793 2 13 All 
+: 797 2 15 play
+: 800 2 16 ers 
+: 804 2 13 with 
+: 808 2 16 no 
+: 811 4 16 names. 
+- 815
+: 817 2 15 They 
+: 820 2 16 lined 
+: 824 3 15 up 
+: 829 2 15 doub
+: 832 2 16 le 
+: 836 3 15 quick, 
+- 839
+: 842 2 15 But 
+: 845 1 15 just 
+: 848 2 15 one 
+: 851 2 15 po
+: 854 2 16 go 
+: 858 2 15 stick. 
+- 860
+: 864 2 13 Ev
+: 867 2 15 ery
+: 870 3 16 one 
+: 876 1 13 gets 
+: 879 1 15 to 
+: 882 4 16 play, 
+- 886
+: 888 2 13 Run
+: 891 2 15 a
+: 894 4 16 way, 
+: 900 2 13 ex
+: 903 2 15 pos
+: 907 3 16 ee. 
+- 910
+F 911 1 8 It 
+F 913 2 8 was 
+F 919 1 8 so 
+F 921 2 8 ex
+F 926 2 8 o
+F 930 2 8 tic, 
+- 932
+: 941 1 15 But 
+: 943 1 15 just 
+: 946 2 15 one 
+: 949 2 15 po
+: 952 2 16 go 
+: 957 2 15 stick. 
+- 959
+: 962 4 9 Jump! 
+- 966
+F 968 2 9 Po
+F 971 2 9 go, 
+: 974 2 9 po
+: 977 2 9 go, 
+: 980 2 9 po
+: 983 2 9 go, 
+: 986 2 9 po
+: 989 2 9 go, 
+: 992 2 9 po
+: 995 2 9 go, 
+: 998 2 9 po
+: 1001 2 9 go, 
+: 1004 2 9 po
+: 1007 2 9 go 
+- 1009
+: 1010 4 9 Bounce! 
+- 1014
+F 1016 2 9 Po
+F 1019 2 9 go, 
+: 1022 2 9 po
+: 1025 2 9 go, 
+: 1028 2 9 po
+: 1031 2 9 go, 
+: 1034 2 9 po
+: 1037 2 9 go, 
+: 1040 2 9 po
+: 1043 2 9 go, 
+: 1046 2 9 po
+: 1049 2 9 go, 
+: 1052 2 9 po
+: 1055 2 9 go 
+- 1057
+: 1058 5 9 Down! 
+: 1082 6 9 Up! 
+- 1088
+: 1107 4 9 Jump! 
+: 1118 5 9 Bounce! 
+: 1130 9 9 Up! 
+: 1142 4 9 Down! 
+- 1146 1720
+- 1720
+: 1739 7 8 Oh, 
+: 1749 5 8 I 
+: 1758 5 8 like 
+: 1770 2 8 to 
+: 1778 3 12 spread 
+: 1784 3 9 you 
+: 1788 6 8 ou
+: 1796 3 9 ~
+: 1801 5 8 ~t, 
+- 1806 1814
+- 1814
+: 1833 4 8 Touch
+: 1840 4 8 ing 
+: 1851 4 8 who
+: 1857 4 12 ev
+: 1864 4 12 er’s 
+: 1876 4 16 be
+F 1881 8 20 hind. 
+- 1889 1908
+- 1908
+: 1927 5 9 Jump! 
+- 1932
+F 1934 2 9 Po
+F 1937 2 9 go, 
+: 1940 2 9 po
+: 1943 2 9 go, 
+: 1946 2 9 po
+: 1949 2 9 go, 
+: 1952 2 9 po
+: 1955 2 9 go, 
+: 1958 2 9 po
+: 1961 2 9 go, 
+: 1964 2 9 po
+: 1967 2 9 go, 
+: 1970 2 9 po
+: 1973 2 9 go 
+- 1975
+: 1976 3 9 Bounce! 
+- 1979
+F 1980 2 9 Po
+F 1983 2 9 go, 
+: 1986 2 9 po
+: 1989 2 9 go, 
+: 1992 2 9 po
+: 1995 2 9 go, 
+: 1998 2 9 po
+: 2001 2 9 go, 
+: 2004 2 9 po
+: 2007 2 9 go, 
+: 2010 2 9 po
+: 2013 2 9 go, 
+: 2016 2 9 po
+: 2019 2 9 go 
+- 2021
+: 2023 5 9 Down! 
+: 2045 4 9 Up! 
+- 2049 2050
+- 2050
+: 2069 9 9 Jump! 
+: 2081 5 9 Bounce! 
+: 2091 4 9 Up! 
+: 2104 4 9 Down! 
+E

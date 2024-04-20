@@ -1,0 +1,468 @@
+#ARTIST:The Living Tombstone
+#TITLE:No Mercy
+#CREATOR:Rocky44r
+#BPM:209,93
+#YEAR:2017
+#VIDEO:v=S9uTScSgzrM
+#LANGUAGE:English
+#GAP:9599,666555518506
+#ALLKARAOKE_ID:the-living-tombstone-no-mercy
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.401Z
+#ALLKARAOKE_ARTISTORIGIN:IL
+#ALLKARAOKE_CREATORURL:https://www.youtube.com/@Rocky44r
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_SOURCEURL:https://docs.google.com/document/d/1MUYMbLcruufjdnJS0bxhhids8vM5DpCbl8zAYyUiYEY/edit?pli=1
+#ALLKARAOKE_VOLUME:0,87
+#P1:No Mercy
+#MP3:The Living Tombstone - No Mercy.mp3
+#COVER:The Living Tombstone - No Mercy - Cover.jpg
+#BACKGROUND:The Living Tombstone - No Mercy - Cover.jpg
+: 14 3 2 This 
+: 18 3 2 is 
+: 22 1 0 the 
+: 24 4 -1 worst 
+: 29 4 0 team 
+: 34 3 2 I 
+: 38 2 4 have 
+: 41 4 5 ev
+: 45 4 4 er 
+: 50 3 2 played 
+: 54 2 5 with 
+: 57 4 4 in 
+: 62 2 -1 my 
+: 65 6 2 life
+- 71
+: 74 3 4 When 
+: 78 2 5 we 
+: 81 3 7 fi
+: 84 3 5 na
+: 87 6 2 lly 
+: 94 4 4 get 
+: 99 2 5 on 
+: 102 1 7 the 
+: 104 5 5 point, 
+: 110 4 4 eve
+: 114 4 2 ry
+: 118 1 0 one 
+: 120 14 -1 dies
+- 134
+: 142 3 2 I 
+: 146 4 2 un
+: 150 3 0 ders
+: 153 4 -3 tand 
+: 158 3 0 that 
+: 162 4 2 eve
+: 166 1 4 ry 
+: 168 6 5 now 
+: 175 2 4 and 
+: 178 2 2 then 
+: 181 1 5 a 
+: 183 6 4 team 
+: 190 3 -1 won't 
+: 194 5 2 click
+- 199
+: 202 4 4 When 
+: 207 1 5 it 
+: 209 4 7 comes 
+: 214 1 5 to 
+: 216 5 2 you, 
+: 222 3 4 I 
+: 226 3 5 don't 
+: 230 2 7 think 
+: 233 4 5 I 
+: 238 3 4 can 
+: 242 3 2 sym
+: 245 2 0 path
+: 247 6 -1 ize
+- 253
+* 256 1 -1 You 
+* 257 2 11 should
+* 259 3 9 've 
+* 263 2 5 pi
+* 265 1 5 cked 
+* 266 5 5 Mer
+* 271 12 2 cy~
+- 283
+: 286 1 -1 You 
+: 288 3 11 should
+: 291 1 9 've 
+: 293 3 5 pi
+: 296 1 5 cked 
+: 298 5 5 a
+: 303 1 7 ny 
+: 305 2 5 kind 
+: 308 1 5 of 
+: 309 4 2 sup
+: 313 3 5 port
+- 316
+: 319 2 -1 We 
+: 322 2 11 en
+: 324 2 9 ded 
+: 327 2 5 up 
+: 330 5 5 lo~
+: 335 6 2 sing, 
+: 342 2 2 and 
+: 345 1 4 it's 
+: 347 1 5 all 
+: 349 1 4 your 
+: 351 3 2 fault
+- 354
+: 357 1 2 You 
+: 358 3 4 should 
+: 362 3 5 learn 
+: 366 2 4 how 
+: 369 2 0 this 
+: 372 2 2 game 
+: 375 4 -1 works
+- 379
+: 382 1 -1 You 
+: 384 3 11 should
+: 387 1 9 've 
+: 389 4 5 been 
+: 394 5 5 he~lp
+: 399 15 2 i~ng—
+- 414
+F 426 1 2 If 
+F 428 1 2 you 
+F 429 2 2 like 
+F 432 3 2 Mer
+F 435 1 2 cy 
+F 437 1 2 so 
+F 439 3 2 much, 
+F 443 1 2 why 
+F 445 1 2 don't 
+F 447 1 2 you 
+F 448 1 2 just 
+F 450 2 2 ma
+F 452 1 2 rry 
+F 454 4 2 her?
+- 458
+: 469 3 14 So 
+: 473 4 14 you're 
+: 478 1 12 the 
+: 480 5 9 type 
+: 486 3 12 that 
+: 490 4 14 gets 
+: 495 1 16 on 
+: 497 5 17 mic 
+: 503 2 16 and 
+: 506 3 14 tries 
+: 510 2 17 to 
+: 513 4 16 lec
+: 517 4 11 ture 
+: 522 1 14 me
+- 523
+: 526 7 16 You're 
+: 534 2 17 the 
+: 537 6 19 most 
+: 544 6 17 use
+: 550 2 14 less 
+: 553 4 16 per
+: 557 3 17 son 
+: 561 2 19 we 
+: 564 4 17 have 
+: 569 4 16 on 
+: 574 1 14 ou
+: 575 1 12 r 
+: 576 14 11 team
+- 590
+: 598 3 14 I've 
+: 602 3 14 ne
+: 605 1 12 ver 
+: 607 7 9 seen 
+: 615 3 12 a
+: 618 4 14 ny
+: 622 2 16 bo
+: 624 5 17 dy 
+: 630 3 16 rage 
+: 634 4 14 quite 
+: 639 1 17 as 
+: 641 4 16 hard 
+: 646 3 11 as 
+: 650 5 14 you
+- 655
+: 658 4 16 May
+: 662 3 17 be 
+: 666 1 19 you 
+: 668 3 17 should 
+: 672 5 14 go 
+: 678 3 16 back 
+: 682 3 17 to 
+: 686 2 19 pla
+: 688 4 17 ying 
+: 693 4 16 Team 
+: 698 3 14 For
+: 701 2 12 tress 
+: 704 3 11 2
+- 707
+* 710 1 11 I'm 
+* 712 1 11 not 
+* 714 2 23 gon
+* 716 1 21 na 
+* 718 2 17 be 
+* 721 5 17 Mer
+* 726 13 14 cy~
+- 739
+: 742 1 11 I'm 
+: 744 1 11 not 
+: 746 2 23 gon
+: 748 1 21 na 
+: 750 2 17 be 
+: 753 4 17 a
+: 757 2 19 ny 
+: 760 4 17 kind 
+: 765 1 17 of 
+: 766 4 16 sup
+: 770 3 17 port
+- 773
+: 776 1 11 We 
+: 778 2 23 en
+: 780 2 21 ded 
+: 783 1 17 up 
+: 785 6 16 lo
+: 791 6 14 sing, 
+: 798 1 14 and 
+: 800 1 16 you 
+: 802 3 17 got 
+: 806 2 16 all 
+: 809 1 14 mad
+- 810
+: 813 1 14 Your 
+: 815 2 16 tears 
+: 818 3 17 are 
+: 822 1 16 what 
+: 824 2 12 I 
+: 827 2 14 live 
+: 830 8 11 for
+- 838
+* 838 2 -1 You 
+* 841 3 11 should
+* 844 2 9 've 
+* 847 2 5 been 
+* 850 4 5 Mer
+* 854 28 2 cy~
+* 882 22 1 ~
+- 904
+: 870 1 11 I'm 
+: 872 2 11 not 
+: 875 2 23 gon
+: 877 1 21 na 
+: 879 2 17 be 
+: 882 3 17 a
+: 885 2 19 ny 
+: 888 4 17 kind 
+: 893 1 17 of 
+: 894 3 16 sup
+: 897 7 17 port
+- 904
+: 904 1 -1 We 
+: 906 3 11 en
+: 909 2 9 ded 
+: 912 2 5 up 
+: 915 5 4 lo
+: 920 5 2 sing, 
+: 926 3 2 and 
+: 930 1 4 it's 
+: 931 2 5 all 
+: 934 1 4 your 
+: 936 10 2 fa~
+: 946 12 0 u~
+: 958 8 -1 lt
+- 966
+: 939 2 14 Your 
+: 942 4 16 tears 
+: 947 3 17 are 
+: 951 1 16 what 
+: 953 2 12 I 
+: 956 2 14 live 
+: 959 7 11 for
+- 966 1220
+- 1220
+: 1234 2 -1 May
+: 1236 1 -1 be 
+: 1238 1 2 I'll 
+: 1240 1 2 be 
+: 1241 5 4 Trac
+: 1246 4 2 er
+- 1250
+: 1250 1 11 I'm 
+: 1252 2 11 al
+: 1254 2 11 rea
+: 1256 1 14 dy 
+: 1258 4 17 Trac
+: 1262 8 14 er
+- 1270
+: 1266 3 0 What 
+: 1270 1 4 a
+: 1271 2 4 bout 
+: 1274 2 5 Wi
+: 1276 2 4 dow
+: 1278 3 0 mak
+: 1281 3 2 er?
+- 1284
+: 1282 1 11 I'm 
+: 1284 2 11 al
+: 1286 2 11 rea
+: 1288 1 11 dy 
+: 1290 2 14 Wi
+: 1292 2 11 dow
+: 1294 3 9 mak
+: 1297 3 11 er
+- 1300
+: 1298 3 -1 I'll 
+: 1302 3 2 be 
+: 1306 4 5 Bas
+: 1310 6 2 tion
+- 1316
+: 1314 3 11 Nerf 
+: 1318 6 16 Bas
+: 1324 8 14 tion
+- 1332
+: 1330 3 0 You're 
+: 1334 1 0 right. 
+: 1336 1 5 So, 
+: 1338 4 2 Wins
+: 1342 6 0 ton
+- 1348
+: 1346 1 11 I 
+: 1348 2 11 wan
+: 1350 1 11 na 
+: 1352 1 11 be 
+: 1354 4 14 Wins
+: 1358 6 11 ton
+- 1364
+: 1362 1 -1 I 
+: 1364 1 -1 guess 
+: 1366 1 -1 I'll 
+: 1368 1 -1 be 
+: 1370 4 2 Gen
+: 1374 6 4 ji
+- 1380
+: 1378 1 11 I'm 
+: 1380 2 11 al
+: 1382 2 11 rea
+: 1384 1 14 dy 
+: 1386 3 17 Gen
+: 1389 7 14 ji
+- 1396
+: 1394 1 0 Then 
+: 1396 1 0 I'll 
+: 1398 1 0 be 
+: 1400 2 4 Mc
+: 1402 10 5 Cree~
+- 1412
+: 1410 1 12 I 
+: 1412 2 12 al
+: 1414 2 12 rea
+: 1416 1 12 dy 
+: 1418 1 12 chose 
+: 1420 2 9 Mc
+: 1422 6 9 Cree~
+- 1428
+: 1426 1 -1 I 
+: 1428 1 -1 have 
+: 1430 1 -1 an 
+: 1432 6 4 ide
+: 1438 6 2 a~
+- 1444
+: 1442 3 11 What's 
+: 1446 1 11 your 
+: 1448 6 17 ide
+: 1454 6 14 a~?
+- 1460
+: 1458 1 2 You 
+: 1460 5 5 should 
+: 1466 6 4 be...
+- 1472
+: 1470 1 5 I'm 
+: 1472 1 5 not 
+: 1474 1 5 gon
+: 1475 1 5 na 
+: 1476 1 5 be 
+: 1478 1 5 Mer
+: 1479 7 5 cy
+- 1486
+* 1478 1 -1 You 
+* 1480 4 11 should
+* 1484 1 9 've~ 
+* 1486 2 5 pi
+* 1488 1 5 cked 
+* 1490 4 5 Mer
+* 1494 28 2 cy~
+* 1522 24 1 ~
+- 1546
+: 1510 1 11 I'm 
+: 1512 1 11 not 
+: 1514 2 23 gon
+: 1516 1 21 na 
+: 1518 1 17 be 
+: 1520 3 17 a
+: 1523 4 19 ny 
+: 1528 3 17 kind 
+: 1532 1 17 of 
+: 1533 5 16 sup
+: 1538 8 17 port
+- 1546
+: 1546 1 -1 We 
+: 1548 2 11 en
+: 1550 1 9 ded 
+: 1552 1 6 up 
+: 1554 5 4 lo~
+: 1559 6 2 sing, 
+: 1566 1 2 and 
+: 1568 1 4 it's 
+: 1570 2 5 all 
+: 1573 2 4 your 
+: 1576 10 2 fa~
+: 1586 16 0 u~
+: 1602 12 -1 lt
+- 1614
+: 1579 2 14 Your 
+: 1582 3 16 tears 
+: 1586 3 17 are 
+: 1590 1 16 what 
+: 1592 3 12 I 
+: 1596 1 14 live 
+: 1598 5 11 for
+- 1603
+* 1606 1 11 I'm 
+* 1608 1 11 not 
+* 1610 2 23 gon
+* 1612 1 21 na 
+* 1614 3 17 be 
+* 1618 4 17 Mer
+* 1622 28 14 cy~
+* 1650 20 13 ~
+- 1670
+: 1640 1 -1 You 
+: 1641 3 11 should
+: 1644 1 9 've 
+: 1646 2 5 pi
+: 1648 1 5 cked 
+: 1650 2 5 a
+: 1652 3 7 ny 
+: 1656 1 5 kind 
+: 1658 1 5 of 
+: 1660 5 4 sup
+: 1665 9 5 port
+- 1674
+: 1672 1 11 We 
+: 1674 2 23 en
+: 1676 1 21 ded 
+: 1678 3 17 up 
+: 1682 4 16 lo~
+: 1686 7 14 sing, 
+: 1694 1 14 and 
+: 1696 1 16 you 
+: 1698 3 17 got 
+: 1702 1 16 all 
+: 1704 6 14 mad
+- 1710
+: 1708 1 2 You 
+: 1709 4 4 should 
+: 1714 3 5 learn 
+: 1718 1 4 how 
+: 1720 3 0 this 
+: 1724 1 2 game 
+: 1726 12 -1 works
+E

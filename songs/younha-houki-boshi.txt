@@ -1,0 +1,172 @@
+#ARTIST:Younha
+#TITLE:Houki boshi
+#CREATOR:reptils
+#BPM:309,9
+#YEAR:2006
+#PREVIEWSTART:28
+#VIDEO:v=QJGy2n7ReHk
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:6623,543078412391
+#EDITION:TV Size
+#ALLKARAOKE_ID:younha-houki-boshi
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:35.685Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_REALBPM:154,66
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5037
+#ALLKARAOKE_PREVIEWEND:61
+#ALLKARAOKE_VOLUME:1
+#MP3:Younha - Houki boshi (TV).mp3
+: 21 7 6 Yo
+: 29 7 6 zo
+: 37 3 2 ra 
+: 41 3 4 wo 
+: 45 3 6 mi
+: 49 7 4 a
+: 57 7 9 ge 
+: 65 7 4 hi
+: 73 7 1 to
+: 81 11 2 ri 
+- 92
+: 93 7 2 Ho
+: 101 3 -1 u
+: 105 3 1 ki 
+: 109 3 2 ho
+: 113 7 6 shi 
+: 121 7 7 wo 
+: 129 7 2 mi
+: 137 7 1 ta 
+: 145 8 2 no 
+- 153
+: 157 7 6 I
+* 165 3 2 ma
+* 169 3 4 su
+: 173 3 6 gu 
+: 177 7 4 a
+: 185 7 9 i
+: 193 7 4 ta
+: 201 7 1 i 
+: 209 11 2 yo 
+- 220
+: 221 7 2 Da
+: 229 3 -1 ke
+: 233 3 1 do 
+: 237 3 2 so
+: 241 7 7 ra 
+: 249 7 6 wa 
+: 257 3 2 to
+: 261 7 7 be 
+: 269 3 6 na
+: 273 7 2 i 
+: 281 7 7 ka
+: 289 3 6 ra 
+- 292
+: 293 3 2 Mo
+: 297 3 2 shi 
+: 301 3 2 a
+* 305 27 9 ta
+: 333 3 11 shi 
+: 337 27 9 ga 
+- 364
+: 365 3 11 Ho
+: 369 15 9 u
+: 385 3 9 ki 
+: 389 3 9 ho
+: 393 3 9 shi 
+: 397 3 9 ni 
+* 401 7 14 na
+* 409 7 13 re
+: 417 3 9 ta 
+: 421 5 14 na
+: 427 5 13 ra
+: 433 16 9 ba 
+- 449
+: 457 3 9 So
+: 461 3 9 ra 
+: 465 3 9 ka
+: 469 7 9 ke
+: 477 3 7 nu
+: 481 7 6 ke 
+- 488
+: 489 7 6 To
+: 497 3 7 n
+: 501 7 6 de 
+: 509 3 4 i
+: 513 8 2 ku 
+: 533 3 7 ki
+: 537 7 6 ~t
+: 545 8 2 to 
+- 553
+: 557 3 2 Ka
+: 561 27 9 na
+: 589 3 11 ra
+: 593 23 9 zu 
+: 617 3 9 to
+: 621 3 11 do
+: 625 15 9 ku 
+- 640
+: 641 3 9 Ko
+: 645 3 9 no 
+: 649 7 9 i
+: 657 3 9 sshu
+: 661 5 14 n 
+: 667 5 13 no 
+: 673 3 9 hi
+: 677 5 14 ka
+: 683 5 13 ri 
+: 689 16 9 de 
+- 705
+: 713 3 9 A
+: 717 3 9 na
+: 721 3 9 ta 
+: 725 7 9 no 
+: 733 3 7 i
+: 737 7 6 ma 
+- 744
+: 745 3 6 Te
+: 749 3 6 ra
+: 753 3 7 shi 
+: 757 7 6 so
+: 765 3 4 ra 
+: 769 8 2 wo 
+: 785 3 -3 me
+: 789 3 7 gu
+: 793 7 6 ro
+: 801 8 2 u 
+- 809
+: 813 3 2 A
+: 817 27 9 ta
+: 845 3 11 shi 
+: 849 27 9 ga 
+- 876
+: 877 3 11 Ho
+: 881 15 9 u
+: 897 3 9 ki 
+: 901 3 9 ho
+: 905 3 9 shi 
+: 909 3 9 ni 
+: 913 7 14 na
+: 921 7 13 re
+: 929 3 9 ta 
+: 933 5 14 na
+: 939 5 13 ra
+: 945 16 9 ba 
+- 961
+: 969 7 9 Ki
+: 977 3 9 tto 
+: 981 7 9 so
+: 989 3 7 ba 
+: 993 7 6 ni 
+: 1001 7 6 i
+: 1009 3 7 te 
+: 1013 7 6 a
+: 1021 3 4 ge
+: 1025 8 2 ru 
+- 1033
+: 1045 3 7 Do
+: 1049 7 6 n
+: 1057 7 2 na 
+: 1065 3 2 to
+: 1069 3 4 ki 
+* 1073 8 2 mo 
+E

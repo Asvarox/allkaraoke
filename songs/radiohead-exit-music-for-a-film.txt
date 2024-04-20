@@ -1,0 +1,199 @@
+#ARTIST:Radiohead
+#TITLE:Exit Music (For A Film)
+#CREATOR:Peschi
+#BPM:241
+#YEAR:1997
+#VIDEO:v=Bf01riuiJWA
+#LANGUAGE:English
+#GAP:22704,14937759336
+#ALLKARAOKE_ID:radiohead-exit-music-for-a-film
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.135Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2078
+#ALLKARAOKE_VOLUME:0,86
+#P1:Exit Music (For A Film)
+#MP3:Radiohead - Exit Music (For A Film).mp3
+: 16 24 6 Wake 
+: 64 6 7 from 
+: 71 5 6 your 
+: 77 25 6 sleep. 
+- 102 127
+- 127
+: 143 2 6 The 
+: 146 22 6 dry
+: 169 4 -1 ing 
+: 174 14 -1 of 
+: 201 7 6 your 
+: 209 28 6 tea
+: 238 20 4 ~rs. 
+- 258
+: 269 3 2 To
+: 273 22 2 day 
+: 321 4 2 we 
+: 326 5 2 es
+: 332 21 1 cape, 
+: 385 7 1 we 
+: 393 7 1 es
+: 401 25 1 ca
+: 427 17 -1 ~pe. 
+- 444 513
+- 513
+: 529 23 6 Pack 
+: 574 4 7 and 
+: 579 6 6 get 
+: 586 26 6 dressed, 
+- 612 630
+- 630
+: 646 3 6 Be
+: 650 26 6 fore 
+: 677 4 4 your 
+: 682 16 -1 fa
+: 699 14 6 ther 
+: 716 27 6 hears 
+: 744 20 4 us. 
+- 764
+: 771 2 2 Be
+: 774 26 2 fore 
+: 825 6 2 all 
+: 832 17 1 hell 
+- 849 880
+- 880
+: 896 11 1 Breaks 
+: 909 21 1 loo
+: 931 26 -1 ~se. 
+- 957 1016
+- 1016
+: 1032 28 12 Brea
+: 1061 28 11 ~
+: 1090 19 9 ~the, 
+: 1120 5 8 keep 
+: 1126 5 11 brea
+: 1132 3 9 ~
+: 1136 23 8 thing. 
+- 1159 1171
+- 1171
+: 1187 24 6 Don’t 
+: 1213 37 6 lose 
+: 1267 7 7 your 
+: 1275 40 6 nerve. 
+- 1315 1395
+- 1395
+: 1411 28 12 Brea
+: 1440 28 11 ~
+: 1469 27 9 ~the, 
+: 1501 6 8 keep 
+: 1508 4 11 brea
+: 1513 3 9 ~
+: 1517 31 8 thing. 
+- 1548 1549
+- 1549
+: 1565 4 1 I 
+: 1570 22 1 can’t 
+: 1594 2 1 do 
+: 1597 29 2 this 
+: 1648 6 7 a
+: 1655 40 6 lone. 
+- 1695 1838
+- 1838
+: 1854 25 6 Sing 
+: 1903 5 7 us 
+: 1909 4 6 a 
+: 1914 29 6 song, 
+- 1943 1959
+- 1959
+: 1975 3 6 A 
+: 1979 28 6 song 
+: 2008 4 4 to 
+: 2013 17 2 keep 
+: 2040 6 6 us 
+: 2047 29 6 wa
+: 2077 21 4 ~rm. 
+- 2098
+: 2112 26 2 There’s 
+: 2159 6 2 such 
+: 2166 3 2 a 
+: 2170 18 1 chill, 
+- 2188 2207
+- 2207
+: 2223 7 1 Such 
+: 2231 5 1 a 
+: 2237 31 1 chi
+: 2269 24 -1 ~ll. 
+- 2293 2351
+- 2351
+: 2367 26 14 You 
+: 2396 27 6 can 
+: 2428 25 5 laugh 
+- 2453 2474
+- 2474
+: 2490 5 11 A 
+: 2496 30 13 spine
+: 2527 30 4 less 
+: 2558 4 4 lau
+: 2563 18 2 ~gh. 
+- 2581 2601
+- 2601
+: 2617 4 11 We 
+: 2622 30 11 hope 
+: 2653 31 2 your 
+: 2685 31 4 rules 
+: 2717 31 7 and 
+: 2749 31 6 wis
+: 2781 30 10 dom 
+: 2812 29 16 choke 
+: 2842 28 18 you. 
+- 2870
+: 2876 39 6 Now 
+: 2920 5 7 we 
+: 2926 4 6 are 
+: 2931 49 6 one 
+- 2980 2981
+- 2981
+: 2997 3 6 In 
+: 3001 22 6 e
+: 3024 6 4 ver
+: 3031 16 2 las
+: 3048 13 6 ting 
+: 3062 29 6 pea
+: 3092 23 4 ~ce 
+- 3115
+: 3121 5 14 We 
+: 3127 31 14 hope 
+: 3172 4 14 that 
+: 3177 5 14 you 
+: 3183 23 13 choke 
+- 3206 3219
+- 3219
+: 3235 5 13 That 
+: 3241 6 13 you 
+: 3248 29 13 cho
+: 3278 24 11 ~ke 
+- 3302 3350
+- 3350
+: 3366 5 14 We 
+: 3372 31 14 hope 
+: 3423 4 14 that 
+: 3428 5 14 you 
+: 3434 23 13 choke 
+- 3457 3469
+- 3469
+: 3485 5 13 That 
+: 3491 7 13 you 
+: 3499 28 13 cho
+: 3528 28 11 ~ke 
+- 3556 3602
+- 3602
+: 3618 5 14 We 
+: 3624 31 14 hope 
+: 3675 4 14 that 
+: 3680 5 14 you 
+: 3686 22 13 choke 
+- 3708 3722
+- 3722
+: 3738 5 13 That 
+: 3744 5 13 you 
+: 3750 29 13 cho
+: 3780 25 11 ~ke 
+E

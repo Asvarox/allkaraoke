@@ -1,0 +1,281 @@
+#ARTIST:3-nen E-Gumi Utatan
+#TITLE:Jiriki Hongan Revolution
+#CREATOR:subkei
+#BPM:360,04
+#YEAR:2015
+#VIDEO:v=kahc4QNq8zE
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:41,111098766803934
+#ALLKARAOKE_ID:3-nen-e-gumi-utatan-jiriki-hongan-revolution
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:23.810Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=3-nen%20E-Gumi%20Utatan&cancion=Jiriki%20Hongan%20Revolution%20(TV)
+#ALLKARAOKE_VOLUME:0,87
+#P1:Jiriki Hongan Revolution
+#MP3:3-nen E-Gumi Utatan - Jiriki Hongan Revolution (TV).mp3
+#COVER:3-nen E-Gumi Utatan - Jiriki Hongan Revolution (TV).jpg
+#MEDLEYSTARTBEAT:752
+#MEDLEYENDBEAT:1467
+F 24 2 5 Ki
+F 28 4 10 ritsu! 
+F 44 4 9 rei! 
+F 60 4 9 lock 
+F 72 4 9 on!
+- 76
+F 88 2 5 Ki
+F 92 4 10 ritsu! 
+F 108 4 9 rei! 
+F 124 4 9 lock 
+F 136 4 9 on!
+- 140
+F 156 24 8 Oh 
+F 188 20 3 yeah!
+- 208
+F 220 5 9 Sen
+F 236 5 9 see! 
+F 252 3 9 tar
+F 256 2 9 get 
+F 264 11 9 on!
+- 275
+: 292 4 5 Po
+: 300 4 5 ten
+: 308 4 5 sha
+: 316 4 4 ru 
+: 324 4 5 ta
+: 332 4 7 ka
+: 340 7 5 i
+- 347
+: 356 4 -7 Ho
+: 364 4 -7 do 
+* 372 4 -7 men
+* 380 4 -8 do
+: 388 4 -7 ku
+* 396 5 -5 sa
+* 405 4 -3 i
+- 409
+: 413 2 -7 Do
+: 417 3 -8 ro
+: 424 6 -7 ppuauto 
+: 436 4 -12 men
+: 444 3 -7 ta
+: 449 5 -8 ri
+: 456 3 -5 ti
+- 459
+: 469 4 5 Hi 
+: 477 4 2 ni
+: 485 2 4 chi
+: 489 5 5 jo
+: 497 2 5 u 
+: 501 2 4 o 
+: 505 2 2 ryo
+: 509 2 4 u
+: 513 3 5 ga
+: 521 15 7 shi
+- 536
+: 549 4 -7 Bo
+: 557 4 -7 ku
+: 565 4 -10 ra 
+* 573 2 -8 wa 
+: 577 4 -7 u
+: 585 5 -8 ta
+: 593 2 -8 ta
+: 597 5 -8 ne
+: 605 9 -7 ga
+: 617 6 -5 o 
+: 629 2 -3 shi
+: 633 1 -7 ~
+: 637 13 -7 te
+- 650
+: 661 3 2 Na
+: 665 2 4 i
+: 669 10 5 fu
+- 679
+: 693 4 9 Ka
+: 701 4 7 ku
+: 709 4 7 shi
+: 717 3 5 mo
+: 721 3 4 ~
+: 728 3 4 tta
+: 732 33 5 ~
+- 765
+: 776 8 -7 Ho
+: 788 3 -5 tto
+: 792 3 -3 ke
+: 796 7 -5 ba 
+: 808 5 -5 ki
+: 816 3 -5 tto 
+: 820 3 -3 da
+: 824 2 -2 re
+: 829 8 -3 ka
+- 837
+: 845 5 -3 Ya
+: 853 3 0 ~
+* 861 4 -2 tte 
+: 869 5 -2 ku
+* 877 3 -3 re
+: 881 4 -5 ru 
+: 889 19 -7 to
+- 908
+: 916 2 2 Do
+: 920 2 4 ko
+: 924 17 5 ka 
+: 948 3 2 ta
+: 952 3 4 ni
+: 956 6 5 n 
+: 965 6 5 go
+: 973 6 9 to 
+: 981 6 10 da
+: 989 6 9 ~
+: 1000 33 7 tta
+- 1033
+: 1041 2 -5 Da
+: 1045 2 -3 ke
+: 1049 2 -3 do
+: 1053 45 -2 ~
+- 1098
+* 1116 2 0 Mis
+* 1121 3 0 ter 
+* 1129 4 -2 teach
+* 1137 1 -2 er 
+: 1141 4 -2 o
+: 1149 2 -3 shi
+: 1153 4 -3 e
+: 1161 5 -7 te 
+: 1168 3 -7 mi
+: 1173 4 -7 kan
+: 1181 5 -5 sei 
+: 1189 2 -7 no 
+: 1193 5 -5 bo
+: 1201 5 -3 ku
+: 1209 2 -5 ra
+: 1213 13 -3 ~
+- 1226
+: 1233 2 -7 A
+: 1237 2 -5 na
+: 1241 2 -7 ta 
+: 1245 2 0 to 
+: 1249 4 0 iu 
+: 1257 5 -2 fu
+: 1264 2 -2 ra
+: 1268 2 -2 ku 
+: 1272 2 -2 no 
+: 1277 2 -5 tar
+: 1281 3 -3 ~
+: 1289 4 -6 get
+- 1293
+: 1297 2 -6 U
+* 1301 2 -6 chi
+* 1305 2 -6 nu
+: 1309 5 -5 ke
+: 1317 2 -3 ru 
+: 1321 4 -2 de
+: 1329 2 -3 sho
+: 1333 2 -5 u 
+: 1337 22 -2 ka?
+- 1359
+: 1369 2 -5 I
+: 1373 5 -2 do
+: 1381 1 0 mu 
+: 1385 4 -2 ka
+: 1393 4 0 gi
+: 1401 23 -2 ri
+- 1424
+: 1432 2 -2 Ka
+: 1436 4 0 no
+: 1444 2 -5 u
+: 1449 5 0 sei 
+: 1457 4 -5 wa 
+: 1465 4 0 haa
+: 1472 3 -2 fu 
+: 1476 3 -3 ando 
+: 1481 10 -5 haafu
+- 1491
+: 1500 2 0 Mis
+: 1505 4 0 ter 
+: 1513 4 -2 teach
+: 1521 1 -2 er 
+: 1525 4 -2 mi
+: 1533 2 -3 te
+: 1537 4 -3 i
+: 1545 5 -7 te 
+* 1553 2 -7 ma
+* 1557 3 -7 yo
+* 1561 2 -7 i 
+* 1565 5 -5 oo
+* 1573 2 -7 ki 
+: 1577 4 -5 bo
+: 1585 5 -3 ku
+: 1593 2 -5 ra
+: 1597 12 -3 ~
+- 1609
+: 1617 2 -7 Da
+: 1621 2 -5 re 
+: 1625 2 -7 yo
+: 1629 2 0 ri 
+: 1633 4 0 mo 
+* 1641 5 -2 a
+* 1648 2 -2 na
+* 1652 2 -2 ta 
+: 1656 2 -2 no 
+: 1661 2 -3 ta
+: 1665 5 -3 me 
+: 1673 5 -6 ni
+- 1678
+: 1681 2 -6 Mo
+: 1685 2 -6 u 
+: 1689 2 -6 be
+: 1693 5 -5 n
+: 1701 2 -3 kyo
+: 1705 4 -2 u
+: 1713 2 -3 chu
+: 1717 2 -5 u 
+: 1721 2 0 sa
+: 1725 19 -2 ~
+- 1744
+: 1752 2 -5 Sa
+: 1757 4 -2 tsu
+: 1765 2 0 i 
+: 1769 5 -2 da
+: 1777 4 0 ke 
+: 1785 24 -2 ga
+- 1809
+: 1817 2 -2 A
+: 1821 4 0 na
+: 1829 2 -5 ta 
+: 1833 5 0 e 
+: 1841 4 -5 no 
+* 1849 4 0 me
+* 1857 2 -2 sse
+* 1861 2 -3 e
+* 1866 8 -5 ji
+- 1874
+: 1877 2 10 Ji
+: 1881 2 10 ri
+: 1885 6 8 ki 
+* 1893 2 0 ga
+* 1897 2 -2 chi 
+* 1901 5 -4 de 
+: 1909 2 7 ho
+: 1913 2 8 n
+: 1917 5 10 gan 
+: 1925 2 -5 i
+: 1929 2 -4 ku 
+: 1933 5 -2 yo 
+: 1941 5 -5 re
+: 1949 17 -2 bo
+: 1969 2 -3 ryu
+: 1973 1 -2 u
+: 1977 31 0 shon
+- 2008
+F 2012 24 8 Oh 
+F 2044 28 3 yeah!
+- 2072
+F 2077 5 9 Sen
+F 2093 5 9 see! 
+F 2109 3 9 tar
+F 2113 2 9 get 
+F 2121 11 9 on!
+E

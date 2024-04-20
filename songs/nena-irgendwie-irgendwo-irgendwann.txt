@@ -1,0 +1,367 @@
+#ARTIST:Nena
+#TITLE:Irgendwie, irgendwo, irgendwann
+#CREATOR:Canni
+#BPM:350
+#YEAR:1984
+#PREVIEWSTART:72
+#VIDEO:v=oMHLkcc9I9c
+#LANGUAGE:German
+#GAP:32594,285714285717
+#ALLKARAOKE_ID:nena-irgendwie-irgendwo-irgendwann
+#ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.127Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:NENA
+#ALLKARAOKE_REALBPM:102
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=502
+#ALLKARAOKE_PREVIEWEND:100
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Nena - Irgendwie, irgendwo, irgendwann.mp3
+: 23 3 -1 Im 
+: 31 3 -1 Sturz 
+: 38 2 6 durch 
+: 45 4 7 Raum 
+: 52 3 6 und 
+: 59 11 1 Zeit 
+- 70
+: 79 3 1 Rich
+: 86 4 1 tung 
+: 93 3 2 Un
+: 97 4 1 end
+: 104 3 -3 lich
+* 113 15 -1 keit 
+- 128 216
+- 216
+: 239 5 6 Flie
+: 246 4 6 gen 
+: 252 4 7 Mot
+: 259 3 6 ten 
+: 264 4 7 in 
+: 270 4 6 das 
+: 280 4 6 Licht 
+- 284
+: 300 3 6 Ge
+* 305 9 7 nau 
+: 315 4 6 wie 
+: 322 3 7 du 
+: 326 3 6 und 
+: 333 5 2 ich 
+- 338 444
+- 444
+: 467 2 7 Ir
+: 470 2 7 gend
+: 475 4 9 wie 
+: 482 3 7 fängt 
+: 489 5 7 ir
+: 496 2 6 gend
+: 500 6 7 wann 
+- 506
+: 522 2 7 Ir
+: 525 2 7 gend
+: 530 5 9 wo 
+: 537 2 7 die 
+: 541 5 7 Zu
+: 548 4 6 kunft 
+: 556 9 9 an 
+- 565
+: 577 3 7 Ich 
+: 585 4 11 war
+: 592 2 9 te 
+: 596 2 9 nicht 
+: 603 4 7 mehr 
+* 610 8 11 lang 
+- 618 659
+- 659
+: 682 5 4 Lie
+: 689 2 6 be 
+: 693 4 9 wird 
+: 700 5 7 aus 
+: 710 3 7 Mut 
+: 717 2 6 ge
+: 721 4 7 macht 
+- 725
+: 737 5 4 Denk 
+: 744 3 6 nicht 
+: 751 4 9 lang
+: 757 2 7 e 
+: 761 7 7 nach 
+- 768
+: 771 4 6 Wir 
+: 779 5 11 fahr’n 
+: 785 4 9 auf 
+: 792 5 9 Feu
+: 798 3 7 er
+: 803 5 7 rä
+: 810 5 6 dern 
+- 815
+: 818 4 6 Rich
+: 825 5 4 tung 
+: 835 4 6 Zu
+: 842 3 6 kunft 
+: 849 4 6 durch 
+: 856 3 7 die 
+* 860 6 9 Nacht 
+- 866 929
+- 929
+: 952 3 4 Gib 
+: 959 3 6 mir 
+: 964 6 7 die 
+: 973 6 0 Hand 
+- 979
+: 986 2 6 Ich 
+: 992 6 7 bau 
+: 1001 4 9 dir 
+: 1007 3 7 ein 
+: 1014 3 7 Schloss 
+: 1019 4 6 aus 
+: 1028 5 2 Sand 
+- 1033
+: 1042 5 2 Ir
+: 1049 3 -1 gend
+: 1056 9 -5 wie, 
+: 1066 8 -5 ir
+: 1077 3 4 gend
+: 1084 13 2 wo 
+- 1097
+: 1098 1 -1 I
+: 1100 3 -3 ~r
+: 1104 4 -5 gend
+: 1111 10 -1 wann 
+- 1121 1149
+- 1149
+: 1172 4 4 Die 
+: 1180 3 6 Zeit 
+: 1185 3 7 ist 
+: 1194 9 0 reif 
+- 1203
+: 1208 3 6 Für 
+: 1213 5 7 ein 
+* 1221 3 9 biss
+: 1228 3 7 chen 
+: 1235 4 7 Zärt
+: 1240 3 6 lich
+: 1249 11 2 keit 
+- 1260
+: 1264 4 2 Ir
+: 1271 3 -1 gend
+: 1278 9 -5 wie, 
+: 1288 6 -5 ir
+: 1298 4 4 gend
+: 1305 10 2 wo 
+- 1315
+: 1317 6 -1 Ir
+: 1326 7 2 gend
+: 1338 9 2 wann 
+- 1347 1495
+- 1495
+: 1518 4 -1 Im 
+: 1527 2 -1 Sturz 
+: 1533 3 6 durch 
+* 1541 4 7 Zeit 
+: 1547 3 6 und 
+: 1555 12 1 Raum 
+- 1567
+: 1573 6 1 Er
+: 1583 3 1 wacht 
+: 1589 4 2 aus 
+: 1596 4 1 ei
+: 1602 2 -3 nem 
+: 1610 9 -1 Traum 
+- 1619 1715
+- 1715
+: 1738 2 6 Nur 
+: 1741 3 6 ein 
+: 1748 3 7 kur
+: 1755 4 6 zer 
+: 1760 6 7 Au
+: 1767 3 6 gen
+* 1775 4 6 blick 
+- 1779
+: 1796 4 6 Dann 
+: 1803 4 7 kehrt 
+: 1810 3 6 die 
+: 1814 3 7 Nacht 
+: 1822 4 6 zu
+: 1829 3 2 rück 
+- 1832 1939
+- 1939
+: 1962 2 7 Ir
+: 1965 2 7 gend
+: 1970 4 9 wie 
+: 1977 3 7 fängt 
+: 1984 5 7 ir
+: 1991 2 6 gend
+: 1995 8 7 wann 
+- 2003
+: 2017 2 4 Ir
+: 2020 2 6 gend
+: 2025 5 9 wo 
+: 2032 2 7 die 
+: 2036 5 7 Zu
+: 2043 4 6 kunft 
+: 2051 9 9 an 
+- 2060
+: 2072 3 7 Ich 
+: 2080 4 11 war
+: 2087 2 9 te 
+: 2091 2 9 nicht 
+: 2098 4 7 mehr 
+: 2105 8 11 lang 
+- 2113 2154
+- 2154
+: 2177 5 4 Lie
+: 2184 2 6 be 
+: 2188 4 9 wird 
+: 2195 5 7 aus 
+: 2205 3 7 Mut 
+: 2212 2 6 ge
+: 2218 4 7 macht 
+- 2222
+: 2232 5 4 Denk 
+: 2239 3 6 nicht 
+: 2246 4 9 lang
+: 2252 2 7 e 
+: 2256 7 7 nach 
+- 2263
+: 2266 4 6 Wir 
+* 2274 5 11 fahr’n 
+: 2280 4 9 auf 
+: 2287 5 9 Feu
+: 2293 3 7 er
+: 2298 5 7 rä
+: 2305 5 6 dern 
+- 2310
+: 2313 4 6 Rich
+: 2321 5 4 tung 
+: 2330 4 6 Zu
+: 2337 3 6 kunft 
+: 2344 4 6 durch 
+: 2351 3 7 die 
+: 2355 6 9 Nacht 
+- 2361 2424
+- 2424
+: 2447 3 4 Gib 
+: 2454 3 6 mir 
+: 2459 6 7 die 
+: 2467 9 0 Hand 
+- 2476
+: 2481 2 6 Ich 
+: 2487 6 7 bau 
+: 2496 4 9 dir 
+: 2502 3 7 ein 
+: 2509 3 7 Schloss 
+: 2514 4 6 aus 
+: 2523 5 2 Sand 
+- 2528
+: 2537 5 2 Ir
+: 2544 3 -1 gend
+: 2551 9 -5 wie, 
+: 2561 8 -5 ir
+* 2571 3 4 gend
+: 2578 13 2 wo 
+- 2591
+: 2592 1 -1 I
+: 2594 3 -3 ~r
+: 2598 4 -5 gend
+: 2606 9 -1 wann 
+- 2615 2645
+- 2645
+: 2668 4 4 Die 
+: 2676 3 6 Zeit 
+: 2681 3 7 ist 
+: 2690 9 0 reif 
+- 2699
+: 2704 3 6 Für 
+: 2708 6 7 ein 
+: 2717 3 9 biss
+: 2724 3 7 chen 
+: 2731 4 7 Zärt
+: 2737 3 6 lich
+: 2745 11 2 keit 
+- 2756
+: 2759 4 2 Ir
+: 2766 3 -1 gend
+: 2773 9 -5 wie, 
+: 2783 6 -5 ir
+: 2793 4 4 gend
+: 2800 10 2 wo 
+- 2810
+: 2813 5 -1 Ir
+: 2821 7 2 gend
+: 2834 9 2 wann 
+- 2843 3670
+- 3670
+: 3693 3 4 Gib 
+: 3700 3 6 mir 
+: 3705 6 7 die 
+: 3713 9 0 Hand 
+- 3722
+: 3727 2 6 Ich 
+: 3733 6 7 bau 
+: 3742 4 9 dir 
+: 3748 3 7 ein 
+: 3755 3 7 Schloss 
+: 3760 4 6 aus 
+: 3769 5 2 Sand 
+- 3774
+: 3784 5 2 Ir
+: 3791 3 -1 gend
+: 3798 9 -5 wie, 
+: 3808 8 -5 ir
+: 3818 3 4 gend
+: 3825 13 2 wo 
+- 3838
+: 3839 1 -1 I
+: 3841 3 -3 ~r
+: 3845 4 -5 gend
+: 3853 9 -1 wann 
+- 3862 3891
+- 3891
+: 3914 4 4 Die 
+: 3922 3 6 Zeit 
+: 3927 3 7 ist 
+: 3936 9 0 reif 
+- 3945
+: 3950 3 6 Für 
+: 3954 6 7 ein 
+: 3963 3 9 biss
+: 3970 3 7 chen 
+: 3977 4 7 Zärt
+: 3983 3 6 lich
+: 3991 11 2 keit 
+- 4002
+: 4004 4 2 Ir
+: 4011 3 -1 gend
+: 4018 9 -5 wie, 
+: 4028 6 -5 ir
+: 4038 4 4 gend
+: 4045 10 2 wo 
+- 4055
+: 4058 5 -1 Ir
+: 4066 7 2 gend
+: 4079 9 2 wann 
+- 4088 4203
+- 4203
+: 4226 5 2 Ir
+: 4233 3 -1 gend
+: 4240 9 -5 wie, 
+: 4250 8 -5 ir
+: 4261 3 4 gend
+: 4268 13 2 wo 
+- 4281
+: 4282 1 -1 I
+: 4284 3 -3 ~r
+: 4288 4 -5 gend
+: 4295 9 -1 wann 
+- 4304 4424
+- 4424
+: 4447 5 11 Ir
+: 4454 3 11 gend
+* 4462 9 12 wie, 
+: 4472 8 12 ir
+: 4481 4 11 gend
+: 4489 9 7 wo 
+- 4498
+: 4501 6 12 Ir
+: 4509 8 11 gend
+: 4523 14 9 wann 
+E
