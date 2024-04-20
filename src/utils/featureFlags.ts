@@ -3,4 +3,5 @@ export const FeatureFlags = {
   WebsocketsRemoteMics: 'websockets_remote_mics',
   LandingPageBackground: 'landing_page_background',
   VirtualizedSongSelection: 'virtualized_song_selection',
+  Eurovision: 'eurovision',
 } as const;

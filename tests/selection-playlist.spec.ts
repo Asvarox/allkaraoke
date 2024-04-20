@@ -57,6 +57,7 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
     await pages.songListPage.goToPlaylist('All');
     await page.keyboard.press('ArrowLeft');
     await page.keyboard.press('ArrowUp');
+    await page.keyboard.press('ArrowUp');
     await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
   });
 

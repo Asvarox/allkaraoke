@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { useBackground } from 'Elements/LayoutWithBackground';
+import { BackgroundContext, useBackground } from 'Elements/LayoutWithBackground';
 import { focused, typography } from 'Elements/cssMixins';
 import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import LayoutGame from 'Scenes/LayoutGame';
@@ -23,7 +23,7 @@ import useBaseUnitPx from 'hooks/useBaseUnitPx';
 import useBlockScroll from 'hooks/useBlockScroll';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
-import { ComponentProps, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ComponentProps, memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'wouter';
 
 interface Props {
@@ -115,6 +115,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
   const expandSong = useCallback(() => setKeyboardControl(false), [setKeyboardControl]);
 
   const loading = isLoading || !groupedSongList || !width;
+  const forceFlag = selectedPlaylist === 'Eurovision';
 
   const container = useRef<HTMLDivElement>(null);
 
@@ -253,12 +254,14 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                       data-focused={!showFilters && keyboardControl && songItem.index === focusedSong}
                       data-test={`song-${songItem.song.id}${group.isNew ? '-new-group' : ''}`}
                       data-group={group.letter}
+                      forceFlag={forceFlag}
                     />
                   );
                 }}
                 placeholder={<SongListEntrySkeleton style={{ visibility: 'hidden' }} />}
                 context={{
                   songPreview: {
+                    forceFlag,
                     isPopular: !!songPreviewInGroup?.isPopular,
                     keyboardControl: !keyboardControl,
                     onPlay: onSongSelected,
@@ -299,7 +302,16 @@ const Container = styled.div<{ songsPerRow: number }>`
   max-height: 100vh;
 `;
 
-const SongImageBackground = styled(BackgroundThumbnail)`
+const SongImageBackground = (props: ComponentProps<typeof SongImageBackgroundBase>) => {
+  const { theme } = useContext(BackgroundContext);
+  if (theme === 'eurovision') {
+    return null;
+  }
+
+  return <SongImageBackgroundBase {...props} />;
+};
+
+const SongImageBackgroundBase = styled(BackgroundThumbnail)`
   position: fixed;
   inset: 0;
   width: 100%;

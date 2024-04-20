@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { useBackground } from 'Elements/LayoutWithBackground';
+import { backgroundTheme, useBackground } from 'Elements/LayoutWithBackground';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'Elements/VideoPlayer';
-import { ChristmasModeSetting, GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
+import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import {
   ExpandedData,
   FinalSongCard,
@@ -10,7 +10,7 @@ import {
   SongListEntryDetailsTitle,
 } from 'Scenes/SingASong/SongSelection/Components/SongCard';
 import SongSettings from 'Scenes/SingASong/SongSelection/Components/SongSettings';
-import isChristmasSong from 'Songs/utils/isChristmasSong';
+import { isEurovisionSong } from 'Songs/utils/specialSongsThemeChecks';
 import useDebounce from 'hooks/useDebounce';
 import useViewportSize from 'hooks/useViewportSize';
 import { SingSetup, SongPreview } from 'interfaces';
@@ -26,28 +26,33 @@ interface Props {
   width: number;
   height: number;
   isPopular: boolean;
+  forceFlag: boolean;
 }
 
 const PREVIEW_LENGTH = 30;
 
-const useChristmasSongTheme = (songPreview: SongPreview) => {
-  const [christmasMode, setChristmasMode] = useSettingValue(ChristmasModeSetting);
-  const christmasSong = isChristmasSong(songPreview);
-  useBackground(true, christmasSong);
+const useSpecialSongTheme = (
+  songPreview: SongPreview,
+  theme: backgroundTheme,
+  checkFn: (song: SongPreview) => boolean,
+) => {
+  const [backgroundTheme, setBackgroundTheme] = useSettingValue(BackgroundThemeSetting);
+  const isSpecialThemeSong = checkFn(songPreview);
+  useBackground(true, isSpecialThemeSong ? theme : 'regular');
 
   useEffect(() => {
-    if (christmasSong) {
-      setChristmasMode(true);
+    if (isSpecialThemeSong) {
+      setBackgroundTheme(theme);
     }
   }, []);
 
   useEffect(() => {
-    if (!christmasMode && christmasSong) {
-      setChristmasMode(true);
-    } else if (christmasMode && !christmasSong) {
-      setChristmasMode(false);
+    if (backgroundTheme !== theme && isSpecialThemeSong) {
+      setBackgroundTheme(theme);
+    } else if (backgroundTheme === theme && !isSpecialThemeSong) {
+      setBackgroundTheme('regular');
     }
-  }, [christmasMode, songPreview]);
+  }, [theme, backgroundTheme, songPreview]);
 };
 
 export default function SongPreviewComponent({
@@ -60,11 +65,12 @@ export default function SongPreviewComponent({
   onExitKeyboardControl,
   onPlay,
   isPopular,
+  forceFlag,
 }: Props) {
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  // useChristmasSongTheme(songPreview);
+  useSpecialSongTheme(songPreview, 'eurovision', isEurovisionSong);
 
   const expanded = keyboardControl;
 
@@ -105,6 +111,7 @@ export default function SongPreviewComponent({
         <SongBPMIndicator width={videoWidth} height={videoHeight} left={left} top={top} song={songPreview} />
       )}
       <SongPreviewContainer
+        forceFlag={forceFlag}
         isPopular={isPopular}
         background={expanded || showVideo}
         video={

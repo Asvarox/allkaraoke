@@ -1,3 +1,4 @@
+import { backgroundTheme } from 'Elements/LayoutWithBackground';
 import { milliseconds } from 'interfaces';
 import { useLayoutEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
@@ -75,7 +76,7 @@ export const BackgroundMusicSetting = new Setting<ValuesType<typeof BackgroundMu
   BackgroundMusic[0],
 );
 
-export const ChristmasModeSetting = new Setting<boolean>('ChristmasModeSetting', false, 'memory');
+export const BackgroundThemeSetting = new Setting<backgroundTheme>('BackgroundThemeSetting', 'regular', 'memory');
 export const AutoEnableFullscreenSetting = new Setting<boolean>(
   'AutoEnableFullscreenSetting',
   true,
