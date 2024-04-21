@@ -21,7 +21,7 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
     // When it happens it restarts the intersection observer with currently attached groups
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const id = entry.target.getAttribute('data-group-letter')!;
+        const id = entry.target.getAttribute('data-group-name')!;
 
         if (entry.isIntersecting) {
           setActiveGroups((current) => [...current, id]);
@@ -32,7 +32,7 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
     });
 
     const mutationObserver = new MutationObserver(() => {
-      const element = document.querySelectorAll(`[data-group-letter]`);
+      const element = document.querySelectorAll(`[data-group-name]`);
       observer.disconnect();
       setActiveGroups([]);
 
@@ -59,15 +59,15 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
     <>
       <Container>
         {groupedSongList.map((group) => {
-          const active = activeGroups.includes(group.letter);
+          const active = activeGroups.includes(group.name);
           return (
             <SongsGroupButton
-              key={group.letter}
+              key={group.name}
               active={active}
               onClick={() => onScrollToGroup(group)}
               data-active={active}
-              data-test={`group-navigation-${group.letter}`}>
-              {group.letter}
+              data-test={`group-navigation-${group.name}`}>
+              {group.name}
             </SongsGroupButton>
           );
         })}

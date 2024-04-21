@@ -6,6 +6,7 @@
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
+    "@leeoniya/ufuzzy": "^1.0.14",
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
     "@mui/system": "^5.15.14",

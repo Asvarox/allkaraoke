@@ -15,7 +15,13 @@ export interface PlaylistEntry {
   display?: ReactNode;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
+  groupingFn?: (song: SongPreview) => string;
+  sortingFn?: (a: SongPreview, b: SongPreview) => number;
 }
+
+const getEurovisionYear = (song: SongPreview) => {
+  return song.edition?.toLowerCase().replace('esc ', '')?.trim() ?? undefined;
+};
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
   const songLanguages = useLanguageList(songs);
@@ -69,6 +75,22 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
               </EurovisionDisplay>
             ),
             filters: { edition: 'esc' },
+            groupingFn: (song) => {
+              const year = getEurovisionYear(song);
+              if (year) {
+                const decade = Math.floor(+year / 10) * 10;
+                return `${decade} - ${Math.min(decade + 9, new Date().getFullYear())}`;
+              }
+              return 'Other';
+            },
+            sortingFn: (a, b) => {
+              const yearA = getEurovisionYear(a);
+              const yearB = getEurovisionYear(b);
+              if (yearA && yearB) {
+                return +yearB - +yearA;
+              }
+              return 0;
+            },
           }
         : null,
       selectionOnTop ? all : selection,

@@ -133,7 +133,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
         if (songGroup) {
           const songIndex = getSongIndex(cleanSongId);
-          list.current?.scrollToSongInGroup(songGroup.letter, songIndex, 'auto');
+          list.current?.scrollToSongInGroup(songGroup.name, songIndex, 'auto');
           return true;
         }
         return false;
@@ -214,7 +214,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 moveToSong(group.songs[0].index);
 
                 // wait for the song to be selected and scrolled into view - then override the scroll and scroll to the group instead
-                setTimeout(() => list.current?.scrollToGroup(group.letter), 20);
+                setTimeout(() => list.current?.scrollToGroup(group.name), 20);
               }}
             />
             <SongListContainer
@@ -233,13 +233,13 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 groupHeight={Math.floor(songGroupHeight) + Math.floor(LIST_GAP_REM * baseUnit)}
                 components={components}
                 renderGroup={(group) => (
-                  <SongsGroupContainer key={group.letter} highlight={group.letter === 'New'}>
-                    <SongsGroupHeader data-group-letter={group.letter}>{group.letter}</SongsGroupHeader>
+                  <SongsGroupContainer key={group.name} highlight={group.name === 'New'}>
+                    <SongsGroupHeader data-group-name={group.name}>{group.name}</SongsGroupHeader>
                   </SongsGroupContainer>
                 )}
                 perRow={songsPerRow}
                 renderItem={(songItem, group) => {
-                  const isFocused = songItem.index === focusedSong && group.letter === focusedGroup;
+                  const isFocused = songItem.index === focusedSong && group.name === focusedGroup;
                   return (
                     <SongListEntry
                       {...(showFilters || !keyboardControl ? { 'data-unfocusable': true } : {})}
@@ -249,11 +249,11 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                       handleClick={isFocused ? expandSong : moveToSong}
                       focused={!showFilters && keyboardControl && isFocused}
                       index={songItem.index}
-                      groupLetter={group.letter}
+                      groupLetter={group.name}
                       data-song-index={songItem.index}
                       data-focused={!showFilters && keyboardControl && songItem.index === focusedSong}
                       data-test={`song-${songItem.song.id}${group.isNew ? '-new-group' : ''}`}
-                      data-group={group.letter}
+                      data-group={group.name}
                       forceFlag={forceFlag}
                     />
                   );

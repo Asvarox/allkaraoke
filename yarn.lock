@@ -2859,6 +2859,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@leeoniya/ufuzzy@npm:^1.0.14":
+  version: 1.0.14
+  resolution: "@leeoniya/ufuzzy@npm:1.0.14"
+  checksum: 852b580a8eaaf92e2d448f5b720e3c53e4bea22187bf5e8459256677c47183321b47b8384982e15751f42da7e77a216fd86c80e6185677d8270adeab4a4fb771
+  languageName: node
+  linkType: hard
+
 "@mdx-js/react@npm:^3.0.0, @mdx-js/react@npm:^3.0.1":
   version: 3.0.1
   resolution: "@mdx-js/react@npm:3.0.1"
@@ -12421,6 +12428,7 @@ __metadata:
     "@emotion/cache": "npm:^11.11.0"
     "@emotion/react": "npm:^11.11.4"
     "@emotion/styled": "npm:^11.11.0"
+    "@leeoniya/ufuzzy": "npm:^1.0.14"
     "@mdx-js/react": "npm:^3.0.1"
     "@mui/icons-material": "npm:^5.15.14"
     "@mui/material": "npm:^5.15.14"
