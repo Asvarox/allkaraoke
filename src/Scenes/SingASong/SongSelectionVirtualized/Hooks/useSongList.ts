@@ -168,19 +168,21 @@ export default function useSongList() {
         songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
       });
     } else {
-      const newSongs = filteredList.filter((song) => song.isNew);
+      if (!playlist?.hideNew) {
+        const newSongs = filteredList.filter((song) => song.isNew);
 
-      if (newSongs.length && newSongs.length < 50) {
-        groups.push({
-          name: 'New',
-          isNew: true,
-          songs: newSongs.map((song) => ({
-            song,
-            index: filteredList.indexOf(song),
+        if (newSongs.length && newSongs.length < 50) {
+          groups.push({
+            name: 'New',
+            isNew: true,
+            songs: newSongs.map((song) => ({
+              song,
+              index: filteredList.indexOf(song),
 
-            isPopular: popular.includes(song.id),
-          })),
-        });
+              isPopular: popular.includes(song.id),
+            })),
+          });
+        }
       }
 
       const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;

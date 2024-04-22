@@ -2246,6 +2246,35 @@
     "local": false
   },
   {
+    "id": "amaia-y-alfred-tu-cancion",
+    "title": "Tu Canción",
+    "artist": "Amaia y Alfred",
+    "video": "RDm-GGHYfU4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 327.66,
+    "gap": 5872.8584508331805,
+    "year": "2018",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T19:07:11.730Z",
+    "edition": "ESC 2018",
+    "genre": "Pop",
+    "realBpm": 121,
+    "volume": 0.83,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Amaia%20y%20Alfred&cancion=Tu%20canci%C3%B3n",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "amaiayalfredtucancion",
+    "local": false
+  },
+  {
     "id": "amanda-miguel-asi-no-te-amara-jamas",
     "title": "Así no te amará jamás",
     "artist": "Amanda Miguel",
@@ -2782,6 +2811,35 @@
     "local": false
   },
   {
+    "id": "anggun-echo-you-and-i",
+    "title": "Echo (You And I) ",
+    "artist": "Anggun",
+    "video": "SnSmB7uBo-Y",
+    "language": [
+      "French",
+      "English"
+    ],
+    "bpm": 274.54,
+    "gap": 10236.53675238581,
+    "year": "2012",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-22T17:58:43.011Z",
+    "edition": "ESC 2012",
+    "realBpm": 137,
+    "volume": 0.72,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18004",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anggunechoyouandi",
+    "local": false
+  },
+  {
     "id": "ania-dabrowska-nigdy-wiecej-nie-tancz-ze-mna",
     "title": "Nigdy więcej nie tańcz ze mną",
     "artist": "Ania Dąbrowska",
@@ -3090,6 +3148,35 @@
     ],
     "tracksCount": 1,
     "search": "arrahmanthepussycatdollsfeatnicolescherzingerjaihoyouaremydestiny",
+    "local": false
+  },
+  {
+    "id": "aram-mp3-not-alone",
+    "title": "Not Alone",
+    "artist": "Aram MP3",
+    "video": "ChkJpnOgIwQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 17652.14285714286,
+    "year": "2014",
+    "artistOrigin": "AM",
+    "lastUpdate": "2024-04-22T17:58:43.072Z",
+    "edition": "ESC 2014",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 0.98,
+    "author": "aac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=98211",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17206",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arammp3notalone",
     "local": false
   },
   {
@@ -5811,6 +5898,34 @@
     "local": false
   },
   {
+    "id": "barbara-pravi-voila",
+    "title": "Voilà",
+    "artist": "Barbara Pravi",
+    "video": "VJuD7AnV-uw",
+    "language": [
+      "French"
+    ],
+    "bpm": 210,
+    "gap": 3140,
+    "year": "2020",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-22T17:58:43.131Z",
+    "edition": "ESC 2021",
+    "realBpm": 135,
+    "volume": 0.73,
+    "author": "Letrux",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=125905",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24525",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "barbarapravivoila",
+    "local": false
+  },
+  {
     "id": "barbie-ryan-gosling-im-just-ken",
     "title": "I'm just Ken",
     "artist": "Barbie (Ryan Gosling)",
@@ -5834,6 +5949,34 @@
     ],
     "tracksCount": 1,
     "search": "barbieryangoslingimjustken",
+    "local": false
+  },
+  {
+    "id": "barei-say-yay",
+    "title": "Say Yay! ",
+    "artist": "Barei",
+    "video": "k0I37W3RN_U",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 6620,
+    "year": "2016",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T17:58:43.187Z",
+    "edition": "ESC 2016",
+    "realBpm": 125,
+    "volume": 0.84,
+    "author": "BadNewsBarett",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=132857",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20026",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bareisayyay",
     "local": false
   },
   {
@@ -7847,6 +7990,34 @@
     ],
     "tracksCount": 1,
     "search": "bobbyhelmsjinglebellrock",
+    "local": false
+  },
+  {
+    "id": "bobbysocks-la-det-swinge",
+    "title": "La det swinge",
+    "artist": "Bobbysocks",
+    "video": "6h2-QFbtXtM",
+    "language": [
+      "Norwegian"
+    ],
+    "bpm": 298.99,
+    "gap": 14021.349088404799,
+    "year": "1985",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-22T17:58:43.248Z",
+    "edition": "ESC 1985",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26396",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bobbysocksladetswinge",
     "local": false
   },
   {
@@ -10001,8 +10172,8 @@
     "gap": 10588.620689655172,
     "year": "1980",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-04-16T19:52:25.611Z",
-    "edition": "ESC 1980",
+    "lastUpdate": "2024-04-22T19:11:56.175Z",
+    "edition": "ESC 1981",
     "realBpm": 174,
     "volume": 0.78,
     "author": "Canni",
@@ -10896,6 +11067,35 @@
     ],
     "tracksCount": 1,
     "search": "celinedionnepartezpassansmoi",
+    "local": false
+  },
+  {
+    "id": "chanel-slomo",
+    "title": "SloMo",
+    "artist": "Chanel",
+    "video": "Dwyefl6itpI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 419.8,
+    "gap": 2397.523582658409,
+    "year": "2022",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-22T17:58:43.300Z",
+    "edition": "ESC 2022",
+    "genre": "Dance, Pop",
+    "realBpm": 105,
+    "volume": 0.75,
+    "author": "Ultrastar Espana",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=169928",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25746",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chanelslomo",
     "local": false
   },
   {
@@ -12987,6 +13187,35 @@
     "local": false
   },
   {
+    "id": "da-vinci-conquistador",
+    "title": "Conquistador",
+    "artist": "Da Vinci",
+    "video": "4NbmA9I8Tww",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 256,
+    "gap": 13583.90625,
+    "year": "1989",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-04-22T19:07:11.733Z",
+    "edition": "ESC 1989",
+    "genre": "Pop",
+    "realBpm": 139,
+    "volume": 0.89,
+    "author": "wildnight",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3184",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25461",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davinciconquistador",
+    "local": false
+  },
+  {
     "id": "daddy-yankee-con-snow-con-calma",
     "title": "Con calma",
     "artist": "Daddy Yankee con Snow",
@@ -13484,6 +13713,36 @@
     ],
     "tracksCount": 1,
     "search": "danielcaesarjapanesedenim",
+    "local": false
+  },
+  {
+    "id": "daniel-diges-algo-pequenito",
+    "title": "Algo pequeñito ",
+    "artist": "Daniel Diges",
+    "video": "MR4PCxjwTik",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 354,
+    "gap": 14120.169971671388,
+    "year": "2010",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T17:58:43.367Z",
+    "edition": "ESC 2010",
+    "genre": "Pop",
+    "videoGap": 12,
+    "realBpm": 177,
+    "volume": 0.68,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9035",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "danieldigesalgopequenito",
     "local": false
   },
   {
@@ -15747,6 +16006,35 @@
     "local": false
   },
   {
+    "id": "donatan-ft-cleo-my-slowianie",
+    "title": "My Słowianie",
+    "artist": "Donatan ft. Cleo",
+    "video": "rr1DSgjhRqE",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 312.06,
+    "gap": 49650.57873485868,
+    "year": "2013",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-04-22T19:07:11.735Z",
+    "edition": "ESC 2013",
+    "videoGap": 43,
+    "realBpm": 156,
+    "volume": 0.76,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Donatan%20ft.%20Cleo&cancion=My%20S%C5%82owianie",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "donatanftcleomyslowianie",
+    "local": false
+  },
+  {
     "id": "donna-summer-i-feel-love",
     "title": "I Feel Love",
     "artist": "Donna Summer",
@@ -15770,6 +16058,34 @@
     ],
     "tracksCount": 1,
     "search": "donnasummerifeellove",
+    "local": false
+  },
+  {
+    "id": "doris-marija-magdalena",
+    "title": "Marija Magdalena",
+    "artist": "Doris",
+    "video": "x2oIkF3sQtE",
+    "language": [
+      "Croatian"
+    ],
+    "bpm": 240.02,
+    "gap": 16800.083326389467,
+    "year": "1999",
+    "artistOrigin": "HR",
+    "lastUpdate": "2024-04-22T19:07:11.736Z",
+    "edition": "ESC 1999",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "bakus33",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=bakus33",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Doris&cancion=Marija%20Magdalena",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dorismarijamagdalena",
     "local": false
   },
   {
@@ -16782,6 +17098,64 @@
     ],
     "tracksCount": 2,
     "search": "edytagorniakmietekszczesniakdumkanadwaserca",
+    "local": false
+  },
+  {
+    "id": "edyta-gorniak-to-nie-ja-bylam-ewa",
+    "title": "To nie ja bylam Ewa",
+    "artist": "Edyta Górniak",
+    "video": "x9UVz4l4nlw",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 280,
+    "gap": 6782.142857142857,
+    "year": "1994",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-04-22T17:58:43.669Z",
+    "edition": "ESC 1994",
+    "genre": "Rock",
+    "realBpm": 140,
+    "volume": 0.79,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=2876",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edytagorniaktoniejabylamewa",
+    "local": false
+  },
+  {
+    "id": "el-sueno-de-morfeo-contigo-hasta-el-final",
+    "title": "Contigo hasta el final",
+    "artist": "El Sueño de Morfeo",
+    "video": "WQCvukXs35Y",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 304,
+    "gap": 13558.157894736842,
+    "year": "2013",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T17:58:43.739Z",
+    "edition": "ESC 2013",
+    "genre": "Pop",
+    "realBpm": 152,
+    "volume": 0.78,
+    "author": "vicktoben",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=El%20Sue%C3%B1o%20de%20Morfeo&cancion=Contigo%20hasta%20el%20final",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elsuenodemorfeocontigohastaelfinal",
     "local": false
   },
   {
@@ -18041,6 +18415,35 @@
     "local": false
   },
   {
+    "id": "eva-rivas-apricot-stone",
+    "title": "Apricot Stone",
+    "artist": "Eva Rivas",
+    "video": "buGOZExVf8o",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.02,
+    "gap": 15104.749034749035,
+    "year": "2010",
+    "artistOrigin": "AM",
+    "lastUpdate": "2024-04-22T17:58:43.815Z",
+    "edition": "ESC 2010",
+    "videoGap": 6,
+    "realBpm": 102,
+    "volume": 0.75,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9547",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "evarivasapricotstone",
+    "local": false
+  },
+  {
     "id": "evanescence-bring-me-to-life",
     "title": "Bring Me to Life",
     "artist": "Evanescence",
@@ -18120,6 +18523,34 @@
     ],
     "tracksCount": 2,
     "search": "extrememorethanwords",
+    "local": false
+  },
+  {
+    "id": "eythor-ingi-gunnlaugsson-eg-a-lif",
+    "title": "Ég á Líf",
+    "artist": "Eyþór Ingi Gunnlaugsson",
+    "video": "PtunhyMW1hM",
+    "language": [
+      "Icelandic"
+    ],
+    "bpm": 299.9,
+    "gap": 11189.666555518506,
+    "year": "2013",
+    "artistOrigin": "IS",
+    "lastUpdate": "2024-04-22T17:58:43.881Z",
+    "edition": "ESC 2013",
+    "realBpm": 75,
+    "volume": 0.84,
+    "author": "Sing-Girl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15978",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eythoringigunnlaugssonegalif",
     "local": false
   },
   {
@@ -18733,6 +19164,34 @@
     ],
     "tracksCount": 1,
     "search": "fiftyfiftycupid",
+    "local": false
+  },
+  {
+    "id": "filipa-azevedo-ha-dias-assim",
+    "title": "Há dias assim",
+    "artist": "Filipa Azevedo",
+    "video": "2dd0rHKIYhA",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 265.22,
+    "gap": 2351.9772264535104,
+    "year": "2010",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-04-22T19:07:11.737Z",
+    "edition": "ESC 2010",
+    "realBpm": 133,
+    "volume": 0.89,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9272",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "filipaazevedohadiasassim",
     "local": false
   },
   {
@@ -20964,6 +21423,36 @@
     "local": false
   },
   {
+    "id": "greta-salome-jonsi-never-forget",
+    "title": "Never Forget ",
+    "artist": "Gréta Salóme & Jónsi",
+    "video": "p8RS0eulXDo",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.98,
+    "gap": 6389.925920438551,
+    "year": "2012",
+    "artistOrigin": "IS",
+    "lastUpdate": "2024-04-22T19:07:11.738Z",
+    "edition": "ESC 2012",
+    "genre": "Pop",
+    "videoGap": 4,
+    "realBpm": 135,
+    "volume": 0.85,
+    "author": "bakus33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2517",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=13874",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gretasalomejonsineverforget",
+    "local": false
+  },
+  {
     "id": "grzegorz-hyzy-pod-wiatr",
     "title": "Pod wiatr",
     "artist": "Grzegorz Hyży",
@@ -21575,6 +22064,34 @@
     ],
     "tracksCount": 1,
     "search": "henryvalentinouschiimwagenvormir",
+    "local": false
+  },
+  {
+    "id": "hera-bjork-je-ne-sais-quoi",
+    "title": "Je ne sais quoi",
+    "artist": "Hera Björk",
+    "video": "XB8V0fjDuog",
+    "language": [
+      "English"
+    ],
+    "bpm": 264.08,
+    "gap": 18697.582550742198,
+    "year": "2010",
+    "artistOrigin": "IS",
+    "lastUpdate": "2024-04-22T17:58:44.004Z",
+    "edition": "ESC 2010",
+    "realBpm": 132,
+    "volume": 0.74,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9559",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "herabjorkjenesaisquoi",
     "local": false
   },
   {
@@ -27685,6 +28202,34 @@
     "local": false
   },
   {
+    "id": "la-zarra-evidemment",
+    "title": "Évidemment",
+    "artist": "La Zarra",
+    "video": "GWfbEFH9NvQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 240.06,
+    "gap": 21258.249937515622,
+    "year": "2023",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-22T17:58:54.286Z",
+    "edition": "ESC 2023",
+    "realBpm": 120,
+    "volume": 0.72,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27085",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lazarraevidemment",
+    "local": false
+  },
+  {
     "id": "lacrimosa-stolzes-herz",
     "title": "Stolzes Herz",
     "artist": "Lacrimosa",
@@ -28647,8 +29192,8 @@
     "gap": 13190,
     "year": "2010",
     "artistOrigin": "DE",
-    "lastUpdate": "2024-04-16T19:52:25.616Z",
-    "edition": "Esc 2010",
+    "lastUpdate": "2024-04-22T19:11:56.178Z",
+    "edition": "ESC 2010",
     "realBpm": 90,
     "volume": 0.75,
     "author": "Basti",
@@ -28845,6 +29390,35 @@
     ],
     "tracksCount": 1,
     "search": "leonalewisrun",
+    "local": false
+  },
+  {
+    "id": "les-fatals-picards-lamour-a-la-francaise",
+    "title": "L’amour à la française",
+    "artist": "Les Fatals Picards",
+    "video": "xjo3PIABpVQ",
+    "language": [
+      "English",
+      "French"
+    ],
+    "bpm": 308,
+    "gap": 7877.792207792208,
+    "year": "2007",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-22T17:58:54.347Z",
+    "edition": "ESC 2007",
+    "realBpm": 128,
+    "volume": 0.97,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=19537",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lesfatalspicardslamouralafrancaise",
     "local": false
   },
   {
@@ -29754,6 +30328,35 @@
     "local": false
   },
   {
+    "id": "lisa-angell-noubliez-pas",
+    "title": "N’oubliez pas",
+    "artist": "Lisa Angell",
+    "video": "pyVvRwRpB9E",
+    "language": [
+      "French"
+    ],
+    "bpm": 252,
+    "gap": 16908.095238095237,
+    "year": "2015",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-04-22T17:58:54.456Z",
+    "edition": "ESC 2015",
+    "videoGap": 13,
+    "realBpm": 65,
+    "volume": 0.78,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18653",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lisaangellnoubliezpas",
+    "local": false
+  },
+  {
     "id": "lisa-gurenge",
     "title": "Gurenge",
     "artist": "LiSA",
@@ -30358,6 +30961,35 @@
     ],
     "tracksCount": 2,
     "search": "lucenzofeatdonomardanzakuduro",
+    "local": false
+  },
+  {
+    "id": "lucia-perez-que-me-quiten-lo-bailao",
+    "title": "Que me quiten lo bailao",
+    "artist": "Lucía Pérez",
+    "video": "Wmfre-r9O9M",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 396.1,
+    "gap": 5915.4001514769,
+    "year": "2011",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T19:07:11.740Z",
+    "edition": "ESC 2011",
+    "genre": "Pop",
+    "realBpm": 99,
+    "volume": 0.86,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12108",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "luciaperezquemequitenlobailao",
     "local": false
   },
   {
@@ -31193,6 +31825,34 @@
     "local": false
   },
   {
+    "id": "magdalena-tul-jestem",
+    "title": "Jestem",
+    "artist": "Magdalena Tul",
+    "video": "rmWpcyVj1L4",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 258,
+    "gap": -3.953488372093034,
+    "year": "2011",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-04-22T17:58:54.601Z",
+    "edition": "ESC 2011",
+    "realBpm": 129,
+    "volume": 0.91,
+    "author": "savik1993",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=11880",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "magdalenatuljestem",
+    "local": false
+  },
+  {
     "id": "magic-rude",
     "title": "Rude",
     "artist": "Magic!",
@@ -32025,8 +32685,8 @@
     "bpm": 233.93,
     "gap": 11002.052066857606,
     "year": "2024",
-    "artistOrigin": "NO",
-    "lastUpdate": "2024-04-12T19:17:41.753Z",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-22T19:07:11.742Z",
     "edition": "ESC 2024",
     "videoGap": 2,
     "realBpm": 117,
@@ -32041,6 +32701,34 @@
     ],
     "tracksCount": 1,
     "search": "marcusmartinusunforgettable",
+    "local": false
+  },
+  {
+    "id": "margaret-berger-i-feed-you-my-love",
+    "title": "I Feed You My Love",
+    "artist": "Margaret Berger",
+    "video": "bn_hZBIk3Ik",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.96,
+    "gap": 12584.269194707782,
+    "year": "2013",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-22T17:58:54.669Z",
+    "edition": "ESC 2013",
+    "realBpm": 96,
+    "volume": 0.71,
+    "author": "Sing-Girl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15705",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "margaretbergerifeedyoumylove",
     "local": false
   },
   {
@@ -37549,6 +38237,34 @@
     "local": false
   },
   {
+    "id": "ochman-river",
+    "title": "River",
+    "artist": "Ochman",
+    "video": "WA5dQL7Q5hw",
+    "language": [
+      "English"
+    ],
+    "bpm": 277.4,
+    "gap": 13406.676279740446,
+    "year": "2022",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-04-22T17:58:54.739Z",
+    "edition": "ESC 2022",
+    "realBpm": 140,
+    "volume": 0.71,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26457",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ochmanriver",
+    "local": false
+  },
+  {
     "id": "okean-elzi-bez-tebe",
     "title": "Без тебе",
     "artist": "Океан Ельзи",
@@ -38947,6 +39663,34 @@
     ],
     "tracksCount": 1,
     "search": "passengerlethergo",
+    "local": false
+  },
+  {
+    "id": "pastora-soler-quedate-conmigo",
+    "title": "Quédate conmigo",
+    "artist": "Pastora Soler",
+    "video": "W7y1pvW60ng",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 336.39,
+    "gap": 4168.995808436635,
+    "year": "2012",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T17:58:54.814Z",
+    "edition": "ESC 2012",
+    "realBpm": 84,
+    "volume": 0.8,
+    "author": "Sing-Girl",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=14326",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pastorasolerquedateconmigo",
     "local": false
   },
   {
@@ -41778,6 +42522,35 @@
     "local": false
   },
   {
+    "id": "rafal-the-ride",
+    "title": "The Ride ",
+    "artist": "RAFAŁ",
+    "video": "xsWwLWaZBq8",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.96,
+    "gap": 5127.117745112896,
+    "year": "2021",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-04-22T19:07:11.744Z",
+    "edition": "ESC 2021",
+    "genre": "Pop",
+    "realBpm": 132,
+    "volume": 0.71,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27565",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rafaltheride",
+    "local": false
+  },
+  {
     "id": "rage-against-the-machine-guerrilla-radio",
     "title": "Guerrilla Radio",
     "artist": "Rage Against the Machine",
@@ -41994,6 +42767,35 @@
     ],
     "tracksCount": 1,
     "search": "rammsteinkeinelust",
+    "local": false
+  },
+  {
+    "id": "raphael-hablemos-del-amor",
+    "title": "Hablemos del amor",
+    "artist": "Raphael",
+    "video": "gjS-RclEQgo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250,
+    "gap": 12530,
+    "year": "1967",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T19:07:11.745Z",
+    "edition": "ESC 1967",
+    "genre": "Pop",
+    "realBpm": 109,
+    "volume": 0.94,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Raphael&cancion=Hablemos%20del%20amor",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "raphaelhablemosdelamor",
     "local": false
   },
   {
@@ -43513,6 +44315,34 @@
     "local": false
   },
   {
+    "id": "rosa-lopez-europes-living-a-celebration",
+    "title": "Europe’s Living A Celebration",
+    "artist": "Rosa López",
+    "video": "xBHcyuK1c2I",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270,
+    "gap": 1690,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T17:58:54.963Z",
+    "edition": "ESC 2002",
+    "realBpm": 135,
+    "volume": 0.78,
+    "author": "raxkito",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=89899",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15180",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rosalopezeuropeslivingacelebration",
+    "local": false
+  },
+  {
     "id": "rosalia-feat-the-weeknd-la-fama",
     "title": "La fama",
     "artist": "ROSALÍA feat. The Weeknd",
@@ -44587,6 +45417,34 @@
     ],
     "tracksCount": 1,
     "search": "secondhandserenadefallforyou",
+    "local": false
+  },
+  {
+    "id": "secret-garden-nocturne",
+    "title": "Nocturne ",
+    "artist": "Secret Garden",
+    "video": "y5beWOIecS4",
+    "language": [
+      "Norwegian"
+    ],
+    "bpm": 368.1,
+    "gap": 6.50366748166266,
+    "year": "1995",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-22T19:11:56.179Z",
+    "edition": "ESC 1995",
+    "realBpm": 79,
+    "volume": 0.87,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26397",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "secretgardennocturne",
     "local": false
   },
   {
@@ -46466,6 +47324,36 @@
     "local": false
   },
   {
+    "id": "soraya-la-noche-es-para-mi",
+    "title": "La noche es para mí",
+    "artist": "Soraya",
+    "video": "yhqyofl-fP0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 252,
+    "gap": 22272.095238095237,
+    "year": "2008",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-22T19:07:11.747Z",
+    "edition": "ESC 2008",
+    "genre": "Pop Nacional",
+    "videoGap": 8,
+    "realBpm": 126,
+    "volume": 1,
+    "author": "gilrael",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Soraya&cancion=La%20noche%20es%20para%20m%C3%AD",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sorayalanocheesparami",
+    "local": false
+  },
+  {
     "id": "soul-asylum-runaway-train",
     "title": "Runaway Train",
     "artist": "Soul Asylum",
@@ -46786,6 +47674,34 @@
     "local": false
   },
   {
+    "id": "srbuk-walking-out",
+    "title": "Walking Out",
+    "artist": "Srbuk",
+    "video": "q_46dy4yJwg",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 17049.23076923077,
+    "year": "2019",
+    "artistOrigin": "AM",
+    "lastUpdate": "2024-04-22T17:58:55.172Z",
+    "edition": "ESC 2019",
+    "realBpm": 130,
+    "volume": 0.79,
+    "author": "Mamba99",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=156400",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=23969",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "srbukwalkingout",
+    "local": false
+  },
+  {
     "id": "stachursky-dosko",
     "title": "Dosko",
     "artist": "Stachursky",
@@ -46971,6 +47887,34 @@
     ],
     "tracksCount": 1,
     "search": "starshipwebuiltthiscity",
+    "local": false
+  },
+  {
+    "id": "stella-mwangi-haba-haba",
+    "title": "Haba haba",
+    "artist": "Stella Mwangi",
+    "video": "hV1NBfr5OI4",
+    "language": [
+      "English"
+    ],
+    "bpm": 247.32,
+    "gap": 26729.597282872393,
+    "year": "2011",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-22T19:07:11.748Z",
+    "edition": "ESC 2011",
+    "realBpm": 124,
+    "volume": 0.76,
+    "author": "gaspar17",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12024",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stellamwangihabahaba",
     "local": false
   },
   {
@@ -55330,6 +56274,34 @@
     ],
     "tracksCount": 1,
     "search": "yoasobiyorunikakeruintothenight",
+    "local": false
+  },
+  {
+    "id": "yohanna-is-it-true",
+    "title": "Is It True?",
+    "artist": "Yohanna",
+    "video": "R9FZhr93V3A",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 4700,
+    "year": "2009",
+    "artistOrigin": "IS",
+    "lastUpdate": "2024-04-22T17:58:55.359Z",
+    "edition": "ESC 2009",
+    "realBpm": 84,
+    "volume": 0.8,
+    "author": "holocaust73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22204",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=7972",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yohannaisittrue",
     "local": false
   },
   {

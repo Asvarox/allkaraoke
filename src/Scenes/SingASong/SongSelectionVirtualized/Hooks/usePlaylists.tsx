@@ -13,6 +13,7 @@ import useFeatureFlag from 'utils/useFeatureFlag';
 export interface PlaylistEntry {
   name: string;
   display?: ReactNode;
+  hideNew?: boolean;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
   groupingFn?: (song: SongPreview) => string;
@@ -22,6 +23,15 @@ export interface PlaylistEntry {
 const getEurovisionYear = (song: SongPreview) => {
   return song.edition?.toLowerCase().replace('esc ', '')?.trim() ?? undefined;
 };
+
+function getFlagEmoji(countryCode: string) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split('')
+    // @ts-ignore
+    .map((char) => 127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
+}
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
   const songLanguages = useLanguageList(songs);
@@ -75,13 +85,9 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
               </EurovisionDisplay>
             ),
             filters: { edition: 'esc' },
+            hideNew: true,
             groupingFn: (song) => {
-              const year = getEurovisionYear(song);
-              if (year) {
-                const decade = Math.floor(+year / 10) * 10;
-                return `${decade} - ${Math.min(decade + 9, new Date().getFullYear())}`;
-              }
-              return 'Other';
+              return song.artistOrigin ? getFlagEmoji(song.artistOrigin) ?? 'Other' : 'Other';
             },
             sortingFn: (a, b) => {
               const yearA = getEurovisionYear(a);
