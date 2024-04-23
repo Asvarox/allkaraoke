@@ -234,7 +234,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 components={components}
                 renderGroup={(group) => (
                   <SongsGroupContainer key={group.name} highlight={group.name === 'New'}>
-                    <SongsGroupHeader data-group-name={group.name}>{group.name}</SongsGroupHeader>
+                    <SongsGroupHeader data-group-name={group.name}>{group.longName ?? group.name}</SongsGroupHeader>
                   </SongsGroupContainer>
                 )}
                 perRow={songsPerRow}

@@ -11,6 +11,7 @@ import clearString from 'utils/clearString';
 
 export interface SongGroup {
   name: string;
+  longName?: string;
   songs: Array<{ index: number; song: SongPreview; isPopular: boolean }>;
   isNew?: boolean;
 }
@@ -33,10 +34,12 @@ const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedF
 
 const emptyFilters: AppliedFilters = {};
 
-const groupSongsByLetter = (song: SongPreview) => {
+const groupSongsByLetter = (song: SongPreview): Pick<SongGroup, 'name'> => {
   const nonAlphaRegex = /[^a-zA-Z]/;
 
-  return isFinite(+song.artist[0]) || nonAlphaRegex.test(song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
+  return {
+    name: isFinite(+song.artist[0]) || nonAlphaRegex.test(song.artist[0]) ? '0-9' : song.artist[0].toUpperCase(),
+  };
 };
 
 export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
@@ -168,11 +171,31 @@ export default function useSongList() {
         songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
       });
     } else {
+      const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
+
+      sortedList.forEach((song) => {
+        try {
+          const { name, ...rest } = (playlist?.groupData ?? groupSongsByLetter)(song);
+          let group = groups.find((group) => group.name === name);
+          if (!group) {
+            group = { name, songs: [], ...rest };
+            groups.push(group);
+          }
+
+          group.songs.push({ index: filteredList.indexOf(song), song, isPopular: popular.includes(song.id) });
+        } catch (e) {
+          console.error(e);
+          captureException(e);
+        }
+      });
+
+      playlist?.postGrouping?.(groups);
+
       if (!playlist?.hideNew) {
         const newSongs = filteredList.filter((song) => song.isNew);
 
         if (newSongs.length && newSongs.length < 50) {
-          groups.push({
+          groups.unshift({
             name: 'New',
             isNew: true,
             songs: newSongs.map((song) => ({
@@ -184,24 +207,6 @@ export default function useSongList() {
           });
         }
       }
-
-      const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
-
-      sortedList.forEach((song) => {
-        try {
-          const groupName = (playlist?.groupingFn ?? groupSongsByLetter)(song);
-          let group = groups.find((group) => group.name === groupName);
-          if (!group) {
-            group = { name: groupName, songs: [] };
-            groups.push(group);
-          }
-
-          group.songs.push({ index: filteredList.indexOf(song), song, isPopular: popular.includes(song.id) });
-        } catch (e) {
-          console.error(e);
-          captureException(e);
-        }
-      });
     }
 
     return groups;
