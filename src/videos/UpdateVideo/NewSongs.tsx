@@ -56,6 +56,7 @@ export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; dura
             Fade({ to: 0, initial: 0.9, duration: 10, start: durationInFrames - 10 }),
           ]}>
           {highResThumbnail !== null && (
+            // @ts-expect-error
             <Img
               style={{
                 opacity: highResThumbnail !== null ? 1 : 0,

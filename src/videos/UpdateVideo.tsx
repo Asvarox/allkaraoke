@@ -69,6 +69,7 @@ export const UpdateVideo: React.FC<{}> = () => {
   const { durationInFrames } = useVideoConfig();
   return (
     <GameScreens>
+      {/* @ts-expect-error */}
       <Audio
         src={music}
         startFrom={msToFps(12_050)}

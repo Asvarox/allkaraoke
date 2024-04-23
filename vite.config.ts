@@ -50,17 +50,18 @@ export default defineConfig({
     visualizer(),
     !customCert && basicSsl(),
 
-    htmlPrerender({
-      staticDir: path.join(__dirname, 'build'),
-      routes: Object.values(routePaths).map((route) => `/${route}`),
-      minify: {
-        collapseBooleanAttributes: true,
-        collapseWhitespace: true,
-        decodeEntities: true,
-        keepClosingSlash: true,
-        sortAttributes: true,
-      },
-    }),
+    process.env.PRERENDER &&
+      htmlPrerender({
+        staticDir: path.join(__dirname, 'build'),
+        routes: Object.values(routePaths).map((route) => `/${route}`),
+        minify: {
+          collapseBooleanAttributes: true,
+          collapseWhitespace: true,
+          decodeEntities: true,
+          keepClosingSlash: true,
+          sortAttributes: true,
+        },
+      }),
   ],
   base: '/',
   build: {
