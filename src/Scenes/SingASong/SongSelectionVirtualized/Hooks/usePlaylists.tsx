@@ -3,18 +3,36 @@ import { ClosableTooltip } from 'Elements/Tooltip';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import eurovisionIcon from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/eurovision-icon.svg';
-import { AppliedFilters } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
+import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 import { SongPreview } from 'interfaces';
 import posthog from 'posthog-js';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { FeatureFlags } from 'utils/featureFlags';
+import isoCodeToCountry from 'utils/isoCodeToCountry';
 import useFeatureFlag from 'utils/useFeatureFlag';
 
 export interface PlaylistEntry {
   name: string;
   display?: ReactNode;
+  hideNew?: boolean;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
+  groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'longName'>;
+  postGrouping?: (groups: SongGroup[]) => void;
+  sortingFn?: (a: SongPreview, b: SongPreview) => number;
+}
+
+const getEurovisionYear = (song: SongPreview) => {
+  return song.edition?.toLowerCase().replace('esc ', '')?.trim() ?? undefined;
+};
+
+function getFlagEmoji(countryCode: string) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split('')
+    // @ts-ignore
+    .map((char) => 127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
@@ -69,6 +87,33 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
               </EurovisionDisplay>
             ),
             filters: { edition: 'esc' },
+            hideNew: true,
+            groupData: (song) => {
+              const name = song.artistOrigin ? `${getFlagEmoji(song.artistOrigin) ?? 'Other'}` : 'Other';
+              return {
+                name,
+                longName: name !== 'Other' ? `${name} ${isoCodeToCountry(song.artistOrigin!)}` : 'Other',
+              };
+            },
+            sortingFn: (a, b) => {
+              const yearA = getEurovisionYear(a);
+              const yearB = getEurovisionYear(b);
+              if (yearA && yearB) {
+                return +yearB - +yearA;
+              }
+              return 0;
+            },
+            postGrouping: (groups) => {
+              groups.sort((a, b) => {
+                if (a.name === 'Other') return 1;
+                if (b.name === 'Other') return -1;
+                return (
+                  isoCodeToCountry(a.songs[0].song.artistOrigin!)?.localeCompare(
+                    isoCodeToCountry(b.songs[0].song.artistOrigin!) ?? '',
+                  ) ?? 0
+                );
+              });
+            },
           }
         : null,
       selectionOnTop ? all : selection,

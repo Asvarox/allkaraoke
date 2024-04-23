@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import SongFlag from 'Scenes/SingASong/SongSelection/Components/SongCard/SongFlag';
+import SongFlag from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/SongFlag';
 import { generateSong } from 'utils/testUtils';
 
 describe('SongCard', () => {

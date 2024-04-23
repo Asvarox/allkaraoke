@@ -1,3 +1,4 @@
+import uFuzzy from '@leeoniya/ufuzzy';
 import { captureException } from '@sentry/react';
 import { ExcludedLanguagesSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import { usePlaylists } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/usePlaylists';
@@ -9,7 +10,8 @@ import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
 export interface SongGroup {
-  letter: string;
+  name: string;
+  longName?: string;
   songs: Array<{ index: number; song: SongPreview; isPopular: boolean }>;
   isNew?: boolean;
 }
@@ -32,6 +34,14 @@ const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedF
 
 const emptyFilters: AppliedFilters = {};
 
+const groupSongsByLetter = (song: SongPreview): Pick<SongGroup, 'name'> => {
+  const nonAlphaRegex = /[^a-zA-Z]/;
+
+  return {
+    name: isFinite(+song.artist[0]) || nonAlphaRegex.test(song.artist[0]) ? '0-9' : song.artist[0].toUpperCase(),
+  };
+};
+
 export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   language: (songList, language: string) => {
     if (language === '') return songList;
@@ -49,6 +59,17 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   },
   search: (songList, search: string) => {
     const cleanSearch = clearString(search);
+
+    if (cleanSearch.length > 0) {
+      const fuzz = new uFuzzy({});
+      const [, info, order] = fuzz.search(
+        songList.map((song) => `${clearString(song.artist)} ${clearString(song.title)}`),
+        search,
+      );
+      if (order && info) {
+        return order.map((item) => songList[info.idx[item]]);
+      }
+    }
 
     return cleanSearch.length > 0 ? songList.filter((song) => song.search.includes(cleanSearch)) : songList;
   },
@@ -124,7 +145,7 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
     [list, deferredFilters, excludedLanguages, playlist],
   );
 
-  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists };
+  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists, playlist };
 };
 
 export default function useSongList() {
@@ -136,58 +157,60 @@ export default function useSongList() {
 
   const isLoading = songList.isLoading || loading;
 
-  const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists } = useSongListFilter(
-    songList.data,
-    popular,
-    isLoading,
-  );
+  const { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists, playlist } =
+    useSongListFilter(songList.data, popular, isLoading);
 
   const groupedSongList = useMemo(() => {
     if (filteredList.length === 0) return [];
 
     const groups: SongGroup[] = [];
 
-    // a hack for !filters.edition - due to a bug where selecting a song will make it look selected for both
-    // new and regular entry in the list. On Christmas, where most of the songs are new, it looks weird.
-    // When the bug is fixed, this can be removed.
-    if (!filters.search && !filters.edition) {
-      const newSongs = filteredList.filter((song) => song.isNew);
+    if (filters.search) {
+      groups.push({
+        name: 'Search results',
+        songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
+      });
+    } else {
+      const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
 
-      if (newSongs.length && newSongs.length < 50) {
-        groups.push({
-          letter: 'New',
-          isNew: true,
-          songs: newSongs.map((song) => ({
-            song,
-            index: filteredList.indexOf(song),
+      sortedList.forEach((song) => {
+        try {
+          const { name, ...rest } = (playlist?.groupData ?? groupSongsByLetter)(song);
+          let group = groups.find((group) => group.name === name);
+          if (!group) {
+            group = { name, songs: [], ...rest };
+            groups.push(group);
+          }
 
-            isPopular: popular.includes(song.id),
-          })),
-        });
+          group.songs.push({ index: filteredList.indexOf(song), song, isPopular: popular.includes(song.id) });
+        } catch (e) {
+          console.error(e);
+          captureException(e);
+        }
+      });
+
+      playlist?.postGrouping?.(groups);
+
+      if (!playlist?.hideNew) {
+        const newSongs = filteredList.filter((song) => song.isNew);
+
+        if (newSongs.length && newSongs.length < 50) {
+          groups.unshift({
+            name: 'New',
+            isNew: true,
+            songs: newSongs.map((song) => ({
+              song,
+              index: filteredList.indexOf(song),
+
+              isPopular: popular.includes(song.id),
+            })),
+          });
+        }
       }
     }
 
-    const nonAlphaRegex = /[^a-zA-Z]/;
-
-    filteredList.forEach((song, index) => {
-      try {
-        const firstCharacter =
-          isFinite(+song.artist[0]) || nonAlphaRegex.test(song.artist[0]) ? '0-9' : song.artist[0].toUpperCase();
-        let group = groups.find((group) => group.letter === firstCharacter);
-        if (!group) {
-          group = { letter: firstCharacter, songs: [] };
-          groups.push(group);
-        }
-
-        group.songs.push({ index: index, song, isPopular: popular.includes(song.id) });
-      } catch (e) {
-        console.error(e);
-        captureException(e);
-      }
-    });
-
     return groups;
-  }, [filteredList, filters.search, popular, filters.edition]);
+  }, [filteredList, filters.search, popular, playlist]);
 
   return {
     groupedSongList,

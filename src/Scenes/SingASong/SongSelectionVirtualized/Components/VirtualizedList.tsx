@@ -63,7 +63,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
   const getGroupIndex = useCallback(
     (group: string, index: number) => {
-      let groupIndex = props.groups.findIndex((g) => g.letter === group);
+      let groupIndex = props.groups.findIndex((g) => g.name === group);
 
       if (groupIndex === -1) {
         return props.groups.findIndex((g) => g.songs.some((s) => s.index === index));
@@ -110,7 +110,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         return { x, y };
       },
       scrollToGroup: (group: string) => {
-        const groupIndex = props.groups.findIndex((g) => g.letter === group);
+        const groupIndex = props.groups.findIndex((g) => g.name === group);
 
         if (groupIndex === -1) {
           return;

@@ -83,7 +83,7 @@ export class SongListPagePO {
   }
 
   public async expectGroupToBeInViewport(groupName: string) {
-    await expect(this.page.locator(`[data-group-letter=${groupName}]`)).toBeInViewport();
+    await expect(this.page.locator(`[data-group-name=${groupName}]`)).toBeInViewport();
   }
 
   public getPlaylistElement(name: string) {

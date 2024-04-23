@@ -3,7 +3,7 @@ import { EurovisionTheme, useBackground } from 'Elements/LayoutWithBackground';
 import Logo from 'Elements/Logo';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import LayoutGame from 'Scenes/LayoutGame';
-import eurovisionIcon from 'Scenes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import eurovisionIcon from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/eurovision-icon.svg';
 import EurovisionBgSvg from 'Scenes/SocialMediaElements/EurovisionBackground';
 import logo from '../../../public/logo.svg?raw';
 

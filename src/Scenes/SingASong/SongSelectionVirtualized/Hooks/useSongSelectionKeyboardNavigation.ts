@@ -30,9 +30,9 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
   const songGroupMatrix = useMemo(
     () =>
       groups
-        .map(({ songs, letter }) =>
+        .map(({ songs, name }) =>
           chunk(
-            songs.map(() => letter),
+            songs.map(() => name),
             itemsPerRow,
           ),
         )

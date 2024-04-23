@@ -5,7 +5,7 @@ import { typography } from 'Elements/cssMixins';
 import events from 'GameEvents/GameEvents';
 import { useEventEffect, useEventListenerSelector } from 'GameEvents/hooks';
 import PlayersManager from 'Players/PlayersManager';
-import SinglePlayer from 'Scenes/SingASong/SongSelection/Components/SongSettings/MicCheck/SinglePlayer';
+import SinglePlayer from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongSettings/MicCheck/SinglePlayer';
 import { waitFinished, waitForReadinessMusic } from 'SoundManager';
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';

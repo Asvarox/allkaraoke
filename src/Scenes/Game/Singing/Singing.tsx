@@ -9,7 +9,7 @@ import LayoutGame from 'Scenes/LayoutGame';
 import {
   SongListEntryDetailsArtist,
   SongListEntryDetailsTitle,
-} from 'Scenes/SingASong/SongSelection/Components/SongCard';
+} from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard';
 import useSong from 'Songs/hooks/useSong';
 import useBlockScroll from 'hooks/useBlockScroll';
 import useFullscreen from 'hooks/useFullscreen';
