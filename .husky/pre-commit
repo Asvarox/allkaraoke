@@ -1,6 +1,3 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 pnpm lint-staged
 pnpm run test --watch=false
 pnpm unimported --no-cache
