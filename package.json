@@ -145,6 +145,7 @@
     "playwright-core": "^1.43.1",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
+    "puppeteer": "^22.7.1",
     "react-refresh": "^0.14.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-visualizer": "^5.12.0",
