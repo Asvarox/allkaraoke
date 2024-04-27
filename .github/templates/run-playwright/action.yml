@@ -20,13 +20,13 @@ runs:
       with:
         path: |
           ~/.cache/ms-playwright
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-${{ inputs.project }}
+        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ inputs.project }}
         restore-keys: |
           ${{ runner.os }}-playwright-${{ inputs.project }}
-    - run: yarn playwright install --with-deps ${{ inputs.project }}
+    - run: pnpm playwright install --with-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit != 'true'
       shell: bash
-    - run: yarn playwright install-deps ${{ inputs.project }}
+    - run: pnpm playwright install-deps ${{ inputs.project }}
       if: steps.playwright-cache.outputs.cache-hit == 'true'
       shell: bash
     - uses: nick-fields/retry@v3
@@ -34,7 +34,7 @@ runs:
       with:
         timeout_minutes: 20
         max_attempts: 2
-        command: yarn ${{ inputs.packagescript }} --project=${{ inputs.project }} `yarn ts-node scripts/runFailedPlaywrightTests.ts || ""`
+        command: pnpm ${{ inputs.packagescript }} --project=${{ inputs.project }} `pnpm ts-node scripts/runFailedPlaywrightTests.ts || ""`
         shell: bash
     - uses: actions/upload-artifact@v3
       if: failure()
