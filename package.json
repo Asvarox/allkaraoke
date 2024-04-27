@@ -69,8 +69,7 @@
     "video-render": "remotion render src/videos/index.ts UpdateVideo out/video.mp4",
     "unimported": "unimported",
     "types-check": "tsc --noEmit",
-    "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check",
-    "postinstall": "husky"
+    "prettier-check": "prettier --config .prettier.config.ci.js src/**/*.{ts,tsx} --check"
   },
   "browserslist": {
     "production": [
