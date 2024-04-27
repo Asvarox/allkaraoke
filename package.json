@@ -50,7 +50,7 @@
     "start:production": "serve --ssl-cert config/crt/dummy.pem --ssl-key config/crt/dummy.key --no-request-logging -p ${PORT:-3010} build",
     "prod:serve": "pnpm start:production",
     "serve:prod": "pnpm start:production",
-    "build": "PRERENDER=true vite build",
+    "build": "VITE_APP_PRERENDER=true vite build",
     "build:serve:e2e": "pnpm build && pnpm start:production",
     "build:serve:e2e:fast": "FAST_BUILD=1 pnpm build && pnpm start:production",
     "build:serve:e2e:watch": "FAST_BUILD=1 pnpm build --watch & pnpm start:production",

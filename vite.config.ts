@@ -50,7 +50,7 @@ export default defineConfig({
     visualizer(),
     !customCert && basicSsl(),
 
-    process.env.PRERENDER
+    process.env.VITE_APP_PRERENDER
       ? htmlPrerender({
           staticDir: path.join(__dirname, 'build'),
           routes: Object.values(routePaths).map((route) => `/${route}`),
