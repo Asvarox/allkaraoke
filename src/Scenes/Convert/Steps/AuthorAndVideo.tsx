@@ -16,7 +16,7 @@ interface Props {
   songArtist?: string;
 }
 
-export default function AuthorAndVid(props: Props) {
+export default function AuthorAndVideo(props: Props) {
   const searchForVideo = () => {
     window.open(
       `https://www.youtube.com/results?search_query=${encodeURIComponent(props?.songArtist + ' ' + props?.songTitle)}`,

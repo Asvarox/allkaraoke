@@ -1,5 +1,5 @@
 import { Box, Button, TextField } from '@mui/material';
-import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVideo';
 import { fixDiacritics } from 'Scenes/Convert/Steps/utils/fixDiacritics';
 import isValidUltrastarTxtFormat from 'Scenes/Convert/Steps/utils/validateUltrastar';
 import importUltrastarEsSong from 'Scenes/Convert/importUltrastarEsSong';

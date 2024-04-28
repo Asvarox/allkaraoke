@@ -172,7 +172,7 @@ export default function convertTxtToSong(
   // Either ID is entered or try to parse link
   if (videoLink?.length === 11) {
     song.video = videoLink;
-  } else if (song.video === '' && videoLink) {
+  } else if (videoLink) {
     try {
       const linkUrl = new URL(videoLink);
       song.video = linkUrl.searchParams.get('v') || 'Invalid link';

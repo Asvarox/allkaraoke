@@ -48,10 +48,16 @@ export default function ShareSongsModal(props: Props) {
 
   return (
     <Dialog open={open} onClose={() => setOpen(false)} fullWidth>
-      <DialogTitle>Share songs</DialogTitle>
+      <DialogTitle>Share songs?</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          Can you share songs you add? This would help tremendously as I will be able to add it for everyone to play 🥺
+          <p>
+            Can you share songs you add? This would help tremendously as I will be able to add it for everyone to play
+            🥺
+            <br />
+            <br />
+            Shared songs appear for other players with a couple of days of delay.
+          </p>
         </DialogContentText>
       </DialogContent>
       <DialogActions>

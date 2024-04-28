@@ -111,7 +111,7 @@ const GameOverlay = forwardRef(function (
           <Curtains id="canvas" style={{ zIndex: 10000 }} />
         </>
       )}
-      <GameCanvas id="plane">
+      <GameCanvas id="plane" style={!effectsEnabled ? { opacity: 0 } : undefined}>
         <canvas ref={canvas} width={overlayWidth} height={overlayHeight} data-sampler="planeTexture" />
       </GameCanvas>
       {effectsEnabled && (
@@ -161,7 +161,6 @@ const GameOverlay = forwardRef(function (
 export default GameOverlay;
 
 const LyricsWrapper = styled.div`
-  height: 15rem;
   padding: 2rem 0;
   box-sizing: border-box;
 `;

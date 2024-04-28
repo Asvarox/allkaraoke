@@ -191,6 +191,21 @@ describe('convertTxtToSong', () => {
     expect(parsed.video).toEqual('');
   });
 
+  it('should allow overriding the video', () => {
+    const sections: Section[] = [
+      { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
+      { start: 5, type: 'notes', notes: [generateNote(7), generateNote(10)] },
+    ];
+    const parsed = convertTxtToSong(
+      generateSongTxt([sections], {
+        video: 'v=QzkK3ZtI9SU',
+      }),
+      videoUrl,
+    );
+
+    expect(parsed.video).toEqual('videoUrl');
+  });
+
   describe('deprecated properties support', () => {
     const sections: Section[] = [
       { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },

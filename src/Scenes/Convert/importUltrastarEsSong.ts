@@ -1,4 +1,4 @@
-import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVideo';
 
 export default async function importSongFromSource(url: string) {
   try {

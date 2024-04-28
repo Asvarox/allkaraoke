@@ -3,7 +3,7 @@ import { Alert, AlertTitle, Box, Button, Step, StepButton, StyledEngineProvider 
 import Stepper from '@mui/material/Stepper';
 import { useBackground } from 'Elements/LayoutWithBackground';
 import NormalizeFontSize from 'Elements/NormalizeFontSize';
-import AuthorAndVid, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVid';
+import AuthorAndVideo, { AuthorAndVidEntity } from 'Scenes/Convert/Steps/AuthorAndVideo';
 import BasicData, { BasicDataEntity } from 'Scenes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'Scenes/Convert/Steps/SongMetadata';
 import SyncLyricsToVideo from 'Scenes/Convert/Steps/SyncLyricsToVideo';
@@ -204,9 +204,7 @@ export default function ConvertView({ song }: Props) {
             if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
             else if (steps.at(currentStep) === 'metadata') {
               await SongDao.store(finalSong!);
-              if (!isEdit) {
-                shareSong(finalSong!.id);
-              }
+              shareSong(finalSong!.id);
               navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
             }
           }}>
@@ -222,7 +220,7 @@ export default function ConvertView({ song }: Props) {
           )}
 
           {steps.at(currentStep) === 'author-and-video' && (
-            <AuthorAndVid
+            <AuthorAndVideo
               songArtist={conversionResult?.artist}
               songTitle={conversionResult?.title}
               onChange={setAuthorAndVid}
