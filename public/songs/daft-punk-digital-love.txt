@@ -1,0 +1,233 @@
+#ARTIST:Daft Punk
+#TITLE:Digital Love
+#CREATOR:Schluckschuppen
+#BPM:249,44
+#YEAR:2001
+#VIDEO:v=ECC9fVomlJU
+#VIDEOGAP:5
+#LANGUAGE:English
+#GAP:20507,71007055805
+#ALLKARAOKE_ID:daft-punk-digital-love
+#ALLKARAOKE_LASTUPDATE:2024-04-28T19:12:38.152Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_VOLUME:1
+#P1:Digital Love
+#MP3:Daft Punk - Digital Love.mp3
+: 17 7 14 Last 
+: 25 9 13 night 
+- 34
+: 39 1 9 I 
+: 41 3 11 had 
+: 45 3 9 a 
+: 49 3 11 dream 
+: 53 3 9 a
+: 57 9 13 bout 
+: 67 7 11 you 
+- 74
+: 79 3 13 In 
+: 83 5 16 this 
+: 89 9 18 dream 
+- 98
+: 103 1 9 I’m 
+: 105 3 11 dan
+: 109 3 9 cing 
+: 113 3 11 right 
+: 117 3 9 be
+: 121 9 13 side 
+: 131 7 11 you 
+- 138
+: 141 3 13 And 
+: 145 1 16 it 
+: 149 9 18 looked 
+- 158
+: 167 1 9 Like 
+: 169 3 11 e
+: 173 3 9 very
+: 177 3 11 one 
+: 181 3 9 was 
+: 185 3 11 hav
+: 189 3 9 ing 
+: 193 9 13 fun 
+- 202
+: 205 3 9 The 
+: 209 3 9 kind 
+: 213 3 9 of 
+: 217 2 9 feel
+: 221 5 9 ing 
+- 226
+: 229 1 9 I’ve 
+: 231 3 9 wait
+: 235 3 9 ed 
+: 239 7 9 so 
+: 247 9 6 lo
+: 257 9 4 ng 
+- 266
+: 275 5 14 Don’t 
+: 281 9 13 stop 
+- 290
+: 297 3 11 Come 
+: 301 1 9 a 
+: 303 3 11 lit
+: 307 3 9 tle 
+: 311 7 13 clo
+: 319 3 11 ~
+: 323 3 9 ser 
+- 326
+: 333 5 13 As 
+: 339 3 16 we 
+: 343 9 18 jam 
+- 352
+: 359 1 9 The 
+: 361 3 11 ryth
+: 365 5 9 m 
+: 371 5 11 gets 
+: 377 7 13 stron
+: 385 3 11 ge
+: 389 5 9 r 
+- 394
+: 399 1 14 There’s 
+: 401 3 14 noth
+: 405 3 14 ing 
+: 409 7 13 wrong 
+- 416
+: 421 3 9 With 
+: 425 3 11 just 
+: 429 3 9 a 
+: 433 3 11 lit
+: 437 3 9 tle 
+: 441 3 11 lit
+: 445 3 9 tle 
+: 449 9 13 fun 
+- 458
+: 467 3 9 We 
+: 471 1 9 were 
+: 473 3 9 dan
+: 477 5 9 cing 
+: 489 7 9 all 
+: 497 7 9 night 
+: 505 9 6 lo
+: 515 9 4 ng 
+- 524
+: 527 1 9 The 
+: 529 3 13 time 
+: 533 3 16 is 
+: 537 7 18 right 
+- 544
+: 549 1 9 To 
+: 551 3 11 put 
+: 555 5 9 my 
+: 561 3 11 arms 
+: 565 1 9 a
+: 567 9 13 round 
+: 577 3 11 yo
+: 581 3 9 u 
+- 584
+: 591 1 9 You’re 
+: 593 3 13 feel
+: 597 3 16 ing 
+: 601 9 18 right 
+- 610
+: 613 3 9 You 
+: 617 3 11 wrap 
+: 621 3 9 your 
+: 625 3 11 arms 
+: 629 3 9 a
+: 633 7 13 round 
+: 641 3 11 to
+: 645 5 9 o 
+- 650
+: 653 1 14 But 
+: 655 5 14 sud
+: 661 3 14 den
+: 665 7 13 ly 
+- 672
+: 685 1 9 I 
+: 687 3 11 feel 
+: 691 3 9 the 
+: 695 3 11 shin
+: 699 3 9 ing 
+: 703 9 13 sun 
+- 712
+: 719 1 9 Be
+: 721 3 9 fore 
+: 725 3 9 I 
+: 729 3 9 knew 
+: 733 3 9 it 
+- 736
+: 741 3 9 This 
+: 745 3 9 dream 
+: 749 3 9 was 
+: 753 7 9 all 
+: 761 7 6 go
+: 769 7 4 ne 
+- 776
+: 779 9 13 Ooh 
+- 788 796
+- 796
+: 813 3 14 I 
+: 817 3 14 don’t 
+: 821 7 14 know 
+: 829 3 14 what 
+: 833 3 14 to 
+: 839 11 13 do 
+- 850 860
+- 860
+: 877 3 9 A
+: 881 3 11 bout 
+: 885 3 9 this 
+: 889 3 11 dream 
+: 893 5 13 and 
+: 899 13 13 you 
+- 912 924
+- 924
+: 941 3 9 I 
+: 945 3 9 wish 
+: 949 3 9 this 
+: 953 7 9 dream 
+: 961 7 9 comes 
+: 969 11 9 true 
+- 980 1018
+- 1018
+: 1035 9 13 Ooh 
+- 1044 1052
+- 1052
+: 1069 3 14 I 
+: 1073 3 14 don’t 
+: 1077 7 14 know 
+: 1085 3 14 what 
+: 1089 3 14 to 
+: 1093 11 13 do 
+- 1104 1114
+- 1114
+: 1131 3 9 A
+: 1135 3 11 bout 
+: 1139 3 9 this 
+: 1143 3 11 dream 
+: 1147 5 13 and 
+: 1153 13 13 you 
+- 1166 1180
+- 1180
+: 1197 3 9 We’ll 
+: 1201 3 9 make 
+: 1205 3 9 this 
+: 1209 7 9 dream 
+: 1217 7 9 come 
+: 1225 95 9 true 
+- 1320 2616
+- 2616
+: 2633 3 4 Why 
+: 2637 3 6 don’t 
+: 2641 3 9 you 
+: 2645 7 6 play 
+: 2653 3 9 the 
+: 2657 31 16 game? 
+- 2688 2744
+- 2744
+: 2761 3 4 Why 
+: 2765 3 6 don’t 
+: 2769 3 9 you 
+: 2773 7 6 play 
+: 2781 3 9 the 
+: 2785 31 16 game? 
+E
