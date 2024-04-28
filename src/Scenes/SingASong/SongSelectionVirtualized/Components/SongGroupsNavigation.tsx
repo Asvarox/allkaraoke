@@ -67,7 +67,7 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
               onClick={() => onScrollToGroup(group)}
               data-active={active}
               data-test={`group-navigation-${group.name}`}>
-              {group.name}
+              {group.displayShort ?? group.name}
             </SongsGroupButton>
           );
         })}
@@ -95,7 +95,10 @@ const SongsGroupButton = styled(Button)<{ active: boolean }>`
   border: none;
   cursor: pointer;
   ${typography};
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.3rem;
   padding: 0.5rem 1.25rem;
   font-size: 2.3rem;
   z-index: 1;

@@ -6,12 +6,13 @@ import useRecommendedSongs from 'Scenes/SingASong/SongSelectionVirtualized/Hooks
 import useSongIndex from 'Songs/hooks/useSongIndex';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
-import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+import { ReactNode, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import clearString from 'utils/clearString';
 
 export interface SongGroup {
   name: string;
-  longName?: string;
+  displayShort?: ReactNode;
+  displayLong?: ReactNode;
   songs: Array<{ index: number; song: SongPreview; isPopular: boolean }>;
   isNew?: boolean;
 }

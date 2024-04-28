@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Flag } from 'Elements/Flag';
 import { ClosableTooltip } from 'Elements/Tooltip';
 import { useLanguageList } from 'Scenes/ExcludeLanguages/ExcludeLanguagesView';
 import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
@@ -17,7 +18,7 @@ export interface PlaylistEntry {
   hideNew?: boolean;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
-  groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'longName'>;
+  groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong'>;
   postGrouping?: (groups: SongGroup[]) => void;
   sortingFn?: (a: SongPreview, b: SongPreview) => number;
 }
@@ -89,10 +90,17 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             filters: { edition: 'esc' },
             hideNew: true,
             groupData: (song) => {
-              const name = song.artistOrigin ? `${getFlagEmoji(song.artistOrigin) ?? 'Other'}` : 'Other';
+              const flag = song.artistOrigin ? <SFlag isocode={song.artistOrigin} /> : 'Other';
               return {
-                name,
-                longName: name !== 'Other' ? `${name} ${isoCodeToCountry(song.artistOrigin!)}` : 'Other',
+                name: song.artistOrigin ?? 'Other',
+                displayLong: song.artistOrigin ? (
+                  <>
+                    {flag} {isoCodeToCountry(song.artistOrigin)}
+                  </>
+                ) : (
+                  'Other'
+                ),
+                displayShort: flag,
               };
             },
             sortingFn: (a, b) => {
@@ -203,4 +211,9 @@ const EurovisionLogo = styled.img`
       transform: scale(0.85);
     }
   }
+`;
+
+const SFlag = styled(Flag)`
+  width: 1em;
+  object-fit: contain;
 `;
