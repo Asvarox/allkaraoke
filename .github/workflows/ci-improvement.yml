@@ -39,7 +39,7 @@ jobs:
           packagescript: 'e2e'
           project: '${{ matrix.browser }}'
           shard: '${{ matrix.shardIndex }}'
-          shardCount: '${{ matrix.shardTotal }}'
+          shardTotal: '${{ matrix.shardTotal }}'
   ct-tests-run:
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
@@ -94,7 +94,6 @@ jobs:
           fetch-depth: 30 # needed for Sentry to get list of commits released
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: pnpm exec puppeteer browsers install chrome
       - run: pnpm build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
