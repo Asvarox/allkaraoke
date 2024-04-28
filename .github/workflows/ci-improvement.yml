@@ -36,8 +36,10 @@ jobs:
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
-          packagescript: 'e2e --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}'
+          packagescript: 'e2e'
           project: '${{ matrix.browser }}'
+          shard: '${{ matrix.shardIndex }}'
+          shardCount: '${{ matrix.shardTotal }}'
   ct-tests-run:
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
@@ -130,7 +132,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
-      - run: pnpm exec puppeteer browsers install chrome
       - run: pnpm build --base /prs/${{ github.event.number }}/ && rm -rf build/songs
         shell: bash
       - name: Deploy PR 🚀

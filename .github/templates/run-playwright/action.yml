@@ -7,6 +7,14 @@ inputs:
   packagescript:
     required: true
     description: 'Script from package.json to run'
+  shard:
+    required: false
+    description: 'which shard to run'
+    default: '1'
+  shardsCount:
+    required: false
+    description: 'total number of shards'
+    default: '1'
   project:
     required: false
     description: 'Playwright project (browser)'
@@ -34,12 +42,12 @@ runs:
       with:
         timeout_minutes: 20
         max_attempts: 2
-        command: pnpm ${{ inputs.packagescript }} --project=${{ inputs.project }} `pnpm ts-node scripts/runFailedPlaywrightTests.ts || ""`
+        command: pnpm ${{ inputs.packagescript }} --shard=${{ inputs.shard }}/${{ inputs.shardsCount }} --project=${{ inputs.project }} `pnpm ts-node scripts/runFailedPlaywrightTests.ts || ""`
         shell: bash
     - uses: actions/upload-artifact@v3
       if: failure()
       with:
-        name: ${{ inputs.packagescript }}-${{ inputs.project }}-test-results
+        name: ${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}-test-results
         path: |
           playwright-report
           test-results
