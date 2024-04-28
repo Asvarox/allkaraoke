@@ -1,0 +1,1111 @@
+#ARTIST:Eminem feat. Rihanna
+#TITLE:The Monster
+#CREATOR:ITGuyLevi
+#BPM:220
+#YEAR:2013
+#PREVIEWSTART:120
+#VIDEO:v=EHkozMIXZ8w
+#GENRE:Hip-Hop, Rap
+#LANGUAGE:English
+#GAP:61757,27272727273
+#ALLKARAOKE_ID:eminem-feat-rihanna-the-monster
+#ALLKARAOKE_LASTUPDATE:2024-04-28T19:12:38.618Z
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_PREVIEWEND:150
+#ALLKARAOKE_VOLUME:0,89
+#P1:The Monster [DUET]
+#MP3:Eminem feat. Rihanna - The Monster [DUET].mp3
+- 0 268
+- 268
+F 283 1 0 I 
+F 285 1 0 wan
+F 287 1 0 ted 
+F 289 1 0 the 
+F 291 1 0 fame, 
+- 292
+F 295 1 0 But 
+F 297 1 0 not 
+F 299 1 0 the 
+F 301 1 0 co
+F 303 1 0 ver 
+F 305 1 0 of 
+F 307 2 0 News
+F 311 1 0 week 
+- 312
+F 315 2 0 Oh, 
+F 319 2 0 well, 
+- 321
+F 325 2 0 Guess 
+F 329 1 0 beg
+F 331 2 0 gars 
+F 335 1 0 can’t 
+F 337 1 0 be 
+F 339 2 0 choo
+F 343 1 0 sey 
+- 344
+F 347 1 0 Wan
+F 349 1 0 ted 
+F 351 1 0 to 
+F 353 1 0 re
+F 355 2 0 ceive 
+F 359 1 0 at
+F 361 2 0 ten
+F 365 1 0 tion 
+F 367 1 0 for 
+F 369 1 0 my 
+F 371 2 0 mu
+F 375 1 0 sic 
+- 376
+F 379 1 0 Wan
+F 381 1 0 ted 
+F 383 1 0 to 
+F 385 1 0 be 
+F 387 2 0 left 
+F 391 1 0 a
+F 393 1 0 lone 
+F 395 1 0 in 
+F 397 1 0 pu
+F 399 1 0 blic 
+- 400
+F 401 1 0 Ex
+F 403 2 0 cuse 
+F 407 1 0 me 
+- 408
+F 411 1 0 For 
+F 413 1 0 want
+F 415 1 0 ing 
+F 417 1 0 my 
+F 419 1 0 cake 
+F 421 1 0 and 
+F 423 1 0 eat 
+F 425 1 0 it 
+F 427 1 0 too, 
+- 428
+F 431 1 0 And 
+F 433 1 0 want
+F 435 1 0 ing 
+F 437 1 0 it 
+F 439 2 0 both 
+F 443 1 0 ways 
+- 444
+F 447 2 0 Fame 
+F 451 1 0 made 
+F 453 1 0 me 
+F 455 1 0 a 
+F 457 1 0 ba
+F 459 1 0 lloon 
+- 460
+F 463 1 0 ’Cause 
+F 465 2 0 my 
+F 469 1 0 e
+F 471 1 0 go 
+F 473 1 0 in
+F 475 1 0 fla
+F 477 1 0 ted 
+- 478
+F 479 1 0 When 
+F 481 1 0 I 
+F 483 2 0 blew; 
+F 487 2 0 see, 
+F 491 1 0 but 
+F 493 1 0 it 
+F 495 1 0 was 
+F 497 1 0 con
+F 499 1 0 fus
+F 501 1 0 ing 
+- 502
+F 505 1 0 ’Cause 
+F 507 1 0 all 
+F 509 1 0 I 
+F 511 1 0 wan
+F 513 1 0 ted 
+F 515 1 0 to 
+F 517 1 0 do 
+F 519 1 0 is 
+F 521 1 0 be 
+- 522
+F 525 1 0 The 
+F 527 2 0 Bruce 
+F 531 2 0 Lee 
+F 535 1 0 of 
+F 537 2 0 loose 
+F 541 1 0 leaf 
+- 542
+F 545 1 0 A
+F 547 1 0 bu
+F 549 1 0 sed 
+F 551 2 0 ink, 
+- 553
+F 563 1 0 U
+F 565 1 0 sed 
+F 567 1 0 it 
+F 569 1 0 as 
+F 571 1 0 a 
+F 573 1 0 tool 
+F 575 1 0 when 
+F 577 1 0 I 
+F 579 1 0 blew 
+F 581 2 0 steam 
+- 583
+F 587 1 0 Wooh! 
+- 588
+F 591 1 0 Hit 
+F 593 1 0 the 
+F 595 1 0 lot
+F 597 1 0 te
+F 599 1 0 ry, 
+F 601 2 0 oh 
+F 605 1 0 wee 
+- 606
+F 609 1 0 But 
+F 611 2 0 with 
+F 615 1 0 what 
+F 617 1 0 I 
+F 619 1 0 gave 
+F 621 1 0 up 
+F 623 1 0 to 
+F 625 2 0 get 
+F 629 1 0 was 
+F 631 1 0 bit
+F 633 1 0 ters
+F 635 1 0 weet 
+- 636
+F 637 1 0 It 
+F 639 1 0 was 
+F 641 2 0 like 
+F 645 1 0 win
+F 647 1 0 ning 
+F 649 1 0 a 
+F 651 1 0 u
+F 653 1 0 sed 
+F 655 2 0 me 
+- 657
+F 663 1 0 I
+F 665 1 0 ro
+F 667 1 0 nic 
+F 669 1 0 ’cause 
+F 671 1 0 I 
+F 673 1 0 think 
+F 675 1 0 I’m 
+F 677 1 0 get
+F 679 1 0 ting 
+F 681 1 0 so 
+F 683 1 0 huge 
+- 684
+F 685 1 0 I 
+F 687 1 0 need 
+F 689 1 0 a 
+F 691 1 0 shrink 
+- 692
+F 695 1 0 I’m 
+F 697 1 0 be
+F 699 1 0 gin
+F 701 1 0 ning 
+F 703 1 0 to 
+F 705 2 0 lose 
+F 709 2 0 sleep: 
+- 711
+F 715 2 0 One 
+F 719 2 0 sheep, 
+F 723 2 0 two 
+F 727 1 0 sheep 
+- 728
+F 731 1 0 Go
+F 733 1 0 ing 
+F 735 1 0 cu
+F 737 1 0 ckoo 
+F 739 1 0 and 
+F 741 1 0 coo
+F 743 1 0 ky 
+F 745 1 0 as 
+F 747 2 0 Kool 
+F 751 1 0 Keith 
+- 752
+F 757 1 0 But 
+F 759 1 0 I’m 
+F 761 1 0 ac
+F 763 1 0 tua
+F 765 1 0 lly 
+F 767 1 0 weir
+F 769 1 0 der 
+F 771 1 0 than 
+F 773 1 0 you 
+F 775 1 0 think 
+- 776 1286
+- 1286
+: 1301 1 6 No, 
+: 1303 1 6 I 
+: 1305 1 6 ain’t 
+: 1307 1 6 much 
+: 1309 1 6 of 
+: 1311 1 6 a 
+: 1313 1 8 poet 
+- 1314
+: 1317 1 8 But 
+: 1319 1 8 I 
+: 1321 1 8 know 
+: 1323 1 8 some
+: 1325 1 8 bo
+: 1327 1 8 dy 
+: 1329 1 6 once 
+- 1330
+: 1333 1 6 Told 
+: 1335 1 6 me 
+: 1337 1 6 to 
+: 1339 2 6 seize 
+: 1343 1 9 the 
+: 1345 1 8 mo
+: 1347 1 8 ment 
+- 1348
+: 1349 1 8 And 
+: 1351 1 8 don’t 
+: 1355 3 8 squan
+: 1359 1 4 der 
+: 1361 1 1 it 
+- 1362
+: 1363 1 6 ’Cause 
+: 1365 1 6 you 
+: 1367 1 6 ne
+: 1369 1 6 ver 
+: 1371 1 6 know 
+: 1373 1 6 when 
+: 1375 1 9 it 
+: 1377 1 8 all 
+- 1378
+: 1381 1 8 Could 
+: 1383 1 8 be 
+: 1385 1 8 o
+: 1387 1 8 ver 
+: 1389 1 8 to
+: 1391 1 6 mo
+* 1393 1 6 rrow 
+- 1394
+: 1395 1 6 So 
+: 1397 1 6 I 
+: 1399 3 11 keep 
+: 1403 3 8 con
+: 1407 1 8 jur
+: 1409 1 8 ing, 
+- 1410
+F 1411 1 0 Some
+F 1413 3 0 times 
+F 1417 2 0 I 
+F 1421 1 0 won
+F 1423 1 0 der 
+- 1424
+F 1425 1 0 Where 
+F 1427 2 0 these 
+F 1431 2 0 thoughts 
+F 1435 2 0 spawn 
+F 1439 1 0 from 
+- 1440
+F 1443 2 0 Yeah, 
+F 1447 2 0 pon
+F 1451 1 0 der 
+F 1453 1 0 it, 
+F 1455 1 0 do 
+F 1457 1 0 you 
+F 1459 3 0 want 
+F 1463 1 0 this? 
+- 1464
+F 1465 1 0 It’s 
+F 1467 1 0 no 
+F 1469 1 0 won
+F 1471 1 0 der 
+F 1473 1 0 you’re 
+F 1475 1 0 los
+F 1477 1 0 ing 
+F 1479 1 0 your 
+F 1481 1 0 mind, 
+- 1482
+F 1485 1 0 The 
+F 1487 1 0 way 
+F 1489 1 0 it 
+F 1491 3 0 wan
+F 1495 1 0 ders 
+- 1496
+F 1499 1 0 Yo-
+F 1501 1 0 lo-
+F 1503 1 0 lo-
+F 1505 1 0 lo-
+F 1507 5 0 yee-
+F 1513 1 0 whoo 
+- 1514
+F 1517 1 0 I 
+F 1519 1 0 think 
+F 1521 1 0 you’ve 
+F 1523 1 0 been 
+F 1525 1 0 wan
+F 1527 1 0 der
+F 1529 1 0 ing 
+F 1531 2 0 off 
+F 1535 2 0 down 
+F 1539 1 0 yon
+F 1541 1 0 der 
+- 1542
+F 1543 1 0 And 
+F 1545 1 0 stum
+F 1547 1 0 bled 
+F 1549 3 0 on
+F 1553 1 0 to 
+F 1555 2 0 Jeff 
+F 1559 2 0 Van
+F 1563 1 0 Von
+F 1565 1 0 de
+F 1567 2 0 ren 
+- 1569
+F 1575 1 0 ’Cause 
+F 1577 1 0 I 
+F 1579 1 0 need 
+F 1581 1 0 an 
+F 1583 1 0 in
+F 1585 1 0 ter
+F 1587 3 0 ven
+F 1591 1 0 tio
+F 1593 1 0 nist 
+- 1594
+F 1597 1 0 To 
+F 1599 1 0 in
+F 1601 1 0 ter
+F 1603 3 0 vene 
+F 1607 1 0 bet
+F 1609 3 0 ween 
+F 1613 1 0 me 
+F 1615 1 0 and 
+F 1617 1 0 this 
+F 1619 3 0 mons
+F 1623 1 0 ter 
+- 1624
+F 1625 1 0 And 
+F 1627 2 0 save 
+F 1631 1 0 me 
+F 1633 1 0 from 
+F 1635 1 0 my
+F 1637 3 0 self 
+- 1640
+F 1641 1 0 And 
+F 1643 2 0 all 
+F 1647 2 0 this 
+F 1651 2 0 con
+F 1655 1 0 flict 
+- 1656
+F 1659 1 0 ’Cause 
+F 1661 1 0 the 
+F 1663 1 0 ve
+F 1665 1 0 ry 
+F 1667 1 0 thing 
+F 1669 1 0 that 
+F 1671 1 0 I 
+F 1673 3 0 love’s 
+F 1677 1 0 ki
+F 1679 1 0 lling 
+F 1681 2 0 me 
+- 1683
+F 1687 1 0 And 
+F 1689 1 0 I 
+F 1691 1 0 can’t 
+F 1693 1 0 con
+F 1695 1 0 quer 
+F 1697 1 0 it 
+- 1698
+F 1701 1 0 My 
+F 1703 2 0 O
+F 1707 2 0 C
+F 1711 3 0 D is 
+F 1715 3 0 conk
+F 1719 1 0 ing 
+F 1721 1 0 me 
+F 1723 1 0 in 
+F 1725 1 0 the 
+F 1727 1 0 head 
+- 1728
+F 1731 2 0 Keep 
+F 1735 2 0 knock
+F 1739 1 0 ing, 
+F 1741 1 0 no
+F 1743 1 0 bo
+F 1745 1 0 dy’s 
+F 1747 1 0 home, 
+- 1748
+F 1753 1 0 I’m 
+F 1755 2 0 sleep
+F 1759 2 0 walk
+F 1763 1 0 ing 
+- 1764
+F 1765 1 0 I’m 
+F 1767 1 0 just 
+F 1769 1 0 re
+F 1771 1 0 lay
+F 1773 1 0 ing 
+F 1775 1 0 what 
+F 1777 1 0 the 
+F 1779 1 0 voice 
+- 1780
+F 1781 1 0 In 
+F 1783 1 0 my 
+F 1785 1 0 head’s 
+F 1787 1 0 say
+F 1789 1 0 ing 
+- 1790
+F 1793 1 0 Don’t 
+F 1795 1 0 shoot 
+F 1797 1 0 the 
+F 1799 1 0 mes
+F 1801 1 0 sen
+F 1803 1 0 ger, 
+- 1804 2320
+- 2320
+F 2335 1 0 Call 
+F 2337 1 0 me 
+F 2339 1 0 cra
+F 2341 1 0 zy, 
+F 2343 1 0 but 
+F 2345 1 0 I 
+F 2347 2 0 had 
+F 2351 1 0 this 
+F 2353 1 0 vi
+F 2355 1 0 sion 
+- 2356
+F 2359 2 0 One 
+F 2363 2 0 day 
+F 2367 2 0 that 
+F 2371 1 0 I’d 
+F 2373 1 0 walk 
+F 2375 1 0 a
+F 2377 1 0 mongst 
+- 2378
+F 2381 1 0 You 
+F 2383 1 0 a 
+F 2385 1 0 re
+F 2387 1 0 gu
+F 2389 1 0 lar 
+F 2391 1 0 ci
+F 2393 1 0 vi
+F 2395 1 0 lian 
+- 2396
+F 2397 1 0 But 
+F 2399 2 0 un
+F 2403 2 0 til 
+F 2407 2 0 then 
+F 2411 1 0 drums 
+F 2413 2 0 get 
+F 2417 1 0 killed 
+- 2418
+F 2419 1 0 And 
+F 2421 1 0 I’m 
+F 2423 1 0 com
+F 2425 1 0 ing 
+F 2427 2 0 straight 
+F 2431 1 0 at 
+- 2432
+F 2435 3 0 M
+F 2439 3 0 Cs 
+F 2443 1 0 blood 
+F 2445 1 0 get 
+F 2447 1 0 spi
+F 2449 1 0 lled 
+F 2451 1 0 and 
+F 2453 1 0 I 
+- 2454
+F 2457 1 0 Take 
+F 2459 1 0 it 
+F 2461 1 0 back 
+F 2463 1 0 to 
+F 2465 1 0 the 
+F 2467 2 0 days 
+- 2469
+F 2473 1 0 That 
+F 2475 1 0 I 
+F 2477 1 0 get 
+F 2479 1 0 on 
+F 2481 1 0 a 
+F 2483 2 0 Dre 
+F 2487 1 0 track 
+- 2488
+F 2491 1 0 Give 
+F 2493 1 0 e
+F 2495 1 0 very 
+F 2497 1 0 kid 
+F 2499 1 0 who 
+F 2501 1 0 got 
+F 2503 1 0 pla
+F 2505 1 0 yed 
+F 2507 2 0 that 
+- 2509
+F 2515 2 0 Pumped 
+F 2519 1 0 up 
+F 2521 1 0 fee
+F 2523 1 0 l
+F 2525 1 0 ing 
+F 2527 1 0 and 
+F 2529 1 0 shit 
+F 2531 1 0 to 
+F 2533 1 0 say 
+F 2535 2 0 back 
+- 2537
+F 2543 1 0 To 
+F 2545 1 0 the 
+F 2547 1 0 kids 
+F 2549 1 0 who 
+F 2551 1 0 pla
+F 2553 1 0 yed 
+F 2555 1 0 ’em 
+- 2556
+F 2559 1 0 I 
+F 2561 1 0 ain’t 
+F 2563 1 0 here 
+F 2565 1 0 to 
+F 2567 1 0 save 
+F 2569 1 0 the 
+F 2571 3 0 fuck
+F 2575 1 0 ing 
+F 2577 1 0 chil
+F 2579 1 0 dren 
+- 2580
+F 2583 1 0 But 
+F 2585 1 0 if 
+F 2587 2 0 one 
+F 2591 2 0 kid 
+- 2593
+F 2597 1 0 Out 
+F 2599 1 0 of 
+F 2601 1 0 a 
+F 2603 3 0 hun
+F 2607 1 0 dred 
+F 2609 1 0 mi
+F 2611 1 0 llion 
+- 2612
+F 2615 1 0 Who 
+F 2617 1 0 are 
+F 2619 1 0 go
+F 2621 1 0 ing 
+F 2623 1 0 through 
+F 2625 1 0 a 
+F 2627 1 0 strug
+F 2629 2 0 gle 
+F 2633 1 0 feels 
+- 2634
+F 2637 1 0 And 
+F 2639 1 0 then 
+F 2641 1 0 re
+F 2643 2 0 lates 
+F 2647 2 0 that’s 
+F 2653 1 0 great 
+- 2654
+F 2657 1 0 It’s 
+F 2659 2 0 pay
+F 2663 2 0 back, 
+F 2667 2 0 Rus
+F 2671 1 0 sell 
+F 2673 2 0 Wil
+F 2677 1 0 son 
+F 2679 1 0 fa
+F 2681 1 0 lling 
+F 2683 2 0 way 
+F 2687 1 0 back 
+- 2688
+F 2691 1 0 In 
+F 2693 1 0 the 
+F 2695 2 0 draft, 
+- 2697
+F 2703 2 0 Turn 
+F 2707 1 0 no
+F 2709 1 0 thing 
+F 2711 1 0 in
+F 2713 1 0 to 
+F 2715 3 0 some
+F 2719 1 0 thing, 
+- 2720
+F 2721 2 0 Still 
+F 2725 1 0 can 
+F 2727 2 0 make 
+F 2731 1 0 that 
+- 2732
+F 2735 2 0 Straw 
+F 2739 1 0 in
+F 2741 1 0 to 
+F 2743 2 0 gold 
+F 2747 1 0 chump, 
+- 2748
+F 2751 1 0 I 
+F 2753 2 0 will 
+F 2757 2 0 spin 
+- 2759
+F 2763 2 0 Rum
+F 2767 3 0 pels
+F 2771 1 0 tilts
+F 2773 1 0 kin 
+F 2775 1 0 in 
+F 2777 1 0 a 
+F 2779 3 0 hays
+F 2783 2 0 tack 
+- 2785
+F 2793 1 0 May
+F 2795 1 0 be 
+F 2797 1 0 I 
+F 2799 1 0 need 
+F 2801 1 0 a 
+F 2803 3 0 straight 
+F 2807 3 0 ja
+F 2811 1 0 cket, 
+F 2813 3 0 face 
+F 2817 2 0 facts 
+- 2819
+F 2823 2 0 I 
+F 2827 1 0 am 
+F 2829 1 0 nuts 
+F 2831 1 0 for 
+F 2833 3 0 real, 
+F 2837 1 0 but 
+F 2839 1 0 I’m 
+F 2841 1 0 o
+F 2843 1 0 kay 
+F 2845 1 0 with 
+F 2847 4 0 that 
+- 2851
+F 2855 1 0 It’s 
+F 2857 1 0 no
+F 2859 1 0 thing, 
+- 2860
+: 2863 2 4 I’m 
+* 2867 3 4 friends 
+: 2871 3 6 with 
+: 15 2 4 I’m 
+: 19 3 4 friends 
+: 23 3 6 with 
+: 27 1 4 the 
+* 31 3 11 mons
+: 35 1 8 ~
+: 39 4 8 ter 
+- 43
+: 47 1 4 That’s 
+: 51 3 6 un
+: 55 1 4 der 
+: 59 5 8 my 
+: 67 7 1 bed 
+- 74
+: 79 1 4 Get 
+: 81 1 4 a
+* 83 3 4 long 
+: 87 3 6 with 
+: 91 3 4 the 
+: 95 3 11 voi
+: 99 1 8 ~
+: 103 4 8 ces 
+- 107
+: 111 1 4 In
+: 115 3 6 side 
+: 119 1 4 of 
+: 123 7 8 my 
+: 131 3 8 head
+: 135 3 6 ~ 
+- 138
+: 143 2 4 You’re 
+: 147 3 4 try
+: 151 3 6 ing 
+: 155 1 4 to 
+: 159 3 11 save
+: 163 3 8 ~ 
+: 167 4 8 me, 
+- 171
+: 175 3 4 Stop 
+: 179 3 6 hold
+* 183 3 4 ing 
+: 187 7 8 your 
+: 195 5 1 breath 
+- 200
+: 207 3 4 And 
+: 211 3 4 you 
+: 215 3 6 think 
+: 219 3 4 I’m 
+: 223 3 11 cra
+: 227 3 8 ~
+* 231 4 8 zy, 
+- 235
+* 239 1 6 Yeah
+: 241 1 4 ~ 
+: 243 3 4 you 
+: 247 3 6 think 
+: 251 3 4 I’m 
+: 255 3 11 cra
+: 259 3 8 ~
+: 263 7 8 zy 
+- 270 768
+- 768
+: 783 2 4 I’m 
+: 787 3 4 friends 
+: 791 3 6 with 
+* 795 1 4 the 
+: 799 3 11 mons
+: 803 1 8 ~
+: 807 4 8 ter 
+- 811
+: 815 1 4 That’s 
+: 819 3 6 un
+: 823 1 4 der 
+: 827 5 8 my 
+: 835 7 1 bed 
+- 842
+: 847 1 4 Get 
+: 849 1 4 a
+: 851 3 4 long 
+: 855 3 6 with 
+: 859 3 4 the 
+: 863 3 11 voi
+: 867 1 8 ~
+: 871 4 8 ces 
+- 875
+: 879 1 4 In
+: 883 3 6 side 
+: 887 1 4 of 
+: 891 7 8 my 
+* 899 3 8 head
+: 903 3 6 ~ 
+- 906
+: 911 2 4 You’re 
+: 915 3 4 try
+: 919 3 6 ing 
+: 923 1 4 to 
+: 927 3 11 save
+: 931 3 8 ~ 
+: 935 4 8 me, 
+- 939
+: 943 3 4 Stop 
+: 947 3 6 hold
+: 951 3 4 ing 
+: 955 7 8 your 
+: 963 5 1 breath 
+- 968
+: 975 3 4 And 
+: 979 3 4 you 
+: 983 3 6 think 
+: 987 3 4 I’m 
+: 991 3 11 cra
+: 995 3 8 ~
+: 999 4 8 zy, 
+- 1003
+: 1007 1 6 Yeah
+: 1009 1 4 ~ 
+: 1011 3 4 you 
+: 1015 3 6 think 
+: 1019 3 4 I’m 
+: 1023 3 11 cra
+* 1027 3 8 ~
+: 1031 4 8 zy 
+- 1035
+: 1039 3 9 Well, 
+* 1043 1 9 that’s 
+: 1047 3 9 noth
+: 1051 3 9 ing
+: 1055 10 8 ~ 
+- 1065
+: 1071 2 8 Oh
+: 1075 7 6 ~
+: 1083 2 11 ~
+: 1087 7 8 ~ 
+- 1094
+: 1103 2 8 Oh
+: 1107 7 6 ~
+: 1115 2 4 ~
+: 1119 7 -1 ~ 
+- 1126
+: 1135 2 8 Oh
+: 1139 7 6 ~
+: 1147 2 11 ~
+: 1151 7 8 ~ 
+- 1158
+: 1167 3 9 Well, 
+* 1171 1 9 that’s 
+: 1175 3 9 noth
+: 1179 3 9 ing
+: 1183 10 8 ~ 
+- 1193
+: 1199 2 8 Oh
+: 1203 7 6 ~
+: 1211 2 11 ~
+: 1215 7 8 ~ 
+- 1222
+: 1231 2 8 Oh
+: 1235 7 6 ~
+: 1243 2 4 ~
+: 1247 7 -1 ~ 
+- 1254
+: 1263 2 3 Oh
+: 1267 7 -1 ~
+: 1275 2 3 ~
+: 1279 7 1 ~ 
+- 1286 1792
+- 1792
+* 1807 2 4 I’m 
+: 1811 3 4 friends 
+: 1815 3 6 with 
+: 1819 1 4 the 
+: 1823 3 11 mons
+: 1827 1 8 ~
+: 1831 4 8 ter 
+- 1835
+: 1839 1 4 That’s 
+: 1843 3 6 un
+: 1847 1 4 der 
+: 1851 5 8 my 
+: 1859 7 1 bed 
+- 1866
+: 1871 1 4 Get 
+: 1873 1 4 a
+: 1875 3 4 long 
+: 1879 3 6 with 
+: 1883 3 4 the 
+: 1887 3 11 voi
+* 1891 1 8 ~
+: 1895 4 8 ces 
+- 1899
+: 1903 1 4 In
+: 1907 3 6 side 
+: 1911 1 4 of 
+: 1915 7 8 my 
+: 1923 3 8 head
+: 1927 3 6 ~ 
+- 1930
+: 1935 2 4 You’re 
+: 1939 3 4 try
+: 1943 3 6 ing 
+: 1947 1 4 to 
+: 1951 3 11 save
+: 1955 3 8 ~ 
+: 1959 4 8 me, 
+- 1963
+: 1967 3 4 Stop 
+: 1971 3 6 hold
+: 1975 3 4 ing 
+: 1979 7 8 your 
+* 1987 5 1 breath 
+- 1992
+: 1999 3 4 And 
+: 2003 3 4 you 
+: 2007 3 6 think 
+: 2011 3 4 I’m 
+: 2015 3 11 cra
+* 2019 3 8 ~
+: 2023 4 8 zy, 
+- 2027
+: 2031 1 6 Yeah
+* 2033 1 4 ~ 
+: 2035 3 4 you 
+: 2039 3 6 think 
+* 2043 3 4 I’m 
+* 2047 3 11 cra
+* 2051 3 8 ~
+: 2055 4 8 zy 
+- 2059
+: 2063 3 9 Well, 
+: 2067 1 9 that’s 
+: 2071 3 9 noth
+: 2075 3 9 ing
+: 2079 10 8 ~ 
+- 2089
+: 2095 2 8 Oh
+: 2099 7 6 ~
+: 2107 2 11 ~
+: 2111 7 8 ~ 
+- 2118
+: 2127 2 8 Oh
+: 2131 7 6 ~
+* 2139 2 4 ~
+: 2143 7 -1 ~ 
+- 2150
+: 2159 2 8 Oh
+: 2163 7 6 ~
+: 2171 2 11 ~
+: 2175 7 8 ~ 
+- 2182
+: 2191 3 9 Well, 
+: 2195 1 9 that’s 
+: 2199 3 9 noth
+: 2203 3 9 ing
+: 2207 10 8 ~ 
+- 2217
+: 2223 2 8 Oh
+: 2227 7 6 ~
+: 2235 2 11 ~
+: 2239 7 8 ~ 
+- 2246
+: 2255 2 8 Oh
+: 2259 7 6 ~
+: 2267 2 4 ~
+: 2271 7 -1 ~ 
+- 2278
+: 2287 2 3 Oh
+: 2291 7 -1 ~
+: 2299 2 3 ~
+: 2303 7 1 ~ 
+- 2310 2848
+- 2848
+: 2863 2 4 I’m 
+* 2867 3 4 friends 
+: 2871 3 6 with 
+: 2875 1 4 the 
+: 2879 3 11 mons
+: 2883 1 8 ~
+: 2887 4 8 ter 
+- 2891
+: 2895 1 4 That’s 
+: 2899 3 6 un
+: 2903 1 4 der 
+: 2907 5 8 my 
+: 2915 7 1 bed 
+- 2922
+: 2927 1 4 Get 
+: 2929 1 4 a
+: 2931 3 4 long 
+: 2935 3 6 with 
+: 2939 3 4 the 
+: 2943 3 11 voi
+: 2947 1 8 ~
+* 2951 4 8 ces 
+- 2955
+: 2959 1 4 In
+: 2963 3 6 side 
+: 2967 1 4 of 
+: 2971 7 8 my 
+: 2979 3 8 head
+: 2983 3 6 ~ 
+- 2986
+: 2991 2 4 You’re 
+: 2995 3 4 try
+: 2999 3 6 ing 
+: 3003 1 4 to 
+: 3007 3 11 save
+* 3011 3 8 ~ 
+: 3015 4 8 me, 
+- 3019
+: 3023 3 4 Stop 
+: 3027 3 6 hold
+: 3031 3 4 ing 
+: 3035 7 8 your 
+: 3043 5 1 breath 
+- 3048
+: 3055 3 4 And 
+: 3059 3 4 you 
+* 3063 3 6 think 
+: 3067 3 4 I’m 
+: 3071 3 11 cra
+: 3075 3 8 ~
+: 3079 4 8 zy, 
+- 3083
+: 3087 1 6 Yeah
+: 3089 1 4 ~ 
+: 3091 3 4 you 
+: 3095 3 6 think 
+: 3099 3 4 I’m 
+: 3103 3 11 cra
+: 3107 3 8 ~
+: 3111 4 8 zy 
+- 3115
+: 3119 2 4 I’m 
+: 3123 3 4 friends 
+: 3127 3 6 with 
+: 3131 1 4 the 
+* 3135 3 11 mons
+: 3139 1 8 ~
+: 3143 4 8 ter 
+- 3147
+: 3151 1 4 That’s 
+: 3155 3 6 un
+: 3159 1 4 der 
+: 3163 5 8 my 
+: 3171 7 1 bed 
+- 3178
+: 3183 1 4 Get 
+: 3185 1 4 a
+: 3187 3 4 long 
+: 3191 3 6 with 
+: 3195 3 4 the 
+* 3199 3 11 voi
+: 3203 1 8 ~
+: 3207 4 8 ces 
+- 3211
+: 3215 1 4 In
+* 3219 3 6 side 
+: 3223 1 4 of 
+: 3227 7 8 my 
+: 3235 3 8 head
+: 3239 3 6 ~ 
+- 3242
+: 3247 2 4 You’re 
+: 3251 3 4 try
+: 3255 3 6 ing 
+: 3259 1 4 to 
+: 3263 3 11 save
+: 3267 3 8 ~ 
+: 3271 4 8 me, 
+- 3275
+: 3279 3 4 Stop 
+: 3283 3 6 hold
+: 3287 3 4 ing 
+: 3291 7 8 your 
+: 3299 5 1 breath 
+- 3304
+: 3311 3 4 And 
+: 3315 3 4 you 
+: 3319 3 6 think 
+: 3323 3 4 I’m 
+: 3327 3 11 cra
+: 3331 3 8 ~
+: 3335 4 8 zy, 
+- 3339
+: 3343 1 6 Yeah
+: 3345 1 4 ~ 
+* 3347 3 4 you 
+: 3351 3 6 think 
+: 3355 3 4 I’m 
+: 3359 3 11 cra
+: 3363 3 8 ~
+: 3367 4 8 zy 
+- 3371
+* 3375 3 9 Well, 
+: 3379 1 9 that’s 
+: 3383 3 9 no
+: 3387 3 9 thing
+: 3391 10 8 ~ 
+- 3401
+: 3407 2 8 Oh
+: 3411 7 6 ~
+: 3419 2 11 ~
+: 3423 7 8 ~ 
+- 3430
+: 3439 2 8 Oh
+: 3443 7 6 ~
+: 3451 2 4 ~
+: 3455 7 -1 ~ 
+- 3462
+: 3471 2 8 Oh
+: 3475 7 6 ~
+: 3483 2 11 ~
+: 3487 7 8 ~ 
+- 3494
+: 3503 3 9 Well, 
+: 3507 1 9 that’s 
+: 3511 3 9 no
+: 3515 3 9 thing
+: 3519 10 8 ~ 
+- 3529
+: 3535 2 8 Oh
+: 3539 7 6 ~
+* 3547 2 11 ~
+: 3551 7 8 ~ 
+- 3558
+: 3567 2 8 Oh
+: 3571 7 6 ~
+: 3579 2 4 ~
+: 3583 7 -1 ~ 
+- 3590
+: 3599 2 3 Oh
+: 3603 7 -1 ~
+: 3611 2 3 ~
+: 3615 7 1 ~ 
+- 3622
+: 3631 2 3 Oh
+: 3635 7 -1 ~
+: 3643 2 3 ~
+: 3647 10 1 ~ 
+E

@@ -1,0 +1,214 @@
+#ARTIST:Daft Punk Feat. Todd Edwards
+#TITLE:Face To Face
+#CREATOR:Schluckschuppen
+#BPM:235,7
+#YEAR:2001
+#VIDEO:v=DFNWZkpGBxE
+#LANGUAGE:English
+#GAP:72731,7564700891
+#ALLKARAOKE_ID:daft-punk-feat-todd-edwards-face-to-face
+#ALLKARAOKE_LASTUPDATE:2024-04-28T19:12:38.152Z
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_VOLUME:1
+#P1:Face To Face
+#MP3:Daft Punk - Face To Face.mp3
+: 16 3 6 What’s 
+: 20 3 4 go
+: 24 3 6 ing 
+: 28 4 4 on? 
+- 32
+: 36 3 4 Could 
+: 40 3 4 this 
+: 44 3 6 be 
+: 48 3 4 my 
+: 52 3 6 un
+: 56 3 4 der
+: 60 7 6 stan
+: 68 8 8 ding 
+- 76
+: 80 3 4 It’s 
+: 84 3 2 not 
+: 88 3 4 your 
+: 92 4 2 fault 
+- 96
+: 100 3 4 I 
+: 104 3 6 was 
+: 108 3 10 be
+: 112 3 8 ing 
+: 116 3 6 too 
+: 120 3 8 de
+: 124 7 8 man
+: 132 8 6 ding 
+- 140
+: 144 3 4 I 
+: 148 3 6 must 
+: 152 3 4 ad
+: 156 4 6 mit 
+- 160
+: 164 3 4 It’s 
+: 168 3 6 my 
+: 172 3 8 pride 
+: 176 3 6 that 
+: 180 3 8 made 
+: 184 3 6 me 
+: 188 7 8 dis
+: 196 8 10 tant 
+- 204
+: 212 3 4 All 
+: 216 1 2 be
+: 218 7 3 cause 
+- 225
+: 226 1 6 I 
+: 228 3 4 hoped 
+: 232 3 6 that 
+: 236 3 4 you’d 
+: 240 3 2 be 
+: 244 3 0 some
+: 248 3 2 one 
+: 252 7 4 dif
+: 260 8 0 ferent 
+- 268 276
+- 276
+: 292 3 4 There’s 
+: 296 3 2 not 
+: 300 3 4 much 
+: 304 3 2 I 
+: 308 3 4 know 
+: 312 3 4 a
+: 316 7 6 bout 
+: 324 8 8 you 
+- 332 340
+- 340
+: 356 3 4 Fear 
+: 360 3 2 will 
+: 364 3 4 a
+: 368 3 2 lways 
+: 372 3 4 make 
+: 376 3 6 you 
+: 380 8 5 blind 
+- 388 404
+- 404
+: 420 3 4 But 
+: 424 3 4 the 
+: 428 3 8 ans
+: 432 3 8 wer 
+: 436 3 6 is 
+: 440 3 6 in 
+: 444 7 4 clear 
+: 452 8 6 view 
+- 460 468
+- 468
+: 484 3 4 It’s 
+: 488 3 4 a
+: 492 3 6 maz
+: 496 3 6 ing 
+: 500 3 6 what 
+: 504 3 6 you’ll 
+: 508 7 8 find 
+- 515
+: 516 3 4 Face 
+: 520 1 4 to 
+: 522 18 8 face 
+- 540 1022
+- 1022
+: 1038 3 4 I 
+: 1042 3 4 turned 
+: 1046 1 4 a
+: 1048 8 2 way 
+- 1056
+: 1060 1 4 Be
+: 1062 1 4 cause 
+: 1064 3 4 I 
+: 1068 3 2 thought 
+: 1072 3 2 you 
+: 1076 3 4 were 
+: 1080 3 4 the 
+: 1084 7 6 pro
+: 1092 8 8 blem 
+- 1100
+: 1104 3 4 Tried 
+: 1108 3 6 to 
+: 1112 3 4 for
+: 1116 4 6 get 
+- 1120
+: 1128 3 4 Un
+: 1132 3 10 til 
+: 1136 3 10 I 
+: 1140 3 10 hit 
+: 1144 3 8 the 
+: 1148 7 6 bot
+: 1156 8 5 tom 
+- 1164
+: 1168 3 4 But 
+: 1172 3 6 when 
+: 1176 3 4 I 
+: 1180 3 6 faced 
+: 1184 8 8 you 
+- 1192
+: 1196 3 4 In 
+: 1200 3 4 my 
+: 1204 3 6 blank 
+: 1208 3 4 con
+: 1212 7 6 fu
+: 1220 7 8 sion 
+- 1227
+: 1228 1 4 I 
+: 1230 1 8 re
+: 1232 3 8 a
+: 1236 3 8 lized 
+: 1240 3 4 you 
+: 1244 1 6 were
+: 1246 1 6 n’t 
+: 1248 3 6 wro
+: 1252 4 4 ng 
+- 1256
+: 1258 1 6 It 
+: 1260 3 8 was 
+: 1264 3 8 a 
+: 1268 3 8 mere 
+: 1272 3 8 il
+: 1276 7 6 lu
+: 1284 8 4 sion 
+- 1292 1304
+- 1304
+: 1320 3 4 It 
+: 1324 3 6 real
+: 1328 3 4 ly 
+: 1332 3 6 did
+: 1336 3 4 n’t 
+: 1340 7 6 make 
+: 1348 8 6 sense 
+- 1356 1364
+- 1364
+: 1380 3 4 Just 
+: 1384 3 4 to 
+: 1388 3 2 leave 
+: 1392 3 3 this 
+: 1396 3 4 un
+: 1400 3 6 re
+: 1404 8 5 solved 
+- 1412 1428
+- 1428
+: 1444 3 4 It’s 
+: 1448 3 2 not 
+: 1452 3 10 hard 
+: 1456 3 8 to 
+: 1460 3 6 go 
+: 1464 3 6 the 
+: 1468 7 4 dis
+: 1476 8 6 tance 
+- 1484 1492
+- 1492
+: 1508 3 4 When 
+: 1512 3 4 you 
+: 1516 1 6 fin
+: 1518 1 6 al
+: 1520 3 6 ly 
+: 1524 3 8 get 
+: 1528 3 8 in
+: 1532 7 10 volved 
+- 1539
+: 1540 3 4 Face 
+: 1544 3 4 to 
+: 1548 12 8 face 
+E

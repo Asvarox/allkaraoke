@@ -1,0 +1,944 @@
+#ARTIST:The Black Eyed Peas Feat. Justin Timberlake
+#TITLE:Where Is The Love?
+#CREATOR:Caruso
+#BPM:376,56
+#YEAR:2003
+#VIDEO:v=WpYeekQkAdc
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:19364,142766093053
+#ALLKARAOKE_ID:the-black-eyed-peas-feat-justin-timberlake-where-is-the-love
+#ALLKARAOKE_LASTUPDATE:2024-04-28T19:13:00.386Z
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_VOLUME:0,7
+#P1:Where Is The Love?
+#MP3:The Black Eyed Peas - Where Is The Love?.mp3
+: 25 2 2 What’s 
+: 30 7 5 wrong 
+: 39 2 5 with 
+: 43 1 2 the 
+: 46 7 5 world, 
+: 55 4 2 ma
+: 61 3 0 ma? 
+- 64
+: 72 3 5 Peo
+: 76 2 2 ple 
+: 79 2 5 li
+: 82 3 5 vin’ 
+: 87 5 2 like 
+: 96 5 5 ain’t 
+: 103 5 2 got 
+: 111 6 5 no 
+: 119 4 2 ma
+: 124 3 0 mas 
+- 127
+F 135 6 0 I 
+F 142 4 0 think 
+F 147 3 0 the 
+F 151 7 0 whole 
+F 159 2 0 world’s 
+- 161
+F 164 2 0 Ad
+F 167 3 0 dic
+F 171 2 0 ted 
+F 174 2 0 to 
+F 177 5 0 the 
+F 183 6 0 dra
+F 190 3 0 ma 
+- 193
+F 198 3 0 On
+F 202 1 0 ly 
+F 204 4 0 at
+F 209 5 0 trac
+F 215 1 0 ted 
+F 217 4 0 to 
+F 222 4 0 things 
+- 226
+F 229 2 0 That
+F 232 4 0 ’ll 
+F 237 4 0 bring 
+F 242 4 0 you 
+F 247 5 0 trau
+F 253 2 0 ma 
+- 255
+F 264 3 0 O
+F 268 4 0 ver
+F 273 5 0 seas, 
+F 279 2 0 yeah 
+F 282 5 0 we’re 
+F 288 2 0 tryin’ 
+F 291 4 0 to 
+F 296 8 0 stop 
+F 305 2 0 ter
+F 308 2 0 ro
+F 311 6 0 rism 
+- 317
+F 328 2 0 But 
+F 331 6 0 we 
+F 338 6 0 still 
+F 345 7 0 got 
+F 353 2 0 ter
+F 356 4 0 ro
+F 361 6 0 rists 
+F 368 5 0 here 
+F 374 4 0 li
+F 379 3 0 vin’ 
+- 382
+F 391 2 0 In 
+F 394 4 0 the 
+F 399 2 0 U
+F 402 8 0 S
+F 411 6 0 A 
+F 418 3 0 the 
+F 422 7 0 big 
+F 430 3 0 C
+F 434 11 0 I
+F 446 4 0 A 
+- 450
+F 459 4 0 The 
+F 464 5 0 Bloodz 
+F 470 1 0 and 
+F 472 5 0 the 
+F 478 8 0 Crips 
+F 487 1 0 and 
+F 489 3 0 the 
+F 493 6 0 K
+F 500 7 0 K
+F 508 4 0 K 
+- 512
+F 522 1 0 But 
+F 524 3 0 if 
+F 528 1 0 you 
+F 530 4 0 on
+F 535 1 0 ly 
+F 537 8 0 have 
+F 546 5 0 love 
+F 552 3 0 for 
+F 556 3 0 your 
+F 560 8 0 own 
+F 569 5 0 race 
+- 574
+F 584 3 0 Then 
+F 588 3 0 you 
+F 592 3 0 on
+F 596 3 0 ly 
+F 600 7 0 leave 
+F 608 7 0 space 
+F 616 2 0 to 
+F 619 5 0 dis
+F 625 3 0 cri
+F 629 2 0 mi
+F 632 5 0 nate 
+- 637
+F 643 3 0 And 
+F 647 2 0 to 
+F 650 6 0 dis
+F 657 3 0 cri
+F 661 2 0 mi
+F 664 6 0 nate 
+F 671 3 0 on
+F 675 4 0 ly 
+F 680 2 0 ge
+F 683 4 0 ne
+F 688 7 0 rates 
+F 696 5 0 hate 
+- 701
+F 708 2 0 And 
+F 711 3 0 when 
+F 715 2 0 you 
+F 720 4 0 hate 
+- 724
+F 727 2 0 Then 
+F 730 3 0 you’re 
+F 735 4 0 bound 
+F 741 2 0 to 
+F 744 3 0 get 
+F 751 7 0 i
+F 760 5 0 rate 
+- 765
+F 776 6 0 Yeah 
+- 782
+F 793 6 0 Mad
+F 800 4 0 ness 
+F 805 2 0 is 
+F 808 2 0 what 
+F 811 4 0 you 
+F 816 2 0 de
+F 819 5 0 mon
+F 825 5 0 strate 
+- 830
+F 835 2 0 And 
+F 838 4 0 that’s 
+F 843 3 0 ex
+F 847 5 0 act
+F 853 3 0 ly 
+F 857 5 0 how 
+F 863 3 0 an
+F 867 3 0 ger 
+F 871 4 0 works 
+- 875
+F 878 1 0 And 
+F 880 4 0 o
+F 885 2 0 pe
+F 888 5 0 rates 
+- 893
+F 904 3 0 Man, 
+F 908 2 0 you 
+F 911 3 0 got
+F 915 4 0 ta 
+F 920 8 0 have 
+F 929 6 0 love 
+F 936 1 0 just 
+F 938 5 0 to 
+F 944 1 0 set 
+F 946 7 0 it 
+F 954 6 0 straight 
+- 960
+F 967 3 0 Take 
+F 971 4 0 con
+F 976 3 0 trol 
+F 980 2 0 of 
+F 983 3 0 your 
+F 987 6 0 mind 
+F 994 4 0 and 
+F 999 2 0 me
+F 1002 4 0 di
+F 1007 4 0 tate 
+- 1011
+F 1016 2 0 Let 
+F 1019 4 0 your 
+F 1024 7 0 soul 
+F 1032 3 0 gra
+F 1036 4 0 vi
+F 1041 7 0 tate 
+F 1049 2 0 to 
+F 1052 4 0 the 
+F 1057 6 0 love 
+F 1064 3 0 y’all 
+- 1067
+* 1070 3 9 Peo
+* 1075 6 9 ple 
+* 1082 3 7 kil
+* 1086 4 9 ~
+* 1091 5 7 lin’, 
+* 1099 5 7 peo
+* 1107 5 5 ple 
+* 1115 2 5 dy
+* 1118 4 7 ~
+* 1123 4 9 in’ 
+- 1127
+: 1135 2 7 Chil
+: 1138 3 9 ~
+: 1142 3 9 dren 
+: 1148 2 7 hurt
+: 1151 3 9 ~ 
+: 1156 6 7 and 
+: 1163 2 5 you 
+: 1167 4 7 hear 
+: 1172 2 7 them
+: 1175 3 9 ~ 
+: 1180 1 5 cry
+: 1182 4 2 ~
+: 1187 3 2 in’ 
+- 1190
+: 1199 3 2 Can 
+: 1204 4 5 you 
+: 1211 2 5 prac
+: 1214 4 9 ~
+: 1220 3 7 tice 
+: 1228 3 7 what 
+: 1235 3 5 you 
+: 1243 5 -2 preach? 
+- 1248
+: 1259 2 -2 And 
+: 1262 3 2 would 
+: 1267 4 5 you 
+: 1275 2 5 turn
+: 1278 4 9 ~ 
+: 1283 4 7 the 
+: 1290 2 5 o
+: 1293 4 7 ~
+: 1299 1 7 ther
+: 1301 3 9 ~ 
+: 1307 10 5 cheek? 
+- 1317
+: 1326 2 9 Fa
+: 1329 3 12 ~
+: 1333 2 12 ther, 
+: 1339 6 9 Fa
+: 1346 3 9 ther, 
+: 1355 6 7 Fa
+: 1362 4 7 ther, 
+: 1370 5 7 help 
+: 1378 7 5 us 
+- 1385
+: 1390 5 2 Send 
+: 1398 3 5 some 
+: 1402 2 5 gui
+: 1405 4 9 ~
+: 1410 4 7 dance 
+: 1418 2 5 from
+: 1421 4 7 ~ 
+: 1426 1 7 a
+: 1428 4 9 ~
+: 1434 10 5 bove 
+- 1444
+: 1451 1 -2 ’cause 
+: 1454 4 2 peo
+: 1459 4 5 ple 
+: 1466 2 5 got
+: 1469 4 9 ~ 
+: 1475 5 7 me, 
+: 1483 5 7 got 
+: 1490 5 5 me 
+- 1495
+: 1498 2 7 Ques
+: 1501 2 9 ~
+: 1507 2 7 tio
+: 1510 2 5 ~
+: 1514 3 7 nin’
+: 1519 2 5 ~
+: 1522 3 2 ~ 
+- 1525
+: 1534 2 7 Where
+: 1537 4 9 ~ 
+: 1543 2 7 is 
+: 1550 1 7 the
+: 1552 4 9 ~ 
+: 1558 30 5 love 
+- 1588 1590
+- 1590
+: 1615 2 9 The
+: 1618 5 12 ~
+: 1625 5 7 ~ 
+: 1631 30 7 love 
+- 1661
+: 1678 2 9 The
+: 1681 5 12 ~
+: 1688 5 7 ~ 
+: 1695 6 7 love
+: 1702 20 5 ~? 
+- 1722
+: 1727 5 7 Where 
+: 1734 5 7 is 
+: 1743 4 5 the 
+: 1750 2 7 love
+: 1753 19 9 ~ 
+- 1772
+: 1775 2 9 The
+: 1778 3 7 ~ 
+: 1783 21 7 love 
+- 1804
+: 1807 2 7 The
+: 1810 2 9 ~ 
+: 1814 2 5 love? 
+- 1816
+F 1819 2 0 It 
+F 1822 7 0 just 
+F 1831 6 0 ain’t 
+F 1838 5 0 the 
+F 1844 6 0 same 
+F 1857 4 0 al
+F 1862 8 0 ways 
+F 1871 5 0 un
+F 1877 7 -3 changed 
+- 1884
+F 1890 5 0 New 
+F 1896 4 0 days 
+F 1901 6 0 are 
+F 1908 5 0 strange, 
+F 1914 3 0 is 
+F 1918 3 0 the 
+F 1922 5 0 world 
+F 1928 5 0 in
+F 1934 6 0 sane? 
+- 1940
+F 1949 4 0 If 
+F 1954 2 0 love 
+F 1957 3 0 and 
+F 1961 4 0 peace 
+F 1966 4 0 are 
+F 1971 3 0 so 
+F 1975 7 0 strong 
+- 1982
+F 1991 3 0 Why 
+F 1995 3 0 are 
+F 1999 2 0 there 
+F 2002 5 0 pie
+F 2008 1 0 ces 
+F 2010 4 0 of 
+F 2015 2 0 love 
+- 2017
+F 2020 3 0 That 
+F 2024 5 0 don’t 
+F 2030 1 0 be
+F 2032 4 0 long? 
+- 2036
+F 2048 3 0 Na
+F 2052 4 0 tions 
+F 2057 4 0 drop
+F 2062 3 0 pin’ 
+F 2066 7 0 bombs 
+- 2073
+F 2081 2 0 Che
+F 2084 3 0 mi
+F 2088 4 0 cal 
+F 2093 6 0 ga
+F 2100 3 0 ses 
+F 2104 2 0 fil
+F 2107 4 0 lin’ 
+F 2112 5 0 lungs 
+F 2118 3 0 of 
+F 2122 2 0 lit
+F 2125 3 0 tle 
+F 2129 5 0 ones 
+- 2134
+F 2140 4 0 With 
+F 2145 6 0 on
+F 2152 3 0 go
+F 2156 4 0 in’ 
+F 2161 4 0 suf
+F 2166 1 0 fer
+F 2168 4 0 rin’ 
+- 2172
+F 2176 3 0 As 
+F 2180 2 0 the 
+F 2183 4 0 youth 
+F 2188 3 0 die 
+F 2192 3 0 young 
+- 2195
+F 2201 5 0 So 
+F 2207 7 0 ask 
+F 2215 4 0 your
+F 2220 5 0 self 
+F 2233 2 0 is 
+F 2236 2 0 the 
+F 2239 3 0 lo
+F 2243 4 0 vin’ 
+F 2248 2 0 real
+F 2251 4 0 ly 
+F 2256 2 0 gone? 
+- 2258
+F 2261 1 0 So 
+F 2263 3 0 I 
+F 2267 3 0 could 
+F 2271 6 0 ask 
+F 2279 4 0 my
+F 2284 5 0 self 
+- 2289
+F 2296 2 0 Real
+F 2299 3 0 ly 
+F 2303 2 0 what 
+F 2306 5 0 is 
+F 2312 2 0 go
+F 2315 4 0 in’ 
+F 2320 4 0 wrong 
+- 2324
+F 2327 2 0 In 
+F 2330 5 0 this 
+F 2336 6 0 world 
+F 2343 2 0 that 
+F 2346 3 0 we 
+F 2350 3 0 li
+F 2354 2 0 vin’ 
+F 2357 3 0 in? 
+- 2360
+F 2368 2 0 Peo
+F 2371 3 0 ple 
+F 2375 3 0 keep 
+F 2379 4 0 on 
+F 2384 2 0 gi
+F 2387 2 0 vin’ 
+F 2390 3 0 in 
+- 2393
+F 2400 3 0 Ma
+F 2404 2 0 kin 
+F 2407 5 0 wrong 
+F 2413 3 0 de
+F 2417 2 0 ci
+F 2420 2 0 sions 
+- 2422
+F 2425 2 0 On
+F 2428 3 0 ly 
+F 2432 2 0 vi
+F 2435 4 0 sions 
+F 2440 2 0 of 
+F 2443 4 0 them 
+F 2448 3 0 di
+F 2452 1 0 vi
+F 2454 3 0 dends 
+- 2457
+F 2460 2 0 Not 
+F 2463 5 0 re
+F 2469 4 0 spec
+F 2474 1 0 tin’ 
+F 2476 5 0 each 
+F 2482 2 0 o
+F 2485 2 0 ther 
+- 2487
+F 2495 1 0 De
+F 2497 6 0 ny 
+F 2504 6 0 thy 
+F 2511 3 0 bro
+F 2515 4 0 ther 
+- 2519
+F 2525 2 0 A 
+F 2528 4 0 war 
+F 2533 2 0 is 
+F 2536 2 0 go
+F 2539 3 0 in’ 
+F 2543 5 0 on 
+- 2548
+F 2551 4 0 But 
+F 2556 2 0 the 
+F 2559 3 0 rea
+F 2563 3 0 son’s 
+F 2567 3 0 un
+F 2571 3 0 der
+F 2575 3 0 co
+F 2579 3 0 ver 
+- 2582
+F 2588 4 0 The 
+F 2593 3 0 truth 
+F 2597 4 0 is 
+F 2602 4 0 kept 
+F 2608 4 0 se
+F 2613 4 0 cret 
+- 2617
+F 2621 4 0 It’s 
+F 2626 3 0 swept 
+F 2630 2 0 un
+F 2633 2 0 der 
+F 2636 3 0 the 
+F 2640 4 0 rug 
+- 2644
+F 2648 3 0 If 
+F 2652 3 0 you 
+F 2656 3 0 ne
+F 2660 3 0 ver 
+F 2664 7 0 know 
+F 2672 4 0 truth 
+- 2676
+F 2679 3 0 Then 
+F 2683 3 0 you 
+F 2687 3 0 ne
+F 2691 3 0 ver 
+F 2695 8 0 know 
+F 2704 4 0 love 
+- 2708
+F 2711 4 0 Where’s 
+F 2716 4 0 the 
+F 2721 6 0 love 
+F 2728 5 0 y’all? 
+- 2733
+F 2751 2 0 I 
+F 2754 12 0 don’t 
+F 2767 5 0 know 
+- 2772
+F 2775 4 0 Where’s 
+F 2780 4 0 the 
+F 2785 7 0 truth 
+F 2793 5 0 y’all? 
+- 2798
+F 2815 3 0 I 
+F 2819 11 0 don’t 
+F 2831 5 0 know 
+- 2836
+F 2840 4 0 Where’s 
+F 2845 3 0 the 
+F 2849 6 0 love 
+F 2856 3 0 y’all? 
+- 2859
+: 2862 3 9 Peo
+: 2867 6 9 ple 
+: 2874 3 7 kil
+: 2878 4 9 ~
+: 2883 5 7 lin’, 
+: 2891 5 7 peo
+: 2899 5 5 ple 
+: 2907 2 5 dy
+: 2910 4 7 ~
+: 2915 4 9 in’ 
+- 2919
+: 2927 2 7 Chil
+: 2930 3 9 ~
+: 2934 3 9 dren 
+: 2940 2 7 hurt
+: 2943 3 9 ~ 
+: 2948 6 7 and 
+: 2955 2 5 you 
+: 2959 4 7 hear 
+: 2964 2 7 them
+: 2967 3 9 ~ 
+: 2972 1 5 cry
+: 2974 4 2 ~
+: 2979 3 2 in’ 
+- 2982
+: 2991 3 2 Can 
+: 2996 4 5 you 
+: 3003 2 5 prac
+: 3006 4 9 ~
+: 3012 3 7 tice 
+: 3020 3 7 what 
+: 3027 3 5 you 
+: 3035 5 -2 preach? 
+- 3040
+: 3051 2 -2 And 
+: 3054 3 2 would 
+: 3059 4 5 you 
+: 3067 2 5 turn
+: 3070 4 9 ~ 
+: 3075 4 7 the 
+: 3082 2 5 o
+: 3085 4 7 ~
+: 3091 1 7 ther
+: 3093 3 9 ~ 
+: 3099 10 5 cheek? 
+- 3109
+: 3118 2 9 Fa
+: 3121 3 12 ~
+: 3125 2 12 ther, 
+: 3131 6 9 Fa
+: 3138 3 9 ther, 
+: 3147 6 7 Fa
+: 3154 4 7 ther, 
+: 3162 5 7 help 
+: 3170 7 5 us 
+- 3177
+: 3182 5 2 Send 
+: 3190 3 5 some 
+: 3194 2 5 gui
+: 3197 4 9 ~
+: 3202 4 7 dance 
+: 3210 2 5 from
+: 3213 4 7 ~ 
+: 3218 1 7 a
+: 3220 4 9 ~
+: 3226 10 5 bove 
+- 3236
+: 3243 1 -2 ’Cause 
+: 3246 4 2 peo
+: 3251 4 5 ple 
+: 3258 2 5 got
+: 3261 4 9 ~ 
+: 3267 5 7 me 
+: 3275 5 7 got 
+: 3282 5 5 me 
+- 3287
+: 3290 2 7 Ques
+: 3293 2 9 ~
+: 3299 2 7 tio
+: 3302 2 5 ~
+: 3306 3 7 nin’
+: 3311 2 5 ~
+: 3314 3 2 ~ 
+- 3317
+* 3326 2 7 Where
+* 3329 4 9 ~ 
+* 3335 2 7 is 
+* 3342 1 7 the
+* 3344 4 9 ~ 
+* 3350 30 5 love 
+- 3380 3382
+- 3382
+: 3407 2 9 The
+: 3410 5 12 ~
+: 3417 5 7 ~ 
+: 3423 30 7 love 
+- 3453
+: 3470 2 9 The
+: 3473 5 12 ~
+: 3480 5 7 ~ 
+: 3487 6 7 love
+: 3494 20 5 ~? 
+- 3514
+: 3519 5 7 Where 
+: 3526 5 7 is 
+: 3535 4 5 the 
+: 3542 2 7 love
+: 3545 19 9 ~ 
+- 3564
+: 3567 2 9 The
+: 3570 3 7 ~ 
+: 3575 21 7 love 
+- 3596
+: 3599 2 7 The
+: 3602 2 9 ~ 
+: 3606 18 5 love? 
+- 3624
+F 3627 4 0 I 
+F 3632 4 0 feel 
+F 3637 2 0 the 
+F 3640 3 0 weight 
+F 3644 3 0 of 
+F 3648 4 0 the 
+F 3653 2 0 world 
+F 3656 4 0 on 
+F 3661 5 0 my 
+F 3667 4 0 shoul
+F 3672 4 0 der 
+- 3676
+F 3682 2 0 As 
+F 3685 3 0 I’m 
+F 3689 2 0 get
+F 3692 4 0 tin’ 
+F 3697 7 0 ol
+F 3705 3 0 der 
+F 3709 5 0 y’all, 
+F 3715 3 0 peo
+F 3719 3 0 ple 
+F 3723 5 0 gets 
+F 3729 5 0 col
+F 3735 4 0 der 
+- 3739
+F 3746 3 0 Most 
+F 3750 3 0 of 
+F 3754 5 0 us 
+F 3760 3 0 on
+F 3764 3 0 ly 
+F 3768 3 0 care 
+F 3772 4 0 a
+F 3777 6 0 bout 
+F 3784 2 0 mo
+F 3787 4 0 ney 
+F 3792 6 0 ma
+F 3799 4 0 kin’ 
+- 3803
+F 3810 3 0 Sel
+F 3814 3 0 fish
+F 3818 5 0 ness 
+F 3824 2 0 got 
+F 3827 2 0 us 
+- 3829
+F 3832 3 0 Fol
+F 3836 2 0 lo
+F 3839 4 0 win’ 
+F 3844 3 0 the 
+F 3848 3 0 wrong 
+F 3852 4 0 di
+F 3857 6 0 rec
+F 3864 5 0 tion 
+- 3869
+F 3875 4 0 Wrong 
+F 3880 4 0 in
+F 3885 2 0 for
+F 3888 3 0 ma
+F 3892 3 0 tion 
+F 3896 3 0 al
+F 3900 5 0 ways 
+F 3906 3 0 shown 
+- 3909
+F 3912 4 0 By 
+F 3917 3 0 the 
+F 3921 2 0 me
+F 3924 3 0 di
+F 3928 5 0 a 
+- 3933
+F 3938 2 0 Ne
+F 3941 3 0 ga
+F 3945 6 0 tive 
+F 3952 2 0 i
+F 3955 4 0 ma
+F 3960 6 0 ges 
+F 3967 4 0 is 
+F 3972 2 0 the 
+F 3975 4 0 main 
+F 3980 5 0 cri
+F 3986 3 0 te
+F 3990 2 0 ri
+F 3993 3 0 a 
+- 3996
+F 4000 4 0 In
+F 4005 3 0 fec
+F 4009 3 0 ting 
+F 4013 3 0 the 
+F 4017 5 0 young 
+F 4023 6 0 minds 
+- 4029
+F 4032 4 0 Fas
+F 4037 2 0 ter 
+F 4040 3 0 than 
+F 4044 4 0 bac
+F 4049 3 0 te
+F 4053 2 0 ri
+F 4056 4 0 a 
+- 4060
+F 4067 5 0 Kids 
+F 4073 2 0 wan
+F 4076 3 0 na 
+F 4080 3 0 act 
+F 4084 4 0 like 
+F 4089 3 0 what 
+F 4093 3 0 they 
+- 4096
+F 4099 4 0 See 
+F 4104 3 0 in 
+F 4108 4 0 the 
+F 4113 2 0 ci
+F 4116 3 0 ne
+F 4120 4 0 ma 
+- 4124
+F 4143 1 0 What 
+F 4145 3 0 e
+F 4149 2 0 ver 
+F 4152 4 0 hap
+F 4157 3 0 pened 
+F 4161 2 0 to 
+F 4164 3 0 the 
+F 4168 4 0 va
+F 4173 1 0 lues 
+- 4174
+F 4177 3 0 Of 
+F 4181 3 0 hu
+F 4185 3 0 ma
+F 4189 4 0 ni
+F 4194 4 0 ty? 
+- 4198
+F 4206 1 0 What 
+F 4208 3 0 e
+F 4212 2 0 ver 
+F 4215 4 0 hap
+F 4220 3 0 pened 
+F 4224 2 0 to 
+F 4227 2 0 the 
+- 4229
+F 4232 4 0 Fair
+F 4237 3 0 ness 
+F 4241 1 0 an’ 
+F 4243 4 0 e
+F 4248 3 0 qua
+F 4252 5 0 li
+F 4258 5 0 ty? 
+- 4263
+F 4268 4 0 In
+F 4273 2 0 stead 
+F 4276 4 0 of 
+F 4281 2 0 sprea
+F 4284 3 0 ding 
+F 4288 1 0 love 
+- 4289
+F 4292 4 0 We’re 
+F 4297 1 0 sprea
+F 4299 5 0 ding 
+F 4305 2 0 a
+F 4308 2 0 ni
+F 4311 5 0 mo
+F 4317 3 0 si
+F 4321 4 0 ty 
+- 4325
+F 4335 4 0 Lack 
+F 4340 3 0 of 
+F 4344 2 0 un
+F 4347 4 0 der
+F 4352 3 0 stan
+F 4356 1 0 ding 
+- 4357
+F 4360 3 0 Lea
+F 4364 4 0 ding 
+F 4369 2 0 us 
+F 4372 2 0 a
+F 4375 5 0 way 
+F 4381 2 0 from 
+F 4384 2 0 u
+F 4387 4 0 ni
+F 4392 3 0 ty 
+- 4395
+F 4399 4 0 That’s 
+F 4404 2 0 the 
+F 4407 4 0 rea
+F 4412 3 0 son 
+F 4416 6 0 why 
+F 4423 4 0 some
+F 4428 6 0 times 
+- 4434
+F 4437 4 0 I’m 
+F 4442 1 0 fee
+F 4444 4 0 lin’ 
+F 4449 3 0 un
+F 4453 4 0 der 
+- 4457
+F 4465 3 0 That’s 
+F 4469 2 0 the 
+F 4472 3 0 rea
+F 4476 3 0 son 
+F 4480 6 0 why 
+F 4487 4 0 some
+F 4492 5 0 times 
+- 4497
+F 4500 4 0 I’m 
+F 4505 2 0 fee
+F 4508 5 0 lin’ 
+F 4514 5 0 down 
+- 4519
+F 4528 2 0 It’s 
+F 4531 5 0 no 
+F 4537 3 0 won
+F 4541 3 0 der 
+F 4545 6 0 why 
+F 4552 4 0 some
+F 4557 4 0 times 
+- 4561
+F 4564 5 0 I’m 
+F 4570 1 0 fee
+F 4572 5 0 lin’ 
+F 4578 2 0 un
+F 4581 3 0 der 
+- 4584
+F 4593 2 0 Got
+F 4596 3 0 ta 
+F 4600 2 0 keep 
+F 4603 5 0 my 
+F 4609 5 0 faith 
+F 4615 3 0 a
+F 4619 8 0 live, 
+F 4628 2 0 ’til 
+F 4631 3 0 love 
+F 4635 5 0 is 
+F 4641 7 0 found 
+- 4648 4886
+- 4886
+* 4911 2 9 Fa
+* 4914 3 12 ~
+* 4918 2 12 ther, 
+* 4924 6 9 Fa
+* 4931 3 9 ther, 
+* 4940 6 7 Fa
+* 4947 4 7 ther, 
+* 4955 5 7 help 
+* 4963 7 5 us 
+- 4970
+: 4975 5 2 Send 
+: 4983 3 5 some 
+: 4987 2 5 gui
+: 4990 4 9 ~
+: 4995 4 7 dance 
+: 5003 2 5 from
+: 5006 4 7 ~ 
+: 5011 1 7 a
+: 5013 4 9 ~
+: 5019 10 5 bove 
+- 5029
+: 5036 1 -2 Cause 
+: 5039 4 2 peo
+: 5044 4 5 ple 
+: 5051 2 5 got
+: 5054 4 9 ~ 
+: 5060 5 7 me 
+: 5068 5 7 got 
+: 5075 5 5 me 
+- 5080
+: 5083 2 7 Ques
+: 5086 2 9 ~
+: 5092 2 7 tio
+: 5095 2 5 ~
+: 5099 3 7 nin’
+: 5104 2 5 ~
+: 5107 3 2 ~ 
+- 5110
+: 5119 2 7 Where
+: 5122 4 9 ~ 
+: 5128 2 7 is 
+: 5135 1 7 the
+: 5137 4 9 ~ 
+: 5143 30 5 love 
+E
