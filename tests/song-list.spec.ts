@@ -217,7 +217,6 @@ test('Filters - PlayLists (Eurovision)', async ({ page }) => {
   await test.step('Going to all-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
-    await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(allPlaylist);
     await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
