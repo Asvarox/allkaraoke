@@ -6,7 +6,6 @@ import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import eurovisionIcon from 'Scenes/SingASong/SongSelectionVirtualized/Components/SongCard/eurovision-icon.svg';
 import { AppliedFilters, SongGroup } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/useSongList';
 import { SongPreview } from 'interfaces';
-import posthog from 'posthog-js';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { FeatureFlags } from 'utils/featureFlags';
 import isoCodeToCountry from 'utils/isoCodeToCountry';
@@ -43,8 +42,6 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];
 
-    const selectionOnTop =
-      (posthog.getFeatureFlag(FeatureFlags.SelectionOnTop) ?? 'selection-on-top') === 'selection-on-top';
     const selection: PlaylistEntry = {
       name: 'Selection',
       Wrapper: ({ children, active, focused }) => (
@@ -76,7 +73,8 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
 
     const all: PlaylistEntry = { name: 'All', filters: {} };
     const playlists: Array<PlaylistEntry | null> = [
-      selectionOnTop ? selection : all,
+      selection,
+      all,
       isEurovisionEnabled
         ? {
             name: 'Eurovision',
@@ -144,7 +142,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             },
           }
         : null,
-      selectionOnTop ? all : selection,
+
       // {
       //   name: 'Christmas',
       //   display: (
@@ -168,6 +166,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
           }
         : null,
       { name: 'Oldies', filters: { yearBefore: 1995 } },
+      !isEurovisionEnabled ? { name: 'Modern', filters: { yearAfter: 1995 } } : null,
       { name: 'Duets', filters: { duet: true } },
       {
         name: 'New',
