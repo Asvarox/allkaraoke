@@ -7500,6 +7500,64 @@
     "local": false
   },
   {
+    "id": "bjorn-skifs-det-blir-alltid-varre-framat-natten",
+    "title": "Det blir alltid värre framåt natten",
+    "artist": "Björn Skifs",
+    "video": "71t1Uu19KX4",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 348.42,
+    "gap": 12408.025092936803,
+    "year": "1978",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-29T19:59:37.071Z",
+    "edition": "ESC 1978",
+    "videoGap": 3,
+    "realBpm": 78,
+    "volume": 0.77,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26366",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bjornskifsdetbliralltidvarreframatnatten",
+    "local": false
+  },
+  {
+    "id": "bjorn-skifs-fangad-i-en-drom",
+    "title": "Fångad i en dröm",
+    "artist": "Björn Skifs",
+    "video": "a05rWLlRNJs",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 249.16,
+    "gap": 15376.56124578584,
+    "year": "1981",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-29T19:59:37.074Z",
+    "edition": "ESC 1981",
+    "videoGap": 6,
+    "realBpm": 125,
+    "volume": 0.97,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26367",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bjornskifsfangadiendrom",
+    "local": false
+  },
+  {
     "id": "black-fooss-hey-hey-wickie",
     "title": "Hey, Hey Wickie",
     "artist": "Bläck Fööss",
@@ -11713,6 +11771,35 @@
     "local": false
   },
   {
+    "id": "chingiz-truth",
+    "title": "Truth",
+    "artist": "Chingiz",
+    "video": "iyZJ_aMw5hY",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.4,
+    "gap": 20316.561264822136,
+    "year": "2019",
+    "artistOrigin": "AZ",
+    "lastUpdate": "2024-04-29T19:59:37.077Z",
+    "edition": "ESC 2019",
+    "genre": "R&B, Pop",
+    "realBpm": 101,
+    "volume": 0.74,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27394",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chingiztruth",
+    "local": false
+  },
+  {
     "id": "chino-y-nacho-con-daddy-yankee-andas-en-mi-cabeza",
     "title": "Andas en mi cabeza",
     "artist": "Chino y Nacho con Daddy Yankee",
@@ -11736,6 +11823,35 @@
     ],
     "tracksCount": 1,
     "search": "chinoynachocondaddyyankeeandasenmicabeza",
+    "local": false
+  },
+  {
+    "id": "chips-dag-efter-dag",
+    "title": "Dag efter dag",
+    "artist": "Chips",
+    "video": "dwJjH79DMCA",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 264.53,
+    "gap": 7538.549540347293,
+    "year": "1982",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-29T19:59:37.078Z",
+    "edition": "ESC 1982",
+    "videoGap": -1,
+    "realBpm": 133,
+    "volume": 0.88,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25509",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chipsdagefterdag",
     "local": false
   },
   {
@@ -14416,6 +14532,34 @@
     "local": false
   },
   {
+    "id": "dami-im-sound-of-silence",
+    "title": "Sound Of Silence",
+    "artist": "Dami Im",
+    "video": "xNkNqGcfUxI",
+    "language": [
+      "English"
+    ],
+    "bpm": 272.1,
+    "gap": 3467.717750826902,
+    "year": "2016",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-04-29T19:59:37.079Z",
+    "edition": "ESC 2016",
+    "realBpm": 136,
+    "volume": 0.71,
+    "author": "daggeg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1835",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20189",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "damiimsoundofsilence",
+    "local": false
+  },
+  {
     "id": "dana-international-diva",
     "title": "Diva",
     "artist": "Dana International",
@@ -15459,6 +15603,34 @@
     ],
     "tracksCount": 1,
     "search": "despistaosfisicaoquimica",
+    "local": false
+  },
+  {
+    "id": "destiny-je-me-casse",
+    "title": "Je me casse",
+    "artist": "Destiny",
+    "video": "rvxKb3NVq1U",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 22475.535714285714,
+    "year": "2021",
+    "artistOrigin": "MT",
+    "lastUpdate": "2024-04-29T19:59:37.081Z",
+    "edition": "ESC 2021",
+    "realBpm": 112,
+    "volume": 0.77,
+    "author": "Mamba99",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=156400",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24707",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "destinyjemecasse",
     "local": false
   },
   {
@@ -20916,6 +21088,34 @@
     "local": false
   },
   {
+    "id": "francesca-michielin-nessun-grado-di-separazione",
+    "title": "Nessun grado di separazione",
+    "artist": "Francesca Michielin",
+    "video": "NXE-aTIIG30",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 336,
+    "gap": 7697.857142857143,
+    "year": "2016",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-04-29T19:59:37.082Z",
+    "edition": "ESC 2016",
+    "realBpm": 76,
+    "volume": 0.74,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=19913",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "francescamichielinnessungradodiseparazione",
+    "local": false
+  },
+  {
     "id": "francesco-gabbani-occidentalis-karma",
     "title": "Occidentali’s Karma",
     "artist": "Francesco Gabbani",
@@ -21268,6 +21468,36 @@
     ],
     "tracksCount": 1,
     "search": "freddiemercurylivingonmyown",
+    "local": false
+  },
+  {
+    "id": "fredi-and-friends-pump-pump",
+    "title": "Pump-Pump",
+    "artist": "Fredi and Friends",
+    "video": "RNW3KrUWJco",
+    "language": [
+      "English"
+    ],
+    "bpm": 286.36,
+    "gap": 101264.74926665735,
+    "year": "1976",
+    "artistOrigin": "FI",
+    "lastUpdate": "2024-04-29T19:59:37.082Z",
+    "edition": "ESC 1976",
+    "realBpm": 135,
+    "previewStart": 147,
+    "previewEnd": 177,
+    "volume": 1,
+    "author": "daggeg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1835",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=22235",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "frediandfriendspumppump",
     "local": false
   },
   {
@@ -22068,6 +22298,35 @@
     ],
     "tracksCount": 1,
     "search": "giuliabemeninasolta",
+    "local": false
+  },
+  {
+    "id": "gjons-tears-tout-lunivers",
+    "title": "Tout l’univers",
+    "artist": "Gjon’s Tears",
+    "video": "EuimHmJMEFA",
+    "language": [
+      "French"
+    ],
+    "bpm": 246,
+    "gap": 1344.3902439024391,
+    "year": "2021",
+    "artistOrigin": "CH",
+    "lastUpdate": "2024-04-29T19:59:37.083Z",
+    "edition": "ESC 2021",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.78,
+    "author": "DevBat",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168569",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24717",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gjonstearstoutlunivers",
     "local": false
   },
   {
@@ -23815,6 +24074,35 @@
     ],
     "tracksCount": 1,
     "search": "hoobastankthereason",
+    "local": false
+  },
+  {
+    "id": "hooverphonic-the-wrong-place",
+    "title": "The Wrong Place",
+    "artist": "Hooverphonic",
+    "video": "0EQyG1Yjlgw",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.04,
+    "gap": 10005.748031496063,
+    "year": "2021",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-04-29T19:59:37.085Z",
+    "edition": "ESC 2021",
+    "genre": "Pop",
+    "realBpm": 80,
+    "volume": 0.69,
+    "author": "DevBat",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168569",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24718",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hooverphonicthewrongplace",
     "local": false
   },
   {
@@ -32043,6 +32331,33 @@
     "local": false
   },
   {
+    "id": "little-big-uno",
+    "title": "UNO",
+    "artist": "Little Big",
+    "video": "L_dWvTCdDQ4",
+    "language": [
+      "English"
+    ],
+    "bpm": 284,
+    "gap": 16956.478873239437,
+    "year": "2020",
+    "lastUpdate": "2024-04-29T19:59:37.086Z",
+    "edition": "ESC 2020",
+    "realBpm": 142,
+    "volume": 0.69,
+    "author": "Mamba99",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=156400",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24710",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "littlebiguno",
+    "local": false
+  },
+  {
     "id": "little-mix-feat-stormzy-power",
     "title": "Power",
     "artist": "Little Mix feat. Stormzy",
@@ -32240,6 +32555,35 @@
     ],
     "tracksCount": 1,
     "search": "loitumaievaspolka",
+    "local": false
+  },
+  {
+    "id": "lord-of-the-lost-blood-glitter",
+    "title": "Blood & Glitter",
+    "artist": "Lord Of The Lost",
+    "video": "5I9CYu668jA",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": -110,
+    "year": "2022",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-29T19:59:37.444Z",
+    "edition": "ESC 2023",
+    "genre": "Metal",
+    "realBpm": 139,
+    "volume": 0.87,
+    "author": "Jimmy21",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=165071",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27046",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lordofthelostbloodglitter",
     "local": false
   },
   {
@@ -34501,6 +34845,34 @@
     ],
     "tracksCount": 1,
     "search": "margaretbergerifeedyoumylove",
+    "local": false
+  },
+  {
+    "id": "maria-yaremchuk-tick-tock",
+    "title": "Tick Tock",
+    "artist": "Maria Yaremchuk",
+    "video": "sdAf2EjhRiE",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 25310,
+    "year": "2014",
+    "artistOrigin": "UA",
+    "lastUpdate": "2024-04-29T19:59:37.447Z",
+    "edition": "ESC 2014",
+    "realBpm": 125,
+    "volume": 0.76,
+    "author": "aac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=98211",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17225",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mariayaremchukticktock",
     "local": false
   },
   {
@@ -37352,6 +37724,35 @@
     ],
     "tracksCount": 1,
     "search": "monikabrodkaznamcienapamiec",
+    "local": false
+  },
+  {
+    "id": "montaigne-technicolour",
+    "title": "Technicolour",
+    "artist": "Montaigne",
+    "video": "bX_y759_F_U",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 36.72268907563034,
+    "year": "2021",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-04-29T19:59:37.448Z",
+    "edition": "ESC 2021",
+    "genre": "Pop",
+    "realBpm": 119,
+    "volume": 0.71,
+    "author": "DevBat",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168569",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24719",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "montaignetechnicolour",
     "local": false
   },
   {
@@ -48394,6 +48795,35 @@
     "local": false
   },
   {
+    "id": "sebalter-hunter-of-stars",
+    "title": "Hunter Of Stars",
+    "artist": "SEBalter",
+    "video": "kjWG0oNpWog",
+    "language": [
+      "English"
+    ],
+    "bpm": 354,
+    "gap": 10943.050847457627,
+    "year": "2014",
+    "artistOrigin": "CH",
+    "lastUpdate": "2024-04-29T19:59:37.450Z",
+    "edition": "ESC 2014",
+    "videoGap": 9,
+    "realBpm": 177,
+    "volume": 0.76,
+    "author": "aac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=98211",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=17224",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sebalterhunterofstars",
+    "local": false
+  },
+  {
     "id": "secondhand-serenade-fall-for-you",
     "title": "Fall For You",
     "artist": "Secondhand Serenade",
@@ -48734,6 +49164,35 @@
     ],
     "tracksCount": 1,
     "search": "seventeenhug",
+    "local": false
+  },
+  {
+    "id": "severine-un-banc-un-arbre-une-rue",
+    "title": "Un banc, un arbre, une rue",
+    "artist": "Séverine",
+    "video": "W1tSXCssXcQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 307.51,
+    "gap": 9690,
+    "year": "1971",
+    "artistOrigin": "MC",
+    "lastUpdate": "2024-04-29T19:59:37.452Z",
+    "edition": "ESC 1971",
+    "videoGap": 1,
+    "realBpm": 86,
+    "volume": 0.99,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21021",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "severineunbancunarbreunerue",
     "local": false
   },
   {
@@ -51235,6 +51694,34 @@
     ],
     "tracksCount": 1,
     "search": "sublimesanteria",
+    "local": false
+  },
+  {
+    "id": "subwoolfer-give-that-wolf-a-banana",
+    "title": "Give That Wolf A Banana",
+    "artist": "Subwoolfer",
+    "video": "sDvXhZtcp0w",
+    "language": [
+      "English"
+    ],
+    "bpm": 247.94,
+    "gap": -61.49552311042993,
+    "year": "2022",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-29T19:59:37.454Z",
+    "edition": "ESC 2022",
+    "realBpm": 124,
+    "volume": 0.68,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25552",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "subwoolfergivethatwolfabanana",
     "local": false
   },
   {
@@ -56574,6 +57061,35 @@
     "local": false
   },
   {
+    "id": "tix-fallen-angel",
+    "title": "Fallen Angel",
+    "artist": "Tix",
+    "video": "Hj3dHbpPhaE",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 49931.93548387097,
+    "year": "2021",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-29T19:59:37.456Z",
+    "edition": "ESC 2021",
+    "genre": "Pop",
+    "realBpm": 93,
+    "volume": 0.8,
+    "author": "DevBat",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168569",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24720",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tixfallenangel",
+    "local": false
+  },
+  {
     "id": "tiziano-ferro-hai-delle-isole-negli-occhi",
     "title": "Hai delle isole negli occhi",
     "artist": "Tiziano Ferro",
@@ -56916,6 +57432,35 @@
     ],
     "tracksCount": 1,
     "search": "tomodellanotherlove",
+    "local": false
+  },
+  {
+    "id": "tomas-ledin-just-nu",
+    "title": "Just nu!",
+    "artist": "Tomas Ledin",
+    "video": "zLQ0S_FM91w",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 280.42,
+    "gap": 31204.029659204334,
+    "year": "1980",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-29T19:59:37.457Z",
+    "edition": "ESC 1980",
+    "videoGap": 24,
+    "realBpm": 140,
+    "volume": 0.92,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26368",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomasledinjustnu",
     "local": false
   },
   {

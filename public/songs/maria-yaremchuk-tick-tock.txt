@@ -1,0 +1,426 @@
+#ARTIST:Maria Yaremchuk
+#TITLE:Tick Tock
+#CREATOR:aac
+#BPM:250
+#YEAR:2014
+#VIDEO:v=sdAf2EjhRiE
+#LANGUAGE:English
+#GAP:25310
+#EDITION:ESC 2014
+#ALLKARAOKE_ID:maria-yaremchuk-tick-tock
+#ALLKARAOKE_LASTUPDATE:2024-04-29T19:59:37.447Z
+#ALLKARAOKE_ARTISTORIGIN:UA
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=98211
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17225
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Maria Yaremchuk - Tick Tock (ESC 2014 Ukraine).mp3
+: 17 2 6 I 
+: 21 2 6 be
+: 25 2 6 lieve 
+: 29 2 4 that 
+: 33 2 4 I’ve 
+: 37 2 4 loved 
+: 41 4 1 you 
+- 45
+: 49 2 -1 Since 
+: 53 2 -3 the 
+: 57 2 -1 first 
+: 61 2 -3 time 
+: 65 2 -1 that 
+: 69 2 -3 I 
+* 73 4 1 saw 
+: 81 4 -6 you 
+- 85 88
+- 88
+: 105 4 1 Bells 
+: 113 4 1 rang 
+: 121 2 8 an
+* 125 2 9 gels 
+: 129 6 8 sang 
+- 135
+: 145 2 6 When 
+: 149 2 6 the 
+: 153 2 9 light 
+: 157 2 11 of 
+* 161 4 13 the 
+: 169 4 6 night 
+- 173
+: 177 2 4 Fell 
+: 181 2 4 on 
+: 185 2 4 us 
+: 189 2 9 we 
+: 193 6 9 knew 
+- 199
+: 209 4 13 Oh 
+: 217 6 6 Oh 
+- 223
+: 233 2 13 Oh 
+: 237 2 13 Oh 
+* 241 4 6 Oh 
+* 249 4 9 Oh 
+* 257 4 11 Oh 
+- 261
+: 273 2 13 We 
+: 277 2 13 both 
+* 281 2 18 knew 
+* 285 2 18 that 
+: 289 2 16 you 
+: 293 2 16 were 
+: 297 24 11 mine 
+- 321
+: 333 2 11 Now 
+: 337 2 11 co
+: 341 2 9 ver 
+* 345 2 13 me, 
+: 349 2 6 I’ll 
+: 353 2 6 buy 
+: 357 2 4 us 
+: 361 2 6 time
+: 365 14 9 ~, 
+- 379
+: 393 2 6 Time
+: 397 18 9 ~ 
+- 415
+: 425 2 13 Oh 
+: 429 2 13 Oh 
+: 433 4 6 Oh 
+: 441 4 9 Oh 
+: 449 4 11 Oh 
+- 453
+: 465 4 13 Oh 
+* 473 6 6 Oh 
+- 479
+: 489 2 13 Oh 
+: 493 2 13 Oh 
+: 497 4 6 Oh 
+: 505 4 9 Oh 
+: 513 4 11 Oh 
+- 517 576
+- 576
+: 593 4 13 Tick 
+: 601 6 6 tock, 
+- 607
+: 617 2 11 Can 
+: 621 2 9 you 
+: 625 2 11 hear 
+* 629 2 13 me 
+: 633 2 11 go 
+: 637 2 9 tick 
+: 641 6 6 tock 
+- 647
+: 653 2 11 My 
+: 657 2 11 heart 
+: 661 2 9 is 
+: 665 2 11 like 
+: 669 2 9 a 
+: 673 2 13 clock, 
+: 677 2 6 I’m 
+: 681 2 5 stea
+: 685 2 6 dy 
+: 689 2 8 like 
+: 693 2 9 a 
+: 697 6 8 rock 
+- 703
+: 717 2 6 Sch 
+* 721 4 13 don’t 
+: 729 6 6 stop, 
+- 735
+: 745 2 11 Kiss 
+: 749 2 9 and 
+: 753 2 11 kiss 
+: 757 2 13 me 
+: 761 2 11 till 
+: 765 2 9 I 
+: 769 4 6 drop 
+- 773
+: 781 2 11 My 
+: 785 2 11 heart 
+: 789 2 9 is 
+: 793 2 11 like 
+: 797 2 9 a 
+: 801 2 11 clock 
+: 805 2 9 you 
+: 809 2 13 wind 
+: 813 2 13 it 
+: 817 2 13 with 
+: 821 2 13 your 
+* 825 12 13 love 
+- 837
+: 849 4 13 Tick 
+: 857 6 6 tock, 
+- 863
+: 873 2 11 Can 
+: 877 2 9 you 
+: 881 2 11 hear 
+: 885 2 13 me 
+: 889 2 11 go 
+: 893 2 9 tick 
+: 897 6 6 tock 
+- 903
+: 909 2 11 My 
+: 913 2 11 heart 
+: 917 2 9 is 
+: 921 2 11 like 
+: 925 2 9 a 
+: 929 2 13 clock, 
+: 933 2 6 I’m 
+: 937 2 5 stea
+: 941 2 6 dy 
+: 945 2 8 like 
+: 949 2 9 a 
+: 953 6 8 rock 
+- 959
+: 973 2 6 Sch 
+: 977 4 13 don’t 
+: 985 6 6 stop, 
+- 991
+: 1001 2 11 Kiss 
+: 1005 2 9 and 
+: 1009 2 11 kiss 
+* 1013 2 13 me 
+: 1017 2 11 till 
+: 1021 2 9 I 
+: 1025 4 6 drop 
+- 1029
+: 1037 2 11 My 
+: 1041 2 11 heart 
+: 1045 2 9 is 
+: 1049 2 11 like 
+: 1053 2 9 a 
+: 1057 2 11 clock 
+: 1061 2 9 you 
+* 1065 2 13 wind 
+: 1069 2 13 it 
+: 1073 2 13 with 
+: 1077 2 13 your 
+: 1081 12 13 love 
+- 1093 1216
+- 1216
+: 1233 2 6 Now 
+: 1237 2 6 I 
+: 1241 2 6 know 
+: 1245 2 4 it’s 
+: 1249 2 1 too 
+: 1253 2 4 hard 
+: 1257 6 1 to 
+- 1263
+: 1265 2 -1 Go 
+: 1269 2 -3 tick 
+: 1273 2 -1 tock 
+: 1277 2 -3 with
+: 1281 2 -1 out 
+: 1285 2 -3 the 
+* 1289 2 1 glimpse 
+: 1295 1 -6 of 
+: 1297 4 -6 you 
+- 1301
+: 1317 2 -1 If 
+: 1321 4 1 you 
+: 1329 4 1 cave 
+* 1337 2 8 in 
+* 1341 2 9 I 
+* 1345 6 8 break 
+- 1351
+: 1361 2 6 I 
+: 1365 2 6 keep 
+: 1369 2 9 lo
+: 1373 2 11 sing 
+: 1377 4 13 my 
+: 1385 6 6 pace 
+- 1391
+: 1393 2 4 In 
+: 1397 2 4 this 
+: 1401 2 4 end
+: 1405 2 9 less 
+* 1409 22 9 race 
+- 1431 1432
+- 1432
+: 1449 2 13 Oh 
+: 1453 2 13 Oh 
+: 1457 4 6 Oh 
+: 1465 4 9 Oh 
+: 1473 4 11 Oh 
+- 1477
+: 1489 2 6 They 
+: 1493 2 6 all 
+: 1497 2 9 know 
+: 1501 2 11 that 
+: 1505 4 13 you’re 
+* 1513 24 6 mine 
+- 1537
+: 1553 2 6 They 
+: 1557 2 6 can 
+: 1561 2 9 see 
+: 1565 2 11 we 
+: 1569 4 13 be
+: 1577 24 13 long 
+- 1601
+: 1617 2 6 Shel
+: 1621 2 6 ter 
+: 1625 2 9 me, 
+: 1629 2 11 you’ll 
+* 1633 4 13 do 
+: 1641 8 6 fine
+: 1653 16 4 ~ 
+- 1669
+: 1681 2 6 Wait 
+: 1685 2 6 for 
+: 1689 2 9 me, 
+: 1693 2 11 I’ll 
+: 1697 2 11 buy 
+: 1701 2 9 us 
+* 1705 12 13 time
+* 1721 38 13 ~ 
+- 1759 1760
+- 1760
+: 1777 4 13 Tick 
+: 1785 6 6 tock, 
+- 1791
+: 1801 2 11 Can 
+: 1805 2 9 you 
+: 1809 2 11 hear 
+: 1813 2 13 me 
+: 1817 2 11 go 
+: 1821 2 9 tick 
+: 1825 6 6 tock 
+- 1831
+: 1837 2 11 My 
+: 1841 2 11 heart 
+: 1845 2 9 is 
+: 1849 2 11 like 
+: 1853 2 9 a 
+: 1857 2 13 clock, 
+: 1861 2 6 I’m 
+: 1865 2 5 stea
+: 1869 2 6 dy 
+: 1873 2 8 like 
+: 1877 2 9 a 
+: 1881 6 8 rock 
+- 1887
+* 1901 2 6 Sch 
+: 1905 4 13 don’t 
+: 1913 6 6 stop, 
+- 1919
+: 1929 2 11 Kiss 
+: 1933 2 9 and 
+: 1937 2 11 kiss 
+: 1941 2 13 me 
+: 1945 2 11 till 
+: 1949 2 9 I 
+: 1953 4 6 drop 
+- 1957
+: 1965 2 11 My 
+: 1969 2 11 heart 
+: 1973 2 9 is 
+: 1977 2 11 like 
+: 1981 2 9 a 
+: 1985 2 11 clock 
+: 1989 2 9 you 
+: 1993 2 13 wind 
+: 1997 2 13 it 
+: 2001 2 13 with 
+: 2005 2 13 your 
+: 2009 12 13 love 
+- 2021
+: 2033 4 13 Tick 
+* 2041 6 6 tock, 
+- 2047
+: 2057 2 11 Can 
+: 2061 2 9 you 
+: 2065 2 11 hear 
+: 2069 2 13 me 
+: 2073 2 11 go 
+: 2077 2 9 tick 
+: 2081 6 6 tock 
+- 2087
+: 2093 2 11 My 
+: 2097 2 11 heart 
+: 2101 2 9 is 
+: 2105 2 11 like 
+: 2109 2 9 a 
+* 2113 2 13 clock, 
+: 2117 2 6 I’m 
+: 2121 2 5 stea
+: 2125 2 6 dy 
+: 2129 2 8 like 
+: 2133 2 9 a 
+: 2137 6 8 rock 
+- 2143
+: 2157 2 6 Sch 
+: 2161 4 13 don’t 
+: 2169 6 6 stop, 
+- 2175
+: 2185 2 11 Kiss 
+: 2189 2 9 and 
+: 2193 2 11 kiss 
+: 2197 2 13 me 
+: 2201 2 11 till 
+: 2205 2 9 I 
+: 2209 4 6 drop 
+- 2213
+: 2221 2 11 My 
+: 2225 2 11 heart 
+: 2229 2 9 is 
+: 2233 2 11 like 
+: 2237 2 9 a 
+: 2241 2 11 clock 
+: 2245 2 9 you 
+: 2249 2 13 wind 
+: 2253 2 13 it 
+: 2257 2 13 with 
+: 2261 2 13 your 
+: 2265 12 13 love 
+- 2277
+: 2289 4 13 Tick 
+* 2297 6 6 tock, 
+- 2303
+: 2313 2 11 Can 
+: 2317 2 9 you 
+: 2321 2 11 hear 
+: 2325 2 13 me 
+: 2329 2 11 go 
+: 2333 2 9 tick 
+: 2337 6 6 tock 
+- 2343
+: 2349 2 11 My 
+: 2353 2 11 heart 
+: 2357 2 9 is 
+: 2361 2 11 like 
+: 2365 2 9 a 
+: 2369 2 13 clock, 
+: 2373 2 6 I’m 
+: 2377 2 5 stea
+: 2381 2 6 dy 
+: 2385 2 8 like 
+: 2389 2 9 a 
+: 2393 6 8 rock 
+- 2399
+: 2413 2 6 Sch 
+: 2417 4 13 don’t 
+: 2425 6 6 stop, 
+- 2431
+: 2441 2 11 Kiss 
+: 2445 2 9 and 
+: 2449 2 11 kiss 
+: 2453 2 13 me 
+: 2457 2 11 till 
+: 2461 2 9 I 
+* 2465 4 6 drop 
+- 2469
+: 2477 2 11 My 
+: 2481 2 11 heart 
+: 2485 2 9 is 
+: 2489 2 11 like 
+: 2493 2 9 a 
+: 2497 2 11 clock 
+: 2501 2 9 you 
+: 2505 2 13 wind 
+: 2509 2 13 it 
+: 2513 2 13 with 
+: 2517 2 13 your 
+: 2521 12 13 love 
+- 2533
+: 2545 4 13 Tick 
+: 2553 6 6 tock 
+E

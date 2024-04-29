@@ -1,0 +1,388 @@
+#ARTIST:Fredi and Friends
+#TITLE:Pump-Pump
+#CREATOR:daggeg
+#BPM:286,36
+#YEAR:1976
+#PREVIEWSTART:147
+#VIDEO:v=RNW3KrUWJco
+#LANGUAGE:English
+#GAP:101264,74926665735
+#EDITION:ESC 1976
+#ALLKARAOKE_ID:fredi-and-friends-pump-pump
+#ALLKARAOKE_LASTUPDATE:2024-04-29T19:59:37.082Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1835
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=22235
+#ALLKARAOKE_PREVIEWEND:177
+#ALLKARAOKE_VOLUME:1
+#MP3:Fredi and Friends - Pump-Pump (ESC 1976 Finland).mp3
+#START:86.0
+: 19 2 7 I 
+: 23 2 7 used 
+: 27 2 7 to 
+: 31 5 7 love 
+: 40 2 6 watch
+: 44 2 6 ing 
+: 48 5 6 beau
+: 55 2 4 ti
+: 59 2 4 ful 
+: 64 4 4 girls 
+: 72 2 6 go 
+: 76 5 7 by 
+: 85 2 7 in 
+: 89 4 9 my 
+: 97 18 4 time 
+- 115 133
+- 133
+: 152 2 6 You 
+: 156 2 6 have 
+: 160 2 6 done 
+: 164 5 6 like 
+: 173 2 4 the 
+: 177 2 4 boys 
+: 181 5 4 do, 
+: 189 2 2 but 
+: 193 2 2 now 
+: 198 5 2 fi
+: 206 2 4 na
+: 210 4 6 lly 
+: 219 2 6 you 
+: 224 5 7 are 
+: 233 13 2 mine 
+- 246 268
+- 268
+: 287 2 4 Let 
+: 291 2 4 by
+: 295 2 4 gones 
+: 299 4 4 be 
+: 307 2 2 by
+: 311 2 2 gones, 
+: 315 4 2 now 
+: 324 4 0 I 
+: 337 3 0 love 
+: 345 3 2 you 
+- 348
+: 354 2 4 You 
+: 358 2 4 gave 
+: 362 2 4 me 
+: 366 4 4 more 
+: 374 2 2 than 
+: 378 2 2 a 
+: 382 4 2 man 
+: 390 4 0 can 
+: 403 2 0 e
+: 407 4 2 ver 
+: 416 9 -1 dream, 
+- 425
+: 438 2 0 Know 
+: 442 2 -3 what 
+: 446 2 -5 I 
+: 450 29 -3 mean?
+: 481 21 2 ~ 
+- 502
+: 518 2 2 Let 
+: 522 2 2 your 
+: 526 2 2 hip 
+: 530 2 2 go 
+: 534 2 2 hipp
+: 538 2 4 e
+: 542 2 6 ty 
+* 546 3 7 pump 
+* 555 3 2 pump 
+- 558 566
+- 566
+: 585 2 4 That’s 
+: 589 2 4 the 
+: 593 2 4 way 
+: 597 2 4 we 
+: 601 2 4 dance 
+: 605 2 6 till 
+: 609 2 7 we 
+: 613 24 7 die.. 
+: 639 2 6 ay 
+: 643 2 4 ay 
+: 647 26 6 ay 
+- 673
+: 686 2 2 Let 
+: 690 2 2 your 
+: 694 2 2 hip 
+: 698 2 2 go 
+: 702 2 2 hipp
+: 706 2 4 e
+: 710 2 6 ty 
+: 714 3 7 pump 
+: 723 3 2 pump 
+- 726 733
+- 733
+: 752 2 4 Give 
+: 756 2 4 me 
+: 760 2 4 shiv
+: 764 2 4 ers 
+: 768 2 4 all 
+: 772 2 6 down 
+: 776 2 7 my 
+: 780 24 7 spine... 
+: 806 2 6 ay 
+: 810 2 4 ay 
+: 814 24 6 ay 
+- 838
+: 852 2 6 You 
+: 856 2 6 are 
+: 860 2 6 not 
+: 864 2 6 a 
+: 868 2 6 mo
+: 872 2 7 ~
+: 876 2 9 ment’s 
+: 880 5 9 play
+: 889 17 2 mate 
+- 906
+: 919 2 4 You 
+: 923 2 4 are 
+: 927 2 4 the 
+* 931 5 4 man 
+* 940 2 6 of 
+* 944 2 7 my 
+: 948 22 7 life 
+- 970
+: 984 2 2 Let 
+: 988 2 2 your 
+: 992 2 2 hip 
+: 996 2 2 go 
+: 1000 2 2 hipp
+: 1004 2 4 e
+: 1008 2 6 ty 
+: 1012 3 7 pump 
+: 1020 3 2 pump 
+- 1023 1031
+- 1031
+: 1050 2 4 That’s 
+: 1054 2 4 the 
+: 1058 2 4 way 
+: 1062 2 4 we 
+: 1066 2 4 dance 
+: 1070 2 6 till 
+: 1074 2 7 we 
+: 1078 23 7 die.. 
+: 1103 2 6 ay 
+: 1107 2 4 ay 
+: 1111 26 6 ay 
+- 1137 1261
+- 1261
+: 1280 2 7 I 
+: 1284 2 7 used 
+: 1288 2 7 to 
+: 1292 6 7 wor
+: 1301 2 6 ry 
+: 1305 2 6 so 
+: 1309 4 6 much 
+: 1317 2 4 a
+: 1321 2 4 bout 
+: 1325 5 4 all 
+: 1334 3 6 kinds 
+: 1341 2 7 of 
+: 1345 2 7 lit
+: 1349 2 9 tle 
+: 1354 23 4 things 
+- 1377 1394
+- 1394
+: 1413 2 6 Now 
+: 1417 2 6 it 
+: 1421 2 6 is 
+: 1425 4 6 ea
+: 1433 2 4 sy 
+: 1437 2 4 to 
+* 1441 4 4 laugh 
+: 1449 2 2 and 
+: 1453 2 2 to 
+* 1457 4 2 dance 
+: 1467 2 4 when 
+: 1471 2 6 it 
+: 1480 2 6 real
+: 1484 4 7 ly 
+* 1493 12 2 swings 
+- 1505 1528
+- 1528
+: 1547 2 4 Now 
+: 1551 2 4 we’re 
+: 1555 2 4 to
+: 1559 4 4 ge
+: 1567 2 2 ther 
+: 1571 2 2 for
+: 1575 5 2 e
+: 1584 2 0 ver, 
+: 1597 3 0 I 
+: 1605 3 2 know 
+- 1608
+: 1613 2 4 Play
+: 1617 2 4 ing 
+: 1621 2 4 the 
+: 1625 4 4 games 
+: 1635 2 2 that 
+: 1639 2 2 two 
+: 1643 4 2 peo
+: 1651 3 0 ple 
+: 1664 5 0 on
+: 1672 2 2 ly 
+: 1677 13 -1 play 
+- 1690
+: 1698 2 0 When 
+: 1702 2 -1 they’re 
+: 1706 2 -5 in 
+: 1710 32 -3 love
+: 1744 22 2 ~ 
+- 1766
+: 1780 2 2 Let 
+: 1784 2 2 your 
+: 1788 2 2 hip 
+: 1792 2 2 go 
+: 1796 2 2 hipp
+: 1800 2 4 e
+: 1804 2 6 ty 
+: 1808 3 7 pump 
+: 1817 3 2 pump 
+- 1820 1828
+- 1828
+: 1847 2 4 That’s 
+: 1851 2 4 the 
+* 1855 2 4 way 
+* 1859 2 4 we 
+* 1863 2 4 dance 
+* 1867 2 6 till 
+: 1871 2 7 we 
+: 1875 22 7 die.. 
+: 1899 2 6 ay 
+: 1903 2 4 ay 
+: 1907 21 6 ay 
+- 1928
+: 1945 2 2 Let 
+: 1949 2 2 your 
+: 1953 2 2 hip 
+: 1957 2 2 go 
+: 1961 2 2 hipp
+: 1965 2 4 e
+: 1969 2 6 ty 
+: 1973 3 7 pump 
+: 1982 3 2 pump 
+- 1985 1991
+- 1991
+: 2010 2 4 Give 
+: 2014 2 4 me 
+: 2018 2 4 shiv
+: 2022 2 4 ers 
+: 2026 2 4 all 
+: 2030 2 6 down 
+: 2034 2 7 my 
+: 2038 23 7 spine... 
+: 2063 2 6 ay 
+: 2067 2 4 ay 
+: 2071 20 6 ay 
+- 2091
+: 2109 2 6 You 
+: 2113 2 6 are 
+: 2117 2 6 not 
+: 2121 2 6 a 
+: 2125 2 6 mo
+: 2129 2 7 ~
+: 2133 2 9 ment’s 
+: 2137 5 9 play
+: 2146 17 2 mate 
+- 2163
+: 2175 2 4 You 
+: 2179 2 4 are 
+: 2183 2 4 the 
+: 2187 5 4 man 
+: 2196 2 6 of 
+: 2200 2 7 my 
+: 2204 21 7 life 
+- 2225
+: 2239 2 2 Let 
+: 2243 2 2 your 
+: 2247 2 2 hip 
+: 2251 2 2 go 
+: 2255 2 2 hipp
+: 2259 2 4 e
+: 2263 2 6 ty 
+: 2267 3 7 pump 
+: 2275 3 2 pump 
+- 2278 2285
+- 2285
+: 2304 2 4 That’s 
+: 2308 2 4 the 
+: 2312 2 4 way 
+: 2316 2 4 we 
+: 2320 2 4 dance 
+: 2324 2 6 till 
+: 2328 2 7 we 
+: 2332 23 7 die.. 
+: 2357 2 6 ay 
+: 2361 2 4 ay 
+: 2365 21 6 ay 
+- 2386 2447
+- 2447
+: 2466 2 4 Let 
+: 2470 2 4 your 
+: 2474 2 4 hip 
+: 2478 2 4 go 
+* 2482 2 4 hipp
+* 2486 2 6 e
+* 2490 2 8 ty 
+* 2494 3 9 pump 
+: 2503 3 4 pump 
+- 2506 2513
+- 2513
+: 2532 2 6 That’s 
+: 2536 2 6 the 
+: 2540 2 6 way 
+: 2544 2 6 we 
+: 2548 2 6 dance 
+: 2552 2 8 till 
+: 2556 2 9 we 
+: 2560 23 9 die.. 
+: 2585 2 8 ay 
+: 2589 2 6 ay 
+: 2593 23 8 ay 
+- 2616
+: 2630 2 4 Let 
+: 2634 2 4 your 
+: 2638 2 4 hip 
+: 2642 2 4 go 
+: 2646 2 4 hipp
+: 2650 2 6 e
+: 2654 2 8 ty 
+: 2658 3 9 pump 
+: 2667 3 4 pump 
+- 2670 2677
+- 2677
+: 2696 2 6 Give 
+: 2700 2 6 me 
+: 2704 2 6 shiv
+: 2708 2 6 ers 
+: 2712 2 6 all 
+: 2716 2 8 down 
+: 2720 2 9 my 
+: 2724 24 9 spine... 
+: 2750 2 8 ay 
+: 2754 2 6 ay 
+: 2758 17 8 ay 
+- 2775
+: 2794 2 4 Let 
+: 2798 2 4 your 
+: 2802 2 4 hip 
+: 2806 2 4 go 
+: 2810 2 4 hipp
+: 2814 2 6 e
+: 2818 2 8 ty 
+: 2822 3 9 pump 
+: 2830 3 4 pump 
+- 2833 2840
+- 2840
+* 2859 2 6 That’s 
+* 2863 2 6 the 
+* 2867 2 6 way 
+* 2871 2 6 we 
+* 2875 2 6 dance 
+* 2879 2 8 till 
+* 2883 2 9 we 
+* 2887 30 9 die- 
+E
