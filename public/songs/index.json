@@ -1957,6 +1957,34 @@
     "local": false
   },
   {
+    "id": "alessandra-queen-of-kings",
+    "title": "Queen Of Kings",
+    "artist": "Alessandra",
+    "video": "CxNiUxdJnTQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 378,
+    "gap": 28151.93650793651,
+    "year": "2023",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-04-29T13:19:28.196Z",
+    "edition": "ESC 2023",
+    "realBpm": 126,
+    "volume": 0.8,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27127",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alessandraqueenofkings",
+    "local": false
+  },
+  {
     "id": "alesso-katy-perry-when-im-gone",
     "title": "When I’m Gone",
     "artist": "Alesso & Katy Perry",
@@ -2242,6 +2270,33 @@
     ],
     "tracksCount": 1,
     "search": "aliciakeysnoone",
+    "local": false
+  },
+  {
+    "id": "alika-bridges",
+    "title": "Bridges",
+    "artist": "ALIKA",
+    "video": "IQ27JHhR3Ug",
+    "language": [
+      "English"
+    ],
+    "bpm": 357.98,
+    "gap": 20954.357226660708,
+    "year": "2022",
+    "artistOrigin": "EE",
+    "lastUpdate": "2024-04-29T13:19:28.206Z",
+    "realBpm": 140,
+    "volume": 0.81,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27545",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alikabridges",
     "local": false
   },
   {
@@ -2850,6 +2905,35 @@
     ],
     "tracksCount": 1,
     "search": "andreasbouraniaufuns",
+    "local": false
+  },
+  {
+    "id": "andrew-lambrou-break-a-broken-heart",
+    "title": "Break A Broken Heart",
+    "artist": "Andrew Lambrou",
+    "video": "zrFUKqTy4zI",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.94,
+    "gap": 4659.004385627452,
+    "year": "2023",
+    "artistOrigin": "CY",
+    "lastUpdate": "2024-04-29T13:19:28.215Z",
+    "edition": "ESC 2023",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.71,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27585",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "andrewlambroubreakabrokenheart",
     "local": false
   },
   {
@@ -6533,6 +6617,35 @@
     "local": false
   },
   {
+    "id": "ben-dolic-violent-thing",
+    "title": "Violent Thing",
+    "artist": "Ben Dolič",
+    "video": "4swmQ7YITug",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.13,
+    "gap": 26882.54137342273,
+    "year": "2020",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-29T13:19:28.219Z",
+    "edition": "ESC 2020",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27249",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bendolicviolentthing",
+    "local": false
+  },
+  {
     "id": "ben-e-king-stand-by-me",
     "title": "Stand by me",
     "artist": "Ben E. King",
@@ -6557,6 +6670,36 @@
     ],
     "tracksCount": 1,
     "search": "benekingstandbyme",
+    "local": false
+  },
+  {
+    "id": "benny-cristo-omaga",
+    "title": "Omaga ",
+    "artist": "Benny Cristo",
+    "video": "E1r3euYaq4Q",
+    "language": [
+      "English",
+      "Czech"
+    ],
+    "bpm": 244,
+    "gap": 1966.3934426229507,
+    "year": "2021",
+    "artistOrigin": "CZ",
+    "lastUpdate": "2024-04-29T13:19:28.224Z",
+    "edition": "ESC 2021",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 0.74,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28488",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bennycristoomaga",
     "local": false
   },
   {
@@ -7769,6 +7912,35 @@
     ],
     "tracksCount": 1,
     "search": "blankasolo",
+    "local": false
+  },
+  {
+    "id": "blas-canto-universo",
+    "title": "Universo",
+    "artist": "Blas Cantó",
+    "video": "nXb46PPcwQ0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 276.24,
+    "gap": 1951.5890529973935,
+    "year": "2019",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-04-29T13:19:28.228Z",
+    "edition": "ESC 2020",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 0.69,
+    "author": "Zevac",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=181957",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28090",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blascantouniverso",
     "local": false
   },
   {
@@ -12873,6 +13045,34 @@
     "local": false
   },
   {
+    "id": "cornelia-jakobs-hold-me-closer",
+    "title": "Hold Me Closer",
+    "artist": "Cornelia Jakobs",
+    "video": "i777psA2gP4",
+    "language": [
+      "English"
+    ],
+    "bpm": 387.82,
+    "gap": 10704.378835542262,
+    "year": "2022",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-04-29T13:19:28.231Z",
+    "edition": "ESC 2022",
+    "realBpm": 97,
+    "volume": 0.98,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27234",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "corneliajakobsholdmecloser",
+    "local": false
+  },
+  {
     "id": "coti-con-paulina-rubio-y-julieta-venegas-nada-fue-un-error",
     "title": "Nada fue un error",
     "artist": "Coti con Paulina Rubio y Julieta Venegas",
@@ -13917,6 +14117,34 @@
     ],
     "tracksCount": 1,
     "search": "daddyyankeeyozunalarompecorazones",
+    "local": false
+  },
+  {
+    "id": "dadi-freyr-whole-again",
+    "title": "Whole Again",
+    "artist": "Daði Freyr",
+    "video": "SZMZAJjciTg",
+    "language": [
+      "English"
+    ],
+    "bpm": 352.2,
+    "gap": 8015.442930153322,
+    "year": "2023",
+    "artistOrigin": "IS",
+    "lastUpdate": "2024-04-29T13:19:28.232Z",
+    "genre": "Pop",
+    "realBpm": 177,
+    "volume": 1,
+    "author": "sansan323",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=182000",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27448",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dadifreyrwholeagain",
     "local": false
   },
   {
@@ -21576,6 +21804,35 @@
     "local": false
   },
   {
+    "id": "getter-jaani-rockefeller-street",
+    "title": "Rockefeller Street",
+    "artist": "Getter Jaani",
+    "video": "wdNAYokSlCc",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.04,
+    "gap": 8519.381633594832,
+    "year": "2011",
+    "artistOrigin": "EE",
+    "lastUpdate": "2024-04-29T13:19:28.241Z",
+    "edition": "ESC 2011",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.76,
+    "author": "hoernla",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=172804",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28439",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "getterjaanirockefellerstreet",
+    "local": false
+  },
+  {
     "id": "gfriend-me-gustas-tu",
     "title": "Me gustas tu",
     "artist": "GFRIEND",
@@ -22678,6 +22935,35 @@
     ],
     "tracksCount": 1,
     "search": "gunsnroseswelcometothejungle",
+    "local": false
+  },
+  {
+    "id": "gustaph-because-of-you",
+    "title": "Because Of You",
+    "artist": "Gustaph",
+    "video": "ORhEoS6d8e4",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.76,
+    "gap": 4883.113493064313,
+    "year": "2023",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-04-29T13:19:28.245Z",
+    "edition": "ESC 2023",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 0.72,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27264",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gustaphbecauseofyou",
     "local": false
   },
   {
@@ -25983,6 +26269,63 @@
     "local": false
   },
   {
+    "id": "joker-out-carpe-diem",
+    "title": "Carpe diem",
+    "artist": "Joker Out",
+    "video": "6y9S9RipcUY",
+    "language": [
+      "Slovenian"
+    ],
+    "bpm": 264.03,
+    "gap": 49.129644358595556,
+    "year": "2023",
+    "artistOrigin": "SI",
+    "lastUpdate": "2024-04-29T13:19:28.248Z",
+    "edition": "ESC 2023",
+    "genre": "Shagadelic Rock",
+    "realBpm": 132,
+    "volume": 0.78,
+    "author": "sansan323",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=182000",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27443",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jokeroutcarpediem",
+    "local": false
+  },
+  {
+    "id": "joost-klein-europapa",
+    "title": "Europapa ",
+    "artist": "Joost Klein",
+    "video": "gT2wY0DjYGo",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 320,
+    "gap": 4251.625,
+    "year": "2024",
+    "artistOrigin": "NL",
+    "lastUpdate": "2024-04-29T13:19:28.249Z",
+    "edition": "ESC 2024",
+    "realBpm": 160,
+    "volume": 0.74,
+    "author": "Viktor1234678",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=167305",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28761",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joostkleineuropapa",
+    "local": false
+  },
+  {
     "id": "jordin-sparks-feat-chris-brown-no-air",
     "title": "No Air",
     "artist": "Jordin Sparks feat. Chris Brown",
@@ -27048,6 +27391,33 @@
     ],
     "tracksCount": 1,
     "search": "kaiserchiefsruby",
+    "local": false
+  },
+  {
+    "id": "kaleen-we-will-rave",
+    "title": "We Will Rave",
+    "artist": "Kaleen",
+    "video": "Kqda15G4T-4",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 17922.14285714286,
+    "year": "2024",
+    "artistOrigin": "AT",
+    "lastUpdate": "2024-04-29T13:19:28.253Z",
+    "edition": "ESC 2024",
+    "genre": "Dance/Electronic",
+    "realBpm": 140,
+    "volume": 0.76,
+    "author": "Dragon33",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kaleenwewillrave",
     "local": false
   },
   {
@@ -32197,6 +32567,34 @@
     "local": false
   },
   {
+    "id": "lps-disko",
+    "title": "Disko",
+    "artist": "LPS",
+    "video": "g8Ezl7xucCU",
+    "language": [
+      "Slovenian"
+    ],
+    "bpm": 240.08,
+    "gap": 19450.333222259247,
+    "year": "2022",
+    "artistOrigin": "SI",
+    "lastUpdate": "2024-04-29T13:19:28.255Z",
+    "edition": "ESC 2022",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "sansan323",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=182000",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27469",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lpsdisko",
+    "local": false
+  },
+  {
     "id": "lucas-lucco-aham",
     "title": "Aham",
     "artist": "Lucas Lucco",
@@ -33115,6 +33513,34 @@
     "local": false
   },
   {
+    "id": "mae-muller-i-wrote-a-song",
+    "title": "I Wrote A Song",
+    "artist": "Mae Muller",
+    "video": "tJ21grjN6wU",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.04,
+    "gap": 16630.16317389218,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-04-29T13:19:28.261Z",
+    "edition": "ESC 2023",
+    "realBpm": 125,
+    "volume": 0.72,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27084",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maemulleriwroteasong",
+    "local": false
+  },
+  {
     "id": "magdalena-tul-jestem",
     "title": "Jestem",
     "artist": "Magdalena Tul",
@@ -33300,6 +33726,35 @@
     ],
     "tracksCount": 1,
     "search": "majorlazerdjsnakefeatmoleanon",
+    "local": false
+  },
+  {
+    "id": "malik-harris-rockstars",
+    "title": "Rockstars",
+    "artist": "Malik Harris",
+    "video": "D3FN2umFaM8",
+    "language": [
+      "English"
+    ],
+    "bpm": 216.12,
+    "gap": 61.188228761799024,
+    "year": "2022",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-04-29T13:19:28.262Z",
+    "edition": "ESC 2022",
+    "genre": "Pop-Rap",
+    "realBpm": 81,
+    "volume": 0.72,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27770",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malikharrisrockstars",
     "local": false
   },
   {
@@ -35324,6 +35779,35 @@
     ],
     "tracksCount": 1,
     "search": "melendibarbiedeextrarradio",
+    "local": false
+  },
+  {
+    "id": "melovin-under-the-ladder",
+    "title": "Under The Ladder",
+    "artist": "MELOVIN",
+    "video": "cKM8c-9rGC0",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.06,
+    "gap": 13499.36092265943,
+    "year": "2018",
+    "artistOrigin": "UA",
+    "lastUpdate": "2024-04-29T13:19:28.263Z",
+    "edition": "ESC 2018",
+    "genre": "Pop Rock",
+    "realBpm": 140,
+    "volume": 0.76,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27220",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melovinundertheladder",
     "local": false
   },
   {
@@ -50754,6 +51238,36 @@
     "local": false
   },
   {
+    "id": "sudden-lights-aija",
+    "title": "Aijā",
+    "artist": "Sudden Lights",
+    "video": "XRV2-jPqaUw",
+    "language": [
+      "English",
+      "Latvian"
+    ],
+    "bpm": 322.76,
+    "gap": 14016.568471929608,
+    "year": "2023",
+    "artistOrigin": "LV",
+    "lastUpdate": "2024-04-29T13:19:28.264Z",
+    "edition": "ESC 2023",
+    "genre": "Alternative",
+    "realBpm": 160,
+    "volume": 0.75,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27254",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "suddenlightsaija",
+    "local": false
+  },
+  {
     "id": "sugababes-overload",
     "title": "Overload",
     "artist": "Sugababes",
@@ -52819,6 +53333,35 @@
     "local": false
   },
   {
+    "id": "teya-salena-who-the-hell-is-edgar",
+    "title": "Who The Hell Is Edgar",
+    "artist": "Teya & Salena",
+    "video": "ZMmLeV47Au4",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.65,
+    "gap": 5044.884674525884,
+    "year": "2023",
+    "artistOrigin": "AT",
+    "lastUpdate": "2024-04-29T13:19:28.265Z",
+    "edition": "ESC 2023",
+    "genre": "Pop",
+    "realBpm": 146,
+    "volume": 0.69,
+    "author": "Mircosoft93",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=175474",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27184",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "teyasalenawhothehellisedgar",
+    "local": false
+  },
+  {
     "id": "thalia-a-quien-le-importa",
     "title": "¿A quién le importa?",
     "artist": "Thalía",
@@ -54478,6 +55021,35 @@
     ],
     "tracksCount": 1,
     "search": "thelivingtombstonenomercy",
+    "local": false
+  },
+  {
+    "id": "the-makemakes-i-am-yours",
+    "title": "I Am Yours ",
+    "artist": "The Makemakes",
+    "video": "-f993p0CAV8",
+    "language": [
+      "English"
+    ],
+    "bpm": 332,
+    "gap": 9486.024096385543,
+    "year": "2015",
+    "artistOrigin": "AT",
+    "lastUpdate": "2024-04-29T13:19:28.266Z",
+    "edition": "ESC 2015",
+    "videoGap": 5,
+    "realBpm": 83,
+    "volume": 0.97,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=28749",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "themakemakesiamyours",
     "local": false
   },
   {
@@ -58283,6 +58855,35 @@
     ],
     "tracksCount": 1,
     "search": "voyagerpromise",
+    "local": false
+  },
+  {
+    "id": "we-are-domi-lights-off",
+    "title": "Lights Off",
+    "artist": "We Are Domi",
+    "video": "7T6vbLmluxk",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.25,
+    "gap": 7744.098116947473,
+    "year": "2021",
+    "artistOrigin": "CZ",
+    "lastUpdate": "2024-04-29T13:19:28.267Z",
+    "edition": "ESC 2022",
+    "genre": "Pop",
+    "realBpm": 126,
+    "volume": 0.69,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=27213",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "wearedomilightsoff",
     "local": false
   },
   {

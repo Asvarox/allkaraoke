@@ -171,6 +171,8 @@ export default function useSongList() {
         name: 'Search results',
         songs: filteredList.map((song, index) => ({ index, song, isPopular: popular.includes(song.id) })),
       });
+
+      return groups;
     } else {
       const sortedList = playlist?.sortingFn ? [...filteredList].sort(playlist.sortingFn) : filteredList;
 
@@ -190,13 +192,13 @@ export default function useSongList() {
         }
       });
 
-      playlist?.postGrouping?.(groups);
+      const finalGroups = playlist?.postGrouping?.(groups) ?? groups;
 
       if (!playlist?.hideNew) {
         const newSongs = filteredList.filter((song) => song.isNew);
 
         if (newSongs.length && newSongs.length < 50) {
-          groups.unshift({
+          finalGroups.unshift({
             name: 'New',
             isNew: true,
             songs: newSongs.map((song) => ({
@@ -208,9 +210,9 @@ export default function useSongList() {
           });
         }
       }
-    }
 
-    return groups;
+      return finalGroups;
+    }
   }, [filteredList, filters.search, popular, playlist]);
 
   return {

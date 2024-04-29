@@ -19,7 +19,7 @@ export interface PlaylistEntry {
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
   groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong'>;
-  postGrouping?: (groups: SongGroup[]) => void;
+  postGrouping?: (groups: SongGroup[]) => SongGroup[];
   sortingFn?: (a: SongPreview, b: SongPreview) => number;
 }
 
@@ -112,7 +112,25 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
               return 0;
             },
             postGrouping: (groups) => {
-              groups.sort((a, b) => {
+              let finalGroups = groups;
+              // group single item groups into "Other"
+              const singleItemGroups = groups.filter((group) => group.songs.length <= 1);
+              if (singleItemGroups.length) {
+                let other = groups.find((group) => group.name === 'Other');
+                if (!other) {
+                  other = { name: 'Other', songs: [] };
+                  groups.push(other);
+                }
+                other.displayLong = (
+                  <>
+                    <SFlag isocode="eu" /> Other
+                  </>
+                );
+                other.songs = singleItemGroups.map((group) => group.songs[0]);
+                finalGroups = groups.filter((group) => group.songs.length > 1);
+              }
+              // sort by country name
+              finalGroups.sort((a, b) => {
                 if (a.name === 'Other') return 1;
                 if (b.name === 'Other') return -1;
                 return (
@@ -121,6 +139,8 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
                   ) ?? 0
                 );
               });
+
+              return finalGroups;
             },
           }
         : null,
