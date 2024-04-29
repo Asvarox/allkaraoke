@@ -1,0 +1,411 @@
+#ARTIST:Lord Of The Lost
+#TITLE:Blood & Glitter
+#CREATOR:Jimmy21
+#BPM:300
+#YEAR:2022
+#VIDEO:v=5I9CYu668jA
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:-110
+#EDITION:ESC 2023
+#ALLKARAOKE_ID:lord-of-the-lost-blood-glitter
+#ALLKARAOKE_LASTUPDATE:2024-04-29T19:59:37.444Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=165071
+#ALLKARAOKE_REALBPM:139
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27046
+#ALLKARAOKE_VOLUME:0,87
+#MP3:Lord Of The Lost - Blood & Glitter.mp3
+#COVER:Lord Of The Lost - Blood & Glitter [CO].jpg
+#BACKGROUND:Lord Of The Lost - Blood & Glitter [BG].jpg
+#END:176000
+: 18 8 12 Blood 
+: 28 3 11 and 
+: 37 4 12 glit
+: 42 3 9 ter, 
+* 52 12 12 sweet 
+: 65 8 11 and 
+: 74 3 12 bit
+* 79 7 9 ter 
+- 86
+: 93 7 12 We’re 
+: 102 6 12 so 
+: 111 5 12 hap
+: 118 6 11 py 
+: 126 8 11 we 
+: 135 9 9 could 
+: 145 10 7 die 
+- 155 217
+- 217
+: 237 10 4 Blood 
+: 248 6 4 and 
+: 256 3 4 glit
+: 260 63 4 ter 
+- 323 528
+- 528
+: 548 4 9 What 
+: 553 6 7 we 
+: 561 7 9 are 
+: 570 5 7 is 
+: 578 7 9 but 
+: 587 4 11 a 
+: 594 19 12 choice 
+- 613
+: 629 4 11 A 
+: 634 5 11 pro
+: 640 6 11 mise 
+: 647 7 12 to 
+: 655 6 7 our 
+: 663 20 9 selves 
+- 683
+: 686 5 -3 We 
+: 692 7 -3 are 
+* 700 15 5 free 
+* 718 9 -3 to 
+* 737 14 4 break 
+* 753 10 -3 and 
+* 768 22 2 change 
+- 790
+: 806 1 5 Ne
+: 809 1 5 ver 
+: 811 1 5 for
+: 815 1 5 get? 
+: 817 1 5 Let 
+: 819 1 4 it 
+: 821 11 5 go 
+- 832
+: 840 3 4 This 
+: 844 1 4 or 
+: 846 1 4 that? 
+: 849 1 4 No 
+: 851 1 4 need 
+: 854 1 2 to 
+: 857 9 4 know 
+- 866
+: 874 1 4 Whe
+: 877 1 4 ther 
+: 880 1 4 a
+: 882 1 4 bove 
+: 884 2 2 or 
+: 888 2 2 be
+: 891 12 4 low 
+- 903
+: 910 10 2 We 
+: 922 8 0 are 
+: 932 10 -1 all 
+: 943 10 2 from 
+: 955 9 4 the 
+: 966 10 5 same 
+: 977 14 4 blood 
+- 991
+* 994 8 0 Blood 
+* 1003 6 -1 and 
+* 1011 4 0 glit
+* 1016 8 -3 ter, 
+* 1029 8 0 sweet 
+* 1038 5 -1 and 
+* 1045 4 0 bit
+* 1050 6 -3 ter 
+- 1056
+: 1065 6 0 We’re 
+: 1073 6 0 so 
+: 1082 5 0 hap
+: 1089 6 -1 py 
+: 1098 5 -1 we 
+: 1105 7 -3 could 
+: 1114 8 -5 die 
+- 1122
+: 1136 5 0 Blood 
+: 1142 6 -1 and 
+: 1150 4 -1 glit
+: 1155 7 0 ter, 
+: 1167 9 0 sweet 
+: 1177 6 -1 and 
+: 1184 5 -1 bit
+: 1190 6 0 ter 
+- 1196
+: 1205 5 0 We’re 
+: 1211 8 0 so 
+: 1220 4 0 hap
+: 1226 5 -1 py 
+: 1234 5 -1 we 
+: 1241 8 -3 could 
+: 1250 10 -5 die 
+- 1260
+: 1271 9 0 Blood 
+: 1281 6 -1 and 
+: 1289 4 -1 glit
+: 1294 6 0 ter, 
+: 1306 8 4 saint 
+: 1315 5 2 and 
+: 1322 5 2 sin
+: 1328 8 4 ner 
+- 1336
+: 1342 6 4 We 
+: 1349 7 4 do 
+: 1358 5 4 fall 
+: 1364 5 2 be
+: 1370 5 2 fore 
+: 1379 7 0 we 
+: 1388 14 -1 rise 
+- 1402 1403
+- 1403
+: 1423 4 -3 Now 
+: 1428 3 0 go
+: 1432 5 -3 ~, 
+: 1441 3 0 go
+: 1445 3 -3 ~, 
+R 1449 3 -3 let 
+R 1453 3 -3 your 
+R 1457 3 -3 blood 
+: 1461 2 0 flow
+: 1466 3 -3 ~, 
+: 1474 3 0 flow
+: 1479 1 -3 ~ 
+- 1480
+: 1483 4 0 With 
+: 1488 2 0 bro
+: 1491 2 0 ken 
+: 1494 4 0 wings, 
+: 1503 4 -1 we 
+: 1508 8 -1 learn 
+: 1518 4 -3 to 
+: 1524 9 -5 fly 
+- 1533
+: 1551 3 2 We 
+: 1555 8 2 are 
+: 1565 10 2 blood 
+: 1577 9 2 and 
+: 1589 13 4 glit
+: 1603 16 -2 ter 
+- 1619 1631
+- 1631
+: 1651 3 0 Keep 
+: 1655 5 -1 your 
+: 1662 7 0 head 
+: 1670 6 -1 up 
+: 1679 4 0 in 
+: 1687 5 2 the 
+: 1695 22 4 clouds 
+- 1717
+: 1733 3 4 With 
+: 1737 3 4 two 
+: 1742 8 2 feet 
+: 1751 5 2 on 
+: 1759 4 0 the 
+: 1768 11 0 ground 
+- 1779
+: 1789 4 0 Life’s 
+: 1796 4 0 too 
+: 1804 12 9 fast 
+: 1821 8 4 so 
+: 1839 13 7 make 
+: 1857 12 4 it 
+: 1874 19 2 count 
+- 1893
+: 1908 2 0 Ne
+: 1911 2 0 ver 
+: 1914 1 -1 for
+: 1916 1 0 get? 
+: 1918 3 0 Let 
+: 1922 3 -1 it 
+: 1926 9 0 go 
+- 1935
+: 1942 2 0 This 
+: 1945 2 0 or 
+: 1948 2 -1 that? 
+: 1951 2 0 No 
+: 1954 2 0 need 
+: 1957 2 -1 to 
+: 1960 5 0 know 
+- 1965
+: 1977 2 0 Whe
+: 1980 2 0 ther 
+: 1983 2 -1 a
+: 1986 2 0 bove 
+: 1989 2 0 or 
+: 1992 2 -1 be
+: 1995 10 0 low 
+- 2005
+: 2014 7 11 We 
+: 2026 8 12 are 
+: 2037 8 11 all 
+: 2046 9 9 from 
+: 2059 8 11 the 
+: 2070 10 12 same 
+: 2081 15 11 blood 
+- 2096
+: 2099 7 12 Blood 
+: 2107 4 11 and 
+: 2114 4 11 glit
+: 2119 6 12 ter, 
+: 2132 7 12 sweet 
+: 2141 5 11 and 
+: 2150 3 11 bit
+: 2154 10 12 ter 
+- 2164
+: 2167 7 12 We’re 
+: 2175 7 12 so 
+: 2184 3 12 hap
+: 2188 5 11 py 
+: 2195 7 11 we 
+: 2204 8 9 could 
+: 2214 14 7 die 
+- 2228
+: 2236 6 12 Blood 
+: 2244 5 11 and 
+: 2252 3 11 glit
+: 2256 3 12 ter, 
+: 2268 8 16 saint 
+: 2277 5 14 and 
+: 2286 4 14 sin
+: 2291 9 16 ner 
+- 2300
+: 2304 7 16 We 
+: 2313 6 16 do 
+: 2320 7 16 fall 
+: 2329 3 14 be
+: 2333 6 14 fore 
+: 2341 9 12 we 
+: 2352 17 11 rise 
+- 2369
+: 2385 4 9 Now 
+: 2390 2 12 go
+: 2393 3 9 ~, 
+: 2403 2 12 go
+: 2406 2 9 ~, 
+R 2411 2 9 let 
+R 2415 2 9 your 
+R 2419 2 9 blood 
+: 2425 2 12 flow
+: 2428 4 9 ~, 
+: 2438 3 12 flow
+: 2442 2 9 ~ 
+- 2444
+: 2447 3 12 With 
+: 2451 3 12 bro
+: 2455 4 12 ken 
+: 2460 6 12 wings, 
+: 2467 4 11 we 
+: 2473 7 11 learn 
+: 2481 6 9 to 
+: 2488 12 7 fly 
+- 2500
+: 2512 5 2 We 
+: 2519 6 2 are 
+: 2528 10 2 blood 
+: 2541 7 2 and 
+: 2554 9 2 glit
+: 2567 28 4 ter 
+- 2595
+: 2598 2 0 Go
+: 2601 4 -3 ~, 
+: 2611 2 0 go
+: 2614 3 -3 ~, 
+R 2619 3 -3 let 
+R 2623 3 -3 your 
+R 2627 3 -3 blood 
+: 2632 3 0 flow
+: 2636 6 -3 ~, 
+: 2644 2 0 flow
+: 2647 6 -3 ~ 
+- 2653
+: 2667 10 4 Blood 
+: 2681 10 4 and 
+: 2692 9 2 glit
+: 2705 21 4 ter 
+- 2726
+: 2736 2 0 Go
+: 2740 4 -3 ~, 
+: 2747 2 0 go
+: 2751 3 -3 ~, 
+R 2756 2 -3 let 
+R 2760 2 -3 your 
+R 2764 3 -3 blood 
+: 2769 15 0 flow 
+- 2784
+: 2789 6 0 Blood 
+: 2797 6 -1 and 
+: 2805 5 0 glit
+: 2811 7 -3 ter, 
+: 2819 10 0 sweet 
+: 2831 6 -1 and 
+: 2840 4 0 bit
+: 2846 7 -3 ter 
+- 2853
+: 2860 5 0 We’re 
+: 2867 5 0 so 
+: 2876 6 0 hap
+: 2883 5 -1 py 
+: 2890 7 -1 we 
+: 2899 9 -3 could 
+: 2909 14 -5 die 
+- 2923
+: 2933 4 0 Blood 
+: 2938 4 -1 and 
+: 2947 3 -1 glit
+: 2951 5 0 ter, 
+: 2963 7 0 sweet 
+: 2972 4 -1 and 
+: 2981 3 -1 bit
+: 2985 10 0 ter 
+- 2995
+: 3001 5 0 We’re 
+: 3007 4 0 so 
+: 3015 3 0 hap
+: 3019 7 -1 py 
+: 3028 7 -1 we 
+: 3037 7 -3 could 
+: 3046 12 -5 die 
+- 3058
+: 3069 5 4 Blood 
+: 3075 4 2 and 
+: 3083 3 2 glit
+: 3087 7 4 ter, 
+: 3100 9 4 saint 
+: 3111 8 2 and 
+: 3120 4 2 sin
+: 3125 6 4 ner 
+- 3131
+* 3138 6 4 We 
+* 3146 7 4 do 
+* 3155 5 4 fall 
+* 3161 3 2 be
+* 3165 6 2 fore 
+* 3175 7 0 we 
+* 3183 19 -1 rise 
+- 3202
+: 3216 5 -3 Now 
+: 3223 2 0 go
+: 3226 4 -3 ~, 
+: 3235 2 0 go
+: 3238 4 -3 ~, 
+R 3243 2 -3 let 
+R 3247 2 -3 your 
+R 3251 2 -3 blood 
+: 3256 3 0 flow
+: 3260 4 -3 ~, 
+: 3269 3 0 flow
+: 3273 4 -3 ~ 
+- 3277
+: 3280 2 0 With 
+: 3283 3 0 bro
+: 3287 3 0 ken 
+: 3291 5 0 wings, 
+: 3299 5 -1 we 
+: 3306 7 -1 learn 
+: 3314 5 -3 to 
+: 3320 13 -5 fly 
+- 3333
+: 3346 5 2 We 
+: 3352 5 2 are 
+: 3360 10 2 blood 
+: 3374 11 2 and 
+: 3386 7 4 glit
+: 3397 16 -2 ter 
+- 3413
+: 3431 8 4 Blood 
+: 3440 13 2 and 
+: 3457 6 4 glit
+: 3466 26 2 ter 
+E
