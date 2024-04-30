@@ -10,7 +10,12 @@ import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect } from 'react';
 import { useUpdate } from 'react-use';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import { DefaultRemoteMicPermission, RemoteMicPermissions, useSettingValue } from 'Scenes/Settings/SettingsState';
+import {
+  DefaultRemoteMicPermission,
+  RemoteMicPermissions,
+  useSettingValue,
+  UseWebsocketsSettings,
+} from 'Scenes/Settings/SettingsState';
 
 import { useDevicePing } from 'Scenes/SelectInput/hooks/useDevicePing';
 
@@ -23,6 +28,7 @@ function RemoteMicSettings(props: Props) {
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
+  const [websockets, setWebsockets] = useSettingValue(UseWebsocketsSettings);
   const [defaultPermission, setDefaultPermission] = useSettingValue(DefaultRemoteMicPermission);
   const remoteMics = useEventListenerSelector(events.inputListChanged, () => RemoteMicManager.getRemoteMics());
 
@@ -32,6 +38,12 @@ function RemoteMicSettings(props: Props) {
   return (
     <MenuWithLogo>
       <h1>Remote Microphone Settings</h1>
+      <Switcher
+        {...register('websocket-connection', () => setWebsockets(!websockets))}
+        label="Use Websockets"
+        value={websockets ? 'Yes' : 'No'}
+      />
+      <hr />
       <Switcher
         {...register('default-permission', () =>
           setDefaultPermission(nextValue(RemoteMicPermissions, defaultPermission)),

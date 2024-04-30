@@ -10,13 +10,13 @@
 ### Install dependencies
 
 ```
-yarn
+pnpm install
 ```
 
 ### Run
 
 ```
-yarn start
+pnpm start
 ```
 
 #### Run in offline mode
@@ -24,7 +24,7 @@ yarn start
 Plays dummy local video instead of YouTube to work properly in offline environments (eg. planes).
 
 ```
-yarn start:mock
+pnpm start:mock
 ```
 
 #### Localhost service worker
@@ -35,7 +35,7 @@ work due to untrusted origin. See [this document](config/crt/readme.md) how this
 ### Build for production
 
 ```
-yarn build
+pnpm build
 ```
 
 ## Development
@@ -45,7 +45,7 @@ By default, dummy (simulated) microphones are used. You can use whatever other m
 ### Connecting remote mic to dev server
 
 You can just copy the link and open it in a new browser tab or whole new browser. If you want to connect actual phone
-to the dev server, you need to run it with `--host` flag, eg `yarn start --host` (and open the actual IP link).
+to the dev server, you need to run it with `--host` flag, eg `pnpm start --host` (and open the actual IP link).
 
 > _Note_ that some songs won't work (YouTube will block the access), probably due to the host being an IP.
 
@@ -54,31 +54,31 @@ to the dev server, you need to run it with `--host` flag, eg `yarn start --host`
 Running against the dev server if it's running by simply running
 
 ```
-yarn e2e
+pnpm e2e
 ```
 
 You can run specific test and specific browser, headed or with debug like so
 
 ```
-yarn e2e --project="chromium" --headed --debug tests/song-list.spec.ts
+pnpm e2e --project="chromium" --headed --debug tests/song-list.spec.ts
 ```
 
 It's also possible to run the tests against prod build (same as in CI) - it makes the tests run slightly faster:
 
 ```
-yarn e2e:prod
+pnpm e2e:prod
 ```
 
 For that you might want to keep following command running separately to not have the app built every time tests are run:
 
 ```
-yarn build:serve
+pnpm build:serve
 ```
 
 ## Run unit tests
 
 ```
-yarn test
+pnpm test
 ```
 
 ## Misc docs
@@ -100,7 +100,3 @@ Documentation about specific topics can be found in [docs/](docs/) folder.
 - `normal` - regular note
 - `star` - golden note, gives bonus points
 - `rap` / `freestyle` - notes that are always hit if any singing is detected. Gives reduced points
-
-#### Fix for JetBrains IDE and TypeScript
-
-https://youtrack.jetbrains.com/issue/WEB-62221/TypeScript-service-doesnt-work-with-yarn-pnp-when-typescript-version-is-5.x-or-higher
