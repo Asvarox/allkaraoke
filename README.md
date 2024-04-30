@@ -5,7 +5,7 @@
 ### Requirements
 
 1. Node (check `.nvmrc` for version)
-2. Yarn
+2. [pnpm](https://pnpm.io/)
 
 ### Install dependencies
 
