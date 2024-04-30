@@ -4,10 +4,8 @@ import { WebSocketServerTransport } from 'RemoteMic/Network/Server/Transport/Web
 import { ServerTransport } from 'RemoteMic/Network/Server/Transport/interface';
 import { NetworkMessages } from 'RemoteMic/Network/messages';
 import RemoteMicManager from 'RemoteMic/RemoteMicManager';
-import { InputLagSetting } from 'Scenes/Settings/SettingsState';
+import { InputLagSetting, UseWebsocketsSettings } from 'Scenes/Settings/SettingsState';
 import SongDao from 'Songs/SongsService';
-import posthog from 'posthog-js';
-import { FeatureFlags } from 'utils/featureFlags';
 
 const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
@@ -19,8 +17,8 @@ export class NetworkServer {
 
   public constructor() {
     if (!this.gameCode) {
-      this.gameCode = '';
-      for (let i = 0; i < GAME_CODE_LENGTH; i++) {
+      this.gameCode = UseWebsocketsSettings.get() ? 'w' : 'p';
+      for (let i = 0; i < GAME_CODE_LENGTH - 1; i++) {
         this.gameCode += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
       }
     }
@@ -33,9 +31,7 @@ export class NetworkServer {
 
   public start = () => {
     if (!this.transport) {
-      this.transport = posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics)
-        ? new WebSocketServerTransport()
-        : new PeerJSServerTransport();
+      this.transport = UseWebsocketsSettings.get() ? new WebSocketServerTransport() : new PeerJSServerTransport();
     }
     if (this.started) return;
     this.started = true;

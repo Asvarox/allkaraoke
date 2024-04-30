@@ -1,8 +1,10 @@
 import { backgroundTheme } from 'Elements/LayoutWithBackground';
 import { milliseconds } from 'interfaces';
+import posthog from 'posthog-js';
 import { useLayoutEffect, useState } from 'react';
 import { ValuesType } from 'utility-types';
 import Listener from 'utils/Listener';
+import { FeatureFlags } from 'utils/featureFlags';
 import storage from 'utils/storage';
 
 class Setting<T> extends Listener<[T]> {
@@ -82,6 +84,12 @@ export const AutoEnableFullscreenSetting = new Setting<boolean>(
   true,
   process.env.NODE_ENV === 'development' ? 'local' : 'session',
 );
+
+export const UseWebsocketsSettings = new Setting<boolean>('UseWebsocketsSettings', false, 'session');
+
+posthog.onFeatureFlags(() => {
+  UseWebsocketsSettings.set(posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics) ?? false);
+});
 
 export function useSettingValue<T>(value: Setting<T>) {
   const [currentValue, setCurrentValue] = useState(value.get());

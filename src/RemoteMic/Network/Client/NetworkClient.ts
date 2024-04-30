@@ -18,7 +18,6 @@ import SimplifiedMic from 'Scenes/Game/Singing/Input/SimplifiedMic';
 import { RemoteMicrophoneLagSetting } from 'Scenes/Settings/SettingsState';
 import { throttle } from 'lodash-es';
 import posthog from 'posthog-js';
-import { FeatureFlags } from 'utils/featureFlags';
 import { roundTo } from 'utils/roundTo';
 import storage from 'utils/storage';
 import { v4 } from 'uuid';
@@ -59,13 +58,11 @@ export class NetworkClient {
   };
 
   public connect = (roomId: string, name: string, silent: boolean) => {
+    const lcRoomId = roomId.toLowerCase();
     if (!this.transport) {
-      this.transport = posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics)
-        ? new WebSocketClientTransport()
-        : new PeerJSClientTransport();
+      this.transport = lcRoomId.startsWith('w') ? new WebSocketClientTransport() : new PeerJSClientTransport();
     }
     if (this.clientId === null) this.setClientId(v4());
-    const lcRoomId = roomId.toLowerCase();
     this.roomId = lcRoomId;
 
     if (this.transport.isConnected()) {
