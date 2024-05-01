@@ -2,14 +2,12 @@ name: Run sungSongsMonitor
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0,30 * * * *'
   workflow_dispatch:
 
 jobs:
   run_script:
-    permissions: write-all
     runs-on: ubuntu-latest
-    if: ${{ vars.MONITORING_ATTEMPTS > 0 }}
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
     steps:
@@ -30,3 +28,10 @@ jobs:
               name: 'MONITORING_ATTEMPTS',
               value: '' + (${{ vars.MONITORING_ATTEMPTS }} - 1) + ''
             });
+            if (${{ vars.MONITORING_ATTEMPTS }} - 1 <= 0) {
+              github.rest.actions.disableWorkflow({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'monitor-posthog-events.yml',
+              });
+            }

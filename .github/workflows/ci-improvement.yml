@@ -118,6 +118,22 @@ jobs:
             https://eu.posthog.com/api/projects/281/annotations/
         env:
           POSTHOG_PAT_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+      - name: "Start monitoring"
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
+          script: |
+            github.rest.actions.updateRepoVariable({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'MONITORING_ATTEMPTS',
+              value: '4'
+            });
+            github.rest.actions.enableWorkflow({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'monitor-posthog-events.yml',
+            });
   deploy-branch:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master'
