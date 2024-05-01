@@ -17,7 +17,7 @@ export class NetworkServer {
 
   public constructor() {
     if (!this.gameCode) {
-      this.gameCode = UseWebsocketsSettings.get() ? 'w' : 'p';
+      this.gameCode = '';
       for (let i = 0; i < GAME_CODE_LENGTH - 1; i++) {
         this.gameCode += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
       }
@@ -35,11 +35,11 @@ export class NetworkServer {
     }
     if (this.started) return;
     this.started = true;
-    console.log('connection started', this.gameCode);
+    console.log('connection started', this.getGameCode());
     window.sessionStorage.setItem(GAME_CODE_KEY, this.gameCode);
 
     this.transport.connect(
-      this.gameCode,
+      this.getGameCode(),
       () => {
         this.transport!.addListener((event, sender) => {
           const type = event.t;
@@ -101,5 +101,5 @@ export class NetworkServer {
     );
   };
 
-  public getGameCode = () => this.gameCode;
+  public getGameCode = () => (UseWebsocketsSettings.get() ? 'w' : 'p') + this.gameCode;
 }

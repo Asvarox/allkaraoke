@@ -88,6 +88,7 @@ export const AutoEnableFullscreenSetting = new Setting<boolean>(
 export const UseWebsocketsSettings = new Setting<boolean>('UseWebsocketsSettings', false, 'session');
 
 posthog.onFeatureFlags(() => {
+  // UseWebsocketsSettings.set(isDev() ? true : (posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics) ?? false));
   UseWebsocketsSettings.set(posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics) ?? false);
 });
 
