@@ -22,6 +22,7 @@ jobs:
       - name: "Decrease attempts count"
         uses: actions/github-script@v7
         with:
+          github-token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
           script: |
             github.rest.actions.updateRepoVariable({
               owner: context.repo.owner,
