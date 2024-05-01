@@ -7,8 +7,7 @@ on:
 
 jobs:
   run_script:
-    permissions:
-      repository-projects: write
+    permissions: write-all
     runs-on: ubuntu-latest
     if: ${{ vars.MONITORING_ATTEMPTS > 0 }}
     env:
