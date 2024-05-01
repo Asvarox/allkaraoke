@@ -27,6 +27,6 @@ jobs:
             github.rest.actions.updateRepoVariable({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              variable_name: 'MONITORING_ATTEMPTS',
+              name: 'MONITORING_ATTEMPTS',
               value: '' + (${{ vars.MONITORING_ATTEMPTS }} - 1) + ''
             });
