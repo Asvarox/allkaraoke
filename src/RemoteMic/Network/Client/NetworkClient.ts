@@ -93,7 +93,7 @@ export class NetworkClient {
           events.karaokeConnectionStatusChange.dispatch('reconnecting');
         } else if (!this.connected) {
           events.karaokeConnectionStatusChange.dispatch('error', reason);
-          posthog.capture('remote_mic_connection_error', { reason });
+          posthog.capture('remote_mic_connection_error', { reason, transport: this.roomId?.charAt(0) });
         } else {
           events.karaokeConnectionStatusChange.dispatch('disconnected');
         }
@@ -138,6 +138,7 @@ export class NetworkClient {
     this.connected = true;
     this.reconnecting = false;
     events.karaokeConnectionStatusChange.dispatch('connected');
+    posthog.capture('remote_mic_connection_successful', { transport: this.roomId?.charAt(0) });
     this.sendEvent('register', { name, id: this.clientId!, silent, lag: RemoteMicrophoneLagSetting.get() });
     this.ping();
     window.addEventListener('beforeunload', this.disconnect);
