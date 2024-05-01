@@ -7,6 +7,8 @@ on:
 
 jobs:
   run_script:
+    permissions:
+      repository-projects: write
     runs-on: ubuntu-latest
     if: ${{ vars.MONITORING_ATTEMPTS > 0 }}
     env:
@@ -18,3 +20,13 @@ jobs:
           node-version-file: '.nvmrc'
       - name: Run script
         run: node scripts/monitorPosthogEvents.mjs
+      - name: "Decrease attempts count"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.actions.updateRepoVariable({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              variable_name: 'MONITORING_ATTEMPTS',
+              value: '' + (${{ vars.MONITORING_ATTEMPTS }} - 1) + ''
+            });
