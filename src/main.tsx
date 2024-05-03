@@ -8,6 +8,8 @@ import 'utils/exposeSingletons';
 import 'utils/wdyr';
 
 import { browserTracingIntegration, init, setUser } from '@sentry/react';
+import songStats from 'Scenes/LandingPage/songStats.json';
+import { normalizeSting } from 'Songs/utils/getSongId';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { ToastContainer, toast } from 'react-toastify';
@@ -15,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import isDev from 'utils/isDev';
 import isE2E from 'utils/isE2E';
 import isPreRendering from 'utils/isPreRendering';
+import { randomInt } from 'utils/randomValue';
 import sentryIgnoreErrors from 'utils/sentryIgnoreErrors';
 import { v4 } from 'uuid';
 import App from './App';
@@ -52,6 +55,20 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
         localStorage.setItem('posthog-user-id', storedUser);
       }
       ph.identify(storedUser);
+      let storedName = localStorage.getItem('posthog-user-name');
+      if (!storedName) {
+        const words = [...new Set(songStats.artists.flatMap((artist) => normalizeSting(artist).split('-')))].filter(
+          (word) => word.length <= 10,
+        );
+
+        storedName = new Array(3)
+          .fill(0)
+          .map(() => words[randomInt(0, words.length - 1)])
+          .join('-');
+        localStorage.setItem('posthog-user-name', storedName);
+
+        ph.alias(storedName, storedUser);
+      }
 
       if (isSentryEnabled) {
         setUser({ id: storedUser });

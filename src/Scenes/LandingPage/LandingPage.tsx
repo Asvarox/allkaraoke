@@ -1,4 +1,3 @@
-// import songs from '../../../public/songs/index.json';
 import styled from '@emotion/styled';
 import { LinkButton } from 'Elements/Button';
 import { useBackground } from 'Elements/LayoutWithBackground';
@@ -6,24 +5,20 @@ import Logo from 'Elements/Logo';
 import { DesktopOnly, MobileOnly } from 'Elements/RWD';
 import SmoothLink from 'Elements/SmoothLink';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
-import Background from 'Scenes/LandingPage/Background';
 import LayoutGame from 'Scenes/LayoutGame';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
-import { useFeatureFlagEnabled } from 'posthog-js/react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
 import Typewriter from 'typewriter-effect';
-import { FeatureFlags } from 'utils/featureFlags';
 import LogoIcon from './LogoIcon';
 import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
 import songStats from './songStats.json';
 
 function LandingPage() {
-  const isBackgroundEnabled = useFeatureFlagEnabled(FeatureFlags.LandingPageBackground);
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
   const navigate = useSmoothNavigate();
 
@@ -53,7 +48,6 @@ function LandingPage() {
         <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
       <GithubRibbon />
-      {isBackgroundEnabled && <Background />}
       <Container>
         <DesktopOnly>
           <LogoContainer>

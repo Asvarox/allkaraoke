@@ -3,6 +3,7 @@ import SuggestMobileMode from 'Scenes/QuickSetup/SuggestMobileMode';
 import SelectInputView from 'Scenes/SelectInput/SelectInputView';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
+import isMobile from 'is-mobile';
 import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 import isDev from 'utils/isDev';
@@ -13,13 +14,7 @@ interface Props {
 
 function QuickSetup(props: Props) {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const isMobile = useMemo(
-    () =>
-      window.matchMedia(
-        'only screen and (((max-width: 500px) and (max-aspect-ratio: 10/16)) or ((max-height: 500px) and (min-aspect-ratio: 16/10)))',
-      ).matches,
-    [],
-  );
+  const isMobileDevice = useMemo(() => isMobile(), []);
 
   const navigate = useSmoothNavigate();
   const onFinish = async (pref: (typeof MicSetupPreference)[number]) => {
@@ -40,7 +35,7 @@ function QuickSetup(props: Props) {
       <Helmet>
         <title>Select Input | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      {mobilePhoneMode === null && isMobile ? (
+      {mobilePhoneMode === null && isMobileDevice ? (
         <SuggestMobileMode />
       ) : (
         <MenuWithLogo>
