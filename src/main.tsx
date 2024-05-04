@@ -61,7 +61,7 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
           (word) => word.length <= 10,
         );
 
-        storedName = new Array(3)
+        storedName = new Array(randomInt(3, 5))
           .fill(0)
           .map(() => words[randomInt(0, words.length - 1)])
           .join('-');
