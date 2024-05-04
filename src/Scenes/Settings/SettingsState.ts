@@ -61,7 +61,11 @@ export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_L
 export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_MODE_KEY', null);
 export const KeyboardHelpVisibilitySetting = new Setting<boolean>('keyboard-help-visibility', true);
 
-export const InputLagSetting = new Setting<milliseconds>('INPUT_LAG', 0);
+const initialInputLag = posthog.getFeatureFlagPayload(FeatureFlags.InitialInputLag);
+export const InputLagSetting = new Setting<milliseconds>(
+  'INPUT_LAG_V2',
+  typeof initialInputLag === 'number' ? initialInputLag : 0,
+);
 
 // Used in remote mics
 export const RemoteMicrophoneLagSetting = new Setting<milliseconds>('REMOTE_MIC_INPUT_LAG', 0, 'session');
