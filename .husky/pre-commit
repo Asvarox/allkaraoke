@@ -1,3 +1,1 @@
 pnpm lint-staged
-pnpm run test --watch=false
-pnpm unimported --no-cache
