@@ -139,7 +139,7 @@ export const SongCardBackground = styled.div<{
   focused: boolean;
   expanded: boolean;
 }>`
-  background-color: ${styles.colors.text.inactive};
+  background-color: #2b2b2b;
   ${(props) => !props.expanded && 'border-radius: 1rem;'}
   position: absolute;
   z-index: -1;
@@ -150,7 +150,7 @@ export const SongCardBackground = styled.div<{
           background-size: ${props.focused ? 100 : 110}%;
           ${!props.focused ? 'filter: grayscale(90%);' : ''}
           ${props.expanded ? 'filter: blur(10px);' : ''}
-                  transition: 300ms;
+                        transition: 300ms;
           opacity: ${props.focused ? 1 : 0.8};
         `
       : css`

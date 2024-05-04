@@ -130,7 +130,7 @@ const GameOverlay = forwardRef(function (
         {effectsEnabled && (
           <>
             {GameState.getSingSetup()?.mode === GAME_MODE.CO_OP ? (
-              <Score data-test="players-score" data-score={GameState.getPlayerScore(0)}>
+              <Score data-test="players-score" data-score={Math.floor(GameState.getPlayerScore(0))}>
                 <ScoreText score={GameState.getPlayerScore(0)} />
               </Score>
             ) : (
@@ -138,7 +138,7 @@ const GameOverlay = forwardRef(function (
                 <Score
                   key={player.number}
                   data-test={`player-${player.number}-score`}
-                  data-score={GameState.getPlayerScore(player.number)}>
+                  data-score={Math.floor(GameState.getPlayerScore(player.number))}>
                   <ScoreText score={GameState.getPlayerScore(player.number)} />
                 </Score>
               ))

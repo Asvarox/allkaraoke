@@ -227,8 +227,8 @@ export const useSongSelectionKeyboardNavigation = (
   useKeyboardHelp(help, enabled);
 
   const closePlaylist = useCallback(
-    (leavingKey: 'left' | 'right') => {
-      setShowPlaylistsState([false, leavingKey]);
+    (newLeavingKey?: 'left' | 'right') => {
+      setShowPlaylistsState([false, newLeavingKey ?? null]);
       // if (leavingKey === 'right') navigateHorizontally(1);
     },
     [setShowPlaylistsState, navigateHorizontally, groupedSongs, cursorPosition],

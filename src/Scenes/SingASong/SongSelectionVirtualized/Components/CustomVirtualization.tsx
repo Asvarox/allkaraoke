@@ -10,6 +10,7 @@ import {
   useCallback,
   useEffect,
   useImperativeHandle,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -86,6 +87,13 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
   );
 
   const [[rangeFrom, rangeTo], setItemsRange] = useState(computeVisibleItemsRange(0));
+
+  useLayoutEffect(() => {
+    const newItemsRange = computeVisibleItemsRange(viewportElementRef.current?.scrollTop ?? 0);
+    if (rangeFrom !== newItemsRange[0] || rangeTo !== newItemsRange[1]) {
+      setItemsRange(newItemsRange);
+    }
+  }, [computeVisibleItemsRange, props.groupSizes, rangeFrom, rangeTo]);
 
   useEffect(() => {
     if (viewportElementRef.current) {

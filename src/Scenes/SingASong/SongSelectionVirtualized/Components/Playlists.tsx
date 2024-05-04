@@ -1,16 +1,17 @@
 import styled from '@emotion/styled';
 import { Button } from 'Elements/Button';
 import { focusedStatic, typography } from 'Elements/cssMixins';
+import { PlaylistEntry } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/usePlaylists';
+import { useOnClickOutside } from 'hooks/onClickOutside';
 import useKeyboard from 'hooks/useKeyboard';
 import useKeyboardNav from 'hooks/useKeyboardNav';
-import { Dispatch, SetStateAction, useEffect } from 'react';
-import { PlaylistEntry } from 'Scenes/SingASong/SongSelectionVirtualized/Hooks/usePlaylists';
+import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 
 interface Props {
   selectedPlaylist: string | null;
   setSelectedPlaylist: Dispatch<SetStateAction<string | null>>;
   playlists: PlaylistEntry[];
-  closePlaylist: (leavingKey: 'left' | 'right') => void;
+  closePlaylist: (leavingKey?: 'left' | 'right') => void;
   active: boolean;
 }
 
@@ -24,6 +25,10 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
     },
   });
 
+  const ref = useRef(null);
+  useOnClickOutside(ref, () => {
+    closePlaylist();
+  });
   useKeyboard(
     {
       left: () => closePlaylist('left'),
@@ -53,7 +58,7 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
   }, [focused, playlists]);
 
   return (
-    <Container data-test="song-list-playlists" active={active}>
+    <Container data-test="song-list-playlists" active={active} ref={ref}>
       {playlists.map(({ Wrapper, ...playlist }) => {
         const child = (
           <Playlist

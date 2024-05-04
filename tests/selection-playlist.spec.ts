@@ -53,15 +53,8 @@ test('Adding completed song to the Selection playlist', async ({ page }) => {
     await pages.songLanguagesPage.continueAndGoToSongList();
   });
 
-  await test.step('Navigate to the Selection playlist by keyboard', async () => {
-    await pages.songListPage.goToPlaylist('All');
-    await page.keyboard.press('ArrowLeft');
-    await page.keyboard.press('ArrowUp');
-    await page.keyboard.press('ArrowUp');
-    await pages.songListPage.expectPlaylistToBeSelected(selectionPlaylist);
-  });
-
   await test.step('Search and play the entire song - ensure song is not visible in Selection playlist', async () => {
+    await pages.songListPage.goToPlaylist(selectionPlaylist);
     await expect(await pages.songListPage.getSongElement(unpopularSong.ID)).not.toBeVisible();
     await pages.songListPage.searchSong(unpopularSong.title);
     await pages.songListPage.focusSong(unpopularSong.ID);

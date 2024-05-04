@@ -56,7 +56,7 @@ function PlayerScoreView({
           color={useColors ? styles.colors.players[playerNumber].text : ``}
           win={revealHighScore && playerScore === highestScore}
           data-test={`player-${playerNumber}-score`}
-          data-score={playerScore}>
+          data-score={Math.floor(playerScore)}>
           <ScoreTextPlayer
             color={useColors ? styles.colors.players[playerNumber].text : ``}
             data-test={`player-${playerNumber}-name`}

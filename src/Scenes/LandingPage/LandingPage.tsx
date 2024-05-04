@@ -5,6 +5,7 @@ import Logo from 'Elements/Logo';
 import { DesktopOnly, MobileOnly } from 'Elements/RWD';
 import SmoothLink from 'Elements/SmoothLink';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'Elements/cssMixins';
+import styles from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
 import LayoutGame from 'Scenes/LayoutGame';
 import { MicSetupPreferenceSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
 import GithubRibbon from 'Scenes/Welcome/GithubRibbon';
@@ -246,7 +247,7 @@ const Container = styled.div`
 
   strong,
   a {
-    text-shadow: 0 0 5rem orange;
+    text-shadow: 0 0 5rem ${styles.colors.text.active};
   }
 `;
 
