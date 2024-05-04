@@ -21,9 +21,9 @@ test.beforeEach(async ({ page, context, browser }) => {
 test.use({ serviceWorkers: 'block' });
 test.use(devices['Galaxy S8 landscape']);
 
-test('Mobile phone mode should be dismissible', async ({ page }) => {
+test('Mobile phone mode should be dismissible', async ({ page, browserName }) => {
+  test.fixme(browserName === 'firefox', 'device doesnt exist on FF');
   await page.goto('/?e2e-test');
-  await page.pause();
   await pages.landingPage.enterTheGame();
   await page.getByTestId('dismiss-mobile-mode').click();
   await expect(page.getByTestId('multiple-mics')).toBeVisible(); // Multiple Mics is hidden when in Mobile Mode
