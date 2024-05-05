@@ -6,7 +6,7 @@
 #VIDEO:v=7lhJ0LZtv3w
 #GENRE:Ballad
 #LANGUAGE:Japanese
-#GAP:13750,006895153114
+#GAP:13850,006895153114
 #ALLKARAOKE_ID:shun-akiyama-baka-mitai
 #ALLKARAOKE_LASTUPDATE:2024-02-08T06:16:42.797Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?artista=Shun%20Akiyama

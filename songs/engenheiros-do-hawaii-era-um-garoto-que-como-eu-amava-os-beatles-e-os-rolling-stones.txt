@@ -5,7 +5,7 @@
 #YEAR:1990
 #VIDEO:v=tFsou8Szb3M
 #LANGUAGE:Portuguese
-#GAP:14662,988505747126
+#GAP:14762,988505747126
 #ALLKARAOKE_ID:engenheiros-do-hawaii-era-um-garoto-que-como-eu-amava-os-beatles-e-os-rolling-stones
 #ALLKARAOKE_LASTUPDATE:2024-01-07T07:53:41.396Z
 #ALLKARAOKE_ARTISTORIGIN:BR

@@ -7,7 +7,7 @@
 #VIDEO:v=Yc5OyXmHD0w
 #GENRE:Pop
 #LANGUAGE:English
-#GAP:6100,263929618768
+#GAP:6200,263929618768
 #EDITION:SingStar Chart Hits
 #ALLKARAOKE_ID:ar-rahman-the-pussycat-dolls-feat-nicole-scherzinger-jai-ho-you-are-my-destiny
 #ALLKARAOKE_LASTUPDATE:2024-01-07T06:25:25.596Z

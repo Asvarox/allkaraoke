@@ -5,7 +5,7 @@
 #YEAR:2009
 #VIDEO:v=1jre6_FBBc0
 #LANGUAGE:English
-#GAP:14533,90625
+#GAP:14633,90625
 #ALLKARAOKE_ID:kid-cudi-feat-mgmt-ratatat-pursuit-of-happiness-steve-aoki-remix
 #ALLKARAOKE_LASTUPDATE:2024-04-28T19:12:48.699Z
 #ALLKARAOKE_REALBPM:128

@@ -6,7 +6,7 @@
 #VIDEO:v=YTYh3rbXDlY
 #GENRE:Vocaloid
 #LANGUAGE:Japanese
-#GAP:666,6891481227331
+#GAP:766,6891481227331
 #ALLKARAOKE_ID:rin-kagamine-tokyo-teddy-bear
 #ALLKARAOKE_LASTUPDATE:2024-04-20T06:51:25.136Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei

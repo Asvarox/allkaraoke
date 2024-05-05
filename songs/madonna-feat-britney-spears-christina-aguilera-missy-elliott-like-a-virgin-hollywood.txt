@@ -6,7 +6,7 @@
 #VIDEO:v=b9gF3zbXQv0
 #GENRE:Pop
 #LANGUAGE:English
-#GAP:24320,53627760252
+#GAP:24420,53627760252
 #ALLKARAOKE_ID:madonna-feat-britney-spears-christina-aguilera-missy-elliott-like-a-virgin-hollywood
 #ALLKARAOKE_LASTUPDATE:2024-03-20T06:29:33.385Z
 #ALLKARAOKE_REALBPM:126
