@@ -7,7 +7,7 @@
 #VIDEO:v=PYpg4BypJoA
 #GENRE:Rock
 #LANGUAGE:Polish
-#GAP:15750
+#GAP:15850
 #EDITION:SingStar ’80s [PL]
 #ALLKARAOKE_ID:budka-suflera-za-ostatni-grosz
 #ALLKARAOKE_LASTUPDATE:2024-01-07T06:25:25.770Z

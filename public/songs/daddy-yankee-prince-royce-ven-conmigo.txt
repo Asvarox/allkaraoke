@@ -7,7 +7,7 @@
 #VIDEO:v=AYlulqyApjc
 #GENRE:Reggaeton
 #LANGUAGE:Spanish
-#GAP:873
+#GAP:973
 #ALLKARAOKE_ID:daddy-yankee-prince-royce-ven-conmigo
 #ALLKARAOKE_LASTUPDATE:2024-02-13T05:38:33.541Z
 #ALLKARAOKE_REALBPM:120

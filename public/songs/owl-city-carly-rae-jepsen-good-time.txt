@@ -7,7 +7,7 @@
 #VIDEO:v=H7HmzwI67ec
 #GENRE:Classical
 #LANGUAGE:English
-#GAP:288,0952380952382
+#GAP:388,0952380952382
 #ALLKARAOKE_ID:owl-city-carly-rae-jepsen-good-time
 #ALLKARAOKE_LASTUPDATE:2024-02-13T05:38:45.118Z
 #ALLKARAOKE_CREATORURL:https://usdb.eu/user/christophe

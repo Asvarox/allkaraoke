@@ -53,14 +53,14 @@ export interface Song {
   edition: string | undefined;
   language: string[];
   sourceUrl: string | undefined;
-  videoGap: number | undefined;
+  videoGap: seconds | undefined;
   artist: string;
   artistOrigin: string | undefined;
   title: string;
   video: string;
   previewStart: number | undefined;
   previewEnd: number | undefined;
-  gap: number;
+  gap: milliseconds;
   bpm: number;
   realBpm: number | undefined;
   bar: number;

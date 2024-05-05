@@ -32,6 +32,7 @@ const SONGS_FOLDER = './public/songs';
     console.log(`"${song.artist}" "${song.title}"`);
     const { tracks, ...songData } = song;
     try {
+      await fixGapForNewerSongs(songData);
       await setEurovisionEdition(songData);
       // await fillMissingRealBpm(songData, file);
       // await fillSongYear(songData);
@@ -53,6 +54,12 @@ const SONGS_FOLDER = './public/songs';
     });
   }
 })();
+
+async function fixGapForNewerSongs(songData: Omit<Song, 'tracks'>) {
+  if (songData.lastUpdate && new Date(songData.lastUpdate).getTime() > new Date('2024-01-01').getTime()) {
+    songData.gap = songData.gap + 100;
+  }
+}
 
 async function fixAccentCharacters(txt: string, language: string) {
   return fixDiacritics(txt, language.toLowerCase());

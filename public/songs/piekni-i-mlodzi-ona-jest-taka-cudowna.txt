@@ -7,7 +7,7 @@
 #VIDEO:v=cU1C7IzcLnw
 #GENRE:Disco
 #LANGUAGE:Polish
-#GAP:18750,23076923077
+#GAP:18850,23076923077
 #ALLKARAOKE_ID:piekni-i-mlodzi-ona-jest-taka-cudowna
 #ALLKARAOKE_LASTUPDATE:2024-03-12T20:42:56.924Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
