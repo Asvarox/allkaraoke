@@ -2657,12 +2657,14 @@
       "English"
     ],
     "bpm": 379.96,
-    "gap": 15258.05400568481,
+    "gap": 14758.05400568481,
     "year": "2007",
     "artistOrigin": "GB",
+    "lastUpdate": "2024-05-05T07:04:25.052Z",
     "edition": "[SC]-Songs",
-    "videoGap": 3,
+    "videoGap": 1,
     "realBpm": 192,
+    "volume": 0.5,
     "author": "IC",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=4314",
@@ -3512,10 +3514,10 @@
       "English"
     ],
     "bpm": 340.23,
-    "gap": 28775.980072304028,
+    "gap": 28875.980072304028,
     "year": "2013",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-12-28T19:33:06.380Z",
+    "lastUpdate": "2024-05-05T06:49:19.735Z",
     "genre": "Indie Rock",
     "realBpm": 85,
     "volume": 0.91,
@@ -10874,9 +10876,9 @@
       "Spanish"
     ],
     "bpm": 373.7,
-    "gap": 8487.521273748996,
+    "gap": 8687.521273748996,
     "year": "2017",
-    "lastUpdate": "2024-02-13T05:38:33.370Z",
+    "lastUpdate": "2024-05-05T07:02:20.838Z",
     "genre": "Latin",
     "realBpm": 105,
     "volume": 0.76,
@@ -20397,10 +20399,10 @@
       "English"
     ],
     "bpm": 239.84,
-    "gap": 1699.3328885923947,
+    "gap": 1899.3328885923947,
     "year": "2023",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-02-20T21:16:30.746Z",
+    "lastUpdate": "2024-05-05T06:46:49.958Z",
     "realBpm": 120,
     "volume": 0.73,
     "author": "asdFer",
@@ -21231,10 +21233,10 @@
       "English"
     ],
     "bpm": 306.85,
-    "gap": 4682.323610884797,
+    "gap": 4932.323610884797,
     "year": "1969",
     "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:33.024Z",
+    "lastUpdate": "2024-05-05T06:41:34.463Z",
     "genre": "Jazz",
     "realBpm": 151,
     "previewStart": 105,
@@ -24115,16 +24117,16 @@
       "English"
     ],
     "bpm": 256.34,
-    "gap": -92.19240071779677,
+    "gap": 191.87173285480213,
     "year": "2013",
     "artistOrigin": "IE",
-    "lastUpdate": "2024-02-08T06:16:42.374Z",
+    "lastUpdate": "2024-05-05T06:45:16.808Z",
     "realBpm": 129,
     "volume": 0.73,
     "author": "Knuddel",
     "tracks": [
       {
-        "start": 12
+        "start": 8
       }
     ],
     "tracksCount": 1,
@@ -30669,11 +30671,12 @@
       "English"
     ],
     "bpm": 224.06,
-    "gap": 33583.80469517093,
+    "gap": 16333.804695170933,
     "year": "2012",
     "artistOrigin": "US",
-    "lastUpdate": "2023-02-24T22:27:22.036Z",
+    "lastUpdate": "2024-05-05T06:51:14.750Z",
     "realBpm": 112,
+    "volume": 0.5,
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey",
     "tracks": [
       {
@@ -31917,10 +31920,10 @@
       "English"
     ],
     "bpm": 320.15,
-    "gap": 22186.086209589255,
+    "gap": 22836.086209589255,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2023-12-28T19:33:30.474Z",
+    "lastUpdate": "2024-05-05T16:53:49.082Z",
     "edition": "[SC]-Songs",
     "genre": "None",
     "realBpm": 80,
@@ -42491,10 +42494,10 @@
       "English"
     ],
     "bpm": 298.95,
-    "gap": 25066.48770697441,
+    "gap": 25366.48770697441,
     "year": "2012",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-02-08T06:16:42.452Z",
+    "lastUpdate": "2024-05-05T06:52:15.466Z",
     "realBpm": 75,
     "volume": 0.73,
     "author": "snake84, Silverbeam",
@@ -45447,10 +45450,10 @@
       "Japanese"
     ],
     "bpm": 380.04,
-    "gap": 20162.2617619198,
+    "gap": 20412.2617619198,
     "year": "2016",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-03-20T06:29:33.674Z",
+    "lastUpdate": "2024-05-05T07:00:59.517Z",
     "genre": "JRock",
     "realBpm": 190,
     "volume": 0.8,
@@ -53577,10 +53580,10 @@
       "English"
     ],
     "bpm": 222.5,
-    "gap": 62028.76404494382,
+    "gap": 62328.76404494382,
     "year": "1985",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-02-08T06:16:42.851Z",
+    "lastUpdate": "2024-05-05T16:54:52.774Z",
     "genre": "Pop",
     "realBpm": 112,
     "volume": 0.7,
@@ -55057,19 +55060,19 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 85,
+    "gap": 176.66666666666674,
     "year": "2017",
-    "lastUpdate": "2024-04-04T19:51:50.084Z",
+    "lastUpdate": "2024-05-05T06:48:15.925Z",
     "genre": "Soundtrack",
     "realBpm": 125,
     "volume": 0.79,
     "author": "Baklap4",
     "tracks": [
       {
-        "start": 15
+        "start": 14
       },
       {
-        "start": 1767
+        "start": 1766
       }
     ],
     "tracksCount": 2,
