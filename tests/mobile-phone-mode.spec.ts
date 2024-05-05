@@ -19,7 +19,8 @@ test.beforeEach(async ({ page, context, browser }) => {
 // Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
 // Not disabling it globally so in case SW breaks the app it is caught by other tests
 test.use({ serviceWorkers: 'block' });
-test.use({ viewport: { width: 740, height: 360 } }); // Samsung S8+
+// not using devices[] as it doesn't work with firefox
+test.use({ viewport: { width: 740, height: 360 }, hasTouch: true, userAgent: 'android mobile' }); // Samsung S8+
 
 test('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
