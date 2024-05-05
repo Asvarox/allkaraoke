@@ -1,33 +1,10 @@
-const API_URL = 'https://eu.posthog.com';
-const PROJECT_ID = '281';
+import { requestPostHog } from './utils.cjs';
 
-/**
- * @param {string} url
- * @param {RequestInit} [options]
- * @returns {Promise<any>}
- */
-const makeRequest = async (url, options = {}) => {
-  const response = await fetch(`${API_URL}${url}`, {
-    ...options,
-    headers: {
-      'Content-Type': 'application/json',
-      ...options.headers,
-      Authorization: `Bearer ${process.env.VITE_APP_POSTHOG_KEY}`,
-    },
-  });
+/** @typedef {Array<[string, number]>} Response ["event", "count"] */
 
-  if (!response.ok) {
-    throw new Error(`Request failed with status ${response.status}`);
-  }
-
-  return response.json();
-};
-
-// ["event", "count"]
-/** @typedef {Array<[string, number]>} Response */
 (async () => {
   /** @type {Response} */
-  const response = await makeRequest(`/api/projects/${PROJECT_ID}/query`, {
+  const response = await requestPostHog(`query`, {
     method: 'POST',
     body: JSON.stringify({
       query: {

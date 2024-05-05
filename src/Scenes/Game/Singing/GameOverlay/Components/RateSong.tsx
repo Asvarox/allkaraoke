@@ -42,7 +42,7 @@ export default function RateSong({ register, onExit }: Props) {
         </Checkbox>
         <Checkbox {...register('button-wrong-volume', () => setVolumeWrong((current) => !current))} size={'small'}>
           <Check>{volumeWrong ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
-          Volume is too high/low
+          <span>Too loud/quiet</span>
         </Checkbox>
         <hr />
         <MenuButton {...register('button-song-ok', handleRate, undefined, true)} ref={menuRef}>
