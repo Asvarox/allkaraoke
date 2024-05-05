@@ -1,4 +1,4 @@
-import { devices, expect, test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
 import navigateWithKeyboard from './steps/navigateWithKeyboard';
 import {
@@ -19,11 +19,10 @@ test.beforeEach(async ({ page, context, browser }) => {
 // Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
 // Not disabling it globally so in case SW breaks the app it is caught by other tests
 test.use({ serviceWorkers: 'block' });
-test.use(devices['Galaxy S8 landscape']);
+test.use({ viewport: { width: 740, height: 360 } }); // Samsung S8+
 
 test('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
-  await page.pause();
   await pages.landingPage.enterTheGame();
   await page.getByTestId('dismiss-mobile-mode').click();
   await expect(page.getByTestId('multiple-mics')).toBeVisible(); // Multiple Mics is hidden when in Mobile Mode
