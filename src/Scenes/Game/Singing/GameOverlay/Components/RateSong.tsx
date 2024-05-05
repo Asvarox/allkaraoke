@@ -4,6 +4,7 @@ import { MenuButton, MenuContainer } from 'Elements/Menu';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import posthog from 'posthog-js';
 import { useEffect, useRef, useState } from 'react';
+import GameState from 'Scenes/Game/Singing/GameState/GameState';
 
 interface Props {
   onExit: () => void;
@@ -20,11 +21,12 @@ export default function RateSong({ register, onExit }: Props) {
   }, [menuRef]);
 
   const handleRate = () => {
+    const songId = GameState.getSong()?.id;
     if (lyricsNotInSync) {
-      posthog.capture('rate-song', { type: 'not-in-sync' });
+      posthog.capture('rate-song', { type: 'not-in-sync', songId });
     }
     if (volumeWrong) {
-      posthog.capture('rate-song', { type: 'wrong-volume' });
+      posthog.capture('rate-song', { type: 'wrong-volume', songId });
     }
     onExit();
   };

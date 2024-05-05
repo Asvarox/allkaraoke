@@ -68,11 +68,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: P
               />
             </HeadstartContainer>
             {section?.notes.map((note) => {
-              const fill = effectsEnabled
-                ? Math.max(0, Math.min(2, (currentBeat - note.start) / note.length))
-                : currentBeat >= note.start
-                  ? 1
-                  : 0;
+              const fill = Math.max(0, Math.min(2, (currentBeat - note.start) / note.length));
               return (
                 <LyricContainer type={note.type} key={note.start}>
                   <LyricActiveContainer>
