@@ -1,0 +1,38 @@
+name: 'Import songs'
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_id:
+        description: 'PostHog user ID'
+        required: true
+        default: ''
+      date_from:
+        description: 'The date from which to import songs. `NOW - 24H` by default'
+        required: false
+        default: ''
+      date_to:
+        description: 'The date to which to import songs'
+        required: false
+        default: ''
+
+jobs:
+  run_script:
+      permissions:
+        contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
+      runs-on: ubuntu-latest
+      env:
+        VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+      steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+      - name: Get songs
+        run: pnpm ts-node scripts/cicd/githubActionImportSongs.ts "${{ github.event.inputs.user_id }}" "${{ github.event.inputs.date_from }}" "${{ github.event.inputs.date_to }}"
+      - name: Auto commit updated snapshots
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
+          commit_options: '--no-verify'
