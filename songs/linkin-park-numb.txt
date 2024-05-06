@@ -6,14 +6,14 @@
 #VIDEO:v=kXYiU_JCYtU
 #GENRE:Nu Metal
 #LANGUAGE:English
-#GAP:21227,737392094503
+#GAP:21777,737392094503
 #ALLKARAOKE_ID:linkin-park-numb
+#ALLKARAOKE_LASTUPDATE:2024-05-06T18:22:24.669Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=klafhor
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Numb
-- -14 1
-- 1
+#ALLKARAOKE_VOLUME:0,5
 : 15 3 13 Tired 
 : 19 3 13 of 
 : 23 3 13 being
@@ -24,7 +24,7 @@
 : 43 3 13 me 
 : 47 3 11 to 
 : 51 7 9 be
-- 59
+- 58
 : 71 7 13 Feeling 
 : 79 3 11 so 
 : 83 6 9 faith
@@ -36,7 +36,7 @@
 : 111 3 11 the 
 : 115 7 9 sur
 : 122 10 11 face
-- 133
+- 132
 : 139 3 6 I 
 : 143 3 13 don't 
 : 147 3 13 know 
@@ -48,7 +48,7 @@
 : 170 4 13 ting 
 : 175 3 11 of 
 : 179 6 9 me
-- 186
+- 185
 : 195 3 6 Put 
 : 199 7 13 under 
 : 207 3 11 the 
@@ -61,7 +61,7 @@
 : 243 7 9 in 
 : 251 6 11 your 
 : 258 6 11 shoes
-- 279 304
+- 264 304
 - 304
 : 319 5 13 Every 
 : 326 4 18 step 
@@ -77,7 +77,7 @@
 : 370 8 13 take 
 : 379 7 14 to 
 * 387 36 16 you
-- 425 440
+- 423 440
 - 440
 : 455 10 18 I've 
 : 467 3 18 be
@@ -138,7 +138,7 @@
 : 746 3 16 the
 : 749 4 16 ring 
 : 755 8 16 me
-- 764
+- 763
 : 775 3 18 Hol
 : 778 4 16 ding 
 : 783 3 16 too 
@@ -163,7 +163,7 @@
 : 875 3 13 I 
 : 879 3 11 would 
 : 883 9 9 be
-- 893
+- 892
 : 899 3 6 Has 
 : 903 7 13 fallen 
 : 911 3 11 a
@@ -174,7 +174,7 @@
 : 947 7 9 front 
 : 955 7 11 of 
 * 963 46 11 you
-- 1010
+- 1009
 : 1023 7 13 Every 
 : 1031 3 18 step 
 : 1035 3 18 that 
@@ -189,7 +189,7 @@
 : 1074 8 13 take 
 : 1083 7 14 to 
 : 1091 44 16 you
-- 1136
+- 1135
 : 1147 3 13 And 
 : 1151 3 13 e
 : 1154 4 13 very 
@@ -254,7 +254,7 @@
 : 1463 7 18 less 
 : 1471 7 16 like 
 : 1479 12 18 you
-- 1492
+- 1491
 : 1499 3 18 And 
 : 1503 3 21 I 
 * 1507 19 20 know
@@ -266,7 +266,7 @@
 : 1575 15 21 fai
 : 1590 12 20 ling 
 : 1604 16 18 too
-- 1621
+- 1620
 : 1627 3 18 But 
 : 1631 3 21 I 
 : 1635 24 20 know
@@ -286,7 +286,7 @@
 : 1720 4 18 ted 
 : 1726 4 21 in 
 * 1731 29 20 you
-- 1761
+- 1760
 : 1767 11 18 I've 
 : 1779 3 18 be
 : 1782 8 18 come 
@@ -348,7 +348,7 @@
 : 2071 7 18 feel 
 : 2079 7 20 you 
 : 2087 12 16 there]
-- 2114 2136
+- 2099 2136
 - 2136
 * 2151 9 18 [I've 
 : 2163 3 18 be
