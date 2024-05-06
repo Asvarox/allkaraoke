@@ -35,3 +35,4 @@ jobs:
         with:
           commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
           commit_options: '--no-verify'
+          token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
