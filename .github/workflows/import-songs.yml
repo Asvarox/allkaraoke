@@ -25,6 +25,8 @@ jobs:
         VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
       steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Get songs
@@ -35,4 +37,3 @@ jobs:
         with:
           commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
           commit_options: '--no-verify'
-          token: ${{ secrets.GH_PAT_REPOS_WORKFLOW }}
