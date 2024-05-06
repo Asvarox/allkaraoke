@@ -60374,10 +60374,10 @@
       "Japanese"
     ],
     "bpm": 332.04,
-    "gap": 127.72135887242507,
+    "gap": 137.37079869895194,
     "year": "2023",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-03-20T06:29:33.909Z",
+    "lastUpdate": "2024-05-06T03:51:41.054Z",
     "genre": "Anime",
     "realBpm": 166,
     "previewStart": 55,
@@ -60386,7 +60386,7 @@
     "author": "Beneblade",
     "tracks": [
       {
-        "start": 13
+        "start": 15
       }
     ],
     "tracksCount": 1,
