@@ -25,9 +25,8 @@ jobs:
         VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
       steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
       - name: Get songs
         run: pnpm ts-node scripts/cicd/githubActionImportSongs.ts "${{ github.event.inputs.user_id }}" "${{ github.event.inputs.date_from }}" "${{ github.event.inputs.date_to }}"
       - name: Auto commit updated snapshots
