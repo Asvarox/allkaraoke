@@ -120,10 +120,10 @@ export class SongListPagePO {
     return (await this.getSongElement(songID)).getByTestId('multitrack-indicator');
   }
 
-  public async expectSongToBeMarkedWithLanguageFlagIcon(songID: string, language: string) {
+  public async expectSongToBeMarkedWithLanguageFlagIcon(songID: string, isoCode: string) {
     await this.ensureSongIsScrolledTo(songID);
     const song = await this.getSongElement(songID, false);
-    await expect(song.locator('img')).toHaveAttribute('language', language);
+    await expect(song.locator('img')).toHaveAttribute('data-isocode', isoCode);
   }
 
   public async expectSongToBeMarkedAsPlayedToday(songID: string) {

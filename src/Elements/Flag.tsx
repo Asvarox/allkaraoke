@@ -32,6 +32,7 @@ export const Flag = (props: Props & Omit<ComponentProps<typeof Img>, 'src' | 'al
 
   return (
     <Img
+      data-isocode={isoCode}
       src={customFlag ?? `https://flagcdn.com/${isoCodeOverride ?? isoCode}.svg`}
       alt={isoCode}
       {...props}

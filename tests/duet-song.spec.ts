@@ -13,6 +13,7 @@ const player1 = 0;
 const player2 = 1;
 const player1Name = 'all-Karaoke';
 const polishLang = 'Polish';
+const polishIsoCode = 'pl';
 const duetPolSong = 'e2e-multitrack-polish-1994';
 const polArtist = '2 E2ETest';
 const polSongTitle = 'Multitrack';
@@ -39,7 +40,7 @@ test('Sing a song intended for a duet as a single player', async ({ page, browse
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
     await pages.songListPage.focusSong(duetPolSong);
     await expect(await pages.songListPage.getDuetSongIcon(duetPolSong)).toBeVisible();
-    await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetPolSong, polishLang);
+    await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetPolSong, polishIsoCode);
     await pages.songListPage.openPreviewForSong(duetPolSong);
   });
 
@@ -85,6 +86,7 @@ const duetSpanSong = 'e2e-pass-test-spanish-1994';
 const artist = 'E2E-el-Dueto';
 const songTitle = 'Pass Test';
 const spanishLang = 'Spanish';
+const spanishIsoCode = 'es';
 const gameMode = 'Pass The Mic';
 
 test('Sing a duet song in pass-the-mic mode as a single connected player', async ({ page, browserName }) => {
@@ -111,7 +113,7 @@ test('Sing a duet song in pass-the-mic mode as a single connected player', async
   });
 
   await test.step('Check visibility of song language flag and open song', async () => {
-    await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetSpanSong, spanishLang);
+    await pages.songListPage.expectSongToBeMarkedWithLanguageFlagIcon(duetSpanSong, spanishIsoCode);
     await pages.songListPage.focusSong(duetSpanSong);
     await pages.songListPage.openPreviewForSong(duetSpanSong);
   });
