@@ -1646,10 +1646,10 @@
       "English"
     ],
     "bpm": 360.4,
-    "gap": 691.1098779134295,
+    "gap": 841.1098779134295,
     "year": "2004",
     "artistOrigin": "SN",
-    "lastUpdate": "2024-02-20T21:16:29.955Z",
+    "lastUpdate": "2024-05-07T06:06:36.066Z",
     "genre": "R&B",
     "realBpm": 90,
     "volume": 0.93,
@@ -5164,9 +5164,9 @@
       "Spanish"
     ],
     "bpm": 352.05,
-    "gap": 20312.02556455049,
+    "gap": 20612.02556455049,
     "year": "2005",
-    "lastUpdate": "2024-02-13T06:15:26.252Z",
+    "lastUpdate": "2024-05-07T08:58:45.095Z",
     "genre": "Reggaeton",
     "realBpm": 176,
     "volume": 0.74,
@@ -6870,10 +6870,10 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 4640,
+    "gap": 4540,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2023-07-22T21:15:10.379Z",
+    "lastUpdate": "2024-05-07T06:05:12.125Z",
     "edition": "[SC]-Songs",
     "genre": "R&B",
     "realBpm": 90,
@@ -8202,10 +8202,10 @@
       "English"
     ],
     "bpm": 480,
-    "gap": -321.5,
+    "gap": 122.25,
     "year": "1996",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-03-20T06:29:32.884Z",
+    "lastUpdate": "2024-05-07T09:00:27.809Z",
     "genre": "Rock / alternative pop-rock",
     "realBpm": 93,
     "volume": 0.69,
@@ -8214,7 +8214,7 @@
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=B%C3%B4a&cancion=Duvet%20(TV)",
     "tracks": [
       {
-        "start": 22
+        "start": 11
       }
     ],
     "tracksCount": 1,
@@ -10220,10 +10220,10 @@
       "English"
     ],
     "bpm": 350.12,
-    "gap": 7174.623557637382,
+    "gap": 7274.623557637382,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-26T17:05:26.676Z",
+    "lastUpdate": "2024-05-07T06:03:58.923Z",
     "genre": "Pop",
     "realBpm": 175,
     "volume": 0.81,
@@ -17388,9 +17388,9 @@
       "English"
     ],
     "bpm": 208,
-    "gap": 2280.3846153846152,
+    "gap": 2480.3846153846152,
     "year": "2016",
-    "lastUpdate": "2024-02-20T21:16:30.666Z",
+    "lastUpdate": "2024-05-07T06:04:33.606Z",
     "genre": "Pop",
     "realBpm": 104,
     "volume": 0.63,
@@ -19700,9 +19700,10 @@
       "English"
     ],
     "bpm": 379.84,
-    "gap": 16910,
+    "gap": 16272.742207245155,
     "year": "2003",
     "artistOrigin": "US",
+    "lastUpdate": "2024-05-07T06:08:37.170Z",
     "edition": "SingStar PopHit",
     "genre": "Pop",
     "realBpm": 96,
@@ -19712,7 +19713,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Evanescence&cancion=Bring%20Me%20to%20Life",
     "tracks": [
       {
-        "start": 0
+        "start": 25
       }
     ],
     "tracksCount": 1,
@@ -27933,10 +27934,10 @@
       "English"
     ],
     "bpm": 239.28,
-    "gap": 6736.990972918757,
+    "gap": 6786.990972918757,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2024-04-28T19:12:48.694Z",
+    "lastUpdate": "2024-05-07T08:57:11.144Z",
     "genre": "R&B",
     "realBpm": 120,
     "volume": 0.76,
@@ -31031,9 +31032,9 @@
       "English"
     ],
     "bpm": 147,
-    "gap": 1709.591836734694,
+    "gap": 1959.591836734694,
     "year": "2023",
-    "lastUpdate": "2023-12-22T16:33:52.778Z",
+    "lastUpdate": "2024-05-07T09:01:59.925Z",
     "realBpm": 147,
     "volume": 0.72,
     "author": "smartcore",
@@ -35566,11 +35567,11 @@
       "English"
     ],
     "bpm": 220.04,
-    "gap": 38327.45864388293,
+    "gap": 38427.45864388293,
     "year": "2012",
-    "lastUpdate": "2023-11-07T21:41:36.470Z",
+    "lastUpdate": "2024-05-07T07:27:53.935Z",
     "genre": "Pop",
-    "videoGap": 38,
+    "videoGap": 24,
     "realBpm": 110,
     "volume": 1,
     "author": "Coppo",
@@ -38657,9 +38658,9 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 1680,
+    "gap": 1780,
     "year": "2013",
-    "lastUpdate": "2024-01-19T05:46:35.062Z",
+    "lastUpdate": "2024-05-07T08:58:24.235Z",
     "genre": "Pony",
     "realBpm": 111,
     "volume": 1,
@@ -40975,10 +40976,10 @@
       "English"
     ],
     "bpm": 276.26,
-    "gap": 20712.65981321943,
+    "gap": 20762.65981321943,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2024-04-20T06:51:25.129Z",
+    "lastUpdate": "2024-05-07T09:02:17.517Z",
     "genre": "Pop",
     "realBpm": 138,
     "volume": 0.75,
@@ -42049,10 +42050,10 @@
       "English"
     ],
     "bpm": 328,
-    "gap": 15373.90243902439,
+    "gap": 15423.90243902439,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.314Z",
+    "lastUpdate": "2024-05-07T10:04:33.071Z",
     "genre": "Pop",
     "realBpm": 164,
     "volume": 0.75,
@@ -48546,10 +48547,10 @@
       "English"
     ],
     "bpm": 252.24,
-    "gap": 15259.058039961941,
+    "gap": 15409.058039961941,
     "year": "1997",
     "artistOrigin": "AU",
-    "lastUpdate": "2024-02-13T05:38:45.697Z",
+    "lastUpdate": "2024-05-07T10:05:15.390Z",
     "genre": "Pop Rock",
     "realBpm": 166,
     "volume": 0.78,
