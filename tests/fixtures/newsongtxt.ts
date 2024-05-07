@@ -7,6 +7,7 @@ export const txtfile = `
 #VOLUME:0.25
 #YEAR:1992
 #VIDEOGAP:30
+#ALLKARAOKE_ARTISTORIGIN:US
 #VIDEO:Sia - Santa's Coming For Us.mp4
 #BPM:100
 #GAP:3000

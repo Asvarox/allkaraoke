@@ -53,8 +53,8 @@ export default function ConvertView({ song }: Props) {
     previewEnd: song?.previewEnd ?? undefined,
     genre: song?.genre,
     edition: song?.edition,
+    artistOrigin: song?.artistOrigin,
   });
-  console.log(song?.language);
 
   const [editedSong, setEditedSong] = useState<Song | undefined>(song);
 
@@ -77,7 +77,6 @@ export default function ConvertView({ song }: Props) {
         authorAndVid.authorUrl,
         basicData.sourceUrl,
       );
-      console.log(result.language);
 
       return result;
     } catch (e: any) {
@@ -125,7 +124,18 @@ export default function ConvertView({ song }: Props) {
         }));
       }
       (
-        ['year', 'language', 'realBpm', 'genre', 'artist', 'title', 'volume', 'previewStart', 'previewEnd'] as const
+        [
+          'year',
+          'language',
+          'realBpm',
+          'genre',
+          'artist',
+          'title',
+          'volume',
+          'previewStart',
+          'previewEnd',
+          'artistOrigin',
+        ] as const
       ).forEach((property) => {
         if (!!conversionResult[property] && isEmptyValue(metadataEntity[property])) {
           setMetadataEntity((current) => ({

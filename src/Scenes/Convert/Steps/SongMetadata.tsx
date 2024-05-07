@@ -1,8 +1,20 @@
-import { Autocomplete, Grid, TextField } from '@mui/material';
+import styled from '@emotion/styled';
+import {
+  Autocomplete,
+  FormControl,
+  FormHelperText,
+  Grid,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from '@mui/material';
+import { Flag } from 'Elements/Flag';
 import { inputAction } from 'Scenes/Convert/Elements';
 import PreviewAndVolumeAdjustment from 'Scenes/Convert/Steps/PreviewAndVolumeAdjustment';
 import useSongIndex from 'Songs/hooks/useSongIndex';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import { countryMap } from 'utils/countryList';
 
 export interface SongMetadataEntity {
   artist: string;
@@ -10,6 +22,7 @@ export interface SongMetadataEntity {
   year: string;
   realBpm: string;
   language: string[];
+  artistOrigin?: string;
   volume: number;
   previewStart: number | undefined;
   previewEnd: number | undefined;
@@ -26,8 +39,39 @@ interface Props {
   videoGap?: number;
 }
 
+const useDefaultArtistOrigin = (artist: string) => {
+  const songList = useSongIndex(true);
+
+  return useMemo(() => {
+    const artistOrigin = songList.data
+      .filter((song) => song.artist === artist)
+      .map((song) => song.artistOrigin)
+      .filter(Boolean)
+      .reduce(
+        // find the most common origin for the artist
+        (acc, origin) => {
+          if (acc[origin!]) {
+            acc[origin!]++;
+          } else {
+            acc[origin!] = 1;
+          }
+          return acc;
+        },
+        {} as Record<string, number>,
+      );
+    return Object.entries(artistOrigin).sort((a, b) => b[1] - a[1])?.[0]?.[0];
+  }, [artist, songList.data]);
+};
+
 export default function SongMetadata(props: Props) {
   const songList = useSongIndex(true);
+  const defaultArtistOrigin = useDefaultArtistOrigin(props.songArtist ?? '');
+
+  useEffect(() => {
+    if (props.data.artistOrigin === undefined) {
+      props.onChange({ ...props.data, artistOrigin: defaultArtistOrigin });
+    }
+  }, [defaultArtistOrigin, props.data]);
 
   const definedLanguages = useMemo(
     () => [
@@ -40,6 +84,10 @@ export default function SongMetadata(props: Props) {
     ],
     [songList.data],
   );
+
+  // todo find artist origin based on their other songs
+  const definedArtistOrigins = countryMap;
+
   const definedGenres = useMemo(
     () => [
       ...new Set(
@@ -146,7 +194,7 @@ export default function SongMetadata(props: Props) {
           )}
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={3}>
         <Autocomplete
           onKeyDown={(event) => {
             if (event.key === 'Enter') {
@@ -175,6 +223,31 @@ export default function SongMetadata(props: Props) {
             />
           )}
         />
+      </Grid>
+      <Grid item xs={3}>
+        <FormControl fullWidth>
+          <InputLabel id="song-origin-select-label" size="small">
+            Song/artist origin (optional)
+          </InputLabel>
+          <Select
+            data-test="artist-origin"
+            size="small"
+            labelId="song-origin-select-label"
+            id="song-origin-select"
+            value={props.data.artistOrigin ?? ''}
+            label="Song/artist origin (optional)"
+            onChange={(e) => props.onChange({ ...props.data, artistOrigin: e.target.value })}>
+            <MenuItem key={'none'} value="">
+              None
+            </MenuItem>
+            {Object.entries(definedArtistOrigins).map(([name, code]) => (
+              <MenuItem key={code} value={code}>
+                <CountryFlag isocode={code} /> {name}
+              </MenuItem>
+            ))}
+          </Select>
+          <FormHelperText>Used to show the flag on the list</FormHelperText>
+        </FormControl>
       </Grid>
       <Grid item xs={6}>
         <TextField
@@ -220,3 +293,8 @@ export default function SongMetadata(props: Props) {
     </Grid>
   );
 }
+
+const CountryFlag = styled(Flag)`
+  width: 1em;
+  margin-right: 0.5em;
+`;

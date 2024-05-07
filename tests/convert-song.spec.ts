@@ -15,6 +15,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 const VIDEO_ID = '8YKAHgwLEMg';
 const FINAL_LANG = ['English', 'Polish'];
+const FINAL_ARTIST_ORIGIN = 'PL';
 const FINAL_YEAR = '2000';
 const FINAL_SONG_BPM = '100';
 const FINAL_SOURCE_URL = 'https://example.com/source-url';
@@ -226,6 +227,10 @@ test('Convert song', async ({ page }) => {
     await pages.songEditMetadataPage.enterSongLanguage(FINAL_LANG[1]);
     await page.keyboard.press('Enter');
 
+    await expect(pages.songEditMetadataPage.artistOriginInput).toHaveValue('US');
+    await pages.songEditMetadataPage.enterArtistOrigin(FINAL_ARTIST_ORIGIN);
+    await expect(pages.songEditMetadataPage.artistOriginInput).toHaveValue(FINAL_ARTIST_ORIGIN);
+
     await expect(pages.songEditMetadataPage.releaseYearInput).toHaveValue(autoGenYear);
     await pages.songEditMetadataPage.enterReleaseYear(FINAL_YEAR);
 
@@ -283,6 +288,7 @@ test('Convert song', async ({ page }) => {
   expect(convertedSong.language).toContain(FINAL_LANG[0]);
   expect(convertedSong.language).toContain(FINAL_LANG[1]);
   expect(convertedSong.year).toEqual(FINAL_YEAR);
+  expect(convertedSong.artistOrigin).toEqual(FINAL_ARTIST_ORIGIN);
   expect(convertedSong.realBpm).toEqual(+FINAL_SONG_BPM);
   expect(convertedSong.videoGap).toEqual(+FINAL_VIDEO_GAP);
   expect(convertedSong.gap).toEqual(+FINAL_LYRICS_GAP);

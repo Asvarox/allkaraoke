@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class SongEditMetadataPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get pageContainer() {
     return this.page.getByTestId('song-metadata');
@@ -49,6 +53,19 @@ export class SongEditMetadataPagePO {
 
   public get songLanguageElement() {
     return this.page.getByTestId('song-language');
+  }
+
+  public get artistOriginElement() {
+    return this.page.getByTestId('artist-origin');
+  }
+
+  public get artistOriginInput() {
+    return this.artistOriginElement.locator('.MuiSelect-nativeInput');
+  }
+
+  public async enterArtistOrigin(countryIsoCode: string) {
+    await this.artistOriginElement.click();
+    await this.page.locator(`[data-value="${countryIsoCode}"]`).click();
   }
 
   public get songLanguageInput() {
