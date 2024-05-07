@@ -3007,10 +3007,10 @@
       "English"
     ],
     "bpm": 219.62,
-    "gap": 5945.503141790365,
+    "gap": 6045.503141790365,
     "year": "1963",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-30T16:28:13.417Z",
+    "lastUpdate": "2024-05-07T05:11:11.776Z",
     "edition": "Christmas",
     "genre": "Christmas",
     "realBpm": 101,
@@ -6233,10 +6233,10 @@
       "English"
     ],
     "bpm": 254,
-    "gap": 15766.062992125984,
+    "gap": 15966.062992125984,
     "year": "2013",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-02-08T06:16:42.289Z",
+    "lastUpdate": "2024-05-07T04:50:39.807Z",
     "genre": "Pop",
     "realBpm": 127,
     "volume": 0.79,
@@ -16334,23 +16334,22 @@
       "English"
     ],
     "bpm": 243.6,
-    "gap": 7331.660098522168,
+    "gap": 7173.778325123153,
     "year": "1997",
-    "lastUpdate": "2023-12-28T19:33:19.843Z",
+    "lastUpdate": "2024-05-07T05:09:36.264Z",
     "edition": "[DUET]-Songs",
     "genre": "Pop",
-    "videoGap": 5,
     "realBpm": 111,
     "volume": 0.99,
     "author": "Angeloffate",
     "tracks": [
       {
         "name": "Megara",
-        "start": 11
+        "start": 16
       },
       {
         "name": "Muses",
-        "start": 285
+        "start": 290
       }
     ],
     "tracksCount": 2,
@@ -18919,17 +18918,17 @@
       "Spanish"
     ],
     "bpm": 248.32,
-    "gap": -398.84149484536084,
+    "gap": 174,
     "year": "1998",
     "artistOrigin": "PR",
-    "lastUpdate": "2024-02-13T05:38:33.899Z",
+    "lastUpdate": "2024-05-07T05:05:49.268Z",
     "genre": "Merengue",
     "realBpm": 124,
     "volume": 0.69,
     "author": "varisha",
     "tracks": [
       {
-        "start": 7
+        "start": 0
       }
     ],
     "tracksCount": 1,
@@ -23317,9 +23316,9 @@
       "English"
     ],
     "bpm": 240,
-    "gap": 16612,
+    "gap": 16812,
     "year": "2006",
-    "lastUpdate": "2023-12-22T16:33:52.507Z",
+    "lastUpdate": "2024-05-07T05:07:45.308Z",
     "edition": "SingStar Pop 2",
     "genre": "Pop",
     "realBpm": 120,
@@ -24030,10 +24029,10 @@
       "English"
     ],
     "bpm": 251.86,
-    "gap": 15897.532756293178,
+    "gap": 16097.532756293178,
     "year": "2015",
     "artistOrigin": "AU",
-    "lastUpdate": "2023-12-22T16:33:52.638Z",
+    "lastUpdate": "2024-05-07T04:56:31.843Z",
     "genre": "Christian",
     "realBpm": 127,
     "previewStart": 208,
@@ -28360,10 +28359,10 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 2929.230769230769,
+    "gap": 3079.230769230769,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-26T17:05:27.695Z",
+    "lastUpdate": "2024-05-07T05:03:09.433Z",
     "genre": "House",
     "realBpm": 130,
     "volume": 0.81,
