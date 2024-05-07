@@ -1,13 +1,12 @@
 export default function setQueryParam(params: Record<string, string | null>) {
-  const url = new URLSearchParams(window.location.search);
+  const url = new URL(window.location.href);
 
   Object.entries(params).forEach(([param, value]) => {
     if (value === null) {
-      url.delete(param);
+      url.searchParams.delete(param);
     } else {
-      url.set(param, value);
+      url.searchParams.set(param, value);
     }
   });
-
-  return `?${url.toString()}`;
+  window.history.replaceState(null, '', url.toString());
 }

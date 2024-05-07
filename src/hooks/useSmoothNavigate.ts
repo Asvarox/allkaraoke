@@ -1,4 +1,3 @@
-import setQueryParam from 'utils/setQueryParam';
 import startViewTransition from 'utils/startViewTransition';
 import { useLocation } from 'wouter';
 
@@ -7,8 +6,21 @@ interface Options {
   smooth?: boolean;
 }
 
-export const buildUrl = (to: string, params?: Record<string, string | null>) =>
-  params ? `${to}${setQueryParam(params)}` : to;
+export const buildUrl = (to: string, params?: Record<string, string | null>) => {
+  if (params) {
+    const url = new URLSearchParams(window.location.search);
+
+    Object.entries(params).forEach(([param, value]) => {
+      if (value === null) {
+        url.delete(param);
+      } else {
+        url.set(param, value);
+      }
+    });
+    return `${to}?${url.toString()}`;
+  }
+  return to;
+};
 
 export default function useSmoothNavigate() {
   const [, baseNavigate] = useLocation();

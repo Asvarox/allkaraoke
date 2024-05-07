@@ -13,9 +13,12 @@ import useSongIndex from 'Songs/hooks/useSongIndex';
 import convertTxtToSong, { getVideoId } from 'Songs/utils/convertTxtToSong';
 import getSongId from 'Songs/utils/getSongId';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
+import useQueryParam from 'hooks/useQueryParam';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { Song } from 'interfaces';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { ValuesType } from 'utility-types';
+import setQueryParam from 'utils/setQueryParam';
 import { Link } from 'wouter';
 
 interface Props {
@@ -34,7 +37,14 @@ export default function ConvertView({ song }: Props) {
   useBackground(false);
   const navigate = useSmoothNavigate();
   useBackgroundMusic(false);
-  const [currentStep, setCurrentStep] = useState(0);
+  const initialStep = useQueryParam('step') as ValuesType<typeof steps> | null;
+  const [currentStep, setCurrentStep] = useState(Math.max(0, steps.indexOf(initialStep!)));
+
+  useEffect(() => {
+    if (steps[currentStep]) {
+      setQueryParam({ step: steps[currentStep] });
+    }
+  }, [currentStep]);
 
   const [basicData, setBasicData] = useState<BasicDataEntity>({ sourceUrl: song?.sourceUrl ?? '', txtInput: '' });
   const [authorAndVid, setAuthorAndVid] = useState<AuthorAndVidEntity>({
