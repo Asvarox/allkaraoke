@@ -24,6 +24,11 @@ const singletons = {
   UserMediaService,
   PlayersManager,
   SoundManager,
+  importSongs: async () => {
+    const importSongs = await import('Songs/utils/importSongsFromPostHog');
+
+    await importSongs.default();
+  },
 } as const;
 
 declare global {
