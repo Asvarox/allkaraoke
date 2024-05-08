@@ -1,0 +1,607 @@
+#ARTIST:NF
+#TITLE:RUNNING
+#CREATOR:princetongirl98
+#BPM:294,33
+#YEAR:2023
+#VIDEO:v=BzSzwqb-OEE
+#GENRE:Rap
+#LANGUAGE:English
+#GAP:12860,735908673938
+#ALLKARAOKE_ID:nf-running
+#ALLKARAOKE_LASTUPDATE:2024-05-08T16:34:48.238Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:146
+#ALLKARAOKE_VOLUME:0,74
+#MP3:NF - RUNNING.mp3
+#COVER:NF - RUNNING [CO].jpg
+#BACKGROUND:NF - RUNNING [BG].jpg
+* 20 6 5 I'm 
+* 80 8 5 tired
+- 88 124
+- 124
+: 144 2 5 Of 
+: 148 3 7 hol
+: 153 3 9 ding 
+: 157 10 9 on 
+: 169 2 9 to 
+: 174 8 7 you, 
+: 186 4 7 it's 
+: 192 12 7 time 
+: 217 1 4 to 
+: 220 2 9 let
+- 222 256
+- 256
+: 276 6 5 My 
+: 337 8 5 pride
+- 345 385
+- 385
+: 405 3 7 Go 
+: 410 2 7 and 
+: 414 10 9 learn 
+: 428 2 9 to 
+: 432 7 9 love 
+: 442 6 7 my
+: 451 8 7 self 
+: 475 1 5 a
+: 477 2 5 gain, 
+: 510 2 2 yeah
+- 512 514
+- 514
+: 534 1 2 I 
+: 537 1 0 don't 
+: 540 1 9 wan
+: 544 1 7 na 
+: 548 1 7 wait 
+: 551 2 7 a
+: 555 10 9 no
+: 567 7 5 ther 
+: 599 1 2 day,
+- 600
+: 601 2 0 I've 
+: 605 5 9 waited 
+: 612 3 9 long 
+: 617 2 7 e
+: 620 9 9 nough
+- 629
+: 634 6 5 I'm 
+: 664 1 2 rea
+: 667 2 0 dy 
+: 670 2 0 I 
+: 674 1 7 can 
+: 678 2 9 see 
+: 682 2 7 the 
+: 685 8 9 sun, 
+: 696 8 0 it's 
+: 710 13 0 coming 
+: 734 7 2 up
+- 741 768
+- 768
+: 788 1 5 There's 
+: 791 2 2 hap
+: 794 2 0 pi
+: 798 1 9 ness 
+: 802 2 7 on 
+: 806 2 9 the 
+: 810 2 7 ho
+: 814 9 9 ri
+: 826 7 7 zon
+- 833
+: 851 4 5 I'm 
+: 857 1 2 hope
+: 860 1 0 ful 
+: 863 1 2 I 
+: 867 1 7 can 
+: 871 2 9 see 
+: 874 2 7 the 
+* 879 6 9 li
+* 887 2 9 ~ght, 
+: 892 8 7 I've
+- 900 902
+- 902
+: 922 1 7 He
+: 925 2 4 si
+: 928 2 7 ta
+: 932 2 5 ted 
+: 936 1 4 all 
+: 939 3 5 my 
+: 945 4 7 li
+: 952 2 0 fe 
+: 956 5 0 but 
+: 966 6 7 I'm 
+: 974 7 9 a
+: 983 7 9 ll 
+: 992 7 5 done
+- 999 1015
+- 1015
+* 1035 1 2 I'm 
+* 1040 6 5 done 
+* 1048 1 4 run
+* 1052 6 7 ning 
+: 1109 1 5 from 
+: 1113 8 5 you
+- 1121 1156
+- 1156
+: 1176 2 9 Spent 
+: 1181 1 0 my 
+: 1185 6 0 whole 
+: 1193 7 0 life 
+: 1203 1 0 in 
+: 1206 1 9 your 
+: 1210 3 0 sha
+: 1215 3 0 do
+: 1220 12 2 ~w
+- 1232
+: 1248 6 7 Sca
+: 1256 13 9 ~red 
+: 1303 1 5 of 
+: 1306 3 9 who 
+: 1311 11 7 I'd 
+: 1367 1 4 be 
+: 1370 2 5 if 
+: 1375 11 7 I
+- 1386 1393
+- 1393
+G 1413 2 0 Yeah
+- 1415 1423
+- 1423
+: 1443 1 0 Said 
+: 1446 2 9 good
+: 1451 7 0 bye 
+: 1460 1 0 and 
+: 1463 2 9 I 
+: 1468 3 2 did
+: 1473 6 0 n't 
+: 1480 7 0 have 
+: 1490 12 9 you 
+: 1504 6 9 here
+- 1510 1531
+- 1531
+: 1551 1 5 I 
+: 1555 2 7 wish 
+: 1560 1 4 you 
+: 1564 10 9 well
+- 1574
+: 1577 2 5 But 
+: 1581 9 5 I 
+: 1607 3 7 can 
+: 1612 2 2 no 
+: 1616 6 7 long
+: 1625 1 5 er 
+: 1628 9 9 stand 
+: 1640 3 5 a
+: 1645 9 5 side
+- 1654 1657
+- 1657
+: 1677 2 4 And 
+: 1682 6 7 watch 
+: 1690 1 5 you 
+: 1694 4 9 sa
+: 1699 6 7 bo
+: 1708 13 5 tage 
+: 1738 1 2 the 
+: 1742 4 7 two 
+: 1748 6 9 o
+: 1756 4 9 f 
+: 1764 11 2 us
+- 1775 1782
+- 1782
+* 1802 1 5 I 
+* 1806 4 5 love 
+* 1811 5 7 you 
+* 1818 1 5 to 
+* 1822 9 9 death, 
+: 1834 2 5 but 
+: 1838 10 7 I
+- 1848 1850
+- 1850
+: 1870 1 2 Can't 
+: 1875 6 7 spend 
+: 1883 1 5 the 
+: 1887 8 9 rest 
+: 1898 2 5 of 
+: 1903 9 7 my
+- 1912 1915
+- 1915
+: 1935 3 5 Life 
+: 1940 5 7 in 
+: 1947 1 5 this 
+: 1951 6 9 da
+: 1959 1 7 ~rk
+: 1963 2 5 ness, 
+: 1967 14 7 I'
+: 1982 11 7 ~
+: 1995 17 5 ~m 
+: 2020 7 2 done
+- 2027 2045
+- 2045
+: 2065 1 0 I'
+: 2068 2 2 m 
+: 2072 6 5 done
+- 2078 2333
+- 2333
+G 2353 1 0 I 
+G 2357 1 0 wish 
+G 2359 1 0 you 
+G 2362 1 0 the 
+G 2364 1 0 best, 
+G 2368 4 0 but 
+G 2382 1 0 I'm 
+G 2387 1 0 not 
+G 2390 1 0 in
+G 2392 1 0 te
+G 2395 1 0 res
+G 2399 6 0 ted
+- 2405
+G 2416 1 0 In 
+G 2419 1 0 giv
+G 2422 1 0 ing 
+G 2424 1 0 you 
+G 2427 1 0 more 
+G 2430 1 0 of 
+G 2432 1 0 my 
+G 2435 1 0 life,
+- 2436
+G 2441 1 0 I've 
+G 2443 1 0 al
+G 2446 1 0 rea
+G 2449 1 0 dy 
+G 2451 1 0 gi
+G 2455 1 0 ven 
+G 2458 1 0 you 
+G 2460 2 0 too 
+G 2464 2 0 much
+- 2466
+G 2477 2 0 I 
+G 2484 1 0 don't 
+G 2487 1 0 wan
+G 2490 1 0 na 
+G 2492 1 0 lose 
+G 2495 5 0 ya
+- 2500
+G 2504 6 0 I 
+G 2515 1 0 don't 
+G 2518 1 0 wan
+G 2520 1 0 na 
+G 2522 5 0 keep 
+G 2529 4 0 ya
+- 2533
+G 2537 7 0 I 
+G 2547 1 0 know 
+G 2550 1 0 that 
+G 2552 1 0 you 
+G 2555 1 0 mean 
+G 2560 4 0 well
+- 2564
+G 2567 1 0 But 
+G 2570 1 0 when 
+G 2572 1 0 I 
+G 2576 5 0 fail 
+G 2583 1 0 I 
+G 2585 1 0 don't 
+G 2587 2 0 need 
+G 2592 3 0 ya
+- 2595
+G 2606 1 0 Rub
+G 2608 1 0 bing 
+G 2611 1 0 my 
+G 2614 2 0 face 
+G 2618 1 0 in 
+G 2621 1 0 it 
+G 2626 1 0 and
+- 2627
+G 2631 1 0 Treat
+G 2634 1 0 ing 
+G 2636 1 0 me 
+G 2639 1 0 like 
+G 2643 2 0 I'm 
+G 2652 2 0 less 
+G 2657 1 0 than 
+G 2659 4 0 you, 
+G 2668 1 0 tell 
+G 2671 1 0 the 
+G 2674 4 0 truth
+- 2678
+G 2682 1 0 You 
+G 2685 1 0 know 
+G 2687 1 0 I'd 
+G 2690 1 0 be 
+G 2692 1 0 better 
+G 2699 1 0 without 
+G 2701 6 0 ya
+- 2707
+G 2716 1 0 Been 
+G 2719 1 0 in 
+G 2721 1 0 your 
+G 2724 4 0 shoes, 
+G 2730 1 0 don't 
+G 2733 1 0 be 
+G 2736 2 0 a 
+G 2740 1 0 fool
+- 2741
+G 2745 1 0 And 
+G 2748 1 0 try 
+G 2751 1 0 to 
+G 2754 1 0 con
+G 2757 1 0 vin
+G 2759 1 0 ce 
+G 2763 1 0 me 
+G 2766 1 0 that 
+G 2770 2 0 I'm 
+G 2780 1 0 the
+- 2781
+G 2786 1 0 Real 
+G 2789 1 0 is
+G 2795 1 0 sue, 
+G 2798 1 0 when 
+G 2804 1 0 you're 
+G 2806 1 0 the 
+G 2810 1 0 root 
+G 2813 1 0 to 
+G 2815 1 0 e
+G 2818 1 0 ve
+G 2820 1 0 ry 
+G 2823 1 0 pro
+G 2825 1 0 blem
+- 2826
+G 2829 1 0 I 
+G 2836 1 0 love 
+G 2840 1 0 you 
+G 2843 1 0 but 
+G 2846 1 0 not 
+G 2850 5 0 e
+G 2862 1 0 nough
+- 2863
+G 2866 1 0 To 
+G 2868 1 0 allow 
+G 2872 1 0 you 
+G 2876 1 0 to 
+G 2879 2 0 con
+G 2884 1 0 ti
+G 2888 1 0 nue 
+G 2891 1 0 to 
+G 2894 1 0 drown 
+G 2899 1 0 the 
+G 2902 3 0 both 
+G 2907 1 0 of 
+G 2911 2 0 us, 
+G 2916 3 0 you're
+- 2919
+G 2926 1 0 Hold
+G 2929 1 0 ing 
+G 2932 1 0 me 
+G 2934 4 0 back, 
+G 2941 1 0 you're 
+G 2944 1 0 pul
+G 2946 1 0 ling 
+G 2948 1 0 me 
+G 2951 3 0 down,
+- 2954
+G 2957 1 0 You're 
+G 2960 1 0 ma
+G 2963 1 0 king 
+G 2965 1 0 me 
+G 2968 1 0 hate 
+G 2973 2 0 myself, 
+G 2979 2 0 I
+- 2981
+G 2991 1 0 Don't 
+G 2994 1 0 wanna 
+G 2997 1 0 leave, 
+G 3000 4 0 but 
+G 3006 1 0 that's 
+G 3009 1 0 what 
+G 3011 1 0 I 
+G 3014 6 0 need,
+- 3020
+G 3021 1 0 I 
+G 3024 1 0 ain't 
+G 3026 1 0 got 
+G 3029 1 0 a 
+G 3032 2 0 choice, 
+G 3037 1 0 I 
+G 3040 1 0 can't 
+G 3043 6 0 just
+- 3049
+G 3055 1 0 Let 
+G 3058 1 0 you 
+G 3060 1 0 de
+G 3063 4 0 ceive 
+G 3069 1 0 and 
+G 3072 1 0 make 
+G 3074 1 0 me 
+G 3077 1 0 be
+G 3079 4 0 lieve
+- 3083
+G 3086 1 0 That 
+G 3088 1 0 I 
+G 3091 1 0 don't 
+G 3093 1 0 deserve 
+G 3096 1 0 to 
+G 3100 1 0 be 
+G 3104 2 0 loved
+- 3106
+G 3109 2 0 I 
+G 3119 1 0 am 
+G 3122 1 0 not 
+G 3124 1 0 gonna 
+G 3127 1 0 stand 
+G 3130 2 0 a
+G 3135 1 0 side
+- 3136
+G 3138 1 0 And 
+G 3143 1 0 watch 
+G 3146 1 0 you 
+G 3149 1 0 at
+G 3151 1 0 tempt 
+G 3157 1 0 to 
+G 3160 1 0 rob 
+G 3166 1 0 and 
+G 3169 1 0 steal 
+G 3174 1 0 and 
+G 3176 1 0 sa
+G 3179 2 0 bo
+G 3183 1 0 tage
+- 3184
+G 3188 1 0 What 
+G 3192 1 0 little 
+G 3197 1 0 faith 
+G 3200 1 0 I 
+G 3203 1 0 have 
+G 3207 1 0 left, 
+G 3210 2 0 yeah,
+- 3212
+G 3214 1 0 Haven't 
+G 3218 1 0 I 
+G 3222 1 0 sa
+G 3225 1 0 cri
+G 3227 1 0 fi
+G 3231 1 0 ced 
+G 3238 1 0 e
+G 3241 1 0 nough 
+G 3245 1 0 for 
+G 3248 1 0 you?
+- 3249
+G 3253 1 0 Hate 
+G 3258 1 0 seeing 
+G 3262 1 0 you 
+G 3264 1 0 cry, 
+G 3269 1 0 but 
+G 3273 1 0 I 
+G 3275 1 0 think 
+G 3278 1 0 it's 
+G 3281 1 0 time
+- 3282
+G 3286 1 0 To 
+G 3289 1 0 let 
+G 3293 1 0 go 
+G 3295 1 0 and 
+G 3298 2 0 say 
+G 3302 1 0 our 
+G 3305 1 0 good
+G 3308 2 0 byes
+- 3310
+G 3313 1 0 Yeah, 
+G 3318 1 0 I'm 
+G 3321 1 0 gonna 
+G 3324 1 0 miss 
+G 3326 1 0 you,
+- 3327
+G 3329 1 0 But 
+G 3331 1 0 I 
+G 3337 1 0 am 
+G 3340 1 0 not 
+G 3342 1 0 gon
+G 3345 1 0 na 
+G 3348 2 0 spend 
+G 3353 1 0 the 
+G 3356 1 0 rest 
+G 3359 1 0 of 
+G 3362 1 0 my 
+G 3364 1 0 life 
+* 3370 1 9 run
+* 3373 1 9 ning
+- 3374 3414
+- 3414
+* 3434 1 5 From 
+* 3438 1 5 you
+- 3439 3478
+- 3478
+: 3498 1 0 Spent 
+: 3503 2 0 my 
+: 3507 6 0 whole 
+: 3515 6 0 life 
+: 3525 1 0 in 
+: 3528 1 9 your 
+: 3533 1 0 sha
+: 3537 1 0 do
+: 3540 1 0 ~
+: 3543 7 2 ~w
+- 3550 3552
+- 3552
+: 3572 2 9 Sca
+: 3576 5 7 ~
+: 3583 9 9 ~red 
+: 3622 3 9 of 
+: 3628 4 9 who 
+: 3634 9 7 I'd 
+: 3692 1 9 be 
+: 3695 1 0 if 
+: 3697 7 7 I
+: 3706 5 9 ~
+- 3711 3746
+- 3746
+: 3766 2 0 Said 
+: 3769 1 9 good
+: 3773 6 0 bye 
+: 3781 1 0 and 
+: 3785 2 4 I 
+: 3790 9 2 didn't 
+: 3802 9 0 have 
+: 3813 12 9 you 
+: 3827 1 9 here
+- 3828 3853
+- 3853
+: 3873 1 5 I 
+: 3875 4 7 wish 
+: 3883 1 5 you 
+: 3886 9 9 well 
+: 3897 1 2 but 
+: 3901 10 5 I 
+: 3931 2 9 can 
+: 3935 1 5 no 
+: 3939 5 7 long
+: 3947 1 5 er 
+: 3950 10 9 stand 
+: 3962 1 9 a
+: 3965 9 5 side
+- 3974 3978
+- 3978
+: 3998 3 9 And 
+: 4003 5 7 watch 
+: 4012 1 9 you 
+: 4015 8 9 sa
+: 4026 2 5 bo
+: 4030 12 5 tage 
+: 4060 1 2 the 
+: 4063 4 7 two 
+: 4070 4 9 o
+: 4076 3 9 ~
+: 4081 4 5 f 
+: 4088 9 2 us
+- 4097 4103
+- 4103
+: 4123 1 5 I 
+: 4127 3 4 love 
+: 4133 5 7 you 
+: 4140 1 5 to 
+: 4145 9 9 death, 
+: 4157 1 5 but 
+: 4162 1 5 I
+: 4165 5 7 ~ 
+: 4194 1 5 can't 
+: 4197 5 7 spent 
+: 4205 1 5 the 
+: 4208 9 9 rest 
+: 4220 1 9 of 
+: 4224 1 5 my
+: 4227 7 7 ~
+- 4234 4236
+- 4236
+: 4256 4 9 Life 
+: 4262 5 7 in 
+: 4270 1 5 this 
+: 4273 3 9 da
+: 4278 4 9 ~
+: 4284 1 4 rk
+: 4288 2 4 ness, 
+* 4291 9 7 I'
+* 4303 8 7 ~
+* 4313 12 5 ~
+* 4327 11 4 ~m 
+* 4345 8 5 done
+- 4353 4366
+- 4366
+: 4386 1 5 I'
+: 4389 3 7 ~m 
+: 4395 7 5 done
+E
