@@ -488,10 +488,10 @@
       "English"
     ],
     "bpm": 400,
-    "gap": 15977.5,
+    "gap": 15927.5,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-26T17:05:26.477Z",
+    "lastUpdate": "2024-05-08T11:49:20.962Z",
     "genre": "Pop",
     "realBpm": 141,
     "volume": 0.76,
@@ -30673,10 +30673,10 @@
       "English"
     ],
     "bpm": 224.06,
-    "gap": 16333.804695170933,
+    "gap": 16282.804695170937,
     "year": "2012",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-05T06:51:14.750Z",
+    "lastUpdate": "2024-05-08T11:48:09.149Z",
     "realBpm": 112,
     "volume": 0.5,
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey",
@@ -31890,10 +31890,10 @@
       "English"
     ],
     "bpm": 210.1,
-    "gap": 17720.47596382675,
+    "gap": 17570.47596382675,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2023-05-06T19:39:44.690Z",
+    "lastUpdate": "2024-05-08T09:07:51.824Z",
     "edition": "[DUET]-Songs",
     "genre": "Nu Metal",
     "realBpm": 105,
@@ -36334,10 +36334,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 33600,
+    "gap": 33700,
     "year": "2009",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-12-28T19:33:31.949Z",
+    "lastUpdate": "2024-05-08T09:07:01.160Z",
     "realBpm": 124,
     "volume": 0.92,
     "author": "Schreiadler",
@@ -38496,10 +38496,10 @@
       "English"
     ],
     "bpm": 250,
-    "gap": 430,
+    "gap": 330,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2023-12-15T05:36:09.357Z",
+    "lastUpdate": "2024-05-08T09:06:40.744Z",
     "edition": "SingStar Pop Hits",
     "genre": "Pop",
     "realBpm": 126,
@@ -38814,10 +38814,10 @@
       "English"
     ],
     "bpm": 247.56,
-    "gap": 18729.946679592827,
+    "gap": 18579.946679592827,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-19T05:46:35.222Z",
+    "lastUpdate": "2024-05-08T08:55:45.596Z",
     "genre": "Pop",
     "realBpm": 164,
     "volume": 0.75,
@@ -41237,9 +41237,9 @@
       "English"
     ],
     "bpm": 480.16,
-    "gap": 7450.333222259247,
+    "gap": 7650.333222259247,
     "year": "2014",
-    "lastUpdate": "2024-01-07T06:25:26.612Z",
+    "lastUpdate": "2024-05-08T09:03:49.172Z",
     "genre": "Pop",
     "realBpm": 120,
     "volume": 0.73,
@@ -50856,10 +50856,10 @@
       "English"
     ],
     "bpm": 234.35,
-    "gap": 10925.890761681247,
+    "gap": 11125.890761681247,
     "year": "2001",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-03-20T06:29:33.903Z",
+    "lastUpdate": "2024-05-08T09:05:45.462Z",
     "genre": "Pop",
     "realBpm": 117,
     "volume": 0.73,
@@ -55065,19 +55065,19 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 176.66666666666674,
+    "gap": -90,
     "year": "2017",
-    "lastUpdate": "2024-05-05T06:48:15.925Z",
+    "lastUpdate": "2024-05-08T09:09:17.090Z",
     "genre": "Soundtrack",
     "realBpm": 125,
     "volume": 0.79,
     "author": "Baklap4",
     "tracks": [
       {
-        "start": 14
+        "start": 18
       },
       {
-        "start": 1766
+        "start": 1770
       }
     ],
     "tracksCount": 2,
