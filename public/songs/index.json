@@ -4914,19 +4914,20 @@
       "English"
     ],
     "bpm": 398.32,
-    "gap": -1172.7704358304882,
+    "gap": 5065.229564169512,
     "year": "2005",
     "artistOrigin": "US",
+    "lastUpdate": "2024-05-07T13:32:26.624Z",
     "edition": "Guitar Hero Warriors of Rock",
     "genre": "Metal",
-    "videoGap": -3,
     "realBpm": 123,
+    "volume": 0.5,
     "author": "¡JKA!",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Bat%20Country",
     "tracks": [
       {
-        "start": 194
+        "start": 27
       }
     ],
     "tracksCount": 1,
@@ -23152,10 +23153,10 @@
       "English"
     ],
     "bpm": 256,
-    "gap": 48676.90625,
+    "gap": 48826.90625,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2023-04-19T20:12:21.117Z",
+    "lastUpdate": "2024-05-07T13:35:11.663Z",
     "genre": "Rock",
     "videoGap": 20,
     "realBpm": 63,
@@ -23181,10 +23182,10 @@
       "English"
     ],
     "bpm": 246.54,
-    "gap": 44338.5271355561,
+    "gap": 44388.5271355561,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2023-04-19T20:16:01.422Z",
+    "lastUpdate": "2024-05-07T13:32:56.579Z",
     "genre": "Hard Rock",
     "realBpm": 123,
     "volume": 0.7,
@@ -28412,10 +28413,10 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 18420,
+    "gap": 18570,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:33.323Z",
+    "lastUpdate": "2024-05-07T13:34:35.834Z",
     "genre": "Pop",
     "realBpm": 90,
     "volume": 0.83,
@@ -56224,12 +56225,13 @@
       "English"
     ],
     "bpm": 216.06,
-    "gap": 7453.047764509858,
+    "gap": 7353.047764509858,
     "year": "2015",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-02-24T23:16:17.030Z",
+    "lastUpdate": "2024-05-07T13:34:13.148Z",
     "genre": "Pop",
     "realBpm": 108,
+    "volume": 0.5,
     "author": "OGB*Coppo",
     "tracks": [
       {
@@ -60406,15 +60408,15 @@
       "Japanese"
     ],
     "bpm": 260,
-    "gap": -34.61538461538464,
+    "gap": 173.0769230769231,
     "year": "2019",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-03-20T06:29:33.910Z",
+    "lastUpdate": "2024-05-07T13:37:20.291Z",
     "realBpm": 130,
     "volume": 0.72,
     "tracks": [
       {
-        "start": 11
+        "start": 10
       }
     ],
     "tracksCount": 1,
