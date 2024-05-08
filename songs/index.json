@@ -4309,6 +4309,34 @@
     "local": false
   },
   {
+    "id": "ariana-grande-we-cant-be-friends-wait-for-your-love",
+    "title": "We can't be friends (wait for your love)",
+    "artist": "Ariana Grande",
+    "video": "KNtJGQkC-WI",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.36,
+    "gap": 54947.674987089,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-08T16:39:19.552Z",
+    "videoGap": 55,
+    "realBpm": 200,
+    "previewStart": 60,
+    "previewEnd": 150,
+    "volume": 0.71,
+    "author": "asdFer",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandewecantbefriendswaitforyourlove",
+    "local": false
+  },
+  {
     "id": "ariana-grande-yes-and",
     "title": "yes, and?",
     "artist": "Ariana Grande",
@@ -6058,6 +6086,33 @@
     ],
     "tracksCount": 1,
     "search": "bajmmysliislowa",
+    "local": false
+  },
+  {
+    "id": "banana-minnions-family-skibidi-toilet-minnion",
+    "title": "Skibidi Toilet Minnion",
+    "artist": "Banana minnions family",
+    "video": "RK33t8aNmK4",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 32.5,
+    "year": "2024",
+    "lastUpdate": "2024-05-08T15:52:26.387Z",
+    "genre": "Pop",
+    "realBpm": 145,
+    "previewStart": 10,
+    "previewEnd": 40,
+    "volume": 0.89,
+    "author": "Banana Minnions Family",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bananaminnionsfamilyskibiditoiletminnion",
     "local": false
   },
   {
@@ -11514,6 +11569,33 @@
     "local": false
   },
   {
+    "id": "charlie-puth-selena-gomez-we-dont-talk-anymore",
+    "title": "We don't talk anymore",
+    "artist": "Charlie Puth & Selena Gomez",
+    "video": "3AtDnEC4zak",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.94,
+    "gap": 3253.6012398760126,
+    "year": "2016",
+    "lastUpdate": "2024-05-08T16:50:47.050Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "previewStart": 62,
+    "previewEnd": 92,
+    "volume": 0.7,
+    "author": "amro98 y Volodi",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "charlieputhselenagomezwedonttalkanymore",
+    "local": false
+  },
+  {
     "id": "chayanne-torero",
     "title": "Torero",
     "artist": "Chayanne",
@@ -16248,6 +16330,31 @@
     "local": false
   },
   {
+    "id": "disneys-encanto-we-dont-talk-about-bruno",
+    "title": "We Don’t Talk About Bruno",
+    "artist": "Disney’s Encanto",
+    "video": "bvWRMAU6V-c",
+    "language": [
+      "English"
+    ],
+    "bpm": 206,
+    "gap": 5350.582524271845,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-08T16:30:11.701Z",
+    "realBpm": 102,
+    "volume": 0.98,
+    "author": "Tracks",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysencantowedonttalkaboutbruno",
+    "local": false
+  },
+  {
     "id": "disneys-frozen-do-you-want-to-build-a-snowman",
     "title": "Do You Want To Build A Snowman?",
     "artist": "Disney’s Frozen",
@@ -17971,6 +18078,36 @@
     ],
     "tracksCount": 1,
     "search": "edsheeranlegohouse",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-perfect",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "video": "2Vv-BfVoq4g",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.2,
+    "gap": 19180.007751937985,
+    "year": "2017",
+    "artistOrigin": "UK",
+    "lastUpdate": "2024-05-08T16:42:17.705Z",
+    "genre": "Pop",
+    "videoGap": 15,
+    "realBpm": 97,
+    "previewStart": 80,
+    "previewEnd": 135,
+    "volume": 0.76,
+    "author": "Ed Sheeran",
+    "sourceUrl": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranperfect",
     "local": false
   },
   {
@@ -22951,6 +23088,31 @@
     "local": false
   },
   {
+    "id": "grupo-frontera-no-se-va-en-vivo",
+    "title": "No se va (en vivo)",
+    "artist": "Grupo Frontera",
+    "video": "VtKcDwz6hiM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 346,
+    "gap": 422.8901734104047,
+    "year": "2022",
+    "lastUpdate": "2024-05-08T16:27:56.717Z",
+    "genre": "Norteño",
+    "realBpm": 173,
+    "volume": 0.76,
+    "author": "vicktoben (ultrastar-es.org)",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "grupofronteranosevaenvivo",
+    "local": false
+  },
+  {
     "id": "grzegorz-hyzy-pod-wiatr",
     "title": "Pod wiatr",
     "artist": "Grzegorz Hyży",
@@ -27261,6 +27423,31 @@
     "local": false
   },
   {
+    "id": "julie-and-the-phantoms-edge-of-great",
+    "title": "Edge Of Great",
+    "artist": "Julie and the Phantoms",
+    "video": "-Pp07jgbPHU",
+    "language": [
+      "English"
+    ],
+    "bpm": 372.38,
+    "gap": 2372.9641763789677,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-08T16:26:27.454Z",
+    "realBpm": 186,
+    "volume": 0.97,
+    "author": "seanie627",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "julieandthephantomsedgeofgreat",
+    "local": false
+  },
+  {
     "id": "julieta-venegas-lento",
     "title": "Lento",
     "artist": "Julieta Venegas",
@@ -27474,6 +27661,32 @@
     ],
     "tracksCount": 1,
     "search": "justinbiebernickiminajbeautyandabeat",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-one-time",
+    "title": "One Time",
+    "artist": "Justin Bieber",
+    "video": "CHVhwcOg6y8",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.4,
+    "gap": 27145.307797537618,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-05-08T16:32:05.089Z",
+    "genre": "Pop",
+    "realBpm": 146,
+    "volume": 0.72,
+    "author": "fepo",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberonetime",
     "local": false
   },
   {
@@ -35697,6 +35910,32 @@
     "local": false
   },
   {
+    "id": "martin-solveig-dragonette-hello",
+    "title": "Hello",
+    "artist": "Martin Solveig & Dragonette",
+    "video": "tVEwuyDRWk8",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 29023.90625,
+    "year": "2010",
+    "lastUpdate": "2024-05-08T16:52:15.643Z",
+    "genre": "Pop, Dance",
+    "realBpm": 128,
+    "volume": 0.79,
+    "author": "rafallus",
+    "tracks": [
+      {
+        "name": "Hello",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "martinsolveigdragonettehello",
+    "local": false
+  },
+  {
     "id": "martina-mcbride-a-broken-wing",
     "title": "A Broken Wing",
     "artist": "Martina McBride",
@@ -38968,6 +39207,32 @@
     "local": false
   },
   {
+    "id": "natasha-bedingfield-pocketful-of-sunshine",
+    "title": "Pocketful Of Sunshine",
+    "artist": "Natasha Bedingfield",
+    "video": "1xNrIyuNOuk",
+    "language": [
+      "English"
+    ],
+    "bpm": 585.6,
+    "gap": 7801.024590163935,
+    "year": "2008",
+    "artistOrigin": "UK",
+    "lastUpdate": "2024-05-08T16:31:31.260Z",
+    "genre": "Pop",
+    "realBpm": 110,
+    "volume": 0.79,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 39
+      }
+    ],
+    "tracksCount": 1,
+    "search": "natashabedingfieldpocketfulofsunshine",
+    "local": false
+  },
+  {
     "id": "natasha-bedingfield-unwritten",
     "title": "Unwritten",
     "artist": "Natasha Bedingfield",
@@ -39591,6 +39856,35 @@
     "local": false
   },
   {
+    "id": "newjeans-ditto",
+    "title": "Ditto",
+    "artist": "NewJeans",
+    "video": "pSUydWEqKwE",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 267.88,
+    "gap": 82804.0860086606,
+    "year": "2022",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-05-08T16:37:46.199Z",
+    "genre": "K-Pop",
+    "videoGap": 83,
+    "realBpm": 134,
+    "previewStart": 139,
+    "previewEnd": 199,
+    "volume": 0.71,
+    "author": "New Jeans",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "newjeansditto",
+    "local": false
+  },
+  {
     "id": "newjeans-hype-boy",
     "title": "Hype Boy",
     "artist": "NewJeans",
@@ -39667,6 +39961,32 @@
     ],
     "tracksCount": 1,
     "search": "newjeansomg",
+    "local": false
+  },
+  {
+    "id": "nf-running",
+    "title": "RUNNING",
+    "artist": "NF",
+    "video": "BzSzwqb-OEE",
+    "language": [
+      "English"
+    ],
+    "bpm": 294.33,
+    "gap": 12860.735908673938,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-08T16:34:48.238Z",
+    "genre": "Rap",
+    "realBpm": 146,
+    "volume": 0.74,
+    "author": "princetongirl98",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nfrunning",
     "local": false
   },
   {
@@ -49768,6 +50088,34 @@
     "local": false
   },
   {
+    "id": "shawn-mendes-camila-cabello-senorita",
+    "title": "Señorita",
+    "artist": "Shawn Mendes, Camila Cabello",
+    "video": "Pkh8UtuejGw",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.24,
+    "gap": 22339.600608039636,
+    "year": "2019",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-05-08T16:44:46.270Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "previewStart": 73,
+    "previewEnd": 106,
+    "volume": 0.77,
+    "author": "Camila Cabello",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shawnmendescamilacabellosenorita",
+    "local": false
+  },
+  {
     "id": "shawn-mendes-life-of-the-party",
     "title": "Life Of The Party",
     "artist": "Shawn Mendes",
@@ -49819,6 +50167,32 @@
     ],
     "tracksCount": 1,
     "search": "shawnmendesstitches",
+    "local": false
+  },
+  {
+    "id": "shikata-akiko-katayoku-no-tori",
+    "title": "Katayoku no Tori",
+    "artist": "Shikata Akiko",
+    "video": "Ejya0YnaCY4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 240,
+    "gap": 207.5,
+    "year": "2009",
+    "lastUpdate": "2024-05-08T16:33:02.820Z",
+    "realBpm": 109,
+    "volume": 0.98,
+    "author": "omega-xis",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=32454",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16637",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shikataakikokatayokunotori",
     "local": false
   },
   {
@@ -52894,6 +53268,33 @@
     "local": false
   },
   {
+    "id": "taeyang-eyes-nose-lips",
+    "title": "Eyes, Nose, Lips",
+    "artist": "TAEYANG",
+    "video": "UwuAPyOImoI",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 290.2,
+    "gap": 29521.91867677464,
+    "year": "2014",
+    "lastUpdate": "2024-05-08T16:47:33.340Z",
+    "genre": "K-Pop",
+    "realBpm": 144,
+    "previewStart": 84,
+    "previewEnd": 177,
+    "volume": 0.69,
+    "author": "Taeyang",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taeyangeyesnoselips",
+    "local": false
+  },
+  {
     "id": "taio-cruz-dynamite",
     "title": "Dynamite",
     "artist": "Taio Cruz",
@@ -55057,6 +55458,31 @@
     "local": false
   },
   {
+    "id": "the-greatest-showman-never-enough",
+    "title": "Never Enough",
+    "artist": "The Greatest Showman",
+    "video": "rQWZK5U233s",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 18700,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-08T16:26:57.536Z",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "matthu",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thegreatestshowmanneverenough",
+    "local": false
+  },
+  {
     "id": "the-greatest-showman-rewrite-the-stars",
     "title": "Rewrite The Stars",
     "artist": "The Greatest Showman",
@@ -55106,6 +55532,31 @@
     ],
     "tracksCount": 1,
     "search": "thegreatestshowmanthegreatestshow",
+    "local": false
+  },
+  {
+    "id": "the-greatest-showman-this-is-me",
+    "title": "This Is Me",
+    "artist": "The Greatest Showman",
+    "video": "Rj4Yu9Utdw0",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 6200,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-08T16:24:31.206Z",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "matthu",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thegreatestshowmanthisisme",
     "local": false
   },
   {
@@ -55222,6 +55673,33 @@
     ],
     "tracksCount": 1,
     "search": "thekellyfamilyicanthelpmyselfiloveyouiwantyou",
+    "local": false
+  },
+  {
+    "id": "the-kid-laroi-justin-bieber-stay",
+    "title": "Stay",
+    "artist": "The Kid Laroi & Justin Bieber",
+    "video": "kTJczUoc26U",
+    "language": [
+      "English"
+    ],
+    "bpm": 331.73,
+    "gap": 29805.21508455672,
+    "year": "2019",
+    "lastUpdate": "2024-05-08T16:45:43.830Z",
+    "genre": "Pop",
+    "realBpm": 170,
+    "previewStart": 65,
+    "previewEnd": 93,
+    "volume": 0.71,
+    "author": "The Kid Laori and Justin Bieber",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thekidlaroijustinbieberstay",
     "local": false
   },
   {
@@ -57130,6 +57608,32 @@
     "local": false
   },
   {
+    "id": "tk-from-ling-tosite-sigure-unravel",
+    "title": "Unravel",
+    "artist": "TK from Ling Tosite Sigure",
+    "video": "Fve_lHIPa-I",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 270,
+    "gap": 2150,
+    "year": "2014",
+    "lastUpdate": "2024-05-08T16:34:00.175Z",
+    "realBpm": 135,
+    "previewStart": 65,
+    "previewEnd": 77,
+    "volume": 0.81,
+    "author": "tk from ling tosite sigure",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tkfromlingtositesigureunravel",
+    "local": false
+  },
+  {
     "id": "tlc-no-scrubs",
     "title": "No Scrubs",
     "artist": "TLC",
@@ -58717,6 +59221,32 @@
     ],
     "tracksCount": 1,
     "search": "usherpitbulldjgotusfallinginloveagain",
+    "local": false
+  },
+  {
+    "id": "usher-u-got-it-bad",
+    "title": "U Got It Bad",
+    "artist": "Usher",
+    "video": "o3IWTfcks4k",
+    "language": [
+      "English"
+    ],
+    "bpm": 247.96,
+    "gap": 37411.60832392321,
+    "year": "2001",
+    "lastUpdate": "2024-05-08T16:59:00.255Z",
+    "genre": "R&B",
+    "realBpm": 124,
+    "volume": 0.81,
+    "author": "Schnuppy",
+    "tracks": [
+      {
+        "name": "U Got It Bad",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "usherugotitbad",
     "local": false
   },
   {
@@ -60397,6 +60927,34 @@
     ],
     "tracksCount": 1,
     "search": "yoasobiidoltv",
+    "local": false
+  },
+  {
+    "id": "yoasobi-idol",
+    "title": "Idol",
+    "artist": "YOASOBI",
+    "video": "PgBvV9ofjmA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 332.04,
+    "gap": 51.844958438742424,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-05-08T16:51:31.645Z",
+    "genre": "Anime",
+    "realBpm": 166,
+    "previewStart": 55,
+    "previewEnd": 77,
+    "volume": 0.72,
+    "author": "Beneblade",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yoasobiidol",
     "local": false
   },
   {
