@@ -5,10 +5,10 @@
 #YEAR:2014
 #VIDEO:v=nlR0MkrRklg
 #LANGUAGE:English
-#GAP:9608,827590690418
+#GAP:9508,827590690418
 #EDITION:Christmas
 #ALLKARAOKE_ID:ariana-grande-santa-tell-me
-#ALLKARAOKE_LASTUPDATE:2023-12-21T21:45:03.308Z
+#ALLKARAOKE_LASTUPDATE:2024-05-09T04:21:19.908Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=asdfer
 #ALLKARAOKE_REALBPM:96
@@ -115,9 +115,9 @@
 : 775 2 2 ~ 
 : 779 14 2 room
 - 793
-: 803 2 7 "Let 
+: 803 2 7 \"Let 
 : 807 2 7 It 
-: 812 8 7 Snow" 
+: 812 8 7 Snow\" 
 : 823 2 6 is 
 : 828 8 4 blas
 : 839 2 2 ting 
