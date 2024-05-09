@@ -1233,13 +1233,15 @@
       "English"
     ],
     "bpm": 210,
-    "gap": 4870,
+    "gap": 3770,
     "year": "2011",
     "artistOrigin": "GB",
+    "lastUpdate": "2024-05-09T15:17:35.548Z",
     "realBpm": 103,
+    "volume": 0.5,
     "tracks": [
       {
-        "start": 0
+        "start": 14
       }
     ],
     "tracksCount": 1,
@@ -3540,10 +3542,10 @@
       "English"
     ],
     "bpm": 213.1,
-    "gap": 17184.547160957296,
+    "gap": 17384.547160957296,
     "year": "2009",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-12-22T16:33:51.877Z",
+    "lastUpdate": "2024-05-09T15:18:55.476Z",
     "realBpm": 107,
     "volume": 0.76,
     "author": "chrisvanart",
@@ -3671,10 +3673,10 @@
       "English"
     ],
     "bpm": 382.59,
-    "gap": 12708.632008154944,
+    "gap": 12908.632008154944,
     "year": "2019",
     "artistOrigin": "US",
-    "lastUpdate": "2024-02-13T06:15:26.246Z",
+    "lastUpdate": "2024-05-09T15:18:09.122Z",
     "realBpm": 140,
     "volume": 0.7,
     "author": "varisha",
@@ -6178,12 +6180,12 @@
     "bpm": 400,
     "gap": 32.5,
     "year": "2024",
-    "lastUpdate": "2024-05-08T15:48:11.886Z",
+    "lastUpdate": "2024-05-08T15:52:26.387Z",
     "genre": "Pop",
     "realBpm": 145,
     "previewStart": 10,
     "previewEnd": 40,
-    "volume": 0.91,
+    "volume": 0.89,
     "author": "Banana Minnions Family",
     "tracks": [
       {
@@ -6792,10 +6794,10 @@
       "English"
     ],
     "bpm": 238.84,
-    "gap": 15564.143192095125,
+    "gap": 15714.143192095125,
     "year": "1961",
     "artistOrigin": "US",
-    "lastUpdate": "2023-07-28T07:42:46.533Z",
+    "lastUpdate": "2024-05-09T15:16:08.264Z",
     "genre": "Clásicos",
     "realBpm": 118,
     "previewStart": 16,
@@ -6849,10 +6851,10 @@
       "English"
     ],
     "bpm": 218.8,
-    "gap": 2791.6636197440585,
+    "gap": 2991.6636197440585,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:32.883Z",
+    "lastUpdate": "2024-05-09T15:15:45.770Z",
     "realBpm": 78,
     "volume": 0.63,
     "author": "Knuddel",
@@ -9028,17 +9030,19 @@
       "English"
     ],
     "bpm": 240.1,
-    "gap": 34064,
+    "gap": 33014.416493127865,
     "year": "2000",
     "artistOrigin": "US",
-    "videoGap": 23,
+    "lastUpdate": "2024-05-09T15:17:00.537Z",
+    "videoGap": 19,
     "realBpm": 120,
+    "volume": 0.5,
     "author": "upalula",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=It's%20my%20life",
     "tracks": [
       {
-        "start": 0
+        "start": 16
       }
     ],
     "tracksCount": 1,
@@ -20708,10 +20712,10 @@
       "English"
     ],
     "bpm": 229,
-    "gap": 56197.467248908295,
+    "gap": 56447.467248908295,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:33.022Z",
+    "lastUpdate": "2024-05-09T15:19:35.647Z",
     "genre": "Pop Rock",
     "realBpm": 114,
     "previewStart": 73,
@@ -23528,17 +23532,19 @@
       "English"
     ],
     "bpm": 333.7,
-    "gap": 38023,
+    "gap": 36984.087803416245,
     "year": "2004",
     "artistOrigin": "US",
+    "lastUpdate": "2024-05-09T15:17:47.100Z",
     "genre": "Rock Internacional",
     "realBpm": 82,
+    "volume": 0.5,
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=Boulevard%20of%20Broken%20Dreams",
     "tracks": [
       {
-        "start": 0
+        "start": 22
       }
     ],
     "tracksCount": 1,
@@ -24485,10 +24491,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 6880,
+    "gap": 6980,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:36.081Z",
+    "lastUpdate": "2024-05-09T15:18:34.976Z",
     "edition": "Disney Sing It",
     "realBpm": 137,
     "volume": 0.71,
@@ -59625,10 +59631,10 @@
       "Korean"
     ],
     "bpm": 240,
-    "gap": 21950,
+    "gap": 22150,
     "year": "2008",
     "artistOrigin": "KR",
-    "lastUpdate": "2023-11-23T06:46:40.630Z",
+    "lastUpdate": "2024-05-09T15:20:01.844Z",
     "genre": "K-Pop",
     "realBpm": 100,
     "volume": 0.71,
@@ -61595,10 +61601,10 @@
       "English"
     ],
     "bpm": 378.64,
-    "gap": 19599.61335305303,
+    "gap": 19649.61335305303,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.341Z",
+    "lastUpdate": "2024-05-09T15:16:33.054Z",
     "edition": "[SC]-Songs",
     "genre": "None",
     "realBpm": 95,
