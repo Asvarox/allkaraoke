@@ -1,0 +1,290 @@
+#ARTIST:Queen
+#TITLE:Stone Cold Crazy
+#CREATOR:Viktor1234678
+#BPM:480
+#YEAR:1974
+#VIDEO:v=S0kTkxhyWNo
+#LANGUAGE:English
+#GAP:26020
+#ALLKARAOKE_ID:queen-stone-cold-crazy
+#ALLKARAOKE_LASTUPDATE:2024-05-08T17:23:19.481Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=167305
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=26431
+#ALLKARAOKE_VOLUME:0,82
+#MP3:Queen - Stone Cold Crazy.mp3
+: 32 2 5 Slee
+: 36 2 5 ping 
+: 40 2 5 ve
+: 44 2 5 ry 
+: 48 2 5 sound
+: 52 2 5 ly 
+- 54
+: 56 2 5 On 
+: 60 2 5 a 
+: 64 2 5 Sa
+: 68 2 5 tur
+: 72 2 5 day 
+: 76 6 5 mor
+: 84 3 5 ning 
+- 87
+: 89 2 5 I 
+: 93 2 5 was 
+: 97 2 7 drea
+: 101 2 7 ming 
+: 105 2 5 I 
+: 109 2 5 was 
+: 113 5 2 Al 
+: 121 2 2 Ca
+: 126 9 0 pone 
+- 135
+: 153 2 2 There’s 
+: 157 2 2 a 
+: 161 2 2 ru
+: 165 2 2 mor 
+: 169 2 2 go
+: 173 2 2 ing 
+: 177 5 2 round 
+- 182
+: 185 2 2 Got
+: 189 2 2 ta 
+: 193 6 2 clear 
+: 201 2 2 out
+: 205 2 2 ta 
+: 209 6 2 town 
+- 215
+: 220 2 2 I’m 
+: 224 2 2 smel
+: 228 2 2 ling 
+: 232 2 2 like 
+: 236 2 2 a 
+: 240 5 2 dry
+: 247 4 2 -fish 
+: 252 6 0 bone 
+- 258
+: 288 4 2 Here 
+: 296 2 2 come 
+: 300 2 2 the 
+: 304 8 2 Law 
+- 312
+: 313 2 2 Gon
+: 317 2 2 na 
+: 321 5 2 break 
+: 328 2 2 down 
+: 332 2 2 the 
+: 336 6 2 door 
+- 342
+: 344 2 0 Gon
+: 348 2 2 na 
+: 352 2 2 car
+: 356 2 2 ry 
+: 360 2 2 me 
+: 364 2 2 a
+: 368 2 2 way 
+: 372 6 2 once 
+: 381 10 2 more 
+- 391
+: 415 4 5 Ne
+: 420 5 5 ver, 
+: 428 4 2 I 
+: 433 3 5 ne
+: 437 4 5 ver 
+- 441
+: 443 4 2 I 
+: 448 2 5 ne
+: 451 3 5 ver 
+: 455 4 5 want 
+: 460 2 2 it 
+: 464 2 5 a
+: 468 3 2 ny 
+: 473 6 5 more 
+- 479
+: 481 2 7 Got
+: 485 2 7 ta 
+: 489 2 5 get 
+: 493 2 5 a
+: 497 2 2 way 
+: 501 2 2 from 
+: 505 2 2 this 
+: 509 6 2 stone
+: 517 6 2 -cold 
+: 525 13 2 floor 
+- 538
+F 545 20 7 Cra
+F 581 20 5 zy 
+- 601
+: 616 8 10 Stone 
+: 628 8 7 Cold 
+: 640 8 10 Cra
+: 652 5 7 zy, 
+: 660 2 5 you 
+: 664 8 5 know 
+- 672 1420
+- 1420
+: 1452 2 5 Rai
+: 1456 2 5 ny 
+: 1460 2 5 af
+: 1464 2 5 ter
+: 1468 2 5 noon 
+- 1470
+: 1473 2 5 I 
+: 1477 2 5 got
+: 1481 2 2 ta 
+: 1485 2 5 blow 
+: 1489 2 5 a 
+: 1493 5 5 ty
+: 1501 6 5 phoon 
+- 1507
+: 1509 2 5 And 
+: 1513 2 5 I’m 
+: 1517 2 7 play
+: 1521 2 7 ing 
+: 1525 2 5 on 
+: 1529 2 5 my 
+: 1533 5 2 slide 
+: 1540 4 2 trom
+: 1546 9 0 bone 
+- 1555
+: 1580 2 0 A
+: 1584 2 2 ny
+: 1588 6 2 more, 
+: 1597 2 0 a
+: 1601 2 2 ny
+: 1605 6 2 more 
+- 1611
+: 1613 2 0 Can
+: 1617 2 2 not 
+: 1621 2 2 take 
+: 1625 2 2 it 
+: 1629 2 0 a
+: 1633 2 2 ny
+: 1637 6 2 more 
+- 1643
+: 1645 2 7 Got
+: 1649 2 7 ta 
+: 1653 2 5 get 
+: 1657 2 5 a
+: 1661 2 2 way 
+: 1665 2 2 from 
+: 1669 2 2 this 
+: 1673 5 5 stone
+: 1681 5 5 -cold 
+: 1690 10 5 floor 
+- 1700 1708
+- 1708
+F 1740 8 7 Cra
+F 1756 12 7 zy 
+- 1768
+: 1780 8 10 Stone 
+: 1792 8 7 Cold 
+: 1804 8 10 Cra
+: 1816 5 7 zy, 
+: 1824 2 5 you 
+: 1828 8 5 know 
+- 1836 1855
+- 1855
+F 1887 4 7 Hit 
+F 1892 3 2 ’em 
+F 1896 11 3 up 
+- 1907 2838
+- 2838
+: 2870 2 5 Wal
+: 2874 2 5 king 
+: 2878 2 5 down 
+: 2882 2 5 the 
+: 2886 6 5 street 
+- 2892
+: 2894 2 5 Shoo
+: 2898 2 2 ting 
+: 2902 2 5 peo
+: 2906 2 5 ple 
+: 2910 2 5 that 
+: 2914 2 5 I 
+: 2918 6 5 meet 
+- 2924
+: 2926 2 5 With 
+: 2930 2 2 my 
+: 2934 2 7 rub
+: 2938 2 7 ber 
+: 2942 2 5 Tom
+: 2946 2 5 my 
+: 2950 2 2 wa
+: 2954 3 2 ter 
+: 2958 10 0 gun 
+- 2968
+: 2999 4 0 Here 
+: 3006 2 2 come 
+: 3010 2 2 the 
+: 3014 2 2 de
+: 3018 2 2 pu
+: 3022 2 2 ty 
+- 3024
+: 3026 2 0 He’s 
+: 3030 2 0 gon
+: 3034 2 2 na 
+: 3038 2 2 come 
+: 3042 2 2 and 
+: 3046 2 2 get 
+: 3050 2 2 a 
+: 3054 2 2 me 
+- 3056
+: 3058 2 0 I 
+: 3062 2 7 got
+: 3066 2 7 ta 
+: 3070 2 5 get 
+: 3074 2 5 me 
+: 3078 2 2 get 
+: 3082 2 2 up 
+: 3086 2 2 and 
+: 3090 8 0 run 
+- 3098
+: 3102 6 -5 They 
+: 3110 6 -2 got 
+: 3118 4 -5 the 
+: 3126 10 2 si
+: 3142 4 -2 rens 
+: 3150 8 -5 loose 
+- 3158
+: 3165 4 -5 I 
+: 3173 5 -2 ran 
+: 3182 5 -5 right 
+: 3190 11 2 out 
+: 3205 4 -2 of 
+: 3213 12 2 juice 
+- 3225
+: 3241 2 0 They’re 
+: 3245 2 2 gon
+: 3249 2 2 na 
+: 3253 2 5 put 
+: 3257 2 5 me 
+: 3261 2 5 in 
+: 3265 2 5 a 
+: 3269 6 5 cell 
+- 3275
+: 3278 2 5 If 
+: 3282 2 5 I 
+: 3286 5 5 can’t 
+: 3293 2 5 go 
+: 3297 2 2 to 
+: 3301 2 5 hea
+: 3305 2 2 ven 
+- 3307
+: 3309 2 2 Will 
+: 3313 2 2 they 
+: 3317 2 7 let 
+: 3321 2 5 me 
+: 3325 2 2 go 
+: 3329 3 0 to 
+: 3334 23 0 hell? 
+- 3357
+F 3384 10 7 Cra
+F 3400 26 5 zy 
+- 3426
+: 3453 8 10 Stone 
+: 3465 8 7 Cold 
+: 3477 8 10 Cra
+: 3489 5 7 zy, 
+: 3497 2 5 you 
+: 3501 8 5 know 
+E
