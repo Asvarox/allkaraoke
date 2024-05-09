@@ -62,12 +62,14 @@ export const importSongsFromPostHogBase = async (
 
         if (fetchedSongIds.includes(song.id)) {
           console.log(`Song ${song.id} already fetched`);
-        } else if (!currentSongs.find((currentSong) => currentSong.id === song.id)) {
+        } else if ((song.tracks[0]?.sections.length ?? 0) < 5) {
+          console.log(`Song ${song.id} seems to be broken, ${song.tracks[0]?.sections.length} sections found`);
+        } else if (currentSongs.find((currentSong) => currentSong.id === song.id)) {
+          console.log(`Song ${song.id} already exists`);
+        } else {
           song.lastUpdate = new Date().toISOString();
           await onSongAdded(song);
           console.log(`Added song ${song.id}`);
-        } else {
-          console.log(`Song ${song.id} already exists`);
         }
       } catch (e) {
         console.warn(`Couldn't convert song ${result.properties.song}`);
