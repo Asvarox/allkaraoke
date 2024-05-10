@@ -7,1047 +7,1047 @@
 #VIDEO:v=QK8mJJJvaes
 #GENRE:Hip-Hop
 #LANGUAGE:English
-#GAP:-298,9473684210526
+#GAP:216,8421052631579
 #ALLKARAOKE_ID:macklemore-ryan-lewis-feat-wanz-thrift-shop
-#ALLKARAOKE_LASTUPDATE:2023-12-22T16:33:53.125Z
+#ALLKARAOKE_LASTUPDATE:2024-05-10T09:44:18.020Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
 #ALLKARAOKE_REALBPM:190
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=15450
 #ALLKARAOKE_PREVIEWEND:61
 #ALLKARAOKE_VOLUME:0,75
-F 2 4 -12 What 
-- 6
-F 14 4 -12 What 
-- 18
-F 26 4 -12 What 
-- 30
-F 42 4 -12 What 
-- 46
+F -6 4 -12 What 
+- 0
+F 6 4 -12 What 
+- 10
+F 18 4 -12 What 
+- 22
+F 34 4 -12 What 
+- 38
+F 58 4 -12 What 
+- 62
 F 66 4 -12 What 
 - 70
-F 74 4 -12 What 
-- 78
-F 90 4 -12 What 
-- 94
-F 106 4 -12 What 
-- 110
+F 82 4 -12 What 
+- 86
+F 98 4 -12 What 
+- 102
+F 122 4 -12 What 
+- 126
 F 130 4 -12 What 
 - 134
-F 138 4 -12 What 
-- 142
-F 154 4 -12 What 
-- 158
-F 170 4 -12 What 
-- 174
+F 146 4 -12 What 
+- 150
+F 162 4 -12 What 
+- 166
+F 186 4 -12 What 
+- 190
 F 194 4 -12 What 
 - 198
-F 202 4 -12 What 
-- 206
-F 218 4 -12 What 
-- 222
-F 234 4 -12 What 
-- 238
+F 210 4 -12 What 
+- 214
+F 226 4 -12 What 
+- 230
+F 250 4 -12 What 
+- 254
 F 258 4 -12 What 
 - 262
-F 266 4 -12 What 
-- 270
-F 282 4 -12 What 
-- 286
-F 298 4 -12 What 
-- 302
+F 274 4 -12 What 
+- 278
+F 290 4 -12 What 
+- 294
+F 314 4 -12 What 
+- 318
 F 322 4 -12 What 
 - 326
-F 330 4 -12 What 
-- 334
-F 346 4 -12 What 
-- 350
-F 362 4 -12 What 
-- 366
+F 338 4 -12 What 
+- 342
+F 354 4 -12 What 
+- 358
+F 378 4 -12 What 
+- 382
 F 386 4 -12 What 
 - 390
-F 394 4 -12 What 
-- 398
-F 410 4 -12 What 
-- 414
-F 426 4 -12 What 
-- 430 481
-- 481
-F 506 8 -10 Oh! 
-- 514 745
-- 745
-* 770 4 15 I m 
-: 778 3 15 gon
-: 782 3 15 na 
-: 786 7 13 pop 
-: 794 7 11 some 
-: 802 12 8 tags 
-- 814
-: 818 3 8 On
-: 822 3 8 ly 
-: 826 7 8 got 
-* 834 3 15 twen
-: 838 3 15 ty 
-: 842 3 15 dol
-: 846 3 15 lars 
-: 850 7 13 in 
-: 858 7 11 my 
-: 866 7 15 pock
-: 874 16 13 et 
-- 890
-: 896 4 15 I... 
-- 900
-: 904 3 15 I... 
-- 907
-: 910 3 15 I m 
-: 914 3 13 hunt
-: 918 4 11 ing 
-- 922
-* 930 3 15 Look
-* 934 3 15 ing 
-: 938 3 15 for 
-: 942 3 15 a 
-: 946 3 13 come 
-: 950 4 11 up 
-- 954
-: 962 7 15 This 
-: 970 7 15 is 
-: 978 7 13 fuck
-: 986 7 11 ing 
-: 994 7 8 awe
-: 1002 8 8 some 
-- 1010
-F 1014 8 5 Nah! 
-- 1022
-F 1030 3 5 Walk 
-F 1034 3 5 up 
-F 1038 3 5 to 
-F 1042 3 5 the 
-F 1046 3 5 club 
-F 1050 4 5 like 
-- 1054
-F 1058 3 5 "What 
-F 1062 1 5 up... 
-- 1063
-F 1066 3 5 ...I 
-F 1070 3 5 got 
-F 1074 3 5 a 
-F 1078 3 5 big 
-F 1082 4 5 cock!" 
-- 1086
-F 1094 7 7 I m 
-F 1102 4 7 so 
-F 1110 3 7 pumped 
-F 1114 3 7 about 
-F 1118 3 7 some 
-F 1122 4 7 shit 
-- 1126
-F 1130 3 7 From 
-F 1134 3 7 the 
-F 1138 4 7 thrift 
-F 1146 1 7 shop 
-- 1147
-F 1150 4 0 Wow! 
-- 1154
-F 1162 4 5 Ice 
-F 1170 3 5 on 
-F 1174 3 5 the 
-F 1178 4 5 fringe 
-- 1182
-F 1186 3 5 It s 
-F 1190 3 5 so 
-F 1194 4 5 damn 
-F 1202 4 5 fros
-F 1210 1 5 ty 
-- 1211
-F 1214 3 7 That 
-F 1218 3 7 peo
-F 1222 3 7 ple 
-F 1226 4 7 like 
+F 402 4 -12 What 
+- 406
+F 418 4 -12 What 
+- 422 473
+- 473
+F 498 8 -10 Oh! 
+- 506 737
+- 737
+* 762 4 15 I m 
+: 770 3 15 gon
+: 774 3 15 na 
+: 778 7 13 pop 
+: 786 7 11 some 
+: 794 12 8 tags 
+- 806
+: 810 3 8 On
+: 814 3 8 ly 
+: 818 7 8 got 
+* 826 3 15 twen
+: 830 3 15 ty 
+: 834 3 15 dol
+: 838 3 15 lars 
+: 842 7 13 in 
+: 850 7 11 my 
+: 858 7 15 pock
+: 866 16 13 et 
+- 882
+: 888 4 15 I... 
+- 892
+: 896 3 15 I... 
+- 899
+: 902 3 15 I m 
+: 906 3 13 hunt
+: 910 4 11 ing 
+- 914
+* 922 3 15 Look
+* 926 3 15 ing 
+: 930 3 15 for 
+: 934 3 15 a 
+: 938 3 13 come 
+: 942 4 11 up 
+- 946
+: 954 7 15 This 
+: 962 7 15 is 
+: 970 7 13 fuck
+: 978 7 11 ing 
+: 986 7 8 awe
+: 994 8 8 some 
+- 1002
+F 1006 8 5 Nah! 
+- 1014
+F 1022 3 5 Walk 
+F 1026 3 5 up 
+F 1030 3 5 to 
+F 1034 3 5 the 
+F 1038 3 5 club 
+F 1042 4 5 like 
+- 1046
+F 1050 3 5 \"What 
+F 1054 1 5 up... 
+- 1055
+F 1058 3 5 ...I 
+F 1062 3 5 got 
+F 1066 3 5 a 
+F 1070 3 5 big 
+F 1074 4 5 cock!\" 
+- 1078
+F 1086 7 7 I m 
+F 1094 4 7 so 
+F 1102 3 7 pumped 
+F 1106 3 7 about 
+F 1110 3 7 some 
+F 1114 4 7 shit 
+- 1118
+F 1122 3 7 From 
+F 1126 3 7 the 
+F 1130 4 7 thrift 
+F 1138 1 7 shop 
+- 1139
+F 1142 4 0 Wow! 
+- 1146
+F 1154 4 5 Ice 
+F 1162 3 5 on 
+F 1166 3 5 the 
+F 1170 4 5 fringe 
+- 1174
+F 1178 3 5 It s 
+F 1182 3 5 so 
+F 1186 4 5 damn 
+F 1194 4 5 fros
+F 1202 1 5 ty 
+- 1203
+F 1206 3 7 That 
+F 1210 3 7 peo
+F 1214 3 7 ple 
+F 1218 4 7 like 
+- 1222
+F 1226 4 0 Damn! 
 - 1230
-F 1234 4 0 Damn! 
-- 1238
-F 1242 4 0 That s 
-F 1250 3 0 a 
-F 1254 4 0 cold 
-F 1262 3 0 ass 
-F 1266 4 0 hon
-F 1274 4 0 key 
-- 1278
-F 1282 3 5 Ro
-F 1286 3 5 llin  
-F 1290 4 5 in 
-- 1294
-F 1298 3 5 He
-F 1302 3 5 lla 
-F 1306 4 5 deep 
-- 1310
-F 1314 3 5 Hea
-F 1318 3 5 din  
-F 1322 3 5 to 
-F 1326 3 5 the 
-F 1330 3 5 mez
-F 1334 3 5 za
-F 1338 4 5 nine, 
-- 1342
-F 1346 3 7 Dres
-F 1350 3 7 sed 
-F 1354 4 7 in 
-F 1362 3 7 all 
-F 1366 1 7 pink 
-- 1367
-F 1370 4 7 cept
-F 1378 3 7 my 
-F 1382 3 7 ga
-F 1386 3 7 tor 
-F 1390 1 7 shoes 
-- 1391
-F 1394 3 7 Those 
-F 1398 3 7 are 
-F 1402 4 7 green 
-- 1406
-F 1418 4 5 Draped 
-F 1423 3 5 in 
-F 1427 3 5 a 
-F 1431 3 5 leo
-F 1435 4 5 pard 
-F 1440 3 5 mink 
-- 1443
-F 1450 3 5 Girls 
-F 1454 3 5 standin  
-F 1458 3 5 next 
-F 1462 3 5 to 
-F 1466 4 5 me 
-- 1470
-F 1474 3 7 Pro
-F 1478 3 7 ba
-F 1482 3 7 bly 
-F 1486 3 7 shoul
-F 1490 3 7 da 
-F 1494 4 7 washed 
-F 1499 3 7 this, 
-- 1502
-F 1510 3 7 Smells 
-F 1514 3 7 like 
-F 1518 3 7 R. 
-F 1522 3 7 Ke
-F 1526 3 7 lly s 
-F 1530 4 7 sheets 
-- 1534
-F 1554 40 4 Piiisssssss 
-- 1594
-F 1613 4 0 But 
-F 1620 6 0 shit! 
-- 1626
-F 1629 3 0 It 
-F 1633 3 0 was 
-F 1637 3 0 nine
-F 1641 3 0 ty
-F 1645 4 0 nine 
-F 1652 5 0 cents! 
-- 1657
-F 1660 3 5 Bag 
-F 1664 2 5 it 
-- 1666
-F 1670 1 5 Cop
-F 1672 1 5 pin  
-F 1674 3 5 it 
-- 1677
-F 1680 3 5 Washin  
-F 1686 4 5 it 
-- 1690
-F 1694 3 5 bout
-F 1698 3 5 to 
-F 1702 3 5 go 
-F 1706 3 5 and 
-F 1710 3 5 get 
-F 1714 3 5 some 
-F 1718 3 5 compli
-F 1722 1 7 ments 
-- 1723
-F 1726 3 7 Pas
-F 1730 3 7 sin  
-F 1734 3 7 up 
-F 1738 3 7 on 
-F 1742 3 7 those 
-F 1746 3 7 moc
-F 1750 3 7 ca
-F 1754 1 7 sins 
-- 1755
-F 1758 3 7 So
-F 1762 3 7 meone 
-F 1766 3 7 else s 
-F 1770 3 7 been 
-F 1774 3 7 wal
-F 1778 3 7 kin  
-F 1782 4 7 in 
-- 1786
-F 1790 3 5 But 
-F 1794 3 5 me 
-F 1798 3 5 and 
-F 1802 3 5 grungy 
-F 1806 3 5 fuckin 
-F 1810 3 5 it 
-F 1814 4 5 man 
-- 1818
-F 1822 3 5 I 
-F 1826 3 5 am 
-F 1830 3 5 stun
-F 1834 3 5 tin  
-F 1838 3 5 and 
-F 1842 3 5 flossin  
-F 1846 4 5 and 
-- 1850
-F 1854 3 7 Sa
-F 1858 3 7 vin  
-F 1862 3 7 my 
-F 1866 3 7 mo
-F 1870 3 7 ney 
-F 1875 1 7 and 
-- 1876
-F 1878 3 7 I m 
-F 1882 3 7 he
-F 1886 3 7 lla 
-F 1890 3 7 hap
-F 1894 3 7 py 
-F 1898 3 7 that s 
-F 1902 3 7 a 
-F 1906 3 7 bar
-F 1910 1 7 gain 
+F 1234 4 0 That s 
+F 1242 3 0 a 
+F 1246 4 0 cold 
+F 1254 3 0 ass 
+F 1258 4 0 hon
+F 1266 4 0 key 
+- 1270
+F 1274 3 5 Ro
+F 1278 3 5 llin  
+F 1282 4 5 in 
+- 1286
+F 1290 3 5 He
+F 1294 3 5 lla 
+F 1298 4 5 deep 
+- 1302
+F 1306 3 5 Hea
+F 1310 3 5 din  
+F 1314 3 5 to 
+F 1318 3 5 the 
+F 1322 3 5 mez
+F 1326 3 5 za
+F 1330 4 5 nine, 
+- 1334
+F 1338 3 7 Dres
+F 1342 3 7 sed 
+F 1346 4 7 in 
+F 1354 3 7 all 
+F 1358 1 7 pink 
+- 1359
+F 1362 4 7 cept
+F 1370 3 7 my 
+F 1374 3 7 ga
+F 1378 3 7 tor 
+F 1382 1 7 shoes 
+- 1383
+F 1386 3 7 Those 
+F 1390 3 7 are 
+F 1394 4 7 green 
+- 1398
+F 1410 4 5 Draped 
+F 1415 3 5 in 
+F 1419 3 5 a 
+F 1423 3 5 leo
+F 1427 4 5 pard 
+F 1432 3 5 mink 
+- 1435
+F 1442 3 5 Girls 
+F 1446 3 5 standin  
+F 1450 3 5 next 
+F 1454 3 5 to 
+F 1458 4 5 me 
+- 1462
+F 1466 3 7 Pro
+F 1470 3 7 ba
+F 1474 3 7 bly 
+F 1478 3 7 shoul
+F 1482 3 7 da 
+F 1486 4 7 washed 
+F 1491 3 7 this, 
+- 1494
+F 1502 3 7 Smells 
+F 1506 3 7 like 
+F 1510 3 7 R. 
+F 1514 3 7 Ke
+F 1518 3 7 lly s 
+F 1522 4 7 sheets 
+- 1526
+F 1546 40 4 Piiisssssss 
+- 1586
+F 1605 4 0 But 
+F 1612 6 0 shit! 
+- 1618
+F 1621 3 0 It 
+F 1625 3 0 was 
+F 1629 3 0 nine
+F 1633 3 0 ty
+F 1637 4 0 nine 
+F 1644 5 0 cents! 
+- 1649
+F 1652 3 5 Bag 
+F 1656 2 5 it 
+- 1658
+F 1662 1 5 Cop
+F 1664 1 5 pin  
+F 1666 3 5 it 
+- 1669
+F 1672 3 5 Washin  
+F 1678 4 5 it 
+- 1682
+F 1686 3 5 bout
+F 1690 3 5 to 
+F 1694 3 5 go 
+F 1698 3 5 and 
+F 1702 3 5 get 
+F 1706 3 5 some 
+F 1710 3 5 compli
+F 1714 1 7 ments 
+- 1715
+F 1718 3 7 Pas
+F 1722 3 7 sin  
+F 1726 3 7 up 
+F 1730 3 7 on 
+F 1734 3 7 those 
+F 1738 3 7 moc
+F 1742 3 7 ca
+F 1746 1 7 sins 
+- 1747
+F 1750 3 7 So
+F 1754 3 7 meone 
+F 1758 3 7 else s 
+F 1762 3 7 been 
+F 1766 3 7 wal
+F 1770 3 7 kin  
+F 1774 4 7 in 
+- 1778
+F 1782 3 5 But 
+F 1786 3 5 me 
+F 1790 3 5 and 
+F 1794 3 5 grungy 
+F 1798 3 5 fuckin 
+F 1802 3 5 it 
+F 1806 4 5 man 
+- 1810
+F 1814 3 5 I 
+F 1818 3 5 am 
+F 1822 3 5 stun
+F 1826 3 5 tin  
+F 1830 3 5 and 
+F 1834 3 5 flossin  
+F 1838 4 5 and 
+- 1842
+F 1846 3 7 Sa
+F 1850 3 7 vin  
+F 1854 3 7 my 
+F 1858 3 7 mo
+F 1862 3 7 ney 
+F 1867 1 7 and 
+- 1868
+F 1870 3 7 I m 
+F 1874 3 7 he
+F 1878 3 7 lla 
+F 1882 3 7 hap
+F 1886 3 7 py 
+F 1890 3 7 that s 
+F 1894 3 7 a 
+F 1898 3 7 bar
+F 1902 1 7 gain 
+- 1903
+F 1906 5 0 Bitch 
 - 1911
-F 1914 5 0 Bitch 
-- 1919
-F 1922 3 5 I m 
-F 1926 3 5 a 
-F 1930 3 5 take 
-F 1934 3 5 your 
-F 1938 3 5 grand
-F 1942 3 5 pa s 
-F 1946 4 5 style 
-- 1950
-F 1954 3 5 I m 
-F 1958 3 5 a 
-F 1962 3 5 take 
-F 1966 3 5 your 
-F 1970 3 5 grand
-F 1974 3 5 pa s 
-F 1978 4 5 style 
-- 1982
-F 1986 3 7 No 
-F 1990 3 7 for 
-F 1994 4 7 real 
-- 1998
-F 2006 3 5 Ask 
-F 2010 3 5 your 
-F 2014 2 5 grand
-F 2017 2 5 pa 
-- 2019
-F 2022 2 5 Can 
-F 2025 2 5 I 
-F 2028 3 5 have 
-F 2032 3 5 his 
-F 2036 2 5 hand
-F 2039 2 5 me
-F 2042 4 5 downs? 
-- 2046
-F 2050 3 11 Thank 
-F 2054 4 11 you 
-- 2058
-F 2062 3 5 Ve
-F 2066 4 5 lour 
-F 2074 3 5 jump
-F 2078 4 5 suit 
-- 2082
-F 2086 3 5 And 
-F 2090 3 5 some 
-F 2094 4 5 house 
-F 2102 3 5 slip
-F 2106 4 5 pers 
-- 2110
-F 2114 3 7 Doo
-F 2118 3 7 kie 
-F 2122 4 7 brown 
-F 2130 3 7 lea
-F 2134 3 7 ther 
-F 2138 4 7 ja
-F 2144 2 7 cket 
-- 2146
-F 2150 2 7 That 
-F 2153 3 7 I 
-F 2157 3 7 found 
-F 2162 3 7 dig
-F 2167 4 11 gin  
-- 2171
-F 2176 3 5 They 
-F 2180 3 5 had 
-F 2184 3 5 a 
-F 2188 2 5 bro
-F 2191 2 5 ken 
-F 2194 2 5 key
-F 2197 4 5 board 
-- 2201
-F 2210 3 7 I 
-F 2214 3 7 bought 
-F 2218 3 7 a 
-F 2222 3 7 bro
-F 2226 3 7 ken 
-F 2230 3 7 key
-F 2234 2 7 board 
-- 2236
-F 2239 2 5 I 
-F 2242 3 5 bought 
-F 2246 3 5 a 
-F 2250 4 5 skeet 
-F 2258 3 5 blan
-F 2262 4 5 ket 
-- 2266
-F 2274 3 7 Then 
-F 2278 3 7 I 
-F 2282 3 7 bought 
-F 2286 3 7 a 
-F 2290 3 7 knee
-F 2294 4 7 board 
-- 2298
-F 2314 3 5 He
-F 2318 4 5 llo 
-- 2322
-F 2326 3 5 He
-F 2330 4 5 llo 
-- 2334
-F 2338 3 7 My 
-F 2342 3 7 ace 
-F 2346 1 7 man 
-- 2347
-F 2350 3 7 My 
-F 2354 3 7 Me
-F 2358 4 7 llo 
-- 2362
-F 2366 3 5 John 
-F 2370 4 5 Wayne 
-F 2378 4 5 ain t 
-F 2386 3 5 got 
-F 2390 2 5 nothing 
-- 2392
-F 2395 2 5 On 
-F 2398 3 5 my 
-F 2402 4 5 fringe 
-F 2410 4 5 game 
-- 2414
-F 2418 3 5 Hell 
-F 2422 8 11 no 
-- 2430
-F 2434 3 5 I 
-F 2438 3 5 could 
-F 2442 3 5 take 
-F 2446 3 5 some 
-F 2450 3 5 Pro 
-F 2454 4 5 Wings 
-- 2458
-F 2466 3 7 Make 
-F 2470 3 7 them 
-F 2474 4 7 cool 
-- 2478
-F 2482 3 7 Sell 
-F 2486 4 7 those 
-- 2490
-F 2494 4 5 The 
-F 2499 3 5 sneaker 
-F 2503 2 5 heads 
-F 2506 4 5 would 
-F 2514 3 5 be 
-F 2518 1 5 like 
-- 2519
-F 2522 3 5 "Aw, 
-F 2526 3 5 he 
-F 2530 4 5 got 
-F 2538 4 5 the 
-F 2546 3 5 Vel
-F 2550 4 5 cros" 
-- 2554
-* 2562 4 15 I m 
-: 2570 3 15 gon
-: 2574 3 15 na 
-: 2578 7 13 pop 
-: 2586 7 11 some 
-: 2594 12 8 tags 
-- 2606
-: 2610 3 8 On
-: 2614 3 8 ly 
-: 2618 4 8 got 
-* 2626 3 15 twen
-: 2630 3 15 ty 
-: 2634 3 15 dol
-: 2638 3 15 lars 
-: 2642 7 13 in 
-: 2650 7 11 my 
-: 2658 7 15 pock
-: 2666 16 13 et 
-- 2682
-* 2689 4 15 I... 
-- 2693
-* 2696 3 15 I... 
-- 2699
-: 2702 3 15 I m 
-: 2706 3 13 hunt
-: 2710 4 11 ing 
-- 2714
-: 2722 3 15 Look
-: 2726 3 15 ing 
-: 2730 3 15 for 
-: 2734 3 15 a 
-: 2738 3 13 come 
-: 2742 4 11 up 
-- 2746
-: 2754 7 15 This 
-: 2762 7 15 is 
-: 2770 7 13 fuck
-: 2778 7 11 ing 
-: 2786 7 8 awe
-: 2794 8 8 some 
-- 2802
-F 2810 5 0 Aw! 
-- 2815
-* 2818 4 15 I m 
-: 2826 3 15 gon
-: 2830 3 15 na 
-: 2834 7 13 pop 
-: 2842 7 11 some 
-: 2850 12 8 tags 
-- 2862
-: 2866 3 8 On
-: 2870 3 8 ly 
-: 2874 4 8 got 
-: 2882 3 15 twen
-: 2886 3 15 ty 
-: 2890 3 15 dol
-: 2894 3 15 lars 
-: 2898 7 13 in 
-: 2906 7 11 my 
-* 2914 7 15 pock
-: 2922 16 13 et 
-- 2938
-: 2944 4 15 I... 
-- 2948
-: 2952 3 15 I... 
-- 2955
-: 2958 3 15 I m 
-: 2962 3 13 hunt
-: 2966 4 11 ing 
-- 2970
-* 2978 3 15 Look
-: 2982 3 15 ing 
-: 2986 3 15 for 
-: 2990 3 15 a 
-: 2994 3 13 come 
-: 2998 4 11 up 
-- 3002
-: 3010 7 15 This 
-: 3018 7 15 is 
-: 3026 7 13 fuck
-: 3034 7 11 ing 
-: 3042 7 8 awe
-: 3050 8 8 some 
-- 3058
-F 3066 8 0 $ 
-- 3074
-F 3078 3 5 What 
-F 3082 1 5 you 
-F 3084 1 5 know 
-F 3086 3 5 about 
-F 3090 4 5 rockin  
-- 3094
-F 3098 4 5 A 
-F 3106 4 5 wolf 
-F 3114 4 5 on 
-F 3122 3 5 your 
-F 3126 4 5 noggin? 
-- 3130
-F 3138 3 7 What 
-F 3142 3 7 you 
-F 3146 4 7 knowin  
-F 3154 4 7 about 
-- 3158
-F 3162 3 7 Wea
-F 3166 3 7 rin  
-F 3170 4 7 a 
-F 3178 4 7 fur 
-F 3186 3 7 fox 
-F 3190 1 7 skin? 
-- 3191
-F 3194 4 0 Wow! 
-- 3198
-F 3202 3 5 I m 
-F 3206 3 5 dig
-F 3210 4 5 ging 
-- 3214
-F 3222 3 5 I m 
-F 3226 4 5 digging 
-- 3230
-F 3234 3 5 I m 
-F 3238 3 5 searching 
-F 3242 3 5 right 
-F 3246 3 5 through 
-F 3250 3 5 that 
-F 3254 3 5 lug
-F 3258 4 5 gage 
-- 3262
-F 3270 3 7 One 
-F 3274 4 7 man s 
-F 3282 4 7 trash 
-- 3286
-F 3290 3 7 That s 
-F 3294 3 7 an
-F 3298 3 7 o
-F 3302 4 7 ther 
-F 3310 3 7 man s 
-F 3314 3 0 come
-F 3318 1 7 up 
-- 3319
-F 3322 1 0 Wow! 
-- 3323
-F 3326 3 5 Thank 
-F 3330 3 5 your 
-F 3334 4 5 grandad 
-- 3338
-F 3346 4 5 For 
-F 3354 3 5 dona
-F 3358 3 5 ting 
-F 3362 4 5 that 
-F 3370 4 5 plaid 
-F 3378 4 5 button
-F 3390 4 5 up 
-F 3397 2 5 shirt 
-- 3399
-F 3402 3 7 Cause
-F 3406 4 7 right 
-F 3414 3 7 now 
-F 3418 3 7 I m 
-F 3422 4 7 up
-F 3430 3 7 in 
-F 3434 3 7 here 
-F 3438 3 7 stun
-F 3442 4 7 tin  
-- 3446
-F 3458 3 7 I m 
-F 3462 3 7 at 
-F 3466 3 7 the 
-F 3470 3 7 Good
-F 3474 1 7 will, 
-- 3475
-F 3478 3 7 You 
-F 3482 3 7 can 
-F 3486 3 7 find 
-F 3490 3 7 me 
-F 3494 3 7 in 
-F 3498 4 7 the 
-- 3502
-F 3506 4 7 Up
-F 3514 4 7 tons 
-- 3518
+F 1914 3 5 I m 
+F 1918 3 5 a 
+F 1922 3 5 take 
+F 1926 3 5 your 
+F 1930 3 5 grand
+F 1934 3 5 pa s 
+F 1938 4 5 style 
+- 1942
+F 1946 3 5 I m 
+F 1950 3 5 a 
+F 1954 3 5 take 
+F 1958 3 5 your 
+F 1962 3 5 grand
+F 1966 3 5 pa s 
+F 1970 4 5 style 
+- 1974
+F 1978 3 7 No 
+F 1982 3 7 for 
+F 1986 4 7 real 
+- 1990
+F 1998 3 5 Ask 
+F 2002 3 5 your 
+F 2006 2 5 grand
+F 2009 2 5 pa 
+- 2011
+F 2014 2 5 Can 
+F 2017 2 5 I 
+F 2020 3 5 have 
+F 2024 3 5 his 
+F 2028 2 5 hand
+F 2031 2 5 me
+F 2034 4 5 downs? 
+- 2038
+F 2042 3 11 Thank 
+F 2046 4 11 you 
+- 2050
+F 2054 3 5 Ve
+F 2058 4 5 lour 
+F 2066 3 5 jump
+F 2070 4 5 suit 
+- 2074
+F 2078 3 5 And 
+F 2082 3 5 some 
+F 2086 4 5 house 
+F 2094 3 5 slip
+F 2098 4 5 pers 
+- 2102
+F 2106 3 7 Doo
+F 2110 3 7 kie 
+F 2114 4 7 brown 
+F 2122 3 7 lea
+F 2126 3 7 ther 
+F 2130 4 7 ja
+F 2136 2 7 cket 
+- 2138
+F 2142 2 7 That 
+F 2145 3 7 I 
+F 2149 3 7 found 
+F 2154 3 7 dig
+F 2159 4 11 gin  
+- 2163
+F 2168 3 5 They 
+F 2172 3 5 had 
+F 2176 3 5 a 
+F 2180 2 5 bro
+F 2183 2 5 ken 
+F 2186 2 5 key
+F 2189 4 5 board 
+- 2193
+F 2202 3 7 I 
+F 2206 3 7 bought 
+F 2210 3 7 a 
+F 2214 3 7 bro
+F 2218 3 7 ken 
+F 2222 3 7 key
+F 2226 2 7 board 
+- 2228
+F 2231 2 5 I 
+F 2234 3 5 bought 
+F 2238 3 5 a 
+F 2242 4 5 skeet 
+F 2250 3 5 blan
+F 2254 4 5 ket 
+- 2258
+F 2266 3 7 Then 
+F 2270 3 7 I 
+F 2274 3 7 bought 
+F 2278 3 7 a 
+F 2282 3 7 knee
+F 2286 4 7 board 
+- 2290
+F 2306 3 5 He
+F 2310 4 5 llo 
+- 2314
+F 2318 3 5 He
+F 2322 4 5 llo 
+- 2326
+F 2330 3 7 My 
+F 2334 3 7 ace 
+F 2338 1 7 man 
+- 2339
+F 2342 3 7 My 
+F 2346 3 7 Me
+F 2350 4 7 llo 
+- 2354
+F 2358 3 5 John 
+F 2362 4 5 Wayne 
+F 2370 4 5 ain t 
+F 2378 3 5 got 
+F 2382 2 5 nothing 
+- 2384
+F 2387 2 5 On 
+F 2390 3 5 my 
+F 2394 4 5 fringe 
+F 2402 4 5 game 
+- 2406
+F 2410 3 5 Hell 
+F 2414 8 11 no 
+- 2422
+F 2426 3 5 I 
+F 2430 3 5 could 
+F 2434 3 5 take 
+F 2438 3 5 some 
+F 2442 3 5 Pro 
+F 2446 4 5 Wings 
+- 2450
+F 2458 3 7 Make 
+F 2462 3 7 them 
+F 2466 4 7 cool 
+- 2470
+F 2474 3 7 Sell 
+F 2478 4 7 those 
+- 2482
+F 2486 4 5 The 
+F 2491 3 5 sneaker 
+F 2495 2 5 heads 
+F 2498 4 5 would 
+F 2506 3 5 be 
+F 2510 1 5 like 
+- 2511
+F 2514 3 5 \"Aw, 
+F 2518 3 5 he 
+F 2522 4 5 got 
+F 2530 4 5 the 
+F 2538 3 5 Vel
+F 2542 4 5 cros\" 
+- 2546
+* 2554 4 15 I m 
+: 2562 3 15 gon
+: 2566 3 15 na 
+: 2570 7 13 pop 
+: 2578 7 11 some 
+: 2586 12 8 tags 
+- 2598
+: 2602 3 8 On
+: 2606 3 8 ly 
+: 2610 4 8 got 
+* 2618 3 15 twen
+: 2622 3 15 ty 
+: 2626 3 15 dol
+: 2630 3 15 lars 
+: 2634 7 13 in 
+: 2642 7 11 my 
+: 2650 7 15 pock
+: 2658 16 13 et 
+- 2674
+* 2681 4 15 I... 
+- 2685
+* 2688 3 15 I... 
+- 2691
+: 2694 3 15 I m 
+: 2698 3 13 hunt
+: 2702 4 11 ing 
+- 2706
+: 2714 3 15 Look
+: 2718 3 15 ing 
+: 2722 3 15 for 
+: 2726 3 15 a 
+: 2730 3 13 come 
+: 2734 4 11 up 
+- 2738
+: 2746 7 15 This 
+: 2754 7 15 is 
+: 2762 7 13 fuck
+: 2770 7 11 ing 
+: 2778 7 8 awe
+: 2786 8 8 some 
+- 2794
+F 2802 5 0 Aw! 
+- 2807
+* 2810 4 15 I m 
+: 2818 3 15 gon
+: 2822 3 15 na 
+: 2826 7 13 pop 
+: 2834 7 11 some 
+: 2842 12 8 tags 
+- 2854
+: 2858 3 8 On
+: 2862 3 8 ly 
+: 2866 4 8 got 
+: 2874 3 15 twen
+: 2878 3 15 ty 
+: 2882 3 15 dol
+: 2886 3 15 lars 
+: 2890 7 13 in 
+: 2898 7 11 my 
+* 2906 7 15 pock
+: 2914 16 13 et 
+- 2930
+: 2936 4 15 I... 
+- 2940
+: 2944 3 15 I... 
+- 2947
+: 2950 3 15 I m 
+: 2954 3 13 hunt
+: 2958 4 11 ing 
+- 2962
+* 2970 3 15 Look
+: 2974 3 15 ing 
+: 2978 3 15 for 
+: 2982 3 15 a 
+: 2986 3 13 come 
+: 2990 4 11 up 
+- 2994
+: 3002 7 15 This 
+: 3010 7 15 is 
+: 3018 7 13 fuck
+: 3026 7 11 ing 
+: 3034 7 8 awe
+: 3042 8 8 some 
+- 3050
+F 3058 8 0 $ 
+- 3066
+F 3070 3 5 What 
+F 3074 1 5 you 
+F 3076 1 5 know 
+F 3078 3 5 about 
+F 3082 4 5 rockin  
+- 3086
+F 3090 4 5 A 
+F 3098 4 5 wolf 
+F 3106 4 5 on 
+F 3114 3 5 your 
+F 3118 4 5 noggin? 
+- 3122
+F 3130 3 7 What 
+F 3134 3 7 you 
+F 3138 4 7 knowin  
+F 3146 4 7 about 
+- 3150
+F 3154 3 7 Wea
+F 3158 3 7 rin  
+F 3162 4 7 a 
+F 3170 4 7 fur 
+F 3178 3 7 fox 
+F 3182 1 7 skin? 
+- 3183
+F 3186 4 0 Wow! 
+- 3190
+F 3194 3 5 I m 
+F 3198 3 5 dig
+F 3202 4 5 ging 
+- 3206
+F 3214 3 5 I m 
+F 3218 4 5 digging 
+- 3222
+F 3226 3 5 I m 
+F 3230 3 5 searching 
+F 3234 3 5 right 
+F 3238 3 5 through 
+F 3242 3 5 that 
+F 3246 3 5 lug
+F 3250 4 5 gage 
+- 3254
+F 3262 3 7 One 
+F 3266 4 7 man s 
+F 3274 4 7 trash 
+- 3278
+F 3282 3 7 That s 
+F 3286 3 7 an
+F 3290 3 7 o
+F 3294 4 7 ther 
+F 3302 3 7 man s 
+F 3306 3 0 come
+F 3310 1 7 up 
+- 3311
+F 3314 1 0 Wow! 
+- 3315
+F 3318 3 5 Thank 
+F 3322 3 5 your 
+F 3326 4 5 grandad 
+- 3330
+F 3338 4 5 For 
+F 3346 3 5 dona
+F 3350 3 5 ting 
+F 3354 4 5 that 
+F 3362 4 5 plaid 
+F 3370 4 5 button
+F 3382 4 5 up 
+F 3389 2 5 shirt 
+- 3391
+F 3394 3 7 Cause
+F 3398 4 7 right 
+F 3406 3 7 now 
+F 3410 3 7 I m 
+F 3414 4 7 up
+F 3422 3 7 in 
+F 3426 3 7 here 
+F 3430 3 7 stun
+F 3434 4 7 tin  
+- 3438
+F 3450 3 7 I m 
+F 3454 3 7 at 
+F 3458 3 7 the 
+F 3462 3 7 Good
+F 3466 1 7 will, 
+- 3467
+F 3470 3 7 You 
+F 3474 3 7 can 
+F 3478 3 7 find 
+F 3482 3 7 me 
+F 3486 3 7 in 
+F 3490 4 7 the 
+- 3494
+F 3498 4 7 Up
+F 3506 4 7 tons 
+- 3510
+F 3514 3 5 I m 
+F 3518 1 5 not 
+- 3519
 F 3522 3 5 I m 
-F 3526 1 5 not 
-- 3527
-F 3530 3 5 I m 
-F 3534 3 5 not 
-F 3538 1 5 sick 
-- 3539
-F 3542 3 5 Of 
-F 3546 3 5 sear
-F 3550 3 5 chin  
-F 3554 3 5 in 
-F 3558 3 5 that 
-F 3562 3 5 sec
-F 3566 1 5 tion 
-- 3567
-F 3570 4 5 Up
-F 3578 1 7 tons 
-- 3579
-F 3582 3 7 Your 
-F 3586 3 7 gram
-F 3590 1 7 my 
-- 3591
-F 3594 3 7 Your 
-F 3598 3 5 aun
-F 3602 1 5 ty 
-- 3603
-F 3606 3 5 Your 
-F 3610 3 5 mom
-F 3614 1 5 ma 
-- 3615
-F 3618 3 5 Your 
-F 3622 3 5 mam
-F 3626 4 5 my 
-- 3630
-F 3634 3 7 I ll 
-F 3638 3 7 take 
-F 3642 3 7 those 
-F 3646 3 7 flan
-F 3650 1 7 nel 
-- 3651
-F 3654 3 7 Ze
-F 3658 3 7 bra 
-F 3662 3 7 jam
-F 3666 1 7 mies 
-- 3667
-F 3670 3 7 Se
-F 3674 3 7 cond
-F 3678 1 7 hand 
-- 3679
-F 3682 3 7 I 
-F 3686 4 7 rock 
-F 3694 1 7 that 
-- 3695
-F 3698 3 5 Mo
-F 3702 3 5 ther
-F 3706 3 5 fu
-F 3710 4 5 cker 
-- 3714
-F 3722 3 7 The 
-F 3726 3 7 builtin 
-F 3730 1 7 onesie 
-- 3731
-F 3734 4 7 With 
-F 3742 3 7 the 
-F 3746 3 7 socks 
-F 3750 3 7 on 
-F 3754 4 7 that 
-- 3758
-F 3762 3 5 Mo
-F 3766 3 5 ther
-F 3770 3 5 fu
-F 3774 4 5 cker 
-- 3778
-F 3782 3 7 I 
-F 3786 3 7 hit 
-F 3790 3 7 the 
-F 3794 3 7 party 
-F 3798 3 7 and 
-F 3802 3 7 they 
-F 3806 3 7 stop 
-F 3810 4 7 in 
-F 3818 4 7 that 
-- 3822
-F 3826 3 5 Mo
-F 3830 3 5 ther
-F 3834 3 5 fu
-F 3838 4 5 cker 
-- 3842
-F 3850 3 7 They 
-F 3854 3 7 be 
-F 3858 1 7 like 
-- 3859
-F 3862 4 7 Oh, 
-F 3870 3 7 that 
-F 3874 3 7 Guc
-F 3878 1 7 ci 
-- 3879
-F 3882 1 7 That s 
-F 3884 1 7 he
-F 3886 3 7 lla 
-F 3890 4 7 tight 
-- 3894
-F 3906 3 5 I m 
-F 3910 1 5 like 
-- 3911
-F 3914 4 5 Yo 
-- 3918
-F 3922 4 7 That s 
-F 3930 3 7 fif
-F 3934 3 7 ty 
-F 3938 3 7 do
-F 3942 3 7 llars 
-F 3946 3 7 for 
-F 3950 3 7 a 
-F 3954 3 7 T
-F 3958 1 7 -shirt 
+F 3526 3 5 not 
+F 3530 1 5 sick 
+- 3531
+F 3534 3 5 Of 
+F 3538 3 5 sear
+F 3542 3 5 chin  
+F 3546 3 5 in 
+F 3550 3 5 that 
+F 3554 3 5 sec
+F 3558 1 5 tion 
+- 3559
+F 3562 4 5 Up
+F 3570 1 7 tons 
+- 3571
+F 3574 3 7 Your 
+F 3578 3 7 gram
+F 3582 1 7 my 
+- 3583
+F 3586 3 7 Your 
+F 3590 3 5 aun
+F 3594 1 5 ty 
+- 3595
+F 3598 3 5 Your 
+F 3602 3 5 mom
+F 3606 1 5 ma 
+- 3607
+F 3610 3 5 Your 
+F 3614 3 5 mam
+F 3618 4 5 my 
+- 3622
+F 3626 3 7 I ll 
+F 3630 3 7 take 
+F 3634 3 7 those 
+F 3638 3 7 flan
+F 3642 1 7 nel 
+- 3643
+F 3646 3 7 Ze
+F 3650 3 7 bra 
+F 3654 3 7 jam
+F 3658 1 7 mies 
+- 3659
+F 3662 3 7 Se
+F 3666 3 7 cond
+F 3670 1 7 hand 
+- 3671
+F 3674 3 7 I 
+F 3678 4 7 rock 
+F 3686 1 7 that 
+- 3687
+F 3690 3 5 Mo
+F 3694 3 5 ther
+F 3698 3 5 fu
+F 3702 4 5 cker 
+- 3706
+F 3714 3 7 The 
+F 3718 3 7 builtin 
+F 3722 1 7 onesie 
+- 3723
+F 3726 4 7 With 
+F 3734 3 7 the 
+F 3738 3 7 socks 
+F 3742 3 7 on 
+F 3746 4 7 that 
+- 3750
+F 3754 3 5 Mo
+F 3758 3 5 ther
+F 3762 3 5 fu
+F 3766 4 5 cker 
+- 3770
+F 3774 3 7 I 
+F 3778 3 7 hit 
+F 3782 3 7 the 
+F 3786 3 7 party 
+F 3790 3 7 and 
+F 3794 3 7 they 
+F 3798 3 7 stop 
+F 3802 4 7 in 
+F 3810 4 7 that 
+- 3814
+F 3818 3 5 Mo
+F 3822 3 5 ther
+F 3826 3 5 fu
+F 3830 4 5 cker 
+- 3834
+F 3842 3 7 They 
+F 3846 3 7 be 
+F 3850 1 7 like 
+- 3851
+F 3854 4 7 Oh, 
+F 3862 3 7 that 
+F 3866 3 7 Guc
+F 3870 1 7 ci 
+- 3871
+F 3874 1 7 That s 
+F 3876 1 7 he
+F 3878 3 7 lla 
+F 3882 4 7 tight 
+- 3886
+F 3898 3 5 I m 
+F 3902 1 5 like 
+- 3903
+F 3906 4 5 Yo 
+- 3910
+F 3914 4 7 That s 
+F 3922 3 7 fif
+F 3926 3 7 ty 
+F 3930 3 7 do
+F 3934 3 7 llars 
+F 3938 3 7 for 
+F 3942 3 7 a 
+F 3946 3 7 T
+F 3950 1 7 -shirt 
+- 3951
+F 3954 1 -6 # 
+- 3955
+F 3956 1 -6 @ 
+- 3957
+F 3958 1 -6 
 - 3959
-F 3962 1 -6 # 
-- 3963
-F 3964 1 -6 @ 
-- 3965
-F 3966 1 -6 
-- 3967
-F 3968 1 -6 * 
-- 3969
-F 3974 3 7 Li
-F 3978 3 7 mi
-F 3982 3 7 ted 
-F 3986 3 7 edi
-F 3990 1 7 tion 
-- 3991
-F 3994 3 7 Let s 
-F 3998 3 7 do 
-F 4002 3 7 some 
-F 4006 3 7 sim
-F 4010 3 7 ple 
-F 4014 3 7 addi
-: 4018 1 7 tion 
-- 4019
-F 4022 4 5 Fif
-F 4030 3 5 ty 
-F 4034 3 5 do
-F 4038 3 5 llars 
-F 4042 3 5 for 
-F 4046 3 5 a 
-F 4050 3 5 T
-F 4054 1 5 -shirt 
-- 4055
-F 4058 3 5 That s 
-F 4062 3 5 just 
-F 4066 3 5 some 
-F 4070 3 5 ig
-F 4074 4 5 no
-F 4082 3 5 rant 
-F 4086 5 5 bitch 
-- 4091
-F 4094 8 0 Shit 
-- 4102
-F 4106 3 5 I 
-F 4110 4 5 call 
-F 4118 3 5 that 
-F 4122 3 7 get
-F 4126 3 7 ting 
-F 4130 3 7 swin
-F 4134 3 7 dled 
-F 4138 4 7 and 
-F 4146 4 7 pimped 
-- 4150
-F 4162 1 0 Shit 
-- 4163
-F 4166 4 7 I 
-F 4174 3 7 call 
-F 4178 4 7 that 
-F 4186 3 7 getting 
-F 4190 3 7 tricked 
-F 4194 4 7 by 
-F 4202 4 7 a 
-F 4210 4 7 bu
-F 4218 4 0 siness 
-- 4222
-F 4226 3 5 That 
-F 4230 4 5 shirt s 
-F 4238 7 5 he
-F 4246 4 5 lla 
-F 4254 4 0 dough 
-- 4258
-F 4266 4 5 And 
-F 4272 4 5 hav
-F 4277 4 5 ing 
-F 4282 4 5 the 
-F 4288 3 7 same 
-F 4292 1 7 one 
-- 4293
-F 4296 3 7 As
-F 4300 3 7 six 
-F 4304 3 7 o
-F 4308 4 7 ther 
-F 4316 3 7 people 
-F 4320 3 7 in 
-F 4324 3 7 this 
-F 4328 3 7 club 
-- 4331
-F 4334 3 7 Is 
-F 4338 3 7 a 
-F 4342 3 7 he
-F 4346 3 7 lla 
-F 4350 4 0 don t 
-- 4354
-F 4358 4 7 Peep 
-F 4366 4 7 game 
-- 4370
-F 4374 4 7 Come 
-F 4382 3 7 take 
-F 4386 3 7 a 
-F 4390 4 7 look 
-F 4398 3 7 through 
-F 4402 3 7 my 
-F 4406 3 7 te
-F 4410 3 7 les
-F 4414 1 7 cope 
-- 4415
-F 4418 3 5 Trying 
-F 4422 3 5 to 
-F 4426 4 5 get 
-F 4438 3 5 girls 
-F 4442 4 5 from 
-F 4450 3 5 a 
-F 4454 1 5 brand? 
-- 4455
-F 4458 4 5 Man 
-F 4466 3 5 you 
-F 4470 3 5 hella 
-F 4474 4 5 won t 
-- 4478 4497
-- 4497
-F 4522 3 7 Man 
-F 4526 3 7 you 
-F 4530 3 7 he
-F 4534 3 7 lla 
-F 4538 4 7 won t 
-- 4542 4577
-- 4577
-F 4602 4 7 Good
-F 4610 4 7 will... 
-- 4614 4633
-- 4633
-F 4658 4 7 Pop
-F 4666 4 7 pin  
-F 4674 16 7 tags... 
-- 4690
-F 4714 4 7 Yeah! 
-- 4718
-F 4730 4 7 Aw! 
-- 4734
-* 4738 4 15 I m 
-: 4746 3 15 gon
-: 4750 3 15 na 
-: 4754 7 13 pop 
-: 4762 7 11 some 
-: 4770 12 8 tags 
-- 4782
-* 4786 3 8 On
-: 4790 3 8 ly 
-: 4794 4 8 got 
-: 4802 3 15 twen
-: 4806 3 15 ty 
-: 4810 3 15 dol
-: 4814 3 15 lars 
-: 4818 7 13 in 
-: 4826 7 11 my 
-: 4834 7 15 pock
-: 4842 16 13 et 
-- 4858
-: 4865 4 15 I... 
-- 4869
-: 4873 2 15 I... 
-- 4875
-: 4878 3 15 I m 
-: 4882 3 13 hunt
-: 4886 4 11 ing 
-- 4890
-: 4898 3 15 Look
-: 4902 3 15 ing 
-: 4906 3 15 for 
-: 4910 3 15 a 
-: 4914 3 13 come 
-: 4918 4 11 up 
-- 4922
-* 4930 7 15 This 
-: 4938 7 15 is 
-: 4946 7 13 fuck
-: 4954 7 11 ing 
-: 4962 7 8 awe
-: 4970 8 8 some 
-- 4978
-: 5002 7 15 I 
-: 5010 7 15 wear 
-: 5018 7 8 your 
-: 5026 7 11 grand
-: 5034 7 11 dad s 
-: 5042 12 8 clothes 
-- 5054
-* 5066 7 15 I 
-: 5074 7 15 look 
-: 5082 7 8 in
-: 5090 7 11 cre
-: 5098 7 11 di
-: 5106 12 8 ble 
-- 5118
-* 5130 7 15 I m 
-: 5138 7 15 in 
-: 5146 7 8 this 
-: 5154 7 11 big 
-: 5162 7 11 ass 
-: 5170 12 8 coat 
-- 5182
-* 5186 7 11 From 
-* 5194 7 13 that 
-* 5202 7 15 thrift 
-: 5210 7 8 shop 
-: 5218 7 11 down 
-: 5226 7 11 the 
-: 5234 16 8 road 
-- 5250
-: 5258 7 15 I 
-: 5266 7 15 wear 
-: 5274 7 8 your 
-: 5282 7 11 grand
-: 5290 7 11 dad s 
-: 5298 12 8 clothes 
-- 5310
-* 5322 7 15 I 
-: 5330 7 15 look 
-: 5338 7 8 in
-: 5346 7 11 cre
-: 5354 7 11 di
-: 5362 12 8 ble 
-- 5374
-* 5386 7 15 I m 
-: 5394 7 15 in 
-: 5402 7 8 this 
-: 5410 7 11 big 
-: 5418 7 11 ass 
-: 5426 12 8 coat 
-- 5438
-: 5442 7 11 From 
-: 5450 7 13 that 
-: 5458 7 15 thrift 
-: 5466 7 8 shop 
-: 5474 7 11 down 
-: 5482 7 11 the 
-: 5490 13 8 road 
-- 5503
-: 5506 4 15 I m 
-: 5514 3 15 gon
-: 5518 3 15 na 
-: 5522 7 13 pop 
-: 5530 7 11 some 
-: 5538 12 8 tags 
-- 5550
-: 5554 3 8 On
-: 5558 3 8 ly 
-: 5562 4 8 got 
-* 5570 3 15 twen
-: 5574 3 15 ty 
-: 5578 3 15 dol
-: 5582 3 15 lars 
-: 5586 7 13 in 
-: 5594 7 11 my 
-: 5602 7 15 pock
-: 5610 16 13 et 
-- 5626
-: 5632 4 15 I... 
-- 5636
-: 5640 3 15 I... 
-- 5643
-: 5646 3 15 I m 
-: 5650 3 13 hunt
-: 5654 4 11 ing 
-- 5658
-* 5666 3 15 Look
-: 5670 3 15 ing 
-: 5674 3 15 for 
-: 5678 3 15 a 
-: 5682 3 13 come 
-: 5686 4 11 up 
-- 5690
-: 5698 7 15 This 
-: 5706 7 15 is 
-: 5714 7 13 fuck
-: 5722 7 11 ing 
-: 5730 7 8 awe
-: 5738 8 8 some 
-- 5746
-F 5754 4 2 Wow 
-- 5758
-F 5770 3 4 Ah 
-F 5774 3 4 ah 
-F 5778 3 4 ah 
-F 5782 4 4 ah 
-- 5786
-F 5806 3 5 Is 
-F 5810 4 5 that 
-F 5818 4 5 your 
-F 5826 4 5 grand
-F 5834 4 5 ma s 
-F 5842 4 5 coat? 
+F 3960 1 -6 * 
+- 3961
+F 3966 3 7 Li
+F 3970 3 7 mi
+F 3974 3 7 ted 
+F 3978 3 7 edi
+F 3982 1 7 tion 
+- 3983
+F 3986 3 7 Let s 
+F 3990 3 7 do 
+F 3994 3 7 some 
+F 3998 3 7 sim
+F 4002 3 7 ple 
+F 4006 3 7 addi
+: 4010 1 7 tion 
+- 4011
+F 4014 4 5 Fif
+F 4022 3 5 ty 
+F 4026 3 5 do
+F 4030 3 5 llars 
+F 4034 3 5 for 
+F 4038 3 5 a 
+F 4042 3 5 T
+F 4046 1 5 -shirt 
+- 4047
+F 4050 3 5 That s 
+F 4054 3 5 just 
+F 4058 3 5 some 
+F 4062 3 5 ig
+F 4066 4 5 no
+F 4074 3 5 rant 
+F 4078 5 5 bitch 
+- 4083
+F 4086 8 0 Shit 
+- 4094
+F 4098 3 5 I 
+F 4102 4 5 call 
+F 4110 3 5 that 
+F 4114 3 7 get
+F 4118 3 7 ting 
+F 4122 3 7 swin
+F 4126 3 7 dled 
+F 4130 4 7 and 
+F 4138 4 7 pimped 
+- 4142
+F 4154 1 0 Shit 
+- 4155
+F 4158 4 7 I 
+F 4166 3 7 call 
+F 4170 4 7 that 
+F 4178 3 7 getting 
+F 4182 3 7 tricked 
+F 4186 4 7 by 
+F 4194 4 7 a 
+F 4202 4 7 bu
+F 4210 4 0 siness 
+- 4214
+F 4218 3 5 That 
+F 4222 4 5 shirt s 
+F 4230 7 5 he
+F 4238 4 5 lla 
+F 4246 4 0 dough 
+- 4250
+F 4258 4 5 And 
+F 4264 4 5 hav
+F 4269 4 5 ing 
+F 4274 4 5 the 
+F 4280 3 7 same 
+F 4284 1 7 one 
+- 4285
+F 4288 3 7 As
+F 4292 3 7 six 
+F 4296 3 7 o
+F 4300 4 7 ther 
+F 4308 3 7 people 
+F 4312 3 7 in 
+F 4316 3 7 this 
+F 4320 3 7 club 
+- 4323
+F 4326 3 7 Is 
+F 4330 3 7 a 
+F 4334 3 7 he
+F 4338 3 7 lla 
+F 4342 4 0 don t 
+- 4346
+F 4350 4 7 Peep 
+F 4358 4 7 game 
+- 4362
+F 4366 4 7 Come 
+F 4374 3 7 take 
+F 4378 3 7 a 
+F 4382 4 7 look 
+F 4390 3 7 through 
+F 4394 3 7 my 
+F 4398 3 7 te
+F 4402 3 7 les
+F 4406 1 7 cope 
+- 4407
+F 4410 3 5 Trying 
+F 4414 3 5 to 
+F 4418 4 5 get 
+F 4430 3 5 girls 
+F 4434 4 5 from 
+F 4442 3 5 a 
+F 4446 1 5 brand? 
+- 4447
+F 4450 4 5 Man 
+F 4458 3 5 you 
+F 4462 3 5 hella 
+F 4466 4 5 won t 
+- 4470 4489
+- 4489
+F 4514 3 7 Man 
+F 4518 3 7 you 
+F 4522 3 7 he
+F 4526 3 7 lla 
+F 4530 4 7 won t 
+- 4534 4569
+- 4569
+F 4594 4 7 Good
+F 4602 4 7 will... 
+- 4606 4625
+- 4625
+F 4650 4 7 Pop
+F 4658 4 7 pin  
+F 4666 16 7 tags... 
+- 4682
+F 4706 4 7 Yeah! 
+- 4710
+F 4722 4 7 Aw! 
+- 4726
+* 4730 4 15 I m 
+: 4738 3 15 gon
+: 4742 3 15 na 
+: 4746 7 13 pop 
+: 4754 7 11 some 
+: 4762 12 8 tags 
+- 4774
+* 4778 3 8 On
+: 4782 3 8 ly 
+: 4786 4 8 got 
+: 4794 3 15 twen
+: 4798 3 15 ty 
+: 4802 3 15 dol
+: 4806 3 15 lars 
+: 4810 7 13 in 
+: 4818 7 11 my 
+: 4826 7 15 pock
+: 4834 16 13 et 
+- 4850
+: 4857 4 15 I... 
+- 4861
+: 4865 2 15 I... 
+- 4867
+: 4870 3 15 I m 
+: 4874 3 13 hunt
+: 4878 4 11 ing 
+- 4882
+: 4890 3 15 Look
+: 4894 3 15 ing 
+: 4898 3 15 for 
+: 4902 3 15 a 
+: 4906 3 13 come 
+: 4910 4 11 up 
+- 4914
+* 4922 7 15 This 
+: 4930 7 15 is 
+: 4938 7 13 fuck
+: 4946 7 11 ing 
+: 4954 7 8 awe
+: 4962 8 8 some 
+- 4970
+: 4994 7 15 I 
+: 5002 7 15 wear 
+: 5010 7 8 your 
+: 5018 7 11 grand
+: 5026 7 11 dad s 
+: 5034 12 8 clothes 
+- 5046
+* 5058 7 15 I 
+: 5066 7 15 look 
+: 5074 7 8 in
+: 5082 7 11 cre
+: 5090 7 11 di
+: 5098 12 8 ble 
+- 5110
+* 5122 7 15 I m 
+: 5130 7 15 in 
+: 5138 7 8 this 
+: 5146 7 11 big 
+: 5154 7 11 ass 
+: 5162 12 8 coat 
+- 5174
+* 5178 7 11 From 
+* 5186 7 13 that 
+* 5194 7 15 thrift 
+: 5202 7 8 shop 
+: 5210 7 11 down 
+: 5218 7 11 the 
+: 5226 16 8 road 
+- 5242
+: 5250 7 15 I 
+: 5258 7 15 wear 
+: 5266 7 8 your 
+: 5274 7 11 grand
+: 5282 7 11 dad s 
+: 5290 12 8 clothes 
+- 5302
+* 5314 7 15 I 
+: 5322 7 15 look 
+: 5330 7 8 in
+: 5338 7 11 cre
+: 5346 7 11 di
+: 5354 12 8 ble 
+- 5366
+* 5378 7 15 I m 
+: 5386 7 15 in 
+: 5394 7 8 this 
+: 5402 7 11 big 
+: 5410 7 11 ass 
+: 5418 12 8 coat 
+- 5430
+: 5434 7 11 From 
+: 5442 7 13 that 
+: 5450 7 15 thrift 
+: 5458 7 8 shop 
+: 5466 7 11 down 
+: 5474 7 11 the 
+: 5482 13 8 road 
+- 5495
+: 5498 4 15 I m 
+: 5506 3 15 gon
+: 5510 3 15 na 
+: 5514 7 13 pop 
+: 5522 7 11 some 
+: 5530 12 8 tags 
+- 5542
+: 5546 3 8 On
+: 5550 3 8 ly 
+: 5554 4 8 got 
+* 5562 3 15 twen
+: 5566 3 15 ty 
+: 5570 3 15 dol
+: 5574 3 15 lars 
+: 5578 7 13 in 
+: 5586 7 11 my 
+: 5594 7 15 pock
+: 5602 16 13 et 
+- 5618
+: 5624 4 15 I... 
+- 5628
+: 5632 3 15 I... 
+- 5635
+: 5638 3 15 I m 
+: 5642 3 13 hunt
+: 5646 4 11 ing 
+- 5650
+* 5658 3 15 Look
+: 5662 3 15 ing 
+: 5666 3 15 for 
+: 5670 3 15 a 
+: 5674 3 13 come 
+: 5678 4 11 up 
+- 5682
+: 5690 7 15 This 
+: 5698 7 15 is 
+: 5706 7 13 fuck
+: 5714 7 11 ing 
+: 5722 7 8 awe
+: 5730 8 8 some 
+- 5738
+F 5746 4 2 Wow 
+- 5750
+F 5762 3 4 Ah 
+F 5766 3 4 ah 
+F 5770 3 4 ah 
+F 5774 4 4 ah 
+- 5778
+F 5798 3 5 Is 
+F 5802 4 5 that 
+F 5810 4 5 your 
+F 5818 4 5 grand
+F 5826 4 5 ma s 
+F 5834 4 5 coat? 
 E
