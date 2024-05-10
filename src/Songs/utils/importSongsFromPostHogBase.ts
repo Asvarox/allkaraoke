@@ -6,16 +6,14 @@ const API_URL = 'https://eu.posthog.com';
 const PROJECT_ID = '281';
 const AFTER_DATE = new Date(Date.now() - 1000 * 3600 * 24 * 28).toISOString();
 
+const suffixes = ['(tv)', '(album version)', '(movie version)', '[duet]'];
+
 const normalizeSong = (song: Song): Song => {
-  if (song.title.toLowerCase().trim().endsWith('[duet]')) {
-    song.title = song.title.slice(0, -6);
-  } else if (song.title.toLowerCase().endsWith('(tv)')) {
-    song.title = song.title.slice(0, -4);
-  } else if (song.title.toLowerCase().endsWith('(album version)')) {
-    song.title = song.title.slice(0, -15);
-  } else if (song.title.toLowerCase().endsWith('(movie version)')) {
-    song.title = song.title.slice(0, -15);
-  }
+  suffixes.forEach((suffix) => {
+    if (song.title.toLowerCase().endsWith(suffix)) {
+      song.title = song.title.slice(0, -suffix.length);
+    }
+  });
   song.title = song.title.trim();
 
   song.language = song.language.map((lang) => {

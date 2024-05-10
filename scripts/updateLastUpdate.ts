@@ -17,8 +17,8 @@ console.log(files);
     const contents = readFileSync(file, 'utf-8');
     const data = convertTxtToSong(contents);
 
-    // await updateLastUpdate(data);
-    // await updateArtistOrigin(data);
+    await updateLastUpdate(data);
+    await updateArtistOrigin(data);
 
     writeFileSync(file, convertSongToTxt(data), 'utf-8');
   }

@@ -36,4 +36,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Update songs from user ${{ github.event.inputs.user_id }}'
-          commit_options: '--no-verify'
