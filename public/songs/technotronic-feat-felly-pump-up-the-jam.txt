@@ -1,0 +1,589 @@
+#ARTIST:Technotronic feat. Felly
+#TITLE:Pump Up The Jam
+#CREATOR:Jiafei
+#BPM:249,54
+#YEAR:1989
+#VIDEO:v=9EcjWd-O4jI
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:14368,119740322192
+#ALLKARAOKE_ID:technotronic-feat-felly-pump-up-the-jam
+#ALLKARAOKE_LASTUPDATE:2024-05-08T17:28:40.353Z
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_VOLUME:0,73
+#MP3:Technotronic feat. Felly - Pump Up The Jam.mp3
+R 17 4 12 Pump 
+R 25 3 12 up 
+R 29 3 12 the 
+R 33 4 12 jam 
+- 37
+R 41 3 7 Pump 
+R 45 3 7 it 
+R 49 4 7 up 
+- 53
+R 57 3 12 While 
+R 61 3 12 your 
+R 65 3 12 feet 
+R 69 3 12 are 
+R 75 3 12 stomp
+R 79 3 12 ing 
+- 82
+R 89 3 7 And 
+R 93 3 7 the 
+R 97 3 7 jam 
+R 101 3 7 is 
+R 107 3 7 pump
+R 111 3 7 ing 
+- 114
+R 115 3 12 Look 
+R 119 1 12 a
+R 121 3 12 head 
+R 125 3 12 the 
+R 129 3 12 crowd 
+R 133 3 12 is 
+R 137 3 12 jump
+R 141 3 12 ing 
+- 144
+R 153 3 7 Pump 
+R 157 3 7 it 
+R 161 4 7 up 
+R 167 1 12 a 
+R 169 1 12 litt
+R 171 3 12 le 
+R 175 3 12 more 
+- 178
+R 179 3 7 Get 
+R 183 1 7 the 
+R 185 3 7 par
+R 189 3 7 ty 
+- 192
+R 193 1 7 Go
+R 195 1 7 ing 
+R 197 1 7 on 
+R 199 1 7 the 
+R 201 3 7 dance
+R 207 3 7 floor 
+- 210
+R 217 3 12 See 
+R 221 1 12 ’cause 
+R 223 3 12 that’s 
+R 227 3 12 where 
+R 231 1 12 the 
+R 233 3 12 par
+R 237 1 12 ty’s 
+R 239 3 12 at 
+- 242
+R 243 3 7 And 
+R 247 3 7 you’ll 
+R 251 3 7 find 
+R 255 3 7 out 
+R 259 3 7 if 
+R 263 1 7 you 
+R 265 3 7 do 
+R 269 3 7 that 
+- 272
+: 289 7 31 I 
+: 297 4 32 don't want 
+- 301
+: 317 3 24 A 
+: 321 3 31 place
+: 325 4 29 ~ 
+: 331 3 29 to 
+: 335 4 27 stay 
+- 339
+: 345 4 31 Get 
+: 351 1 29 your 
+: 353 5 29 boot
+: 359 1 27 y 
+- 360
+: 361 5 27 On 
+: 367 1 29 the 
+: 369 4 31 floor 
+: 375 1 24 to
+: 377 3 24 night
+: 381 4 27 ~ 
+- 385
+: 389 3 24 Make 
+: 394 3 24 my 
+: 399 3 24 day 
+- 402
+: 417 7 31 I 
+: 425 4 32 don't want 
+- 429
+: 445 3 24 A 
+* 449 3 31 place
+: 453 4 29 ~ 
+: 459 3 29 to 
+: 463 4 27 stay 
+- 467
+: 473 4 31 Get 
+: 479 1 29 your 
+: 481 5 29 boot
+: 487 1 27 y 
+- 488
+: 489 5 27 On 
+: 495 1 29 the 
+: 497 4 31 floor 
+: 503 1 24 to
+: 505 3 24 night
+: 509 4 27 ~ 
+- 513
+: 517 3 24 Make 
+: 522 3 24 my 
+: 527 3 24 day 
+- 530 532
+- 532
+: 549 3 24 Make 
+: 554 3 24 my 
+: 559 6 27 day 
+- 565
+: 581 3 24 Make 
+: 586 3 24 my 
+: 591 3 24 day 
+- 594 596
+- 596
+: 613 3 24 Make 
+: 618 3 24 my 
+: 623 6 27 day 
+- 629
+: 645 3 24 Make 
+: 650 3 24 my 
+: 655 3 24 day 
+- 658 760
+- 760
+R 777 3 12 Yo, 
+R 785 4 12 pump 
+R 793 3 12 up 
+R 797 3 12 the 
+R 801 4 12 jam 
+- 805
+R 809 3 7 Pump 
+R 813 3 7 it 
+R 817 4 7 up 
+- 821
+R 825 3 12 While 
+R 829 3 12 your 
+R 833 3 12 feet 
+R 837 3 12 are 
+R 843 3 12 stomp
+R 847 3 12 ing 
+- 850
+R 857 3 7 And 
+R 861 3 7 the 
+R 865 3 7 jam 
+R 869 3 7 is 
+R 875 3 7 pump
+R 879 3 7 ing 
+- 882
+R 883 3 12 Look 
+R 887 1 12 a
+R 889 3 12 head 
+R 893 3 12 the 
+R 897 3 12 crowd 
+R 901 3 12 is 
+R 905 3 12 jump
+R 909 3 12 ing 
+- 912
+R 921 3 7 Pump 
+R 925 3 7 it 
+R 929 4 7 up 
+R 935 1 12 a 
+R 937 1 12 litt
+R 939 3 12 le 
+R 943 3 12 more 
+- 946
+R 947 3 7 Get 
+R 951 1 7 the 
+R 953 3 7 par
+R 957 3 7 ty 
+- 960
+R 961 1 7 Go
+R 963 1 7 ing 
+R 965 1 7 on 
+R 967 1 7 the 
+R 969 3 7 dance
+R 975 3 7 floor 
+- 978
+R 985 3 12 See 
+R 989 1 12 ’cause 
+R 991 3 12 that’s 
+R 995 3 12 where 
+R 999 1 12 the 
+R 1001 3 12 par
+R 1005 1 12 ty’s 
+R 1007 3 12 at 
+- 1010
+R 1011 3 7 And 
+R 1015 3 7 you’ll 
+R 1019 3 7 find 
+R 1023 3 7 out 
+R 1027 3 7 if 
+R 1031 1 7 you 
+R 1033 3 7 do 
+R 1037 3 7 that 
+- 1040
+: 1057 7 31 I 
+: 1065 4 32 don't want 
+- 1069
+: 1085 3 24 A 
+: 1089 3 31 place
+: 1093 4 29 ~ 
+: 1099 3 29 to 
+: 1103 4 27 stay 
+- 1107
+: 1113 4 31 Get 
+: 1119 1 29 your 
+: 1121 5 29 boot
+: 1127 1 27 y 
+- 1128
+: 1129 5 27 On 
+: 1135 1 29 the 
+: 1137 4 31 floor 
+: 1143 1 24 to
+: 1145 3 24 night
+: 1149 4 27 ~ 
+- 1153
+: 1157 3 24 Make 
+: 1162 3 24 my 
+: 1167 3 24 day 
+- 1170
+: 1185 7 31 I 
+* 1193 4 32 don't want 
+- 1197
+: 1213 3 24 A 
+: 1217 3 31 place
+: 1221 4 29 ~ 
+: 1227 3 29 to 
+: 1231 4 27 stay 
+- 1235
+: 1241 4 31 Get 
+: 1247 1 29 your 
+: 1249 5 29 boot
+: 1255 1 27 y 
+- 1256
+: 1257 5 27 On 
+: 1263 1 29 the 
+: 1265 4 31 floor 
+: 1271 1 24 to
+: 1273 3 24 night
+: 1277 4 27 ~ 
+- 1281
+: 1285 3 24 Make 
+: 1290 3 24 my 
+: 1295 3 24 day 
+- 1298 1300
+- 1300
+: 1317 3 24 Make 
+: 1322 3 24 my 
+: 1327 3 24 day 
+- 1330 1332
+- 1332
+: 1349 3 24 Make 
+: 1354 3 24 my, 
+: 1361 3 24 make 
+: 1366 3 24 my 
+- 1369
+: 1373 3 24 Make, 
+: 1381 3 24 make 
+: 1386 3 24 my 
+: 1391 3 24 day 
+- 1394
+: 1409 3 28 Make
+* 1413 3 27 ~ 
+: 1418 3 24 my 
+: 1423 6 27 day 
+- 1429
+: 1445 3 24 Make 
+: 1450 3 24 my 
+: 1455 3 24 day 
+- 1458 1460
+- 1460
+: 1477 3 24 Make 
+: 1482 3 24 my, 
+: 1489 3 24 make 
+: 1494 3 24 my 
+- 1497
+: 1501 3 24 Make, 
+: 1509 3 24 make 
+: 1514 3 24 my 
+: 1519 3 24 day 
+- 1522 1528
+- 1528
+R 1545 3 12 Yo, 
+R 1553 4 12 pump 
+R 1561 3 12 up 
+R 1565 3 12 the 
+R 1569 4 12 jam 
+- 1573
+R 1577 3 7 Pump 
+R 1581 3 7 it 
+R 1585 4 7 up 
+- 1589
+R 1591 1 12 A 
+R 1593 3 12 pump 
+R 1597 1 12 it 
+R 1599 3 12 up 
+R 1605 3 12 yo 
+R 1609 3 12 pump 
+R 1613 3 12 it 
+- 1616
+R 1617 4 12 Pump 
+R 1625 3 12 up 
+R 1629 3 12 the 
+R 1633 4 12 jam 
+- 1637
+R 1641 3 7 Pump 
+R 1645 1 7 it 
+R 1647 3 7 up 
+- 1650
+R 1655 1 12 A 
+R 1657 3 12 pump 
+R 1661 1 12 it 
+R 1663 3 12 up 
+R 1669 3 12 yo 
+R 1673 3 12 pump 
+R 1677 3 12 it 
+- 1680
+R 1681 4 12 Pump 
+R 1689 3 12 up 
+R 1693 3 12 the 
+R 1697 4 12 jam 
+- 1701
+R 1705 3 7 Pump 
+R 1709 3 7 it 
+R 1713 4 7 up 
+- 1717
+R 1719 1 12 A 
+R 1721 3 12 pump 
+R 1725 1 12 it 
+R 1727 3 12 up 
+R 1733 3 12 yo 
+R 1737 3 12 pump 
+R 1741 3 12 it 
+- 1744
+R 1745 4 12 Pump 
+R 1753 3 12 up 
+R 1757 3 12 the 
+R 1761 4 12 jam 
+- 1765
+R 1769 3 7 Pump 
+R 1773 3 7 it, 
+R 1777 3 7 pump 
+R 1781 3 7 it 
+- 1784
+R 1785 3 7 Pump 
+R 1789 3 7 it, 
+R 1793 3 7 pump 
+R 1797 3 7 it, 
+R 1801 3 7 yo 
+- 1804 2048
+- 2048
+R 2065 4 12 Pump 
+R 2073 3 12 up 
+R 2077 3 12 the 
+R 2081 4 12 jam 
+- 2085
+R 2095 1 7 A 
+R 2097 4 7 pump 
+R 2105 3 7 up 
+R 2109 3 7 the 
+R 2113 4 7 jam 
+- 2117
+R 2129 4 12 Pump 
+R 2137 3 12 up 
+R 2141 3 12 the 
+R 2145 4 12 jam 
+- 2149
+R 2153 3 7 Pump 
+R 2157 3 7 it 
+R 2161 3 7 up 
+- 2164
+R 2167 1 12 A 
+R 2169 3 12 pump 
+R 2173 3 12 it, 
+R 2177 3 12 pump 
+R 2181 3 12 it, 
+R 2185 3 12 pump 
+R 2189 3 12 it 
+- 2192
+R 2193 4 12 Pump 
+R 2201 3 12 up 
+R 2205 3 12 the 
+R 2209 4 12 jam 
+- 2213
+R 2225 4 7 Pump 
+R 2233 3 7 up 
+R 2237 3 7 the 
+R 2241 4 7 jam 
+- 2245
+R 2257 4 12 Pump 
+R 2265 3 12 up 
+R 2269 3 12 the 
+R 2273 4 12 jam 
+- 2277
+R 2281 3 7 Pump 
+R 2285 3 7 it, 
+R 2289 3 7 pump 
+R 2293 3 7 it 
+- 2296
+R 2297 3 7 Pump 
+R 2301 3 7 it, 
+R 2305 3 7 pump 
+R 2309 3 7 it, 
+R 2313 3 7 pump 
+- 2316 2560
+- 2560
+R 2577 4 12 Pump 
+R 2585 3 12 up 
+R 2589 3 12 the 
+R 2593 4 12 jam 
+- 2597
+R 2601 3 7 Pump 
+R 2605 3 7 it 
+R 2609 4 7 up 
+- 2613
+R 2617 3 12 While 
+R 2621 3 12 your 
+R 2625 3 12 feet 
+R 2629 3 12 are 
+R 2635 3 12 stomp
+R 2639 3 12 ing 
+- 2642
+R 2649 3 7 And 
+R 2653 3 7 the 
+R 2657 3 7 jam 
+R 2661 3 7 is 
+R 2667 3 7 pump
+R 2671 3 7 ing 
+- 2674
+R 2675 3 12 Look 
+R 2679 1 12 a
+R 2681 3 12 head 
+R 2685 3 12 the 
+R 2689 3 12 crowd 
+R 2693 3 12 is 
+R 2697 3 12 jump
+R 2701 3 12 ing 
+- 2704
+R 2713 3 7 Pump 
+R 2717 3 7 it 
+R 2721 4 7 up 
+R 2727 1 12 a 
+R 2729 1 12 litt
+R 2731 3 12 le 
+R 2735 3 12 more 
+- 2738
+R 2739 3 7 Get 
+R 2743 1 7 the 
+R 2745 3 7 par
+R 2749 3 7 ty 
+- 2752
+R 2753 1 7 Go
+R 2755 1 7 ing 
+R 2757 1 7 on 
+R 2759 1 7 the 
+R 2761 3 7 dance
+R 2767 3 7 floor 
+- 2770
+R 2777 3 12 See 
+R 2781 1 12 ’cause 
+R 2783 3 12 that’s 
+R 2787 3 12 where 
+R 2791 1 12 the 
+R 2793 3 12 par
+R 2797 1 12 ty’s 
+R 2799 3 12 at 
+- 2802
+R 2803 3 7 And 
+R 2807 3 7 you’ll 
+R 2811 3 7 find 
+R 2815 3 7 out 
+R 2819 3 7 if 
+R 2823 1 7 you 
+R 2825 3 7 do 
+R 2829 3 7 that 
+- 2832
+: 2849 7 31 I 
+: 2857 4 32 don't want 
+- 2861
+: 2877 3 24 A 
+: 2881 3 31 place
+: 2885 4 29 ~ 
+: 2891 3 29 to 
+: 2895 4 27 stay 
+- 2899
+: 2905 4 31 Get 
+: 2911 1 29 your 
+: 2913 5 29 boot
+: 2919 1 27 y 
+- 2920
+: 2921 5 27 On 
+: 2927 1 29 the 
+: 2929 4 31 floor 
+: 2935 1 24 to
+: 2937 3 24 night
+: 2941 4 27 ~ 
+- 2945
+: 2949 3 24 Make 
+: 2954 3 24 my 
+: 2959 3 24 day 
+- 2962
+: 2977 7 31 I 
+: 2985 4 32 don't want 
+- 2989
+: 3005 3 24 A 
+: 3009 3 31 place
+: 3013 4 29 ~ 
+: 3019 3 29 to 
+: 3023 4 27 stay 
+- 3027
+: 3033 4 31 Get 
+: 3039 1 29 your 
+: 3041 5 29 boot
+: 3047 1 27 y 
+- 3048
+: 3049 5 27 On 
+: 3055 1 29 the 
+: 3057 4 31 floor 
+: 3063 1 24 to
+: 3065 3 24 night
+: 3069 4 27 ~ 
+- 3073
+: 3077 3 24 Make 
+: 3082 3 24 my 
+: 3087 3 24 day 
+- 3090
+: 3105 7 31 I 
+: 3113 4 32 don't want 
+- 3117
+: 3133 3 24 A 
+: 3137 3 31 place
+: 3141 4 29 ~ 
+: 3147 3 29 to 
+: 3151 4 27 stay 
+- 3155
+: 3161 4 31 Get 
+: 3167 1 29 your 
+: 3169 5 29 boot
+: 3175 1 27 y 
+- 3176
+: 3177 5 27 On 
+: 3183 1 29 the 
+: 3185 4 31 floor 
+: 3191 1 24 to
+* 3193 3 24 night
+: 3197 4 27 ~ 
+- 3201
+: 3205 3 24 Make 
+: 3210 3 24 my 
+: 3215 3 24 day 
+- 3218
+: 3233 7 31 I 
+: 3241 4 32 don't want 
+- 3245
+: 3261 3 24 A 
+: 3265 3 31 place
+: 3269 4 29 ~ 
+: 3275 3 29 to 
+: 3279 4 27 stay 
+E
