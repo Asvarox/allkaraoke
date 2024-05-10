@@ -31,6 +31,8 @@ jobs:
         uses: './.github/templates/setup-node'
       - name: Get songs
         run: pnpm ts-node scripts/cicd/githubActionImportSongs.ts "${{ github.event.inputs.user_id }}" "${{ github.event.inputs.date_from }}" "${{ github.event.inputs.date_to }}"
+      - name: Update stats
+        run: pnpm ts-node scripts/generateSongStats.ts
       - name: Auto commit updated snapshots
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v5
