@@ -19,6 +19,8 @@ import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
 import songStats from './songStats.json';
 
+export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
+
 function LandingPage() {
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
   const navigate = useSmoothNavigate();
@@ -39,7 +41,7 @@ function LandingPage() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowTypewriter(true);
-    }, 4000);
+    }, 4_000);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -72,7 +74,8 @@ function LandingPage() {
             </StatsDescription>
             <hr />
             <StatText>
-              ▸ <strong>{songStats.songs}</strong> songs in <strong>{songStats.languages.length}</strong> languages
+              ▸ <strong>{formatter.format(songStats.songs)}</strong> songs in{' '}
+              <strong>{songStats.languages.length}</strong> languages
               <StatSubText>
                 Artists such as{' '}
                 <strong>
