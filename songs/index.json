@@ -62303,34 +62303,6 @@
     "local": false
   },
   {
-    "id": "yoasobi-idol-tv",
-    "title": "Idol (TV)",
-    "artist": "YOASOBI",
-    "video": "PgBvV9ofjmA",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 332.04,
-    "gap": 137.37079869895194,
-    "year": "2023",
-    "artistOrigin": "JP",
-    "lastUpdate": "2024-05-06T03:51:41.054Z",
-    "genre": "Anime",
-    "realBpm": 166,
-    "previewStart": 55,
-    "previewEnd": 77,
-    "volume": 0.78,
-    "author": "Beneblade",
-    "tracks": [
-      {
-        "start": 15
-      }
-    ],
-    "tracksCount": 1,
-    "search": "yoasobiidoltv",
-    "local": false
-  },
-  {
     "id": "yoasobi-idol",
     "title": "Idol",
     "artist": "YOASOBI",
