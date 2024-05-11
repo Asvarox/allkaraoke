@@ -9,7 +9,7 @@
 #LANGUAGE:English
 #GAP:216,8421052631579
 #ALLKARAOKE_ID:macklemore-ryan-lewis-feat-wanz-thrift-shop
-#ALLKARAOKE_LASTUPDATE:2024-05-10T09:44:18.020Z
+#ALLKARAOKE_LASTUPDATE:2024-05-11T06:35:35.951Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
 #ALLKARAOKE_REALBPM:190
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=15450
