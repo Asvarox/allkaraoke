@@ -7,12 +7,14 @@
 #VIDEOGAP:1
 #GENRE:Pop
 #LANGUAGE:English
-#GAP:22705,535714285714
+#GAP:22755,535714285714
 #ALLKARAOKE_ID:the-cure-boys-dont-cry
+#ALLKARAOKE_LASTUPDATE:2024-05-11T06:37:30.299Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=kodaman
 #ALLKARAOKE_REALBPM:168
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Boys%20Don't%20Cry
+#ALLKARAOKE_VOLUME:0,5
 : 45 8 13 I 
 : 61 4 13 would 
 : 69 12 14 say 
