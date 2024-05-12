@@ -6,9 +6,9 @@
 #VIDEO:v=pXRviuL6vMY
 #GENRE:Pop
 #LANGUAGE:English
-#GAP:15625,29411764706
+#GAP:15475,29411764706
 #ALLKARAOKE_ID:twenty-one-pilots-stressed-out
-#ALLKARAOKE_LASTUPDATE:2023-10-15T11:26:31.338Z
+#ALLKARAOKE_LASTUPDATE:2024-05-12T06:56:56.999Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:170
 #ALLKARAOKE_VOLUME:0,75
@@ -475,14 +475,14 @@ F 2180 2 0 der
 - 3172
 : 3176 3 -1 Say
 : 3181 2 -1 ing, 
-: 3185 3 0 "Wake 
+: 3185 3 0 \"Wake 
 : 3192 3 0 up, 
 : 3197 2 0 you 
 : 3201 2 2 need 
 : 3205 1 0 to 
 : 3208 3 0 make 
 : 3216 4 0 mon
-: 3221 3 -1 ey." 
+: 3221 3 -1 ey.\" 
 - 3224
 F 3233 4 -5 Yeah 
 - 3237
@@ -536,14 +536,14 @@ F 3233 4 -5 Yeah
 - 3428
 : 3433 2 -1 Say
 : 3437 1 -1 ing, 
-: 3440 4 0 "Wake 
+: 3440 4 0 \"Wake 
 : 3448 3 0 up, 
 : 3454 2 0 you 
 : 3457 2 2 need 
 : 3462 1 0 to 
 : 3465 3 0 make 
 : 3473 3 0 mon
-: 3478 2 -1 ey." 
+: 3478 2 -1 ey.\" 
 - 3480
 F 3489 4 -5 Yeah 
 - 3493 3502
