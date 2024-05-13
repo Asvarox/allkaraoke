@@ -4,53 +4,52 @@
 #BPM:240,22
 #YEAR:2007
 #VIDEO:v=8sgycukafqQ
-#VIDEOGAP:-1
 #LANGUAGE:English
-#GAP:41894,91582715844
+#GAP:42544,91582715844
 #ALLKARAOKE_ID:linkin-park-what-ive-done
+#ALLKARAOKE_LASTUPDATE:2024-05-13T07:51:10.561Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=paranoik
 #ALLKARAOKE_REALBPM:58
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=What%20I've%20done
-- -15 1
-- 1
+#ALLKARAOKE_VOLUME:0,5
 : 16 7 10 In 
 : 24 7 10 this 
 : 32 8 9 fare
 : 41 12 10 well
-- 54
+- 53
 : 60 3 7 There's 
 : 64 3 9 no 
 : 68 14 10 blood
-- 83
+- 82
 : 92 3 7 There's 
 : 96 3 9 no 
 : 100 8 10 a
 : 109 7 7 li
 : 117 13 7 bi
-- 131
+- 130
 : 140 3 7 Cause 
 : 144 7 10 I've 
 : 152 7 10 drawn 
 : 160 7 9 re
 : 168 13 10 gret
-- 182
+- 181
 : 188 3 7 From 
 : 192 3 9 the 
 : 196 14 10 truth
-- 211
+- 210
 : 220 3 7 Of 
 : 224 3 9 a 
 : 228 7 10 thou
 : 236 7 7 sand 
 : 244 14 7 lies
-- 259
+- 258
 : 268 3 7 So 
 : 272 6 14 let 
 : 280 7 14 mer
 : 288 7 12 cy 
 : 296 18 10 come
-- 315
+- 314
 : 324 3 7 And 
 : 328 13 12 wash 
 : 346 11 14 a
@@ -65,7 +64,7 @@
 : 456 6 17 face 
 : 464 7 15 my
 : 472 13 14 self
-- 486
+- 485
 : 493 3 14 To 
 : 497 6 17 cross 
 : 504 5 17 out
@@ -80,7 +79,7 @@
 : 584 7 17 rase 
 : 593 6 15 my
 : 600 13 14 self
-- 614
+- 613
 : 620 3 14 And 
 : 624 7 17 let 
 : 632 7 17 go 
@@ -94,35 +93,35 @@
 : 700 3 14 Put 
 : 704 3 12 to 
 : 708 11 10 rest
-- 720
+- 719
 : 732 3 7 What 
 : 736 3 9 you 
 : 740 7 10 thought 
 : 748 6 7 of 
 : 756 12 7 me
-- 769
+- 768
 : 780 3 7 While 
 : 784 7 10 I 
 : 792 7 10 clean 
 : 800 5 9 this 
 : 808 10 10 slate
-- 819
+- 818
 : 828 3 7 With 
 : 832 3 9 the 
 : 836 12 10 hands
-- 849
+- 848
 : 860 3 7 Of 
 : 864 3 9 un
 : 868 7 10 cer
 : 876 8 12 tain
 : 885 12 12 ty
-- 898
+- 897
 : 908 3 7 So 
 : 912 6 14 let 
 : 920 7 14 mer
 : 928 6 12 cy 
 : 936 18 10 come
-- 955
+- 954
 : 964 3 7 And 
 : 968 14 12 wash 
 : 988 10 14 a
@@ -137,7 +136,7 @@
 : 1096 7 17 face 
 : 1104 7 15 my
 : 1112 13 14 self
-- 1126
+- 1125
 : 1133 3 14 To 
 : 1137 6 17 cross 
 : 1144 5 17 out
@@ -152,7 +151,7 @@
 : 1224 7 17 rase 
 : 1233 6 15 my
 : 1240 13 14 self
-- 1254
+- 1253
 : 1260 3 14 And 
 : 1264 7 17 let 
 : 1272 7 17 go 
@@ -161,9 +160,9 @@
 : 1288 26 19 What
 : 1314 5 17 ~ 
 : 1320 24 17 I've
-- 1345
+- 1344
 * 1354 84 19 Done
-- 1454 1584
+- 1438 1584
 - 1584
 : 1600 7 14 For 
 : 1608 11 19 what
@@ -190,7 +189,7 @@
 : 1808 4 15 this
 : 1812 3 14 ~ 
 : 1816 13 14 ends
-- 1830
+- 1829
 : 1836 3 14 I'm 
 : 1840 7 17 for
 : 1848 7 17 giv
@@ -199,14 +198,14 @@
 : 1864 27 19 What
 : 1891 4 17 ~ 
 : 1896 24 17 I've
-- 1921
+- 1920
 * 1929 23 19 Done
 - 1952
 : 1956 3 14 I'll 
 : 1960 7 17 face 
 : 1969 6 15 my
 : 1976 13 14 self
-- 1990
+- 1989
 : 1997 3 14 To 
 : 2001 6 17 cross 
 : 2008 5 17 out
@@ -221,7 +220,7 @@
 : 2088 7 17 rase 
 : 2097 6 15 my
 : 2104 13 14 self
-- 2118
+- 2117
 : 2124 3 14 And 
 : 2128 7 17 let 
 : 2136 7 17 go 
@@ -232,7 +231,7 @@
 : 2168 13 17 I've
 - 2181
 * 2186 84 19 Done
-- 2271
+- 2270
 : 2280 12 19 What
 : 2292 3 17 ~ 
 : 2296 13 17 I've
