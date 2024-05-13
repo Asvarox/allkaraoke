@@ -50,6 +50,11 @@ dotenv.config({ path: '.env.local' });
         console.log('Song has no ID', song);
         return;
       }
+      // keep old last update time if the song exists
+      if (fs.existsSync(`./public/songs/${song.id}.txt`)) {
+        const oldSong = convertTxtToSong(fs.readFileSync(`./public/songs/${song.id}.txt`, 'utf-8'));
+        song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
+      }
       fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
       console.log(`Added/updated song ${song.id}`);
     } catch (e) {

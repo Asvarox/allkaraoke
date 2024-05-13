@@ -5,6 +5,7 @@ import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 import InputLag from 'Scenes/Settings/InputLag';
 import useKeyboardNav from 'hooks/useKeyboardNav';
+import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect, useRef, useState } from 'react';
 import isE2E from 'utils/isE2E';
 
@@ -15,6 +16,7 @@ interface Props {
 }
 
 export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
+  const navigate = useSmoothNavigate();
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const inputLagRef = useRef<HTMLInputElement | null>(null);
 
@@ -52,6 +54,11 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
             </MenuButton>
             <hr />
             <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
+            <MenuButton
+              {...register('edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}
+              size="small">
+              Edit song
+            </MenuButton>
           </MenuContainer>
           {isInputModalOpen && (
             <SelectInputModal onClose={() => setIsInputModalOpen(false)} closeButtonText={'Back to Pause Menu'} />

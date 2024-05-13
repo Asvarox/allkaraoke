@@ -10,6 +10,16 @@ const importSongsFromPostHog = async () => {
   }
   sessionStorage.setItem('posthog_key', posthogKey);
 
+  const defaultFrom = new Date();
+  defaultFrom.setDate(defaultFrom.getDate() - 10);
+
+  let from = prompt('Enter from', localStorage.getItem('posthog_from') || defaultFrom.toISOString());
+  if (from === null) {
+    return;
+  }
+  from = new Date(from).toISOString();
+
+  localStorage.setItem('posthog_from', new Date().toISOString());
   const makeRequest = async (url: string) => {
     const response = await fetch(url, {
       headers: {
@@ -24,9 +34,15 @@ const importSongsFromPostHog = async () => {
     return response.json();
   };
 
-  await importSongsFromPostHogBase(makeRequest, await SongsService.getIndex(true), [], async (song: Song) => {
-    return SongsService.store(song);
-  });
+  await importSongsFromPostHogBase(
+    makeRequest,
+    await SongsService.getIndex(true),
+    [],
+    async (song: Song) => {
+      return SongsService.store(song);
+    },
+    from,
+  );
 };
 
 export default importSongsFromPostHog;

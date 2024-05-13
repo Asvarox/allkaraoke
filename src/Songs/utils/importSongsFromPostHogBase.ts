@@ -43,9 +43,10 @@ export const importSongsFromPostHogBase = async (
   currentSongs: SongPreview[],
   fetchedSongIds: string[],
   onSongAdded: (song: Song) => Promise<void>,
+  from?: string,
 ) => {
   const response = await mkRequest(
-    `${API_URL}/api/projects/${PROJECT_ID}/events?event=share-song&after=${AFTER_DATE}&limit=200`,
+    `${API_URL}/api/projects/${PROJECT_ID}/events?event=share-song&after=${from ?? AFTER_DATE}&limit=200`,
   );
 
   await Promise.all(

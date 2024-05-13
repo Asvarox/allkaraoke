@@ -42,6 +42,9 @@ export default function SongList(props: Props) {
       {
         accessorKey: 'title',
         header: 'Title',
+        Cell: ({ renderedCellValue, row }) => (
+          <Link to={buildUrl(`game/`, { song: row.original.id, playlist: 'All' })}>{renderedCellValue}</Link>
+        ),
       },
       {
         accessorKey: 'year',
