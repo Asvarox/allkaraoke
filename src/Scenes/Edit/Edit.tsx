@@ -1,10 +1,14 @@
 import styled from '@emotion/styled';
 import Convert from 'Scenes/Convert/Convert';
 import useSong from 'Songs/hooks/useSong';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import useBackgroundMusic from 'hooks/useBackgroundMusic';
 import useQueryParam from 'hooks/useQueryParam';
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
+
+dayjs.extend(relativeTime);
 
 export default function Edit() {
   const songId = useQueryParam('song');
@@ -18,15 +22,31 @@ export default function Edit() {
       <Helmet>
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      <div>
+      <TopBar>
         <Link to="edit/list/">
           <a>Return to the song list</a>
         </Link>
-      </div>
+        <span>
+          Editing:{' '}
+          <b>
+            {song.data.artist} - {song.data.title}
+          </b>
+        </span>
+        <abbr title={song.data.lastUpdate}>
+          Last updated: <b>{song.data.lastUpdate ? dayjs(song.data.lastUpdate).fromNow() : '-'}</b>
+        </abbr>
+      </TopBar>
       <Convert song={song.data} />
     </Container>
   );
 }
+
+const TopBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+`;
 
 const Container = styled.div`
   margin: 30px auto 0 auto;
