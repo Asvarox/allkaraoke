@@ -17,7 +17,7 @@ dotenv.config({ path: '.env.local' });
   let dateFrom = argDateFrom !== '' ? new Date(argDateFrom) : undefined;
   if (dateFrom === undefined) {
     dateFrom = new Date();
-    dateFrom.setDate(dateFrom.getDate() - 1);
+    dateFrom.setDate(dateFrom.getDate() - 2);
   } else if (isNaN(dateFrom.getTime())) {
     throw new Error(`Invalid date from: "${argDateFrom}"`);
   }
@@ -36,7 +36,7 @@ dotenv.config({ path: '.env.local' });
             from events
             where events.created_at > toDateTime('${dateFrom.toISOString()}')
               and events.created_at < toDateTime('${dateTo.toISOString()}')
-              and events.properties.$user_id = '${userId}'
+              and events.properties.$user_id IN('${userId.split(',').join("','")}')
               and event IN ('share-song')
         `,
       },
