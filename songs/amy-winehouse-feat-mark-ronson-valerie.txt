@@ -5,9 +5,9 @@
 #YEAR:2008
 #VIDEO:v=bixuI_GV5I0
 #LANGUAGE:English
-#GAP:59371,91969887076
+#GAP:59321,91969887076
 #ALLKARAOKE_ID:amy-winehouse-feat-mark-ronson-valerie
-#ALLKARAOKE_LASTUPDATE:2023-01-29T00:03:57.819Z
+#ALLKARAOKE_LASTUPDATE:2024-05-15T15:38:07.840Z
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=haek
 #ALLKARAOKE_REALBPM:106
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse+feat.+Mark+Ronson
