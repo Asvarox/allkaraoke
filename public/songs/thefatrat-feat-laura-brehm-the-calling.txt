@@ -1,0 +1,284 @@
+#ARTIST:TheFatRat feat. Laura Brehm
+#TITLE:The Calling
+#CREATOR:Jeff54
+#BPM:220,07
+#YEAR:2016
+#PREVIEWSTART:60
+#VIDEO:v=KR-eV7fHNbM
+#GENRE:Electronic
+#LANGUAGE:English
+#GAP:16947,59803698823
+#ALLKARAOKE_ID:thefatrat-feat-laura-brehm-the-calling
+#ALLKARAOKE_LASTUPDATE:2024-05-15T17:29:18.089Z
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_PREVIEWEND:91
+#ALLKARAOKE_VOLUME:0,71
+#MP3:TheFatRat feat. Laura Brehm - The Calling.mp3
+: 15 9 4 Still 
+- 24 28
+- 28
+: 43 2 -1 And 
+: 47 2 2 si
+: 51 3 -1 lent 
+- 54 65
+- 65
+: 80 3 6 Calm 
+: 88 2 6 be
+: 93 4 6 fore 
+: 101 3 2 the 
+: 109 8 4 storm 
+- 117 129
+- 129
+* 144 7 4 Gold 
+- 151 156
+- 156
+: 171 2 -1 And 
+: 175 2 2 dia
+: 179 3 -1 mond 
+- 182 192
+- 192
+: 207 5 6 Jewels 
+: 216 2 6 be
+: 220 5 6 hind 
+: 228 4 7 the 
+: 236 7 4 throne 
+- 243
+: 255 2 4 In
+: 259 2 6 to 
+: 263 2 4 the 
+: 267 5 -1 night 
+- 272 273
+- 273
+: 288 2 4 Out 
+: 292 2 6 of 
+: 296 2 4 the 
+: 300 6 -1 dark 
+- 306
+: 319 2 -1 Take 
+: 323 2 1 to 
+: 327 2 2 the 
+: 331 8 6 sky 
+- 339
+: 351 2 6 Cha
+: 355 2 7 sing 
+: 359 2 2 the 
+* 363 11 4 stars 
+- 374
+: 384 2 4 All 
+: 388 2 6 that 
+: 392 2 4 we 
+: 396 9 -1 said 
+- 405
+: 415 2 4 All 
+: 419 2 6 that 
+: 423 2 4 we 
+: 427 7 -1 are 
+- 434
+: 448 2 -1 Wait
+: 452 2 1 ing 
+: 456 2 2 to 
+* 460 7 6 fly 
+- 467
+: 480 2 6 This 
+: 484 2 7 is 
+: 488 2 2 the 
+: 492 8 4 start 
+- 500 529
+- 529
+: 544 2 4 Hide 
+: 548 5 4 and 
+: 556 10 2 seek 
+- 566
+: 576 2 7 Rea
+: 580 2 7 son 
+: 584 2 7 and 
+: 588 9 6 rhyme 
+- 597
+: 608 6 2 Grand 
+: 616 2 2 and 
+: 620 5 1 glo
+: 628 2 -1 ri
+: 632 14 -3 ous 
+- 646 657
+- 657
+: 672 2 4 Li
+: 676 2 4 ving 
+: 680 2 4 the 
+* 684 8 2 dream 
+- 692
+: 703 5 7 Yours 
+: 711 2 7 and 
+: 715 14 6 mine 
+- 729 730
+- 730
+: 745 2 2 Eu
+: 748 2 1 pho
+: 752 2 2 ri
+: 756 16 4 a 
+- 772 784
+- 784
+: 799 2 4 Hide 
+: 803 5 4 and 
+: 811 10 2 seek 
+- 821
+: 832 2 7 Rea
+: 836 2 7 son 
+: 840 2 7 and 
+: 844 8 6 rhyme 
+- 852
+: 863 6 2 Grand 
+: 871 2 2 and 
+: 875 6 1 glo
+: 883 3 -1 ri
+: 887 14 -3 ous 
+- 901 912
+- 912
+: 927 2 4 Li
+: 931 2 4 ving 
+: 935 2 4 the 
+: 939 8 2 dream 
+- 947
+: 959 6 7 Yours 
+: 967 3 7 and 
+: 971 14 6 mine 
+- 985 989
+- 989
+* 1004 2 6 Eu
+* 1008 2 6 pho
+* 1012 2 7 ri
+* 1016 29 9 a 
+- 1045 1440
+- 1440
+: 1455 12 4 Stone 
+- 1467 1469
+- 1469
+: 1484 2 -1 And 
+: 1488 2 2 fea
+: 1492 8 -1 ther 
+- 1500 1505
+- 1505
+: 1520 5 6 Move 
+: 1528 2 6 out
+: 1532 5 6 side 
+: 1540 5 2 your 
+: 1548 8 4 head 
+- 1556 1569
+- 1569
+: 1584 6 4 Now 
+- 1590 1597
+- 1597
+: 1612 2 -1 Or 
+: 1616 2 2 ne
+: 1620 7 -1 ver 
+- 1627 1633
+- 1633
+* 1648 5 6 Strong 
+: 1656 2 6 in 
+: 1660 6 6 e
+: 1668 5 7 very 
+: 1676 7 4 step 
+- 1683
+: 1696 2 4 Give 
+: 1700 2 6 me 
+: 1704 2 4 a 
+: 1708 6 -1 sign 
+- 1714
+: 1728 2 4 Hit
+: 1732 2 6 ting 
+: 1736 2 4 the 
+: 1740 5 -1 mark 
+- 1745
+: 1760 2 -1 Take 
+: 1764 2 1 to 
+: 1768 2 2 the 
+* 1772 8 6 sky 
+- 1780
+: 1792 3 6 Cha
+: 1796 3 7 sing 
+: 1800 3 2 the 
+: 1804 9 4 stars 
+- 1813
+: 1823 1 4 O
+: 1827 2 6 pen 
+: 1831 2 4 your 
+: 1835 8 -1 eyes 
+- 1843
+: 1855 2 4 Watch
+: 1859 2 6 ing 
+: 1863 2 4 a
+: 1867 8 -1 far 
+- 1875
+: 1888 2 -1 Wait
+: 1892 2 1 ing 
+: 1896 2 2 to 
+: 1900 9 6 fly 
+- 1909
+: 1920 2 6 This 
+: 1924 2 7 is 
+: 1928 2 2 the 
+: 1932 8 4 start 
+- 1940 1968
+- 1968
+: 1983 2 4 Hide 
+: 1987 5 4 and 
+: 1995 10 2 seek 
+- 2005
+: 2017 2 7 Rea
+: 2021 2 7 son 
+: 2025 2 7 and 
+: 2029 9 6 rhyme 
+- 2038
+: 2048 6 2 Grand 
+: 2056 2 2 and 
+* 2060 6 1 glo
+* 2068 2 -1 ri
+* 2072 14 -3 ous 
+- 2086 2097
+- 2097
+: 2112 2 4 Li
+: 2116 2 4 ving 
+: 2120 2 4 the 
+: 2124 8 2 dream 
+- 2132
+: 2143 5 7 Yours 
+: 2151 3 7 and 
+: 2155 14 6 mine 
+- 2169 2173
+- 2173
+: 2188 2 7 Eu
+: 2192 2 6 pho
+: 2196 2 7 ri
+: 2200 22 9 a 
+- 2222 2609
+- 2609
+: 2624 2 4 Hide 
+: 2628 5 4 and 
+: 2636 10 2 seek 
+- 2646
+: 2657 2 7 Rea
+: 2661 2 7 son 
+: 2665 2 7 and 
+: 2669 9 6 rhyme 
+- 2678
+: 2689 5 2 Grand 
+: 2697 3 2 and 
+: 2701 5 1 glo
+: 2709 3 -1 ri
+: 2713 14 -3 ous 
+- 2727 2737
+- 2737
+: 2752 2 4 Li
+: 2756 2 4 ving 
+: 2760 2 4 the 
+: 2764 8 2 dream 
+- 2772
+: 2783 6 7 Yours 
+: 2791 2 7 and 
+: 2795 14 6 mine 
+- 2809 2813
+- 2813
+* 2828 2 6 Eu
+* 2832 2 6 pho
+* 2836 2 7 ri
+* 2840 21 9 a 
+E

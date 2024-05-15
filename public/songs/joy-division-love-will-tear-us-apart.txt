@@ -1,0 +1,257 @@
+#ARTIST:Joy Division
+#TITLE:Love Will Tear Us Apart
+#CREATOR:IC
+#BPM:290,6
+#YEAR:1980
+#VIDEO:v=674KGKRQBPE
+#GENRE:New Wave
+#LANGUAGE:English
+#GAP:25168,595041322315
+#ALLKARAOKE_ID:joy-division-love-will-tear-us-apart
+#ALLKARAOKE_LASTUPDATE:2024-05-15T17:29:17.683Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/?link=profil&id=411
+#ALLKARAOKE_REALBPM:147
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=5183
+#ALLKARAOKE_VOLUME:0,8
+#P1:Love Will Tear Us Apart
+#MP3:Joy Division - Love Will Tear Us Apart.mp3
+: 19 3 2 When 
+: 24 4 4 rou
+: 30 4 4 tine 
+: 36 4 4 bites 
+: 45 12 4 hard 
+- 57 60
+- 60
+: 79 2 2 And 
+: 83 3 2 am
+: 88 2 6 bi
+: 93 3 2 tions 
+: 101 3 -1 are 
+: 109 7 -3 low 
+- 116 123
+- 123
+: 142 3 2 And 
+: 147 2 2 re
+: 151 4 4 sent
+: 158 4 4 ment 
+: 164 8 4 rides 
+* 177 11 4 high 
+- 188
+: 206 4 2 But 
+: 211 2 2 e
+: 215 5 6 mo
+: 222 8 2 tions 
+: 237 5 -1 won’t 
+: 245 11 -3 grow 
+- 256
+: 275 5 2 we’re 
+: 283 4 4 chang
+: 289 3 4 ing 
+: 294 5 4 our 
+: 303 11 4 ways 
+- 314
+: 333 4 4 Tak
+: 339 4 2 ing 
+* 346 3 6 dif
+: 351 3 2 fe
+: 355 4 -1 rent 
+: 369 10 -3 roads 
+- 379 381
+- 381
+: 400 4 2 Then 
+: 406 29 4 love 
+- 435
+: 436 8 6 Love 
+: 446 2 7 will 
+: 450 7 6 tear 
+: 459 3 4 us 
+: 463 3 2 a
+: 467 24 -1 part 
+- 491
+: 498 2 2 A
+: 502 12 -3 gain 
+- 514
+* 533 29 4 Love 
+- 562
+: 565 7 6 Love 
+: 573 3 7 will 
+: 577 7 6 tear 
+: 585 3 4 us 
+: 589 3 2 a
+: 596 20 -1 part 
+- 616
+: 625 2 2 A
+: 629 12 -3 gain 
+- 641 756
+- 756
+: 775 2 4 Why 
+: 779 3 4 is 
+: 783 3 2 the 
+: 787 4 4 bed
+: 793 4 4 room 
+: 800 6 4 so 
+* 809 12 4 cold? 
+- 821 825
+- 825
+: 844 3 4 Turned 
+: 848 3 2 a
+: 853 4 6 way 
+: 859 2 -1 on 
+: 862 7 -1 your 
+: 879 16 -3 side 
+- 895
+: 910 3 4 Is 
+: 915 3 2 my 
+: 919 4 4 tim
+: 925 5 4 ing 
+: 932 3 4 that 
+: 940 11 4 flawed? 
+- 951 954
+- 954
+: 973 3 2 Our 
+: 977 3 2 res
+: 982 3 6 pect 
+: 989 4 -1 runs 
+: 995 6 -1 so 
+: 1013 10 -3 dry 
+- 1023
+: 1037 3 4 Yet 
+: 1042 4 2 there’s 
+: 1048 4 4 still 
+: 1056 4 4 this 
+: 1062 4 4 ap
+: 1067 11 4 peal 
+- 1078 1082
+- 1082
+: 1101 3 2 That 
+: 1105 4 2 we’ve 
+: 1111 5 6 kept 
+* 1118 3 -1 through 
+: 1124 4 -1 our
+: 1128 3 -3 ~ 
+: 1138 9 -3 lives 
+- 1147 1152
+- 1152
+: 1171 1 4 Butt
+: 1173 26 4 love 
+- 1199
+: 1203 7 6 Love 
+: 1211 3 7 will 
+: 1216 7 6 tear 
+: 1224 3 4 us 
+: 1228 5 2 a
+: 1236 19 -1 part 
+- 1255
+: 1264 2 2 A
+: 1268 12 -3 gain 
+- 1280
+: 1298 29 4 Love 
+- 1327
+: 1331 6 6 Love 
+: 1338 3 7 will 
+: 1342 8 6 tear 
+: 1351 3 4 us 
+: 1355 3 2 a
+: 1362 17 -1 part 
+- 1379
+: 1387 2 2 A
+: 1391 12 -3 gain 
+- 1403 1900
+- 1900
+: 1919 3 2 Do 
+: 1923 2 4 you 
+: 1927 4 2 cry 
+: 1932 3 4 out 
+: 1937 3 4 in 
+: 1942 3 4 your 
+: 1950 12 4 sleep? 
+- 1962 1963
+- 1963
+: 1982 4 2 All 
+: 1988 4 2 my 
+* 1995 6 6 fail
+: 2002 3 -1 ings 
+: 2009 4 -1 ex
+: 2018 10 -3 posed 
+- 2028
+: 2047 3 4 there’s 
+: 2051 2 2 a 
+: 2055 6 4 taste 
+: 2063 3 2 in 
+: 2068 6 2 my 
+: 2078 10 4 mouth 
+- 2088
+: 2106 2 -1 As 
+: 2110 3 2 des
+: 2115 4 -1 pe
+: 2121 3 6 ra
+: 2126 3 -1 tion 
+: 2141 6 -1 takes 
+: 2149 10 -3 hold 
+- 2159
+: 2173 3 4 there's 
+: 2177 4 2 that 
+: 2184 5 4 some
+: 2190 5 4 thing 
+: 2199 6 4 so 
+: 2210 8 4 good 
+- 2218
+: 2237 3 2 Just 
+: 2242 3 2 can’t 
+: 2249 4 6 func
+: 2257 4 -1 tion 
+: 2263 5 -1 no 
+* 2272 9 -3 more 
+- 2281 2283
+- 2283
+: 2302 4 2 But 
+: 2308 25 4 love 
+- 2333
+: 2338 7 6 Love 
+: 2346 3 7 will 
+: 2352 5 6 tear 
+: 2358 3 4 us 
+: 2362 3 2 a
+: 2369 20 -1 part 
+- 2389
+: 2398 2 2 A
+* 2402 12 -3 gain 
+- 2414
+: 2433 29 4 Love 
+- 2462
+: 2465 7 6 Love 
+: 2473 2 7 will 
+* 2477 7 6 tear 
+: 2485 3 4 us 
+: 2489 3 2 a
+: 2496 14 -1 part 
+- 2510
+: 2525 3 2 A
+: 2529 12 -3 gain 
+- 2541
+: 2559 27 4 Love 
+- 2586
+: 2592 7 6 Love 
+: 2600 3 7 will 
+: 2605 7 6 tear 
+: 2613 3 4 us 
+: 2617 3 2 a
+: 2625 16 -1 part 
+- 2641
+: 2651 3 2 A
+: 2656 9 -3 gain 
+- 2665 2668
+- 2668
+: 2687 29 4 Love 
+- 2716
+: 2719 7 6 Love 
+: 2727 3 7 will 
+: 2731 7 6 tear 
+: 2739 3 4 us 
+: 2743 3 2 a
+* 2750 16 -1 part 
+- 2766
+: 2778 2 2 A
+: 2782 12 -3 gain 
+E
