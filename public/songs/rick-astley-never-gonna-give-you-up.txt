@@ -5,13 +5,15 @@
 #YEAR:1987
 #VIDEO:v=dQw4w9WgXcQ
 #LANGUAGE:English
-#GAP:17757,770266701875
+#GAP:17857,770266701875
 #EDITION:SingStar English
 #ALLKARAOKE_ID:rick-astley-never-gonna-give-you-up
+#ALLKARAOKE_LASTUPDATE:2024-05-17T16:50:30.582Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up
+#ALLKARAOKE_VOLUME:0,5
 : 15 4 58 We're 
 : 19 4 60 no 
 : 23 4 61 stran
