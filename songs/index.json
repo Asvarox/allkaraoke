@@ -6088,11 +6088,10 @@
       "English"
     ],
     "bpm": 268.04,
-    "gap": 16780.687658558425,
+    "gap": 16830.687658558425,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-09T21:07:15.448Z",
-    "videoGap": -4,
+    "lastUpdate": "2024-05-17T16:50:29.165Z",
     "realBpm": 134,
     "previewStart": 115,
     "previewEnd": 158,
@@ -14346,10 +14345,10 @@
       "English"
     ],
     "bpm": 248.4,
-    "gap": 16873.42995169082,
+    "gap": 17173.42995169082,
     "year": "1986",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-02-08T06:16:42.357Z",
+    "lastUpdate": "2024-05-17T16:50:29.171Z",
     "edition": "Singstar '80s",
     "genre": "Pop",
     "realBpm": 125,
@@ -18202,10 +18201,10 @@
     "gap": 21210,
     "year": "2015",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-04-29T21:40:45.496Z",
+    "lastUpdate": "2024-05-17T16:50:29.174Z",
     "genre": "R&B",
     "realBpm": 135,
-    "volume": 1,
+    "volume": 0.77,
     "author": "amro98 & fepo",
     "tracks": [
       {
@@ -23056,7 +23055,7 @@
     "gap": 29368.778485771956,
     "year": "1984",
     "artistOrigin": "FR",
-    "lastUpdate": "2024-05-15T17:29:17.298Z",
+    "lastUpdate": "2024-05-17T16:50:29.177Z",
     "genre": "Pop",
     "realBpm": 126,
     "previewStart": 63,
@@ -23291,10 +23290,10 @@
       "English"
     ],
     "bpm": 233.93,
-    "gap": 1993.0520668576069,
+    "gap": 2143.052066857607,
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:33.091Z",
+    "lastUpdate": "2024-05-17T16:50:29.858Z",
     "realBpm": 115,
     "volume": 0.65,
     "author": "ultrastarsongs",
@@ -23426,11 +23425,13 @@
       "English"
     ],
     "bpm": 314,
-    "gap": 11033.815286624204,
+    "gap": 11133.815286624204,
     "year": "1997",
     "artistOrigin": "US",
+    "lastUpdate": "2024-05-17T16:50:29.859Z",
     "genre": "Pop",
     "realBpm": 77,
+    "volume": 0.5,
     "author": "Kodaman",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Goo%20Goo%20Dolls&cancion=Iris",
@@ -23913,10 +23914,10 @@
       "Polish"
     ],
     "bpm": 381.4,
-    "gap": 20080.780283167278,
+    "gap": 20330.780283167278,
     "year": "1993",
     "artistOrigin": "PL",
-    "lastUpdate": "2024-03-12T20:42:56.611Z",
+    "lastUpdate": "2024-05-17T16:50:29.860Z",
     "realBpm": 93,
     "previewStart": 58,
     "previewEnd": 120,
@@ -25449,7 +25450,7 @@
     "gap": 23048.546110665597,
     "year": "1986",
     "artistOrigin": "FR",
-    "lastUpdate": "2024-05-15T17:29:17.428Z",
+    "lastUpdate": "2024-05-17T16:50:29.862Z",
     "genre": "Oldies",
     "realBpm": 118,
     "previewStart": 54,
@@ -27503,7 +27504,7 @@
     "gap": 15074.288244536496,
     "year": "1998",
     "artistOrigin": "FR",
-    "lastUpdate": "2024-05-15T17:29:17.563Z",
+    "lastUpdate": "2024-05-17T16:50:30.017Z",
     "genre": "Rock",
     "realBpm": 140,
     "previewStart": 57,
@@ -27826,7 +27827,7 @@
     "gap": 25168.595041322315,
     "year": "1980",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-05-15T17:29:17.683Z",
+    "lastUpdate": "2024-05-17T16:50:30.151Z",
     "genre": "New Wave",
     "realBpm": 147,
     "volume": 0.8,
@@ -29463,10 +29464,10 @@
     "bpm": 303.1,
     "gap": 35810.22764764104,
     "year": "2010",
-    "lastUpdate": "2024-01-26T17:05:27.548Z",
+    "lastUpdate": "2024-05-17T16:50:30.294Z",
     "genre": "Pop",
     "realBpm": 152,
-    "volume": 0.68,
+    "volume": 0.72,
     "author": "Katy perry",
     "tracks": [
       {
@@ -29779,14 +29780,16 @@
       "Polish"
     ],
     "bpm": 194,
-    "gap": -72.91752577319596,
+    "gap": 4.40206185567007,
     "year": "1999",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-05-17T16:50:30.446Z",
     "realBpm": 100,
+    "volume": 0.75,
     "author": "Yooma",
     "tracks": [
       {
-        "start": 6
+        "start": 5
       }
     ],
     "tracksCount": 1,
@@ -30167,7 +30170,7 @@
     "gap": 49387.087092451984,
     "year": "2014",
     "artistOrigin": "FR",
-    "lastUpdate": "2024-05-15T17:29:17.843Z",
+    "lastUpdate": "2024-05-17T16:50:30.447Z",
     "genre": "Pop",
     "videoGap": 24,
     "realBpm": 112,
@@ -32701,16 +32704,19 @@
       "Polish"
     ],
     "bpm": 360,
-    "gap": 22740,
+    "gap": 16440,
     "year": "2015",
     "artistOrigin": "PL",
-    "videoGap": 19,
+    "lastUpdate": "2024-05-17T16:50:30.573Z",
+    "videoGap": 4,
+    "realBpm": 90,
+    "volume": 0.67,
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=pomidorowa",
     "tracks": [
       {
-        "start": 0
+        "start": 24
       }
     ],
     "tracksCount": 1,
@@ -37314,10 +37320,10 @@
       "Polish"
     ],
     "bpm": 300,
-    "gap": 18000,
+    "gap": 18100,
     "year": "1992",
     "artistOrigin": "PL",
-    "lastUpdate": "2024-02-20T21:16:30.753Z",
+    "lastUpdate": "2024-05-17T16:50:30.575Z",
     "genre": "None",
     "realBpm": 150,
     "volume": 0.91,
@@ -38857,10 +38863,10 @@
       "English"
     ],
     "bpm": 236,
-    "gap": 7393.050847457627,
+    "gap": 6843.050847457627,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2023-05-20T14:21:10.091Z",
+    "lastUpdate": "2024-05-17T16:50:30.576Z",
     "genre": "Pop",
     "realBpm": 118,
     "volume": 0.6,
@@ -43352,16 +43358,16 @@
       "English"
     ],
     "bpm": 300,
-    "gap": -250,
+    "gap": 200,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-26T17:05:27.838Z",
+    "lastUpdate": "2024-05-17T16:50:30.578Z",
     "realBpm": 122,
     "volume": 0.78,
     "author": "One rebublic",
     "tracks": [
       {
-        "start": 3
+        "start": -2
       }
     ],
     "tracksCount": 1,
@@ -44282,9 +44288,9 @@
     "gap": 10856.717557251908,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-19T05:46:35.252Z",
+    "lastUpdate": "2024-05-17T16:50:30.579Z",
     "realBpm": 131,
-    "volume": 0.68,
+    "volume": 0.75,
     "author": "matteymaz",
     "tracks": [
       {
@@ -47424,10 +47430,10 @@
       "English"
     ],
     "bpm": 306,
-    "gap": 24499.607843137255,
+    "gap": 24699.607843137255,
     "year": "1997",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-10-12T18:16:49.081Z",
+    "lastUpdate": "2024-05-17T16:50:30.580Z",
     "edition": "SingStar PS3",
     "genre": "Pop",
     "realBpm": 76,
@@ -48504,11 +48510,13 @@
       "English"
     ],
     "bpm": 227.22,
-    "gap": 17757.770266701875,
+    "gap": 17857.770266701875,
     "year": "1987",
     "artistOrigin": "GB",
+    "lastUpdate": "2024-05-17T16:50:30.582Z",
     "edition": "SingStar English",
     "realBpm": 112,
+    "volume": 0.5,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up",
@@ -51516,9 +51524,10 @@
       "English"
     ],
     "bpm": 252,
-    "gap": 33730,
+    "gap": 32768.09523809524,
     "year": "2010",
     "artistOrigin": "CO",
+    "lastUpdate": "2024-05-17T16:50:30.583Z",
     "videoGap": 19,
     "realBpm": 127,
     "volume": 0.8,
@@ -51527,7 +51536,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29",
     "tracks": [
       {
-        "start": 0
+        "start": 17
       }
     ],
     "tracksCount": 1,
