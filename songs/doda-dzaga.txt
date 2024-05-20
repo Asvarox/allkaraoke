@@ -6,9 +6,9 @@
 #VIDEO:v=_7TtBGE9MiE
 #GENRE:Pop
 #LANGUAGE:Polish
-#GAP:11430
+#GAP:11530
 #ALLKARAOKE_ID:doda-dzaga
-#ALLKARAOKE_LASTUPDATE:2023-07-22T21:15:10.382Z
+#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:44.894Z
 #ALLKARAOKE_ARTISTORIGIN:PL
 #ALLKARAOKE_REALBPM:164
 #ALLKARAOKE_VOLUME:0,5
@@ -92,17 +92,17 @@
 : 1062 2 2 Mó
 : 1066 6 2 wia 
 : 1074 12 1 mi: 
-: 1094 2 1 "ska
+: 1094 2 1 \"ska
 : 1098 6 1 la 
-: 1106 12 -1 jest" 
+: 1106 12 -1 jest\" 
 - 1118
 : 1124 2 -1 Mó
 : 1128 6 -1 wi: 
-: 1136 4 7 "ko
-: 1142 8 6 cham" 
+: 1136 4 7 \"ko
+: 1142 8 6 cham\" 
 : 1152 5 7 mys
 : 1158 6 6 li: 
-: 1168 14 2 "precz" 
+: 1168 14 2 \"precz\" 
 - 1182
 : 1188 2 2 Chce 
 : 1192 5 2 wy
@@ -205,11 +205,11 @@
 : 2214 2 2 Mó
 : 2218 7 2 wia 
 : 2226 12 1 mi: 
-: 2246 2 1 "o
+: 2246 2 1 \"o
 : 2250 7 1 lej 
-: 2258 12 -1 go" 
+: 2258 12 -1 go\" 
 - 2270
-: 2278 2 -1 "O
+: 2278 2 -1 \"O
 : 2282 6 -1 budz 
 : 2290 6 7 sie 
 : 2298 4 6 i 
@@ -224,7 +224,7 @@
 : 2370 6 1 kie
 : 2378 4 1 dys 
 : 2384 3 1 sie
-: 2388 18 2 -" 
+: 2388 18 2 -\" 
 - 2406 2446
 - 2446
 : 2468 3 2 Mó

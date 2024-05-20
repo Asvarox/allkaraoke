@@ -1,0 +1,1087 @@
+#ARTIST:Kendrick Lamar feat. Drake
+#TITLE:Poetic Justice
+#CREATOR:Subby77
+#BPM:362,81
+#YEAR:2012
+#VIDEO:v=yyr2gEouEMM
+#GENRE:Hip Hop
+#LANGUAGE:English
+#GAP:54857,745100741435
+#ALLKARAOKE_ID:kendrick-lamar-feat-drake-poetic-justice
+#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:45.575Z
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_VOLUME:0,93
+#P1:Poetic Justice
+#MP3:Kendrick Lamar feat. Drake - Poetic Justice.mp3
+#COVER:Kendrick Lamar feat. Drake - Poetic Justice [CO].jpg
+#BACKGROUND:Kendrick Lamar feat. Drake - Poetic Justice [BG].jpg
+#START:45
+R 24 5 0 Eve
+R 30 2 0 ry 
+R 33 6 0 se
+R 39 5 0 cond, 
+R 46 5 0 eve
+R 51 2 0 ry 
+R 56 5 0 mi
+R 61 3 0 nute, 
+R 67 3 0 man 
+R 71 3 0 I 
+R 75 7 0 swear 
+R 83 2 0 that 
+R 86 5 0 she 
+R 93 3 0 can 
+R 99 4 0 get 
+R 104 3 0 it
+- 107
+R 109 6 0 Say 
+R 116 2 0 if 
+R 122 2 0 you 
+R 125 3 0 a 
+R 131 7 0 bad 
+R 143 8 0 bitch 
+R 153 2 0 put 
+R 157 3 0 your 
+R 161 10 0 hands 
+R 174 7 0 up 
+R 185 11 0 high, 
+R 204 10 0 hands 
+R 216 4 0 up 
+R 226 12 0 high, 
+R 247 9 0 hands 
+R 259 3 0 up 
+R 268 9 0 high
+- 277
+R 279 4 0 Tell 
+R 284 3 0 'em 
+R 290 2 0 dim 
+R 293 5 0 the 
+R 300 10 0 lights 
+R 312 6 0 down 
+R 322 7 0 right 
+R 332 7 0 now, 
+R 343 4 0 put 
+R 349 3 0 me 
+R 353 4 0 in 
+R 359 3 0 the 
+R 364 11 0 mood
+- 375
+R 393 3 0 I'm 
+R 398 4 0 tal
+R 402 4 0 king 
+R 408 4 0 'bout 
+R 418 6 0 dark 
+R 428 7 0 room, 
+R 441 5 0 per
+R 449 13 0 fume
+- 462
+R 473 8 0 Go, 
+R 493 9 0 go
+- 502 525
+- 525
+R 549 1 0 I 
+R 551 1 0 re
+R 553 3 0 cog
+R 556 4 0 nize 
+R 561 3 0 your 
+R 566 8 0 fra
+R 574 7 0 grance, 
+R 583 3 0 hol' 
+R 587 5 0 up
+- 592
+R 593 3 0 You 
+R 597 1 0 ain't 
+R 599 1 0 nev
+R 600 2 0 er 
+R 603 1 0 got
+R 605 2 0 ta 
+R 608 6 0 say 
+R 616 7 0 shit, 
+R 626 6 0 woo
+- 632
+R 637 1 0 And 
+R 639 2 0 I 
+R 642 4 0 know 
+R 647 3 0 your 
+R 653 5 0 taste 
+R 661 4 0 is
+- 665
+G 667 1 0 A 
+G 669 2 0 lit
+G 671 2 0 tle 
+G 675 2 0 bit 
+* 679 9 5 mmm 
+G 690 3 0 high 
+G 695 5 0 ma
+G 701 8 0 intenance, 
+G 712 6 0 uh
+- 718
+R 722 2 0 Eve
+R 724 1 0 ry
+R 726 3 0 bo
+R 729 3 0 dy 
+R 733 3 0 else 
+R 740 4 0 ba
+R 744 5 0 sic
+- 749
+R 751 2 0 You 
+R 754 2 0 live 
+R 757 8 0 life 
+R 766 1 0 on 
+R 767 1 0 an 
+R 770 2 0 eve
+R 772 3 0 ry
+R 775 3 0 day 
+R 781 4 0 ba
+R 785 9 0 sis
+- 794
+R 797 2 0 With 
+R 802 6 0 po
+R 808 4 0 e
+R 812 4 0 tic 
+R 819 4 0 jus
+R 823 7 0 tice, 
+R 845 5 0 po
+R 850 3 0 e
+R 853 5 0 tic 
+R 860 6 0 jus
+R 866 8 0 tice
+- 874
+R 882 2 0 If 
+R 884 2 0 I 
+R 887 5 0 told 
+R 894 3 0 you 
+R 898 1 0 that 
+R 900 1 0 a 
+R 902 5 0 flow
+R 907 5 0 er 
+R 913 6 0 bloomed 
+R 921 1 0 in 
+R 922 1 0 a 
+R 924 4 0 dark 
+R 929 7 0 room, 
+R 937 4 0 would 
+R 942 2 0 you 
+R 945 4 0 trust 
+R 951 3 0 it?
+- 954
+R 956 3 0 I 
+R 960 6 0 mean 
+R 967 3 0 I 
+R 972 5 0 write 
+R 980 3 0 po
+R 983 5 0 ems 
+R 990 2 0 in 
+R 994 6 0 these 
+R 1002 13 0 songs 
+R 1021 2 0 de
+R 1023 2 0 di
+R 1025 4 0 cat
+R 1029 6 0 ed 
+R 1037 2 0 to 
+R 1041 6 0 you
+- 1047
+R 1049 10 0 When 
+R 1079 4 0 you're 
+R 1085 1 0 in 
+R 1087 2 0 the 
+R 1090 4 0 mood 
+R 1095 5 0 for 
+R 1101 4 0 em
+R 1105 4 0 pa
+R 1109 3 0 thy, 
+R 1113 2 0 there's 
+R 1116 5 0 blood 
+R 1122 4 0 in 
+R 1127 4 0 my 
+R 1132 10 0 pen
+- 1142
+R 1149 2 0 Bet
+R 1151 1 0 ter 
+R 1153 5 0 yet 
+R 1160 1 0 where 
+R 1162 2 0 your 
+R 1165 8 0 friends 
+R 1174 2 0 and 
+R 1177 8 0 them?
+- 1185
+R 1195 1 0 I 
+R 1197 2 0 rea
+R 1199 2 0 lly 
+R 1202 3 0 wan
+R 1205 2 0 na 
+R 1208 5 0 know 
+R 1214 3 0 you 
+R 1218 10 0 all
+- 1228
+R 1237 2 0 I 
+R 1240 2 0 rea
+R 1242 1 0 lly 
+R 1244 2 0 wan
+R 1246 2 0 na 
+R 1249 4 0 show 
+R 1255 4 0 you 
+R 1260 10 0 off
+- 1270
+R 1276 4 0 Fuck 
+R 1282 7 0 that, 
+R 1293 4 0 pour 
+R 1298 2 0 up 
+R 1303 4 0 plen
+R 1307 6 0 ty 
+R 1314 3 0 of 
+R 1318 5 0 cham
+R 1323 8 0 pagne
+- 1331
+R 1336 4 0 Cold 
+R 1341 4 0 nights 
+R 1348 2 0 when 
+R 1351 4 0 you 
+R 1357 3 0 curse 
+R 1361 4 0 this 
+R 1366 8 0 name
+- 1374
+R 1378 3 0 You 
+R 1382 7 0 called 
+R 1390 3 0 up 
+R 1395 4 0 your 
+R 1400 5 0 girl
+R 1405 5 0 friends 
+R 1411 4 0 and
+- 1415
+R 1416 4 0 Y'all 
+R 1422 4 0 curled 
+R 1427 4 0 in 
+R 1432 3 0 that 
+R 1437 2 0 lit
+R 1439 1 0 tle 
+R 1441 5 0 bit
+R 1446 5 0 ty 
+R 1453 5 0 Range 
+R 1459 4 0 I 
+R 1464 7 0 heard 
+R 1474 7 0 that
+- 1481
+R 1485 4 0 She 
+R 1490 2 0 wan
+R 1492 3 0 na 
+R 1496 5 0 go 
+R 1502 3 0 and 
+R 1507 5 0 par
+R 1512 6 0 ty, 
+R 1527 3 0 she 
+R 1531 3 0 wan
+R 1534 2 0 na 
+R 1537 5 0 go 
+R 1543 5 0 and 
+R 1549 5 0 par
+R 1554 5 0 ty
+- 1559
+G 1561 2 0 Nig
+G 1563 2 0 ga 
+G 1566 2 0 don't 
+G 1569 2 0 ap
+G 1571 6 0 proach 
+G 1578 2 0 her 
+G 1581 4 0 with 
+G 1587 1 0 that 
+G 1589 2 0 A
+G 1591 6 0 ta
+G 1597 4 0 ri
+- 1601
+G 1602 2 0 Nig
+G 1604 2 0 ga 
+G 1607 1 0 that 
+G 1609 2 0 ain't 
+G 1613 4 0 good 
+G 1618 5 0 game, 
+G 1624 2 0 ho
+G 1626 4 0 mie, 
+G 1631 7 0 so
+G 1638 5 0 rry
+- 1643
+R 1645 2 0 They 
+R 1648 5 0 say 
+R 1654 5 0 con
+R 1659 5 0 ver
+R 1664 7 0 sa
+R 1671 5 0 tion, 
+R 1688 2 0 rule 
+R 1691 5 0 a 
+R 1697 5 0 na
+R 1702 5 0 tion, 
+R 1708 4 0 I 
+R 1714 3 0 can 
+R 1719 6 0 tell
+- 1725
+G 1730 2 0 But 
+G 1733 2 0 I 
+G 1736 3 0 could 
+G 1741 4 0 nev
+G 1745 4 0 er 
+G 1751 4 0 right 
+G 1757 3 0 my 
+G 1762 7 0 wrongs
+- 1769
+G 1774 3 0 'Less 
+G 1778 3 0 I 
+G 1782 6 0 write 
+G 1789 3 0 it 
+G 1794 3 0 down 
+G 1799 3 0 for 
+G 1803 9 0 real, 
+G 1816 3 0 P.
+G 1820 11 0 S
+- 1831 1873
+- 1873
+R 1897 3 0 You 
+R 1901 4 0 can 
+R 1906 4 0 get 
+R 1911 2 0 it, 
+R 1917 3 0 you 
+R 1921 6 0 can 
+R 1928 4 0 get 
+R 1933 2 0 it
+- 1935
+R 1939 3 0 You 
+R 1943 4 0 can 
+R 1948 4 0 get 
+R 1953 3 0 it, 
+R 1960 3 0 you 
+R 1964 6 0 can 
+R 1971 4 0 get 
+R 1976 2 0 it
+- 1978
+R 1987 3 0 And 
+R 1991 4 0 I 
+R 1997 3 0 know 
+R 2002 2 0 just, 
+R 2006 5 0 know 
+R 2012 4 0 just, 
+R 2018 4 0 know 
+R 2023 4 0 just, 
+R 2030 3 0 know 
+R 2035 3 0 just, 
+R 2041 3 0 know 
+R 2046 3 0 just 
+R 2051 2 0 what 
+R 2055 2 0 you 
+R 2061 11 0 want
+- 2072
+R 2082 13 0 Po
+R 2095 3 2 e
+R 2098 5 2 tic 
+R 2104 3 2 jus
+R 2107 7 3 tice, 
+R 2126 3 0 put 
+R 2130 4 0 it 
+R 2136 2 0 in 
+R 2139 3 0 a 
+R 2143 10 2 song, 
+R 2157 4 2 al
+R 2161 10 3 right
+- 2171 2214
+- 2214
+R 2238 3 0 You 
+R 2242 5 0 can 
+R 2248 2 0 get 
+R 2251 6 0 it, 
+R 2259 2 0 you 
+R 2262 4 0 can 
+R 2267 4 0 get 
+R 2272 3 0 it
+- 2275
+R 2280 3 0 You 
+R 2284 3 0 can 
+R 2289 5 0 get 
+R 2295 2 0 it, 
+R 2301 4 0 you 
+R 2306 4 0 can 
+R 2312 3 0 get 
+R 2316 4 0 it
+- 2320
+R 2329 4 0 And 
+R 2334 3 0 I 
+R 2338 4 0 know 
+R 2343 4 0 just, 
+R 2348 4 0 know 
+R 2354 3 0 just, 
+R 2359 3 0 know 
+R 2364 2 0 just, 
+R 2370 4 0 know 
+R 2376 2 0 just, 
+R 2381 4 0 know 
+R 2386 3 0 just 
+R 2392 2 0 what 
+R 2396 2 0 you 
+R 2403 12 0 want
+- 2415
+G 2424 11 -2 Po
+G 2435 4 5 e
+G 2439 6 5 tic 
+G 2446 3 3 jus
+G 2449 7 5 tice, 
+G 2468 2 0 put 
+G 2471 3 0 it 
+G 2476 3 0 in 
+G 2480 4 0 a 
+G 2485 11 2 song, 
+G 2499 4 2 al
+G 2503 7 3 right
+- 2510 2575
+- 2575
+R 2599 1 0 I 
+R 2601 3 0 rea
+R 2604 2 0 lly 
+R 2607 4 0 hope 
+R 2613 3 0 you 
+R 2618 6 0 play 
+R 2625 5 0 this
+- 2630
+R 2632 1 0 'Cause 
+R 2634 4 0 ol' 
+R 2639 5 0 girl 
+R 2645 3 0 you 
+R 2649 5 0 test 
+R 2655 4 0 my 
+R 2660 5 0 pa
+R 2665 6 0 tience
+- 2671
+R 2674 1 0 With 
+R 2676 4 0 all 
+R 2681 2 0 these 
+R 2685 4 0 se
+R 2692 3 0 duc
+R 2696 4 0 tive 
+R 2701 5 0 pho
+R 2706 3 0 to
+R 2709 4 0 graphs 
+R 2717 1 0 and 
+R 2719 4 0 all 
+R 2724 4 0 these 
+R 2730 4 0 one 
+R 2735 4 0 off 
+R 2741 4 0 va
+R 2745 5 0 ca
+R 2750 6 0 tions
+- 2756
+R 2759 1 0 You've 
+R 2761 4 0 been 
+R 2766 8 0 tak
+R 2774 6 0 en
+- 2780
+R 2788 2 0 Clear
+R 2790 4 0 ly 
+R 2795 2 0 a 
+R 2798 2 0 lot 
+R 2801 2 0 for 
+R 2804 1 0 me 
+R 2806 2 0 to 
+R 2809 6 0 take 
+R 2816 4 0 in
+- 2820
+R 2822 2 0 It 
+R 2825 4 0 don't 
+R 2831 5 0 make 
+R 2837 8 0 sense
+- 2845
+R 2847 3 0 Young 
+R 2851 7 0 East 
+R 2860 3 0 A
+R 2863 3 0 fri
+R 2866 5 0 can 
+R 2873 6 0 Girl, 
+G 2883 2 0 you 
+G 2886 2 0 too 
+G 2889 1 0 bu
+G 2890 2 0 sy 
+G 2893 2 0 fu
+G 2895 3 0 cking 
+G 2899 2 0 with 
+G 2902 2 0 your 
+G 2905 2 0 o
+G 2907 2 0 ther 
+G 2910 7 0 man
+- 2917
+R 2927 1 0 I 
+R 2929 2 0 was 
+R 2932 4 0 trying 
+R 2938 1 0 put 
+R 2940 2 0 you 
+R 2943 4 0 on 
+R 2948 4 0 game, 
+R 2954 1 0 put 
+R 2956 1 0 you 
+R 2958 2 0 on 
+R 2961 1 0 a 
+R 2964 4 0 plane
+- 2968
+G 2969 2 0 Take 
+G 2973 1 0 you 
+G 2975 1 0 and 
+G 2977 1 0 your 
+G 2980 2 0 ma
+G 2982 2 0 ma 
+G 2985 1 0 to 
+G 2987 2 0 the 
+G 2990 2 0 mo
+G 2992 2 0 ther
+G 2994 7 0 land
+- 3001
+R 3005 1 0 I 
+R 3007 2 0 could 
+R 3010 4 0 do 
+R 3015 4 0 it, 
+R 3027 2 0 may
+R 3029 2 0 be 
+R 3032 4 0 one 
+R 3037 5 0 day
+- 3042
+R 3049 1 0 When 
+R 3051 2 0 you 
+R 3054 2 0 fi
+R 3056 1 0 gure 
+R 3058 4 0 out 
+R 3063 2 0 you're 
+R 3066 2 0 gon
+R 3068 2 0 na 
+R 3071 3 0 need 
+R 3075 6 0 some
+R 3081 4 0 one
+- 3085
+R 3092 1 0 When 
+R 3094 1 0 you 
+R 3096 2 0 fi
+R 3098 2 0 gure 
+R 3101 3 0 out 
+R 3105 1 0 it's 
+R 3107 4 0 all 
+R 3112 4 0 right 
+R 3117 6 0 here 
+R 3124 1 0 in 
+R 3126 1 0 the 
+R 3128 2 0 ci
+R 3130 4 0 ty
+- 3134
+R 3136 1 0 And 
+R 3138 2 0 you 
+R 3141 2 0 don't 
+R 3144 4 0 run 
+R 3149 5 0 from 
+R 3155 1 0 where 
+R 3157 2 0 we 
+R 3160 4 0 come 
+R 3165 6 0 from
+- 3171
+R 3177 2 0 That 
+R 3180 8 0 sound 
+R 3189 2 0 like 
+R 3193 4 0 po
+R 3197 4 0 e
+R 3201 5 0 tic 
+R 3209 3 0 jus
+R 3212 11 0 tice, 
+R 3236 5 0 po
+R 3241 5 0 e
+R 3246 4 0 tic 
+R 3252 4 0 jus
+R 3256 11 0 tice
+- 3267
+R 3274 1 0 You 
+R 3276 2 0 were 
+R 3279 3 0 so 
+R 3284 3 0 new 
+R 3288 5 0 to 
+R 3294 4 0 this 
+R 3299 5 0 life 
+R 3306 3 0 but 
+R 3310 5 0 God
+R 3315 5 0 damn 
+R 3321 4 0 you 
+R 3326 5 0 got 
+R 3332 4 0 ad
+R 3336 4 0 jus
+R 3340 7 0 ted
+- 3347
+R 3349 3 0 I 
+R 3353 5 0 mean 
+R 3359 2 0 I 
+R 3363 5 0 write 
+R 3371 5 0 po
+R 3376 4 0 ems 
+R 3381 2 0 in 
+R 3384 5 0 these 
+R 3390 15 0 songs, 
+R 3411 2 0 de
+R 3413 3 0 di
+R 3416 5 0 cated 
+R 3422 1 0 to 
+R 3424 2 0 the 
+R 3427 5 0 fun 
+R 3434 7 0 sex
+- 3441
+R 3444 3 0 Your 
+R 3448 3 0 na
+R 3451 3 0 tu
+R 3454 2 0 ral 
+R 3457 5 0 hair 
+R 3463 2 0 and 
+R 3466 2 0 your 
+R 3469 8 0 soft 
+R 3478 5 0 skin, 
+R 3484 2 0 and 
+R 3487 4 0 your 
+R 3492 5 0 big 
+R 3498 7 0 ass 
+R 3506 1 0 in 
+R 3508 3 0 that 
+R 3512 9 0 sun
+R 3521 6 0 dress, 
+R 3530 8 0 ooh
+- 3538
+R 3562 3 0 Good 
+R 3566 9 0 God, 
+R 3583 1 0 what 
+R 3585 1 0 you 
+R 3587 5 0 doing 
+R 3593 4 0 that 
+R 3598 6 0 walk 
+R 3605 10 0 for?
+- 3615
+R 3626 1 0 When 
+R 3628 1 0 I 
+R 3630 2 0 see 
+R 3633 2 0 that 
+R 3636 5 0 thing 
+R 3642 4 0 move, 
+G 3647 1 0 I 
+G 3649 2 0 just 
+G 3652 3 0 wish 
+G 3656 1 0 we 
+G 3658 2 0 would 
+G 3661 7 0 fight 
+G 3669 5 0 less
+- 3674
+G 3676 1 0 And 
+G 3678 1 0 we 
+G 3680 2 0 would 
+G 3683 6 0 talk 
+G 3691 7 0 more
+- 3698
+R 3700 1 0 And 
+R 3701 2 0 they 
+R 3704 6 0 say 
+R 3711 6 0 com
+R 3717 4 0 mu
+R 3721 6 0 ni
+R 3727 4 0 ca
+R 3731 4 0 tion 
+R 3737 5 0 save 
+R 3744 5 0 re
+R 3749 4 0 la
+R 3753 5 0 tions, 
+R 3760 4 0 I 
+R 3766 2 0 can 
+R 3770 6 0 tell
+- 3776
+G 3778 2 0 But 
+G 3781 3 0 I 
+G 3785 4 0 can 
+G 3791 4 0 nev
+G 3795 5 0 er 
+G 3801 4 0 right 
+G 3806 4 0 my 
+G 3811 9 0 wrongs 
+G 3821 3 0 un
+G 3824 3 0 less 
+G 3828 4 0 I 
+G 3833 3 0 write 
+G 3837 4 0 em 
+G 3843 4 0 down 
+G 3848 2 0 for 
+G 3851 11 0 real
+- 3862
+G 3866 4 0 P.
+G 3870 10 0 S
+- 3880 3921
+- 3921
+R 3945 3 0 You 
+R 3950 3 0 can 
+R 3954 5 0 get 
+R 3960 4 0 it, 
+R 3966 3 0 you 
+R 3970 4 0 can 
+R 3976 4 0 get 
+R 3981 2 0 it
+- 3983
+R 3988 2 0 You 
+R 3991 4 0 can 
+R 3996 6 0 get 
+R 4003 4 0 it, 
+R 4009 3 0 you 
+R 4013 5 0 can 
+R 4019 4 0 get 
+R 4024 2 0 it
+- 4026
+R 4036 3 0 And 
+R 4040 4 0 I 
+R 4046 4 0 know 
+R 4051 3 0 just, 
+R 4056 4 0 know 
+R 4061 3 0 just, 
+R 4067 5 0 know 
+R 4073 3 0 just, 
+R 4078 3 0 know 
+R 4083 5 0 just, 
+R 4089 3 0 know 
+R 4093 3 0 just 
+R 4098 3 0 what 
+R 4102 2 0 you 
+R 4110 10 0 want
+- 4120
+R 4131 12 -3 Po
+R 4143 5 2 e
+R 4148 4 2 tic 
+R 4153 4 2 jus
+R 4157 6 3 tice, 
+R 4175 3 0 put 
+R 4179 4 0 it 
+R 4185 4 0 in 
+R 4190 2 0 a 
+R 4193 11 2 song, 
+R 4207 5 2 al
+R 4212 10 3 right
+- 4222 4262
+- 4262
+R 4286 3 0 You 
+R 4291 3 0 can 
+R 4296 4 0 get 
+R 4301 5 0 it, 
+R 4307 4 0 you 
+R 4312 2 0 can 
+R 4315 7 0 get 
+R 4323 3 0 it
+- 4326
+R 4329 3 0 You 
+R 4333 4 0 can 
+R 4340 4 0 get 
+R 4345 2 0 it, 
+R 4351 2 0 you 
+R 4354 4 0 can 
+R 4361 2 0 get 
+R 4364 5 0 it
+- 4369
+R 4378 2 0 And 
+R 4382 3 0 I 
+R 4387 3 0 know 
+R 4392 3 0 just, 
+R 4398 3 0 know 
+R 4402 3 0 just, 
+R 4408 3 0 know 
+R 4413 3 0 just, 
+R 4419 3 0 know 
+R 4424 3 0 just, 
+R 4430 3 0 know 
+R 4434 3 0 just 
+R 4440 2 0 what 
+R 4444 3 0 you 
+R 4451 9 0 want
+- 4460
+G 4473 10 -3 Po
+G 4483 5 4 e
+G 4488 6 4 tic 
+G 4495 6 3 jus
+G 4501 7 4 tice, 
+G 4517 3 0 put 
+G 4521 3 0 it 
+G 4525 4 0 in 
+G 4530 2 0 a 
+G 4534 10 2 song, 
+G 4546 5 2 al
+G 4551 10 3 right
+- 4561 4625
+- 4625
+R 4649 3 0 Eve
+R 4652 1 0 ry 
+R 4654 5 0 time 
+R 4660 2 0 I 
+R 4663 5 0 write 
+R 4672 6 0 these 
+R 4679 12 0 words 
+R 4693 1 0 they 
+R 4695 2 0 be
+R 4697 2 0 come 
+R 4700 1 0 a 
+R 4703 3 0 ta
+R 4706 8 0 boo
+- 4714
+R 4734 3 0 Ma
+R 4737 2 0 king 
+R 4740 3 0 sure 
+R 4744 4 0 my 
+R 4750 4 0 punc
+R 4754 4 0 tu
+R 4758 3 0 a
+R 4761 4 0 tion 
+R 4766 10 0 curve, 
+R 4777 3 0 eve
+R 4780 2 0 ry 
+R 4783 2 0 let
+R 4785 2 0 ter 
+R 4788 3 0 here's 
+R 4793 7 0 true
+- 4800
+R 4814 3 0 Li
+R 4817 1 0 ving 
+R 4819 3 0 my 
+R 4823 6 0 life 
+R 4830 1 0 in 
+R 4832 2 0 the 
+R 4835 6 0 mar
+R 4841 3 0 gin 
+R 4855 1 0 and 
+R 4857 3 0 that 
+R 4862 2 0 me
+R 4864 2 0 ta
+R 4866 4 0 phor 
+R 4872 4 0 was 
+R 4878 4 0 proof
+- 4882
+R 4884 2 0 I'm 
+R 4888 5 0 tal
+R 4893 3 0 king 
+R 4899 7 0 po
+R 4906 4 0 e
+R 4910 2 0 tic 
+R 4915 3 0 jus
+R 4918 8 0 tice, 
+R 4942 7 0 po
+R 4949 5 0 e
+R 4954 3 0 tic 
+R 4958 4 0 jus
+R 4962 8 0 tice
+- 4970
+R 4980 2 0 If 
+R 4983 2 0 I 
+R 4986 4 0 told 
+R 4991 3 0 you 
+R 4996 1 0 that 
+R 4998 2 0 a 
+R 5001 3 0 flow
+R 5004 6 0 er 
+R 5012 6 0 bloomed 
+R 5019 1 0 in 
+R 5021 1 0 a 
+R 5023 4 0 dark 
+R 5028 5 0 room, 
+R 5035 1 0 would 
+R 5037 3 0 you 
+R 5042 5 0 trust 
+R 5048 2 0 it?
+- 5050
+R 5053 2 0 I 
+R 5056 6 0 mean 
+R 5064 3 0 you 
+R 5069 5 0 need 
+R 5075 1 0 to 
+R 5077 6 0 hear 
+R 5084 7 0 this
+- 5091
+R 5113 4 0 Love 
+R 5118 2 0 is 
+R 5121 2 0 not 
+R 5125 3 0 just 
+R 5129 3 0 a 
+R 5134 4 0 verb, 
+R 5140 2 0 it's 
+R 5143 3 0 you 
+R 5148 5 0 loo
+R 5153 3 0 king 
+R 5157 3 0 in 
+R 5161 2 0 the 
+R 5164 3 0 mi
+R 5167 7 0 rror
+- 5174
+R 5198 4 0 Love 
+R 5203 2 0 is 
+R 5206 2 0 not 
+R 5210 4 0 just 
+R 5216 1 0 a 
+R 5218 5 0 verb, 
+R 5225 2 0 it's 
+R 5228 3 0 you 
+R 5233 4 0 loo
+R 5237 3 0 king 
+R 5242 1 0 for 
+R 5244 3 0 a 
+R 5248 4 0 may
+R 5252 6 0 be
+- 5258
+R 5262 5 0 Call 
+R 5268 2 0 me 
+R 5271 5 0 cra
+R 5276 4 0 zy, 
+R 5284 2 0 we 
+R 5287 3 0 can 
+R 5292 4 0 both 
+R 5299 1 0 be 
+R 5301 4 0 in
+R 5305 8 0 sane
+- 5313
+G 5325 1 0 A 
+G 5327 2 0 fa
+G 5329 4 0 tal 
+G 5334 2 0 at
+G 5336 4 0 trac
+G 5340 3 0 tion 
+G 5345 2 0 is 
+G 5348 3 0 com
+G 5351 6 0 mon
+- 5357
+G 5366 2 0 And 
+G 5369 2 0 what 
+G 5372 3 0 we 
+G 5376 2 0 have 
+G 5380 3 0 com
+G 5383 2 0 mon 
+G 5387 2 0 is 
+G 5390 5 0 pain
+- 5395
+R 5397 2 0 I 
+R 5401 4 0 mean 
+R 5407 3 0 you 
+R 5411 4 0 need 
+R 5416 2 0 to 
+R 5419 5 0 hear 
+R 5426 6 0 this
+- 5432
+R 5455 4 0 Love 
+R 5460 1 0 is 
+R 5462 4 0 not 
+R 5467 4 0 just 
+R 5472 1 0 a 
+R 5474 7 0 verb 
+R 5482 2 0 and 
+R 5485 3 0 I 
+R 5489 2 0 can 
+R 5492 3 0 see 
+R 5497 6 0 pow
+R 5503 2 0 er 
+R 5506 4 0 stee
+R 5510 4 0 ring
+- 5514 5515
+- 5515
+R 5539 5 0 Sex 
+R 5546 4 0 drive 
+R 5551 2 0 when 
+R 5554 4 0 you 
+R 5560 7 0 swerve, 
+R 5568 2 0 I 
+R 5571 5 0 want 
+R 5578 4 0 that 
+R 5583 4 0 in
+R 5587 4 0 ter
+R 5591 10 0 ference
+- 5601
+R 5605 2 0 It's 
+R 5608 2 0 co
+R 5610 6 0 her
+R 5616 7 0 ent, 
+R 5626 2 0 I 
+R 5629 3 0 can 
+R 5633 5 0 hear 
+R 5639 3 0 it, 
+* 5647 10 0 mm
+* 5657 7 3 hm
+- 5664
+R 5668 3 0 That's 
+R 5672 2 0 your 
+R 5676 4 0 heart
+R 5680 3 0 beat
+- 5683
+R 5688 1 0 It 
+R 5690 3 0 ei
+R 5693 3 0 ther 
+R 5697 5 0 caught 
+R 5703 3 0 me 
+R 5711 3 0 or 
+R 5715 2 0 it 
+R 5718 6 0 called 
+R 5725 4 0 me, 
+* 5733 9 0 mm
+* 5742 5 3 hm
+- 5747
+R 5753 4 0 Breathe 
+R 5758 6 0 slow 
+R 5766 2 0 and 
+R 5769 4 0 you'll 
+R 5774 8 0 find 
+R 5797 6 0 gold 
+R 5804 4 0 mines 
+R 5809 2 0 in 
+R 5812 4 0 these 
+R 5818 9 0 lines
+- 5827
+R 5837 6 0 Sin
+R 5843 7 0 cere
+R 5850 2 0 ly, 
+R 5854 4 0 yours 
+R 5859 7 0 tru
+R 5866 5 0 ly
+- 5871
+R 5878 2 0 And 
+R 5881 4 0 right 
+R 5886 2 0 be
+R 5888 4 0 fore 
+R 5894 2 0 you 
+R 5898 3 0 go 
+R 5903 6 0 blind
+- 5909
+G 5914 3 0 P.
+G 5917 12 0 S
+- 5929 5970
+- 5970
+R 5994 2 0 You 
+R 5998 3 0 can 
+R 6003 6 0 get 
+R 6010 2 0 it, 
+R 6015 2 0 you 
+R 6018 5 0 can 
+R 6025 5 0 get 
+R 6031 2 0 it
+- 6033
+R 6037 3 0 You 
+R 6041 3 0 can 
+R 6046 5 0 get 
+R 6052 2 0 it, 
+R 6058 3 0 you 
+R 6063 3 0 can 
+R 6067 5 0 get 
+R 6073 2 0 it
+- 6075
+R 6085 2 0 And 
+R 6089 4 0 I 
+R 6095 3 0 know 
+R 6100 3 0 just, 
+R 6105 4 0 know 
+R 6111 3 0 just, 
+R 6116 3 0 know 
+R 6121 2 0 just, 
+R 6126 4 0 know 
+R 6131 3 0 just, 
+R 6137 3 0 know 
+R 6142 3 0 just 
+R 6149 2 0 what 
+R 6152 3 0 you 
+R 6159 12 0 want
+- 6171
+R 6181 10 0 Po
+R 6191 3 2 e
+R 6194 6 2 tic 
+R 6202 6 2 jus
+R 6208 8 3 tice, 
+R 6224 3 0 put 
+R 6228 2 0 it 
+R 6234 4 0 in 
+R 6240 2 -1 a 
+R 6243 18 -2 song
+E

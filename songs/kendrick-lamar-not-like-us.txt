@@ -1,0 +1,1214 @@
+#ARTIST:Kendrick Lamar
+#TITLE:Not Like Us
+#CREATOR:Subby77
+#BPM:299,18
+#YEAR:2024
+#VIDEO:v=T6eK-2OQtew
+#GENRE:Rap
+#LANGUAGE:English
+#GAP:49,7259175078548
+#ALLKARAOKE_ID:kendrick-lamar-not-like-us
+#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:53.999Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:101
+#ALLKARAOKE_VOLUME:0,73
+#P1:Not Like Us
+#MP3:Kendrick Lamar - Not Like Us.mp3
+#COVER:Kendrick Lamar - Not Like Us [CO].jpg
+#BACKGROUND:Kendrick Lamar - Not Like Us [BG].jpg
+F 2 6 0 Psst, 
+F 20 2 0 I 
+F 25 2 0 see 
+F 30 3 0 dead 
+F 35 4 0 pe
+F 41 4 0 ople
+- 45 97
+- 97
+F 117 1 0 Mus
+F 120 1 0 tard 
+F 124 1 0 on 
+F 127 1 0 the 
+F 130 4 0 beat, 
+F 136 5 0 ho
+- 141
+R 148 4 0 Ayy, 
+R 166 1 0 Mus
+R 169 1 0 tard 
+R 171 1 0 on 
+R 174 1 0 the 
+R 178 3 0 beat, 
+R 183 3 0 ho
+- 186
+R 189 3 0 Dee
+R 195 3 0 bo 
+R 201 1 0 a
+R 204 1 0 ny 
+R 208 3 0 rap 
+R 213 1 0 nig
+R 216 1 0 ga, 
+R 219 1 0 he 
+R 222 1 0 a 
+R 225 4 0 free 
+R 231 3 0 throw
+- 234
+R 238 3 0 Man 
+R 244 3 0 down, 
+R 249 1 0 call 
+R 252 1 0 an 
+R 256 1 0 am
+R 258 1 0 ber
+R 262 3 0 lamps, 
+R 267 1 0 tell 
+R 270 1 0 him, 
+R 273 3 0 \"Breathe, 
+R 279 3 0 bro\"
+- 282
+R 285 1 0 Nail 
+R 288 1 0 a 
+R 291 1 0 nig
+R 294 1 0 ga 
+R 297 1 0 to 
+R 299 1 0 the 
+R 302 2 0 cross 
+R 306 1 0 he 
+R 309 1 0 walk 
+R 312 1 0 a
+R 314 1 0 round 
+R 317 1 0 like 
+R 320 2 0 Tee
+R 324 3 0 zo
+- 327
+R 329 1 0 What's 
+R 333 1 0 up 
+R 335 1 0 with 
+R 338 1 0 these 
+R 341 1 0 ja
+R 344 1 0 bro
+R 348 1 0 ni 
+R 350 4 0 ass 
+R 356 1 0 nig
+R 359 1 0 gas 
+R 362 1 0 try
+R 365 1 0 na 
+R 368 1 0 see 
+R 372 4 0 Comp
+R 378 2 0 ton?
+- 380
+R 383 1 0 The 
+R 387 1 0 in
+R 389 1 0 dus
+R 392 1 0 try 
+R 395 1 0 can 
+R 398 1 0 hate 
+R 401 1 0 me, 
+R 404 2 0 fuck 
+R 407 1 0 'em 
+R 410 1 0 all 
+R 413 1 0 and 
+R 415 1 0 they 
+R 418 1 0 ma
+R 421 1 0 ma
+- 422
+R 425 1 0 How 
+R 428 1 0 ma
+R 431 1 0 ny 
+R 433 2 0 opps 
+R 438 1 0 you 
+R 440 1 0 rea
+R 443 1 0 lly 
+R 446 1 0 got? 
+R 449 1 0 I 
+R 451 1 0 mean, 
+R 454 1 0 it's 
+R 457 1 0 too 
+R 460 1 0 ma
+R 463 1 0 ny 
+R 466 1 0 op
+R 469 5 0 tions
+- 474
+R 478 1 0 I'm 
+R 481 1 0 fin
+R 484 1 0 na 
+R 487 1 0 pass 
+R 490 1 0 on 
+R 493 1 0 this 
+R 497 1 0 bo
+R 500 1 0 dy, 
+R 504 1 0 I'm 
+R 506 3 0 John 
+R 512 2 0 Stock
+R 516 4 0 ton
+- 520 555
+- 555
+R 575 1 0 Beat 
+R 578 1 0 your 
+R 581 1 0 ass 
+R 584 1 0 and 
+R 587 1 0 hide 
+R 590 1 0 the 
+R 593 4 0 Bible 
+R 599 1 0 if 
+R 602 2 0 God 
+R 607 1 0 wat
+R 610 5 0 chin'
+- 615
+R 625 1 0 Some
+R 628 1 0 times 
+R 632 1 0 you 
+R 635 1 0 got
+R 638 1 0 ta 
+R 641 1 0 pop 
+R 644 2 0 out 
+R 649 1 0 and 
+R 652 1 0 show 
+R 656 1 0 nig
+R 658 1 0 gas
+- 659
+R 665 1 0 Cer
+R 667 1 0 ti
+R 670 1 0 fied 
+R 673 4 0 boogey
+R 680 1 0 man, 
+R 683 1 0 I'm 
+R 686 1 0 the 
+R 689 1 0 one 
+R 692 1 0 that 
+R 694 1 0 up 
+R 697 1 0 the 
+R 700 1 0 score 
+R 703 1 0 with 
+R 705 1 0 'em
+- 706
+R 711 1 0 Walk 
+R 714 1 0 him 
+R 717 1 0 down, 
+R 724 3 0 whole 
+R 729 2 0 time, 
+R 733 1 0 I 
+R 735 1 0 know 
+R 738 1 0 he 
+R 741 1 0 got 
+R 744 1 0 some 
+R 747 1 0 ho 
+R 751 1 0 in 
+R 754 2 0 him
+- 756
+R 760 2 0 Pole 
+R 763 1 0 on 
+R 766 2 0 him, 
+R 771 1 0 ex
+R 774 3 0 tort 
+R 779 3 0 shit, 
+R 786 1 0 bu
+R 789 1 0 lly 
+R 792 1 0 Death 
+R 795 1 0 Row 
+R 798 1 0 on 
+R 801 3 0 him
+- 804
+R 807 2 0 Say, 
+R 811 4 0 Drake, 
+R 827 1 0 I 
+R 830 1 0 hear 
+R 833 1 0 you 
+R 836 1 0 like 
+R 838 1 0 'em 
+R 841 7 0 young
+- 848
+R 856 1 0 You 
+R 859 1 0 bet
+R 863 1 0 ter 
+R 866 1 0 not 
+R 867 1 0 ever 
+R 871 1 0 go 
+R 874 1 0 to 
+R 877 3 0 cell 
+R 883 4 0 block 
+R 889 6 0 one
+- 895
+R 905 1 0 To 
+R 908 1 0 a
+R 911 1 0 ny 
+R 914 1 0 bitch 
+R 917 1 0 that 
+R 920 2 0 talk 
+R 924 1 0 to 
+R 927 1 0 him 
+R 930 1 0 and 
+R 933 1 0 they 
+R 936 1 0 in 
+R 939 4 0 love
+- 943
+R 952 1 0 Just 
+R 954 1 0 make 
+R 957 1 0 sure 
+R 961 1 0 you 
+R 965 2 0 hide 
+R 969 1 0 your 
+R 972 2 0 lil' 
+R 977 1 0 sis
+R 980 1 0 ter 
+R 983 1 0 from 
+R 986 3 0 him
+- 989
+R 999 1 0 They 
+R 1002 1 0 tell 
+R 1005 1 0 me 
+R 1008 3 0 Chubbs 
+R 1013 1 0 the 
+R 1016 1 0 on
+R 1019 1 0 ly 
+R 1022 1 0 one 
+R 1025 1 0 that 
+R 1027 1 0 your 
+R 1027 1 0 get 
+R 1031 10 0 hand-me-downs
+- 1041
+R 1045 1 0 And 
+R 1048 1 0 Par
+R 1051 1 0 ty 
+R 1054 1 0 at 
+R 1057 1 0 the 
+R 1060 1 0 par
+R 1063 1 0 ty 
+R 1067 1 0 pla
+R 1070 1 0 yin' 
+R 1072 1 0 with 
+R 1075 1 0 his 
+R 1078 4 0 nose 
+R 1084 4 0 now
+- 1088
+R 1094 1 0 And 
+R 1097 1 0 Ba
+R 1100 1 0 ka 
+R 1103 1 0 got 
+R 1106 1 0 a 
+R 1109 3 0 weird 
+R 1114 3 0 case, 
+R 1119 1 0 why 
+R 1122 1 0 is 
+R 1125 1 0 he 
+R 1128 1 0 a
+R 1131 4 0 round?
+- 1135
+R 1137 1 0 Cer
+R 1140 1 0 ti
+R 1143 2 0 fied 
+R 1148 5 0 Lover 
+R 1155 3 0 Boy? 
+R 1161 1 0 Cer
+R 1164 1 0 ti
+R 1167 2 0 fied 
+R 1171 1 0 pe
+R 1175 1 0 do
+R 1178 3 0 philes
+- 1181
+R 1184 3 0 Wop, 
+R 1190 3 0 wop, 
+R 1196 3 0 wop, 
+R 1202 2 0 wop, 
+R 1208 3 0 wop, 
+R 1214 3 0 Dot, 
+R 1219 1 0 fuck 
+R 1222 1 0 'em 
+R 1226 3 0 up
+- 1229
+R 1232 2 0 Wop, 
+R 1238 3 0 wop, 
+R 1244 2 0 wop, 
+R 1250 2 0 wop, 
+R 1255 3 0 wop, 
+R 1261 4 0 I'ma 
+R 1267 1 0 do 
+R 1270 1 0 my 
+R 1273 5 0 stuff
+- 1278
+R 1285 1 0 Why 
+R 1288 1 0 you 
+R 1292 1 0 tro
+R 1295 1 0 llin' 
+R 1298 1 0 like 
+R 1301 1 0 a 
+R 1304 3 0 bitch? 
+R 1309 2 0 Ain't 
+R 1312 1 0 you 
+R 1316 7 0 tired?
+- 1323
+R 1326 4 0 Tryna 
+R 1333 1 0 strike 
+R 1336 1 0 a 
+R 1339 3 0 chord 
+R 1345 1 0 and 
+R 1348 1 0 it's 
+R 1351 1 0 pro
+R 1353 1 0 ba
+R 1356 1 0 bly 
+R 1359 2 0 A 
+R 1364 3 0 mi
+R 1368 101 0 nor
+- 1469 1473
+- 1473
+R 1493 1 0 They 
+R 1497 1 0 not 
+R 1501 1 0 like 
+R 1505 5 0 us, 
+R 1516 1 0 they 
+R 1520 1 0 not 
+R 1525 1 0 like 
+R 1529 5 0 us, 
+R 1540 1 0 they 
+R 1544 1 0 not 
+R 1548 1 0 like 
+R 1552 6 0 us
+- 1558 1568
+- 1568
+R 1588 1 0 They 
+R 1592 1 0 not 
+R 1596 1 0 like 
+R 1600 5 0 us, 
+R 1611 1 0 they 
+R 1615 1 0 not 
+R 1620 1 0 like 
+R 1624 5 0 us, 
+R 1634 1 0 they 
+R 1639 1 0 not 
+R 1643 2 0 like 
+R 1648 5 0 us
+- 1653
+R 1663 1 0 You 
+R 1666 1 0 think 
+R 1669 1 0 the 
+R 1672 1 0 Bay 
+R 1675 1 0 gon' 
+R 1678 1 0 let 
+R 1681 1 0 you 
+R 1684 5 0 disrespect 
+R 1692 2 0 Pac, 
+R 1697 1 0 nig
+R 1700 1 0 ga?
+- 1701
+R 1711 1 0 I 
+R 1713 1 0 think 
+R 1717 1 0 that 
+R 1720 1 0 Oak
+R 1723 1 0 land 
+R 1725 1 0 show 
+R 1729 1 0 gon' 
+R 1732 1 0 be 
+R 1735 1 0 your 
+R 1738 1 0 last 
+R 1741 3 0 stop, 
+R 1746 1 0 nig
+R 1750 1 0 ga
+- 1751
+R 1757 1 0 Did 
+R 1760 1 0 Cole 
+R 1764 1 0 fouI, 
+R 1767 2 0 I 
+R 1772 1 0 don't 
+R 1775 1 0 know 
+R 1779 1 0 why 
+R 1782 1 0 you 
+R 1785 1 0 still 
+R 1791 2 0 preten
+R 1796 4 0 din'
+- 1800
+R 1805 1 0 What 
+R 1808 1 0 is 
+R 1811 1 0 the 
+R 1814 4 0 owl? 
+R 1820 2 0 Bird 
+R 1825 1 0 nig
+R 1829 1 0 gas 
+R 1832 1 0 and 
+R 1835 2 0 bird 
+R 1840 1 0 bit
+R 1844 2 0 ches, 
+R 1850 4 0 go
+- 1854
+R 1865 1 0 The 
+R 1867 3 0 au
+R 1873 3 0 dience 
+R 1879 3 0 not 
+R 1884 4 0 dumb
+- 1888
+R 1890 3 0 Shape 
+R 1895 1 0 the 
+R 1897 1 0 sto
+R 1901 1 0 ries 
+R 1904 1 0 how 
+R 1907 1 0 you 
+R 1910 3 0 want, 
+R 1916 1 0 hey, 
+R 1919 3 0 Drake, 
+R 1924 1 0 they're 
+R 1928 2 0 not 
+R 1931 5 0 slow
+- 1936
+R 1938 1 0 Rab
+R 1941 1 0 bit 
+R 1945 2 0 hole 
+R 1949 1 0 is 
+R 1952 1 0 still 
+R 1956 4 0 deep, 
+R 1963 1 0 I 
+R 1966 1 0 can 
+R 1969 1 0 go 
+R 1973 1 0 fur
+R 1975 1 0 ther, 
+R 1979 1 0 I 
+R 1981 1 0 pro
+R 1985 1 0 mise
+- 1986
+R 1988 1 0 Ain't 
+R 1990 1 0 that 
+R 1994 1 0 some
+R 1997 1 0 thin'? 
+R 2002 4 0 B-Rad 
+R 2008 2 0 stands 
+R 2012 1 0 for 
+R 2016 2 0 bitch 
+R 2020 1 0 and 
+R 2024 1 0 you 
+R 2027 1 0 Ma
+R 2030 1 0 li
+R 2032 1 0 bu 
+R 2035 1 0 most 
+R 2038 1 0 wan
+R 2041 1 0 ted
+- 2042
+R 2044 1 0 Ain't 
+R 2047 1 0 no 
+R 2050 1 0 law, 
+R 2053 1 0 boy, 
+R 2057 1 0 you 
+R 2061 1 0 ball 
+R 2065 2 0 boy, 
+R 2069 1 0 fetch 
+R 2073 2 0 Ga
+R 2077 1 0 to
+R 2081 1 0 rade 
+R 2083 1 0 or 
+R 2086 1 0 some
+R 2090 1 0 thin'
+- 2091
+R 2095 2 0 Since 
+R 2100 11 0 2009, 
+R 2114 2 0 I 
+R 2118 1 0 had 
+R 2124 1 0 this 
+R 2128 1 0 bitch 
+R 2134 1 0 jum
+R 2137 1 0 pin'
+- 2138
+R 2142 1 0 You 
+R 2146 1 0 nig
+R 2149 1 0 gas'll 
+R 2152 1 0 get 
+R 2155 1 0 a 
+R 2158 1 0 wed
+R 2161 1 0 gie, 
+R 2168 1 0 be 
+R 2171 1 0 flip
+R 2172 1 0 ped 
+R 2174 3 0 over 
+R 2178 1 0 your 
+R 2180 6 0 boxers
+- 2186
+R 2189 1 0 What 
+R 2192 1 0 O
+R 2196 5 0 VO 
+R 2203 4 0 for? 
+R 2212 1 0 The 
+R 2215 1 0 \"O
+R 2218 1 0 ther 
+R 2220 1 0 Va
+R 2222 1 0 gi
+R 2224 1 0 nal 
+R 2226 1 0 Op
+R 2229 6 0 tion\"? 
+R 2244 2 0 Pus
+R 2248 5 0 sy
+- 2253
+R 2259 1 0 Nig
+R 2261 1 0 ga 
+R 2263 1 0 bet
+R 2265 1 0 ter 
+R 2267 1 0 straigh
+R 2271 1 0 ten 
+R 2273 1 0 they 
+R 2275 1 0 pos
+R 2278 2 0 ture, 
+R 2283 1 0 got 
+R 2286 1 0 fa
+R 2288 1 0 mous 
+R 2291 1 0 all 
+R 2293 1 0 up 
+R 2295 1 0 in 
+R 2299 2 0 Comp
+R 2303 2 0 ton
+- 2305
+R 2307 1 0 Might 
+R 2310 1 0 write 
+R 2313 1 0 this 
+R 2315 1 0 for 
+R 2318 1 0 the 
+R 2321 1 0 doc
+R 2323 2 0 to
+R 2326 1 0 rate, 
+R 2331 1 0 tell 
+R 2334 1 0 the 
+R 2337 1 0 pop 
+R 2339 1 0 star, 
+R 2342 1 0 \"Quit 
+R 2346 2 0 hi
+R 2350 1 0 din'\"
+- 2351
+R 2354 1 0 Fuck 
+R 2357 1 0 a 
+R 2359 1 0 cap
+R 2362 1 0 tion, 
+R 2365 1 0 want 
+R 2369 2 0 ac
+R 2373 2 0 tion, 
+R 2377 2 0 no 
+R 2381 1 0 ac
+R 2384 3 0 cident
+- 2387
+R 2389 1 0 And 
+R 2392 1 0 I'm 
+R 2394 5 0 hands-on, 
+R 2401 1 0 he 
+R 2404 1 0 fuck 
+R 2407 1 0 a
+R 2410 1 0 round, 
+R 2413 1 0 get 
+R 2416 1 0 po
+R 2419 1 0 li
+R 2421 2 0 shed
+- 2423
+R 2428 1 0 Fu
+R 2430 1 0 cked 
+R 2433 1 0 on 
+R 2435 3 0 Wayne 
+R 2440 2 0 girl 
+R 2444 1 0 while 
+R 2446 1 0 he 
+R 2449 1 0 was 
+R 2451 1 0 in 
+R 2453 3 0 jail, 
+R 2458 1 0 that's 
+R 2461 1 0 con
+R 2464 1 0 ni
+R 2467 3 0 vin'
+- 2470
+R 2473 1 0 Then 
+R 2476 1 0 get 
+R 2479 1 0 his 
+R 2482 3 0 face 
+R 2487 1 0 tat
+R 2490 1 0 ted 
+R 2493 1 0 like 
+R 2495 1 0 a 
+R 2498 1 0 bitch 
+R 2502 1 0 a
+R 2505 1 0 po
+R 2508 1 0 lo
+R 2511 1 0 gi
+R 2514 3 0 zin'
+- 2517
+R 2520 1 0 I'm 
+R 2523 1 0 glad 
+R 2526 1 0 De
+R 2529 3 0 Roz' 
+R 2535 1 0 came 
+R 2538 5 0 home, 
+R 2545 1 0 y'all 
+R 2548 2 0 didn't 
+R 2552 1 0 deserve 
+R 2553 1 0 him 
+R 2559 1 0 nei
+R 2563 2 0 ther
+- 2565
+R 2568 1 0 From 
+R 2571 1 0 A
+R 2574 1 0 lon
+R 2576 1 0 dra 
+R 2578 1 0 down 
+R 2581 1 0 to 
+R 2584 1 0 Cen
+R 2587 1 0 tral, 
+R 2590 1 0 nig
+R 2593 1 0 ga 
+R 2595 1 0 bet
+R 2597 1 0 ter 
+R 2599 1 0 not 
+R 2601 1 0 speak 
+R 2603 1 0 on 
+R 2605 2 0 Sere
+R 2607 4 0 na
+- 2611
+R 2615 1 0 And 
+R 2617 1 0 your 
+R 2620 1 0 home
+R 2622 1 0 boy 
+R 2625 1 0 need 
+R 2628 1 0 sub
+R 2631 1 0 poe
+R 2634 2 0 na, 
+R 2639 1 0 that 
+R 2642 1 0 pre
+R 2645 1 0 da
+R 2646 1 0 tor 
+R 2648 1 0 move 
+R 2652 1 0 in 
+R 2654 5 0 flocks
+- 2659
+R 2662 1 0 That 
+R 2666 4 0 name 
+R 2672 1 0 got
+R 2674 1 0 ta 
+R 2677 1 0 be 
+R 2678 1 0 re
+R 2681 1 0 gis
+R 2683 2 0 tered 
+R 2687 1 0 and 
+R 2691 1 0 placed 
+R 2694 1 0 on 
+R 2696 1 0 neigh
+R 2698 1 0 bo
+R 2700 1 0 rhood 
+R 2701 4 0 watch
+- 2705
+R 2709 1 0 I 
+R 2713 5 0 lean 
+R 2720 1 0 on 
+R 2722 1 0 you 
+R 2725 1 0 nig
+R 2728 1 0 gas 
+R 2731 1 0 like 
+R 2733 1 0 a
+R 2736 1 0 no
+R 2739 1 0 ther 
+R 2742 1 0 line 
+R 2745 1 0 of 
+R 2748 3 0 Wock'
+- 2751
+R 2754 3 0 Yeah, 
+R 2760 1 0 it's 
+R 2763 1 0 all 
+R 2766 2 0 eyes 
+R 2770 1 0 on 
+R 2773 2 0 me, 
+R 2776 1 0 and 
+R 2779 1 0 I'ma 
+R 2783 1 0 send 
+R 2786 1 0 it 
+R 2790 1 0 up 
+R 2792 1 0 to 
+R 2795 3 0 Pac, 
+R 2801 3 0 ayy
+- 2804
+R 2807 1 0 Put 
+R 2810 1 0 the 
+R 2813 4 0 wrong 
+R 2819 2 0 label 
+R 2824 1 0 on 
+R 2827 1 0 me, 
+R 2830 3 0 I'ma 
+R 2836 1 0 get 
+R 2839 1 0 'em 
+R 2843 2 0 drop
+R 2847 1 0 ped, 
+R 2850 2 0 ayy
+- 2852
+R 2855 3 0 Sweet 
+R 2860 4 0 Chin 
+R 2866 1 0 Mu
+R 2870 1 0 sic 
+R 2872 1 0 and 
+R 2875 1 0 I 
+R 2878 2 0 won't 
+R 2882 2 0 pass 
+R 2886 1 0 the 
+R 2890 3 0 aux, 
+R 2896 3 0 ayy
+- 2899
+R 2902 1 0 How 
+R 2905 1 0 ma
+R 2909 2 0 ny 
+R 2913 4 0 stocks 
+R 2919 1 0 do 
+R 2923 1 0 I 
+R 2926 1 0 rea
+R 2929 1 0 lly 
+R 2932 1 0 have 
+R 2935 1 0 in 
+R 2937 4 0 stock? 
+R 2944 2 0 Ayy
+- 2946
+R 2950 3 0 One, 
+R 2955 3 0 two, 
+R 2961 3 0 three, 
+R 2967 3 0 four, 
+R 2973 3 0 five, 
+R 2979 3 0 plus 
+R 2985 4 0 five, 
+R 2991 3 0 ayy
+- 2994
+R 2997 1 0 De
+R 3000 1 0 vil 
+R 3003 1 0 is 
+R 3007 1 0 a 
+R 3009 2 0 lie, 
+R 3014 1 0 he 
+R 3017 1 0 a 
+R 3020 9 0 69 
+R 3032 3 0 God, 
+R 3038 3 0 ayy
+- 3041
+R 3044 1 0 Frea
+R 3048 4 0 ky-ass 
+R 3055 1 0 nig
+R 3058 1 0 gas 
+R 3061 1 0 need 
+R 3065 1 0 to 
+R 3067 1 0 stay 
+R 3071 1 0 they 
+R 3075 1 0 ass 
+R 3077 1 0 in
+R 3080 3 0 side, 
+R 3086 3 0 ayy
+- 3089
+R 3092 1 0 Roll 
+R 3096 1 0 they 
+R 3098 1 0 ass 
+R 3102 1 0 up 
+R 3106 2 0 like 
+R 3111 1 0 a 
+R 3114 3 0 fresh 
+R 3119 2 0 pack 
+R 3124 1 0 of 
+R 3126 4 0 'za, 
+R 3133 3 0 ayy
+- 3136
+R 3139 1 0 Ci
+R 3143 1 0 ty 
+R 3145 1 0 is 
+R 3148 1 0 back 
+R 3151 2 0 up, 
+R 3155 1 0 it's 
+R 3159 1 0 a 
+R 3163 2 0 must, 
+R 3167 2 0 we 
+R 3171 1 0 out
+R 3175 4 0 side, 
+R 3181 4 0 ayy
+- 3185 3274
+- 3274
+R 3294 2 0 They 
+R 3300 1 0 not 
+R 3304 1 0 like 
+R 3308 4 0 us, 
+R 3318 2 0 they 
+R 3323 1 0 not 
+R 3327 1 0 like 
+R 3331 4 0 us, 
+R 3342 1 0 they 
+R 3346 1 0 not 
+R 3348 2 0 like 
+R 3354 2 0 us
+- 3356 3368
+- 3368
+R 3388 2 0 They 
+R 3394 1 0 not 
+R 3397 1 0 like 
+R 3401 4 0 us, 
+R 3411 2 0 they 
+R 3416 1 0 not 
+R 3420 1 0 like 
+R 3424 3 0 us, 
+R 3434 1 0 they 
+R 3439 1 0 not 
+R 3443 1 0 like 
+R 3448 4 0 us
+- 3452
+R 3470 2 0 Once 
+R 3476 1 0 u
+R 3479 1 0 pon 
+R 3482 1 0 a 
+R 3485 2 0 time, 
+R 3490 1 0 all 
+R 3494 1 0 of 
+R 3497 1 0 us 
+R 3500 1 0 was 
+R 3503 1 0 in 
+R 3508 5 0 chains
+- 3513
+R 3519 1 0 Ho
+R 3525 1 0 mie 
+R 3528 1 0 still 
+R 3531 1 0 dou
+R 3536 1 0 bled 
+R 3539 1 0 down 
+R 3542 1 0 ca
+R 3547 1 0 llin' 
+R 3550 1 0 us 
+R 3553 1 0 some 
+R 3556 4 0 slaves
+- 3560
+R 3565 1 0 A
+R 3569 1 0 tlan
+R 3572 1 0 ta 
+R 3574 1 0 was 
+R 3577 1 0 the 
+R 3580 1 0 Mec
+R 3583 1 0 ca, 
+R 3586 1 0 buil
+R 3589 1 0 din' 
+R 3592 1 0 rail
+R 3595 1 0 roads 
+R 3598 1 0 and 
+R 3601 1 0 trains
+- 3602
+R 3607 1 0 Bear 
+R 3613 1 0 with 
+R 3617 1 0 me 
+R 3620 1 0 for 
+R 3623 1 0 a 
+R 3626 1 0 se
+R 3630 1 0 cond, 
+R 3633 1 0 let 
+R 3636 1 0 me 
+R 3639 1 0 put 
+R 3642 1 0 y'all 
+R 3646 1 0 on 
+R 3650 4 0 game
+- 3654
+R 3658 1 0 The 
+R 3662 1 0 set
+R 3666 1 0 tlers 
+R 3669 1 0 was 
+R 3672 1 0 u
+R 3674 1 0 sin' 
+R 3679 2 0 town
+R 3684 1 0 folk 
+R 3689 1 0 to 
+R 3692 1 0 make 
+R 3695 1 0 'em 
+R 3698 1 0 ri
+R 3701 1 0 cher
+- 3702
+R 3705 1 0 Fast-for
+R 3711 1 0 ward, 
+R 3714 11 0 2024, 
+R 3729 1 0 you 
+R 3733 1 0 got 
+R 3736 1 0 the 
+R 3739 1 0 same 
+R 3742 3 0 agen
+R 3748 1 0 da
+- 3749
+R 3752 1 0 You 
+R 3757 1 0 run 
+R 3761 1 0 to 
+R 3765 1 0 A
+R 3768 1 0 tlan
+R 3772 1 0 ta 
+R 3775 1 0 when 
+R 3778 1 0 you 
+R 3781 1 0 need 
+R 3785 1 0 a 
+R 3788 1 0 check 
+R 3792 1 0 ba
+R 3797 1 0 lance
+- 3798
+R 3801 1 0 Let 
+R 3805 1 0 me 
+R 3808 1 0 break 
+R 3811 1 0 it 
+R 3814 1 0 down 
+R 3817 1 0 for 
+R 3820 1 0 you, 
+R 3823 1 0 this 
+R 3826 1 0 the 
+R 3828 2 0 real 
+R 3834 1 0 nig
+R 3837 1 0 ga 
+R 3840 1 0 cha
+R 3843 1 0 llenge
+- 3844
+R 3856 1 0 You 
+R 3860 1 0 ca
+R 3863 1 0 lled 
+R 3867 1 0 Fu
+R 3870 1 0 ture 
+R 3873 1 0 when 
+R 3875 1 0 you 
+R 3877 3 0 didn't 
+R 3881 1 0 see 
+R 3884 1 0 the 
+R 3887 4 0 club
+- 3891
+R 3903 4 0 Lil 
+R 3910 1 0 Ba
+R 3915 1 0 by 
+R 3918 1 0 hel
+R 3921 1 0 ped 
+R 3924 1 0 you 
+R 3926 1 0 get 
+R 3928 1 0 your 
+R 3930 2 0 lin
+R 3932 1 0 go 
+R 3933 5 0 up
+- 3938
+R 3951 2 0 2
+R 3958 3 0 1 
+R 3964 1 0 gave 
+R 3967 1 0 you 
+R 3971 1 0 false 
+R 3976 2 0 street 
+R 3982 4 0 cred
+- 3986
+R 3993 2 0 Thug 
+R 3998 1 0 made 
+R 4003 1 0 you 
+R 4006 1 0 feel 
+R 4011 1 0 like 
+R 4014 1 0 you 
+R 4017 1 0 a 
+R 4020 1 0 slime 
+R 4024 1 0 in 
+R 4026 1 0 your 
+R 4028 6 0 head
+- 4034
+R 4046 2 0 Qua
+R 4051 1 0 vo 
+R 4055 1 0 said 
+R 4058 1 0 you 
+R 4062 1 0 can 
+R 4066 1 0 be 
+R 4069 2 0 from 
+R 4073 3 0 North
+R 4076 3 0 side
+- 4079
+R 4092 3 0 2 
+R 4098 3 0 Chainz 
+R 4105 1 0 say 
+R 4109 1 0 you 
+R 4112 2 0 good, 
+R 4118 1 0 but 
+R 4121 1 0 he 
+R 4125 4 0 lied
+- 4129
+R 4132 1 0 You 
+R 4136 2 0 run 
+R 4143 1 0 to 
+R 4147 1 0 A
+R 4152 1 0 tlan
+R 4155 1 0 ta 
+R 4158 1 0 when 
+R 4162 1 0 you 
+R 4165 1 0 need 
+R 4168 1 0 a 
+R 4171 1 0 few 
+R 4175 1 0 do
+R 4178 1 0 llars
+- 4179
+R 4182 1 0 No, 
+R 4185 1 0 you 
+R 4188 1 0 not 
+R 4191 1 0 a 
+R 4195 1 0 co
+R 4198 1 0 llea
+R 4201 1 0 gue, 
+R 4205 1 0 you 
+R 4209 1 0 a 
+R 4212 1 0 fu
+R 4215 1 0 ckin' 
+R 4218 1 0 co
+R 4219 1 0 lo
+R 4220 6 0 nizer
+- 4226
+R 4244 1 0 The 
+R 4249 1 0 fa
+R 4252 1 0 mi
+R 4256 1 0 ly 
+R 4259 1 0 mat
+R 4262 1 0 ter 
+R 4265 1 0 and 
+R 4268 1 0 the 
+R 4271 1 0 truth 
+R 4275 1 0 of 
+R 4278 1 0 the 
+R 4282 1 0 mat
+R 4285 1 0 ter
+- 4286
+R 4288 1 0 It 
+R 4292 1 0 was 
+R 4295 1 0 God's 
+R 4299 1 0 plan 
+R 4302 1 0 to 
+R 4305 1 0 show 
+R 4308 1 0 y'all 
+R 4312 1 0 the 
+R 4313 5 0 liar
+- 4318 4333
+- 4333
+R 4353 5 0 Mm
+- 4358 4369
+- 4369
+R 4389 19 0 Mm-mm
+- 4408
+R 4414 1 0 He 
+R 4419 1 0 a 
+R 4422 1 0 fan, 
+R 4427 1 0 he 
+R 4431 1 0 a 
+R 4436 1 0 fan, 
+R 4441 1 0 he 
+R 4445 1 0 a 
+R 4450 1 0 fan
+- 4451
+R 4459 1 0 He 
+R 4464 1 0 a 
+R 4468 1 0 fan, 
+R 4473 1 0 he 
+R 4477 1 0 a 
+R 4480 1 0 fan, 
+R 4485 1 0 he 
+R 4489 1 0 a
+- 4490
+R 4502 1 0 Frea
+R 4506 4 0 ky-ass 
+R 4514 1 0 nig
+R 4518 1 0 ga, 
+R 4521 1 0 he 
+R 4525 1 0 a 
+R 4528 1 0 6
+R 4532 1 0 9 
+R 4537 3 0 God
+- 4540
+R 4547 1 0 Frea
+R 4553 1 0 ky-ass 
+R 4556 1 0 nig
+R 4560 1 0 ga, 
+R 4565 2 0 he 
+R 4571 1 0 a 
+R 4572 3 0 6
+R 4578 2 0 9 
+R 4585 3 0 God
+- 4588
+R 4595 3 0 Hey, 
+R 4602 2 0 hey, 
+R 4608 2 0 hey, 
+R 4613 3 0 hey, 
+R 4620 1 0 run 
+R 4624 1 0 for 
+R 4628 1 0 your 
+R 4632 5 0 life
+- 4637
+R 4643 2 0 Hey, 
+R 4649 2 0 hey, 
+R 4655 2 0 hey, 
+R 4661 1 0 hey, 
+R 4666 1 0 run 
+R 4671 1 0 for 
+R 4676 1 0 your 
+R 4679 5 0 life
+- 4684
+R 4690 1 0 Frea
+R 4695 1 0 ky-ass 
+R 4700 2 0 nig
+R 4706 1 0 ga, 
+R 4710 1 0 he 
+R 4714 1 0 a 
+R 4717 5 0 69 
+R 4726 4 0 God
+- 4730
+R 4736 1 0 Frea
+R 4741 1 0 ky-ass 
+R 4746 1 0 nig
+R 4749 1 0 ga, 
+R 4753 1 0 he 
+R 4757 1 0 a 
+R 4761 7 0 69 
+R 4772 5 0 God
+- 4777
+R 4785 2 0 Hey, 
+R 4792 1 0 hey, 
+R 4797 1 0 hey, 
+R 4802 3 0 hey, 
+R 4809 1 0 run 
+R 4813 1 0 for 
+R 4817 1 0 your 
+R 4822 5 0 life
+- 4827
+R 4832 3 0 Hey, 
+R 4839 2 0 hey, 
+R 4845 1 0 hey, 
+R 4850 2 0 hey,
+- 4852
+R 4872 1 0 Let 
+R 4876 1 0 me 
+R 4880 1 0 hear 
+R 4883 1 0 you 
+R 4887 1 0 say, 
+R 4890 1 0 \"O
+R 4894 1 0 V-
+R 4897 3 0 ho\" 
+F 4905 2 0 O
+F 4910 1 0 V-
+F 4915 6 0 ho
+- 4921
+R 4925 1 0 Say, 
+R 4930 1 0 \"O
+R 4933 2 0 V-
+R 4939 5 0 ho\" 
+F 4951 3 0 O
+F 4957 2 0 V-
+F 4963 3 0 ho
+- 4966
+R 4971 1 0 Then 
+R 4976 4 0 step 
+R 4984 1 0 this 
+R 4989 2 0 way, 
+R 4998 6 0 step 
+R 5008 1 0 that 
+R 5013 1 0 way
+- 5014
+R 5017 3 0 Then 
+R 5025 4 0 step 
+R 5032 1 0 this 
+R 5036 1 0 way, 
+R 5045 7 0 step 
+R 5055 1 0 that 
+R 5060 2 0 way
+- 5062
+R 5066 1 0 Are 
+R 5070 1 0 you 
+R 5074 4 0 my 
+R 5084 4 0 friend?
+- 5088 5091
+- 5091
+R 5111 1 0 Are 
+R 5116 1 0 we 
+R 5120 6 0 locked 
+R 5130 9 0 in?
+- 5139
+R 5159 3 0 Then 
+R 5166 4 0 step 
+R 5175 1 0 this 
+R 5179 2 0 way, 
+R 5188 7 0 step 
+R 5196 1 0 that 
+R 5199 2 0 way
+- 5201
+R 5205 2 0 Then 
+R 5211 6 0 step 
+R 5221 1 0 this 
+R 5225 2 0 way, 
+R 5235 7 0 step 
+R 5247 1 0 that 
+R 5252 1 0 way
+E
