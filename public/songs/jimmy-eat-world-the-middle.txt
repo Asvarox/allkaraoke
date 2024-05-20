@@ -1,0 +1,396 @@
+#ARTIST:Jimmy Eat World
+#TITLE:The Middle
+#CREATOR:Canni
+#BPM:324,44
+#YEAR:2001
+#VIDEO:v=oKsxPW6i3pM
+#LANGUAGE:English
+#GAP:14012,862778942177
+#ALLKARAOKE_ID:jimmy-eat-world-the-middle
+#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:45.345Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:162
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=370
+#ALLKARAOKE_VOLUME:0,92
+#MP3:Jimmy Eat World - The Middle.mp3
+: 22 18 2 Hey, 
+- 40
+: 58 3 2 Don’t 
+: 62 3 2 write 
+: 66 3 2 your
+: 70 7 2 self 
+: 78 7 4 off 
+: 86 12 1 yet 
+- 98 100
+- 100
+: 122 3 1 It’s 
+: 126 3 1 on
+: 130 3 1 ly 
+: 134 3 1 in 
+: 138 3 1 your 
+: 142 3 1 head 
+: 146 3 1 you 
+: 150 7 2 feel 
+: 158 7 -3 left 
+: 166 8 -3 out 
+- 174
+: 190 3 -3 Or 
+: 194 7 2 looked 
+: 202 7 1 down 
+: 210 12 -3 on 
+- 222 234
+- 234
+: 256 3 -3 Just 
+: 260 5 2 try 
+: 266 7 1 your 
+: 274 12 2 best, 
+- 286 292
+- 292
+: 314 3 -3 Try 
+: 318 3 2 e
+: 322 3 2 very
+: 326 7 2 thing 
+: 334 7 4 you 
+: 342 12 1 can 
+- 354 358
+- 358
+: 380 1 1 And 
+: 382 3 1 don’t 
+: 386 3 1 you 
+: 390 3 1 wor
+: 394 3 1 ry 
+- 397
+: 398 3 1 What 
+: 402 3 1 they 
+: 406 7 2 tell 
+: 414 7 -3 them
+: 422 16 -3 selves 
+- 438
+: 446 3 -3 When 
+: 450 7 2 you’re 
+: 458 7 1 a
+: 466 16 2 way 
+- 482 500
+- 500
+: 522 3 6 It 
+: 526 7 6 just 
+: 534 7 6 takes 
+: 542 7 2 some 
+: 550 11 2 time, 
+- 561
+: 562 7 2 Little 
+: 570 3 2 girl 
+: 574 7 2 you’re 
+: 582 3 6 in 
+: 586 3 6 the 
+: 590 3 6 mid
+: 594 3 6 dle 
+: 598 7 4 of 
+: 606 7 1 the 
+: 614 11 1 ride 
+- 625
+: 626 7 1 E
+: 634 3 1 very
+: 638 3 1 thing, 
+: 642 7 1 e
+: 650 3 1 very
+: 654 3 1 thing 
+: 658 3 1 will 
+: 662 7 2 be 
+: 670 7 2 just 
+: 678 10 2 fine 
+- 688
+: 690 7 1 E
+: 698 3 1 very
+: 702 3 1 thing, 
+: 706 7 1 e
+: 714 3 1 very
+: 718 3 1 thing 
+: 722 3 1 will 
+: 726 7 2 be 
+* 734 7 2 all 
+* 742 7 -3 right, 
+- 749
+* 750 7 2 All 
+* 758 12 -3 right 
+- 770
+: 790 20 2 Hey, 
+- 810
+: 826 3 2 You 
+: 830 3 2 know 
+: 834 3 2 they’re 
+: 838 7 2 all 
+: 846 7 4 the 
+: 854 12 1 same 
+- 866 868
+- 868
+: 890 3 1 You 
+: 894 3 1 know 
+: 898 3 1 you’re 
+: 902 3 1 do
+: 906 3 1 ing 
+: 910 3 1 bet
+: 914 3 1 ter 
+: 918 7 2 on 
+: 926 7 -3 your 
+: 934 12 -3 own 
+- 946
+: 958 3 -3 So 
+: 962 7 2 don’t 
+: 970 19 1 buy 
+: 990 16 -3 in 
+- 1006
+: 1026 3 -3 Live 
+: 1030 3 2 ri
+: 1034 7 2 ~ght 
+: 1042 16 2 now 
+- 1058 1060
+- 1060
+: 1082 3 -3 Yeah, 
+: 1086 7 2 just 
+: 1094 7 2 be 
+: 1102 7 4 your
+: 1110 16 1 self 
+- 1126 1128
+- 1128
+: 1150 3 1 It 
+: 1154 3 1 doesn’t 
+: 1158 3 1 mat
+: 1162 3 1 ter 
+: 1166 3 1 if 
+: 1170 3 1 that’s 
+: 1174 7 2 good 
+: 1182 7 -3 e
+: 1190 12 -3 nough 
+- 1202
+: 1214 3 -3 For 
+: 1218 7 2 some
+: 1226 7 1 one 
+: 1234 12 2 else 
+- 1246 1268
+- 1268
+: 1290 3 6 It 
+: 1294 7 6 just 
+: 1302 7 6 takes 
+: 1310 7 2 some 
+: 1318 11 2 time, 
+- 1329
+: 1330 7 2 Litte 
+: 1338 3 2 girl 
+: 1342 7 2 you’re 
+: 1350 3 6 in 
+: 1354 3 6 the 
+: 1358 3 6 mid
+: 1362 3 6 dle 
+: 1366 7 4 of 
+: 1374 7 1 the 
+: 1382 11 1 ride 
+- 1393
+: 1394 7 1 E
+: 1402 3 1 very
+: 1406 3 1 thing, 
+: 1410 7 1 e
+: 1418 3 1 very
+: 1422 3 1 thing 
+: 1426 3 1 will 
+: 1430 7 2 be 
+: 1438 7 2 just 
+: 1446 10 2 fine 
+- 1456
+: 1458 7 1 E
+: 1466 3 1 very
+: 1470 3 1 thing, 
+: 1474 7 1 e
+: 1482 3 1 very
+: 1486 3 1 thing 
+: 1490 3 1 will 
+: 1494 7 2 be 
+* 1502 7 2 all 
+* 1510 7 -3 right, 
+- 1517
+* 1518 7 2 All 
+* 1526 12 -3 right 
+- 1538
+: 1546 3 6 It 
+: 1550 7 6 just 
+: 1558 7 6 takes 
+: 1566 7 2 some 
+: 1574 11 2 time, 
+- 1585
+: 1586 7 2 Litte 
+: 1594 3 2 girl 
+: 1598 7 2 you’re 
+: 1606 3 6 in 
+: 1610 3 6 the 
+: 1614 3 6 mid
+: 1618 3 6 dle 
+: 1622 7 4 of 
+: 1630 7 1 the 
+: 1638 11 1 ride 
+- 1649
+: 1650 7 1 E
+: 1658 3 1 very
+: 1662 3 1 thing, 
+: 1666 7 1 e
+: 1674 3 1 very
+: 1678 3 1 thing 
+: 1682 3 1 will 
+: 1686 7 2 be 
+: 1694 7 2 just 
+: 1702 10 2 fine 
+- 1712
+: 1714 7 1 E
+: 1722 3 1 very
+: 1726 3 1 thing, 
+: 1730 7 1 e
+: 1738 3 1 very
+: 1742 3 1 thing 
+: 1746 3 1 will 
+: 1750 7 2 be 
+* 1758 7 2 all 
+* 1766 7 -3 right, 
+- 1773
+* 1774 7 2 All 
+* 1782 12 -3 right 
+- 1794 2304
+- 2304
+: 2326 20 2 Hey, 
+- 2346
+: 2362 3 2 Don’t 
+: 2366 3 2 write 
+: 2370 3 2 your
+: 2374 7 2 self 
+: 2382 7 4 off 
+: 2390 12 1 yet 
+- 2402 2404
+- 2404
+: 2426 3 1 It’s 
+: 2430 3 1 on
+: 2434 3 1 ly 
+: 2438 3 1 in 
+: 2442 3 1 your 
+: 2446 3 1 head 
+: 2450 3 1 you 
+: 2454 7 2 feel 
+: 2462 7 -3 left 
+: 2470 12 -3 out 
+- 2482
+: 2494 3 -3 Or 
+: 2498 7 2 looked 
+: 2506 19 1 down 
+: 2526 16 -3 on 
+- 2542
+: 2562 3 -3 Just 
+: 2566 3 2 do 
+: 2570 7 2 your 
+: 2578 12 2 best, 
+- 2590 2596
+- 2596
+: 2618 3 -3 Do 
+: 2622 3 2 e
+: 2626 3 2 very
+: 2630 7 2 thing 
+: 2638 7 4 you 
+: 2646 12 1 can 
+- 2658 2662
+- 2662
+: 2684 1 1 And 
+: 2686 3 1 don’t 
+: 2690 3 1 you 
+: 2694 3 1 wor
+: 2698 3 1 ry 
+- 2701
+: 2702 3 1 What 
+: 2706 3 1 the 
+: 2710 7 2 bit
+: 2718 7 -3 ter 
+: 2726 12 -3 hearts 
+- 2738
+: 2750 3 -3 Are 
+: 2754 7 2 gon
+: 2762 7 1 na 
+: 2770 16 2 say 
+- 2786 2804
+- 2804
+: 2826 3 6 It 
+: 2830 7 6 just 
+: 2838 7 6 takes 
+: 2846 7 2 some 
+: 2854 11 2 time, 
+- 2865
+: 2866 7 2 Little 
+: 2874 3 2 girl 
+: 2878 7 2 you’re 
+: 2886 3 6 in 
+: 2890 3 6 the 
+: 2894 3 6 mid
+: 2898 3 6 dle 
+: 2902 7 4 of 
+: 2910 7 1 the 
+: 2918 11 1 ride 
+- 2929
+: 2930 7 1 E
+: 2938 3 1 very
+: 2942 3 1 thing, 
+: 2946 7 1 e
+: 2954 3 1 very
+: 2958 3 1 thing 
+: 2962 3 1 wil 
+: 2966 7 2 be 
+: 2974 7 2 just 
+: 2982 10 2 fine 
+- 2992
+: 2994 7 1 E
+: 3002 3 1 very
+: 3006 3 1 thing, 
+: 3010 7 1 e
+: 3018 3 1 very
+: 3022 3 1 thing 
+: 3026 3 1 will 
+: 3030 7 2 be 
+* 3038 7 2 all 
+* 3046 7 -3 right, 
+- 3053
+* 3054 7 2 All 
+* 3062 12 -3 right 
+- 3074
+: 3082 3 6 It 
+: 3086 7 6 just 
+: 3094 7 6 takes 
+: 3102 7 2 some 
+: 3110 11 2 time 
+- 3121
+: 3122 7 2 Little 
+: 3130 3 2 girl 
+: 3134 7 2 you’re 
+: 3142 3 6 in 
+: 3146 3 6 the 
+: 3150 3 6 mid
+: 3154 3 6 dle 
+: 3158 7 4 of 
+: 3166 7 1 the 
+: 3174 11 1 ride 
+- 3185
+: 3186 7 1 E
+: 3194 3 1 very
+: 3198 3 1 thing, 
+: 3202 7 1 e
+: 3210 3 1 very
+: 3214 3 1 thing 
+: 3218 3 1 will 
+: 3222 7 2 be 
+: 3230 7 2 just 
+: 3238 10 2 fine 
+- 3248
+: 3250 5 1 E
+: 3256 3 1 very
+: 3260 3 1 thing, 
+: 3264 7 6 e
+: 3272 3 3 very
+: 3276 5 1 thing 
+: 3282 3 1 will 
+: 3286 7 2 be 
+* 3294 7 2 all 
+* 3302 12 2 right 
+E

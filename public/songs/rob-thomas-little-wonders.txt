@@ -1,0 +1,357 @@
+#ARTIST:Rob Thomas
+#TITLE:Little Wonders
+#CREATOR:IC
+#BPM:280
+#YEAR:2007
+#PREVIEWSTART:49
+#VIDEO:v=8Fzy8p4h_eQ
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:24692,14285714286
+#EDITION:[Sc]-Songs
+#ALLKARAOKE_ID:rob-thomas-little-wonders
+#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:54.480Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/?link=profil&id=411
+#ALLKARAOKE_REALBPM:168
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3749
+#ALLKARAOKE_PREVIEWEND:75
+#ALLKARAOKE_VOLUME:0,93
+#MP3:Rob Thomas - Little Wonders.mp3
+: 19 3 9 Let 
+: 23 3 11 it 
+: 30 3 13 go 
+- 33 54
+- 54
+: 73 3 13 Let 
+: 77 2 16 it 
+: 84 5 18 roll 
+: 91 4 16 right 
+: 97 4 16 off 
+: 104 3 13 your 
+: 110 4 13 should
+: 116 3 11 er 
+- 119
+: 126 3 9 Don’t 
+: 132 3 11 you 
+: 138 4 13 know 
+- 142 166
+- 166
+: 185 2 4 The 
+: 190 5 13 harde
+: 197 4 13 st 
+: 204 6 13 part 
+: 213 3 14 is 
+: 219 4 13 o
+: 225 4 11 ver 
+- 229
+: 240 3 16 Let 
+: 244 4 13 it 
+: 250 5 13 in 
+- 255 266
+- 266
+: 285 3 13 Let 
+: 290 3 16 your 
+: 297 5 18 cla
+: 304 4 16 ri
+: 311 7 16 ty 
+: 321 2 13 de
+: 324 6 13 fine 
+: 332 3 11 you 
+- 335
+: 341 3 9 In 
+: 347 2 11 the 
+: 351 5 13 end 
+- 356 376
+- 376
+: 395 3 9 You 
+: 400 3 11 will 
+: 405 4 13 o
+: 411 3 13 nly 
+: 420 3 13 just 
+: 427 3 14 re
+: 431 4 13 mem
+: 437 5 11 ber 
+: 445 4 9 how 
+: 451 3 11 it 
+: 457 9 9 feels 
+- 466 468
+- 468
+: 487 6 16 Our 
+: 497 8 13 lives 
+: 508 2 9 are 
+: 512 8 11 made 
+- 520
+: 534 2 4 In 
+* 540 7 13 these 
+: 554 6 8 small 
+: 562 8 8 hou
+: 572 5 9 ~rs 
+- 577
+: 593 7 13 These 
+: 605 4 13 lit
+: 611 4 14 tle 
+: 619 3 13 won
+: 624 5 9 ders 
+- 629
+: 639 6 16 These 
+: 647 4 16 twists 
+: 655 4 13 and 
+: 662 6 13 turns 
+: 671 4 14 of 
+: 678 6 13 fate 
+- 684
+: 699 7 16 Time 
+: 710 8 13 falls 
+: 722 2 9 a
+: 726 5 11 way, 
+- 731
+: 747 3 4 But 
+* 754 7 13 these 
+: 766 6 8 small 
+: 775 9 8 hou
+: 786 6 9 ~rs 
+- 792
+: 806 8 13 These 
+: 819 8 8 small 
+: 830 7 8 hou
+: 839 5 9 ~rs 
+- 844
+: 860 8 8 Still 
+: 873 4 9 re
+: 881 9 9 main 
+- 890 1068
+- 1068
+: 1087 4 9 Let 
+: 1092 3 11 it 
+: 1099 7 13 slide 
+- 1106 1123
+- 1123
+: 1142 2 13 Let 
+: 1147 2 16 your 
+: 1153 5 18 trou
+: 1160 3 16 bles 
+: 1167 6 16 fall 
+: 1176 3 13 be
+: 1180 6 13 hind 
+: 1189 4 11 you 
+- 1193
+: 1197 3 9 Let 
+: 1202 3 11 it 
+* 1210 5 13 shi
+: 1216 2 11 ~
+: 1219 2 9 ~ne 
+- 1221 1230
+- 1230
+: 1249 2 9 Till 
+: 1253 2 11 you 
+: 1260 6 13 feel 
+: 1268 3 13 it 
+: 1275 5 13 all 
+: 1282 3 14 a
+: 1287 4 13 round 
+: 1294 4 11 you 
+- 1298
+: 1303 3 9 And 
+: 1308 4 16 I 
+: 1315 6 18 don’t 
+: 1327 3 13 mi
+: 1331 2 11 ~
+: 1334 3 9 ~nd 
+- 1337
+: 1355 3 13 If 
+: 1360 3 16 it’s 
+: 1367 7 18 me 
+: 1375 4 16 you 
+: 1380 8 16 need 
+: 1389 2 13 to 
+: 1393 6 13 turn 
+: 1403 5 11 to 
+- 1408
+: 1412 5 9 We’ll 
+: 1421 5 11 get 
+: 1428 5 13 by 
+- 1433 1445
+- 1445
+: 1464 2 9 It’s 
+: 1470 2 11 the 
+: 1475 5 13 heart 
+: 1483 4 13 that 
+: 1489 3 13 real
+: 1494 3 14 ly 
+: 1501 4 13 mat
+: 1507 5 11 ters 
+: 1517 4 9 in 
+: 1524 2 11 the 
+: 1528 7 9 end 
+- 1535 1537
+- 1537
+* 1556 8 16 Our 
+: 1567 7 13 lives 
+: 1577 2 9 are 
+: 1582 8 11 made 
+- 1590
+: 1605 3 4 In 
+* 1611 6 13 these 
+: 1623 5 8 small 
+: 1633 7 8 hou
+: 1642 8 9 ~rs 
+- 1650
+: 1666 6 13 These 
+: 1676 4 13 litt
+: 1682 3 14 le 
+: 1688 4 13 won
+: 1695 6 9 ders 
+- 1701
+: 1710 4 16 These 
+: 1718 3 16 twists 
+: 1724 3 13 and 
+: 1730 7 13 turns 
+: 1741 3 14 of 
+: 1748 6 13 fate 
+- 1754
+: 1769 7 16 Time 
+: 1781 8 13 falls 
+: 1791 3 9 a
+: 1795 8 11 way 
+- 1803
+: 1818 3 4 But 
+* 1825 6 13 these 
+: 1837 6 8 small 
+: 1846 8 8 hou
+: 1856 6 9 ~rs 
+- 1862
+: 1876 8 13 These 
+: 1890 7 8 small 
+: 1901 6 8 hou
+: 1909 5 9 ~rs 
+- 1914
+: 1930 6 8 Still 
+: 1941 5 9 re
+: 1950 7 9 mai
+: 1959 4 11 ~n 
+- 1963 1965
+- 1965
+: 1984 6 16 All 
+: 1992 2 14 of 
+: 1997 4 13 my 
+: 2006 3 14 re
+: 2010 8 13 gret 
+- 2018
+: 2033 3 11 Will 
+: 2038 5 11 wash 
+: 2045 3 9 a
+: 2049 4 8 way 
+: 2056 4 9 some
+: 2062 7 11 how 
+- 2069
+: 2087 2 9 But 
+: 2091 5 16 I 
+: 2099 2 14 can
+: 2103 4 13 not 
+: 2112 3 14 for
+: 2117 5 13 get 
+- 2122
+: 2138 2 13 The 
+: 2143 3 11 way 
+: 2149 3 9 I 
+: 2155 5 8 feel 
+: 2164 5 9 right 
+: 2172 9 9 now 
+- 2181 2228
+- 2228
+: 2247 2 4 In 
+* 2253 7 13 these 
+: 2265 7 8 small 
+: 2276 7 8 hou
+: 2285 6 9 ~rs 
+- 2291
+* 2307 7 13 These 
+: 2319 3 13 lit
+: 2323 4 14 tle 
+: 2330 4 13 won
+: 2336 4 9 ders 
+- 2340
+: 2351 5 16 These 
+: 2359 4 16 twists 
+: 2367 4 13 and 
+: 2374 7 13 turns 
+: 2384 3 14 of 
+: 2390 5 13 fate 
+- 2395
+: 2403 4 16 Yeah, 
+: 2410 4 16 these 
+: 2417 3 16 twi
+: 2423 3 13 sted 
+* 2432 7 18 turns 
+: 2444 3 16 of 
+: 2450 8 16 fate 
+- 2458
+: 2464 9 16 Time 
+: 2477 7 13 falls 
+: 2487 3 14 a
+: 2491 6 11 way 
+- 2497
+: 2508 4 13 Yeah, 
+: 2515 2 13 but 
+: 2519 7 13 these 
+: 2532 7 8 small 
+: 2542 7 8 hou
+: 2551 5 9 ~rs, 
+- 2556
+: 2574 5 13 These 
+: 2585 7 8 small 
+: 2595 8 8 hou
+: 2606 5 9 ~rs 
+- 2611
+: 2625 7 13 Still 
+: 2636 4 8 re
+: 2645 9 9 main 
+- 2654
+* 2669 16 11 Yeah
+* 2688 8 13 ~
+* 2700 7 11 ~ 
+- 2707
+: 2721 3 9 Oh, 
+: 2726 3 9 they 
+* 2734 6 16 still 
+: 2747 3 8 re
+: 2754 7 9 main 
+- 2761 2767
+- 2767
+* 2786 10 13 These 
+: 2801 2 13 lit
+: 2804 3 14 tle 
+: 2811 3 13 won
+: 2817 3 9 ders 
+- 2820
+: 2825 4 16 All 
+: 2831 4 16 these 
+: 2838 3 16 twists 
+: 2844 4 13 and 
+* 2851 6 18 turns 
+: 2864 3 16 of 
+: 2871 6 16 fate 
+- 2877
+: 2893 7 16 Time 
+: 2904 7 13 falls 
+: 2914 3 14 a
+: 2918 3 13 way
+: 2922 3 11 ~ 
+- 2925
+: 2942 2 8 But 
+* 2948 7 16 these 
+: 2961 6 8 small 
+: 2972 6 8 hou
+: 2980 5 9 ~rs 
+- 2985
+: 3002 8 13 These 
+: 3014 4 13 lit
+: 3019 4 14 tle 
+: 3026 6 13 won
+: 3035 5 9 ders 
+- 3040
+: 3055 9 13 Still 
+: 3070 5 8 re
+: 3081 9 9 main 
+E
