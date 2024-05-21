@@ -4,6 +4,7 @@ import RateSong from 'Scenes/Game/Singing/GameOverlay/Components/RateSong';
 import GameState from 'Scenes/Game/Singing/GameState/GameState';
 import SelectInputModal from 'Scenes/SelectInput/SelectInputModal';
 import InputLag from 'Scenes/Settings/InputLag';
+import SongsService from 'Songs/SongsService';
 import useKeyboardNav from 'hooks/useKeyboardNav';
 import useSmoothNavigate from 'hooks/useSmoothNavigate';
 import { useEffect, useRef, useState } from 'react';
@@ -29,10 +30,12 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
   const { register } = useKeyboardNav({ enabled: !isInputModalOpen });
 
   const [rateSongOpen, setRateSongOpen] = useState(false);
-  const handleExit = () => {
+  const handleExit = async () => {
     const progress = GameState.getSongCompletionProgress();
+    const songPreview = (await SongsService.getIndex()).find((song) => song.id === GameState.getSong()?.id);
+
     // todo add e2e test
-    if (progress < 0.7 && !isE2E()) {
+    if (!songPreview?.local && progress < 0.7 && !isE2E()) {
       setRateSongOpen(true);
     } else {
       onExit();

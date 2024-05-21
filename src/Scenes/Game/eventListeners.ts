@@ -12,7 +12,7 @@ import posthog from 'posthog-js';
 const trackSongData =
   (event: keyof typeof events) =>
   (
-    { artist, title, id }: Song | SongPreview,
+    { artist, title, id, lastUpdate }: Song | SongPreview,
     setup: SingSetup,
     scores: Array<{ name: string; score: number }> = [],
     progress?: number,
@@ -22,8 +22,6 @@ const trackSongData =
     const inputs: Record<string, InputSourceNames> = {};
     PlayersManager.getPlayers().forEach((player, index) => (inputs[`input${index}`] = player.input.source));
 
-    let packedSize = 0;
-    let packedCount = 0;
     if (event === 'songEnded') {
       try {
         // compress frequency records and see how much space they take, to analyze data usage
@@ -47,8 +45,6 @@ const trackSongData =
 
         const compressed = pack(freqs);
         console.log('compressed', compressed);
-        packedSize = compressed.byteLength;
-        packedCount = freqs?.length ?? 0;
       } catch (e) {
         captureException(e);
       }
@@ -56,8 +52,7 @@ const trackSongData =
 
     posthog.capture(event, {
       songId: id,
-      freqsSize: packedSize,
-      freqsCount: packedCount,
+      songLastUpdated: lastUpdate,
       name: `${artist} - ${title}`,
       artist,
       title,

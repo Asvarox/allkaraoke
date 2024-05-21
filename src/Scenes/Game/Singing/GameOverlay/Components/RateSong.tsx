@@ -21,12 +21,17 @@ export default function RateSong({ register, onExit }: Props) {
   }, [menuRef]);
 
   const handleRate = () => {
-    const songId = GameState.getSong()?.id;
+    const song = GameState.getSong();
+    const properties = {
+      songId: song?.id,
+      songLastUpdated: song?.lastUpdate,
+    };
+
     if (lyricsNotInSync) {
-      posthog.capture('rate-song', { type: 'not-in-sync', songId });
+      posthog.capture('rate-song', properties);
     }
     if (volumeWrong) {
-      posthog.capture('rate-song', { type: 'wrong-volume', songId });
+      posthog.capture('rate-song', properties);
     }
     onExit();
   };

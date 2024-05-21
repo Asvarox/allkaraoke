@@ -36,7 +36,10 @@ dotenv.config({ path: '.env.local' });
             from events
             where events.created_at > toDateTime('${dateFrom.toISOString()}')
               and events.created_at < toDateTime('${dateTo.toISOString()}')
-              and events.properties.$user_id IN('${userId.split(',').join("','")}')
+              and events.properties.$user_id IN('${userId
+                .split(',')
+                .map((s) => s.trim())
+                .join("','")}')
               and event IN ('share-song')
         `,
       },
