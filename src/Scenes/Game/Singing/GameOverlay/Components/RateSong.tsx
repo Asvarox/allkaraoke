@@ -26,12 +26,11 @@ export default function RateSong({ register, onExit }: Props) {
       songId: song?.id,
       songLastUpdated: song?.lastUpdate,
     };
-
     if (lyricsNotInSync) {
-      posthog.capture('rate-song', properties);
+      posthog.capture('rate-song', { type: 'not-in-sync', ...properties });
     }
     if (volumeWrong) {
-      posthog.capture('rate-song', properties);
+      posthog.capture('rate-song', { type: 'wrong-volume', ...properties });
     }
     onExit();
   };
