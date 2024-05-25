@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { Button } from 'modules/Elements/Button';
-import { nextIndex, nextValue, Switcher } from 'modules/Elements/Switcher';
+import { Switcher, nextIndex, nextValue } from 'modules/Elements/Switcher';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import isDev from 'modules/utils/isDev';
 import createPersistedState from 'use-persisted-state';
