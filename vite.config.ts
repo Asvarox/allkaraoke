@@ -7,7 +7,7 @@ import { visualizer } from 'rollup-plugin-visualizer';
 import { htmlPrerender } from 'vite-plugin-html-prerender';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
-import routePaths from './src/routePaths';
+import routePaths from './src/routes/routePaths';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';

@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
+import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 
 const songs = readdirSync('./tests/fixtures/songs/')
   .filter((file) => file.endsWith('.json'))

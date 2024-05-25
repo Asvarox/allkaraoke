@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from '../src/interfaces';
-import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import { Song } from 'interfaces';
+import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
+import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 // @ts-ignore
 import scrapedBpmData from './bandOrigins.json';
 // @ts-ignore

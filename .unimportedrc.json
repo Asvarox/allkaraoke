@@ -16,17 +16,16 @@
   ],
   "rootDir": "./src",
   "ignoreUnimported": [
-    "src/Scenes/Game/Singing/Input/MicStrategies/Yin.ts",
-    "src/Songs/utils/song-fixture.ts",
-    "src/hooks/useCallbackDebugger.ts",
-    "src/hooks/useMemoDebugger.ts",
-    "src/hooks/useEffectDebugger.ts",
+    "src/modules/GameEngine/Input/MicStrategies/Yin.ts",
+    "src/modules/Songs/utils/song-fixture.ts",
+    "src/modules/hooks/useCallbackDebugger.ts",
+    "src/modules/hooks/useEffectDebugger.ts",
+    "src/modules/hooks/useMemoDebugger.ts",
+    "src/modules/utils/TestCanvas.tsx",
+    "src/modules/utils/delayPromise.ts",
+    "src/modules/utils/testUtils.ts",
     "src/setupTests.ts",
-    "src/stories/songFixture.ts",
-    "src/utils/TestCanvas.tsx",
-    "src/utils/delayPromise.ts",
-    "src/utils/range.ts",
-    "src/utils/testUtils.ts"
+    "src/stories/songFixture.ts"
   ],
   "ignoreUnused": [
     "@mui/system",
@@ -34,8 +33,8 @@
   ],
   "ignoreUnresolved": [
     "../../../public/logo.svg?raw",
-    "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.frag?raw",
-    "Scenes/Game/Singing/GameOverlay/Drawing/Shaders/shader.vert?raw",
+    "modules/GameEngine/Drawing/Shaders/shader.frag?raw",
+    "modules/GameEngine/Drawing/Shaders/shader.vert?raw",
     "utility-types"
   ],
   "entry": [

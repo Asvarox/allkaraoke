@@ -1,7 +1,7 @@
 import { Gif } from '@remotion/gif';
-import { MicIconBlue, MicIconRed } from 'Elements/MicIcon';
-import dotParty from 'Elements/dotparty.gif';
-import allKaraokeLogo from 'Elements/logo.gif';
+import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
+import dotParty from 'modules/Elements/dotparty.gif';
+import allKaraokeLogo from 'modules/Elements/logo.gif';
 import { Fade, Move, Scale } from 'remotion-animated';
 import { SAnimated } from 'videos/support/Components/common';
 

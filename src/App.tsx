@@ -1,32 +1,32 @@
 import { ErrorBoundary, withProfiler } from '@sentry/react';
-import { KeyboardHelpProvider } from 'Scenes/KeyboardHelp/Context';
-import RemoteMic from 'Scenes/RemoteMic/RemoteMic';
-import Settings from 'Scenes/Settings/Settings';
+import { KeyboardHelpProvider } from 'routes/KeyboardHelp/Context';
+import RemoteMic from 'routes/RemoteMic/RemoteMic';
+import Settings from 'routes/Settings/Settings';
 import { Route, Router, Switch } from 'wouter';
-import Convert from './Scenes/Convert/Convert';
-import Edit from './Scenes/Edit/Edit';
-import Jukebox from './Scenes/Jukebox/Jukebox';
-import SelectInput from './Scenes/SelectInput/SelectInput';
+import Convert from './routes/Convert/Convert';
+import Edit from './routes/Edit/Edit';
+import Jukebox from './routes/Jukebox/Jukebox';
+import SelectInput from './routes/SelectInput/SelectInput';
 
 import { Global, css } from '@emotion/react';
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
-import { ErrorFallback } from 'Elements/ErrorFallback';
-import LayoutWithBackgroundProvider from 'Elements/LayoutWithBackground';
-import PageLoader from 'Elements/PageLoader';
-import GetSongsBPMs from 'Scenes/Edit/GetSongsBPMs';
-import ExcludeLanguages from 'Scenes/ExcludeLanguages/ExcludeLanguages';
-import Game from 'Scenes/Game/Game';
-import LandingPage from 'Scenes/LandingPage/LandingPage';
-import ManageSongs from 'Scenes/ManageSongs/ManageSongs';
-import QuickSetup from 'Scenes/QuickSetup/QuickSetup';
-import RemoteMicSettings from 'Scenes/Settings/RemoteMicSettings';
-import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'Scenes/Settings/SettingsState';
-import SocialMediaElements from 'Scenes/SocialMediaElements/SocialMediaElements';
-import Welcome from 'Scenes/Welcome/Welcome';
+import { ErrorFallback } from 'modules/Elements/ErrorFallback';
+import LayoutWithBackgroundProvider from 'modules/Elements/LayoutWithBackground';
+import PageLoader from 'modules/Elements/PageLoader';
 import { Suspense, lazy, useMemo } from 'react';
-import routePaths from 'routePaths';
+import GetSongsBPMs from 'routes/Edit/GetSongsBPMs';
+import ExcludeLanguages from 'routes/ExcludeLanguages/ExcludeLanguages';
+import Game from 'routes/Game/Game';
+import LandingPage from 'routes/LandingPage/LandingPage';
+import ManageSongs from 'routes/ManageSongs/ManageSongs';
+import QuickSetup from 'routes/QuickSetup/QuickSetup';
+import RemoteMicSettings from 'routes/Settings/RemoteMicSettings';
+import { GraphicSetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
+import SocialMediaElements from 'routes/SocialMediaElements/SocialMediaElements';
+import Welcome from 'routes/Welcome/Welcome';
+import routePaths from 'routes/routePaths';
 
-const LazySongList = lazy(() => import('./Scenes/Edit/SongList'));
+const LazySongList = lazy(() => import('./routes/Edit/SongList'));
 
 // Commenting this out as there are many failed to fetch errors coming from Googlebot
 // // This is a hack to preload the game scene so that it's ready when the user clicks on the game button

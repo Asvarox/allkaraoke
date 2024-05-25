@@ -1,11 +1,11 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
+import { Song } from 'interfaces';
 import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
 import { IIsrcSearchResult } from 'musicbrainz-api/lib/musicbrainz.types';
-import { Song } from '../src/interfaces';
-import { fixDiacritics } from '../src/Scenes/Convert/Steps/utils/fixDiacritics';
-import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
-import clearString from '../src/utils/clearString';
+import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
+import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
+import clearString from '../src/modules/utils/clearString';
+import { fixDiacritics } from '../src/routes/Convert/Steps/utils/fixDiacritics';
 // @ts-ignore
 import escSongs from './escSongs.json';
 // @ts-ignore

@@ -1,9 +1,9 @@
 import dotenv from 'dotenv';
 import fs from 'fs';
+import { SongPreview } from 'interfaces';
 import currentSongs from '../public/songs/index.json';
-import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
-import { importSongsFromPostHogBase } from '../src/Songs/utils/importSongsFromPostHogBase';
-import { SongPreview } from '../src/interfaces';
+import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
+import { importSongsFromPostHogBase } from '../src/modules/Songs/utils/importSongsFromPostHogBase';
 
 dotenv.config({ path: '.env.local' });
 

@@ -1,8 +1,8 @@
 import { css, Global } from '@emotion/react';
 import music from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
 import dayjs from 'dayjs';
-import { GameScreens } from 'Elements/GameScreens';
 import { SongPreview } from 'interfaces';
+import { GameScreens } from 'modules/Elements/GameScreens';
 import React from 'react';
 import { AbsoluteFill, Audio, interpolate, Series, useVideoConfig } from 'remotion';
 import { Fade, Move } from 'remotion-animated';

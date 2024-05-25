@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { BackgroundStatic } from 'Elements/LayoutWithBackground';
-import { colorSets } from 'Scenes/Game/Singing/GameOverlay/Drawing/styles';
+import { BackgroundStatic } from 'modules/Elements/LayoutWithBackground';
+import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import { PropsWithChildren } from 'react';
 import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
 import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';

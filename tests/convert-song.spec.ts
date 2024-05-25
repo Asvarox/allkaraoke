@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
-import convertTxtToSong from 'Songs/utils/convertTxtToSong';
-import getSongId from 'Songs/utils/getSongId';
+import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
+import getSongId from 'modules/Songs/utils/getSongId';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
 

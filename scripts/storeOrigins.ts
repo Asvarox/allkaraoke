@@ -1,8 +1,6 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { Song } from '../src/interfaces';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
-// @ts-ignore
-// @ts-ignore
+import { Song } from 'interfaces';
+import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 
 const SONGS_FOLDER = './public/songs';
 

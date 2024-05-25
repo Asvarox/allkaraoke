@@ -2,7 +2,7 @@ import { Global } from '@emotion/react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useMemo } from 'react';
 import '../src/index.css';
-import styles from '../src/styles';
+import styles from '../src/modules/Elements/baseStyles';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

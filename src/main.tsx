@@ -1,27 +1,28 @@
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import 'GameEvents/eventListeners';
-import 'Stats';
-import 'utils/array-at-polyfill';
-import 'utils/array-findLastIndex-polyfill';
-import 'utils/exposeSingletons';
-import 'utils/wdyr';
+import 'modules/GameEvents/eventListeners';
+import 'modules/Stats';
+import 'modules/utils/array-at-polyfill';
+import 'modules/utils/array-findLastIndex-polyfill';
+import 'modules/utils/exposeSingletons';
+import 'modules/utils/wdyr';
 
 import { browserTracingIntegration, init, setUser } from '@sentry/react';
-import songStats from 'Scenes/LandingPage/songStats.json';
-import { normalizeSting } from 'Songs/utils/getSongId';
+import App from 'App';
+import 'index.css';
+import { normalizeSting } from 'modules/Songs/utils/getSongId';
+import isDev from 'modules/utils/isDev';
+import isE2E from 'modules/utils/isE2E';
+import isPreRendering from 'modules/utils/isPreRendering';
+import { randomInt } from 'modules/utils/randomValue';
+import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
+import storage from 'modules/utils/storage';
 import posthog from 'posthog-js';
 import { createRoot } from 'react-dom/client';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import isDev from 'utils/isDev';
-import isE2E from 'utils/isE2E';
-import isPreRendering from 'utils/isPreRendering';
-import { randomInt } from 'utils/randomValue';
-import sentryIgnoreErrors from 'utils/sentryIgnoreErrors';
+import songStats from 'routes/LandingPage/songStats.json';
 import { v4 } from 'uuid';
-import App from './App';
-import './index.css';
 
 const isSentryEnabled = !!import.meta.env.VITE_APP_SENTRY_DSN_URL;
 
@@ -49,13 +50,13 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
     // debug: true,
     api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
     loaded: (ph) => {
-      let storedUser = localStorage.getItem('posthog-user-id');
+      let storedUser = storage.local.getItem('posthog-user-id');
       if (!storedUser) {
         storedUser = v4();
-        localStorage.setItem('posthog-user-id', storedUser);
+        storage.local.setItem('posthog-user-id', storedUser);
       }
       ph.identify(storedUser);
-      let storedName = localStorage.getItem('posthog-user-name');
+      let storedName = storage.local.getItem('posthog-user-name');
       if (!storedName) {
         const words = [...new Set(songStats.artists.flatMap((artist) => normalizeSting(artist).split('-')))].filter(
           (word) => word.length <= 10,
@@ -65,7 +66,7 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
           .fill(0)
           .map(() => words[randomInt(0, words.length - 1)])
           .join('-');
-        localStorage.setItem('posthog-user-name', storedName);
+        storage.local.setItem('posthog-user-name', storedName);
 
         ph.alias(storedName, storedUser);
       }

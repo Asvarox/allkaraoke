@@ -1,10 +1,8 @@
 /// <reference types="vite/client" />
 
 declare namespace globalThis {
-  interface Window {
-    chrome: any;
-    isE2ETests?: boolean;
-  }
+  var chrome: any;
+  var isE2ETests: boolean | undefined;
 
   // See https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1615
   type OrientationLockType =

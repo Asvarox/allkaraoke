@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import fs from 'fs';
-import convertSongToTxt from '../../src/Songs/utils/convertSongToTxt';
-import convertTxtToSong from '../../src/Songs/utils/convertTxtToSong';
+import convertSongToTxt from '../../src/modules/Songs/utils/convertSongToTxt';
+import convertTxtToSong from '../../src/modules/Songs/utils/convertTxtToSong';
 
 dotenv.config({ path: '.env.local' });
 

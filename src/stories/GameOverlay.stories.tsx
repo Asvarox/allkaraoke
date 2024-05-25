@@ -1,18 +1,18 @@
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
-import { VideoState } from 'Elements/VideoPlayer';
-import PlayersManager from 'Players/PlayersManager';
-import CanvasDrawing from 'Scenes/Game/Singing/GameOverlay/Drawing';
-import ParticleManager from 'Scenes/Game/Singing/GameOverlay/Drawing/ParticleManager';
-import GameOverlay from 'Scenes/Game/Singing/GameOverlay/GameOverlay';
-import GameState from 'Scenes/Game/Singing/GameState/GameState';
-import convertTxtToSong from 'Songs/utils/convertTxtToSong';
-import { processSong } from 'Songs/utils/processSong/processSong';
 import { GAME_MODE, SingSetup } from 'interfaces';
+import { VideoState } from 'modules/Elements/VideoPlayer';
+import CanvasDrawing from 'modules/GameEngine/Drawing';
+import ParticleManager from 'modules/GameEngine/Drawing/ParticleManager';
+import GameState from 'modules/GameEngine/GameState/GameState';
+import PlayersManager from 'modules/Players/PlayersManager';
+import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
+import { processSong } from 'modules/Songs/utils/processSong/processSong';
+import 'modules/utils/exposeSingletons';
 import { ComponentProps, useEffect, useMemo, useRef } from 'react';
 import { useUpdate } from 'react-use';
+import GameOverlay from 'routes/Game/Singing/GameOverlay/GameOverlay';
 import { txtfile } from 'stories/songFixture';
 import { ValuesType } from 'utility-types';
-import 'utils/exposeSingletons';
 
 interface StoryArgs {
   tolerance: number;

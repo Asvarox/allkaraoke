@@ -1,8 +1,8 @@
 import { BrowserContext, Page } from '@playwright/test';
 import { readFileSync, readdirSync } from 'fs';
-import { getSongPreview } from '../src/Songs/utils';
-import convertSongToTxt from '../src/Songs/utils/convertSongToTxt';
-import convertTxtToSong from '../src/Songs/utils/convertTxtToSong';
+import { getSongPreview } from '../src/modules/Songs/utils';
+import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
+import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 
 const songs = readdirSync('./tests/fixtures/songs/')
   .filter((file) => file.endsWith('.txt'))
