@@ -31,7 +31,7 @@ const polishSongTitle = 'multitrack';
 const polishLang = 'Polish';
 const englishLang = 'English';
 
-test.skip('Filters - PlayLists', async ({ page }) => {
+test('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -134,7 +134,7 @@ test.skip('Filters - PlayLists', async ({ page }) => {
     await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
   });
 });
-test('Filters - PlayLists (Eurovision)', async ({ page }) => {
+test.skip('Filters - PlayLists (Eurovision)', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 

@@ -6,8 +6,6 @@ import { SongPreview } from 'interfaces';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
 import { isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactNode, useMemo } from 'react';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongList';
@@ -36,9 +34,7 @@ export const SongCardStatsIndicator = ({
   focused: boolean;
 }) => {
   const isRecentlyUpdated = useMemo(() => filteringFunctions.recentlyUpdated([song]).length > 0, [song]);
-  const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
-
-  const isESCSong = isEurovisionEnabled && isEurovisionSong(song);
+  const isESCSong = isEurovisionSong(song);
 
   const stats = useSongStats(song);
   const lastPlayed = stats?.scores?.at(-1)?.date ?? false;

@@ -3,11 +3,8 @@ import styled from '@emotion/styled';
 import { SingSetup, SongPreview } from 'interfaces';
 import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackground';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
-import { isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { FeatureFlags } from 'modules/utils/featureFlags';
-import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import {
@@ -72,12 +69,12 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
-  useSpecialSongTheme(
-    songPreview,
-    isEurovisionEnabled ? 'eurovision' : 'regular',
-    isEurovisionEnabled ? isEurovisionSong : () => false,
-  );
+  // const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
+  // useSpecialSongTheme(
+  //   songPreview,
+  //   isEurovisionEnabled ? 'eurovision' : 'regular',
+  //   isEurovisionEnabled ? isEurovisionSong : () => false,
+  // );
 
   const expanded = keyboardControl;
 

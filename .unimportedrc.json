@@ -23,7 +23,10 @@
     "src/modules/hooks/useMemoDebugger.ts",
     "src/modules/utils/TestCanvas.tsx",
     "src/modules/utils/delayPromise.ts",
+    "src/modules/utils/isoCodeToCountry.ts",
     "src/modules/utils/testUtils.ts",
+    "src/modules/utils/useFeatureFlag.ts",
+    "src/routes/SingASong/SongSelection/Hooks/usePlaylistsEurovision.tsx",
     "src/setupTests.ts",
     "src/stories/songFixture.ts"
   ],
