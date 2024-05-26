@@ -1048,10 +1048,10 @@
       "English"
     ],
     "bpm": 395.05,
-    "gap": 2312.7831920010126,
+    "gap": 662.7831920010126,
     "year": "1991",
     "artistOrigin": "AU",
-    "lastUpdate": "2023-05-04T18:35:33.482Z",
+    "lastUpdate": "2024-05-26T06:19:28.803Z",
     "edition": "AC/DC Live Rock Band Track Pack",
     "genre": "Hard Rock",
     "realBpm": 132,
@@ -1061,7 +1061,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Thunderstruck%20(Live)",
     "tracks": [
       {
-        "start": 26
+        "start": 1327
       }
     ],
     "tracksCount": 1,
@@ -7564,10 +7564,10 @@
       "Spanish"
     ],
     "bpm": 380.06,
-    "gap": 16620.31368731253,
+    "gap": 16770.31368731253,
     "year": "1996",
     "artistOrigin": "PR",
-    "lastUpdate": "2024-04-20T06:51:24.346Z",
+    "lastUpdate": "2024-05-26T06:19:28.809Z",
     "genre": "Reggaeton",
     "realBpm": 171,
     "volume": 0.77,
@@ -12949,10 +12949,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 500,
+    "gap": 400,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-20T19:25:44.392Z",
+    "lastUpdate": "2024-05-26T06:19:28.817Z",
     "genre": "R&B",
     "realBpm": 86,
     "volume": 0.67,
@@ -19003,6 +19003,34 @@
     ],
     "tracksCount": 1,
     "search": "dzrtparamimtantomefaz",
+    "local": false
+  },
+  {
+    "id": "eagles-hotel-california",
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "video": "BciS5krYL80",
+    "language": [
+      "English"
+    ],
+    "bpm": 291.8,
+    "gap": 51783.30363262509,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-26T06:19:28.823Z",
+    "genre": "Rock",
+    "realBpm": 75,
+    "volume": 0.76,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3470",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eagleshotelcalifornia",
     "local": false
   },
   {
@@ -29949,10 +29977,10 @@
       "German"
     ],
     "bpm": 209.85,
-    "gap": 5379.2852037169405,
+    "gap": 5529.2852037169405,
     "year": "1977",
     "artistOrigin": "CZ",
-    "lastUpdate": "2024-02-08T06:16:42.378Z",
+    "lastUpdate": "2024-05-26T06:19:28.824Z",
     "genre": "None",
     "realBpm": 104,
     "volume": 0.81,
@@ -54073,18 +54101,17 @@
       "English"
     ],
     "bpm": 288,
-    "gap": 551.25,
+    "gap": 130.41666666666663,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.328Z",
+    "lastUpdate": "2024-05-26T06:19:28.826Z",
     "genre": "None",
-    "videoGap": 1,
     "realBpm": 144,
     "volume": 1,
     "author": "FaKK",
     "tracks": [
       {
-        "start": 9
+        "start": 19
       }
     ],
     "tracksCount": 1,
@@ -58773,18 +58800,21 @@
     "id": "the-eagles-hotel-california",
     "title": "Hotel California",
     "artist": "The Eagles",
-    "video": "09839DpTctU",
+    "video": "BciS5krYL80",
     "language": [
       "English"
     ],
-    "bpm": 292.8,
-    "gap": 53573.97260273973,
+    "bpm": 291.8,
+    "gap": 51783.30363262509,
     "year": "1976",
     "artistOrigin": "US",
-    "lastUpdate": "2023-02-25T00:44:55.410Z",
-    "genre": "Pop",
+    "lastUpdate": "2024-05-26T06:19:28.829Z",
+    "genre": "Rock",
     "realBpm": 75,
-    "author": "mustangfred and asb",
+    "volume": 0.76,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3470",
     "tracks": [
       {
         "start": 19
@@ -62100,10 +62130,10 @@
       "Korean"
     ],
     "bpm": 287.91,
-    "gap": 13725.107325205794,
+    "gap": 13525.107325205794,
     "year": "2020",
     "artistOrigin": "KR",
-    "lastUpdate": "2024-01-19T05:46:36.113Z",
+    "lastUpdate": "2024-05-26T06:19:28.833Z",
     "realBpm": 145,
     "volume": 0.59,
     "author": "asdFer",
