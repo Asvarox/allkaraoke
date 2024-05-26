@@ -8,13 +8,15 @@ on:
         required: true
         default: ''
       date_from:
-        description: 'The date from which to import songs. `NOW - 24H` by default'
+        description: 'The date from which to import songs. `NOW - 48H` by default'
         required: false
         default: ''
       date_to:
         description: 'The date to which to import songs'
         required: false
         default: ''
+  schedule:
+    - cron: '0 0 */2 * *'
 
 jobs:
   run_script:
@@ -30,7 +32,11 @@ jobs:
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Get songs
+        if: github.event_name == 'workflow_dispatch'
         run: pnpm ts-node scripts/cicd/githubActionImportSongs.ts "${{ github.event.inputs.user_id }}" "${{ github.event.inputs.date_from }}" "${{ github.event.inputs.date_to }}"
+      - name: Get songs scheduled
+        if: github.event_name == 'schedule'
+        run: pnpm ts-node scripts/cicd/githubActionImportSongs.ts "66cb50c1-fb9f-4c20-b7a7-021fe1c34090,84ff27fb-0095-49a6-be56-e9150f161a50" "" ""
       - name: Update stats
         run: pnpm ts-node scripts/generateSongStats.ts
       - name: Update popularity index

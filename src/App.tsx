@@ -32,7 +32,7 @@ const LazySongList = lazy(() => import('./routes/Edit/SongList'));
 // // This is a hack to preload the game scene so that it's ready when the user clicks on the game button
 // // without increasing initial load time. Vite doesn't support prefetch yet
 // // https://github.com/vitejs/vite/issues/10600
-// const prefetchGame = import('./Scenes/Game/Game');
+// const prefetchGame = import('./routes/Game/Game');
 // const LazyGame = lazy(() => prefetchGame);
 
 function App() {

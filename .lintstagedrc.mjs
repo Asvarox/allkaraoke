@@ -6,6 +6,6 @@ export default {
     'pnpm ts-node scripts/updateLastUpdate.ts',
     'pnpm generate-index',
     'pnpm ts-node scripts/generateSongStats.ts',
-    'git add public/songs/index.json src/Scenes/LandingPage/songStats.json',
+    'git add public/songs/index.json src/routes/LandingPage/songStats.json',
   ],
 };
