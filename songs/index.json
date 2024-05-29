@@ -19006,34 +19006,6 @@
     "local": false
   },
   {
-    "id": "eagles-hotel-california",
-    "title": "Hotel California",
-    "artist": "Eagles",
-    "video": "BciS5krYL80",
-    "language": [
-      "English"
-    ],
-    "bpm": 291.8,
-    "gap": 51783.30363262509,
-    "year": "1976",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-05-26T06:19:28.823Z",
-    "genre": "Rock",
-    "realBpm": 75,
-    "volume": 0.76,
-    "author": "IC",
-    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
-    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3470",
-    "tracks": [
-      {
-        "start": 19
-      }
-    ],
-    "tracksCount": 1,
-    "search": "eagleshotelcalifornia",
-    "local": false
-  },
-  {
     "id": "echt-du-tragst-keine-liebe-in-dir",
     "title": "Du trägst keine Liebe in dir",
     "artist": "Echt",
@@ -59352,9 +59324,10 @@
       "English"
     ],
     "bpm": 400,
-    "gap": 6901.5,
+    "gap": 6851.5,
     "year": "1989",
-    "lastUpdate": "2023-12-15T05:36:09.787Z",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-05-29T00:10:57.354Z",
     "genre": "Soundtrack",
     "realBpm": 134,
     "volume": 1,
@@ -63938,10 +63911,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 21160,
+    "gap": 21460,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2024-02-08T06:16:42.908Z",
+    "lastUpdate": "2024-05-29T00:10:58.012Z",
     "genre": "Pop",
     "realBpm": 153,
     "volume": 0.72,
