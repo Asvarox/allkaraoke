@@ -31,7 +31,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-hotkeys-hook": "^3.4.7",
+    "react-hotkeys-hook": "^4.5.0",
     "react-toastify": "^9.1.3",
     "react-use": "^17.5.0",
     "react-youtube": "^10.1.0",
