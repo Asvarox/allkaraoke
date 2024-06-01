@@ -993,10 +993,10 @@
       "English"
     ],
     "bpm": 395.98,
-    "gap": 40745.10177281681,
+    "gap": 40795.10177281681,
     "year": "1991",
     "artistOrigin": "AU",
-    "lastUpdate": "2023-05-04T18:28:45.410Z",
+    "lastUpdate": "2024-06-01T00:10:37.306Z",
     "edition": "AC/DC Live Rock Band Track Pack",
     "genre": "Hard Rock",
     "realBpm": 97,
@@ -1442,10 +1442,11 @@
       "English"
     ],
     "bpm": 321.08,
-    "gap": 15830,
+    "gap": 14898.936090693907,
     "year": "1994",
     "artistOrigin": "US",
-    "videoGap": 15,
+    "lastUpdate": "2024-06-01T00:10:37.312Z",
+    "videoGap": 1,
     "realBpm": 81,
     "volume": 0.91,
     "author": "kaim21",
@@ -1453,7 +1454,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Crazy",
     "tracks": [
       {
-        "start": 0
+        "start": 21
       }
     ],
     "tracksCount": 1,
@@ -2627,10 +2628,10 @@
       "Spanish"
     ],
     "bpm": 279.92,
-    "gap": 39711.8519577022,
+    "gap": 39861.8519577022,
     "year": "2005",
     "artistOrigin": "ES",
-    "lastUpdate": "2024-05-15T17:29:16.785Z",
+    "lastUpdate": "2024-06-01T00:10:37.314Z",
     "genre": "Pop",
     "videoGap": 23,
     "realBpm": 140,
@@ -5223,10 +5224,10 @@
       "English"
     ],
     "bpm": 288,
-    "gap": 35410.416666666664,
+    "gap": 35460.416666666664,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-08T17:29:18.342Z",
+    "lastUpdate": "2024-06-01T00:10:37.319Z",
     "genre": "Alternative",
     "videoGap": 1,
     "realBpm": 144,
@@ -6651,10 +6652,10 @@
       "English"
     ],
     "bpm": 254,
-    "gap": 15966.062992125984,
+    "gap": 16066.062992125984,
     "year": "2013",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-05-07T04:50:39.807Z",
+    "lastUpdate": "2024-06-01T00:10:37.323Z",
     "genre": "Pop",
     "realBpm": 127,
     "volume": 0.79,
@@ -17134,10 +17135,10 @@
       "Spanish"
     ],
     "bpm": 329.9,
-    "gap": 16895.69687784177,
+    "gap": 17195.69687784177,
     "year": "1999",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-03-20T06:29:32.902Z",
+    "lastUpdate": "2024-06-01T00:10:37.324Z",
     "genre": "Dibujos animados",
     "realBpm": 172,
     "volume": 0.81,
@@ -18964,8 +18965,9 @@
     "gap": 35327.93329362716,
     "year": "1989",
     "artistOrigin": "PL",
-    "lastUpdate": "2023-08-15T14:54:44.560Z",
+    "lastUpdate": "2024-06-01T00:10:37.326Z",
     "realBpm": 86,
+    "volume": 0.5,
     "author": "davidus01",
     "tracks": [
       {
@@ -30320,11 +30322,12 @@
       "English"
     ],
     "bpm": 264,
-    "gap": 36450,
+    "gap": 35027.27272727273,
     "year": "2008",
     "artistOrigin": "US",
+    "lastUpdate": "2024-06-01T00:10:37.328Z",
     "genre": "Pop/Rock",
-    "videoGap": 32,
+    "videoGap": 21,
     "realBpm": 129,
     "volume": 0.91,
     "author": "Klafhor",
@@ -30332,7 +30335,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Katy%20Perry&cancion=Hot%20N%20Cold",
     "tracks": [
       {
-        "start": 0
+        "start": 18
       }
     ],
     "tracksCount": 1,
@@ -32980,10 +32983,12 @@
       "English"
     ],
     "bpm": 323.79,
-    "gap": 32918.82090243677,
+    "gap": 32768.82090243677,
     "year": "2014",
+    "lastUpdate": "2024-06-01T00:10:37.329Z",
     "genre": "Children's music",
     "realBpm": 162,
+    "volume": 0.8,
     "author": "Jeff54",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=140546",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=21044",
@@ -39528,10 +39533,10 @@
       "Portuguese"
     ],
     "bpm": 288,
-    "gap": 12.5,
+    "gap": 62.5,
     "year": "2011",
     "artistOrigin": "BR",
-    "lastUpdate": "2024-01-07T06:25:26.476Z",
+    "lastUpdate": "2024-06-01T00:10:37.977Z",
     "genre": "None",
     "realBpm": 127,
     "volume": 0.76,
@@ -44505,10 +44510,10 @@
       "Portuguese"
     ],
     "bpm": 264.08,
-    "gap": 34649.5825507422,
+    "gap": 34799.5825507422,
     "year": "2021",
     "artistOrigin": "PT",
-    "lastUpdate": "2023-12-12T05:33:50.249Z",
+    "lastUpdate": "2024-06-01T00:10:37.978Z",
     "videoGap": 6,
     "realBpm": 132,
     "previewStart": 124,

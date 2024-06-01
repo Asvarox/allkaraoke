@@ -6,13 +6,15 @@
 #VIDEO:v=PfYnvDL0Qcw
 #GENRE:Children's music
 #LANGUAGE:English
-#GAP:32918,82090243677
+#GAP:32768,82090243677
 #ALLKARAOKE_ID:lazytown-we-are-number-one
+#ALLKARAOKE_LASTUPDATE:2024-06-01T00:10:37.329Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=140546
 #ALLKARAOKE_REALBPM:162
 #ALLKARAOKE_SOURCEURL:http://usdb.animux.de/index.php?link=detail&id=21044
+#ALLKARAOKE_VOLUME:0,8
 : 22 5 5 Hey!
-- 49 103
+- 27 103
 - 103
 : 125 2 12 We 
 : 129 2 13 are 
@@ -21,19 +23,21 @@
 * 141 3 12 One
 - 144
 : 148 5 5 Hey!
-- 175 231
+- 153 231
 - 231
 : 253 2 12 We 
 : 257 2 13 are 
 : 261 2 12 Num
 : 265 2 13 ber 
 : 269 3 12 One
+- 272 274
 - 274
 F 296 1 0 Now 
 F 301 1 0 lis
 F 306 1 0 ten 
 F 310 2 0 clo
 F 316 2 0 sely
+- 318 328
 - 328
 : 350 2 8 Here's 
 : 354 2 8 a 
@@ -80,7 +84,7 @@ F 316 2 0 sely
 : 574 3 12 on 
 : 580 3 12 the 
 : 586 12 12 run
-- 619 641
+- 598 641
 - 641
 : 663 3 10 Just 
 : 668 2 11 fol
@@ -107,7 +111,7 @@ F 801 1 0 No,
 F 806 1 0 don't 
 F 810 2 0 touch 
 F 815 1 0 that!
-- 838 934
+- 816 934
 - 934
 : 956 2 12 We 
 : 960 2 13 are 
@@ -116,14 +120,14 @@ F 815 1 0 that!
 : 972 3 12 One
 - 975
 : 981 1 5 Hey!
-- 1004 1063
+- 982 1063
 - 1063
 * 1085 2 12 We 
 * 1089 2 13 are 
 * 1093 2 12 Num
 * 1097 2 13 ber 
 * 1101 3 12 One
-- 1126 1223
+- 1104 1223
 - 1223
 : 1245 2 12 We 
 : 1249 2 13 are 
@@ -156,6 +160,7 @@ F 1415 2 0 to
 F 1424 1 0 throw
 - 1425
 F 1433 2 0 Go!
+- 1435 1446
 - 1446
 F 1468 1 0 Throw 
 F 1473 1 0 it 
@@ -199,10 +204,10 @@ F 1741 2 0 what
 F 1747 2 0 are 
 F 1752 1 0 you 
 F 1760 1 0 doing!?
-- 1783 1886
+- 1761 1886
 - 1886
 * 1908 5 5 Hey!
-- 1935 2023
+- 1913 2023
 - 2023
 : 2045 5 5 Ba
 : 2054 3 12 -ba
@@ -251,7 +256,7 @@ F 1760 1 0 doing!?
 : 2283 4 12 Num
 : 2289 9 12 ber 
 : 2298 10 12 One
-- 2330 2522
+- 2308 2522
 - 2522
 : 2544 5 5 Hey!
 - 2549
