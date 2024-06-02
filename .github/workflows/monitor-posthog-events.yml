@@ -11,7 +11,6 @@ jobs:
     env:
       VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'

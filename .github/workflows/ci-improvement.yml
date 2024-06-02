@@ -14,7 +14,6 @@ jobs:
   quick-checks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: pnpm npm-run-all --continue-on-error prettier-check lint types-check test build-storybook unimported
@@ -30,7 +29,6 @@ jobs:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
-      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run E2E tests
@@ -46,7 +44,6 @@ jobs:
       pull-requests: write # allows commenting on a PR
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run CT tests
@@ -144,7 +141,6 @@ jobs:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
     steps:
-      - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: pnpm build --base /prs/${{ github.event.number }}/ && rm -rf build/songs
