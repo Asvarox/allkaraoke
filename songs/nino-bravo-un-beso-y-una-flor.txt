@@ -6,10 +6,10 @@
 #VIDEO:v=maEVfX9zRIE
 #GENRE:Pop
 #LANGUAGE:Spanish
-#GAP:11466,431381624623
+#GAP:11416,431381624623
 #EDITION:SingStar Party
 #ALLKARAOKE_ID:nino-bravo-un-beso-y-una-flor
-#ALLKARAOKE_LASTUPDATE:2023-08-15T14:54:44.581Z
+#ALLKARAOKE_LASTUPDATE:2024-06-03T00:10:41.333Z
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:169
@@ -157,10 +157,10 @@
 * 901 5 -3 flor
 - 906
 : 914 4 1 un 
-: 920 2 2 "te 
+: 920 2 2 \"te 
 : 925 2 2 quie
 : 928 3 4 ~
-: 933 1 4 ro"
+: 933 1 4 ro\"
 - 934
 : 936 2 4 u
 : 939 3 4 na 
@@ -413,10 +413,10 @@
 : 2574 6 -3 flor
 - 2580
 : 2588 5 1 un 
-: 2594 3 2 "te 
+: 2594 3 2 \"te 
 : 2599 2 2 quie
 : 2602 4 4 ~
-: 2607 1 4 ro"
+: 2607 1 4 ro\"
 - 2608
 : 2611 1 4 u
 : 2614 3 4 na 
@@ -542,10 +542,10 @@
 : 3354 5 -3 flor
 - 3359
 : 3369 3 1 un 
-: 3375 1 2 "te 
+: 3375 1 2 \"te 
 : 3378 3 2 quie
 : 3382 3 4 ~
-: 3386 1 4 ro"
+: 3386 1 4 ro\"
 - 3387
 : 3389 2 4 u
 : 3393 2 4 na 
