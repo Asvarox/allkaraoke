@@ -1,0 +1,172 @@
+#ARTIST:Nico Bruno
+#TITLE:Changed at all
+#CREATOR:hugofnm
+#BPM:382,77
+#YEAR:2020
+#PREVIEWSTART:122
+#VIDEO:v=vS83Dw-bIRc
+#GENRE:Tv
+#LANGUAGE:English
+#GAP:37061,111372364605
+#ALLKARAOKE_ID:nico-bruno-changed-at-all
+#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:22.751Z
+#ALLKARAOKE_ARTISTORIGIN:IT
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_PREVIEWEND:158
+#ALLKARAOKE_VOLUME:0,69
+#MP3:Nico Bruno - Changed at all (from Doc - Nelle tue mani) (Official Music Video) - Nico Bruno.mp3
+: 26 8 0 Star
+: 40 6 0 ving 
+: 54 8 0 for 
+: 66 3 0 your 
+: 72 6 0 love
+- 78 80
+- 80
+: 106 4 0 Like 
+: 119 4 0 I'm 
+: 133 9 0 dy
+: 145 9 0 ing 
+: 159 9 0 on 
+: 172 2 0 the 
+: 179 20 0 floor
+- 199
+: 210 7 0 And 
+: 226 5 0 my 
+: 239 10 0 heart 
+: 254 6 0 is 
+: 267 4 0 blee
+: 278 2 0 ding 
+: 285 23 0 for
+- 308
+: 317 4 0 Eve
+: 328 3 0 ry
+: 338 26 0 thing 
+: 371 4 0 you 
+: 381 3 0 have 
+: 393 26 0 done
+- 419 453
+- 453
+: 479 8 0 I've 
+: 493 7 0 been 
+: 507 6 0 knock
+: 520 5 0 ing 
+: 533 3 0 at 
+: 545 2 0 your 
+: 552 31 0 door
+- 583
+: 604 2 0 To 
+: 611 4 0 ask 
+: 625 4 0 you 
+: 639 2 0 who 
+: 646 2 0 I 
+: 654 24 0 am
+- 678
+: 694 3 0 I've 
+: 707 3 0 been 
+: 720 5 0 slee
+: 734 4 0 ping 
+: 747 2 0 with 
+: 753 2 0 my 
+: 759 38 0 soul
+- 797
+: 820 2 0 Won't 
+: 826 2 0 hide 
+: 840 3 0 my 
+- 843
+: 852 33 0 pride
+- 885
+: 907 2 0 And 
+: 913 3 0 I 
+: 927 2 0 re
+: 934 9 0 mem
+: 948 5 0 ber 
+: 960 2 0 eve
+: 966 1 0 ry 
+: 973 35 0 song
+- 1008
+: 1032 2 0 You 
+: 1039 4 0 used 
+: 1058 1 0 to 
+: 1065 9 0 sing 
+: 1078 2 0 a
+: 1084 22 0 long
+- 1106
+: 1112 2 0 But 
+: 1119 4 0 I 
+: 1133 1 0 for
+: 1140 21 0 got, 
+: 1165 2 0 you 
+: 1172 3 0 changed 
+: 1186 3 0 at 
+: 1193 23 0 all
+- 1216
+: 1223 3 0 Changed 
+: 1237 2 0 at 
+: 1244 26 0 all, 
+: 1276 110 0 mhm
+- 1386 1467
+- 1467
+: 1493 121 0 Mhm
+- 1614 2158
+- 2158
+: 2184 3 0 I've 
+: 2197 3 0 been 
+: 2210 8 0 knock
+: 2223 4 0 ing 
+: 2237 3 0 at 
+: 2249 1 0 your 
+: 2256 34 0 door
+- 2290
+: 2310 2 0 To 
+: 2318 2 0 ask 
+: 2332 2 0 you 
+: 2345 1 0 who 
+: 2352 1 0 I 
+: 2359 27 0 am
+- 2386
+: 2397 3 0 I've 
+: 2411 3 0 been 
+: 2424 3 0 slee
+: 2437 2 0 ping 
+: 2451 1 0 with 
+: 2457 1 0 my 
+: 2464 45 0 soul
+- 2509
+: 2523 2 0 Won't 
+: 2531 3 0 hide 
+: 2543 3 0 my 
+: 2556 29 0 pride
+- 2585
+: 2610 2 0 And 
+: 2616 2 0 I 
+: 2629 1 0 re
+: 2637 2 0 mem
+: 2651 2 0 ber 
+: 2663 1 0 eve
+: 2670 1 0 ry 
+: 2677 43 0 song
+- 2720
+: 2735 1 0 You 
+: 2743 2 0 used 
+: 2761 1 0 to 
+: 2769 9 0 sing 
+: 2783 1 0 a
+: 2790 20 0 long
+- 2810
+: 2816 1 0 But 
+: 2823 2 0 I 
+: 2836 1 0 for
+: 2843 20 0 got, 
+: 2869 1 0 you 
+: 2876 2 0 changed 
+: 2891 2 0 at 
+: 2903 17 0 all
+- 2920
+: 2928 2 0 Changed 
+: 2942 1 0 at 
+: 2949 22 0 all
+- 2971
+: 2981 2 0 Changed 
+: 2996 1 0 at 
+: 3003 60 0 all
+E

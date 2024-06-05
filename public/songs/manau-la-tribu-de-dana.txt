@@ -1,0 +1,1001 @@
+#ARTIST:Manau
+#TITLE:La tribu de Dana
+#CREATOR:WingXero
+#BPM:374,4
+#YEAR:1998
+#PREVIEWSTART:62
+#VIDEO:v=80hMEKlLVgQ
+#GENRE:Rap
+#LANGUAGE:French
+#GAP:14958,397435897436
+#ALLKARAOKE_ID:manau-la-tribu-de-dana
+#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:21.893Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=wingxero
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_PREVIEWEND:83
+#ALLKARAOKE_VOLUME:0,72
+#MEDLEYSTARTBEAT:1140
+#MEDLEYENDBEAT:1663
+F 25 2 0 Le 
+F 29 5 0 vent 
+F 37 2 0 souf
+F 41 2 0 fle 
+F 45 2 0 sur 
+F 49 2 0 les 
+F 53 2 0 plai
+F 57 2 0 nes
+- 59
+F 65 2 0 de 
+F 69 2 0 la 
+F 73 2 0 Bre
+F 77 2 0 tagne 
+F 81 2 0 Ar
+F 85 2 0 mo
+F 89 2 0 ri
+F 93 1 0 caine
+- 94
+F 97 2 0 Je 
+F 101 2 0 jette 
+F 105 2 0 un 
+F 109 2 0 der
+F 113 2 0 nier 
+F 117 2 0 re
+F 121 1 0 gard
+- 122
+F 125 2 0 sur 
+F 129 2 0 ma 
+F 133 2 0 femme, 
+F 137 2 0 mon 
+F 141 2 0 fils 
+F 145 2 0 et 
+F 149 2 0 mon 
+F 153 2 0 do
+F 157 4 0 mai
+F 162 2 0 ne
+- 164
+F 170 2 0 A
+F 174 2 0 kim, 
+F 178 2 0 le 
+F 182 2 0 fils 
+F 186 2 0 du 
+F 190 2 0 for
+F 194 2 0 ge
+F 198 1 0 ron
+- 199
+F 202 2 0 est 
+F 206 2 0 ve
+F 210 2 0 nu 
+F 214 2 0 me 
+F 218 2 0 cher
+F 222 4 0 cher
+- 226
+F 233 2 0 Les 
+F 237 2 0 druides 
+F 241 2 0 ont 
+F 245 2 0 dé
+F 249 2 0 ci
+F 253 3 0 dé 
+F 258 1 0 de 
+F 261 2 0 me
+F 265 1 0 ner
+- 266
+F 269 2 0 le 
+F 273 2 0 com
+F 277 2 0 bat 
+F 281 2 0 dans 
+F 285 2 0 la 
+F 289 2 0 val
+F 293 3 0 lée
+- 296
+F 305 2 0 Là 
+F 309 2 0 où 
+F 313 2 0 tous 
+F 317 2 0 nos 
+F 321 2 0 an
+F 325 3 0 cêtres
+- 328
+F 337 2 0 de 
+F 341 2 0 gé
+F 345 2 0 ants 
+F 349 2 0 guer
+F 353 2 0 riers 
+F 357 3 0 celtes
+- 360
+F 369 2 0 A
+F 373 2 0 près 
+F 377 2 0 de 
+F 381 2 0 grandes 
+F 385 2 0 ba
+F 389 1 0 tailles
+- 390
+F 393 2 0 se 
+F 397 2 0 sont 
+F 401 2 0 im
+F 405 4 0 po
+F 411 3 0 sés 
+F 417 2 0 en 
+F 421 3 0 maîtres
+- 424
+F 433 2 0 C’est 
+F 437 2 0 l’heure 
+F 441 2 0 main
+F 445 2 0 te
+F 449 1 0 nant
+- 450
+F 453 2 0 de 
+F 457 2 0 dé
+F 461 2 0 fen
+F 465 2 0 dre 
+F 469 2 0 no
+F 473 2 0 tre 
+F 477 4 0 terre
+- 481
+F 489 2 0 Contre 
+F 493 2 0 une 
+F 497 2 0 ar
+F 501 2 0 mée 
+F 505 2 0 de 
+F 509 2 0 Cim
+F 513 2 0 mé
+F 517 1 0 riens
+- 518
+F 521 2 0 prêts 
+F 525 2 0 à 
+F 529 2 0 croi
+F 533 2 0 ser 
+F 537 2 0 le 
+F 541 4 0 fer
+- 545
+F 553 2 0 Toute 
+F 557 2 0 la 
+F 561 2 0 tri
+F 565 2 0 bu 
+F 569 2 0 s’est 
+F 573 2 0 ré
+F 577 2 0 u
+F 581 1 0 nie
+- 582
+F 585 2 0 au
+F 589 2 0 tour 
+F 593 2 0 des 
+F 597 2 0 grands 
+F 601 2 0 men
+F 605 6 0 hirs
+- 611
+F 616 2 0 Pour 
+F 620 3 0 in
+F 625 2 0 vo
+F 629 2 0 quer 
+F 633 2 0 les 
+F 637 1 0 Dieux
+- 638
+F 641 2 0 a
+F 645 2 0 fin 
+F 649 2 0 qu’ils 
+F 653 2 0 puis
+F 657 2 0 sent 
+F 661 2 0 nous 
+F 665 2 0 bé
+F 669 6 0 nir
+- 675
+F 681 2 0 A
+F 685 2 0 près 
+F 689 2 0 cet
+F 693 2 0 te 
+F 697 2 0 pri
+F 701 2 0 ère 
+F 705 2 0 a
+F 709 2 0 vec 
+F 713 2 0 mes 
+F 717 1 0 frères
+- 718
+F 721 2 0 sans 
+F 725 2 0 faire 
+F 729 2 0 é
+F 733 2 0 tat 
+F 737 2 0 de 
+F 741 4 0 zèle
+- 745
+F 753 2 0 Les 
+F 757 2 0 chefs 
+F 761 2 0 nous 
+F 765 2 0 ont 
+F 769 2 0 don
+F 773 2 0 né 
+F 777 2 0 à 
+F 781 1 0 tous
+- 782
+F 785 2 0 des 
+F 789 2 0 gor
+F 793 2 0 gées 
+F 797 2 0 d’hy
+F 801 2 0 dro
+F 805 4 0 mel
+- 809
+F 817 2 0 Pour 
+F 821 2 0 le 
+F 825 2 0 cou
+F 829 6 0 rage
+- 835
+F 841 2 0 pour 
+F 845 2 0 pas 
+F 849 2 0 qu’il 
+F 853 2 0 y ait 
+F 857 2 0 de 
+F 861 6 0 faille
+- 867
+F 873 2 0 Pour 
+F 877 2 0 res
+F 881 2 0 ter 
+F 885 2 0 grand 
+F 889 2 0 et 
+F 893 1 0 fier
+- 894
+F 897 2 0 quand 
+F 901 2 0 nous 
+F 905 2 0 se
+F 909 2 0 rons 
+F 913 2 0 dans 
+F 917 2 0 la 
+F 921 2 0 ba
+F 925 1 0 taille
+- 926
+F 929 2 0 Car 
+F 933 2 0 c’est 
+F 937 2 0 la 
+F 941 2 0 pre
+F 945 2 0 mière 
+F 949 2 0 fois 
+F 953 2 0 pour 
+F 957 1 0 moi
+- 958
+F 961 2 0 que 
+F 965 2 0 je 
+F 969 2 0 pars 
+F 973 2 0 au 
+F 977 2 0 com
+F 981 4 0 bat
+- 985
+F 993 2 0 Et 
+F 997 2 0 j’es
+F 1001 2 0 père 
+F 1005 2 0 e
+F 1009 2 0 tre 
+F 1013 5 0 digne 
+F 1025 2 0 de 
+F 1029 2 0 la 
+F 1033 2 0 tri
+F 1037 2 0 bu 
+F 1041 2 0 de 
+F 1045 2 0 Da
+F 1049 8 0 na
+- 1057 1140
+- 1140
+: 1165 3 17 Dans
+: 1169 2 15 ~ 
+: 1173 3 15 la
+: 1177 2 14 ~ 
+: 1181 2 14 val
+: 1185 16 12 lée 
+: 1205 11 12 ho
+: 1217 2 10 ~ 
+: 1221 6 10 ho
+- 1227
+: 1237 3 15 de
+: 1241 2 14 ~ 
+: 1245 2 14 Da
+: 1249 14 12 na, 
+* 1269 6 12 la 
+* 1277 2 10 li 
+* 1281 2 9 la 
+* 1285 2 7 la
+- 1287
+: 1293 5 9 Dans 
+: 1301 5 10 la 
+: 1309 2 7 val
+: 1313 3 12 lée
+: 1317 12 12 ~ 
+: 1333 11 12 ho
+: 1345 2 10 ~ 
+: 1349 3 10 ho
+- 1352
+: 1358 3 10 J’ai 
+: 1365 5 15 pu 
+: 1373 3 14 en
+: 1381 6 12 ten
+: 1389 6 12 dre 
+: 1397 4 12 les 
+: 1405 2 10 é
+: 1409 3 12 chos
+: 1413 3 12 ~
+- 1416
+: 1421 5 7 Dans 
+: 1429 5 10 la 
+: 1437 2 7 val
+: 1441 3 12 lée
+: 1445 12 12 ~ 
+: 1461 11 12 ho
+: 1473 2 10 ~ 
+: 1477 6 10 ho
+- 1483
+* 1493 3 15 de
+* 1497 2 14 ~ 
+* 1501 2 14 Da
+* 1505 14 12 na, 
+: 1525 6 12 la 
+: 1533 2 10 li 
+: 1537 2 9 la 
+: 1541 2 7 la
+- 1543
+: 1549 5 9 Dans 
+: 1557 5 10 la 
+: 1565 2 7 val
+: 1569 3 12 lée
+: 1573 12 12 ~ 
+: 1589 11 12 ho
+: 1601 2 10 ~ 
+: 1605 3 10 ho
+- 1608
+: 1613 4 10 Des 
+: 1621 6 15 chants 
+: 1629 2 14 de 
+: 1634 6 12 guerres 
+: 1645 6 12 près 
+: 1653 4 12 des 
+: 1661 2 10 tom
+: 1665 3 12 beaux
+: 1669 19 12 ~
+- 1688 1800
+- 1800
+F 1825 2 0 A
+F 1829 2 0 près 
+F 1833 2 0 quel
+F 1837 2 0 ques 
+F 1841 2 0 in
+F 1845 2 0 can
+F 1849 2 0 ta
+F 1853 2 0 tions 
+F 1857 2 0 de 
+F 1861 1 0 druides
+- 1862
+F 1865 2 0 et 
+F 1869 2 0 de 
+F 1873 2 0 ma
+F 1877 6 0 gie
+- 1883
+F 1889 2 0 Toute 
+F 1893 2 0 la 
+F 1897 2 0 tri
+F 1901 2 0 bu, 
+F 1905 2 0 le 
+F 1909 2 0 glaive 
+F 1913 2 0 en 
+F 1917 1 0 main
+- 1918
+F 1921 2 0 cou
+F 1925 2 0 rait 
+F 1929 2 0 vers 
+F 1933 2 0 l’en
+F 1937 2 0 ne
+F 1941 4 0 mi
+- 1945
+F 1953 2 0 La 
+F 1957 2 0 lutte 
+F 1961 2 0 é
+F 1965 2 0 tait 
+F 1969 2 0 ter
+F 1973 1 0 rible
+- 1974
+F 1977 2 0 et 
+F 1981 2 0 je 
+F 1985 2 0 ne 
+F 1989 2 0 voy
+F 1993 2 0 ais 
+F 1997 2 0 que 
+F 2001 2 0 les 
+F 2005 2 0 om
+F 2009 2 0 bres
+- 2011
+F 2017 2 0 Tran
+F 2021 2 0 chant 
+F 2025 2 0 l’en
+F 2029 2 0 ne
+F 2033 2 0 mi 
+F 2037 2 0 qui 
+F 2041 2 0 re
+F 2045 2 0 ve
+F 2049 1 0 nait
+- 2050
+F 2053 2 0 tou
+F 2057 2 0 jours 
+F 2061 2 0 en 
+F 2065 2 0 sur
+F 2069 2 0 nom
+F 2073 2 0 bre
+- 2075
+F 2081 2 0 Mes 
+F 2085 2 0 frères 
+F 2089 2 0 tom
+F 2093 2 0 baient 
+F 2097 2 0 l’un 
+F 2101 2 0 a
+F 2105 2 0 près 
+F 2109 2 0 l’au
+F 2113 1 0 tre
+- 2114
+F 2117 2 0 de
+F 2121 2 0 vant 
+F 2125 2 0 mon 
+F 2129 2 0 re
+F 2133 4 0 gard
+- 2137
+F 2145 2 0 Sous 
+F 2149 2 0 le 
+F 2153 6 0 poids 
+F 2161 2 0 des 
+F 2165 1 0 armes
+- 2166
+F 2169 2 0 que 
+F 2173 2 0 pos
+F 2177 2 0 sé
+F 2181 2 0 daient 
+F 2185 2 0 tous 
+F 2189 2 0 ces 
+F 2193 2 0 bar
+F 2197 4 0 bares
+- 2201
+F 2209 2 0 Des 
+F 2213 2 0 lances, 
+F 2217 2 0 des 
+F 2221 2 0 haches 
+F 2225 2 0 et 
+F 2229 2 0 des 
+F 2233 2 0 é
+F 2237 1 0 pées
+- 2238
+F 2241 2 0 dans 
+F 2245 2 0 le 
+F 2249 2 0 jard
+F 2253 2 0 in 
+F 2257 2 0 d’E
+F 2261 3 0 den
+F 2265 2 0 ~
+- 2267
+F 2273 2 0 Qui 
+F 2277 2 0 é
+F 2281 2 0 coul
+F 2285 2 0 ait 
+F 2289 2 0 du 
+F 2293 1 0 sang
+- 2294
+F 2297 2 0 sur 
+F 2301 2 0 l’her
+F 2305 2 0 be 
+F 2309 2 0 ver
+F 2313 2 0 te 
+F 2317 2 0 de 
+F 2321 2 0 la 
+F 2325 2 0 plai
+F 2329 2 0 ne
+- 2331
+F 2337 2 0 Comme 
+F 2341 2 0 ces 
+F 2345 4 0 jours 
+F 2353 2 0 de 
+F 2357 2 0 pei
+F 2361 4 0 ne
+- 2365
+F 2369 2 0 ou 
+F 2373 2 0 l’hom
+F 2377 4 0 me 
+F 2383 4 0 se 
+F 2389 2 0 traî
+F 2393 2 0 ne
+- 2395
+F 2401 2 0 A 
+F 2405 2 0 la 
+F 2409 2 0 li
+F 2413 2 0 mite 
+F 2417 2 0 du 
+F 2421 2 0 rè
+F 2425 3 0 gne 
+F 2433 2 0 du 
+F 2437 2 0 mal 
+F 2441 2 0 et 
+F 2445 2 0 de 
+F 2449 2 0 la 
+F 2453 2 0 hai
+F 2457 2 0 ne
+- 2459
+F 2465 2 0 Fal
+F 2469 2 0 lait
+F 2473 2 0 -il 
+F 2477 2 0 con
+F 2481 2 0 ti
+F 2485 2 0 nuer 
+F 2489 3 0 ce 
+F 2497 2 0 com
+F 2501 2 0 bat 
+F 2505 2 0 dé
+F 2509 2 0 jà 
+F 2513 2 0 per
+F 2517 4 0 du
+- 2521
+F 2529 2 0 Mais 
+F 2533 2 0 telle 
+F 2537 2 0 é
+F 2541 2 0 tait 
+F 2545 2 0 la 
+F 2549 3 0 fier
+F 2557 2 0 té 
+F 2561 2 0 de 
+F 2565 2 0 tou
+F 2569 2 0 te 
+F 2573 2 0 la 
+F 2577 2 0 tri
+F 2581 4 0 bu
+- 2585
+F 2593 2 0 La 
+F 2597 2 0 lutte 
+F 2601 2 0 a 
+F 2605 2 0 con
+F 2609 2 0 ti
+F 2613 2 0 nué 
+F 2617 1 0 comme
+- 2618
+F 2621 2 0 ça 
+F 2625 2 0 jus
+F 2629 2 0 qu’au 
+F 2633 2 0 so
+F 2637 2 0 leil 
+F 2641 2 0 cou
+F 2645 4 0 chant
+- 2649
+F 2657 2 0 De 
+F 2661 2 0 fé
+F 2665 4 0 ro
+F 2673 2 0 ci
+F 2677 2 0 té 
+F 2681 2 0 ex
+F 2685 2 0 trême 
+F 2689 2 0 en 
+F 2693 2 0 plus 
+F 2697 2 0 d’a
+F 2701 2 0 char
+F 2705 2 0 ne
+F 2709 4 0 ment
+- 2713
+F 2721 2 0 Fal
+F 2725 2 0 lait 
+F 2729 2 0 dé
+F 2733 1 0 fendre
+- 2734
+F 2737 2 0 la 
+F 2741 2 0 terre 
+F 2745 2 0 de 
+F 2749 2 0 nos 
+F 2753 2 0 an
+F 2757 2 0 cêtres 
+F 2761 2 0 en
+F 2765 2 0 ter
+F 2769 2 0 rés 
+F 2773 4 0 là
+- 2777
+F 2785 2 0 Et 
+F 2789 2 0 pour 
+F 2793 2 0 tou
+F 2797 2 0 tes 
+F 2801 2 0 les 
+F 2805 5 0 lois 
+F 2817 2 0 de 
+F 2821 2 0 la 
+F 2825 2 0 tri
+F 2829 2 0 bu 
+F 2833 2 0 de 
+F 2837 2 0 Da
+F 2841 5 0 na
+- 2846 2932
+- 2932
+: 2957 3 17 Dans
+: 2961 2 15 ~ 
+: 2965 3 15 la
+: 2969 2 14 ~ 
+: 2973 2 14 val
+: 2977 16 12 lée 
+: 2997 11 12 ho
+: 3009 2 10 ~ 
+: 3013 6 10 ho
+- 3019
+: 3029 3 15 De
+: 3033 2 14 ~ 
+: 3037 2 14 Da
+: 3041 14 12 na, 
+: 3061 6 12 la 
+: 3069 2 10 li 
+: 3073 2 9 la 
+: 3077 2 7 la
+- 3079
+: 3085 5 9 Dans 
+: 3093 5 10 la 
+: 3101 2 7 val
+: 3105 3 12 lée
+: 3109 12 12 ~ 
+: 3125 11 12 ho
+: 3137 2 10 ~ 
+: 3141 3 10 ho
+- 3144
+: 3150 3 10 J’ai 
+: 3157 5 15 pu 
+: 3165 3 14 en
+: 3173 6 12 ten
+: 3181 6 12 dre 
+: 3189 4 12 les 
+: 3197 2 10 é
+: 3201 3 12 chos
+: 3205 3 12 ~
+- 3208
+: 3213 5 7 Dans 
+: 3221 5 10 la 
+: 3229 2 7 val
+: 3233 3 12 lée
+: 3237 12 12 ~ 
+: 3253 11 12 ho
+: 3265 2 10 ~ 
+: 3269 6 10 ho
+- 3275
+: 3285 3 15 De
+: 3289 2 14 ~ 
+* 3293 2 14 Da
+* 3297 14 12 na, 
+: 3317 6 12 la 
+: 3325 2 10 li 
+: 3329 2 9 la 
+: 3333 2 7 la
+- 3335
+: 3341 5 9 Dans 
+: 3349 5 10 la 
+: 3357 2 7 val
+: 3361 3 12 lée
+: 3365 12 12 ~ 
+: 3381 11 12 ho
+: 3393 2 10 ~ 
+: 3397 3 10 ho
+- 3400
+: 3405 4 10 Des 
+: 3413 6 15 chants 
+: 3421 2 14 de 
+: 3426 6 12 guerres 
+: 3437 6 12 près 
+: 3445 4 12 des 
+: 3453 2 10 tom
+: 3457 3 12 beaux
+: 3461 19 12 ~
+- 3480 3592
+- 3592
+F 3617 2 0 Au 
+F 3621 2 0 bout 
+F 3625 2 0 de 
+F 3629 2 0 la 
+F 3633 2 0 val
+F 3637 1 0 lée
+- 3638
+F 3641 2 0 on 
+F 3645 2 0 en
+F 3649 2 0 ten
+F 3653 2 0 dait 
+F 3657 2 0 le 
+F 3661 2 0 son 
+F 3665 2 0 d’une 
+F 3669 2 0 cor
+F 3673 2 0 ne
+- 3675
+F 3681 2 0 D’un 
+F 3685 2 0 chef 
+F 3690 5 0 en
+F 3697 2 0 ne
+F 3701 1 0 mi
+- 3702
+F 3705 2 0 qui 
+F 3709 2 0 rap
+F 3713 2 0 pe
+F 3717 2 0 lait 
+F 3721 2 0 tou
+F 3725 2 0 te 
+F 3729 2 0 sa 
+F 3733 2 0 hor
+F 3737 2 0 de
+- 3739
+F 3745 2 0 A
+F 3749 2 0 vait
+F 3753 3 0 -il
+F 3757 2 0 ~ 
+F 3761 2 0 com
+F 3765 1 0 pris
+- 3766
+F 3769 2 0 qu’on 
+F 3773 2 0 lut
+F 3777 2 0 te
+F 3781 2 0 rait 
+F 3785 2 0 même 
+F 3789 2 0 en 
+F 3793 2 0 en
+F 3797 4 0 fer
+- 3801
+F 3809 2 0 Et 
+F 3813 2 0 qu’à 
+F 3817 2 0 la 
+F 3821 2 0 tri
+F 3825 2 0 bu 
+F 3829 2 0 de 
+F 3833 1 0 Da-
+- 3834
+F 3837 2 0 na 
+F 3841 2 0 ap
+F 3845 2 0 par
+F 3849 2 0 te
+F 3853 2 0 naient 
+F 3857 2 0 ces 
+F 3861 4 0 terres
+- 3865
+F 3873 2 0 Les 
+F 3877 2 0 guer
+F 3881 2 0 riers 
+F 3885 2 0 re
+F 3889 3 0 par
+F 3897 1 0 taient
+- 3898
+F 3901 2 0 et 
+F 3905 2 0 je 
+F 3909 2 0 ne 
+F 3913 2 0 com
+F 3917 2 0 pre
+F 3921 2 0 nais 
+F 3925 5 0 pas
+- 3930
+F 3937 2 0 Tout 
+F 3941 2 0 le 
+F 3945 2 0 che
+F 3949 2 0 min 
+F 3953 2 0 qu’ils 
+F 3957 2 0 a
+F 3961 1 0 vaient
+- 3962
+F 3965 2 0 fait 
+F 3969 2 0 pour 
+F 3973 2 0 en 
+F 3977 2 0 ar
+F 3981 2 0 ri
+F 3985 2 0 ver 
+F 3989 5 0 là
+- 3994
+F 4001 2 0 Quand 
+F 4005 2 0 mon 
+F 4009 2 0 re
+F 4013 2 0 gard 
+F 4017 2 0 se 
+F 4021 4 0 po
+F 4027 3 0 sa 
+F 4033 2 0 tout 
+F 4037 2 0 au
+F 4042 3 0 tour 
+F 4048 3 0 de 
+F 4054 5 0 moi
+- 4059
+F 4066 2 0 J’é
+F 4070 2 0 tais 
+F 4074 2 0 le 
+F 4078 2 0 seul 
+F 4082 2 0 de
+F 4086 2 0 bout 
+F 4090 2 0 de 
+F 4093 2 0 la 
+F 4097 2 0 tri
+F 4101 1 0 bu
+- 4102
+F 4105 2 0 voi
+F 4109 2 0 là 
+F 4113 2 0 pour
+F 4117 4 0 quoi
+- 4121
+F 4129 2 0 Mes 
+F 4133 2 0 doigts 
+F 4137 2 0 se 
+F 4141 2 0 sont 
+F 4145 2 0 é
+F 4149 2 0 car
+F 4153 5 0 tés
+- 4158
+F 4161 2 0 tout 
+F 4165 2 0 en 
+F 4169 2 0 lâ
+F 4173 2 0 chant 
+F 4177 2 0 mes 
+F 4181 2 0 ar
+F 4185 2 0 mes
+- 4187
+F 4194 2 0 Et 
+F 4197 2 0 le 
+F 4201 2 0 long 
+F 4205 2 0 de 
+F 4209 2 0 mes 
+F 4213 1 0 joues
+- 4214
+F 4217 2 0 se 
+F 4221 2 0 sont 
+F 4225 2 0 mises 
+F 4229 2 0 à 
+F 4233 2 0 cou
+F 4237 2 0 ler 
+F 4241 2 0 des 
+F 4245 2 0 lar
+F 4249 2 0 mes
+- 4251
+F 4258 2 0 Je 
+F 4262 2 0 n’ai 
+F 4266 2 0 ja
+F 4269 2 0 mais 
+F 4273 2 0 com
+F 4277 1 0 pris
+- 4278
+F 4281 2 0 pour
+F 4285 2 0 quoi 
+F 4289 2 0 les 
+F 4293 2 0 Dieux 
+F 4297 2 0 m'ont 
+F 4301 2 0 é
+F 4305 2 0 par
+F 4309 4 0 gné
+- 4313
+F 4321 2 0 De 
+F 4325 2 0 ce 
+F 4329 6 0 jour 
+F 4337 6 0 noir 
+F 4345 2 0 de 
+F 4349 2 0 notre 
+F 4353 2 0 his
+F 4357 1 0 toire
+- 4358
+F 4361 2 0 que 
+F 4365 2 0 j’ai 
+F 4369 2 0 con
+F 4373 4 0 tée
+- 4377
+F 4385 2 0 Le 
+F 4389 2 0 vent 
+F 4393 2 0 souf
+F 4397 2 0 fle 
+F 4401 2 0 tou
+F 4405 1 0 jours
+- 4406
+F 4409 2 0 sur 
+F 4413 2 0 la 
+F 4417 2 0 Bre
+F 4421 2 0 tagne 
+F 4425 2 0 Ar
+F 4429 2 0 mo
+F 4433 2 0 ri
+F 4437 2 0 cai
+F 4441 2 0 ne
+- 4443
+F 4449 2 0 Et 
+F 4453 2 0 j’ai 
+F 4457 2 0 re
+F 4461 2 0 joint 
+F 4465 2 0 ma 
+F 4469 5 0 femme
+- 4474
+F 4477 2 0 mon 
+F 4481 3 0 fils 
+F 4489 2 0 et 
+F 4493 2 0 mon 
+F 4497 2 0 do
+F 4501 2 0 mai
+F 4505 2 0 ne
+- 4507
+F 4513 2 0 J'ai 
+F 4517 2 0 tout 
+F 4521 2 0 re
+F 4525 2 0 cons
+F 4529 2 0 truit 
+F 4533 2 0 de 
+F 4537 2 0 mes 
+F 4541 1 0 mains
+- 4542
+F 4545 2 0 pour 
+F 4549 2 0 en 
+F 4553 2 0 ar
+F 4557 2 0 ri
+F 4561 2 0 ver 
+F 4565 4 0 là
+- 4569
+F 4577 2 0 Je 
+F 4581 2 0 suis 
+F 4585 2 0 de
+F 4589 2 0 ve
+F 4593 2 0 nu 
+F 4597 5 0 roi 
+F 4609 2 0 de 
+F 4613 2 0 la 
+F 4617 2 0 tri
+F 4621 2 0 bu 
+F 4625 2 0 de 
+F 4629 2 0 Da
+F 4633 5 0 na
+- 4638 4724
+- 4724
+: 4749 3 17 Dans
+: 4753 2 15 ~ 
+: 4757 3 15 la
+: 4761 2 14 ~ 
+: 4765 2 14 val
+: 4769 16 12 lée 
+: 4789 11 12 ho
+: 4801 2 10 ~ 
+: 4805 6 10 ho
+- 4811
+: 4821 3 15 De
+: 4825 2 14 ~ 
+: 4829 2 14 Da
+: 4833 14 12 na, 
+: 4853 6 12 la 
+: 4861 2 10 li 
+: 4865 2 9 la 
+: 4869 2 7 la
+- 4871
+* 4877 5 9 Dans 
+* 4885 5 10 la 
+* 4893 2 7 val
+* 4897 3 12 lée
+* 4901 12 12 ~ 
+: 4917 11 12 ho
+: 4929 2 10 ~ 
+: 4933 3 10 ho
+- 4936
+: 4942 3 10 J’ai 
+: 4949 5 15 pu 
+: 4957 3 14 en
+: 4965 6 12 ten
+: 4973 6 12 dre 
+: 4981 4 12 les 
+: 4989 2 10 é
+: 4993 3 12 chos
+: 4997 3 12 ~
+- 5000
+: 5005 5 7 Dans 
+: 5013 5 10 la 
+: 5021 2 7 val
+: 5025 3 12 lée
+: 5029 12 12 ~ 
+: 5045 11 12 ho
+: 5057 2 10 ~ 
+: 5061 6 10 ho
+- 5067
+: 5077 3 15 De
+: 5081 2 14 ~ 
+: 5085 2 14 Da
+: 5089 14 12 na, 
+: 5109 6 12 la 
+: 5117 2 10 li 
+: 5121 2 9 la 
+: 5125 2 7 la
+- 5127
+: 5133 5 9 Dans 
+: 5141 5 10 la 
+: 5149 2 7 val
+: 5153 3 12 lée
+: 5157 12 12 ~ 
+: 5173 11 12 ho
+: 5185 2 10 ~ 
+: 5189 3 10 ho
+- 5192
+F 5197 6 10 Des 
+F 5205 3 15 chants
+F 5209 2 14 ~ 
+F 5213 2 14 de 
+F 5218 6 12 guerres 
+F 5229 6 12 près 
+F 5239 4 10 des 
+F 5245 4 10 tom
+F 5251 2 10 beaux
+E
