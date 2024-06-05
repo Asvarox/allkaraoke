@@ -1,0 +1,569 @@
+#ARTIST:Hamilton
+#TITLE:Guns And Ships
+#CREATOR:matthu
+#BPM:300
+#YEAR:2015
+#VIDEO:v=JDL6R2KS3xg
+#LANGUAGE:English
+#GAP:2000
+#ALLKARAOKE_ID:hamilton-guns-and-ships
+#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:11.451Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_VOLUME:0,85
+#MP3:Hamilton - Guns And Ships [DUET].mp3
+F 20 2 18 How 
+F 24 2 18 does 
+F 28 2 18 a 
+F 32 7 18 rag
+F 41 6 18 tag 
+F 51 2 18 vo
+F 54 2 18 lun
+F 58 5 18 teer 
+F 66 7 18 ar
+F 75 2 18 my 
+F 79 2 18 in 
+F 84 6 18 need 
+F 92 2 18 of 
+F 96 2 18 a 
+F 100 3 18 sho
+F 104 5 18 wer 
+- 109
+F 115 2 18 Some
+F 118 3 18 how 
+F 122 2 18 de
+F 127 2 18 feat 
+F 131 2 18 a 
+F 135 2 18 glo
+F 139 2 18 bal 
+F 143 3 18 su
+F 148 2 18 per
+F 153 3 18 po
+F 157 5 18 wer? 
+- 162
+F 170 3 18 How 
+F 174 2 18 do 
+F 178 2 18 we 
+F 183 2 18 e
+F 187 5 18 merge 
+F 195 2 18 vic
+F 200 4 18 tor
+F 206 2 18 i
+F 210 2 18 ous 
+F 214 3 18 from 
+F 218 2 18 the 
+F 222 6 18 quag
+F 231 5 18 mire? 
+- 236
+F 240 3 18 Leave 
+F 244 2 18 the 
+F 248 2 18 bat
+F 252 2 18 tle
+F 256 4 18 field 
+F 266 2 18 wav
+F 271 2 18 ing 
+F 275 3 18 Be
+F 279 3 18 tsy 
+F 283 3 18 Ros
+F 288 3 18 s’ 
+F 292 5 18 flag 
+F 300 2 18 hi
+F 305 3 18 gher? 
+- 308
+F 319 4 18 Yo, 
+F 331 2 18 turns 
+F 335 2 18 out 
+F 339 2 18 we 
+F 344 2 18 have 
+F 348 2 18 a 
+F 353 3 18 se
+F 357 2 18 cret 
+F 362 3 18 wea
+F 366 3 18 pon 
+- 369
+F 371 2 18 An 
+F 375 2 18 im
+F 379 2 18 mi
+F 383 2 18 grant 
+F 392 2 18 you 
+F 396 3 18 know 
+F 400 2 18 and 
+F 404 4 18 love 
+F 409 3 18 who’s 
+F 414 2 18 un
+F 418 2 18 a
+F 423 2 18 fraid 
+F 427 2 18 to 
+F 431 2 18 step 
+F 435 3 18 in 
+- 438
+F 444 3 18 He’s 
+F 449 2 18 con
+F 452 2 18 stan
+F 456 2 18 tly 
+F 461 2 18 con
+F 466 2 18 fus
+F 469 2 18 in’, 
+F 474 2 18 con
+F 478 2 18 found 
+F 483 2 18 in’ 
+F 487 2 18 the 
+F 491 2 18 Brit
+F 495 2 18 ish 
+F 500 4 18 hench
+F 509 3 18 men 
+- 512
+F 518 1 18 E
+F 520 1 18 v’ry
+F 522 1 18 one 
+F 526 1 18 give 
+F 529 1 18 it 
+F 531 2 18 up 
+F 535 2 18 for 
+F 539 2 18 A
+F 543 2 18 me
+F 546 1 18 ri
+F 548 2 18 ca’s 
+F 552 2 18 fav’
+F 556 2 18 rite 
+F 561 2 18 fight
+F 565 2 18 in’ 
+F 570 4 18 French
+F 578 5 18 man! 
+- 583
+F 587 2 18 La
+F 592 2 18 fay
+F 597 3 18 ette! 
+- 600 638
+- 638
+F 658 2 18 La
+F 661 2 18 fay
+F 665 2 18 ette! 
+- 667 706
+- 706
+F 726 2 18 La
+F 730 2 18 fay
+F 734 3 18 ette! 
+- 737 777
+- 777
+F 797 2 18 La
+F 800 2 18 fay
+F 804 2 18 ette! 
+- 806 813
+- 813
+F 833 1 18 La
+F 836 1 18 fay
+F 838 2 18 ette! 
+- 840 841
+- 841
+F 861 6 18 Guns 
+F 878 2 18 and 
+F 881 5 18 ships 
+- 886
+F 897 2 18 And 
+F 901 3 18 so 
+F 906 2 18 the 
+F 910 2 18 ba
+F 914 2 18 lance 
+F 918 7 18 shifts 
+- 925
+F 933 2 18 We 
+F 937 2 18 ren
+F 941 2 18 dez
+F 945 3 18 vous 
+F 950 2 18 with 
+F 954 2 18 Ro
+F 958 3 18 cham
+F 964 3 18 beau, 
+F 971 2 18 con
+F 975 2 18 sol
+F 979 2 18 i
+F 983 2 18 date 
+F 987 2 18 their 
+F 991 4 18 gifts 
+- 995 1112
+- 1112
+F 1132 1 18 I 
+F 1135 4 18 know 
+- 1139
+F 1145 2 18 Ham
+F 1149 3 18 il
+F 1153 2 18 ton 
+- 1155 1195
+- 1195
+F 1215 2 18 Ham
+F 1218 2 18 il
+F 1222 2 18 ton 
+- 1224 1265
+- 1265
+F 1285 2 18 Ham
+F 1288 2 18 il
+F 1291 2 18 ton 
+- 1293 1331
+- 1331
+F 1351 3 18 Ham
+F 1355 3 18 il
+F 1359 4 18 ton 
+- 1363 1368
+- 1368
+F 1388 3 18 Ham
+F 1392 2 18 il
+F 1395 2 18 ton 
+F 1398 1 18 - I 
+F 1400 2 18 need 
+F 1403 1 18 my 
+F 1405 2 18 right 
+F 1409 2 18 hand 
+F 1413 2 18 man 
+F 1418 3 18 back 
+- 1421 1541
+- 1541
+: 1561 2 18 A
+: 1565 2 16 lex
+: 1569 2 18 an
+: 1574 2 16 der 
+: 1579 2 18 Ham
+: 1583 2 16 il
+: 1587 5 14 ton 
+- 1592 1604
+- 1604
+: 1624 2 14 Troops 
+: 1628 3 16 are 
+: 1635 3 17 wait
+: 1639 2 16 ing 
+: 1643 2 16 in 
+: 1646 1 16 the 
+: 1649 7 16 field 
+: 1660 2 17 for 
+: 1666 7 14 you 
+- 1673 1676
+- 1676
+: 1696 3 14 If 
+: 1700 2 16 you 
+: 1704 3 18 join 
+: 1709 3 16 us 
+: 1714 3 14 right 
+: 1722 6 16 now, 
+: 1731 3 11 to
+: 1736 5 14 geth
+: 1745 2 11 er 
+: 1749 2 14 we 
+: 1753 4 11 can 
+: 1759 6 14 turn 
+: 1768 7 11 the 
+: 1785 16 18 tide
+: 1802 2 19 ~
+: 1805 3 18 ~
+: 1809 2 19 ~
+: 1812 22 18 ~ 
+- 1834
+: 1838 4 21 Oh, 
+: 1843 1 19 ~
+: 1845 2 18 ~
+: 1848 3 18 A
+: 1852 3 16 lex
+: 1857 3 18 an
+: 1861 3 16 der 
+: 1866 3 18 Ham
+: 1871 3 21 il
+: 1875 9 18 ton 
+- 1884 1891
+- 1891
+: 1911 3 14 I 
+: 1915 3 16 have 
+: 1920 4 17 sol
+: 1925 4 16 diers 
+: 1931 1 16 that 
+: 1933 2 16 will 
+: 1936 10 16 yield 
+: 1950 3 17 for 
+: 1956 9 14 you 
+- 1965
+: 1981 3 23 If 
+: 1986 2 23 we 
+: 1991 3 23 man
+: 1995 3 23 age 
+: 2000 3 23 to 
+: 2004 6 23 get 
+: 2013 6 25 this 
+: 2022 6 26 right
+: 2029 16 25 ~ 
+- 2045
+: 2049 3 26 They’ll 
+: 2054 3 23 sur
+: 2059 6 23 ren
+: 2068 3 23 der 
+: 2072 3 23 by 
+: 2077 6 30 ear
+: 2085 5 26 ly 
+: 2093 3 26 light
+: 2097 5 28 ~
+: 2103 4 26 ~
+: 2108 6 23 ~ 
+- 2114
+: 2116 6 26 The 
+: 2125 5 25 world
+: 2131 16 23 ~ 
+: 2152 6 25 will 
+: 2161 14 26 ne
+: 2177 15 31 ver 
+: 2197 13 30 be 
+: 2217 12 30 the 
+: 2234 8 30 same
+: 2243 9 28 ~ 
+- 2252
+* 2255 3 18 A
+* 2261 6 18 lex
+* 2273 22 29 an
+* 2297 12 29 der
+* 2310 20 28 ~
+* 2331 2 29 ~
+* 2334 1 27 ~
+* 2336 41 26 ~ 
+- 0 584
+- 584
+F 604 2 18 I’m 
+F 608 1 18 tak
+F 610 1 18 in 
+F 613 1 18 this 
+F 615 4 18 horse 
+F 621 1 18 by 
+F 623 1 18 the 
+F 625 3 18 reins 
+- 628
+F 629 1 18 Mak
+F 632 1 18 in’ 
+F 634 2 18 Red
+F 637 2 18 coats 
+F 642 1 18 red
+F 644 1 18 der 
+F 646 1 18 with 
+F 648 3 18 blood
+F 653 4 18 stains 
+- 657
+F 671 1 18 And 
+F 674 1 18 I’m 
+F 677 1 18 ne
+F 679 1 18 ver 
+F 681 1 18 gon
+F 683 1 18 na 
+F 685 1 18 stop 
+F 688 1 18 un
+F 690 1 18 til 
+F 692 1 18 I 
+F 694 1 18 make 
+F 696 1 18 ‘em 
+- 697
+F 699 1 18 Drop 
+F 701 1 18 and 
+F 703 1 18 burn 
+F 705 1 18 ‘em 
+F 707 1 18 up 
+F 709 1 18 and 
+F 711 1 18 scat
+F 713 1 18 ter 
+F 715 1 18 their 
+F 717 1 18 re
+F 719 2 18 mains, 
+F 724 3 18 I’m 
+- 727
+F 746 2 18 Watch 
+F 750 1 18 me 
+F 753 1 18 en
+F 755 1 18 ga
+F 757 0 18 gin’ 
+F 762 2 18 em, 
+F 767 1 18 e
+F 769 2 18 scap
+F 772 1 18 in’ 
+F 775 2 18 em, 
+F 778 1 18 en
+F 781 2 18 rag
+F 784 1 18 in’ 
+F 787 2 18 em, 
+F 794 2 18 I’m— 
+- 796
+F 810 1 18 I 
+F 812 1 18 go 
+F 814 1 18 to 
+F 816 2 18 France 
+F 820 1 18 for 
+F 822 2 18 more 
+F 827 4 18 funds 
+- 831
+F 846 1 18 I 
+F 848 1 18 come 
+F 850 2 18 back 
+F 854 1 18 with 
+F 857 2 18 more 
+- 859
+F 863 6 18 Guns 
+F 880 2 18 and 
+F 883 5 18 ships 
+- 888
+F 899 2 18 And 
+F 903 3 18 so 
+F 908 2 18 the 
+F 912 2 18 ba
+F 916 2 18 lance 
+F 920 7 18 shifts 
+- 927 979
+- 979
+F 999 2 18 We 
+F 1003 2 18 can 
+F 1008 2 18 end 
+F 1013 2 18 this 
+F 1017 2 18 war 
+F 1021 3 18 at 
+F 1026 3 18 York
+F 1031 5 18 town, 
+F 1044 2 18 cut 
+F 1048 2 18 them 
+F 1051 2 18 off 
+F 1054 2 18 at 
+F 1059 6 18 sea, 
+F 1069 3 18 but 
+- 1072
+F 1081 2 18 For 
+F 1085 2 18 this 
+F 1089 2 18 to 
+F 1094 2 18 suc
+F 1099 4 18 ceed, 
+F 1106 2 18 there 
+F 1110 2 18 is 
+F 1114 2 18 som
+F 1117 2 18 eone 
+F 1120 2 18 else 
+F 1124 3 18 we 
+F 1129 5 18 need 
+- 1134 1139
+- 1139
+F 1159 2 18 Sir, 
+F 1162 1 18 he 
+F 1164 2 18 knows 
+F 1168 2 18 what 
+F 1171 1 18 to 
+F 1173 2 18 do 
+F 1177 1 18 in 
+F 1179 1 18 a 
+F 1181 2 18 trench 
+- 1183
+F 1186 1 18 In
+F 1188 1 18 gen
+F 1190 1 18 u
+F 1192 1 18 i
+F 1195 1 18 tive 
+F 1197 1 18 and 
+F 1199 1 18 flu
+F 1201 1 18 ent 
+F 1203 1 18 in 
+F 1205 2 18 French, 
+F 1211 1 18 I 
+F 1213 2 18 mean— 
+- 1215
+F 1228 2 18 Sir, 
+F 1231 1 18 you’re 
+F 1233 1 18 gon
+F 1236 1 18 na 
+F 1238 1 18 have 
+F 1240 1 18 to 
+F 1242 1 18 use 
+F 1245 1 18 him 
+F 1247 1 18 e
+F 1249 2 18 ven
+F 1253 1 18 tual
+F 1256 2 18 ly 
+- 1258
+F 1261 1 18 What’s 
+F 1263 1 18 he 
+F 1265 1 18 gon
+F 1267 1 18 na 
+F 1269 1 18 do 
+F 1271 1 18 on 
+F 1273 1 18 the 
+F 1275 2 18 bench 
+F 1279 1 18 I 
+F 1281 2 18 mean— 
+- 1283
+F 1297 1 18 No 
+F 1299 2 18 one 
+F 1303 2 18 has 
+F 1307 1 18 more 
+F 1309 1 18 re
+F 1311 1 18 si
+F 1313 1 18 li
+F 1315 2 18 ence 
+- 1317
+F 1318 1 18 Or 
+F 1320 1 18 mat
+F 1323 1 18 ches 
+F 1326 1 18 my 
+F 1329 1 18 prac
+F 1332 1 18 ti
+F 1335 1 18 cal 
+F 1338 1 18 tac
+F 1341 1 18 ti
+F 1344 1 18 cal 
+F 1347 2 18 bril
+F 1350 1 18 li
+F 1352 1 18 ance— 
+- 1353
+F 1365 2 18 You 
+F 1368 1 18 want
+F 1370 1 18 a 
+F 1372 2 18 fight 
+F 1375 2 18 for 
+F 1378 2 18 your 
+F 1381 3 18 land 
+F 1385 3 18 back? 
+- 1388 1417
+- 1417
+F 1437 2 18 Get 
+F 1440 1 18 ya 
+F 1442 2 18 right 
+F 1445 2 18 hand 
+F 1448 2 18 man 
+F 1451 2 18 back 
+- 1453
+F 1463 1 18 You 
+F 1465 1 18 know 
+F 1467 1 18 you 
+F 1469 1 18 got
+F 1471 1 18 ta 
+F 1473 1 18 get 
+F 1475 1 18 ya 
+F 1477 2 18 right 
+F 1481 2 18 hand 
+F 1484 2 18 man 
+F 1488 2 18 back 
+- 1490
+F 1497 1 18 I 
+F 1499 1 18 mean 
+F 1501 1 18 you 
+F 1503 1 18 got
+F 1505 1 18 ta 
+F 1507 1 18 put 
+F 1509 1 18 some 
+F 1511 1 18 thought 
+F 1514 1 18 in
+F 1516 1 18 to 
+F 1518 1 18 the 
+F 1520 1 18 let
+F 1522 1 18 ter 
+- 1523
+F 1524 1 18 But 
+F 1526 1 18 the 
+F 1529 1 18 soo
+F 1531 1 18 ner 
+F 1533 1 18 the 
+F 1535 1 18 bet
+F 1538 1 18 ter 
+- 1539
+F 1540 1 18 To 
+F 1542 1 18 get 
+F 1544 1 18 your 
+F 1547 1 18 right 
+F 1551 2 18 hand 
+F 1555 2 18 man 
+F 1558 2 18 back 
+E

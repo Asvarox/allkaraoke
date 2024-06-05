@@ -1,0 +1,468 @@
+#ARTIST:Disney’s The Lion King
+#TITLE:Be Prepared
+#CREATOR:REL
+#BPM:300
+#YEAR:1994
+#VIDEO:v=aaqqzwSd5u8
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:28020
+#ALLKARAOKE_ID:disneys-the-lion-king-be-prepared
+#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:02.336Z
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_VOLUME:1
+#MP3:Disney’s The Lion King - Be Prepared.mp3
+#START:18.5
+: 20 2 -3 I 
+: 26 1 -3 know 
+: 30 2 -3 that 
+: 35 2 -1 your 
+: 41 8 0 powers 
+: 52 3 -1 of 
+: 57 2 -3 re
+: 63 2 0 ten
+: 68 8 -3 tion 
+- 76 79
+- 79
+: 99 1 -1 Are 
+: 102 2 -3 as 
+: 106 6 -1 whet 
+: 117 2 -1 as 
+: 122 1 0 a 
+: 125 4 2 wart
+: 131 4 0 hog’s 
+: 138 2 0 back
+: 144 14 -3 side 
+- 158
+: 178 3 -3 But 
+: 183 5 -3 thick 
+: 190 3 -3 as 
+: 196 2 -1 you 
+: 200 6 0 are, 
+: 216 2 -1 pay 
+: 221 1 -3 att
+: 225 2 0 en
+: 229 4 -1 tion 
+- 233 236
+- 236
+: 256 3 0 My 
+: 263 7 -1 words 
+: 272 3 -1 are 
+: 278 3 0 a 
+: 283 2 2 mat
+: 288 3 0 ter 
+: 293 3 -1 of 
+: 299 8 0 pr
+: 308 5 -3 ide 
+- 313 315
+- 315
+: 335 3 -3 It’s 
+: 340 6 3 clear 
+: 349 3 3 from 
+: 355 2 3 your 
+: 361 2 3 vac
+: 367 3 2 ant 
+: 373 3 0 ex
+: 380 5 4 press
+: 388 7 -3 ions 
+- 395
+: 414 2 -3 The 
+: 419 5 3 lights 
+: 427 2 4 are 
+: 432 2 4 not 
+: 436 2 4 all 
+: 440 9 2 on 
+: 452 3 0 up
+: 458 9 4 stairs 
+- 467 472
+- 472
+: 492 2 -3 But 
+: 497 6 -1 we’re 
+: 506 2 -1 talk
+: 510 2 0 ing 
+: 515 11 2 kings 
+: 528 3 0 and 
+: 533 2 -1 succ
+: 538 2 0 ess
+: 542 11 0 ions 
+- 553
+: 565 3 2 Ev
+: 570 3 4 en 
+: 575 6 5 you 
+: 584 3 4 can’t 
+: 589 3 2 be 
+: 595 3 2 caught 
+: 600 2 0 un
+: 605 2 2 a
+: 608 12 4 wares 
+- 620 621
+- 621
+: 641 3 4 So 
+: 649 3 4 pre
+: 655 7 4 pare 
+: 665 3 0 for 
+: 670 2 2 a 
+: 674 11 4 chance 
+: 688 2 0 of 
+: 692 2 0 a 
+: 697 3 4 life
+: 702 7 2 time 
+- 709
+: 723 3 2 Be 
+: 728 3 4 pre
+: 733 5 5 pared 
+: 741 3 5 for 
+: 747 2 7 sen
+F 752 7 12 sat
+: 762 2 2 ion
+: 767 3 2 al 
+: 773 14 4 news 
+- 787 788
+- 788
+: 808 2 5 A 
+: 812 3 7 shin
+: 817 2 7 ing 
+: 822 2 7 new 
+: 827 5 7 er
+: 837 5 4 a 
+: 847 2 4 is 
+: 851 3 5 tip
+: 856 2 5 toe
+: 861 2 5 ing 
+: 866 5 5 near
+: 875 6 2 er 
+- 881
+F 885 3 6 And 
+F 892 2 6 where 
+F 896 3 6 do 
+F 901 2 6 we 
+F 906 3 6 feat
+F 911 5 6 ure? 
+- 916
+: 920 5 5 Just 
+F 930 3 6 lis
+F 935 3 6 ten 
+F 941 2 6 to 
+F 946 2 6 teach
+F 951 6 6 er 
+- 957
+: 965 1 7 I 
+: 970 2 7 know 
+: 975 2 2 it 
+: 980 1 5 sounds 
+: 985 5 7 sor
+: 992 5 4 did 
+- 997
+: 1005 1 5 But 
+: 1010 2 7 you’ll 
+: 1015 3 4 be 
+: 1020 2 5 re
+: 1025 2 7 war
+: 1030 6 4 ded 
+- 1036
+: 1043 2 5 When 
+: 1046 2 5 at 
+: 1049 4 7 last 
+: 1055 3 7 I 
+: 1062 1 7 am 
+: 1067 3 7 giv
+: 1074 2 5 en 
+: 1080 3 4 my 
+: 1087 5 5 due
+: 1093 6 2 s! 
+- 1099
+: 1116 2 2 And 
+: 1122 2 4 in 
+: 1127 3 5 just
+: 1133 4 5 ice 
+: 1142 2 5 de
+: 1148 3 5 lic
+: 1155 3 4 ious
+: 1162 3 2 ly 
+: 1169 9 4 squared 
+- 1178
+: 1186 5 4 Be 
+: 1196 5 4 pre
+: 1206 42 9 pared! 
+- 1248
+F 1262 4 6 Yeah! 
+F 1268 2 6 Be 
+F 1272 2 6 pre
+F 1275 4 6 pared, 
+F 1289 2 6 we’ll 
+F 1294 1 6 be 
+F 1297 2 6 pre
+F 1300 5 6 pared! 
+- 1305
+F 1321 2 6 For 
+F 1325 5 6 what? 
+- 1330
+F 1332 1 6 For 
+F 1337 1 6 the 
+F 1340 3 6 death 
+F 1345 2 6 of 
+F 1349 1 6 the 
+F 1352 7 6 king 
+- 1359
+F 1368 1 6 Is 
+F 1371 2 6 he 
+F 1374 4 6 sick? 
+- 1378
+F 1381 4 6 No, 
+F 1388 5 6 fool! 
+F 1395 2 6 We’re 
+F 1399 1 6 go
+F 1401 2 6 ing 
+F 1404 2 6 to 
+F 1407 2 6 kill 
+F 1410 3 6 him 
+- 1413
+F 1420 5 6 And 
+F 1426 3 6 Sim
+F 1430 2 6 ba, 
+F 1434 5 6 too 
+- 1439
+F 1450 1 6 Great 
+F 1453 1 6 id
+F 1456 2 6 ea! 
+F 1463 2 6 Who 
+F 1467 2 6 needs 
+F 1470 2 6 a 
+F 1474 4 6 king? 
+- 1478
+F 1486 1 6 No 
+F 1491 3 6 king, 
+F 1497 4 6 no 
+F 1504 3 6 king! 
+- 1507 1517
+- 1517
+F 1537 2 6 Id
+F 1541 1 6 i
+F 1544 5 6 ots! 
+F 1552 5 6 There 
+F 1559 5 6 will 
+F 1567 2 6 be 
+F 1571 3 6 a 
+F 1576 4 6 king! 
+- 1580
+F 1583 3 6 But 
+F 1589 2 6 you 
+F 1593 4 6 said- 
+- 1597
+F 1603 10 6 I 
+F 1615 4 6 will 
+F 1621 3 6 be 
+F 1627 7 6 king! 
+- 1634
+F 1649 6 6 Stick 
+F 1659 4 6 with 
+F 1666 9 6 me 
+- 1675
+F 1685 4 6 And 
+F 1693 4 6 you’ll 
+F 1703 2 6 ne
+F 1707 4 6 ver 
+F 1716 6 6 go 
+F 1725 4 6 hung
+F 1732 2 6 ry 
+F 1737 2 6 ag
+F 1741 9 6 ain! 
+- 1750
+F 1752 19 6 Yay, 
+F 1781 2 6 all 
+F 1785 3 6 right! 
+F 1790 5 6 Long 
+F 1798 2 6 live 
+F 1802 2 6 the 
+F 1806 5 6 king! 
+- 1811
+F 1816 2 6 Long 
+F 1820 1 6 live 
+F 1823 2 6 the 
+F 1826 6 6 king! 
+- 1832 1894
+- 1894
+: 1914 3 -3 It’s 
+: 1919 2 -3 great 
+: 1923 2 -3 that 
+: 1926 3 -1 we’ll 
+: 1931 5 0 soon 
+: 1939 2 -1 be 
+: 1944 2 -3 con
+: 1949 5 0 nect
+: 1958 6 -1 ed 
+- 1964 1969
+- 1969
+: 1989 1 -1 With 
+: 1992 2 -1 a 
+: 1995 3 -1 king 
+: 2000 2 -1 who’ll 
+: 2004 2 0 be 
+: 2009 5 2 all-
+: 2017 3 0 time 
+: 2023 3 -1 ado
+: 2028 5 0 red 
+- 2033 2047
+- 2047
+: 2067 3 -3 Of 
+: 2072 5 -3 course, 
+: 2081 3 -3 quid 
+: 2087 2 -1 pro 
+: 2092 5 0 quo, 
+: 2105 3 -1 you’re 
+: 2111 3 -3 ex
+: 2116 3 0 pect
+: 2122 5 -3 ed 
+- 2127
+: 2146 3 -3 To 
+: 2152 3 -1 take 
+: 2160 2 -1 cert
+: 2165 2 -1 ain 
+: 2170 3 2 dut
+: 2176 6 0 ies 
+: 2186 3 -1 on 
+: 2191 3 0 bo
+: 2195 4 -3 ard 
+- 2199 2205
+- 2205
+: 2225 3 2 The 
+: 2230 3 3 fut
+: 2236 6 3 ure 
+: 2245 2 3 is 
+: 2250 3 3 lit
+: 2256 3 2 tered 
+: 2263 3 0 with 
+: 2269 7 4 pri
+: 2279 10 -3 zes 
+- 2289
+: 2304 3 -3 And 
+: 2309 3 3 though 
+: 2314 5 3 I’m 
+: 2324 2 3 the 
+: 2329 5 3 main 
+: 2337 4 2 ad
+: 2343 3 0 dress
+: 2348 10 4 ee 
+- 2358 2362
+- 2362
+: 2382 2 -3 The 
+: 2387 5 -1 point 
+: 2396 3 -1 that 
+: 2401 2 0 I 
+: 2406 6 2 must 
+: 2415 4 0 em
+: 2421 2 -1 pha
+: 2426 5 0 size 
+: 2436 5 4 is 
+- 2441
+: 2461 2 2 You 
+: 2466 4 5 won’t 
+: 2475 2 5 get 
+: 2479 3 5 a 
+: 2485 4 5 sniff 
+: 2491 2 4 with
+: 2496 3 2 out 
+: 2502 11 4 me! 
+- 2513 2517
+- 2517
+: 2537 2 0 So 
+: 2541 3 2 pre
+: 2546 7 4 pare 
+: 2556 3 0 for 
+: 2563 2 2 the 
+: 2567 7 4 coup 
+: 2576 4 0 of 
+: 2583 3 2 the 
+: 2588 4 4 cent
+: 2594 5 2 ury 
+- 2599
+: 2612 4 2 Be 
+: 2618 3 4 pre
+: 2624 8 5 pared 
+: 2637 2 2 for 
+: 2641 3 4 the 
+: 2645 6 5 murk
+: 2654 2 4 i
+: 2658 3 2 est 
+: 2664 6 4 scam 
+- 2670 2673
+- 2673
+: 2693 3 5 Met
+: 2701 3 7 i
+: 2706 3 7 cu
+: 2712 2 7 lous 
+: 2717 7 7 plan
+: 2726 4 4 ing 
+- 2730
+: 2737 3 4 Ten
+: 2742 3 5 a
+: 2747 2 5 ci
+: 2752 3 5 ty 
+: 2757 6 5 span
+: 2766 4 2 ning 
+- 2770
+: 2775 3 2 Dec
+: 2781 2 7 ades 
+: 2786 3 7 of 
+: 2792 2 7 den
+: 2797 5 7 i
+: 2805 5 4 al 
+: 2816 2 4 is 
+: 2821 2 5 simp
+: 2827 3 5 ly 
+: 2833 3 5 why 
+: 2840 2 5 I’
+: 2843 3 2 ll 
+- 2846
+: 2857 2 7 Be 
+: 2861 3 7 king 
+: 2868 3 4 un
+: 2874 2 5 dis
+: 2879 3 7 put
+: 2886 3 4 ed 
+- 2889
+: 2893 3 5 Re
+: 2900 3 7 spect
+: 2906 2 4 ed, 
+: 2914 2 5 sal
+: 2919 3 7 u
+: 2925 3 4 ted 
+- 2928
+: 2934 2 5 And 
+: 2938 11 7 seen 
+: 2951 2 7 for 
+: 2954 2 7 the 
+: 2958 5 9 won
+: 2965 3 7 der 
+: 2970 5 4 I 
+: 2978 10 5 am 
+- 2988
+: 3006 4 5 Yes, 
+: 3012 3 5 my 
+: 3018 4 5 teeth 
+: 3025 3 5 and 
+: 3031 3 5 am
+: 3037 3 5 bi
+: 3044 3 4 tions 
+: 3050 3 2 are 
+: 3056 9 4 bared- 
+- 3065
+: 3075 5 4 Be 
+: 3084 5 4 pre
+: 3094 43 9 pared! 
+- 3137 3145
+- 3145
+: 3165 3 2 Yes, 
+: 3170 3 4 our 
+: 3176 4 5 teeth 
+: 3182 4 2 and 
+: 3189 3 4 am
+: 3195 4 5 bi
+: 3202 3 4 tions 
+: 3208 3 2 are 
+: 3214 8 4 bared- 
+- 3222
+: 3233 4 4 Be 
+: 3243 4 8 pre
+: 3252 46 9 pared! 
+E
