@@ -15,6 +15,7 @@ export default function RateSong({ register, onExit }: Props) {
   const menuRef = useRef<null | HTMLButtonElement>(null);
   const [lyricsNotInSync, setLyricsNotInSync] = useState(false);
   const [volumeWrong, setVolumeWrong] = useState(false);
+  const [badLyrics, setBadLyrics] = useState(false);
 
   useEffect(() => {
     menuRef.current?.focus();
@@ -26,11 +27,18 @@ export default function RateSong({ register, onExit }: Props) {
       songId: song?.id,
       songLastUpdated: song?.lastUpdate,
     };
+    const issues = [];
     if (lyricsNotInSync) {
-      posthog.capture('rate-song', { type: 'not-in-sync', ...properties });
+      issues.push('not-in-sync');
     }
     if (volumeWrong) {
-      posthog.capture('rate-song', { type: 'wrong-volume', ...properties });
+      issues.push('wrong-volume');
+    }
+    if (badLyrics) {
+      issues.push('bad-lyrics');
+    }
+    if (issues.length) {
+      posthog.capture('rate-song', { issues, ...properties });
     }
     onExit();
   };
@@ -43,6 +51,10 @@ export default function RateSong({ register, onExit }: Props) {
         <Checkbox {...register('button-not-in-sync', () => setLyricsNotInSync((current) => !current))} size={'small'}>
           <Check>{lyricsNotInSync ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
           <span>Lyrics are not in sync</span>
+        </Checkbox>
+        <Checkbox {...register('button-bad-lyrics', () => setBadLyrics((current) => !current))} size={'small'}>
+          <Check>{badLyrics ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
+          <span>Wrong lyrics, missing spaces etc.</span>
         </Checkbox>
         <Checkbox {...register('button-wrong-volume', () => setVolumeWrong((current) => !current))} size={'small'}>
           <Check>{volumeWrong ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
