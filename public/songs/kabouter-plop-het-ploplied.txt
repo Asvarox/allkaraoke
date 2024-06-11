@@ -1,0 +1,291 @@
+#ARTIST:Kabouter Plop
+#TITLE:Het Ploplied
+#CREATOR:eppo2001
+#BPM:240
+#YEAR:1998
+#VIDEO:v=XIpiuqpWbjY
+#VIDEOGAP:92
+#LANGUAGE:Dutch
+#GAP:106490
+#ALLKARAOKE_ID:kabouter-plop-het-ploplied
+#ALLKARAOKE_LASTUPDATE:2024-06-11T00:10:40.900Z
+#ALLKARAOKE_ARTISTORIGIN:BE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=31489
+#ALLKARAOKE_REALBPM:141
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9165
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Kabouter Plop - Het Ploplied.mp3
+: 16 7 17 Ik 
+: 24 5 17 ben 
+: 30 1 17 ka
+: 32 2 19 bou
+: 36 3 19 ter 
+: 40 3 17 Plop 
+- 43
+: 44 3 17 En 
+: 48 3 12 sa
+: 52 3 12 men 
+: 56 3 17 met 
+: 60 3 15 m’n 
+: 64 9 14 vrien
+: 74 2 10 den 
+- 76
+* 80 6 17 Kun 
+: 88 4 17 je 
+: 94 1 17 me 
+: 96 3 19 al
+: 100 3 19 tijd 
+: 104 3 17 in 
+: 108 3 17 m’n 
+- 111
+: 112 3 19 Pad
+: 116 3 19 de
+: 120 3 24 stoel
+: 124 3 22 tje 
+: 128 7 21 vin
+: 136 4 17 den 
+- 140
+: 144 7 34 Mijn 
+: 152 3 34 naam 
+: 156 3 29 is 
+: 160 3 31 Kweb
+: 164 3 31 bel 
+- 167
+: 172 3 31 Ik 
+: 176 3 31 praat 
+: 180 3 32 en 
+* 184 3 31 praat 
+: 188 3 29 en 
+: 192 4 27 praat 
+- 196
+: 204 3 14 En 
+: 208 3 15 ik 
+: 212 3 15 ben 
+: 216 3 14 Lui 
+: 220 3 12 ik 
+- 223
+: 224 3 14 Slaap 
+: 228 3 17 van’s-mor
+: 232 3 22 ~
+: 236 3 14 gens 
+- 239
+: 240 3 12 Vroeg 
+: 244 3 15 tot’s-a
+: 248 3 14 ~
+: 252 3 12 vonds 
+: 256 8 17 laat 
+- 264
+: 272 6 29 Ik 
+: 280 5 29 hier 
+: 286 1 29 ben 
+: 288 5 31 Klus 
+- 293
+: 300 3 29 Ik 
+: 304 3 24 knut
+: 308 3 24 sel 
+: 312 3 29 toch 
+: 316 3 27 zo 
+: 320 5 26 graag 
+- 325
+: 328 5 14 Ik 
+: 334 1 15 knut
+: 336 3 17 ~
+: 340 3 17 sel 
+: 344 3 17 vlug 
+- 347
+: 348 3 17 En 
+: 352 3 19 als 
+: 356 3 19 je 
+: 360 3 17 wil 
+- 363
+: 364 3 17 Dan 
+: 368 1 17 knut
+: 370 1 19 ~
+: 372 3 19 sel 
+* 376 3 21 ik 
+: 380 2 17 ook 
+: 384 1 21 traag
+: 386 4 22 ~ 
+- 390 896
+- 896
+: 912 6 17 Ik 
+: 920 5 17 hou 
+: 926 1 17 van 
+* 928 3 19 Plop
+: 932 3 19 koe
+: 936 3 17 ken 
+- 939
+: 940 3 17 Ik 
+: 944 3 12 bak 
+: 948 3 12 er 
+: 952 3 17 al
+: 956 3 15 le 
+: 960 7 14 da
+: 968 6 10 gen 
+- 974
+: 976 6 17 Wie 
+: 984 2 17 er 
+: 988 3 17 van 
+: 992 3 19 proe
+: 996 3 19 ven 
+: 1000 3 17 wil 
+- 1003
+: 1004 3 17 Die 
+: 1008 3 19 moet 
+: 1012 3 19 er 
+: 1016 3 24 maar 
+: 1020 3 22 naar 
+: 1024 7 21 vra
+: 1032 5 17 gen 
+- 1037
+: 1040 6 34 Ik 
+: 1048 1 32 hou
+: 1050 1 34 ~
+: 1052 3 32 van 
+: 1056 3 31 dan
+: 1060 4 31 sen 
+- 1064
+: 1068 3 31 En 
+: 1072 3 31 ook 
+: 1076 3 32 veel 
+: 1080 3 31 van 
+: 1084 3 29 mu
+: 1088 8 27 ziek 
+- 1096
+: 1100 3 15 En 
+: 1104 3 15 ik 
+: 1108 3 15 neem 
+: 1112 3 14 graag 
+- 1115
+: 1116 3 12 Mijn 
+: 1120 3 14 vrien
+: 1124 3 17 den 
+* 1128 4 22 beet 
+- 1132
+: 1134 1 14 Dan 
+: 1136 3 15 lach 
+: 1140 3 17 ik 
+: 1144 3 15 mij 
+: 1148 3 12 een 
+: 1152 5 17 kriek 
+- 1157
+: 1168 7 17 On
+: 1176 3 17 der 
+: 1180 3 17 mijn 
+: 1184 7 19 muts 
+- 1191
+: 1196 3 17 Daar 
+: 1200 3 12 is 
+: 1204 3 12 het 
+: 1208 3 17 lek
+: 1212 3 15 ker 
+: 1216 3 14 droog
+: 1220 3 10 ~
+: 1224 6 10 maar 
+- 1230
+: 1232 3 17 Als 
+: 1236 3 17 ik 
+: 1240 3 17 schrik 
+- 1243
+: 1244 3 17 Dan 
+: 1248 3 19 vlie
+: 1252 3 19 gen 
+: 1256 3 17 die 
+- 1259
+: 1260 3 17 Twee 
+: 1264 3 19 din
+: 1268 3 19 gen 
+: 1272 3 21 naar 
+: 1276 3 17 om
+: 1280 6 22 hoog 
+- 1286 1792
+- 1792
+: 1808 7 17 Als 
+* 1816 5 17 jul
+: 1822 1 17 lie 
+: 1824 3 19 zin 
+: 1828 3 19 heb
+: 1832 3 17 ben 
+- 1835
+: 1836 3 17 Om 
+: 1840 3 12 op 
+: 1844 3 12 be
+: 1848 3 17 zoek 
+: 1852 3 15 te 
+: 1856 7 14 ko
+: 1864 4 10 men 
+- 1868
+* 1872 7 17 Volg 
+: 1880 5 17 dan 
+: 1886 1 17 de 
+: 1888 3 19 weg 
+- 1891
+: 1892 3 19 Die 
+: 1896 3 17 je 
+: 1900 3 17 kan 
+: 1904 3 19 zien 
+- 1907
+: 1908 3 19 Tus
+: 1912 3 24 sen 
+: 1916 3 22 de 
+: 1920 7 21 bo
+: 1928 5 17 men 
+- 1933
+: 1936 7 34 Dan 
+: 1944 3 34 maak 
+: 1948 3 32 ik 
+* 1952 3 31 Plop
+: 1956 7 31 melk 
+- 1963
+: 1964 3 31 En 
+: 1968 3 31 koe
+: 1972 3 32 ken 
+: 1976 3 31 voor 
+: 1980 3 29 je 
+: 1984 7 27 klaar 
+- 1991
+: 1996 3 14 En 
+: 2000 3 15 ik 
+: 2004 3 15 ik 
+: 2008 3 14 zal 
+: 2012 3 12 niet 
+: 2016 3 14 sla
+: 2020 3 17 pen 
+: 2024 3 22 ja 
+- 2027
+: 2028 3 14 Echt 
+: 2032 3 12 waar 
+: 2036 3 15 ge
+* 2040 3 14 loof 
+: 2044 3 12 me 
+: 2048 10 17 maar 
+- 2058
+: 2064 7 17 Dan 
+: 2072 5 17 gaan 
+: 2078 1 17 we 
+: 2080 7 19 fees
+: 2088 3 17 ten 
+- 2091
+: 2092 3 17 Dat 
+: 2096 3 12 wordt 
+: 2100 3 12 bui
+: 2104 3 17 ten
+: 2108 3 15 ge
+: 2112 7 14 woon 
+: 2120 4 10 want 
+- 2124
+: 2128 3 17 Plop 
+: 2132 3 17 draait 
+* 2136 3 17 aan 
+: 2140 3 17 de 
+: 2144 3 19 slin
+: 2148 3 19 ger 
+: 2152 3 17 van 
+- 2155
+: 2156 3 17 De 
+: 2160 3 19 slin
+: 2164 3 22 ger
+: 2168 3 21 gram
+: 2172 3 17 mo
+: 2176 7 22 foon 
+E
