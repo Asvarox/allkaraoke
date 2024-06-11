@@ -7,9 +7,9 @@
 #VIDEO:v=C6MOKXm8x50
 #GENRE:Pop Rock
 #LANGUAGE:English
-#GAP:56447,467248908295
+#GAP:56547,467248908295
 #ALLKARAOKE_ID:fall-out-boy-dance-dance
-#ALLKARAOKE_LASTUPDATE:2024-05-09T15:19:35.647Z
+#ALLKARAOKE_LASTUPDATE:2024-06-11T00:10:39.950Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=813
@@ -36,13 +36,13 @@
 : 85 1 11 tered 
 : 87 1 14 out 
 - 88
-: 89 1 18 \"A 
+: 89 1 18 \\\"A 
 : 91 2 16 joke 
 : 95 1 18 of 
 : 97 1 16 a 
 : 99 3 11 ro
 : 103 4 16 man
-: 109 1 14 tic\" 
+: 109 1 14 tic\\\" 
 - 110
 : 111 1 14 Or 
 : 113 2 14 stuck 
@@ -67,22 +67,22 @@
 : 209 3 18 night 
 : 213 3 18 it’s 
 - 216
-: 217 1 19 \"It 
+: 217 1 19 \\\"It 
 : 219 2 21 can’t 
 : 223 2 21 get 
 : 227 3 18 much 
-: 231 4 23 worse\" 
+: 231 4 23 worse\\\" 
 - 235
 : 240 1 23 Ver
 : 242 1 23 sus 
 - 243
-: 244 1 23 \"No 
+: 244 1 23 \\\"No 
 : 246 1 23 one 
 : 248 3 23 should 
 : 252 1 23 e
 : 254 2 23 ver 
 : 258 3 25 feel 
-: 262 3 26 like...\" 
+: 262 3 26 like...\\\" 
 - 265
 : 268 2 23 I’m 
 : 272 2 25 two 

@@ -1436,6 +1436,61 @@
     "local": false
   },
   {
+    "id": "ado-giragira",
+    "title": "Giragira",
+    "artist": "Ado",
+    "video": "sOiMD45QGLs",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 384,
+    "gap": 20456.375,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-11T00:10:39.931Z",
+    "genre": "J-Pop",
+    "realBpm": 96,
+    "volume": 0.75,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=ado",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adogiragira",
+    "local": false
+  },
+  {
+    "id": "ado-god-ish",
+    "title": "God-ish",
+    "artist": "Ado",
+    "video": "7i_nc5GGIsI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 284,
+    "gap": 5753.478873239436,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-11T00:10:39.936Z",
+    "genre": "Vocaloid",
+    "realBpm": 142,
+    "volume": 0.75,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29040",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adogodish",
+    "local": false
+  },
+  {
     "id": "ado-new-genesis",
     "title": "New Genesis",
     "artist": "Ado",
@@ -17090,6 +17145,32 @@
     "local": false
   },
   {
+    "id": "demi-lovato-dont-forget",
+    "title": "Don’t Forget",
+    "artist": "Demi Lovato",
+    "video": "oYDDiqhhzbQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 216,
+    "gap": 10180.555555555555,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:39.938Z",
+    "genre": "Pop",
+    "realBpm": 179,
+    "volume": 0.78,
+    "author": "britneyblisswilliams",
+    "tracks": [
+      {
+        "start": 1
+      }
+    ],
+    "tracksCount": 1,
+    "search": "demilovatodontforget",
+    "local": false
+  },
+  {
     "id": "demi-lovato-feat-cher-lloyd-really-dont-care",
     "title": "Really Don’t Care",
     "artist": "Demi Lovato feat. Cher Lloyd",
@@ -17112,6 +17193,32 @@
     ],
     "tracksCount": 1,
     "search": "demilovatofeatcherlloydreallydontcare",
+    "local": false
+  },
+  {
+    "id": "demi-lovato-get-back",
+    "title": "Get Back",
+    "artist": "Demi Lovato",
+    "video": "lJXJ5rzcHVQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 6280,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:39.941Z",
+    "genre": "Pop",
+    "realBpm": 76,
+    "volume": 0.76,
+    "author": "britneyblisswilliams",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "demilovatogetback",
     "local": false
   },
   {
@@ -17191,6 +17298,34 @@
     ],
     "tracksCount": 1,
     "search": "demilovatolalaland",
+    "local": false
+  },
+  {
+    "id": "demi-lovato-made-in-the-usa",
+    "title": "Made In The USA",
+    "artist": "Demi Lovato",
+    "video": "z3zdIHDTbg0",
+    "language": [
+      "English"
+    ],
+    "bpm": 350.04,
+    "gap": 62471.51182721974,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:39.946Z",
+    "genre": "Pop",
+    "videoGap": 63,
+    "realBpm": 87,
+    "volume": 0.72,
+    "author": "manumario64",
+    "sourceUrl": "https://www.youtube.com/watch?v=z3zdIHDTbg0",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "demilovatomadeintheusa",
     "local": false
   },
   {
@@ -19566,6 +19701,34 @@
     ],
     "tracksCount": 1,
     "search": "dschinghiskhanmoskau",
+    "local": false
+  },
+  {
+    "id": "dua-lipa-be-the-one",
+    "title": "Be The One",
+    "artist": "Dua Lipa",
+    "video": "-rey3m8SWQI",
+    "language": [
+      "English"
+    ],
+    "bpm": 175,
+    "gap": 9571.428571428572,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-11T00:10:39.949Z",
+    "genre": "Pop",
+    "realBpm": 87,
+    "volume": 0.73,
+    "author": "Dua Lipa",
+    "sourceUrl": "https://www.youtube.com/watch?v=-rey3m8SWQI&ab_channel=DuaLipa",
+    "tracks": [
+      {
+        "name": "Be the One",
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dualipabetheone",
     "local": false
   },
   {
@@ -22215,10 +22378,10 @@
       "English"
     ],
     "bpm": 229,
-    "gap": 56447.467248908295,
+    "gap": 56547.467248908295,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-09T15:19:35.647Z",
+    "lastUpdate": "2024-06-11T00:10:39.950Z",
     "genre": "Pop Rock",
     "realBpm": 114,
     "previewStart": 73,
@@ -25363,10 +25526,10 @@
       "Polish"
     ],
     "bpm": 279.96,
-    "gap": 14700.99742820403,
+    "gap": 15000.99742820403,
     "year": "2016",
     "artistOrigin": "PL",
-    "lastUpdate": "2024-03-12T20:42:56.530Z",
+    "lastUpdate": "2024-06-11T00:10:39.952Z",
     "genre": "Pop",
     "realBpm": 140,
     "previewStart": 98,
@@ -26935,6 +27098,108 @@
     ],
     "tracksCount": 1,
     "search": "hoziertakemetochurch",
+    "local": false
+  },
+  {
+    "id": "huey-lewis-the-news-do-you-believe-in-love",
+    "title": "Do You Believe In Love",
+    "artist": "Huey Lewis & The News",
+    "video": "BzIbyDbmsyg",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.92,
+    "gap": 12697.434243676307,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:39.954Z",
+    "realBpm": 114,
+    "volume": 0.81,
+    "author": "anthem_1",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hueylewisthenewsdoyoubelieveinlove",
+    "local": false
+  },
+  {
+    "id": "huey-lewis-the-news-heart-and-soul",
+    "title": "Heart And Soul",
+    "artist": "Huey Lewis & The News",
+    "video": "8TdaXhpjHws",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.75,
+    "gap": 16066.191842590695,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.685Z",
+    "genre": "Rock",
+    "realBpm": 122,
+    "volume": 0.71,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hueylewisthenewsheartandsoul",
+    "local": false
+  },
+  {
+    "id": "huey-lewis-the-news-the-heart-of-rock-roll",
+    "title": "The Heart Of Rock & Roll",
+    "artist": "Huey Lewis & The News",
+    "video": "M7JVlpm0eRs",
+    "language": [
+      "English"
+    ],
+    "bpm": 285.4,
+    "gap": 33774.88826815642,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.687Z",
+    "genre": "Rock",
+    "realBpm": 143,
+    "volume": 0.78,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hueylewisthenewstheheartofrockroll",
+    "local": false
+  },
+  {
+    "id": "huey-lewis-the-news-the-power-of-love",
+    "title": "The Power Of Love",
+    "artist": "Huey Lewis & The News",
+    "video": "-NMph943tsw",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 31891.59663865546,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.688Z",
+    "realBpm": 118,
+    "volume": 0.72,
+    "author": "DarkLink",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hueylewisthenewsthepoweroflove",
     "local": false
   },
   {
@@ -29320,6 +29585,56 @@
     "local": false
   },
   {
+    "id": "john-mayer-free-fallin",
+    "title": "Free Fallin’",
+    "artist": "John Mayer",
+    "video": "20Ov0cDPZy8",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 22157.5,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.690Z",
+    "realBpm": 174,
+    "volume": 0.95,
+    "author": "davidlink",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnmayerfreefallin",
+    "local": false
+  },
+  {
+    "id": "john-mayer-your-body-is-a-wonderland",
+    "title": "Your Body Is A Wonderland",
+    "artist": "John Mayer",
+    "video": "N5EnGwXV_Pg",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.08,
+    "gap": 18032.871729419272,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.895Z",
+    "realBpm": 92,
+    "volume": 0.64,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnmayeryourbodyisawonderland",
+    "local": false
+  },
+  {
     "id": "johnny-cash-aint-no-grave",
     "title": "Ain’t No Grave",
     "artist": "Johnny Cash",
@@ -29872,6 +30187,57 @@
     ],
     "tracksCount": 1,
     "search": "journeydontstopbelieving",
+    "local": false
+  },
+  {
+    "id": "journey-faithfully",
+    "title": "Faithfully",
+    "artist": "Journey",
+    "video": "OMD8hBsA-RI",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.3,
+    "gap": 13302.775842044135,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.897Z",
+    "realBpm": 130,
+    "volume": 0.76,
+    "author": "HannahMari",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "journeyfaithfully",
+    "local": false
+  },
+  {
+    "id": "journey-open-arms",
+    "title": "Open Arms",
+    "artist": "Journey",
+    "video": "nXTxmu5WSGA",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.65,
+    "gap": 13632.701018076044,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:40.898Z",
+    "genre": "Ballade",
+    "realBpm": 101,
+    "volume": 0.75,
+    "author": "Gouthamma",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "journeyopenarms",
     "local": false
   },
   {
@@ -30918,6 +31284,35 @@
     "local": false
   },
   {
+    "id": "k3-toveren",
+    "title": "Toveren",
+    "artist": "K3",
+    "video": "hjWZw_F6aEs",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 288,
+    "gap": 310.41666666666663,
+    "year": "2002",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-06-11T00:10:40.899Z",
+    "realBpm": 130,
+    "previewStart": 63,
+    "previewEnd": 89,
+    "volume": 0.86,
+    "author": "eppo2001",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=31489",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9169",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "k3toveren",
+    "local": false
+  },
+  {
     "id": "kaarija-cha-cha-cha",
     "title": "Cha Cha Cha",
     "artist": "Käärijä",
@@ -30945,6 +31340,34 @@
     ],
     "tracksCount": 1,
     "search": "kaarijachachacha",
+    "local": false
+  },
+  {
+    "id": "kabouter-plop-het-ploplied",
+    "title": "Het Ploplied",
+    "artist": "Kabouter Plop",
+    "video": "XIpiuqpWbjY",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 240,
+    "gap": 106490,
+    "year": "1998",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-06-11T00:10:40.900Z",
+    "videoGap": 92,
+    "realBpm": 141,
+    "volume": 0.75,
+    "author": "eppo2001",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=31489",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9165",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kabouterplophetploplied",
     "local": false
   },
   {
@@ -33719,6 +34142,31 @@
     "local": false
   },
   {
+    "id": "lady-gaga-ariana-grande-rain-on-me",
+    "title": "Rain On Me",
+    "artist": "Lady Gaga & Ariana Grande",
+    "video": "AoAm4om0wTs",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 1204.3902439024391,
+    "year": "2020",
+    "lastUpdate": "2024-06-11T00:10:41.092Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.66,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagaarianagranderainonme",
+    "local": false
+  },
+  {
     "id": "lady-gaga-bad-romance",
     "title": "Bad Romance",
     "artist": "Lady Gaga",
@@ -33954,10 +34402,10 @@
       "English"
     ],
     "bpm": 254.03,
-    "gap": 58609.18155335984,
+    "gap": 58709.18155335984,
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:36.341Z",
+    "lastUpdate": "2024-06-11T00:10:41.305Z",
     "genre": "Pop",
     "realBpm": 127,
     "volume": 0.81,
@@ -37282,6 +37730,34 @@
     ],
     "tracksCount": 1,
     "search": "lzyoczyszerokozamkniete",
+    "local": false
+  },
+  {
+    "id": "m83-feat-susanne-sundfor-oblivion",
+    "title": "Oblivion",
+    "artist": "M83 feat. Susanne Sundfør",
+    "video": "UjpbQ1OWMPE",
+    "language": [
+      "English"
+    ],
+    "bpm": 357.65,
+    "gap": 35830.429330350904,
+    "year": "2015",
+    "artistOrigin": "NO",
+    "lastUpdate": "2024-06-11T00:10:41.306Z",
+    "genre": "Alternative Pop, Synth-Pop",
+    "realBpm": 128,
+    "previewStart": 66,
+    "previewEnd": 95,
+    "volume": 0.79,
+    "author": "hugofnm",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "m83featsusannesundforoblivion",
     "local": false
   },
   {
@@ -41525,6 +42001,32 @@
     "local": false
   },
   {
+    "id": "miley-cyrus-jaded",
+    "title": "Jaded",
+    "artist": "Miley Cyrus",
+    "video": "4q-Y6wt1h3k",
+    "language": [
+      "English"
+    ],
+    "bpm": 272.85,
+    "gap": 9940.445299615174,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:41.308Z",
+    "genre": "Dream pop",
+    "realBpm": 91,
+    "volume": 0.71,
+    "author": "Volodia",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mileycyrusjaded",
+    "local": false
+  },
+  {
     "id": "miley-cyrus-nobodys-perfect",
     "title": "Nobody’s Perfect",
     "artist": "Miley Cyrus",
@@ -42206,6 +42708,34 @@
     "local": false
   },
   {
+    "id": "moulin-rouge-come-what-may",
+    "title": "Come What May",
+    "artist": "Moulin Rouge",
+    "video": "2lGP78ckF_Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 264.16,
+    "gap": 35237.8921865536,
+    "year": "2001",
+    "artistOrigin": "SI",
+    "lastUpdate": "2024-06-11T00:10:41.312Z",
+    "realBpm": 132,
+    "volume": 0.86,
+    "author": "Hoanzl",
+    "tracks": [
+      {
+        "start": 18
+      },
+      {
+        "start": 1655
+      }
+    ],
+    "tracksCount": 2,
+    "search": "moulinrougecomewhatmay",
+    "local": false
+  },
+  {
     "id": "mumford-and-sons-believe",
     "title": "Believe",
     "artist": "Mumford and Sons",
@@ -42797,6 +43327,34 @@
     ],
     "tracksCount": 1,
     "search": "mychemicalromancehelena",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-i-dont-love-you",
+    "title": "I Don’t Love You",
+    "artist": "My Chemical Romance",
+    "video": "PATaMsbuO0c",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.12,
+    "gap": 25370.47036688617,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:41.314Z",
+    "genre": "Rock",
+    "realBpm": 170,
+    "previewStart": 26,
+    "previewEnd": 60,
+    "volume": 0.75,
+    "author": "Natsuharu",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mychemicalromanceidontloveyou",
     "local": false
   },
   {
@@ -48163,6 +48721,31 @@
     ],
     "tracksCount": 1,
     "search": "philcollinsonemorenight",
+    "local": false
+  },
+  {
+    "id": "phil-collins-sussudio",
+    "title": "Sussudio",
+    "artist": "Phil Collins",
+    "video": "1wv4yTSFlHI",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 18888.095238095237,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-11T00:10:41.316Z",
+    "realBpm": 121,
+    "volume": 0.81,
+    "author": "Flado",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "philcollinssussudio",
     "local": false
   },
   {
@@ -54212,16 +54795,16 @@
       "English"
     ],
     "bpm": 259.78,
-    "gap": -72.11748402494425,
+    "gap": 143.36484717838164,
     "year": "2007",
     "artistOrigin": "JM",
-    "lastUpdate": "2023-11-23T06:46:39.880Z",
+    "lastUpdate": "2024-06-11T00:10:41.318Z",
     "edition": "SSHottestHitsGE",
     "realBpm": 130,
     "volume": 0.93,
     "tracks": [
       {
-        "start": 15
+        "start": 13
       }
     ],
     "tracksCount": 1,
@@ -54436,6 +55019,32 @@
     ],
     "tracksCount": 1,
     "search": "selenagomezkillemwithkindness",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-single-soon",
+    "title": "Single Soon",
+    "artist": "Selena Gomez",
+    "video": "yOuqn4w1ozA",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 7860,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:41.320Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 0.71,
+    "author": "vicktoben (ultrastar-es.org)",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezsinglesoon",
     "local": false
   },
   {
@@ -55357,6 +55966,31 @@
     "local": false
   },
   {
+    "id": "shania-twain-forever-and-for-always",
+    "title": "Forever And For Always",
+    "artist": "Shania Twain",
+    "video": "IpT-FW_G8-A",
+    "language": [
+      "English"
+    ],
+    "bpm": 344,
+    "gap": 15537.093023255813,
+    "year": "2002",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-06-11T00:10:41.321Z",
+    "realBpm": 86,
+    "volume": 0.7,
+    "author": "Basti",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shaniatwainforeverandforalways",
+    "local": false
+  },
+  {
     "id": "shania-twain-from-this-moment-on",
     "title": "From This Moment On",
     "artist": "Shania Twain",
@@ -55380,6 +56014,32 @@
     ],
     "tracksCount": 1,
     "search": "shaniatwainfromthismomenton",
+    "local": false
+  },
+  {
+    "id": "shania-twain-man-i-feel-like-a-woman",
+    "title": "Man! I Feel Like A Woman!",
+    "artist": "Shania Twain",
+    "video": "ZJL4UGSbeFg",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 10277.272727272728,
+    "year": "1997",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-06-11T00:10:41.322Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.78,
+    "author": "britneyblisswilliams",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "shaniatwainmanifeellikeawoman",
     "local": false
   },
   {
@@ -64169,6 +64829,31 @@
     "local": false
   },
   {
+    "id": "toranja-carta",
+    "title": "Carta",
+    "artist": "Toranja",
+    "video": "GKl6hK2IzbY",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 320,
+    "gap": 19595.625,
+    "year": "2003",
+    "lastUpdate": "2024-06-11T00:10:41.325Z",
+    "genre": "Pop",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "Toranja",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "toranjacarta",
+    "local": false
+  },
+  {
     "id": "toto-africa",
     "title": "Africa",
     "artist": "Toto",
@@ -66016,6 +66701,84 @@
     ],
     "tracksCount": 1,
     "search": "virginszansa",
+    "local": false
+  },
+  {
+    "id": "vitamin-c-graduation-friends-forever",
+    "title": "Graduation (Friends Forever)",
+    "artist": "Vitamin C",
+    "video": "tz_NxOF7RB4",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 17845.625,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:41.505Z",
+    "videoGap": 4,
+    "realBpm": 80,
+    "volume": 0.97,
+    "author": "bohning",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vitamincgraduationfriendsforever",
+    "local": false
+  },
+  {
+    "id": "vitamin-c-smile",
+    "title": "Smile",
+    "artist": "Vitamin C",
+    "video": "nyy7lG6Me2s",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.75,
+    "gap": 2093.71335504886,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:41.703Z",
+    "genre": "Pop",
+    "realBpm": 189,
+    "volume": 0.84,
+    "author": "seanie627",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vitamincsmile",
+    "local": false
+  },
+  {
+    "id": "vitamin-c-the-itch",
+    "title": "The Itch",
+    "artist": "Vitamin C",
+    "video": "vwR37Kdn3LY",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 3180,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-11T00:10:41.706Z",
+    "genre": "Pop",
+    "realBpm": 103,
+    "volume": 0.89,
+    "author": "justjack",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vitaminctheitch",
     "local": false
   },
   {
