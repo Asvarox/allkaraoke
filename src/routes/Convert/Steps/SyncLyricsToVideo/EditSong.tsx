@@ -60,6 +60,30 @@ const applyTrackNames = (song: Song, trackNames: (string | undefined)[]): Song =
   })),
 });
 
+const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<number, Record<number, string>>>) => ({
+  ...song,
+  tracks: song.tracks.map((track, trackIndex) => {
+    const trackLyricChanges = lyricChanges[trackIndex] ?? {};
+
+    return {
+      ...track,
+      sections: track.sections.map((section, sectionIndex) => {
+        const sectionLyricChanges = trackLyricChanges[sectionIndex] ?? {};
+
+        if (!isNotesSection(section)) return section;
+
+        return {
+          ...section,
+          notes: section.notes.map((note, noteIndex) => ({
+            ...note,
+            lyrics: sectionLyricChanges[noteIndex] ?? note.lyrics,
+          })),
+        };
+      }),
+    };
+  }),
+});
+
 const playerWidth = 800;
 const playerHeight = (playerWidth / 16) * 9;
 
@@ -74,6 +98,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
   const [effectsEnabled, setEffectsEnabled] = useState<boolean>(false);
   const [trackNames, setTrackNames] = useState(song.tracks.map((track) => track.name ?? undefined));
+  const [lyricChanges, setLyricChanges] = useState<Record<number, Record<number, Record<number, string>>>>({});
 
   const newSong = useMemo(() => {
     let processed = cloneDeep(song);
@@ -86,11 +111,12 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     processed = setBpm(processed, overrideBpm);
     processed = applyChanges(processed, changeRecords);
     processed = applyTrackNames(processed, trackNames);
+    processed = applyLyricChanges(processed, lyricChanges);
     processed = normaliseSectionPaddings(processed);
     processed = normaliseLyricSpaces(processed);
 
     return processed;
-  }, [gapShift, videoGapShift, song, overrideBpm, changeRecords, trackNames]);
+  }, [gapShift, videoGapShift, song, overrideBpm, changeRecords, trackNames, lyricChanges]);
 
   useEffect(() => {
     onUpdate?.(newSong);
@@ -221,6 +247,18 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                   return newNames;
                 })
               }
+              onLyricChange={(change) =>
+                setLyricChanges((current) => ({
+                  ...current,
+                  [change.track]: {
+                    ...current[change.track],
+                    [change.section]: {
+                      ...current[change.track]?.[change.section],
+                      [change.noteIndex]: change.newLyric,
+                    },
+                  },
+                }))
+              }
             />
           </Grid>
           <Grid item xs={4}>
@@ -231,7 +269,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <HelpText>Select a verse by clicking on it.</HelpText>
             <HelpText>
               You can either <strong>Change its start beat</strong> (which will "move in time" the verse and all
-              subsequent ones) or <strong>Delete it</strong> (it won't affect the timing of other verses).
+              subsequent ones) or <strong>Delete it</strong> (it won't affect the timing of other verses). You can also
+              edit the lyrics of each note.
             </HelpText>
             <HelpText>
               <strong>List of changes</strong> on the right allows you to see and undo the actions one by one.

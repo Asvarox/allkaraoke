@@ -27,6 +27,7 @@ interface Props {
   beatLength: number;
   player: PlayerRef;
   onRecordChange: (changeRecords: ChangeRecord[]) => void;
+  onLyricChange: (changeRecords: LyricChangeRecord) => void;
   onTrackNameChange: (track: number, newName: string) => void;
 }
 
@@ -36,16 +37,17 @@ interface ChangeRecordBase {
 }
 
 interface ChangeRecordShift extends ChangeRecordBase {
-  track: number;
-  section: number;
   type: 'shift';
   shift: number;
 }
 
 interface ChangeRecordDelete extends ChangeRecordBase {
-  track: number;
-  section: number;
   type: 'delete';
+}
+
+export interface LyricChangeRecord extends ChangeRecordBase {
+  noteIndex: number;
+  newLyric: string;
 }
 
 export type ChangeRecord = ChangeRecordDelete | ChangeRecordShift;
@@ -56,6 +58,7 @@ export default function EditSection({
   beatLength,
   player,
   onRecordChange,
+  onLyricChange,
   onTrackNameChange,
 }: Props) {
   const [track, setTrack] = useState(0);
@@ -107,7 +110,7 @@ export default function EditSection({
   return (
     <SectionEdtiorContainer>
       <Stack direction="row">
-        <Typography variant={'h6'} mb={0} sx={{ flex: 1 }}>
+        <Typography variant={'h6'} mb={0} sx={{ flex: 1, display: 'flex', alignItems: 'center' }}>
           Edit verses
           {song.tracks.length > 1 && (
             <ButtonGroup variant={'contained'} sx={{ ml: 2 }} size={'small'}>
@@ -124,6 +127,7 @@ export default function EditSection({
           )}
         </Typography>
         <TextField
+          label={'Track name'}
           placeholder="Set track name"
           sx={{ flex: 1 }}
           size="small"
@@ -132,10 +136,19 @@ export default function EditSection({
           data-test="track-name"
         />
       </Stack>
-      <Stack direction="row" spacing={2} sx={{ height: '400px' }}>
+      <Stack direction="row" spacing={2} sx={{ height: '400px', mt: 3 }}>
         <List sx={{ overflowY: 'auto' }}>
           {sections.map((section, index) => (
-            <ListItem key={section.start} disablePadding data-test={`section-${index}`}>
+            <ListItem
+              key={section.start}
+              disablePadding
+              data-test={`section-${index}`}
+              sx={{
+                maxWidth: 250,
+                overflowX: 'hidden',
+                textWrap: 'ellipsis',
+                whiteSpace: 'nowrap',
+              }}>
               <ListItemButton onClick={() => onSectionClick(index)} selected={selectedSection === index}>
                 <ListItemText
                   primaryTypographyProps={{
@@ -181,6 +194,24 @@ export default function EditSection({
                   />
                 </>
               )}
+              <LyricEditorContainer>
+                {sections[selectedSection].notes.map((note, index) => (
+                  <LyricInput
+                    style={{ width: `${note.lyrics.length}ch` }}
+                    value={note.lyrics}
+                    key={index}
+                    data-test={`lyric-input-${index}`}
+                    onChange={(e) =>
+                      onLyricChange({
+                        section: selectedSection,
+                        track,
+                        noteIndex: index,
+                        newLyric: e.target.value,
+                      })
+                    }
+                  />
+                ))}
+              </LyricEditorContainer>
               <Button variant="contained" color={'error'} onClick={deleteSection} fullWidth data-test="delete-section">
                 Delete section
               </Button>
@@ -241,26 +272,25 @@ const SectionChangeShift = styled(ChangeEntry)`
   color: #0059ff;
 `;
 
-const Editor = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
 const SectionEdtiorContainer = styled.div``;
 
 const SectionEditForm = styled.div`
   flex: 1;
 `;
 
-const SectionList = styled.div`
-  flex: 1;
-  overflow-y: auto;
+const LyricEditorContainer = styled.div`
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 `;
-const SectionListEntry = styled.div<{ active: boolean; selected: boolean }>`
-  font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
 
-  border: 0.1rem solid;
-  border-color: ${(props) => (props.selected ? 'black' : 'white')};
-
-  padding: 1rem;
+const LyricInput = styled.input`
+  font-family: monospace;
+  background: #f6f6f6;
+  border-radius: 0.25rem;
+  width: 3rem;
+  padding: 0.25rem 0.15rem;
+  border: 0.25rem solid #ededed;
 `;
