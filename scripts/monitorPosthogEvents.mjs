@@ -10,7 +10,7 @@ import { requestPostHog } from './utils.cjs';
       query: {
         kind: 'HogQLQuery',
         query: `
-            select event, count() \`count\`
+            select event, count() as \`count\`
             from events
             where events.created_at > now() - INTERVAL 60 MINUTE
               and event IN ('songStarted', 'songEnded', '$autocapture')

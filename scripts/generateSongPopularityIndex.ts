@@ -38,10 +38,10 @@ interface Response {
       query: {
         kind: 'HogQLQuery',
         query: `
-              select events.properties.songId \`songId\`,
-                     count() \`played\`,
-                     count(DISTINCT $session_id) \`sessions\`,
-                     count(DISTINCT properties.$user_id) \`users\`
+              select events.properties.songId as \`songId\`,
+                     count() as \`played\`,
+                     count(DISTINCT $session_id) as \`sessions\`,
+                     count(DISTINCT properties.$user_id) as \`users\`
               from events
               where event = 'songEnded'
                 and created_at >= (now() - INTERVAL 45 DAY)
