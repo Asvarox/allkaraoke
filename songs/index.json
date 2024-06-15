@@ -42131,6 +42131,33 @@
     "local": false
   },
   {
+    "id": "milosc-milosc",
+    "title": "Miłość",
+    "artist": "Miłość",
+    "video": "IEiRPInizgQ",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 390.62,
+    "gap": 30778.58722031642,
+    "year": "1992",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-06-15T00:10:22.682Z",
+    "genre": "Jazz, Free jazz",
+    "videoGap": 10,
+    "realBpm": 79,
+    "volume": 0.79,
+    "author": "UltraSinger [GitHub] 0.0.11-dev4",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "miloscmilosc",
+    "local": false
+  },
+  {
     "id": "miracle-of-sound-valhalla-calling",
     "title": "Valhalla Calling",
     "artist": "Miracle Of Sound",
@@ -55056,10 +55083,10 @@
       "English"
     ],
     "bpm": 234.08,
-    "gap": 22150.70950102529,
+    "gap": 22250.70950102529,
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:45.731Z",
+    "lastUpdate": "2024-06-15T00:10:23.411Z",
     "genre": "Pop",
     "realBpm": 117,
     "volume": 0.61,
@@ -63794,9 +63821,9 @@
       "English"
     ],
     "bpm": 220.07,
-    "gap": 16947.59803698823,
+    "gap": 16997.59803698823,
     "year": "2016",
-    "lastUpdate": "2024-05-15T17:29:18.089Z",
+    "lastUpdate": "2024-06-15T00:10:23.412Z",
     "genre": "Electronic",
     "realBpm": 110,
     "previewStart": 60,
