@@ -13,6 +13,7 @@ import convertSongToTxt from 'modules/Songs/utils/convertSongToTxt';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useQueryParam from 'modules/hooks/useQueryParam';
 import { buildUrl } from 'modules/hooks/useSmoothNavigate';
+import posthog from 'posthog-js';
 import { useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 import ShareSongsModal, { useShareSongs } from 'routes/Edit/ShareSongsModal';
@@ -175,6 +176,11 @@ export default function SongList(props: Props) {
 
                     if (proceed) {
                       await SongDao.deleteSong(row.original.id);
+
+                      if (shareSongs && data.some((song) => song.id === row.original.id && song.local)) {
+                        posthog.capture('unshare-song', { songId: row.original.id });
+                      }
+
                       reload();
                     }
                   }}

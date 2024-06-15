@@ -32,22 +32,28 @@ dotenv.config({ path: '.env.local' });
       query: {
         kind: 'HogQLQuery',
         query: `
-            select events.properties.song
+            select events.properties.song, events.properties.songId, events.created_at
             from events
             where events.created_at > toDateTime('${dateFrom.toISOString()}')
               and events.created_at < toDateTime('${dateTo.toISOString()}')
-              and events.properties.$user_id IN('${userId
+              and events.properties.$user_id IN(${userId
                 .split(',')
-                .map((s) => s.trim())
-                .join("','")}')
-              and event IN ('share-song')
+                .map((s) => `'${s.trim()}'`)
+                .join(',')})
+              and event IN ('share-song', 'unshare-song')
+            ORDER BY events.created_at ASC
         `,
       },
     }),
   });
 
-  response.results.forEach(([songTxt]: [string]) => {
+  response.results.forEach(([songTxt, songId]: [string, string]) => {
+    const addedSongIds: string[] = [];
     try {
+      if (!songTxt && songId && addedSongIds.includes(songId)) {
+        fs.rmSync(`./public/songs/${songId}.txt`);
+        console.log(`Deleting song ${songId}`);
+      }
       let song = convertTxtToSong(songTxt.replaceAll('\\n', '\n'));
       if (!song.id) {
         console.log('Song has no ID', song);
@@ -59,6 +65,7 @@ dotenv.config({ path: '.env.local' });
         song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
       }
       fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
+      addedSongIds.push(song.id);
       console.log(`Added/updated song ${song.id}`);
     } catch (e) {
       console.warn(`Couldn't convert song`, e, songTxt);

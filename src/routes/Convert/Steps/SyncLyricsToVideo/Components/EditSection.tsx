@@ -293,4 +293,5 @@ const LyricInput = styled.input`
   width: 3rem;
   padding: 0.25rem 0.15rem;
   border: 0.25rem solid #ededed;
+  text-decoration: underline;
 `;
