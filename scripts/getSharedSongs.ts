@@ -30,12 +30,15 @@ const makeRequest = async (url: string, options: RequestInit = {}) => {
   const newSongIds: string[] = [];
 
   await importSongsFromPostHogBase(
-    (url: string) => makeRequest(url),
+    (url, options) => makeRequest(url, options),
     currentSongs as SongPreview[],
     fetchedSongIds,
     async (song) => {
       newSongIds.push(song.id);
       fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
+    },
+    async (songId) => {
+      fs.rmSync(`./public/songs/${songId}.txt`);
     },
   );
 

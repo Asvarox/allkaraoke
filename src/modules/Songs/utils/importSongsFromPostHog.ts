@@ -21,9 +21,11 @@ const importSongsFromPostHog = async () => {
   from = new Date(from).toISOString();
 
   storage.local.setItem('posthog_from', new Date().toISOString());
-  const makeRequest = async (url: string) => {
+  const makeRequest = async (url: string, options: RequestInit) => {
     const response = await fetch(url, {
+      ...options,
       headers: {
+        ...options.headers,
         Authorization: `Bearer ${posthogKey}`,
       },
     });
@@ -41,6 +43,9 @@ const importSongsFromPostHog = async () => {
     [],
     async (song: Song) => {
       return SongsService.store(song);
+    },
+    async (songId: string) => {
+      return SongsService.deleteSong(songId);
     },
     from,
   );

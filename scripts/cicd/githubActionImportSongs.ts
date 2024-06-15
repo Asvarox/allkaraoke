@@ -48,9 +48,8 @@ dotenv.config({ path: '.env.local' });
   });
 
   response.results.forEach(([songTxt, songId]: [string, string]) => {
-    const addedSongIds: string[] = [];
     try {
-      if (!songTxt && songId && addedSongIds.includes(songId)) {
+      if (!songTxt && songId) {
         fs.rmSync(`./public/songs/${songId}.txt`);
         console.log(`Deleting song ${songId}`);
       }
@@ -65,7 +64,6 @@ dotenv.config({ path: '.env.local' });
         song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
       }
       fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
-      addedSongIds.push(song.id);
       console.log(`Added/updated song ${song.id}`);
     } catch (e) {
       console.warn(`Couldn't convert song`, e, songTxt);

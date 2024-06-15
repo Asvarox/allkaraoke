@@ -169,7 +169,7 @@ export default function SongList(props: Props) {
                     <VisibilityOff />
                   </IconButton>
                 )}
-                <IconButton
+                <SoftDisabledIconButton
                   title="Delete the song"
                   onClick={async () => {
                     const proceed = global.confirm(`Are you sure you want to delete this song?`);
@@ -177,7 +177,7 @@ export default function SongList(props: Props) {
                     if (proceed) {
                       await SongDao.deleteSong(row.original.id);
 
-                      if (shareSongs && data.some((song) => song.id === row.original.id && song.local)) {
+                      if (shareSongs && data.some((song) => song.id === row.original.id)) {
                         posthog.capture('unshare-song', { songId: row.original.id });
                       }
 
@@ -185,10 +185,10 @@ export default function SongList(props: Props) {
                     }
                   }}
                   data-test="delete-song"
-                  disabled={!row.original.local}
+                  appearDisabled={!row.original.local}
                   data-song={row.original.id}>
                   <Delete />
-                </IconButton>
+                </SoftDisabledIconButton>
               </>
             )}
             initialState={{
@@ -225,4 +225,8 @@ const Container = styled.div`
   width: 1260px;
   background: white;
   padding: 60px 20px 0 20px;
+`;
+
+const SoftDisabledIconButton = styled(IconButton)<{ appearDisabled: boolean }>`
+  opacity: ${({ appearDisabled }) => (appearDisabled ? 0.5 : 1)};
 `;
