@@ -39,6 +39,7 @@ export default function ConvertView({ song }: Props) {
   useBackgroundMusic(false);
   const initialStep = useQueryParam('step') as ValuesType<typeof steps> | null;
   const [currentStep, setCurrentStep] = useState(Math.max(0, steps.indexOf(initialStep!)));
+  const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
     if (steps[currentStep]) {
@@ -223,8 +224,10 @@ export default function ConvertView({ song }: Props) {
             e.preventDefault();
             if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
             else if (steps.at(currentStep) === 'metadata') {
+              setIsSaving(true);
               await SongDao.store(finalSong!);
-              shareSong(finalSong!.id);
+              await shareSong(finalSong!.id);
+              setIsSaving(false);
               navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
             }
           }}>
@@ -285,8 +288,13 @@ export default function ConvertView({ song }: Props) {
               Previous
             </Button>
             {steps.at(currentStep) === 'metadata' ? (
-              <Button data-test="save-button" sx={{ mt: 2, align: 'right' }} type="submit" variant={'contained'}>
-                Save
+              <Button
+                data-test="save-button"
+                sx={{ mt: 2, align: 'right' }}
+                type="submit"
+                variant={'contained'}
+                disabled={isSaving}>
+                {isSaving ? 'Saving...' : 'Save'}
               </Button>
             ) : (
               <Button
