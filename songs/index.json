@@ -4458,10 +4458,10 @@
       "English"
     ],
     "bpm": 389.26,
-    "gap": 343.09895699532444,
+    "gap": 543.0989569953244,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:35.547Z",
+    "lastUpdate": "2024-06-17T00:10:49.803Z",
     "realBpm": 145,
     "volume": 0.74,
     "author": "vicktoben",
@@ -5959,10 +5959,10 @@
       "English"
     ],
     "bpm": 252,
-    "gap": 12248.095238095239,
+    "gap": 12348.095238095239,
     "year": "2014",
     "artistOrigin": "SE",
-    "lastUpdate": "2024-04-04T19:51:48.961Z",
+    "lastUpdate": "2024-06-17T00:10:49.807Z",
     "realBpm": 126,
     "volume": 0.67,
     "author": "snake84",
@@ -8076,17 +8076,17 @@
       "English"
     ],
     "bpm": 331.69,
-    "gap": 253.88525430371732,
+    "gap": 77.77050860743464,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-14T12:53:14.536Z",
+    "lastUpdate": "2024-06-17T00:10:49.810Z",
     "realBpm": 164,
     "volume": 0.84,
     "author": "AngelosTag",
     "tracks": [
       {
         "name": "Boyfriend",
-        "start": 5
+        "start": 10
       }
     ],
     "tracksCount": 1,
@@ -33490,6 +33490,31 @@
     "local": false
   },
   {
+    "id": "krzysztof-zalewski-mtv-unplugged",
+    "title": "MTV Unplugged",
+    "artist": "Krzysztof Zalewski",
+    "video": "pKqVj-ermPY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 383.52,
+    "gap": 19735.103879849812,
+    "year": "2021",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-06-17T00:10:49.812Z",
+    "realBpm": 123,
+    "volume": 0.75,
+    "author": "UltraSinger [GitHub] 0.0.11-dev4",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "krzysztofzalewskimtvunplugged",
+    "local": false
+  },
+  {
     "id": "kt-tunstall-black-horse-the-cherry-tree",
     "title": "Black Horse & The Cherry Tree",
     "artist": "KT Tunstall",
@@ -42128,33 +42153,6 @@
     ],
     "tracksCount": 1,
     "search": "mileycyruswreckingball",
-    "local": false
-  },
-  {
-    "id": "milosc-milosc",
-    "title": "Miłość",
-    "artist": "Miłość",
-    "video": "IEiRPInizgQ",
-    "language": [
-      "Polish"
-    ],
-    "bpm": 390.62,
-    "gap": 30778.58722031642,
-    "year": "1992",
-    "artistOrigin": "PL",
-    "lastUpdate": "2024-06-15T00:10:22.682Z",
-    "genre": "Jazz, Free jazz",
-    "videoGap": 10,
-    "realBpm": 79,
-    "volume": 0.79,
-    "author": "UltraSinger [GitHub] 0.0.11-dev4",
-    "tracks": [
-      {
-        "start": 26
-      }
-    ],
-    "tracksCount": 1,
-    "search": "miloscmilosc",
     "local": false
   },
   {
