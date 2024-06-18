@@ -28,6 +28,7 @@ interface Props {
   player: PlayerRef;
   onRecordChange: (changeRecords: ChangeRecord[]) => void;
   onLyricChange: (changeRecords: LyricChangeRecord) => void;
+  lyricChanges: Record<number, Record<number, Record<number, string>>>;
   onTrackNameChange: (track: number, newName: string) => void;
 }
 
@@ -60,6 +61,7 @@ export default function EditSection({
   onRecordChange,
   onLyricChange,
   onTrackNameChange,
+  lyricChanges,
 }: Props) {
   const [track, setTrack] = useState(0);
   const [selectedSection, setSelectedSection] = useState(-1);
@@ -154,7 +156,11 @@ export default function EditSection({
                   primaryTypographyProps={{
                     fontWeight: index === currentSectionIndex ? 'bold' : 'normal',
                   }}
-                  primary={isNotesSection(section) ? section.notes.map((note) => note.lyrics).join('') : '[pause]'}
+                  primary={
+                    isNotesSection(section)
+                      ? section.notes.map((note) => note.lyrics.replaceAll(' ', '·')).join('')
+                      : '[pause]'
+                  }
                 />
               </ListItemButton>
             </ListItem>
@@ -195,22 +201,49 @@ export default function EditSection({
                 </>
               )}
               <LyricEditorContainer>
-                {sections[selectedSection].notes.map((note, index) => (
-                  <LyricInput
-                    style={{ width: `${note.lyrics.length}ch` }}
-                    value={note.lyrics}
-                    key={index}
-                    data-test={`lyric-input-${index}`}
-                    onChange={(e) =>
-                      onLyricChange({
-                        section: selectedSection,
-                        track,
-                        noteIndex: index,
-                        newLyric: e.target.value,
-                      })
-                    }
-                  />
-                ))}
+                {sections[selectedSection].notes.map((note, index) => {
+                  const lyric = lyricChanges[track]?.[selectedSection]?.[index] ?? note.lyrics;
+                  return (
+                    <LyricInput
+                      style={{ width: `${lyric.length}ch` }}
+                      value={lyric}
+                      key={index}
+                      data-test={`lyric-input-${index}`}
+                      onChange={(e) => {
+                        onLyricChange({
+                          section: selectedSection,
+                          track,
+                          noteIndex: index,
+                          newLyric: e.target.value,
+                        });
+                      }}
+                      onKeyDown={(e) => {
+                        // @ts-expect-error
+                        const currentPos = e.target.selectionStart;
+
+                        if (e.key === 'ArrowLeft' && currentPos === 0) {
+                          // @ts-expect-error
+                          const prevInput = e.target?.previousElementSibling as HTMLInputElement;
+                          if (prevInput) {
+                            prevInput.focus();
+                            setTimeout(
+                              () => prevInput.setSelectionRange(prevInput.value.length, prevInput.value.length),
+                              10,
+                            );
+                          }
+                          // @ts-expect-error
+                        } else if (e.key === 'ArrowRight' && currentPos === e.target.value.length) {
+                          // @ts-expect-error
+                          const nextInput = e.target?.nextElementSibling as HTMLInputElement;
+                          if (nextInput) {
+                            nextInput.focus();
+                            setTimeout(() => nextInput.setSelectionRange(0, 0), 10);
+                          }
+                        }
+                      }}
+                    />
+                  );
+                })}
               </LyricEditorContainer>
               <Button variant="contained" color={'error'} onClick={deleteSection} fullWidth data-test="delete-section">
                 Delete section
@@ -281,6 +314,7 @@ const SectionEditForm = styled.div`
 const LyricEditorContainer = styled.div`
   display: flex;
   gap: 0.25rem;
+  column-gap: 0;
   margin-bottom: 1rem;
   align-items: center;
   flex-wrap: wrap;
@@ -289,9 +323,14 @@ const LyricEditorContainer = styled.div`
 const LyricInput = styled.input`
   font-family: monospace;
   background: #f6f6f6;
-  border-radius: 0.25rem;
   width: 3rem;
-  padding: 0.25rem 0.15rem;
-  border: 0.25rem solid #ededed;
+  padding: 0.5rem 0.1rem;
+  border: 0;
+  border-right: 1px solid #e3e3e3;
   text-decoration: underline;
+
+  &:focus {
+    background: #b6b3b3;
+    outline: none !important;
+  }
 `;

@@ -4,11 +4,14 @@ import isNotesSection from 'modules/Songs/utils/isNotesSection';
 const normaliseSpaces = (notes: Note[]): Note[] => {
   notes.forEach((note, index) => {
     if (note.lyrics.startsWith(' ')) {
-      note.lyrics = note.lyrics.trim();
+      note.lyrics = note.lyrics.trimStart();
 
       if (index > 0) {
-        notes[index - 1].lyrics = notes[index - 1].lyrics + ' ';
+        notes[index - 1].lyrics = notes[index - 1].lyrics.trimEnd() + ' ';
       }
+    }
+    if (index === notes.length - 1) {
+      note.lyrics = note.lyrics.trimEnd();
     }
   });
 

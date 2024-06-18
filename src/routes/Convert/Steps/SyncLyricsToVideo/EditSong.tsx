@@ -247,6 +247,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                   return newNames;
                 })
               }
+              lyricChanges={lyricChanges}
               onLyricChange={(change) =>
                 setLyricChanges((current) => ({
                   ...current,

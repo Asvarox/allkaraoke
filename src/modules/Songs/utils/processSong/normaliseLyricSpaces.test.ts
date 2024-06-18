@@ -10,8 +10,8 @@ describe('normaliseLyricSpaces', () => {
           start: 0,
           notes: [
             generateNote(0, 1, { lyrics: ' a' }),
-            generateNote(0, 1, { lyrics: ' b' }),
-            generateNote(0, 1, { lyrics: ' c' }),
+            generateNote(0, 1, { lyrics: ' b ' }),
+            generateNote(0, 1, { lyrics: '  c ' }),
           ],
         },
       ],
