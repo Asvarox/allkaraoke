@@ -1,0 +1,313 @@
+#ARTIST:Serj Tankian
+#TITLE:Money
+#CREATOR:Antichrist3k
+#BPM:400
+#YEAR:2007
+#VIDEO:v=51jYvbcrHKs
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:31147,5
+#ALLKARAOKE_ID:serj-tankian-money
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:47.153Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=68580
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=14187
+#ALLKARAOKE_VOLUME:1
+#P1:Money
+#MP3:Serj Tankian - Money.mp3
+: 27 19 2 Money, 
+- 46
+: 47 9 4 All 
+: 57 7 2 for 
+: 65 17 2 money, 
+- 82
+: 83 9 2 Save 
+: 93 7 2 your 
+: 101 18 2 money, 
+- 119
+: 121 7 2 Hide 
+: 129 6 2 your 
+: 136 18 2 money, 
+- 154
+: 155 8 2 Stuff 
+: 164 6 2 your 
+: 171 20 2 money, 
+- 191
+: 195 4 2 Hump 
+: 200 6 2 your 
+: 207 20 2 money 
+- 227
+: 229 6 2 Keep 
+: 236 4 2 your 
+: 241 21 2 money 
+- 262
+: 263 6 2 All 
+: 270 7 2 for 
+: 278 73 2 money, 
+- 351 589
+- 589
+: 616 16 2 Waning 
+: 633 47 2 patience 
+- 680
+: 687 16 2 People’s 
+: 704 43 2 appetite 
+- 747
+: 758 62 2 Disposition 
+- 820
+: 826 12 2 This 
+: 839 49 2 possession 
+- 888
+: 901 31 2 Dispossessed 
+: 933 17 4 from 
+: 951 14 6 all 
+: 966 13 3 the 
+: 980 44 2 attractions, 
+- 1024
+: 1043 16 2 Dancing 
+: 1060 18 1 bears 
+: 1079 21 4 of 
+: 1116 54 2 eroticism, 
+- 1170
+: 1180 13 2 Self 
+: 1194 23 2 absorbed
+: 1218 10 3 ~
+: 1229 22 2 ~ 
+: 1255 57 2 delusion 
+- 1312
+: 1328 55 2 Inclusion 
+: 1399 7 2 of 
+: 1407 49 2 dysfunction 
+- 1456
+: 1472 15 2 I 
+: 1488 18 5 now 
+: 1511 24 2 await 
+: 1536 11 4 the 
+: 1548 52 5 triumphant 
+- 1600
+: 1611 16 2 Lost 
+: 1628 43 2 baggage, 
+: 1682 13 2 train 
+: 1696 23 5 station,
+: 1720 12 4 ~
+: 1733 19 3 ~ 
+- 1752
+: 1769 15 2 The 
+: 1785 20 5 causes 
+: 1806 30 2 of 
+: 1844 60 5 ineptitude 
+- 1904
+: 1912 25 5 Can 
+: 1938 4 3 be 
+: 1943 27 1 traced 
+: 1971 3 3 to 
+: 1975 9 1 my 
+: 1985 32 2 mandatory 
+: 2020 11 1 down,
+: 2032 13 0 ~ 
+- 2045
+: 2057 9 2 The 
+: 2067 24 1 causes 
+: 2092 26 2 of 
+: 2119 17 2 my 
+: 2137 24 5 servitude
+: 2162 12 4 ~
+: 2175 14 3 ~ 
+- 2189
+: 2199 24 4 Can 
+: 2224 4 3 be 
+: 2229 23 2 traced 
+: 2253 5 1 to 
+: 2259 9 0 the 
+: 2269 27 2 tyranny 
+: 2297 5 0 of 
+- 2302
+: 2303 23 2 Money, 
+- 2326
+: 2327 5 2 All 
+: 2333 6 2 for 
+: 2340 18 4 money, 
+- 2358
+: 2359 9 2 Make 
+: 2369 6 2 your 
+: 2376 18 2 money, 
+- 2394
+: 2395 7 2 Hide 
+: 2403 7 2 your 
+: 2411 19 2 money, 
+- 2430
+: 2431 7 2 Stuff 
+: 2439 7 2 your 
+: 2447 18 2 money, 
+- 2465
+: 2466 7 2 Hump 
+: 2474 7 2 your 
+: 2482 18 2 money 
+- 2500
+: 2501 8 2 Save 
+: 2510 7 2 your 
+: 2518 20 2 money 
+- 2538
+: 2539 5 2 All 
+: 2545 8 2 for 
+: 2554 74 2 money, 
+- 2628 2722
+- 2722
+: 2749 13 2 My 
+: 2763 22 3 final
+: 2786 25 2 ~ 
+: 2815 29 0 surrender
+: 2845 14 1 ~
+: 2860 16 0 ~ 
+- 2876
+: 2892 33 2 Away 
+: 2926 21 2 from 
+: 2951 36 2 inclusion
+: 2988 19 3 ~
+: 3008 8 2 ~
+: 3017 10 1 ~ 
+- 3027
+: 3041 9 2 I 
+: 3051 19 2 now 
+: 3074 12 2 await
+: 3087 14 3 ~ 
+: 3102 8 2 the 
+: 3111 24 2 triumphant
+: 3136 13 3 ~
+: 3150 13 2 ~ 
+- 3163
+: 3175 17 2 Left 
+: 3193 22 3 baggage,
+: 3216 22 2 ~ 
+: 3247 12 2 train 
+: 3260 26 2 station,
+: 3287 14 3 ~
+: 3302 13 2 ~ 
+- 3315
+: 3335 13 2 The 
+: 3349 23 2 causes 
+: 3373 30 2 of 
+: 3407 64 2 ineptitude 
+- 3471
+: 3475 27 2 Can 
+: 3503 5 2 be 
+: 3509 27 2 traced 
+: 3537 3 2 to 
+: 3541 6 2 my 
+: 3548 34 2 mandatory 
+: 3583 32 2 down, 
+- 3615
+: 3619 11 2 The 
+: 3631 24 2 causes 
+: 3656 30 2 of 
+: 3687 13 2 my 
+: 3701 54 2 servitude 
+- 3755
+: 3759 26 2 Can 
+: 3786 4 2 be 
+: 3791 26 2 traced 
+: 3818 4 2 to 
+: 3823 7 2 the 
+: 3831 13 4 tyranny
+: 3845 12 3 ~ 
+: 3858 5 2 of 
+: 3864 5 2 a 
+: 3870 13 2 down
+: 3884 15 1 ~ 
+- 3899
+: 3903 11 2 The 
+: 3915 25 2 causes 
+: 3941 25 2 of 
+: 3971 34 4 ineptitude
+: 4006 8 3 ~
+: 4015 8 2 ~
+: 4024 8 1 ~
+: 4033 10 0 ~ 
+- 4043
+: 4047 20 2 Can 
+: 4071 5 2 be 
+: 4077 27 2 traced 
+: 4105 2 2 to 
+: 4108 7 2 my 
+: 4116 38 3 mandatory 
+: 4155 29 2 down, 
+- 4184
+: 4187 14 2 The 
+: 4202 22 2 causes 
+: 4225 29 2 of 
+: 4255 14 2 my 
+: 4270 12 3 servitude
+: 4283 13 4 ~
+: 4297 13 3 ~
+: 4311 6 2 ~
+: 4318 8 1 ~ 
+- 4326
+: 4330 28 2 Can 
+: 4359 4 2 be 
+: 4364 25 2 traced 
+: 4390 3 2 to 
+: 4394 8 2 the 
+: 4403 25 2 tyranny 
+: 4429 5 2 of 
+- 4434
+: 4435 24 2 Money, 
+- 4459
+: 4468 4 2 All 
+: 4473 1 2 for 
+: 4475 19 2 money, 
+- 4494
+: 4497 4 2 Make 
+: 4502 4 2 your 
+: 4507 22 2 money, 
+- 4529
+: 4531 5 2 Hide 
+: 4537 5 2 your 
+: 4543 19 2 money, 
+- 4562
+: 4563 8 2 Stuff 
+: 4572 5 2 your 
+: 4578 20 2 money, 
+- 4598
+: 4599 8 2 Hump 
+: 4608 5 2 your 
+: 4614 20 2 money 
+- 4634
+: 4635 7 2 Save 
+: 4643 7 2 your 
+: 4651 19 2 money 
+- 4670
+: 4671 7 2 Make 
+: 4679 6 2 your 
+: 4686 16 2 money, 
+- 4702
+: 4703 11 2 Hide 
+: 4715 6 2 your 
+: 4722 16 2 money, 
+- 4738
+: 4739 10 2 All 
+: 4750 7 2 for 
+: 4758 16 2 money, 
+- 4774
+: 4775 10 2 Make 
+: 4786 6 2 your 
+: 4793 17 2 money, 
+- 4810
+: 4811 9 2 Hide 
+: 4821 6 2 your 
+: 4828 18 2 money, 
+- 4846
+: 4847 9 2 Stuff 
+: 4857 7 2 your 
+: 4865 13 2 money, 
+- 4878
+: 4879 12 2 Hump 
+: 4892 7 2 your 
+: 4900 17 2 money, 
+- 4917
+: 4918 9 2 Save 
+: 4928 6 2 your 
+: 4935 17 2 money, 
+- 4952
+: 4953 9 2 All 
+: 4963 8 2 for 
+: 4972 71 2 money, 
+E

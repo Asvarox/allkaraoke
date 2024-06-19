@@ -1,0 +1,793 @@
+#ARTIST:Alligatoah
+#TITLE:Willst du
+#CREATOR:Webi
+#BPM:252
+#YEAR:2013
+#PREVIEWSTART:38
+#VIDEO:v=Ahwc-ouFeTQ
+#LANGUAGE:German
+#GAP:14008,095238095239
+#ALLKARAOKE_ID:alligatoah-willst-du
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.295Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_PREVIEWEND:74
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Alligatoah - Willst du.mp3
+#END:223000
+F 17 1 0 Wie 
+F 19 1 0 man 
+F 21 1 0 ei
+F 23 1 0 ne 
+F 25 1 0 Lie
+F 27 1 0 be 
+F 29 1 0 ma
+F 31 1 0 xi
+F 33 1 0 mal 
+F 35 1 0 ro
+F 37 1 0 man
+F 39 1 0 tisch 
+F 41 1 0 lebt 
+- 42
+F 43 1 0 Will 
+F 45 1 0 je
+F 47 1 0 der 
+F 49 1 0 wis
+F 51 1 0 sen 
+- 52
+F 53 1 0 Kei
+F 55 1 0 ner 
+F 57 2 0 hilft 
+F 61 1 0 uns 
+F 65 2 0 Fair 
+F 69 2 0 Play 
+- 71
+F 77 1 -1 Gott 
+F 79 1 -1 sei 
+F 81 2 1 dank 
+F 85 1 1 gibt 
+F 87 1 -1 es 
+F 90 2 3 Film 
+F 93 2 -1 und 
+F 97 3 3 Fern
+F 101 2 -1 seh’n 
+- 103
+F 109 2 0 Da, 
+F 113 1 0 wo 
+F 115 1 0 ich 
+F 117 1 0 mei
+F 119 1 0 ne 
+F 121 2 0 Bil
+F 125 2 0 dung 
+F 129 2 0 her 
+F 133 2 0 nehm 
+- 135
+F 141 2 0 Glaub 
+F 145 1 0 mir, 
+F 147 2 0 das 
+F 151 1 0 wird 
+F 153 2 0 su
+F 157 1 0 per 
+- 158
+F 159 1 0 Für 
+F 161 1 0 dei
+F 163 1 0 ne 
+F 165 1 0 Sto
+F 167 1 0 ry 
+F 169 1 0 hab’n 
+F 171 1 0 wir 
+F 173 1 0 schon 
+F 175 1 0 den 
+F 177 2 0 Grund 
+- 179
+F 181 1 0 We
+F 183 1 0 shalb 
+F 185 1 0 du 
+F 187 1 0 in 
+F 189 1 0 dei
+F 191 1 0 ner 
+F 193 1 0 Ju
+F 195 1 0 gend
+F 197 1 0 pha
+F 199 1 0 se 
+F 201 1 0 wut
+F 203 1 0 ge
+F 205 1 0 la
+F 207 1 0 den 
+F 209 2 0 bist 
+- 211
+F 213 2 0 Dein 
+F 217 1 0 Pa
+F 219 1 0 pa 
+F 221 2 0 kam 
+F 225 1 0 nicht 
+F 227 1 0 zu 
+F 229 1 0 dei
+F 231 1 0 nem 
+F 233 1 0 Schul
+F 235 1 0 the
+F 237 1 0 a
+F 239 1 0 ter
+F 241 1 0 stück 
+- 242
+F 245 1 0 Bei 
+F 247 1 0 mir 
+F 249 1 0 fin
+F 251 1 0 den 
+F 253 1 0 wir 
+F 255 1 0 schon 
+F 257 1 0 was 
+- 258
+F 261 1 0 Wo 
+F 263 1 0 der 
+F 265 1 0 Schuh 
+F 267 1 0 ge
+F 269 1 0 ra
+F 271 1 0 de 
+F 273 2 0 drückt 
+- 275
+: 277 2 -4 Wir 
+: 281 2 -1 ken
+: 285 2 -4 nen 
+: 289 2 -1 uns 
+: 293 2 -4 seit 
+: 297 3 -1 X 
+: 305 3 -1 Jah
+: 310 2 -4 ren 
+- 312
+: 317 2 3 Du 
+: 321 2 6 brauchst 
+: 325 2 -1 jetzt 
+: 329 3 1 nix 
+: 337 3 1 sa
+: 342 2 -2 gen 
+- 344
+F 349 2 0 Ich 
+F 353 2 0 wollt 
+F 357 2 0 dich 
+F 361 3 0 fra
+F 366 2 0 gen: 
+- 368
+F 371 1 0 Wol
+F 373 2 0 len 
+F 377 1 0 wir 
+F 379 1 0 den 
+F 384 2 0 nächs
+F 389 2 0 ten 
+F 393 3 0 Schritt 
+F 401 3 0 wa
+F 405 2 0 gen? 
+- 407
+: 409 16 -1 Willst 
+: 429 2 -1 du 
+: 433 2 -1 mit 
+: 437 2 -1 mir 
+* 441 6 -1 Dro
+* 449 4 1 gen 
+: 457 5 -2 neh
+: 465 3 -2 me
+: 469 12 -1 ~n 
+- 481
+: 485 2 -1 Dann 
+: 489 2 -1 wird 
+: 493 2 -2 es 
+: 497 2 -1 ro
+: 501 2 -2 te 
+: 505 6 -1 Ro
+: 513 5 1 sen 
+: 521 5 -2 reg
+: 529 3 -2 nen
+: 533 12 -1 ~ 
+- 545
+: 549 2 -1 Ich 
+: 553 2 -1 hab’s 
+: 557 2 -2 in 
+: 561 2 -1 ei
+: 565 2 -2 ner 
+: 569 5 -1 Soap 
+: 577 3 1 ge
+: 581 2 -2 ~
+: 585 6 -2 se
+: 593 5 -1 hen 
+- 598
+: 601 16 3 Willst 
+: 621 2 -1 du 
+: 625 2 -1 mit 
+: 629 2 -1 mir 
+: 633 3 -1 Dro
+: 637 2 -6 ~
+: 641 4 -6 gen 
+: 649 3 1 neh
+: 653 2 -1 ~
+: 657 3 -1 men? 
+- 660
+: 673 3 -1 Komm, 
+: 677 2 -2 wir 
+: 681 4 -1 geh’n 
+- 685
+: 689 3 -1 Komm, 
+: 693 2 -2 wir 
+: 697 4 1 geh’n 
+: 703 1 -1 zu
+: 705 2 1 samm’n 
+: 709 2 -1 den 
+: 713 5 3 Bach 
+: 721 2 1 run
+: 725 3 -1 ter 
+- 728
+: 737 3 -1 Komm, 
+: 741 2 -2 wir 
+: 745 3 -1 geh’n 
+- 748
+: 753 3 -1 Komm, 
+: 757 2 -2 wir 
+: 761 4 1 geh’n 
+: 767 1 -1 zu
+: 769 2 1 samm’n 
+: 773 2 -1 den 
+: 777 4 3 Bach 
+: 785 3 1 run
+: 789 3 -1 ter 
+- 792
+: 801 3 -1 Komm, 
+: 805 2 -2 wir 
+: 809 3 -1 geh’n 
+- 812
+: 817 3 -1 Komm, 
+: 821 2 -2 wir 
+: 825 4 1 geh’n 
+: 831 1 -1 zu
+: 833 2 1 samm’n 
+: 837 2 -1 den 
+: 841 4 3 Bach 
+: 849 3 1 run
+: 853 2 -1 ter 
+- 855
+: 865 3 6 Denn 
+: 869 2 6 ein 
+: 873 4 3 Wrack 
+: 881 2 1 ist 
+: 885 2 -1 ein 
+: 889 2 1 Ort 
+- 891
+: 893 2 1 An 
+: 897 2 1 dem 
+: 901 2 3 ein 
+: 905 4 4 Schatz 
+: 913 3 4 schlum
+: 919 5 -1 mert 
+- 924 1020
+- 1020
+F 1037 2 0 Jetzt 
+F 1041 2 0 sind 
+F 1045 2 0 wir 
+F 1049 5 0 frei 
+- 1054
+F 1057 1 0 Chil
+F 1059 1 0 len 
+F 1061 1 0 auf 
+F 1063 1 0 gi
+F 1065 2 0 gan
+F 1069 1 0 ti
+F 1071 1 0 schen 
+F 1073 2 0 Berg
+F 1077 2 0 gip
+F 1080 2 0 feln 
+- 1082
+F 1083 1 0 Du 
+F 1085 1 0 musst 
+F 1087 1 0 dann 
+F 1089 1 0 sa
+F 1091 1 0 gen: 
+- 1092
+F 1093 1 0 Kei
+F 1095 1 0 ner 
+F 1097 1 0 kann 
+F 1099 1 0 un
+F 1101 1 0 sern 
+F 1105 2 0 Schmerz 
+F 1111 1 0 dig
+F 1113 1 0 gen 
+- 1114
+F 1115 1 0 Wir 
+F 1117 1 0 sam
+F 1119 1 0 meln 
+F 1121 2 0 erst
+F 1125 2 0 mal 
+F 1129 2 0 fröh
+F 1133 1 0 li
+F 1135 1 0 che 
+F 1137 3 0 Kiff-
+F 1141 3 0 Sonn
+F 1145 2 0 ta
+F 1149 1 0 ge 
+- 1150
+F 1151 1 0 Für 
+F 1153 1 0 die 
+F 1155 1 0 hi
+F 1157 1 0 tun
+F 1159 1 0 ter
+F 1162 2 0 mal
+F 1165 1 0 te 
+F 1169 2 0 Schnitt
+F 1173 1 0 mon
+F 1175 2 0 ta
+F 1179 1 0 ge 
+- 1180
+F 1181 2 0 Komm 
+F 1185 2 0 schon, 
+F 1189 1 0 das 
+F 1191 1 0 wird 
+F 1193 1 0 ro
+F 1195 3 0 man
+F 1199 2 0 tisch 
+- 1201
+F 1203 1 0 Wenn 
+F 1205 1 0 ich 
+F 1207 1 0 dich 
+F 1209 1 0 hal
+F 1211 1 0 te 
+- 1212
+F 1213 1 0 Da
+F 1215 1 0 mit 
+F 1217 1 0 du 
+F 1219 1 0 nicht 
+F 1221 1 0 auf 
+F 1223 1 0 den 
+F 1225 2 0 Klo
+F 1231 3 0 rand 
+F 1238 3 0 brichst 
+- 1241
+F 1245 1 0 Dann 
+F 1247 1 0 ver
+F 1249 1 0 die
+F 1251 1 0 nen 
+F 1253 1 0 wir 
+F 1255 1 0 ein 
+F 1257 2 0 Ker
+F 1261 1 0 zen 
+F 1263 1 0 Pa
+F 1265 2 0 ket 
+- 1267
+F 1269 1 0 Für 
+F 1271 1 0 die 
+F 1273 1 0 ers
+F 1277 1 0 te 
+F 1279 1 0 W
+F 1281 2 0 G 
+F 1285 1 0 auf 
+F 1287 1 0 ’nem 
+F 1289 1 0 Her
+F 1291 1 0 ren 
+F 1293 2 0 W
+F 1297 2 0 C 
+- 1299
+F 1301 1 0 Ei
+F 1303 1 0 ne 
+F 1305 4 0 herbs
+F 1313 2 0 tli
+F 1317 2 0 che 
+F 1325 3 0 Sze
+F 1331 2 0 ne 
+- 1333
+F 1337 3 0 Weil 
+F 1342 2 0 es 
+F 1349 3 0 passt 
+- 1352
+F 1361 2 0 Und 
+F 1365 2 0 ich 
+F 1369 1 0 fal
+F 1371 1 0 le 
+F 1373 1 0 auf 
+F 1375 1 0 die 
+F 1377 1 0 Knie 
+F 1379 1 0 und 
+F 1381 1 0 hol 
+F 1383 1 0 aus 
+F 1385 3 0 mei
+F 1389 1 0 ner 
+F 1391 2 0 Ja
+F 1394 1 0 cke 
+- 1395
+F 1397 1 0 Ei
+F 1399 1 0 ne 
+F 1401 3 0 klei
+F 1405 2 0 ne 
+F 1409 2 0 Schach
+F 1413 1 0 tel 
+- 1414
+F 1415 1 0 Du 
+F 1417 2 0 weißt, 
+F 1421 2 0 was 
+F 1425 2 0 ab
+F 1429 2 0 geht 
+- 1431
+: 1433 16 -1 Willst 
+: 1453 2 -1 du 
+: 1457 2 -1 mit 
+: 1461 2 -1 mir 
+: 1465 6 -1 Dro
+: 1473 4 1 gen 
+: 1481 5 -2 neh
+: 1489 3 -2 me
+: 1493 12 -1 ~n 
+- 1505
+: 1509 2 -1 Dann 
+: 1513 2 -1 wird 
+: 1517 2 -2 es 
+: 1521 2 -1 ro
+: 1525 2 -2 te 
+: 1529 6 -1 Ro
+: 1537 5 1 sen 
+: 1545 5 -2 reg
+: 1553 3 -2 nen
+: 1557 12 -1 ~ 
+- 1569
+: 1573 2 -1 Ich 
+: 1577 2 -1 hab’s 
+: 1581 2 -2 in 
+: 1585 2 -1 ei
+: 1589 2 -2 ner 
+: 1593 5 -1 Soap 
+: 1601 3 1 ge
+: 1605 2 -2 ~
+: 1609 6 -2 se
+: 1617 5 -1 hen 
+- 1622
+* 1625 16 3 Willst 
+: 1645 2 -1 du 
+: 1649 2 -1 mit 
+: 1653 2 -1 mir 
+: 1657 3 -1 Dro
+: 1661 2 -6 ~
+: 1665 4 -6 gen 
+: 1673 3 1 neh
+: 1677 2 -1 ~
+: 1681 3 -1 men? 
+- 1684
+: 1697 3 -1 Komm, 
+: 1701 2 -2 wir 
+: 1705 4 -1 geh’n 
+- 1709
+: 1713 3 -1 Komm, 
+: 1717 2 -2 wir 
+: 1721 4 1 geh’n 
+: 1727 1 -1 zu
+: 1729 2 1 samm’n 
+: 1733 2 -1 den 
+: 1737 5 3 Bach 
+: 1745 2 1 run
+: 1749 3 -1 ter 
+- 1752
+: 1761 3 -1 Komm, 
+: 1765 2 -2 wir 
+: 1769 3 -1 geh’n 
+- 1772
+: 1777 3 -1 Komm, 
+: 1781 2 -2 wir 
+: 1785 4 1 geh’n 
+: 1791 1 -1 zu
+: 1793 2 1 samm’n 
+: 1797 2 -1 den 
+* 1801 4 3 Bach 
+: 1809 3 1 run
+: 1813 3 -1 ter 
+- 1816
+: 1825 3 -1 Komm, 
+: 1829 2 -2 wir 
+: 1833 3 -1 geh’n 
+- 1836
+: 1841 3 -1 Komm, 
+: 1845 2 -2 wir 
+: 1849 4 1 geh’n 
+: 1855 1 -1 zu
+: 1857 2 1 samm’n 
+: 1861 2 -1 den 
+: 1865 4 3 Bach 
+: 1873 3 1 run
+: 1877 2 -1 ter 
+- 1879
+: 1889 3 6 Denn 
+: 1893 2 6 ein 
+* 1897 4 3 Wrack 
+: 1905 2 1 ist 
+: 1909 2 -1 ein 
+: 1913 2 1 Ort 
+- 1915
+: 1917 2 1 An 
+: 1921 2 1 dem 
+: 1925 2 3 ein 
+: 1929 5 4 Schatz 
+: 1941 4 4 schlum
+: 1947 8 -1 mert 
+- 1955 2170
+- 2170
+F 2187 3 0 Und 
+F 2191 1 0 dann 
+F 2193 2 0 brau
+F 2197 1 0 chen 
+F 2199 1 0 wir 
+F 2201 2 0 e
+F 2205 1 0 pi
+F 2207 1 0 sche 
+F 2209 2 0 Fights 
+- 2211
+F 2213 1 0 Wer 
+F 2215 1 0 das 
+F 2217 2 0 laus
+F 2221 1 0 i
+F 2223 1 0 ge 
+F 2225 3 0 H 
+F 2231 3 0 kriegt 
+- 2234
+F 2237 2 0 Zu
+F 2241 3 0 schau
+F 2245 2 0 er: 
+F 2249 2 0 rau
+F 2253 1 0 chen
+F 2255 1 0 de 
+F 2257 3 0 Ba
+F 2261 1 0 bys 
+- 2262
+F 2263 1 0 Sie 
+F 2265 1 0 wer
+F 2267 1 0 den 
+F 2269 1 0 nicht 
+F 2271 1 0 ver
+F 2273 1 0 wöhnt 
+- 2274
+F 2275 1 0 Die 
+F 2277 1 0 müs
+F 2279 1 0 sen 
+F 2281 1 0 Fer
+F 2283 1 0 tig
+F 2285 1 0 sup
+F 2287 1 0 pe 
+F 2289 1 0 löf
+F 2291 1 0 feln 
+- 2292
+F 2293 1 0 Und 
+F 2295 1 0 die 
+F 2297 1 0 spie
+F 2299 1 0 len 
+F 2301 1 0 mit 
+F 2303 1 0 vom 
+F 2305 1 0 Kör
+F 2307 1 0 per
+F 2309 1 0 bau 
+F 2311 1 0 ent
+F 2313 1 0 fern
+F 2315 1 0 ten 
+F 2317 1 0 Pup
+F 2319 1 0 pen
+F 2321 1 0 köp
+F 2323 1 0 fen 
+- 2324
+F 2325 1 0 Du 
+F 2327 1 0 willst 
+F 2329 2 0 raus 
+F 2333 1 0 per 
+F 2335 1 0 kli
+F 2337 1 0 schee
+F 2339 2 0 haf
+F 2343 1 0 ter 
+F 2345 2 0 Flucht 
+F 2349 1 0 in 
+F 2351 1 0 ein 
+F 2353 3 0 Land
+F 2357 1 0 haus 
+- 2358
+F 2359 1 0 Ich 
+F 2361 1 0 brüll 
+F 2363 1 0 dann 
+F 2365 1 0 so 
+F 2367 1 0 was 
+F 2369 2 0 wie: 
+- 2371
+F 2373 2 0 \"Gleich 
+F 2377 2 0 rutscht 
+F 2381 1 0 mir 
+F 2383 1 0 die 
+F 2385 2 0 Hand 
+F 2389 1 0 aus! 
+- 2390
+F 2391 1 0 Du 
+F 2393 2 0 wirst 
+F 2397 1 0 mit 
+F 2399 1 0 den 
+F 2401 2 0 Kin
+F 2405 2 0 dern 
+F 2409 2 0 nir
+F 2413 1 0 gend
+F 2415 1 0 wo
+F 2417 2 0 hin 
+F 2421 2 0 fahr’n!\" 
+- 2423
+F 2427 1 0 Ich 
+F 2429 1 0 werd 
+F 2431 1 0 euch 
+F 2433 1 0 mit 
+F 2435 1 0 ’ner 
+F 2437 1 0 Axt 
+F 2440 1 0 durch 
+F 2442 1 0 ein 
+F 2444 1 0 La
+F 2446 1 0 by
+F 2449 2 0 rinth 
+F 2453 2 0 ja
+F 2457 2 0 gen 
+- 2459
+F 2463 1 0 Im 
+F 2465 2 0 Win
+F 2469 2 0 ter, 
+F 2473 1 0 weil 
+F 2475 2 0 ich 
+F 2479 1 0 das 
+F 2481 3 0 Bild 
+F 2485 3 0 fei
+F 2489 1 0 er 
+- 2490
+F 2491 1 0 Mach 
+F 2493 1 0 un
+F 2495 1 0 ser 
+F 2497 1 0 Le
+F 2499 1 0 ben 
+F 2501 2 0 film
+F 2505 2 0 rei
+F 2509 1 0 fer 
+F 2511 1 0 als 
+F 2513 2 0 Til 
+F 2518 2 0 Schwei
+F 2522 1 0 ger 
+- 2523
+F 2525 1 0 Es 
+F 2527 1 0 hat 
+F 2529 2 0 Ac
+F 2533 2 0 tion, 
+F 2537 2 0 Dra
+F 2541 1 0 ma 
+F 2543 1 0 und 
+F 2545 2 0 Co
+F 2548 1 0 me
+F 2550 2 0 dy 
+- 2552
+F 2555 1 0 Al
+F 2557 1 0 so 
+F 2559 1 0 was 
+F 2561 3 0 sagst 
+F 2565 2 0 du, 
+F 2569 2 0 mon 
+F 2573 2 0 che
+F 2577 2 0 ri? 
+- 2579
+: 2585 16 -1 Willst 
+: 2605 2 -1 du 
+: 2609 2 -1 mit 
+: 2613 2 -1 mir 
+: 2617 6 -1 Dro
+: 2625 4 1 gen 
+: 2633 6 -2 neh
+: 2641 3 -2 me
+: 2645 9 -1 ~n 
+- 2654
+: 2661 2 -1 Dann 
+: 2665 2 -1 wird 
+: 2669 2 -2 es 
+: 2673 2 -1 ro
+: 2677 2 -2 te 
+: 2681 6 -1 Ro
+: 2689 5 1 sen 
+: 2697 6 -2 reg
+: 2705 3 -2 nen
+: 2709 8 -1 ~ 
+- 2717
+: 2721 2 -1 Um 
+: 2725 2 -2 dem 
+: 2729 3 -1 Ki
+: 2733 2 -2 no
+: 2737 2 -1 film 
+: 2741 2 -2 die 
+: 2745 5 -1 Show 
+: 2753 4 1 zu 
+: 2761 5 -2 steh
+: 2769 5 -1 len 
+- 2774
+: 2781 12 3 Willst 
+: 2797 2 -1 du 
+: 2801 2 -1 mit 
+: 2805 2 -1 mir 
+: 2809 3 -1 Dro
+: 2813 2 -6 ~
+: 2817 4 -6 gen 
+: 2825 3 1 neh
+: 2829 2 -1 ~
+: 2833 5 -1 men? 
+- 2838
+: 2849 3 -1 Komm, 
+: 2853 2 -2 wir 
+: 2857 4 -1 geh’n 
+- 2861
+: 2865 3 -1 Komm, 
+: 2869 2 -2 wir 
+: 2873 4 1 geh’n 
+: 2879 1 -1 zu
+: 2881 3 1 samm’n 
+: 2885 2 -1 den 
+* 2889 4 3 Bach 
+: 2897 3 1 run
+: 2901 3 -1 ter 
+- 2904
+: 2913 3 -1 Komm, 
+: 2917 2 -2 wir 
+: 2921 4 -1 geh’n 
+- 2925
+: 2929 3 -1 Komm, 
+: 2933 2 -2 wir 
+: 2937 4 1 geh’n 
+: 2943 1 -1 zu
+: 2945 2 1 samm’n 
+: 2949 2 -1 den 
+: 2953 4 3 Bach 
+: 2961 3 1 run
+: 2965 3 -1 ter 
+- 2968
+: 2977 3 -1 Komm, 
+: 2981 2 -2 wir 
+: 2985 3 -1 geh’n 
+- 2988
+: 2993 3 -1 Komm, 
+: 2997 2 -2 wir 
+: 3001 4 1 geh’n 
+: 3007 1 -1 zu
+: 3009 2 1 samm’n 
+: 3013 2 -1 den 
+: 3017 4 3 Bach 
+: 3025 3 1 run
+: 3029 2 -1 ter 
+- 3031
+: 3037 4 -1 Denn 
+: 3043 4 -6 ein 
+: 3050 4 -1 Wrack 
+: 3057 2 -1 ist 
+: 3061 2 -6 ein 
+: 3065 2 -1 Ort 
+- 3067
+: 3069 2 -1 An 
+: 3073 2 -1 dem 
+: 3077 2 -6 ein 
+* 3081 4 -1 Schatz 
+: 3089 4 -1 schlum
+: 3095 3 -1 mert. 
+- 3098
+: 3102 4 -1 Komm, 
+: 3109 3 -6 wir 
+: 3114 25 -1 geh’n~ 
+- 3139 3148
+- 3148
+: 3165 5 -1 Komm, 
+: 3173 3 -6 wir 
+: 3180 22 -1 geh’n~ 
+- 3202 3212
+- 3212
+: 3229 4 6 Komm, 
+: 3237 2 3 wir 
+* 3241 26 -1 geh’n~ 
+- 3267 3276
+- 3276
+: 3293 4 -1 Komm, 
+: 3299 3 -6 wir 
+: 3305 3 -1 geh’n 
+- 3308
+: 3311 3 -1 Komm, 
+: 3317 2 -6 wir 
+: 3321 3 -1 geh’n 
+: 3327 1 -1 zu
+: 3329 3 -1 samm’n 
+: 3333 2 1 den 
+: 3337 5 3 Bach 
+: 3345 3 3 run
+: 3349 8 -1 ter 
+- 3357 3467
+- 3467
+F 3484 5 0 Schnitt! 
+E

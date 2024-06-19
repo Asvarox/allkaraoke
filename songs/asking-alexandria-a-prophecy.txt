@@ -1,0 +1,318 @@
+#ARTIST:Asking Alexandria
+#TITLE:A Prophecy
+#CREATOR:Gollum
+#BPM:386,71
+#YEAR:2009
+#VIDEO:v=tQblSS2kl4Q
+#GENRE:Metalcore
+#LANGUAGE:English
+#GAP:21001,492332755814
+#ALLKARAOKE_ID:asking-alexandria-a-prophecy
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.694Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=21635
+#ALLKARAOKE_VOLUME:0,78
+#P1:A Prophecy
+#MP3:Asking Alexandria - A Prophecy.mp3
+F 26 5 3 How 
+F 34 5 3 stub
+F 43 4 3 born 
+F 51 6 3 are 
+F 61 6 3 the 
+F 74 10 3 scars 
+- 84
+F 90 5 3 When 
+F 97 5 3 they 
+F 105 5 3 won’t 
+F 113 6 3 fade 
+F 121 3 3 a
+F 126 14 3 way 
+- 140
+F 153 6 3 Or 
+F 161 5 3 just 
+F 169 5 3 a 
+F 177 5 3 gen
+F 185 5 3 tle 
+F 193 5 3 re
+F 200 6 3 mind
+F 208 5 3 er 
+- 213
+F 216 5 3 That 
+F 224 5 3 now 
+F 232 5 3 are 
+F 241 8 3 bet
+F 252 8 3 ter 
+F 264 30 3 days 
+- 294
+: 304 4 12 We’ll 
+: 316 7 9 be 
+: 327 2 7 home
+: 330 4 9 ~
+: 335 4 7 ~ 
+: 344 11 7 soon 
+: 359 4 5 so 
+: 366 4 9 dry 
+: 372 3 10 your 
+: 379 26 9 eyes
+: 407 11 7 ~ 
+- 418
+: 422 5 5 You’ll 
+: 432 5 9 be
+: 438 3 7 ~ 
+: 443 7 7 o
+: 455 1 6 kay
+: 457 35 7 ~
+: 493 23 5 ~ 
+- 516
+F 520 18 3 Oh, 
+F 542 9 3 my 
+F 555 21 3 God 
+- 576
+F 597 5 3 The 
+F 605 6 3 wa
+F 613 6 3 ter 
+F 629 7 3 is 
+F 645 9 3 ris
+F 661 16 3 ing 
+- 677
+F 692 6 3 It’s 
+F 708 8 3 ris
+F 724 51 3 ing 
+- 775
+F 784 8 10 You 
+F 796 4 10 just 
+F 803 11 3 have 
+F 820 4 10 to 
+F 827 4 3 be
+F 835 11 3 lieve 
+F 852 6 9 in 
+F 866 29 3 me 
+- 895
+F 915 5 7 Fail
+F 922 5 7 ing 
+F 931 13 3 that 
+F 947 4 8 I’ll 
+F 955 4 8 ride 
+F 963 2 8 this 
+F 970 6 3 storm 
+F 982 5 3 a
+F 992 33 3 lone 
+- 1025 1052
+- 1052
+F 1078 4 3 We 
+F 1084 5 3 can 
+F 1091 5 3 still 
+F 1099 5 3 make 
+F 1107 4 3 it 
+F 1114 4 3 out 
+- 1118
+F 1143 27 3 I 
+F 1174 8 3 can 
+F 1185 9 3 help 
+F 1203 12 3 you 
+F 1227 15 3 through 
+F 1248 11 3 this 
+- 1259 1294
+- 1294
+F 1320 8 3 But 
+F 1330 8 3 you 
+F 1341 8 3 have 
+F 1361 7 3 to 
+F 1371 7 3 take 
+F 1382 6 3 my 
+F 1390 41 3 hand 
+- 1431 1457
+- 1457
+F 1483 19 3 I 
+F 1504 6 3 can 
+F 1514 10 3 take 
+F 1533 14 3 you 
+F 1556 38 3 home 
+- 1594
+F 1609 7 3 Take 
+F 1619 8 3 my 
+F 1630 34 3 hand 
+- 1664
+F 1680 9 3 Take 
+F 1696 12 3 my 
+F 1712 49 3 hand 
+- 1761 1787
+- 1787
+: 1813 7 9 I 
+: 1825 5 9 should
+: 1831 4 7 ’ve 
+: 1843 22 9 known
+: 1867 5 7 ~ 
+- 1872
+: 1876 1 6 The 
+: 1881 11 9 tides 
+: 1896 6 10 were 
+* 1906 5 9 get
+* 1912 6 7 ting 
+: 1922 8 7 high
+: 1931 6 5 ~
+: 1939 53 5 er 
+- 1992
+: 2013 5 9 We
+: 2019 9 7 ~ 
+: 2032 11 7 can 
+: 2054 6 9 still
+: 2061 7 7 ~ 
+: 2072 6 7 sur
+: 2083 2 5 vive
+: 2086 43 7 ~
+: 2131 28 5 ~ 
+- 2159
+: 2163 9 9 They 
+: 2175 7 9 think 
+: 2191 8 7 we’re 
+: 2207 12 9 drown
+: 2220 5 7 ~
+: 2227 5 7 ing 
+- 2232
+: 2238 3 7 But
+: 2242 3 5 ~ 
+: 2248 6 5 our 
+: 2258 6 9 heads 
+: 2268 5 7 are 
+: 2278 4 7 still
+: 2283 5 5 ~ 
+: 2290 5 5 a
+: 2300 6 9 bove 
+: 2309 4 10 the 
+: 2315 52 9 waves 
+- 2367
+: 2371 6 5 A
+: 2383 13 9 bove 
+: 2402 7 12 the 
+: 2412 50 7 waves
+: 2465 4 5 ~ 
+- 2469
+: 2474 6 9 I 
+: 2484 5 9 should
+: 2490 4 7 ’ve 
+: 2501 24 9 known
+: 2527 5 7 ~ 
+- 2532
+: 2536 2 6 The 
+: 2543 9 9 tides 
+: 2557 5 10 were 
+: 2567 4 9 get
+: 2572 6 7 ting 
+: 2582 9 7 high
+: 2592 5 5 ~
+: 2599 54 5 er 
+- 2653 2769
+- 2769
+: 2795 9 9 We
+: 2805 6 7 ~ 
+: 2816 11 7 can 
+: 2838 7 9 still
+: 2846 5 7 ~ 
+: 2855 7 7 sur
+: 2869 1 5 vive
+: 2871 44 7 ~
+: 2917 40 5 ~ 
+- 2957 3005
+- 3005
+: 3031 6 5 A
+: 3043 14 9 bove 
+: 3063 7 12 the 
+: 3073 51 7 waves
+: 3126 4 5 ~ 
+- 3130
+: 3134 6 9 I 
+: 3145 4 9 should
+: 3150 5 7 ’ve 
+: 3161 24 9 known
+: 3186 6 7 ~ 
+- 3192
+: 3196 2 5 The 
+: 3202 9 9 tides 
+: 3218 5 10 were 
+: 3227 4 9 get
+: 3232 7 7 ting 
+: 3241 9 7 high
+: 3252 5 5 ~
+: 3259 53 5 er 
+- 3312 3438
+- 3438
+: 3464 6 9 I 
+: 3475 4 9 should
+: 3480 5 7 ’ve 
+: 3493 22 9 known
+: 3517 5 7 ~ 
+- 3522
+: 3526 1 6 The 
+: 3532 10 9 tides 
+: 3547 5 10 were 
+: 3557 4 9 get
+: 3562 6 7 ting 
+: 3571 10 7 high
+: 3582 5 5 ~
+: 3589 53 5 er 
+- 3642 3676
+- 3676
+: 3702 9 9 We
+: 3712 6 7 ~ 
+: 3723 9 7 can 
+: 3742 10 9 still
+: 3753 5 7 ~ 
+* 3764 15 7 sur
+* 3786 79 9 vive
+: 3868 37 7 ~
+: 3908 33 5 ~ 
+- 3941
+F 3949 12 3 You 
+F 3969 8 3 nev
+F 3980 7 3 er 
+F 3990 9 3 said 
+F 4009 11 3 good
+F 4032 15 3 bye, 
+F 4050 20 3 good
+F 4073 35 3 bye 
+- 4108
+F 4113 12 3 You 
+F 4135 8 3 nev
+F 4145 5 3 er 
+F 4155 10 3 said 
+F 4174 11 3 good
+F 4198 15 3 bye, 
+F 4216 18 3 good
+F 4239 34 3 bye 
+- 4273
+F 4278 10 3 You 
+F 4300 8 3 nev
+F 4310 7 3 er 
+F 4320 8 3 said 
+F 4340 9 3 good
+F 4361 26 3 bye 
+F 4392 7 3 and 
+F 4403 16 3 now 
+F 4421 22 3 you’re 
+- 4443 4459
+- 4459
+F 4485 12 3 On 
+F 4505 12 3 your 
+F 4527 164 3 own 
+- 4691 4830
+- 4830
+F 4856 12 3 You 
+F 4877 8 3 nev
+F 4888 4 3 er 
+F 4898 8 3 said 
+F 4918 9 3 good
+F 4939 38 3 bye 
+- 4977 4994
+- 4994
+F 5020 14 3 You 
+F 5042 8 3 nev
+F 5052 5 3 er 
+F 5062 9 3 said 
+F 5082 10 3 good
+F 5106 14 3 bye, 
+F 5123 19 3 good
+F 5146 39 3 bye 
+E

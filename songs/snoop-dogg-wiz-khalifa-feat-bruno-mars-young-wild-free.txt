@@ -1,0 +1,669 @@
+#ARTIST:Snoop Dogg & Wiz Khalifa feat. Bruno Mars
+#TITLE:Young, Wild & Free
+#CREATOR:Holy_Shit
+#BPM:212,26
+#YEAR:2011
+#VIDEO:v=Wa5B22KAkEk
+#GENRE:Hip-Hop, Rap
+#LANGUAGE:English
+#GAP:48050,647319325355
+#ALLKARAOKE_ID:snoop-dogg-wiz-khalifa-feat-bruno-mars-young-wild-free
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:47.854Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_VOLUME:0,75
+#P1:Young, Wild & Free
+#MP3:Snoop Dogg & Wiz Khalifa feat. Bruno Mars - Young, Wild & Free.mp3
+: 14 2 6 So 
+: 17 2 4 what 
+: 20 2 2 we 
+: 23 2 -1 get 
+: 28 16 2 drunk 
+- 44
+: 51 2 6 So 
+: 54 2 4 what 
+: 57 2 2 we 
+: 60 2 -1 smoke 
+: 64 15 2 weed 
+- 79
+: 87 2 6 We’re 
+: 90 2 4 just 
+: 93 2 2 ha
+: 96 2 -1 ving 
+: 100 15 2 fun 
+- 115
+: 123 1 4 We 
+: 125 1 2 don’t 
+: 127 1 4 ca
+: 129 2 -1 ~re 
+: 132 2 -1 who 
+: 136 15 -1 sees 
+- 151
+: 158 2 6 So 
+: 161 2 4 what 
+: 164 2 2 we 
+: 167 2 -1 go 
+: 171 13 2 out 
+- 184
+: 189 2 6 That’s 
+: 193 2 6 how 
+: 196 1 6 it’s 
+: 198 1 9 suppo
+: 200 1 6 ~sed 
+: 202 1 2 to 
+* 206 14 6 be 
+- 220
+: 229 3 -1 Li
+: 234 3 -1 ving 
+: 238 8 7 young 
+: 251 3 6 and 
+: 256 8 4 wild 
+: 269 3 6 and 
+: 274 17 2 free 
+- 291
+F 301 2 6 Uh 
+F 304 4 4 huh 
+- 308
+F 319 2 6 So 
+F 322 2 6 what 
+F 325 1 6 I 
+F 327 1 6 keep 
+F 330 1 6 ’em 
+F 332 2 6 rolled 
+F 335 3 6 up 
+- 338
+F 341 1 6 Sag
+F 343 1 6 gin’ 
+F 345 1 6 my 
+F 347 2 6 pants 
+F 352 1 6 not 
+F 354 1 6 ca
+F 356 1 6 ring 
+F 359 1 6 what 
+F 361 1 6 I 
+F 363 2 6 show 
+- 365
+F 368 1 6 Keep 
+F 370 1 6 it 
+F 372 2 6 real 
+F 377 1 6 with 
+F 379 1 6 my 
+F 381 1 6 nig
+F 383 2 6 gas 
+- 385
+F 386 1 6 Keep 
+F 388 1 6 it 
+F 390 1 6 pla
+F 392 1 6 yer 
+F 394 1 6 for 
+F 397 1 6 the 
+F 399 4 6 hoes 
+- 403
+F 406 1 6 And 
+F 408 1 6 look 
+F 410 2 6 clean 
+F 415 1 6 don’t 
+F 417 1 6 it? 
+- 418
+F 419 1 6 Washed 
+F 421 1 6 it 
+F 423 1 6 the 
+F 426 1 6 o
+F 428 1 6 ther 
+F 430 1 6 day, 
+F 432 1 6 watch 
+F 435 1 6 how 
+F 437 1 6 you 
+F 439 2 6 lean 
+F 444 1 6 on 
+F 446 1 6 it 
+- 447
+F 448 1 6 Give 
+F 450 1 6 me 
+F 452 1 6 some 
+F 455 1 6 5
+F 457 1 6 0
+F 459 1 6 1’s 
+F 461 4 6 jeans 
+- 465
+F 467 1 6 On 
+F 469 1 6 and 
+F 471 1 6 roll 
+F 474 2 6 joints 
+F 478 1 6 big
+F 480 1 6 ger 
+F 482 1 6 than 
+F 484 2 6 King 
+F 488 2 6 Kong’s 
+F 493 1 6 fin
+F 495 1 6 gers 
+- 496
+F 497 1 6 And 
+F 499 1 6 smoke 
+F 502 1 6 them 
+F 504 2 6 hoes 
+F 508 4 6 down 
+F 515 1 6 ’till 
+F 517 1 6 they 
+F 520 2 6 stin
+F 524 2 6 gers 
+- 526
+F 533 1 6 You 
+F 535 1 6 a 
+F 537 2 6 class 
+F 542 4 6 clown 
+- 546
+F 549 1 6 And 
+F 551 1 6 if 
+F 553 1 6 I 
+F 555 2 6 skip 
+F 560 1 6 for 
+F 562 1 6 the 
+F 564 1 6 day 
+F 566 1 6 I’m 
+F 569 1 6 with 
+F 571 1 6 you 
+F 573 2 6 bitch 
+F 578 1 6 smo
+F 580 1 6 kin’ 
+F 582 2 6 grade 
+F 587 2 6 A 
+- 589
+F 594 1 6 It’s 
+F 596 1 6 like 
+F 599 2 6 I’m 
+F 605 6 6 17 
+F 613 1 6 ag
+F 615 2 6 ain 
+- 617
+F 619 2 6 Peach 
+F 623 2 6 fuzz 
+F 628 1 6 on 
+F 630 1 6 my 
+F 632 4 6 face 
+- 636
+F 641 1 6 Loo
+F 643 2 6 kin’, 
+F 648 1 6 on 
+F 650 1 6 the 
+F 652 2 6 case 
+- 654
+F 659 1 6 Try
+F 661 1 6 na 
+F 664 1 6 find 
+F 666 1 6 a 
+F 668 1 6 hel
+F 670 1 6 la 
+F 672 4 6 taste 
+- 676
+F 679 1 6 Oh 
+F 681 2 6 My 
+F 686 4 6 God, 
+F 693 1 6 I’m 
+F 695 1 6 on 
+F 697 2 6 the 
+F 701 2 6 chase 
+- 703
+F 708 1 6 Che
+F 710 2 6 vy, 
+F 715 1 6 it’s 
+F 717 1 6 get
+F 719 1 6 tin’ 
+F 722 1 6 kin
+F 724 1 6 da 
+F 726 1 6 hea
+F 728 2 6 vy, 
+- 730
+F 735 1 6 Re
+F 737 1 6 le
+F 739 2 6 vant, 
+F 744 1 6 sel
+F 746 1 6 lin’ 
+F 748 2 6 it 
+- 750
+F 753 1 6 Dip
+F 755 1 6 pin’ 
+F 757 1 6 a
+F 760 2 6 way, 
+F 766 2 6 time 
+F 771 2 6 keep 
+F 775 1 6 slip
+F 777 1 6 pin’ 
+F 780 1 6 a
+F 782 2 6 way 
+- 784
+F 789 1 6 Zip 
+F 791 1 6 in 
+F 793 1 6 the 
+F 795 4 6 safe, 
+F 802 1 6 flip
+F 804 1 6 pin’ 
+F 806 1 6 for 
+F 809 4 6 pay 
+- 813
+F 815 1 6 Tip
+F 818 1 6 pin’ 
+F 820 1 6 like 
+F 822 1 6 I’m 
+F 824 1 6 drip
+F 827 1 6 pin’ 
+F 829 1 6 in 
+F 831 4 6 paint 
+- 835
+F 838 2 6 Up 
+F 842 2 6 front 
+F 847 2 6 four 
+F 851 2 6 blunts, 
+F 856 1 6 like 
+F 858 1 6 \"Kha
+F 860 1 6 li
+F 862 1 6 fa 
+F 865 1 6 put 
+F 867 1 6 the 
+F 869 2 6 weed... 
+- 871
+: 873 2 6 So 
+: 876 2 4 what 
+: 879 2 2 we 
+: 882 2 -1 get 
+: 887 16 2 drunk 
+- 903
+: 909 2 6 So 
+: 912 2 4 what 
+: 915 2 2 we 
+: 918 2 -1 smoke 
+: 922 15 2 weed 
+- 937
+: 945 2 6 We’re 
+: 948 2 4 just 
+: 951 2 2 ha
+: 954 2 -1 ving 
+: 958 15 2 fun 
+- 973
+: 981 1 4 We 
+: 983 1 2 don’t 
+: 985 1 4 ca
+: 987 2 -1 ~re 
+: 990 2 -1 who 
+: 994 15 -1 sees 
+- 1009
+: 1016 2 6 So 
+: 1019 2 4 what 
+: 1022 2 2 we 
+: 1025 2 -1 go 
+: 1029 13 2 out 
+- 1042
+: 1048 2 6 That’s 
+: 1052 2 6 how 
+: 1055 1 6 it’s 
+: 1057 1 9 suppo
+: 1059 1 6 ~sed 
+: 1061 1 2 to 
+: 1065 14 6 be 
+- 1079
+: 1088 3 -1 Li
+: 1093 3 -1 ving 
+: 1097 8 7 young 
+: 1110 3 6 and 
+: 1115 8 4 wild 
+: 1128 3 6 and 
+: 1133 17 2 free 
+- 1150 1154
+- 1154
+F 1168 4 6 Uh, 
+F 1175 1 6 and 
+F 1177 1 6 now 
+F 1180 1 6 I 
+F 1182 1 6 e
+F 1184 1 6 ven 
+F 1186 4 6 care 
+- 1190
+F 1193 1 6 Cause 
+F 1195 1 6 it’s 
+F 1197 1 6 me 
+F 1200 1 6 and 
+F 1202 1 6 my 
+F 1204 1 6 team 
+- 1205
+F 1206 1 6 And 
+F 1209 2 6 here’s 
+F 1213 1 6 gonna 
+F 1215 1 6 be 
+F 1218 1 6 some 
+F 1220 1 6 weed 
+F 1222 1 6 in 
+F 1224 1 6 the 
+F 1226 4 6 air 
+- 1230
+F 1235 1 6 Tell 
+F 1238 1 6 ’em 
+F 1240 2 6 Mac 
+- 1242
+F 1247 1 6 Blo
+F 1249 1 6 win 
+F 1251 1 6 eve
+F 1253 1 6 ry
+F 1256 1 6 where 
+F 1258 1 6 we 
+F 1260 1 6 go
+F 1262 1 6 ing 
+F 1264 1 6 and 
+F 1267 1 6 now 
+F 1269 1 6 you 
+F 1271 1 6 know 
+F 1273 2 6 one 
+- 1275
+F 1276 1 6 When 
+F 1278 1 6 I 
+F 1280 1 6 step 
+F 1282 2 6 right 
+F 1287 2 6 up 
+- 1289
+F 1291 1 6 Get 
+F 1294 1 6 my 
+F 1296 1 6 ligh
+F 1298 1 6 ter 
+F 1300 1 6 so 
+F 1302 1 6 I 
+F 1305 1 6 can 
+F 1307 1 6 light 
+F 1309 2 6 up 
+- 1311
+F 1318 1 6 That’s 
+F 1320 1 6 how 
+F 1323 1 6 it 
+F 1325 1 6 should 
+F 1327 1 6 be 
+F 1329 2 6 done 
+- 1331
+F 1336 1 6 Soon 
+F 1338 1 6 as 
+F 1340 1 6 you 
+F 1343 1 6 thin
+F 1345 1 6 kin 
+F 1347 1 6 you’re 
+F 1349 2 6 down 
+- 1351
+F 1354 1 6 Find 
+F 1356 1 6 out how 
+F 1358 1 6 to 
+F 1361 1 6 turn 
+F 1363 1 6 things 
+F 1365 1 6 a
+F 1367 2 6 round, 
+F 1372 1 6 no
+F 1374 2 6 thing’s 
+F 1378 1 6 loo
+F 1381 1 6 king 
+F 1383 2 6 up 
+- 1385
+F 1392 1 6 From 
+F 1394 1 6 the 
+F 1396 1 6 ground 
+F 1399 2 6 up, 
+F 1405 1 6 pound 
+F 1407 2 6 up, 
+F 1412 1 6 this 
+F 1414 1 6 Tay
+F 1416 1 6 lor 
+F 1419 4 6 Gang 
+- 1423
+F 1425 1 6 So 
+F 1428 1 6 turn 
+F 1430 1 6 my 
+F 1432 1 6 sound 
+F 1434 1 6 up 
+F 1439 1 6 and 
+F 1441 1 6 mount 
+F 1443 1 6 up 
+F 1448 1 6 and 
+F 1450 1 6 do 
+F 1452 1 6 my 
+F 1454 2 6 thang 
+- 1456
+F 1463 1 6 Now 
+F 1466 2 6 I’m 
+F 1470 1 6 chil
+F 1472 2 6 lin’, 
+F 1477 2 6 fresh 
+F 1481 1 6 out
+F 1483 1 6 ta 
+F 1486 2 6 class, 
+F 1490 1 6 fee
+F 1492 2 6 lin’ 
+- 1494
+F 1499 1 6 Like 
+F 1501 1 6 I’m 
+F 1504 1 6 on 
+F 1506 1 6 my 
+F 1508 1 6 own 
+F 1510 1 6 and 
+F 1512 1 6 I 
+F 1515 1 6 could 
+F 1517 1 6 probab
+F 1519 1 6 ly 
+F 1521 1 6 own 
+F 1524 1 6 a 
+F 1526 2 6 buil
+F 1530 2 6 ding 
+- 1532
+F 1535 1 6 Got 
+F 1537 1 6 my 
+F 1539 1 6 own 
+F 1541 2 6 car, 
+F 1546 2 6 no 
+F 1550 2 6 job, 
+F 1557 2 6 no 
+F 1562 2 6 chil
+F 1566 2 6 dren 
+- 1568
+F 1571 1 6 Had 
+F 1573 1 6 a 
+F 1575 2 6 science 
+F 1579 1 6 pro
+F 1582 2 6 ject, 
+F 1588 1 6 me 
+F 1591 1 6 and 
+F 1593 2 6 Mac 
+F 1597 2 6 killed 
+F 1602 2 6 it 
+- 1604
+F 1606 1 6 T-
+F 1610 2 6 H-
+F 1614 2 6 C, 
+- 1616
+F 1620 2 6 M-
+F 1623 2 6 A-
+F 1628 4 6 C, 
+- 1632
+F 1633 2 6 D-
+F 1636 2 6 E-
+F 1641 4 6 V, 
+- 1645
+F 1646 2 6 H-
+F 1650 2 6 D-
+F 1654 4 6 3, 
+- 1658
+F 1660 2 6 High 
+F 1663 2 6 as 
+F 1668 4 6 me 
+- 1672
+F 1673 2 6 This 
+F 1677 2 6 is 
+F 1681 4 6 us, 
+- 1685
+F 1687 2 6 We 
+F 1690 2 6 gon’ 
+F 1695 2 6 fuss 
+- 1697
+F 1698 1 6 And 
+F 1700 2 6 we 
+F 1703 2 6 gon’ 
+F 1708 2 6 fight 
+- 1710
+F 1711 2 6 And 
+F 1715 1 6 we 
+F 1717 2 6 gon’ 
+F 1721 3 6 roll 
+- 1724
+: 1731 2 6 So 
+: 1734 2 4 what 
+: 1737 2 2 we 
+: 1740 2 -1 get 
+: 1745 16 2 drunk 
+- 1761
+: 1767 2 6 So 
+: 1770 2 4 what 
+: 1773 2 2 we 
+: 1776 2 -1 smoke 
+: 1780 15 2 weed 
+- 1795
+: 1803 2 6 We’re 
+: 1806 2 4 just 
+: 1809 2 2 ha
+: 1812 2 -1 ving 
+: 1816 15 2 fun 
+- 1831
+: 1839 1 4 We 
+: 1841 1 2 don’t 
+: 1843 1 4 ca
+: 1845 2 -1 ~re 
+: 1848 2 -1 who 
+: 1852 15 -1 sees 
+- 1867
+: 1874 2 6 So 
+: 1877 2 4 what 
+: 1880 2 2 we 
+: 1883 2 -1 go 
+: 1887 13 2 out 
+- 1900
+: 1906 2 6 That’s 
+: 1910 2 6 how 
+: 1913 1 6 it’s 
+: 1915 1 9 suppo
+: 1917 1 6 ~sed 
+: 1919 1 2 to 
+: 1922 14 6 be 
+- 1936
+: 1946 3 -1 Li
+: 1951 3 -1 ving 
+* 1955 8 7 young 
+: 1968 3 6 and 
+: 1973 8 4 wild 
+: 1986 3 6 and 
+: 1991 17 2 free 
+- 2008 2012
+- 2012
+: 2026 4 2 Yea, 
+- 2030
+: 2035 2 6 Roll 
+: 2039 4 6 one, 
+: 2047 3 6 smoke 
+: 2052 4 6 one, 
+- 2056
+: 2062 1 6 When 
+: 2064 1 6 you 
+: 2066 2 6 live 
+: 2070 2 6 like 
+: 2074 3 6 this 
+: 2079 1 6 you’re 
+: 2081 1 6 sup
+: 2083 3 9 posed 
+: 2089 2 9 to 
+: 2093 2 7 par
+: 2098 2 6 ty 
+- 2100
+: 2106 2 6 Roll 
+: 2110 4 6 one, 
+: 2118 3 6 smoke 
+: 2123 4 6 one, 
+- 2127
+: 2134 1 6 And 
+: 2136 1 6 we 
+: 2138 2 6 all 
+: 2142 2 6 just 
+: 2146 2 2 ha
+: 2150 2 -1 ving 
+: 2154 6 6 fun 
+- 2160
+: 2162 2 -1 So 
+: 2165 2 2 we 
+: 2169 3 2 just, 
+- 2172
+: 2178 2 6 Roll 
+: 2182 4 6 one, 
+: 2190 3 6 smoke 
+: 2195 4 6 one, 
+- 2199
+: 2205 1 6 When 
+: 2207 1 6 you 
+: 2209 2 6 live 
+: 2213 2 6 like 
+: 2217 3 6 this 
+: 2222 1 6 you’re 
+: 2224 1 6 sup
+: 2226 3 9 posed 
+: 2231 2 9 to 
+: 2235 2 7 par
+: 2240 2 6 ty 
+- 2242
+: 2250 2 6 Roll 
+: 2254 4 6 one, 
+: 2262 3 6 smoke 
+: 2267 4 6 one, 
+- 2271
+: 2277 1 6 And 
+: 2279 1 6 we 
+: 2281 2 6 all 
+: 2285 2 6 just 
+: 2289 2 2 ha
+: 2293 2 -1 ving 
+: 2297 4 6 fun 
+- 2301
+: 2303 2 6 So 
+: 2306 2 4 what 
+: 2309 2 2 we 
+: 2312 2 -1 get 
+: 2317 16 2 drunk 
+- 2333
+: 2338 2 6 So 
+: 2341 2 4 what 
+: 2344 2 2 we 
+: 2347 2 -1 smoke 
+: 2351 15 2 weed 
+- 2366
+: 2374 2 6 We’re 
+: 2377 2 4 just 
+: 2380 2 2 ha
+: 2383 2 -1 ving 
+: 2387 15 2 fun 
+- 2402
+: 2410 1 4 We 
+: 2412 1 2 don’t 
+: 2414 1 4 ca
+: 2416 2 -1 ~re 
+: 2419 2 -1 who 
+: 2423 15 -1 sees 
+- 2438
+: 2445 2 6 So 
+: 2448 2 4 what 
+: 2451 2 2 we 
+: 2454 2 -1 go 
+: 2458 13 2 out 
+- 2471
+: 2477 2 6 That’s 
+: 2481 2 6 how 
+: 2484 1 6 it’s 
+: 2486 1 9 suppo
+: 2488 1 6 ~sed 
+: 2490 1 2 to 
+: 2493 14 6 be 
+- 2507
+: 2517 3 -1 Li
+: 2522 3 -1 ving 
+: 2526 8 7 young 
+: 2539 3 6 and 
+: 2544 8 4 wild 
+: 2557 3 6 and 
+: 2562 17 2 free 
+E
