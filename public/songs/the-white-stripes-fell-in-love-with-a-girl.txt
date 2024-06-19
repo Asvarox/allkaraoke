@@ -1,0 +1,380 @@
+#ARTIST:The White Stripes
+#TITLE:Fell In Love With A Girl
+#CREATOR:krasserdude
+#BPM:480
+#YEAR:2001
+#VIDEO:v=fTH71AAxXmM
+#LANGUAGE:English
+#GAP:14340
+#ALLKARAOKE_ID:the-white-stripes-fell-in-love-with-a-girl
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:48.048Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:190
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=25152
+#ALLKARAOKE_VOLUME:0,86
+#P1:Fell In Love With A Girl
+#MP3:The White Stripes - Fell In Love With A Girl.mp3
+: 32 3 6 Fell 
+: 36 4 6 in 
+: 41 5 4 love 
+: 47 4 4 with 
+: 52 4 -1 a 
+* 57 18 2 girl 
+- 75
+: 95 5 4 I 
+: 101 3 6 fell 
+: 105 5 6 in 
+: 111 4 4 love 
+: 121 9 2 once 
+: 131 3 4 and 
+: 135 5 4 al
+: 141 9 6 most 
+: 151 5 4 com
+: 157 7 2 plete
+: 165 14 -1 ly 
+- 179
+: 189 4 6 She’s 
+: 194 4 4 in 
+: 199 5 6 love 
+: 205 3 4 with 
+: 209 5 -1 the 
+: 215 14 2 world 
+- 229
+: 243 3 2 But 
+: 247 9 4 some
+: 257 10 6 times 
+: 268 10 4 these 
+: 279 4 2 fee
+: 284 5 2 lings 
+: 290 3 4 can 
+: 294 3 4 be 
+: 298 5 5 so 
+: 304 9 4 mis
+: 314 7 2 lead
+* 322 12 -1 ing 
+- 334
+: 347 5 6 She 
+: 353 9 6 turns 
+: 363 5 6 and 
+: 369 3 6 says 
+: 373 5 6 \"Are 
+* 379 6 9 you 
+: 386 3 6 al
+: 390 3 4 ~
+: 394 8 6 right?\" 
+- 402
+: 406 1 6 I 
+: 408 4 6 said 
+: 413 6 6 \"I 
+: 420 8 4 must 
+: 429 4 4 be 
+: 440 9 2 fine 
+: 450 4 4 ’cause 
+: 455 5 4 my 
+: 461 7 6 heart’s 
+: 469 6 4 still 
+: 476 6 6 beat
+: 483 6 6 ing.\" 
+- 489
+: 510 4 6 Come 
+: 515 4 6 and 
+: 520 4 6 kiss 
+: 525 4 6 me 
+: 530 3 6 by 
+: 534 3 6 the 
+* 538 5 9 ri
+: 544 7 6 ver
+: 552 11 6 side, 
+: 564 2 4 ye~
+: 567 6 6 ah 
+- 573
+: 580 3 6 Bob
+: 584 3 6 by 
+: 588 4 4 says 
+: 593 4 4 he 
+: 598 5 2 fine 
+: 604 4 2 he 
+* 609 4 -1 don’t 
+: 614 5 2 con
+* 620 4 6 sid
+: 625 5 4 er 
+: 631 4 4 it 
+: 636 7 2 chea
+: 644 6 2 ting 
+: 651 9 -1 now 
+- 660
+: 671 3 6 Re~
+: 675 4 4 d 
+: 680 4 6 hair 
+: 685 4 4 with 
+: 690 4 -1 a 
+* 695 16 2 curl 
+- 711
+: 728 5 6 Mel
+: 734 5 6 low 
+: 740 7 6 roll 
+: 748 4 4 for 
+: 753 5 4 the 
+* 759 4 2 fla
+: 764 4 4 vor 
+: 769 5 4 and 
+: 775 3 4 the 
+: 779 9 6 eyes 
+: 789 6 4 were 
+: 796 7 2 peep
+: 804 9 -1 ing 
+- 813
+: 823 4 6 Can’t 
+: 828 5 6 keep 
+: 834 3 6 a
+: 838 4 4 way 
+: 843 4 2 from 
+* 848 3 -1 my 
+: 852 16 2 girl 
+- 868
+: 888 9 4 These 
+: 898 9 6 sides 
+: 908 4 4 of 
+: 913 5 4 my 
+: 919 5 2 brain 
+- 924
+: 928 5 2 Need 
+: 934 4 4 to 
+: 939 7 6 have 
+: 947 4 4 a 
+: 952 9 2 meet
+: 962 15 -1 ing 
+- 977
+: 984 8 6 Can’t 
+: 993 6 6 think 
+: 1000 5 6 of 
+: 1006 3 6 a
+: 1010 3 6 ny 
+: 1014 11 9 thing 
+: 1026 4 6 to 
+: 1031 6 6 do, 
+: 1038 4 6 yeah 
+- 1042
+: 1046 4 6 My 
+: 1051 11 6 left 
+: 1063 10 4 brain 
+: 1074 8 4 knows 
+- 1082
+: 1086 4 4 That 
+: 1091 4 4 all 
+: 1096 5 4 love 
+: 1102 8 4 is 
+: 1111 8 4 flee
+: 1120 10 4 ting 
+- 1130
+: 1142 6 6 She’s 
+: 1149 4 6 just 
+: 1154 5 6 loo
+: 1160 5 6 king 
+: 1166 6 6 for 
+* 1174 7 9 some 
+: 1182 8 6 thing 
+: 1191 9 6 new, 
+: 1201 4 6 yeah 
+- 1205
+: 1210 3 6 I 
+: 1214 5 6 said 
+: 1220 5 6 it 
+: 1226 4 4 once 
+: 1231 5 4 be
+: 1237 5 2 fore 
+- 1242
+: 1246 4 2 But 
+: 1251 4 2 it 
+: 1256 10 6 bears 
+: 1267 5 6 re
+: 1273 6 4 pea
+: 1280 5 4 ting 
+: 1286 9 -1 now 
+- 1295 1592
+- 1592
+: 1624 9 6 Can’t 
+: 1634 5 6 think 
+: 1640 4 6 of 
+: 1645 5 6 a
+: 1651 4 6 ny
+: 1656 8 6 thing 
+: 1665 5 6 to 
+: 1671 7 6 do, 
+: 1679 4 6 yeah 
+- 1683
+: 1687 6 6 My 
+: 1694 9 6 left 
+: 1704 9 4 brain 
+: 1714 6 2 knows 
+- 1720
+: 1724 3 4 That 
+: 1728 5 4 All 
+: 1734 5 6 love 
+* 1740 8 4 is 
+: 1749 7 6 flee
+: 1757 10 6 ting 
+- 1767
+: 1780 5 6 She’s 
+: 1786 4 6 just 
+: 1791 7 6 loo
+: 1799 3 6 king 
+: 1803 6 6 for 
+: 1811 9 9 some
+: 1821 6 6 thing 
+: 1828 8 6 new, 
+: 1838 5 6 well 
+- 1843
+: 1848 3 6 I 
+: 1852 5 6 said 
+: 1858 3 6 it 
+: 1862 4 4 once 
+: 1867 5 4 be
+: 1873 7 2 fore 
+- 1880
+: 1884 4 2 But 
+: 1889 4 2 it 
+: 1894 10 6 bears 
+: 1905 4 6 re
+: 1910 7 4 peat
+: 1918 5 2 ing 
+: 1924 12 1 now 
+- 1936
+: 1948 3 6 Fell 
+: 1952 3 6 in 
+: 1956 3 4 love 
+: 1960 4 2 with 
+* 1966 4 -1 a 
+: 1971 16 2 girl 
+- 1987
+: 2009 5 4 I 
+: 2015 4 6 fell 
+: 2020 5 6 in 
+: 2026 8 4 love 
+: 2035 9 2 once 
+: 2045 4 4 and 
+: 2050 4 4 al 
+: 2055 9 6 most 
+: 2065 6 4 com
+: 2072 7 2 plete
+: 2080 16 -1 ly 
+- 2096
+: 2104 4 6 She’s 
+* 2109 3 4 in 
+* 2113 4 6 love 
+* 2118 5 4 with 
+* 2124 6 -1 the 
+: 2131 16 2 world 
+- 2147
+: 2158 3 2 But 
+: 2162 9 4 some 
+: 2172 10 6 times 
+: 2183 10 4 these 
+: 2194 3 2 feel 
+: 2198 2 2 ings 
+- 2200
+: 2204 3 4 Can 
+: 2208 4 4 be 
+: 2213 4 6 so 
+: 2220 8 4 mis
+: 2229 7 2 lea
+: 2237 14 -1 ding 
+- 2251
+: 2263 4 6 She 
+: 2268 4 6 turns 
+: 2276 3 6 and 
+: 2280 4 6 says 
+: 2285 4 6 \"Are 
+: 2290 5 9 you 
+: 2296 5 6 al
+* 2302 3 4 ~
+: 2306 7 6 right?\" 
+- 2313
+: 2317 1 6 I 
+: 2319 5 6 said 
+: 2325 3 6 \"I 
+: 2329 7 6 must 
+: 2338 5 6 be 
+: 2344 7 4 fine 
+: 2354 4 6 be
+: 2359 4 4 cause 
+: 2364 3 4 my 
+: 2368 9 6 heart’s 
+* 2378 5 4 still 
+: 2384 7 6 bea
+: 2392 11 6 ting\" 
+- 2403
+: 2418 5 6 Come 
+: 2424 4 6 and 
+: 2429 4 6 kiss 
+: 2434 4 6 me 
+: 2439 3 6 by 
+: 2443 4 6 the 
+: 2449 5 9 ri
+: 2455 6 6 ver 
+: 2464 8 6 side, 
+: 2474 4 4 yeah
+: 2480 6 6 ~ 
+- 2486
+: 2490 4 6 Bob
+: 2495 3 6 by 
+: 2499 4 4 says 
+: 2504 4 4 he 
+: 2509 5 2 fine 
+: 2515 4 2 he 
+: 2520 5 2 don’t 
+* 2526 4 -1 con
+* 2531 3 6 si
+: 2535 5 4 der 
+: 2541 5 4 it 
+: 2547 7 6 chea
+: 2555 5 6 ting 
+* 2561 9 -1 now 
+- 2570 2877
+- 2877
+: 2909 8 6 Can’t 
+: 2918 5 6 think 
+: 2924 3 6 of 
+: 2928 3 6 a
+: 2932 6 6 ny 
+: 2939 6 9 thing 
+: 2946 6 6 to 
+: 2953 7 6 do, 
+: 2961 7 6 yeah 
+- 2968
+: 2972 5 6 My 
+: 2978 9 6 left 
+: 2988 7 4 brain 
+: 2996 11 4 knows 
+: 3008 4 4 that 
+: 3013 4 4 all 
+: 3018 7 4 love 
+* 3026 7 2 is 
+: 3034 8 4 fleet
+: 3043 14 4 ing 
+- 3057
+: 3067 5 4 She’s 
+: 3073 4 6 just 
+: 3078 4 6 look
+: 3083 4 6 ing 
+: 3088 8 6 for 
+: 3097 8 9 some
+: 3106 7 6 thing 
+: 3114 7 6 new 
+- 3121
+: 3125 6 6 Well 
+: 3134 4 6 I 
+: 3139 4 6 said 
+: 3144 4 6 it 
+: 3149 3 4 once 
+: 3153 5 4 be
+: 3159 8 2 fore 
+- 3167
+: 3171 5 -1 But 
+: 3177 4 -1 it 
+* 3182 7 4 bears 
+: 3190 5 2 re
+* 3196 8 6 peat
+: 3205 6 2 ing 
+: 3212 13 -1 now 
+E

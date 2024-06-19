@@ -1,0 +1,654 @@
+#ARTIST:Red Hot Chili Peppers
+#TITLE:Tell Me Baby
+#CREATOR:FaKK
+#BPM:216
+#YEAR:2006
+#PREVIEWSTART:117
+#VIDEO:v=oDNcL1VP3rY
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:78997,77777777778
+#ALLKARAOKE_ID:red-hot-chili-peppers-tell-me-baby
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:37.104Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=44
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2961
+#ALLKARAOKE_PREVIEWEND:145
+#ALLKARAOKE_VOLUME:0,79
+#P1:Tell Me Baby
+#MP3:Red Hot Chili Peppers - Tell Me Baby.mp3
+#START:52.0
+: 14 3 -5 They 
+: 18 3 -3 come 
+: 22 3 -8 from 
+: 26 3 -5 ev
+: 30 1 -5 ery 
+: 32 3 -3 state 
+: 36 1 -3 to 
+: 38 4 -8 find 
+- 42
+: 46 3 -5 Some 
+: 50 3 -3 dreams 
+: 54 3 -8 were 
+: 58 3 -5 meant 
+: 62 1 -5 to 
+: 64 3 -3 be 
+: 68 1 -3 de
+: 70 4 -8 clined 
+- 74
+: 78 2 -5 Tell 
+: 81 1 -5 the 
+: 83 2 -3 man 
+: 86 3 -8 what 
+: 90 3 -5 did 
+: 94 1 -5 you 
+: 96 3 -3 have 
+: 100 1 -3 in 
+: 102 4 -8 mind 
+- 106
+: 110 3 -5 What 
+: 114 3 -3 have 
+: 118 3 -5 you 
+: 122 3 0 come 
+: 126 3 -1 to 
+* 130 4 -3 do 
+- 134
+: 142 3 -5 No 
+: 146 4 -3 tur
+: 151 2 -8 ning 
+: 154 3 -5 wa
+: 158 1 -5 ter 
+: 161 3 -3 in
+: 165 1 -3 to 
+: 167 4 -8 wine 
+- 171
+: 175 3 -5 No 
+: 179 3 -3 lear
+: 183 3 -8 ning 
+: 187 3 -5 while 
+: 191 1 -5 you’re 
+: 193 3 -3 in 
+: 197 1 -3 the 
+: 199 4 -8 line 
+- 203
+: 207 3 -5 I’ll 
+: 211 3 -3 take 
+: 215 3 -8 you 
+: 219 3 -5 to 
+: 223 1 -5 the 
+: 225 3 -3 bro
+: 229 1 -3 ken 
+: 231 4 -8 sign 
+- 235
+: 239 3 -5 You 
+: 243 3 -3 see 
+: 247 3 -5 these 
+* 251 3 0 lights 
+* 255 3 -1 are 
+: 259 4 -3 blue 
+- 263
+F 272 1 -1 Come 
+F 274 1 -1 and 
+F 276 1 -1 get 
+F 278 2 -1 it 
+- 280
+F 282 3 -1 Lost 
+F 286 1 -1 it 
+F 288 1 -1 at 
+F 290 1 -1 the 
+F 292 1 -1 ci
+F 294 1 -1 ty 
+F 296 1 -1 li
+F 298 2 -1 mit 
+- 300
+F 304 1 -1 Say 
+F 306 1 -1 good
+F 308 1 -1 bye 
+- 309
+F 310 3 -1 Cause 
+F 314 3 -1 they 
+F 318 1 -1 will 
+F 320 1 -1 find 
+F 322 1 -1 a 
+F 324 1 -1 way 
+F 326 1 -1 to 
+F 328 1 -1 trim 
+F 330 2 -1 it 
+- 332
+F 336 1 -1 Ev
+F 338 1 -1 ery
+F 340 1 -1 bo
+F 342 3 -1 dy 
+- 345
+F 346 2 -1 Loo
+F 349 2 -1 kin’ 
+F 352 1 -1 for 
+F 354 1 -1 a 
+F 356 1 -1 sil
+F 358 1 -1 ly 
+F 360 1 -1 gim
+F 362 1 -1 mick 
+- 363
+F 364 1 -1 Got
+F 366 1 -1 ta 
+F 368 1 -1 get 
+F 370 1 -1 a
+F 372 3 -1 way 
+- 375
+F 376 3 -1 Can’t 
+F 380 1 -1 take 
+F 382 1 -1 it 
+F 384 1 -1 for 
+F 386 1 -1 a
+F 388 1 -1 no
+F 390 1 -1 ther 
+F 392 1 -1 mi
+F 394 2 -1 nute 
+- 396
+: 399 3 -5 This 
+: 403 3 -3 town 
+: 407 3 -8 is 
+: 411 3 -5 made 
+: 415 1 -5 of 
+: 417 3 -3 ma
+: 421 1 -3 ny 
+: 423 4 -8 things 
+- 427
+: 431 3 -5 Just 
+: 435 3 -3 look 
+: 439 3 -8 at 
+: 443 3 -5 what 
+: 447 1 -5 the 
+: 449 3 -3 cur
+: 453 1 -3 rent 
+: 455 4 -8 brings 
+- 459
+: 463 3 -5 So 
+: 467 3 -3 high 
+: 471 3 -8 it’s 
+: 475 3 -5 on
+: 479 1 -5 ly 
+: 481 3 -3 pro
+: 485 1 -3 mi
+: 487 4 -8 sing 
+- 491
+: 495 3 -5 This 
+: 499 3 -3 place 
+: 503 3 -5 was 
+* 507 3 0 made 
+* 511 3 -1 on 
+* 515 4 -3 you 
+- 519
+: 531 3 0 Tell 
+: 535 3 0 me 
+* 539 7 -1 ba
+* 547 6 0 by 
+: 563 3 -1 what’s 
+: 567 3 -1 your 
+* 571 3 0 sto
+* 575 3 -3 ~
+: 579 4 -3 ry 
+- 583
+: 595 3 5 Where 
+: 599 3 5 you 
+: 603 7 4 come 
+: 611 3 4 from 
+- 614
+: 615 3 4 And 
+: 619 3 2 where 
+: 623 3 2 you 
+: 627 3 2 wan
+: 631 3 4 na 
+: 635 3 2 go 
+: 639 3 -3 this 
+: 643 3 -3 time 
+: 647 1 -3 oh 
+- 648
+: 659 3 0 Tell 
+: 663 3 0 me 
+: 667 7 -1 lo
+: 675 6 0 ver 
+: 691 3 -1 are 
+: 695 3 -1 you 
+: 699 7 0 lone
+: 707 4 -3 ly 
+- 711
+: 719 3 -5 The 
+: 723 3 5 thing 
+: 727 3 5 we 
+: 731 7 4 need 
+: 739 7 4 is 
+- 746
+: 747 3 2 Ne
+: 751 3 2 ver 
+: 755 3 2 all 
+* 759 3 4 that 
+* 763 3 2 hard 
+: 767 3 -3 to 
+: 771 3 -3 find 
+: 775 1 -3 oh 
+- 776
+: 787 3 0 Tell 
+: 791 3 0 me 
+: 795 7 -1 ba
+: 803 6 0 by 
+: 819 3 -1 what’s 
+: 823 3 -1 your 
+: 827 3 0 sto
+: 831 3 -3 ~
+: 835 4 -3 ry 
+- 839
+: 847 3 -3 Where 
+: 851 3 5 do 
+: 855 3 5 you 
+: 859 7 4 come 
+: 867 4 4 from 
+- 871
+: 872 3 4 And 
+: 876 3 2 where 
+: 880 3 2 you 
+: 884 3 2 wan
+: 888 3 4 na 
+: 892 3 2 go 
+: 896 3 -3 this 
+: 900 3 -3 time 
+: 904 1 -3 oh 
+- 905
+: 916 3 0 You’re 
+: 920 3 0 so 
+: 924 7 -1 love
+: 932 6 0 ly 
+: 948 3 -1 are 
+: 952 3 -1 you 
+: 956 7 0 lone
+: 964 4 -3 ly 
+- 968
+: 976 3 -3 Or 
+: 980 3 5 gi
+: 984 3 5 ving 
+: 988 6 4 up 
+: 996 3 4 on 
+: 1000 3 4 the 
+- 1003
+F 1004 3 2 In
+F 1008 2 2 no
+F 1011 3 2 cence 
+F 1015 3 4 you 
+F 1019 3 2 left 
+F 1023 3 -1 be
+F 1027 3 -1 hind 
+- 1030 1184
+- 1184
+: 1198 3 -5 Some 
+: 1202 4 -3 claim 
+: 1207 3 -8 to 
+: 1211 3 -5 have 
+: 1215 1 -5 the 
+: 1217 3 -3 for
+: 1221 1 -3 ti
+: 1223 4 -8 tude 
+- 1227
+: 1231 3 -5 Too 
+: 1235 3 -3 shrewd 
+: 1239 3 -8 to 
+: 1243 3 -5 blow 
+: 1247 1 -5 the 
+: 1249 3 -3 in
+: 1253 1 -3 ter
+: 1255 4 -8 lude 
+- 1259
+: 1263 3 -5 Sus
+: 1267 3 -3 tai
+: 1271 3 -8 ning 
+: 1275 3 -5 pain 
+: 1279 2 -5 to 
+: 1282 3 -3 set 
+: 1286 1 -3 a 
+: 1288 4 -8 mood 
+- 1292
+: 1296 3 -5 Step 
+: 1300 3 -3 out 
+: 1304 3 -5 to 
+: 1308 3 0 be 
+: 1312 3 -1 re
+* 1316 4 -3 newed 
+- 1320
+: 1327 3 -5 I’ll 
+: 1331 3 -3 move 
+: 1335 3 -8 you 
+: 1339 3 -5 like 
+: 1343 1 -5 a 
+: 1345 3 -3 ba
+: 1349 1 -3 ri
+: 1351 4 -8 tone 
+- 1355
+: 1359 1 -5 Jun
+: 1361 1 -5 gle 
+: 1363 4 -3 Bro
+: 1368 3 -8 thers 
+: 1372 3 -5 on 
+: 1376 1 -5 the 
+: 1378 3 -3 mi
+: 1382 1 -3 cro
+: 1384 4 -8 phone 
+- 1388
+: 1392 1 -5 Get
+: 1394 1 -5 ting 
+: 1396 3 -3 o
+: 1400 3 -8 ver 
+: 1404 3 -5 with 
+: 1408 1 -5 an 
+: 1410 3 -3 un
+: 1414 1 -8 der
+: 1416 4 -8 tone 
+- 1420
+: 1424 3 -5 It’s 
+: 1428 3 -3 time 
+: 1432 3 -5 to 
+: 1436 3 0 turn 
+: 1440 3 -1 to 
+* 1444 4 -3 stone 
+- 1448
+F 1452 1 -1 Chit
+F 1454 1 -1 ty 
+F 1456 1 -1 chit
+F 1458 1 -1 ty 
+F 1460 1 -1 ba
+F 1462 1 -1 by 
+- 1463
+F 1464 1 -1 When 
+F 1466 1 -1 your 
+F 1468 1 -1 nose 
+F 1470 1 -1 is 
+F 1472 1 -1 in 
+F 1474 1 -1 the 
+F 1476 1 -1 nit
+F 1478 1 -1 ty 
+F 1480 1 -1 grit
+F 1482 1 -1 ty 
+- 1483
+F 1484 1 -1 Life 
+F 1486 1 -1 could 
+F 1488 1 -1 be 
+F 1490 1 -1 a 
+F 1492 1 -1 lit
+F 1494 1 -1 tle 
+F 1496 1 -1 sweet 
+- 1497
+F 1498 1 -1 But 
+F 1500 1 -1 life 
+F 1502 1 -1 could 
+F 1504 1 -1 be 
+F 1506 1 -1 a 
+F 1508 1 -1 lit
+F 1510 1 -1 tle... 
+- 1511
+F 1512 1 -1 Kit
+F 1514 2 -1 ty 
+- 1516
+F 1520 1 -1 What 
+F 1522 1 -1 a 
+F 1524 1 -1 pi
+F 1526 3 -1 ty 
+- 1529
+F 1530 3 -1 Bos
+F 1534 1 -1 ton 
+F 1536 1 -1 and 
+F 1538 1 -1 a 
+F 1540 1 -1 Kan
+F 1542 1 -1 sas 
+F 1544 1 -1 ci
+F 1546 1 -1 ty 
+- 1547
+F 1548 1 -1 Loo
+F 1550 1 -1 king 
+F 1552 1 -1 for 
+F 1554 1 -1 a 
+F 1556 1 -1 hun
+F 1558 1 -1 dred 
+- 1559
+F 1560 1 -1 But 
+F 1562 1 -1 you 
+F 1564 1 -1 on
+F 1566 1 -1 ly 
+F 1568 1 -1 e
+F 1570 1 -1 ver 
+F 1572 1 -1 found 
+F 1574 1 -1 a 
+F 1576 1 -1 fif
+F 1578 2 -1 ty 
+- 1580
+: 1584 3 -5 Three 
+: 1588 3 -3 fin
+: 1592 3 -8 gers 
+: 1596 3 -5 in 
+: 1600 1 -5 the 
+: 1602 3 -3 ho
+: 1606 1 -3 ney
+: 1608 4 -8 comb 
+- 1612
+: 1616 3 -5 You 
+: 1620 3 -3 ring 
+: 1624 3 -8 just 
+: 1628 3 -5 like 
+: 1632 1 -5 a 
+: 1634 3 -3 xy
+: 1638 1 -3 lo
+: 1640 4 -8 phone 
+- 1644
+* 1648 3 -5 De
+* 1652 3 -3 vo
+: 1656 3 -8 ted 
+: 1660 3 -5 to 
+: 1664 1 -5 the 
+: 1666 3 -3 chro
+: 1670 1 -3 mo
+: 1672 4 -8 some 
+- 1676
+: 1680 3 -5 The 
+: 1684 3 -3 day 
+: 1688 3 -5 that 
+* 1692 3 0 you 
+* 1696 3 -1 left 
+* 1700 4 -3 home 
+- 1704
+: 1716 3 0 Tell 
+: 1720 3 0 me 
+: 1724 7 -1 ba
+: 1732 6 0 by 
+: 1748 3 -1 what’s 
+: 1752 3 -1 your 
+: 1756 4 0 sto
+: 1761 2 -3 ~
+: 1764 4 -3 ry 
+- 1768
+: 1780 3 5 Where 
+: 1784 3 5 you 
+: 1788 7 4 come 
+: 1796 3 4 from 
+- 1799
+: 1800 3 4 And 
+: 1804 3 2 where 
+: 1808 3 2 you 
+: 1812 3 2 wan
+: 1816 3 4 na 
+: 1820 3 2 go 
+: 1824 3 -3 this 
+: 1828 3 -3 time 
+: 1832 1 -3 oh 
+- 1833
+: 1844 3 0 Tell 
+: 1848 3 0 me 
+: 1852 7 -1 lo
+: 1860 6 0 ver 
+: 1876 3 -1 are 
+: 1880 3 -1 you 
+: 1884 7 0 lone
+: 1892 4 -3 ly 
+- 1896
+: 1904 3 -5 The 
+: 1908 3 5 thing 
+: 1912 3 5 we 
+: 1916 7 4 need 
+: 1924 7 4 is 
+- 1931
+: 1932 3 2 Ne
+: 1936 3 2 ver 
+: 1940 3 2 all 
+: 1944 3 4 that 
+: 1948 3 2 hard 
+: 1952 3 -3 to 
+: 1956 3 -3 find 
+: 1960 1 -3 oh 
+- 1961
+: 1972 3 0 Tell 
+: 1976 3 0 me 
+: 1980 7 -1 ba
+: 1988 6 0 by 
+: 2004 3 -1 what’s 
+: 2008 3 -1 your 
+: 2012 3 0 sto
+: 2016 3 -3 ~
+: 2020 4 -3 ry 
+- 2024
+: 2036 3 5 Where 
+: 2040 3 5 you 
+: 2044 7 4 come 
+: 2052 3 4 from 
+- 2055
+: 2056 2 4 And 
+: 2059 3 2 where 
+: 2063 3 2 you 
+: 2067 3 2 gon
+: 2071 3 4 na 
+: 2075 3 2 go 
+: 2080 3 -3 this 
+: 2084 3 -3 time 
+: 2088 1 -3 oh 
+- 2089
+: 2099 3 0 You’re 
+: 2103 3 0 so 
+: 2107 6 -1 love
+: 2114 6 0 ly 
+: 2130 3 -1 are 
+: 2134 3 -1 you 
+: 2138 8 0 lone
+: 2147 4 -3 ly 
+- 2151
+: 2159 3 -3 Or 
+: 2163 3 5 gi
+: 2167 3 5 ving 
+: 2171 6 4 up 
+: 2178 4 4 on 
+: 2183 3 4 the 
+- 2186
+F 2187 3 2 In
+F 2191 3 2 no
+F 2195 3 2 cence 
+F 2199 5 2 you 
+F 2205 6 2 left 
+F 2212 3 1 be
+F 2216 11 1 hind 
+- 2227 2498
+- 2498
+: 2512 3 0 Tell 
+: 2516 3 0 me 
+: 2520 7 -1 ba
+: 2528 6 0 by 
+: 2544 3 -1 what’s 
+: 2548 3 -1 your 
+: 2552 3 0 sto
+: 2556 3 -3 ~
+: 2560 4 -3 ry 
+- 2564
+: 2576 3 5 Where 
+: 2580 3 5 you 
+: 2584 7 4 come 
+: 2592 3 4 from 
+- 2595
+: 2596 3 4 And 
+: 2600 3 2 where 
+: 2604 3 2 you 
+: 2608 3 2 wan
+: 2612 3 4 na 
+: 2616 3 2 go 
+: 2620 3 -3 this 
+: 2624 3 -3 time 
+: 2628 1 -3 oh 
+- 2629
+: 2640 3 0 Tell 
+: 2644 3 0 me 
+: 2648 7 -1 lo
+: 2656 6 0 ver 
+: 2672 3 -1 are 
+: 2676 3 -1 you 
+: 2680 7 0 lone
+: 2688 4 -3 ly 
+- 2692
+: 2700 3 -3 The 
+: 2704 3 5 thing 
+: 2708 3 5 we 
+: 2712 7 4 need 
+: 2720 7 4 is 
+- 2727
+: 2728 2 2 Ne
+: 2731 3 2 ver 
+: 2736 3 2 all 
+* 2740 3 4 that 
+: 2744 3 2 hard 
+: 2748 3 -3 to 
+: 2752 3 -3 find 
+: 2756 1 -3 oh 
+- 2757
+: 2768 3 0 Tell 
+: 2772 3 0 me 
+: 2776 7 -1 ba
+: 2784 6 0 by 
+: 2800 3 -1 what’s 
+: 2804 3 -1 your 
+: 2808 3 0 sto
+: 2812 3 -3 ~
+: 2816 4 -3 ry 
+- 2820
+: 2832 3 5 Where 
+: 2836 3 5 you 
+: 2840 7 4 come 
+: 2848 3 4 from 
+- 2851
+: 2852 3 4 And 
+: 2856 3 2 where 
+: 2860 3 2 you 
+: 2864 3 2 wan
+: 2868 3 4 na 
+: 2872 3 2 go 
+: 2876 3 -3 this 
+: 2880 3 -3 time 
+: 2884 1 -3 oh 
+- 2885
+: 2896 3 0 You’re 
+: 2900 3 0 so 
+: 2904 7 -1 love
+: 2912 6 0 ly 
+: 2928 3 -1 are 
+: 2932 3 -1 you 
+: 2936 7 0 lone
+: 2944 4 -3 ly 
+- 2948
+: 2955 3 -3 Or 
+: 2959 3 5 gi
+* 2963 3 5 ving 
+: 2967 7 4 up 
+: 2975 3 4 on 
+: 2979 3 4 the 
+- 2982
+F 2983 3 2 In
+F 2987 3 2 no
+F 2991 4 2 cence 
+F 2997 5 2 you 
+F 3003 4 2 left 
+F 3008 22 2 be...
+* 3048 3 0 hi
+* 3052 3 -5 ~
+* 3056 16 -3 ~nd 
+E

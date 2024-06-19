@@ -1,0 +1,305 @@
+#ARTIST:Red Hot Chili Peppers
+#TITLE:Breaking The Girl
+#CREATOR:javier1234
+#BPM:370
+#YEAR:1991
+#VIDEO:v=iyu04pqC8lE
+#LANGUAGE:English
+#GAP:16256,486486486487
+#ALLKARAOKE_ID:red-hot-chili-peppers-breaking-the-girl
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:37.098Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=55691
+#ALLKARAOKE_REALBPM:178
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=12299
+#ALLKARAOKE_VOLUME:0,9
+#P1:Breaking The Girl
+#MP3:Red Hot Chili Peppers - Breaking The Girl.mp3
+: 25 30 -4 I 
+: 57 6 -2 am 
+: 65 6 -2 a 
+: 73 42 -4 man 
+- 115
+: 121 12 -8 Cut 
+: 134 27 -3 from 
+: 162 7 -5 the 
+: 171 20 0 know 
+- 191 198
+- 198
+: 223 32 -4 Rare
+: 256 7 -2 ly 
+: 264 7 -4 do 
+: 272 45 -4 friends 
+- 317
+: 323 13 -8 Come 
+: 337 24 -3 and 
+* 362 7 -5 then 
+: 371 22 0 go 
+- 393 394
+- 394
+: 419 35 2 She 
+* 455 7 4 was 
+* 463 6 2 a 
+: 470 42 3 girl 
+- 512
+: 520 30 2 Soft 
+: 552 7 1 but 
+: 560 7 1 es
+: 568 12 0 tranged
+* 582 28 -4 ~ 
+- 610
+: 621 31 3 We 
+: 653 7 6 were 
+: 661 6 3 the 
+: 668 37 3 two 
+- 705
+: 710 7 1 Our 
+: 719 32 1 lives 
+: 753 8 1 re
+: 762 6 1 ar
+: 769 13 0 ranged
+: 783 26 -3 ~ 
+- 809 868
+- 868
+: 893 8 2 Fee
+: 902 8 3 ling 
+: 911 7 3 so 
+: 919 30 3 good
+* 950 8 -1 ~ 
+* 959 7 -2 that 
+: 967 6 -2 day
+: 974 27 -4 ~ 
+- 1001 1061
+- 1061
+: 1086 6 0 A 
+: 1094 9 2 fee
+: 1104 8 3 ling 
+: 1113 5 3 of 
+: 1119 40 3 love 
+: 1161 8 1 that 
+: 1170 61 3 day 
+- 1231 1245
+- 1245
+: 1270 8 -1 Twis
+: 1279 7 0 ting 
+: 1287 9 0 and 
+: 1297 8 1 tur
+: 1306 4 1 ning 
+- 1310
+: 1314 6 1 Your 
+: 1321 5 2 fee
+* 1327 3 5 ~
+: 1331 5 4 lings 
+: 1338 6 3 are 
+: 1346 8 6 bur
+: 1355 4 6 ning 
+- 1359
+: 1363 7 5 You’re 
+: 1371 6 4 brea
+: 1378 8 3 king 
+: 1387 8 3 the 
+: 1397 60 3 girl 
+- 1457
+: 1471 25 8 She 
+: 1498 22 5 meant 
+: 1521 26 0 you 
+: 1548 23 0 no 
+: 1572 54 1 harm 
+- 1626 1646
+- 1646
+: 1671 8 -1 Think 
+: 1680 6 0 you’re 
+: 1687 8 0 so 
+* 1696 9 1 cle
+: 1706 5 1 ver 
+- 1711
+: 1715 6 1 But 
+: 1723 8 3 now 
+: 1732 8 4 you 
+: 1741 7 3 must 
+: 1749 7 6 se
+: 1757 4 6 ver 
+- 1761
+: 1765 7 5 You’re 
+: 1773 7 4 brea
+: 1781 8 3 king 
+: 1791 7 3 the 
+: 1799 56 3 girl 
+- 1855
+: 1875 23 8 He 
+* 1900 24 6 loves 
+: 1926 24 0 no 
+: 1952 24 0 one 
+: 1978 51 1 else 
+- 2029 2050
+- 2050
+: 2075 33 -4 Raised 
+: 2109 7 -2 by 
+: 2117 7 -2 my 
+: 2125 36 -4 dad 
+- 2161
+: 2174 14 -8 Girl 
+: 2189 28 -3 of 
+: 2218 5 -5 the 
+: 2225 24 0 day 
+- 2249 2250
+- 2250
+: 2275 33 -4 He 
+: 2309 8 -4 was 
+: 2318 6 -2 my 
+: 2325 38 -4 man 
+- 2363
+: 2374 11 -8 That 
+: 2386 29 -3 was 
+: 2417 7 -5 the 
+: 2425 26 0 way 
+- 2451
+: 2474 33 2 She 
+: 2508 7 4 was 
+: 2517 7 2 the 
+: 2525 44 3 girl 
+- 2569
+: 2574 39 3 Left 
+: 2615 7 1 a
+: 2624 7 1 lone
+: 2632 31 -3 ~ 
+- 2663
+: 2675 34 3 Fee
+: 2710 7 6 ling 
+: 2718 6 3 the 
+: 2725 37 3 need 
+- 2762
+: 2766 6 1 To 
+: 2774 33 1 make 
+: 2808 7 1 me 
+: 2817 7 3 her 
+* 2826 10 0 home
+: 2838 29 -3 ~ 
+- 2867 2923
+- 2923
+: 2948 10 2 I 
+: 2959 8 3 don’t 
+: 2968 7 3 know 
+: 2976 24 3 what
+* 3001 9 -1 ~ 
+* 3011 5 -2 when 
+* 3017 9 -2 or 
+: 3027 8 -2 why
+: 3036 31 -5 ~ 
+- 3067 3117
+- 3117
+: 3142 6 -2 The 
+: 3150 9 2 twi
+: 3160 7 3 light 
+: 3168 6 3 of 
+: 3175 34 3 love 
+: 3210 7 1 had 
+: 3218 7 0 a
+: 3226 65 4 rrived 
+- 3291 3299
+- 3299
+: 3324 8 -1 Twis
+: 3334 7 0 ting 
+: 3342 8 0 and 
+: 3351 8 1 tur
+: 3361 2 1 ning 
+- 3363
+: 3367 8 1 Your 
+* 3376 3 2 fee
+* 3380 3 5 ~
+: 3384 6 4 lings 
+: 3391 8 3 are 
+: 3400 7 6 bur
+: 3409 4 6 ning 
+- 3413
+: 3417 6 5 You’re 
+: 3425 8 4 brea
+: 3434 8 3 king 
+: 3443 7 3 the 
+* 3452 51 3 girl 
+- 3503
+: 3527 24 8 She 
+: 3553 23 5 meant 
+: 3577 24 0 you 
+: 3603 25 0 no 
+: 3629 43 1 harm 
+- 3672 3702
+- 3702
+: 3727 8 -1 Think 
+: 3736 7 0 you’re 
+: 3744 8 0 so 
+: 3753 8 1 cle
+: 3762 5 1 ver 
+- 3767
+: 3771 6 1 But 
+: 3779 8 3 now 
+: 3788 8 4 you 
+: 3797 6 3 must 
+: 3804 8 6 se
+: 3813 3 6 ver 
+- 3816
+: 3820 8 5 You’re 
+: 3829 8 4 brea
+: 3838 7 3 king 
+: 3846 7 3 the 
+: 3855 63 3 girl 
+- 3918
+: 3929 24 8 He 
+: 3955 25 6 loves 
+* 3981 24 0 no 
+* 4006 25 0 one 
+: 4032 61 1 else 
+- 4093 4506
+- 4506
+: 4531 8 -1 Twis
+: 4540 7 0 ting 
+: 4548 8 0 and 
+: 4557 7 1 tur
+: 4566 3 1 ning 
+- 4569
+: 4573 7 1 Your 
+: 4581 4 2 feel
+: 4586 3 5 ~
+: 4590 7 4 lings 
+: 4598 7 3 are 
+: 4607 7 6 bur
+: 4615 4 6 ning 
+- 4619
+: 4623 6 5 You’re 
+: 4631 7 2 brea
+: 4639 9 3 king 
+: 4649 6 3 the 
+* 4657 54 3 girl 
+- 4711
+: 4731 24 8 She 
+: 4757 22 5 meant 
+: 4781 22 0 you 
+: 4805 24 0 no 
+: 4831 56 1 harm 
+- 4887 4906
+- 4906
+: 4931 9 -1 Think 
+: 4941 5 0 you’re 
+: 4947 7 0 so 
+: 4955 9 1 cle
+: 4966 3 1 ver 
+- 4969
+: 4973 7 1 But 
+: 4981 8 3 now 
+: 4990 7 4 you 
+: 4998 7 3 must 
+: 5006 8 6 se
+: 5015 4 6 ver 
+- 5019
+: 5023 6 5 You’re 
+: 5030 8 2 brea
+: 5039 7 3 king 
+: 5047 7 3 the 
+: 5056 57 3 girl 
+- 5113
+: 5130 22 8 He 
+: 5154 24 6 loves 
+: 5180 24 0 no 
+: 5205 24 0 one 
+: 5231 52 1 else 
+E

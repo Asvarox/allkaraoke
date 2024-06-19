@@ -1,0 +1,856 @@
+#ARTIST:Alligatoah
+#TITLE:Trostpreis
+#CREATOR:Webi
+#BPM:253,6
+#YEAR:2011
+#PREVIEWSTART:64
+#VIDEO:v=ygneL83Adu4
+#GENRE:Rap
+#LANGUAGE:German
+#GAP:23864,47949526814
+#ALLKARAOKE_ID:alligatoah-trostpreis
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.293Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_PREVIEWEND:104
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Alligatoah - Trostpreis.mp3
+F 17 1 0 Dar
+F 20 1 0 ling, 
+F 22 1 0 du 
+F 25 1 0 hast 
+F 28 1 0 aus 
+F 31 1 0 mei
+F 34 1 0 nem 
+F 36 1 0 Le
+F 39 1 0 ben 
+F 41 1 0 ei
+F 44 1 0 ne 
+F 46 1 0 Po
+F 49 1 0 ny-
+F 52 1 0 Ranch 
+F 55 1 0 ge
+F 58 1 0 schaf
+F 60 1 0 fen 
+- 61
+F 63 1 0 Des
+F 66 1 0 halb 
+F 69 1 0 möch
+F 71 1 0 te 
+F 74 1 0 ich 
+F 76 1 0 dir 
+F 79 1 0 heu
+F 81 1 0 te 
+F 84 1 0 ein 
+F 87 1 0 paar 
+F 89 1 0 Kom
+F 92 1 0 pli
+F 95 1 0 men
+F 97 1 0 te 
+F 100 1 0 mach
+F 103 1 0 en 
+- 104
+F 106 1 0 Schließ 
+F 109 1 0 die 
+F 111 1 0 Aug
+F 114 1 0 en 
+F 116 1 0 und 
+F 118 1 0 ich 
+F 121 1 0 geb’ 
+F 123 1 0 dir 
+F 126 1 0 ’ne 
+F 129 1 0 Mil
+F 132 1 0 lion
+F 134 1 0 en 
+F 137 2 0 Hand
+F 142 1 0 küs
+F 145 1 0 se 
+- 146
+F 148 1 0 Du 
+F 150 1 0 siehst 
+F 152 3 0 gut 
+F 158 1 0 aus, 
+F 161 1 0 ich 
+F 164 1 0 hab’ 
+F 167 1 0 auch 
+F 169 1 0 nich’ 
+F 171 1 0 so 
+F 174 1 0 ho
+F 176 1 0 he 
+F 179 2 0 An
+F 184 1 0 sprüch
+F 187 1 0 e 
+- 188
+F 190 1 0 Nein, 
+F 192 1 0 ich 
+F 199 4 0 lieb’ 
+F 204 1 0 dich 
+F 207 2 0 so, 
+F 212 1 0 du 
+F 217 1 0 musst 
+F 220 1 0 mir 
+F 222 1 0 nich’ 
+F 225 1 0 ma’ 
+F 227 1 0 Es
+F 230 1 0 sen 
+F 233 1 0 mach
+F 235 3 0 en 
+- 238
+F 241 1 0 Was 
+F 243 1 0 man 
+F 246 1 0 nich’ 
+F 249 1 0 kann, 
+F 251 1 0 soll
+F 254 1 0 te 
+F 257 1 0 man 
+F 260 2 0 bes
+F 264 3 0 ser 
+F 268 2 0 las
+F 272 2 0 sen 
+- 274
+F 276 4 0 Girl, 
+F 282 3 0 lehn 
+F 287 1 0 dich 
+F 290 1 0 zu
+F 292 4 0 rück, 
+F 298 1 0 ich 
+F 300 1 0 mach 
+F 303 1 0 al
+F 305 1 0 les 
+F 308 1 0 für 
+F 311 4 0 dich 
+- 315
+F 318 1 0 Wenn 
+F 321 1 0 ich 
+F 324 3 0 Zeit 
+F 330 3 0 hab’ 
+F 334 1 0 und 
+F 337 1 0 es 
+F 340 1 0 nich’ 
+F 343 1 0 zu 
+F 346 2 0 an
+F 350 1 0 stren
+F 353 1 0 gend 
+F 356 3 0 is’ 
+- 359
+F 361 1 0 Du 
+F 364 1 0 bist 
+F 366 3 0 nich’ 
+F 371 1 0 wie 
+F 374 1 0 die 
+F 376 1 0 an
+F 379 1 0 der’n, 
+F 382 1 0 nich’ 
+F 385 2 0 so’n 
+F 388 2 0 Mo
+F 393 1 0 de
+F 396 3 0 püpp
+F 401 4 0 chen 
+- 405
+F 406 1 0 Mit 
+F 410 2 0 gro
+F 414 1 0 ßen 
+F 417 3 0 Brüs
+F 423 1 0 ten, 
+F 426 1 0 die 
+F 429 1 0 ge
+F 431 3 0 bo
+F 436 1 0 ren 
+F 439 3 0 hübsch 
+F 444 1 0 sind 
+- 445
+F 447 2 0 Du 
+F 452 1 0 hast 
+F 455 1 0 dein’ 
+F 458 1 0 eig
+F 461 1 0 ’nen 
+F 463 3 0 Style, 
+F 468 4 0 oh 
+F 473 3 0 hol
+F 478 1 0 de 
+F 481 3 0 Maid 
+- 484
+F 486 1 0 Doch 
+F 489 1 0 dei
+F 492 1 0 nen 
+F 494 3 0 Zäh
+F 499 2 0 nen 
+F 504 2 0 schmei
+F 509 2 0 chelt 
+F 512 1 0 ein 
+F 515 2 0 gol
+F 520 1 0 d’nes 
+F 524 4 0 Kleid 
+- 528
+F 531 4 0 Ich 
+F 537 1 0 schau’ 
+F 540 1 0 dir 
+F 543 1 0 ins 
+F 545 1 0 Ge
+F 548 1 0 sicht 
+F 551 1 0 und 
+F 553 1 0 denk’ 
+F 556 1 0 an 
+F 559 3 0 Re
+F 564 1 0 gen
+F 567 3 0 bö
+F 572 1 0 gen 
+- 573
+F 576 1 0 Die 
+F 578 1 0 sind 
+F 581 1 0 we
+F 585 1 0 nigs
+F 588 1 0 tens 
+F 591 2 0 schön, 
+F 596 1 0 nur 
+F 599 1 0 dein 
+F 602 3 0 Face 
+F 607 1 0 is’ 
+F 611 1 0 stö
+F 615 1 0 rend 
+- 616
+F 618 2 0 Ach 
+F 622 3 0 ja, 
+F 627 1 0 ich 
+F 629 1 0 muss 
+F 632 1 0 dir 
+F 634 1 0 da 
+F 637 1 0 noch 
+F 640 1 0 so 
+F 642 1 0 ein 
+F 645 3 0 Ding 
+F 650 1 0 er
+F 653 3 0 zähl’n 
+- 656
+F 658 1 0 A
+F 660 1 0 ber 
+F 664 1 0 du 
+F 667 2 0 wirst 
+F 670 2 0 das 
+F 674 1 0 be
+F 677 2 0 stimmt 
+F 682 1 0 ver
+F 685 5 0 steh’n 
+- 690
+: 693 3 -1 Schatz, 
+: 698 2 -1 es 
+: 701 2 -1 tut 
+: 706 2 -1 mir 
+: 709 1 -1 so
+: 711 2 -3 ~
+: 714 7 -1 ~ 
+: 725 4 -5 leid
+: 730 6 -8 ~ 
+- 736
+: 740 2 7 Du 
+: 743 1 7 bist 
+: 745 2 7 nur 
+: 748 2 7 der 
+: 751 4 14 Trost
+: 756 5 12 ~
+: 767 5 9 preis
+: 773 6 11 ~ 
+- 779
+: 782 1 -1 Und 
+: 784 1 -1 im
+: 786 2 -1 mer, 
+: 789 1 -1 wenn 
+: 791 2 -1 der 
+: 794 2 -1 Mond
+: 797 2 -3 ~
+: 800 6 -1 ~ 
+: 810 4 -5 scheint
+: 815 6 -8 ~ 
+- 821
+: 826 4 -5 Denk’ 
+: 831 4 -5 ich, 
+: 837 3 -3 da 
+: 841 3 -3 is’ 
+: 845 2 -3 noch 
+: 848 3 -3 Luft 
+: 853 2 -1 nach 
+: 857 3 0 o
+: 861 4 -1 ben 
+- 865
+: 868 2 -5 Und 
+: 871 1 -5 es 
+: 873 2 -5 tut 
+: 876 2 -5 mir 
+: 879 2 -1 so
+: 882 2 -3 ~
+: 885 5 -1 ~ 
+: 896 4 -5 leid
+: 901 5 -8 ~ 
+- 906
+: 912 1 -5 Du 
+: 914 2 -5 bist 
+: 917 1 -5 nur 
+: 919 2 -5 der 
+: 922 5 2 Trost
+: 928 4 0 ~
+: 938 5 -3 preis
+: 944 5 -1 ~ 
+- 949
+: 952 1 -1 Und 
+: 954 2 -1 im
+: 957 2 -1 mer, 
+: 960 1 -1 wenn 
+: 962 2 -1 der 
+: 965 2 -1 Mond
+: 968 2 -3 ~
+: 971 5 -1 ~ 
+: 981 5 -5 scheint
+: 987 4 -8 ~ 
+- 991
+: 996 4 -5 Denk’ 
+: 1001 2 -5 ich 
+: 1004 2 -5 an 
+: 1008 3 -3 die, 
+: 1012 2 -3 die 
+: 1015 2 -5 mir 
+: 1018 3 -3 da
+: 1022 2 -3 mals 
+: 1026 2 -5 ent
+: 1030 4 -3 flo
+: 1035 3 -5 gen 
+- 1038
+: 1040 4 4 Yea
+: 1045 3 7 y 
+: 1050 3 9 yeah
+: 1054 3 7 ~
+: 1058 4 4 ~ 
+- 1062
+: 1065 2 -1 La
+: 1069 2 -1 la
+: 1072 3 -1 la
+: 1076 3 -3 la
+: 1080 2 -5 la
+: 1083 4 -1 la
+: 1088 3 -3 la 
+- 1091
+: 1099 4 -1 Ohh 
+- 1103
+: 1107 3 -1 La
+: 1111 2 -1 la
+: 1114 3 -1 la
+: 1118 3 -3 la
+: 1122 2 -5 la
+: 1125 4 -1 la
+: 1130 3 -3 la 
+- 1133
+: 1141 4 -1 Ohh 
+- 1145
+: 1150 3 -1 La
+: 1154 3 -1 la
+: 1158 2 2 la
+: 1161 3 2 la
+: 1165 2 -1 la
+: 1168 4 4 la
+: 1173 2 2 la 
+- 1175
+: 1179 8 -3 La
+: 1189 6 -1 la
+: 1199 7 3 la
+: 1210 7 6 la
+: 1222 2 4 la
+: 1225 3 2 ~
+: 1229 4 -1 ~ 
+- 1233
+: 1236 3 -1 La
+: 1240 2 -1 la
+: 1243 3 -1 la
+: 1247 2 -3 la
+: 1250 2 -5 la
+: 1253 4 -1 la
+: 1258 4 -3 la 
+- 1262
+: 1270 4 -1 Ohh 
+- 1274
+: 1279 3 -1 La
+: 1283 2 -1 la
+: 1286 3 -1 la
+: 1290 3 -3 la
+: 1294 2 -5 la
+: 1297 4 -1 la
+: 1302 3 -3 la 
+- 1305
+: 1312 5 -1 Ohh 
+- 1317
+: 1321 3 -1 La
+: 1325 2 -1 la
+: 1328 3 2 la
+: 1332 3 2 la
+: 1336 2 -1 la
+: 1339 4 4 la
+: 1344 3 2 la 
+- 1347
+: 1349 7 -3 La
+: 1360 8 -1 la
+: 1371 6 3 la
+: 1381 6 6 la 
+- 1387
+F 1388 1 0 Du 
+F 1390 1 0 kennst 
+F 1392 1 0 doch 
+F 1394 1 0 mein’ 
+F 1397 1 0 Kum
+F 1400 1 0 pel 
+F 1404 3 0 hier 
+- 1407
+F 1416 3 0 Er 
+F 1420 2 0 war 
+F 1424 1 0 bei 
+F 1427 1 0 sei
+F 1430 1 0 ner 
+F 1433 2 0 Freun
+F 1437 2 0 din 
+F 1441 2 0 ein 
+F 1444 3 0 klein 
+F 1449 3 0 bis
+F 1454 2 0 schen 
+F 1459 2 0 di
+F 1462 1 0 rek
+F 1465 3 0 ter 
+- 1468
+F 1479 3 0 Schatz, 
+F 1483 1 0 wir 
+F 1486 1 0 ver
+F 1489 1 0 brach
+F 1492 1 0 ten 
+F 1494 1 0 schö
+F 1497 1 0 ne 
+F 1501 3 0 Ta
+F 1506 1 0 ge 
+F 1508 1 0 zu
+F 1511 5 0 samm’ 
+- 1516
+F 1522 1 0 Fuh
+F 1525 1 0 ren 
+F 1527 1 0 in 
+F 1530 1 0 den 
+F 1533 2 0 Ur
+F 1537 3 0 laub, 
+F 1542 3 0 la
+F 1547 1 0 gen 
+F 1549 1 0 am 
+F 1552 4 0 Strand 
+- 1556
+F 1559 1 0 Ha’m 
+F 1562 1 0 es 
+F 1565 2 0 län
+F 1569 2 0 ger 
+F 1572 1 0 ver
+F 1575 5 0 sucht, 
+F 1587 1 0 doch 
+F 1590 1 0 ich 
+F 1593 1 0 hab’ 
+F 1596 1 0 fest
+F 1599 1 0 ge
+F 1602 3 0 stellt 
+- 1605
+F 1610 1 0 Der 
+F 1613 1 0 Toas
+F 1616 1 0 ter 
+F 1618 1 0 is’ 
+F 1621 1 0 in
+F 1624 1 0 tel
+F 1627 1 0 li
+F 1629 2 0 gen
+F 1633 1 0 ter 
+F 1636 1 0 als 
+F 1638 3 0 du, 
+F 1644 3 0 lieg’ 
+- 1647
+F 1650 2 0 Wach 
+F 1655 1 0 jed
+F 1658 1 0 e 
+F 1661 1 0 Nacht 
+F 1664 1 0 mit 
+F 1666 1 0 dir 
+F 1669 1 0 En
+F 1672 1 0 gel 
+F 1674 1 0 in 
+F 1677 1 0 mei
+F 1679 1 0 nem 
+F 1682 3 0 Arm’ 
+- 1685
+F 1687 1 0 Im
+F 1690 1 0 mer, 
+F 1693 1 0 wenn 
+F 1695 1 0 du 
+F 1698 6 0 schläfst, 
+F 1711 1 0 ban
+F 1714 1 0 ge 
+F 1717 1 0 ich 
+F 1720 1 0 dei
+F 1723 1 0 ne 
+F 1725 4 0 Mom 
+- 1729
+F 1735 1 0 Als 
+F 1738 1 0 ich 
+F 1740 1 0 mal 
+F 1743 1 0 ge
+F 1746 2 0 sagt 
+F 1750 1 0 hab’, 
+F 1753 1 0 dass 
+F 1756 1 0 kei
+F 1759 1 0 ne 
+F 1762 1 0 so 
+F 1765 1 0 wie 
+F 1767 3 0 du 
+F 1772 1 0 ist 
+- 1773
+F 1776 1 0 Da 
+F 1778 1 0 wuss
+F 1781 1 0 te 
+F 1783 1 0 ich 
+F 1786 1 0 noch 
+F 1789 3 0 nicht, 
+F 1794 1 0 dass 
+F 1797 1 0 du 
+F 1799 1 0 drei
+F 1802 2 0 ßig 
+F 1805 1 0 Ki
+F 1808 1 0 lo 
+F 1810 3 0 zu
+F 1815 1 0 nimmst 
+- 1816
+F 1818 1 0 Und 
+F 1820 1 0 du 
+F 1823 1 0 hast 
+F 1826 1 0 echt 
+F 1829 1 0 ge
+F 1832 1 0 dacht, 
+F 1835 1 0 ich 
+F 1838 1 0 geh’ 
+F 1840 1 0 nich’ 
+F 1842 1 0 oh
+F 1845 1 0 ne 
+F 1848 1 0 dich 
+F 1850 1 0 fort 
+- 1851
+F 1855 1 0 Ich 
+F 1857 2 0 hab’ 
+F 1860 1 0 jetz’ 
+F 1863 1 0 ei
+F 1866 1 0 ne 
+F 1869 1 0 Neu
+F 1871 1 0 e, 
+F 1873 1 0 die 
+F 1876 1 0 mir 
+F 1879 1 0 bil
+F 1881 1 0 lig 
+F 1883 1 0 Dro
+F 1886 1 0 gen 
+F 1889 1 0 be
+F 1892 5 0 sorgt 
+- 1897
+F 1906 2 0 Stimmt, 
+F 1911 1 0 du 
+F 1914 1 0 hast 
+F 1917 1 0 Recht, 
+F 1920 1 0 wir 
+F 1922 1 0 hat
+F 1925 1 0 ten 
+F 1927 1 0 wirk
+F 1929 2 0 lich 
+F 1932 2 0 gu
+F 1935 2 0 te 
+F 1938 3 0 Zei
+F 1942 2 0 ten 
+- 1944
+F 1946 1 0 Ich 
+F 1948 1 0 fick’ 
+F 1951 1 0 in 
+F 1954 1 0 dein 
+F 1957 1 0 Ge
+F 1960 4 0 sicht 
+F 1967 1 0 und 
+F 1970 1 0 du 
+F 1973 1 0 frisst 
+F 1976 1 0 mei
+F 1979 1 0 ne 
+F 1982 3 0 Schei
+F 1987 3 0 ße 
+- 1990
+F 1992 3 0 Schau, 
+F 1996 1 0 wie 
+F 1999 1 0 schön 
+F 2002 3 0 blau 
+F 2007 1 0 dei
+F 2010 1 0 ne 
+F 2012 2 0 Au
+F 2017 3 0 gen 
+F 2022 7 0 sind 
+- 2029
+F 2033 3 0 Ti
+F 2039 4 0 mi 
+F 2044 1 0 hat 
+F 2047 1 0 dich 
+F 2050 1 0 mit 
+F 2053 1 0 der 
+F 2056 3 0 Faust 
+F 2061 3 0 ge
+F 2067 6 0 schminkt 
+- 2073
+F 2076 1 0 Frau
+F 2078 1 0 en 
+F 2081 4 0 wie 
+F 2087 2 0 dich 
+F 2092 1 0 gibt’s 
+F 2095 1 0 in 
+F 2098 3 0 tau
+F 2103 3 0 send 
+F 2109 3 0 Städ
+F 2114 3 0 ten 
+- 2117
+F 2120 2 0 Lau
+F 2125 2 0 se
+F 2130 4 0 mäd
+F 2136 3 0 chen, 
+F 2141 2 0 laufe Mädchen 
+- 2143
+: 2146 4 -1 Schatz, 
+: 2151 3 -1 es 
+: 2155 3 -1 tut 
+: 2159 2 -1 mir 
+: 2162 3 -1 so
+: 2166 2 -3 ~
+: 2169 6 -1 ~ 
+: 2178 4 -5 leid
+: 2183 6 -8 ~ 
+- 2189
+: 2194 2 -5 Du 
+: 2197 2 -5 bist 
+: 2200 1 -5 nur 
+: 2202 2 -5 der 
+: 2205 5 2 Trost
+: 2211 6 0 ~
+: 2221 4 -3 preis
+: 2226 7 -1 ~ 
+- 2233
+: 2235 1 -1 Und 
+: 2237 1 -1 im
+: 2239 2 -1 mer, 
+: 2242 1 -1 wenn 
+: 2244 2 -1 der 
+: 2247 2 -1 Mond
+: 2250 2 -3 ~
+: 2253 6 -1 ~ 
+: 2263 4 -5 scheint
+: 2268 6 -8 ~ 
+- 2274
+: 2280 3 -5 Denk’ 
+: 2285 3 -5 ich, 
+: 2290 3 -3 da 
+: 2294 3 -3 is’ 
+: 2299 2 -3 noch 
+: 2302 4 -3 Luft 
+: 2307 2 -1 nach 
+: 2310 3 0 o
+: 2314 5 -1 ben 
+- 2319
+: 2323 1 -5 Und 
+: 2325 1 -5 es 
+: 2327 2 -5 tut 
+: 2330 1 -5 mir 
+: 2332 2 -1 so
+: 2335 2 -3 ~
+: 2338 5 -1 ~ 
+: 2349 4 -5 leid
+: 2354 6 -8 ~ 
+- 2360
+: 2365 2 7 Du 
+: 2368 1 7 bist 
+: 2370 1 7 nur 
+: 2372 2 7 der 
+: 2376 5 14 Trost
+: 2382 7 12 ~
+: 2392 4 9 preis
+: 2397 6 11 ~ 
+- 2403
+: 2406 1 -1 Und 
+: 2408 2 -1 im
+: 2411 1 -1 mer, 
+: 2413 2 -1 wenn 
+: 2416 2 -1 der 
+: 2419 1 -1 Mond
+: 2421 2 -3 ~
+: 2424 7 -1 ~ 
+: 2434 4 -5 scheint
+: 2439 7 -8 ~ 
+- 2446
+: 2451 3 -5 Denk’ 
+: 2455 3 -5 ich 
+: 2459 2 -5 an 
+: 2462 3 -3 die, 
+: 2466 2 -3 die 
+: 2469 2 -5 mir 
+: 2472 3 -3 da
+: 2476 3 -3 mals 
+: 2480 2 -5 ent
+: 2483 5 -3 flo
+: 2489 3 -5 gen 
+- 2492
+: 2494 4 4 Yea
+: 2499 3 7 y 
+: 2504 2 9 yeah
+: 2508 3 7 ~
+: 2512 3 4 ~ 
+- 2515
+: 2517 4 -1 La
+: 2522 2 -1 la
+: 2525 3 -1 la
+: 2529 3 -3 la
+: 2533 2 -5 la
+: 2536 4 -1 la
+: 2541 4 -3 la 
+- 2545
+: 2552 5 -1 Ohh 
+- 2557
+: 2561 3 -1 La
+: 2565 2 -1 la
+: 2568 3 -1 la
+: 2572 3 -3 la
+: 2576 2 -5 la
+: 2579 4 -1 la
+: 2584 2 -3 la 
+- 2586
+: 2594 6 -1 Oh 
+- 2600
+: 2604 3 -1 La
+: 2608 2 -1 la
+: 2611 2 2 la
+: 2614 3 2 la
+: 2618 2 -1 la
+: 2621 4 4 la
+: 2626 2 2 la 
+- 2628
+: 2633 8 -3 La
+: 2642 9 -1 la
+: 2653 8 3 la
+: 2664 9 6 la
+: 2675 3 4 la
+: 2679 2 2 ~
+: 2682 3 -1 ~ 
+- 2685
+: 2689 3 -1 La
+: 2693 3 -1 la
+: 2697 3 -1 la
+: 2701 2 -3 la
+: 2704 2 -5 la
+: 2707 4 -1 la
+: 2712 4 -3 la 
+- 2716
+: 2723 5 -1 Ohh 
+- 2728
+: 2732 4 -1 La
+: 2737 2 -1 la
+: 2740 3 -1 la
+: 2744 3 -3 la
+: 2748 2 -5 la
+: 2751 4 -1 la
+: 2756 3 -3 la 
+- 2759
+: 2767 4 -1 Oh 
+- 2771
+: 2775 3 -1 La
+: 2779 3 -1 la
+: 2783 2 2 la
+: 2786 3 2 lala
+: 2790 2 -1 la
+: 2793 3 4 la 
+- 2796
+: 2798 3 2 La
+: 2804 9 -3 la
+: 2814 6 -1 la
+: 2824 5 2 la 
+- 2829
+: 2831 3 -1 Schatz, 
+: 2835 3 -1 es 
+: 2839 3 -1 tut 
+: 2843 2 -1 mir 
+: 2846 2 -1 so
+: 2849 2 -3 ~
+: 2852 5 -1 ~ 
+: 2862 4 -5 leid
+: 2867 5 -8 ~ 
+- 2872
+: 2878 1 -5 Du 
+: 2880 2 -5 bist 
+: 2883 2 -5 nur 
+: 2886 1 -5 der 
+: 2888 5 2 Trost
+: 2894 4 0 ~
+: 2905 4 -3 preis
+: 2910 5 -1 ~ 
+- 2915
+: 2919 1 -1 Und 
+: 2921 2 -1 im
+: 2924 1 -1 mer, 
+: 2926 2 -1 wenn 
+: 2929 2 -1 der 
+: 2932 1 -1 Mond
+: 2934 1 -3 ~
+: 2936 6 -1 ~ 
+: 2947 4 -5 scheint
+: 2952 5 -8 ~ 
+- 2957
+: 2964 3 -5 Denk’ 
+: 2969 5 -5 ich, 
+: 2975 3 -3 da 
+: 2979 2 -3 is’ 
+: 2982 2 -3 noch 
+: 2986 4 -3 Luft 
+: 2991 2 -1 nach 
+: 2994 4 0 o
+: 2999 4 -1 ben 
+- 3003
+: 3006 2 -5 Und 
+: 3009 1 -5 es 
+: 3011 2 -5 tut 
+: 3014 2 -5 mir 
+: 3017 2 -1 so
+: 3020 2 -3 ~
+: 3023 4 -1 ~ 
+: 3033 4 -5 leid
+: 3038 6 -8 ~ 
+- 3044
+: 3049 1 -5 Du 
+: 3051 2 -5 bist 
+: 3054 1 -5 nur 
+: 3056 2 -5 der 
+: 3059 5 2 Trost
+: 3065 5 0 ~
+: 3075 5 -3 preis
+: 3081 5 -1 ~ 
+- 3086
+: 3090 1 -1 Und 
+: 3092 1 -1 im
+: 3094 2 -1 mer, 
+: 3097 1 -1 wenn 
+: 3099 2 -1 der 
+: 3102 1 -1 Mond
+: 3104 2 -3 ~
+: 3107 5 -1 ~ 
+: 3118 4 -5 scheint
+: 3123 5 -8 ~ 
+- 3128
+: 3134 3 -5 Denk’ 
+: 3138 3 -5 ich 
+: 3142 3 -5 an 
+: 3146 2 -3 die, 
+: 3149 2 -3 die 
+: 3152 2 -5 mir 
+: 3155 3 -3 da
+: 3159 3 -3 mals 
+: 3163 3 -5 ent
+: 3167 4 -3 flo
+: 3172 3 -5 gen 
+- 3175
+: 3178 4 4 Yea
+: 3183 4 7 y 
+: 3188 2 9 yeah
+: 3191 3 7 ~
+: 3195 6 4 ~ 
+E

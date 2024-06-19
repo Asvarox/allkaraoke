@@ -1,0 +1,205 @@
+#ARTIST:Parry Gripp & Brianne Drouhard
+#TITLE:Space Unicorn
+#CREATOR:jmfb
+#BPM:240,06
+#YEAR:2011
+#VIDEO:v=17o1OlroNSE
+#GENRE:Children's Music
+#LANGUAGE:English
+#GAP:9095,24993751562
+#ALLKARAOKE_ID:parry-gripp-brianne-drouhard-space-unicorn
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:37.095Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:0,77
+#P1:Space Unicorn
+#MP3:Parry Gripp and Brianne Drouhard - Space Unicorn.mp3
+#COVER:Parry Gripp and Brianne Drouhard - Space Unicorn.jpg
+#MEDLEYSTARTBEAT:0
+#MEDLEYENDBEAT:366
+: 16 6 6 Space 
+* 25 2 6 u
+* 28 1 9 ni
+: 30 8 9 corn
+- 38
+: 48 2 11 Soar
+: 52 2 11 ing 
+: 56 3 11 through 
+: 60 1 9 the 
+: 62 10 9 stars
+- 72
+: 78 1 6 De
+* 81 2 6 liv
+* 84 1 6 er
+* 86 4 6 ing 
+* 92 1 11 the 
+: 94 7 11 rain
+: 104 5 9 bows
+- 109
+: 112 3 2 all 
+: 116 1 2 a
+: 118 5 2 round 
+: 124 1 4 the 
+: 126 8 4 world
+- 134
+: 144 6 6 Space 
+: 152 3 6 u
+: 156 1 9 ni
+: 158 8 9 corn
+- 166
+: 176 3 11 Shin
+: 180 1 11 ing 
+: 183 3 11 in 
+: 188 1 9 the 
+: 190 6 9 night
+- 196
+: 208 3 6 Smiles 
+* 213 1 6 and 
+* 215 3 6 hugs 
+* 221 1 11 for
+: 223 8 11 ev
+: 232 5 9 er
+- 237
+: 240 3 2 All 
+: 244 1 2 a
+: 246 5 2 round 
+: 252 1 4 the 
+: 254 6 4 world
+- 260 268
+- 268
+: 284 2 9 So 
+: 288 7 11 pure 
+: 296 6 9 of 
+: 304 17 6 heart
+- 321 332
+- 332
+: 348 2 4 And 
+: 352 8 4 strong 
+: 361 5 2 of 
+: 368 14 6 mind
+- 382 396
+- 396
+: 412 2 11 So 
+: 416 7 11 true 
+: 424 6 9 of 
+: 432 6 6 aim
+- 438
+: 441 1 6 with 
+: 444 2 4 his 
+* 448 4 6 marsh
+* 454 4 6 mal
+* 459 3 9 low 
+: 464 3 9 la
+: 468 19 4 ser
+- 487 496
+- 496
+: 512 4 6 Marsh
+: 518 5 7 mal
+: 524 2 6 low 
+: 528 3 7 la
+: 532 22 6 ser
+- 554 673
+- 673
+: 689 5 6 Space 
+: 696 3 6 u
+: 700 1 9 ni
+: 702 7 9 corn
+- 709
+: 720 4 11 Soar
+* 725 2 11 ing 
+* 729 2 11 through 
+* 732 1 9 the 
+: 735 8 9 stars
+- 743
+: 751 1 6 De
+: 753 3 6 liv
+: 757 1 6 er
+: 759 4 6 ing 
+: 764 2 11 the 
+: 767 7 11 rain
+: 776 6 9 bows
+- 782
+: 785 3 2 all 
+* 789 1 2 a
+* 791 4 2 round 
+* 797 1 4 the 
+: 799 61 4 world
+- 860
+: 863 1 2 De
+: 865 3 2 liv
+: 869 2 2 er
+: 872 3 2 ing 
+: 877 1 6 the 
+: 879 7 6 rain
+: 889 12 2 bows
+- 901 911
+- 911
+: 927 1 2 De
+: 929 3 2 liv
+: 933 1 2 er
+: 935 4 2 ing 
+: 941 1 6 the 
+: 943 7 6 rain
+: 953 22 2 bows
+: 976 10 1 ~
+- 986
+: 991 1 2 De
+: 993 3 2 liv
+* 997 1 2 er
+* 999 4 2 ing 
+* 1005 1 6 the 
+: 1007 7 6 rain
+: 1017 6 2 bows
+- 1023
+: 1026 2 2 all 
+: 1029 1 2 a
+: 1031 5 2 round 
+: 1037 1 1 the 
+: 1040 9 1 world
+- 1049
+: 1055 1 2 De
+* 1057 3 2 liv
+* 1061 1 2 er
+* 1063 3 2 ing 
+* 1069 1 6 the 
+: 1071 7 6 rain
+: 1081 5 2 bows
+- 1086
+: 1089 3 2 all 
+: 1093 1 2 a
+: 1095 5 2 round 
+: 1101 1 2 the 
+: 1103 17 1 world
+: 1121 7 -1 ~
+- 1128 1136
+- 1136
+: 1152 4 2 All 
+: 1157 2 2 a
+: 1160 3 2 round 
+: 1165 1 2 the 
+: 1167 17 1 world
+: 1185 10 -1 ~
+- 1195 1200
+- 1200
+: 1216 3 2 All 
+* 1221 1 2 a
+* 1223 4 2 round 
+* 1229 1 2 the 
+: 1231 17 1 world
+: 1249 7 -1 ~
+- 1256 1264
+- 1264
+: 1280 4 2 All 
+: 1285 1 2 a
+: 1287 4 2 round 
+: 1293 1 2 the 
+: 1295 17 1 world
+: 1313 7 -1 ~
+- 1320 1328
+- 1328
+: 1344 4 2 All 
+* 1349 1 2 a
+* 1351 5 2 round 
+* 1357 2 1 the 
+: 1360 10 1 world
+E
