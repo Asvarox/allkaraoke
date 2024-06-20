@@ -1,0 +1,966 @@
+#ARTIST:Alligatoah
+#TITLE:Nachbeben
+#CREATOR:Webi
+#BPM:523,98
+#YEAR:2022
+#PREVIEWSTART:59
+#VIDEO:v=lI92uiDnUjM
+#LANGUAGE:German
+#GAP:7138,053360815298
+#ALLKARAOKE_ID:alligatoah-nachbeben
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.283Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Alligatoah - Nachbeben.mp3
+#COVER:Alligatoah - Nachbeben [CO].jpg
+#BACKGROUND:Alligatoah - Nachbeben [BG].jpg
+F 35 4 0 Ich 
+F 43 3 0 bal
+F 47 2 0 ler
+- 49 62
+- 62
+F 97 4 0 Ich 
+F 105 3 0 bal
+F 109 2 0 ler
+- 111 128
+- 128
+F 163 2 0 Ich 
+F 171 2 0 bal
+F 175 2 0 ler
+- 177 192
+- 192
+F 227 4 0 Ich 
+F 235 4 0 bal
+F 239 4 0 ler 
+F 245 4 0 mir 
+F 249 4 0 den 
+F 253 4 0 kran
+F 259 4 0 kes
+F 263 4 0 ten 
+F 268 4 0 Vi
+F 275 4 0 de
+F 279 4 0 o
+F 285 4 0 con
+F 291 4 0 tent
+- 295
+F 299 4 0 Ji
+F 307 3 0 ha
+F 311 3 0 di 
+F 315 4 0 John-
+F 323 4 0 Shit, 
+F 332 5 0 e
+F 339 4 0 Fukt 
+F 345 3 0 und 
+F 349 4 0 Bon
+F 357 4 0 dage
+- 361
+F 374 3 0 Seh 
+F 378 3 0 Ar
+F 382 4 0 ti
+F 389 3 0 kel 
+F 393 3 0 von 
+F 397 4 0 Krie
+F 404 3 0 gen 
+F 408 3 0 und 
+F 413 4 0 Kon
+F 421 4 0 flikt
+- 425
+F 437 4 0 Mei
+F 442 4 0 ne 
+F 447 4 0 Mi
+F 453 3 0 mik 
+F 457 4 0 ist 
+F 463 4 0 wie 
+F 469 3 0 'ne 
+F 473 4 0 Be
+F 478 4 0 ton
+F 485 2 0 schicht
+- 487
+F 501 5 0 Denn 
+F 509 5 0 ich 
+F 517 4 0 hab 
+F 525 3 0 al
+F 529 5 0 les 
+F 537 4 0 ge
+F 542 4 0 seh'n
+- 546
+F 559 5 0 Au
+F 565 3 0 ßer 
+F 569 3 0 viel
+F 574 5 0 leicht 
+F 581 3 0 ei
+F 585 3 0 nen 
+F 591 3 0 Mann
+- 594
+F 597 4 0 Der 
+F 603 3 0 sein' 
+F 607 5 0 ei
+F 614 3 0 ge
+F 618 3 0 nen 
+F 622 6 0 Kopf 
+F 639 6 0 isst
+- 645
+F 679 3 0 Al
+F 683 3 0 so 
+F 687 8 0 noch 
+F 703 7 0 nicht, 
+F 719 8 0 mich 
+F 735 6 0 schockt 
+F 750 5 0 nichts
+- 755
+F 761 4 0 I 
+F 769 4 0 wear 
+F 777 4 0 my 
+F 786 8 0 sun
+F 797 4 0 glas
+F 803 3 0 ses 
+F 807 4 0 im 
+F 815 4 0 Dark
+F 823 4 0 net, 
+F 831 4 0 ja
+- 835
+F 840 4 0 In
+F 849 2 0 kog
+F 855 2 0 ni
+F 861 2 0 to-
+F 865 4 0 Tabs, 
+F 876 4 0 die 
+F 882 2 0 Qual 
+F 887 2 0 der 
+F 893 2 0 Wahl
+- 895
+F 903 4 0 Ich 
+F 908 3 0 bin 
+F 913 5 0 Spar
+F 921 3 0 ti
+F 925 3 0 at, 
+F 931 3 0 weil 
+F 935 3 0 nur 
+F 939 3 0 mit 
+F 943 3 0 dick
+F 947 3 0 em 
+F 954 4 0 Fell
+- 958
+F 965 3 0 Werd 
+F 969 3 0 ich 
+F 973 4 0 kein 
+F 984 4 0 schwar
+F 992 4 0 zes 
+F 997 4 0 Schaf 
+F 1005 4 0 am 
+F 1010 4 0 Ar
+F 1017 3 0 beits
+F 1021 4 0 markt
+- 1025
+F 1030 2 0 Denn 
+F 1034 2 0 ich 
+F 1041 2 0 ack
+F 1045 2 0 er 
+F 1049 2 0 wie 
+F 1053 2 0 ein 
+F 1057 2 0 Ir
+F 1061 2 0 rer, 
+F 1065 2 0 um 
+F 1069 2 0 die 
+F 1073 2 0 Krö
+F 1078 2 0 ten 
+F 1082 2 0 zu 
+F 1086 2 0 ver
+F 1090 2 0 dien'
+- 1092
+F 1094 2 0 Und 
+F 1098 2 0 kann 
+F 1102 2 0 mir 
+F 1106 2 0 spä
+F 1110 2 0 ter 
+F 1114 2 0 Din
+F 1118 2 0 ge 
+F 1122 2 0 leis
+F 1126 2 0 ten, 
+F 1130 2 0 so 
+F 1134 2 0 wie 
+F 1139 2 0 Burn
+F 1143 2 0 out-
+F 1147 2 0 The
+F 1151 2 0 ra
+F 1155 2 0 pien
+- 1157
+F 1171 2 0 Gu
+F 1175 2 0 te 
+F 1179 2 0 Ke
+F 1183 2 0 ta
+F 1187 2 0 mi
+F 1191 2 0 ne 
+F 1195 2 0 zu 
+F 1199 4 0 bös
+F 1207 2 0 ar
+F 1211 2 0 ti
+F 1215 2 0 gen 
+F 1219 2 0 Spiel'n
+- 1221
+F 1227 2 0 Ist 
+F 1231 2 0 die 
+F 1235 2 0 Kö
+F 1239 2 0 nigs
+F 1243 2 0 dis
+F 1247 2 0 zi
+F 1251 4 0 plin,
+- 1255
+F 1274 2 0 Yeah 
+F 1283 2 0 yeah 
+F 1291 2 0 yeah
+- 1293
+F 1299 2 0 A
+F 1304 2 0 bends 
+F 1308 2 0 in 
+F 1312 2 0 der 
+F 1316 2 0 Küch
+F 1320 2 0 e 
+F 1324 2 0 mit 
+F 1328 2 0 der 
+F 1332 2 0 Psy
+F 1336 2 0 cho
+F 1340 2 0 ter
+F 1344 2 0 ror
+F 1348 2 0 is
+F 1352 2 0 tin
+- 1354
+F 1365 2 0 Werd 
+F 1369 2 0 ich 
+F 1373 2 0 zum 
+F 1377 2 0 Po
+F 1381 2 0 et, 
+F 1385 2 0 wir 
+F 1389 2 0 re
+F 1393 2 0 den 
+F 1397 2 0 nur 
+F 1401 2 0 in 
+F 1405 2 0 Schmäh
+F 1409 2 0 ge
+F 1413 2 0 dich
+F 1417 2 0 ten
+- 1419
+F 1421 2 0 Denn 
+F 1425 2 0 ich 
+F 1429 2 0 leb 
+F 1433 2 0 in 
+F 1437 2 0 'ner 
+F 1441 2 0 Be
+F 1445 2 0 zieh
+F 1449 2 0 ung 
+F 1453 2 0 mit 
+F 1457 2 0 ver
+F 1461 2 0 ba
+F 1465 2 0 lem 
+F 1469 2 0 Waf
+F 1473 2 0 fen
+F 1477 2 0 gür
+F 1481 2 0 tel
+- 1483
+F 1489 2 0 Es 
+F 1493 2 0 wär 
+F 1497 2 0 doch 
+F 1501 2 0 kei
+F 1505 2 0 ne 
+F 1509 2 0 Lie
+F 1513 2 0 be, 
+F 1517 2 0 wenn 
+F 1521 2 0 wir 
+F 1525 2 0 uns 
+F 1529 2 0 nicht 
+F 1533 2 0 has
+F 1537 2 0 sen 
+F 1541 2 0 wür
+F 1545 2 0 den
+- 1547
+F 1549 3 0 Die
+F 1553 3 0 se 
+F 1559 4 0 Frat
+F 1565 4 0 zen, 
+F 1573 4 0 Bü
+F 1581 4 0 cher, 
+F 1589 4 0 Kom
+F 1597 4 0 men
+F 1603 4 0 ta
+F 1609 2 0 re
+- 1611
+F 1615 4 0 Sind 
+F 1622 4 0 mei
+F 1630 4 0 ne 
+F 1637 4 0 Gu
+F 1645 4 0 te-
+F 1653 4 0 Nacht-
+F 1664 4 0 Lek
+F 1670 4 0 tü
+F 1680 4 0 re
+- 1684
+F 1691 4 0 Und 
+F 1697 4 0 dann 
+F 1703 4 0 in 
+F 1709 4 0 die 
+F 1719 4 0 Tas
+F 1729 4 0 ten 
+F 1738 4 0 prü
+F 1746 4 0 geln
+- 1750
+F 1753 5 0 Als 
+F 1761 3 0 würd 
+F 1765 5 0 ich 
+F 1773 5 0 für 
+F 1783 5 0 Wack
+F 1792 5 0 en 
+F 1799 5 0 ü
+F 1807 5 0 ben
+- 1812
+: 1830 6 11 Un
+: 1839 6 10 ser 
+: 1847 8 11 Kopf 
+: 1863 6 11 ist 
+: 1871 6 10 aus 
+: 1881 10 11 Stahl, 
+: 1895 6 11 wir 
+: 1903 6 10 sind 
+: 1911 6 11 hart
+- 1917
+: 1919 5 10 Bis 
+: 1927 5 11 wir 
+: 1935 5 10 uns 
+: 1943 5 11 a
+: 1951 5 10 bends 
+: 1959 5 11 in 
+: 1967 5 10 den 
+: 1977 11 11 Schlaf 
+: 1993 7 8 le
+: 2001 7 6 gen, 
+: 2041 8 10 Nach
+: 2057 5 8 be
+: 2065 5 6 ben
+- 2070
+: 2089 6 11 Bloß 
+: 2097 6 10 ein 
+: 2105 10 11 Schock, 
+: 2121 6 11 doch 
+: 2129 6 10 noch 
+: 2137 10 11 Jah
+: 2153 6 11 re 
+: 2161 6 10 da
+: 2169 6 11 nach
+- 2175
+: 2177 5 10 Sind 
+: 2185 5 11 uns
+: 2193 5 10 re 
+: 2201 5 11 Her
+: 2209 5 10 zen 
+: 2217 5 11 Por
+: 2225 5 10 zel
+: 2234 12 11 lan
+: 2250 5 8 lä
+: 2259 5 6 den, 
+: 2299 9 10 Nach
+: 2315 5 8 be
+: 2323 7 6 ben
+- 2330
+: 2363 12 3 Pass 
+: 2379 24 3 auf 
+: 2411 6 -1 dei
+: 2419 6 -1 ne 
+: 2427 6 3 See
+: 2435 6 1 le 
+: 2443 6 -6 auf
+: 2451 36 -4 ~
+- 2487 2522
+- 2522
+: 2557 10 10 Nach
+: 2573 6 8 be
+: 2581 6 6 ben
+- 2587
+: 2621 12 3 Pass 
+: 2637 26 3 auf 
+: 2669 6 -1 dei
+: 2677 6 -1 ne 
+: 2685 6 3 See
+: 2693 6 1 le 
+: 2701 6 -6 auf
+: 2709 42 -4 ~
+- 2751 2806
+- 2806
+F 2841 2 0 Ja
+- 2843 3094
+- 3094
+F 3129 2 0 Ich 
+F 3137 4 0 drück
+- 3141 3158
+- 3158
+F 3193 2 0 Ich 
+F 3203 4 0 drück
+- 3207 3222
+- 3222
+F 3257 4 0 Ich 
+F 3267 4 0 drück
+- 3271 3337
+- 3337
+F 3372 2 0 Ich 
+F 3379 2 0 drück 
+F 3387 2 0 den 
+F 3395 2 0 Knopf, 
+F 3403 2 0 Hi
+F 3411 2 0 ro
+F 3415 2 0 shi
+F 3419 4 0 ma
+- 3423
+F 3443 5 0 Noch 
+F 3451 5 0 ein 
+F 3459 5 0 Trau
+F 3467 5 0 ma, 
+F 3475 2 0 hop
+F 3479 2 0 pa
+F 3483 2 0 la
+- 3485
+F 3504 3 0 Ver
+F 3508 3 0 sie
+F 3512 3 0 gel 
+F 3516 3 0 es 
+F 3520 3 0 mit 
+F 3524 3 0 Hei
+F 3528 3 0 sen
+F 3532 3 0 berg-
+F 3536 3 0 Kris
+F 3540 3 0 tall'n
+- 3543
+F 3560 3 0 Wir 
+F 3564 3 0 müs
+F 3568 3 0 sen 
+F 3572 3 0 ganz 
+F 3579 3 0 fes
+F 3583 3 0 te 
+F 3587 3 0 fei
+F 3591 3 0 ern, 
+F 3595 3 0 bis 
+F 3599 3 0 wir 
+F 3603 3 0 fall'n
+- 3606
+F 3631 3 0 Ich 
+F 3638 3 0 scroll 
+F 3643 3 0 ein 
+F 3649 3 0 Jahr
+F 3653 4 0 hun
+F 3660 3 0 dert 
+F 3664 3 0 im 
+F 3668 5 0 Bruch
+F 3676 3 0 teil
+- 3679
+F 3688 3 0 Ei
+F 3692 3 0 ner 
+F 3696 3 0 Se
+F 3702 3 0 kun
+F 3708 3 0 de 
+F 3712 3 0 ins 
+F 3717 3 0 Un
+F 3724 3 0 ter
+F 3729 3 0 be
+F 3733 3 0 wusst
+F 3740 5 0 sein
+- 3745
+F 3757 3 0 Leu
+F 3761 3 0 te, 
+F 3765 3 0 die 
+F 3769 3 0 die
+F 3773 3 0 sen 
+F 3777 3 0 Ar
+F 3781 3 0 ti
+F 3785 3 0 kel 
+F 3789 3 0 ge
+F 3793 4 0 liket 
+F 3801 2 0 ham'
+- 3803
+F 3806 2 0 Int'
+F 3810 2 0 res
+F 3815 2 0 sier'n 
+F 3819 2 0 sich 
+F 3823 2 0 auch 
+F 3827 2 0 für 
+F 3831 2 0 Strick
+F 3835 2 0 e 
+F 3839 2 0 und 
+F 3844 2 0 Lei
+F 3848 2 0 tern, 
+F 3852 2 0 klick
+F 3856 2 0 en 
+F 3860 2 0 sie 
+F 3864 2 0 wei
+F 3868 2 0 ter
+- 3870
+F 3875 2 0 Zu
+F 3879 2 0 hau
+F 3883 2 0 se 
+F 3887 2 0 ist 
+F 3891 2 0 die 
+F 3895 2 0 Stim
+F 3899 2 0 mung 
+F 3903 2 0 wie 
+F 3907 2 0 im 
+F 3911 2 0 Füh
+F 3915 2 0 rer
+F 3919 2 0 bun
+F 3923 2 0 ker, 
+F 3927 2 0 Gift
+- 3929
+F 3943 2 0 Des
+F 3947 2 0 halb 
+F 3951 2 0 mach 
+F 3955 2 0 ich 
+F 3959 2 0 wie
+F 3963 2 0 der 
+F 3967 2 0 ei
+F 3971 2 0 ne 
+F 3975 2 0 Ü
+F 3979 2 0 ber
+F 3983 2 0 stun
+F 3987 2 0 den
+F 3991 2 0 schicht
+- 3993
+F 3999 2 0 Mit 
+F 4007 2 0 mü
+F 4011 2 0 dem 
+F 4016 2 0 Tun
+F 4020 2 0 nel
+F 4025 2 0 blick, 
+F 4032 2 0 e
+F 4036 2 0 gal, 
+F 4044 2 0 ob 
+F 4048 2 0 mich 
+F 4052 2 0 der 
+F 4057 2 0 Chef 
+F 4061 2 0 be
+F 4065 2 0 lei
+F 4069 2 0 digt
+- 4071
+F 4081 2 0 Nur 
+F 4085 2 0 noch 
+F 4089 2 0 sechs
+F 4093 2 0 und
+F 4097 2 0 drei
+F 4101 2 0 ßig 
+F 4105 2 0 Jah
+F 4109 2 0 re 
+F 4113 2 0 bis 
+F 4117 2 0 zum 
+F 4121 2 0 Ren
+F 4127 2 0 ten
+F 4133 2 0 ein
+F 4137 2 0 tritt
+- 4139
+F 4145 2 0 Klar, 
+F 4153 2 0 kann 
+F 4157 2 0 ich 
+F 4161 2 0 dir 
+F 4165 2 0 'ne 
+F 4169 2 0 Nie
+F 4173 2 0 re 
+F 4177 2 0 und 
+F 4181 2 0 'n 
+F 4185 2 0 Ei 
+F 4194 2 0 bra
+F 4198 2 0 ten
+- 4200
+F 4224 2 0 Ich 
+F 4229 2 0 kann 
+F 4233 2 0 al
+F 4237 2 0 les, 
+F 4242 2 0 au
+F 4246 2 0 ßer 
+F 4250 2 0 \"Nein\" 
+F 4257 2 0 sa
+F 4261 2 0 gen
+- 4263
+F 4265 2 0 Ei
+F 4269 2 0 nes 
+F 4273 2 0 Ta
+F 4277 2 0 ges, 
+F 4281 2 0 sa
+F 4285 2 0 gen 
+F 4289 2 0 sie, 
+F 4293 2 0 wer
+F 4297 2 0 den 
+F 4301 2 0 mal 
+F 4305 2 0 dei
+F 4309 2 0 ne 
+F 4313 2 0 Träu
+F 4317 2 0 me 
+F 4321 4 0 wahr
+- 4325
+F 4335 2 0 Ich 
+F 4339 2 0 hof
+F 4343 2 0 fe 
+F 4347 2 0 nicht, 
+F 4355 2 0 denn 
+F 4359 2 0 ich 
+F 4363 2 0 träu
+F 4369 2 0 me 
+F 4375 4 0 schwarz, 
+F 4386 2 0 gu
+F 4391 2 0 te 
+F 4395 2 0 Nacht
+- 4397
+: 4409 5 11 Un
+: 4417 5 10 ser 
+: 4425 13 11 Kopf 
+: 4442 5 11 ist 
+: 4450 5 10 aus 
+: 4458 13 11 Stahl, 
+: 4475 5 11 wir 
+: 4483 5 10 sind 
+: 4490 5 11 hart
+- 4495
+: 4499 5 10 Bis 
+: 4507 5 11 wir 
+: 4515 5 10 uns 
+: 4523 5 11 a
+: 4531 5 10 bends 
+: 4539 5 11 in 
+: 4547 5 10 den 
+: 4555 10 11 Schlaf 
+: 4571 5 8 le
+: 4579 6 6 gen, 
+: 4621 10 10 Nach
+: 4635 6 8 be
+: 4643 6 6 ben
+- 4649
+: 4669 5 11 Bloß 
+: 4677 5 10 ein 
+: 4685 11 11 Schock, 
+: 4701 5 11 doch 
+: 4709 5 10 noch 
+: 4717 13 11 Jah
+: 4733 5 11 re 
+: 4741 5 10 da
+: 4749 5 11 nach
+- 4754
+: 4757 6 10 Sind 
+: 4765 6 11 uns
+: 4773 6 10 re 
+: 4781 6 11 Her
+: 4789 6 10 zen 
+: 4797 6 11 Por
+: 4805 6 10 zel
+: 4813 11 11 lan
+: 4829 6 8 lä
+: 4837 7 6 den, 
+: 4879 8 10 Nach
+: 4893 4 8 be
+: 4901 6 6 ben
+- 4907 4908
+- 4908
+: 4943 10 3 Pass 
+: 4959 26 3 auf 
+: 4991 7 -1 dei
+: 4999 7 -1 ne 
+: 5007 7 3 See
+: 5015 7 1 le 
+: 5023 7 -6 auf
+: 5031 36 -4 ~
+- 5067 5102
+- 5102
+: 5137 9 -2 Nach
+: 5153 5 -4 be
+: 5161 6 -6 ben
+- 5167
+: 5201 13 3 Pass 
+: 5217 27 3 auf 
+: 5249 6 -1 dei
+: 5257 6 -1 ne 
+: 5265 6 3 See
+: 5273 6 1 le 
+: 5281 6 -6 auf
+: 5289 36 -4 ~
+- 5325 5924
+- 5924
+F 5959 2 0 Trotz 
+F 5967 2 0 ei
+F 5971 2 0 nem 
+F 5975 2 0 Le
+F 5979 2 0 ben 
+F 5983 2 0 vol
+F 5987 2 0 ler 
+F 5991 2 0 Fol
+F 5995 2 0 ter
+F 5999 2 0 sze
+F 6003 2 0 nen
+- 6005
+F 6039 2 0 Hab 
+F 6043 2 0 ich 
+F 6047 2 0 kei
+F 6051 2 0 ne 
+F 6055 2 0 Schol
+F 6059 2 0 ge
+F 6063 2 0 fä
+F 6067 2 0 den, 
+F 6080 4 0 äh, 
+F 6088 2 0 Fol
+F 6092 2 0 ge
+F 6096 2 0 schä
+F 6100 2 0 den
+- 6102
+F 6108 2 0 Nur 
+F 6112 2 0 in 
+F 6116 2 0 den 
+F 6120 2 0 Nack
+F 6124 2 0 en
+F 6128 2 0 mus
+F 6132 2 0 keln 
+F 6137 2 0 manch
+F 6145 2 0 mal 
+F 6149 2 0 ein 
+F 6153 2 0 Ach
+F 6161 2 0 sel
+F 6165 2 0 zuck
+F 6169 2 0 en
+- 6171
+: 6175 2 0 Ich 
+: 6179 2 0 hab 
+: 6183 2 0 rich
+: 6191 2 0 tig 
+: 6196 2 0 ge
+: 6202 2 0 tippt 
+: 6209 2 0 im 
+: 6215 2 0 Lot
+: 6219 2 0 to, 
+: 6223 2 0 ich 
+: 6227 2 0 bin 
+: 6231 2 0 mit 
+: 6241 2 0 'nem 
+: 6245 2 0 Mo
+: 6252 2 0 del
+- 6254
+F 6256 2 0 In 
+F 6260 2 0 den 
+F 6268 2 0 Flit
+F 6273 2 0 ter
+F 6280 2 0 woch
+F 6286 2 0 en, 
+F 6293 2 0 ich 
+F 6299 3 0 bin 
+F 6305 3 0 echt 
+F 6311 3 0 be
+F 6316 3 0 ein
+F 6321 3 0 druckt
+- 6324
+F 6325 2 0 Ich 
+F 6330 2 0 sitz 
+F 6337 2 0 auf 
+F 6342 2 0 Kos
+F 6350 2 0 ten, 
+F 6358 2 0 vom 
+F 6362 2 0 Blitz 
+F 6370 2 0 ge
+F 6374 4 0 trof
+F 6383 2 0 fen
+- 6385
+F 6387 2 0 Mit 
+F 6391 2 0 Ge
+F 6395 2 0 nick 
+F 6401 2 0 ge
+F 6405 2 0 broch
+F 6412 2 0 en, 
+F 6425 2 0 al
+F 6429 2 0 les 
+F 6433 2 0 kein 
+F 6441 2 0 Bein
+F 6450 2 0 bruch
+- 6452
+F 6465 2 0 Und 
+F 6470 2 0 wie 
+F 6474 2 0 ich 
+F 6478 2 0 so 
+F 6482 2 0 mit 
+F 6486 2 0 lee
+F 6490 2 0 rem 
+F 6494 2 0 Blick 
+F 6498 2 0 ü
+F 6502 2 0 ber 
+F 6506 2 0 Din
+F 6510 2 0 ge 
+F 6514 2 0 grü
+F 6518 2 0 bel
+- 6520
+F 6536 2 0 Be
+F 6540 2 0 merk 
+F 6544 2 0 ich 
+F 6548 2 0 auf 
+F 6552 2 0 ein
+F 6556 2 0 mal, 
+F 6560 2 0 dass 
+F 6564 2 0 ich 
+F 6568 2 0 mein 
+F 6572 2 0 Kind 
+F 6580 2 0 ver
+F 6586 2 0 prü
+F 6591 2 0 gel
+- 6593
+F 6595 2 0 Und 
+F 6599 2 0 da
+F 6603 2 0 bei 
+F 6607 2 0 Ge
+F 6611 2 0 räu
+F 6615 2 0 sche 
+F 6619 2 0 mach
+F 6623 2 0 e 
+F 6627 2 0 wie 
+F 6631 2 0 ein 
+F 6635 2 0 Pin
+F 6643 2 0 scher-
+F 6651 2 0 Rü
+F 6656 2 0 de
+- 6658
+F 6660 2 0 \"Al
+F 6664 2 0 les 
+F 6668 2 0 o
+F 6672 2 0 kay?\" 
+F 6680 2 0 \"Ich 
+F 6684 2 0 bin 
+F 6692 2 0 nur 
+F 6698 2 0 mü
+F 6705 2 0 de!\"
+- 6707
+F 6708 2 0 Da
+F 6712 2 0 bei 
+F 6716 2 0 dacht 
+F 6720 2 0 ich, 
+F 6724 2 0 dass 
+F 6728 2 0 sich 
+F 6732 2 0 mein 
+F 6740 2 0 Le
+F 6744 2 0 ben 
+F 6748 2 0 zum 
+F 6756 2 0 Gu
+F 6760 2 0 ten 
+F 6766 2 0 wandt
+- 6768
+F 6771 2 0 Doch 
+F 6775 2 0 bin 
+F 6779 2 0 wut
+F 6787 2 0 ent
+F 6795 4 0 brannt 
+F 6805 4 0 im 
+F 6813 2 0 Un
+F 6821 2 0 ru
+F 6825 2 0 he
+F 6829 2 0 stand
+- 6831
+: 6845 4 0 Ich 
+: 6853 2 0 so: 
+: 6873 2 0 \"Vor
+: 6877 2 0 bei 
+: 6885 2 0 ist 
+: 6889 2 0 vor
+: 6893 2 0 bei, 
+: 6901 6 0 juckt\"
+- 6907
+F 6918 2 0 Mei
+F 6922 2 0 ne 
+F 6926 2 0 See
+F 6930 2 0 le 
+F 6934 2 0 so: 
+F 6957 5 0 \"Ein
+F 6965 2 0 spruch\"
+- 6967
+: 6989 5 11 Un
+: 6997 5 10 ser 
+: 7006 9 11 Kopf 
+: 7022 5 11 ist 
+: 7030 5 10 aus 
+: 7038 11 11 Stahl, 
+: 7054 5 11 wir 
+: 7062 5 10 sind 
+: 7070 4 11 hart
+- 7074
+: 7079 4 10 Bis 
+: 7087 5 11 wir 
+: 7095 5 10 uns 
+: 7103 5 11 a
+: 7111 5 10 bends 
+: 7119 5 11 in 
+: 7127 5 10 den 
+: 7135 11 11 Schlaf 
+: 7153 5 8 le
+: 7161 5 6 gen, 
+: 7201 9 10 Nach
+: 7217 5 8 be
+: 7225 7 6 ben
+- 7232
+: 7249 5 11 Bloß 
+: 7257 5 10 ein 
+: 7265 10 11 Schock, 
+: 7281 5 11 doch 
+: 7289 5 10 noch 
+: 7297 10 11 Jah
+: 7313 5 11 re 
+: 7321 5 10 da
+: 7329 5 11 nach
+- 7334
+: 7337 6 10 Sind 
+: 7345 6 11 uns
+: 7353 6 10 re 
+: 7361 6 11 Her
+: 7369 6 10 zen 
+: 7377 6 11 Por
+: 7385 6 10 zel
+: 7393 11 11 lan
+: 7409 6 8 lä
+: 7417 7 6 den, 
+: 7458 9 10 Nach
+: 7475 6 8 be
+: 7483 7 6 ben
+- 7490
+: 7523 9 3 Pass 
+: 7538 26 3 auf 
+: 7571 6 -1 dei
+: 7579 6 -1 ne 
+: 7587 6 3 See
+: 7595 6 1 le 
+: 7603 6 -6 auf
+: 7611 48 -4 ~
+- 7659 7680
+- 7680
+: 7715 8 -2 Nach
+: 7732 4 -4 be
+: 7739 4 -6 ben
+- 7743 7746
+- 7746
+: 7781 8 3 Pass 
+: 7797 24 3 auf 
+: 7829 5 -1 dei
+: 7837 5 -1 ne 
+: 7845 5 3 See
+: 7853 5 1 le 
+: 7861 5 -6 auf
+: 7869 52 -4 ~
+- 7921 8004
+- 8004
+: 8039 12 3 Pass 
+: 8055 25 3 auf 
+: 8087 5 -1 dei
+: 8095 5 -1 ne 
+: 8103 5 3 See
+: 8111 5 1 le 
+: 8119 5 -6 auf
+: 8127 40 -4 ~
+- 8167 8196
+- 8196
+: 8231 11 -2 Nach
+: 8247 4 -4 be
+: 8255 4 -6 ben
+- 8259
+: 8281 8 3 Da
+: 8296 10 3 für 
+: 8312 10 3 gibt's 
+: 8329 12 3 kei
+: 8345 5 -1 nen 
+: 8353 5 -1 Pro
+: 8361 5 3 the
+: 8369 5 1 sen
+: 8377 5 -6 bau
+: 8385 50 -4 ~
+E

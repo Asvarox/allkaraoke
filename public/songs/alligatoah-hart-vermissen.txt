@@ -1,0 +1,653 @@
+#ARTIST:Alligatoah
+#TITLE:Hart vermissen
+#CREATOR:Webi
+#BPM:299,93
+#YEAR:2022
+#PREVIEWSTART:52
+#VIDEO:v=o2_VKF1YbKo
+#LANGUAGE:German
+#GAP:12619,766612209516
+#ALLKARAOKE_ID:alligatoah-hart-vermissen
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.274Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:75
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Alligatoah - Hart vermissen.mp3
+F 20 4 0 Ich 
+F 25 5 0 kann 
+F 31 2 0 nicht 
+F 34 1 0 so 
+F 36 5 0 tun, 
+F 42 4 0 als 
+F 47 2 0 ob 
+F 50 3 0 ich 
+F 54 2 0 eine 
+F 57 6 0 Schmerz
+F 64 2 0 tab
+F 67 4 0 let
+F 72 5 0 te 
+- 77
+F 83 3 -3 Für 
+F 87 2 -3 dein 
+F 90 4 -3 Fern
+F 95 5 -3 weh 
+F 101 1 -3 hät
+F 103 3 -3 te, 
+F 115 2 -3 de
+F 118 1 -3 ine 
+F 120 6 -3 stärks
+F 127 2 -3 te 
+F 130 5 -3 Schwä
+F 136 3 -3 che 
+- 139
+F 153 2 0 Mei
+F 156 1 0 ne 
+F 158 2 0 war 
+F 161 1 0 die 
+F 163 2 0 Ei
+F 166 1 0 fer
+F 168 6 0 sucht 
+F 175 2 0 auf 
+F 178 4 0 dein’n 
+F 184 5 0 Wan
+F 190 1 0 der
+F 192 4 0 ruck
+F 200 6 0 sack 
+- 206
+F 216 4 -3 Weil 
+F 221 1 -3 du 
+F 223 2 -3 mich 
+F 226 2 -3 so 
+F 229 3 -3 ver
+F 233 5 -3 liebt 
+F 239 3 -3 noch 
+F 243 6 -3 nie 
+F 251 2 -3 an
+F 254 3 -3 ge
+F 258 4 -3 guckt 
+F 264 8 -3 hast, 
+F 275 3 -3 passt 
+- 278
+F 281 2 0 Im
+F 284 1 0 mer 
+F 286 2 0 war 
+F 289 1 0 ich 
+F 291 2 0 dir 
+F 294 2 0 ein 
+F 297 3 0 treu
+F 301 3 0 er 
+F 305 7 0 Freund, 
+F 313 5 0 doch 
+F 319 1 0 in 
+F 321 1 0 dei
+F 323 2 0 ner 
+F 326 1 0 See
+F 328 2 0 le 
+F 331 4 0 kreucht 
+F 336 3 0 und 
+F 340 4 0 fleucht’s 
+- 344
+F 347 1 -3 Ich 
+F 349 2 -3 muss 
+F 352 2 -3 dich 
+F 355 2 -3 auf 
+F 358 2 -3 eine 
+F 361 2 -3 Rei
+F 364 2 -3 se 
+F 367 2 -3 geh
+F 370 2 -3 en 
+F 373 2 -3 las
+F 376 2 -3 sen, 
+F 379 1 -3 so 
+F 381 2 -3 als 
+F 384 2 -3 wär 
+F 387 1 -3 es 
+F 389 1 -3 nur 
+F 391 1 -3 ein 
+F 393 2 -3 Feu
+F 396 2 -3 er
+F 399 7 -3 zeug 
+- 406
+F 409 2 0 Wol
+F 412 2 0 lte 
+F 415 1 0 dei
+F 417 2 0 ne 
+F 420 2 0 Flam
+F 423 2 0 me 
+F 426 1 0 nur 
+F 428 2 0 für 
+F 431 2 0 mich, 
+F 434 2 0 doch 
+F 437 2 0 es 
+F 440 1 0 ist 
+F 442 1 0 un
+F 444 3 0 mög
+F 448 1 0 lich, 
+F 450 2 0 dass 
+F 453 1 0 dich 
+F 455 3 0 ein 
+F 459 3 0 Mensch 
+F 463 2 0 be
+F 466 7 0 sitzt 
+- 473
+F 489 4 -3 Mach’s 
+F 494 3 -3 wie 
+F 499 3 -3 ich: 
+F 522 4 -3 Denk 
+F 528 3 -3 an 
+F 533 5 -3 dich 
+- 538
+: 543 4 -2 Ich 
+: 549 4 -2 bin 
+: 554 2 -2 Bal
+: 557 4 -2 last, 
+: 575 3 -2 ich 
+: 580 4 -2 bin 
+: 586 2 -2 Bal
+: 589 7 -2 last 
+- 596
+: 606 4 -3 Ich 
+: 612 4 -3 bin 
+: 618 7 -3 Alt
+: 626 10 -3 last, 
+: 638 4 -3 lass 
+: 643 5 -3 mich 
+: 649 6 -3 fall’n, 
+: 658 8 -3 passt 
+- 666
+: 671 4 -2 Ich 
+: 677 4 -2 bin 
+: 682 2 -2 Bal
+: 685 5 -2 last, 
+: 702 5 -2 ich 
+: 708 3 -2 bin 
+: 714 2 -2 Bal
+: 717 4 -2 last 
+- 721
+: 726 3 0 Du 
+: 730 2 0 bal
+: 733 4 0 lerst, 
+: 742 3 0 ich 
+: 746 3 0 halt’ 
+: 750 5 0 den 
+: 756 4 0 Ball 
+: 761 7 0 flach 
+- 768
+: 778 4 1 Doch 
+: 783 3 5 du 
+: 787 5 6 musst 
+: 793 5 8 ü
+: 799 2 8 ber 
+: 802 4 8 das 
+: 807 8 8 Meer 
+: 816 3 6 oh
+: 820 3 8 ne 
+: 825 4 10 Zü
+: 830 4 10 gel 
+: 835 4 10 am 
+: 840 5 10 Her
+: 846 5 10 zen 
+- 851
+* 855 3 8 Um 
+* 859 9 10 Berg 
+* 869 4 10 und 
+* 874 10 10 Tal 
+* 885 3 8 zu 
+* 891 5 8 küs
+* 897 7 5 sen 
+- 904
+: 916 4 6 Ich 
+: 922 3 8 hal
+: 926 2 8 te 
+: 929 6 8 nicht 
+: 936 7 8 fest, 
+: 944 3 6 was 
+: 948 4 8 zur 
+: 953 3 10 Son
+: 957 6 10 ne 
+: 964 4 10 hin 
+: 969 9 10 wächst 
+- 978
+: 984 11 10 Schmerz 
+: 996 4 10 den 
+: 1001 9 10 Ma
+: 1011 4 8 so
+: 1016 7 8 chis
+: 1024 9 5 ten 
+- 1033
+: 1038 4 6 Du 
+: 1044 4 6 hast 
+: 1049 4 8 Frei
+: 1054 4 8 heit 
+: 1059 3 8 ver
+: 1063 7 8 dient, 
+: 1072 3 8 ich 
+: 1076 5 8 kann 
+: 1082 4 10 leicht 
+: 1087 3 13 ak
+: 1092 4 13 zep
+: 1097 3 13 tier’n 
+- 1100
+: 1103 3 13 Und 
+: 1108 3 13 die 
+: 1113 8 17 wei
+: 1122 4 17 ße 
+: 1127 12 17 Fah
+: 1140 5 15 ne 
+: 1146 5 15 his
+: 1152 7 13 sen 
+- 1159
+: 1167 4 5 A
+: 1172 5 5 ber 
+: 1178 3 8 ehr
+: 1182 6 6 lich 
+: 1189 3 5 ge
+: 1193 15 3 sagt 
+: 1209 6 6 werd’ 
+: 1216 4 5 ich 
+: 1221 4 3 dich 
+: 1226 10 1 hart 
+: 1237 3 3 ver
+: 1241 5 3 mis
+: 1247 8 1 sen 
+- 1255 1281
+- 1281
+F 1301 4 0 Ich 
+F 1306 3 0 kann 
+F 1312 3 0 dich 
+F 1316 5 0 ja 
+F 1322 5 0 schlecht 
+F 1329 2 0 mit 
+F 1333 2 0 der 
+F 1337 5 0 Peit
+F 1344 3 0 sche 
+F 1348 3 0 dres
+F 1353 8 0 sier’n 
+- 1361
+F 1366 3 -3 Auf, 
+F 1371 2 -3 bleib 
+F 1380 3 -3 ge
+F 1386 2 -3 fäl
+F 1389 2 -3 ligst 
+F 1399 7 -3 frei
+F 1407 3 -3 wil
+F 1411 3 -3 lig 
+F 1416 4 -3 hier 
+- 1420
+F 1423 3 0 Denn 
+F 1428 4 0 du 
+F 1433 4 0 sitzt 
+F 1438 4 0 mit 
+F 1443 4 0 dem 
+F 1450 2 0 Ge
+F 1453 2 0 ni
+F 1456 9 0 tal 
+F 1466 2 0 di
+F 1469 4 0 rekt 
+F 1474 5 0 auf 
+F 1481 3 0 hei
+F 1485 4 0 ßen 
+F 1490 5 0 Kohl’n 
+- 1495
+F 1498 3 -3 Ich 
+F 1502 4 -3 sag’ 
+F 1508 4 -3 zu 
+F 1513 3 -3 dei
+F 1517 3 -3 nem 
+F 1521 5 -3 Ge
+F 1528 6 -3 sichts
+F 1535 3 -3 aus
+F 1539 4 -3 druck: 
+F 1545 5 -3 „Schrei 
+F 1551 2 -3 nicht 
+F 1554 3 -3 so!“ 
+- 1557
+F 1562 3 0 Oh
+F 1566 1 0 ne 
+F 1568 1 0 dich 
+F 1570 2 0 ist 
+F 1573 1 0 al
+F 1575 2 0 les 
+F 1578 2 0 mol
+F 1581 4 0 lig 
+F 1586 5 0 kalt 
+- 1591
+F 1594 2 0 Doch 
+F 1597 2 0 ich 
+F 1600 1 0 werd’ 
+F 1602 2 0 auch 
+F 1605 1 0 oh
+F 1607 1 0 ne 
+F 1609 2 0 Ol
+F 1612 4 0 le 
+F 1618 5 0 alt 
+- 1623
+F 1626 2 -3 Mach’ 
+F 1629 1 -3 aus 
+F 1631 2 -3 dei
+F 1634 2 -3 nem 
+F 1637 1 -3 Ring 
+F 1639 2 -3 ein 
+F 1642 3 -3 gol
+F 1646 2 -3 den
+F 1649 2 -3 es 
+F 1652 1 -3 Kalb 
+- 1653
+F 1656 3 -3 O
+F 1660 3 -3 der 
+F 1664 1 -3 re
+F 1666 1 -3 de 
+F 1668 2 -3 mit 
+F 1671 2 -3 ’nem 
+F 1674 2 -3 Vol
+F 1677 3 -3 ley
+F 1681 5 -3 ball 
+- 1686
+F 1689 2 0 Bit
+F 1692 1 0 te 
+F 1694 3 0 schau 
+F 1698 2 0 nicht 
+F 1701 2 0 mehr 
+F 1704 1 0 zu
+F 1706 2 0 rück 
+F 1709 1 0 und 
+F 1711 2 0 fol
+F 1714 1 0 ge 
+F 1716 1 0 dei
+F 1718 2 0 nen 
+F 1721 4 0 ei
+F 1726 2 0 ge
+F 1729 3 0 nen 
+F 1737 4 0 Wün
+F 1742 4 0 schen 
+- 1746
+F 1753 4 -3 Ver
+F 1759 2 -3 gang
+F 1762 4 -3 en
+F 1769 5 -3 heit 
+F 1775 3 -3 ist 
+F 1779 3 -3 so 
+F 1784 26 -3 2015 
+- 1810
+: 1823 4 -2 Ich 
+: 1829 3 -2 bin 
+: 1834 2 -2 Bal
+: 1837 4 -2 last, 
+: 1855 3 -2 ich 
+: 1860 4 -2 bin 
+: 1866 2 -2 Bal
+: 1869 4 -2 last 
+- 1873
+: 1887 3 -3 Ich 
+: 1892 3 -3 bin 
+: 1898 3 -3 Alt
+: 1907 6 -3 last, 
+: 1920 4 -3 lass 
+: 1925 2 -3 mich 
+: 1930 6 -3 fall’n, 
+: 1939 7 -3 passt 
+- 1946
+: 1952 3 -2 Ich 
+: 1957 2 -2 bin 
+: 1962 2 -2 Bal
+: 1965 4 -2 last, 
+: 1984 3 -2 ich 
+: 1988 2 -2 bin 
+: 1993 2 -2 Bal
+: 1996 5 -2 last 
+- 2001
+: 2008 2 0 Du 
+: 2011 2 0 bal
+: 2014 3 0 lerst, 
+: 2021 3 0 ich 
+: 2026 4 0 halt’ 
+: 2032 4 0 den 
+: 2037 4 0 Ball 
+: 2042 7 0 flach 
+- 2049
+: 2059 4 1 Doch 
+: 2064 3 5 du 
+: 2068 5 6 musst 
+: 2074 5 8 ü
+: 2080 2 8 ber 
+: 2083 4 8 das 
+: 2088 8 8 Meer 
+: 2097 3 6 oh
+: 2101 3 8 ne 
+: 2106 4 10 Zü
+: 2111 4 10 gel 
+: 2116 4 10 am 
+: 2121 6 10 Her
+: 2128 1 10 zen 
+- 2129
+* 2132 4 8 Um 
+* 2137 9 10 Berg 
+* 2147 5 10 und 
+* 2153 10 10 Tal 
+* 2164 4 8 zu 
+* 2169 5 8 küs
+* 2175 11 5 sen 
+- 2186
+: 2196 4 6 Ich 
+: 2202 3 8 hal
+: 2206 2 8 te 
+: 2209 6 8 nicht 
+: 2216 7 8 fest, 
+: 2224 3 6 was 
+: 2228 4 8 zur 
+: 2233 3 10 Son
+: 2237 6 10 ne 
+: 2244 4 10 hin 
+: 2249 9 10 wächst 
+- 2258
+: 2264 11 10 Schmerz 
+: 2276 4 10 den 
+: 2281 8 10 Ma
+: 2290 5 8 so
+: 2297 7 8 chis
+: 2305 6 5 ten 
+- 2311
+: 2319 4 6 Du 
+: 2324 4 6 hast 
+: 2329 4 8 Frei
+: 2334 4 8 heit 
+: 2339 3 8 ver
+: 2343 7 8 dient, 
+: 2352 3 8 ich 
+: 2356 5 8 kann 
+: 2362 4 10 leicht 
+: 2367 3 13 ak
+: 2372 4 13 zep
+: 2377 3 13 tier’n 
+- 2380
+: 2384 3 13 Und 
+: 2389 3 13 die 
+* 2394 8 17 wei
+* 2403 4 17 ße 
+* 2408 12 17 Fah
+* 2421 5 15 ne 
+* 2427 5 15 his
+* 2433 7 13 sen 
+- 2440
+: 2446 4 5 A
+: 2451 5 5 ber 
+: 2457 3 8 ehr
+: 2461 6 6 lich 
+: 2468 3 5 ge
+: 2472 15 3 sagt 
+: 2488 6 6 werd’ 
+: 2495 4 5 ich 
+: 2500 4 3 dich 
+: 2505 10 1 hart 
+: 2516 3 3 ver
+: 2520 5 3 mis
+: 2526 8 1 sen 
+- 2534 2565
+- 2565
+: 2585 5 8 Ehr
+: 2591 4 6 lich 
+: 2596 3 5 ge
+: 2600 14 3 sagt 
+: 2617 6 6 werd’ 
+: 2624 4 5 ich 
+: 2629 4 3 dich 
+: 2634 10 1 hart 
+: 2645 3 3 ver
+: 2649 5 3 mis
+: 2655 8 1 sen 
+- 2663 2710
+- 2710
+: 2730 7 6 Wachs 
+: 2738 8 6 muss 
+: 2747 4 6 Flam
+: 2752 5 6 men 
+: 2758 12 10 wei
+: 2771 7 10 chen, 
+: 2779 7 5 wach
+: 2787 8 5 sen 
+: 2796 7 5 muss 
+: 2804 10 5 der 
+: 2815 4 8 Brok
+: 2820 3 6 ko
+: 2824 13 5 li 
+- 2837
+: 2852 5 5 Die 
+: 2858 7 5 Bow
+: 2866 5 5 ling
+: 2872 11 9 ku
+: 2884 4 9 gel 
+: 2889 10 9 folgt 
+: 2900 4 5 der 
+: 2905 8 4 Schwer
+: 2914 10 4 kraft 
+: 2925 5 4 auf 
+: 2931 6 5 den 
+: 2938 16 4 Zeh’n 
+- 2954 2962
+- 2962
+: 2982 6 5 Kling
+: 2989 6 5 en 
+: 2996 7 5 müs
+: 3004 8 5 sen 
+: 3014 13 9 schnei
+: 3028 5 9 den, 
+: 3034 4 4 kling
+: 3039 6 4 en 
+: 3047 11 4 muss 
+: 3059 9 4 das 
+: 3069 6 7 Glock
+: 3076 3 5 en
+: 3080 15 4 spiel 
+- 3095
+: 3113 10 10 Wenn 
+: 3124 6 10 du 
+: 3131 9 10 geh
+: 3141 5 10 en 
+: 3147 8 10 musst, 
+: 3156 6 6 dann 
+: 3163 21 5 geh 
+- 3184
+: 3194 10 6 Du 
+: 3207 14 7 musst 
+: 3224 6 8 ü
+: 3231 2 8 ber 
+: 3234 5 8 das 
+: 3240 5 8 Meer 
+: 3246 5 6 oh
+: 3252 2 8 ne 
+: 3255 6 10 Zü
+: 3262 2 10 gel 
+: 3265 6 10 am 
+: 3272 5 10 Her
+: 3278 4 10 zen 
+- 3282
+: 3285 4 8 Um 
+: 3290 8 10 Berg 
+: 3299 5 10 und 
+: 3305 9 10 Tal 
+: 3315 5 8 zu 
+: 3321 6 8 küs
+: 3328 9 5 sen 
+- 3337
+: 3348 5 6 Ich 
+: 3354 4 8 hal
+: 3359 2 8 te 
+: 3362 5 8 nicht 
+: 3368 6 8 fest, 
+: 3375 4 6 was 
+: 3380 3 8 zur 
+: 3384 4 10 Son
+: 3389 4 10 ne 
+: 3394 6 10 hin 
+: 3401 9 10 wächst 
+- 3410
+: 3415 11 10 Schmerz 
+: 3427 4 10 den 
+: 3432 8 10 Ma
+: 3442 4 8 so
+: 3448 7 8 chis
+: 3456 6 5 ten 
+- 3462
+: 3471 3 6 Du 
+: 3475 4 6 hast 
+: 3480 5 8 Frei
+: 3486 4 8 heit 
+: 3491 3 8 ver
+: 3495 7 8 dient, 
+: 3503 3 8 ich 
+: 3507 4 8 kann 
+: 3512 5 10 leicht 
+: 3518 4 13 ak
+: 3523 4 13 zep
+: 3528 3 13 tier’n 
+- 3531
+: 3534 3 13 Und 
+: 3539 3 13 die 
+* 3544 8 17 wei
+* 3553 4 17 ße 
+* 3558 12 17 Fah
+* 3571 5 15 ne 
+* 3577 5 15 his
+* 3583 7 13 sen 
+- 3590
+: 3598 5 5 Ab
+: 3604 4 5 er 
+: 3609 5 8 ehr
+: 3615 4 6 lich 
+: 3620 3 5 ge
+: 3624 16 3 sagt 
+: 3641 6 6 werd’ 
+: 3648 4 5 ich 
+: 3653 4 3 dich 
+: 3658 10 1 hart 
+: 3669 3 3 ver
+: 3673 5 3 mis
+: 3679 8 1 sen 
+- 3687 3716
+- 3716
+: 3736 5 8 Ehr
+: 3742 4 6 lich 
+: 3747 3 5 ge
+: 3751 16 3 sagt 
+: 3768 6 6 werd’ 
+: 3775 4 5 ich 
+: 3780 4 3 dich 
+: 3785 10 1 hart 
+: 3796 3 3 ver
+: 3800 5 3 mis
+: 3806 8 1 sen 
+- 3814 3844
+- 3844
+: 3864 5 8 Ehr
+: 3870 4 6 lich 
+: 3875 3 5 ge
+: 3879 14 3 sagt 
+: 3894 8 6 werd’ 
+: 3903 4 5 ich 
+: 3908 5 3 dich 
+: 3914 11 1 hart 
+: 3926 4 3 ver
+: 3931 5 3 mis
+: 3937 6 1 sen 
+E

@@ -1,0 +1,466 @@
+#ARTIST:KoRn
+#TITLE:Evolution
+#CREATOR:ai-chan
+#BPM:206
+#YEAR:2007
+#VIDEO:v=L99UMoLvkrI
+#LANGUAGE:English
+#GAP:8910,582524271846
+#ALLKARAOKE_ID:korn-evolution
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:37.084Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=45936
+#ALLKARAOKE_REALBPM:103
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2279
+#ALLKARAOKE_VOLUME:0,83
+#P1:Evolution
+#MP3:KoRn - Evolution.mp3
+F 14 3 2 I’m 
+F 18 1 2 digg
+F 20 1 2 ing 
+F 22 1 2 with 
+F 24 1 2 my 
+F 26 3 2 fin
+F 30 3 0 ger
+F 34 7 0 tips, 
+- 41
+F 46 3 2 I’m 
+F 50 1 2 grip
+F 52 1 2 ping 
+F 54 1 2 at 
+F 56 1 2 the 
+F 58 3 2 ground 
+F 62 3 5 I 
+F 66 3 2 stand 
+F 70 1 5 u
+F 72 1 2 pon. 
+- 73
+F 78 3 2 I’m 
+F 82 1 2 sear
+F 84 1 2 ching 
+F 86 3 2 for 
+F 90 3 2 fra
+F 94 3 0 gile 
+F 98 7 0 bones. 
+- 105
+: 106 7 14 E
+: 114 3 12 vo
+: 118 7 10 lu
+: 126 11 9 tion 
+- 137
+F 142 3 2 I’m 
+F 146 1 2 ne
+F 148 1 2 ver 
+F 150 1 2 gon
+F 152 1 2 na 
+F 154 3 2 be 
+F 158 3 0 re
+F 162 7 0 fined; 
+- 169
+F 174 3 2 Keep 
+F 178 1 2 try
+F 180 1 2 ing 
+F 182 1 2 but 
+F 184 1 2 I 
+F 186 3 2 won’t 
+F 190 3 5 as
+F 194 3 2 si
+F 198 1 5 mi
+F 200 1 2 late. 
+- 201
+F 206 1 2 Sure, 
+F 208 1 2 we 
+F 210 3 2 have 
+F 214 3 2 come 
+F 218 4 2 far 
+F 223 2 0 in 
+F 226 7 0 time... 
+- 233
+: 234 7 14 Watch 
+: 242 3 12 the 
+: 246 7 10 bough 
+* 254 11 9 brake 
+- 265
+F 278 1 2 And 
+F 280 1 2 I’m 
+F 282 1 2 sor
+F 284 2 2 ry 
+F 287 2 2 I 
+F 290 3 2 don’t 
+F 294 1 0 be
+F 296 5 0 lieve, 
+- 301
+F 310 1 2 By 
+F 312 1 2 the 
+F 314 1 2 e
+F 316 1 2 vi
+F 318 3 2 dence 
+F 322 3 2 that 
+F 326 1 0 I 
+F 328 5 0 see, 
+- 333
+F 342 1 2 That 
+F 344 1 2 there’s 
+F 346 1 2 a
+F 348 1 2 ny 
+F 350 2 2 hope 
+F 353 4 2 left 
+F 358 1 0 for 
+F 360 5 0 me... 
+- 365
+: 374 2 2 It’s 
+: 378 7 9 e
+: 386 6 7 vo
+: 394 11 9 lu
+: 406 19 2 tion! 
+- 425
+: 438 3 2 Just 
+: 442 7 9 e
+: 450 7 7 vo
+: 458 11 9 lu
+* 470 15 2 tion!
+* 486 1 3 ~
+* 488 3 4 ~
+* 492 17 5 ~ 
+- 509
+: 514 7 7 And 
+: 522 11 9 I, 
+: 536 1 7 I 
+: 538 3 9 do 
+: 542 2 9 not 
+: 546 3 9 dare 
+: 550 1 7 de
+: 552 11 9 ny 
+- 563
+: 567 2 7 The 
+: 570 6 9 basic 
+: 577 4 9 beast 
+: 582 1 9 in
+: 584 9 7 side; 
+- 593
+: 598 3 9 It’s 
+: 602 3 2 right 
+: 606 1 2 he
+: 608 1 2 re, 
+- 609
+: 611 2 2 It’s 
+: 614 3 2 con
+: 618 3 12 trol
+: 622 3 12 ling 
+: 626 3 10 my 
+: 630 11 9 mind! 
+- 641
+: 642 7 7 And 
+: 650 10 9 why 
+: 664 1 7 do 
+: 666 3 9 I 
+: 670 3 9 de
+: 674 3 9 serve 
+: 678 1 7 to 
+: 680 11 9 die? 
+- 691
+: 696 1 7 I’m 
+: 698 3 9 do
+: 702 3 9 mi
+: 706 3 9 na
+: 710 1 7 ted 
+* 712 11 9 by 
+- 723
+: 726 3 2 This 
+: 730 3 2 a
+: 734 3 2 ni
+: 738 3 2 mal 
+: 742 3 2 that’s 
+: 746 3 12 locked 
+: 750 3 12 up 
+: 754 3 10 in
+* 758 11 9 side! 
+- 769 896
+- 896
+F 910 3 2 Close 
+F 914 1 2 up 
+F 916 1 2 to 
+F 918 1 2 get 
+F 920 1 2 a 
+F 922 3 2 real 
+F 926 3 0 good 
+F 930 7 0 view, 
+- 937
+F 942 3 2 I’m 
+F 946 1 2 bet
+F 948 1 2 ting 
+F 950 1 2 that 
+F 952 1 2 the 
+F 954 3 2 spe
+F 958 3 5 cies 
+F 962 3 2 will 
+F 966 1 5 sur
+F 968 5 2 vive. 
+- 973
+F 974 3 2 Hold 
+F 978 1 2 tight, 
+F 980 1 2 I’m 
+F 982 1 2 get
+F 984 1 2 ting 
+F 986 3 0 in
+F 990 3 0 side 
+F 994 3 0 you 
+- 997
+: 1002 7 14 E
+: 1010 3 12 vo
+* 1014 7 10 lu
+* 1022 11 9 tion 
+- 1033
+F 1038 3 2 You...
+F 1042 1 2 And 
+F 1044 1 2 when 
+F 1046 1 2 we’re 
+F 1048 1 2 gonna 
+F 1050 3 2 find 
+F 1054 3 0 these 
+F 1058 7 0 bones, 
+- 1065
+F 1070 3 2 They’re 
+F 1074 1 2 gon
+F 1076 1 2 na 
+F 1078 1 2 want 
+F 1080 1 2 to 
+F 1082 3 2 keep 
+F 1086 3 5 them 
+F 1090 3 2 in 
+F 1094 1 5 a 
+F 1096 5 2 jar. 
+- 1101
+F 1102 3 2 The 
+F 1106 1 2 num
+F 1108 1 2 ber 
+F 1110 3 2 one 
+F 1114 3 2 vi
+F 1118 3 0 rus, 
+F 1122 3 0 caused 
+F 1126 3 -2 by 
+- 1129
+: 1130 7 14 Pro
+: 1138 3 12 cre
+* 1142 7 10 a
+* 1150 11 9 tion 
+- 1161
+F 1174 1 2 And 
+F 1176 1 2 the 
+F 1178 1 2 pla
+F 1180 1 2 net 
+F 1182 3 2 may 
+F 1186 3 2 go 
+F 1190 1 0 a
+F 1192 5 0 stray; 
+- 1197
+F 1206 1 2 In 
+F 1208 1 2 a 
+F 1210 2 2 mil
+F 1213 4 2 lion 
+F 1218 3 2 years 
+F 1222 1 2 they’
+F 1224 1 0 ll 
+F 1226 3 0 say: 
+- 1229
+F 1236 1 2 \"Those 
+F 1238 1 2 mo
+F 1240 1 2 ther 
+F 1242 3 2 fuckers 
+F 1246 3 2 were 
+F 1250 3 2 all 
+F 1254 1 0 de
+F 1256 5 0 ranged!\" 
+- 1261
+: 1270 3 2 It’s 
+: 1274 7 9 e
+: 1282 7 7 vo
+: 1291 10 9 lu
+: 1302 19 2 tion! 
+- 1321
+: 1334 3 5 Just 
+: 1338 7 7 e
+: 1346 7 7 vo
+: 1354 9 9 lu
+: 1366 19 2 tion! 
+- 1385 1396
+- 1396
+: 1410 7 7 And 
+: 1418 11 9 I, 
+: 1432 1 7 I 
+: 1434 3 9 do 
+: 1438 3 9 not 
+: 1442 3 9 dare 
+: 1446 1 7 de
+: 1448 11 9 ny 
+- 1459
+: 1464 1 7 The 
+: 1466 3 9 ba
+: 1470 3 9 sic 
+: 1474 3 9 beast 
+: 1478 1 7 in
+: 1480 11 9 side; 
+- 1491
+: 1494 3 2 It’s 
+: 1498 3 2 right 
+: 1502 3 2 here, 
+: 1506 3 2 it’s 
+: 1510 3 2 con
+: 1514 3 12 trol
+: 1518 3 12 ling 
+: 1522 3 10 my 
+: 1526 11 9 mind! 
+- 1537
+: 1538 7 7 And 
+: 1546 11 9 why 
+: 1560 1 7 do 
+: 1562 3 9 I 
+: 1566 3 9 de
+: 1570 3 9 serve 
+: 1574 1 7 to 
+: 1576 11 9 die? 
+- 1587
+: 1592 1 7 I’m 
+: 1594 3 9 do
+: 1598 3 9 mi
+: 1602 3 9 na
+: 1606 1 7 ted 
+: 1608 11 9 by 
+- 1619
+: 1622 3 2 This 
+: 1626 3 2 a
+: 1630 3 2 ni
+: 1634 3 2 mal 
+: 1638 3 2 that’s 
+: 1642 3 12 locked 
+: 1646 3 12 up 
+: 1650 2 10 in
+* 1654 11 9 side! 
+- 1665 1788
+- 1788
+F 1802 1 -3 Take 
+F 1804 1 -3 a 
+F 1806 1 -3 look 
+F 1808 1 2 a
+F 1810 7 0 round... 
+- 1817 1852
+- 1852
+F 1866 3 2 No
+F 1870 3 -3 thing 
+F 1874 3 0 much 
+F 1878 19 3 has 
+F 1898 7 0 chang
+F 1906 6 -3 ed! 
+- 1912 1918
+- 1918
+F 1932 1 -3 Take 
+F 1934 1 -3 a 
+F 1936 1 -3 look 
+F 1938 1 2 a
+F 1940 7 0 round... 
+- 1947 1980
+- 1980
+F 1994 3 2 No
+F 1998 1 -3 thing 
+F 2000 3 0 much 
+F 2005 19 3 has 
+F 2025 5 0 chang
+F 2031 4 -3 ed! 
+- 2035 2124
+- 2124
+: 2138 1 10 No
+: 2140 3 10 thing 
+: 2144 3 9 much 
+: 2148 1 7 has 
+: 2150 6 2 changed 
+- 2156 2188
+- 2188
+: 2202 1 10 No
+: 2204 3 10 thing 
+: 2208 3 9 much 
+: 2212 1 7 has 
+: 2214 7 2 changed 
+- 2221 2252
+- 2252
+: 2266 1 10 No
+: 2268 3 10 thing 
+: 2272 3 9 much 
+: 2276 3 7 has 
+: 2280 5 2 changed! 
+- 2285 2300
+- 2300
+: 2314 11 9 I, 
+: 2328 1 7 I 
+: 2330 3 9 do 
+: 2334 3 9 not 
+: 2338 3 9 dare 
+: 2342 1 7 de
+: 2344 11 9 ny 
+- 2355
+: 2360 1 7 The 
+: 2362 3 9 ba
+: 2366 3 9 sic 
+: 2370 3 9 beast 
+: 2374 1 7 in
+: 2376 11 9 side; 
+- 2387
+: 2390 3 2 It’s 
+: 2394 3 2 right 
+: 2398 3 2 here, 
+- 2401
+: 2402 3 2 It’s 
+: 2406 3 2 con
+: 2410 3 12 trol
+: 2414 3 12 ling 
+: 2418 3 10 my 
+: 2422 11 9 mind! 
+- 2433
+: 2434 6 7 And 
+: 2442 10 9 why 
+: 2456 1 7 do 
+: 2458 2 9 I 
+: 2462 2 9 de
+: 2466 2 9 serve 
+: 2470 1 7 to 
+: 2472 10 9 die? 
+- 2482
+: 2488 1 7 I’m 
+: 2490 2 9 do
+: 2494 2 9 mi
+: 2498 2 9 na
+: 2502 1 7 ted 
+: 2504 10 9 by 
+- 2514
+: 2518 2 2 This 
+: 2522 2 2 a
+: 2526 2 2 ni
+: 2530 2 2 mal 
+: 2534 2 2 that’s 
+: 2538 2 12 locked 
+: 2542 2 12 up 
+: 2546 2 10 in
+: 2550 10 9 side 
+- 2560 2620
+- 2620
+: 2634 14 9 Why? 
+F 2650 14 9 (why.) 
+F 2666 14 9 (why) 
+F 2682 14 9 (why) 
+- 2696
+: 2698 10 9 Why 
+: 2712 1 7 do 
+: 2714 2 9 I 
+: 2718 2 9 de
+: 2722 2 9 serve 
+: 2726 1 7 to 
+: 2728 10 9 die? 
+- 2738
+F 2744 1 -5 Do 
+F 2746 3 -3 I 
+F 2750 3 -3 de
+F 2754 3 -3 serve 
+F 2758 1 -5 to 
+F 2760 12 -3 Die 
+F 2778 12 -3 Die 
+F 2794 15 -3 Die 
+E

@@ -1,0 +1,781 @@
+#ARTIST:Alligatoah
+#TITLE:Du bist schön
+#CREATOR:Webi
+#BPM:240
+#YEAR:2015
+#VIDEO:v=dlvStoOyEzE
+#GENRE:Hip-Hop
+#LANGUAGE:German
+#GAP:270
+#ALLKARAOKE_ID:alligatoah-du-bist-schon
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.270Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:133
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Alligatoah - Du bist schön.mp3
+#END:227000
+: 16 3 9 Gib 
+: 20 2 9 mir 
+: 23 2 9 ein 
+: 28 3 9 schlau
+: 32 2 11 es 
+: 36 6 9 Buch 
+- 42
+: 48 2 4 Ich 
+: 52 2 9 mach 
+: 57 1 9 die 
+: 59 4 9 Au
+: 64 2 11 gen 
+: 68 3 9 zu 
+- 71
+* 76 13 13 Schön
+: 92 13 9 heits
+: 108 15 4 schlaf 
+- 123 128
+- 128
+: 144 2 9 Zeig 
+: 149 1 9 mir 
+: 151 2 9 den 
+: 156 2 9 Staub 
+: 160 2 11 im 
+: 164 7 9 Flur 
+- 171
+: 176 2 4 Ich 
+: 180 2 9 mach 
+: 185 1 9 die 
+: 187 4 9 Au
+: 193 2 11 gen 
+: 196 5 9 zu 
+- 201
+: 204 13 13 Schön
+: 220 13 9 heits
+: 236 24 4 schlaf 
+- 260 268
+- 268
+F 284 5 9 DJ 
+F 292 2 9 Dea
+F 296 4 9 gle 
+- 300 320
+- 320
+F 336 1 9 Gu
+F 338 1 9 ten 
+F 340 2 9 Mor
+F 344 2 9 gen 
+- 346 360
+- 360
+F 376 1 9 Der 
+F 379 3 9 fei
+F 383 1 9 ne 
+F 385 2 9 Herr 
+F 388 2 9 Ga
+F 393 6 9 toah 
+- 399 401
+- 401
+F 417 2 9 Ich 
+F 420 2 9 bin 
+F 424 2 9 ein 
+F 428 2 9 Phä
+F 432 1 9 no
+F 434 3 9 men, 
+F 439 2 9 ich 
+F 442 1 9 bin 
+F 444 3 9 10 
+F 448 2 9 von 
+F 452 3 9 10 
+- 455
+F 456 2 9 Geo
+F 460 2 9 me
+F 464 1 9 trisch 
+F 466 1 9 per
+F 468 1 9 fekt, 
+F 472 1 9 wie 
+F 474 1 9 ein 
+F 476 2 9 LE
+F 480 2 9 GO-
+F 484 1 9 Face 
+- 485
+F 486 1 9 Ich 
+F 488 1 9 hab 
+F 490 1 9 den 
+F 492 3 9 You
+F 496 1 9 Tu
+F 498 3 9 ber-Look 
+- 501
+F 504 1 9 Wie 
+F 506 1 9 im 
+F 508 2 9 Buch 
+F 512 1 9 und 
+F 514 1 9 ge
+F 516 2 9 druckt 
+- 518
+F 520 1 9 Je
+F 522 1 9 den 
+F 524 2 9 Tag 
+F 528 1 9 fress 
+F 530 1 9 ich 
+F 532 2 9 ein 
+F 536 1 9 neu
+F 538 1 9 es 
+F 540 3 9 Beau
+F 544 1 9 ty
+F 546 1 9 pro
+F 548 1 9 dukt 
+- 549
+F 552 3 9 Ich 
+F 560 1 9 schüt
+F 562 1 9 ze 
+F 564 2 9 mich, 
+F 568 1 9 denn 
+F 570 1 9 ich 
+F 572 1 9 le
+F 574 1 9 se 
+F 576 1 9 nie 
+F 578 1 9 die 
+F 580 2 9 Preis
+F 584 1 9 schil
+F 586 2 9 der 
+- 588
+F 594 1 9 Sie 
+F 596 1 9 dul
+F 598 1 9 den 
+F 600 1 9 kei
+F 602 1 9 ne 
+F 604 1 9 ne
+F 606 1 9 ga
+F 608 1 9 ti
+F 610 1 9 ven 
+F 612 2 9 Weibs
+F 618 1 9 bil
+F 620 2 9 der 
+- 622
+F 624 1 9 Und 
+F 626 1 9 sie 
+F 628 2 9 dul
+F 632 2 9 den 
+F 636 2 9 kei
+F 640 1 9 ne 
+F 642 1 9 Ge
+F 644 2 9 sichts
+F 650 3 9 fal
+F 654 1 9 ten 
+- 655
+F 656 1 9 Mi
+F 658 1 9 chael 
+F 660 2 9 Jack
+F 664 1 9 son 
+F 668 2 9 Style, 
+F 672 1 9 ich 
+F 674 1 9 muss 
+F 676 3 9 Schritt 
+F 680 3 9 hal
+F 684 2 9 ten 
+- 686
+F 688 1 9 Al
+F 690 1 9 so 
+F 692 2 9 trag 
+F 696 1 9 ich 
+F 698 1 9 noch 
+F 700 2 9 mehr 
+F 704 1 9 Schich
+F 706 1 9 ten 
+F 708 1 9 auf 
+- 709
+F 712 2 9 Wer 
+F 716 2 9 will 
+F 720 1 9 schon 
+F 722 1 9 ’ne 
+F 724 2 9 ehr
+F 728 1 9 li
+F 730 1 9 che 
+F 732 2 9 Haut? 
+- 734
+F 736 2 9 Mein 
+F 740 2 9 Lie
+F 744 2 9 blings
+F 748 2 9 rohs
+F 752 2 9 toff: 
+F 764 2 9 Bo
+F 768 2 9 tox 
+- 770
+F 772 2 9 Ich 
+F 776 1 9 ho
+F 778 1 9 le 
+F 780 1 9 al
+F 782 1 9 le 
+F 784 1 9 Prei
+F 786 1 9 se, 
+F 788 1 9 sie 
+F 790 1 9 nen
+F 792 1 9 nen 
+F 794 1 9 mich 
+F 796 2 9 Hohl
+F 800 1 9 kopf 
+- 801
+F 804 3 9 Ey 
+F 808 1 9 yo, 
+F 812 2 9 Spie
+F 816 2 9 glein, 
+F 820 2 9 Spie
+F 824 1 9 glein 
+F 826 1 9 im 
+F 828 3 9 Han
+F 832 2 9 dy 
+- 834
+F 836 3 9 Sag 
+F 842 1 9 mir: 
+F 844 1 9 Bin 
+F 846 4 9 ich 
+F 852 2 9 der 
+F 856 7 9 King? 
+- 863
+F 872 2 9 Der 
+F 876 3 9 Spie
+F 880 2 9 gel 
+F 884 3 9 zö
+F 888 1 9 gert 
+F 890 1 9 ver
+F 892 2 9 le
+F 896 2 9 gen 
+- 898
+F 900 4 9 Dann 
+F 906 1 9 be
+F 908 3 9 ginnt 
+F 912 2 9 er 
+F 916 2 9 zu 
+F 920 2 9 sin
+F 924 8 9 gen 
+- 932 948
+- 948
+: 964 3 6 Du 
+: 968 2 8 bist 
+* 972 12 9 schön 
+- 984
+: 988 5 8 A
+: 994 1 9 ber 
+: 996 3 8 da
+: 1001 2 9 für 
+: 1004 3 13 kannst 
+: 1009 2 9 du 
+: 1012 8 4 nichts 
+- 1020
+: 1028 3 16 We
+: 1032 2 14 der 
+: 1036 3 13 Le
+: 1040 2 9 sen 
+- 1042
+: 1048 2 16 Noch 
+: 1052 3 14 Schrei
+: 1056 2 13 ben, 
+: 1060 2 11 noch 
+: 1064 2 9 was 
+: 1068 3 11 an
+: 1074 1 13 de
+: 1076 11 11 res 
+- 1087
+: 1092 3 6 Du 
+: 1096 2 8 bist 
+: 1100 12 9 schön 
+- 1112
+: 1116 5 8 A
+: 1122 1 9 ber 
+: 1124 3 8 da
+: 1129 2 9 für 
+* 1132 3 13 kannst 
+: 1137 2 9 du 
+: 1140 8 4 nichts 
+- 1148
+: 1156 2 9 Du 
+: 1160 2 11 kannst 
+: 1164 2 13 nicht 
+: 1168 2 13 mal 
+: 1172 2 13 was 
+: 1176 2 13 da
+: 1180 4 14 für 
+- 1184
+: 1188 2 9 Da
+: 1192 2 11 für 
+: 1196 3 13 kannst 
+: 1202 1 16 du 
+* 1204 11 16 nichts 
+- 1215
+: 1220 4 8 Im 
+: 1228 5 9 Früh
+: 1236 4 8 ling 
+: 1244 5 9 denkt 
+: 1252 4 8 das 
+: 1260 3 9 Rös
+: 1268 4 8 lein: 
+- 1272
+: 1276 5 6 \"Wer 
+: 1284 4 4 nicht 
+: 1292 6 6 lei
+: 1300 5 6 den 
+: 1308 5 6 will, 
+: 1316 3 9 muss 
+* 1324 12 13 schön 
+: 1340 9 9 sein.\" 
+- 1349 1431
+- 1431
+F 1447 1 9 Das 
+F 1449 2 9 ver
+F 1453 2 9 steh 
+F 1456 1 9 ich 
+F 1459 4 9 nicht! 
+- 1463 1464
+- 1464
+F 1480 1 9 Da
+F 1482 1 9 bei 
+F 1484 1 9 geb 
+F 1486 1 9 ich 
+F 1488 1 9 mir 
+F 1490 1 9 doch 
+F 1492 1 9 Mü
+F 1494 1 9 he 
+- 1495
+F 1496 1 9 Je
+F 1498 1 9 de 
+F 1500 1 9 Lu
+F 1502 1 9 xus-
+F 1504 1 9 Mo
+F 1506 1 9 de
+F 1508 1 9 mes
+F 1510 1 9 se 
+F 1512 1 9 gibt 
+F 1514 1 9 mir 
+F 1516 1 9 Kom
+F 1518 1 9 pli
+F 1520 1 9 men
+F 1522 1 9 te 
+- 1523
+F 1524 2 9 Schö
+F 1528 1 9 ne 
+F 1530 1 9 Be
+F 1532 1 9 nut
+F 1534 1 9 ze
+F 1536 1 9 ro
+F 1538 1 9 ber
+F 1540 1 9 flä
+F 1542 1 9 che! 
+- 1543
+F 1544 1 9 Und 
+F 1546 1 9 sie 
+F 1548 1 9 ma
+F 1550 1 9 chen 
+F 1552 1 9 mir 
+F 1554 1 9 ein 
+F 1556 1 9 An
+F 1558 1 9 ge
+F 1560 1 9 bot, 
+F 1562 1 9 das 
+F 1564 3 9 Freu
+F 1568 1 9 de 
+F 1570 2 9 weckt 
+- 1572
+F 1576 7 9 99
+F 1586 3 9 % 
+F 1592 1 9 re
+F 1594 1 9 du
+F 1596 2 9 ziert 
+F 1600 1 9 auf 
+F 1602 1 9 mein 
+F 1604 2 9 Äu
+F 1608 1 9 ße
+F 1610 1 9 res 
+- 1611
+F 1616 1 9 Ich 
+F 1618 1 9 muss 
+F 1620 1 9 in 
+F 1622 1 9 die 
+F 1624 1 9 Sa
+F 1626 1 9 chen 
+F 1628 1 9 pas
+F 1630 1 9 sen 
+- 1631
+F 1632 1 9 Hab 
+F 1634 1 9 ich 
+F 1636 1 9 Hun
+F 1638 1 9 ger, 
+F 1640 1 9 gibt 
+F 1642 1 9 es 
+F 1644 2 9 Koch
+F 1648 1 9 wä
+F 1650 3 9 sche 
+- 1653
+F 1664 1 9 Man
+F 1666 1 9 che 
+F 1668 1 9 tra
+F 1670 1 9 gen 
+F 1672 1 9 nur 
+F 1674 1 9 die
+F 1676 1 9 sel
+F 1678 1 9 ben 
+F 1680 2 9 Schrott
+F 1684 1 9 fet
+F 1686 1 9 zen 
+- 1687
+F 1688 1 9 Ich 
+F 1690 1 9 trag 
+F 1692 1 9 je
+F 1694 1 9 den 
+F 1696 1 9 Tag 
+F 1698 1 9 was 
+F 1700 1 9 an
+F 1702 1 9 de
+F 1704 1 9 res 
+- 1705
+F 1708 3 9 Stoff
+F 1712 1 9 wech
+F 1714 3 9 sel 
+- 1717
+F 1728 3 9 Frag 
+F 1732 2 9 nicht, 
+F 1736 2 9 wie 
+F 1740 2 9 alt 
+F 1744 1 9 die 
+F 1746 2 9 sind, 
+F 1750 1 9 die 
+F 1752 1 9 mei
+F 1754 1 9 ne 
+F 1756 2 9 Klei
+F 1760 1 9 der 
+F 1762 2 9 näh’n 
+- 1764
+F 1766 1 9 Auf 
+F 1768 1 9 ei
+F 1770 1 9 ner 
+F 1772 2 9 Ska
+F 1776 1 9 la 
+F 1778 1 9 von 
+F 1780 2 9 eins 
+F 1784 2 9 bis 
+F 1788 3 9 zehn 
+- 1791
+F 1796 3 9 Tja, 
+F 1800 2 9 denn 
+F 1804 1 9 Klei
+F 1806 1 9 der 
+F 1808 1 9 ma
+F 1810 1 9 chen 
+F 1812 1 9 Leu
+F 1814 1 9 te 
+- 1815
+F 1816 1 9 Doch 
+F 1818 1 9 die 
+F 1820 1 9 Leu
+F 1822 1 9 te, 
+F 1824 1 9 die 
+F 1826 1 9 die 
+F 1828 1 9 Klei
+F 1830 1 9 der 
+F 1832 1 9 ma
+F 1834 1 9 chen 
+- 1835
+F 1836 1 9 Leis
+F 1838 1 9 ten 
+F 1840 1 9 sich 
+F 1842 1 9 bis 
+F 1844 1 9 heu
+F 1846 1 9 te 
+F 1848 1 9 lei
+F 1850 1 9 der 
+F 1852 1 9 we
+F 1854 1 9 ni
+F 1856 1 9 ger 
+F 1858 1 9 De
+F 1860 1 9 sig
+F 1862 1 9 ner
+F 1864 1 9 ja
+F 1866 1 9 cken 
+- 1867
+F 1868 2 9 Ich 
+F 1872 1 9 schwei
+F 1874 1 9 fe 
+F 1876 1 9 ab 
+F 1884 2 9 - Spieg
+F 1888 1 9 lein 
+F 1890 1 9 im 
+F 1892 3 9 Han
+F 1896 2 9 dy: 
+- 1898
+F 1900 2 9 Bin 
+F 1903 2 9 ich 
+F 1908 2 9 der 
+F 1912 5 9 King? 
+- 1917
+F 1928 2 9 Der 
+F 1932 3 9 Spie
+F 1936 2 9 gel 
+F 1940 3 9 zö
+F 1944 2 9 gert 
+F 1948 1 9 ver
+F 1950 2 9 le
+F 1953 2 9 gen 
+- 1955
+F 1956 3 9 Dann 
+F 1962 1 9 be
+F 1964 2 9 ginnt 
+F 1968 2 9 er 
+F 1972 2 9 zu 
+F 1976 3 9 sin
+F 1980 5 9 gen 
+- 1985 2004
+- 2004
+: 2020 3 6 Du 
+: 2024 2 8 bist 
+: 2028 12 9 schön 
+- 2040
+: 2044 5 8 A
+: 2050 1 9 ber 
+: 2052 3 8 da
+: 2057 2 9 für 
+: 2060 3 13 kannst 
+: 2065 2 9 du 
+: 2068 8 4 nichts 
+- 2076
+* 2084 3 16 We
+: 2088 2 14 der 
+: 2092 3 13 Le
+: 2096 2 9 sen 
+- 2098
+: 2104 2 16 Noch 
+: 2108 3 14 Schrei
+: 2112 2 13 ben, 
+: 2116 2 11 noch 
+: 2120 2 9 was 
+: 2124 3 11 an
+: 2130 1 13 de
+: 2132 11 11 res 
+- 2143
+: 2148 3 6 Du 
+: 2152 2 8 bist 
+: 2156 12 9 schön 
+- 2168
+: 2172 5 8 A
+: 2178 1 9 ber 
+: 2180 3 8 da
+: 2185 2 9 für 
+: 2188 3 13 kannst 
+: 2193 2 9 du 
+: 2196 8 4 nichts 
+- 2204
+: 2212 2 9 Du 
+: 2216 2 11 kannst 
+: 2220 2 13 nicht 
+: 2224 2 13 mal 
+: 2228 2 13 was 
+: 2232 2 13 da
+* 2236 4 14 für 
+- 2240
+: 2244 2 9 Da
+: 2248 2 11 für 
+: 2252 3 13 kannst 
+: 2258 1 16 du 
+: 2260 11 16 nichts 
+- 2271
+: 2276 4 8 Im 
+: 2284 5 9 Früh
+: 2292 4 8 ling 
+: 2300 5 9 denkt 
+: 2308 4 8 das 
+: 2316 3 9 Rös
+: 2324 4 8 lein: 
+- 2328
+: 2332 5 6 \"Wer 
+: 2340 4 4 nicht 
+: 2348 6 6 lei
+: 2356 5 6 den 
+: 2364 5 6 will, 
+: 2372 3 9 muss 
+: 2380 12 13 schön 
+: 2396 9 9 sein.\" 
+- 2405
+F 2418 1 9 Ich 
+F 2420 1 9 hab 
+F 2422 1 9 mich 
+F 2424 1 9 wohl 
+F 2426 1 9 ver
+F 2428 4 9 hört 
+- 2432
+F 2444 1 9 Wie 
+F 2446 1 9 bit
+F 2449 5 9 te? 
+- 2454
+: 2468 3 6 Du 
+: 2472 2 8 bist 
+* 2476 12 9 schön 
+- 2488
+: 2492 5 8 A
+: 2498 1 9 ber 
+: 2500 3 8 da
+: 2505 2 9 für 
+: 2508 3 13 kannst 
+: 2513 2 9 du 
+: 2516 8 4 nichts 
+- 2524
+* 2532 3 16 We
+: 2536 2 14 der 
+: 2540 3 13 Le
+: 2544 2 9 sen 
+- 2546
+: 2552 2 16 Noch 
+: 2556 3 14 Schrei
+: 2560 2 13 ben, 
+: 2564 2 11 noch 
+: 2568 2 9 was 
+: 2572 3 11 an
+: 2578 1 13 de
+: 2580 11 11 res 
+- 2591
+: 2596 3 6 Du 
+: 2600 2 8 bist 
+: 2604 12 9 schön 
+- 2616
+: 2620 5 8 A
+: 2626 1 9 ber 
+: 2628 3 8 da
+: 2633 2 9 für 
+* 2636 3 13 kannst 
+: 2641 2 9 du 
+: 2644 8 4 nichts 
+- 2652
+: 2660 2 9 Du 
+: 2664 2 11 kannst 
+: 2668 2 13 nicht 
+: 2672 2 13 mal 
+: 2676 2 13 was 
+: 2680 2 13 da
+: 2684 4 14 für 
+- 2688
+: 2692 2 9 Da
+: 2696 2 11 für 
+: 2700 3 13 kannst 
+: 2706 1 16 du 
+* 2708 11 16 nichts 
+- 2719
+: 2724 4 8 Im 
+: 2732 5 9 Früh
+: 2740 4 8 ling 
+: 2748 5 9 denkt 
+: 2756 4 8 das 
+: 2764 3 9 Rös
+: 2772 4 8 lein: 
+- 2776
+: 2780 5 6 \"Wer 
+: 2788 4 4 nicht 
+: 2796 6 6 lei
+: 2804 5 6 den 
+: 2812 5 6 will, 
+: 2820 3 9 muss 
+: 2828 12 13 schön 
+: 2844 9 9 sein.\" 
+- 2853
+: 2864 3 9 Gib 
+: 2868 2 9 mir 
+: 2871 2 9 ein 
+: 2876 3 9 schlau
+: 2880 2 11 es 
+: 2884 6 9 Buch 
+- 2890
+: 2896 2 4 Ich 
+: 2900 2 9 mach 
+: 2905 1 9 die 
+: 2907 4 9 Au
+: 2912 2 11 gen 
+: 2916 3 9 zu 
+- 2919
+: 2924 13 13 Schön
+: 2940 13 9 heits
+: 2956 15 4 schlaf 
+- 2971 2976
+- 2976
+: 2992 2 9 Zeig 
+: 2997 1 9 mir 
+: 2999 2 9 den 
+: 3004 2 9 Staub 
+: 3008 2 11 im 
+: 3012 7 9 Flur 
+- 3019
+: 3024 2 4 Ich 
+: 3028 2 9 mach 
+: 3033 1 9 die 
+: 3035 4 9 Au
+: 3041 2 11 gen 
+: 3044 5 9 zu 
+- 3049
+* 3052 13 13 Schön
+: 3068 13 9 heits
+: 3084 24 4 schlaf 
+- 3108
+: 3120 3 9 Gib 
+: 3124 2 9 mir 
+: 3127 2 9 ein 
+: 3132 3 9 schlau
+: 3136 2 11 es 
+: 3140 6 9 Buch 
+- 3146
+: 3152 2 4 Ich 
+: 3156 2 9 mach 
+: 3161 1 9 die 
+: 3163 4 9 Au
+: 3168 2 11 gen 
+: 3172 3 9 zu 
+- 3175
+: 3180 13 13 Schön
+: 3196 13 9 heits
+: 3212 15 4 schlaf 
+- 3227 3232
+- 3232
+: 3248 2 9 Zeig 
+: 3253 1 9 mir 
+: 3255 2 9 den 
+: 3260 2 9 Staub 
+: 3264 2 11 im 
+: 3268 7 9 Flur 
+- 3275
+: 3280 2 4 Ich 
+: 3284 2 9 mach 
+: 3289 1 9 die 
+: 3291 4 9 Au
+: 3297 2 11 gen 
+* 3300 5 9 zu 
+- 3305
+: 3308 13 13 Schön
+: 3324 13 9 heits
+: 3340 24 4 schlaf 
+- 3364
+: 3372 3 6 Klei
+: 3376 2 4 der 
+: 3380 2 6 mach
+: 3384 2 4 en 
+: 3388 3 6 Leu
+: 3392 2 8 te 
+- 3394
+: 3396 3 6 Doch 
+: 3400 2 4 die 
+: 3404 3 6 Leu
+: 3408 2 6 te, 
+: 3412 2 6 die 
+: 3416 2 8 die 
+* 3420 3 9 Klei
+: 3424 2 8 der 
+: 3428 3 6 mach
+: 3432 2 4 en 
+- 3434
+: 3436 3 9 Leis
+: 3440 2 9 ten 
+: 3444 2 9 sich 
+: 3448 2 9 bis 
+: 3452 2 6 heu
+: 3456 2 6 te 
+- 3458
+: 3460 3 6 Lei
+: 3464 2 6 der 
+: 3468 2 4 we
+: 3472 2 4 ni
+: 3476 2 4 ger 
+: 3480 2 8 De
+: 3484 2 9 sign
+: 3488 2 8 er
+: 3492 3 6 ja
+: 3496 2 4 cken 
+E

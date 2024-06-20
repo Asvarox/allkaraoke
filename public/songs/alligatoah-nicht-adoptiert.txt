@@ -1,0 +1,1346 @@
+#ARTIST:Alligatoah
+#TITLE:Nicht adoptiert
+#CREATOR:Webi
+#BPM:350,19
+#YEAR:2022
+#PREVIEWSTART:65
+#VIDEO:v=k2DMWFQsrI4
+#GENRE:Deutschrap
+#LANGUAGE:German
+#GAP:9524,82052600017
+#ALLKARAOKE_ID:alligatoah-nicht-adoptiert
+#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.289Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_PREVIEWEND:110
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Alligatoah - Nicht adoptiert.mp3
+F 23 2 0 Wenn 
+F 26 1 0 du 
+F 28 2 0 das 
+F 32 3 0 hörst, 
+F 38 2 0 bist 
+F 42 2 0 du 
+F 46 2 0 am 
+F 49 3 0 Le
+F 54 3 0 ben, 
+F 63 2 0 Gra
+F 67 2 0 tu
+F 70 3 0 la
+F 75 5 0 tion 
+- 80
+F 85 1 0 Ich 
+F 88 1 0 wuss
+F 92 1 0 te 
+F 96 1 0 im
+F 99 1 0 mer, 
+- 100
+F 102 2 0 Du 
+F 105 2 0 wirst 
+F 110 4 0 mehr 
+F 115 2 0 als 
+F 119 2 0 ein 
+F 123 2 0 ge
+F 126 3 0 platz
+F 130 2 0 tes 
+F 134 3 0 Kon
+F 139 4 0 dom 
+- 143
+F 148 1 0 Weil 
+F 151 1 0 ich 
+F 154 2 0 vom 
+F 158 2 0 Hei
+F 162 2 0 ra
+F 165 2 0 ten 
+F 169 3 0 nichts 
+F 173 2 0 hielt, 
+- 175
+F 178 2 0 Bist 
+F 182 1 0 du 
+F 184 2 0 als 
+F 188 3 0 Bas
+F 193 2 0 tard 
+F 197 2 0 ge
+F 201 4 0 bor’n 
+- 205
+F 209 2 0 Sie 
+F 212 2 0 fin
+F 216 3 0 den, 
+F 220 3 0 ich 
+F 224 3 0 bin 
+F 229 5 0 kein 
+F 235 3 0 Vor
+F 240 2 0 bild, 
+- 242
+F 243 3 0 Weil 
+F 248 2 0 ich 
+F 251 2 0 mach 
+F 255 1 0 dir 
+F 257 3 0 nichts 
+F 262 3 0 vor 
+- 265
+F 274 4 0 Um
+F 279 3 0 welt
+F 284 4 0 sau, 
+- 288
+F 290 3 0 Du 
+F 294 3 0 ver
+F 299 4 0 brauchst 
+F 305 3 0 Bas
+F 310 2 0 ket
+F 313 2 0 ball
+F 317 4 0 fel
+F 322 2 0 der 
+F 325 2 0 an 
+F 328 3 0 Nah
+F 332 3 0 rungs
+F 338 2 0 be
+F 341 2 0 häl
+F 344 1 0 tern 
+- 345
+F 349 4 0 Staat
+F 354 1 0 li
+F 356 3 0 che 
+F 360 4 0 Gel
+F 365 1 0 der 
+F 367 3 0 und 
+F 371 2 0 den 
+F 375 4 0 Schlaf 
+F 382 1 0 dei
+F 384 1 0 ner 
+F 386 4 0 El
+F 392 2 0 tern, 
+F 399 2 0 ah 
+- 401
+F 414 3 0 Klar, 
+F 418 2 0 wir 
+F 422 3 0 lie
+F 426 2 0 ben 
+F 430 2 0 dich, 
+F 434 3 0 doch 
+F 438 2 0 das 
+F 442 2 0 hat 
+F 446 3 0 ei
+F 450 2 0 nen 
+F 454 3 0 Grund, 
+F 461 3 0 Kind 
+- 464
+F 465 3 0 Das 
+F 469 2 0 rich
+F 473 2 0 tet 
+F 478 2 0 die 
+F 481 2 0 Na
+F 485 3 0 tur 
+F 490 2 0 so 
+F 494 2 0 ein, 
+- 496
+F 498 1 0 Da
+F 500 3 0 mit 
+F 505 2 0 wir 
+F 508 2 0 dich 
+F 512 2 0 nicht 
+F 516 3 0 um
+F 523 3 0 bring’, 
+F 532 2 0 ey 
+- 534
+: 539 2 -1 Wie 
+: 542 2 -1 es 
+: 547 4 3 aus
+: 555 5 -1 sieht, 
+: 562 4 1 bist 
+: 570 2 1 du 
+: 574 3 3 Fa
+: 579 4 4 mi
+: 585 8 -1 lie 
+- 593
+: 602 2 -1 Wie 
+: 605 1 -1 es 
+: 610 4 3 aus
+: 617 4 -1 sieht, 
+: 625 3 1 gibt’s 
+: 632 3 1 nur 
+: 637 2 -1 noch 
+: 642 4 -2 wir 
+- 646
+: 649 5 -2 Wir 
+: 656 2 -1 müs
+: 660 2 -1 sen 
+: 664 2 -1 da 
+: 667 1 1 jetzt 
+: 671 4 3 durch, 
+: 679 3 3 Blut 
+: 684 2 3 ist 
+: 689 3 4 di
+: 693 2 4 cker 
+: 698 4 3 als 
+: 705 5 1 Bier 
+- 710
+: 718 3 4 Sor
+: 723 9 4 ry, 
+: 733 3 4 du 
+: 737 7 3 bist 
+: 748 11 1 nicht 
+: 764 6 -1 a
+: 772 4 -2 dop
+: 780 3 -1 tiert 
+- 783
+F 784 2 0 Ich 
+F 787 2 0 hab 
+F 791 3 0 kein’ 
+F 796 3 0 Plan 
+F 802 3 0 von 
+F 807 3 0 Ver
+F 811 2 0 sor
+F 815 2 0 gung 
+F 819 3 0 von 
+F 824 2 0 Kin
+F 828 2 0 dern 
+- 830
+F 831 3 0 Doch 
+F 835 2 0 kei
+F 839 2 0 ne 
+F 842 2 0 Sor
+F 846 2 0 ge, 
+F 850 2 0 ich 
+F 854 2 0 wer
+F 858 2 0 de 
+F 861 3 0 schon 
+F 865 3 0 ein 
+F 869 2 0 Tu
+F 873 3 0 to
+F 878 2 0 ri
+F 881 2 0 al 
+F 885 3 0 fin
+F 890 1 0 den 
+- 891
+F 892 3 0 Das 
+F 897 3 0 Gu
+F 901 3 0 te 
+F 905 2 0 ist, 
+- 907
+F 916 4 0 Ich 
+F 921 2 0 muss 
+F 925 2 0 dir 
+F 928 2 0 nicht 
+F 932 2 0 mal 
+F 936 2 0 Wis
+F 939 2 0 sen 
+F 943 3 0 wei
+F 948 2 0 ter
+F 952 2 0 ge
+F 955 2 0 ben 
+- 957
+F 964 2 0 Du 
+F 968 3 0 kannst 
+F 972 2 0 ein
+F 975 2 0 fach 
+F 979 2 0 den 
+F 984 2 0 Wi
+F 987 2 0 ki-
+F 991 3 0 Ein
+F 996 2 0 trag 
+F 1001 2 0 le
+F 1005 2 0 sen, 
+F 1010 2 0 ey 
+- 1012
+F 1019 2 0 Ich 
+F 1022 3 0 werd 
+F 1027 2 0 nicht 
+F 1030 2 0 im
+F 1033 2 0 mer 
+F 1037 2 0 für 
+F 1040 3 0 dich 
+F 1045 3 0 da 
+F 1051 4 0 sein, 
+- 1055
+F 1059 2 0 Ich 
+F 1062 2 0 muss 
+F 1066 1 0 ja 
+F 1068 3 0 auch 
+F 1072 3 0 mal 
+F 1077 3 0 hart 
+F 1086 4 0 fei
+F 1091 3 0 ern 
+- 1094
+F 1103 1 0 Hab 
+F 1105 2 0 ich 
+F 1109 2 0 „fei
+F 1112 3 0 ern“ 
+F 1116 2 0 ge
+F 1119 3 0 sagt? 
+F 1128 2 0 Ich 
+F 1131 2 0 mei
+F 1134 2 0 ne 
+F 1137 4 0 „ar
+F 1145 4 0 bei
+F 1150 2 0 ten“ 
+- 1152
+F 1155 4 0 Spaß 
+F 1162 4 0 bei
+F 1169 4 0 sei
+F 1174 2 0 te, 
+F 1181 3 0 das 
+F 1185 3 0 E
+F 1189 2 0 go
+F 1192 5 0 schwein 
+F 1199 2 0 in 
+F 1202 2 0 mir 
+- 1204
+F 1208 4 0 Freut 
+F 1213 2 0 sich, 
+F 1216 3 0 dass 
+F 1221 2 0 du 
+F 1224 3 0 kommst, 
+- 1227
+F 1229 1 0 Denn 
+F 1231 3 0 dann 
+F 1235 3 0 kann 
+F 1239 3 0 ich 
+F 1243 3 0 mit 
+F 1247 3 0 Le
+F 1251 2 0 go
+F 1255 3 0 stei
+F 1259 1 0 nen 
+F 1263 6 0 spiel’n, 
+F 1271 3 0 ah 
+F 1275 4 0 yeah 
+- 1279
+: 1286 3 -1 Wie 
+: 1290 1 -1 es 
+: 1294 5 3 aus
+: 1301 4 -1 sieht, 
+: 1310 3 1 bist 
+: 1317 3 1 du 
+: 1321 3 3 Fa
+: 1326 4 4 mi
+: 1332 9 -1 lie 
+- 1341
+: 1349 3 -1 Wie 
+: 1353 1 -1 es 
+: 1357 4 3 aus
+: 1364 4 -1 sieht, 
+: 1372 4 1 gibt’s 
+: 1380 3 1 nur 
+: 1384 2 -1 noch 
+: 1388 5 -2 wir 
+- 1393
+: 1399 2 -1 Jetzt 
+: 1403 4 3 si
+: 1411 2 -1 tzen 
+: 1415 3 -1 wir 
+: 1419 3 -1 hier, 
+: 1423 1 -1 ich 
+: 1426 2 -1 sag, 
+: 1430 2 -1 jetzt 
+: 1435 4 3 si
+: 1442 2 -1 tzen 
+: 1445 3 -1 wir 
+: 1450 4 -1 hier 
+- 1454
+: 1465 3 4 Sor
+: 1470 9 4 ry, 
+: 1481 3 4 du 
+: 1486 6 3 bist 
+: 1496 10 1 nicht 
+* 1511 7 -1 a
+* 1520 5 -2 dop
+* 1528 5 -1 tiert 
+- 1533
+F 1535 3 0 Kin
+F 1540 2 0 der 
+F 1544 3 0 müss
+F 1548 2 0 ten 
+F 1551 2 0 re
+F 1555 2 0 bel
+F 1559 3 0 lie
+F 1563 3 0 ren, 
+F 1567 2 0 it’s 
+F 1570 2 0 a 
+F 1574 4 0 hard-
+F 1579 3 0 knock 
+F 1586 4 0 life 
+- 1590
+F 1594 2 0 Da
+F 1597 2 0 mit 
+F 1601 3 0 du 
+F 1606 2 0 keins 
+F 1613 3 0 wirst, 
+F 1620 4 0 muss 
+F 1625 3 0 ich 
+F 1629 3 0 wohl 
+F 1633 2 0 ein 
+F 1636 4 0 Arsch
+F 1643 4 0 loch 
+F 1648 2 0 sein 
+- 1650
+F 1657 2 0 O
+F 1660 2 0 der 
+F 1663 3 0 ein 
+F 1667 4 0 pein
+F 1672 2 0 li
+F 1675 3 0 cher 
+F 1679 5 0 Kauz, 
+F 1687 3 0 von 
+F 1691 2 0 dem 
+F 1695 2 0 die 
+F 1698 3 0 Leu
+F 1703 2 0 te 
+F 1707 2 0 re
+F 1710 2 0 den 
+- 1712
+F 1714 2 0 Für 
+F 1717 3 0 das 
+F 1722 3 0 Letz
+F 1727 3 0 te 
+F 1731 2 0 brauch 
+F 1734 2 0 ich 
+F 1737 2 0 mich 
+F 1741 3 0 nicht 
+F 1745 2 0 mal 
+F 1748 3 0 ins 
+F 1752 3 0 Zeug 
+F 1757 3 0 zu 
+F 1761 2 0 le
+F 1765 2 0 gen 
+- 1767
+F 1768 4 0 Denn 
+F 1777 4 0 auch 
+F 1782 2 0 wenn 
+F 1785 2 0 ich 
+F 1789 2 0 mir 
+F 1792 2 0 Mü
+F 1795 2 0 he 
+F 1799 3 0 geb 
+F 1804 2 0 und 
+F 1808 2 0 ü
+F 1811 3 0 ber
+F 1815 2 0 le
+F 1819 2 0 ge, 
+F 1823 3 0 wie 
+- 1826
+F 1835 3 0 Ich 
+F 1839 2 0 dich 
+F 1842 2 0 von 
+F 1846 3 0 Druck 
+F 1851 2 0 be
+F 1855 2 0 frei 
+F 1859 2 0 und 
+F 1862 2 0 doch 
+F 1866 2 0 in 
+F 1870 3 0 Bü
+F 1874 2 0 cher
+F 1878 3 0 lä
+F 1882 2 0 den 
+F 1886 3 0 krieg 
+- 1889
+F 1897 2 0 Wird 
+F 1901 2 0 et
+F 1904 2 0 was, 
+F 1908 3 0 das 
+F 1913 2 0 ich 
+F 1916 2 0 tu, 
+F 1920 2 0 zum 
+F 1924 2 0 Trau
+F 1928 2 0 ma 
+F 1932 3 0 füh
+F 1936 1 0 ren, 
+F 1940 3 0 c’est 
+F 1944 2 0 la 
+F 1948 1 0 vie 
+- 1949
+F 1950 4 0 Ich 
+F 1955 3 0 werd 
+F 1959 2 0 der 
+F 1963 3 0 Star 
+F 1970 2 0 in 
+F 1973 1 0 dei
+F 1975 3 0 ner 
+F 1979 4 0 Psy
+F 1984 3 0 cho
+F 1989 2 0 the
+F 1992 2 0 ra
+F 1995 2 0 pie, 
+F 2001 5 0 viel 
+F 2008 5 0 Spaß, 
+F 2018 3 0 ja 
+- 2021
+: 2033 3 -1 Wie 
+: 2037 1 -1 es 
+: 2041 6 3 aus
+: 2049 5 -1 sieht, 
+: 2056 4 1 bist 
+: 2063 3 1 du 
+: 2068 3 3 Fa
+: 2072 5 4 mi
+: 2079 13 -1 lie 
+- 2092
+: 2096 3 -1 Wie 
+: 2100 1 -1 es 
+: 2103 4 3 aus
+: 2111 5 -1 sieht, 
+: 2119 3 1 gibt’s 
+: 2126 3 1 nur 
+: 2131 3 -1 noch 
+: 2136 4 -2 wir 
+- 2140
+: 2143 4 -2 Wir 
+: 2149 3 -1 müs
+: 2154 2 -1 sen 
+: 2157 3 -1 da 
+: 2161 1 1 jetzt 
+: 2165 4 3 durch, 
+: 2172 4 3 Blut 
+: 2178 1 3 ist 
+* 2183 3 4 di
+* 2188 3 4 cker 
+: 2192 3 3 als 
+: 2200 5 1 Bier 
+- 2205
+: 2212 3 4 Sor
+: 2217 9 4 ry, 
+: 2228 3 4 du 
+: 2233 6 3 bist 
+: 2243 11 1 nicht 
+: 2259 6 -1 a
+: 2267 4 -2 dop
+: 2274 5 -1 tiert 
+- 2279
+: 2282 3 -1 Wie 
+: 2286 1 -1 es 
+: 2290 5 3 aus
+: 2298 5 -1 sieht, 
+: 2305 4 1 bist 
+: 2312 3 1 du 
+: 2317 3 3 Fa
+* 2322 4 4 mi
+: 2328 11 -1 lie 
+- 2339
+: 2340 3 1 Du 
+: 2345 2 1 bist 
+: 2348 3 1 auf 
+: 2352 2 1 mich, 
+: 2356 2 1 ich 
+: 2360 3 1 bin 
+: 2364 2 1 auf 
+: 2368 2 1 dich 
+: 2374 3 1 pro
+* 2379 3 3 gram
+: 2384 5 1 miert 
+- 2389
+: 2395 2 -1 Jetzt 
+: 2400 4 3 si
+: 2406 2 -1 tzen 
+: 2411 2 -1 wir 
+: 2414 3 -1 hier, 
+: 2419 2 -1 ich 
+: 2422 2 -1 sag, 
+: 2425 2 -1 jetzt 
+: 2430 3 3 si
+: 2437 2 -1 tzen 
+: 2441 3 -1 wir 
+* 2446 5 -1 hier 
+- 2451
+: 2461 3 4 Sor
+: 2466 9 4 ry, 
+: 2477 3 4 du 
+: 2482 5 3 bist 
+: 2492 11 1 nicht 
+: 2508 7 -1 a
+: 2516 4 -2 dop
+: 2523 5 -1 tiert 
+- 2528
+F 2532 2 0 Du 
+F 2536 1 0 ge
+F 2538 3 0 hörst 
+F 2543 3 0 zu 
+F 2547 2 0 ’ner 
+F 2551 2 0 kras
+F 2554 2 0 sen 
+F 2558 4 0 Spe
+F 2563 2 0 zies 
+F 2566 2 0 mit 
+F 2570 3 0 Käm
+F 2574 2 0 pfer
+F 2578 3 0 geist 
+- 2581
+F 2583 2 0 Doch 
+F 2586 2 0 al
+F 2589 2 0 les 
+F 2593 3 0 hat 
+F 2597 2 0 ’ne 
+F 2601 2 0 Wen
+F 2604 2 0 de
+F 2609 2 0 sei
+F 2613 2 0 te 
+- 2615
+F 2621 4 0 To
+F 2626 2 0 xi
+F 2629 1 0 sche 
+F 2631 3 0 Mensch
+F 2636 4 0 lich
+F 2643 3 0 keit 
+- 2646
+F 2649 2 0 Je
+F 2652 3 0 der 
+F 2656 3 0 nimmt 
+F 2660 2 0 sich 
+F 2663 4 0 sei
+F 2668 1 0 nen 
+F 2671 4 0 Teil 
+F 2676 3 0 im 
+F 2680 5 0 Teil
+F 2687 2 0 neh
+F 2690 2 0 mer
+F 2694 4 0 kreis 
+- 2698
+F 2700 2 0 Schon 
+F 2703 2 0 in 
+F 2706 2 0 der 
+F 2709 4 0 Schu
+F 2714 3 0 le 
+F 2718 3 0 lernst 
+F 2724 3 0 du 
+F 2728 4 0 das 
+F 2733 4 0 klei
+F 2738 2 0 ne 
+F 2741 5 0 Eins-
+F 2749 3 0 ge
+F 2753 2 0 gen-
+F 2756 4 0 eins 
+- 2760
+F 2764 2 0 Du 
+F 2767 4 0 wirst 
+F 2773 3 0 Men
+F 2777 3 0 schen 
+F 2786 1 0 be
+F 2788 4 0 nu
+F 2793 3 0 tzen 
+F 2797 2 0 und 
+F 2800 3 0 be
+F 2804 2 0 nutzt 
+F 2811 3 0 wer
+F 2815 2 0 den 
+- 2817
+F 2819 4 0 Kum
+F 2824 3 0 pel-
+F 2828 3 0 Move 
+- 2831
+F 2834 4 0 Man
+F 2839 3 0 che 
+F 2843 3 0 wer
+F 2847 2 0 den 
+F 2850 3 0 dich 
+F 2854 3 0 nicht 
+F 2858 4 0 mö
+F 2863 1 0 gen, 
+- 2864
+F 2866 3 0 Man
+F 2870 2 0 che 
+F 2873 3 0 ha
+F 2877 3 0 ben 
+F 2881 3 0 Grund 
+F 2886 3 0 da
+F 2890 2 0 zu 
+- 2892
+F 2896 4 0 Klar 
+F 2901 3 0 kannst 
+F 2905 2 0 du 
+F 2908 2 0 das 
+F 2912 3 0 Gu
+F 2916 1 0 te 
+F 2918 3 0 mit 
+F 2923 2 0 der 
+F 2926 3 0 Faust 
+F 2932 3 0 ins 
+F 2936 4 0 Le
+F 2941 1 0 ben 
+F 2943 3 0 ru
+F 2947 1 0 fen 
+- 2948
+F 2950 4 0 Spoi
+F 2956 2 0 ler
+F 2960 2 0 war
+F 2964 2 0 nung: 
+- 2966
+F 2972 2 0 Die 
+F 2975 2 0 an
+F 2978 2 0 dern 
+F 2982 2 0 glau
+F 2987 2 0 ben 
+F 2991 2 0 auch, 
+F 2995 2 0 sie 
+F 2999 2 0 wär’n 
+F 3002 2 0 die 
+F 3006 2 0 Gu
+F 3010 2 0 ten, 
+F 3016 2 0 tja 
+- 3018
+: 3029 3 -1 Wie 
+: 3033 1 -1 es 
+* 3037 5 3 aus
+: 3044 4 -1 sieht, 
+: 3053 3 1 bist 
+: 3059 3 1 du 
+: 3064 4 3 Fa
+: 3069 4 4 mi
+: 3075 9 -1 lie 
+- 3084
+: 3092 2 -1 Wie 
+: 3095 1 -1 es 
+: 3100 4 3 aus
+: 3107 4 -1 sieht, 
+: 3115 4 1 gibt’s 
+: 3123 2 1 nur 
+: 3126 2 -1 noch 
+: 3131 5 -2 wir 
+- 3136
+: 3139 5 -2 Wir 
+: 3146 2 -1 müs
+: 3150 2 -1 sen 
+: 3154 2 -1 da 
+: 3157 1 1 jetzt 
+: 3162 3 3 durch, 
+: 3169 3 3 Blut 
+: 3174 2 3 ist 
+: 3179 3 4 di
+: 3184 3 4 cker 
+: 3189 2 3 als 
+* 3196 5 1 Bier 
+- 3201
+: 3208 3 4 Sor
+: 3213 9 4 ry, 
+: 3224 2 4 du 
+: 3228 7 3 bist 
+* 3239 11 1 nicht 
+: 3255 6 -1 a
+: 3263 5 -2 dop
+: 3270 6 -1 tiert 
+- 3276
+F 3277 5 0 ...Wirst 
+F 3284 2 0 viel
+F 3287 3 0 leicht 
+F 3293 2 0 we
+F 3296 2 0 der 
+F 3301 3 0 Prä
+F 3305 2 0 si
+F 3308 3 0 dent 
+F 3313 2 0 noch 
+F 3317 2 0 Schü
+F 3320 2 0 ler
+F 3323 4 0 spre
+F 3328 3 0 cher 
+- 3331
+F 3334 1 0 Die 
+F 3336 4 0 Re
+F 3341 2 0 a
+F 3344 3 0 li
+F 3348 4 0 tät 
+F 3353 3 0 wirft 
+F 3358 1 0 dei
+F 3360 3 0 ne 
+F 3364 3 0 Träu
+F 3369 3 0 me 
+F 3373 1 0 in 
+F 3375 3 0 den 
+F 3379 3 0 Kü
+F 3383 2 0 ken
+F 3387 4 0 schred
+F 3392 2 0 der 
+- 3394
+F 3400 2 0 Ich 
+F 3403 3 0 weiß, 
+F 3407 3 0 wo
+F 3411 3 0 von 
+F 3415 2 0 ich 
+F 3418 3 0 re
+F 3422 2 0 de, 
+F 3425 4 0 Life 
+F 3430 3 0 ist 
+F 3434 2 0 kei
+F 3438 2 0 ne 
+F 3441 4 0 Show
+F 3446 3 0 ein
+F 3450 4 0 la
+F 3455 2 0 ge 
+- 3457
+F 3459 1 0 Al
+F 3461 3 0 so 
+F 3465 3 0 hö
+F 3469 2 0 re 
+F 3472 3 0 mei
+F 3476 3 0 ne 
+F 3480 4 0 Weis
+F 3487 4 0 heit 
+F 3493 3 0 un
+F 3497 1 0 ter 
+F 3499 3 0 der 
+F 3503 3 0 Rot
+F 3508 2 0 wein
+F 3513 3 0 fah
+F 3517 2 0 ne 
+- 3519
+F 3520 2 0 Ir
+F 3523 3 0 gend
+F 3527 3 0 wann 
+F 3531 3 0 wirst 
+F 3536 2 0 du 
+F 3540 2 0 hin
+F 3543 3 0 ter
+F 3547 4 0 fra
+F 3552 2 0 gen, 
+- 3554
+F 3555 3 0 Was 
+F 3559 1 0 ich 
+F 3561 2 0 für 
+F 3565 4 0 Schwach
+F 3570 3 0 sinn 
+F 3575 3 0 re
+F 3579 1 0 de 
+- 3580
+F 3585 4 0 Wirst 
+F 3590 3 0 mei
+F 3594 1 0 ne 
+F 3596 3 0 Las
+F 3601 2 0 ter 
+F 3605 6 0 seh’n, 
+F 3613 2 0 ich 
+F 3616 3 0 hab 
+F 3621 2 0 sie 
+F 3625 2 0 dir 
+F 3628 2 0 ab
+F 3632 2 0 ge
+F 3636 2 0 ge
+F 3639 2 0 ben 
+- 3641
+F 3643 3 0 Fin
+F 3647 3 0 dest 
+F 3651 2 0 du 
+F 3655 3 0 dein 
+F 3659 3 0 Erb
+F 3666 4 0 gut 
+F 3673 5 0 schlecht, 
+F 3682 3 0 sind 
+F 3686 3 0 das 
+F 3690 3 0 Pa
+F 3694 4 0 pas 
+F 3699 3 0 Ge
+F 3703 2 0 ne 
+- 3705
+F 3706 3 0 Doch 
+F 3710 2 0 du 
+F 3713 3 0 bist 
+F 3717 3 0 mein 
+F 3721 3 0 Up
+F 3732 8 0 date, 
+F 3741 2 0 du 
+F 3745 3 0 kannst 
+F 3749 3 0 die 
+F 3753 5 0 Bugs 
+F 3761 3 0 be
+F 3765 3 0 he
+F 3769 2 0 ben 
+- 3771
+: 3777 3 -1 Wie 
+: 3781 1 -1 es 
+: 3784 5 3 aus
+: 3792 4 -1 sieht, 
+: 3799 4 1 bist 
+: 3807 2 1 du 
+: 3811 3 3 Fa
+: 3816 4 4 mi
+* 3822 8 -1 lie 
+- 3830
+: 3835 3 1 Du 
+: 3839 2 1 bist 
+: 3843 2 1 auf 
+: 3847 2 1 mich, 
+: 3850 2 1 ich 
+: 3854 2 1 bin 
+: 3858 2 1 auf 
+: 3863 2 1 dich 
+* 3869 3 1 pro
+: 3874 3 3 gram
+: 3879 5 1 miert 
+- 3884
+: 3889 2 -1 Jetzt 
+* 3894 3 3 si
+: 3900 2 -1 tzen 
+: 3904 2 -1 wir 
+: 3908 3 -1 hier, 
+: 3912 2 -1 ich 
+: 3915 2 -1 sag, 
+: 3920 2 -1 jetzt 
+* 3924 4 3 si
+: 3931 2 -1 tzen 
+: 3935 3 -1 wir 
+: 3939 6 -1 hier 
+- 3945
+: 3955 3 4 Sor
+: 3959 10 4 ry, 
+: 3972 3 4 du 
+: 3976 6 3 bist 
+: 3986 12 1 nicht 
+* 4002 7 -1 a
+: 4011 4 -2 dop
+: 4018 4 -1 tiert 
+- 4022
+F 4023 2 0 Am 
+F 4026 2 0 An
+F 4029 3 0 fang 
+F 4033 3 0 ist 
+F 4037 3 0 es 
+F 4041 3 0 Ehr
+F 4048 3 0 geiz 
+F 4056 3 0 wie 
+F 4060 2 0 im 
+F 4063 3 0 Schach
+F 4069 2 0 du
+F 4072 2 0 ell 
+- 4074
+F 4076 2 0 Du 
+F 4079 3 0 wirst 
+F 4085 1 0 mir 
+F 4087 2 0 so 
+F 4090 2 0 lang 
+F 4094 3 0 nach
+F 4100 2 0 ei
+F 4103 2 0 fern, 
+- 4105
+F 4106 3 0 Bis 
+F 4111 2 0 du 
+F 4114 2 0 mich 
+F 4118 1 0 in 
+F 4120 2 0 den 
+F 4125 3 0 Schat
+F 4129 2 0 ten 
+F 4133 3 0 stellst 
+- 4136
+F 4138 3 0 Das 
+F 4143 3 0 Macht
+F 4147 2 0 ver
+F 4151 2 0 hält
+F 4154 2 0 nis 
+F 4157 2 0 ist 
+F 4161 3 0 auf 
+F 4165 2 0 mei
+F 4169 2 0 ner 
+F 4173 2 0 Sei
+F 4177 2 0 te 
+- 4179
+F 4189 3 0 Ak
+F 4193 2 0 tu
+F 4197 2 0 ell 
+- 4199
+F 4200 3 0 Doch 
+F 4204 2 0 dei
+F 4207 1 0 ne 
+F 4209 4 0 Chance 
+F 4215 3 0 steht 
+F 4220 2 0 gut, 
+- 4222
+F 4224 3 0 Weil 
+F 4228 2 0 Pa
+F 4231 2 0 pa 
+F 4236 2 0 pa
+F 4239 1 0 ral
+F 4241 3 0 lel 
+F 4245 3 0 wie’n 
+F 4250 2 0 Blatt 
+F 4254 2 0 ver
+F 4258 4 0 welkt 
+- 4262
+F 4270 3 0 Ich 
+F 4274 2 0 werd 
+F 4277 2 0 dir 
+F 4281 3 0 Win
+F 4285 3 0 deln 
+F 4289 3 0 wech
+F 4293 2 0 seln, 
+- 4295
+F 4297 5 0 Scheiß 
+F 4303 1 0 mal 
+F 4305 3 0 auf 
+F 4309 2 0 den 
+F 4313 4 0 Scheiß
+F 4318 3 0 ge
+F 4322 3 0 ruch 
+- 4325
+F 4333 3 0 Kann 
+F 4338 6 0 sein, 
+F 4345 3 0 dass 
+F 4350 2 0 du 
+F 4353 2 0 ir
+F 4356 2 0 gend
+F 4359 3 0 wann 
+F 4364 2 0 für 
+F 4367 2 0 mich 
+F 4370 2 0 das 
+F 4375 3 0 Glei
+F 4379 2 0 che 
+F 4384 3 0 tust 
+- 4387
+F 4397 2 0 Wenn 
+F 4400 5 0 nicht, 
+F 4406 4 0 wär’s 
+F 4411 2 0 kor
+F 4414 4 0 rekt, 
+F 4419 2 0 wenn 
+F 4422 2 0 du 
+F 4425 2 0 mich 
+F 4430 3 0 mal 
+F 4434 2 0 im 
+F 4437 4 0 Heim 
+F 4442 3 0 be
+F 4446 4 0 suchst 
+- 4450
+F 4455 1 0 Wenn 
+F 4457 1 0 du 
+F 4459 3 0 dich 
+F 4465 2 0 dann 
+F 4469 2 0 noch
+F 4472 2 0 ma’ 
+F 4476 3 0 kurz 
+F 4481 2 0 vor
+F 4485 2 0 stellst, 
+- 4487
+F 4490 1 0 Wär 
+F 4492 2 0 das 
+F 4495 3 0 ein 
+F 4500 3 0 fei
+F 4504 3 0 ner 
+F 4510 3 0 Zug 
+- 4513
+: 4523 3 -1 Wie 
+: 4527 1 -1 es 
+: 4531 5 3 aus
+: 4540 4 -1 sieht, 
+: 4547 3 1 bist 
+: 4554 2 1 du 
+* 4558 4 3 Fa
+: 4563 5 4 mi
+: 4570 11 -1 lie 
+- 4581
+: 4585 3 -1 Wie 
+: 4589 1 -1 es 
+: 4593 5 3 aus
+: 4601 4 -1 sieht, 
+: 4609 3 1 gibt’s 
+: 4617 3 1 nur 
+: 4621 2 -1 noch 
+* 4625 4 -2 wir 
+- 4629
+: 4632 5 -2 Wir 
+: 4640 2 -1 müs
+: 4644 2 -1 sen 
+: 4648 3 -1 da 
+: 4652 1 1 jetzt 
+: 4656 4 3 durch, 
+: 4662 4 3 Blut 
+: 4667 2 3 ist 
+: 4672 4 4 di
+: 4679 3 4 cker 
+: 4683 3 3 als 
+: 4690 5 1 Bier 
+- 4695
+* 4702 3 4 Sor
+* 4706 10 4 ry, 
+: 4718 2 4 du 
+: 4722 7 3 bist 
+: 4732 13 1 nicht 
+: 4750 5 -1 a
+: 4756 5 -2 dop
+: 4764 5 -1 tiert 
+- 4769
+: 4772 3 -1 Wie 
+: 4776 1 -1 es 
+: 4780 5 3 aus
+: 4788 5 -1 sieht, 
+: 4795 4 1 bist 
+: 4802 3 1 du 
+: 4807 3 3 Fa
+* 4811 5 4 mi
+: 4818 8 -1 lie 
+- 4826
+: 4832 2 1 Du 
+: 4835 2 1 bist 
+: 4839 2 1 auf 
+: 4843 2 1 mich, 
+: 4846 2 1 ich 
+: 4850 2 1 bin 
+: 4854 2 1 auf 
+: 4858 2 1 dich 
+: 4864 3 1 pro
+: 4869 3 3 gram
+* 4874 5 1 miert 
+- 4879
+: 4885 2 -1 Jetzt 
+: 4889 3 3 si
+: 4897 2 -1 tzen 
+: 4900 2 -1 wir 
+: 4904 3 -1 hier, 
+: 4909 1 -1 ich 
+: 4912 1 -1 sag, 
+: 4916 2 -1 jetzt 
+: 4921 4 3 si
+: 4928 2 -1 tzen 
+: 4932 2 -1 wir 
+: 4935 5 -1 hier 
+- 4940
+: 4951 3 4 Sor
+: 4956 9 4 ry, 
+: 4967 3 4 du 
+: 4972 5 3 bist 
+: 4982 11 1 nicht 
+* 4998 7 -1 a
+* 5006 4 -2 dop
+* 5013 5 -1 tiert 
+- 5018
+F 5022 3 0 Ja, 
+F 5029 6 0 Rap 
+F 5036 3 0 hör’n 
+F 5040 3 0 nur 
+F 5044 2 0 zit
+F 5047 3 0 tern
+F 5051 3 0 de 
+F 5055 5 0 Grei
+F 5061 1 0 se 
+- 5062
+F 5063 3 0 Doch 
+F 5067 3 0 das 
+F 5071 3 0 muss 
+F 5076 3 0 jetzt 
+F 5082 4 0 raus, 
+- 5086
+F 5087 2 0 Denn 
+F 5090 4 0 spä
+F 5095 3 0 ter 
+F 5099 3 0 bin 
+F 5103 2 0 ich 
+F 5107 3 0 nicht 
+F 5112 1 0 mehr 
+F 5114 2 0 der 
+F 5118 5 0 Glei
+F 5124 2 0 che 
+- 5126
+F 5130 2 0 Wenn 
+F 5133 3 0 du 
+F 5137 3 0 da 
+F 5141 3 0 bist, 
+F 5145 4 0 schreib 
+F 5150 3 0 ich 
+F 5154 2 0 si
+F 5157 2 0 cher 
+F 5160 2 0 nur 
+F 5163 4 0 noch 
+F 5168 3 0 kit
+F 5173 2 0 schi
+F 5176 2 0 ge 
+F 5180 4 0 Schei
+F 5186 2 0 ße 
+- 5188
+F 5189 3 0 Kei
+F 5193 1 0 ne 
+F 5195 3 0 ge
+F 5199 4 0 schmack
+F 5204 3 0 lo
+F 5208 2 0 sen 
+F 5212 3 0 Wit
+F 5216 1 0 ze 
+F 5218 3 0 mehr, 
+F 5223 3 0 kei
+F 5228 2 0 ne 
+F 5231 3 0 Hit
+F 5235 2 0 ler
+F 5238 2 0 ver
+F 5243 4 0 glei
+F 5248 1 0 che 
+- 5249
+F 5251 1 0 Ich 
+F 5253 3 0 steh 
+F 5257 2 0 vorm 
+F 5261 5 0 Spie
+F 5267 2 0 gel 
+F 5274 3 0 und 
+F 5278 3 0 se
+F 5282 2 0 he 
+F 5285 3 0 ei
+F 5289 2 0 ne 
+F 5293 3 0 Ka
+F 5297 3 0 ri
+F 5301 3 0 ka
+F 5305 3 0 tur 
+- 5308
+F 5314 2 0 Doch 
+F 5317 2 0 ich 
+F 5321 3 0 trai
+F 5325 3 0 nie
+F 5330 2 0 re 
+F 5333 3 0 je
+F 5337 2 0 den 
+F 5340 4 0 Tag 
+F 5345 2 0 für 
+F 5349 2 0 mei
+F 5352 1 0 ne 
+F 5355 4 0 Va
+F 5360 2 0 ter
+F 5364 3 0 fi
+F 5368 3 0 gur 
+- 5371
+F 5376 2 0 Ich 
+F 5380 3 0 ü
+F 5384 2 0 be 
+F 5388 5 0 „La-
+F 5395 4 0 Le-
+F 5402 5 0 Lu“ 
+F 5409 4 0 auf 
+F 5414 3 0 der 
+F 5419 3 0 Kla
+F 5423 2 0 vi
+F 5426 3 0 a
+F 5431 2 0 tur 
+- 5433
+F 5438 3 0 Und 
+F 5442 2 0 un
+F 5445 2 0 ter
+F 5450 2 0 zieh 
+F 5453 3 0 mich 
+F 5457 3 0 selbst 
+F 5461 2 0 ’ner 
+F 5464 2 0 mo
+F 5467 3 0 ther
+F 5472 3 0 f*
+F 5476 2 0 cking 
+F 5479 3 0 Ra
+F 5484 3 0 dio
+F 5488 3 0 zen
+F 5492 3 0 sur 
+- 5495
+F 5502 5 0 Und 
+F 5508 2 0 ich 
+F 5511 4 0 ler
+F 5516 2 0 ne 
+F 5519 2 0 all 
+F 5522 2 0 die 
+F 5526 4 0 Film
+F 5531 2 0 kli
+F 5535 4 0 schees, 
+F 5542 3 0 nach 
+F 5548 1 0 der 
+F 5550 2 0 Ge
+F 5554 3 0 burt 
+- 5557
+F 5561 3 0 Kriegst 
+F 5566 2 0 du 
+F 5569 2 0 ’ne 
+F 5574 6 0 Arm
+F 5586 4 0 band
+F 5594 5 0 uhr 
+F 5600 3 0 mit 
+F 5605 3 0 Na
+F 5609 3 0 mens
+F 5613 3 0 gra
+F 5618 4 0 vur 
+- 5622
+F 5624 3 0 Auch 
+F 5629 2 0 wenn 
+F 5632 1 0 sich 
+F 5634 4 0 streng 
+F 5639 3 0 sein 
+F 5643 4 0 beißt 
+F 5648 3 0 mit 
+F 5652 3 0 mei
+F 5656 3 0 ner 
+F 5660 2 0 li
+F 5663 2 0 be
+F 5666 5 0 ra
+F 5672 2 0 len 
+F 5675 3 0 Na
+F 5679 3 0 tur 
+- 5682
+F 5687 2 0 Werd 
+F 5690 2 0 ich 
+F 5693 3 0 so 
+F 5698 3 0 tun, 
+F 5703 2 0 als 
+F 5706 2 0 in
+F 5709 2 0 tres
+F 5712 3 0 siert 
+F 5717 3 0 mich 
+F 5721 2 0 dei
+F 5724 2 0 ne 
+F 5728 4 0 Spa
+F 5733 2 0 nisch
+F 5737 3 0 klau
+F 5741 4 0 sur 
+- 5745
+F 5753 3 0 Ich 
+F 5757 2 0 werd 
+F 5761 2 0 sau
+F 5764 2 0 er 
+F 5767 3 0 auf 
+F 5771 3 0 dich 
+F 5775 3 0 sein 
+F 5781 3 0 für 
+F 5785 3 0 je
+F 5789 2 0 de 
+F 5792 3 0 ju
+F 5796 2 0 gend
+F 5800 2 0 li
+F 5803 2 0 che 
+F 5806 5 0 Suff
+F 5812 2 0 ge
+F 5815 3 0 schich
+F 5819 2 0 te 
+- 5821
+F 5823 2 0 Doch 
+F 5827 3 0 hab 
+F 5831 3 0 kei
+F 5836 1 0 ne 
+F 5838 4 0 Angst 
+F 5843 2 0 vor 
+F 5846 3 0 mir, 
+- 5849
+F 5850 2 0 Nur 
+F 5853 3 0 weil 
+F 5857 2 0 ich 
+F 5861 3 0 dei
+F 5866 2 0 ne 
+F 5869 3 0 Mut
+F 5873 2 0 ter 
+F 5878 2 0 fi
+F 5881 2 0 cke 
+- 5883
+F 5885 3 0 Ich 
+F 5889 2 0 bin 
+F 5893 2 0 nur 
+F 5897 2 0 ein 
+F 5900 2 0 al
+F 5903 2 0 ter 
+F 5907 4 0 Zy
+F 5912 3 0 ni
+F 5916 2 0 ker 
+F 5919 2 0 und 
+F 5923 3 0 schrei
+F 5927 2 0 be 
+F 5932 5 0 Frust
+F 5938 1 0 ge
+F 5940 2 0 dich
+F 5944 1 0 te 
+- 5945
+F 5946 3 0 Doch 
+F 5950 2 0 ich 
+F 5953 5 0 schwör, 
+F 5959 2 0 ich 
+F 5962 3 0 geb 
+F 5968 1 0 al
+F 5970 3 0 les 
+F 5974 3 0 für 
+F 5978 2 0 dich 
+F 5982 2 0 bis 
+F 5986 1 0 an 
+F 5988 3 0 mein 
+F 5993 6 0 Schluss
+F 6000 4 0 ka
+F 6006 3 0 pi
+F 6010 3 0 tel 
+E
