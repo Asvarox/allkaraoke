@@ -7,6 +7,8 @@ import SmoothLink from 'modules/Elements/SmoothLink';
 import { focusable, landscapeMQ, mobileMQ, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -17,6 +19,7 @@ import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
 import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
+import screenshot3 from './screenshot3.webp';
 import songStats from './songStats.json';
 
 export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
@@ -24,6 +27,7 @@ export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigit
 function LandingPage() {
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
   const navigate = useSmoothNavigate();
+  const newScreenshot = useFeatureFlag(FeatureFlags.Shrek);
 
   useBackground(true);
 
@@ -120,7 +124,11 @@ function LandingPage() {
           </StatSegment>
           <ScreenshotSegment>
             <img src={screenshot1} alt="Song list screen" />
-            <img src={screenshot2} alt="In-game screen" />
+            {!newScreenshot ? (
+              <img src={screenshot2} alt="In-game screen" />
+            ) : (
+              <img src={screenshot3} alt="In-game screen" />
+            )}
           </ScreenshotSegment>
         </Stats>
         <JoinExistingTip>
