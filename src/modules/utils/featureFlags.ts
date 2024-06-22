@@ -5,4 +5,5 @@ export const FeatureFlags = {
   LandingPageBackground: 'landing_page_background',
   VirtualizedSongSelection: 'virtualized_song_selection',
   Eurovision: 'eurovision',
+  Shrek: 'shrek',
 } as const;
