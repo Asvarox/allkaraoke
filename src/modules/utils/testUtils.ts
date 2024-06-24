@@ -1,4 +1,5 @@
-import { FrequencyRecord, Note, NoteFrequencyRecord, PlayerNote, Section, Song } from 'interfaces';
+import { FrequencyRecord, Note, NoteFrequencyRecord, PlayerNote, Section, Song, SongPreview } from 'interfaces';
+import { getSongPreview } from 'modules/Songs/utils';
 import range from 'modules/utils/range';
 
 export const generateNote = (start: number, length = 1, data: Partial<Note> = {}): Note => ({
@@ -33,6 +34,7 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     artist: 'artistTest',
     title: 'titleTest',
     video: 'videoTest',
+    language: ['english'],
     gap: 0,
     bpm: 60, // makes it easy to calc - beatLength = 1ms
     bar: 1000, // makes it easy to calc - beatLength = 1ms
@@ -40,6 +42,9 @@ export const generateSong = (tracks: Section[][], data: Partial<Song> = {}): Son
     mergedTrack: { sections: [], changes: [] },
     ...data,
   }) as any as Song;
+
+export const generateSongPreview = (tracks: Section[][], data: Partial<Song> = {}): SongPreview =>
+  getSongPreview(generateSong(tracks, data));
 
 export const generateSection = (start: number, length: number, notesCount: number): Section => ({
   type: 'notes',

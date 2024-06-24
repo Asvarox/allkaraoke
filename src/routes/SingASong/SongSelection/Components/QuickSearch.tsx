@@ -5,7 +5,8 @@ import { useEventEffect } from 'modules/GameEvents/hooks';
 import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
 import { Dispatch, SetStateAction, useCallback, useEffect, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+
+import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface Props {
   setFilters: Dispatch<SetStateAction<AppliedFilters>>;

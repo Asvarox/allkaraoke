@@ -8,7 +8,8 @@ import { useSongStats } from 'modules/Songs/stats/hooks';
 import { isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { ReactNode, useMemo } from 'react';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
-import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+
+import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 export const TopContainer = (props: { song: SongPreview; isPopular: boolean; video?: ReactNode }) => {
   return (

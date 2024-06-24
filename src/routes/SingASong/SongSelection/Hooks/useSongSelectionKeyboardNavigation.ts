@@ -8,7 +8,8 @@ import tuple from 'modules/utils/tuple';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { HelpEntry } from 'routes/KeyboardHelp/Context';
 import selectRandomSong from 'routes/SingASong/SongSelection/Hooks/selectRandomSong';
-import { AppliedFilters, SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: number) => {
   const [cursorPosition, setCursorPosition] = useState<[number, number]>([0, 0]);
