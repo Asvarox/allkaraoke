@@ -54,7 +54,7 @@ export const songTXTKeys = [
   'ALLKARAOKE_VIDEOID',
 ] as const;
 
-export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO' | 'P1' | 'P2';
+export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO' | 'P1' | 'P2' | 'AUDIOURL' | 'VIDEOURL';
 
 function getUnknownProps(txt: string) {
   return txt
@@ -101,9 +101,11 @@ const LINE_BREAK_RELATIVE_REGEXP = /- -?\d+ -?\d+/;
 export function getVideoId(url: string) {
   try {
     const linkUrl = new URL(url);
-    return linkUrl.searchParams.get('v') || false;
+    if (linkUrl.host === 'youtu.be') return linkUrl.pathname.substring(1);
+    if (linkUrl.host === 'www.youtube.com' || linkUrl.host === 'youtube.com') return linkUrl.searchParams.get('v');
+    return null;
   } catch (e: any) {
-    return false;
+    return null;
   }
 }
 function safeJsonParse<T extends any, DV extends any = T>(str: any, defaultValue: DV): T | DV {
@@ -152,7 +154,11 @@ export default function convertTxtToSong(
   const title = getPropertyValueFromTxt(text, ['TITLE']) ?? '';
   const artist = getPropertyValueFromTxt(text, ['ARTIST']) ?? '';
   const video =
-    getPropertyValueFromTxt(text, ['ALLKARAOKE_VIDEOID', 'VIDEOID']) ?? getEmbeddedYoutubeVideoId(text) ?? '';
+    getPropertyValueFromTxt(text, ['ALLKARAOKE_VIDEOID', 'VIDEOID']) ??
+    getVideoId(getPropertyValueFromTxt(text, ['AUDIOURL']) ?? '') ??
+    getVideoId(getPropertyValueFromTxt(text, ['VIDEOURL']) ?? '') ??
+    getEmbeddedYoutubeVideoId(text) ??
+    '';
 
   const song: Song = {
     id: getPropertyValueFromTxt(text, ['ALLKARAOKE_ID', 'ID']) ?? getSongId({ title, artist }),

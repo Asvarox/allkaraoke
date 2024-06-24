@@ -206,6 +206,58 @@ describe('convertTxtToSong', () => {
     expect(parsed.video).toEqual('videoUrl');
   });
 
+  describe('#AUDIOURL and #VIDEOURL', () => {
+    const sections: Section[] = [
+      { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
+      { start: 5, type: 'notes', notes: [generateNote(7), generateNote(10)] },
+    ];
+    // Since there are quite a few properties where the video can come from (ALLKARAOKE_VIDEOID, AUDIOURL, VIDEOURL, VIDEO...)
+    // the original source can get lost - to not "break" the txt, we should keep the fields in unsupportedProps
+    it('should put AUDIOURL and VIDEOURL to unsupported', () => {
+      const parsed = convertTxtToSong(
+        generateSongTxt([sections], {}, [
+          '#VIDEOURL:https://www.youtube.com/watch?v=videoUrl',
+          '#AUDIOURL:https://www.youtube.com/watch?v=audioUrl',
+        ]),
+      );
+
+      expect(parsed.unsupportedProps).toEqual([
+        '#VIDEOURL:https://www.youtube.com/watch?v=videoUrl',
+        '#AUDIOURL:https://www.youtube.com/watch?v=audioUrl',
+      ]);
+    });
+    it('should use AUDIOURL over VIDEOURL (audio is more likely to be in sync with the lyrics)', () => {
+      const parsed = convertTxtToSong(
+        generateSongTxt([sections], {}, [
+          '#VIDEOURL:https://www.youtube.com/watch?v=videoUrl',
+          '#AUDIOURL:https://www.youtube.com/watch?v=audioUrl',
+        ]),
+      );
+
+      expect(parsed.video).toEqual('audioUrl');
+    });
+    it('should ignore non-youtube links', () => {
+      const parsed = convertTxtToSong(
+        generateSongTxt([sections], {}, [
+          '#VIDEOURL:https://www.youtube.com/watch?v=videoUrl',
+          '#AUDIOURL:https://not.youtube.com/watch?v=audioUrl',
+        ]),
+      );
+
+      expect(parsed.video).toEqual('videoUrl');
+    });
+    it('should use ALLKARAOKE_VIDEOID over AUDIOURL', () => {
+      const parsed = convertTxtToSong(
+        generateSongTxt([sections], {}, [
+          '#ALLKARAOKE_VIDEOID:videoUrl',
+          '#AUDIOURL:https://www.youtube.com/watch?v=audioUrl',
+        ]),
+      );
+
+      expect(parsed.video).toEqual('videoUrl');
+    });
+  });
+
   describe('deprecated properties support', () => {
     const sections: Section[] = [
       { start: 0, type: 'notes', notes: [generateNote(0), generateNote(1)] },
