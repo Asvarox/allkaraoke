@@ -5,7 +5,8 @@ import { Tooltip } from 'modules/Elements/Tooltip';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { Dispatch, SetStateAction, useState } from 'react';
 import QuickSearch from 'routes/SingASong/SongSelection/Components/QuickSearch';
-import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+
+import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface Props {
   onRandom: () => void;

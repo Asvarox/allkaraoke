@@ -5,7 +5,8 @@ import { ClosableTooltip } from 'modules/Elements/Tooltip';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
-import { AppliedFilters, SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+import { AppliedFilters } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 export interface PlaylistEntry {
   name: string;

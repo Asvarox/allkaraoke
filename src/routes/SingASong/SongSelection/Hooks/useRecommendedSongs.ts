@@ -3,7 +3,8 @@ import { getAllStats } from 'modules/Songs/stats/common';
 import { useMemo } from 'react';
 import { useAsync } from 'react-use';
 import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
-import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongList';
+
+import { filteringFunctions } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 const POPULAR_SONGS_MIN_COUNT = 250;
 const POPULAR_SONGS_MAX_COUNT = 750;
