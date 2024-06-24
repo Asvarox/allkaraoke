@@ -24,6 +24,10 @@ const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedF
 
 const emptyFilters: AppliedFilters = {};
 
+const ALPHANUMERIC__SPACE_REGEX = /[^0-9a-z]/gi;
+
+const getSearchString = (str: string) => removeAccents(str).toLowerCase().replace(ALPHANUMERIC__SPACE_REGEX, '');
+
 export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   language: (songList, language: string) => {
     if (language === '') return songList;
@@ -45,8 +49,8 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     if (cleanSearch.length > 0) {
       const fuzz = new uFuzzy({});
       const [, info, order] = fuzz.search(
-        songList.map((song) => `${removeAccents(song.artist)} ${removeAccents(song.title)}`),
-        removeAccents(search),
+        songList.map((song) => `${getSearchString(song.artist)} ${getSearchString(song.title)}`),
+        getSearchString(search),
       );
       if (order && info) {
         return order.map((item) => songList[info.idx[item]]);
