@@ -24,7 +24,7 @@ const isSearchApplied = (appliedFilters: AppliedFilters) => clearString(appliedF
 
 const emptyFilters: AppliedFilters = {};
 
-const ALPHANUMERIC__SPACE_REGEX = /[^0-9a-z]/gi;
+const ALPHANUMERIC__SPACE_REGEX = /[^0-9a-z ]/gi;
 
 const getSearchString = (str: string) => removeAccents(str).toLowerCase().replace(ALPHANUMERIC__SPACE_REGEX, '');
 

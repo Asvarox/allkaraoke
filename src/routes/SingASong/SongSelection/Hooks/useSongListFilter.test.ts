@@ -24,11 +24,11 @@ describe('useSongListFilter', () => {
     expect(result.current.filteredList[0]).toEqual(list[0]);
   });
 
-  it('should ignore lack of apostrophes', () => {
+  it('should ignore lack of apostrophes and search through artist and title', () => {
     const { result } = renderHook(() => useSongListFilter(list, [], false));
 
     act(() => {
-      result.current.setFilters({ search: 'dont' });
+      result.current.setFilters({ search: 'queen dont' });
     });
 
     expect(result.current.filteredList[0]).toEqual(list[2]);
