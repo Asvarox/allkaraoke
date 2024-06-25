@@ -7,8 +7,10 @@ import styles from 'modules/GameEngine/Drawing/styles';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
+import useSmoothNavigate, { buildUrl } from 'modules/hooks/useSmoothNavigate';
 import useViewportSize from 'modules/hooks/useViewportSize';
 import { ComponentProps, memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { useHotkeys } from 'react-hotkeys-hook';
 import LayoutGame from 'routes/LayoutGame';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import AdditionalListControls from 'routes/SingASong/SongSelection/Components/AdditionalListControls';
@@ -166,6 +168,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       list.current?.scrollToSongInGroup(focusedGroup, focusedSong);
     }
   }, [width, focusedSong, focusedGroup, groupedSongList, isLoading, handleResize]);
+
+  const navigate = useSmoothNavigate();
+  useHotkeys('Shift + E', () => navigate(buildUrl(`edit/song/`, { playlist: null, step: 'metadata' })), [navigate]);
 
   return (
     <LayoutGame>

@@ -12,7 +12,7 @@ import {
 import { Flag } from 'modules/Elements/Flag';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import { countryMap } from 'modules/utils/countryList';
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { inputAction } from 'routes/Convert/Elements';
 import PreviewAndVolumeAdjustment from 'routes/Convert/Steps/PreviewAndVolumeAdjustment';
 
@@ -120,6 +120,8 @@ export default function SongMetadata(props: Props) {
   };
   const isSearchableForVideo = !!props.songTitle && !!props.songArtist;
   const isRealBpmInvalid = +(props.data?.realBpm ?? 0) > 200;
+
+  const [hasSearchedBpm, setHasSearchedBpm] = useState(false);
 
   return (
     <Grid container spacing={2} data-test="song-metadata" sx={{ mt: 6 }}>
@@ -272,18 +274,22 @@ export default function SongMetadata(props: Props) {
           helperText={
             isRealBpmInvalid ? (
               <>
-                Usually songs don't have higher BPM than <b>200</b>. Make sure the value is correct
+                Usually songs don't have higher BPM than <b>200</b>. Make sure the value is correct (you can still save
+                the song)
               </>
             ) : (
-              "The actual tempo of the song. Click the 'Lookup' button to look for it on Google"
+              `The actual tempo of the song. Click the 'Lookup' button to look for it on Google. ${hasSearchedBpm ? "If you can't find it, you can still save the song" : ''}`
             )
           }
           color={isRealBpmInvalid ? 'warning' : undefined}
           fullWidth
           type="number"
           size="small"
-          required
-          {...inputAction(() => searchGoogle('tempo'), isSearchableForVideo)}
+          required={!hasSearchedBpm}
+          {...inputAction(() => {
+            setHasSearchedBpm(true);
+            searchGoogle('tempo');
+          }, isSearchableForVideo)}
         />
       </Grid>
       <Grid item xs={12}></Grid>

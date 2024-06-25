@@ -228,7 +228,7 @@ interface SongPreviewContainerProps
     }> {}
 
 const SongPreviewContainer = (props: SongPreviewContainerProps) => {
-  const realBpm = props.song.realBpm ?? (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
+  const realBpm = props.song.realBpm || (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
 
   return (
     <BaseSongPreviewContainer
@@ -320,7 +320,7 @@ const SongBPMIndicator = (
 
   if (graphicSetting === 'low') return null;
 
-  const realBpm = props.song.realBpm ?? (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
+  const realBpm = props.song.realBpm || (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
   return (
     <BaseSongBPMIndicator
       width={props.width}
