@@ -33545,18 +33545,18 @@
       "Polish"
     ],
     "bpm": 225.8,
-    "gap": 14409.542958370239,
+    "gap": 15804.542958370239,
     "year": "1997",
     "artistOrigin": "PL",
-    "lastUpdate": "2023-07-23T11:39:19.751Z",
+    "lastUpdate": "2024-06-25T00:12:49.244Z",
     "edition": "SingStar R&B Polish",
     "genre": "Pop",
-    "videoGap": 10,
+    "videoGap": 2,
     "realBpm": 113,
-    "volume": 0.5,
+    "volume": 0.99,
     "tracks": [
       {
-        "start": 36
+        "start": 15
       }
     ],
     "tracksCount": 1,
