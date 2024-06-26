@@ -66,6 +66,7 @@ export const importSongsFromPostHogBase = async (
             where events.created_at > toDateTime('${from ?? AFTER_DATE}')
               and event IN ('share-song', 'unshare-song')
             ORDER BY events.created_at ASC
+            LIMIT 300
         `,
       },
     }),
