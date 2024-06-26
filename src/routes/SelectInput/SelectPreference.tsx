@@ -51,6 +51,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             that will open Remote Mic website - no need to download an app!
           </OptionDescription>
         </div>
+        <Badge>Recommended</Badge>
         <PlayersNumber>
           <PeopleAlt />
           <strong>1-4</strong>
@@ -94,7 +95,6 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
               each player
             </OptionDescription>
           </div>
-          <Badge>New</Badge>
           <PlayersNumber>
             <PeopleAlt />
             <strong>2</strong>
