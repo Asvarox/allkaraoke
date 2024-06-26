@@ -47,9 +47,11 @@ dotenv.config({ path: '.env.local' });
     }),
   });
 
+  const addedSongs: string[] = [];
+
   response.results.forEach(([songTxt, songId]: [string, string]) => {
     try {
-      if (!songTxt && songId) {
+      if (!songTxt && songId && addedSongs.includes(songId)) {
         fs.rmSync(`./public/songs/${songId}.txt`);
         console.log(`Deleting song ${songId}`);
       }
@@ -62,6 +64,8 @@ dotenv.config({ path: '.env.local' });
       if (fs.existsSync(`./public/songs/${song.id}.txt`)) {
         const oldSong = convertTxtToSong(fs.readFileSync(`./public/songs/${song.id}.txt`, 'utf-8'));
         song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
+      } else {
+        addedSongs.push(song.id);
       }
       fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
       console.log(`Added/updated song ${song.id}`);
