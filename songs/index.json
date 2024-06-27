@@ -4855,6 +4855,33 @@
     "local": false
   },
   {
+    "id": "ariana-grande-feat-mac-miller-the-way",
+    "title": "The Way",
+    "artist": "Ariana Grande feat. Mac Miller",
+    "video": "_sV0S8qWSy0",
+    "language": [
+      "English"
+    ],
+    "bpm": 330.04,
+    "gap": 6290.121197430614,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-27T00:10:27.034Z",
+    "genre": "Pop",
+    "realBpm": 82,
+    "volume": 0.72,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "name": "The Way",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandefeatmacmillertheway",
+    "local": false
+  },
+  {
     "id": "ariana-grande-feat-zedd-break-free",
     "title": "Break Free",
     "artist": "Ariana Grande feat. Zedd",
@@ -18326,10 +18353,11 @@
     "gap": 10323.411764705883,
     "year": "2003",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-02-24T22:16:48.512Z",
+    "lastUpdate": "2024-06-27T00:10:27.038Z",
     "edition": "SingStar Party English",
     "genre": "Pop",
     "realBpm": 170,
+    "volume": 0.78,
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?busqueda=dido&sid=f2cc9a5f771564826373ad4b16ed189c",
     "tracks": [
       {
@@ -22019,9 +22047,9 @@
       "English"
     ],
     "bpm": 327.85,
-    "gap": 81303.44212292208,
+    "gap": 81453.44212292208,
     "year": "2000",
-    "lastUpdate": "2024-01-26T17:05:26.956Z",
+    "lastUpdate": "2024-06-27T00:10:27.048Z",
     "genre": "Hip-Hop",
     "realBpm": 80,
     "previewStart": 140,
@@ -25734,10 +25762,10 @@
       "French"
     ],
     "bpm": 252.67,
-    "gap": 29368.778485771956,
+    "gap": 29468.778485771956,
     "year": "1984",
     "artistOrigin": "FR",
-    "lastUpdate": "2024-05-17T16:50:29.177Z",
+    "lastUpdate": "2024-06-27T00:10:27.773Z",
     "genre": "Pop",
     "realBpm": 126,
     "previewStart": 63,
@@ -27550,6 +27578,33 @@
     "local": false
   },
   {
+    "id": "herbert-gronemeyer-mein-konzert",
+    "title": "Mein Konzert",
+    "artist": "Herbert Grönemeyer",
+    "video": "a0382e0H_KU",
+    "language": [
+      "German"
+    ],
+    "bpm": 368.08,
+    "gap": 17401.199739187134,
+    "year": "1979",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-06-27T00:10:27.774Z",
+    "genre": "Pop",
+    "realBpm": 127.31,
+    "volume": 1,
+    "author": "bohning, fepo",
+    "sourceUrl": "usdb.animux.de",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "herbertgronemeyermeinkonzert",
+    "local": false
+  },
+  {
     "id": "herbert-gronemeyer-mensch",
     "title": "Mensch",
     "artist": "Herbert Grönemeyer",
@@ -28897,17 +28952,19 @@
       "English"
     ],
     "bpm": 224.71,
-    "gap": 22950,
+    "gap": 21948.70944773263,
     "year": "2017",
     "artistOrigin": "US",
+    "lastUpdate": "2024-06-27T00:10:27.776Z",
     "genre": "Pop",
     "realBpm": 83,
+    "volume": 0.76,
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Thunder",
     "tracks": [
       {
-        "start": 0
+        "start": 15
       }
     ],
     "tracksCount": 1,
@@ -31113,10 +31170,10 @@
       "English"
     ],
     "bpm": 344.68,
-    "gap": 21609.071602645934,
+    "gap": 21759.071602645934,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-19T05:46:34.745Z",
+    "lastUpdate": "2024-06-27T00:10:27.777Z",
     "genre": "Pop",
     "realBpm": 89,
     "volume": 0.74,
@@ -31211,6 +31268,60 @@
     ],
     "tracksCount": 1,
     "search": "jokeroutcarpediem",
+    "local": false
+  },
+  {
+    "id": "jon-bellion-all-time-low",
+    "title": "All Time Low",
+    "artist": "Jon Bellion",
+    "video": "AXnqkVTFUqY",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 1980,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-27T00:10:27.779Z",
+    "realBpm": 90,
+    "previewStart": 42.787,
+    "volume": 0.73,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20745",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonbellionalltimelow",
+    "local": false
+  },
+  {
+    "id": "jon-bellion-human-acoustic",
+    "title": "Human (Acoustic)",
+    "artist": "Jon Bellion",
+    "video": "Nk5jkxOtFiY",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.3,
+    "gap": 8048.374024666499,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-27T00:10:27.932Z",
+    "genre": "Pop",
+    "realBpm": 182,
+    "volume": 1,
+    "author": "bohning, daggeg",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonbellionhumanacoustic",
     "local": false
   },
   {
@@ -41400,12 +41511,13 @@
       "English"
     ],
     "bpm": 230,
-    "gap": 15971.739130434782,
+    "gap": 15921.739130434782,
     "year": "2014",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-02-24T22:58:31.399Z",
+    "lastUpdate": "2024-06-27T00:10:27.935Z",
     "genre": "Funk",
     "realBpm": 115,
+    "volume": 0.78,
     "author": "OmarWeichafe*Coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars",
     "tracks": [
@@ -41907,6 +42019,34 @@
     ],
     "tracksCount": 1,
     "search": "maxcoverirunninginthe90s",
+    "local": false
+  },
+  {
+    "id": "meat-loaf-objects-in-the-rear-view-mirror-may-appear-closer-than-they-are",
+    "title": "Objects In The Rear View Mirror May Appear Closer Than They Are",
+    "artist": "Meat Loaf",
+    "video": "3jPMv9zJ1LE",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 20294.424778761062,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-27T00:10:27.939Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Peschi",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=263",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=2113",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "meatloafobjectsintherearviewmirrormayappearcloserthantheyare",
     "local": false
   },
   {
@@ -47439,6 +47579,36 @@
     "local": false
   },
   {
+    "id": "oasis-dont-look-back-in-anger",
+    "title": "Don't Look Back in Anger",
+    "artist": "Oasis",
+    "video": "r8OipmKFDeM",
+    "language": [
+      "English"
+    ],
+    "bpm": 595,
+    "gap": 10791.596638655463,
+    "year": "1995",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-27T00:10:28.085Z",
+    "genre": "Britpop",
+    "realBpm": 164,
+    "previewStart": 70,
+    "previewEnd": 90,
+    "volume": 0.95,
+    "author": "Kodaman",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=kodaman",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Oasis&cancion=Don%27t%20look%20back%20in%20anger",
+    "tracks": [
+      {
+        "start": 40
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oasisdontlookbackinanger",
+    "local": false
+  },
+  {
     "id": "oasis-wonderwall",
     "title": "Wonderwall",
     "artist": "Oasis",
@@ -47744,6 +47914,32 @@
     "local": false
   },
   {
+    "id": "olly-murs-dance-with-me-tonight",
+    "title": "Dance With Me Tonight",
+    "artist": "Olly Murs",
+    "video": "F3EG4olrFjY",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 19843.90243902439,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-27T00:10:28.086Z",
+    "realBpm": 164,
+    "volume": 0.72,
+    "author": "Riley G",
+    "tracks": [
+      {
+        "name": "Dance With Me Tonight",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ollymursdancewithmetonight",
+    "local": false
+  },
+  {
     "id": "olly-murs-feat-flo-rida-troublemaker",
     "title": "Troublemaker",
     "artist": "Olly Murs feat. Flo-Rida",
@@ -47897,6 +48093,33 @@
     ],
     "tracksCount": 1,
     "search": "onedirectiongottabeyou",
+    "local": false
+  },
+  {
+    "id": "one-direction-happily",
+    "title": "Happily",
+    "artist": "One Direction",
+    "video": "fTgJx-zmpM0",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.97,
+    "gap": 4094.227465059623,
+    "year": "2013",
+    "artistOrigin": "UK",
+    "lastUpdate": "2024-06-27T00:10:28.233Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "volume": 0.75,
+    "author": "Sing-Girl",
+    "tracks": [
+      {
+        "name": "Happily",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onedirectionhappily",
     "local": false
   },
   {
@@ -55512,6 +55735,33 @@
     ],
     "tracksCount": 1,
     "search": "roxetteitmusthavebeenlove",
+    "local": false
+  },
+  {
+    "id": "roxette-listen-to-your-heart",
+    "title": "Listen To Your Heart",
+    "artist": "Roxette",
+    "video": "v0iPg88EGuM",
+    "language": [
+      "English"
+    ],
+    "bpm": 344,
+    "gap": 22077.093023255813,
+    "year": "1988",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-06-27T00:10:28.235Z",
+    "genre": "Pop",
+    "realBpm": 86,
+    "volume": 0.84,
+    "author": "Canni",
+    "sourceUrl": "usdb.animux.de",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "roxettelistentoyourheart",
     "local": false
   },
   {
@@ -66900,6 +67150,133 @@
     ],
     "tracksCount": 1,
     "search": "tomdicemeandmyguitar",
+    "local": false
+  },
+  {
+    "id": "tom-jones-and-mousse-t-sex-bomb",
+    "title": "Sex Bomb",
+    "artist": "Tom Jones and Mousse T.",
+    "video": "QMoXON7k--c",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 16144.390243902439,
+    "year": "1999",
+    "lastUpdate": "2024-06-27T00:10:28.237Z",
+    "realBpm": 123,
+    "volume": 0.9,
+    "author": "Riley G",
+    "tracks": [
+      {
+        "name": "Sex Bomb",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomjonesandmoussetsexbomb",
+    "local": false
+  },
+  {
+    "id": "tom-jones-delilah",
+    "title": "Delilah",
+    "artist": "Tom Jones",
+    "video": "mM_tZ9DgXyk",
+    "language": [
+      "English"
+    ],
+    "bpm": 375.57,
+    "gap": 6811.517693106478,
+    "year": "1968",
+    "lastUpdate": "2024-06-27T00:10:28.377Z",
+    "genre": "Ballad",
+    "realBpm": 95,
+    "volume": 0.7,
+    "author": "Riley G",
+    "tracks": [
+      {
+        "name": "Delilah",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomjonesdelilah",
+    "local": false
+  },
+  {
+    "id": "tom-jones-its-not-unusual",
+    "title": "It’s Not Unusual",
+    "artist": "Tom Jones",
+    "video": "k-HdGnzYdFQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 10560,
+    "year": "1965",
+    "lastUpdate": "2024-06-27T00:10:28.500Z",
+    "realBpm": 93,
+    "volume": 0.7,
+    "author": "Riley G",
+    "tracks": [
+      {
+        "name": "It's Not Unusual",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomjonesitsnotunusual",
+    "local": false
+  },
+  {
+    "id": "tom-jones-shes-a-lady",
+    "title": "She’s A Lady",
+    "artist": "Tom Jones",
+    "video": "x8G4xrYfWmw",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.12,
+    "gap": 7144.216746291174,
+    "year": "1970",
+    "lastUpdate": "2024-06-27T00:10:28.623Z",
+    "realBpm": 119,
+    "volume": 0.7,
+    "author": "Riley G",
+    "tracks": [
+      {
+        "name": "She's A Lady",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomjonesshesalady",
+    "local": false
+  },
+  {
+    "id": "tom-jones-whats-new-pussycat",
+    "title": "What’s New Pussycat?",
+    "artist": "Tom Jones",
+    "video": "qQvIAs-nPSo",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.8,
+    "gap": 2399.607843137255,
+    "year": "1965",
+    "lastUpdate": "2024-06-27T00:10:28.744Z",
+    "genre": "Pop",
+    "realBpm": 184,
+    "volume": 0.7,
+    "author": "Riley G",
+    "tracks": [
+      {
+        "name": "What's New Pussycat?",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tomjoneswhatsnewpussycat",
     "local": false
   },
   {
