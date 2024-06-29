@@ -1,0 +1,679 @@
+#ARTIST:Ren
+#TITLE:Murderer
+#CREATOR:Jray118
+#BPM:104
+#YEAR:2024
+#VIDEO:v=hscHqw7CIFo
+#GENRE:Unknown
+#LANGUAGE:English
+#GAP:5549,384615384615
+#ALLKARAOKE_ID:ren-murderer
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:26.258Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Ren - Murderer (Official Music Video).mp3
+#COVER:New Project.png
+#BACKGROUND:New Project.png
+: 7 1 0 If 
+: 8 1 0 you 
+: 9 1 0 catch 
+: 11 1 0 me 
+: 12 1 0 alone, 
+: 15 1 0 you 
+: 17 1 0 better 
+: 18 1 0 stay 
+: 19 1 0 out 
+: 20 1 0 my 
+: 21 1 0 zone 
+: 24 1 0 because 
+: 25 1 0 I'm 
+: 26 1 0 ready 
+: 27 1 0 to 
+: 33 1 0 kill
+- 34
+: 40 1 0 I'll 
+: 42 1 0 sit 
+: 43 1 0 on 
+: 44 1 0 my 
+: 46 1 0 throne 
+: 48 1 0 made 
+: 49 1 0 of 
+: 50 1 0 bodies 
+: 52 1 0 and 
+: 54 1 0 bones 
+: 55 1 0 because 
+: 56 1 0 I'm 
+: 60 1 0 mentally 
+: 70 1 0 ill
+- 71
+: 73 1 0 I'm 
+: 76 1 0 feeling 
+: 78 1 0 alive, 
+: 81 1 0 I 
+: 82 1 0 got 
+: 83 1 0 the 
+: 84 1 0 will 
+: 86 1 0 to 
+: 87 1 0 survive, 
+: 89 1 0 so 
+: 90 1 0 never 
+: 92 1 0 test 
+: 95 1 0 my 
+: 104 1 0 skill
+- 105
+: 105 1 0 For 
+: 107 1 0 goodness 
+: 109 1 0 sake, 
+: 112 1 0 man, 
+: 113 1 0 I'm 
+: 115 1 0 ready 
+: 116 1 0 to 
+: 118 1 0 break, 
+: 122 1 0 man, 
+: 132 1 0 murderer
+- 133
+: 134 1 0 Homie, 
+: 136 1 0 it's 
+: 137 1 0 the 
+: 138 1 0 way 
+: 139 1 0 that 
+: 140 1 0 I 
+: 141 1 0 get 
+: 146 1 0 down, 
+: 154 1 0 rat-tat-tat-tat
+- 155 157
+- 157
+: 164 1 0 Murderer
+- 165
+: 166 1 0 If 
+: 167 1 0 you 
+: 168 1 0 see 
+: 169 1 0 me 
+: 170 1 0 on 
+: 170 1 0 the 
+: 171 1 0 corner 
+: 172 1 0 of 
+: 174 1 0 my 
+: 178 1 0 town, 
+: 180 1 0 get 
+: 186 1 0 back-back-back
+- 187
+: 194 1 0 Murderer
+- 195
+: 196 1 0 Swing 
+: 198 1 0 for 
+: 200 1 0 your 
+: 201 1 0 jaw 
+: 203 1 0 on 
+: 204 1 0 the 
+: 207 1 0 first 
+: 210 1 0 round, 
+: 212 1 0 attack, 
+: 214 1 0 -tack, 
+: 217 1 0 -tack
+- 218 221
+- 221
+: 228 1 0 Murderer
+- 229
+: 231 1 0 Homie, 
+: 232 1 0 it's 
+: 233 1 0 thе 
+: 234 1 0 way 
+: 236 1 0 that 
+: 237 1 0 get 
+: 238 1 0 I 
+: 241 1 0 down
+- 242
+: 248 1 0 Yeah
+- 249
+: 250 1 0 I 
+: 251 1 0 was 
+: 252 1 0 born 
+: 256 1 0 shamelеss, 
+: 258 1 0 fighting 
+: 259 1 0 out 
+: 260 1 0 in 
+: 263 1 0 Brighton 
+: 264 1 0 the 
+: 264 1 0 with 
+: 268 1 0 neighbours
+- 269
+: 270 1 0 Brother, 
+: 272 1 0 ask 
+: 273 1 0 your 
+: 274 1 0 what 
+: 275 1 0 what 
+: 277 1 0 my 
+: 278 1 0 name 
+: 280 1 0 is
+- 281
+: 282 1 0 I 
+: 283 1 0 was 
+: 284 1 0 born 
+: 288 1 0 famous, 
+: 292 1 0 trendsetter, 
+: 295 1 0 hot 
+: 297 1 0 stepper, 
+: 300 1 0 greatest
+- 301
+: 302 1 0 Shocking 
+: 304 1 0 like 
+: 305 1 0 a 
+: 306 1 0 finger 
+: 308 1 0 in 
+: 309 1 0 the 
+: 312 1 0 anus
+- 313
+: 314 1 0 I 
+: 315 1 0 was 
+: 316 1 0 born 
+: 320 1 0 wasted, 
+: 323 1 0 stoned 
+: 324 1 0 out 
+: 325 1 0 my 
+: 326 1 0 brain 
+: 328 1 0 brother, 
+: 331 1 0 faded
+- 332
+: 334 1 0 Writing 
+: 336 1 0 catchy 
+: 340 1 0 syllables, 
+: 344 1 0 contagious
+- 345
+: 346 1 0 I 
+: 347 1 0 was 
+: 349 1 0 born 
+: 352 1 0 courageous, 
+: 355 1 0 naked 
+: 356 1 0 and 
+: 359 1 0 fucking 
+: 364 1 0 outrageous
+- 365
+: 366 1 0 With 
+: 367 1 0 a 
+: 370 1 0 microphone, 
+: 371 1 0 I 
+: 372 1 0 rock 
+: 376 1 0 stages
+- 377
+: 380 1 0 I 
+: 382 1 0 jump 
+: 384 1 0 on 
+: 385 1 0 the 
+: 387 1 0 rhythm, 
+: 389 1 0 a 
+: 390 1 0 rhyming 
+: 395 1 0 cyclone 
+: 396 1 0 excalibur
+- 397
+: 397 1 0 And 
+: 399 1 0 I 
+: 401 1 0 excalibur 
+: 404 1 0 right 
+: 406 1 0 out 
+: 408 1 0 the 
+: 409 1 0 stone
+- 410
+: 412 1 0 King 
+: 414 1 0 punk, 
+: 416 1 0 the 
+: 417 1 0 precision 
+: 419 1 0 it 
+: 421 1 0 hits 
+: 423 1 0 like 
+: 429 1 0 Stallone
+- 430
+: 430 1 0 Rocky, 
+: 431 1 0 it 
+: 432 1 0 keep 
+: 432 1 0 cocky, 
+: 435 1 0 I'll 
+: 436 1 0 be 
+: 438 1 0 Al 
+: 442 1 0 Capone
+- 443
+: 444 1 0 I 
+: 446 1 0 walk 
+: 449 1 0 alone, 
+: 450 1 0 sit 
+: 452 1 0 on 
+: 453 1 0 you 
+: 454 1 0 the 
+: 455 1 0 want 
+: 455 1 0 authors 
+: 458 1 0 throne 
+: 461 1 0 you 
+: 462 1 0 want 
+: 463 1 0 it 
+: 463 1 0 it, 
+: 465 1 0 I'll 
+: 466 1 0 it 
+: 467 1 0 like 
+: 469 1 0 a 
+: 471 1 0 mortgage 
+: 474 1 0 loan
+- 475
+: 476 1 0 Your 
+: 478 1 0 daughter's 
+: 480 1 0 home, 
+: 482 1 0 we'll 
+: 483 1 0 be 
+: 485 1 0 staying 
+: 488 1 0 home 
+: 490 1 0 alone
+- 491
+: 492 1 0 Condone 
+: 494 1 0 the 
+: 496 1 0 bone 
+: 497 1 0 and 
+: 499 1 0 eat 
+: 500 1 0 it 
+: 501 1 0 like 
+: 503 1 0 a 
+: 507 1 0 Toblerone, 
+: 511 1 0 bitch
+- 512 513
+- 513
+: 520 1 0 If 
+: 522 1 0 you 
+: 522 1 0 catch 
+: 524 1 0 me 
+: 526 1 0 alone, 
+: 527 1 0 you 
+: 529 1 0 better 
+: 530 1 0 out 
+: 530 1 0 stay 
+: 531 1 0 my 
+: 533 1 0 zone 
+: 535 1 0 because 
+: 537 1 0 I'm 
+: 539 1 0 ready 
+: 540 1 0 to 
+: 549 1 0 kill
+- 550
+: 552 1 0 I'll 
+: 554 1 0 on 
+: 554 1 0 sit 
+: 555 1 0 my 
+: 556 1 0 throne 
+: 558 1 0 made 
+: 560 1 0 of 
+: 561 1 0 bodies 
+: 563 1 0 and 
+: 565 1 0 bones 
+: 567 1 0 because 
+: 568 1 0 I'm 
+: 570 1 0 mentally 
+: 572 1 0 ill
+- 573 577
+- 577
+: 584 1 0 I'm 
+: 586 1 0 feeling 
+: 587 1 0 alive, 
+: 589 1 0 I 
+: 591 1 0 got 
+: 592 1 0 the 
+: 594 1 0 will 
+: 595 1 0 to 
+: 597 1 0 survive, 
+: 599 1 0 so 
+: 600 1 0 never 
+: 601 1 0 test 
+: 603 1 0 my 
+: 606 1 0 skill
+- 607 609
+- 609
+: 616 1 0 For 
+: 618 1 0 goodness 
+: 620 1 0 sake, 
+: 622 1 0 man, 
+: 624 1 0 I'm 
+: 626 1 0 ready 
+: 627 1 0 to 
+: 629 1 0 break, 
+: 631 1 0 man, 
+: 644 1 0 murderer
+- 645
+: 645 1 0 If
+- 646
+: 645 1 0 If 
+: 646 1 0 you 
+: 646 1 0 it's 
+: 646 1 0 you
+- 647
+: 646 1 0 Homie, 
+: 647 1 0 see 
+: 647 1 0 see 
+: 648 1 0 the 
+: 648 1 0 me
+- 649 670
+- 670
+: 677 1 0 If 
+: 678 1 0 you 
+: 679 1 0 see 
+: 680 1 0 me 
+: 681 1 0 on 
+: 682 1 0 the 
+: 682 1 0 corner 
+: 684 1 0 of 
+: 686 1 0 my 
+: 690 1 0 town, 
+: 692 1 0 get 
+: 698 1 0 back-back-back
+- 699 700
+- 700
+: 707 1 0 Murderer
+- 708
+: 709 1 0 Swing 
+: 711 1 0 for 
+: 712 1 0 your 
+: 713 1 0 jaw 
+: 715 1 0 on 
+: 717 1 0 the 
+: 719 1 0 first 
+: 722 1 0 round, 
+: 724 1 0 attack, 
+: 726 1 0 -tack, 
+: 728 1 0 -tack
+- 729 733
+- 733
+: 740 1 0 Murderer
+- 741
+: 742 1 0 Homie, 
+: 744 1 0 it's 
+: 745 1 0 the 
+: 746 1 0 way 
+: 747 1 0 get 
+: 747 1 0 that 
+: 749 1 0 down 
+: 749 1 0 I
+- 750
+: 755 1 0 Yeah
+- 756 758
+- 758
+: 765 1 0 The 
+: 766 1 0 bigger 
+: 766 1 0 they 
+: 767 1 0 come, 
+: 768 1 0 the 
+: 769 1 0 bigger 
+: 770 1 0 they 
+: 771 1 0 fall
+- 772
+: 773 1 0 The 
+: 774 1 0 trigger, 
+: 774 1 0 the 
+: 775 1 0 gun, 
+: 776 1 0 I'm 
+: 777 1 0 clipping 
+: 778 1 0 them 
+: 778 1 0 all
+- 779
+: 781 1 0 Like 
+: 787 1 0 eeny-meeny-miny-moe
+- 788
+: 789 1 0 I 
+: 791 1 0 line 
+: 792 1 0 them 
+: 793 1 0 up 
+: 794 1 0 against 
+: 795 1 0 the 
+: 796 1 0 wall
+- 797
+: 797 1 0 I 
+: 798 1 0 don't 
+: 799 1 0 mean 
+: 803 1 0 metaphorically, 
+: 807 1 0 lyrical 
+: 809 1 0 bullets
+- 810
+: 811 1 0 I 
+: 812 1 0 mean 
+: 814 1 0 actually 
+: 816 1 0 fucking 
+: 818 1 0 kill 
+: 819 1 0 'em, 
+: 821 1 0 squeeze 
+: 822 1 0 the 
+: 823 1 0 trigger 
+: 824 1 0 and 
+: 825 1 0 pull 
+: 826 1 0 it
+- 827
+: 829 1 0 Blood 
+: 831 1 0 splat, 
+: 833 1 0 how's 
+: 835 1 0 it 
+: 836 1 0 going 
+: 838 1 0 lad, 
+: 840 1 0 rhymes 
+: 841 1 0 are 
+: 842 1 0 flowing 
+: 843 1 0 mad
+- 844
+: 846 1 0 Trust 
+: 847 1 0 that 
+: 848 1 0 I'm 
+: 849 1 0 a 
+: 850 1 0 pro 
+: 852 1 0 at 
+: 853 1 0 that, 
+: 854 1 0 seeds 
+: 856 1 0 are 
+: 857 1 0 sewing, 
+: 860 1 0 bad 
+: 861 1 0 boy
+- 862
+: 863 1 0 I'm 
+: 864 1 0 an 
+: 866 1 0 addict, 
+: 869 1 0 volcanic, 
+: 870 1 0 a 
+: 872 1 0 mind 
+: 873 1 0 that's 
+: 875 1 0 twisted 
+: 876 1 0 and 
+: 877 1 0 manic
+- 878
+: 879 1 0 The 
+: 880 1 0 are 
+: 881 1 0 rhymes 
+: 881 1 0 gifted, 
+: 883 1 0 God 
+: 884 1 0 damn 
+: 886 1 0 it, 
+: 887 1 0 I 
+: 888 1 0 push 
+: 890 1 0 the 
+: 890 1 0 button,
+- 891
+: 892 1 0 Breathe, 
+: 892 1 0 we
+- 893
+: 897 1 0 Breathe, 
+: 899 1 0 I 
+: 901 1 0 seize 
+: 903 1 0 the 
+: 903 1 0 land 
+: 905 1 0 sky, 
+: 907 1 0 and 
+: 908 1 0 the 
+: 909 1 0 seas, 
+: 910 1 0 it's 
+: 911 1 0 easy
+- 912
+: 914 1 0 See 
+: 915 1 0 me 
+: 917 1 0 freestyle 
+: 920 1 0 freely
+- 921
+: 924 1 0 What, 
+: 926 1 0 man?
+- 927
+: 928 1 0 Yes, 
+: 930 1 0 I 
+: 932 1 0 came 
+: 932 1 0 to 
+: 934 1 0 rock, 
+: 936 1 0 man
+- 937
+: 938 1 0 Drop 
+: 939 1 0 it 
+: 940 1 0 like 
+: 941 1 0 it's 
+: 943 1 0 hot, 
+: 944 1 0 fam
+- 945
+: 946 1 0 Wearing 
+: 947 1 0 clothes 
+: 949 1 0 from 
+: 950 1 0 Oxfam, 
+: 953 1 0 God 
+: 955 1 0 damn!
+- 956
+: 957 1 0 I 
+: 959 1 0 am 
+: 960 1 0 a 
+: 963 1 0 blood-sucking 
+: 965 1 0 titan 
+: 969 1 0 from 
+: 970 1 0 the 
+: 971 1 0 streets 
+: 973 1 0 of 
+: 976 1 0 Brighton
+- 977
+: 978 1 0 Hit 
+: 979 1 0 you 
+: 981 1 0 with 
+: 983 1 0 my 
+: 984 1 0 right 
+: 986 1 0 hand, 
+: 989 1 0 sucker
+- 990 993
+- 993
+: 1000 1 0 If 
+: 1001 1 0 you 
+: 1002 1 0 catch 
+: 1004 1 0 me 
+: 1005 1 0 alone, 
+: 1006 1 0 you 
+: 1007 1 0 better 
+: 1008 1 0 stay 
+: 1010 1 0 out 
+: 1011 1 0 my 
+: 1012 1 0 zone 
+: 1014 1 0 because 
+: 1016 1 0 I'm 
+: 1017 1 0 ready 
+: 1018 1 0 to 
+: 1025 1 0 kill
+- 1026
+: 1032 1 0 I'll 
+: 1033 1 0 sit 
+: 1034 1 0 on 
+: 1035 1 0 my 
+: 1037 1 0 throne 
+: 1039 1 0 made 
+: 1041 1 0 of 
+: 1042 1 0 bodies 
+: 1043 1 0 and 
+: 1044 1 0 bones 
+: 1047 1 0 because 
+: 1048 1 0 I'm 
+: 1050 1 0 mentally 
+: 1052 1 0 ill
+- 1053 1057
+- 1057
+: 1064 1 0 I'm 
+: 1065 1 0 feeling 
+: 1067 1 0 alive, 
+: 1069 1 0 I 
+: 1071 1 0 got 
+: 1072 1 0 the 
+: 1073 1 0 will 
+: 1075 1 0 to 
+: 1077 1 0 survive, 
+: 1079 1 0 so 
+: 1080 1 0 never 
+: 1082 1 0 test 
+: 1084 1 0 my 
+: 1088 1 0 skill
+- 1089
+: 1096 1 0 For 
+: 1099 1 0 goodness 
+: 1101 1 0 sake,
+- 1102
+: 1101 1 0 Homie, 
+: 1103 1 0 man, 
+: 1105 1 0 I'm 
+: 1107 1 0 ready 
+: 1108 1 0 to 
+: 1110 1 0 break, 
+: 1114 1 0 man,
+- 1115 1118
+- 1118
+: 1125 1 0 Homie, 
+: 1127 1 0 it's 
+: 1129 1 0 the 
+: 1130 1 0 way 
+: 1131 1 0 that 
+: 1131 1 0 I 
+: 1134 1 0 get 
+: 1138 1 0 down, 
+: 1145 1 0 rat-tat-tat-tat
+- 1146
+: 1153 1 0 Murderer
+- 1154
+: 1156 1 0 If 
+: 1157 1 0 you 
+: 1158 1 0 see 
+: 1159 1 0 me 
+: 1160 1 0 on 
+: 1162 1 0 of 
+: 1162 1 0 the 
+: 1163 1 0 corner 
+: 1164 1 0 my 
+: 1171 1 0 town, 
+: 1172 1 0 get 
+: 1177 1 0 back-back-back
+- 1178 1181
+- 1181
+: 1188 1 0 Murderer
+- 1189
+: 1188 1 0 Swing 
+: 1190 1 0 for 
+: 1191 1 0 your 
+: 1193 1 0 jaw 
+: 1195 1 0 on 
+: 1196 1 0 the 
+: 1198 1 0 first 
+: 1202 1 0 round, 
+: 1203 1 0 attack, 
+: 1205 1 0 -tack, 
+: 1207 1 0 -tack
+- 1208 1213
+- 1213
+: 1220 1 0 Murderer
+- 1221
+: 1222 1 0 Homie, 
+: 1224 1 0 it's 
+: 1225 1 0 the 
+: 1226 1 0 way 
+: 1227 1 0 that 
+: 1228 1 0 I 
+: 1230 1 0 get 
+: 1234 1 0 down
+- 1235
+: 1241 1 0 Yeah
+- 1242
+: 1241 1 0 Shee
+- 1242 1279
+- 1279
+: 1286 1 0 Homie, 
+: 1288 1 0 it's 
+: 1289 1 0 the-, 
+: 1290 1 0 homie, 
+: 1292 1 0 it's 
+: 1294 1 0 the-
+E

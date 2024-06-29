@@ -1,0 +1,1052 @@
+#ARTIST:Eminem
+#TITLE:Houdini
+#CREATOR:DoubleDee
+#BPM:254
+#YEAR:2024
+#VIDEO:v=22tVWwmTie8
+#GENRE:Hip-Hop
+#LANGUAGE:English
+#GAP:6226,062992125984
+#ALLKARAOKE_ID:eminem-houdini
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:14.761Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:127
+#ALLKARAOKE_VOLUME:0,96
+#P1:Houdini
+#MP3:Eminem - Houdini.mp3
+#COVER:Eminem - Houdini [CO].jpg
+#BACKGROUND:Eminem - Houdini [BG].jpg
+* 17 2 -3 Guess 
+* 21 2 0 who’s 
+* 25 3 4 back
+- 28 32
+- 32
+: 49 2 2 Back 
+: 53 2 5 a
+: 57 3 9 gain
+- 60 64
+- 64
+* 81 2 -4 Sha
+* 85 2 -1 dy’s 
+* 89 3 4 back
+- 92 128
+- 128
+: 145 2 -3 Guess 
+: 149 2 0 who’s 
+: 153 3 4 back
+- 156 160
+- 160
+: 177 2 2 Back 
+: 181 2 5 a
+: 185 3 9 gain
+- 188 192
+- 192
+: 209 3 -4 Sha
+: 213 2 -1 dy’s 
+: 217 3 4 back
+- 220 224
+- 224
+: 241 3 2 Tell 
+: 245 2 2 a 
+: 249 3 -3 friend
+- 252 256
+- 256
+: 273 2 -3 Guess 
+: 277 2 0 who’s 
+: 281 3 4 back
+- 284 288
+- 288
+: 305 2 2 Back 
+: 309 2 5 a
+: 313 3 9 gain
+- 316 320
+- 320
+: 337 3 -4 Sha
+: 341 2 -1 dy’s 
+: 345 3 4 back
+- 348 352
+- 352
+: 369 3 2 Tell 
+: 373 2 0 a 
+: 377 3 -3 friend
+- 380 384
+- 384
+: 401 2 4 Guess 
+: 405 2 4 who’s 
+: 409 3 4 back? 
+: 417 2 2 Guess 
+: 421 2 2 who’s 
+: 425 3 2 back?
+- 428
+* 433 2 0 Guess 
+* 437 2 0 who’s 
+* 441 3 0 back? 
+: 449 2 -1 Guess 
+: 453 2 -1 who’s 
+: 457 3 -1 back?
+- 460
+: 465 2 -3 Guess 
+: 469 2 -3 who’s 
+: 473 4 -3 back? 
+: 481 2 -5 Guess 
+: 485 2 -5 who’s 
+: 489 3 -5 back?
+- 492
+: 497 2 -7 Guess 
+: 501 2 -7 who’s 
+: 505 4 -7 back?
+- 509
+: 513 3 3 Da–
+: 517 3 4 da–
+: 521 3 3 da, 
+: 529 3 9 da, 
+: 537 3 9 da, 
+: 545 3 9 da, 
+: 553 3 9 da, 
+: 561 3 9 da, 
+: 569 3 9 da
+- 572
+: 577 3 3 Da–
+: 581 3 4 da–
+: 585 3 3 da, 
+: 593 3 9 da, 
+: 601 3 9 da, 
+: 609 3 9 da, 
+: 617 3 9 da,
+- 620 631
+- 631
+G 648 2 13 Well, 
+G 652 2 17 look 
+G 656 1 15 what 
+G 658 1 13 the 
+G 660 3 13 snork 
+G 665 2 12 brung
+- 667
+R 676 1 13 Lit
+R 678 1 13 tle 
+R 680 1 12 ba
+R 682 1 12 by 
+R 684 1 12 de
+R 686 1 12 vil 
+R 688 1 11 with 
+R 690 1 12 a 
+R 692 2 13 forked 
+R 696 2 13 tongue
+- 698
+R 704 1 13 And 
+R 706 1 12 it’s 
+R 708 1 13 stick
+R 710 1 11 in’ 
+R 712 2 11 out, 
+R 716 2 12 yeah, 
+R 720 1 11 like 
+R 722 1 10 a 
+R 724 2 11 sore 
+R 728 2 11 thumb
+- 730
+R 736 1 12 With 
+R 738 1 11 a 
+R 740 2 13 fore
+R 744 2 13 head 
+R 748 1 11 that 
+R 750 1 11 it 
+R 752 2 12 grew 
+R 756 3 11 horns 
+R 760 2 13 from
+- 762
+R 768 1 12 Still 
+R 770 1 10 a 
+R 772 2 12 white 
+R 776 3 12 jerk,
+- 779
+R 784 1 12 Pul
+R 786 1 12 lin’ 
+R 788 2 12 up 
+R 792 1 12 in 
+R 794 1 10 a 
+R 796 2 12 Chrys
+R 800 2 12 ler 
+R 804 1 12 to 
+R 806 1 10 the 
+R 808 2 12 Cy
+R 812 1 11 pher
+- 813
+R 816 1 10 With 
+R 818 1 10 the 
+R 820 3 12 vic’s, 
+R 824 3 12 perks 
+R 828 1 11 and 
+R 830 1 8 a 
+R 832 2 11 Bud 
+R 836 2 13 Light 
+R 840 1 11 shirt
+- 841
+R 844 1 14 Ly
+R 846 1 9 ri
+R 848 1 4 cal 
+R 852 2 12 tech
+R 856 1 13 ni
+R 858 2 5 cian, 
+R 864 1 8 an 
+R 866 1 10 e
+R 868 2 10 lec
+R 872 1 14 tri
+R 874 2 9 cian
+- 876
+R 880 2 13 Y’all 
+R 884 2 11 light 
+R 888 2 9 work
+- 890
+R 898 1 -3 And 
+R 900 1 12 I 
+R 902 1 12 don’t 
+R 904 1 12 got
+R 906 1 12 ta 
+R 908 3 16 play 
+R 912 2 12 pre
+R 916 2 12 tend, 
+R 920 1 12 it’s 
+R 922 1 9 you 
+R 924 1 9 I 
+R 926 2 9 make 
+R 930 1 7 be
+R 932 2 9 lieve
+- 934
+R 940 1 7 And 
+R 942 2 16 you 
+R 946 3 12 know 
+R 950 1 4 I’m 
+R 952 3 9 here 
+R 956 1 9 to 
+R 958 2 9 stay 
+R 962 1 5 ’cause 
+R 964 2 9 me
+- 966
+R 972 1 9 If 
+R 974 2 9 I 
+R 978 2 7 was 
+R 982 1 7 to 
+R 984 2 9 e
+R 987 2 7 ver 
+R 990 2 9 take 
+R 994 1 4 a 
+R 996 3 9 leave
+- 999
+R 1004 1 9 It 
+R 1006 1 16 would 
+R 1010 3 9 be 
+R 1014 1 7 as
+R 1017 2 9 pirin 
+R 1021 1 7 to 
+R 1023 2 9 break 
+R 1026 1 7 a 
+R 1028 3 9 feve’
+- 1031
+R 1036 1 9 If 
+R 1038 2 16 I 
+R 1042 3 9 was 
+R 1046 1 7 to 
+R 1048 3 9 ask 
+R 1052 1 7 for 
+R 1054 2 9 Me
+R 1058 1 7 gan 
+R 1060 4 9 Thee
+- 1064
+R 1068 2 11 Stal
+R 1072 1 9 lion 
+R 1074 1 7 if 
+R 1076 3 9 she 
+R 1080 1 7 would 
+R 1082 1 8 col
+R 1084 3 9 lab 
+R 1088 2 7 with 
+R 1092 2 4 me
+- 1094
+: 1100 1 4 Would 
+: 1102 1 8 I 
+: 1104 1 8 real
+: 1106 1 8 ly 
+: 1108 1 7 have 
+: 1110 1 8 a 
+* 1112 3 8 shot 
+* 1116 2 8 at 
+* 1120 2 9 a 
+* 1124 1 11 feat?
+- 1125
+R 1128 1 2 I 
+R 1130 1 6 don’t 
+R 1132 2 4 know, 
+R 1136 1 0 but 
+R 1138 1 1 I’m 
+R 1140 2 4 glad 
+R 1144 1 1 to 
+R 1146 2 0 be 
+R 1150 2 4 back 
+R 1154 1 4 like
+- 1155
+* 1157 5 4 A
+* 1165 5 0 bra– 
+* 1173 5 2 a
+* 1181 4 0 bra 
+* 1189 3 2 ca
+* 1193 4 0 da
+* 1199 4 -3 bra
+- 1203 1215
+- 1215
+: 1232 3 -8 I’m 
+: 1236 2 -4 ’bout 
+: 1240 2 -1 to 
+: 1244 3 2 reach 
+: 1248 2 2 in 
+: 1252 2 4 my 
+: 1256 3 2 bag, 
+: 1260 4 0 bruh
+- 1264 1268
+- 1268
+: 1285 5 4 A
+: 1293 5 0 bra– 
+: 1301 5 2 a
+: 1309 4 0 bra 
+: 1317 3 2 ca
+: 1321 4 0 da
+: 1329 3 -3 bra
+- 1332 1348
+- 1348
+: 1365 2 -8 Just 
+: 1369 3 -1 like 
+: 1373 3 2 that 
+: 1377 3 2 and 
+: 1381 2 4 I’m 
+: 1385 3 2 back, 
+: 1389 4 0 bro
+- 1393 1525
+- 1525
+: 1542 2 11 Now 
+: 1546 2 16 back 
+: 1550 1 12 in 
+: 1552 1 12 the 
+: 1554 2 12 days 
+: 1558 1 11 of 
+: 1560 2 12 old 
+: 1564 2 9 me
+- 1566
+: 1570 1 12 Right 
+: 1572 1 12 a
+: 1574 1 11 round 
+: 1576 1 11 the 
+: 1578 3 14 time 
+: 1582 1 12 I 
+: 1584 1 12 be
+: 1586 2 12 came 
+: 1590 1 11 a 
+: 1592 2 11 dope 
+: 1596 1 9 fiend
+- 1597
+: 1600 3 11 Ate 
+: 1604 1 9 some 
+: 1606 2 12 co
+: 1610 2 9 deine 
+: 1614 1 11 as 
+: 1616 1 9 a 
+: 1618 2 12 way 
+: 1622 1 9 of 
+: 1624 2 12 co
+: 1628 1 9 pin’
+- 1629
+: 1632 2 12 Taste 
+: 1636 1 9 of 
+: 1638 2 12 o
+: 1642 3 9 pi
+: 1646 2 12 ates, 
+: 1650 2 12 case 
+: 1654 1 9 of 
+: 1656 2 12 O.
+: 1660 1 9 E.
+- 1661
+: 1664 2 12 Turned 
+: 1668 1 9 me 
+: 1670 3 12 in
+: 1674 2 9 to 
+: 1678 1 12 Smi
+: 1680 1 9 ley 
+: 1682 2 12 Face 
+: 1686 1 9 E
+: 1688 2 12 mo
+: 1692 1 9 ji
+- 1693
+: 1696 1 9 My 
+: 1698 3 12 shit 
+: 1702 2 9 may 
+: 1706 3 9 not 
+: 1710 2 9 be 
+: 1714 2 12 age–
+: 1718 1 9 ap
+: 1720 2 12 pro
+: 1724 2 9 priate
+- 1726
+: 1733 1 9 But 
+: 1735 1 9 I 
+: 1738 2 12 will 
+: 1742 1 12 hit 
+: 1744 1 9 an 
+: 1746 2 12 eight 
+: 1750 2 9 year 
+: 1754 1 12 old 
+: 1756 2 9 in 
+: 1760 2 9 the 
+: 1764 1 12 face
+- 1765
+: 1768 1 9 With 
+: 1770 1 9 a 
+: 1772 1 9 par
+: 1774 1 12 ti
+: 1776 1 9 ci
+: 1778 2 12 pa
+: 1782 1 9 tion 
+: 1784 2 12 tro
+: 1788 1 9 phy
+- 1789
+: 1792 3 12 Cause 
+: 1796 1 12 I 
+: 1798 2 12 have 
+: 1802 2 12 ze
+: 1806 2 12 ro 
+: 1810 6 9 doubts
+- 1816
+: 1824 2 14 That 
+: 1828 1 12 this 
+: 1830 3 14 whole 
+: 1834 3 14 world’s 
+: 1840 3 12 ’bout
+- 1843
+: 1852 1 9 To 
+: 1854 3 12 turn 
+: 1858 2 12 in
+: 1862 1 12 to 
+: 1864 1 12 some 
+: 1866 3 12 Girl 
+: 1872 4 11 Scouts
+- 1876
+: 1884 2 14 That 
+: 1888 3 14 cen
+: 1892 1 12 sor
+: 1894 3 14 ship 
+: 1898 1 12 bu
+: 1900 3 14 reau’s 
+: 1904 4 12 out
+- 1908 1909
+- 1909
+: 1926 1 11 So 
+: 1928 1 11 when 
+: 1930 2 16 I 
+: 1934 2 12 star
+: 1938 1 11 ted 
+: 1940 2 12 this 
+: 1944 1 11 verse
+- 1945
+: 1948 1 9 It 
+: 1950 2 11 did 
+: 1954 3 9 start 
+: 1958 3 9 off 
+: 1962 3 8 light–
+: 1966 2 9 hear
+: 1970 2 8 ted 
+: 1974 1 8 It 
+: 1976 3 12 froze 
+: 1980 3 9 me
+- 1983
+R 1986 3 8 Feels 
+R 1990 2 8 like 
+R 1994 3 9 I’m 
+R 1998 2 8 tar
+R 2002 1 6 ge
+R 2004 1 4 ted
+- 2005
+R 2008 3 8 Mind 
+R 2012 3 8 bog
+R 2016 1 6 g
+R 2018 2 6 ~ling 
+R 2022 2 5 how 
+R 2026 3 6 my 
+R 2030 2 9 pro
+R 2034 2 9 fit 
+R 2037 2 5 is 
+R 2040 2 8 sky
+R 2044 2 8 rock
+R 2048 1 6 e
+R 2050 1 6 ted
+- 2051
+R 2054 1 11 Look 
+R 2056 1 9 what 
+R 2058 2 11 I 
+R 2062 2 9 pock
+R 2066 1 8 e
+R 2068 1 6 ted
+- 2069
+R 2072 3 9 Yeah 
+R 2076 1 8 this 
+R 2078 2 9 shit 
+R 2082 2 9 is 
+R 2086 2 11 just 
+R 2090 3 11 like 
+R 2094 3 9 y’all 
+R 2098 1 5 had 
+R 2100 2 5 been 
+R 2104 3 9 light 
+R 2108 2 9 jog
+R 2112 1 5 gin’ 
+R 2114 1 5 and
+- 2115
+R 2118 2 9 I’ve 
+R 2122 2 7 been 
+R 2126 1 9 run
+R 2128 2 7 ning 
+R 2132 1 9 at 
+R 2134 2 7 full 
+R 2138 1 9 speed
+- 2139
+R 2142 2 7 And 
+R 2146 3 9 that’s 
+R 2150 2 7 why 
+R 2154 3 9 I’m 
+R 2158 1 5 a
+R 2160 3 9 head 
+R 2164 3 9 like 
+R 2168 2 8 my 
+R 2172 2 9 nog
+R 2176 2 7 gin 
+R 2180 1 5 and
+- 2181
+R 2182 1 9 I’m 
+R 2184 1 8 the 
+R 2186 2 9 fight 
+R 2190 2 9 y’all 
+R 2194 1 7 get 
+R 2196 1 5 in
+- 2197
+R 2200 2 7 When 
+R 2204 1 9 you 
+R 2206 2 7 de
+R 2210 2 9 bate 
+R 2214 1 7 who 
+R 2216 1 7 the 
+R 2218 2 9 best 
+R 2222 1 7 but 
+R 2224 2 9 I 
+R 2228 2 9 sound 
+R 2232 2 9 white–
+R 2236 3 9 chal
+R 2240 1 7 kin’ 
+R 2242 1 5 then
+- 2243
+R 2246 2 11 I 
+R 2250 2 7 step 
+R 2254 2 7 up 
+R 2258 1 7 to 
+R 2260 2 5 that 
+R 2264 2 4 mic, 
+R 2268 3 7 cock 
+R 2272 1 4 it 
+R 2274 1 2 then
+- 2275
+R 2276 1 5 \\\"Oh 
+R 2278 2 11 my 
+R 2282 3 11 god, 
+R 2286 1 10 it’s 
+R 2288 2 12 him... 
+R 2296 2 16 Not 
+R 2300 1 14 a
+R 2302 1 16 gain!\\\"
+- 2303
+: 2306 5 4 A
+: 2314 5 0 bra– 
+: 2322 5 2 a
+: 2330 4 0 bra 
+: 2338 3 2 ca
+: 2342 4 0 da
+: 2348 4 -3 bra
+- 2352 2472
+- 2472
+: 2489 5 4 A
+: 2497 5 0 bra– 
+: 2505 5 2 a
+: 2513 4 0 bra 
+: 2521 3 2 ca
+: 2525 4 0 da
+: 2531 4 -3 bra
+- 2535 2548
+- 2548
+: 2565 3 -8 I’m 
+: 2569 2 -4 ’bout 
+: 2573 2 -1 to 
+: 2577 3 2 reach 
+: 2581 2 2 in 
+: 2585 2 4 my 
+: 2589 3 2 bag, 
+: 2593 4 0 bruh
+- 2597 2600
+- 2600
+: 2617 5 4 A
+: 2625 5 0 bra– 
+: 2633 5 2 a
+: 2641 4 0 bra 
+: 2649 3 2 ca
+: 2653 4 0 da
+: 2661 3 -3 bra
+- 2664 2680
+- 2680
+: 2697 2 -8 Just 
+: 2701 3 -1 like 
+: 2705 3 2 that 
+: 2709 3 2 and 
+: 2713 2 4 I’m 
+: 2717 3 2 back, 
+: 2721 4 0 bro
+- 2725 2728
+- 2728
+: 2745 5 4 A
+: 2753 5 0 bra– 
+: 2761 5 2 a
+: 2769 4 0 bra 
+: 2777 3 2 ca
+: 2781 4 0 da
+: 2787 4 -3 bra
+- 2791 2804
+- 2804
+: 2821 3 -8 I’m 
+: 2825 2 -4 ’bout 
+: 2829 2 -1 to 
+: 2833 3 2 reach 
+: 2837 2 2 in 
+: 2841 2 4 my 
+: 2845 3 2 bag, 
+: 2849 4 0 bruh
+- 2853 2856
+- 2856
+: 2873 5 4 A
+: 2881 5 0 bra– 
+: 2889 5 2 a
+: 2897 4 0 bra 
+: 2905 3 2 ca
+: 2909 4 0 da
+: 2917 3 -3 bra
+- 2920 2936
+- 2936
+: 2953 2 -8 Just 
+: 2957 3 -1 like 
+: 2961 3 2 that 
+: 2965 3 2 and 
+: 2969 2 4 I’m 
+: 2973 3 2 back, 
+: 2977 4 0 bro
+- 2981 2996
+- 2996
+* 3013 2 4 Some
+* 3017 2 3 times 
+: 3021 3 4 I 
+: 3025 2 3 won
+: 3029 2 4 der 
+: 3033 3 3 what 
+: 3037 2 4 the 
+: 3041 3 2 old 
+: 3045 5 -3 me’d 
+: 3053 4 0 say
+- 3057 3060
+- 3060
+: 3077 2 -8 If 
+: 3081 3 -4 he 
+: 3085 3 -1 could 
+: 3089 3 2 see 
+: 3093 3 2 the 
+: 3097 3 2 way 
+: 3101 3 0 shit 
+* 3105 6 4 is 
+* 3113 7 2 to
+* 3121 3 0 day
+* 3125 3 -3 ~
+- 3128
+: 3141 3 4 He’d 
+: 3145 2 3 prob
+: 3149 2 4 ably 
+: 3153 3 3 say 
+: 3157 3 4 that 
+: 3161 3 3 eve
+: 3165 3 4 ry
+: 3169 2 2 thing 
+: 3173 3 -3 is 
+: 3181 4 0 gay
+- 3185 3188
+- 3188
+: 3205 3 4 What’s 
+: 3209 2 -1 my 
+: 3213 6 2 name 
+: 3221 2 2 what’s 
+: 3225 2 0 my 
+* 3229 2 4 name
+* 3232 1 3 ~
+* 3234 16 4 ~?
+- 3250 3433
+- 3433
+R 3450 3 16 How 
+R 3454 1 15 ma
+R 3456 1 14 ny 
+R 3458 1 13 lit
+R 3460 1 13 tle 
+R 3462 2 13 kids 
+R 3466 2 13 still 
+R 3470 1 12 wan
+R 3472 1 12 na 
+R 3474 2 11 act 
+R 3478 2 11 like 
+R 3482 3 10 me?
+- 3485
+R 3490 1 12 I’m 
+R 3492 1 9 a 
+R 3494 1 12 big
+R 3496 1 9 ger 
+R 3500 3 12 prick 
+R 3504 1 9 than 
+R 3506 2 12 cac
+R 3510 2 9 ti 
+R 3514 2 9 be
+- 3516
+R 3520 1 9 And 
+R 3522 2 11 that’s 
+R 3526 2 12 why 
+R 3530 3 9 these
+- 3533
+R 3538 3 11 Words 
+R 3542 2 12 sting 
+R 3546 3 9 just 
+R 3550 3 12 like 
+R 3554 2 9 you 
+R 3558 3 12 were 
+R 3562 3 9 being 
+R 3566 2 9 at
+R 3570 2 11 tacked 
+R 3574 3 12 by 
+R 3578 1 9 bees
+- 3579
+R 3582 1 9 In 
+R 3584 1 9 the 
+R 3586 2 12 coupe 
+R 3590 1 9 lea
+R 3592 1 9 ning 
+R 3594 2 11 back 
+R 3598 2 12 my 
+R 3602 3 9 seat
+- 3605
+R 3610 1 11 Bum
+R 3612 1 11 pin’ 
+R 3614 3 11 R. 
+R 3618 1 12 Kel
+R 3620 1 9 ly’s 
+R 3622 3 9 fa
+R 3626 1 9 v’rite 
+R 3628 1 9 group
+- 3629
+R 3632 1 7 The 
+R 3634 3 10 black 
+R 3638 3 10 guy 
+R 3642 3 11 guy 
+R 3646 5 11 pee’s
+- 3651
+R 3658 1 12 In 
+R 3660 1 11 my 
+R 3662 2 7 Air 
+R 3666 3 11 Max 
+R 3670 3 11 Nine
+R 3674 1 11 ty’s
+- 3675
+R 3678 3 12 White 
+R 3682 3 12 T’s 
+R 3686 2 12 walk
+R 3690 1 10 ing 
+R 3692 1 10 pa
+R 3694 1 12 ren
+R 3696 1 12 tal 
+R 3698 2 9 ad
+R 3702 2 12 vi
+R 3706 2 11 sory
+- 3708
+R 3720 1 9 My 
+R 3722 3 9 trans
+R 3726 1 9 gen
+R 3728 1 9 der 
+R 3730 3 11 cat’s 
+R 3734 3 -3 sia
+R 3738 3 4 mese
+- 3741
+R 3744 1 8 I
+R 3746 1 8 den
+R 3748 1 9 ti
+R 3750 3 9 fies 
+R 3754 1 8 as 
+R 3756 3 8 black, 
+R 3760 1 10 but 
+R 3762 2 11 acts 
+R 3766 2 -3 Chi
+R 3770 2 4 nese
+- 3772
+R 3778 1 4 Like 
+R 3780 1 4 a 
+R 3782 1 7 mo
+R 3784 1 7 ther
+R 3786 1 7 fuck
+R 3788 1 4 in’ 
+R 3790 1 7 Ha
+R 3792 1 4 cky 
+R 3794 2 7 Sack 
+R 3798 2 7 I 
+R 3802 3 7 treat
+- 3805
+R 3808 1 4 The 
+R 3810 2 7 whole 
+R 3814 3 7 world 
+R 3818 1 7 cause 
+R 3820 1 4 I 
+R 3822 1 7 got 
+R 3824 1 4 it 
+R 3826 2 7 at 
+R 3830 2 7 my 
+R 3834 1 7 feet
+- 3835
+R 3838 2 4 How 
+R 3842 1 8 can 
+R 3844 1 7 I 
+R 3846 2 8 ex
+R 3850 2 8 plain 
+R 3854 1 6 to 
+R 3856 1 1 you
+- 3857
+R 3860 2 5 That 
+R 3863 1 9 e
+R 3866 2 9 ven 
+R 3870 3 6 my
+R 3874 3 10 self 
+R 3878 1 5 I’m 
+R 3880 1 5 a 
+R 3882 2 6 dan
+R 3886 1 6 ger 
+R 3888 1 7 to
+- 3889
+R 3892 1 4 I 
+R 3894 2 8 hop 
+R 3898 2 4 on 
+R 3902 3 9 tracks 
+R 3906 2 4 like 
+R 3910 2 4 a 
+R 3914 3 9 kan
+R 3918 1 4 ga
+R 3920 1 4 roo
+- 3921
+R 3924 1 5 And 
+R 3926 3 10 say 
+R 3930 1 9 a 
+R 3932 3 7 few 
+R 3936 3 9 things 
+R 3940 1 5 or 
+R 3942 1 5 two 
+R 3944 1 5 to 
+R 3946 2 9 an
+R 3950 1 6 ger 
+R 3952 1 6 you
+- 3953
+R 3956 1 9 But 
+R 3958 3 14 fuck 
+R 3962 3 9 that, 
+R 3966 1 7 if 
+R 3968 1 7 I 
+R 3970 2 9 think 
+R 3974 2 9 that 
+R 3978 3 9 shit, 
+R 3982 1 7 I’
+R 3984 1 7 ma 
+R 3986 2 9 say 
+R 3990 3 5 that 
+R 3994 3 5 shit
+- 3997
+R 4002 2 7 Can
+R 4006 1 2 cel 
+R 4008 2 9 me 
+R 4012 2 9 what? 
+R 4016 1 7 O
+R 4018 2 5 kay 
+R 4022 3 7 that’s 
+R 4026 1 2 it
+- 4027
+R 4030 1 5 Go 
+R 4032 1 7 a
+R 4034 2 9 head, 
+R 4038 3 4 Paul, 
+R 4044 2 9 quit, 
+R 4050 3 2 snake 
+R 4054 2 2 ass 
+R 4058 2 5 prick
+- 4060
+R 4064 1 0 You 
+R 4066 3 4 male 
+R 4070 3 4 cross–
+R 4074 1 4 dres
+R 4076 2 4 ser, 
+R 4082 2 4 fake–
+R 4086 3 4 ass 
+R 4090 3 7 bitch
+- 4093
+R 4102 1 -1 And 
+R 4104 1 -3 I’ll 
+R 4106 1 5 prob’
+R 4108 1 0 bly 
+R 4110 2 0 get 
+R 4114 2 -3 shit 
+R 4118 1 0 for 
+R 4120 3 4 that
+- 4123
+R 4128 1 2 But 
+R 4130 1 3 you 
+R 4132 1 4 can 
+R 4134 2 7 all 
+R 4138 3 5 suck 
+R 4142 2 2 my 
+R 4146 2 4 dick 
+R 4150 1 4 in 
+R 4152 3 5 fact
+- 4155
+G 4158 2 5 Fuck 
+G 4162 2 7 them, 
+G 4166 2 5 fuck 
+G 4170 2 7 Dre, 
+G 4174 2 5 fuck 
+G 4178 1 7 Jim
+G 4180 1 9 my, 
+G 4182 2 5 fuck 
+G 4186 2 9 me, 
+G 4190 2 5 fuck 
+G 4194 3 8 you,
+- 4197
+R 4202 1 9 Fuck 
+R 4204 1 7 my 
+R 4206 2 9 own 
+R 4210 2 12 kids 
+R 4214 1 9 they’re 
+R 4216 3 9 brats 
+F 4222 3 17 (fuck 
+F 4226 1 15 ’em)
+- 4227
+* 4230 1 9 Take 
+* 4232 1 4 a 
+* 4234 2 4 scoop 
+* 4238 2 4 off, 
+: 4246 1 9 them 
+: 4248 1 4 and 
+: 4250 2 4 you 
+: 4254 3 4 all
+- 4257
+R 4262 3 9 You 
+R 4266 3 9 too, 
+R 4270 3 5 Paul, 
+R 4278 3 9 got 
+R 4282 2 5 two 
+R 4286 3 5 balls
+- 4289
+R 4294 1 11 Big 
+R 4296 1 4 as 
+R 4298 3 4 Ru 
+R 4302 3 4 Pauls
+- 4305
+R 4310 1 7 What 
+R 4312 1 7 you 
+R 4314 2 7 thought 
+R 4318 2 7 you 
+R 4322 3 5 saw 
+R 4326 1 9 ain’t 
+R 4328 1 5 what 
+R 4330 2 5 you 
+R 4334 3 4 saw
+- 4337
+R 4342 1 6 Cause 
+R 4344 1 6 you’re 
+R 4346 1 7 ne
+R 4348 1 7 ver 
+R 4350 2 7 gon’ 
+R 4354 3 8 see 
+R 4358 1 4 me
+- 4359
+R 4362 2 8 Caught 
+R 4366 1 9 sleep
+R 4368 1 7 ing 
+R 4374 1 9 see 
+R 4376 1 7 the 
+R 4378 2 9 kid 
+R 4382 2 9 nap
+R 4386 1 5 ping
+- 4387
+R 4390 1 7 Ne
+R 4392 1 7 ver 
+R 4394 2 9 did 
+R 4398 2 5 hap
+R 4402 1 4 pen
+- 4403
+R 4406 3 5 Like 
+R 4410 2 8 Sher
+R 4413 2 9 ry 
+R 4416 1 7 Pa
+R 4418 2 9 pi
+R 4422 2 5 ni, 
+R 4426 2 8 Har
+R 4429 2 8 ry 
+R 4432 1 6 Hou
+R 4434 2 8 di
+R 4437 1 8 ni
+- 4438
+R 4440 1 5 I 
+R 4442 2 8 va
+R 4446 1 9 nish 
+R 4448 2 7 in
+R 4451 1 9 to 
+R 4453 2 9 the 
+R 4456 1 7 thin 
+R 4458 2 9 air 
+R 4461 2 9 as 
+R 4464 1 7 I’m 
+R 4466 2 14 lea
+R 4469 2 9 ving 
+R 4472 2 8 like
+- 4474 4583
+- 4583
+: 4600 5 4 A
+: 4608 5 0 bra– 
+: 4616 5 2 a
+: 4624 4 0 bra 
+: 4632 3 2 ca
+: 4636 4 0 da
+: 4642 4 -3 bra
+- 4646 4658
+- 4658
+: 4675 3 -8 I’m 
+: 4679 2 -4 ’bout 
+: 4683 2 -1 to 
+: 4687 3 2 reach 
+: 4691 2 2 in 
+: 4695 2 4 my 
+: 4699 3 2 bag, 
+: 4703 4 0 bruh
+- 4707 4710
+- 4710
+: 4727 5 4 A
+: 4735 5 0 bra– 
+: 4743 5 2 a
+: 4751 4 0 bra 
+: 4759 3 2 ca
+: 4763 4 0 da
+: 4771 3 -3 bra
+- 4774 4790
+- 4790
+: 4807 2 -8 Just 
+: 4811 3 -1 like 
+: 4815 3 2 that 
+: 4819 3 2 and 
+: 4823 2 4 I’m 
+: 4827 3 2 back, 
+: 4831 4 0 bro
+E

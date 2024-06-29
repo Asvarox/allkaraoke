@@ -1,0 +1,496 @@
+#ARTIST:Chappell Roan
+#TITLE:Good Luck, Babe!
+#CREATOR:piharatamo
+#BPM:117
+#YEAR:2024
+#VIDEO:v=1RKqOmSkGgM
+#LANGUAGE:English
+#GAP:10954,358974358975
+#ALLKARAOKE_ID:chappell-roan-good-luck-babe
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:14.326Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:59
+#ALLKARAOKE_VOLUME:0,79
+#MP3:Chappell Roan - Good Luck, Babe!.mp3
+#COVER:Chappell Roan - Good Luck, Babe! [CO].jpg
+#BACKGROUND:Chappell Roan - Good Luck, Babe! [BG].jpg
+: 8 3 14 It's 
+: 11 6 11 fine, 
+: 24 3 16 it's 
+: 27 6 13 cool
+- 33
+: 38 2 11 You 
+: 40 1 9 can 
+: 43 2 18 say 
+: 45 2 18 that 
+: 47 2 18 we 
+: 49 1 18 are 
+: 52 2 18 noth
+: 54 2 16 ing 
+: 56 2 16 but 
+: 58 1 16 you 
+: 60 2 16 know 
+: 64 2 14 the 
+: 67 3 9 truth
+- 70
+: 71 1 9 And 
+: 73 2 16 guess 
+: 75 4 11 I'm 
+: 88 3 16 the 
+: 91 6 13 fool
+- 97
+: 103 2 11 With 
+: 105 1 9 her 
+: 106 3 18 arms 
+: 110 2 18 out 
+: 112 2 18 like 
+: 114 2 18 an 
+: 116 3 18 angel 
+: 119 3 16 through 
+: 122 2 16 the 
+: 124 2 16 car 
+: 127 5 14 sun
+: 132 3 9 roof
+- 135 136
+- 136
+: 144 1 18 I 
+: 145 1 18 don't 
+: 146 2 18 wanna 
+: 148 2 16 call 
+: 150 2 16 it 
+: 152 4 16 off
+- 156
+: 159 2 21 But 
+: 161 1 21 you 
+: 162 1 21 don't 
+: 163 1 21 wanna 
+: 164 1 18 call 
+: 166 1 18 it 
+: 168 3 18 love
+- 171
+: 175 1 21 You 
+: 176 1 21 only 
+: 177 1 21 wan
+: 178 1 18 na 
+: 180 1 18 be 
+: 182 1 18 the 
+: 184 1 18 one 
+: 186 2 16 that 
+: 189 2 16 I 
+: 192 3 18 call 
+: 196 4 21 ba
+: 200 3 23 by
+- 203
+* 203 2 14 You 
+: 206 1 14 can 
+: 208 1 14 kiss 
+: 210 1 13 a 
+: 212 6 14 hundred 
+: 221 2 13 boys 
+: 224 2 14 in 
+: 228 2 6 bars
+- 230
+* 235 3 18 Shoot 
+: 238 4 14 another 
+: 244 2 13 shot, 
+: 249 1 14 try 
+: 250 1 13 to 
+: 252 3 11 stop 
+: 257 1 13 the 
+: 259 6 14 feeling
+- 265
+* 268 3 18 You 
+: 271 1 14 can 
+: 273 1 14 say 
+: 275 2 14 it's 
+: 277 2 13 just 
+: 281 2 14 the 
+: 285 3 13 way 
+: 289 3 14 you 
+: 293 3 6 are
+- 296
+* 300 3 18 Make 
+: 303 1 14 a 
+: 305 1 14 new 
+: 307 5 14 excuse 
+: 313 3 13 another 
+: 318 2 14 stu
+: 320 2 11 pid 
+: 323 6 13 reason
+- 329
+* 329 3 18 Good 
+* 332 2 18 luck, 
+* 335 3 9 babe!
+- 338
+: 343 2 9 Well 
+* 346 2 18 good 
+* 348 3 18 luck, 
+* 352 4 16 babe!
+- 356
+: 361 2 9 You'd 
+: 363 3 18 have 
+: 367 1 14 to 
+: 369 2 14 stop 
+: 371 1 14 the 
+: 373 3 14 world 
+: 377 2 14 just 
+: 379 3 14 to 
+: 382 3 13 stop 
+: 386 3 11 the 
+: 389 2 13 feel
+: 391 3 14 ing
+- 394
+* 394 3 18 Good 
+* 397 2 18 luck, 
+* 400 3 9 babe!
+- 403
+: 408 2 9 Well 
+* 411 2 18 good 
+* 413 3 18 luck, 
+* 417 4 16 babe!
+- 421
+: 426 2 9 You'd 
+: 428 3 18 have 
+: 432 1 14 to 
+: 434 2 14 stop 
+: 436 1 14 the 
+: 438 3 14 world 
+: 442 2 14 just 
+: 444 3 14 to 
+: 447 3 13 stop 
+: 451 3 11 the 
+: 454 2 13 feel
+: 456 4 14 ing
+- 460
+: 460 2 14 You 
+: 462 6 11 say 
+: 474 3 16 who 
+: 477 8 13 cares
+- 485
+: 488 2 11 It's 
+: 491 1 9 a 
+: 493 6 18 sexually 
+: 499 6 18 explicit 
+: 506 3 18 kind 
+: 509 1 18 of 
+: 511 3 16 love 
+: 514 7 16 affair
+- 521
+: 521 2 9 And 
+: 523 2 16 I 
+: 527 4 11 cry
+- 531
+: 536 2 16 It's 
+: 538 2 16 not 
+: 542 7 13 fair
+- 549
+* 552 2 9 I 
+* 555 3 9 just 
+* 559 1 9 need 
+* 561 2 19 a 
+* 563 2 18 little 
+* 565 1 16 lo
+* 566 2 14 vin'
+- 568
+* 569 3 21 I 
+* 572 2 21 just 
+* 574 2 21 need 
+* 576 2 19 a 
+* 578 3 19 little 
+* 581 10 18 air
+- 591
+: 595 1 18 Think 
+: 596 1 18 I'm 
+: 597 2 18 gonna 
+: 599 2 16 call 
+: 601 2 16 it 
+: 603 4 16 off
+- 607
+: 610 2 21 Even 
+: 612 1 21 if 
+: 613 1 21 you 
+: 615 1 18 call 
+: 617 1 18 it 
+: 619 4 18 love
+- 623
+: 626 1 21 I 
+: 627 1 21 just 
+: 628 1 21 wanna 
+: 630 2 18 love 
+: 632 4 18 someone 
+: 636 1 16 who 
+: 639 4 16 calls 
+: 643 3 18 me 
+: 647 4 21 ba
+: 651 3 23 by
+- 654
+* 654 2 14 You 
+: 657 1 14 can 
+: 659 1 14 kiss 
+: 661 1 13 a 
+: 663 6 14 hundred 
+: 671 2 13 boys 
+: 675 2 14 in 
+: 679 2 6 bars
+- 681
+* 685 3 18 Shoot 
+: 689 4 14 another 
+: 695 2 13 shot, 
+: 700 1 14 try 
+: 701 1 13 to 
+: 703 3 11 stop 
+: 708 1 13 the 
+: 710 6 14 feeling
+- 716
+* 718 3 18 You 
+: 722 1 14 can 
+: 724 1 14 say 
+: 726 2 14 it's 
+: 728 2 13 just 
+: 732 2 14 the 
+: 736 3 13 way 
+: 740 3 14 you 
+: 744 3 6 are
+- 747
+* 750 3 18 Make 
+: 754 1 14 a 
+: 756 1 14 new 
+: 758 5 14 excuse 
+: 764 3 13 another 
+: 769 2 14 stu
+: 771 2 11 pid 
+: 774 6 13 reason
+- 780
+* 780 3 18 Good 
+* 783 2 18 luck, 
+* 786 3 9 babe!
+- 789
+: 794 2 9 Well 
+* 797 2 18 good 
+* 799 3 18 luck, 
+* 803 4 16 babe!
+- 807
+: 812 2 9 You'd 
+: 814 3 18 have 
+: 818 1 14 to 
+: 820 2 14 stop 
+: 822 1 14 the 
+: 824 3 14 world 
+: 828 2 14 just 
+: 830 3 14 to 
+: 833 3 13 stop 
+: 837 3 11 the 
+: 840 2 13 feel
+: 842 3 14 ing
+- 845
+* 845 3 18 Good 
+* 848 2 18 luck, 
+* 851 3 9 babe!
+- 854
+: 859 2 9 Well 
+* 862 2 18 good 
+* 864 3 18 luck, 
+* 868 4 16 babe!
+- 872
+: 874 2 9 You'd 
+: 879 2 14 have
+: 882 1 14 to 
+: 884 2 14 stop 
+: 886 1 14 the 
+: 888 3 14 world 
+: 892 2 14 just 
+: 894 3 14 to 
+: 897 3 13 stop 
+: 901 3 11 the 
+: 904 2 13 feel
+: 906 4 14 ing
+- 910 965
+- 965
+: 973 1 9 When 
+: 974 1 6 you 
+: 976 1 6 wake 
+: 978 1 6 up 
+: 980 1 6 next 
+: 982 1 6 to 
+: 984 3 6 him 
+: 988 1 4 in 
+: 990 1 4 the 
+: 992 3 4 middle 
+: 995 1 4 of 
+: 997 1 4 the 
+: 999 4 4 night
+- 1003
+: 1003 2 6 With 
+: 1005 1 6 your 
+: 1006 4 6 head 
+: 1010 1 6 in 
+: 1012 3 6 your 
+: 1015 4 6 hands
+- 1019
+: 1019 2 4 You're 
+: 1021 2 4 nothing 
+: 1024 2 4 more 
+: 1026 1 4 than 
+: 1027 1 4 his 
+: 1029 4 4 wife
+- 1033
+: 1035 2 9 And 
+: 1037 2 9 when 
+: 1039 2 6 you 
+: 1041 2 6 think 
+: 1043 3 6 about 
+: 1047 3 6 me 
+: 1051 1 4 all 
+: 1053 1 4 of 
+: 1055 2 4 those 
+: 1057 2 4 years 
+: 1060 4 4 ago
+- 1064
+: 1066 2 9 You're 
+: 1068 3 9 standing 
+: 1073 2 6 face 
+: 1076 1 6 to 
+: 1079 2 6 face 
+: 1082 3 4 with 
+: 1087 2 4 I 
+: 1089 2 4 told 
+: 1092 1 4 you 
+: 1094 2 4 so
+- 1096
+: 1098 3 9 You 
+: 1101 2 9 know 
+: 1103 1 6 I 
+: 1105 3 6 hate 
+: 1108 2 6 to 
+: 1111 2 6 say 
+: 1118 2 4 I 
+: 1121 2 4 told 
+: 1123 2 4 you 
+: 1126 3 4 so
+- 1129
+: 1130 2 9 You 
+: 1132 2 9 know 
+: 1134 1 6 I 
+: 1136 3 6 hate 
+: 1139 1 6 to 
+: 1142 3 6 say 
+: 1146 2 6 but
+- 1148
+* 1151 2 18 I 
+* 1153 2 18 told 
+* 1155 3 16 you 
+* 1160 1 14 so
+* 1161 28 16 ~
+- 1189 1191
+- 1191
+* 1199 3 18 Shoot 
+: 1202 4 14 another 
+: 1208 2 13 shot, 
+: 1213 1 14 try 
+: 1214 1 13 to 
+: 1216 3 11 stop 
+: 1221 1 13 the 
+: 1223 6 14 feeling
+- 1229
+* 1231 3 18 You 
+: 1235 1 14 can 
+: 1237 1 14 say 
+: 1239 2 14 it's 
+: 1241 2 13 just 
+: 1245 2 14 the 
+: 1249 3 13 way 
+: 1253 3 14 you 
+: 1257 3 6 are
+- 1260
+* 1263 3 18 Make 
+: 1267 1 14 a 
+: 1269 1 14 new 
+: 1271 5 14 excuse 
+: 1277 3 13 another 
+: 1282 2 14 stu
+: 1284 2 11 pid 
+: 1287 6 13 reason
+- 1293
+* 1293 3 18 Good 
+* 1296 2 18 luck, 
+* 1299 3 9 babe!
+- 1302
+: 1307 2 9 Well 
+* 1310 2 18 good 
+* 1312 3 18 luck, 
+* 1316 4 16 babe!
+- 1320
+: 1325 2 9 You'd 
+: 1327 3 18 have 
+: 1331 1 14 to 
+: 1333 2 14 stop 
+: 1335 1 14 the 
+: 1337 3 14 world 
+: 1341 2 14 just 
+: 1343 2 14 to 
+: 1345 3 13 stop 
+: 1349 3 11 the 
+: 1352 2 13 feel
+: 1354 3 14 ing
+- 1357
+* 1358 3 18 Good 
+* 1361 2 18 luck, 
+* 1364 3 9 babe!
+- 1367
+: 1371 2 9 Well 
+* 1373 2 18 good 
+* 1375 3 18 luck, 
+* 1380 4 16 babe!
+- 1384
+: 1388 2 9 You'd 
+: 1391 3 18 have 
+: 1395 1 14 to 
+: 1397 2 14 stop 
+: 1399 1 14 the 
+: 1401 3 14 world 
+: 1404 2 14 just 
+: 1406 3 14 to 
+: 1409 3 13 stop 
+: 1412 3 11 the 
+: 1415 2 13 feel
+: 1417 2 14 ing
+- 1419
+: 1421 2 9 You'd 
+: 1423 3 18 have 
+: 1427 1 14 to 
+: 1429 2 14 stop 
+: 1431 1 14 the 
+: 1433 3 14 world 
+: 1437 2 14 just 
+: 1439 3 14 to 
+: 1442 3 13 stop 
+: 1446 3 11 the 
+: 1449 4 13 feel
+: 1453 3 14 ing
+- 1456
+: 1456 2 9 You'd 
+: 1458 3 18 have 
+: 1462 1 14 to 
+: 1464 2 14 stop 
+: 1467 1 14 the 
+: 1470 3 14 world 
+: 1474 2 14 just 
+: 1477 3 14 to 
+: 1480 3 13 stop 
+: 1484 3 11 the 
+: 1487 6 13 feel
+: 1493 2 14 ing
+- 1495
+F 1495 2 9 You'd 
+F 1497 3 18 have 
+F 1503 1 14 to 
+F 1506 2 14 stop 
+F 1508 1 14 the 
+F 1511 3 14 world 
+F 1518 2 14 just 
+F 1520 3 14 to 
+F 1523 3 13 stop 
+F 1527 3 11 the 
+F 1530 6 13 feel
+F 1536 2 14 ing~
+E

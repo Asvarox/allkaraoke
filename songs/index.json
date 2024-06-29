@@ -725,6 +725,33 @@
     "local": false
   },
   {
+    "id": "aaron-u-turn-lili",
+    "title": "U-Turn (Lili)",
+    "artist": "AaRON",
+    "video": "wJRh0PlWB6g",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 5150,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:12.587Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 0.86,
+    "author": "Psychognom",
+    "sourceUrl": "usdb.animux.de",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aaronuturnlili",
+    "local": false
+  },
+  {
     "id": "abba-dancing-queen",
     "title": "Dancing Queen",
     "artist": "ABBA",
@@ -1575,6 +1602,60 @@
     "local": false
   },
   {
+    "id": "ado-odo",
+    "title": "Odo",
+    "artist": "Ado",
+    "video": "YnSW8ian29w",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 256,
+    "gap": -16.09375,
+    "year": "2022",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:13.299Z",
+    "realBpm": 128,
+    "volume": 0.75,
+    "author": "HansiMcKlaus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=174903",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28968",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adoodo",
+    "local": false
+  },
+  {
+    "id": "ado-usseewa",
+    "title": "Usseewa",
+    "artist": "Ado",
+    "video": "Qp3b-RXtz4w",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 356,
+    "gap": 188.76404494382018,
+    "year": "2020",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:13.303Z",
+    "realBpm": 178,
+    "volume": 0.81,
+    "author": "DeinAlptraum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=161112",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27559",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adousseewa",
+    "local": false
+  },
+  {
     "id": "adolescents-orquesta-persona-ideal",
     "title": "Persona ideal",
     "artist": "Adolescent's Orquesta",
@@ -1655,6 +1736,31 @@
     ],
     "tracksCount": 1,
     "search": "aerosmithcrazy",
+    "local": false
+  },
+  {
+    "id": "aerosmith-cryin",
+    "title": "Cryin'",
+    "artist": "Aerosmith",
+    "video": "qfNmyxV2Ncw",
+    "language": [
+      "English"
+    ],
+    "bpm": 103,
+    "gap": 14467.582524271846,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:13.305Z",
+    "realBpm": 106,
+    "volume": 0.83,
+    "sourceUrl": "https://www.youtube.com/watch?v=qfNmyxV2Ncw",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aerosmithcryin",
     "local": false
   },
   {
@@ -2630,6 +2736,31 @@
     "local": false
   },
   {
+    "id": "alicia-keys-girl-on-fire",
+    "title": "Girl On Fire",
+    "artist": "Alicia Keys",
+    "video": "J91ti_MpdHA",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 5001.935483870968,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:13.307Z",
+    "realBpm": 93,
+    "volume": 0.71,
+    "author": "yellie",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aliciakeysgirlonfire",
+    "local": false
+  },
+  {
     "id": "alicia-keys-no-one",
     "title": "No one",
     "artist": "Alicia Keys",
@@ -3192,6 +3323,57 @@
     "local": false
   },
   {
+    "id": "aly-aj-like-whoa",
+    "title": "Like Whoa",
+    "artist": "Aly & AJ",
+    "video": "L8p5t4uPCZQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7620,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:13.308Z",
+    "realBpm": 121,
+    "volume": 0.71,
+    "author": "jalkazar",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alyajlikewhoa",
+    "local": false
+  },
+  {
+    "id": "aly-aj-potential-break-up-song",
+    "title": "Potential Break Up Song",
+    "artist": "Aly & AJ",
+    "video": "bqpA5Acc8-c",
+    "language": [
+      "English"
+    ],
+    "bpm": 315.9,
+    "gap": 11862.849002849003,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:13.455Z",
+    "genre": "Pop",
+    "realBpm": 158,
+    "volume": 0.73,
+    "author": "Diddlmaus30mg",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alyajpotentialbreakupsong",
+    "local": false
+  },
+  {
     "id": "amaia-y-alfred-tu-cancion",
     "title": "Tu Canción",
     "artist": "Amaia y Alfred",
@@ -3218,6 +3400,31 @@
     ],
     "tracksCount": 1,
     "search": "amaiayalfredtucancion",
+    "local": false
+  },
+  {
+    "id": "amalia-hoje-gaivota",
+    "title": "Gaivota",
+    "artist": "Amália Hoje",
+    "video": "BgQeJ6BqRLI",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 312,
+    "gap": 32143.384615384617,
+    "year": "2009",
+    "lastUpdate": "2024-06-29T00:10:13.457Z",
+    "realBpm": 80,
+    "previewStart": 58,
+    "previewEnd": 81,
+    "volume": 0.85,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "amaliahojegaivota",
     "local": false
   },
   {
@@ -6818,6 +7025,35 @@
     "local": false
   },
   {
+    "id": "axelle-red-sensualite",
+    "title": "Sensualité",
+    "artist": "Axelle Red",
+    "video": "iXKkxZ7U-lo",
+    "language": [
+      "French"
+    ],
+    "bpm": 384.4,
+    "gap": 14016.431841831425,
+    "year": "1993",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-06-29T00:10:13.602Z",
+    "genre": "Variété Française",
+    "realBpm": 96,
+    "previewStart": 40,
+    "previewEnd": 63,
+    "volume": 0.85,
+    "author": "thoun",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=thoun",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "axelleredsensualite",
+    "local": false
+  },
+  {
     "id": "ayumi-hamasaki-boys-girls",
     "title": "Boys & Girls",
     "artist": "Ayumi Hamasaki",
@@ -6924,6 +7160,31 @@
     ],
     "tracksCount": 1,
     "search": "babymetalgimmechocolate",
+    "local": false
+  },
+  {
+    "id": "babymetal-x-electric-callboy-ratatata",
+    "title": "Ratatata",
+    "artist": "Babymetal x Electric Callboy",
+    "video": "EDnIEWyVIlE",
+    "language": [
+      "English",
+      "Japanese"
+    ],
+    "bpm": 280.6,
+    "gap": 5794.31931575196,
+    "year": "2024",
+    "lastUpdate": "2024-06-29T00:10:13.744Z",
+    "realBpm": 140,
+    "volume": 0.75,
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=150321",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "babymetalxelectriccallboyratatata",
     "local": false
   },
   {
@@ -7265,6 +7526,33 @@
     "local": false
   },
   {
+    "id": "bad-omens-the-grey",
+    "title": "The Grey",
+    "artist": "Bad Omens",
+    "video": "ZMAy5K8vEGc",
+    "language": [
+      "English"
+    ],
+    "bpm": 570.1,
+    "gap": 29360.17540782319,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:13.888Z",
+    "genre": "Metal",
+    "realBpm": 95,
+    "volume": 0.8,
+    "author": "extraaa",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26118v",
+    "tracks": [
+      {
+        "start": 38
+      }
+    ],
+    "tracksCount": 1,
+    "search": "badomensthegrey",
+    "local": false
+  },
+  {
     "id": "bajm-biala-armia",
     "title": "Biała Armia",
     "artist": "Bajm",
@@ -7398,6 +7686,36 @@
     ],
     "tracksCount": 1,
     "search": "bandaevaarere",
+    "local": false
+  },
+  {
+    "id": "barbara-bandeira-feat-carminho-onde-vais",
+    "title": "Onde Vais",
+    "artist": "Bárbara Bandeira feat. Carminho",
+    "video": "gIP1hwTJOvs",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 256.84,
+    "gap": 2293.1639931474847,
+    "year": "2021",
+    "lastUpdate": "2024-06-29T00:10:14.042Z",
+    "realBpm": 140,
+    "previewStart": 65,
+    "previewEnd": 106,
+    "volume": 0.8,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 17
+      },
+      {
+        "start": 1073
+      }
+    ],
+    "tracksCount": 2,
+    "search": "barbarabandeirafeatcarminhoondevais",
     "local": false
   },
   {
@@ -11005,6 +11323,57 @@
     "local": false
   },
   {
+    "id": "bridgit-mendler-hurricane",
+    "title": "Hurricane",
+    "artist": "Bridgit Mendler",
+    "video": "t-njAuS7eTQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 9713.157894736842,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.181Z",
+    "genre": "Pop",
+    "realBpm": 95,
+    "volume": 0.62,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bridgitmendlerhurricane",
+    "local": false
+  },
+  {
+    "id": "bridgit-mendler-ready-or-not",
+    "title": "Ready Or Not",
+    "artist": "Bridgit Mendler",
+    "video": "dPKG1-3LXBs",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 721.9354838709678,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.325Z",
+    "realBpm": 93,
+    "volume": 0.62,
+    "author": "vicktoben",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bridgitmendlerreadyornot",
+    "local": false
+  },
+  {
     "id": "bring-me-the-horizon-teardrops",
     "title": "Teardrops",
     "artist": "Bring Me The Horizon",
@@ -13622,6 +13991,56 @@
     "local": false
   },
   {
+    "id": "chappell-roan-good-luck-babe",
+    "title": "Good Luck, Babe!",
+    "artist": "Chappell Roan",
+    "video": "1RKqOmSkGgM",
+    "language": [
+      "English"
+    ],
+    "bpm": 117,
+    "gap": 10954.358974358975,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.326Z",
+    "realBpm": 59,
+    "volume": 0.79,
+    "author": "piharatamo",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chappellroangoodluckbabe",
+    "local": false
+  },
+  {
+    "id": "chappell-roan-red-wine-supernova",
+    "title": "Red Wine Supernova",
+    "artist": "Chappell Roan",
+    "video": "VS6ixn2berk",
+    "language": [
+      "English"
+    ],
+    "bpm": 124,
+    "gap": 12572.258064516129,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.466Z",
+    "realBpm": 62,
+    "volume": 0.74,
+    "author": "piharatamo",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chappellroanredwinesupernova",
+    "local": false
+  },
+  {
     "id": "charlie-puth-selena-gomez-we-dont-talk-anymore",
     "title": "We don't talk anymore",
     "artist": "Charlie Puth & Selena Gomez",
@@ -15934,6 +16353,32 @@
     "local": false
   },
   {
+    "id": "culture-club-karma-chameleon",
+    "title": "Karma Chameleon",
+    "artist": "Culture Club",
+    "video": "5MdOYG4SZjM",
+    "language": [
+      "English"
+    ],
+    "bpm": 366.28,
+    "gap": 12377.145353281643,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-29T00:10:14.468Z",
+    "genre": "Pop",
+    "realBpm": 87,
+    "volume": 0.99,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cultureclubkarmachameleon",
+    "local": false
+  },
+  {
     "id": "cutting-crew-i-just-died-in-your-arms",
     "title": "(I Just) Died In Your Arms",
     "artist": "Cutting Crew",
@@ -17344,6 +17789,36 @@
     ],
     "tracksCount": 1,
     "search": "davidguettafeatfloridanickiminajwherethemgirlsat",
+    "local": false
+  },
+  {
+    "id": "david-guetta-feat-justin-bieber-2u",
+    "title": "2U",
+    "artist": "David Guetta feat. Justin Bieber",
+    "video": "RqcjBLMaWCg",
+    "language": [
+      "English"
+    ],
+    "bpm": 145.02,
+    "gap": -246.34009102192795,
+    "year": "2017",
+    "lastUpdate": "2024-06-29T00:10:14.613Z",
+    "genre": "Dance",
+    "realBpm": 145,
+    "previewStart": 54,
+    "previewEnd": 182,
+    "volume": 0.68,
+    "author": "cesar050",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=cesar0504",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=2U",
+    "tracks": [
+      {
+        "name": "2u-Justin bieber",
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidguettafeatjustinbieber2u",
     "local": false
   },
   {
@@ -18844,6 +19319,35 @@
     "local": false
   },
   {
+    "id": "disneys-ducktales-2017-felicia-barton-theme-song",
+    "title": "Theme Song",
+    "artist": "Disney’s DuckTales 2017 (Felicia Barton)",
+    "video": "YKSU82afy1w",
+    "language": [
+      "English"
+    ],
+    "bpm": 365.64,
+    "gap": 1715.4250082047915,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.755Z",
+    "genre": "Themes",
+    "realBpm": 183,
+    "previewStart": 23,
+    "previewEnd": 63,
+    "volume": 1,
+    "author": "jmfb",
+    "tracks": [
+      {
+        "name": "Theme Song",
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysducktales2017feliciabartonthemesong",
+    "local": false
+  },
+  {
     "id": "disneys-encanto-surface-pressure",
     "title": "Surface Pressure",
     "artist": "Disney’s Encanto",
@@ -19206,6 +19710,62 @@
     ],
     "tracksCount": 1,
     "search": "disneysmulanillmakeamanoutofyou",
+    "local": false
+  },
+  {
+    "id": "disneys-phineas-ferb-candace-flynn-queen-of-mars",
+    "title": "Queen Of Mars",
+    "artist": "Disney’s Phineas & Ferb (Candace Flynn)",
+    "video": "8Q7goHk9miY",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.8,
+    "gap": 8796.993496748375,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.755Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "previewStart": 17,
+    "previewEnd": 52,
+    "volume": 1,
+    "author": "bakus33",
+    "tracks": [
+      {
+        "name": "Queen Of Mars",
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysphineasferbcandaceflynnqueenofmars",
+    "local": false
+  },
+  {
+    "id": "disneys-phineas-ferb-phineas-flynn-candace-flynn-come-home-perry",
+    "title": "Come Home Perry",
+    "artist": "Disney’s Phineas & Ferb (Phineas Flynn, Candace Flynn)",
+    "video": "ZylSidJ9eC8",
+    "language": [
+      "English"
+    ],
+    "bpm": 375.6,
+    "gap": 6101.597444089457,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.756Z",
+    "genre": "Pop",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "bakus33",
+    "tracks": [
+      {
+        "name": "Come Home Perry",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysphineasferbphineasflynncandaceflynncomehomeperry",
     "local": false
   },
   {
@@ -21718,6 +22278,32 @@
     "local": false
   },
   {
+    "id": "elton-john-crocodile-rock",
+    "title": "Crocodile Rock",
+    "artist": "Elton John",
+    "video": "75r0nQu-hMs",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.95,
+    "gap": 14063.15667054328,
+    "year": "1972",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-29T00:10:14.758Z",
+    "genre": "Glam Rock",
+    "realBpm": 151,
+    "volume": 0.71,
+    "author": "bohning",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohncrocodilerock",
+    "local": false
+  },
+  {
     "id": "elton-john-dua-lipa-cold-heart-pnau-remix",
     "title": "Cold Heart (PNAU Remix)",
     "artist": "Elton John & Dua Lipa",
@@ -22124,6 +22710,33 @@
     ],
     "tracksCount": 2,
     "search": "eminemfeatrihannathemonster",
+    "local": false
+  },
+  {
+    "id": "eminem-houdini",
+    "title": "Houdini",
+    "artist": "Eminem",
+    "video": "22tVWwmTie8",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 6226.062992125984,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.761Z",
+    "genre": "Hip-Hop",
+    "realBpm": 127,
+    "volume": 0.96,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "name": "Houdini",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eminemhoudini",
     "local": false
   },
   {
@@ -24584,6 +25197,35 @@
     ],
     "tracksCount": 1,
     "search": "fountainsofwaynestacysmom",
+    "local": false
+  },
+  {
+    "id": "france-gall-ella-elle-la",
+    "title": "Ella, elle l'a",
+    "artist": "France Gall",
+    "video": "lgHGU8gqz9U",
+    "language": [
+      "French"
+    ],
+    "bpm": 180,
+    "gap": 19675,
+    "year": "1987",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-06-29T00:10:14.764Z",
+    "genre": "Vocal",
+    "videoGap": 1,
+    "realBpm": 100,
+    "previewStart": 49,
+    "previewEnd": 109,
+    "volume": 0.8,
+    "author": "asb & cinemalin0",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "francegallellaellela",
     "local": false
   },
   {
@@ -27102,6 +27744,56 @@
     "local": false
   },
   {
+    "id": "hailee-steinfeld-grey-feat-zedd-starving",
+    "title": "Starving",
+    "artist": "Hailee Steinfeld & Grey feat. Zedd",
+    "video": "xwjwCFZpdns",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 8695,
+    "year": "2016",
+    "lastUpdate": "2024-06-29T00:10:14.767Z",
+    "genre": "Pop",
+    "realBpm": 98,
+    "volume": 0.65,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "haileesteinfeldgreyfeatzeddstarving",
+    "local": false
+  },
+  {
+    "id": "hailee-steinfeld-love-myself",
+    "title": "Love Myself",
+    "artist": "Hailee Steinfeld",
+    "video": "bMpFmHSgC4Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 9094.390243902439,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:14.912Z",
+    "realBpm": 123,
+    "volume": 0.64,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "haileesteinfeldlovemyself",
+    "local": false
+  },
+  {
     "id": "hamilton-alexander-hamilton",
     "title": "Alexander Hamilton",
     "artist": "Hamilton",
@@ -27416,6 +28108,32 @@
     ],
     "tracksCount": 1,
     "search": "hazbinhoteladdict",
+    "local": false
+  },
+  {
+    "id": "hazbin-hotel-black-gryph0n-baasik-insane",
+    "title": "Insane",
+    "artist": "Hazbin Hotel (Black Gryph0n & Baasik)",
+    "video": "juJkNKodgdE",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.07,
+    "gap": 1670.3332222592471,
+    "year": "2021",
+    "lastUpdate": "2024-06-29T00:10:15.053Z",
+    "realBpm": 105,
+    "volume": 0.7,
+    "author": "Hazbin Hotel",
+    "sourceUrl": "https://www.youtube.com/watch?v=juJkNKodgdE",
+    "tracks": [
+      {
+        "name": "Insane",
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hazbinhotelblackgryph0nbaasikinsane",
     "local": false
   },
   {
@@ -28168,6 +28886,145 @@
     ],
     "tracksCount": 1,
     "search": "himeshpatelyesterday",
+    "local": false
+  },
+  {
+    "id": "hollywood-undead-been-to-hell",
+    "title": "Been To Hell",
+    "artist": "Hollywood Undead",
+    "video": "SFnE2_DUhbs",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.97,
+    "gap": 18533.187233614124,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:15.193Z",
+    "genre": "Crossover",
+    "realBpm": 149,
+    "previewStart": 45,
+    "previewEnd": 81,
+    "volume": 0.8,
+    "author": "reck0ning",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hollywoodundeadbeentohell",
+    "local": false
+  },
+  {
+    "id": "hollywood-undead-comin-in-hot",
+    "title": "Comin’ In Hot",
+    "artist": "Hollywood Undead",
+    "video": "TP5cjnVGJ38",
+    "language": [
+      "English"
+    ],
+    "bpm": 384.3,
+    "gap": 94785.16783762685,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:15.342Z",
+    "genre": "Alternative",
+    "realBpm": 96,
+    "previewStart": 96,
+    "previewEnd": 132,
+    "volume": 0.8,
+    "author": "reck0ning",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hollywoodundeadcomininhot",
+    "local": false
+  },
+  {
+    "id": "hollywood-undead-everywhere-i-go",
+    "title": "Everywhere I Go",
+    "artist": "Hollywood Undead",
+    "video": "z5vA9CwZKNY",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.06,
+    "gap": 37457.55157684268,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:15.344Z",
+    "genre": "Alternative",
+    "realBpm": 110,
+    "previewStart": 74,
+    "previewEnd": 98,
+    "volume": 0.8,
+    "author": "reck0ning",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hollywoodundeadeverywhereigo",
+    "local": false
+  },
+  {
+    "id": "hollywood-undead-hear-me-now",
+    "title": "Hear Me Now",
+    "artist": "Hollywood Undead",
+    "video": "pdoIs1jZbCY",
+    "language": [
+      "English"
+    ],
+    "bpm": 343.68,
+    "gap": 30586.159217877095,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:15.345Z",
+    "genre": "Alternative",
+    "realBpm": 86,
+    "previewStart": 65,
+    "previewEnd": 102,
+    "volume": 0.8,
+    "author": "Webi",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hollywoodundeadhearmenow",
+    "local": false
+  },
+  {
+    "id": "hollywood-undead-young",
+    "title": "Young",
+    "artist": "Hollywood Undead",
+    "video": "R_HHm9ki3JI",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 23922.537313432837,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:15.346Z",
+    "realBpm": 134,
+    "previewStart": 24,
+    "previewEnd": 60,
+    "volume": 0.85,
+    "author": "reck0ning",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hollywoodundeadyoung",
     "local": false
   },
   {
@@ -29238,6 +30095,35 @@
     "local": false
   },
   {
+    "id": "indochine-nos-celebrations",
+    "title": "Nos célébrations",
+    "artist": "Indochine",
+    "video": "f3Pw36EFRV0",
+    "language": [
+      "French"
+    ],
+    "bpm": 252.09,
+    "gap": 50578.456503629655,
+    "year": "2020",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-06-29T00:10:15.347Z",
+    "genre": "Pop",
+    "realBpm": 126,
+    "previewStart": 111,
+    "previewEnd": 165,
+    "volume": 0.8,
+    "author": "Mlef and mustangfred",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "indochinenoscelebrations",
+    "local": false
+  },
+  {
     "id": "inna-sun-is-up",
     "title": "Sun Is Up",
     "artist": "Inna",
@@ -29590,6 +30476,33 @@
     ],
     "tracksCount": 1,
     "search": "jackblackpeaches",
+    "local": false
+  },
+  {
+    "id": "jack-u-skrillex-diplo-with-justin-bieber-where-are-u-now",
+    "title": "Where Are Ü Now",
+    "artist": "Jack Ü (Skrillex & Diplo) with Justin Bieber",
+    "video": "nntGTK2Fhb0",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 6792.142857142857,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:15.348Z",
+    "genre": "Pop",
+    "realBpm": 139,
+    "volume": 0.75,
+    "author": "amro98",
+    "tracks": [
+      {
+        "name": "Where Are Ü Now",
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jackuskrillexdiplowithjustinbieberwhereareunow",
     "local": false
   },
   {
@@ -32393,6 +33306,33 @@
     "local": false
   },
   {
+    "id": "justin-bieber-one-less-lonely-girl",
+    "title": "One Less Lonely Girl",
+    "artist": "Justin Bieber",
+    "video": "LXUSaVw3Mvk",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.67,
+    "gap": 1628.2553445956046,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-06-29T00:10:15.352Z",
+    "genre": "Pop",
+    "realBpm": 87,
+    "volume": 0.74,
+    "author": "Angeloffate",
+    "tracks": [
+      {
+        "name": "One Less Lonely Girl",
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberonelesslonelygirl",
+    "local": false
+  },
+  {
     "id": "justin-bieber-one-time",
     "title": "One Time",
     "artist": "Justin Bieber",
@@ -32851,6 +33791,58 @@
     "local": false
   },
   {
+    "id": "kanako-itou-amadeus",
+    "title": "Amadeus",
+    "artist": "Kanako Itou",
+    "video": "I012yI2Kzqg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 353.92,
+    "gap": 25300.82097649186,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:15.353Z",
+    "genre": "Anime",
+    "realBpm": 177,
+    "volume": 0.75,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kanakoitouamadeus",
+    "local": false
+  },
+  {
+    "id": "kanako-itou-fatima",
+    "title": "Fatima",
+    "artist": "Kanako Itou",
+    "video": "1xJbdY9B3A8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 357.8,
+    "gap": 14957.851313583007,
+    "year": "2018",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:24.955Z",
+    "genre": "Anime",
+    "realBpm": 179,
+    "volume": 1,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kanakoitoufatima",
+    "local": false
+  },
+  {
     "id": "kanye-west-father-stretch-my-hands-pt-1",
     "title": "Father Stretch My Hands Pt. 1",
     "artist": "Kanye West",
@@ -33251,6 +34243,33 @@
     "local": false
   },
   {
+    "id": "katy-perry-birthday",
+    "title": "Birthday",
+    "artist": "Katy Perry",
+    "video": "CEUg7OplvIQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 123388.09523809524,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:24.959Z",
+    "genre": "Pop",
+    "realBpm": 115,
+    "volume": 0.74,
+    "author": "aac",
+    "tracks": [
+      {
+        "name": "Birthday",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katyperrybirthday",
+    "local": false
+  },
+  {
     "id": "katy-perry-dark-horse",
     "title": "Dark Horse",
     "artist": "Katy Perry",
@@ -33408,6 +34427,33 @@
     "local": false
   },
   {
+    "id": "katy-perry-hot-n-cold-rock-version",
+    "title": "Hot N Cold (Rock Version)",
+    "artist": "Katy Perry",
+    "video": "ycQgsMqnmhs",
+    "language": [
+      "English"
+    ],
+    "bpm": 264,
+    "gap": 2697.2727272727275,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:24.962Z",
+    "genre": "Pop",
+    "realBpm": 132,
+    "volume": 0.78,
+    "author": "IC",
+    "tracks": [
+      {
+        "name": "Hot N Cold (Rock Version)",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katyperryhotncoldrockversion",
+    "local": false
+  },
+  {
     "id": "katy-perry-hot-n-cold",
     "title": "Hot N Cold",
     "artist": "Katy Perry",
@@ -33488,6 +34534,34 @@
     "local": false
   },
   {
+    "id": "katy-perry-peacock",
+    "title": "Peacock",
+    "artist": "Katy Perry",
+    "video": "-sFoa3u_7yE",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.1,
+    "gap": 28350,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:24.966Z",
+    "genre": "Pop",
+    "videoGap": 25,
+    "realBpm": 140,
+    "volume": 0.75,
+    "author": "michas17j",
+    "tracks": [
+      {
+        "name": "Peacock",
+        "start": 0
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katyperrypeacock",
+    "local": false
+  },
+  {
     "id": "katy-perry-roar",
     "title": "Roar",
     "artist": "Katy Perry",
@@ -33539,6 +34613,33 @@
     ],
     "tracksCount": 1,
     "search": "katyperrytheonethatgotaway",
+    "local": false
+  },
+  {
+    "id": "katy-perry-waking-up-in-vegas",
+    "title": "Waking Up In Vegas",
+    "artist": "Katy Perry",
+    "video": "1-pUaogoX5o",
+    "language": [
+      "English"
+    ],
+    "bpm": 262,
+    "gap": 6976.717557251908,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:24.967Z",
+    "genre": "Pop",
+    "realBpm": 131,
+    "volume": 0.77,
+    "author": "britneyblisswilliams",
+    "tracks": [
+      {
+        "name": "Waking Up In Vegas",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katyperrywakingupinvegas",
     "local": false
   },
   {
@@ -35227,6 +36328,37 @@
     ],
     "tracksCount": 1,
     "search": "labouchebemylover",
+    "local": false
+  },
+  {
+    "id": "la-casa-azul-la-revolucion-sexual",
+    "title": "La Revolución Sexual",
+    "artist": "La Casa Azul",
+    "video": "juNxwa6H3lI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 468,
+    "gap": 32439.410256410258,
+    "year": "2007",
+    "artistOrigin": "ES",
+    "lastUpdate": "2024-06-29T00:10:24.970Z",
+    "genre": "Indie Pop",
+    "videoGap": 1,
+    "realBpm": 117,
+    "previewStart": 65,
+    "previewEnd": 100,
+    "volume": 0.78,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=La%20Casa%20Azul&cancion=La%20revolución%20sexual",
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lacasaazullarevolucionsexual",
     "local": false
   },
   {
@@ -37261,6 +38393,32 @@
     "local": false
   },
   {
+    "id": "linked-horizon-shinzou-wo-sasageyou",
+    "title": "Shinzou wo sasageyou!",
+    "artist": "Linked Horizon",
+    "video": "CID-sYQNCew",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 319.89,
+    "gap": 5305.286504736003,
+    "year": "2017",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:24.971Z",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "RoiTofu",
+    "tracks": [
+      {
+        "name": "Shinzou wo Sasageyo",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkedhorizonshinzouwosasageyou",
+    "local": false
+  },
+  {
     "id": "linkin-park-bleed-it-out",
     "title": "Bleed It Out",
     "artist": "Linkin Park",
@@ -39153,6 +40311,32 @@
     "local": false
   },
   {
+    "id": "lykke-li-i-follow-rivers-the-magician-remix",
+    "title": "I Follow Rivers (The Magician Remix)",
+    "artist": "Lykke Li",
+    "video": "3FXMsoTTcog",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 36026.39344262295,
+    "year": "2010",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-06-29T00:10:25.113Z",
+    "realBpm": 122,
+    "volume": 0.8,
+    "author": "jackroke",
+    "sourceUrl": "usdb.animux.de",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lykkeliifollowriversthemagicianremix",
+    "local": false
+  },
+  {
     "id": "lyn-break-in-to-break-out",
     "title": "BREAK IN TO BREAK OUT",
     "artist": "Lyn",
@@ -40237,6 +41421,32 @@
     "local": false
   },
   {
+    "id": "man-with-a-mission-raise-your-flag",
+    "title": "Raise Your Flag",
+    "artist": "Man With A Mission",
+    "video": "G-UN6uRMBRw",
+    "language": [
+      "English"
+    ],
+    "bpm": 290.04,
+    "gap": 22653.37691352917,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:25.254Z",
+    "realBpm": 145,
+    "volume": 0.91,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "name": "Raise Your Flag",
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manwithamissionraiseyourflag",
+    "local": false
+  },
+  {
     "id": "mana-clavado-en-un-bar",
     "title": "Clavado en un bar",
     "artist": "Maná",
@@ -40398,6 +41608,34 @@
     ],
     "tracksCount": 1,
     "search": "manaulatribudedana",
+    "local": false
+  },
+  {
+    "id": "manchester-orchestra-the-silence",
+    "title": "The Silence",
+    "artist": "Manchester Orchestra",
+    "video": "5s3ytiYZS8g",
+    "language": [
+      "English"
+    ],
+    "bpm": 389.39,
+    "gap": 57458.433447186624,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:25.396Z",
+    "realBpm": 67,
+    "previewStart": 59,
+    "previewEnd": 90,
+    "volume": 0.99,
+    "author": "daggeg",
+    "sourceUrl": "https://www.youtube.com/watch?v=5s3ytiYZS8g",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manchesterorchestrathesilence",
     "local": false
   },
   {
@@ -47555,6 +48793,37 @@
     "local": false
   },
   {
+    "id": "nuno-ribeiro-calema-mariza-maria-joana",
+    "title": "Maria Joana",
+    "artist": "Nuno Ribeiro, Calema, Mariza",
+    "video": "41W_Dx_Ajj4",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 376.15,
+    "gap": 2763.057290974345,
+    "year": "2023",
+    "lastUpdate": "2024-06-29T00:10:25.540Z",
+    "genre": "Pop",
+    "realBpm": 93,
+    "previewStart": 56,
+    "previewEnd": 77,
+    "volume": 0.8,
+    "author": "hugofnm",
+    "authorUrl": "https://github.com/hugofnm",
+    "tracks": [
+      {
+        "start": 137
+      },
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 2,
+    "search": "nunoribeirocalemamarizamariajoana",
+    "local": false
+  },
+  {
     "id": "o-zone-dragostea-din-tei",
     "title": "Dragostea Din Tei",
     "artist": "O-Zone",
@@ -47661,6 +48930,32 @@
     ],
     "tracksCount": 1,
     "search": "ochmanriver",
+    "local": false
+  },
+  {
+    "id": "official-hige-dandism-cry-baby",
+    "title": "Cry Baby",
+    "artist": "Official HIGE DANdism",
+    "video": "By_JYrhx-WY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 400,
+    "gap": 372.5,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-06-29T00:10:25.683Z",
+    "genre": "J-pop",
+    "realBpm": 100,
+    "volume": 0.75,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "officialhigedandismcrybaby",
     "local": false
   },
   {
@@ -49835,6 +51130,33 @@
     "local": false
   },
   {
+    "id": "paulo-gonzo-sei-te-de-cor",
+    "title": "Sei-te de cor",
+    "artist": "Paulo Gonzo",
+    "video": "NbqoM8cykBA",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 264,
+    "gap": 2052.2727272727275,
+    "year": "1995",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-06-29T00:10:25.828Z",
+    "genre": "Pop",
+    "realBpm": 121,
+    "previewStart": 53,
+    "previewEnd": 85,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paulogonzoseitedecor",
+    "local": false
+  },
+  {
     "id": "pearl-jam-alive",
     "title": "Alive",
     "artist": "Pearl Jam",
@@ -49916,6 +51238,60 @@
     ],
     "tracksCount": 1,
     "search": "pearljamyellowledbetter",
+    "local": false
+  },
+  {
+    "id": "pedro-abrunhosa-feat-camane-para-os-bracos-da-minha-mae",
+    "title": "Para os Braços da Minha Mãe",
+    "artist": "Pedro Abrunhosa Feat. Camané",
+    "video": "L-3TWoMz6kA",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 226.02,
+    "gap": 7797.512874966817,
+    "year": "2013",
+    "lastUpdate": "2024-06-29T00:10:25.976Z",
+    "genre": "Pop",
+    "realBpm": 106,
+    "previewStart": 61,
+    "previewEnd": 78,
+    "volume": 1,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pedroabrunhosafeatcamaneparaosbracosdaminhamae",
+    "local": false
+  },
+  {
+    "id": "pedro-abrunhosa-tudo-o-que-eu-te-dou",
+    "title": "Tudo o que eu te dou",
+    "artist": "Pedro Abrunhosa",
+    "video": "CN-esU1WCw0",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 361.6,
+    "gap": 16308.424778761062,
+    "year": "1994",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-06-29T00:10:26.119Z",
+    "realBpm": 86,
+    "previewStart": 103,
+    "previewEnd": 125,
+    "volume": 1,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pedroabrunhosatudooqueeutedou",
     "local": false
   },
   {
@@ -53895,6 +55271,32 @@
     "local": false
   },
   {
+    "id": "ren-murderer",
+    "title": "Murderer",
+    "artist": "Ren",
+    "video": "hscHqw7CIFo",
+    "language": [
+      "English"
+    ],
+    "bpm": 104,
+    "gap": 5549.384615384615,
+    "year": "2024",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-29T00:10:26.258Z",
+    "genre": "Unknown",
+    "realBpm": 104,
+    "volume": 0.76,
+    "author": "Jray118",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "renmurderer",
+    "local": false
+  },
+  {
     "id": "reni-jusis-zakrecona",
     "title": "Zakręcona",
     "artist": "Reni Jusis",
@@ -54473,6 +55875,33 @@
     ],
     "tracksCount": 1,
     "search": "rihannafeatdrakework",
+    "local": false
+  },
+  {
+    "id": "rihanna-feat-eminem-love-the-way-you-lie-part-ii",
+    "title": "Love The Way You Lie (Part II)",
+    "artist": "Rihanna feat. Eminem",
+    "video": "1CozRvwZEAs",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.1,
+    "gap": -247.5040650406504,
+    "year": "2010",
+    "artistOrigin": "BB",
+    "lastUpdate": "2024-06-29T00:10:26.412Z",
+    "genre": "Pop",
+    "realBpm": 166,
+    "volume": 0.72,
+    "author": "Ty4goo",
+    "tracks": [
+      {
+        "name": "Love The Way You Lie (Part II)",
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rihannafeateminemlovethewayyouliepartii",
     "local": false
   },
   {
@@ -57179,6 +58608,32 @@
     ],
     "tracksCount": 1,
     "search": "selenacomolaflor",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-cruella-de-vil",
+    "title": "Cruella De Vil",
+    "artist": "Selena Gomez",
+    "video": "SQuvXR3bPuI",
+    "language": [
+      "English"
+    ],
+    "bpm": 218,
+    "gap": 9096.697247706423,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:26.413Z",
+    "genre": "Pop Rock, Electro Rock",
+    "realBpm": 109,
+    "volume": 0.79,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezcruelladevil",
     "local": false
   },
   {
@@ -61328,6 +62783,34 @@
     "local": false
   },
   {
+    "id": "syro-perto-de-mim",
+    "title": "Perto de Mim",
+    "artist": "Syro",
+    "video": "nwVPmpQAkX8",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 233.32,
+    "gap": 13144.369792559575,
+    "year": "2020",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-06-29T00:10:26.414Z",
+    "realBpm": 115,
+    "previewStart": 62,
+    "previewEnd": 96,
+    "volume": 0.8,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "syropertodemim",
+    "local": false
+  },
+  {
     "id": "system-of-a-down-aerials",
     "title": "Aerials",
     "artist": "System of a Down",
@@ -64520,6 +66003,33 @@
     "local": false
   },
   {
+    "id": "the-gift-facil-de-entender",
+    "title": "Fácil de entender",
+    "artist": "The Gift",
+    "video": "m-PgnBziPu8",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 312,
+    "gap": 45159.38461538462,
+    "year": "2006",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-06-29T00:10:26.562Z",
+    "genre": "Pop",
+    "realBpm": 156,
+    "previewStart": 98,
+    "previewEnd": 124,
+    "volume": 0.85,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thegiftfacildeentender",
+    "local": false
+  },
+  {
     "id": "the-greatest-showman-a-million-dreams",
     "title": "A Million Dreams",
     "artist": "The Greatest Showman",
@@ -64682,6 +66192,37 @@
     ],
     "tracksCount": 2,
     "search": "thehardkissyakti",
+    "local": false
+  },
+  {
+    "id": "the-jackson-5-abc",
+    "title": "ABC",
+    "artist": "The Jackson 5",
+    "video": "W7v-eiquE1c",
+    "language": [
+      "English"
+    ],
+    "bpm": 376,
+    "gap": -70.80064051240993,
+    "year": "1970",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-06-29T00:10:26.716Z",
+    "edition": "mot",
+    "genre": "Funk",
+    "realBpm": 95,
+    "volume": 0.83,
+    "author": "IC",
+    "tracks": [
+      {
+        "name": " ABC",
+        "start": 25
+      },
+      {
+        "start": 91
+      }
+    ],
+    "tracksCount": 2,
+    "search": "thejackson5abc",
     "local": false
   },
   {
@@ -67712,6 +69253,62 @@
     "local": false
   },
   {
+    "id": "toy-coracao-nao-tem-idade",
+    "title": "Coração Não Tem Idade",
+    "artist": "Toy",
+    "video": "EYfuISiohyI",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 216,
+    "gap": 2695.777777777778,
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-29T00:10:26.720Z",
+    "realBpm": 108,
+    "previewStart": 77,
+    "previewEnd": 106,
+    "volume": 0.75,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "toycoracaonaotemidade",
+    "local": false
+  },
+  {
+    "id": "toy-verao-e-amor",
+    "title": "Verão e Amor",
+    "artist": "Toy",
+    "video": "vtEJiqY3M9o",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 200.06,
+    "gap": 6305.292412276317,
+    "year": "2020",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-06-29T00:10:26.872Z",
+    "realBpm": 100,
+    "previewStart": 78,
+    "previewEnd": 107,
+    "volume": 0.7,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "toyveraoeamor",
+    "local": false
+  },
+  {
     "id": "tracy-chapman-o-holy-night",
     "title": "O Holy Night",
     "artist": "Tracy Chapman",
@@ -69638,6 +71235,30 @@
     ],
     "tracksCount": 1,
     "search": "voyagerpromise",
+    "local": false
+  },
+  {
+    "id": "wang-fe-i-hong-dou",
+    "title": "Hóng Dòu",
+    "artist": "Wáng Fe-i",
+    "video": "q_71ctU9MzI",
+    "language": [
+      "Chinese"
+    ],
+    "bpm": 224.2,
+    "gap": 15696.4317573595,
+    "year": "2005",
+    "lastUpdate": "2024-06-29T00:10:26.873Z",
+    "realBpm": 100,
+    "volume": 0.74,
+    "author": "Fraggansi",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "wangfeihongdou",
     "local": false
   },
   {

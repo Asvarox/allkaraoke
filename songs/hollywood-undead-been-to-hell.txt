@@ -1,0 +1,734 @@
+#ARTIST:Hollywood Undead
+#TITLE:Been To Hell
+#CREATOR:reck0ning
+#BPM:297,97
+#YEAR:2011
+#PREVIEWSTART:45
+#VIDEO:v=SFnE2_DUhbs
+#GENRE:Crossover
+#LANGUAGE:English
+#GAP:18533,187233614124
+#ALLKARAOKE_ID:hollywood-undead-been-to-hell
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:15.193Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:149
+#ALLKARAOKE_PREVIEWEND:81
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Hollywood Undead - Been To Hell.mp3
+: 20 2 5 Wel
+: 24 2 4 come 
+: 28 2 5 to 
+: 32 2 4 a 
+: 36 2 5 ci
+: 40 2 4 ty 
+: 44 2 5 that
+: 48 2 4 ’ll 
+: 52 2 5 bring 
+: 56 2 4 you 
+: 60 2 5 to 
+: 64 2 4 your 
+: 68 7 5 knees
+- 75
+: 76 2 4 It
+: 80 2 4 ’ll 
+: 84 2 5 make 
+: 88 2 4 you 
+: 92 2 5 beg 
+: 96 2 4 for 
+: 100 2 5 more, 
+: 104 2 4 un
+: 108 2 4 til 
+: 112 2 4 you 
+: 116 2 5 can’t 
+: 120 2 5 e
+: 124 2 4 ven 
+: 128 7 5 breathe
+- 135
+: 136 2 4 Your 
+: 140 6 5 blind
+: 148 2 5 fold 
+: 152 2 5 is 
+: 156 6 4 on 
+: 164 4 5 tight,
+- 168
+: 172 2 5 But 
+: 176 2 4 you 
+: 180 2 5 like 
+: 184 2 5 what 
+: 188 2 4 you 
+: 192 7 5 see
+- 199
+: 200 2 4 So 
+: 204 2 5 fol
+: 208 2 4 low 
+: 212 2 5 me 
+: 216 2 4 in
+: 220 2 5 to 
+: 224 2 4 the 
+: 228 2 5 night, 
+: 232 2 4 ’cause 
+: 236 2 5 I 
+: 240 2 4 got 
+: 244 2 5 just 
+: 248 2 4 what 
+: 252 2 4 you 
+* 256 7 7 need
+- 263
+: 264 2 4 We’re 
+* 268 6 4 all 
+* 276 2 5 rol
+* 280 2 4 lin’ 
+* 284 2 5 down 
+: 288 2 4 the 
+: 292 2 5 bou
+: 296 2 4 le
+: 300 6 4 vard, 
+: 308 2 5 full 
+: 312 2 4 of 
+: 316 2 5 pimps 
+: 320 2 4 and 
+: 324 6 5 sharks
+- 330
+: 332 2 6 It’s 
+: 336 2 5 a 
+: 340 2 6 mo
+: 344 2 5 ther
+: 348 2 6 fuc
+: 352 2 6 kin’ 
+: 356 2 5 ri
+: 360 2 4 ot, 
+: 364 2 4 we’ve 
+: 368 2 4 been 
+: 372 6 5 dying 
+: 380 2 4 to 
+: 384 6 6 start
+- 390
+: 392 2 4 You 
+: 396 2 4 bet
+: 400 2 4 ter 
+: 404 2 5 grab 
+: 408 2 4 a 
+: 412 2 5 hold 
+: 416 2 4 ’cause 
+: 420 2 5 now 
+: 424 2 4 you 
+: 428 2 5 know 
+: 432 2 4 your 
+: 436 2 5 fal
+: 440 2 4 ling 
+: 444 2 4 a
+: 448 7 5 part
+- 455
+: 456 2 4 You 
+: 460 2 5 thought 
+: 464 2 4 these 
+: 468 2 5 streets 
+: 472 2 4 were 
+: 476 2 5 paved 
+: 480 2 4 in 
+: 484 7 5 gold
+- 491
+: 492 2 4 But 
+: 496 2 4 they’re 
+: 500 2 5 dir
+: 504 2 4 ty 
+: 508 2 4 and 
+* 512 8 7 dark
+- 520
+F 532 4 4 Been 
+F 540 4 4 to 
+F 548 7 4 hell!
+- 555
+: 556 2 11 I 
+: 560 2 9 can 
+: 564 6 9 show 
+: 572 2 9 you 
+: 576 2 7 the 
+* 580 2 9 de
+* 584 11 11 vil
+- 595
+F 596 4 4 Down 
+F 604 4 4 you 
+F 612 4 4 fell!
+- 616
+: 620 2 11 Can’t 
+: 624 6 9 hold 
+: 632 2 9 your
+: 636 2 9 self 
+: 640 2 7 to
+* 644 2 9 ge
+* 648 11 7 ther
+- 659
+F 660 4 4 Soul 
+F 668 4 4 to 
+F 676 4 4 sell!
+- 680
+: 684 2 11 Down 
+: 688 6 9 here 
+: 696 2 9 you 
+: 700 2 9 live 
+: 704 2 7 fo
+: 708 2 9 re
+: 712 8 11 ver
+- 720
+: 724 2 11 Wel
+: 728 2 9 come 
+: 732 2 9 to 
+: 736 2 7 a 
+: 740 6 9 world 
+: 748 2 7 where 
+: 752 6 9 dreams 
+: 760 2 9 be
+: 764 5 9 come 
+* 772 6 11 night
+* 780 7 4 mares!
+- 787
+F 788 4 4 Been 
+F 796 4 4 to 
+F 804 3 4 hell!
+- 807
+: 808 2 11 And 
+: 812 2 11 I 
+: 816 2 9 can 
+: 820 6 9 show 
+: 828 2 9 you 
+: 832 2 7 the 
+: 836 2 9 de
+: 840 11 11 vil
+- 851
+F 852 4 4 Down 
+F 860 3 4 you 
+F 868 4 4 fell!
+- 872
+: 876 2 11 Can’t 
+: 880 6 9 hold 
+: 888 2 9 your
+: 892 2 9 self 
+: 896 2 7 to
+: 900 2 9 ge
+: 904 11 7 ther
+- 915
+F 916 4 4 Soul 
+F 924 4 4 to 
+F 932 4 4 sell!
+- 936
+: 940 2 11 Down 
+: 944 6 9 here 
+: 952 2 9 you 
+: 956 2 9 live 
+: 960 2 7 fo
+: 964 2 9 re
+: 968 9 11 ver
+- 977
+: 980 2 11 Wel
+: 984 2 9 come 
+: 988 2 9 to 
+: 992 2 7 a 
+: 996 6 9 world 
+: 1004 2 7 where 
+: 1008 6 9 dreams 
+: 1016 2 9 be
+: 1020 5 9 come 
+: 1028 6 11 night
+: 1036 7 11 mares!
+- 1043
+F 1044 3 4 Wel
+F 1052 16 4 come!
+- 1068 1088
+- 1088
+F 1108 4 4 Wel
+F 1116 16 4 come!
+- 1132 1144
+- 1144
+: 1164 2 3 In 
+: 1168 2 3 the 
+: 1172 2 5 bel
+: 1176 2 5 ly 
+: 1180 2 3 of 
+: 1184 2 3 the 
+: 1188 6 5 beast,
+- 1194
+: 1196 2 3 I’m 
+: 1200 2 3 a 
+: 1204 2 5 wolf 
+: 1208 2 5 a
+: 1212 6 3 mongst 
+: 1220 7 6 sheep
+- 1227
+: 1228 2 3 At 
+: 1232 2 3 the 
+: 1236 2 5 bot
+: 1240 2 5 tom 
+: 1244 2 3 of 
+: 1248 2 3 the 
+: 1252 3 5 hill,
+- 1255
+: 1256 2 3 But 
+: 1260 2 3 at 
+: 1264 2 3 the 
+: 1268 6 5 top 
+: 1276 2 2 of 
+: 1280 2 2 the 
+: 1284 3 6 street
+- 1287
+: 1288 2 3 A
+: 1292 2 3 bove 
+: 1296 2 3 the 
+: 1300 2 5 bou
+: 1304 2 5 le
+: 1308 5 3 vard, 
+: 1316 6 5 schoo
+: 1324 6 3 lyard, 
+: 1332 2 5 vic
+: 1336 2 5 tim 
+: 1340 2 3 of 
+: 1344 2 3 de
+: 1348 4 6 ceit
+- 1352
+: 1356 2 4 And 
+: 1360 2 4 your 
+: 1364 2 5 run
+: 1368 2 5 ning 
+: 1372 5 4 hard, 
+: 1380 2 4 but 
+: 1384 2 4 this 
+: 1388 2 5 wolf 
+: 1392 2 4 it’s 
+: 1396 2 5 al
+: 1400 2 5 ways 
+: 1404 2 4 at 
+: 1408 2 4 your 
+: 1412 4 6 feet
+- 1416
+: 1420 2 4 And 
+: 1424 2 4 you’ve 
+: 1428 2 5 seen 
+: 1432 2 4 it 
+: 1436 2 4 all 
+: 1440 2 4 be
+: 1444 6 5 fore, 
+: 1452 2 4 but 
+: 1456 2 4 the 
+: 1460 2 5 wolf’s 
+: 1464 2 5 out
+: 1468 2 4 side 
+: 1472 2 4 your 
+: 1476 4 6 door
+- 1480
+: 1484 2 4 And 
+: 1488 2 4 you’re 
+: 1492 2 4 old 
+: 1496 2 4 e
+: 1500 2 4 nough 
+: 1504 2 4 to 
+: 1508 6 5 run, 
+: 1516 2 4 you 
+: 1520 2 4 ain’t 
+: 1524 2 5 hi
+: 1528 2 5 ding 
+: 1532 2 4 a
+: 1536 2 4 ny
+: 1540 3 6 more
+- 1543
+: 1544 2 4 A
+: 1548 2 4 no
+: 1552 2 4 ther 
+: 1556 2 5 vic
+: 1560 2 4 tim 
+: 1564 2 4 of 
+: 1568 2 4 the 
+: 1572 4 5 star
+- 1576
+: 1580 2 4 Span
+: 1584 2 3 gled 
+: 1588 2 4 ban
+: 1592 2 3 ner 
+: 1596 2 3 of 
+: 1600 2 3 the 
+: 1604 6 5 street
+- 1610
+: 1612 2 4 Now 
+: 1616 2 3 you’re 
+: 1620 2 4 in 
+: 1624 2 3 the 
+: 1628 2 4 world 
+: 1632 2 3 of 
+: 1636 6 4 wolves
+- 1642
+: 1644 2 3 And 
+: 1648 2 3 we 
+: 1652 2 4 wel
+: 1656 2 3 come 
+: 1660 2 3 all 
+: 1664 2 3 you 
+: 1668 8 7 sheep
+- 1676
+F 1684 4 4 Been 
+F 1692 4 4 to 
+F 1700 7 4 hell!
+- 1707
+: 1708 2 11 I 
+: 1712 2 9 can 
+: 1716 6 9 show 
+: 1724 2 9 you 
+: 1728 2 7 the 
+: 1732 2 9 de
+: 1736 11 11 vil
+- 1747
+F 1748 4 4 Down 
+F 1756 4 4 you 
+F 1764 4 4 fell!
+- 1768
+: 1772 2 11 Can’t 
+: 1776 6 9 hold 
+: 1784 2 9 your
+: 1788 2 9 self 
+: 1792 2 7 to
+: 1796 2 9 ge
+: 1800 11 7 ther
+- 1811
+F 1812 4 4 Soul 
+F 1820 4 4 to 
+F 1828 4 4 sell!
+- 1832
+: 1836 2 11 Down 
+: 1840 6 9 here 
+: 1848 2 9 you 
+: 1852 2 9 live 
+: 1856 2 7 fo
+: 1860 2 9 re
+: 1864 8 11 ver
+- 1872
+: 1876 2 11 Wel
+: 1880 2 9 come 
+: 1884 2 9 to 
+: 1888 2 7 a 
+: 1892 6 9 world 
+: 1900 2 7 where 
+: 1904 6 9 dreams 
+: 1912 2 9 be
+: 1916 5 9 come 
+: 1924 6 11 night
+: 1932 7 4 mares!
+- 1939
+F 1940 4 4 Been 
+F 1948 4 4 to 
+F 1956 3 4 hell!
+- 1959
+: 1960 2 11 And 
+: 1964 2 11 I 
+: 1968 2 9 can 
+: 1972 6 9 show 
+: 1980 2 9 you 
+: 1984 2 7 the 
+: 1988 2 9 de
+: 1992 11 11 vil
+- 2003
+F 2004 4 4 Down 
+F 2012 3 4 you 
+F 2020 4 4 fell!
+- 2024
+: 2028 2 11 Can’t 
+: 2032 6 9 hold 
+: 2040 2 9 your
+: 2044 2 9 self 
+: 2048 2 7 to
+: 2052 2 9 ge
+: 2056 11 7 ther
+- 2067
+F 2068 4 4 Soul 
+F 2076 4 4 to 
+F 2084 4 4 sell!
+- 2088
+: 2092 2 11 Down 
+: 2096 6 9 here 
+: 2104 2 9 you 
+: 2108 2 9 live 
+: 2112 2 7 fo
+: 2116 2 9 re
+: 2120 9 11 ver
+- 2129
+: 2132 2 11 Wel
+: 2136 2 9 come 
+: 2140 2 9 to 
+: 2144 2 7 a 
+: 2148 6 9 world 
+: 2156 2 7 where 
+: 2160 6 9 dreams 
+: 2168 2 9 be
+: 2172 5 9 come 
+: 2180 6 11 night
+: 2188 7 11 mares!
+- 2195
+F 2196 3 4 Wel
+F 2204 16 4 come!
+- 2220 2240
+- 2240
+F 2260 4 4 Wel
+F 2268 16 4 come!
+- 2284 2292
+- 2292
+: 2312 2 7 You 
+: 2316 2 7 need 
+: 2320 2 6 to 
+: 2324 2 6 wake 
+: 2328 2 6 up 
+: 2332 2 5 and 
+: 2336 2 6 face 
+: 2340 2 5 it
+- 2342
+: 2344 2 5 So 
+: 2348 2 4 you 
+: 2352 2 6 can 
+: 2356 2 5 taste 
+: 2360 2 4 my 
+: 2364 2 4 re
+: 2368 2 6 a
+: 2372 2 4 li
+: 2376 2 4 ty
+- 2378
+: 2380 2 6 Now 
+: 2384 2 4 you’re 
+: 2388 2 5 stuck 
+: 2392 2 4 in 
+: 2396 2 4 this 
+: 2400 2 5 place 
+: 2404 2 4 you 
+: 2408 2 5 hate
+- 2410
+: 2412 2 4 And 
+: 2416 2 4 you 
+: 2420 2 5 came 
+: 2424 2 4 here 
+: 2428 2 4 so 
+: 2432 2 5 hap
+: 2436 2 4 pi
+: 2440 2 4 ly
+- 2442
+: 2444 2 7 Then 
+: 2448 2 6 it 
+: 2452 2 7 made 
+: 2456 2 6 you 
+: 2460 2 7 lose 
+: 2464 2 6 your 
+: 2468 2 7 faith
+- 2470
+: 2472 2 6 And 
+: 2476 2 6 that’s 
+: 2480 2 6 what 
+: 2484 2 6 fucked 
+: 2488 2 6 with 
+: 2492 2 6 your 
+: 2496 2 6 sa
+: 2500 2 6 ni
+: 2504 2 6 ty
+- 2506
+: 2508 2 5 Say 
+: 2512 2 5 good
+: 2516 2 6 bye 
+: 2520 2 4 to 
+: 2524 2 4 your 
+: 2528 6 7 soul
+- 2534
+: 2536 2 4 And 
+: 2540 2 4 say 
+: 2544 2 4 hel
+: 2548 2 4 lo 
+: 2552 2 4 to 
+: 2556 2 4 your 
+: 2560 2 4 va
+: 2564 2 4 ni
+: 2568 2 4 ty
+- 2570
+: 2572 2 6 Hol
+: 2576 2 6 ly
+: 2580 2 6 wood 
+: 2584 2 5 is 
+: 2588 2 6 your 
+: 2592 5 6 friend, 
+: 2600 2 5 and 
+: 2604 2 6 the 
+: 2608 2 6 un
+: 2612 2 6 dead 
+: 2616 2 6 are 
+: 2620 2 6 your 
+: 2624 2 6 fa
+: 2628 2 6 mi
+: 2632 2 6 ly
+- 2634
+: 2636 2 5 We’ll 
+: 2640 2 5 take 
+: 2644 2 6 you 
+: 2648 2 5 to 
+: 2652 2 5 the 
+: 2656 2 5 edge, 
+: 2660 2 5 and 
+: 2664 2 5 turn 
+: 2668 2 5 your 
+: 2672 2 5 re
+: 2676 2 6 gret 
+: 2680 2 5 in
+: 2684 2 5 to 
+: 2688 2 6 a
+: 2692 2 6 go
+: 2696 2 6 ny
+- 2698
+: 2700 2 5 And 
+: 2704 2 6 I’ll 
+: 2708 2 6 ne
+: 2712 2 6 ver 
+: 2716 2 6 let 
+: 2720 2 6 you 
+: 2724 5 6 go,
+- 2729
+: 2732 2 6 ’cause 
+: 2736 2 6 I 
+: 2740 2 6 know 
+: 2744 2 6 you’ll 
+: 2748 2 6 come 
+: 2752 2 6 back 
+: 2756 2 6 to 
+: 2760 2 6 me
+- 2762
+: 2764 2 6 I’m 
+: 2768 2 6 the 
+: 2772 2 6 rea
+: 2776 2 6 son 
+: 2780 2 6 you 
+: 2784 2 6 came 
+: 2788 3 4 here,
+- 2791
+: 2792 2 4 I’m 
+: 2796 2 5 the 
+: 2800 2 4 A
+* 2804 2 5 me
+* 2808 2 4 ri
+* 2812 2 4 can 
+* 2816 2 7 Tra
+* 2820 2 5 ge
+* 2824 5 4 dy
+- 2829
+F 2836 4 4 Been 
+F 2844 4 4 to 
+F 2852 7 4 hell!
+- 2859
+: 2860 2 11 I 
+: 2864 2 9 can 
+: 2868 6 9 show 
+: 2876 2 9 you 
+: 2880 2 7 the 
+* 2884 2 9 de
+* 2888 11 11 vil
+- 2899
+F 2900 4 4 Down 
+F 2908 4 4 you 
+F 2916 4 4 fell!
+- 2920
+: 2924 2 11 Can’t 
+: 2928 6 9 hold 
+: 2936 2 9 your
+: 2940 2 9 self 
+: 2944 2 7 to
+* 2948 2 9 ge
+* 2952 11 7 ther
+- 2963
+F 2964 4 4 Soul 
+F 2972 4 4 to 
+F 2980 4 4 sell!
+- 2984
+: 2988 2 11 Down 
+: 2992 6 9 here 
+: 3000 2 9 you 
+: 3004 2 9 live 
+: 3008 2 7 fo
+: 3012 2 9 re
+: 3016 8 11 ver
+- 3024
+: 3028 2 11 Wel
+: 3032 2 9 come 
+: 3036 2 9 to 
+: 3040 2 7 a 
+: 3044 6 9 world 
+: 3052 2 7 where 
+: 3056 6 9 dreams 
+: 3064 2 9 be
+: 3068 5 9 come 
+* 3076 6 11 night
+* 3084 7 4 mares!
+- 3091
+F 3092 4 4 Been 
+F 3100 4 4 to 
+F 3108 3 4 hell!
+- 3111
+: 3112 2 11 And 
+: 3116 2 11 I 
+: 3120 2 9 can 
+: 3124 6 9 show 
+: 3132 2 9 you 
+: 3136 2 7 the 
+: 3140 2 9 de
+: 3144 11 11 vil
+- 3155
+F 3156 4 4 Down 
+F 3164 3 4 you 
+F 3172 4 4 fell!
+- 3176
+: 3180 2 11 Can’t 
+: 3184 6 9 hold 
+: 3192 2 9 your
+: 3196 2 9 self 
+: 3200 2 7 to
+: 3204 2 9 ge
+: 3208 11 7 ther
+- 3219
+F 3220 4 4 Soul 
+F 3228 4 4 to 
+F 3236 4 4 sell!
+- 3240
+: 3244 2 11 Down 
+: 3248 6 9 here 
+: 3256 2 9 you 
+: 3260 2 9 live 
+: 3264 2 7 fo
+: 3268 2 9 re
+: 3272 9 11 ver
+- 3281
+: 3284 2 11 Wel
+: 3288 2 9 come 
+: 3292 2 9 to 
+: 3296 2 7 a 
+: 3300 6 9 world 
+: 3308 2 7 where 
+: 3312 6 9 dreams 
+: 3320 2 9 be
+: 3324 5 9 come 
+: 3332 6 11 night
+: 3340 7 11 mares!
+- 3347
+F 3348 3 4 Wel
+F 3356 16 4 come!
+- 3372 3392
+- 3392
+F 3412 4 4 Wel
+F 3420 16 4 come!
+- 3436 3456
+- 3456
+F 3476 4 4 Wel
+F 3484 8 4 come!
+- 3492 3520
+- 3520
+* 3540 2 11 Wel
+* 3544 2 9 come 
+* 3548 2 9 to 
+* 3552 2 7 a 
+* 3556 6 9 world 
+* 3564 2 7 where 
+* 3568 6 9 dreams 
+* 3576 2 9 be
+* 3580 6 9 come 
+* 3588 6 11 night
+* 3596 7 4 mares!
+- 3603
+F 3604 4 4 Wel
+F 3612 16 4 come!
+E
