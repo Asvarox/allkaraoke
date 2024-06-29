@@ -1,0 +1,260 @@
+#ARTIST:Disney’s Phineas & Ferb (Phineas Flynn, Candace Flynn)
+#TITLE:Come Home Perry
+#CREATOR:bakus33
+#BPM:375,6
+#YEAR:2009
+#VIDEO:v=ZylSidJ9eC8
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:6101,597444089457
+#ALLKARAOKE_ID:disneys-phineas-ferb-phineas-flynn-candace-flynn-come-home-perry
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:14.756Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_VOLUME:1
+#P1:Come Home Perry
+#MP3:Disney’s Phineas & Ferb - Come Home Perry.mp3
+: 25 14 0 Per
+: 41 10 0 ry
+- 51
+: 59 2 0 You 
+: 63 2 0 know 
+: 67 4 0 You 
+: 73 6 0 are 
+: 81 4 0 a 
+: 89 6 5 boy’s 
+: 97 4 4 best 
+: 107 8 0 friend
+- 115
+: 125 2 0 You’re 
+: 129 2 0 more 
+: 133 2 0 than 
+: 137 4 0 just 
+: 145 2 0 a 
+* 153 4 5 pass
+: 161 4 4 ing 
+: 169 8 0 trend
+- 177
+: 189 2 0 You’re 
+: 193 2 0 like 
+: 197 2 0 a 
+: 201 6 0 treat 
+: 209 2 0 from 
+: 213 2 0 a 
+: 217 10 5 can
+: 229 8 4 dy 
+: 243 12 2 store
+- 255
+: 265 8 4 Oh
+* 275 4 2 ~ 
+: 283 12 0 Per
+: 297 8 0 ry
+- 305
+: 315 2 0 We 
+: 319 2 0 love 
+: 323 4 0 You 
+: 329 6 0 more 
+: 337 6 0 than 
+: 345 4 2 ice 
+* 353 6 4 cream 
+: 363 10 0 cakes
+- 373
+: 381 2 0 We 
+: 385 2 0 love 
+: 389 2 0 You 
+: 393 6 0 more 
+: 401 4 0 than 
+: 409 6 5 bugs 
+: 417 4 4 and 
+: 425 8 0 snakes
+- 433
+: 445 2 0 We 
+: 449 2 0 love 
+: 453 2 0 You 
+: 457 6 0 more 
+: 465 4 0 than
+- 469
+: 475 4 5 All 
+: 483 2 5 things 
+: 489 2 4 men
+: 493 2 4 tioned 
+: 497 2 4 be
+: 503 10 2 fore
+- 513
+: 523 6 4 Oh
+: 531 4 2 ~ 
+: 539 14 0 Per
+: 555 10 0 ry
+- 565
+: 573 2 0 You’re 
+: 577 2 0 ex
+: 583 2 0 tra
+: 587 4 0 or
+: 593 2 0 di
+: 597 3 0 na
+: 601 7 2 ~
+: 609 6 4 ~
+: 619 8 4 ry
+- 627
+: 637 2 0 You’re 
+: 641 2 0 kin
+: 645 2 0 da 
+: 649 6 0 short 
+* 657 6 9 and 
+: 667 6 7 hair
+: 675 6 0 ~
+: 683 10 0 y
+- 693
+: 701 2 0 The 
+: 705 2 0 co
+: 709 2 0 lor 
+: 713 2 0 of 
+: 717 2 0 the 
+: 721 4 0 blue
+: 729 7 4 ber
+: 737 6 2 ~
+: 745 20 2 ry
+- 765
+: 777 8 2 Yes 
+: 795 20 2 Per
+* 817 6 7 ~
+: 825 12 7 ry
+- 837
+: 849 4 4 So 
+: 857 6 5 come 
+: 865 10 4 home 
+: 881 7 2 Per
+: 889 6 0 ~
+: 897 10 0 ry
+- 907
+: 921 6 5 Come 
+: 931 8 5 home 
+: 947 12 7 Per
+: 961 4 4 ry
+- 965
+: 971 4 0 Come 
+: 979 34 0 home
+- 1013 1200
+- 1200
+: 1225 10 9 Oh 
+: 1243 6 7 Per
+* 1251 4 0 ~
+: 1257 12 0 ry
+- 1269
+: 1281 6 0 I 
+: 1293 2 0 think 
+: 1297 4 0 It’s 
+: 1305 3 0 kin
+: 1309 2 0 da 
+: 1315 4 2 sca
+: 1321 2 4 ~
+: 1325 8 4 ry
+- 1333
+: 1345 2 0 I 
+: 1349 2 0 can’t 
+: 1353 6 0 find 
+: 1361 4 0 You 
+: 1367 2 0 a
+* 1371 4 9 ny
+: 1377 6 7 where
+: 1385 4 0 ~
+: 1391 10 0 y
+- 1401
+: 1405 4 0 It 
+: 1411 2 0 fills 
+: 1415 2 0 Me 
+: 1419 2 0 with
+- 1421
+F 1425 4 0 Des
+F 1439 4 2 pair
+F 1445 6 12 y?
+- 1451 1458
+- 1458
+: 1483 10 9 Oh 
+: 1497 6 7 Per
+: 1505 6 12 ~
+* 1513 12 12 ry
+- 1525
+: 1537 4 0 I’m 
+: 1545 3 0 al
+: 1549 4 0 ler
+: 1555 2 0 gic 
+* 1559 2 4 to 
+: 1563 4 2 dai
+: 1569 4 4 ~
+: 1575 10 4 ry
+- 1585
+: 1597 2 0 I’m 
+: 1601 2 0 gon
+: 1605 2 0 na 
+: 1609 6 0 move 
+: 1619 2 0 to 
+: 1623 2 9 the 
+: 1629 6 7 prai
+: 1637 4 0 ~
+: 1643 8 0 rie
+- 1651
+: 1659 2 0 And 
+: 1663 4 0 change 
+: 1669 2 0 My 
+: 1673 4 0 name 
+: 1681 4 0 to 
+: 1691 7 4 Lar
+* 1699 4 2 ~
+: 1705 20 2 ry
+- 1725 1796
+- 1796
+: 1821 2 2 She’ll 
+: 1825 2 2 change 
+: 1829 2 2 her 
+: 1833 6 2 name 
+: 1841 4 2 to 
+: 1851 12 7 Lar
+: 1865 12 7 ry
+- 1877
+: 1885 10 11 Lar
+: 1899 10 11 ry
+- 1909
+* 1915 14 14 Lar
+: 1931 16 14 ry
+- 1947
+: 1969 4 4 So 
+: 1977 6 5 come 
+: 1985 10 4 home 
+: 2001 14 2 Per
+: 2017 10 0 ry
+- 2027
+: 2043 4 5 Come 
+: 2051 10 5 home 
+: 2067 12 7 Per
+: 2083 4 4 ry, 
+: 2091 4 7 come 
+: 2099 38 9 home
+* 2139 18 7 ~
+: 2159 4 9 ~
+: 2165 4 7 ~
+: 2171 34 6 ~
+- 2205
+: 2225 4 4 So 
+: 2233 6 5 come 
+: 2241 10 4 home 
+: 2257 7 2 Per
+: 2265 6 0 ~
+: 2273 10 0 ry
+- 2283
+: 2297 6 5 Come 
+: 2307 8 5 home 
+: 2323 12 7 Per
+: 2337 4 4 ry
+- 2341
+: 2347 4 0 Come 
+: 2355 34 0 home
+- 2389 2530
+- 2530
+: 2555 8 9 Come 
+: 2569 12 7 home 
+: 2587 14 5 Per
+: 2603 8 4 ry 
+* 2617 10 2 Come 
+: 2631 48 4 home
+E

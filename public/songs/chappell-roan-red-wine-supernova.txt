@@ -1,0 +1,399 @@
+#ARTIST:Chappell Roan
+#TITLE:Red Wine Supernova
+#CREATOR:piharatamo
+#BPM:124
+#YEAR:2023
+#VIDEO:v=VS6ixn2berk
+#LANGUAGE:English
+#GAP:12572,258064516129
+#ALLKARAOKE_ID:chappell-roan-red-wine-supernova
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:14.466Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:62
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Chappell Roan - Red Wine Supernova.mp3
+#COVER:Chappell Roan - Red Wine Supernova [CO].jpg
+#BACKGROUND:Chappell Roan - Red Wine Supernova [BG].jpg
+#START:5.5
+: 8 3 11 She 
+: 11 3 11 was 
+: 14 3 9 a 
+: 19 3 11 play
+: 24 3 11 boy, 
+: 32 5 11 Brigitte 
+: 37 6 11 Bardot
+- 43
+: 49 2 13 She 
+: 51 2 13 showed 
+: 53 2 13 me 
+: 55 7 11 things
+- 62
+: 65 2 13 I 
+: 67 2 13 did
+: 69 2 11 n't 
+: 71 6 11 know
+- 77
+: 81 2 13 She 
+: 83 2 13 did 
+: 85 2 11 it 
+: 88 3 11 right 
+: 92 4 6 there
+- 96
+: 97 2 13 out 
+: 99 2 13 on 
+: 101 2 11 the 
+: 103 3 10 deck
+- 106
+: 108 1 9 put 
+: 109 2 9 her 
+: 111 3 13 ca
+: 115 4 13 nine 
+: 120 4 11 teeth 
+: 124 1 11 in 
+: 126 1 11 the 
+: 127 2 10 side 
+: 130 1 9 of 
+: 131 3 10 my 
+: 134 4 9 neck
+- 138
+: 140 3 8 I'm 
+: 144 2 8 in 
+: 147 3 8 the 
+: 151 3 10 hall
+: 155 4 12 way 
+* 159 3 19 wai
+* 163 3 19 ting 
+: 166 2 17 for 
+: 168 5 17 you
+- 173
+: 180 3 17 Mini
+: 184 3 19 skirt 
+: 188 2 19 and 
+: 190 2 17 my 
+: 192 2 17 go-
+: 194 3 10 go 
+: 197 4 10 boots 
+F 202 5 14 (Uh-uh)
+- 207
+: 211 2 17 I 
+: 213 2 17 just 
+: 215 4 17 want 
+: 219 1 12 you 
+: 221 2 12 to 
+: 223 4 12 make 
+: 227 2 5 a 
+: 229 5 5 move
+- 234
+: 235 4 5 So 
+: 240 2 12 slow 
+: 242 3 7 down, 
+: 246 2 12 sit 
+: 248 3 7 down 
+: 252 2 7 it's 
+: 254 4 7 new
+- 258 264
+- 264
+: 272 3 5 I 
+: 275 4 7 just 
+: 279 4 9 wanna 
+: 283 2 12 ~
+* 288 2 17 get 
+* 291 2 17 to 
+* 293 4 17 know 
+* 297 6 17 ya
+- 303
+: 307 3 9 Guess 
+: 310 2 11 I 
+: 312 2 11 did
+: 314 2 9 n't 
+: 316 3 9 quite 
+: 319 2 9 think 
+: 321 3 2 it 
+: 324 5 2 through
+- 329
+F 331 3 3 (Nuh-uh 
+F 334 4 3 girl!)
+- 338
+: 339 2 9 Fell 
+: 341 2 9 in 
+: 344 3 7 love 
+: 348 1 5 with 
+: 349 3 5 the 
+: 352 3 4 thought 
+: 355 4 4 of 
+: 359 5 4 you
+- 364
+: 365 1 5 Now 
+: 366 1 5 I'm 
+: 368 3 11 choked 
+: 371 3 7 up, 
+: 374 3 11 face 
+: 377 3 7 down, 
+: 380 3 11 burnt 
+: 383 4 7 out
+- 387 393
+- 393
+* 401 8 17 Ba
+* 409 4 8 by, 
+: 416 4 17 why 
+: 420 4 12 don't 
+: 424 4 4 you 
+: 428 4 5 come 
+: 432 12 5 over
+- 444
+: 448 4 16 Red 
+: 452 4 15 wine 
+: 456 6 12 super
+: 463 12 11 nova, 
+: 480 7 16 falling 
+: 488 6 12 into 
+: 495 14 11 me
+- 509 510
+- 510
+F 518 2 7 (Let's 
+F 520 1 7 pick 
+F 521 1 7 it 
+F 522 1 7 up 
+F 523 4 7 now!)
+- 527
+: 529 7 17 I 
+: 536 4 8 don't 
+: 544 4 17 care 
+: 548 3 12 that 
+: 552 3 4 you're 
+: 555 3 5 a 
+: 558 13 5 stoner
+- 571
+: 576 4 16 Red 
+: 580 4 15 wine 
+: 584 6 12 super
+: 591 12 11 nova, 
+: 608 3 16 fall 
+: 611 4 16 right 
+: 616 7 12 into 
+: 624 15 11 me
+- 639 652
+- 652
+: 660 3 13 I 
+: 663 5 15 like 
+F 669 1 12 (I 
+F 670 5 12 like) 
+: 675 2 13 what 
+: 677 3 13 you 
+: 680 3 13 like 
+F 684 2 12 (What 
+F 686 3 12 you 
+F 689 3 12 like)
+- 692
+: 692 4 13 Long 
+: 696 5 15 hair, 
+F 701 2 12 (No 
+F 703 3 12 bra) 
+: 706 2 13 it's 
+: 708 3 13 my 
+: 711 4 13 type 
+F 716 4 12 (That's 
+F 720 4 12 right!)
+- 724
+: 725 2 18 You 
+: 727 2 16 just 
+: 729 3 16 told 
+: 732 4 14 me, 
+: 738 2 18 want 
+: 740 1 16 me 
+: 742 2 14 to 
+: 744 4 14 fuck 
+: 748 4 11 you
+- 752
+: 753 4 18 Baby 
+: 757 2 20 I 
+: 760 4 18 will 
+: 764 2 18 'cause 
+: 766 1 18 I 
+: 768 5 14 really 
+: 776 5 12 want 
+: 781 2 12 to
+- 783
+: 785 3 5 I 
+: 788 4 7 just 
+: 792 6 9 wanna 
+* 801 2 17 get 
+* 804 2 17 to 
+* 806 4 17 know 
+* 810 6 17 ya
+- 816
+: 821 2 9 Guess 
+: 823 1 11 I 
+: 824 3 11 did
+: 827 2 9 n't 
+: 829 3 9 quite 
+: 832 3 9 think 
+: 835 3 2 it 
+: 838 5 2 through
+- 843
+F 844 3 3 (Nuh-uh 
+F 847 4 3 girl!)
+- 851
+: 852 3 9 Fell 
+: 855 2 9 in 
+: 857 3 7 love 
+: 860 2 5 with 
+: 862 3 5 the 
+: 865 2 3 thought 
+: 867 4 3 of 
+: 871 3 3 you
+- 874
+: 877 1 5 Now 
+: 878 1 5 I'm 
+: 880 3 12 choked 
+: 883 3 7 up, 
+: 886 3 12 face 
+: 889 3 7 down, 
+: 892 3 12 burnt 
+: 895 4 7 out
+- 899 906
+- 906
+* 914 8 17 Ba
+* 922 4 8 by, 
+: 929 4 17 why 
+: 933 4 12 don't 
+: 937 4 4 you 
+: 941 4 5 come 
+: 945 12 5 over
+- 957
+: 961 4 16 Red 
+: 965 4 15 wine 
+: 969 6 12 super
+: 976 12 11 nova, 
+: 993 7 16 falling 
+: 1001 6 12 into 
+: 1008 14 11 me
+- 1022
+F 1024 2 9 (Okay, 
+F 1026 4 9 y'all, 
+F 1030 2 9 let's 
+F 1032 3 9 pick 
+F 1035 1 9 it 
+F 1036 2 9 up 
+F 1038 2 9 now!)
+- 1040
+: 1042 6 17 I 
+: 1048 4 8 don't 
+: 1057 4 17 care 
+: 1061 3 12 that 
+: 1065 3 4 you're 
+: 1069 2 5 a 
+: 1072 14 5 stoner
+- 1086
+: 1089 4 16 Red 
+: 1093 4 15 wine 
+: 1097 6 12 super
+: 1104 12 11 nova, 
+: 1121 3 16 fall 
+: 1124 4 16 right 
+: 1129 6 12 into 
+: 1136 16 11 me
+- 1152 1157
+- 1157
+R 1165 4 9 Well, 
+R 1170 1 9 back 
+R 1171 1 9 in 
+R 1172 1 9 my 
+R 1174 4 9 house 
+R 1179 2 9 I've 
+R 1181 1 9 got 
+R 1182 1 9 a 
+R 1184 7 9 California 
+R 1191 4 9 king
+- 1195
+R 1195 5 9 Okay, 
+R 1201 2 8 maybe 
+R 1203 2 8 it's 
+R 1205 1 10 a 
+R 1207 2 9 twin 
+R 1210 2 9 bed
+R 1215 1 9 and 
+R 1216 1 9 some 
+R 1217 4 9 roommates
+- 1221
+F 1224 2 9 (Don't 
+F 1226 2 9 worry, 
+F 1228 2 9 we're 
+F 1230 2 9 cool!)
+- 1232
+R 1232 1 8 And 
+R 1233 1 10 I 
+R 1234 1 8 heard 
+R 1235 2 9 you 
+R 1237 2 10 like 
+R 1239 4 9 magic, 
+R 1246 1 9 I've 
+R 1247 1 11 got 
+R 1248 1 9 a 
+R 1249 2 10 wand 
+R 1252 1 9 and 
+R 1253 1 10 a 
+R 1255 5 9 rabbit
+- 1260
+R 1263 1 9 So 
+R 1265 3 9 baby, 
+R 1268 3 9 let's 
+R 1271 2 9 get 
+R 1273 3 9 freaky, 
+R 1277 2 9 get 
+R 1279 4 9 kinky
+- 1283
+R 1283 2 9 Let's 
+R 1285 2 9 make 
+R 1287 2 9 this 
+R 1289 2 9 bed 
+R 1291 1 9 get 
+R 1292 5 9 squeaky!
+- 1297
+* 1298 4 17 Ba
+* 1302 4 18 ~
+* 1306 4 8 by, 
+: 1313 4 17 why 
+: 1317 4 12 don't 
+: 1321 4 4 you 
+: 1325 4 5 come 
+: 1329 3 5 over
+: 1332 5 8 ~
+: 1337 6 5 ~
+- 1343
+: 1345 4 16 Red 
+: 1349 4 15 wine 
+: 1353 6 12 super
+: 1360 12 13 nova, 
+: 1377 7 16 falling 
+: 1385 6 12 into 
+* 1392 6 11 me
+* 1398 4 12 ~
+* 1402 4 13 ~
+* 1406 4 14 ~
+* 1410 3 15 ~
+* 1413 6 16 ~
+* 1419 5 17 ~
+- 1424
+: 1426 7 17 I 
+: 1433 4 8 don't 
+: 1441 3 17 care 
+: 1445 3 12 that 
+: 1449 4 4 you're 
+: 1453 2 5 a 
+: 1456 2 5 stoner
+: 1458 8 6 ~
+: 1466 2 5 ~
+- 1468
+: 1473 4 16 Red 
+: 1477 4 15 wine 
+: 1481 6 12 super
+: 1488 2 11 nova, 
+* 1490 6 14 ~
+: 1496 6 11 ~
+: 1505 3 16 fall 
+: 1508 4 16 right 
+: 1513 6 12 into 
+: 1520 10 11 me~
+: 1530 18 10 ~
+E

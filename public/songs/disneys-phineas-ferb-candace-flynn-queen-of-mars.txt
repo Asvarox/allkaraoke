@@ -1,0 +1,168 @@
+#ARTIST:Disney’s Phineas & Ferb (Candace Flynn)
+#TITLE:Queen Of Mars
+#CREATOR:bakus33
+#BPM:399,8
+#YEAR:2009
+#PREVIEWSTART:17
+#VIDEO:v=8Q7goHk9miY
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:8796,993496748375
+#ALLKARAOKE_ID:disneys-phineas-ferb-candace-flynn-queen-of-mars
+#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:14.755Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_PREVIEWEND:52
+#ALLKARAOKE_VOLUME:1
+#P1:Queen Of Mars
+#MP3:Disney’s Phineas & Ferb - Queen Of Mars.mp3
+: 27 6 -1 I 
+: 35 2 -1 was 
+: 43 4 8 just 
+: 51 2 6 a 
+: 55 6 4 lo
+: 63 4 3 nely 
+: 73 12 4 girl
+- 85
+: 103 4 6 Look
+: 111 2 6 in’ 
+: 115 3 6 for 
+: 119 2 6 a 
+: 123 3 6 lit
+: 127 4 4 tle 
+* 137 3 8 fun
+: 141 4 6 ~
+- 145
+: 155 6 -1 Though 
+: 163 2 -1 with
+: 169 6 8 out 
+: 177 2 6 a 
+: 183 6 4 friend 
+: 191 2 4 in 
+: 195 2 3 the 
+: 199 8 4 world
+: 209 2 1 ~
+- 211
+: 219 6 1 I 
+: 227 2 1 was 
+: 235 6 13 forced 
+: 243 2 13 to 
+: 247 8 13 find 
+: 257 4 13 a 
+* 263 6 13 new 
+: 271 2 11 ~ 
+: 275 6 11 one
+- 281
+: 291 4 -1 Now 
+* 301 4 11 I’m 
+: 307 4 11 the 
+: 313 6 9 Queen 
+: 321 4 8 of 
+: 327 8 9 Mars
+- 335
+: 341 4 8 I 
+: 347 6 6 was 
+: 355 4 4 in
+: 361 4 6 vi
+: 367 4 6 si
+: 375 4 6 ble 
+: 383 4 4 on 
+: 393 2 8 Earth
+: 397 4 6 ~
+- 401
+: 407 2 -1 It 
+: 411 6 -1 on
+: 419 2 -1 ly 
+: 427 4 11 took 
+: 435 4 11 the 
+: 441 4 9 Ma
+* 447 4 8 gic 
+: 455 4 9 Por
+: 463 4 9 tal 
+: 471 2 11 to 
+: 475 4 6 Mars
+- 479
+: 483 4 4 To 
+: 491 4 13 give 
+: 497 4 13 Me 
+: 503 4 13 some 
+: 511 4 13 self 
+: 519 8 13 worth
+: 529 4 11 ~
+- 533
+: 549 4 -1 You 
+: 557 3 8 put 
+: 561 2 6 a 
+: 567 6 4 crown 
+: 575 2 4 on 
+: 579 4 3 my 
+: 585 8 4 head
+- 593
+: 603 4 -1 And 
+: 609 2 -1 You 
+: 615 4 6 all 
+: 623 4 6 seem 
+: 629 3 6 to 
+: 633 4 6 wor
+: 639 4 4 ship 
+: 647 5 8 Me
+: 653 4 6 ~
+- 657
+: 663 2 -1 Well 
+: 667 2 -1 You 
+: 671 4 -1 don’t 
+: 681 4 8 un
+: 687 2 8 der
+: 691 3 6 stand 
+: 695 2 6 a 
+* 699 5 4 word 
+: 705 4 3 I’ve 
+: 713 6 4 said
+- 719
+: 731 4 1 Still 
+: 737 4 1 You 
+: 745 4 13 treat 
+: 751 4 13 Me 
+* 757 6 13 like 
+: 765 4 13 ro
+: 771 4 11 yal
+: 779 6 13 ty
+: 787 6 11 ~
+- 793
+: 803 4 -1 Cuz 
+: 813 4 11 I’m 
+: 819 4 11 the 
+: 825 6 9 Queen 
+: 833 4 8 of 
+* 839 8 9 Mars
+- 847
+: 853 4 8 I 
+: 859 6 6 was 
+: 867 4 4 in
+: 873 4 6 vi
+: 879 4 6 si
+: 887 4 6 ble 
+: 895 4 4 on 
+: 905 2 8 Earth
+: 909 4 6 ~
+- 913
+: 919 2 -1 It 
+: 923 6 -1 on
+: 931 2 -1 ly 
+: 939 4 11 took 
+: 947 4 11 the 
+: 953 4 9 Ma
+: 959 4 8 gic 
+: 967 4 9 Por
+: 975 4 9 tal 
+* 983 2 11 to 
+: 987 4 6 Mars
+- 991
+: 995 4 4 To 
+: 1003 4 13 give 
+: 1009 4 13 Me 
+* 1015 4 13 some 
+: 1023 4 13 self 
+: 1031 8 13 worth
+: 1041 4 11 ~
+E
