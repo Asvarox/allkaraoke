@@ -267,9 +267,15 @@ importers:
       eslint-plugin-no-only-tests:
         specifier: ^3.1.0
         version: 3.1.0
+      express:
+        specifier: ^4.19.2
+        version: 4.19.2
       happy-dom:
         specifier: ^12.10.3
         version: 12.10.3
+      html-minifier:
+        specifier: ^4.0.0
+        version: 4.0.0
       husky:
         specifier: ^9.0.11
         version: 9.0.11
@@ -307,7 +313,7 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(prettier@3.2.5)(typescript@5.3.3)
       puppeteer:
-        specifier: ^21.6.1
+        specifier: ^21.11.0
         version: 21.11.0(typescript@5.3.3)
       react-refresh:
         specifier: ^0.14.0
@@ -339,9 +345,6 @@ importers:
       vite:
         specifier: ^5.2.9
         version: 5.2.9(@types/node@20.11.10)(terser@5.17.7)
-      vite-plugin-html-prerender:
-        specifier: https://github.com/Asvarox/vite-plugin-html-prerender#dist
-        version: https://codeload.github.com/Asvarox/vite-plugin-html-prerender/tar.gz/e90b29ee747726862dce0ba178e9e2654cc64dca(typescript@5.3.3)
       vite-tsconfig-paths:
         specifier: ^4.3.2
         version: 4.3.2(typescript@5.3.3)(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7))
@@ -2991,8 +2994,8 @@ packages:
   bl@4.1.0:
     resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
 
-  body-parser@1.20.1:
-    resolution: {integrity: sha512-jWi7abTbYwajOytWCQc37VulmWiRae5RyTpaCyDcS5/lMdtwSz5lOpDE67srw/HYe35f1z3fDQw+3txg7gNtWw==}
+  body-parser@1.20.2:
+    resolution: {integrity: sha512-ml9pReCu3M61kGlqoTm2umSXTlRTuGTx0bfYj+uIUKKYycG5NtSbeetV3faSU6R7ajOPw0g/J1PvK4qNy7s5bA==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
 
   boxen@7.0.0:
@@ -3251,6 +3254,10 @@ packages:
     resolution: {integrity: sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==}
     engines: {node: '>= 0.6'}
 
+  content-type@1.0.5:
+    resolution: {integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==}
+    engines: {node: '>= 0.6'}
+
   convert-source-map@1.8.0:
     resolution: {integrity: sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==}
 
@@ -3260,8 +3267,8 @@ packages:
   cookie-signature@1.0.6:
     resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
 
-  cookie@0.5.0:
-    resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
+  cookie@0.6.0:
+    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
 
   copy-to-clipboard@3.3.2:
@@ -3822,8 +3829,8 @@ packages:
     resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
     engines: {node: '>=16.17'}
 
-  express@4.18.2:
-    resolution: {integrity: sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==}
+  express@4.19.2:
+    resolution: {integrity: sha512-5T6nhjsT+EOMzuck8JjBHARTHfMht0POzlA60WV2pMD3gyXw2LZnZ+ueGdNxG+0calOJcWKbpFcuzLZ91YWq9Q==}
     engines: {node: '>= 0.10.0'}
 
   extract-zip@2.0.1:
@@ -5473,8 +5480,8 @@ packages:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
 
-  raw-body@2.5.1:
-    resolution: {integrity: sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==}
+  raw-body@2.5.2:
+    resolution: {integrity: sha512-8zGqypfENjCIqGhgXToC8aB2r7YrBX+AQAfIPs/Mlk+BtPTztOvTS01NRW/3Eh60J+a48lt8qsCzirQ6loCVfA==}
     engines: {node: '>= 0.8'}
 
   rc@1.2.8:
@@ -6486,10 +6493,6 @@ packages:
     resolution: {integrity: sha512-VZDAseqjrHgNd4Kh8icYHWzTKSCZMhia7GyHfhtzLW33fZlG9SwsB6CEhgyVOWkJfJ2pFLrp/Gj1FSfAiqH9Lw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
-
-  vite-plugin-html-prerender@https://codeload.github.com/Asvarox/vite-plugin-html-prerender/tar.gz/e90b29ee747726862dce0ba178e9e2654cc64dca:
-    resolution: {tarball: https://codeload.github.com/Asvarox/vite-plugin-html-prerender/tar.gz/e90b29ee747726862dce0ba178e9e2654cc64dca}
-    version: 0.2.0
 
   vite-tsconfig-paths@4.3.2:
     resolution: {integrity: sha512-0Vd/a6po6Q+86rPlntHye7F31zA2URZMbH8M3saAZ/xR9QoGN/L21bxEGfXdWmFdNkqPpRdxFT7nmNe12e9/uA==}
@@ -8638,7 +8641,7 @@ snapshots:
       ejs: 3.1.8
       esbuild: 0.20.2
       esbuild-plugin-alias: 0.2.1
-      express: 4.18.2
+      express: 4.19.2
       fs-extra: 11.1.1
       process: 0.11.10
       util: 0.12.5
@@ -8660,7 +8663,7 @@ snapshots:
       '@types/find-cache-dir': 3.2.1
       browser-assert: 1.2.1
       es-module-lexer: 0.9.3
-      express: 4.18.2
+      express: 4.19.2
       find-cache-dir: 3.3.2
       fs-extra: 11.1.1
       magic-string: 0.30.5
@@ -8865,7 +8868,7 @@ snapshots:
       cli-table3: 0.6.3
       compression: 1.7.4
       detect-port: 1.5.1
-      express: 4.18.2
+      express: 4.19.2
       fs-extra: 11.1.1
       globby: 11.1.0
       ip: 2.0.1
@@ -10100,10 +10103,10 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 3.6.2
 
-  body-parser@1.20.1:
+  body-parser@1.20.2:
     dependencies:
       bytes: 3.1.2
-      content-type: 1.0.4
+      content-type: 1.0.5
       debug: 2.6.9
       depd: 2.0.0
       destroy: 1.2.0
@@ -10111,7 +10114,7 @@ snapshots:
       iconv-lite: 0.4.24
       on-finished: 2.4.1
       qs: 6.11.0
-      raw-body: 2.5.1
+      raw-body: 2.5.2
       type-is: 1.6.18
       unpipe: 1.0.0
     transitivePeerDependencies:
@@ -10390,6 +10393,8 @@ snapshots:
 
   content-type@1.0.4: {}
 
+  content-type@1.0.5: {}
+
   convert-source-map@1.8.0:
     dependencies:
       safe-buffer: 5.1.2
@@ -10398,7 +10403,7 @@ snapshots:
 
   cookie-signature@1.0.6: {}
 
-  cookie@0.5.0: {}
+  cookie@0.6.0: {}
 
   copy-to-clipboard@3.3.2:
     dependencies:
@@ -11113,14 +11118,14 @@ snapshots:
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
 
-  express@4.18.2:
+  express@4.19.2:
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
-      body-parser: 1.20.1
+      body-parser: 1.20.2
       content-disposition: 0.5.4
       content-type: 1.0.4
-      cookie: 0.5.0
+      cookie: 0.6.0
       cookie-signature: 1.0.6
       debug: 2.6.9
       depd: 2.0.0
@@ -12555,7 +12560,7 @@ snapshots:
       '@types/express': 4.17.16
       '@types/ws': 8.5.9
       cors: 2.8.5
-      express: 4.18.2
+      express: 4.19.2
       node-fetch: 3.3.2
       ws: 8.16.0
       yargs: 17.7.2
@@ -12806,7 +12811,7 @@ snapshots:
 
   range-parser@1.2.1: {}
 
-  raw-body@2.5.1:
+  raw-body@2.5.2:
     dependencies:
       bytes: 3.1.2
       http-errors: 2.0.0
@@ -13966,18 +13971,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-
-  vite-plugin-html-prerender@https://codeload.github.com/Asvarox/vite-plugin-html-prerender/tar.gz/e90b29ee747726862dce0ba178e9e2654cc64dca(typescript@5.3.3):
-    dependencies:
-      express: 4.18.2
-      html-minifier: 4.0.0
-      puppeteer: 21.11.0(typescript@5.3.3)
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - supports-color
-      - typescript
-      - utf-8-validate
 
   vite-tsconfig-paths@4.3.2(typescript@5.3.3)(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7)):
     dependencies:

@@ -4,10 +4,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
 import { visualizer } from 'rollup-plugin-visualizer';
-import { htmlPrerender } from 'vite-plugin-html-prerender';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/routePaths';
+import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';
