@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import dayjs from 'dayjs';
 import { HighScoreEntity, SingSetup, Song } from 'interfaces';
 import { Button } from 'modules/Elements/Button';

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { typography } from 'modules/Elements/cssMixins';
 import { Input } from 'modules/Elements/Input';
 import { nextIndex } from 'modules/Elements/Switcher';
@@ -114,6 +114,7 @@ export const Autocomplete = forwardRef(
                 role="listitem"
                 data-index={index}
                 data-focused={index === focusedOption}
+                data-e2e-focused={index === focusedOption}
                 key={option}
                 focused={index === focusedOption}
                 onClick={() => {

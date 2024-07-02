@@ -1,5 +1,5 @@
 import { defineConfig, devices, PlaywrightTestConfig } from '@playwright/experimental-ct-react';
-import react from '@vitejs/plugin-react';
+import wyw from '@wyw-in-js/vite';
 import * as process from 'process';
 import tsconfigPaths from 'vite-tsconfig-paths';
 // playwright.config.ts
@@ -37,9 +37,11 @@ const config: PlaywrightTestConfig = defineConfig({
     ctViteConfig: {
       mode: 'test',
       plugins: [
-        react({
-          babel: {
+        wyw({
+          include: ['src/**/*.{ts,tsx}'],
+          babelOptions: {
             plugins: ['@emotion'],
+            presets: ['@babel/preset-typescript', '@babel/preset-react'],
           },
         }),
         tsconfigPaths(),

@@ -1,25 +1,46 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
-import { Button } from './Button';
+import { css, cx } from '@linaria/core';
+import { styled } from '@linaria/react';
+import { ComponentProps } from 'react';
+import { Button, LinkButton } from './Button';
 
 type ButtonSizes = 'small' | 'normal';
 
-export const MenuButton = styled(Button)<{ focused?: boolean; disabled?: boolean; size?: ButtonSizes }>`
+const menuButtonCss = css`
   margin: 0.5rem 0;
-  height: ${(props) => (props.size === 'small' ? '5rem' : '10rem')};
+  height: 10rem;
   border: 0 solid black;
-
-  ${(props) =>
-    props.disabled &&
-    css`
-      cursor: default;
-      color: #989898;
-      background-color: #212121;
-      border-width: 0.3rem;
-      pointer-events: none;
-    `}
 `;
 
+const menuButtonSmall = css`
+  height: 5rem;
+`;
+
+const menuButtonDisabled = css`
+  cursor: default;
+  color: #989898;
+  background-color: #212121;
+  border-width: 0.3rem;
+  pointer-events: none;
+`;
+
+export const MenuButton = ({
+  className,
+  size,
+  disabled,
+  ...props
+}: (ComponentProps<typeof Button> | ComponentProps<typeof LinkButton>) & {
+  size?: ButtonSizes;
+  disabled?: boolean;
+}) => {
+  const Component = 'href' in props ? LinkButton : Button;
+  return (
+    // @ts-expect-error either Button or a link
+    <Component
+      {...props}
+      className={cx(menuButtonCss, size === 'small' && menuButtonSmall, disabled && menuButtonDisabled, className)}
+    />
+  );
+};
 export const MenuContainer = styled.div`
   background: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;

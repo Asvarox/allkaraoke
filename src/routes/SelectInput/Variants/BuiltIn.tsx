@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Check, Error } from '@mui/icons-material';
 import Loader from 'modules/Elements/Loader';
 import { MenuButton } from 'modules/Elements/Menu';
@@ -195,13 +195,17 @@ const AudibleIconContainer = styled.div`
 `;
 
 const ErrorIcon = styled(Error)`
-  width: 2em;
-  height: 2em;
+  && {
+    width: 2em;
+    height: 2em;
+  }
   color: red;
 `;
 const SuccessIcon = styled(Check)`
-  width: 2em;
-  height: 2em;
+  && {
+    width: 2em;
+    height: 2em;
+  }
   color: white;
 `;
 

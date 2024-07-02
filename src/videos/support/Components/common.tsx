@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Animated } from 'remotion-animated';
 
 export const SAnimated = styled(Animated)`

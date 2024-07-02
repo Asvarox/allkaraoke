@@ -1,5 +1,4 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import {
   ArrowBack,
   ArrowForward,
@@ -37,23 +36,39 @@ export default function RemoteMicKeyboard({ onSearchStateChange }: Props) {
       {(isHorizontal || isVertical) && (
         <ActionsContainer>
           <ArrowsContainer>
-            <ArrowButton onClick={onPress('up')} disabled={!isVertical} data-test="arrow-up">
+            <ArrowButton
+              onClick={onPress('up')}
+              disabled={!isVertical}
+              data-disabled={!isVertical}
+              data-test="arrow-up">
               <KeyboardArrowUp />
             </ArrowButton>
           </ArrowsContainer>
           <ArrowsContainer>
-            <ArrowButton onClick={onPress('left')} disabled={!isHorizontal} data-test="arrow-left">
+            <ArrowButton
+              onClick={onPress('left')}
+              disabled={!isHorizontal}
+              data-disabled={!isHorizontal}
+              data-test="arrow-left">
               <KeyboardArrowLeft />
             </ArrowButton>
-            <ArrowButton disabled>
+            <ArrowButton disabled data-disabled>
               <Games />
             </ArrowButton>
-            <ArrowButton onClick={onPress('right')} disabled={!isHorizontal} data-test="arrow-right">
+            <ArrowButton
+              onClick={onPress('right')}
+              disabled={!isHorizontal}
+              data-disabled={!isHorizontal}
+              data-test="arrow-right">
               <KeyboardArrowRight />
             </ArrowButton>
           </ArrowsContainer>
           <ArrowsContainer>
-            <ArrowButton onClick={onPress('down')} disabled={!isVertical} data-test="arrow-down">
+            <ArrowButton
+              onClick={onPress('down')}
+              disabled={!isVertical}
+              data-disabled={!isVertical}
+              data-test="arrow-down">
               <KeyboardArrowDown />
             </ArrowButton>
           </ArrowsContainer>
@@ -128,7 +143,7 @@ const ButtonBase = styled.button<{ disabled?: boolean }>`
   opacity: ${(props) => (props.disabled ? 0.25 : 1)};
 `;
 
-const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
+const ArrowButton = styled(ButtonBase)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,17 +153,15 @@ const ArrowButton = styled(ButtonBase)<{ disabled?: boolean }>`
   border-right-color: rgb(130, 130, 130);
   gap: 0.5rem;
 
-  ${(props) =>
-    !props.disabled
-      ? css`
-          cursor: pointer;
-          &:active {
-            border: 0.3rem solid rgb(130, 130, 130);
-            border-bottom-color: rgb(204, 204, 204);
-            border-right-color: rgb(204, 204, 204);
-          }
-        `
-      : ''}
+  &[data-disabled='false'] {
+    cursor: pointer;
+
+    &:active {
+      border: 0.3rem solid rgb(130, 130, 130);
+      border-bottom-color: rgb(204, 204, 204);
+      border-right-color: rgb(204, 204, 204);
+    }
+  }
 
   color: rgb(51, 51, 51);
   font-weight: normal;

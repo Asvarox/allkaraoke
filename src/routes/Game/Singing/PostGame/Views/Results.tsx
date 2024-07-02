@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { GAME_MODE, HighScoreEntity, SingSetup } from 'interfaces';
 import CameraManager from 'modules/Camera/CameraManager';
 import { Button } from 'modules/Elements/Button';
@@ -114,7 +114,7 @@ const ScoresContainer = styled.div`
   flex: 1;
 `;
 
-const SongSelectionButton = styled(Button)<{ focused: boolean }>`
+const SongSelectionButton = styled(Button)`
   width: 40rem;
   font-size: 1.9vw;
   //margin-bottom: 10rem;

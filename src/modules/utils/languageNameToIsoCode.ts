@@ -26,6 +26,7 @@ function generateLangMap() {
     Latin: 'va',
     Japanese: 'jp',
     Catalan: 'cat', // by default, it's `ca` which conflicts with Canadian French
+    Ukrainian: 'ua',
   };
   return { ...langMap, ...langMap2 };
 }

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Search } from '@mui/icons-material';
 import { MAX_NAME_LENGTH } from 'consts';
 import { Input } from 'modules/Elements/Input';

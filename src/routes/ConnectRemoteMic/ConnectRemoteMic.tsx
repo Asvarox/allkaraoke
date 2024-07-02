@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { focused, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import RemoteMicServer from 'modules/RemoteMic/Network/Server';
@@ -182,10 +182,6 @@ const Description = styled.div`
     color: white;
     font-size: 2rem;
     line-height: 3.2rem;
-
-    //${GameCode} {
-    //  line-height: 1;
-    //}
   }
 `;
 

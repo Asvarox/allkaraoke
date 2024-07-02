@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Switcher } from 'modules/Elements/Switcher';
 import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
 import { PlayerEntity } from 'modules/Players/PlayersManager';

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import Logo from 'modules/Elements/Logo';
 import { MenuContainer } from 'modules/Elements/Menu';

@@ -1,5 +1,4 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { buttonFocused } from 'modules/Elements/Button';
 import { focused, typography } from 'modules/Elements/cssMixins';
@@ -21,7 +20,7 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
 
   return (
     <>
-      <PlayerChangeContainer onClick={() => setIsOpen(true)} data-test="change-player" joined={joined}>
+      <PlayerChangeContainer onClick={() => setIsOpen(true)} data-test="change-player" data-joined={joined}>
         {!joined ? (
           'Join game'
         ) : (
@@ -38,7 +37,7 @@ export default memo(function PlayerChange({ playerNumber }: Props) {
   );
 });
 
-const PlayerChangeContainer = styled.button<{ joined: boolean }>`
+const PlayerChangeContainer = styled.button`
   position: absolute;
   z-index: 1;
   color: white;
@@ -54,13 +53,11 @@ const PlayerChangeContainer = styled.button<{ joined: boolean }>`
   ${typography};
   background: rgba(0, 0, 0, 0.75);
 
-  ${(props) =>
-    !props.joined &&
-    css`
-      font-size: 3rem;
-      padding: 3rem;
-      ${focused}
-    `}
+  &[data-joined='false'] {
+    font-size: 3rem;
+    padding: 3rem;
+    ${focused};
+  }
 
   :hover {
     ${focused};

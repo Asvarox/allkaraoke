@@ -23,6 +23,15 @@ const abstractStorage = (type: typeof sessionStorage | typeof localStorage) => (
   clear: () => {
     type.clear();
   },
+
+  keys: () => {
+    const keys: string[] = [];
+    for (let i = 0, len = type.length; i < len; ++i) {
+      keys.push(type.key(i)!);
+    }
+
+    return keys;
+  },
 });
 
 class MemoryStorage implements Storage {
@@ -47,6 +56,9 @@ class MemoryStorage implements Storage {
   }
   public get length() {
     return Object.keys(this.store).length;
+  }
+  public keys() {
+    return Object.keys(this.store);
   }
 
   public key(index: number) {

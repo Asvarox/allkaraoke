@@ -1,5 +1,4 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { BackgroundContext, useBackground } from 'modules/Elements/LayoutWithBackground';
 import { focused, typography } from 'modules/Elements/cssMixins';
@@ -21,7 +20,6 @@ import { FinalSongCard } from 'routes/SingASong/SongSelection/Components/SongCar
 import SongGroupsNavigation from 'routes/SingASong/SongSelection/Components/SongGroupsNavigation';
 import SongPreview from 'routes/SingASong/SongSelection/Components/SongPreview';
 import { VirtualizedList, VirtualizedListMethods } from 'routes/SingASong/SongSelection/Components/VirtualizedList';
-import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 import useSongSelection from 'routes/SingASong/SongSelection/Hooks/useSongSelection';
 import { Link } from 'wouter';
 
@@ -193,7 +191,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
               </SongsGroupContainer>
             </GroupRow>
             {new Array(4).fill(0).map((_, i) => (
-              <ListRow>
+              <ListRow key={i}>
                 {new Array(4).fill(0).map((_, i) => (
                   <SongListEntrySkeleton key={i} />
                 ))}
@@ -235,7 +233,7 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
                 groupHeight={Math.floor(songGroupHeight) + Math.floor(LIST_GAP_REM * baseUnit)}
                 components={components}
                 renderGroup={(group) => (
-                  <SongsGroupContainer key={group.name} highlight={group.name === 'New'}>
+                  <SongsGroupContainer key={group.name} data-highlight={group.name === 'New'}>
                     <SongsGroupHeader data-group-name={group.name}>{group.displayLong ?? group.name}</SongsGroupHeader>
                   </SongsGroupContainer>
                 )}
@@ -323,29 +321,6 @@ const SongImageBackgroundBase = styled(BackgroundThumbnail)`
   object-fit: cover;
 `;
 
-const SongsGroupContainer = styled.div<{ highlight?: boolean }>`
-  display: flex;
-  align-items: flex-end;
-  height: var(--song-group-header-height);
-  ${(props) =>
-    props.highlight &&
-    css`
-      ${SongsGroupHeader} {
-        @keyframes new-song-group-header {
-          0%,
-          100% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
-        }
-        animation: new-song-group-header 600ms ease-in-out infinite both;
-        background: #ffffff;
-      }
-    `}
-`;
-
 const NoSongsFound = styled.div`
   ${typography};
   display: flex;
@@ -400,14 +375,14 @@ const SongListEntry = memo(styled(FinalSongCard)`
   flex-basis: var(--song-entry-width);
   height: var(--song-entry-height);
 
-  ${(props) =>
-    props.theme.graphicSetting === 'high' &&
-    css`
-      transition: 300ms;
-    `}
-  transform: scale(${(props) => (props.focused ? focusMultiplier : 1)});
-  ${(props) => props.focused && 'z-index: 2;'}
-  ${(props) => props.focused && focused}
+  transition: 300ms; // todo disable for graphic setting
+
+  transform: scale(1);
+  &[data-focused='true'] {
+    transform: scale(${focusMultiplier});
+    z-index: 2;
+    ${focused};
+  }
 `);
 
 const SongListHeaderPadding = styled.div`
@@ -428,11 +403,32 @@ const GroupRow = styled(BaseRow)`
   z-index: 3;
 `;
 
-const ListRow = styled(BaseRow)<{ group?: SongGroup }>`
+const ListRow = styled(BaseRow)`
   position: relative; // this way the song preview position is computed properly
-  ${(props) =>
-    props.group?.isNew &&
-    css`
-      background: rgba(0, 0, 0, 0.7);
-    `}
+
+  &[data-is-new='true'] {
+    background: rgba(0, 0, 0, 0.7);
+  }
+`;
+
+const SongsGroupContainer = styled.div`
+  display: flex;
+  align-items: flex-end;
+  height: var(--song-group-header-height);
+
+  &[data-highlight='true'] {
+    ${SongsGroupHeader} {
+      @keyframes new-song-group-header {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+      animation: new-song-group-header 600ms ease-in-out infinite both;
+      background: #ffffff;
+    }
+  }
 `;

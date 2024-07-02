@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { typography } from 'modules/Elements/cssMixins';
 import InputManager from 'modules/GameEngine/Input/InputManager';
 import events from 'modules/GameEvents/GameEvents';

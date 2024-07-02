@@ -1,5 +1,4 @@
-import styled from '@emotion/styled';
-import { LinkButton } from 'modules/Elements/Button';
+import { styled } from '@linaria/react';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
@@ -48,29 +47,19 @@ function Welcome() {
       <FacebookLink />
       <>
         <SmoothLink to="game/">
-          <MenuButton as={LinkButton} {...register('sing-a-song', () => navigate('game/'))}>
-            Sing a song
-          </MenuButton>
+          <MenuButton {...register('sing-a-song', () => navigate('game/'))}>Sing a song</MenuButton>
         </SmoothLink>
         <SmoothLink to="select-input/">
-          <MenuButton as={LinkButton} {...register('select-input', () => navigate('select-input/'))}>
-            Setup Microphones
-          </MenuButton>
+          <MenuButton {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</MenuButton>
         </SmoothLink>
         <SmoothLink to="settings/">
-          <MenuButton as={LinkButton} {...register('settings', () => navigate('settings/'))}>
-            Settings
-          </MenuButton>
+          <MenuButton {...register('settings', () => navigate('settings/'))}>Settings</MenuButton>
         </SmoothLink>
         <SmoothLink to="jukebox/">
-          <MenuButton as={LinkButton} {...register('jukebox', () => navigate('jukebox/'))}>
-            Jukebox
-          </MenuButton>
+          <MenuButton {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</MenuButton>
         </SmoothLink>
         <SmoothLink to="manage-songs/">
-          <MenuButton as={LinkButton} {...register('manage-songs', () => navigate('manage-songs/'))}>
-            Manage Songs
-          </MenuButton>
+          <MenuButton {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</MenuButton>
         </SmoothLink>
       </>
     </MenuWithLogo>

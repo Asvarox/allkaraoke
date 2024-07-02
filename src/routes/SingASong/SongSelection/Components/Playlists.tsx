@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Button } from 'modules/Elements/Button';
 import { focusedStatic, typography } from 'modules/Elements/cssMixins';
 import { useOnClickOutside } from 'modules/hooks/onClickOutside';
@@ -64,14 +64,13 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
           <Playlist
             key={playlist.name}
             data-selected={`playlist-${playlist.name}` === focused}
-            active={active}
+            data-active={active}
             {...register(
               `playlist-${playlist.name}`,
               () => focusElement(`playlist-${playlist.name}`),
               undefined,
               playlist.name === selectedPlaylist,
-            )}
-            {...(!active ? { selected: `playlist-${playlist.name}` === focused } : {})}>
+            )}>
             {playlist.display ?? playlist.name}
           </Playlist>
         );
@@ -109,11 +108,18 @@ const Container = styled.div<{ active: boolean }>`
   }
 `;
 
-const Playlist = styled(Button)<{ selected?: boolean; active: boolean }>`
+const Playlist = styled(Button)`
   font-size: 2.3rem;
   justify-self: stretch;
   flex-grow: 1;
-  ${(props) => !props.focused && props.active && `background-color: transparent;`};
+  &[data-focused='false'][data-active='true'] {
+    background-color: transparent;
+  }
+  &[data-selected='true'] {
+    ${focusedStatic};
+  }
+  &[data-selected='false'][data-active='false'] {
+    opacity: 0.75;
+  }
   padding: 1.5rem 1rem;
-  ${(props) => (props.selected ? focusedStatic : !props.active && `opacity: .75;`)}
 `;

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { MenuButton } from 'modules/Elements/Menu';
 import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';
@@ -80,7 +80,7 @@ const RemoteMicEntry = styled(MenuButton)`
 `;
 
 const RemoteMicName = styled.div<{ isSelf: boolean }>`
-  ${(props) => props.isSelf && `color: ${styles.colors.text.active};`}
+  color: ${(props) => (props.isSelf ? `${styles.colors.text.active}` : 'auto')};
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { DetailedScore, SingSetup, Song } from 'interfaces';
 import { GameTip } from 'modules/Elements/GameTip';
 import { typography } from 'modules/Elements/cssMixins';
@@ -51,7 +51,7 @@ function PostGameView({ song, width, height, onClickSongSelection, players, high
         {step === 'highscores' && (
           <HighScoresView onNextStep={onClickSongSelection} singSetup={singSetup} highScores={highScores} song={song} />
         )}
-        <PostGameTip $active />
+        <PostGameTip data-active="true" />
       </Container>
       {backgroundTheme === 'christmas' && (
         <ChristmasMusicCredit>
@@ -69,11 +69,8 @@ const Container = styled.div`
 
 export default PostGameView;
 
-const PostGameTip = styled(GameTip, {
-  shouldForwardProp: (propName) => !propName.startsWith('$'),
-})<{ $active: boolean }>`
+const PostGameTip = styled(GameTip)`
   transition: 300ms;
-  transform: scale(${({ $active }) => ($active ? 1 : 0)});
   position: absolute;
   bottom: 20rem;
   font-size: 3.2rem;
@@ -83,6 +80,11 @@ const PostGameTip = styled(GameTip, {
   background: rgba(0, 0, 0, 0.75);
   width: 100%;
   box-sizing: border-box;
+
+  transform: scale(0);
+  &[data-active='true'] {
+    transform: scale(1);
+  }
 
   padding: 2rem 10rem;
 

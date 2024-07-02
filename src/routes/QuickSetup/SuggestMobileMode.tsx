@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import LayoutGame from 'routes/LayoutGame';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -29,18 +29,23 @@ function SuggestMobilePhone() {
           <h3>
             You can always change the setting in the <strong>Settings</strong> menu.
           </h3>
-          <MenuButton focused onClick={setPhoneMode} data-test="enable-mobile-mode">
+          <ModalMenuButton focused onClick={setPhoneMode} data-test="enable-mobile-mode">
             Enable Mobile Phone Mode
-          </MenuButton>
-          <MenuButton onClick={() => setMobilePhoneMode(false)} data-test="dismiss-mobile-mode">
+          </ModalMenuButton>
+          <ModalMenuButton onClick={() => setMobilePhoneMode(false)} data-test="dismiss-mobile-mode">
             Dismiss
-          </MenuButton>
+          </ModalMenuButton>
         </Modal>
       </Container>
     </LayoutGame>
   );
 }
 
+const ModalMenuButton = styled(MenuButton)`
+  font-size: calc(min(3vw, 4vh));
+  height: auto;
+  padding: calc(min(3vw, 4vh));
+`;
 const Container = styled.div`
   position: fixed;
   inset: 0;
@@ -61,11 +66,6 @@ const Modal = styled(MenuContainer)`
     font-size: calc(min(3vw, 4vh));
     line-height: 1.25;
     margin-bottom: 1em;
-  }
-  ${MenuButton} {
-    font-size: calc(min(3vw, 4vh));
-    height: auto;
-    padding: calc(min(3vw, 4vh));
   }
 `;
 

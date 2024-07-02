@@ -1,31 +1,56 @@
-import styled from '@emotion/styled';
-import MuiTooltip from '@mui/material/Tooltip';
+import { styled } from '@linaria/react';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import storage from 'modules/utils/storage';
-import { ComponentProps, useCallback, useEffect, useState } from 'react';
+import { cloneElement, ComponentProps, ReactElement, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { Tooltip as ReactTooltip, TooltipRefProps } from 'react-tooltip';
 
-const ToBeStyledTooltip = ({ className, ...props }: ComponentProps<typeof MuiTooltip>) => (
-  <MuiTooltip arrow {...props} classes={{ tooltip: className }} />
-);
+export const StyledTooltip = styled(ReactTooltip)`
+  &&& {
+    background: rgba(0, 0, 0, 0.85);
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    max-width: 45rem;
+    ${typography};
+    .MuiTooltip-arrow {
+      &::before {
+        background: rgba(0, 0, 0, 0.85);
+      }
+    }
 
-export const Tooltip = styled(ToBeStyledTooltip)`
-  background: rgba(0, 0, 0, 0.85);
-  font-size: 2rem;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  max-width: 45rem;
-  ${typography};
-  .MuiTooltip-arrow {
-    &::before {
-      background: rgba(0, 0, 0, 0.85);
+    strong {
+      color: ${styles.colors.text.active};
     }
   }
-
-  strong {
-    color: ${styles.colors.text.active};
-  }
+  z-index: 10000;
 `;
+interface Props {
+  clickable?: boolean;
+  open?: boolean;
+  hidden?: boolean;
+  title: string | ReactElement;
+  children: ReactElement;
+  place?: ComponentProps<typeof ReactTooltip>['place'];
+}
+export const Tooltip = ({ children, title, open, ...props }: Props) => {
+  const tooltipRef = useRef<TooltipRefProps>(null);
+  const id = useMemo(() => `${Math.random()}`, []);
+
+  return (
+    <>
+      {createPortal(
+        <StyledTooltip {...props} id={id} ref={tooltipRef} isOpen={open}>
+          {title}
+        </StyledTooltip>,
+        document.body,
+      )}
+
+      {cloneElement(children, { 'data-tooltip-id': id })}
+    </>
+  );
+};
 
 const getDismissKey = (key: string) => `tooltip_dismissed_${key}`;
 
@@ -33,6 +58,8 @@ export const ClosableTooltip = ({
   dismissKey,
   timeoutMs,
   oneTime = true,
+  children,
+  title,
   ...props
 }: ComponentProps<typeof Tooltip> & { dismissKey: string; timeoutMs?: number; oneTime?: boolean }) => {
   const [opened, setOpened] = useState<boolean | undefined>(!storage.local.getItem(getDismissKey(dismissKey)));
@@ -53,12 +80,14 @@ export const ClosableTooltip = ({
 
   return (
     <Tooltip
+      clickable
       key={uncontrolled ? 'uncontrolled' : 'controlled'}
       open={uncontrolled ? props.open : opened}
+      hidden={props.open === false}
       {...props}
       title={
         <>
-          {props.title}
+          {title}
           {opened && (
             <OkButtonWrapper>
               <OkButton data-test="close-tooltip-button" onClick={handleClose}>
@@ -67,8 +96,9 @@ export const ClosableTooltip = ({
             </OkButtonWrapper>
           )}
         </>
-      }
-    />
+      }>
+      {children}
+    </Tooltip>
   );
 };
 

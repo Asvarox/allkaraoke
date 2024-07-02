@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import ListIcon from '@mui/icons-material/List';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { MicIcon } from 'modules/Elements/MicIcon';
@@ -59,6 +59,7 @@ const Container = styled.div`
 `;
 
 const ItemContainer = styled.div<{ active?: boolean }>`
+  cursor: pointer;
   flex: 1;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import dotparty from 'modules/Elements/dotparty.gif';
 import logoMp4 from 'modules/Elements/logo.mp4';
 import logoWebm from 'modules/Elements/logo.webm';

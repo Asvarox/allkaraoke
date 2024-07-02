@@ -25,7 +25,7 @@ const addSteps = (start: [number, number], steps: Array<[number, number, dirs]>,
 export default async function navigateWithKeyboard(page: Page, targetTestId: string, remoteMic?: Page) {
   await test.step(`Use ${remoteMic ? 'remote ' : ''}keyboard to navigate to ${targetTestId}`, async () => {
     await expect(page.getByTestId(targetTestId)).toBeVisible();
-    const navigableElements = await page.locator('[data-focused]:not([data-unfocusable])');
+    const navigableElements = await page.locator('[data-e2e-focused]:not([data-unfocusable])');
     const handles = await navigableElements.elementHandles();
 
     let rectangles = await Promise.all(
@@ -52,7 +52,20 @@ export default async function navigateWithKeyboard(page: Page, targetTestId: str
     // we started from the bottom (last) elements
     rows.reverse();
 
-    const startingElement = (await (await page.locator('[data-focused="true"]')).getAttribute('data-test'))!;
+    const allFocusedElements = await page.locator('[data-e2e-focused="true"]').all();
+    if (allFocusedElements.length > 1) {
+      test.info().annotations.push({
+        type: 'warning',
+        description: '----- WARNING ---- Multiple elements have focused [data-e2e-focused="true"]',
+      });
+      await Promise.all(
+        allFocusedElements.map(async (element) => {
+          test.info().annotations.push({ type: 'warning', description: await element.innerHTML() });
+        }),
+      );
+    }
+
+    const startingElement = (await allFocusedElements[0].getAttribute('data-test'))!;
     const start = findInMatrix(rows, startingElement);
     const [finishX, finishY] = findInMatrix(rows, targetTestId);
 
@@ -80,7 +93,9 @@ export default async function navigateWithKeyboard(page: Page, targetTestId: str
       } else {
         await page.keyboard.press(`Arrow${dir}`);
       }
-      await expect(page.getByTestId(rows[y][x])).toHaveAttribute('data-focused', 'true');
+      await test.step(`Waiting for "${rows[y]?.[x]}" (${x},${y}) to be focused`, async () => {
+        await expect(page.getByTestId(rows[y]?.[x])).toHaveAttribute('data-e2e-focused', 'true');
+      });
     }
   });
 }

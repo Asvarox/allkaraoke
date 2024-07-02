@@ -1,7 +1,7 @@
 import { SongPreview } from 'interfaces';
 import { Flag } from 'modules/Elements/Flag';
 import langMap from 'modules/Elements/Flag/mapping';
-import { useMemo } from 'react';
+import { ComponentProps, useMemo } from 'react';
 
 // skipping US and GB songs as there are a lot of them making the list look messy
 const SKIPPED_ORIGINS = ['US', 'GB'];
@@ -10,7 +10,7 @@ interface Props {
   song: Pick<SongPreview, 'language' | 'artistOrigin'>;
   forceFlag?: boolean;
 }
-export default function SongFlag({ song, forceFlag, ...props }: Props) {
+export default function SongFlag({ song, forceFlag, ...props }: Props & Omit<ComponentProps<typeof Flag>, 'isocode'>) {
   const lang = song.language[0];
 
   const isLangArtistOrigin = useMemo(() => {

@@ -1,8 +1,6 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Laptop, PeopleAlt, Person, PhoneAndroid, PhoneIphone, PhotoCamera, QrCode } from '@mui/icons-material';
 import { Badge } from 'modules/Elements/Badge';
-import { LinkButton } from 'modules/Elements/Button';
 import { MenuButton } from 'modules/Elements/Menu';
 import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
 import SmoothLink from 'modules/Elements/SmoothLink';
@@ -125,9 +123,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
           e?.preventDefault();
           onPreferenceSelected('skip');
         }}>
-        <MenuButton
-          as={LinkButton}
-          {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
+        <MenuButton {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip')}>
           {skipText || 'Skip'}
         </MenuButton>
       </SmoothLink>
@@ -185,33 +181,28 @@ const OptionIconContainer = styled.div`
   }
 `;
 
-const moreInfoMixin = css`
-  height: 16.5rem;
-  background: black;
-  ${focused};
-
-  ${OptionDescription} {
-    padding-top: 1.6rem;
-    max-height: 10rem;
-    opacity: 1;
-    opacity: 1;
-  }
-
-  ${OptionIconContainer} {
-    transform: scale(1.75);
-  }
-`;
-
 const Option = styled(MenuButton)<{ focused?: boolean }>`
   position: relative;
   display: flex;
   align-items: center;
 
-  :hover {
-    ${moreInfoMixin};
-  }
+  &:hover,
+  &[data-focused='true'] {
+    height: 16.5rem;
+    background: black;
+    ${focused};
 
-  ${(props) => (props.focused ? moreInfoMixin : '')};
+    ${OptionDescription} {
+      padding-top: 1.6rem;
+      max-height: 10rem;
+      opacity: 1;
+      opacity: 1;
+    }
+
+    ${OptionIconContainer} {
+      transform: scale(1.75);
+    }
+  }
 `;
 
 export default SelectPreference;

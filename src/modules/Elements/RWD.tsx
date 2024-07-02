@@ -1,13 +1,14 @@
-import styled from '@emotion/styled';
-import { desktopMQ, landscapeMQ, mobileMQ } from 'modules/Elements/cssMixins';
+import { styled } from '@linaria/react';
+import { landscapeMQ } from 'modules/Elements/cssMixins';
 
 export const MobileOnly = styled.div`
-  ${desktopMQ} {
+  color: blue;
+  @media (hover: hover) {
     display: none;
   }
 `;
 export const DesktopOnly = styled.div`
-  ${mobileMQ} {
+  @media (hover: none) {
     display: none;
   }
 `;

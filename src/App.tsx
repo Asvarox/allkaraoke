@@ -8,7 +8,6 @@ import Edit from './routes/Edit/Edit';
 import Jukebox from './routes/Jukebox/Jukebox';
 import SelectInput from './routes/SelectInput/SelectInput';
 
-import { Global, css } from '@emotion/react';
 import { Theme, ThemeProvider, createTheme } from '@mui/material/styles';
 import { ErrorFallback } from 'modules/Elements/ErrorFallback';
 import LayoutWithBackgroundProvider from 'modules/Elements/LayoutWithBackground';
@@ -26,7 +25,9 @@ import SocialMediaElements from 'routes/SocialMediaElements/SocialMediaElements'
 import Welcome from 'routes/Welcome/Welcome';
 import routePaths from 'routes/routePaths';
 
-const LazySongList = lazy(() => import('./routes/Edit/SongList'));
+const LazySongList = lazy(() =>
+  import('routes/ManageSongs/SongManagement').then((modules) => ({ default: modules.SongList })),
+);
 
 // Commenting this out as there are many failed to fetch errors coming from Googlebot
 // // This is a hack to preload the game scene so that it's ready when the user clicks on the game button
@@ -49,13 +50,15 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Global
-        styles={css`
+      <style>
+        {`
           :root {
+             ${graphicSetting === 'low' ? '--graphic-setting-high: initial' : ''};
+            ${graphicSetting === 'high' ? '--graphic-setting-low: initial' : ''};
             --zoom-multipler: ${mobilePhoneMode ? 1.4 : 1};
           }
         `}
-      />
+      </style>
       <ErrorBoundary fallback={ErrorFallback}>
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>

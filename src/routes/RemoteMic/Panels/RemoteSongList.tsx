@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Search } from '@mui/icons-material';
 import { uniqBy } from 'lodash-es';
 import { Flag } from 'modules/Elements/Flag';

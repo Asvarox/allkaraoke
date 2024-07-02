@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { VideoPlayerRef } from 'modules/Elements/VideoPlayer';
 import { typography } from 'modules/Elements/cssMixins';
 import GameState from 'modules/GameEngine/GameState/GameState';

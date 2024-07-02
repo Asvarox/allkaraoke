@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { GAME_MODE, Note } from 'interfaces';
 import styles from 'modules/GameEngine/Drawing/styles';
@@ -81,7 +81,7 @@ function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: P
                 </LyricContainer>
               );
             })}
-            {nextSection?.start === nextChange && <PassTheMicSymbol shouldShake />}
+            {nextSection?.start === nextChange && <PassTheMicSymbol data-should-shake={true} />}
           </LyricsLine>
         </>
       ) : (
@@ -199,10 +199,9 @@ const LyricActive = ({ fill, color, children }: PropsWithChildren<{ fill: number
   </BaseLyricActive>
 );
 
-const BasePassTheMicProgress = styled.div<{ color: string }>`
+const BasePassTheMicProgress = styled.div`
   position: absolute;
   height: 1rem;
-  background: ${(props) => props.color};
   width: 100%;
 `;
 
@@ -210,18 +209,14 @@ const PassTheMicProgress = (props: { progress: number } & ComponentProps<typeof 
   <BasePassTheMicProgress
     data-test="pass-the-mic-progress"
     style={{
+      background: props.color,
       transformOrigin: 'left',
       transform: `scaleX(${props.progress / 100})`,
     }}
-    color={props.color}
   />
 );
 
-const PassTheMicSymbol = styled(SwapHorizIcon, {
-  shouldForwardProp: (prop) => prop !== 'shouldShake',
-})<{
-  shouldShake?: boolean;
-}>`
+const PassTheMicSymbol = styled(SwapHorizIcon)`
   @keyframes shake {
     10%,
     90% {
@@ -244,16 +239,20 @@ const PassTheMicSymbol = styled(SwapHorizIcon, {
       transform: translate3d(0.4rem, 0, 0);
     }
   }
-
-  ${(props) => props.shouldShake && 'animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;'}
+  font-size: 3rem;
   margin-left: 2rem;
-  ${(props) => (props.shouldShake ? `fill: ${styles.colors.text.active};` : '')}
-  font-size: ${(props) => (props.shouldShake ? 4 : 3)}rem;
+
+  &[data-should-shake='true'] {
+    animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+    fill: ${styles.colors.text.active};
+    font-size: 4rem;
+  }
 `;
 const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
   font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2)}rem;
+
   height: ${({ effectsEnabled }) => (effectsEnabled ? 4.5 : 2)}rem;
-  ${({ effectsEnabled }) => (!effectsEnabled ? '-webkit-text-stroke-width: 2px' : '')};
+  -webkit-text-stroke-width: ${({ effectsEnabled }) => (effectsEnabled ? '2px' : '1px')};
 
   color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 

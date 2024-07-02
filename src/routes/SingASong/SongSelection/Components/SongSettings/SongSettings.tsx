@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { PlayerSetup, SingSetup, SongPreview } from 'interfaces';
 import events from 'modules/GameEvents/GameEvents';
 import { useState } from 'react';

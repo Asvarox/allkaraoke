@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { MAX_NAME_LENGTH } from 'consts';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { Autocomplete } from 'modules/Elements/Autocomplete';

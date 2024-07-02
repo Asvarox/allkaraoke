@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Warning } from '@mui/icons-material';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListenerSelector } from 'modules/GameEvents/hooks';

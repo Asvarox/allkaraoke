@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Casino, Search } from '@mui/icons-material';
 import { Button } from 'modules/Elements/Button';
 import { Tooltip } from 'modules/Elements/Tooltip';
@@ -25,14 +25,14 @@ export default function AdditionalListControls({ onRandom, setFilters, filters, 
   return (
     <>
       <Container>
-        <Tooltip title="Search" placement="left">
+        <Tooltip title="Search" place="left">
           <RoundButton
             onClick={() => (searchActive ? clearSearch() : setSearchActive(true))}
             data-test="search-song-button">
             <Search />
           </RoundButton>
         </Tooltip>
-        <Tooltip title="Pick random" placement="left">
+        <Tooltip title="Pick random" place="left">
           <RoundButton onClick={onRandom} data-test="random-song-button">
             <Casino />
           </RoundButton>

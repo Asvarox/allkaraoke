@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { PlayerSetup, SongPreview } from 'interfaces';
 import { Button } from 'modules/Elements/Button';
 import { typography } from 'modules/Elements/cssMixins';

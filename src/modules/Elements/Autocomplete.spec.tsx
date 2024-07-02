@@ -11,11 +11,11 @@ test('should properly input using the autocomplete box', async ({ mount }) => {
   await component.locator('input').click();
   await expect(component.locator('[role="listbox"]')).toBeVisible();
   await component.locator('input').press('ArrowDown');
-  await expect(component.locator('[data-focused="true"]')).toContainText('first option');
+  await expect(component.locator('[data-e2e-focused="true"]')).toContainText('first option');
   await component.locator('input').press('ArrowDown');
-  await expect(component.locator('[data-focused="true"]')).toContainText('second option');
+  await expect(component.locator('[data-e2e-focused="true"]')).toContainText('second option');
   await component.locator('input').press('ArrowUp');
-  await expect(component.locator('[data-focused="true"]')).toContainText('first option');
+  await expect(component.locator('[data-e2e-focused="true"]')).toContainText('first option');
   await component.locator('input').press('Enter');
   await expect(component.locator('input')).toHaveValue('first option');
   await expect(component.locator('[role="listbox"]')).not.toBeVisible();

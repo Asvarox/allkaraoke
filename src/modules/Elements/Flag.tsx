@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Song } from 'interfaces';
 import languageNameToIsoCode from 'modules/utils/languageNameToIsoCode';
 import { ComponentProps, useLayoutEffect, useState } from 'react';

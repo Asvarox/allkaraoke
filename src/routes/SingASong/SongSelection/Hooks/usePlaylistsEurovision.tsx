@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { SongPreview } from 'interfaces';
 import { Flag } from 'modules/Elements/Flag';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';

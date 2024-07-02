@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { PlayerSetup } from 'interfaces';
 import { uniq } from 'lodash-es';
 import styles from 'modules/GameEngine/Drawing/styles';

@@ -1,9 +1,7 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Help, HelpOutline, QrCode2 } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { Tooltip } from 'modules/Elements/Tooltip';
-import 'modules/RemoteMic/eventListeners';
-import 'modules/Stats';
 import FullscreenButton from 'modules/Toolbar/Fullscreen';
 import QRCodeModal from 'modules/Toolbar/QRCodeModal';
 import { useContext, useState } from 'react';
@@ -23,14 +21,14 @@ function Toolbar() {
       {isModalOpen && <QRCodeModal closeModal={closeModal} />}
       <ToolbarContainer>
         {hasContent && (
-          <Tooltip title="Toggle help">
+          <Tooltip title="Toggle help" place="bottom-end">
             <HelpButton size="small" onClick={() => setIsHelpVisible(!isHelpVisible)} data-test="toggle-help">
               {isHelpVisible ? <Help /> : <HelpOutline />}
             </HelpButton>
           </Tooltip>
         )}
         <FullscreenButton />
-        <Tooltip title="Connect phone">
+        <Tooltip title="Connect phone" place="bottom-end">
           <IconButton
             size="small"
             onClick={() => setIsModalOpen((current) => !current)}

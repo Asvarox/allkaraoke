@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import styles from 'modules/GameEngine/Drawing/styles';
 import gameEvents from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';

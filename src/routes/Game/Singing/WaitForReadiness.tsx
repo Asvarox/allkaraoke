@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { CheckCircleOutline } from '@mui/icons-material';
 import Loader from 'modules/Elements/Loader';
 import { typography } from 'modules/Elements/cssMixins';

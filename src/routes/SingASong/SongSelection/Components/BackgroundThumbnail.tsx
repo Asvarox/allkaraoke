@@ -1,7 +1,11 @@
-import styled from '@emotion/styled';
-import { useLayoutEffect, useState } from 'react';
+import { styled } from '@linaria/react';
+import { ComponentProps, useLayoutEffect, useState } from 'react';
 import { usePreviousDistinct } from 'react-use';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
+
+interface Props extends ComponentProps<typeof Image> {
+  videoId: string;
+}
 
 function Tile({ videoId, ...props }: Props) {
   return (
@@ -11,10 +15,6 @@ function Tile({ videoId, ...props }: Props) {
       {...props}
     />
   );
-}
-
-interface Props {
-  videoId: string;
 }
 function BackgroundThumbnail({ videoId, ...props }: Props) {
   const previousVideoId = usePreviousDistinct(videoId) ?? videoId;

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { Input } from 'modules/Elements/Input';
 import { forwardRef, useImperativeHandle, useRef } from 'react';
 import { InputLagSetting, useSettingValue } from 'routes/Settings/SettingsState';

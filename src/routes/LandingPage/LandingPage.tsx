@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
-import { LinkButton } from 'modules/Elements/Button';
+import { styled } from '@linaria/react';
+import { buttonFocusedAnim, LinkButton } from 'modules/Elements/Button';
+import { landscapeMQ, mobileMQ, typography } from 'modules/Elements/cssMixins';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import Logo from 'modules/Elements/Logo';
 import { DesktopOnly, MobileOnly } from 'modules/Elements/RWD';
 import SmoothLink from 'modules/Elements/SmoothLink';
-import { focusable, landscapeMQ, mobileMQ, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { FeatureFlags } from 'modules/utils/featureFlags';
@@ -21,6 +21,7 @@ import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
 import screenshot3 from './screenshot3.webp';
 import songStats from './songStats.json';
+
 export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
 
 function LandingPage() {
@@ -63,7 +64,7 @@ function LandingPage() {
         </DesktopOnly>
         <DesktopOnly>
           <SmoothLink to={nextPage}>
-            <PlayButton data-test="enter-the-game" focused as="a">
+            <PlayButton data-test="enter-the-game" focused>
               Enter the game
             </PlayButton>
           </SmoothLink>
@@ -137,16 +138,20 @@ function LandingPage() {
           </SmoothLink>
         </JoinExistingTip>
         <MobileButtonsContainer>
-          <SmoothLink to="remote-mic/">
-            <PlayButton data-test="join-existing-game" focused>
-              <span>
-                Join game (with <strong>Game Code</strong>)
-              </span>
-            </PlayButton>
-          </SmoothLink>
-          <SmoothLink to="quick-setup/">
-            <PlayButton data-test="enter-the-game">Start new game</PlayButton>
-          </SmoothLink>
+          <MobileOnly>
+            <SmoothLink to="remote-mic/">
+              <PlayButton data-test="join-existing-game" focused>
+                <span>
+                  Join game (with <strong>Game Code</strong>)
+                </span>
+              </PlayButton>
+            </SmoothLink>
+          </MobileOnly>
+          <MobileOnly>
+            <SmoothLink to="quick-setup/">
+              <PlayButton data-test="enter-the-game">Start new game</PlayButton>
+            </SmoothLink>
+          </MobileOnly>
         </MobileButtonsContainer>
       </Container>
     </LayoutGame>
@@ -206,11 +211,11 @@ const StatSubText = styled.div`
 `;
 
 const StatSegment = styled.div`
-  ${typography};
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1rem;
+  ${typography};
 `;
 
 const ScreenshotSegment = styled(StatSegment)`
@@ -261,14 +266,15 @@ const Container = styled.div`
   }
 `;
 
-const MobileButtonsContainer = styled(MobileOnly)`
+const MobileButtonsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
   //flex: 0.5;
   width: 90%;
 
-  a {
+  // increase specificity
+  && a {
     width: 100%;
     flex: 1;
     min-height: 30rem;
@@ -289,8 +295,10 @@ const PlayButton = styled(LinkButton)`
   padding: 1rem 7rem;
   background: black;
   width: 110rem;
-  ${focusable};
+
   transform: none;
+
+  ${buttonFocusedAnim};
 `;
 
 export default LandingPage;

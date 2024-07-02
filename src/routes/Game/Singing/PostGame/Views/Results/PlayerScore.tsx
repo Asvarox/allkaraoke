@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@linaria/react';
 import { HighScoreEntity, SingSetup } from 'interfaces';
 import { Badge } from 'modules/Elements/Badge';
 import { buttonFocused } from 'modules/Elements/Button';
@@ -52,9 +52,7 @@ function PlayerScoreView({
     <Container>
       <ScoreTextContainer>
         <ScoreTextScore
-          highscore={revealHighScore && isHighScore(player.name)}
-          color={useColors ? styles.colors.players[playerNumber].text : ``}
-          win={revealHighScore && playerScore === highestScore}
+          data-win={revealHighScore && playerScore === highestScore}
           data-test={`player-${playerNumber}-score`}
           data-score={Math.floor(playerScore)}>
           <ScoreTextPlayer
@@ -64,10 +62,10 @@ function PlayerScoreView({
             {player.name}
           </ScoreTextPlayer>
           <CountUp preserveValue end={playerScore} formattingFn={formatter.format} duration={segment < 5 ? 1 : 0.5} />
-          <HighScoreBadge highscore={revealHighScore && isHighScore(player.name)}>High score!</HighScoreBadge>
         </ScoreTextScore>
       </ScoreTextContainer>
       <PlayerDetailedScore playerNumber={playerNumber} player={player} segment={segment} />
+      <HighScoreBadge data-highscore={revealHighScore && isHighScore(player.name)}>High score!</HighScoreBadge>
     </Container>
   );
 }
@@ -79,22 +77,19 @@ const Container = styled.div`
   align-items: center;
   border-radius: 1rem;
   gap: 1rem;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
+  position: relative;
 `;
 
 const ScoreTextPlayer = styled.span<{ color: string }>`
-  font-size: 4rem;
   color: ${(props) => props.color};
+  font-size: 4rem;
 `;
 
-const ScoreTextScore = styled(ContentElement)<{
-  win: boolean;
-  highscore: boolean;
-  color: string;
-}>`
+const ScoreTextScore = styled(ContentElement)`
   background: transparent;
-  font-size: ${(props) => (props.win ? '8.5rem' : '5.5rem')};
-  color: ${(props) => (props.win ? styles.colors.text.active : 'white')};
+  font-size: 5.5rem;
+  color: white;
   transition: 400ms ease-in-out;
   position: relative;
   display: flex;
@@ -103,6 +98,11 @@ const ScoreTextScore = styled(ContentElement)<{
   flex: 1;
   margin: 0;
   padding: 0;
+
+  &[data-win='true'] {
+    font-size: 8.5rem;
+    color: ${styles.colors.text.active};
+  }
 `;
 
 const ScoreTextContainer = styled.div`
@@ -112,13 +112,15 @@ const ScoreTextContainer = styled.div`
   height: 8.5rem;
 `;
 
-const HighScoreBadge = styled(Badge)<{ highscore: boolean }>`
-  top: -3.5rem;
-  right: -11rem;
+const HighScoreBadge = styled(Badge)`
   font-size: 3rem;
-  ${(props) => props.highscore && buttonFocused};
+  opacity: 0;
 
-  opacity: ${(props) => (props.highscore ? '1' : '0')};
+  &[data-highscore='true'] {
+    ${buttonFocused};
+    opacity: 1;
+  }
+
   transition: 400ms;
 `;
 
