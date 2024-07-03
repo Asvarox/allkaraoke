@@ -1,0 +1,993 @@
+#ARTIST:Jay-Z feat. Alicia Keys
+#TITLE:Empire State Of Mind
+#CREATOR:bakus33
+#BPM:346,56
+#YEAR:2009
+#VIDEO:v=YQNprE5DNR4
+#GENRE:R&B
+#LANGUAGE:English
+#GAP:8434,50138504155
+#ALLKARAOKE_ID:jay-z-feat-alicia-keys-empire-state-of-mind
+#ALLKARAOKE_LASTUPDATE:2024-07-03T00:10:22.880Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_VOLUME:0,85
+#P1:Empire State Of Mind
+#MP3:Jay-Z + Alicia Keys - Empire State Of Mind.mp3
+F 23 4 0 Yeah
+F 29 4 0 ~
+- 33
+F 47 2 0 Yeah 
+F 51 2 0 I’m 
+F 55 2 0 out 
+F 59 2 0 that 
+F 65 4 0 Brook
+F 71 4 0 lyn
+- 75
+F 81 2 0 Now 
+F 85 2 0 I’m 
+F 89 2 0 down 
+F 93 2 0 in 
+F 97 4 0 Tri
+F 103 4 0 be
+F 109 2 0 ca
+- 111
+F 115 2 0 Right 
+F 119 2 0 next 
+F 123 2 0 to 
+F 127 2 0 De
+F 131 2 0 Ni
+F 135 2 0 ro
+- 137
+F 143 2 0 But 
+F 147 2 0 I’ll 
+F 151 2 0 be 
+F 155 4 0 hood 
+F 161 2 0 for
+F 165 2 0 e
+F 169 2 0 ver
+- 171
+F 175 2 0 I’m 
+F 179 2 0 the 
+F 183 2 0 new 
+F 187 4 0 Si
+F 193 2 0 na
+F 199 4 0 tra
+- 203
+F 209 4 0 And 
+F 215 4 0 since 
+F 221 2 0 I 
+F 225 2 0 made 
+F 229 2 0 it 
+F 233 2 0 here
+- 235
+F 241 2 0 I 
+F 245 2 0 can 
+F 249 2 0 make 
+F 253 2 0 it 
+F 257 2 0 a
+F 261 2 0 ny
+F 265 1 0 where
+- 266
+F 274 1 0 Yeah, 
+F 277 2 0 they 
+F 281 2 0 love 
+F 285 2 0 me 
+F 289 2 0 e
+F 293 2 0 v’ry
+F 297 1 0 where
+- 298
+F 302 1 0 I 
+F 305 2 0 used 
+F 309 2 0 to 
+F 313 2 0 cop 
+F 317 2 0 in 
+F 321 4 0 Har
+F 327 2 0 lem
+- 329
+F 338 1 0 All 
+F 341 2 0 of 
+F 345 2 0 my 
+F 349 2 0 Do
+F 353 2 0 mi
+F 357 2 0 ni
+F 361 2 0 ca
+F 365 1 0 nos
+- 366
+F 370 1 0 Right 
+F 373 2 0 there 
+F 377 2 0 off 
+F 381 2 0 of 
+F 385 4 0 Broad
+F 391 2 0 way
+- 393
+F 400 1 0 Brought 
+F 403 2 0 me 
+F 407 2 0 back 
+F 411 2 0 to 
+F 415 2 0 that 
+F 419 2 0 Mc
+F 423 2 0 Do
+F 427 1 0 nald’s
+- 428
+F 432 1 0 Took 
+F 435 2 0 it 
+F 439 2 0 to 
+F 443 2 0 my 
+F 447 6 0 stash 
+F 455 2 0 spot
+- 457
+F 467 2 0 Five 
+F 471 2 0 Six
+F 475 2 0 ty 
+F 479 6 0 State 
+F 487 2 0 Street
+- 489
+F 496 1 0 Catch 
+F 499 2 0 me 
+F 503 2 0 in 
+F 507 2 0 the 
+F 511 2 0 kit
+F 515 1 0 chen
+- 516
+F 520 1 0 Like 
+F 523 2 0 the 
+F 527 2 0 Sim
+F 531 2 0 mons 
+F 535 2 0 whip
+F 539 2 0 ping 
+F 543 6 0 Pas
+F 551 2 0 try
+- 553
+F 562 1 0 Crui
+F 565 2 0 sing 
+F 569 4 0 down 
+F 575 6 0 8th 
+F 583 2 0 Street
+- 585
+F 595 2 0 Off 
+F 601 4 0 white 
+F 607 4 0 Le
+F 615 2 0 xus
+- 617
+F 626 1 0 Dri
+F 629 2 0 ving 
+F 633 4 0 so 
+F 639 4 0 slow
+- 643
+F 648 1 0 But 
+F 651 2 0 B
+F 655 4 0 K 
+F 661 2 0 it’s 
+F 665 2 0 from 
+F 671 6 0 Te
+F 679 2 0 xas
+- 681
+F 688 1 0 Me 
+F 691 2 0 I’m 
+F 695 2 0 out 
+F 699 2 0 that 
+F 703 6 0 Bed
+F 711 2 0 Stuy
+- 713
+F 723 3 0 Home 
+F 729 2 0 of 
+F 733 2 0 that 
+F 737 4 0 boy 
+F 743 2 0 Big
+F 747 1 0 gie
+- 748
+F 752 1 0 Now 
+F 755 2 0 I 
+F 759 2 0 live 
+F 763 2 0 on 
+F 767 6 0 Bill
+F 775 2 0 board
+- 777
+F 786 1 0 And 
+F 789 2 0 I 
+F 793 2 0 brought 
+F 797 2 0 my 
+F 801 4 0 boys 
+F 807 2 0 with 
+F 811 1 0 me
+- 812
+F 818 1 0 Say 
+F 821 2 0 what 
+F 825 2 0 up 
+F 829 2 0 to 
+F 833 4 0 Ty-
+F 839 2 0 Ty
+- 841
+F 852 1 0 Still 
+F 855 2 0 sip
+F 859 2 0 ping 
+F 863 6 0 Mai 
+F 871 2 0 Tais
+- 873
+F 882 1 0 Sit
+F 885 2 0 ting 
+F 889 4 0 court
+F 895 6 0 side 
+F 903 2 0 Knicks 
+F 907 1 0 and
+- 908
+F 913 2 0 Nets 
+F 919 2 0 give 
+F 923 2 0 me 
+F 927 4 0 high 
+F 935 2 0 fives
+- 937
+F 945 1 0 Nig
+F 947 2 0 ga 
+F 951 2 0 I 
+F 955 2 0 be 
+F 959 4 0 spiked 
+F 967 3 0 out
+- 970
+F 976 1 0 I 
+F 979 2 0 could 
+F 983 2 0 trip 
+F 987 2 0 a 
+F 991 2 0 re
+F 995 2 0 fe
+F 999 1 0 ree
+- 1000
+F 1011 2 0 Tell 
+F 1015 2 0 by 
+F 1019 2 0 my 
+F 1023 2 0 at
+F 1027 2 0 ti
+F 1031 2 0 tude
+- 1033
+F 1042 1 0 That 
+F 1045 2 0 I’m 
+F 1049 3 0 most...
+- 1052
+: 1072 4 1 In 
+* 1081 12 8 New 
+: 1095 6 10 Yo
+: 1103 26 10 ~rk
+- 1129
+: 1152 3 8 Con
+: 1159 4 10 crete 
+: 1167 6 10 jun
+: 1175 6 10 gle 
+: 1183 6 10 where 
+: 1191 6 10 dreams 
+: 1199 4 8 are 
+: 1209 12 13 made 
+: 1224 8 10 of
+- 1232
+: 1239 4 10 There’s 
+: 1247 4 10 no
+: 1255 6 10 thing 
+: 1263 4 8 you 
+: 1272 11 13 can’t 
+: 1287 6 10 do
+: 1295 5 8 ~
+- 1300
+: 1311 6 6 Now 
+: 1319 6 8 you’re 
+* 1327 4 6 in 
+: 1335 14 8 New 
+: 1351 6 10 Yo
+: 1359 26 10 ~rk
+- 1385 1392
+- 1392
+: 1415 4 6 These 
+: 1423 4 6 streets 
+: 1431 6 6 will 
+: 1439 4 6 make 
+: 1447 4 8 you 
+: 1455 5 6 feel 
+* 1466 7 13 brand 
+: 1479 5 10 new
+- 1484
+: 1495 4 6 The 
+: 1501 8 6 lights 
+: 1513 5 8 will 
+: 1520 2 6 in
+: 1530 9 13 spire 
+: 1543 6 10 you
+: 1551 4 8 ~
+- 1555
+: 1560 3 6 Let’s 
+* 1567 6 6 hear 
+: 1575 6 6 it 
+: 1583 4 6 for 
+: 1591 14 8 New 
+: 1608 7 10 York
+- 1615
+: 1624 13 8 New 
+: 1640 7 10 York
+- 1647
+: 1656 13 8 New 
+: 1671 6 10 Yo
+: 1679 32 10 ~rk
+- 1711
+F 1720 1 8 ...Me 
+F 1722 1 8 at 
+F 1725 2 8 the 
+F 1729 2 8 X 
+F 1733 2 8 with 
+F 1737 6 8 O
+F 1745 4 8 G 
+F 1751 2 8 at 
+F 1755 2 8 a 
+F 1759 2 8 Yan
+F 1763 4 8 kee 
+F 1770 2 8 game
+- 1772
+F 1779 1 8 Shit 
+F 1781 2 8 I 
+F 1785 2 8 made 
+F 1789 2 8 the 
+F 1793 2 8 Yan
+F 1797 2 8 kee 
+F 1801 2 8 hat 
+F 1805 2 8 more
+- 1807
+F 1813 1 8 Fa
+F 1815 2 8 mous 
+F 1819 2 8 than 
+F 1823 2 8 a 
+F 1827 2 8 Yan
+F 1831 2 8 kee 
+F 1835 1 8 can
+- 1836
+F 1842 1 8 You 
+F 1845 2 8 should 
+F 1849 2 8 know 
+F 1853 2 8 I 
+F 1857 4 8 bleed 
+F 1864 3 8 Blue
+- 1867
+F 1875 1 8 But 
+F 1877 2 8 I 
+F 1881 2 8 ain’t 
+F 1885 2 8 a 
+F 1889 4 8 crip 
+F 1895 3 8 tho
+- 1898
+F 1906 1 8 But 
+F 1909 2 8 I 
+F 1913 2 8 got 
+F 1917 2 8 a 
+F 1921 2 8 gang 
+F 1925 2 8 of 
+F 1929 2 8 Nag
+F 1932 1 8 gis
+- 1933
+F 1938 1 8 Wal
+F 1941 2 8 king 
+F 1945 2 8 with 
+F 1949 2 8 my 
+F 1955 4 8 clique 
+F 1961 1 8 though
+- 1962
+F 1968 1 8 Wel
+F 1971 2 8 come 
+F 1975 2 8 to 
+F 1979 2 8 the 
+F 1983 2 8 mel
+F 1987 4 8 ting 
+F 1993 2 8 pot
+- 1995
+F 2003 1 8 Cor
+F 2005 2 8 ners 
+F 2009 2 8 where 
+F 2013 2 8 we 
+F 2017 2 8 sel
+F 2021 2 8 ling 
+F 2025 2 8 rocks
+- 2027
+F 2033 1 8 A
+F 2035 2 8 fri
+F 2039 2 8 ca 
+F 2043 2 8 Bam
+F 2047 2 8 baa
+F 2051 2 8 taa 
+F 2055 2 8 shit
+- 2057
+F 2068 3 8 Home 
+F 2073 2 8 of 
+F 2077 2 8 the 
+F 2081 4 8 Hip 
+F 2087 2 8 Hop
+- 2089
+F 2097 1 8 Yel
+F 2099 2 8 low 
+F 2103 6 8 cab, 
+F 2111 2 8 gyp
+F 2115 2 8 sy 
+F 2120 2 8 cab,
+- 2122
+F 2128 1 8 Dol
+F 2131 2 8 lar 
+F 2135 6 8 cab, 
+F 2143 2 8 hol
+F 2147 2 8 la 
+F 2151 1 8 back
+- 2152
+F 2156 1 8 For 
+F 2159 2 8 fo
+F 2163 2 8 reig
+F 2167 2 8 ners 
+F 2171 2 8 it 
+F 2175 2 8 ain’t 
+F 2179 1 8 fitted
+- 2180
+F 2184 1 8 They 
+F 2187 2 8 act 
+F 2191 2 8 like 
+F 2195 2 8 they 
+F 2199 2 8 for
+F 2203 2 8 got 
+F 2207 2 8 how 
+F 2211 2 8 to 
+F 2215 2 8 act
+- 2217
+F 2226 2 8 Eight 
+F 2231 2 8 mil
+F 2235 2 8 lion 
+F 2239 6 8 sto
+F 2247 2 8 ries
+- 2249
+F 2257 2 8 Out 
+F 2261 2 8 there 
+F 2265 2 8 and 
+F 2269 2 8 their 
+F 2273 4 8 na
+F 2279 2 8 ked
+- 2281
+F 2291 1 8 Ci
+F 2293 2 8 ty 
+F 2297 2 8 is 
+F 2301 2 8 a 
+F 2305 2 8 pi
+F 2309 2 8 ty 
+F 2313 2 8 half 
+F 2317 1 8 of
+- 2318
+F 2323 2 8 Y’all 
+F 2327 6 8 won’t 
+F 2337 4 8 make 
+F 2343 2 8 it
+- 2345
+F 2353 1 8 Me 
+F 2355 2 8 I 
+F 2359 2 8 got
+F 2363 2 8 ta 
+F 2367 6 8 plug 
+F 2375 2 8 spe
+F 2379 1 8 cial
+- 2380
+F 2384 1 8 Ed 
+F 2387 2 8 “I 
+F 2391 2 8 got 
+F 2395 2 8 it 
+F 2399 3 8 made”
+- 2402
+F 2408 1 8 If 
+F 2411 2 8 Jee
+F 2415 2 8 zy’s 
+F 2419 2 8 pay
+F 2423 2 8 in’ 
+F 2427 2 8 Le
+F 2431 3 8 Bron
+- 2434
+F 2440 1 8 I’m 
+F 2443 6 8 pay
+F 2451 2 8 ing 
+F 2455 6 8 Dwayne 
+F 2464 5 8 Wade
+- 2469
+F 2483 2 7 Three 
+F 2487 6 8 dice 
+F 2495 6 8 Cee-
+F 2503 2 8 lo
+- 2505
+F 2517 2 8 Three 
+F 2521 6 8 card 
+F 2529 4 8 Mon
+F 2536 2 8 ty
+- 2538
+F 2546 1 8 La
+F 2549 2 8 bor 
+F 2553 4 8 day 
+F 2559 2 8 pa
+F 2563 2 8 rade
+- 2565
+F 2571 1 8 Rest 
+F 2573 2 8 in 
+F 2577 6 8 peace 
+F 2585 6 8 Bob 
+F 2593 4 8 Mar
+F 2599 2 8 ley
+- 2601
+F 2611 2 8 Sta
+F 2615 2 8 tue 
+F 2619 2 8 of 
+F 2623 2 8 Li
+F 2627 2 8 ber
+F 2631 2 8 ty
+- 2633
+F 2643 2 8 Long 
+F 2647 2 8 live 
+F 2651 2 8 the 
+F 2655 6 8 World 
+F 2664 3 8 Trade
+- 2667
+F 2675 2 8 Long 
+F 2679 2 8 live 
+F 2683 2 8 the 
+F 2687 6 8 king 
+F 2695 2 8 yo
+- 2697
+F 2706 3 8 I’m 
+F 2711 2 8 from 
+F 2715 2 8 the 
+F 2719 6 8 em
+F 2727 2 8 pi
+F 2731 1 8 re...
+- 2732
+: 2736 4 1 In 
+: 2745 12 8 New 
+* 2759 6 10 Yo
+: 2767 26 10 ~rk
+- 2793
+: 2816 3 8 Con
+: 2823 4 10 crete 
+: 2831 6 10 jun
+: 2839 6 10 gle 
+: 2847 6 10 where 
+: 2855 6 10 dreams 
+: 2863 4 8 are 
+: 2873 12 13 made 
+: 2888 8 10 of
+- 2896
+: 2903 4 10 There’s 
+: 2911 4 10 no
+: 2919 6 10 thing 
+* 2927 4 8 you 
+: 2936 11 13 can’t 
+: 2951 6 10 do
+: 2959 5 8 ~
+- 2964
+: 2975 6 6 Now 
+: 2983 6 8 you’re 
+: 2991 4 6 in 
+: 2999 14 8 New 
+: 3015 6 10 Yo
+: 3023 26 10 ~rk
+- 3049 3056
+- 3056
+: 3079 4 6 These 
+: 3087 4 6 streets 
+: 3095 6 6 will 
+: 3103 4 6 make 
+: 3111 4 8 you 
+: 3119 5 6 feel 
+* 3130 7 13 brand 
+: 3143 5 10 new
+- 3148
+: 3159 4 6 The 
+: 3165 8 6 lights 
+* 3177 5 8 will 
+: 3184 2 6 in
+: 3194 9 13 spire 
+: 3207 6 10 you
+: 3215 4 8 ~
+- 3219
+: 3224 3 6 Let’s 
+: 3231 6 6 hear 
+: 3239 6 6 it 
+: 3247 4 6 for 
+: 3255 14 8 New 
+: 3272 7 10 York
+- 3279
+: 3288 13 8 New 
+: 3304 7 10 York
+- 3311
+: 3320 13 8 New 
+: 3335 6 10 Yo
+: 3343 32 10 ~rk
+- 3375
+F 3394 3 10 Lights 
+F 3401 4 10 is 
+F 3407 6 10 blin
+F 3415 2 10 ding
+- 3417
+F 3429 2 10 Girls 
+F 3433 6 10 need 
+F 3441 6 10 blin
+F 3449 1 10 ders
+- 3450
+F 3455 1 10 So 
+F 3457 2 10 they 
+F 3461 2 10 can 
+F 3465 4 10 step 
+F 3471 2 10 out 
+F 3475 2 10 of 
+F 3479 6 10 bounds 
+F 3488 2 10 quick
+- 3490
+F 3497 1 10 The 
+F 3499 4 10 side 
+F 3505 6 10 lines 
+F 3513 4 10 is 
+F 3523 6 10 blind 
+F 3531 2 10 with 
+F 3537 2 10 ca
+F 3541 2 10 sual
+F 3545 2 10 ties
+- 3547
+F 3553 1 10 Who 
+F 3555 2 10 sip 
+F 3559 2 10 the 
+F 3563 2 10 lite 
+F 3569 2 10 ca
+F 3573 2 10 sual
+F 3576 2 10 ly
+- 3578
+F 3583 1 10 Then 
+F 3585 2 10 gra
+F 3589 2 10 dual
+F 3593 2 10 ly 
+F 3597 2 10 be
+F 3601 4 10 come 
+F 3608 2 10 worst
+- 3610
+F 3619 2 10 Don’t 
+F 3623 2 10 bite 
+F 3627 2 10 the 
+F 3631 2 10 ap
+F 3635 2 10 ple, 
+F 3639 3 10 Eve
+- 3642
+F 3649 1 10 Caught 
+F 3651 2 10 up 
+F 3655 2 10 in 
+F 3659 2 10 the 
+F 3663 4 10 in-
+F 3672 2 10 crowd
+- 3674
+F 3683 1 10 Now 
+F 3685 2 10 your 
+F 3689 4 10 in-
+F 3696 3 10 style
+- 3699
+F 3705 1 10 And 
+F 3707 2 10 in 
+F 3711 2 10 the 
+F 3715 2 10 win
+F 3719 2 10 ter 
+F 3723 2 10 gets 
+F 3728 3 10 cold
+- 3731
+F 3739 2 10 En 
+F 3745 4 10 vogue 
+F 3751 2 10 with 
+F 3755 2 10 your 
+F 3759 4 10 skin 
+F 3765 2 10 out
+- 3767
+F 3779 1 10 Ci
+F 3781 2 10 ty 
+F 3785 4 10 of 
+F 3791 6 10 sin 
+F 3799 2 10 is 
+F 3803 2 10 a 
+F 3807 2 10 pi
+F 3811 2 10 ty 
+F 3815 2 10 on 
+F 3819 2 10 a 
+F 3823 4 10 whim
+- 3827
+F 3833 2 10 Good 
+F 3839 4 10 girls 
+F 3847 6 10 gone 
+F 3855 3 10 bad
+- 3858
+F 3865 1 10 The 
+F 3867 2 10 ci
+F 3871 2 10 ties 
+F 3875 4 10 filled 
+F 3881 4 10 with 
+F 3887 3 10 them
+- 3890
+F 3905 1 10 Mom
+F 3907 2 10 my 
+F 3911 2 10 took 
+F 3915 2 10 a 
+F 3919 4 10 bus 
+F 3927 2 10 trip
+- 3929
+F 3938 1 10 Now 
+F 3941 2 10 she 
+F 3945 2 10 got 
+F 3949 2 10 her 
+F 3953 4 10 bust 
+F 3960 2 10 out
+- 3962
+F 3971 1 10 E
+F 3973 2 10 very
+F 3977 2 10 bo
+F 3981 2 10 dy 
+F 3985 4 10 ride 
+F 3991 2 10 her
+- 3993
+F 4005 2 10 Just 
+F 4009 2 10 like 
+F 4013 2 10 a 
+F 4017 4 10 bus 
+F 4025 3 10 route
+- 4028
+F 4044 2 10 Hail 
+F 4047 2 10 Ma
+F 4051 2 10 ry 
+F 4055 2 10 to 
+F 4059 2 10 the 
+F 4063 2 10 ci
+F 4067 2 10 ty 
+F 4071 2 10 your 
+F 4075 4 10 a 
+F 4081 4 10 Vir
+F 4086 2 10 gin
+- 4088
+F 4093 1 10 And 
+F 4095 2 10 Je
+F 4099 2 10 sus 
+F 4105 4 10 can’t 
+F 4111 4 10 save 
+F 4117 1 10 you
+- 4118
+F 4123 2 10 Life 
+F 4129 4 10 starts 
+F 4137 2 10 when 
+F 4141 2 10 the 
+F 4145 4 10 church 
+F 4151 2 10 ends
+- 4153
+F 4165 2 10 Came 
+F 4169 2 10 here 
+F 4173 2 10 for 
+F 4177 3 10 school
+- 4180
+F 4187 1 10 Gra
+F 4189 2 10 du
+F 4193 2 10 a
+F 4197 2 10 ted 
+F 4201 2 10 to 
+F 4205 2 10 the 
+F 4209 4 10 high 
+F 4215 2 10 life
+- 4217
+F 4227 2 10 Ball 
+F 4231 2 10 play
+F 4235 4 10 ers, 
+F 4241 4 10 rap 
+F 4247 3 10 stars
+- 4250
+F 4255 1 10 Ad
+F 4257 2 10 dic
+F 4261 2 10 ted 
+F 4265 2 10 to 
+F 4269 2 10 the 
+F 4273 4 10 lime
+F 4279 2 10 light
+- 4281
+F 4291 2 10 M
+F 4295 4 10 D
+F 4301 4 10 M
+F 4307 4 10 A 
+F 4313 2 10 got 
+F 4317 2 10 You 
+F 4321 2 10 fee
+F 4325 2 10 lin’ 
+F 4329 2 10 like 
+F 4333 2 10 a 
+F 4337 2 10 cham
+F 4341 2 10 pion
+- 4343
+F 4349 1 10 The 
+F 4351 2 10 ci
+F 4355 2 10 ty 
+F 4359 2 10 ne
+F 4363 2 10 ver 
+F 4367 3 10 sleeps
+- 4370
+F 4377 1 10 Bet
+F 4379 2 10 ter 
+F 4383 6 10 slip 
+F 4392 2 10 you...
+- 4394
+: 4400 4 1 In 
+: 4409 12 8 New 
+* 4423 6 10 Yo
+: 4431 26 10 ~rk
+- 4457
+: 4480 3 8 Con
+: 4487 4 10 crete 
+: 4495 6 10 jun
+: 4503 6 10 gle 
+: 4511 6 10 where 
+: 4519 6 10 dreams 
+: 4527 4 8 are 
+: 4537 12 13 made 
+: 4552 8 10 of
+- 4560
+: 4567 4 10 There’s 
+: 4575 4 10 no
+: 4583 6 10 thing 
+: 4591 4 8 you 
+: 4600 11 13 can’t 
+: 4615 6 10 do
+* 4623 5 8 ~
+- 4628
+: 4639 6 6 Now 
+: 4647 6 8 you’re 
+: 4655 4 6 in 
+: 4663 14 8 New 
+: 4679 6 10 Yo
+: 4687 26 10 ~rk
+- 4713 4720
+- 4720
+: 4743 4 6 These 
+: 4751 4 6 streets 
+: 4759 6 6 will 
+: 4767 4 6 make 
+: 4775 4 8 you 
+: 4783 5 6 feel 
+* 4794 7 13 brand 
+: 4807 5 10 new
+- 4812
+: 4823 4 6 The 
+: 4829 8 6 lights 
+: 4841 5 8 will 
+: 4848 2 6 in
+: 4858 9 13 spire 
+: 4871 6 10 you
+: 4879 4 8 ~
+- 4883
+: 4888 3 6 Let’s 
+: 4895 6 6 hear 
+: 4903 6 6 it 
+: 4911 4 6 for 
+: 4919 14 8 New 
+: 4936 7 10 York
+- 4943
+: 4952 13 8 New 
+: 4968 7 10 York
+- 4975
+: 4984 13 8 New 
+: 4999 6 10 Yo
+: 5007 32 10 ~rk
+- 5039 5040
+- 5040
+: 5063 6 1 One 
+: 5071 6 1 hand 
+: 5079 2 1 in 
+: 5083 2 -2 the 
+: 5087 6 1 air 
+: 5095 2 1 for 
+: 5099 2 -2 the 
+: 5103 4 1 big 
+: 5111 2 1 ci
+: 5115 2 -2 ty
+- 5117
+: 5127 6 1 Street 
+: 5135 4 1 lights, 
+: 5143 4 1 big 
+: 5151 6 1 dreams, 
+: 5159 6 1 all 
+: 5167 2 1 loo
+: 5171 2 -2 kin’ 
+: 5175 2 1 pret
+: 5179 2 -2 ty
+- 5181
+: 5191 2 1 No
+: 5195 2 3 ~ 
+: 5199 4 3 place 
+: 5207 2 1 in 
+: 5211 2 3 the 
+* 5216 5 5 world 
+: 5223 2 1 that 
+: 5227 2 1 can 
+: 5231 4 1 com
+: 5239 2 -2 pa
+: 5243 2 -2 ~re
+- 5245
+: 5256 1 3 Put 
+: 5259 2 1 your 
+: 5263 2 3 ligh
+: 5267 2 1 ters 
+: 5271 2 3 in 
+: 5275 2 5 the 
+: 5279 4 6 air
+- 5283
+: 5288 1 6 E
+: 5291 2 5 v’ry
+: 5295 2 6 bo
+: 5299 2 5 dy 
+: 5303 2 6 say
+: 5307 1 8 ~
+- 5308
+: 5311 10 10 Yeah
+: 5323 2 8 ~
+: 5327 2 6 ~
+: 5331 2 8 ~
+: 5335 10 10 ~
+: 5347 2 8 ~
+: 5351 2 6 ~
+- 5353
+: 5375 10 10 Yeah
+: 5387 2 8 ~
+: 5391 2 6 ~
+: 5395 2 8 ~
+* 5399 6 10 ~
+: 5407 6 8 ~
+- 5413
+: 5424 4 1 In 
+: 5433 12 8 New 
+: 5447 6 10 Yo
+: 5455 26 10 ~rk
+- 5481
+: 5504 3 8 Con
+: 5511 4 10 crete 
+: 5519 6 10 jun
+: 5527 6 10 gle 
+: 5535 6 10 where 
+: 5543 6 10 dreams 
+: 5551 4 8 are 
+: 5561 12 13 made 
+: 5576 8 10 of
+- 5584
+: 5591 4 13 There’s 
+: 5599 4 13 no
+: 5607 6 11 thing 
+: 5615 4 10 you 
+: 5624 11 13 can’t 
+: 5642 5 13 do
+: 5649 2 10 ~
+- 5651
+: 5663 6 6 Now 
+: 5671 6 8 you’re 
+: 5679 4 6 in 
+* 5687 14 8 New 
+: 5703 6 10 Yo
+: 5711 26 10 ~rk
+- 5737 5744
+- 5744
+: 5767 4 6 These 
+: 5775 4 6 streets 
+: 5783 6 6 will 
+: 5791 4 6 make 
+: 5799 4 8 you 
+: 5807 5 6 feel 
+* 5818 7 13 brand 
+: 5831 5 10 new
+- 5836
+: 5847 4 6 The 
+: 5853 8 6 lights 
+: 5865 5 8 will 
+: 5872 2 6 in
+: 5882 9 13 spire 
+: 5895 6 10 you
+: 5903 4 8 ~
+- 5907
+: 5912 3 6 Let’s 
+: 5920 5 13 hear 
+* 5929 3 11 it 
+: 5936 3 10 for 
+: 5943 14 8 New 
+: 5960 7 10 York
+- 5967
+: 5976 13 8 New 
+: 5992 7 10 York
+- 5999
+: 6008 13 8 New 
+: 6023 6 10 Yo
+: 6031 34 10 ~rk
+E

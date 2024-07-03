@@ -1,0 +1,412 @@
+#ARTIST:deadmau5 feat. Gerard Way
+#TITLE:Professional Griefers
+#CREATOR:UltraSinger [GitHub]
+#BPM:383,52
+#YEAR:2012
+#VIDEO:v=Hr2Bc5qMhE4
+#GENRE:Dance, Electronic
+#LANGUAGE:English
+#GAP:79803,10387984982
+#ALLKARAOKE_ID:deadmau5-feat-gerard-way-professional-griefers
+#ALLKARAOKE_LASTUPDATE:2024-07-03T00:10:22.357Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_VOLUME:0,91
+#P1:Professional Griefers
+#MP3:deadmau5 feat. Gerard Way - Professional Griefers.mp3
+#COVER:deadmau5 feat. Gerard Way - Professional Griefers [CO].jpg
+#BACKGROUND:deadmau5 feat. Gerard Way - Professional Griefers [BG].jpg
+#START:48
+#END:310000
+: 26 4 17 I 
+: 32 3 17 like 
+: 37 3 17 the 
+: 42 10 17 sound 
+: 57 2 17 of 
+: 61 3 17 the 
+: 68 11 17 bro
+: 79 5 17 ken 
+: 92 10 20 pie
+: 102 8 17 ces
+- 110
+: 120 4 17 I 
+: 126 4 17 like 
+: 133 3 17 the 
+: 139 10 17 lights 
+: 152 3 17 and 
+: 157 3 17 the 
+: 162 10 17 si
+: 172 11 17 ren 
+: 185 9 15 she 
+: 196 14 17 says
+- 210
+* 216 3 14 We 
+* 222 4 14 got 
+* 228 4 14 ma
+* 232 10 14 chines 
+* 246 4 15 but 
+* 253 2 14 the 
+* 257 10 14 kids 
+* 270 8 14 got 
+* 281 12 15 Je
+* 293 12 14 sus
+- 305
+: 312 3 18 We 
+: 317 4 18 like 
+: 324 4 18 to 
+: 331 8 18 move 
+: 344 3 18 like 
+: 349 3 18 we 
+: 355 8 19 both 
+: 366 8 19 don't 
+: 378 10 19 need 
+: 390 10 19 this
+- 400
+: 404 7 18 God 
+: 415 7 18 can't 
+: 426 10 20 hear 
+: 438 8 18 you
+- 446
+: 452 6 18 they 
+: 463 6 18 won't 
+: 474 10 20 fight 
+: 487 8 18 you
+- 495
+: 499 8 20 Watch 
+: 510 8 20 them 
+: 522 8 20 build 
+: 535 8 20 a 
+: 547 8 20 friend 
+: 558 8 20 just 
+: 570 7 21 like 
+: 582 11 19 you
+- 593
+: 597 11 18 Mor
+: 608 6 20 ning 
+: 618 12 22 sick
+: 630 11 19 ness 
+: 643 11 22 X-
+: 654 11 22 Y-
+: 665 11 20 Z
+- 676
+: 691 12 22 Teen
+: 703 9 22 age 
+: 714 9 22 girls 
+: 726 9 22 with 
+: 740 10 23 E
+: 750 8 23 S-
+- 758
+: 762 6 17 Give 
+: 769 3 15 me 
+: 774 4 13 the 
+: 780 22 13 sound 
+: 820 3 12 to 
+: 825 26 13 see
+- 851 852
+- 852
+: 878 4 15 A
+: 882 7 17 no
+: 889 3 17 ther 
+: 900 10 17 world 
+: 913 9 12 out
+: 922 9 12 side 
+: 935 8 8 that's 
+: 947 12 8 full 
+: 962 8 10 of
+- 970
+: 977 9 8 All 
+: 988 4 6 the 
+: 996 12 5 bro
+: 1008 8 12 ken 
+: 1020 18 13 things 
+: 1050 4 12 that 
+: 1058 4 12 I 
+: 1068 24 12 made
+- 1092 1113
+- 1113
+: 1139 4 16 Just 
+: 1145 4 17 give 
+: 1153 5 15 me 
+: 1159 3 13 a 
+: 1164 18 13 life 
+: 1206 3 12 to 
+: 1211 27 13 bleed
+- 1238
+: 1260 6 15 A
+: 1266 6 17 no
+: 1272 6 17 ther 
+: 1282 12 17 world 
+: 1296 10 12 out
+: 1306 8 12 side 
+: 1319 9 8 that's 
+: 1332 11 8 full 
+: 1345 6 10 of
+- 1351
+: 1363 8 8 All 
+: 1375 4 8 the 
+: 1382 10 8 aw
+: 1392 6 12 ful 
+: 1402 22 13 things 
+: 1433 6 12 that 
+: 1441 4 12 I 
+: 1451 19 12 made
+- 1470 1582
+- 1582
+: 1608 4 17 We 
+: 1613 5 17 like 
+: 1619 2 17 to 
+: 1624 10 17 dance 
+: 1637 4 17 but 
+: 1643 2 17 the 
+: 1649 6 17 dead 
+: 1661 7 17 go 
+: 1673 12 20 fas
+: 1685 6 17 ter
+- 1691
+: 1702 5 17 Turn 
+: 1709 3 17 up 
+: 1715 3 17 the 
+: 1720 9 17 slam, 
+: 1734 8 17 hound, 
+: 1746 8 17 bar, 
+: 1757 8 17 code, 
+: 1768 13 15 blas
+: 1781 8 17 ter
+- 1789
+: 1798 5 14 We 
+: 1805 4 14 want 
+: 1811 3 14 the 
+: 1816 9 14 cash 
+: 1828 4 15 or 
+: 1834 3 14 the 
+: 1839 8 14 junk 
+: 1851 10 14 you're 
+: 1866 10 15 af
+: 1876 11 14 ter
+- 1887
+: 1895 7 18 Rez-
+: 1902 4 18 up 
+: 1908 6 18 con
+: 1914 4 18 trol 
+: 1924 4 18 for 
+: 1930 4 18 the 
+: 1938 10 19 mix
+: 1948 10 19 tape 
+: 1960 12 19 mas
+: 1972 10 19 ter
+- 1982
+: 1986 11 18 Self
+: 1997 12 18 -cor
+: 2009 10 20 rec
+: 2019 10 18 tion
+- 2029
+: 2033 10 18 mass 
+: 2044 11 18 dis
+: 2055 12 20 sec
+: 2067 8 18 tion
+- 2075
+: 2080 11 20 Dead
+: 2091 11 20 squad 
+: 2105 10 20 brats 
+: 2117 7 20 are 
+: 2129 7 20 in 
+: 2139 12 21 de
+: 2151 12 20 ten
+: 2163 8 20 tion
+- 2171
+: 2176 12 18 Mor
+: 2188 8 20 ning 
+: 2199 12 22 sick
+: 2211 12 19 ness, 
+: 2224 11 22 X-
+: 2235 11 22 Y-
+: 2246 11 20 Z
+- 2257
+: 2271 8 22 Boys 
+: 2285 8 22 with 
+: 2296 10 22 bombs 
+: 2310 6 22 in 
+: 2321 10 23 N
+: 2333 9 23 M
+: 2344 10 23 A
+- 2354
+: 2368 11 18 Car
+: 2379 9 18 bon-
+: 2390 12 20 La
+: 2402 6 18 cing
+- 2408
+: 2412 11 18 Spent 
+: 2424 12 18 Shell 
+: 2439 10 20 Ca
+: 2449 10 18 sings
+- 2459
+: 2463 13 20 Pho
+: 2476 10 20 to
+: 2489 10 20 graphs 
+: 2502 10 20 that 
+: 2514 10 21 I'm 
+: 2526 11 20 e
+: 2537 11 20 ra
+: 2548 7 20 sing
+- 2555
+: 2562 10 18 Bo
+: 2572 9 20 nus 
+: 2584 11 22 lives 
+: 2597 10 19 with 
+: 2608 12 22 pi
+: 2620 8 22 xel 
+: 2631 11 20 screams
+- 2642
+: 2656 11 22 Girls 
+: 2669 6 22 with 
+: 2680 9 22 guns 
+: 2691 10 22 on 
+: 2704 12 23 L
+: 2716 11 23 S
+: 2727 11 23 D
+- 2738
+: 2751 9 18 Cell 
+: 2764 11 18 in
+: 2775 11 20 fec
+: 2786 8 18 tion
+- 2794
+: 2799 11 18 Mass 
+: 2812 11 18 des
+: 2823 11 20 truc
+: 2834 9 18 tion
+- 2843
+: 2849 10 19 Pro
+: 2859 10 19 grammed 
+: 2872 10 19 for 
+: 2885 8 19 the 
+: 2896 11 20 fi
+: 2907 10 19 nal 
+: 2919 10 19 func
+: 2929 9 18 tion
+- 2938
+: 2942 12 18 Lab-
+: 2954 10 20 Rat 
+: 2966 14 22 king
+- 2980
+: 2990 12 22 Res
+: 3002 10 22 cue 
+: 3014 16 20 team
+- 3030
+: 3036 13 22 Save 
+: 3051 8 22 me 
+: 3062 9 22 from 
+: 3074 8 22 the 
+: 3086 12 23 next 
+: 3099 11 23 life-
+- 3110
+* 3114 4 17 Give 
+* 3119 2 15 me 
+* 3123 3 15 the 
+* 3128 25 13 sound 
+* 3170 4 12 to 
+* 3176 23 13 see
+- 3199
+: 3224 5 15 a
+: 3229 7 17 no
+: 3236 6 17 ther 
+: 3249 8 17 world 
+: 3261 13 12 out
+: 3274 9 12 side 
+: 3286 6 8 that's 
+: 3297 9 8 full 
+: 3310 6 10 of
+- 3316
+: 3330 7 8 all 
+: 3339 3 6 the 
+: 3344 12 5 bro
+: 3356 9 12 ken 
+: 3367 22 13 things 
+: 3398 6 12 that 
+: 3407 4 12 I 
+: 3416 28 12 made
+- 3444 3462
+- 3462
+: 3488 5 16 just 
+: 3495 5 17 give 
+: 3502 4 15 me 
+: 3508 2 13 a 
+: 3514 16 13 life 
+: 3555 3 12 to 
+: 3561 26 13 bleed
+- 3587
+: 3609 5 15 a
+: 3614 6 17 no
+: 3620 6 17 ther 
+: 3632 8 17 world 
+: 3644 13 12 out
+: 3657 9 12 side 
+: 3670 8 8 that's 
+: 3681 9 8 full 
+: 3694 12 10 of
+- 3706
+: 3714 7 8 all 
+: 3724 4 8 the 
+: 3730 9 8 aw
+: 3739 8 12 ful 
+: 3752 20 13 things 
+: 3782 4 12 that 
+: 3789 7 12 I 
+: 3799 22 12 made
+- 3821 3844
+- 3844
+: 3870 6 16 'cause 
+: 3877 5 17 we 
+: 3884 2 15 are 
+: 3888 2 13 the 
+: 3894 22 13 last 
+: 3938 6 13 di
+: 3944 23 13 sease
+- 3967
+: 3993 4 15 a
+: 3997 8 17 no
+: 4005 4 17 ther 
+: 4015 11 17 bro
+: 4026 8 12 ken 
+: 4039 10 12 life 
+: 4052 5 8 that's 
+: 4064 10 8 full 
+: 4077 8 10 of
+- 4085
+: 4097 7 8 all 
+: 4107 4 8 the 
+: 4114 9 8 aw
+: 4123 8 12 ful 
+: 4135 20 13 things 
+: 4165 5 12 that 
+: 4173 4 12 I 
+: 4184 30 12 made
+- 4214 4230
+- 4230
+: 4256 3 8 and 
+: 4261 4 16 we 
+: 4268 3 15 got 
+: 4274 5 13 the 
+: 4282 22 10 eyes 
+: 4321 4 18 to 
+: 4327 19 13 see
+- 4346 4348
+- 4348
+: 4374 6 15 a
+: 4380 6 17 no
+: 4386 7 17 ther 
+: 4399 10 17 bro
+: 4409 8 12 ken 
+: 4421 8 12 life 
+: 4435 8 8 that's 
+: 4447 10 8 full 
+: 4460 9 10 of
+- 4469
+* 4481 7 8 all 
+* 4491 4 8 the 
+* 4497 10 8 aw
+* 4507 7 12 ful 
+* 4519 18 13 things 
+* 4550 4 12 that 
+* 4557 4 12 I 
+* 4567 30 12 made
+E
