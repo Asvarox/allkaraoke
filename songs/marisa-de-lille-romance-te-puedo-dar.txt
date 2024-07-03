@@ -1,0 +1,215 @@
+#ARTIST:Marisa De Lille
+#TITLE:Romance te puedo dar
+#CREATOR:asdfer
+#BPM:308,49
+#YEAR:1994
+#VIDEO:v=Cf4YU-sRRBQ
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:11597,897208985705
+#ALLKARAOKE_ID:marisa-de-lille-romance-te-puedo-dar
+#ALLKARAOKE_LASTUPDATE:2024-07-03T00:10:23.139Z
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:1
+#P1:Dragon Ball Ending Latino 
+#MP3:Marisa De Lille - Romance te puedo dar (TV).mp3
+#COVER:Marisa De Lille - Romance te puedo dar (TV).jpg
+: 21 9 -3 Fan
+: 34 2 -3 ta
+: 38 8 -1 sía 
+: 54 5 1 ven 
+: 62 2 -3 a 
+: 66 8 -1 mí
+- 74
+: 86 9 -3 Con
+: 99 2 -3 quis
+: 103 8 -1 tar
+: 115 2 -1 te 
+: 119 5 1 quie
+: 127 2 -3 ro 
+: 131 4 -1 yo
+- 135
+: 139 2 4 Ju
+: 143 2 4 ven
+: 147 12 4 tud
+- 159
+: 170 2 4 Un 
+: 174 2 1 mis
+: 179 2 5 te
+: 183 6 6 ~
+: 191 5 4 rio 
+: 199 5 2 vas 
+: 207 5 -1 a 
+* 215 5 1 des
+: 223 2 1 cu
+* 227 20 4 brir
+- 247 257
+- 257
+: 278 9 -3 To
+: 291 2 -3 dos 
+: 295 8 -1 quie
+: 307 2 -3 ren 
+: 311 2 1 pron
+: 315 2 1 to 
+: 319 2 -3 vi
+: 323 8 -1 vir
+- 331
+: 343 9 -3 A
+: 356 2 -3 ven
+: 360 8 -1 tu
+: 372 2 -3 ras 
+: 376 2 1 mil 
+: 380 2 1 y al
+: 384 2 -3 go 
+: 388 4 -1 más
+- 392
+* 396 2 4 Ju
+* 400 2 4 ven
+* 404 12 4 tud
+- 416
+: 427 2 1 Con
+: 431 2 4 ser
+: 435 2 1 va 
+: 439 2 6 la i
+: 443 2 6 no
+: 447 2 6 cen
+: 451 3 4 cia 
+: 456 5 1 que hay 
+: 464 2 4 en 
+: 469 2 4 ti
+: 473 20 2 ~
+- 493 502
+- 502
+: 523 2 2 Si 
+: 527 2 2 tra
+: 531 2 4 tas 
+: 536 6 6 de 
+: 548 3 1 a
+: 553 5 6 pa
+: 560 3 1 ren
+: 565 7 6 tar
+- 572
+: 580 5 6 Al
+: 588 2 4 go 
+: 592 2 2 que 
+: 596 2 1 no 
+: 601 6 2 e
+: 609 2 -1 ~
+: 613 13 -1 res
+- 626 631
+- 631
+: 652 2 2 Se es
+: 656 2 2 fu
+* 660 2 4 ma
+* 665 6 4 rá 
+: 677 3 4 la 
+: 682 5 4 ma
+: 689 3 -1 gia i
+: 694 7 4 gual
+- 701
+: 708 5 4 Quie
+: 716 2 2 bra 
+: 720 2 1 la i
+: 724 2 2 lu
+: 729 22 4 sión
+- 751 764
+- 764
+: 785 5 6 A
+: 794 8 9 tré
+: 805 5 9 ve
+: 813 2 6 te a en
+: 817 6 9 fren
+: 826 9 10 tar
+: 838 6 6 ~
+- 844
+: 850 6 6 Sal
+: 859 9 11 va
+: 871 4 9 je y 
+: 878 5 6 ple
+: 886 3 11 na
+: 891 8 9 men
+: 903 10 6 te
+- 913
+: 931 5 7 El 
+: 939 5 7 mi
+: 947 5 6 la
+: 955 10 4 gro 
+: 970 5 -1 de 
+: 978 5 6 vi
+: 987 28 2 vir
+- 1015
+: 1023 2 9 Ro
+: 1027 5 9 man
+: 1035 5 7 ce 
+: 1043 5 6 te 
+: 1051 5 4 pue
+: 1059 2 2 do 
+: 1063 15 6 dar
+- 1078
+: 1087 2 9 Ro
+: 1091 5 9 man
+: 1099 5 7 ce 
+: 1107 5 6 te 
+: 1115 5 4 pue
+: 1123 2 6 do 
+* 1127 3 6 dar
+* 1132 17 2 ~
+- 1149 1163
+- 1163
+: 1184 6 5 Si 
+: 1192 2 5 me en
+: 1196 2 5 se
+: 1200 2 5 ñas 
+: 1204 2 4 con 
+: 1208 2 2 va
+: 1212 5 5 lor
+- 1217
+: 1221 5 5 La 
+: 1229 5 4 ver
+: 1237 5 2 dad 
+: 1245 5 4 que hay 
+: 1253 2 4 en 
+: 1257 18 4 ti
+- 1275
+: 1281 2 9 Ro
+* 1285 5 9 man
+* 1293 5 7 ce 
+: 1301 5 6 te 
+: 1309 5 4 pue
+: 1317 2 2 do 
+: 1321 15 6 dar
+- 1336
+: 1345 2 9 Ro
+: 1349 5 9 man
+: 1357 5 7 ce 
+: 1365 5 6 te 
+: 1373 5 4 pue
+: 1381 2 6 do 
+: 1385 3 6 dar
+: 1390 17 2 ~
+- 1407 1417
+- 1417
+: 1438 2 -1 Vi
+: 1442 2 -3 bran
+: 1446 2 -1 do en 
+: 1450 2 -3 mi 
+: 1454 2 -1 pe
+: 1458 5 -1 cho es
+: 1466 20 1 tá
+- 1486
+: 1501 2 2 Vi
+: 1505 2 2 go
+: 1509 2 2 ro
+: 1513 2 2 sa
+: 1517 4 2 men
+: 1523 5 2 te el 
+* 1530 3 4 a
+* 1535 3 5 mor 
+: 1541 3 5 que hay 
+: 1546 3 5 en 
+: 1551 2 7 mí
+- 1553
+: 1556 4 7 Pa
+: 1562 4 1 ra 
+: 1568 100 9 ti!
+E

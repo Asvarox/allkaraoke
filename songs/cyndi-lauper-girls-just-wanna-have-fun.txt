@@ -6,13 +6,15 @@
 #VIDEO:v=PIb6AZdTr-A
 #GENRE:Pop
 #LANGUAGE:English
-#GAP:23053,497753369946
+#GAP:23203,497753369946
 #EDITION:SingStar Party English
 #ALLKARAOKE_ID:cyndi-lauper-girls-just-wanna-have-fun
+#ALLKARAOKE_LASTUPDATE:2024-07-03T00:10:22.228Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Cyndi%20Lauper&cancion=Girls%20Just%20Wanna%20Have%20Fun
+#ALLKARAOKE_VOLUME:0,76
 : 16 2 70 I 
 : 18 4 70 come 
 : 22 4 70 home
