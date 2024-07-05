@@ -1,0 +1,236 @@
+#ARTIST:Carlos Carrillo
+#TITLE:Detective Conan
+#CREATOR:ZeroOmega21
+#BPM:315,69
+#YEAR:1998
+#VIDEO:v=D-76PIrJy3c
+#GENRE:Soundtrack
+#LANGUAGE:Spanish
+#GAP:14531,185688491874
+#ALLKARAOKE_ID:carlos-carrillo-detective-conan
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.214Z
+#ALLKARAOKE_ARTISTORIGIN:CL
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:0,91
+#P1:Detective Conan
+#MP3:Carlos Carrillo - Detective Conan.mp3
+#COVER:Carlos Carrillo - Detective Conan.jpg
+#MEDLEYSTARTBEAT:1104
+#MEDLEYENDBEAT:1358
+: 21 2 -3 un 
+: 25 1 4 de
+: 29 1 1 tec
+: 33 4 1 ti
+: 38 2 1 ve 
+: 41 4 1 muy
+: 46 1 2 ~ 
+: 49 2 4 ca
+: 54 8 4 paz,
+- 62 65
+- 65
+: 86 1 -3 un 
+: 90 2 4 jo
+: 93 2 1 ven 
+: 98 2 1 con 
+: 102 2 1 u
+: 106 3 1 na 
+: 110 3 -1 mi
+: 114 1 1 ~
+: 119 8 -3 sión,
+- 127 132
+- 132
+: 153 2 4 un 
+: 157 2 1 mu
+: 161 2 1 cha
+: 165 3 1 cho 
+: 170 3 1 muy
+: 174 3 2 ~ 
+: 178 2 4 au
+: 182 6 4 daz,
+- 188 193
+- 193
+: 214 2 -3 de 
+: 218 2 4 él 
+: 222 1 1 se 
+: 226 2 1 tra
+: 230 2 1 ta es
+: 234 1 1 ta 
+* 238 3 -1 can
+* 242 2 1 ~
+* 247 8 -3 ción,
+- 255 262
+- 262
+: 283 2 4 na
+: 287 2 1 die 
+: 291 1 1 le 
+: 295 1 1 po
+: 298 3 1 drá 
+: 302 2 2 en
+: 306 2 4 ga
+: 310 10 4 ñar,
+- 320 322
+- 322
+: 343 1 -3 su 
+: 346 3 4 ge
+: 350 2 1 nio 
+: 354 2 1 no 
+: 358 2 1 se 
+: 362 3 1 pue
+: 367 2 1 de 
+: 370 3 -1 du
+: 374 8 -3 dar,
+- 382 390
+- 390
+: 411 2 4 es
+: 415 1 1 te 
+: 419 1 1 chi
+: 423 1 1 co 
+: 427 2 1 com
+: 430 4 2 pro
+: 435 2 4 ba
+: 439 9 4 rá
+- 448 450
+- 450
+: 471 2 -3 que el 
+: 475 3 4 cri
+: 479 2 1 men 
+: 483 2 1 nun
+: 486 1 1 ca 
+: 491 3 1 pa
+: 495 3 -1 ga
+: 499 3 1 ~
+: 503 10 -3 rá.
+- 513 514
+- 514
+F 535 3 4 pa
+F 539 4 6 ~
+F 548 3 6 la
+F 556 2 6 la
+F 559 3 6 la
+- 562
+F 568 3 4 pa
+F 572 4 6 ~
+F 580 3 6 la
+F 588 2 6 la
+F 591 3 6 la
+- 594
+F 601 2 2 pa
+F 604 6 4 ~
+F 612 4 4 la
+F 620 3 4 la
+F 624 3 4 la
+- 627
+F 633 2 6 pa
+F 636 6 4 ~
+F 644 4 4 la
+F 652 2 4 la
+F 656 3 4 la
+- 659
+F 665 2 4 pa
+F 668 5 6 ~
+F 676 4 6 la
+F 684 3 6 la
+F 688 3 6 la
+- 691
+F 696 3 4 pa
+F 700 6 6 ~
+F 708 6 6 la
+F 716 3 6 la
+F 720 3 6 la
+- 723 778
+- 778
+: 799 2 4 en 
+: 803 2 4 es
+: 808 2 1 te 
+: 811 6 1 mun
+: 819 2 -1 do 
+: 822 2 -1 de 
+* 828 4 -1 som
+* 833 5 -3 bra y 
+* 839 4 -1 de 
+* 844 12 1 luz,
+- 856
+: 868 3 4 la 
+: 872 2 1 ver
+: 876 3 1 dad 
+: 884 5 -1 se 
+: 892 3 -1 lo
+: 897 5 -3 gra o
+: 903 3 -1 cul
+: 909 12 1 tar,
+- 921
+: 932 2 2 pe
+: 936 1 2 ro 
+: 941 5 2 siem
+: 948 4 1 pre 
+: 956 3 -1 sue
+: 960 2 1 ~
+: 964 3 -1 le 
+: 968 3 1 lle
+: 972 11 2 gar
+- 983
+: 996 3 2 al
+: 1001 2 2 guien 
+: 1005 5 2 que 
+: 1012 3 1 no 
+: 1016 3 1 la 
+: 1020 2 -1 de
+: 1023 4 1 ~
+: 1029 6 -1 ja 
+: 1036 6 -3 de 
+: 1044 4 -1 bus
+: 1052 1 -3 car,
+- 1053
+: 1056 2 4 en 
+: 1059 2 4 es
+: 1064 2 1 te 
+: 1067 6 1 mun
+: 1075 3 -1 do 
+: 1079 2 -1 de 
+: 1084 4 -1 som
+: 1089 5 -3 bra y 
+: 1095 4 -1 de 
+: 1100 12 1 luz,
+- 1112
+: 1124 3 4 la 
+: 1128 2 1 ver
+: 1132 3 1 dad 
+: 1140 5 -1 se 
+: 1148 3 -1 lo
+: 1153 5 -3 gra o
+: 1160 2 -1 cul
+: 1165 12 1 tar,
+- 1177
+: 1188 2 2 pe
+: 1192 1 2 ro 
+: 1197 5 2 siem
+: 1204 4 1 pre 
+: 1212 3 -1 sue
+: 1216 2 1 ~
+: 1220 2 -1 le 
+* 1225 2 1 lle
+* 1228 11 2 gar
+- 1239
+: 1252 3 2 al
+: 1257 2 2 guien 
+: 1261 5 2 que 
+: 1268 3 1 no 
+: 1272 3 1 la 
+: 1277 2 -1 de
+: 1280 3 1 ~
+: 1285 6 -1 ja 
+: 1292 6 -3 de 
+: 1300 5 -1 bus
+: 1308 5 -3 car,
+- 1313
+: 1317 5 2 que 
+: 1325 3 1 no
+: 1329 3 2 ~ 
+: 1333 6 1 la 
+: 1341 2 -1 de
+: 1344 3 1 ~
+: 1349 6 -1 ja 
+: 1357 6 -3 de 
+: 1365 4 -1 bus
+: 1373 31 -3 car.
+E

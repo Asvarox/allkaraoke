@@ -1,0 +1,159 @@
+#ARTIST:Sakura Card Captor
+#TITLE:Yo te atrapo, tú me atrapas
+#CREATOR:ZeroOmega21
+#BPM:255,54
+#YEAR:1998
+#VIDEO:v=sh59AvisoZ4
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:16392,11317210613
+#ALLKARAOKE_ID:sakura-card-captor-yo-te-atrapo-tu-me-atrapas
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:37.027Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:0,83
+#P1:Sakura Card Captor OP
+#MP3:Sakura Card Captor - Yo te atrapo, tú me atrapas (TV).mp3
+#COVER:Sakura Card Captor - Yo te atrapo, tú me atrapas (TV).jpg
+: 17 3 0 Yo 
+: 21 3 2 qui
+: 25 10 4 sie
+: 37 4 0 ra
+- 41
+: 49 3 0 que 
+: 53 3 2 su
+: 57 10 4 pie
+: 69 4 0 ras
+- 73
+: 81 3 0 cuan
+: 85 3 2 do ex
+: 89 10 4 tra
+: 101 4 0 ño
+- 105
+: 113 3 0 tu 
+: 117 3 2 pre
+: 121 6 3 sen
+: 129 3 2 cia a
+: 133 4 0 quí
+- 137
+: 145 3 0 Y 
+: 149 3 2 no 
+: 153 10 4 pue
+: 165 4 0 do
+- 169
+: 177 3 0 no 
+: 181 3 2 me a
+: 185 10 4 tre
+: 197 4 0 vo
+- 201
+: 209 3 0 es 
+: 213 3 2 que 
+: 217 4 9 ¡sí!
+- 221
+: 229 3 0 te 
+: 233 3 0 ve
+: 237 3 0 o y 
+: 241 3 0 no 
+: 245 3 0 sé 
+: 249 6 2 qué 
+: 257 3 0 de
+: 261 4 4 cir
+- 265
+: 273 7 12 Por 
+: 281 20 9 qué
+- 301
+: 305 7 12 Por 
+: 313 20 9 qué
+- 333
+: 345 3 7 quie
+: 349 3 7 ro 
+: 353 3 7 vo
+: 357 6 7 lar 
+: 365 3 4 con
+: 369 3 2 ti
+: 373 3 4 go 
+: 377 6 8 por 
+: 385 6 4 el 
+: 393 6 2 cie
+: 401 4 4 lo
+- 405
+: 409 3 2 te 
+: 413 3 0 da
+: 417 4 0 ré 
+: 425 3 2 mi 
+: 429 3 0 a
+: 433 4 0 mor
+- 437
+: 441 3 2 só
+: 445 3 0 lo a 
+: 449 4 0 ti
+- 453
+: 457 3 9 quie
+: 461 3 4 ro 
+: 465 6 4 vo
+: 473 48 7 lar
+- 521
+* 529 3 7 Yo 
+* 533 3 9 te a
+* 537 3 11 tra
+* 541 3 11 po, 
+: 545 3 11 tú 
+: 549 3 11 me a
+: 553 3 11 tra
+: 557 3 11 pas 
+: 561 3 11 pa
+: 565 3 11 ra 
+: 569 3 14 siem
+: 573 20 12 pre
+- 593
+: 601 6 11 lo 
+: 609 6 10 que 
+: 617 6 9 quie
+: 625 6 8 ras 
+: 633 1 7 pue
+: 635 1 7 des 
+: 637 3 7 pe
+: 641 6 5 dir
+: 649 4 2 me
+- 653
+: 657 3 7 lo 
+: 661 3 9 que a
+: 665 3 11 rras
+: 669 3 11 tras 
+: 673 3 11 es 
+: 677 3 11 só
+: 681 3 11 lo 
+: 685 3 11 cues
+: 689 3 11 tión 
+: 693 3 11 de 
+: 697 3 14 tiem
+: 701 21 12 po
+- 722
+: 729 1 11 Yo 
+: 731 1 11 te 
+: 733 1 11 se
+: 735 1 11 gui
+: 737 6 10 ré y 
+: 745 1 9 no 
+: 747 1 9 te 
+: 749 1 9 de
+: 751 1 9 ja
+: 753 1 8 ré
+- 754
+: 757 1 7 por
+: 759 1 4 que 
+: 761 3 0 te a
+: 765 3 0 mo, 
+: 769 3 4 te a
+: 773 3 4 mo, 
+: 777 3 7 te a
+: 781 3 7 mo 
+* 785 3 9 mi a
+* 789 26 12 mor
+- 815
+: 822 6 12 E
+: 830 6 12 res 
+: 838 6 12 el 
+: 846 6 12 me
+: 853 6 12 jor
+E

@@ -1,0 +1,222 @@
+#ARTIST:Adrián Barba
+#TITLE:Quiero gritar te amo
+#CREATOR:ZeroOmega21
+#BPM:286,18
+#YEAR:1995
+#VIDEO:v=V86x1_feLTo
+#LANGUAGE:Spanish
+#GAP:28754,12327905514
+#ALLKARAOKE_ID:adrian-barba-quiero-gritar-te-amo
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.205Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:142
+#ALLKARAOKE_VOLUME:0,75
+#P1:Quiero gritar te amo
+#MP3:Adrián Barba - Quiero gritar te amo.mp3
+#COVER:Adrián Barba - Quiero gritar te amo.jpg
+: 19 3 5 Bri
+: 23 3 4 llan
+: 27 10 5 te 
+: 39 5 4 res
+: 47 2 5 plan
+: 51 6 0 dor 
+: 59 3 -3 hay 
+: 63 3 -2 a
+: 67 6 0 quí
+- 73
+: 83 3 5 cuan
+: 87 3 4 do 
+: 91 3 4 vas 
+: 95 3 5 co
+: 99 10 4 rrien
+: 111 3 5 do 
+: 115 6 5 por 
+: 123 3 -5 la 
+: 127 3 -3 ciu
+: 131 6 -2 dad
+- 137
+: 147 3 2 pa
+: 151 3 0 ra 
+: 155 3 0 des
+: 159 3 2 can
+: 163 3 2 sar
+: 167 6 0 ~
+- 173
+: 183 3 -3 des
+: 187 3 -3 pués 
+: 191 3 -2 de un 
+: 195 3 0 gran 
+: 199 12 2 día 
+: 215 8 -1 de
+- 223
+: 231 6 2 prác
+: 239 3 0 ti
+: 243 8 0 ca
+- 251 256
+- 256
+* 275 3 5 y 
+* 279 3 4 no 
+* 283 3 4 sé 
+* 287 3 5 por 
+* 291 10 4 qué 
+* 303 3 5 ra
+* 307 6 0 zón, 
+* 315 3 -3 no 
+* 319 3 -2 lo 
+* 323 4 0 sé
+- 327
+: 339 3 5 yo 
+: 343 3 4 sien
+: 347 10 5 to es
+: 359 6 4 ta a
+: 367 3 5 trac
+: 371 6 5 ción 
+: 379 3 -3 por 
+: 383 8 -2 ti
+- 391
+: 403 3 2 nues
+: 407 6 0 tras 
+: 415 3 2 mi
+: 419 3 0 ~
+: 423 10 0 ra
+: 435 6 5 das
+- 441
+: 447 3 4 se 
+: 451 3 5 cru
+: 455 10 7 za
+: 467 4 5 ron 
+: 475 6 4 sin 
+: 483 3 5 con
+: 487 8 5 trol
+- 495
+: 503 3 5 No 
+: 507 3 7 te i
+: 511 3 9 rás 
+: 515 6 5 nun
+: 523 3 2 ca 
+* 527 4 5 ya,
+- 531
+* 539 3 5 te a
+* 543 3 4 ma
+* 547 6 5 ré
+- 553
+: 567 3 5 lo
+: 571 3 7 co es
+: 575 3 9 toy 
+: 579 6 5 por 
+: 587 3 2 tu a
+: 591 4 5 mor,
+- 595
+: 603 3 5 gri
+: 607 3 4 ta
+: 611 6 5 ré
+- 617
+: 627 3 0 el 
+: 631 3 5 mun
+: 635 3 7 do 
+* 639 3 9 sa
+: 643 8 5 brá
+- 651
+: 663 3 5 que 
+: 667 3 7 vi
+: 671 3 9 vi
+: 675 8 5 ré
+- 683
+: 695 4 5 lo
+: 701 4 5 co 
+: 707 3 7 por 
+: 711 32 9 ti
+- 743
+: 755 3 0 rom
+: 759 3 0 per 
+: 763 3 2 es
+: 767 3 5 ta 
+: 771 3 7 ba
+: 775 10 7 rre
+: 787 6 9 ra
+- 793
+: 799 3 7 sin 
+: 803 3 7 du
+: 807 10 7 dar
+: 819 4 9 lo
+- 823
+: 831 3 5 me 
+: 835 3 7 se
+: 839 3 9 pa
+: 843 3 7 ~
+: 847 3 7 ra
+: 851 3 5 ~ 
+: 855 3 5 de
+: 859 3 2 ~ 
+: 863 3 2 tu 
+: 867 3 0 a
+: 871 8 0 mor
+- 879
+: 887 3 0 y 
+: 891 3 2 que 
+: 895 3 4 to
+: 899 3 5 dos 
+: 903 3 5 se
+: 907 3 4 ~
+: 911 6 4 pan 
+: 919 6 5 que 
+: 927 3 9 me 
+: 931 3 7 gus
+: 935 3 9 ~
+: 939 8 7 tas
+- 947
+: 963 3 0 ma
+: 967 3 5 ña
+: 971 3 4 ~
+* 975 3 4 na el 
+: 979 6 5 sol 
+: 987 3 7 bri
+: 991 3 9 lla
+: 995 3 7 rá
+: 999 8 9 ~
+- 1007
+: 1011 3 0 a 
+: 1015 3 0 to
+: 1019 3 2 dos 
+: 1023 3 5 de
+: 1027 3 7 mos
+: 1031 10 7 tre
+: 1043 4 9 mos
+- 1047
+: 1055 3 7 que 
+: 1059 3 7 no hay 
+: 1063 10 7 na
+: 1075 4 9 da
+- 1079
+: 1087 3 5 que 
+: 1091 3 7 pu
+: 1095 3 9 die
+: 1099 3 7 ra 
+: 1103 3 7 se
+: 1107 3 5 pa
+: 1111 3 4 rar
+: 1115 3 0 ~
+: 1119 3 0 nos 
+: 1123 16 9 ya
+- 1139
+: 1151 3 9 só
+: 1155 3 9 lo 
+: 1159 6 9 pien
+: 1167 3 7 so en 
+: 1171 6 7 ti
+- 1177
+: 1187 3 7 lo 
+: 1191 6 7 gri
+: 1199 3 9 ta
+: 1203 8 5 ré
+- 1211
+: 1219 3 2 y 
+: 1223 3 2 por 
+: 1227 3 4 ti es
+: 1231 3 5 toy 
+: 1235 3 4 lo
+: 1239 3 2 ~
+: 1243 3 2 co 
+: 1247 6 4 de a
+: 1255 31 5 mor
+E

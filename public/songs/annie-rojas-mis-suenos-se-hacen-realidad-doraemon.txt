@@ -1,0 +1,252 @@
+#ARTIST:Annie Rojas
+#TITLE:Mis sueños se hacen realidad, Doraemon
+#CREATOR:ZeroOmega21
+#BPM:246,12
+#YEAR:2014
+#VIDEO:v=HQ9SoApxJ24
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:5,4870794734275705
+#ALLKARAOKE_ID:annie-rojas-mis-suenos-se-hacen-realidad-doraemon
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.206Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:1
+#MP3:Annie Rojas - Mis sueños se hacen realidad, Doraemon (TV).mp3
+#COVER:Annie Rojas - Mis sueños se hacen realidad, Doraemon (TV).jpg
+#MEDLEYSTARTBEAT:900
+#MEDLEYENDBEAT:1443
+F 9 1 0 Do
+F 11 1 0 ra
+F 13 2 0 e
+F 16 3 0 mon 
+F 22 2 0 El 
+F 25 2 0 Ga
+F 28 1 0 to 
+F 30 2 0 Cós
+F 33 2 0 mi
+F 36 2 0 co
+- 38 125
+- 125
+: 141 3 0 Al 
+: 146 2 0 ce
+: 149 3 2 rrar 
+: 154 2 2 los 
+: 157 3 4 o
+: 162 4 5 jos 
+: 170 6 0 al
+: 177 2 0 go a
+: 180 4 2 quí en 
+: 186 2 2 mi 
+: 189 3 4 men
+: 194 3 5 te
+- 197
+: 202 2 9 pue
+: 205 3 9 do i
+: 210 2 7 ma
+: 214 3 6 gi
+: 219 18 7 nar
+- 237 253
+- 253
+: 269 3 0 El 
+: 274 2 0 ma
+: 277 3 2 pa 
+* 282 2 2 de un 
+* 285 3 4 mun
+* 290 4 7 do 
+: 298 5 0 en 
+: 306 2 0 don
+: 309 3 2 de 
+: 314 2 2 mis 
+: 317 3 4 sue
+: 322 3 7 ños
+- 325
+: 330 2 10 pue
+: 333 3 10 do 
+: 338 2 9 rea
+: 341 3 7 li
+: 346 16 9 zar
+- 362
+F 365 2 0 El 
+F 369 1 0 Go
+F 371 2 0 rro
+F 375 2 0 cop
+F 379 2 0 te
+F 382 9 0 ro
+- 391
+: 397 2 0 Y 
+: 402 2 0 cru
+: 405 3 2 zan
+: 410 2 2 do el 
+: 413 3 4 cie
+: 418 4 5 lo 
+: 426 6 0 a 
+: 434 2 0 tra
+: 437 3 2 vés 
+: 442 2 2 del 
+: 445 3 4 tiem
+: 450 3 5 po
+- 453
+: 458 2 9 a 
+: 461 3 9 si
+: 466 1 7 tios 
+: 469 3 6 le
+: 474 5 7 ja
+: 482 5 2 nos 
+: 490 2 5 ir
+: 493 15 7 ~
+- 508
+: 514 2 2 La 
+: 517 3 4 puer
+: 522 2 2 ta 
+: 525 4 0 má
+: 530 2 0 gi
+: 533 4 2 ca 
+: 539 1 2 cru
+: 542 4 4 zan
+: 547 3 5 do
+- 550
+: 554 2 5 me ha
+: 558 5 7 rá 
+* 565 3 9 lle
+* 570 2 9 gar
+* 573 4 10 ~ 
+: 578 5 9 al 
+: 585 2 7 mo
+: 589 5 7 men
+: 597 30 5 to
+- 627 637
+- 637
+: 653 6 2 Si al 
+: 661 5 5 cre
+: 669 6 4 cer 
+: 677 6 5 lle
+: 685 5 7 go a ol
+: 693 4 5 vi
+: 698 11 0 dar
+- 709
+: 717 6 -2 cuan 
+: 725 6 2 fan
+: 733 6 0 tás
+: 741 6 -2 ti
+: 749 6 -3 co es 
+: 757 4 -2 so
+: 762 11 0 ñar
+- 773
+: 781 5 2 pen
+: 789 6 5 sa
+: 797 6 4 ré 
+: 805 6 2 en 
+* 813 6 0 la e
+* 821 3 7 mo
+* 826 9 5 ción
+- 835
+: 841 2 5 que un 
+: 845 5 7 sue
+: 853 5 5 ño 
+: 861 6 4 tra
+: 869 5 2 e al 
+: 877 6 4 co
+: 885 3 5 ra
+: 890 11 7 zón
+- 901
+: 909 2 9 Sha
+: 912 1 9 la
+: 914 2 9 la
+: 917 3 9 la
+: 922 3 9 la
+- 925
+* 930 2 0 A
+* 933 3 5 quí en 
+* 938 2 9 mi 
+: 941 3 9 men
+: 946 2 10 te es
+: 949 4 9 ta
+: 955 10 7 rá
+- 965
+: 973 4 7 y al 
+: 978 2 7 per
+: 981 4 7 du
+: 986 3 7 rar 
+: 994 1 0 mis 
+: 997 3 4 sue
+: 1002 2 7 ños 
+: 1005 4 10 bri
+: 1010 2 9 ~
+: 1013 3 7 lla
+: 1018 2 7 rán
+: 1021 10 9 ~
+- 1031
+* 1037 2 9 Do
+* 1040 1 9 ra
+* 1042 2 9 e
+* 1045 4 9 mon
+- 1049
+: 1058 2 9 Su 
+: 1061 3 10 bol
+: 1066 2 12 so 
+: 1069 5 12 má
+: 1077 3 10 gi
+: 1082 6 10 co 
+: 1090 1 7 los
+: 1092 3 9 ~ 
+: 1097 2 10 con
+: 1101 5 9 vier
+: 1109 6 7 te en 
+: 1117 2 5 re
+: 1120 4 5 a
+: 1125 4 4 li
+: 1131 2 4 dad
+: 1134 22 5 ~
+- 1156
+: 1165 2 9 Sha
+: 1168 1 9 la
+: 1170 2 9 la
+: 1173 3 9 la
+: 1178 3 9 la
+- 1181
+: 1186 2 0 Can
+: 1189 3 5 ta 
+: 1194 2 9 con
+: 1197 3 9 mi
+: 1202 4 10 go a
+: 1210 2 9 sí
+: 1213 9 7 ~
+- 1222
+: 1229 3 7 te 
+: 1234 2 7 quie
+: 1237 4 7 ro 
+: 1242 4 7 ver, 
+* 1250 2 0 por 
+* 1253 3 4 siem
+* 1258 2 7 pre 
+: 1261 3 10 jun
+: 1265 3 9 ~
+: 1269 4 7 to a 
+: 1274 2 7 mí
+: 1277 9 9 ~
+- 1286
+: 1293 2 9 Do
+: 1296 1 9 ra
+: 1298 2 9 e
+: 1301 5 9 mon
+- 1306
+: 1314 2 9 So
+: 1317 4 10 lo en 
+: 1322 2 12 tu 
+: 1325 6 12 mun
+: 1333 3 10 do 
+: 1338 6 10 sé 
+: 1346 2 7 que 
+* 1349 3 9 al 
+* 1353 3 10 so
+* 1357 6 9 ñar
+- 1363
+: 1373 6 7 mis 
+: 1389 7 5 sue
+: 1397 5 4 ños 
+: 1406 5 5 lo
+: 1413 3 7 gra
+: 1418 2 4 ré
+: 1421 31 5 ~
+E

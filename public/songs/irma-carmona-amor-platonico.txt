@@ -1,0 +1,198 @@
+#ARTIST:Irma Carmona
+#TITLE:Amor platónico
+#CREATOR:ZeroOmega21
+#BPM:277,18
+#YEAR:1997
+#VIDEO:v=2mZHyLgojHU
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:13110,903744858937
+#ALLKARAOKE_ID:irma-carmona-amor-platonico
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.220Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_VOLUME:0,75
+#P1:Ranma Ending 1
+#COVER:Irma Carmona - Amor platónico (TV) [CO].jpg
+#MP3:Irma Carmona - Amor platónico (TV).mp3
+: 18 3 0 Sue
+: 22 2 2 ño 
+: 26 2 4 que 
+: 29 7 2 tú
+- 36
+: 51 3 1 e
+: 55 1 2 res 
+: 58 2 4 di
+: 62 3 2 fe
+: 66 3 4 ren
+: 71 5 2 te
+- 76
+: 82 5 4 y 
+: 88 5 7 que a 
+: 95 2 7 mi 
+: 99 2 2 la
+: 103 2 -1 do 
+: 107 3 2 de 
+: 111 2 4 la 
+: 114 7 4 ma
+: 122 3 3 no
+: 127 3 2 ~ 
+: 131 7 2 vas
+- 138
+: 147 2 0 no 
+: 150 3 3 guar
+: 154 3 4 da
+: 158 6 2 ré
+- 164
+: 178 3 -1 más 
+: 182 2 2 es
+: 186 2 2 te 
+: 190 3 3 se
+: 194 2 4 cre
+: 198 3 2 to
+- 201
+: 209 4 4 de
+: 215 3 7 bo 
+: 222 3 7 sa
+: 226 2 4 ber 
+: 232 3 2 si un 
+: 236 2 0 dí
+: 239 2 2 a 
+: 243 6 4 me a
+: 251 7 2 ma
+: 259 6 2 rás.
+- 265
+: 274 10 4 Cuan
+: 286 5 7 do al 
+: 293 10 7 fin 
+: 304 2 7 en
+: 307 6 9 cuen
+: 314 6 6 tres 
+: 323 10 2 paz,
+- 333
+: 338 3 4 y 
+: 343 4 7 tus 
+: 349 4 7 pro
+: 355 2 4 ble
+: 358 3 2 mas 
+: 363 2 -1 pue
+: 366 3 2 das 
+: 370 7 4 re
+: 379 6 7 sol
+: 387 8 7 ver
+- 395
+: 402 10 4 yo 
+: 415 2 7 sé 
+: 419 9 7 que 
+: 431 1 7 des
+: 435 7 9 cu
+: 443 6 6 bri
+: 451 9 2 rás
+- 460
+: 467 3 4 cuan
+: 471 4 7 to 
+: 477 4 7 te 
+: 483 4 7 pue
+: 488 5 4 do 
+: 494 4 7 que
+: 499 4 9 rer
+: 505 23 9 ~.
+- 528 536
+- 536
+: 554 3 11 Ran
+: 558 3 9 ma 
+: 562 4 7 ven 
+: 569 3 4 a 
+: 574 13 7 mí
+- 587
+: 594 1 2 yo 
+: 596 1 4 te 
+: 598 1 4 quie
+: 600 1 4 ro 
+: 602 2 2 ver 
+: 606 3 -1 tran
+: 610 3 2 qui
+: 614 7 4 lo
+- 621
+: 627 3 11 ven 
+: 631 6 9 a 
+: 639 11 7 mí
+- 650
+: 658 1 9 no 
+: 660 1 9 te 
+: 662 1 9 de
+: 664 1 9 bes 
+: 666 3 9 preo
+: 670 2 11 cu
+: 674 6 9 par
+- 680
+: 683 2 11 Ran
+: 686 3 9 ma 
+: 690 4 7 ven 
+: 697 3 4 a 
+: 702 11 7 mí
+- 713
+: 722 1 2 en 
+: 724 1 4 mis 
+: 726 2 4 bra
+: 729 1 4 zos 
+: 732 2 2 hay 
+: 735 2 -1 a
+: 739 3 2 si
+: 743 7 4 lo,
+- 750
+* 755 3 11 ven 
+* 759 6 9 a 
+* 767 9 7 mí
+- 776
+: 779 2 7 de
+: 783 3 7 ja 
+: 788 2 4 de 
+: 792 4 7 pe
+: 799 24 9 nar.
+- 823 833
+- 833
+: 851 6 7 De 
+: 859 4 4 los 
+: 867 6 2 dos 
+: 875 3 4 que e
+: 880 5 7 xis
+: 887 5 7 ten 
+: 894 3 7 en 
+: 899 6 11 Ran
+: 906 5 9 ma
+- 911
+: 916 5 7 si 
+: 923 5 4 lo 
+: 931 3 2 to
+: 935 5 4 man 
+: 948 8 7 con 
+: 960 5 11 cal
+: 967 3 9 ma
+- 970
+* 979 4 7 y 
+* 987 3 4 si es
+* 995 3 2 cu
+* 1001 5 4 chan 
+* 1007 7 7 lo 
+* 1016 6 7 que 
+* 1023 2 7 les 
+* 1027 6 11 di
+* 1035 4 9 go,
+- 1039
+: 1043 6 7 van 
+: 1052 6 4 a 
+: 1059 3 2 ver 
+: 1063 6 4 que 
+: 1075 10 7 en 
+: 1087 7 11 mi al
+: 1096 42 9 ma
+- 1138
+* 1144 2 11 ha
+* 1147 2 11 y a
+* 1151 6 11 mor 
+: 1159 4 0 pa
+: 1164 3 2 ra 
+: 1168 2 4 los 
+: 1172 58 7 dos.
+E
