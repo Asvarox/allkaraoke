@@ -22,7 +22,7 @@ if (!customCert) {
 export default defineConfig({
   plugins: [
     wyw({
-      include: ['**/*.{ts,tsx}'],
+      include: ['src/**/*.{ts,tsx}'],
       babelOptions: {
         plugins: [
           ['@linaria/interop', { library: 'styled-components' }],
