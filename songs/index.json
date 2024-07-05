@@ -1765,6 +1765,59 @@
     "local": false
   },
   {
+    "id": "adrian-barba-el-poder-nuestro-es",
+    "title": "El poder nuestro es",
+    "artist": "Adrián Barba",
+    "video": "arEKVepnmEI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 341.37,
+    "gap": 19639.366376658756,
+    "year": "1995",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.202Z",
+    "genre": "Other",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "El Poder Nuestro Es",
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adrianbarbaelpodernuestroes",
+    "local": false
+  },
+  {
+    "id": "adrian-barba-quiero-gritar-te-amo",
+    "title": "Quiero gritar te amo",
+    "artist": "Adrián Barba",
+    "video": "V86x1_feLTo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 286.18,
+    "gap": 28754.12327905514,
+    "year": "1995",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.205Z",
+    "realBpm": 142,
+    "volume": 0.75,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Quiero gritar te amo",
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adrianbarbaquierogritarteamo",
+    "local": false
+  },
+  {
     "id": "aerosmith-crazy",
     "title": "Crazy",
     "artist": "Aerosmith",
@@ -4532,6 +4585,32 @@
     "local": false
   },
   {
+    "id": "annie-rojas-mis-suenos-se-hacen-realidad-doraemon",
+    "title": "Mis sueños se hacen realidad, Doraemon",
+    "artist": "Annie Rojas",
+    "video": "HQ9SoApxJ24",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 246.12,
+    "gap": 5.4870794734275705,
+    "year": "2014",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.206Z",
+    "genre": "Anime",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "annierojasmissuenossehacenrealidaddoraemon",
+    "local": false
+  },
+  {
     "id": "anselmo-ralph-unica-mulher",
     "title": "Única Mulher",
     "artist": "Anselmo Ralph",
@@ -6396,6 +6475,33 @@
     ],
     "tracksCount": 1,
     "search": "avamaxsalt",
+    "local": false
+  },
+  {
+    "id": "ava-max-sweet-but-psycho",
+    "title": "Sweet But Psycho",
+    "artist": "Ava Max",
+    "video": "WXBHCQYxwr0",
+    "language": [
+      "English"
+    ],
+    "bpm": 266,
+    "gap": 14404.962406015038,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-05T00:10:36.210Z",
+    "genre": "Pop",
+    "realBpm": 133,
+    "volume": 0.74,
+    "author": "aac",
+    "tracks": [
+      {
+        "name": "Sweet But Psycho ",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avamaxsweetbutpsycho",
     "local": false
   },
   {
@@ -13687,6 +13793,33 @@
     ],
     "tracksCount": 1,
     "search": "carlosbauteymartasanchezcolgandoentusmanos",
+    "local": false
+  },
+  {
+    "id": "carlos-carrillo-detective-conan",
+    "title": "Detective Conan",
+    "artist": "Carlos Carrillo",
+    "video": "D-76PIrJy3c",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 315.69,
+    "gap": 14531.185688491874,
+    "year": "1998",
+    "artistOrigin": "CL",
+    "lastUpdate": "2024-07-05T00:10:36.214Z",
+    "genre": "Soundtrack",
+    "realBpm": 120,
+    "volume": 0.91,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Detective Conan",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "carloscarrillodetectiveconan",
     "local": false
   },
   {
@@ -23048,6 +23181,60 @@
     "local": false
   },
   {
+    "id": "emilia-rodriguez-lupica-damelo-damelo-damelo",
+    "title": "Dámelo, dámelo, dámelo",
+    "artist": "Emilia Rodríguez Lupica",
+    "video": "EQXEUWh4Tnk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 294.12,
+    "gap": 5562.00815993472,
+    "year": "2006",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-07-05T00:10:36.215Z",
+    "genre": "Anime",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "YAT! - Ending",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "emiliarodriguezlupicadamelodamelodamelo",
+    "local": false
+  },
+  {
+    "id": "emilia-rodriguez-lupica-heaven",
+    "title": "Heaven",
+    "artist": "Emilia Rodríguez Lupica",
+    "video": "05We9fL6pKY",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 257.94,
+    "gap": 408.3979995347755,
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-05T00:10:36.216Z",
+    "genre": "Anime",
+    "realBpm": 119,
+    "volume": 0.96,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "YAT OP",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "emiliarodriguezlupicaheaven",
+    "local": false
+  },
+  {
     "id": "eminem-feat-dido-stan",
     "title": "Stan",
     "artist": "Eminem feat. Dido",
@@ -26251,6 +26438,33 @@
     ],
     "tracksCount": 1,
     "search": "fxlachata",
+    "local": false
+  },
+  {
+    "id": "gabriela-vega-grip",
+    "title": "Grip!",
+    "artist": "Gabriela Vega",
+    "video": "Nw7bgspOv6A",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 480.14,
+    "gap": 23502.291581622027,
+    "year": "2002",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.218Z",
+    "videoGap": 4,
+    "realBpm": 110,
+    "volume": 0.88,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Inuyasha OP4",
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gabrielavegagrip",
     "local": false
   },
   {
@@ -30730,6 +30944,33 @@
     "local": false
   },
   {
+    "id": "irma-carmona-amor-platonico",
+    "title": "Amor platónico",
+    "artist": "Irma Carmona",
+    "video": "2mZHyLgojHU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 277.18,
+    "gap": 13110.903744858937,
+    "year": "1997",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.220Z",
+    "genre": "Anime",
+    "realBpm": 110,
+    "volume": 0.75,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Ranma Ending 1",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "irmacarmonaamorplatonico",
+    "local": false
+  },
+  {
     "id": "irohasasaki-feat-miku-hatsune-moon",
     "title": "Moon",
     "artist": "iroha(sasaki) feat. Miku Hatsune",
@@ -31435,6 +31676,38 @@
     "local": false
   },
   {
+    "id": "jason-paige-pokemon-theme",
+    "title": "Pokémon Theme",
+    "artist": "Jason Paige",
+    "video": "fCkeLBGSINs",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.8,
+    "gap": 6548.8844621513945,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-05T00:10:36.225Z",
+    "edition": "[Duet]-Songs",
+    "genre": "Themes",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "leaby",
+    "tracks": [
+      {
+        "name": "Jason Paige",
+        "start": 13
+      },
+      {
+        "name": "Choir",
+        "start": 357
+      }
+    ],
+    "tracksCount": 2,
+    "search": "jasonpaigepokemontheme",
+    "local": false
+  },
+  {
     "id": "javiera-mena-luz-de-piedra-de-luna",
     "title": "Luz de piedra de luna",
     "artist": "Javiera Mena",
@@ -31878,6 +32151,33 @@
     ],
     "tracksCount": 1,
     "search": "jessicasimpsoniwannaloveyouforever",
+    "local": false
+  },
+  {
+    "id": "jessica-toledo-mi-manana",
+    "title": "Mi mañana",
+    "artist": "Jessica Toledo",
+    "video": "AoSxkMoN5mo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 257.79,
+    "gap": 350.82276271383705,
+    "year": "2002",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.227Z",
+    "genre": "Anime",
+    "realBpm": 130,
+    "volume": 0.75,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Digimon 3 Ending ",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jessicatoledomimanana",
     "local": false
   },
   {
@@ -41810,6 +42110,32 @@
     "local": false
   },
   {
+    "id": "maho-do-ojamajo-carnival",
+    "title": "Ojamajo Carnival!!",
+    "artist": "MAHO-Do",
+    "video": "9CioAYtz4iM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 294.16,
+    "gap": 15002.146858852326,
+    "year": "1999",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-05T00:10:36.229Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Magical Doremi OP1",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mahodoojamajocarnival",
+    "local": false
+  },
+  {
     "id": "majka-jezowska-a-ja-wole-moja-mame",
     "title": "A ja wolę moją mamę",
     "artist": "Majka Jeżowska",
@@ -41861,6 +42187,35 @@
     ],
     "tracksCount": 1,
     "search": "majorlazerdjsnakefeatmoleanon",
+    "local": false
+  },
+  {
+    "id": "malice-mizer-gardenia",
+    "title": "Gardenia",
+    "artist": "Malice Mizer",
+    "video": "znSN1qwEXBg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 299.7,
+    "gap": 33300,
+    "year": "2001",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-05T00:10:36.231Z",
+    "genre": "Visual Kei",
+    "realBpm": 150,
+    "volume": 0.7,
+    "author": "LinxStrife",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=linxstrife",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Malice+Mizer",
+    "tracks": [
+      {
+        "name": "malice mizer",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "malicemizergardenia",
     "local": false
   },
   {
@@ -42797,6 +43152,32 @@
     ],
     "tracksCount": 1,
     "search": "mariadejesusterannomehagassentirunasalvaje",
+    "local": false
+  },
+  {
+    "id": "maria-elisa-gallegos-suena-mas",
+    "title": "Sueña más",
+    "artist": "María Elisa Gallegos",
+    "video": "y3xQwuUA_ws",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 247.32,
+    "gap": 1038.597282872392,
+    "year": "2020",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:36.232Z",
+    "realBpm": 118,
+    "volume": 0.75,
+    "author": "Rubn4",
+    "tracks": [
+      {
+        "name": "Sueña más",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mariaelisagallegossuenamas",
     "local": false
   },
   {
@@ -49772,6 +50153,33 @@
     "local": false
   },
   {
+    "id": "oar-love-and-memories",
+    "title": "Love And Memories",
+    "artist": "O.A.R.",
+    "video": "rpea4Nlzs1U",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 16066.393442622952,
+    "year": "2005",
+    "lastUpdate": "2024-07-05T00:10:36.234Z",
+    "genre": "Rock",
+    "realBpm": 122,
+    "volume": 0.85,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1236",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "oarloveandmemories",
+    "local": false
+  },
+  {
     "id": "oasis-dont-look-back-in-anger",
     "title": "Don't Look Back in Anger",
     "artist": "Oasis",
@@ -53476,6 +53884,38 @@
     ],
     "tracksCount": 1,
     "search": "pnkfeatlilyallentruelove",
+    "local": false
+  },
+  {
+    "id": "pnk-feat-nate-ruess-just-give-me-a-reason",
+    "title": "Just Give Me A Reason",
+    "artist": "P!nk feat. Nate Ruess",
+    "video": "OpQFFLBMEPI",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.45,
+    "gap": 9773.88439534425,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-05T00:10:37.026Z",
+    "genre": "Pop",
+    "realBpm": 95,
+    "volume": 0.76,
+    "author": "ZomSongs",
+    "authorUrl": "usdb.animux.de/?link=profil&id=94036",
+    "tracks": [
+      {
+        "name": "P!nk",
+        "start": 17
+      },
+      {
+        "name": "Nate Ruess",
+        "start": 1072
+      }
+    ],
+    "tracksCount": 2,
+    "search": "pnkfeatnateruessjustgivemeareason",
     "local": false
   },
   {
@@ -58677,6 +59117,33 @@
     ],
     "tracksCount": 1,
     "search": "sailormoonsailormoonopening",
+    "local": false
+  },
+  {
+    "id": "sakura-card-captor-yo-te-atrapo-tu-me-atrapas",
+    "title": "Yo te atrapo, tú me atrapas",
+    "artist": "Sakura Card Captor",
+    "video": "sh59AvisoZ4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 255.54,
+    "gap": 16392.11317210613,
+    "year": "1998",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-07-05T00:10:37.027Z",
+    "genre": "Anime",
+    "realBpm": 130,
+    "volume": 0.83,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Sakura Card Captor OP",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sakuracardcaptoryoteatrapotumeatrapas",
     "local": false
   },
   {
@@ -71115,6 +71582,33 @@
     ],
     "tracksCount": 1,
     "search": "twicewhatislove",
+    "local": false
+  },
+  {
+    "id": "two-mix-just-communication",
+    "title": "Just Communication",
+    "artist": "Two-Mix",
+    "video": "oNJ4aBoRipg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 263.76,
+    "gap": 11146.342129208371,
+    "year": "1995",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-05T00:10:37.027Z",
+    "genre": "Anime",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "ZeroOmega21",
+    "tracks": [
+      {
+        "name": "Just Communication",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "twomixjustcommunication",
     "local": false
   },
   {

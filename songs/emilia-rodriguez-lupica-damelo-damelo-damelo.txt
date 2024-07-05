@@ -1,0 +1,246 @@
+#ARTIST:Emilia Rodríguez Lupica
+#TITLE:Dámelo, dámelo, dámelo
+#CREATOR:ZeroOmega21
+#BPM:294,12
+#YEAR:2006
+#VIDEO:v=EQXEUWh4Tnk
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:5562,00815993472
+#ALLKARAOKE_ID:emilia-rodriguez-lupica-damelo-damelo-damelo
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.215Z
+#ALLKARAOKE_ARTISTORIGIN:AR
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_VOLUME:1
+#P1:YAT! - Ending
+#MP3:Emilia Rodríguez Lupica - Dámelo, dámelo, dámelo (TV).mp3
+#COVER:Emilia Rodríguez Lupica - Dámelo, dámelo, dámelo (TV).jpg
+#MEDLEYSTARTBEAT:1056
+#MEDLEYENDBEAT:1492
+: 20 2 6 Dá
+: 24 3 8 me
+: 28 2 10 lo, 
+: 32 2 6 dá
+: 36 3 8 me
+: 40 2 10 lo, 
+: 44 3 6 dá
+: 48 3 8 me
+: 52 2 10 lo, 
+: 56 2 6 da
+: 60 2 8 me 
+: 64 2 10 tu 
+: 68 3 6 co
+: 72 2 8 ra
+: 76 5 10 zón
+- 81
+: 92 5 8 y 
+: 100 6 8 tu al
+: 108 3 8 ma 
+: 113 6 11 sin 
+: 120 2 11 nin
+: 124 3 11 gún 
+: 128 2 11 es
+: 132 3 11 cu
+: 136 6 10 do
+- 142
+: 148 2 6 Com
+: 152 2 8 pren
+: 156 2 10 de, 
+: 160 3 6 ma
+: 164 3 8 du
+: 168 2 10 ra, 
+: 172 3 6 no 
+: 176 2 8 vez 
+: 180 2 10 que 
+: 184 2 6 no 
+: 188 3 8 pue
+: 192 2 10 des 
+: 196 2 6 en
+: 200 2 8 ten
+: 204 5 10 der
+- 209
+: 220 6 8 lo 
+: 228 6 8 mu
+: 236 3 8 cho 
+: 241 9 11 que 
+: 252 2 11 yo 
+* 256 2 11 te 
+* 260 3 11 quie
+* 264 6 10 ro
+- 270
+: 277 2 8 Mués
+: 281 3 6 tra
+: 285 2 5 me 
+: 289 6 6 tu 
+: 297 3 5 la
+: 301 2 1 do hu
+: 305 6 5 ma
+: 313 19 3 no
+- 332
+: 340 2 6 tu 
+: 344 3 6 la
+: 348 3 6 do 
+* 352 5 8 más 
+: 360 2 6 na
+: 364 3 8 tu
+: 368 3 10 ral
+- 371
+: 376 3 10 y 
+: 380 3 8 de
+: 384 3 6 ja 
+: 388 3 8 ya 
+: 392 3 10 de 
+: 396 3 11 fin
+: 401 70 10 gir
+- 471 520
+- 520
+: 540 5 3 El 
+: 548 6 1 ve
+: 556 2 6 ra
+: 560 6 3 no, 
+: 576 2 3 pa
+: 580 3 3 só 
+: 584 2 5 o
+: 588 3 6 tra 
+: 592 4 8 vez
+- 596
+* 604 6 5 te 
+* 612 6 1 vi 
+* 620 2 6 cre
+* 624 6 5 cer 
+: 640 2 5 y 
+: 644 3 5 me i
+: 648 2 6 lu
+: 652 2 5 sio
+: 656 5 3 ne
+- 661
+: 668 5 3 Y 
+: 676 5 -1 lue
+: 684 2 6 go 
+: 688 7 3 vi
+- 695
+: 704 2 3 que 
+: 708 3 3 tú 
+: 712 2 5 no en
+: 716 2 6 tien
+: 720 2 5 des 
+: 724 5 6 lo 
+: 731 2 5 que 
+: 736 5 5 sien
+: 744 1 5 to 
+: 746 4 6 a
+: 752 25 5 ún
+- 777
+: 788 12 -1 O 
+: 804 13 6 yo 
+: 820 6 5 sien
+: 828 2 3 to 
+: 832 6 1 que 
+* 840 6 -1 tú 
+: 848 2 -1 no
+: 851 8 -2 ~ 
+: 868 6 8 me a
+: 876 3 5 ma
+: 881 25 6 rás
+- 906
+: 916 6 3 y 
+: 924 2 5 no a
+: 928 5 6 guan
+: 936 2 5 to 
+: 940 3 3 más 
+: 948 5 3 es
+: 956 2 5 ta 
+: 960 6 6 da
+: 968 2 5 ga 
+: 972 2 3 que
+- 974
+: 980 7 8 tu 
+: 988 3 8 a
+: 993 17 8 mor
+- 1010
+: 1016 2 10 me 
+: 1020 2 8 cla
+: 1024 3 6 va en 
+: 1028 2 8 el 
+: 1032 2 6 co
+: 1036 2 8 ra
+: 1040 25 10 zón
+- 1065
+: 1076 3 6 Dá
+: 1080 3 8 me
+: 1084 2 10 lo, 
+: 1088 3 6 dá
+: 1092 3 8 me
+: 1096 2 10 lo, 
+: 1100 3 6 dá
+: 1104 3 8 me
+: 1108 2 10 lo, 
+: 1112 3 6 da
+: 1116 3 8 me 
+: 1120 2 10 tu 
+: 1124 3 6 co
+: 1128 2 8 ra
+: 1133 4 10 zón
+- 1137
+: 1148 5 8 com
+: 1156 6 8 prén
+: 1164 2 8 de
+: 1168 6 11 me 
+* 1176 3 11 ca
+* 1180 2 11 ri
+* 1184 2 11 ño 
+* 1188 3 11 mí
+* 1192 5 10 o
+- 1197
+: 1204 2 6 Al 
+: 1208 2 8 fin 
+: 1212 2 10 de es
+: 1216 3 6 te 
+: 1220 3 8 mun
+: 1224 2 10 do 
+: 1228 2 6 te 
+: 1232 2 8 se
+: 1236 2 10 guí 
+: 1240 2 6 sin 
+: 1244 2 8 si
+: 1248 2 10 quie
+: 1252 3 6 ra 
+: 1256 3 8 du
+: 1260 5 10 dar
+- 1265
+: 1276 6 8 co
+: 1284 6 8 mo 
+: 1292 2 8 no 
+: 1296 5 11 te ha 
+: 1304 2 11 se
+: 1308 2 11 gui
+: 1312 2 11 do 
+: 1316 2 11 na
+: 1320 5 10 die
+- 1325
+* 1332 2 8 Y 
+* 1336 3 6 se
+* 1340 3 5 gui
+* 1344 6 6 ré 
+: 1352 2 5 es
+: 1356 2 1 pe
+: 1360 2 3 ran
+: 1363 3 5 ~
+: 1368 19 3 do
+- 1387
+: 1395 3 6 que a
+: 1400 2 6 bras 
+: 1404 2 6 los 
+: 1408 5 8 o
+: 1416 1 6 jos 
+: 1420 2 8 por 
+: 1424 2 10 mí
+- 1426
+: 1432 3 10 y 
+: 1436 3 8 ve
+: 1440 2 6 as 
+* 1444 3 8 to
+* 1448 3 10 do 
+: 1452 3 11 mi a
+: 1456 56 10 mor
+E

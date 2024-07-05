@@ -1,0 +1,225 @@
+#ARTIST:Jessica Toledo
+#TITLE:Mi mañana
+#CREATOR:ZeroOmega21
+#BPM:257,79
+#YEAR:2002
+#VIDEO:v=AoSxkMoN5mo
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:350,82276271383705
+#ALLKARAOKE_ID:jessica-toledo-mi-manana
+#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.227Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:0,75
+#P1:Digimon 3 Ending 
+#MP3:Jessica Toledo - Mi mañana (TV).mp3
+#COVER:Jessica Toledo - Mi mañana (TV).jpg
+: 17 5 14 Va
+: 24 5 12 mos
+- 29
+: 38 2 11 A un 
+: 42 2 11 si
+: 45 2 9 tio 
+: 48 2 7 que 
+: 51 2 9 no es
+: 55 4 11 tá en 
+: 61 4 12 el 
+: 68 4 11 ma
+: 74 6 9 pa
+- 80
+: 90 2 9 No im
+: 94 2 9 por
+: 97 2 7 ta 
+: 100 2 6 si 
+: 103 2 7 no 
+: 107 4 9 hay 
+: 113 4 7 di
+: 120 4 6 ne
+: 126 6 7 ro
+- 132
+: 141 2 11 Si hay 
+: 145 2 11 nu
+: 148 2 9 bes 
+: 151 2 7 gri
+: 154 2 9 ses 
+: 158 4 11 en 
+: 164 4 12 el 
+: 171 4 11 cie
+: 177 6 9 lo
+- 183
+: 192 2 9 Ya 
+: 196 2 9 sa
+: 199 2 7 bes 
+: 202 2 9 que ha
+: 206 24 11 cer
+- 230
+: 244 2 4 Cons
+: 247 2 4 tru
+: 250 4 4 ye hoy 
+: 256 2 4 tu 
+: 260 4 4 rea
+: 266 2 2 li
+: 269 12 2 dad
+- 281
+: 295 2 -1 La 
+: 298 2 4 puer
+: 301 2 4 ta 
+: 304 2 4 de 
+: 307 2 4 la 
+: 311 4 6 men
+: 317 2 7 te 
+: 320 5 6 se a
+: 327 4 2 bre
+- 331
+: 337 4 2 To
+: 343 4 0 do 
+: 350 4 -1 se 
+: 356 1 0 ve
+: 359 5 0 rá 
+* 372 7 4 al 
+: 381 5 2 ins
+* 388 7 0 tan
+* 398 16 -1 te
+- 414 432
+- 432
+: 449 2 4 Ya 
+: 452 4 4 nun
+: 458 2 4 ca 
+: 461 2 4 te 
+: 465 5 4 per
+: 472 1 2 de
+: 475 8 2 rás
+- 483 484
+- 484
+: 501 2 4 Con
+: 504 5 4 fí
+: 510 4 4 a en 
+: 516 4 6 tu in
+: 522 2 7 tui
+: 525 7 6 ción
+- 532
+: 539 2 2 Hay 
+: 542 4 2 mun
+: 548 2 0 dos 
+: 551 6 4 tan 
+* 560 5 11 her
+* 567 4 9 mo
+* 573 4 7 sos 
+: 580 4 6 que 
+: 586 4 7 co
+: 593 14 6 no
+: 611 2 4 ce
+: 615 18 4 rás
+- 633
+: 644 9 4 Mun
+: 657 9 6 dos 
+: 670 4 7 con 
+: 676 4 6 mil 
+: 683 4 4 jue
+: 689 4 11 gos 
+: 696 6 11 vas 
+: 705 6 9 a 
+: 714 4 7 te
+: 721 15 9 ner
+- 736
+: 747 10 2 Cer
+: 760 6 4 ca, 
+: 772 5 6 más 
+: 779 4 2 cer
+: 785 4 6 ca 
+: 791 4 9 de 
+: 798 7 9 lo 
+: 808 6 7 que i
+: 817 4 6 ma
+: 823 10 7 gi
+: 836 5 6 nas
+- 841
+: 849 4 4 Pue
+: 855 2 6 de 
+: 859 8 7 ser, 
+: 875 4 6 pue
+: 881 2 7 de 
+: 885 8 9 ser
+- 893
+: 900 4 11 Só
+: 906 2 4 lo 
+* 910 4 11 de
+* 916 4 12 bes 
+* 922 2 11 se
+* 925 2 11 guir
+: 928 26 9 ~
+- 954
+: 964 5 14 Va
+: 971 5 12 mos
+- 976
+: 986 2 11 A un 
+: 990 2 11 si
+: 993 2 9 tio 
+: 996 2 7 que 
+: 999 2 9 no es
+: 1003 4 11 tá en 
+: 1009 4 12 el 
+: 1016 4 11 ma
+: 1022 6 9 pa
+- 1028
+: 1038 2 9 No im
+: 1042 2 9 por
+: 1045 2 7 ta 
+: 1048 2 6 si 
+: 1051 2 7 no 
+: 1055 4 9 hay 
+: 1061 4 7 di
+: 1068 4 6 ne
+: 1074 6 7 ro
+- 1080
+: 1089 2 11 Si hay 
+: 1093 2 11 nu
+: 1096 2 9 bes 
+: 1099 2 7 gri
+: 1102 2 9 ses 
+: 1106 4 11 en 
+: 1112 4 12 el 
+: 1119 4 11 cie
+: 1125 6 9 lo
+- 1131
+: 1140 2 9 Ya 
+: 1143 2 9 sa
+: 1146 2 7 bes 
+: 1149 2 9 que ha
+: 1153 24 11 cer
+- 1177
+: 1191 2 11 Pre
+: 1195 2 11 pá
+: 1198 2 9 ra
+: 1201 2 7 te 
+: 1204 2 9 pa
+: 1208 4 11 ra el 
+: 1214 4 12 fu
+: 1221 4 11 tu
+: 1227 6 9 ro
+- 1233
+: 1243 2 9 Quién 
+: 1246 2 9 sa
+: 1249 2 7 be 
+: 1252 2 6 que 
+: 1255 2 7 pue
+* 1259 7 9 da 
+: 1269 1 11 pa
+* 1272 6 11 sar
+- 1278
+: 1285 7 12 To
+: 1295 6 11 do 
+: 1304 4 12 se
+: 1311 13 14 rá 
+: 1330 4 7 per
+: 1336 8 12 fec
+: 1346 7 11 to
+- 1353
+* 1362 7 7 Si 
+: 1372 2 7 me 
+: 1375 4 9 ha
+: 1381 4 7 ces 
+: 1388 8 9 ca
+: 1399 36 7 so
+E
