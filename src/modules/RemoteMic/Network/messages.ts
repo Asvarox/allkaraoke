@@ -70,7 +70,7 @@ export interface NetworkRequestSongListMessage {
 }
 export interface NetworkSongListMessage {
   t: 'songlist';
-  custom: Array<Pick<SongPreview, 'artist' | 'title' | 'video' | 'language'>>;
+  custom: Array<Pick<SongPreview, 'artist' | 'title' | 'video' | 'language' | 'search'>>;
   deleted: string[];
 }
 

@@ -68,6 +68,9 @@ const Container = styled.div<{ focused: boolean }>`
 `;
 
 const Label = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding-right: 0.5em;
   white-space: nowrap;
   width: auto;

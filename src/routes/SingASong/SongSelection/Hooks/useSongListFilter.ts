@@ -28,6 +28,25 @@ const ALPHANUMERIC__SPACE_REGEX = /[^0-9a-z ]/gi;
 
 const getSearchString = (str: string) => removeAccents(str).toLowerCase().replace(ALPHANUMERIC__SPACE_REGEX, '');
 
+export function searchList<T extends Pick<SongPreview, 'artist' | 'title' | 'search'>>(list: T[], search: string): T[] {
+  const cleanSearch = clearString(search);
+
+  if (cleanSearch.length > 0) {
+    const fuzz = new uFuzzy({});
+    const [, info, order] = fuzz.search(
+      list.map((song) => `${getSearchString(song.artist)} ${getSearchString(song.title)}`),
+      getSearchString(search),
+    );
+    if (order && info) {
+      return order.map((item) => list[info.idx[item]]);
+    } else {
+      return list.filter((song) => song.search.includes(cleanSearch));
+    }
+  }
+
+  return list;
+}
+
 export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
   language: (songList, language: string) => {
     if (language === '') return songList;
@@ -44,22 +63,7 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
     });
   },
   search: (songList, search: string) => {
-    const cleanSearch = clearString(search);
-
-    if (cleanSearch.length > 0) {
-      const fuzz = new uFuzzy({});
-      const [, info, order] = fuzz.search(
-        songList.map((song) => `${getSearchString(song.artist)} ${getSearchString(song.title)}`),
-        getSearchString(search),
-      );
-      if (order && info) {
-        return order.map((item) => songList[info.idx[item]]);
-      } else {
-        return songList.filter((song) => song.search.includes(cleanSearch));
-      }
-    }
-
-    return songList;
+    return searchList(songList, search);
   },
   duet: (songList, duet: boolean | null) => {
     if (duet === null) return songList;

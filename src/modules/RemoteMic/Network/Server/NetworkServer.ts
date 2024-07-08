@@ -65,6 +65,7 @@ export class NetworkServer {
                   title: song.title,
                   video: song.video,
                   language: song.language,
+                  search: song.search,
                 })),
                 deleted,
               });
