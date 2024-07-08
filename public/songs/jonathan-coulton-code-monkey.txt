@@ -7,7 +7,7 @@
 #LANGUAGE:English
 #GAP:168,75
 #ALLKARAOKE_ID:jonathan-coulton-code-monkey
-#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:12.269Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.365Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:160
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=6J-W3mn9N2w
@@ -72,13 +72,13 @@
 : 394 5 -4 His 
 : 402 5 -1 code 
 : 410 3 -4 not 
-: 418 6 -3 \"func
+: 418 6 -3 "func
 : 426 3 -4 tio
-: 430 3 -3 nal\" 
+: 430 3 -3 nal"
 : 434 3 -4 or 
-: 438 3 -3 \"e
+: 438 3 -3 "e
 : 442 2 -4 le
-: 446 3 -4 gant\"
+: 446 3 -4 gant"
 - 449
 : 458 2 -6 What 
 : 462 2 -4 do 
@@ -416,14 +416,14 @@
 - 3061
 : 3082 4 -4 This 
 : 3090 5 -1 job 
-: 3098 4 -4 \"ful
+: 3098 4 -4 "ful
 : 3106 5 -3 fil
 : 3113 3 -4 ling 
 : 3118 2 -3 in 
 : 3122 2 -4 cre
 : 3126 3 -3 a
 : 3130 2 -4 tive 
-: 3134 5 -4 way\"
+: 3134 5 -4 way"
 - 3139
 : 3146 2 -6 Such 
 : 3150 2 -4 a 

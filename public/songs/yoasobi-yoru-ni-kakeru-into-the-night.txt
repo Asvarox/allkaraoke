@@ -6,7 +6,7 @@
 #LANGUAGE:Japanese
 #GAP:173,0769230769231
 #ALLKARAOKE_ID:yoasobi-yoru-ni-kakeru-into-the-night
-#ALLKARAOKE_LASTUPDATE:2024-05-07T13:37:20.291Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:20.051Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_VOLUME:0,72
@@ -49,10 +49,10 @@
 * 211 27 3 ~
 - 238 513
 - 513
-: 530 4 0 \"Sa
+: 530 4 0 "Sa
 : 534 4 2 yo
 : 538 4 3 na
-: 542 4 2 ra\" 
+: 542 4 2 ra"
 : 550 4 -2 da
 : 554 3 -5 ke 
 : 558 8 -2 da
@@ -590,12 +590,12 @@
 : 3120 6 5 ka
 : 3126 5 7 nai
 - 3131
-: 3134 4 7 \"O
+: 3134 4 7 "O
 : 3138 4 12 wa
 : 3142 3 10 ri 
 : 3146 3 7 ni 
 : 3150 4 5 shi
-: 3154 3 3 tai\" 
+: 3154 3 3 tai"
 : 3158 1 0 da 
 : 3160 4 3 nan
 : 3164 1 0 te 

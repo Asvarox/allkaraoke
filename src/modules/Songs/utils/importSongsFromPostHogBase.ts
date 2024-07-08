@@ -81,7 +81,7 @@ export const importSongsFromPostHogBase = async (
         console.log(`Deleting song ${songId}`);
       }
 
-      let song = convertTxtToSong(songTxt.replaceAll('\\n', '\n'));
+      let song = convertTxtToSong(songTxt.replaceAll('\\n', '\n').replaceAll('\\"', '"'));
       if (!song.id) {
         console.log('Song has no ID', song);
         return;

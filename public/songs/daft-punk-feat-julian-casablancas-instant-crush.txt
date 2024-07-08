@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:28498,78640776699
 #ALLKARAOKE_ID:daft-punk-feat-julian-casablancas-instant-crush
-#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:44.395Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.268Z
 #ALLKARAOKE_ARTISTORIGIN:FX
 #ALLKARAOKE_REALBPM:110
 #ALLKARAOKE_VOLUME:0,8
@@ -101,7 +101,7 @@
 : 640 5 17 place 
 : 646 5 17 in 
 : 652 5 17 the 
-: 658 15 18 \"Roche\" 
+: 658 15 18 "Roche"
 - 673
 : 694 5 15 But 
 : 700 5 15 no 
@@ -167,7 +167,7 @@
 : 1138 5 5 said
 : 1144 12 3 ~ 
 - 1156
-* 1162 5 13 \"I 
+* 1162 5 13 "I
 * 1168 5 13 list
 : 1174 2 13 en
 : 1177 2 10 ed 
@@ -180,7 +180,7 @@
 : 1216 5 10 lis
 : 1222 5 10 ten 
 : 1228 5 10 to 
-: 1234 6 10 mine\" 
+: 1234 6 10 mine"
 - 1240
 : 1249 5 5 I 
 : 1255 2 6 did
@@ -514,7 +514,7 @@
 : 3425 13 3 ~ 
 - 3438 3826
 - 3826
-* 3848 5 13 \"I 
+* 3848 5 13 "I
 * 3854 5 13 list
 : 3860 2 13 en
 : 3863 2 10 ed 
@@ -527,7 +527,7 @@
 : 3902 5 10 lis
 : 3908 5 10 ten 
 : 3914 5 10 to 
-: 3920 5 10 mine\" 
+: 3920 5 10 mine"
 - 3925
 : 3932 8 5 I 
 : 3941 2 6 did

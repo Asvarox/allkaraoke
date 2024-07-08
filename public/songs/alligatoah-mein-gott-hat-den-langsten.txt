@@ -8,7 +8,7 @@
 #LANGUAGE:German
 #GAP:23900,249937515622
 #ALLKARAOKE_ID:alligatoah-mein-gott-hat-den-langsten
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.279Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.048Z
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_PREVIEWEND:120
@@ -86,7 +86,7 @@ F 232 1 0 len
 F 235 1 0 le
 F 237 3 0 sen 
 - 240
-F 245 2 0 \"Du 
+F 245 2 0 "Du
 F 248 1 0 sollst 
 F 251 2 0 Un
 F 256 1 0 gläu
@@ -96,7 +96,7 @@ F 264 1 0 als
 F 267 1 0 Gei
 F 269 1 0 seln 
 F 271 1 0 neh
-F 274 2 0 men!\" 
+F 274 2 0 men!"
 - 276
 F 277 1 0 Tja, 
 F 281 1 0 die 
@@ -118,9 +118,9 @@ F 333 3 0 gibt
 F 338 1 0 le
 F 341 1 0 se 
 F 343 1 0 ich 
-F 346 3 0 \"Pan
+F 346 3 0 "Pan
 F 351 1 0 zer
-F 354 4 0 faust\"! 
+F 354 4 0 faust"!
 - 358
 F 361 2 0 Denn 
 F 364 1 0 er 
@@ -491,12 +491,12 @@ F 1683 1 0 ten!
 - 1684
 F 1686 1 0 Es 
 F 1689 1 0 heißt: 
-F 1692 1 0 \"Lie
+F 1692 1 0 "Lie
 F 1695 1 0 be 
 F 1697 1 0 dei
 F 1700 1 0 nen 
 F 1702 2 0 Nächs
-F 1705 1 0 ten\" 
+F 1705 1 0 ten"
 F 1707 1 0 und 
 F 1710 1 0 auch 
 F 1713 2 0 Vi
@@ -747,7 +747,7 @@ F 2666 2 0 ze!
 : 2683 1 0 Na
 : 2688 1 0 me 
 : 2691 1 0 ist 
-: 2694 5 0 \"Gnauf\", 
+: 2694 5 0 "Gnauf",
 : 2700 2 0 o
 : 2703 1 0 k?! 
 - 2704

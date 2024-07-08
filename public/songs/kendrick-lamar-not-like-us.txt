@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:49,7259175078548
 #ALLKARAOKE_ID:kendrick-lamar-not-like-us
-#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:53.999Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.366Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:101
 #ALLKARAOKE_VOLUME:0,73
@@ -60,8 +60,8 @@ R 258 1 0 ber
 R 262 3 0 lamps, 
 R 267 1 0 tell 
 R 270 1 0 him, 
-R 273 3 0 \"Breathe, 
-R 279 3 0 bro\"
+R 273 3 0 "Breathe,
+R 279 3 0 bro"
 - 282
 R 285 1 0 Nail 
 R 288 1 0 a 
@@ -520,13 +520,13 @@ R 2192 1 0 O
 R 2196 5 0 VO 
 R 2203 4 0 for? 
 R 2212 1 0 The 
-R 2215 1 0 \"O
+R 2215 1 0 "O
 R 2218 1 0 ther 
 R 2220 1 0 Va
 R 2222 1 0 gi
 R 2224 1 0 nal 
 R 2226 1 0 Op
-R 2229 6 0 tion\"? 
+R 2229 6 0 tion"?
 R 2244 2 0 Pus
 R 2248 5 0 sy
 - 2253
@@ -560,9 +560,9 @@ R 2331 1 0 tell
 R 2334 1 0 the 
 R 2337 1 0 pop 
 R 2339 1 0 star, 
-R 2342 1 0 \"Quit 
+R 2342 1 0 "Quit
 R 2346 2 0 hi
-R 2350 1 0 din'\"
+R 2350 1 0 din'"
 - 2351
 R 2354 1 0 Fuck 
 R 2357 1 0 a 
@@ -1154,17 +1154,17 @@ R 4876 1 0 me
 R 4880 1 0 hear 
 R 4883 1 0 you 
 R 4887 1 0 say, 
-R 4890 1 0 \"O
+R 4890 1 0 "O
 R 4894 1 0 V-
-R 4897 3 0 ho\" 
+R 4897 3 0 ho"
 F 4905 2 0 O
 F 4910 1 0 V-
 F 4915 6 0 ho
 - 4921
 R 4925 1 0 Say, 
-R 4930 1 0 \"O
+R 4930 1 0 "O
 R 4933 2 0 V-
-R 4939 5 0 ho\" 
+R 4939 5 0 ho"
 F 4951 3 0 O
 F 4957 2 0 V-
 F 4963 3 0 ho

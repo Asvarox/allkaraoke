@@ -7,7 +7,7 @@
 #LANGUAGE:Spanish
 #GAP:-238,09523809523807
 #ALLKARAOKE_ID:ska-p-cannabis
-#ALLKARAOKE_LASTUPDATE:2024-05-15T17:29:18.083Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.976Z
 #ALLKARAOKE_ARTISTORIGIN:ES
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:121
@@ -44,21 +44,21 @@
 : 38 2 60 ya la 
 : 40 1 58 chi
 : 41 1 59 na 
-: 42 2 57 \"tron\"
+: 42 2 57 "tron"
 - 44
 : 45 1 58 Veng
 : 46 1 58 a ya 
 : 47 2 60 esa 
 : 49 1 58 chi
 : 50 1 59 na 
-: 51 1 57 \"tron\"
+: 51 1 57 "tron"
 - 52
 : 53 1 58 Que
 : 54 1 61 ma
 : 55 1 61 me 
 : 56 1 58 la 
 : 57 2 59 china 
-: 59 2 57 \"tron\"
+: 59 2 57 "tron"
 - 61
 : 69 2 59 sa
 : 71 1 58 co un
@@ -88,21 +88,21 @@
 : 105 2 60 ya la
 : 107 1 58 chi
 : 108 1 59 na 
-: 109 2 57 \"tron\"
+: 109 2 57 "tron"
 - 111
 : 111 1 58 Veng
 : 112 1 58 a ya 
 : 113 2 60 esa 
 : 115 1 58 chi
 : 116 1 59 na 
-: 117 1 57 \"tron\"
+: 117 1 57 "tron"
 - 118
 : 119 1 58 Que
 : 120 1 61 ma
 : 121 1 61 me 
 : 122 1 58 la 
 : 123 2 59 china 
-: 125 2 57 \"tron\"
+: 125 2 57 "tron"
 - 127
 : 130 2 58 No hay
 : 132 2 57 chi
@@ -155,21 +155,21 @@
 : 355 2 60 ya la 
 : 357 1 58 chi
 : 358 1 59 na 
-: 359 2 57 \"tron\"
+: 359 2 57 "tron"
 - 361
 : 362 1 58 Veng
 : 363 1 58 a ya 
 : 364 2 60 esa 
 : 366 1 58 chi
 : 367 1 59 na 
-: 368 1 57 \"tron\"
+: 368 1 57 "tron"
 - 369
 : 370 1 58 Que
 : 371 1 61 ma
 : 372 1 61 me 
 : 373 1 58 la 
 : 374 2 59 china 
-: 376 2 57 \"tron\"
+: 376 2 57 "tron"
 - 378
 : 386 2 59 sa
 : 388 1 58 co un
@@ -199,21 +199,21 @@
 : 422 2 60 ya la 
 : 424 1 58 chi
 : 425 1 59 na 
-: 426 1 57 \"tron\"
+: 426 1 57 "tron"
 - 427
 : 428 1 58 Veng
 : 429 1 58 a ya 
 : 430 2 60 esa 
 : 432 1 58 chi
 : 433 1 59 na 
-: 434 1 57 \"tron\"
+: 434 1 57 "tron"
 - 435
 : 436 1 58 Que
 : 437 1 61 ma
 : 438 1 61 me 
 : 439 1 58 la 
 : 440 2 59 china 
-: 442 2 57 \"tron\"
+: 442 2 57 "tron"
 - 444
 : 447 2 58 No hay 
 : 449 2 57 chi
@@ -350,21 +350,21 @@
 : 874 2 60 ro una 
 : 876 1 58 chi
 : 877 1 59 na 
-: 878 2 57 \"tron\"
+: 878 2 57 "tron"
 - 880
 : 880 1 58 da
 : 881 1 58 me 
 : 882 2 60 ya esa 
 : 884 1 58 chi
 : 885 1 59 na 
-: 886 1 57 \"tron\"
+: 886 1 57 "tron"
 - 887
 : 888 1 61 sa
 : 889 1 61 ca 
 : 890 2 61 ya 
 : 892 1 61 la 
 : 893 2 60 china 
-: 895 2 57 \"tron\"
+: 895 2 57 "tron"
 - 897
 : 905 2 59 sin cor
 : 907 1 58 tar 
@@ -394,31 +394,31 @@
 : 940 2 60 me una 
 : 942 1 58 chi
 : 943 1 59 na 
-: 944 2 57 \"tron\"
+: 944 2 57 "tron"
 - 946
 : 946 1 58 yo 
 : 947 1 58 quie
 : 948 2 60 ro una
 : 950 1 58 chi
 : 951 1 59 na 
-: 952 1 57 \"tron\"
+: 952 1 57 "tron"
 - 953
 : 955 1 63 u
 : 956 1 61 na 
 : 957 1 63 pos
 : 958 1 61 tu
 : 959 2 60 rita 
-: 961 2 55 \"tron\"
+: 961 2 55 "tron"
 - 963
-: 966 1 58 \"No 
+: 966 1 58 "No
 : 968 2 57 chi
-: 970 2 56 nas\"
+: 970 2 56 nas"
 - 972
-: 974 1 58 \"No 
+: 974 1 58 "No
 : 976 2 57 chi
 : 978 2 56 nas 
 : 980 14 58 ho
-: 994 2 57 y\"
+: 994 2 57 y"
 - 996
 : 998 2 67 No 
 : 1000 1 63 chi

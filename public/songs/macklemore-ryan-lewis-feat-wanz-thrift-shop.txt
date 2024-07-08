@@ -9,7 +9,7 @@
 #LANGUAGE:English
 #GAP:216,8421052631579
 #ALLKARAOKE_ID:macklemore-ryan-lewis-feat-wanz-thrift-shop
-#ALLKARAOKE_LASTUPDATE:2024-05-11T06:35:35.951Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.677Z
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=80048
 #ALLKARAOKE_REALBPM:190
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=15450
@@ -125,14 +125,14 @@ F 1034 3 5 the
 F 1038 3 5 club 
 F 1042 4 5 like 
 - 1046
-F 1050 3 5 \"What 
+F 1050 3 5 "What
 F 1054 1 5 up... 
 - 1055
 F 1058 3 5 ...I 
 F 1062 3 5 got 
 F 1066 3 5 a 
 F 1070 3 5 big 
-F 1074 4 5 cock!\" 
+F 1074 4 5 cock!"
 - 1078
 F 1086 7 7 I m 
 F 1094 4 7 so 
@@ -456,12 +456,12 @@ F 2498 4 5 would
 F 2506 3 5 be 
 F 2510 1 5 like 
 - 2511
-F 2514 3 5 \"Aw, 
+F 2514 3 5 "Aw,
 F 2518 3 5 he 
 F 2522 4 5 got 
 F 2530 4 5 the 
 F 2538 3 5 Vel
-F 2542 4 5 cros\" 
+F 2542 4 5 cros"
 - 2546
 * 2554 4 15 I m 
 : 2562 3 15 gon

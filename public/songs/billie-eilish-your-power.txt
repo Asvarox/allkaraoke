@@ -7,7 +7,7 @@
 #LANGUAGE:English
 #GAP:34309,07356948229
 #ALLKARAOKE_ID:billie-eilish-your-power
-#ALLKARAOKE_LASTUPDATE:2024-05-08T17:16:34.628Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.193Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_VOLUME:0,68
@@ -56,7 +56,7 @@
 : 529 3 2 She
 : 533 2 4 ~ 
 : 538 25 0 said 
-: 569 3 2 \"you 
+: 569 3 2 "you
 : 573 3 2 were 
 : 577 3 2 a 
 : 582 3 4 he
@@ -65,10 +65,10 @@
 : 598 4 4 you 
 : 607 13 0 played 
 : 624 2 2 the 
-: 628 11 -1 part\" 
+: 628 11 -1 part"
 - 639 640
 - 640
-: 658 2 0 \"But 
+: 658 2 0 "But
 : 662 3 -3 you 
 : 667 6 4 ru
 : 675 25 0 ined 
@@ -82,7 +82,7 @@
 : 743 6 0 like 
 : 752 3 0 it 
 : 756 3 2 was 
-: 764 11 -1 hard\" 
+: 764 11 -1 hard"
 - 775
 : 792 3 -3 And 
 : 796 3 -3 you 

@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:14277,242919681945
 #ALLKARAOKE_ID:shakira-feat-dizzee-rascal-loca
-#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:54.762Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.899Z
 #ALLKARAOKE_CREATORURL:https://usdb.animux.de/?link=detail&id=10763
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=10763
@@ -353,9 +353,9 @@ F 1676 1 6 I
 F 1679 1 6 hear 
 F 1682 1 6 her 
 F 1685 2 6 say 
-F 1691 2 6 \"Ay, 
+F 1691 2 6 "Ay,
 F 1697 2 6 pa
-F 1703 2 6 pi\". 
+F 1703 2 6 pi".
 - 1705
 : 1727 3 16 And 
 : 1733 2 16 I’m 
@@ -563,7 +563,7 @@ F 2746 1 6 wan
 F 2749 1 6 na 
 F 2752 1 6 hit 
 F 2755 1 6 the 
-F 2758 5 6 \"oh\"! 
+F 2758 5 6 "oh"!
 - 2763
 F 2776 1 6 And 
 F 2779 1 6 I’m 

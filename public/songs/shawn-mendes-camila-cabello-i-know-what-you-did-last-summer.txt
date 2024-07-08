@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:1242,8981310871281
 #ALLKARAOKE_ID:shawn-mendes-camila-cabello-i-know-what-you-did-last-summer
-#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:33.436Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.966Z
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_REALBPM:114
 #ALLKARAOKE_VOLUME:0,8
@@ -117,7 +117,7 @@
 : 795 2 14 lied 
 : 798 1 14 to 
 : 800 2 14 me 
-: 803 3 14 \"there’s 
+: 803 3 14 "there’s
 : 807 3 14 no 
 : 811 2 14 o
 : 814 2 12 ther 
@@ -349,10 +349,10 @@
 : 1819 2 14 lied 
 : 1822 1 14 to 
 : 1824 2 14 me 
-: 1827 3 14 \"there’s 
+: 1827 3 14 "there’s
 : 1831 3 14 no 
 : 1835 2 14 o
-: 1838 2 12 ther\" 
+: 1838 2 12 ther"
 - 1840
 : 1847 2 19 I 
 : 1851 2 14 know 
@@ -654,10 +654,10 @@
 : 2843 2 14 lied 
 : 2847 1 14 to 
 : 2849 1 14 me 
-: 2851 3 14 \"there’s 
+: 2851 3 14 "there’s
 : 2855 3 14 no 
 : 2859 2 14 o
-: 2862 2 12 ther\" 
+: 2862 2 12 ther"
 - 2864
 : 2871 2 19 I 
 : 2875 2 14 know 
@@ -1278,10 +1278,10 @@
 : 2843 2 5 lied 
 : 2847 1 5 to 
 : 2849 1 5 me
-: 2851 3 5 \"there’s 
+: 2851 3 5 "there’s
 : 2855 3 5 no 
 : 2859 2 5 o
-: 2862 2 4 ther\" 
+: 2862 2 4 ther"
 - 2864
 : 2871 2 9 I 
 : 2875 2 5 know 

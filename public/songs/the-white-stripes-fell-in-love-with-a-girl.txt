@@ -7,7 +7,7 @@
 #LANGUAGE:English
 #GAP:14340
 #ALLKARAOKE_ID:the-white-stripes-fell-in-love-with-a-girl
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:48.048Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.983Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:190
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=25152
@@ -57,15 +57,15 @@
 : 353 9 6 turns 
 : 363 5 6 and 
 : 369 3 6 says 
-: 373 5 6 \"Are 
+: 373 5 6 "Are
 * 379 6 9 you 
 : 386 3 6 al
 : 390 3 4 ~
-: 394 8 6 right?\" 
+: 394 8 6 right?"
 - 402
 : 406 1 6 I 
 : 408 4 6 said 
-: 413 6 6 \"I 
+: 413 6 6 "I
 : 420 8 4 must 
 : 429 4 4 be 
 : 440 9 2 fine 
@@ -74,7 +74,7 @@
 : 461 7 6 heart’s 
 : 469 6 4 still 
 : 476 6 6 beat
-: 483 6 6 ing.\" 
+: 483 6 6 ing."
 - 489
 : 510 4 6 Come 
 : 515 4 6 and 
@@ -284,15 +284,15 @@
 : 2268 4 6 turns 
 : 2276 3 6 and 
 : 2280 4 6 says 
-: 2285 4 6 \"Are 
+: 2285 4 6 "Are
 : 2290 5 9 you 
 : 2296 5 6 al
 * 2302 3 4 ~
-: 2306 7 6 right?\" 
+: 2306 7 6 right?"
 - 2313
 : 2317 1 6 I 
 : 2319 5 6 said 
-: 2325 3 6 \"I 
+: 2325 3 6 "I
 : 2329 7 6 must 
 : 2338 5 6 be 
 : 2344 7 4 fine 
@@ -302,7 +302,7 @@
 : 2368 9 6 heart’s 
 * 2378 5 4 still 
 : 2384 7 6 bea
-: 2392 11 6 ting\" 
+: 2392 11 6 ting"
 - 2403
 : 2418 5 6 Come 
 : 2424 4 6 and 

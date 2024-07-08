@@ -8,7 +8,7 @@
 #LANGUAGE:German
 #GAP:7138,053360815298
 #ALLKARAOKE_ID:alligatoah-nachbeben
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.283Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.052Z
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_PREVIEWEND:90
@@ -571,7 +571,7 @@ F 4233 2 0 al
 F 4237 2 0 les, 
 F 4242 2 0 au
 F 4246 2 0 ßer 
-F 4250 2 0 \"Nein\" 
+F 4250 2 0 "Nein"
 F 4257 2 0 sa
 F 4261 2 0 gen
 - 4263
@@ -814,15 +814,15 @@ F 6643 2 0 scher-
 F 6651 2 0 Rü
 F 6656 2 0 de
 - 6658
-F 6660 2 0 \"Al
+F 6660 2 0 "Al
 F 6664 2 0 les 
 F 6668 2 0 o
-F 6672 2 0 kay?\" 
-F 6680 2 0 \"Ich 
+F 6672 2 0 kay?"
+F 6680 2 0 "Ich
 F 6684 2 0 bin 
 F 6692 2 0 nur 
 F 6698 2 0 mü
-F 6705 2 0 de!\"
+F 6705 2 0 de!"
 - 6707
 F 6708 2 0 Da
 F 6712 2 0 bei 
@@ -851,20 +851,20 @@ F 6829 2 0 stand
 - 6831
 : 6845 4 0 Ich 
 : 6853 2 0 so: 
-: 6873 2 0 \"Vor
+: 6873 2 0 "Vor
 : 6877 2 0 bei 
 : 6885 2 0 ist 
 : 6889 2 0 vor
 : 6893 2 0 bei, 
-: 6901 6 0 juckt\"
+: 6901 6 0 juckt"
 - 6907
 F 6918 2 0 Mei
 F 6922 2 0 ne 
 F 6926 2 0 See
 F 6930 2 0 le 
 F 6934 2 0 so: 
-F 6957 5 0 \"Ein
-F 6965 2 0 spruch\"
+F 6957 5 0 "Ein
+F 6965 2 0 spruch"
 - 6967
 : 6989 5 11 Un
 : 6997 5 10 ser 

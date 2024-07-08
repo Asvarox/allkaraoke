@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:10340
 #ALLKARAOKE_ID:les-miserables-castle-on-a-cloud
-#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:21.474Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.497Z
 #ALLKARAOKE_REALBPM:116
 #ALLKARAOKE_VOLUME:1
 #MP3:Les Misérables - Castle On A Cloud [DUET].mp3
@@ -119,14 +119,14 @@
 - 908
 : 917 3 14 She 
 : 924 7 16 says 
-: 939 2 17 \"Co
+: 939 2 17 "Co
 : 943 4 16 sette, 
 : 960 3 17 I 
 : 964 5 16 love 
 : 972 3 17 you 
 : 977 5 16 ve
 : 984 5 17 ry 
-: 993 10 16 much\" 
+: 993 10 16 much"
 - 1003 1012
 - 1012
 : 1028 7 21 I 
@@ -266,14 +266,14 @@
 - 908
 : 917 3 36 She 
 : 924 7 35 says 
-: 939 2 36 \"Co
+: 939 2 36 "Co
 : 943 4 35 sette, 
 : 960 3 36 I 
 : 964 5 35 love 
 : 972 3 36 you 
 : 977 5 35 ve
 : 984 5 36 ry 
-: 993 10 35 much\" 
+: 993 10 35 much"
 - 1003 1012
 - 1012
 : 1028 7 40 I 

@@ -242,7 +242,7 @@ export default function SongMetadata(props: Props) {
             <MenuItem key={'none'} value="">
               None
             </MenuItem>
-            {Object.entries(definedArtistOrigins).map(([name, code]) => (
+            {Object.entries(definedArtistOrigins).map(([code, name]) => (
               <MenuItem key={code} value={code}>
                 <CountryFlag isocode={code} /> {name}
               </MenuItem>

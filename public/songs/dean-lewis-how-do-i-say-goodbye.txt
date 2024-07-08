@@ -9,7 +9,7 @@
 #LANGUAGE:English
 #GAP:7401,31361461505
 #ALLKARAOKE_ID:dean-lewis-how-do-i-say-goodbye
-#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:44.646Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.269Z
 #ALLKARAOKE_ARTISTORIGIN:AU
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=334
 #ALLKARAOKE_REALBPM:82
@@ -41,11 +41,11 @@
 : 175 3 8 say
 : 184 3 7 in’ 
 - 187
-: 194 6 7 \"Dar
+: 194 6 7 "Dar
 : 202 3 7 ling, 
 : 207 3 7 please 
 : 214 3 5 come 
-: 220 9 5 home\" 
+: 220 9 5 home"
 - 229 249
 - 249
 : 270 1 5 I 
