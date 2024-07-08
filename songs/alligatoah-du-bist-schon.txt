@@ -8,7 +8,7 @@
 #LANGUAGE:German
 #GAP:270
 #ALLKARAOKE_ID:alligatoah-du-bist-schon
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.270Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.047Z
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_REALBPM:133
 #ALLKARAOKE_VOLUME:0,76
@@ -306,14 +306,14 @@ F 924 8 9 gen
 : 1260 3 9 Rös
 : 1268 4 8 lein: 
 - 1272
-: 1276 5 6 \"Wer 
+: 1276 5 6 "Wer
 : 1284 4 4 nicht 
 : 1292 6 6 lei
 : 1300 5 6 den 
 : 1308 5 6 will, 
 : 1316 3 9 muss 
 * 1324 12 13 schön 
-: 1340 9 9 sein.\" 
+: 1340 9 9 sein."
 - 1349 1431
 - 1431
 F 1447 1 9 Das 
@@ -580,14 +580,14 @@ F 1980 5 9 gen
 : 2316 3 9 Rös
 : 2324 4 8 lein: 
 - 2328
-: 2332 5 6 \"Wer 
+: 2332 5 6 "Wer
 : 2340 4 4 nicht 
 : 2348 6 6 lei
 : 2356 5 6 den 
 : 2364 5 6 will, 
 : 2372 3 9 muss 
 : 2380 12 13 schön 
-: 2396 9 9 sein.\" 
+: 2396 9 9 sein."
 - 2405
 F 2418 1 9 Ich 
 F 2420 1 9 hab 
@@ -660,14 +660,14 @@ F 2449 5 9 te?
 : 2764 3 9 Rös
 : 2772 4 8 lein: 
 - 2776
-: 2780 5 6 \"Wer 
+: 2780 5 6 "Wer
 : 2788 4 4 nicht 
 : 2796 6 6 lei
 : 2804 5 6 den 
 : 2812 5 6 will, 
 : 2820 3 9 muss 
 : 2828 12 13 schön 
-: 2844 9 9 sein.\" 
+: 2844 9 9 sein."
 - 2853
 : 2864 3 9 Gib 
 : 2868 2 9 mir 

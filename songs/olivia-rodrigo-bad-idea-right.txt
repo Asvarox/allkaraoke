@@ -9,7 +9,7 @@
 #LANGUAGE:English
 #GAP:9133,400099574892
 #ALLKARAOKE_ID:olivia-rodrigo-bad-idea-right
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:37.094Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.821Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_PREVIEWEND:77
@@ -102,7 +102,7 @@
 : 262 3 8 My 
 : 266 3 6 brain 
 : 270 2 4 goes, 
-* 275 49 8 \"Ah\"
+* 275 49 8 "Ah"
 - 324
 : 327 2 8 Can't 
 : 330 2 4 hear 
@@ -221,14 +221,14 @@
 : 840 2 8 con
 : 844 2 8 nect?
 - 846
-: 849 2 8 \"I 
+: 849 2 8 "I
 : 853 2 8 on
 : 856 2 8 ly 
 : 860 3 8 see 
 : 864 3 8 him 
 : 869 2 8 as 
 : 873 1 8 a 
-: 876 4 8 friend\", 
+: 876 4 8 friend",
 : 881 1 4 the 
 : 884 2 8 biggest
 : 887 2 10 ~ 
@@ -364,7 +364,7 @@ F 1387 3 11 much
 : 1428 3 8 My 
 : 1432 3 6 brain 
 : 1436 2 4 goes, 
-: 1441 9 8 \"Ah\"
+: 1441 9 8 "Ah"
 : 1451 1 8 ~
 : 1453 1 8 ~
 : 1455 1 8 ~
@@ -504,14 +504,14 @@ F 1387 3 11 much
 : 2004 2 8 con
 : 2008 2 8 nect?
 - 2010
-: 2013 2 8 \"I 
+: 2013 2 8 "I
 : 2017 2 8 on
 : 2020 2 8 ly 
 : 2024 3 8 see 
 : 2028 3 8 him 
 : 2033 2 8 as 
 : 2037 1 8 a 
-: 2040 4 8 friend\", 
+: 2040 4 8 friend",
 : 2045 1 4 the 
 * 2048 2 8 big
 * 2051 2 10 gest 
@@ -603,7 +603,7 @@ F 1387 3 11 much
 : 2588 1 9 My 
 : 2590 2 9 brain 
 : 2593 2 9 goes, 
-: 2597 8 11 \"Ah\"
+: 2597 8 11 "Ah"
 : 2606 21 8 ~
 - 2627 2632
 - 2632
@@ -623,7 +623,7 @@ F 1387 3 11 much
 : 2712 2 4 ver 
 : 2717 3 -4 said
 - 2720
-: 2725 8 11 \"Ah\"
+: 2725 8 11 "Ah"
 : 2734 21 8 ~
 - 2755 2761
 - 2761

@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:8786,717557251908
 #ALLKARAOKE_ID:marc-cohn-walking-in-memphis
-#ALLKARAOKE_LASTUPDATE:2024-05-20T19:25:54.244Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.750Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:130
 #ALLKARAOKE_VOLUME:0,73
@@ -393,7 +393,7 @@
 : 2696 3 9 She 
 : 2702 4 12 said 
 - 2706
-: 2714 3 16 \"Tell 
+: 2714 3 16 "Tell
 : 2718 2 16 me 
 : 2721 3 16 are 
 : 2725 6 17 you 
@@ -401,19 +401,19 @@
 : 2732 2 16 A 
 : 2737 3 14 Chris
 : 2744 6 12 tian 
-: 2753 5 12 child?\" 
+: 2753 5 12 child?"
 - 2758
 : 2759 1 12 And 
 : 2761 2 14 I 
 : 2767 2 12 said 
 - 2769
-* 2777 4 19 \"Ma’am 
+* 2777 4 19 "Ma’am
 : 2783 5 16 I 
 : 2789 5 16 am
 : 2795 2 14 ~
 : 2798 4 12 ~
 : 2804 2 12 to
-: 2808 4 12 night\" 
+: 2808 4 12 night"
 - 2812
 : 2820 2 16 Walk
 : 2824 3 17 in’ 

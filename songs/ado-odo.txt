@@ -7,7 +7,7 @@
 #LANGUAGE:Japanese
 #GAP:-16,09375
 #ALLKARAOKE_ID:ado-odo
-#ALLKARAOKE_LASTUPDATE:2024-06-29T00:10:13.299Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:18.853Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=174903
 #ALLKARAOKE_REALBPM:128
@@ -425,20 +425,20 @@ R 2033 3 5 hito
 : 2045 3 5 go
 : 2049 8 13 to
 - 2057
-: 2065 2 5 \\\"Be
+: 2065 2 5 "Be
 : 2067 1 5 tsu 
 : 2069 3 5 ni 
 : 2073 6 5 kyou
 : 2079 1 5 mi 
-: 2081 4 0 nai\\\" 
+: 2081 4 0 nai"
 F 2089 5 5 (Nai)
 - 2094
-: 2097 2 5 \\\"To
+: 2097 2 5 "To
 : 2099 3 5 ku 
 : 2103 1 5 ni 
 : 2105 3 5 kan
 : 2109 3 8 kei 
-: 2113 3 0 nai\\\" 
+: 2113 3 0 nai"
 F 2117 3 8 (Nai, 
 F 2121 5 8 nai)
 - 2126

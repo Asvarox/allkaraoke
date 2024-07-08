@@ -8,7 +8,7 @@
 #LANGUAGE:German
 #GAP:130
 #ALLKARAOKE_ID:alligatoah-narben
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:35.286Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.053Z
 #ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_PREVIEWEND:90
@@ -660,7 +660,7 @@ F 920 4 5 (Klar!)
 : 3560 2 9 ru
 : 3564 2 9 fen 
 - 3566
-* 3572 2 13 \"Herr 
+* 3572 2 13 "Herr
 * 3576 4 13 Dok
 * 3584 2 11 tor, 
 * 3588 2 11 ich 
@@ -669,7 +669,7 @@ F 920 4 5 (Klar!)
 * 3604 2 11 ne 
 * 3608 2 11 Bei
 * 3612 2 11 ne 
-* 3616 4 11 nicht!\" 
+* 3616 4 11 nicht!"
 - 3620
 : 3628 2 4 Ich 
 : 3632 2 9 sa
@@ -716,7 +716,7 @@ F 920 4 5 (Klar!)
 : 3816 2 9 ru
 : 3820 2 6 fen 
 - 3822
-: 3828 2 13 \"Herr 
+: 3828 2 13 "Herr
 : 3832 4 13 Dok
 : 3840 2 11 tor, 
 : 3844 2 11 ich 
@@ -725,7 +725,7 @@ F 920 4 5 (Klar!)
 : 3860 2 11 ne 
 : 3864 2 11 Bei
 : 3868 2 11 ne 
-: 3872 4 11 nicht!\" 
+: 3872 4 11 nicht!"
 - 3876
 : 3884 2 4 Ich 
 : 3888 2 9 sa
@@ -739,11 +739,11 @@ F 920 4 5 (Klar!)
 * 3932 4 4 ge
 * 3940 4 4 pflicht 
 - 3944
-F 3952 4 18 \"Sie 
+F 3952 4 18 "Sie
 F 3960 4 18 sind 
 F 3968 4 18 ge
 F 3976 2 18 feu
-F 3980 20 18 ert!\" 
+F 3980 20 18 ert!"
 - 4000
 F 4008 16 16 Scha
 F 4028 8 4 de! 

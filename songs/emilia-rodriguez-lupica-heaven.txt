@@ -8,7 +8,7 @@
 #LANGUAGE:Spanish
 #GAP:408,3979995347755
 #ALLKARAOKE_ID:emilia-rodriguez-lupica-heaven
-#ALLKARAOKE_LASTUPDATE:2024-07-05T00:10:36.216Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.337Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:119
 #ALLKARAOKE_VOLUME:0,96
@@ -71,7 +71,7 @@
 : 259 2 -2 cho y 
 : 263 3 -2 voy
 - 266
-: 269 2 5 \\\"Me 
+: 269 2 5 "Me
 : 273 3 7 mue
 : 277 2 7 ro 
 : 281 3 7 por 
@@ -87,7 +87,7 @@
 : 317 2 7 quie
 : 321 1 5 ro 
 : 323 2 3 u
-: 327 2 0 nir\\\"
+: 327 2 0 nir"
 - 329
 : 333 2 -2 pen
 : 337 4 0 san

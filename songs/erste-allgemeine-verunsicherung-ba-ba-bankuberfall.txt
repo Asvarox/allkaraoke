@@ -8,7 +8,7 @@
 #LANGUAGE:German
 #GAP:9307,742061936495
 #ALLKARAOKE_ID:erste-allgemeine-verunsicherung-ba-ba-bankuberfall
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:36.112Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.342Z
 #ALLKARAOKE_ARTISTORIGIN:AT
 #ALLKARAOKE_REALBPM:102
 #ALLKARAOKE_PREVIEWEND:66
@@ -246,7 +246,7 @@
 - 1693
 : 1720 4 9 Ich 
 : 1725 7 9 schrei’: 
-: 1733 7 9 \"Hän
+: 1733 7 9 "Hän
 : 1741 6 9 de 
 : 1748 5 4 hoch! 
 : 1754 2 4 Das 
@@ -266,7 +266,7 @@
 : 1828 4 13 gibt’s 
 : 1833 3 13 an 
 : 1837 6 9 Kra
-: 1844 4 9 wall!\" 
+: 1844 4 9 wall!"
 - 1848
 : 1853 2 9 Ei
 : 1856 3 9 ne 
@@ -277,7 +277,7 @@
 : 1878 3 9 um 
 : 1882 2 9 und 
 : 1885 6 9 sagt: 
-: 1892 8 9 \"Jun
+: 1892 8 9 "Jun
 : 1901 6 9 ger 
 : 1908 6 9 Mann! 
 - 1914
@@ -289,7 +289,7 @@
 : 1945 9 13 ligst 
 : 1988 10 9 hin
 : 1999 2 9 ten 
-: 2003 7 9 an!\" 
+: 2003 7 9 an!"
 - 2010
 : 2011 1 4 Ba-
 : 2013 2 6 Ba-
@@ -407,7 +407,7 @@
 - 2776
 : 2777 2 9 Ich 
 : 2780 7 9 sag: 
-: 2788 8 9 \"Jetzt 
+: 2788 8 9 "Jetzt
 : 2797 3 9 o
 : 2801 3 4 der 
 : 2805 6 9 nie 
@@ -415,7 +415,7 @@
 : 2825 3 9 mit 
 : 2829 3 9 der 
 : 2833 3 9 Ma
-: 2838 4 9 rie!\" 
+: 2838 4 9 rie!"
 - 2842
 : 2845 3 4 Der 
 : 2849 3 4 Kas
@@ -425,10 +425,10 @@
 : 2870 3 4 an 
 : 2874 2 9 und 
 : 2877 3 9 fragt: 
-: 2881 3 9 \"Was 
+: 2881 3 9 "Was
 : 2885 8 9 ha
 : 2894 6 9 ben 
-: 2901 5 9 sie?\" 
+: 2901 5 9 sie?"
 - 2906 3006
 - 3006
 : 3033 3 9 Ich 
@@ -460,23 +460,23 @@
 : 3168 4 9 Kas
 : 3173 7 9 sier 
 : 3181 7 9 sagt 
-: 3189 7 4 \"Nein! 
+: 3189 7 4 "Nein!
 : 3202 3 9 Was 
 : 3206 6 9 fällt 
 : 3213 3 9 Ih
 : 3217 3 9 nen 
-: 3221 4 9 ein?\" 
+: 3221 4 9 ein?"
 - 3225
-: 3233 3 4 \"Na
-: 3237 10 9 gut\" 
+: 3233 3 4 "Na
+: 3237 10 9 gut"
 : 3248 4 9 sag 
 : 3253 10 9 ich, 
-: 3296 3 9 \"dann 
+: 3296 3 9 "dann
 : 3300 5 9 zahl’ 
 : 3306 2 13 ich 
 : 3309 3 9 halt 
 : 3313 3 9 was 
-: 3317 6 0 ein!\" 
+: 3317 6 0 ein!"
 - 3323
 : 3324 1 4 Ba-
 : 3326 2 6 Ba-

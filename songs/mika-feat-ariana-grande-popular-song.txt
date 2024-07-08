@@ -8,7 +8,7 @@
 #LANGUAGE:English
 #GAP:3902,9153986609863
 #ALLKARAOKE_ID:mika-feat-ariana-grande-popular-song
-#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:22.500Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.752Z
 #ALLKARAOKE_REALBPM:99
 #ALLKARAOKE_VOLUME:0,8
 #P1:Popular Song
@@ -425,7 +425,7 @@ F 271 1 -2 I
 : 1623 1 12 ~
 : 1625 3 15 king 
 - 1628
-: 1634 1 17 \"How
+: 1634 1 17 "How
 : 1636 3 19 ~ 
 : 1643 5 17 come 
 : 1652 1 12 you 
@@ -433,7 +433,7 @@ F 271 1 -2 I
 : 1658 2 15 so 
 * 1663 1 14 cool
 * 1665 1 12 ~
-* 1667 2 10 ?\" 
+* 1667 2 10 ?"
 - 1669
 : 1673 1 3 ’Cause 
 : 1675 2 8 that’s 

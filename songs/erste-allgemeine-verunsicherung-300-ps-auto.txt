@@ -8,7 +8,7 @@
 #LANGUAGE:German
 #GAP:580,4893651047497
 #ALLKARAOKE_ID:erste-allgemeine-verunsicherung-300-ps-auto
-#ALLKARAOKE_LASTUPDATE:2024-06-19T00:10:36.106Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.341Z
 #ALLKARAOKE_ARTISTORIGIN:AT
 #ALLKARAOKE_REALBPM:125
 #ALLKARAOKE_PREVIEWEND:107
@@ -85,8 +85,8 @@ F 21 4 0 to
 * 577 2 21 zwei
 : 581 2 16 te 
 : 585 2 16 war 
-: 589 2 16 \"Tü
-: 593 6 16 tü\". 
+: 589 2 16 "Tü
+: 593 6 16 tü".
 - 599
 : 613 3 16 Die 
 : 617 3 14 gro
@@ -161,8 +161,8 @@ F 21 4 0 to
 : 1089 2 21 Voll
 : 1093 2 16 gas 
 : 1097 2 16 und 
-: 1101 2 16 \"Tut-
-: 1105 6 16 tut\"! 
+: 1101 2 16 "Tut-
+: 1105 6 16 tut"!
 - 1111
 : 1125 3 16 Herr 
 : 1129 3 14 On
@@ -458,7 +458,7 @@ F 1421 4 0 ren!
 : 3013 4 19 gas! 
 - 3017 3024
 - 3024
-F 3041 4 0 \"Bei 
+F 3041 4 0 "Bei
 F 3047 1 0 un
 F 3049 2 0 er
 F 3053 2 0 wünsch
@@ -487,7 +487,7 @@ F 3131 2 0 der
 F 3135 1 0 Me
 F 3137 4 0 cha
 F 3143 2 0 ni
-F 3147 2 0 ker!\" 
+F 3147 2 0 ker!"
 - 3149 3152
 - 3152
 : 3169 6 16 Jetzt 
@@ -531,7 +531,7 @@ F 3147 2 0 ker!\"
 * 3345 7 16 ba
 : 3353 4 14 den! 
 - 3357
-: 3361 6 9 \"Brnn 
+: 3361 6 9 "Brnn
 : 3369 2 4 ta
 : 3373 2 4 ta 
 : 3377 6 9 brnn! 
@@ -540,7 +540,7 @@ F 3147 2 0 ker!\"
 : 3401 2 9 eu
 : 3405 2 9 er 
 : 3409 7 9 Gna
-: 3417 3 9 den!\" 
+: 3417 3 9 den!"
 - 3420
 F 3421 6 0 Woo 
 F 3429 2 0 ha 

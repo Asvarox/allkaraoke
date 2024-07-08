@@ -8,7 +8,7 @@
 #LANGUAGE:Japanese
 #GAP:7520,955975782943
 #ALLKARAOKE_ID:izumi-kobayashi-dancing-star
-#ALLKARAOKE_LASTUPDATE:2024-06-05T00:10:12.023Z
+#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.363Z
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=chagustin
 #ALLKARAOKE_REALBPM:130
@@ -60,11 +60,11 @@
 : 204 1 4 o
 : 206 1 5 do
 : 208 1 7 re 
-: 211 3 9 \"Danc
+: 211 3 9 "Danc
 : 218 5 7 ing, 
 : 226 5 5 Danc
 : 235 5 4 ing 
-: 242 11 2 Night!\"
+: 242 11 2 Night!"
 - 253 255
 - 255
 : 273 3 9 Ko
@@ -108,11 +108,11 @@
 : 460 1 4 o
 : 462 1 5 do
 : 464 1 7 re 
-: 467 4 9 \"Danc
+: 467 4 9 "Danc
 : 474 5 7 ing, 
 : 482 6 5 Danc
 : 491 5 4 ing 
-: 499 9 2 Star!\"
+: 499 9 2 Star!"
 - 508
 : 526 2 -3 O
 : 530 4 2 mo
@@ -240,27 +240,27 @@
 : 1229 1 4 o
 : 1231 1 5 do
 : 1233 1 7 re 
-: 1235 4 9 \"Danc
+: 1235 4 9 "Danc
 : 1242 7 7 ing, 
 : 1250 6 5 Danc
 : 1258 5 4 ing 
-: 1266 16 2 Star!\"
+: 1266 16 2 Star!"
 - 1282
 : 1292 1 4 o
 : 1294 1 5 do
 : 1296 1 7 re 
-: 1299 6 9 \"Danc
+: 1299 6 9 "Danc
 : 1307 6 7 Iing, 
 : 1315 6 5 Danc
 : 1324 3 4 ing 
-: 1331 14 2 Star!\"
+: 1331 14 2 Star!"
 - 1345
 : 1356 1 4 o
 : 1358 1 5 do
 : 1360 1 7 re 
-: 1363 5 9 \"Danc
+: 1363 5 9 "Danc
 : 1371 6 7 ing, 
 * 1379 5 5 Danc
 * 1387 5 4 ing 
-* 1395 45 2 Star!\"
+* 1395 45 2 Star!"
 E
