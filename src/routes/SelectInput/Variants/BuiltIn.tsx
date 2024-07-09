@@ -195,13 +195,17 @@ const AudibleIconContainer = styled.div`
 `;
 
 const ErrorIcon = styled(Error)`
-  width: 2em;
-  height: 2em;
+  && {
+    width: 2em;
+    height: 2em;
+  }
   color: red;
 `;
 const SuccessIcon = styled(Check)`
-  width: 2em;
-  height: 2em;
+  && {
+    width: 2em;
+    height: 2em;
+  }
   color: white;
 `;
 

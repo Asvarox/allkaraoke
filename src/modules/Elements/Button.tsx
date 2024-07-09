@@ -1,10 +1,12 @@
 import { css } from '@emotion/react';
-import styled from '@emotion/styled';
-import { focused, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
-import isE2E from 'modules/utils/isE2E';
 
-const buttonCss = (focused?: boolean) => css`
+import styled from '@emotion/styled';
+import { typography } from 'modules/Elements/cssMixins';
+import isE2E from 'modules/utils/isE2E';
+import { ComponentProps } from 'react';
+
+const buttonCss = css`
   padding: 0.1rem 0.3rem;
   font-size: 2.6rem;
   display: flex;
@@ -13,68 +15,96 @@ const buttonCss = (focused?: boolean) => css`
   text-align: center;
   cursor: pointer;
   border: 0;
-
   background-color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-
-  ${typography};
-
   pointer-events: auto;
-  ${focused && buttonFocused};
   box-sizing: border-box;
-
   transition: 300ms;
+  ${typography},
 `;
 
-const buttonNotDisabledCss = css`
-  :hover {
-    ${focused};
+export const buttonFocusedAnimated = css`
+  @keyframes button-focus-loop {
+    0%,
+    100% {
+      transform: scale(1.045);
+    }
+    50% {
+      transform: scale(1.055);
+    }
   }
+  animation: button-focus-loop 600ms ease-in-out infinite both;
+  transform: scale(1.05);
 
-  :active {
+  background: ${styles.colors.text.active};
+`;
+export const buttonFocusedStatic = css`
+  transform: scale(1.05);
+
+  background: ${styles.colors.text.active};
+`;
+
+export const buttonFocused = isE2E() ? buttonFocusedStatic : buttonFocusedAnimated;
+
+export const buttonFocusedAnim = {
+  animation: 'focusAnimation 1000ms ease-in-out infinite both',
+};
+
+const buttonNotDisabledCss = css`
+  &:hover {
+    ${buttonFocusedAnim};
+  }
+  &&&:active {
     background: ${styles.colors.text.active};
   }
 `;
 
-export const LinkButton = styled.a<{ focused?: boolean; disabled?: boolean }>`
-  ${(props) => buttonCss(props.focused)};
-
+const ButtonBaseLink = styled.a`
+  ${buttonCss}
   && {
-    // increases specificity to override global styles
     color: white;
     text-decoration: none;
   }
 
-  ${(props) => !props.disabled && buttonNotDisabledCss};
-`;
+  &[data-focused='true'] {
+    ${buttonFocused};
+  }
 
-export const Button = styled.button<{ focused?: boolean }>`
-  ${(props) => buttonCss(props.focused)};
-
-  :not(:disabled) {
+  &[disabled='false'] {
     ${buttonNotDisabledCss};
   }
 `;
-// Disable for E2E as they wait for animation to finish (and since it's infinite they timeout)
-const buttonFocusedAnimation = isE2E()
-  ? css``
-  : css`
-      @keyframes button-focus-loop {
-        0%,
-        100% {
-          transform: scale(1.045);
-        }
-        50% {
-          transform: scale(1.055);
-        }
-      }
-      animation: button-focus-loop 600ms ease-in-out infinite both;
-    `;
 
-export const buttonFocused = css`
-  transform: scale(1.05);
-  background: ${styles.colors.text.active};
+export const LinkButton = ({
+  focused,
+  ...props
+}: ComponentProps<typeof ButtonBaseLink> & { focused?: boolean; disabled?: boolean }) => {
+  return <ButtonBaseLink {...props} />;
+};
 
-  ${buttonFocusedAnimation};
+const ButtonBase = styled.button`
+  ${buttonCss};
+
+  &:not(:disabled) {
+    ${buttonNotDisabledCss};
+  }
+
+  &[data-focused='true'] {
+    ${buttonFocused};
+  }
+
+  &[disabled='false'] {
+    ${buttonNotDisabledCss};
+  }
 `;
+
+export const Button = ({
+  focused,
+  ...props
+}: ComponentProps<typeof ButtonBase> & {
+  focused?: boolean;
+  disabled?: boolean;
+}) => {
+  return <ButtonBase data-focused={focused} {...props} />;
+};

@@ -114,10 +114,9 @@ const ScoresContainer = styled.div`
   flex: 1;
 `;
 
-const SongSelectionButton = styled(Button)<{ focused: boolean }>`
+const SongSelectionButton = styled(Button)`
   width: 40rem;
   font-size: 1.9vw;
-  //margin-bottom: 10rem;
   margin-left: auto;
 `;
 

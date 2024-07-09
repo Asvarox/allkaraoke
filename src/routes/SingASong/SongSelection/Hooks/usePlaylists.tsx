@@ -33,7 +33,7 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
           oneTime={false}
           timeoutMs={15_000}
           dismissKey="selection-playlist"
-          placement={'right'}
+          place={'right'}
           title={
             <>
               A combination of songs you might like and popular with other players.

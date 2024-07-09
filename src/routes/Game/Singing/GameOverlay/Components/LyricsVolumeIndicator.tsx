@@ -3,10 +3,11 @@ import { VolumeIndicator } from 'modules/Elements/VolumeIndicator';
 import InputManager from 'modules/GameEngine/Input/InputManager';
 import { PlayerEntity } from 'modules/Players/PlayersManager';
 import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';
+import { ComponentProps } from 'react';
 import Ping from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Ping';
 import PlayerStatus from 'routes/SingASong/SongSelection/Components/SongSettings/MicCheck/Status';
 
-interface Props {
+interface Props extends ComponentProps<typeof Container> {
   player: PlayerEntity;
   bottom?: boolean;
 }
@@ -39,7 +40,6 @@ const StyledPing = styled(Ping)`
   font-size: 2rem;
   margin-right: 1rem;
   -webkit-text-stroke: 0.1rem black;
-  //bottom: 1rem;
 `;
 
 export default LyricsVolumeIndicator;

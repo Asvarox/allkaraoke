@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-import { focusable, typography } from 'modules/Elements/cssMixins';
+import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
-import { PropsWithChildren, ReactNode } from 'react';
+import { ComponentProps, PropsWithChildren, ReactNode } from 'react';
 import { ValuesType } from 'utility-types';
 
-interface Props extends PropsWithChildren {
+interface Props extends PropsWithChildren, ComponentProps<typeof ConfigurationPosition> {
   focused?: boolean;
   disabled?: boolean;
   label: ReactNode;
@@ -31,9 +31,9 @@ export function nextValue<T extends readonly any[]>(
   return values[nextValueIndex(values, current, direction)];
 }
 
-export const Switcher = ({ focused, disabled, label, value, onClick, info, children, ...restProps }: Props) => (
+export const Switcher = ({ focused, disabled = false, label, value, onClick, info, children, ...restProps }: Props) => (
   <Container>
-    <ConfigurationPosition focused={focused} onClick={onClick} disabled={disabled} {...restProps}>
+    <ConfigurationPosition data-focused={focused} onClick={onClick} data-disabled={disabled} {...restProps}>
       <span>{label ? <>{label}:</> : ''}</span> <ConfigValue>{value}</ConfigValue>
       {children ?? null}
     </ConfigurationPosition>
@@ -50,21 +50,34 @@ export const InfoText = styled.div`
   text-align: justify;
 `;
 
-const ConfigurationPosition = styled.span<{ focused?: boolean; expanded?: boolean; disabled?: boolean }>`
+const ConfigurationPosition = styled.span<{ disabled?: boolean }>`
   background: rgba(0, 0, 0, 0.7);
 
   width: auto;
   ${typography};
 
   text-align: right;
-  font-size: ${({ expanded }) => (expanded ? '6rem' : '2.7rem')};
-  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  font-size: 2.7rem;
+  cursor: pointer;
   padding: 0.65rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  ${(props) => !props.disabled && focusable}
+  &[data-expanded='true'] {
+    font-size: 6rem;
+  }
+
+  &[data-disabled='true'] {
+    cursor: default;
+  }
+
+  &[data-focused='true'][data-disabled='false'] {
+    animation: focusAnimation 1000ms ease-in-out infinite both;
+  }
+  &:hover {
+    animation: focusAnimation 1000ms ease-in-out infinite both;
+  }
 `;
 
 const ConfigValue = styled.span`

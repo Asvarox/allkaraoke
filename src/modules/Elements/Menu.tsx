@@ -1,25 +1,53 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Button } from './Button';
+import { ComponentProps } from 'react';
+import { Button, LinkButton } from './Button';
 
 type ButtonSizes = 'small' | 'normal';
 
-export const MenuButton = styled(Button)<{ focused?: boolean; disabled?: boolean; size?: ButtonSizes }>`
-  margin: 0.5rem 0;
-  height: ${(props) => (props.size === 'small' ? '5rem' : '10rem')};
-  border: 0 solid black;
-
-  ${(props) =>
-    props.disabled &&
-    css`
-      cursor: default;
-      color: #989898;
-      background-color: #212121;
-      border-width: 0.3rem;
-      pointer-events: none;
-    `}
+const menuButtonDisabled = css`
+  cursor: default;
+  color: #989898;
+  background-color: #212121;
+  border-width: 0.3rem;
+  pointer-events: none;
 `;
 
+const menuButtonCss = css`
+  margin: 0.5rem 0;
+  height: 10rem;
+  border: 0 solid black;
+
+  &[data-disabled='true'] {
+    ${menuButtonDisabled}
+  }
+
+  &[data-size='small'] {
+    height: 5rem;
+  }
+`;
+
+const MenuBaseLink = styled(LinkButton)`
+  ${menuButtonCss}
+`;
+
+const MenuBaseButton = styled(Button)`
+  ${menuButtonCss}
+`;
+export const MenuButton = ({
+  size,
+  disabled,
+  ...props
+}: (ComponentProps<typeof Button> | ComponentProps<typeof LinkButton>) & {
+  size?: ButtonSizes;
+  disabled?: boolean;
+}) => {
+  const Component = 'href' in props ? MenuBaseLink : MenuBaseButton;
+  return (
+    // @ts-expect-error either Button or a link
+    <Component {...props} data-disabled={disabled} data-size={size} />
+  );
+};
 export const MenuContainer = styled.div`
   background: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;

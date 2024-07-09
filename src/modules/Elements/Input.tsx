@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { InfoText } from 'modules/Elements/Switcher';
-import { focusable, typography } from 'modules/Elements/cssMixins';
+import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { REGULAR_ALPHA_CHARS } from 'modules/hooks/useKeyboard';
 import {
@@ -36,7 +36,7 @@ export const Input = forwardRef(
 
     return (
       <div>
-        <Container focused={focused} className={className}>
+        <Container data-focused={focused} className={className}>
           <Label>{label}</Label>
           <StyledInput
             value={value}
@@ -55,19 +55,28 @@ export const Input = forwardRef(
 
 const Adornment = styled.span``;
 
-const Container = styled.div<{ focused: boolean }>`
+const Container = styled.div`
   background: black;
   caret: underscore;
-  ${focusable};
   ${typography};
   width: auto;
   display: flex;
   cursor: text;
   padding: 0.25em;
   align-items: center;
+
+  &[data-focused='true'] {
+    animation: focusAnimation 1000ms ease-in-out infinite both;
+  }
+  &:hover {
+    animation: focusAnimation 1000ms ease-in-out infinite both;
+  }
 `;
 
 const Label = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding-right: 0.5em;
   white-space: nowrap;
   width: auto;

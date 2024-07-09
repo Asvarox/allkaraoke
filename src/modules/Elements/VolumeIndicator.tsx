@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import styles from 'modules/GameEngine/Drawing/styles';
 import PlayersManager from 'modules/Players/PlayersManager';
 import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';
-import { ForwardedRef, forwardRef, useCallback, useMemo, useState } from 'react';
+import { ComponentProps, ForwardedRef, forwardRef, useCallback, useMemo, useState } from 'react';
 import tinycolor from 'tinycolor2';
 
 const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
@@ -13,8 +13,7 @@ const usePlayerColor = (playerNumber: 0 | 1 | 2 | 3) => {
   }, [playerNumber]);
 };
 
-const VolumeIndicatorBase = styled.div<{ color: string }>`
-  background: linear-gradient(270deg, rgba(${(props) => props.color}, 1) 0%, rgba(${(props) => props.color}, 0) 100%);
+const VolumeIndicatorBase = styled.div`
   height: 100%;
   width: 100%;
   position: absolute;
@@ -39,11 +38,24 @@ export const VolumeIndicator = forwardRef(
     const player = PlayersManager.getPlayer(playerNumber);
     if (!player) return null;
 
-    return <VolumeIndicatorBase color={color} {...rest} style={{ transform: `scaleX(${percent})` }} ref={ref} />;
+    return (
+      <VolumeIndicatorBase
+        // color={color}
+        {...rest}
+        style={{
+          transform: `scaleX(${percent})`,
+          background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
+        }}
+        ref={ref}
+      />
+    );
   },
 );
 
-export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: 0 | 1 | 2 | 3 }) => {
+export const PlayerMicCheck = ({
+  playerNumber,
+  ...props
+}: { playerNumber: 0 | 1 | 2 | 3 } & ComponentProps<typeof VolumeIndicatorBase>) => {
   const [elem, setElem] = useState<HTMLDivElement | null>();
 
   const cb = useCallback(
@@ -60,5 +72,13 @@ export const PlayerMicCheck = ({ playerNumber, ...props }: { playerNumber: 0 | 1
   usePlayerMicData(playerNumber, cb);
   const color = usePlayerColor(playerNumber);
 
-  return <VolumeIndicatorBase {...props} color={color} ref={setElem} />;
+  return (
+    <VolumeIndicatorBase
+      {...props}
+      ref={setElem}
+      style={{
+        background: `linear-gradient(270deg, rgba(${color}, 1) 0%, rgba(${color}, 0) 100%)`,
+      }}
+    />
+  );
 };

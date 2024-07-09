@@ -17,9 +17,9 @@ type subscriptionChannels = NetworkSubscribeMessage['channel'];
 class RemoteMicManager extends Listener<[string, NetworkSetPermissionsMessage['level']]> {
   private remoteMics: RemoteMic[] = [];
   private micAccessMap: Record<string, NetworkSetPermissionsMessage['level']> =
-    storage.getItem(RememberedAccessesKey) ?? {};
+    storage.local?.getItem(RememberedAccessesKey) ?? {};
 
-  private subscriptions: Record<subscriptionChannels, string[]> = storage.session.getItem(
+  private subscriptions: Record<subscriptionChannels, string[]> = storage.session?.getItem(
     RememberedSubscriptionsKey,
   ) ?? { 'remote-mics': [] };
 
@@ -59,19 +59,19 @@ class RemoteMicManager extends Listener<[string, NetworkSetPermissionsMessage['l
 
     this.micAccessMap[id] = permission;
 
-    storage.setItem(RememberedAccessesKey, this.micAccessMap);
+    storage?.setItem(RememberedAccessesKey, this.micAccessMap);
     this.onUpdate(id, permission);
   };
 
   public addSubscription = (id: string, channel: subscriptionChannels) => {
     this.subscriptions[channel] = [...new Set([...this.subscriptions[channel], id])];
-    storage.session.setItem(RememberedSubscriptionsKey, this.subscriptions);
+    storage.session?.setItem(RememberedSubscriptionsKey, this.subscriptions);
     events.remoteMicSubscribed.dispatch(id, channel);
   };
 
   public removeSubscription = (id: string, channel: subscriptionChannels) => {
     this.subscriptions[channel] = this.subscriptions[channel]?.filter((remoteMicId) => remoteMicId !== id) ?? [];
-    storage.session.setItem(RememberedSubscriptionsKey, this.subscriptions);
+    storage.session?.setItem(RememberedSubscriptionsKey, this.subscriptions);
   };
 }
 

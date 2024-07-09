@@ -35,16 +35,14 @@ export default function SongPage({ songData, background, width, height, children
   );
 }
 
-const FocusedSongContainer = styled.div<{ video: string; width: number; height: number }>(
-  (props) => `
-    width: ${props.width}px;
-    top: 0;
-    height: ${props.height}px;
-    overflow-y: hidden;
-    background: black;
-    position: relative;
-`,
-);
+const FocusedSongContainer = styled.div<{ video: string; width: number; height: number }>`
+  width: ${(props) => props.width}px;
+  top: 0;
+  height: ${(props) => props.height}px;
+  overflow-y: hidden;
+  background: black;
+  position: relative;
+`;
 
 const Background = styled.div`
   z-index: 1;

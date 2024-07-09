@@ -23,7 +23,7 @@ function FullscreenButton() {
   }, []);
 
   return (
-    <Tooltip title="Toggle fullscreen">
+    <Tooltip title="Toggle fullscreen" place="bottom-end">
       <IconButton
         data-test="toggle-fullscreen"
         size="small"

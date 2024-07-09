@@ -6,13 +6,17 @@ import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
 import useAbsoluteFrame from 'videos/support/AbsoluteFrame/useAbsoluteFrame';
 import { TransitionCircles } from 'videos/support/Components/TransitionCircles';
 
-const BackgroundVariant = styled(BackgroundStatic)<{ red?: boolean }>`
-  ${(props) =>
-    props.red &&
-    `
-            background: linear-gradient(-45deg, ${colorSets.blue.text}, ${colorSets.red.text}, ${colorSets.red.stroke}, ${colorSets.blue.stroke});
-            background-size: 400% 400%;
-    `};
+const BackgroundVariant = styled(BackgroundStatic)`
+  &[data-red='true'] {
+    background: linear-gradient(
+      -45deg,
+      ${colorSets.blue.text},
+      ${colorSets.red.text},
+      ${colorSets.red.stroke},
+      ${colorSets.blue.stroke}
+    );
+    background-size: 400% 400%;
+  }
   position: absolute;
 `;
 
@@ -40,7 +44,7 @@ export const Scene: React.FC<Props> = ({ children, delay = 0, transition = true,
       <BackgroundVariant
         bgtheme="regular"
         data-id={id}
-        red={color === 'red'}
+        data-red={color === 'red'}
         style={{
           backgroundPosition: `${bgPosition}% 50%`,
           clipPath: transition ? `url(#${id})` : undefined,

@@ -144,7 +144,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         ref={virtuoso}
         groupSizes={groupSizes}
         itemContent={(index, groupIndex, itemProps) => (
-          <ListRowWrapper group={groupedRows[groupIndex].group} {...itemProps}>
+          <ListRowWrapper data-is-new={groupedRows[groupIndex].group.isNew} {...itemProps}>
             {flatRows[index].map((song) => props.renderItem(song, groupedRows[groupIndex].group))}
             {props.placeholder &&
               flatRows[index].length < props.perRow &&

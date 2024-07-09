@@ -182,10 +182,6 @@ const Description = styled.div`
     color: white;
     font-size: 2rem;
     line-height: 3.2rem;
-
-    //${GameCode} {
-    //  line-height: 1;
-    //}
   }
 `;
 

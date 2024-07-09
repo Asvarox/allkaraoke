@@ -1,4 +1,3 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { SingSetup, SongPreview } from 'interfaces';
 import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackground';
@@ -119,7 +118,7 @@ export default function SongPreviewComponent({
         isPopular={isPopular}
         background={expanded || showVideo}
         video={
-          <Video show={showVideo} expanded={expanded} height={finalHeight} id="preview-video-container">
+          <Video data-show={showVideo} data-expanded={expanded} height={finalHeight} id="preview-video-container">
             <VideoPlayer
               width={0}
               height={0}
@@ -144,11 +143,11 @@ export default function SongPreviewComponent({
         left={left}
         width={videoWidth}
         height={finalHeight}
-        showVideo={showVideo}
-        expanded={expanded}
-        data-test="song-preview"
-        data-song={songPreview.id}>
-        <Content expanded={expanded}>
+        data-show-video={showVideo}
+        data-expanded={expanded}
+        data-song={songPreview.id}
+        data-test="song-preview">
+        <Content data-expanded={expanded}>
           {expanded && (
             <SongSettings
               songPreview={songPreview}
@@ -166,32 +165,32 @@ export default function SongPreviewComponent({
 const BaseSongPreviewContainer = styled(FinalSongCard)<{
   width: number;
   height: number;
-  expanded: boolean;
-  showVideo: boolean;
 }>`
   --preview-padding: 5rem;
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   position: absolute;
-  z-index: ${(props) => (props.expanded ? 201 : 3)};
+  z-index: 3;
   overflow: hidden;
-  visibility: ${(props) => (props.expanded || props.showVideo ? 'visible' : 'hidden')};
 
-  ${(props) =>
-    props.expanded
-      ? css`
-          border: 0;
-          border-radius: 0;
-          position: fixed;
-
-          padding: var(--preview-padding);
-        `
-      : css`
-          pointer-events: none;
-          ${props.showVideo && props.theme.graphicSetting === 'high'
-            ? 'animation: rhythmPulse 1s infinite'
-            : 'scale: 1.2'};
-        `};
+  visibility: hidden;
+  &[data-expanded='true'],
+  &[data-show-video='true'] {
+    visibility: visible;
+  }
+  &[data-expanded='true'] {
+    z-index: 201;
+    border-radius: 0;
+    border: 0;
+    position: fixed;
+    padding: var(--preview-padding);
+  }
+  &[data-expanded='false'] {
+    pointer-events: none;
+    &[data-show-video='true'] {
+      animation: rhythmPulse 1s infinite; // todo disable for graphic setting low
+    }
+  }
 
   @keyframes rhythmPulse {
     0% {
@@ -229,15 +228,17 @@ interface SongPreviewContainerProps
 
 const SongPreviewContainer = (props: SongPreviewContainerProps) => {
   const realBpm = props.song.realBpm || (props.song.bpm > 300 ? props.song.bpm / 4 : props.song.bpm / 2);
+  const expanded = props['data-expanded'];
 
   return (
     <BaseSongPreviewContainer
+      {...props}
       style={{
-        top: props.expanded ? `calc(50vh - ${props.height}px / 2)` : props.top,
-        left: props.expanded ? 0 : props.left,
+        ...props.style,
+        top: expanded ? `calc(50vh - ${props.height}px / 2)` : props.top,
+        left: expanded ? 0 : props.left,
         animationDuration: `${60 / realBpm}s`,
       }}
-      {...props}
     />
   );
 };
@@ -252,33 +253,45 @@ const Backdrop = styled.div`
   z-index: 201;
 `;
 
-const Video = styled.div<{ show: boolean; expanded: boolean; height: number }>`
-  ${(props) =>
-    props.expanded
-      ? css`
-          position: fixed;
-          inset: 0;
-          clip-path: inset(calc((100vh - ${props.height}px) / 2) 0);
-        `
-      : css`
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-image: none !important;
-          border-radius: 0.5rem;
-        `}
+const Video = styled.div<{ height: number }>`
+  &[data-expanded='true'] {
+    position: fixed;
+    inset: 0;
+    clip-path: inset(calc((100vh - ${(props) => props.height}px) / 2) 0);
+  }
+  &[data-expanded='true'],
+  &[data-show='true'] {
+    div {
+      transition: 1000ms;
+    }
+  }
+  &[data-expanded='false'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: none !important;
+    border-radius: 0.5rem;
+  }
 
-  div {
-    opacity: ${({ show }) => (show ? 1 : 0)};
-    transition: ${({ show, expanded }) => (show || expanded ? 1000 : 0)}ms;
+  &[data-show='false'] {
+    div {
+      opacity: 0;
+    }
+  }
+  &[data-show='true'] {
+    div {
+      opacity: 1;
+    }
   }
 `;
 
-const Content = styled.div<{ expanded: boolean }>`
+const Content = styled.div`
   inset: auto var(--preview-padding);
   position: fixed; /* makes sure Autocomplete dropdown doesn't get clipped */
   z-index: 100;
-  ${(props) => !props.expanded && `transform: scale(0.1);`}
+  &[data-expanded='false'] {
+    transform: scale(0.1);
+  }
 
   border-radius: 0.5rem;
 

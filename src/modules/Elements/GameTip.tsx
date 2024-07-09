@@ -1,6 +1,6 @@
 import { QrCode2 } from '@mui/icons-material';
 import { randomInt } from 'modules/utils/randomValue';
-import { useRef } from 'react';
+import { HTMLProps, ReactNode, useRef } from 'react';
 
 const data = [
   <>
@@ -63,11 +63,11 @@ const data = [
   </>,
 ];
 
-interface Props {
+interface Props extends HTMLProps<HTMLElement> {
   as?: any;
 }
 
-export const GameTip = ({ as = 'h4', ...restProps }: Props) => {
+export const GameTip = ({ as = 'h4', ...restProps }: Props): ReactNode => {
   const randomValue = useRef(randomInt(0, data.length - 1));
   // const randomValue = useRef(randomInt(0, 0));
 

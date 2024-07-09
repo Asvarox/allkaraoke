@@ -1,4 +1,3 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
@@ -111,7 +110,7 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         {isLoading &&
           new Array(6).fill(0).map((_, i) => (
             <Skeleton variant="rectangular" width="100%" height="10rem" key={i}>
-              <LanguageEntry excluded focused={false}>
+              <LanguageEntry data-excluded focused={false}>
                 <Flag language={['English']} />
               </LanguageEntry>
             </Skeleton>
@@ -119,12 +118,15 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
         {languageList.map(({ name, count }) => {
           const excluded = excludedLanguages?.includes(name) ?? false;
           return (
-            <LanguageEntry key={name} excluded={excluded} {...register(`lang-${name}`, () => toggleLanguage(name))}>
+            <LanguageEntry
+              key={name}
+              data-excluded={excluded}
+              {...register(`lang-${name}`, () => toggleLanguage(name))}>
               <Check>{excluded ? <CheckBoxOutlineBlank /> : <CheckBox />}</Check>
               <span>
                 <LanguageName>{name}</LanguageName> ({count} songs)
               </span>
-              <LanguageFlagBackground excluded={excluded}>
+              <LanguageFlagBackground data-excluded={excluded}>
                 <Flag language={[name]} />
               </LanguageFlagBackground>
             </LanguageEntry>
@@ -193,16 +195,13 @@ const LanguageName = styled.span`
   transition: 300ms;
 `;
 
-const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
+const LanguageFlagBackground = styled.div`
   transition: 300ms;
   opacity: 0.95;
-  ${(props) =>
-    props.excluded
-      ? css`
-          filter: grayscale(0.6);
-          opacity: 0.5;
-        `
-      : ''}
+  &[data-excluded='true'] {
+    filter: grayscale(0.6);
+    opacity: 0.5;
+  }
 
   position: absolute;
   bottom: 0;
@@ -217,15 +216,14 @@ const LanguageFlagBackground = styled.div<{ excluded: boolean }>`
   height: 8rem;
 `;
 
-const LanguageEntry = styled(MenuButton)<{ excluded: boolean; focused: boolean }>`
-  ${(props) =>
-    props.excluded
-      ? css`
-          ${props.focused ? '' : 'background: rgba(0, 0, 0, 0.55)'};
-          text-decoration: line-through white;
-          opacity: 0.5;
-        `
-      : ''}
+const LanguageEntry = styled(MenuButton)`
+  &[data-excluded='true'] {
+    text-decoration: line-through white;
+    opacity: 0.5;
+    &[data-focused='false'] {
+      background: rgba(0, 0, 0, 0.55);
+    }
+  }
   ${typography};
   display: flex;
   align-items: center;

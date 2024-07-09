@@ -1,4 +1,3 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { MenuContainer } from 'modules/Elements/Menu';
 import { useCallback, useEffect, useState } from 'react';
@@ -44,7 +43,7 @@ function FacebookLink() {
   }, []);
 
   return (
-    <Container small={!!mobilePhoneMode} show={show}>
+    <Container data-small={!!mobilePhoneMode} show={show}>
       <div
         dangerouslySetInnerHTML={{ __html: FBEmbedCode(350, 750) }}
         style={{
@@ -59,7 +58,7 @@ function FacebookLink() {
   );
 }
 
-const Container = styled(MenuContainer)<{ small: boolean; show: boolean }>`
+const Container = styled(MenuContainer)<{ show: boolean }>`
   transition: 1000ms;
   opacity: ${(props) => (props.show ? 1 : 0)};
   position: absolute;
@@ -69,19 +68,18 @@ const Container = styled(MenuContainer)<{ small: boolean; show: boolean }>`
   margin: 0;
   text-decoration: none;
   text-align: justify;
-  ${(props) =>
-    props.small &&
-    css`
-      width: 25rem;
-      right: 1rem;
 
-      h2 {
-        font-size: 1.5rem;
-      }
-      h5 {
-        font-size: 1.15rem;
-      }
-    `}
+  &[data-small='true'] & {
+    width: 25rem;
+    right: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.15rem;
+    }
+  }
 
   view-transition-name: fb-notification;
 `;

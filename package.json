@@ -33,6 +33,7 @@
     "react-helmet": "^6.1.0",
     "react-hotkeys-hook": "^3.4.7",
     "react-toastify": "^9.1.3",
+    "react-tooltip": "^5.27.0",
     "react-use": "^17.5.0",
     "react-youtube": "^10.1.0",
     "remotion": "^4.0.84",

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { MenuButton } from 'modules/Elements/Menu';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
@@ -115,17 +114,6 @@ const Container = styled.div`
 
   @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
     flex-direction: row;
-  }
-
-  ${MenuButton} {
-    padding: 0.5em;
-    height: 72px;
-
-    margin-bottom: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
   }
 
   h5 {

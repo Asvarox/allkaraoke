@@ -245,3 +245,15 @@ code {
   by growing it to cover the bounds of the element */
   object-fit: cover;
 }
+
+@keyframes focusAnimation {
+    100% {
+        box-shadow: inset 0px 0px 0px 2px orange;
+    }
+    50% {
+        box-shadow: inset 0px 0px 0px 4px orange;
+    }
+    0% {
+        box-shadow: inset 0px 0px 0px 2px orange;
+    }
+}

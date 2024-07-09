@@ -114,6 +114,7 @@ export const Autocomplete = forwardRef(
                 role="listitem"
                 data-index={index}
                 data-focused={index === focusedOption}
+                data-e2e-focused={index === focusedOption}
                 key={option}
                 focused={index === focusedOption}
                 onClick={() => {

@@ -1,10 +1,10 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
 import { ComponentProps, ReactNode, useCallback } from 'react';
+import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import SongFlag from 'routes/SingASong/SongSelection/Components/SongCard/SongFlag';
 import { TopContainer } from 'routes/SingASong/SongSelection/Components/SongCard/TopContainer';
 
@@ -19,6 +19,7 @@ interface Props extends ComponentProps<typeof SongCardContainer> {
   video?: ReactNode;
   isPopular: boolean;
   forceFlag: boolean;
+  'data-expanded'?: boolean;
 }
 
 export const FinalSongCard = ({
@@ -31,14 +32,15 @@ export const FinalSongCard = ({
   handleClick,
   isPopular,
   background = true,
-  expanded = false,
   forceFlag = false,
   ...restProps
 }: Props) => {
+  const expanded = restProps['data-expanded'] ?? false;
   const onClickCallback = useCallback(
     () => (handleClick ? handleClick(index!, groupLetter) : undefined),
     [handleClick, index, groupLetter],
   );
+  const [graphicSetting] = useSettingValue(GraphicSetting);
 
   return (
     <SongCardContainer {...restProps} onClick={handleClick ? onClickCallback : undefined}>
@@ -47,15 +49,16 @@ export const FinalSongCard = ({
           style={{
             backgroundImage: `url('https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg')`,
           }}
-          focused={focused}
-          expanded={expanded}
+          data-focused={expanded ? false : focused}
+          data-expanded={restProps['data-expanded']}
+          data-graphic-setting={graphicSetting}
         />
       )}
-      <SongInfo expanded={expanded}>
+      <SongInfo data-expanded={expanded}>
         {!expanded && <TopContainer song={song} isPopular={isPopular} video={video} />}
-        <SongListEntryDetailsArtist expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
-        <SongListEntryDetailsTitle expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
-        <ExpandedData expanded={expanded}>
+        <SongListEntryDetailsArtist data-expanded={expanded}>{song.artist}</SongListEntryDetailsArtist>
+        <SongListEntryDetailsTitle data-expanded={expanded}>{song.title}</SongListEntryDetailsTitle>
+        <ExpandedData data-expanded={expanded}>
           {expanded && (
             <>
               {song.author && (
@@ -94,14 +97,14 @@ export const Language = styled(SongFlag)`
   opacity: 0.95;
 `;
 
-export const ExpandedData = styled.div<{ expanded: boolean }>`
+export const ExpandedData = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 `;
 
-const SongInfo = styled.div<{ expanded: boolean }>`
+const SongInfo = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -112,12 +115,10 @@ const SongInfo = styled.div<{ expanded: boolean }>`
 
   flex-direction: column;
 
-  ${(props) =>
-    props.expanded &&
-    css`
-      align-items: flex-start;
-      justify-content: flex-start;
-    `}
+  &[data-expanded='true'] {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 `;
 
 export const SongCardContainer = styled.div`
@@ -135,28 +136,38 @@ export const SongCardContainer = styled.div`
   border-radius: 1rem;
 `;
 
-export const SongCardBackground = styled.div<{
-  focused: boolean;
-  expanded: boolean;
-}>`
+export const SongCardBackground = styled.div`
   background-color: #2b2b2b;
-  ${(props) => !props.expanded && 'border-radius: 1rem;'}
+  border-radius: 1rem;
+  &[data-expanded='true'] {
+    border-radius: 0;
+  }
   position: absolute;
   z-index: -1;
   inset: 0;
-  ${(props) =>
-    props.theme.graphicSetting === 'high'
-      ? css`
-          background-size: ${props.focused ? 100 : 110}%;
-          ${!props.focused ? 'filter: grayscale(90%);' : ''}
-          ${props.expanded ? 'filter: blur(10px);' : ''}
-                        transition: 300ms;
-          opacity: ${props.focused ? 1 : 0.8};
-        `
-      : css`
-          background-size: 100%;
-          opacity: ${props.focused ? 1 : 0.6};
-        `}
+
+  &[data-graphic-setting='high'] {
+    transition: 300ms;
+    &[data-focused='true'] {
+      background-size: 100%;
+      opacity: 1;
+    }
+    &[data-focused='false'] {
+      background-size: 110%;
+      filter: grayscale(90%);
+      opacity: 0.8;
+    }
+    &[data-expanded='true'] {
+      filter: blur(10px);
+    }
+  }
+  &[data-graphic-setting='low'] {
+    background-size: 100%;
+    opacity: 0.6;
+    &[data-focused='true'] {
+      opacity: 1;
+    }
+  }
   background-position: center center;
 `;
 
@@ -169,7 +180,11 @@ export const SongListEntryDetails = styled.span<{ expanded?: boolean }>`
   ${typography};
 
   text-align: right;
-  font-size: ${({ expanded }) => (expanded ? '6rem' : '2.7rem')};
+  font-size: 2.7rem;
+
+  &[data-expanded='true'] {
+    font-size: 6rem;
+  }
 `;
 
 export const SongListEntryDetailsArtist = styled(SongListEntryDetails)`

@@ -1,24 +1,32 @@
 import dayjs from 'dayjs';
 import { Song, SongPreview } from 'interfaces';
-import localForage from 'localforage';
 import convertTxtToSong from 'modules/Songs/utils/convertTxtToSong';
 import { generatePlayerChangesForTrack } from 'modules/Songs/utils/generatePlayerChanges';
 import getSongId from 'modules/Songs/utils/getSongId';
 import mergeTracks from 'modules/Songs/utils/mergeTracks';
 import { lastVisit } from 'modules/Stats/lastVisit';
+import storage from 'modules/utils/storage';
 import { getSongPreview } from './utils';
 
-let storage: LocalForage | null = null;
+let store: Promise<LocalForage | typeof storage.memory> | null = null;
 
-const getStorage = () => {
-  if (!storage) {
-    storage = localForage.createInstance({
-      name: 'songs_v2',
-    });
+async function getStorage() {
+  if (!store) {
+    if ('localStorage' in globalThis) {
+      try {
+        store = import('localforage').then(({ default: localForage }) =>
+          localForage.createInstance({ name: 'songs_v2' }),
+        );
+      } catch (e) {
+        console.error(e);
+        store = Promise.resolve(storage.memory);
+      }
+    } else {
+      store = Promise.resolve(storage.memory);
+    }
   }
-
-  return storage;
-};
+  return store;
+}
 
 const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
 
@@ -26,7 +34,9 @@ class SongsService {
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
   public store = async (song: Song) => {
-    await getStorage().setItem(this.generateSongFile(song), {
+    await (
+      await getStorage()
+    )?.setItem(this.generateSongFile(song), {
       ...song,
       lastUpdate: new Date().toISOString(),
     });
@@ -56,7 +66,7 @@ class SongsService {
   public getCurrentIndex = () => this.finalIndex;
 
   public getDeletedSongsList = async () => {
-    const list = await getStorage().getItem<string[]>(DELETED_SONGS_KEY);
+    const list = await (await getStorage())?.getItem<string[]>(DELETED_SONGS_KEY);
 
     return list ?? [];
   };
@@ -79,9 +89,9 @@ class SongsService {
     });
     const localSongs = storageIndexWithUpdatedSongs.map((song) => song.id);
 
-    storageIndex.forEach((song) => {
+    storageIndex.forEach(async (song) => {
       if (!localSongs.includes(song.id)) {
-        getStorage().removeItem(song.id);
+        (await getStorage()).removeItem(song.id);
       }
     });
 
@@ -102,19 +112,21 @@ class SongsService {
   };
 
   public deleteSong = async (songId: string) => {
-    await getStorage().removeItem(songId);
+    await (await getStorage()).removeItem(songId);
 
     return this.reloadIndex();
   };
 
   public softDeleteSong = async (songId: string) => {
     const deletedItems = await this.getDeletedSongsList();
-    await getStorage().setItem(DELETED_SONGS_KEY, [...new Set([...deletedItems, songId])]);
+    await (await getStorage()).setItem(DELETED_SONGS_KEY, [...new Set([...deletedItems, songId])]);
     return this.reloadIndex();
   };
   public restoreSong = async (songId: string) => {
     const deletedItems = await this.getDeletedSongsList();
-    await getStorage().setItem(
+    await (
+      await getStorage()
+    ).setItem(
       DELETED_SONGS_KEY,
       deletedItems.filter((item) => item !== songId),
     );
@@ -122,7 +134,7 @@ class SongsService {
   };
 
   private getLocal = async (songId: string) => {
-    const song = await getStorage().getItem<Song>(decodeURIComponent(songId));
+    const song = await (await getStorage())?.getItem<Song>(decodeURIComponent(songId));
     if (song && !!song.tracks) {
       return {
         ...song,
@@ -156,7 +168,7 @@ class SongsService {
   private getKeys = async () => {
     const specialKeys = [DELETED_SONGS_KEY];
 
-    return (await getStorage().keys()).filter((key) => !specialKeys.includes(key));
+    return (await (await getStorage()).keys()).filter((key) => !specialKeys.includes(key));
   };
 }
 

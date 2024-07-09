@@ -59,6 +59,7 @@ const Container = styled.div`
 `;
 
 const ItemContainer = styled.div<{ active?: boolean }>`
+  cursor: pointer;
   flex: 1;
   display: flex;
   flex-direction: column;

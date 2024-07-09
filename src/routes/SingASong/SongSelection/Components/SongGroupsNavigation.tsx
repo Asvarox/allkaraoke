@@ -63,7 +63,6 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
           return (
             <SongsGroupButton
               key={group.name}
-              active={active}
               onClick={() => onScrollToGroup(group)}
               data-active={active}
               data-test={`group-navigation-${group.name}`}>
@@ -91,7 +90,7 @@ const Container = styled.div`
   background: rgba(0, 0, 0, 0.75);
 `;
 
-const SongsGroupButton = styled(Button)<{ active: boolean }>`
+const SongsGroupButton = styled(Button)`
   border: none;
   cursor: pointer;
   ${typography};
@@ -103,5 +102,11 @@ const SongsGroupButton = styled(Button)<{ active: boolean }>`
   font-size: 2.3rem;
   z-index: 1;
   color: ${styles.colors.text.default};
-  background: ${(props) => (props.active ? styles.colors.lines.star.stroke : 'rgba(0, 0, 0, 0.7)')};
+
+  &[data-active='true'] {
+    background: ${styles.colors.text.active};
+  }
+  &[data-active='false'] {
+    background: rgba(0, 0, 0, 0.7);
+  }
 `;

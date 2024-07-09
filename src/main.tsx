@@ -1,12 +1,13 @@
-import createCache from '@emotion/cache';
-import { CacheProvider } from '@emotion/react';
 import 'modules/GameEvents/eventListeners';
+import 'modules/RemoteMic/eventListeners';
 import 'modules/Stats';
 import 'modules/utils/array-at-polyfill';
 import 'modules/utils/array-findLastIndex-polyfill';
 import 'modules/utils/exposeSingletons';
 import 'modules/utils/wdyr';
 
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
 import { browserTracingIntegration, init, setUser } from '@sentry/react';
 import App from 'App';
 import 'index.css';

@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import CircleIcon from '@mui/icons-material/Circle';
 import ErrorIcon from '@mui/icons-material/Error';
 import WarningIcon from '@mui/icons-material/Warning';
 import { typography } from 'modules/Elements/cssMixins';
 import { inputStatus } from 'modules/GameEngine/Input/Interface';
+import { ComponentProps } from 'react';
 
-interface Props {
+interface Props extends ComponentProps<typeof StatusContainer> {
   status: inputStatus;
   tooltipPosition?: 'start' | 'end';
 }
@@ -51,10 +51,14 @@ const StatusContainer = styled.span`
   }
 `;
 
-const OkIcon = styled(CircleIcon)`
-  fill: #ffffff;
-  stroke: black;
-  stroke-width: 1px;
+const OkIcon = styled.div`
+  margin: 0.15rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid black;
+  border-radius: 50%;
 `;
 
 const UnavailableIcon = styled(ErrorIcon)`
@@ -69,7 +73,8 @@ const UnstableIcon = styled(WarningIcon)`
 const StatusDescription = styled.div<{ position: Props['tooltipPosition'] }>`
   ${typography};
   position: absolute;
-  ${(props) => (props.position === 'end' ? 'left: 100%' : 'right: 150%')};
+  left: ${(props) => (props.position === 'end' ? '100%' : 'auto')};
+  right: ${(props) => (props.position === 'end' ? 'auto' : '150%')};
   top: -0.5rem;
   font-size: 1.5rem;
   height: 100%;
