@@ -10,8 +10,10 @@ import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkCl
 import { NetworkSongListMessage } from 'modules/RemoteMic/Network/messages';
 import SongDao from 'modules/Songs/SongsService';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
+import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import { useEffect, useMemo, useState } from 'react';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
+import { CustomVirtualization } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
 import { searchList } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 
 interface Props {
@@ -68,6 +70,8 @@ function RemoteSongList({
     return searchList(songList, search);
   }, [search, songList]);
 
+  const unit = useBaseUnitPx();
+
   return (
     <Container>
       <TopBar>
@@ -80,19 +84,30 @@ function RemoteSongList({
           data-test="search-input"
         />
       </TopBar>
-      {finalSongList.map((song) => {
-        return (
-          <SongItemContainer key={`${song.artist}-${song.title}`} data-test={song.id}>
-            <Language>
-              <Flag language={song.language} />
-            </Language>
-            <ArtistTitle>
-              <Title>{song.title}</Title>
-              <Artist>{song.artist}</Artist>
-            </ArtistTitle>
-          </SongItemContainer>
-        );
-      })}
+      <CustomVirtualization
+        forceRenderItem={-1}
+        overScan={100}
+        components={{}}
+        context={{}}
+        groupSizes={[finalSongList.length]}
+        groupHeaderHeight={1}
+        groupContent={() => null}
+        itemHeight={unit * 7 + 1}
+        itemContent={(index, groupIndex, itemProps) => {
+          const song = finalSongList[index];
+          return (
+            <SongItemContainer data-test={song.id} {...itemProps}>
+              <Language>
+                <Flag language={song.language} />
+              </Language>
+              <ArtistTitle>
+                <Title>{song.title}</Title>
+                <Artist>{song.artist}</Artist>
+              </ArtistTitle>
+            </SongItemContainer>
+          );
+        }}
+      />
     </Container>
   );
 }
@@ -114,14 +129,18 @@ const Container = styled.div`
   padding-bottom: 5rem;
   padding-top: 6rem;
   position: relative;
+  flex: 1 1 auto;
+  min-height: 100vh;
+  max-height: 100vh;
 `;
 
 const SongItemContainer = styled.div`
   background: rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  height: 7rem;
+  padding: 0 1rem;
   gap: 1rem;
-  padding: 1.5rem 1rem;
   border-bottom: 1px solid black;
   overflow: hidden;
 `;

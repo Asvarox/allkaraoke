@@ -132,7 +132,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
         forceRenderItem={getSongRow(props.focusedGroup, props.focusedSong) ?? -1}
         overScan={props.itemHeight * 2}
         itemHeight={props.itemHeight}
-        groupHeight={props.groupHeight}
+        groupHeaderHeight={props.groupHeight}
         key={props.itemHeight}
         components={props.components}
         context={props.context}

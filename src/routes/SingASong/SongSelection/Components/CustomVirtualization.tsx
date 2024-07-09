@@ -32,7 +32,7 @@ export interface Components<T> {
 interface Props<T> {
   forceRenderItem: number;
   overScan: number;
-  groupHeight: number;
+  groupHeaderHeight: number;
   itemHeight: number;
   itemContent: (
     index: number,
@@ -53,7 +53,12 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
 
     // build the list of items with their positions
     props.groupSizes.forEach((groupSize, index) => {
-      sizes.push({ index, type: 'group', bottom: (sizes.at(-1)?.bottom ?? 0) + props.groupHeight, groupIndex: index });
+      sizes.push({
+        index,
+        type: 'group',
+        bottom: (sizes.at(-1)?.bottom ?? 0) + props.groupHeaderHeight,
+        groupIndex: index,
+      });
       for (let i = 0; i < groupSize; i++) {
         const itemIndex = props.groupSizes.reduce((acc, size, j) => acc + (j < index ? size : 0), 0) + i;
         sizes.push({
@@ -66,7 +71,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     });
 
     return sizes;
-  }, [props.itemHeight, props.groupHeight, props.groupSizes]);
+  }, [props.itemHeight, props.groupHeaderHeight, props.groupSizes]);
 
   const totalHeight = itemsPositions.at(-1)?.bottom ?? 0;
 
@@ -162,7 +167,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
       scrollToGroup: async (groupIndex, behavior = 'auto', align = 'top') => {
         const item = itemsPositions.find((item) => item.type === 'group' && item.index === groupIndex);
         if (item) {
-          viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeight, behavior });
+          viewportElementRef.current?.scrollTo({ top: item.bottom - props.groupHeaderHeight, behavior });
         }
       },
     }),
@@ -179,7 +184,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
         <Wrapper
           style={{
             height: totalHeight,
-            paddingTop: groupToRender !== -1 ? paddingTop - props.groupHeight : paddingTop,
+            paddingTop: groupToRender !== -1 ? paddingTop - props.groupHeaderHeight : paddingTop,
           }}>
           {Header && <Header context={props.context} />}
           {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
