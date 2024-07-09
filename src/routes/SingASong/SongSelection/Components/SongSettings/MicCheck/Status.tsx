@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import ErrorIcon from '@mui/icons-material/Error';
 import WarningIcon from '@mui/icons-material/Warning';
 import { typography } from 'modules/Elements/cssMixins';

@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 
 const LazyConvert = lazy(() =>
   import('routes/ManageSongs/SongManagement').then((modules) => {
-    console.log(modules);
     return { default: modules.Convert };
   }),
 );

@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import LogoIcon from 'routes/LandingPage/LogoIcon';
 

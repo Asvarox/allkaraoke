@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { GAME_MODE, Note } from 'interfaces';
 import styles from 'modules/GameEngine/Drawing/styles';

@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { ComponentProps } from 'react';
 
 export const Heading = styled.h1`

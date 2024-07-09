@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import PlayersManager from 'modules/Players/PlayersManager';
 import { ComponentProps } from 'react';
 import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';

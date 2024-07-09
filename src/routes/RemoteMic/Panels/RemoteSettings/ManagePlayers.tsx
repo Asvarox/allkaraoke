@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { MenuButton } from 'modules/Elements/Menu';
 import styles from 'modules/GameEngine/Drawing/styles';
 import events from 'modules/GameEvents/GameEvents';

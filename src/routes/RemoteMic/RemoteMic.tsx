@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import NoSleep from '@uriopass/nosleep.js';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import NormalizeFontSize from 'modules/Elements/NormalizeFontSize';

@@ -12,7 +12,7 @@ import {
   useState,
 } from 'react';
 
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';

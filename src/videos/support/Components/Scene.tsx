@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { BackgroundStatic } from 'modules/Elements/LayoutWithBackground';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import { PropsWithChildren } from 'react';

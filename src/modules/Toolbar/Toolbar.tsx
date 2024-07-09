@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { Help, HelpOutline, QrCode2 } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { Tooltip } from 'modules/Elements/Tooltip';

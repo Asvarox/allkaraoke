@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { DetailedScore, SingSetup, Song } from 'interfaces';
 import { GameTip } from 'modules/Elements/GameTip';
 import { typography } from 'modules/Elements/cssMixins';

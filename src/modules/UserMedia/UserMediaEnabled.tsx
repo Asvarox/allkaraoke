@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { Warning } from '@mui/icons-material';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useMicrophoneStatus } from 'modules/UserMedia/hooks';

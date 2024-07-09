@@ -1,5 +1,5 @@
-import { css, cx } from '@linaria/core';
-import { styled } from '@linaria/react';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
@@ -34,12 +34,7 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   return (
     <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
       {visible && (
-        <Background
-          className={cx(
-            theme === 'christmas' ? christmasCss : theme === 'eurovision' ? eurovisionCss : regularCss,
-            graphicLevel === 'high' && backgroundHigh,
-          )}
-          bgtheme={theme}>
+        <Background data-theme={theme} data-graphic-level={graphicLevel} bgtheme={theme}>
           {theme === 'eurovision' && <EurovisionTheme />}
         </Background>
       )}
@@ -68,13 +63,13 @@ const EscBar = styled.div`
   background-image: url(${eurovisionBg});
   background-size: 100% 50%;
   height: 100%;
+
+  &[data-animate='true'] {
+    ${escBarAnimation};
+  }
 `;
 
-export const EurovisionTheme = () => (
-  <>
-    <EscBar className={cx(global.location?.href.includes('/remote-mic') && escBarAnimation)} />
-  </>
-);
+export const EurovisionTheme = () => <EscBar data-animate={!global.location?.href.includes('/remote-mic')} />;
 
 const christmasCss = css`
   background-image: linear-gradient(
@@ -129,5 +124,19 @@ const Background = styled(BackgroundStatic)`
   top: 0;
   position: fixed;
 
+  &[data-theme='eurovision'] {
+    ${eurovisionCss};
+  }
+  &[data-theme='christmas'] {
+    ${christmasCss};
+  }
+  &[data-theme='regular'] {
+    ${regularCss};
+  }
+
   background-position: 100% 50%; // for low graphic level
+
+  &[data-graphic-level='high'] {
+    ${backgroundHigh};
+  }
 `;

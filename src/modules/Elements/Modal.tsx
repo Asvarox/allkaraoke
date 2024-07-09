@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { PropsWithChildren } from 'react';
 
 interface Props extends PropsWithChildren {

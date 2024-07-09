@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
 import { supportsEscAsBack } from 'modules/hooks/useKeyboard';
 import { ComponentType } from 'react';

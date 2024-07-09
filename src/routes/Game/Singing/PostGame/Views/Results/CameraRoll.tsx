@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { captureException } from '@sentry/react';
 import CameraManager from 'modules/Camera/CameraManager';
 import { useEffect, useRef, useState } from 'react';

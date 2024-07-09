@@ -1,5 +1,5 @@
 // https://tholman.com/github-corners/
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 
 export default function GithubRibbon() {
   return (

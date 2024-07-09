@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import styles from 'modules/GameEngine/Drawing/styles';
 import PlayersManager from 'modules/Players/PlayersManager';
 import { usePlayerMicData } from 'modules/hooks/players/usePlayerMic';

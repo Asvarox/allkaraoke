@@ -6,12 +6,15 @@ import 'modules/utils/array-findLastIndex-polyfill';
 import 'modules/utils/exposeSingletons';
 import 'modules/utils/wdyr';
 
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
 import { browserTracingIntegration, init, setUser } from '@sentry/react';
 import App from 'App';
 import 'index.css';
 import { normalizeSting } from 'modules/Songs/utils/getSongId';
 import isDev from 'modules/utils/isDev';
 import isE2E from 'modules/utils/isE2E';
+import isPreRendering from 'modules/utils/isPreRendering';
 import { randomInt } from 'modules/utils/randomValue';
 import sentryIgnoreErrors from 'modules/utils/sentryIgnoreErrors';
 import storage from 'modules/utils/storage';
@@ -77,13 +80,19 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   // posthog.featureFlags.override({ websockets_remote_mics: false });
 }
 
+// https://github.com/emotion-js/emotion/issues/2404
+const emotionCache = createCache({
+  key: 'ec',
+  speedy: !isPreRendering,
+});
+
 const container = document.getElementById('root');
 
 const root = createRoot(container!);
 
 root.render(
-  <>
+  <CacheProvider value={emotionCache}>
     <App />
     <ToastContainer position={toast.POSITION.BOTTOM_LEFT} theme={'colored'} />
-  </>,
+  </CacheProvider>,
 );

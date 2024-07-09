@@ -1,6 +1,5 @@
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
-import wyw from '@wyw-in-js/vite';
 import fs from 'node:fs';
 import path from 'node:path';
 import * as process from 'process';
@@ -21,34 +20,6 @@ if (!customCert) {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    wyw({
-      include: ['src/**/*.{ts,tsx}'],
-      babelOptions: {
-        plugins: [
-          ['@linaria/interop', { library: 'styled-components' }],
-          '@emotion',
-          // https://mui.com/material-ui/guides/minimizing-bundle-size/
-          [
-            'transform-imports',
-            {
-              '@mui/icons-material': {
-                transform: '@mui/icons-material/${member}',
-                preventFullImport: true,
-              },
-              '@mui/material': {
-                transform: '@mui/material/${member}',
-                preventFullImport: true,
-              },
-              'lodash-es': {
-                transform: 'lodash-es/${member}',
-                preventFullImport: true,
-              },
-            },
-          ],
-        ],
-        presets: ['@babel/preset-typescript', '@babel/preset-react'],
-      },
-    }),
     react({
       babel: {
         plugins: [

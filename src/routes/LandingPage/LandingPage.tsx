@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { buttonFocusedAnim, LinkButton } from 'modules/Elements/Button';
 import { landscapeMQ, mobileMQ, typography } from 'modules/Elements/cssMixins';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';

@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { Laptop, PhoneAndroid, Wifi } from '@mui/icons-material';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';

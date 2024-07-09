@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { HighScoreEntity, SingSetup } from 'interfaces';
 import { Badge } from 'modules/Elements/Badge';
 import { buttonFocused } from 'modules/Elements/Button';

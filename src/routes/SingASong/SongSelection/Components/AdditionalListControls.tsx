@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { Casino, Search } from '@mui/icons-material';
 import { Button } from 'modules/Elements/Button';
 import { Tooltip } from 'modules/Elements/Tooltip';

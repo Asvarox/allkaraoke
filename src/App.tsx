@@ -50,15 +50,6 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <style>
-        {`
-          :root {
-             ${graphicSetting === 'low' ? '--graphic-setting-high: initial' : ''};
-            ${graphicSetting === 'high' ? '--graphic-setting-low: initial' : ''};
-            --zoom-multipler: ${mobilePhoneMode ? 1.4 : 1};
-          }
-        `}
-      </style>
       <ErrorBoundary fallback={ErrorFallback}>
         <LayoutWithBackgroundProvider>
           <KeyboardHelpProvider>

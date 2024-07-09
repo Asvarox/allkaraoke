@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
 import { VideoState } from 'modules/Elements/VideoPlayer';

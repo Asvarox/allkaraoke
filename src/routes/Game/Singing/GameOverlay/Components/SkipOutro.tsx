@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import beatToMs from 'modules/GameEngine/GameState/Helpers/beatToMs';

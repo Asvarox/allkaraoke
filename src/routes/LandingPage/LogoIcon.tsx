@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { MicIconBlue, MicIconRed } from 'modules/Elements/MicIcon';
 import { ComponentProps } from 'react';
 

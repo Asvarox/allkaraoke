@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useEffect, useState } from 'react';
 import PlayerChange from 'routes/RemoteMic/Panels/Microphone/PlayerChange';

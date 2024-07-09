@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { PlayerMicCheck } from 'modules/Elements/VolumeIndicator';
 import { PlayerEntity } from 'modules/Players/PlayersManager';
 import usePlayerMicStatus from 'modules/hooks/players/usePlayerMicStatus';

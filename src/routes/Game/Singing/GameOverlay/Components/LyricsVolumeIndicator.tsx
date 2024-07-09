@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { VolumeIndicator } from 'modules/Elements/VolumeIndicator';
 import InputManager from 'modules/GameEngine/Input/InputManager';
 import { PlayerEntity } from 'modules/Players/PlayersManager';

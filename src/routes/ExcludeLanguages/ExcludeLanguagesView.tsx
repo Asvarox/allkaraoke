@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank, Warning } from '@mui/icons-material';
 import { Skeleton } from '@mui/material';
 import { SongPreview } from 'interfaces';

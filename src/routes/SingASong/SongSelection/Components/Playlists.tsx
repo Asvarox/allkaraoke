@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { Button } from 'modules/Elements/Button';
 import { focusedStatic, typography } from 'modules/Elements/cssMixins';
 import { useOnClickOutside } from 'modules/hooks/onClickOutside';

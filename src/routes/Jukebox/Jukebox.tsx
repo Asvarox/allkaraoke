@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { SongPreview } from 'interfaces';
 import { shuffle } from 'lodash-es';
 import { Button } from 'modules/Elements/Button';

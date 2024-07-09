@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import GameState from 'modules/GameEngine/GameState/GameState';

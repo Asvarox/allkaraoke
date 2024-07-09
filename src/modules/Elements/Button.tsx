@@ -1,9 +1,10 @@
-import { css } from '@linaria/core';
+import { css } from '@emotion/react';
 import styles from 'modules/GameEngine/Drawing/styles';
 
+import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
 import isE2E from 'modules/utils/isE2E';
-import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLProps } from 'react';
+import { ComponentProps } from 'react';
 
 const buttonCss = css`
   padding: 0.1rem 0.3rem;
@@ -58,47 +59,52 @@ const buttonNotDisabledCss = css`
     background: ${styles.colors.text.active};
   }
 `;
-export const LinkButtonCss = css`
-  // increases specificity to override global styles
+
+const ButtonBaseLink = styled.a`
+  ${buttonCss}
   && {
     color: white;
     text-decoration: none;
   }
-`;
 
-export const ButtonCss = css`
-  &:not(:disabled) {
+  &[data-focused='true'] {
+    ${buttonFocused};
+  }
+
+  &[disabled='false'] {
     ${buttonNotDisabledCss};
   }
 `;
 
 export const LinkButton = ({
   focused,
-  disabled,
-  className,
   ...props
-}: HTMLProps<HTMLAnchorElement> & { focused?: boolean; disabled?: boolean }) => {
-  return (
-    <a
-      {...props}
-      className={`${buttonCss} ${LinkButtonCss} ${focused ? buttonFocused : ''} ${!disabled ? buttonNotDisabledCss : ''} ${className}`}
-    />
-  );
+}: ComponentProps<typeof ButtonBaseLink> & { focused?: boolean; disabled?: boolean }) => {
+  return <ButtonBaseLink {...props} />;
 };
+
+const ButtonBase = styled.button`
+  ${buttonCss};
+
+  &:not(:disabled) {
+    ${buttonNotDisabledCss};
+  }
+
+  &[data-focused='true'] {
+    ${buttonFocused};
+  }
+
+  &[disabled='false'] {
+    ${buttonNotDisabledCss};
+  }
+`;
 
 export const Button = ({
   focused,
-  className,
-  disabled,
   ...props
-}: DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
+}: ComponentProps<typeof ButtonBase> & {
   focused?: boolean;
   disabled?: boolean;
 }) => {
-  return (
-    <button
-      {...props}
-      className={`${buttonCss} ${ButtonCss} ${!disabled ? buttonNotDisabledCss : ''} ${focused ? buttonFocused : ''}  ${className}`}
-    />
-  );
+  return <ButtonBase data-focused={focused} {...props} />;
 };

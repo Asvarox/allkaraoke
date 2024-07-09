@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { ComponentProps, useLayoutEffect, useState } from 'react';
 import { usePreviousDistinct } from 'react-use';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';

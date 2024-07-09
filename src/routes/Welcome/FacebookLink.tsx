@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import { MenuContainer } from 'modules/Elements/Menu';
 import { useCallback, useEffect, useState } from 'react';
 import { MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
