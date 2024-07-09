@@ -1,0 +1,456 @@
+#ARTIST:Billy Talent
+#TITLE:Fallen Leaves
+#CREATOR:Canni
+#BPM:250
+#YEAR:2006
+#PREVIEWSTART:8
+#VIDEO:v=9BXNKyoW_Ow
+#LANGUAGE:English
+#GAP:6950
+#ALLKARAOKE_ID:billy-talent-fallen-leaves
+#ALLKARAOKE_LASTUPDATE:2024-07-09T03:19:12.982Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:123
+#ALLKARAOKE_PREVIEWEND:53
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Billy Talent - Fallen Leaves.mp3
+: 17 1 0 In 
+: 19 1 2 a 
+: 21 3 3 croo
+: 25 2 0 ked 
+: 29 3 3 lit
+: 33 2 5 tle 
+: 37 5 7 town
+- 42
+: 45 3 7 They 
+: 49 3 7 were 
+: 53 2 7 lost 
+: 57 3 8 and 
+: 61 3 7 ne
+: 65 2 5 ver 
+: 69 6 3 found
+- 75
+: 78 3 3 Fal
+: 82 3 3 len 
+: 86 4 3 leaves, 
+: 94 3 3 fal
+: 98 3 3 len 
+: 102 4 3 leaves, 
+: 110 3 3 fal
+: 114 3 3 len 
+: 118 4 3 leaves
+- 122
+: 127 2 3 On 
+: 130 2 5 the 
+: 135 6 2 ground
+- 141 267
+- 267
+: 284 3 2 I 
+: 288 3 3 hitched 
+: 292 3 0 a 
+* 297 12 2 ride
+- 309
+: 317 3 3 Un
+: 321 2 7 til 
+: 325 3 3 the 
+: 329 10 2 coast
+- 339
+: 350 3 2 To 
+: 354 3 3 leave 
+: 358 3 0 be
+: 362 10 2 hind
+- 372
+: 382 3 3 All 
+: 386 2 7 of 
+: 390 3 3 my 
+: 394 12 2 ghost
+- 406
+: 415 2 3 Sear
+: 419 3 7 ching 
+: 423 2 3 for 
+: 427 6 5 some
+: 435 5 5 thing
+- 440
+: 447 3 5 I 
+: 451 3 8 could
+: 455 3 5 n’t 
+: 460 4 7 find 
+: 468 3 5 a
+: 472 2 3 ~t 
+: 476 29 3 ho
+: 508 14 3 ~
+: 524 7 2 ~me
+- 531
+: 545 2 2 Can’t 
+: 549 2 3 get 
+: 553 3 0 no 
+: 557 10 2 job
+- 567
+: 577 1 3 Can 
+: 579 1 3 you 
+* 581 3 7 spare 
+: 585 3 3 a 
+: 590 9 2 dime
+- 599
+: 610 2 2 Just 
+: 614 3 3 one 
+: 618 2 0 more 
+: 622 7 2 hit
+- 629
+: 642 2 3 And 
+: 646 3 7 I’ll 
+: 650 3 3 be 
+: 655 12 2 fine
+- 667
+: 675 3 3 I 
+: 679 3 7 swear 
+: 683 3 3 to 
+: 687 6 5 god 
+: 695 4 5 this’
+- 699
+: 707 3 5 Will 
+: 711 3 8 be 
+: 715 3 5 my 
+* 720 5 7 one 
+: 728 3 5 la
+: 732 2 3 ~st 
+: 736 27 3 ti
+: 765 2 5 ~
+: 769 18 7 ~me
+- 787
+: 797 1 0 In 
+: 799 1 2 a 
+: 801 3 3 croo
+: 805 2 0 ked 
+: 809 2 3 lit
+: 813 3 5 tle 
+: 817 6 7 town
+- 823
+: 825 3 7 They 
+: 829 3 7 were 
+: 833 2 7 lost 
+: 837 3 8 and 
+: 842 3 7 ne
+: 846 2 5 ver 
+: 850 4 3 found
+- 854
+: 858 3 3 Fal
+: 862 3 3 len 
+: 866 4 3 leaves, 
+: 874 3 3 fal
+: 878 3 3 len 
+: 882 4 3 leaves, 
+: 890 3 3 fal
+: 894 3 3 len 
+: 898 4 3 leaves
+- 902
+: 907 2 3 On 
+: 910 3 5 the 
+: 915 7 2 ground
+- 922
+: 927 1 0 Run 
+: 929 1 2 a
+: 931 2 3 way 
+: 935 2 0 be
+: 939 2 3 fore 
+: 943 3 5 you 
+: 947 6 7 drown
+- 953
+: 956 3 7 Or 
+: 960 3 7 the 
+: 964 3 7 streets 
+: 968 3 8 will 
+* 972 3 7 beat 
+: 976 3 5 you 
+: 980 5 3 down
+- 985
+: 988 3 3 Fal
+: 992 3 3 len 
+: 996 4 3 leaves, 
+: 1004 3 3 fal
+: 1008 3 3 len 
+: 1012 4 3 leaves, 
+: 1020 3 3 fal
+: 1024 3 3 len 
+: 1028 4 3 leaves
+- 1032
+: 1037 3 3 On 
+: 1041 3 5 the 
+: 1045 11 2 grou
+: 1057 8 0 nd
+- 1065 1178
+- 1178
+: 1195 3 2 When 
+: 1199 3 3 it 
+: 1203 3 0 gets 
+: 1208 12 2 dark
+- 1220
+: 1228 3 3 In 
+: 1232 3 7 Pi
+* 1236 3 3 geon 
+: 1240 12 2 Park
+- 1252
+: 1260 3 0 Voice 
+: 1264 3 3 in 
+: 1268 3 0 my 
+: 1272 12 2 head
+- 1284
+: 1293 3 3 Will 
+: 1297 3 7 soon 
+: 1301 3 3 be 
+: 1306 14 2 fed
+- 1320
+: 1330 3 7 By 
+: 1334 3 3 the 
+: 1338 7 5 vul
+: 1346 6 5 tures
+- 1352
+: 1358 2 5 That 
+: 1362 3 8 cir
+: 1366 3 5 cle 
+: 1370 6 7 round 
+: 1378 3 5 the
+: 1382 2 3 ~ 
+: 1386 27 3 dea
+: 1415 3 5 ~
+: 1420 17 7 ~d
+- 1437
+: 1447 1 0 In 
+: 1449 1 2 a 
+: 1451 3 3 croo
+: 1455 2 0 ked 
+: 1459 2 3 lit
+: 1463 2 5 tle 
+: 1467 5 7 town
+- 1472
+: 1476 3 7 They 
+: 1480 3 7 were 
+: 1484 3 7 lost 
+: 1488 3 8 and 
+: 1492 3 7 ne
+: 1496 3 5 ver 
+* 1500 6 3 found
+- 1506
+: 1508 3 3 Fal
+: 1512 3 3 len 
+: 1516 4 3 leaves, 
+: 1525 3 3 fal
+: 1529 3 3 len 
+: 1533 4 3 leaves, 
+: 1541 3 3 fal
+: 1545 3 3 len 
+: 1549 4 3 leaves
+- 1553
+: 1557 2 3 On 
+: 1561 3 5 the 
+: 1565 7 2 ground
+- 1572
+: 1578 1 0 Run 
+: 1580 1 2 a
+: 1582 2 3 way 
+: 1586 2 0 be
+: 1590 2 3 fore 
+: 1594 2 5 you 
+: 1598 4 7 drown
+- 1602
+: 1606 2 7 Or 
+: 1610 2 7 the 
+: 1614 3 7 streets 
+: 1618 2 8 will 
+: 1622 3 7 beat 
+: 1626 3 5 you 
+: 1630 6 3 down
+- 1636
+: 1638 3 3 Fal
+: 1642 3 3 len 
+: 1646 4 3 leaves, 
+: 1654 3 3 fal
+: 1658 3 3 len 
+: 1662 4 3 leaves, 
+: 1670 3 3 fal
+: 1674 3 3 len 
+: 1678 4 3 leaves
+- 1682
+: 1687 2 3 On 
+: 1691 3 5 the 
+: 1695 11 2 grou
+: 1708 4 0 ~nd
+- 1712 1959
+- 1959
+: 1976 3 5 I 
+: 1980 3 7 ne
+: 1984 2 8 ver 
+: 1988 6 7 once 
+: 1996 4 5 thought
+- 2000
+: 2008 3 3 I’d 
+: 2012 3 5 e
+: 2016 3 7 ver 
+: 2020 6 5 be 
+: 2028 4 3 caught
+- 2032
+: 2040 3 5 Sta
+: 2044 3 7 ring 
+: 2048 3 8 at 
+: 2053 6 7 side
+: 2061 6 5 walks
+- 2067
+: 2073 3 3 Hi
+: 2077 3 5 ding 
+: 2081 3 7 my 
+* 2085 5 5 track 
+: 2093 4 3 marks
+- 2097
+: 2106 3 5 I 
+: 2110 2 7 left 
+: 2114 3 8 my 
+: 2118 5 7 best 
+: 2126 5 5 friends
+- 2131
+: 2138 3 3 Or 
+: 2142 3 5 did 
+: 2146 3 7 they 
+: 2150 5 5 just 
+: 2158 5 3 leave
+- 2163
+: 2166 32 2 Me
+* 2200 17 7 ~
+- 2217 2341
+- 2341
+: 2358 1 0 In 
+: 2360 1 2 a 
+: 2362 3 3 croo
+: 2366 2 0 ked 
+: 2370 3 3 lit
+: 2374 2 5 tle 
+: 2378 6 7 town
+- 2384
+: 2386 3 7 They 
+: 2390 3 7 were 
+* 2394 3 7 lost 
+: 2398 3 8 and 
+: 2402 3 7 ne
+: 2406 3 5 ver 
+: 2411 6 3 found
+- 2417
+: 2419 3 3 Fal
+: 2423 3 3 len 
+: 2427 4 3 leaves, 
+: 2435 3 3 fal
+: 2439 3 3 len 
+: 2443 4 3 leaves, 
+: 2451 3 3 fal
+: 2455 3 3 len 
+: 2459 4 3 leaves
+- 2463
+: 2468 2 3 On 
+: 2471 3 5 the 
+: 2476 7 2 ground
+- 2483
+: 2488 1 0 In 
+: 2490 1 2 a 
+: 2492 3 3 croo
+: 2496 2 0 ked 
+: 2500 2 3 lit
+: 2504 2 5 tle 
+* 2508 6 7 town
+- 2514
+: 2516 3 7 They 
+: 2520 3 7 were 
+: 2524 3 7 lost 
+: 2528 3 8 and 
+: 2532 3 7 ne
+: 2537 3 5 ver 
+: 2541 6 3 found
+- 2547
+: 2549 3 3 Fal
+: 2553 3 3 len 
+: 2557 4 3 leaves, 
+: 2565 3 3 fal
+: 2569 3 3 len 
+: 2573 4 3 leaves, 
+: 2581 3 3 fal
+: 2585 3 3 len 
+: 2589 5 3 leaves
+- 2594
+: 2597 2 3 On 
+: 2601 3 5 the 
+: 2606 6 2 ground
+- 2612
+: 2618 1 0 Run 
+: 2620 1 2 a
+: 2622 2 3 way 
+: 2626 2 0 be
+: 2630 2 3 fore 
+: 2634 3 5 you 
+: 2638 6 7 drown
+- 2644
+: 2647 3 7 Or 
+: 2651 3 7 the 
+* 2655 2 7 streets 
+: 2659 3 8 will 
+: 2663 2 7 beat 
+: 2667 3 5 you 
+: 2671 6 3 down
+- 2677
+: 2679 3 3 Fal
+: 2683 3 3 len 
+: 2687 4 3 leaves, 
+: 2695 3 3 fal
+: 2699 3 3 len 
+: 2703 4 3 leaves, 
+: 2711 3 3 fal
+: 2715 3 3 len 
+: 2719 4 3 leaves
+- 2723
+: 2728 2 3 On 
+: 2732 3 5 the 
+: 2737 6 2 ground
+- 2743
+: 2748 1 0 Run 
+: 2750 1 2 a
+: 2752 2 3 way 
+: 2756 2 0 be
+: 2760 2 12 fore 
+: 2764 3 10 you 
+: 2768 10 7 drown
+- 2778 2792
+- 2792
+: 2809 3 3 Fal
+: 2813 3 3 len 
+: 2817 4 3 leaves, 
+: 2825 3 3 fal
+: 2829 3 3 len 
+: 2833 4 3 leaves, 
+: 2842 3 3 fal
+: 2846 2 3 len 
+: 2849 4 3 leaves
+- 2853
+: 2858 2 3 On 
+: 2862 3 5 the 
+* 2866 7 2 ground
+- 2873
+: 2878 1 0 Run 
+: 2880 1 2 a
+: 2882 2 3 way 
+: 2886 2 0 be
+: 2890 2 12 fore 
+: 2894 3 10 you 
+: 2899 13 7 drown
+- 2912 2922
+- 2922
+: 2939 3 3 Fal
+: 2943 3 3 len 
+: 2947 4 3 leaves, 
+: 2955 3 3 fal
+: 2959 3 3 len 
+: 2963 4 3 leaves, 
+: 2971 3 3 fal
+: 2975 3 3 len 
+: 2979 4 3 leaves
+- 2983
+: 2988 3 3 On 
+: 2992 3 5 the 
+* 2997 11 2 grou
+: 3009 17 0 ~nd
+E

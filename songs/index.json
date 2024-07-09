@@ -274,6 +274,32 @@
     "local": false
   },
   {
+    "id": "31-minutos-el-dinosaurio-anacleto",
+    "title": "El dinosaurio Anacleto",
+    "artist": "31 Minutos",
+    "video": "Hi5h1KG9XA0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 212.3,
+    "gap": 1360.8337258596325,
+    "year": "2004",
+    "artistOrigin": "CL",
+    "lastUpdate": "2024-07-09T03:19:12.012Z",
+    "genre": "Infantil",
+    "realBpm": 106,
+    "volume": 0.85,
+    "author": "MaxHG03",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "31minutoseldinosaurioanacleto",
+    "local": false
+  },
+  {
     "id": "3oh3-dont-trust-me",
     "title": "Don’t Trust Me",
     "artist": "3OH!3",
@@ -2586,10 +2612,10 @@
       "English"
     ],
     "bpm": 378,
-    "gap": 28251.93650793651,
+    "gap": 28201.93650793651,
     "year": "2023",
     "artistOrigin": "NO",
-    "lastUpdate": "2024-04-29T13:19:28.196Z",
+    "lastUpdate": "2024-07-09T03:19:12.605Z",
     "edition": "ESC 2023",
     "realBpm": 126,
     "volume": 0.8,
@@ -5282,9 +5308,9 @@
       "English"
     ],
     "bpm": 206.04,
-    "gap": 2750.780430984275,
+    "gap": 2850.780430984275,
     "year": "2014",
-    "lastUpdate": "2023-12-28T19:33:06.382Z",
+    "lastUpdate": "2024-07-09T03:19:12.608Z",
     "genre": "R&B",
     "realBpm": 103,
     "volume": 0.87,
@@ -7874,23 +7900,23 @@
     "id": "banana-minnions-family-skibidi-toilet-minnion",
     "title": "Skibidi Toilet Minnion",
     "artist": "Banana minnions family",
-    "video": "RK33t8aNmK4",
+    "video": "04khITCJ2C4",
     "language": [
       "English"
     ],
     "bpm": 400,
-    "gap": 32.5,
+    "gap": -92.5,
     "year": "2024",
-    "lastUpdate": "2024-05-08T15:52:26.387Z",
+    "lastUpdate": "2024-07-09T03:19:12.735Z",
     "genre": "Pop",
     "realBpm": 145,
     "previewStart": 10,
     "previewEnd": 40,
-    "volume": 0.89,
+    "volume": 0.91,
     "author": "Banana Minnions Family",
     "tracks": [
       {
-        "start": 13
+        "start": 15
       }
     ],
     "tracksCount": 1,
@@ -9730,6 +9756,196 @@
     ],
     "tracksCount": 1,
     "search": "billyjoeluptowngirl",
+    "local": false
+  },
+  {
+    "id": "billy-talent-devil-in-a-midnight-mass",
+    "title": "Devil In A Midnight Mass",
+    "artist": "Billy Talent",
+    "video": "Nv5kkI5X1QM",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 19780,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.857Z",
+    "realBpm": 178,
+    "previewStart": 48,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalentdevilinamidnightmass",
+    "local": false
+  },
+  {
+    "id": "billy-talent-fallen-leaves",
+    "title": "Fallen Leaves",
+    "artist": "Billy Talent",
+    "video": "9BXNKyoW_Ow",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 6950,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.982Z",
+    "realBpm": 123,
+    "previewStart": 8,
+    "previewEnd": 53,
+    "volume": 0.8,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalentfallenleaves",
+    "local": false
+  },
+  {
+    "id": "billy-talent-red-flag",
+    "title": "Red Flag",
+    "artist": "Billy Talent",
+    "video": "l2UktJtKpFw",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 7820.978260869565,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.984Z",
+    "realBpm": 183,
+    "previewStart": 50,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalentredflag",
+    "local": false
+  },
+  {
+    "id": "billy-talent-rusted-from-the-rain",
+    "title": "Rusted From The Rain",
+    "artist": "Billy Talent",
+    "video": "RAOnUF8t20w",
+    "language": [
+      "English"
+    ],
+    "bpm": 350,
+    "gap": 1224.2857142857142,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.986Z",
+    "realBpm": 175,
+    "previewStart": 57,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "Wüstenpfeil",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalentrustedfromtherain",
+    "local": false
+  },
+  {
+    "id": "billy-talent-surrender",
+    "title": "Surrender",
+    "artist": "Billy Talent",
+    "video": "aqP4-dUMkMc",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 15711.596638655463,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.988Z",
+    "realBpm": 119,
+    "previewStart": 48,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalentsurrender",
+    "local": false
+  },
+  {
+    "id": "billy-talent-try-honesty",
+    "title": "Try Honesty",
+    "artist": "Billy Talent",
+    "video": "_zssP6w0VWQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 314,
+    "gap": 21586.815286624205,
+    "year": "2001",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.989Z",
+    "realBpm": 157,
+    "previewStart": 47,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalenttryhonesty",
+    "local": false
+  },
+  {
+    "id": "billy-talent-viking-death-march",
+    "title": "Viking Death March",
+    "artist": "Billy Talent",
+    "video": "VRFCMM3bra8",
+    "language": [
+      "English"
+    ],
+    "bpm": 289.6,
+    "gap": 12455.883977900552,
+    "year": "2012",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-09T03:19:12.990Z",
+    "genre": "Punk Rock",
+    "realBpm": 109,
+    "previewStart": 62,
+    "previewEnd": 101,
+    "volume": 0.8,
+    "author": "masterxy",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billytalentvikingdeathmarch",
     "local": false
   },
   {
@@ -14550,12 +14766,13 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 28762.23076923077,
+    "gap": 28662.23076923077,
     "year": "1998",
     "artistOrigin": "US",
-    "lastUpdate": "2023-01-28T20:43:47.202Z",
+    "lastUpdate": "2024-07-09T03:19:12.992Z",
     "genre": "Pop",
     "realBpm": 133,
+    "volume": 1,
     "author": "zXz",
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=zxz",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=cher&idioma=en",
@@ -17927,6 +18144,32 @@
     "local": false
   },
   {
+    "id": "daughtry-home",
+    "title": "Home",
+    "artist": "Daughtry",
+    "video": "7bnX-6sJZBw",
+    "language": [
+      "English"
+    ],
+    "bpm": 211,
+    "gap": 14574.73933649289,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:12.994Z",
+    "genre": "Rock",
+    "realBpm": 144,
+    "volume": 0.63,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daughtryhome",
+    "local": false
+  },
+  {
     "id": "dave-rodgers-deja-vu",
     "title": "Deja Vu",
     "artist": "Dave Rodgers",
@@ -18084,6 +18327,32 @@
     ],
     "tracksCount": 1,
     "search": "davidbowiespaceoddity",
+    "local": false
+  },
+  {
+    "id": "david-cook-light-on",
+    "title": "Light On",
+    "artist": "David Cook",
+    "video": "4i8ZCp3-n7w",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 3600,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.126Z",
+    "genre": "Rock",
+    "realBpm": 132,
+    "volume": 0.62,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidcooklighton",
     "local": false
   },
   {
@@ -21165,6 +21434,32 @@
     ],
     "tracksCount": 1,
     "search": "dragonballgtabertura",
+    "local": false
+  },
+  {
+    "id": "dragon-ball-la-fantastica-aventura",
+    "title": "La fantástica aventura",
+    "artist": "Dragon Ball",
+    "video": "9Hbd1QeI1Og",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270.86,
+    "gap": 8743.175071992911,
+    "year": "1994",
+    "artistOrigin": "BR",
+    "lastUpdate": "2024-07-09T03:19:13.255Z",
+    "realBpm": 135,
+    "volume": 0.86,
+    "author": "ConejoF1",
+    "sourceUrl": "https://www.youtube.com/watch?v=9Hbd1QeI1Og",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dragonballlafantasticaaventura",
     "local": false
   },
   {
@@ -25784,6 +26079,31 @@
     "local": false
   },
   {
+    "id": "foreigner-waiting-for-a-girl-like-you",
+    "title": "Waiting For A Girl Like You",
+    "artist": "Foreigner",
+    "video": "RIdfPBmUAXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.16,
+    "gap": 33345.41749109616,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.392Z",
+    "realBpm": 103,
+    "volume": 0.63,
+    "author": "sledge",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "foreignerwaitingforagirllikeyou",
+    "local": false
+  },
+  {
     "id": "foster-the-people-pumped-up-kicks",
     "title": "Pumped Up Kicks",
     "artist": "Foster The People",
@@ -29954,6 +30274,32 @@
     "local": false
   },
   {
+    "id": "hunter-hayes-wanted",
+    "title": "Wanted",
+    "artist": "Hunter Hayes",
+    "video": "ruyaKdPfTN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 341.19,
+    "gap": 12048.833201442012,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.394Z",
+    "genre": "Country",
+    "realBpm": 170,
+    "volume": 0.71,
+    "author": "musiklover91",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hunterhayeswanted",
+    "local": false
+  },
+  {
     "id": "ice-cube-check-yo-self-remix",
     "title": "Check Yo Self (Remix)",
     "artist": "Ice Cube",
@@ -30106,6 +30452,32 @@
     ],
     "tracksCount": 1,
     "search": "ichtrojezawszeztobachcialbymbyc",
+    "local": false
+  },
+  {
+    "id": "ichiko-first-kiss",
+    "title": "First Kiss",
+    "artist": "Ichiko",
+    "video": "6amn4tQOA00",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 311.66,
+    "gap": 589.2831932233846,
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-09T03:19:13.539Z",
+    "genre": "Anime",
+    "realBpm": 77,
+    "volume": 0.73,
+    "author": "MaxHG03",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ichikofirstkiss",
     "local": false
   },
   {
@@ -32612,6 +32984,31 @@
     "local": false
   },
   {
+    "id": "john-mayer-free-fallin-live-at-the-nokia-theatre",
+    "title": "Free Fallin’ (Live At The Nokia Theatre)",
+    "artist": "John Mayer",
+    "video": "20Ov0cDPZy8",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 22207.5,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.670Z",
+    "realBpm": 174,
+    "volume": 0.86,
+    "author": "davidlink",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnmayerfreefallinliveatthenokiatheatre",
+    "local": false
+  },
+  {
     "id": "john-mayer-free-fallin",
     "title": "Free Fallin’",
     "artist": "John Mayer",
@@ -32659,6 +33056,32 @@
     ],
     "tracksCount": 1,
     "search": "johnmayeryourbodyisawonderland",
+    "local": false
+  },
+  {
+    "id": "john-waite-missing-you",
+    "title": "Missing You",
+    "artist": "John Waite",
+    "video": "k9e157Ner90",
+    "language": [
+      "English"
+    ],
+    "bpm": 207,
+    "gap": 18595.507246376812,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-07-09T03:19:13.672Z",
+    "genre": "Soft Rock",
+    "realBpm": 104,
+    "volume": 0.7,
+    "author": "Buberatz",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johnwaitemissingyou",
     "local": false
   },
   {
@@ -33151,10 +33574,10 @@
       "Dutch"
     ],
     "bpm": 320,
-    "gap": 4351.625,
+    "gap": 4251.625,
     "year": "2024",
     "artistOrigin": "NL",
-    "lastUpdate": "2024-04-29T13:19:28.249Z",
+    "lastUpdate": "2024-07-09T03:19:13.799Z",
     "edition": "ESC 2024",
     "realBpm": 160,
     "volume": 0.74,
@@ -35990,6 +36413,136 @@
     "local": false
   },
   {
+    "id": "kelly-clarkson-behind-these-hazel-eyes",
+    "title": "Behind These Hazel Eyes",
+    "artist": "Kelly Clarkson",
+    "video": "yipoOY56MbM",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 1500,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.800Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 0.62,
+    "author": "Caruso",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonbehindthesehazeleyes",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-catch-my-breath",
+    "title": "Catch My Breath",
+    "artist": "Kelly Clarkson",
+    "video": "HEValZuFYRU",
+    "language": [
+      "English"
+    ],
+    "bpm": 247.94,
+    "gap": 13321.525369040897,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.802Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.63,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksoncatchmybreath",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-my-life-would-suck-without-you",
+    "title": "My Life Would Suck Without You",
+    "artist": "Kelly Clarkson",
+    "video": "cRM70Jw7F4M",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 12687.241379310344,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.804Z",
+    "genre": "Pop",
+    "realBpm": 145,
+    "volume": 0.62,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonmylifewouldsuckwithoutyou",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-people-like-us",
+    "title": "People Like Us",
+    "artist": "Kelly Clarkson",
+    "video": "yWbMz_aBlMU",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.06,
+    "gap": 1184.1396547684137,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.807Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.61,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonpeoplelikeus",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-stronger-what-doesnt-kill-you",
+    "title": "Stronger (What Doesn’t Kill You)",
+    "artist": "Kelly Clarkson",
+    "video": "Xn676-fLq7I",
+    "language": [
+      "English"
+    ],
+    "bpm": 231.98,
+    "gap": 8330.088800758685,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-09T03:19:13.809Z",
+    "genre": "Pop",
+    "realBpm": 116,
+    "volume": 0.6,
+    "author": "gaspar17",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonstrongerwhatdoesntkillyou",
+    "local": false
+  },
+  {
     "id": "kendji-girac-andalouse",
     "title": "Andalouse",
     "artist": "Kendji Girac",
@@ -37807,13 +38360,14 @@
     "gap": 158801.61151454537,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-14T12:53:14.675Z",
+    "lastUpdate": "2024-07-09T03:19:13.810Z",
     "edition": "[SC]-Songs",
     "genre": "Pop",
+    "videoGap": 142,
     "realBpm": 115,
     "previewStart": 198,
     "previewEnd": 228,
-    "volume": 1,
+    "volume": 0.83,
     "author": "IC",
     "tracks": [
       {
@@ -41674,9 +42228,10 @@
     "gap": 18202.777777777777,
     "year": "1998",
     "artistOrigin": "US",
-    "lastUpdate": "2023-01-28T23:59:19.273Z",
+    "lastUpdate": "2024-07-09T03:19:13.811Z",
     "genre": "Pop",
     "realBpm": 108,
+    "volume": 0.75,
     "author": "Coppo",
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Frozen",
@@ -41881,7 +42436,7 @@
     "gap": 14470,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-08T17:41:27.519Z",
+    "lastUpdate": "2024-07-09T03:19:13.812Z",
     "genre": "Pop Ballad",
     "realBpm": 90,
     "volume": 0.83,
@@ -49609,6 +50164,34 @@
     "local": false
   },
   {
+    "id": "niki-backburner",
+    "title": "Backburner",
+    "artist": "NIKI",
+    "video": "BBpIV9A1PXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 344.58,
+    "gap": 28137.78112484764,
+    "year": "2022",
+    "artistOrigin": "IT",
+    "lastUpdate": "2024-07-09T03:19:13.814Z",
+    "realBpm": 168,
+    "previewStart": 88,
+    "previewEnd": 118,
+    "volume": 0.78,
+    "author": "downysaur",
+    "sourceUrl": "https://www.youtube.com/watch?v=BBpIV9A1PXc&ab_channel=NIKI",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nikibackburner",
+    "local": false
+  },
+  {
     "id": "nina-chuba-chapo102-ich-hass-dich",
     "title": "Ich hass dich",
     "artist": "Nina Chuba & Chapo102",
@@ -51212,6 +51795,31 @@
     ],
     "tracksCount": 1,
     "search": "onedirectionyoui",
+    "local": false
+  },
+  {
+    "id": "one-piece-juntos",
+    "title": "Juntos",
+    "artist": "One Piece",
+    "video": "UUyauouKgGE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 215.94,
+    "gap": 180.43512086690748,
+    "year": "2006",
+    "lastUpdate": "2024-07-09T03:19:13.950Z",
+    "genre": "Anime",
+    "realBpm": 84,
+    "volume": 0.83,
+    "author": "MaxHG03",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "onepiecejuntos",
     "local": false
   },
   {
@@ -58697,9 +59305,9 @@
       "English"
     ],
     "bpm": 216.06,
-    "gap": 5566.047764509858,
+    "gap": 5766.047764509858,
     "year": "2001",
-    "lastUpdate": "2024-03-20T06:29:33.768Z",
+    "lastUpdate": "2024-07-09T03:19:14.089Z",
     "genre": "Pop Barroco",
     "realBpm": 73,
     "previewStart": 71,
@@ -62027,6 +62635,33 @@
     "local": false
   },
   {
+    "id": "silk-sonic-bruno-mars-anderson-paak-smokin-out-the-window",
+    "title": "Smokin Out The Window",
+    "artist": "Silk Sonic - Bruno Mars & Anderson .Paak",
+    "video": "GG7fLOmlhYg",
+    "language": [
+      "English"
+    ],
+    "bpm": 328.1,
+    "gap": 14.233465406888172,
+    "year": "2021",
+    "lastUpdate": "2024-07-09T03:19:14.213Z",
+    "genre": "R&B",
+    "realBpm": 82,
+    "volume": 0.69,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=26350",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "silksonicbrunomarsandersonpaaksmokinoutthewindow",
+    "local": false
+  },
+  {
     "id": "simon-garfunkel-bridge-over-troubled-water",
     "title": "Bridge Over Troubled Water",
     "artist": "Simon & Garfunkel",
@@ -62351,10 +62986,10 @@
       "Spanish"
     ],
     "bpm": 420,
-    "gap": -169.71428571428578,
+    "gap": 1.7142857142857224,
     "year": "1996",
     "artistOrigin": "ES",
-    "lastUpdate": "2024-05-15T17:29:18.084Z",
+    "lastUpdate": "2024-07-09T03:19:14.339Z",
     "genre": "Rock",
     "realBpm": 102,
     "volume": 0.76,
@@ -62363,7 +62998,7 @@
     "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Ska-P&cancion=El%20vals%20del%20obrero",
     "tracks": [
       {
-        "start": 15
+        "start": 13
       }
     ],
     "tracksCount": 1,
@@ -64017,9 +64652,10 @@
       "English"
     ],
     "bpm": 260.12,
-    "gap": 28830.683223127788,
+    "gap": 28730.683223127788,
     "year": "2010",
     "artistOrigin": "MD",
+    "lastUpdate": "2024-07-09T03:19:14.340Z",
     "edition": "ESC 2010",
     "realBpm": 130,
     "previewStart": 47,
@@ -72794,9 +73430,9 @@
       "English"
     ],
     "bpm": 280,
-    "gap": 5872.142857142857,
+    "gap": 5922.142857142857,
     "year": "2012",
-    "lastUpdate": "2024-04-28T19:13:10.980Z",
+    "lastUpdate": "2024-07-09T03:19:14.343Z",
     "genre": "Pop",
     "realBpm": 140,
     "volume": 0.72,
