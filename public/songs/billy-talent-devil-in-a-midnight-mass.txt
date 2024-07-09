@@ -1,0 +1,422 @@
+#ARTIST:Billy Talent
+#TITLE:Devil In A Midnight Mass
+#CREATOR:Canni
+#BPM:360
+#YEAR:2006
+#PREVIEWSTART:48
+#VIDEO:v=Nv5kkI5X1QM
+#LANGUAGE:English
+#GAP:19780
+#ALLKARAOKE_ID:billy-talent-devil-in-a-midnight-mass
+#ALLKARAOKE_LASTUPDATE:2024-07-09T03:19:12.857Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:178
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Billy Talent - Devil In A Midnight Mass.mp3
+: 24 3 5 A 
+: 28 3 5 de
+: 32 3 5 vil 
+: 36 3 5 in 
+: 40 3 5 a 
+: 44 3 4 mid
+: 48 6 4 night 
+: 55 12 2 mass,
+- 67
+: 87 3 2 He 
+: 91 8 2 prayed 
+: 100 4 2 be
+: 105 6 0 hind 
+: 112 6 0 stained 
+: 119 15 -3 glass.
+- 134
+: 152 3 5 A 
+: 156 3 5 me
+: 160 4 5 mo
+: 165 2 5 ry 
+: 168 3 5 of 
+: 172 3 4 Sun
+: 176 7 4 day 
+: 184 16 2 class,
+- 200
+: 212 3 2 Re
+: 216 3 0 sur
+: 220 7 2 rec
+: 228 4 2 ted 
+: 233 7 0 from 
+: 241 7 0 the 
+: 249 18 -3 past.
+- 267
+: 286 7 7 Hold 
+: 294 7 9 your 
+: 302 8 10 breath 
+: 311 7 9 and 
+: 319 7 7 count 
+: 327 6 9 to 
+: 334 10 7 four.
+- 344 391
+- 391
+: 415 4 7 Pin
+: 420 6 9 ky 
+: 427 8 10 swears 
+: 436 10 9 don’t 
+: 447 8 7 work 
+: 456 6 9 no 
+: 463 10 7 more.
+- 473 520
+- 520
+: 544 7 7 Foot
+: 552 8 9 steps 
+: 561 7 10 down 
+: 569 7 9 the 
+: 577 6 7 hall
+: 584 7 9 way 
+: 592 10 7 floor,
+- 602
+: 608 4 5 Get
+: 613 6 7 ting 
+: 620 8 9 clo
+: 629 5 2 ser 
+: 640 6 5 to 
+: 648 7 7 my 
+: 658 7 9 door
+- 665
+: 668 5 9 I 
+: 674 4 7 was 
+: 679 6 9 a
+: 686 10 10 live, 
+: 697 7 9 but 
+: 705 8 7 now 
+: 714 7 9 I’m 
+: 722 4 7 sing
+: 727 19 5 in’
+- 746
+: 766 11 9 Si
+: 778 8 5 lent 
+: 787 7 9 night 
+: 795 4 0 for 
+: 800 3 5 the 
+: 804 4 9 rest 
+: 809 2 5 of 
+: 812 7 10 my 
+: 820 10 9 life.
+- 830
+: 831 11 9 Si
+: 843 7 5 lent 
+: 851 8 9 night 
+: 860 4 0 for 
+: 865 3 5 the 
+: 869 4 9 rest 
+: 874 3 5 of 
+: 878 6 10 my 
+: 885 10 9 life.
+- 895
+: 897 6 10 Vi
+: 904 4 10 o
+: 909 7 7 lent 
+: 917 7 10 knight 
+: 925 4 2 at 
+: 930 3 5 the 
+: 934 3 9 edge 
+: 938 2 6 of 
+: 941 8 10 your 
+: 950 9 9 knife.
+- 959
+* 961 5 7 ”For
+* 967 6 12 give 
+* 974 3 7 me 
+* 978 6 12 fa
+* 985 4 12 ther” 
+: 990 7 7 won’t 
+: 998 4 9 make 
+: 1003 5 7 it 
+: 1009 6 5 ri
+: 1016 8 4 ~ght.
+- 1024
+: 1025 11 9 Si
+: 1037 7 5 lent 
+: 1045 7 9 night 
+: 1053 5 0 for 
+: 1059 2 5 the 
+: 1062 5 9 rest 
+: 1068 3 5 of 
+: 1072 7 10 my 
+: 1080 8 9 life.
+- 1088
+: 1090 12 9 Si
+: 1103 7 5 lent 
+: 1111 7 9 night 
+: 1119 4 0 at 
+: 1124 3 5 the 
+: 1128 3 9 edge 
+: 1132 2 5 of 
+: 1135 7 10 your 
+: 1143 5 9 knife.
+- 1148
+* 1149 6 14 You’re 
+* 1156 8 14 guil
+* 1165 15 14 ty!!!
+- 1180 1391
+- 1391
+: 1415 3 5 A 
+: 1419 3 5 de
+: 1423 3 5 vil 
+: 1427 3 5 in 
+: 1431 3 5 a 
+: 1435 3 4 mid
+: 1439 6 4 night 
+: 1446 14 2 mass
+- 1460
+: 1475 4 2 Killed 
+: 1480 3 0 the 
+: 1484 7 2 boy 
+: 1492 3 2 in
+: 1496 7 0 side 
+: 1504 7 0 the 
+: 1512 11 -3 man.
+- 1523
+: 1543 3 5 The 
+: 1547 4 5 ho
+: 1552 3 5 ly 
+: 1556 3 5 wa
+: 1560 4 5 ter 
+: 1565 3 4 in 
+: 1569 6 4 his 
+: 1576 13 2 hands
+- 1589
+: 1600 4 2 Could 
+: 1605 3 2 ne
+: 1609 3 0 ver 
+: 1613 7 2 wash 
+: 1621 3 2 a
+: 1625 7 0 way 
+: 1633 7 0 his 
+: 1641 13 -3 sins
+- 1654
+: 1678 8 7 Hold 
+: 1687 6 9 your 
+: 1694 7 10 breath 
+: 1702 6 9 and 
+: 1709 8 7 count 
+: 1718 7 9 to 
+: 1726 10 7 four.
+- 1736 1782
+- 1782
+: 1806 4 7 Pin
+: 1811 5 9 ky 
+: 1817 9 10 swears 
+: 1827 11 9 don’t 
+: 1839 7 7 work 
+: 1847 6 9 no 
+: 1854 10 7 more.
+- 1864 1912
+- 1912
+: 1936 7 7 Put 
+: 1944 7 9 my 
+: 1952 7 10 trust 
+: 1960 7 9 in 
+: 1968 8 7 God 
+: 1977 7 9 that 
+: 1985 10 7 day
+- 1995
+: 2001 6 5 Not 
+: 2008 3 7 the 
+: 2012 7 9 man 
+: 2020 9 2 that 
+: 2032 8 5 taught 
+: 2041 7 7 his 
+: 2049 4 9 wa
+: 2054 3 9 ~y
+- 2057
+: 2058 7 9 I 
+: 2066 4 7 was 
+: 2071 6 9 a
+: 2078 11 10 live, 
+: 2090 6 9 but 
+: 2097 8 7 now 
+: 2106 6 9 I’m 
+: 2113 4 7 sing
+: 2118 21 5 in’
+- 2139
+: 2158 11 9 Si
+: 2170 7 5 lent 
+: 2178 7 9 night 
+: 2186 4 0 for 
+: 2191 3 5 the 
+: 2195 4 9 rest 
+: 2200 2 5 of 
+: 2203 7 10 my 
+: 2211 10 9 life.
+- 2221
+: 2223 10 9 Si
+: 2234 7 5 lent 
+: 2242 8 9 night 
+: 2251 4 0 for 
+: 2256 3 5 the 
+: 2260 4 9 rest 
+: 2265 3 5 of 
+: 2269 6 10 my 
+: 2276 10 9 life.
+- 2286
+: 2288 8 10 Vi
+: 2297 3 10 o
+: 2301 6 7 lent 
+: 2308 8 10 knight 
+: 2317 3 2 at 
+: 2321 3 6 the 
+: 2325 3 10 edge 
+: 2329 2 6 of 
+: 2332 8 10 your 
+: 2341 9 9 knife.
+- 2350
+* 2352 3 9 “For
+* 2356 8 12 give 
+* 2365 3 9 me 
+* 2369 6 12 fa
+* 2376 4 12 ther” 
+: 2381 7 7 won’t 
+: 2389 4 9 make 
+: 2394 5 7 it 
+: 2400 7 5 ri
+: 2408 7 4 ~ght.
+- 2415
+: 2416 12 9 Si
+: 2429 7 5 lent 
+: 2437 7 9 night 
+: 2445 4 0 for 
+: 2450 3 5 the 
+: 2454 4 9 rest 
+: 2459 3 5 of 
+: 2463 7 10 my 
+: 2471 9 9 life.
+- 2480
+: 2482 12 9 Si
+: 2495 6 5 lent 
+: 2502 8 9 night 
+: 2511 3 0 at 
+: 2515 3 5 the 
+: 2519 2 9 edge 
+: 2522 3 5 of 
+: 2526 8 10 your 
+: 2535 5 9 knife.
+- 2540
+* 2541 5 14 You’re 
+* 2547 7 14 guil
+* 2555 13 14 ty!!!
+- 2568 2915
+- 2915
+F 2939 7 2 Whis
+F 2947 4 -1 per, 
+F 2952 7 2 whis
+F 2960 3 -1 per 
+F 2964 6 1 don’t 
+F 2971 7 3 make 
+F 2979 5 4 a 
+F 2985 13 3 sound.
+- 2998
+F 2999 4 0 Your 
+F 3004 8 3 bed 
+F 3013 2 0 is 
+F 3016 9 3 made,
+- 3025
+F 3030 6 0 It’s 
+F 3037 6 3 in 
+F 3044 7 3 the 
+F 3052 10 3 ground.
+- 3062
+F 3068 7 2 Whis
+F 3076 4 -1 per, 
+F 3081 7 2 whis
+F 3089 3 -1 per 
+F 3093 6 1 don’t 
+F 3100 7 3 make 
+F 3108 5 4 a 
+F 3114 13 3 sound.
+- 3127
+F 3128 4 0 Your 
+F 3133 8 3 bed 
+F 3142 2 0 is 
+F 3145 9 3 made,
+- 3154
+F 3159 6 0 It’s 
+F 3166 6 3 in 
+F 3173 7 3 the 
+F 3181 10 3 ground.
+- 3191
+F 3198 7 17 Whis
+F 3206 4 14 per, 
+F 3211 7 17 whis
+F 3219 4 14 per 
+F 3224 6 14 don’t 
+F 3231 7 14 make 
+F 3239 5 14 a 
+F 3245 10 14 sound.
+- 3255
+F 3258 5 14 Your 
+F 3264 7 17 bed 
+F 3272 3 14 is 
+F 3276 6 14 made,
+- 3282
+F 3289 6 14 It’s 
+F 3296 6 14 in 
+F 3303 6 17 the 
+F 3313 8 14 ground.
+- 3321
+F 3327 7 17 Whis
+F 3335 4 14 per, 
+F 3340 7 17 whis
+F 3348 4 14 per 
+F 3353 6 14 don’t 
+F 3360 7 14 make 
+F 3368 5 14 a 
+F 3374 12 14 sound.
+- 3386
+F 3387 4 14 Your 
+F 3392 8 17 bed 
+F 3401 3 14 is 
+F 3405 8 17 made,
+- 3413
+F 3418 7 17 It’s 
+F 3426 6 17 in 
+F 3433 5 14 the 
+F 3441 9 14 ground.
+- 3450
+F 3457 7 17 Whis
+F 3465 5 14 per, 
+F 3471 6 17 whis
+F 3478 4 14 per 
+F 3483 6 14 don’t 
+F 3490 7 14 make 
+F 3498 5 14 a 
+F 3504 11 14 sound.
+- 3515
+F 3517 4 14 Your 
+F 3522 8 17 bed 
+F 3531 3 14 is 
+F 3535 8 17 made,
+- 3543
+F 3548 6 17 It’s 
+F 3555 6 14 in 
+F 3562 5 14 the 
+F 3571 9 14 ground.
+- 3580
+F 3587 7 17 Whis
+F 3595 4 14 per, 
+F 3600 6 17 whis
+F 3607 4 14 per 
+F 3612 6 14 don’t 
+F 3619 7 14 make 
+F 3627 6 14 a 
+F 3634 10 14 sound.
+- 3644
+F 3647 4 14 Your 
+F 3652 7 17 bed 
+F 3660 3 14 is 
+F 3664 7 17 made,
+- 3671
+F 3672 4 19 And 
+F 3677 7 17 it’s 
+F 3685 6 19 in 
+F 3692 6 19 the 
+F 3700 17 21 ground.
+E

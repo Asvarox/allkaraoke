@@ -6,9 +6,10 @@
 #PREVIEWSTART:47
 #VIDEO:v=pHXDMe6QV-U
 #LANGUAGE:English
-#GAP:28830,683223127788
+#GAP:28730,683223127788
 #EDITION:ESC 2010
 #ALLKARAOKE_ID:sun-stroke-project-olia-tira-run-away
+#ALLKARAOKE_LASTUPDATE:2024-07-09T03:19:14.340Z
 #ALLKARAOKE_ARTISTORIGIN:MD
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=11618
 #ALLKARAOKE_REALBPM:130
@@ -61,7 +62,7 @@
 : 257 2 17 my 
 : 261 2 17 li
 : 265 28 15 fe
-- 310 568
+- 293 568
 - 568
 : 585 2 15 You've 
 : 589 2 17 lost 
@@ -82,6 +83,7 @@
 : 677 2 10 the 
 : 681 10 9 sky
 : 693 2 10 ~
+- 695 696
 - 696
 : 713 2 15 Ne
 : 717 2 17 ver 
@@ -99,6 +101,7 @@
 : 797 2 18 give 
 : 801 2 18 up 
 : 805 6 22 you
+- 811 824
 - 824
 : 841 2 18 I 
 : 845 2 18 don't 
@@ -145,6 +148,7 @@
 : 1057 2 18 with 
 : 1061 4 22 no
 : 1069 14 22 thing
+- 1083 1088
 - 1088
 * 1105 10 22 O
 : 1117 2 20 ~
@@ -241,7 +245,7 @@
 : 1601 2 17 my 
 : 1605 2 17 li
 * 1609 32 15 fe
-- 1658 1880
+- 1641 1880
 - 1880
 : 1897 2 15 There's 
 : 1901 2 15 no 
