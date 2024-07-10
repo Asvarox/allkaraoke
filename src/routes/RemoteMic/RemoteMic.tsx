@@ -108,7 +108,10 @@ const Container = styled.div`
   max-width: 400px;
   box-sizing: border-box;
   min-height: 100vh;
+  max-height: 100vh;
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
 
   @media (max-height: 500px) and (min-aspect-ratio: 16/10) {
     max-width: 960px;

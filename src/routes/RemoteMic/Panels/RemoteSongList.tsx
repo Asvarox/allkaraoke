@@ -66,11 +66,21 @@ function RemoteSongList({
     [originalSongList.data, overrides],
   );
 
+  const [addedSongs, setAddedSongs] = useState<string[]>([]);
+  const [tab, setTab] = useState<'list' | 'queue'>('list');
   const finalSongList = useMemo(() => {
     return searchList(songList, search);
   }, [search, songList]);
 
   const unit = useBaseUnitPx();
+
+  const toggleSong = (songId: string) => {
+    if (addedSongs.includes(songId)) {
+      setAddedSongs((current) => current.filter((id) => id !== songId));
+    } else {
+      setAddedSongs((current) => [...current, songId]);
+    }
+  };
 
   return (
     <Container>
@@ -83,6 +93,14 @@ function RemoteSongList({
           onChange={(value) => setSearch(value)}
           data-test="search-input"
         />
+        <Tabs>
+          <Tab data-active={tab === 'list'} onClick={() => setTab('list')}>
+            All songs
+          </Tab>
+          <Tab data-active={tab === 'queue'} onClick={() => setTab('queue')}>
+            Your list
+          </Tab>
+        </Tabs>
       </TopBar>
       <CustomVirtualization
         forceRenderItem={-1}
@@ -94,9 +112,19 @@ function RemoteSongList({
         groupContent={() => null}
         itemHeight={unit * 7 + 1}
         itemContent={(index, groupIndex, itemProps) => {
-          const song = finalSongList[index];
+          const song = tab === 'list' ? finalSongList[index] : songList.find((song) => song.id === addedSongs[index]);
+
+          if (!song) {
+            return null;
+          }
+
+          const isOnList = addedSongs.includes(song.id);
+
           return (
-            <SongItemContainer data-test={song.id} {...itemProps}>
+            <SongItemContainer
+              data-test={song.id}
+              {...itemProps}
+              onClick={() => (tab === 'list' ? toggleSong(song.id) : toggleSong(song.id))}>
               <Language>
                 <Flag language={song.language} />
               </Language>
@@ -104,6 +132,25 @@ function RemoteSongList({
                 <Title>{song.title}</Title>
                 <Artist>{song.artist}</Artist>
               </ArtistTitle>
+              <Action>
+                {isOnList ? (
+                  <ActionButton
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setAddedSongs((current) => current.filter((id) => id !== song.id));
+                    }}>
+                    Remove
+                  </ActionButton>
+                ) : (
+                  <ActionButton
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setAddedSongs((current) => [...current, song.id]);
+                    }}>
+                    Add
+                  </ActionButton>
+                )}
+              </Action>
             </SongItemContainer>
           );
         }}
@@ -113,25 +160,44 @@ function RemoteSongList({
 }
 export default RemoteSongList;
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1 auto;
+  min-height: calc(100vh - 6rem);
+  max-height: calc(100vh - 6rem);
+`;
+
 const TopBar = styled.div`
   ${typography};
   font-size: 2.5rem;
   display: flex;
-
-  position: fixed;
-  top: 0;
-  padding-top: 0.5rem;
+  flex-direction: column;
 `;
 
-const Container = styled.div`
+const Tabs = styled.div`
   display: flex;
-  flex-direction: column;
-  padding-bottom: 5rem;
-  padding-top: 6rem;
-  position: relative;
-  flex: 1 1 auto;
-  min-height: 100vh;
-  max-height: 100vh;
+  width: 100%;
+`;
+const Tab = styled.button`
+  border: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.75);
+  ${typography};
+  font-size: 2rem;
+
+  &[data-active='true'] {
+    background: ${styles.colors.text.active};
+  }
+
+  &[data-active='false'] {
+    box-shadow: inset 0px 0px 0px 2px orange;
+  }
 `;
 
 const SongItemContainer = styled.div`
@@ -143,6 +209,8 @@ const SongItemContainer = styled.div`
   gap: 1rem;
   border-bottom: 1px solid black;
   overflow: hidden;
+
+  position: relative;
 `;
 
 const Language = styled.div`
@@ -174,3 +242,11 @@ const Title = styled.span`
   font-size: 1.5rem;
   white-space: nowrap;
 `;
+
+const Action = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+`;
+
+const ActionButton = styled.button``;
