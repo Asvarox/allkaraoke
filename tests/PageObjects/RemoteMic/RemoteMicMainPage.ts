@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class RemoteMicMainPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get playerNameInput() {
     return this.page.getByTestId('player-name-input');

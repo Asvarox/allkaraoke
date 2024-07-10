@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class LandingPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public async enterTheGame() {
     // On landing page there are two of these buttons - for mobile and desktop

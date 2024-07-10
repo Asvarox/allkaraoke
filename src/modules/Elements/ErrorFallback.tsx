@@ -12,10 +12,16 @@ export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
       <h1>
         <Warning fontSize="large" /> An error occurred :(
       </h1>
-      <h3>The game crashed with following error</h3>
-      <Pre>{error.message}</Pre>
+      {'message' in (error as any) ? (
+        <>
+          <h3>The game crashed with following error</h3>
+          <Pre>{(error as any).message}</Pre>
+        </>
+      ) : (
+        <h3>The game crashed</h3>
+      )}
       <h3>
-        Help me fix it by reporting what exactly has happened at{' '}
+        Help fix it by reporting what exactly has happened at{' '}
         <a href="https://github.com/Asvarox/allkaraoke" target="_blank" rel="noreferrer">
           GitHub
         </a>{' '}

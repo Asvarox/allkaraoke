@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class SongEditSyncLyricsToVideoPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get pageContainer() {
     return this.page.getByTestId('sync-lyrics');

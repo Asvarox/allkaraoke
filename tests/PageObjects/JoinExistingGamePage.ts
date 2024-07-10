@@ -1,7 +1,11 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class JoinExistingGamePagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public async confirmWifiConnection() {
     await this.page.getByTestId('confirm-wifi-connection').click();

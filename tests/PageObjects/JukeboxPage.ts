@@ -2,7 +2,11 @@ import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class JukeboxPagePO {
-  constructor(private page: Page, private context: BrowserContext, private browser: Browser) {}
+  constructor(
+    private page: Page,
+    private context: BrowserContext,
+    private browser: Browser,
+  ) {}
 
   public get skipButtonElement() {
     return this.page.getByTestId('skip-button');
