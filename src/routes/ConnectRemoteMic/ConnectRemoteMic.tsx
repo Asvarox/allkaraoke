@@ -40,7 +40,7 @@ function ConnectRemoteMic() {
     <Container>
       <DescriptionMobile>
         <h1>
-          Code: <RoomCode gameCode={gameCode} data-test="game-code" />
+          Code: <RoomCode gameCode={gameCode} />
         </h1>
       </DescriptionMobile>
       <QRCode>
