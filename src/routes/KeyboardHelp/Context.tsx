@@ -1,6 +1,7 @@
 import { omit } from 'lodash-es';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventEffect } from 'modules/GameEvents/hooks';
+import ConnectionStatus from 'modules/RemoteMic/ConnectionStatus';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import { createContext, FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import KeyboardHelpView from './HelpView';
@@ -56,6 +57,7 @@ export const KeyboardHelpProvider: FunctionComponent<PropsWithChildren> = ({ chi
     <KeyboardHelpContext.Provider value={{ setKeyboard, unsetKeyboard, hasContent }}>
       {children}
       <KeyboardHelpView help={rest} />
+      <ConnectionStatus />
     </KeyboardHelpContext.Provider>
   );
 };

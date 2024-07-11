@@ -46,7 +46,6 @@ export const storeSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>
 };
 
 export const getAllStats = async () => {
-  console.log(await getStorage());
   const keys = (await (await getStorage())?.keys()) ?? [];
   const stats: Record<string, SongStats> = {};
   await Promise.all(

@@ -43,6 +43,19 @@ class SongsService {
     await this.reloadIndex();
   };
 
+  /**
+   * Returns true if the song is overridden by a local version and false if it's not added to the main game at all
+   * @param songId
+   */
+  public isOverridden = async (songId: string) => {
+    const localSong = await this.getLocal(songId);
+
+    if (!localSong) {
+      return false;
+    }
+    return !!localSong;
+  };
+
   public get = async (songId: string) => {
     const localSong = await this.getLocal(songId);
 

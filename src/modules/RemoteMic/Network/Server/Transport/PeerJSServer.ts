@@ -45,6 +45,10 @@ export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInte
     });
   }
 
+  public getCurrentPing = () => {
+    return 0;
+  };
+
   public disconnect = () => {
     this.peer?.disconnect();
   };

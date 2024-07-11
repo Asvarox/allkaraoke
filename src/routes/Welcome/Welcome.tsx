@@ -71,11 +71,11 @@ const BackgroundMusicCredit = styled.div`
   text-decoration: none;
   flex-direction: column;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.5rem;
   gap: 1.25rem;
   opacity: 0.85;
   position: absolute;
-  bottom: 1rem;
+  bottom: 4rem;
   left: 1rem;
 
   view-transition-name: background-music-credit;

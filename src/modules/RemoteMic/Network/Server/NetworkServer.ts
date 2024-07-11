@@ -42,6 +42,7 @@ export class NetworkServer {
     this.transport.connect(
       this.getGameCode(),
       () => {
+        console.log('connected', this.getGameCode());
         this.transport!.addListener((event, sender) => {
           const type = event.t;
           if (type === 'register') {
@@ -96,12 +97,22 @@ export class NetworkServer {
             }
           }
         });
+
+        events.micServerStarted.dispatch();
       },
       () => {
+        events.micServerStopped.dispatch();
         this.started = false;
+
+        // try to reconnect
+        setTimeout(this.start, 1_000);
       },
     );
   };
 
-  public getGameCode = () => (UseWebsocketsSettings.get() ? 'w' : 'p') + this.gameCode;
+  public isStarted = () => this.started;
+
+  public getLatency = () => this.transport?.getCurrentPing() ?? 0;
+
+  public getGameCode = (): string => (UseWebsocketsSettings.get() ? 'w' : 'p') + this.gameCode;
 }

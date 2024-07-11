@@ -119,6 +119,9 @@ export const events = {
   ),
   readinessConfirmed: new GameEvent<(deviceId: string) => void>('remoteReadinessConfirmed'),
   minPlayerNumberChanged: new GameEvent<(previous: number, current: number) => void>('minPlayerNumberChanged'),
+
+  micServerStarted: new GameEvent('micServerStarted'),
+  micServerStopped: new GameEvent('micServerStopped'),
 };
 
 export default events;

@@ -252,7 +252,7 @@ const LyricsLine = styled.div<{ nextLine?: boolean; effectsEnabled: boolean }>`
   font-size: ${({ nextLine, effectsEnabled }) => (effectsEnabled ? 3.5 + (nextLine ? 0 : 1) : 2)}rem;
 
   height: ${({ effectsEnabled }) => (effectsEnabled ? 4.5 : 2)}rem;
-  -webkit-text-stroke-width: ${({ effectsEnabled }) => (effectsEnabled ? '2px' : '1px')};
+  -webkit-text-stroke-width: ${({ effectsEnabled }) => (effectsEnabled ? '0.2rem' : '1px')};
 
   color: ${({ nextLine }) => (nextLine ? styles.colors.text.inactive : styles.colors.text.default)};
 

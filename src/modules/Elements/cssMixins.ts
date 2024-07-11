@@ -12,6 +12,9 @@ export const typography = {
   fontWeight: 'bold',
   WebkitTextStroke: 'thin black',
   color: 'white',
+  '& strong': {
+    color: styles.colors.text.active,
+  },
 };
 
 export const mobileMQ = '@media (hover: none)';

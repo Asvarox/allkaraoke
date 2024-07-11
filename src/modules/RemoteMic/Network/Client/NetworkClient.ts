@@ -115,7 +115,7 @@ export class NetworkClient {
   };
 
   public latency = 999;
-  public pingStart = Date.now();
+  public pingStart = getPingTime();
   public pinging = false;
   private ping = () => {
     this.pinging = true;
@@ -131,7 +131,7 @@ export class NetworkClient {
     this.pinging = false;
     this.reportPing(this.latency);
 
-    setTimeout(this.ping, 1000);
+    setTimeout(this.ping, 2_000);
   };
 
   public connectToServer = (roomId: string, name: string, silent: boolean) => {

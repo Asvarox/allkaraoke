@@ -26,4 +26,6 @@ export interface ServerTransport extends Listener<[NetworkMessages, SenderInterf
   ): void;
 
   disconnect(): void;
+
+  getCurrentPing(): number;
 }
