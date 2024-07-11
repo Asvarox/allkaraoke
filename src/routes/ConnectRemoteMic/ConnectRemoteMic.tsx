@@ -38,6 +38,11 @@ function ConnectRemoteMic() {
 
   return (
     <Container>
+      <DescriptionMobile>
+        <h1>
+          Code: <RoomCode gameCode={gameCode} data-test="game-code" />
+        </h1>
+      </DescriptionMobile>
       <QRCode>
         <QRCodeSVG value={link} width="100%" height="100%" includeMargin />
       </QRCode>
@@ -151,6 +156,13 @@ const QRCode = styled.div`
   }
 `;
 
+const DescriptionMobile = styled.div`
+  display: none;
+  @media (max-width: 560px) {
+    display: block;
+  }
+  margin-bottom: 2rem;
+`;
 const Description = styled.div`
   @media (max-width: 560px) {
     display: none;

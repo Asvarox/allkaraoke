@@ -30,7 +30,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
   const [errorReset, setErrorReset] = useState(false);
   const firstInputRef = useRef<HTMLInputElement | null>(null);
   const secondInputRef = useRef<HTMLInputElement | null>(null);
-  const [customRoomId, setCustomRoomId] = useState<string>('');
+  const [customRoomId, setCustomRoomId] = useState<string>(roomId ?? '');
   const navigate = useSmoothNavigate();
 
   const disabled = connectionStatus !== 'uninitialised' && connectionStatus !== 'error';
@@ -92,7 +92,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
         }}
       />
       <Form onSubmit={handleConnect}>
-        {!roomId && (
+        {!disabled && (
           <GCInput
             ref={firstInputRef}
             placeholder="_____"
