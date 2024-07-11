@@ -1,0 +1,589 @@
+#ARTIST:Linkin Park
+#TITLE:Fighting Myself
+#CREATOR:DoubleDee
+#BPM:280
+#YEAR:2023
+#PREVIEWSTART:141
+#VIDEO:v=iKBCVZqqooY
+#GENRE:Nu Metal
+#LANGUAGE:English
+#GAP:28432,14285714286
+#ALLKARAOKE_ID:linkin-park-fighting-myself
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:14.584Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_PREVIEWEND:190
+#ALLKARAOKE_VOLUME:0,83
+#MP3:Linkin Park - Fighting Myself.mp3
+#COVER:Linkin Park - Fighting Myself [CO].jpg
+#BACKGROUND:Linkin Park - Fighting Myself [BG].jpg
+R 19 3 4 Now 
+R 31 3 4 some
+R 35 6 4 times 
+R 43 4 4 these
+- 47
+R 51 3 4 Thoughts 
+R 55 1 4 in 
+R 57 1 3 my 
+R 59 5 4 head 
+R 67 2 6 speak 
+R 71 3 4 so 
+R 75 5 6 loud
+- 80
+R 83 1 4 Ev
+R 85 1 4 ery 
+R 87 1 6 lit
+R 89 1 4 tle 
+R 91 3 6 thing 
+R 95 1 4 that 
+R 97 1 4 I 
+R 99 3 6 think 
+R 103 1 4 a
+R 105 3 6 bout
+- 108
+R 111 3 4 Just 
+R 115 3 5 builds 
+R 119 2 5 on 
+R 123 3 8 top 
+R 129 1 4 of 
+R 131 1 4 the 
+R 133 1 6 pain 
+R 135 2 4 and 
+R 139 4 4 doubt
+- 143
+R 147 1 2 E
+R 149 1 2 ven 
+R 151 3 3 though 
+R 155 1 3 I 
+R 157 1 4 wanna 
+R 159 2 5 just 
+R 163 2 5 let 
+R 167 1 4 it 
+R 169 3 4 out
+- 172
+R 175 3 3 I 
+R 183 1 10 try 
+R 185 1 7 to 
+R 187 3 4 act 
+R 191 3 5 like 
+R 195 3 5 I 
+R 199 3 5 don’t 
+R 203 3 6 mind 
+R 207 3 4 it
+- 210
+R 215 1 9 Try 
+R 217 1 4 to 
+R 219 3 6 keep 
+R 223 2 6 my 
+R 227 3 4 mouth 
+R 231 3 7 so 
+R 235 2 9 qui
+R 239 2 9 et
+- 241
+R 247 3 4 But 
+R 251 1 8 sit
+R 253 1 5 ting 
+R 255 3 5 there 
+R 259 3 6 in 
+R 263 2 4 my 
+R 267 3 6 si
+R 271 3 6 lence
+- 274
+R 279 2 9 Just 
+R 283 3 6 seems 
+R 287 2 7 to 
+R 291 3 7 am
+R 295 2 3 pli
+R 299 2 3 fy 
+R 303 2 5 it
+- 305
+R 307 2 4 When 
+R 311 5 5 I
+- 316
+R 323 3 8 Thought 
+R 327 3 4 that 
+R 331 3 4 keep
+R 335 3 2 ing 
+R 339 3 4 this 
+R 343 3 4 in
+R 347 3 7 side 
+R 351 3 4 would 
+R 355 3 6 make 
+R 359 2 5 it 
+R 363 3 7 bet
+R 367 3 6 ter
+- 370
+R 375 3 5 I 
+R 379 2 6 ne
+R 383 3 6 ver 
+R 387 3 5 thought 
+R 391 3 7 that 
+R 395 3 6 I 
+R 399 3 5 would 
+R 403 3 6 end 
+R 407 3 7 up 
+R 411 1 6 ru
+R 413 1 7 in
+R 415 2 6 ing 
+R 419 3 6 it 
+R 423 3 7 for
+R 427 3 7 e
+R 431 3 7 ver
+- 434
+R 439 3 4 But 
+R 443 2 6 eve
+R 447 2 4 ry 
+R 451 3 6 time 
+R 455 3 4 I 
+R 459 3 6 think 
+R 463 3 4 I 
+R 467 3 6 got 
+R 471 1 6 eve
+R 473 1 6 ry
+R 475 3 6 thing 
+R 479 3 6 put 
+R 483 3 7 back 
+R 487 3 6 to
+R 491 2 7 ge
+R 495 2 4 ther
+- 497
+R 503 3 7 I 
+R 507 3 7 end 
+R 511 2 6 up 
+R 515 2 7 ma
+R 519 2 8 king 
+R 523 3 7 more 
+R 527 3 6 re
+R 531 3 10 grets, 
+R 539 2 7 ma
+R 543 2 8 king 
+R 547 3 7 more 
+R 551 3 6 re
+R 555 3 10 grets
+- 558
+: 563 3 18 Fal
+: 567 3 20 ling 
+: 575 3 18 from 
+: 579 6 20 grace 
+: 587 3 20 I 
+: 591 7 20 watch 
+: 599 3 18 it 
+: 603 5 20 all 
+: 611 3 20 come 
+: 615 3 21 a
+: 619 4 20 part
+- 623
+: 627 3 18 Know
+: 631 6 20 ing 
+: 639 3 18 I 
+: 643 6 20 could 
+: 651 2 20 have 
+: 655 6 20 changed 
+: 663 3 18 it 
+: 667 5 20 all 
+: 675 3 20 from 
+: 679 3 21 the 
+: 683 6 20 start
+- 689
+: 695 3 20 Figh
+: 699 3 20 ting 
+: 703 3 20 my
+: 707 6 20 self, 
+: 715 2 20 I 
+: 719 5 20 al
+: 727 3 18 ways 
+: 731 16 18 lose
+- 747
+* 759 3 20 Figh
+* 763 3 20 ting 
+* 767 3 18 my
+* 771 6 20 self, 
+* 779 2 18 I 
+* 783 5 20 al
+* 791 3 21 ways 
+* 795 19 20 lose
+- 814
+R 825 1 -1 I 
+R 827 1 3 did
+R 829 1 3 n’t 
+R 831 2 4 want 
+R 835 2 5 you 
+R 839 1 4 to 
+R 841 3 4 think 
+R 847 1 4 I’m 
+R 849 1 4 worn 
+R 851 3 4 out 
+R 855 3 4 so 
+R 859 3 5 ea
+R 863 1 4 si
+R 865 2 4 ly
+- 867
+R 873 1 1 I 
+R 875 3 4 wish 
+R 879 3 4 I’d 
+R 883 3 4 held 
+R 887 1 4 it 
+R 889 1 6 in
+- 890
+R 893 1 3 So 
+R 895 3 6 you’d 
+R 899 2 6 ne
+R 903 1 6 ver 
+R 905 3 7 knew 
+R 909 1 6 what 
+R 911 3 6 built 
+R 915 3 6 up 
+R 919 3 4 in
+R 923 3 6 side 
+R 927 1 4 of 
+R 929 3 7 me
+- 932
+R 939 3 7 Now 
+R 943 3 6 I 
+R 951 3 9 don’t 
+R 955 3 9 know 
+R 959 1 7 how 
+R 961 1 7 an 
+R 963 2 7 o
+R 967 1 6 ver
+R 969 3 7 flow 
+R 975 3 7 spilled 
+R 979 2 6 out 
+R 983 3 6 un
+R 987 1 7 wil
+R 989 1 7 ling
+R 993 3 7 ly
+- 996
+R 1003 3 7 But 
+R 1007 3 6 now 
+R 1011 2 6 eve
+R 1015 1 6 ry
+R 1017 2 6 thing 
+R 1021 1 5 that 
+R 1023 3 5 I 
+R 1027 3 6 learned 
+R 1031 1 4 to 
+R 1033 2 7 hate
+- 1035
+R 1039 3 6 Came 
+R 1043 3 6 out 
+R 1047 2 4 for 
+R 1051 3 6 you 
+R 1055 3 4 to 
+R 1059 3 8 see
+- 1062
+R 1067 3 6 I 
+R 1071 3 8 don’t 
+R 1075 3 8 want 
+R 1079 4 8 you
+- 1083
+R 1089 1 6 To 
+R 1091 3 8 pro
+R 1095 3 6 mise 
+R 1099 3 6 you 
+R 1103 3 4 can 
+R 1107 3 8 change 
+R 1111 1 8 eve
+R 1113 1 8 ry
+R 1115 3 8 thing 
+R 1119 3 6 and 
+R 1123 3 8 make 
+R 1127 2 6 it 
+R 1131 3 8 bet
+R 1135 3 6 ter
+- 1138
+R 1143 3 6 Cause 
+R 1147 3 8 you 
+R 1151 2 8 can 
+R 1155 3 8 bet 
+R 1159 3 8 I’m 
+R 1163 2 8 gon
+R 1167 3 6 na 
+R 1171 3 8 end 
+R 1175 3 6 up 
+R 1179 1 8 ru
+R 1181 1 8 i
+R 1183 3 6 ning 
+R 1187 3 8 it 
+R 1191 3 6 for
+R 1195 3 8 e
+R 1199 3 6 ver
+- 1202
+R 1207 3 4 And 
+R 1211 3 6 eve
+R 1215 3 6 ry 
+R 1219 3 6 time 
+R 1223 2 6 you 
+R 1227 3 6 think 
+R 1231 3 4 you 
+R 1235 3 6 got 
+R 1239 1 8 eve
+R 1241 1 6 ry
+R 1243 2 8 thing 
+R 1247 3 6 put 
+R 1251 3 8 back 
+R 1255 3 6 to
+R 1259 2 8 ge
+R 1263 3 6 ther
+- 1266
+R 1271 3 6 I 
+R 1275 3 8 end 
+R 1279 2 6 up 
+R 1283 2 6 ma
+R 1287 2 6 king 
+R 1291 3 8 more 
+R 1295 3 4 re
+R 1299 3 8 grets
+- 1302
+R 1307 3 8 Ma
+R 1311 3 6 king 
+R 1315 3 8 more 
+R 1319 3 6 re
+R 1323 3 8 grets
+- 1326
+: 1331 3 18 Fal
+: 1335 3 20 ling 
+: 1343 3 18 from 
+: 1347 6 20 grace 
+: 1355 3 20 I 
+: 1359 7 20 watch 
+: 1367 3 18 it 
+: 1371 5 20 all 
+: 1379 3 20 come 
+: 1383 3 21 a
+: 1387 4 20 part
+- 1391
+: 1395 3 18 Know
+: 1399 6 20 ing 
+: 1407 3 18 I 
+: 1411 6 20 could 
+: 1419 2 20 have 
+: 1423 6 20 changed 
+: 1431 3 18 it 
+: 1435 5 20 all 
+: 1443 3 20 from 
+: 1447 3 21 the 
+: 1451 6 20 start
+- 1457
+: 1463 3 20 Figh
+: 1467 3 20 ting 
+: 1471 3 20 my
+: 1475 6 20 self, 
+: 1483 2 20 I 
+: 1487 5 20 al
+: 1495 3 18 ways 
+: 1499 16 18 lose
+- 1515
+: 1527 3 20 Figh
+: 1531 3 20 ting 
+: 1535 3 18 my
+: 1539 6 20 self, 
+: 1547 2 18 I 
+: 1551 5 20 al
+: 1559 3 21 ways 
+: 1563 19 20 lose
+- 1582
+: 1587 3 18 Fal
+: 1591 3 20 ling 
+: 1599 3 18 from 
+: 1603 6 20 grace 
+: 1611 3 20 I 
+: 1615 7 20 watch 
+: 1623 3 18 it 
+: 1627 5 20 all 
+: 1635 3 20 come 
+: 1639 3 21 a
+: 1643 4 20 part
+- 1647
+: 1651 3 18 Know
+: 1655 6 20 ing 
+: 1663 3 18 I 
+: 1667 6 20 could 
+: 1675 2 20 have 
+: 1679 6 20 changed 
+: 1687 3 18 it 
+: 1691 5 20 all 
+: 1699 3 20 from 
+: 1703 3 21 the 
+: 1707 6 20 start
+- 1713
+: 1719 3 20 Figh
+: 1723 3 20 ting 
+: 1727 3 20 my
+: 1731 6 20 self, 
+: 1739 2 20 I 
+: 1743 5 20 al
+: 1751 3 18 ways 
+: 1755 16 18 lose
+- 1771
+: 1783 3 20 Figh
+: 1787 3 20 ting 
+: 1791 3 18 my
+: 1795 6 20 self, 
+: 1803 2 18 I 
+: 1807 5 20 al
+: 1815 3 21 ways 
+* 1819 19 20 lose
+- 1838 2084
+- 2084
+: 2103 2 11 I 
+: 2107 5 13 can’t 
+: 2115 6 13 run 
+: 2123 3 13 with 
+: 2127 3 11 this 
+: 2131 3 13 weight 
+: 2136 4 13 on 
+: 2142 3 11 my 
+: 2147 6 13 back
+- 2153
+: 2167 2 11 I 
+: 2171 5 13 can’t 
+: 2179 5 13 see 
+: 2187 3 13 cause 
+: 2191 3 11 I’m 
+: 2195 3 13 fo
+: 2199 3 13 cused 
+: 2203 3 13 on 
+: 2207 2 11 the 
+: 2211 3 13 past
+- 2214
+: 2231 2 11 I 
+: 2235 6 13 can’t 
+: 2243 6 13 breathe 
+: 2251 2 11 I 
+: 2255 6 13 need 
+: 2263 2 13 to 
+: 2267 5 13 break 
+: 2275 4 13 free
+- 2279
+: 2283 3 13 From 
+: 2287 3 11 the 
+: 2291 3 13 an
+: 2295 3 11 ger 
+: 2299 3 13 that 
+: 2303 3 11 is 
+: 2307 5 13 con
+: 2315 2 11 stant
+: 2319 6 13 ly 
+: 2327 3 11 in
+: 2331 6 13 side 
+: 2339 6 13 me
+- 2345
+: 2359 2 11 I 
+: 2363 5 13 can’t 
+: 2371 6 13 run 
+: 2379 3 13 with 
+: 2383 3 11 this 
+: 2387 3 13 weight 
+: 2392 4 13 on 
+: 2398 3 11 my 
+: 2403 6 13 back
+- 2409
+: 2423 2 11 I 
+: 2427 5 13 can’t 
+: 2435 5 13 see 
+: 2443 3 13 cause 
+: 2447 3 11 I’m 
+: 2451 3 13 fo
+: 2455 3 13 cused 
+: 2459 3 13 on 
+: 2463 2 11 the 
+: 2467 3 13 past
+- 2470
+: 2487 2 11 I 
+: 2491 6 13 can’t 
+: 2499 6 13 breathe 
+: 2507 2 11 I 
+: 2511 6 13 need 
+: 2519 2 13 to 
+: 2523 5 13 break 
+: 2531 4 13 free
+- 2535
+: 2539 3 13 From 
+: 2543 3 11 the 
+: 2547 3 13 an
+: 2551 3 11 ger 
+: 2555 3 13 that 
+: 2559 3 11 is 
+: 2563 5 13 con
+: 2571 2 11 stant
+: 2575 6 13 ly 
+: 2587 4 13 in
+: 2595 5 13 side 
+: 2603 5 13 of 
+* 2611 3 15 me
+* 2615 57 17 ~
+- 2672
+* 2675 3 18 Know
+* 2679 5 20 ing 
+: 2687 3 18 I 
+: 2691 4 20 could 
+: 2699 3 18 have 
+: 2703 6 20 changed 
+: 2711 3 18 it 
+: 2715 4 20 all 
+: 2723 3 20 from 
+: 2727 3 21 the 
+: 2731 8 20 start
+- 2739
+: 2743 2 18 I 
+: 2747 6 20 can’t 
+: 2755 7 20 breathe 
+: 2763 2 18 I 
+: 2767 5 20 need 
+: 2775 3 18 to 
+: 2779 7 20 break 
+: 2787 5 20 free
+- 2792
+: 2795 3 20 From 
+: 2799 3 18 the 
+: 2803 3 20 an
+: 2807 3 18 ger 
+: 2811 3 20 that 
+: 2815 3 18 is 
+: 2819 5 20 con
+: 2827 2 18 stant
+: 2831 3 20 ly
+- 2834
+: 2843 4 13 In
+: 2851 5 13 side 
+: 2859 5 13 of 
+: 2867 3 15 me
+: 2871 57 17 ~
+- 2928
+: 2931 3 18 Know
+: 2935 5 20 ing 
+: 2943 3 18 I 
+: 2947 4 20 could 
+: 2955 3 18 have 
+: 2959 6 20 changed 
+: 2967 3 18 it 
+: 2971 4 20 all 
+: 2979 3 20 from 
+: 2983 3 21 the 
+: 2987 8 20 start
+- 2995
+: 2999 2 18 I 
+: 3003 6 20 can’t 
+: 3011 7 20 breathe 
+: 3019 2 18 I 
+: 3023 5 20 need 
+: 3031 3 18 to 
+: 3035 7 20 break 
+: 3043 5 20 free
+- 3048
+: 3051 3 20 From 
+: 3055 3 18 the 
+: 3059 3 20 an
+: 3063 3 18 ger 
+: 3067 3 20 that 
+: 3071 3 18 is 
+: 3075 5 20 con
+: 3083 2 18 stant
+: 3087 3 20 ly
+- 3090
+: 3099 3 20 In
+: 3107 4 20 side 
+: 3115 4 18 of 
+: 3123 14 20 me
+E

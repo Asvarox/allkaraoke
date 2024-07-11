@@ -1,0 +1,172 @@
+#ARTIST:THE DU
+#TITLE:Crazy Noisy Bizarre Town
+#CREATOR:Beneblade
+#BPM:272
+#YEAR:2016
+#VIDEO:v=20m00ohYASw
+#LANGUAGE:Japanese
+#GAP:18857,352941176472
+#ALLKARAOKE_ID:the-du-crazy-noisy-bizarre-town
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:15.117Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_VOLUME:0,98
+#MP3:THE DU - Crazy Noisy Bizarre Town (TV).mp3
+#COVER:THE DU - Crazy Noisy Bizarre Town (TV) [CO].jpg
+#MEDLEYSTARTBEAT:408
+#MEDLEYENDBEAT:832
+: 18 1 7 Su
+: 20 1 7 re
+: 22 3 9 chi
+: 26 2 9 ga
+: 30 2 9 tte
+: 34 3 7 ku
+- 37
+* 42 1 11 Ka
+: 44 1 11 o 
+: 46 3 11 no 
+: 50 3 11 na
+* 54 2 9 i 
+: 58 2 9 shi
+: 62 3 9 se
+: 66 4 7 n
+- 70
+* 82 1 7 Mu
+: 84 1 7 ne 
+: 86 3 9 no 
+: 90 2 9 a
+: 94 2 9 na 
+: 98 2 7 ga
+- 100
+: 106 1 11 Ka
+: 108 1 11 e
+: 110 2 11 te
+: 114 3 11 tta 
+: 118 2 9 ni
+: 122 5 11 chi
+: 130 3 9 jou
+: 134 5 11 ~
+- 139
+: 146 2 7 Kyou
+: 150 2 9 kai 
+: 154 2 9 nan
+: 158 3 9 te 
+* 162 2 7 nai 
+* 170 3 14 de
+: 174 3 14 a
+: 178 3 14 u 
+* 186 2 7 a
+: 190 3 7 ta
+: 194 2 7 ri
+: 198 3 6 mae 
+* 202 2 7 no 
+: 206 3 6 ki
+* 210 3 2 myo
+: 214 5 4 u
+- 219
+* 234 2 4 Oh, 
+: 238 3 11 yeah
+: 242 12 11 ~
+: 255 2 9 ~
+- 257
+: 274 1 6 I
+: 276 1 6 tsu
+: 278 3 6 mo
+: 282 3 6 doo
+: 286 3 6 ri 
+: 290 2 2 no 
+: 294 2 6 a
+F 298 1 7 sa (ga)
+- 299
+: 303 1 12 U
+: 306 1 12 wa
+* 308 3 14 ~
+: 314 2 12 tsu
+: 318 3 11 ra 
+* 322 2 12 de 
+: 326 3 11 wa
+: 330 3 6 ra
+: 334 1 7 u
+- 335
+: 338 2 7 Shou
+: 342 2 6 tai 
+: 346 2 6 fu
+: 350 2 6 mei 
+: 354 3 2 no 
+F 358 1 9 ma(ma)
+- 359
+* 362 2 14 Hi
+: 366 2 14 ka
+: 370 2 18 re
+: 373 4 19 ~
+: 378 3 14 ~
+: 382 2 14 ru 
+: 386 2 14 mys
+: 389 2 16 ~
+: 394 4 14 tery
+- 398
+: 402 1 6 Ha
+: 404 1 6 ji
+: 406 3 6 ma
+: 410 2 6 ri 
+: 414 2 6 mo 
+* 418 2 2 i
+F 422 1 9 wa(zu)
+- 423
+: 426 3 14 Zu
+: 430 2 14 tto 
+* 434 2 12 hi
+* 437 2 14 ~
+* 442 3 12 so
+* 446 2 11 n
+: 450 3 12 de
+: 454 3 11 ru
+: 458 2 7 ~ 
+: 462 3 7 ko
+* 466 2 7 no 
+* 470 2 12 ma
+: 474 3 12 chi 
+: 478 3 12 no 
+: 482 5 11 do
+: 490 6 7 ko
+: 498 2 7 ka
+: 501 29 9 ~
+- 530 552
+- 552
+: 570 2 14 Da
+: 574 3 14 ke
+: 578 2 14 do 
+: 582 3 14 kyo
+: 586 3 7 u 
+: 590 6 7 mo 
+: 598 2 6 jo
+: 602 5 7 jo 
+: 610 13 7 ni
+- 623
+: 634 3 12 Mo
+: 638 2 14 n
+: 642 3 14 ku 
+: 646 5 14 nan 
+: 654 7 7 ka 
+: 662 2 6 ii
+: 666 6 7 a
+: 674 3 9 tte
+: 678 11 7 ~
+- 689
+: 698 2 14 Ni
+: 702 2 14 chi
+: 706 2 14 jo
+: 710 6 14 u 
+: 718 7 19 wo 
+: 726 6 18 o
+* 734 3 19 do
+: 738 10 19 ru
+- 748
+: 758 6 19 Cra
+: 766 6 16 zy 
+: 774 6 12 nois
+: 782 7 9 y 
+: 790 14 7 bi
+: 806 10 6 zarre 
+: 818 31 7 town
+E

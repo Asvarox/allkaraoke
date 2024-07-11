@@ -1,0 +1,203 @@
+#ARTIST:Karen Aoki & Daisuke Hasegawa
+#TITLE:Great Days
+#CREATOR:Beneblade
+#BPM:340
+#YEAR:2016
+#VIDEO:v=mU3vgXUKeFM
+#LANGUAGE:Japanese
+#GAP:935,2941176470588
+#ALLKARAOKE_ID:karen-aoki-daisuke-hasegawa-great-days
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:14.581Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_VOLUME:0,97
+#MP3:Karen Aoki & Daisuke Hasegawa - Great Days (TV).mp3
+#COVER:Karen Aoki & Daisuke Hasegawa - Great Days (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1182
+#MEDLEYENDBEAT:1661
+* 23 4 4 Break
+: 31 5 4 down, 
+: 39 4 4 break
+: 47 5 4 down
+- 52 54
+- 54
+F 77 3 2 Lis
+F 82 2 -6 ten, 
+: 87 4 4 break
+: 95 5 4 down, 
+: 103 4 4 break
+: 111 5 4 down
+- 116 119
+- 119
+F 142 3 2 Lis
+F 146 2 -6 ten, 
+: 151 5 4 break
+: 159 5 4 down, 
+: 167 5 4 break
+: 175 5 4 down
+- 180 192
+- 192
+: 215 5 4 Break
+: 223 5 4 down, 
+: 231 5 4 break
+: 239 6 4 down
+- 245
+F 267 2 4 Let's 
+F 270 6 4 go
+- 276 287
+- 287
+: 310 9 6 Shin
+* 320 2 1 ~
+: 324 6 1 ing 
+: 342 6 4 jus
+: 349 3 1 ~
+: 355 5 1 tice
+- 360
+: 373 3 1 Me
+* 377 3 3 ~
+: 385 5 1 ba
+: 391 2 -1 ~
+: 395 5 -1 e
+: 405 14 1 teku
+- 419
+: 439 6 6 Brand
+: 446 2 1 ~-
+: 450 6 1 new 
+: 471 4 4 break
+* 476 2 1 ~
+: 482 8 1 down
+- 490
+: 502 4 4 Kou
+* 510 2 3 sa 
+: 515 5 1 su
+: 522 4 -1 ru 
+: 533 7 1 i
+* 542 2 -6 bu
+: 546 4 -6 ki
+- 550
+* 566 2 -4 Mi
+: 570 2 -4 sa
+: 574 2 -4 ki 
+: 578 6 -4 ka
+: 586 4 -2 ra 
+: 594 4 -1 shio
+: 603 4 -2 ka
+: 611 9 -4 ze
+- 620
+: 630 5 -4 Ton
+: 638 2 -4 ne
+: 642 2 -4 ru 
+: 646 2 -4 nu
+* 651 4 -2 ke
+: 659 4 -1 te 
+: 667 5 1 tou 
+: 674 10 -4 e
+- 684
+* 694 2 -4 Hi
+* 698 2 -4 ka
+* 702 2 -4 re
+: 706 4 -4 a
+: 714 4 -2 i 
+* 722 6 -1 ko
+: 730 5 -2 mi
+: 739 6 -4 chi 
+: 747 6 -6 ni
+- 753
+: 758 5 -4 Ma
+: 766 3 -4 yo
+: 771 3 -4 i
+: 778 4 -4 ko
+: 786 4 -4 mu
+- 790 791
+- 791
+: 814 5 1 Ko
+: 822 7 6 ko
+* 830 3 6 ro 
+: 834 26 4 ni
+- 860 863
+- 863
+: 886 8 2 To
+: 899 17 1 ke
+: 919 9 -1 ko
+: 931 8 -3 mu 
+: 941 7 -3 ka
+: 950 21 -6 ge
+- 971
+: 982 10 -4 Te
+: 994 9 -3 ra
+* 1007 5 -4 su 
+: 1014 9 -1 ou
+* 1027 5 -3 gon 
+: 1035 6 -4 no 
+: 1046 6 -3 spir
+* 1055 3 -1 it 
+: 1062 6 1 soul 
+* 1070 5 2 e
+- 1075
+: 1079 5 4 One 
+: 1086 3 2 ma
+: 1091 5 1 mo
+: 1098 5 -1 ri
+: 1106 7 -3 nuku
+- 1113
+: 1127 11 -6 Hi
+: 1141 11 -1 ka
+: 1154 38 1 ri
+- 1192
+: 1205 6 6 Let 
+: 1214 2 6 the 
+: 1218 5 6 voice 
+: 1227 4 6 of 
+: 1235 8 6 love
+- 1243
+: 1253 6 6 Take 
+* 1263 4 5 you 
+: 1270 10 5 high
+: 1282 19 3 er
+- 1301
+: 1318 2 1 A
+* 1322 2 3 tsu
+: 1326 6 5 ma
+: 1334 5 6 ru 
+: 1342 3 6 chi
+: 1347 5 6 ka
+: 1354 6 6 ra 
+: 1363 7 6 de
+- 1370
+* 1381 7 11 To
+: 1389 5 10 ki 
+: 1398 10 8 sa
+: 1410 5 6 e 
+* 1417 3 8 ko
+: 1421 7 10 e
+: 1430 18 8 te
+- 1448
+* 1462 2 6 Nine
+: 1466 4 6 teen 
+: 1474 6 6 nine
+: 1482 6 6 ty-
+: 1490 8 6 nine
+- 1498
+: 1510 5 6 Bi
+: 1518 4 5 zzare 
+* 1526 3 3 sum
+: 1530 7 5 ~
+: 1539 19 3 mer
+- 1558
+* 1574 2 1 Me
+: 1578 3 3 gu
+: 1582 6 5 ru 
+: 1590 6 6 yu
+: 1598 2 5 u
+: 1603 5 6 ki 
+: 1610 7 10 de
+- 1617
+: 1622 5 3 I
+: 1630 2 1 ki
+: 1633 5 3 ru 
+* 1642 4 5 ma
+: 1650 34 6 chi
+- 1684
+* 1702 5 8 Great 
+: 1710 70 6 days
+E

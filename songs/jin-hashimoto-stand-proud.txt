@@ -1,0 +1,160 @@
+#ARTIST:Jin Hashimoto
+#TITLE:STAND PROUD
+#CREATOR:asdFer
+#BPM:333,15
+#YEAR:2014
+#VIDEO:v=dOQWNEv4_6U
+#LANGUAGE:Japanese
+#GAP:16265,455200360198
+#ALLKARAOKE_ID:jin-hashimoto-stand-proud
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:06.165Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:0,98
+#MP3:Jin Hashimoto - STAND PROUD (TV).mp3
+#COVER:Jin Hashimoto - STAND PROUD (TV).jpg
+: 22 5 -8 So
+: 30 5 -3 shi
+: 38 5 -1 te 
+: 46 5 0 tsu
+: 54 5 -1 do
+: 62 5 -3 i
+: 70 5 -8 shi 
+: 78 3 -4 Star
+: 83 5 -3 ~
+: 91 26 -4 dust
+- 117 128
+- 128
+: 150 5 -8 Hya
+: 158 5 -3 ku
+: 166 5 -1 ne
+: 174 5 0 n 
+: 182 5 -1 me 
+: 190 5 -3 no
+- 195
+: 198 5 -8 Me
+: 206 9 -7 za
+: 219 2 2 me 
+: 223 5 2 ni 
+: 231 5 -7 yo
+: 239 9 -5 ba
+: 251 2 4 re
+: 255 14 4 te
+- 269
+: 280 5 -8 O
+: 288 5 -3 to
+: 296 5 -1 ko 
+: 304 5 0 ta
+: 312 5 -1 chi 
+: 320 5 -3 wa 
+: 328 5 -8 mu
+: 336 3 -4 ka
+: 341 5 -3 ~
+: 349 30 -4 u
+- 379
+: 393 2 -5 To
+: 397 3 -5 ki 
+* 402 14 -3 no 
+: 426 5 0 su
+: 434 5 2 na 
+: 442 5 0 wo 
+: 450 5 -1 ko
+: 458 5 -8 e
+: 466 2 -1 ru 
+: 470 5 0 Jour
+: 478 22 -3 ney
+- 500
+: 510 6 -3 Ku
+: 518 2 -1 sa
+: 522 2 0 ri 
+: 526 2 2 no 
+: 530 16 4 you 
+: 551 2 -3 tsu
+: 555 3 4 ra
+: 560 10 2 naru
+- 570
+: 575 6 2 Ka
+: 583 2 0 ra
+: 587 2 -1 mi
+: 591 2 -3 a
+: 595 16 -5 u 
+* 616 2 -8 ka
+* 620 2 2 ru
+* 624 14 0 ma
+- 638
+: 643 5 0 Hi
+: 651 5 -1 ka
+: 659 15 -3 ri 
+: 680 2 -3 de 
+: 684 2 -1 ta
+: 688 2 0 tsu 
+: 692 12 3 sa
+: 708 4 4 da
+: 715 7 6 ~
+: 725 50 4 me
+- 775 797
+- 797
+* 819 4 0 Stand 
+* 825 5 0 up!
+- 830
+* 835 4 0 Stand 
+* 841 5 0 up!
+- 846
+* 851 4 0 Stand 
+* 857 5 0 up!
+- 862
+: 869 6 -3 U
+: 878 5 4 chi
+: 886 17 4 ko
+: 906 2 2 mu 
+: 910 2 0 no 
+: 914 20 2 wa
+- 934
+: 944 2 -5 All 
+: 948 3 -1 right 
+: 953 5 -1 now
+- 958
+: 961 2 -5 All 
+: 965 3 -1 right 
+: 970 5 -1 now
+- 975
+: 978 2 -5 All 
+: 982 3 -1 right 
+: 987 5 -1 now
+- 992
+: 998 6 -3 Ho
+: 1007 5 2 ko
+: 1015 17 5 ri 
+* 1035 2 7 no 
+* 1039 2 5 Bul
+: 1043 24 4 let
+- 1067
+: 1074 2 -3 Break 
+: 1078 3 0 you 
+: 1083 5 0 down
+- 1088
+: 1091 2 -3 Break 
+: 1095 3 0 you 
+: 1100 5 0 down
+- 1105
+: 1108 2 -3 Break 
+: 1112 3 0 you 
+: 1117 5 0 down
+- 1122
+* 1127 6 -3 Ko
+* 1136 5 4 bu
+: 1144 17 5 shi 
+: 1165 2 7 ha
+: 1169 2 5 na
+: 1173 20 2 tsu
+- 1193
+: 1201 4 -3 Sei
+: 1209 16 0 na
+: 1228 3 0 ru 
+: 1233 5 2 bi
+: 1241 5 -1 jon 
+: 1249 5 2 S
+: 1257 5 4 tand
+: 1265 5 8 ~ 
+: 1274 38 9 Proud!
+E
