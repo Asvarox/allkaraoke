@@ -1,0 +1,297 @@
+#ARTIST:Oingo & Boingo
+#TITLE:Akuyaku Concerto ~Oingo and Boingo~
+#CREATOR:Currymalker
+#BPM:290,58
+#YEAR:2015
+#VIDEO:v=vh_ZK_Rb25s
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:2012,2029733636177
+#ALLKARAOKE_ID:oingo-boingo-akuyaku-concerto-oingo-and-boingo
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:14.844Z
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_VOLUME:0,99
+#MP3:Oingo & Boingo - Akuyaku Concerto ~Oingo and Boingo~ (TV).mp3
+#COVER:Oingo & Boingo - Akuyaku Concerto ~Oingo and Boingo~ (TV) [CO].jpg
+#MEDLEYSTARTBEAT:128
+#MEDLEYENDBEAT:503
+F 19 3 7 Shin
+F 23 1 7 ji
+F 25 1 7 te
+F 27 1 7 ru 
+F 29 5 7 ze!
+- 34
+F 49 3 7 Shin
+F 53 3 7 ji
+F 57 1 7 te
+F 59 1 7 ru 
+F 61 6 7 yo!
+- 67
+F 82 4 7 O
+F 87 5 7 in
+F 93 3 7 go 
+F 97 4 7 Bo
+F 102 6 7 in
+F 109 4 7 go 
+F 114 4 7 Bro
+F 119 17 7 thers!
+- 136
+: 147 5 0 O
+: 154 2 3 re 
+: 158 2 5 wa 
+: 162 2 7 O
+: 166 5 7 in
+: 174 2 3 go 
+: 178 7 0 hen
+: 187 6 0 shin 
+* 195 6 -5 de
+: 203 6 -1 ki
+: 211 10 0 ru
+: 223 2 3 ~
+: 227 10 0 ~
+* 239 2 3 ~
+* 243 2 0 ~
+* 247 2 3 ~
+: 251 2 0 ~
+: 255 2 3 ~
+: 259 7 0 ~
+- 266
+: 275 6 5 Shin
+: 283 6 5 chou, 
+: 291 6 5 tai
+: 299 2 5 juu, 
+: 303 2 5 ni
+: 307 6 5 oi 
+: 315 2 3 ma
+* 319 2 2 de 
+: 323 7 3 mo
+- 330
+: 339 2 3 O
+: 343 2 3 mo
+: 347 2 3 i 
+: 351 2 3 no 
+: 355 6 2 ma
+: 363 5 2 ma 
+: 371 20 0 sa
+- 391
+F 403 2 -10 Da
+F 407 2 -1 re 
+F 411 2 -3 ni 
+F 415 2 -5 mo 
+F 419 2 -7 ba
+F 423 2 -7 re
+F 427 4 -10 nai,
+- 431
+F 435 2 -7 Sa
+F 439 2 -1 to
+F 443 2 -5 ra
+F 447 2 -7 re
+F 451 6 -10 nai
+- 457
+: 467 6 7 Sou
+: 475 6 7 zou 
+: 483 6 7 no 
+: 491 2 5 ka
+: 495 4 5 mi
+- 499
+: 507 2 7 “Ku
+: 511 2 7 nu
+: 515 7 0 mu”!
+- 522
+: 532 6 0 Bo
+: 540 2 3 ku 
+* 544 2 5 wa 
+* 548 2 7 Bo
+: 552 6 7 in
+: 560 2 3 go 
+: 564 6 0 man
+: 572 2 0 ga 
+: 576 2 0 de 
+: 580 6 -5 yo
+: 588 6 -1 ge
+: 596 10 0 n
+: 608 2 3 ~
+: 612 10 0 ~
+: 624 2 3 ~
+: 628 2 0 ~
+: 632 2 3 ~
+* 636 2 0 ~
+* 640 2 3 ~
+: 644 7 0 ~
+- 651
+: 660 2 5 Ka
+: 664 2 5 na
+: 668 2 5 ra
+: 672 2 5 zu 
+: 676 2 5 a
+: 680 2 5 ta
+: 684 2 5 ru 
+: 688 2 5 yo, 
+: 692 2 5 ma
+: 696 2 5 chi
+: 700 2 5 ga
+: 704 2 5 i 
+: 708 6 3 na
+: 716 6 2 in
+: 724 23 0 da
+- 747 770
+- 770
+F 789 3 7 To
+F 793 1 7 tte
+F 795 3 7 mo 
+F 799 3 7 u
+F 803 3 7 chiki 
+F 807 2 7 de
+- 809
+F 813 1 7 I
+F 815 2 7 tsu
+F 818 2 7 mo 
+F 821 1 7 hi
+F 823 1 7 to
+F 825 1 7 ri 
+F 827 3 7 bo
+F 831 3 7 cchi 
+F 835 5 7 sa
+- 840
+: 851 2 7 Sho
+: 855 2 7 mo
+: 859 2 7 tsu 
+: 863 2 7 no 
+: 867 6 7 ka
+: 875 8 5 mi
+- 883
+* 893 5 14 “To
+: 900 7 5 to”!
+- 907
+F 916 1 7 Su
+F 918 2 7 be
+F 921 5 7 te!
+- 926
+F 933 1 7 Su
+F 935 2 7 be
+F 938 4 7 te!
+- 942
+F 948 2 7 U
+F 951 2 7 ma
+F 954 2 7 ku 
+F 957 2 7 i
+F 960 6 7 ku!
+- 966
+F 980 3 7 Sou 
+F 984 3 7 ya
+F 988 7 7 tte 
+F 996 2 7 ki
+F 999 1 7 ta 
+F 1001 3 7 da
+F 1005 5 7 ro
+- 1010 1025
+- 1025
+: 1044 6 0 In
+: 1052 2 3 sa
+: 1056 2 3 tsu 
+: 1060 6 0 ni 
+* 1068 2 -5 de
+* 1072 2 -5 ta 
+: 1076 6 0 yo
+: 1084 5 3 gen 
+: 1092 4 0 wa
+- 1096
+: 1101 6 -5 Mou 
+: 1109 6 0 kesshi
+: 1117 2 0 te 
+: 1121 2 3 ka
+: 1125 2 0 e
+: 1129 2 0 ru 
+: 1133 2 -5 ko
+: 1137 2 -5 to 
+: 1141 6 0 wa 
+* 1149 2 0 de
+* 1153 2 3 ki
+: 1157 9 0 nai
+- 1166
+* 1173 2 -1 Yo
+: 1177 6 0 gen 
+: 1185 2 0 no 
+: 1189 6 -1 too
+: 1197 2 -3 ri 
+: 1201 2 -3 ni
+: 1205 16 -1 ~
+- 1221
+* 1229 6 -5 Kou
+: 1237 2 5 do
+: 1241 10 7 u 
+: 1253 2 7 su
+: 1257 2 5 ~
+: 1261 2 5 re
+: 1265 2 5 ba
+: 1269 21 7 ~
+- 1290
+F 1301 1 7 Su
+F 1303 2 7 be
+F 1306 3 7 te 
+F 1310 1 7 u
+F 1312 1 7 ma
+F 1314 1 7 ku 
+F 1316 1 7 i
+F 1318 5 7 ku!
+- 1323
+F 1333 3 7 Sou 
+F 1337 3 7 ya
+F 1341 3 7 tte 
+F 1345 2 7 ki
+F 1348 2 7 ta 
+F 1351 1 7 da
+F 1353 6 7 ro
+- 1359
+F 1366 3 7 O
+F 1370 6 7 in
+F 1377 3 7 go 
+F 1381 4 7 Bo
+F 1386 5 7 in
+F 1392 5 7 go 
+F 1398 3 7 Bro
+F 1402 17 7 thers!
+- 1419
+F 1430 3 7 Shin
+F 1434 1 7 ji
+F 1436 1 7 te
+F 1438 1 7 ru 
+F 1440 6 7 ze!
+- 1446
+F 1461 2 7 Shin
+F 1464 2 7 ji
+F 1467 2 7 te
+F 1470 2 7 ru 
+F 1473 6 7 yo!
+- 1479
+F 1492 4 7 O
+F 1497 6 7 in
+F 1504 4 7 go 
+F 1509 4 7 Bo
+F 1514 6 7 in
+F 1521 2 7 go 
+F 1525 4 7 Bro
+F 1530 18 7 thers!
+- 1548
+: 1557 2 -1 Ku
+: 1561 2 -1 ji
+: 1565 2 -1 ke
+: 1569 2 -1 cha 
+: 1573 2 -1 da
+: 1577 2 -1 me 
+* 1581 2 -3 da 
+* 1585 2 -3 yo
+: 1589 16 -1 ~
+- 1605
+: 1614 3 -5 Jin
+: 1621 6 7 sei 
+: 1629 2 7 to 
+: 1633 2 7 wa 
+: 1637 6 7 sou 
+: 1645 6 7 iu 
+: 1653 2 7 mo
+* 1657 2 5 no 
+* 1661 2 3 da 
+* 1665 2 2 ka
+: 1669 7 0 ra!
+E

@@ -1,0 +1,290 @@
+#ARTIST:The Offspring
+#TITLE:The Kids Aren’t Alright
+#CREATOR:IC
+#BPM:400
+#YEAR:1998
+#VIDEO:v=7iNbnineUCI
+#LANGUAGE:English
+#GAP:38147,5
+#ALLKARAOKE_ID:the-offspring-the-kids-arent-alright
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:15.252Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:0,94
+#MP3:The Offspring - The Kids Aren’t Alright.mp3
+: 27 2 5 When 
+: 31 3 5 we 
+: 36 2 5 were 
+: 40 3 5 young
+- 43
+: 44 2 5 The 
+: 48 2 5 fu
+: 52 2 5 ture 
+: 55 3 5 was 
+: 61 4 5 so 
+: 70 8 5 bright,
+- 78
+: 93 2 6 The 
+: 97 3 6 old 
+: 104 2 6 neigh
+: 108 2 6 bour
+: 112 2 6 hood 
+: 116 2 6 was 
+: 121 3 6 so 
+: 126 4 6 a
+: 134 10 6 live.
+- 144
+: 157 2 5 And 
+: 161 2 5 e
+: 164 2 3 very 
+: 169 4 5 kid 
+: 176 3 5 on 
+: 181 2 3 the 
+: 184 3 5 whole 
+: 190 4 5 damn 
+: 199 8 5 street
+- 207
+: 221 2 3 Was 
+: 226 2 3 go
+: 229 2 1 nna 
+: 232 3 3 make 
+: 237 2 1 it 
+: 241 2 3 big 
+: 245 2 1 in 
+: 249 3 5 ev
+: 254 3 3 ery 
+: 261 8 3 beat.
+- 269
+: 289 2 5 Now 
+: 293 2 5 the 
+: 297 2 5 neigh
+: 301 2 5 bour
+: 305 4 5 hood’s
+- 309
+: 313 3 5 Cracked 
+: 318 4 5 and 
+: 326 7 5 torn,
+- 333
+: 349 2 6 The 
+: 353 2 6 kids 
+: 357 2 6 are 
+: 361 2 6 grown 
+: 365 2 6 up,
+- 367
+: 369 2 6 But 
+: 373 2 5 their 
+: 377 3 6 lives 
+: 383 3 6 are 
+: 390 8 6 worn.
+- 398
+: 410 4 8 How 
+: 418 3 8 can 
+: 426 5 8 one 
+: 442 3 8 lit
+: 446 3 8 tle 
+: 454 9 8 street
+- 463
+: 473 3 8 Swa
+: 477 2 8 llow 
+: 482 4 8 so 
+: 490 3 8 ma
+: 494 3 8 ny 
+: 503 12 8 lives?
+- 515
+: 522 5 5 Chan
+: 531 4 8 ces 
+: 540 33 10 thrown.
+- 573
+: 586 5 5 Noth
+: 595 4 8 ing’s 
+* 602 35 10 free.
+- 637
+: 648 7 5 Long
+: 659 3 8 ing 
+: 667 38 8 for
+- 705
+: 714 5 5 Used 
+: 722 3 8 to 
+: 730 35 8 be.
+- 765
+: 778 5 5 Still 
+: 787 4 8 it’s 
+: 795 36 10 hard,
+- 831
+: 842 5 5 Hard 
+: 851 3 8 to 
+* 859 34 10 see
+- 893
+: 906 6 5 Frag
+: 916 3 8 ile 
+: 924 30 8 lives,
+- 954
+: 971 4 5 Shat
+: 979 3 8 tered 
+: 988 37 8 dreams.
+- 1025
+F 1044 5 8 Go!
+- 1049 1538
+- 1538
+: 1565 2 5 Ja
+: 1569 2 5 mie 
+: 1574 2 5 had 
+: 1578 2 5 a 
+: 1582 4 5 chance, 
+: 1588 2 5 well 
+: 1592 2 5 she 
+: 1597 3 5 real
+: 1602 3 5 ly 
+: 1610 7 5 did.
+- 1617
+: 1624 2 6 In
+: 1629 2 6 stead 
+: 1633 2 6 she 
+: 1638 4 6 dropped 
+: 1647 3 6 out
+- 1650
+: 1651 2 6 And 
+: 1654 2 6 had 
+: 1657 2 6 a 
+: 1661 3 6 cou
+: 1666 2 6 ple 
+: 1669 2 6 of 
+: 1675 8 6 kids.
+- 1683
+: 1693 3 5 Mark 
+: 1699 2 5 still 
+: 1702 2 5 lives 
+: 1706 2 3 at 
+: 1710 4 5 home,
+- 1714
+: 1717 2 5 ’cause 
+: 1721 2 3 he’s 
+: 1726 3 5 got 
+: 1730 3 5 no 
+: 1739 7 5 job,
+- 1746
+: 1762 2 3 Just 
+: 1766 2 3 plays 
+: 1770 2 1 gui
+: 1774 2 3 tar 
+: 1778 2 3 and 
+: 1782 2 3 smokes 
+: 1786 2 1 a 
+: 1790 3 5 lot 
+: 1795 3 3 of 
+: 1803 7 3 pot.
+- 1810
+: 1830 2 5 Jay 
+: 1834 2 5 com
+: 1838 5 5 mit
+: 1846 3 5 ted 
+: 1854 3 5 su
+: 1859 3 5 i
+: 1866 10 5 cide,
+- 1876
+: 1895 5 6 Bran
+: 1903 4 6 don 
+: 1910 4 6 O
+: 1919 2 6 D’d 
+: 1923 3 6 and 
+: 1932 7 6 died.
+- 1939
+: 1950 4 8 What 
+: 1958 3 8 the 
+: 1966 4 8 hell 
+: 1974 3 8 is 
+: 1982 3 8 go
+: 1987 4 8 ing 
+: 1995 8 8 on?
+- 2003
+: 2014 6 8 Crue
+: 2023 3 8 llest 
+: 2031 4 8 dream - 
+: 2039 4 8 re
+: 2047 3 8 a
+: 2052 3 8 li
+: 2058 2 8 ty.
+- 2060
+: 2064 4 5 Chan
+: 2071 4 8 ces 
+* 2080 12 10 thrown
+: 2095 14 8 ~
+: 2112 5 5 ~ .
+- 2117
+: 2127 4 5 Noth
+: 2135 4 8 ing’s 
+: 2144 33 10 free.
+- 2177
+: 2192 5 5 Long
+: 2200 3 8 ing 
+: 2208 13 8 for
+: 2224 13 6 ~
+: 2240 7 5 ~
+- 2247
+: 2255 5 5 Used 
+: 2264 3 8 to 
+: 2272 31 8 be.
+- 2303
+: 2320 4 5 Still 
+: 2328 3 8 it’s 
+: 2336 13 10 hard
+: 2352 13 8 ~
+: 2368 5 5 ~ ,
+- 2373
+: 2384 5 5 Hard 
+: 2393 3 8 to 
+: 2401 33 10 see
+- 2434
+: 2448 6 5 Frag
+: 2457 3 8 ile 
+: 2465 13 8 lives
+: 2481 12 6 ~
+: 2496 7 5 ~ ,
+- 2503
+: 2512 4 5 Shat
+: 2521 4 8 tered 
+* 2529 36 8 dreams.
+- 2565
+F 2584 6 8 Go!
+- 2590 3065
+- 3065
+: 3092 4 5 Chan
+: 3100 3 8 ces 
+: 3108 12 10 thrown
+: 3123 13 8 ~
+: 3139 7 5 ~ .
+- 3146
+: 3155 4 5 Noth
+: 3164 3 8 ing’s 
+* 3173 32 10 free.
+- 3205
+: 3219 5 5 Long
+: 3228 3 8 ing 
+: 3235 13 8 for
+: 3251 13 6 ~
+: 3267 6 5 ~
+- 3273
+: 3283 4 5 Used 
+: 3292 3 8 to 
+: 3300 35 8 be.
+- 3335
+: 3348 4 5 Still 
+: 3356 4 8 it’s 
+: 3364 13 10 hard
+: 3380 13 8 ~
+: 3396 6 5 ~ ,
+- 3402
+: 3411 5 5 Hard 
+: 3420 3 8 to 
+* 3430 32 10 see
+- 3462
+: 3476 3 5 Frag
+: 3484 3 8 ile 
+: 3492 13 8 lives
+: 3508 12 6 ~
+: 3523 7 5 ~ ,
+- 3530
+: 3540 5 5 Shat
+: 3549 3 8 tered 
+* 3558 33 8 dreams.
+E

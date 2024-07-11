@@ -1,0 +1,189 @@
+#ARTIST:Gabriela Vega
+#TITLE:Bosque profundo
+#CREATOR:asdfer
+#BPM:400
+#YEAR:2002
+#VIDEO:v=FoVz7H3xuTI
+#LANGUAGE:Spanish
+#GAP:731,5
+#ALLKARAOKE_ID:gabriela-vega-bosque-profundo
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:05.914Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_VOLUME:0,92
+#MP3:Gabriela Vega - Bosque profundo (TV).mp3
+#COVER:Gabriela Vega - Bosque profundo (TV).jpg
+: 27 7 4 Siem
+: 37 2 6 pre hay 
+: 42 6 7 que 
+: 51 2 9 bus
+: 56 28 11 car
+- 84
+: 96 6 4 La 
+: 106 16 2 vi
+: 127 16 12 da 
+: 147 11 12 es 
+: 161 2 11 a
+: 166 9 11 sí
+- 175
+: 185 7 4 Es 
+: 195 2 6 u
+: 200 6 7 na in
+: 209 2 9 que
+: 214 15 11 tud
+: 231 20 9 ~
+- 251
+: 265 17 6 Que 
+: 285 17 9 yo 
+: 305 7 9 sien
+: 315 3 7 to en 
+: 320 9 7 mí
+- 329
+: 344 7 4 De
+: 354 2 6 bes 
+: 359 6 7 sa
+: 368 2 9 ber 
+: 373 28 11 bien
+- 401
+: 413 6 4 Lo 
+: 423 16 2 que 
+: 443 16 12 bus
+: 463 11 12 can
+: 478 2 11 do es
+: 483 9 11 tás
+- 492
+: 502 7 4 So
+: 512 2 6 la
+: 517 6 7 men
+: 526 2 9 te a
+: 531 14 11 sí
+: 547 14 9 ~
+- 561
+: 580 7 6 Tú 
+: 590 2 6 lo en
+: 595 12 4 con
+: 610 2 6 tra
+: 615 64 7 rás
+- 679 777
+- 777
+: 804 2 -2 Que 
+: 809 2 -2 ca
+: 814 2 0 da 
+: 819 2 2 cual 
+: 824 2 -2 no es 
+: 829 2 0 i
+: 834 5 2 gual
+- 839
+: 843 2 -2 Es 
+: 848 2 0 sen
+: 853 7 2 tir
+: 863 2 -2 se 
+: 868 2 0 fe
+: 873 10 2 liz
+- 883
+: 892 2 -2 Dis
+: 897 2 0 ti
+* 902 2 -2 n
+: 907 2 -2 ta es 
+* 912 7 0 la o
+* 922 7 5 pi
+: 932 9 5 nión
+- 941
+: 957 6 2 O 
+: 966 6 3 ri
+: 976 6 5 que
+: 986 3 -2 za 
+: 992 8 -2 es,
+- 1000
+: 1006 2 2 o el 
+: 1011 2 3 a
+: 1016 7 5 mor 
+: 1027 2 -2 tal 
+: 1032 10 -2 vez
+- 1042
+: 1050 3 -2 Su 
+: 1055 7 0 gran 
+: 1065 3 0 mo
+: 1070 7 0 ti
+: 1080 3 -2 va
+: 1085 20 -2 ción
+- 1105 1107
+- 1107
+: 1134 27 4 Bús
+: 1164 3 2 ca
+: 1170 14 2 lo
+- 1184
+: 1193 6 2 Si es 
+: 1203 6 7 que en 
+* 1213 6 6 ti é
+* 1223 3 6 sa es 
+: 1229 6 6 la 
+: 1238 3 6 ver
+: 1244 16 7 dad
+- 1260
+: 1273 6 2 Pues 
+: 1283 6 7 a
+: 1293 6 6 sí 
+: 1303 3 6 la hu
+* 1309 6 6 ma
+: 1318 3 6 ni
+* 1324 16 7 dad
+- 1340
+* 1353 6 4 na
+* 1363 6 2 ~
+: 1373 54 2 ció
+- 1427 1504
+- 1504
+: 1531 7 4 Siem
+: 1541 2 6 pre hay 
+: 1546 6 7 que 
+: 1555 2 9 bus
+: 1560 28 11 car
+- 1588
+: 1599 6 4 La 
+: 1609 16 2 vi
+: 1630 16 12 da 
+: 1650 11 12 es 
+: 1664 2 11 a
+: 1669 9 11 sí
+- 1678
+: 1688 7 4 Es 
+: 1698 2 6 u
+: 1703 6 7 na in
+: 1712 2 9 quie
+: 1717 15 11 tud
+: 1734 20 9 ~
+- 1754
+: 1768 17 6 Que 
+: 1788 17 9 yo 
+: 1808 7 9 sien
+: 1818 3 11 to en 
+: 1823 3 9 mí
+: 1828 6 7 ~
+- 1834
+: 1847 7 4 De
+: 1857 2 6 bes 
+: 1862 6 7 sa
+: 1871 2 9 ber 
+: 1876 28 11 bien
+- 1904
+: 1916 6 4 Lo 
+: 1926 16 2 que 
+* 1946 16 12 bus
+: 1966 11 12 can
+: 1981 2 11 do es
+* 1986 9 11 tás
+- 1995
+: 2005 7 4 So
+: 2015 2 6 la
+: 2020 6 7 men
+* 2029 2 9 te a
+* 2034 14 11 sí
+* 2050 14 9 ~
+- 2064
+: 2083 7 6 Tú 
+: 2093 2 6 lo en
+: 2098 12 4 con
+: 2113 2 6 tra
+: 2118 80 7 rás
+E

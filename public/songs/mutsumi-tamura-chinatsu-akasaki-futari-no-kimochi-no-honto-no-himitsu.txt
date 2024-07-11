@@ -1,0 +1,210 @@
+#ARTIST:Mutsumi Tamura & Chinatsu Akasaki
+#TITLE:Futari no Kimochi no Honto no Himitsu
+#CREATOR:BPEmu
+#BPM:262,21
+#YEAR:2012
+#VIDEO:v=6f916utmQK4
+#LANGUAGE:Japanese
+#GAP:11414,497044353762
+#ALLKARAOKE_ID:mutsumi-tamura-chinatsu-akasaki-futari-no-kimochi-no-honto-no-himitsu
+#ALLKARAOKE_LASTUPDATE:2024-07-11T00:11:14.717Z
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_VOLUME:0,88
+#MP3:Mutsumi Tamura & Chinatsu Akasaki - Futari no Kimochi no Honto no Himitsu (TV).mp3
+#COVER:Mutsumi Tamura & Chinatsu Akasaki - Futari no Kimochi no Honto no Himitsu (TV).jpg
+* 17 5 6 A
+* 24 5 6 ra
+* 33 2 4 shi 
+: 36 2 6 ga 
+: 40 2 -1 su
+: 44 6 4 gi
+: 52 2 6 ta 
+: 55 2 4 a
+: 59 2 6 to 
+: 64 3 -1 ni
+- 67
+: 79 6 2 Ka
+: 87 6 2 ta
+: 96 2 -1 ru 
+: 99 2 2 ni 
+: 103 3 -1 mo 
+: 108 5 4 o
+: 115 2 6 chi
+: 119 2 4 te 
+: 123 3 6 i
+: 127 5 1 ku
+- 132
+: 143 6 6 Me
+: 151 6 6 ma
+: 159 3 4 i 
+: 163 2 6 o 
+: 167 3 -1 fu
+: 171 5 4 ri
+: 178 3 6 ho
+: 183 3 4 do
+: 187 2 6 i
+: 191 4 -1 te
+- 195
+* 208 3 2 Ichi 
+: 215 4 2 ni 
+: 222 3 -1 sa
+: 227 2 2 n 
+: 231 2 -1 de 
+: 235 6 4 o
+: 243 2 6 do
+: 247 2 4 ri
+: 250 2 6 da
+: 254 4 -1 su
+- 258
+: 271 5 2 Shi 
+: 278 6 2 go 
+: 286 2 -1 ro
+: 290 2 2 ku 
+: 294 2 -1 de 
+: 298 2 2 mo 
+: 302 2 4 o
+: 306 2 6 do
+: 310 2 4 ri
+: 314 2 6 da
+: 318 4 -1 su
+- 322
+: 334 3 -1 I
+: 338 2 -1 tsu 
+: 342 3 2 ma
+: 346 2 2 de 
+: 349 2 8 fu
+: 353 3 8 ta
+: 357 3 2 ri 
+: 362 2 2 de 
+: 366 2 -1 i
+: 370 2 -1 ru 
+: 374 2 2 no 
+: 378 2 2 ka 
+: 382 3 -1 na
+- 385
+: 398 2 -1 O
+: 401 2 -1 i
+: 405 3 2 shi
+: 409 2 2 ku 
+: 413 2 8 de
+: 417 2 8 ki
+: 421 2 2 ta
+: 425 2 2 ra 
+: 429 2 -1 i
+: 432 3 -1 ta
+: 436 3 2 da
+: 440 3 2 ki
+: 444 4 -1 masu
+- 448
+: 461 3 -1 Shi
+: 465 2 -1 ra
+: 469 2 2 na
+: 472 2 2 i 
+: 477 2 8 ma
+: 481 2 8 ma 
+: 484 3 2 de 
+: 488 3 2 mo 
+: 493 2 -1 i
+: 496 2 -1 i 
+: 500 2 2 no 
+: 504 2 2 ka 
+: 508 4 -1 na
+- 512
+: 524 3 -1 Ho
+: 528 3 -1 n
+: 532 3 2 to 
+: 536 2 2 no 
+: 540 2 8 ki
+: 544 2 8 mo
+: 548 3 2 chi 
+: 552 2 2 wa 
+: 556 3 -1 hi
+: 560 2 -1 mi
+: 565 2 2 tsu 
+: 568 2 2 da 
+: 572 4 -1 yo
+- 576
+: 588 2 -1 Hi
+: 591 2 -1 mi
+: 596 3 2 tsu 
+: 600 2 2 da 
+: 604 4 -1 yo
+- 608
+* 620 22 6 Su
+* 644 3 9 ki 
+: 648 25 4 yo, 
+: 676 2 2 a
+: 680 24 6 na
+: 706 3 2 ta 
+: 711 23 -1 ga
+- 734
+: 746 23 2 Ko
+: 771 5 4 ro
+: 779 11 1 shi
+: 791 11 1 ta
+: 803 2 2 i 
+: 806 14 4 ho
+: 823 36 6 do
+- 859
+: 874 2 -1 Do
+: 878 2 -1 ko 
+: 882 3 2 ma
+: 886 2 2 de 
+: 890 2 8 fu
+: 893 3 8 ta
+: 898 3 2 ri 
+: 902 2 2 de 
+: 906 3 -1 i
+: 910 2 -1 ru 
+: 913 3 2 no 
+: 917 3 2 ka 
+: 922 4 -1 na
+- 926
+: 937 3 -1 Mo
+: 941 2 -1 no
+: 945 3 2 ma
+: 949 2 2 ne 
+: 953 2 8 su
+: 957 2 8 ki
+: 961 3 2 ru 
+: 965 2 2 ga 
+: 969 3 -1 mi
+: 973 2 -1 ju
+: 977 3 2 ku 
+: 981 3 2 na 
+: 986 4 -1 no
+- 990
+: 1001 3 -1 Ta
+: 1005 2 -1 no
+: 1009 3 2 shi
+: 1013 2 2 i 
+: 1017 2 8 ji
+: 1020 3 8 ka
+: 1025 3 2 n 
+: 1029 2 2 ga 
+: 1033 2 -1 i
+: 1037 2 -1 i 
+: 1041 3 2 no 
+: 1045 2 2 ka 
+: 1049 4 -1 na
+- 1053
+: 1065 3 -1 Ho
+: 1069 2 -1 n
+: 1073 2 2 to 
+: 1076 3 2 no 
+: 1081 2 8 ki
+: 1084 2 8 mo
+: 1088 3 2 chi 
+: 1092 2 2 wa 
+: 1096 3 -1 hi
+: 1100 3 -1 mi
+: 1104 3 2 tsu 
+: 1108 3 2 da 
+: 1112 4 -1 yo
+- 1116
+: 1129 2 -1 Hi
+: 1132 2 -1 mi
+: 1135 4 2 tsu 
+: 1140 3 2 da 
+: 1144 6 -1 yo
+E
