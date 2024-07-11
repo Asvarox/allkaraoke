@@ -117,6 +117,8 @@ const HighScoreBadge = styled(Badge)`
   opacity: 0;
 
   &[data-highscore='true'] {
+    top: -2.5rem;
+    right: -9rem;
     ${buttonFocused};
     opacity: 1;
   }
