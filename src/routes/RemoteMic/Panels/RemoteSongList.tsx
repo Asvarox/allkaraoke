@@ -12,9 +12,11 @@ import SongDao from 'modules/Songs/SongsService';
 import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import { useEffect, useMemo, useState } from 'react';
+import { twc } from 'react-twc';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import { CustomVirtualization } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
 import { searchList } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
+import createPersistedState from 'use-persisted-state';
 
 interface Props {
   roomId: string | null;
@@ -25,6 +27,7 @@ interface Props {
   monitoringStarted: boolean;
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
+export const useSavedSongs = createPersistedState<string[]>('remote-mic-saved-songs');
 
 function RemoteSongList({
   roomId,
@@ -66,7 +69,7 @@ function RemoteSongList({
     [originalSongList.data, overrides],
   );
 
-  const [addedSongs, setAddedSongs] = useState<string[]>([]);
+  const [addedSongs, setAddedSongs] = useSavedSongs([]);
   const [tab, setTab] = useState<'list' | 'queue'>('list');
   const finalSongList = useMemo(() => {
     return searchList(songList, search);
@@ -98,8 +101,9 @@ function RemoteSongList({
             All songs
           </Tab>
           <Tab data-active={tab === 'queue'} onClick={() => setTab('queue')}>
-            Your list
+            Your list ({addedSongs.length})
           </Tab>
+          {/*<Tab className="!flex-grow-0">L</Tab>*/}
         </Tabs>
       </TopBar>
       <CustomVirtualization
@@ -122,6 +126,7 @@ function RemoteSongList({
 
           return (
             <SongItemContainer
+              className={isOnList ? '!bg-black !bg-opacity-40' : ''}
               data-test={song.id}
               {...itemProps}
               onClick={() => (tab === 'list' ? toggleSong(song.id) : toggleSong(song.id))}>
@@ -134,21 +139,21 @@ function RemoteSongList({
               </ArtistTitle>
               <Action>
                 {isOnList ? (
-                  <ActionButton
+                  <RemoveButton
                     onClick={(e) => {
                       e.stopPropagation();
                       setAddedSongs((current) => current.filter((id) => id !== song.id));
                     }}>
                     Remove
-                  </ActionButton>
+                  </RemoveButton>
                 ) : (
-                  <ActionButton
+                  <AddButton
                     onClick={(e) => {
                       e.stopPropagation();
                       setAddedSongs((current) => [...current, song.id]);
                     }}>
                     Add
-                  </ActionButton>
+                  </AddButton>
                 )}
               </Action>
             </SongItemContainer>
@@ -186,6 +191,7 @@ const Tab = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 4rem;
   height: 4rem;
   background: rgba(0, 0, 0, 0.75);
   ${typography};
@@ -249,4 +255,5 @@ const Action = styled.div`
   right: 0;
 `;
 
-const ActionButton = styled.button``;
+const AddButton = twc.button`typography w-[9rem] h-[7rem] pr-[1rem] text-right bg-gradient-to-r from-transparent to-black text-[1.5rem] border-none cursor-pointer transition-[300ms]`;
+const RemoveButton = twc(AddButton)`text-[orange]`;

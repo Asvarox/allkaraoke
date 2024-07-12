@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import { landscapeMQ } from 'modules/Elements/cssMixins';
 
 export const MobileOnly = styled.div`
-  color: blue;
   @media (hover: hover) {
     display: none;
   }
