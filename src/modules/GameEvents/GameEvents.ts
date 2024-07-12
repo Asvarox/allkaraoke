@@ -110,6 +110,7 @@ export const events = {
   ),
   remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
   remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch', true),
+  remoteSongSelected: new GameEvent<(search: string) => void>('remoteSongSelected', true),
   remoteMicListUpdated: new GameEvent<(list: NetworkRemoteMicListMessage['list']) => void>('remoteMicListUpdated'),
   remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
   remoteReadinessRequested: new GameEvent('remoteReadinessRequested'),

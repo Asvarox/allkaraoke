@@ -3,6 +3,8 @@ import { SingSetup, SongPreview as SongPreviewEntity } from 'interfaces';
 import { BackgroundContext, useBackground } from 'modules/Elements/LayoutWithBackground';
 import { focused, typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
+import events from 'modules/GameEvents/GameEvents';
+import { useEventEffect } from 'modules/GameEvents/hooks';
 import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import useBlockScroll from 'modules/hooks/useBlockScroll';
@@ -169,6 +171,22 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   const navigate = useSmoothNavigate();
   useHotkeys('Shift + E', () => navigate(buildUrl(`edit/song/`, { playlist: null, step: 'metadata' })), [navigate]);
+
+  useEventEffect(
+    events.remoteSongSelected,
+    (songId) => {
+      setKeyboardControl(false);
+      setSelectedPlaylist('All');
+      setTimeout(() => {
+        const songIndex = songList.findIndex((song) => song.id === songId);
+        if (songIndex) {
+          moveToSong(songIndex);
+          expandSong();
+        }
+      }, 300);
+    },
+    [songList, moveToSong, expandSong, setSelectedPlaylist, setKeyboardControl],
+  );
 
   return (
     <LayoutGame>

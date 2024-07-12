@@ -60,6 +60,9 @@ export default function PlayerSettings({ songPreview, onNextStep, keyboardContro
   const { register, focusElement } = useKeyboardNav({
     enabled: keyboardControl && !showModal,
     onBackspace: onExitKeyboardControl,
+    additionalHelp: {
+      remote: ['select-song'],
+    },
   });
 
   const startSong = () => {

@@ -42,7 +42,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
   }, [connectionStatus, roomId, customRoomId]);
 
   const connectToServer = (silent = false) => {
-    RemoteMicClient.connect(roomId ?? customRoomId, name, silent);
+    RemoteMicClient.connect(customRoomId, name, silent);
     onConnect(silent);
   };
 

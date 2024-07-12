@@ -4,12 +4,12 @@ import { focusedStatic, typography } from 'modules/Elements/cssMixins';
 import { useOnClickOutside } from 'modules/hooks/onClickOutside';
 import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { PlaylistEntry } from 'routes/SingASong/SongSelection/Hooks/usePlaylists';
 
 interface Props {
   selectedPlaylist: string | null;
-  setSelectedPlaylist: Dispatch<SetStateAction<string | null>>;
+  setSelectedPlaylist: (name: string) => void;
   playlists: PlaylistEntry[];
   closePlaylist: (leavingKey?: 'left' | 'right') => void;
   active: boolean;
@@ -38,20 +38,13 @@ export default function Playlists({ active, closePlaylist, playlists, selectedPl
   );
 
   useEffect(() => {
-    const param = new URLSearchParams(global.location?.search).get('playlist');
-    if (param) {
-      focusElement(`playlist-${param}`);
-    }
-  }, []);
+    focusElement(`playlist-${selectedPlaylist}`);
+  }, [selectedPlaylist]);
 
   useEffect(() => {
     if (focused) {
       const playlist = playlists.find((list) => `playlist-${list.name}` === focused);
       if (playlist) {
-        /// push query param to url containing playlist name
-        const url = new URL(global.location?.href);
-        url.searchParams.set('playlist', playlist.name);
-        global.history.replaceState(null, '', url.toString());
         setSelectedPlaylist(playlist.name);
       }
     }

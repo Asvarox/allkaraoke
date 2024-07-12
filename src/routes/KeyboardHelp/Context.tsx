@@ -8,7 +8,7 @@ import KeyboardHelpView from './HelpView';
 
 type keys = 'horizontal' | 'vertical' | 'horizontal-vertical' | 'accept' | 'back' | 'shiftR' | 'alphanumeric';
 
-type remoteActions = 'search';
+type remoteActions = 'search' | 'select-song';
 
 export type RegularHelpEntry = Partial<Record<keys, string | null>>;
 export type HelpEntry = RegularHelpEntry & { remote?: remoteActions[] };

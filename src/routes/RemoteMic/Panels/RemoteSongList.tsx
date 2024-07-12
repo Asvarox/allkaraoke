@@ -5,6 +5,8 @@ import { Flag } from 'modules/Elements/Flag';
 import { Input } from 'modules/Elements/Input';
 import { typography } from 'modules/Elements/cssMixins';
 import styles from 'modules/GameEngine/Drawing/styles';
+import events from 'modules/GameEvents/GameEvents';
+import { useEventListener } from 'modules/GameEvents/hooks';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { transportErrorReason } from 'modules/RemoteMic/Network/Client/NetworkClient';
 import { NetworkSongListMessage } from 'modules/RemoteMic/Network/messages';
@@ -14,6 +16,7 @@ import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import { useEffect, useMemo, useState } from 'react';
 import { twc } from 'react-twc';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
+import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
 import { CustomVirtualization } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
 import { searchList } from 'routes/SingASong/SongSelection/Hooks/useSongListFilter';
 import createPersistedState from 'use-persisted-state';
@@ -38,6 +41,8 @@ function RemoteSongList({
   connectionError,
   connectionStatus,
 }: Props) {
+  const [keyboard] = useEventListener(events.remoteKeyboardLayout, true) ?? [];
+  const permissions = usePermissions();
   const originalSongList = useSongIndex();
 
   const [overrides, setOverrides] = useState<NetworkSongListMessage | undefined>();
@@ -77,12 +82,9 @@ function RemoteSongList({
 
   const unit = useBaseUnitPx();
 
-  const toggleSong = (songId: string) => {
-    if (addedSongs.includes(songId)) {
-      setAddedSongs((current) => current.filter((id) => id !== songId));
-    } else {
-      setAddedSongs((current) => [...current, songId]);
-    }
+  const changeTab = (tab: 'list' | 'queue') => {
+    setTab(tab);
+    setSearch('');
   };
 
   return (
@@ -97,10 +99,10 @@ function RemoteSongList({
           data-test="search-input"
         />
         <Tabs>
-          <Tab data-active={tab === 'list'} onClick={() => setTab('list')}>
+          <Tab data-active={tab === 'list'} onClick={() => changeTab('list')}>
             All songs
           </Tab>
-          <Tab data-active={tab === 'queue'} onClick={() => setTab('queue')}>
+          <Tab data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
             Your list ({addedSongs.length})
           </Tab>
           {/*<Tab className="!flex-grow-0">L</Tab>*/}
@@ -126,10 +128,9 @@ function RemoteSongList({
 
           return (
             <SongItemContainer
-              className={isOnList ? '!bg-black !bg-opacity-40' : ''}
+              className={isOnList ? '!bg-black !bg-opacity-35' : ''}
               data-test={song.id}
-              {...itemProps}
-              onClick={() => (tab === 'list' ? toggleSong(song.id) : toggleSong(song.id))}>
+              {...itemProps}>
               <Language>
                 <Flag language={song.language} />
               </Language>
@@ -138,21 +139,32 @@ function RemoteSongList({
                 <Artist>{song.artist}</Artist>
               </ArtistTitle>
               <Action>
+                {keyboard?.remote?.includes('select-song') && permissions === 'write' && (
+                  <ActiveButton
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      RemoteMicClient.selectSong(song.id);
+                    }}>
+                    SELECT
+                  </ActiveButton>
+                )}
                 {isOnList ? (
-                  <RemoveButton
+                  <ActiveButton
                     onClick={(e) => {
                       e.stopPropagation();
                       setAddedSongs((current) => current.filter((id) => id !== song.id));
                     }}>
-                    Remove
-                  </RemoveButton>
+                    -
+                  </ActiveButton>
                 ) : (
                   <AddButton
                     onClick={(e) => {
                       e.stopPropagation();
+                      console.log('song', song.id);
+                      // RemoteMicClient.selectSong(song.id);
                       setAddedSongs((current) => [...current, song.id]);
                     }}>
-                    Add
+                    +
                   </AddButton>
                 )}
               </Action>
@@ -207,7 +219,7 @@ const Tab = styled.button`
 `;
 
 const SongItemContainer = styled.div`
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   height: 7rem;
@@ -253,7 +265,13 @@ const Action = styled.div`
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-right: 1rem;
 `;
 
-const AddButton = twc.button`typography w-[9rem] h-[7rem] pr-[1rem] text-right bg-gradient-to-r from-transparent to-black text-[1.5rem] border-none cursor-pointer transition-[300ms]`;
-const RemoveButton = twc(AddButton)`text-[orange]`;
+const AddButton = twc.button`typography p-[1rem] min-w-[4rem] h-[4rem] rounded-full text-center bg-black text-[1.5rem] border-none cursor-pointer transition-[300ms]`;
+const ActiveButton = twc(AddButton)`text-[orange]`;
