@@ -5,6 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        text: {
+          default: styles.colors.text.default,
+          active: styles.colors.text.active,
+          inactive: styles.colors.text.active,
+        },
         active: styles.colors.text.active,
       },
       keyframes: {

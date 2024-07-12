@@ -15,6 +15,8 @@ import useSongIndex from 'modules/Songs/hooks/useSongIndex';
 import useBaseUnitPx from 'modules/hooks/useBaseUnitPx';
 import { useEffect, useMemo, useState } from 'react';
 import { twc } from 'react-twc';
+import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
+import LanguageFilter from 'routes/RemoteMic/Panels/RemoteSongList/LanguageFilter';
 import { ConnectionStatuses } from 'routes/RemoteMic/RemoteMic';
 import usePermissions from 'routes/RemoteMic/hooks/usePermissions';
 import { CustomVirtualization } from 'routes/SingASong/SongSelection/Components/CustomVirtualization';
@@ -52,8 +54,6 @@ function RemoteSongList({
     }
   }, [overrides, connectionStatus]);
 
-  const [search, setSearch] = useState('');
-
   const songList = useMemo(
     () =>
       uniqBy(
@@ -74,11 +74,12 @@ function RemoteSongList({
     [originalSongList.data, overrides],
   );
 
+  const languages = useLanguageList(songList);
+  const [search, setSearch] = useState('');
+  const [excludedLanguages, setExcludedLanguages] = useState<string[]>([]);
+
   const [addedSongs, setAddedSongs] = useSavedSongs([]);
   const [tab, setTab] = useState<'list' | 'queue'>('list');
-  const finalSongList = useMemo(() => {
-    return searchList(songList, search);
-  }, [search, songList]);
 
   const unit = useBaseUnitPx();
 
@@ -86,6 +87,18 @@ function RemoteSongList({
     setTab(tab);
     setSearch('');
   };
+  const finalSongList = useMemo(() => {
+    if (tab === 'list') {
+      const searchedList = searchList(songList, search);
+      if (searchedList.length !== songList.length) {
+        return searchedList;
+      } else {
+        return songList.filter((song) => !song.language.every((songLang) => excludedLanguages.includes(songLang!)));
+      }
+    } else {
+      return addedSongs.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
+    }
+  }, [search, songList, tab, addedSongs, excludedLanguages]);
 
   return (
     <Container>
@@ -105,7 +118,19 @@ function RemoteSongList({
           <Tab data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
             Your list ({addedSongs.length})
           </Tab>
-          {/*<Tab className="!flex-grow-0">L</Tab>*/}
+          <LanguageFilter
+            excludedLanguages={excludedLanguages}
+            languageList={languages}
+            onListChange={setExcludedLanguages}>
+            {({ open }) => (
+              <Tab
+                className="!flex-grow-0"
+                onClick={open}
+                data-active={excludedLanguages.length > 0 && tab === 'list' ? true : undefined}>
+                🇺🇳
+              </Tab>
+            )}
+          </LanguageFilter>
         </Tabs>
       </TopBar>
       <CustomVirtualization
@@ -118,11 +143,7 @@ function RemoteSongList({
         groupContent={() => null}
         itemHeight={unit * 7 + 1}
         itemContent={(index, groupIndex, itemProps) => {
-          const song = tab === 'list' ? finalSongList[index] : songList.find((song) => song.id === addedSongs[index]);
-
-          if (!song) {
-            return null;
-          }
+          const song = finalSongList[index];
 
           const isOnList = addedSongs.includes(song.id);
 
@@ -160,8 +181,6 @@ function RemoteSongList({
                   <AddButton
                     onClick={(e) => {
                       e.stopPropagation();
-                      console.log('song', song.id);
-                      // RemoteMicClient.selectSong(song.id);
                       setAddedSongs((current) => [...current, song.id]);
                     }}>
                     +
@@ -209,6 +228,7 @@ const Tab = styled.button`
   ${typography};
   font-size: 2rem;
 
+  transition: 300ms;
   &[data-active='true'] {
     background: ${styles.colors.text.active};
   }
@@ -229,6 +249,7 @@ const SongItemContainer = styled.div`
   overflow: hidden;
 
   position: relative;
+  transition: 100ms;
 `;
 
 const Language = styled.div`
@@ -273,5 +294,5 @@ const Action = styled.div`
   padding-right: 1rem;
 `;
 
-const AddButton = twc.button`typography p-[1rem] min-w-[4rem] h-[4rem] rounded-full text-center bg-black text-[1.5rem] border-none cursor-pointer transition-[300ms]`;
-const ActiveButton = twc(AddButton)`text-[orange]`;
+const AddButton = twc.button`transition-all duration-300 active:text-text-default active:bg-active typography p-[1rem] min-w-[4rem] h-[4rem] rounded-full text-center bg-black text-[1.5rem] border-none cursor-pointer transition-[300ms]`;
+const ActiveButton = twc(AddButton)`text-active`;
