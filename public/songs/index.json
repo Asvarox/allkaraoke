@@ -76688,6 +76688,31 @@
     "local": false
   },
   {
+    "id": "zdechly-osa-zakochalem-sie-w-twojej-matce",
+    "title": "Zakochałem się w twojej matce",
+    "artist": "Zdechły Osa",
+    "video": "21MAeOX1Bxc",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 396.63,
+    "gap": 23985.715830875124,
+    "year": "2020",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-07-13T13:57:34.189Z",
+    "realBpm": 145,
+    "volume": 0.81,
+    "author": "UltraSinger [GitHub] 0.0.11-dev4",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "zdechlyosazakochalemsiewtwojejmatce",
+    "local": false
+  },
+  {
     "id": "zedd-foxes-clarity",
     "title": "Clarity",
     "artist": "Zedd & Foxes",
