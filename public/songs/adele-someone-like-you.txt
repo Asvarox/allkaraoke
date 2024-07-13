@@ -8,10 +8,12 @@
 #LANGUAGE:English
 #GAP:13065
 #ALLKARAOKE_ID:adele-someone-like-you
+#ALLKARAOKE_LASTUPDATE:2024-07-13T11:41:53.222Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=nauce
 #ALLKARAOKE_REALBPM:72
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)
+#ALLKARAOKE_VOLUME:0,75
 : 18 2 1 I
 : 21 19 4 ~ 
 : 42 17 1 heard
@@ -215,7 +217,7 @@
 : 1440 1 9 ~
 : 1442 12 6 ~
 - 1454
-: 1458 3 9 "Some
+: 1458 3 9 \"Some
 : 1462 6 9 times 
 : 1469 2 9 it 
 : 1473 8 9 lasts 
@@ -233,7 +235,7 @@
 : 1542 1 4 stead
 : 1544 22 6 ~
 : 1567 2 4 ~
-: 1570 7 6 ~"
+: 1570 7 6 ~\"
 - 1577
 : 1586 3 9 Some
 : 1591 5 9 times 
@@ -401,12 +403,12 @@
 : 2785 29 6 you 
 : 2818 12 9 too
 - 2830
-: 2833 6 13 "Don't 
+: 2833 6 13 \"Don't 
 : 2842 6 13 for
 : 2849 2 13 get
 : 2852 1 11 ~ 
 : 2855 2 13 me
-: 2858 4 11 ~"
+: 2858 4 11 ~\"
 - 2862
 : 2869 5 16 I 
 : 2877 7 13 begged
@@ -425,7 +427,7 @@
 : 2944 1 9 ~
 : 2946 12 6 ~
 - 2958
-: 2962 3 9 "Some
+: 2962 3 9 \"Some
 : 2967 5 9 times 
 : 2974 2 9 it 
 : 2978 7 9 lasts 
@@ -440,7 +442,7 @@
 : 3029 5 -1 ~ 
 : 3038 1 -3 in
 : 3040 3 -1 ~
-: 3046 25 -3 stead"
+: 3046 25 -3 stead\"
 - 3071
 : 3074 3 -1 Yay
 : 3078 11 1 ~!
@@ -541,7 +543,7 @@
 : 3788 1 9 ~
 : 3790 7 6 ~
 - 3797
-: 3805 3 9 "Some
+: 3805 3 9 \"Some
 : 3810 5 9 times 
 : 3817 1 9 it 
 : 3820 9 9 lasts 
@@ -560,7 +562,7 @@
 : 3890 3 4 stead
 : 3894 15 6 ~
 : 3910 2 4 ~
-: 3913 20 2 ~"
+: 3913 20 2 ~\"
 - 3933 3935
 - 3935
 : 3953 3 9 Nev
@@ -618,7 +620,7 @@
 : 4300 1 9 ~
 : 4302 11 6 ~
 - 4313
-* 4317 3 9 "Some
+* 4317 3 9 \"Some
 * 4322 6 9 times 
 * 4330 2 9 it 
 * 4334 7 9 lasts 
@@ -636,7 +638,7 @@
 : 4400 3 4 stead
 : 4404 25 6 ~
 : 4430 2 8 ~
-: 4433 9 9 ~"
+: 4433 9 9 ~\"
 - 4442
 : 4445 4 9 Some
 : 4450 6 9 times 
