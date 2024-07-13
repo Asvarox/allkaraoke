@@ -7,10 +7,12 @@
 #LANGUAGE:English
 #GAP:12605,810013767119
 #ALLKARAOKE_ID:coldplay-viva-la-vida
+#ALLKARAOKE_LASTUPDATE:2024-07-13T11:41:53.232Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida
+#ALLKARAOKE_VOLUME:0,76
 : 18 3 8 I 
 : 22 3 12 used 
 : 30 4 12 to 
@@ -75,7 +77,7 @@
 : 698 4 13 would 
 : 706 12 10 sing:
 - 718
-: 734 3 8 "Now 
+: 734 3 8 \"Now 
 : 738 2 8 the 
 : 742 2 12 old 
 : 746 3 10 king 
@@ -85,7 +87,7 @@
 : 766 3 12 Long 
 : 770 2 10 live 
 : 774 2 8 the 
-: 778 5 8 king!"
+: 778 5 8 king!\"
 - 783
 : 786 2 15 One 
 : 790 3 17 mi

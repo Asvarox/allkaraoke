@@ -144,9 +144,11 @@
     "gap": 19629.29411764706,
     "year": "2005",
     "artistOrigin": "US",
+    "lastUpdate": "2024-07-13T11:41:53.213Z",
     "edition": "SingStar Pop USA",
     "genre": "Pop",
     "realBpm": 99,
+    "volume": 0.72,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Kryptonite",
@@ -1557,8 +1559,10 @@
     "gap": 13065,
     "year": "2011",
     "artistOrigin": "GB",
+    "lastUpdate": "2024-07-13T11:41:53.222Z",
     "genre": "Pop",
     "realBpm": 72,
+    "volume": 0.75,
     "author": "nauce",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=nauce",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)",
@@ -1905,17 +1909,19 @@
       "English"
     ],
     "bpm": 288,
-    "gap": 38206,
+    "gap": 37216.416666666664,
     "year": "1973",
     "artistOrigin": "US",
+    "lastUpdate": "2024-07-13T11:41:53.224Z",
     "genre": "Other",
     "realBpm": 78,
+    "volume": 0.77,
     "author": "gouthamma",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gouthamma",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Dream%20on",
     "tracks": [
       {
-        "start": 0
+        "start": 19
       }
     ],
     "tracksCount": 1,
@@ -4013,10 +4019,11 @@
     "gap": 15178.095238095239,
     "year": "2007",
     "artistOrigin": "GB",
-    "lastUpdate": "2023-01-29T00:06:04.393Z",
+    "lastUpdate": "2024-07-13T11:41:53.225Z",
     "edition": "SingStar R&B",
     "genre": "Pop",
     "realBpm": 123,
+    "volume": 0.73,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse",
@@ -11601,16 +11608,18 @@
       "Polish"
     ],
     "bpm": 321.44,
-    "gap": 646,
+    "gap": 39.354902936784356,
     "year": "2000",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-07-13T11:41:53.227Z",
     "realBpm": 65,
+    "volume": 0.81,
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BRAThANKI&cancion=Czerwone%20korale",
     "tracks": [
       {
-        "start": 0
+        "start": 13
       }
     ],
     "tracksCount": 1,
@@ -14602,12 +14611,12 @@
     "gap": 47889.02884827131,
     "year": "1996",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-07-26T20:10:02.022Z",
+    "lastUpdate": "2024-07-13T11:41:53.229Z",
     "genre": "Pop",
     "realBpm": 88,
     "previewStart": 98,
     "previewEnd": 143,
-    "volume": 0.5,
+    "volume": 0.77,
     "author": "bohning",
     "tracks": [
       {
@@ -16420,7 +16429,9 @@
     "gap": 12605.810013767119,
     "year": "2008",
     "artistOrigin": "GB",
+    "lastUpdate": "2024-07-13T11:41:53.232Z",
     "realBpm": 136,
+    "volume": 0.76,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida",
@@ -22093,10 +22104,10 @@
     "gap": 21210,
     "year": "2015",
     "artistOrigin": "CA",
-    "lastUpdate": "2024-05-17T16:50:29.174Z",
+    "lastUpdate": "2024-07-13T11:41:53.237Z",
     "genre": "R&B",
     "realBpm": 135,
-    "volume": 0.77,
+    "volume": 0.69,
     "author": "amro98 & fepo",
     "tracks": [
       {
@@ -22693,17 +22704,19 @@
       "English"
     ],
     "bpm": 206.6,
-    "gap": -183.39181286549865,
+    "gap": 34.35527589545006,
     "year": "2013",
     "artistOrigin": "GB",
+    "lastUpdate": "2024-07-13T11:41:53.242Z",
     "genre": "Soundtracks",
     "realBpm": 76,
+    "volume": 0.76,
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=I%20See%20Fire",
     "tracks": [
       {
-        "start": 14
+        "start": 11
       }
     ],
     "tracksCount": 1,
@@ -28653,8 +28666,10 @@
     "gap": 18177.627906976744,
     "year": "2011",
     "artistOrigin": "AU",
+    "lastUpdate": "2024-07-13T11:41:53.244Z",
     "genre": "Pop",
     "realBpm": 129,
+    "volume": 0.83,
     "author": "vicktoben",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Gotye%20%26%20Kimbra&cancion=Somebody%20That%20I%20Used%20To%20Know",
@@ -31378,11 +31393,11 @@
     "gap": 13046.478873239437,
     "year": "2015",
     "artistOrigin": "IT",
-    "lastUpdate": "2024-04-18T04:25:23.464Z",
+    "lastUpdate": "2024-07-13T11:41:53.248Z",
     "edition": "ESC 2015",
     "genre": "Pop",
     "realBpm": 142,
-    "volume": 0.76,
+    "volume": 0.85,
     "author": "gun8",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=80048",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18235",
@@ -36990,18 +37005,20 @@
       "Polish"
     ],
     "bpm": 248,
-    "gap": 30846.77,
+    "gap": 29817.774193548386,
     "year": "2003",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-07-13T11:41:53.250Z",
     "edition": "SingStar ESKA",
     "genre": "Pop",
     "realBpm": 124,
+    "volume": 0.74,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Kayah&cancion=Testosteron",
     "tracks": [
       {
-        "start": 0
+        "start": 17
       }
     ],
     "tracksCount": 1,
@@ -38158,8 +38175,10 @@
     "gap": 19973.157894736843,
     "year": "1991",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-07-13T11:41:53.252Z",
     "edition": "SingStar WI",
     "realBpm": 114,
+    "volume": 1,
     "tracks": [
       {
         "start": 15
@@ -40932,12 +40951,12 @@
     "gap": 28432.14285714286,
     "year": "2023",
     "artistOrigin": "US",
-    "lastUpdate": "2024-07-11T00:11:14.584Z",
+    "lastUpdate": "2024-07-13T11:41:53.253Z",
     "genre": "Nu Metal",
     "realBpm": 140,
     "previewStart": 141,
     "previewEnd": 190,
-    "volume": 0.83,
+    "volume": 0.74,
     "author": "DoubleDee",
     "tracks": [
       {
@@ -53616,7 +53635,7 @@
     "gap": 10415.29411764706,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.315Z",
+    "lastUpdate": "2024-07-13T11:41:53.255Z",
     "edition": "SingStar Pop",
     "genre": "Rock",
     "realBpm": 170,
@@ -58504,8 +58523,10 @@
     "gap": 5116.691588785046,
     "year": "1998",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-07-13T11:41:53.257Z",
     "edition": "SingStar WI",
     "realBpm": 107,
+    "volume": 0.77,
     "tracks": [
       {
         "start": 14
@@ -64688,17 +64709,19 @@
       "English"
     ],
     "bpm": 329.48,
-    "gap": 5350,
+    "gap": 4348.421755493505,
     "year": "2001",
     "artistOrigin": "US",
+    "lastUpdate": "2024-07-13T11:41:53.258Z",
     "genre": "Banda sonora",
     "realBpm": 161,
+    "volume": 0.75,
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=I'm%20a%20believer",
     "tracks": [
       {
-        "start": 0
+        "start": 22
       }
     ],
     "tracksCount": 1,
@@ -70114,9 +70137,9 @@
     "gap": 8547.514919217894,
     "year": "2014",
     "artistOrigin": "IL",
-    "lastUpdate": "2024-02-08T06:16:42.901Z",
+    "lastUpdate": "2024-07-13T11:41:53.260Z",
     "realBpm": 103,
-    "volume": 0.75,
+    "volume": 0.68,
     "author": "Zevac",
     "tracks": [
       {
@@ -72665,9 +72688,9 @@
     "gap": 20639.587210391557,
     "year": "2009",
     "artistOrigin": "PL",
-    "lastUpdate": "2023-07-27T18:16:56.206Z",
+    "lastUpdate": "2024-07-13T11:41:53.261Z",
     "realBpm": 75,
-    "volume": 0.8,
+    "volume": 0.91,
     "author": "Angelyina",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1550",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=3815",
@@ -75720,18 +75743,19 @@
       "Polish"
     ],
     "bpm": 101,
-    "gap": 28630,
+    "gap": 27590.396039603962,
     "year": "2002",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-07-13T11:41:53.262Z",
     "edition": "Singstar 80s Polish",
     "realBpm": 100,
-    "volume": 0.85,
+    "volume": 0.96,
     "author": "juliana",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=558",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2822",
     "tracks": [
       {
-        "start": 0
+        "start": 7
       }
     ],
     "tracksCount": 1,
