@@ -95,6 +95,11 @@ export interface NetworkSearchSongMessage {
   search: string;
 }
 
+export interface NetworkSelectSongMessage {
+  t: 'select-song';
+  id: string;
+}
+
 export interface NetworkSetGameInputLagRequestMessage {
   t: 'set-game-input-lag-request';
   value: number;
@@ -141,6 +146,7 @@ export interface NetworkStyleChangeMessage {
 }
 
 export type NetworkMessages =
+  | NetworkSelectSongMessage
   | NetworkSubscribeMessage
   | NetworkUnsubscribeMessage
   | NetworkRemoteMicListMessage

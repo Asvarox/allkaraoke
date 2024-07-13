@@ -197,6 +197,10 @@ export class NetworkClient {
     this.sendEvent('search-song', { search });
   };
 
+  public selectSong = (songId: string) => {
+    this.sendEvent('select-song', { id: songId });
+  };
+
   public requestPlayerChange = (id: string, playerNumber: 0 | 1 | 2 | 3 | null) => {
     this.sendEvent<NetworkRequestMicSelectMessage>('request-mic-select', { id, playerNumber });
   };

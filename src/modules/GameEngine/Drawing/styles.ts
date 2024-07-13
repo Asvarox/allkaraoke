@@ -98,7 +98,6 @@ const styles = {
     },
     text: {
       active: 'rgb(255, 165, 0)',
-      activeBorder: 'rgb(101,75,22)',
       default: 'white',
       inactive: 'grey',
     },

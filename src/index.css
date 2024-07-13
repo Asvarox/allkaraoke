@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .typography {
+        -webkit-text-stroke: thin black;
+        color: white;
+        font-weight: bold;
+        strong {
+            color: orange;
+        }
+    }
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)

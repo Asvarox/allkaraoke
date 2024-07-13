@@ -87,6 +87,8 @@ export class NetworkServer {
               events.remoteKeyboardPressed.dispatch(event.key);
             } else if (type === 'search-song') {
               events.remoteSongSearch.dispatch(event.search);
+            } else if (type === 'select-song') {
+              events.remoteSongSelected.dispatch(event.id);
             } else if (type === 'request-mic-select') {
               events.playerChangeRequested.dispatch(event.id, event.playerNumber);
             } else if (type === 'get-game-input-lag-request') {

@@ -116,6 +116,16 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
   const [selectedPlaylist, setSelectedPlaylist] = useState<string | null>(
     new URLSearchParams(global.location?.search).get('playlist') ?? null,
   );
+
+  const setPlaylist = (name: string) => {
+    /// push query param to url containing playlist name
+    const url = new URL(global.location?.href);
+    url.searchParams.set('playlist', name);
+    global.history.replaceState(null, '', url.toString());
+
+    setSelectedPlaylist(name);
+  };
+
   const playlist = playlists.find((p) => p.name === selectedPlaylist) ?? playlists[0];
   const [filters, setFilters] = useState<AppliedFilters>(emptyFilters);
 
@@ -135,5 +145,5 @@ export const useSongListFilter = (list: SongPreview[], popular: string[], isLoad
     [list, deferredFilters, excludedLanguages, playlist],
   );
 
-  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist, playlists, playlist };
+  return { filters, filteredList, setFilters, selectedPlaylist, setSelectedPlaylist: setPlaylist, playlists, playlist };
 };

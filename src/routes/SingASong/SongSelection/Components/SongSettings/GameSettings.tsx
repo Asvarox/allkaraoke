@@ -55,7 +55,13 @@ export default function GameSettings({ songPreview, onNextStep, keyboardControl,
 
   const changeTolerance = () => setTolerance((current) => nextIndex(difficultyNames, current, -1));
 
-  const { register } = useKeyboardNav({ enabled: keyboardControl, onBackspace: onExitKeyboardControl });
+  const { register } = useKeyboardNav({
+    enabled: keyboardControl,
+    onBackspace: onExitKeyboardControl,
+    additionalHelp: {
+      remote: ['select-song'],
+    },
+  });
 
   return (
     <>

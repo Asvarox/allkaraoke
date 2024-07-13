@@ -19,20 +19,26 @@ type AnyFunc = (...args: any[]) => void;
 export function useEventEffect<T1 extends AnyFunc, T2 extends AnyFunc>(
   events: [GameEvent<T1>, GameEvent<T2>],
   effect: T1 | T2,
+  dependencies?: any[],
 ): void;
 export function useEventEffect<T1 extends AnyFunc, T2 extends AnyFunc, T3 extends AnyFunc>(
   events: [GameEvent<T1>, GameEvent<T2>, GameEvent<T3>],
   effect: T1 | T2 | T3,
+  dependencies?: any[],
 ): void;
-export function useEventEffect<T1 extends AnyFunc>(events: GameEvent<T1>, effect: T1): void;
-export function useEventEffect<T extends AnyFunc>(event: GameEvent<T> | GameEvent<T>[], effect: T) {
+export function useEventEffect<T1 extends AnyFunc>(events: GameEvent<T1>, effect: T1, dependencies?: any[]): void;
+export function useEventEffect<T extends AnyFunc>(
+  event: GameEvent<T> | GameEvent<T>[],
+  effect: T,
+  dependencies: any[] = [],
+) {
   const eventList = Array.isArray(event) ? event : [event];
 
   useEffect(() => {
     eventList.forEach((e) => e.subscribe(effect));
 
     return () => eventList.forEach((e) => e.unsubscribe(effect));
-  }, [...eventList, effect]);
+  }, [...eventList, effect, ...dependencies]);
 }
 
 export function useEventListenerSelector<S extends any>(

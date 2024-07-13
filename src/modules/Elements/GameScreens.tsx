@@ -1,8 +1,23 @@
 import styled from '@emotion/styled';
 import { typography } from 'modules/Elements/cssMixins';
-import styles from 'modules/GameEngine/Drawing/styles';
+import styles, { colorSets } from 'modules/GameEngine/Drawing/styles';
 
 export const GameScreens = styled.div`
+  :root {
+    // not sure if this will be needed :shrug:
+    --player-blue-text: ${colorSets.blue.text};
+    --player-blue-stroke: ${colorSets.blue.stroke};
+    --player-blue-star-fill: ${colorSets.blue.star.fill};
+    --player-blue-star-stroke: ${colorSets.blue.star.stroke};
+    --player-blue-perfect-fill: ${colorSets.blue.perfect.fill};
+    --player-blue-perfect-stroke: ${colorSets.blue.perfect.stroke};
+    --player-blue-starPerfect-fill: ${colorSets.blue.starPerfect.fill};
+    --player-blue-starPerfect-stroke: ${colorSets.blue.starPerfect.stroke};
+    --player-blue-hit-fill: ${colorSets.blue.hit.fill};
+    --player-blue-hit-stroke: ${colorSets.blue.hit.stroke};
+    --player-blue-miss-fill: ${colorSets.blue.miss.fill};
+    --player-blue-miss-stroke: ${colorSets.blue.miss.stroke};
+  }
   h1 {
     ${typography};
     margin: 0;

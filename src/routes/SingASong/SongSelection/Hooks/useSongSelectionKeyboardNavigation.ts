@@ -221,7 +221,7 @@ export const useSongSelectionKeyboardNavigation = (
       back: null,
       shiftR: null,
       alphanumeric: null,
-      remote: ['search'],
+      remote: ['search', 'select-song'],
     }),
     [],
   );

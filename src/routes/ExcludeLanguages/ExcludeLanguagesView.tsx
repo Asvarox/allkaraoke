@@ -14,7 +14,7 @@ import { useEffect, useMemo } from 'react';
 import CountUp from 'react-countup';
 import { ExcludedLanguagesSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
-export const useLanguageList = (list: SongPreview[]) => {
+export const useLanguageList = (list: Pick<SongPreview, 'language'>[]) => {
   return useMemo(() => {
     const langs: Record<string, { name: string; count: number }> = {};
 
