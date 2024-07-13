@@ -8,8 +8,12 @@ import SongDao from 'modules/Songs/SongsService';
 import storage from 'modules/utils/storage';
 import { InputLagSetting, UseWebsocketsSettings } from 'routes/Settings/SettingsState';
 
-const GAME_CODE_KEY = 'room_id_key';
+export const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
+
+export const storeGameCode = (gameCode: string) => {
+  storage.session.setItem(GAME_CODE_KEY, gameCode);
+};
 
 export class NetworkServer {
   private gameCode = storage.session.getItem(GAME_CODE_KEY)!;
@@ -37,7 +41,7 @@ export class NetworkServer {
     if (this.started) return;
     this.started = true;
     console.log('connection started', this.getGameCode());
-    storage.session.setItem(GAME_CODE_KEY, this.gameCode);
+    storeGameCode(this.gameCode);
 
     this.transport.connect(
       this.getGameCode(),

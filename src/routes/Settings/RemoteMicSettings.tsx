@@ -17,6 +17,7 @@ import {
   UseWebsocketsSettings,
 } from 'routes/Settings/SettingsState';
 
+import { GAME_CODE_LENGTH, storeGameCode } from 'modules/RemoteMic/Network/Server/NetworkServer';
 import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';
 
 interface Props {}
@@ -37,7 +38,18 @@ function RemoteMicSettings(props: Props) {
 
   return (
     <MenuWithLogo>
-      <h1>Remote Microphone Settings</h1>
+      <h1
+        onClick={() => {
+          const code = prompt('Code');
+
+          if (code?.length === GAME_CODE_LENGTH - 1) {
+            storeGameCode(code);
+
+            global.location.reload();
+          }
+        }}>
+        Remote Microphone Settings
+      </h1>
       <Switcher
         {...register('websocket-connection', () => setWebsockets(!websockets))}
         label="Use Websockets"
