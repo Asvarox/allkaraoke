@@ -174,18 +174,20 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
 
   useEventEffect(
     events.remoteSongSelected,
-    (songId) => {
-      setKeyboardControl(false);
+    async (songId) => {
       setSelectedPlaylist('All');
-      setTimeout(() => {
-        const songIndex = songList.findIndex((song) => song.id === songId);
-        if (songIndex) {
-          moveToSong(songIndex);
-          expandSong();
+      const songIndex = songList.findIndex((song) => song.id === songId);
+      if (songIndex) {
+        moveToSong(songIndex);
+        if (!keyboardControl) {
+          setKeyboardControl(true);
+          // await sleep(400);
         }
-      }, 300);
+        // await sleep(300);
+        expandSong();
+      }
     },
-    [songList, moveToSong, expandSong, setSelectedPlaylist, setKeyboardControl],
+    [songList, moveToSong, expandSong, setSelectedPlaylist, setKeyboardControl, keyboardControl],
   );
 
   return (

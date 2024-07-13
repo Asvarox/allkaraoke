@@ -63,7 +63,7 @@ const ToolbarContainer = styled.div`
   cursor: pointer;
   background: rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 0.2rem;
+  //padding: 0.1rem;
   padding-left: 1rem;
   margin: 0;
   position: fixed;
@@ -74,8 +74,8 @@ const ToolbarContainer = styled.div`
 
   svg {
     fill: white;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.25rem;
+    height: 3.25rem;
     transition: transform 200ms;
 
     &:hover {

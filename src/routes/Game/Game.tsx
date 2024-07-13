@@ -28,7 +28,7 @@ function Game() {
       });
     });
 
-    woosh.play();
+    woosh.play(false);
   };
 
   useFullscreen();

@@ -25,7 +25,7 @@ export default function useSongSelection(preselectedSong: string | null, songsPe
         setKeyboardControl(value);
       });
     });
-    woosh.play();
+    woosh.play(false);
   };
 
   const [focusedSong, focusedGroup, moveToSong, showFilters, setShowFilters, randomSong] =

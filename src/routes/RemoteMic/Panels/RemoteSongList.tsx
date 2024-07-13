@@ -124,7 +124,7 @@ function RemoteSongList({
             onListChange={setExcludedLanguages}>
             {({ open }) => (
               <Tab
-                className="!flex-grow-0"
+                className="!flex-grow-[0.3]"
                 onClick={open}
                 data-active={excludedLanguages.length > 0 && tab === 'list' ? true : undefined}>
                 🇺🇳
