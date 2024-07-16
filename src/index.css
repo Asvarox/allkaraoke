@@ -4,7 +4,7 @@
 
 @layer components {
     .typography {
-        -webkit-text-stroke: thin black;
+        -webkit-text-stroke: 0.1rem black;
         color: white;
         font-weight: bold;
         strong {
