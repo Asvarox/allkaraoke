@@ -44,7 +44,7 @@ export default function ConnectionStatus() {
     <Container>
       <Row>
         <strong>Remote mic server</strong>: {isOnline ? 'Online' : 'Offline'}
-        {isOnline && server.getGameCode().startsWith('w') && <> ({latency}ms)</>}
+        {isOnline && latency && <> ({latency}ms)</>}
       </Row>
       {isOnline && (
         <>

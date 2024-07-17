@@ -62,21 +62,29 @@ events.playerChangeRequested.subscribe((phoneId, newPlayerNumber) => {
   }
 });
 
-events.remoteMicConnected.subscribe(({ name, silent }) => {
+events.remoteMicConnected.subscribe(({ name, id, silent }) => {
   if (!silent) {
     toast.success(
       <>
         Remote microphone <b className="ph-no-capture">{name}</b> connected!
       </>,
+      {
+        toastId: `connection-status-${id}`,
+        updateId: `connection-status-${id}`,
+      },
     );
   }
 });
-events.remoteMicDisconnected.subscribe(({ name }, silent) => {
+events.remoteMicDisconnected.subscribe(({ name, id }, silent) => {
   if (!silent) {
     toast.warning(
       <>
         Remote microphone <b className="ph-no-capture">{name}</b> disconnected!
       </>,
+      {
+        toastId: `connection-status-${id}`,
+        updateId: `connection-status-${id}`,
+      },
     );
   }
 });
