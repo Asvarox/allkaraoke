@@ -17,7 +17,7 @@ export type transportCloseReason = string;
 export type transportErrorReason = string;
 
 export interface ServerTransport extends Listener<[NetworkMessages, SenderInterface]> {
-  name: 'WebSockets' | 'PeerJS';
+  name: 'WebSockets' | 'PeerJS' | 'PartyKit';
 
   connect(
     roomId: string,

@@ -1,5 +1,6 @@
 import { milliseconds } from 'interfaces';
 import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
+import { ServerTransport } from 'modules/RemoteMic/Network/Server/Transport/interface';
 import Listener from 'modules/utils/Listener';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import storage from 'modules/utils/storage';
@@ -89,11 +90,18 @@ export const AutoEnableFullscreenSetting = new Setting<boolean>(
   process.env.NODE_ENV === 'development' ? 'local' : 'session',
 );
 
-export const UseWebsocketsSettings = new Setting<boolean>('UseWebsocketsSettings', false, 'session');
+export const RemoteMicConnectionType = ['WebSockets', 'PeerJS', 'PartyKit'] as const;
+export const RemoteMicConnectionTypeSetting = new Setting<ServerTransport['name']>(
+  'RemoteMicConnectionType',
+  'WebSockets',
+  'session',
+);
 
 posthog.onFeatureFlags?.(() => {
   // UseWebsocketsSettings.set(isDev() ? true : (posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics) ?? false));
-  UseWebsocketsSettings.set(posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics) ?? false);
+  RemoteMicConnectionTypeSetting.set(
+    (posthog.getFeatureFlagPayload(FeatureFlags.RemoteMicConnectionType) as ServerTransport['name']) ?? 'WebSockets',
+  );
 });
 
 export function useSettingValue<T>(value: Setting<T>) {

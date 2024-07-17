@@ -1,4 +1,5 @@
 import events from 'modules/GameEvents/GameEvents';
+import { PartyKitServerTransport } from 'modules/RemoteMic/Network/Server/Transport/PartyKitServer';
 import { PeerJSServerTransport } from 'modules/RemoteMic/Network/Server/Transport/PeerJSServer';
 import { WebSocketServerTransport } from 'modules/RemoteMic/Network/Server/Transport/WebSocketServer';
 import { ServerTransport } from 'modules/RemoteMic/Network/Server/Transport/interface';
@@ -6,7 +7,7 @@ import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import SongDao from 'modules/Songs/SongsService';
 import storage from 'modules/utils/storage';
-import { InputLagSetting, UseWebsocketsSettings } from 'routes/Settings/SettingsState';
+import { InputLagSetting, RemoteMicConnectionTypeSetting } from 'routes/Settings/SettingsState';
 
 export const GAME_CODE_KEY = 'room_id_key';
 export const GAME_CODE_LENGTH = 5;
@@ -36,7 +37,13 @@ export class NetworkServer {
 
   public start = () => {
     if (!this.transport) {
-      this.transport = UseWebsocketsSettings.get() ? new WebSocketServerTransport() : new PeerJSServerTransport();
+      const type = RemoteMicConnectionTypeSetting.get();
+      this.transport =
+        type === 'WebSockets'
+          ? new WebSocketServerTransport()
+          : type === 'PartyKit'
+            ? new PartyKitServerTransport()
+            : new PeerJSServerTransport();
     }
     if (this.started) return;
     this.started = true;
@@ -52,7 +59,7 @@ export class NetworkServer {
           if (type === 'register') {
             RemoteMicManager.addRemoteMic(event.id, event.name, sender, event.silent, event.lag);
           } else if (type === 'unregister') {
-            RemoteMicManager.removeRemoteMic(sender.peer, true);
+            RemoteMicManager.removeRemoteMic(sender.peer);
           } else if (type === 'subscribe-event') {
             RemoteMicManager.addSubscription(sender.peer, event.channel);
           } else if (type === 'unsubscribe-event') {
@@ -120,5 +127,8 @@ export class NetworkServer {
 
   public getLatency = () => this.transport?.getCurrentPing() ?? 0;
 
-  public getGameCode = (): string => (UseWebsocketsSettings.get() ? 'w' : 'p') + this.gameCode;
+  public getGameCode = (): string => {
+    const type = RemoteMicConnectionTypeSetting.get();
+    return (type === 'WebSockets' ? 'w' : type === 'PartyKit' ? 'k' : 'p') + this.gameCode;
+  };
 }
