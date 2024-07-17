@@ -12,9 +12,10 @@ import { useEffect } from 'react';
 import { useUpdate } from 'react-use';
 import {
   DefaultRemoteMicPermission,
+  RemoteMicConnectionType,
+  RemoteMicConnectionTypeSetting,
   RemoteMicPermissions,
   useSettingValue,
-  UseWebsocketsSettings,
 } from 'routes/Settings/SettingsState';
 
 import { GAME_CODE_LENGTH, storeGameCode } from 'modules/RemoteMic/Network/Server/NetworkServer';
@@ -29,7 +30,7 @@ function RemoteMicSettings(props: Props) {
 
   const { register } = useKeyboardNav({ onBackspace: goBack });
 
-  const [websockets, setWebsockets] = useSettingValue(UseWebsocketsSettings);
+  const [remoteMicConnectionType, setRemoteMicConnectionType] = useSettingValue(RemoteMicConnectionTypeSetting);
   const [defaultPermission, setDefaultPermission] = useSettingValue(DefaultRemoteMicPermission);
   const remoteMics = useEventListenerSelector(events.inputListChanged, () => RemoteMicManager.getRemoteMics());
 
@@ -51,9 +52,11 @@ function RemoteMicSettings(props: Props) {
         Remote Microphone Settings
       </h1>
       <Switcher
-        {...register('websocket-connection', () => setWebsockets(!websockets))}
-        label="Use Websockets"
-        value={websockets ? 'Yes' : 'No'}
+        {...register('connection type', () =>
+          setRemoteMicConnectionType(nextValue(RemoteMicConnectionType, remoteMicConnectionType)),
+        )}
+        label="Connection type"
+        value={remoteMicConnectionType}
       />
       <hr />
       <Switcher

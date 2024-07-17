@@ -9,6 +9,10 @@ export function useRemoteMicAutoselect() {
 
   useEventEffect(events.remoteMicConnected, ({ id }) => {
     console.log('useRemoteMicAutoselect', id);
+    if (PlayersManager.getInputs().some((input) => input.deviceId === id)) {
+      console.log(`Input ${id} already assigned to player`);
+      return;
+    }
     const player = PlayersManager.getPlayer(nextPlayerToAutoSwitch.current);
 
     if (player) {
