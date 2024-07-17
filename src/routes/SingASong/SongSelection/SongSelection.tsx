@@ -178,16 +178,18 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       setSelectedPlaylist('All');
       const songIndex = songList.findIndex((song) => song.id === songId);
       if (songIndex) {
-        moveToSong(songIndex);
-        if (!keyboardControl) {
-          setKeyboardControl(true);
-          // await sleep(400);
+        if (focusedSong !== songIndex) {
+          moveToSong(songIndex);
+          if (!keyboardControl) {
+            setKeyboardControl(true);
+          }
+          expandSong();
+        } else if (keyboardControl) {
+          expandSong();
         }
-        // await sleep(300);
-        expandSong();
       }
     },
-    [songList, moveToSong, expandSong, setSelectedPlaylist, setKeyboardControl, keyboardControl],
+    [songList, moveToSong, expandSong, setSelectedPlaylist, setKeyboardControl, keyboardControl, focusedSong],
   );
 
   return (
