@@ -51,7 +51,7 @@ function WaitForReadiness({ onFinish }: Props) {
       await Promise.race([Promise.all([inputsReady, minTimeElapsed]), maxTimeElapsed]);
       if (waitForReadinessMusic.playing()) waitFinished.play();
       await sleep(500);
-      waitForReadinessMusic.pause();
+      waitForReadinessMusic.stop();
       await sleep(1000);
       onFinish();
     })();
