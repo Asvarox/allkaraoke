@@ -3,6 +3,7 @@ import { noDistanceNoteTypes } from 'consts';
 import { Note, NotesSection, PlayerNote } from 'interfaces';
 import { drawPlayerCanvas } from 'modules/GameEngine/Drawing/Elements/debugPlayerCanvas';
 import getNoteColor from 'modules/GameEngine/Drawing/Elements/utils/getNoteColor';
+import GoldNoteParticle from 'modules/GameEngine/Drawing/Particles/GoldNote';
 import SungTriangle from 'modules/GameEngine/Drawing/Particles/SungTriangle';
 import { Shaders } from 'modules/GameEngine/Drawing/Shaders/Shaders';
 import GameState from 'modules/GameEngine/GameState/GameState';
@@ -118,6 +119,7 @@ export default class CanvasDrawing {
 
     if (GraphicSetting.get() === 'high') {
       this.drawFlare(ctx, drawingData, displacements);
+      this.markGoldNotes(currentSection, drawingData);
     }
     false && drawPlayerCanvas(drawingData);
     false && debugPitches(ctx!, drawingData);
@@ -271,6 +273,15 @@ export default class CanvasDrawing {
         );
       });
     }
+  };
+
+  private markGoldNotes = (section: NotesSection, drawingData: DrawingData) => {
+    const notesToMark = section.notes.filter((note) => note.type === 'star' || note.type === 'rapstar');
+
+    notesToMark.forEach((note) => {
+      const { x, y, w, h } = this.getNoteCoords(drawingData, note, note.pitch, true);
+      ParticleManager.add(new GoldNoteParticle(x, y + h / 2, w, drawingData.playerNumber, ParticleManager));
+    });
   };
 
   private calculateDisplacements = (currentSection: NotesSection, drawingData: DrawingData) => {

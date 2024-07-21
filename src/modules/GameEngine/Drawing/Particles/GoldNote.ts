@@ -1,11 +1,11 @@
-import { Note } from 'interfaces';
+import GoldTriangle from 'modules/GameEngine/Drawing/Particles/GoldTriangle';
+import { randomInt } from 'modules/utils/randomValue';
 import tinycolor from 'tinycolor2';
 import ParticleManager from '../ParticleManager';
 import Particle from '../interfaces';
 import styles from '../styles';
-import TriangleParticle from './Triangle';
 
-export default class ExplodingNoteParticle implements Particle {
+export default class GoldNoteParticle implements Particle {
   public finished = true;
 
   constructor(
@@ -13,19 +13,16 @@ export default class ExplodingNoteParticle implements Particle {
     y: number,
     width: number,
     playerNumber: 0 | 1 | 2 | 3,
-    note: Note,
     particleManager: typeof ParticleManager,
   ) {
-    const color =
-      note.type === 'star'
-        ? styles.colors.players[playerNumber].star.fill
-        : styles.colors.players[playerNumber].perfect.fill;
+    const color = styles.colors.players[playerNumber].starPerfect.fill;
 
     const lightColor = tinycolor(color).lighten(15).toRgbString();
     const darkColor = tinycolor(color).darken(15).toRgbString();
 
-    const density = width / 9;
-    for (let i = 0; i < density; i++) {
+    if (Math.random() > 0.85) {
+      const position = randomInt(0, width / 8);
+
       const rand = Math.random();
       let finalColor = color;
       if (rand > 0.66) finalColor = lightColor;
@@ -33,7 +30,7 @@ export default class ExplodingNoteParticle implements Particle {
 
       const finalY = y + 20 * (Math.random() - 0.5);
 
-      particleManager.add(new TriangleParticle(x + i * 9, finalY, finalColor, (density - i) / 10));
+      particleManager.add(new GoldTriangle(x + position * 8, finalY, finalColor));
     }
   }
   public tick = (ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {};
