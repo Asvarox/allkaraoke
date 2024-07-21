@@ -1,0 +1,126 @@
+#ARTIST:Avicii
+#TITLE:Levels
+#CREATOR:Fepo
+#BPM:252
+#YEAR:2011
+#VIDEO:v=_ovdm2yX4MA
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:83148,09523809524
+#ALLKARAOKE_ID:avicii-levels
+#ALLKARAOKE_LASTUPDATE:2024-07-21T00:11:31.592Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_VOLUME:0,8
+#P1:Levels
+#MP3:Avicii - Levels.mp3
+: 17 10 8 Oh 
+: 29 10 6 ho 
+: 45 3 4 some
+: 49 15 1 times
+- 64
+: 69 2 -1 I 
+: 73 1 -4 get 
+: 75 1 -6 a 
+: 77 2 -8 good 
+: 81 3 1 fee
+: 85 5 1 ling
+- 90 92
+- 92
+: 109 3 -6 Yeah
+: 113 2 -8 ~
+: 117 3 -6 ~
+- 120 136
+- 136
+: 153 2 11 Get 
+: 157 2 8 a 
+: 161 2 11 fee
+: 165 2 11 ling
+- 167
+: 169 2 8 That 
+: 173 2 8 I 
+: 177 2 13 ne
+: 181 1 13 ver 
+: 183 2 11 ne
+: 186 1 11 ver 
+: 189 2 8 ne
+: 192 1 6 ver
+- 193
+: 194 2 4 Ne
+: 197 2 1 ver 
+: 200 2 4 had 
+: 204 1 1 be
+: 206 1 -4 ~
+: 209 3 1 fore
+- 212
+: 213 2 -4 Oh 
+: 217 2 1 no 
+: 221 3 -6 no
+: 225 2 -8 ~
+- 227
+: 229 2 -1 I 
+: 233 1 -4 get 
+: 235 1 -6 a 
+: 237 2 -8 good 
+* 241 3 1 fee
+: 245 5 1 ling
+- 250
+: 253 3 -6 Yeah
+: 257 2 -8 ~
+: 261 2 -6 ~
+- 263
+: 273 10 8 Oh 
+* 285 10 6 ho 
+: 301 3 3 some
+: 305 14 1 times
+- 319
+: 325 2 -1 I 
+: 329 1 -4 get 
+: 331 1 -6 a 
+: 333 2 -8 good 
+: 337 3 1 fee
+: 341 4 1 ling
+- 345 348
+- 348
+: 365 3 -6 Yeah
+: 369 2 -8 ~
+: 373 3 -6 ~
+- 376 392
+- 392
+: 409 2 11 Get 
+: 413 2 8 a 
+: 417 2 11 fee
+: 421 2 11 ling
+- 423
+: 425 2 8 That 
+: 429 2 8 I 
+: 433 2 13 ne
+: 437 1 13 ver 
+: 439 2 11 ne
+: 442 1 11 ver 
+: 445 2 8 ne
+: 448 1 6 ver
+- 449
+: 450 2 4 Ne
+: 453 2 1 ver 
+: 456 1 4 had 
+: 460 1 1 be
+: 462 1 -4 ~
+: 465 3 1 fore
+- 468
+: 469 2 -4 Oh 
+: 473 2 1 no 
+: 477 3 -6 no
+: 481 2 -8 ~
+- 483
+: 485 2 -1 I 
+: 489 1 -4 get 
+: 491 1 -6 a 
+: 493 2 -8 good 
+: 497 3 1 fee
+: 501 4 1 ling
+- 505
+: 509 3 -6 Yeah
+: 513 2 -8 ~
+: 517 2 -6 ~
+E

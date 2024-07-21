@@ -1,0 +1,253 @@
+#ARTIST:SLANDER feat. Dylan Matthews
+#TITLE:Love is Gone
+#CREATOR:lilsilly61
+#BPM:140
+#YEAR:2019
+#VIDEO:v=mv23MnaNvGM
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:13305,714285714286
+#ALLKARAOKE_ID:slander-feat-dylan-matthews-love-is-gone
+#ALLKARAOKE_LASTUPDATE:2024-07-21T00:11:33.778Z
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=28993
+#ALLKARAOKE_VOLUME:0,8
+#P1:Love is Gone
+#MP3:SLANDER feat. Dylan Matthews - Love is Gone.mp3
+#COVER:SLANDER feat. Dylan Matthews - Love is Gone [CO].jpg
+#BACKGROUND:SLANDER feat. Dylan Matthews - Love is Gone [BG].jpg
+: 9 8 7 Don't 
+* 18 11 14 go 
+: 35 1 11 to
+: 37 11 11 night
+- 48
+: 54 2 14 Stay 
+: 57 3 12 here 
+: 62 3 11 one 
+: 66 3 9 more 
+: 70 11 11 time
+- 81
+: 85 1 7 Re
+: 87 2 14 mind 
+: 90 2 12 me 
+: 93 4 11 what 
+: 98 2 9 it's 
+: 101 12 11 like
+- 113 121
+- 121
+: 130 1 9 And 
+: 133 2 7 let's 
+: 136 5 7 fall 
+: 142 5 14 in 
+: 148 1 12 love
+: 149 11 11 ~
+- 160
+: 169 3 14 One 
+: 174 3 12 more 
+: 178 13 11 time
+- 191
+: 197 4 7 I 
+: 202 2 14 need 
+: 205 4 12 you 
+: 210 1 12 now
+: 211 12 11 ~ 
+: 230 5 9 by 
+: 237 4 11 my 
+: 242 12 9 side
+- 254
+: 260 2 7 It 
+* 263 5 14 tears 
+: 269 4 12 me 
+: 275 10 11 up
+- 285
+: 289 2 7 When 
+: 292 2 7 you 
+: 295 6 14 turn 
+: 302 4 12 me 
+: 308 13 11 down
+- 321
+: 327 1 7 I'm 
+: 329 4 14 beg
+: 334 4 12 ging 
+: 339 14 11 please,
+- 353
+: 357 1 7 Just 
+: 359 6 9 stick 
+* 366 5 11 a
+: 372 20 9 round
+- 392
+* 395 2 2 I'm 
+: 399 3 6 sor
+: 403 8 7 ry,
+- 411
+: 412 2 2 Don't 
+: 415 3 6 leave 
+: 419 7 7 me,
+- 426
+: 427 3 2 I 
+: 431 3 6 want 
+: 435 4 7 you 
+: 440 2 9 here 
+: 443 3 11 with 
+: 447 1 6 me
+: 448 9 7 ~
+- 457
+: 459 2 2 I 
+: 463 3 6 know 
+: 467 7 7 that
+- 474
+: 476 4 2 Your 
+: 482 3 4 love 
+: 485 1 2 is 
+: 488 15 2 gone
+- 503 515
+- 515
+: 524 2 2 I 
+: 527 2 6 can't 
+: 531 6 7 breathe,
+- 537
+: 540 3 2 I'm 
+: 544 2 6 so 
+: 547 6 7 weak,
+- 553
+: 556 2 2 I 
+: 559 3 6 know 
+: 563 3 7 this 
+: 568 3 9 is
+: 571 2 11 n't 
+* 575 3 14 eas
+: 579 7 11 y
+- 586
+: 588 3 11 Don't 
+: 592 4 14 tell 
+: 596 3 11 me 
+: 600 2 14 that
+- 602
+: 604 2 11 Your 
+: 607 3 9 love 
+: 612 2 7 is 
+: 614 12 9 gone
+- 626
+: 634 1 11 That 
+: 636 2 9 your 
+: 639 3 6 love 
+: 643 2 6 is 
+: 647 13 7 gone
+- 660 709
+- 709
+: 718 1 14 Don't 
+: 720 2 11 tell 
+: 723 3 14 me 
+: 727 3 11 that
+- 730
+: 731 3 11 Your 
+: 735 3 9 love 
+: 740 1 7 is 
+: 742 13 9 gone
+- 755
+: 760 2 11 That 
+: 763 3 9 your 
+: 767 3 6 love 
+: 771 2 6 is 
+: 774 20 7 gone
+- 794 899
+- 899
+: 908 2 2 I'm 
+: 911 2 6 sor
+: 915 6 7 ry,
+- 921
+: 924 2 2 Don't 
+: 927 3 6 leave 
+: 931 6 7 me,
+- 937
+: 940 2 2 I 
+: 943 2 6 want 
+: 947 3 7 you 
+: 951 3 9 here 
+: 956 2 11 with 
+: 959 1 6 me
+: 960 8 7 ~
+- 968
+: 971 3 2 I 
+: 975 3 6 know 
+: 979 7 7 that
+- 986
+: 988 3 2 Your 
+: 992 3 4 love 
+: 996 1 2 is 
+* 998 23 2 gone
+- 1021 1025
+- 1025
+: 1034 3 2 I 
+: 1039 3 6 can't 
+: 1043 7 7 breathe,
+- 1050
+: 1052 2 2 I'm 
+: 1056 2 6 so 
+: 1059 6 7 weak,
+- 1065
+: 1068 2 2 I 
+: 1072 2 6 know 
+: 1075 3 7 this 
+: 1079 3 9 is
+: 1084 2 11 n't 
+: 1087 3 14 eas
+* 1092 34 11 y
+- 1126
+: 1133 1 11 Don't 
+: 1136 3 14 tell 
+: 1139 3 11 me 
+: 1143 3 14 that 
+: 1147 3 11 your
+- 1150
+: 1151 3 9 Love 
+: 1156 2 7 is 
+: 1159 12 9 gone
+- 1171
+: 1177 2 11 That 
+: 1180 2 9 your 
+: 1184 3 6 love 
+: 1188 2 6 is 
+* 1191 32 7 gone
+- 1223 1232
+- 1232
+: 1241 1 11 That 
+: 1244 2 9 your 
+: 1247 3 6 love 
+: 1251 2 6 is 
+* 1254 19 7 gone
+- 1273 1318
+- 1318
+: 1327 1 2 I 
+: 1329 1 6 can't 
+: 1331 7 7 breathe,
+- 1338
+: 1340 3 2 I'm 
+* 1344 3 6 so 
+: 1348 7 7 weak,
+- 1355
+: 1357 3 2 I 
+: 1361 3 6 know 
+: 1366 3 7 this 
+* 1371 3 9 is
+* 1375 3 11 n't 
+: 1379 4 14 eas
+: 1384 7 11 y
+- 1391
+: 1394 3 11 Don't 
+: 1399 5 14 tell 
+: 1404 4 11 me 
+: 1410 3 14 that 
+* 1414 3 11 your
+- 1417
+* 1418 5 9 Love 
+* 1424 2 7 is 
+* 1428 11 9 gone
+- 1439 1443
+- 1443
+: 1452 1 11 That 
+: 1454 3 9 your 
+: 1458 4 6 love 
+: 1464 4 6 is 
+* 1468 22 7 gone
+E
