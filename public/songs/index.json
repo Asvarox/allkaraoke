@@ -79,6 +79,33 @@
     "local": false
   },
   {
+    "id": "2ne1-lonely",
+    "title": "Lonely",
+    "artist": "2NE1",
+    "video": "5n4V3lGEyG4",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 380.12,
+    "gap": 593.4694307060928,
+    "year": "2011",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-07-21T00:11:31.583Z",
+    "genre": "K-Pop",
+    "realBpm": 95,
+    "volume": 0.77,
+    "author": "zaha",
+    "tracks": [
+      {
+        "name": "Lonely",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "2ne1lonely",
+    "local": false
+  },
+  {
     "id": "2pac-feat-dr-dre-roger-troutman-california-love",
     "title": "California Love",
     "artist": "2Pac feat. Dr. Dre & Roger Troutman",
@@ -1748,10 +1775,10 @@
       "Spanish"
     ],
     "bpm": 302.76,
-    "gap": 12468.116131589377,
+    "gap": 12518.116131589377,
     "year": "1999",
     "artistOrigin": "VE",
-    "lastUpdate": "2024-05-09T04:23:13.339Z",
+    "lastUpdate": "2024-07-21T00:11:31.591Z",
     "genre": "Salsa",
     "realBpm": 97,
     "volume": 0.7,
@@ -6996,6 +7023,33 @@
     "local": false
   },
   {
+    "id": "avicii-levels",
+    "title": "Levels",
+    "artist": "Avicii",
+    "video": "_ovdm2yX4MA",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 83148.09523809524,
+    "year": "2011",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-07-21T00:11:31.592Z",
+    "genre": "Pop",
+    "realBpm": 126,
+    "volume": 0.8,
+    "author": "Fepo",
+    "tracks": [
+      {
+        "name": "Levels",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aviciilevels",
+    "local": false
+  },
+  {
     "id": "avicii-the-nights",
     "title": "The Nights",
     "artist": "Avicii",
@@ -10837,6 +10891,36 @@
     "local": false
   },
   {
+    "id": "boa-only-one",
+    "title": "Only One",
+    "artist": "BoA",
+    "video": "PQjovLrnvVo",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 360.04,
+    "gap": 30742.111098766803,
+    "year": "2012",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-07-21T00:11:31.594Z",
+    "genre": "Kpop",
+    "realBpm": 90,
+    "previewStart": 59,
+    "previewEnd": 90,
+    "volume": 0.8,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "tracks": [
+      {
+        "name": "Only One",
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "boaonlyone",
+    "local": false
+  },
+  {
     "id": "bob-feat-bruno-mars-nothin-on-you",
     "title": "Nothin’ On You",
     "artist": "B.o.B feat. Bruno Mars",
@@ -11455,6 +11539,32 @@
     ],
     "tracksCount": 1,
     "search": "bonnietylerholdingoutforahero",
+    "local": false
+  },
+  {
+    "id": "bonnie-tyler-total-eclipse-of-the-heart",
+    "title": "Total Eclipse Of The Heart",
+    "artist": "Bonnie Tyler",
+    "video": "lcOxhH8N3Bo",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.65,
+    "gap": 6887.90872328134,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-07-21T00:11:31.597Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "ultrastarsongs, mandark",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bonnietylertotaleclipseoftheheart",
     "local": false
   },
   {
@@ -13203,6 +13313,32 @@
     "local": false
   },
   {
+    "id": "bryan-adams-have-you-ever-really-loved-a-woman",
+    "title": "Have You Ever Really Loved A Woman?",
+    "artist": "Bryan Adams",
+    "video": "diKIYv8tMC8",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.54,
+    "gap": 7232.268662923685,
+    "year": "1995",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-21T00:11:31.600Z",
+    "genre": "Oldies",
+    "realBpm": 146,
+    "volume": 0.67,
+    "author": "pauldiddy",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bryanadamshaveyoueverreallylovedawoman",
+    "local": false
+  },
+  {
     "id": "bryan-adams-heaven",
     "title": "Heaven",
     "artist": "Bryan Adams",
@@ -13281,6 +13417,31 @@
     "local": false
   },
   {
+    "id": "bryan-adams-summer-of-69",
+    "title": "Summer Of ’69",
+    "artist": "Bryan Adams",
+    "video": "9f06QZCVUHg",
+    "language": [
+      "English"
+    ],
+    "bpm": 277.05,
+    "gap": 4115.446670276124,
+    "year": "1984",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-21T00:11:31.603Z",
+    "realBpm": 138,
+    "volume": 0.74,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bryanadamssummerof69",
+    "local": false
+  },
+  {
     "id": "bryce-pinkham-just-look-my-way",
     "title": "Just Look My Way",
     "artist": "Bryce Pinkham",
@@ -13303,6 +13464,34 @@
     ],
     "tracksCount": 1,
     "search": "brycepinkhamjustlookmyway",
+    "local": false
+  },
+  {
+    "id": "bts-blood-sweat-tears",
+    "title": "Blood Sweat & Tears",
+    "artist": "BTS",
+    "video": "hmE9f-TEutc",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 372,
+    "gap": 55048.93548387097,
+    "year": "2016",
+    "artistOrigin": "KP",
+    "lastUpdate": "2024-07-21T00:11:31.605Z",
+    "genre": "Kpop",
+    "videoGap": 53,
+    "realBpm": 93,
+    "volume": 0.8,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "name": "Blood Sweat & Tears",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btsbloodsweattears",
     "local": false
   },
   {
@@ -13384,6 +13573,34 @@
     "local": false
   },
   {
+    "id": "bts-dna",
+    "title": "DNA",
+    "artist": "BTS",
+    "video": "MBdVXkSdhwU",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 259.83,
+    "gap": 43312.589077473735,
+    "year": "2017",
+    "artistOrigin": "KP",
+    "lastUpdate": "2024-07-21T00:11:31.608Z",
+    "genre": "Kpop",
+    "videoGap": 28,
+    "realBpm": 130,
+    "volume": 0.78,
+    "author": "asdFer",
+    "tracks": [
+      {
+        "name": "DNA",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btsdna",
+    "local": false
+  },
+  {
     "id": "bts-dynamite",
     "title": "Dynamite",
     "artist": "BTS",
@@ -13407,6 +13624,33 @@
     ],
     "tracksCount": 1,
     "search": "btsdynamite",
+    "local": false
+  },
+  {
+    "id": "bts-fake-love",
+    "title": "Fake Love",
+    "artist": "BTS",
+    "video": "7C2z4GqqS5E",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 308.71,
+    "gap": 18149.624890674095,
+    "year": "2018",
+    "artistOrigin": "KP",
+    "lastUpdate": "2024-07-21T00:11:31.614Z",
+    "genre": "K-Pop",
+    "realBpm": 78,
+    "volume": 0.86,
+    "author": "ddog282",
+    "tracks": [
+      {
+        "name": "Fake Love",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btsfakelove",
     "local": false
   },
   {
@@ -13510,6 +13754,35 @@
     ],
     "tracksCount": 1,
     "search": "btsjustoneday",
+    "local": false
+  },
+  {
+    "id": "bts-life-goes-on",
+    "title": "Life Goes On",
+    "artist": "BTS",
+    "video": "-5q5mZbe3V8",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 391.07,
+    "gap": 19040.736083054184,
+    "year": "2020",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-07-21T00:11:31.617Z",
+    "genre": "K-Pop",
+    "videoGap": 5,
+    "realBpm": 81,
+    "previewStart": 92,
+    "previewEnd": 153,
+    "volume": 0.81,
+    "author": "BTS",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "btslifegoeson",
     "local": false
   },
   {
@@ -13729,6 +14002,33 @@
     ],
     "tracksCount": 1,
     "search": "bungacitralestariwanitaterbahagia",
+    "local": false
+  },
+  {
+    "id": "burnout-syndromes-hikari-are",
+    "title": "Hikari are",
+    "artist": "Burnout syndromes",
+    "video": "oRAF2-Exzx4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 355.99,
+    "gap": -9.360150566027187,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-21T00:11:31.619Z",
+    "genre": "Jpop",
+    "realBpm": 178,
+    "volume": 1,
+    "author": "Sther7",
+    "tracks": [
+      {
+        "name": "Hikari Are",
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "burnoutsyndromeshikariare",
     "local": false
   },
   {
@@ -15384,10 +15684,10 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 400,
+    "gap": 450,
     "year": "2007",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-26T06:19:28.817Z",
+    "lastUpdate": "2024-07-21T00:11:32.322Z",
     "genre": "R&B",
     "realBpm": 86,
     "volume": 0.67,
@@ -15907,6 +16207,31 @@
     ],
     "tracksCount": 1,
     "search": "christinaperriathousandyears",
+    "local": false
+  },
+  {
+    "id": "christina-perri-jar-of-hearts",
+    "title": "Jar Of Hearts",
+    "artist": "Christina Perri",
+    "video": "8v_4O44sfjM",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 610,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.324Z",
+    "realBpm": 75,
+    "volume": 0.8,
+    "author": "Knuddel",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "christinaperrijarofhearts",
     "local": false
   },
   {
@@ -17312,6 +17637,32 @@
     "local": false
   },
   {
+    "id": "cyndi-lauper-true-colors",
+    "title": "True Colors",
+    "artist": "Cyndi Lauper",
+    "video": "LPn0KFlbqX8",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.85,
+    "gap": 19759.444135630907,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.325Z",
+    "genre": "Pop",
+    "realBpm": 170,
+    "volume": 0.84,
+    "author": "Eggman",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cyndilaupertruecolors",
+    "local": false
+  },
+  {
     "id": "cynthia-harrell-snake-eater",
     "title": "Snake Eater",
     "artist": "Cynthia Harrell",
@@ -18457,6 +18808,33 @@
     ],
     "tracksCount": 1,
     "search": "daverodgersdejavu",
+    "local": false
+  },
+  {
+    "id": "david-archuleta-crush",
+    "title": "Crush",
+    "artist": "David Archuleta",
+    "video": "6J1-eYBbspA",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 10601.481481481482,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.327Z",
+    "realBpm": 162,
+    "volume": 0.7,
+    "author": "x-y-zero",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7000",
+    "tracks": [
+      {
+        "name": "Crush",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidarchuletacrush",
     "local": false
   },
   {
@@ -19694,6 +20072,35 @@
     "local": false
   },
   {
+    "id": "deorro-x-chris-brown-five-more-hours",
+    "title": "Five More Hours",
+    "artist": "Deorro x Chris Brown",
+    "video": "hmwJ2GhYtKY",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.98,
+    "gap": 74893.82842409563,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.471Z",
+    "genre": "Dance & Electronic",
+    "realBpm": 128,
+    "previewStart": 103,
+    "previewEnd": 135,
+    "volume": 0.84,
+    "author": "aac",
+    "tracks": [
+      {
+        "name": "Five More Hours",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deorroxchrisbrownfivemorehours",
+    "local": false
+  },
+  {
     "id": "depeche-mode-enjoy-the-silence",
     "title": "Enjoy The Silence",
     "artist": "Depeche Mode",
@@ -20202,6 +20609,33 @@
     "local": false
   },
   {
+    "id": "dillaz-colas",
+    "title": "Colãs",
+    "artist": "Dillaz",
+    "video": "yRCv7L-wcVo",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 328.02,
+    "gap": 9463.963782696177,
+    "year": "2023",
+    "lastUpdate": "2024-07-21T00:11:32.472Z",
+    "realBpm": 164,
+    "previewStart": 35,
+    "previewEnd": 69,
+    "volume": 0.8,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dillazcolas",
+    "local": false
+  },
+  {
     "id": "dio-holy-diver",
     "title": "Holy Diver",
     "artist": "Dio",
@@ -20228,6 +20662,36 @@
     ],
     "tracksCount": 1,
     "search": "dioholydiver",
+    "local": false
+  },
+  {
+    "id": "diogo-picarra-e-pedro-abrunhosa-amor-de-ferro",
+    "title": "Amor de Ferro",
+    "artist": "Diogo Piçarra e Pedro Abrunhosa",
+    "video": "KZckT3E0Abc",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 248.72,
+    "gap": 5857.7507237053715,
+    "year": "2024",
+    "lastUpdate": "2024-07-21T00:11:32.619Z",
+    "realBpm": 125,
+    "previewStart": 99,
+    "previewEnd": 160,
+    "volume": 0.75,
+    "author": "airBN",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=airbn",
+    "tracks": [
+      {
+        "start": 17
+      },
+      {
+        "start": 1027
+      }
+    ],
+    "tracksCount": 2,
+    "search": "diogopicarraepedroabrunhosaamordeferro",
     "local": false
   },
   {
@@ -25702,6 +26166,33 @@
     "local": false
   },
   {
+    "id": "far-east-movement-feat-the-cataracs-dev-like-a-g6",
+    "title": "Like A G6",
+    "artist": "Far East Movement feat. The Cataracs & DEV",
+    "video": "w4s6H4ku6ZY",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.3,
+    "gap": 5761.222532960448,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.763Z",
+    "genre": "Dance, Electronic",
+    "realBpm": 125,
+    "volume": 0.77,
+    "author": "michas17j",
+    "tracks": [
+      {
+        "name": "Like A G6",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fareastmovementfeatthecataracsdevlikeag6",
+    "local": false
+  },
+  {
     "id": "fasolki-ogorek-wasaty",
     "title": "Ogórek wąsaty",
     "artist": "Fasolki",
@@ -25823,6 +26314,35 @@
     ],
     "tracksCount": 1,
     "search": "fergiebiggirlsdontcry",
+    "local": false
+  },
+  {
+    "id": "fernando-daniel-prometo",
+    "title": "Prometo",
+    "artist": "Fernando Daniel",
+    "video": "TfYHI-UuoAI",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 217.7,
+    "gap": 13966.4676159853,
+    "year": "2023",
+    "artistOrigin": "PT",
+    "lastUpdate": "2024-07-21T00:11:32.766Z",
+    "realBpm": 143,
+    "previewStart": 78,
+    "previewEnd": 108,
+    "volume": 1,
+    "author": "Fernando Daniel",
+    "sourceUrl": "https://www.youtube.com/watch?v=TfYHI-UuoAI",
+    "tracks": [
+      {
+        "name": "Prometo",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fernandodanielprometo",
     "local": false
   },
   {
@@ -34509,6 +35029,31 @@
     "local": false
   },
   {
+    "id": "josh-groban-you-raise-me-up",
+    "title": "You Raise Me Up",
+    "artist": "Josh Groban",
+    "video": "aJxrX42WcjQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 55445.53571428572,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.767Z",
+    "realBpm": 118,
+    "volume": 0.61,
+    "author": "Diddlmaus30mg",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joshgrobanyouraisemeup",
+    "local": false
+  },
+  {
     "id": "jostars-tommycodajin-jojo-sono-chi-no-kioku-end-of-the-world",
     "title": "Jojo - Sono Chi no Kioku ~end of THE WORLD~",
     "artist": "JO☆STARS ~TOMMY,Coda,JIN~",
@@ -36039,6 +36584,32 @@
     "local": false
   },
   {
+    "id": "kane-brown-used-to-love-you-sober",
+    "title": "Used To Love You Sober",
+    "artist": "Kane Brown",
+    "video": "_8ecy55NhMo",
+    "language": [
+      "English"
+    ],
+    "bpm": 386.81,
+    "gap": 18320.753057056438,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.769Z",
+    "realBpm": 148,
+    "previewEnd": 181,
+    "volume": 0.72,
+    "author": "musiklover91",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kanebrownusedtoloveyousober",
+    "local": false
+  },
+  {
     "id": "kanye-west-father-stretch-my-hands-pt-1",
     "title": "Father Stretch My Hands Pt. 1",
     "artist": "Kanye West",
@@ -36061,6 +36632,38 @@
     ],
     "tracksCount": 1,
     "search": "kanyewestfatherstretchmyhandspt1",
+    "local": false
+  },
+  {
+    "id": "kanye-west-feat-dwele-flashing-lights",
+    "title": "Flashing Lights",
+    "artist": "Kanye West feat. Dwele",
+    "video": "9FoQ-7mrUIg",
+    "language": [
+      "English"
+    ],
+    "bpm": 362.51,
+    "gap": 21806.923946925603,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.911Z",
+    "edition": "[Duet]-Songs",
+    "genre": "Hip-Hop",
+    "realBpm": 90,
+    "volume": 0.84,
+    "author": "davsp99",
+    "tracks": [
+      {
+        "name": "Flashing Lights [DUET]",
+        "start": 24
+      },
+      {
+        "name": "Flashing Lights [DUET]",
+        "start": 24
+      }
+    ],
+    "tracksCount": 2,
+    "search": "kanyewestfeatdweleflashinglights",
     "local": false
   },
   {
@@ -37308,6 +37911,32 @@
     "local": false
   },
   {
+    "id": "kelly-clarkson-a-moment-like-this",
+    "title": "A Moment Like This",
+    "artist": "Kelly Clarkson",
+    "video": "S7b8ADhadJU",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.4,
+    "gap": 6525.30779753762,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.913Z",
+    "genre": "Pop",
+    "realBpm": 145,
+    "volume": 0.94,
+    "author": "pauldiddy",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonamomentlikethis",
+    "local": false
+  },
+  {
     "id": "kelly-clarkson-because-of-you",
     "title": "Because Of You",
     "artist": "Kelly Clarkson",
@@ -37357,6 +37986,32 @@
     ],
     "tracksCount": 1,
     "search": "kellyclarksonbehindthesehazeleyes",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-breakaway",
+    "title": "Breakaway",
+    "artist": "Kelly Clarkson",
+    "video": "r2QyLA5w3ps",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 16.25,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.915Z",
+    "genre": "Pop",
+    "realBpm": 160,
+    "volume": 0.84,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonbreakaway",
     "local": false
   },
   {
@@ -37435,6 +38090,32 @@
     ],
     "tracksCount": 1,
     "search": "kellyclarksonpeoplelikeus",
+    "local": false
+  },
+  {
+    "id": "kelly-clarkson-since-u-been-gone",
+    "title": "Since U Been Gone",
+    "artist": "Kelly Clarkson",
+    "video": "R7UrFYvl5TE",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7590,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:32.916Z",
+    "genre": "Pop",
+    "realBpm": 131,
+    "volume": 0.99,
+    "author": "LittleLex",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kellyclarksonsinceubeengone",
     "local": false
   },
   {
@@ -37600,6 +38281,33 @@
     ],
     "tracksCount": 1,
     "search": "kenyagracestrangers",
+    "local": false
+  },
+  {
+    "id": "kessoku-band-guitar-loneliness-and-blue-planet",
+    "title": "Guitar, Loneliness and Blue Planet",
+    "artist": "Kessoku Band",
+    "video": "SDk1RA4g8CA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 386,
+    "gap": 13989.637305699482,
+    "year": "2022",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-21T00:11:32.918Z",
+    "realBpm": 193,
+    "volume": 0.7,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=28549",
+    "tracks": [
+      {
+        "name": "Guitar, Loneliness and Blue Planet",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kessokubandguitarlonelinessandblueplanet",
     "local": false
   },
   {
@@ -41531,6 +42239,33 @@
     "local": false
   },
   {
+    "id": "lisa-crossing-field",
+    "title": "crossing field",
+    "artist": "LiSA",
+    "video": "h7Oi2h-vKFI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 357.85,
+    "gap": 10534.991896045829,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-21T00:11:33.059Z",
+    "genre": "Anime",
+    "realBpm": 179,
+    "volume": 0.8,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "name": "Crossing Field",
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lisacrossingfield",
+    "local": false
+  },
+  {
     "id": "lisa-gurenge",
     "title": "Gurenge",
     "artist": "LiSA",
@@ -44819,6 +45554,31 @@
     "local": false
   },
   {
+    "id": "mariah-carey-boyz-ii-men-one-sweet-day",
+    "title": "One Sweet Day",
+    "artist": "Mariah Carey & Boyz II Men",
+    "video": "UXxRyNvTPr8",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.96,
+    "gap": 22663.750586029066,
+    "year": "1995",
+    "lastUpdate": "2024-07-21T00:11:33.062Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.85,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mariahcareyboyziimenonesweetday",
+    "local": false
+  },
+  {
     "id": "mariah-carey-emotions",
     "title": "Emotions",
     "artist": "Mariah Carey",
@@ -46630,6 +47390,32 @@
     "local": false
   },
   {
+    "id": "michael-buble-home",
+    "title": "Home",
+    "artist": "Michael Bublé",
+    "video": "lbSOLBMUvIE",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.02,
+    "gap": 16068.98406374502,
+    "year": "2005",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-07-21T00:11:33.204Z",
+    "realBpm": 128,
+    "volume": 0.8,
+    "author": "pegasus1304",
+    "tracks": [
+      {
+        "name": "Home",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "michaelbublehome",
+    "local": false
+  },
+  {
     "id": "michael-buble-its-beginning-to-look-a-lot-like-christmas",
     "title": "It's Beginning to Look a lot Like Christmas",
     "artist": "Michael Bublé",
@@ -47896,6 +48682,32 @@
     "local": false
   },
   {
+    "id": "minami-kawaki-wo-ameku",
+    "title": "Kawaki wo Ameku",
+    "artist": "Minami",
+    "video": "Ua5UARWRYLA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 258,
+    "gap": 9.76744186046517,
+    "year": "2019",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-21T00:11:33.204Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "tracks": [
+      {
+        "name": "Crying for Rain",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "minamikawakiwoameku",
+    "local": false
+  },
+  {
     "id": "miracle-of-sound-valhalla-calling",
     "title": "Valhalla Calling",
     "artist": "Miracle Of Sound",
@@ -48523,6 +49335,33 @@
     ],
     "tracksCount": 2,
     "search": "moulinrougecomewhatmay",
+    "local": false
+  },
+  {
+    "id": "mrs-green-apple-inferno",
+    "title": "Inferno",
+    "artist": "Mrs. GREEN APPLE",
+    "video": "JBqxVX_LXvk",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 368,
+    "gap": 4350.978260869565,
+    "year": "2019",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-21T00:11:33.352Z",
+    "genre": "J-rock",
+    "realBpm": 185,
+    "volume": 1,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "name": "Inferno",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mrsgreenappleinferno",
     "local": false
   },
   {
@@ -49780,6 +50619,31 @@
     ],
     "tracksCount": 1,
     "search": "natashafarrowcallingtothenight",
+    "local": false
+  },
+  {
+    "id": "nathan-evans-wellerman",
+    "title": "Wellerman",
+    "artist": "Nathan Evans",
+    "video": "qP-7GNoDJ5c",
+    "language": [
+      "English"
+    ],
+    "bpm": 384.1,
+    "gap": 1974.639416818537,
+    "year": "2021",
+    "lastUpdate": "2024-07-21T00:11:33.497Z",
+    "genre": "Shanty",
+    "realBpm": 192,
+    "volume": 0.79,
+    "author": "DoubleDee73",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nathanevanswellerman",
     "local": false
   },
   {
@@ -51763,6 +52627,31 @@
     ],
     "tracksCount": 1,
     "search": "nosecretsthatswhatgirlsdo",
+    "local": false
+  },
+  {
+    "id": "noah-kahan-stick-season",
+    "title": "Stick Season",
+    "artist": "Noah Kahan",
+    "video": "JKrDdsgXuso",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 15833.050847457627,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:33.646Z",
+    "realBpm": 118,
+    "volume": 0.8,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "noahkahanstickseason",
     "local": false
   },
   {
@@ -54121,6 +55010,33 @@
     ],
     "tracksCount": 1,
     "search": "pastorasolerquedateconmigo",
+    "local": false
+  },
+  {
+    "id": "patrice-rushen-forget-me-nots",
+    "title": "Forget Me Nots",
+    "artist": "Patrice Rushen",
+    "video": "jtMHsNhQBvI",
+    "language": [
+      "English"
+    ],
+    "bpm": 227.06,
+    "gap": 21476.006297559696,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:33.769Z",
+    "genre": "Funk",
+    "realBpm": 114,
+    "volume": 0.75,
+    "author": "Leroidukitch",
+    "tracks": [
+      {
+        "name": "Forget Me Nots",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "patricerushenforgetmenots",
     "local": false
   },
   {
@@ -57797,6 +58713,32 @@
     "local": false
   },
   {
+    "id": "rascal-flatts-bless-the-broken-road",
+    "title": "Bless The Broken Road",
+    "artist": "Rascal Flatts",
+    "video": "8-vZlrBYLSU",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.6,
+    "gap": 13228.516320474777,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:33.771Z",
+    "genre": "Country",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rascalflattsblessthebrokenroad",
+    "local": false
+  },
+  {
     "id": "rascal-flatts-life-is-a-highway",
     "title": "Life Is A Highway",
     "artist": "Rascal Flatts",
@@ -57820,6 +58762,31 @@
     ],
     "tracksCount": 1,
     "search": "rascalflattslifeisahighway",
+    "local": false
+  },
+  {
+    "id": "rascal-flatts-what-hurts-the-most",
+    "title": "What Hurts The Most",
+    "artist": "Rascal Flatts",
+    "video": "dyMPc2n1cyc",
+    "language": [
+      "English"
+    ],
+    "bpm": 375,
+    "gap": 15180,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:33.772Z",
+    "realBpm": 136,
+    "volume": 0.63,
+    "author": "Su-Metal",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rascalflattswhathurtsthemost",
     "local": false
   },
   {
@@ -59289,10 +60256,10 @@
       "English"
     ],
     "bpm": 312.02,
-    "gap": 71990.44933017115,
+    "gap": 72040.44933017115,
     "year": "2011",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-08T17:02:47.929Z",
+    "lastUpdate": "2024-07-21T00:11:33.774Z",
     "genre": "Pop",
     "realBpm": 156,
     "volume": 0.86,
@@ -59609,10 +60576,10 @@
       "English"
     ],
     "bpm": 288,
-    "gap": 65090.416666666664,
+    "gap": 65140.416666666664,
     "year": "2006",
     "artistOrigin": "US",
-    "lastUpdate": "2024-04-28T19:13:00.026Z",
+    "lastUpdate": "2024-07-21T00:11:33.776Z",
     "genre": "Pop",
     "realBpm": 144,
     "volume": 0.73,
@@ -60944,6 +61911,32 @@
     ],
     "tracksCount": 1,
     "search": "sabrinacarpenternonsense",
+    "local": false
+  },
+  {
+    "id": "sabrina-carpenter-please-please-please",
+    "title": "Please Please Please",
+    "artist": "Sabrina Carpenter",
+    "video": "cF1Na4AIecM",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 76612.69158878505,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:33.777Z",
+    "videoGap": 60,
+    "realBpm": 107,
+    "volume": 0.62,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sabrinacarpenterpleasepleaseplease",
     "local": false
   },
   {
@@ -64463,6 +65456,33 @@
     "local": false
   },
   {
+    "id": "slander-feat-dylan-matthews-love-is-gone",
+    "title": "Love is Gone",
+    "artist": "SLANDER feat. Dylan Matthews",
+    "video": "mv23MnaNvGM",
+    "language": [
+      "English"
+    ],
+    "bpm": 140,
+    "gap": 13305.714285714286,
+    "year": "2019",
+    "lastUpdate": "2024-07-21T00:11:33.778Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 0.8,
+    "author": "lilsilly61",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=28993",
+    "tracks": [
+      {
+        "name": "Love is Gone",
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slanderfeatdylanmatthewsloveisgone",
+    "local": false
+  },
+  {
     "id": "slawomir-milosc-w-zakopanem",
     "title": "Milosc w Zakopanem",
     "artist": "Slawomir",
@@ -67119,9 +68139,10 @@
       "Korean"
     ],
     "bpm": 290.2,
-    "gap": 29521.91867677464,
+    "gap": 29571.91867677464,
     "year": "2014",
-    "lastUpdate": "2024-05-08T16:47:33.340Z",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-07-21T00:11:33.918Z",
     "genre": "K-Pop",
     "realBpm": 144,
     "previewStart": 84,
@@ -67135,6 +68156,34 @@
     ],
     "tracksCount": 1,
     "search": "taeyangeyesnoselips",
+    "local": false
+  },
+  {
+    "id": "taeyang-wedding-dress",
+    "title": "Wedding Dress",
+    "artist": "Taeyang",
+    "video": "qIt6KCwlFPw",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 268.22,
+    "gap": 49243.36365669972,
+    "year": "2009",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-07-21T00:11:34.057Z",
+    "genre": "K-Pop",
+    "realBpm": 134,
+    "volume": 0.7,
+    "author": "davidlink",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=8453",
+    "tracks": [
+      {
+        "name": "Wedding Dress",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taeyangweddingdress",
     "local": false
   },
   {
@@ -67345,6 +68394,33 @@
     ],
     "tracksCount": 1,
     "search": "tatemcraegreedy",
+    "local": false
+  },
+  {
+    "id": "tatsuya-kitani-ao-no-sumika",
+    "title": "Ao no Sumika",
+    "artist": "Tatsuya Kitani",
+    "video": "gcgKUcJKxIs",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 304.5,
+    "gap": 8668.778325123152,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-21T00:11:34.197Z",
+    "genre": "Pop",
+    "realBpm": 152,
+    "volume": 0.86,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "name": "Where our Blue is",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tatsuyakitaniaonosumika",
     "local": false
   },
   {
@@ -67951,6 +69027,34 @@
     ],
     "tracksCount": 1,
     "search": "technotronicfeatfellypumpupthejam",
+    "local": false
+  },
+  {
+    "id": "ted-gardestad-satellit",
+    "title": "Satellit",
+    "artist": "Ted Gärdestad",
+    "video": "AcMUULoT_jk",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 221.58,
+    "gap": 25914.56539398863,
+    "year": "1979",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-07-21T00:11:34.198Z",
+    "edition": "ESC 1979",
+    "realBpm": 108,
+    "volume": 0.81,
+    "author": "Tracks",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168173",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=27105",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tedgardestadsatellit",
     "local": false
   },
   {
@@ -75868,6 +76972,64 @@
     ],
     "tracksCount": 2,
     "search": "willferrellrachelmcadamsjajadingdong",
+    "local": false
+  },
+  {
+    "id": "will-smith-men-in-black",
+    "title": "Men In Black",
+    "artist": "Will Smith",
+    "video": "fiBLgEx6svA",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 16760,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:34.339Z",
+    "genre": "Hip-Hop",
+    "realBpm": 108,
+    "volume": 0.83,
+    "author": "Usdx",
+    "tracks": [
+      {
+        "name": "Men In Black",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "willsmithmeninblack",
+    "local": false
+  },
+  {
+    "id": "will-smith-wild-wild-west",
+    "title": "Wild Wild West",
+    "artist": "Will Smith",
+    "video": "_zXKtfKnfT8",
+    "language": [
+      "English"
+    ],
+    "bpm": 213.78,
+    "gap": 2097.681728880157,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-21T00:11:34.347Z",
+    "edition": "[Duet]-Songs",
+    "genre": "Hip-Hop",
+    "realBpm": 107,
+    "volume": 0.85,
+    "author": "MasterChristian",
+    "tracks": [
+      {
+        "name": "Wild Wild West [DUET]",
+        "start": 42
+      },
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 2,
+    "search": "willsmithwildwildwest",
     "local": false
   },
   {
