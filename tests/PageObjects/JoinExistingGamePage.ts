@@ -8,7 +8,7 @@ export class JoinExistingGamePagePO {
   ) {}
 
   public async confirmWifiConnection() {
-    await this.page.getByTestId('confirm-wifi-connection').click();
+    // await this.page.getByTestId('confirm-wifi-connection').click();
   }
 
   public get gameCodeInput() {

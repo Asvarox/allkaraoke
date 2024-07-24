@@ -86,11 +86,13 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
 
   return isVisible ? (
     <>
-      <ConfirmWifiModal
-        onClose={() => {
-          firstInputRef.current?.focus();
-        }}
-      />
+      {roomId?.startsWith('p') && (
+        <ConfirmWifiModal
+          onClose={() => {
+            firstInputRef.current?.focus();
+          }}
+        />
+      )}
       <Form onSubmit={handleConnect}>
         {!disabled && (
           <GCInput

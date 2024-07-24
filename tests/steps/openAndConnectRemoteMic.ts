@@ -16,7 +16,8 @@ export async function openRemoteMic(page: Page, context: BrowserContext, browser
 
   const serverUrl = await page.getByTestId('server-link-input').inputValue();
   await remoteMic.goto(serverUrl);
-  await remoteMic.getByTestId('confirm-wifi-connection').click();
+
+  // await remoteMic.getByTestId('confirm-wifi-connection').click();
 
   return initialiseRemoteMic(remoteMic, context, browser);
 }
@@ -54,7 +55,7 @@ export async function openAndConnectRemoteMicWithCode(page: Page, browser: Brows
     await remoteMic.goto('/?e2e-test');
 
     await pages.landingPage.joinExistingGame();
-    await remoteMic.getByTestId('confirm-wifi-connection').click();
+    // await remoteMic.getByTestId('confirm-wifi-connection').click();
     await remoteMic.getByTestId('game-code-input').fill(gameCode);
 
     await remoteMic.getByTestId('player-name-input').fill(name);
