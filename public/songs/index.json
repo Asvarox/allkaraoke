@@ -3004,6 +3004,33 @@
     "local": false
   },
   {
+    "id": "alicia-keys-if-i-aint-got-you",
+    "title": "If I Ain’t Got You",
+    "artist": "Alicia Keys",
+    "video": "Ju8Hr50Ckwk",
+    "language": [
+      "English"
+    ],
+    "bpm": 237,
+    "gap": 7787.341772151899,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-23T00:10:52.068Z",
+    "genre": "Contemporary R&B, Soul",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "fizzypop109",
+    "tracks": [
+      {
+        "name": "If I ain't got you",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "aliciakeysifiaintgotyou",
+    "local": false
+  },
+  {
     "id": "alicia-keys-no-one",
     "title": "No one",
     "artist": "Alicia Keys",
@@ -11594,6 +11621,33 @@
     "local": false
   },
   {
+    "id": "bowling-for-soup-1985",
+    "title": "1985",
+    "artist": "Bowling For Soup",
+    "video": "K38xNqZvBJI",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.96,
+    "gap": -50,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-23T00:10:52.078Z",
+    "genre": "Rock",
+    "realBpm": 146,
+    "volume": 0.85,
+    "author": "zwiebel1000",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=2283",
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bowlingforsoup1985",
+    "local": false
+  },
+  {
     "id": "bowling-for-soup-phineas-and-ferb-theme-song",
     "title": "Phineas and Ferb Theme Song",
     "artist": "Bowling For Soup",
@@ -11995,6 +12049,34 @@
     ],
     "tracksCount": 1,
     "search": "bridgitmendlerreadyornot",
+    "local": false
+  },
+  {
+    "id": "bring-me-the-horizon-follow-you",
+    "title": "Follow You",
+    "artist": "Bring Me The Horizon",
+    "video": "RqQKhSzThyc",
+    "language": [
+      "English"
+    ],
+    "bpm": 356.08,
+    "gap": 20817.991237924063,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-07-23T00:10:52.079Z",
+    "genre": "Rock",
+    "realBpm": 90,
+    "volume": 0.88,
+    "author": "Lazy157",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=146279",
+    "sourceUrl": "https://www.youtube.com/watch?v=RqQKhSzThyc",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bringmethehorizonfollowyou",
     "local": false
   },
   {
@@ -15087,6 +15169,32 @@
     ],
     "tracksCount": 1,
     "search": "chappellroanredwinesupernova",
+    "local": false
+  },
+  {
+    "id": "charlie-puth-how-long",
+    "title": "How Long",
+    "artist": "Charlie Puth",
+    "video": "CwfoyVa980U",
+    "language": [
+      "English"
+    ],
+    "bpm": 328.58,
+    "gap": 6635.678373607645,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-23T00:10:52.082Z",
+    "genre": "Pop",
+    "realBpm": 110,
+    "volume": 0.8,
+    "author": "Bad_Gamer39",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "charlieputhhowlong",
     "local": false
   },
   {
@@ -42932,6 +43040,33 @@
     "local": false
   },
   {
+    "id": "los-bunkers-llueve-sobre-la-ciudad",
+    "title": "Llueve sobre la ciudad",
+    "artist": "Los Bunkers",
+    "video": "5OuFnuhXUBc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 218.96,
+    "gap": 22460.005213573586,
+    "year": "2006",
+    "artistOrigin": "CL",
+    "lastUpdate": "2024-07-23T00:10:52.703Z",
+    "genre": "Rock",
+    "videoGap": 8,
+    "realBpm": 112,
+    "volume": 1,
+    "tracks": [
+      {
+        "name": "Llueve Sobre La Ciudad",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "losbunkerslluevesobrelaciudad",
+    "local": false
+  },
+  {
     "id": "los-bunkers-nada-nuevo-bajo-el-sol",
     "title": "Nada nuevo bajo el sol",
     "artist": "Los Bunkers",
@@ -64982,6 +65117,32 @@
     "local": false
   },
   {
+    "id": "sim-the-rumbling",
+    "title": "The Rumbling",
+    "artist": "SiM",
+    "video": "OBqw818mQ1E",
+    "language": [
+      "English"
+    ],
+    "bpm": 290.09,
+    "gap": 47.670550518804475,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-07-23T00:10:52.704Z",
+    "genre": "Metal",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "b1991",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "simtherumbling",
+    "local": false
+  },
+  {
     "id": "simon-garfunkel-bridge-over-troubled-water",
     "title": "Bridge Over Troubled Water",
     "artist": "Simon & Garfunkel",
@@ -65946,6 +66107,32 @@
     "local": false
   },
   {
+    "id": "soda-stereo-cuando-pase-el-temblor",
+    "title": "Cuando Pase el Temblor",
+    "artist": "Soda Stereo",
+    "video": "UEchfRz0D8Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 340,
+    "gap": 25500.29411764706,
+    "year": "1985",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-07-23T00:10:52.839Z",
+    "genre": "Rock",
+    "realBpm": 94,
+    "volume": 0.79,
+    "author": "Spys4Darwin",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sodastereocuandopaseeltemblor",
+    "local": false
+  },
+  {
     "id": "soda-stereo-de-musica-ligera",
     "title": "De música ligera",
     "artist": "Soda Stereo",
@@ -66695,6 +66882,30 @@
     ],
     "tracksCount": 1,
     "search": "steviewonderijustcalledtosayiloveyou",
+    "local": false
+  },
+  {
+    "id": "sting-shape-of-my-heart",
+    "title": "Shape of My Heart",
+    "artist": "Sting",
+    "video": "QK-Z1K67uaA",
+    "language": [
+      "English"
+    ],
+    "bpm": 336,
+    "gap": 23311.85714285714,
+    "year": "1993",
+    "lastUpdate": "2024-07-23T00:10:52.840Z",
+    "realBpm": 84,
+    "volume": 0.85,
+    "tracks": [
+      {
+        "name": "Shape of my Heart",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "stingshapeofmyheart",
     "local": false
   },
   {
@@ -72058,6 +72269,34 @@
     "local": false
   },
   {
+    "id": "the-strokes-the-adults-are-talking",
+    "title": "The Adults Are Talking",
+    "artist": "The Strokes",
+    "video": "ewOPQZZn4SY",
+    "language": [
+      "English"
+    ],
+    "bpm": 330.04,
+    "gap": 21120.121197430613,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-23T00:10:52.969Z",
+    "genre": "New wave, indie rock, post-punk",
+    "realBpm": 165,
+    "volume": 0.87,
+    "author": "rsa_skala",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=rsa_skala",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Strokes&cancion=The%20Adults%20Are%20Talking",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thestrokestheadultsaretalking",
+    "local": false
+  },
+  {
     "id": "the-temptations-my-girl",
     "title": "My Girl",
     "artist": "The Temptations",
@@ -72852,6 +73091,33 @@
     ],
     "tracksCount": 1,
     "search": "thirtysecondstomarsabeautifullie",
+    "local": false
+  },
+  {
+    "id": "thirty-seconds-to-mars-attack",
+    "title": "Attack",
+    "artist": "Thirty Seconds to Mars",
+    "video": "acIU7yxzJ70",
+    "language": [
+      "English"
+    ],
+    "bpm": 262.56,
+    "gap": 8921.663619744058,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-07-23T00:10:52.971Z",
+    "realBpm": 175,
+    "volume": 1,
+    "author": "slayerkitaro",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=6031",
+    "sourceUrl": "https://youtu.be/acIU7yxzJ70",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thirtysecondstomarsattack",
     "local": false
   },
   {
