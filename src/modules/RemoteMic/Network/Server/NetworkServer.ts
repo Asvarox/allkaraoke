@@ -104,6 +104,8 @@ export class NetworkServer {
               events.playerChangeRequested.dispatch(event.id, event.playerNumber);
             } else if (type === 'get-game-input-lag-request') {
               sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });
+            } else if (type === 'remove-player') {
+              this.transport?.removePlayer(event.id);
             } else if (type === 'set-game-input-lag-request') {
               InputLagSetting.set(event.value);
               sender.send({ t: 'get-game-input-lag-response', value: InputLagSetting.get() });

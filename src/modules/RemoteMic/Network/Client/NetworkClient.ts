@@ -6,14 +6,15 @@ import { PeerJSClientTransport } from 'modules/RemoteMic/Network/Client/Transpor
 import { WebSocketClientTransport } from 'modules/RemoteMic/Network/Client/Transport/WebSocketClient';
 import { ClientTransport } from 'modules/RemoteMic/Network/Client/Transport/interface';
 import {
+  keyStrokes,
   NetworkGetGameInputLagResponseMessage,
   NetworkGetMicrophoneLagResponseMessage,
   NetworkMessages,
+  NetworkRemovePlayerMessage,
   NetworkRequestMicSelectMessage,
   NetworkSongListMessage,
   NetworkSubscribeMessage,
   NetworkUnsubscribeMessage,
-  keyStrokes,
 } from 'modules/RemoteMic/Network/messages';
 import sendMessage from 'modules/RemoteMic/Network/sendMessage';
 import { getPingTime } from 'modules/RemoteMic/Network/utils';
@@ -91,7 +92,6 @@ export class NetworkClient {
           this.connect(lcRoomId, name, silent);
           return;
         }
-        console.log('closed connection :o', reason, event);
         global.removeEventListener('beforeunload', this.disconnect);
 
         if (this.reconnecting) {
@@ -109,10 +109,13 @@ export class NetworkClient {
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.stopMonitoring();
 
-        if (!this.reconnecting && this.connected) {
-          this.reconnecting = true;
-          setTimeout(() => this.reconnect(lcRoomId, name), 1500);
+        if (reason !== 'player-removed') {
+          if (!this.reconnecting && this.connected) {
+            this.reconnecting = true;
+            setTimeout(() => this.reconnect(lcRoomId, name), 1500);
+          }
         }
+
         this.connected = false;
       },
       console.warn,
@@ -246,6 +249,9 @@ export class NetworkClient {
       { t: 'set-microphone-lag-request', value },
       'get-microphone-lag-response',
     );
+
+  public removePlayer = (playerId: string) =>
+    this.sendEvent<NetworkRemovePlayerMessage>('remove-player', { id: playerId });
 
   private sendEvent = <T extends NetworkMessages>(type: T['t'], payload?: Parameters<typeof sendMessage<T>>[2]) => {
     if (!this.transport?.isConnected()) {

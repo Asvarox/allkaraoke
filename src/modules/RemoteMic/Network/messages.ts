@@ -100,6 +100,11 @@ export interface NetworkSelectSongMessage {
   id: string;
 }
 
+export interface NetworkRemovePlayerMessage {
+  t: 'remove-player';
+  id: string;
+}
+
 export interface NetworkSetGameInputLagRequestMessage {
   t: 'set-game-input-lag-request';
   value: number;
@@ -174,4 +179,5 @@ export type NetworkMessages =
   | NetworkGetMicrophoneLagResponseMessage
   | NetworkSetMicrophoneLagRequestMessage
   | NetworkStyleChangeMessage
+  | NetworkRemovePlayerMessage
   | NetworkNewFrequencyMessage;
