@@ -95,6 +95,10 @@ export class WebSocketServerTransport extends Listener<[NetworkMessages, SenderI
   public getCurrentPing = () => {
     return this.pinging ? Math.max(this.latency, getPingTime() - this.pingStart) : this.latency;
   };
+
+  public removePlayer(playerId: string) {
+    this.connection?.send(pack({ t: 'remove-player', id: playerId }));
+  }
 }
 
 type callback = (data: any) => void;

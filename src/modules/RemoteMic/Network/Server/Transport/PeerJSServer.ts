@@ -7,11 +7,13 @@ import { NetworkMessages } from 'modules/RemoteMic/Network/messages';
 import RemoteMicManager from 'modules/RemoteMic/RemoteMicManager';
 import Listener from 'modules/utils/Listener';
 import peerJSOptions from 'modules/utils/peerJSOptions';
-import { Peer } from 'peerjs';
+import { DataConnection, Peer } from 'peerjs';
 
 export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInterface]> implements ServerTransport {
   public readonly name = 'PeerJS';
   private peer: Peer | null = null;
+
+  private connectedPeers: Record<string, DataConnection> = {};
 
   public connect(
     roomId: string,
@@ -25,6 +27,7 @@ export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInte
       console.log('My peer ID is: ' + id);
     });
     this.peer.on('connection', (conn) => {
+      this.connectedPeers[conn.peer] = conn;
       conn.on('data', (data: NetworkMessages) => {
         this.onUpdate(data, conn);
       });
@@ -35,11 +38,13 @@ export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInte
       // @ts-expect-error `iceStateChanged` is not included in TS definitions
       conn.on('iceStateChanged', (state) => {
         if (state === 'disconnected' || state === 'closed') {
+          this.connectedPeers[conn.peer] = conn;
           this.onUpdate({ t: 'unregister' }, conn);
         }
       });
 
       conn.on('close', () => {
+        delete this.connectedPeers[conn.peer];
         RemoteMicManager.removeRemoteMic(conn.peer);
       });
     });
@@ -52,4 +57,8 @@ export class PeerJSServerTransport extends Listener<[NetworkMessages, SenderInte
   public disconnect = () => {
     this.peer?.disconnect();
   };
+
+  public removePlayer(playerId: string) {
+    this.connectedPeers[playerId]?.close();
+  }
 }

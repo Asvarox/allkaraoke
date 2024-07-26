@@ -28,4 +28,6 @@ export interface ServerTransport extends Listener<[NetworkMessages, SenderInterf
   disconnect(): void;
 
   getCurrentPing(): number;
+
+  removePlayer(playerId: string): void;
 }
