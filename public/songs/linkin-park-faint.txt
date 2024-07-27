@@ -6,14 +6,14 @@
 #VIDEO:v=LYU-8IFcDPw
 #GENRE:Nu Metal
 #LANGUAGE:English
-#GAP:28370
+#GAP:29020
 #ALLKARAOKE_ID:linkin-park-faint
+#ALLKARAOKE_LASTUPDATE:2024-07-27T00:14:59.068Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint
-- -17 1
-- 1
+#ALLKARAOKE_VOLUME:0,78
 : 18 7 -8 I 
 : 27 2 -6 am
 : 30 1 -8 ~ 
@@ -309,6 +309,7 @@ F 1065 3 -4 all
 F 1069 1 -4 that 
 F 1071 3 -4 I've 
 F 1075 6 -4 got
+- 1081 1096
 - 1096
 : 1114 6 8 I
 : 1121 5 6 ~ 
@@ -362,7 +363,7 @@ F 1075 6 -4 got
 : 1350 7 8 be 
 : 1358 3 8 ig
 : 1363 33 8 nored
-- 1397
+- 1396
 : 1404 20 8 Now 
 : 1434 7 8 hear 
 : 1442 8 8 me 
@@ -399,7 +400,7 @@ F 1075 6 -4 got
 : 1631 2 8 it 
 : 1634 3 8 or 
 : 1638 7 8 not
-- 1646
+- 1645
 * 1658 7 -4 I
 * 1666 4 -6 ~ 
 * 1673 7 -4 can't 
@@ -503,7 +504,7 @@ F 1075 6 -4 got
 * 2215 1 8 won't
 * 2217 8 9 ~ 
 * 2227 64 8 heal
-- 2292
+- 2291
 : 2302 2 8 Don't 
 : 2306 3 8 turn 
 : 2310 3 6 your 
