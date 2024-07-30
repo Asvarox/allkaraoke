@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { test } from '@playwright/test';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
 import { connectRemoteMic, openRemoteMic } from './steps/openAndConnectRemoteMic';
@@ -32,12 +32,12 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
 
   await test.step('Song list is available without connecting', async () => {
-    await remoteMic._page.getByTestId('menu-song-list').click();
-    await expect(remoteMic._page.getByTestId(songID)).toBeVisible();
+    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteSongListPage.expectSongToBeVisible(songID);
   });
 
   await test.step('Song list doesnt contain removed songs after connecting', async () => {
-    await remoteMic._page.getByTestId('menu-microphone').click();
+    await remoteMic.remoteSongListPage.goToMicrophonePage();
     await connectRemoteMic(remoteMic._page);
 
     await pages.smartphonesConnectionPage.goToMainMenu();
@@ -45,7 +45,7 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
     await pages.manageSongsPage.goToEditSongs();
     await pages.editSongsPage.hideSong(songID);
     await pages.editSongsPage.expectSongToBeHidden(songID);
-    await expect(remoteMic._page.getByTestId(songID)).not.toBeVisible();
+    await remoteMic.remoteSongListPage.expectSongNotToBeVisible(songID);
   });
 
   await test.step('Song list contains custom songs after connecting', async () => {
@@ -58,7 +58,7 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
     await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
     await pages.editSongsPage.disagreeToShareAddSongs();
     await pages.editSongsPage.expectSongToBeVisible(convertedSongID);
-    await remoteMic._page.getByTestId('menu-song-list').click();
-    await expect(remoteMic._page.getByTestId(convertedSongID)).toBeVisible();
+    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteSongListPage.expectSongToBeVisible(convertedSongID);
   });
 });
