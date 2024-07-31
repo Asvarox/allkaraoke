@@ -16,47 +16,46 @@ test('Should properly reset data settings', async ({ browser, page }) => {
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('remote-mics').click();
+  await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, name);
 
   await remoteMic._page.reload();
+  await remoteMic.remoteMicMainPage.expectPlayerNameToBe(name);
+  await remoteMic.remoteMicMainPage.goToSettings();
+  await remoteMic.remoteMicSettingsPage.goToMicrophoneSettings();
 
-  await expect(remoteMic._page.getByTestId('player-name-input')).toHaveValue(name);
+  const remoteMicID = await remoteMic.remoteMicSettingsPage.remoteMicID.textContent();
 
-  await remoteMic._page.getByTestId('menu-settings').click();
-  await remoteMic._page.getByTestId('microphone-settings').click();
-  const remoteMicId = await remoteMic._page.getByTestId('remote-mic-id').textContent();
-
-  await remoteMic._page.getByTestId('reset-microphone').click();
-  await expect(remoteMic._page.getByTestId('player-name-input')).toHaveValue('');
-  await remoteMic._page.getByTestId('menu-settings').click();
-  await expect(remoteMic._page.getByTestId('remote-mic-id')).not.toContainText(remoteMicId!);
+  await remoteMic.remoteMicSettingsPage.resetMicrophone();
+  await remoteMic.remoteMicMainPage.expectPlayerNameToBe('');
+  await remoteMic.remoteMicMainPage.goToSettings();
+  await expect(remoteMic.remoteMicSettingsPage.remoteMicID).not.toContainText(remoteMicID!);
 });
 
 test('Should allow changing microphone input lag', async ({ browser, page, context }) => {
+  const numericInputValue = '25';
+
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await page.getByTestId('remote-mics').click();
+  await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('changing microphone lag is visible', async () => {
-    await remoteMic._page.getByTestId('menu-settings').click();
-    await remoteMic._page.getByTestId('microphone-settings').click();
-    await remoteMic._page.getByTestId('microphone-delay').getByTestId('numeric-input-up').click();
-    await expect(remoteMic._page.getByTestId('microphone-delay').getByTestId('numeric-input-value')).toContainText(
-      '25',
-    );
+    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicSettingsPage.goToMicrophoneSettings();
+    await remoteMic.remoteMicSettingsPage.increaseMicInputDelay();
+    await remoteMic.remoteMicSettingsPage.expectMicInputDelayToBe(numericInputValue);
   });
+
   await test.step('the change is preserved after reload', async () => {
     await remoteMic._page.reload();
     await connectRemoteMic(remoteMic._page);
-    await remoteMic._page.getByTestId('menu-settings').click();
-    await remoteMic._page.getByTestId('microphone-settings').click();
-    await expect(remoteMic._page.getByTestId('microphone-delay').getByTestId('numeric-input-value')).toContainText(
-      '25',
-    );
+
+    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicSettingsPage.goToMicrophoneSettings();
+    await remoteMic.remoteMicSettingsPage.expectMicInputDelayToBe(numericInputValue);
   });
 });
 
