@@ -1,3 +1,4 @@
+import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class RemoteMicMainPagePO {
@@ -15,7 +16,15 @@ export class RemoteMicMainPagePO {
     await this.playerNameInput.fill(name);
   }
 
+  public async expectPlayerNameToBe(playerName: string) {
+    await expect(this.playerNameInput).toHaveValue(playerName);
+  }
+
   public async goToSongList() {
     await this.page.getByTestId('menu-song-list').click();
+  }
+
+  public async goToSettings() {
+    await this.page.getByTestId('menu-settings').click();
   }
 }
