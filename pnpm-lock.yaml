@@ -67,7 +67,7 @@ importers:
         version: 4.17.21
       material-react-table:
         specifier: ^2.7.0
-        version: 2.7.0(4mnylyjngh6s5gzjatpdwhbapu)
+        version: 2.7.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/icons-material@5.16.0(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mui/x-date-pickers@7.9.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(dayjs@1.11.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       msgpackr:
         specifier: ^1.10.1
         version: 1.10.1
@@ -139,11 +139,11 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(@types/react@18.2.73)(react@18.2.0)
       '@playwright/experimental-ct-react':
-        specifier: 1.45.1
-        version: 1.45.1(@types/node@20.11.10)(terser@5.17.7)(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7))
+        specifier: 1.45.3
+        version: 1.45.3(@types/node@20.11.10)(terser@5.17.7)(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7))
       '@playwright/test':
-        specifier: 1.45.1
-        version: 1.45.1
+        specifier: 1.45.3
+        version: 1.45.3
       '@remotion/cli':
         specifier: ^4.0.84
         version: 4.0.84(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -310,11 +310,11 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       playwright:
-        specifier: ^1.45.1
-        version: 1.45.1
+        specifier: ^1.45.3
+        version: 1.45.3
       playwright-core:
-        specifier: ^1.45.1
-        version: 1.45.1
+        specifier: ^1.45.3
+        version: 1.45.3
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -2383,17 +2383,17 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@playwright/experimental-ct-core@1.45.1':
-    resolution: {integrity: sha512-/QuzNWJaKTVpa6hkZgjrtNyNawUWXdZ6+iafUEy0hs8Kq9bVEfXlTetIjUHWmF/sCW6MEF+pcTWyHj51rQMatw==}
+  '@playwright/experimental-ct-core@1.45.3':
+    resolution: {integrity: sha512-uYcWBxRPu2G2Mj2e+XUxRBzRNnG/Yz0A5DVWFewiG3qEfC92MaGYGxmzKeFeU9NcMA2fWwaqB3XWHXjn9qSM5Q==}
     engines: {node: '>=18'}
 
-  '@playwright/experimental-ct-react@1.45.1':
-    resolution: {integrity: sha512-kf9GcPGQ4cmhFjjx6+WPvuy6lTCpuHXsKGAEOyEo9+oPZkSZ/x7kC+mGURCA0yZoH7tCBWG3SLFNmoe5Q+nA0A==}
+  '@playwright/experimental-ct-react@1.45.3':
+    resolution: {integrity: sha512-cEgiZ2+DqVCeFJWJdHgOUwhlEof41Rg1GX48FtMX/xrjAnxs2ccqqAXMILD+mVV1ftsC2jeS1EiRLoAmf8QXgA==}
     engines: {node: '>=18'}
     hasBin: true
 
-  '@playwright/test@1.45.1':
-    resolution: {integrity: sha512-Wo1bWTzQvGA7LyKGIZc8nFSTFf2TkthGIFBR+QVNilvwouGzFd4PYukZe3rvf5PSqjHi1+1NyKSDZKcQWETzaA==}
+  '@playwright/test@1.45.3':
+    resolution: {integrity: sha512-UKF4XsBfy+u3MFWEH44hva1Q8Da28G6RFtR2+5saw+jgAFQV5yYnB1fu68Mz7fO+5GJF3wgwAIs0UelU8TxFrA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5951,13 +5951,13 @@ packages:
   pkg-types@1.1.3:
     resolution: {integrity: sha512-+JrgthZG6m3ckicaOB74TwQ+tBWsFl3qVQg7mN8ulwSOElJ7gBhKzj2VkCPnZ4NlF6kEquYU+RIYNVAvzd54UA==}
 
-  playwright-core@1.45.1:
-    resolution: {integrity: sha512-LF4CUUtrUu2TCpDw4mcrAIuYrEjVDfT1cHbJMfwnE2+1b8PZcFzPNgvZCvq2JfQ4aTjRCCHw5EJ2tmr2NSzdPg==}
+  playwright-core@1.45.3:
+    resolution: {integrity: sha512-+ym0jNbcjikaOwwSZycFbwkWgfruWvYlJfThKYAlImbxUgdWFO2oW70ojPm4OpE4t6TAo2FY/smM+hpVTtkhDA==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.45.1:
-    resolution: {integrity: sha512-Hjrgae4kpSQBr98nhCj3IScxVeVUixqj+5oyif8TdIn2opTCPEzqAqNMeK42i3cWDCVu9MI+ZsGWw+gVR4ISBg==}
+  playwright@1.45.3:
+    resolution: {integrity: sha512-QhVaS+lpluxCaioejDZ95l4Y4jSFCsBvl2UZkpeXlzxmqS+aABr5c82YmfMHrL6x27nvrvykJAFpkzT2eWdJww==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -6116,7 +6116,7 @@ packages:
   puppeteer@21.11.0:
     resolution: {integrity: sha512-9jTHuYe22TD3sNxy0nEIzC7ZrlRnDgeX3xPkbS7PnbdwYjl2o/z/YuCrRBwezdKpbTDTJ4VqIggzNyeRcKq3cg==}
     engines: {node: '>=16.13.2'}
-    deprecated: < 22.6.4 is no longer supported
+    deprecated: < 22.8.2 is no longer supported
     hasBin: true
 
   qrcode.react@3.1.0:
@@ -9864,10 +9864,10 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@playwright/experimental-ct-core@1.45.1(@types/node@20.11.10)(terser@5.17.7)':
+  '@playwright/experimental-ct-core@1.45.3(@types/node@20.11.10)(terser@5.17.7)':
     dependencies:
-      playwright: 1.45.1
-      playwright-core: 1.45.1
+      playwright: 1.45.3
+      playwright-core: 1.45.3
       vite: 5.2.9(@types/node@20.11.10)(terser@5.17.7)
     transitivePeerDependencies:
       - '@types/node'
@@ -9878,9 +9878,9 @@ snapshots:
       - sugarss
       - terser
 
-  '@playwright/experimental-ct-react@1.45.1(@types/node@20.11.10)(terser@5.17.7)(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7))':
+  '@playwright/experimental-ct-react@1.45.3(@types/node@20.11.10)(terser@5.17.7)(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7))':
     dependencies:
-      '@playwright/experimental-ct-core': 1.45.1(@types/node@20.11.10)(terser@5.17.7)
+      '@playwright/experimental-ct-core': 1.45.3(@types/node@20.11.10)(terser@5.17.7)
       '@vitejs/plugin-react': 4.2.1(vite@5.2.9(@types/node@20.11.10)(terser@5.17.7))
     transitivePeerDependencies:
       - '@types/node'
@@ -9893,9 +9893,9 @@ snapshots:
       - terser
       - vite
 
-  '@playwright/test@1.45.1':
+  '@playwright/test@1.45.3':
     dependencies:
-      playwright: 1.45.1
+      playwright: 1.45.3
 
   '@polka/url@1.0.0-next.24': {}
 
@@ -13504,8 +13504,8 @@ snapshots:
     dependencies:
       react: 18.2.0
 
-  material-react-table@2.7.0(4mnylyjngh6s5gzjatpdwhbapu):
-    dependencies:
+  ? material-react-table@2.7.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/icons-material@5.16.0(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mui/x-date-pickers@7.9.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(dayjs@1.11.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+  : dependencies:
       '@emotion/react': 11.11.4(@types/react@18.2.73)(react@18.2.0)
       '@emotion/styled': 11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0)
       '@mui/icons-material': 5.16.0(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(react@18.2.0)
@@ -14045,11 +14045,11 @@ snapshots:
       mlly: 1.7.1
       pathe: 1.1.2
 
-  playwright-core@1.45.1: {}
+  playwright-core@1.45.3: {}
 
-  playwright@1.45.1:
+  playwright@1.45.3:
     dependencies:
-      playwright-core: 1.45.1
+      playwright-core: 1.45.3
     optionalDependencies:
       fsevents: 2.3.2
 
