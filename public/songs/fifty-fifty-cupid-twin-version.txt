@@ -7,9 +7,9 @@
 #VIDEOGAP:7
 #GENRE:K-Pop
 #LANGUAGE:English
-#GAP:20620
+#GAP:20720
 #ALLKARAOKE_ID:fifty-fifty-cupid-twin-version
-#ALLKARAOKE_LASTUPDATE:2024-01-07T06:25:25.927Z
+#ALLKARAOKE_LASTUPDATE:2024-08-06T16:26:24.480Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_VOLUME:0,59
@@ -115,12 +115,12 @@ F 764 8 42 why?
 : 1556 4 25 he 
 : 1564 12 23 makes 
 : 1580 12 26 me 
-: 1596 12 28 feel 
+: 1596 12 28 feel
 - 1608
 : 1608 8 30 that 
 : 1620 16 33 love 
 : 1640 16 30 isn't 
-: 1660 12 28 real 
+: 1660 12 28 real
 - 1672
 : 1684 20 37 Cu
 * 1708 7 38 pid 
@@ -369,7 +369,7 @@ F 3848 4 1 -
 F 692 4 35 Oh 
 F 700 4 42 why, 
 F 708 4 35 oh 
-F 716 16 42 why, 
+F 716 16 42 why,
 - 732 740
 - 740
 : 772 4 42 I'm 
@@ -444,12 +444,12 @@ F 716 16 42 why,
 : 1556 4 25 he 
 : 1564 12 23 makes 
 : 1580 12 26 me 
-: 1596 12 28 feel 
+: 1596 12 28 feel
 - 1608
 : 1608 8 30 that 
 : 1620 16 33 love 
 : 1640 16 30 isn't 
-: 1660 12 28 real 
+: 1660 12 28 real
 - 1672
 : 1684 20 37 Cu
 * 1708 7 38 pid 
@@ -501,7 +501,7 @@ F 1780 4 1 -
 : 2412 4 31 find 
 : 2420 4 31 a 
 : 2428 4 30 lov
-: 2436 4 30 er 
+: 2436 4 30 er
 - 2440
 : 2440 7 30 that 
 : 2448 8 35 could 
