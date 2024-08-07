@@ -1,0 +1,418 @@
+#ARTIST:Bambie Thug
+#TITLE:Doomsday Blue
+#CREATOR:lava
+#BPM:387,6
+#YEAR:2023
+#VIDEO:v=UMq8ofCstMQ
+#GENRE:Electro-metal
+#LANGUAGE:English
+#GAP:13273,808049535604
+#EDITION:Esc 2024
+#ALLKARAOKE_ID:bambie-thug-doomsday-blue
+#ALLKARAOKE_LASTUPDATE:2024-08-07T20:58:27.126Z
+#ALLKARAOKE_ARTISTORIGIN:IE
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_VOLUME:0,91
+#MP3:Bambie Thug - Doomsday Blue (ESC 2024 Ireland).mp3
+#COVER:Bambie Thug - Doomsday Blue (ESC 2024 Ireland) [CO].jpg
+#BACKGROUND:Bambie Thug - Doomsday Blue (ESC 2024 Ireland) [BG].jpg
+F 26 5 6 Ava
+F 31 5 6 da 
+F 36 5 7 Ke
+F 41 5 7 davra 
+F 46 5 6 I 
+F 48 7 6 Speak 
+F 56 2 6 to 
+F 59 5 6 de
+F 64 6 6 stroy
+- 70
+F 71 2 6 The 
+F 74 4 6 feel
+F 78 4 6 ings 
+F 84 2 6 I 
+F 88 6 4 have 
+F 96 1 2 I 
+F 98 4 4 can
+F 102 4 6 not 
+F 107 10 7 avoid
+- 117
+F 120 2 7 Through 
+F 123 4 7 twist
+F 128 5 6 ed 
+F 133 9 7 tongues 
+F 143 1 7 a 
+F 146 7 5 hex 
+F 156 2 7 de
+F 160 6 7 ployed 
+F 167 2 14 on 
+F 170 5 13 you
+- 175 191
+- 191
+F 217 3 32 That 
+F 221 4 8 all 
+F 226 2 8 the 
+F 230 6 7 pret
+F 236 6 8 ties 
+F 243 3 7 in 
+F 247 4 6 your 
+F 252 8 8 bed
+- 260
+F 262 5 5 Es
+F 267 5 7 cape 
+F 273 4 8 your 
+F 279 6 8 hands 
+F 286 2 6 and 
+F 289 5 6 make 
+F 296 4 5 you 
+F 301 8 7 sad 
+F 310 2 5 and
+- 312
+F 316 5 8 All 
+F 322 2 9 the 
+F 325 7 8 things 
+F 333 4 9 you 
+F 338 3 11 wish 
+F 344 4 19 you 
+F 350 6 8 had 
+F 357 3 11 you 
+F 360 13 13 lose
+- 373 395
+- 395
+: 421 12 23 I 
+: 444 12 23 I 
+: 467 2 23 I 
+: 469 5 23 know 
+: 474 4 23 you're 
+: 479 6 23 liv
+: 486 4 23 ing 
+: 491 4 23 a 
+: 496 10 23 lie
+- 506
+: 519 14 23 I 
+: 543 10 23 I 
+: 564 2 23 I 
+: 567 3 23 see 
+: 571 3 23 the 
+: 574 5 23 scars 
+: 580 5 23 in 
+: 586 4 23 Your 
+: 591 9 23 Eyes
+- 600
+: 612 17 23 I 
+: 633 17 23 I 
+: 659 2 23 I 
+: 662 3 23 know 
+: 666 5 23 you're 
+: 672 3 23 liv
+: 676 4 23 ing 
+: 680 3 23 a 
+: 684 18 23 lie
+- 702
+: 710 17 23 I 
+: 734 15 23 I 
+: 752 1 -1 I 
+: 754 7 4 Guess 
+: 762 5 2 you'd 
+: 768 4 4 rat
+: 774 4 2 her 
+: 779 5 4 have 
+: 786 2 2 a 
+: 790 10 4 star 
+: 800 3 2 than 
+: 805 2 -1 a 
+: 809 24 2 moon
+- 833
+: 847 2 2 I 
+: 850 7 4 guess 
+: 858 4 2 I 
+: 863 6 4 al
+: 869 6 2 ways 
+: 877 5 4 o
+: 883 5 2 ver
+: 889 3 4 es
+: 893 4 2 ti
+: 898 7 -1 mate 
+: 907 20 4 you
+- 927
+: 945 11 9 Who'd 
+: 957 13 7 do 
+: 974 3 6 All 
+: 978 2 4 the 
+: 983 9 4 Things 
+: 993 3 2 that 
+: 997 4 -1 you 
+: 1002 25 2 do?
+- 1027
+: 1037 2 2 I'm 
+: 1041 11 9 down 
+: 1053 16 7 down 
+: 1070 3 6 in 
+: 1074 4 4 my 
+: 1079 11 4 dooms
+: 1091 11 2 day 
+: 1104 5 4 blue
+: 1110 13 6 ~
+: 1124 11 4 ~
+- 1135 1332
+- 1332
+F 1358 3 11 A
+F 1362 5 12 va
+F 1367 2 11 da 
+F 1370 3 11 Ke
+F 1373 4 12 da
+F 1378 5 12 vra 
+F 1383 2 15 the 
+F 1385 5 15 thoughts 
+F 1391 1 15 in 
+F 1394 3 15 my 
+F 1397 6 17 head
+- 1403
+F 1407 3 17 The 
+F 1412 5 18 places 
+F 1418 2 19 I 
+F 1422 6 7 touch 
+F 1429 5 19 when 
+F 1436 4 19 ly
+F 1441 4 20 ing 
+F 1446 2 21 In 
+F 1450 3 22 bed
+- 1453
+F 1458 2 24 The 
+F 1461 1 29 vi
+F 1463 4 32 sions 
+F 1468 2 21 of 
+F 1471 7 19 you 
+F 1478 2 18 the 
+F 1481 4 16 words 
+F 1486 3 16 that 
+F 1490 3 19 you 
+F 1494 7 16 say 
+F 1503 6 14 un
+F 1509 6 15 do
+- 1515 1523
+- 1523
+F 1549 4 12 My 
+F 1556 4 15 Heart
+F 1560 4 15 beat 
+F 1565 11 18 buried 
+F 1579 3 18 in 
+F 1584 3 19 the 
+F 1588 9 19 ground
+- 1597
+F 1599 2 20 And 
+F 1601 4 20 to 
+F 1607 3 20 its 
+F 1611 9 20 strings 
+F 1622 3 20 I 
+F 1626 6 21 bind 
+F 1633 4 20 your 
+F 1638 7 21 bounds
+- 1645
+F 1645 4 21 So 
+F 1650 4 21 when 
+F 1655 4 21 you 
+F 1659 7 21 sleep 
+F 1668 4 21 you'll 
+F 1672 6 22 hear 
+F 1678 4 21 my 
+F 1684 13 21 sound
+- 1697 1734
+- 1734
+: 1760 12 23 I 
+: 1780 12 23 I 
+: 1805 3 23 I 
+: 1809 2 23 Know 
+: 1812 3 23 you're 
+: 1816 5 23 liv
+: 1821 5 23 ing 
+: 1827 4 23 a 
+: 1832 12 23 lie
+- 1844
+: 1855 14 23 I 
+: 1879 10 23 I 
+: 1900 2 23 I 
+: 1903 3 23 see 
+: 1907 3 23 the 
+: 1910 5 23 scars 
+: 1916 5 23 in 
+: 1922 4 23 Your 
+: 1927 9 23 Eyes
+- 1936
+: 1952 17 23 I 
+: 1973 17 23 I 
+: 1999 2 23 I 
+: 2002 3 23 know 
+: 2006 5 23 you're 
+: 2012 3 23 liv
+: 2016 4 23 ing 
+: 2020 3 23 a 
+: 2024 13 23 lie 
+: 2046 13 23 I 
+: 2067 13 23 I
+- 2080
+: 2089 1 -1 I 
+: 2091 7 4 Guess 
+: 2099 5 2 you'd 
+: 2105 4 4 rat
+: 2111 4 2 her 
+: 2116 5 4 have 
+: 2123 2 2 a 
+: 2127 10 4 star 
+: 2137 3 2 than 
+: 2142 2 -1 a 
+: 2146 24 2 moon
+- 2170
+: 2182 2 -1 I 
+: 2186 7 4 guess 
+: 2195 3 2 I 
+: 2199 6 4 al
+: 2206 5 2 ways 
+: 2213 3 4 o
+: 2217 5 2 ver
+: 2224 6 4 es
+: 2231 3 2 ti
+: 2235 7 -1 mate 
+: 2245 13 4 you
+- 2258
+: 2280 11 9 Who'd 
+: 2293 11 7 do 
+: 2307 4 6 All 
+: 2313 3 4 the 
+: 2318 7 4 things 
+: 2326 4 2 that 
+: 2331 5 -1 you 
+: 2336 9 2 do?
+- 2345 2346
+- 2346
+: 2372 4 2 I'm 
+: 2377 11 9 down 
+: 2390 13 7 down 
+: 2406 2 6 in 
+: 2408 4 4 my 
+: 2413 11 4 dooms
+: 2424 11 2 day 
+: 2438 21 6 blue
+: 2459 6 17 ~
+- 2465
+: 2472 6 17 Guess 
+: 2479 5 17 you'd 
+: 2485 7 15 rather 
+: 2494 4 15 have 
+: 2499 2 16 a
+- 2501
+: 2504 20 22 Star 
+: 2525 3 20 than 
+: 2529 3 19 the 
+: 2532 14 18 moon
+- 2546
+: 2563 2 16 I 
+: 2567 7 16 guess 
+: 2576 5 16 I 
+: 2582 4 14 al
+: 2587 5 16 ways 
+: 2594 3 15 o
+: 2598 5 16 ver
+: 2605 6 15 es
+: 2612 3 16 ti
+: 2616 7 13 mate 
+: 2626 13 16 you
+- 2639
+: 2664 9 21 Who'd 
+: 2675 11 23 do 
+: 2689 3 20 All 
+: 2693 5 31 the 
+: 2699 12 17 things 
+: 2713 5 14 that 
+: 2720 4 14 you 
+: 2724 7 12 do?
+- 2731
+: 2754 2 2 I'm 
+: 2758 11 9 down 
+: 2770 16 7 down 
+: 2787 3 6 in 
+: 2791 4 4 my 
+: 2796 11 4 dooms
+: 2808 11 2 day 
+: 2821 5 4 blue
+: 2827 13 6 ~
+: 2841 11 4 ~
+- 2852 2868
+- 2868
+: 2894 5 -1 For 
+: 2900 14 -1 your 
+: 2932 8 11 ro
+: 2942 19 10 mance
+- 2961
+* 2981 8 6 I'd 
+* 2993 21 9 Beg 
+* 3020 5 11 steal 
+* 3027 3 9 and 
+* 3034 9 8 bor
+* 3045 13 -1 row
+- 3058
+: 3073 5 -1 It's 
+: 3083 16 6 Drain
+: 3101 14 -1 ing 
+: 3117 8 -1 me 
+: 3129 10 6 Hol
+: 3139 10 -1 low 
+: 3174 20 2 you
+: 3196 8 -1 ~
+- 3204 3235
+- 3235
+: 3261 7 -1 You 
+: 3270 21 -1 could 
+* 3301 13 11 slow
+* 3317 3 13 ~ 
+* 3322 33 10 dance 
+* 3364 5 6 me 
+* 3372 24 9 out 
+* 3402 4 11 of 
+* 3407 10 9 my 
+* 3419 8 8 sor
+* 3429 23 -1 row
+- 3452
+: 3456 4 -1 But 
+: 3461 10 4 your 
+: 3472 6 4 fa
+: 3478 7 6 vorite 
+: 3487 6 6 col
+: 3494 7 6 or 
+: 3502 10 6 com
+: 3512 11 6 pared 
+: 3525 4 6 to 
+: 3529 4 6 the 
+: 3537 4 7 Oth
+: 3541 8 6 ers
+- 3549
+: 3552 4 6 Is 
+: 3560 31 6 doom, 
+: 3607 20 2 dooms
+: 3629 21 -1 day 
+F 3653 59 2 blue
+- 3712 3863
+- 3863
+: 3889 28 6 Blue, 
+: 3920 24 6 Blue, 
+: 3949 30 6 blue, 
+: 3983 30 6 Blue, 
+: 4017 51 6 blue,
+- 4068
+: 4079 27 6 Blue, 
+: 4107 22 6 blue, 
+: 4130 23 6 blue, 
+: 4154 19 6 Blue, 
+: 4175 22 5 blue, 
+: 4198 26 5 blue, 
+: 4225 24 5 blue, 
+: 4252 23 5 blue,
+- 4275
+: 4275 27 6 Blue, 
+: 4303 22 6 blue, 
+: 4326 23 6 blue, 
+: 4350 19 6 Blue, 
+: 4371 22 5 blue, 
+: 4394 26 5 blue, 
+: 4421 24 5 blue, 
+: 4448 20 5 blue,
+E

@@ -1,0 +1,209 @@
+#ARTIST:Mili
+#TITLE:Rightfully
+#CREATOR:magic-ott
+#BPM:363,92
+#YEAR:2018
+#PREVIEWSTART:51
+#VIDEO:v=N301TAIEYy4
+#LANGUAGE:English
+#GAP:20620,771598153442
+#ALLKARAOKE_ID:mili-rightfully
+#ALLKARAOKE_LASTUPDATE:2024-08-07T20:58:27.601Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:182
+#ALLKARAOKE_SOURCEURL:https://youtu.be/N301TAIEYy4
+#ALLKARAOKE_PREVIEWEND:86
+#ALLKARAOKE_VOLUME:1
+#MP3:Mili - Rightfully (TV).mp3
+: 24 11 -1 Chained 
+: 48 6 4 on
+: 56 6 6 to 
+: 64 7 7 me
+- 71
+: 80 5 -3 My 
+: 88 6 -1 ad
+: 96 6 4 o
+: 104 2 6 les
+: 108 5 7 ~
+: 116 2 7 cent 
+: 120 17 2 dreams
+- 137 144
+- 144
+: 168 2 -1 Pull
+: 172 6 0 ~
+: 180 2 -1 ~
+: 184 10 -1 ing
+- 194
+: 216 18 -3 Dragged 
+: 240 2 -3 me
+: 244 2 -1 ~ 
+* 248 10 -6 deep
+: 264 9 -5 ~
+- 273
+: 296 6 -1 All 
+: 304 5 4 my 
+: 312 6 6 bod
+: 320 9 7 y 
+: 336 1 4 ex
+: 338 2 6 ~
+: 344 11 4 posed
+- 355 400
+- 400
+* 424 6 -1 Marked
+: 432 3 4 ~ 
+: 440 5 6 up 
+: 448 9 7 by 
+: 464 4 6 your 
+: 472 1 4 shad
+: 474 4 6 ~
+: 480 4 4 ows
+- 484 512
+- 512
+: 536 5 -1 Tight
+: 548 2 -6 en 
+: 552 4 -8 up 
+: 560 2 -6 numb 
+: 564 2 -5 your 
+* 568 4 -3 sens
+: 576 2 -1 es
+: 580 2 0 ~ 
+: 584 5 -1 no 
+: 592 6 3 fair
+: 600 5 4 ness
+- 605
+: 612 2 -1 Is 
+: 616 2 4 need
+* 620 2 9 ed 
+* 624 2 11 for 
+: 628 16 12 pigs
+- 644
+: 664 6 7 Laugh
+* 672 4 9 ~
+: 680 4 6 ters 
+: 688 5 2 a
+: 696 21 -1 bove
+- 717
+: 728 6 -3 Play
+: 736 11 -1 ~
+* 752 4 4 ful 
+: 760 23 0 smiles
+- 783
+: 792 2 0 Die
+: 796 16 1 ~ 
+: 816 3 4 gets 
+: 824 2 6 rolled
+: 828 6 7 ~
+: 836 1 9 ~
+: 838 1 7 ~
+: 840 7 6 ~
+- 847
+: 856 2 6 Bathe
+: 860 16 7 ~ 
+: 880 5 11 in 
+* 888 2 12 sor
+* 892 7 14 ~
+* 904 6 12 row 
+: 912 3 7 my 
+: 920 13 9 tomor
+: 936 6 11 row 
+: 944 4 12 is 
+: 952 5 11 built 
+: 960 5 7 up
+: 968 5 6 on 
+: 976 4 7 your 
+: 984 13 4 flesh
+- 997
+: 1008 2 4 Slay 
+: 1012 2 6 the 
+* 1016 5 14 last 
+: 1024 2 12 of 
+: 1028 2 11 your 
+: 1032 6 12 kind
+- 1038
+: 1048 13 9 To 
+: 1064 5 11 re
+: 1072 5 12 claim 
+: 1080 4 11 what’s 
+* 1088 5 7 right
+: 1096 5 11 ful
+: 1104 6 15 ly 
+: 1112 2 15 mine
+: 1116 50 16 ~
+: 1168 6 15 ~
+: 1176 53 16 ~
+- 1229
+F 1240 4 4 I 
+F 1246 4 4 have 
+F 1252 2 4 a 
+F 1256 6 4 rea
+F 1264 5 3 son
+- 1269
+F 1272 2 4 Don’t 
+F 1278 2 4 part 
+F 1284 2 4 the 
+F 1288 5 4 riv
+F 1296 5 3 ers
+- 1301
+F 1304 4 4 Sur
+F 1310 3 4 round 
+F 1316 2 4 them, 
+F 1320 3 4 off 
+F 1328 5 3 with 
+F 1336 2 4 their
+F 1340 6 4 ~ 
+F 1348 2 11 heads
+F 1352 7 4 ~
+- 1359
+F 1368 3 4 Chris
+F 1374 3 4 ten 
+F 1380 2 4 my 
+F 1384 3 4 mo
+F 1392 5 3 tive
+- 1397
+F 1400 3 4 First 
+F 1406 3 4 time 
+F 1412 2 4 to 
+F 1416 5 4 no
+F 1424 4 3 tice
+- 1428
+F 1432 3 4 Fi
+F 1438 3 4 nal
+F 1444 2 4 ~ 
+F 1448 5 4 dun
+F 1456 4 3 geon
+- 1460
+F 1464 2 4 Mu
+F 1468 2 9 re
+F 1472 2 11 te 
+F 1476 2 12 ma
+F 1480 2 11 yo
+F 1484 2 12 u
+F 1488 4 9 ~
+- 1492
+F 1496 4 4 I 
+F 1502 3 4 hide 
+F 1508 2 4 a
+F 1512 4 4 mong 
+F 1520 5 3 you
+- 1525
+F 1528 3 4 Fac
+F 1534 2 4 ing 
+F 1540 2 4 my 
+F 1544 5 4 fire
+F 1552 5 3 ~
+- 1557
+F 1560 3 4 At 
+F 1566 3 4 night 
+F 1572 2 4 I’m 
+F 1576 6 4 dream
+F 1584 5 3 ing
+- 1589
+F 1592 3 4 Na
+F 1598 4 11 gai 
+F 1604 2 12 yu
+F 1608 2 11 me 
+F 1612 2 7 no 
+F 1616 4 6 ko
+F 1622 3 7 to
+F 1630 15 4 ha
+E
