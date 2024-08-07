@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { Box, Grid, Typography } from '@mui/material';
 import { GAME_MODE, SingSetup, Song } from 'interfaces';
 import { cloneDeep } from 'lodash-es';
@@ -84,7 +83,7 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
   }),
 });
 
-const playerWidth = 800;
+const playerWidth = 824;
 const playerHeight = (playerWidth / 16) * 9;
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
@@ -164,26 +163,22 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
           />
         </Box>
       </Grid>
-      <Grid item xs={4}>
-        <Typography variant={'h5'} mb={2}>
-          Playback controls
-        </Typography>
+      <Grid item xs={4} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         {player.current && (
-          <AdjustPlayback
-            player={player.current}
-            currentTime={currentTime}
-            effectsEnabled={effectsEnabled}
-            onEffectsToggle={() => setEffectsEnabled((current) => !current)}
-          />
+          <>
+            <AdjustPlayback
+              player={player.current}
+              currentTime={currentTime}
+              effectsEnabled={effectsEnabled}
+              onEffectsToggle={() => setEffectsEnabled((current) => !current)}
+            />
+          </>
         )}
         {!player.current && <h2>Start the song to see the manipulation form</h2>}
       </Grid>
       {player.current && (
         <>
           <Grid item xs={8}>
-            {/*<Typography variant={'h5'} mb={2}>*/}
-            {/*    Basic adjustments*/}
-            {/*</Typography>*/}
             <Box sx={{ display: 'flex', gap: 5, flex: 1 }}>
               <ShiftVideoGap
                 player={player.current}
@@ -200,13 +195,13 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             </Box>
           </Grid>
           <Grid item xs={4}>
-            <HelpText>
+            <div className="text-xs mb-2">
               Use <strong>Video shift gap</strong> to crop the beginning of the video if it starts with an intro.
-            </HelpText>
-            <HelpText>
+            </div>
+            <div className="text-xs mb-2">
               Use <strong>Lyrics shift gap</strong> to sync the start of the lyrics to the video. You can lower the{' '}
-              <strong>Playback speed</strong> above to make sure you got it just right.
-            </HelpText>
+              <strong>Playback speed</strong> above to make sure you got it just right.{' '}
+            </div>
           </Grid>
           <Grid item xs={8}>
             <Typography variant={'h5'} mb={2}>
@@ -222,15 +217,17 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             <ListTracks player={player.current} song={newSong} beatLength={beatLength} />
           </Grid>
           <Grid item xs={4}>
-            <HelpText>If the lyrics desynchronise over time, probably the tempo (BPM) of the lyrics is wrong.</HelpText>
-            <HelpText>
+            <div className="text-xs mb-2">
+              If the lyrics desynchronise over time, probably the tempo (BPM) of the lyrics is wrong.
+            </div>
+            <div className="text-xs mb-2">
               You can either use <strong>Last note end time</strong> - enter the millisecond when the last note should
               end (seek through the video for the moment as <strong>Current time</strong> panel show the exact
               millisecond) and a suggested BPM value will appear below.
-            </HelpText>
-            <HelpText>
+            </div>
+            <div className="text-xs mb-2">
               <strong>Tempo (BPM)</strong> field allows to fine-tune the tempo.
-            </HelpText>
+            </div>
           </Grid>
           <Grid item xs={8}>
             <EditSection
@@ -263,31 +260,22 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             />
           </Grid>
           <Grid item xs={4}>
-            <HelpText>
+            <div className="text-xs mb-2">
               If the lyrics there are more lyrics than in the video or there are longer/shorter interludes between
               verses, you can <strong>Edit verses</strong>.
-            </HelpText>
-            <HelpText>Select a verse by clicking on it.</HelpText>
-            <HelpText>
+            </div>
+            <div className="text-xs mb-2">Select a verse by clicking on it.</div>
+            <div className="text-xs mb-2">
               You can either <strong>Change its start beat</strong> (which will "move in time" the verse and all
               subsequent ones) or <strong>Delete it</strong> (it won't affect the timing of other verses). You can also
               edit the lyrics of each note.
-            </HelpText>
-            <HelpText>
+            </div>
+            <div className="text-xs mb-2">
               <strong>List of changes</strong> on the right allows you to see and undo the actions one by one.
-            </HelpText>
+            </div>
           </Grid>
         </>
       )}
     </Grid>
   );
 }
-
-const HelpText = styled.p`
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
-  line-height: 1.25rem;
-  strong {
-    font-weight: bold;
-  }
-`;

@@ -1,5 +1,4 @@
-import styled from '@emotion/styled';
-import { Alert, AlertTitle, Box, Button, Step, StepButton, StyledEngineProvider } from '@mui/material';
+import { Alert, AlertTitle, Button, Grid, Paper, Step, StepButton, StyledEngineProvider } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { Song } from 'interfaces';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
@@ -189,133 +188,144 @@ export default function ConvertView({ song }: Props) {
   return (
     <StyledEngineProvider injectFirst>
       <NormalizeFontSize />
-      <Container>
-        {!isEdit && (
-          <div style={{ marginBottom: '1rem' }}>
-            <Link to="menu/">
-              <a>Return to the main menu</a>
-            </Link>
-          </div>
-        )}
-        <Stepper activeStep={currentStep} sx={{ mb: 2 }} nonLinear={isEdit}>
-          <Step key={0} completed={isBasicInfoCompleted}>
-            <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
-              Basic Info
-            </StepButton>
-          </Step>
-          <Step key={1} completed={isAuthorAndVidCompleted}>
-            <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
-              Author and video data
-            </StepButton>
-          </Step>
-          <Step key={2}>
-            <StepButton color="inherit" onClick={() => setCurrentStep(2)}>
-              Sync lyrics to video
-            </StepButton>
-          </Step>
-          <Step key={3}>
-            <StepButton color="inherit" onClick={() => setCurrentStep(3)}>
-              Fill song metadata
-            </StepButton>
-          </Step>
-        </Stepper>
-        <form
-          onSubmit={async (e) => {
-            e.preventDefault();
-            if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
-            else if (steps.at(currentStep) === 'metadata') {
-              setIsSaving(true);
-              await SongDao.store(finalSong!);
-              await shareSong(finalSong!.id);
-              setIsSaving(false);
-              navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
-            }
-          }}>
-          {steps.at(currentStep) === 'basic-data' && (
-            <BasicData
-              shouldAutoImport={!isAuthorAndVidCompleted}
-              isTxtRequired={!song}
-              onAutoImport={setAuthorAndVid}
-              onChange={setBasicData}
-              data={basicData}
-              finalSong={finalSong}
-            />
+      <Grid container gap={2} p={1} pb={10}>
+        <Grid item xs={12}>
+          {!isEdit && (
+            <div style={{ marginBottom: '1rem' }}>
+              <Link to="menu/">
+                <a>Return to the main menu</a>
+              </Link>
+            </div>
           )}
-
-          {steps.at(currentStep) === 'author-and-video' && (
-            <AuthorAndVideo
-              songArtist={conversionResult?.artist}
-              songTitle={conversionResult?.title}
-              onChange={setAuthorAndVid}
-              data={authorAndVid}
-            />
-          )}
-
-          {conversionResult && ( // Keep the component even if in different step so it preserves the state
-            <SyncLyricsToVideo
-              onChange={setEditedSong}
-              data={conversionResult}
-              visible={steps.at(currentStep) === 'sync'}
-            />
-          )}
-
-          {steps.at(currentStep) === 'metadata' && (
-            <SongMetadata
-              videoGap={editedSong?.videoGap}
-              onChange={setMetadataEntity}
-              data={metadataEntity}
-              songArtist={conversionResult?.artist}
-              songTitle={conversionResult?.title}
-              videoId={conversionResult!.video}
-            />
-          )}
-
-          {possibleDuplicate && (
-            <Alert severity="warning" data-test="possible-duplicate">
-              <AlertTitle>Possible duplicate</AlertTitle>
-              There is already a song with similar artist and/or name:{' '}
-              <b>
-                {possibleDuplicate.artist} - {possibleDuplicate.title}
-              </b>
-            </Alert>
-          )}
-          <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <Button
-              data-test="previous-button"
-              sx={{ mt: 2, align: 'right' }}
-              onClick={() => setCurrentStep((current) => current - 1)}
-              disabled={currentStep === 0}>
-              Previous
-            </Button>
-            {steps.at(currentStep) === 'metadata' ? (
-              <Button
-                data-test="save-button"
-                sx={{ mt: 2, align: 'right' }}
-                type="submit"
-                variant={'contained'}
-                disabled={isSaving}>
-                {isSaving ? 'Saving...' : 'Save'}
-              </Button>
-            ) : (
-              <Button
-                data-test="next-button"
-                sx={{ mt: 2, align: 'right' }}
-                variant={'contained'}
-                type="submit"
-                disabled={!isNextStepAvailable || currentStep === steps.length - 1}>
-                Next
-              </Button>
+        </Grid>
+        <Grid item xs={12}>
+          <Stepper activeStep={currentStep} sx={{ mb: 2 }} nonLinear={isEdit}>
+            <Step key={0} completed={isBasicInfoCompleted}>
+              <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
+                Basic Info
+              </StepButton>
+            </Step>
+            <Step key={1} completed={isAuthorAndVidCompleted}>
+              <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
+                Author and video data
+              </StepButton>
+            </Step>
+            <Step key={2}>
+              <StepButton color="inherit" onClick={() => setCurrentStep(2)}>
+                Sync lyrics to video
+              </StepButton>
+            </Step>
+            <Step key={3}>
+              <StepButton color="inherit" onClick={() => setCurrentStep(3)}>
+                Fill song metadata
+              </StepButton>
+            </Step>
+          </Stepper>
+        </Grid>
+        <Grid item xs={12}>
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              if (currentStep < steps.length - 1) setCurrentStep((current) => current + 1);
+              else if (steps.at(currentStep) === 'metadata') {
+                setIsSaving(true);
+                await SongDao.store(finalSong!);
+                await shareSong(finalSong!.id);
+                setIsSaving(false);
+                navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
+              }
+            }}>
+            {steps.at(currentStep) === 'basic-data' && (
+              <BasicData
+                shouldAutoImport={!isAuthorAndVidCompleted}
+                isTxtRequired={!song}
+                onAutoImport={setAuthorAndVid}
+                onChange={setBasicData}
+                data={basicData}
+                finalSong={finalSong}
+              />
             )}
-          </Box>
-        </form>
-      </Container>
+
+            {steps.at(currentStep) === 'author-and-video' && (
+              <AuthorAndVideo
+                songArtist={conversionResult?.artist}
+                songTitle={conversionResult?.title}
+                onChange={setAuthorAndVid}
+                data={authorAndVid}
+              />
+            )}
+
+            {conversionResult && ( // Keep the component even if in different step so it preserves the state
+              <SyncLyricsToVideo
+                onChange={setEditedSong}
+                data={conversionResult}
+                visible={steps.at(currentStep) === 'sync'}
+              />
+            )}
+
+            {steps.at(currentStep) === 'metadata' && (
+              <SongMetadata
+                videoGap={editedSong?.videoGap}
+                onChange={setMetadataEntity}
+                data={metadataEntity}
+                songArtist={conversionResult?.artist}
+                songTitle={conversionResult?.title}
+                videoId={conversionResult!.video}
+              />
+            )}
+
+            {possibleDuplicate && (
+              <Alert severity="warning" data-test="possible-duplicate">
+                <AlertTitle>Possible duplicate</AlertTitle>
+                There is already a song with similar artist and/or name:{' '}
+                <b>
+                  {possibleDuplicate.artist} - {possibleDuplicate.title}
+                </b>
+              </Alert>
+            )}
+            <Paper
+              sx={{
+                position: 'fixed',
+                bottom: 0,
+                left: '50%',
+                width: '1260px',
+                padding: 1,
+                transform: 'translateX(-50%)',
+                display: 'flex',
+                gap: 2,
+                justifyContent: 'flex-end',
+              }}
+              elevation={3}>
+              <Button
+                data-test="previous-button"
+                sx={{ align: 'right' }}
+                onClick={() => setCurrentStep((current) => current - 1)}
+                disabled={currentStep === 0}>
+                Previous
+              </Button>
+              {steps.at(currentStep) === 'metadata' ? (
+                <Button
+                  data-test="save-button"
+                  sx={{ align: 'right' }}
+                  type="submit"
+                  variant={'contained'}
+                  disabled={isSaving}>
+                  {isSaving ? 'Saving...' : 'Save'}
+                </Button>
+              ) : (
+                <Button
+                  data-test="next-button"
+                  sx={{ align: 'right' }}
+                  variant={'contained'}
+                  type="submit"
+                  disabled={!isNextStepAvailable || currentStep === steps.length - 1}>
+                  Next
+                </Button>
+              )}
+            </Paper>
+          </form>
+        </Grid>
+      </Grid>
     </StyledEngineProvider>
   );
 }
-
-const Container = styled.div`
-  background: white;
-  margin: 30px auto 0;
-  width: 1260px;
-  height: 100%;
-`;

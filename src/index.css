@@ -92,12 +92,9 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -111,118 +108,118 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* end of reset */
 body {
-  position: relative;
-  margin: 0;
+    position: relative;
+    margin: 0;
 ;
     -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 
-  /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow-y: auto;
+    /* Hide scrollbar - for some reason its visible on Singing Scene (todo investigate why its that) */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: auto;
 }
 
 body,
 button,
 input {
-  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 }
 
 html {
-  overflow: overlay;
-  overflow-x: hidden;
+    overflow: overlay;
+    overflow-x: hidden;
 
-  font-size: calc(min(0.9259259259259vh, 0.5208333333333vw) * var(--zoom-multipler, 1));
+    font-size: calc(min(0.9259259259259vh, 0.5208333333333vw) * var(--zoom-multipler, 1));
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .blockOverflow {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .Toastify {
-  font-size: 1.5rem;
-  --toastify-toast-width: 32rem;
-  --toastify-toast-min-height: 6.4rem;
-  --toastify-toast-max-height: 80rem;
+    font-size: 1.5rem;
+    --toastify-toast-width: 32rem;
+    --toastify-toast-min-height: 6.4rem;
+    --toastify-toast-max-height: 80rem;
 }
 
 .Toastify__toast {
-  padding: 0.8rem;
-  border-radius: 0.4rem;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
 }
 
 .Toastify__toast-body {
-  padding: 0.6rem;
+    padding: 0.6rem;
 }
 
 .Toastify__toast-icon {
-  width: 1.5rem;
-  margin-inline-end: 1rem;
+    width: 1.5rem;
+    margin-inline-end: 1rem;
 }
 
 .Toastify__close-button > svg {
-  width: 1.5rem;
-  height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .Toastify__progress-bar {
-  height: 0.5rem;
+    height: 0.5rem;
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 }
 
 @keyframes fade-out {
-  to {
-    opacity: 0;
-  }
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes scale-from-down {
-  from {
-    transform: scale(0.8);
-  }
+    from {
+        transform: scale(0.8);
+    }
 }
 
 @keyframes scale-to-up {
-  to {
-    transform: scale(1.2);
-  }
+    to {
+        transform: scale(1.2);
+    }
 }
 ::view-transition-old(menu-container) {
     animation: 210ms ease-in-out both fade-out, 300ms ease-in-out both scale-to-up;
@@ -233,31 +230,31 @@ code {
 
 ::view-transition-old(song-preview),
 ::view-transition-new(song-preview) {
-  /* Prevent the default animation,
-  so both views remain opacity:1 throughout the transition */
-  animation: none;
-  /* Use normal blending,
-  so the new view sits on top and obscures the old view */
-  mix-blend-mode: normal;
-  /* Make the height the same as the group,
-  meaning the view size might not match its aspect-ratio. */
-  height: 100%;
-  /* Clip any overflow of the view */
-  overflow: clip;
+    /* Prevent the default animation,
+    so both views remain opacity:1 throughout the transition */
+    animation: none;
+    /* Use normal blending,
+    so the new view sits on top and obscures the old view */
+    mix-blend-mode: normal;
+    /* Make the height the same as the group,
+    meaning the view size might not match its aspect-ratio. */
+    height: 100%;
+    /* Clip any overflow of the view */
+    overflow: clip;
 }
 
 /* The old view is the thumbnail */
 ::view-transition-old(song-preview) {
-  /* Maintain the aspect ratio of the view,
-  by shrinking it to fit within the bounds of the element */
-  object-fit: contain;
+    /* Maintain the aspect ratio of the view,
+    by shrinking it to fit within the bounds of the element */
+    object-fit: contain;
 }
 
 /* The new view is the full image */
 ::view-transition-new(song-preview) {
-  /* Maintain the aspect ratio of the view,
-  by growing it to cover the bounds of the element */
-  object-fit: cover;
+    /* Maintain the aspect ratio of the view,
+    by growing it to cover the bounds of the element */
+    object-fit: cover;
 }
 
 @keyframes focusAnimation {
@@ -270,4 +267,26 @@ code {
     0% {
         box-shadow: inset 0px 0px 0px 2px orange;
     }
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: underline;
 }
