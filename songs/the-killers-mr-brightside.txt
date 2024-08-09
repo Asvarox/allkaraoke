@@ -4,16 +4,17 @@
 #BPM:396,73
 #YEAR:2004
 #VIDEO:v=gGdGFtwCNBE
-#VIDEOGAP:-1
 #GENRE:Alternativa
 #LANGUAGE:English
-#GAP:9669,963678068209
+#GAP:9719,963678068209
 #EDITION:Rock Band Store 2008 Vol. 4
 #ALLKARAOKE_ID:the-killers-mr-brightside
+#ALLKARAOKE_LASTUPDATE:2024-08-09T00:15:47.018Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=gilrael
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside
+#ALLKARAOKE_VOLUME:0,78
 : 26 4 13 Com
 : 31 4 13 ing 
 : 36 4 13 out 
