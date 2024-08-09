@@ -6,13 +6,15 @@
 #VIDEO:v=mGgMZpGYiy8
 #GENRE:Rock
 #LANGUAGE:English
-#GAP:32495,352941176472
+#GAP:31995,352941176472
 #EDITION:SingStar '90s
 #ALLKARAOKE_ID:the-cure-friday-im-in-love
+#ALLKARAOKE_LASTUPDATE:2024-08-09T00:15:47.016Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:136
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Friday%20I'm%20in%20Love
+#ALLKARAOKE_VOLUME:0,78
 : 18 3 58 I 
 : 22 4 58 don't 
 : 30 5 58 care 
