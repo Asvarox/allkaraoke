@@ -8,8 +8,16 @@ export class RemoteMicSettingsPage {
     private browser: Browser,
   ) {}
 
-  public async goToMicrophoneSettings() {
+  public async goToMicSettings() {
     await this.page.getByTestId('microphone-settings').click();
+  }
+
+  public async goToManageGame() {
+    await this.page.getByTestId('manage-game').click();
+  }
+
+  public async goToMicMainPage() {
+    await this.page.getByTestId('menu-microphone').click();
   }
 
   public async resetMicrophone() {

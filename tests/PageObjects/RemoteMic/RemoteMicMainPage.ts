@@ -27,4 +27,20 @@ export class RemoteMicMainPagePO {
   public async goToSettings() {
     await this.page.getByTestId('menu-settings').click();
   }
+
+  public async expectPlayerToBeAssigned(micColor: string) {
+    if (micColor === 'blue') {
+      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
+    } else if (micColor === 'red') {
+      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
+    } else if (micColor === 'green') {
+      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '2');
+    } else if (micColor === 'yellow') {
+      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '3');
+    }
+  }
+
+  public async expectPlayerToBeUnassign() {
+    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
+  }
 }
