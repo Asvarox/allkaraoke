@@ -111,7 +111,7 @@ export default function BasicData(props: Props) {
         <Box sx={{ display: 'flex', width: '100%', height: 500, overflow: 'auto' }}>
           {props.finalSong?.tracks?.map((track, index) => (
             <Box key={index} sx={{ flex: 1 }}>
-              <h4>{track.name ?? `Track #${index + 1}`}</h4>
+              <h4 className="py-3">{track.name ?? `Track #${index + 1}`}</h4>
               {track.sections.filter(isNotesSection).map((section) => (
                 <p key={section.start}>{section.notes.map((note) => note.lyrics).join('')}</p>
               ))}
