@@ -1,4 +1,3 @@
-import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class RemoteMicSettingsPage {
@@ -26,17 +25,5 @@ export class RemoteMicSettingsPage {
 
   public get remoteMicID() {
     return this.page.getByTestId('remote-mic-id');
-  }
-
-  public get adjustMicrophoneLag() {
-    return this.page.getByTestId('microphone-delay');
-  }
-
-  public async increaseMicInputDelay() {
-    await this.adjustMicrophoneLag.getByTestId('numeric-input-up').click();
-  }
-
-  public async expectMicInputDelayToBe(value: string) {
-    await expect(this.adjustMicrophoneLag.getByTestId('numeric-input-value')).toContainText(value);
   }
 }
