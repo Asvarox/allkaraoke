@@ -46,8 +46,8 @@ test('Should allow changing microphone input lag', async ({ browser, page, conte
     await remoteMic.remoteMicMainPage.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToMicSettings();
 
-    //await remoteMic.remoteMicManagePlayerPage.increaseMicInputDelay();
-    //await remoteMic.remoteMicManagePlayerPage.expectMicInputDelayToBe(numericInputValue);
+    await remoteMic.remoteMicSettingsPage.increaseMicInputLag();
+    await remoteMic.remoteMicSettingsPage.expectMicInputLagToBe(numericInputValue);
   });
 
   await test.step('the change is preserved after reload', async () => {
@@ -56,7 +56,7 @@ test('Should allow changing microphone input lag', async ({ browser, page, conte
 
     await remoteMic.remoteMicMainPage.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToMicSettings();
-    await remoteMic.remoteMicManageGamePage.expectMicInputDelayToBe(numericInputValue);
+    await remoteMic.remoteMicSettingsPage.expectMicInputLagToBe(numericInputValue);
   });
 });
 
@@ -82,7 +82,7 @@ test('Should properly manage mics', async ({ browser, page, context }) => {
     await remoteMic2.remoteMicMainPage.expectPlayerToBeUnassign();
   });
 
-  await test.step('Can still assign players after refresh', async () => {
+  await test.step('Can unassign players after refresh', async () => {
     await remoteMic1._page.reload();
     await connectRemoteMic(remoteMic1._page);
 
@@ -102,35 +102,18 @@ test('Should allow changing game input lag', async ({ browser, page, context }) 
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-
-  //await page.getByTestId('remote-mics').click();
   await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
-  //await page.getByTestId('save-button').click();
   await pages.smartphonesConnectionPage.goToMainMenu();
-
-  //await page.getByTestId('settings').click();
   await pages.mainMenuPage.goToSetting();
 
   await test.step('changing input lag is visible', async () => {
-    //await remoteMic._page.getByTestId('menu-settings').click();
     await remoteMic.remoteMicMainPage.goToSettings();
-
-    //await remoteMic._page.getByTestId('manage-game').click();
-
     await remoteMic.remoteMicSettingsPage.goToManageGame();
-
-    await page.pause();
-
-    //await remoteMic._page.getByTestId('game-input-lag').getByTestId('numeric-input-up').click();
-    await remoteMic.remoteMicManageGamePage.increaseMicInputDelay();
-
-    //await expect(remoteMic._page.getByTestId('game-input-lag').getByTestId('numeric-input-value')).toContainText('50');
-    await remoteMic.remoteMicManageGamePage.expectMicInputDelayToBe(numericInputValue);
-
-    //await expect(page.getByTestId('input-lag')).toHaveValue('50');
-    await pages.settingsPage.expectMicInputDelayToBe(numericInputValue);
+    await remoteMic.remoteMicManageGamePage.increaseGameInputLag();
+    await remoteMic.remoteMicManageGamePage.expectGameInputLagToBe(numericInputValue);
+    await pages.settingsPage.expectInputLagToBe(numericInputValue);
   });
 });

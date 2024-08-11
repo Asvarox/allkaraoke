@@ -51,7 +51,7 @@ export class SettingsPagePO {
     await expect(this.connectedDevicePermissionElement).toContainText('WRITE', { ignoreCase: true });
   }
 
-  public async expectMicInputDelayToBe(value: string) {
+  public async expectInputLagToBe(value: string) {
     await expect(this.page.getByTestId('input-lag')).toHaveValue(value);
   }
 }

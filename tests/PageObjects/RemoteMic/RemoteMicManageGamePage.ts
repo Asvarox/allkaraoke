@@ -12,11 +12,11 @@ export class RemoteMicManageGamePage {
     return this.page.getByTestId('game-input-lag');
   }
 
-  public async increaseMicInputDelay() {
+  public async increaseGameInputLag() {
     await this.adjustGameLag.getByTestId('numeric-input-up').click();
   }
 
-  public async expectMicInputDelayToBe(value: string) {
+  public async expectGameInputLagToBe(value: string) {
     await expect(this.adjustGameLag.getByTestId('numeric-input-value')).toContainText(value);
   }
 
