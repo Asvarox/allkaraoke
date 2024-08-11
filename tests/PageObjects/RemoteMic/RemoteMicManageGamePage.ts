@@ -20,8 +20,8 @@ export class RemoteMicManageGamePage {
     await expect(this.adjustGameLag.getByTestId('numeric-input-value')).toContainText(value);
   }
 
-  public async goToManagePlayer(playerNumber: string) {
-    await this.page.getByText(`Player ${playerNumber}`).click();
+  public async goToManagePlayer(playerName: string) {
+    await this.page.getByText(playerName).click();
   }
 
   public async goBackToMicSettings() {

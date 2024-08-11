@@ -7,16 +7,15 @@ export class RemoteMicManagePlayerPage {
     private browser: Browser,
   ) {}
 
-  public async setMicAssigment(micColor: string) {
-    if (micColor === 'blue') {
-      await this.page.getByTestId(`change-to-player-0`).click();
-    } else if (micColor === 'red') {
-      await this.page.getByTestId(`change-to-player-1`).click();
-    } else if (micColor === 'green') {
-      await this.page.getByTestId(`change-to-player-2`).click();
-    } else if (micColor === 'yellow') {
-      await this.page.getByTestId(`change-to-player-3`).click();
-    }
+  public async setMicAssigment(micColor: 'blue' | 'red' | 'green' | 'yellow') {
+    const colorToNumberMap = {
+      blue: '0',
+      red: '1',
+      green: '2',
+      yellow: '3',
+    };
+
+    await this.page.getByTestId(`change-to-player-${colorToNumberMap[micColor]}`).click();
   }
 
   public async unassignManagedPlayer() {

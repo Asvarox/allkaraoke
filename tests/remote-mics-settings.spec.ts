@@ -12,16 +12,16 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 test('Should properly reset data settings', async ({ browser, page }) => {
-  const name = 'E2E Test Blue';
+  const playerName = 'E2E Test Blue';
 
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectSmartphones();
 
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, name);
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
 
   await remoteMic._page.reload();
-  await remoteMic.remoteMicMainPage.expectPlayerNameToBe(name);
+  await remoteMic.remoteMicMainPage.expectPlayerNameToBe(playerName);
   await remoteMic.remoteMicMainPage.goToSettings();
   await remoteMic.remoteMicSettingsPage.goToMicSettings();
 
@@ -61,7 +61,7 @@ test('Should allow changing microphone input lag', async ({ browser, page, conte
 });
 
 test('Should properly manage mics', async ({ browser, page, context }) => {
-  const playerNum2 = '2';
+  const player2Name = 'Player 2';
   const blueMic = 'blue';
   const redMic = 'red';
 
@@ -70,16 +70,16 @@ test('Should properly manage mics', async ({ browser, page, context }) => {
   await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
-  const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 2');
+  const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2Name);
 
   await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(redMic);
 
   await test.step('Changes other players number', async () => {
     await remoteMic1.remoteMicMainPage.goToSettings();
     await remoteMic1.remoteMicSettingsPage.goToManageGame();
-    await remoteMic1.remoteMicManageGamePage.goToManagePlayer(playerNum2);
+    await remoteMic1.remoteMicManageGamePage.goToManagePlayer(player2Name);
     await remoteMic1.remoteMicManagePlayerPage.unassignManagedPlayer();
-    await remoteMic2.remoteMicMainPage.expectPlayerToBeUnassign();
+    await remoteMic2.remoteMicMainPage.expectPlayerToBeUnassigned();
   });
 
   await test.step('Can unassign players after refresh', async () => {
@@ -88,12 +88,12 @@ test('Should properly manage mics', async ({ browser, page, context }) => {
 
     await remoteMic1.remoteMicMainPage.goToSettings();
     await remoteMic1.remoteMicSettingsPage.goToManageGame();
-    await remoteMic1.remoteMicManageGamePage.goToManagePlayer(playerNum2);
+    await remoteMic1.remoteMicManageGamePage.goToManagePlayer(player2Name);
     await remoteMic1.remoteMicManagePlayerPage.setMicAssigment(blueMic);
     await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(blueMic);
     await remoteMic1.remoteMicManageGamePage.goBackToMicSettings();
     await remoteMic1.remoteMicSettingsPage.goToMicMainPage();
-    await remoteMic1.remoteMicMainPage.expectPlayerToBeUnassign();
+    await remoteMic1.remoteMicMainPage.expectPlayerToBeUnassigned();
   });
 });
 

@@ -28,19 +28,18 @@ export class RemoteMicMainPagePO {
     await this.page.getByTestId('menu-settings').click();
   }
 
-  public async expectPlayerToBeAssigned(micColor: string) {
-    if (micColor === 'blue') {
-      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
-    } else if (micColor === 'red') {
-      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
-    } else if (micColor === 'green') {
-      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '2');
-    } else if (micColor === 'yellow') {
-      await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', '3');
-    }
+  public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
+    const colorToNumberMap = {
+      blue: '0',
+      red: '1',
+      green: '2',
+      yellow: '3',
+    };
+
+    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
   }
 
-  public async expectPlayerToBeUnassign() {
+  public async expectPlayerToBeUnassigned() {
     await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
   }
 }
