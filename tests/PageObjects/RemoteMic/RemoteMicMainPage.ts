@@ -35,11 +35,22 @@ export class RemoteMicMainPagePO {
       green: '2',
       yellow: '3',
     };
-
     await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
   }
 
   public async expectPlayerToBeUnassigned() {
     await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
+  }
+
+  public get noPermissionsToControlTheGameAlert() {
+    return this.page.getByTestId('no-permissions-message');
+  }
+
+  public get remoteKeyboardElement() {
+    return this.page.getByTestId('remote-keyboard');
+  }
+
+  public get joinGameButton() {
+    return this.page.getByTestId('change-player');
   }
 }
