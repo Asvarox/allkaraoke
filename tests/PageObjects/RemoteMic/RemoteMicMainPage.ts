@@ -1,3 +1,4 @@
+import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 export class RemoteMicMainPagePO {
@@ -15,7 +16,30 @@ export class RemoteMicMainPagePO {
     await this.playerNameInput.fill(name);
   }
 
+  public async expectPlayerNameToBe(playerName: string) {
+    await expect(this.playerNameInput).toHaveValue(playerName);
+  }
+
   public async goToSongList() {
     await this.page.getByTestId('menu-song-list').click();
+  }
+
+  public async goToSettings() {
+    await this.page.getByTestId('menu-settings').click();
+  }
+
+  public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
+    const colorToNumberMap = {
+      blue: '0',
+      red: '1',
+      green: '2',
+      yellow: '3',
+    };
+
+    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', colorToNumberMap[micColor]);
+  }
+
+  public async expectPlayerToBeUnassigned() {
+    await expect(this.page.getByTestId('indicator')).toHaveAttribute('data-player-number', 'none');
   }
 }
