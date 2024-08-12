@@ -67,7 +67,7 @@ importers:
         version: 4.17.21
       material-react-table:
         specifier: ^2.7.0
-        version: 2.7.0(4mnylyjngh6s5gzjatpdwhbapu)
+        version: 2.7.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/icons-material@5.16.0(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mui/x-date-pickers@7.9.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(dayjs@1.11.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       msgpackr:
         specifier: ^1.10.1
         version: 1.10.1
@@ -253,8 +253,8 @@ importers:
         specifier: 1.4.0
         version: 1.4.0(vitest@1.4.0)
       '@welldone-software/why-did-you-render':
-        specifier: ^8.0.1
-        version: 8.0.1(react@18.2.0)
+        specifier: ^8.0.3
+        version: 8.0.3(react@18.2.0)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -3320,8 +3320,8 @@ packages:
   '@webassemblyjs/wast-printer@1.11.6':
     resolution: {integrity: sha512-JM7AhRcE+yW2GWYaKeHL5vt4xqee5N2WcezptmgyhNS+ScggqcT1OtXykhAb13Sn5Yas0j2uv9tHgrjwvzAP4A==}
 
-  '@welldone-software/why-did-you-render@8.0.1':
-    resolution: {integrity: sha512-PtLBjiHNX04gDPheMeAQP16S24JV3SOW6wGDUrm4bFPZmofmmflgvd4Kacf/jhB8zlX6equ8m3t6CS+OxA3Q4g==}
+  '@welldone-software/why-did-you-render@8.0.3':
+    resolution: {integrity: sha512-bb5bKPMStYnocyTBVBu4UTegZdBqzV1mPhxc0UIV/S43KFUSRflux9gvzJfu2aM4EWLJ3egTvdjOi+viK+LKGA==}
     peerDependencies:
       react: ^18
 
@@ -6116,7 +6116,7 @@ packages:
   puppeteer@21.11.0:
     resolution: {integrity: sha512-9jTHuYe22TD3sNxy0nEIzC7ZrlRnDgeX3xPkbS7PnbdwYjl2o/z/YuCrRBwezdKpbTDTJ4VqIggzNyeRcKq3cg==}
     engines: {node: '>=16.13.2'}
-    deprecated: < 22.6.4 is no longer supported
+    deprecated: < 22.8.2 is no longer supported
     hasBin: true
 
   qrcode.react@3.1.0:
@@ -11164,7 +11164,7 @@ snapshots:
       '@webassemblyjs/ast': 1.11.6
       '@xtuc/long': 4.2.2
 
-  '@welldone-software/why-did-you-render@8.0.1(react@18.2.0)':
+  '@welldone-software/why-did-you-render@8.0.3(react@18.2.0)':
     dependencies:
       lodash: 4.17.21
       react: 18.2.0
@@ -13504,8 +13504,8 @@ snapshots:
     dependencies:
       react: 18.2.0
 
-  material-react-table@2.7.0(4mnylyjngh6s5gzjatpdwhbapu):
-    dependencies:
+  ? material-react-table@2.7.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/icons-material@5.16.0(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mui/x-date-pickers@7.9.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(dayjs@1.11.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+  : dependencies:
       '@emotion/react': 11.11.4(@types/react@18.2.73)(react@18.2.0)
       '@emotion/styled': 11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0)
       '@mui/icons-material': 5.16.0(@mui/material@5.16.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.73)(react@18.2.0)

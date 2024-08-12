@@ -126,7 +126,7 @@
     "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/ui": "1.4.0",
-    "@welldone-software/why-did-you-render": "^8.0.1",
+    "@welldone-software/why-did-you-render": "^8.0.3",
     "autoprefixer": "^10.4.19",
     "babel-plugin-transform-imports": "^2.0.0",
     "dotenv": "^16.4.4",
