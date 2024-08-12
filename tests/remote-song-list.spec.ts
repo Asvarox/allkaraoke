@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
-import { connectRemoteMic, openRemoteMic } from './steps/openAndConnectRemoteMic';
+import { connectRemoteMic, openAndConnectRemoteMicDirectly, openRemoteMic } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
 
@@ -14,7 +14,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 // Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
 // Not disabling it globally so in case SW breaks the app it is caught by other tests
-test.use({ serviceWorkers: 'block' });
+//test.use({ serviceWorkers: 'block' });
 
 const P1_Name = 'E2E Test Blue';
 const songID = 'zzz-last-polish-1994';
@@ -61,4 +61,24 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
     await remoteMic.remoteMicMainPage.goToSongList();
     await remoteMic.remoteSongListPage.expectSongToBeVisible(convertedSongID);
   });
+});
+
+test('Adding songs to my list', async ({ page, browser, browserName }) => {
+  const songID = 'e2e-pass-test-spanish-1994';
+
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+  await pages.inputSelectionPage.selectSmartphones();
+
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+
+  await page.pause();
+  await remoteMic.remoteMicMainPage.goToSongList();
+  await expect(remoteMic.remoteSongListPage.getSongElement(songID)).toBeVisible();
+  await remoteMic.remoteSongListPage.addSongToFavouriteList(songID);
+  await remoteMic.remoteSongListPage.goToYourFavouriteList();
+  expect(remoteMic.remoteSongListPage.yourListButton).toHaveTextContent('1');
+  await remoteMic.remoteSongListPage.goToYourFavouriteList();
+  expect(remoteMic.remoteSongListPage.getSongElement(songID)).toBeVisible();
+  await page.pause();
 });
