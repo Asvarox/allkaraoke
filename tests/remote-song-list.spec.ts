@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
 import { connectRemoteMic, openAndConnectRemoteMicDirectly, openRemoteMic } from './steps/openAndConnectRemoteMic';
@@ -63,7 +63,7 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   });
 });
 
-test('Adding songs to my list', async ({ page, browser, browserName }) => {
+test('Adding and removing songs from Favourite list', async ({ page, browser, browserName }) => {
   const songID = 'e2e-pass-test-spanish-1994';
 
   await page.goto('/?e2e-test');
@@ -72,13 +72,23 @@ test('Adding songs to my list', async ({ page, browser, browserName }) => {
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
-  await page.pause();
-  await remoteMic.remoteMicMainPage.goToSongList();
-  await expect(remoteMic.remoteSongListPage.getSongElement(songID)).toBeVisible();
-  await remoteMic.remoteSongListPage.addSongToFavouriteList(songID);
-  await remoteMic.remoteSongListPage.goToYourFavouriteList();
-  expect(remoteMic.remoteSongListPage.yourListButton).toHaveTextContent('1');
-  await remoteMic.remoteSongListPage.goToYourFavouriteList();
-  expect(remoteMic.remoteSongListPage.getSongElement(songID)).toBeVisible();
-  await page.pause();
+  await test.step('Song is visible in Favourite List after adding', async () => {
+    await remoteMic.remoteMicMainPage.goToSongList();
+    await expect(remoteMic.remoteSongListPage.getSongElement(songID)).toBeVisible();
+    await remoteMic.remoteSongListPage.addSongToFavouriteList(songID);
+    await remoteMic.remoteSongListPage.expectFavouriteListToContainNumberOfSongs('1');
+    await remoteMic.remoteSongListPage.goToFavouriteList();
+    await remoteMic.remoteSongListPage.expectFavouriteListToBeSelected();
+    await expect(remoteMic.remoteSongListPage.getSongElement(songID)).toBeVisible();
+  });
+
+  await test.step('Deleting songs from Favourite List works - songs are not visible', async () => {
+    await remoteMic.remoteSongListPage.goToAllSongsPlaylist();
+    await remoteMic.remoteSongListPage.expectALlSongsPlaylistToBeSelected();
+    await remoteMic.remoteSongListPage.removeSongFromFavouriteList(songID);
+    await remoteMic.remoteSongListPage.expectFavouriteListToContainNumberOfSongs('0');
+    await remoteMic.remoteSongListPage.goToFavouriteList();
+    await remoteMic.remoteSongListPage.expectFavouriteListToBeSelected();
+    await expect(remoteMic.remoteSongListPage.getSongElement(songID)).not.toBeVisible();
+  });
 });

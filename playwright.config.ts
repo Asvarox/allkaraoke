@@ -53,7 +53,7 @@ const config: PlaywrightTestConfig = {
       slowMo: 50,
       args: [
         // '--auto-open-devtools-for-tabs',
-        //'--headless=new', // https://github.com/microsoft/playwright/issues/27598#issuecomment-1769220936
+        '--headless=new', // https://github.com/microsoft/playwright/issues/27598#issuecomment-1769220936
         '--no-sandbox',
         '--mute-audio',
         '--allow-file-access-from-files',
