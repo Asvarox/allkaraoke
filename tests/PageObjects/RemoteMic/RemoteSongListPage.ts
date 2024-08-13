@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, expect, Locator, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class RemoteSongListPagePO {
   constructor(
@@ -43,9 +43,27 @@ export class RemoteSongListPagePO {
     return this.page.getByTestId('your-list-button');
   }
 
-  public async goToYourFavouriteList() {
+  public async goToFavouriteList() {
     await this.yourListButton.click();
   }
 
-  public async expectListToBeSelected(listName: Locator) {}
+  public async expectFavouriteListToBeSelected() {
+    await expect(this.yourListButton).toHaveAttribute('data-active', 'true');
+  }
+
+  public async expectFavouriteListToContainNumberOfSongs(numberOfSongs: string) {
+    await expect(this.yourListButton).toContainText(numberOfSongs);
+  }
+
+  public get allSongsButton() {
+    return this.page.getByTestId('all-songs-button');
+  }
+
+  public async goToAllSongsPlaylist() {
+    await this.allSongsButton.click();
+  }
+
+  public async expectALlSongsPlaylistToBeSelected() {
+    await expect(this.allSongsButton).toHaveAttribute('data-active', 'true');
+  }
 }

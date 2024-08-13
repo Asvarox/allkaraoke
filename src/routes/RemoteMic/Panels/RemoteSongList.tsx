@@ -112,7 +112,7 @@ function RemoteSongList({
           data-test="search-input"
         />
         <Tabs>
-          <Tab data-active={tab === 'list'} onClick={() => changeTab('list')}>
+          <Tab data-test="all-songs-button" data-active={tab === 'list'} onClick={() => changeTab('list')}>
             All songs
           </Tab>
           <Tab data-test="your-list-button" data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
