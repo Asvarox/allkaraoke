@@ -25,7 +25,7 @@ export async function openRemoteMic(page: Page, context: BrowserContext, browser
 export async function openAndConnectRemoteMicDirectly(page: Page, browser: Browser, name: string) {
   return test.step(`Connect remote mic ${name}`, async () => {
     const context = await browser.newContext({
-      ...devices['Pixel 7'],
+      ...devices['Pixel 5'],
       // Firefox doesn't support isMobile
       isMobile: browser.browserType().name() !== 'firefox',
     });
@@ -41,7 +41,7 @@ export async function openAndConnectRemoteMicDirectly(page: Page, browser: Brows
 export async function openAndConnectRemoteMicWithCode(page: Page, browser: Browser, name: string) {
   return test.step(`Connect remote mic ${name} with code`, async () => {
     const context = await browser.newContext({
-      ...devices['Pixel 7'],
+      ...devices['Pixel 5'],
       // Firefox doesn't support isMobile
       isMobile: browser.browserType().name() !== 'firefox',
     });

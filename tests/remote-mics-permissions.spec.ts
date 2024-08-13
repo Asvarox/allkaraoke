@@ -24,7 +24,6 @@ test('Should properly manage remote mics permission settings', async ({ page, co
     await pages.settingsPage.expectDefaultPermissionToBeWrite();
     await pages.settingsPage.toggleDefaultPermission();
     await pages.settingsPage.expectDefaultPermissionToBeRead();
-
     await page.reload();
     await pages.settingsPage.expectDefaultPermissionToBeRead();
   });
@@ -33,7 +32,6 @@ test('Should properly manage remote mics permission settings', async ({ page, co
     await pages.settingsPage.quickConnectPhone();
   });
 
-  // Connect mic
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
 
   await test.step('Close quick connect', async () => {
@@ -44,28 +42,30 @@ test('Should properly manage remote mics permission settings', async ({ page, co
     await pages.settingsPage.expectDefaultPermissionToBeRead();
     await pages.settingsPage.expectConnectedDevicePermissionToBeRead();
 
-    await expect(remoteMic._page.getByTestId('no-permissions-message')).toBeVisible();
-    await expect(remoteMic._page.getByTestId('remote-keyboard')).not.toBeVisible();
-    await expect(remoteMic._page.getByTestId('change-player')).not.toBeVisible();
-    await remoteMic._page.getByTestId('menu-settings').click();
-    await expect(remoteMic._page.getByTestId('manage-game')).not.toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.noPermissionsToControlTheGameAlert).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.remoteKeyboardElement).not.toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.joinGameButton).not.toBeVisible();
+    await remoteMic.remoteMicMainPage.goToSettings();
+    await expect(remoteMic.remoteMicSettingsPage.manageGameButton).not.toBeVisible();
   });
 
   await test.step('Write access allows for keyboard and change player', async () => {
     await pages.settingsPage.toggleConnectedDevicePermission();
     await pages.settingsPage.expectConnectedDevicePermissionToBeWrite();
 
-    await expect(remoteMic._page.getByTestId('manage-game')).toBeVisible();
-    await remoteMic._page.getByTestId('menu-microphone').click();
-    await expect(remoteMic._page.getByTestId('remote-keyboard')).toBeVisible();
-    await expect(remoteMic._page.getByTestId('change-player')).toBeVisible();
+    await expect(remoteMic.remoteMicSettingsPage.manageGameButton).toBeVisible();
+    await remoteMic.remoteMicSettingsPage.goToMicMainPage();
+    await expect(remoteMic.remoteMicMainPage.noPermissionsToControlTheGameAlert).not.toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.remoteKeyboardElement).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.joinGameButton).toBeVisible();
   });
 
   await test.step('Selected permission is persisted for the remote mic', async () => {
     await remoteMic._page.reload();
     await connectRemoteMic(remoteMic._page);
 
-    await expect(remoteMic._page.getByTestId('remote-keyboard')).toBeVisible();
-    await expect(remoteMic._page.getByTestId('change-player')).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.noPermissionsToControlTheGameAlert).not.toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.remoteKeyboardElement).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.joinGameButton).toBeVisible();
   });
 });

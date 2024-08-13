@@ -12,8 +12,12 @@ export class RemoteMicSettingsPage {
     await this.page.getByTestId('microphone-settings').click();
   }
 
+  public get manageGameButton() {
+    return this.page.getByTestId('manage-game');
+  }
+
   public async goToManageGame() {
-    await this.page.getByTestId('manage-game').click();
+    await this.manageGameButton.click();
   }
 
   public async goToMicMainPage() {
