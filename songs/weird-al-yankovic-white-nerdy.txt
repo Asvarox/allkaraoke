@@ -1,0 +1,916 @@
+#ARTIST:“Weird Al” Yankovic
+#TITLE:White & Nerdy
+#CREATOR:IC
+#BPM:285,7
+#YEAR:2006
+#VIDEO:v=BpFwJyYXveY
+#LANGUAGE:English
+#GAP:6122,450122506125
+#ALLKARAOKE_ID:weird-al-yankovic-white-nerdy
+#ALLKARAOKE_LASTUPDATE:2024-08-15T00:15:53.116Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:143
+#ALLKARAOKE_VOLUME:0,91
+#MP3:“Weird Al” Yankovic - White & Nerdy.mp3
+: 19 2 -4 They 
+: 23 2 -4 see 
+: 27 2 -4 me 
+* 31 6 3 mow
+: 40 4 -4 in’
+- 44
+: 59 2 -4 My 
+: 63 5 3 front 
+: 71 7 4 lawn.
+- 78
+: 91 2 -4 I 
+: 95 6 1 know 
+: 103 2 1 they’re 
+: 107 2 1 all 
+: 111 2 1 thin
+: 115 2 1 kin’ 
+: 119 2 1 I’m 
+: 123 2 1 so
+- 125
+: 127 5 1 White 
+: 135 2 3 and 
+: 139 3 4 ner
+: 143 3 3 dy.
+- 146
+: 147 1 8 Think 
+: 149 1 7 I’m 
+: 151 2 8 just 
+: 155 3 8 too 
+: 159 2 3 white 
+: 163 2 3 and 
+: 167 3 4 ner
+: 171 3 3 dy,
+- 174
+: 179 1 8 Think 
+: 181 1 7 I’m 
+: 183 2 8 just 
+: 187 3 8 too 
+: 191 2 3 white 
+: 195 2 3 and 
+: 199 3 4 ner
+: 203 3 3 dy.
+- 206
+: 211 1 8 Can’t 
+: 213 1 7 you 
+: 215 3 8 see 
+: 219 2 8 I’m 
+: 223 2 3 white 
+: 227 2 3 and 
+: 231 3 4 ner
+: 235 3 3 dy?
+- 238
+: 243 1 8 Look 
+: 245 1 7 at 
+: 247 3 8 me 
+: 251 2 8 I’m 
+: 255 2 3 white 
+: 259 2 3 and 
+: 263 3 4 ner
+: 267 5 3 dy!
+- 272
+: 275 3 -4 I 
+: 279 3 -4 wan
+: 283 2 -4 na 
+* 287 7 3 roll 
+: 295 9 -4 with
+- 304
+: 315 2 -4 The 
+: 319 5 3 gang
+: 327 8 4 stas
+- 335
+: 347 2 -1 But 
+: 351 6 1 so 
+: 359 2 1 far 
+: 363 2 1 they 
+: 367 2 1 all 
+: 371 2 1 think 
+: 375 2 1 I’m 
+: 379 2 1 too
+- 381
+: 383 5 1 White 
+: 391 2 3 and 
+: 395 3 4 ner
+: 399 3 3 dy.
+- 402
+: 403 1 8 Think 
+: 405 1 7 I’m 
+: 407 2 8 just 
+: 411 3 8 too 
+: 415 2 3 white 
+: 419 2 3 and 
+: 423 3 4 ner
+: 427 3 3 dy,
+- 430
+: 435 1 8 Think 
+: 437 1 7 I’m 
+: 439 2 8 just 
+: 443 3 8 too 
+: 447 2 3 white 
+: 451 2 3 and 
+: 455 3 4 ner
+: 459 3 3 dy.
+- 462
+: 467 2 -5 I’m 
+: 471 2 -4 just 
+: 475 2 -4 too 
+: 479 6 1 white 
+: 487 5 3 and 
+: 495 2 -4 ner
+: 498 1 -4 dy.
+- 499
+: 500 1 8 Real
+: 502 1 7 ly, 
+: 504 1 8 real
+: 507 2 8 ly 
+: 511 3 3 white...
+- 514
+F 518 3 4 First 
+F 522 1 4 in 
+F 524 1 4 my 
+F 526 3 4 class 
+F 530 1 3 here 
+F 532 1 3 at 
+F 534 1 3 M
+F 536 3 3 I
+F 540 3 3 T,
+- 543
+F 546 3 4 Got 
+F 550 3 4 skills, 
+F 554 1 4 I’m 
+F 556 1 4 a 
+F 558 3 3 Cham
+F 562 1 3 pion 
+F 564 1 3 at 
+F 566 2 3 D
+F 569 2 4 &
+F 572 3 3 D.
+- 575
+F 576 2 4 M.
+F 579 2 4 C. 
+F 582 1 3 E
+F 584 1 3 scher 
+F 586 3 3 that’s 
+F 590 3 3 my 
+F 594 1 3 fa
+F 596 1 3 vo
+F 598 1 3 rite 
+F 600 3 3 M.
+F 604 4 3 C.,
+- 608
+F 610 1 4 Keep 
+F 612 1 4 your 
+F 614 1 4 4
+F 616 1 3 0, 
+F 618 3 3 I’ll 
+F 622 3 3 just 
+F 626 1 3 have 
+F 628 1 3 an 
+F 630 1 4 Earl 
+F 632 3 3 Grey 
+F 636 4 3 tea.
+- 640
+F 642 3 4 My 
+F 646 2 4 rims 
+F 649 1 4 ne
+F 651 2 3 ver 
+F 654 3 3 spin, 
+F 659 2 3 to 
+F 662 2 3 the 
+F 665 2 3 con
+F 668 3 4 tra
+F 672 3 3 ry,
+- 675
+F 678 2 4 You’ll 
+F 681 1 4 find 
+F 683 2 3 that 
+F 686 3 3 they’re 
+F 690 2 3 quite 
+F 694 3 3 sta
+F 698 1 3 tion
+F 700 3 4 a
+F 704 2 3 ry.
+- 706
+F 710 1 4 All 
+F 712 1 4 of 
+F 714 3 4 my 
+F 718 3 3 ac
+F 722 1 3 tion 
+F 724 3 3 fig
+F 728 1 3 ures 
+F 730 1 3 are 
+F 732 3 4 cher
+F 736 3 3 ry,
+- 739
+F 742 1 4 Ste
+F 744 1 4 phen 
+F 746 3 4 Haw
+F 750 4 3 king’s 
+F 756 1 3 in 
+F 758 1 3 my 
+F 760 3 3 li
+F 764 3 4 bra
+F 768 1 3 ry.
+- 769
+F 770 3 4 My 
+F 774 3 4 My
+F 778 3 3 Space 
+F 782 1 3 page 
+F 784 1 3 is 
+F 786 3 3 all 
+F 790 1 3 to
+F 792 1 3 tal
+F 794 1 3 ly 
+F 796 3 4 pimped 
+F 800 3 3 out,
+- 803
+F 806 3 4 Got 
+F 810 1 4 peo
+F 812 1 4 ple 
+F 814 1 3 beg
+F 816 1 3 gin’ 
+F 818 1 3 for 
+F 820 1 3 my 
+F 822 1 3 top 
+F 824 2 3 eight 
+F 828 3 3 spa
+F 832 3 3 ces.
+- 835
+F 838 3 4 Yo, 
+F 842 1 4 I 
+F 844 1 4 know 
+F 846 3 3 pi 
+F 850 1 3 to 
+F 852 1 3 a 
+F 854 2 3 thou
+F 857 2 4 sand 
+F 861 4 3 pla
+F 866 2 3 ces,
+- 868
+F 870 2 4 Ain’t 
+F 873 2 4 got 
+F 876 2 4 no 
+F 879 2 3 grills 
+F 882 1 3 but 
+F 884 1 3 I 
+F 886 3 3 still 
+F 890 2 4 wear 
+F 893 3 3 bra
+F 898 3 3 ces.
+- 901
+F 902 3 4 I 
+F 906 1 4 or
+F 908 1 4 der 
+F 910 1 3 all 
+F 912 1 3 of 
+F 914 1 3 my 
+F 916 3 3 sand
+F 920 1 3 wich
+F 922 1 3 es 
+F 924 1 3 with 
+F 926 3 3 ma
+F 930 1 3 yo
+F 932 3 3 naise,
+- 935
+F 936 1 4 I’m 
+F 938 1 4 a 
+F 940 3 4 wiz 
+F 944 1 3 at 
+F 946 3 3 Mine
+F 950 1 3 swee
+F 952 1 3 per, 
+F 954 1 3 I 
+F 956 1 3 could 
+F 958 3 3 play 
+F 962 1 3 for 
+F 964 3 3 days.
+- 967
+F 968 1 4 Once 
+F 970 1 4 you 
+F 972 3 4 see 
+F 976 1 3 my 
+F 978 3 3 sweet 
+F 982 1 3 moves,
+- 983
+F 984 1 4 You’re 
+F 986 1 4 gon
+F 988 1 3 na 
+F 990 3 3 stay 
+F 994 1 3 a
+F 996 3 3 mazed
+- 999
+F 1000 1 4 My 
+F 1002 1 4 fing
+F 1004 1 4 ers 
+F 1006 1 3 mo
+F 1008 1 3 vin’ 
+F 1010 3 3 so 
+F 1014 1 3 fast,
+- 1015
+F 1016 1 4 I 
+F 1018 1 4 set 
+F 1020 1 3 the 
+F 1022 3 3 place 
+F 1026 1 3 a
+F 1028 3 3 blaze.
+- 1031
+F 1032 1 4 There’s 
+F 1034 1 4 no 
+F 1036 1 3 kil
+F 1038 2 3 ler_
+F 1041 2 3 app 
+F 1044 1 3 I 
+F 1046 1 3 ha
+F 1048 3 3 ven’t 
+F 1052 5 3 run,
+- 1057
+F 1062 2 4 At 
+F 1066 3 4 Pas
+F 1070 3 3 cal, 
+F 1074 1 3 well 
+F 1076 1 3 I’m 
+F 1078 2 3 num
+F 1081 3 3 ber 
+F 1085 4 3 one.
+- 1089
+F 1094 3 4 Do 
+F 1098 1 4 vec
+F 1100 1 3 tor 
+F 1102 3 3 cal
+F 1106 1 3 cu
+F 1108 1 3 lus 
+F 1110 2 3 just 
+F 1113 2 3 for 
+F 1117 2 3 fun,
+- 1119
+F 1120 1 4 I 
+F 1122 3 4 ain’t 
+F 1126 1 4 got 
+F 1128 1 3 a 
+F 1130 2 3 gat, 
+F 1133 1 3 but 
+F 1135 2 3 I 
+F 1138 1 3 got 
+F 1140 1 3 a 
+F 1142 1 3 sol
+F 1144 1 3 der
+F 1146 2 3 ing 
+F 1150 4 3 gun.
+- 1154
+F 1159 3 4 Hap
+F 1163 3 4 py 
+F 1167 3 3 Days 
+F 1171 1 3 is 
+F 1173 1 3 my 
+F 1175 1 3 fa
+F 1177 1 3 vo
+F 1179 1 3 rite 
+F 1181 3 3 theme 
+F 1185 1 3 song,
+- 1186
+F 1187 1 4 I 
+F 1189 1 4 could 
+F 1191 3 3 sure 
+F 1195 1 3 kick 
+F 1197 1 3 your 
+F 1199 3 3 butt
+- 1202
+F 1203 1 4 In 
+F 1205 1 4 a 
+F 1207 1 3 game 
+F 1209 2 3 of 
+F 1212 3 3 ping-
+F 1216 3 3 pong.
+- 1219
+F 1221 1 4 I’ll 
+F 1223 3 4 ace 
+F 1227 1 3 a
+F 1229 1 3 ny 
+F 1231 3 3 tri
+F 1235 1 3 vi
+F 1237 1 3 a 
+F 1239 3 3 quiz 
+F 1243 1 3 you 
+F 1245 3 3 bring 
+F 1249 2 3 on,
+- 1251
+F 1252 2 4 I’m 
+F 1255 3 4 flu
+F 1259 1 3 ent 
+F 1261 1 3 in 
+F 1263 1 3 Ja
+F 1265 1 3 va
+F 1267 1 3 Script 
+F 1269 1 3 as 
+F 1271 1 3 well 
+F 1273 2 3 as 
+F 1277 3 3 Kling
+F 1281 3 3 on.
+- 1284
+: 1299 2 -4 You 
+: 1303 2 -4 see 
+: 1307 2 -4 me 
+* 1311 6 3 roll 
+: 1319 8 -4 on 
+: 1339 2 -4 my 
+* 1343 6 3 Seg
+: 1351 7 4 way.
+- 1358
+: 1371 2 -1 I 
+: 1375 5 1 know 
+: 1383 2 1 in 
+: 1387 2 1 my 
+: 1391 3 1 heart 
+: 1395 2 1 they 
+: 1399 3 1 think 
+: 1403 2 1 I’m
+- 1405
+: 1407 6 1 White 
+: 1415 2 3 and 
+: 1419 3 4 ner
+: 1423 3 3 dy.
+- 1426
+: 1427 1 8 Think 
+: 1429 1 7 I’m 
+: 1431 2 8 just 
+: 1435 2 8 too 
+: 1439 2 3 white 
+: 1443 2 3 and 
+: 1447 3 4 ner
+: 1451 3 3 dy,
+- 1454
+: 1459 1 8 Think 
+: 1461 1 7 I’m 
+: 1463 2 8 just 
+: 1467 2 8 too 
+: 1471 3 3 white 
+: 1475 2 3 and 
+: 1479 3 4 ner
+: 1483 3 3 dy.
+- 1486
+: 1491 1 8 Can’t 
+: 1493 1 7 you 
+: 1495 3 8 see 
+: 1499 2 8 I’m 
+: 1503 2 3 white 
+: 1507 2 3 and 
+: 1511 3 4 ner
+: 1515 3 3 dy?
+- 1518
+: 1523 1 8 Look 
+: 1525 1 7 at 
+: 1527 3 8 me 
+: 1531 2 8 I’m 
+: 1535 2 3 white 
+: 1539 2 3 and 
+: 1543 3 4 ner
+: 1547 3 3 dy.
+- 1550
+: 1555 2 -4 I’d 
+: 1559 2 -4 like 
+: 1563 2 -4 to 
+* 1567 6 3 roll 
+: 1575 7 -4 with
+- 1582
+: 1595 2 -4 The 
+: 1599 4 3 gangs
+: 1607 8 4 tas,
+- 1615
+: 1627 2 -1 Al
+: 1631 6 1 though 
+: 1639 2 1 it’s 
+: 1643 2 1 ap
+: 1647 3 1 par
+: 1651 2 1 ent 
+: 1655 2 1 I’m 
+: 1659 2 1 too
+- 1661
+: 1663 5 1 White 
+: 1671 2 3 and 
+: 1675 3 4 ner
+: 1679 3 3 dy.
+- 1682
+: 1683 1 8 Think 
+: 1685 1 7 I’m 
+: 1687 2 8 just 
+: 1691 2 8 too 
+: 1695 2 3 white 
+: 1699 2 3 and 
+: 1703 3 4 ner
+: 1707 3 3 dy,
+- 1710
+: 1715 1 8 Think 
+: 1717 1 7 I’m 
+: 1719 2 8 just 
+: 1723 2 8 too 
+: 1727 3 3 white 
+: 1731 2 3 and 
+: 1735 3 4 ner
+: 1739 2 3 dy.
+- 1741
+: 1747 2 1 I’m 
+: 1751 2 1 just 
+: 1755 3 1 too 
+: 1759 6 1 white 
+: 1767 4 3 and 
+: 1775 2 -4 ner
+: 1778 1 -4 dy.
+- 1779
+: 1780 1 8 How’d 
+: 1782 1 7 I 
+: 1784 1 8 get 
+: 1787 2 8 so 
+: 1791 2 3 white 
+: 1795 2 3 and 
+: 1799 3 4 ner
+: 1803 3 3 dy?
+- 1806
+F 1809 1 3 I’ve 
+F 1811 2 3 been 
+F 1815 3 6 brow
+F 1819 1 6 sin’, 
+F 1821 1 3 in
+F 1823 3 3 spec
+F 1827 3 3 tin’ 
+F 1831 3 6 X-
+F 1835 3 6 Men 
+F 1839 3 3 co
+F 1843 1 3 mics,
+- 1844
+F 1845 1 3 You 
+F 1847 1 3 know 
+F 1849 1 3 I 
+F 1851 3 6 col
+F 1855 2 6 lect’
+F 1858 2 3 em.
+- 1860
+F 1861 1 3 The 
+F 1863 3 6 pens 
+F 1867 1 6 in 
+F 1869 1 6 my 
+F 1871 3 6 po
+F 1875 1 3 cket, 
+F 1877 1 3 I 
+F 1879 3 6 must 
+F 1883 3 6 pro
+F 1887 3 6 tect 
+F 1891 3 3 them,
+- 1894
+F 1895 1 3 My 
+F 1897 1 6 er
+F 1899 1 6 go
+F 1901 3 6 no
+F 1906 3 3 mic 
+F 1911 3 6 key
+F 1915 2 3 board
+- 1917
+F 1919 1 3 Ne
+F 1921 1 3 ver 
+F 1923 3 3 leaves 
+F 1927 3 3 me 
+F 1931 3 3 bored.
+- 1934
+F 1935 1 3 Shop
+F 1937 1 3 pin’ 
+F 1939 1 3 on
+F 1941 3 3 line
+- 1944
+F 1945 1 3 For 
+F 1947 1 3 deals 
+F 1949 1 3 on 
+F 1951 1 3 some 
+F 1953 1 3 wri
+F 1955 1 3 ta
+F 1957 1 3 ble 
+F 1959 3 6 me
+F 1963 1 3 di
+F 1965 3 3 a,
+- 1968
+F 1969 1 3 I 
+F 1971 3 6 e
+F 1975 1 3 dit 
+F 1977 2 3 Wi
+F 1980 2 3 ki
+F 1983 3 6 pe
+F 1987 1 3 di
+F 1989 3 3 a.
+- 1992
+F 1993 1 3 I 
+F 1995 1 3 me
+F 1997 1 3 mo
+F 1999 2 3 rized 
+F 2002 1 3 Ho
+F 2004 1 3 ly 
+F 2006 1 3 Grail, 
+F 2008 1 3 oh 
+F 2010 1 3 real
+F 2012 1 3 ly 
+F 2014 2 3 well
+- 2016
+F 2017 1 3 I 
+F 2019 1 3 can 
+F 2021 1 3 re
+F 2023 1 3 cite 
+F 2025 1 3 it 
+F 2027 1 3 right 
+F 2029 3 3 now 
+F 2033 1 3 and 
+F 2035 1 3 have 
+F 2037 1 3 you
+- 2038
+F 2039 2 3 R
+F 2042 1 3 O
+F 2044 2 3 T
+F 2047 1 3 F
+F 2049 1 3 L
+F 2051 1 3 O
+F 2053 3 3 L.
+- 2056
+F 2057 1 3 I 
+F 2059 1 3 got 
+F 2061 1 3 a 
+F 2063 1 3 busi
+F 2065 1 3 ness 
+F 2067 1 3 do
+F 2069 1 3 ing 
+F 2071 3 6 web
+F 2075 3 3 sites,
+- 2078
+F 2083 1 3 When 
+F 2085 1 3 my 
+F 2087 3 3 friends 
+F 2091 1 3 need 
+F 2093 1 3 some 
+F 2095 3 6 code
+- 2098
+F 2099 3 3 Who 
+F 2103 3 6 do 
+F 2107 3 6 they 
+F 2111 5 3 call?
+- 2116
+F 2119 1 3 I 
+F 2121 1 3 do 
+F 2123 1 3 H
+F 2125 1 3 T
+F 2127 3 6 M
+F 2131 3 6 L 
+F 2135 3 6 for 
+F 2139 3 6 em 
+F 2143 5 3 all,
+- 2148
+F 2150 1 4 E
+F 2152 1 4 ven 
+F 2154 1 4 made 
+F 2156 2 3 a 
+F 2159 3 3 home
+F 2163 3 3 page 
+F 2167 3 3 for 
+F 2171 3 3 my 
+F 2175 6 3 dog, 
+F 2183 4 3 yo.
+- 2187
+F 2189 1 4 I 
+F 2191 1 4 got 
+F 2193 1 3 my
+F 2195 1 3 self 
+F 2197 1 3 a 
+F 2199 1 3 fan
+F 2201 1 3 ny 
+F 2203 4 3 pack,
+- 2207
+F 2211 1 4 They 
+F 2213 1 4 were 
+F 2215 1 3 ha
+F 2217 1 3 vin 
+F 2219 3 3 a 
+F 2223 3 3 sale 
+F 2227 1 3 down 
+F 2229 1 3 at 
+F 2231 3 3 The 
+F 2235 3 3 Gap.
+- 2238
+F 2239 3 3 Spend 
+F 2243 3 3 my 
+F 2247 3 3 nights 
+F 2251 1 3 with 
+F 2253 1 3 a 
+F 2255 3 3 roll 
+F 2259 3 3 of 
+F 2263 1 3 bub
+F 2265 1 3 ble 
+F 2267 3 3 wrap,
+- 2270
+F 2274 3 3 Pop, 
+F 2278 3 3 pop
+- 2281
+F 2283 3 3 Hope 
+F 2287 3 3 no 
+F 2291 2 3 one 
+F 2295 3 3 sees 
+F 2299 3 3 me 
+F 2307 1 3 get
+F 2309 1 3 tin’ 
+F 2311 3 3 frea
+F 2315 3 3 ky.
+- 2318
+: 2323 2 -4 I’m 
+: 2327 3 -4 ner
+: 2331 3 -4 dy 
+: 2335 2 -1 in 
+: 2339 3 -2 the 
+: 2343 2 -4 ex
+: 2347 3 -1 treme,
+- 2350
+: 2355 3 -1 Whi
+: 2359 3 -1 ter 
+: 2363 2 -4 than 
+: 2367 3 -4 so
+: 2371 2 -5 ur 
+: 2375 3 -1 cre
+: 2379 4 -2 am.
+- 2383
+: 2387 1 3 I 
+: 2389 1 3 was 
+: 2391 2 3 in 
+: 2395 2 6 A
+: 2399 2 6 V 
+: 2403 3 6 club 
+: 2407 2 3 and 
+: 2411 3 6 glee 
+: 2415 3 6 club
+- 2418
+: 2419 2 3 And 
+: 2423 1 6 e
+: 2425 1 6 ven 
+: 2427 2 3 the 
+: 2431 4 8 chess 
+: 2437 4 3 team.
+- 2441
+: 2443 1 3 On
+: 2445 1 3 ly 
+: 2447 2 6 ques
+: 2451 1 8 tion 
+: 2453 3 3 I 
+: 2459 1 3 e
+: 2461 1 3 ver 
+: 2463 2 6 thought 
+: 2467 1 8 was 
+: 2469 4 3 hard,
+- 2473
+: 2475 1 3 Was 
+: 2477 1 3 \"Do 
+: 2479 1 6 I 
+: 2481 2 8 like 
+: 2485 2 3 Kirk 
+: 2489 1 3 or 
+: 2491 1 3 do 
+: 2493 1 3 I 
+: 2495 1 6 like 
+: 2497 2 8 Pi
+: 2501 3 3 card?\".
+- 2504
+: 2511 1 1 Spend 
+: 2513 1 1 e
+: 2515 1 -1 very 
+: 2517 2 1 week
+: 2521 1 1 end
+- 2522
+: 2523 1 1 At 
+: 2525 1 -1 the 
+: 2527 2 1 Re
+: 2530 2 1 nais
+: 2534 1 1 sa
+: 2536 2 -1 ~nce 
+: 2540 3 1 Faire,
+- 2543
+: 2545 1 1 Got 
+: 2547 1 1 my 
+: 2549 3 1 name 
+: 2553 2 1 on 
+: 2557 1 3 my 
+: 2559 2 1 un
+: 2563 2 -1 der
+: 2567 5 -4 wear.
+- 2572
+: 2579 2 -4 They 
+: 2583 2 -4 see 
+: 2587 2 -4 me 
+* 2591 6 3 strol
+: 2599 6 -4 lin’,
+- 2605
+: 2619 2 -4 They’re 
+: 2623 5 3 laugh
+: 2631 8 4 in’
+- 2639
+: 2651 2 -1 And 
+: 2655 6 1 rol
+: 2663 2 1 lin’ 
+: 2667 3 1 their 
+: 2671 2 1 eyes 
+: 2675 2 1 cause 
+: 2679 2 1 I’m 
+: 2683 2 1 so
+- 2685
+: 2687 6 1 White 
+: 2695 2 3 and 
+: 2699 3 4 ner
+: 2703 3 3 dy.
+- 2706
+: 2707 1 8 Just 
+: 2709 1 7 be
+: 2711 2 8 cause 
+: 2715 2 8 I’m 
+: 2719 3 3 white 
+: 2723 2 3 and 
+: 2727 3 4 ner
+: 2731 3 3 dy,
+- 2734
+: 2739 1 8 Just 
+: 2741 1 7 be
+: 2743 3 8 cause 
+: 2747 2 8 I’m 
+: 2751 3 3 white 
+: 2755 2 3 and 
+: 2759 3 4 ner
+: 2763 3 3 dy.
+- 2766
+: 2771 1 8 All 
+: 2773 1 7 be
+: 2775 2 8 cause 
+: 2779 2 8 I’m 
+: 2783 2 3 white 
+: 2787 2 3 and 
+: 2791 3 4 ner
+: 2795 3 3 dy.
+- 2798
+: 2803 1 8 Ho
+: 2805 1 7 ly 
+: 2807 3 8 cow 
+: 2811 2 8 I’m 
+: 2815 2 3 white 
+: 2819 2 3 and 
+: 2823 3 4 ner
+: 2827 3 3 dy.
+- 2830
+: 2835 2 -4 I 
+: 2839 2 -4 wan
+: 2843 2 -4 na 
+* 2847 6 3 bowl 
+: 2855 8 -4 with
+- 2863
+: 2875 2 -3 The 
+: 2879 5 3 gangs
+: 2887 9 4 tas
+- 2896
+: 2907 2 -1 But 
+: 2911 6 1 oh 
+: 2919 3 1 well, 
+: 2923 2 1 it’s 
+: 2927 2 1 ob
+: 2931 3 1 vi
+: 2935 2 1 ous 
+: 2939 2 1 I’m
+- 2941
+: 2943 6 1 White 
+: 2951 2 3 and 
+: 2955 3 4 ner
+: 2959 3 3 dy.
+- 2962
+: 2963 1 8 Think 
+: 2965 1 7 I’m 
+: 2967 2 8 just 
+: 2971 2 8 too 
+: 2975 3 3 white 
+: 2979 2 3 and 
+: 2983 3 4 ner
+: 2987 3 3 dy,
+- 2990
+: 2995 1 8 Think 
+: 2997 1 7 I’m 
+: 2999 2 8 just 
+: 3003 2 8 too 
+: 3007 2 3 white 
+: 3011 2 3 and 
+: 3015 3 4 ner
+: 3019 3 3 dy.
+- 3022
+: 3027 2 -4 I’m 
+: 3031 2 -4 just 
+: 3035 2 -4 too 
+: 3039 6 1 white 
+: 3047 5 3 and 
+: 3055 2 -4 ner
+: 3058 1 -4 dy.
+- 3059
+: 3060 1 8 Look 
+: 3062 1 7 at 
+: 3064 2 8 me 
+: 3067 2 8 I’m 
+: 3071 2 3 white 
+: 3075 2 3 and 
+: 3079 3 4 ner
+: 3083 3 3 dy!
+E
