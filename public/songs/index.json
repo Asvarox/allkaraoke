@@ -8167,6 +8167,59 @@
     "local": false
   },
   {
+    "id": "bad-lip-reading-bushes-of-love",
+    "title": "Bushes Of Love",
+    "artist": "Bad Lip Reading",
+    "video": "RySHDUU2juM",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 11132.142857142857,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:50.762Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "masterxy",
+    "tracks": [
+      {
+        "start": 55
+      },
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 2,
+    "search": "badlipreadingbushesoflove",
+    "local": false
+  },
+  {
+    "id": "bad-lip-reading-seagulls-stop-it-now",
+    "title": "Seagulls! (Stop It Now!)",
+    "artist": "Bad Lip Reading",
+    "video": "U9t-slLl30E",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 18600,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:51.635Z",
+    "realBpm": 120,
+    "volume": 0.76,
+    "author": "masterxy",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "badlipreadingseagullsstopitnow",
+    "local": false
+  },
+  {
     "id": "bad-omens-the-grey",
     "title": "The Grey",
     "artist": "Bad Omens",
@@ -8245,6 +8298,31 @@
     ],
     "tracksCount": 1,
     "search": "bajmmysliislowa",
+    "local": false
+  },
+  {
+    "id": "baldurs-gate-3-down-by-the-river",
+    "title": "Down By The River",
+    "artist": "Baldur’s Gate 3",
+    "video": "gnkQAedlx_I",
+    "language": [
+      "English"
+    ],
+    "bpm": 303.84,
+    "gap": 14002.63823064771,
+    "year": "2023",
+    "lastUpdate": "2024-08-15T00:15:51.636Z",
+    "genre": "Soundtrack",
+    "realBpm": 122,
+    "volume": 0.83,
+    "author": "Hel",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "baldursgate3downbytheriver",
     "local": false
   },
   {
@@ -20026,6 +20104,31 @@
     "local": false
   },
   {
+    "id": "david-hasselhoff-do-the-limbo-dance",
+    "title": "Do The Limbo Dance",
+    "artist": "David Hasselhoff",
+    "video": "38JdxqN6hLo",
+    "language": [
+      "English"
+    ],
+    "bpm": 211,
+    "gap": 26474.73933649289,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:51.815Z",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "jockel1974",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "davidhasselhoffdothelimbodance",
+    "local": false
+  },
+  {
     "id": "dde-rompa-mi",
     "title": "Rompa mi",
     "artist": "D.D.E.",
@@ -20418,6 +20521,57 @@
     ],
     "tracksCount": 1,
     "search": "deeppurplesmokeonthewater",
+    "local": false
+  },
+  {
+    "id": "def-leppard-hysteria",
+    "title": "Hysteria",
+    "artist": "Def Leppard",
+    "video": "yMzyleT2FqY",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 16898.69158878505,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-08-15T00:15:51.996Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "sledge",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "defleppardhysteria",
+    "local": false
+  },
+  {
+    "id": "def-leppard-photograph",
+    "title": "Photograph",
+    "artist": "Def Leppard",
+    "video": "D4dHr8evt6k",
+    "language": [
+      "English"
+    ],
+    "bpm": 370.29,
+    "gap": 8987.280239812038,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-08-15T00:15:52.181Z",
+    "genre": "Rock",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "defleppardphotograph",
     "local": false
   },
   {
@@ -29378,6 +29532,31 @@
     "local": false
   },
   {
+    "id": "ghost-square-hammer",
+    "title": "Square Hammer",
+    "artist": "Ghost",
+    "video": "VqoyKzgkqR4",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.9,
+    "gap": 28742.614028363358,
+    "year": "2016",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-08-15T00:15:52.183Z",
+    "realBpm": 130,
+    "volume": 0.77,
+    "author": "Lisi-Keksfee",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ghostsquarehammer",
+    "local": false
+  },
+  {
     "id": "gi-dle-queencard",
     "title": "Queencard",
     "artist": "(G)I-DLE",
@@ -29807,6 +29986,57 @@
     ],
     "tracksCount": 1,
     "search": "gloriagaynoriwillsurvive",
+    "local": false
+  },
+  {
+    "id": "gloryhammer-angus-mcfife",
+    "title": "Angus McFife",
+    "artist": "GloryHammer",
+    "video": "VTW30Q4B3Go",
+    "language": [
+      "English"
+    ],
+    "bpm": 360.08,
+    "gap": 4760.222172850477,
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-08-15T00:15:52.184Z",
+    "realBpm": 90,
+    "volume": 0.96,
+    "author": "Shifty",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gloryhammerangusmcfife",
+    "local": false
+  },
+  {
+    "id": "gloryhammer-universe-on-fire",
+    "title": "Universe On Fire",
+    "artist": "GloryHammer",
+    "video": "gXzMD065HEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 350.1,
+    "gap": 1244.5672664952872,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-08-15T00:15:52.356Z",
+    "genre": "Power Metal",
+    "realBpm": 175,
+    "volume": 0.86,
+    "author": "Lisi-Keksfee",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gloryhammeruniverseonfire",
     "local": false
   },
   {
@@ -37787,6 +38017,35 @@
     ],
     "tracksCount": 1,
     "search": "kanebrownusedtoloveyousober",
+    "local": false
+  },
+  {
+    "id": "kansas-carry-on-wayward-son",
+    "title": "Carry On Wayward Son",
+    "artist": "Kansas",
+    "video": "tz6u9suVNlY",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.35,
+    "gap": -794.0104498534471,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:52.358Z",
+    "genre": "Rock Progresivo",
+    "realBpm": 127,
+    "previewEnd": 313,
+    "volume": 0.75,
+    "author": "LeSpank",
+    "sourceUrl": "https://www.youtube.com/watch?v=tz6u9suVNlY",
+    "tracks": [
+      {
+        "name": "Carry on Wayward Son",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kansascarryonwaywardson",
     "local": false
   },
   {
@@ -61033,6 +61292,31 @@
     "local": false
   },
   {
+    "id": "reik-ya-me-entere",
+    "title": "Ya me enteré",
+    "artist": "Reik",
+    "video": "QZ-QwCACZ-A",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 263.86,
+    "gap": 6919.730084135526,
+    "year": "2016",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-08-15T00:15:52.541Z",
+    "realBpm": 132,
+    "volume": 0.78,
+    "author": "Serenito",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "reikyameentere",
+    "local": false
+  },
+  {
     "id": "rem-everybody-hurts",
     "title": "Everybody Hurts",
     "artist": "R.E.M.",
@@ -71034,6 +71318,31 @@
     "local": false
   },
   {
+    "id": "tenacious-d-baby-one-more-time",
+    "title": "...Baby One More Time",
+    "artist": "Tenacious D",
+    "video": "_oYSiPBUuC8",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 5495,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:52.542Z",
+    "realBpm": 200,
+    "volume": 0.78,
+    "author": "Viktor1234678",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tenaciousdbabyonemoretime",
+    "local": false
+  },
+  {
     "id": "tenacious-d-beelzeboss-the-final-showdown",
     "title": "Beelzeboss (The Final Showdown)",
     "artist": "Tenacious D",
@@ -71148,6 +71457,32 @@
     ],
     "tracksCount": 1,
     "search": "tenaciousdmasterexploder",
+    "local": false
+  },
+  {
+    "id": "tenacious-d-rize-of-the-fenix",
+    "title": "Rize Of The Fenix",
+    "artist": "Tenacious D",
+    "video": "ls3rD8VfiSY",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.85,
+    "gap": 9297.120170063774,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:52.543Z",
+    "genre": "Rock",
+    "realBpm": 96,
+    "volume": 0.86,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tenaciousdrizeofthefenix",
     "local": false
   },
   {
@@ -71471,6 +71806,32 @@
     ],
     "tracksCount": 1,
     "search": "thebaseballsringringalovelysound",
+    "local": false
+  },
+  {
+    "id": "the-beach-boys-kokomo",
+    "title": "Kokomo",
+    "artist": "The Beach Boys",
+    "video": "Ke1Us_3qfkg",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.5,
+    "gap": 2860.3220035778177,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:52.545Z",
+    "genre": "Soundtrack",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "Way2Evil",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thebeachboyskokomo",
     "local": false
   },
   {
@@ -74907,6 +75268,30 @@
     ],
     "tracksCount": 1,
     "search": "thewhowontgetfooledagain",
+    "local": false
+  },
+  {
+    "id": "the-witcher-joey-batey-burn-butcher-burn",
+    "title": "Burn Butcher Burn",
+    "artist": "The Witcher (Joey Batey)",
+    "video": "SPiz96e8w4k",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 5650.384615384615,
+    "year": "2021",
+    "lastUpdate": "2024-08-15T00:15:52.758Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "Oli Lan",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thewitcherjoeybateyburnbutcherburn",
     "local": false
   },
   {
@@ -78595,6 +78980,107 @@
     ],
     "tracksCount": 1,
     "search": "weezerperfectsituation",
+    "local": false
+  },
+  {
+    "id": "weird-al-yankovic-amish-paradise",
+    "title": "Amish Paradise",
+    "artist": "“Weird Al” Yankovic",
+    "video": "xo74Dn7W_pA",
+    "language": [
+      "English"
+    ],
+    "bpm": 327.7,
+    "gap": 12712.981385413488,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:52.933Z",
+    "genre": "Parody",
+    "realBpm": 81,
+    "volume": 0.85,
+    "author": "Nudelsuppe",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weirdalyankovicamishparadise",
+    "local": false
+  },
+  {
+    "id": "weird-al-yankovic-eat-it",
+    "title": "Eat It",
+    "artist": "“Weird Al” Yankovic",
+    "video": "WBuszEbobq0",
+    "language": [
+      "English"
+    ],
+    "bpm": 295.5,
+    "gap": 28509.632008154946,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:53.112Z",
+    "realBpm": 147,
+    "volume": 0.84,
+    "author": "macgyver2809",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weirdalyankoviceatit",
+    "local": false
+  },
+  {
+    "id": "weird-al-yankovic-fat",
+    "title": "Fat",
+    "artist": "“Weird Al” Yankovic",
+    "video": "PAPKpR7QJbw",
+    "language": [
+      "English"
+    ],
+    "bpm": 234,
+    "gap": 28623.358974358973,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:53.114Z",
+    "realBpm": 116,
+    "volume": 0.86,
+    "author": "macgyver2809",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weirdalyankovicfat",
+    "local": false
+  },
+  {
+    "id": "weird-al-yankovic-white-nerdy",
+    "title": "White & Nerdy",
+    "artist": "“Weird Al” Yankovic",
+    "video": "BpFwJyYXveY",
+    "language": [
+      "English"
+    ],
+    "bpm": 285.7,
+    "gap": 6122.450122506125,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-15T00:15:53.116Z",
+    "realBpm": 143,
+    "volume": 0.91,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weirdalyankovicwhitenerdy",
     "local": false
   },
   {
