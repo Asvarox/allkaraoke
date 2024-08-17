@@ -681,10 +681,10 @@
       "English"
     ],
     "bpm": 400,
-    "gap": 15927.5,
+    "gap": 15977.5,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-08T11:49:20.962Z",
+    "lastUpdate": "2024-08-17T00:15:08.057Z",
     "genre": "Pop",
     "realBpm": 141,
     "volume": 0.76,
@@ -18598,10 +18598,10 @@
       "Spanish"
     ],
     "bpm": 392,
-    "gap": 7379.102040816327,
+    "gap": 7679.102040816327,
     "year": "2008",
     "artistOrigin": "PR",
-    "lastUpdate": "2024-02-13T06:15:26.473Z",
+    "lastUpdate": "2024-08-17T00:15:08.066Z",
     "genre": "Reggaeton",
     "realBpm": 98,
     "volume": 0.75,
@@ -22119,13 +22119,13 @@
       "English"
     ],
     "bpm": 243.6,
-    "gap": 7173.778325123153,
+    "gap": 7223.778325123153,
     "year": "1997",
-    "lastUpdate": "2024-05-07T05:09:36.264Z",
+    "lastUpdate": "2024-08-17T00:15:08.073Z",
     "edition": "[DUET]-Songs",
     "genre": "Pop",
     "realBpm": 111,
-    "volume": 0.99,
+    "volume": 1,
     "author": "Angeloffate",
     "tracks": [
       {
@@ -50611,10 +50611,10 @@
       "English"
     ],
     "bpm": 228.2,
-    "gap": 16994.022787028924,
+    "gap": 17294.022787028924,
     "year": "1985",
     "artistOrigin": "DE",
-    "lastUpdate": "2024-02-20T21:16:30.756Z",
+    "lastUpdate": "2024-08-17T00:15:08.781Z",
     "genre": "Pop",
     "realBpm": 114,
     "previewStart": 60,
@@ -52076,10 +52076,10 @@
       "English"
     ],
     "bpm": 345.12,
-    "gap": 16990.347705146036,
+    "gap": 17040.347705146036,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2024-06-05T00:10:22.749Z",
+    "lastUpdate": "2024-08-17T00:15:08.787Z",
     "genre": "Pop",
     "realBpm": 173,
     "volume": 0.81,
@@ -56363,10 +56363,10 @@
       "English"
     ],
     "bpm": 234,
-    "gap": 4.358974358974365,
+    "gap": 54.358974358974365,
     "year": "2019",
     "artistOrigin": "US",
-    "lastUpdate": "2023-10-15T11:26:31.316Z",
+    "lastUpdate": "2024-08-17T00:15:08.789Z",
     "realBpm": 117,
     "volume": 0.7,
     "author": "DoubleDee73",
@@ -73139,7 +73139,7 @@
     "gap": 18700,
     "year": "2017",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-08T16:26:57.536Z",
+    "lastUpdate": "2024-08-17T00:15:08.790Z",
     "realBpm": 132,
     "volume": 1,
     "author": "matthu",
@@ -73161,19 +73161,20 @@
       "English"
     ],
     "bpm": 360,
-    "gap": -90,
+    "gap": 85,
     "year": "2017",
-    "lastUpdate": "2024-05-08T09:09:17.090Z",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-17T00:15:08.794Z",
     "genre": "Soundtrack",
     "realBpm": 125,
     "volume": 0.79,
     "author": "Baklap4",
     "tracks": [
       {
-        "start": 18
+        "start": 15
       },
       {
-        "start": 1770
+        "start": 1767
       }
     ],
     "tracksCount": 2,
@@ -75491,10 +75492,10 @@
       "English"
     ],
     "bpm": 310,
-    "gap": 6253.870967741936,
+    "gap": 6603.870967741936,
     "year": "2003",
     "artistOrigin": "CA",
-    "lastUpdate": "2024-03-20T06:29:33.907Z",
+    "lastUpdate": "2024-08-17T00:15:08.795Z",
     "genre": "Alternative Rock",
     "realBpm": 154,
     "volume": 0.72,
