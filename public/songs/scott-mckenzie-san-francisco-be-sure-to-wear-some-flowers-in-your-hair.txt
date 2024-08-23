@@ -1,0 +1,247 @@
+#ARTIST:Scott McKenzie
+#TITLE:San Francisco (Be Sure To Wear Some Flowers In Your Hair)
+#CREATOR:IC
+#BPM:226,75
+#YEAR:1967
+#VIDEO:v=LlVwcBTXwmo
+#LANGUAGE:English
+#GAP:4907,7177508269015
+#ALLKARAOKE_ID:scott-mckenzie-san-francisco-be-sure-to-wear-some-flowers-in-your-hair
+#ALLKARAOKE_LASTUPDATE:2024-08-23T06:38:45.034Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3773
+#ALLKARAOKE_VOLUME:0,86
+#MP3:Scott McKenzie - San Francisco (Be Sure To Wear Some Flowers In Your Hair).mp3
+: 15 4 7 If 
+: 23 3 7 you’re 
+: 31 4 16 go
+: 37 19 16 ing 
+: 60 2 16 to 
+: 64 12 14 San 
+: 80 12 14 Fran
+: 96 2 11 cis
+: 101 12 9 co
+- 113 126
+- 126
+: 141 4 7 Be 
+: 149 4 7 sure 
+: 156 2 7 to 
+* 161 21 16 wear 
+: 188 3 16 some 
+: 194 5 14 flo
+: 201 5 16 wers 
+: 210 2 14 in 
+: 214 6 11 your 
+: 225 17 9 hair
+- 242 258
+- 258
+: 273 3 7 If 
+: 278 4 9 you
+: 283 3 7 ~’re 
+: 289 3 14 go
+: 295 13 11 ing 
+: 318 2 9 to 
+: 322 9 7 San 
+: 337 10 7 Fran
+: 354 2 4 cis
+: 358 13 2 co
+- 371 386
+- 386
+: 401 3 7 You’re 
+: 406 3 7 go
+: 410 3 9 nna 
+: 417 14 11 meet
+- 431
+: 446 5 16 Some 
+: 457 2 14 gen
+: 461 3 16 tle 
+: 467 3 14 peo
+: 472 5 11 ple 
+: 482 24 9 there
+- 506 538
+- 538
+: 553 5 7 For 
+: 562 5 7 those 
+: 570 3 7 who 
+* 578 24 16 come 
+: 606 2 16 to 
+: 610 12 14 San 
+: 627 11 14 Fran
+: 642 2 11 cis
+: 647 13 9 co
+- 660 675
+- 675
+: 690 3 7 Su
+: 694 4 7 mmer
+: 704 25 16 time 
+: 735 4 16 will 
+: 744 3 14 be 
+: 750 2 16 a 
+: 754 4 14 love 
+: 759 5 11 in 
+: 770 22 9 there
+- 792 804
+- 804
+: 819 3 7 In
+: 823 2 9 ~ 
+: 827 3 7 the 
+: 835 3 14 stree
+: 839 11 11 ~ts
+- 850
+: 862 2 9 Of 
+: 867 10 7 San 
+: 883 10 7 Fran
+: 899 2 4 cis
+: 904 11 2 co
+- 915 932
+- 932
+: 947 3 7 Gen
+: 953 4 9 tle 
+: 963 3 11 peo
+: 967 7 11 ple
+- 974 976
+- 976
+: 991 4 16 With 
+: 1001 4 14 flo
+: 1007 4 16 wers 
+: 1013 3 14 in 
+: 1017 6 11 their 
+* 1029 51 9 hair
+- 1080 1083
+- 1083
+: 1098 3 17 All 
+: 1103 2 17 a
+: 1107 4 17 cross 
+: 1114 2 16 the 
+: 1118 3 16 na
+: 1125 10 14 tion
+- 1135 1148
+- 1148
+: 1163 2 17 Such 
+: 1167 2 17 a 
+: 1171 5 17 strange 
+: 1179 2 16 vi
+: 1184 3 16 bra
+: 1191 16 14 tion
+: 1211 4 12 ~
+: 1219 4 11 ~
+- 1223
+: 1235 3 12 Peo
+: 1239 2 11 ple 
+: 1243 2 11 in 
+: 1247 4 12 mo
+: 1255 22 11 tion
+- 1277 1307
+- 1307
+: 1322 2 17 There’s 
+: 1326 2 17 a 
+: 1330 3 17 whole 
+: 1335 2 16 ge
+: 1338 2 16 ne
+: 1342 3 16 ra
+: 1348 11 14 tion
+- 1359 1370
+- 1370
+: 1385 2 17 With 
+: 1389 2 17 a 
+: 1393 2 17 new 
+: 1397 2 16 ex
+: 1401 2 16 pla
+: 1405 4 16 na
+: 1414 15 14 tio
+: 1432 6 12 ~
+: 1441 4 11 ~n
+- 1445
+: 1457 3 11 Peo
+: 1461 2 12 ple 
+: 1465 2 11 in 
+: 1469 4 12 mo
+: 1478 15 11 tion
+- 1493 1505
+- 1505
+: 1520 3 14 Peo
+: 1524 2 16 ple 
+: 1528 2 14 in 
+* 1532 6 16 mo
+: 1544 13 14 tion
+- 1557 1560
+- 1560
+: 1575 3 11 Fo
+: 1579 2 9 ~r 
+: 1583 3 7 those 
+: 1590 5 19 who 
+* 1599 19 16 come 
+: 1623 3 16 to 
+: 1630 12 14 San 
+: 1646 11 14 Fran
+: 1662 2 11 cis
+: 1666 9 9 co
+- 1675 1690
+- 1690
+: 1705 4 7 Be 
+: 1713 4 7 sure 
+: 1721 3 19 to 
+: 1726 22 16 wear 
+: 1754 4 16 some 
+: 1763 4 14 flo
+: 1769 3 16 wers 
+: 1775 3 14 in 
+: 1780 5 11 your 
+: 1790 23 9 hair
+- 1813 1822
+- 1822
+: 1837 2 7 If 
+: 1841 4 9 you
+: 1846 2 7 ~ 
+* 1853 3 14 co
+: 1857 7 11 ~me
+- 1864 1866
+- 1866
+: 1881 2 9 To 
+: 1886 9 7 San 
+: 1901 9 7 Fran
+: 1917 2 4 cis
+: 1921 10 2 co
+- 1931 1950
+- 1950
+: 1965 3 7 Sum
+: 1969 4 9 mer
+: 1979 15 11 time
+- 1994 1996
+- 1996
+: 2011 4 16 Will 
+: 2019 3 14 be 
+: 2025 3 16 a 
+: 2030 3 14 love 
+: 2034 3 11 i
+: 2038 2 9 ~n 
+: 2045 44 7 there
+- 2089 2134
+- 2134
+: 2149 8 9 If 
+: 2163 4 11 you 
+: 2171 15 13 come 
+: 2197 3 11 to 
+: 2205 12 9 San 
+: 2221 9 9 Fran
+: 2237 2 6 cis
+: 2242 9 4 co
+- 2251 2270
+- 2270
+: 2285 3 9 Sum
+: 2289 3 11 me
+: 2293 3 9 ~r
+* 2301 3 16 ti
+: 2305 9 13 ~me
+- 2314 2320
+- 2320
+: 2335 3 18 Will 
+: 2342 2 16 be 
+: 2346 2 18 a 
+: 2350 3 16 love 
+: 2355 2 13 i
+: 2358 3 11 ~n 
+: 2365 27 9 there
+E
