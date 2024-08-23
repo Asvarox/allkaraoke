@@ -1,0 +1,883 @@
+#ARTIST:DJ Jazzy Jeff & The Fresh Prince
+#TITLE:Summertime
+#BPM:189,86
+#YEAR:1991
+#VIDEO:v=Kr0tTbTbmVA
+#GENRE:Rap
+#LANGUAGE:English
+#GAP:17398,84435305283
+#ALLKARAOKE_ID:dj-jazzy-jeff-the-fresh-prince-summertime
+#ALLKARAOKE_LASTUPDATE:2024-08-23T06:38:34.660Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_VOLUME:0,99
+#MP3:DJ Jazzy Jeff & The Fresh Prince - Summertime.mp3
+#COVER:DJ Jazzy Jeff & The Fresh Prince - Summertime.jpg
+: 13 2 65 Sum
+: 15 2 67 mer, 
+: 19 3 67 sum
+: 23 3 69 mer, 
+: 27 2 67 sum
+: 31 2 69 mer
+: 35 4 70 time
+: 39 2 69 ~
+- 41 64
+- 64
+: 77 2 65 And 
+: 79 2 67 just 
+: 83 4 67 sit 
+: 87 2 69 back 
+: 91 2 70 and 
+: 95 2 65 un
+: 99 8 65 wind
+- 107 116
+- 116
+F 129 2 65 Here 
+F 131 2 65 it 
+F 133 5 65 is 
+F 139 2 65 a 
+F 141 4 65 groove
+- 145
+F 147 4 62 Slight
+F 151 2 62 ly 
+F 153 7 62 trans
+F 161 6 62 formed
+- 167
+F 169 2 65 Just 
+F 171 2 65 a 
+F 173 2 65 bit 
+F 175 2 65 of 
+F 177 2 65 a 
+F 179 2 65 break 
+F 183 2 65 from 
+F 185 2 65 the 
+F 187 4 65 norm
+- 191
+F 197 2 62 Just 
+F 199 2 62 a 
+F 201 2 62 litt
+F 203 2 62 le 
+F 205 2 62 some
+F 207 1 62 thing
+- 208
+F 209 2 65 To 
+F 211 2 65 break 
+F 213 2 65 the 
+F 215 2 65 mo
+F 217 2 65 no
+F 219 2 65 to
+F 221 2 65 ny
+- 223
+F 227 2 62 Of 
+F 229 2 62 all 
+F 231 3 62 that 
+F 235 3 62 hard
+F 239 3 62 core 
+F 243 3 62 dance
+- 246
+F 247 2 65 That 
+F 249 2 65 has 
+F 251 2 65 got
+F 253 2 65 ten 
+F 255 2 65 to 
+F 257 1 65 be
+- 258
+F 259 2 62 A 
+F 261 2 62 litt
+F 263 2 62 le 
+F 265 2 62 bit 
+F 269 2 62 out 
+F 271 2 62 of 
+F 273 2 62 cont
+F 275 2 62 rol
+- 277
+F 279 2 65 It's 
+F 281 2 65 cool 
+F 285 2 65 to 
+F 287 2 65 dance
+- 289
+F 291 2 62 But 
+F 293 2 62 what 
+F 295 2 62 a
+F 297 2 62 bout 
+F 299 2 62 a 
+F 301 2 62 groove
+- 303
+F 305 2 65 That 
+F 307 2 65 soothes 
+F 311 2 65 to 
+F 313 2 65 move 
+F 317 2 65 ro
+F 319 5 65 mance
+- 324
+F 333 2 62 Give 
+F 335 2 62 me 
+F 337 2 62 a 
+F 339 2 62 soft 
+F 343 2 62 sub
+F 345 2 62 tle 
+F 347 2 62 mix
+- 349
+F 355 2 65 And 
+F 357 2 65 if 
+F 359 2 65 it 
+F 361 2 65 ain't 
+F 365 2 65 broke
+- 367
+F 369 2 62 Then 
+F 371 2 62 don't 
+F 375 2 62 try 
+F 377 2 62 to 
+F 379 2 62 fix 
+F 383 2 62 it
+- 385
+F 395 2 65 And 
+F 397 2 65 think 
+F 399 2 65 of 
+F 401 2 65 the 
+F 403 2 65 sum
+F 405 2 65 mers 
+F 407 2 65 of 
+F 409 2 65 the 
+F 411 4 65 past
+- 415
+F 419 2 62 Ad
+F 421 2 62 just 
+F 425 2 62 the 
+F 427 2 62 bass
+- 429
+F 431 2 65 And 
+F 433 2 65 let 
+F 435 2 65 the 
+F 437 3 65 al
+F 441 3 65 pine 
+F 445 3 65 blast
+- 448
+F 453 2 62 Pop 
+F 455 2 62 in 
+F 459 2 62 my 
+F 463 2 62 C 
+F 467 2 62 D 
+F 469 2 62 and 
+F 471 2 62 let 
+F 473 2 62 me 
+F 475 2 62 run 
+F 477 2 62 a 
+F 479 2 62 rhyme
+- 481
+F 483 2 66 And 
+F 485 2 66 put 
+F 487 3 66 your 
+F 491 3 66 car 
+F 495 3 66 on 
+F 499 3 66 cruise 
+F 503 2 66 and 
+F 505 2 66 lay 
+F 507 2 66 back
+- 509
+F 511 2 61 'Cause 
+F 513 4 61 it's 
+F 517 2 61 sum
+F 519 2 61 mer
+F 521 2 61 time
+- 523
+: 525 2 65 Sum
+: 527 2 67 mer, 
+: 531 3 67 sum
+: 535 3 69 mer, 
+: 539 2 67 sum
+: 543 2 69 mer
+: 547 4 70 time
+: 551 2 69 ~
+- 553
+: 565 2 69 Sum
+: 567 2 67 mer
+: 569 4 65 time
+- 573 576
+- 576
+: 589 2 65 And 
+: 591 2 67 just 
+: 595 4 67 sit 
+: 599 2 69 back 
+: 603 2 70 and 
+: 607 2 65 un
+: 611 8 65 wind
+- 619 640
+- 640
+: 653 2 65 Sum
+: 655 2 67 mer, 
+: 659 3 67 sum
+: 663 3 69 mer, 
+: 667 2 67 sum
+: 671 2 69 mer
+* 675 4 70 time
+: 679 2 69 ~
+- 681
+: 693 2 69 Sum
+: 695 2 67 mer
+: 697 4 65 time
+- 701 704
+- 704
+: 717 2 65 And 
+: 719 2 67 just 
+: 723 4 67 sit 
+: 727 2 69 back 
+: 731 2 70 and 
+: 735 2 65 un
+: 739 8 65 wind
+- 747 760
+- 760
+F 773 2 62 School 
+F 777 2 62 is 
+F 779 2 62 out
+- 781
+F 783 2 65 And 
+F 785 2 65 it's 
+F 787 2 65 a 
+F 789 2 65 sort 
+F 791 2 65 of 
+F 793 2 65 a 
+F 795 4 65 buzz
+- 799
+F 807 2 62 But 
+F 809 2 62 back 
+F 813 2 62 then 
+F 815 2 62 I 
+F 817 2 62 did
+F 819 2 62 n't 
+F 821 2 62 real
+F 823 2 62 ly 
+F 825 1 62 know
+- 826
+F 827 2 65 What 
+F 829 2 65 it 
+F 831 4 65 was
+- 835
+F 843 2 62 But 
+F 845 2 62 now 
+F 847 2 62 I 
+F 851 2 62 see 
+F 855 2 62 what 
+F 859 2 62 hap
+F 861 2 62 pened 
+F 863 2 62 is
+- 865
+F 867 2 65 The 
+F 869 2 65 way 
+F 873 2 65 that 
+F 877 2 65 peo
+F 879 2 65 ple 
+F 881 2 65 res
+F 883 2 65 pond
+- 885
+F 887 2 62 To 
+F 889 2 62 sum
+F 891 2 62 mer 
+F 893 4 62 mad
+F 897 4 62 ness
+- 901
+F 907 2 65 The 
+F 909 2 65 wea
+F 911 2 65 ther 
+F 913 2 65 is 
+F 915 1 65 hot
+- 916
+F 917 2 62 And 
+F 919 2 62 girls 
+F 921 2 62 are 
+F 923 2 62 dress
+F 925 2 62 ing 
+F 927 2 62 less
+- 929
+F 931 2 65 And 
+F 933 2 65 check
+F 935 2 65 ing 
+F 937 2 65 out 
+F 939 2 65 the 
+F 941 2 65 fel
+F 943 1 65 las
+- 944
+F 945 2 62 To 
+F 947 2 62 tell 
+F 949 2 62 'em 
+F 951 2 62 who's 
+F 955 2 62 best
+- 957
+F 965 2 65 Rid
+F 969 1 65 ing 
+F 970 1 65 a
+F 971 4 65 round
+- 975
+F 977 2 62 In 
+F 979 2 62 your 
+F 981 2 62 Jeep 
+F 983 2 62 or 
+F 985 2 62 your 
+F 987 4 62 Ben
+F 991 4 62 zo's
+- 995
+F 999 2 65 Or 
+F 1001 2 65 in 
+F 1003 2 65 your 
+F 1005 2 65 Nis
+F 1007 2 65 san
+- 1009
+F 1011 2 62 Sit
+F 1013 2 62 ting 
+F 1015 2 62 on 
+F 1017 2 62 lo
+F 1019 2 62 ren
+F 1023 2 62 zos
+- 1025
+F 1029 2 65 Back 
+F 1033 2 65 in 
+F 1037 2 65 Phil
+F 1039 2 65 ly 
+F 1041 2 65 we 
+F 1043 2 65 be 
+F 1045 2 65 out 
+F 1047 2 65 in 
+F 1049 2 65 the 
+F 1051 2 65 park
+- 1053
+F 1059 2 62 A 
+F 1061 2 62 place 
+F 1065 2 62 called 
+F 1067 2 62 the 
+F 1069 2 62 pla
+F 1073 1 62 teau
+- 1074
+F 1075 2 65 Is 
+F 1077 2 65 where 
+F 1079 2 65 ev
+F 1081 2 65 ery
+F 1083 2 65 bo
+F 1085 2 65 dy 
+F 1087 2 65 go
+- 1089
+F 1093 2 62 Guys 
+F 1097 2 62 out 
+F 1101 2 62 hunt
+F 1103 1 62 ing
+- 1104
+F 1105 2 65 And 
+F 1107 2 65 girls 
+F 1111 2 65 do
+F 1113 2 65 ing 
+F 1115 2 65 like
+F 1119 2 65 wise
+- 1121
+F 1125 2 62 Honk
+F 1127 2 62 ing 
+F 1129 2 62 at 
+F 1131 2 62 the 
+F 1133 2 62 ho
+F 1135 1 62 ney
+- 1136
+F 1137 2 65 In 
+F 1139 2 65 front 
+F 1141 2 65 of 
+F 1143 2 65 you 
+F 1145 2 65 with 
+F 1147 2 65 the 
+F 1149 2 65 light 
+F 1153 2 65 eyes
+- 1155
+F 1163 2 62 She 
+F 1165 2 62 turned 
+F 1167 2 62 a
+F 1169 2 62 round 
+F 1171 2 62 to 
+F 1173 1 62 see
+- 1174
+F 1175 2 65 What 
+F 1177 2 65 you 
+F 1179 2 65 beep
+F 1181 2 65 in' 
+F 1183 2 65 at
+- 1185
+F 1191 2 62 It's 
+F 1193 2 62 like 
+F 1195 2 62 the 
+F 1197 2 62 sum
+F 1199 1 62 mer's
+- 1200
+F 1201 2 65 A 
+F 1203 1 65 na
+F 1204 1 65 tu
+F 1205 2 65 ral 
+F 1207 2 65 aph
+F 1209 2 65 ro
+F 1211 2 65 di
+F 1213 2 65 si
+F 1215 2 65 ac
+- 1217
+F 1219 2 62 And 
+F 1221 2 62 with 
+F 1223 2 62 a 
+F 1225 2 62 pen 
+F 1227 2 62 and 
+F 1229 2 62 pad
+- 1231
+F 1233 2 65 I 
+F 1235 2 65 com
+F 1237 2 65 posed 
+F 1241 2 65 this 
+F 1245 2 65 rhyme
+- 1247
+F 1251 2 61 To 
+F 1253 2 61 hip 
+F 1255 2 61 you 
+F 1257 4 61 and 
+F 1261 2 61 get 
+F 1263 1 61 you
+- 1264
+F 1265 2 66 E
+F 1267 2 66 quipped 
+F 1271 2 66 for 
+F 1273 2 66 the 
+F 1275 2 66 sum
+F 1277 2 66 mer
+F 1279 5 66 time
+- 1284
+: 1293 2 65 Sum
+: 1295 2 67 mer, 
+: 1299 3 67 sum
+: 1303 3 69 mer, 
+: 1307 2 67 sum
+: 1311 2 69 mer
+: 1315 4 70 time
+: 1319 2 69 ~
+- 1321
+: 1333 2 69 Sum
+: 1335 2 67 mer
+: 1337 4 65 time
+- 1341 1344
+- 1344
+: 1357 2 65 And 
+: 1359 2 67 just 
+: 1363 4 67 sit 
+: 1367 2 69 back 
+: 1371 2 70 and 
+: 1375 2 65 un
+: 1379 8 65 wind
+- 1387 1408
+- 1408
+: 1421 2 65 Sum
+: 1423 2 67 mer, 
+: 1427 3 67 sum
+: 1431 3 69 mer, 
+: 1435 2 67 sum
+: 1439 2 69 mer
+: 1443 4 70 time
+: 1447 2 69 ~
+- 1449
+: 1461 2 69 Sum
+: 1463 2 67 mer
+: 1465 4 65 time
+- 1469 1472
+- 1472
+: 1485 2 65 And 
+: 1487 2 67 just 
+: 1491 4 67 sit 
+: 1495 2 69 back 
+* 1499 2 70 and 
+: 1503 2 65 un
+: 1507 8 65 wind
+- 1515 1526
+- 1526
+F 1539 2 62 It's 
+F 1541 2 62 late 
+F 1543 2 62 in 
+F 1545 2 62 the 
+F 1547 2 62 day
+- 1549
+F 1551 2 65 And 
+F 1553 2 65 I 
+F 1555 2 65 ain't 
+F 1557 2 65 been 
+F 1559 2 65 on 
+F 1561 2 65 the 
+F 1563 2 65 court 
+F 1567 2 65 yet
+- 1569
+F 1573 2 62 Hus
+F 1575 2 62 tled 
+F 1577 2 62 to 
+F 1579 2 62 the 
+F 1581 2 62 mall
+- 1583
+F 1587 2 65 To 
+F 1589 2 65 get 
+F 1591 2 65 me 
+F 1593 2 65 a 
+F 1595 2 65 short 
+F 1599 2 65 set
+- 1601
+F 1605 2 62 Yeah 
+F 1607 2 62 I 
+F 1609 2 62 got 
+F 1611 2 62 on 
+F 1615 2 62 sneaks
+- 1617
+F 1619 2 65 But 
+F 1621 2 65 I 
+F 1623 2 65 need 
+F 1625 2 65 a 
+F 1627 2 65 new 
+F 1631 2 65 pair
+- 1633
+F 1635 2 62 'Cause 
+F 1637 2 62 bas
+F 1639 2 62 ket
+F 1641 4 62 ball 
+F 1645 1 62 courts
+- 1646
+F 1647 2 65 In 
+F 1649 2 65 the 
+F 1651 2 65 sum
+F 1653 2 65 mer 
+F 1655 3 65 got 
+F 1659 3 65 girls 
+F 1663 3 65 there
+- 1666
+F 1675 2 62 The 
+F 1677 2 62 tem
+F 1679 2 62 pera
+F 1681 2 62 ture's 
+F 1683 2 62 a
+F 1685 1 62 bout
+- 1686
+F 1687 2 56 Eight
+F 1689 2 56 y 
+F 1691 2 56 eight
+- 1693
+F 1701 2 65 Hop 
+F 1703 2 65 in 
+F 1705 2 65 the 
+F 1707 2 65 wa
+F 1709 2 65 ter 
+F 1711 2 65 plug
+- 1713
+F 1717 2 62 Just 
+F 1719 2 62 for 
+F 1721 2 62 old 
+F 1723 2 62 times' 
+F 1727 2 62 sake
+- 1729
+F 1733 2 65 Break 
+F 1737 2 65 to 
+F 1739 2 65 ya 
+F 1741 2 65 crib
+- 1743
+F 1745 2 62 Change 
+F 1747 2 62 your 
+F 1749 2 62 clothes 
+F 1751 2 62 once 
+F 1755 2 62 more
+- 1757
+F 1759 2 65 'Cause 
+F 1761 2 65 you're 
+F 1763 2 65 in
+F 1765 2 65 vi
+F 1767 1 65 ted
+- 1768
+F 1769 2 56 To 
+F 1771 2 56 a 
+F 1773 2 56 bar
+F 1775 2 56 be
+F 1777 1 56 que
+- 1778
+F 1779 2 62 That's 
+F 1781 2 62 start
+F 1783 2 62 ing 
+F 1785 2 62 at 
+F 1787 3 62 four
+- 1790
+F 1797 2 65 Sit
+F 1799 2 65 tin' 
+F 1801 2 65 with 
+F 1803 2 65 your 
+F 1805 2 65 friends
+- 1807
+F 1809 2 62 'Cause 
+F 1811 2 62 ya'll 
+F 1815 2 62 re
+F 1817 2 62 mi
+F 1819 2 62 nisce
+- 1821
+F 1823 2 65 A
+F 1825 2 65 bout 
+F 1827 2 65 the 
+F 1829 2 65 days 
+F 1833 2 65 grow
+F 1835 2 65 ing 
+F 1837 1 65 up
+- 1838
+F 1839 2 62 And 
+F 1841 2 62 the 
+F 1843 2 62 first 
+F 1847 2 62 per
+F 1849 2 62 son 
+F 1851 2 62 you 
+F 1853 2 62 kissed
+- 1855
+F 1859 2 65 And 
+F 1861 2 65 as 
+F 1863 2 65 I 
+F 1867 2 65 think 
+F 1871 2 65 back
+- 1873
+F 1875 2 62 Makes 
+F 1879 2 62 me 
+F 1881 2 62 won
+F 1883 2 62 der 
+F 1885 2 62 how
+- 1887
+F 1889 2 65 The 
+F 1893 2 65 smell 
+F 1897 2 65 from 
+F 1899 2 65 a 
+F 1901 2 65 grill
+- 1903
+F 1905 2 62 Can 
+F 1907 2 62 spark 
+F 1911 2 62 up 
+F 1915 2 62 nos
+F 1917 2 62 tal
+F 1921 2 62 gia
+- 1923
+F 1933 2 65 All 
+F 1935 2 65 the 
+F 1937 2 65 kids 
+F 1941 2 65 play
+F 1943 2 65 ing 
+F 1945 2 65 out 
+F 1949 2 65 front
+- 1951
+F 1953 2 62 Litt
+F 1955 2 62 le 
+F 1957 2 62 boys 
+F 1961 2 62 mess
+F 1963 2 62 in' 
+F 1965 1 62 around
+- 1966
+F 1967 2 65 With 
+F 1969 2 65 the 
+F 1971 2 65 girls 
+F 1975 2 65 play
+F 1977 2 65 ing 
+F 1979 2 65 dou
+F 1981 2 65 ble 
+F 1983 2 65 dutch
+- 1985
+F 1993 2 62 While 
+F 1995 2 62 the 
+F 1997 2 62 D 
+F 1999 2 62 J's 
+F 2005 2 62 spin
+F 2007 2 62 ning 
+F 2009 2 62 a 
+F 2011 2 62 tune
+- 2013
+F 2015 2 65 As 
+F 2019 2 65 the 
+F 2021 2 65 old 
+F 2025 2 65 folks 
+F 2029 2 65 dance
+- 2031
+F 2033 2 62 At 
+F 2035 2 62 your 
+F 2037 1 62 fa
+F 2038 1 62 mi
+F 2039 2 62 ly 
+F 2041 2 62 re
+F 2043 2 62 u
+F 2045 2 62 ni
+F 2047 2 62 on
+- 2049
+F 2057 3 65 Then 
+F 2061 3 65 six 
+F 2065 2 65 o' 
+F 2067 2 65 clock 
+F 2071 4 65 rolls 
+F 2075 2 65 a
+F 2077 5 65 round
+- 2082
+F 2091 2 62 You 
+F 2093 2 62 just 
+F 2097 2 62 fi
+F 2099 1 62 nished
+- 2100
+F 2101 2 56 Wip
+F 2103 2 56 ing 
+F 2105 2 56 your 
+F 2107 4 56 car 
+F 2113 4 56 down
+- 2117
+F 2123 2 65 It's 
+F 2125 2 65 time 
+F 2129 2 65 to 
+F 2131 2 65 cruise
+- 2133
+F 2137 2 62 So 
+F 2139 2 62 you 
+F 2141 2 62 go
+- 2143
+F 2145 2 56 To 
+F 2147 2 56 the 
+F 2149 2 56 sum
+F 2151 2 56 mer
+F 2153 4 56 time 
+F 2157 2 56 hang
+F 2159 1 56 out
+- 2160
+F 2161 2 65 It 
+F 2163 4 65 looks 
+F 2167 2 65 like 
+F 2169 2 65 a 
+F 2171 4 65 car 
+F 2175 4 65 show
+- 2179
+F 2189 2 62 Ev
+F 2191 2 62 ery
+F 2193 2 62 bo
+F 2195 2 62 dy 
+F 2197 2 62 come 
+F 2199 2 62 look
+F 2201 2 62 in' 
+F 2203 2 62 real 
+F 2207 2 62 fine
+- 2209
+F 2213 2 65 Fresh 
+F 2217 2 65 from 
+F 2219 2 65 the 
+F 2221 2 65 bar
+F 2223 2 65 ber 
+F 2225 1 65 shop
+- 2226
+F 2227 2 62 Or 
+F 2229 2 62 fly 
+F 2231 2 62 from 
+F 2233 2 62 the 
+F 2235 2 62 beau
+F 2237 2 62 ty 
+F 2239 2 62 sa
+F 2241 2 62 lon
+- 2243
+F 2253 2 65 Ev
+F 2255 2 65 ery 
+F 2257 2 65 mo
+F 2259 2 65 ment 
+F 2261 2 65 front
+F 2263 2 65 in' 
+F 2265 2 65 and 
+F 2267 2 65 max
+F 2271 2 65 in'
+- 2273
+F 2277 2 62 Chill
+F 2279 2 62 in' 
+F 2281 2 62 in 
+F 2283 2 62 the 
+F 2285 1 62 car
+- 2286
+F 2287 2 56 They 
+F 2289 2 56 spent 
+F 2291 4 56 all 
+F 2295 4 56 day 
+F 2299 4 56 wax
+F 2303 4 56 in'
+- 2307
+F 2309 2 65 Lean
+F 2311 2 65 in' 
+F 2313 2 65 to 
+F 2315 2 65 the 
+F 2317 2 65 side
+- 2319
+F 2323 2 62 But 
+F 2325 2 62 you 
+F 2327 4 62 can't 
+F 2331 4 62 speed 
+F 2335 4 62 through
+- 2339
+F 2341 2 65 Two 
+F 2343 2 65 miles 
+F 2347 2 65 an 
+F 2349 2 65 hour
+- 2351
+F 2355 2 62 So 
+F 2357 2 62 ev
+F 2359 2 62 ery
+F 2361 2 62 bo
+F 2363 2 62 dy 
+F 2365 4 62 sees 
+F 2369 4 62 you
+- 2373
+F 2377 2 65 There's 
+F 2379 2 65 an 
+F 2381 4 65 air 
+F 2385 2 65 of 
+F 2387 2 65 love
+- 2389
+F 2391 2 56 And 
+F 2393 2 56 of 
+F 2395 2 56 hap
+F 2397 2 56 pi
+F 2399 2 56 ness
+- 2401
+F 2403 2 61 And 
+F 2405 4 61 this 
+F 2409 2 61 is 
+F 2411 2 61 the 
+F 2413 3 61 Fresh 
+F 2417 2 61 Prince's
+- 2419
+F 2421 2 66 New 
+F 2423 2 66 de
+F 2425 2 66 fi
+F 2427 2 66 ni
+F 2429 1 66 tion
+- 2430
+F 2431 2 61 Of 
+F 2433 2 61 sum
+F 2435 2 61 mer 
+F 2437 5 61 mad
+F 2442 2 61 ness
+- 2444
+: 2445 2 65 Sum
+: 2447 2 67 mer, 
+: 2451 3 67 sum
+: 2455 3 69 mer, 
+: 2459 2 67 sum
+: 2463 2 69 mer
+: 2467 4 70 time
+: 2471 2 69 ~
+- 2473 2496
+- 2496
+: 2509 2 65 And 
+: 2511 2 67 just 
+: 2515 4 67 sit 
+: 2519 2 69 back 
+: 2523 2 70 and 
+: 2527 2 65 un
+: 2531 8 65 wind
+- 2539 2560
+- 2560
+: 2573 2 65 Sum
+: 2575 2 67 mer, 
+: 2579 3 67 sum
+: 2583 3 69 mer, 
+: 2587 2 67 sum
+: 2591 2 69 mer
+: 2595 4 70 time
+: 2599 2 69 ~
+- 2601 2624
+- 2624
+: 2637 2 65 And 
+: 2639 2 67 just 
+: 2643 4 67 sit 
+: 2647 2 69 back 
+: 2651 2 70 and 
+: 2655 2 65 un
+: 2659 8 65 wind
+E
