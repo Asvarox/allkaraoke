@@ -31,6 +31,7 @@ class InputSourceListManager {
     if (!lazily) {
       source.getInputs().then((list) => {
         this.inputList[source.inputName].list = list;
+        this.inputList[source.inputName].initialised = true;
         events.inputListChanged.dispatch(true);
 
         source.subscribeToListChange(async () => {
@@ -43,6 +44,7 @@ class InputSourceListManager {
     return {
       list: [],
       getDefault: source.getDefault,
+      initialised: false,
     };
   };
 
@@ -54,8 +56,13 @@ class InputSourceListManager {
 
   public getInputList = () => this.inputList;
 
+  public isPlayerInputInitialised = (input: SelectedPlayerInput) => {
+    return this.inputList[input.source].initialised;
+  };
+
   public getInputForPlayerSelected = (input: SelectedPlayerInput, returnDefault = true) => {
     const source = this.inputList[input.source];
+
     return (
       source.list.find((item) => item.id === selectedPlayerInputToId(input)) ??
       (returnDefault ? source.getDefault() : null)

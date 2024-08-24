@@ -1,5 +1,7 @@
+import { SelectedPlayerInput } from 'modules/Players/PlayersManager';
+
 export default interface InputInterface {
-  startMonitoring: (deviceId?: string) => Promise<void>;
+  startMonitoring: (deviceId?: string, allInputs?: SelectedPlayerInput[]) => Promise<void>;
   stopMonitoring: (deviceId?: string) => Promise<void>;
   getInputLag: (deviceId?: string) => number;
   getFrequencies: (deviceId?: string) => number[] | number[][];
