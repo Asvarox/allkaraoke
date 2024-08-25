@@ -5,7 +5,6 @@ import { Button } from 'modules/Elements/Button';
 import { sumDetailedScore } from 'modules/GameEngine/GameState/Helpers/calculateScore';
 import useKeyboard from 'modules/hooks/useKeyboard';
 import useKeyboardHelp from 'modules/hooks/useKeyboardHelp';
-import posthog from 'posthog-js';
 import { useEffect, useMemo, useState } from 'react';
 import { PlayerScore } from 'routes/Game/Singing/PostGame/PostGameView';
 import CameraRoll from 'routes/Game/Singing/PostGame/Views/Results/CameraRoll';
@@ -38,7 +37,6 @@ function ResultsView({ onNextStep, players, highScores, singSetup }: Props) {
 
   const nextStep = () => {
     if (!isAnimFinished) {
-      posthog.capture('animation_skipped');
       setSegment(5);
     } else {
       onNextStep();

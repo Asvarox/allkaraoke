@@ -48,7 +48,7 @@ export class GameEvent<T extends (...args: any[]) => void> {
 export const events = {
   sectionChange: new GameEvent<(player: 0 | 1 | 2 | 3, previousSectionIndex: number) => void>(
     'sectionChange',
-    undefined,
+    false,
     false,
   ),
   // newPlayerNote: new GameEvent<(player: 0 | 1 |2 | 3, playerNote: PlayerNote) => void>('//', true),
@@ -82,7 +82,7 @@ export const events = {
       oldInput: SelectedPlayerInput | undefined,
       newInput: SelectedPlayerInput | undefined,
     ) => void
-  >('playerInputChanged', (player, oldI, newI) => ({ player, old: oldI?.source, new: newI?.source })),
+  >('playerInputChanged'),
   inputListChanged: new GameEvent<(initial: boolean) => void>('inputListChanged'),
 
   karaokeConnectionStatusChange: new GameEvent<
@@ -109,7 +109,7 @@ export const events = {
     'remoteMicSubscribed',
   ),
   remoteKeyboardPressed: new GameEvent<(key: keyStrokes) => void>('remoteKeyboardPressed'),
-  remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch', true),
+  remoteSongSearch: new GameEvent<(search: string) => void>('remoteSongSearch'),
   remoteSongSelected: new GameEvent<(search: string) => void>('remoteSongSelected', true),
   remoteMicListUpdated: new GameEvent<(list: NetworkRemoteMicListMessage['list']) => void>('remoteMicListUpdated'),
   remoteKeyboardLayout: new GameEvent<(help: HelpEntry | undefined) => void>('remoteKeyboardLayout'),
