@@ -7970,18 +7970,20 @@
       "English"
     ],
     "bpm": 216.12,
-    "gap": 97195,
+    "gap": 96223.31760133259,
     "year": "1997",
     "artistOrigin": "US",
+    "lastUpdate": "2024-08-25T00:16:37.289Z",
     "genre": "Pop Internacional",
     "videoGap": 73,
     "realBpm": 108,
+    "volume": 0.81,
     "author": "gilrael",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=Everybody%20(Backstreet's%20Back)",
     "tracks": [
       {
-        "start": 0
+        "start": 14
       }
     ],
     "tracksCount": 1,
@@ -27794,6 +27796,32 @@
     "local": false
   },
   {
+    "id": "fifth-harmony-feat-ty-dolla-ign-work-from-home",
+    "title": "Work From Home",
+    "artist": "Fifth Harmony feat. Ty Dolla $ign",
+    "video": "5GL9JoH4Sws",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.02,
+    "gap": 9880.095229025806,
+    "year": "2016",
+    "lastUpdate": "2024-08-25T00:16:37.297Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 0.69,
+    "author": "amro98",
+    "sourceUrl": "https://youtu.be/5GL9JoH4Sws",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fifthharmonyfeattydollaignworkfromhome",
+    "local": false
+  },
+  {
     "id": "fifty-fifty-cupid-twin-version",
     "title": "Cupid (Twin Version)",
     "artist": "FIFTY FIFTY",
@@ -41768,6 +41796,31 @@
     "local": false
   },
   {
+    "id": "kygo-x-whitney-houston-higher-love",
+    "title": "Higher Love",
+    "artist": "Kygo x Whitney Houston",
+    "video": "JR49dyo-y0E",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 18274.424778761062,
+    "year": "2019",
+    "lastUpdate": "2024-08-25T00:16:37.949Z",
+    "genre": "Pop",
+    "realBpm": 104,
+    "volume": 0.75,
+    "author": "shaneewels",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kygoxwhitneyhoustonhigherlove",
+    "local": false
+  },
+  {
     "id": "kylie-minogue-cant-get-you-out-of-my-head",
     "title": "Can't Get You Out Of My Head",
     "artist": "Kylie Minogue",
@@ -43111,6 +43164,31 @@
     ],
     "tracksCount": 1,
     "search": "laurapausiniencambiono",
+    "local": false
+  },
+  {
+    "id": "lauv-feat-bts-who",
+    "title": "Who",
+    "artist": "Lauv feat. BTS",
+    "video": "vS0YXAfUo4k",
+    "language": [
+      "English"
+    ],
+    "bpm": 369.64,
+    "gap": 9071.499404826318,
+    "year": "2020",
+    "lastUpdate": "2024-08-25T00:16:38.081Z",
+    "realBpm": 142,
+    "volume": 0.67,
+    "author": "asdFer",
+    "sourceUrl": "https://youtu.be/-fKXmuN6Ivo?si=uyeD3txbU7_zN1nP",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lauvfeatbtswho",
     "local": false
   },
   {
@@ -64603,10 +64681,10 @@
       "Dutch"
     ],
     "bpm": 248,
-    "gap": 7551.774193548387,
+    "gap": 7601.774193548387,
     "year": "2023",
     "artistOrigin": "NL",
-    "lastUpdate": "2024-07-03T00:10:23.645Z",
+    "lastUpdate": "2024-08-25T00:16:38.203Z",
     "realBpm": 123,
     "volume": 0.83,
     "author": "Geklow",
@@ -80756,6 +80834,32 @@
     "local": false
   },
   {
+    "id": "whitney-houston-how-will-i-know",
+    "title": "How Will I Know",
+    "artist": "Whitney Houston",
+    "video": "m3-hY-hlhBg",
+    "language": [
+      "English"
+    ],
+    "bpm": 488,
+    "gap": 41465.65573770492,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-25T00:16:38.205Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.81,
+    "author": "anthem_1",
+    "tracks": [
+      {
+        "start": 33
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitneyhoustonhowwilliknow",
+    "local": false
+  },
+  {
     "id": "whitney-houston-i-have-nothing",
     "title": "I Have Nothing",
     "artist": "Whitney Houston",
@@ -80832,6 +80936,32 @@
     ],
     "tracksCount": 1,
     "search": "whitneyhoustoniwillalwaysloveyou",
+    "local": false
+  },
+  {
+    "id": "whitney-houston-one-moment-in-time",
+    "title": "One Moment In Time",
+    "artist": "Whitney Houston",
+    "video": "96aAx0kxVSA",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.26,
+    "gap": 57071.22526100045,
+    "year": "1988",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-25T00:16:38.207Z",
+    "genre": "Pop",
+    "realBpm": 156,
+    "volume": 0.92,
+    "author": "karmidi",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitneyhoustononemomentintime",
     "local": false
   },
   {
