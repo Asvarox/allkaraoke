@@ -84,11 +84,30 @@ test('Adding and removing songs from Favourite list', async ({ page, browser, br
 
   await test.step('Deleting songs from Favourite List works - songs are not visible', async () => {
     await remoteMic.remoteSongListPage.goToAllSongsPlaylist();
-    await remoteMic.remoteSongListPage.expectALlSongsPlaylistToBeSelected();
+    await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
     await remoteMic.remoteSongListPage.removeSongFromFavouriteList(songID);
     await remoteMic.remoteSongListPage.expectFavouriteListToContainNumberOfSongs('0');
     await remoteMic.remoteSongListPage.goToFavouriteList();
     await remoteMic.remoteSongListPage.expectFavouriteListToBeSelected();
     await expect(remoteMic.remoteSongListPage.getSongElement(songID)).not.toBeVisible();
   });
+});
+
+test('Searching song in all and favourites list', async ({ page, browser }) => {
+  const song1 = {
+    name: 'multitrack',
+    ID: 'e2e-multitrack-polish-1994',
+  };
+
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+  await pages.inputSelectionPage.selectSmartphones();
+
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+
+  await remoteMic.remoteMicMainPage.goToSongList();
+  await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
+  await remoteMic.remoteSongListPage.searchTheSong(song1.name);
+  await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).toBeVisible();
+  await remoteMic.remoteSongListPage.searchInput.clear();
 });
