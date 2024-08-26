@@ -63,7 +63,7 @@ export class RemoteSongListPagePO {
     await this.allSongsButton.click();
   }
 
-  public async expectALlSongsPlaylistToBeSelected() {
+  public async expectAllSongsPlaylistToBeSelected() {
     await expect(this.allSongsButton).toHaveAttribute('data-active', 'true');
   }
 }
