@@ -52217,9 +52217,9 @@
       "Spanish"
     ],
     "bpm": 270,
-    "gap": 2730,
+    "gap": 2830,
     "year": "2019",
-    "lastUpdate": "2024-08-23T06:38:44.780Z",
+    "lastUpdate": "2024-08-26T19:43:04.638Z",
     "genre": "Pop",
     "realBpm": 180,
     "volume": 0.72,
@@ -55592,19 +55592,21 @@
       "English"
     ],
     "bpm": 397.02,
-    "gap": 36350,
+    "gap": 35467.681728880154,
     "year": "1995",
     "artistOrigin": "US",
+    "lastUpdate": "2024-08-26T19:43:05.285Z",
     "edition": "Rock Band Store 2008 Vol. 4",
     "genre": "Pop Rock",
-    "videoGap": 29,
+    "videoGap": 21,
     "realBpm": 76,
+    "volume": 0.74,
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak",
     "tracks": [
       {
-        "start": 0
+        "start": 26
       }
     ],
     "tracksCount": 1,
