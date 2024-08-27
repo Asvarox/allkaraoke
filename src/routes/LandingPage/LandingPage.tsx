@@ -8,7 +8,8 @@ import SmoothLink from 'modules/Elements/SmoothLink';
 import styles from 'modules/GameEngine/Drawing/styles';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { FeatureFlags } from 'modules/utils/featureFlags';
-import { useFeatureFlagVariantKey } from 'posthog-js/react';
+import isE2E from 'modules/utils/isE2E';
+import { useFeatureFlagPayload } from 'posthog-js/react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -19,19 +20,19 @@ import Typewriter from 'typewriter-effect';
 import LogoIcon from './LogoIcon';
 import screenshot1 from './screenshot1.webp';
 import screenshot2 from './screenshot2.webp';
-import screenshot3 from './screenshot3.webp';
 import songStats from './songStats.json';
 
 export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 });
 
 function LandingPage() {
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
+  const skipInitialSetup = useFeatureFlagPayload(FeatureFlags.SkipInitialSetup);
   const navigate = useSmoothNavigate();
-  const newScreenshot = useFeatureFlagVariantKey(FeatureFlags.Shrek);
 
   useBackground(true);
 
-  const nextPage = setupPreference === null ? 'quick-setup/' : 'menu/';
+  const nextPage =
+    skipInitialSetup === 'test' && !isE2E() ? 'menu/' : setupPreference === null ? 'quick-setup/' : 'menu/';
 
   useHotkeys(
     'enter',
@@ -124,11 +125,7 @@ function LandingPage() {
           </StatSegment>
           <ScreenshotSegment>
             <img src={screenshot1} alt="Song list screen" />
-            {newScreenshot === 'test' ? (
-              <img src={screenshot2} alt="In-game screen" />
-            ) : (
-              <img src={screenshot3} alt="In-game screen" />
-            )}
+            <img src={screenshot2} alt="In-game screen" />
           </ScreenshotSegment>
         </Stats>
         <JoinExistingTip>

@@ -77,12 +77,6 @@ export const DefaultRemoteMicPermission = new Setting<ValuesType<typeof RemoteMi
   'write',
 );
 
-export const BackgroundMusic = ['New', 'Classic'] as const;
-export const BackgroundMusicSetting = new Setting<ValuesType<typeof BackgroundMusic>>(
-  'background-music',
-  BackgroundMusic[0],
-);
-
 export const BackgroundThemeSetting = new Setting<backgroundTheme>('BackgroundThemeSetting', 'regular', 'memory');
 export const AutoEnableFullscreenSetting = new Setting<boolean>(
   'AutoEnableFullscreenSetting',

@@ -1,6 +1,5 @@
 import christmasBackgroundMusicSound from 'assets/2020-12-16_-_Christmas_Rock_-_www.FesliyanStudios.com_Steve_Oxen.ogg';
 import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.ogg';
-import classicBackgroundMusicSound from 'assets/421888__b-sean__retro.ogg';
 import waitForReadinessSound from 'assets/459342__papaninkasettratat__cinematic-music-short.ogg';
 import wooshSound from 'assets/60013__qubodup__whoosh.mp3';
 import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
@@ -84,11 +83,7 @@ export const backgroundMusic = new Sound({
   volume: 0.3,
   loop: true,
 });
-export const classicBackgroundMusic = new Sound({
-  src: classicBackgroundMusicSound,
-  volume: 0.4,
-  loop: true,
-});
+
 export const christmasBackgroundMusic = new Sound({
   src: christmasBackgroundMusicSound,
   volume: 0.25,

@@ -10,8 +10,6 @@ import { ReactNode, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import InputLag from 'routes/Settings/InputLag';
 import {
-  BackgroundMusic,
-  BackgroundMusicSetting,
   FpsCount,
   FPSCountSetting,
   GraphicSetting,
@@ -32,7 +30,6 @@ function Settings(props: Props) {
   const [graphicLevel, setGraphicLevel] = useSettingValue(GraphicSetting);
   const [fpsCount, setFpsCount] = useSettingValue(FPSCountSetting);
   const [mobilePhoneMode, setMobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
-  const [backgroundMusic, setBackgroundMusic] = useSettingValue(BackgroundMusicSetting);
   const inputLagRef = useRef<HTMLInputElement | null>(null);
 
   const [camera, setCamera] = useState<null | boolean>(CameraManager.getPermissionStatus());
@@ -68,13 +65,6 @@ function Settings(props: Props) {
         {...register('fps-count-level', () => setFpsCount(nextValue(FpsCount, fpsCount)))}
         label="FPS Count"
         value={fpsCount}
-      />
-      <Switcher
-        {...register('background-music-selection', () =>
-          setBackgroundMusic(nextValue(BackgroundMusic, backgroundMusic)),
-        )}
-        label="Background Music"
-        value={backgroundMusic}
       />
       <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
       <hr />
