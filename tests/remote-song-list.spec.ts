@@ -93,7 +93,7 @@ test('Adding and removing songs from Favourite list', async ({ page, browser, br
   });
 });
 
-test('Searching song in all and favourites list', async ({ page, browser }) => {
+test('Searching song in all and favourite songs list', async ({ page, browser }) => {
   const song1 = {
     name: 'multitrack',
     ID: 'e2e-multitrack-polish-1994',
@@ -110,12 +110,30 @@ test('Searching song in all and favourites list', async ({ page, browser }) => {
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
-  test.step('All songs playlist - only searching song is visible in results', async () => {
+  await test.step('All songs list - only searching song is visible in results', async () => {
     await remoteMic.remoteMicMainPage.goToSongList();
     await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
     await remoteMic.remoteSongListPage.searchTheSong(song1.name);
     await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).toBeVisible();
     await expect(remoteMic.remoteSongListPage.getSongElement(song2.ID)).not.toBeVisible();
+
+    await remoteMic.remoteSongListPage.searchInput.clear();
+    await remoteMic.remoteSongListPage.searchTheSong(song2.name);
+    await expect(remoteMic.remoteSongListPage.getSongElement(song2.ID)).toBeVisible();
+    await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).not.toBeVisible();
+  });
+
+  await test.step('Favourite songs list - only searching song is visible in results', async () => {
+    await remoteMic.remoteSongListPage.searchInput.clear();
+    await remoteMic.remoteSongListPage.addSongToFavouriteList(song1.ID);
+    await remoteMic.remoteSongListPage.addSongToFavouriteList(song2.ID);
+    await remoteMic.remoteSongListPage.expectFavouriteListToContainNumberOfSongs('2');
+    await remoteMic.remoteSongListPage.goToFavouriteList();
+    test.fail(true, 'Searching songs in Favourite songs list does not work');
+    await remoteMic.remoteSongListPage.searchTheSong(song1.name);
+    await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).toBeVisible();
+    await expect(remoteMic.remoteSongListPage.getSongElement(song2.ID)).not.toBeVisible();
+
     await remoteMic.remoteSongListPage.searchInput.clear();
     await remoteMic.remoteSongListPage.searchTheSong(song2.name);
     await expect(remoteMic.remoteSongListPage.getSongElement(song2.ID)).toBeVisible();
