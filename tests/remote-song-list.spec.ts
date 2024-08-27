@@ -99,15 +99,26 @@ test('Searching song in all and favourites list', async ({ page, browser }) => {
     ID: 'e2e-multitrack-polish-1994',
   };
 
+  const song2 = {
+    name: 'pass',
+    ID: 'e2e-pass-test-spanish-1994',
+  };
+
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
-  await remoteMic.remoteMicMainPage.goToSongList();
-  await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
-  await remoteMic.remoteSongListPage.searchTheSong(song1.name);
-  await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).toBeVisible();
-  await remoteMic.remoteSongListPage.searchInput.clear();
+  test.step('All songs playlist - only searching song is visible in results', async () => {
+    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
+    await remoteMic.remoteSongListPage.searchTheSong(song1.name);
+    await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).toBeVisible();
+    await expect(remoteMic.remoteSongListPage.getSongElement(song2.ID)).not.toBeVisible();
+    await remoteMic.remoteSongListPage.searchInput.clear();
+    await remoteMic.remoteSongListPage.searchTheSong(song2.name);
+    await expect(remoteMic.remoteSongListPage.getSongElement(song2.ID)).toBeVisible();
+    await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).not.toBeVisible();
+  });
 });
