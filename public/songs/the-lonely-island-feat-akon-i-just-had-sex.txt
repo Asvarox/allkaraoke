@@ -1,0 +1,598 @@
+#ARTIST:The Lonely Island feat. Akon
+#TITLE:I Just Had Sex
+#CREATOR:snake84
+#BPM:336
+#YEAR:2010
+#VIDEO:v=lQlIhraqL7o
+#LANGUAGE:English
+#GAP:1897,8571428571427
+#ALLKARAOKE_ID:the-lonely-island-feat-akon-i-just-had-sex
+#ALLKARAOKE_LASTUPDATE:2024-08-27T00:15:38.249Z
+#ALLKARAOKE_REALBPM:168
+#ALLKARAOKE_VOLUME:0,79
+#MP3:The Lonely Island feat. Akon - I Just Had Sex.mp3
+: 22 2 6 O
+: 26 10 5 ~
+* 38 12 6 ~
+: 52 4 1 ~h
+- 56 64
+- 64
+: 86 12 5 A
+: 102 8 6 kon
+- 110 116
+- 116
+: 138 2 1 And 
+: 142 4 6 Lone
+: 150 2 6 ly 
+: 154 8 8 Is
+: 166 12 10 land, 
+: 182 8 8 yeah
+- 190
+: 198 4 6 I 
+: 206 4 6 just 
+: 214 4 6 had 
+: 222 6 6 se
+* 230 14 3 ~
+: 246 12 1 ~x
+- 258
+: 270 4 6 And 
+: 278 4 6 it 
+: 286 6 6 fe
+: 294 4 8 ~lt 
+: 302 4 10 so 
+: 310 6 8 goo
+: 318 18 5 ~d
+- 336
+: 354 2 3 A 
+: 358 2 6 wo
+: 362 2 3 man 
+: 366 4 6 let 
+: 374 4 6 me 
+: 382 4 6 put 
+: 390 4 6 my 
+: 398 2 6 pe
+: 402 2 6 nis 
+: 406 4 8 in
+: 414 6 10 si
+: 422 2 8 ~de 
+: 426 12 8 her
+- 438
+: 454 4 6 I 
+: 462 4 6 just 
+: 470 4 6 had 
+: 478 6 6 se
+: 486 6 8 ~
+: 494 6 10 ~
+: 502 12 6 ~x
+- 514
+: 526 4 6 And 
+: 534 4 13 I’ll 
+: 542 4 13 ne
+: 550 4 11 ver 
+: 558 4 10 go 
+* 566 14 8 ba
+: 582 8 10 ~ck
+- 590 592
+- 592
+: 614 2 6 To 
+: 618 2 3 the 
+* 622 4 6 not-
+* 630 2 6 ha
+* 634 2 3 ving-
+* 638 4 6 sex 
+: 646 4 6 ways 
+: 654 4 6 of 
+: 662 2 1 the 
+: 666 16 1 past
+- 682 704
+- 704
+F 726 2 1 Have 
+F 730 2 1 you 
+F 734 2 6 e
+F 738 2 6 ver 
+F 742 4 6 had 
+F 750 4 6 sex?
+- 754
+F 758 4 8 I 
+F 766 2 6 have, 
+F 770 2 6 it 
+F 774 4 3 felt 
+F 782 4 6 great
+- 786
+F 794 2 1 It 
+F 798 4 6 felt 
+F 806 4 6 so 
+F 814 4 6 good 
+F 822 2 6 when 
+F 826 2 6 I 
+F 830 2 6 did 
+F 834 2 6 it 
+F 838 2 6 with 
+F 842 2 3 my 
+F 846 2 6 pe
+F 850 2 6 nis
+- 852
+F 858 2 1 A 
+F 862 4 6 girl 
+F 870 2 3 let 
+F 874 2 3 me 
+F 878 2 3 do 
+F 882 2 1 it, 
+F 890 2 3 it 
+F 894 2 6 li
+F 898 2 3 te
+F 902 2 3 ral
+F 906 2 1 ly 
+F 910 4 6 just 
+F 918 2 6 hap
+F 922 2 1 pened
+- 924
+F 926 2 5 Ha
+F 930 2 5 ving 
+F 934 2 5 sex 
+F 938 2 5 could 
+F 942 2 5 make 
+F 946 2 5 a 
+F 950 4 5 nice 
+F 958 4 5 man 
+F 966 2 5 out 
+F 970 2 5 the...
+- 972
+F 978 2 5 You’ll 
+F 982 2 5 ne
+F 986 2 5 ver 
+F 990 4 5 guess 
+F 998 2 5 where 
+F 1002 2 5 I 
+F 1006 4 5 just 
+F 1014 4 5 came 
+F 1022 2 5 from
+- 1024
+F 1026 2 5 I 
+F 1030 4 5 had 
+F 1038 4 5 sex
+- 1042
+F 1046 2 5 If 
+F 1050 2 5 I 
+F 1054 4 5 had 
+F 1062 2 5 to 
+F 1066 2 5 de
+F 1070 4 5 scribe 
+F 1078 2 5 the 
+F 1082 2 5 fee
+F 1086 2 5 ling, 
+F 1090 2 5 it 
+F 1094 2 5 was 
+F 1098 2 5 the 
+F 1102 4 5 best
+- 1106
+F 1110 2 5 When 
+F 1114 2 5 I 
+F 1118 4 5 had 
+F 1126 2 5 the 
+F 1130 4 5 sex
+- 1134
+F 1142 2 5 Meant 
+F 1146 2 5 my 
+F 1150 2 5 pe
+F 1154 2 5 nis 
+F 1158 4 5 felt 
+F 1166 4 5 great
+- 1170
+F 1174 2 5 And 
+F 1178 2 5 I 
+F 1182 2 5 called 
+F 1186 2 5 my 
+F 1190 2 5 pa
+F 1194 2 5 rents 
+F 1198 4 5 right 
+F 1206 2 5 af
+F 1210 2 5 ter 
+F 1214 4 5 I 
+F 1222 2 5 was 
+F 1226 4 5 done
+- 1230
+F 1238 4 5 Oh, 
+F 1246 2 5 hey, 
+F 1254 2 5 did
+F 1258 2 5 n’t 
+F 1262 2 5 see 
+F 1266 2 5 you 
+F 1270 4 5 there
+- 1274
+F 1278 2 5 Guess 
+F 1282 2 5 what 
+F 1286 2 5 I 
+F 1290 2 5 just 
+F 1294 4 5 did
+- 1298
+F 1302 4 5 Had 
+F 1310 4 5 sex, 
+F 1318 4 5 un
+F 1326 4 5 dressed
+- 1330
+F 1334 2 5 Saw 
+F 1338 2 5 her 
+F 1342 2 5 boo
+F 1346 2 5 bies 
+F 1350 2 5 and 
+F 1354 2 5 the 
+F 1358 4 5 rest
+- 1362
+F 1366 4 5 Well, 
+F 1374 4 5 sure, 
+F 1382 2 5 nice 
+F 1386 2 5 of 
+F 1390 2 5 her 
+F 1394 2 5 to 
+F 1398 2 5 let 
+F 1402 2 5 you 
+F 1406 2 5 do 
+F 1410 4 5 that 
+F 1418 4 5 thing
+- 1422
+F 1430 2 5 Nice 
+F 1434 2 5 of 
+F 1438 2 5 a
+F 1442 2 5 ny 
+F 1446 4 5 girl 
+F 1454 2 5 e
+F 1458 2 5 ver
+- 1460
+F 1462 4 5 Now, 
+F 1470 4 5 sing
+- 1474
+: 1478 4 6 I 
+: 1486 4 6 just 
+: 1494 4 6 had 
+: 1502 6 6 se
+: 1510 14 3 ~
+: 1526 12 1 ~x
+- 1538
+: 1550 4 6 And 
+: 1558 4 6 it 
+* 1566 6 6 fe
+: 1574 4 8 ~lt 
+: 1582 4 10 so 
+: 1590 6 8 goo
+: 1598 20 5 ~d
+- 1618
+: 1634 2 3 A 
+: 1638 2 6 wo
+: 1642 2 3 man 
+: 1646 4 6 let 
+: 1654 4 6 me 
+: 1662 4 6 put 
+: 1670 4 6 my 
+: 1678 2 6 pe
+: 1682 2 6 nis 
+: 1686 4 8 in
+: 1694 6 10 si
+: 1702 2 8 ~de 
+: 1706 12 8 her
+- 1718
+: 1730 2 3 I 
+: 1734 2 10 wan
+: 1738 2 10 na 
+* 1742 4 8 tell 
+: 1750 2 6 the 
+: 1754 4 3 world
+- 1758
+F 1766 2 5 To 
+F 1770 2 5 be 
+F 1774 2 5 ho
+F 1778 2 5 nest 
+F 1782 2 5 I’m 
+F 1786 2 5 sur
+F 1790 2 5 prised
+- 1792
+F 1794 2 5 She 
+F 1798 2 5 e
+F 1802 2 5 ven 
+F 1806 2 5 wan
+F 1810 2 5 ted 
+F 1814 2 5 me 
+F 1818 2 5 to 
+F 1822 2 5 do 
+F 1826 2 5 it
+- 1828
+F 1830 2 5 Does
+F 1834 2 5 n’t 
+F 1838 2 5 real
+F 1842 2 5 ly 
+F 1846 4 5 make 
+F 1854 2 5 sense, 
+F 1858 2 5 but 
+F 1862 4 5 man, 
+F 1870 2 5 screw 
+F 1874 2 5 it
+- 1876
+F 1878 2 5 I 
+F 1882 2 5 ain’t 
+F 1886 2 5 one 
+F 1890 2 5 to 
+F 1894 2 5 ar
+F 1898 2 5 gue 
+F 1902 2 5 with 
+F 1906 2 5 a 
+F 1910 4 5 good 
+F 1918 4 5 thing
+- 1922
+F 1926 2 5 She 
+F 1930 2 5 could 
+F 1934 2 5 be 
+F 1938 2 5 my 
+F 1942 4 5 wife
+- 1946
+F 1950 4 5 That 
+F 1958 3 5 good?
+- 1961
+F 1962 2 5 The 
+F 1966 4 5 best 
+F 1974 2 5 thir
+F 1978 2 5 ty 
+F 1982 2 5 se
+F 1986 2 5 conds 
+F 1990 2 5 of 
+F 1994 2 5 my 
+F 1998 2 5 life
+- 2000
+F 2006 2 5 I’m 
+F 2010 2 5 so 
+F 2014 2 5 hum
+F 2018 2 5 bled 
+F 2022 2 5 by 
+F 2026 2 5 a 
+F 2030 2 5 girl’s 
+F 2034 2 5 a
+F 2038 2 5 bi
+F 2042 2 5 li
+F 2046 2 5 ty
+- 2048
+F 2050 2 5 To 
+F 2054 2 5 let 
+F 2058 2 5 me 
+F 2062 2 5 do...
+- 2064
+F 2066 2 5 ’Cause 
+F 2070 2 5 ho
+F 2074 2 5 nest
+F 2078 2 5 ly 
+F 2082 2 5 I’d 
+F 2086 4 5 have 
+F 2094 4 5 sex
+- 2098
+F 2102 2 5 With 
+F 2106 2 5 a 
+F 2110 4 5 pile 
+F 2118 2 5 of 
+F 2122 2 5 ma
+F 2126 4 5 nure
+- 2130
+F 2134 2 5 With 
+F 2138 2 5 that 
+F 2142 2 5 in 
+F 2146 4 5 mind 
+F 2154 2 5 the 
+F 2158 4 5 soft
+- 2162
+F 2166 4 5 Nice-
+F 2174 2 5 smel
+F 2178 2 5 ling 
+F 2182 4 5 girl’s 
+F 2190 2 5 bet
+F 2194 2 5 ter
+- 2196
+F 2202 2 5 She 
+F 2206 2 5 let 
+F 2210 2 5 me 
+F 2214 2 5 wear 
+F 2218 2 5 my 
+F 2222 4 5 chain
+- 2226
+F 2230 2 5 And 
+F 2234 2 5 my 
+F 2238 2 5 tur
+F 2242 2 5 tle 
+F 2246 4 5 neck 
+F 2254 2 5 swea
+F 2258 2 5 ter
+- 2260
+: 2262 2 3 So
+: 2266 2 5 ~ 
+: 2270 4 6 this 
+: 2278 4 6 one’s 
+: 2286 2 6 de
+: 2290 2 3 di
+: 2294 2 6 ca
+: 2298 2 6 ted 
+: 2302 2 6 to 
+: 2306 4 6 them 
+: 2314 8 6 girls
+- 2322
+: 2326 4 6 That 
+: 2334 2 6 let 
+: 2338 2 6 us 
+* 2342 2 6 flop 
+: 2346 2 6 a
+: 2350 4 6 round 
+: 2358 4 10 on 
+: 2366 2 8 top 
+: 2370 4 5 of 
+: 2378 6 5 them?
+- 2384
+: 2390 2 6 If 
+: 2394 2 5 you’re 
+: 2398 4 6 near 
+: 2406 4 6 or 
+: 2414 4 1 far, 
+: 2422 2 1 whe
+: 2426 2 1 ther 
+: 2430 4 6 short 
+: 2436 4 6 or 
+: 2442 4 1 tall
+- 2446
+: 2450 2 1 We 
+: 2454 2 1 wan
+: 2458 2 1 na 
+* 2462 4 6 thank 
+: 2470 4 6 you 
+: 2478 4 6 all 
+: 2490 2 6 for 
+: 2494 2 8 let
+: 2498 2 8 tin’ 
+: 2502 2 8 us 
+: 2506 8 10 fuck...
+- 2514
+F 2518 2 5 She 
+F 2522 2 5 kept 
+F 2526 2 5 loo
+F 2530 2 5 king 
+F 2534 2 5 at 
+F 2538 2 5 her 
+F 2542 4 5 watch
+- 2546
+: 2550 2 6 Does
+: 2554 2 6 n’t 
+: 2558 2 6 mat
+: 2562 2 6 ter, 
+: 2566 4 6 had 
+: 2574 4 1 sex
+- 2578
+F 2582 2 5 But 
+F 2586 2 5 I 
+F 2590 2 5 cried 
+F 2594 2 5 the 
+F 2598 4 5 whole 
+F 2606 4 5 time
+- 2610
+: 2614 2 6 Does
+: 2618 2 6 n’t 
+: 2622 2 6 mat
+: 2626 2 6 ter, 
+* 2630 4 10 had 
+: 2638 3 8 sex
+- 2641
+F 2642 2 5 I 
+F 2646 2 5 think 
+F 2650 2 5 she 
+F 2654 2 5 might 
+F 2658 2 5 have 
+F 2662 2 5 been 
+F 2666 2 5 a 
+F 2670 2 5 ra
+F 2674 2 5 cist
+- 2676
+: 2678 2 6 Does
+: 2682 2 6 n’t 
+: 2686 2 6 mat
+: 2690 2 6 ter, 
+: 2694 4 6 had 
+: 2702 3 1 sex
+- 2705
+F 2706 2 5 She 
+F 2710 2 5 put 
+F 2714 2 5 a 
+F 2718 4 5 bag 
+F 2726 2 5 on 
+F 2730 2 5 my 
+F 2734 4 5 head
+- 2738
+* 2742 4 10 Still 
+* 2750 4 8 counts
+- 2754
+: 2758 4 6 I 
+* 2766 4 6 just 
+: 2774 4 6 had 
+: 2782 6 6 se
+: 2790 14 3 ~
+: 2806 12 1 ~x
+- 2818
+: 2830 4 6 And 
+: 2838 4 6 my 
+: 2846 6 6 drea
+: 2854 4 8 ~ms 
+: 2862 4 10 came 
+: 2870 6 8 true
+: 2878 16 5 ~
+- 2894
+: 2906 2 1 So, 
+: 2910 2 6 if 
+: 2914 2 3 you 
+: 2918 4 6 had 
+: 2926 4 6 sex 
+: 2934 2 6 in 
+: 2938 2 3 the 
+: 2942 4 6 last 
+: 2950 2 6 thir
+: 2954 2 3 ty 
+: 2958 2 6 mi
+: 2962 2 6 nutes
+- 2964
+: 2966 2 6 Then 
+: 2970 2 3 you’re 
+: 2974 2 6 qua
+: 2978 2 6 li
+: 2982 2 6 filed 
+: 2986 2 6 to 
+: 2990 4 6 sing 
+: 2998 2 10 with 
+: 3002 4 8 me
+- 3006
+: 3014 4 7 I 
+: 3022 4 7 just 
+: 3030 4 7 had 
+* 3038 6 7 se
+: 3046 14 4 ~
+: 3062 12 2 ~x
+- 3074
+: 3086 4 7 And 
+: 3094 4 7 it 
+: 3102 6 7 fe
+: 3110 4 9 ~lt 
+: 3118 4 11 so 
+: 3126 6 9 goo
+: 3134 16 6 ~d
+- 3150
+: 3170 2 4 A 
+: 3174 2 7 wo
+: 3178 2 4 man 
+: 3182 4 7 let 
+: 3190 4 7 me 
+* 3198 4 7 put 
+: 3206 4 7 my 
+: 3214 2 7 pe
+: 3218 2 7 nis 
+: 3222 4 9 in
+: 3230 6 11 si
+: 3238 2 9 ~de 
+: 3242 8 9 her
+- 3250
+: 3270 4 7 I 
+: 3278 4 7 just 
+: 3286 4 7 had 
+: 3294 6 7 se
+: 3302 6 9 ~
+: 3310 6 11 ~
+: 3318 12 7 ~x
+- 3330
+: 3342 4 7 And 
+* 3350 4 14 I’ll 
+: 3358 4 14 ne
+: 3366 4 12 ver 
+: 3374 4 11 go 
+: 3382 14 9 ba
+: 3398 8 11 ~ck
+- 3406 3408
+- 3408
+: 3430 2 7 To 
+: 3434 2 4 the 
+: 3438 4 7 not-
+: 3446 2 7 ha
+: 3450 2 4 ving-
+: 3454 4 7 sex 
+: 3462 4 7 ways 
+: 3470 4 7 of 
+: 3478 2 2 the 
+* 3482 16 2 past
+E

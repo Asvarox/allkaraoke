@@ -1,0 +1,639 @@
+#ARTIST:The Lonely Island feat. Connor4real
+#TITLE:Finest Girl (Bin Laden Song)
+#CREATOR:be787
+#BPM:396
+#YEAR:2016
+#VIDEO:v=Jr9Kaa1sycs
+#LANGUAGE:English
+#GAP:9175,151515151516
+#ALLKARAOKE_ID:the-lonely-island-feat-connor4real-finest-girl-bin-laden-song
+#ALLKARAOKE_LASTUPDATE:2024-08-27T00:15:38.393Z
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_VOLUME:0,77
+#MP3:The Lonely Island feat. Connor4real - Finest Girl (Bin Laden Song).mp3
+: 26 3 5 Fin
+: 30 2 5 est 
+: 34 2 5 girl 
+: 38 2 5 I 
+: 42 3 5 e
+: 46 2 5 ver 
+: 50 2 5 met 
+: 60 2 5 in 
+: 64 2 5 my 
+: 68 6 5 whole 
+: 76 8 5 life
+- 84
+: 98 2 4 Want 
+: 102 2 4 to 
+: 106 2 4 take 
+: 110 2 4 her 
+: 114 4 4 home, 
+: 122 6 4 make 
+: 130 4 4 her 
+: 136 4 2 my 
+: 142 8 4 wife
+- 150
+: 164 2 2 Knew 
+: 168 2 2 she 
+: 172 2 2 was 
+: 176 2 2 a 
+: 180 2 2 freak 
+: 188 2 2 when 
+: 192 2 2 she 
+: 196 2 2 star
+: 200 2 2 ted 
+: 204 6 4 tal
+: 212 8 1 king
+- 220
+: 232 2 2 She 
+: 236 4 2 said, 
+: 244 2 2 \"Fuck 
+: 248 2 2 me 
+: 252 2 2 like 
+: 256 2 2 we 
+: 260 6 4 fucked 
+: 268 7 5 Bin 
+: 276 11 7 La
+: 288 8 5 den\" 
+: 300 7 5 (ooh, 
+: 308 8 5 whoa)
+- 316
+: 330 6 5 That 
+: 338 10 9 girl 
+: 350 8 7 was 
+: 360 2 5 a 
+: 364 10 7 freak
+- 374
+: 396 6 4 She 
+: 404 6 5 said 
+: 412 6 5 she 
+: 420 2 5 wanted 
+: 424 2 5 me 
+: 428 2 5 to 
+: 432 6 5 fuck 
+: 440 10 5 her 
+: 452 3 5 har
+: 456 2 5 der 
+: 460 2 5 than 
+: 464 2 5 the 
+: 468 3 4 mi
+: 472 3 4 li
+: 476 3 4 tar
+: 480 4 4 y
+- 484
+: 498 6 4 Fucked 
+: 506 6 4 Bin 
+: 514 7 4 La
+: 522 12 2 den
+- 534 536
+- 536
+: 562 6 4 Fucked 
+: 570 6 4 Bin 
+: 578 7 4 La
+: 586 12 2 den
+- 598 600
+- 600
+: 626 6 4 Fucked 
+: 634 6 4 Bin 
+: 642 7 4 La
+* 650 8 5 den
+- 658
+: 666 6 5 She 
+: 674 2 5 wan
+: 678 2 5 ted 
+: 682 2 5 to 
+: 686 6 5 fuck 
+: 694 10 5 me 
+: 706 3 5 har
+: 710 2 5 der 
+: 714 2 5 than 
+: 718 2 5 the 
+: 722 7 4 U
+: 730 6 4 S 
+: 738 3 4 go
+: 742 3 4 vern
+: 746 4 4 ment
+- 750
+: 754 6 4 Fucked 
+: 762 6 4 Bin 
+: 770 7 4 La
+: 778 12 2 den
+- 790
+F 794 12 7 Uh, 
+F 808 2 7 she 
+F 812 2 7 was 
+F 816 2 7 a 
+F 820 3 7 frea
+F 824 2 7 ky 
+F 828 2 7 kind 
+F 832 2 7 of 
+F 836 2 7 girl
+- 838
+F 844 2 7 Kept 
+F 848 6 7 up 
+F 856 2 7 with 
+F 860 3 7 cur
+F 864 2 7 rent 
+F 868 3 7 e
+F 872 4 7 vents 
+F 880 2 7 from 
+F 884 2 7 all 
+F 888 3 7 a
+F 892 2 7 round 
+F 896 2 7 the 
+F 900 4 7 world
+- 904
+F 924 2 7 More 
+F 928 3 7 spe
+F 932 3 7 ci
+F 936 3 7 fi
+F 940 6 7 cally, 
+F 948 2 7 one 
+F 952 3 7 e
+F 956 4 7 vent
+- 960
+F 966 2 7 The 
+F 970 2 7 time 
+F 974 3 7 O
+F 978 3 7 sa
+F 982 4 7 ma 
+F 988 6 7 Bin 
+F 996 3 7 La
+F 1000 2 7 den 
+F 1004 4 7 got 
+* 1012 2 14 shot 
+* 1016 2 14 in 
+* 1020 2 14 the 
+* 1024 4 16 head
+- 1028
+F 1030 4 7 She 
+F 1036 6 7 said, 
+F 1044 2 7 \"Do 
+F 1048 2 7 me 
+F 1052 6 7 like 
+F 1060 6 7 that\"
+- 1066
+F 1068 2 7 But 
+F 1072 2 7 I 
+F 1076 2 7 coul
+F 1080 2 7 dn’t 
+F 1084 2 7 track 
+F 1088 2 7 the 
+F 1092 2 7 me
+F 1096 2 7 ta
+F 1100 2 7 phor
+- 1102
+F 1106 6 7 That 
+F 1114 6 7 said, 
+F 1124 2 7 I 
+F 1128 2 7 can 
+F 1132 2 7 see 
+F 1136 2 7 you’re 
+F 1140 3 7 hor
+F 1144 2 7 ny 
+F 1148 2 7 like 
+F 1152 2 7 a 
+F 1156 3 7 Ste
+F 1160 3 7 go
+F 1164 4 7 saur
+- 1168
+F 1172 6 7 That 
+F 1180 2 7 said, 
+F 1184 3 7 a
+F 1188 2 7 gain 
+F 1192 2 7 your 
+F 1196 3 7 re
+F 1200 6 7 quest 
+F 1208 2 7 is 
+F 1212 2 7 so 
+F 1216 3 7 ir
+F 1220 3 7 reg
+F 1224 3 7 u
+F 1228 2 7 laur
+- 1230
+F 1232 2 7 She 
+F 1236 2 7 put 
+F 1240 2 7 on 
+F 1244 2 7 a 
+F 1248 6 7 beard, 
+F 1256 2 7 I 
+F 1260 3 7 star
+F 1264 2 7 ted 
+F 1268 3 7 loo
+F 1272 2 7 king 
+F 1276 2 7 at 
+F 1280 2 7 the 
+F 1284 3 7 ex
+F 1288 2 7 it 
+F 1292 8 7 door
+- 1300
+F 1308 2 7 Then 
+F 1312 2 7 a 
+F 1316 2 7 tur
+F 1320 8 7 ban, 
+F 1332 2 7 then 
+F 1336 2 7 a 
+F 1340 3 7 tu
+F 1344 8 7 nic
+- 1352
+F 1354 2 7 She 
+F 1358 2 7 said, 
+F 1362 3 7 \"In
+F 1366 6 7 vade 
+F 1374 2 7 my 
+F 1378 6 7 cave 
+F 1386 2 7 with 
+F 1390 2 7 your 
+F 1394 3 7 spe
+F 1398 2 7 cial 
+F 1402 3 7 u
+F 1406 4 7 nit\"
+- 1410
+F 1414 2 7 I 
+F 1418 2 7 said, 
+F 1422 2 7 \"He 
+F 1426 3 7 wa
+F 1430 2 7 sn’t 
+F 1434 2 7 in 
+F 1438 2 7 a 
+F 1442 2 7 cave\", 
+F 1446 2 7 but 
+F 1450 2 7 there 
+F 1454 2 7 was 
+F 1458 6 7 no 
+F 1466 3 7 stop
+F 1470 6 7 ping
+- 1476
+F 1484 2 7 She 
+F 1488 3 7 de
+F 1492 3 7 man
+F 1496 2 7 ded 
+F 1500 2 7 that 
+F 1504 2 7 I 
+F 1508 2 7 fuck 
+F 1512 2 7 her 
+F 1516 2 7 like 
+F 1520 2 7 we
+- 1522
+: 1524 6 4 Fucked 
+: 1532 6 4 Bin 
+: 1540 7 4 La
+: 1548 12 2 den
+- 1560
+: 1586 6 4 Fucked 
+: 1594 6 4 Bin 
+: 1602 7 4 La
+: 1610 12 2 den
+- 1622 1624
+- 1624
+: 1650 6 4 Fucked 
+: 1658 6 4 Bin 
+: 1666 7 4 La
+* 1674 12 5 den
+- 1686
+: 1690 6 5 She 
+: 1698 3 5 wan
+: 1702 2 5 ted 
+: 1706 2 5 to 
+: 1710 6 5 fuck 
+: 1718 10 5 me 
+: 1730 3 5 har
+: 1734 2 5 der 
+: 1738 2 5 than 
+: 1742 2 5 the 
+: 1746 7 4 U
+: 1754 6 4 S 
+: 1762 3 4 go
+: 1766 3 4 vern
+: 1770 6 4 ment
+- 1776
+: 1778 6 4 Fucked 
+: 1786 6 4 Bin 
+: 1794 7 4 La
+: 1802 12 2 den
+- 1814
+: 1836 6 5 This 
+: 1844 6 5 girl 
+: 1852 7 5 re
+: 1860 7 5 ques
+: 1868 6 5 ted 
+: 1876 3 9 in
+: 1880 7 7 ter
+: 1888 6 7 course 
+: 1898 4 5 to 
+: 1906 2 5 bring 
+: 1910 2 2 her 
+: 1914 2 0 to 
+: 1918 7 5 cli
+: 1926 6 5 max
+- 1932
+: 1936 6 5 With 
+: 1944 2 5 the 
+: 1948 3 5 cli
+: 1952 3 5 ni
+: 1956 4 5 cal 
+: 1964 7 5 e
+: 1972 3 5 ffic
+: 1976 7 5 ien
+: 1984 4 5 cy 
+: 1990 2 5 of 
+: 1994 2 5 the 
+: 1998 3 5 as
+: 2002 7 4 sas
+: 2010 3 4 sin
+: 2014 7 4 a
+: 2022 8 4 tion 
+: 2034 6 4 of 
+: 2042 6 4 Bin 
+: 2050 7 4 La
+: 2058 8 2 den
+- 2066
+F 2080 2 7 You’re 
+F 2084 3 7 har
+F 2088 3 7 bo
+F 2092 2 7 ring 
+F 2096 2 7 a 
+F 2100 3 7 fu
+F 2104 3 7 gi
+F 2108 4 7 tive 
+* 2118 3 17 (that 
+* 2122 8 17 ass)
+- 2130
+F 2138 2 7 And 
+F 2142 2 7 my 
+F 2146 3 7 jus
+F 2150 2 7 tice 
+F 2154 2 7 will 
+F 2158 2 7 be 
+F 2162 3 7 pu
+F 2166 3 7 ni
+F 2170 4 7 tive 
+* 2180 3 14 (I’
+* 2184 3 16 ma 
+* 2188 8 14 smash)
+- 2196
+F 2202 6 7 Night 
+F 2210 3 7 vi
+F 2214 2 7 sion, 
+F 2218 2 7 they 
+F 2222 2 7 can 
+F 2226 2 7 see 
+F 2230 2 7 us 
+F 2234 2 7 through 
+F 2238 2 7 my 
+F 2242 7 7 Go
+F 2250 6 7 Pro
+- 2256
+F 2258 2 7 She 
+F 2262 2 7 tried 
+F 2266 2 7 to 
+F 2270 3 7 ne
+F 2274 3 7 go
+F 2278 3 7 ti
+F 2282 4 7 ate, 
+F 2290 2 7 I 
+F 2294 2 7 said 
+F 2298 2 7 that’s 
+F 2302 2 7 a 
+F 2306 7 7 no
+F 2314 6 7 -no
+- 2320
+F 2322 2 7 Now 
+F 2326 2 7 I’m 
+F 2330 3 7 cree
+F 2334 2 7 ping 
+F 2338 2 7 in 
+F 2342 2 7 her 
+F 2346 7 7 bed
+F 2354 6 7 room 
+F 2362 6 7 like 
+F 2370 7 7 go
+F 2378 6 7 -go
+- 2384
+F 2386 2 7 She 
+F 2390 2 7 tells 
+F 2394 2 7 me 
+F 2398 2 7 to 
+F 2402 6 7 go 
+F 2410 6 7 low, 
+F 2418 2 7 then 
+F 2422 2 7 looks 
+F 2426 2 7 down 
+F 2430 2 7 and 
+F 2434 2 7 says 
+F 2438 2 7 I 
+F 2442 3 7 got
+F 2446 2 7 ta
+- 2448
+: 2450 7 9 \"Ter
+: 2458 2 7 ro
+: 2462 6 5 rize 
+: 2470 6 5 that 
+: 2478 7 9 pus
+: 2486 12 9 sy\"
+- 2498
+: 2506 3 5 \"Got
+: 2510 2 5 ta 
+: 2514 7 9 ter
+: 2522 3 9 ro
+: 2526 6 9 rize 
+: 2534 6 9 that 
+: 2542 9 10 pus
+: 2552 10 10 sy\"
+- 2562
+F 2570 2 7 So 
+F 2574 2 7 I 
+F 2578 2 7 did 
+F 2582 2 7 it, 
+F 2594 2 7 im
+F 2598 2 7 pro
+F 2602 2 7 vise 
+F 2606 2 7 some 
+F 2610 7 7 cra
+F 2618 2 7 zy 
+F 2622 4 7 shit
+- 2626
+F 2634 4 7 Seal 
+F 2640 4 7 Team 
+F 2648 7 7 six
+F 2656 3 7 ty
+F 2660 6 7 nine 
+F 2668 3 7 sex
+F 2672 3 7 e
+F 2676 3 7 cu
+F 2680 2 7 ting 
+F 2684 2 7 the 
+F 2688 2 7 hit
+- 2690
+F 2694 2 7 She 
+F 2698 2 7 said, 
+F 2702 2 7 \"You’ve 
+F 2706 3 7 fin
+F 2710 2 7 ished 
+F 2714 2 7 me 
+F 2718 8 7 off, 
+F 2728 2 7 now 
+F 2732 2 7 throw 
+F 2736 2 7 my 
+F 2740 3 7 bo
+F 2744 2 7 dy 
+F 2748 2 7 in 
+F 2752 2 7 the 
+F 2756 7 7 o
+F 2764 2 7 cean\"
+- 2766
+F 2768 2 7 I 
+F 2772 2 7 yell, 
+F 2776 3 7 \"Ge
+F 2780 3 7 ro
+F 2784 3 7 ni
+F 2788 2 7 mo,\" 
+F 2792 2 7 then 
+F 2796 2 7 took 
+F 2800 2 7 some 
+F 2804 3 7 pic
+F 2808 2 7 tures 
+F 2812 2 7 for 
+F 2816 7 7 pos
+F 2824 6 7 ting
+- 2830
+F 2832 2 7 The 
+F 2836 3 7 Pre
+F 2840 3 7 si
+F 2844 2 7 dent 
+F 2848 6 7 called, 
+F 2856 2 7 he 
+F 2860 2 7 said 
+F 2864 3 7 \"con
+F 2868 3 7 gra
+F 2872 3 7 tu
+F 2876 3 7 la
+F 2880 2 7 tions 
+F 2884 3 7 Con
+F 2888 1 7 nor\"
+- 2889
+F 2890 2 7 I 
+F 2894 2 7 said, 
+F 2898 3 7 \"Mis
+F 2902 2 7 ter 
+F 2906 3 7 Pre
+F 2910 3 7 si
+F 2914 2 7 dent, 
+F 2918 2 7 to 
+F 2922 2 7 what 
+F 2926 2 7 do 
+F 2930 2 7 I 
+F 2934 2 7 owe 
+F 2938 2 7 this 
+F 2942 3 7 ho
+F 2946 6 7 nor?\"
+- 2952
+F 2954 2 7 He 
+F 2958 2 7 said, 
+F 2962 2 7 \"Come 
+F 2966 2 7 give 
+F 2970 2 7 me 
+F 2974 2 7 the 
+F 2978 6 7 deets 
+F 2986 2 7 in 
+F 2990 2 7 the 
+F 2994 5 7 White 
+F 3000 6 7 House 
+F 3008 3 7 Gar
+F 3012 3 7 den
+- 3015
+F 3016 2 7 I 
+F 3020 2 7 gots 
+F 3024 2 7 to 
+F 3028 6 7 know 
+F 3036 2 7 how 
+F 3040 2 7 you 
+F 3044 2 7 fucked 
+F 3048 2 7 her 
+F 3052 2 7 like 
+F 3056 2 7 we
+- 3058
+: 3060 6 4 Fucked 
+: 3068 6 4 Bin 
+: 3076 7 4 La
+: 3084 12 2 den
+- 3096
+: 3122 6 4 Fucked 
+: 3130 6 4 Bin 
+: 3138 7 4 La
+: 3146 12 2 den
+- 3158 3162
+- 3162
+: 3188 6 4 Fucked 
+: 3196 6 4 Bin 
+: 3204 7 4 La
+: 3212 4 5 den
+- 3216
+: 3218 2 5 I 
+: 3222 2 5 still 
+: 3226 6 5 can’t 
+: 3234 6 5 say 
+: 3242 2 5 that 
+: 3246 2 5 I 
+: 3250 2 5 see 
+: 3254 2 5 the 
+: 3258 3 5 ap
+: 3262 6 5 peal
+- 3268
+: 3274 2 5 But 
+: 3278 2 5 she 
+: 3282 3 4 wan
+: 3286 2 4 ted 
+: 3290 2 4 me 
+: 3294 2 4 to 
+: 3298 2 4 fuck 
+: 3302 2 4 her 
+: 3306 2 4 like 
+: 3310 2 4 we
+- 3312
+: 3314 6 4 Fucked 
+: 3322 6 4 Bin 
+: 3330 7 4 La
+: 3338 4 2 den
+- 3342
+* 3344 11 5 Oh,
+- 3355
+: 3356 6 5 This 
+: 3364 6 5 girl 
+: 3372 7 5 in
+: 3380 3 5 sis
+: 3384 6 5 ted 
+: 3392 6 5 that 
+: 3400 2 4 the 
+: 3404 2 5 way 
+: 3408 2 4 we 
+: 3412 2 5 did 
+: 3416 2 4 it 
+: 3420 6 5 was 
+: 3428 2 5 mer
+: 3432 2 4 ci
+: 3436 6 5 less 
+: 3444 2 5 and 
+: 3448 2 5 e
+: 3452 6 5 xact
+- 3458
+: 3464 6 5 Just 
+: 3472 6 5 like 
+: 3480 2 5 the 
+: 3484 6 5 now 
+: 3492 6 5 world 
+: 3500 7 5 fa
+: 3508 2 5 mous 
+: 3512 7 5 at
+: 3520 6 5 tack
+- 3526
+* 3530 6 5 That 
+* 3538 6 4 fucked 
+* 3546 7 4 O
+* 3554 7 0 sa
+* 3562 8 0 ma 
+* 3572 6 -3 Bin 
+* 3580 7 4 La
+* 3588 7 2 ~
+* 3596 20 2 den
+E

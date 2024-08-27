@@ -2771,6 +2771,33 @@
     "local": false
   },
   {
+    "id": "alesso-feat-tove-lo-heroes-we-could-be",
+    "title": "Heroes (We Could Be)",
+    "artist": "Alesso feat. Tove Lo",
+    "video": "a7SouU3ECpU",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 43018.09523809524,
+    "year": "2014",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-08-27T00:15:37.408Z",
+    "genre": "Dance, Electronic",
+    "realBpm": 126,
+    "volume": 0.71,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "name": "Heroes (We Could Be)",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alessofeattoveloheroeswecouldbe",
+    "local": false
+  },
+  {
     "id": "alesso-katy-perry-when-im-gone",
     "title": "When I’m Gone",
     "artist": "Alesso & Katy Perry",
@@ -24039,6 +24066,33 @@
     "local": false
   },
   {
+    "id": "dua-lipa-new-rules",
+    "title": "New Rules",
+    "artist": "Dua Lipa",
+    "video": "k2qgadSvNyU",
+    "language": [
+      "English"
+    ],
+    "bpm": 232,
+    "gap": 17330.172413793105,
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-08-27T00:15:37.418Z",
+    "genre": "Pop",
+    "realBpm": 116,
+    "volume": 0.67,
+    "author": "Coppolatte",
+    "sourceUrl": "https://youtu.be/k2qgadSvNyU",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dualipanewrules",
+    "local": false
+  },
+  {
     "id": "dua-lipa-physical",
     "title": "Physical",
     "artist": "Dua Lipa",
@@ -28413,6 +28467,33 @@
     "local": false
   },
   {
+    "id": "foo-fighters-best-of-you",
+    "title": "Best Of You",
+    "artist": "Foo Fighters",
+    "video": "h_L4Rixya64",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": -44.70588235294122,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:37.421Z",
+    "realBpm": 130,
+    "volume": 0.78,
+    "author": "rote_rose",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168142",
+    "sourceUrl": "https://usdb.animux.de/",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "foofightersbestofyou",
+    "local": false
+  },
+  {
     "id": "foo-fighters-everlong",
     "title": "Everlong",
     "artist": "Foo Fighters",
@@ -28490,6 +28571,59 @@
     ],
     "tracksCount": 1,
     "search": "foofightersthepretender",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-these-days",
+    "title": "These Days",
+    "artist": "Foo Fighters",
+    "video": "YDVAQI-4lto",
+    "language": [
+      "English"
+    ],
+    "bpm": 271.83,
+    "gap": 17526.73214876945,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:37.424Z",
+    "realBpm": 135,
+    "volume": 0.83,
+    "author": "znxineohp",
+    "sourceUrl": "https://usdb.animux.de",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "foofightersthesedays",
+    "local": false
+  },
+  {
+    "id": "foo-fighters-times-like-these",
+    "title": "Times Like These",
+    "artist": "Foo Fighters",
+    "video": "rhzmNRtIp8k",
+    "language": [
+      "English"
+    ],
+    "bpm": 393.3,
+    "gap": 22088.39054157132,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:37.426Z",
+    "genre": "Alternative Rock",
+    "realBpm": 145,
+    "volume": 0.73,
+    "author": "Gollum",
+    "sourceUrl": "https://usdb.animux.de/",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "foofighterstimeslikethese",
     "local": false
   },
   {
@@ -31694,10 +31828,10 @@
       "English"
     ],
     "bpm": 256,
-    "gap": 48826.90625,
+    "gap": 48876.90625,
     "year": "1987",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-07T13:35:11.663Z",
+    "lastUpdate": "2024-08-27T00:15:37.428Z",
     "genre": "Rock",
     "videoGap": 20,
     "realBpm": 63,
@@ -36082,6 +36216,33 @@
     "local": false
   },
   {
+    "id": "jesse-joy-la-de-la-mala-suerte",
+    "title": "La de la mala suerte",
+    "artist": "Jesse & Joy",
+    "video": "r0eIhlsks4s",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 280,
+    "gap": 667.1428571428572,
+    "year": "2012",
+    "lastUpdate": "2024-08-27T00:15:37.431Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 0.8,
+    "author": "vicktoben",
+    "authorUrl": "https://www.youtube.com/channel/UC6awBq3lKY35T__puHY2OYQ",
+    "sourceUrl": "https://www.youtube.com/watch?v=r0eIhlsks4s",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jessejoyladelamalasuerte",
+    "local": false
+  },
+  {
     "id": "jesse-mccartney-beautiful-soul",
     "title": "Beautiful Soul",
     "artist": "Jesse McCartney",
@@ -40286,9 +40447,9 @@
       "English"
     ],
     "bpm": 240.02,
-    "gap": 30460.083326389467,
+    "gap": 30560.083326389467,
     "year": "2010",
-    "lastUpdate": "2023-10-15T11:26:31.291Z",
+    "lastUpdate": "2024-08-27T00:15:38.087Z",
     "edition": "None",
     "genre": "Pop",
     "realBpm": 120,
@@ -44663,6 +44824,32 @@
     "local": false
   },
   {
+    "id": "linkin-park-new-divide",
+    "title": "New Divide",
+    "artist": "Linkin Park",
+    "video": "ysSxxIqKNN0",
+    "language": [
+      "English"
+    ],
+    "bpm": 354,
+    "gap": 34493.05084745763,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:38.230Z",
+    "realBpm": 118,
+    "volume": 0.78,
+    "author": "jdogk, IC",
+    "sourceUrl": "https://usdb.animux.de",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparknewdivide",
+    "local": false
+  },
+  {
     "id": "linkin-park-numb",
     "title": "Numb",
     "artist": "Linkin Park",
@@ -46789,10 +46976,10 @@
       "English"
     ],
     "bpm": 370.1,
-    "gap": 1796.7603350445825,
+    "gap": 1896.7603350445825,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2023-12-28T19:33:30.492Z",
+    "lastUpdate": "2024-08-27T00:15:38.233Z",
     "genre": "Pop",
     "realBpm": 92,
     "volume": 0.66,
@@ -49966,6 +50153,33 @@
     "local": false
   },
   {
+    "id": "melanie-martinez-pity-party",
+    "title": "Pity Party",
+    "artist": "Melanie Martinez",
+    "video": "6bAPlojfgO0",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 18903.739130434784,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:38.234Z",
+    "genre": "Alternative",
+    "videoGap": 2,
+    "realBpm": 136,
+    "volume": 0.8,
+    "author": "jmfb",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melaniemartinezpityparty",
+    "local": false
+  },
+  {
     "id": "melanie-martinez-sippy-cup",
     "title": "Sippy Cup",
     "artist": "Melanie Martinez",
@@ -49988,6 +50202,32 @@
     ],
     "tracksCount": 1,
     "search": "melaniemartinezsippycup",
+    "local": false
+  },
+  {
+    "id": "melanie-martinez-soap",
+    "title": "Soap",
+    "artist": "Melanie Martinez",
+    "video": "_RyiXOoDijk",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.97,
+    "gap": 7651.4011697995265,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:38.236Z",
+    "genre": "Alternative",
+    "realBpm": 120,
+    "volume": 0.75,
+    "author": "Vikuo",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melaniemartinezsoap",
     "local": false
   },
   {
@@ -69579,10 +69819,10 @@
       "English"
     ],
     "bpm": 210.2,
-    "gap": 15499.951474785918,
+    "gap": 15649.951474785918,
     "year": "1994",
     "artistOrigin": "US",
-    "lastUpdate": "2023-04-19T20:07:20.056Z",
+    "lastUpdate": "2024-08-27T00:15:38.238Z",
     "edition": "SingStar '90s USA",
     "genre": "Pop",
     "realBpm": 105,
@@ -71536,9 +71776,10 @@
       "English"
     ],
     "bpm": 395.8,
-    "gap": 50540,
+    "gap": 49604.65386558868,
     "year": "2001",
     "artistOrigin": "US",
+    "lastUpdate": "2024-08-27T00:15:38.239Z",
     "edition": "Rock Band Store 2008 Vol. 3",
     "genre": "Metal Alternativo",
     "realBpm": 112,
@@ -71548,7 +71789,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity",
     "tracks": [
       {
-        "start": 0
+        "start": 26
       }
     ],
     "tracksCount": 1,
@@ -72034,6 +72275,37 @@
     "local": false
   },
   {
+    "id": "tatu-all-the-things-she-said",
+    "title": "All The Things She Said",
+    "artist": "t.A.T.u.",
+    "video": "8mGBaXPlri8",
+    "language": [
+      "English"
+    ],
+    "bpm": 360,
+    "gap": 21570,
+    "year": "2002",
+    "artistOrigin": "RU",
+    "lastUpdate": "2024-08-27T00:15:38.243Z",
+    "genre": "Pop",
+    "videoGap": 8,
+    "realBpm": 90,
+    "previewStart": 21,
+    "previewEnd": 60,
+    "volume": 0.83,
+    "author": "mg",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=372",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=4514",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tatuallthethingsshesaid",
+    "local": false
+  },
+  {
     "id": "taylor-swift-22",
     "title": "22",
     "artist": "Taylor Swift",
@@ -72172,17 +72444,17 @@
       "English"
     ],
     "bpm": 340,
-    "gap": 329.4117647058823,
+    "gap": 385.2941176470588,
     "year": "2019",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:45.864Z",
+    "lastUpdate": "2024-08-27T00:15:38.245Z",
     "genre": "Pop",
     "realBpm": 170,
     "volume": 0.75,
     "author": "Coppo",
     "tracks": [
       {
-        "start": 22
+        "start": 23
       }
     ],
     "tracksCount": 1,
@@ -74588,20 +74860,20 @@
       "English"
     ],
     "bpm": 360,
-    "gap": 85,
+    "gap": -40,
     "year": "2017",
     "artistOrigin": "US",
-    "lastUpdate": "2024-08-17T00:15:08.794Z",
+    "lastUpdate": "2024-08-27T00:15:38.248Z",
     "genre": "Soundtrack",
     "realBpm": 125,
     "volume": 0.79,
     "author": "Baklap4",
     "tracks": [
       {
-        "start": 15
+        "start": 18
       },
       {
-        "start": 1767
+        "start": 1770
       }
     ],
     "tracksCount": 2,
@@ -75176,6 +75448,78 @@
     ],
     "tracksCount": 1,
     "search": "thelivingtombstonenomercy",
+    "local": false
+  },
+  {
+    "id": "the-lonely-island-feat-akon-i-just-had-sex",
+    "title": "I Just Had Sex",
+    "artist": "The Lonely Island feat. Akon",
+    "video": "lQlIhraqL7o",
+    "language": [
+      "English"
+    ],
+    "bpm": 336,
+    "gap": 1897.8571428571427,
+    "year": "2010",
+    "lastUpdate": "2024-08-27T00:15:38.249Z",
+    "realBpm": 168,
+    "volume": 0.79,
+    "author": "snake84",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thelonelyislandfeatakonijusthadsex",
+    "local": false
+  },
+  {
+    "id": "the-lonely-island-feat-connor4real-finest-girl-bin-laden-song",
+    "title": "Finest Girl (Bin Laden Song)",
+    "artist": "The Lonely Island feat. Connor4real",
+    "video": "Jr9Kaa1sycs",
+    "language": [
+      "English"
+    ],
+    "bpm": 396,
+    "gap": 9175.151515151516,
+    "year": "2016",
+    "lastUpdate": "2024-08-27T00:15:38.393Z",
+    "realBpm": 99,
+    "volume": 0.77,
+    "author": "be787",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thelonelyislandfeatconnor4realfinestgirlbinladensong",
+    "local": false
+  },
+  {
+    "id": "the-lonely-island-feat-michael-bolton-jack-sparrow",
+    "title": "Jack Sparrow",
+    "artist": "The Lonely Island feat. Michael Bolton",
+    "video": "GI6CfKcMhjY",
+    "language": [
+      "English"
+    ],
+    "bpm": 388,
+    "gap": 26814.845360824744,
+    "year": "2011",
+    "lastUpdate": "2024-08-27T00:15:38.537Z",
+    "realBpm": 97,
+    "volume": 0.75,
+    "author": "snake84, fepo",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thelonelyislandfeatmichaelboltonjacksparrow",
     "local": false
   },
   {
@@ -78823,10 +79167,10 @@
       "Korean"
     ],
     "bpm": 338.04,
-    "gap": 5659.410720624778,
+    "gap": 5759.410720624778,
     "year": "2018",
     "artistOrigin": "KR",
-    "lastUpdate": "2024-01-19T05:46:36.128Z",
+    "lastUpdate": "2024-08-27T00:15:38.678Z",
     "realBpm": 170,
     "volume": 0.66,
     "author": "asdFer",
