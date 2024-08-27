@@ -112,10 +112,10 @@ function RemoteSongList({
           data-test="search-input"
         />
         <Tabs>
-          <Tab data-active={tab === 'list'} onClick={() => changeTab('list')}>
+          <Tab data-test="all-songs-button" data-active={tab === 'list'} onClick={() => changeTab('list')}>
             All songs
           </Tab>
-          <Tab data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
+          <Tab data-test="your-list-button" data-active={tab === 'queue'} onClick={() => changeTab('queue')}>
             Your list ({addedSongs.length})
           </Tab>
           <LanguageFilter
@@ -171,6 +171,7 @@ function RemoteSongList({
                 )}
                 {isOnList ? (
                   <ActiveButton
+                    data-test="unselect-song-button"
                     onClick={(e) => {
                       e.stopPropagation();
                       setAddedSongs((current) => current.filter((id) => id !== song.id));
@@ -179,6 +180,7 @@ function RemoteSongList({
                   </ActiveButton>
                 ) : (
                   <AddButton
+                    data-test="add-song-button"
                     onClick={(e) => {
                       e.stopPropagation();
                       setAddedSongs((current) => [...current, song.id]);
