@@ -9,7 +9,7 @@ test('Mic input should properly return frequencies', async ({ mount, page }) => 
 
     await micInput.startMonitoring();
 
-    const frequencies: [number, number][] = [];
+    const frequencies: number[][] = [];
 
     await new Promise((resolve) => setTimeout(resolve, 200));
     for (let i = 0; i < 20; i++) {

@@ -1,14 +1,23 @@
 import InputInterface from 'modules/GameEngine/Input/Interface';
 import { MicInput } from 'modules/GameEngine/Input/MicInput';
+import { SelectedPlayerInput } from 'modules/Players/PlayersManager';
+
+const isDeviceSelectedForMultipleChannels = (allInputs: SelectedPlayerInput[] = [], deviceId: string | undefined) => {
+  const playerInputs = allInputs.filter((input) => input.deviceId === deviceId).map((input) => input.channel);
+  return playerInputs.some((channel) => playerInputs[0] !== channel);
+};
 
 class MultiMicInput implements InputInterface {
-  private devices: Record<string, MicInput> = {};
-  public startMonitoring = async (deviceId?: string, echoCancellation = false) => {
+  private devices: Record<string, InputInterface> = {};
+  public startMonitoring = async (deviceId?: string, allInputs?: SelectedPlayerInput[]) => {
+    console.log(this.devices);
     if (deviceId) {
       if (!this.devices[deviceId]) {
-        this.devices[deviceId] = new MicInput();
+        this.devices[deviceId] = isDeviceSelectedForMultipleChannels(allInputs, deviceId)
+          ? new MicInput(2)
+          : new MicInput(1);
       }
-      await this.devices[deviceId].startMonitoring(deviceId, echoCancellation);
+      await this.devices[deviceId].startMonitoring(deviceId);
     }
   };
 
@@ -31,7 +40,8 @@ class MultiMicInput implements InputInterface {
     }
   };
   public stopMonitoring = async () => {
-    Object.values(this.devices).forEach((device) => device.stopMonitoring());
+    await Promise.all(Object.values(this.devices).map((device) => device.stopMonitoring()));
+    this.devices = {};
   };
 
   public getInputLag = (deviceId?: string) => {

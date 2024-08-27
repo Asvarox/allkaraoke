@@ -9,18 +9,22 @@ import { InputSourceList, InputSourceNames } from 'routes/SelectInput/InputSourc
 
 export function usePlayerInput(playerNumber: 0 | 1 | 2 | 3, sources: Record<string, InputSourceList>) {
   const sourceList = Object.keys(sources) as Array<InputSourceNames>;
-  const [selectedPlayerInput, playerInputData] = useEventListenerSelector(
+  const [selectedPlayerInput, playerInputData, isPlayerInputInitialised] = useEventListenerSelector(
     [events.playerInputChanged, events.inputListChanged],
     () => {
       const playerInput = PlayersManager.getPlayer(playerNumber)?.input;
 
-      if (!playerInput) return tuple([null, null]);
-      return tuple([playerInput, InputSources.getInputForPlayerSelected(playerInput)]);
+      if (!playerInput) return tuple([null, null, true]);
+      return tuple([
+        playerInput,
+        InputSources.getInputForPlayerSelected(playerInput),
+        InputSources.isPlayerInputInitialised(playerInput),
+      ]);
     },
   );
 
   useEffect(() => {
-    if (playerInputData === null) {
+    if (isPlayerInputInitialised && playerInputData === null) {
       const source = sourceList[0];
       const input = sources[source].getDefault();
       if (input) {

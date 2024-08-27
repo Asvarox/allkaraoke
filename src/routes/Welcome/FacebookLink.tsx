@@ -27,7 +27,7 @@ function FacebookLink() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
 
   const [show, setShow] = useState(false);
-  const [width, setWidth] = useState(200);
+  const [width, setWidth] = useState(180);
   const fbRef = useCallback((node: HTMLDivElement) => {
     setWidth(Math.round(node?.getBoundingClientRect().width) ?? 200);
   }, []);
@@ -45,12 +45,12 @@ function FacebookLink() {
   return (
     <Container data-small={!!mobilePhoneMode} show={show}>
       <div
-        dangerouslySetInnerHTML={{ __html: FBEmbedCode(350, 750) }}
+        dangerouslySetInnerHTML={{ __html: FBEmbedCode(450, 750) }}
         style={{
           height: 750 * (width / 350),
           width: '100%',
           transformOrigin: 'left top',
-          transform: `scale(${width / 350})`,
+          transform: `scale(${width / 450})`,
         }}
       />
       <h5 ref={fbRef}>Get updates, and help by suggesting features and reporting bugs.</h5>

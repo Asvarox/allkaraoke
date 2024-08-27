@@ -28,4 +28,5 @@ export interface InputSourceManagerInterface {
 export interface InputSourceList {
   list: InputSource[];
   getDefault: () => InputSource | null;
+  initialised: boolean;
 }

@@ -157,9 +157,7 @@ export class NetworkClient {
       if (type === 'start-monitor') {
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.addListener(this.onFrequencyUpdate);
-        // echoCancellation is turned on because without it there is silence from the mic
-        // every other second (possibly some kind of Chrome Mobile bug)
-        SimplifiedMic.startMonitoring(undefined, true);
+        SimplifiedMic.startMonitoring(undefined);
       } else if (type === 'stop-monitor') {
         SimplifiedMic.removeListener(this.onFrequencyUpdate);
         SimplifiedMic.stopMonitoring();
