@@ -84,7 +84,7 @@ test('Adding and removing songs from Favourite list', async ({ page, browser, br
 
   await test.step('Deleting songs from Favourite List works - songs are not visible', async () => {
     await remoteMic.remoteSongListPage.goToAllSongsPlaylist();
-    await remoteMic.remoteSongListPage.expectALlSongsPlaylistToBeSelected();
+    await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
     await remoteMic.remoteSongListPage.removeSongFromFavouriteList(songID);
     await remoteMic.remoteSongListPage.expectFavouriteListToContainNumberOfSongs('0');
     await remoteMic.remoteSongListPage.goToFavouriteList();
