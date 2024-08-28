@@ -129,15 +129,18 @@ test('Searching song in all and favourite songs list', async ({ page, browser })
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(song2.ID);
     await remoteMic.remoteMicSongListPage.expectFavouriteListToContainNumberOfSongs('2');
     await remoteMic.remoteMicSongListPage.goToFavouriteList();
-    test.fail(true, 'Searching songs in Favourite songs list does not work');
     await remoteMic.remoteMicSongListPage.searchTheSong(song1.name);
-    await expect(remoteMic.remoteMicSongListPage.getSongElement(song1.ID)).toBeVisible();
-    await expect(remoteMic.remoteMicSongListPage.getSongElement(song2.ID)).not.toBeVisible();
+
+    test.fail(true, 'Searching songs in Favourite songs list does not work');
+    await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(song1.ID)).toBeVisible();
+    await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(song2.ID)).not.toBeVisible();
 
     await remoteMic.remoteMicSongListPage.searchInput.clear();
     await remoteMic.remoteMicSongListPage.searchTheSong(song2.name);
-    await expect(remoteMic.remoteMicSongListPage.getSongElement(song2.ID)).toBeVisible();
-    await expect(remoteMic.remoteMicSongListPage.getSongElement(song1.ID)).not.toBeVisible();
+
+    test.fail(true, 'Searching songs in Favourite songs list does not work');
+    await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(song2.ID)).toBeVisible();
+    await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(song1.ID)).not.toBeVisible();
   });
 });
 
@@ -149,14 +152,26 @@ test('Filtering all and favourites by song language ', async ({ page, browser })
     engPol: 'e2e-english-polish-1994',
   };
 
+  const languages = {
+    spanish: 'Spanish',
+    english: 'English',
+  };
+
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.selectSmartphones();
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
-  await test.step('All songs list - filtering works, only songs in selected language are visible', async () => {
+  await test.step('Add songs to Favourites - for later', async () => {
     await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songList.spanish);
+    await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songList.english);
+    await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songList.polish);
+    await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songList.engPol);
+  });
+
+  await test.step('All songs list - filtering works, only songs in selected language are visible', async () => {
     await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
     await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected('Spanish');
     await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
@@ -167,12 +182,25 @@ test('Filtering all and favourites by song language ', async ({ page, browser })
 
   await test.step('All songs list - deselecting the language and searching for a bilingual song works', async () => {
     await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
-    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsDeselected('Spanish');
-    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected('English');
+    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsDeselected(languages.spanish);
+    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.english);
     await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.english)).toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.engPol)).toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.polish)).not.toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.spanish)).not.toBeVisible();
+  });
+
+  await test.step('Favourite songs list - language settings should be remembered', async () => {
+    await remoteMic.remoteMicSongListPage.goToFavouriteList();
+    await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
+    await remoteMic.remoteMicSongLanguagesPage.expectSongLanguageToBeSelected(languages.english);
+    await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.english)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.engPol)).toBeVisible();
+
+    test.fail(true, 'Language filtering does not work in Favourite songs list');
+    await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songList.polish)).not.toBeVisible();
+    await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songList.spanish)).not.toBeVisible();
   });
 });
