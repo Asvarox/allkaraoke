@@ -32,7 +32,7 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
     <>
       {open && (
         <Modal onClose={() => setOpen(false)}>
-          <MenuContainer className="!gap-1">
+          <MenuContainer data-test="languages-container" className="!gap-1">
             {languageList
               .filter((lang) => lang.count > MIN_SONGS_COUNT)
               .map(({ name, count }) => (

@@ -1,4 +1,4 @@
-import { Browser, BrowserContext, Page } from '@playwright/test';
+import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
 export class RemoteMicSongLanguagesPagePO {
   constructor(
@@ -8,25 +8,30 @@ export class RemoteMicSongLanguagesPagePO {
   ) {}
 
   public getLanguageButton(language: string) {
-    return this.page.getByTestId(language);
+    return this.page.getByTestId(language).locator('span');
   }
 
   public async selectLanguage(language: string) {
     await this.getLanguageButton(language).click();
   }
 
-  public getLanguageClassAttribute(language: string) {
-    return this.getLanguageButton(language).locator('span').getAttribute('class');
+  public async expectSongLanguageToBeSelected(language: string) {
+    await expect(this.getLanguageButton(language)).toHaveClass('text-active');
+  }
+
+  private async isLanguageSelected(language: string) {
+    const languageClassAttribute = await this.getLanguageButton(language).getAttribute('class');
+    return languageClassAttribute === 'text-active';
   }
 
   public async ensureSongLanguageIsSelected(language: string) {
-    if ((await this.getLanguageClassAttribute(language)) === '') {
+    if (!(await this.isLanguageSelected(language))) {
       await this.selectLanguage(language);
     }
   }
 
   public async ensureSongLanguageIsDeselected(language: string) {
-    if ((await this.getLanguageClassAttribute(language)) === 'text-active') {
+    if (await this.isLanguageSelected(language)) {
       await this.selectLanguage(language);
     }
   }
