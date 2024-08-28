@@ -9,7 +9,7 @@ import styles from 'modules/GameEngine/Drawing/styles';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import isE2E from 'modules/utils/isE2E';
-import { useFeatureFlagPayload } from 'posthog-js/react';
+import { useFeatureFlagVariantKey } from 'posthog-js/react';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useHotkeys } from 'react-hotkeys-hook';
@@ -26,7 +26,7 @@ export const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigit
 
 function LandingPage() {
   const [setupPreference] = useSettingValue(MicSetupPreferenceSetting);
-  const skipInitialSetup = useFeatureFlagPayload(FeatureFlags.SkipInitialSetup);
+  const skipInitialSetup = useFeatureFlagVariantKey(FeatureFlags.SkipInitialSetup);
   const navigate = useSmoothNavigate();
 
   useBackground(true);
