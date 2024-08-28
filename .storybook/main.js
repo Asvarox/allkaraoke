@@ -9,9 +9,6 @@ module.exports = {
     options: {},
   },
   core: {},
-  features: {
-    storyStoreV7: true,
-  },
   async viteFinal(config, { configType }) {
     return mergeConfig(config, {
       plugins: [tsconfigPaths()],

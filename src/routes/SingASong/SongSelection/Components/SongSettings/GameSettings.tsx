@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { GAME_MODE, SingSetup, SongPreview } from 'interfaces';
 import { Button } from 'modules/Elements/Button';
 import { Switcher, nextIndex, nextValue } from 'modules/Elements/Switcher';

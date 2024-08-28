@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { GAME_MODE, Note } from 'interfaces';
 import styles from 'modules/GameEngine/Drawing/styles';
 import GameState from 'modules/GameEngine/GameState/GameState';
@@ -15,10 +15,10 @@ interface Props {
   player: PlayerEntity;
   bottom?: boolean;
   effectsEnabled: boolean;
-  showMultipleLines: boolean;
+  showStatusForAllPlayers: boolean;
 }
 
-function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: Props) {
+function Lyrics({ player, bottom = false, effectsEnabled, showStatusForAllPlayers }: Props) {
   const playerState = GameState.getPlayer(player.number)!;
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const playerColor = styles.colors.players[player.number].text;
@@ -46,12 +46,12 @@ function Lyrics({ player, bottom = false, effectsEnabled, showMultipleLines }: P
     <LyricsContainer shouldBlink={shouldBlink} bottom={bottom} data-test={`lyrics-container-player-${player.number}`}>
       {!mobilePhoneMode && effectsEnabled && (
         <VolumeIndicatorContainer>
-          {showMultipleLines ? (
-            <SLyricsVolumeIndicator player={player} />
-          ) : (
+          {showStatusForAllPlayers ? (
             GameState.getPlayers().map((player) => (
               <SLyricsVolumeIndicator key={player.getNumber()} player={PlayersManager.getPlayer(player.getNumber())!} />
             ))
+          ) : (
+            <SLyricsVolumeIndicator player={player} />
           )}
         </VolumeIndicatorContainer>
       )}
