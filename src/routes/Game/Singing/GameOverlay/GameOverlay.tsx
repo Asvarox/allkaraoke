@@ -96,7 +96,7 @@ const GameOverlay = forwardRef(function (
   }, [currentStatus, onSongEnd]);
 
   const players = PlayersManager.getPlayers();
-  const showMultipleLines = !mobilePhoneMode && players.length === 2;
+  const showMultipleLines = !mobilePhoneMode && players.length > 1;
 
   return (
     <Screen>
@@ -123,7 +123,7 @@ const GameOverlay = forwardRef(function (
       <DurationBar players={playerSetups} />
       <LyricsWrapper>
         {showMultipleLines && (
-          <Lyrics player={players[0]} effectsEnabled={effectsEnabled} showMultipleLines={showMultipleLines} />
+          <Lyrics player={players[0]} effectsEnabled={effectsEnabled} showStatusForAllPlayers={players.length > 2} />
         )}
       </LyricsWrapper>
       <Scores>
@@ -148,8 +148,8 @@ const GameOverlay = forwardRef(function (
       </Scores>
       <LyricsWrapper ref={lyrics}>
         <Lyrics
-          showMultipleLines={showMultipleLines}
-          player={players[showMultipleLines ? 1 : 0]}
+          showStatusForAllPlayers={players.length > 2}
+          player={players.length > 2 ? players[0] : players.at(-1)!}
           bottom
           effectsEnabled={effectsEnabled}
         />
