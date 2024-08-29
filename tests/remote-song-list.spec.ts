@@ -110,7 +110,7 @@ test('Searching song in all and favourite songs list', async ({ page, browser })
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
-  await test.step('All songs list - only searching song is visible in results', async () => {
+  await test.step('All songs list - only searched song is visible in results', async () => {
     await remoteMic.remoteMicMainPage.goToSongList();
     await remoteMic.remoteSongListPage.expectAllSongsPlaylistToBeSelected();
     await remoteMic.remoteSongListPage.searchTheSong(song1.name);
@@ -123,7 +123,7 @@ test('Searching song in all and favourite songs list', async ({ page, browser })
     await expect(remoteMic.remoteSongListPage.getSongElement(song1.ID)).not.toBeVisible();
   });
 
-  await test.step('Favourite songs list - only searching song is visible in results', async () => {
+  await test.step('Favourite songs list - only searched song is visible in results', async () => {
     await remoteMic.remoteSongListPage.searchInput.clear();
     await remoteMic.remoteSongListPage.addSongToFavouriteList(song1.ID);
     await remoteMic.remoteSongListPage.addSongToFavouriteList(song2.ID);
