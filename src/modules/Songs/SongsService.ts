@@ -56,16 +56,17 @@ class SongsService {
     return !!localSong;
   };
 
-  public get = async (songId: string) => {
+  public get = async (songId: string): Promise<Song> => {
     const localSong = await this.getLocal(songId);
 
     if (!localSong) {
       return await fetch(`/songs/${songId}.txt`)
         .then((response) => response.text())
-        .then(convertTxtToSong);
+        .then(convertTxtToSong)
+        .then((song) => ({ ...song, local: false }));
     }
 
-    return localSong;
+    return { ...localSong, local: true };
   };
 
   public getIndex = async (includeDeleted = false): Promise<SongPreview[]> => {

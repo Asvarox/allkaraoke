@@ -132,7 +132,7 @@ export class NetworkClient {
     this.sendEvent('ping', { p: this.pingStart });
   };
 
-  private reportPing = throttle((ping: number) => posthog.capture('remote_mic_ping', { ping }), 10_000);
+  private reportPing = throttle((ping: number) => posthog.capture('remote_mic_ping', { ping }), 60_000);
 
   private onPong = () => {
     this.latency = getPingTime() - this.pingStart;

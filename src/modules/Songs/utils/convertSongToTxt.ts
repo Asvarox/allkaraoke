@@ -17,7 +17,7 @@ const getMetadataKey = (meta: string) => meta.split(':')[0];
 
 export default function convertSongToTxt(song: Song) {
   const parsedValues: Record<
-    keyof Omit<Song, 'tracks' | 'bar' | 'unsupportedProps' | 'mergedTrack'>,
+    keyof Omit<Song, 'tracks' | 'bar' | 'unsupportedProps' | 'mergedTrack' | 'local'>,
     string | undefined
   > = {
     artist: toTxtValue('ARTIST', song.artist),

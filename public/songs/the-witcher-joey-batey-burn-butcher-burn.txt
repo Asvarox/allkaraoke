@@ -1,0 +1,255 @@
+#ARTIST:The Witcher (Joey Batey)
+#TITLE:Burn Butcher Burn
+#CREATOR:Oli Lan
+#BPM:312
+#YEAR:2021
+#VIDEO:v=SPiz96e8w4k
+#LANGUAGE:English
+#GAP:5650,384615384615
+#ALLKARAOKE_ID:the-witcher-joey-batey-burn-butcher-burn
+#ALLKARAOKE_LASTUPDATE:2024-08-29T08:51:53.111Z
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_VOLUME:1
+#MP3:The Witcher (Joey Batey) - Burn Butcher Burn.mp3
+: 21 20 3 I 
+: 71 24 7 hear 
+: 111 3 5 you’re 
+: 115 3 3 a
+: 119 24 8 live, 
+: 153 12 12 how 
+: 173 3 0 di
+: 177 5 0 sap
+: 183 7 0 poin
+: 191 6 0 ting
+- 197 218
+- 218
+: 239 20 7 I’ve 
+: 261 6 15 al
+: 269 12 14 so 
+: 291 5 12 sur
+: 297 14 14 vived, 
+: 327 5 7 no 
+: 333 5 7 thanks 
+: 339 3 5 to 
+: 343 16 7 you
+- 359 386
+- 386
+: 407 9 7 Did 
+: 417 5 7 I 
+: 423 14 15 not 
+: 445 7 15 bring 
+: 453 5 15 you 
+: 459 6 15 some 
+: 467 20 14 glee
+- 487
+: 493 6 12 Mis
+: 501 5 14 ter, 
+: 507 8 19 oh, 
+: 533 5 3 look 
+: 539 4 5 at 
+: 547 14 7 me
+- 561
+: 567 12 5 Now 
+: 583 6 3 I’ll 
+: 591 18 7 burn 
+: 637 5 2 all 
+: 643 3 3 the 
+: 647 7 5 mem
+: 655 19 2 ories 
+: 675 12 3 of 
+: 691 20 0 you
+- 711 740
+- 740
+: 761 5 3 All 
+: 767 5 5 those 
+: 773 5 7 lone
+: 779 4 7 ly 
+: 785 16 7 miles
+- 801 816
+- 816
+: 837 4 5 That 
+: 843 7 3 you 
+: 851 52 7 ride
+- 903
+: 913 5 5 Now 
+: 919 6 3 you’ll 
+: 927 16 7 walk 
+: 955 6 7 with 
+: 963 8 15 no 
+: 975 8 14 one 
+: 987 10 14 by 
+: 999 8 12 your 
+: 1019 24 7 side
+- 1043
+: 1063 5 7 Did 
+: 1069 4 7 you 
+: 1077 5 15 ev
+: 1083 4 15 er 
+: 1105 3 15 ev
+: 1109 6 15 en 
+: 1117 14 14 care
+- 1131
+F 1143 3 0 With 
+F 1147 4 0 your 
+F 1153 11 0 swords 
+F 1165 3 0 and 
+F 1169 4 0 your 
+F 1177 11 0 stu
+F 1189 7 0 pid 
+F 1197 9 0 hair?
+- 1206
+: 1207 9 5 Now 
+: 1217 10 5 watch 
+: 1229 10 3 me 
+: 1243 18 7 laugh 
+: 1271 5 3 as 
+: 1277 4 5 I 
+: 1283 24 7 burn 
+: 1311 5 2 all 
+: 1317 3 3 the 
+: 1321 7 5 mem
+: 1329 18 2 ories 
+: 1351 8 3 of 
+: 1363 28 0 you
+- 1391 1418
+- 1418
+F 1439 1 0 La
+F 1441 1 0 dies 
+F 1443 3 0 and 
+F 1447 1 0 gen
+F 1449 3 0 tlemen, 
+F 1453 5 0 you 
+F 1459 3 0 have 
+F 1463 3 0 been 
+F 1467 1 0 the 
+F 1469 4 0 most 
+F 1475 3 0 beau
+F 1479 3 0 ti
+F 1483 3 0 ful 
+F 1487 3 0 au
+F 1491 3 0 dience
+- 1494
+F 1495 3 0 Remem
+F 1499 1 0 ber 
+F 1501 1 0 to 
+F 1503 3 0 toss 
+F 1507 3 0 a 
+F 1511 7 0 coin 
+F 1519 1 0 if 
+F 1521 1 0 you 
+F 1523 8 0 can
+- 1531
+F 1535 3 0 If 
+F 1539 1 0 a
+F 1541 1 0 ny
+F 1543 3 0 one 
+F 1547 1 0 needs 
+F 1549 3 0 me, 
+F 1553 1 0 I’ll 
+F 1555 3 0 be 
+F 1559 1 0 at 
+F 1561 1 0 the 
+F 1563 7 0 bar
+- 1570
+: 1571 5 15 What 
+: 1577 8 14 for 
+: 1591 3 12 d’you 
+: 1595 7 14 yea
+: 1603 36 15 ~rn?
+- 1639
+: 1643 1 7 It’s 
+: 1645 3 7 the 
+: 1649 9 15 point 
+: 1659 1 15 of 
+: 1661 5 14 no 
+: 1667 19 12 re
+: 1687 9 14 tu
+: 1697 30 15 ~rn
+- 1727
+: 1739 5 7 Af
+: 1745 3 5 ter 
+: 1749 1 7 eve
+: 1751 1 7 ry
+: 1753 7 7 thing 
+: 1761 3 7 we 
+: 1765 6 7 did, 
+: 1775 6 7 we 
+: 1783 14 7 saw
+- 1797
+: 1813 10 7 You 
+: 1825 11 14 turned 
+: 1837 5 7 your 
+: 1843 11 14 back 
+: 1855 5 7 on 
+: 1861 10 14 me
+- 1871
+: 1873 7 15 What 
+: 1881 10 14 for 
+: 1895 7 11 d’you 
+* 1903 35 12 yea
+* 1939 35 14 ~
+* 1975 32 15 ~rn?
+- 2007
+: 2011 11 15 Watch 
+: 2023 7 12 that 
+: 2031 7 15 but
+: 2039 8 12 cher 
+* 2049 73 15 bu
+* 2123 60 17 ~rn
+- 2183
+: 2185 3 7 At 
+: 2189 3 5 the 
+: 2193 1 7 end 
+: 2195 1 7 of 
+: 2197 8 7 my 
+: 2207 8 7 days 
+: 2217 3 7 when 
+: 2221 4 7 I’m 
+: 2227 12 7 through
+- 2239
+: 2255 7 7 No 
+: 2263 7 7 word 
+: 2271 3 7 that 
+: 2275 3 7 I’ve 
+: 2279 3 7 writ
+: 2283 4 7 ten 
+: 2291 3 7 will 
+: 2295 7 19 ring 
+: 2303 7 17 quite 
+: 2311 3 15 as 
+: 2315 11 14 true 
+: 2327 5 12 as 
+* 2333 5 17 \"bu
+* 2339 84 19 ~rn!\"
+- 2423
+: 2435 15 19 Burn, 
+: 2451 5 17 but
+: 2457 6 15 cher, 
+* 2465 65 20 bu
+* 2531 24 17 ~rn
+- 2555
+: 2563 17 8 Burn, 
+: 2581 3 -5 but
+: 2585 4 -7 cher, 
+: 2593 12 -5 burn
+- 2605
+: 2609 14 11 Burn, 
+: 2625 14 14 burn, 
+: 2641 10 14 burn, 
+: 2655 13 19 burn, 
+: 2669 12 17 burn, 
+: 2687 12 17 burn, 
+: 2707 12 17 burn, 
+: 2735 20 17 burn
+- 2755 2832
+- 2832
+: 2853 18 5 Watch 
+: 2887 8 3 me 
+: 2919 20 7 burn 
+: 2951 5 2 all 
+: 2957 3 3 the 
+: 2961 9 5 mem
+: 2971 18 2 ories 
+: 3005 10 3 of 
+: 3035 14 0 you
+E

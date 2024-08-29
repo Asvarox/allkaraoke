@@ -45,6 +45,7 @@ export interface SingSetup {
 }
 
 export interface Song {
+  local?: boolean;
   lastUpdate: string | undefined;
   author: string | undefined;
   authorUrl: string | undefined;

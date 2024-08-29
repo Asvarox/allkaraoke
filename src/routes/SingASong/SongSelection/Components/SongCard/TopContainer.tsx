@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { FiberNewOutlined, Star } from '@mui/icons-material';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import { FiberNewOutlined, PeopleAlt as PeopleAltIcon, Star } from '@mui/icons-material';
 import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
 import styles from 'modules/GameEngine/Drawing/styles';

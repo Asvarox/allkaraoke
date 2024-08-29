@@ -68,11 +68,11 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const internalPlayer = player.current?.getInternalPlayer();
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-      <h3>
+    <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }} gap={1}>
+      <h4>
         Set song preview (start: {msec(previewStart * 1000, internalPlayer)}, end:{' '}
         {msec(previewEnd * 1000, internalPlayer)})
-      </h3>
+      </h4>
       <Box sx={{ display: 'flex', gap: 5 }}>
         <Slider
           data-test="song-preview"
@@ -93,10 +93,10 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
         />
       </Box>
 
-      <h3>Adjust volume</h3>
+      <h4>Adjust volume</h4>
       <Box sx={{ display: 'flex', gap: 5 }}>
-        <Box>
-          <h4>Song</h4>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+          <h5>Song</h5>
           <YouTube
             videoId={videoId}
             ref={player}
@@ -113,8 +113,8 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
             }}
           />
         </Box>
-        <Box>
-          <h4>Reference sound</h4>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+          <h5>Reference sound</h5>
           <p>Use the slider below to make the video volume roughly the same as this music.</p>
           <br />
           <audio
@@ -140,7 +140,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           />
         </Box>
       </Box>
-      <h4>Final Song Volume ({data.volume * 100})</h4>
+      <h5>Final Song Volume ({data.volume * 100})</h5>
       <Box>
         <Slider
           data-test="volume"

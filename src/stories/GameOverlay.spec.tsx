@@ -44,7 +44,7 @@ for (const playerNum of playerNums) {
       `,
     });
 
-    expect(await component.getByTestId(`lyrics-container-player-0`).screenshot()).toMatchSnapshot({
+    expect(await component.getByTestId(`lyrics-container-player-0`).first().screenshot()).toMatchSnapshot({
       maxDiffPixelRatio: 0.03,
     });
   });

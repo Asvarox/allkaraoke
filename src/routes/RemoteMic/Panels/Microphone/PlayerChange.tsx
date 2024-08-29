@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { SwapHoriz as SwapHorizIcon } from '@mui/icons-material';
 import { buttonFocused } from 'modules/Elements/Button';
 import { focused, typography } from 'modules/Elements/cssMixins';
 import RemoteMicClient from 'modules/RemoteMic/Network/Client';

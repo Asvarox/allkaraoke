@@ -1,0 +1,318 @@
+#ARTIST:Shion Miyawaki
+#TITLE:Mata Kimi Ni Aeru Hi (Ansatsu Kyoushitsu)
+#CREATOR:Hehe
+#BPM:347,39
+#YEAR:2016
+#PREVIEWSTART:64
+#VIDEO:v=p6wfblmbeds
+#GENRE:Ballad
+#LANGUAGE:Japanese
+#GAP:16070,879875644088
+#ALLKARAOKE_ID:shion-miyawaki-mata-kimi-ni-aeru-hi-ansatsu-kyoushitsu
+#ALLKARAOKE_LASTUPDATE:2024-08-29T08:51:41.934Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://usdb.eu/download/2615
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,84
+#MP3:Ansatsu Kyoushitsu  Mata Kimi Ni Aeru Hi Lyrics [Kan-Rom-Eng].mp3
+#COVER:159658d7eed96542cc7c39aed25b739a.png
+#BACKGROUND:110-1109807_wasd-keyboards-wasd-v-wasd-keyboard-layout.png
+: 23 14 0 Komore~
+: 37 14 1 ~ 
+: 51 17 2 bi 
+: 68 22 0 ga 
+: 102 25 0 yasashiku
+: 127 13 -2 ~ 
+: 140 10 1 sashikomu
+: 150 10 3 ~
+: 160 15 2 ~
+: 175 16 1 ~ 
+: 191 10 3 ooki
+: 201 8 2 ~ 
+: 209 35 3 na mado 
+: 245 8 0 no 
+: 253 22 -1 naka
+- 275
+: 295 8 1 Kimi 
+: 303 29 2 to 
+: 332 7 2 deatta
+: 339 31 4 ~ 
+: 382 17 3 ano 
+: 399 6 1 hi 
+: 405 17 3 wo 
+: 422 29 3 tooku 
+: 451 10 1 ni 
+: 469 2 1 kanjita
+: 471 16 1 ~
+: 487 35 -1 ~
+- 522 549
+- 549
+: 572 40 0 Sukoshizutsu 
+: 612 24 -1 narabeta
+: 636 8 0 ~ 
+: 644 3 0 omoide
+: 647 19 1 ~ 
+: 666 34 -1 wa 
+: 704 13 1 boku 
+: 717 14 2 wo 
+: 732 2 3 atatameru
+: 734 21 3 ~
+: 755 7 2 ~
+: 762 16 3 ~
+- 778 800
+- 800
+: 823 9 0 Chiisana
+: 832 11 1 ~
+: 843 22 2 ~ 
+: 865 9 2 heya
+: 874 14 3 ~ 
+: 896 12 0 tsunagu
+: 908 13 2 ~ 
+: 921 7 2 kokoro
+: 928 33 4 ~ 
+: 966 10 0 sotto
+: 976 10 2 ~ 
+: 986 30 2 oshiete
+: 1016 9 1 ~ 
+: 1026 2 0 kureta
+: 1028 18 0 ~
+: 1046 15 1 ~
+- 1061 1071
+- 1071
+: 1094 22 0 Kono 
+: 1116 21 0 kisetsu
+: 1137 11 -1 ~ 
+: 1148 14 0 ga 
+: 1176 7 1 mukae
+: 1183 11 2 ~ 
+: 1195 16 2 ni 
+: 1213 7 3 kitara
+: 1220 4 4 ~
+: 1224 5 5 ~ 
+: 1229 6 3 kimi
+: 1235 16 2 ~ 
+: 1251 7 0 no 
+: 1269 37 0 sugata 
+: 1310 7 -1 mou
+: 1317 12 0 ~ 
+: 1330 6 0 sagasu
+: 1336 16 2 ~ 
+: 1352 18 0 koto 
+: 1371 8 -1 mo
+- 1379
+: 1390 58 0 Dekinaku 
+: 1448 4 0 nacchaunda
+: 1452 38 1 ~
+: 1490 8 2 ~ 
+: 1499 2 3 ne
+- 1501
+: 1513 20 2 Zutto
+: 1533 16 0 ~ 
+: 1553 16 2 wasurezu
+: 1569 9 3 ~
+: 1578 11 3 ~ 
+: 1589 6 4 ni 
+: 1595 6 4 iru 
+: 1610 2 2 yo
+- 1612 1618
+- 1618
+: 1641 10 2 Mata
+: 1651 9 3 ~ 
+: 1660 7 3 kimi
+: 1667 17 4 ~ 
+: 1685 7 4 ni 
+: 1697 5 2 aeru
+: 1702 2 1 ~
+: 1704 15 0 ~ 
+: 1719 16 0 hi made..
+: 1735 44 1 ~.
+- 1779 1869
+- 1869
+: 1892 38 0 Sakura-iro
+: 1930 12 1 ~
+: 1942 41 0 ~ 
+: 1983 15 1 hirogaru
+: 1998 17 0 ~ 
+: 2015 15 1 minareta
+: 2030 8 2 ~
+: 2038 7 3 ~
+: 2045 4 2 ~
+: 2049 6 1 ~ 
+: 2067 27 2 keshiki 
+: 2094 51 0 kawasu kotoba
+- 2145 2147
+- 2147
+: 2170 35 1 Ashita 
+: 2205 20 3 kara
+: 2225 23 5 ~ 
+: 2255 39 0 \"Nichijou\" 
+: 2294 12 2 to 
+: 2311 13 2 wa 
+: 2324 23 2 kawatte
+: 2347 21 1 ~ 
+: 2368 2 0 yuku
+: 2370 20 0 ~
+- 2390 2424
+- 2424
+: 2447 43 0 Itsudatte 
+: 2490 21 1 jibun 
+: 2511 39 1 yori dareka 
+: 2550 19 0 wo 
+: 2579 30 0 taisetsu 
+: 2609 13 1 ni 
+: 2623 2 1 shiteta
+: 2625 29 0 ~
+- 2654 2679
+- 2679
+: 2702 42 1 Sonna kimi 
+: 2744 20 3 no 
+: 2770 7 3 senaka
+: 2777 8 4 ~
+: 2785 9 5 ~ 
+: 2794 14 5 wo 
+: 2808 21 6 mite 
+: 2840 7 8 bokura
+: 2847 15 9 ~ 
+: 2862 20 9 wa 
+: 2884 7 9 aruite
+: 2891 11 7 ~ 
+: 2902 2 5 kita
+: 2904 10 3 ~
+: 2914 47 4 ~
+- 2961
+: 2969 23 0 Kono 
+: 2992 7 0 kisetsu
+: 2999 23 -1 ~ 
+: 3022 29 1 ga 
+: 3051 22 0 mukae 
+: 3073 18 1 ni 
+: 3091 7 2 kitara
+: 3098 11 3 ~ 
+: 3109 8 2 kimi
+: 3117 10 0 ~ 
+: 3127 22 0 wo 
+: 3149 36 0 omoidashite
+: 3185 13 -1 ~
+: 3198 14 0 ~ 
+: 3212 11 0 kureru
+: 3223 7 1 ~
+: 3230 12 0 ~ 
+: 3242 17 0 kana
+- 3259
+: 3266 53 0 Sugoshita 
+: 3332 19 0 jikan 
+: 3351 12 1 ga 
+: 3363 13 2 iroasete
+: 3376 10 3 ~
+: 3386 18 2 ~ 
+: 3404 2 0 mo
+: 3406 16 0 ~
+- 3422
+: 3435 15 -1 Wasurezu
+: 3450 11 0 ~
+: 3461 12 1 ~ 
+: 3473 9 1 ni 
+: 3482 11 1 iru 
+: 3493 12 0 yo
+- 3505
+: 3516 14 0 Mata
+: 3530 15 1 ~ 
+: 3545 14 1 kimi 
+: 3559 13 1 ni 
+: 3572 17 0 aeru
+: 3589 8 -1 ~ 
+: 3597 55 -1 you ni...
+- 3652 3693
+- 3693
+: 3716 17 -1 Donna 
+: 3733 36 0 koto 
+: 3769 19 1 ni 
+: 3788 23 2 mo 
+: 3805 30 4 (Kimi wa) 
+: 3856 17 0 Imi 
+: 3873 18 1 ga 
+: 3891 16 0 aru 
+: 3907 15 1 kara
+: 3922 34 2 ~ 
+: 3933 11 0 (Sou 
+: 3951 2 0 itte)
+- 3953 3970
+- 3970
+: 3993 35 0 Hitotsuzutsu
+: 4028 30 -1 ~ 
+: 4058 14 0 hiroiatsume
+: 4072 12 1 ~
+: 4084 19 0 ~
+: 4103 22 -1 ~ 
+: 4125 36 0 katachi ni 
+: 4161 38 0 shite 
+: 4229 14 2 kureta
+: 4243 20 4 ~ 
+: 4263 29 2 ne
+- 4292 4307
+- 4307
+: 4330 16 0 Kono 
+: 4346 12 0 kisetsu
+: 4358 20 -1 ~ 
+: 4378 11 0 ga 
+: 4404 26 0 mukae 
+: 4430 8 0 ni 
+: 4438 25 0 kitara 
+: 4463 20 1 kimi 
+: 4483 6 -1 no 
+: 4500 33 0 sugata 
+: 4550 16 -1 mou 
+: 4566 19 0 sagasu 
+: 4585 15 0 koto 
+: 4600 11 -1 mo
+- 4611
+: 4620 58 0 Dekinaku 
+: 4683 30 0 nacchaunda
+: 4713 12 1 ~ 
+: 4725 2 2 ne
+: 4727 20 2 ~
+- 4747
+: 4748 47 0 Zutto 
+: 4803 13 0 kono
+: 4816 9 1 ~ 
+: 4825 18 2 mama..
+: 4843 17 1 ~
+: 4860 21 0 ~.
+- 4881
+: 4881 16 0 Kono 
+: 4897 15 0 kisetsu
+: 4912 7 0 ~
+: 4919 14 0 ~ 
+: 4933 13 1 ga 
+: 4965 17 0 mukae 
+: 4982 19 1 ni 
+: 5001 11 1 kitara
+: 5012 13 2 ~ 
+: 5025 11 2 kimi 
+: 5037 3 0 no 
+: 5055 34 0 sugata 
+: 5097 25 0 mou 
+: 5122 34 0 sagasu koto 
+: 5156 3 -1 mo
+- 5159
+: 5176 63 0 Dekinaku 
+: 5240 33 0 nacchaunda
+: 5273 16 1 ~ 
+: 5289 3 2 ne
+- 5292
+: 5305 17 0 Dakedo
+: 5322 20 -1 ~ 
+: 5342 10 0 bokura
+: 5352 9 1 ~ 
+: 5361 38 1 wa warau 
+: 5399 3 0 yo
+: 5402 12 0 ~
+- 5414
+: 5428 19 0 Mata 
+: 5447 24 2 kimi 
+: 5471 19 2 ni 
+: 5490 12 3 aitai
+: 5502 18 1 ~ 
+: 5520 44 0 kara...
+E

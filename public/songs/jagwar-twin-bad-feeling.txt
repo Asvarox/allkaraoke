@@ -1,0 +1,386 @@
+#ARTIST:Jagwar Twin
+#TITLE:Bad Feeling
+#BPM:377,68
+#YEAR:2023
+#VIDEO:v=lwna2o2E-GE
+#GENRE:Indie
+#LANGUAGE:English
+#GAP:8623,09595424698
+#ALLKARAOKE_ID:jagwar-twin-bad-feeling
+#ALLKARAOKE_LASTUPDATE:2024-08-29T08:51:30.384Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:190
+#ALLKARAOKE_VOLUME:0,8
+#MP3:Jagwar Twin - Bad Feeling.mp3
+#COVER:Jagwar Twin - Bad Feeling [CO].jpg
+#BACKGROUND:Jagwar Twin - Bad Feeling [BG].jpg
+: 25 3 5 When 
+: 31 1 5 the 
+: 35 3 6 moon 
+: 43 3 5 hits 
+: 47 1 5 the 
+: 51 7 6 sky, 
+: 61 2 5 I'm 
+: 64 1 5 a 
+: 68 3 6 lit
+: 73 2 6 tle 
+: 76 2 5 un
+: 81 9 4 well
+- 90
+: 92 2 5 'Cause 
+: 96 3 5 the 
+: 101 6 6 truth 
+: 109 2 5 is 
+: 112 1 5 a 
+: 116 6 6 lie 
+: 124 2 5 that 
+: 128 2 6 no
+: 132 1 6 bo
+: 136 1 6 dy 
+: 140 1 5 can 
+: 144 6 4 tell
+- 150
+: 155 4 5 Every 
+: 160 2 6 kid 
+: 163 9 5 on 
+: 174 1 5 the 
+: 179 7 6 block 
+: 188 2 5 talks 
+: 192 1 5 in 
+: 196 3 6 rid
+: 201 1 6 dles 
+: 205 2 5 and 
+: 208 3 4 prose
+- 211
+: 220 2 5 Then 
+: 224 1 5 we 
+: 229 2 6 dance 
+: 237 1 5 'til 
+: 241 1 5 we 
+: 245 4 6 drop
+: 252 2 6 drop, 
+: 259 9 6 drop
+- 268 274
+- 274
+: 299 11 9 Every
+: 312 1 9 thing's 
+: 316 5 9 per
+: 326 5 9 fect 
+: 336 12 8 here
+- 348
+: 353 4 8 And 
+: 361 2 7 the 
+: 368 3 7 sun 
+: 376 3 6 is 
+: 384 6 6 shi
+: 393 8 8 ning
+- 401 409
+- 409
+: 434 6 9 Every
+: 443 3 9 thing's 
+: 449 5 9 per
+: 457 3 9 fect 
+: 464 10 8 here
+- 474
+: 480 6 8 There's 
+: 489 4 7 no
+: 496 6 7 body 
+: 504 5 6 cry
+: 516 5 8 ing
+- 521 522
+- 522
+: 547 6 5 Oompa 
+: 560 8 5 Loompa, 
+: 576 8 5 doompa 
+: 588 1 5 de 
+: 592 12 4 doo
+- 604
+: 608 8 5 I 
+: 617 4 5 got 
+: 622 1 5 a 
+: 624 15 9 bad 
+: 640 2 7 fee
+: 645 2 7 ling 
+: 649 7 6 'bout 
+: 657 6 5 you
+- 663
+: 672 9 5 Oompa 
+: 687 10 5 Loompa, 
+: 703 2 8 I 
+: 708 1 7 don't 
+: 712 2 6 know, 
+: 719 12 8 dude
+- 731
+: 735 5 5 I 
+: 743 1 5 got 
+: 747 1 5 a 
+: 751 12 9 bad 
+: 767 2 7 fee
+: 771 1 7 ling 
+: 775 2 6 'bout 
+: 782 7 5 you
+- 789
+: 795 1 5 Bad 
+: 799 3 3 fee
+: 804 2 2 ling, 
+: 816 13 5 bad 
+: 830 1 3 fee
+: 835 1 2 ling
+- 836 837
+- 837
+: 862 5 5 I 
+: 870 2 5 got 
+: 875 1 5 a 
+: 879 14 9 bad 
+: 895 1 7 fee
+: 899 1 7 ling 
+: 903 1 6 'bout 
+: 910 4 5 you
+- 914
+: 922 1 5 Bad 
+: 927 1 3 fee
+: 930 1 2 ling, 
+: 952 2 5 bad 
+: 958 1 3 fee
+: 962 1 2 ling
+- 963 965
+- 965
+: 990 6 5 I 
+: 998 1 5 got 
+: 1002 1 5 a 
+: 1006 15 9 bad 
+: 1022 3 7 fee
+: 1027 1 7 ling 
+: 1030 4 6 'bout 
+: 1037 12 5 you
+- 1049
+: 1059 1 4 A
+: 1062 1 3 ni
+: 1068 1 2 mals, 
+: 1073 1 4 a
+: 1077 1 3 ni
+: 1080 2 2 mals, 
+: 1088 1 4 all 
+: 1092 1 3 mis
+: 1096 1 2 un
+: 1100 1 2 der
+: 1104 1 4 stand
+: 1108 2 3 able
+- 1110
+: 1117 1 4 Carni
+: 1122 1 3 vores 
+: 1126 6 2 and 
+: 1134 1 4 canni
+: 1138 10 3 bals, 
+: 1150 1 4 I 
+: 1155 2 3 want 
+: 1159 1 3 it 
+: 1163 1 3 on 
+: 1166 1 3 de
+: 1170 1 2 mand
+: 1174 5 4 able
+- 1179
+: 1184 2 4 Man
+: 1189 1 3 dible, 
+: 1197 5 8 jaw 
+: 1205 6 7 split, 
+: 1214 4 4 hit 
+: 1221 4 3 me 
+: 1226 1 3 with 
+: 1229 2 2 the 
+: 1235 3 8 gos
+: 1244 3 7 sip, 
+: 1249 1 8 gos
+: 1253 5 7 sip
+- 1258 1303
+- 1303
+: 1328 1 9 Every
+: 1331 1 9 thing's 
+: 1334 7 9 per
+: 1343 3 9 fect 
+: 1349 8 8 here
+- 1357
+: 1364 9 8 And 
+: 1376 4 7 the 
+: 1385 4 7 sun 
+: 1394 2 6 is 
+: 1402 3 6 shi
+: 1411 5 8 ning
+- 1416 1427
+- 1427
+: 1452 1 9 Every
+: 1455 1 9 thing's 
+: 1459 8 9 per
+: 1473 4 9 fect 
+: 1482 14 8 here
+- 1496
+: 1499 5 8 There's 
+: 1507 3 7 no
+: 1514 5 7 body 
+: 1523 7 6 cry
+: 1535 6 8 ing
+- 1541
+: 1564 7 5 Oompa 
+: 1579 9 5 Loompa, 
+: 1594 8 5 doompa 
+: 1604 3 5 de 
+: 1610 13 4 doo
+- 1623
+: 1626 4 5 I 
+: 1634 2 5 got 
+: 1637 1 5 a 
+: 1641 13 9 bad 
+: 1658 2 7 fee
+: 1662 1 7 ling 
+: 1666 5 6 'bout 
+: 1674 7 5 you
+- 1681
+: 1690 9 5 Oompa 
+: 1705 9 5 Loompa, 
+: 1722 1 8 I 
+: 1726 1 7 don't 
+: 1730 1 6 know, 
+: 1737 10 8 dude
+- 1747
+: 1754 4 5 I 
+: 1762 1 5 got 
+: 1766 1 5 a 
+: 1769 14 9 bad 
+: 1785 1 7 fee
+: 1789 1 7 ling 
+: 1793 1 6 'bout 
+: 1799 4 5 you
+- 1803
+: 1813 1 5 Bad 
+: 1817 3 3 fee
+: 1821 2 2 ling, 
+: 1842 3 5 bad 
+: 1849 1 3 fee
+: 1853 2 2 ling
+- 1855
+: 1880 6 5 I 
+: 1889 1 5 got 
+: 1893 1 5 a 
+: 1897 15 9 bad 
+: 1913 2 7 fee
+: 1917 1 7 ling 
+: 1920 1 6 'bout 
+: 1928 3 5 you
+- 1931
+: 1941 1 5 Bad 
+: 1944 2 3 fee
+: 1948 1 2 ling, 
+: 1969 3 5 bad 
+: 1976 2 3 fee
+: 1980 4 2 ling
+- 1984
+: 2008 5 5 I 
+: 2016 2 5 got 
+: 2020 1 5 a 
+: 2024 14 9 bad 
+: 2040 1 7 fee
+: 2044 1 7 ling 
+: 2048 1 6 'bout 
+: 2055 5 5 you
+- 2060 2070
+- 2070
+: 2095 47 2 Na-na-na-na
+- 2142
+: 2147 44 3 Na-na-na-na-na
+- 2191
+: 2216 42 2 Na-na-na-na
+- 2258
+: 2265 64 3 Na-na-na-na-na
+- 2329
+: 2351 2 9 Every
+: 2355 4 9 thing's 
+: 2360 6 9 per
+: 2367 5 9 fect 
+: 2375 24 8 here
+- 2399
+: 2402 2 8 And 
+: 2406 1 7 the 
+: 2411 2 7 sun 
+: 2416 3 6 is 
+: 2422 2 6 shi
+: 2430 10 8 ning
+- 2440 2446
+- 2446
+: 2471 2 9 Every
+: 2475 1 9 thing's 
+: 2478 9 9 per
+: 2492 5 9 fect 
+: 2501 14 8 here
+- 2515
+: 2518 2 8 There's 
+: 2525 5 7 no
+: 2533 6 7 body 
+: 2542 10 6 cry
+: 2556 11 8 ing
+- 2567
+: 2585 4 5 Oompa 
+: 2597 9 5 Loompa, 
+: 2612 8 5 doompa 
+: 2622 6 5 de 
+: 2630 13 4 doo
+- 2643
+: 2645 6 5 I 
+: 2652 2 5 got 
+: 2657 2 5 a 
+: 2662 12 9 bad 
+: 2676 3 7 fee
+: 2681 1 6 ling 
+: 2685 6 6 'bout 
+: 2692 9 5 you
+- 2701
+: 2709 9 5 Oompa 
+: 2724 9 5 Loompa, 
+: 2740 2 8 I 
+: 2745 1 7 don't 
+: 2749 4 6 know, 
+: 2756 13 8 dude
+- 2769
+: 2772 6 5 I 
+: 2780 2 5 got 
+: 2784 1 5 a 
+: 2788 14 9 bad 
+: 2804 2 7 fee
+: 2808 1 6 ling 
+: 2812 6 6 'bout 
+: 2819 8 5 you
+- 2827
+: 2832 1 5 Bad 
+: 2836 2 3 fee
+: 2840 8 2 ling, 
+: 2855 8 5 bad 
+: 2867 2 3 fee
+: 2871 12 2 ling
+- 2883
+: 2898 6 5 I 
+: 2907 2 5 got 
+: 2911 1 5 a 
+: 2915 13 9 bad 
+: 2931 1 7 fee
+: 2935 1 6 ling 
+: 2938 1 6 'bout 
+: 2946 8 5 you
+- 2954
+: 2959 1 5 Bad 
+: 2963 1 3 fee
+: 2967 12 2 ling, 
+: 2987 4 5 bad 
+: 2994 2 3 fee
+: 2998 12 2 ling
+- 3010
+: 3026 5 5 I 
+: 3034 2 5 got 
+: 3038 1 5 a 
+: 3042 14 9 bad 
+: 3058 1 7 fee
+: 3062 1 6 ling 
+: 3066 2 6 'bout 
+: 3073 9 5 you
+- 3082
+: 3087 2 2 It's 
+: 3091 11 1 true
+E

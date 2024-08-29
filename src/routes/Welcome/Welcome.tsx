@@ -8,11 +8,9 @@ import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { Helmet } from 'react-helmet';
-import { BackgroundMusicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import FacebookLink from 'routes/Welcome/FacebookLink';
 
 function Welcome() {
-  const [backgroundMusicSelection] = useSettingValue(BackgroundMusicSetting);
   useBackground(true);
 
   const navigate = useSmoothNavigate();
@@ -26,24 +24,22 @@ function Welcome() {
         <link rel="preload" href="/songs/index.json" as="fetch" type="application/json" crossOrigin="anonymous" />
         <link rel="preload" href="/mostPopularSongs.json" as="fetch" type="application/json" crossOrigin="anonymous" />
       </Helmet>
-      {backgroundMusicSelection !== 'Classic' && (
-        <BackgroundMusicCredit>
-          <span>
-            Bpm data and release year provided by{' '}
-            <a target="_blank" href="https://getsongbpm.com/" rel="noreferrer">
-              GetSongBPM
-            </a>
-          </span>
-          <span>Song: Funk Cool Groove (Music Today 80)</span>
-          <span>• Composed & Produced by : Anwar Amr</span>
-          <span>
-            • Video Link:{' '}
-            <a href="https://youtu.be/FGzzBbYRjFY" target="_blank" rel="noreferrer">
-              https://youtu.be/FGzzBbYRjFY
-            </a>
-          </span>
-        </BackgroundMusicCredit>
-      )}
+      <BackgroundMusicCredit>
+        <span>
+          Bpm data and release year provided by{' '}
+          <a target="_blank" href="https://getsongbpm.com/" rel="noreferrer">
+            GetSongBPM
+          </a>
+        </span>
+        <span>Song: Funk Cool Groove (Music Today 80)</span>
+        <span>• Composed & Produced by : Anwar Amr</span>
+        <span>
+          • Video Link:{' '}
+          <a href="https://youtu.be/FGzzBbYRjFY" target="_blank" rel="noreferrer">
+            https://youtu.be/FGzzBbYRjFY
+          </a>
+        </span>
+      </BackgroundMusicCredit>
       <FacebookLink />
       <>
         <SmoothLink to="game/">

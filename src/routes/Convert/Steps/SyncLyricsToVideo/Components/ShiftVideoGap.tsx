@@ -12,8 +12,8 @@ interface Props {
 
 export default function ShiftVideoGap({ current, onChange, player, finalGap }: Props) {
   return (
-    <Box sx={{ flex: 1 }}>
-      <Typography variant={'h6'}>Video Gap shift (final: {msec((finalGap ?? 0) * 1000, player)})</Typography>
+    <Box flex="1">
+      <Typography>Video Gap shift (final: {msec((finalGap ?? 0) * 1000, player)})</Typography>
       <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
         <ButtonGroup sx={{ flex: 1 }}>
           <Button sx={{ flex: 1, px: 1.25 }} onClick={() => onChange(current - 10)} data-test="shift-video-gap-10s">

@@ -38,6 +38,7 @@ function ManagePlayers(props: Props) {
 const Entry = ({ mic }: { mic: ValuesType<NetworkRemoteMicListMessage['list']> }) => {
   const [open, setOpen] = useState(false);
   const permission = RemoteMicManager.getPermission(mic.id);
+
   return (
     <Container data-test="manage-players">
       {open && (

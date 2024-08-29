@@ -124,7 +124,7 @@ export default function SongMetadata(props: Props) {
   const [hasSearchedBpm, setHasSearchedBpm] = useState(false);
 
   return (
-    <Grid container spacing={2} data-test="song-metadata" sx={{ mt: 6 }}>
+    <Grid container spacing={2} data-test="song-metadata">
       <Grid item xs={6}>
         <TextField
           value={props.data.artist}
@@ -303,4 +303,5 @@ export default function SongMetadata(props: Props) {
 const CountryFlag = styled(Flag)`
   width: 1em;
   margin-right: 0.5em;
+  display: inline-block;
 `;

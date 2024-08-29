@@ -326,11 +326,12 @@ const LyricInput = styled.input`
   width: 3rem;
   padding: 0.5rem 0.1rem;
   border: 0;
-  border-right: 1px solid #e3e3e3;
+  border-right: 1px solid #ececec;
   text-decoration: underline;
+  box-sizing: content-box;
 
   &:focus {
-    background: #b6b3b3;
+    background: #ececec;
     outline: none !important;
   }
 `;

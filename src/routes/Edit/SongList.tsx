@@ -97,122 +97,125 @@ export default function SongList(props: Props) {
         <Container>
           {created && <ShareSongsModal id={songId} />}
           <NormalizeFontSize />
-          <Grid container>
-            <Grid item xs={3}>
+          <Grid container rowGap={2}>
+            <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
               <Link to="menu/">
-                <a data-test="main-menu-link">Return to main menu</a>
+                <Button data-test="main-menu-link">Return to main menu</Button>
               </Link>
             </Grid>
-            <Grid item xs={3}>
-              <h3>{data.length} songs</h3>
+            <Grid item xs={6} display="flex" alignItems="center" justifyContent="center">
+              <h4>{data.length} songs</h4>
             </Grid>
-            <Grid item xs={6} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>
+            <Grid item xs={3} display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>
               <Link to="convert/">
                 <Button data-test="convert-song" variant={'contained'}>
                   Import UltraStar .TXT
                 </Button>
               </Link>
             </Grid>
-          </Grid>
+            <Grid item xs={12}>
+              <MaterialReactTable
+                data={data}
+                columns={columns}
+                getRowId={(song) => song.id}
+                positionActionsColumn="last"
+                enableRowActions
+                renderRowActions={({ row }) => (
+                  <>
+                    <Link to={buildUrl(`edit/song/`, { song: row.original.id, id: null })}>
+                      <IconButton title="Edit the song" data-test="edit-song" data-song={row.original.id}>
+                        <EditIcon />
+                      </IconButton>
+                    </Link>
+                    <IconButton
+                      title="Download .txt file"
+                      onClick={async () => {
+                        const songData = await SongDao.get(row.original.id);
+                        const txt = convertSongToTxt(songData);
 
-          <MaterialReactTable
-            data={data}
-            columns={columns}
-            getRowId={(song) => song.id}
-            positionActionsColumn="last"
-            enableRowActions
-            renderRowActions={({ row }) => (
-              <>
-                <Link to={buildUrl(`edit/song/`, { song: row.original.id, id: null })}>
-                  <IconButton title="Edit the song" data-test="edit-song" data-song={row.original.id}>
-                    <EditIcon />
-                  </IconButton>
-                </Link>
-                <IconButton
-                  title="Download .txt file"
-                  onClick={async () => {
-                    const songData = await SongDao.get(row.original.id);
-                    const txt = convertSongToTxt(songData);
+                        const anchor = document.createElement('a');
+                        anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(txt)}`;
+                        anchor.download = `${SongDao.generateSongFile(songData)}.txt`;
+                        document.body.appendChild(anchor);
+                        anchor.click();
+                        document.body.removeChild(anchor);
+                      }}
+                      data-test="download-song"
+                      data-song={row.original.id}>
+                      <Download />
+                    </IconButton>
+                    {!row.original.isDeleted && (
+                      <IconButton
+                        title="Hide the song"
+                        onClick={async () => {
+                          await SongDao.softDeleteSong(row.original.id);
+                          reload();
+                        }}
+                        data-test="hide-song"
+                        data-song={row.original.id}>
+                        <Visibility />
+                      </IconButton>
+                    )}
+                    {row.original.isDeleted && (
+                      <IconButton
+                        title="Restore the song"
+                        onClick={async () => {
+                          await SongDao.restoreSong(row.original.id);
+                          reload();
+                        }}
+                        data-test="restore-song"
+                        data-song={row.original.id}>
+                        <VisibilityOff />
+                      </IconButton>
+                    )}
+                    <SoftDisabledIconButton
+                      title="Delete the song"
+                      onClick={async () => {
+                        const proceed = global.confirm(`Are you sure you want to delete this song?`);
 
-                    const anchor = document.createElement('a');
-                    anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(txt)}`;
-                    anchor.download = `${SongDao.generateSongFile(songData)}.txt`;
-                    document.body.appendChild(anchor);
-                    anchor.click();
-                    document.body.removeChild(anchor);
-                  }}
-                  data-test="download-song"
-                  data-song={row.original.id}>
-                  <Download />
-                </IconButton>
-                {!row.original.isDeleted && (
-                  <IconButton
-                    title="Hide the song"
-                    onClick={async () => {
-                      await SongDao.softDeleteSong(row.original.id);
-                      reload();
-                    }}
-                    data-test="hide-song"
-                    data-song={row.original.id}>
-                    <Visibility />
-                  </IconButton>
+                        if (proceed) {
+                          await SongDao.deleteSong(row.original.id);
+
+                          if (shareSongs && data.some((song) => song.id === row.original.id)) {
+                            posthog.capture('unshare-song', { songId: row.original.id });
+                          }
+
+                          reload();
+                        }
+                      }}
+                      data-test="delete-song"
+                      appearDisabled={!row.original.local}
+                      data-song={row.original.id}>
+                      <Delete />
+                    </SoftDisabledIconButton>
+                  </>
                 )}
-                {row.original.isDeleted && (
-                  <IconButton
-                    title="Restore the song"
-                    onClick={async () => {
-                      await SongDao.restoreSong(row.original.id);
-                      reload();
-                    }}
-                    data-test="restore-song"
-                    data-song={row.original.id}>
-                    <VisibilityOff />
-                  </IconButton>
-                )}
-                <SoftDisabledIconButton
-                  title="Delete the song"
-                  onClick={async () => {
-                    const proceed = global.confirm(`Are you sure you want to delete this song?`);
-
-                    if (proceed) {
-                      await SongDao.deleteSong(row.original.id);
-
-                      if (shareSongs && data.some((song) => song.id === row.original.id)) {
-                        posthog.capture('unshare-song', { songId: row.original.id });
-                      }
-
-                      reload();
-                    }
-                  }}
-                  data-test="delete-song"
-                  appearDisabled={!row.original.local}
-                  data-song={row.original.id}>
-                  <Delete />
-                </SoftDisabledIconButton>
-              </>
-            )}
-            initialState={{
-              density: 'compact',
-              columnVisibility: { local: false, isDeleted: false, video: false, id: false },
-              globalFilter: songId,
-              showGlobalFilter: true,
-            }}
-            enableDensityToggle={false}
-            enableFullScreenToggle={false}
-          />
-          {shareSongs !== null && (
-            <FormControlLabel
-              control={
-                <Switch
-                  defaultChecked
-                  checked={shareSongs}
-                  onChange={(e) => setShareSongs(e.target.checked)}
-                  data-test="share-songs-switch"
+                initialState={{
+                  density: 'compact',
+                  columnVisibility: { local: false, isDeleted: false, video: false, id: false },
+                  globalFilter: songId,
+                  showGlobalFilter: true,
+                }}
+                enableDensityToggle={false}
+                enableFullScreenToggle={false}
+              />
+            </Grid>
+            {shareSongs !== null && (
+              <Grid item xs={12}>
+                <FormControlLabel
+                  control={
+                    <Switch
+                      defaultChecked
+                      checked={shareSongs}
+                      onChange={(e) => setShareSongs(e.target.checked)}
+                      data-test="share-songs-switch"
+                    />
+                  }
+                  label="Share added songs (so they can be played by others)"
                 />
-              }
-              label="Share added songs (so they can be played by others)"
-            />
-          )}
+              </Grid>
+            )}
+          </Grid>
         </Container>
       </NoPrerender>
     </>

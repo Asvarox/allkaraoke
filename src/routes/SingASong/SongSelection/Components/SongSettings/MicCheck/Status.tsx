@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import ErrorIcon from '@mui/icons-material/Error';
-import WarningIcon from '@mui/icons-material/Warning';
+import { Error as ErrorIcon, Warning as WarningIcon } from '@mui/icons-material';
 import { typography } from 'modules/Elements/cssMixins';
 import { inputStatus } from 'modules/GameEngine/Input/Interface';
 import { ComponentProps } from 'react';
