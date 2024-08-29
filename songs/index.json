@@ -27850,6 +27850,33 @@
     "local": false
   },
   {
+    "id": "fifth-harmony-feat-kid-ink-worth-it",
+    "title": "Worth It",
+    "artist": "Fifth Harmony feat. Kid Ink",
+    "video": "YBHQbu5rbdQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 8307.5,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-29T00:16:09.917Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 0.73,
+    "author": "amro98",
+    "tracks": [
+      {
+        "name": "Worth It",
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fifthharmonyfeatkidinkworthit",
+    "local": false
+  },
+  {
     "id": "fifth-harmony-feat-ty-dolla-ign-work-from-home",
     "title": "Work From Home",
     "artist": "Fifth Harmony feat. Ty Dolla $ign",
@@ -27873,6 +27900,33 @@
     ],
     "tracksCount": 1,
     "search": "fifthharmonyfeattydollaignworkfromhome",
+    "local": false
+  },
+  {
+    "id": "fifth-harmony-sledgehammer",
+    "title": "Sledgehammer",
+    "artist": "Fifth Harmony",
+    "video": "gCJ3rmiZFr8",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.04,
+    "gap": -99.86502699460107,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-29T00:16:09.922Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 0.74,
+    "author": "*Coppo",
+    "tracks": [
+      {
+        "name": "Sledgehammer",
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fifthharmonysledgehammer",
     "local": false
   },
   {
@@ -48225,6 +48279,37 @@
     "local": false
   },
   {
+    "id": "manuel-turizo-la-bachata",
+    "title": "La bachata",
+    "artist": "Manuel Turizo",
+    "video": "TiM_TFpT_DE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250,
+    "gap": 23120,
+    "year": "2022",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-08-29T00:16:09.924Z",
+    "genre": "Bachata",
+    "videoGap": 9,
+    "realBpm": 125,
+    "previewStart": 52,
+    "previewEnd": 86,
+    "volume": 0.71,
+    "author": "Manuel Turizo",
+    "authorUrl": "https://www.youtube.com/channel/UC5Jn-9jqrVvKm9Hx0WW8Pgw",
+    "sourceUrl": "https://www.youtube.com/watch?v=TiM_TFpT_DE",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manuelturizolabachata",
+    "local": false
+  },
+  {
     "id": "marc-anthony-vivir-mi-vida",
     "title": "Vivir mi vida",
     "artist": "Marc Anthony",
@@ -66317,6 +66402,34 @@
     "local": false
   },
   {
+    "id": "sebastian-yatra-traicionera",
+    "title": "Traicionera",
+    "artist": "Sebastián Yatra",
+    "video": "NE3IkFadCHM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 300,
+    "gap": 18150,
+    "year": "2016",
+    "artistOrigin": "CO",
+    "lastUpdate": "2024-08-29T00:16:10.504Z",
+    "genre": "Urbano Latino",
+    "videoGap": 4,
+    "realBpm": 91,
+    "volume": 0.73,
+    "author": "Sebastian Yatra ",
+    "sourceUrl": "https://www.youtube.com/watch?v=ItsAV9QaecM",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sebastianyatratraicionera",
+    "local": false
+  },
+  {
     "id": "secondhand-serenade-fall-for-you",
     "title": "Fall For You",
     "artist": "Secondhand Serenade",
@@ -76091,6 +76204,32 @@
     "local": false
   },
   {
+    "id": "the-script-the-man-who-cant-be-moved",
+    "title": "The Man Who Can’t Be Moved",
+    "artist": "The Script",
+    "video": "gS9o1FAszdk",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.02,
+    "gap": 8615.097490250975,
+    "year": "2008",
+    "artistOrigin": "IE",
+    "lastUpdate": "2024-08-29T00:16:10.630Z",
+    "genre": "Rock",
+    "realBpm": 100,
+    "volume": 0.77,
+    "author": "Karakth",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thescriptthemanwhocantbemoved",
+    "local": false
+  },
+  {
     "id": "the-smashing-pumpkins-1979",
     "title": "1979",
     "artist": "The Smashing Pumpkins",
@@ -77197,6 +77336,57 @@
     ],
     "tracksCount": 1,
     "search": "thirtysecondstomarsattack",
+    "local": false
+  },
+  {
+    "id": "thirty-seconds-to-mars-capricorn-a-brand-new-name",
+    "title": "Capricorn (A Brand New Name)",
+    "artist": "Thirty Seconds to Mars",
+    "video": "c-tqzcq1BY0",
+    "language": [
+      "English"
+    ],
+    "bpm": 360.2,
+    "gap": 37830.55524708495,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-29T00:16:10.631Z",
+    "realBpm": 90,
+    "volume": 0.71,
+    "author": "DarkNox",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=2689",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thirtysecondstomarscapricornabrandnewname",
+    "local": false
+  },
+  {
+    "id": "thirty-seconds-to-mars-from-yesterday",
+    "title": "From Yesterday",
+    "artist": "Thirty Seconds to Mars",
+    "video": "pCELqGO_SZY",
+    "language": [
+      "English"
+    ],
+    "bpm": 270.85,
+    "gap": 31033.13826841425,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-08-29T00:16:10.633Z",
+    "realBpm": 135,
+    "volume": 0.75,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thirtysecondstomarsfromyesterday",
     "local": false
   },
   {
@@ -79938,6 +80128,32 @@
     ],
     "tracksCount": 1,
     "search": "vanhalenjump",
+    "local": false
+  },
+  {
+    "id": "vance-joy-riptide",
+    "title": "Riptide",
+    "artist": "Vance Joy",
+    "video": "uJ_1HMAGb4k",
+    "language": [
+      "English"
+    ],
+    "bpm": 204,
+    "gap": 9210.588235294117,
+    "year": "2013",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-08-29T00:16:10.634Z",
+    "genre": "Alternative",
+    "realBpm": 100,
+    "volume": 0.8,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "vancejoyriptide",
     "local": false
   },
   {
