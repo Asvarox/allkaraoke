@@ -202,4 +202,14 @@ test('Filtering all and favourites by song language ', async ({ page, browser })
     await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songList.polish)).not.toBeVisible();
     await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songList.spanish)).not.toBeVisible();
   });
+
+  await test.step('Favourite songs list - after unchecking the last language, all languages are activated', async () => {
+    await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
+    await remoteMic.remoteMicSongLanguagesPage.ensureAllSongLanguagesAreDeselected();
+    await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.english)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.engPol)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.polish)).toBeVisible();
+    await expect(remoteMic.remoteMicSongListPage.getSongElement(songList.spanish)).toBeVisible();
+  });
 });
