@@ -66,4 +66,12 @@ export class RemoteSongListPagePO {
   public async expectAllSongsPlaylistToBeSelected() {
     await expect(this.allSongsButton).toHaveAttribute('data-active', 'true');
   }
+
+  public get searchInput() {
+    return this.page.getByTestId('search-input');
+  }
+
+  public async searchTheSong(songName: string) {
+    await this.searchInput.fill(songName);
+  }
 }
