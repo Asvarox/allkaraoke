@@ -36,6 +36,20 @@ export class RemoteMicSongLanguagesPagePO {
     }
   }
 
+  public get languagesContainer() {
+    return this.page.getByTestId('languages-container');
+  }
+
+  public async ensureAllSongLanguagesAreDeselected() {
+    const languages = await this.languagesContainer.locator('button').locator('span').all();
+
+    for (const language of languages) {
+      if ((await language.getAttribute('class')) === 'text-active') {
+        await language.click();
+      }
+    }
+  }
+
   public async goBackToSongList() {
     await this.page.click('body', { position: { x: 0, y: 0 } });
   }
