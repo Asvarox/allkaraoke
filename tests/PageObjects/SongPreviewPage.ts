@@ -138,4 +138,12 @@ export class SongPreviewPagePO {
       'true',
     );
   }
+
+  public get songPreviewElement() {
+    return this.page.getByTestId('song-preview');
+  }
+
+  public async expectPreviewSongToBe(expectedSongID: string) {
+    await expect(this.songPreviewElement).toHaveAttribute('data-song', expectedSongID);
+  }
 }
