@@ -1,7 +1,12 @@
 import { expect, test } from '@playwright/test';
 import { txtfile } from './fixtures/newsongtxt';
 import { initTestMode, mockSongs } from './helpers';
-import { connectRemoteMic, openAndConnectRemoteMicDirectly, openRemoteMic } from './steps/openAndConnectRemoteMic';
+import {
+  connectRemoteMic,
+  openAndConnectRemoteMicDirectly,
+  openAndConnectRemoteMicWithCode,
+  openRemoteMic,
+} from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
 
@@ -224,5 +229,52 @@ test('Filtering all and favourites by song language ', async ({ page, browser })
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.engPol.ID)).toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.polish2.ID)).toBeVisible();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.spanish.ID)).toBeVisible();
+  });
+});
+
+test('Selecting a song using the `select` button on the remoteMic, when selected languages on desktop and remoteMic apps are the same - works', async ({
+  page,
+  browser,
+}) => {
+  const player1 = {
+    num: 0,
+    name: 'Player 1 - Ren',
+  };
+
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+  await pages.inputSelectionPage.selectSmartphones();
+
+  const remoteMic = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
+
+  await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
+
+  await test.step('On the desktop app - ensure all languages are selected', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToSingSong();
+    await pages.songLanguagesPage.ensureAllLanguagesAreSelected();
+    await pages.songLanguagesPage.continueAndGoToSongList();
+  });
+
+  await test.step('On the remoteMic app - ensure all languages are selected too', async () => {
+    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
+    await remoteMic.remoteMicSongLanguagesPage.ensureAllSongLanguagesAreDeselected(); // = selected
+    await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
+  });
+
+  await test.step('Select a few songs on the remoteMic - they should open as a preview on the desktop app', async () => {
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.polish1.ID);
+    test.fail(true, 'Select button does not work for first position on the song list');
+    await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.polish1.ID);
+
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french.ID);
+    await pages.songPreviewPage.expectPreviewSongToBe(songs.french.ID);
+
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.spanish.ID);
+    await pages.songPreviewPage.expectPreviewSongToBe(songs.spanish.ID);
+
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.english1.ID);
+    await pages.songPreviewPage.expectPreviewSongToBe(songs.english1.ID);
   });
 });
