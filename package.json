@@ -139,7 +139,7 @@
     "html-minifier": "^4.0.0",
     "husky": "^9.0.11",
     "js-yaml": "^4.1.0",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.9",
     "lodash": "^4.17.21",
     "musicbrainz-api": "^0.11.0",
     "node-fetch": "^3.3.2",
