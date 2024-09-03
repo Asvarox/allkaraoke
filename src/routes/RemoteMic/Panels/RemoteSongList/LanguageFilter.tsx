@@ -36,7 +36,12 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
             {languageList
               .filter((lang) => lang.count > MIN_SONGS_COUNT)
               .map(({ name, count }) => (
-                <MenuButton size={'small'} key={name} onClick={() => excludeLanguage(name)} data-test={name}>
+                <MenuButton
+                  size={'small'}
+                  key={name}
+                  data-active={excludedLanguages.length && !excludedLanguages.includes(name)}
+                  onClick={() => excludeLanguage(name)}
+                  data-test={name}>
                   <span className={excludedLanguages.length && !excludedLanguages.includes(name) ? 'text-active' : ''}>
                     {name}
                   </span>{' '}
