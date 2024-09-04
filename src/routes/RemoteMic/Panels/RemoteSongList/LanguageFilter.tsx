@@ -39,7 +39,7 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
                 <MenuButton
                   size={'small'}
                   key={name}
-                  data-active={excludedLanguages.length && !excludedLanguages.includes(name)}
+                  data-active={!!excludedLanguages.length && !excludedLanguages.includes(name)}
                   onClick={() => excludeLanguage(name)}
                   data-test={name}>
                   <span className={excludedLanguages.length && !excludedLanguages.includes(name) ? 'text-active' : ''}>
