@@ -126,6 +126,7 @@ function RemoteSongList({
               <Tab
                 className="!flex-grow-[0.3]"
                 onClick={open}
+                data-test="song-language-filter"
                 data-active={excludedLanguages.length > 0 && tab === 'list' ? true : undefined}>
                 🇺🇳
               </Tab>

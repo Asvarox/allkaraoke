@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
-export class RemoteSongListPagePO {
+export class RemoteMicSongListPagePO {
   constructor(
     private page: Page,
     private context: BrowserContext,
@@ -73,5 +73,13 @@ export class RemoteSongListPagePO {
 
   public async searchTheSong(songName: string) {
     await this.searchInput.fill(songName);
+  }
+
+  public get songLanguageFilter() {
+    return this.page.getByTestId('song-language-filter');
+  }
+
+  public async goToSelectSongLanguage() {
+    await this.songLanguageFilter.click();
   }
 }

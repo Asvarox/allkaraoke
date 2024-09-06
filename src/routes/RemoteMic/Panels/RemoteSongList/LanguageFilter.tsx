@@ -32,11 +32,16 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
     <>
       {open && (
         <Modal onClose={() => setOpen(false)}>
-          <MenuContainer className="!gap-1">
+          <MenuContainer data-test="languages-container" className="!gap-1">
             {languageList
               .filter((lang) => lang.count > MIN_SONGS_COUNT)
               .map(({ name, count }) => (
-                <MenuButton size={'small'} key={name} onClick={() => excludeLanguage(name)}>
+                <MenuButton
+                  size={'small'}
+                  key={name}
+                  data-active={!!excludedLanguages.length && !excludedLanguages.includes(name)}
+                  onClick={() => excludeLanguage(name)}
+                  data-test={name}>
                   <span className={excludedLanguages.length && !excludedLanguages.includes(name) ? 'text-active' : ''}>
                     {name}
                   </span>{' '}
