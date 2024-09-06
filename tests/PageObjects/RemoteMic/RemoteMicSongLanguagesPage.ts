@@ -8,31 +8,31 @@ export class RemoteMicSongLanguagesPagePO {
   ) {}
 
   public getLanguageButton(language: string) {
-    return this.page.getByTestId(language).locator('span');
+    return this.page.getByTestId(language);
   }
 
-  public async selectLanguage(language: string) {
+  public async toggleLanguage(language: string) {
     await this.getLanguageButton(language).click();
   }
 
   public async expectSongLanguageToBeSelected(language: string) {
-    await expect(this.getLanguageButton(language)).toHaveClass('text-active');
+    await expect(this.getLanguageButton(language)).toHaveAttribute('data-active', 'true');
   }
 
   private async isLanguageSelected(language: string) {
-    const languageClassAttribute = await this.getLanguageButton(language).getAttribute('class');
-    return languageClassAttribute === 'text-active';
+    const languageActiveAttribute = await this.getLanguageButton(language).getAttribute('data-active');
+    return languageActiveAttribute === 'true';
   }
 
   public async ensureSongLanguageIsSelected(language: string) {
     if (!(await this.isLanguageSelected(language))) {
-      await this.selectLanguage(language);
+      await this.toggleLanguage(language);
     }
   }
 
   public async ensureSongLanguageIsDeselected(language: string) {
     if (await this.isLanguageSelected(language)) {
-      await this.selectLanguage(language);
+      await this.toggleLanguage(language);
     }
   }
 
