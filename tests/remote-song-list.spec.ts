@@ -56,6 +56,8 @@ const songs = {
 const languages = {
   spanish: 'Spanish',
   english: 'English',
+  french: 'French',
+  polish: 'Polish',
 };
 
 test('Remote mic song list', async ({ page, context, browser, browserName }) => {
@@ -276,5 +278,53 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
 
     await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.english1.ID);
     await pages.songPreviewPage.expectPreviewSongToBe(songs.english1.ID);
+  });
+});
+
+test('Selecting a song using the `select` button on the remoteMic, when selected languages on desktop and remoteMic apps are not the same - works', async ({
+  page,
+  browser,
+}) => {
+  await page.goto('/?e2e-test');
+  await pages.landingPage.enterTheGame();
+  await pages.inputSelectionPage.selectSmartphones();
+
+  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
+
+  await test.step('Set song languages on desktop app', async () => {
+    await pages.smartphonesConnectionPage.goToMainMenu();
+    await pages.mainMenuPage.goToManageSongs();
+    await pages.manageSongsPage.goToSelectSongLanguage();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(languages.polish);
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(languages.english);
+  });
+
+  await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {
+    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic._page);
+    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic._page);
+    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+  });
+
+  await test.step('Set other song languages on remoteMic app', async () => {
+    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
+
+    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.spanish);
+    await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.french);
+  });
+
+  await test.step('Songs selected on remoteMic should be visible on desktop`s app preview, despite the different languages set between them', async () => {
+    await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
+
+    test.fail(
+      true,
+      'Song selected by phone is not opened as preview, because it`s song language was not selected on desktop app - another one is opened',
+    );
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.spanish.ID);
+    await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.spanish.ID);
+
+    await remoteMic.remoteMicSongListPage.chooseSongForPreview(songs.french.ID);
+    await expect.soft(pages.songPreviewPage.songPreviewElement).toHaveAttribute('data-song', songs.french.ID);
   });
 });
