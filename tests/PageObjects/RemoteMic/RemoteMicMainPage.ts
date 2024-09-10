@@ -50,6 +50,10 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('remote-keyboard');
   }
 
+  public async pressEnterByKeyboard() {
+    await this.page.getByTestId('keyboard-enter').click();
+  }
+
   public get joinGameButton() {
     return this.page.getByTestId('change-player');
   }
