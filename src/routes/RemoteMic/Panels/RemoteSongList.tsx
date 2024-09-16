@@ -166,13 +166,14 @@ function RemoteSongList({
                     onClick={(e) => {
                       e.stopPropagation();
                       RemoteMicClient.selectSong(song.id);
-                    }}>
+                    }}
+                    data-test="select-song-button">
                     SELECT
                   </ActiveButton>
                 )}
                 {isOnList ? (
                   <ActiveButton
-                    data-test="unselect-song-button"
+                    data-test="remove-song-button"
                     onClick={(e) => {
                       e.stopPropagation();
                       setAddedSongs((current) => current.filter((id) => id !== song.id));

@@ -19,12 +19,12 @@ export class RemoteMicSongListPagePO {
     await this.getSongElement(songID).locator(this.addSongButton).click();
   }
 
-  public get unselectSongButton() {
-    return this.page.getByTestId('unselect-song-button');
+  public get removeSongButton() {
+    return this.page.getByTestId('remove-song-button');
   }
 
   public async removeSongFromFavouriteList(songID: string) {
-    await this.getSongElement(songID).locator(this.unselectSongButton).click();
+    await this.getSongElement(songID).locator(this.removeSongButton).click();
   }
 
   public async expectSongToBeVisible(songID: string) {
@@ -81,5 +81,13 @@ export class RemoteMicSongListPagePO {
 
   public async goToSelectSongLanguage() {
     await this.songLanguageFilter.click();
+  }
+
+  public get selectSongButton() {
+    return this.page.getByTestId('select-song-button');
+  }
+
+  public async chooseSongForPreview(songID: string) {
+    await this.getSongElement(songID).locator(this.selectSongButton).click();
   }
 }
