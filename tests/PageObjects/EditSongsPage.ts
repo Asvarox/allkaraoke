@@ -70,12 +70,37 @@ export class EditSongsPagePO {
     return this.page.getByTestId('share-songs-switch').getByRole('checkbox');
   }
 
-  public get lastUpdateElement() {
-    return this.page.locator('[aria-label="Sort by Last Update descending"] svg');
+  public get lastUpdateDefaultIcon() {
+    return this.page.locator('[aria-label="Sort by Last Update descending"] [data-testid="SyncAltIcon"]');
+  }
+
+  public get lastUpdateArrowDownwardIcon() {
+    return this.page.locator('[aria-label="Sorted by Last Update descending"] [data-testid="ArrowDownwardIcon"]');
+  }
+
+  public get lastUpdateArrowUpwardIcon() {
+    // data-testid for this up arrow selector is also "ArrowDownwardIcon", which seems incorrect, so I use svg instead
+    return this.page.locator('[aria-label="Sorted by Last Update ascending"] svg');
   }
 
   public async sortByLastUpdateDESC() {
-    await this.lastUpdateElement.click();
+    if (await this.lastUpdateDefaultIcon.isVisible()) {
+      await this.lastUpdateDefaultIcon.click();
+    }
+    if (await this.lastUpdateArrowUpwardIcon.isVisible()) {
+      await this.lastUpdateArrowUpwardIcon.click();
+      await this.lastUpdateDefaultIcon.click();
+    }
+  }
+
+  public async sortByLastUpdateASC() {
+    if (await this.lastUpdateDefaultIcon.isVisible()) {
+      await this.lastUpdateDefaultIcon.click();
+      await this.lastUpdateArrowDownwardIcon.click();
+    }
+    if (await this.lastUpdateArrowDownwardIcon.isVisible()) {
+      await this.lastUpdateArrowDownwardIcon.click();
+    }
   }
 
   public getTableRow(rowNumber: number) {

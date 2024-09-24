@@ -34,7 +34,11 @@ test('Sorting songs by last update', async ({ page }) => {
   });
 
   await test.step('Sort songs descending by last update', async () => {
+    await expect(pages.editSongsPage.getTableCell(1, lastUpdateColumnNum)).toBeEmpty();
+    await expect(pages.editSongsPage.getTableCell(2, lastUpdateColumnNum)).toBeEmpty();
+    await expect(pages.editSongsPage.getTableCell(3, lastUpdateColumnNum)).toBeEmpty();
     await pages.editSongsPage.sortByLastUpdateDESC();
+    await expect(pages.editSongsPage.lastUpdateArrowDownwardIcon).toBeVisible();
     await expect(pages.editSongsPage.getTableCell(1, lastUpdateColumnNum)).toHaveText(lastUpdate1);
     await expect(pages.editSongsPage.getTableCell(2, lastUpdateColumnNum)).toHaveText(lastUpdate2);
     await expect(pages.editSongsPage.getTableCell(3, lastUpdateColumnNum)).toHaveText(lastUpdate3);
