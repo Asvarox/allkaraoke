@@ -45,7 +45,7 @@ export default function RateSong({ register, onExit }: Props) {
 
   return (
     <>
-      <MenuContainer>
+      <MenuContainer data-test={'rate-song-container'}>
         <h1>Is the song OK?</h1>
         <h4>If there's something wrong with the song, let me know so I can fix it</h4>
         <Checkbox {...register('button-not-in-sync', () => setLyricsNotInSync((current) => !current))} size={'small'}>
