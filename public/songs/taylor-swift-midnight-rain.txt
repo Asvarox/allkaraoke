@@ -1,0 +1,426 @@
+#ARTIST:Taylor Swift
+#TITLE:Midnight Rain
+#CREATOR:princetongirl98
+#BPM:327,86
+#YEAR:2022
+#PREVIEWSTART:54
+#VIDEO:v=Odh9ddPUkEY
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:203,47282376624173
+#ALLKARAOKE_ID:taylor-swift-midnight-rain
+#ALLKARAOKE_LASTUPDATE:2024-09-25T00:16:30.970Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:0,7
+#MP3:Taylor Swift - Midnight Rain.mp3
+F 22 8 0 Rain, 
+F 42 3 0 he 
+F 47 6 0 wanted 
+F 55 2 0 it 
+F 61 4 0 com
+F 67 2 0 fort
+F 70 3 0 able
+- 73
+F 74 2 0 I 
+F 78 6 0 wanted 
+F 87 6 0 that 
+F 96 9 0 pain
+- 105
+F 115 3 0 He 
+F 121 7 0 wanted 
+F 130 3 0 a 
+F 135 5 0 bride
+- 140
+F 144 2 0 I 
+F 149 2 0 was 
+F 154 2 0 mak
+F 158 2 0 ing 
+F 162 2 0 my 
+F 167 7 0 own 
+F 176 5 0 name
+- 181
+F 192 2 0 Chas
+F 196 2 0 ing 
+F 200 6 0 that 
+F 209 6 0 fame
+- 215
+F 227 2 0 He 
+F 232 2 0 stayed 
+F 237 4 0 the 
+F 244 9 0 same
+- 253
+F 265 1 0 All 
+F 270 2 0 of 
+F 274 4 0 me 
+F 284 7 0 changed 
+F 294 6 0 like 
+F 303 5 0 mid
+F 311 6 0 night 
+F 324 1 0 *
+- 325 610
+- 610
+: 632 5 11 My 
+: 640 7 0 town 
+: 650 2 0 was 
+: 655 2 2 a 
+: 660 6 4 waste
+: 669 6 0 land
+- 675
+: 697 1 0 Full 
+: 700 1 2 of 
+: 703 9 2 cages, 
+: 716 1 0 full 
+: 719 2 2 of 
+: 723 4 2 fen
+: 729 3 0 ces
+- 732
+: 735 1 0 Pa
+: 739 1 2 geant 
+: 742 4 2 queens 
+: 749 3 0 and 
+: 755 1 4 big 
+: 758 1 7 pre
+: 762 3 2 tend
+: 768 6 0 ers
+- 774 779
+- 779
+: 801 2 9 But 
+: 805 2 7 for 
+: 809 5 4 some, 
+: 817 2 11 it 
+: 822 2 11 was 
+* 829 2 11 pa
+* 833 2 11 ra
+* 837 21 0 dise
+- 858 910
+- 910
+: 932 5 0 My 
+: 939 7 0 boy 
+: 950 2 0 was 
+: 954 1 2 a 
+: 959 6 2 mont
+: 968 12 0 age
+- 980
+: 993 1 9 A 
+: 997 9 2 slow-mo
+: 1009 3 0 tion, 
+: 1016 4 0 love 
+: 1023 4 2 po
+: 1029 4 0 tion
+- 1033
+: 1036 2 2 Jump
+: 1041 1 2 ing 
+: 1043 1 2 off 
+: 1046 4 0 things 
+: 1053 2 4 in 
+: 1058 1 2 the 
+: 1061 13 2 ocean
+- 1074 1075
+- 1075
+: 1097 1 9 I 
+: 1101 2 7 broke 
+: 1105 1 7 his 
+: 1109 6 11 heart 
+: 1118 7 11 ’cause 
+: 1128 2 11 he 
+: 1132 1 11 was 
+: 1136 11 9 nice
+- 1147
+: 1164 3 0 He 
+: 1169 2 2 was 
+: 1174 5 2 sun
+: 1182 8 0 shine, 
+: 1193 2 2 I 
+: 1198 2 4 was 
+: 1202 6 4 mid
+: 1210 7 0 night 
+F 1220 8 0 rain
+- 1228
+F 1239 3 0 He 
+F 1245 6 0 wanted 
+F 1253 3 0 it 
+F 1258 2 0 com
+F 1263 2 0 fort
+F 1268 2 0 able
+- 1270
+F 1272 2 0 I 
+F 1277 2 0 wanted 
+F 1282 11 0 that 
+F 1296 8 0 pain
+- 1304
+F 1315 2 0 He 
+F 1319 6 0 wanted 
+F 1328 2 0 a 
+F 1333 6 0 bride
+- 1339
+F 1343 2 0 I 
+F 1348 2 0 was 
+F 1353 2 0 mak
+F 1357 2 0 ing 
+F 1361 1 0 my 
+F 1366 7 0 own 
+F 1376 5 0 name
+- 1381
+F 1390 2 0 Chas
+F 1395 3 0 ing 
+F 1399 6 0 that 
+F 1408 6 0 fame
+- 1414
+F 1426 2 0 He 
+F 1431 2 0 stayed 
+F 1436 7 0 the 
+F 1445 8 0 same
+- 1453
+F 1465 2 0 All 
+F 1470 2 0 of 
+F 1474 6 0 me 
+F 1484 6 0 changed 
+F 1493 6 0 like 
+F 1502 6 0 mid
+F 1512 5 0 night
+- 1517
+: 1532 5 11 It 
+: 1539 8 0 came 
+: 1550 2 0 like 
+: 1554 2 2 a 
+: 1559 7 2 post
+: 1568 7 0 card
+- 1575
+: 1595 1 2 Pic
+: 1598 2 2 ture 
+: 1603 3 2 per
+: 1609 3 0 fect, 
+: 1615 1 0 shiny 
+: 1618 7 2 fam
+: 1628 2 0 ily
+- 1630
+: 1635 1 0 Hol
+: 1639 1 9 i
+: 1643 4 2 day, 
+* 1650 2 4 pep
+* 1654 2 4 per
+* 1659 1 9 mint 
+* 1662 4 2 can
+* 1669 9 0 dy
+- 1678
+: 1700 1 9 But 
+: 1704 1 7 for 
+: 1708 5 4 him 
+: 1719 6 11 it’s 
+: 1728 6 11 every 
+: 1736 16 0 day
+- 1752 1806
+- 1806
+: 1828 1 9 So 
+: 1831 4 9 I 
+: 1838 8 0 peered 
+: 1849 2 0 through 
+: 1854 1 2 a 
+: 1858 7 2 win
+: 1868 7 0 dow
+- 1875
+: 1892 2 0 A 
+: 1896 4 2 deep 
+: 1903 4 2 por
+: 1909 3 0 tal, 
+: 1915 5 2 time 
+: 1923 3 2 tra
+: 1929 2 0 vel
+- 1931
+: 1934 2 2 All 
+: 1939 1 2 the 
+: 1941 3 2 love 
+: 1947 2 4 we 
+: 1952 5 2 un
+: 1960 4 2 ravel
+- 1964 1978
+- 1978
+: 2000 2 9 And 
+: 2004 1 7 the 
+: 2008 7 4 life 
+* 2018 7 11 I 
+* 2027 2 11 gave 
+* 2032 2 11 a
+* 2037 12 9 way
+- 2049
+: 2063 1 9 ’Cause 
+: 2066 1 0 he 
+: 2069 2 2 was 
+: 2074 5 2 sun
+: 2082 8 0 shine
+- 2090
+: 2092 2 2 I 
+: 2096 3 4 was 
+* 2102 5 4 mid
+* 2110 8 0 night 
+* 2120 8 4 rain
+- 2128
+: 2139 3 0 He 
+: 2144 6 2 wanted 
+: 2153 2 2 it 
+: 2158 2 0 com
+: 2162 2 4 fort
+: 2167 2 2 able
+- 2169
+: 2172 2 2 I 
+: 2176 7 2 wanted 
+: 2185 6 0 that 
+* 2194 9 0 pain
+- 2203
+: 2214 3 0 He 
+: 2219 5 2 wanted 
+: 2227 1 2 a 
+: 2231 7 4 bride
+- 2238
+: 2242 2 2 I 
+: 2247 2 4 was 
+: 2252 2 4 mak
+: 2256 2 0 ing 
+: 2261 2 0 my 
+: 2265 7 0 own 
+: 2274 5 11 name
+- 2279
+: 2288 2 7 Chas
+: 2293 2 7 ing 
+: 2298 6 0 that 
+: 2307 6 11 fame
+- 2313
+: 2324 2 4 He 
+: 2329 3 0 stayed 
+: 2335 6 0 the 
+: 2343 8 0 same
+- 2351
+: 2363 2 7 All 
+: 2367 2 0 of 
+: 2372 6 0 me 
+: 2382 7 2 changed
+- 2389
+: 2391 5 2 Like 
+: 2402 5 11 mid
+: 2410 6 0 night
+- 2416
+F 2419 7 0 Rain, 
+F 2439 3 0 he 
+F 2444 5 0 wanted 
+F 2452 2 0 it 
+F 2457 2 0 com
+F 2462 2 0 fort
+F 2466 2 0 able
+- 2468
+F 2471 3 0 I 
+F 2476 7 0 wanted 
+F 2485 6 0 that 
+F 2495 7 0 pain
+- 2502
+F 2513 3 0 He 
+F 2519 3 0 wanted 
+F 2525 3 0 a 
+F 2531 6 0 bride
+- 2537
+F 2541 2 0 I 
+F 2546 3 0 was 
+F 2552 2 0 mak
+F 2557 1 0 ing 
+F 2561 4 0 my 
+F 2567 4 0 own 
+F 2574 5 0 name
+- 2579
+F 2588 2 0 Chas
+F 2593 3 0 ing 
+F 2598 6 0 that 
+F 2607 6 0 fame
+- 2613
+F 2625 1 0 He 
+F 2630 2 0 stayed 
+F 2635 6 0 the 
+F 2644 9 0 same
+- 2653
+F 2663 2 0 All 
+F 2668 2 0 of 
+F 2673 6 0 me 
+F 2682 8 0 changed
+- 2690
+F 2693 5 0 Like 
+F 2701 5 0 mid
+F 2709 6 0 night
+- 2715
+: 2719 6 0 I 
+: 2729 7 2 guess 
+: 2743 2 2 some
+: 2747 2 9 times 
+: 2752 2 7 we 
+: 2757 6 0 all 
+: 2767 6 2 get
+- 2773
+: 2782 2 5 Just 
+: 2786 2 5 what 
+: 2790 1 0 we 
+: 2794 6 2 want
+: 2804 5 2 ed,
+- 2809
+: 2819 1 11 Just 
+: 2823 1 9 what 
+: 2827 2 5 we 
+: 2832 8 2 want
+: 2842 7 2 ed
+- 2849
+: 2866 1 0 And 
+: 2868 1 2 he 
+: 2871 1 4 nev
+: 2874 1 7 er 
+: 2878 2 4 thinks 
+: 2883 3 0 of 
+: 2888 6 7 me
+- 2894 2917
+- 2917
+: 2939 1 0 Ex
+: 2942 1 9 cept 
+: 2945 1 2 when 
+: 2948 1 4 I’m 
+: 2952 3 4 on 
+: 2958 13 0 TV
+- 2971 2996
+- 2996
+: 3018 7 2 I 
+: 3028 7 2 guess 
+: 3043 2 2 some
+: 3048 2 9 times 
+: 3052 2 0 we 
+: 3056 5 0 all 
+: 3065 6 2 get
+- 3071
+: 3079 2 4 Some 
+: 3084 2 0 kind 
+: 3089 2 7 of 
+* 3094 7 2 haunt
+* 3103 8 2 ed,
+- 3111
+: 3118 2 9 Some 
+: 3123 2 9 kind 
+: 3127 2 0 of 
+: 3132 6 2 haunt
+: 3141 8 2 ed
+- 3149
+: 3163 1 4 And 
+: 3166 1 11 I 
+: 3170 2 2 nev
+: 3174 2 4 er 
+: 3178 2 4 think 
+: 3183 2 0 of 
+: 3188 8 9 him
+- 3196 3214
+- 3214
+: 3236 1 0 Ex
+: 3239 1 0 cept 
+: 3242 1 7 on 
+* 3245 3 11 mid
+* 3250 6 11 nights 
+* 3259 9 11 like 
+* 3272 10 9 this 
+F 3284 2 0 mid
+F 3287 5 0 nights 
+F 3296 10 0 like 
+F 3309 15 0 this
+E
