@@ -153,6 +153,7 @@ test('A song that is less than 80% complete is not adding to the Selection playl
   await test.step('After reach the expected score - exit the game', async () => {
     await pages.gamePage.waitForPlayersScoreToBeGreaterThan(100);
     await pages.gamePage.exitSong();
+    await pages.rateUnfinishedSongPage.skipSongRating();
   });
 
   await test.step('Skip to the Song list', async () => {
