@@ -2,7 +2,7 @@
 #TITLE:Multilanguage
 #BPM:350
 #YEAR:1994
-#VIDEO:v=W9nZ6u15yis
+#VIDEO:v=koBUXESJZ8g
 #LANGUAGE:English, Polish
 #GAP:1000
 #ALLKARAOKE_ID:e2e-english-polish-1994

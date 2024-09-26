@@ -9,25 +9,14 @@ export default function Modal({ children, onClose }: Props) {
   return (
     <>
       <Backdrop onClick={onClose} />
-      <Container onClick={onClose}>
-        <div onClick={(e) => e.stopPropagation()}>{children}</div>
-      </Container>
+      <div onClick={onClose} className="fixed top-0 left-0 w-screen h-screen z-[20001] overflow-auto">
+        <div className="flex items-center justify-center min-h-full">
+          <div onClick={(e) => e.stopPropagation()}>{children}</div>
+        </div>
+      </div>
     </>
   );
 }
-
-const Container = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 20001;
-  overflow: auto;
-`;
 
 const Backdrop = styled.div`
   position: fixed;

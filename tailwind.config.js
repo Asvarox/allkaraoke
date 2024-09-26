@@ -8,7 +8,7 @@ module.exports = {
         text: {
           default: styles.colors.text.default,
           active: styles.colors.text.active,
-          inactive: styles.colors.text.active,
+          inactive: styles.colors.text.inactive,
         },
         active: styles.colors.text.active,
       },
