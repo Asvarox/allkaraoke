@@ -3,7 +3,7 @@
 #CREATOR:author
 #BPM:200
 #YEAR:1995
-#VIDEO:v=W9nZ6u15yis
+#VIDEO:v=koBUXESJZ8g
 #LANGUAGE:English
 #GAP:1000
 #ALLKARAOKE_ID:e2e-single-english-1995

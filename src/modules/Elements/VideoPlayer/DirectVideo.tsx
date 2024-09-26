@@ -41,7 +41,7 @@ export default forwardRef(function DirectVideoPlayer(
       playerRef?.removeEventListener('ended', onEnded);
       // playerRef?.removeEventListener('loadstart', onLoadstart);
     };
-  }, [player.current, setStatus]);
+  }, [setStatus]);
 
   useEffect(() => {
     onStateChange?.(status);
@@ -83,7 +83,7 @@ export default forwardRef(function DirectVideoPlayer(
   useImperativeHandle(ref, () => playerApi);
 
   return (
-    <video width={size.w} height={size.h} autoPlay={autoplay ?? true} controls={controls} ref={player}>
+    <video style={{ width: size.w, height: size.h }} autoPlay={autoplay ?? true} controls={controls} ref={player}>
       <source src={video} />
     </video>
   );

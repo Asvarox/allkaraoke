@@ -19,7 +19,7 @@ const editedSong = {
   url: 'sourceUrl',
   authorName: 'author',
   authorURL: 'authorUrl',
-  videoURL: 'https://www.youtube.com/watch?v=W9nZ6u15yis',
+  videoURL: 'https://www.youtube.com/watch?v=koBUXESJZ8g',
   language: 'English',
   releaseYear: '1995',
   bpm: '200',

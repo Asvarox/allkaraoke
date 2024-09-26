@@ -5,7 +5,7 @@
 #LANGUAGE:French
 #GAP:1000
 #ALLKARAOKE_ID:e2e-croissant-french-1994
-#VIDEO:v=W9nZ6u15yis
+#VIDEO:v=koBUXESJZ8g
 : 15 2 -3 It
 : 18 2 -3 was
 : 24 10 2 Christ
