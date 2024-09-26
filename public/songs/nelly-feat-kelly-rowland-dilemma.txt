@@ -1,0 +1,840 @@
+#ARTIST:Nelly feat. Kelly Rowland
+#TITLE:Dilemma
+#CREATOR:Leroidukitch
+#BPM:327,75
+#YEAR:2002
+#VIDEO:v=8WYHDfJDPDc
+#LANGUAGE:English
+#GAP:31673,13501144165
+#ALLKARAOKE_ID:nelly-feat-kelly-rowland-dilemma
+#ALLKARAOKE_LASTUPDATE:2024-09-26T21:12:20.806Z
+#ALLKARAOKE_REALBPM:168
+#ALLKARAOKE_VOLUME:0,77
+#MP3:Nelly feat. Kelly Rowland - Dilemma.mp3
+: 22 26 0 I 
+: 50 10 9 love 
+: 62 14 7 you 
+: 86 2 0 and 
+: 90 16 0 I 
+: 118 6 7 need 
+: 126 14 7 you
+- 140
+: 142 2 5 Nel
+: 146 2 7 ly, 
+: 150 22 9 I 
+: 174 10 9 love 
+: 186 14 7 you, 
+: 202 6 12 I 
+: 214 16 7 do, 
+: 242 14 7 Need 
+: 258 14 7 you -
+- 272
+: 274 6 5 No 
+: 282 6 9 mat
+: 290 2 5 ter 
+: 294 6 2 what 
+: 302 6 9 I 
+: 310 14 7 do -
+- 324
+: 334 2 4 All 
+: 338 2 5 I 
+: 342 6 7 think 
+: 350 2 4 a
+: 354 6 0 bout 
+: 362 6 7 is 
+: 370 16 5 you -
+- 386
+: 398 2 5 E
+: 402 2 7 ven 
+: 406 6 9 when 
+: 414 2 5 I’m 
+: 418 6 2 with 
+: 426 6 9 my 
+: 434 18 7 Boo -
+- 452
+: 454 2 4 Nelly, 
+: 458 2 5 you 
+: 462 2 4 know 
+: 466 2 5 I’m 
+: 470 2 7 cra
+: 474 2 4 zy 
+: 478 6 0 o
+: 486 6 7 ver 
+: 494 14 5 you -
+- 508
+: 522 6 5 No 
+: 530 6 9 mat
+: 538 2 5 ter 
+: 542 6 2 what 
+: 550 6 9 I 
+: 558 26 9 do -
+- 584
+: 586 2 4 All 
+: 590 2 5 I 
+: 594 6 7 think 
+: 602 2 4 a
+: 606 6 0 bout 
+: 614 6 7 is 
+: 622 16 5 you -
+- 638
+: 646 2 5 E
+: 650 2 7 ven 
+: 654 6 9 when 
+: 662 2 5 I’m 
+: 666 6 2 with 
+: 674 6 9 my 
+: 682 14 7 Boo -
+- 696
+: 706 2 5 You 
+: 710 2 4 know 
+: 714 2 5 I’m 
+: 718 6 7 cra
+: 726 2 4 zy 
+: 730 6 0 o
+: 738 6 7 ver 
+: 746 12 5 you -
+- 758 764
+- 764
+F 786 2 5 I 
+F 790 2 5 met 
+F 794 2 5 this 
+F 798 2 5 chick 
+F 802 2 5 and 
+F 806 2 5 she 
+F 810 2 5 just 
+F 814 3 5 mo
+F 818 2 5 ved 
+F 822 2 5 right 
+F 826 2 5 up 
+F 830 2 5 the 
+F 834 2 5 block 
+F 838 2 5 from 
+F 842 2 5 me
+- 844
+F 846 2 5 And 
+F 850 2 5 she 
+F 854 2 5 got 
+F 858 2 5 the 
+F 862 2 5 hots 
+F 866 2 5 for 
+F 870 2 5 me, 
+F 874 2 5 the 
+F 878 2 5 finest 
+F 882 2 5 thing 
+F 886 2 5 my 
+F 890 2 5 hood 
+F 894 2 5 dun 
+F 898 2 5 see
+- 900
+F 902 2 5 But 
+F 906 6 5 oh, 
+F 914 7 5 no
+F 922 6 5 , 
+F 930 10 5 no, 
+F 942 2 5 she 
+F 946 2 5 got 
+F 950 2 5 a 
+F 954 2 5 man 
+F 958 2 5 and 
+F 962 2 5 a 
+F 966 6 5 son 
+F 974 7 5 o
+F 982 6 5 h 
+F 990 10 5 oh,
+- 1000
+F 1002 2 5 But 
+F 1006 2 5 that’s 
+F 1010 3 5 o
+F 1014 6 5 kay 
+F 1022 2 5 ‘Cus
+- 1024
+F 1026 6 5 I 
+F 1034 2 5 wait 
+F 1038 2 5 for 
+F 1042 2 5 my 
+F 1046 2 5 cue 
+F 1050 2 5 and 
+F 1054 2 5 just 
+F 1058 3 5 lis
+F 1062 2 5 ten,
+- 1064
+F 1066 2 5 Play 
+F 1070 2 5 my 
+F 1074 3 5 po
+F 1078 3 5 si
+F 1082 2 5 tion
+- 1084
+F 1086 2 5 Like 
+F 1090 2 5 a 
+F 1094 7 5 short
+F 1102 10 5 stop, 
+F 1114 2 5 pick 
+F 1118 2 5 up 
+F 1122 3 5 e’ry
+F 1126 2 5 thing 
+F 1130 3 5 ma
+F 1134 2 5 mi 
+F 1138 3 5 hit
+F 1142 2 5 tin’
+- 1144
+F 1146 2 5 And 
+F 1150 2 5 in 
+F 1154 6 5 no 
+F 1162 14 5 time 
+F 1178 10 5 ah
+- 1188
+F 1190 2 5 I 
+F 1194 3 5 bet
+F 1198 2 5 ter 
+F 1202 6 5 make 
+F 1210 2 5 this 
+F 1214 2 5 a 
+F 1218 7 5 frien
+F 1226 14 5 d 
+F 1242 10 5 mine
+- 1252
+F 1254 2 5 And 
+F 1258 2 5 that’s 
+F 1262 2 5 for 
+F 1266 6 5 sure 
+F 1274 2 5 ‘Cos 
+F 1278 2 5 I
+- 1280
+F 1282 2 5 I 
+F 1286 3 5 ne
+F 1290 2 5 ver 
+F 1294 2 5 been 
+F 1298 2 5 the 
+F 1302 2 5 type 
+F 1306 6 5 to 
+F 1314 2 5 break 
+F 1318 2 5 up 
+F 1322 2 5 a 
+F 1326 3 5 hap
+F 1330 2 5 py 
+F 1334 2 5 home
+- 1336
+F 1338 6 5 But 
+F 1346 2 5 uh 
+F 1350 2 5 there’s 
+F 1354 2 5 something 
+F 1358 2 5 ‘bout 
+F 1362 3 5 ba
+F 1366 2 5 by 
+F 1370 6 5 girl,
+- 1376
+F 1378 2 5 I 
+F 1382 2 5 just 
+F 1386 2 5 can’t 
+F 1390 2 5 leave 
+F 1394 2 5 her 
+F 1398 2 5 ’lone
+- 1400
+F 1402 2 5 So 
+F 1406 6 5 tell 
+F 1414 6 5 me, 
+F 1422 6 5 ma, 
+F 1430 2 5 what’s 
+F 1434 2 5 it 
+F 1438 3 5 gon
+F 1442 2 5 na 
+F 1446 6 5 be
+- 1452
+F 1454 2 5 She 
+F 1458 6 5 said, 
+F 1466 6 0 “You 
+F 1474 6 -3 don’t 
+F 1482 6 0 know 
+F 1490 6 -3 what 
+F 1498 6 0 you 
+F 1506 6 -3 mean 
+F 1514 2 -3 to 
+F 1518 2 -3 me,”
+- 1520
+: 1522 6 -3 No 
+: 1530 6 9 mat
+: 1538 2 5 ter 
+: 1542 6 2 what 
+: 1550 6 9 I 
+: 1558 18 7 do
+- 1576
+: 1586 2 4 All 
+: 1590 2 5 I 
+: 1594 6 7 think 
+: 1602 2 4 a
+: 1606 2 0 bout 
+: 1610 6 7 is 
+: 1618 18 5 you
+- 1636
+: 1646 2 5 E
+: 1650 2 7 ven 
+: 1654 6 9 when 
+* 1662 2 5 I’m 
+* 1666 6 2 with 
+: 1674 6 9 my 
+: 1682 18 7 Boo
+- 1700
+: 1702 2 4 Nelly, 
+: 1706 2 5 you 
+: 1710 2 4 know 
+: 1714 2 5 I’m 
+: 1718 6 7 cra
+: 1726 2 4 zy 
+: 1730 6 0 o
+: 1738 6 7 ver 
+: 1746 18 5 you
+- 1764
+: 1770 6 5 No 
+: 1778 6 9 mat
+: 1786 2 5 ter 
+: 1790 6 2 what 
+: 1798 6 9 I 
+: 1806 18 9 do
+- 1824
+: 1834 2 4 All 
+: 1838 2 5 I 
+: 1842 6 7 think 
+: 1850 2 4 a
+: 1854 6 0 bout 
+: 1862 6 7 is 
+: 1870 18 5 you
+- 1888
+: 1898 2 5 E
+: 1902 2 7 ven 
+: 1906 6 9 when 
+: 1914 2 5 I’m 
+: 1918 6 2 with 
+: 1926 6 9 my 
+: 1934 18 7 Boo
+- 1952
+: 1954 2 5 You 
+: 1958 2 4 know 
+: 1962 2 5 I’m 
+: 1966 6 7 cra
+: 1974 2 4 zy 
+: 1978 6 0 o
+: 1986 6 7 ver 
+: 1994 18 5 you
+- 2012
+F 2034 2 5 I 
+F 2038 2 5 see 
+F 2042 2 5 a 
+F 2046 2 5 lot 
+F 2050 2 5 in 
+F 2054 2 5 your 
+F 2058 2 5 look
+- 2060
+F 2062 2 5 And 
+F 2066 2 5 I 
+F 2070 3 5 ne
+F 2074 2 5 ver 
+F 2078 2 5 say 
+F 2082 2 5 a 
+F 2086 2 5 word
+- 2088
+F 2090 2 5 I 
+F 2094 2 5 know 
+F 2098 2 5 how 
+F 2102 3 5 nig
+F 2106 2 5 gas 
+F 2110 2 5 start 
+F 2114 3 5 ac
+F 2118 2 5 tin’ 
+F 2122 3 5 trip
+F 2126 2 5 pin’,
+- 2128
+F 2130 2 5 And 
+F 2134 2 5 hate 
+F 2138 2 5 up 
+F 2142 2 5 all 
+F 2146 2 5 the 
+F 2150 2 5 girls
+- 2152
+F 2154 6 5 And 
+F 2162 6 5 there’s 
+F 2170 6 5 no 
+F 2178 10 5 way
+- 2188
+F 2190 2 5 Nelly 
+F 2194 2 5 go 
+F 2198 2 5 for 
+F 2202 6 5 it
+- 2208
+F 2210 2 5 Ain’t 
+F 2214 3 5 figh
+F 2218 6 5 tin 
+F 2226 6 5 ova 
+F 2234 6 5 no 
+F 2242 10 5 dame, 
+F 2254 2 5 as 
+F 2258 2 5 you 
+F 2262 2 5 could 
+F 2266 2 5 see
+- 2268
+F 2270 3 5 Bu
+F 2274 6 5 t 
+F 2282 2 5 I 
+F 2286 2 5 like 
+F 2290 2 5 your 
+F 2294 6 5 steeze, 
+F 2302 2 5 your 
+F 2306 6 5 style, 
+F 2314 2 5 your 
+F 2318 2 5 whole 
+F 2322 3 5 demean
+F 2326 2 5 or
+- 2328
+F 2330 2 5 The 
+F 2334 2 5 way 
+F 2338 6 5 you 
+F 2346 2 5 come 
+F 2350 2 5 through 
+F 2354 2 5 and 
+F 2358 3 5 hol
+F 2362 2 5 ler,
+- 2364
+F 2366 2 5 And 
+F 2370 2 5 swoop 
+F 2374 2 5 me 
+F 2378 2 5 in 
+F 2382 2 5 his 
+F 2386 2 5 two 
+F 2390 3 5 sea
+F 2394 2 5 ter
+- 2396
+F 2398 6 5 Now 
+F 2406 6 5 that’s 
+F 2414 7 5 gang
+F 2422 3 5 st
+F 2426 10 5 a 
+F 2438 2 5 and
+- 2440
+F 2442 2 5 I 
+F 2446 2 5 got 
+F 2450 3 5 spe
+F 2454 2 5 cial 
+F 2458 2 5 ways 
+F 2462 2 5 to 
+F 2466 6 5 thank 
+F 2474 7 5 y
+F 2482 7 5 a
+F 2490 10 5 ,
+- 2500
+F 2502 2 5 Don’t 
+F 2506 2 5 you 
+F 2510 3 5 for
+F 2514 2 5 get 
+F 2518 2 5 it
+- 2520
+F 2522 2 5 But 
+F 2526 6 5 uh 
+F 2534 2 5 it 
+F 2538 2 5 ain’t 
+F 2542 2 5 that 
+F 2546 3 5 ea
+F 2550 2 5 sy 
+F 2554 2 5 for 
+F 2558 2 5 you
+- 2560
+F 2562 2 5 To 
+F 2566 2 5 back 
+F 2570 2 5 up 
+F 2574 2 5 and 
+F 2578 2 5 leave 
+F 2582 2 5 him
+- 2584
+F 2586 2 5 But 
+F 2590 6 5 uh 
+F 2598 2 5 you 
+F 2602 2 5 and 
+F 2606 2 5 me 
+F 2610 2 5 we 
+F 2614 2 5 got 
+F 2618 6 5 ties 
+F 2626 2 5 for 
+F 2630 3 5 diffe
+F 2634 2 5 rent 
+F 2638 3 5 reas
+F 2642 2 5 ons
+- 2644
+F 2646 2 5 I 
+F 2650 3 5 re
+F 2654 6 5 spect 
+F 2662 2 5 that 
+F 2666 2 5 and 
+F 2670 2 5 right 
+F 2674 3 5 be
+F 2678 2 5 fore 
+F 2682 2 5 I 
+F 2686 6 5 turned 
+F 2694 2 5 to 
+F 2698 6 5 leave,
+- 2704
+F 2706 2 5 She 
+F 2710 10 5 said, 
+F 2722 2 0 “You 
+F 2726 6 -3 don’t 
+F 2734 2 0 know 
+F 2738 10 -3 what 
+F 2750 2 0 you 
+F 2754 6 -3 mean 
+F 2762 2 -3 to 
+F 2766 2 -3 me,”
+- 2768
+: 2770 6 -3 No 
+: 2778 6 9 mat
+: 2786 2 5 ter 
+: 2790 6 2 what 
+: 2798 6 9 I 
+: 2806 26 7 do
+- 2832
+: 2834 2 4 All 
+: 2838 2 5 I 
+: 2842 6 7 think 
+: 2850 2 4 a
+: 2854 6 0 bout 
+: 2862 6 7 is 
+: 2870 22 5 you
+- 2892
+: 2894 2 5 E
+: 2898 2 7 ven 
+: 2902 6 9 when 
+: 2910 2 5 I’m 
+: 2914 6 2 with 
+: 2922 6 9 my 
+: 2930 18 7 Boo
+- 2948
+: 2950 2 4 Nelly, 
+: 2954 2 5 you 
+: 2958 2 4 know 
+: 2962 2 5 I’m 
+: 2966 6 7 cra
+: 2974 2 4 zy 
+: 2978 6 0 o
+: 2986 6 7 ver 
+: 2994 26 5 you
+- 3020
+: 3022 2 5 No 
+* 3026 6 9 mat
+* 3034 2 5 ter 
+* 3038 6 2 what 
+: 3046 6 9 I 
+: 3054 18 9 do
+- 3072
+: 3082 2 4 All 
+: 3086 2 5 I 
+: 3090 6 7 think 
+: 3098 2 4 a
+: 3102 6 0 bout 
+: 3110 6 7 is 
+: 3118 16 5 you
+- 3134
+: 3146 2 5 E
+: 3150 2 7 ven 
+: 3154 6 9 when 
+: 3162 2 5 I’m 
+: 3166 2 2 with 
+: 3170 6 9 my 
+: 3178 22 7 Boo
+- 3200
+* 3202 2 5 You 
+* 3206 2 4 know 
+* 3210 2 5 I’m 
+* 3214 6 7 cra
+: 3222 2 4 zy 
+: 3226 6 0 o
+: 3234 6 7 ver 
+: 3242 10 5 you
+- 3252
+F 3254 2 5 Sing 
+F 3258 2 5 it 
+F 3262 2 5 for 
+F 3266 2 5 me, 
+F 3270 14 5 K
+- 3284
+: 3286 14 0 I 
+: 3302 6 9 love 
+: 3310 18 7 you 
+: 3330 2 7 and 
+: 3334 22 0 I 
+: 3358 6 9 need 
+: 3366 18 7 you 
+: 3386 2 5 Nel
+: 3390 2 7 ly,
+- 3392
+: 3394 26 9 I 
+: 3422 6 9 love 
+: 3430 18 7 yo
+: 3450 6 12 u
+: 3458 10 7 , 
+: 3470 2 7 I 
+: 3474 2 7 do
+- 3476
+: 3480 10 7 And 
+: 3492 2 0 it’s 
+: 3496 2 0 more 
+: 3500 6 9 than 
+: 3508 10 10 you’ll 
+: 3520 22 12 e
+: 3544 6 7 ver 
+: 3552 2 5 kno
+: 3556 22 7 w
+- 3578
+: 3580 2 12 Bo
+: 3584 18 12 y, 
+: 3604 6 7 it’s 
+: 3612 6 7 fo
+: 3620 6 9 r 
+: 3628 2 7 su
+: 3632 18 5 re
+- 3650
+: 3652 2 0 You 
+: 3656 2 5 al
+: 3660 6 5 ways 
+: 3668 2 5 count 
+: 3672 2 7 on 
+: 3676 2 9 my 
+: 3680 30 7 love
+- 3710
+: 3712 2 0 For
+: 3716 14 7 e
+: 3732 6 5 ver 
+: 3740 2 7 mo
+: 3744 6 5 r
+: 3752 2 2 e
+: 3756 6 0 , 
+: 3764 2 0 ye
+: 3768 2 -3 ah, 
+: 3772 2 -5 ye
+: 3776 2 -3 a
+: 3780 16 -7 h
+- 3796
+F 3798 6 -7 East 
+F 3806 6 -7 coast, 
+F 3814 2 -7 I 
+F 3818 2 -7 know 
+F 3822 2 -7 you’re 
+F 3826 3 -7 sha
+F 3830 2 -7 kin’ 
+F 3834 22 -7 right
+- 3856
+F 3858 6 -7 Down 
+F 3866 6 -7 south, 
+F 3874 2 -7 I 
+F 3878 2 -7 know 
+F 3882 2 -7 you’re 
+F 3886 3 -7 boun
+F 3890 2 -7 cin’ 
+F 3894 26 -7 right
+- 3920
+F 3922 6 -7 West 
+F 3930 6 -7 coast, 
+F 3938 2 -7 I 
+F 3942 2 -7 know 
+F 3946 2 -7 you’re 
+F 3950 3 -7 walk
+F 3954 2 -7 in’ 
+F 3958 26 -7 right
+- 3984
+F 3986 3 0 Mid
+F 3990 6 5 west, 
+F 3998 2 0 I 
+F 4002 2 -3 see 
+F 4006 2 5 you 
+F 4010 3 -3 swing
+F 4014 2 -3 in’ 
+F 4018 2 -3 right
+- 4020
+: 4022 2 -3 No 
+: 4026 6 9 mat
+: 4034 2 5 ter 
+: 4038 6 2 what 
+: 4046 6 9 I 
+: 4054 26 7 do
+- 4080
+: 4082 2 4 All 
+: 4086 2 5 I 
+: 4090 6 7 think 
+: 4098 2 4 a
+: 4102 6 0 bout 
+: 4110 6 7 is 
+: 4118 12 5 you
+- 4130
+: 4146 2 5 E
+: 4150 2 7 ven 
+: 4154 2 9 when 
+: 4158 2 5 I’m 
+: 4162 6 2 with 
+: 4170 6 9 my 
+: 4178 18 7 Boo
+- 4196
+: 4198 2 4 Nelly, 
+: 4202 2 5 you 
+: 4206 2 4 know 
+: 4210 2 5 I’m 
+: 4214 6 7 cra
+: 4222 2 4 zy 
+: 4226 6 0 o
+: 4234 6 7 ver 
+: 4242 8 5 you
+- 4250
+: 4270 6 5 No 
+: 4278 6 9 mat
+: 4286 2 5 ter 
+: 4290 6 2 what 
+: 4298 6 9 I 
+: 4306 22 9 do
+- 4328
+: 4330 2 4 All 
+: 4334 2 5 I 
+: 4338 6 7 think 
+: 4346 2 4 a
+: 4350 6 0 bout 
+: 4358 6 7 is 
+: 4366 14 5 you
+- 4380
+: 4394 2 5 E
+: 4398 2 7 ven 
+: 4402 6 9 when 
+: 4410 2 5 I’m 
+: 4414 6 2 with 
+: 4422 6 9 my 
+: 4430 22 7 Boo
+- 4452
+: 4454 2 5 You 
+: 4458 2 4 know 
+: 4462 2 5 I’m 
+: 4466 6 7 cra
+: 4474 2 4 zy 
+: 4478 2 0 o
+: 4482 6 7 ver 
+: 4490 14 5 you
+- 4504 4524
+- 4524
+F 4546 6 5 East 
+F 4554 6 5 coast, 
+F 4562 2 5 I 
+F 4566 2 5 know 
+F 4570 2 5 you’re 
+F 4574 3 5 sha
+F 4578 2 5 kin’ 
+F 4582 26 5 right
+- 4608
+F 4610 6 5 Down 
+F 4618 6 5 south, 
+F 4626 2 5 I 
+F 4630 2 5 know 
+F 4634 2 5 you’re 
+F 4638 3 5 boun
+F 4642 2 5 cin’ 
+F 4646 22 5 right
+- 4668
+F 4670 6 5 West 
+F 4678 6 5 coast, 
+F 4686 2 5 I 
+F 4690 2 5 know 
+F 4694 2 5 you’re 
+F 4698 3 5 walk
+F 4702 2 5 in’ 
+F 4706 26 5 right
+- 4732
+F 4734 7 9 Mid
+F 4742 6 4 west, 
+F 4750 2 9 I 
+F 4754 2 5 see 
+F 4758 2 5 you 
+F 4762 3 5 swing
+F 4766 2 5 in’ 
+F 4770 26 14 right
+- 4796
+F 4798 6 14 East 
+F 4806 2 14 coast, 
+F 4810 2 14 I 
+F 4814 2 14 know 
+F 4818 2 14 you’re 
+F 4822 3 14 sha
+F 4826 2 14 kin’ 
+F 4830 26 14 right
+- 4856
+F 4858 6 14 Down 
+F 4866 6 14 south, 
+F 4874 2 14 I 
+F 4878 2 14 know 
+F 4882 2 14 you’re 
+F 4886 3 14 boun
+F 4890 2 14 cin’ 
+F 4894 26 14 right
+- 4920
+F 4922 6 14 West 
+F 4930 6 14 coast, 
+F 4938 2 14 I 
+F 4942 2 14 know 
+F 4946 2 14 you’re 
+F 4950 3 14 walk
+F 4954 2 14 in’ 
+F 4958 22 14 right
+- 4980
+F 4982 7 4 Mid
+F 4990 6 4 west, 
+F 4998 2 5 I 
+F 5002 2 0 see 
+F 5006 2 5 you 
+F 5010 3 0 swing
+F 5014 2 0 in’ 
+F 5018 2 -3 right
+- 5020
+: 5022 2 -3 No 
+: 5026 6 9 mat
+: 5034 2 5 ter 
+: 5038 6 2 what 
+: 5046 6 9 I 
+: 5054 26 7 do
+- 5080
+: 5082 2 4 All 
+: 5086 2 5 I 
+: 5090 6 7 think 
+: 5098 2 4 a
+: 5102 6 0 bout 
+: 5110 6 7 is 
+: 5118 12 5 you
+- 5130
+: 5142 2 5 E
+: 5146 2 7 ven 
+: 5150 6 9 when 
+: 5158 2 5 I’m 
+: 5162 6 2 with 
+: 5170 6 9 my 
+: 5178 18 7 Boo
+- 5196
+: 5198 2 4 Nelly, 
+: 5202 2 5 you 
+: 5206 2 4 know 
+: 5210 2 5 I’m 
+: 5214 6 7 cra
+: 5222 2 4 zy 
+: 5226 6 0 o
+: 5234 6 7 ver 
+: 5242 14 5 you
+- 5256
+: 5270 2 5 No 
+: 5274 6 9 mat
+: 5282 2 5 ter 
+: 5286 6 2 what 
+: 5294 6 9 I 
+: 5302 26 9 do
+- 5328
+: 5330 2 4 All 
+: 5334 2 5 I 
+: 5338 6 7 think 
+: 5346 2 4 a
+* 5350 6 0 bout 
+* 5358 6 7 is 
+* 5366 12 5 you
+- 5378
+: 5394 2 5 E
+: 5398 2 7 ven 
+: 5402 6 9 when 
+: 5410 2 5 I’m 
+: 5414 6 2 with 
+: 5422 2 9 my…
+E

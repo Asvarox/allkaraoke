@@ -1,0 +1,279 @@
+#ARTIST:The Beautiful South
+#TITLE:Dumb
+#CREATOR:jockel1974
+#BPM:210
+#YEAR:1997
+#VIDEO:v=UNcpxAx3tWk
+#LANGUAGE:English
+#GAP:21790
+#ALLKARAOKE_ID:the-beautiful-south-dumb
+#ALLKARAOKE_LASTUPDATE:2024-09-26T21:12:21.093Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=2598
+#ALLKARAOKE_VOLUME:0,7
+#P1:dumb
+#MP3:The Beautiful South - Dumb.mp3
+: 14 3 4 It 
+: 18 1 2 does
+: 20 1 2 n’t 
+: 22 3 2 take 
+: 26 3 2 a 
+* 30 3 5 mathe
+: 34 3 4 ma
+: 38 1 5 ti
+: 40 6 2 cian
+- 46
+: 60 3 2 To 
+: 64 1 4 add 
+: 66 3 2 a 
+: 70 3 2 sim
+: 74 3 2 ple 
+: 78 10 5 sum
+- 88 90
+- 90
+F 104 1 5 Eith
+: 106 3 2 er 
+: 110 3 1 you 
+: 114 3 1 are 
+: 118 1 2 sim
+: 120 3 2 ply 
+: 124 3 2 beau
+: 128 1 4 ti
+: 130 8 3 ful
+- 138
+: 150 1 2 Or 
+: 152 1 5 I 
+: 154 5 3 am 
+: 160 3 4 sim
+: 164 5 2 ply 
+: 170 4 2 dumb
+- 174
+: 178 5 4 Dumb 
+: 184 5 7 dumb 
+* 190 18 2 dumb
+- 208 248
+- 248
+: 262 7 2 Dumb 
+: 270 9 2 dumb 
+: 280 10 0 dumb
+- 290 340
+- 340
+: 354 5 1 Dumb 
+: 360 7 0 dumb 
+: 368 12 1 dumb
+- 380 538
+- 538
+: 552 5 2 It 
+: 558 1 0 does
+: 560 1 0 n’t 
+: 562 5 0 take 
+: 568 1 -1 Rob
+: 570 3 0 ert 
+F 574 1 1 the 
+: 576 12 1 Bruce
+- 588
+: 596 5 0 To 
+: 602 1 -3 see 
+: 604 3 0 the 
+: 608 1 0 web 
+: 610 5 -1 you’ve 
+* 616 14 -1 spun
+- 630
+F 638 1 2 Eith
+: 640 3 0 er 
+: 644 3 1 you 
+: 648 3 -1 are 
+: 652 3 0 sim
+: 656 3 0 ply 
+: 660 1 1 beau
+: 662 3 2 ti
+* 666 8 0 ful
+- 674
+: 688 3 1 Or 
+F 692 5 2 I 
+: 698 3 0 am 
+: 702 3 0 sim
+: 706 3 0 ply 
+: 710 4 0 dumb
+- 714
+: 718 7 2 Dumb 
+: 726 5 0 dumb 
+: 732 10 0 dumb
+- 742 786
+- 786
+: 800 7 0 Dumb 
+: 808 7 -1 dumb 
+F 816 14 0 dumb
+- 830 876
+- 876
+: 890 7 0 Dumb 
+: 898 5 3 dumb 
+: 904 16 0 dumb
+- 920 1074
+- 1074
+: 1088 1 0 It 
+: 1090 1 0 does
+: 1092 3 0 n’t 
+: 1096 3 0 take 
+: 1100 3 1 a 
+: 1104 5 0 Lab
+: 1110 1 0 ra
+* 1112 14 3 dor
+- 1126
+: 1130 3 0 To 
+: 1134 1 0 show 
+: 1136 1 0 a 
+: 1138 5 0 blind 
+: 1144 5 0 man 
+F 1150 18 3 sun
+- 1168
+: 1172 1 3 Eith
+: 1174 3 2 er 
+: 1178 3 0 you 
+: 1182 5 -1 are 
+: 1188 1 0 sim
+F 1190 3 0 ply 
+: 1194 3 1 beau
+: 1198 1 2 ti
+: 1200 10 0 ful
+- 1210
+: 1220 3 2 Or 
+: 1224 3 4 I 
+: 1228 3 0 am 
+* 1232 5 0 sim
+: 1238 3 0 ply 
+: 1242 6 0 dumb
+- 1248
+: 1252 7 0 Dumb 
+: 1260 5 2 dumb 
+* 1266 14 0 dumb
+- 1280 1322
+- 1322
+: 1336 7 0 Dumb 
+: 1344 7 1 dumb 
+F 1352 16 0 dumb
+- 1368 1410
+- 1410
+: 1424 7 0 Dumb 
+: 1432 7 0 dumb 
+* 1440 16 -1 dumb
+- 1456 1678
+- 1678
+: 1692 3 0 The 
+: 1696 5 1 sun, 
+: 1702 3 0 the 
+* 1706 6 3 sky
+- 1712
+: 1718 3 0 The 
+: 1722 3 2 moon, 
+: 1726 3 0 the 
+F 1730 10 -1 stars
+- 1740
+: 1742 7 0 Ju
+F 1750 3 -1 pi
+: 1754 5 3 ter 
+: 1760 5 1 Nep
+* 1766 1 0 tune 
+: 1768 3 -1 and 
+F 1772 10 0 Mars
+- 1782
+: 1788 7 -2 All 
+: 1796 3 0 these 
+: 1800 5 0 things 
+: 1806 3 3 I 
+F 1810 1 2 clear
+: 1812 3 1 ly 
+: 1816 8 1 see
+- 1824
+: 1828 3 0 It 
+: 1832 3 1 don’t 
+: 1836 3 0 take 
+: 1840 7 -1 a 
+: 1848 1 0 tel
+: 1850 1 0 e
+: 1852 3 0 scope 
+: 1856 1 0 for 
+: 1858 5 0 you 
+: 1864 1 -1 to 
+* 1866 5 3 love 
+: 1872 10 1 me
+- 1882 1884
+- 1884
+: 1898 7 2 Aah 
+: 1906 9 2 aah 
+: 1916 7 0 ahh
+- 1923
+: 1924 3 0 For 
+: 1928 1 0 you 
+: 1930 10 1 to,
+- 1940
+: 1944 1 0 For 
+: 1946 3 0 you 
+: 1950 1 2 to 
+* 1952 9 8 love 
+: 1962 12 0 me
+- 1974
+: 1986 7 2 Aah 
+: 1994 9 2 aah 
+: 2004 12 0 ahh
+- 2016
+: 2020 17 3 It’s 
+: 2038 7 0 dumb 
+: 2046 7 0 dumb 
+F 2054 12 0 dumb
+- 2066
+: 2074 7 2 Aah 
+: 2082 7 2 aah 
+: 2090 11 0 ahh
+- 2101
+: 2102 3 1 So 
+: 2106 5 0 dumb, 
+: 2112 3 1 so 
+: 2116 4 0 dumb
+- 2120
+: 2122 1 4 It’s 
+: 2124 5 0 so 
+: 2130 5 2 dumb 
+: 2136 7 2 dumb 
+F 2144 10 2 dumb
+- 2154
+: 2160 9 2 Aah 
+: 2170 9 2 aah 
+: 2180 8 0 ahh
+- 2188
+: 2192 23 0 Yeah 
+: 2216 1 4 it’s 
+: 2218 5 1 dumb 
+: 2224 5 1 dumb 
+: 2230 12 1 dumb
+- 2242 2260
+- 2260
+: 2274 25 0 Aah 
+: 2300 3 0 it’s 
+: 2304 3 0 so 
+: 2308 7 2 dumb 
+F 2316 21 0 dumb 
+* 2338 50 4 dumb
+- 2388 2444
+- 2444
+: 2458 11 0 So 
+: 2470 11 0 so 
+: 2482 3 0 so 
+: 2486 5 0 dumb 
+: 2492 5 0 dumb 
+: 2498 16 0 dumb
+- 2514 2558
+- 2558
+F 2572 7 0 It’s 
+: 2580 15 0 dumb 
+: 2596 15 0 dumb, 
+: 2612 16 0 dumb
+- 2628 2642
+- 2642
+: 2656 5 0 It’s  
+: 2662 5 0 so 
+: 2668 7 0 dumb 
+: 2676 5 0 dumb 
+* 2682 58 0 dumb
+E
