@@ -1,0 +1,499 @@
+#ARTIST:Chappell Roan
+#TITLE:Pink Pony Club
+#CREATOR:piharatamo
+#BPM:107
+#YEAR:2022
+#PREVIEWSTART:11
+#VIDEO:v=GR3Liudev18
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:21808,69158878505
+#ALLKARAOKE_ID:chappell-roan-pink-pony-club
+#ALLKARAOKE_LASTUPDATE:2024-09-25T00:16:29.652Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:107
+#ALLKARAOKE_PREVIEWEND:260
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Chappell Roan - Pink Pony Club.mp3
+#COVER:Chappell Roan - Pink Pony Club [CO].jpg
+#BACKGROUND:Chappell Roan - Pink Pony Club [BG].jpg
+#START:5.5
+: 7 3 7 I 
+: 10 3 7 know 
+: 20 2 6 you 
+: 22 3 5 wanted 
+: 25 2 5 me 
+: 27 1 6 to 
+: 30 3 5 stay
+- 33
+: 37 1 2 But 
+: 38 1 3 I 
+: 39 2 4 can't 
+: 41 2 4 ignore 
+: 43 2 4 the 
+: 47 3 3 crazy 
+: 50 3 2 visions 
+: 55 2 1 of 
+: 57 1 1 me 
+: 59 2 1 in 
+: 62 3 1 LA
+- 65
+: 68 2 -2 And 
+: 72 3 7 I 
+: 75 5 7 heard 
+: 85 3 7 that 
+: 88 2 6 there's 
+: 90 2 7 a 
+: 92 3 7 special 
+: 95 4 7 place
+- 99
+: 102 3 1 Where 
+: 105 2 3 boys 
+: 107 2 3 and 
+: 109 2 3 girls 
+: 111 1 3 can 
+: 112 3 4 all 
+: 115 1 3 be 
+: 116 3 3 queens 
+: 120 3 1 every 
+: 123 4 1 single 
+: 127 4 0 day
+- 131
+: 137 2 0 I'm 
+: 140 3 0 having 
+: 145 3 0 wicked 
+: 149 2 2 dreams 
+: 155 1 1 of 
+: 157 4 1 leaving 
+: 162 5 3 Tennessee
+- 167
+: 171 2 2 Oh, 
+: 173 4 2 Santa 
+: 177 3 2 Moni
+: 180 4 4 ca, 
+: 186 1 3 I 
+: 187 3 3 swear 
+: 191 3 3 it's 
+: 194 3 3 calling 
+: 198 3 5 me
+- 201
+: 204 2 0 Won't 
+: 206 2 0 make 
+: 208 2 0 my 
+: 210 3 0 mama 
+: 214 5 1 proud
+- 219
+: 220 2 3 It's 
+: 222 3 2 gonna 
+: 226 3 2 cause 
+: 229 2 2 a 
+: 231 4 4 scene
+- 235
+: 237 1 3 She 
+: 238 3 3 sees 
+: 241 2 3 her 
+: 243 3 3 baby 
+: 247 3 5 girl
+- 250
+: 252 1 4 I 
+: 253 3 4 know 
+: 256 2 4 she's 
+: 258 3 4 gonna 
+: 262 3 6 scream
+- 265
+* 268 6 11 God, 
+* 275 2 11 what 
+* 277 2 12 have 
+* 279 3 10 you 
+* 282 2 12 done
+* 284 3 10 ~
+- 287
+: 290 1 9 You're 
+: 291 1 9 a 
+: 292 2 9 pink 
+: 294 2 9 pony 
+: 298 4 8 girl
+- 302
+: 306 1 7 And 
+: 307 1 7 you 
+: 308 2 7 dance 
+: 310 2 8 at 
+: 312 2 5 the 
+: 314 4 5 club
+- 318
+: 318 4 5 Oh, 
+: 322 8 5 mama, 
+: 330 1 5 I'
+: 332 8 11 m 
+: 340 3 11 just 
+: 343 4 12 having 
+: 347 4 10 fun
+- 351
+: 354 1 10 On 
+: 355 2 10 the 
+: 357 2 10 stage 
+: 359 1 10 in 
+: 361 1 10 my 
+: 363 7 9 heels
+- 370
+: 372 2 8 It's 
+: 374 2 8 where 
+: 376 1 9 I 
+: 378 5 7 belong
+- 383
+: 383 3 4 Down 
+: 387 2 3 at 
+: 391 2 3 the 
+: 398 3 11 Pink 
+: 402 3 11 Pony 
+: 406 3 10 Club
+- 409
+: 412 3 11 I'm 
+: 416 2 12 gonna 
+: 418 2 12 keep 
+: 420 2 12 on 
+: 422 2 12 dan
+: 424 2 10 cing 
+: 427 1 8 at 
+: 428 1 6 the 
+: 430 3 11 Pink 
+: 434 3 11 Pony 
+: 438 4 9 Club
+- 442
+: 444 3 11 I'm 
+: 448 2 12 gonna 
+: 450 2 12 keep 
+: 452 2 12 on 
+: 454 2 12 dan
+: 456 2 10 cing 
+: 459 1 8 down 
+: 460 1 6 in 
+: 462 3 11 West 
+: 466 3 11 Holly
+: 470 4 9 wood
+- 474
+: 476 3 11 I'm 
+: 480 2 12 gonna 
+: 482 2 12 keep 
+: 484 2 12 on 
+: 486 2 12 dan
+: 488 2 10 cing 
+: 491 1 8 at 
+: 492 1 6 the 
+: 494 3 11 Pink 
+: 498 3 11 Pony 
+: 502 4 9 Club
+- 506
+: 509 4 9 Pink 
+: 514 4 9 Pony 
+: 518 4 8 Club
+- 522
+: 526 3 7 I'm 
+: 529 3 7 up 
+: 539 2 6 and 
+: 542 1 5 jaws 
+: 543 3 5 are 
+: 546 1 6 on 
+: 547 1 5 the 
+: 548 4 5 floor
+- 552
+: 559 3 3 Lovers 
+: 562 1 3 in 
+: 563 2 3 the 
+: 565 5 4 bathroom 
+: 570 2 4 and 
+: 572 2 3 a 
+: 574 2 2 line 
+: 576 4 1 outside 
+: 580 1 1 the 
+: 581 4 1 door
+- 585
+: 591 8 7 Blacklights 
+: 604 1 7 and 
+: 605 1 7 a 
+: 606 4 6 mirrored 
+: 610 3 7 disco 
+: 613 3 7 ball
+- 616
+: 622 4 1 Every 
+: 626 3 1 night's 
+: 629 1 1 ano
+: 631 2 3 ther
+: 633 3 3 reason 
+: 639 1 3 why 
+: 640 2 4 I 
+: 642 2 3 left 
+: 644 2 3 it 
+: 646 3 1 all
+- 649
+: 656 2 0 I 
+: 658 2 0 thank 
+: 660 1 0 my 
+: 662 3 0 wicked 
+: 666 2 2 dreams 
+: 672 1 1 a 
+: 674 2 1 year 
+: 676 2 1 from 
+: 678 4 1 Tenne
+: 682 2 3 ssee
+- 684
+: 688 2 2 Oh, 
+: 690 4 2 Santa 
+: 694 3 2 Moni
+: 697 4 4 ca, 
+: 704 1 3 you've 
+: 706 2 3 been 
+: 708 2 3 too 
+: 710 3 3 good 
+: 713 2 3 to 
+: 715 3 5 me
+- 718
+: 720 2 0 Won't 
+: 722 2 0 make 
+: 724 2 0 my 
+: 726 3 0 mama 
+: 731 5 1 proud
+- 736
+: 737 1 3 It's 
+: 738 3 2 gonna 
+: 742 3 2 cause 
+: 745 2 2 a 
+: 747 4 4 scene
+- 751
+: 753 1 3 She 
+: 754 3 3 sees 
+: 757 2 3 her 
+: 759 3 3 baby 
+: 763 3 5 girl
+- 766
+: 768 1 4 I 
+: 769 3 4 know 
+: 772 2 4 she's 
+: 774 3 4 gonna 
+: 778 3 6 scream
+- 781
+* 783 6 11 God, 
+* 790 2 11 what 
+* 792 2 12 have 
+* 794 3 10 you 
+* 797 2 12 done
+* 799 3 10 ~
+- 802
+: 804 1 9 You're 
+: 805 1 9 a 
+: 806 2 9 pink 
+: 808 2 9 pony 
+: 812 4 8 girl
+- 816
+: 820 1 7 And 
+: 821 1 7 you 
+: 822 2 7 dance 
+: 824 2 8 at 
+: 826 2 5 the 
+: 828 4 5 club
+- 832
+: 832 4 5 Oh, 
+: 836 8 5 mama, 
+: 844 1 5 I'
+: 845 8 11 m 
+: 853 3 11 just 
+: 856 4 12 having 
+: 860 4 10 fun
+- 864
+: 867 1 10 On 
+: 868 2 10 the 
+: 870 2 10 stage 
+: 872 1 10 in 
+: 874 1 10 my 
+: 876 7 9 heels
+- 883
+: 885 2 8 It's 
+: 887 2 8 where 
+: 889 1 9 I 
+: 891 5 7 belong
+- 896
+: 896 3 4 Down 
+: 900 2 3 at 
+: 904 2 3 the 
+: 911 3 11 Pink 
+: 915 3 11 Pony 
+: 919 3 10 Club
+- 922
+: 925 3 11 I'm 
+: 929 2 12 gonna 
+: 931 2 12 keep 
+: 933 2 12 on 
+: 935 2 12 dan
+: 937 2 10 cing 
+: 940 1 8 at 
+: 941 1 6 the 
+: 943 3 11 Pink 
+: 947 3 11 Pony 
+: 951 4 9 Club
+- 955
+: 957 3 11 I'm 
+: 961 2 12 gonna 
+: 963 2 12 keep 
+: 965 2 12 on 
+: 967 2 12 dan
+: 969 2 10 cing 
+: 972 1 8 down 
+: 973 1 6 in 
+: 975 3 11 West 
+: 979 3 11 Holly
+: 983 4 9 wood
+- 987
+: 989 3 11 I'm 
+: 993 2 12 gonna 
+: 995 2 12 keep 
+: 997 2 12 on 
+: 999 2 12 dan
+: 1001 2 10 cing 
+: 1004 1 8 at 
+: 1005 1 6 the 
+: 1007 3 11 Pink 
+: 1011 3 11 Pony 
+: 1015 4 9 Club
+- 1019
+: 1022 4 9 Pink 
+: 1027 4 9 Pony 
+: 1031 4 8 Club
+- 1035 1096
+- 1096
+: 1103 3 7 Don't 
+: 1106 3 7 think 
+: 1116 2 6 I've 
+: 1120 2 5 left 
+: 1122 2 5 you 
+: 1124 2 6 all 
+: 1126 6 5 behind
+- 1132
+: 1136 2 3 Still 
+: 1138 2 3 love 
+: 1140 2 3 you 
+: 1142 2 3 and 
+: 1144 6 3 Tennessee, 
+: 1150 2 3 you're 
+: 1153 3 2 always 
+: 1156 3 1 on 
+: 1159 1 1 my 
+: 1160 4 1 mind
+- 1164
+: 1165 1 7 And 
+: 1169 9 7 mama, 
+: 1185 2 7 every 
+: 1189 4 6 Satur
+: 1193 3 7 day
+- 1196
+: 1202 2 1 I 
+: 1204 2 1 can 
+: 1206 1 1 hear 
+: 1208 2 3 your 
+: 1210 3 3 southern 
+: 1213 3 3 draw 
+: 1217 2 3 a 
+: 1219 3 3 thousand 
+: 1222 2 3 miles 
+: 1224 3 1 away 
+: 1230 5 1 saying
+- 1235
+* 1235 6 11 God, 
+* 1243 2 11 what 
+* 1245 2 12 have 
+* 1247 3 10 you 
+* 1250 2 12 done
+* 1252 3 10 ~
+- 1255
+: 1257 1 9 You're 
+: 1258 1 9 a 
+: 1259 2 9 pink 
+: 1261 3 9 pony 
+: 1266 4 8 girl
+- 1270
+: 1274 1 7 And 
+: 1275 1 7 you 
+: 1276 2 7 dance 
+: 1278 2 8 at 
+: 1280 2 5 the 
+: 1282 4 5 club
+- 1286
+: 1286 4 5 Oh, 
+: 1290 8 5 mama, 
+: 1298 1 5 I'
+: 1299 8 11 m 
+: 1308 3 11 just 
+: 1311 4 12 having 
+: 1315 4 10 fun
+- 1319
+: 1323 1 10 On 
+: 1324 2 10 the 
+: 1326 2 10 stage 
+: 1328 1 10 in 
+: 1330 1 10 my 
+: 1332 7 9 heels
+- 1339
+: 1340 2 8 It's 
+: 1342 2 8 where 
+: 1344 1 9 I 
+: 1346 5 7 belong
+- 1351
+: 1352 3 4 Down 
+: 1356 2 3 at 
+: 1360 2 3 the 
+: 1366 3 11 Pink 
+: 1370 3 11 Pony 
+: 1374 3 10 Club
+- 1377
+: 1379 3 11 I'm 
+: 1383 2 12 gonna 
+: 1385 2 12 keep 
+: 1387 2 12 on 
+: 1389 2 12 dan
+: 1391 2 10 cing 
+: 1394 1 8 at 
+: 1395 1 6 the 
+: 1397 3 11 Pink 
+: 1401 3 11 Pony 
+: 1405 4 9 Club
+- 1409
+: 1411 3 11 I'm 
+: 1415 2 12 gonna 
+: 1417 2 12 keep 
+: 1419 2 12 on 
+: 1421 2 12 dan
+: 1423 2 10 cing 
+: 1426 1 8 down 
+: 1427 1 6 in 
+: 1429 3 11 West 
+: 1433 3 11 Holly
+: 1437 4 9 wood
+- 1441
+: 1443 3 11 I'm 
+: 1447 2 12 gonna 
+: 1449 2 12 keep 
+: 1451 2 12 on 
+: 1453 2 12 dan
+: 1455 2 10 cing 
+: 1458 1 8 at 
+: 1459 1 6 the 
+: 1461 3 11 Pink 
+: 1465 3 11 Pony 
+: 1469 4 9 Club
+- 1473
+: 1476 4 9 Pink 
+: 1481 4 9 Pony 
+: 1485 4 8 Club
+- 1489 1629
+- 1629
+F 1636 3 3 I'm 
+F 1639 2 2 gonna 
+F 1641 2 3 keep 
+F 1643 2 2 on 
+F 1645 20 3 dancing~
+- 1665
+F 1668 3 3 I'm 
+F 1671 2 2 gonna 
+F 1673 2 3 keep 
+F 1675 2 2 on 
+F 1677 20 3 dancing~
+E

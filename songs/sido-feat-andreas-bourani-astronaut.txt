@@ -1,0 +1,760 @@
+#ARTIST:Sido feat. Andreas Bourani
+#TITLE:Astronaut
+#CREATOR:blewmaxx
+#BPM:300
+#YEAR:2015
+#PREVIEWSTART:56
+#VIDEO:v=Xv9oGI_KhLk
+#LANGUAGE:German
+#GAP:1820
+#ALLKARAOKE_ID:sido-feat-andreas-bourani-astronaut
+#ALLKARAOKE_LASTUPDATE:2024-09-25T00:16:30.720Z
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=xyno53dCO7Q
+#ALLKARAOKE_PREVIEWEND:83
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Sido feat. Andreas Bourani - Astronaut.mp3
+: 20 2 8 Ich 
+: 24 2 8 heb 
+: 28 7 15 ab
+- 35 44
+- 44
+: 64 2 15 Nichts 
+: 68 4 15 hält 
+: 76 4 13 mich 
+: 84 4 11 am 
+: 92 6 13 Bo
+: 100 6 10 den
+- 106 108
+- 108
+: 128 2 13 Al
+: 132 4 13 les 
+: 140 4 11 blass 
+: 148 5 15 und 
+: 156 8 15 grau
+- 164
+: 184 2 8 Bin 
+: 188 2 8 so 
+: 192 2 15 lan
+* 196 5 15 ge 
+: 204 4 13 nicht 
+: 212 4 11 ge
+: 220 6 13 flo
+: 228 6 10 gen
+- 234 236
+- 236
+: 256 2 13 Wie 
+: 260 5 13 ein 
+: 268 5 11 As
+: 276 2 8 tro
+: 284 8 8 naut
+- 292
+R 296 2 8 Mit 
+R 300 2 8 der 
+R 304 2 8 Schnau
+R 308 2 8 ze 
+R 312 2 8 voll
+- 314
+R 318 1 8 Die 
+R 320 2 8 Köp
+R 324 2 8 fe 
+R 328 2 8 sind 
+R 334 2 8 leer
+- 336
+R 340 2 8 Sitz
+R 344 2 11 en 
+R 348 2 11 im 
+R 352 2 11 Dreck 
+R 360 2 11 bis 
+R 364 2 11 zum 
+R 368 4 11 Hals
+- 372
+R 376 2 11 Ha
+R 380 2 11 ben 
+R 384 2 11 Löch
+R 388 2 11 er 
+R 392 2 11 im 
+R 396 4 11 Herz
+- 400
+R 404 2 11 Er
+R 408 2 10 tränk
+R 412 2 10 en 
+R 416 2 10 Sor
+R 420 2 10 gen 
+R 424 2 10 und 
+R 428 2 10 Pro
+R 432 2 10 ble
+R 436 1 10 me
+- 437
+R 440 2 10 In 
+R 444 2 10 ’nem 
+R 448 2 10 Bech
+R 452 2 10 er 
+R 456 2 10 voll 
+R 461 3 10 Wein
+- 464
+R 468 2 10 Mit 
+R 472 2 11 ei
+R 476 2 11 nem 
+R 480 2 11 Läch
+R 484 2 11 eln 
+R 488 2 11 aus 
+R 492 2 11 Stein
+- 494
+R 500 2 11 Uns 
+R 504 2 11 fällt 
+R 508 2 11 nichts 
+R 512 2 11 Bes
+R 516 2 11 se
+R 520 2 11 res 
+R 526 3 11 ein
+- 529
+R 536 2 11 Wir 
+R 540 2 11 ham 
+R 544 2 11 mor
+R 548 2 11 gen 
+R 552 2 11 schon 
+R 556 2 11 ver
+R 560 2 11 ges
+R 564 1 11 sen
+- 565
+R 568 2 11 Wer 
+R 572 2 11 wir 
+R 576 2 11 ges
+R 580 2 11 tern 
+R 584 2 11 noch 
+R 589 3 11 war’n
+- 592
+R 600 2 11 Ham 
+R 604 2 11 uns 
+R 608 2 11 al
+R 612 2 11 le 
+R 616 2 11 voll
+R 620 2 11 ge
+R 624 2 11 fres
+R 628 1 11 sen
+- 629
+R 632 2 11 Und 
+R 636 2 11 ver
+R 640 2 11 ges
+R 644 2 11 sen 
+R 648 2 11 zu 
+R 653 2 11 zahl’n
+- 655
+R 664 2 10 Las
+R 668 2 10 sen 
+R 672 2 10 al
+R 675 2 10 les 
+R 680 2 10 stehn 
+R 684 2 10 und 
+R 688 2 10 lie
+R 692 1 10 gen
+- 693
+R 696 2 10 Für 
+R 700 2 10 mehr 
+R 704 2 10 A
+R 708 2 10 sche 
+R 712 2 10 und 
+R 717 3 10 Staub
+- 720
+R 728 2 11 Wir 
+R 732 2 11 woll’n 
+R 736 2 11 al
+R 740 2 11 le, 
+R 744 2 11 dass 
+R 748 2 11 es 
+R 753 2 11 passt
+- 755
+R 760 2 11 Doch 
+R 764 2 11 wir 
+R 768 2 11 pas
+R 772 2 11 sen 
+R 777 2 11 nicht 
+R 782 2 11 auf
+- 784
+R 788 2 11 Die 
+R 792 2 11 Stim
+R 796 2 11 me 
+R 800 2 11 der 
+R 804 2 11 Ver
+R 808 2 11 nunft 
+R 812 2 11 ist 
+R 816 2 11 längst 
+R 820 2 11 ver
+R 824 2 11 stummt
+- 826
+R 830 1 11 Wir 
+R 832 3 11 hör’n 
+R 838 2 11 sie 
+R 841 2 11 nicht 
+R 845 3 11 mehr
+- 848
+R 852 2 11 Denn 
+R 856 2 11 manch
+R 860 2 11 mal 
+R 864 2 11 ham 
+R 868 2 11 wir 
+R 872 2 11 das 
+R 876 2 11 Ge
+R 880 2 11 fühl
+- 882
+R 888 2 11 Wir 
+R 892 2 11 ge
+R 896 2 11 hör’n 
+R 900 2 11 hier 
+R 904 2 11 nicht 
+R 908 2 11 her
+- 910
+R 916 2 11 Es 
+R 920 2 10 gibt 
+R 924 2 10 kein 
+R 928 2 10 Vor 
+R 932 2 10 und 
+R 936 2 10 kein 
+R 940 2 10 Zu
+R 944 2 10 rück 
+R 948 1 10 mehr
+- 949
+R 952 2 10 Nur 
+R 956 2 10 noch 
+R 960 2 10 un
+R 964 2 10 ten 
+R 968 2 10 und 
+R 972 2 10 o
+R 976 1 10 ben
+- 977
+R 980 2 10 Ei
+R 984 2 11 ner 
+R 988 2 11 von 
+R 992 2 11 hun
+R 996 2 11 dert 
+R 1000 2 11 Mill
+R 1004 2 11 io
+R 1008 1 11 nen
+- 1009
+R 1012 2 11 Ein 
+R 1016 2 11 klei
+R 1020 2 11 ner 
+R 1024 2 11 Punkt 
+R 1028 2 11 ü
+R 1032 2 11 ber’m 
+R 1036 2 11 Bo
+R 1040 1 11 den
+- 1041
+R 1044 2 10 Ich 
+R 1048 2 8 heb 
+R 1053 3 8 ab
+- 1056
+: 1076 2 8 Ich 
+: 1080 2 8 heb 
+: 1084 5 15 ab
+- 1089 1100
+- 1100
+: 1120 2 15 Nichts 
+: 1124 5 15 hält 
+: 1132 4 13 mich 
+: 1140 5 11 am 
+: 1148 6 13 Bo
+: 1156 6 10 den
+- 1162 1164
+- 1164
+: 1184 2 13 Al
+: 1188 4 13 les 
+: 1196 4 11 blass 
+: 1204 4 15 und 
+: 1212 8 15 grau
+- 1220
+: 1240 2 8 Bin 
+: 1244 2 8 zu 
+: 1248 3 15 lan
+: 1252 4 15 ge 
+: 1260 4 13 nicht 
+: 1268 4 11 ge
+: 1276 6 13 flo
+: 1284 5 10 gen
+- 1289 1292
+- 1292
+: 1312 2 13 Wie 
+: 1316 5 13 ein 
+: 1324 4 11 As
+: 1332 5 10 tro
+: 1340 5 8 naut
+- 1345 1352
+- 1352
+: 1372 2 13 Ich 
+* 1376 5 18 seh 
+: 1384 2 15 die 
+: 1388 5 13 Welt 
+: 1396 4 11 von 
+: 1404 6 13 o
+: 1412 7 10 ben
+- 1419
+: 1436 2 10 Der 
+: 1440 4 13 Rest 
+: 1448 2 13 ver
+: 1452 5 11 blasst 
+: 1460 4 15 im 
+: 1468 10 15 Grau
+- 1478
+: 1496 2 8 Ich 
+: 1500 2 8 hab 
+: 1504 5 15 Zeit 
+: 1512 2 15 und 
+: 1516 5 13 Raum 
+: 1524 5 11 ver
+: 1532 6 13 lo
+: 1540 2 10 ren
+- 1542
+: 1544 2 10 Hier 
+* 1548 6 13 o
+: 1556 5 10 ben
+- 1561
+: 1568 2 13 Wie 
+: 1572 5 13 ein 
+: 1580 5 11 As
+: 1588 4 10 tro
+: 1596 6 8 naut
+- 1602 1608
+- 1608
+R 1628 2 11 Im 
+R 1632 2 11 Dun
+R 1636 2 11 kel 
+R 1640 2 11 der 
+R 1644 3 11 Nacht
+- 1647
+R 1652 2 11 Hier 
+R 1656 2 11 o
+R 1660 2 11 ben 
+R 1664 2 11 ist 
+R 1668 2 11 al
+R 1672 2 11 les 
+R 1676 2 11 so 
+R 1680 2 11 fried
+R 1684 1 11 lich
+- 1685
+R 1688 2 11 Doch 
+R 1692 2 11 da 
+R 1696 2 11 un
+R 1700 2 11 ten 
+R 1704 3 11 geht’s 
+R 1709 2 11 ab
+- 1711
+R 1716 2 11 Wir 
+R 1720 2 11 al
+R 1724 2 11 le 
+R 1728 2 10 tra
+R 1732 2 10 gen 
+R 1736 2 10 da
+R 1740 2 10 zu 
+R 1744 1 10 bei
+- 1745
+R 1748 2 10 Doch 
+R 1752 2 10 brech
+R 1756 2 10 en 
+R 1760 2 10 un
+R 1764 2 10 ter 
+R 1768 2 10 der 
+R 1772 3 10 Last
+- 1775
+R 1788 2 10 Wir 
+R 1792 2 11 hof
+R 1796 2 11 fen 
+R 1800 2 11 auf 
+R 1805 3 11 Gott
+- 1808
+R 1812 2 11 Doch 
+R 1816 2 11 hab’n 
+R 1820 2 11 das 
+R 1824 2 11 Wun
+R 1828 2 11 der 
+R 1832 2 11 ver
+R 1837 3 11 passt
+- 1840
+R 1844 2 11 Wir 
+R 1848 2 11 bau
+R 1852 2 11 en 
+R 1856 2 11 im
+R 1860 2 11 mer 
+R 1864 2 11 hö
+R 1868 1 11 her
+- 1869
+R 1872 2 11 Bis 
+R 1876 2 11 es 
+R 1880 2 11 ins 
+R 1884 2 11 Un
+R 1888 2 11 end
+R 1892 2 11 li
+R 1896 2 11 che 
+R 1900 3 11 geht
+- 1903
+R 1916 2 11 Fast 
+R 1920 2 11 acht 
+R 1924 2 11 Mil
+R 1928 2 11 liar
+R 1932 2 11 den 
+R 1936 2 11 Men
+R 1940 1 11 schen
+- 1941
+R 1944 2 11 Doch 
+R 1948 2 11 die 
+R 1952 2 11 Mensch
+R 1956 2 11 lich
+R 1960 2 11 keit 
+R 1965 3 11 fehlt
+- 1968
+R 1976 2 11 Von 
+R 1980 2 11 hier 
+R 1984 2 10 o
+R 1988 2 10 ben 
+R 1992 2 10 macht 
+R 1996 2 10 es 
+R 2000 2 10 al
+R 2003 1 10 les
+- 2004
+R 2008 2 10 Plötz
+R 2012 2 10 lich 
+R 2016 2 10 gar 
+R 2020 2 10 nichts 
+R 2024 2 10 mehr 
+R 2028 2 10 aus
+- 2030
+R 2040 2 10 Von 
+R 2044 2 10 hier 
+R 2048 2 11 sieht 
+R 2052 2 11 man 
+R 2056 2 11 kei
+R 2060 2 11 ne 
+R 2064 2 11 Gren
+R 2068 1 11 zen
+- 2069
+R 2072 2 11 Und 
+R 2076 2 11 die 
+R 2080 2 11 Far
+R 2084 2 11 be 
+R 2088 2 11 der 
+R 2092 2 11 Haut
+- 2094
+R 2104 2 11 Die
+R 2108 2 11 ser 
+R 2112 2 11 gan
+R 2116 2 11 ze 
+R 2120 2 11 Lärm 
+R 2124 2 11 um 
+R 2128 2 11 Nichts 
+R 2132 2 11 ver
+R 2136 1 11 stummt
+- 2137
+R 2140 2 11 Ich 
+R 2144 2 11 hör’ 
+R 2148 2 11 Euch 
+R 2152 2 11 nicht 
+R 2156 2 11 mehr
+- 2158
+R 2168 2 11 Lang
+R 2172 2 11 sam 
+R 2176 2 11 hab 
+R 2180 2 11 ich 
+R 2184 2 11 das 
+R 2188 2 11 Ge
+R 2192 2 11 fühl
+- 2194
+R 2200 2 11 Ich 
+R 2204 2 11 ge
+R 2208 2 11 hö
+R 2212 2 11 re 
+R 2216 2 11 hier 
+R 2220 2 11 her
+- 2222
+R 2228 2 11 Es 
+R 2232 2 11 gibt 
+R 2236 2 11 kein 
+R 2240 2 10 Vor 
+R 2244 2 10 und 
+R 2248 2 10 kein 
+R 2252 2 10 Zu
+R 2256 2 10 rück 
+R 2260 1 10 mehr
+- 2261
+R 2264 2 10 Nur 
+R 2268 2 10 noch 
+R 2272 2 10 un
+R 2276 2 10 ten 
+R 2280 2 10 und 
+R 2284 2 10 o
+R 2288 1 10 ben
+- 2289
+R 2292 2 10 Ei
+R 2296 2 10 ner 
+R 2300 2 10 von 
+R 2304 2 11 hun
+R 2308 2 11 dert 
+R 2312 2 11 Mill
+R 2316 2 11 io
+R 2320 1 11 nen
+- 2321
+R 2324 2 11 Ein 
+R 2328 2 11 klei
+R 2332 2 11 ner 
+R 2336 2 11 Punkt 
+R 2340 2 11 ü
+R 2344 2 11 berm 
+R 2348 2 11 Bo
+R 2352 1 11 den
+- 2353
+: 2356 2 8 Ich 
+: 2360 2 8 heb 
+: 2364 5 15 ab
+- 2369 2380
+- 2380
+: 2400 2 15 Nichts 
+: 2404 4 15 hält 
+: 2412 4 13 mich 
+: 2420 5 11 am 
+* 2428 6 13 Bo
+: 2436 5 10 den
+- 2441 2444
+- 2444
+: 2464 2 13 Al
+: 2468 4 13 les 
+: 2476 4 11 blass 
+: 2484 5 15 und 
+: 2492 8 15 grau
+- 2500
+: 2520 2 8 Bin 
+: 2524 2 8 zu 
+: 2528 3 15 lan
+: 2532 5 15 ge 
+: 2540 4 13 nicht 
+: 2548 4 11 ge
+: 2556 6 13 flo
+: 2564 5 10 gen
+- 2569 2572
+- 2572
+: 2592 2 13 Wie 
+: 2596 5 13 ein 
+: 2604 4 11 As
+: 2612 5 10 tro
+: 2620 6 8 naut
+- 2626 2632
+- 2632
+: 2652 2 13 Ich 
+: 2656 5 18 seh 
+: 2664 2 15 die 
+: 2668 5 13 Welt 
+: 2676 5 11 von 
+: 2684 6 13 o
+: 2692 5 10 ben
+- 2697
+: 2716 2 10 Der 
+: 2720 4 13 Rest 
+: 2728 2 13 ver
+: 2732 5 11 blasst 
+: 2740 5 15 im 
+: 2748 7 15 Grau
+- 2755 2756
+- 2756
+: 2776 2 8 Ich 
+: 2780 2 8 hab 
+* 2784 5 15 Zeit 
+: 2792 2 15 und 
+: 2796 5 13 Raum 
+: 2804 6 11 ver
+: 2812 6 13 lo
+: 2820 2 10 ren
+- 2822
+: 2824 2 10 Hier 
+: 2828 6 13 o
+: 2836 6 10 ben
+- 2842
+: 2848 2 13 Wie 
+: 2852 5 13 ein 
+: 2860 4 11 As
+: 2868 5 10 tro
+: 2876 4 8 naut
+- 2880
+: 2896 13 15 Oh 
+: 2912 13 15 oh 
+: 2928 6 13 ho 
+: 2936 6 11 ho 
+: 2944 19 10 ho
+- 2963
+: 2976 2 13 Wie 
+: 2980 5 13 ein 
+: 2988 4 11 As
+* 2996 6 18 tro
+: 3004 4 15 naut
+- 3008
+: 3024 13 15 Oh 
+: 3040 13 15 oh 
+: 3056 6 13 ho 
+: 3064 6 11 ho 
+: 3072 21 10 ho
+- 3093 3108
+- 3108
+: 3128 2 13 Und 
+: 3132 2 15 beim 
+: 3136 5 16 An
+: 3144 4 16 blick 
+: 3152 2 16 die
+: 3156 4 15 ser 
+: 3164 5 13 Schön
+: 3172 4 11 heit
+- 3176
+: 3184 5 13 Fällt 
+: 3192 5 15 mir 
+: 3200 2 13 al
+: 3204 5 15 les 
+: 3216 3 13 wie
+: 3221 4 15 der 
+: 3228 7 13 ein
+- 3235
+: 3252 2 11 Sind 
+: 3256 2 11 wir 
+: 3260 2 13 nicht 
+* 3264 6 15 ei
+: 3272 2 13 gent
+: 3276 3 11 lich 
+: 3284 5 13 am 
+: 3292 6 15 Le
+: 3300 4 13 ben
+- 3304
+: 3320 2 11 Um 
+: 3324 2 13 zu 
+: 3328 7 15 lie
+: 3336 2 13 ben 
+: 3341 4 13 und 
+: 3349 5 18 zu 
+: 3357 3 15 sein
+: 3361 4 13 ~
+- 3365
+: 3380 2 11 Hier 
+: 3384 2 13 würd 
+: 3388 2 15 ich 
+: 3392 5 16 gern 
+: 3400 5 16 für 
+: 3408 2 16 im
+: 3412 5 16 mer 
+* 3420 6 18 blei
+: 3428 4 16 ben
+- 3432
+: 3440 2 18 Doch 
+: 3444 4 20 ich 
+: 3452 4 18 bin 
+: 3460 3 13 ein
+: 3464 2 11 ~ 
+: 3468 5 13 Wim
+: 3476 5 13 pern
+: 3484 8 13 schlag
+- 3492
+: 3512 2 11 Der 
+: 3516 3 13 nach 
+: 3524 5 15 fünf 
+: 3532 3 13 Mill
+: 3536 6 11 iar
+: 3544 2 13 den 
+: 3548 7 15 Jah
+: 3556 4 13 ren
+- 3560
+: 3572 3 11 Nicht 
+: 3580 2 13 viel 
+: 3584 8 15 mehr 
+: 3596 2 16 zu 
+: 3600 4 15 sein 
+: 3608 2 16 ver
+: 3612 11 15 mag
+- 3623
+: 3636 2 8 Ich 
+: 3640 2 8 heb 
+* 3644 5 15 ab
+- 3649 3660
+- 3660
+: 3680 2 15 Nichts 
+: 3684 4 15 hält 
+: 3692 4 13 mich 
+: 3700 5 11 am 
+: 3708 6 13 Bo
+: 3716 4 10 den
+- 3720 3724
+- 3724
+: 3744 2 13 Al
+: 3748 4 13 les 
+: 3756 4 11 blass 
+: 3764 5 15 und 
+: 3772 6 15 grau
+- 3778 3780
+- 3780
+: 3800 2 8 Bin 
+: 3804 2 8 so 
+: 3808 3 15 lang
+: 3812 5 15 e 
+: 3820 4 13 nicht 
+: 3828 6 11 ge
+: 3836 5 13 flo
+: 3844 5 10 gen
+- 3849 3852
+- 3852
+: 3872 2 13 Wie 
+: 3876 5 13 ein 
+: 3884 4 11 As
+: 3892 5 10 tro
+: 3900 6 8 naut
+- 3906 3912
+- 3912
+: 3932 2 13 Ich 
+: 3936 5 18 seh 
+: 3944 2 15 die 
+: 3948 5 13 Welt 
+: 3956 5 11 von 
+: 3964 6 13 o
+: 3972 6 10 ben
+- 3978
+: 3996 2 10 Der 
+: 4000 5 13 Rest 
+: 4008 2 13 ver
+: 4012 4 11 blasst 
+: 4020 5 15 im 
+: 4028 8 15 Grau
+- 4036
+: 4056 2 8 Ich 
+: 4060 2 8 hab 
+: 4064 5 15 Zeit 
+: 4072 2 15 und 
+: 4076 5 13 Raum 
+: 4084 4 11 ver
+: 4092 6 13 lo
+: 4100 2 10 ren
+- 4102
+: 4104 2 10 Hier 
+* 4108 6 13 o
+: 4116 5 10 ben
+- 4121
+: 4128 2 13 Wie 
+: 4132 5 13 ein 
+: 4140 5 11 As
+: 4148 5 10 tro
+: 4156 4 8 naut
+- 4160
+* 4176 13 15 Oh 
+: 4192 13 15 oh 
+: 4208 6 13 ho 
+: 4216 6 11 ho 
+: 4224 16 10 ho
+- 4240
+: 4256 2 13 Wie 
+: 4260 5 13 ein 
+: 4268 4 11 As
+: 4276 5 18 tro
+: 4284 4 15 naut
+- 4288
+: 4304 13 15 Oh 
+: 4320 13 15 oh 
+: 4336 6 13 ho 
+: 4344 6 11 ho 
+: 4352 20 10 ho
+- 4372
+: 4384 2 13 Wie 
+: 4388 5 13 ein 
+: 4396 4 11 As
+: 4404 6 10 tro
+: 4412 4 8 naut
+E
