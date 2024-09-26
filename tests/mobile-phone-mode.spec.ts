@@ -107,7 +107,7 @@ test('Mobile phone mode should be playable', async ({ browser, context, page, br
     await remoteMicBluePage._page.getByTestId('ready-button').click();
     await remoteMicRed._page.getByTestId('ready-button').click();
     await expect(remoteMicRed._page.getByTestId('keyboard-enter')).not.toBeDisabled({ timeout: 8_000 });
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(500);
     await remoteMicRed._page.getByTestId('keyboard-enter').click();
 
     await expect(page.getByTestId('skip-animation-button')).toBeVisible({ timeout: 15_000 });
