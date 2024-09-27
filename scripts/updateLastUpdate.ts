@@ -17,6 +17,16 @@ console.log(files);
     const contents = readFileSync(file, 'utf-8');
     const data = convertTxtToSong(contents);
 
+    data.tracks.forEach((track) => {
+      track.sections.forEach((section) => {
+        if ('notes' in section) {
+          section.notes.forEach((note) => {
+            note.lyrics = note.lyrics.replaceAll(/\\+"/g, '"');
+          });
+        }
+      });
+    });
+
     await updateLastUpdate(data);
     await updateArtistOrigin(data);
 

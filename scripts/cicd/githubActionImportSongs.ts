@@ -1,3 +1,4 @@
+import { execSync } from 'child_process';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import convertSongToTxt from '../../src/modules/Songs/utils/convertSongToTxt';
@@ -60,6 +61,17 @@ dotenv.config({ path: '.env.local' });
         console.log('Song has no ID', song);
         return;
       }
+
+      song.tracks.forEach((track) => {
+        track.sections.forEach((section) => {
+          if ('notes' in section) {
+            section.notes.forEach((note) => {
+              note.lyrics = note.lyrics.replaceAll(/\\+"/g, '"');
+            });
+          }
+        });
+      });
+
       // keep old last update time if the song exists
       if (fs.existsSync(`./public/songs/${song.id}.txt`)) {
         const oldSong = convertTxtToSong(fs.readFileSync(`./public/songs/${song.id}.txt`, 'utf-8'));
@@ -73,5 +85,9 @@ dotenv.config({ path: '.env.local' });
       console.warn(`Couldn't convert song`, e, songTxt);
     }
   });
+  console.log('Updating song data');
+  execSync(`pnpm ts-node scripts/updateLastUpdate.ts ${addedSongs.map((s) => `./public/songs/${s}.txt`).join(' ')}`);
+  console.log('Updating song stats');
+  execSync(`pnpm ts-node scripts/generateSongStats.ts`);
   require('../generateIndex');
 })();

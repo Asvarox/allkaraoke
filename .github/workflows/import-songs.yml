@@ -41,7 +41,7 @@ jobs:
         run: pnpm ts-node scripts/generateSongStats.ts
       - name: Update popularity index
         run: pnpm ts-node scripts/generateSongPopularityIndex.ts
-      - name: Auto commit updated snapshots
+      - name: Auto commit songs
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
