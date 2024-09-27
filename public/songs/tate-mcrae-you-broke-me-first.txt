@@ -1,0 +1,429 @@
+#ARTIST:Tate McRae
+#TITLE:You Broke Me First
+#CREATOR:moerte
+#BPM:330,46
+#YEAR:2020
+#VIDEO:v=AG-erEMhumc
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:7151,391999031653
+#ALLKARAOKE_ID:tate-mcrae-you-broke-me-first
+#ALLKARAOKE_LASTUPDATE:2024-09-27T19:58:26.262Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/wyatch?v=BWTMPk7UCp8
+#ALLKARAOKE_VOLUME:0,74
+#P1:you broke me first
+#MP3:Tate McRae - You Broke Me First.mp3
+: 22 5 4 Maybe 
+: 29 3 4 you 
+: 34 2 1 don’t 
+: 38 2 1 like 
+: 42 3 1 tal
+: 47 2 -1 king 
+: 51 2 -1 too 
+: 55 2 -1 much 
+: 59 2 -3 a
+: 63 6 -3 bout 
+: 71 5 -3 your
+: 78 16 -3 self
+- 94
+: 100 2 -3 But 
+: 104 2 1 you 
+: 108 2 1 shoul
+: 112 2 1 da 
+: 116 3 -1 told 
+: 121 3 -1 me 
+: 126 2 -4 that 
+: 130 2 -4 you 
+: 133 2 -4 were 
+: 137 2 -4 thin
+: 140 2 -4 kin’ 
+: 144 2 -4 ’bout 
+: 148 3 -4 so
+: 153 8 -4 meone 
+: 163 17 -4 else
+- 180
+: 186 3 -4 You’re 
+: 191 2 4 drunk 
+: 195 2 4 at 
+: 199 2 4 a 
+: 203 2 3 par
+: 206 2 3 ty 
+: 210 2 3 or 
+: 214 5 1 maybe 
+: 221 2 1 it’s 
+: 225 2 -1 just 
+: 228 2 -1 that 
+: 231 2 -1 your 
+: 235 5 -3 car 
+: 242 8 -3 broke 
+: 252 12 -3 down
+- 264
+: 271 3 -3 Your 
+: 276 4 1 phone’s 
+: 282 3 1 been 
+: 287 3 -1 off 
+: 292 2 -1 for 
+: 295 2 -1 a 
+: 299 4 -4 couple 
+: 305 6 -4 months, 
+: 312 2 -4 so 
+: 315 3 -4 you’re 
+: 319 2 -4 ca
+: 322 5 -4 lling 
+: 329 5 -4 me 
+: 336 10 -4 now
+- 346
+: 366 3 4 I 
+: 371 7 8 know 
+: 380 5 1 you, 
+: 387 5 1 you’re 
+: 394 11 4 like 
+: 407 14 -3 this
+- 421
+* 442 3 4 When 
+* 447 3 4 shit 
+* 452 4 6 don’t 
+* 458 3 6 go 
+* 463 3 6 your 
+* 468 6 6 way 
+* 476 2 4 you 
+* 480 4 4 nee
+* 486 3 4 ded 
+* 491 3 4 me 
+* 496 2 6 to 
+* 500 12 8 fix 
+* 514 6 3 it
+* 522 6 1 ~
+- 528
+: 536 4 4 And 
+: 542 11 8 like 
+: 555 7 1 me, 
+: 564 9 4 I 
+: 575 9 -3 did
+- 584 591
+- 591
+: 613 3 4 But 
+: 618 4 4 I 
+: 624 5 6 ran 
+: 631 3 6 out 
+: 636 2 6 of 
+: 640 9 6 every 
+: 651 8 8 rea
+: 661 8 3 son
+- 669
+: 672 6 -1 Now 
+: 680 7 9 sud
+: 689 2 8 den
+: 693 3 6 ly 
+: 698 3 4 you’re 
+: 703 7 6 as
+: 713 5 6 king 
+: 720 5 6 for 
+: 727 6 6 it 
+: 735 8 6 back
+- 743 744
+- 744
+: 766 6 9 Could 
+: 774 3 8 you 
+: 779 4 6 tell 
+: 785 3 4 me, 
+: 790 6 4 where’d 
+: 798 3 6 you 
+: 806 4 4 get 
+: 812 4 6 the 
+: 818 18 4 nerve?
+- 836
+: 845 5 -1 Yeah, 
+: 852 4 9 you 
+: 858 2 8 could 
+: 862 5 6 say 
+: 869 4 4 you 
+: 875 7 6 miss 
+: 884 4 6 all 
+: 890 5 6 that 
+: 897 6 6 we 
+: 905 16 6 had
+- 921
+: 932 3 4 But 
+: 937 6 9 I 
+: 945 3 8 don’t 
+: 950 2 6 rea
+: 954 2 4 lly 
+: 958 8 4 care 
+: 968 5 6 how 
+: 975 7 4 bad 
+: 984 6 6 it 
+: 992 9 3 hurts
+- 1001
+: 1006 5 -1 When 
+: 1013 6 8 you 
+: 1021 11 3 broke 
+: 1034 7 4 me 
+: 1043 24 1 first
+- 1067 1077
+- 1077
+* 1099 4 4 You 
+* 1107 7 4 broke 
+* 1118 8 6 me 
+* 1129 16 8 first
+- 1145 1191
+- 1191
+: 1213 5 4 Took 
+: 1220 2 4 a 
+: 1224 6 1 while, 
+: 1232 2 1 was 
+: 1235 2 -1 in 
+: 1239 3 -1 de
+: 1244 6 -1 nial 
+: 1252 3 -3 when 
+: 1257 4 -3 I 
+: 1263 9 -3 first 
+: 1274 14 -3 heard
+- 1288
+: 1293 5 -3 That 
+: 1300 2 1 you 
+: 1303 1 1 mo
+: 1305 2 1 ved 
+: 1309 2 -1 on 
+: 1313 1 -1 qui
+: 1315 2 -1 cker 
+: 1318 2 -4 than 
+: 1322 2 -4 I 
+: 1326 6 -4 could’ve 
+: 1334 1 -4 e
+: 1336 2 -4 ver, 
+: 1339 2 -4 you 
+: 1343 5 -4 know 
+: 1350 7 -4 that 
+: 1359 15 -4 hurt
+- 1374
+: 1384 4 4 Swear 
+: 1390 2 4 for 
+: 1393 2 4 a 
+: 1397 3 3 while 
+: 1401 1 3 I 
+: 1403 2 3 would 
+: 1407 2 1 stare 
+: 1410 2 1 at 
+: 1413 2 1 my 
+: 1417 4 -1 phone 
+: 1422 2 -1 just 
+: 1425 2 -1 to 
+: 1429 6 -3 see 
+: 1437 7 -3 your 
+: 1446 11 -3 name
+- 1457
+: 1466 3 -3 But 
+: 1471 2 1 now 
+: 1475 2 1 that 
+: 1478 2 1 it’s 
+: 1482 4 -1 there, 
+: 1488 3 -1 I 
+: 1493 4 -1 don’t 
+: 1499 1 -1 rea
+: 1501 2 -1 lly 
+: 1504 2 -1 know 
+: 1507 2 1 what 
+: 1511 2 4 to 
+: 1515 21 6 say
+- 1536 1539
+- 1539
+: 1561 2 4 I 
+: 1565 7 8 know 
+: 1574 4 1 you, 
+: 1580 5 1 you’re 
+: 1587 12 4 like 
+: 1601 8 -3 this
+- 1609 1613
+- 1613
+* 1635 4 4 When 
+* 1641 3 4 shit 
+* 1646 5 6 don’t 
+* 1653 4 6 go 
+* 1659 3 6 your 
+* 1664 4 6 way 
+* 1670 2 4 you 
+* 1674 2 4 nee
+* 1677 4 4 ded 
+* 1683 5 4 me 
+* 1689 3 6 to 
+* 1694 12 8 fix 
+* 1708 9 3 it
+* 1719 9 1 ~
+- 1728
+: 1732 3 4 And 
+: 1737 9 8 like 
+: 1748 7 1 me, 
+: 1757 7 4 I 
+: 1766 11 -3 did
+- 1777 1784
+- 1784
+: 1806 3 4 But 
+: 1811 5 4 I 
+: 1818 5 6 ran 
+: 1825 3 6 out 
+: 1830 2 6 of 
+: 1834 9 6 every 
+: 1845 6 8 rea
+: 1854 10 3 son
+- 1864
+: 1867 4 -1 Now 
+: 1873 7 9 sud
+: 1882 3 8 den
+: 1887 5 6 ly 
+: 1894 2 4 you’re 
+: 1898 7 6 as
+: 1907 4 6 king 
+: 1913 8 6 for 
+: 1923 4 6 it 
+: 1929 15 6 back
+- 1944
+: 1962 4 9 Could 
+: 1968 2 8 you 
+: 1972 5 6 tell 
+: 1979 3 4 me, 
+: 1984 6 4 where’d 
+: 1992 5 6 you 
+: 1999 8 4 get 
+: 2009 3 6 the 
+: 2014 19 3 nerve?
+- 2033
+: 2044 3 -1 Yeah, 
+: 2049 2 9 you 
+: 2053 2 8 could 
+: 2057 4 6 say 
+: 2063 3 4 you 
+: 2068 8 6 miss 
+: 2078 5 6 all 
+: 2085 5 6 that 
+: 2092 4 6 we 
+: 2098 14 6 had
+- 2112
+: 2124 5 4 But 
+: 2131 5 9 I 
+: 2138 4 8 don’t 
+: 2144 2 6 rea
+: 2148 3 4 lly 
+: 2153 6 4 care 
+: 2161 6 6 how 
+: 2169 7 4 bad 
+: 2178 6 6 it 
+: 2186 10 3 hurts
+- 2196
+* 2200 5 -1 When 
+* 2207 7 8 you 
+* 2216 11 3 broke 
+* 2229 6 4 me 
+* 2237 26 1 first
+- 2263 2270
+- 2270
+: 2292 7 4 You 
+: 2301 9 4 broke 
+: 2312 8 6 me 
+: 2322 20 8 first
+- 2342 2364
+- 2364
+: 2386 4 3 What 
+: 2392 3 3 did 
+: 2397 2 3 you 
+: 2401 3 3 think 
+: 2406 5 1 would 
+: 2413 11 4 hap
+: 2426 14 1 pen?
+: 2442 15 -3 ~
+- 2457
+: 2472 2 3 What 
+: 2476 2 3 did 
+: 2480 2 3 you 
+: 2484 8 3 think 
+: 2494 4 1 would 
+: 2500 10 4 hap
+: 2512 13 6 pen?
+: 2527 13 3 ~
+- 2540 2541
+- 2541
+: 2563 2 3 I’ll 
+: 2567 3 3 ne
+: 2571 2 3 ver 
+: 2575 2 3 let 
+: 2579 5 1 you 
+: 2586 10 4 have 
+: 2598 11 1 it
+: 2611 8 4 ~
+: 2621 9 3 ~
+- 2630
+: 2644 2 3 What 
+: 2647 2 3 did 
+: 2651 2 3 you 
+: 2655 8 3 think 
+: 2665 4 1 would 
+: 2671 7 4 hap
+: 2680 16 6 pen?
+: 2698 15 4 ~
+- 2713
+: 2724 3 -1 Now 
+: 2729 5 9 sud
+: 2736 3 8 den
+: 2741 3 6 ly 
+: 2746 3 4 you’re 
+: 2751 3 6 as
+: 2755 8 6 king 
+: 2765 7 6 for 
+: 2774 7 6 it 
+: 2783 16 6 back
+- 2799
+: 2815 4 9 Could 
+: 2821 2 8 you 
+: 2825 4 6 tell 
+: 2831 3 4 me, 
+: 2836 7 4 where’d 
+: 2845 5 6 you 
+: 2852 7 4 get 
+: 2861 3 6 the 
+: 2866 19 3 nerve?
+- 2885
+: 2894 4 -1 Yeah, 
+: 2900 2 9 you 
+: 2904 3 8 could 
+: 2909 5 6 say 
+: 2916 3 4 you 
+: 2921 7 6 miss 
+: 2930 5 6 all 
+: 2937 6 6 that 
+: 2945 5 6 we 
+: 2952 19 6 had
+- 2971
+: 2977 4 4 But 
+: 2983 6 9 I 
+: 2991 4 8 don’t 
+: 2997 3 6 rea
+: 3002 4 4 lly 
+: 3008 6 4 care 
+: 3016 5 6 how 
+: 3023 6 4 bad 
+: 3031 5 6 it 
+: 3038 9 3 hurts
+- 3047
+: 3053 3 -1 When 
+: 3058 10 8 you 
+: 3069 10 3 broke 
+: 3081 7 4 me 
+: 3090 22 1 first
+- 3112 3124
+- 3124
+: 3146 8 4 You 
+: 3156 8 4 broke 
+: 3166 6 6 me 
+: 3174 19 8 first
+- 3193 3295
+- 3295
+* 3317 6 4 You 
+* 3325 9 4 broke 
+* 3336 7 6 me 
+* 3345 16 8 first, 
+* 3376 7 4 ah
+* 3385 4 6 ~
+* 3391 23 3 ~
+E

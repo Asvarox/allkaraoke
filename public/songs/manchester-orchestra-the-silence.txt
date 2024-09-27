@@ -6,11 +6,11 @@
 #PREVIEWSTART:59
 #VIDEO:v=5s3ytiYZS8g
 #LANGUAGE:English
-#GAP:57458,433447186624
+#GAP:57308,433447186624
 #ALLKARAOKE_ID:manchester-orchestra-the-silence
-#ALLKARAOKE_LASTUPDATE:2024-07-08T16:20:19.748Z
+#ALLKARAOKE_LASTUPDATE:2024-09-27T19:58:18.200Z
 #ALLKARAOKE_ARTISTORIGIN:US
-#ALLKARAOKE_REALBPM:67
+#ALLKARAOKE_REALBPM:134
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=5s3ytiYZS8g
 #ALLKARAOKE_PREVIEWEND:90
 #ALLKARAOKE_VOLUME:0,99
@@ -296,7 +296,7 @@
 : 5789 9 3 ing
 - 5798 5804
 - 5804
-: 5830 4 5 "Did
+: 5830 4 5 \"Did 
 : 5836 4 5 you 
 * 5842 5 5 real
 * 5848 4 5 ly 
@@ -308,7 +308,7 @@
 : 5884 4 3 to 
 * 5890 4 3 take 
 * 5896 4 1 me 
-: 5902 21 1 down?"
+: 5902 21 1 down?\"
 : 5925 4 -2 ~
 - 5929 5996
 - 5996
@@ -392,7 +392,7 @@
 : 7350 5 5 milies 
 : 7357 6 5 plead
 : 7365 5 5 ing, 
-: 7372 5 5 "Don’t
+: 7372 5 5 \"Don’t 
 : 7379 6 5 look 
 : 7388 5 5 in 
 : 7395 5 5 that 
@@ -412,7 +412,7 @@
 : 7503 5 3 how 
 : 7510 4 1 it 
 : 7518 7 5 got 
-: 7531 27 3 there"
+: 7531 27 3 there\"
 : 7559 4 1 ~
 : 7564 23 -2 ~
 - 7587 7593
@@ -441,7 +441,7 @@
 : 7783 6 3 ni
 : 7790 6 3 ty
 - 7796
-: 7806 5 3 "You
+: 7806 5 3 \"You 
 : 7813 5 3 can 
 : 7820 7 3 go 
 : 7828 6 3 a
@@ -453,7 +453,7 @@
 : 7876 3 3 where 
 : 7880 3 1 you 
 : 7891 6 5 came 
-: 7903 14 3 from"
+: 7903 14 3 from\"
 : 7931 4 1 ~
 : 7937 9 -2 ~
 - 7946 7963
