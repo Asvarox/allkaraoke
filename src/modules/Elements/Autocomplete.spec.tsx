@@ -20,7 +20,7 @@ test('should properly input using the autocomplete box', async ({ mount }) => {
   await expect(component.locator('input')).toHaveValue('first option');
   await expect(component.locator('[role="listbox"]')).not.toBeVisible();
   await component.locator('input').press('Backspace');
-  await expect(component.locator('[role="listbox"]')).toBeVisible();
+  await expect(component.locator('[role="listbox"]')).not.toBeVisible();
   await expect(component.locator('[role="listbox"]')).toContainText('first option');
   await expect(component.locator('[role="listbox"]')).not.toContainText('second option');
   await component.locator('input').press('ArrowDown');

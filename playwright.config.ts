@@ -35,7 +35,7 @@ const config: PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['json', { outputFile: 'test-results.json' }],
-    ...(process.env.CI ? ([['github']] as any) : ([['list'], ['html']] as any)),
+    ...(process.env.CI ? ([['github'], ['blob']] as any) : ([['list'], ['html']] as any)),
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
