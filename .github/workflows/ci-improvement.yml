@@ -56,7 +56,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: all-blob-reports
-          pattern: test-results-e2e-*
+          pattern: test-results-blob-e2e-*
           merge-multiple: true
       - name: Merge into HTML Report
         run: npx playwright merge-reports --reporter html ./all-blob-reports

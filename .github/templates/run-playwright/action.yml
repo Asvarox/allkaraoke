@@ -47,7 +47,12 @@ runs:
     - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: test-results-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
+        name: test-results-blob-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
+        path: |
+          blob-report
+    - uses: actions/upload-artifact@v4
+      if: failure()
+      with:
+        name: test-results-report-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
         path: |
           playwright-report
-          blob-report
