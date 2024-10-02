@@ -37,8 +37,8 @@ jobs:
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
-          packagescript: 'e2e'
           project: '${{ matrix.browser }}'
+          packagescript: 'e2e'
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
   e2e-tests-merge:
