@@ -29,6 +29,7 @@ jobs:
     env:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
@@ -36,15 +37,41 @@ jobs:
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
-          packagescript: 'e2e'
           project: '${{ matrix.browser }}'
+          packagescript: 'e2e'
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
+  e2e-tests-merge:
+    runs-on: ubuntu-latest
+    # Merge reports after e2e-tests-run, even if some shards have failed
+    if: ${{ !cancelled() }}
+    needs: e2e-tests-run
+    env:
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download blob reports from GitHub Actions Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-blob-reports
+          pattern: test-results-e2e-*
+          merge-multiple: true
+      - name: Merge into HTML Report
+        run: npx playwright merge-reports --reporter html ./all-blob-reports
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-report--attempt-${{ github.run_attempt }}
+          path: playwright-report
   ct-tests-run:
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
       pull-requests: write # allows commenting on a PR
     runs-on: ubuntu-latest
+    env:
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node

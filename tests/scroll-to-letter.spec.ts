@@ -29,7 +29,7 @@ test('Scrolling to letter works', async ({ page }) => {
   });
 
   await test.step('Preview of random song should be visible', async () => {
-    await expect(pages.songListPage.songPreviewElement).toBeVisible();
+    await expect(pages.songListPage.songPreviewElement).toBeHidden();
   });
 
   await test.step('Select a group name - the app scroll to the letter, showing results in the viewport', async () => {

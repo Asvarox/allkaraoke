@@ -116,11 +116,9 @@ stats.html
 /test-results/
 /playwright-report/
 /playwright/.cache/
+/blob-report/
 scripts/scraped-bpm-data.json
 scripts/fetchedSongIds.json
-/test-results/
-/playwright-report/
-/playwright/.cache/
 test-results.json
 
 .eslintcache
