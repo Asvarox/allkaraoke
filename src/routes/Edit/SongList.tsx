@@ -69,7 +69,7 @@ export default function SongList(props: Props) {
         Cell: ({ cell }) => {
           const val = cell.getValue<string>();
 
-          return val && <abbr title={val}>{dayjs(val).format('MMMM DD, YYYY')}</abbr>;
+          return val && <span>{dayjs(val).format('MMM DD YYYY, HH:mm')}</span>;
         },
       },
       {
@@ -168,7 +168,8 @@ export default function SongList(props: Props) {
                         <VisibilityOff />
                       </IconButton>
                     )}
-                    <SoftDisabledIconButton
+                    <IconButton
+                      className={!row.original.local ? 'opacity-50 !cursor-default' : ''}
                       title="Delete the song"
                       onClick={async () => {
                         const proceed = global.confirm(`Are you sure you want to delete this song?`);
@@ -184,10 +185,9 @@ export default function SongList(props: Props) {
                         }
                       }}
                       data-test="delete-song"
-                      appearDisabled={!row.original.local}
                       data-song={row.original.id}>
                       <Delete />
-                    </SoftDisabledIconButton>
+                    </IconButton>
                   </>
                 )}
                 initialState={{
@@ -228,8 +228,4 @@ const Container = styled.div`
   width: 1260px;
   background: white;
   padding: 60px 20px 0 20px;
-`;
-
-const SoftDisabledIconButton = styled(IconButton)<{ appearDisabled: boolean }>`
-  opacity: ${({ appearDisabled }) => (appearDisabled ? 0.5 : 1)};
 `;

@@ -43,6 +43,8 @@ export default function RateSong({ register, onExit }: Props) {
     onExit();
   };
 
+  const anySelected = volumeWrong || lyricsNotInSync || badLyrics;
+
   return (
     <>
       <MenuContainer>
@@ -62,7 +64,7 @@ export default function RateSong({ register, onExit }: Props) {
         </Checkbox>
         <hr />
         <MenuButton {...register('button-song-ok', handleRate, undefined, true)} ref={menuRef}>
-          {volumeWrong || lyricsNotInSync ? 'Submit and exit' : 'All good, exit the song'}
+          {anySelected ? 'Submit and exit' : 'All good, exit the song'}
         </MenuButton>
       </MenuContainer>
     </>
