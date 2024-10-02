@@ -57,4 +57,12 @@ export class RemoteMicMainPagePO {
   public get joinGameButton() {
     return this.page.getByTestId('change-player');
   }
+
+  public get readyButton() {
+    return this.page.getByTestId('ready-button');
+  }
+
+  public async pressReadyOnRemoteMic() {
+    await this.readyButton.click();
+  }
 }
