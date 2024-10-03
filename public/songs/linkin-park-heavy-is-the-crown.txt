@@ -1,0 +1,463 @@
+#ARTIST:Linkin Park
+#TITLE:Heavy Is The Crown
+#CREATOR:DoubleDee
+#BPM:256
+#YEAR:2024
+#VIDEO:v=5FrhtahQiRc
+#LANGUAGE:English
+#GAP:43343,90625
+#ALLKARAOKE_ID:linkin-park-heavy-is-the-crown
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:16:53.462Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=5FrhtahQiRc
+#ALLKARAOKE_PREVIEWEND:216
+#ALLKARAOKE_VOLUME:0,93
+#P1:Mike
+#P2:Emily
+#MP3:Linkin Park - Heavy Is The Crown [DUET].mp3
+#COVER:Linkin Park - Heavy Is The Crown [DUET] [CO].jpg
+#BACKGROUND:Linkin Park - Heavy Is The Crown [DUET] [BG].jpg
+#START:22
+#END:201000
+R 17 2 0 It’s 
+R 21 2 0 pou
+R 25 1 0 rin’ 
+R 27 3 0 in, 
+R 35 1 0 you’re 
+R 37 3 0 laid 
+R 41 1 0 on 
+R 43 1 0 the 
+R 45 3 0 floor 
+R 49 1 0 a
+R 51 2 0 gain
+- 53
+R 57 2 0 One 
+R 61 2 0 knock 
+R 65 1 0 at 
+R 67 1 0 the 
+R 69 2 0 door 
+R 73 1 0 and 
+R 75 2 0 then
+- 77
+R 79 1 0 We 
+R 81 2 0 both 
+R 85 2 0 know 
+R 89 1 0 how 
+R 91 1 0 the 
+R 93 2 0 sto
+R 97 1 0 ry 
+R 99 1 0 ends
+- 100
+R 103 1 0 You 
+R 105 2 0 can’t 
+R 109 2 0 win 
+R 113 1 0 if 
+R 115 1 0 your 
+R 117 2 0 white 
+R 121 2 0 flag’s 
+R 125 2 0 out 
+R 129 1 0 when 
+R 131 1 0 the 
+R 133 2 0 war 
+R 137 1 0 be
+R 139 2 0 gins
+- 141
+R 147 2 0 Ai
+R 151 1 0 min’ 
+R 153 3 0 so 
+R 157 3 0 high 
+R 161 1 0 but 
+R 163 2 0 swing
+R 167 1 0 in’ 
+R 169 3 0 so 
+R 173 2 0 low
+- 175
+R 179 3 0 Tryin’ 
+R 183 1 0 to 
+R 185 2 0 catch 
+R 189 2 0 fire 
+R 193 1 0 but 
+R 195 2 0 fee
+R 199 1 0 lin’ 
+R 201 2 0 so 
+R 205 2 0 cold
+- 207
+R 211 2 0 Hold 
+R 215 1 0 it 
+R 217 2 0 in
+R 221 2 0 side 
+R 225 1 0 and 
+R 227 2 0 hope 
+R 231 1 0 it 
+R 233 2 0 won’t 
+R 237 1 0 show
+- 238
+R 241 1 0 I’m 
+R 243 3 0 say
+R 247 1 0 in’ 
+R 249 2 0 it’s 
+R 253 2 0 not, 
+R 257 1 0 but 
+R 259 2 0 in
+R 263 1 0 side, 
+R 265 2 0 I 
+R 269 2 0 know
+- 271
+: 273 3 2 To
+: 277 5 9 day’s 
+: 285 3 9 gon
+: 289 2 9 na 
+: 293 2 9 be 
+: 297 2 7 the 
+: 301 3 6 day 
+: 305 2 4 you 
+* 309 6 6 no
+* 317 8 4 tice
+- 325
+: 333 2 -1 ’Cause 
+: 337 2 2 I’m 
+: 341 7 9 tired 
+: 349 3 9 of 
+: 353 2 9 ex
+: 357 3 9 plai
+: 361 2 7 nin’ 
+: 365 2 6 what 
+: 369 2 4 the 
+* 373 6 6 joke 
+* 381 5 4 is
+- 386 708
+- 708
+R 725 3 0 Turn 
+R 729 1 0 to 
+R 731 4 0 run, 
+R 737 3 0 now 
+R 741 2 0 look 
+R 745 3 0 what 
+R 749 2 0 it’s 
+R 753 1 0 be
+R 755 2 0 come
+- 757
+R 765 2 0 Out
+R 769 1 0 num
+R 771 1 0 bered, 
+R 773 2 0 ten 
+R 777 1 0 to 
+R 779 3 0 one
+- 782
+R 785 2 0 Back 
+R 789 2 0 thеn 
+R 793 1 0 shoul
+R 795 1 0 d’ve 
+R 797 2 0 bit 
+R 801 1 0 your 
+R 803 2 0 tongue
+- 805
+R 807 1 0 ’Cause 
+R 809 3 0 thеre’s 
+R 813 2 0 no 
+R 817 1 0 tur
+R 819 1 0 nin’ 
+R 821 2 0 back 
+R 825 2 0 this 
+R 829 2 0 path 
+R 833 2 0 once 
+R 837 2 0 it’s 
+R 841 1 0 be
+R 843 3 0 gun
+- 846
+R 851 1 0 You’re 
+R 853 3 0 al
+R 857 1 0 rea
+R 859 1 0 dy 
+R 861 2 0 on 
+R 865 2 0 that 
+R 869 2 0 list
+- 871
+R 877 1 0 Say 
+R 879 1 0 you 
+R 881 2 0 don’t 
+R 885 1 0 want 
+R 889 1 0 what 
+R 891 1 0 you 
+R 893 2 0 can’t 
+R 897 2 0 re
+R 901 2 0 sist
+- 903
+R 909 1 0 Wa
+R 911 1 0 vin’ 
+R 913 2 0 that 
+R 917 2 0 sword 
+R 921 1 0 when 
+R 923 1 0 the 
+R 925 2 0 pen 
+R 929 2 0 won’t 
+R 933 2 0 miss
+- 935
+R 941 1 0 Watch 
+R 943 1 0 it 
+R 945 2 0 all 
+R 949 2 0 fal
+R 953 1 0 lin’ 
+R 955 1 0 a
+R 957 2 0 part 
+R 961 2 0 like 
+R 965 2 0 this
+- 967 1344
+- 1344
+: 1361 3 2 To
+: 1365 7 9 day’s 
+: 1373 3 9 gon
+: 1377 2 9 na 
+: 1381 2 9 be 
+: 1385 2 7 the 
+: 1389 2 6 day 
+: 1393 2 4 you 
+: 1397 6 6 no
+: 1405 8 4 tice
+- 1413
+: 1421 2 -1 ’Cause 
+: 1425 2 2 I’m 
+: 1429 7 9 tired 
+: 1437 3 9 of 
+: 1441 2 9 ex
+: 1445 3 9 plai
+: 1449 2 7 nin’ 
+: 1453 2 6 what 
+: 1457 2 4 the 
+* 1461 6 6 joke 
+* 1469 5 4 is
+- 0 256
+- 256
+: 273 3 2 To
+: 277 5 9 day’s 
+: 285 3 9 gon
+: 289 2 9 na 
+: 293 2 9 be 
+: 297 2 7 the 
+: 301 2 6 day 
+: 305 2 4 you 
+: 309 6 6 no
+: 317 8 4 tice
+- 325
+: 333 2 -1 ’Cause 
+: 337 2 -1 I’m 
+: 341 7 9 tired 
+: 349 3 9 of 
+: 353 2 9 ex
+: 357 3 9 plai
+: 361 2 7 nin’ 
+: 365 2 6 what 
+: 369 2 4 the 
+: 373 6 6 joke 
+: 381 5 4 is
+- 386
+: 389 3 11 This 
+: 393 2 11 is 
+: 397 2 11 what 
+: 401 2 9 you 
+: 405 5 11 asked 
+: 413 4 6 for,
+- 417
+: 421 2 11 Hea
+: 425 2 11 vy 
+: 429 2 11 is 
+: 433 2 9 the 
+: 437 8 11 crown
+- 445
+: 453 2 11 Fi
+: 457 2 11 re 
+: 461 2 11 in 
+: 465 2 9 the 
+: 469 3 11 sun
+: 473 3 6 ~
+: 477 4 6 rise,
+- 481
+: 485 2 11 A
+: 489 2 11 shes 
+: 493 2 11 rai
+: 497 2 9 nin’ 
+: 501 8 11 down
+- 509
+: 517 2 11 Try 
+: 521 2 11 to 
+: 525 2 11 hold 
+: 529 2 13 it 
+* 533 6 14 in, 
+* 541 5 13 but
+- 546
+: 549 2 11 It 
+: 553 2 11 keeps 
+: 557 2 11 blee
+: 561 2 9 din’ 
+: 565 7 11 out
+- 572
+: 581 2 11 This 
+: 585 2 11 is 
+: 589 2 11 what 
+: 593 2 9 you 
+: 597 5 11 asked 
+: 605 5 6 for,
+- 610
+: 613 2 11 Hea
+: 617 2 11 vy 
+: 621 2 11 is 
+: 625 3 11 the
+- 628
+: 645 2 11 Hea
+: 649 2 11 vy 
+: 653 2 11 is 
+: 657 2 11 the 
+: 661 14 11 crown
+- 675 948
+- 948
+: 965 3 11 This 
+: 969 2 11 is 
+: 973 2 11 what 
+: 977 2 9 you 
+: 981 5 11 asked 
+: 989 4 6 for,
+- 993
+: 997 2 11 Hea
+: 1001 2 11 vy 
+: 1005 2 11 is 
+: 1009 2 9 the 
+: 1013 8 11 crown
+- 1021
+: 1029 2 11 Fi
+: 1033 2 11 re 
+: 1037 2 11 in 
+: 1041 2 9 the 
+: 1045 3 11 sun
+: 1049 3 6 ~
+: 1053 4 6 rise,
+- 1057
+: 1061 2 11 A
+: 1065 2 11 shes 
+: 1069 2 11 rai
+: 1073 2 9 nin’ 
+: 1077 8 11 down
+- 1085
+: 1093 2 11 Try 
+: 1097 2 11 to 
+: 1101 2 11 hold 
+: 1105 2 13 it 
+: 1109 6 14 in, 
+: 1117 5 13 but
+- 1122
+: 1125 2 11 It 
+: 1129 2 11 keeps 
+: 1133 2 11 blee
+: 1137 2 9 din’ 
+: 1141 7 11 out
+- 1148
+: 1157 2 11 This 
+: 1161 2 11 is 
+: 1165 2 11 what 
+: 1169 2 9 you 
+: 1173 5 11 asked 
+: 1181 5 6 for,
+- 1186
+: 1189 2 11 Hea
+: 1193 2 11 vy 
+: 1197 2 11 is 
+: 1201 3 11 the
+- 1204
+: 1221 2 11 Hea
+: 1225 2 11 vy 
+: 1229 2 11 is 
+: 1233 2 11 the 
+: 1237 14 11 crown
+- 1251 1460
+- 1460
+: 1477 2 16 This 
+: 1481 2 16 is 
+: 1485 2 16 what 
+: 1489 2 16 you 
+: 1493 3 16 asked 
+: 1500 259 16 for
+- 1759
+: 1765 2 11 This 
+: 1769 2 11 is 
+: 1773 2 11 what 
+: 1777 2 9 you 
+: 1781 3 11 asked
+- 1784 1988
+- 1988
+: 2005 2 11 This 
+: 2009 2 11 is 
+: 2013 2 11 what 
+: 2017 2 9 you 
+: 2021 5 11 asked 
+: 2028 6 6 for
+- 2034
+: 2037 2 11 Hea
+: 2041 2 11 vy 
+: 2045 2 11 is 
+: 2049 2 9 the 
+: 2053 8 11 crown
+- 2061
+: 2069 2 11 Fi
+: 2073 2 11 re 
+: 2077 2 11 in 
+: 2081 2 9 the 
+: 2085 3 11 sun
+: 2089 3 6 ~
+: 2093 4 6 rise,
+- 2097
+: 2101 2 11 A
+: 2105 2 11 shes 
+: 2109 2 11 rai
+: 2113 2 9 nin’ 
+: 2117 8 11 down
+- 2125
+: 2133 2 11 Try 
+: 2137 2 11 to 
+: 2141 2 11 hold 
+: 2145 2 13 it 
+: 2149 6 14 in, 
+: 2157 5 13 but
+- 2162
+: 2165 2 11 It 
+: 2169 2 11 keeps 
+: 2173 2 11 blee
+: 2177 2 9 din’ 
+: 2181 7 11 out
+- 2188
+: 2197 2 11 This 
+: 2201 2 11 is 
+: 2205 2 11 what 
+: 2209 2 9 you 
+: 2213 5 11 asked 
+: 2221 5 6 for,
+- 2226
+: 2229 2 11 Hea
+: 2233 2 11 vy 
+: 2237 2 11 is 
+: 2241 3 11 the
+- 2244
+: 2261 3 11 Hea
+: 2265 2 11 vy 
+: 2269 2 11 is 
+: 2273 2 9 the 
+: 2277 62 11 crown
+- 2339 2372
+- 2372
+: 2389 3 11 Hea
+: 2393 2 11 vy 
+: 2397 2 11 is 
+: 2401 2 9 the 
+* 2405 62 11 crown
+- 2467 2468
+- 2468
+: 2485 3 11 Hea
+: 2489 2 11 vy 
+: 2493 2 11 is 
+: 2497 8 11 the,
+- 2505
+: 2517 2 11 Hea
+: 2521 2 11 vy 
+: 2525 2 11 is 
+: 2529 2 11 the 
+: 2533 8 11 crown
+E

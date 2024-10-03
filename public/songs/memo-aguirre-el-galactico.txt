@@ -1,0 +1,207 @@
+#ARTIST:Memo Aguirre
+#TITLE:El Galáctico
+#CREATOR:ToKuRo
+#BPM:270,87
+#YEAR:1981
+#PREVIEWSTART:43
+#VIDEO:v=Z5371agKKXI
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:7868,211872854136
+#ALLKARAOKE_ID:memo-aguirre-el-galactico
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.415Z
+#ALLKARAOKE_ARTISTORIGIN:CL
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_PREVIEWEND:70
+#ALLKARAOKE_VOLUME:1
+#MP3:Memo Aguirre - El Galáctico.mp3
+#COVER:Memo Aguirre - El Galáctico.jpg
+#START:5
+: 18 5 2 El 
+: 27 2 2 Ga
+: 30 5 0 lác
+: 38 3 -1 ti
+: 42 4 -1 co
+- 46 48
+- 48
+: 66 2 -1 cru
+: 69 4 0 za el 
+: 74 2 2 es
+* 77 17 4 pa
+: 97 2 4 cio 
+: 102 3 2 si
+: 106 3 0 de
+: 110 3 2 ral
+: 114 10 -1 ~.
+- 124 128
+- 128
+: 146 5 2 El 
+: 155 2 2 Ga
+: 158 5 0 lác
+: 166 3 -1 ti
+: 170 4 -1 co
+- 174
+: 190 2 2 a 
+: 193 4 2 la hu
+: 198 3 2 ma
+: 202 3 2 ni
+: 206 17 2 dad 
+: 226 3 2 a
+: 230 3 0 yu
+: 234 3 -1 da
+: 238 3 2 rá
+: 242 2 0 ~
+: 245 4 -3 ~.
+- 249 256
+- 256
+: 274 5 2 El 
+: 282 3 2 Ga
+: 286 5 0 lác
+: 294 3 -1 ti
+: 298 4 -1 co,
+- 302 304
+- 304
+: 322 3 -1 por 
+: 326 3 0 las 
+: 330 3 2 es
+: 334 18 4 tre
+: 354 3 4 llas 
+: 358 3 2 vo
+: 362 3 0 la
+: 366 3 2 rá
+: 370 10 -1 ~.
+- 380
+: 386 4 -1 y 
+: 391 3 0 la 
+: 397 3 2 jus
+: 402 3 2 ti
+: 408 3 0 cia 
+: 412 5 -1 y el 
+: 418 5 -3 bien,
+- 423 432
+- 432
+: 450 4 -1 pro
+: 456 2 -1 te
+: 462 2 -1 ge
+: 465 4 -3 rá
+: 470 4 -5 ~.
+- 474 500
+- 500
+: 518 3 4 Si 
+: 522 3 6 las 
+: 526 8 7 fuer
+: 535 3 7 zas 
+: 539 3 7 del 
+: 543 3 7 mal
+- 546
+: 551 3 6 se 
+: 555 3 4 le 
+: 559 5 0 cru
+: 566 3 0 zan 
+: 570 3 0 a 
+: 574 5 0 él
+- 579
+: 583 3 2 con 
+: 587 3 4 su 
+: 591 7 6 na
+: 599 3 6 ve 
+: 603 3 6 gi
+: 607 6 6 gan
+: 615 3 4 te 
+: 619 3 2 los 
+: 623 6 -1 en
+: 631 3 -1 fren
+: 635 3 -1 ta
+: 639 4 -1 rá.
+- 643
+: 647 3 0 No hay 
+: 651 3 2 fron
+: 655 7 4 te
+: 663 3 4 ra en 
+: 667 3 4 el 
+: 671 6 4 mun
+: 678 3 2 do 
+: 682 2 0 que
+- 684
+: 687 7 -3 lo 
+: 695 2 -3 de
+: 698 4 -3 ten
+: 703 4 -3 drá y
+- 707
+: 710 4 0 lu
+: 715 3 0 cha
+* 719 18 2 rá
+- 737
+: 742 4 2 por 
+: 747 3 2 el 
+* 751 18 3 bien.
+- 769
+: 775 2 4 Si 
+: 778 3 6 las 
+: 783 6 7 fuer
+: 791 2 7 zas 
+: 794 3 7 del 
+: 798 6 7 bien
+- 804
+: 807 3 6 se 
+: 811 3 4 jun
+: 815 7 0 ta
+: 823 3 0 ran 
+: 827 3 0 con 
+: 831 3 0 él
+- 834
+: 839 3 2 el 
+: 843 3 4 po
+: 847 7 6 der 
+: 855 2 6 de 
+: 858 3 6 los 
+: 863 6 6 bue
+: 870 2 4 nos
+- 872
+: 875 2 2 se
+: 878 7 -1 rí
+: 886 3 -1 a in
+: 890 3 -1 mor
+: 894 4 -1 tal.
+- 898
+: 903 2 0 El 
+: 906 3 2 Ga
+: 910 8 4 lác
+: 919 2 4 ti
+: 922 3 4 co 
+: 927 6 4 lle
+: 934 4 4 ga
+- 938
+: 942 3 4 vo
+: 946 4 4 lan
+: 952 4 4 do en 
+: 958 3 4 su 
+: 962 5 4 na
+: 968 4 6 ve es
+: 974 2 7 pa
+: 980 48 6 cial
+- 1028
+: 1042 6 2 El 
+: 1050 3 2 Ga
+: 1054 6 0 lác
+: 1062 3 -1 ti
+: 1066 4 -1 co
+- 1070 1073
+- 1073
+: 1091 2 -1 cru
+: 1094 4 0 za el 
+: 1099 3 2 es
+: 1103 16 4 pa
+: 1123 2 4 cio 
+: 1127 3 2 si
+: 1131 3 0 de
+: 1135 3 2 ral
+: 1139 6 -1 ~.
+- 1145 1152
+- 1152
+: 1170 6 2 El 
+: 1178 3 2 Ga
+: 1183 5 0 lác
+: 1190 3 -1 ti
+: 1194 8 -1 co.
+E

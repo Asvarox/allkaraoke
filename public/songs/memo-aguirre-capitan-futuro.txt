@@ -1,0 +1,142 @@
+#ARTIST:Memo Aguirre
+#TITLE:Capitán Futuro
+#CREATOR:ToKuRo
+#BPM:267,12
+#YEAR:1979
+#PREVIEWSTART:21
+#VIDEO:v=kL334m4a_j8
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:6198,218328840971
+#ALLKARAOKE_ID:memo-aguirre-capitan-futuro
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:02.987Z
+#ALLKARAOKE_ARTISTORIGIN:CL
+#ALLKARAOKE_REALBPM:78
+#ALLKARAOKE_PREVIEWEND:61
+#ALLKARAOKE_VOLUME:1
+#MP3:Memo Aguirre - Capitán Futuro.mp3
+#COVER:Memo Aguirre - Capitán Futuro.jpg
+#START:11
+: 18 3 11 Ca
+: 22 3 12 pi
+: 26 4 14 tán
+- 30
+: 42 3 11 Fu
+: 46 18 16 tu
+: 65 8 14 ro
+- 73
+: 82 2 11 Ca
+: 85 3 12 pi
+: 89 6 14 tán
+- 95
+: 106 3 11 Fu
+: 110 19 16 tu
+: 130 6 14 ro
+- 136
+: 146 2 11 Ca
+: 149 3 11 pi
+: 153 8 11 tán
+- 161
+: 170 3 11 Fu
+* 174 18 12 tu
+: 193 5 11 ro
+- 198
+: 201 4 9 in
+: 206 11 7 tré
+: 218 2 11 pi
+: 221 11 9 do y 
+: 233 4 14 vi
+: 238 18 14 vaz
+- 256
+: 273 3 11 Ca
+: 277 3 12 pi
+: 281 8 14 tán
+- 289
+: 297 3 11 Fu
+: 301 19 16 tu
+: 321 8 14 ro
+- 329
+: 337 3 11 Ca
+: 341 3 12 pi
+: 345 8 14 tán
+- 353
+: 362 3 11 Fu
+: 366 18 16 tu
+: 385 8 14 ro
+- 393
+: 401 3 11 Ca
+: 405 3 11 pi
+: 409 8 11 tán
+- 417
+: 426 2 11 Fu
+: 429 19 12 tu
+: 449 4 11 ro
+- 453
+: 457 3 9 e
+: 461 10 7 nér
+: 473 3 11 gi
+: 477 11 9 co y 
+: 489 3 7 ca
+: 493 16 7 paz
+- 509 542
+- 542
+: 560 8 14 Cuan
+: 569 7 14 do 
+: 577 3 14 via
+: 581 3 16 ja 
+: 585 3 14 por 
+* 589 7 19 las 
+: 597 6 18 ga
+: 604 6 16 la
+: 611 12 14 xias
+- 623 670
+- 670
+: 688 8 14 siem
+: 697 7 14 pre o
+: 705 3 14 cu
+: 709 3 16 rre 
+: 713 4 14 lo in
+* 718 6 19 ex
+: 725 7 18 pli
+: 733 6 16 ca
+: 740 10 14 ble
+- 750 800
+- 800
+: 818 7 14 El 
+: 826 2 14 u
+: 829 3 14 ni
+: 833 3 14 ver
+: 837 3 16 so 
+: 841 3 14 lo es
+* 845 7 19 tá es
+: 853 6 18 pe
+: 861 7 16 ran
+: 869 42 18 do
+- 911
+: 917 3 14 y el 
+: 921 3 14 siem
+: 925 3 14 pre a
+: 929 3 16 cu
+: 933 8 19 di
+: 942 1 19 rá
+: 944 1 16 ~
+* 946 5 14 ~
+- 951 963
+- 963
+: 981 2 14 y a
+: 984 4 14 si 
+: 989 2 14 lo 
+: 992 4 16 sal
+: 997 8 19 va
+* 1006 1 19 rá
+* 1008 1 16 ~
+* 1010 6 14 ~
+- 1016 1027
+- 1027
+: 1045 2 14 y a
+: 1048 4 14 si 
+: 1053 2 14 lo 
+: 1056 4 16 sal
+: 1061 7 19 va
+: 1069 14 19 rá
+E

@@ -1,0 +1,155 @@
+#ARTIST:Memo Aguirre
+#TITLE:El Gladiador
+#CREATOR:ToKuRo
+#BPM:239,12
+#YEAR:1981
+#PREVIEWSTART:31
+#VIDEO:v=jtDe7xV9zFE
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:6245,319839411174
+#ALLKARAOKE_ID:memo-aguirre-el-gladiador
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.416Z
+#ALLKARAOKE_ARTISTORIGIN:CL
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_PREVIEWEND:67
+#ALLKARAOKE_VOLUME:1
+#MP3:Memo Aguirre - El Gladiador.mp3
+#COVER:Memo Aguirre - El Gladiador.jpg
+#START:5
+: 16 3 -6 El 
+: 20 6 -5 Gla
+: 27 4 -5 dia
+: 32 13 2 dor,
+- 45
+: 52 7 5 na
+: 60 2 5 ve
+: 63 3 5 ga 
+: 67 1 4 por 
+: 69 1 2 el 
+: 71 6 0 mar.
+- 77
+: 80 3 -6 El 
+: 84 6 -5 Gla
+: 91 4 -5 dia
+: 96 13 2 dor,
+- 109
+: 116 6 5 an
+: 123 3 5 tes 
+: 127 3 5 de ir 
+: 131 1 4 a 
+: 133 2 2 lu
+: 136 5 0 char.
+- 141
+: 144 3 -6 El 
+: 148 6 -5 Gla
+: 155 3 -5 dia
+: 159 10 2 dor,
+- 169
+: 179 7 5 vue
+: 187 3 5 la en 
+: 191 3 5 su 
+: 195 3 4 na
+: 199 3 2 ve es
+: 203 3 0 pa
+: 208 40 2 cial.
+- 248 256
+- 256
+: 272 3 -6 Al 
+: 276 6 -5 Gla
+: 284 3 -5 dia
+: 288 12 2 dor,
+- 300
+: 303 3 -6 los 
+* 307 6 5 mons
+* 315 3 5 truos 
+* 319 3 5 lo 
+* 323 2 4 bus
+: 326 1 2 ca
+: 328 5 0 rán.
+- 333
+: 336 2 -6 Al 
+: 340 6 -5 Gla
+: 347 3 -5 dia
+: 351 12 2 dor,
+- 363
+: 368 3 -5 lo 
+: 372 7 5 quie
+: 380 3 5 ren 
+: 384 2 5 e
+: 387 1 4 li
+: 389 1 2 mi
+: 391 6 0 nar.
+- 397
+: 404 6 -5 Gla
+: 411 3 -5 dia
+: 415 14 2 dor,
+- 429
+: 436 5 5 tú 
+: 443 3 5 les 
+: 448 2 5 sa
+: 451 3 4 brás 
+: 455 3 2 con
+: 459 3 0 tes
+: 463 4 0 tar
+: 468 32 2 ~.
+- 500 524
+- 524
+: 540 5 3 Cru
+: 548 5 3 za
+: 555 6 5 rá el 
+: 563 6 6 cie
+: 571 8 6 lo en 
+: 580 5 5 un 
+* 587 6 3 mo
+* 595 12 6 men
+* 612 16 3 to.
+- 628 651
+- 651
+: 667 5 3 Con 
+: 675 6 3 sus 
+: 683 6 5 a
+: 691 7 6 mi
+: 699 6 6 gos 
+: 707 6 5 siem
+: 715 6 3 pre 
+: 723 20 6 va.
+- 743 798
+- 798
+: 814 3 -6 El 
+: 819 6 -5 Gla
+: 827 2 -5 dia
+: 830 13 2 dor,
+- 843
+: 851 7 5 na
+: 859 3 5 ve
+: 863 3 5 ga 
+: 867 1 4 por 
+: 869 1 2 el 
+: 871 5 0 mar.
+- 876
+: 879 3 -6 El 
+: 883 7 -5 Gla
+: 891 3 -5 dia
+: 895 13 2 dor,
+- 908
+: 915 5 5 an
+: 923 3 5 tes 
+: 927 2 5 de ir 
+: 930 1 4 a 
+: 932 2 2 lu
+: 935 6 0 char.
+- 941
+: 944 2 -6 El 
+: 947 6 -5 Gla
+: 954 3 -5 dia
+: 958 13 2 dor,
+- 971
+: 978 7 5 vue
+: 986 3 5 la en 
+: 990 3 5 su 
+: 994 3 4 na
+: 998 3 2 ve es
+: 1002 3 0 pa
+: 1007 36 2 cial.
+E

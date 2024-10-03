@@ -1,0 +1,207 @@
+#ARTIST:Ricardo Silva
+#TITLE:Impacto Rojo
+#CREATOR:Subkei
+#BPM:320
+#YEAR:2001
+#VIDEO:v=I4HqoHotHDw
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:12908,625
+#ALLKARAOKE_ID:ricardo-silva-impacto-rojo
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.798Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:1
+#COVER:Ricardo Silva - Impacto Rojo (TV) [CO].jpg
+#MP3:Ricardo Silva - Impacto Rojo (TV).mp3
+: 21 6 2 Vol
+: 29 8 2 ve
+: 38 6 2 mos 
+: 47 3 0 a 
+: 51 2 -8 em
+: 54 3 -7 pe
+: 59 8 -7 zar
+- 67
+: 75 2 -7 La his
+: 78 7 3 to
+: 86 6 2 ria 
+: 94 3 0 se es
+: 99 7 -2 cri
+: 108 2 -2 bi
+: 111 4 0 rá 
+: 118 3 -5 de 
+: 122 7 -2 nue
+: 130 11 0 vo
+- 141
+: 149 8 2 A e
+: 158 7 2 nor
+: 166 6 2 me 
+: 174 3 0 ve
+: 178 3 -7 lo
+: 183 2 -7 ci
+: 186 8 -7 dad
+- 194
+: 205 3 -5 Lo
+: 209 3 -2 ~ 
+: 214 3 -7 sé 
+: 218 9 -5 bien
+- 227 256
+- 256
+: 277 6 2 Te
+: 285 7 2 ñir
+: 295 5 2 se 
+: 302 6 0 tú 
+: 310 3 -7 ve
+: 314 6 -7 rás
+- 320
+: 330 3 -7 De 
+: 334 6 3 ro
+: 342 3 2 jo 
+: 346 3 0 la 
+: 351 6 -2 Tie
+: 358 3 -2 rra 
+: 362 3 -2 has
+: 366 6 0 ta 
+: 375 2 -5 su en
+: 378 7 -2 tra
+: 386 10 0 ña
+- 396
+: 406 6 2 Sal
+: 413 7 2 var
+: 421 7 2 la 
+: 430 3 5 to
+: 434 3 2 dos 
+: 438 4 0 de
+: 443 6 0 be
+: 450 7 2 mos
+- 457
+: 463 5 -2 Con 
+: 470 3 -7 va
+: 474 17 -5 lor
+- 491 505
+- 505
+: 526 8 -5 Pa
+: 535 4 -5 ra
+: 540 4 -5 i
+: 547 6 2 so 
+: 554 16 0 fue
+- 570
+: 586 2 0 I
+: 589 7 0 ner
+: 597 5 0 te 
+* 603 6 0 lu
+* 611 5 6 ce 
+: 618 16 -2 hoy
+- 634
+: 651 3 0 Lle
+: 655 2 2 va
+: 658 3 2 mos 
+: 663 3 0 a
+: 667 7 5 den
+: 675 5 2 tro
+- 680
+: 683 3 0 Un 
+: 687 2 2 he
+: 690 3 2 roe 
+: 695 3 0 dor
+: 699 6 5 mi
+: 706 4 3 do
+- 710
+: 714 3 3 Le
+: 718 3 2 van
+: 722 3 3 ta
+: 726 4 2 lo
+: 731 2 3 ~
+: 734 26 2 ~!
+- 760 813
+- 813
+* 834 2 2 A
+* 837 3 5 tra
+* 841 3 2 ve
+* 846 7 7 se
+* 854 5 7 mos 
+: 863 2 5 con 
+: 866 3 2 de
+: 871 2 0 ci
+: 875 14 2 sión
+- 889
+: 899 2 -2 Has
+: 902 3 0 ta un 
+: 906 3 2 le
+: 910 7 0 ja
+: 918 6 0 ~
+: 925 4 0 no 
+: 931 5 -2 con
+: 939 13 -5 fín
+- 952
+: 962 3 2 Di
+: 966 3 5 fí
+: 971 2 2 cil 
+* 975 7 7 sen
+* 983 6 7 da 
+: 991 3 5 sin
+: 995 2 0 ~ 
+: 999 2 0 te
+: 1002 16 2 mer
+- 1018
+: 1027 3 -2 Mi
+: 1031 3 0 ran
+: 1035 2 2 do 
+: 1039 3 0 fi
+: 1043 2 -2 jo 
+* 1047 3 0 sin 
+: 1051 2 -2 des
+: 1055 3 0 fa
+: 1059 5 2 lle
+: 1067 18 7 cer
+- 1085
+: 1090 4 2 Que 
+: 1095 2 5 los 
+: 1098 3 2 la
+: 1103 7 7 ti
+: 1111 7 7 dos 
+: 1119 3 5 del 
+: 1123 3 2 co
+: 1127 3 0 ra
+: 1131 14 2 zón
+- 1145
+: 1154 3 -2 Que
+: 1158 4 0 men 
+: 1163 3 2 su 
+: 1167 6 0 pe
+: 1175 6 0 cho 
+* 1182 4 0 con 
+* 1187 6 -2 ar
+* 1194 14 -5 dor
+- 1208
+: 1219 3 2 A
+: 1223 3 5 quel 
+: 1227 3 2 ma
+: 1231 7 7 ña
+: 1239 6 7 na 
+: 1246 3 5 que 
+: 1251 3 2 se ol
+: 1255 2 0 vi
+: 1258 15 2 dó
+- 1273
+: 1282 3 -2 Vol
+: 1286 3 0 va
+: 1290 2 2 mos 
+* 1294 3 0 to
+* 1298 3 -2 dos 
+: 1303 3 0 a 
+: 1307 2 -2 re
+: 1310 3 0 cu
+: 1315 6 2 pe
+: 1322 27 7 rar
+- 1349
+: 1358 3 7 En 
+: 1362 3 5 la 
+* 1366 3 2 ba
+* 1370 3 7 ta
+* 1375 2 5 lla 
+: 1378 2 2 que 
+: 1381 5 7 va a i
+: 1387 3 5 ni
+: 1391 107 7 ciar!
+E

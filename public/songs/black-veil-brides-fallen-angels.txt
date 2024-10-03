@@ -1,0 +1,379 @@
+#ARTIST:Black Veil Brides
+#TITLE:Fallen Angels
+#CREATOR:Swanton
+#BPM:348,09
+#YEAR:2011
+#PREVIEWSTART:60
+#VIDEO:v=VuGzJVKtW6g
+#LANGUAGE:English
+#GAP:1978,8770145651986
+#ALLKARAOKE_ID:black-veil-brides-fallen-angels
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:02.419Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:174
+#ALLKARAOKE_PREVIEWEND:128
+#ALLKARAOKE_VOLUME:0,78
+#MP3:Black Veil Brides - Fallen Angels.mp3
+F 23 9 0 Scream, 
+F 52 12 0 Shout, 
+F 151 9 0 Scream, 
+F 182 9 0 Shout.
+- 191
+* 205 4 5 We 
+* 213 7 6 are 
+* 223 5 -4 the 
+* 231 4 -3 Fa
+* 238 3 -4 llen 
+* 243 5 6 An
+* 250 15 5 gels
+- 265 503
+- 503
+: 526 4 6 We 
+: 534 5 6 are 
+: 542 5 4 the 
+: 551 4 4 in 
+: 558 3 0 be
+: 563 11 0 tween, 
+: 590 4 0 cast 
+: 598 5 0 down 
+* 607 4 -3 as 
+: 614 6 0 sons 
+: 622 4 0 of 
+: 628 12 0 war.
+- 640
+: 652 4 6 Struck 
+: 660 5 5 to 
+: 668 4 4 the 
+: 674 6 3 earth 
+: 683 5 0 like 
+: 691 3 0 light
+: 699 6 -3 ning, 
+: 709 5 -3 on 
+: 717 6 0 this 
+: 725 5 -3 world 
+: 734 12 0 we’re 
+* 749 15 -3 torn.
+- 764 768
+- 768
+: 791 4 5 We 
+: 798 6 6 won’t 
+: 806 5 6 cause 
+: 814 3 3 the 
+: 819 11 0 pain, 
+: 845 6 0 of 
+: 853 4 0 li
+: 859 5 0 ving 
+: 866 6 -3 out 
+: 874 6 4 their 
+: 881 17 0 own~
+- 898
+: 911 4 4 Take 
+: 917 6 4 joy 
+: 925 7 3 in 
+: 934 6 3 who 
+: 942 3 0 you 
+: 948 5 0 are, 
+: 955 5 -4 we 
+: 965 5 0 know 
+: 974 6 -4 our 
+: 982 5 0 wings 
+: 990 9 0 are 
+* 1001 18 -3 blown.
+- 1019 1030
+- 1030
+: 1053 4 -5 We’re 
+: 1061 6 -4 bored 
+: 1071 4 -3 to 
+: 1077 6 -3 death 
+* 1085 5 0 in 
+* 1092 6 0 hea
+* 1100 8 0 ven 
+: 1117 6 -5 and 
+: 1126 6 -4 down 
+: 1134 3 -4 a
+: 1139 6 -5 lone 
+: 1147 4 -4 in 
+* 1154 14 -6 hell,
+- 1168
+: 1180 5 -4 We 
+: 1189 9 -4 only 
+: 1205 6 -3 want 
+: 1213 6 -3 to 
+: 1221 9 -3 be 
+: 1234 8 0 our
+* 1246 29 0 selves.
+- 1275
+: 1292 4 4 We 
+: 1300 12 6 scream, 
+: 1324 6 4 we 
+: 1333 12 6 shout
+- 1345
+: 1356 6 5 We 
+: 1365 6 6 are 
+: 1374 6 -4 the 
+: 1382 5 -3 Fal
+: 1389 3 -4 len 
+* 1394 6 6 An
+* 1402 10 5 gels
+- 1412
+: 1420 6 4 We 
+: 1429 12 5 scream, 
+: 1453 6 4 we 
+: 1461 6 5 shout 
+F 1468 15 0 ohhh 
+F 1491 54 0 ohhh
+- 1545
+: 1551 4 5 Too 
+: 1557 6 6 lost 
+: 1565 7 4 to 
+: 1574 6 4 sing 
+: 1582 3 0 a
+: 1588 12 0 lone
+- 1600
+: 1612 5 0 No 
+: 1620 6 0 need 
+: 1631 4 -4 to 
+: 1637 6 0 feel 
+: 1645 5 0 this 
+: 1653 6 0 sor
+: 1661 7 -4 row
+- 1668
+: 1676 5 5 We 
+: 1684 12 6 scream, 
+: 1707 7 5 we 
+: 1716 5 6 shout 
+F 1725 12 0 ohhh
+- 1737
+: 1742 5 5 We 
+: 1750 6 6 are 
+: 1758 6 -4 the 
+: 1766 4 -3 Fal
+: 1772 4 -4 len 
+* 1778 6 6 An
+* 1786 14 5 gels
+- 1800 2038
+- 2038
+: 2061 4 6 Fol
+: 2068 7 6 low 
+: 2077 6 4 the 
+: 2086 5 3 mor
+: 2093 4 0 ning 
+: 2098 15 0 star, 
+: 2126 6 0 on 
+: 2133 6 0 land 
+: 2141 7 0 when 
+: 2150 6 0 dark
+* 2157 6 3 ness 
+: 2166 8 0 fai
+: 2176 5 0 led,
+- 2181
+: 2188 6 6 The 
+: 2198 5 6 pas
+: 2205 5 3 sion 
+: 2212 7 3 left 
+: 2222 6 0 un
+: 2230 9 0 holy, 
+: 2244 7 0 now 
+: 2253 6 -3 you 
+: 2261 6 0 find 
+: 2270 12 0 your
+* 2284 22 -3 self.
+- 2306
+: 2318 6 5 We 
+: 2326 5 5 have 
+: 2334 7 4 no 
+: 2343 6 4 where 
+: 2351 3 -2 to 
+: 2355 16 0 go~, 
+: 2379 6 0 no 
+: 2388 8 3 one 
+: 2398 6 -2 to 
+: 2406 6 0 wish 
+: 2414 6 4 us 
+: 2422 13 0 well
+- 2435
+: 2444 7 6 A 
+: 2454 6 6 crime 
+: 2463 4 3 to 
+: 2470 6 3 find 
+: 2478 5 1 our 
+: 2486 6 0 home, 
+: 2495 4 -3 our 
+: 2501 5 0 sto
+: 2508 7 -3 ries 
+: 2517 5 0 they 
+: 2524 12 0 will 
+: 2541 19 -3 tell.
+- 2560 2566
+- 2566
+: 2589 6 -3 We’re 
+: 2598 6 -4 bored 
+: 2606 4 -3 to 
+: 2612 6 -3 death 
+* 2620 6 0 in 
+* 2627 8 0 hea
+* 2637 7 0 ven 
+: 2655 5 -5 and 
+: 2662 6 -4 down 
+: 2670 3 -4 a
+: 2675 6 -5 lone 
+: 2682 5 -4 in 
+* 2689 14 -6 hell,
+- 2703
+: 2717 5 -4 We 
+: 2725 11 -4 only 
+: 2741 7 -3 want 
+: 2750 6 -3 to 
+: 2758 9 -3 be 
+* 2769 10 0 our
+* 2782 28 0 selves.
+- 2810
+: 2828 6 5 We 
+: 2837 11 6 scream, 
+: 2860 6 5 we 
+: 2869 12 6 shout
+- 2881
+: 2893 6 5 We 
+: 2902 6 6 are 
+: 2910 6 -4 the 
+: 2918 4 -3 Fal
+: 2925 3 -4 len 
+* 2930 6 6 An
+* 2938 11 5 gels
+- 2949
+: 2956 7 5 We 
+: 2966 11 6 scream, 
+: 2988 6 5 we 
+: 2996 7 6 shout 
+F 3006 16 0 ohhh 
+F 3028 51 0 ohhh
+- 3079
+: 3087 5 5 Too 
+: 3094 4 6 lost 
+: 3102 6 4 to 
+: 3111 6 4 sing 
+: 3119 3 0 a
+: 3123 12 0 lone
+- 3135
+: 3150 6 0 No 
+: 3158 7 0 need 
+: 3167 6 -4 to 
+: 3176 6 0 feel 
+: 3183 6 0 this 
+: 3191 6 0 sor
+: 3198 6 -4 row
+- 3204
+: 3213 6 5 We 
+: 3222 10 6 scream, 
+: 3244 7 5 we 
+: 3253 6 6 shout 
+F 3262 12 0 ohhh
+- 3274
+: 3278 6 5 We 
+: 3287 5 6 are 
+: 3294 6 -4 the 
+: 3303 5 -3 Fal
+: 3310 4 -4 len 
+* 3316 5 6 An
+* 3323 11 5 gels!
+- 3334 3841
+- 3841
+F 3864 12 0 Scream, 
+F 3894 13 0 Shout
+- 3907
+: 3919 6 5 We 
+: 3927 6 6 are 
+: 3935 6 -4 the 
+: 3944 4 -3 Fal
+: 3950 3 -4 len 
+: 3956 6 6 An
+: 3964 12 5 gels.
+- 3976
+F 3990 14 0 Scream, 
+F 4023 11 0 shout 
+F 4035 11 0 ohhhh
+- 4046 4087
+- 4087
+: 4110 5 5 We 
+: 4117 12 6 scream, 
+: 4141 6 5 we 
+: 4150 11 6 shout
+- 4161
+: 4173 7 5 We 
+: 4182 6 6 are 
+: 4190 6 -4 the 
+: 4198 6 -3 Fal
+: 4206 3 -4 len 
+* 4211 6 6 An
+* 4219 11 5 gels
+- 4230
+: 4237 6 5 We 
+: 4246 10 6 scream, 
+: 4269 6 5 we 
+: 4278 6 6 shout 
+F 4285 14 0 ohhh 
+F 4309 50 0 ohhh
+- 4359
+: 4367 6 5 Too 
+: 4375 6 6 lost 
+: 4383 6 4 to 
+: 4391 6 4 sing 
+: 4399 3 0 a
+: 4404 13 0 lone
+- 4417
+: 4431 6 0 No 
+: 4439 6 0 need 
+: 4447 6 -4 to 
+: 4455 6 0 feel 
+: 4464 5 0 this 
+: 4471 6 0 sor
+: 4478 7 -4 row
+- 4485
+: 4493 6 5 We 
+: 4502 10 6 scream, 
+: 4524 7 5 we 
+: 4533 6 6 shout 
+F 4541 12 0 ohhh
+- 4553
+: 4559 6 5 We 
+: 4567 6 6 are 
+: 4576 6 -4 the 
+: 4583 5 -3 Fal
+: 4590 3 -4 len 
+: 4594 6 6 An
+: 4602 10 5 gels
+- 4612
+F 4622 6 0 We 
+F 4630 11 0 scream, 
+F 4654 6 0 we 
+F 4662 12 0 shout
+- 4674
+: 4687 5 5 We 
+: 4695 6 6 are 
+: 4703 6 -4 the 
+: 4711 5 -3 Fal
+: 4719 3 -4 len 
+: 4724 6 6 An
+: 4731 11 5 gels
+- 4742
+F 4750 8 0 We 
+F 4759 12 0 scream, 
+F 4780 7 0 we 
+F 4790 5 0 shout 
+F 4798 17 0 ohhh 
+F 4822 53 0 Ohhh! 
+F 4950 24 0 Ohhh 
+F 4983 22 0 ohhh!
+- 5005 5015
+- 5015
+: 5038 3 5 We 
+: 5045 6 6 shout
+- 5051
+* 5070 6 5 We 
+* 5078 6 6 are 
+* 5087 6 -4 the 
+* 5095 6 -3 Fal
+* 5102 3 -4 len 
+* 5107 6 6 An
+* 5115 21 5 gels!
+E

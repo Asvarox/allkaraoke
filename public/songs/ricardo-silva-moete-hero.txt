@@ -1,0 +1,179 @@
+#ARTIST:Ricardo Silva
+#TITLE:Moete Hero
+#CREATOR:ConejoF1
+#BPM:157,2
+#YEAR:1985
+#VIDEO:v=GsHOMFMEaw8
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:15655,801526717558
+#ALLKARAOKE_ID:ricardo-silva-moete-hero
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.417Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:1
+#MP3:Ricardo Silva - Moete Hero (TV).mp3
+#COVER:Ricardo Silva - Moete Hero (TV).jpg
+: 10 3 9 Pon
+: 14 1 7 gan 
+: 16 5 9 a
+: 22 1 12 ten
+: 24 6 9 ción
+- 30
+: 40 3 14 pues 
+: 44 3 14 se a
+: 48 3 12 cer
+: 52 1 11 can
+: 54 1 9 ~ 
+: 56 5 9 ya
+- 61 64
+- 64
+: 74 1 14 son 
+: 76 1 14 a
+: 78 1 12 ses 
+: 80 3 14 del 
+: 84 3 16 fut
+: 88 11 14 bol
+- 99
+: 104 3 14 y 
+: 108 1 14 te 
+: 110 1 14 sor
+: 112 3 12 pren
+: 116 1 11 de
+: 118 1 9 ~
+: 120 8 9 rán
+- 128
+: 136 3 16 ¡Su
+: 140 1 16 per
+: 142 1 14 cam
+: 144 3 16 peo
+: 148 4 16 nes!
+- 152 158
+- 158
+: 168 3 14 ¡Su
+: 172 1 14 per
+: 174 1 12 cam
+: 176 3 14 peo
+: 180 4 14 nes!
+- 184 190
+- 190
+: 200 3 12 Es
+: 204 1 12 te 
+: 206 1 12 e
+: 208 1 11 qui
+: 210 1 11 po 
+: 212 3 11 es 
+: 216 1 9 al
+: 218 1 9 go 
+: 220 1 9 su
+: 222 1 9 per 
+: 224 3 7 es
+: 228 3 11 pe
+: 232 14 9 cial
+- 246 256
+- 256
+: 266 3 9 Con
+: 270 1 9 tro
+: 272 1 9 lan
+: 274 1 9 do 
+: 276 1 9 el 
+: 278 1 9 ba
+: 280 1 9 lón 
+: 282 1 9 no e
+: 284 1 11 xis
+: 286 1 12 te 
+: 288 3 11 na
+: 292 3 7 die i
+: 296 16 9 gual
+- 312 320
+- 320
+: 330 3 14 y 
+: 334 1 12 al 
+: 336 3 14 ca
+: 340 1 12 be
+: 342 10 14 cear
+- 352
+: 360 1 12 na
+: 362 1 12 die 
+: 364 1 12 les 
+: 366 1 12 pue
+: 368 3 11 de 
+: 372 3 7 ga
+: 376 10 9 nar
+- 386
+: 394 3 9 Son 
+: 398 1 7 los 
+: 400 5 9 ga
+: 406 1 7 na
+: 408 1 9 do
+: 410 1 9 res
+- 411 416
+- 416
+* 426 3 11 los 
+* 430 1 9 Su
+* 432 5 11 per
+* 438 1 9 cam
+* 440 1 11 peo
+* 442 1 11 nes
+- 443 448
+- 448
+: 458 1 16 su es
+: 460 1 16 ti
+: 462 1 16 lo 
+: 464 3 14 en 
+: 468 1 14 la 
+: 470 3 12 can
+: 474 3 12 cha es 
+: 478 1 12 sen
+: 480 3 11 sa
+: 484 1 9 cio
+: 486 20 16 nal
+- 506 512
+- 512
+: 522 3 16 A
+: 526 1 16 quí es
+: 528 5 16 tán
+- 533
+: 538 3 17 ju
+: 542 1 17 ga
+: 544 4 17 rán
+- 548
+* 552 3 16 vie
+* 556 3 16 nen 
+* 560 1 16 a
+* 562 1 14 ~
+* 564 1 12 triun
+* 566 1 9 ~
+* 568 9 9 far
+- 577
+: 586 3 9 Son 
+: 590 1 7 los 
+: 592 5 9 ga
+: 598 1 7 na
+: 600 1 9 do
+: 602 1 9 res
+- 603 608
+- 608
+: 618 3 11 los 
+: 622 1 9 Su
+: 624 5 11 per
+: 630 1 9 cam
+: 632 1 11 peo
+: 634 1 11 nes
+- 635 638
+- 638
+: 648 3 17 A
+: 652 1 16 quí es
+: 654 6 14 tán
+- 660
+: 664 3 16 ju
+: 668 1 14 ga
+: 670 6 12 rán
+- 676
+: 682 3 16 vie
+: 686 1 14 nen 
+: 688 3 12 a 
+: 692 1 11 triun
+: 694 1 9 ~
+: 696 18 9 far
+E

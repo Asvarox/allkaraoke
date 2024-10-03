@@ -1,0 +1,201 @@
+#ARTIST:Keep Shelly in Athens
+#TITLE:DIY
+#CREATOR:Crowbardoctor
+#BPM:300
+#YEAR:2010
+#PREVIEWSTART:57
+#VIDEO:v=05r4F6SWSUw
+#GENRE:Chillwave
+#LANGUAGE:English
+#GAP:51750
+#ALLKARAOKE_ID:keep-shelly-in-athens-diy
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:16:53.849Z
+#ALLKARAOKE_ARTISTORIGIN:GR
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=05r4F6SWSUw&pp=ygUZS2VlcCBTaGVsbHkgaW4gQXRoZW5zIERJWQ%3D%3D
+#ALLKARAOKE_PREVIEWEND:92
+#ALLKARAOKE_VOLUME:0,74
+#ENCODING:UTF8
+#MP3:Keep Shelly In Athens - DIY.wav
+#VOCALS:vocals.ogg
+#INSTRUMENTAL:instrumental.ogg
+#COVER:Keep Shelly in Athens - DIY [CO].jpg
+: 20 8 6 Ye 
+: 31 7 23 that 
+: 41 4 6 think 
+: 48 8 6 that, 
+: 59 5 6 all 
+: 67 3 9 is 
+: 73 10 -1 well
+- 83
+: 91 24 -1 Throwing 
+: 118 19 5 fires, 
+: 140 4 5 here 
+: 147 3 -3 and 
+: 153 10 11 there
+- 163
+: 175 7 -1 All 
+: 185 7 2 get 
+: 195 5 11 in 
+: 203 7 6 the 
+: 213 10 5 same 
+: 226 13 -3 path
+- 239
+: 253 6 11 'cause 
+: 262 10 6 salvation 
+: 275 4 4 will 
+: 282 2 4 not 
+: 287 7 4 come
+- 294 315
+- 315
+: 335 9 -1 You 
+: 347 27 5 forestall, 
+: 377 12 24 last 
+: 392 18 -1 train
+- 410
+: 416 7 -1 Vain 
+: 426 13 2 flares 
+: 442 6 21 are 
+: 451 5 5 the, 
+: 462 22 5 constraint
+- 484
+: 496 18 2 Please 
+: 517 9 4 get 
+: 529 13 4 real, 
+: 545 25 -1 somehow
+- 570
+: 573 7 -1 'cause 
+: 583 11 5 salvation 
+: 597 4 4 will 
+: 604 3 4 not 
+: 610 8 -1 come
+- 618
+: 631 10 -1 Oh 
+: 644 23 6 you,
+- 667 685
+- 685
+: 705 22 4 miraculously
+- 727
+: 735 5 6 get 
+: 743 11 6 tidied 
+: 757 7 4 up
+- 764 845
+- 845
+: 865 6 -3 Take 
+: 874 5 2 off 
+: 882 5 4 and 
+: 890 3 12 do, 
+: 896 11 6 what's 
+: 910 14 14 right, 
+: 927 51 6 no~w
+- 978 1285
+- 1285
+: 1305 7 14 You 
+: 1315 7 16 may 
+: 1325 15 6 dream, 
+: 1343 5 9 of 
+: 1351 16 9 glory
+- 1367
+: 1372 48 5 Shabbiness, 
+: 1424 1 12 is 
+: 1427 4 9 your 
+: 1434 8 9 story
+- 1442
+: 1454 10 16 You 
+: 1467 13 21 may 
+: 1484 7 6 don't 
+: 1494 6 5 know, 
+: 1503 18 9 otherwise
+- 1521
+: 1533 2 16 Well, 
+: 1538 1 18 at 
+: 1541 2 11 least 
+: 1546 1 6 you 
+: 1550 7 16 should 
+: 1560 27 4 try~
+- 1587 1594
+- 1594
+: 1614 5 16 You 
+: 1622 8 12 see, 
+: 1633 6 16 the 
+: 1642 13 5 chains 
+: 1658 6 4 are 
+: 1667 20 9 breaking
+- 1687
+: 1695 18 16 Even 
+: 1716 22 4 life, 
+: 1741 1 18 is 
+: 1745 21 9 counterfeiting
+- 1766
+: 1774 7 16 You 
+: 1784 16 16 should 
+: 1804 7 5 think 
+: 1814 5 4 it, 
+: 1828 14 14 over
+- 1842
+: 1857 6 18 'cause 
+: 1866 9 5 salvation 
+: 1878 4 4 will 
+: 1885 2 13 not 
+: 1890 7 4 come
+- 1897
+: 1909 8 9 Oh 
+: 1920 19 6 you,
+- 1939 1959
+- 1959
+: 1979 25 2 mirac-ulously
+- 2004
+: 2015 6 6 get 
+: 2024 12 2 tidied 
+: 2039 10 4 up, 
+: 2051 14 2 a~
+- 2065 2123
+- 2123
+: 2143 5 9 Take 
+: 2151 4 21 off 
+: 2158 4 4 and 
+: 2165 2 4 do, 
+: 2170 9 6 what's 
+: 2182 13 6 right, 
+: 2198 30 4 no~w
+- 2228 2541
+- 2541
+: 2561 36 4 Nah, 
+: 2604 6 2 can't 
+: 2613 2 4 be 
+: 2618 9 4 worse
+- 2627
+: 2600 1 19 it
+- 2601 2625
+- 2625
+: 2645 25 5 Nah, 
+: 2674 5 0 you 
+: 2682 8 18 must 
+: 2693 4 19 be 
+: 2700 13 11 false
+- 2713
+: 2721 32 4 Nah, 
+: 2760 17 19 pathetic 
+: 2780 7 19 me
+- 2787
+: 2800 75 5 Na~h
+- 2875
+: 2884 27 4 Nah
+- 2911
+: 2920 1 11 It 
+: 2924 6 9 can't 
+: 2933 5 5 be 
+: 2942 19 4 worse
+- 2961
+: 2966 23 4 Nah, 
+: 2994 5 2 you 
+: 3002 8 19 must 
+: 3013 3 6 be 
+: 3019 13 4 false
+- 3032
+: 3045 22 4 Nah, 
+: 3074 22 5 pathetic 
+: 3099 9 2 me
+- 3108
+: 3121 81 6 Na~h
+E

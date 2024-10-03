@@ -1,0 +1,123 @@
+#ARTIST:Memo Aguirre
+#TITLE:Robot, eres formidable
+#CREATOR:ToKuRo
+#BPM:625,48
+#YEAR:1981
+#VIDEO:v=aX68Nta6iwc
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:15761,773549913667
+#ALLKARAOKE_ID:memo-aguirre-robot-eres-formidable
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.671Z
+#ALLKARAOKE_ARTISTORIGIN:CL
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:1
+#MP3:Memo Aguirre - Robot, eres formidable.mp3
+#COVER:Memo Aguirre - Robot, eres formidable.jpg
+#END:71000.0
+: 42 12 13 Ro
+: 56 12 13 bot
+- 68
+: 82 12 14 e
+: 96 4 14 res 
+: 104 4 13 for
+: 110 8 13 mi
+: 120 12 11 da
+: 134 10 9 ble.
+- 144
+: 170 12 13 Ro
+: 184 12 13 bot
+- 196
+: 206 14 14 siem
+: 222 6 14 pre 
+: 230 6 13 lu
+: 238 6 13 chas 
+: 248 12 11 por 
+: 262 6 9 a
+: 270 16 11 mor.
+- 286 512
+- 512
+: 554 12 13 Cru
+: 570 12 13 zan
+: 586 6 13 do 
+: 594 12 14 por 
+: 610 4 14 el 
+: 616 6 13 u
+: 624 6 13 ni
+: 632 12 11 ver
+: 652 14 9 so
+- 666
+: 682 6 13 tie
+: 690 6 13 nes 
+: 698 14 13 la 
+: 714 6 13 ve
+* 722 12 16 lo
+* 740 12 16 ci
+: 756 12 13 dad 
+: 770 4 11 de 
+: 778 4 9 la 
+: 786 16 11 luz.
+- 802 989
+- 989
+: 1031 6 11 Cuan
+: 1038 6 13 do en
+: 1046 12 14 cuen
+: 1062 6 14 tras 
+: 1070 6 14 el 
+: 1080 8 14 mal
+- 1088
+: 1094 6 14 siem
+: 1102 6 14 pre 
+: 1112 12 13 cam
+: 1126 6 13 bias
+- 1132
+: 1135 6 13 tu 
+: 1142 12 13 cuer
+: 1158 6 11 po a 
+: 1165 6 9 me
+: 1174 16 11 tal.
+- 1190 1246
+- 1246
+: 1288 6 11 Tie
+: 1296 6 13 nes 
+: 1304 14 14 ar
+: 1320 6 14 mas 
+: 1327 6 14 se
+: 1336 12 14 cre
+: 1350 5 14 tas,
+- 1355
+: 1358 6 14 gi
+: 1366 14 16 gan
+: 1384 4 16 te 
+: 1390 4 16 no 
+: 1400 10 13 te 
+: 1414 12 11 ven
+: 1429 6 9 ce
+: 1438 102 11 rá.
+- 1540 1542
+- 1542
+: 1584 7 13 Con 
+: 1592 7 13 el 
+* 1600 14 13 mo
+* 1615 8 13 vi
+* 1625 14 14 mien
+* 1641 5 14 to
+- 1646
+: 1649 6 13 de 
+: 1657 6 13 tus 
+: 1666 14 11 pu
+: 1682 18 9 ños,
+- 1700
+: 1714 4 13 te 
+: 1720 6 13 con
+: 1730 12 13 vier
+: 1746 6 13 tes 
+: 1754 12 16 en 
+: 1770 4 16 un
+- 1774
+: 1778 7 16 gi
+: 1787 13 13 gan
+: 1802 4 11 te 
+: 1808 8 9 ro
+: 1818 20 11 bot.
+E
