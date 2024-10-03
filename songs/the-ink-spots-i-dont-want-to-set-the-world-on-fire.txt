@@ -1,0 +1,278 @@
+#ARTIST:The Ink Spots
+#TITLE:I Don’t Want To Set The World On Fire
+#CREATOR:JessieHeart1996
+#BPM:349,2
+#YEAR:1941
+#VIDEO:v=TmIwm5RElRs
+#GENRE:Blues
+#LANGUAGE:English
+#GAP:4858,620689655172
+#ALLKARAOKE_ID:the-ink-spots-i-dont-want-to-set-the-world-on-fire
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:16:52.949Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=154974
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=22711
+#ALLKARAOKE_VOLUME:1
+#MP3:The Ink Spots - I Don’t Want To Set The World On Fire.mp3
+: 23 15 -3 I 
+: 39 15 0 don’t 
+* 55 11 -12 want 
+: 67 3 -10 to 
+: 71 7 -7 set 
+: 79 3 -3 the 
+: 83 31 0 world 
+: 115 31 -1 on 
+: 147 11 -2 fi
+* 159 76 2 re
+- 235
+: 239 35 -2 I 
+: 275 11 -3 just 
+: 287 3 0 want 
+: 291 7 -3 to 
+: 299 48 0 start 
+: 355 11 -3 a 
+: 367 15 0 flame 
+: 383 3 1 in 
+: 387 11 2 your 
+: 399 112 -3 heart
+- 511
+: 523 15 -3 In 
+: 539 15 0 my 
+: 555 11 -12 heart 
+: 567 7 -10 I 
+: 575 7 -7 have 
+: 583 3 -3 but 
+: 587 31 0 one 
+: 619 31 -1 de
+: 651 11 -2 si
+* 663 40 2 re
+- 703 716
+- 716
+: 739 35 -2 And 
+: 775 11 -3 that 
+: 787 7 0 one 
+: 795 7 -3 is 
+: 803 44 0 you, 
+: 855 11 -3 no 
+: 867 15 0 o
+: 883 7 1 ther 
+* 891 11 2 will 
+: 903 100 -7 do
+- 1003
+: 1019 11 -7 I’ve 
+: 1031 11 -5 lost 
+: 1043 3 -5 all 
+: 1047 11 -5 am
+: 1059 7 2 bi
+: 1067 15 2 tion 
+: 1083 7 -7 for 
+: 1091 11 -5 worl
+: 1103 3 -5 dly 
+: 1107 7 -5 ac
+: 1115 31 2 claim
+- 1146
+: 1147 15 0 I 
+: 1163 3 0 just 
+: 1167 7 -2 want 
+: 1175 3 -2 to 
+: 1179 11 -3 be 
+: 1191 3 -3 the 
+: 1195 11 2 one 
+: 1207 3 2 you 
+: 1211 55 -3 love
+- 1266
+: 1267 11 -5 And 
+: 1279 7 -3 with 
+: 1287 3 -3 your 
+: 1291 11 -3 ad
+* 1303 7 4 mis
+* 1311 19 4 sion, 
+: 1331 7 -5 that 
+: 1339 11 -3 you’d 
+: 1351 7 -3 feel 
+: 1359 3 -3 the 
+* 1363 32 4 same
+- 1395
+: 1399 11 2 I’ll 
+: 1411 3 1 have 
+: 1415 7 2 reached 
+: 1423 3 1 the 
+: 1427 11 2 goal, 
+: 1439 7 1 I’m 
+: 1447 7 2 drea
+: 1455 3 3 ming 
+* 1459 19 4 of, 
+: 1479 15 2 be
+* 1495 15 -3 lieve 
+: 1511 12 -4 me
+- 1523
+: 1527 15 -3 I 
+: 1543 15 0 don’t 
+* 1559 11 -12 want 
+: 1571 3 -10 to 
+: 1575 7 -7 set 
+: 1583 3 -3 the 
+: 1587 27 0 world 
+: 1615 31 -1 on 
+: 1647 11 -2 fi
+* 1659 56 2 re
+- 1715 1724
+- 1724
+: 1747 31 -1 I 
+: 1779 11 -3 just 
+: 1791 3 0 want 
+: 1795 7 -3 to 
+: 1803 44 0 start 
+: 1855 11 -3 a 
+: 1867 15 0 flame 
+: 1883 7 1 in 
+: 1891 15 2 your 
+* 1907 92 -7 heart
+- 1999 2048
+- 2048
+F 2071 3 0 I 
+F 2075 3 0 don’t 
+F 2079 3 0 wan
+F 2083 3 0 na 
+F 2087 7 0 set 
+F 2095 7 0 the 
+F 2103 7 0 world 
+F 2111 7 0 on 
+F 2119 11 0 fire, 
+F 2131 8 0 honey
+- 2139 2156
+- 2156
+F 2179 3 0 I 
+F 2183 7 0 love 
+F 2191 3 0 you 
+F 2195 7 0 too 
+F 2203 12 0 much
+- 2215 2236
+- 2236
+F 2259 11 0 I 
+F 2271 7 0 just 
+F 2279 3 0 wan
+F 2283 3 0 na 
+F 2287 16 0 start 
+F 2315 7 0 a 
+F 2323 7 0 great 
+F 2331 7 0 big 
+F 2339 12 0 flame 
+F 2383 11 0 down 
+F 2395 3 0 in 
+F 2399 7 0 your 
+F 2407 12 0 heart
+- 2419 2448
+- 2448
+F 2471 7 0 You 
+F 2479 8 0 see, 
+F 2555 7 0 way 
+F 2563 7 0 down 
+F 2571 3 0 in
+F 2575 7 0 side 
+F 2583 3 0 of 
+F 2587 8 0 me
+- 2595 2612
+- 2612
+F 2635 3 0 Dar
+F 2639 3 0 ling, 
+F 2643 3 0 I 
+F 2647 7 0 have 
+F 2655 3 0 on
+F 2659 3 0 ly 
+F 2663 7 0 one 
+F 2671 3 0 de
+F 2675 8 0 sire
+- 2683 2720
+- 2720
+F 2743 7 0 And 
+F 2751 3 0 that 
+F 2755 11 0 one 
+F 2767 3 0 de
+F 2771 11 0 sire 
+F 2783 7 0 is 
+F 2791 8 0 you
+- 2799 2804
+- 2804
+F 2827 3 0 And 
+F 2831 3 0 I 
+F 2835 8 0 know, 
+F 2871 7 0 no
+F 2879 3 0 bo
+F 2883 3 0 dy 
+F 2887 12 0 else 
+F 2903 3 0 ain’t 
+F 2907 3 0 gon
+F 2911 3 0 na 
+F 2915 8 0 do
+- 2923 3004
+- 3004
+: 3027 11 -7 I’ve 
+: 3039 11 -5 lost 
+: 3051 3 -5 all 
+: 3055 11 -5 am
+: 3067 7 2 bi
+: 3075 15 2 tion 
+: 3091 7 -7 for 
+: 3099 11 -5 worl
+: 3111 3 -5 dly 
+: 3115 7 -5 ac
+* 3123 20 2 claim
+- 3143
+: 3163 11 0 I 
+: 3175 7 0 just 
+: 3183 7 -2 wan
+: 3191 3 -2 na 
+: 3195 11 -3 be 
+: 3207 3 -3 the 
+: 3211 11 0 one 
+: 3223 3 0 you 
+: 3227 36 -3 love
+- 3263
+: 3283 11 -5 And 
+: 3295 7 -3 with 
+: 3303 7 -3 your 
+: 3311 7 -3 ad
+* 3319 11 4 mis
+* 3331 15 4 sion, 
+: 3347 7 -5 that 
+: 3355 11 -3 you’d 
+: 3367 7 -3 feel 
+: 3375 3 -3 the 
+* 3379 24 4 same
+- 3403
+: 3419 11 2 I’ll 
+: 3431 3 1 have 
+: 3435 7 2 reached 
+: 3443 3 1 the 
+: 3447 11 2 goal, 
+: 3459 7 1 I’m 
+: 3467 7 2 drea
+: 3475 3 3 ming 
+* 3479 19 4 of, 
+: 3499 15 2 be
+* 3515 15 -3 lieve 
+: 3531 12 -4 me
+- 3543
+: 3547 19 -3 I 
+: 3567 15 0 don’t 
+* 3583 7 -12 want 
+: 3591 7 -10 to 
+: 3599 7 -7 set 
+: 3607 3 -3 the 
+: 3611 31 0 world 
+: 3643 35 -1 on 
+: 3679 11 -2 fi
+* 3691 76 2 re
+- 3767
+: 3775 31 -2 I 
+: 3807 11 -3 just 
+: 3819 11 0 want 
+: 3831 7 -3 to 
+: 3839 44 0 start 
+: 3891 15 -3 a 
+: 3907 11 0 flame 
+: 3919 3 1 in 
+: 3923 8 2 your
+E

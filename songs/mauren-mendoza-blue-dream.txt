@@ -1,0 +1,133 @@
+#ARTIST:Mauren Mendoza
+#TITLE:Blue Dream
+#CREATOR:asdfer
+#BPM:200
+#YEAR:1992
+#PREVIEWSTART:31
+#VIDEO:v=hR9bEZvmuY4
+#LANGUAGE:Spanish
+#GAP:2528
+#ALLKARAOKE_ID:mauren-mendoza-blue-dream
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.210Z
+#ALLKARAOKE_REALBPM:78
+#ALLKARAOKE_PREVIEWEND:63
+#ALLKARAOKE_VOLUME:1
+#MP3:Mauren Mendoza - Blue Dream (TV).mp3
+#COVER:Mauren Mendoza - Blue Dream (TV).jpg
+: 13 20 -3 Blue 
+: 36 13 4 dream
+- 49
+: 58 5 4 Sa
+: 64 2 2 ca 
+: 67 4 0 tu in
+: 72 2 2 te
+: 75 10 -3 rior
+- 85 90
+- 90
+: 103 4 4 U
+: 109 4 2 ni
+: 114 4 0 ver
+: 120 4 -3 so in
+: 126 4 4 ten
+: 131 4 2 sa ac
+: 137 4 0 ción 
+: 143 4 -5 de 
+: 148 16 -3 dos
+- 164 180
+- 180
+: 193 20 -3 Blue 
+: 216 13 4 dream
+- 229
+: 238 5 4 To
+: 244 2 2 do 
+: 247 4 0 cam
+: 252 2 2 bia
+: 255 10 -3 rá
+- 265 270
+- 270
+: 283 5 -7 Y 
+: 289 4 -5 tus 
+: 294 5 -3 sue
+: 300 5 -1 ños 
+: 306 5 0 se 
+: 312 4 2 rea
+: 317 5 -1 li
+: 323 4 -5 za
+: 328 24 -3 rán
+- 352 361
+- 361
+: 374 9 -3 Quie
+: 385 9 0 ro 
+: 396 3 2 re
+: 401 3 -1 ve
+: 407 7 -5 lar 
+: 418 7 5 to
+: 427 6 4 do 
+: 435 3 2 de 
+: 441 11 4 mí
+- 452
+: 463 6 5 No 
+: 471 6 4 dis
+: 479 4 2 fra
+: 485 9 2 zar 
+: 496 5 4 la 
+: 502 5 5 ver
+: 508 4 4 dad
+: 513 16 4 ~
+- 529
+: 533 3 4 No
+: 537 3 4 ~
+: 541 3 2 ~
+: 545 7 0 ~
+- 552
+: 565 3 -3 Vi
+: 570 2 2 vi
+: 573 9 4 rá 
+: 587 5 4 el 
+* 593 4 5 pro
+* 598 7 9 fun
+: 607 2 9 do
+: 610 4 7 ~ 
+: 615 4 5 a
+: 621 10 2 mor
+- 631
+: 638 3 2 Yo 
+: 643 8 9 lu
+: 652 2 9 cha
+: 655 4 7 ~
+: 660 5 5 ré 
+: 666 4 4 siem
+: 672 4 0 ~
+: 677 10 0 pre a
+: 688 2 2 sí
+: 691 2 5 ~
+: 694 15 2 ~
+- 709
+F 715 2 9 Uh
+F 719 2 9 ~
+F 723 2 7 ~
+F 726 7 5 ~
+- 733
+: 745 3 -3 Vi
+: 750 2 2 vi
+: 753 9 4 rá 
+: 767 5 4 el 
+: 773 4 5 pro
+: 778 7 9 fun
+: 787 2 9 do
+: 790 4 7 ~ 
+: 795 4 5 a
+: 801 10 2 mor
+- 811
+: 818 3 2 No im
+* 823 8 9 por
+: 832 2 9 ta
+: 835 4 7 ~ 
+: 840 5 5 yo 
+: 846 5 4 sé
+: 852 7 0 ~ 
+: 862 5 0 vi
+: 868 2 2 vir
+: 871 2 5 ~
+* 874 32 2 ~
+E

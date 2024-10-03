@@ -1,0 +1,184 @@
+#ARTIST:Nightmare
+#TITLE:The world
+#CREATOR:subkei
+#BPM:380,04
+#YEAR:2006
+#VIDEO:v=cAFOrxAlZkw
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:1111,2617619197981
+#ALLKARAOKE_ID:nightmare-the-world
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:16:52.168Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=nightmare
+#ALLKARAOKE_VOLUME:0,8
+#P1:The World
+#MP3:Nightmare - The world (TV).mp3
+#COVER:Nightmare - The world (TV).jpg
+* 25 3 1 Hi
+* 29 3 2 ru
+* 33 3 4 ga
+* 37 6 6 ru 
+: 45 3 6 ya
+: 49 3 6 mi 
+: 53 3 6 no 
+: 57 3 7 na
+: 61 4 7 ka
+- 65
+: 69 6 6 ka
+: 77 3 6 wa
+: 81 3 6 shi
+: 85 3 6 a
+: 89 3 4 ~
+: 93 6 6 tta 
+: 101 6 2 ka
+: 109 3 2 ku
+: 113 4 2 mei
+- 117
+: 121 3 4 no 
+: 125 3 6 chi
+: 129 3 6 gi
+: 133 6 6 ri
+: 141 7 4 ~
+- 148
+: 153 3 1 Da
+: 157 3 2 re 
+: 161 3 4 ni 
+: 165 6 6 mo 
+: 173 3 6 ja
+: 177 3 6 ma 
+: 181 3 6 sa
+: 185 3 7 se
+: 189 4 7 ru
+- 193
+: 197 10 6 wa
+: 209 6 4 ke 
+: 217 3 2 ni 
+: 221 4 1 wa
+- 225
+: 229 17 2 i
+: 253 3 2 ka
+: 257 3 7 na
+: 261 6 7 i
+: 269 7 6 ~
+- 276
+: 281 11 7 ka
+: 293 106 6 ra
+- 399 600
+- 600
+: 625 6 6 Ka
+: 633 6 4 ji
+: 641 6 2 tsu 
+: 649 6 1 ga 
+: 657 6 -1 tsu
+: 665 6 1 ge
+: 673 3 2 ta 
+* 677 26 4 mi
+: 705 3 2 ra
+* 709 20 1 i
+- 729
+: 737 3 4 Yu
+: 741 34 6 me
+- 775
+: 785 6 6 ri
+: 793 6 6 so
+: 801 3 7 u 
+: 805 24 4 ni
+- 829
+: 841 14 2 ka
+: 857 14 4 e
+: 873 80 6 ru
+- 953 992
+- 992
+: 1017 14 6 Da
+: 1033 14 4 re 
+: 1049 10 6 mo 
+* 1061 36 9 ga
+- 1097
+: 1105 6 4 no
+: 1113 6 2 zo
+: 1121 3 4 n
+: 1125 36 1 da
+- 1161
+: 1169 6 1 "o
+: 1177 6 2 wa
+: 1185 3 4 ru" 
+: 1189 54 6 wo
+- 1243 1248
+- 1248
+: 1273 3 1 Hi
+: 1277 3 2 ru
+: 1281 3 4 ga
+: 1285 6 6 ru 
+: 1293 3 6 ya
+: 1297 3 6 mi 
+: 1301 3 6 no 
+: 1305 3 7 na
+: 1309 4 7 ka
+- 1313
+: 1317 6 6 ka
+: 1325 3 6 wa
+: 1329 3 6 shi
+: 1333 3 6 a
+: 1337 3 4 ~
+: 1341 6 6 tta 
+: 1349 6 2 ka
+: 1357 3 2 ku
+: 1361 4 2 mei
+- 1365
+: 1369 3 4 no 
+: 1373 3 6 chi
+: 1377 3 6 gi
+: 1381 6 6 ri
+: 1389 7 4 ~
+- 1396
+: 1401 3 1 Da
+: 1405 3 2 re 
+: 1409 3 4 ni 
+: 1413 6 6 mo 
+: 1421 3 6 ja
+: 1425 3 6 ma 
+: 1429 3 6 sa
+: 1433 3 7 se
+: 1437 4 7 ru
+- 1441
+: 1445 10 6 wa
+: 1457 6 4 ke 
+: 1465 3 2 ni 
+: 1469 4 1 wa
+- 1473
+: 1477 17 2 i
+: 1501 3 2 ka
+: 1505 3 7 na
+: 1509 6 7 i
+: 1517 8 6 ~
+- 1525
+: 1533 3 2 I
+: 1537 3 1 tsu
+: 1541 12 -1 ka
+- 1553
+: 1561 6 -1 bo
+: 1569 3 6 ku 
+: 1573 10 4 ga 
+: 1585 6 4 mi
+: 1593 3 2 se
+: 1597 4 1 te
+- 1601
+: 1605 12 -1 a
+: 1625 10 2 ge
+: 1637 18 4 ru
+- 1655
+: 1661 3 -3 Hi
+: 1665 3 -3 ka
+: 1669 10 -1 ri 
+: 1681 6 -1 ka
+: 1689 6 2 ga
+: 1697 3 6 ya
+: 1701 46 4 ku
+- 1747
+: 1753 7 9 se
+: 1761 3 7 ka
+: 1765 8 7 i 
+: 1775 122 6 wo
+E

@@ -1,0 +1,420 @@
+#ARTIST:Heathers
+#TITLE:Freeze Your Brain
+#CREATOR:Heather the musicaul 
+#BPM:273,6
+#YEAR:2014
+#VIDEO:v=Eyder5QhWl4
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:6383,1578947368425
+#ALLKARAOKE_ID:heathers-freeze-your-brain
+#ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:03.673Z
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=GAOxJv96VE8
+#ALLKARAOKE_VOLUME:0,74
+#P1:Freeze your brain 
+#MP3:Heathers - Freeze Your Brain.mp3
+#COVER:Heathers - Freeze Your Brain [CO].jpg
+#BACKGROUND:Heathers - Freeze Your Brain [BG].jpg
+: 18 2 2 I’ve 
+: 21 3 2 been 
+: 25 3 2 through 
+: 29 3 9 ten 
+: 34 3 9 high 
+: 38 6 2 schools
+- 44
+: 49 2 2 They 
+: 52 4 2 start 
+: 58 2 2 to 
+: 61 3 9 get 
+: 66 3 9 blur
+: 70 3 2 ry
+- 73
+: 82 2 2 No 
+: 86 4 2 point 
+: 91 3 2 plan
+: 96 2 11 ting 
+: 99 5 9 roots
+- 104
+: 105 4 5 ’Cause 
+: 110 3 11 you’re 
+: 114 8 9 gone 
+: 123 2 5 in 
+: 126 2 2 a 
+: 130 3 4 hur
+: 134 4 5 ry
+- 138
+: 149 2 9 My 
+: 153 4 9 dad 
+: 160 4 12 keeps 
+: 166 3 14 two 
+: 171 2 11 suit
+: 174 3 9 ca
+: 178 3 5 ses 
+: 182 6 11 packed 
+: 191 2 9 in 
+: 194 2 5 the 
+: 197 3 4 den
+- 200
+: 210 3 2 So 
+: 214 4 4 it’s 
+: 219 4 5 o
+: 224 5 7 nly 
+: 230 3 5 a 
+: 234 8 4 matter 
+: 243 3 5 of 
+: 247 9 4 when
+- 256 263
+- 263
+: 281 3 4 I 
+: 285 3 4 don’t 
+: 289 4 4 learn 
+: 294 3 11 the 
+: 298 12 11 names
+- 310
+: 314 3 4 Don’t 
+: 318 7 4 bother 
+: 326 4 11 with 
+: 331 3 11 fa
+: 335 3 4 ces
+- 338
+: 351 4 4 All 
+: 356 2 4 I 
+: 359 3 12 can 
+: 363 9 11 trust 
+: 373 2 7 is 
+: 376 3 12 this 
+: 380 5 11 con
+: 387 6 7 crete 
+: 394 4 4 o
+: 399 4 5 as
+: 404 5 7 is
+- 409
+: 416 7 11 Seems 
+: 424 6 14 every 
+: 431 8 12 time 
+: 440 3 11 I’m 
+: 444 3 7 a
+: 448 5 12 bout 
+: 454 4 11 to 
+: 459 2 7 de
+: 462 8 5 spair
+- 470
+: 474 6 4 There’s 
+: 481 1 5 a 
+: 483 3 7 Se
+: 487 5 9 ven
+: 493 6 7 Ele
+: 500 5 4 ven 
+: 507 6 11 right 
+* 514 21 11 there
+- 535
+: 541 6 7 Each 
+: 548 7 4 store 
+: 556 3 5 is 
+: 560 1 7 the 
+: 562 12 12 same
+- 574
+: 575 4 7 From 
+: 580 3 5 Las 
+: 584 3 4 Ve
+: 588 4 5 gas 
+: 593 2 7 to 
+: 596 6 12 Bos
+: 603 6 7 ton
+- 609
+: 612 4 5 Lin
+: 617 3 4 o
+: 621 3 5 le
+: 625 4 7 um 
+: 630 6 12 aisles 
+: 637 4 7 that 
+: 642 3 12 I 
+: 646 7 16 love 
+: 654 3 17 to 
+: 658 2 16 get 
+: 661 9 14 lost 
+: 671 5 12 in
+- 676
+: 677 3 12 I 
+: 681 8 12 pray 
+: 690 4 14 at 
+: 695 3 12 my 
+: 699 3 11 al
+: 703 4 9 tar 
+: 708 2 12 of 
+* 711 26 11 slush
+- 737
+: 738 5 12 Yeah, 
+: 744 3 13 I 
+: 748 5 15 live 
+: 754 5 16 for 
+: 760 4 14 that 
+: 765 7 12 sweet 
+: 773 3 11 fro
+: 777 4 14 zen 
+* 783 48 13 rush
+- 831 883
+- 883
+: 901 5 9 Freeze 
+: 907 7 16 your 
+* 915 47 16 brain
+- 962
+: 963 4 9 Suck 
+: 968 2 9 on 
+: 971 6 16 that 
+: 978 9 16 straw
+- 987
+: 988 4 12 Get 
+: 993 10 11 lost 
+: 1004 1 9 in 
+: 1006 3 12 the 
+: 1010 15 11 pain
+- 1025
+: 1030 4 12 Hap
+: 1035 3 14 pi
+: 1039 5 16 ness 
+: 1047 6 5 comes
+- 1053
+: 1055 8 12 When 
+: 1064 2 12 ev’
+: 1067 4 14 ry
+: 1072 3 16 thing 
+: 1076 11 5 numbs
+- 1087
+: 1094 6 17 Who 
+: 1101 6 16 needs 
+* 1108 4 12 co
+* 1113 12 11 ca
+* 1126 11 12 i
+* 1138 16 11 ne?
+- 1154
+: 1158 5 12 Free
+: 1164 4 11 ze 
+: 1169 2 9 your 
+: 1172 26 11 bra
+: 1199 26 9 in
+- 1225
+: 1226 7 12 Free
+: 1234 19 11 ze 
+: 1254 7 9 your 
+: 1262 7 11 bra
+: 1270 35 9 in
+- 1305 1378
+- 1378
+: 1396 8 4 When 
+: 1405 4 4 mom 
+: 1410 2 4 was 
+: 1413 17 11 alive
+- 1430
+: 1433 2 4 We 
+: 1436 6 4 lived 
+: 1443 4 4 half
+: 1448 2 11 way 
+: 1451 3 11 nor
+: 1455 4 4 mal
+- 1459
+: 1469 4 4 But now 
+: 1474 4 4 it’s 
+: 1479 3 12 just 
+: 1483 3 11 me 
+: 1487 4 7 and 
+: 1492 2 12 my 
+: 1495 12 11 dad
+- 1507
+: 1508 4 7 We’re 
+: 1513 4 4 less 
+: 1518 3 5 for
+: 1522 4 7 mal
+- 1526
+: 1533 1 11 I 
+: 1535 5 11 learned 
+: 1541 2 14 to 
+: 1544 3 16 cook 
+: 1548 6 12 pas
+: 1555 5 11 ta
+- 1560
+: 1561 1 7 I 
+: 1563 9 12 learned 
+: 1573 2 11 to 
+: 1576 3 7 pay 
+: 1580 10 5 rent
+- 1590
+: 1592 5 4 Learned 
+: 1598 1 5 the 
+: 1600 9 7 world 
+: 1610 3 9 does
+: 1614 3 7 n’t 
+: 1618 4 5 owe 
+: 1623 2 4 you 
+: 1626 1 11 a 
+: 1628 24 11 cent
+- 1652
+: 1655 8 7 You’re 
+: 1664 4 4 plan
+: 1669 4 5 ning 
+: 1674 3 7 your 
+: 1678 4 12 fu
+: 1683 8 7 ture,
+- 1691
+: 1692 4 5 Ve
+: 1697 2 4 ro
+: 1700 4 5 ni
+: 1705 4 7 ca 
+: 1710 5 12 Saw
+: 1716 7 7 yer
+- 1723
+: 1726 5 5 You’ll 
+: 1732 3 4 go 
+: 1736 1 5 to 
+: 1738 5 7 some 
+: 1744 4 12 col
+: 1749 4 7 lege 
+: 1754 5 12 and 
+: 1760 3 16 mar
+: 1764 3 17 ry 
+: 1768 1 16 a 
+: 1770 4 14 law
+: 1775 9 12 yer
+- 1784
+: 1786 3 12 But 
+: 1790 5 12 the 
+: 1796 9 12 sky’s 
+: 1806 1 14 gon
+: 1808 5 12 na 
+: 1814 2 11 hurt 
+: 1817 2 9 when 
+: 1820 2 12 it 
+: 1825 22 11 falls
+- 1847
+: 1851 4 12 So 
+: 1856 5 12 you’d 
+: 1862 2 15 bet
+: 1865 3 16 ter 
+: 1870 8 14 start 
+: 1879 2 12 buil
+: 1882 2 11 ding 
+: 1885 3 14 some 
+* 1889 47 12 walls
+- 1936
+: 1942 9 9 Freeze 
+: 1952 4 16 your 
+: 1957 47 16 brain
+- 2004
+: 2005 4 9 Swim 
+: 2010 3 9 in 
+: 2014 6 16 the 
+: 2021 10 16 ice
+- 2031
+: 2032 4 12 Get 
+: 2037 8 11 lost 
+: 2046 1 9 in 
+: 2048 2 12 the 
+: 2051 15 11 pain
+- 2066
+: 2068 6 12 Shut 
+: 2075 3 14 your 
+: 2079 8 16 eyes 
+: 2088 7 5 tight
+- 2095
+: 2096 4 12 ’Til 
+: 2101 1 12 you 
+: 2103 4 12 va
+: 2108 4 14 nish 
+: 2113 2 16 from 
+: 2116 8 5 sight
+- 2124
+: 2131 5 9 Let 
+: 2137 4 17 no
+: 2142 6 16 thing 
+: 2149 2 14 re
+: 2152 16 11 ma
+: 2169 5 12 i
+: 2175 23 11 n
+- 2198
+: 2201 8 9 Freeze 
+: 2210 4 16 your 
+: 2216 46 16 brain
+- 2262
+: 2264 7 9 Shatter 
+: 2272 5 16 your 
+: 2278 8 16 skull
+- 2286
+: 2287 5 12 Fight 
+: 2293 7 11 pain 
+: 2301 2 9 with 
+: 2304 2 12 more 
+: 2307 16 11 pain
+- 2323
+: 2326 5 12 Forget 
+: 2332 3 14 who 
+: 2336 2 16 you 
+: 2339 7 5 are
+- 2346
+: 2355 3 12 Un
+: 2359 9 14 burden 
+: 2369 3 16 your 
+: 2373 13 5 load
+- 2386
+: 2389 5 12 Forget 
+: 2395 2 14 in 
+: 2398 5 16 six 
+: 2404 10 11 weeks
+- 2414
+: 2417 2 9 You’ll 
+: 2420 1 9 be 
+: 2422 4 12 back 
+: 2427 2 14 on 
+: 2430 3 16 the 
+: 2434 5 11 ro
+: 2440 4 9 ad
+- 2444
+: 2446 3 9 When 
+: 2450 1 9 the 
+: 2452 7 9 voice 
+: 2460 2 11 in 
+: 2463 2 12 your 
+: 2466 10 16 head
+- 2476
+: 2477 4 9 Says 
+: 2482 4 9 you’re 
+: 2487 2 9 bet
+: 2490 2 11 ter 
+: 2493 4 12 off 
+: 2499 8 16 dead
+- 2507
+: 2512 6 12 Don’t 
+: 2520 2 19 o
+: 2523 5 17 pen 
+: 2529 2 16 a 
+* 2532 28 19 v
+* 2561 24 16 e
+* 2586 26 14 i
+* 2613 13 16 n
+- 2626 2638
+- 2638
+: 2656 14 12 Just 
+: 2671 7 16 fre
+: 2679 18 14 eze 
+: 2698 3 12 your 
+: 2702 10 14 bra
+: 2713 17 12 i
+: 2731 28 12 n
+- 2759
+: 2774 35 14 Freeze 
+: 2810 3 12 your 
+: 2814 9 14 bra
+: 2824 26 12 in
+- 2850
+: 2853 2 9 Go 
+: 2856 5 9 on 
+: 2862 4 9 and 
+: 2867 14 14 Free
+: 2882 3 14 ze 
+: 2886 4 12 your 
+: 2891 28 14 bra
+: 2920 29 14 in
+- 2949
+: 2954 5 0 Try 
+: 2960 4 0 it
+E
