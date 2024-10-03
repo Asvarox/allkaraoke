@@ -12,25 +12,37 @@ console.log(files);
 
 (async () => {
   for (const file of files) {
-    if (!file.endsWith('.txt')) continue;
+    try {
+      if (!file.endsWith('.txt')) continue;
 
-    const contents = readFileSync(file, 'utf-8');
-    const data = convertTxtToSong(contents);
+      const contents = readFileSync(file, 'utf-8');
+      const data = convertTxtToSong(contents);
 
-    data.tracks.forEach((track) => {
-      track.sections.forEach((section) => {
-        if ('notes' in section) {
-          section.notes.forEach((note) => {
-            note.lyrics = note.lyrics.replaceAll(/\\+"/g, '"');
-          });
-        }
+      data.tracks.forEach((track) => {
+        track.sections.forEach((section) => {
+          if ('notes' in section) {
+            section.notes.forEach((note) => {
+              note.lyrics = note.lyrics.replaceAll(/\\+"/g, '"');
+            });
+          }
+        });
       });
-    });
 
-    await updateLastUpdate(data);
-    await updateArtistOrigin(data);
+      try {
+        await updateLastUpdate(data);
+      } catch (error) {
+        console.error(`Error updating last update for ${file}: ${error}`);
+      }
+      try {
+        await updateArtistOrigin(data);
+      } catch (error) {
+        console.error(`Error updating artist origin for ${file}: ${error}`);
+      }
 
-    writeFileSync(file, convertSongToTxt(data), 'utf-8');
+      writeFileSync(file, convertSongToTxt(data), 'utf-8');
+    } catch (error) {
+      console.error(`Error processing ${file}: ${error}`);
+    }
   }
 })();
 
