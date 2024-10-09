@@ -13,7 +13,7 @@
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:112
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up
-#ALLKARAOKE_VOLUME:0,5
+#ALLKARAOKE_VOLUME:0,81
 : 15 4 58 We're 
 : 19 4 60 no 
 : 23 4 61 stran

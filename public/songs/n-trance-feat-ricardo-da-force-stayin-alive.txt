@@ -1,0 +1,830 @@
+#ARTIST:N-Trance feat. Ricardo Da Force
+#TITLE:Stayin’ Alive
+#CREATOR:Leroidukitch
+#BPM:214,1
+#YEAR:1995
+#VIDEO:v=qiKOif0UKRM
+#LANGUAGE:English
+#GAP:12379,14992993928
+#ALLKARAOKE_ID:n-trance-feat-ricardo-da-force-stayin-alive
+#ALLKARAOKE_LASTUPDATE:2024-10-09T00:16:05.423Z
+#ALLKARAOKE_REALBPM:107
+#ALLKARAOKE_VOLUME:0,99
+#MP3:N-Trance feat. Ricardo Da Force - Stayin’ Alive.mp3
+F 14 3 1 Get 
+F 18 3 1 raw 
+F 22 1 1 with 
+F 24 1 1 the 
+F 26 1 1 fe
+F 28 1 -1 ver
+- 29
+F 30 1 1 On 
+F 32 1 -1 the 
+F 34 3 1 dance 
+F 38 11 1 floor
+- 49 252
+- 252
+F 266 1 1 Now 
+F 268 3 1 who 
+F 272 1 1 got 
+F 274 1 1 the 
+F 276 1 1 fe
+F 278 1 1 ver 
+F 280 1 -1 for 
+F 282 1 1 the 
+F 284 9 1 play
+- 293
+F 294 1 1 Who 
+F 296 1 1 can 
+F 298 1 1 take 
+F 300 1 1 the 
+F 302 1 1 way 
+F 304 1 1 that 
+F 306 1 -1 I 
+F 308 1 -3 flex
+- 309
+F 310 3 1 So 
+F 314 1 1 can 
+F 316 1 1 a 
+F 318 1 1 tramp 
+F 320 1 1 come 
+F 322 1 1 on 
+F 324 1 1 a 
+F 326 1 1 ram
+F 328 1 1 page
+- 329
+F 336 1 1 We 
+F 338 1 1 can 
+F 340 7 1 work 
+F 348 1 1 all 
+F 350 1 1 day
+- 351
+F 352 1 1 With 
+F 354 1 1 the 
+F 356 5 1 na
+F 362 1 1 ppa 
+F 364 1 1 stuck 
+F 366 5 1 on 
+F 372 1 1 my 
+F 374 1 1 lip
+- 375
+F 376 1 1 They 
+F 378 1 1 would 
+F 380 1 -1 be 
+F 382 3 -3 rol
+F 386 5 1 lin’ 
+F 392 1 1 the 
+F 394 1 1 mad 
+F 396 1 1 joints
+- 397
+F 398 5 1 So 
+F 404 1 1 put 
+F 406 1 1 your 
+F 408 7 1 hands 
+F 416 1 1 in 
+F 418 1 1 the 
+F 420 1 1 air
+- 421
+F 422 1 1 ’Cause 
+F 424 1 1 there’s 
+F 426 1 1 a 
+F 428 1 1 party 
+F 430 1 1 up 
+F 432 3 1 ahead
+- 435
+F 442 1 1 So 
+F 444 1 -1 grab 
+F 446 1 1 your
+F 448 1 1 self 
+F 450 1 1 a 
+F 452 13 1 beer
+- 465
+F 466 1 1 Uh 
+F 468 1 -3 we 
+F 470 1 -1 can 
+F 472 1 -1 get 
+F 474 1 -1 our 
+F 476 3 -1 fe
+F 480 1 1 ver 
+F 482 7 -3 rollin’
+- 489
+F 490 1 -3 I’m 
+F 492 1 -3 with 
+F 494 3 -1 it 
+F 498 1 -1 so 
+F 500 1 -3 let 
+F 502 1 -1 me 
+F 504 1 -1 put
+- 505
+F 506 1 -1 My 
+F 508 3 -1 big 
+F 512 3 1 brown 
+F 516 5 -1 feet 
+F 522 1 1 for
+F 524 5 -3 ward
+- 529
+F 530 1 -3 I’m 
+F 532 1 -3 co
+F 534 1 1 ming 
+F 536 1 1 with 
+F 538 1 1 the 
+F 540 5 1 di
+F 546 5 1 sco
+- 551
+F 552 1 1 I 
+F 554 3 1 can 
+F 558 3 1 flip 
+F 562 7 1 so
+F 570 5 1 I’m 
+F 576 1 1 a 
+F 578 1 1 try 
+F 580 1 1 a 
+F 582 1 1 so
+F 584 3 1 lo 
+F 588 7 -3 tip
+F 596 5 -3 So
+F 602 1 1 me
+F 604 1 1 thing 
+F 606 1 1 for 
+F 608 1 1 the 
+F 610 1 1 ho
+F 612 1 1 neys 
+F 614 1 1 in 
+F 616 1 1 the 
+F 618 1 1 crowd
+- 619
+F 626 1 1 Let 
+F 628 5 1 me 
+F 634 1 1 get 
+F 636 1 1 red
+F 638 1 1 So
+- 639
+F 640 1 -1 I 
+F 642 1 1 can 
+F 644 3 1 turn 
+F 648 1 1 the 
+F 650 5 1 party 
+F 656 1 -3 out
+- 657
+F 658 1 1 Till 
+F 660 1 1 to
+F 662 1 1 morrow 
+F 664 1 1 af
+F 666 1 1 ter
+F 668 9 1 noon
+- 677
+F 678 3 1 ’Cause 
+F 682 1 1 when 
+F 684 1 1 I 
+F 686 1 1 grace 
+F 688 1 1 my 
+F 690 9 -1 style
+- 699
+F 700 5 1 No 
+F 706 1 1 one 
+F 708 3 1 leaves 
+F 712 1 1 the 
+F 714 7 1 room
+- 721
+F 722 1 1 So 
+F 724 1 -3 tell 
+F 726 1 -1 me 
+F 728 1 -1 can 
+F 730 1 -1 you 
+F 732 3 -1 feel 
+F 736 11 1 the
+- 747
+F 748 5 -1 Nice 
+F 754 1 -1 girls
+- 755
+F 756 1 -1 Co
+F 758 1 -1 ming 
+F 760 1 -1 with 
+F 762 1 -1 the 
+F 764 3 -1 fe
+F 768 1 1 ver 
+F 770 3 -1 fe
+F 774 3 1 ver 
+F 778 1 1 fever
+- 779
+: 780 7 1 Ah 
+: 788 7 13 ah 
+: 796 9 11 ah 
+: 806 5 8 ah 
+: 812 1 8 stay
+: 814 3 8 in’ 
+: 818 1 9 a
+: 820 7 9 live, 
+: 828 1 9 stay
+: 830 1 8 in’ 
+: 832 1 9 a
+: 834 9 9 live
+- 843
+: 844 7 9 Ah 
+: 852 7 13 ah 
+: 860 9 11 ah 
+: 870 5 8 ah 
+: 876 1 8 stay
+: 878 3 8 in’ 
+: 882 1 9 a
+: 884 7 9 live, 
+: 892 1 9 stay
+: 894 1 8 in’ 
+: 896 1 9 a
+: 898 5 9 live
+- 903
+: 904 3 9 Ah 
+: 908 7 13 ah 
+: 916 9 13 ah 
+: 926 7 11 ah 
+: 934 5 8 ah 
+: 940 1 8 stay
+: 942 3 8 in’ 
+: 946 1 9 a
+: 948 7 9 live 
+: 956 1 9 stay
+: 958 3 8 in’ 
+: 962 1 9 a
+: 964 9 9 live
+- 973
+: 974 5 9 Ah 
+: 980 7 13 ah 
+: 988 9 11 ah 
+: 998 5 8 ah 
+: 1004 1 8 stay
+: 1006 3 9 in’ 
+: 1010 1 9 a
+: 1012 93 9 live
+- 1105
+: 1106 1 1 Get 
+: 1108 5 1 raw 
+: 1114 1 1 with 
+: 1116 1 1 the 
+: 1118 1 1 fe
+: 1120 1 8 ver
+- 1121
+: 1122 1 1 On 
+: 1124 1 -1 the 
+: 1126 1 1 dance 
+: 1128 7 1 floor
+- 1135
+: 1136 3 1 Step 
+: 1140 5 13 to 
+: 1146 1 11 the 
+: 1148 21 9 side
+- 1169
+: 1170 1 11 You 
+: 1172 5 11 got 
+: 1178 1 11 to 
+: 1180 3 9 run 
+: 1184 3 13 and 
+: 1188 5 9 hi
+: 1194 5 6 ~de
+- 1199
+: 1200 3 9 Move 
+: 1204 5 13 to 
+: 1210 1 11 the 
+: 1212 13 9 side
+- 1225
+: 1226 1 11 E
+: 1228 1 11 ve
+: 1230 1 9 ry
+: 1232 1 11 bo
+: 1234 1 9 dy 
+: 1236 1 11 wants 
+: 1238 3 9 to 
+: 1242 1 13 stay 
+: 1244 3 9 a
+: 1248 15 6 live
+- 1263
+: 1264 1 9 E
+: 1266 1 1 very
+: 1268 1 1 bo
+: 1270 1 1 dy’s 
+: 1272 1 1 in 
+: 1274 1 1 the 
+: 1276 9 1 house
+- 1285
+F 1288 1 1 We 
+F 1290 1 1 have 
+F 1292 1 1 to 
+F 1294 1 1 warm 
+F 1296 3 1 this 
+F 1300 7 -3 bed
+- 1307
+F 1308 1 1 So 
+F 1310 1 1 you 
+F 1312 1 1 can 
+F 1314 1 1 break 
+F 1316 1 1 your 
+F 1318 11 1 fliz
+- 1329
+F 1330 3 -3 Im
+F 1334 5 1 press 
+F 1340 1 1 on 
+F 1342 1 1 the 
+F 1344 3 1 lone
+F 1348 1 1 ly 
+F 1350 1 -3 one
+- 1351
+F 1352 1 -3 We 
+F 1354 1 1 got 
+F 1356 1 1 to 
+F 1358 5 1 go 
+F 1364 1 1 with 
+F 1366 5 -3 one
+- 1371
+F 1372 1 -3 So 
+F 1374 1 -3 let 
+F 1376 3 1 me 
+F 1380 1 -1 get 
+F 1382 1 1 my 
+F 1384 1 1 fleb 
+F 1386 1 1 in 
+F 1388 5 -3 order
+- 1393
+F 1396 1 -3 Hit 
+F 1398 1 1 the 
+F 1400 5 1 brass 
+F 1406 1 1 on 
+F 1408 1 1 the 
+F 1410 3 1 past 
+F 1414 1 1 any 
+F 1416 1 1 heard 
+F 1418 3 1 of
+- 1421
+F 1422 1 1 Me 
+F 1424 1 1 and 
+F 1426 1 1 the 
+F 1428 1 1 boys 
+F 1430 5 -3 co
+F 1436 1 1 min’ 
+F 1438 3 1 do
+F 1442 1 1 ~wn 
+F 1444 3 1 with 
+F 1448 5 1 mur
+F 1454 3 1 der
+- 1457
+F 1458 1 1 And 
+F 1460 1 -1 it’s 
+F 1462 1 -1 got
+F 1464 1 -1 ta 
+F 1466 1 -1 be 
+F 1468 1 -1 the 
+F 1470 11 -1 way
+- 1481
+F 1482 1 -1 E
+F 1484 1 -1 very
+F 1486 1 -1 bo
+F 1488 1 -1 dy 
+F 1490 1 -1 wants 
+F 1492 1 -1 to 
+F 1494 5 -3 make 
+F 1500 1 -1 a 
+F 1502 1 -3 move
+- 1503
+F 1504 1 -1 So 
+F 1506 3 -1 just 
+F 1510 5 -1 pa
+F 1516 7 1 rty
+- 1523
+F 1524 1 -3 And 
+F 1526 1 -3 we 
+F 1528 1 1 can 
+F 1530 1 1 have 
+F 1532 1 1 a 
+F 1534 9 1 jam
+- 1543
+F 1544 1 1 So 
+F 1546 1 -1 get 
+F 1548 1 1 you
+F 1550 5 1 ~r 
+F 1556 1 1 move 
+F 1558 1 1 on
+- 1559
+F 1560 1 1 I’m 
+F 1562 1 1 gonna 
+F 1564 1 1 take 
+F 1566 3 1 the 
+F 1570 5 1 screws 
+F 1576 4 -1 and 
+F 1581 8 -1 slam
+- 1589
+F 1590 1 1 Flip 
+F 1592 1 1 it 
+F 1594 1 1 how 
+F 1596 1 1 it 
+F 1598 1 1 wan
+F 1600 3 1 na 
+F 1604 7 1 flip
+- 1611
+F 1612 1 1 From 
+F 1614 1 1 the 
+F 1616 3 1 back 
+F 1620 1 1 to 
+F 1622 1 1 the 
+F 1624 3 1 front
+- 1627
+F 1628 1 1 When 
+F 1630 1 1 I talk 
+F 1632 3 1 and 
+F 1636 1 1 read 
+F 1638 1 1 the 
+F 1640 1 1 ma
+F 1642 1 1 nu
+F 1644 7 -3 script
+- 1651
+F 1652 1 -3 ’Cause 
+F 1654 1 -3 I 
+F 1656 3 1 got 
+F 1660 1 1 the 
+F 1662 9 1 moves
+- 1671
+F 1674 1 1 And 
+F 1676 1 1 I’m 
+F 1678 3 1 al
+F 1682 1 1 ways 
+F 1684 1 1 on 
+F 1686 3 1 the 
+F 1690 1 1 floor
+- 1691
+F 1692 1 1 With 
+F 1694 1 1 the 
+F 1696 1 1 crazy, 
+F 1698 3 1 crazy 
+F 1702 1 1 groo
+F 1704 11 1 ~ves
+- 1715
+F 1718 1 1 So 
+F 1720 1 -1 tell 
+F 1722 1 -1 me
+- 1723
+F 1724 1 -1 Can 
+F 1726 3 -1 you 
+F 1730 3 1 feel 
+F 1734 4 1 the
+- 1738
+F 1742 3 -1 Nice 
+F 1746 3 -1 girls
+- 1749
+F 1750 1 -1 Co
+F 1752 1 -1 ming 
+F 1754 1 -1 with 
+F 1756 1 -1 the 
+F 1758 5 -1 fe
+F 1764 1 1 ver, 
+F 1766 1 -1 fe
+F 1768 1 1 ver, 
+F 1770 5 -1 fever
+- 1775
+: 1778 5 1 Ah 
+: 1784 7 13 ah 
+: 1792 9 11 ah 
+: 1802 5 8 ah 
+: 1808 1 8 stay
+: 1810 3 8 yi
+: 1814 1 9 n’ 
+: 1816 7 9 alive 
+: 1824 1 9 stay
+: 1826 1 8 yi
+: 1828 1 9 n’ 
+: 1830 9 9 alive
+- 1839
+: 1840 7 9 Ah 
+: 1848 7 13 ah 
+: 1856 9 11 ah 
+: 1866 5 8 ah 
+: 1872 1 8 stay
+: 1874 3 8 i
+: 1878 1 9 ~n’ 
+: 1880 7 9 alive, 
+: 1888 1 9 stay
+: 1890 1 8 i
+: 1892 1 9 ~n’ 
+: 1894 5 9 alive
+- 1899
+: 1900 3 9 Ah 
+: 1904 7 13 ah 
+: 1912 7 13 ah 
+: 1920 9 11 ah 
+: 1930 5 8 ah 
+: 1936 1 8 stay
+: 1938 3 8 i
+: 1942 1 9 ~n’ 
+: 1944 7 9 alive, 
+: 1952 1 9 stay
+: 1954 1 8 i
+: 1956 1 9 ~n’ 
+: 1958 9 9 alive
+- 1967
+: 1968 7 9 Ah 
+: 1976 7 13 ah 
+: 1984 9 11 ah 
+: 1994 5 8 ah 
+: 2000 1 8 stay
+: 2002 3 9 i
+: 2006 1 9 ~n’ 
+: 2008 93 9 alive
+- 2101
+F 2102 1 1 Get 
+F 2104 5 1 raw 
+F 2110 1 1 with 
+F 2112 1 1 the 
+F 2114 1 1 fe
+F 2116 1 8 ver
+- 2117
+F 2118 1 1 On 
+F 2120 1 -1 the 
+F 2122 1 1 dance 
+F 2124 7 1 floor
+- 2131
+: 2132 3 1 Step 
+: 2136 5 13 to 
+: 2142 1 11 the 
+: 2144 21 9 side
+- 2165
+: 2166 1 11 You 
+: 2168 3 11 got 
+: 2172 1 11 to 
+: 2174 5 9 run 
+: 2180 3 13 and 
+: 2184 3 9 hi
+: 2188 7 6 ~de
+- 2195
+: 2196 3 9 Move 
+: 2200 5 13 to 
+: 2206 1 11 the 
+: 2208 13 9 side
+- 2221
+: 2222 1 11 E
+: 2224 1 11 ve
+: 2226 1 9 ry
+: 2228 1 11 bo
+: 2230 1 9 dy 
+: 2232 1 11 wants 
+: 2234 3 9 to 
+: 2238 1 13 stay 
+: 2240 3 9 a
+: 2244 11 6 live
+- 2255
+: 2256 3 9 Step 
+: 2260 5 13 to 
+: 2266 1 11 the 
+: 2268 21 9 side
+- 2289
+: 2292 1 11 You 
+: 2294 5 11 got 
+: 2300 1 11 to 
+: 2302 5 9 run 
+: 2308 1 13 and 
+: 2310 3 9 hi
+: 2314 7 6 ~de
+- 2321
+: 2322 3 9 Move 
+: 2326 5 13 to 
+: 2332 1 11 the 
+: 2334 11 9 side
+- 2345
+F 2346 1 11 E
+F 2348 1 11 ve
+F 2350 1 11 ry
+F 2352 1 11 bo
+F 2354 1 9 dy 
+F 2356 1 11 wants 
+F 2358 5 9 to 
+F 2364 1 13 stay 
+F 2366 3 9 a
+F 2370 7 6 live
+- 2377
+F 2378 1 9 E
+F 2380 1 4 very
+F 2382 1 4 bo
+F 2384 1 4 dy 
+F 2386 1 4 in 
+F 2388 1 4 the 
+F 2390 5 4 house
+- 2395
+F 2396 1 4 Come 
+F 2398 1 4 on 
+F 2400 1 4 and 
+F 2402 1 4 let 
+F 2404 1 4 me 
+F 2406 1 4 hear 
+F 2408 1 4 you 
+F 2410 5 4 say
+- 2415
+F 2416 5 4 Ho 
+F 2422 21 4 ho
+- 2443
+F 2446 1 4 E
+F 2448 1 4 very
+F 2450 1 4 bo
+F 2452 1 4 dy 
+F 2454 1 4 in 
+F 2456 1 4 the 
+F 2458 3 4 house
+- 2461
+F 2462 1 4 Come 
+F 2464 1 4 on 
+F 2466 1 4 and 
+F 2468 1 4 let 
+F 2470 1 4 me 
+F 2472 1 4 hear 
+F 2474 1 4 you 
+F 2476 5 4 say
+- 2481
+F 2482 5 4 Ho 
+F 2488 21 4 ho
+- 2509
+F 2510 1 4 E
+F 2512 1 4 very
+F 2514 1 4 bo
+F 2516 1 4 dy 
+F 2518 1 4 in 
+F 2520 1 4 the 
+F 2522 3 4 house
+- 2525
+F 2526 1 4 Come 
+F 2528 1 4 on 
+F 2530 1 4 and 
+F 2532 1 4 let 
+F 2534 1 4 me 
+F 2536 1 4 hear 
+F 2538 1 4 you 
+F 2540 3 4 say
+- 2543
+F 2544 7 4 Ho 
+F 2552 19 4 ho
+- 2571
+F 2574 1 1 E
+F 2576 1 4 very
+F 2578 1 4 bo
+F 2580 1 3 dy 
+F 2582 1 3 in 
+F 2584 1 3 the 
+F 2586 5 3 house
+- 2591
+F 2592 1 3 Come 
+F 2594 1 3 on 
+F 2596 1 3 and 
+F 2598 1 3 let 
+F 2600 1 3 me 
+F 2602 1 3 hear 
+F 2604 1 3 you 
+F 2606 3 3 say
+- 2609
+F 2610 3 3 Ho 
+F 2614 3 4 ho 
+F 2618 27 4 ho
+- 2645
+F 2646 1 4 It’s 
+F 2648 1 1 a
+F 2650 5 1 bout 
+F 2656 7 1 time
+- 2663
+F 2664 1 1 E
+F 2666 1 1 very
+F 2668 1 1 bo
+F 2670 1 1 dy 
+F 2672 1 1 in 
+F 2674 1 1 the 
+F 2676 3 1 house 
+F 2680 1 1 put 
+F 2682 1 1 the 
+F 2684 3 1 move
+- 2687
+F 2688 1 1 To 
+F 2690 1 1 my 
+F 2692 1 1 of
+F 2694 1 1 ficial 
+F 2696 5 -3 rule 
+F 2702 7 1 round
+- 2709
+F 2710 1 1 We 
+F 2712 1 1 could 
+F 2714 1 1 rip 
+F 2716 1 1 on 
+F 2718 1 -1 a 
+F 2720 7 -3 tip
+- 2727
+F 2728 1 1 With 
+F 2730 1 1 my 
+F 2732 3 1 boys 
+F 2736 1 1 bring
+F 2738 1 1 ing 
+F 2740 3 1 dis
+F 2744 1 1 co 
+F 2746 5 1 noise
+- 2751
+F 2752 1 1 As 
+F 2754 1 1 I 
+F 2756 3 1 crop 
+F 2760 1 1 the 
+F 2762 3 1 wic
+F 2766 1 1 ked
+F 2768 5 -3 ness
+- 2773
+F 2774 1 -3 Get
+F 2776 1 1 tin’ 
+F 2778 5 1 sharp 
+F 2784 1 1 with 
+F 2786 1 1 the 
+F 2788 7 1 flow
+- 2795
+F 2796 1 1 We 
+F 2798 1 1 took 
+F 2800 1 1 a 
+F 2802 5 1 Bee 
+F 2808 1 1 Gee’s 
+F 2810 1 1 flip
+- 2811
+F 2812 1 1 And 
+F 2814 1 1 broke 
+F 2816 1 1 it 
+F 2818 3 1 down 
+F 2822 3 1 like 
+F 2826 3 1 Ke
+F 2830 9 1 ko
+- 2839
+F 2840 1 -3 And 
+F 2842 5 -3 dis
+F 2848 1 -1 con
+F 2850 1 -3 nect 
+F 2852 3 -1 that 
+F 2856 3 -1 dee
+F 2860 5 -1 per
+- 2865
+F 2866 1 -1 ’Cause 
+F 2868 1 -1 we 
+F 2870 1 -1 got 
+F 2872 1 -1 to 
+F 2874 5 -1 get 
+F 2880 1 -1 with 
+F 2882 1 -1 the 
+F 2884 1 -1 fe
+F 2886 1 1 ver, 
+F 2888 3 -1 fe
+F 2892 1 1 ver, 
+F 2894 3 1 fever
+- 2897
+: 2898 7 1 Ah 
+: 2906 7 13 ah 
+: 2914 9 11 ah 
+: 2924 5 8 ah 
+: 2930 1 8 stay
+: 2932 3 8 in’ 
+: 2936 1 9 a
+: 2938 7 9 live, 
+: 2946 1 9 stay
+: 2948 1 8 in’ 
+: 2950 1 9 a
+: 2952 9 9 live
+- 2961
+: 2962 7 9 Ah 
+: 2970 7 13 ah 
+: 2978 9 11 ah 
+: 2988 5 8 ah 
+: 2994 1 8 stay
+: 2996 3 8 in’ 
+: 3000 1 9 a
+: 3002 7 9 live, 
+: 3010 1 9 stay
+: 3012 1 8 in’ 
+: 3014 1 9 a
+: 3016 5 9 live
+- 3021
+: 3022 3 9 Ah 
+: 3026 7 13 ah 
+: 3034 7 13 ah 
+: 3042 9 11 ah 
+: 3052 5 8 ah 
+: 3058 1 8 stay
+: 3060 3 8 in’ 
+: 3064 1 9 a
+: 3066 7 9 live, 
+: 3074 1 9 stay
+: 3076 1 8 in’ 
+: 3078 1 9 a
+: 3080 9 9 live
+- 3089
+: 3090 7 9 Ah 
+: 3098 7 13 ah 
+: 3106 9 11 ah 
+: 3116 5 8 ah 
+: 3122 1 8 stay
+: 3124 3 9 in’ 
+: 3128 1 9 a
+: 3130 87 9 live
+- 3217
+F 3222 5 9 Get 
+F 3228 1 1 raw 
+F 3230 5 1 with 
+F 3236 1 1 the 
+F 3238 1 1 fe
+F 3240 1 1 ver
+- 3241
+F 3242 1 8 On 
+F 3244 1 1 the 
+F 3246 1 -1 dance 
+F 3248 3 1 floor
+E

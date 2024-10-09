@@ -43121,6 +43121,31 @@
     "local": false
   },
   {
+    "id": "khalid-x-normani-love-lies",
+    "title": "Love Lies",
+    "artist": "Khalid x Normani",
+    "video": "xYtsL9znopI",
+    "language": [
+      "English"
+    ],
+    "bpm": 321.15,
+    "gap": 51829.14992993928,
+    "year": "2018",
+    "lastUpdate": "2024-10-09T00:16:05.139Z",
+    "realBpm": 144,
+    "volume": 0.69,
+    "author": "RetroGirl",
+    "sourceUrl": "https://youtu.be/xYtsL9znopI?si=DYqkM1c8WuTo5zsa",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "khalidxnormanilovelies",
+    "local": false
+  },
+  {
     "id": "kid-cudi-day-n-nite",
     "title": "Day ’N’ Nite",
     "artist": "Kid Cudi",
@@ -44959,6 +44984,32 @@
     ],
     "tracksCount": 1,
     "search": "ladygagabornthisway",
+    "local": false
+  },
+  {
+    "id": "lady-gaga-bradley-cooper-shallow",
+    "title": "Shallow",
+    "artist": "Lady Gaga, Bradley Cooper",
+    "video": "EMrwaWroMhg",
+    "language": [
+      "English"
+    ],
+    "bpm": 367.75,
+    "gap": 14981.285520054385,
+    "year": "2018",
+    "lastUpdate": "2024-10-09T00:16:05.276Z",
+    "realBpm": 96,
+    "volume": 0.75,
+    "author": "asdFer",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga%2C%20Bradley%20Cooper&cancion=Shallow",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagabradleycoopershallow",
     "local": false
   },
   {
@@ -48271,6 +48322,31 @@
     "local": false
   },
   {
+    "id": "los-angeles-azules-como-te-voy-a-olvidar",
+    "title": "Cómo te voy a olvidar",
+    "artist": "Los Ángeles Azules",
+    "video": "nxXvOEPsE0s",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 249.24,
+    "gap": 34775.889744824264,
+    "year": "1996",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-10-09T00:16:05.418Z",
+    "realBpm": 83,
+    "volume": 0.74,
+    "author": "nonplusultra18",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "losangelesazulescomotevoyaolvidar",
+    "local": false
+  },
+  {
     "id": "los-bukis-navidad-sin-ti",
     "title": "Navidad sin ti",
     "artist": "Los Bukis",
@@ -48429,6 +48505,34 @@
     ],
     "tracksCount": 1,
     "search": "loslobosgipsykingslabamba",
+    "local": false
+  },
+  {
+    "id": "los-palmeras-olvidala",
+    "title": "Olvídala",
+    "artist": "Los Palmeras",
+    "video": "NabLI7HdoLQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 264.03,
+    "gap": 31058.38893307579,
+    "year": "1998",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-10-09T00:16:05.420Z",
+    "genre": "Cumbia",
+    "realBpm": 132,
+    "previewStart": 88,
+    "previewEnd": 109,
+    "volume": 0.78,
+    "author": "Pelu5",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lospalmerasolvidala",
     "local": false
   },
   {
@@ -53013,7 +53117,7 @@
       "English"
     ],
     "bpm": 345,
-    "gap": 43320,
+    "gap": 43470,
     "year": "2015",
     "artistOrigin": "US",
     "lastUpdate": "2024-05-08T17:37:19.791Z",
@@ -53136,6 +53240,33 @@
     ],
     "tracksCount": 1,
     "search": "melaniemartinezsoap",
+    "local": false
+  },
+  {
+    "id": "melanie-martinez-tag-youre-it",
+    "title": "Tag, You're It",
+    "artist": "Melanie Martinez",
+    "video": "RLYlMq6MU2s",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 7697.739130434783,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-09T00:16:05.422Z",
+    "genre": "Alternative",
+    "realBpm": 115,
+    "volume": 0.76,
+    "author": "Rubn4",
+    "tracks": [
+      {
+        "name": "Tag You're It",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "melaniemartineztagyoureit",
     "local": false
   },
   {
@@ -55357,7 +55488,7 @@
       "English"
     ],
     "bpm": 228.2,
-    "gap": 17294.022787028924,
+    "gap": 17344.022787028924,
     "year": "1985",
     "artistOrigin": "DE",
     "lastUpdate": "2024-08-17T00:15:08.781Z",
@@ -57016,6 +57147,30 @@
     ],
     "tracksCount": 1,
     "search": "nsynctearinupmyheart",
+    "local": false
+  },
+  {
+    "id": "n-trance-feat-ricardo-da-force-stayin-alive",
+    "title": "Stayin’ Alive",
+    "artist": "N-Trance feat. Ricardo Da Force",
+    "video": "qiKOif0UKRM",
+    "language": [
+      "English"
+    ],
+    "bpm": 214.1,
+    "gap": 12379.14992993928,
+    "year": "1995",
+    "lastUpdate": "2024-10-09T00:16:05.423Z",
+    "realBpm": 107,
+    "volume": 0.99,
+    "author": "Leroidukitch",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ntrancefeatricardodaforcestayinalive",
     "local": false
   },
   {
@@ -67168,7 +67323,7 @@
     "lastUpdate": "2024-05-17T16:50:30.582Z",
     "edition": "SingStar English",
     "realBpm": 112,
-    "volume": 0.5,
+    "volume": 0.81,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up",
@@ -70428,6 +70583,32 @@
     "local": false
   },
   {
+    "id": "selena-gomez-feat-gucci-mane-fetish",
+    "title": "Fetish",
+    "artist": "Selena Gomez feat. Gucci Mane",
+    "video": "STO4-8vkG0U",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.98,
+    "gap": 39764.31091958696,
+    "year": "2017",
+    "lastUpdate": "2024-10-09T00:16:04.991Z",
+    "genre": "Pop",
+    "realBpm": 123,
+    "volume": 0.71,
+    "author": "amro98",
+    "sourceUrl": "https://youtu.be/STO4-8vkG0U",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezfeatguccimanefetish",
+    "local": false
+  },
+  {
     "id": "selena-gomez-hands-to-myself",
     "title": "Hands To Myself",
     "artist": "Selena Gomez",
@@ -72842,6 +73023,33 @@
     ],
     "tracksCount": 1,
     "search": "simpleplanimjustakid",
+    "local": false
+  },
+  {
+    "id": "simple-plan-perfect",
+    "title": "Perfect",
+    "artist": "Simple Plan",
+    "video": "RUi54JTgL5s",
+    "language": [
+      "English"
+    ],
+    "bpm": 227,
+    "gap": 25048.810572687224,
+    "year": "2002",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-10-09T00:16:04.985Z",
+    "genre": "Punk",
+    "realBpm": 156,
+    "volume": 0.8,
+    "author": "jdogk",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7008",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "simpleplanperfect",
     "local": false
   },
   {
@@ -76232,6 +76440,34 @@
     "local": false
   },
   {
+    "id": "tan-bionica-loca",
+    "title": "Loca",
+    "artist": "Tan Biónica",
+    "video": "xRaNtoiUkjQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 367.84,
+    "gap": 771.5350152240102,
+    "year": "2010",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-10-09T00:16:04.982Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "previewEnd": 30,
+    "volume": 0.83,
+    "author": "alanguapo",
+    "sourceUrl": "https://www.youtube.com/watch?v=xRaNtoiUkjQ",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tanbionicaloca",
+    "local": false
+  },
+  {
     "id": "tarzan-boy-tarzan",
     "title": "Tarzan",
     "artist": "Tarzan Boy",
@@ -77682,7 +77918,7 @@
       "English"
     ],
     "bpm": 247.72,
-    "gap": 8903.164217665106,
+    "gap": 8953.164217665106,
     "year": "1964",
     "artistOrigin": "GB",
     "lastUpdate": "2024-05-15T15:38:09.165Z",
@@ -79252,7 +79488,7 @@
       "English"
     ],
     "bpm": 300,
-    "gap": 18700,
+    "gap": 18800,
     "year": "2017",
     "artistOrigin": "US",
     "lastUpdate": "2024-08-17T00:15:08.790Z",
@@ -80151,6 +80387,32 @@
     ],
     "tracksCount": 1,
     "search": "theoffspringyouregonnagofarkid",
+    "local": false
+  },
+  {
+    "id": "the-phantom-of-the-opera-the-phantom-of-the-opera",
+    "title": "The Phantom Of The Opera",
+    "artist": "The Phantom of the Opera",
+    "video": "G2zxzaWgVRA",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 22341.59663865546,
+    "year": "2021",
+    "artistOrigin": "BE",
+    "lastUpdate": "2024-10-09T00:16:04.817Z",
+    "realBpm": 120,
+    "volume": 0.99,
+    "author": "Charis",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=3548",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thephantomoftheoperathephantomoftheopera",
     "local": false
   },
   {
@@ -86020,13 +86282,14 @@
       "English"
     ],
     "bpm": 320.17,
-    "gap": 3537.681728880157,
+    "gap": 3537.147671549489,
     "year": "1984",
     "artistOrigin": "GB",
     "lastUpdate": "2023-11-30T16:28:25.823Z",
     "edition": "Christmas",
     "genre": "Christmas",
     "realBpm": 108,
+    "volume": 0.8,
     "author": "asb",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas",
@@ -86117,6 +86380,32 @@
     ],
     "tracksCount": 1,
     "search": "whitesnakehereigoagain1987",
+    "local": false
+  },
+  {
+    "id": "whitesnake-here-i-go-again",
+    "title": "Here I Go Again",
+    "artist": "Whitesnake",
+    "video": "WyF8RHM1OCg",
+    "language": [
+      "English"
+    ],
+    "bpm": 361.15,
+    "gap": 11203.184272462966,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-09T00:16:04.154Z",
+    "genre": "None",
+    "realBpm": 174,
+    "volume": 0.99,
+    "author": "mk90",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitesnakehereigoagain",
     "local": false
   },
   {
@@ -86760,6 +87049,34 @@
     ],
     "tracksCount": 1,
     "search": "windows95mannorules",
+    "local": false
+  },
+  {
+    "id": "winx-club-petra-scheeser-heller-als-licht",
+    "title": "Heller als Licht",
+    "artist": "Winx Club (Petra Scheeser)",
+    "video": "0QHpAE82Yo8",
+    "language": [
+      "German"
+    ],
+    "bpm": 267.84,
+    "gap": 3281.935483870968,
+    "year": "2004",
+    "lastUpdate": "2024-10-09T00:16:04.157Z",
+    "genre": "Soundtrack",
+    "realBpm": 134,
+    "previewStart": 48,
+    "previewEnd": 77,
+    "volume": 1,
+    "author": "march",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=21568",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "winxclubpetrascheeserhelleralslicht",
     "local": false
   },
   {
