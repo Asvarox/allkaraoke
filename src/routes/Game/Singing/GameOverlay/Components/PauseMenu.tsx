@@ -4,7 +4,6 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import SongsService from 'modules/Songs/SongsService';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import isE2E from 'modules/utils/isE2E';
 import { useEffect, useRef, useState } from 'react';
 import RateSong from 'routes/Game/Singing/GameOverlay/Components/RateSong';
 import SelectInputModal from 'routes/SelectInput/SelectInputModal';
@@ -35,7 +34,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     const songPreview = (await SongsService.getIndex()).find((song) => song.id === GameState.getSong()?.id);
 
     // todo add e2e test
-    if (!songPreview?.local && progress < 0.7 && !isE2E()) {
+    if (!songPreview?.local && progress < 0.7) {
       setRateSongOpen(true);
     } else {
       onExit();

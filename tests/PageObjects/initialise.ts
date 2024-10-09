@@ -11,6 +11,7 @@ import { MainMenuPagePO } from './MainMenuPage';
 import { ManageSongsPagePO } from './ManageSongsPage';
 import { PostGameHighScoresPagePO } from './PostGameHighScoresPage';
 import { PostGameResultsPagePO } from './PostGameResultsPage';
+import { RateUnfinishedSongPagePO } from './RateUnfinishedSongPage';
 import { RemoteMicMainPagePO } from './RemoteMic/RemoteMicMainPage';
 import { SettingsPagePO } from './SettingsPage';
 import { SingstarConnectionPagePO } from './SingstarConnectionPage';
@@ -48,5 +49,6 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     computersMicConnectionPage: new ComputersMicConnectionPagePO(page, context, browser),
     joinExistingGamePage: new JoinExistingGamePagePO(page, context, browser),
     settingsPage: new SettingsPagePO(page, context, browser),
+    rateUnfinishedSongPage: new RateUnfinishedSongPagePO(page, context, browser),
   };
 }

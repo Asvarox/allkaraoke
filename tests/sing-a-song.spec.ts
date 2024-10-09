@@ -180,6 +180,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
 
   await test.step('After game is ended, properly players score values should be displayed', async () => {
     await pages.gamePage.exitSong();
+    await pages.rateUnfinishedSongPage.skipSongRating();
     await pages.postGameResultsPage.expectPlayerScoreValueToBe(player1.number, currentP1score!);
     await pages.postGameResultsPage.expectPlayerScoreValueToBe(player2.number, currentP2score!);
   });
