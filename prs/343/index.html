@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/prs/343/logo.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/prs/343/manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(console.warn);
+      }
+    </script>
+    <meta name="theme-color" content="#ffa500"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="" />
+    <title>AllKaraoke.Party - Free Online Karaoke Party Game</title>
+    <meta
+      name="description"
+      content="100% Free online SingStar-like Karaoke party game - 3,000+ songs and counting! No download needed, just use your phone or a regular/SingStar mic to sing" />
+    <script>
+      var global = window; // Some scripts rely on `global` which is node-only
+    </script>
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+    <script type="module" crossorigin src="/prs/343/assets/index-CjQbCGR0.js"></script>
+    <link rel="stylesheet" crossorigin href="/prs/343/assets/index-CFxP0XhO.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
