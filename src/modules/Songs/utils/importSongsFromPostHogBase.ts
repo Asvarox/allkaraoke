@@ -64,7 +64,7 @@ export const importSongsFromPostHogBase = async (
             select events.properties.song, events.properties.songId, events.created_at
             from events
             where events.created_at > toDateTime('${from ?? AFTER_DATE}')
-              and event IN ('share-song', 'unshare-song')
+              and event IN ('share-song', 'unshare-song') and events.properties.$user_id !='3ab0feed-e1d2-4ff0-8780-5db00698eb60'
             ORDER BY events.created_at ASC
             LIMIT 300
         `,
@@ -93,7 +93,9 @@ export const importSongsFromPostHogBase = async (
       } else if ((song.tracks[0]?.sections.length ?? 0) < 5) {
         console.log(`Song ${song.id} seems to be broken, ${song.tracks[0]?.sections.length} sections found`);
       } else if (currentSongs.find((currentSong) => currentSong.id === song.id)) {
-        console.log(`Song ${song.id} already exists`);
+        console.log(`Song ${song.id} already exists (by song id)`);
+      } else if (currentSongs.find((currentSong) => currentSong.video === song.video)) {
+        console.log(`Song ${song.id} already exists (by video id)`);
       } else {
         song.lastUpdate = new Date().toISOString();
         songsAdded.push(song.id);
