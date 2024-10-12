@@ -1,17 +1,18 @@
 import fs from 'fs';
 import path from 'path';
-import { Browser, chromium, LaunchOptions } from 'playwright';
+import puppeteer, { Browser, PuppeteerLaunchOptions } from 'puppeteer';
 import { RenderedRoute } from './types';
 
 export default class Renderer {
   private _browser?: Browser;
 
   async init(): Promise<void> {
-    const options: LaunchOptions = {
-      args: ['--headless=new', '--no-sandbox', '--disable-setuid-sandbox'],
+    const options: PuppeteerLaunchOptions = {
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     };
 
-    this._browser = await chromium.launch(options);
+    this._browser = await puppeteer.launch(options);
   }
 
   async destroy(): Promise<void> {
@@ -25,11 +26,7 @@ export default class Renderer {
 
     const page = await this._browser.newPage();
     await page.goto(`http://localhost:${port}${path.join(basePath, route)}`);
-    try {
-      await page.waitForSelector(selector, { timeout: 10000, state: 'attached' });
-    } catch (error) {
-      console.error(`Failed to prerender route: ${route}`);
-    }
+    await page.waitForSelector(selector, { timeout: 10000 });
     const html = await page.content();
 
     return { route, html };

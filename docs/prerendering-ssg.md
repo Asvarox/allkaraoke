@@ -9,9 +9,10 @@ putting params of the URL the query string this is now mitigated.
 ## Solution
 During build, all known paths (kept in `src/routePaths.ts`) are passed to 
 [vite-plugin-html-prerender](https://github.com/saeedafzal/vite-plugin-html-prerender), which then uses Puppeteer to render 
-the pages and save them in appropriate folder structure. The project is copied and modified so it
-1. Handles custom `basePath` (needed for branch deployment)
-2. Uses Playwright rather than Puppeteer for rendering (so there's no need to double-install the browsers)
+the pages and save them in appropriate folder structure.
+
+Although the plugin is niche and not very popular, it's simple enough to be easily ported to this project and make it
+compatible with it if it gets abandoned.
 
 ## Alternative solutions considered
 ### Next.js

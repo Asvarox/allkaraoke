@@ -150,6 +150,7 @@
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
+    "puppeteer": "^21.11.0",
     "react-refresh": "^0.14.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-visualizer": "^5.12.0",
