@@ -27,11 +27,12 @@ export default class Renderer {
     await page.goto(`http://localhost:${port}${path.join(basePath, route)}`);
     try {
       await page.waitForSelector(selector, { timeout: 10000, state: 'attached' });
+      await page.waitForLoadState('networkidle');
     } catch (error) {
       console.error(`Failed to prerender route: ${route}`);
     }
-    const html = await page.content();
 
+    const html = await page.content();
     return { route, html };
   }
 
