@@ -65,4 +65,16 @@ export class RemoteMicMainPagePO {
   public async pressReadyOnRemoteMic() {
     await this.readyButton.click();
   }
+
+  public get gameCodeInput() {
+    return this.page.getByTestId('game-code-input');
+  }
+
+  public async expectGameCodeToBe(gameCode: string) {
+    await expect(this.gameCodeInput).toHaveValue(gameCode);
+  }
+
+  public async clickToConnectMic() {
+    await this.page.getByTestId('connect-button').click();
+  }
 }

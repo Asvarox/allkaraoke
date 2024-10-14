@@ -24,6 +24,10 @@ export class RemoteMicSettingsPage {
     await this.page.getByTestId('menu-microphone').click();
   }
 
+  public get resetMicInfo() {
+    return this.page.getByTestId('reset-mic-info');
+  }
+
   public async resetMicrophone() {
     await this.page.getByTestId('reset-microphone').click();
   }
