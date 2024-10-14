@@ -48,7 +48,7 @@ function MicrophoneSettings() {
       <MenuButton onClick={reset} size="small" data-test="reset-microphone">
         Reset microphone
       </MenuButton>
-      <h6>
+      <h6 data-test={'reset-mic-info'}>
         <strong>Note:</strong> removes all persisted microphone data (your name, ID etc.)
       </h6>
       <hr />
