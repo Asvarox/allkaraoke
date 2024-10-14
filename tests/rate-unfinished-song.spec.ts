@@ -137,4 +137,29 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
   });
+
+  await test.step('Navigate with keyboard to play random song', async () => {
+    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
+    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
+    await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
+  });
+
+  await test.step('Exit the song before its end', async () => {
+    await page.waitForTimeout(1000);
+    await pages.gamePage.exitSong();
+  });
+
+  await test.step('User can select all issues as a reasons of unfinished song', async () => {
+    await pages.rateUnfinishedSongPage.selectLyricsSyncIssue();
+    await pages.rateUnfinishedSongPage.selectWrongLyricsIssue();
+    await pages.rateUnfinishedSongPage.selectVolumeIssue();
+    await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
+  });
+
+  await test.step('User can return to Song List to choose another song', async () => {
+    await pages.postGameResultsPage.skipScoresAnimation();
+    await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.goToSongList();
+  });
 });
