@@ -60,11 +60,28 @@ jobs:
           merge-multiple: true
       - name: Merge into HTML Report
         run: npx playwright merge-reports --reporter html ./all-blob-reports
-      - name: Upload HTML report
-        uses: actions/upload-artifact@v4
+      - name: Upload merged report
+        id: deploy-report
+        uses: cloudflare/wrangler-action@v3
         with:
-          name: html-report--attempt-${{ github.run_attempt }}
-          path: playwright-report
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy playwright-report --project-name=allkaraoke-party-tests-results
+      - uses: actions/github-script@v7
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy-report.outputs.deployment-url }}
+          DEPLOYMENT_ALIAS_URL: ${{ steps.deploy-report.outputs.deployment-alias-url }}
+        with:
+          script: |
+            core.summary.addRaw(`
+            # Deploying with Cloudflare Pages
+            | Name                    | Result |
+            | ----------------------- | - |
+            | **Preview URL**:        | ${process.env.DEPLOYMENT_URL} |
+            | **Branch Preview URL**: | ${process.env.DEPLOYMENT_ALIAS_URL} |
+            `
+            ).write();
+
   ct-tests-run:
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
