@@ -79,7 +79,7 @@ export class SongListPagePO {
   }
 
   public async expectFullscreenToBeOn() {
-    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
+    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenExitIcon');
   }
 
   public async expectGroupToBeInViewport(groupName: string) {

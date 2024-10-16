@@ -44,7 +44,7 @@ jobs:
   e2e-tests-merge:
     runs-on: ubuntu-latest
     # Merge reports after e2e-tests-run, even if some shards have failed
-    if: ${{ !cancelled() }}
+    if: ${{ failure() }}
     needs: e2e-tests-run
     env:
       PUPPETEER_SKIP_DOWNLOAD: 'true'
