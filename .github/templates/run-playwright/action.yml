@@ -44,11 +44,15 @@ runs:
         max_attempts: 2
         command: pnpm ${{ inputs.packagescript }} --shard=${{ inputs.shard }}/${{ inputs.shardTotal }} --project=${{ inputs.project }} `pnpm ts-node scripts/runFailedPlaywrightTests.ts || ""`
         shell: bash
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: ${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}-test-results
+        name: test-results-blob-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
+        path: |
+          blob-report
+    - uses: actions/upload-artifact@v4
+      if: failure()
+      with:
+        name: test-results-report-${{ inputs.packagescript }}-${{ inputs.project }}-${{ inputs.shard }}
         path: |
           playwright-report
-          test-results
-          build
