@@ -29,11 +29,14 @@ jobs:
     env:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
-      PUPPETEER_SKIP_DOWNLOAD: 'true'
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      - name: Build app
+        run: |
+          npx playwright install chromium
+          pnpm build
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
@@ -46,8 +49,6 @@ jobs:
     # Merge reports after e2e-tests-run, even if some shards have failed
     if: ${{ failure() }}
     needs: e2e-tests-run
-    env:
-      PUPPETEER_SKIP_DOWNLOAD: 'true'
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
@@ -87,8 +88,6 @@ jobs:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
       pull-requests: write # allows commenting on a PR
     runs-on: ubuntu-latest
-    env:
-      PUPPETEER_SKIP_DOWNLOAD: 'true'
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
