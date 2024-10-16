@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import { connectRemoteMic, openAndConnectRemoteMicDirectly } from './steps/openAndConnectRemoteMic';
+import { connectRemoteMic, openAndConnectRemoteMicDirectly, openRemoteMic } from './steps/openAndConnectRemoteMic';
 
 import initialise from './PageObjects/initialise';
 
@@ -11,26 +11,39 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-test('Should properly reset data settings', async ({ browser, page }) => {
+test('Should properly reset data settings', async ({ browser, page, context }) => {
   const playerName = 'E2E Test Blue';
 
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-  await pages.inputSelectionPage.selectSmartphones();
+  await test.step('Go to select smartphones setup', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.inputSelectionPage.selectSmartphones();
+  });
 
-  const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
+  const remoteMic = await openRemoteMic(page, context, browser);
+  const gameCodeValue = await remoteMic.remoteMicMainPage.gameCodeInput.getAttribute('value');
 
-  await remoteMic._page.reload();
-  await remoteMic.remoteMicMainPage.expectPlayerNameToBe(playerName);
-  await remoteMic.remoteMicMainPage.goToSettings();
-  await remoteMic.remoteMicSettingsPage.goToMicSettings();
+  await test.step('Enter player`s name and connect mic with the game', async () => {
+    await remoteMic.remoteMicMainPage.enterPlayerName(playerName);
+    await remoteMic.remoteMicMainPage.clickToConnectMic();
+  });
+
+  await test.step('Go to the mic settings - info about the ability to reset the mic is visible', async () => {
+    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicSettingsPage.goToMicSettings();
+    await expect(remoteMic.remoteMicSettingsPage.resetMicInfo).toBeVisible();
+  });
 
   const remoteMicID = await remoteMic.remoteMicSettingsPage.remoteMicID.textContent();
 
-  await remoteMic.remoteMicSettingsPage.resetMicrophone();
-  await remoteMic.remoteMicMainPage.expectPlayerNameToBe('');
-  await remoteMic.remoteMicMainPage.goToSettings();
-  await expect(remoteMic.remoteMicSettingsPage.remoteMicID).not.toContainText(remoteMicID!);
+  await test.step('After resetting the mic settings, remoteMicID and player name should be cleared', async () => {
+    await remoteMic.remoteMicSettingsPage.resetMicrophone();
+    await remoteMic.remoteMicMainPage.expectPlayerNameToBe('');
+    await remoteMic.remoteMicMainPage.expectGameCodeToBe(gameCodeValue!);
+
+    await remoteMic.remoteMicMainPage.goToSettings();
+    await expect(remoteMic.remoteMicSettingsPage.remoteMicID).not.toContainText(remoteMicID!);
+  });
 });
 
 test('Should allow changing microphone input lag', async ({ browser, page, context }) => {
