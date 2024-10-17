@@ -74,7 +74,11 @@ export class RemoteMicMainPagePO {
     await expect(this.gameCodeInput).toHaveValue(gameCode);
   }
 
+  public get connectButton() {
+    return this.page.getByTestId('connect-button');
+  }
+
   public async clickToConnectMic() {
-    await this.page.getByTestId('connect-button').click();
+    await this.connectButton.click();
   }
 }
