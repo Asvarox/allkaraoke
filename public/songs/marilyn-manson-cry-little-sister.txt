@@ -1,0 +1,319 @@
+#ARTIST:Marilyn Manson
+#TITLE:Cry Little Sister
+#CREATOR:Groov
+#BPM:292
+#YEAR:2018
+#PREVIEWSTART:117
+#VIDEO:v=BG5sFUROGX0
+#GENRE:Hard Rock
+#LANGUAGE:English
+#GAP:33373,97260273973
+#ALLKARAOKE_ID:marilyn-manson-cry-little-sister
+#ALLKARAOKE_LASTUPDATE:2024-10-17T00:11:11.105Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:146
+#ALLKARAOKE_PREVIEWEND:154
+#ALLKARAOKE_VOLUME:0,72
+#MP3:Marilyn Manson - Cry Little Sister.mp3
+#COVER:Marilyn Manson - Cry Little Sister [CO].jpg
+#BACKGROUND:Marilyn Manson - Cry Little Sister [BG].jpg
+: 19 14 10 Last 
+: 36 13 9 fire 
+: 51 13 5 will 
+: 66 16 2 rise 
+: 85 9 10 be
+: 100 11 9 hind 
+: 115 11 5 those 
+: 129 13 7 eyes
+- 142
+: 147 14 -2 Black 
+: 165 11 -3 house 
+: 179 12 -7 will 
+: 194 11 -10 rock, 
+: 212 10 -12 blind 
+: 228 11 -10 boys 
+: 242 11 -7 don't 
+: 254 28 -5 lie
+- 282 320
+- 320
+: 339 16 10 Im
+: 357 13 9 mor
+: 372 8 5 tal 
+: 384 11 2 fear, 
+: 405 10 10 that 
+: 420 10 9 voice 
+: 435 8 5 so 
+: 447 16 7 clear
+- 463
+: 468 11 10 Through 
+: 484 13 9 bro
+: 500 9 5 ken 
+: 511 12 2 walls, 
+: 534 10 0 that 
+: 547 11 2 scream 
+: 563 9 5 I 
+* 579 9 9 h
+* 589 53 7 ear
+- 642
+: 659 8 21 C
+: 668 24 19 ry, 
+: 695 3 19 lit
+: 699 3 18 tle 
+: 703 9 19 sis
+: 713 9 12 ter 
+F 725 13 7 (Thou 
+F 739 14 5 shall 
+F 755 13 4 not 
+F 770 13 2 fall)
+- 783
+: 788 8 21 C
+: 797 11 19 o
+: 809 6 19 me, 
+: 816 5 19 come 
+: 822 5 19 to 
+: 828 3 18 your 
+: 832 8 19 bro
+: 841 10 12 ther 
+F 853 14 7 (Thou 
+F 868 14 5 shall 
+F 884 13 4 not 
+F 899 13 2 die)
+- 912
+: 920 8 21 U
+: 929 13 19 n
+: 943 8 19 chain 
+: 952 7 18 me, 
+: 960 8 19 sis
+: 969 10 12 ter 
+F 981 14 7 (Thou 
+F 996 14 5 shall 
+F 1012 13 4 not 
+F 1027 12 2 fear)
+- 1039
+: 1042 5 21 L
+: 1049 13 19 o
+: 1063 8 19 ve, 
+: 1073 4 19 is 
+: 1078 3 19 with 
+: 1082 4 18 your 
+: 1087 8 19 bro
+: 1096 9 12 ther 
+F 1107 14 7 (Thou 
+F 1122 14 5 shall 
+F 1138 13 4 not 
+F 1153 13 2 kill)
+- 1166 1280
+- 1280
+: 1299 13 10 Blue 
+: 1315 14 9 mas
+: 1331 13 5 que
+: 1345 9 2 rade, 
+* 1363 10 10 stran
+: 1379 12 9 gers 
+: 1394 13 5 look 
+: 1408 11 6 on
+- 1419
+: 1427 11 10 When 
+: 1442 13 9 will 
+: 1457 11 5 they 
+: 1471 10 2 learn 
+: 1490 9 0 this 
+: 1505 10 2 lone
+* 1520 9 5 li
+* 1530 9 9 n
+* 1540 59 7 ess?
+- 1599
+: 1618 9 10 Tem
+: 1634 12 9 pta
+: 1650 10 5 tion 
+: 1663 9 2 heat 
+: 1682 10 10 beats 
+: 1699 9 9 like 
+: 1715 6 5 a 
+: 1723 14 7 drum
+- 1737
+: 1751 11 10 Deep 
+: 1763 8 9 in 
+: 1778 13 5 your 
+: 1792 12 2 veins, 
+: 1811 7 0 I 
+: 1827 9 2 will 
+: 1842 10 5 not 
+* 1853 8 9 li
+* 1862 41 7 e
+- 1903
+: 1912 3 19 Lit
+: 1916 3 18 tle 
+: 1920 7 19 sis
+: 1929 9 12 ter 
+F 1941 13 7 (Thou 
+F 1955 14 5 shall 
+F 1971 13 4 not 
+F 1986 12 2 fall)
+- 1998
+: 2002 8 21 C
+: 2011 9 19 o
+: 2021 6 19 me, 
+: 2034 5 19 come 
+: 2040 3 19 to 
+: 2044 3 18 your 
+: 2048 8 19 bro
+: 2057 10 12 ther 
+F 2068 14 7 (Thou 
+F 2083 14 5 shall 
+F 2099 13 4 not 
+F 2114 13 2 die)
+- 2127
+: 2132 8 21 U
+: 2141 13 19 n
+: 2158 6 19 chain 
+: 2166 6 18 me, 
+: 2173 8 19 sis
+: 2183 9 12 ter 
+F 2196 14 7 (Thou 
+F 2211 14 5 shall 
+F 2227 13 4 not 
+F 2242 13 2 fear)
+- 2255
+: 2259 6 21 L
+: 2266 9 19 o
+: 2276 7 19 ve, 
+: 2289 5 19 is 
+: 2295 3 19 with 
+: 2299 4 18 your 
+: 2304 8 19 bro
+: 2313 9 12 ther 
+F 2325 14 7 (Thou 
+F 2340 14 5 shall 
+F 2356 13 4 not 
+F 2371 13 2 kill)
+- 2384 2626
+- 2626
+: 2645 8 10 My 
+: 2659 9 9 Shan
+: 2675 12 5 gri−
+* 2689 9 2 La, 
+: 2708 7 10 I 
+: 2723 7 9 can't 
+: 2739 12 5 for
+: 2752 12 7 get
+- 2764
+: 2771 10 10 Why 
+: 2787 8 9 you 
+: 2803 9 5 were 
+: 2816 11 2 mine, 
+* 2836 7 0 I 
+: 2851 9 2 need 
+: 2867 8 5 you 
+: 2877 8 9 n
+: 2886 71 7 ow
+- 2957 3008
+- 3008
+: 3027 9 7 Cry, 
+: 3064 3 7 lit
+: 3068 3 5 tle 
+: 3072 7 7 sis
+: 3080 14 5 ter
+- 3094 3137
+- 3137
+: 3156 9 7 Come, 
+: 3188 3 7 come 
+: 3192 3 5 to 
+: 3196 5 5 your 
+: 3202 6 7 bro
+: 3209 14 5 ther
+- 3223 3264
+- 3264
+: 3283 12 7 Un
+: 3315 6 7 chain 
+: 3323 5 5 me, 
+: 3330 7 7 sis
+: 3338 16 5 ter
+- 3354 3392
+- 3392
+: 3411 13 7 Love 
+: 3476 6 7 is 
+: 3483 6 5 with 
+: 3490 7 7 your 
+: 3498 16 5 brother
+- 3514
+* 3523 51 21 Cry 
+: 3575 3 19 lit
+: 3579 3 18 tle 
+: 3583 9 19 sis
+: 3593 9 21 ter 
+F 3605 13 7 (Thou 
+F 3619 14 5 shall 
+F 3635 13 4 not−
+- 3648
+: 3651 41 21 Love 
+: 3700 4 19 is 
+: 3705 3 19 with 
+: 3709 4 18 your 
+: 3714 6 19 bro
+: 3721 8 21 ther 
+F 3733 13 7 (Thou 
+F 3747 14 5 shall 
+F 3764 11 4 not 
+F 3779 14 3 die)
+- 3793
+: 3796 13 7 Un
+: 3824 8 7 chain 
+: 3833 7 6 me, 
+: 3841 8 7 sis
+: 3850 10 9 ter 
+F 3862 14 7 (Thou 
+F 3877 14 5 shall 
+F 3893 13 4 not 
+F 3909 12 2 fear)
+- 3921
+: 3924 19 7 Love, 
+: 3955 7 7 love 
+: 3963 2 7 is 
+: 3966 2 7 with 
+: 3969 3 6 your 
+: 3973 7 7 bro
+: 3981 7 9 ther 
+F 3989 14 7 (Thou 
+F 4004 14 5 shall 
+F 4020 13 4 not−
+- 4033
+* 4036 51 21 Cry 
+: 4088 3 19 lit
+: 4092 3 18 tle 
+: 4096 8 19 sis
+: 4105 9 21 ter 
+F 4118 13 7 (Thou 
+F 4132 14 5 shall 
+F 4148 13 4 not−
+- 4161
+: 4165 40 21 Love 
+: 4209 4 19 is 
+: 4214 3 19 with 
+: 4218 4 18 your 
+: 4223 6 19 bro
+: 4230 8 21 ther 
+F 4246 13 7 (Thou 
+F 4261 14 5 shall 
+F 4278 11 4 not 
+F 4292 30 3 die)
+- 4322
+: 4333 8 7 Unchain 
+: 4342 7 6 me, 
+: 4350 8 7 sis
+: 4359 10 9 ter 
+F 4372 14 7 (Thou 
+F 4387 14 5 shall 
+F 4403 13 4 not−
+- 4416
+: 4419 31 21 Love 
+: 4464 3 19 is 
+: 4469 4 19 with 
+: 4475 5 18 your 
+: 4482 6 19 bro
+: 4489 8 21 ther 
+F 4501 13 7 (Thou 
+F 4515 14 5 shall 
+F 4532 11 4 not 
+F 4547 24 3 kill)
+E
