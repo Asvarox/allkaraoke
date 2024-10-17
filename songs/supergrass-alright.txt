@@ -1,0 +1,299 @@
+#ARTIST:Supergrass
+#TITLE:Alright
+#CREATOR:Suppergrass
+#BPM:292,56
+#YEAR:1995
+#PREVIEWSTART:9
+#VIDEO:v=qUE4oDunYkc
+#GENRE:Brit Pop
+#LANGUAGE:English
+#GAP:13947,569319114027
+#ALLKARAOKE_ID:supergrass-alright
+#ALLKARAOKE_LASTUPDATE:2024-10-17T00:11:10.154Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=coppo
+#ALLKARAOKE_REALBPM:146
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=Alright
+#ALLKARAOKE_PREVIEWEND:27
+#ALLKARAOKE_VOLUME:0,83
+#MP3:Supergrass - Alright.mp3
+#COVER:Supergrass - Alright.jpg
+#MEDLEYSTARTBEAT:1297
+#MEDLEYENDBEAT:1817
+: 20 3 -3 We 
+: 24 4 -1 are 
+: 31 10 6 young
+- 41
+: 51 3 -3 We 
+: 55 4 -1 run 
+: 62 12 6 green
+- 74
+: 82 3 -3 Keep 
+: 86 4 -1 our 
+: 93 12 6 teeth
+- 105
+: 113 2 -3 Nice 
+: 117 3 -1 and 
+: 124 10 6 clean
+- 134
+: 143 3 -3 See 
+: 148 3 -1 our 
+: 155 12 4 friends
+- 167
+: 174 3 -3 See 
+: 179 1 -1 the 
+: 183 9 4 sights
+- 192
+: 202 3 4 Feel 
+: 207 1 2 al
+: 209 10 4 ~
+: 222 11 2 right
+- 233 249
+- 249
+: 269 3 -3 We 
+: 273 3 -1 wake 
+: 278 12 6 up
+- 290
+: 301 3 -3 We 
+: 305 3 -1 go 
+: 310 12 6 out
+- 322
+: 333 2 -3 Smoke 
+: 337 1 -1 a 
+: 341 12 6 fag
+- 353
+: 364 3 -3 Put 
+: 369 2 -1 it 
+: 373 12 6 out
+- 385
+: 396 3 -3 See 
+: 400 4 -1 our 
+: 408 12 4 friends
+- 420
+: 428 2 -3 See 
+: 432 1 -1 the 
+: 436 10 4 sights
+- 446
+: 456 3 4 Feel 
+: 460 1 2 al
+: 462 11 4 ~
+: 476 11 2 right
+- 487 527
+- 527
+: 547 2 6 Are 
+: 551 2 6 we
+: 555 3 1 ~ 
+: 559 5 1 like 
+: 566 16 1 you?
+- 582
+: 591 2 1 I
+: 594 3 6 ~ 
+: 599 9 5 can't 
+: 611 2 0 be 
+: 616 10 0 sure
+: 627 3 -1 ~
+: 631 11 -3 ~
+- 642
+: 651 2 -3 Of 
+: 655 1 0 the 
+: 659 12 2 scene
+- 671
+: 682 2 -3 As 
+: 687 2 0 she 
+: 692 13 2 turns
+- 705
+: 716 2 -3 We 
+: 720 2 0 are 
+: 727 12 2 strange
+- 739
+: 747 3 -3 In 
+: 752 2 -1 our 
+: 756 7 -3 worlds 
+: 767 3 2 but 
+: 775 3 2 we 
+: 780 1 4 are
+: 782 3 6 ~ 
+: 787 3 4 young
+: 791 7 6 ~
+- 798
+: 811 2 -3 We 
+: 815 4 -1 get 
+: 823 12 6 by
+- 835
+: 843 3 -3 Can't 
+: 849 3 -1 go 
+: 855 11 6 mad
+- 866
+: 875 3 -3 Ain't 
+: 882 3 -1 got 
+: 888 8 -3 time
+- 896
+: 908 2 -3 Sleep 
+: 912 2 -1 a
+: 916 11 4 round
+- 927
+: 939 3 -3 If 
+: 944 2 -1 we 
+: 948 9 4 like
+- 957
+: 965 2 4 But 
+: 968 2 4 we're 
+: 972 1 2 al
+: 974 10 4 ~
+: 986 1 2 ~
+: 989 11 2 right
+- 1000 1016
+- 1016
+: 1036 3 -3 Got 
+: 1043 2 -1 some 
+: 1048 10 6 cash
+- 1058
+: 1068 3 -3 Bought 
+: 1075 2 -1 some 
+: 1080 11 6 wheels
+- 1091
+: 1101 2 -3 Took 
+: 1105 3 -1 it 
+: 1110 12 6 out
+- 1122
+: 1132 2 -3 'Cross 
+: 1137 2 -1 some 
+: 1141 12 6 fields
+- 1153
+: 1164 2 -3 Lost 
+: 1169 2 -1 con
+: 1174 11 4 trol
+- 1185
+: 1197 2 -3 Hit 
+: 1201 2 -1 a 
+: 1205 11 4 wall 
+: 1222 2 4 but 
+: 1225 3 4 we're 
+: 1230 1 2 al
+: 1232 10 4 ~
+: 1246 10 2 right
+- 1256 1297
+- 1297
+: 1317 3 6 Are 
+: 1322 3 6 we
+: 1326 2 1 ~ 
+: 1330 5 1 like 
+: 1337 13 1 you?
+- 1350
+: 1362 2 1 I
+: 1365 2 6 ~ 
+: 1370 10 5 can't 
+: 1382 2 0 be 
+: 1388 10 0 sure
+: 1399 3 -1 ~
+: 1403 11 -3 ~
+- 1414
+: 1424 2 -3 Of 
+: 1428 1 0 the 
+: 1432 13 2 scene
+- 1445
+: 1457 1 -3 As 
+: 1461 1 0 she 
+: 1465 14 2 turns
+- 1479
+: 1489 3 -3 We 
+: 1493 3 0 are 
+: 1501 11 2 strange
+- 1512
+: 1521 3 -3 In 
+: 1525 3 -1 our 
+: 1530 7 -3 worlds 
+: 1541 3 2 but 
+: 1549 3 2 we 
+: 1554 2 4 are
+: 1557 2 6 ~ 
+: 1562 1 4 young
+: 1564 7 6 ~
+- 1571
+: 1585 2 -3 We 
+: 1589 3 -1 run 
+: 1596 11 6 green
+- 1607
+: 1617 3 -3 Keep 
+: 1621 4 -1 our 
+: 1629 10 6 teeth
+- 1639
+: 1649 3 -3 Nice 
+: 1654 3 -1 and 
+: 1660 11 6 clean
+- 1671
+: 1682 2 -3 See 
+: 1686 3 -1 out 
+: 1694 11 4 friends
+- 1705
+: 1713 2 -3 See 
+: 1718 1 -1 the 
+* 1722 10 4 sights
+- 1732
+: 1742 3 4 Feel 
+: 1747 1 2 al
+: 1749 35 4 ~
+: 1787 11 2 right
+- 1798 2641
+- 2641
+: 2661 2 6 Are 
+: 2665 3 6 we
+: 2669 2 1 ~ 
+: 2673 4 1 like 
+: 2681 14 1 you?
+- 2695
+: 2706 2 1 I
+: 2710 2 6 ~ 
+: 2714 10 5 can't 
+: 2726 2 0 be 
+* 2732 10 0 sure
+* 2743 3 -1 ~
+* 2747 12 -3 ~
+- 2759
+: 2767 2 -3 Of 
+: 2771 1 0 the 
+: 2776 13 2 scene
+- 2789
+: 2800 2 -3 As 
+: 2804 1 0 she 
+: 2808 14 2 turns
+- 2822
+: 2833 2 -3 We 
+: 2837 3 0 are 
+: 2845 10 2 strange
+- 2855
+: 2865 2 -3 In 
+: 2869 2 -1 our 
+: 2873 8 -3 world 
+: 2884 4 2 but 
+* 2892 4 2 we 
+* 2898 2 4 are
+* 2901 1 6 ~ 
+* 2905 3 4 young
+* 2909 6 6 ~
+- 2915
+: 2929 2 -3 We 
+: 2933 3 -1 run 
+: 2940 10 6 green
+- 2950
+: 2961 2 -3 Keep 
+: 2965 4 -1 our 
+: 2972 9 6 teeth
+- 2981
+: 2993 2 -3 Nice 
+: 2998 3 -1 and 
+: 3005 9 6 clean
+- 3014
+: 3026 3 -3 See 
+: 3030 3 -1 out 
+: 3037 10 4 friends
+- 3047
+: 3057 2 -3 See 
+: 3061 1 -1 the 
+: 3065 10 4 sights
+- 3075
+: 3085 3 4 Feel 
+* 3090 1 2 al
+* 3092 36 4 ~
+* 3130 13 2 right
+E

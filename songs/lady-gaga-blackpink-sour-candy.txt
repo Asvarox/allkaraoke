@@ -1,0 +1,519 @@
+#ARTIST:Lady Gaga & BLACKPINK
+#TITLE:Sour Candy
+#CREATOR:asdFer
+#BPM:239,04
+#YEAR:2020
+#VIDEO:v=Fc2qWBIToKU
+#GENRE:Kpop
+#LANGUAGE:English, Korean
+#GAP:5793,983935742972
+#EDITION:Pop
+#ALLKARAOKE_ID:lady-gaga-blackpink-sour-candy
+#ALLKARAOKE_LASTUPDATE:2024-10-17T00:11:10.825Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL:	 Michael TuckerStefani GermanottaMadison LoveMatthew BurnsRami YacoubHong Jun Park
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Fc2qWBIToKU
+#ALLKARAOKE_VOLUME:0,74
+#P1:Sour Candy - Lady Gaga, BLACKPINK
+#MP3:Lady Gaga & BLACKPINK - Sour Candy.mp3
+#COVER:Lady Gaga & BLACKPINK - Sour Candy.jpg
+#MEDLEYSTARTBEAT:657
+#MEDLEYENDBEAT:1144
+: 16 2 2 So-
+: 20 2 2 Sour
+: 24 2 4 ~ 
+: 28 2 5 can
+: 32 4 4 dy
+- 36 128
+- 128
+F 144 2 2 So-
+F 148 2 2 Sour
+F 152 2 4 ~ 
+F 156 2 5 can
+F 160 4 4 dy
+- 164
+: 175 2 4 I'm 
+: 179 2 2 sour
+: 183 2 4 ~ 
+: 187 2 5 can
+: 191 4 4 dy
+- 195
+: 199 2 4 So 
+: 203 2 9 sweet, 
+: 207 1 4 then 
+: 209 1 4 I 
+: 211 1 4 get 
+: 213 1 4 a 
+: 215 1 4 lit
+: 217 1 4 tle 
+: 219 2 5 an
+: 223 2 4 gry, 
+: 227 4 2 yeah
+- 231
+: 239 2 4 Sour
+: 243 2 2 ~ 
+: 247 2 5 can
+: 251 4 4 dy
+- 255
+: 259 3 9 Yeah, 
+: 265 1 9 yeah
+: 267 2 11 ~, 
+: 271 3 9 yeah, 
+: 277 3 8 yeah, 
+: 283 6 4 yeah
+- 289
+: 303 2 4 I'm 
+: 307 2 2 su
+: 311 2 4 per 
+* 315 2 5 psy
+* 319 1 4 cho
+- 320
+: 322 1 7 Make 
+: 324 1 9 it 
+: 327 2 4 cra
+: 331 2 4 zy 
+: 335 1 4 when 
+: 337 1 4 I 
+: 339 2 2 turn 
+: 343 2 4 the 
+: 347 2 5 lights 
+: 351 2 4 low
+: 355 4 2 ~
+- 359
+: 366 2 4 Sour
+: 370 2 2 ~ 
+: 374 2 5 can
+: 378 4 4 dy
+- 382
+: 386 3 9 Yeah, 
+* 392 1 9 yeah
+* 394 2 11 ~, 
+: 398 3 9 yeah, 
+* 404 5 8 yeah
+- 409
+: 418 2 8 Ask 
+: 422 2 9 me 
+: 426 2 8 to 
+: 430 2 9 be 
+: 434 2 11 nice, 
+: 438 2 9 and 
+: 442 1 8 then 
+: 446 2 4 I'll 
+: 450 2 8 do 
+: 454 2 4 it 
+: 458 2 4 ex
+: 462 2 4 tra 
+: 466 2 4 mean
+: 470 3 2 ~
+- 473
+: 478 2 0 Deut
+: 482 2 8 ba
+: 486 2 9 kke 
+: 490 2 8 pyo
+: 494 2 9 jeong 
+: 498 2 11 ha
+: 502 2 9 na
+: 506 2 9 ye 
+: 510 2 4 neon 
+: 514 2 8 dang
+: 518 2 4 hwang
+: 522 2 4 ha
+: 526 2 4 get
+: 530 2 4 ji
+: 534 4 2 ~
+- 538
+: 546 2 4 Bi
+: 550 2 5 ssan
+: 554 2 5 cheo
+: 558 2 5 gi
+: 562 2 5 lan 
+: 566 2 4 mal
+: 570 2 2 deu
+: 574 2 0 llo 
+: 578 2 4 nal 
+: 582 2 5 po
+: 586 2 5 jang
+: 590 2 5 han
+: 594 2 4 geon
+: 598 2 2 ~ 
+: 602 1 2 neo
+: 604 1 4 ~
+: 607 1 2 ya
+: 609 4 4 ~
+- 613 618
+- 618
+* 634 2 2 Neo
+* 637 1 4 ~
+* 639 5 2 ya
+- 644 657
+- 657
+: 673 2 8 If 
+: 677 2 9 you 
+: 681 2 8 wan
+: 685 2 9 na 
+: 689 2 11 fix 
+: 693 2 9 me, 
+: 697 2 8 then 
+: 701 2 9 let's 
+: 705 2 4 break 
+: 709 2 4 up 
+: 713 2 4 here 
+: 717 2 4 and 
+: 721 2 4 now
+: 725 3 2 ~
+- 728
+: 733 2 0 Geo
+: 737 2 8 li
+: 741 2 9 kki
+: 745 2 8 meob
+: 749 2 9 neun 
+: 753 2 11 nun
+: 757 2 9 bi
+: 761 2 9 che 
+: 765 2 4 neon 
+: 769 1 9 geo
+: 773 2 4 lil 
+: 777 2 4 du
+: 781 2 4 ni
+: 785 1 4 kka
+: 787 1 2 ~
+: 790 5 0 ~
+- 795
+: 801 2 4 Tuk 
+: 805 2 5 kka
+: 809 2 5 bo
+: 813 2 5 myeon 
+: 817 2 5 eo
+: 821 2 4 gi
+: 825 2 2 meob
+: 829 2 0 shi 
+: 833 2 4 so
+: 837 2 5 li
+: 841 2 5 ji
+: 845 2 5 lleo
+: 849 1 4 wa
+: 851 1 5 ~
+: 853 1 4 ~
+- 854
+: 857 2 4 Uh 
+: 861 2 2 huh
+: 864 5 4 ~
+- 869 873
+- 873
+: 889 2 4 Uh 
+: 893 6 2 huh
+- 899
+: 905 2 2 Oh
+: 909 2 4 ~ 
+: 913 2 7 oh
+: 916 3 9 ~, 
+: 921 2 11 oh 
+: 925 8 12 oh
+- 933
+: 940 2 -3 I'm 
+: 944 1 4 hard
+: 946 1 5 ~ 
+: 948 2 5 on 
+: 952 2 5 the 
+: 956 2 5 out
+: 960 2 4 ~
+: 964 5 4 side
+- 969
+: 972 2 4 But 
+: 976 2 4 if 
+: 980 2 4 you 
+* 984 2 4 give 
+* 988 2 4 me
+: 992 2 -1 ~ 
+: 996 6 -1 time
+- 1002
+: 1008 2 0 Then 
+: 1012 2 2 I 
+: 1016 2 4 could 
+: 1020 2 4 make
+: 1024 2 2 ~ 
+: 1028 2 2 time
+: 1032 2 0 ~ 
+: 1036 2 0 for
+: 1040 2 -1 ~ 
+: 1044 2 -1 your
+: 1048 2 -3 ~ 
+: 1052 8 -3 love
+- 1060
+: 1068 2 -3 I'm 
+: 1072 1 4 hard
+: 1074 1 5 ~ 
+: 1076 2 5 on 
+: 1080 2 5 the 
+: 1084 2 5 out
+: 1088 2 4 ~
+: 1092 5 4 side
+- 1097
+: 1100 2 4 But 
+: 1104 2 4 if 
+: 1108 2 4 you 
+: 1112 2 4 see 
+* 1116 2 4 in
+* 1120 2 -1 ~
+* 1124 5 -1 side, 
+: 1132 2 4 in
+: 1136 2 -1 ~
+: 1140 5 -1 side, 
+: 1148 2 4 in
+: 1152 2 -1 ~
+: 1156 12 0 side
+- 1168
+R 1183 3 2 I 
+R 1189 3 2 might 
+R 1195 3 2 be 
+R 1201 3 2 messed 
+R 1207 4 2 up
+- 1211
+R 1215 3 2 But 
+R 1221 3 2 I 
+R 1227 3 2 know 
+R 1233 3 2 what's 
+R 1239 4 2 up
+- 1243
+R 1247 3 2 You 
+R 1253 3 2 want 
+R 1259 3 2 a 
+R 1265 3 2 real 
+R 1271 4 2 taste
+- 1275
+R 1282 2 2 At 
+R 1286 2 2 least 
+R 1290 2 2 I'm 
+R 1294 2 2 not 
+R 1298 2 2 a 
+R 1302 5 2 fake
+- 1307
+: 1315 3 -1 Come, 
+: 1321 3 -1 come, 
+: 1327 2 -1 un
+: 1331 2 0 wrap 
+: 1335 5 -3 me
+- 1340
+* 1346 3 -1 Come, 
+: 1352 3 -1 come, 
+: 1358 2 -1 un
+: 1362 2 0 wrap 
+: 1366 5 -3 me
+- 1371
+R 1374 3 2 I'll 
+R 1380 3 2 show 
+R 1386 3 2 you 
+R 1392 3 2 what's 
+R 1398 4 2 me
+- 1402
+R 1406 3 2 Close 
+R 1412 3 2 your 
+R 1418 3 2 eyes, 
+R 1424 3 2 don't 
+R 1430 4 2 peek
+- 1434
+R 1438 3 2 Now 
+R 1444 3 2 I'm 
+R 1450 3 2 un
+R 1456 3 2 dres
+R 1462 4 2 sing
+- 1466
+R 1474 2 2 Un
+R 1478 2 2 wrap 
+R 1482 2 2 sour
+R 1486 2 2 ~ 
+R 1490 2 2 can
+R 1494 5 2 dy
+- 1499
+: 1506 3 -1 Come, 
+: 1512 3 -1 come, 
+: 1518 2 -1 un
+: 1522 2 0 wrap 
+: 1526 5 -3 me
+- 1531
+: 1537 3 -1 Come, 
+: 1543 3 -1 come, 
+: 1549 2 -1 un
+: 1553 2 0 wrap 
+: 1557 5 -3 me
+- 1562
+R 1566 3 2 Come 
+R 1572 3 2 on, 
+R 1578 2 2 sour
+R 1582 2 2 ~ 
+R 1586 2 2 can
+R 1590 8 2 dy
+- 1598
+: 1606 2 2 Oh
+: 1610 2 4 ~ 
+* 1614 2 7 oh
+* 1617 3 9 ~, 
+: 1622 2 11 oh 
+: 1626 8 12 oh
+- 1634
+: 1641 2 -3 I'm 
+: 1645 1 4 hard
+: 1647 1 5 ~ 
+: 1649 2 5 on 
+: 1653 2 5 the 
+: 1657 2 5 out
+: 1661 2 4 ~
+: 1665 5 4 side
+- 1670
+: 1673 2 4 But 
+: 1677 2 4 if 
+: 1681 2 4 you 
+: 1685 2 4 give 
+: 1689 2 4 me
+: 1693 2 -1 ~ 
+: 1697 6 -1 time
+- 1703
+: 1709 2 0 Then 
+: 1713 2 2 I 
+* 1717 2 4 could 
+* 1721 2 4 make
+* 1725 2 2 ~ 
+* 1729 2 2 time
+* 1733 2 0 ~ 
+: 1737 2 0 for
+: 1741 2 -1 ~ 
+: 1745 2 -1 your
+: 1749 2 -3 ~ 
+: 1753 8 -3 love
+- 1761
+: 1769 2 -3 I'm 
+: 1773 1 4 hard
+: 1775 1 5 ~ 
+: 1777 2 5 on 
+: 1781 2 5 the 
+: 1785 2 5 out
+: 1789 2 4 ~
+: 1793 5 4 side
+- 1798
+: 1801 2 4 But 
+: 1805 2 4 if 
+: 1809 2 4 you 
+: 1813 2 4 see 
+: 1817 2 4 in
+: 1821 2 -1 ~
+: 1825 5 -1 side, 
+: 1833 2 4 in
+: 1837 2 -1 ~
+: 1841 5 -1 side, 
+: 1849 2 4 in
+: 1853 2 -1 ~
+: 1857 12 0 side
+- 1869 1880
+- 1880
+: 1896 2 4 I'm 
+: 1900 2 2 sour
+: 1904 2 4 ~ 
+: 1908 2 5 can
+: 1912 3 4 dy
+- 1915
+* 1920 2 4 So 
+* 1924 2 9 sweet, 
+: 1928 1 4 then 
+: 1930 1 4 I 
+: 1932 1 4 get 
+: 1934 1 4 a 
+: 1936 1 4 lit
+: 1938 1 4 tle 
+: 1940 2 5 an
+: 1944 2 4 gry, 
+: 1948 4 2 yeah
+- 1952
+: 1960 2 4 Sour
+: 1964 2 2 ~ 
+: 1968 2 5 can
+: 1972 4 4 dy
+- 1976
+: 1980 3 9 Yeah, 
+: 1986 1 9 yeah
+: 1988 2 11 ~, 
+: 1992 3 9 yeah, 
+: 1998 3 8 yeah, 
+: 2004 6 4 yeah
+- 2010
+: 2024 2 4 I'm 
+: 2028 2 2 su
+: 2032 2 4 per 
+: 2036 2 5 psy
+: 2040 1 4 cho
+- 2041
+: 2043 1 7 Make 
+: 2045 1 9 it 
+: 2048 2 4 cra
+: 2052 2 4 zy 
+: 2056 1 4 when 
+: 2058 1 4 I 
+: 2060 2 2 turn 
+: 2064 2 4 the 
+* 2068 2 5 lights 
+* 2072 2 4 low
+* 2076 4 2 ~
+- 2080
+: 2087 2 4 Sour
+: 2091 2 2 ~ 
+: 2095 2 5 can
+: 2099 4 4 dy
+- 2103
+: 2107 3 9 Yeah, 
+: 2113 1 9 yeah
+: 2115 2 11 ~, 
+: 2119 3 9 yeah, 
+: 2125 4 8 yeah
+- 2129 2135
+- 2135
+R 2151 1 2 Take 
+R 2153 1 2 a 
+R 2155 2 0 bite, 
+R 2159 1 0 take 
+R 2161 1 0 a 
+R 2163 5 -1 bite
+- 2168
+R 2183 2 -1 S-
+R 2187 2 -1 Sour
+R 2191 2 -1 ~ 
+R 2195 2 -1 can
+R 2199 4 -1 dy
+- 2203
+R 2215 1 2 Take 
+R 2217 1 2 a 
+R 2219 2 0 bite, 
+R 2223 1 0 take 
+R 2225 1 0 a 
+R 2227 5 -1 bite
+- 2232
+R 2247 2 -1 S-
+R 2251 2 -1 Sour
+R 2255 2 -1 ~ 
+R 2259 2 -1 can
+R 2263 4 -1 dy
+- 2267
+R 2279 1 2 Take 
+R 2281 1 2 a 
+R 2283 2 0 bite, 
+R 2287 1 0 take 
+R 2289 1 0 a 
+R 2291 5 -1 bite
+- 2296
+R 2311 2 -1 S-
+R 2315 2 -1 Sour
+R 2319 2 -1 ~ 
+R 2323 2 -1 can
+R 2327 4 -1 dy
+- 2331
+R 2342 1 2 Take 
+R 2344 1 2 a 
+R 2346 2 0 bite, 
+R 2350 1 0 take 
+R 2352 1 0 a 
+R 2354 5 -1 bite
+- 2359
+G 2374 2 0 Sour
+G 2378 2 -1 ~ 
+G 2382 2 -1 can
+G 2386 8 -3 dy
+E
