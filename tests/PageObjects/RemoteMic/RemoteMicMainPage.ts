@@ -78,7 +78,16 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('connect-button');
   }
 
+  public async expectConnectButtonActivityToBeAs(buttonActivity: 'enabled' | 'disabled') {
+    const activityToBooleanMap = {
+      enabled: 'false',
+      disabled: 'true',
+    };
+    await expect(this.connectButton).toHaveAttribute('data-disabled', activityToBooleanMap[buttonActivity]);
+  }
+
   public async clickToConnectMic() {
+    await this.expectConnectButtonActivityToBeAs('enabled');
     await this.connectButton.click();
   }
 }
