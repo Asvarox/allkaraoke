@@ -21,4 +21,8 @@ export class RemoteMicManagePlayerPage {
   public async unassignManagedPlayer() {
     await this.page.getByTestId('change-to-unset').click();
   }
+
+  public async removePlayer() {
+    await this.page.getByTestId('remove-player').click();
+  }
 }

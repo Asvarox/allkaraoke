@@ -65,4 +65,29 @@ export class RemoteMicMainPagePO {
   public async pressReadyOnRemoteMic() {
     await this.readyButton.click();
   }
+
+  public get gameCodeInput() {
+    return this.page.getByTestId('game-code-input');
+  }
+
+  public async expectGameCodeToBe(gameCode: string) {
+    await expect(this.gameCodeInput).toHaveValue(gameCode);
+  }
+
+  public get connectButton() {
+    return this.page.getByTestId('connect-button');
+  }
+
+  public async expectConnectButtonActivityToBeAs(buttonActivity: 'enabled' | 'disabled') {
+    const activityToBooleanMap = {
+      enabled: 'false',
+      disabled: 'true',
+    };
+    await expect(this.connectButton).toHaveAttribute('data-disabled', activityToBooleanMap[buttonActivity]);
+  }
+
+  public async clickToConnectMic() {
+    await this.expectConnectButtonActivityToBeAs('enabled');
+    await this.connectButton.click();
+  }
 }
