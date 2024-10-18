@@ -11,9 +11,8 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 test('window for rating unfinished song is visible and can be skipped by the user', async ({ page }) => {
-  await page.goto('/?e2e-test');
-
   await test.step('Select Advanced setup', async () => {
+    await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
@@ -52,9 +51,10 @@ test('window for rating unfinished song is visible and can be skipped by the use
 });
 
 test('user can correctly select all of the shown reasons why the song was not completed', async ({ page, browser }) => {
-  await page.goto('/?e2e-test');
+  const songID = 'e2e-pass-test-spanish-1994';
 
   await test.step('Select Smartphones setup', async () => {
+    await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.inputSelectionPage.selectSmartphones();
   });
@@ -161,5 +161,8 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
+    await pages.songListPage.getSongElement(songID);
+    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.expectSelectedSongToBe(songID);
   });
 });
