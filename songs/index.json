@@ -26033,6 +26033,36 @@
     "local": false
   },
   {
+    "id": "dua-lipa-blackpink-kiss-and-make-up",
+    "title": "Kiss and Make Up",
+    "artist": "Dua Lipa & BLACKPINK",
+    "video": "AX3Bsiq-13k",
+    "language": [
+      "English",
+      "Korean"
+    ],
+    "bpm": 396,
+    "gap": 8441.151515151516,
+    "year": "2018",
+    "artistOrigin": "KR",
+    "lastUpdate": "2024-10-19T00:11:00.474Z",
+    "genre": "K-Pop",
+    "realBpm": 100,
+    "volume": 0.67,
+    "author": "Subkei",
+    "authorUrl": "Mathieu Jomphe-Lepine, Chelcee Grimes, Dua Lipa, Marc Vincent, Teddy Park, Zacharie Raymond, Yannick Rastogi.",
+    "sourceUrl": "https://www.youtube.com/watch?v=AX3Bsiq-13k",
+    "tracks": [
+      {
+        "name": "Kiss and Make Up - Dua Lipa & BLACKPINK",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dualipablackpinkkissandmakeup",
+    "local": false
+  },
+  {
     "id": "dua-lipa-dance-the-night",
     "title": "Dance The Night",
     "artist": "Dua Lipa",
@@ -27512,6 +27542,32 @@
     "local": false
   },
   {
+    "id": "elton-john-candle-in-the-wind",
+    "title": "Candle In The Wind",
+    "artist": "Elton John",
+    "video": "lK1XlMsTgmM",
+    "language": [
+      "English"
+    ],
+    "bpm": 363.3,
+    "gap": 7121.803458687895,
+    "year": "1973",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-19T00:11:01.436Z",
+    "genre": "Soft Rock",
+    "realBpm": 131,
+    "volume": 0.81,
+    "author": "Cinemalin",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohncandleinthewind",
+    "local": false
+  },
+  {
     "id": "elton-john-crocodile-rock",
     "title": "Crocodile Rock",
     "artist": "Elton John",
@@ -27588,6 +27644,32 @@
     "local": false
   },
   {
+    "id": "elton-john-i-guess-thats-why-they-call-it-the-blues",
+    "title": "I Guess That’s Why They Call It The Blues",
+    "artist": "Elton John",
+    "video": "h6KYAVn8ons",
+    "language": [
+      "English"
+    ],
+    "bpm": 241.4,
+    "gap": 13265.799502899752,
+    "year": "1983",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-19T00:11:01.565Z",
+    "genre": "Soft Rock",
+    "realBpm": 121,
+    "volume": 0.81,
+    "author": "znxineohp",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohniguessthatswhytheycallittheblues",
+    "local": false
+  },
+  {
     "id": "elton-john-im-still-standing",
     "title": "I'm Still Standing",
     "artist": "Elton John",
@@ -27609,6 +27691,32 @@
     ],
     "tracksCount": 1,
     "search": "eltonjohnimstillstanding",
+    "local": false
+  },
+  {
+    "id": "elton-john-nikita",
+    "title": "Nikita",
+    "artist": "Elton John",
+    "video": "Tg-Q-Acv4qs",
+    "language": [
+      "English"
+    ],
+    "bpm": 344,
+    "gap": 11547.093023255813,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-19T00:11:01.567Z",
+    "genre": "New Wave",
+    "realBpm": 146,
+    "volume": 0.99,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eltonjohnnikita",
     "local": false
   },
   {
@@ -29750,6 +29858,7 @@
     "year": "2022",
     "artistOrigin": "US",
     "lastUpdate": "2023-10-15T11:26:31.284Z",
+    "edition": "Halloween",
     "realBpm": 91,
     "volume": 0.85,
     "author": "Whitebeing",
@@ -30349,6 +30458,31 @@
     ],
     "tracksCount": 1,
     "search": "fiveforfighting100years",
+    "local": false
+  },
+  {
+    "id": "five-for-fighting-superman-its-not-easy",
+    "title": "Superman (It’s Not Easy)",
+    "artist": "Five For Fighting",
+    "video": "GRz4FY0ZcwI",
+    "language": [
+      "English"
+    ],
+    "bpm": 211,
+    "gap": 17404.73933649289,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.296Z",
+    "realBpm": 107,
+    "volume": 0.74,
+    "author": "ultrastarsongs",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fiveforfightingsupermanitsnoteasy",
     "local": false
   },
   {
@@ -32281,6 +32415,36 @@
     ],
     "tracksCount": 1,
     "search": "georgemichaeldecembersongidreamedofchristmas",
+    "local": false
+  },
+  {
+    "id": "george-michael-elton-john-dont-let-the-sun-go-down-on-me",
+    "title": "Don’t Let The Sun Go Down On Me",
+    "artist": "George Michael & Elton John",
+    "video": "T_MmY5d1Yo0",
+    "language": [
+      "English"
+    ],
+    "bpm": 261.9,
+    "gap": 19086.34593356243,
+    "year": "1991",
+    "lastUpdate": "2024-10-19T00:11:01.439Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 0.98,
+    "author": "znxineohp, bohning, servok",
+    "tracks": [
+      {
+        "name": "George Michael",
+        "start": 17
+      },
+      {
+        "name": "Elton John",
+        "start": 2865
+      }
+    ],
+    "tracksCount": 2,
+    "search": "georgemichaeleltonjohndontletthesungodownonme",
     "local": false
   },
   {
@@ -43928,6 +44092,35 @@
     "local": false
   },
   {
+    "id": "kenny-rogers-dolly-parton-islands-in-the-stream",
+    "title": "Islands In The Stream",
+    "artist": "Kenny Rogers & Dolly Parton",
+    "video": "UaNGtgYwSsU",
+    "language": [
+      "English"
+    ],
+    "bpm": 408.5,
+    "gap": 9387.35294117647,
+    "year": "1983",
+    "lastUpdate": "2024-10-19T00:11:01.572Z",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "dylanb234",
+    "tracks": [
+      {
+        "name": "Kenny Rogers",
+        "start": 27
+      },
+      {
+        "name": "Dolly Parton",
+        "start": 538
+      }
+    ],
+    "tracksCount": 2,
+    "search": "kennyrogersdollypartonislandsinthestream",
+    "local": false
+  },
+  {
     "id": "kenshi-yonezu-kick-back",
     "title": "KICK BACK",
     "artist": "Kenshi Yonezu",
@@ -53837,6 +54030,32 @@
     "local": false
   },
   {
+    "id": "matchbox-twenty-unwell",
+    "title": "Unwell",
+    "artist": "Matchbox Twenty",
+    "video": "WziA88-n02k",
+    "language": [
+      "English"
+    ],
+    "bpm": 325.8,
+    "gap": 24457.108655616943,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.294Z",
+    "genre": "Pop-Rock",
+    "realBpm": 81,
+    "volume": 0.74,
+    "author": "hamadad",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "matchboxtwentyunwell",
+    "local": false
+  },
+  {
     "id": "matt-redman-10000-reasons-bless-the-lord",
     "title": "10,000 Reasons (Bless The Lord)",
     "artist": "Matt Redman",
@@ -55670,8 +55889,11 @@
     "gap": 58010.59807643635,
     "year": "1982",
     "artistOrigin": "US",
+    "lastUpdate": "2024-10-18T18:45:41.491Z",
+    "edition": "Halloween",
     "genre": "Funk",
     "realBpm": 116,
+    "volume": 0.77,
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller",
@@ -60562,6 +60784,58 @@
     "local": false
   },
   {
+    "id": "nirvana-all-apologies",
+    "title": "All Apologies",
+    "artist": "Nirvana",
+    "video": "hOAGjjgi22M",
+    "language": [
+      "English"
+    ],
+    "bpm": 393.45,
+    "gap": 16628.76858558902,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.485Z",
+    "genre": "Grunge",
+    "realBpm": 113,
+    "volume": 0.75,
+    "author": "mustangfred",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanaallapologies",
+    "local": false
+  },
+  {
+    "id": "nirvana-breed",
+    "title": "Breed",
+    "artist": "Nirvana",
+    "video": "J6EDW5WFb2M",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.63,
+    "gap": 29326.5625703776,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.492Z",
+    "genre": "Grunge",
+    "realBpm": 158,
+    "volume": 0.78,
+    "author": "Spys4Darwin",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanabreed",
+    "local": false
+  },
+  {
     "id": "nirvana-come-as-you-are-mtv-unplugged",
     "title": "Come As You Are (MTV Unplugged)",
     "artist": "Nirvana",
@@ -60704,6 +60978,108 @@
     "local": false
   },
   {
+    "id": "nirvana-lounge-act",
+    "title": "Lounge Act",
+    "artist": "Nirvana",
+    "video": "dZqpol8Yrq8",
+    "language": [
+      "English"
+    ],
+    "bpm": 305.32,
+    "gap": 16197.424341674308,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.478Z",
+    "genre": "Grunge",
+    "realBpm": 152,
+    "volume": 0.8,
+    "author": "promike",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanaloungeact",
+    "local": false
+  },
+  {
+    "id": "nirvana-pennyroyal-tea-mtv-unplugged",
+    "title": "Pennyroyal Tea (MTV Unplugged)",
+    "artist": "Nirvana",
+    "video": "4dcIPGzxsl8",
+    "language": [
+      "English"
+    ],
+    "bpm": 224.2,
+    "gap": 60896.4317573595,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.493Z",
+    "realBpm": 113,
+    "volume": 1,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanapennyroyalteamtvunplugged",
+    "local": false
+  },
+  {
+    "id": "nirvana-polly",
+    "title": "Polly",
+    "artist": "Nirvana",
+    "video": "DrlaVYKWeLU",
+    "language": [
+      "English"
+    ],
+    "bpm": 401.95,
+    "gap": 8152.411991541236,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.489Z",
+    "realBpm": 122,
+    "volume": 0.82,
+    "author": "demondawg",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanapolly",
+    "local": false
+  },
+  {
+    "id": "nirvana-school",
+    "title": "School",
+    "artist": "Nirvana",
+    "video": "sp86SkWKRQE",
+    "language": [
+      "English"
+    ],
+    "bpm": 399,
+    "gap": 30484.962406015038,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.484Z",
+    "genre": "Grunge",
+    "realBpm": 165,
+    "volume": 0.78,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanaschool",
+    "local": false
+  },
+  {
     "id": "nirvana-smells-like-teen-spirit",
     "title": "Smells Like Teen Spirit",
     "artist": "Nirvana",
@@ -60730,6 +61106,31 @@
     ],
     "tracksCount": 1,
     "search": "nirvanasmellsliketeenspirit",
+    "local": false
+  },
+  {
+    "id": "nirvana-something-in-the-way",
+    "title": "Something In The Way",
+    "artist": "Nirvana",
+    "video": "4VxdufqB9zg",
+    "language": [
+      "English"
+    ],
+    "bpm": 334.24,
+    "gap": 18372.68549545237,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.487Z",
+    "realBpm": 105,
+    "volume": 0.85,
+    "author": "daggeg",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nirvanasomethingintheway",
     "local": false
   },
   {
@@ -61524,6 +61925,7 @@
     "year": "2023",
     "artistOrigin": "US",
     "lastUpdate": "2024-05-31T00:09:56.078Z",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 138,
     "volume": 0.75,
@@ -64128,6 +64530,31 @@
     "local": false
   },
   {
+    "id": "peter-cetera-glory-of-love",
+    "title": "Glory Of Love",
+    "artist": "Peter Cetera",
+    "video": "yQHhqDRn4_c",
+    "language": [
+      "English"
+    ],
+    "bpm": 289.65,
+    "gap": 12926.05385810461,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.164Z",
+    "realBpm": 145,
+    "volume": 0.77,
+    "author": "Diddlmaus30mg",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "peterceteragloryoflove",
+    "local": false
+  },
+  {
     "id": "peter-fox-haus-am-see",
     "title": "Haus am See",
     "artist": "Peter Fox",
@@ -65845,6 +66272,57 @@
     "local": false
   },
   {
+    "id": "prince-and-the-revolution-raspberry-beret",
+    "title": "Raspberry Beret",
+    "artist": "Prince and the Revolution",
+    "video": "l7vRSu_wsNc",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.3,
+    "gap": 4119.492364836979,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.697Z",
+    "realBpm": 121,
+    "volume": 0.75,
+    "author": "Tracks",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "princeandtherevolutionraspberryberet",
+    "local": false
+  },
+  {
+    "id": "prince-and-the-revolution-when-doves-cry",
+    "title": "When Doves Cry",
+    "artist": "Prince and the Revolution",
+    "video": "UG3VcCAlUgE",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.1,
+    "gap": 33882.49308573686,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.699Z",
+    "genre": "Rock",
+    "realBpm": 127,
+    "volume": 0.82,
+    "author": "creefy, daggeg, servok",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "princeandtherevolutionwhendovescry",
+    "local": false
+  },
+  {
     "id": "prince-royce-darte-un-beso",
     "title": "Darte un beso",
     "artist": "Prince Royce",
@@ -66752,6 +67230,58 @@
     "local": false
   },
   {
+    "id": "queens-of-the-stone-age-go-with-the-flow",
+    "title": "Go With The Flow",
+    "artist": "Queens Of The Stone Age",
+    "video": "DcHKOC64KnE",
+    "language": [
+      "English"
+    ],
+    "bpm": 318,
+    "gap": 22529.43396226415,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.162Z",
+    "genre": "Rock",
+    "realBpm": 159,
+    "volume": 0.78,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "queensofthestoneagegowiththeflow",
+    "local": false
+  },
+  {
+    "id": "queens-of-the-stone-age-no-one-knows",
+    "title": "No One Knows",
+    "artist": "Queens Of The Stone Age",
+    "video": "s88r_q7oufE",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.8,
+    "gap": 14848.269794721407,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.496Z",
+    "genre": "Rock",
+    "realBpm": 171,
+    "volume": 0.81,
+    "author": "fid",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "queensofthestoneagenooneknows",
+    "local": false
+  },
+  {
     "id": "quevedo-con-bizarrap-music-sessions-52",
     "title": "Music Sessions #52",
     "artist": "Quevedo con Bizarrap",
@@ -67650,12 +68180,14 @@
       "English"
     ],
     "bpm": 230.72,
-    "gap": 25729.479750778817,
+    "gap": 25728.7919556172,
     "year": "1984",
     "artistOrigin": "US",
-    "edition": "Lego Rock Band",
+    "lastUpdate": "2024-10-18T18:45:01.415Z",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 116,
+    "volume": 0.77,
     "author": "gollum",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ray%20Parker%20Jr.&cancion=Ghostbusters",
@@ -68926,6 +69458,7 @@
     "year": "2008",
     "artistOrigin": "US",
     "lastUpdate": "2024-04-28T19:12:59.820Z",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 125,
     "volume": 0.96,
@@ -70027,6 +70560,7 @@
     "year": "1983",
     "artistOrigin": "US",
     "lastUpdate": "2024-07-08T16:20:19.830Z",
+    "edition": "Halloween",
     "realBpm": 124,
     "volume": 0.71,
     "author": "snake84, fepo",
@@ -73179,6 +73713,7 @@
     "year": "2009",
     "artistOrigin": "CO",
     "lastUpdate": "2024-05-20T19:25:55.055Z",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 122,
     "volume": 0.76,
@@ -74106,6 +74641,32 @@
     ],
     "tracksCount": 1,
     "search": "siasnowman",
+    "local": false
+  },
+  {
+    "id": "sia-unstoppable",
+    "title": "Unstoppable",
+    "artist": "Sia",
+    "video": "YaEG2aWJnZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 348.04,
+    "gap": 10338.734628203654,
+    "year": "2016",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-10-19T00:11:01.300Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.76,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "siaunstoppable",
     "local": false
   },
   {
@@ -78450,6 +79011,32 @@
     "local": false
   },
   {
+    "id": "taylor-swift-enchanted",
+    "title": "Enchanted",
+    "artist": "Taylor Swift",
+    "video": "igIfiqqVHtA",
+    "language": [
+      "English"
+    ],
+    "bpm": 218.7,
+    "gap": 12391.19341563786,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:01.435Z",
+    "genre": "Country",
+    "realBpm": 107,
+    "volume": 0.76,
+    "author": "Usdx",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftenchanted",
+    "local": false
+  },
+  {
     "id": "taylor-swift-feat-brendon-urie-me",
     "title": "ME!",
     "artist": "Taylor Swift feat. Brendon Urie",
@@ -78475,6 +79062,34 @@
     ],
     "tracksCount": 2,
     "search": "taylorswiftfeatbrendonurieme",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-feat-kendrick-lamar-bad-blood",
+    "title": "Bad Blood",
+    "artist": "Taylor Swift feat. Kendrick Lamar",
+    "video": "QcIy9NiNbmo",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.04,
+    "gap": 35835.41348076697,
+    "year": "2015",
+    "lastUpdate": "2024-10-19T00:11:01.305Z",
+    "genre": "Pop",
+    "videoGap": 32,
+    "realBpm": 170,
+    "previewStart": 72,
+    "previewEnd": 107,
+    "volume": 0.82,
+    "author": "Kakashi667",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taylorswiftfeatkendricklamarbadblood",
     "local": false
   },
   {
@@ -82510,6 +83125,31 @@
     ],
     "tracksCount": 1,
     "search": "thesmashingpumpkinsbulletwithbutterflywings",
+    "local": false
+  },
+  {
+    "id": "the-smashing-pumpkins-disarm",
+    "title": "Disarm",
+    "artist": "The Smashing Pumpkins",
+    "video": "d1acEVmnVhI",
+    "language": [
+      "English"
+    ],
+    "bpm": 258.7,
+    "gap": 16944.30228063394,
+    "year": "1993",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-19T00:11:00.495Z",
+    "realBpm": 129,
+    "volume": 0.89,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thesmashingpumpkinsdisarm",
     "local": false
   },
   {
