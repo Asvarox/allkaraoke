@@ -17,6 +17,7 @@ jobs:
         id: download_artifact
         uses: actions/download-artifact@v4
         with:
+          github-token: ${{ github.token }}
           path: all-blob-reports
           pattern: test-results-blob-e2e-*
           merge-multiple: true
