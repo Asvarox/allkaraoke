@@ -14,6 +14,7 @@ jobs:
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Download blob reports from GitHub Actions Artifacts
+        id: download_artifact
         uses: actions/download-artifact@v4
         with:
           path: all-blob-reports
@@ -23,7 +24,7 @@ jobs:
       - name: Check if there are any reports to merge
         id: reports_check
         run: |
-          if [ -z "$(ls -A ./all-blob-reports)" ]; then
+          if [ -z "$(ls -A ${{ steps.download_artifact.outputs.download-path }})" ]; then
             echo "reports=false\n" >> $GITHUB_OUTPUT
           else
             echo "reports=true\n" >> $GITHUB_OUTPUT
