@@ -78,6 +78,14 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('connect-button');
   }
 
+  public async expectPlayerToBeConnected() {
+    await expect(this.connectButton).toContainText('CONNECTED', { ignoreCase: true });
+  }
+
+  public async expectPlayerToBeDisconnected() {
+    await expect(this.connectButton).toContainText('DISCONNECTED', { ignoreCase: true });
+  }
+
   public async expectConnectButtonActivityToBeAs(buttonActivity: 'enabled' | 'disabled') {
     const activityToBooleanMap = {
       enabled: 'false',
