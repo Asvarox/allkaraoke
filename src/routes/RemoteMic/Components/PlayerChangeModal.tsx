@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
 import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
 import styles from 'modules/GameEngine/Drawing/styles';
@@ -13,6 +14,13 @@ interface Props {
   onModalClose: () => void;
   header?: React.ReactNode;
 }
+
+const colorNames: Record<backgroundTheme, string[]> = {
+  regular: ['Blue', 'Red', 'Green', 'Yellow'],
+  christmas: ['Green', 'Red', '?????', '?????'],
+  eurovision: ['Blue', 'Violet', 'Yellow', 'Pink'],
+  halloween: ['Orange', 'Violet', 'Red', 'Green'],
+};
 
 export default function PlayerChangeModal({ playerNumber, id, onModalClose, header }: Props) {
   const [style] = useEventListener(gameEvents.remoteStyleChanged, true) ?? ['regular'];
@@ -33,7 +41,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
           onClick={() => selectPlayer(0)}
           disabled={0 === playerNumber}
           style={{ color: styles.colors.players[0].perfect.fill }}>
-          {style === 'christmas' ? 'Green' : style === 'eurovision' ? 'Blue' : 'Blue'}
+          {colorNames[style][0]}
         </MenuButton>
         <MenuButton
           size="small"
@@ -41,7 +49,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
           onClick={() => selectPlayer(1)}
           disabled={1 === playerNumber}
           style={{ color: styles.colors.players[1].perfect.fill }}>
-          {style === 'christmas' ? 'Red' : style === 'eurovision' ? 'Violet' : 'Red'}
+          {colorNames[style][1]}
         </MenuButton>
         <MenuButton
           size="small"
@@ -49,7 +57,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
           onClick={() => selectPlayer(2)}
           disabled={2 === playerNumber}
           style={{ color: styles.colors.players[2].perfect.fill }}>
-          {style === 'christmas' ? '?????' : style === 'eurovision' ? 'Yellow' : 'Green'}
+          {colorNames[style][2]}
         </MenuButton>
         <MenuButton
           size="small"
@@ -57,7 +65,7 @@ export default function PlayerChangeModal({ playerNumber, id, onModalClose, head
           onClick={() => selectPlayer(3)}
           disabled={3 === playerNumber}
           style={{ color: styles.colors.players[3].perfect.fill }}>
-          {style === 'christmas' ? '?????' : style === 'eurovision' ? 'Pink' : 'Yellow'}
+          {colorNames[style][3]}
         </MenuButton>
         <MenuButton size="small" onClick={() => selectPlayer(null)} disabled={!joined} data-test="change-to-unset">
           Unassign

@@ -3,9 +3,16 @@ import waitFinishedSound from 'assets/376817__original_sound__impact-cinematic.o
 import waitForReadinessSound from 'assets/459342__papaninkasettratat__cinematic-music-short.ogg';
 import wooshSound from 'assets/60013__qubodup__whoosh.mp3';
 import backgroundMusicSound from 'assets/Funk Cool Groove (No Copyright Music) By Anwar Amr.ogg';
+import halloweenWaitFinishedSound from 'assets/halloween/boo-and-laugh-7060.mp3';
+import halloweenWooshSound from 'assets/halloween/croworraven1-6749.mp3';
+import halloweenBackgroundMusicSound from 'assets/halloween/Halloween Cinematic by Infraction [No Copyright Music]  Halloween 2024 [ ezmp3.cc ].mp3';
+import halloweenSelectSongSound from 'assets/halloween/halloween-impact-05-93808.mp3';
+import halloweenWaitForReadinessSound from 'assets/halloween/scary-music-box-for-spooky-scenes-165983.mp3';
 import menuBackSound from 'assets/menu_back.mp3';
 import menuEnterSound from 'assets/menu_enter.mp3';
 import menuNavigateSound from 'assets/menu_navigate.mp3';
+import { backgroundTheme } from 'modules/Elements/LayoutWithBackground';
+import { BackgroundThemeSetting } from 'routes/Settings/SettingsState';
 
 class Sound {
   private sound: HTMLAudioElement | null = null;
@@ -55,6 +62,24 @@ class Sound {
   };
 }
 
+class ThemedSound {
+  constructor(
+    private defaultSound: Sound,
+    private themeOverrides?: Partial<Record<backgroundTheme, Sound>>,
+  ) {}
+
+  private getProperSound = () => {
+    const theme = BackgroundThemeSetting.get();
+
+    return this.themeOverrides?.[theme] ?? this.defaultSound;
+  };
+
+  public play = async (parallel = true) => this.getProperSound().play(parallel);
+  public pause = () => this.getProperSound().pause();
+  public stop = () => this.getProperSound().stop();
+  public playing = () => this.getProperSound().playing();
+}
+
 export const menuNavigate = new Sound({
   src: menuNavigateSound,
 });
@@ -67,27 +92,46 @@ export const menuBack = new Sound({
   src: menuBackSound,
 });
 
-export const waitFinished = new Sound({
-  src: waitFinishedSound,
-  preload: true,
+export const woosh = new ThemedSound(
+  new Sound({
+    src: wooshSound,
+    preload: true,
+    volume: 0.5,
+  }),
+  {
+    halloween: new Sound({
+      src: halloweenWooshSound,
+      preload: true,
+      volume: 0.5,
+    }),
+  },
+);
+
+export const backgroundMusic = new ThemedSound(
+  new Sound({
+    src: backgroundMusicSound,
+    volume: 0.3,
+    loop: true,
+  }),
+  {
+    christmas: new Sound({
+      src: christmasBackgroundMusicSound,
+      volume: 0.25,
+      loop: true,
+    }),
+    halloween: new Sound({
+      src: halloweenBackgroundMusicSound,
+      volume: 0.3,
+      loop: true,
+    }),
+  },
+);
+
+export const waitFinished = new ThemedSound(new Sound({ src: waitFinishedSound, preload: true }), {
+  halloween: new Sound({ src: halloweenWaitFinishedSound, preload: true, volume: 0.4 }),
+});
+export const waitForReadinessMusic = new ThemedSound(new Sound({ src: waitForReadinessSound, volume: 0.8 }), {
+  halloween: new Sound({ src: halloweenWaitForReadinessSound, volume: 0.2 }),
 });
 
-export const woosh = new Sound({
-  src: wooshSound,
-  preload: true,
-  volume: 0.5,
-});
-
-export const backgroundMusic = new Sound({
-  src: backgroundMusicSound,
-  volume: 0.3,
-  loop: true,
-});
-
-export const christmasBackgroundMusic = new Sound({
-  src: christmasBackgroundMusicSound,
-  volume: 0.25,
-  loop: true,
-});
-
-export const waitForReadinessMusic = new Sound({ src: waitForReadinessSound, volume: 0.8 });
+export const selectHalloweenSong = new Sound({ src: halloweenSelectSongSound, preload: true, volume: 0.6 });
