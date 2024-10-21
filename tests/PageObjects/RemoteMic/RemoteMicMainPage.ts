@@ -50,8 +50,12 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('remote-keyboard');
   }
 
+  public get enterKeyboardButton() {
+    return this.page.getByTestId('keyboard-enter');
+  }
+
   public async pressEnterByKeyboard() {
-    await this.page.getByTestId('keyboard-enter').click();
+    await this.enterKeyboardButton.click();
   }
 
   public get joinGameButton() {
@@ -97,5 +101,21 @@ export class RemoteMicMainPagePO {
   public async clickToConnectMic() {
     await this.expectConnectButtonActivityToBeAs('enabled');
     await this.connectButton.click();
+  }
+
+  public get searchSongInput() {
+    return this.page.getByTestId('search-song-input');
+  }
+
+  public async searchTheSong(songID: string) {
+    await this.searchSongInput.fill(songID);
+  }
+
+  public get backArrowKeyboardButton() {
+    return this.page.getByTestId('keyboard-backspace');
+  }
+
+  public async goBackByKeyboard() {
+    await this.backArrowKeyboardButton.click();
   }
 }
