@@ -23,7 +23,7 @@ jobs:
       - name: Check if there are any reports to merge
         id: reports_check
         run: |
-          if [ -z "$(ls -A all-blob-reports)" ]; then
+          if [ -z "$(ls -A ./all-blob-reports)" ]; then
             echo "reports=false\n" >> $GITHUB_OUTPUT
           else
             echo "reports=true\n" >> $GITHUB_OUTPUT
