@@ -27,9 +27,9 @@ jobs:
         run: |
           ls -A ${{ steps.download_artifact.outputs.download-path }}
           if [ -z "$(ls -A ${{ steps.download_artifact.outputs.download-path }})" ]; then
-            echo "reports=false\n" >> $GITHUB_OUTPUT
+            echo "reports=false" >> $GITHUB_OUTPUT
           else
-            echo "reports=true\n" >> $GITHUB_OUTPUT
+            echo "reports=true" >> $GITHUB_OUTPUT
           fi
       - name: Test
         run: |
