@@ -1,0 +1,522 @@
+#ARTIST:The Charlie Daniels Band
+#TITLE:The Devil Went Down To Georgia
+#CREATOR:demondawg
+#BPM:275,7
+#YEAR:1979
+#VIDEO:v=sh7BZf7D5Bw
+#LANGUAGE:English
+#GAP:14464,598540145986
+#EDITION:Halloween
+#ALLKARAOKE_ID:the-charlie-daniels-band-the-devil-went-down-to-georgia
+#ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:57.208Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8481
+#ALLKARAOKE_REALBPM:138
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5760
+#ALLKARAOKE_VOLUME:0,86
+#MP3:The Charlie Daniels Band - The Devil Went Down To Georgia.mp3
+: 18 3 33 The 
+: 22 1 14 dev
+: 24 1 14 il 
+: 26 3 14 went 
+: 30 3 14 down 
+: 34 1 14 to 
+: 36 5 14 Geor
+: 42 3 14 gia
+- 45
+: 46 1 14 He 
+: 48 3 14 was 
+: 52 1 14 look
+: 54 1 14 ing 
+: 56 3 14 for a 
+: 60 7 14 soul 
+: 68 1 14 to 
+: 70 7 14 steal
+- 77
+: 78 1 14 And 
+: 80 1 14 he 
+: 82 1 14 was 
+: 84 3 14 in a 
+: 88 7 14 bind
+- 95
+: 96 3 14 ’Cause 
+: 100 1 14 he 
+: 102 1 14 was 
+: 104 1 14 way 
+: 106 3 14 be
+: 110 3 14 hind
+- 113
+: 114 1 14 And 
+: 116 3 14 was 
+: 120 1 14 will
+: 122 1 14 in
+: 124 1 14 ’ 
+: 126 1 14 to make 
+: 128 1 14 a 
+: 130 8 14 deal
+- 138
+: 146 1 14 When 
+: 148 1 14 he 
+: 150 3 14 came 
+: 154 1 14 a
+: 156 3 14 cross
+- 159
+: 160 3 14 This 
+: 164 5 14 young 
+: 170 3 14 man 
+: 174 1 14 saw
+: 176 1 14 ing 
+: 178 1 14 on 
+: 180 1 14 a 
+: 182 1 14 fid
+: 184 2 14 dle
+- 186
+: 188 1 14 And 
+: 190 1 14 play
+: 192 1 14 in’ 
+: 194 1 14 it 
+: 196 8 14 hot
+- 204
+: 208 3 14 And 
+: 212 1 14 the 
+: 214 1 14 dev
+: 216 3 14 il 
+: 220 3 14 jumped 
+: 224 1 14 up
+- 225
+: 226 1 14 On 
+: 228 1 14 a 
+: 230 1 14 hick
+: 232 1 14 o
+: 234 1 14 ry 
+: 236 3 14 stump 
+: 240 1 14 and 
+: 242 3 14 said,
+- 245
+: 246 3 14 "Boy 
+: 250 1 14 let 
+: 252 1 14 me 
+: 254 1 14 tell 
+: 256 1 14 you 
+: 258 8 14 what:
+- 266
+: 276 1 14 I 
+: 278 3 38 bet 
+: 282 3 38 you 
+: 286 3 38 did
+: 290 1 38 n’t 
+: 292 3 38 know 
+: 296 2 38 it
+- 298
+: 300 1 38 But 
+: 302 5 38 I’m 
+: 308 1 38 a 
+: 310 3 38 fid
+: 314 3 38 dle 
+: 318 3 38 play
+: 322 1 38 er 
+: 324 12 38 too,
+- 336
+: 340 3 38 And 
+: 344 1 38 if 
+: 346 3 38 you 
+: 350 5 38 care 
+: 356 3 38 to 
+: 360 1 38 take 
+: 362 1 38 a 
+: 364 6 38 dare
+- 370
+: 372 1 38 I’ll 
+: 374 3 38 make 
+: 378 2 38 a 
+: 382 3 38 bet 
+: 386 1 38 with 
+: 388 8 38 you
+- 396
+: 402 3 38 Now 
+: 406 1 38 you 
+: 408 5 38 play 
+: 414 1 38 a 
+: 416 1 38 pret
+: 418 1 38 ty 
+: 420 3 38 good 
+: 424 1 38 fid
+: 426 1 38 dle 
+: 428 7 38 boy
+- 435
+: 436 1 38 But 
+: 438 3 38 give 
+: 442 2 38 the 
+: 446 1 38 de
+: 448 3 38 vil 
+: 452 1 38 his 
+: 454 8 38 due
+- 462
+: 466 1 38 I’ll 
+: 468 1 38 bet 
+: 470 1 38 a 
+: 472 1 38 fid
+: 474 1 38 dle 
+: 476 3 38 of 
+: 480 3 38 gold 
+: 484 1 38 a
+: 486 3 38 gainst 
+: 490 3 38 your 
+: 494 5 38 soul
+- 499
+: 500 1 38 ’Cause 
+: 502 1 38 I 
+: 504 3 38 think 
+: 508 2 38 I’m 
+: 512 1 38 bet
+: 514 1 38 ter 
+: 516 1 38 than 
+: 518 8 38 you"
+- 526
+: 532 3 38 The 
+: 536 3 38 boy 
+: 540 3 38 said, 
+: 544 3 38 "My 
+: 548 7 38 name’s 
+: 556 5 38 John
+: 562 1 38 ny
+- 563
+: 564 3 38 And 
+: 568 1 38 it 
+: 570 7 38 might 
+: 578 3 38 be a 
+: 582 8 38 sin
+- 590
+: 596 1 38 But 
+: 598 1 38 I’ll 
+: 600 3 38 take 
+: 604 3 38 your 
+: 608 4 38 bet, 
+: 614 3 38 your 
+: 618 1 38 gon
+: 620 1 38 na 
+: 622 1 38 re
+: 624 5 38 gret
+- 629
+: 630 1 38 ’Cause 
+: 632 1 38 I’m 
+: 634 1 38 the 
+: 636 3 38 best 
+: 640 3 38 that’s 
+: 644 1 38 ev
+: 646 1 38 er 
+: 648 6 38 been"
+- 654
+: 666 3 38 John
+: 670 1 38 ny 
+: 672 5 38 ros
+: 678 1 38 in 
+: 680 3 38 up 
+: 684 11 33 your bow 
+: 696 3 41 and 
+: 700 3 41 play 
+: 704 1 41 your 
+: 706 3 41 fid
+: 710 3 41 dle 
+: 714 10 41 hard
+- 724
+: 728 5 41 ’Cause 
+: 734 3 40 hell’s 
+: 738 3 40 broke 
+: 742 3 40 loose 
+: 746 1 36 in 
+: 748 3 36 Geor
+: 752 3 40 gia
+- 755
+: 756 3 19 And 
+: 760 3 34 the 
+: 764 3 34 dev
+: 768 5 34 il 
+: 774 7 34 deals the 
+: 782 12 38 cards
+- 794
+: 796 3 26 And 
+: 800 1 45 if 
+: 802 3 41 you 
+: 806 3 41 win 
+: 810 11 45 you get this 
+: 822 5 41 shi
+: 828 3 41 ny 
+: 832 3 41 fid
+: 836 3 41 dle 
+: 840 7 41 made of 
+: 848 12 41 gold
+- 860
+: 862 3 26 But 
+: 866 3 34 if 
+: 870 5 34 you 
+: 876 3 34 lose 
+: 880 1 34 the 
+: 882 1 19 dev
+: 884 3 19 il 
+: 888 5 19 gets 
+: 894 1 28 your 
+: 896 34 28 soul
+- 930 1048
+- 1048
+: 1066 1 31 The 
+: 1068 1 14 de
+: 1070 1 14 vil 
+: 1072 5 14 open
+: 1078 1 14 ed 
+: 1080 3 14 up 
+: 1084 3 14 his 
+: 1088 5 14 case 
+: 1094 1 14 and 
+: 1096 1 14 he 
+: 1098 3 14 said,
+- 1101
+: 1102 3 14 "I’ll 
+: 1106 9 14 start this 
+: 1116 7 14 show"
+- 1123
+: 1124 1 14 And 
+: 1126 11 14 fire 
+: 1138 5 14 flew 
+: 1144 3 14 from his 
+: 1148 3 14 fin
+: 1152 3 14 ger
+: 1156 3 14 tips
+- 1159
+: 1160 1 14 As 
+: 1162 1 14 he 
+: 1164 5 14 ros
+: 1170 1 14 ined 
+: 1172 5 14 up his 
+: 1178 8 14 bow
+- 1186
+: 1190 3 14 And 
+: 1194 3 14 he 
+: 1198 3 14 pulled 
+: 1202 1 14 the 
+: 1204 3 14 bow 
+: 1208 3 14 a
+: 1212 3 14 cross 
+: 1216 1 14 the 
+: 1218 5 14 strings
+- 1223
+: 1224 1 14 And 
+: 1226 3 14 it 
+: 1230 3 14 made 
+: 1234 1 14 an 
+: 1236 3 14 ev
+: 1240 1 14 il 
+: 1242 13 14 hiss
+- 1255
+: 1256 3 14 Then 
+: 1260 1 14 a 
+: 1262 3 14 band 
+: 1266 3 14 of 
+: 1270 3 14 dem
+: 1274 3 14 ons 
+: 1278 5 14 joined 
+: 1284 1 14 in
+- 1285
+: 1286 1 14 And 
+: 1288 1 14 it 
+: 1290 5 14 sound
+: 1296 1 14 ed 
+: 1298 1 14 some
+: 1300 1 14 thing 
+: 1302 5 14 like 
+: 1308 10 14 this
+- 1318 1966
+- 1966
+: 1984 3 14 When 
+: 1988 1 26 the 
+: 1990 3 26 dev
+: 1994 2 26 il 
+: 1998 1 26 fin
+: 2000 3 26 ished 
+: 2004 3 26 John
+: 2008 1 26 ny 
+: 2010 3 26 said,
+- 2013
+: 2014 3 26 "Well 
+: 2018 1 26 you’re 
+: 2020 3 26 pret
+: 2024 3 26 ty 
+: 2028 7 26 good ol’ 
+: 2036 12 26 son!
+- 2048
+: 2050 1 26 But 
+: 2052 3 26 sit 
+: 2056 3 26 down 
+: 2060 5 26 in that 
+: 2066 3 26 chair 
+: 2070 3 26 right 
+: 2074 3 26 there
+- 2077
+: 2078 1 26 And 
+: 2080 1 26 let 
+: 2082 1 26 me 
+: 2084 5 26 show 
+: 2090 1 26 you 
+: 2092 3 26 how 
+: 2096 1 26 it’s 
+: 2098 12 26 done!"
+- 2110
+: 2116 3 26 Fire 
+: 2120 1 26 on the 
+: 2122 3 26 moun
+: 2126 3 26 tain, 
+: 2130 3 26 run 
+: 2134 5 26 boys 
+: 2140 12 26 run
+- 2152 2162
+- 2162
+: 2180 1 26 The 
+: 2182 3 43 Dev
+: 2186 1 43 il’s 
+: 2188 3 43 in the 
+: 2192 3 43 House 
+: 2196 1 43 of 
+: 2198 1 43 the 
+: 2200 3 43 Ris
+: 2204 1 43 ing 
+: 2206 16 43 Sun
+- 2222 2232
+- 2232
+: 2250 1 43 Chick
+: 2252 1 31 en 
+: 2254 1 42 in 
+: 2256 1 42 the 
+: 2258 7 42 bread pan, 
+: 2266 1 42 pick
+: 2268 1 42 ing 
+: 2270 3 42 out 
+: 2274 14 42 dough
+- 2288 2298
+- 2298
+: 2316 3 42 Gran
+: 2320 1 45 ny 
+: 2322 3 45 does your 
+: 2326 1 45 dog 
+: 2328 3 45 bite? 
+: 2332 5 45 No, 
+: 2338 5 40 child, 
+: 2344 10 40 no
+- 2354 2728
+- 2728
+: 2746 3 40 The 
+: 2750 1 57 dev
+: 2752 1 57 il 
+: 2754 5 57 bowed 
+: 2760 1 57 his 
+: 2762 5 57 head
+- 2767
+: 2768 3 57 Be
+: 2772 3 57 cause 
+: 2776 1 57 he 
+: 2778 5 57 knew 
+: 2784 1 57 that 
+: 2786 3 57 he’d 
+: 2790 3 57 been 
+: 2794 8 57 beat,
+- 2802
+: 2804 3 57 And 
+: 2808 1 57 he 
+: 2810 5 57 laid 
+: 2816 3 57 that 
+: 2820 3 57 gold
+: 2824 1 57 en 
+: 2826 3 57 fid
+: 2830 1 57 dle
+- 2831
+: 2832 3 57 On 
+: 2836 1 57 the 
+: 2838 9 57 ground 
+: 2848 1 57 at 
+: 2850 3 57 John
+: 2854 3 57 ny’s 
+: 2858 8 57 feet
+- 2866
+: 2870 1 57 John
+: 2872 1 57 ny 
+: 2874 5 57 said, 
+: 2880 1 57 "Dev
+: 2882 3 57 il, 
+: 2886 1 57 just 
+: 2888 3 57 come 
+: 2892 3 57 on 
+: 2896 1 57 back
+- 2897
+: 2898 1 57 If 
+: 2900 3 57 you 
+: 2904 1 57 ev
+: 2906 1 57 er 
+: 2908 1 57 want 
+: 2910 1 57 to 
+: 2912 5 57 try 
+: 2918 1 57 a
+: 2920 7 57 gain
+- 2927
+: 2928 3 57 ’cause 
+: 2932 3 57 I 
+: 2936 3 57 told 
+: 2940 1 57 you 
+: 2942 5 57 once,
+- 2947
+: 2948 1 57 You 
+: 2950 5 57 son
+: 2956 1 57 of
+: 2958 1 57 a
+: 2960 2 57 gun,
+- 2962
+: 2964 3 57 I’m 
+: 2968 1 57 the 
+: 2970 5 57 best 
+: 2976 1 57 that’s 
+: 2978 1 57 ev
+: 2980 1 57 er 
+: 2982 8 57 been!"
+- 2990
+: 2992 1 57 He 
+: 2994 5 57 played:
+- 2999
+: 3000 5 57 Fire 
+: 3006 3 57 on the 
+: 3010 1 26 moun
+: 3012 3 26 tain, 
+: 3016 3 26 run 
+: 3020 5 26 boys 
+: 3026 12 26 run
+- 3038 3048
+- 3048
+: 3066 1 26 The 
+: 3068 1 26 Dev
+: 3070 1 26 il’s 
+: 3072 3 26 in the 
+: 3076 3 43 House 
+: 3080 1 43 of 
+: 3082 1 43 the 
+: 3084 3 43 Ris
+: 3088 3 43 ing 
+: 3092 14 43 Sun
+- 3106 3116
+- 3116
+: 3134 1 43 Chick
+: 3136 1 31 en 
+: 3138 1 31 in 
+: 3140 1 31 the 
+: 3142 9 31 bread pan, 
+: 3152 1 31 pick
+: 3154 1 31 ing 
+: 3156 1 31 out 
+: 3158 10 42 dough
+- 3168 3184
+- 3184
+: 3202 3 42 Gran
+: 3206 1 33 ny 
+: 3208 1 33 does your 
+: 3210 1 33 dog 
+: 3212 5 45 bite? 
+: 3218 1 45 No, 
+: 3220 9 45 child, 
+: 3230 10 45 no
+E
