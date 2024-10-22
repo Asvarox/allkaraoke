@@ -102,7 +102,7 @@ export const woosh = new ThemedSound(
     halloween: new Sound({
       src: halloweenWooshSound,
       preload: true,
-      volume: 0.5,
+      volume: 0.7,
     }),
   },
 );
@@ -134,4 +134,4 @@ export const waitForReadinessMusic = new ThemedSound(new Sound({ src: waitForRea
   halloween: new Sound({ src: halloweenWaitForReadinessSound, volume: 0.2 }),
 });
 
-export const selectHalloweenSong = new Sound({ src: halloweenSelectSongSound, preload: true, volume: 0.6 });
+export const selectHalloweenSong = new Sound({ src: halloweenSelectSongSound, preload: true, volume: 0.5 });
