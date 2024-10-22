@@ -44,6 +44,21 @@ jobs:
           packagescript: 'e2e'
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
+  e2e-tests-add-summary:
+    runs-on: ubuntu-latest
+    if: ${{ failure() }}
+    needs: e2e-tests-run
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            core.summary.addRaw(`
+            # E2E tests reports
+            | Name                    | Result |
+            | ----------------------- | - |
+            | **URL**: | 	https://${{ github.run_id }}.allkaraoke-party-tests-results.pages.dev |
+            `
+            ).write();
 
   ct-tests-run:
     permissions:
