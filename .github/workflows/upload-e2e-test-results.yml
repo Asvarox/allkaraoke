@@ -31,6 +31,9 @@ jobs:
           else
             echo "reports='true'\n" >> $GITHUB_OUTPUT
           fi
+      - name: Test
+        run: |
+          echo "reports=${{ steps.reports_check.outputs.reports }}"
       - name: Merge into HTML Report
         if: steps.reports_check.outputs.reports == 'true'
         run: npx playwright merge-reports --reporter html ./all-blob-reports
