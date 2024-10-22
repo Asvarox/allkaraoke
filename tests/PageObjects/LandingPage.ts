@@ -19,4 +19,12 @@ export class LandingPagePO {
     // This hack makes sure it clicks the right one.
     await this.page.getByTestId('join-existing-game').and(this.page.locator(':visible')).click();
   }
+
+  public async dismissAlertForSmallerScreens() {
+    await this.page.getByTestId('dismiss-mobile-mode').click();
+  }
+
+  public async enableMobilePhoneMode() {
+    await this.page.getByTestId('enable-mobile-mode').click();
+  }
 }
