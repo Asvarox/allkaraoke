@@ -1276,8 +1276,11 @@
     "gap": 17212.757301628328,
     "year": "1979",
     "artistOrigin": "AU",
+    "lastUpdate": "2024-10-21T15:12:44.450Z",
+    "edition": "Halloween",
     "genre": "Hard Rock",
     "realBpm": 117,
+    "volume": 0.5,
     "author": "mustangfred",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=AC%2FDC&cancion=Highway%20To%20Hell",
@@ -8725,6 +8728,7 @@
     "year": "1997",
     "artistOrigin": "US",
     "lastUpdate": "2024-08-25T00:16:37.289Z",
+    "edition": "Halloween",
     "genre": "Pop Internacional",
     "videoGap": 73,
     "realBpm": 108,
@@ -22189,6 +22193,35 @@
     "local": false
   },
   {
+    "id": "de-letrange-noel-de-monsieur-jack-bienvenue-a-halloween",
+    "title": "Bienvenue à Halloween",
+    "artist": "De \"L’Étrange Noël de Monsieur Jack\"",
+    "video": "HwVX9GwW5fw",
+    "language": [
+      "French"
+    ],
+    "bpm": 333.95,
+    "gap": 13911.828117981733,
+    "year": "1993",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-10-22T16:27:30.172Z",
+    "edition": "Halloween",
+    "genre": "Soundtrack",
+    "realBpm": 167,
+    "previewStart": 54,
+    "previewEnd": 91,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deletrangenoeldemonsieurjackbienvenueahalloween",
+    "local": false
+  },
+  {
     "id": "de-press-bo-jo-cie-kochom",
     "title": "Bo Jo Cie Kochom",
     "artist": "De Press",
@@ -29292,7 +29325,7 @@
     "year": "2003",
     "artistOrigin": "US",
     "lastUpdate": "2024-05-07T06:08:37.170Z",
-    "edition": "SingStar PopHit",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 96,
     "volume": 0.81,
@@ -58357,7 +58390,7 @@
     "year": "2006",
     "artistOrigin": "US",
     "lastUpdate": "2023-10-15T11:26:31.309Z",
-    "edition": "[SC]-Songs",
+    "edition": "Halloween",
     "genre": "None",
     "realBpm": 97,
     "volume": 0.85,
@@ -63635,6 +63668,7 @@
     "year": "2008",
     "artistOrigin": "US",
     "lastUpdate": "2023-10-15T11:26:31.320Z",
+    "edition": "Halloween",
     "genre": "None",
     "realBpm": 84,
     "volume": 0.75,
@@ -65167,6 +65201,34 @@
     ],
     "tracksCount": 1,
     "search": "piersiikukizcalujmnie",
+    "local": false
+  },
+  {
+    "id": "piet-piraat-halloween",
+    "title": "Halloween",
+    "artist": "Piet Piraat",
+    "video": "-qTJmWYAafA",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 380,
+    "gap": 9243.157894736842,
+    "year": "2008",
+    "artistOrigin": "NL",
+    "lastUpdate": "2024-10-22T16:27:30.177Z",
+    "edition": "Halloween",
+    "realBpm": 95,
+    "previewStart": 66,
+    "previewEnd": 87,
+    "volume": 0.83,
+    "author": "eppo2001",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pietpiraathalloween",
     "local": false
   },
   {
@@ -67455,9 +67517,11 @@
     "gap": 17976.29411764706,
     "year": "1992",
     "artistOrigin": "GB",
-    "edition": "SingStar '90s",
+    "lastUpdate": "2024-10-21T15:46:40.993Z",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 92,
+    "volume": 0.5,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Radiohead&cancion=Creep",
@@ -71368,17 +71432,18 @@
       "English"
     ],
     "bpm": 384.21,
-    "gap": -23.288045600062503,
+    "gap": 15.75310377137501,
     "year": "2014",
     "artistOrigin": "SE",
     "lastUpdate": "2024-02-08T06:16:42.793Z",
+    "edition": "Hallowe",
     "genre": "Power Metal",
     "realBpm": 96,
     "volume": 0.82,
     "author": "Shifty",
     "tracks": [
       {
-        "start": 7
+        "start": 6
       }
     ],
     "tracksCount": 1,
@@ -81330,10 +81395,11 @@
       "English"
     ],
     "bpm": 340,
-    "gap": 50088.24,
+    "gap": 49073.294117647056,
     "year": "1995",
     "artistOrigin": "IE",
-    "edition": "SingStar '90s",
+    "lastUpdate": "2024-10-21T15:13:25.107Z",
+    "edition": "Halloween",
     "genre": "Pop",
     "realBpm": 84,
     "volume": 0.85,
@@ -81342,7 +81408,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cranberries&cancion=Zombie",
     "tracks": [
       {
-        "start": 0
+        "start": 23
       }
     ],
     "tracksCount": 1,
