@@ -32,6 +32,7 @@ const lastSong = 'zzz-last-polish-1994';
 const polishSongTitle = 'multitrack';
 const polishLang = 'Polish';
 const englishLang = 'English';
+const frenchLang = 'French';
 
 test.skip('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
@@ -361,6 +362,7 @@ test('Filters - PlayLists (Halloween)', async ({ page }) => {
   await test.step('Make sure proper song languages are selected', async () => {
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(polishLang);
     await pages.songLanguagesPage.ensureSongLanguageIsSelected(englishLang);
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(frenchLang);
   });
 
   await test.step('Check if songs are visible in all songs', async () => {
