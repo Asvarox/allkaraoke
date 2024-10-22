@@ -27,11 +27,9 @@ jobs:
         run: |
           ls -A ${{ steps.download_artifact.outputs.download-path }}
           if [ -z "$(ls -A ${{ steps.download_artifact.outputs.download-path }})" ]; then
-            echo "reports=false"
-            echo "reports=false\n" >> $GITHUB_OUTPUT
+            echo "reports='false'\n" >> $GITHUB_OUTPUT
           else
-            echo "reports=true"
-            echo "reports=true\n" >> $GITHUB_OUTPUT
+            echo "reports='true'\n" >> $GITHUB_OUTPUT
           fi
       - name: Merge into HTML Report
         if: steps.reports_check.outputs.reports == 'true'
