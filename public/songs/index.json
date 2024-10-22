@@ -12411,6 +12411,35 @@
     "local": false
   },
   {
+    "id": "blue-oyster-cult-dont-fear-the-reaper",
+    "title": "(Don’t Fear) The Reaper",
+    "artist": "Blue Öyster Cult",
+    "video": "PtoK2CSTehQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 285,
+    "gap": 12850,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:57.591Z",
+    "edition": "Halloween",
+    "genre": "Rock",
+    "realBpm": 141,
+    "volume": 1,
+    "author": "ayhafiz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3620",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4809",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blueoystercultdontfearthereaper",
+    "local": false
+  },
+  {
     "id": "blur-song-2",
     "title": "Song 2",
     "artist": "Blur",
@@ -12652,6 +12681,33 @@
     ],
     "tracksCount": 1,
     "search": "bobsegerthesilverbulletbandwevegottonite",
+    "local": false
+  },
+  {
+    "id": "bobby-boris-pickett-the-crypt-kickers-monster-mash",
+    "title": "Monster Mash",
+    "artist": "Bobby “Boris“ Pickett & The Crypt-Kickers",
+    "video": "tsPdVsIXqzU",
+    "language": [
+      "English"
+    ],
+    "bpm": 266,
+    "gap": 15784.962406015038,
+    "year": "1962",
+    "lastUpdate": "2024-10-22T16:43:56.677Z",
+    "edition": "Halloween",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "loch dezz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=236",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3002",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bobbyborispickettthecryptkickersmonstermash",
     "local": false
   },
   {
@@ -19019,6 +19075,35 @@
     ],
     "tracksCount": 1,
     "search": "cleanbanditfeaturingzaralarssonsymphony",
+    "local": false
+  },
+  {
+    "id": "cliff-richard-devil-woman",
+    "title": "Devil Woman",
+    "artist": "Cliff Richard",
+    "video": "IgomTOOgl8M",
+    "language": [
+      "English"
+    ],
+    "bpm": 226.8,
+    "gap": 18927.93650793651,
+    "year": "1976",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-22T16:43:57.590Z",
+    "edition": "Halloween",
+    "genre": "Rock",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "gust65",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11394",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12870",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "cliffricharddevilwoman",
     "local": false
   },
   {
@@ -35434,6 +35519,35 @@
     "local": false
   },
   {
+    "id": "helloween-halloween",
+    "title": "Halloween",
+    "artist": "Helloween",
+    "video": "yOAl0enE7kI",
+    "language": [
+      "English"
+    ],
+    "bpm": 291.09,
+    "gap": 34780.92136452643,
+    "year": "1987",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-10-22T16:43:55.889Z",
+    "edition": "Halloween",
+    "genre": "Metal",
+    "realBpm": 144,
+    "volume": 0.83,
+    "author": "Achilles",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=4533",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20711",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "helloweenhalloween",
+    "local": false
+  },
+  {
     "id": "henry-moodie-drunk-text",
     "title": "drunk text",
     "artist": "Henry Moodie",
@@ -42823,6 +42937,34 @@
     ],
     "tracksCount": 1,
     "search": "katebushrunningupthathill",
+    "local": false
+  },
+  {
+    "id": "kate-bush-wuthering-heights",
+    "title": "Wuthering Heights",
+    "artist": "Kate Bush",
+    "video": "-1pMMIe4hb4",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 8210,
+    "year": "1978",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-22T16:43:57.077Z",
+    "edition": "Halloween",
+    "realBpm": 124,
+    "volume": 0.91,
+    "author": "znxineohp",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1716",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=11527",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katebushwutheringheights",
     "local": false
   },
   {
@@ -53121,6 +53263,34 @@
     "local": false
   },
   {
+    "id": "marilyn-manson-this-is-halloween",
+    "title": "This Is Halloween",
+    "artist": "Marilyn Manson",
+    "video": "jU6iP0WLsU8",
+    "language": [
+      "English"
+    ],
+    "bpm": 334.74,
+    "gap": 16414.160243771286,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:55.885Z",
+    "edition": "Halloween",
+    "realBpm": 168,
+    "volume": 0.81,
+    "author": "Leroidukitch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=20681",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marilynmansonthisishalloween",
+    "local": false
+  },
+  {
     "id": "marilyn-manson-tourniquet",
     "title": "Tourniquet",
     "artist": "Marilyn Manson",
@@ -59944,9 +60114,10 @@
       "English"
     ],
     "bpm": 200.45,
-    "gap": 16340.188825143428,
+    "gap": 16340.188825143427,
     "year": "1994",
     "lastUpdate": "2024-09-27T19:58:26.069Z",
+    "edition": "Halloween",
     "genre": "Soundtrack",
     "realBpm": 116,
     "volume": 0.78,
@@ -68104,6 +68275,34 @@
     "local": false
   },
   {
+    "id": "ramones-pet-sematary",
+    "title": "Pet Sematary",
+    "artist": "Ramones",
+    "video": "HJWFsZ_YUc4",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.7,
+    "gap": 6698.998998998999,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:56.940Z",
+    "edition": "Halloween",
+    "realBpm": 148,
+    "volume": 0.85,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3974",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ramonespetsematary",
+    "local": false
+  },
+  {
     "id": "raphael-hablemos-del-amor",
     "title": "Hablemos del amor",
     "artist": "Raphael",
@@ -71744,6 +71943,35 @@
     ],
     "tracksCount": 1,
     "search": "samsmithstaywithme",
+    "local": false
+  },
+  {
+    "id": "sam-the-sham-and-the-pharaohs-wooly-bully",
+    "title": "Wooly Bully",
+    "artist": "Sam The Sham And The Pharaohs",
+    "video": "LD_jSZC14Vk",
+    "language": [
+      "English"
+    ],
+    "bpm": 281.2,
+    "gap": 13.285917496443801,
+    "year": "1964",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:57.334Z",
+    "edition": "Halloween",
+    "genre": "Rock",
+    "realBpm": 143,
+    "volume": 0.78,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=18606",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "samtheshamandthepharaohswoolybully",
     "local": false
   },
   {
@@ -76871,6 +77099,35 @@
     "local": false
   },
   {
+    "id": "stevie-wonder-superstition",
+    "title": "Superstition",
+    "artist": "Stevie Wonder",
+    "video": "7_tmeHCO1IM",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.65,
+    "gap": 28304.07124043647,
+    "year": "1972",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:57.081Z",
+    "edition": "Halloween",
+    "genre": "Motown",
+    "realBpm": 100,
+    "volume": 0.97,
+    "author": "epsnarky",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=38917",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10525",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "steviewondersuperstition",
+    "local": false
+  },
+  {
     "id": "stig-roy-orbison",
     "title": "Roy Orbison",
     "artist": "Stig",
@@ -78621,6 +78878,35 @@
     ],
     "tracksCount": 1,
     "search": "talbachmanshessohigh",
+    "local": false
+  },
+  {
+    "id": "talking-heads-psycho-killer",
+    "title": "Psycho Killer",
+    "artist": "Talking Heads",
+    "video": "CKti7QixnJI",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.7,
+    "gap": 55014.65386558868,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:56.813Z",
+    "edition": "Halloween",
+    "genre": "New Wave",
+    "realBpm": 123,
+    "volume": 0.99,
+    "author": "RuiPSOliveira",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=21220",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8891",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "talkingheadspsychokiller",
     "local": false
   },
   {
@@ -81223,6 +81509,34 @@
     "local": false
   },
   {
+    "id": "the-charlie-daniels-band-the-devil-went-down-to-georgia",
+    "title": "The Devil Went Down To Georgia",
+    "artist": "The Charlie Daniels Band",
+    "video": "sh7BZf7D5Bw",
+    "language": [
+      "English"
+    ],
+    "bpm": 275.7,
+    "gap": 14464.598540145986,
+    "year": "1979",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:57.208Z",
+    "edition": "Halloween",
+    "realBpm": 138,
+    "volume": 0.86,
+    "author": "demondawg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=8481",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5760",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thecharliedanielsbandthedevilwentdowntogeorgia",
+    "local": false
+  },
+  {
     "id": "the-cinematic-orchestra-to-build-a-home",
     "title": "To build a home",
     "artist": "The Cinematic Orchestra",
@@ -82958,6 +83272,37 @@
     "local": false
   },
   {
+    "id": "the-rocky-horror-picture-show-over-at-the-frankenstein-place",
+    "title": "Over At The Frankenstein Place",
+    "artist": "The Rocky Horror Picture Show",
+    "video": "i4G-hjfMR4U",
+    "language": [
+      "English"
+    ],
+    "bpm": 387.4,
+    "gap": 37737.5,
+    "year": "1975",
+    "lastUpdate": "2024-10-22T16:43:57.463Z",
+    "edition": "Halloween",
+    "genre": "Soundtrack",
+    "realBpm": 86,
+    "volume": 0.99,
+    "author": "Kekstuete",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=67501",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=16253",
+    "tracks": [
+      {
+        "start": 727
+      },
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 2,
+    "search": "therockyhorrorpictureshowoveratthefrankensteinplace",
+    "local": false
+  },
+  {
     "id": "the-rolling-stones-paint-it-black",
     "title": "Paint It, Black",
     "artist": "The Rolling Stones",
@@ -83008,6 +83353,35 @@
     ],
     "tracksCount": 1,
     "search": "therollingstonessatisfactionicantgetno",
+    "local": false
+  },
+  {
+    "id": "the-rolling-stones-sympathy-for-the-devil",
+    "title": "Sympathy For The Devil",
+    "artist": "The Rolling Stones",
+    "video": "ySInEvXoek0",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.2,
+    "gap": 2894.234842015371,
+    "year": "1968",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-22T16:43:57.461Z",
+    "edition": "Halloween",
+    "genre": "Pop",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "JMz",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=5869",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5267",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "therollingstonessympathyforthedevil",
     "local": false
   },
   {
@@ -83320,6 +83694,35 @@
     ],
     "tracksCount": 1,
     "search": "thesmithsthereisalightthatnevergoesout",
+    "local": false
+  },
+  {
+    "id": "the-specials-ghost-town",
+    "title": "Ghost Town",
+    "artist": "The Specials",
+    "video": "RZ2oXzrnti4",
+    "language": [
+      "English"
+    ],
+    "bpm": 294.78,
+    "gap": 38982.29187868919,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-22T16:43:56.547Z",
+    "edition": "Halloween",
+    "genre": "Ska",
+    "realBpm": 74,
+    "volume": 0.83,
+    "author": "Gollum",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15001",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thespecialsghosttown",
     "local": false
   },
   {
@@ -84035,6 +84438,34 @@
     ],
     "tracksCount": 1,
     "search": "thewhobehindblueeyes",
+    "local": false
+  },
+  {
+    "id": "the-who-boris-the-spider",
+    "title": "Boris The Spider",
+    "artist": "The Who",
+    "video": "bvFuUaCe8eY",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.77,
+    "gap": 9480.816429508528,
+    "year": "1966",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-22T16:43:57.079Z",
+    "edition": "Halloween",
+    "realBpm": 98,
+    "volume": 0.74,
+    "author": "choosie",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=47908",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21067",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thewhoboristhespider",
     "local": false
   },
   {
@@ -88331,6 +88762,34 @@
     ],
     "tracksCount": 1,
     "search": "wangfeihongdou",
+    "local": false
+  },
+  {
+    "id": "warren-zevon-werewolves-of-london",
+    "title": "Werewolves Of London",
+    "artist": "Warren Zevon",
+    "video": "qae25976UgA",
+    "language": [
+      "English"
+    ],
+    "bpm": 206.2,
+    "gap": 18769.591836734693,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-22T16:43:57.084Z",
+    "edition": "Halloween",
+    "realBpm": 104,
+    "volume": 0.81,
+    "author": "muzzakusdb",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=20165",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=7583",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "warrenzevonwerewolvesoflondon",
     "local": false
   },
   {
