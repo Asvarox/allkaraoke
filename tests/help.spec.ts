@@ -15,7 +15,7 @@ test('Help', async ({ page }) => {
   await pages.inputSelectionPage.skipToMainMenu();
 
   await test.step('Help container is visible by default on the page if it is not turned off', async () => {
-    await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
     await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
   });
 
@@ -26,7 +26,7 @@ test('Help', async ({ page }) => {
 
   await test.step('The setting is remembered after refresh', async () => {
     await page.reload();
-    await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
     await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
   });
 
