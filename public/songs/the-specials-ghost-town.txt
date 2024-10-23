@@ -10,7 +10,6 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:the-specials-ghost-town
 #ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:56.547Z
-#ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=9472
 #ALLKARAOKE_REALBPM:74
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=15001

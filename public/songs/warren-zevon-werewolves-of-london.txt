@@ -9,7 +9,6 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:warren-zevon-werewolves-of-london
 #ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:57.084Z
-#ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=20165
 #ALLKARAOKE_REALBPM:104
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=7583

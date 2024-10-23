@@ -9,7 +9,6 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:ramones-pet-sematary
 #ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:56.940Z
-#ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=411
 #ALLKARAOKE_REALBPM:148
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3974
