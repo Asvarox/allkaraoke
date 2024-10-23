@@ -54,7 +54,7 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('keyboard-enter');
   }
 
-  public async pressEnterByKeyboard() {
+  public async pressEnterOnRemoteMic() {
     await this.enterKeyboardButton.click();
   }
 
@@ -90,7 +90,7 @@ export class RemoteMicMainPagePO {
     await expect(this.connectButton).toContainText('DISCONNECTED', { ignoreCase: true });
   }
 
-  public async expectConnectButtonActivityToBeAs(buttonActivity: 'enabled' | 'disabled') {
+  public async expectConnectButtonToBe(buttonActivity: 'enabled' | 'disabled') {
     const activityToBooleanMap = {
       enabled: 'false',
       disabled: 'true',
@@ -99,7 +99,7 @@ export class RemoteMicMainPagePO {
   }
 
   public async clickToConnectMic() {
-    await this.expectConnectButtonActivityToBeAs('enabled');
+    await this.expectConnectButtonToBe('enabled');
     await this.connectButton.click();
   }
 

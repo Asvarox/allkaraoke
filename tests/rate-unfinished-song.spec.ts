@@ -69,7 +69,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
@@ -93,7 +93,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
@@ -116,7 +116,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();

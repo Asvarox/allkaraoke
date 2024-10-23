@@ -301,9 +301,9 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
 
   await test.step('Navigate to Song List on desktop app with remote keyboard', async () => {
     await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic._page);
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic._page);
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   await test.step('Set other song languages on remoteMic app', async () => {

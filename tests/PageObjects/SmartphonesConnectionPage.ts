@@ -21,7 +21,6 @@ export class SmartphonesConnectionPagePO {
   }
 
   public getPlayerMicCheck(playerNumber: number) {
-    //playerNumber: counting from 0
     return this.page.getByTestId(`mic-check-p${playerNumber}`);
   }
 
