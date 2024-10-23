@@ -1,0 +1,328 @@
+#ARTIST:Maximum the Hormone
+#TITLE:What's up, people!
+#CREATOR:Subkei
+#BPM:326,42
+#YEAR:2006
+#VIDEO:v=e6sSMIfG94k
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:76,03253477115379
+#ALLKARAOKE_ID:maximum-the-hormone-whats-up-people
+#ALLKARAOKE_LASTUPDATE:2024-10-17T00:11:12.856Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_VOLUME:0,9
+#COVER:Maximum the Hormone - What's up, people! (TV).jpg
+#MP3:Maximum the Hormone - What's up, people! (TV).mp3
+#MEDLEYSTARTBEAT:389
+#MEDLEYENDBEAT:878
+: 22 3 3 We've 
+: 26 3 4 al
+: 30 3 1 ways 
+: 34 6 3 been 
+: 42 5 4 this 
+: 50 3 1 to 
+: 54 3 3 free 
+: 58 3 4 all 
+: 62 3 1 this 
+: 66 9 3 pain
+- 75
+: 87 3 3 We've 
+: 91 3 4 al
+: 95 3 1 ways 
+: 99 6 3 been 
+: 107 5 4 this 
+: 115 3 1 to 
+: 119 3 3 free 
+: 123 3 4 all 
+: 127 3 1 this 
+: 131 9 3 pain
+- 140
+F 152 117 4 Woah!
+- 269
+F 274 5 3 Woah
+F 281 123 4 ~!
+- 404
+: 411 1 0 Ben
+: 413 1 0 ri 
+: 415 3 0 ben
+: 419 1 0 ri 
+: 421 3 0 ban
+: 425 1 0 zai 
+: 427 1 0 ben
+: 429 1 0 ri 
+: 431 3 0 ben
+: 435 1 0 ri 
+: 437 3 0 ban
+: 441 1 0 zai
+- 442
+: 443 1 0 Ben
+: 445 1 0 ri 
+: 447 3 0 ben
+: 452 1 0 ri 
+: 454 3 0 ban
+: 458 1 0 zai 
+: 460 3 3 nin
+: 464 3 0 gen
+- 467
+: 476 1 0 Ben
+: 478 1 0 ri 
+: 480 3 0 ben
+: 484 1 0 ri 
+: 486 3 0 ban
+: 490 1 0 zai 
+: 492 1 0 ben
+: 494 1 0 ri 
+: 496 3 0 ben
+: 500 1 0 ri 
+: 502 3 0 ban
+: 506 1 0 zai
+- 507
+: 509 1 0 Ben
+: 511 1 0 ri 
+: 513 3 0 ben
+: 518 1 0 ri 
+: 520 3 0 ban
+: 524 1 0 zai 
+: 526 3 3 nin
+: 530 3 0 gen
+- 533
+: 537 1 7 Ho
+: 539 1 8 ra 
+: 541 1 8 bi
+: 543 1 7 ri
+: 545 1 7 bi
+: 547 1 7 ri 
+: 549 4 8 ikarasu 
+: 555 1 7 ka? 
+: 557 1 8 Bi
+: 559 1 7 ri
+: 561 1 7 bi
+: 563 1 7 ri 
+: 565 4 8 ikarasu 
+: 571 1 7 ka?
+- 572
+: 574 1 8 Bi
+: 576 1 7 ri
+: 578 1 7 bi
+: 580 1 7 ri 
+: 582 4 8 ikarasu 
+: 588 1 7 ka? 
+: 590 3 7 Nin
+: 594 3 0 gen
+- 597
+: 602 1 7 Ho
+: 604 1 8 ra 
+: 606 1 8 bi
+: 608 1 7 ri
+: 610 1 7 bi
+: 612 1 7 ri 
+: 614 4 8 ikarasu 
+: 620 1 7 ka? 
+: 622 1 8 Bi
+: 624 1 7 ri
+: 626 1 7 bi
+: 628 1 7 ri 
+: 630 4 8 ikarasu 
+: 636 1 7 ka?
+- 637
+* 639 1 8 Bi
+* 641 1 7 ri
+* 643 1 7 bi
+* 645 1 7 ri 
+* 647 4 8 ikarasu 
+* 653 1 7 ka? 
+: 655 3 7 Nin
+: 659 3 0 gen
+- 662
+F 671 6 0 What's 
+F 679 5 0 up 
+F 686 3 0 fuan
+F 691 7 0 zai i
+F 700 5 0 ppai
+- 705
+F 708 4 0 Han
+F 716 3 0 zai 
+F 720 3 0 kie
+F 724 2 0 nai 
+F 728 3 0 towa 
+F 732 1 0 ni
+- 733
+F 736 6 0 What's 
+F 744 5 0 up 
+F 751 3 0 fuan
+F 756 7 0 zai i
+F 765 4 0 ppai
+- 769
+: 772 1 -3 U
+: 774 1 -1 ra
+: 776 1 -1 mi
+: 778 1 -1 ni 
+: 780 1 -1 wa
+: 782 1 -1 na 
+: 784 3 1 da
+: 789 2 -1 re 
+: 793 5 -1 down?
+- 798
+F 801 6 0 What's 
+F 809 5 0 up 
+F 816 3 0 fuan
+F 821 7 0 zai i
+F 830 5 0 ppai
+- 835
+F 838 4 0 Han
+F 846 3 0 zai 
+F 850 3 0 kie
+F 854 2 0 nai 
+F 858 3 0 towa 
+F 862 1 0 ni
+- 863
+F 866 6 0 What's 
+F 874 5 0 up 
+F 881 3 0 fuan
+F 886 7 0 zai i
+F 895 5 0 ppai
+- 900 909
+- 909
+: 931 5 0 Hey 
+: 939 3 0 hey 
+: 943 3 -2 ah 
+: 947 3 -2 nin
+: 951 2 0 gen 
+: 955 2 1 suck
+: 959 3 0 er
+- 962
+: 967 3 0 Ah 
+: 971 3 -2 ni
+: 975 3 0 gen 
+: 979 3 -2 nin
+: 983 2 0 gen 
+: 987 2 1 fuck
+: 991 2 0 er?
+- 993
+* 996 5 0 Hey 
+* 1004 3 0 hey 
+* 1008 3 -2 ah 
+* 1012 3 -2 nin
+* 1016 2 0 gen 
+* 1020 2 1 suck
+* 1024 3 0 er
+- 1027
+: 1032 3 0 Ah 
+: 1036 3 -2 ni
+: 1040 3 0 gen 
+: 1044 3 -2 nin
+: 1048 2 0 gen 
+: 1052 2 1 fuck
+: 1056 1 0 er?
+- 1057
+: 1060 5 0 Hey 
+: 1068 3 0 hey 
+: 1072 3 -2 ah 
+: 1076 3 -2 nin
+: 1080 2 0 gen 
+: 1084 2 1 suck
+: 1088 3 0 er
+- 1091
+: 1097 3 0 Ah 
+: 1101 3 -2 ni
+: 1105 3 0 gen 
+: 1109 3 -2 nin
+: 1113 2 0 gen 
+: 1117 2 1 fuck
+: 1121 1 0 er?
+- 1122
+: 1125 5 0 Hey 
+: 1133 3 0 hey 
+: 1137 3 -2 ah 
+: 1141 3 -2 nin
+: 1145 2 0 gen 
+: 1149 2 1 suck
+: 1153 3 0 er
+- 1156
+: 1162 3 0 Ah 
+: 1166 3 -2 ni
+: 1170 3 0 gen 
+: 1174 3 -2 nin
+: 1178 2 0 gen 
+: 1182 2 2 fuck
+: 1186 1 0 er?
+- 1187
+: 1190 5 3 Hey 
+: 1198 3 3 hey 
+: 1206 3 2 nin
+: 1210 2 3 gen 
+: 1214 2 4 suck
+: 1218 4 3 er!
+- 1222
+* 1227 3 3 Ah 
+* 1231 3 2 ni
+* 1235 3 3 gen 
+* 1239 3 2 nin
+* 1243 2 3 gen 
+* 1247 2 4 fuck
+* 1251 1 3 er?
+- 1252
+: 1255 5 3 Hey 
+: 1263 3 3 hey 
+: 1271 3 2 nin
+: 1275 2 3 gen 
+: 1279 2 4 suck
+: 1283 3 3 er!
+- 1286
+: 1292 3 3 Ah 
+: 1296 3 2 ni
+: 1300 3 3 gen 
+: 1304 3 2 nin
+: 1308 2 3 gen 
+: 1312 2 4 fuck
+: 1316 1 3 er?
+- 1317
+: 1320 5 4 Hey 
+: 1328 3 4 hey 
+: 1336 3 3 nin
+: 1340 2 4 gen 
+: 1344 2 5 suck
+: 1348 3 4 er!
+- 1351
+: 1356 3 4 Ah 
+: 1360 3 3 ni
+: 1364 3 4 gen 
+: 1368 3 3 nin
+: 1372 2 4 gen 
+: 1376 2 5 fuck
+: 1380 1 4 er?
+- 1381
+: 1384 5 6 Hey 
+: 1392 3 6 hey 
+: 1400 3 5 nin
+: 1404 2 6 gen 
+: 1408 2 7 suck
+: 1412 3 6 er!
+- 1415
+F 1432 2 17 What's 
+F 1435 1 17 up 
+F 1437 3 17 peo
+F 1441 5 17 ple!
+- 1446 1454
+- 1454
+F 1476 2 17 What's 
+F 1479 1 17 up 
+F 1481 3 17 peo
+F 1485 5 17 ple!
+- 1490 1495
+- 1495
+F 1517 2 17 What's 
+F 1520 1 17 up 
+F 1522 3 17 peo
+F 1526 5 17 ple!
+- 1531 1538
+- 1538
+F 1560 2 17 What's 
+F 1563 1 17 up 
+F 1565 3 17 peo
+F 1569 5 17 ple!
+- 1574 1594
+- 1594
+F 1616 10 17 Ah!
+E
