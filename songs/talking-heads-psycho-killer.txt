@@ -10,7 +10,6 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:talking-heads-psycho-killer
 #ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:56.813Z
-#ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=21220
 #ALLKARAOKE_REALBPM:123
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=8891

@@ -9,7 +9,6 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:the-charlie-daniels-band-the-devil-went-down-to-georgia
 #ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:57.208Z
-#ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=8481
 #ALLKARAOKE_REALBPM:138
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=5760

@@ -10,7 +10,6 @@
 #EDITION:Halloween
 #ALLKARAOKE_ID:helloween-halloween
 #ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:55.889Z
-#ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=4533
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=20711
