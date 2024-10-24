@@ -33,13 +33,33 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      - name: Build app
+        run: |
+          npx playwright install chromium
+          pnpm build
       - name: Run E2E tests
         uses: './.github/templates/run-playwright'
         with:
-          packagescript: 'e2e'
           project: '${{ matrix.browser }}'
+          packagescript: 'e2e'
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
+  e2e-tests-add-summary:
+    runs-on: ubuntu-latest
+    if: ${{ failure() }}
+    needs: e2e-tests-run
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            core.summary.addRaw(`
+            # E2E tests reports
+            | Name                    | Result |
+            | ----------------------- | - |
+            | **URL**: | 	https://${{ github.run_id }}.allkaraoke-party-tests-results.pages.dev |
+            `
+            ).write();
+
   ct-tests-run:
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
@@ -94,6 +114,7 @@ jobs:
           fetch-depth: 30 # needed for Sentry to get list of commits released
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      - run: npx playwright install chromium
       - run: pnpm build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
@@ -147,6 +168,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      - run: npx playwright install chromium
       - run: pnpm build --base /prs/${{ github.event.number }}/ && rm -rf build/songs
         shell: bash
       - name: Deploy PR 🚀

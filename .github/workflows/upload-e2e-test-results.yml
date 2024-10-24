@@ -1,0 +1,62 @@
+name: Upload E2E test results
+on:
+  workflow_run:
+    workflows: ["CI/CD"]
+    types:
+      - completed
+
+jobs:
+  e2e-tests-merge:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download blob reports from GitHub Actions Artifacts
+        id: download_artifact
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          path: all-blob-reports
+          pattern: test-results-blob-e2e-*
+          merge-multiple: true
+          run-id: ${{ github.event.workflow_run.id }}
+      - name: Check if there are any reports to merge
+        id: reports_check
+        run: |
+          ls -A ${{ steps.download_artifact.outputs.download-path }}
+          if [ -z "$(ls -A ${{ steps.download_artifact.outputs.download-path }})" ]; then
+            echo "reports=false" >> $GITHUB_OUTPUT
+          else
+            echo "reports=true" >> $GITHUB_OUTPUT
+          fi
+      - name: Test
+        run: |
+          echo "reports=${{ steps.reports_check.outputs.reports }}"
+      - name: Merge into HTML Report
+        if: steps.reports_check.outputs.reports == 'true'
+        run: npx playwright merge-reports --reporter html ./all-blob-reports
+      - name: Upload merged report
+        if: steps.reports_check.outputs.reports == 'true'
+        id: deploy-report
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy playwright-report --project-name=allkaraoke-party-tests-results --branch=${{ github.event.workflow_run.id }}
+      - uses: actions/github-script@v7
+        if: steps.reports_check.outputs.reports == 'true'
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy-report.outputs.deployment-url }}
+          DEPLOYMENT_ALIAS_URL: ${{ steps.deploy-report.outputs.deployment-alias-url }}
+        with:
+          script: |
+            core.summary.addRaw(`
+            # Deploying with Cloudflare Pages
+            | Name                    | Result |
+            | ----------------------- | - |
+            | **Preview URL**:        | ${process.env.DEPLOYMENT_URL} |
+            | **Branch Preview URL**: | ${process.env.DEPLOYMENT_ALIAS_URL} |
+            `
+            ).write();
