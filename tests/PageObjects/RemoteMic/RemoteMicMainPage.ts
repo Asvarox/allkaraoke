@@ -50,8 +50,12 @@ export class RemoteMicMainPagePO {
     return this.page.getByTestId('remote-keyboard');
   }
 
-  public async pressEnterByKeyboard() {
-    await this.page.getByTestId('keyboard-enter').click();
+  public get enterKeyboardButton() {
+    return this.page.getByTestId('keyboard-enter');
+  }
+
+  public async pressEnterOnRemoteMic() {
+    await this.enterKeyboardButton.click();
   }
 
   public get joinGameButton() {
@@ -64,5 +68,54 @@ export class RemoteMicMainPagePO {
 
   public async pressReadyOnRemoteMic() {
     await this.readyButton.click();
+  }
+
+  public get gameCodeInput() {
+    return this.page.getByTestId('game-code-input');
+  }
+
+  public async expectGameCodeToBe(gameCode: string) {
+    await expect(this.gameCodeInput).toHaveValue(gameCode);
+  }
+
+  public get connectButton() {
+    return this.page.getByTestId('connect-button');
+  }
+
+  public async expectPlayerToBeConnected() {
+    await expect(this.connectButton).toContainText('CONNECTED', { ignoreCase: true });
+  }
+
+  public async expectPlayerToBeDisconnected() {
+    await expect(this.connectButton).toContainText('DISCONNECTED', { ignoreCase: true });
+  }
+
+  public async expectConnectButtonToBe(buttonActivity: 'enabled' | 'disabled') {
+    const activityToBooleanMap = {
+      enabled: 'false',
+      disabled: 'true',
+    };
+    await expect(this.connectButton).toHaveAttribute('data-disabled', activityToBooleanMap[buttonActivity]);
+  }
+
+  public async clickToConnectMic() {
+    await this.expectConnectButtonToBe('enabled');
+    await this.connectButton.click();
+  }
+
+  public get searchSongInput() {
+    return this.page.getByTestId('search-song-input');
+  }
+
+  public async searchTheSong(songID: string) {
+    await this.searchSongInput.fill(songID);
+  }
+
+  public get backArrowKeyboardButton() {
+    return this.page.getByTestId('keyboard-backspace');
+  }
+
+  public async goBackByKeyboard() {
+    await this.backArrowKeyboardButton.click();
   }
 }
