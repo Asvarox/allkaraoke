@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 import { initTestMode, mockSongs } from './helpers';
-import navigateWithKeyboard from './steps/navigateWithKeyboard';
 import {
   connectRemoteMic,
   openAndConnectRemoteMicDirectly,
@@ -41,118 +40,97 @@ const player2 = {
   num: 1,
 } as const;
 
-test('Mobile phone mode should be playable', async ({ browser, context, page, browserName }) => {
+const songID = 'e2e-skip-intro-polish';
+
+test('Mobile phone mode should be playable', async ({ browser, page, context, browserName }) => {
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
-  await page.goto('/?e2e-test');
-  await pages.landingPage.enterTheGame();
-  //await page.getByTestId('enable-mobile-mode').click();
-  await pages.landingPage.enableMobilePhoneMode();
-  await expect(pages.inputSelectionPage.multipleMicButton).not.toBeVisible();
 
-  await pages.inputSelectionPage.selectSmartphones();
+  await test.step('Select enable mobile phone mode', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.landingPage.enableMobilePhoneMode();
+    await expect(pages.inputSelectionPage.multipleMicButton).not.toBeVisible();
+  });
+
+  await test.step('Select Smartphones setup', async () => {
+    await pages.inputSelectionPage.selectSmartphones();
+  });
 
   // Connect microphones
   const remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
   const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
 
-  // Assert auto selection of inputs
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
-  await pages.smartphonesConnectionPage.expectPlayerNameToBe(player2.num, player2.name);
+  await test.step('Assert auto selection of inputs', async () => {
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
+    await pages.smartphonesConnectionPage.expectPlayerNameToBe(player2.num, player2.name);
+  });
 
-  await navigateWithKeyboard(page, 'save-button', remoteMic1._page);
+  await test.step('Navigate to main menu with the keyboard - save setup with remoteMic', async () => {
+    await pages.smartphonesConnectionPage.navigateToSaveButtonWithKeyboard(remoteMic1._page);
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
+  });
 
-  //await remoteMic1._page.getByTestId('keyboard-enter').click();
-  await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+  await test.step('Check if the remote mics reconnect automatically', async () => {
+    await page.waitForTimeout(500);
+    await page.reload();
+    await remoteMic1.remoteMicMainPage.expectPlayerToBeConnected();
+    await remoteMic2.remoteMicMainPage.expectPlayerToBeConnected();
 
-  //await expect(page.getByTestId('sing-a-song')).toBeVisible();
-  await expect(pages.mainMenuPage.singSongButton).toBeVisible();
+    await Promise.race([
+      pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player1.name),
+      pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player2.name),
+    ]);
+  });
 
-  // Check if the remote mics reconnect automatically
-  await page.waitForTimeout(500);
-  await page.reload();
+  await test.step('Check if the mics are reselected after they refresh', async () => {
+    await remoteMic1._page.reload();
+    await remoteMic1.remoteMicMainPage.enterPlayerName(player1.name);
+    await connectRemoteMic(remoteMic1._page);
+    await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
 
-  // await expect(remoteMic1._page.getByTestId('connect-button')).toContainText('Connected', {
-  //   ignoreCase: true,
-  // });
-  await remoteMic1.remoteMicMainPage.expectPlayerToBeConnected();
-
-  // await expect(remoteMic2._page.getByTestId('connect-button')).toContainText('Connected', {
-  //   ignoreCase: true,
-  // });
-  await remoteMic2.remoteMicMainPage.expectPlayerToBeConnected();
-
-  await Promise.race([
-    // expect(page.locator('.Toastify')).toContainText(`${player1.name} connected`, {
-    //   ignoreCase: true,
-    // }),
-    pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player1.name),
-
-    // expect(page.locator('.Toastify')).toContainText(`${player2.name} connected`, {
-    //   ignoreCase: true,
-    // }),
-    pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player2.name),
-  ]);
-
-  // Check if the mics are reselected after they refresh
-  await remoteMic1._page.reload();
-  //await remoteMic1._page.getByTestId('player-name-input').fill(player1.name);
-  await remoteMic1.remoteMicMainPage.enterPlayerName(player1.name);
-
-  await connectRemoteMic(remoteMic1._page);
-  //await expect(remoteMic1._page.getByTestId('indicator')).toHaveAttribute('data-player-number', '0');
-  await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
-
-  await remoteMic2._page.reload();
-  //await remoteMic2._page.getByTestId('player-name-input').fill(player2.name);
-  await remoteMic2.remoteMicMainPage.enterPlayerName(player2.name);
-
-  await connectRemoteMic(remoteMic2._page);
-  //await expect(remoteMic2._page.getByTestId('indicator')).toHaveAttribute('data-player-number', '1');
-  await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
+    await remoteMic2._page.reload();
+    await remoteMic2.remoteMicMainPage.enterPlayerName(player2.name);
+    await connectRemoteMic(remoteMic2._page);
+    await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
+  });
 
   await test.step('Start singing a song', async () => {
-    await navigateWithKeyboard(page, 'sing-a-song', remoteMic1._page);
-    await remoteMic1._page.getByTestId('keyboard-enter').click();
-    await navigateWithKeyboard(page, 'close-exclude-languages', remoteMic1._page);
-    await remoteMic1._page.getByTestId('keyboard-enter').click();
+    await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic1._page);
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic1._page);
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await page.waitForTimeout(500); // let the list with virtualization load
-
-    await pages.songListPage.focusSong('e2e-skip-intro-polish');
-    await remoteMic1._page.getByTestId('keyboard-enter').click();
-
-    await navigateWithKeyboard(page, 'next-step-button', remoteMic2._page);
-    await remoteMic2._page.getByTestId('keyboard-enter').click();
-    await navigateWithKeyboard(page, 'play-song-button', remoteMic2._page);
-    await remoteMic2._page.getByTestId('keyboard-enter').click();
+    await pages.songListPage.focusSong(songID);
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
+    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
   });
 
   await test.step('Check if skip intro is possible', async () => {
-    await remoteMic1._page.getByTestId('ready-button').click();
-    await remoteMic2._page.getByTestId('ready-button').click();
-    await expect(remoteMic2._page.getByTestId('keyboard-enter')).not.toBeDisabled({ timeout: 8_000 });
+    await remoteMic1.remoteMicMainPage.pressReadyOnRemoteMic();
+    await remoteMic2.remoteMicMainPage.pressReadyOnRemoteMic();
+    await expect(remoteMic2.remoteMicMainPage.enterKeyboardButton).not.toBeDisabled({ timeout: 8_000 });
     await page.waitForTimeout(500);
-    await remoteMic2._page.getByTestId('keyboard-enter').click();
-
-    await expect(page.getByTestId('skip-animation-button')).toBeVisible({ timeout: 15_000 });
+    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
+    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
+  await test.step('Once the song is finished, the player`s names should be visible on results', async () => {
+    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
+    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.num, player1.name);
+    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
+  });
 
-  await expect(async () => {
-    const p1score = await page.getByTestId('player-0-score').getAttribute('data-score');
-
-    expect(parseInt(p1score!, 10)).toBeGreaterThan(100);
-  }).toPass();
-
-  await expect(page.getByTestId('player-0-name')).toHaveText(player1.name);
-  await expect(page.getByTestId('player-1-name')).toHaveText(player2.name);
-
-  await expect(page.getByTestId('skip-animation-button')).toBeVisible();
-  await remoteMic1._page.getByTestId('keyboard-enter').click();
-  await expect(page.getByTestId('highscores-button')).toBeVisible();
-  await remoteMic1._page.getByTestId('keyboard-enter').click();
-  await expect(page.getByTestId('play-next-song-button')).toBeVisible();
-  await remoteMic1._page.getByTestId('keyboard-enter').click();
-  await expect(page.getByTestId('song-e2e-skip-intro-polish')).toBeVisible();
+  await test.step('User can select next song', async () => {
+    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await expect(pages.postGameResultsPage.nextButton).toBeVisible();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+    await expect(await pages.songListPage.getSongElement(songID)).toBeVisible();
+  });
 });
