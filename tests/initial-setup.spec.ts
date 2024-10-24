@@ -193,11 +193,11 @@ test('Default microphone is selected for built-in', async ({ page, context, brow
 
   await test.step('Check if the initial setup does not show after reopen page', async () => {
     await pages.computersMicConnectionPage.goToMainMenu();
-    await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
 
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     test.fixme(browserName === 'firefox', 'Doesnt work on Firefox');
-    await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
   });
 });

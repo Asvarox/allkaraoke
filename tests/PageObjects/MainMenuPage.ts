@@ -8,12 +8,12 @@ export class MainMenuPagePO {
     private browser: Browser,
   ) {}
 
-  public get singSongElement() {
+  public get singSongButton() {
     return this.page.getByTestId('sing-a-song');
   }
 
   public async goToSingSong() {
-    await this.singSongElement.click();
+    await this.singSongButton.click();
   }
 
   public async navigateToSongListWithKeyboard(remoteMic?: Page) {

@@ -55,9 +55,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
   });
 
   await test.step('Navigate to main menu by phone', async () => {
-    await pages.smartphonesConnectionPage.navigateToMainMenuWithKeyboard(remoteMic1._page);
+    await pages.smartphonesConnectionPage.navigateToSaveButtonWithKeyboard(remoteMic1._page);
     await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
-    await expect(pages.mainMenuPage.singSongElement).toBeVisible();
+    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
   });
 
   await test.step('Check if the remote mics reconnect automatically', async () => {
