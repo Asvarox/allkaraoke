@@ -1,0 +1,493 @@
+#ARTIST:Bobby “Boris“ Pickett & The Crypt-Kickers
+#TITLE:Monster Mash
+#CREATOR:loch dezz
+#BPM:266
+#YEAR:1962
+#VIDEO:v=tsPdVsIXqzU
+#LANGUAGE:English
+#GAP:15784,962406015038
+#EDITION:Halloween
+#ALLKARAOKE_ID:bobby-boris-pickett-the-crypt-kickers-monster-mash
+#ALLKARAOKE_LASTUPDATE:2024-10-22T16:43:56.677Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=236
+#ALLKARAOKE_REALBPM:70
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=3002
+#ALLKARAOKE_VOLUME:1
+#MP3:Bobby “Boris“ Pickett & The Crypt-Kickers - Monster Mash.mp3
+: 18 3 7 I 
+: 22 3 7 was 
+: 26 3 7 work
+: 30 3 7 ing 
+: 34 3 7 in 
+: 38 1 7 the 
+: 40 11 7 lab 
+: 52 9 7 late 
+: 62 3 7 one 
+: 66 8 7 night,
+- 74
+: 80 5 7 When 
+: 86 9 7 my 
+: 96 5 7 eyes 
+: 102 11 7 beheld 
+: 114 3 7 an 
+: 118 5 7 ee
+: 124 5 7 rie 
+: 130 8 7 sight,
+- 138
+: 140 5 7 When 
+: 146 1 7 my 
+: 148 3 7 monster 
+: 152 3 7 from 
+: 156 5 7 his 
+: 162 15 7 slab 
+: 178 3 7 began 
+: 182 7 7 to 
+: 190 8 7 rise,
+- 198
+: 208 3 7 And 
+: 212 3 7 sud
+: 216 5 7 den
+: 222 6 7 ly, 
+: 236 5 7 to 
+: 242 5 7 my 
+: 248 12 7 surprise
+- 260
+: 262 1 7 (He 
+: 264 1 7 did 
+: 266 3 -5 the 
+: 270 8 -5 mash),
+- 278
+: 290 3 7 He 
+: 294 1 -1 did 
+: 296 1 -1 the 
+: 298 7 -1 mon
+: 306 7 -1 ster 
+: 314 11 -1 mash,
+- 325
+: 326 3 -1 (The 
+: 330 1 -5 mon
+: 332 1 -5 ster 
+: 334 6 -1 mash),
+- 340
+: 354 3 7 It 
+: 358 3 -1 was 
+: 362 1 -1 a 
+: 364 3 -1 grave
+: 368 9 -1 yard 
+: 378 8 -1 smash
+- 386
+: 388 1 -1 (He 
+: 390 1 -1 did 
+: 392 3 4 the 
+: 396 10 -1 mash),
+- 406
+: 414 5 4 It 
+: 420 3 0 caught 
+: 424 5 0 on 
+: 430 5 0 in 
+: 436 1 0 a 
+: 438 7 0 flash
+- 445
+: 446 1 0 (He 
+: 448 3 4 did 
+: 452 1 0 the 
+: 454 10 0 mash),
+- 464
+: 474 3 4 He 
+: 478 3 0 did 
+: 482 1 0 the 
+: 484 9 0 monster 
+: 494 8 0 mash
+- 502
+: 510 1 0 From 
+: 512 1 0 my 
+: 514 5 6 lab
+: 520 3 -2 o
+: 524 1 -2 ra
+: 526 7 7 to
+: 534 3 -1 ry 
+: 538 1 -1 in 
+: 540 3 6 the 
+: 544 5 6 cas
+: 550 5 6 tle 
+: 556 6 6 east,
+- 562
+: 570 3 6 To 
+: 574 1 6 the 
+: 576 1 3 mas
+: 578 7 -6 ter 
+: 586 3 -6 bed
+: 590 5 7 room
+- 595
+: 596 3 4 Where 
+: 600 3 3 the 
+: 604 5 3 vam
+: 610 3 3 pi
+: 614 7 3 res 
+: 622 3 3 fea
+: 626 6 3 st,
+- 632
+: 636 1 3 The 
+: 638 9 4 ghouls 
+: 648 3 -5 all 
+: 652 7 -5 came 
+: 660 3 0 from 
+: 664 3 0 their 
+: 668 3 0 hum
+: 672 5 0 ble 
+: 678 1 0 a
+: 680 8 0 bode
+- 688
+: 696 1 0 To 
+: 698 5 0 get 
+: 704 3 -5 a 
+: 708 13 6 jolt 
+: 722 5 -5 from 
+: 728 7 6 my 
+: 736 3 6 elec
+: 740 4 6 trode
+- 744
+: 746 3 6 (They 
+: 750 1 7 did 
+: 752 3 -5 the 
+: 756 10 -5 mash),
+- 766
+: 776 3 7 They 
+: 780 3 -1 did 
+: 784 1 -1 the 
+: 786 9 -1 mon
+: 796 3 -1 ster 
+: 800 9 -1 mash,
+- 809
+: 810 1 -1 (The 
+: 812 1 -5 mon
+: 814 3 -5 ster 
+: 818 10 -1 mash),
+- 828
+: 840 5 7 It 
+: 846 1 -1 was 
+: 848 3 -1 a 
+: 852 5 -1 grave
+: 858 5 -1 yard 
+: 864 5 -1 smash
+- 869
+: 870 3 -1 (They 
+: 874 1 -1 did 
+: 876 1 4 the 
+: 878 10 -1 mash),
+- 888
+: 898 3 4 It 
+: 902 3 0 caught 
+: 906 7 0 on 
+: 914 3 0 in 
+: 918 3 0 a 
+: 922 7 0 flash
+- 929
+: 930 3 0 (They 
+: 934 1 4 did 
+: 936 1 0 the 
+: 938 10 0 mash),
+- 948
+: 958 5 4 They 
+: 964 3 0 did 
+: 968 1 0 the 
+: 970 9 0 monster 
+: 980 10 0 mash
+- 990
+: 996 7 0 The 
+: 1004 1 3 zom
+: 1006 9 7 bies 
+: 1016 3 4 were 
+: 1020 13 4 having 
+: 1034 8 4 fun,
+- 1042
+: 1058 7 4 The 
+: 1066 1 7 pa
+: 1068 3 5 rty 
+: 1072 7 9 had 
+: 1080 5 5 just 
+: 1086 3 5 be
+: 1090 8 5 gun,
+- 1098 1100
+- 1100
+: 1118 5 5 The 
+: 1124 7 5 guests 
+: 1132 3 4 in
+: 1136 3 5 clud
+: 1140 13 5 ed 
+: 1154 5 5 wolf
+: 1160 8 5 man,
+- 1168
+: 1184 1 4 Drac
+: 1186 3 8 u
+: 1190 5 5 la 
+: 1196 9 9 and 
+: 1206 7 6 his 
+: 1214 8 6 son
+- 1222 1224
+- 1224
+: 1242 1 6 The 
+: 1244 7 -2 scene 
+: 1252 5 7 was 
+: 1258 7 -1 rocking,
+- 1265
+: 1266 3 6 All 
+: 1270 3 6 were 
+: 1274 7 6 digging 
+: 1282 3 6 the 
+: 1286 8 6 sound,
+- 1294
+: 1306 7 6 Igor 
+: 1314 1 3 un
+: 1316 9 4 chained 
+: 1326 5 -5 backed
+- 1331
+: 1332 3 3 By 
+: 1336 3 3 his 
+: 1340 3 3 bay
+: 1344 3 3 ing 
+: 1348 8 3 hounds,
+- 1356
+: 1364 1 3 The 
+: 1366 3 4 coffin 
+: 1370 5 -5 bag
+: 1376 19 -5 gers 
+: 1396 3 0 were about 
+: 1400 3 0 to 
+: 1404 7 0 ar
+: 1412 7 0 rive
+- 1419
+: 1420 3 0 With 
+: 1424 1 0 their 
+: 1426 7 0 vo
+: 1434 5 -5 cal 
+: 1440 6 6 group,
+- 1446
+: 1452 1 6 The 
+: 1454 5 6 Crypt 
+: 1460 7 6 Kick
+: 1468 3 6 er 
+: 1472 7 6 Five
+- 1479
+: 1480 1 6 (They 
+: 1482 1 7 played 
+: 1484 3 -5 the 
+: 1488 12 -5 mash),
+- 1500
+: 1504 7 7 They 
+: 1512 3 -1 played 
+: 1516 1 -1 the 
+: 1518 7 -1 mon
+: 1526 3 -1 ster 
+: 1530 11 -1 mash,
+- 1541
+: 1542 1 -1 (The 
+: 1544 1 -5 mon
+: 1546 1 -5 ster 
+: 1548 14 -1 mash),
+- 1562
+: 1568 5 7 It 
+: 1574 7 -1 was 
+: 1582 3 -1 a 
+: 1586 3 -1 grave
+: 1590 1 -1 yard 
+: 1592 7 -1 smash
+- 1599
+: 1600 1 -1 (They 
+: 1602 1 4 played 
+: 1604 1 -1 the 
+: 1606 20 4 mash),
+- 1626
+: 1632 3 -1 It 
+: 1636 3 0 caught 
+: 1640 3 0 on 
+: 1644 3 0 in 
+: 1648 3 0 a 
+: 1652 7 0 flash
+- 1659
+: 1660 5 0 (They 
+: 1666 1 0 played 
+: 1668 1 0 the 
+: 1670 8 0 mash),
+- 1678
+: 1692 1 4 They 
+: 1694 5 0 played 
+: 1700 1 0 the 
+: 1702 11 0 monster 
+: 1714 8 0 mash
+- 1722
+: 1732 4 0 Out 
+: 1738 5 -5 from 
+: 1744 3 -5 his 
+: 1748 1 7 cof
+: 1750 5 -5 fin 
+: 1756 5 7 Drac’s 
+: 1762 3 -1 voi
+: 1766 3 -1 ce 
+: 1770 3 -1 did 
+: 1774 8 -1 ring,
+- 1782
+: 1792 1 -1 Se
+: 1794 5 -5 ems 
+: 1800 1 -5 he 
+: 1802 5 -1 was 
+: 1808 1 7 trou
+: 1810 3 4 bled 
+: 1814 5 -1 by 
+: 1820 7 -1 just 
+: 1828 7 -1 one 
+: 1836 3 -1 th
+: 1840 7 -1 ing,
+- 1847
+: 1848 5 -1 He 
+: 1854 3 4 ope
+: 1858 3 -1 ned 
+: 1862 3 4 the 
+: 1866 10 -1 lid 
+: 1880 3 4 and 
+: 1884 3 0 shook 
+: 1888 7 0 his 
+: 1896 5 0 fist 
+: 1902 3 0 and 
+: 1906 8 0 said,
+- 1914
+* 1922 3 4 "What 
+* 1926 1 0 ever 
+* 1928 9 4 happened 
+* 1938 1 0 to 
+* 1940 3 0 my
+- 1943
+* 1944 5 0 Transyl
+* 1950 3 0 vania 
+* 1954 8 0 Twist?"
+- 1962
+: 1966 1 0 (It’s 
+: 1968 1 6 now 
+: 1970 3 -2 the 
+: 1974 16 -2 mash),
+- 1990
+: 1996 7 7 It’s 
+: 2004 7 6 now 
+: 2012 3 6 the 
+: 2016 3 6 mon
+: 2020 3 6 ster 
+: 2024 3 6 mash,
+- 2027
+: 2028 1 6 (The 
+: 2030 3 3 mon
+: 2034 1 -6 ster 
+: 2036 14 7 mash),
+- 2050
+: 2062 5 4 And 
+: 2068 1 3 its a 
+: 2070 3 3 grave
+: 2074 5 3 yard 
+: 2080 10 3 smash
+- 2090
+: 2092 1 3 (Its 
+: 2094 5 4 now 
+: 2100 1 -5 the 
+: 2102 12 4 mash),
+- 2114
+: 2120 3 -5 It 
+: 2124 3 0 caught 
+: 2128 3 0 on 
+: 2132 7 0 in 
+: 2140 3 0 a 
+: 2144 8 0 flash
+- 2152
+: 2158 1 0 (Its 
+: 2160 1 -5 now 
+: 2162 3 -5 the 
+: 2166 4 -5 mash),
+- 2170
+: 2178 3 6 Its 
+: 2182 5 -5 now 
+: 2188 3 6 the 
+: 2192 9 6 monster 
+: 2202 8 6 mash
+- 2210
+: 2216 3 6 Now 
+: 2220 1 6 ev
+: 2222 7 7 ery
+: 2230 3 -5 thing’s 
+: 2234 9 -5 cool,
+- 2243
+: 2244 5 7 Drac’s 
+: 2250 1 -1 a 
+: 2252 3 -1 part 
+: 2256 3 -1 of 
+: 2260 3 -1 the 
+: 2264 5 -1 band,
+- 2269
+: 2270 3 -1 And 
+: 2274 7 -5 my 
+: 2282 5 -5 Mon
+: 2288 5 -3 ster 
+: 2294 11 -7 Mash
+- 2305
+: 2306 3 -1 Is 
+: 2310 3 -1 the 
+: 2314 3 -1 hit 
+: 2318 3 -1 of 
+: 2322 3 -1 the 
+: 2326 8 -1 land,
+- 2334
+: 2342 3 -1 For 
+: 2346 3 4 you 
+: 2350 3 -1 the 
+: 2354 1 4 liv
+: 2356 15 -1 ing, 
+: 2372 1 4 this 
+: 2374 5 0 mash 
+: 2380 3 0 was 
+: 2384 3 0 meant 
+: 2388 6 4 too,
+- 2394
+: 2398 5 0 When You 
+: 2404 3 0 get 
+: 2408 7 4 to my 
+: 2416 8 0 door
+- 2424
+: 2426 5 0 Tell 
+: 2432 3 0 them 
+: 2436 7 0 Boris 
+: 2444 9 0 sent 
+: 2454 2 0 you
+- 2456 2466
+- 2466
+: 2484 3 7 And 
+: 2488 3 -1 you 
+: 2492 3 -1 can 
+: 2496 9 -1 monster 
+: 2506 9 -1 mash,
+- 2515
+: 2516 1 -1 (The 
+: 2518 1 -1 mon
+: 2520 1 4 ster 
+: 2522 10 -5 mash),
+- 2532
+: 2544 5 3 And 
+: 2550 3 3 to 
+: 2554 7 3 my 
+: 2562 5 3 grave
+: 2568 5 3 yard 
+: 2574 3 3 sm
+: 2578 8 3 ash
+- 2586 2590
+- 2590
+: 2608 1 0 You’ll 
+: 2610 5 0 catch 
+: 2616 3 0 on 
+: 2620 3 0 in 
+: 2624 3 0 a 
+: 2628 8 0 flash
+- 2636 2650
+- 2650
+: 2668 3 -5 Then 
+: 2672 3 6 you 
+: 2676 3 6 can 
+: 2680 7 6 mons
+: 2688 3 6 ter 
+: 2692 10 6 mash
+E

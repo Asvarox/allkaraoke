@@ -41,7 +41,7 @@ test('Remove player`s mic by another player - works', async ({ page, browser, co
   await test.step('Once player2 was removed, they mic should be disconnected from the game', async () => {
     await remoteMic1.remoteMicManagePlayerPage.removePlayer();
     await remoteMic2.remoteMicMainPage.expectPlayerToBeDisconnected();
-    await remoteMic2.remoteMicMainPage.expectConnectButtonActivityToBeAs('disabled');
+    await remoteMic2.remoteMicMainPage.expectConnectButtonToBe('disabled');
     await remoteMic2.remoteMicMainPage.expectPlayerToBeUnassigned();
 
     await page.reload();

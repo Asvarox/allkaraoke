@@ -11,9 +11,8 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 
 test('window for rating unfinished song is visible and can be skipped by the user', async ({ page }) => {
-  await page.goto('/?e2e-test');
-
   await test.step('Select Advanced setup', async () => {
+    await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.inputSelectionPage.selectAdvancedSetup();
   });
@@ -52,9 +51,10 @@ test('window for rating unfinished song is visible and can be skipped by the use
 });
 
 test('user can correctly select all of the shown reasons why the song was not completed', async ({ page, browser }) => {
-  await page.goto('/?e2e-test');
+  const songID = 'e2e-pass-test-spanish-1994';
 
   await test.step('Select Smartphones setup', async () => {
+    await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.inputSelectionPage.selectSmartphones();
   });
@@ -69,7 +69,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
@@ -93,7 +93,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
@@ -116,7 +116,7 @@ test('user can correctly select all of the shown reasons why the song was not co
   });
 
   await test.step('Navigate with keyboard to play random song', async () => {
-    await remoteMic.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
     await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
@@ -136,5 +136,33 @@ test('user can correctly select all of the shown reasons why the song was not co
     await pages.postGameResultsPage.skipScoresAnimation();
     await pages.postGameResultsPage.goToHighScoresStep();
     await pages.postGameHighScoresPage.goToSongList();
+  });
+
+  await test.step('Navigate with keyboard to play random song', async () => {
+    await remoteMic.remoteMicMainPage.pressEnterOnRemoteMic();
+    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic._page);
+    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic._page);
+    await remoteMic.remoteMicMainPage.pressReadyOnRemoteMic();
+  });
+
+  await test.step('Exit the song before its end', async () => {
+    await page.waitForTimeout(1000);
+    await pages.gamePage.exitSong();
+  });
+
+  await test.step('User can select all issues as a reasons of unfinished song', async () => {
+    await pages.rateUnfinishedSongPage.selectLyricsSyncIssue();
+    await pages.rateUnfinishedSongPage.selectWrongLyricsIssue();
+    await pages.rateUnfinishedSongPage.selectVolumeIssue();
+    await pages.rateUnfinishedSongPage.submitYourSelectionAndExit();
+  });
+
+  await test.step('User can return to Song List to choose another song', async () => {
+    await pages.postGameResultsPage.skipScoresAnimation();
+    await pages.postGameResultsPage.goToHighScoresStep();
+    await pages.postGameHighScoresPage.goToSongList();
+    await pages.songListPage.getSongElement(songID);
+    await pages.songListPage.openPreviewForSong(songID);
+    await pages.songListPage.expectSelectedSongToBe(songID);
   });
 });

@@ -1,0 +1,497 @@
+#ARTIST:De "L’Étrange Noël de Monsieur Jack"
+#TITLE:Bienvenue à Halloween
+#CREATOR:Leroidukitch
+#BPM:333,95
+#YEAR:1993
+#PREVIEWSTART:54
+#VIDEO:v=HwVX9GwW5fw
+#GENRE:Soundtrack
+#LANGUAGE:French
+#GAP:13911,828117981733
+#EDITION:Halloween
+#ALLKARAOKE_ID:de-letrange-noel-de-monsieur-jack-bienvenue-a-halloween
+#ALLKARAOKE_LASTUPDATE:2024-10-22T16:27:30.172Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:167
+#ALLKARAOKE_PREVIEWEND:91
+#ALLKARAOKE_VOLUME:1
+#MP3:Disney’s L’Étrange Noël de Monsieur Jack - Bienvenue à Halloween.mp3
+: 22 8 -4 Voulez
+: 35 7 -4 -vous 
+: 43 3 -4 voir 
+: 50 3 -4 un 
+: 54 6 -4 monde 
+: 61 9 -5 ét
+: 72 8 -5 range
+- 80
+: 83 4 4 Où 
+: 88 4 3 l’on 
+: 93 4 3 aime 
+: 102 4 3 les 
+: 107 4 3 démons
+- 111
+: 115 4 3 Mais 
+: 121 4 4 pas 
+: 127 4 4 les 
+* 136 4 4 anges
+- 140
+: 145 12 -6 Suivez
+: 163 9 -5 -nous, 
+: 175 10 -4 venez 
+: 188 13 -4 visiter
+- 201
+: 213 5 5 Notre 
+: 226 9 5 magni
+: 236 8 5 fique 
+: 250 7 4 ci
+: 261 6 2 té
+- 267
+: 277 6 -3 Voi
+: 284 5 -3 ci 
+: 292 7 -3 Hallo
+: 300 6 -3 ween, 
+: 309 5 -3 voi
+: 315 4 -3 ci 
+: 322 6 -3 Hallo
+: 329 5 -3 ween
+- 334
+: 340 4 3 Les 
+: 346 6 3 ci
+: 354 8 3 trouilles 
+: 364 4 1 vont 
+: 371 4 -1 mourir 
+: 379 4 4 de 
+: 388 7 6 trouille
+- 395
+: 407 2 -4 C’est 
+: 413 3 -4 ça 
+: 422 5 -4 Hallo
+: 428 5 -4 ween,
+- 433
+: 438 3 -2 Tout 
+: 443 3 -2 le 
+: 449 3 -2 monde 
+: 454 3 -2 a 
+: 458 3 -2 mauvaise 
+: 463 3 -2 mine
+- 466
+: 469 3 -4 C’est 
+: 474 5 5 normal 
+: 482 5 6 !
+- 487
+: 493 3 7 C’est 
+: 497 2 6 pour 
+: 502 5 5 terroriser
+: 509 2 3 ~ 
+: 513 2 2 les 
+: 517 5 2 fripouilles
+: 523 4 2 ~
+- 527
+: 534 3 0 Minuit
+: 538 3 0 ~ 
+: 547 4 -4 sonne...
+- 551
+: 563 4 3 C’est 
+: 568 4 1 l’heure 
+: 573 4 10 du 
+: 578 4 8 crime
+- 582
+: 597 3 -3 Bienvenue
+: 602 4 -3 ~ 
+: 614 2 3 à 
+: 632 6 -4 Halloween
+: 639 6 -4 ~
+- 645
+F 650 6 0 Moi, 
+F 660 1 0 je 
+F 664 1 0 me 
+F 670 2 0 cache 
+F 675 2 0 sous 
+F 680 1 0 votre 
+F 685 1 0 lit 
+F 690 1 0 le 
+F 694 2 0 soir
+- 696
+F 708 1 0 Mes 
+F 714 2 0 dents, 
+F 720 2 0 mes 
+F 727 2 0 yeux 
+F 734 2 0 brillent 
+F 741 1 0 dans 
+F 746 2 0 le 
+F 754 2 0 noir
+- 756
+F 772 2 0 Moi, 
+F 777 2 0 je 
+F 783 2 0 me 
+F 788 2 0 cache 
+F 796 2 0 sous 
+F 804 2 0 votre 
+F 814 3 0 escalier
+- 817
+F 834 1 0 Doigts 
+F 839 1 0 de 
+F 844 4 0 serpents 
+F 853 2 0 et 
+F 861 2 0 cheveux 
+F 871 3 0 d’araignées
+- 874 881
+- 881
+: 903 2 -5 C’est 
+: 914 2 -5 ça 
+: 918 5 -5 Halloween,
+: 924 4 -6 ~
+- 928
+: 932 2 -5 C’est 
+: 943 2 -5 ça 
+: 947 5 -5 Halloween
+: 953 4 -6 ~
+- 957
+: 964 5 1 Halloween
+: 970 5 0 ~ 
+: 980 5 0 Halloween
+: 986 5 -1 ~ 
+* 994 5 -2 Halloween...
+* 1000 5 -3 ~ 
+: 1013 6 -5 Halloween...
+: 1020 6 -6 ~
+- 1026 1038
+- 1038
+: 1060 4 0 C’est 
+: 1066 4 0 la 
+: 1075 4 0 ville 
+: 1092 4 0 de 
+: 1099 4 0 la 
+: 1107 5 0 nuit
+- 1112
+: 1123 4 0 Les 
+: 1128 3 0 citrouilles 
+: 1133 4 0 chantent 
+: 1141 3 0 et 
+: 1150 3 -2 les 
+: 1155 4 -3 chauves 
+: 1164 4 -3 sourient
+- 1168
+F 1188 2 2 On 
+F 1198 3 2 plaisante, 
+F 1220 3 8 on 
+F 1229 4 8 fait 
+F 1236 2 6 des 
+F 1241 6 0 bêtises
+- 1247
+F 1253 2 3 On 
+F 1258 2 2 ne 
+F 1263 3 2 sait 
+F 1268 2 0 pas 
+F 1273 2 0 quelle 
+F 1278 1 0 sera 
+F 1282 2 0 la 
+F 1288 3 0 prochaine 
+F 1297 3 0 surprise 
+F 1305 2 0 !
+- 1307
+: 1316 4 -3 Au 
+: 1327 3 -3 coin 
+: 1332 3 -3 de 
+: 1337 2 -4 la 
+: 1341 3 -5 rue, 
+: 1348 2 -3 il 
+: 1352 3 -3 y 
+: 1357 2 -3 a 
+: 1362 2 -3 des 
+: 1366 4 -3 inconnus
+: 1371 4 -5 ~
+- 1375
+: 1380 4 4 Qui 
+: 1388 7 4 surgissent
+: 1396 4 4 ~ 
+: 1402 3 2 des 
+: 1406 4 2 poubelles
+: 1411 7 2 ~ 
+: 1419 3 2 pour 
+: 1424 4 1 vous 
+F 1435 5 2 faire...
+- 1440
+F 1442 2 0 ... 
+F 1447 2 0 Peur
+- 1449
+F 1454 2 0 C’est 
+F 1464 2 0 ça 
+F 1469 3 0 Halloween
+- 1472
+F 1477 2 0 Rouge 
+F 1481 2 0 et 
+F 1486 2 0 noir...
+- 1488
+F 1494 2 0 Gélatine 
+F 1499 2 0 !
+- 1501
+F 1512 3 0 Quelle 
+F 1518 3 0 horreur
+- 1521
+F 1532 2 0 C’est 
+F 1538 2 0 un 
+F 1547 2 0 enfer 
+F 1580 2 0 Par 
+F 1584 2 0 le 
+F 1590 1 0 feu, 
+F 1595 1 0 par 
+F 1598 2 0 la 
+F 1606 2 0 glace
+- 1608
+F 1611 1 0 Il 
+F 1615 1 0 faut 
+F 1619 1 0 jouer 
+F 1623 1 0 à 
+F 1631 2 0 pile 
+F 1635 1 0 ou 
+F 1639 1 0 face
+- 1640
+F 1644 1 0 Et 
+F 1647 1 0 s’envoler 
+F 1652 2 0 à 
+F 1665 3 0 tombeau 
+F 1683 1 0 ouvert
+- 1684
+F 1700 2 0 C’est 
+F 1705 2 0 la 
+F 1709 1 0 ville 
+F 1717 1 0 du 
+F 1721 1 0 crime
+- 1722
+F 1732 2 0 C’est 
+F 1736 2 0 la 
+F 1742 1 0 ville 
+F 1746 1 0 du 
+F 1750 1 0 crime
+- 1751
+: 1769 4 -4 Bienvenue
+: 1774 4 0 ~ 
+: 1786 2 0 à 
+* 1804 6 -4 Halloween
+* 1811 6 -4 ~
+- 1817
+F 1820 1 0 Je 
+F 1824 1 0 perds 
+F 1828 2 0 la 
+F 1832 1 0 tête, 
+F 1840 1 0 quelquefois 
+F 1847 1 0 je 
+F 1850 1 0 l’arrache
+- 1851 1854
+- 1854
+F 1876 2 0 Avant 
+F 1886 1 0 de 
+F 1892 2 0 disparaître 
+F 1912 2 0 dans 
+F 1916 1 0 un 
+F 1921 2 0 flash
+- 1923
+F 1940 3 0 Je 
+F 1947 2 0 suis 
+F 1953 3 0 le 
+F 1961 2 0 mort 
+F 1969 2 0 qui 
+F 1975 2 0 prend 
+F 1982 2 0 le 
+F 1989 2 0 mors 
+F 1995 2 0 aux 
+F 1999 2 0 dents...
+- 2001
+F 2006 2 0 Je 
+F 2012 2 0 suis 
+F 2018 2 0 le 
+F 2024 2 0 vent 
+F 2030 2 0 qui 
+F 2036 2 0 vous 
+F 2042 2 0 glace 
+F 2047 3 0 le 
+F 2054 3 0 sang...
+- 2057
+F 2071 1 0 Moi, 
+F 2077 2 0 je 
+F 2083 2 0 me 
+F 2090 2 0 glisse 
+F 2097 2 0 comme 
+F 2105 2 0 une 
+F 2111 3 0 ombre 
+F 2120 2 0 noire
+- 2122
+F 2129 2 0 Et 
+F 2135 2 0 je 
+F 2140 2 0 transforme 
+F 2149 3 0 vos 
+F 2156 3 0 rêves 
+F 2165 3 0 en 
+F 2176 2 0 cauchemars
+- 2178
+: 2195 2 -1 C’est 
+: 2206 2 -2 ça 
+: 2210 8 -3 Halloween,
+: 2220 6 -4 ~
+- 2226
+: 2227 2 -1 C’est 
+: 2238 2 -2 ça 
+: 2242 8 -3 Halloween
+: 2252 5 -4 ~
+- 2257
+: 2258 5 1 Halloween
+: 2264 5 0 ~ 
+: 2274 5 0 Halloween
+: 2280 5 -1 ~ 
+: 2288 5 -2 Halloween...
+: 2294 5 -3 ~ 
+: 2307 6 -5 Halloween...
+: 2314 6 -6 ~
+- 2320 2364
+- 2364
+F 2386 3 2 Il 
+F 2394 2 2 y 
+F 2400 2 2 a 
+F 2406 2 2 des 
+F 2413 3 2 enfants 
+F 2420 2 2 beaucoup 
+F 2426 2 2 trop 
+F 2431 2 2 sages
+- 2433
+F 2448 3 0 On 
+F 2456 3 0 préfère 
+F 2464 2 0 ceux 
+F 2471 2 0 qui 
+F 2477 2 0 ont 
+F 2485 3 0 la 
+F 2492 2 0 rage
+- 2494 2496
+- 2496
+F 2518 3 0 On 
+F 2524 3 0 fait 
+F 2531 3 0 peur... 
+F 2541 2 0 mais 
+F 2549 3 0 on 
+F 2557 2 0 se 
+F 2564 3 0 domine
+- 2567
+F 2578 2 0 Dans 
+F 2586 2 0 la 
+F 2595 2 0 ville 
+F 2612 2 0 d’Halloween
+- 2614 2625
+- 2625
+F 2647 2 2 On 
+: 2653 3 2 plaisante
+- 2656
+F 2674 4 2 On 
+F 2681 4 2 fait 
+F 2693 4 2 des 
+F 2699 4 2 bêtises
+- 2703
+F 2706 4 2 Tout 
+F 2712 4 2 le 
+F 2717 4 2 monde 
+F 2723 4 2 attend 
+F 2728 4 2 la 
+F 2734 4 2 prochaine 
+F 2740 4 2 surprise
+- 2744 2755
+- 2755
+: 2777 4 0 Si 
+: 2783 3 0 Jack 
+: 2787 3 0 le 
+: 2792 3 0 squelette,
+- 2795
+: 2797 4 0 Sans 
+: 2803 3 0 tambours
+: 2807 3 0 ~ 
+: 2811 4 0 ni 
+: 2818 3 0 trompettes
+: 2822 4 0 ~
+- 2826
+: 2834 3 9 Surgit 
+: 2843 3 8 dans 
+: 2848 3 7 votre 
+: 2854 3 4 dos,
+- 2857
+: 2859 3 4 Vous 
+: 2864 3 5 ne 
+: 2869 3 5 ferez 
+: 2876 3 5 pas 
+: 2882 3 6 de 
+: 2889 3 8 vieux 
+: 2895 3 -2 os
+- 2898
+: 2901 2 0 C’est 
+: 2908 2 0 ça 
+: 2915 2 0 Halloween 
+: 2929 2 0 C’est 
+: 2935 2 0 la 
+: 2941 1 0 ville 
+: 2945 1 0 du 
+: 2949 1 0 crime
+- 2950
+: 2963 2 -5 Bienvenue 
+: 2969 2 -3 à 
+: 2981 8 3 l’épouvantable
+: 2990 8 2 ~ 
+: 3003 6 1 épouvantail
+: 3010 7 0 ~
+- 3017
+: 3028 5 0 Bravo 
+: 3039 2 0 Jack 
+: 3045 2 0 T’es 
+: 3051 2 0 un 
+: 3060 1 0 crack
+- 3061
+F 3065 2 0 Vive 
+F 3070 1 0 notre 
+F 3075 2 0 nouveau 
+F 3079 1 0 roi 
+F 3085 2 0 Jack 
+F 3100 1 0 la 
+F 3108 2 0 gargouille
+- 3110
+F 3117 2 0 Est 
+F 3123 2 0 le 
+F 3128 1 0 roi 
+F 3133 3 0 des 
+F 3142 2 0 citrouilles
+- 3144
+F 3157 2 0 C’est 
+F 3164 2 0 ça 
+F 3172 9 0 Halloween, 
+F 3187 3 -3 c’est 
+F 3194 2 -3 ça 
+F 3201 6 0 Halloween
+- 3207
+: 3220 5 1 Halloween
+: 3226 5 0 ~ 
+: 3236 5 0 Halloween
+: 3242 5 -1 ~ 
+* 3250 5 -2 Halloween...
+* 3256 5 -3 ~ 
+* 3269 6 -5 Halloween...
+: 3276 6 -6 ~
+- 3282 3296
+- 3296
+: 3318 3 -2 C’est 
+: 3325 3 -2 la 
+: 3331 4 -2 ville 
+: 3347 3 -2 de 
+: 3353 3 -2 la 
+: 3360 9 -2 nuit...
+- 3369
+: 3377 3 -2 Les 
+: 3383 3 -2 citrouilles 
+: 3390 3 -2 chantent 
+: 3397 4 -2 et 
+: 3405 3 -3 les 
+: 3412 7 -4 chauves 
+: 3424 10 -4 sourient
+- 3434
+F 3448 3 0 La 
+F 3458 2 0 la-la 
+F 3494 3 0 la,
+- 3497 3509
+- 3509
+F 3531 3 0 Halloween 
+F 3556 3 0 Halloween
+E

@@ -35,7 +35,7 @@ const config: PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['json', { outputFile: 'test-results.json' }],
-    ...(process.env.CI ? ([['github']] as any) : ([['list'], ['html']] as any)),
+    ...(process.env.CI ? ([['github'], ['blob']] as any) : ([['list'], ['html']] as any)),
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -144,7 +144,7 @@ const config: PlaywrightTestConfig = {
     prodRun
       ? {
           // On CI we check the same build as would be deployed - with the risk that some issues won't happen locally
-          command: process.env.CI ? 'pnpm build:serve:e2e' : 'pnpm build:serve:e2e:fast',
+          command: process.env.CI ? 'pnpm start:production' : 'pnpm build:serve:e2e:fast',
           port: 3010,
           timeout: 60_000 * 3,
           reuseExistingServer: true,

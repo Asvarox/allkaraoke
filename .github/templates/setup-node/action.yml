@@ -13,5 +13,3 @@ runs:
         cache: 'pnpm'
     - run: pnpm install
       shell: bash
-    - run: pnpm exec puppeteer browsers install chrome
-      shell: bash

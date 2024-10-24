@@ -56,7 +56,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
   await test.step('Navigate to main menu by phone', async () => {
     await pages.smartphonesConnectionPage.navigateToSaveButtonWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(pages.mainMenuPage.singSongButton).toBeVisible();
   });
 
@@ -74,9 +74,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
   await test.step('Navigate to song list by phone', async () => {
     await pages.mainMenuPage.navigateToSongListWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songLanguagesPage.navigateToSongListWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   await test.step('Search song remotely and navigate', async () => {
@@ -85,9 +85,9 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
 
     await pages.songListPage.focusSong(song2.ID);
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
-    await remoteMic2.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   await test.step('Check if the mics are reselected after they refresh', async () => {
@@ -111,7 +111,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
     await pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(player2.name);
     await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
-    await remoteMic2.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   await test.step('Expect confirmation status from players', async () => {
@@ -127,7 +127,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await remoteMic1.remoteMicMainPage.goBackByKeyboard();
     await expect(pages.gamePage.restartButton).toBeVisible();
     await pages.gamePage.navigateToRestartSongWithKeyboard(remoteMic2._page);
-    await remoteMic2.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   await test.step('Play song', async () => {
@@ -139,7 +139,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
     await expect(pages.gamePage.skipIntroElement).toBeVisible();
     await page.waitForTimeout(1500);
-    await remoteMic2.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic2.remoteMicMainPage.pressEnterOnRemoteMic();
   });
 
   test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
@@ -153,11 +153,11 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
 
   await test.step('Go to select new song', async () => {
     await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(pages.postGameResultsPage.nextButton).toBeVisible();
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
-    await remoteMic1.remoteMicMainPage.pressEnterByKeyboard();
+    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
     await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
   });
 });
