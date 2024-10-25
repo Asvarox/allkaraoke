@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { SongPreview } from 'interfaces';
 import styles from 'modules/GameEngine/Drawing/styles';
 import { useSongStats } from 'modules/Songs/stats/hooks';
-import { isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
+import { getEurovisionYear, isEurovisionSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { ReactNode, useMemo } from 'react';
 import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
 
@@ -60,7 +60,7 @@ export const SongCardStatsIndicator = ({
     <SongIndicatorIcon white>
       {
         <SongIndicatorLabel>
-          {focused ? song.edition?.replace('ESC', 'Eurovision') : song.edition?.replace('ESC ', '')}
+          {focused ? `Eurovision ${getEurovisionYear(song)}` : getEurovisionYear(song)}
         </SongIndicatorLabel>
       }
       <EurovisionIcon src={eurovisionIcon} alt={song.edition} />

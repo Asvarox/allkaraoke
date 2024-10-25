@@ -67,6 +67,11 @@ export const colorSets = {
   christmasGreen: colorSet(christmasGreenFillBase, christmasGreenStrokeBase),
   christmasRed: colorSet(christmasRedFillBase, christmasRedStrokeBase),
 
+  halloweenOrange: colorSet(tinycolor('#fd9702'), tinycolor('#ff7100')),
+  halloweenViolet: colorSet(tinycolor('#e102ff'), tinycolor('#ae03ff')),
+  halloweenRed: colorSet(redFillBase, redStrokeBase),
+  halloweenGreen: colorSet(tinycolor('rgb(0,183,0)'), tinycolor('rgb(0,84,0)')),
+
   eurovisionYellow: colorSet(eurovisionYellowFillBase, eurovisionYellowStrokeBase),
   eurovisionPink: colorSet(eurovisionPinkFillBase, eurovisionPinkStrokeBase),
   eurovisionOrange: colorSet(eurovisionOrangeFillBase, eurovisionOrangeStrokeBase),
@@ -104,20 +109,21 @@ const styles = {
   },
 };
 
+const colorThemes: Record<backgroundTheme, ReturnType<typeof colorSet>[]> = {
+  christmas: [colorSets.christmasGreen, colorSets.christmasRed],
+  eurovision: [
+    colorSets.eurovisionBlue,
+    colorSets.eurovisionViolet,
+    colorSets.eurovisionYellow,
+    colorSets.eurovisionPink,
+  ],
+  halloween: [colorSets.halloweenOrange, colorSets.halloweenViolet, colorSets.halloweenRed, colorSets.halloweenGreen],
+  regular: [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow],
+};
+
 export const switchToTheme = (theme: backgroundTheme) => {
-  if (theme === 'christmas' && playerColors[0] !== colorSets.christmasGreen) {
-    playerColors = [colorSets.christmasGreen, colorSets.christmasRed];
-    styles.colors.players = playerColors;
-  } else if (theme === 'eurovision' && playerColors[0] !== colorSets.eurovisionYellow) {
-    playerColors = [
-      colorSets.eurovisionBlue,
-      colorSets.eurovisionViolet,
-      colorSets.eurovisionYellow,
-      colorSets.eurovisionPink,
-    ];
-    styles.colors.players = playerColors;
-  } else if (theme === 'regular' && playerColors[0] !== colorSets.blue) {
-    playerColors = [colorSets.blue, colorSets.red, colorSets.green, colorSets.yellow];
+  if (playerColors[0] !== colorThemes[theme][0]) {
+    playerColors = colorThemes[theme];
     styles.colors.players = playerColors;
   }
 };
