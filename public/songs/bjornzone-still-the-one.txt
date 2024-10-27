@@ -1,0 +1,378 @@
+#ARTIST:Björnzone
+#TITLE:Still The One
+#CREATOR:Crowbardoctor
+#BPM:373,089996337891
+#YEAR:2024
+#VIDEO:v=HLhPRkbTuJg
+#VIDEOGAP:144
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:157552,88058194844
+#ALLKARAOKE_ID:bjornzone-still-the-one
+#ALLKARAOKE_LASTUPDATE:2024-10-27T15:28:11.363Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_VOLUME:1
+#ENCODING:UTF8
+#MP3:Björnzone - Still The One [Karaoke].mp3
+#VOCALS:vocals.ogg
+#INSTRUMENTAL:instrumental.ogg
+#COVER:Björnzone - Still The One [CO].jpg
+#MEDLEYENDBEAT:-3
+: 25 12 13 Tell 
+: 38 10 15 me 
+: 50 8 15 how 
+: 59 4 16 do 
+: 64 4 16 you 
+: 69 7 16 love 
+: 83 24 8 someone?
+- 107 123
+- 123
+: 148 6 4 when 
+: 154 7 16 they 
+: 162 10 16 never 
+: 173 16 16 want 
+: 190 1 16 it 
+: 194 28 15 forever?
+- 222 232
+- 232
+: 257 8 6 Love 
+: 267 3 6 me 
+: 273 10 6 like 
+: 289 18 4 you 
+: 310 7 1 did 
+: 320 2 2 2008
+- 322 342
+- 342
+: 367 12 7 Everything 
+: 384 2 4 was 
+: 392 8 4 easy 
+: 402 2 3 when
+- 404
+: 415 6 4 you 
+: 422 7 4 were 
+: 431 3 4 in 
+: 435 3 4 my
+- 438
+: 446 6 3 arms 
+: 455 9 4 So 
+: 466 6 6 why 
+: 475 2 6 did 
+: 480 6 6 you 
+: 487 11 4 decide 
+: 501 2 5 to 
+: 506 6 6 walk 
+: 516 9 0 away?
+- 525 545
+- 545
+: 570 7 8 We 
+: 578 2 6 were 
+: 584 8 5 so 
+: 596 20 4 unbreakable
+- 616
+: 622 9 11 Now 
+: 633 1 5 I 
+: 635 8 6 don't 
+: 645 6 6 know 
+: 651 7 6 where 
+: 662 16 9 you 
+: 678 1 10 are
+- 679
+: 695 3 4 It's 
+: 699 6 11 killing 
+: 707 5 13 me 
+: 713 5 13 but 
+: 726 3 8 I 
+: 733 8 6 just 
+: 744 24 8 gotta 
+: 770 63 8 kno~w
+- 833
+: 855 12 13 Tell 
+: 869 10 15 me 
+: 881 6 15 how 
+: 888 1 15 do 
+: 893 10 16 you 
+: 904 3 16 love 
+: 914 23 8 someone
+- 937 953
+- 953
+: 978 2 3 When 
+: 985 6 16 they 
+: 993 10 16 never 
+: 1005 16 16 wanted 
+: 1024 26 15 forever
+- 1050
+: 1070 17 15 After 
+: 1093 25 16 everything 
+: 1126 5 8 I've 
+: 1134 21 8 done
+- 1155 1162
+- 1162
+: 1187 1 9 It 
+: 1190 9 16 still 
+: 1200 11 16 didn't 
+: 1213 10 16 lead 
+: 1225 4 18 me 
+: 1232 6 20 to 
+: 1238 5 18 you
+- 1243 1255
+- 1255
+: 1280 2 20 I 
+: 1284 5 15 don't 
+: 1291 7 16 know
+- 1298 1303
+- 1303
+: 1328 4 23 what 
+: 1337 4 16 to 
+: 1342 5 15 do 
+: 1348 12 13 now
+- 1360
+: 1380 7 13 You 
+: 1390 3 13 are 
+: 1395 1 13 the 
+: 1399 9 8 part 
+: 1410 2 13 of 
+: 1413 7 13 me 
+: 1423 2 33 I 
+: 1426 3 21 just 
+: 1433 7 21 can't 
+: 1440 5 20 live 
+: 1447 16 15 without
+- 1463
+: 1478 12 13 Tell 
+: 1492 11 15 me 
+: 1504 7 15 how 
+: 1511 1 16 do 
+: 1516 7 16 you 
+: 1524 6 16 love 
+: 1536 26 8 someone?
+- 1562 1568
+- 1568
+: 1593 6 8 Even 
+: 1601 6 6 though 
+: 1611 6 4 you're 
+: 1621 2 8 so 
+: 1628 12 6 cold 
+: 1643 2 4 in 
+: 1647 6 11 my 
+: 1655 10 3 heart
+- 1665
+: 1679 3 18 you're 
+: 1687 6 3 still 
+: 1695 5 3 the 
+: 1709 3 1 one
+- 1712 1738
+- 1738
+: 1763 8 6 Can 
+: 1773 2 8 you 
+: 1778 6 6 feel 
+: 1786 3 4 the 
+: 1790 7 4 rhythm 
+: 1806 2 6 of 
+: 1811 5 2 my 
+: 1817 2 2 heart?
+- 1819 1839
+- 1839
+: 1864 1 6 It 
+: 1867 11 7 doesn't 
+: 1881 6 6 mean 
+: 1890 2 4 the 
+: 1894 9 4 same 
+: 1907 2 1 for 
+: 1924 18 8 anybody 
+: 1947 6 6 else 
+: 1959 31 9 no~
+- 1990
+: 1993 3 5 It's 
+: 1996 8 5 killing 
+: 2005 4 13 me 
+: 2011 6 13 but 
+: 2023 2 11 I 
+: 2031 7 6 just 
+: 2042 14 8 gotta 
+: 2064 58 10 kno~w
+- 2122 2128
+- 2128
+: 2153 12 13 Tell 
+: 2167 11 15 me 
+: 2180 7 16 how 
+: 2188 1 16 do 
+: 2191 4 16 you 
+: 2198 8 16 love 
+: 2211 30 8 someone?
+- 2241 2253
+- 2253
+: 2278 11 16 Ain't 
+: 2290 6 15 that 
+: 2296 1 15 a 
+: 2308 6 3 life 
+: 2323 25 16 forever?
+- 2348
+: 2363 23 15 After 
+: 2390 21 16 everything 
+: 2418 48 16 I've
+- 2466
+: 2472 9 15 done? 
+: 2484 37 16 Tell 
+: 2523 4 8 me 
+: 2530 16 18 deep
+- 2546
+: 2568 1 16 I 
+: 2572 10 16 don't 
+: 2585 11 16 know
+- 2596
+: 2610 1 14 I 
+: 2611 2 14 don't 
+: 2614 10 14 know
+- 2624
+: 2626 6 11 what 
+: 2634 5 16 to 
+: 2640 4 15 do 
+: 2647 12 13 now 
+F 2661 17 12 What to do now
+- 2678
+: 2689 4 13 are 
+: 2693 1 13 the 
+: 2698 8 12 part 
+: 2707 2 21 of 
+: 2712 6 13 me 
+: 2724 4 13 just 
+: 2730 7 21 can't 
+: 2738 6 20 live 
+: 2744 18 18 without
+- 2762
+: 2775 11 13 Tell 
+: 2789 11 15 me 
+: 2802 6 15 how 
+: 2809 6 16 do 
+: 2816 3 16 you 
+: 2821 7 16 love 
+: 2834 27 8 someone?
+- 2861 2866
+- 2866
+: 2891 4 4 Even 
+: 2899 10 6 though 
+: 2911 5 4 you're 
+: 2918 4 8 so 
+: 2925 13 6 cold 
+: 2941 2 4 in 
+: 2945 6 11 my 
+: 2953 12 3 heart
+- 2965
+: 2977 4 3 you're 
+: 2984 7 3 still 
+: 2993 6 3 the 
+: 3009 2 1 one
+- 3011
+: 3030 12 3 Baby, 
+: 3053 1 3 I 
+: 3056 4 2 can't 
+: 3066 9 0 eat
+- 3075 3079
+- 3079
+: 3104 1 3 I 
+: 3107 5 5 can't 
+: 3118 4 2 sleep, 
+: 3133 1 4 At 
+: 3140 3 6 night
+- 3143
+: 3156 1 5 I 
+: 3159 5 7 can't 
+: 3166 3 7 breathe
+- 3169 3182
+- 3182
+: 3207 2 0 You 
+: 3212 3 0 know 
+: 3218 1 0 I 
+: 3220 4 0 love 
+: 3227 5 0 you
+- 3232
+: 3239 3 1 Yeah
+- 3242
+: 3258 2 5 You 
+: 3261 2 4 broke 
+: 3268 5 3 my 
+: 3274 2 5 heart
+- 3276
+: 3279 10 2 Oh 
+: 3296 6 12 yeah
+- 3302 3309
+- 3309
+: 3334 19 18 Hey 
+: 3362 18 16 yeah
+- 3380 3484
+- 3484
+: 3509 7 19 Tell 
+: 3519 3 19 me, 
+: 3525 5 19 how 
+: 3533 3 19 do 
+: 3539 8 19 you 
+: 3548 7 19 love 
+: 3561 23 12 someone?
+- 3584 3600
+- 3600
+: 3625 5 16 But 
+: 3632 7 19 they 
+: 3641 9 19 never 
+: 3652 7 19 want 
+: 3662 6 19 it 
+: 3672 25 19 forever
+- 3697
+: 3716 20 18 After 
+: 3740 22 19 everything 
+: 3774 4 11 I've 
+: 3780 27 11 done
+- 3807 3815
+- 3815
+: 3840 18 19 didn't 
+: 3860 10 19 leave 
+: 3875 1 21 it 
+: 3879 3 23 to 
+: 3887 5 21 you
+- 3892 3899
+- 3899
+: 3924 3 23 I 
+: 3928 6 18 don't 
+: 3937 12 19 know
+- 3949 3957
+- 3957
+: 3982 5 16 what 
+: 3990 2 16 to 
+: 3995 2 16 do 
+: 4000 7 16 now
+- 4007
+: 4032 6 15 You 
+: 4038 3 16 are 
+: 4042 2 16 the 
+: 4047 8 12 part 
+: 4056 2 12 of 
+: 4061 7 16 me 
+: 4070 2 16 I 
+: 4073 3 17 just 
+: 4079 8 16 can't 
+: 4090 3 19 live 
+: 4095 17 19 without
+- 4112
+: 4125 12 16 Tell 
+: 4139 12 18 me, 
+: 4152 3 19 how 
+: 4158 2 19 do 
+: 4163 3 19 you 
+: 4169 9 19 love 
+: 4184 30 9 someone
+- 4214 4215
+- 4215
+: 4240 7 11 Even 
+: 4249 12 9 though 
+: 4262 5 6 you're 
+: 4268 3 11 so 
+: 4275 12 9 cold 
+: 4290 3 7 in 
+: 4294 6 14 my 
+: 4301 11 6 heart
+- 4312
+: 4326 4 1 You're 
+: 4333 7 5 still 
+: 4345 5 6 the 
+: 4359 3 4 one
+E

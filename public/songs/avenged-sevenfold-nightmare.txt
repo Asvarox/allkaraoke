@@ -7,12 +7,14 @@
 #GENRE:Metal
 #LANGUAGE:English
 #GAP:60918,59220092531
-#EDITION:Rock Band Store 2010 Vol. 3
+#EDITION:Halloween
 #ALLKARAOKE_ID:avenged-sevenfold-nightmare
+#ALLKARAOKE_LASTUPDATE:2024-10-19T05:30:36.807Z
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83
 #ALLKARAOKE_REALBPM:129
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare
+#ALLKARAOKE_VOLUME:0,74
 : 26 7 9 Night
 : 37 7 8 mare
 : 45 200 9 ~
@@ -110,6 +112,7 @@
 : 785 2 0 to 
 : 791 6 2 steal
 : 798 12 0 ~
+- 810 820
 - 820
 : 846 3 5 So 
 : 852 4 5 stand 
@@ -306,6 +309,7 @@
 : 2286 2 0 to 
 : 2293 4 2 feel
 : 2298 13 0 ~
+- 2311 2327
 - 2327
 : 2353 4 5 So 
 : 2360 2 5 se
@@ -433,7 +437,7 @@ F 3518 3 2 ha
 F 3524 3 2 ha 
 F 3530 3 2 ha 
 F 3536 9 2 ha
-- 3571 4729
+- 3545 4729
 - 4729
 F 4755 4 2 Ha 
 F 4763 3 2 ha 
@@ -454,7 +458,7 @@ F 4847 3 2 ha
 F 4853 3 2 ha 
 F 4859 3 2 ha 
 F 4865 3 2 ha
-- 4894 4929
+- 4868 4929
 - 4929
 : 4955 9 9 Fight
 - 4964
@@ -493,10 +497,10 @@ F 4865 3 2 ha
 : 5307 3 8 an
 : 5312 4 7 oth
 : 5319 21 5 er
-- 5366 5413
+- 5340 5413
 - 5413
 F 5439 13 7 Oh!
-- 5478 5607
+- 5452 5607
 - 5607
 : 5633 14 9 Down
 - 5647
@@ -535,6 +539,7 @@ F 5439 13 7 Oh!
 : 5984 5 9 ble 
 : 5990 5 7 li
 : 5997 21 5 ar
+- 6018 6030
 - 6030
 : 6056 4 10 And 
 : 6062 4 10 I 

@@ -9,7 +9,6 @@
 #GAP:270
 #ALLKARAOKE_ID:sarah-connor-vincent
 #ALLKARAOKE_LASTUPDATE:2024-10-17T00:11:11.259Z
-#ALLKARAOKE_ARTISTORIGIN:DE
 #ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=32008
 #ALLKARAOKE_REALBPM:97
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=22530
