@@ -45,6 +45,7 @@ dotenv.config({ path: '.env.local' });
                 .join(',')})
               and event IN ('share-song', 'unshare-song')
             ORDER BY events.created_at ASC
+            LIMIT 500
         `,
       },
     }),
@@ -58,9 +59,9 @@ dotenv.config({ path: '.env.local' });
         fs.rmSync(`./public/songs/${songId}.txt`);
         console.log(`Deleting song ${songId}`);
       }
-      let song = convertTxtToSong(songTxt.replaceAll('\\n', '\n'));
+      let song = convertTxtToSong(songTxt?.replaceAll('\\n', '\n'));
       if (!song.id) {
-        console.log('Song has no ID', song);
+        console.log('Song has no ID', song, songId);
         return;
       }
 
@@ -68,7 +69,7 @@ dotenv.config({ path: '.env.local' });
         track.sections.forEach((section) => {
           if ('notes' in section) {
             section.notes.forEach((note) => {
-              note.lyrics = note.lyrics.replaceAll(/\\+"/g, '"');
+              note.lyrics = note.lyrics?.replaceAll(/\\+"/g, '"');
             });
           }
         });
@@ -84,7 +85,7 @@ dotenv.config({ path: '.env.local' });
       fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
       console.log(`Added/updated song ${song.id}`);
     } catch (e) {
-      console.warn(`Couldn't convert song`, e, songTxt);
+      console.warn(`Couldn't convert song`, e, songTxt, songId);
     }
   });
   console.log('Updating song data');

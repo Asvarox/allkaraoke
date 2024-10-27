@@ -22,7 +22,7 @@ console.log(files);
         track.sections.forEach((section) => {
           if ('notes' in section) {
             section.notes.forEach((note) => {
-              note.lyrics = note.lyrics.replaceAll(/\\+"/g, '"');
+              note.lyrics = note.lyrics?.replaceAll(/\\+"/g, '"');
             });
           }
         });
