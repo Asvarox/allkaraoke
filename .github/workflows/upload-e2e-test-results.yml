@@ -1,5 +1,6 @@
 name: Upload E2E test results
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["CI/CD"]
     types:
