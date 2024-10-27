@@ -9,7 +9,6 @@
 #GAP:10595,601239876012
 #ALLKARAOKE_ID:reol-no-title
 #ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:12.861Z
-#ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
 #ALLKARAOKE_REALBPM:200
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=no+title
