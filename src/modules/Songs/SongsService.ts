@@ -50,9 +50,6 @@ class SongsService {
   public isOverridden = async (songId: string) => {
     const localSong = await this.getLocal(songId);
 
-    if (!localSong) {
-      return false;
-    }
     return !!localSong;
   };
 

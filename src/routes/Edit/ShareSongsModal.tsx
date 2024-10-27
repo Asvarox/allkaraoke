@@ -22,7 +22,7 @@ export const shareSong = async (id: string) => {
 
     const songData = await SongDao.get(id);
     if (songData) {
-      posthog.capture('share-song', { song: convertSongToTxt(songData) });
+      posthog.capture('share-song', { song: convertSongToTxt(songData), isOverridden: SongDao.isOverridden(id) });
     }
   } catch (e) {
     console.error(e);
