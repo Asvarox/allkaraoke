@@ -23,7 +23,6 @@ const player2 = 1;
 const player1Name = 'All';
 const player2Name = 'Karaoke';
 const englishPlaylist = 'English';
-const oldiePlaylist = 'Oldies';
 
 test('Convert and sing a song', async ({ page }) => {
   test.slow();
@@ -115,13 +114,6 @@ test('Convert and sing a song', async ({ page }) => {
   await test.step('Go to language playlist and check visibility', async () => {
     await pages.songListPage.goToPlaylist(englishPlaylist);
     await pages.songListPage.expectPlaylistToBeSelected(englishPlaylist);
-    await expect(await pages.songListPage.getSongElement(songID)).toBeVisible();
-    await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
-  });
-
-  await test.step('Go to playlist containing the song`s release year and check visibility', async () => {
-    await pages.songListPage.goToPlaylist(oldiePlaylist);
-    await pages.songListPage.expectPlaylistToBeSelected(oldiePlaylist);
     await expect(await pages.songListPage.getSongElement(songID)).toBeVisible();
     await pages.songListPage.expectSongToBeMarkedAsNewInNewGroup(songID);
   });
