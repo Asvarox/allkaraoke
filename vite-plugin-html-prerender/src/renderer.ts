@@ -5,13 +5,19 @@ import { RenderedRoute } from './types';
 
 export default class Renderer {
   private _browser?: Browser;
+  private initPromise?: Promise<void>;
 
   async init(): Promise<void> {
-    const options: LaunchOptions = {
-      args: ['--headless=new', '--no-sandbox', '--disable-setuid-sandbox'],
-    };
+    if (!this.initPromise) {
+      const options: LaunchOptions = {
+        args: ['--headless=new', '--no-sandbox', '--disable-setuid-sandbox'],
+      };
+      this.initPromise = chromium.launch(options).then((browser) => {
+        this._browser = browser;
+      });
+    }
 
-    this._browser = await chromium.launch(options);
+    return this.initPromise;
   }
 
   async destroy(): Promise<void> {
@@ -26,13 +32,14 @@ export default class Renderer {
     const page = await this._browser.newPage();
     await page.goto(`http://localhost:${port}${path.join(basePath, route)}`);
     try {
-      await page.waitForSelector(selector, { timeout: 10000, state: 'attached' });
-      await page.waitForLoadState('networkidle');
+      await page.waitForSelector(selector, { timeout: 7_500, state: 'attached' });
+      await page.waitForLoadState('domcontentloaded');
     } catch (error) {
       console.error(`Failed to prerender route: ${route}`);
     }
 
     const html = await page.content();
+
     return { route, html };
   }
 
