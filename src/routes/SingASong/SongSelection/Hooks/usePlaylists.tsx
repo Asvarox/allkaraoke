@@ -91,8 +91,6 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
             filters: { language: songLanguages[1].name },
           }
         : null,
-      { name: 'Oldies', filters: { yearBefore: 1995 } },
-      { name: 'Modern', filters: { yearAfter: 1995 } },
       { name: 'Duets', filters: { duet: true } },
       {
         name: 'New',
