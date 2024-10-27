@@ -1,0 +1,151 @@
+#ARTIST:Keep Shelly In Athens
+#TITLE:Oostende
+#CREATOR:Crowbardoctor
+#BPM:300
+#YEAR:2013
+#VIDEO:v=a4TQt1s-Go0
+#GENRE:Chillwave
+#LANGUAGE:English
+#GAP:52800
+#ALLKARAOKE_ID:keep-shelly-in-athens-oostende
+#ALLKARAOKE_LASTUPDATE:2024-10-27T15:28:11.358Z
+#ALLKARAOKE_ARTISTORIGIN:GR
+#ALLKARAOKE_REALBPM:119
+#ALLKARAOKE_VOLUME:0,74
+#ENCODING:UTF8
+#MP3:Keep Shelly In Athens - Oostende.mp3
+#VOCALS:vocals.ogg
+#INSTRUMENTAL:instrumental.ogg
+#COVER:Keep Shelly In Athens - Oostende [CO].jpg
+: 20 44 10 Sunlight, 
+: 75 19 10 falling 
+: 97 20 10 down 
+: 120 24 10 above 
+: 147 14 10 us
+- 161 216
+- 216
+: 236 7 11 We 
+: 246 23 11 belong,
+- 269 272
+- 272
+: 292 9 11 to 
+: 304 16 11 all, 
+: 326 7 11 that 
+: 336 3 11 we 
+: 342 10 11 asked 
+: 355 9 11 for
+- 364 428
+- 428
+: 448 7 12 You 
+: 458 5 12 do 
+: 466 13 12 talk, 
+: 492 14 12 about 
+: 509 9 12 the 
+: 521 15 12 signs 
+: 539 12 12 with 
+: 554 24 12 passion
+- 578 642
+- 642
+: 662 13 13 Your 
+: 678 14 13 soul 
+: 715 13 13 I 
+: 731 21 13 discovered 
+: 755 4 13 at 
+: 762 8 13 this 
+: 773 14 13 shore
+- 787 856
+- 856
+: 876 17 14 Me
+- 893 932
+- 932
+: 952 16 14 forget 
+: 971 8 14 the 
+: 982 20 14 sorrow
+- 1002 1045
+- 1045
+: 1065 6 14 And 
+: 1074 10 14 maybe 
+: 1087 21 14 tomorrow
+- 1108
+: 1128 14 14 we'll 
+: 1145 23 14 shorten 
+: 1181 10 14 the 
+: 1194 30 14 distance
+- 1224 1258
+- 1258
+: 1278 3 14 Get 
+: 1284 1 14 on 
+: 1288 7 14 the 
+: 1297 44 14 tra-ain
+- 1341
+: 1345 10 14 to 
+: 1358 37 14 embrace
+- 1395
+: 1405 9 14 this 
+: 1416 40 14 chance
+- 1456 1922
+- 1922
+: 1942 10 13 Your 
+: 1955 10 13 soft 
+: 1968 16 13 hands 
+: 2000 32 13 covering 
+: 2038 10 13 my 
+: 2051 25 13 ears
+- 2076 2134
+- 2134
+: 2154 16 14 City 
+: 2173 28 14 sounds
+- 2201
+: 2212 33 14 growing 
+: 2248 10 14 my 
+: 2261 28 14 fears
+- 2289 2349
+- 2349
+: 2369 24 14 me
+- 2393 2425
+- 2425
+: 2445 14 14 erase 
+: 2462 8 14 the 
+: 2473 18 14 sorrow
+- 2491 2538
+- 2538
+: 2558 7 14 And 
+: 2568 12 14 maybe 
+: 2583 23 14 tomorrow
+- 2606
+: 2623 12 14 we'll 
+: 2638 25 14 embrace,
+- 2663
+: 2683 8 14 this 
+: 2694 16 14 chance
+- 2710 2752
+- 2752
+: 2772 10 14 Get 
+: 2785 7 14 on 
+: 2795 10 14 the 
+: 2808 21 14 train
+- 2829
+: 2839 13 14 We'll 
+: 2855 23 14 shorten
+- 2878
+: 2889 11 14 the 
+: 2903 32 14 distance
+- 2935
+: 2945 5 14 the 
+: 2953 21 14 distance
+- 2974
+: 2980 4 14 We'll 
+: 2987 11 14 shorten 
+: 2999 9 14 the 
+: 3010 28 14 distance
+- 3038
+: 3046 9 14 The 
+: 3059 32 14 distance
+- 3091
+: 3102 11 14 The 
+: 3116 33 14 distance
+- 3149 3404
+- 3404
+: 3424 10 14 the 
+: 3437 32 14 distance
+E
