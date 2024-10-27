@@ -46273,6 +46273,35 @@
     "local": false
   },
   {
+    "id": "lady-gaga-bloody-mary",
+    "title": "Bloody Mary",
+    "artist": "Lady Gaga",
+    "video": "VFwmKL5OL-Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 200,
+    "gap": 18475,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T00:12:35.337Z",
+    "edition": "Halloween",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 0.83,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Bloody%20Mary",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagabloodymary",
+    "local": false
+  },
+  {
     "id": "lady-gaga-born-this-way",
     "title": "Born This Way",
     "artist": "Lady Gaga",
@@ -68840,7 +68869,7 @@
     "bpm": 387.66,
     "gap": 2946.963782696177,
     "year": "2019",
-    "artistOrigin": "KR",
+    "artistOrigin": "KP",
     "lastUpdate": "2024-01-19T05:46:35.568Z",
     "realBpm": 140,
     "volume": 0.63,
