@@ -9,23 +9,25 @@ dotenv.config({ path: '.env.local' });
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
 
-  const [userId, argDateFrom = '', argDateTo = ''] = process.argv.slice(2);
+  const [userId, argDaysFrom = '', argDaysTo = ''] = process.argv.slice(2);
 
   if (!userId) {
     throw new Error('Missing user ID');
   }
 
-  let dateFrom = argDateFrom !== '' ? new Date(argDateFrom) : undefined;
-  if (dateFrom === undefined) {
-    dateFrom = new Date();
-    dateFrom.setDate(dateFrom.getDate() - 2);
-  } else if (isNaN(dateFrom.getTime())) {
-    throw new Error(`Invalid date from: "${argDateFrom}"`);
+  let daysFrom = argDaysFrom !== '' ? +argDaysFrom : 2;
+  if (isNaN(daysFrom)) {
+    throw new Error(`Invalid day from: "${argDaysFrom}"`);
   }
-  let dateTo = argDateTo !== '' ? new Date(argDateTo) : new Date();
-  if (isNaN(dateTo.getTime())) {
-    throw new Error(`Invalid date to: "${argDateTo}"`);
+  let daysTo = argDaysTo !== '' ? +argDaysTo : 0;
+  if (isNaN(daysTo)) {
+    throw new Error(`Invalid day to: "${argDaysTo}"`);
   }
+  const dateFrom = new Date();
+  dateFrom.setDate(dateFrom.getDate() - daysFrom);
+
+  const dateTo = new Date();
+  dateTo.setDate(dateTo.getDate() - daysTo);
 
   const response = await requestPostHog(`query`, {
     method: 'POST',
