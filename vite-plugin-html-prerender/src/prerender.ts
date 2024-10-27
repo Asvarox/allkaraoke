@@ -3,7 +3,7 @@ import path from 'path';
 import type { Plugin, ResolvedConfig } from 'vite';
 import Renderer from './renderer';
 import Server from './server';
-import { HtmlPrerenderOptions, RenderedRoute } from './types';
+import { HtmlPrerenderOptions } from './types';
 
 const port = 0;
 const defaultSelector = '#root';
@@ -31,20 +31,25 @@ const emitRendered = async (options: HtmlPrerenderOptions, config: ResolvedConfi
 
   await server
     .init(options.staticDir, basePath)
+    // for some reason initializing the renderer here results in quicker build times than if it was started before the build
+    .then(async () => renderer.init())
     .then(async () => {
-      console.log('\n[vite-plugin-html-prerender] Starting headless browser...');
-      return await renderer.init();
-    })
-    .then(async () => {
-      const renderedRoutes: RenderedRoute[] = [];
       console.log('[vite-plugin-html-prerender] Base path for routes:', basePath);
-      for (let route of options.routes) {
-        console.log('[vite-plugin-html-prerender] Pre-rendering route:', route);
-        renderedRoutes.push(
-          await renderer.renderRoute(basePath, route, server.runningPort, options.selector || defaultSelector),
-        );
-      }
-      return renderedRoutes;
+      return await Promise.all(
+        options.routes.map(async (route) => {
+          const label = `[vite-plugin-html-prerender] Pre-rendering route: ${route}`;
+          console.time(label);
+
+          const renderedRoute = await renderer.renderRoute(
+            basePath,
+            route,
+            server.runningPort,
+            options.selector || defaultSelector,
+          );
+          console.timeEnd(label);
+          return renderedRoute;
+        }),
+      );
     })
     .then((renderedRoutes) => {
       if (options.minify) {
