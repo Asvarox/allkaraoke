@@ -24,7 +24,7 @@ test.use({ viewport: { width: 740, height: 360 }, hasTouch: true, userAgent: 'an
 test('Mobile phone mode should be dismissible', async ({ page }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
-  await pages.landingPage.dismissAlertForSmallerScreens();
+  await pages.landingPage.dismissMobileModePrompt();
   await expect(pages.inputSelectionPage.multipleMicButton).toBeVisible(); // Multiple Mics is hidden when in Mobile Mode
 });
 

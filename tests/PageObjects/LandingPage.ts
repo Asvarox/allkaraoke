@@ -20,7 +20,7 @@ export class LandingPagePO {
     await this.page.getByTestId('join-existing-game').and(this.page.locator(':visible')).click();
   }
 
-  public async dismissAlertForSmallerScreens() {
+  public async dismissMobileModePrompt() {
     await this.page.getByTestId('dismiss-mobile-mode').click();
   }
 
