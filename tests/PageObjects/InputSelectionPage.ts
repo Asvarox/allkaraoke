@@ -19,8 +19,12 @@ export class InputSelectionPagePO {
     await this.page.getByTestId('singstar-mics').click();
   }
 
+  public get multipleMicButton() {
+    return this.page.getByTestId('multiple-mics');
+  }
+
   public async selectMultipleMicrophones() {
-    await this.page.getByTestId('multiple-mics').click();
+    await this.multipleMicButton.click();
   }
 
   public get advancedButton() {
