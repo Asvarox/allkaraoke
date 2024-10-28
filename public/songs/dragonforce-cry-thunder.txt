@@ -1,0 +1,511 @@
+#ARTIST:DragonForce
+#TITLE:Cry Thunder
+#CREATOR:Lorc
+#BPM:260
+#YEAR:2012
+#VIDEO:v=cU4GXgaCFTI
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:39238,230769230766
+#ALLKARAOKE_ID:dragonforce-cry-thunder
+#ALLKARAOKE_LASTUPDATE:2024-10-27T15:28:12.071Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=lorc
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Cry+Thunder
+#ALLKARAOKE_VOLUME:0,95
+#COVER:DragonForce - Cry Thunder.jpg
+#MP3:DragonForce - Cry Thunder.mp3
+: 17 5 -1 Time 
+: 23 5 -1 af
+: 29 3 -1 ter 
+: 33 8 -1 time
+- 41
+: 45 1 -1 As 
+: 47 1 1 we 
+: 49 5 2 march 
+: 55 5 1 side 
+: 61 3 -1 by 
+: 65 8 -1 side
+- 73
+: 77 1 2 Through 
+: 79 1 4 the 
+: 81 5 6 val
+: 87 5 7 leys 
+: 93 3 9 of 
+: 97 5 9 e
+: 103 2 6 vil
+- 105
+: 109 1 2 And 
+: 111 1 4 the 
+: 113 5 6 tor
+: 119 4 4 tu
+: 125 3 2 ring 
+: 129 12 4 souls
+- 141
+* 145 5 6 Night 
+* 151 5 6 af
+* 157 3 6 ter 
+* 161 8 6 night
+- 169
+: 173 1 6 For 
+: 175 1 6 the 
+: 177 5 6 glo
+: 183 5 4 ry 
+: 189 3 2 we 
+: 193 8 0 fight
+- 201
+: 205 1 2 In 
+: 207 1 4 the 
+: 209 5 6 king
+: 215 5 7 dom 
+: 221 3 9 of 
+: 225 5 9 mad
+: 231 2 6 ness
+- 233
+: 237 1 2 And 
+: 239 1 4 the 
+: 241 5 6 tales 
+: 247 5 4 from 
+: 253 3 2 the 
+: 257 12 4 old
+- 269 384
+- 384
+: 401 5 -1 Death 
+: 407 5 -1 by 
+: 413 3 -1 our 
+: 417 8 -1 hand
+- 425
+: 429 1 -1 For 
+: 431 1 1 the 
+: 433 5 2 hig
+: 439 5 1 her 
+: 445 5 -1 com
+: 451 6 -1 mand
+- 457
+: 461 1 3 As 
+: 463 1 4 the 
+: 465 5 6 dark
+: 471 5 6 ness 
+: 477 3 7 sur
+: 481 4 7 rounds 
+: 487 2 4 us
+- 489
+: 493 1 2 Hear 
+: 495 1 4 the 
+: 497 5 6 cries 
+: 503 4 4 as 
+: 509 3 3 they 
+: 513 12 4 fall
+- 525
+: 529 5 6 Fly 
+: 535 5 6 bur
+: 541 3 6 ning 
+: 545 8 6 steel
+- 553
+: 557 1 6 And 
+: 559 1 6 the 
+: 561 5 6 ty
+: 567 5 4 rant 
+: 573 3 2 will 
+: 577 8 -1 kneel
+- 585
+: 593 5 6 Hearts 
+: 599 5 7 bur
+: 605 3 9 ning 
+: 609 5 9 stron
+: 615 2 6 ger
+- 617
+: 621 1 2 With 
+: 623 1 4 the 
+: 625 5 6 power 
+: 631 5 4 of 
+: 637 3 2 the 
+: 641 12 4 sword
+- 653 664
+- 664
+* 681 4 6 Set 
+* 689 6 4 sail 
+* 697 5 -3 for 
+* 703 1 -3 the 
+* 705 7 2 glo
+* 713 6 4 ry
+- 719
+: 723 9 6 Pray 
+: 733 1 6 for 
+: 735 1 6 the 
+: 737 5 6 mas
+: 743 5 4 ter 
+: 749 3 2 of 
+: 753 16 2 war
+- 769
+: 785 5 -1 Sun
+: 791 5 -1 light 
+: 797 3 -1 will 
+: 801 5 -1 fall 
+: 807 5 1 by 
+: 813 3 2 the 
+: 817 7 1 waste
+: 825 6 -3 lands
+- 831
+: 835 5 -4 End
+: 841 7 -3 less 
+: 849 8 -1 rise 
+: 861 1 -1 for 
+: 863 1 -1 the 
+: 865 5 -1 he
+: 871 5 1 roes 
+: 877 3 2 be
+: 881 20 4 fore
+- 901
+: 905 6 6 Cry 
+: 913 7 9 Thun
+: 921 1 9 der
+: 923 18 11 ~!
+- 941
+: 945 5 9 Sword 
+: 951 4 6 in 
+: 957 3 4 his 
+: 961 12 6 hand
+- 973
+: 977 5 6 Ti
+: 983 5 6 tans 
+: 989 3 6 of 
+: 993 5 7 jus
+: 999 6 7 tice
+- 1005
+: 1009 5 6 Fear
+: 1015 4 4 less 
+: 1021 3 2 we 
+: 1025 5 4 stand
+- 1030
+: 1034 6 6 Cry 
+: 1041 7 9 Thun
+: 1049 1 9 der
+: 1051 18 11 ~!
+- 1069
+: 1073 4 9 Strong 
+: 1079 4 6 in 
+: 1085 3 4 com
+: 1089 12 6 mand
+- 1101
+: 1105 5 4 Blessed 
+: 1111 5 4 by 
+: 1117 3 4 the 
+: 1121 5 6 u
+: 1127 6 4 nion
+- 1133
+: 1137 5 4 Free
+: 1143 4 2 dom 
+: 1149 3 -3 of 
+: 1153 12 -1 man
+- 1165 1408
+- 1408
+: 1425 5 -1 Re
+: 1431 5 -1 cko
+: 1437 3 -1 ning 
+: 1441 8 -1 day 
+: 1453 1 -1 for 
+: 1455 1 1 the 
+: 1457 5 2 de
+: 1463 5 1 mons 
+: 1469 3 -1 we 
+: 1473 8 -1 slay
+- 1481
+: 1485 1 2 With 
+: 1487 1 4 the 
+: 1489 5 6 force 
+: 1495 4 6 of 
+: 1501 3 7 a 
+: 1505 5 8 dra
+: 1511 2 4 gon
+- 1513
+* 1517 1 2 We 
+* 1519 1 4 will 
+* 1521 5 6 con
+* 1527 4 4 quer 
+* 1533 3 3 them 
+* 1537 12 4 all
+- 1549
+: 1553 5 6 Cha
+: 1559 5 6 os 
+: 1565 3 6 still 
+: 1569 8 6 reigns
+- 1577
+: 1581 1 6 De
+: 1583 1 6 vas
+: 1585 5 6 ta
+: 1591 4 4 tion 
+: 1597 3 2 and 
+: 1601 8 -1 flames
+- 1609
+: 1617 5 6 For 
+: 1623 5 7 the 
+: 1629 1 9 ulti
+: 1631 1 9 mate 
+: 1633 5 9 glo
+: 1639 2 6 ry
+- 1641
+: 1645 1 2 When 
+: 1647 1 4 the 
+: 1649 5 6 le
+: 1655 5 4 ga
+: 1661 3 2 cy 
+: 1665 12 4 calls
+- 1677 1688
+- 1688
+: 1705 4 6 March 
+: 1713 6 4 on 
+: 1721 5 -3 through 
+: 1727 1 -3 the 
+: 1729 7 2 hell
+: 1737 6 4 fire
+- 1743
+: 1747 3 6 Bla
+: 1751 5 6 zing 
+: 1757 1 6 from 
+: 1759 1 6 the 
+: 1761 5 6 dark
+: 1767 5 4 ness 
+: 1773 3 2 be
+: 1777 16 2 yond
+- 1793
+: 1809 5 -1 Night
+: 1815 5 -1 mares 
+: 1821 3 -1 re
+: 1825 5 -1 turn 
+: 1831 5 1 of 
+: 1837 3 2 the 
+: 1841 7 1 thou
+: 1849 7 -3 sand 
+: 1858 6 -5 screa
+: 1865 6 -3 ming
+- 1871
+: 1875 6 -1 Rise 
+: 1885 1 -1 for 
+: 1887 1 -1 the 
+: 1889 5 -1 he
+: 1895 5 1 roes 
+: 1901 3 2 once 
+: 1905 20 4 more
+- 1925
+* 1929 7 6 Cry 
+* 1937 7 9 Thun
+* 1945 1 9 der
+* 1947 18 11 ~!
+- 1965
+: 1969 5 9 Sword 
+: 1975 4 6 in 
+: 1981 3 4 his 
+: 1985 12 6 hand
+- 1997
+: 2001 5 6 Ti
+: 2007 5 6 tans 
+: 2013 3 6 of 
+: 2017 5 7 jus
+: 2023 6 7 tice
+- 2029
+: 2033 5 6 Fear
+: 2039 4 4 less 
+: 2045 3 2 we 
+: 2049 5 4 stand
+- 2054
+: 2058 6 6 Cry 
+: 2065 7 9 Thun
+: 2073 1 9 der
+: 2075 18 11 ~!
+- 2093
+: 2097 4 9 Strong 
+: 2103 5 6 in 
+: 2109 3 4 com
+: 2113 12 6 mand
+- 2125
+: 2129 5 4 Blessed 
+: 2135 5 4 by 
+: 2141 3 4 the 
+: 2145 5 6 u
+: 2151 6 4 nion
+- 2157
+: 2161 5 4 Free
+: 2167 4 2 dom 
+: 2173 3 -3 of 
+: 2177 12 -1 man
+- 2189 3532
+- 3532
+: 3549 3 2 Un
+: 3553 7 2 ho
+: 3561 2 2 ly 
+: 3565 7 1 dark
+: 3573 20 1 ness
+- 3593
+: 3597 1 2 In 
+: 3599 1 2 the 
+: 3601 7 1 eyes 
+: 3609 3 2 of 
+: 3613 7 -3 bro
+: 3621 3 -6 ken 
+: 3625 1 -3 dreams
+: 3627 1 -1 ~
+: 3629 28 -3 ~
+- 3657 3660
+- 3660
+: 3677 3 2 Out
+: 3681 5 2 side 
+: 3687 5 2 of 
+: 3693 3 2 the 
+: 3697 5 1 was
+: 3703 5 2 ted 
+: 3709 3 2 and 
+: 3713 12 2 torn
+- 3725
+: 3733 3 6 A 
+: 3737 3 6 land 
+: 3741 3 6 of 
+: 3745 4 6 tears 
+: 3751 3 4 still 
+: 3757 3 2 re
+: 3761 3 2 mains
+: 3765 20 3 ~
+- 3785
+* 3793 5 -1 Sol
+* 3799 5 -1 diers 
+* 3805 3 -1 of 
+* 3809 5 -1 des
+* 3815 5 -1 ti
+* 3821 3 -3 ny 
+* 3825 5 -1 ca
+* 3831 1 -1 lling
+* 3833 16 2 ~
+- 3849
+: 3853 1 2 And 
+: 3855 1 4 the 
+: 3857 5 6 fa
+: 3863 5 6 llen 
+: 3869 3 6 will 
+: 3873 5 6 rise 
+: 3879 4 6 up 
+: 3885 3 4 a
+: 3889 1 4 gain
+: 3891 22 6 ~
+- 3913
+: 3921 5 7 Con
+: 3927 5 7 quer 
+: 3933 3 7 the 
+: 3937 5 7 for
+: 3943 5 9 ces 
+: 3949 2 11 of 
+: 3953 4 9 e
+: 3959 4 6 vil
+- 3963
+: 3967 1 2 And 
+: 3969 4 2 fight 
+: 3975 5 4 to 
+: 3981 2 2 the 
+: 3985 1 7 end
+: 3987 30 9 ~
+- 4017 4056
+- 4056
+: 4073 6 6 Cry 
+: 4081 7 9 Thun
+: 4089 1 9 der
+: 4091 18 11 ~!
+- 4109
+: 4113 5 9 Sword 
+: 4119 4 6 in 
+: 4125 3 4 his 
+: 4129 12 6 hand
+- 4141
+: 4145 5 6 Ti
+: 4151 5 6 tans 
+: 4157 3 6 of 
+: 4161 5 7 jus
+: 4167 6 7 tice
+- 4173
+: 4177 5 6 Fear
+: 4183 5 4 less 
+: 4189 3 2 we 
+: 4193 5 4 stand
+- 4198
+: 4202 5 6 Cry 
+: 4209 7 9 Thun
+: 4217 1 9 der
+: 4219 18 11 ~!
+- 4237
+: 4241 5 9 Strong 
+: 4247 4 6 in 
+: 4253 3 4 com
+: 4257 12 6 mand
+- 4269
+: 4273 5 4 Sa
+: 4279 5 4 viour 
+: 4285 3 4 of 
+: 4289 5 6 na
+: 4295 6 4 tions
+- 4301
+* 4305 5 4 Free
+* 4311 5 4 dom 
+* 4317 2 6 of 
+* 4321 5 9 man
+- 4326
+: 4330 6 6 Cry 
+: 4337 7 9 Thun
+: 4345 1 9 der
+: 4347 18 11 ~!
+- 4365
+: 4369 5 9 Sword 
+: 4375 4 6 in 
+: 4381 3 4 his 
+: 4385 12 6 hand
+- 4397
+: 4401 5 6 Wa
+: 4407 5 6 rriors 
+: 4413 3 6 de
+: 4417 5 7 fen
+: 4423 6 7 ding
+- 4429
+: 4433 5 6 One 
+: 4439 4 4 fi
+: 4445 2 2 nal 
+: 4449 5 4 stand
+- 4454
+: 4458 6 6 Cry 
+: 4465 7 9 Thun
+: 4473 1 9 der
+: 4475 18 11 ~!
+- 4493
+: 4497 5 9 Strong 
+: 4503 4 6 in 
+: 4509 3 4 com
+: 4513 12 6 mand
+- 4525
+: 4529 5 4 Blessed 
+: 4535 5 4 by 
+: 4541 3 4 the 
+: 4545 5 6 u
+: 4551 6 4 nion
+- 4557
+: 4561 5 4 Free
+: 4567 4 2 dom 
+: 4573 3 -3 of 
+: 4577 12 -1 man
+- 4589
+: 4593 5 4 Blessed 
+: 4599 5 4 by 
+: 4605 3 4 the 
+: 4609 5 6 u
+: 4615 5 4 nion 
+: 4621 3 2 of 
+: 4625 40 4 man
+- 4665
+: 4681 7 6 Cry 
+: 4689 7 9 Thun
+: 4697 1 9 der
+: 4699 30 11 ~!
+- 4729
+: 4733 4 11 Yeah
+: 4739 3 15 ~
+: 4743 1 13 ~
+: 4745 3 11 ~
+: 4749 3 9 ~ 
+: 4753 24 11 yea
+E

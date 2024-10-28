@@ -1630,7 +1630,7 @@
     "artistOrigin": "GB",
     "lastUpdate": "2024-05-09T15:17:35.548Z",
     "realBpm": 103,
-    "volume": 0.5,
+    "volume": 0.76,
     "tracks": [
       {
         "start": 14
@@ -2345,7 +2345,6 @@
     "bpm": 216.68,
     "gap": 24535.82887206941,
     "year": "2018",
-    "artistOrigin": "ES",
     "lastUpdate": "2024-10-03T11:16:52.443Z",
     "genre": "Pop",
     "videoGap": 10,
@@ -2374,7 +2373,6 @@
     "bpm": 232,
     "gap": 1170.1724137931033,
     "year": "2021",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-17T00:11:12.420Z",
     "realBpm": 122,
     "volume": 0.88,
@@ -4504,7 +4502,6 @@
     "bpm": 396.12,
     "gap": 21716.449863677673,
     "year": "2008",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.573Z",
     "genre": "Cumbia",
     "realBpm": 98,
@@ -4530,7 +4527,6 @@
     "bpm": 367.85,
     "gap": 6331.562729373386,
     "year": "2009",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-03T11:17:02.706Z",
     "genre": "Cumbia",
     "realBpm": 92,
@@ -4556,7 +4552,6 @@
     "bpm": 260,
     "gap": 29134.23076923077,
     "year": "2009",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.837Z",
     "genre": "Bachata",
     "realBpm": 99,
@@ -4582,7 +4577,6 @@
     "bpm": 403.66,
     "gap": 10781.680374572661,
     "year": "2008",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.835Z",
     "genre": "Cumbia",
     "realBpm": 101,
@@ -5149,7 +5143,6 @@
     "bpm": 232.5,
     "gap": -195.1612903225806,
     "year": "2018",
-    "artistOrigin": "BE",
     "lastUpdate": "2024-10-03T11:17:04.060Z",
     "genre": "Pop",
     "realBpm": 116,
@@ -5308,7 +5301,6 @@
     "bpm": 260,
     "gap": 90319.23076923077,
     "year": "2012",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-17T00:11:23.180Z",
     "realBpm": 125,
     "volume": 0.85,
@@ -7043,7 +7035,6 @@
     "bpm": 358.05,
     "gap": 10839.553833263511,
     "year": "2004",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:22.610Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -7683,9 +7674,11 @@
     "gap": 60918.59220092531,
     "year": "2010",
     "artistOrigin": "US",
-    "edition": "Rock Band Store 2010 Vol. 3",
+    "lastUpdate": "2024-10-19T05:30:36.807Z",
+    "edition": "Halloween",
     "genre": "Metal",
     "realBpm": 129,
+    "volume": 0.74,
     "author": "¡JKA!",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avenged%20Sevenfold&cancion=Nightmare",
@@ -10206,6 +10199,31 @@
     "local": false
   },
   {
+    "id": "bette-midler-the-rose",
+    "title": "The Rose",
+    "artist": "Bette Midler",
+    "video": "jxvPjuREDpE",
+    "language": [
+      "English"
+    ],
+    "bpm": 266.55,
+    "gap": 6327.056837366348,
+    "year": "1979",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T15:28:11.365Z",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bettemidlertherose",
+    "local": false
+  },
+  {
     "id": "beyonce-countdown",
     "title": "Countdown",
     "artist": "Beyoncé",
@@ -10884,6 +10902,31 @@
     "local": false
   },
   {
+    "id": "billie-eilish-bury-a-friend",
+    "title": "Bury A Friend",
+    "artist": "Billie Eilish",
+    "video": "HUHC9tYz8ik",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 22000,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T15:28:12.063Z",
+    "realBpm": 120,
+    "volume": 0.71,
+    "author": "Jiafei",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billieeilishburyafriend",
+    "local": false
+  },
+  {
     "id": "billie-eilish-chihiro",
     "title": "Chihiro",
     "artist": "Billie Eilish",
@@ -11082,6 +11125,32 @@
     ],
     "tracksCount": 1,
     "search": "billieeilishkhalidlovely",
+    "local": false
+  },
+  {
+    "id": "billie-eilish-lunch",
+    "title": "Lunch",
+    "artist": "Billie Eilish",
+    "video": "MB3VkzPdgLA",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 3730,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T15:28:12.067Z",
+    "realBpm": 125,
+    "volume": 0.77,
+    "author": "DoubleDee",
+    "sourceUrl": "https://youtu.be/MB3VkzPdgLA?si=jk9uH4YZhYY1UuW9",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "billieeilishlunch",
     "local": false
   },
   {
@@ -11645,6 +11714,33 @@
     "local": false
   },
   {
+    "id": "bjornzone-still-the-one",
+    "title": "Still The One",
+    "artist": "Björnzone",
+    "video": "HLhPRkbTuJg",
+    "language": [
+      "English"
+    ],
+    "bpm": 373.089996337891,
+    "gap": 157552.88058194844,
+    "year": "2024",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-10-27T15:28:11.363Z",
+    "genre": "Pop",
+    "videoGap": 144,
+    "realBpm": 115,
+    "volume": 1,
+    "author": "Crowbardoctor",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bjornzonestilltheone",
+    "local": false
+  },
+  {
     "id": "black-eyed-peas-shakira-girl-like-me",
     "title": "GIRL LIKE ME",
     "artist": "Black Eyed Peas, Shakira",
@@ -11788,7 +11884,6 @@
     "bpm": 348.09,
     "gap": 1978.8770145651986,
     "year": "2011",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:17:02.419Z",
     "realBpm": 174,
     "previewStart": 60,
@@ -11815,7 +11910,6 @@
     "bpm": 280,
     "gap": 32.14285714285717,
     "year": "2012",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:17:03.919Z",
     "genre": "Metal",
     "realBpm": 140,
@@ -11841,7 +11935,6 @@
     "bpm": 341.25,
     "gap": 29029.01098901099,
     "year": "2011",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:17:02.418Z",
     "genre": "Heavy Metal",
     "realBpm": 195,
@@ -11867,7 +11960,6 @@
     "bpm": 369,
     "gap": 34413.739837398374,
     "year": "2011",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:17:02.289Z",
     "genre": "Metal",
     "realBpm": 95,
@@ -20325,7 +20417,6 @@
     "bpm": 376,
     "gap": 10042.659574468085,
     "year": "2016",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-03T11:17:12.608Z",
     "realBpm": 188,
     "volume": 0.7,
@@ -25854,6 +25945,34 @@
     "local": false
   },
   {
+    "id": "dragonforce-cry-thunder",
+    "title": "Cry Thunder",
+    "artist": "DragonForce",
+    "video": "cU4GXgaCFTI",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 39238.230769230766,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-27T15:28:12.071Z",
+    "genre": "Metal",
+    "realBpm": 130,
+    "volume": 0.95,
+    "author": "Lorc",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=lorc",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Cry+Thunder",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dragonforcecrythunder",
+    "local": false
+  },
+  {
     "id": "dragonforce-through-the-fire-and-flames",
     "title": "Through the fire and flames",
     "artist": "DragonForce",
@@ -27097,6 +27216,35 @@
     "local": false
   },
   {
+    "id": "el-bananero-ricardo",
+    "title": "Ricardo",
+    "artist": "El Bananero",
+    "video": "1txW4W2nibs",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270.29,
+    "gap": 14.024307225572556,
+    "year": "2010",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-10-27T15:28:12.078Z",
+    "genre": "Rock",
+    "realBpm": 125,
+    "previewStart": 13,
+    "previewEnd": 35,
+    "volume": 0.74,
+    "author": "CHELSTE",
+    "tracks": [
+      {
+        "name": "Ricardo",
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elbananeroricardo",
+    "local": false
+  },
+  {
     "id": "el-cuarteto-de-nos-el-hijo-de-hernandez",
     "title": "El hijo de Hernández",
     "artist": "El Cuarteto de Nos",
@@ -28027,6 +28175,35 @@
     ],
     "tracksCount": 1,
     "search": "elviscresposuavemente",
+    "local": false
+  },
+  {
+    "id": "elvis-presley-blue-christmas",
+    "title": "Blue Christmas",
+    "artist": "Elvis Presley",
+    "video": "FS_e7sFfMN0",
+    "language": [
+      "English"
+    ],
+    "bpm": 192.54,
+    "gap": 69.28233094421932,
+    "year": "1957",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T15:28:12.079Z",
+    "edition": "Christmas",
+    "genre": "Blues",
+    "realBpm": 95,
+    "volume": 0.72,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Elvis%20Presley&cancion=Blue%20Christmas",
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elvispresleybluechristmas",
     "local": false
   },
   {
@@ -29426,6 +29603,33 @@
     "local": false
   },
   {
+    "id": "evanescence-call-me-when-youre-sober",
+    "title": "Call Me When You’re Sober",
+    "artist": "Evanescence",
+    "video": "_RrA-R5VHQs",
+    "language": [
+      "English"
+    ],
+    "bpm": 374,
+    "gap": 8.395721925133671,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T15:28:12.080Z",
+    "genre": "Rock",
+    "realBpm": 186,
+    "volume": 0.88,
+    "author": "Spys4Darwin",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=10017",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "evanescencecallmewhenyouresober",
+    "local": false
+  },
+  {
     "id": "ewelina-flinta-zaluje",
     "title": "Zaluje",
     "artist": "Ewelina Flinta",
@@ -29730,14 +29934,14 @@
       "German"
     ],
     "bpm": 177.1,
-    "gap": 50149.62507058159,
+    "gap": 50249.62507058159,
     "year": "1985",
     "artistOrigin": "AT",
     "lastUpdate": "2023-07-12T20:46:41.666Z",
     "edition": "SingStar German",
     "videoGap": 25,
     "realBpm": 176,
-    "volume": 0.65,
+    "volume": 0.73,
     "author": "TeLiXj",
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Falco&cancion=Rock%20Me%20Amadeus",
@@ -31573,11 +31777,13 @@
       "Polish"
     ],
     "bpm": 120.49,
-    "gap": 27087.69462741052,
+    "gap": 27087.066727529254,
     "year": "1984",
     "artistOrigin": "PL",
+    "lastUpdate": "2024-10-02T19:16:24.172Z",
     "genre": "Disco",
     "realBpm": 126,
+    "volume": 0.96,
     "author": "mgr_rybak",
     "tracks": [
       {
@@ -31972,6 +32178,31 @@
     ],
     "tracksCount": 1,
     "search": "frediandfriendspumppump",
+    "local": false
+  },
+  {
+    "id": "fugees-killing-me-softly-with-his-song",
+    "title": "Killing Me Softly (With His Song)",
+    "artist": "Fugees",
+    "video": "oKOtzIo-uYw",
+    "language": [
+      "English"
+    ],
+    "bpm": 276.95,
+    "gap": 7.578985376421656,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-27T15:28:12.082Z",
+    "realBpm": 92,
+    "volume": 0.99,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fugeeskillingmesoftlywithhissong",
     "local": false
   },
   {
@@ -33096,7 +33327,7 @@
       "English"
     ],
     "bpm": 260.9,
-    "gap": 28742.614028363358,
+    "gap": 28792.614028363358,
     "year": "2016",
     "artistOrigin": "SE",
     "lastUpdate": "2024-08-15T00:15:52.183Z",
@@ -35132,7 +35363,6 @@
     "bpm": 240.92,
     "gap": 23070.81869500249,
     "year": "2012",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:11.704Z",
     "genre": "Utaite",
     "realBpm": 120,
@@ -35395,14 +35625,15 @@
       "English"
     ],
     "bpm": 354.38,
-    "gap": 179.74321349963316,
+    "gap": 25.7785428071561,
     "year": "2024",
+    "artistOrigin": "US",
     "lastUpdate": "2024-05-09T04:15:53.942Z",
     "realBpm": 176,
     "volume": 0.98,
     "tracks": [
       {
-        "start": 13
+        "start": 19
       }
     ],
     "tracksCount": 1,
@@ -36405,7 +36636,7 @@
       "English"
     ],
     "bpm": 384.3,
-    "gap": 94785.16783762685,
+    "gap": 94735.16783762685,
     "year": "2011",
     "artistOrigin": "US",
     "lastUpdate": "2024-06-29T00:10:15.342Z",
@@ -39936,7 +40167,7 @@
       "English"
     ],
     "bpm": 378.03,
-    "gap": 16408.01523688596,
+    "gap": 16558.01523688596,
     "year": "2013",
     "artistOrigin": "US",
     "lastUpdate": "2024-01-26T17:05:27.264Z",
@@ -40415,7 +40646,6 @@
     "bpm": 327.9,
     "gap": 8320,
     "year": "1966",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:17:03.933Z",
     "genre": "Classical",
     "realBpm": 159,
@@ -43834,6 +44064,32 @@
     "local": false
   },
   {
+    "id": "keep-shelly-in-athens-oostende",
+    "title": "Oostende",
+    "artist": "Keep Shelly In Athens",
+    "video": "a4TQt1s-Go0",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 52800,
+    "year": "2013",
+    "artistOrigin": "GR",
+    "lastUpdate": "2024-10-27T15:28:11.358Z",
+    "genre": "Chillwave",
+    "realBpm": 119,
+    "volume": 0.74,
+    "author": "Crowbardoctor",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "keepshellyinathensoostende",
+    "local": false
+  },
+  {
     "id": "keha-feat-3oh3-blah-blah-blah",
     "title": "Blah Blah Blah",
     "artist": "Ke$ha feat. 3OH!3",
@@ -44755,7 +45011,6 @@
     "bpm": 351,
     "gap": -139.4102564102564,
     "year": "2023",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-03T11:16:52.571Z",
     "genre": "J-pop",
     "realBpm": 117,
@@ -46923,7 +47178,6 @@
     "bpm": 288.06,
     "gap": 12480.622786919392,
     "year": "2004",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:22.756Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -52412,7 +52666,6 @@
     "bpm": 311.82,
     "gap": 12954.591580168912,
     "year": "1985",
-    "artistOrigin": "FR",
     "lastUpdate": "2024-10-03T11:16:53.215Z",
     "genre": "Pop",
     "realBpm": 79,
@@ -54484,7 +54737,6 @@
     "bpm": 326.42,
     "gap": 76.03253477115379,
     "year": "2006",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:12.856Z",
     "genre": "Anime",
     "realBpm": 98,
@@ -55154,7 +55406,6 @@
     "bpm": 267.12,
     "gap": 6198.218328840971,
     "year": "1979",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.987Z",
     "genre": "Anime",
     "realBpm": 78,
@@ -55182,7 +55433,6 @@
     "bpm": 270.87,
     "gap": 7868.211872854136,
     "year": "1981",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:03.415Z",
     "genre": "Anime",
     "realBpm": 89,
@@ -55210,7 +55460,6 @@
     "bpm": 239.12,
     "gap": 6245.319839411174,
     "year": "1981",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:03.416Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -55238,7 +55487,6 @@
     "bpm": 469.78,
     "gap": 16903.174975520455,
     "year": "1981",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:03.107Z",
     "genre": "Anime",
     "realBpm": 78,
@@ -55266,7 +55514,6 @@
     "bpm": 204.3,
     "gap": 5406.099853157122,
     "year": "1984",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:03.672Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -55294,7 +55541,6 @@
     "bpm": 625.48,
     "gap": 15761.773549913667,
     "year": "1981",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:03.671Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -57690,7 +57936,6 @@
     "bpm": 398.93,
     "gap": 31524.784297997143,
     "year": "2008",
-    "artistOrigin": "CA",
     "lastUpdate": "2024-10-17T00:11:11.844Z",
     "genre": "Indie",
     "realBpm": 92,
@@ -60726,7 +60971,6 @@
     "bpm": 312.29,
     "gap": 86.32216849723022,
     "year": "2009",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:22.908Z",
     "genre": "Anime",
     "realBpm": 98,
@@ -60891,7 +61135,6 @@
     "bpm": 340,
     "gap": 6945.294117647059,
     "year": "1971",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:53.719Z",
     "realBpm": 65,
     "volume": 0.85,
@@ -61560,7 +61803,6 @@
     "bpm": 420.38,
     "gap": 90.9039440506208,
     "year": "2009",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.838Z",
     "genre": "Cumbia",
     "realBpm": 109,
@@ -61586,7 +61828,6 @@
     "bpm": 419.84,
     "gap": 27316.618902439026,
     "year": "2011",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.985Z",
     "genre": "Tropical",
     "realBpm": 105,
@@ -61612,7 +61853,6 @@
     "bpm": 420.5,
     "gap": 18747.189060642093,
     "year": "2010",
-    "artistOrigin": "CL",
     "lastUpdate": "2024-10-03T11:17:02.986Z",
     "realBpm": 105,
     "volume": 0.7,
@@ -64133,7 +64373,6 @@
     "bpm": 312.42,
     "gap": 4770.449330171143,
     "year": "1985",
-    "artistOrigin": "FR",
     "lastUpdate": "2024-10-03T11:16:53.340Z",
     "genre": "Pop",
     "realBpm": 156,
@@ -64772,7 +65011,6 @@
     "bpm": 289.65,
     "gap": 12926.05385810461,
     "year": "1986",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-19T00:11:01.164Z",
     "realBpm": 145,
     "volume": 0.77,
@@ -67500,7 +67738,6 @@
     "bpm": 318,
     "gap": 22529.43396226415,
     "year": "2002",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-19T00:11:01.162Z",
     "genre": "Rock",
     "realBpm": 159,
@@ -67526,7 +67763,6 @@
     "bpm": 340.8,
     "gap": 14848.269794721407,
     "year": "2002",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-19T00:11:00.496Z",
     "genre": "Rock",
     "realBpm": 171,
@@ -67630,7 +67866,6 @@
     "bpm": 240.6,
     "gap": 36682.493765586034,
     "year": "1996",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-17T00:11:11.107Z",
     "genre": "R&B",
     "realBpm": 60.145,
@@ -68011,7 +68246,6 @@
     "bpm": 392.35,
     "gap": -64.08054033388555,
     "year": "2014",
-    "artistOrigin": "AR",
     "lastUpdate": "2024-10-17T00:11:12.280Z",
     "genre": "Cumbia",
     "realBpm": 98,
@@ -69211,7 +69445,6 @@
     "bpm": 400.04,
     "gap": 10595.601239876012,
     "year": "2014",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-03T11:17:12.861Z",
     "genre": "Jpop",
     "realBpm": 200,
@@ -69402,7 +69635,6 @@
     "bpm": 320,
     "gap": 12908.625,
     "year": "2001",
-    "artistOrigin": "MX",
     "lastUpdate": "2024-10-03T11:17:03.798Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -69428,7 +69660,6 @@
     "bpm": 157.2,
     "gap": 15655.801526717558,
     "year": "1985",
-    "artistOrigin": "MX",
     "lastUpdate": "2024-10-03T11:17:03.417Z",
     "genre": "Anime",
     "realBpm": 100,
@@ -69454,7 +69685,6 @@
     "bpm": 215.88,
     "gap": 2706.237354085603,
     "year": "2010",
-    "artistOrigin": "MX",
     "lastUpdate": "2024-10-03T11:17:03.551Z",
     "genre": "Anime",
     "realBpm": 99,
@@ -72338,7 +72568,6 @@
     "bpm": 250,
     "gap": 270,
     "year": "2019",
-    "artistOrigin": "DE",
     "lastUpdate": "2024-10-17T00:11:11.259Z",
     "genre": "Pop",
     "realBpm": 97,
@@ -74676,7 +74905,6 @@
     "bpm": 496,
     "gap": 1362.016129032258,
     "year": "2024",
-    "artistOrigin": "DE",
     "lastUpdate": "2024-10-03T11:17:12.485Z",
     "realBpm": 124,
     "volume": 0.73,
@@ -75711,7 +75939,6 @@
     "bpm": 323,
     "gap": 11958.328173374613,
     "year": "1996",
-    "artistOrigin": "GB",
     "lastUpdate": "2024-10-03T11:16:53.464Z",
     "realBpm": 81,
     "volume": 0.75,
@@ -78865,7 +79092,6 @@
     "bpm": 393.1,
     "gap": 5227.886034088018,
     "year": "2002",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:53.083Z",
     "realBpm": 95,
     "volume": 0.78,
@@ -78890,7 +79116,6 @@
     "bpm": 320,
     "gap": 7255.625,
     "year": "1999",
-    "artistOrigin": "CA",
     "lastUpdate": "2024-10-17T00:11:12.570Z",
     "genre": "Pop-Rock",
     "realBpm": 129,
@@ -82255,7 +82480,6 @@
     "bpm": 349.2,
     "gap": 4858.620689655172,
     "year": "1941",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:52.949Z",
     "genre": "Blues",
     "realBpm": 87,
@@ -83003,7 +83227,6 @@
     "bpm": 238,
     "gap": 22341.59663865546,
     "year": "2021",
-    "artistOrigin": "BE",
     "lastUpdate": "2024-10-09T00:16:04.817Z",
     "realBpm": 120,
     "volume": 0.99,
@@ -86440,7 +86663,6 @@
     "bpm": 336.72,
     "gap": 7009.957234497506,
     "year": "2003",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:52.161Z",
     "realBpm": 166,
     "volume": 0.72,
@@ -86465,7 +86687,6 @@
     "bpm": 244,
     "gap": 15986.393442622952,
     "year": "2012",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:52.018Z",
     "realBpm": 119,
     "volume": 0.72,
@@ -86490,7 +86711,6 @@
     "bpm": 250,
     "gap": 10720,
     "year": "2001",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:52.159Z",
     "realBpm": 79,
     "volume": 0.62,
@@ -86515,7 +86735,6 @@
     "bpm": 291,
     "gap": 3180.618556701031,
     "year": "2009",
-    "artistOrigin": "US",
     "lastUpdate": "2024-10-03T11:16:52.167Z",
     "realBpm": 97,
     "volume": 0.61,
@@ -87521,7 +87740,6 @@
     "bpm": 354.18,
     "gap": -76.43232254785698,
     "year": "2015",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:12.711Z",
     "realBpm": 144,
     "volume": 1,
@@ -88376,7 +88594,6 @@
     "bpm": 204,
     "gap": 14337.588235294117,
     "year": "2018",
-    "artistOrigin": "JP",
     "lastUpdate": "2024-10-17T00:11:22.467Z",
     "genre": "J-Rock",
     "realBpm": 99,

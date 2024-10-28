@@ -8,7 +8,6 @@
 #GAP:10042,659574468085
 #ALLKARAOKE_ID:customiz-coolest
 #ALLKARAOKE_LASTUPDATE:2024-10-03T11:17:12.608Z
-#ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
 #ALLKARAOKE_REALBPM:188
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=CustomiZ&cancion=COOLEST%20(TV)
