@@ -8,7 +8,16 @@ import { isHalloweenSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { selectHalloweenSong } from 'modules/SoundManager';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
-import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import {
+  ComponentProps,
+  PropsWithChildren,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import {
   ExpandedData,
@@ -125,6 +134,18 @@ export default function SongPreviewComponent({
     player.current?.setSize(videoWidth, videoHeight);
   }, [videoWidth, videoHeight, keyboardControl]);
 
+  const onVideoStateChange = useCallback(
+    (state: VideoState) => {
+      if (state === VideoState.ENDED) {
+        player.current?.seekTo(start);
+        player.current?.playVideo();
+      } else if (state === VideoState.PLAYING) {
+        setShowVideo(true);
+      }
+    },
+    [start],
+  );
+
   return (
     <>
       {expanded && <Backdrop onClick={onExitKeyboardControl} />}
@@ -144,14 +165,7 @@ export default function SongPreviewComponent({
               ref={player}
               video={''}
               volume={volume}
-              onStateChange={(state) => {
-                if (state === VideoState.ENDED) {
-                  player.current?.seekTo(start);
-                  player.current?.playVideo();
-                } else if (state === VideoState.PLAYING) {
-                  setShowVideo(true);
-                }
-              }}
+              onStateChange={onVideoStateChange}
             />
           </Video>
         }

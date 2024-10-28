@@ -9,12 +9,13 @@ import {
   useState,
 } from 'react';
 
+import sleep from 'modules/utils/sleep';
 import Youtube, { VideoPlayerRef, VideoState } from './Youtube';
 
 type Props = ComponentProps<typeof Youtube>;
 
 export default forwardRef(function DirectVideoPlayer(
-  { video, autoplay, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
+  { video, autoplay = true, startAt, controls, disablekb, volume, width, height, onStateChange }: Props,
   ref: ForwardedRef<VideoPlayerRef>,
 ) {
   const player = useRef<HTMLVideoElement | null>(null);
@@ -47,6 +48,7 @@ export default forwardRef(function DirectVideoPlayer(
     onStateChange?.(status);
   }, [status, onStateChange]);
 
+  const loadVideoTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const playerApi = useMemo<VideoPlayerRef>(
     () => ({
       setSize: (w, h) => setSize({ w, h }),
@@ -64,10 +66,20 @@ export default forwardRef(function DirectVideoPlayer(
       getCurrentTime: () => {
         return Promise.resolve(player.current?.currentTime ?? 0);
       },
-      loadVideoById: () => undefined,
-      playVideo: () => player.current?.play(),
+      playVideo: async () => {
+        await sleep(200); // simulate similar delay as with youtube videos
+        return player.current?.play();
+      },
       pauseVideo: () => player.current?.pause(),
       getDuration: () => Promise.resolve(player.current?.duration ?? 0),
+      loadVideoById: () => {
+        clearTimeout(loadVideoTimeout.current!);
+        player.current?.pause();
+        setStatus(VideoState.UNSTARTED);
+        loadVideoTimeout.current = setTimeout(() => {
+          player.current?.play();
+        }, 300); // simulate similar delay as with youtube videos
+      },
     }),
     [player],
   );
@@ -83,7 +95,7 @@ export default forwardRef(function DirectVideoPlayer(
   useImperativeHandle(ref, () => playerApi);
 
   return (
-    <video style={{ width: size.w, height: size.h }} autoPlay={autoplay ?? true} controls={controls} ref={player}>
+    <video style={{ width: size.w, height: size.h }} autoPlay={autoplay} controls={controls} ref={player}>
       <source src={video} />
     </video>
   );
