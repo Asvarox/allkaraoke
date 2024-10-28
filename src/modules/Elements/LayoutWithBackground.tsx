@@ -5,7 +5,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import eurovisionBg from './eurovisionbg.svg';
 
-export type backgroundTheme = 'regular' | 'christmas' | 'eurovision';
+export type backgroundTheme = 'regular' | 'christmas' | 'eurovision' | 'halloween';
 
 export const BackgroundContext = createContext({
   visible: true,
@@ -85,6 +85,9 @@ const christmasCss = css`
 const eurovisionCss = css`
   display: flex;
 `;
+const halloweenCss = css`
+  background: black;
+`;
 
 const regularCss = css`
   background-image: linear-gradient(
@@ -132,6 +135,9 @@ const Background = styled(BackgroundStatic)`
   }
   &[data-theme='regular'] {
     ${regularCss};
+  }
+  &[data-theme='halloween'] {
+    ${halloweenCss};
   }
 
   background-position: 100% 50%; // for low graphic level

@@ -4,6 +4,10 @@ import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackg
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
+import { isHalloweenSong } from 'modules/Songs/utils/specialSongsThemeChecks';
+import { selectHalloweenSong } from 'modules/SoundManager';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ComponentProps, PropsWithChildren, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import {
@@ -51,6 +55,25 @@ const useSpecialSongTheme = (
       setBackgroundTheme('regular');
     }
   }, [theme, backgroundTheme, songPreview]);
+
+  return isSpecialThemeSong;
+};
+
+export const useHalloweenTheme = (songPreview: SongPreview) => {
+  const isHalloweenEnabled = useFeatureFlag(FeatureFlags.Halloween);
+  const halloweenSong = useSpecialSongTheme(
+    songPreview,
+    isHalloweenEnabled ? 'halloween' : 'regular',
+    isHalloweenEnabled ? isHalloweenSong : () => false,
+  );
+
+  useEffect(() => {
+    if (halloweenSong) {
+      selectHalloweenSong.play(false);
+    } else {
+      selectHalloweenSong.stop();
+    }
+  }, [halloweenSong]);
 };
 
 export default function SongPreviewComponent({
@@ -68,12 +91,7 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  // const isEurovisionEnabled = useFeatureFlag(FeatureFlags.Eurovision);
-  // useSpecialSongTheme(
-  //   songPreview,
-  //   isEurovisionEnabled ? 'eurovision' : 'regular',
-  //   isEurovisionEnabled ? isEurovisionSong : () => false,
-  // );
+  useHalloweenTheme(songPreview);
 
   const expanded = keyboardControl;
 

@@ -1,5 +1,6 @@
 name: Upload E2E test results
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["CI/CD"]
     types:
@@ -10,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup Node
-        uses: './.github/templates/setup-node'
       - name: Download blob reports from GitHub Actions Artifacts
         id: download_artifact
         uses: actions/download-artifact@v4
@@ -31,12 +29,19 @@ jobs:
           else
             echo "reports=true" >> $GITHUB_OUTPUT
           fi
-      - name: Test
-        run: |
-          echo "reports=${{ steps.reports_check.outputs.reports }}"
+
       - name: Merge into HTML Report
         if: steps.reports_check.outputs.reports == 'true'
         run: npx playwright merge-reports --reporter html ./all-blob-reports
+      - uses: actions/upload-artifact@v4
+        if: steps.reports_check.outputs.reports == 'true'
+        with:
+          name: test-results-html-report
+          path: ./playwright-report
+
+      - name: Remove files larger than 25MB (limit of Cloudflare Pages)
+        if: steps.reports_check.outputs.reports == 'true'
+        run: find ./playwright-report -type f -size +25M -delete
       - name: Upload merged report
         if: steps.reports_check.outputs.reports == 'true'
         id: deploy-report

@@ -1,0 +1,135 @@
+#ARTIST:El Bananero
+#TITLE:Ricardo
+#CREATOR:CHELSTE
+#BPM:270,29
+#YEAR:2010
+#PREVIEWSTART:13
+#VIDEO:v=1txW4W2nibs
+#GENRE:Rock
+#LANGUAGE:Spanish
+#GAP:14,024307225572556
+#ALLKARAOKE_ID:el-bananero-ricardo
+#ALLKARAOKE_LASTUPDATE:2024-10-27T15:28:12.078Z
+#ALLKARAOKE_ARTISTORIGIN:AR
+#ALLKARAOKE_REALBPM:125
+#ALLKARAOKE_PREVIEWEND:35
+#ALLKARAOKE_VOLUME:0,74
+#P1:Ricardo
+#END:50016
+#MP3:El Bananero - Ricardo.mp3
+#COVER:El Bananero - Ricardo.jpg
+: 6 2 4 A
+: 10 6 12 C
+: 17 5 11 M 1 
+: 23 3 9 Pe
+: 28 4 9 tar
+: 33 16 4 do
+- 49 51
+- 51
+: 69 5 4 Mi 
+: 75 8 12 nom
+: 84 7 11 bre es 
+: 92 3 9 Ri
+: 96 5 9 car
+: 102 12 5 do
+- 114 119
+- 119
+: 137 2 11 Ten
+: 140 3 12 ~
+: 144 4 12 go 
+: 149 1 11 la
+: 151 3 12 ~ 
+: 155 6 11 gar
+: 162 3 11 cha 
+: 167 5 12 cor
+: 174 22 7 ta
+- 196
+: 204 3 7 Y 
+: 209 4 6 ten
+: 214 3 6 go 
+: 218 4 12 los 
+: 224 5 11 hue
+: 230 3 9 vos 
+* 235 32 12 lar
+: 269 8 11 gos
+- 277
+: 280 4 11 Ha
+: 287 5 12 ce
+: 294 5 11 me un 
+: 300 3 9 pe
+: 304 5 9 tar
+: 310 25 4 do
+- 335
+: 348 3 9 Mi 
+: 352 8 12 nom
+: 361 6 11 bre es 
+: 369 4 9 Ri
+: 374 3 9 car
+: 379 25 5 do
+- 404
+: 413 6 11 No in
+* 421 3 12 ten
+* 425 5 12 tes 
+: 432 4 11 mas
+: 438 3 9 ti
+: 443 4 12 car
+: 449 20 7 lo
+- 469
+: 480 4 7 A 
+: 486 3 6 mi 
+: 491 2 6 mu
+: 494 5 12 ñe
+: 501 4 11 co 
+: 507 2 9 Ga
+: 512 33 12 llar
+: 547 10 11 do
+- 557
+: 560 3 11 Te 
+: 565 3 12 vas 
+: 571 2 11 a
+: 576 4 9 pren
+: 582 10 9 der
+- 592
+: 604 6 12 En 
+: 611 2 9 la 
+: 616 4 9 cho
+: 623 2 4 ta
+- 625
+: 628 2 4 Ha
+: 632 6 12 ce
+: 639 5 11 me 
+: 645 3 9 un 
+F 650 16 9 brdbrdbrd 
+: 667 4 9 en 
+: 673 4 9 las 
+: 680 4 12 pe
+: 685 3 14 lo
+: 690 4 9 tas
+- 694
+: 697 3 9 Mien
+: 703 3 12 tras 
+: 709 4 11 to
+: 715 4 9 mo un 
+* 720 16 9 va
+: 742 6 11 so 
+: 749 4 9 de 
+: 755 4 9 co
+: 761 9 5 ca
+- 770
+: 773 3 12 Vos 
+: 777 6 11 te 
+: 784 4 9 to
+: 789 14 12 mas
+- 803
+: 806 6 9 La ul
+: 813 4 11 ti
+: 818 4 12 ma 
+: 823 4 14 go
+: 829 15 14 ta
+- 844
+: 847 5 12 De 
+: 855 2 11 ri
+: 859 3 12 co
+: 863 2 11 ~
+: 867 29 9 ta
+E
