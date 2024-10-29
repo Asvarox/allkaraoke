@@ -1,0 +1,1019 @@
+#ARTIST:BTS - J-Hope feat. Becky G
+#TITLE:Chicken Noodle Soup
+#CREATOR:Subkei
+#BPM:194
+#YEAR:2019
+#VIDEO:v=i23NEQEFpgQ
+#GENRE:K-Pop
+#LANGUAGE:English
+#GAP:6282,845360824742
+#EDITION:Pop
+#ALLKARAOKE_ID:bts-j-hope-feat-becky-g-chicken-noodle-soup
+#ALLKARAOKE_LASTUPDATE:2024-10-29T00:11:24.377Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL: Anthony Thomas Glover / Bianca Dupree / Desmond Ryan / Dong Hyuck Shin / Ho-Seok Jeong / Hyo Won Kang / Jamal Christopher Reynolds / Joo Hyun Hahn / Juan Manuel Frias / Rebbeca Marie Gomez / Soo Hyun Park
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=i23NEQEFpgQ
+#ALLKARAOKE_VOLUME:0,71
+#P1:BTS J-Hope (feat. Becky G) - Chicken Noodle Soup
+#MP3:J-Hope feat. Becky G - Chicken Noodle Soup.mp3
+#COVER:J-Hope feat. Becky G - Chicken Noodle Soup.jpg
+#MEDLEYSTARTBEAT:1030
+#MEDLEYENDBEAT:1283
+: 13 1 -5 I 
+: 15 1 -4 let 
+: 17 1 0 it 
+: 19 5 -5 rain, 
+: 28 2 -5 I 
+: 31 1 -5 clear 
+: 33 1 -5 it 
+: 35 3 -5 out
+- 38
+: 45 1 -5 I 
+: 47 1 -4 let 
+: 49 1 0 it 
+: 51 5 -5 rain, 
+: 61 2 -5 I 
+: 64 1 -5 clear 
+: 66 1 -5 it 
+: 68 3 -5 out
+- 71
+: 77 1 -5 I 
+: 79 1 -4 let 
+: 81 1 0 it 
+: 83 5 -5 rain, 
+: 92 2 -5 I 
+: 95 1 -5 clear 
+: 97 1 -5 it 
+: 99 3 -5 out
+- 102
+: 109 1 -5 I 
+: 111 1 -4 let 
+: 113 1 0 it 
+: 115 5 -5 rain, 
+: 124 2 -5 I 
+: 127 1 -5 clear 
+: 129 1 -5 it 
+: 131 3 -5 out
+- 134
+: 147 1 -1 Chick
+: 149 1 -2 en 
+: 151 1 -2 noo
+: 153 1 1 dle 
+: 155 2 -5 soup
+- 157
+: 163 1 -1 Chick
+: 165 1 -2 en 
+: 167 1 -2 noo
+: 169 1 1 dle 
+: 171 2 -5 soup
+- 173
+: 179 1 -1 Chick
+: 181 1 -2 en 
+: 183 1 -2 noo
+: 185 1 1 dle 
+: 187 2 -5 soup 
+F 191 1 -1 with 
+F 193 1 -2 a 
+F 195 1 -2 so
+F 197 1 -3 da 
+F 199 1 -3 on 
+F 201 1 -5 the 
+F 203 3 -2 side
+- 206
+: 211 1 -1 Chick
+: 213 1 -2 en 
+: 215 1 -2 noo
+: 217 1 1 dle 
+: 219 2 -5 soup
+- 221
+: 227 1 -1 Chick
+: 229 1 -2 en 
+: 231 1 -2 noo
+: 233 1 1 dle 
+: 235 2 -5 soup
+- 237
+: 243 1 -1 Chick
+: 245 1 -2 en 
+: 247 1 -2 noo
+: 249 1 1 dle 
+: 251 2 -5 soup 
+F 255 1 -1 with 
+F 257 1 -2 a 
+F 259 1 -2 so
+F 261 1 -3 da 
+F 263 1 -3 on 
+F 265 1 -5 the 
+F 267 1 -2 side
+- 268
+: 271 2 -5 From 
+: 275 2 -1 gwang
+: 279 1 -2 ju 
+: 281 1 -1 han 
+: 283 1 -1 geo
+: 285 1 -2 si
+: 287 1 -1 gi
+: 289 1 -3 ui 
+: 291 1 -5 gang, 
+F 295 2 -8 ayy
+- 297
+: 303 1 -5 Geum
+: 305 1 -5 nam 
+: 307 1 -3 chung
+: 309 1 -1 jang 
+: 311 2 -1 street 
+: 315 1 -1 geo
+: 317 1 -3 gin 
+: 319 1 -1 nae 
+: 321 1 -3 hal
+: 323 2 -5 lem
+- 325
+: 335 1 -5 Nyu
+: 337 1 -3 reon 
+: 339 1 -1 ip
+: 343 2 0 ttan 
+: 347 2 0 bounce 
+: 351 1 0 with 
+: 353 1 -3 my 
+: 355 2 -5 team, 
+F 359 1 -5 ayy
+- 360
+: 367 1 -5 Chu
+: 369 1 -5 me 
+: 371 2 0 ppeok 
+: 375 2 0 ga 
+: 379 1 0 wo
+: 381 1 -1 keo
+: 383 1 0 hol
+: 385 1 -3 lik 
+: 387 2 -5 maeil, 
+F 391 1 -5 ayy
+- 392
+F 397 1 -5 Sip
+F 399 1 0 ttae
+F 401 1 -3 e 
+F 403 2 -5 bam 
+F 407 1 -7 saeu
+F 409 1 -9 myeo 
+F 411 2 -10 seong
+F 415 1 -10 jang
+F 417 1 -12 han 
+F 419 2 -12 case, 
+F 423 1 -12 ayy
+- 424
+F 429 1 -5 Nae 
+F 431 1 0 ki
+F 433 1 -3 neun 
+F 435 2 -5 chu
+F 439 1 -7 meu
+F 441 1 -9 ro 
+F 443 1 -9 mae
+F 445 1 -10 gyeo 
+F 447 1 -9 I'm 
+F 449 1 -10 o
+F 451 2 -9 kay, 
+F 455 1 -10 ayy
+- 456
+F 463 2 -5 Keun 
+F 467 2 0 bi
+F 471 2 0 jeon 
+F 475 1 0 geu
+F 477 1 -2 ryeona
+F 479 1 0 ga
+F 481 1 -2 neun 
+F 483 1 -5 plan
+- 484
+F 487 1 0 Kku
+F 489 1 -2 meul 
+F 491 1 0 kkeu
+F 493 1 -2 ryeo
+F 495 1 0 ga
+F 497 1 -2 neun 
+F 499 2 -5 ae, 
+F 503 1 0 ri
+F 505 1 -2 deum 
+F 507 1 0 ji
+F 509 1 -2 reu
+F 511 1 0 bam
+F 513 1 -2 neun 
+F 515 2 -5 seutep, 
+F 519 1 -2 ayy 
+F 527 2 -2 what?
+- 529 534
+- 534
+F 547 2 -1 Pop
+F 550 2 -3 ping, 
+F 553 2 -1 rock
+F 556 2 -3 ing, 
+F 559 2 -1 hop
+F 562 2 -3 ping, 
+F 565 2 -1 tut
+F 568 2 -3 ting, 
+F 571 2 -1 dou
+F 574 2 -3 gie, 
+F 577 2 -1 flex
+F 580 2 -3 ing, 
+F 583 2 -1 swag
+F 586 2 -3 gin', 
+F 589 1 0 woah
+- 590 595
+- 595
+F 608 1 -3 A
+F 610 1 -3 jik 
+F 612 1 0 mae
+F 614 2 -3 il 
+F 617 2 0 ga
+F 620 2 -3 chi 
+F 623 2 0 han
+F 626 2 -3 si
+F 629 2 0 ba
+F 632 2 -3 ppi 
+F 635 2 0 ha
+F 638 2 -3 ji 
+F 641 2 0 nal 
+F 644 2 -3 wi
+F 647 2 0 han 
+F 650 2 -3 il, 
+F 653 2 0 woah
+- 655
+F 661 1 -2 Neul 
+F 663 1 -3 na
+F 665 1 -3 reul 
+F 667 1 0 chae
+F 669 1 -2 jji
+F 671 1 -3 kae 
+F 673 1 -3 dang
+F 675 1 -3 geu
+F 677 1 -3 neun 
+F 679 1 0 teuro
+F 681 1 -3 pi
+F 683 1 -3 e
+- 684
+F 685 1 -3 In
+F 687 1 -3 saeng
+F 689 1 -3 e 
+F 691 1 0 be
+F 693 1 -2 ting
+F 695 2 -3 hae, 
+F 699 1 0 chu
+F 701 1 -1 meun 
+F 703 1 0 na
+F 705 1 -2 ui 
+F 708 3 -3 cash
+- 711
+F 723 2 0 Hope 
+F 727 1 0 on 
+F 729 1 -2 the 
+F 731 1 0 street 
+F 733 1 -2 i
+F 735 1 -2 je 
+F 737 1 -2 na
+F 739 1 0 ma
+F 741 1 -2 nui 
+F 743 1 -3 gil
+- 744
+F 747 2 -2 With 
+F 751 1 -3 Beck
+F 753 1 -3 y 
+F 755 2 0 G 
+F 759 1 -2 on 
+F 761 1 -2 the 
+F 763 1 -3 side
+- 764
+F 767 1 -7 Eve
+F 769 1 -8 ry
+F 771 1 -8 day 
+F 773 1 -9 I'm 
+F 775 2 -11 lit, 
+F 783 1 0 get 
+F 785 1 0 it!
+- 786
+: 787 1 2 We
+: 789 3 4 ~ 
+: 793 3 6 al
+: 799 3 7 ways 
+: 805 1 9 got
+: 807 2 11 ~ 
+: 811 4 9 love
+- 815
+: 819 1 2 For
+: 821 2 4 ~ 
+: 825 3 6 where 
+: 831 3 7 we 
+: 837 1 7 come
+: 839 2 9 ~ 
+: 843 1 4 from
+- 844
+: 847 2 2 So 
+: 851 1 2 let
+: 853 3 4 ~ 
+: 857 4 6 'em 
+: 863 3 7 know 
+* 868 1 9 what's
+* 870 1 11 ~
+* 872 1 9 ~ 
+* 875 11 9 up
+* 887 2 11 ~
+- 889
+: 895 1 9 Ooh
+: 897 1 11 ~
+: 899 1 7 ~
+: 901 3 9 ~
+- 904
+: 915 1 14 No 
+: 917 2 14 mat
+: 921 2 9 ter 
+: 925 1 11 wher
+: 927 2 7 ev
+: 931 1 7 er
+: 933 1 9 ~ 
+: 935 2 4 we 
+: 939 3 4 go
+: 943 1 2 ~
+- 944
+: 947 1 14 Bring 
+: 949 2 14 it 
+: 953 2 9 back 
+: 957 1 11 to 
+: 959 2 7 this 
+: 963 2 9 place 
+: 967 2 4 called 
+: 971 2 4 home, 
+: 975 5 7 babe
+- 980
+: 987 1 7 Now 
+: 989 1 9 that 
+: 991 2 11 you 
+: 994 1 9 know
+: 996 1 11 ~ 
+: 998 3 9 it
+- 1001
+: 1011 1 2 Let
+: 1013 1 4 ~ 
+: 1015 2 7 me 
+: 1019 1 7 see
+: 1021 2 9 ~ 
+: 1024 1 9 you
+: 1026 1 11 ~, 
+F 1029 1 7 ooh, 
+F 1031 1 7 ooh, 
+F 1035 2 7 what, 
+F 1039 1 7 what?
+- 1040
+: 1043 1 -1 Chick
+: 1045 1 -2 en 
+: 1047 1 -2 noo
+: 1049 1 1 dle 
+: 1051 2 -5 soup
+- 1053
+: 1059 1 -1 Chick
+: 1061 1 -2 en 
+: 1063 1 -2 noo
+: 1065 1 1 dle 
+: 1067 2 -5 soup
+- 1069
+: 1075 1 -1 Chick
+: 1077 1 -2 en 
+: 1079 1 -2 noo
+: 1081 1 1 dle 
+: 1083 2 -5 soup 
+F 1087 1 -1 with 
+F 1089 1 -2 a 
+F 1091 1 -2 so
+F 1093 1 -3 da 
+F 1095 1 -3 on 
+F 1097 1 -5 the 
+F 1099 3 -1 side
+F 1103 1 1 ~
+- 1104
+: 1107 1 -1 Chick
+: 1109 1 -2 en 
+: 1111 1 -2 noo
+: 1113 1 1 dle 
+: 1115 2 -5 soup
+- 1117
+: 1123 1 -1 Chick
+: 1125 1 -2 en 
+: 1127 1 -2 noo
+: 1129 1 1 dle 
+: 1131 2 -5 soup
+- 1133
+: 1139 1 -1 Chick
+: 1141 1 -2 en 
+: 1143 1 -2 noo
+: 1145 1 1 dle 
+: 1147 2 -5 soup 
+F 1151 1 -1 with 
+F 1153 1 -2 a 
+F 1155 1 -2 so
+F 1157 1 -3 da 
+F 1159 1 -3 on 
+F 1161 1 -5 the 
+F 1163 3 -1 side
+F 1167 1 1 ~
+- 1168
+* 1171 1 -1 Chick
+* 1173 1 -2 en 
+* 1175 1 -2 noo
+* 1177 1 1 dle 
+* 1179 2 -5 soup
+- 1181
+: 1187 1 -1 Chick
+: 1189 1 -2 en 
+: 1191 1 -2 noo
+: 1193 1 1 dle 
+: 1195 2 -5 soup
+- 1197
+: 1203 1 -1 Chick
+: 1205 1 -2 en 
+: 1207 1 -2 noo
+: 1209 1 1 dle 
+: 1211 2 -5 soup 
+F 1215 1 -1 with 
+F 1217 1 -2 a 
+F 1219 1 -2 so
+F 1221 1 -3 da 
+F 1223 1 -3 on 
+F 1225 1 -5 the 
+F 1227 3 -1 side
+F 1231 1 1 ~
+- 1232
+: 1235 1 -1 Chick
+: 1237 1 -2 en 
+: 1239 1 -2 noo
+: 1241 1 1 dle 
+: 1243 2 -5 soup
+- 1245
+: 1251 1 -1 Chick
+: 1253 1 -2 en 
+: 1255 1 -2 noo
+: 1257 1 1 dle 
+: 1259 2 -5 soup
+- 1261
+: 1267 1 -1 Chick
+: 1269 1 -2 en 
+: 1271 1 -2 noo
+: 1273 1 1 dle 
+: 1275 2 -5 soup 
+F 1279 1 -1 with 
+F 1281 1 -2 a 
+F 1283 1 -2 so
+F 1285 1 -3 da 
+F 1287 1 -3 on 
+F 1289 1 -5 the 
+F 1291 3 -1 side
+F 1295 1 1 ~
+- 1296
+F 1299 1 0 Chick
+F 1301 1 0 en 
+F 1303 1 0 noo
+F 1305 2 -1 dle, 
+F 1309 2 0 o 
+F 1313 1 -1 po
+F 1315 1 -1 llo 
+F 1317 1 -2 con 
+F 1319 1 -2 es
+F 1321 1 -2 pa
+F 1323 1 0 gue
+F 1325 1 -5 ti
+- 1326
+: 1329 1 -1 Nin
+: 1331 1 0 gu
+: 1333 1 -1 na 'e es
+: 1335 1 -1 tas 
+: 1337 1 0 mu
+: 1339 1 0 je
+: 1341 1 -1 res 
+: 1343 1 -1 tie
+: 1345 1 -1 ne el 
+: 1347 1 -1 flow 
+: 1349 1 -1 que 
+: 1351 1 -1 tie
+: 1353 1 -1 ne 
+: 1355 1 0 Beck
+: 1358 3 -5 y
+- 1361
+* 1369 1 0 La
+* 1371 1 0 ti
+* 1373 1 5 noa
+* 1375 1 0 me
+* 1377 1 0 ri
+* 1379 1 0 ca
+* 1381 1 0 na, 
+: 1383 1 0 soy 
+: 1385 1 2 de 
+: 1387 1 2 a
+: 1390 3 -5 quí
+: 1394 2 0 ~
+- 1396
+: 1403 1 0 Ca
+: 1405 1 5 ri
+: 1407 1 2 ta 
+: 1409 1 0 de 
+: 1411 1 0 san
+: 1413 1 0 ta, 
+: 1415 1 -1 pe
+: 1417 1 -1 ro 
+: 1419 1 0 freak
+: 1422 3 -5 y
+: 1426 1 0 ~
+- 1427
+: 1435 2 7 ¿Quién 
+: 1439 1 4 me 
+: 1441 2 2 va a 
+: 1445 1 0 de
+: 1448 6 -1 cir
+- 1454
+: 1467 2 -5 si 
+: 1470 1 2 ya 
+: 1473 2 -3 to' 
+: 1477 1 0 lo 
+: 1479 3 4 vi? 
+F 1487 3 0 huh
+- 1490
+: 1499 2 7 Don
+: 1503 1 4 de 
+: 1505 1 2 yo 
+: 1508 1 0 na
+: 1511 3 -1 cí 
+: 1517 1 2 no 
+: 1519 1 -1 pen
+: 1521 1 2 sa
+: 1523 1 -1 ban 
+: 1525 1 2 que u
+: 1527 1 -1 na 
+: 1529 1 2 mu
+: 1531 1 -1 jer 
+: 1533 1 2 i
+: 1535 1 -1 ba a 
+: 1537 1 2 so
+: 1539 1 -1 bre
+: 1541 1 -1 sa
+: 1543 5 4 lir
+- 1548 1572
+- 1572
+: 1585 1 2 What 
+: 1587 1 2 you 
+: 1589 1 2 gon
+: 1591 1 5 na 
+: 1594 2 -3 do, 
+: 1597 1 2 what 
+: 1599 1 2 you 
+: 1601 1 2 gon
+: 1603 1 5 na 
+: 1606 2 -3 do? 
+F 1609 2 0 what, 
+F 1613 1 0 what?
+- 1614
+: 1617 1 2 What 
+: 1619 1 2 you 
+: 1621 1 2 gon
+: 1623 1 5 na 
+: 1626 2 -3 do, 
+: 1629 1 2 what 
+: 1631 1 2 you 
+: 1633 1 2 gon
+: 1635 1 5 na 
+: 1638 2 -3 do? 
+F 1641 2 0 what, 
+F 1645 1 0 what?
+- 1646
+: 1649 1 2 What 
+: 1651 1 2 you 
+: 1653 1 2 gon
+: 1655 1 5 na 
+: 1658 2 -3 do, 
+: 1661 1 2 what 
+: 1663 1 2 you 
+: 1665 1 2 gon
+: 1667 1 5 na 
+: 1670 2 -3 do? 
+F 1673 2 0 what, 
+F 1677 1 0 what?
+- 1678
+: 1681 1 2 What 
+: 1683 1 2 you 
+: 1685 1 2 gon
+: 1687 1 4 na 
+: 1690 2 -3 do, 
+: 1693 1 4 what 
+: 1695 1 2 you 
+: 1697 1 4 gon
+: 1699 1 2 na 
+: 1702 1 -3 do
+- 1703
+F 1705 2 0 Look 
+F 1709 2 0 back 
+F 1713 1 0 at 
+F 1716 2 0 it, 
+F 1721 2 0 lights, 
+F 1725 1 0 cam
+F 1727 2 0 er
+F 1730 1 0 a, 
+F 1732 2 0 ac
+F 1736 1 0 tion!
+- 1737
+: 1739 1 2 De
+: 1741 1 2 fi
+: 1743 1 2 ni
+: 1745 1 2 ti
+: 1747 1 2 va
+: 1749 1 2 men
+: 1751 1 0 te 
+: 1753 1 0 la 
+: 1755 1 0 me
+: 1757 1 0 jor 
+: 1759 1 -1 de 
+: 1761 2 -3 la 
+: 1764 1 -5 es
+: 1767 1 -5 ce
+: 1769 2 -7 na
+- 1771
+: 1775 1 2 Word 
+: 1777 1 2 on 
+: 1779 1 0 the 
+: 1781 1 2 street 
+: 1783 1 2 we 
+: 1785 1 2 got 
+: 1787 1 2 the 
+* 1789 1 2 peo
+* 1791 1 2 ple 
+* 1793 1 2 re
+* 1796 2 2 act
+* 1800 1 0 in'
+- 1801
+: 1803 1 0 La 
+: 1805 1 2 gen
+: 1807 1 2 te 
+: 1809 1 2 que 
+: 1811 1 0 cri
+: 1813 1 2 ti
+: 1815 1 0 ca 
+: 1817 1 0 sim
+: 1819 1 -1 ple
+: 1821 1 0 men
+: 1823 1 -1 te 
+: 1825 1 -1 me 
+: 1828 3 -3 da 
+F 1836 2 -5 pe
+F 1840 4 -8 na, 
+F 1850 1 -3 ha
+F 1852 1 -3 ha
+- 1853 1856
+- 1856
+: 1869 1 2 We
+: 1871 3 4 ~ 
+: 1875 4 6 al
+: 1881 3 7 ways 
+: 1887 1 9 got
+: 1889 2 11 ~ 
+: 1893 4 9 love
+- 1897
+* 1901 1 2 For
+* 1903 2 4 ~ 
+* 1907 3 6 where 
+* 1913 3 7 we 
+* 1919 1 7 come
+* 1921 2 9 ~ 
+* 1925 1 4 from
+- 1926
+: 1929 3 2 So 
+: 1934 1 2 let
+: 1936 3 4 ~ 
+: 1940 4 6 'em 
+: 1945 3 7 know 
+: 1951 1 9 what's
+: 1953 1 11 ~
+: 1955 1 9 ~ 
+: 1958 10 9 up
+: 1969 2 11 ~
+- 1971
+: 1977 1 9 Ooh
+: 1979 1 11 ~
+: 1981 1 7 ~
+: 1983 4 9 ~
+- 1987
+: 1997 1 14 No 
+: 1999 2 14 mat
+: 2003 2 9 ter 
+: 2007 1 11 wher
+: 2009 2 7 ev
+: 2013 1 7 er
+: 2015 1 9 ~ 
+: 2017 2 4 we 
+: 2021 3 4 go
+: 2025 1 2 ~
+- 2026
+: 2029 1 14 Bring 
+: 2031 2 14 it 
+: 2035 2 9 back 
+: 2039 1 11 to 
+: 2041 2 7 this 
+: 2045 2 9 place 
+* 2049 2 4 called 
+* 2053 2 4 home, 
+* 2057 5 7 babe
+- 2062
+: 2069 1 7 Now 
+: 2071 1 9 that 
+: 2073 2 11 you 
+: 2076 1 9 know
+: 2078 1 11 ~ 
+: 2080 4 9 it
+- 2084
+: 2093 1 2 Let
+: 2095 1 4 ~ 
+: 2097 2 7 me 
+: 2101 1 7 see
+: 2103 2 9 ~ 
+: 2106 1 9 you
+: 2108 1 11 ~, 
+F 2111 1 7 ooh, 
+F 2113 1 7 ooh, 
+F 2117 2 7 what, 
+F 2121 1 7 what?
+- 2122 2232
+- 2232
+F 2245 1 0 Go! 
+: 2247 1 -5 I 
+: 2249 1 -4 let 
+: 2251 1 0 it 
+: 2253 5 -5 rain, 
+: 2262 2 -5 I 
+: 2265 1 -5 clear 
+: 2267 1 -5 it 
+: 2269 3 -5 out
+- 2272
+: 2279 1 -5 I 
+: 2281 1 -4 let 
+: 2283 1 0 it 
+: 2285 5 -5 rain, 
+: 2295 2 -5 I 
+: 2298 1 -5 clear 
+: 2300 1 -5 it 
+: 2302 3 -5 out
+- 2305
+: 2312 1 -5 I 
+: 2314 1 -4 let 
+: 2316 1 0 it 
+: 2318 5 -5 rain, 
+: 2327 2 -5 I 
+: 2330 1 -5 clear 
+: 2332 1 -5 it 
+: 2334 3 -5 out
+- 2337
+: 2343 1 -5 I 
+: 2345 1 -4 let 
+: 2347 1 0 it 
+: 2349 5 -5 rain, 
+: 2358 2 -5 I 
+: 2361 1 -5 clear 
+: 2363 1 -5 it 
+: 2365 3 -5 out
+- 2368
+F 2377 1 2 Let's 
+F 2381 1 0 get 
+F 2383 1 0 it, 
+F 2385 1 2 let's 
+F 2389 1 0 get 
+F 2391 1 0 it
+- 2392
+F 2393 1 2 Let's 
+F 2397 1 0 get 
+F 2399 1 0 it, 
+F 2401 1 2 let's 
+F 2405 1 0 get 
+F 2407 1 0 it
+- 2408
+F 2409 1 2 Let's 
+F 2413 1 0 get 
+F 2415 1 0 it, 
+F 2417 1 2 let's 
+F 2421 1 0 get 
+F 2423 1 0 it
+- 2424
+F 2425 1 2 Let's 
+F 2429 1 0 get 
+F 2431 1 0 it
+- 2432
+* 2439 1 -5 I 
+* 2441 1 -4 let 
+* 2443 1 0 it 
+* 2445 5 -5 rain, 
+: 2455 1 -5 I 
+: 2457 1 -5 clear 
+: 2459 1 -5 it 
+: 2461 1 -5 out
+- 2462
+F 2465 2 0 Hold 
+F 2468 1 0 on
+- 2469
+: 2471 1 -5 I 
+: 2473 1 -4 let 
+: 2475 1 0 it 
+: 2477 5 -5 rain, 
+: 2487 2 -5 I 
+: 2490 1 -5 clear 
+: 2492 1 -5 it 
+: 2494 3 -5 out
+- 2497
+F 2501 1 0 Turn 
+F 2503 1 0 up!
+- 2504
+: 2509 1 -1 Chick
+: 2511 1 -2 en 
+: 2513 1 -2 noo
+: 2515 1 1 dle 
+: 2517 2 -5 soup
+- 2519
+: 2525 1 -1 Chick
+: 2527 1 -2 en 
+: 2529 1 -2 noo
+: 2531 1 1 dle 
+: 2533 2 -5 soup
+- 2535
+: 2541 1 -1 Chick
+: 2543 1 -2 en 
+: 2545 1 -2 noo
+: 2547 1 1 dle 
+: 2549 2 -5 soup 
+F 2553 1 -1 with 
+F 2555 1 -2 a 
+F 2557 1 -2 so
+F 2559 1 -3 da 
+F 2561 1 -3 on 
+F 2563 1 -5 the 
+F 2565 3 -1 side
+F 2569 1 1 ~
+- 2570
+: 2573 1 -1 Chick
+: 2575 1 -2 en 
+: 2577 1 -2 noo
+: 2579 1 1 dle 
+: 2581 2 -5 soup
+- 2583
+: 2589 1 -1 Chick
+: 2591 1 -2 en 
+: 2593 1 -2 noo
+: 2595 1 1 dle 
+: 2597 2 -5 soup
+- 2599
+: 2605 1 -1 Chick
+: 2607 1 -2 en 
+: 2609 1 -2 noo
+: 2611 1 1 dle 
+: 2613 2 -5 soup 
+F 2617 1 -1 with 
+F 2619 1 -2 a 
+F 2621 1 -2 so
+F 2623 1 -3 da 
+F 2625 1 -3 on 
+F 2627 1 -5 the 
+F 2629 3 -1 side
+F 2633 1 1 ~
+- 2634
+: 2637 1 -1 Chick
+: 2639 1 -2 en 
+: 2641 1 -2 noo
+: 2643 1 1 dle 
+: 2645 2 -5 soup
+- 2647
+: 2653 1 -1 Chick
+: 2655 1 -2 en 
+: 2657 1 -2 noo
+: 2659 1 1 dle 
+: 2661 2 -5 soup
+- 2663
+: 2669 1 -1 Chick
+: 2671 1 -2 en 
+: 2673 1 -2 noo
+: 2675 1 1 dle 
+: 2677 2 -5 soup 
+F 2681 1 -1 with 
+F 2683 1 -2 a 
+F 2685 1 -2 so
+F 2687 1 -3 da 
+F 2689 1 -3 on 
+F 2691 1 -5 the 
+F 2693 3 -1 side
+F 2697 1 1 ~
+- 2698
+: 2701 1 -1 Chick
+: 2703 1 -2 en 
+: 2705 1 -2 noo
+: 2707 1 1 dle 
+: 2709 2 -5 soup
+- 2711
+* 2717 1 -1 Chick
+* 2719 1 -2 en 
+* 2721 1 -2 noo
+* 2723 1 1 dle 
+* 2725 2 -5 soup
+- 2727
+: 2733 1 -1 Chick
+: 2735 1 -2 en 
+: 2737 1 -2 noo
+: 2739 1 1 dle 
+: 2741 2 -5 soup 
+F 2745 1 -1 with 
+F 2747 1 -2 a 
+F 2749 1 -2 so
+F 2751 1 -3 da 
+F 2753 1 -3 on 
+F 2755 1 -5 the 
+F 2757 1 -1 side
+- 2758
+F 2761 1 0 Let 
+F 2763 1 0 it 
+F 2765 2 0 be 
+F 2769 1 0 your 
+F 2771 3 0 rain
+- 2774 2778
+- 2778
+F 2791 2 0 And 
+F 2794 1 0 bring 
+F 2796 1 0 it 
+F 2798 2 0 out, 
+F 2817 2 0 yo
+- 2819
+F 2825 1 0 Let 
+F 2827 1 0 it 
+F 2829 2 0 be 
+F 2833 1 0 your 
+F 2835 3 0 rain
+- 2838 2842
+- 2842
+F 2855 1 0 Just 
+F 2857 1 0 bring 
+F 2859 1 0 it 
+F 2861 3 0 out, 
+F 2877 5 0 ah
+- 2882
+F 2889 1 0 Let 
+F 2891 1 0 it 
+F 2893 2 0 be 
+F 2897 1 0 your 
+F 2899 3 0 rain
+- 2902 2906
+- 2906
+F 2919 2 0 And 
+F 2922 1 0 bring 
+F 2924 1 0 it 
+F 2926 2 0 out, 
+F 2945 2 0 yo
+- 2947
+F 2953 1 0 Let 
+F 2955 1 0 it 
+F 2957 2 0 be 
+F 2961 1 0 your 
+F 2963 3 0 rain
+- 2966 2970
+- 2970
+F 2983 1 0 Just 
+F 2985 1 0 bring 
+F 2987 1 0 it 
+F 2989 3 0 out, 
+F 3005 5 0 ah
+- 3010
+F 3017 1 0 Let 
+F 3019 1 0 it 
+F 3021 2 0 rain 
+F 3025 1 0 no 
+F 3027 3 0 more
+- 3030 3034
+- 3034
+F 3047 2 -5 I 
+F 3050 1 -5 clear 
+F 3052 1 -5 it 
+F 3054 3 -5 out
+- 3057 3068
+- 3068
+F 3081 1 2 Let's 
+F 3085 1 0 get 
+F 3087 1 0 it, 
+F 3089 1 2 let's 
+F 3093 1 0 get 
+F 3095 1 0 it
+- 3096
+F 3097 1 2 Let's 
+F 3101 1 0 get 
+F 3103 1 0 it, 
+F 3105 1 2 let's 
+F 3109 1 0 get 
+F 3111 1 0 it
+- 3112
+F 3113 1 2 Let's 
+F 3117 1 0 get 
+F 3119 1 0 it, 
+F 3121 1 2 let's 
+F 3125 1 0 get 
+F 3127 1 0 it
+- 3128
+F 3129 1 2 Let's 
+F 3133 1 0 get 
+F 3135 1 0 it, 
+F 3137 1 2 let's 
+F 3141 1 0 get 
+F 3143 1 0 it, 
+F 3145 2 0 what?
+E
