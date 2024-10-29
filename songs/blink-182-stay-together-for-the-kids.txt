@@ -1,0 +1,318 @@
+#ARTIST:blink-182
+#TITLE:Stay Together For The Kids
+#CREATOR:Canni
+#BPM:290
+#YEAR:2001
+#VIDEO:v=k1BFHYtZlAU
+#LANGUAGE:English
+#GAP:22297,241379310344
+#ALLKARAOKE_ID:blink-182-stay-together-for-the-kids
+#ALLKARAOKE_LASTUPDATE:2024-10-29T00:11:25.696Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=234
+#ALLKARAOKE_VOLUME:0,8
+#MP3:blink-182 - Stay Together For The Kids.mp3
+: 19 3 2 It’s 
+: 23 7 6 hard 
+: 31 3 4 to 
+: 35 11 2 wake 
+: 47 19 2 up
+- 66
+: 79 3 -3 When 
+: 83 3 -3 the 
+: 87 7 6 shades 
+: 95 3 4 have 
+: 99 7 2 been 
+: 107 7 -3 pulled 
+: 115 15 4 shut
+- 130
+: 147 3 -3 This 
+: 151 7 6 house 
+: 159 3 4 is 
+: 163 7 2 haun
+: 171 7 -3 ted
+- 178
+: 179 3 -3 It’s 
+: 183 7 6 so 
+: 191 3 4 pa
+: 195 7 2 the
+: 203 7 -3 tic
+- 210
+: 211 3 -3 It 
+: 215 7 1 makes 
+: 223 3 2 no 
+: 227 7 4 sense 
+: 235 3 1 at 
+: 239 23 2 all
+- 262
+: 275 3 -3 I’m 
+: 279 7 6 ripe 
+: 287 3 4 with 
+: 291 11 2 things 
+: 303 3 1 to 
+: 307 15 2 say
+- 322
+: 331 3 -3 The 
+: 335 7 -3 words 
+: 343 7 6 rot 
+: 351 3 4 and 
+: 355 11 2 fall 
+: 367 3 -3 a
+: 371 15 4 way
+- 386
+: 403 3 -3 My 
+: 407 3 6 stu
+: 411 7 4 pid 
+: 419 15 2 poem 
+: 435 3 2 could 
+: 439 3 6 fix 
+: 443 7 7 this 
+: 451 15 2 home
+- 466
+: 467 3 2 I’d 
+: 471 7 1 read 
+: 479 3 2 it 
+: 483 11 4 e
+: 495 3 1 very
+: 499 23 2 day
+- 522
+: 531 3 19 So 
+: 535 7 19 here’s 
+: 543 3 19 your 
+: 547 11 19 ho
+: 559 3 21 li
+: 563 31 18 day
+- 594
+: 607 7 14 Hope 
+: 615 7 14 you 
+: 627 3 14 enjoy 
+: 631 7 19 it 
+: 639 7 14 this 
+: 647 11 14 time
+- 658
+: 659 3 14 You 
+: 663 7 19 gave 
+: 671 3 19 it 
+: 675 11 19 all 
+: 687 3 21 a
+: 691 31 18 way
+- 722
+: 735 7 14 It 
+: 743 7 14 was 
+: 751 23 19 mine
+- 774
+: 787 3 14 So 
+: 791 7 19 when 
+: 799 3 19 you’re 
+: 803 7 19 dead 
+: 811 7 14 and 
+: 819 31 18 gone
+- 850
+: 863 7 14 Will 
+: 871 11 14 you 
+: 883 3 19 re
+: 887 3 19 mem
+: 891 3 19 ber 
+: 895 7 14 this 
+: 903 11 14 night
+- 914
+: 919 7 19 Twen
+: 927 3 19 ty 
+: 931 7 19 years 
+: 939 7 14 now 
+: 947 31 18 lost
+- 978
+: 991 7 18 It’s 
+: 999 7 14 not 
+: 1007 7 14 right
+- 1014 1280
+- 1280
+: 1299 3 2 Their 
+: 1303 7 6 an
+: 1311 3 4 ger 
+: 1315 7 2 hurts 
+: 1323 7 4 my 
+: 1331 19 2 ears
+- 1350
+: 1355 3 -3 Been 
+: 1359 3 -3 run
+: 1363 3 -3 ning 
+: 1367 7 6 strong 
+: 1375 3 4 for 
+: 1379 11 2 se
+: 1391 3 -3 ven 
+: 1395 15 4 years
+- 1410
+: 1419 3 -3 Ra
+: 1423 3 -3 ther 
+: 1427 3 -3 than 
+: 1431 7 6 fix 
+: 1439 3 4 the 
+: 1443 7 2 prob
+: 1451 7 -3 lems
+- 1458
+: 1459 3 -3 They 
+: 1463 7 6 ne
+: 1471 3 4 ver 
+: 1475 7 2 solved 
+: 1483 7 -3 them
+- 1490
+: 1491 3 -3 It 
+: 1495 7 1 makes 
+: 1503 3 2 no 
+: 1507 7 4 sense 
+: 1515 3 1 at 
+: 1519 23 2 all
+- 1542
+: 1555 3 2 I 
+: 1559 7 6 see 
+: 1567 3 4 them 
+: 1571 11 2 e
+: 1583 3 4 very
+: 1587 15 2 day
+- 1602
+: 1611 3 -3 We 
+: 1615 3 -3 get 
+: 1619 3 -3 a
+: 1623 7 6 long 
+: 1631 3 4 so 
+: 1635 7 2 why 
+: 1643 7 -3 can’t 
+: 1651 15 4 they
+- 1666
+: 1675 3 -3 If 
+: 1679 3 -3 this 
+: 1683 3 -3 is 
+: 1687 3 6 what 
+: 1691 7 4 he 
+: 1699 11 2 wants
+- 1710
+: 1711 3 -3 And 
+: 1715 3 -3 it’s 
+: 1719 3 6 what 
+: 1723 7 4 she 
+: 1731 15 2 wants
+- 1746
+: 1747 3 2 Then 
+: 1751 7 1 why’s 
+: 1759 3 2 there 
+: 1763 7 4 so 
+: 1771 3 1 much 
+: 1775 23 2 pain
+- 1798
+: 1811 3 19 So 
+: 1815 7 19 here’s 
+: 1823 3 19 your 
+: 1827 11 19 ho
+: 1839 3 21 li
+: 1843 30 18 day
+- 1873
+: 1887 7 14 Hope 
+: 1895 7 14 you 
+: 1907 3 14 enjoy 
+: 1911 7 19 it 
+: 1919 7 14 this 
+: 1927 11 14 time
+- 1938
+: 1939 3 14 You 
+: 1943 7 19 gave 
+: 1951 3 19 it 
+: 1955 11 19 all 
+: 1967 3 21 a
+: 1971 31 18 way
+- 2002
+: 2015 7 14 It 
+: 2023 7 14 was 
+: 2031 23 19 mine
+- 2054
+: 2067 3 14 So 
+: 2071 7 19 when 
+: 2079 3 19 you’re 
+: 2083 7 19 dead 
+: 2091 7 14 and 
+: 2099 31 18 gone
+- 2130
+: 2143 7 14 Will 
+: 2151 11 14 you 
+: 2163 3 19 re
+: 2167 3 19 mem
+: 2171 3 19 ber 
+: 2175 7 14 this 
+: 2183 11 14 night
+- 2194
+: 2199 7 19 Twen
+: 2207 3 19 ty 
+: 2211 7 19 years 
+: 2219 7 14 now 
+: 2227 31 18 lost
+- 2258
+: 2271 7 18 It’s 
+: 2279 7 14 not 
+: 2287 7 14 right
+- 2294 3072
+- 3072
+: 3091 3 19 So 
+: 3095 7 19 here’s 
+: 3103 3 19 your 
+: 3107 11 19 ho
+: 3119 3 21 li
+: 3123 31 18 day
+- 3154
+: 3167 7 14 Hope 
+: 3175 7 14 you 
+: 3187 3 14 enjoy 
+: 3191 7 19 it 
+: 3199 7 14 this 
+: 3207 11 14 time
+- 3218
+: 3219 3 14 You 
+: 3223 7 19 gave 
+: 3231 3 19 it 
+: 3235 11 19 all 
+: 3247 3 21 a
+: 3251 31 18 way
+- 3282
+: 3295 7 14 It 
+: 3303 7 14 was 
+: 3311 23 19 mine
+- 3334
+: 3347 3 14 So 
+: 3351 7 19 when 
+: 3359 3 19 you’re 
+: 3363 7 19 dead 
+: 3371 7 14 and 
+: 3379 31 18 gone
+- 3410
+: 3423 7 14 Will 
+: 3431 11 14 you 
+: 3443 3 19 re
+: 3447 3 19 mem
+: 3451 3 19 ber 
+: 3455 7 14 this 
+: 3463 11 14 night
+- 3474
+: 3479 7 19 Twen
+: 3487 3 19 ty 
+: 3491 7 19 years 
+: 3499 7 14 now 
+: 3507 31 18 lost
+- 3538
+: 3551 7 18 It’s 
+: 3559 7 14 not 
+: 3567 11 14 right
+- 3578 3596
+- 3596
+: 3615 7 18 It’s 
+: 3623 7 14 not 
+: 3631 11 14 right
+- 3642 3660
+- 3660
+: 3679 7 18 It’s 
+: 3687 7 14 not 
+: 3695 47 19 right
+- 3742
+: 3743 7 18 It’s 
+: 3751 7 14 not 
+: 3759 11 14 right
+E

@@ -1,0 +1,249 @@
+#ARTIST:Green Day
+#TITLE:Time Of Your Life (Good Riddance)
+#CREATOR:Canni
+#BPM:379,3
+#YEAR:1997
+#VIDEO:v=CnQ8N1KacJc
+#LANGUAGE:English
+#GAP:10741,33667281835
+#ALLKARAOKE_ID:green-day-time-of-your-life-good-riddance
+#ALLKARAOKE_LASTUPDATE:2024-10-29T00:11:25.675Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=895
+#ALLKARAOKE_VOLUME:0,86
+#MP3:Green Day - Time Of Your Life (Good Riddance).mp3
+: 25 4 11 A
+: 33 2 11 no
+: 37 4 12 ther 
+: 45 4 14 tur
+: 53 4 12 nin’ 
+: 61 8 11 point,
+- 69
+: 71 2 11 A 
+: 75 8 12 fork 
+: 87 4 11 stuck 
+: 93 4 9 in 
+: 101 6 7 the 
+: 111 10 9 road.
+- 121 126
+- 126
+: 151 6 11 Time 
+: 159 6 11 grabs 
+: 167 4 12 you 
+: 173 4 14 by 
+: 181 6 12 the 
+: 191 6 11 wrist,
+- 197
+: 199 2 11 Di
+: 203 8 12 rects 
+: 215 2 11 you 
+: 219 4 9 where 
+: 227 6 7 to 
+: 239 10 9 go.
+- 249 254
+- 254
+: 279 4 16 So 
+: 287 6 16 make 
+: 295 2 16 the 
+: 299 10 14 best 
+: 313 6 14 of 
+: 323 4 14 this 
+: 331 10 16 test
+- 341
+: 343 2 14 And 
+: 347 6 12 don’t 
+: 355 4 12 ask 
+* 363 4 14 why
+* 369 4 9 ~
+: 375 8 11 ~.
+- 383
+: 407 4 16 It’s 
+: 415 2 16 not 
+: 419 4 16 a 
+: 427 4 14 ques
+: 435 4 14 tion,
+- 439
+: 443 4 14 But 
+: 449 4 14 a 
+: 457 6 16 les
+: 467 4 14 son 
+: 475 4 12 learned 
+: 481 6 14 in 
+: 493 10 14 time.
+- 503
+: 519 4 7 It’s 
+: 527 4 7 some
+: 533 4 4 thing 
+: 539 4 7 un
+: 545 4 9 pre
+: 553 6 11 dic
+: 561 4 9 ta
+: 569 8 7 ble,
+- 577
+: 585 2 4 But 
+: 589 4 7 in 
+: 597 2 4 the 
+: 601 6 7 end 
+: 609 4 9 it’s 
+: 617 10 11 right.
+- 627
+: 645 6 7 I 
+: 653 4 7 hope 
+: 659 4 4 you 
+: 665 4 7 had 
+: 671 6 7 the 
+: 681 8 9 time 
+: 695 4 6 of 
+: 703 4 6 your 
+: 711 18 7 life.
+- 729 954
+- 954
+: 979 4 11 So 
+: 987 4 11 take 
+: 995 2 12 the 
+* 999 6 14 pho
+: 1007 4 12 to
+: 1015 6 11 graphs
+- 1021
+: 1023 4 11 And 
+: 1031 6 12 still 
+: 1039 6 11 frames 
+: 1047 4 9 in 
+: 1055 3 7 you
+: 1059 4 9 ~r 
+: 1067 10 9 mind.
+- 1077 1086
+- 1086
+: 1111 6 11 Hang 
+: 1119 4 12 it 
+: 1125 6 14 on 
+: 1133 4 12 a 
+: 1141 6 11 shelf
+- 1147
+: 1149 4 11 In 
+: 1157 6 12 good 
+: 1165 4 11 health 
+: 1171 4 9 and 
+: 1179 3 7 goo
+: 1183 4 9 ~d 
+: 1191 10 9 time.
+- 1201 1206
+- 1206
+: 1231 4 16 Tat
+* 1239 6 16 toos 
+: 1247 2 16 of 
+: 1251 6 14 me
+: 1259 4 14 mo
+: 1267 6 14 ries
+- 1273
+: 1275 4 14 And 
+* 1281 6 16 dea
+* 1289 2 14 ~
+* 1293 2 12 ~d 
+: 1297 6 12 skin 
+: 1305 6 12 on 
+: 1315 6 14 tria
+: 1323 10 11 ~l.
+- 1333 1334
+- 1334
+: 1359 6 16 For 
+: 1367 2 16 what 
+: 1371 4 16 it’s 
+: 1379 6 14 worth,
+- 1385
+: 1397 6 14 It 
+: 1405 6 14 was 
+: 1413 6 16 wo
+: 1421 2 14 ~
+: 1425 2 12 ~rth 
+: 1429 6 12 all 
+: 1437 6 14 the 
+: 1449 10 14 while.
+- 1459
+: 1473 4 7 It’s 
+: 1481 6 7 some
+: 1489 2 4 thing 
+: 1493 4 7 un
+: 1501 6 9 pre
+: 1509 6 11 dic
+: 1517 4 9 ta
+: 1525 8 7 ble,
+- 1533
+: 1541 2 4 But 
+: 1545 4 7 in 
+: 1551 4 4 the 
+: 1557 6 7 end 
+: 1565 4 9 is 
+: 1573 12 11 right.
+- 1585
+: 1601 6 7 I 
+: 1609 6 7 hope 
+: 1617 2 4 you 
+: 1621 6 7 had 
+: 1629 4 7 the 
+* 1637 6 9 ti
+* 1645 2 7 ~
+* 1649 2 6 ~me 
+: 1653 4 6 of 
+: 1661 4 6 your 
+: 1671 18 7 life.
+- 1689 2416
+- 2416
+: 2441 4 7 It’s 
+: 2449 6 7 some
+: 2457 4 4 thing 
+: 2463 4 7 un
+: 2469 6 9 pre
+: 2477 6 11 dic
+: 2485 6 9 ta
+: 2495 8 7 ble,
+- 2503
+: 2511 2 4 But 
+: 2515 4 7 in 
+: 2521 4 4 the 
+: 2527 4 7 end 
+: 2535 4 9 it’s 
+* 2543 10 11 right.
+- 2553
+: 2569 6 7 I 
+: 2579 4 7 hope 
+: 2585 4 4 you 
+: 2591 4 7 had 
+: 2599 4 7 the 
+: 2607 6 9 ti
+: 2615 2 7 ~
+: 2619 2 6 ~me 
+: 2623 4 6 of 
+: 2629 6 6 your 
+: 2639 18 7 life.
+- 2657 2868
+- 2868
+: 2893 4 7 It’s 
+: 2899 6 7 some
+: 2907 4 4 thing 
+: 2913 4 7 un
+: 2921 6 9 pre
+: 2929 6 11 dic
+: 2937 4 9 ta
+: 2945 6 7 ble,
+- 2951
+: 2963 2 4 But 
+: 2967 4 7 in 
+: 2973 4 4 the 
+: 2979 6 7 end 
+: 2987 4 9 it’s 
+: 2995 8 11 right.
+- 3003
+: 3025 6 7 I 
+: 3033 6 7 hope 
+: 3041 2 4 you 
+: 3045 6 7 had 
+: 3053 4 7 the 
+* 3061 6 9 ti
+* 3069 2 7 ~
+* 3073 2 6 ~me 
+: 3077 4 6 of 
+: 3085 6 6 your 
+* 3095 16 7 life.
+E
