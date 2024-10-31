@@ -1,0 +1,408 @@
+#ARTIST:Marilyn Manson
+#TITLE:Raise The Red Flag
+#CREATOR:Groov
+#BPM:210
+#YEAR:2024
+#PREVIEWSTART:148
+#VIDEO:v=ckIQOTduNbI
+#GENRE:Industrial Metal
+#LANGUAGE:English
+#GAP:53550
+#ALLKARAOKE_ID:marilyn-manson-raise-the-red-flag
+#ALLKARAOKE_LASTUPDATE:2024-10-31T00:11:22.049Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=profil&id=197779
+#ALLKARAOKE_REALBPM:105
+#ALLKARAOKE_PREVIEWEND:181
+#ALLKARAOKE_VOLUME:0,74
+#P1:Raise The Red Flag
+#MP3:Marilyn Manson - Raise The Red Flag.mp3
+#COVER:Marilyn Manson - Raise The Red Flag [CO].jpg
+#BACKGROUND:Marilyn Manson - Raise The Red Flag [BG].jpg
+: 14 3 7 Your 
+: 19 3 10 au
+: 26 4 10 top
+: 34 3 9 sy 
+: 41 3 9 ta
+: 45 3 7 ble 
+: 50 3 7 is 
+: 55 3 7 rea
+: 59 9 7 dy
+- 68
+: 74 2 10 Pay 
+: 77 4 10 off 
+: 86 2 10 the 
+: 89 3 10 drug 
+: 94 5 10 deals 
+: 100 2 10 you 
+: 105 3 10 made 
+: 110 4 7 with 
+: 118 10 7 God
+- 128
+: 142 2 10 A 
+: 145 5 10 last 
+: 153 5 10 meal, 
+: 161 3 10 then 
+: 165 7 10 your 
+: 178 2 7 cru
+: 181 3 7 ci
+: 185 3 7 fi
+: 189 2 7 xion
+- 191
+: 194 2 7 If 
+: 197 3 7 you're 
+: 201 3 10 not 
+: 206 3 10 pa
+: 210 3 10 ra
+: 214 8 10 noid, 
+: 230 2 9 it's 
+: 233 2 9 proba
+: 236 4 9 bly 
+: 241 3 7 too 
+: 245 11 7 late
+- 256
+: 267 2 7 I 
+: 270 3 6 don't 
+: 274 3 7 give 
+: 278 2 7 a 
+: 282 4 7 f**k 
+: 290 2 6 if 
+: 293 3 6 you 
+: 297 6 7 say 
+: 305 3 7 you're 
+: 309 7 7 sor
+: 317 9 7 ry
+- 326
+: 333 2 6 I 
+: 336 4 6 won't 
+: 342 2 6 ac
+: 345 2 7 cept 
+: 349 3 6 your 
+: 354 3 6 sur
+: 358 6 7 ren
+: 365 15 2 der
+- 380 381
+- 381
+: 395 2 7 I 
+: 398 3 6 don't 
+: 402 3 7 give 
+: 406 2 7 a 
+: 410 4 7 f**k 
+: 418 2 6 if 
+: 421 3 6 you 
+: 425 6 7 say 
+: 433 3 7 you're 
+: 437 7 7 sor
+: 445 9 7 ry
+- 454
+: 461 2 6 I 
+: 464 4 6 won't 
+: 470 2 6 ac
+: 473 2 7 cept 
+: 477 3 6 your 
+: 482 3 6 sur
+: 486 6 7 ren
+: 493 14 2 der
+- 507
+: 510 2 7 It's 
+: 513 3 7 time 
+: 517 2 7 to 
+: 523 3 10 beat 
+: 527 2 10 up 
+: 531 2 10 the 
+: 534 3 10 bul
+: 538 2 10 lies
+- 540
+: 543 2 10 And 
+: 546 3 10 wash 
+: 550 3 10 the 
+: 554 6 10 bulls 
+: 561 6 10 eye 
+: 569 3 10 off 
+: 573 5 10 my 
+* 582 3 10 ba
+* 586 13 7 ck
+- 599 640
+- 640
+: 654 2 7 My 
+: 657 4 7 red 
+: 665 4 7 flag 
+: 670 3 7 is 
+: 674 4 7 your 
+: 681 5 7 white 
+: 689 5 5 one 
+: 697 4 5 soaked 
+: 702 5 7 in 
+* 710 19 7 blood
+- 729 832
+- 832
+: 846 2 10 Ca
+: 849 2 10 da
+: 852 3 10 ver 
+: 857 5 10 dogs 
+: 863 2 10 al
+: 866 2 10 rea
+: 869 2 10 dy 
+: 873 5 10 know 
+: 879 4 10 your 
+: 886 17 10 face
+- 903
+: 913 3 7 Why 
+: 917 4 7 pre
+: 922 6 7 tend 
+: 930 3 7 in 
+: 935 2 7 a 
+: 938 4 7 room 
+: 943 3 5 full 
+: 947 3 4 of 
+: 951 12 4 fakes
+- 963
+: 970 2 10 Some
+: 973 3 10 thing 
+: 977 4 9 ma
+: 982 2 9 de 
+: 986 3 10 up 
+: 990 3 10 for 
+: 994 3 10 i
+: 998 3 10 di
+: 1002 3 10 ots 
+: 1006 7 9 to 
+: 1014 14 10 praise
+- 1028
+: 1034 2 7 Lo
+: 1037 3 7 sers 
+: 1041 6 7 love 
+: 1049 8 7 liars 
+: 1058 3 7 'til 
+: 1062 3 7 their 
+: 1067 3 9 dy
+: 1071 4 7 ing 
+: 1078 11 7 day
+- 1089
+: 1098 2 7 Lo
+: 1101 3 7 sers 
+: 1105 6 7 love 
+: 1113 8 7 liars 
+: 1122 3 7 'til 
+: 1126 3 7 their 
+: 1131 3 9 dy
+: 1135 4 7 ing 
+: 1142 13 7 day
+- 1155
+: 1163 2 7 I 
+: 1166 3 6 don't 
+: 1170 3 7 give 
+: 1174 2 7 a 
+: 1178 4 7 f**k 
+: 1186 2 6 if 
+: 1189 3 6 you 
+: 1193 6 7 say 
+: 1201 3 7 you're 
+: 1205 7 7 sor
+: 1213 9 7 ry
+- 1222
+: 1230 2 6 I 
+: 1233 4 6 won't 
+: 1239 2 6 ac
+: 1242 2 7 cept 
+: 1246 3 6 your 
+: 1251 3 7 sur
+: 1255 6 7 ren
+: 1262 15 2 der
+- 1277
+: 1291 2 7 I 
+: 1294 3 6 don't 
+: 1298 3 7 give 
+: 1302 2 7 a 
+: 1306 4 7 f**k 
+: 1314 2 6 if 
+: 1317 3 6 you 
+: 1321 6 7 say 
+: 1329 3 7 you're 
+: 1333 7 7 sor
+: 1341 9 7 ry
+- 1350
+: 1358 2 6 I 
+: 1361 4 6 won't 
+: 1367 2 6 ac
+: 1370 2 7 cept 
+: 1374 3 6 your 
+: 1379 3 7 sur
+: 1383 6 7 ren
+: 1390 13 2 der
+- 1403
+: 1406 2 7 It's 
+: 1409 3 7 time 
+: 1413 2 7 to 
+: 1419 3 10 beat 
+: 1423 2 10 up 
+: 1427 2 10 the 
+: 1430 3 10 bul
+: 1434 2 10 lies
+- 1436
+: 1439 2 10 And 
+: 1442 3 10 wash 
+: 1446 3 10 the 
+: 1450 6 10 bulls 
+: 1457 6 10 eye 
+: 1465 3 10 off 
+: 1469 5 10 my 
+* 1478 3 10 ba
+* 1482 13 7 ck
+- 1495 1536
+- 1536
+: 1550 2 7 My 
+: 1553 4 7 red 
+: 1561 4 7 flag 
+: 1566 3 7 is 
+: 1570 4 7 your 
+: 1577 5 7 white 
+: 1585 5 5 one 
+: 1593 4 5 soaked 
+: 1598 5 7 in 
+* 1606 19 7 blood
+- 1625 1664
+- 1664
+: 1678 2 7 My 
+: 1681 4 7 red 
+: 1689 4 7 flag 
+: 1694 3 7 is 
+: 1698 4 7 your 
+: 1705 5 7 white 
+: 1713 5 5 one 
+: 1721 4 5 soaked 
+: 1726 5 7 in 
+* 1734 19 7 blood
+- 1753 1857
+- 1857
+: 1871 7 5 Your 
+: 1880 3 5 lo
+: 1884 4 5 yal
+: 1889 4 5 ty 
+* 1896 18 7 li
+* 1915 5 0 es
+- 1920 1922
+- 1922
+: 1936 4 0 On 
+: 1941 4 0 the 
+: 1946 5 0 wrong 
+: 1953 6 0 side 
+: 1962 5 1 of 
+: 1969 4 1 the 
+: 1974 6 1 fu
+: 1981 9 -5 ture
+- 1990
+: 2000 7 5 Your 
+: 2009 3 5 lo
+: 2013 4 5 yal
+: 2018 4 5 ty 
+* 2025 18 7 li
+* 2044 5 0 es
+- 2049 2051
+- 2051
+: 2065 4 0 On 
+: 2070 4 0 the 
+: 2075 5 0 wrong 
+: 2082 6 0 side 
+: 2091 5 1 of 
+: 2098 4 1 the 
+: 2103 6 1 fu
+: 2110 9 -5 ture
+- 2119
+F 2130 7 7 Hey, 
+F 2146 7 7 hey, 
+F 2162 6 7 hey−
+F 2170 6 7 hey−
+F 2178 6 7 hey
+- 2184
+F 2194 7 7 Hey, 
+F 2210 7 7 hey, 
+F 2226 6 7 hey−
+F 2234 6 7 hey−
+F 2242 6 7 hey
+- 2248
+F 2258 7 7 Hey, 
+F 2274 7 7 hey, 
+F 2290 6 7 hey−
+F 2298 6 7 hey−
+F 2306 6 7 hey
+- 2312
+F 2322 7 7 Hey, 
+F 2338 7 7 hey, 
+F 2354 6 7 hey−
+- 2360
+: 2366 2 7 It's 
+: 2369 3 7 time 
+: 2373 2 7 to 
+: 2379 3 10 beat 
+: 2383 2 10 up 
+: 2387 2 10 the 
+: 2390 3 10 bul
+: 2394 2 10 lies
+- 2396
+: 2399 2 10 And 
+: 2402 3 10 wash 
+: 2406 3 10 the 
+: 2410 6 10 bulls 
+: 2417 6 10 eye 
+: 2425 3 10 off 
+: 2429 5 10 my 
+* 2438 3 10 ba
+* 2442 13 7 ck
+- 2455 2496
+- 2496
+: 2510 2 7 My 
+: 2513 4 7 red 
+: 2521 4 7 flag 
+: 2526 3 7 is 
+: 2530 4 7 your 
+: 2537 5 7 white 
+: 2545 5 5 one 
+: 2553 4 5 soaked 
+: 2558 5 7 in 
+* 2566 19 7 blood
+- 2585 2624
+- 2624
+: 2638 2 7 My 
+: 2641 4 7 red 
+: 2649 4 7 flag 
+: 2654 3 7 is 
+: 2658 4 7 your 
+: 2665 5 7 white 
+: 2673 5 5 one 
+: 2681 4 5 soaked 
+: 2686 5 7 in 
+* 2694 19 7 blood
+- 2713 2736
+- 2736
+: 2750 2 7 It's 
+: 2753 3 7 time 
+: 2757 2 7 to 
+: 2763 3 10 beat 
+: 2767 2 10 up 
+: 2771 2 10 the 
+: 2774 3 10 bul
+: 2778 2 10 lies
+- 2780
+: 2783 2 10 And 
+: 2786 3 10 wash 
+: 2790 3 10 the 
+: 2794 6 10 bulls 
+: 2801 6 10 eye 
+: 2809 3 10 off 
+: 2813 5 10 my 
+* 2822 3 10 ba
+* 2826 13 7 ck
+- 2839 2880
+- 2880
+: 2894 2 7 My 
+: 2897 4 7 red 
+: 2905 4 7 flag 
+: 2910 3 7 is 
+: 2914 4 7 your 
+: 2921 5 7 white 
+: 2929 5 5 one 
+: 2937 4 5 soaked 
+: 2942 5 7 in 
+* 2950 19 7 blood
+E
