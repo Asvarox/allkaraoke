@@ -31,6 +31,7 @@ async function getStorage() {
 const DELETED_SONGS_KEY = 'DELETED_SONGS_V2';
 
 class SongsService {
+  private defaultIndex: SongPreview[] | null = null;
   private finalIndex: SongPreview[] | null = null;
   private indexWithDeletedSongs: SongPreview[] | null = null;
   public store = async (song: Song) => {
@@ -51,6 +52,14 @@ class SongsService {
     const localSong = await this.getLocal(songId);
 
     return !!localSong;
+  };
+
+  /**
+   * Returns true if the song is included in the main game by default
+   * @param songId
+   */
+  public isBuiltIn = (songId: string) => {
+    return this.defaultIndex?.some((song) => song.id === songId) ?? false;
   };
 
   public get = async (songId: string): Promise<Song> => {
@@ -90,6 +99,7 @@ class SongsService {
       this.getLocalIndex(),
       this.getDeletedSongsList(),
     ]);
+    this.defaultIndex = defaultIndex;
     const lastVisitDate = dayjs(lastVisit);
 
     // Filter out local songs that were updated to default index
