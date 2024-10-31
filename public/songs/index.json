@@ -950,9 +950,10 @@
       "English"
     ],
     "bpm": 236.7,
-    "gap": 37739,
+    "gap": 35975.05830164765,
     "year": "1979",
     "artistOrigin": "SE",
+    "lastUpdate": "2024-10-29T07:11:39.503Z",
     "edition": "SingStar ABBA",
     "realBpm": 127,
     "volume": 1,
@@ -961,7 +962,7 @@
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Gimme!%20Gimme!%20Gimme!%20(A%20Man%20After%20Midnight)",
     "tracks": [
       {
-        "start": 0
+        "start": 16
       }
     ],
     "tracksCount": 1,
@@ -8546,6 +8547,83 @@
     "local": false
   },
   {
+    "id": "ayumi-hamasaki-dearest",
+    "title": "Dearest",
+    "artist": "Ayumi Hamasaki",
+    "video": "D2PJps7FMOM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 254,
+    "gap": 31666.062992125982,
+    "year": "2002",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-10-31T00:11:22.843Z",
+    "realBpm": 127,
+    "volume": 0.78,
+    "author": "raxkito",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ayumihamasakidearest",
+    "local": false
+  },
+  {
+    "id": "ayumi-hamasaki-jewel",
+    "title": "JEWEL",
+    "artist": "Ayumi Hamasaki",
+    "video": "P6TdHMnyctA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 262.2,
+    "gap": 34558.45995423341,
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-10-31T00:11:22.844Z",
+    "genre": "Jpop",
+    "realBpm": 132,
+    "volume": 0.78,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ayumihamasakijewel",
+    "local": false
+  },
+  {
+    "id": "ayumi-hamasaki-m",
+    "title": "M",
+    "artist": "Ayumi Hamasaki",
+    "video": "YRFC0LexblM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 206.02,
+    "gap": 415.6814872342492,
+    "year": "2000",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-10-31T00:11:22.646Z",
+    "genre": "Jpop",
+    "realBpm": 104,
+    "volume": 0.76,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ayumihamasakim",
+    "local": false
+  },
+  {
     "id": "b52s-love-shack",
     "title": "Love Shack",
     "artist": "B52s",
@@ -10274,6 +10352,32 @@
     ],
     "tracksCount": 1,
     "search": "bettemidlertherose",
+    "local": false
+  },
+  {
+    "id": "beyonce-blow",
+    "title": "Blow",
+    "artist": "Beyoncé",
+    "video": "CIELYkfoKy8",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.02,
+    "gap": 16300.083326389467,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:23.241Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.8,
+    "author": "Coppo",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "beyonceblow",
     "local": false
   },
   {
@@ -17022,6 +17126,34 @@
     "local": false
   },
   {
+    "id": "capital-cities-safe-and-sound",
+    "title": "Safe And Sound",
+    "artist": "Capital Cities",
+    "video": "47dtFZ8CFo8",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 26293.050847457627,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.251Z",
+    "genre": "Electronic",
+    "realBpm": 118,
+    "previewStart": 60,
+    "previewEnd": 100,
+    "volume": 0.85,
+    "author": "gun8",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "capitalcitiessafeandsound",
+    "local": false
+  },
+  {
     "id": "capital-inicial-primeiros-erros-chove",
     "title": "Primeiros erros (Chove)",
     "artist": "Capital Inicial",
@@ -19096,6 +19228,31 @@
     ],
     "tracksCount": 1,
     "search": "christinaaguileraperomeacuerdodeti",
+    "local": false
+  },
+  {
+    "id": "christina-aguilera-what-a-girl-wants",
+    "title": "What A Girl Wants",
+    "artist": "Christina Aguilera",
+    "video": "QNDizT95_lc",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.1,
+    "gap": -36.17993573723663,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.644Z",
+    "realBpm": 142,
+    "volume": 0.75,
+    "author": "britneyblisswilliams",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "christinaaguilerawhatagirlwants",
     "local": false
   },
   {
@@ -27036,6 +27193,33 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-feat-camila-cabello-cardi-b-south-of-the-border",
+    "title": "South Of The Border",
+    "artist": "Ed Sheeran feat. Camila Cabello & Cardi B",
+    "video": "UPOT2tgY9QQ",
+    "language": [
+      "English",
+      "Spanish"
+    ],
+    "bpm": 391.84,
+    "gap": 22464.695794201714,
+    "year": "2019",
+    "lastUpdate": "2024-10-31T00:11:22.056Z",
+    "genre": "Pop",
+    "realBpm": 98,
+    "volume": 0.76,
+    "author": "lozboorman",
+    "sourceUrl": "https://www.youtube.com/watch?v=UPOT2tgY9QQ",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranfeatcamilacabellocardibsouthoftheborder",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-galway-girl",
     "title": "Galway Girl",
     "artist": "Ed Sheeran",
@@ -29951,6 +30135,56 @@
     ],
     "tracksCount": 1,
     "search": "evanescencecallmewhenyouresober",
+    "local": false
+  },
+  {
+    "id": "evanescence-lithium",
+    "title": "Lithium",
+    "artist": "Evanescence",
+    "video": "PJGpsL_XYQI",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": -31.35593220338984,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.845Z",
+    "realBpm": 118,
+    "volume": 0.74,
+    "author": "Eazee",
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "tracksCount": 1,
+    "search": "evanescencelithium",
+    "local": false
+  },
+  {
+    "id": "evanescence-my-inmortal",
+    "title": "My Inmortal",
+    "artist": "Evanescence",
+    "video": "5anLPw0Efmo",
+    "language": [
+      "English"
+    ],
+    "bpm": 149.65,
+    "gap": 12649.661209488808,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.846Z",
+    "genre": "Rock",
+    "realBpm": 79,
+    "volume": 0.79,
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "tracksCount": 1,
+    "search": "evanescencemyinmortal",
     "local": false
   },
   {
@@ -34826,7 +35060,7 @@
       "English"
     ],
     "bpm": 279,
-    "gap": 10398.494623655914,
+    "gap": 9898.494623655914,
     "year": "2004",
     "artistOrigin": "US",
     "lastUpdate": "2023-06-08T08:15:16.130Z",
@@ -34842,6 +35076,33 @@
     ],
     "tracksCount": 1,
     "search": "greendayamericanidiot",
+    "local": false
+  },
+  {
+    "id": "green-day-bang-bang",
+    "title": "Bang Bang",
+    "artist": "Green Day",
+    "video": "wvu2-xQUNQI",
+    "language": [
+      "English"
+    ],
+    "bpm": 255,
+    "gap": 41770,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:21.173Z",
+    "genre": "Rock",
+    "realBpm": 127,
+    "volume": 0.8,
+    "author": "DoubleDee",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=28897",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendaybangbang",
     "local": false
   },
   {
@@ -35003,6 +35264,60 @@
     ],
     "tracksCount": 1,
     "search": "greendaylastoftheamericangirls",
+    "local": false
+  },
+  {
+    "id": "green-day-longview",
+    "title": "Longview",
+    "artist": "Green Day",
+    "video": "42BBdzzgPNM",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.48,
+    "gap": 20758.818556908525,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:21.169Z",
+    "genre": "Punk",
+    "realBpm": 143,
+    "volume": 0.8,
+    "author": "Gollum",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=10879",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendaylongview",
+    "local": false
+  },
+  {
+    "id": "green-day-revolution-radio",
+    "title": "Revolution Radio",
+    "artist": "Green Day",
+    "video": "B4zc-f0TIZ4",
+    "language": [
+      "English"
+    ],
+    "bpm": 360.12,
+    "gap": 21290.333222259247,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:21.180Z",
+    "genre": "Rock",
+    "realBpm": 180,
+    "volume": 0.86,
+    "author": "hexahurz",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=22292",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendayrevolutionradio",
     "local": false
   },
   {
@@ -35471,6 +35786,35 @@
     ],
     "tracksCount": 1,
     "search": "gustaphbecauseofyou",
+    "local": false
+  },
+  {
+    "id": "gustavo-cerati-adios",
+    "title": "Adiós",
+    "artist": "Gustavo Cerati",
+    "video": "GUf81ofAZV0",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 380.57,
+    "gap": 17584.635940825603,
+    "year": "2006",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-10-31T00:11:22.042Z",
+    "genre": "Rock",
+    "realBpm": 94,
+    "previewStart": 48,
+    "previewEnd": 77,
+    "volume": 0.71,
+    "author": "Gustavo Cerati",
+    "authorUrl": "https://usdb.animux.de/index.php?link=gettxt&id=18672",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "gustavoceratiadios",
     "local": false
   },
   {
@@ -37558,6 +37902,32 @@
     ],
     "tracksCount": 1,
     "search": "hueylewisthenewsheartandsoul",
+    "local": false
+  },
+  {
+    "id": "huey-lewis-the-news-stuck-with-you",
+    "title": "Stuck With You",
+    "artist": "Huey Lewis & The News",
+    "video": "J08ZwySCoJ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 241.8,
+    "gap": 106437.4441687345,
+    "year": "1986",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.641Z",
+    "videoGap": 89,
+    "realBpm": 121,
+    "volume": 0.78,
+    "author": "k1656",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hueylewisthenewsstuckwithyou",
     "local": false
   },
   {
@@ -47508,6 +47878,32 @@
     "local": false
   },
   {
+    "id": "lady-gaga-summerboy",
+    "title": "Summerboy",
+    "artist": "Lady Gaga",
+    "video": "BHTCCrGCeIY",
+    "language": [
+      "English"
+    ],
+    "bpm": 210.02,
+    "gap": 57.15646128940102,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:23.243Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 0.77,
+    "author": "michas17j",
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ladygagasummerboy",
+    "local": false
+  },
+  {
     "id": "lady-gaga-the-edge-of-glory",
     "title": "The Edge Of Glory",
     "artist": "Lady Gaga",
@@ -50247,6 +50643,32 @@
     ],
     "tracksCount": 1,
     "search": "lisagurenge",
+    "local": false
+  },
+  {
+    "id": "lisa-my-soul-your-beats",
+    "title": "My Soul Your Beats",
+    "artist": "Lisa",
+    "video": "0VGoIJ00Pek",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 290,
+    "gap": 20117.241379310344,
+    "year": "2010",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-10-31T00:11:23.038Z",
+    "genre": "Anime",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "Dangereus",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lisamysoulyourbeats",
     "local": false
   },
   {
@@ -54175,6 +54597,36 @@
     "local": false
   },
   {
+    "id": "marilyn-manson-as-sick-as-the-secrets-within",
+    "title": "As Sick As The Secrets Within",
+    "artist": "Marilyn Manson",
+    "video": "vOd8hE-xTDY",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 35331.48148148148,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.052Z",
+    "genre": "Gothic Rock",
+    "realBpm": 162,
+    "previewStart": 87,
+    "previewEnd": 117,
+    "volume": 0.81,
+    "author": "Groov",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=197779",
+    "tracks": [
+      {
+        "name": "As Sick As The Secrets Within",
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marilynmansonassickasthesecretswithin",
+    "local": false
+  },
+  {
     "id": "marilyn-manson-coma-white",
     "title": "Coma White",
     "artist": "Marilyn Manson",
@@ -54262,6 +54714,36 @@
     ],
     "tracksCount": 1,
     "search": "marilynmansonpersonaljesus",
+    "local": false
+  },
+  {
+    "id": "marilyn-manson-raise-the-red-flag",
+    "title": "Raise The Red Flag",
+    "artist": "Marilyn Manson",
+    "video": "ckIQOTduNbI",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 53550,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.049Z",
+    "genre": "Industrial Metal",
+    "realBpm": 105,
+    "previewStart": 148,
+    "previewEnd": 181,
+    "volume": 0.74,
+    "author": "Groov",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=197779",
+    "tracks": [
+      {
+        "name": "Raise The Red Flag",
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marilynmansonraisetheredflag",
     "local": false
   },
   {
@@ -54826,6 +55308,84 @@
     "local": false
   },
   {
+    "id": "maroon-5-makes-me-wonder",
+    "title": "Makes Me Wonder",
+    "artist": "Maroon 5",
+    "video": "sAebYQgy4n4",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 19045.29411764706,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.447Z",
+    "genre": "Rock",
+    "realBpm": 114,
+    "volume": 0.73,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maroon5makesmewonder",
+    "local": false
+  },
+  {
+    "id": "maroon-5-maps",
+    "title": "Maps",
+    "artist": "Maroon 5",
+    "video": "Y7ix6RITXM0",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": -82.5,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.445Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.75,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maroon5maps",
+    "local": false
+  },
+  {
+    "id": "maroon-5-memories",
+    "title": "Memories",
+    "artist": "Maroon 5",
+    "video": "SlPhMPnQ58k",
+    "language": [
+      "English"
+    ],
+    "bpm": 382.21,
+    "gap": 10048.863975301536,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.444Z",
+    "genre": "Pop",
+    "realBpm": 91,
+    "volume": 0.73,
+    "author": "ben1993",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maroon5memories",
+    "local": false
+  },
+  {
     "id": "maroon-5-misery",
     "title": "Misery",
     "artist": "Maroon 5",
@@ -55077,6 +55637,30 @@
     ],
     "tracksCount": 1,
     "search": "marshmellobastillehappier",
+    "local": false
+  },
+  {
+    "id": "marshmello-kane-brown-miles-on-it",
+    "title": "Miles On It",
+    "artist": "Marshmello & Kane Brown",
+    "video": "RMmoyP_cpEg",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 4079.230769230769,
+    "year": "2024",
+    "lastUpdate": "2024-10-31T00:11:22.448Z",
+    "realBpm": 130,
+    "volume": 0.63,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marshmellokanebrownmilesonit",
     "local": false
   },
   {
@@ -58194,6 +58778,32 @@
     "local": false
   },
   {
+    "id": "minmi-shiki-no-uta",
+    "title": "Shiki no Uta",
+    "artist": "MINMI",
+    "video": "UQbcyOxqDFw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 370.05,
+    "gap": 8833.623429266316,
+    "year": "2004",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-10-31T00:11:22.848Z",
+    "genre": "J-Pop",
+    "realBpm": 93,
+    "volume": 0.81,
+    "author": "asdFer",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "minmishikinouta",
+    "local": false
+  },
+  {
     "id": "miracle-of-sound-valhalla-calling",
     "title": "Valhalla Calling",
     "artist": "Miracle Of Sound",
@@ -58952,6 +59562,31 @@
     ],
     "tracksCount": 1,
     "search": "mrsgreenappleinferno",
+    "local": false
+  },
+  {
+    "id": "mulan-comme-un-homme",
+    "title": "Comme Un Homme",
+    "artist": "Mulan",
+    "video": "qIkF48pw3qw",
+    "language": [
+      "French"
+    ],
+    "bpm": 356.19,
+    "gap": 86953.30346163565,
+    "year": "1998",
+    "lastUpdate": "2024-10-31T00:11:21.182Z",
+    "videoGap": 67,
+    "realBpm": 114,
+    "volume": 1,
+    "author": "bibialice",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mulancommeunhomme",
     "local": false
   },
   {
@@ -60197,6 +60832,32 @@
     ],
     "tracksCount": 1,
     "search": "namikajeneparlepasfrancais",
+    "local": false
+  },
+  {
+    "id": "natalia-kills-wonderland",
+    "title": "Wonderland",
+    "artist": "Natalia Kills",
+    "video": "ayVuQLT00v0",
+    "language": [
+      "English"
+    ],
+    "bpm": 233.93,
+    "gap": 27114.052066857606,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-10-31T00:11:23.244Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "volume": 0.91,
+    "author": "blackcat6",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nataliakillswonderland",
     "local": false
   },
   {
@@ -67283,6 +67944,31 @@
     "local": false
   },
   {
+    "id": "plain-white-ts-1-2-3-4",
+    "title": "1 2 3 4",
+    "artist": "Plain White T’s",
+    "video": "m6pW_q1PvH0",
+    "language": [
+      "English"
+    ],
+    "bpm": 359,
+    "gap": 10787.214484679665,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-10-31T00:11:22.645Z",
+    "realBpm": 91,
+    "volume": 0.81,
+    "author": "snowtox",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "plainwhitets1234",
+    "local": false
+  },
+  {
     "id": "plain-white-ts-hey-there-delilah",
     "title": "Hey There Delilah",
     "artist": "Plain White T’s",
@@ -74126,6 +74812,60 @@
     ],
     "tracksCount": 1,
     "search": "scottmckenziesanfranciscobesuretowearsomeflowersinyourhair",
+    "local": false
+  },
+  {
+    "id": "sdp-anfang-anzufangen",
+    "title": "Anfang anzufangen",
+    "artist": "SDP",
+    "video": "NdTgs_rkRtg",
+    "language": [
+      "German"
+    ],
+    "bpm": 340,
+    "gap": 32865.29411764706,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-10-31T00:11:22.041Z",
+    "genre": "Rock-Pop",
+    "realBpm": 94,
+    "volume": 0.74,
+    "author": "SDP",
+    "sourceUrl": "https://youtu.be/NdTgs_rkRtg",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpanfanganzufangen",
+    "local": false
+  },
+  {
+    "id": "sdp-feat-sido-die-nacht-von-freitag-auf-montag",
+    "title": "Die Nacht von Freitag auf Montag",
+    "artist": "SDP feat. Sido",
+    "video": "388e_8mu1t4",
+    "language": [
+      "German"
+    ],
+    "bpm": 296,
+    "gap": 7036.486486486487,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-10-31T00:11:22.046Z",
+    "realBpm": 148,
+    "volume": 0.74,
+    "author": "SDP",
+    "sourceUrl": "https://youtu.be/388e_8mu1t4",
+    "tracks": [
+      {
+        "name": "Nacht von Freitag auf Montag",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sdpfeatsidodienachtvonfreitagaufmontag",
     "local": false
   },
   {
@@ -86634,6 +87374,34 @@
     ],
     "tracksCount": 1,
     "search": "threedaysgraceihateeverythingaboutyou",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-pain",
+    "title": "Pain",
+    "artist": "Three Days Grace",
+    "video": "Ud4HuAzHEUc",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.1,
+    "gap": 7430.333222259247,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-10-31T00:11:22.441Z",
+    "genre": "Alternative Rock",
+    "realBpm": 161,
+    "previewStart": 61,
+    "previewEnd": 90,
+    "volume": 0.78,
+    "author": "Wüstenpfeil",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "threedaysgracepain",
     "local": false
   },
   {
