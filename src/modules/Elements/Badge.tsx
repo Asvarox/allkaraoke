@@ -9,9 +9,10 @@ export const Badge = styled.span`
   right: 0;
   background: ${styles.colors.text.active};
 
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   ${typography};
   color: ${styles.colors.text.default};
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 1.5rem;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 `;
