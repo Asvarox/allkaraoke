@@ -1,22 +1,20 @@
-import { SongPreview } from 'interfaces';
 import SongDao from 'modules/Songs/SongsService';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export default function useSongIndex(includeDeleted = false) {
-  const [songIndex, setSongIndex] = useState<SongPreview[] | null>(SongDao.getCurrentIndex());
-  // Prevent recreating of the array every render
-  const emptyList = useRef<SongPreview[]>([]);
+  const currentIndex = SongDao.getCurrentIndex();
+  const [songIndex, setSongIndex] = useState(() => currentIndex || []);
 
-  const loadSongs = () => SongDao.getIndex(includeDeleted).then(setSongIndex);
+  const loadSongs = useCallback(() => SongDao.getIndex(includeDeleted).then(setSongIndex), [includeDeleted]);
 
   useEffect(() => {
     // setTimeout(loadSongs, 3000);
     loadSongs();
-  }, []);
+  }, [loadSongs]);
 
   return {
-    data: songIndex ?? emptyList.current,
+    data: songIndex,
     reload: loadSongs,
-    isLoading: songIndex === null,
+    isLoading: currentIndex === null,
   };
 }

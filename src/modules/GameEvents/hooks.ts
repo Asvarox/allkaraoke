@@ -1,5 +1,5 @@
 import { GameEvent } from 'modules/GameEvents/GameEvents';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function useEventListener<T extends (...args: any[]) => void>(event: GameEvent<T>, getLast = false) {
   const [value, setValue] = useState<Parameters<T> | null>(null);
@@ -46,8 +46,7 @@ export function useEventListenerSelector<S>(
   selector: () => S,
   dependencies: any[] = [],
 ) {
-  const initialValueRef = useMemo(selector, []);
-  const [value, setValue] = useState<S>(initialValueRef);
+  const [value, setValue] = useState<S>(selector);
 
   const eventList = Array.isArray(event) ? event : [event];
 

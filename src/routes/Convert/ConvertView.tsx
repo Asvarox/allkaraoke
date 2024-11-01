@@ -11,7 +11,7 @@ import useBackgroundMusic from 'modules/hooks/useBackgroundMusic';
 import useQueryParam from 'modules/hooks/useQueryParam';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import setQueryParam from 'modules/utils/setQueryParam';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import AuthorAndVideo, { AuthorAndVidEntity } from 'routes/Convert/Steps/AuthorAndVideo';
 import BasicData, { BasicDataEntity } from 'routes/Convert/Steps/BasicData';
 import SongMetadata, { SongMetadataEntity } from 'routes/Convert/Steps/SongMetadata';
@@ -68,7 +68,6 @@ export default function ConvertView({ song }: Props) {
 
   const [editedSong, setEditedSong] = useState<Song | undefined>(song);
 
-  const error = useRef<string>('');
   const conversionResult: Song | undefined = useMemo(() => {
     try {
       if (isEdit)
@@ -90,7 +89,6 @@ export default function ConvertView({ song }: Props) {
 
       return result;
     } catch (e: any) {
-      error.current = e.message;
       console.error(e);
     }
     return undefined;

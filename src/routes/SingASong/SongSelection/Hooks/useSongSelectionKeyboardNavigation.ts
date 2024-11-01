@@ -57,7 +57,7 @@ const useTwoDimensionalNavigation = (groups: SongGroup[] = [], itemsPerRow: numb
         setCursorPosition([0, 0]);
       }
     },
-    [songIndexMatrix],
+    [songIndexMatrix, songGroupMatrix],
   );
 
   const positionToValue = <T>([x, y]: [number, number], matrix: T[][], def: T) => {
@@ -157,18 +157,19 @@ export const useSongSelectionKeyboardNavigation = (
     }
   };
 
-  const navigateToGroup = useCallback(
-    throttle(
-      (direction: 1 | -1, currentGroup: number) => {
-        const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
+  const navigateToGroup = useMemo(
+    () =>
+      throttle(
+        (direction: 1 | -1, currentGroup: number) => {
+          const nextGroupIndex = (groupedSongs.length + currentGroup + direction) % groupedSongs.length;
 
-        moveToSong(groupedSongs[nextGroupIndex].songs[0].index);
-        menuNavigate.play();
-      },
-      700,
-      { trailing: false },
-    ),
-    [groupedSongs],
+          moveToSong(groupedSongs[nextGroupIndex].songs[0].index);
+          menuNavigate.play();
+        },
+        700,
+        { trailing: false },
+      ),
+    [groupedSongs, moveToSong],
   );
 
   const navigateVertically = (e: KeyboardEvent | undefined, direction: 1 | -1) => {
@@ -242,5 +243,6 @@ export const useSongSelectionKeyboardNavigation = (
     }
   }, [arePlaylistsVisible, leavingKey, isAtFirstColumn, isAtLastColumn, ...cursorPosition]);
 
+  // eslint-disable-next-line react-compiler/react-compiler
   return tuple([focusedSong, focusedGroup, moveToSong, arePlaylistsVisible, closePlaylist, randomSong]);
 };

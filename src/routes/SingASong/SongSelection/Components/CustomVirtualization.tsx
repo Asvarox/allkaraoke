@@ -56,7 +56,6 @@ const isBetween = (value: number, min: number, max: number) => value >= min && v
 
 function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomVirtualizedListMethods>) {
   const viewportElementRef = useRef<HTMLDivElement | null>(null);
-  const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
 
   const itemsPositions = useMemo(() => {
     const sizes: ItemPosition[] = [];
@@ -87,6 +86,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
 
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
+      const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
       const firstVisibleItem = itemsPositions.findIndex((item) => item.bottom > scrollTop - props.overScan);
       // todo subtract item height from bottom
       const lastVisibleItem = itemsPositions.findIndex(
@@ -95,10 +95,10 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
 
       return [firstVisibleItem, lastVisibleItem === -1 ? itemsPositions.length : lastVisibleItem];
     },
-    [itemsPositions, viewportHeight, props.overScan],
+    [itemsPositions, props.overScan],
   );
 
-  const [[rangeFrom, rangeTo], setItemsRange] = useState(computeVisibleItemsRange(0));
+  const [[rangeFrom, rangeTo], setItemsRange] = useState(() => computeVisibleItemsRange(0));
 
   useLayoutEffect(() => {
     const newItemsRange = computeVisibleItemsRange(viewportElementRef.current?.scrollTop ?? 0);

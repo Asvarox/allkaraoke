@@ -2,7 +2,7 @@ import { throttle } from 'lodash-es';
 import SimplifiedMic from 'modules/GameEngine/Input/SimplifiedMic';
 import events from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import VolumeIndicator from 'routes/RemoteMic/Panels/Microphone/VolumeIndicator';
 
 interface Props {
@@ -16,12 +16,13 @@ function MicPreview({ isVisible, isMicOn, isConnected }: Props) {
   const [frequency, setFrequency] = useState(0);
   const [playerNumber] = useEventListener(events.remoteMicPlayerSet, true) ?? [null];
 
-  const updateVolumes = useCallback(
-    throttle((freq: number, volume: number) => {
-      setFrequency(freq);
-      setVolume(volume);
-    }, 150),
-    [setVolume, setFrequency],
+  const updateVolumes = useMemo(
+    () =>
+      throttle((freq: number, volume: number) => {
+        setFrequency(freq);
+        setVolume(volume);
+      }, 150),
+    [],
   );
 
   useEffect(() => {

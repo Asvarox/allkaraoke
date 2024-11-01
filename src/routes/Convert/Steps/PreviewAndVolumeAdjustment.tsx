@@ -65,6 +65,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     player.current?.getInternalPlayer()?.getDuration().then(setDuration);
   }, []);
 
+  // eslint-disable-next-line react-compiler/react-compiler
   const internalPlayer = player.current?.getInternalPlayer();
 
   return (
