@@ -30,6 +30,7 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
       value={newName}
       label=""
       ref={inputRef}
+      // eslint-disable-next-line react-compiler/react-compiler
       {...register(`highscore-rename-${index}`, () => inputRef.current?.focus())}
       placeholder={score.name}
       data-test={`input-edit-highscore`}

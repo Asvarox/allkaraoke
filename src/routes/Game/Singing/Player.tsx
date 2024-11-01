@@ -200,6 +200,7 @@ function Player(
             height={height}
             onSongEnd={onSongEnd}
             playerSetups={players}
+            // eslint-disable-next-line react-compiler/react-compiler
             videoPlayerRef={player.current}
           />
         </Overlay>

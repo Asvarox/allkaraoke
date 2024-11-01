@@ -7,7 +7,7 @@ import events from 'modules/GameEvents/GameEvents';
 import { useEventListener } from 'modules/GameEvents/hooks';
 import { PlayerEntity } from 'modules/Players/PlayersManager';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 interface Props {
   multipleTracks: boolean;
@@ -35,6 +35,8 @@ export default function SinglePlayer({
   // Force update when the name changes
   useEventListener(events.playerNameChanged);
 
+  const focusName = useCallback(() => nameRef.current?.focus(), []);
+
   if (player === undefined) {
     return null;
   }
@@ -61,7 +63,8 @@ export default function SinglePlayer({
         onChange={onNameChange}
         label="Name:"
         ref={nameRef}
-        {...register(`player-${player.number}-name`, () => nameRef.current?.focus())}
+        // eslint-disable-next-line react-compiler/react-compiler
+        {...register(`player-${player.number}-name`, focusName)}
       />
       {multipleTracks && (
         <Track
