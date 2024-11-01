@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
+import { SongPreview } from 'interfaces';
 import { uniqBy } from 'lodash-es';
 import { Badge } from 'modules/Elements/Badge';
 import { Flag } from 'modules/Elements/Flag';
@@ -64,14 +65,17 @@ function RemoteSongList({
         originalSongList.data
           .map((song) => ({ ...song, id: SongDao.generateSongFile(song) }))
           .filter((song) => !(overrides?.deleted ?? []).includes(song.id))
-          .map((song) => ({
-            id: song.id,
-            artist: song.artist,
-            title: song.title,
-            video: song.video,
-            language: song.language,
-            search: song.search,
-          }))
+          .map(
+            (song) =>
+              ({
+                id: song.id,
+                artist: song.artist,
+                title: song.title,
+                video: song.video,
+                language: song.language,
+                search: song.search,
+              }) as NetworkSongListMessage['custom'][number] & Pick<SongPreview, 'id'>,
+          )
           .concat(...(overrides?.custom ?? []).map((song) => ({ ...song, id: SongDao.generateSongFile(song) }))),
         (song) => song.id,
       ),
@@ -100,7 +104,8 @@ function RemoteSongList({
         return songList.filter((song) => !song.language.every((songLang) => excludedLanguages.includes(songLang!)));
       }
     } else {
-      return addedSongs.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
+      const addedSongList = addedSongs.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
+      return searchList(addedSongList, search);
     }
   }, [search, songList, tab, addedSongs, excludedLanguages]);
 
