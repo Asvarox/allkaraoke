@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Search } from '@mui/icons-material';
 import { uniqBy } from 'lodash-es';
+import { Badge } from 'modules/Elements/Badge';
 import { Flag } from 'modules/Elements/Flag';
 import { Input } from 'modules/Elements/Input';
 import { typography } from 'modules/Elements/cssMixins';
@@ -33,6 +34,9 @@ interface Props {
   setMonitoringStarted: (micMonitoring: boolean) => void;
 }
 export const useSavedSongs = createPersistedState<string[]>('remote-mic-saved-songs');
+export const useExcludedLanguages = createPersistedState<string[]>('remote-mic-excluded-languages');
+export const useSelectedList = createPersistedState<'list' | 'queue'>('remote-mic-selected-song-list');
+export const useSearchState = createPersistedState<string>('remote-mic-song-list-search');
 
 function RemoteSongList({
   roomId,
@@ -75,11 +79,11 @@ function RemoteSongList({
   );
 
   const languages = useLanguageList(songList);
-  const [search, setSearch] = useState('');
-  const [excludedLanguages, setExcludedLanguages] = useState<string[]>([]);
+  const [search, setSearch] = useSearchState('');
+  const [excludedLanguages, setExcludedLanguages] = useExcludedLanguages([]);
 
   const [addedSongs, setAddedSongs] = useSavedSongs([]);
-  const [tab, setTab] = useState<'list' | 'queue'>('list');
+  const [tab, setTab] = useSelectedList('list');
 
   const unit = useBaseUnitPx();
 
@@ -99,6 +103,8 @@ function RemoteSongList({
       return addedSongs.map((id) => songList.find((song) => song.id === id)!).filter(Boolean);
     }
   }, [search, songList, tab, addedSongs, excludedLanguages]);
+
+  const selectedLanguages = languages.length - excludedLanguages.length;
 
   return (
     <Container>
@@ -128,7 +134,7 @@ function RemoteSongList({
                 onClick={open}
                 data-test="song-language-filter"
                 data-active={excludedLanguages.length > 0 && tab === 'list' ? true : undefined}>
-                🇺🇳
+                🇺🇳{selectedLanguages < languages.length && <Badge>{selectedLanguages}</Badge>}
               </Tab>
             )}
           </LanguageFilter>
@@ -231,6 +237,7 @@ const Tab = styled.button`
   background: rgba(0, 0, 0, 0.75);
   ${typography};
   font-size: 2rem;
+  position: relative;
 
   transition: 300ms;
   &[data-active='true'] {
