@@ -3,8 +3,8 @@ function generateLangMap() {
   const langMap: Record<string, string> = {};
   for (let i = 0; i < 26; i++) {
     for (let j = 0; j < 26; j++) {
-      let code = String.fromCharCode(97 + i) + String.fromCharCode(97 + j);
-      let name = langNames.of(code);
+      const code = String.fromCharCode(97 + i) + String.fromCharCode(97 + j);
+      const name = langNames.of(code);
       if (name !== code && name !== undefined) {
         langMap[name] = code;
       }

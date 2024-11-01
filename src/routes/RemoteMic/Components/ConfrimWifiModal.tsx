@@ -59,7 +59,7 @@ export default function ConfirmWifiModal({ onClose }: Props) {
         </Wrapper>
         <h6>Otherwise microphones might not work properly.</h6>
         <MenuButton onClick={closeModal} focused data-test="confirm-wifi-connection">
-          I'm connected, continue
+          I&#39;m connected, continue
         </MenuButton>
       </Menu>
     </Modal>

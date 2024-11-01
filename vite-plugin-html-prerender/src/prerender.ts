@@ -62,7 +62,7 @@ const emitRendered = async (options: HtmlPrerenderOptions, config: ResolvedConfi
     })
     .then(async (renderedRoutes) => {
       console.log('[vite-plugin-html-prerender] Saving pre-rendered routes to output...');
-      for (let renderedRoute of renderedRoutes) {
+      for (const renderedRoute of renderedRoutes) {
         await renderer.saveToFile(options.staticDir, renderedRoute);
       }
     })

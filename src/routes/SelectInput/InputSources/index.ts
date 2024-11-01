@@ -22,7 +22,7 @@ class InputSourceListManager {
       [RemoteMicrophoneInputSource.inputName]: this.initialiseInputSource(RemoteMicrophoneInputSource),
     };
     if (import.meta.env.MODE === 'test') {
-      // @ts-expect-error
+      // @ts-expect-error only-for-test input is not in the list
       this.inputList[DrawingTestInputSource.inputName] = this.initialiseInputSource(DummyInputSource);
     }
   }

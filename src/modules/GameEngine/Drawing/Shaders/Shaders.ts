@@ -64,7 +64,7 @@ export class Shaders {
     this.plane.loadCanvas(this.canvas);
 
     this.plane.onRender(() => {
-      // @ts-expect-error
+      // @ts-expect-error - value is a number, but casting breaks build
       this.plane!.uniforms.time.value++;
       // console.log(this.plane!.uniforms.p0force.value);
     });

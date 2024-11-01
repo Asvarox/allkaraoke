@@ -21,9 +21,7 @@ import {
 import { GAME_CODE_LENGTH, storeGameCode } from 'modules/RemoteMic/Network/Server/NetworkServer';
 import { useDevicePing } from 'routes/SelectInput/hooks/useDevicePing';
 
-interface Props {}
-
-function RemoteMicSettings(props: Props) {
+function RemoteMicSettings() {
   useBackgroundMusic(false);
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('settings/');

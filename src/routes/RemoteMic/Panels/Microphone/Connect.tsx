@@ -115,7 +115,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
             onPaste={(event) => {
               // When Ctrl+V, remove whitespaces before changing the value
               event.preventDefault();
-              // @ts-expect-error
+              // @ts-expect-error clipboardData is not in the types
               let paste = (event.clipboardData || global.clipboardData).getData('text');
               paste = paste.replace(/\s/g, '');
               setCustomRoomId(paste.slice(0, GAME_CODE_LENGTH));
@@ -141,7 +141,7 @@ function Connect({ isVisible, roomId, connectionStatus, onConnect, connectionErr
       </Form>
       {(showConnectionTip || shouldShowError) && (
         <>
-          {showConnectionTip && <h3>If it doesn't connect</h3>}
+          {showConnectionTip && <h3>If it doesn&#39;t connect</h3>}
           {shouldShowError && (
             <>
               <h3>

@@ -274,8 +274,8 @@ export default function SongMetadata(props: Props) {
           helperText={
             isRealBpmInvalid ? (
               <>
-                Usually songs don't have higher BPM than <b>200</b>. Make sure the value is correct (you can still save
-                the song)
+                Usually songs don&#39;t have higher BPM than <b>200</b>. Make sure the value is correct (you can still
+                save the song)
               </>
             ) : (
               `The actual tempo of the song. Click the 'Lookup' button to look for it on Google. ${hasSearchedBpm ? "If you can't find it, you can still save the song" : ''}`

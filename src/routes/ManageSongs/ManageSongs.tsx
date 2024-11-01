@@ -5,9 +5,7 @@ import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { Helmet } from 'react-helmet';
 
-interface Props {}
-
-function ManageSongs(props: Props) {
+function ManageSongs() {
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('menu/');
 

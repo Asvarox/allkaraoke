@@ -3,11 +3,7 @@ import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { Helmet } from 'react-helmet';
 import SelectInputView from 'routes/SelectInput/SelectInputView';
 
-interface Props {
-  // file?: string;
-}
-
-function SelectInput(props: Props) {
+function SelectInput() {
   const navigate = useSmoothNavigate();
 
   return (

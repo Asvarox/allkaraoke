@@ -56,7 +56,7 @@ export const SingleSong = ({ song, durationInFrames }: { song: SongPreview; dura
             Fade({ to: 0, initial: 0.9, duration: 10, start: durationInFrames - 10 }),
           ]}>
           {highResThumbnail !== null && (
-            // @ts-expect-error
+            // @ts-expect-error for some reason it expects weird props on Img
             <Img
               style={{
                 opacity: highResThumbnail !== null ? 1 : 0,

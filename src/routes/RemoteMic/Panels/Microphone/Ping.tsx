@@ -2,9 +2,7 @@ import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { getPingTime } from 'modules/RemoteMic/Network/utils';
 import { useEffect, useState } from 'react';
 
-interface Props {}
-
-function Ping({}: Props) {
+function Ping() {
   const [latency, setLatency] = useState(0);
 
   useEffect(() => {

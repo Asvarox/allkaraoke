@@ -8,7 +8,6 @@ export function atPolyfill<T>(array: T[], index: number): T | undefined {
 }
 
 if (![].at) {
-  // eslint-disable-next-line no-extend-native
   Array.prototype.at = function (index: number) {
     return atPolyfill(this, index);
   };

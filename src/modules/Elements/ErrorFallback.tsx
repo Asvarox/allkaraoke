@@ -31,9 +31,9 @@ export const ErrorFallback: FallbackRender = ({ error, resetError }) => {
         </a>
       </h3>
       <MenuButton onClick={resetError}>Reset Error</MenuButton>
-      <h4>If that doesn't help</h4>
+      <h4>If that doesn&#39;t help</h4>
       <MenuButton onClick={() => (global.location.href = global.location?.origin)}>Reload the game</MenuButton>
-      <h4>If that doesn't help</h4>
+      <h4>If that doesn&#39;t help</h4>
       <MenuButton
         onClick={() => {
           if (

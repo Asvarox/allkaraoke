@@ -19,9 +19,7 @@ import { Helmet } from 'react-helmet';
 import ShareSongsModal, { useShareSongs } from 'routes/Edit/ShareSongsModal';
 import { Link } from 'wouter';
 
-interface Props {}
-
-export default function SongList(props: Props) {
+export default function SongList() {
   useBackground(false);
   useBackgroundMusic(false);
   const { data, reload } = useSongIndex(true);

@@ -1,11 +1,9 @@
 import styled from '@emotion/styled';
 import { captureException } from '@sentry/react';
 import CameraManager from 'modules/Camera/CameraManager';
-import { useEffect, useRef, useState } from 'react';
+import { ComponentProps, useEffect, useRef, useState } from 'react';
 
-interface Props {}
-
-function CameraRoll({ ...props }: Props) {
+function CameraRoll({ ...props }: ComponentProps<typeof Container>) {
   const [videoSrc, setVideoSrc] = useState('');
   const video = useRef<HTMLVideoElement | null>(null);
 

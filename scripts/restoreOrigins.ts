@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { Song } from 'interfaces';
 import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
-// @ts-ignore
+// @ts-ignore file might not exist
 import scrapedBpmData from './bandOrigins.json';
-// @ts-ignore
 
 const SONGS_FOLDER = './public/songs';
 
@@ -17,7 +17,7 @@ const SONGS_FOLDER = './public/songs';
     if (!file.endsWith('.txt')) continue;
     console.log('reading', file);
 
-    let song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+    const song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
     song.artistOrigin = (scrapedBpmData as Record<string, string>)[song.id];
     writeFileSync(`${SONGS_FOLDER}/${song.id}.txt`, convertSongToTxt(song), {

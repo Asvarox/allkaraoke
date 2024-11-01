@@ -134,8 +134,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     [song],
   );
 
-  let beatLength: number | undefined;
-  beatLength = getSongBeatLength(newSong);
+  const beatLength = getSongBeatLength(newSong);
 
   useEffect(() => {
     if (!visible) {
@@ -266,9 +265,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             </div>
             <div className="text-xs mb-2">Select a verse by clicking on it.</div>
             <div className="text-xs mb-2">
-              You can either <strong>Change its start beat</strong> (which will "move in time" the verse and all
-              subsequent ones) or <strong>Delete it</strong> (it won't affect the timing of other verses). You can also
-              edit the lyrics of each note.
+              You can either <strong>Change its start beat</strong> (which will &quot;move in time&quot; the verse and
+              all subsequent ones) or <strong>Delete it</strong> (it won&#39;t affect the timing of other verses). You
+              can also edit the lyrics of each note.
             </div>
             <div className="text-xs mb-2">
               <strong>List of changes</strong> on the right allows you to see and undo the actions one by one.

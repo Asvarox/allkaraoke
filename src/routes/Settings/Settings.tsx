@@ -18,9 +18,7 @@ import {
   useSettingValue,
 } from 'routes/Settings/SettingsState';
 
-interface Props {}
-
-function Settings(props: Props) {
+function Settings() {
   useBackgroundMusic(false);
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('menu/');

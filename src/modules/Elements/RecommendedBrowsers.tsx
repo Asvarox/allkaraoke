@@ -11,7 +11,7 @@ function RecommendedBrowsers() {
           <h2>
             This game is tested in <strong>Google Chrome</strong> and <strong>MS Edge</strong>.
           </h2>
-          It's not guaranteed to work on other browsers (like the one you use now).
+          It&#39;s not guaranteed to work on other browsers (like the one you use now).
         </RecommendChrome>
       )}
     </>

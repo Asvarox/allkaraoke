@@ -51,9 +51,9 @@ export const TestCanvas = (props: Props) => {
       tolerance: 2,
     });
 
-    // @ts-expect-error
+    // @ts-expect-error DrawingTest is only-for-test input and is not included in the typings
     PlayersManager.getPlayer(0)!.changeInput('DrawingTest', 0);
-    // @ts-expect-error
+    // @ts-expect-error DrawingTest is only-for-test input and is not included in the typings
     PlayersManager.getPlayer(1)!.changeInput('DrawingTest', 1);
   }, []);
 

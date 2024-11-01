@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { Song } from 'interfaces';
 import { IArtistList, MusicBrainzApi } from 'musicbrainz-api';
@@ -6,12 +7,12 @@ import convertSongToTxt from '../src/modules/Songs/utils/convertSongToTxt';
 import convertTxtToSong from '../src/modules/Songs/utils/convertTxtToSong';
 import clearString from '../src/modules/utils/clearString';
 import { fixDiacritics } from '../src/routes/Convert/Steps/utils/fixDiacritics';
-// @ts-ignore
+// @ts-ignore file might not exist
 import escSongs from './escSongs.json';
-// @ts-ignore
+// @ts-ignore file might not exist
 import scrapedBpmData from './scraped-bpm-data.json';
 
-// @ts-ignore
+// @ts-expect-error
 const mbApi = new MusicBrainzApi({
   appName: 'Olkaraoke',
   appVersion: '0.1.0',
@@ -27,7 +28,7 @@ const SONGS_FOLDER = './public/songs';
     if (!file.endsWith('.txt')) continue;
     console.log('reading', file);
 
-    let song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+    const song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
     console.log(`"${song.artist}" "${song.title}"`);
     const { tracks, ...songData } = song;

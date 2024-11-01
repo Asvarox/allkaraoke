@@ -39,7 +39,7 @@ const data = [
     <strong>Convert Ultrastar .txt</strong>
   </>,
   <>
-    The <strong>white pulse</strong> around selected song in Song Selection tries to match song's tempo
+    The <strong>white pulse</strong> around selected song in Song Selection tries to match song&#39;s tempo
   </>,
   <>
     Entire game (besides add/edit song) is navigable with <strong>Keyboard</strong>

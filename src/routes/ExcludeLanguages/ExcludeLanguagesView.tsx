@@ -75,10 +75,10 @@ function ExcludeLanguagesView({ onClose, closeText }: Props) {
 
   useEffect(() => {
     if (excludedLanguages === null && navigator?.languages) {
-      let languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
+      const languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
       const preferredLanguages = navigator?.languages
-        .map((lang) => languageNames.of(lang)?.toLowerCase()!)
-        .filter(Boolean);
+        .map((lang) => languageNames.of(lang)?.toLowerCase())
+        .filter(Boolean) as string[];
 
       const toExclude = languageList
         .map((lang) => lang.name)

@@ -68,7 +68,7 @@ function WaitForReadiness({ onFinish }: Props) {
       <WaitingForReady>
         {!areAllPlayersReady && (
           <span>
-            Waiting for all players to click <strong>"Ready"</strong>
+            Waiting for all players to click <strong>&quot;Ready&quot;</strong>
           </span>
         )}
         <PlayerList>

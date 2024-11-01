@@ -16,9 +16,7 @@ import { Helmet } from 'react-helmet';
 import LayoutGame from 'routes/LayoutGame';
 import SongPage from '../Game/SongPage';
 
-interface Props {}
-
-function Jukebox(props: Props) {
+function Jukebox() {
   useBackground(false);
   useBackgroundMusic(false);
   const navigate = useSmoothNavigate();

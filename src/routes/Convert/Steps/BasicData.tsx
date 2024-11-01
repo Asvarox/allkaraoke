@@ -60,8 +60,8 @@ export default function BasicData(props: Props) {
             <br />
           </p>
           <p>
-            You don't need audio/video files, you'll be able to search for appropriate YouTube video and synchronise the
-            lyrics to it in subsequent steps.
+            You don&#39;t need audio/video files, you&#39;ll be able to search for appropriate YouTube video and
+            synchronise the lyrics to it in subsequent steps.
           </p>
         </div>
       )}

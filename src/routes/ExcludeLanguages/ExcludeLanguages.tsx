@@ -3,9 +3,7 @@ import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
 import { Helmet } from 'react-helmet';
 import ExcludeLanguagesView from './ExcludeLanguagesView';
 
-interface Props {}
-
-function ExcludeLanguages(props: Props) {
+function ExcludeLanguages() {
   const navigate = useSmoothNavigate();
   const goBack = () => navigate('menu/');
 

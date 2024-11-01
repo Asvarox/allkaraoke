@@ -3,7 +3,6 @@
  * Including core-js or other polyfill libraries increases bundle size
  */
 if (![].findLastIndex) {
-  // eslint-disable-next-line no-extend-native
   Array.prototype.findLastIndex = function (callback, thisArg) {
     for (let i = this.length - 1; i >= 0; i--) {
       if (callback.call(thisArg, this[i], i, this)) return i;

@@ -271,7 +271,7 @@ test('Convert song', async ({ page }) => {
   const chunks = [];
   if (downloadStream === null) throw new Error('File download failed');
 
-  for await (let chunk of downloadStream) {
+  for await (const chunk of downloadStream) {
     chunks.push(chunk);
   }
 

@@ -65,11 +65,11 @@ const msToFps = (ms: number) => (ms / 1000) * 30;
 export const getUpdateVideoLength = () =>
   120 + getNewSongsSequenceLength(data.newSongs) - 30 + getUpdatesSequenceLength(data.updates) + 120;
 
-export const UpdateVideo: React.FC<{}> = () => {
+export const UpdateVideo: React.FC = () => {
   const { durationInFrames } = useVideoConfig();
   return (
     <GameScreens>
-      {/* @ts-expect-error */}
+      {/* @ts-expect-error expects weird props for Audio */}
       <Audio
         src={music}
         startFrom={msToFps(12_050)}

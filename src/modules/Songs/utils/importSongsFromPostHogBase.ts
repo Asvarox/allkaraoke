@@ -29,7 +29,7 @@ const normalizeSong = (song: Song): Song => {
 
   song.lastUpdate = new Date().toISOString();
 
-  // @ts-ignore
+  // @ts-expect-error reset id before generating a new one
   song.id = undefined;
   song.id = getSongId(song);
 
@@ -81,7 +81,7 @@ export const importSongsFromPostHogBase = async (
         console.log(`Deleting song ${songId}`);
       }
 
-      let song = convertTxtToSong(songTxt.replaceAll('\\n', '\n').replaceAll('\\"', '"'));
+      const song = convertTxtToSong(songTxt.replaceAll('\\n', '\n').replaceAll('\\"', '"'));
       if (!song.id) {
         console.log('Song has no ID', song);
         return;

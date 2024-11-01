@@ -111,7 +111,7 @@ export default function useKeyboardNav(options: Options = {}, debug = false) {
   }, [currentlySelected]);
 
   useEffect(() => {
-    let newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
+    const newElements = newElementList.current.filter((e) => !elementList.current.includes(e));
     debug && newElements.length && console.log('new elements', newElements);
     elementList.current = [...newElementList.current];
     newElementList.current.length = 0;

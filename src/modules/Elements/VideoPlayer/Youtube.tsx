@@ -74,7 +74,7 @@ export default forwardRef(function YoutubeVideoPlayer(
     seekTo: (timeSec: seconds) => player.current?.getInternalPlayer()!.seekTo(timeSec, true),
     setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(speed),
     setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume),
-    getCurrentTime: () => player.current?.getInternalPlayer()!.getCurrentTime()!,
+    getCurrentTime: () => player.current?.getInternalPlayer?.()?.getCurrentTime?.() ?? Promise.resolve(0),
     loadVideoById: (opts) => player.current?.getInternalPlayer()!.loadVideoById(opts),
     playVideo: () => {
       // console.log('play');
@@ -84,7 +84,7 @@ export default forwardRef(function YoutubeVideoPlayer(
       // console.log('paused');
       return player.current?.getInternalPlayer()!.pauseVideo();
     },
-    getDuration: () => player.current?.getInternalPlayer()!.getDuration()!,
+    getDuration: () => player.current?.getInternalPlayer?.()?.getDuration?.() ?? Promise.resolve(0),
   }));
 
   return (

@@ -120,7 +120,7 @@ function BuiltIn(props: Props) {
         {selectedMic && (
           <>
             <Header>
-              <h3>You'll sing using</h3>
+              <h3>You&#39;ll sing using</h3>
               <h4>(click to change)</h4>
             </Header>
             <Switcher {...register('selected-mic', cycleMic)} label="Mic" value={selectedMic} />
@@ -151,7 +151,7 @@ function BuiltIn(props: Props) {
               )}
             </AudibleStatus>
             {isAudible === false && (
-              <h4>Make some noise to the microphone. If that doesn't work, try using another microphone.</h4>
+              <h4>Make some noise to the microphone. If that doesn&#39;t work, try using another microphone.</h4>
             )}
           </>
         )}

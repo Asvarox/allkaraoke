@@ -5,8 +5,7 @@ import allKaraokeLogo from 'modules/Elements/logo.gif';
 import { Fade, Move, Scale } from 'remotion-animated';
 import { SAnimated } from 'videos/support/Components/common';
 
-interface Props {}
-export const Logo: React.FC<Props> = () => {
+export const Logo: React.FC = () => {
   const micStyles = {
     width: '7rem',
     height: '7rem',
