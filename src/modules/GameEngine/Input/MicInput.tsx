@@ -10,12 +10,14 @@ export class MicInput implements InputInterface {
 
   private interval: ReturnType<typeof setInterval> | null = null;
 
-  private frequencies: [number, number] = [0, 0];
-  private volumes: [number, number] = [0, 0];
+  private frequencies: number[] = [0, 0];
+  private volumes: number[] = [0, 0];
 
   private startedMonitoring = false;
 
-  public startMonitoring = async (deviceId?: string, echoCancellation = false) => {
+  constructor(private channels = 2) {}
+
+  public startMonitoring = async (deviceId?: string) => {
     if (this.startedMonitoring) return;
     this.startedMonitoring = true;
 
@@ -23,7 +25,7 @@ export class MicInput implements InputInterface {
       this.stream = await userMediaService.getUserMedia({
         audio: {
           ...(deviceId ? { deviceId, exact: true } : {}),
-          echoCancellation: echoCancellation,
+          echoCancellation: false,
         },
         video: false,
       });
@@ -31,32 +33,40 @@ export class MicInput implements InputInterface {
         this.context = new AudioContext();
 
         const source = this.context.createMediaStreamSource(this.stream);
-        const splitter = this.context.createChannelSplitter(2);
-        source.connect(splitter);
 
-        const analyserCh0 = this.context.createAnalyser();
-        analyserCh0.fftSize = 2048;
-        analyserCh0.minDecibels = -100;
-        const analyserCh1 = this.context.createAnalyser();
-        analyserCh1.fftSize = 2048;
-        analyserCh1.minDecibels = -100;
-        splitter.connect(analyserCh0, 0);
-        splitter.connect(analyserCh1, 1);
+        const analysers = Array.from({ length: this.channels }, () => {
+          const analyser = this.context!.createAnalyser();
+          analyser.fftSize = 2048;
+          analyser.minDecibels = -100;
+          return analyser;
+        });
+
+        if (this.channels > 1) {
+          const splitter = this.context.createChannelSplitter(2);
+          source.connect(splitter);
+
+          analysers.forEach((analyser, i) => {
+            splitter.connect(analyser, i);
+          });
+        } else {
+          source.connect(analysers[0]);
+        }
+
+        console.log(this.channels);
 
         const strategy = new AubioStrategy();
-        await strategy.init(this.context, analyserCh0.fftSize);
+        await strategy.init(this.context, analysers[0].fftSize);
 
         this.interval = setInterval(async () => {
-          const dataCh0 = new Float32Array(analyserCh0.fftSize);
-          const dataCh1 = new Float32Array(analyserCh1.fftSize);
+          const frequencyData = analysers.map((analyser) => new Float32Array(analyser.fftSize));
 
-          analyserCh0.getFloatTimeDomainData(dataCh0);
-          analyserCh1.getFloatTimeDomainData(dataCh1);
+          analysers.forEach((analyser, i) => {
+            analyser.getFloatTimeDomainData(frequencyData[i]);
+          });
 
-          this.frequencies = await Promise.all([strategy.getFrequency(dataCh0), strategy.getFrequency(dataCh1)]);
-
-          this.volumes = [this.calculateVolume(dataCh0), this.calculateVolume(dataCh1)];
-        }, this.context.sampleRate / analyserCh0.fftSize);
+          this.frequencies = await Promise.all(frequencyData.map((data) => strategy.getFrequency(data)));
+          this.volumes = frequencyData.map((data) => this.calculateVolume(data));
+        }, this.context.sampleRate / analysers[0].fftSize);
 
         events.micMonitoringStarted.dispatch();
       } catch (e) {

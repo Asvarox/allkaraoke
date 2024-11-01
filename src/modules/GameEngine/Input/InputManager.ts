@@ -69,10 +69,9 @@ class InputManager {
   };
 
   public startMonitoring = async () => {
+    const allInputs = PlayersManager.getPlayers().map((player) => player.input);
     await Promise.all(
-      PlayersManager.getPlayers().map((player) =>
-        this.sourceNameToInput(player.input.source).startMonitoring(player.input.deviceId),
-      ),
+      allInputs.map((input) => this.sourceNameToInput(input.source).startMonitoring(input.deviceId, allInputs)),
     );
     this.isMonitoring = true;
   };

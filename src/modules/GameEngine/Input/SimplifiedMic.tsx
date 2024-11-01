@@ -5,7 +5,7 @@ import events from 'modules/GameEvents/GameEvents';
 import userMediaService from 'modules/UserMedia/userMediaService';
 import Listener from 'modules/utils/Listener';
 
-class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
+export class SimplifiedMic extends Listener<[number, number]> implements InputInterface {
   private stream: MediaStream | null = null;
   private context: AudioContext | null = null;
 
@@ -16,13 +16,15 @@ class SimplifiedMic extends Listener<[number, number]> implements InputInterface
 
   private startedMonitoring = false;
 
-  public startMonitoring = async (deviceId?: string, echoCancellation = false) => {
+  public startMonitoring = async (deviceId?: string) => {
     if (this.startedMonitoring) return;
     this.startedMonitoring = true;
 
     try {
       this.stream = await userMediaService.getUserMedia({
         audio: {
+          // echoCancellation is turned on because without it there is silence from the mic
+          // every other second (possibly some kind of Chrome Mobile bug)
           echoCancellation: true,
           noiseSuppression: true,
           autoGainControl: false,
