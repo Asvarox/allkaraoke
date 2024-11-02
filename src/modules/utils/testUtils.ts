@@ -55,7 +55,7 @@ export const generateSection = (start: number, length: number, notesCount: numbe
 export function createDataSequence(start: number, end: number, length: number, repeats = 5) {
   const step = (end - start) / length;
 
-  let data: number[] = [];
+  const data: number[] = [];
 
   for (let i = 0; i < length * repeats; i++) data.push(start + step * Math.floor(i / repeats));
 

@@ -15,11 +15,11 @@ dotenv.config({ path: '.env.local' });
     throw new Error('Missing user ID');
   }
 
-  let daysFrom = argDaysFrom !== '' ? +argDaysFrom : 2;
+  const daysFrom = argDaysFrom !== '' ? +argDaysFrom : 2;
   if (isNaN(daysFrom)) {
     throw new Error(`Invalid day from: "${argDaysFrom}"`);
   }
-  let daysTo = argDaysTo !== '' ? +argDaysTo : 0;
+  const daysTo = argDaysTo !== '' ? +argDaysTo : 0;
   if (isNaN(daysTo)) {
     throw new Error(`Invalid day to: "${argDaysTo}"`);
   }
@@ -59,7 +59,7 @@ dotenv.config({ path: '.env.local' });
         fs.rmSync(`./public/songs/${songId}.txt`);
         console.log(`Deleting song ${songId}`);
       }
-      let song = convertTxtToSong(songTxt?.replaceAll('\\n', '\n'));
+      const song = convertTxtToSong(songTxt?.replaceAll('\\n', '\n'));
       if (!song.id) {
         console.log('Song has no ID', song, songId);
         return;

@@ -73,7 +73,7 @@ function LandingPage() {
         <Stats>
           <StatSegment>
             <StatsDescription>
-              <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation's{' '}
+              <strong>AllKaraoke</strong> is a free online karaoke game inspired by PlayStation&#39;s{' '}
               <strong>SingStar</strong>. Sing along to your favorite songs and compete with your friends, all through
               the browser! Updated almost weekly with new songs and features.
             </StatsDescription>

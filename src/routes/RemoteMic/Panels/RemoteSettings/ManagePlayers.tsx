@@ -11,9 +11,7 @@ import PlayerChangeModal from 'routes/RemoteMic/Components/PlayerChangeModal';
 import PlayerNumberCircle from 'routes/RemoteMic/Components/PlayerNumberCircle';
 import { ValuesType } from 'utility-types';
 
-interface Props {}
-
-function ManagePlayers(props: Props) {
+function ManagePlayers() {
   useEffect(() => {
     RemoteMicClient.subscribe('remote-mics');
 

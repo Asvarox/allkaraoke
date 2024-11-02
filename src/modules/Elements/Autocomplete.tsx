@@ -132,6 +132,8 @@ export const Autocomplete = forwardRef(
   },
 );
 
+Autocomplete.displayName = 'Autocomplete';
+
 const Container = styled.div`
   position: relative;
 `;

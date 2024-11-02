@@ -13,7 +13,7 @@ const origins: Record<string, string> = {};
     if (!file.endsWith('.txt')) continue;
     console.log('reading', file);
 
-    let song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
+    const song: Song = convertTxtToSong(readFileSync(`${SONGS_FOLDER}/${file}`, { encoding: 'utf-8' }));
 
     if (song.artistOrigin) {
       origins[song.id] = song.artistOrigin;

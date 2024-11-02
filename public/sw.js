@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-globals */
+ 
 
 const CACHE_NAME = 'allkaraoke-party-app-cache-v1';
 

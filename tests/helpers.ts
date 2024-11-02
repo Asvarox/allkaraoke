@@ -66,9 +66,9 @@ export const stubUserMedia = async ({ context, page }: { page: Page; context: Br
     };
 
     const getUserMedia = async (capabilities: MediaStreamConstraints) => {
-      // @ts-ignore
+      // @ts-expect-error deviceId is not in the types
       if (capabilities.audio?.deviceId?.exact) {
-        // @ts-ignore
+        // @ts-expect-error deviceId is not in the types
         const device = mediaDevices.find((device) => device.id === capabilities.audio?.deviceId.exact);
 
         if (!device) {
@@ -122,7 +122,7 @@ export const stubUserMedia = async ({ context, page }: { page: Page; context: Br
     connectDevices: (...deviceList: SimDevice[]) =>
       page.evaluate(
         ([devices]) => {
-          // @ts-expect-error
+          // @ts-expect-error mediaSimulator is not in the types
           window.mediaSimulator.connectMediaDevices(...devices);
         },
         [deviceList],
@@ -130,7 +130,7 @@ export const stubUserMedia = async ({ context, page }: { page: Page; context: Br
     disconnectDevices: (...deviceList: SimDevice[]) =>
       page.evaluate(
         ([devices]) => {
-          // @ts-expect-error
+          // @ts-expect-error mediaSimulator is not in the types
           window.mediaSimulator.disconnectMediaDevices(...devices);
         },
         [deviceList],

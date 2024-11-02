@@ -111,7 +111,7 @@ function SingStarMics(props: Props) {
               <>
                 {!listChanged && (
                   <ChromeIssue data-test="advanced-tip">
-                    If they don't get detected, try{' '}
+                    If they don&#39;t get detected, try{' '}
                     <button onClick={() => props.changePreference('advanced')}>Advanced</button> section in the previous
                     menu.
                   </ChromeIssue>

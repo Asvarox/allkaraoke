@@ -63,7 +63,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
   const getGroupIndex = useCallback(
     (group: string, index: number) => {
-      let groupIndex = props.groups.findIndex((g) => g.name === group);
+      const groupIndex = props.groups.findIndex((g) => g.name === group);
 
       if (groupIndex === -1) {
         return props.groups.findIndex((g) => g.songs.some((s) => s.index === index));
@@ -75,7 +75,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
   const getSongRow = useCallback(
     (group: string, index: number) => {
-      let groupIndex = getGroupIndex(group, index);
+      const groupIndex = getGroupIndex(group, index);
       if (groupIndex === -1) {
         return;
       }
@@ -92,7 +92,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
   useImperativeHandle(ref, (): VirtualizedListMethods => {
     return {
       getSongPosition: (group, index) => {
-        let groupIndex = getGroupIndex(group, index);
+        const groupIndex = getGroupIndex(group, index);
         if (groupIndex === -1) {
           return;
         }

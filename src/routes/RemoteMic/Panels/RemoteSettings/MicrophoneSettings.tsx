@@ -61,7 +61,7 @@ function MicrophoneSettings() {
         step={25}
         data-test="microphone-delay"
       />
-      <h6>Adjust the microphone input delay (e.g. if the game doesn't detect you hitting the note on time)</h6>
+      <h6>Adjust the microphone input delay (e.g. if the game doesn&#39;t detect you hitting the note on time)</h6>
     </>
   );
 }

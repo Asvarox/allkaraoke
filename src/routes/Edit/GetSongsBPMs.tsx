@@ -27,7 +27,7 @@ interface GetSongBpmSearchEntry {
   };
 }
 
-export default function GetSongsBPMs(props: {}) {
+export default function GetSongsBPMs() {
   useBackgroundMusic(false);
   const songList = useSongIndex();
 

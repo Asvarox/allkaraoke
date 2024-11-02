@@ -23,8 +23,8 @@ function SuggestMobilePhone() {
         <Modal>
           <h1>Use Mobile Phone Mode?</h1>
           <h3>
-            The regular version of the game isn't optimal for smaller screens. Enable the Mobile Phone Mode to adjust
-            the UI and gameplay elements. Use this, or connect other mobiles to sing songs.
+            The regular version of the game isn&#39;t optimal for smaller screens. Enable the Mobile Phone Mode to
+            adjust the UI and gameplay elements. Use this, or connect other mobiles to sing songs.
           </h3>
           <h3>
             You can always change the setting in the <strong>Settings</strong> menu.

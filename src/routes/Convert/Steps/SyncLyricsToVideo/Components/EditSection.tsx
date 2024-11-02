@@ -218,11 +218,11 @@ export default function EditSection({
                         });
                       }}
                       onKeyDown={(e) => {
-                        // @ts-expect-error
+                        // @ts-expect-error selectionStart is not in the types
                         const currentPos = e.target.selectionStart;
 
                         if (e.key === 'ArrowLeft' && currentPos === 0) {
-                          // @ts-expect-error
+                          // @ts-expect-error previousElementSibling is not in the types
                           const prevInput = e.target?.previousElementSibling as HTMLInputElement;
                           if (prevInput) {
                             prevInput.focus();
@@ -231,9 +231,9 @@ export default function EditSection({
                               10,
                             );
                           }
-                          // @ts-expect-error
+                          // @ts-expect-error value is not in the types
                         } else if (e.key === 'ArrowRight' && currentPos === e.target.value.length) {
-                          // @ts-expect-error
+                          // @ts-expect-error nextElementSibling is not in the types
                           const nextInput = e.target?.nextElementSibling as HTMLInputElement;
                           if (nextInput) {
                             nextInput.focus();

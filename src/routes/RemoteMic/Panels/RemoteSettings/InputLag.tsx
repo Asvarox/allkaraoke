@@ -2,9 +2,7 @@ import RemoteMicClient from 'modules/RemoteMic/Network/Client';
 import { useEffect, useState } from 'react';
 import NumericInput from 'routes/RemoteMic/Components/NumericInput';
 
-interface Props {}
-
-function RemoteInputLag({}: Props) {
+function RemoteInputLag() {
   const [currentValue, setCurrentValue] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 

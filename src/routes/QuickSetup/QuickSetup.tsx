@@ -8,11 +8,7 @@ import SuggestMobileMode from 'routes/QuickSetup/SuggestMobileMode';
 import SelectInputView from 'routes/SelectInput/SelectInputView';
 import { MicSetupPreference, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 
-interface Props {
-  // file?: string;
-}
-
-function QuickSetup(props: Props) {
+function QuickSetup() {
   const [mobilePhoneMode] = useSettingValue(MobilePhoneModeSetting);
   const isMobileDevice = useMemo(() => isMobile(), []);
 

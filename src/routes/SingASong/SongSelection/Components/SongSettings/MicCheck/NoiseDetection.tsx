@@ -54,7 +54,7 @@ export default function NoiseDetection() {
       </h2>
       <hr />
       <h4>
-        This might make singing inaccurate. Make sure your microphone doesn't pick up the music.{' '}
+        This might make singing inaccurate. Make sure your microphone doesn&#39;t pick up the music.{' '}
         {isBuiltIn && (
           <>
             Alternatively, use your <strong>smartphone as a microphone</strong> instead.

@@ -41,7 +41,7 @@ export function useEventEffect<T extends AnyFunc>(
   }, [...eventList, effect, ...dependencies]);
 }
 
-export function useEventListenerSelector<S extends any>(
+export function useEventListenerSelector<S>(
   event: GameEvent<any> | GameEvent<any>[],
   selector: () => S,
   dependencies: any[] = [],

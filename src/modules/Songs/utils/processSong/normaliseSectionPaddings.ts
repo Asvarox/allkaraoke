@@ -22,7 +22,7 @@ const getSectionEnd = (section: NotesSection) => {
 
 const addPauseSections = (sections: NotesSection[], padSizeBeats = 10): Section[] => {
   let lastEnd = 0;
-  let sectionsWithPauses: Section[] = [];
+  const sectionsWithPauses: Section[] = [];
 
   sections.forEach((section) => {
     const spaceBetweenSections = section.start - lastEnd;

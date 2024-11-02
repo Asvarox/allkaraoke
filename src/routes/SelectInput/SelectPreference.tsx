@@ -64,8 +64,8 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         <div>
           This {mobilePhoneMode ? "device's" : "computer's"} microphone
           <OptionDescription>
-            Great to <strong>test</strong> the app, <strong>sing alone</strong> or don't care about the rivalry at the
-            party
+            Great to <strong>test</strong> the app, <strong>sing alone</strong> or don&#39;t care about the rivalry at
+            the party
           </OptionDescription>
         </div>
         <PlayersNumber>
@@ -108,7 +108,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         <div>
           Advanced (manual) setup
           <OptionDescription>
-            Assign the specific device to a player manually, e.g. if you don't have regular SingStar microphones.
+            Assign the specific device to a player manually, e.g. if you don&#39;t have regular SingStar microphones.
           </OptionDescription>
         </div>
         <PlayersNumber>

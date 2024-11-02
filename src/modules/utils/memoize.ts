@@ -46,14 +46,14 @@ function memoize<T extends (...args: any) => any>(func: T, resolver?: any): T & 
     throw new TypeError('Expected a function');
   }
   const memoized: ((...args: Parameters<T>) => any) & { cache: any } = function (...args) {
-    // @ts-ignore
+    // @ts-expect-error `this` is any
     const key = resolver ? resolver.apply(this, args) : args[0];
     const cache = memoized.cache;
 
     if (cache.has(key)) {
       return cache.get(key);
     }
-    // @ts-ignore
+    // @ts-expect-error `this` is any
     const result = func.apply(this, args);
     memoized.cache = cache.set(key, result) || cache;
     return result;

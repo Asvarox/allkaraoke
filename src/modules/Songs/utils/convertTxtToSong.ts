@@ -108,7 +108,7 @@ export function getVideoId(url: string) {
     return null;
   }
 }
-function safeJsonParse<T extends any, DV extends any = T>(str: any, defaultValue: DV): T | DV {
+function safeJsonParse<T, DV = T>(str: any, defaultValue: DV): T | DV {
   try {
     return JSON.parse(str);
   } catch (e) {

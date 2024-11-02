@@ -90,7 +90,7 @@ class InputManager {
   // todo: Create eg. "InputSourceManager" and have the logic there?
   public sourceNameToInput = (sourceName: InputSourceNames): InputInterface => {
     if (sourceName === MicrophoneInputSource.inputName) return MicInput;
-    // @ts-expect-error
+    // @ts-expect-error only-for-testing input not included in the typings
     if (sourceName === DrawingTestInputSource.inputName) return DrawingTestInput;
     if (sourceName === RemoteMicrophoneInputSource.inputName) return RemoteMicInput;
     return dummyInput;
