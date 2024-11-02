@@ -169,14 +169,12 @@ test('Searching song in all and favourite songs list', async ({ page, browser })
     await remoteMic.remoteMicSongListPage.goToFavouriteList();
     await remoteMic.remoteMicSongListPage.searchTheSong(songs.polish3.name);
 
-    test.fail(true, 'Searching songs in Favourite songs list does not work');
     await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songs.polish3.ID)).toBeVisible();
     await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songs.spanish.ID)).not.toBeVisible();
 
     await remoteMic.remoteMicSongListPage.searchInput.clear();
     await remoteMic.remoteMicSongListPage.searchTheSong(songs.spanish.name);
 
-    test.fail(true, 'Searching songs in Favourite songs list does not work');
     await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songs.spanish.ID)).toBeVisible();
     await expect.soft(remoteMic.remoteMicSongListPage.getSongElement(songs.polish3.ID)).not.toBeVisible();
   });
