@@ -1,0 +1,199 @@
+#ARTIST:Dove Cameron
+#TITLE:Better In Stereo
+#CREATOR:jmfb
+#BPM:220
+#YEAR:2015
+#PREVIEWSTART:16
+#VIDEO:v=iMlN2WbODHA
+#LANGUAGE:English
+#GAP:1033,2727272727275
+#ALLKARAOKE_ID:dove-cameron-better-in-stereo
+#ALLKARAOKE_LASTUPDATE:2024-11-03T00:12:30.976Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=iMlN2WbODHA
+#ALLKARAOKE_PREVIEWEND:41
+#ALLKARAOKE_VOLUME:0,75
+#MP3:Dove Cameron - Better In Stereo (TV).mp3
+#COVER:Dove Cameron - Better In Stereo (TV).jpg
+#MEDLEYSTARTBEAT:302
+#MEDLEYENDBEAT:559
+: 15 3 5 Bet
+: 19 1 4 ter 
+: 21 2 5 in 
+: 25 1 5 ster
+: 27 2 4 e
+: 30 4 0 o
+- 34
+: 37 2 5 B-
+: 43 2 5 b-
+: 47 3 5 bet
+: 51 1 4 ter 
+: 53 2 5 in 
+* 57 1 5 ster
+* 59 2 4 e
+* 62 4 0 o
+- 66
+: 69 1 7 I'm 
+: 71 2 7 up 
+: 75 2 7 with 
+: 78 1 7 the 
+: 81 2 9 sun
+: 86 8 4 shine
+- 94
+: 100 2 7 I 
+: 103 2 7 lace 
+: 107 2 7 up 
+: 111 1 7 my 
+: 113 2 9 high 
+: 118 6 4 tops
+- 124
+: 133 1 2 Slam
+: 135 1 4 ~ 
+: 137 2 0 dunk, 
+: 145 1 2 read
+: 147 1 5 ~
+: 149 1 5 y 
+* 151 1 5 or
+* 153 2 4 ~ 
+* 157 3 2 not
+- 160
+: 164 3 5 Yeah, 
+: 169 3 4 show 
+: 173 2 0 me 
+: 177 2 5 what 
+: 181 1 4 you 
+: 183 4 0 got
+- 187
+: 197 1 7 I'm 
+: 199 3 7 un
+: 203 3 7 der 
+: 207 1 7 the 
+: 209 1 7 spot
+: 211 1 9 ~
+: 213 7 4 light
+- 220
+: 228 2 7 I 
+: 232 3 7 dare 
+: 236 2 7 you, 
+* 239 1 7 come 
+* 241 1 9 on
+* 243 1 4 ~ 
+: 245 2 4 and 
+: 249 3 2 fol
+: 253 5 4 low
+- 258
+: 261 3 4 You 
+: 265 3 2 dance 
+: 269 2 0 to 
+: 273 2 4 your
+: 276 1 5 ~ 
+: 279 4 4 own 
+: 285 3 2 beat
+- 288
+: 292 3 5 I'll 
+: 297 3 4 sing 
+: 301 2 0 the 
+: 305 2 5 mel
+: 308 2 4 o
+: 311 3 0 dy
+- 314
+: 317 2 0 When 
+: 321 3 -3 you 
+: 327 4 0 say 
+: 333 1 5 yeah
+: 335 2 7 ~
+: 338 4 4 ~
+: 343 5 2 ~
+: 349 1 0 ~
+- 350
+: 353 3 7 I 
+: 359 4 7 say 
+* 364 1 7 no
+* 366 2 9 ~
+: 369 5 4 ~
+: 375 3 2 ~
+- 378
+: 381 2 0 When 
+: 385 3 -3 you 
+: 391 4 0 say 
+: 397 8 4 stop
+- 405
+: 417 2 7 All 
+: 420 1 7 I 
+: 422 1 7 wan
+: 424 1 7 na 
+: 426 2 4 do 
+: 429 1 0 is
+- 430
+: 433 3 7 Go, 
+: 437 2 7 go, 
+: 441 1 5 go
+: 443 1 4 ~
+: 445 2 2 ~
+- 447
+: 450 3 12 You, 
+* 457 3 7 you
+- 460
+: 463 1 7 The 
+: 465 2 12 oth
+: 468 2 7 er 
+: 471 3 4 half 
+: 475 3 7 of 
+: 481 4 12 me, 
+: 489 3 7 me
+- 492
+: 495 1 7 The 
+: 497 2 12 half 
+: 500 3 14 I'll 
+: 504 2 12 nev
+: 507 3 11 er 
+: 513 4 12 be
+: 521 3 7 ~
+- 524
+: 527 1 7 The 
+: 529 2 12 half 
+: 533 1 7 that 
+: 536 3 4 drives 
+: 541 2 7 me 
+* 545 3 9 cra
+* 549 3 11 ~
+* 553 3 9 ~
+: 557 7 7 ~
+: 565 1 2 ~
+: 567 2 4 ~
+: 570 2 2 zy
+: 573 1 0 ~
+- 574
+: 577 4 12 You, 
+: 585 3 7 you
+- 588
+: 591 1 7 The 
+: 593 1 12 bet
+: 595 2 7 ter 
+: 599 3 4 half 
+: 603 2 7 of 
+: 609 3 12 me, 
+: 617 3 7 me
+- 620
+: 623 1 7 The 
+: 625 2 12 half 
+: 628 3 14 I'll 
+: 632 2 12 al
+: 635 3 11 ways 
+: 641 4 12 need
+: 649 5 7 ~
+- 654
+: 660 2 0 When 
+: 663 3 9 we 
+: 667 3 9 both 
+: 673 8 2 know
+- 681
+: 685 1 0 We're 
+: 687 3 5 bet
+: 691 1 4 ter 
+: 693 2 5 in 
+* 697 1 5 ster
+* 699 2 4 e
+: 702 11 0 o
+E

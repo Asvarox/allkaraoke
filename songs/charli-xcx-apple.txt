@@ -1,0 +1,307 @@
+#ARTIST:Charli XCX
+#TITLE:Apple
+#CREATOR:makholl
+#BPM:378,14
+#YEAR:2024
+#VIDEO:v=CPWxExGk7PM
+#GENRE:Pop, Club, Hyperpop
+#LANGUAGE:English
+#GAP:14199,30380282435
+#ALLKARAOKE_ID:charli-xcx-apple
+#ALLKARAOKE_LASTUPDATE:2024-11-03T00:12:32.393Z
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_VOLUME:0,76
+#MP3:Charli XCX - Apple.mp3
+#COVER:Charli XCX - Apple [CO].jpg
+#BACKGROUND:Charli XCX - Apple [BG].jpg
+: 25 4 19 I 
+: 30 4 19 guess 
+: 35 4 19 the 
+: 40 4 19 ap
+: 46 4 12 ple 
+: 52 4 12 don't 
+: 58 5 9 fall 
+: 63 6 16 far 
+: 69 6 17 from 
+: 76 4 16 the 
+: 82 10 12 tree
+- 92
+: 95 5 12 cause 
+: 101 5 9 I've 
+: 106 4 7 been 
+: 112 6 16 look
+: 118 7 17 ing 
+: 125 3 16 at 
+: 129 5 14 you 
+: 135 5 14 so 
+: 141 6 12 long 
+: 148 5 12 now 
+: 154 5 9 I 
+: 161 4 16 on
+: 166 4 17 ly 
+: 172 6 16 see 
+: 179 10 14 me
+- 189 190
+- 190
+: 215 5 19 I 
+: 220 5 19 wanna 
+: 229 8 19 throw 
+: 238 4 12 the 
+: 243 4 12 ap
+: 250 6 9 ple 
+: 256 5 16 in
+: 261 5 17 to 
+: 267 6 16 the 
+: 273 6 12 sky 
+: 285 6 12 Feels 
+: 292 5 9 like 
+: 297 4 7 you 
+: 304 5 16 ne
+: 309 6 17 ver
+- 315
+: 316 5 16 un
+: 321 5 14 der
+: 327 4 14 stand 
+: 332 4 12 me 
+: 339 4 12 So 
+: 344 4 9 I 
+: 351 6 16 just 
+: 357 11 17 wanna 
+: 370 12 14 drive 
+: 382 5 12 to
+- 387
+: 388 11 19 the 
+: 401 7 12 air
+: 408 9 12 port
+- 417
+: 430 12 19 the 
+: 446 9 12 air
+: 455 9 12 port
+- 464
+* 478 17 23 the 
+* 495 9 24 air
+* 504 8 26 po
+* 512 8 24 rt
+- 520
+* 527 14 24 the 
+* 544 9 24 air
+* 553 8 26 po
+* 561 8 24 rt
+- 569 573
+- 573
+: 598 6 19 I 
+: 604 6 19 guess 
+: 610 6 19 the 
+: 616 6 19 ap
+: 622 4 12 ple 
+: 628 6 12 could 
+: 634 6 9 turn 
+: 640 6 16 yel
+: 646 6 17 low 
+: 652 6 16 or 
+: 658 12 12 green
+- 670
+: 670 6 12 I 
+: 676 5 9 know 
+: 682 4 7 there's 
+: 687 7 16 lots 
+: 694 6 17 of 
+: 700 5 16 dif
+: 705 7 14 ferent 
+: 712 7 14 nu
+: 719 9 12 ances 
+: 730 5 9 to 
+: 735 8 16 you 
+: 743 5 17 and 
+: 748 4 16 to 
+: 754 11 14 me
+- 765 767
+- 767
+: 792 3 19 I 
+: 795 9 19 wanna 
+: 804 9 19 grow 
+: 815 5 12 the 
+: 820 8 12 apple 
+: 832 7 16 keep
+- 839
+: 840 3 17 all 
+: 844 4 16 the 
+: 850 11 12 seeds 
+: 862 6 12 but 
+: 868 5 9 I 
+: 874 5 12 can't 
+: 880 5 16 help 
+: 886 4 17 but 
+: 891 5 16 get 
+: 898 4 14 so 
+: 903 4 14 an
+: 908 5 12 gry
+- 913
+: 916 4 12 you 
+: 922 6 9 don't 
+: 928 6 16 lis
+: 934 6 17 ten 
+: 941 5 16 I 
+: 946 10 14 leave 
+: 959 3 12 to
+- 962
+: 964 11 19 the 
+: 976 8 12 air
+: 984 5 12 port
+- 989
+: 1005 11 19 the 
+: 1025 8 12 air
+: 1033 5 12 port
+- 1038
+: 1054 18 23 the 
+: 1072 8 24 air
+: 1080 7 26 po
+: 1089 8 24 rt
+- 1097
+: 1102 18 24 the 
+: 1120 8 24 air
+: 1128 7 26 po
+: 1137 8 24 rt
+- 1145
+: 1150 16 19 the 
+: 1168 6 12 air
+: 1176 4 12 port
+- 1180
+: 1198 16 19 the 
+: 1216 6 12 air
+: 1224 4 12 port
+- 1228
+: 1246 17 23 the 
+: 1263 8 24 air
+: 1272 7 26 po
+: 1281 8 24 rt
+- 1289
+: 1294 17 24 the 
+: 1311 9 24 air
+: 1321 8 26 po
+: 1330 8 24 rt
+- 1338 1433
+- 1433
+F 1458 4 5 I'm 
+F 1462 5 6 gonna 
+F 1468 6 5 drive 
+F 1474 6 5 gonna 
+F 1480 6 5 drive 
+F 1487 4 5 all 
+F 1492 10 4 night
+- 1502
+F 1507 3 5 I'm 
+F 1510 7 5 gonna 
+F 1517 5 5 drive 
+F 1523 6 5 gonna 
+F 1529 5 4 drive
+F 1537 3 5 all 
+F 1541 9 5 night
+- 1550
+* 1558 5 19 I 
+* 1563 6 19 think 
+* 1569 6 19 the 
+* 1575 6 19 app
+* 1581 5 12 le's 
+* 1588 5 12 rot
+* 1593 5 9 ten 
+* 1601 6 16 right 
+* 1607 6 17 to 
+* 1613 3 16 the 
+* 1618 11 12 core 
+: 1630 5 12 from
+- 1635
+: 1637 5 9 all 
+: 1642 4 7 the 
+: 1648 6 16 things 
+: 1654 5 17 passed 
+: 1659 6 16 down 
+: 1665 5 14 from
+- 1670
+: 1671 5 14 all 
+: 1677 5 12 the 
+: 1683 6 12 apples 
+: 1696 6 16 com
+: 1702 6 17 ing 
+: 1709 7 16 be
+: 1716 7 14 fore
+- 1723 1726
+- 1726
+* 1751 3 19 I 
+* 1756 5 19 split 
+* 1762 5 19 the 
+* 1768 5 19 ap
+* 1774 5 12 ple 
+* 1780 5 12 down 
+* 1786 6 9 sym
+* 1792 5 16 met
+* 1798 5 17 ri
+* 1803 5 16 cal 
+* 1810 9 12 lines
+- 1819
+: 1821 5 12 And 
+: 1826 5 9 what 
+: 1832 5 7 I 
+: 1840 6 16 find 
+: 1846 6 17 is 
+: 1852 6 16 kind 
+: 1858 5 14 of 
+: 1863 8 14 scary
+- 1871
+: 1875 6 12 Makes 
+: 1881 5 9 me 
+: 1888 6 16 just 
+: 1894 4 17 wan
+: 1898 5 16 na 
+: 1907 8 14 drive
+- 1915 2280
+- 2280
+: 2305 4 26 I 
+: 2311 4 26 wanna 
+: 2316 7 26 know 
+: 2326 5 24 where 
+: 2332 6 23 you 
+: 2338 6 19 go
+- 2344
+: 2352 5 17 When 
+: 2357 6 16 you're 
+: 2363 10 17 fee
+: 2374 5 16 ling 
+: 2381 5 14 a
+: 2387 4 12 lone
+- 2391
+: 2399 4 12 When 
+: 2404 5 9 you're 
+: 2411 10 17 fee
+: 2422 5 16 ling 
+: 2429 5 14 a
+: 2435 4 12 lone
+- 2439
+: 2453 6 9 do 
+: 2459 6 7 you?
+- 2465 2469
+- 2469
+: 2494 6 26 I 
+: 2500 7 26 wanna 
+: 2507 7 26 know 
+: 2518 5 24 where 
+: 2524 6 23 you 
+: 2530 6 21 go
+- 2536
+: 2544 5 17 When 
+: 2549 6 16 You're 
+: 2555 10 19 Fee
+: 2566 5 17 ling 
+: 2573 5 16 a
+: 2579 4 9 lone
+- 2583
+: 2591 4 9 When 
+: 2596 5 7 you're 
+: 2603 10 19 fee
+: 2614 5 17 ling 
+: 2621 5 16 a
+: 2627 4 9 lone
+- 2631
+: 2645 6 9 do 
+: 2651 6 7 you?
+E

@@ -1,0 +1,652 @@
+#ARTIST:LE SSERAFIM
+#TITLE:CRAZY
+#CREATOR:asdFer
+#BPM:261,78
+#YEAR:2024
+#VIDEO:v=n6B5gQXlB-0
+#GENRE:K-Pop
+#LANGUAGE:Korean
+#GAP:4820,899610359844
+#ALLKARAOKE_ID:le-sserafim-crazy
+#ALLKARAOKE_LASTUPDATE:2024-11-03T00:12:31.484Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=n6B5gQXlB-0
+#ALLKARAOKE_VOLUME:0,76
+#MP3:LE SSERAFIM - CRAZY.mp3
+#COVER:LE SSERAFIM - CRAZY.jpg
+#MEDLEYSTARTBEAT:1031
+#MEDLEYENDBEAT:1567
+F 17 2 -5 Act 
+F 21 1 -5 like 
+F 23 1 -5 an 
+F 25 2 -5 an
+F 29 2 -5 gel and 
+F 33 2 -5 dress 
+F 37 2 -5 like 
+F 41 2 -5 cra
+F 45 1 -5 zy
+- 46
+R 49 3 -1 All 
+R 55 1 0 the 
+R 57 2 -3 girls 
+R 61 2 -3 are 
+R 65 2 -3 girl
+R 69 2 -5 ing, 
+R 73 2 -3 girl
+R 77 1 -5 ing
+- 78
+R 81 3 -1 All 
+R 87 1 0 the 
+R 89 2 -3 girls 
+R 93 2 -3 are 
+R 97 2 -3 girl
+R 101 2 -5 ing, 
+R 105 2 -3 girl
+R 109 1 -5 ing
+- 110
+R 113 3 -1 All 
+R 119 1 0 the 
+R 121 2 -3 girls 
+R 125 2 -3 are 
+R 129 2 -3 girl
+R 133 2 -5 ing, 
+R 137 2 -3 girl
+R 141 1 -5 ing
+- 142
+R 145 3 -3 All 
+R 151 1 -3 the 
+R 153 2 -4 girl
+R 157 2 -3 y 
+R 162 4 -7 girls
+- 166
+: 178 5 6 Da, 
+: 190 2 7 da-
+: 194 3 6 da-
+: 200 4 6 da
+- 204
+: 214 2 9 Da-
+: 218 3 7 da-
+: 226 3 6 da-
+: 232 3 6 da-
+: 238 1 4 da
+- 239
+: 242 5 6 Da-
+: 254 2 7 da-
+: 258 3 6 da, 
+: 264 4 6 da
+- 268
+F 274 2 -5 Act 
+F 278 1 -5 like 
+F 280 1 -5 an 
+F 282 2 -5 an
+F 286 2 -5 gel and 
+F 290 2 -5 dress 
+F 294 2 -5 like 
+F 298 2 -5 cra
+F 302 1 -5 zy
+- 303
+: 307 5 6 Da, 
+: 319 2 7 da-
+: 323 3 6 da-
+: 329 4 6 da
+- 333
+: 343 2 9 Da-
+: 347 3 7 da-
+: 355 3 6 da-
+: 361 3 6 da-
+: 367 1 4 da
+- 368
+: 371 5 6 Da-
+: 383 2 7 da-
+: 387 3 6 da, 
+: 393 4 6 da
+- 397
+F 400 6 -1 Yeah, 
+: 419 2 -1 nae 
+: 423 2 7 shim
+: 427 2 -1 jan
+: 431 2 -3 ge 
+: 435 4 -1 gang
+: 443 4 -1 nim
+- 447
+: 452 2 -1 Neon 
+G 456 2 7 C
+: 460 2 -1 P
+: 464 2 -3 R
+: 468 2 -1 ga
+: 472 2 -3 ~
+: 476 3 -1 chi
+- 479
+: 484 2 -1 Son
+R 488 2 7 dae
+: 492 2 -1 myeon 
+: 496 2 -3 like 
+: 500 2 -1 Pi
+: 504 2 -3 ka
+: 508 3 -1 chu
+- 511
+: 516 2 -1 Baeng
+: 520 2 7 man 
+: 524 2 -1 bol
+: 528 2 -3 teu 
+: 532 3 -1 jeon
+: 537 1 -3 ~
+: 540 2 -1 gi 
+: 544 2 -3 it's 
+: 548 3 -1 pump
+: 553 1 -3 ~
+: 556 4 -1 ing
+- 560
+: 568 1 4 I'm
+: 570 1 7 ~ 
+: 572 2 -1 an 
+* 576 2 -3 O
+* 580 2 -1 ta
+* 584 2 -3 ku 
+* 588 2 -1 bes
+* 592 3 -3 tie
+- 595
+R 600 2 7 Mi
+: 604 2 -1 chyeo 
+: 608 2 -3 that 
+: 612 2 -1 can
+: 616 2 -3 dy's 
+: 620 2 -1 sas
+: 624 3 -3 sy
+- 627
+R 633 2 3 Nyu
+R 637 2 3 reo
+R 641 2 3 nui 
+R 645 1 14 che
+R 648 1 16 gye
+R 650 1 3 reul 
+R 653 3 3 gaeng
+R 658 1 3 shin
+- 659
+R 661 1 5 Nae 
+R 664 1 7 meo
+R 666 1 3 rit
+R 669 1 4 sok 
+R 672 1 4 ga
+R 675 2 4 mok 
+R 679 1 5 ta
+R 682 1 4 ro
+R 685 2 3 kaet
+R 689 3 2 ji
+- 692
+F 697 2 9 Ga
+F 701 2 9 lli
+F 705 2 9 le
+F 709 4 9 o
+- 713
+: 725 2 2 Seu
+: 730 2 6 seu
+: 734 2 6 ro 
+: 738 2 6 shim
+: 742 2 6 pan
+: 746 2 6 hae 
+: 750 2 7 mae
+: 754 5 6 il
+- 759
+F 762 2 9 Noe
+F 766 2 9 so
+F 770 2 9 ge
+F 774 2 9 seon
+F 777 2 11 ~
+- 779
+: 789 2 2 Jeok
+: 794 2 6 dang
+: 798 2 6 hi 
+: 802 2 6 mi
+: 806 2 6 chi
+: 810 1 6 ra
+: 812 1 9 ~ 
+: 814 2 7 haet
+: 818 5 6 ji
+- 823
+F 826 3 9 Why 
+F 831 2 9 can't 
+F 835 2 9 you 
+F 839 4 9 stop?
+- 843
+: 846 2 -1 Mo
+: 850 2 -1 lla 
+: 854 2 4 yu
+: 858 2 6 ka
+: 862 2 6 won
+: 866 2 6 chik 
+: 870 2 6 tta
+: 875 2 6 win 
+* 879 2 6 je
+* 883 8 -1 gil 
+: 898 2 6 nan 
+: 902 2 6 geu
+: 906 2 6 reon 
+: 910 2 6 jae
+: 914 1 -1 jil
+- 915
+F 916 1 2 Nae 
+F 919 2 -3 da
+F 923 2 2 beun 
+F 927 2 -3 make 
+F 931 2 2 me 
+F 935 2 12 su
+F 939 2 2 per 
+F 943 2 -2 cra
+F 947 2 -3 zy
+- 949
+F 952 2 -1 Cra
+F 956 2 -2 zy, 
+F 960 2 0 cra
+F 964 2 -1 zy, 
+F 968 2 1 cra
+F 972 2 0 zy, 
+F 976 2 2 cra
+F 980 1 1 zy
+- 981
+F 984 2 3 Cra
+F 988 2 2 zy, 
+F 992 2 4 cra
+F 996 2 3 zy, 
+F 1000 2 5 cra
+F 1004 2 4 zy, 
+F 1008 2 6 cra
+F 1012 1 5 zy
+- 1013
+F 1016 2 7 Cra
+F 1020 2 6 zy, 
+F 1024 2 8 cra
+F 1028 2 7 zy, 
+F 1032 2 9 cra
+F 1036 2 8 zy, 
+F 1040 2 10 cra
+F 1044 1 9 zy
+- 1045
+F 1048 2 -5 Act 
+F 1052 1 -5 like 
+F 1054 1 -5 an 
+F 1056 2 -5 an
+F 1060 2 -5 gel and 
+F 1064 2 -5 dress 
+F 1068 2 -5 like 
+F 1072 2 -5 cra
+F 1076 1 -5 zy
+- 1077
+: 1080 5 6 Da, 
+: 1092 2 7 da-
+: 1096 3 6 da-
+: 1102 4 6 da
+- 1106
+: 1116 2 9 Da-
+: 1120 3 7 da-
+: 1128 3 6 da-
+: 1134 3 6 da-
+: 1140 1 4 da
+- 1141
+: 1144 5 6 Da-
+* 1156 2 7 da-
+* 1160 3 6 da, 
+* 1166 4 6 da
+- 1170
+F 1176 2 -3 Act 
+F 1180 1 -3 like 
+F 1182 1 -3 an 
+F 1184 2 -3 an
+F 1188 2 -3 gel and 
+F 1192 2 -3 dress 
+F 1196 2 -3 like 
+F 1200 2 -3 cra
+F 1204 1 -3 zy
+- 1205
+: 1209 5 6 Da, 
+: 1221 2 7 da-
+: 1225 3 6 da-
+: 1231 4 6 da
+- 1235
+: 1245 2 9 Da-
+: 1249 3 7 da-
+: 1257 3 6 da-
+: 1263 3 6 da-
+: 1269 1 4 da
+- 1270
+* 1273 5 6 Da-
+: 1285 2 7 da-
+: 1289 3 6 da, 
+: 1295 4 6 da
+- 1299
+: 1309 2 9 Da-
+: 1313 3 7 da-
+: 1321 3 6 da-
+: 1327 2 6 da-
+: 1333 2 4 da
+- 1335
+R 1338 3 -1 All 
+R 1344 1 0 the 
+R 1346 2 -3 girls 
+R 1350 2 -3 are 
+R 1354 2 -3 girl
+R 1358 2 -5 ing, 
+R 1362 2 -3 girl
+R 1366 1 -5 ing
+- 1367
+R 1370 3 -1 All 
+R 1376 1 0 the 
+R 1378 2 -3 girls 
+R 1382 2 -3 are 
+R 1386 2 -3 girl
+R 1390 2 -5 ing, 
+R 1394 2 -3 girl
+R 1398 1 -5 ing
+- 1399
+R 1402 3 -1 All 
+R 1408 1 0 the 
+R 1410 2 -3 girls 
+R 1414 2 -3 are 
+R 1418 2 -3 girl
+R 1422 2 -5 ing, 
+R 1426 2 -3 girl
+R 1430 1 -5 ing
+- 1431
+R 1434 3 -3 All 
+R 1440 1 -3 the 
+R 1442 2 -4 girl
+R 1446 2 -3 y 
+R 1451 4 -7 girls
+- 1455
+R 1467 3 -1 All 
+R 1473 1 0 the 
+R 1475 2 -3 girls 
+R 1479 2 -3 are 
+R 1483 2 -3 girl
+R 1487 2 -5 ing, 
+R 1491 2 -3 girl
+R 1495 1 -5 ing
+- 1496
+R 1499 3 -1 All 
+R 1505 1 0 the 
+R 1507 2 -3 girls 
+R 1511 2 -3 are 
+R 1515 2 -3 girl
+R 1519 2 -5 ing, 
+R 1523 2 -3 girl
+R 1527 1 -5 ing
+- 1528
+R 1531 3 -1 All 
+R 1537 1 0 the 
+R 1539 2 -3 girls 
+R 1543 2 -3 are 
+R 1547 2 -3 girl
+R 1551 2 -5 ing, 
+R 1555 2 -3 girl
+R 1559 1 -5 ing
+- 1560
+R 1563 3 -3 All 
+R 1569 1 -3 the 
+R 1571 2 -4 girl
+R 1575 2 -3 y 
+R 1580 4 -7 girls
+- 1584
+R 1595 1 2 Back 
+R 1598 1 4 in 
+R 1600 1 6 the 
+R 1603 4 2 days 
+R 1612 2 2 mi
+R 1616 2 3 chi
+R 1620 3 0 me
+- 1623
+R 1628 2 3 Mi
+R 1631 1 0 chi
+R 1633 1 -2 ji 
+G 1636 1 3 mot
+G 1638 1 0 haet
+G 1641 1 -2 deon 
+R 1644 3 0 me
+- 1647
+R 1660 1 2 Deo
+R 1663 1 4 i
+R 1665 1 6 sang 
+R 1668 4 2 nae 
+R 1676 1 0 kkeu
+R 1678 1 2 llim 
+R 1681 1 3 a
+R 1684 3 0 pe
+- 1687
+R 1692 2 1 Geo
+R 1695 1 -1 jit 
+R 1697 1 -2 jeun
+R 1700 1 1 geo
+R 1702 1 -1 neun 
+R 1705 1 -3 an
+R 1708 3 0 chi
+- 1711
+R 1716 1 1 Mu
+R 1718 1 2 seun 
+G 1720 2 6 ui
+G 1724 3 2 mi 
+R 1730 1 -2 tto 
+R 1732 1 -2 mu
+R 1734 1 -2 seun 
+R 1736 3 2 ga
+R 1741 3 -1 chi
+- 1744
+R 1749 1 0 Ga
+R 1751 1 -1 neung
+R 1754 1 -3 gwa 
+R 1757 1 1 bul
+R 1759 1 -1 ga
+R 1762 1 -3 neung 
+R 1764 1 1 i
+R 1767 1 -1 jen 
+R 1769 2 -3 da 
+R 1773 3 -1 swit
+- 1776
+R 1784 2 -3 Yeah, 
+R 1789 1 4 me 
+R 1791 1 4 and 
+R 1793 2 4 my 
+R 1797 1 1 girls
+- 1798
+R 1801 1 -1 U
+R 1803 1 -1 rin 
+R 1805 1 -1 nu
+R 1807 1 -1 ni 
+R 1809 1 -1 meol 
+R 1811 2 2 geo
+R 1815 1 -1 seul 
+R 1817 1 -1 a
+R 1819 1 -1 ra
+R 1822 2 -1 do 
+R 1826 2 -1 jeo 
+R 1830 1 -2 tae
+R 1832 1 -2 yan
+R 1834 1 -2 ge 
+R 1837 3 -3 kiss, 
+R 1845 3 -3 mwah
+- 1848
+F 1857 2 9 Ga
+F 1861 2 9 lli
+F 1865 2 9 le
+F 1869 4 9 o
+- 1873
+* 1885 2 2 Seu
+* 1890 2 6 seu
+* 1894 2 6 ro 
+* 1898 2 6 shim
+* 1902 2 6 pan
+* 1906 2 6 hae 
+* 1910 2 7 mae
+* 1914 4 6 il
+- 1918
+F 1922 2 9 Noe
+F 1926 2 9 so
+F 1930 2 9 ge
+F 1934 2 9 seon
+F 1937 2 11 ~
+- 1939
+: 1949 2 2 Jeok
+: 1954 2 6 dang
+: 1958 2 6 hi 
+: 1962 2 6 mi
+: 1966 2 6 chi
+: 1970 1 6 ra
+: 1972 1 9 ~ 
+: 1974 2 7 haet
+: 1978 5 6 ji
+- 1983
+F 1986 3 9 Why 
+F 1991 2 9 can't 
+F 1995 2 9 you 
+F 1999 4 9 stop?
+- 2003
+: 2006 2 -1 Mo
+: 2010 2 -1 lla 
+: 2014 2 4 yu
+: 2018 2 6 ka
+: 2022 2 6 won
+: 2026 2 6 chik 
+: 2030 2 6 tta
+: 2035 2 6 win 
+: 2039 2 6 je
+: 2043 8 -1 gil 
+: 2058 2 6 nan 
+: 2062 2 6 geu
+: 2066 2 6 reon 
+: 2070 2 6 jae
+: 2074 1 -1 jil
+- 2075
+F 2076 1 2 Nae 
+F 2079 2 -3 da
+F 2083 2 2 beun 
+F 2087 2 -3 make 
+F 2091 2 2 me 
+F 2095 2 12 su
+F 2099 2 2 per 
+F 2103 2 -2 cra
+F 2107 3 -3 zy
+- 2110 2190
+- 2190
+F 2207 2 -5 Act 
+F 2211 1 -5 like 
+F 2213 1 -5 an 
+F 2215 2 -5 an
+F 2219 2 -5 gel and 
+F 2223 2 -5 dress 
+F 2227 2 -5 like 
+F 2231 2 -5 cra
+F 2235 1 -5 zy
+- 2236
+: 2240 5 6 Da, 
+: 2252 2 7 da-
+: 2256 3 6 da-
+: 2262 4 6 da
+- 2266
+: 2276 2 9 Da-
+: 2280 3 7 da-
+* 2288 3 6 da-
+* 2294 3 6 da-
+: 2300 1 4 da
+- 2301
+: 2304 5 6 Da-
+: 2316 2 7 da-
+: 2320 3 6 da, 
+: 2326 4 6 da
+- 2330
+F 2336 2 -5 Act 
+F 2340 1 -5 like 
+F 2342 1 -5 an 
+F 2344 2 -5 an
+F 2348 2 -5 gel and 
+F 2352 2 -5 dress 
+F 2356 2 -5 like 
+F 2360 2 -5 cra
+F 2364 1 -5 zy
+- 2365
+: 2369 5 6 Da, 
+: 2381 2 7 da-
+: 2385 3 6 da-
+: 2391 4 6 da
+- 2395
+: 2405 2 9 Da-
+: 2409 3 7 da-
+: 2417 3 6 da-
+: 2423 3 6 da-
+: 2429 1 4 da
+- 2430
+: 2433 5 6 Da-
+: 2445 2 7 da-
+: 2449 3 6 da, 
+: 2455 4 6 da
+- 2459
+* 2469 2 9 Da-
+* 2473 3 7 da-
+: 2481 3 6 da-
+: 2487 2 6 da-
+: 2493 2 4 da
+- 2495
+R 2498 3 -1 All 
+R 2504 1 0 the 
+R 2506 2 -3 girls 
+R 2510 2 -3 are 
+R 2514 2 -3 girl
+R 2518 2 -5 ing, 
+R 2522 2 -3 girl
+R 2526 1 -5 ing
+- 2527
+R 2530 3 -1 All 
+R 2536 1 0 the 
+R 2538 2 -3 girls 
+R 2542 2 -3 are 
+R 2546 2 -3 girl
+R 2550 2 -5 ing, 
+R 2554 2 -3 girl
+R 2558 1 -5 ing
+- 2559
+R 2562 3 -1 All 
+R 2568 1 0 the 
+R 2570 2 -3 girls 
+R 2574 2 -3 are 
+R 2578 2 -3 girl
+R 2582 2 -5 ing, 
+R 2586 2 -3 girl
+R 2590 1 -5 ing
+- 2591
+R 2594 3 -3 All 
+R 2600 1 -3 the 
+R 2602 2 -4 girl
+R 2606 2 -3 y 
+R 2611 4 -7 girls
+- 2615
+R 2627 3 -1 All 
+R 2633 1 0 the 
+R 2635 2 -3 girls 
+R 2639 2 -3 are 
+R 2643 2 -3 girl
+R 2647 2 -5 ing, 
+R 2651 2 -3 girl
+R 2655 1 -5 ing
+- 2656
+R 2659 3 -1 All 
+R 2665 1 0 the 
+R 2667 2 -3 girls 
+R 2671 2 -3 are 
+R 2675 2 -3 girl
+R 2679 2 -5 ing, 
+R 2683 2 -3 girl
+R 2687 1 -5 ing
+- 2688
+R 2691 3 -1 All 
+R 2697 1 0 the 
+R 2699 2 -3 girls 
+R 2703 2 -3 are 
+R 2707 2 -3 girl
+R 2711 2 -5 ing, 
+R 2715 2 -3 girl
+R 2719 1 -5 ing
+- 2720
+R 2723 3 -3 All 
+R 2729 1 -3 the 
+R 2731 2 -4 girl
+R 2735 2 -3 y 
+R 2740 4 -7 girls
+E
