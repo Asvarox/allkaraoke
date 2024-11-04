@@ -55,37 +55,43 @@ dotenv.config({ path: '.env.local' });
 
   response.results.forEach(([songTxt, songId]: [string, string]) => {
     try {
-      if (!songTxt && songId && addedSongs.includes(songId)) {
-        fs.rmSync(`./public/songs/${songId}.txt`);
-        console.log(`Deleting song ${songId}`);
-      }
-      const song = convertTxtToSong(songTxt?.replaceAll('\\n', '\n'));
-      if (!song.id) {
-        console.log('Song has no ID', song, songId);
-        return;
-      }
-
-      song.tracks.forEach((track) => {
-        track.sections.forEach((section) => {
-          if ('notes' in section) {
-            section.notes.forEach((note) => {
-              note.lyrics = note.lyrics?.replaceAll(/\\+"/g, '"');
-            });
-          }
-        });
-      });
-
-      // keep old last update time if the song exists
-      if (fs.existsSync(`./public/songs/${song.id}.txt`)) {
-        const oldSong = convertTxtToSong(fs.readFileSync(`./public/songs/${song.id}.txt`, 'utf-8'));
-        song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
+      if (!songTxt && songId) {
+        if (addedSongs.includes(songId)) {
+          fs.rmSync(`./public/songs/${songId}.txt`);
+          console.log(`Deleting song ${songId}`);
+        } else {
+          console.log(`Song ${songId} marked as deleted, but not found in added songs, leaving as is`);
+        }
       } else {
-        addedSongs.push(song.id);
+        const song = convertTxtToSong(songTxt?.replaceAll('\\n', '\n'));
+        if (!song.id) {
+          console.log('Song has no ID', song, songId);
+          return;
+        }
+
+        song.tracks.forEach((track) => {
+          track.sections.forEach((section) => {
+            if ('notes' in section) {
+              section.notes.forEach((note) => {
+                note.lyrics = note.lyrics?.replaceAll(/\\+"/g, '"');
+              });
+            }
+          });
+        });
+
+        if (fs.existsSync(`./public/songs/${song.id}.txt`)) {
+          const oldSong = convertTxtToSong(fs.readFileSync(`./public/songs/${song.id}.txt`, 'utf-8'));
+          // keep old last update time if the song exists
+          // song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
+          song.artistOrigin = song.artistOrigin ?? oldSong.artistOrigin;
+        } else {
+          addedSongs.push(song.id);
+        }
+        fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
+        console.log(`Added/updated song ${song.id}`);
       }
-      fs.writeFileSync(`./public/songs/${song.id}.txt`, convertSongToTxt(song));
-      console.log(`Added/updated song ${song.id}`);
     } catch (e) {
-      console.warn(`Couldn't convert song`, e, songTxt, songId);
+      console.warn(`Couldn't convert song`, songId, e, songTxt);
     }
   });
   console.log('Updating song data');
