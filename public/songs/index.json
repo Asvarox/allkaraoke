@@ -1801,6 +1801,33 @@
     "local": false
   },
   {
+    "id": "ado-fleeting-lullaby",
+    "title": "Fleeting Lullaby",
+    "artist": "Ado",
+    "video": "hyV1AJiFNyo",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 356,
+    "gap": 523.7640449438202,
+    "year": "2022",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-11-05T00:11:03.204Z",
+    "realBpm": 89,
+    "volume": 0.75,
+    "author": "HansiMcKlaus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=174903",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28357",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adofleetinglullaby",
+    "local": false
+  },
+  {
     "id": "ado-giragira",
     "title": "Giragira",
     "artist": "Ado",
@@ -1909,6 +1936,34 @@
     ],
     "tracksCount": 1,
     "search": "adoodo",
+    "local": false
+  },
+  {
+    "id": "ado-show",
+    "title": "Show",
+    "artist": "Ado",
+    "video": "pgXpM4l_MwI",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 264,
+    "gap": -95.45454545454538,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-11-05T00:11:03.201Z",
+    "realBpm": 132,
+    "previewStart": 60,
+    "previewEnd": 95,
+    "volume": 0.75,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29046",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "adoshow",
     "local": false
   },
   {
@@ -12678,6 +12733,32 @@
     "local": false
   },
   {
+    "id": "blink-182-all-the-small-things",
+    "title": "All The Small Things",
+    "artist": "blink-182",
+    "video": "9Ht5RZpzPqw",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.65,
+    "gap": 16633.963782696177,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.415Z",
+    "realBpm": 149,
+    "volume": 0.86,
+    "author": "Caruso",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=3474",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blink182allthesmallthings",
+    "local": false
+  },
+  {
     "id": "blink-182-anthem-part-2",
     "title": "Anthem Part 2",
     "artist": "Blink 182",
@@ -12702,6 +12783,58 @@
     ],
     "tracksCount": 1,
     "search": "blink182anthempart2",
+    "local": false
+  },
+  {
+    "id": "blink-182-dammit",
+    "title": "Dammit",
+    "artist": "blink-182",
+    "video": "sT0g16_LQaQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 440,
+    "gap": 19671.363636363636,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.413Z",
+    "realBpm": 220,
+    "volume": 0.87,
+    "author": "jeffhiggins",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=19894",
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blink182dammit",
+    "local": false
+  },
+  {
+    "id": "blink-182-first-date",
+    "title": "First Date",
+    "artist": "blink-182",
+    "video": "vVy9Lgpg1m8",
+    "language": [
+      "English"
+    ],
+    "bpm": 382.4,
+    "gap": 36109.351464435145,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.417Z",
+    "realBpm": 96,
+    "volume": 0.86,
+    "author": "vollie",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=15377",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blink182firstdate",
     "local": false
   },
   {
@@ -22471,6 +22604,32 @@
     "local": false
   },
   {
+    "id": "daryl-hall-john-oates-maneater",
+    "title": "Maneater",
+    "artist": "Daryl Hall & John Oates",
+    "video": "yRYFKcMa_Ek",
+    "language": [
+      "English"
+    ],
+    "bpm": 354.25,
+    "gap": 42553.76852505293,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.404Z",
+    "genre": "Pop",
+    "realBpm": 89,
+    "volume": 0.93,
+    "author": "Eggman",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "darylhalljohnoatesmaneater",
+    "local": false
+  },
+  {
     "id": "daryl-hall-john-oates-out-of-touch",
     "title": "Out Of Touch",
     "artist": "Daryl Hall & John Oates",
@@ -23538,6 +23697,30 @@
     ],
     "tracksCount": 1,
     "search": "dearevanhansensincerelyme",
+    "local": false
+  },
+  {
+    "id": "dear-evan-hansen-waving-through-a-window",
+    "title": "Waving Through A Window",
+    "artist": "Dear Evan Hansen",
+    "video": "ikOe5T-cyPs",
+    "language": [
+      "English"
+    ],
+    "bpm": 576,
+    "gap": 6150.416666666667,
+    "year": "2017",
+    "lastUpdate": "2024-11-05T00:11:02.013Z",
+    "realBpm": 145,
+    "volume": 0.75,
+    "author": "Vittelius",
+    "tracks": [
+      {
+        "start": 38
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dearevanhansenwavingthroughawindow",
     "local": false
   },
   {
@@ -27438,6 +27621,56 @@
     "local": false
   },
   {
+    "id": "duran-duran-a-view-to-a-kill",
+    "title": "A View To A Kill",
+    "artist": "Duran Duran",
+    "video": "Fp4CR2HcHLQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.56,
+    "gap": 15412.279693486591,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:01.415Z",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "williluegger",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "duranduranaviewtoakill",
+    "local": false
+  },
+  {
+    "id": "duran-duran-hungry-like-the-wolf",
+    "title": "Hungry Like The Wolf",
+    "artist": "Duran Duran",
+    "video": "oJL-lCzEXgI",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.55,
+    "gap": 10814.281206862552,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:01.621Z",
+    "realBpm": 130,
+    "volume": 0.94,
+    "author": "jockel1974",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "duranduranhungrylikethewolf",
+    "local": false
+  },
+  {
     "id": "dzem-czerwony-jak-cegla",
     "title": "Czerwony jak cegła",
     "artist": "Dżem",
@@ -31169,6 +31402,33 @@
     "local": false
   },
   {
+    "id": "fall-out-boy-the-take-over-the-breaks-over",
+    "title": "The Take Over, The Breaks Over",
+    "artist": "Fall Out Boy",
+    "video": "aVbPvf2aYH4",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.8,
+    "gap": 22011.900452488688,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.409Z",
+    "genre": "Alternative Rock",
+    "realBpm": 150,
+    "volume": 0.87,
+    "author": "Gollum",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=21579",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "falloutboythetakeoverthebreaksover",
+    "local": false
+  },
+  {
     "id": "fall-out-boy-thnks-fr-th-mmrs",
     "title": "Thnks Fr Th Mmrs",
     "artist": "Fall Out Boy",
@@ -31964,6 +32224,32 @@
     ],
     "tracksCount": 1,
     "search": "fleetwoodmacgoyourownway",
+    "local": false
+  },
+  {
+    "id": "fleetwood-mac-say-you-love-me",
+    "title": "Say You Love Me",
+    "artist": "Fleetwood Mac",
+    "video": "WKnfGqYOdrw",
+    "language": [
+      "English"
+    ],
+    "bpm": 282.85,
+    "gap": 15072.398797949443,
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:02.593Z",
+    "genre": "Soft Rock",
+    "realBpm": 143,
+    "volume": 0.75,
+    "author": "Zevac",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fleetwoodmacsayyouloveme",
     "local": false
   },
   {
@@ -33517,6 +33803,30 @@
     ],
     "tracksCount": 1,
     "search": "garouseul",
+    "local": false
+  },
+  {
+    "id": "gary-barlow-elton-john-face-to-face",
+    "title": "Face To Face",
+    "artist": "Gary Barlow & Elton John",
+    "video": "fOmCw1tuyrY",
+    "language": [
+      "English"
+    ],
+    "bpm": 216.02,
+    "gap": 47.30580501805389,
+    "year": "2013",
+    "lastUpdate": "2024-11-05T00:11:02.395Z",
+    "realBpm": 108,
+    "volume": 0.78,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "garybarloweltonjohnfacetoface",
     "local": false
   },
   {
@@ -35599,6 +35909,32 @@
     "local": false
   },
   {
+    "id": "green-day-21st-century-breakdown",
+    "title": "21st Century Breakdown",
+    "artist": "Green Day",
+    "video": "D4ZKlT1EvCA",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 16983.157894736843,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:02.011Z",
+    "genre": "Punk",
+    "realBpm": 115,
+    "volume": 0.83,
+    "author": "jdogk",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greenday21stcenturybreakdown",
+    "local": false
+  },
+  {
     "id": "green-day-american-idiot",
     "title": "American Idiot",
     "artist": "Green Day",
@@ -35838,6 +36174,86 @@
     ],
     "tracksCount": 1,
     "search": "greendaylongview",
+    "local": false
+  },
+  {
+    "id": "green-day-minority",
+    "title": "Minority",
+    "artist": "Green Day",
+    "video": "cDBlqu6KF4k",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 6551.739130434783,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.414Z",
+    "realBpm": 138,
+    "volume": 0.87,
+    "author": "Canni",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=897",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendayminority",
+    "local": false
+  },
+  {
+    "id": "green-day-nice-guys-finish-last",
+    "title": "Nice Guys Finish Last",
+    "artist": "Green Day",
+    "video": "n4qZ1dicRWk",
+    "language": [
+      "English"
+    ],
+    "bpm": 375.7,
+    "gap": 71121.8631887144,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.197Z",
+    "genre": "Rock",
+    "realBpm": 95,
+    "volume": 0.81,
+    "author": "jdogk",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=6491",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendayniceguysfinishlast",
+    "local": false
+  },
+  {
+    "id": "green-day-oh-love",
+    "title": "Oh Love",
+    "artist": "Green Day",
+    "video": "IWwMqa-_210",
+    "language": [
+      "English"
+    ],
+    "bpm": 257.49,
+    "gap": 10519.670278457415,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.196Z",
+    "genre": "Pop Punk",
+    "realBpm": 86,
+    "volume": 0.87,
+    "author": "Fepo",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=14402",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "greendayohlove",
     "local": false
   },
   {
@@ -38400,6 +38816,34 @@
     "local": false
   },
   {
+    "id": "hoshimachi-suisei-stellar-stellar",
+    "title": "Stellar Stellar",
+    "artist": "Hoshimachi Suisei",
+    "video": "a51VH9BYzZA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 356,
+    "gap": -21.23595505617982,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-11-05T00:11:03.203Z",
+    "genre": "J-Pop",
+    "realBpm": 178,
+    "volume": 0.85,
+    "author": "GaryCXJk",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=51165",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29382",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hoshimachisuiseistellarstellar",
+    "local": false
+  },
+  {
     "id": "hozier-take-me-to-church",
     "title": "Take Me To Church",
     "artist": "Hozier",
@@ -39619,6 +40063,31 @@
     ],
     "tracksCount": 1,
     "search": "intothewoodsagony",
+    "local": false
+  },
+  {
+    "id": "inxs-never-tear-us-apart",
+    "title": "Never Tear Us Apart",
+    "artist": "INXS",
+    "video": "_VU9DjQpvMQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 54104.375,
+    "year": "1987",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-11-05T00:11:00.530Z",
+    "realBpm": 65,
+    "volume": 1,
+    "author": "a224",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "inxsnevertearusapart",
     "local": false
   },
   {
@@ -41944,7 +42413,7 @@
     "gap": 16508.01523688596,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2024-01-26T17:05:27.264Z",
+    "lastUpdate": "2024-11-04T19:06:41.609Z",
     "genre": "Pop",
     "realBpm": 120,
     "volume": 0.69,
@@ -47651,6 +48120,37 @@
     ],
     "tracksCount": 1,
     "search": "kygoxwhitneyhoustonhigherlove",
+    "local": false
+  },
+  {
+    "id": "kyle-justin-angry-video-game-nerd-theme-song",
+    "title": "Angry Video Game Nerd Theme Song",
+    "artist": "Kyle Justin",
+    "video": "MJIz6QTMkRM",
+    "language": [
+      "English"
+    ],
+    "bpm": 229.61,
+    "gap": 45.40568790557916,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.198Z",
+    "genre": "Themes",
+    "realBpm": 116,
+    "previewStart": 66,
+    "previewEnd": 85,
+    "volume": 1,
+    "author": "tair1",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=5811",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=7276",
+    "tracks": [
+      {
+        "name": "The Angry Video Game Nerd Theme Song",
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "kylejustinangryvideogamenerdthemesong",
     "local": false
   },
   {
@@ -53393,6 +53893,31 @@
     "local": false
   },
   {
+    "id": "madonna-crazy-for-you",
+    "title": "Crazy For You",
+    "artist": "Madonna",
+    "video": "DHutZXREZ0E",
+    "language": [
+      "English"
+    ],
+    "bpm": 374.96,
+    "gap": 26949.893321954343,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:01.624Z",
+    "realBpm": 95,
+    "volume": 0.93,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "madonnacrazyforyou",
+    "local": false
+  },
+  {
     "id": "madonna-die-another-day",
     "title": "Die Another Day",
     "artist": "Madonna",
@@ -53464,6 +53989,31 @@
     ],
     "tracksCount": 1,
     "search": "madonnafeatbritneyspearschristinaaguileramissyelliottlikeavirginhollywood",
+    "local": false
+  },
+  {
+    "id": "madonna-feat-justin-timberlake-timbaland-4-minutes",
+    "title": "4 Minutes",
+    "artist": "Madonna feat. Justin Timberlake & Timbaland",
+    "video": "aAQZPBwz2CI",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 1334.424778761062,
+    "year": "2008",
+    "lastUpdate": "2024-11-05T00:11:01.630Z",
+    "genre": "Pop",
+    "realBpm": 113,
+    "volume": 0.81,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "madonnafeatjustintimberlaketimbaland4minutes",
     "local": false
   },
   {
@@ -57285,6 +57835,37 @@
     "local": false
   },
   {
+    "id": "meat-loaf-you-took-the-words-right-out-of-my-mouth-hot-summer-night",
+    "title": "You Took The Words Right Out Of My Mouth (Hot Summer Night)",
+    "artist": "Meat Loaf",
+    "video": "HRZTRTPiIT4",
+    "language": [
+      "English"
+    ],
+    "bpm": 251.6,
+    "gap": 62876.48648648649,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.205Z",
+    "genre": "Rock",
+    "realBpm": 125,
+    "previewStart": 124,
+    "previewEnd": 146,
+    "volume": 1,
+    "author": "Diddlmaus30mg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1058",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3419",
+    "tracks": [
+      {
+        "name": "You Took The Words Right Out Of My Mouth (Hot Summer Night)",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "meatloafyoutookthewordsrightoutofmymouthhotsummernight",
+    "local": false
+  },
+  {
     "id": "meatloaf-id-do-anything-for-love-but-i-wont-do-that",
     "title": "I'd Do Anything for Love (But I Won't Do That)",
     "artist": "Meatloaf",
@@ -58191,6 +58772,69 @@
     ],
     "tracksCount": 1,
     "search": "metallicaone",
+    "local": false
+  },
+  {
+    "id": "metallica-the-unforgiven-ii",
+    "title": "The Unforgiven II",
+    "artist": "Metallica",
+    "video": "G-Bn_kD6QN4",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.6,
+    "gap": 36325.72078907435,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.210Z",
+    "edition": "[Sc]-Songs",
+    "genre": "Heavy Metal",
+    "realBpm": 133,
+    "previewStart": 36,
+    "previewEnd": 70,
+    "volume": 0.83,
+    "author": "IC",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4114",
+    "tracks": [
+      {
+        "name": "The Unforgiven II",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "metallicatheunforgivenii",
+    "local": false
+  },
+  {
+    "id": "metallica-the-unforgiven",
+    "title": "The Unforgiven",
+    "artist": "Metallica",
+    "video": "DDGhKS6bSAE",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 53331.739130434784,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.208Z",
+    "genre": "Heavy Metal",
+    "realBpm": 139,
+    "previewStart": 95,
+    "previewEnd": 129,
+    "volume": 0.82,
+    "author": "Silverbeam",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=42",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=1788",
+    "tracks": [
+      {
+        "name": "The Unforgiven",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "metallicatheunforgiven",
     "local": false
   },
   {
@@ -63157,6 +63801,31 @@
     "local": false
   },
   {
+    "id": "niall-horan-heaven",
+    "title": "Heaven",
+    "artist": "Niall Horan",
+    "video": "4G9LwTTnn_k",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 14860.978260869566,
+    "year": "2023",
+    "artistOrigin": "IE",
+    "lastUpdate": "2024-11-05T00:11:03.211Z",
+    "realBpm": 92,
+    "volume": 0.76,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "niallhoranheaven",
+    "local": false
+  },
+  {
     "id": "nick-cave-the-bad-seeds-kylie-minogue-where-the-wild-roses-grow",
     "title": "Where The Wild Roses Grow",
     "artist": "Nick Cave & The Bad Seeds + Kylie Minogue",
@@ -65072,6 +65741,33 @@
     ],
     "tracksCount": 1,
     "search": "oingoboingoakuyakuconcertooingoandboingo",
+    "local": false
+  },
+  {
+    "id": "ok-go-here-it-goes-again",
+    "title": "Here It Goes Again",
+    "artist": "OK Go",
+    "video": "dTAAsCNK7RA",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.09,
+    "gap": 18295.375293493904,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.411Z",
+    "genre": "Rock",
+    "realBpm": 146,
+    "volume": 0.86,
+    "author": "B3rnh4rd",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=7587",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "okgohereitgoesagain",
     "local": false
   },
   {
@@ -67136,6 +67832,60 @@
     "local": false
   },
   {
+    "id": "paramore-brick-by-boring-brick",
+    "title": "Brick By Boring Brick",
+    "artist": "Paramore",
+    "video": "A63VwWz1ij0",
+    "language": [
+      "English"
+    ],
+    "bpm": 330,
+    "gap": 23600,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.193Z",
+    "genre": "Rock",
+    "realBpm": 165,
+    "volume": 0.76,
+    "author": "edding07",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=9057",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramorebrickbyboringbrick",
+    "local": false
+  },
+  {
+    "id": "paramore-crushcrushcrush",
+    "title": "Crushcrushcrush",
+    "artist": "Paramore",
+    "video": "ei8hPkyJ0bU",
+    "language": [
+      "English"
+    ],
+    "bpm": 274,
+    "gap": 6414.598540145986,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.408Z",
+    "genre": "Pop Punk",
+    "realBpm": 137,
+    "volume": 0.88,
+    "author": "jalkazar",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=6386",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramorecrushcrushcrush",
+    "local": false
+  },
+  {
     "id": "paramore-decode",
     "title": "Decode",
     "artist": "Paramore",
@@ -67188,6 +67938,33 @@
     ],
     "tracksCount": 1,
     "search": "paramoreemergency",
+    "local": false
+  },
+  {
+    "id": "paramore-ignorance",
+    "title": "Ignorance",
+    "artist": "Paramore",
+    "video": "OH9A6tn_P6g",
+    "language": [
+      "English"
+    ],
+    "bpm": 276.32,
+    "gap": 23902.164276401563,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.195Z",
+    "genre": "Pop Punk",
+    "realBpm": 171,
+    "volume": 0.85,
+    "author": "mrfypower",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=9058",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paramoreignorance",
     "local": false
   },
   {
@@ -69555,6 +70332,31 @@
     "local": false
   },
   {
+    "id": "post-malone-better-now",
+    "title": "Better Now",
+    "artist": "Post Malone",
+    "video": "UYwF-jdcVjY",
+    "language": [
+      "English"
+    ],
+    "bpm": 290,
+    "gap": 11382.241379310344,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.406Z",
+    "realBpm": 145,
+    "volume": 0.75,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "postmalonebetternow",
+    "local": false
+  },
+  {
     "id": "post-malone-circles",
     "title": "Circles",
     "artist": "Post Malone",
@@ -71877,6 +72679,33 @@
     "local": false
   },
   {
+    "id": "red-already-over",
+    "title": "Already Over",
+    "artist": "Red",
+    "video": "0SJPCdafnLo",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 39320.15789473684,
+    "year": "2006",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:02.989Z",
+    "genre": "Christian Hard Rock",
+    "realBpm": 103,
+    "volume": 0.75,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "name": "Already over",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "redalreadyover",
+    "local": false
+  },
+  {
     "id": "red-hot-chili-peppers-breaking-the-girl",
     "title": "Breaking The Girl",
     "artist": "Red Hot Chili Peppers",
@@ -72901,6 +73730,57 @@
     ],
     "tracksCount": 1,
     "search": "rickastleynevergonnagiveyouup",
+    "local": false
+  },
+  {
+    "id": "rick-astley-take-me-to-your-heart",
+    "title": "Take Me To Your Heart",
+    "artist": "Rick Astley",
+    "video": "eYuUAGXN0KM",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.5,
+    "gap": 16232.079002079003,
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:02.590Z",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rickastleytakemetoyourheart",
+    "local": false
+  },
+  {
+    "id": "rick-astley-together-forever",
+    "title": "Together Forever",
+    "artist": "Rick Astley",
+    "video": "yPYZpwSpKmA",
+    "language": [
+      "English"
+    ],
+    "bpm": 345.45,
+    "gap": 18381.302648719062,
+    "year": "1987",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:02.591Z",
+    "genre": "Dance-Pop",
+    "realBpm": 115,
+    "volume": 0.75,
+    "author": "Buberatz",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rickastleytogetherforever",
     "local": false
   },
   {
@@ -75784,6 +76664,32 @@
     ],
     "tracksCount": 1,
     "search": "savagegardentrulymadlydeeply",
+    "local": false
+  },
+  {
+    "id": "scars-on-broadway-funny",
+    "title": "Funny",
+    "artist": "Scars On Broadway",
+    "video": "41ugR_uPZ7A",
+    "language": [
+      "English"
+    ],
+    "bpm": 284,
+    "gap": 17.183098591549296,
+    "year": "2008",
+    "lastUpdate": "2024-11-05T00:11:02.207Z",
+    "genre": "Hard Rock",
+    "realBpm": 143,
+    "volume": 0.7,
+    "author": "Kirie-sama",
+    "tracks": [
+      {
+        "name": "Funny",
+        "start": 1
+      }
+    ],
+    "tracksCount": 1,
+    "search": "scarsonbroadwayfunny",
     "local": false
   },
   {
@@ -81115,6 +82021,32 @@
     "local": false
   },
   {
+    "id": "sunrise-ave-fairytale-gone-bad",
+    "title": "Fairytale Gone Bad",
+    "artist": "Sunrise Ave",
+    "video": "77ey1aWDnyY",
+    "language": [
+      "English"
+    ],
+    "bpm": 274.8,
+    "gap": 2160.467248908297,
+    "year": "2006",
+    "artistOrigin": "FI",
+    "lastUpdate": "2024-11-05T00:11:02.605Z",
+    "realBpm": 138,
+    "volume": 0.7,
+    "author": "TeLiXj",
+    "tracks": [
+      {
+        "name": "Fairytale Gone Bad",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sunriseavefairytalegonebad",
+    "local": false
+  },
+  {
     "id": "super-junior-mr-simple",
     "title": "Mr. Simple",
     "artist": "Super Junior",
@@ -81220,6 +82152,31 @@
     ],
     "tracksCount": 1,
     "search": "supernovatodalanoche",
+    "local": false
+  },
+  {
+    "id": "supertramp-the-logical-song",
+    "title": "The Logical Song",
+    "artist": "Supertramp",
+    "video": "kln_bIndDJg",
+    "language": [
+      "English"
+    ],
+    "bpm": 237.55,
+    "gap": 8439.686381814356,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-05T00:11:00.534Z",
+    "realBpm": 120,
+    "volume": 0.95,
+    "author": "a224",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "supertrampthelogicalsong",
     "local": false
   },
   {
@@ -85145,6 +86102,37 @@
     ],
     "tracksCount": 1,
     "search": "thechainsmokersfeathalseycloser",
+    "local": false
+  },
+  {
+    "id": "the-champs-tequila",
+    "title": "Tequila",
+    "artist": "The Champs",
+    "video": "U_JFLb1IItM",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 50929,
+    "year": "1958",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:02.796Z",
+    "genre": "Rock’n’Roll",
+    "realBpm": 90,
+    "previewStart": 42,
+    "previewEnd": 56,
+    "volume": 1,
+    "author": "fepo",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=14396",
+    "tracks": [
+      {
+        "name": "Tequila",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thechampstequila",
     "local": false
   },
   {
@@ -92401,6 +93389,83 @@
     "local": false
   },
   {
+    "id": "volbeat-lola-montez",
+    "title": "Lola Montez",
+    "artist": "Volbeat",
+    "video": "e02gzZmjhVU",
+    "language": [
+      "English"
+    ],
+    "bpm": 304.54,
+    "gap": 291.1807972680109,
+    "year": "2013",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-05T00:11:02.007Z",
+    "realBpm": 152,
+    "volume": 0.71,
+    "author": "hexahurz",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatlolamontez",
+    "local": false
+  },
+  {
+    "id": "volbeat-radio-girl",
+    "title": "Radio Girl",
+    "artist": "Volbeat",
+    "video": "VfWXo9gKYJ0",
+    "language": [
+      "English"
+    ],
+    "bpm": 225.92,
+    "gap": 15.233711048158682,
+    "year": "2007",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-05T00:11:02.009Z",
+    "genre": "Metal",
+    "realBpm": 113,
+    "volume": 0.8,
+    "author": "Angry",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatradiogirl",
+    "local": false
+  },
+  {
+    "id": "volbeat-the-bliss",
+    "title": "The Bliss",
+    "artist": "Volbeat",
+    "video": "xv11vZj4Z0g",
+    "language": [
+      "English"
+    ],
+    "bpm": 294,
+    "gap": 334.0816326530612,
+    "year": "2016",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-05T00:11:01.819Z",
+    "genre": "Rock",
+    "realBpm": 147,
+    "volume": 0.71,
+    "author": "Keval",
+    "tracks": [
+      {
+        "start": -4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatthebliss",
+    "local": false
+  },
+  {
     "id": "von-wegen-lisbeth-bitch",
     "title": "Bitch",
     "artist": "Von Wegen Lisbeth",
@@ -92716,6 +93781,33 @@
     ],
     "tracksCount": 1,
     "search": "weezerperfectsituation",
+    "local": false
+  },
+  {
+    "id": "weezer-say-it-aint-so",
+    "title": "Say It Ain’t So",
+    "artist": "Weezer",
+    "video": "ENXvZ9YRjbo",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.3,
+    "gap": 12643.178508661813,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:03.412Z",
+    "genre": "Alternative Rock",
+    "realBpm": 76,
+    "volume": 0.78,
+    "author": "Gollum",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=9221",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "weezersayitaintso",
     "local": false
   },
   {
@@ -93274,6 +94366,58 @@
     ],
     "tracksCount": 1,
     "search": "whitneyhoustonsavingallmyloveforyou",
+    "local": false
+  },
+  {
+    "id": "whitney-houston-so-emotional",
+    "title": "So Emotional",
+    "artist": "Whitney Houston",
+    "video": "0YjSHbA6HQQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.4,
+    "gap": 17276.655518394648,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:02.601Z",
+    "genre": "Pop",
+    "realBpm": 119,
+    "volume": 0.73,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitneyhoustonsoemotional",
+    "local": false
+  },
+  {
+    "id": "whitney-houston-where-do-broken-hearts-go",
+    "title": "Where Do Broken Hearts Go",
+    "artist": "Whitney Houston",
+    "video": "wa3tfVjGCQ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 247.76,
+    "gap": 4470.778172424927,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-05T00:11:02.597Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 0.75,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "whitneyhoustonwheredobrokenheartsgo",
     "local": false
   },
   {
@@ -94255,6 +95399,34 @@
     ],
     "tracksCount": 1,
     "search": "yoasobiyorunikakeruintothenight",
+    "local": false
+  },
+  {
+    "id": "yoasobi-yuusha",
+    "title": "Yuusha",
+    "artist": "YOASOBI",
+    "video": "OIBODIPC_8Y",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 208,
+    "gap": -133.26923076923072,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-11-05T00:11:03.200Z",
+    "realBpm": 104,
+    "previewStart": 48,
+    "previewEnd": 87,
+    "volume": 0.76,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28344",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "yoasobiyuusha",
     "local": false
   },
   {

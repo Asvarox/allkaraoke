@@ -1,0 +1,423 @@
+#ARTIST:Kyle Justin
+#TITLE:Angry Video Game Nerd Theme Song
+#CREATOR:tair1
+#BPM:229,61
+#YEAR:2014
+#PREVIEWSTART:66
+#VIDEO:v=MJIz6QTMkRM
+#GENRE:Themes
+#LANGUAGE:English
+#GAP:45,40568790557916
+#ALLKARAOKE_ID:kyle-justin-angry-video-game-nerd-theme-song
+#ALLKARAOKE_LASTUPDATE:2024-11-05T00:11:03.198Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=5811
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=7276
+#ALLKARAOKE_PREVIEWEND:85
+#ALLKARAOKE_VOLUME:1
+#P1:The Angry Video Game Nerd Theme Song
+#MP3:Kyle Justin - Angry Video Game Nerd Theme Song.mp3
+: 14 2 -4 He’s 
+: 17 2 0 go
+: 20 2 0 nna 
+: 25 3 0 take 
+: 29 2 0 you 
+: 33 3 -2 back 
+: 37 2 -2 to 
+: 40 3 0 the 
+: 45 9 -4 past
+- 54 61
+- 61
+: 76 2 -4 To 
+: 79 4 0 play 
+: 84 2 0 the 
+: 87 2 0 shi
+: 90 3 0 tty 
+: 96 4 -2 games 
+: 101 2 -2 that 
+: 104 5 0 suck 
+: 111 5 -4 ass
+- 116
+: 118 2 -4 He’d 
+: 121 3 0 rat
+: 125 3 -4 her 
+: 130 9 -4 have 
+: 146 3 -4 a 
+: 151 3 0 bu
+: 155 2 1 fa
+: 158 12 -2 llo
+- 170
+: 182 5 0 Take 
+: 188 2 1 a 
+: 191 5 3 dia
+: 197 2 3 rr
+: 200 4 3 hea 
+: 207 4 3 dump 
+: 212 3 1 in 
+: 216 3 0 his 
+: 221 15 -4 ear
+- 236
+: 242 3 -4 He’d 
+: 246 4 0 ra
+: 251 3 -4 ther 
+: 256 10 -4 eat 
+: 272 4 -4 the 
+: 277 3 0 ro
+: 281 3 1 tten 
+: 285 4 -2 ass
+: 290 10 -2 hole
+- 300
+: 305 1 -2 Of 
+: 307 1 -2 a 
+: 309 3 0 road 
+: 313 2 1 killed 
+: 316 7 3 skunk 
+: 325 3 3 and 
+: 333 4 3 down 
+: 338 2 1 it 
+: 341 2 0 with 
+: 344 18 -4 beer
+- 362
+: 373 2 -4 He’s 
+: 376 2 -2 the 
+: 380 7 0 angri
+: 388 3 0 est 
+: 392 2 -2 ga
+: 395 3 -2 mer 
+: 399 4 -2 you’ve 
+: 404 2 0 ev
+: 407 2 -4 er 
+: 410 16 -4 heard
+- 426
+: 434 3 -4 He’s 
+: 438 2 -2 the 
+: 443 2 0 an
+: 446 4 0 gry 
+: 453 4 0 nin
+: 458 7 -2 ten
+: 466 2 0 do 
+: 470 21 -4 nerd
+- 491
+: 497 3 -4 He’s 
+: 501 2 -2 the 
+: 505 3 0 an
+: 509 4 0 gry 
+: 514 1 -2 a
+: 516 2 -2 ta
+: 519 3 -2 ri 
+: 526 3 0 se
+: 530 3 -4 ga 
+: 534 17 -4 nerd
+- 551
+: 560 3 -4 He’s 
+: 564 3 -2 the 
+: 569 3 0 an
+: 573 7 0 gry 
+: 583 2 -2 vi
+: 586 3 -2 deo
+: 590 3 -2 ga
+: 594 4 -2 me 
+: 600 18 -4 nerd
+- 618 638
+- 638
+: 653 3 0 When 
+: 657 2 0 you 
+: 660 4 0 turn 
+: 666 2 -2 on 
+: 669 3 -2 your 
+: 673 3 0 T
+: 677 5 -4 V
+- 682 694
+- 694
+: 709 2 -4 Make 
+: 712 4 0 sure 
+: 717 3 0 it’s 
+: 721 3 0 tuned 
+: 725 2 -2 to 
+: 732 3 0 cha
+: 736 3 -2 nnel 
+: 741 5 3 three
+- 746
+: 747 1 -4 He’s 
+: 749 1 -4 got 
+: 751 1 -4 a 
+: 753 3 0 ner
+: 757 2 -4 dy 
+: 761 8 -4 shirt
+- 769
+: 781 1 -4 And 
+: 783 2 -4 a 
+: 787 2 0 po
+: 790 3 1 cket 
+: 795 8 -2 pouch
+- 803
+: 814 3 -2 Al
+: 818 3 0 though 
+: 823 3 1 I’ve 
+: 827 1 3 ne
+: 829 2 3 ver 
+: 833 2 3 seen 
+: 836 1 3 him 
+: 838 4 3 write 
+: 843 2 3 a
+: 846 2 1 ny
+: 849 3 0 thing 
+: 853 13 -4 down
+- 866
+: 876 1 -4 He’s 
+: 878 1 -4 got 
+: 880 1 -4 a 
+: 883 4 0 pow
+: 888 2 -4 er 
+: 892 8 -4 glove
+- 900
+: 909 1 -4 And 
+: 911 2 -4 a 
+: 914 3 1 fil
+: 918 4 1 thy 
+: 924 8 -2 mouth
+- 932
+: 943 4 -2 Armed 
+: 948 3 0 with 
+: 952 2 1 his 
+: 955 2 3 za
+: 958 3 3 pper 
+: 963 3 3 he 
+: 967 3 3 will 
+: 972 4 3 tear 
+: 978 3 1 these 
+: 982 6 0 games 
+: 989 10 -4 down
+- 999
+: 1012 2 -4 He’s 
+: 1015 2 -2 the 
+: 1019 7 0 angri
+: 1027 3 0 est 
+: 1031 2 -2 ga
+: 1034 3 -2 mer 
+: 1038 4 -2 you’ve 
+: 1043 2 0 ev
+: 1046 2 -4 er 
+: 1049 16 -4 heard
+- 1065
+: 1077 3 -4 He’s 
+: 1081 2 -2 the 
+: 1086 2 0 an
+: 1089 4 0 gry 
+: 1096 4 0 nin
+: 1101 7 -2 ten
+: 1109 2 0 do 
+: 1113 21 -4 nerd
+- 1134
+: 1140 3 -4 He’s 
+: 1144 2 -2 the 
+: 1148 3 0 an
+: 1152 4 0 gry 
+: 1157 1 -2 a
+: 1159 2 -2 ta
+: 1162 3 -2 ri 
+: 1169 3 0 se
+: 1173 3 -4 ga 
+: 1177 17 -4 nerd
+- 1194
+: 1204 3 -4 He’s 
+: 1208 3 -2 the 
+: 1213 3 0 an
+: 1217 7 0 gry 
+: 1227 2 -2 vi
+: 1230 3 -2 deo
+: 1234 3 -2 ga
+: 1238 4 -2 me 
+: 1244 18 -4 nerd
+- 1262 1274
+- 1274
+: 1289 3 -2 He 
+: 1293 4 -2 plays 
+: 1298 1 -2 the 
+: 1300 4 -2 worst 
+: 1306 4 1 games 
+: 1311 1 1 of 
+: 1313 3 1 all 
+: 1318 12 1 time
+- 1330 1343
+- 1343
+: 1358 2 0 Horr
+: 1361 4 0 ible 
+: 1367 2 0 abo
+: 1370 2 1 mi
+: 1373 8 3 nations 
+: 1382 2 3 of 
+: 1385 3 3 man
+: 1389 4 3 ki
+: 1394 2 1 ~
+: 1397 2 0 ~
+: 1400 10 -2 nd
+- 1410
+: 1415 3 -2 They 
+: 1420 2 -2 make 
+: 1423 2 -2 him 
+: 1426 3 -2 so 
+: 1432 4 1 mad 
+: 1438 1 1 he 
+: 1440 3 1 could 
+: 1445 8 1 spit
+- 1453 1459
+- 1459
+F 1474 1 0 Or 
+F 1477 2 0 say 
+F 1480 3 0 cow
+F 1484 2 0 a
+F 1487 7 0 bunga
+- 1494
+F 1509 2 0 Co
+F 1512 2 0 wa 
+F 1515 8 0 fuckin 
+F 1526 4 0 piece 
+F 1532 2 0 of 
+F 1535 4 0 dog 
+F 1540 8 0 shit
+- 1548 1567
+- 1567
+: 1582 2 -4 They 
+: 1585 2 0 rip 
+: 1588 2 0 you 
+: 1593 3 0 off 
+: 1597 2 0 and 
+: 1601 3 -2 don’t 
+: 1606 3 -2 care 
+: 1610 2 0 one 
+: 1613 5 -4 bit
+- 1618 1631
+- 1631
+: 1646 2 -4 But 
+: 1650 2 0 this 
+: 1654 4 0 nerd, 
+: 1659 2 0 he 
+: 1665 2 -2 does
+: 1668 2 -2 n’t 
+: 1671 3 -2 for
+: 1675 3 0 get 
+: 1680 2 -4 it
+- 1682
+: 1685 3 -4 Why 
+: 1689 2 -4 can’t 
+: 1693 1 -4 a 
+: 1695 2 0 tur
+: 1698 3 -4 tle 
+: 1704 6 -4 swim
+- 1710
+: 1716 2 -4 Why 
+: 1720 2 -4 can’t 
+: 1724 1 -4 I 
+: 1727 3 0 land 
+: 1732 1 1 a 
+: 1734 6 -2 plane
+- 1740
+: 1748 4 -2 They’ve 
+: 1753 3 0 got 
+: 1757 2 1 a 
+: 1760 6 3 quick 
+: 1768 4 3 buck 
+: 1773 2 3 for 
+: 1776 2 3 this 
+: 1779 3 3 shit
+: 1783 5 1 load 
+: 1789 2 0 of 
+: 1792 7 -4 fuck
+- 1799
+: 1812 2 -4 The 
+: 1815 3 -4 chara
+: 1819 4 -4 cters 
+: 1826 3 0 names 
+: 1830 2 -4 are 
+: 1833 6 -4 wrong
+- 1839
+: 1844 3 -4 Why’s 
+: 1848 2 -4 the 
+: 1852 4 -4 pass
+: 1857 4 1 word 
+: 1864 3 1 so 
+: 1869 5 -2 long
+- 1874
+: 1878 3 -2 Why 
+: 1882 4 0 don’t 
+: 1887 2 1 the 
+: 1891 5 3 wea
+: 1900 10 3 pons 
+: 1912 3 3 do 
+: 1920 3 1 a
+: 1924 5 0 ny
+: 1930 36 -4 thing
+- 1966
+: 1975 4 -4 He’s 
+: 1980 5 -2 the 
+: 1990 7 0 angri
+: 1998 7 0 est 
+: 2009 5 -2 ga
+: 2015 4 -2 mer 
+: 2020 5 -2 you’ve 
+: 2027 2 0 ev
+: 2030 2 -4 er 
+: 2033 25 -4 heard
+- 2058
+: 2066 3 -4 The 
+: 2070 6 -2 games 
+: 2078 5 0 suck 
+: 2085 5 0 so 
+: 2092 5 0 bad 
+: 2098 3 0 he 
+: 2102 6 -2 makes 
+: 2110 3 -2 up 
+: 2114 3 -2 his 
+: 2119 4 -2 own 
+: 2124 26 -4 words
+- 2150
+: 2160 3 -4 He’s 
+: 2164 3 -2 the 
+: 2168 7 0 angri
+: 2176 4 0 est 
+: 2182 4 0 most 
+: 2188 6 -2 pissed 
+: 2197 3 -2 off 
+: 2202 4 -2 ga
+: 2207 5 -2 ming 
+: 2213 25 -4 nerd
+- 2238
+: 2246 3 -4 He’s 
+: 2250 3 -2 the 
+: 2257 3 0 an
+: 2261 5 0 gry
+- 2266
+F 2269 8 -2 Atari 
+F 2278 7 -2 Amiga 
+F 2286 8 -2 CDI
+- 2294
+F 2296 6 -2 Coleco
+F 2303 4 -2 vision 
+F 2308 4 -2 Intel
+F 2313 6 -2 livision 
+F 2320 7 -2 Sega
+- 2327
+F 2328 8 -2 NeoGeo 
+F 2337 4 -2 Turbo 
+F 2342 4 -2 grafix 
+F 2347 5 -2 16
+- 2352
+F 2354 7 -2 Odissey 
+F 2362 7 -2 3PO 
+F 2370 4 -2 Commo
+F 2375 2 -2 dore 
+F 2378 2 -2 Nin
+F 2381 9 -2 tendo
+- 2390
+: 2396 30 -4 Nerd
+- 2426
+: 2441 3 -4 He’s 
+: 2445 3 -2 the 
+: 2450 4 0 an
+: 2455 7 0 gry 
+: 2484 9 -2 video
+: 2494 25 -2 game 
+: 2520 54 -4 nerd
+E
