@@ -1,0 +1,34 @@
+#ARTIST:The Champs
+#TITLE:Tequila
+#CREATOR:fepo
+#BPM:270
+#YEAR:1958
+#PREVIEWSTART:42
+#VIDEO:v=U_JFLb1IItM
+#GENRE:Rock’n’Roll
+#LANGUAGE:English
+#GAP:50929
+#ALLKARAOKE_ID:the-champs-tequila
+#ALLKARAOKE_LASTUPDATE:2024-11-05T00:11:02.796Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=14396
+#ALLKARAOKE_PREVIEWEND:56
+#ALLKARAOKE_VOLUME:1
+#P1:Tequila
+#MP3:The Champs - Tequila.mp3
+* 18 2 17 Te
+* 22 2 22 qui
+* 26 5 15 la
+- 31 774
+- 774
+* 792 2 17 Te
+* 796 2 22 qui
+* 800 5 15 la
+- 805 1348
+- 1348
+* 1366 3 17 Te
+* 1372 3 24 qui
+* 1378 14 19 la
+E
