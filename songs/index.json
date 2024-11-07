@@ -3072,6 +3072,34 @@
     "local": false
   },
   {
+    "id": "alejandro-fernandez-abrazame",
+    "title": "Abrázame",
+    "artist": "Alejandro Fernández",
+    "video": "yt8Ki-RSIyA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 261.8,
+    "gap": 21325.974025974025,
+    "year": "1996",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-11-07T00:11:11.808Z",
+    "genre": "Latin",
+    "realBpm": 87,
+    "volume": 0.79,
+    "author": "DaVIch0",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Alejandro%20Fern%C3%A1ndez&cancion=Abr%C3%A1zame",
+    "tracks": [
+      {
+        "name": "Abrazame",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "alejandrofernandezabrazame",
+    "local": false
+  },
+  {
     "id": "alejandro-sanz-amiga-mia",
     "title": "Amiga mía",
     "artist": "Alejandro Sanz",
@@ -15804,9 +15832,9 @@
       "English"
     ],
     "bpm": 248,
-    "gap": 14445.774193548386,
+    "gap": 14295.774193548386,
     "year": "2023",
-    "lastUpdate": "2024-04-20T06:51:24.349Z",
+    "lastUpdate": "2024-11-06T07:27:39.618Z",
     "genre": "Musical",
     "realBpm": 124,
     "volume": 0.69,
@@ -25161,6 +25189,30 @@
     "local": false
   },
   {
+    "id": "disneys-camp-rock-jonas-brothers-play-my-music",
+    "title": "Play My Music",
+    "artist": "Disney’s Camp Rock (Jonas Brothers)",
+    "video": "3O-d_SWXQ7g",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 3290,
+    "year": "2008",
+    "lastUpdate": "2024-11-07T00:11:11.663Z",
+    "realBpm": 178,
+    "volume": 0.71,
+    "author": "B3rnh4rd",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyscamprockjonasbrothersplaymymusic",
+    "local": false
+  },
+  {
     "id": "disneys-chip-chap-intro",
     "title": "Intro",
     "artist": "Disney’s Chip & Chap",
@@ -25187,6 +25239,30 @@
     "local": false
   },
   {
+    "id": "disneys-descendants-2-space-between",
+    "title": "Space Between",
+    "artist": "Disney’s Descendants 2",
+    "video": "NalipNz4e3g",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 11760.384615384615,
+    "year": "2017",
+    "lastUpdate": "2024-11-07T00:11:10.366Z",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "mathias78",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysdescendants2spacebetween",
+    "local": false
+  },
+  {
     "id": "disneys-descendants-did-i-mention",
     "title": "Did I Mention",
     "artist": "Disney’s Descendants",
@@ -25209,6 +25285,31 @@
     ],
     "tracksCount": 1,
     "search": "disneysdescendantsdidimention",
+    "local": false
+  },
+  {
+    "id": "disneys-descendants-evil-like-me",
+    "title": "Evil Like Me",
+    "artist": "Disney’s Descendants",
+    "video": "PMFWFaSauVU",
+    "language": [
+      "English"
+    ],
+    "bpm": 342.6,
+    "gap": -44.04553415061298,
+    "year": "2015",
+    "lastUpdate": "2024-11-07T00:11:11.072Z",
+    "genre": "Soundtrack",
+    "realBpm": 85,
+    "volume": 1,
+    "author": "0815_Gamer",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysdescendantsevillikeme",
     "local": false
   },
   {
@@ -27758,10 +27859,10 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 23609.23076923077,
+    "gap": 23709.23076923077,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2024-11-03T00:12:30.540Z",
+    "lastUpdate": "2024-11-05T20:48:52.965Z",
     "genre": "Alternative",
     "videoGap": 7,
     "realBpm": 129,
@@ -31935,14 +32036,13 @@
       "English"
     ],
     "bpm": 480,
-    "gap": 20720,
+    "gap": -630,
     "year": "2023",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-08-06T16:26:24.480Z",
+    "lastUpdate": "2024-11-05T20:50:40.303Z",
     "genre": "K-Pop",
-    "videoGap": 7,
     "realBpm": 120,
-    "volume": 0.59,
+    "volume": 0.76,
     "author": "FritzB",
     "tracks": [
       {
@@ -37297,6 +37397,38 @@
     "local": false
   },
   {
+    "id": "harpo-moviestar",
+    "title": "Moviestar",
+    "artist": "Harpo",
+    "video": "n6AGHnLO-VA",
+    "language": [
+      "English"
+    ],
+    "bpm": 238.45,
+    "gap": 16503.49968546865,
+    "year": "1975",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-11-07T00:11:11.958Z",
+    "edition": "Singstar Chartbreaker",
+    "genre": "Pop",
+    "realBpm": 119,
+    "previewStart": 49,
+    "previewEnd": 79,
+    "volume": 0.8,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3582",
+    "tracks": [
+      {
+        "name": "Moviestar",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "harpomoviestar",
+    "local": false
+  },
+  {
     "id": "harry-styles-as-it-was",
     "title": "As It Was",
     "artist": "Harry Styles",
@@ -42265,6 +42397,35 @@
     "local": false
   },
   {
+    "id": "joan-sebastian-25-rosas",
+    "title": "25 rosas",
+    "artist": "Joan Sebastian",
+    "video": "QcGpq_vk0xk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 367.72,
+    "gap": 9420.499839279973,
+    "year": "1985",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-11-07T00:11:11.807Z",
+    "genre": "Latino",
+    "realBpm": 92,
+    "volume": 0.77,
+    "author": "chamus2001",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=kaim21",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Joan%20Sebastian&cancion=25%20rosas",
+    "tracks": [
+      {
+        "name": "25 rosas",
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joansebastian25rosas",
+    "local": false
+  },
+  {
     "id": "joan-sebastian-secreto-de-amor",
     "title": "Secreto de amor",
     "artist": "Joan Sebastian",
@@ -43092,6 +43253,184 @@
     ],
     "tracksCount": 1,
     "search": "jonbellionhumanacoustic",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-burnin-up",
+    "title": "Burnin’ Up",
+    "artist": "Jonas Brothers",
+    "video": "5KNEZJ6KkLI",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 22650,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.656Z",
+    "realBpm": 114,
+    "volume": 0.76,
+    "author": "jalkazar",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrothersburninup",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-feat-miley-cyrus-before-the-storm",
+    "title": "Before The Storm",
+    "artist": "Jonas Brothers feat. Miley Cyrus",
+    "video": "JWYQv-sqyXA",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.02,
+    "gap": 8580.066662222518,
+    "year": "2009",
+    "lastUpdate": "2024-11-07T00:11:11.516Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 0.7,
+    "author": "vexevir",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrothersfeatmileycyrusbeforethestorm",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-lovebug",
+    "title": "Lovebug",
+    "artist": "Jonas Brothers",
+    "video": "MKpCDz0UjW4",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 46030,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.658Z",
+    "videoGap": 41,
+    "realBpm": 79,
+    "volume": 0.72,
+    "author": "jalkazar",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrotherslovebug",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-only-human",
+    "title": "Only Human",
+    "artist": "Jonas Brothers",
+    "video": "kBNt8hYvn8A",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.17,
+    "gap": 23143.110295876864,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.514Z",
+    "genre": "Reggae",
+    "realBpm": 94,
+    "volume": 0.72,
+    "author": "mustangfred",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrothersonlyhuman",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-paranoid",
+    "title": "Paranoid",
+    "artist": "Jonas Brothers",
+    "video": "9QyRspHyPxQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 242,
+    "gap": 9738.264462809917,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.367Z",
+    "genre": "Pop-Rock",
+    "realBpm": 121,
+    "volume": 0.74,
+    "author": "michas17j",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrothersparanoid",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-sos",
+    "title": "S.O.S.",
+    "artist": "Jonas Brothers",
+    "video": "EbBGkqll8lI",
+    "language": [
+      "English"
+    ],
+    "bpm": 274,
+    "gap": 4004.598540145985,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.805Z",
+    "realBpm": 137,
+    "volume": 0.75,
+    "author": "Lytah",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrotherssos",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-when-you-look-me-in-the-eyes",
+    "title": "When You Look Me In The Eyes",
+    "artist": "Jonas Brothers",
+    "video": "CHiIm50fsNI",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 11630,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.661Z",
+    "realBpm": 136,
+    "volume": 0.73,
+    "author": "jalkazar",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jonasbrotherswhenyoulookmeintheeyes",
     "local": false
   },
   {
@@ -50953,6 +51292,30 @@
     "local": false
   },
   {
+    "id": "lil-nas-x-feat-miley-cyrus-am-i-dreaming",
+    "title": "Am I Dreaming",
+    "artist": "Lil Nas X feat. Miley Cyrus",
+    "video": "oyliZ8AoPq0",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.77,
+    "gap": 5124.517956964546,
+    "year": "2021",
+    "lastUpdate": "2024-11-07T00:11:11.218Z",
+    "realBpm": 94,
+    "volume": 0.69,
+    "author": "Tracks",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "lilnasxfeatmileycyrusamidreaming",
+    "local": false
+  },
+  {
     "id": "lil-nas-x-montero-call-me-by-your-name",
     "title": "MONTERO (Call Me By Your Name)",
     "artist": "Lil Nas X",
@@ -51221,6 +51584,37 @@
     ],
     "tracksCount": 2,
     "search": "linkinparkburnitdown",
+    "local": false
+  },
+  {
+    "id": "linkin-park-burning-in-the-skies",
+    "title": "Burning In The Skies",
+    "artist": "Linkin Park",
+    "video": "kh_YCSW5lPc",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 36310,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:10.357Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "previewStart": 65,
+    "previewEnd": 93,
+    "volume": 0.79,
+    "author": "karmidi",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=95",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11869",
+    "tracks": [
+      {
+        "name": "Burning In The Skies",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparkburningintheskies",
     "local": false
   },
   {
@@ -52967,6 +53361,37 @@
     ],
     "tracksCount": 1,
     "search": "losronaldosnopuedovivirsinti",
+    "local": false
+  },
+  {
+    "id": "loverboy-working-for-the-weekend",
+    "title": "Working For The Weekend",
+    "artist": "Loverboy",
+    "video": "dsgBpsNPQ50",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.2,
+    "gap": 14542.923154193872,
+    "year": "1981",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-11-07T00:11:10.347Z",
+    "genre": "Rock",
+    "realBpm": 147,
+    "previewStart": 41,
+    "previewEnd": 89,
+    "volume": 0.94,
+    "author": "Gollum",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=9472",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=15108",
+    "tracks": [
+      {
+        "name": "Working for the Weekend",
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "loverboyworkingfortheweekend",
     "local": false
   },
   {
@@ -60345,6 +60770,32 @@
     "local": false
   },
   {
+    "id": "miley-cyrus-when-i-look-at-you",
+    "title": "When I Look At You",
+    "artist": "Miley Cyrus",
+    "video": "S1yKCRp5qzU",
+    "language": [
+      "English"
+    ],
+    "bpm": 276.38,
+    "gap": 24963.084159490558,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:11.366Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 0.73,
+    "author": "Victorin",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mileycyruswhenilookatyou",
+    "local": false
+  },
+  {
     "id": "miley-cyrus-wrecking-ball",
     "title": "Wrecking Ball",
     "artist": "Miley Cyrus",
@@ -62873,6 +63324,68 @@
     ],
     "tracksCount": 1,
     "search": "naughtyboyfeatsamsmithlalala",
+    "local": false
+  },
+  {
+    "id": "nazareth-dream-on",
+    "title": "Dream On",
+    "artist": "Nazareth",
+    "video": "xdtv1asgcZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.58,
+    "gap": -11.401962747847165,
+    "year": "1982",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-07T00:11:11.959Z",
+    "genre": "Pop",
+    "realBpm": 149,
+    "previewStart": 27,
+    "previewEnd": 72,
+    "volume": 1,
+    "author": "Fepo",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8805",
+    "tracks": [
+      {
+        "name": "Dream On",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nazarethdreamon",
+    "local": false
+  },
+  {
+    "id": "nazareth-love-hurts",
+    "title": "Love Hurts",
+    "artist": "Nazareth",
+    "video": "cOvBk1GuApk",
+    "language": [
+      "English"
+    ],
+    "bpm": 298.3,
+    "gap": 18513.28859060403,
+    "year": "1974",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-07T00:11:11.960Z",
+    "genre": "Rock",
+    "realBpm": 175,
+    "previewStart": 19,
+    "previewEnd": 66,
+    "volume": 1,
+    "author": "Fepo",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=6722",
+    "tracks": [
+      {
+        "name": "Love Hurts",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nazarethlovehurts",
     "local": false
   },
   {
@@ -73359,6 +73872,37 @@
     "local": false
   },
   {
+    "id": "reo-speedwagon-take-it-on-the-run",
+    "title": "Take It On The Run",
+    "artist": "REO Speedwagon",
+    "video": "t7Csc6l4QLs",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.5,
+    "gap": 662.4068441064638,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-07T00:11:10.364Z",
+    "genre": "Rock",
+    "realBpm": 78,
+    "previewStart": 62,
+    "previewEnd": 89,
+    "volume": 0.84,
+    "author": "anthem_1",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9850",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11836",
+    "tracks": [
+      {
+        "name": "Take It On The Run",
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "reospeedwagontakeitontherun",
+    "local": false
+  },
+  {
     "id": "reol-no-title",
     "title": "No title",
     "artist": "Reol",
@@ -74968,6 +75512,37 @@
     "local": false
   },
   {
+    "id": "robbie-williams-love-my-life",
+    "title": "Love My Life",
+    "artist": "Robbie Williams",
+    "video": "j4ggyO-OFXU",
+    "language": [
+      "English"
+    ],
+    "bpm": 288.03,
+    "gap": 9560.51973752734,
+    "year": "2016",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-07T00:11:10.361Z",
+    "genre": "Pop",
+    "realBpm": 96,
+    "previewStart": 49,
+    "previewEnd": 75,
+    "volume": 0.71,
+    "author": "Fepo",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=10393",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=20425",
+    "tracks": [
+      {
+        "name": "Love My Life",
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "robbiewilliamslovemylife",
+    "local": false
+  },
+  {
     "id": "robbie-williams-rock-dj",
     "title": "Rock DJ",
     "artist": "Robbie Williams",
@@ -74991,6 +75566,37 @@
     ],
     "tracksCount": 1,
     "search": "robbiewilliamsrockdj",
+    "local": false
+  },
+  {
+    "id": "robbie-williams-shes-the-one",
+    "title": "She’s The One",
+    "artist": "Robbie Williams",
+    "video": "XCCsvVTy0Lw",
+    "language": [
+      "English"
+    ],
+    "bpm": 316,
+    "gap": 11293.164556962025,
+    "year": "1998",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-07T00:11:10.359Z",
+    "genre": "Pop",
+    "realBpm": 167,
+    "previewStart": 100,
+    "previewEnd": 135,
+    "volume": 0.79,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3755",
+    "tracks": [
+      {
+        "name": "She's The One",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "robbiewilliamsshestheone",
     "local": false
   },
   {
@@ -75365,6 +75971,30 @@
     ],
     "tracksCount": 1,
     "search": "rosaliafeattheweekndlafama",
+    "local": false
+  },
+  {
+    "id": "rose-bruno-mars-apt",
+    "title": "APT",
+    "artist": "ROSÉ & Bruno Mars",
+    "video": "ekr2nIex040",
+    "language": [
+      "English"
+    ],
+    "bpm": 298,
+    "gap": 27.651006711409423,
+    "year": "2024",
+    "lastUpdate": "2024-11-07T00:11:11.810Z",
+    "realBpm": 149,
+    "volume": 0.76,
+    "author": "askusbloodfist",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rosebrunomarsapt",
     "local": false
   },
   {
@@ -88482,6 +89112,37 @@
     ],
     "tracksCount": 1,
     "search": "thestrokestheadultsaretalking",
+    "local": false
+  },
+  {
+    "id": "the-sweet-fox-on-the-run",
+    "title": "Fox On The Run",
+    "artist": "The Sweet",
+    "video": "kRv7EjjwYBI",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.6,
+    "gap": 17942.347417840374,
+    "year": "1974",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-07T00:11:10.351Z",
+    "genre": "Rock",
+    "realBpm": 128,
+    "previewStart": 49,
+    "previewEnd": 78,
+    "volume": 0.95,
+    "author": "jackroke",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=474",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11362",
+    "tracks": [
+      {
+        "name": "Fox On The Run",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thesweetfoxontherun",
     "local": false
   },
   {
