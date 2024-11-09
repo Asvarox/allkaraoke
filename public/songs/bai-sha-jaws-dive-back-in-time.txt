@@ -1,0 +1,233 @@
+#ARTIST:Bai Sha JAWS
+#TITLE:Dive Back in Time
+#CREATOR:wolf359
+#BPM:220
+#YEAR:2021
+#PREVIEWSTART:32
+#VIDEO:v=ZtEBMYcZvjY
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:483,27272727272737
+#EDITION:anime
+#ALLKARAOKE_ID:bai-sha-jaws-dive-back-in-time
+#ALLKARAOKE_LASTUPDATE:2024-11-09T00:11:02.575Z
+#ALLKARAOKE_ARTISTORIGIN:CN
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_PREVIEWEND:65
+#ALLKARAOKE_VOLUME:0,93
+#MP3:Bai Sha JAWS - Dive Back in Time (TV).mp3
+#COVER:Bai Sha JAWS - Dive Back in Time (TV).jpg
+#MEDLEYSTARTBEAT:302
+#MEDLEYENDBEAT:569
+: 15 2 -7 It 
+: 19 3 -5 did
+: 23 1 0 n't
+: 25 1 2 ~ 
+: 27 3 0 take 
+: 32 3 -2 too 
+: 36 2 0 long 
+: 40 1 2 to 
+: 42 1 0 re
+: 44 1 -2 al
+: 46 3 -2 ize
+- 49
+: 52 1 -7 some
+: 55 1 0 thing
+: 57 2 2 ~ 
+: 60 2 0 has 
+: 64 3 -2 changed 
+: 68 3 0 in 
+: 72 1 2 the 
+: 74 2 0 back 
+: 78 1 -2 of 
+: 80 2 -2 my 
+: 84 6 -7 mind
+- 90
+: 96 1 2 your
+: 98 2 3 ~ 
+: 101 2 2 eyes
+: 104 6 0 ~
+- 110
+: 115 1 -7 there 
+: 117 1 -2 ain't
+: 119 1 0 ~ 
+: 121 2 -2 no
+: 124 2 -3 where 
+: 127 2 -2 left 
+: 131 1 -5 to 
+: 133 3 0 hide 
+: 137 3 -2 be
+: 141 1 0 hind
+: 143 3 2 ~
+- 146
+: 149 3 -5 time 
+: 153 1 0 no
+: 155 1 2 ~ 
+: 157 3 0 long
+: 162 1 -2 er 
+: 166 2 0 flew 
+: 169 2 2 like 
+: 172 1 0 it
+: 174 1 -2 ~ 
+: 176 3 -2 was
+- 179
+: 182 1 -5 when 
+: 186 2 2 the 
+: 190 2 0 flash 
+: 194 3 -2 froze 
+: 198 3 0 eve
+: 202 1 2 ry
+: 205 3 0 thing 
+: 209 2 5 be
+: 213 2 2 fore
+: 216 6 0 ~
+- 222
+: 227 1 -2 with
+: 229 1 -2 out
+: 231 2 0 ~ 
+: 236 4 -2 you
+- 240
+: 243 1 -5 I 
+: 245 2 -3 don't 
+: 248 2 -2 know 
+: 251 2 -3 if 
+: 254 2 -5 I 
+: 258 2 -7 could 
+: 262 2 -10 take 
+: 267 1 -12 this 
+: 270 5 -12 road
+- 275
+: 283 4 2 and 
+: 288 2 2 I'm 
+: 292 2 0 a
+: 295 3 2 bout 
+: 300 1 0 to 
+: 302 3 2 lose 
+: 306 3 5 my 
+: 311 3 2 mind
+- 314
+: 317 1 0 Eve
+: 319 1 2 ry 
+: 321 1 2 min
+: 323 1 2 ute 
+: 325 1 2 that 
+: 327 1 2 I 
+: 329 1 2 di
+: 331 1 3 aled 
+: 333 1 2 back 
+: 335 3 0 in 
+: 339 5 2 time
+- 344
+: 348 1 0 eve
+: 350 1 2 ry 
+: 353 1 2 sin
+: 355 1 2 gle 
+: 357 1 2 ex
+: 361 2 3 ist
+: 365 1 2 ence 
+: 368 2 0 re
+: 371 5 2 winds
+- 376
+: 382 1 0 some
+: 384 1 2 thing 
+: 386 1 2 se
+: 388 1 2 cre
+: 390 1 2 tive 
+: 394 1 2 hid
+: 396 1 3 ~
+: 398 1 2 den 
+: 400 2 0 in
+: 404 4 2 side
+- 408
+: 411 7 2 your
+* 420 5 10 ~ 
+* 426 7 9 mind
+* 434 4 0 ~
+: 439 3 2 ~
+- 442
+: 447 1 0 all 
+: 449 1 2 the 
+: 451 1 2 heart
+: 453 1 2 aches 
+: 455 1 2 and 
+: 457 1 2 the 
+: 459 1 2 smiles
+: 461 1 3 ~ 
+: 463 1 2 nev
+: 465 2 0 er 
+: 470 1 0 fad
+: 472 1 2 ~
+: 474 1 0 ed
+- 475
+: 478 1 0 I
+: 480 1 2 ~ 
+: 482 1 2 know 
+: 484 1 2 you'll 
+: 486 1 2 be 
+: 488 1 2 by 
+: 490 1 2 my 
+: 492 1 2 side
+: 494 1 3 ~ 
+: 496 1 2 when 
+: 498 3 0 we 
+: 502 1 0 make
+: 504 1 2 ~ 
+: 506 5 0 it
+- 511
+: 520 2 -2 come 
+: 524 3 0 back 
+: 531 2 0 from 
+* 536 1 10 the
+* 538 2 12 ~ 
+* 541 9 10 dive 
+* 557 1 -3 back
+: 559 3 -2 ~ 
+: 565 1 -3 in
+: 567 1 -2 ~
+: 569 1 -3 ~ 
+: 574 10 -5 time
+- 584
+F 590 4 0 dive, 
+F 596 4 0 dive, 
+F 602 2 0 dive, 
+F 606 3 0 dive
+- 609
+: 618 1 -2 Dive
+: 620 1 0 ~ 
+: 623 5 -2 back 
+: 631 1 -5 in
+: 633 1 -3 ~
+: 635 1 -5 ~ 
+: 638 12 -5 time
+- 650
+F 654 4 0 dive, 
+F 661 3 0 dive, 
+F 667 2 0 dive, 
+F 671 5 0 dive
+- 676
+: 683 1 -2 dive
+: 685 1 0 ~ 
+: 687 6 -2 back 
+: 695 1 -5 in
+: 697 2 -3 ~
+: 700 1 -5 ~ 
+: 703 13 -5 time
+- 716
+F 720 3 0 dive, 
+F 726 3 0 dive, 
+F 732 2 0 dive, 
+F 736 4 0 dive
+- 740
+: 748 1 -2 dive
+: 750 1 0 ~ 
+: 753 3 -2 back
+: 757 2 -3 ~ 
+: 760 1 -2 in
+: 762 3 -3 ~ 
+: 769 11 -5 time
+- 780
+F 785 3 0 dive, 
+F 791 3 0 dive, 
+F 797 2 0 dive, 
+F 802 7 0 dive
+E

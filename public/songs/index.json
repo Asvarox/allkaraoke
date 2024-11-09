@@ -6687,6 +6687,30 @@
     "local": false
   },
   {
+    "id": "ariana-grande-justin-bieber-stuck-with-u",
+    "title": "Stuck With U",
+    "artist": "Ariana Grande & Justin Bieber",
+    "video": "pE49WK-oNjU",
+    "language": [
+      "English"
+    ],
+    "bpm": 358.08,
+    "gap": 3994.6380697050936,
+    "year": "2020",
+    "lastUpdate": "2024-11-09T00:11:02.314Z",
+    "realBpm": 179,
+    "volume": 0.7,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "arianagrandejustinbieberstuckwithu",
+    "local": false
+  },
+  {
     "id": "ariana-grande-moonlight",
     "title": "Moonlight",
     "artist": "Ariana Grande",
@@ -9385,6 +9409,35 @@
     ],
     "tracksCount": 1,
     "search": "badomensthegrey",
+    "local": false
+  },
+  {
+    "id": "bai-sha-jaws-dive-back-in-time",
+    "title": "Dive Back in Time",
+    "artist": "Bai Sha JAWS",
+    "video": "ZtEBMYcZvjY",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 483.27272727272737,
+    "year": "2021",
+    "artistOrigin": "CN",
+    "lastUpdate": "2024-11-09T00:11:02.575Z",
+    "edition": "anime",
+    "genre": "Pop",
+    "realBpm": 108,
+    "previewStart": 32,
+    "previewEnd": 65,
+    "volume": 0.93,
+    "author": "wolf359",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "baishajawsdivebackintime",
     "local": false
   },
   {
@@ -15430,6 +15483,31 @@
     ],
     "tracksCount": 1,
     "search": "brunomarslockedoutofheaven",
+    "local": false
+  },
+  {
+    "id": "bruno-mars-marry-you",
+    "title": "Marry You",
+    "artist": "Bruno Mars",
+    "video": "dElRVQFqj-k",
+    "language": [
+      "English"
+    ],
+    "bpm": 289.9,
+    "gap": 12006.90238013108,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-09T00:11:01.913Z",
+    "realBpm": 145,
+    "volume": 0.75,
+    "author": "savik1993",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "brunomarsmarryyou",
     "local": false
   },
   {
@@ -21751,6 +21829,31 @@
     "local": false
   },
   {
+    "id": "daddy-yankee-limbo",
+    "title": "Limbo",
+    "artist": "Daddy Yankee",
+    "video": "6BTjG-dhf5s",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250.04,
+    "gap": 30142.16317389218,
+    "year": "2013",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-11-09T00:11:01.915Z",
+    "realBpm": 125,
+    "volume": 0.72,
+    "author": "Pantero & vicktoben",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "daddyyankeelimbo",
+    "local": false
+  },
+  {
     "id": "daddy-yankee-llamado-de-emergencia",
     "title": "Llamado de emergencia",
     "artist": "Daddy Yankee",
@@ -25189,6 +25292,30 @@
     "local": false
   },
   {
+    "id": "disneys-brother-bear-look-through-my-eyes",
+    "title": "Look Through My Eyes",
+    "artist": "Disney’s Brother Bear",
+    "video": "6ZfkYYa_keM",
+    "language": [
+      "English"
+    ],
+    "bpm": 316,
+    "gap": 22663.164556962027,
+    "year": "2003",
+    "lastUpdate": "2024-11-09T00:11:00.951Z",
+    "realBpm": 158,
+    "volume": 0.81,
+    "author": "aac",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysbrotherbearlookthroughmyeyes",
+    "local": false
+  },
+  {
     "id": "disneys-camp-rock-jonas-brothers-play-my-music",
     "title": "Play My Music",
     "artist": "Disney’s Camp Rock (Jonas Brothers)",
@@ -26088,6 +26215,80 @@
     ],
     "tracksCount": 1,
     "search": "disneystarzanphilcollinssoeinmann",
+    "local": false
+  },
+  {
+    "id": "disneys-tarzan-son-of-man",
+    "title": "Son Of Man",
+    "artist": "Disney’s Tarzan",
+    "video": "-WcHPFUwd6U",
+    "language": [
+      "English"
+    ],
+    "bpm": 283.4,
+    "gap": 14054.354269583628,
+    "year": "1999",
+    "lastUpdate": "2024-11-09T00:11:01.674Z",
+    "realBpm": 142,
+    "volume": 0.81,
+    "author": "Kimbo",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneystarzansonofman",
+    "local": false
+  },
+  {
+    "id": "disneys-tarzan-strangers-like-me",
+    "title": "Strangers Like Me",
+    "artist": "Disney’s Tarzan",
+    "video": "BUKpSmYEL30",
+    "language": [
+      "English"
+    ],
+    "bpm": 478,
+    "gap": 8655.81589958159,
+    "year": "1999",
+    "lastUpdate": "2024-11-09T00:11:01.542Z",
+    "genre": "Soundtrack",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "Nomissimon",
+    "tracks": [
+      {
+        "start": 32
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneystarzanstrangerslikeme",
+    "local": false
+  },
+  {
+    "id": "disneys-teen-beach-movie-surf-crazy",
+    "title": "Surf Crazy",
+    "artist": "Disney’s Teen Beach Movie",
+    "video": "5tiiy6KFKTc",
+    "language": [
+      "English"
+    ],
+    "bpm": 341.51,
+    "gap": 9129.780679921525,
+    "year": "2013",
+    "lastUpdate": "2024-11-09T00:11:01.782Z",
+    "genre": "Soundtrack",
+    "realBpm": 170,
+    "volume": 1,
+    "author": "seanie627",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneysteenbeachmoviesurfcrazy",
     "local": false
   },
   {
@@ -39957,6 +40158,32 @@
     "local": false
   },
   {
+    "id": "indila-love-story",
+    "title": "Love Story",
+    "artist": "Indila",
+    "video": "DF3XjEhJ40Y",
+    "language": [
+      "French"
+    ],
+    "bpm": 256.3,
+    "gap": 2275.0721810378463,
+    "year": "2014",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-11-09T00:11:01.910Z",
+    "genre": "Pop",
+    "realBpm": 96,
+    "volume": 0.74,
+    "author": "mustangfred",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "indilalovestory",
+    "local": false
+  },
+  {
     "id": "indila-parle-a-ta-tete",
     "title": "Parle à ta tête",
     "artist": "Indila",
@@ -42504,6 +42731,31 @@
     "local": false
   },
   {
+    "id": "joe-cocker-you-are-so-beautiful",
+    "title": "You Are So Beautiful",
+    "artist": "Joe Cocker",
+    "video": "9rmGcE6m3KI",
+    "language": [
+      "English"
+    ],
+    "bpm": 372,
+    "gap": 16951.93548387097,
+    "year": "1974",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-09T00:11:02.310Z",
+    "realBpm": 70,
+    "volume": 0.67,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joecockeryouaresobeautiful",
+    "local": false
+  },
+  {
     "id": "joe-cocker-you-can-leave-your-hat-on",
     "title": "You Can Leave Your Hat On",
     "artist": "Joe Cocker",
@@ -42530,6 +42782,37 @@
     ],
     "tracksCount": 1,
     "search": "joecockeryoucanleaveyourhaton",
+    "local": false
+  },
+  {
+    "id": "john-denver-annies-song",
+    "title": "Annie’s Song",
+    "artist": "John Denver",
+    "video": "RNOTF-znQyw",
+    "language": [
+      "English"
+    ],
+    "bpm": 318,
+    "gap": 7839.433962264151,
+    "year": "1974",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-09T00:11:02.055Z",
+    "genre": "Country",
+    "realBpm": 146,
+    "previewStart": 126,
+    "previewEnd": 152,
+    "volume": 0.77,
+    "author": "Diddlmaus30mg",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1058",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3392",
+    "tracks": [
+      {
+        "name": "Annie's Song",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johndenveranniessong",
     "local": false
   },
   {
@@ -42745,6 +43028,31 @@
     ],
     "tracksCount": 1,
     "search": "johnrzeznikimstillhere",
+    "local": false
+  },
+  {
+    "id": "john-travolta-grease-greased-lightnin",
+    "title": "Greased Lightnin’",
+    "artist": "John Travolta (Grease)",
+    "video": "wacHJ81uGlM",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 12.5,
+    "year": "1978",
+    "lastUpdate": "2024-11-09T00:11:02.186Z",
+    "genre": "Soundtrack",
+    "realBpm": 160,
+    "volume": 0.8,
+    "author": "RetroGirl",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johntravoltagreasegreasedlightnin",
     "local": false
   },
   {
@@ -44486,6 +44794,31 @@
     ],
     "tracksCount": 1,
     "search": "junkominagawasayakaoharaeternaleternity",
+    "local": false
+  },
+  {
+    "id": "justin-bieber-anyone",
+    "title": "Anyone",
+    "artist": "Justin Bieber",
+    "video": "KIK3azN4w34",
+    "language": [
+      "English"
+    ],
+    "bpm": 379.11,
+    "gap": 15200.841180659967,
+    "year": "2021",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-11-09T00:11:02.312Z",
+    "realBpm": 116,
+    "volume": 0.61,
+    "author": "Tracks",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbieberanyone",
     "local": false
   },
   {
@@ -60691,6 +61024,32 @@
     "local": false
   },
   {
+    "id": "miley-cyrus-start-all-over",
+    "title": "Start All Over",
+    "artist": "Miley Cyrus",
+    "video": "m-jRHI3INyg",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 32100,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-09T00:11:01.540Z",
+    "genre": "Pop",
+    "realBpm": 150,
+    "volume": 0.76,
+    "author": "britneyblisswilliams",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mileycyrusstartallover",
+    "local": false
+  },
+  {
     "id": "miley-cyrus-the-climb",
     "title": "The Climb",
     "artist": "Miley Cyrus",
@@ -67927,6 +68286,37 @@
     "local": false
   },
   {
+    "id": "ozzy-osbourne-dreamer",
+    "title": "Dreamer",
+    "artist": "Ozzy Osbourne",
+    "video": "LCCiwPEdEpg",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 11240,
+    "year": "2001",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-09T00:11:00.936Z",
+    "genre": "Hard Rock",
+    "realBpm": 79,
+    "previewStart": 58,
+    "previewEnd": 83,
+    "volume": 0.84,
+    "author": "lozboorman",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=91773",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=1253",
+    "tracks": [
+      {
+        "name": "Dreamer",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ozzyosbournedreamer",
+    "local": false
+  },
+  {
     "id": "pablo-alboran-solamente-tu",
     "title": "Solamente tú",
     "artist": "Pablo Alborán",
@@ -71424,6 +71814,31 @@
     "local": false
   },
   {
+    "id": "qu-wanting-you-exist-in-my-song",
+    "title": "You Exist in my Song",
+    "artist": "Qu Wanting",
+    "video": "w0dMz8RBG7g",
+    "language": [
+      "Chinese"
+    ],
+    "bpm": 275.64,
+    "gap": 19937.461471484545,
+    "year": "2012",
+    "lastUpdate": "2024-11-09T00:11:02.448Z",
+    "genre": "CPop",
+    "realBpm": 137,
+    "volume": 0.86,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "quwantingyouexistinmysong",
+    "local": false
+  },
+  {
     "id": "queen-a-kind-of-magic",
     "title": "A kind of magic",
     "artist": "Queen",
@@ -71836,6 +72251,35 @@
     "local": false
   },
   {
+    "id": "queen-no-one-but-you-only-the-good-die-young",
+    "title": "No One But You (Only The Good Die Young)",
+    "artist": "Queen",
+    "video": "oLKyaOLb2Fs",
+    "language": [
+      "English"
+    ],
+    "bpm": 238.56,
+    "gap": 13233.963782696177,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-09T00:11:02.056Z",
+    "genre": "Rock",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Ultrastarfreak",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=4666",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=19799",
+    "tracks": [
+      {
+        "name": "No One But You (Only The Good Die Young)",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "queennoonebutyouonlythegooddieyoung",
+    "local": false
+  },
+  {
     "id": "queen-one-vision",
     "title": "One Vision",
     "artist": "Queen",
@@ -72027,6 +72471,38 @@
     ],
     "tracksCount": 1,
     "search": "queentheshowmustgoon",
+    "local": false
+  },
+  {
+    "id": "queen-tie-your-mother-down",
+    "title": "Tie Your Mother Down",
+    "artist": "Queen",
+    "video": "LvB2MnIIdMw",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 13960,
+    "year": "1976",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-09T00:11:00.949Z",
+    "edition": "Singstar Queen",
+    "genre": "Hard Rock",
+    "realBpm": 135,
+    "previewStart": 54,
+    "previewEnd": 73,
+    "volume": 1,
+    "author": "sgandtg",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=1118",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=6054",
+    "tracks": [
+      {
+        "name": "Tie Your Mother Down",
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "queentieyourmotherdown",
     "local": false
   },
   {
@@ -77000,6 +77476,32 @@
     "local": false
   },
   {
+    "id": "sandro-te-propongo",
+    "title": "Te propongo",
+    "artist": "Sandro",
+    "video": "XAGsQObiFrM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 213.78,
+    "gap": 10080.681728880158,
+    "year": "1970",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-11-09T00:11:01.916Z",
+    "genre": "Pop",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "Subkei",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sandrotepropongo",
+    "local": false
+  },
+  {
     "id": "santana-feat-rob-thomas-smooth",
     "title": "Smooth",
     "artist": "Santana feat. Rob Thomas",
@@ -80425,6 +80927,31 @@
     ],
     "tracksCount": 1,
     "search": "simpleplanperfect",
+    "local": false
+  },
+  {
+    "id": "simply-red-if-you-dont-know-me-by-now",
+    "title": "If You Don’t Know Me By Now",
+    "artist": "Simply Red",
+    "video": "od0uItf59AM",
+    "language": [
+      "English"
+    ],
+    "bpm": 376,
+    "gap": 14802.659574468085,
+    "year": "1989",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-09T00:11:01.911Z",
+    "realBpm": 94,
+    "volume": 0.83,
+    "author": "fepo",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "simplyredifyoudontknowmebynow",
     "local": false
   },
   {
@@ -91896,6 +92423,32 @@
     ],
     "tracksCount": 1,
     "search": "traviemccoyfeatbrunomarsbillionaire",
+    "local": false
+  },
+  {
+    "id": "troye-sivan-youth",
+    "title": "Youth",
+    "artist": "Troye Sivan",
+    "video": "XYAghEq5Lfw",
+    "language": [
+      "English"
+    ],
+    "bpm": 366.04,
+    "gap": 4556.500928860234,
+    "year": "2015",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-11-09T00:11:02.058Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 0.61,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "troyesivanyouth",
     "local": false
   },
   {
