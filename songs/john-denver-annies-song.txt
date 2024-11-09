@@ -1,0 +1,232 @@
+#ARTIST:John Denver
+#TITLE:Annie’s Song
+#CREATOR:Diddlmaus30mg
+#BPM:318
+#YEAR:1974
+#PREVIEWSTART:126
+#VIDEO:v=RNOTF-znQyw
+#GENRE:Country
+#LANGUAGE:English
+#GAP:7839,433962264151
+#ALLKARAOKE_ID:john-denver-annies-song
+#ALLKARAOKE_LASTUPDATE:2024-11-09T00:11:02.055Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1058
+#ALLKARAOKE_REALBPM:146
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3392
+#ALLKARAOKE_PREVIEWEND:152
+#ALLKARAOKE_VOLUME:0,77
+#P1:Annie's Song
+#MP3:John Denver - Annie’s Song.mp3
+: 21 6 1 You 
+: 30 6 2 fill 
+: 39 4 1 up 
+: 47 6 -1 my 
+: 56 23 2 sens
+: 81 34 1 es
+- 115
+: 126 3 11 Like 
+: 131 3 11 a 
+: 135 6 11 night 
+: 143 7 13 in 
+: 152 3 14 the 
+: 157 8 9 for
+: 166 28 6 est
+- 194 209
+- 209
+: 230 3 -3 Like 
+: 234 3 -3 the 
+: 238 7 -3 mount
+: 246 4 -1 ain 
+: 252 4 1 in 
+: 261 26 2 spring 
+* 291 29 1 time
+- 320
+: 334 3 -1 Like 
+: 338 3 -1 a 
+: 342 6 -1 walk 
+: 351 7 1 in 
+: 360 3 2 the 
+* 365 56 1 rain
+- 421
+: 440 3 1 Like 
+: 444 3 2 a 
+: 448 12 2 storm 
+: 461 6 1 in 
+: 469 3 -1 the 
+: 474 25 2 des
+: 501 24 1 ert
+- 525
+: 544 3 -1 Like 
+: 548 3 -1 a 
+: 552 7 -1 sleep
+: 560 3 1 y 
+: 565 13 2 blue 
+: 579 7 -3 oce
+: 588 47 -6 an
+- 635
+: 651 6 -3 You 
+: 659 6 -3 fill 
+: 667 3 -1 up 
+: 675 5 1 my 
+: 683 3 1 sens
+: 687 21 2 ~
+: 709 28 1 es
+- 737
+: 755 5 -1 Come 
+: 763 7 1 fill 
+: 772 12 2 me 
+* 786 3 4 a
+* 790 72 2 gain
+- 862
+: 869 11 2 Come 
+: 883 4 1 let 
+: 890 4 -1 me 
+: 896 19 2 lo
+: 916 4 1 ~ve 
+: 923 23 1 you
+- 946
+: 965 3 -1 Let 
+: 969 3 -1 me 
+: 973 6 -1 give 
+: 981 3 1 my 
+: 986 9 2 life 
+: 999 5 -3 to 
+: 1007 46 -6 you
+- 1053
+: 1069 3 -3 Let 
+: 1073 3 -3 me 
+: 1077 12 -3 drown 
+: 1091 3 -1 in 
+: 1095 6 1 your 
+: 1103 3 1 lau
+: 1107 16 2 ~ght
+: 1129 27 1 er
+- 1156
+: 1172 3 -1 Let 
+: 1176 3 -1 me 
+: 1180 15 -1 die 
+: 1196 5 1 in 
+: 1202 5 2 your 
+: 1210 62 4 arms
+- 1272
+: 1278 3 2 Let 
+: 1282 3 2 me 
+: 1287 5 2 lay 
+: 1294 6 1 down 
+: 1302 3 -1 be
+: 1306 29 2 side 
+: 1338 27 4 you
+- 1365
+: 1381 3 1 Let 
+: 1385 3 2 me 
+: 1390 7 2 al
+: 1399 7 1 ways 
+: 1410 4 -1 be 
+: 1416 4 -3 with 
+: 1423 28 -6 you
+- 1451 1474
+- 1474
+: 1495 5 -3 Come 
+: 1502 4 -1 let 
+: 1509 4 1 me 
+: 1515 24 2 lo
+: 1540 3 1 ~ve 
+: 1545 24 1 you
+: 1570 3 -1 ~
+- 1573
+: 1589 6 -1 Come 
+: 1597 7 1 love 
+: 1607 10 2 me 
+* 1619 3 4 a
+* 1624 98 2 gain
+- 1722 2190
+- 2190
+: 2211 3 -1 Let 
+: 2215 3 -1 me 
+: 2219 6 -1 give 
+: 2228 6 1 my 
+: 2237 6 2 life 
+: 2246 5 -3 to 
+: 2255 34 -6 you
+- 2289 2302
+- 2302
+: 2323 6 -3 Come 
+: 2331 5 -1 let 
+: 2339 6 1 me 
+: 2348 22 2 lo
+: 2371 3 1 ~ve 
+: 2375 18 1 you
+: 2394 3 2 ~
+: 2398 12 -1 ~
+- 2410
+: 2417 6 -1 Come 
+: 2425 7 1 love 
+: 2434 10 2 me 
+* 2446 3 4 a
+* 2450 66 2 gain
+- 2516
+: 2520 6 2 You 
+: 2529 6 2 fill 
+: 2537 3 1 up 
+: 2545 6 -1 my 
+: 2555 23 2 sens
+: 2580 30 1 es
+- 2610
+: 2625 3 -1 Like 
+: 2629 3 -1 a 
+: 2633 16 -1 night 
+: 2651 3 1 in 
+: 2655 3 2 the 
+: 2659 7 -3 for
+: 2668 7 -6 est
+- 2675 2708
+- 2708
+: 2729 3 -3 Like 
+: 2733 3 -3 the 
+: 2737 7 -3 mount
+: 2745 4 -1 ain 
+: 2751 6 1 in 
+: 2761 24 2 spring 
+: 2788 31 1 time
+- 2819
+: 2834 3 -1 Like 
+: 2838 3 -1 a 
+: 2842 8 -1 walk 
+: 2854 7 1 in 
+: 2863 3 2 the 
+: 2868 67 4 rain
+- 2935
+: 2939 3 1 Like 
+: 2943 3 1 a 
+: 2948 14 2 storm 
+: 2965 3 1 in 
+: 2969 3 -1 the 
+: 2974 26 2 des
+: 3002 24 4 ert
+- 3026 3031
+- 3031
+: 3052 3 2 Like 
+: 3057 3 2 a 
+: 3062 9 2 sleep
+: 3072 7 1 y 
+: 3083 5 -1 blue
+: 3089 3 -3 ~ 
+: 3093 6 -3 oce
+: 3103 26 -6 an
+- 3129 3143
+- 3143
+: 3164 5 -3 You 
+: 3172 7 -3 fill 
+: 3181 4 -1 up 
+: 3189 6 1 my 
+: 3199 3 1 sens
+: 3203 19 2 ~
+: 3225 31 1 es
+- 3256
+: 3270 6 -1 Come 
+: 3279 7 1 fill 
+: 3288 12 2 me 
+: 3302 3 4 a
+: 3306 112 2 gain
+E
