@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
-import styles from 'modules/GameEngine/Drawing/styles';
 import { SVGProps } from 'react';
+import { twc } from 'react-twc';
 
 export const MicIcon = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 512 512" fill="currentcolor" {...props}>
@@ -13,9 +12,5 @@ export const MicIcon = ({ ...props }: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const MicIconRed = styled(MicIcon)`
-  fill: ${styles.colors.players[1].text};
-`;
-export const MicIconBlue = styled(MicIcon)`
-  fill: ${styles.colors.players[0].text};
-`;
+export const MicIconBlue = twc(MicIcon)`fill-text-player-0`;
+export const MicIconRed = twc(MicIcon)`fill-text-player-1`;

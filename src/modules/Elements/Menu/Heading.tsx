@@ -15,8 +15,8 @@ const SCompletedAnim = styled.svg`
 
   margin-right: 1rem;
 
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   display: block;
   stroke-width: 2;

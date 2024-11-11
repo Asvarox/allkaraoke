@@ -1,8 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { colorSets } from 'modules/GameEngine/Drawing/styles';
-import React, { createContext, CSSProperties, useContext, useEffect, useState } from 'react';
-import { twc, TwcComponentProps } from 'react-twc';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import eurovisionBg from './eurovisionbg.svg';
 
@@ -27,16 +26,6 @@ export const useBackground = (shouldBeVisible: boolean, theme: backgroundTheme =
   }, [theme, setTheme]);
 };
 
-const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: CSSProperties } = {
-  default: {
-    backgroundImage: `linear-gradient(-45deg, ${colorSets.red.stroke}, ${colorSets.blue.text}, ${colorSets.blue.stroke}, ${colorSets.red.stroke})`,
-    backgroundSize: '400% 400%',
-  },
-  halloween: {
-    background: 'black',
-  },
-};
-
 export default function LayoutWithBackgroundProvider({ children }: React.PropsWithChildren) {
   const [visible, setVisible] = useState(true);
   const [theme, setTheme] = useState<backgroundTheme>('regular');
@@ -45,11 +34,9 @@ export default function LayoutWithBackgroundProvider({ children }: React.PropsWi
   return (
     <BackgroundContext.Provider value={{ visible, setVisibility: setVisible, setTheme, theme }}>
       {visible && (
-        <Background
-          data-theme={theme}
-          data-graphic-level={graphicLevel}
-          style={themeStyles[theme] ?? themeStyles.default}
-        />
+        <Background data-theme={theme} data-graphic-level={graphicLevel} bgtheme={theme}>
+          {theme === 'eurovision' && <EurovisionTheme />}
+        </Background>
       )}
       {children}
     </BackgroundContext.Provider>
@@ -113,7 +100,12 @@ const regularCss = css`
   background-size: 400% 400%;
 `;
 
-export const BackgroundStatic = twc.div`bg-white w-full h-full`;
+export const BackgroundStatic = styled.div<{ bgtheme: backgroundTheme }>`
+  background-color: white;
+
+  width: 100%;
+  height: 100%;
+`;
 
 const backgroundHigh = css`
   animation: gradient 15s ease infinite;
@@ -130,13 +122,27 @@ const backgroundHigh = css`
   }
 `;
 
-type BGProps = TwcComponentProps<'div'> & {
-  'data-theme': backgroundTheme;
-  'data-graphic-level': ReturnType<typeof GraphicSetting.get>;
-};
+const Background = styled(BackgroundStatic)`
+  z-index: -1;
+  top: 0;
+  position: fixed;
 
-export const Background = twc(BackgroundStatic)((props: BGProps) => [
-  `z-[-1] top-0 fixed`,
-  props['data-theme'] === 'halloween' ? 'bg-black' : '',
-  props['data-graphic-level'] === 'high' ? 'animate-gradient' : '',
-]);
+  &[data-theme='eurovision'] {
+    ${eurovisionCss};
+  }
+  &[data-theme='christmas'] {
+    ${christmasCss};
+  }
+  &[data-theme='regular'] {
+    ${regularCss};
+  }
+  &[data-theme='halloween'] {
+    ${halloweenCss};
+  }
+
+  background-position: 100% 50%; // for low graphic level
+
+  &[data-graphic-level='high'] {
+    ${backgroundHigh};
+  }
+`;

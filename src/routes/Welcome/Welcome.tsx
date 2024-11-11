@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { useBackground } from 'modules/Elements/LayoutWithBackground';
-import { MenuButton } from 'modules/Elements/Menu';
 import MenuWithLogo from 'modules/Elements/MenuWithLogo';
 import SmoothLink from 'modules/Elements/SmoothLink';
 import { typography } from 'modules/Elements/cssMixins';
@@ -43,19 +43,19 @@ function Welcome() {
       <FacebookLink />
       <>
         <SmoothLink to="game/">
-          <MenuButton {...register('sing-a-song', () => navigate('game/'))}>Sing a song</MenuButton>
+          <Menu.Button {...register('sing-a-song', () => navigate('game/'))}>Sing a song</Menu.Button>
         </SmoothLink>
         <SmoothLink to="select-input/">
-          <MenuButton {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</MenuButton>
+          <Menu.Button {...register('select-input', () => navigate('select-input/'))}>Setup Microphones</Menu.Button>
         </SmoothLink>
         <SmoothLink to="settings/">
-          <MenuButton {...register('settings', () => navigate('settings/'))}>Settings</MenuButton>
+          <Menu.Button {...register('settings', () => navigate('settings/'))}>Settings</Menu.Button>
         </SmoothLink>
         <SmoothLink to="jukebox/">
-          <MenuButton {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</MenuButton>
+          <Menu.Button {...register('jukebox', () => navigate('jukebox/'))}>Jukebox</Menu.Button>
         </SmoothLink>
         <SmoothLink to="manage-songs/">
-          <MenuButton {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</MenuButton>
+          <Menu.Button {...register('manage-songs', () => navigate('manage-songs/'))}>Manage Songs</Menu.Button>
         </SmoothLink>
       </>
     </MenuWithLogo>

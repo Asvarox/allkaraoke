@@ -1,5 +1,5 @@
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { Flag } from 'modules/Elements/Flag';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
 import isE2E from 'modules/utils/isE2E';
 import { useState } from 'react';
@@ -21,7 +21,6 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
 
   const filteredLanguageList = languageList.filter((lang) => lang.count > MIN_SONGS_COUNT);
 
-  console.log(excludedLanguages);
   const excludeLanguage = (name: string) => {
     const visibleExcludedLanguages = excludedLanguages.filter((lang) =>
       filteredLanguageList.find((l) => l.name === lang),
@@ -41,30 +40,30 @@ export default function LanguageFilter({ children, languageList, excludedLanguag
     <>
       {open && (
         <Modal onClose={handleClose}>
-          <MenuContainer data-test="languages-container" className="!gap-1">
+          <Menu data-test="languages-container" spacing="tight">
             {filteredLanguageList.map(({ name, count }) => {
               const isExcluded = excludedLanguages.length && excludedLanguages.includes(name);
               return (
-                <MenuButton
-                  size={'small'}
+                <Menu.Button
+                  size="small"
                   key={name}
+                  data-inactive={isExcluded}
                   data-active={!!excludedLanguages.length && !excludedLanguages.includes(name)}
                   onClick={() => excludeLanguage(name)}
                   data-test={name}
-                  className={`flex !justify-between ${isExcluded && `line-through decoration-white opacity-25`}`}>
-                  <span className={isExcluded ? 'line-through decoration-white' : ''}>
-                    {name}
-                    <small className="text-2xl pl-2">({count})</small>
+                  className={`!justify-between`}>
+                  <span>
+                    {name} <small className="text-sm pl-2">({count} songs)</small>
                   </span>
                   <Flag language={[name]} className=" h-full w-32 object-cover" />
-                </MenuButton>
+                </Menu.Button>
               );
             })}
-            <hr />
-            <MenuButton size="small" onClick={handleClose} data-test="close-language-filter">
+            <Menu.Divider />
+            <Menu.Button size="small" onClick={handleClose} data-test="close-language-filter">
               Close
-            </MenuButton>
-          </MenuContainer>
+            </Menu.Button>
+          </Menu>
         </Modal>
       )}
       {children({ open: () => setOpen(true) })}
