@@ -1078,6 +1078,32 @@
     "local": false
   },
   {
+    "id": "abba-slipping-through-my-fingers",
+    "title": "Slipping Through My Fingers",
+    "artist": "ABBA",
+    "video": "hRr7qRb-7k4",
+    "language": [
+      "English"
+    ],
+    "bpm": 274.6,
+    "gap": 1446.7516387472688,
+    "year": "1981",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-11-13T06:14:44.655Z",
+    "genre": "Pop",
+    "realBpm": 137,
+    "volume": 0.74,
+    "author": "Buberatz",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "abbaslippingthroughmyfingers",
+    "local": false
+  },
+  {
     "id": "abba-super-trouper",
     "title": "Super Trouper",
     "artist": "ABBA",
@@ -4971,6 +4997,32 @@
     ],
     "tracksCount": 1,
     "search": "amywinehousetearsdryontheirown",
+    "local": false
+  },
+  {
+    "id": "ana-carolina-seu-jorge-e-isso-ai",
+    "title": "É Isso Aí",
+    "artist": "Ana Carolina & Seu Jorge",
+    "video": "3rn2N0ZbLEQ",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 254.22,
+    "gap": 12820.931791361812,
+    "year": "2005",
+    "lastUpdate": "2024-11-13T06:14:44.658Z",
+    "realBpm": 104,
+    "previewStart": 60,
+    "previewEnd": 98,
+    "volume": 0.8,
+    "author": "Pantero",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "anacarolinaseujorgeeissoai",
     "local": false
   },
   {
@@ -22463,6 +22515,32 @@
     "local": false
   },
   {
+    "id": "dama-e-salvador-seixas-balada-do-desajeitado",
+    "title": "Balada do Desajeitado",
+    "artist": "D.A.M.A e Salvador Seixas",
+    "video": "DcfSEeovjcE",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 372.08,
+    "gap": 5653.152225327886,
+    "year": "2013",
+    "lastUpdate": "2024-11-13T06:14:45.920Z",
+    "realBpm": 91,
+    "previewStart": 69,
+    "previewEnd": 89,
+    "volume": 0.75,
+    "author": "airBN",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "damaesalvadorseixasbaladadodesajeitado",
+    "local": false
+  },
+  {
     "id": "dama-ft-buba-espinho-casa",
     "title": "Casa",
     "artist": "D.A.M.A ft. Buba Espinho",
@@ -28923,6 +29001,34 @@
     "local": false
   },
   {
+    "id": "electric-light-orchestra-hold-on-tight",
+    "title": "Hold on Tight",
+    "artist": "Electric Light Orchestra",
+    "video": "urs4XBxeXko",
+    "language": [
+      "English"
+    ],
+    "bpm": 290.68,
+    "gap": 11907.540388055593,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-13T06:14:46.112Z",
+    "genre": "Rock",
+    "realBpm": 145,
+    "volume": 0.73,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Electric%20Light%20Orchestra",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "electriclightorchestraholdontight",
+    "local": false
+  },
+  {
     "id": "electric-light-orchestra-last-train-to-london",
     "title": "Last Train To London",
     "artist": "Electric Light Orchestra",
@@ -28949,6 +29055,34 @@
     ],
     "tracksCount": 1,
     "search": "electriclightorchestralasttraintolondon",
+    "local": false
+  },
+  {
+    "id": "electric-light-orchestra-livin-thing",
+    "title": "Livin' Thing",
+    "artist": "Electric Light Orchestra",
+    "video": "lvBOZCrJsAI",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.88,
+    "gap": 22324.91410444119,
+    "year": "1976",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-13T06:14:45.916Z",
+    "genre": "Rock",
+    "realBpm": 123,
+    "volume": 0.75,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Electric%20Light%20Orchestra",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "electriclightorchestralivinthing",
     "local": false
   },
   {
@@ -29005,6 +29139,34 @@
     ],
     "tracksCount": 1,
     "search": "electriclightorchestrarocknrollisking",
+    "local": false
+  },
+  {
+    "id": "electric-light-orchestra-the-way-lifes-meant-to-be",
+    "title": "The Way Life's Meant to Be",
+    "artist": "Electric Light Orchestra",
+    "video": "fYZLsqyvIQI",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.3,
+    "gap": 16856.17508813161,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-13T06:14:45.918Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 0.85,
+    "author": "asb",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=asb",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Electric%20Light%20Orchestra",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "electriclightorchestrathewaylifesmeanttobe",
     "local": false
   },
   {
@@ -46622,6 +46784,32 @@
     "local": false
   },
   {
+    "id": "katy-perry-this-is-how-we-do",
+    "title": "This Is How We Do",
+    "artist": "Katy Perry",
+    "video": "7RMQksXpQSk",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 3904.375,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-13T06:14:44.652Z",
+    "genre": "Pop",
+    "realBpm": 96,
+    "volume": 0.7,
+    "author": "Coppolatte",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "katyperrythisishowwedo",
+    "local": false
+  },
+  {
     "id": "katy-perry-waking-up-in-vegas",
     "title": "Waking Up In Vegas",
     "artist": "Katy Perry",
@@ -56063,6 +56251,32 @@
     "local": false
   },
   {
+    "id": "maninho-ate-ao-fim",
+    "title": "Até ao Fim",
+    "artist": "Maninho",
+    "video": "4p8_lkBgkio",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 269.98,
+    "gap": 11744.92592043855,
+    "year": "2023",
+    "lastUpdate": "2024-11-13T06:14:45.717Z",
+    "realBpm": 136,
+    "previewStart": 62,
+    "previewEnd": 91,
+    "volume": 0.7,
+    "author": "airBN",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "maninhoateaofim",
+    "local": false
+  },
+  {
     "id": "maninho-e-marisa-liz-garota",
     "title": "Garota",
     "artist": "Maninho e Marisa Liz",
@@ -64216,6 +64430,32 @@
     ],
     "tracksCount": 1,
     "search": "nena99redballoons",
+    "local": false
+  },
+  {
+    "id": "nena-e-carolina-de-deus-lembras-te-de-mim",
+    "title": "Lembras-te de Mim",
+    "artist": "Nena e Carolina de Deus",
+    "video": "Fx3nZZzFnA4",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 256.18,
+    "gap": 9757.606136310407,
+    "year": "2024",
+    "lastUpdate": "2024-11-13T06:14:45.515Z",
+    "realBpm": 143,
+    "previewStart": 45,
+    "previewEnd": 73,
+    "volume": 0.75,
+    "author": "airBN",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nenaecarolinadedeuslembrastedemim",
     "local": false
   },
   {
@@ -74348,6 +74588,32 @@
     "local": false
   },
   {
+    "id": "reo-speedwagon-keep-on-loving-you",
+    "title": "Keep On Loving You",
+    "artist": "REO Speedwagon",
+    "video": "wJzNZ1c5C9c",
+    "language": [
+      "English"
+    ],
+    "bpm": 390.6,
+    "gap": 24861.53609831029,
+    "year": "1980",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-13T06:14:44.635Z",
+    "genre": "Power Ballad",
+    "realBpm": 175,
+    "volume": 0.67,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "reospeedwagonkeeponlovingyou",
+    "local": false
+  },
+  {
     "id": "reo-speedwagon-take-it-on-the-run",
     "title": "Take It On The Run",
     "artist": "REO Speedwagon",
@@ -74812,12 +75078,14 @@
       "English"
     ],
     "bpm": 177.84,
-    "gap": 12090.854251012146,
+    "gap": 12190.854251012146,
     "year": "1999",
     "artistOrigin": "PR",
+    "lastUpdate": "2024-11-11T08:00:39.812Z",
     "edition": "Ante Eppinger",
     "genre": "Pop",
     "realBpm": 178,
+    "volume": 0.72,
     "author": "pauldiddy",
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5383",
