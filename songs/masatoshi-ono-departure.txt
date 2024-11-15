@@ -1,0 +1,192 @@
+#ARTIST:Masatoshi Ono
+#TITLE:departure!
+#CREATOR:asdfer
+#BPM:319,95
+#YEAR:2011
+#PREVIEWSTART:34
+#VIDEO:v=kG1NjoIhAKA
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:2355,4711673699017
+#ALLKARAOKE_ID:masatoshi-ono-departure
+#ALLKARAOKE_LASTUPDATE:2024-11-15T00:11:50.030Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_PREVIEWEND:67
+#ALLKARAOKE_VOLUME:0,85
+#MP3:Masatoshi Ono - departure!  -second version- (TV).mp3
+#COVER:Masatoshi Ono - departure!  -second version- (TV).jpg
+: 21 2 5 Na
+: 25 2 3 ga
+: 29 2 2 re 
+: 33 2 3 o
+: 37 5 5 chi
+: 45 2 5 ru 
+: 49 5 5 na
+: 57 5 2 mi
+: 65 11 5 da
+- 76
+: 85 2 5 Yu
+: 89 2 3 u
+: 93 2 2 ki 
+: 97 2 5 ni 
+: 101 5 6 ka
+: 109 2 6 e
+: 113 5 6 te 
+: 121 5 2 i
+: 129 11 6 ku
+- 140
+: 149 2 6 Te
+: 153 2 4 n
+: 157 2 2 shi 
+: 161 2 6 no 
+: 165 5 7 ha
+: 173 2 7 ne 
+: 177 5 7 hi
+: 185 5 2 ro
+: 193 11 7 ge
+- 204
+: 213 5 5 Ma
+: 221 5 7 i
+* 229 9 8 a
+* 242 8 10 ga
+: 254 74 10 re!
+- 328 399
+- 399
+: 420 5 5 Sa
+: 428 3 -4 i
+: 433 5 -4 go 
+: 441 5 5 ma
+: 449 10 3 de
+- 459
+: 469 5 5 A
+: 477 5 3 ki
+: 485 5 1 ra
+: 493 2 -2 me
+: 497 5 -2 na
+: 505 5 1 i 
+: 513 12 -1 sa
+- 525 528
+- 528
+: 549 2 -2 Ya
+: 553 2 1 ri
+: 557 2 0 tsu
+: 561 5 1 zu
+: 569 2 -2 ke
+: 573 2 -2 ru 
+: 577 5 -4 ko
+: 585 2 1 to 
+: 589 8 1 ni
+- 597
+: 613 2 -2 Ka
+: 617 2 1 na
+: 621 2 0 ra
+: 625 5 1 zu 
+: 633 2 -2 i
+: 637 2 1 mi 
+: 641 5 5 ga 
+: 649 2 3 a
+: 653 3 3 ru
+- 656
+: 660 5 0 You 
+: 668 5 1 just 
+: 676 21 8 try 
+: 700 2 10 a
+: 705 26 8 gain
+- 731
+: 741 6 6 Ya
+* 749 2 5 mi 
+* 753 5 3 wo 
+: 761 2 1 nu
+: 765 2 3 ke
+* 769 12 5 te
+- 781
+: 788 5 0 You 
+: 796 5 1 just 
+: 804 21 8 go 
+: 828 2 10 a
+: 833 28 8 way
+- 861
+: 869 2 -2 Mi
+: 873 2 0 ra
+: 877 2 1 i 
+* 881 5 0 wa 
+: 889 2 1 i
+: 893 2 3 tsu
+* 897 4 1 mo
+- 901
+: 905 2 3 Bo
+: 909 2 5 ku
+: 913 5 3 ta
+: 921 2 5 chi 
+: 925 2 6 wo 
+: 929 5 5 ma
+: 937 2 6 tte
+: 941 20 5 ru
+- 961
+: 981 2 5 O
+: 985 2 3 o
+: 989 2 2 zo
+: 993 2 3 ra 
+* 997 5 5 ka
+: 1005 2 5 ke 
+: 1009 5 5 nu
+: 1017 5 2 ke
+: 1025 11 5 te
+- 1036
+: 1045 2 5 U
+: 1049 2 3 na
+: 1053 2 2 ba
+: 1057 2 5 ra 
+* 1061 5 6 ko
+: 1069 2 6 e
+: 1073 5 6 te 
+: 1081 5 2 i
+: 1089 11 6 ke
+- 1100
+: 1109 2 6 Te
+: 1113 2 4 n
+: 1117 2 2 shi 
+: 1121 2 6 no 
+* 1125 5 7 na
+: 1133 2 7 ge 
+: 1137 5 7 ki
+: 1145 5 2 ~
+: 1153 11 7 su
+- 1164
+: 1173 5 5 Tsu
+: 1181 5 7 ka
+: 1189 7 8 ma
+: 1200 8 10 e
+: 1212 25 10 te!
+- 1237
+* 1245 2 7 O
+* 1249 2 9 wa
+* 1253 5 10 ra
+* 1261 2 10 na
+: 1265 4 10 i
+- 1269
+: 1273 5 9 Bo
+: 1281 2 10 u
+: 1285 5 12 ~
+: 1293 5 10 ke
+: 1301 5 9 n 
+: 1309 5 10 ni 
+: 1317 5 9 de 
+: 1325 2 7 ka
+: 1329 5 5 ke
+: 1337 5 12 yo
+: 1345 24 11 u
+- 1369
+: 1381 5 3 I
+: 1389 2 2 tsu
+: 1393 5 3 ma
+: 1401 5 7 de
+: 1409 7 10 mo
+- 1416
+: 1421 2 10 Do
+: 1425 2 10 ko
+* 1429 5 9 ma
+* 1437 2 10 de
+: 1441 60 10 mo!
+E
