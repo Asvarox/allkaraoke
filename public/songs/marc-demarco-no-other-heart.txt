@@ -1,0 +1,225 @@
+#ARTIST:Marc DeMarco
+#TITLE:No Other Heart
+#CREATOR:Vxvert
+#BPM:390,12
+#YEAR:2015
+#VIDEO:v=lPeJMoms_Ag
+#LANGUAGE:English
+#GAP:18860,58722031642
+#ALLKARAOKE_ID:marc-demarco-no-other-heart
+#ALLKARAOKE_LASTUPDATE:2024-11-15T00:11:50.185Z
+#ALLKARAOKE_ARTISTORIGIN:UY
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_VOLUME:0,79
+#VERSION:1.0.0
+#COVER:CapturedTracks - Mac DeMarco -- No Other Heart (Official Audio) [CO].jpg
+#MP3:CapturedTracks - Mac DeMarco -- No Other Heart (Official Audio) [Karaoke].mp3
+#COMMENT:UltraSinger [GitHub] 0.0.12-dev2
+: 26 4 8 Is 
+: 31 1 10 it 
+: 37 17 5 true?
+- 54 100
+- 100
+: 126 8 5 You've 
+: 135 5 3 been 
+: 142 7 5 feel
+: 149 7 4 ing 
+: 159 7 6 sort 
+: 167 2 6 of 
+: 172 20 6 low 
+: 193 6 9 these 
+: 200 18 9 days
+- 218 230
+- 230
+: 256 7 4 Just 
+: 264 8 4 don't 
+: 273 8 5 have 
+: 282 1 5 a 
+: 284 12 5 place 
+: 297 4 6 to 
+: 302 17 5 go 
+: 322 6 6 these 
+: 329 20 6 days
+- 349 359
+- 359
+: 385 8 4 Must 
+: 394 5 5 be 
+: 401 8 5 bring
+: 409 8 6 ing 
+: 418 6 5 you 
+: 425 20 9 down
+- 445 518
+- 518
+: 544 4 8 If 
+: 550 4 5 it's 
+: 557 22 6 so
+- 579 623
+- 623
+: 649 7 3 Then 
+: 658 6 5 come 
+: 666 5 3 on 
+: 671 7 5 give 
+: 679 7 4 this 
+: 690 11 5 lover 
+: 703 17 6 boy 
+: 723 4 6 a 
+: 730 14 3 try
+- 744 758
+- 758
+: 784 3 4 I'll 
+: 790 8 6 put 
+: 799 4 5 the 
+: 804 15 6 sparkle 
+: 821 7 5 right 
+: 828 13 6 back 
+: 847 6 5 in 
+: 855 9 8 your
+- 864
+: 870 10 5 eyes
+- 880 910
+- 910
+: 936 7 5 What 
+: 945 8 6 could 
+: 954 5 5 you 
+: 962 46 6 lose?
+- 1008 1050
+- 1050
+: 1076 7 9 Well 
+: 1083 5 7 for 
+: 1100 10 4 one
+- 1110 1121
+- 1121
+: 1147 8 2 her 
+: 1156 28 5 heart
+- 1184 1185
+- 1185
+: 1211 28 9 be
+: 1240 28 9 longs 
+: 1270 9 9 to 
+: 1282 13 9 an
+: 1295 13 1 other
+- 1308 1311
+- 1311
+: 1337 4 5 And 
+: 1343 34 2 no 
+: 1377 3 2 other
+- 1380 1386
+- 1386
+: 1412 56 6 heart 
+: 1472 7 4 will 
+: 1481 7 2 do
+- 1488 1583
+- 1583
+: 1609 4 8 Is 
+: 1616 2 6 it 
+: 1620 19 5 wrong
+- 1639 1678
+- 1678
+: 1704 5 4 to 
+: 1711 9 5 think 
+: 1721 5 3 my 
+: 1728 8 5 love 
+: 1737 5 4 could 
+: 1744 10 6 really 
+: 1757 8 6 help 
+: 1767 3 4 you 
+: 1782 6 4 out?
+- 1788 1809
+- 1809
+: 1835 4 2 It's 
+: 1842 14 5 simply 
+: 1858 9 6 just 
+: 1867 4 4 my 
+: 1872 7 5 stub
+: 1879 7 7 born 
+: 1887 18 6 heart 
+: 1907 6 5 no 
+: 1915 18 5 doubt
+- 1933 1975
+- 1975
+: 2001 19 6 Rampant 
+: 2023 17 9 away
+- 2040 2117
+- 2117
+: 2143 3 8 If 
+: 2150 3 3 it's 
+: 2156 15 6 not
+- 2171 2210
+- 2210
+: 2236 6 2 then 
+: 2244 6 6 come 
+: 2252 4 3 on 
+: 2257 7 6 give 
+: 2265 8 4 this 
+: 2276 11 6 lover 
+: 2289 21 6 boy 
+: 2313 1 3 a 
+: 2316 15 3 try
+- 2331 2355
+- 2355
+: 2381 4 4 i'll put the 
+: 2387 14 6 sparkle 
+: 2402 7 6 brought 
+: 2410 6 7 back 
+: 2428 5 6 in 
+: 2437 10 8 your
+- 2447
+: 2460 10 4 eyes
+- 2470 2493
+- 2493
+: 2519 7 6 What 
+: 2527 8 6 could 
+: 2536 4 6 you 
+: 2543 51 4 lose?
+- 2594 2641
+- 2641
+: 2667 5 8 Well 
+: 2673 3 8 for
+- 2676
+: 2692 7 5 one
+- 2699 2719
+- 2719
+: 2745 5 1 Her 
+: 2751 28 6 heart
+- 2779 2780
+- 2780
+: 2806 57 9 Belongs 
+: 2865 11 9 to 
+: 2877 13 2 an
+: 2890 13 1 other
+- 2903 2906
+- 2906
+: 2932 4 6 And 
+: 2939 4 5 no 
+: 2949 20 2 other
+- 2969 2983
+- 2983
+: 3009 51 6 Heart 
+: 3066 8 5 will 
+: 3076 7 1 do
+- 3083 3177
+- 3177
+: 3203 19 5 For one
+- 3222 3243
+- 3243
+: 3269 4 2 
+: 3274 3 3 her 
+: 3278 21 5 heart
+- 3299 3308
+- 3308
+: 3334 28 6 be
+: 3362 28 9 longs 
+: 3391 9 9 to 
+: 3403 14 9 an
+: 3417 14 0 other
+- 3431 3432
+- 3432
+: 3458 4 4 and 
+: 3464 16 4 no 
+: 3481 15 1 other
+- 3496 3509
+- 3509
+: 3535 54 6 heart 
+: 3595 7 3 will 
+: 3603 6 1 do
+E

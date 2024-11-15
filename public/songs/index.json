@@ -7784,6 +7784,32 @@
     "local": false
   },
   {
+    "id": "avantasia-lost-in-space",
+    "title": "Lost In Space",
+    "artist": "Avantasia",
+    "video": "o26SlmROH5Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.1,
+    "gap": 13878.796394920115,
+    "year": "2007",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-11-15T00:11:49.888Z",
+    "genre": "Symphonic Metal",
+    "realBpm": 122,
+    "volume": 0.8,
+    "author": "Paisano87",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "avantasialostinspace",
+    "local": false
+  },
+  {
     "id": "avenged-sevenfold-a-little-piece-of-heaven",
     "title": "A Little Piece Of Heaven",
     "artist": "Avenged Sevenfold",
@@ -12840,6 +12866,32 @@
     "local": false
   },
   {
+    "id": "blind-guardian-mirror-mirror",
+    "title": "Mirror Mirror",
+    "artist": "Blind Guardian",
+    "video": "CNGCvI9dpZY",
+    "language": [
+      "English"
+    ],
+    "bpm": 356,
+    "gap": 31918.76404494382,
+    "year": "1998",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-11-15T00:11:49.741Z",
+    "genre": "Metal",
+    "realBpm": 178,
+    "volume": 0.81,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blindguardianmirrormirror",
+    "local": false
+  },
+  {
     "id": "blink-182-adams-song",
     "title": "Adam’s Song",
     "artist": "blink-182",
@@ -14965,13 +15017,13 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 4369.2307692307695,
+    "gap": 4869.2307692307695,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:32.887Z",
+    "lastUpdate": "2024-11-14T20:26:02.614Z",
     "genre": "Pop",
     "realBpm": 130,
-    "volume": 0.64,
+    "volume": 0.76,
     "author": "TicaTica",
     "sourceUrl": "https://www.youtube.com/watch?v=0aEnnH6t8Ts",
     "tracks": [
@@ -25238,6 +25290,89 @@
     ],
     "tracksCount": 1,
     "search": "direstraitsmoneyfornothing",
+    "local": false
+  },
+  {
+    "id": "dire-straits-romeo-and-juliet",
+    "title": "Romeo and Juliet",
+    "artist": "Dire Straits",
+    "video": "rC95MEenIxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 349.2,
+    "gap": 22140.593016599887,
+    "year": "1980",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-15T00:11:49.281Z",
+    "genre": "Rock",
+    "realBpm": 86,
+    "previewStart": 143,
+    "previewEnd": 176,
+    "volume": 0.75,
+    "author": "Angs",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "direstraitsromeoandjuliet",
+    "local": false
+  },
+  {
+    "id": "dire-straits-sultans-of-swing",
+    "title": "Sultans of Swing",
+    "artist": "Dire Straits",
+    "video": "h0ffIJ7ZO4U",
+    "language": [
+      "English"
+    ],
+    "bpm": 398.8,
+    "gap": 12669.45336008024,
+    "year": "1978",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-15T00:11:49.278Z",
+    "genre": "Rock",
+    "realBpm": 147,
+    "previewStart": 50,
+    "previewEnd": 87,
+    "volume": 0.75,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "direstraitssultansofswing",
+    "local": false
+  },
+  {
+    "id": "dire-straits-tunnel-of-love",
+    "title": "Tunnel of love",
+    "artist": "Dire Straits",
+    "video": "gAirINwjaxE",
+    "language": [
+      "English"
+    ],
+    "bpm": 273.94,
+    "gap": 40579.382711542676,
+    "year": "1980",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-15T00:11:49.287Z",
+    "genre": "Rock",
+    "realBpm": 145,
+    "previewStart": 98,
+    "previewEnd": 118,
+    "volume": 0.75,
+    "author": "asb",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "direstraitstunneloflove",
     "local": false
   },
   {
@@ -42947,6 +43082,58 @@
     "local": false
   },
   {
+    "id": "john-cougar-mellencamp-hurts-so-good",
+    "title": "Hurts So Good",
+    "artist": "John Cougar Mellencamp",
+    "video": "4dOsbsuhYGQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.47,
+    "gap": 28453.904693601085,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-15T00:11:49.107Z",
+    "genre": "Rock",
+    "realBpm": 125,
+    "volume": 0.93,
+    "author": "Gollum",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johncougarmellencamphurtssogood",
+    "local": false
+  },
+  {
+    "id": "john-cougar-mellencamp-jack-diane",
+    "title": "Jack & Diane",
+    "artist": "John Cougar Mellencamp",
+    "video": "h04CH9YZcpI",
+    "language": [
+      "English"
+    ],
+    "bpm": 412.64,
+    "gap": 28122.163629313687,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-15T00:11:48.396Z",
+    "genre": "Rock",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "blewmaxx",
+    "tracks": [
+      {
+        "start": 28
+      }
+    ],
+    "tracksCount": 1,
+    "search": "johncougarmellencampjackdiane",
+    "local": false
+  },
+  {
     "id": "john-denver-annies-song",
     "title": "Annie’s Song",
     "artist": "John Denver",
@@ -56467,6 +56654,31 @@
     "local": false
   },
   {
+    "id": "marc-demarco-no-other-heart",
+    "title": "No Other Heart",
+    "artist": "Marc DeMarco",
+    "video": "lPeJMoms_Ag",
+    "language": [
+      "English"
+    ],
+    "bpm": 390.12,
+    "gap": 18860.58722031642,
+    "year": "2015",
+    "artistOrigin": "UY",
+    "lastUpdate": "2024-11-15T00:11:50.185Z",
+    "realBpm": 94,
+    "volume": 0.79,
+    "author": "Vxvert",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "marcdemarconootherheart",
+    "local": false
+  },
+  {
     "id": "marc-lavoine-elle-a-les-yeux-revolver",
     "title": "Elle a les yeux revolver…",
     "artist": "Marc Lavoine",
@@ -58457,6 +58669,34 @@
     ],
     "tracksCount": 1,
     "search": "marylarodowiczniechzyjebal",
+    "local": false
+  },
+  {
+    "id": "masatoshi-ono-departure",
+    "title": "departure!",
+    "artist": "Masatoshi Ono",
+    "video": "kG1NjoIhAKA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 319.95,
+    "gap": 2355.4711673699017,
+    "year": "2011",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-11-15T00:11:50.030Z",
+    "genre": "Anime",
+    "realBpm": 160,
+    "previewStart": 34,
+    "previewEnd": 67,
+    "volume": 0.85,
+    "author": "asdfer",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "masatoshionodeparture",
     "local": false
   },
   {
@@ -69676,6 +69916,34 @@
     "local": false
   },
   {
+    "id": "pearl-jam-black",
+    "title": "Black",
+    "artist": "Pearl Jam",
+    "video": "VfibggFusyY",
+    "language": [
+      "English"
+    ],
+    "bpm": 385.55,
+    "gap": 13658.982501620221,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-15T00:11:49.277Z",
+    "genre": "Grunge",
+    "realBpm": 77,
+    "volume": 0.7,
+    "author": "gollum",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=gollum",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=pearl%20jam%20black&sid=2ce17ad5fa97c8375f957573a9ef2601",
+    "tracks": [
+      {
+        "start": 322
+      }
+    ],
+    "tracksCount": 1,
+    "search": "pearljamblack",
+    "local": false
+  },
+  {
     "id": "pearl-jam-even-flow",
     "title": "Even Flow",
     "artist": "Pearl Jam",
@@ -77386,6 +77654,32 @@
     "local": false
   },
   {
+    "id": "sabrina-carpenter-taste",
+    "title": "Taste",
+    "artist": "Sabrina Carpenter",
+    "video": "KEG7b851Ric",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 20294.424778761062,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-15T00:11:48.384Z",
+    "genre": "Pop",
+    "realBpm": 113,
+    "volume": 0.7,
+    "author": "DoubleDee",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "sabrinacarpentertaste",
+    "local": false
+  },
+  {
     "id": "sabrina-carpenter-thumbs",
     "title": "Thumbs",
     "artist": "Sabrina Carpenter",
@@ -81067,6 +81361,34 @@
     "local": false
   },
   {
+    "id": "simon-garfunkel-scarborough-fair-canticle",
+    "title": "Scarborough Fair / Canticle",
+    "artist": "Simon & Garfunkel",
+    "video": "-Jj4s9I-53g",
+    "language": [
+      "English"
+    ],
+    "bpm": 228.2,
+    "gap": 9044.022787028922,
+    "year": "1966",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-15T00:11:49.595Z",
+    "genre": "Folk",
+    "realBpm": 128,
+    "volume": 0.82,
+    "author": "choosie",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=13724",
+    "tracks": [
+      {
+        "name": "Scarborough Fair / Canticle",
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "simongarfunkelscarboroughfaircanticle",
+    "local": false
+  },
+  {
     "id": "simon-garfunkel-the-boxer",
     "title": "The Boxer",
     "artist": "Simon & Garfunkel",
@@ -81670,6 +81992,36 @@
     ],
     "tracksCount": 1,
     "search": "slayyyterclouds",
+    "local": false
+  },
+  {
+    "id": "slimane-mon-amour",
+    "title": "Mon amour",
+    "artist": "Slimane",
+    "video": "bal8oESDH7s",
+    "language": [
+      "French"
+    ],
+    "bpm": 284,
+    "gap": 25.647887323943678,
+    "year": "2023",
+    "artistOrigin": "FR",
+    "lastUpdate": "2024-11-15T00:11:49.290Z",
+    "genre": "Pop",
+    "realBpm": 142,
+    "previewStart": 28,
+    "previewEnd": 54,
+    "volume": 0.8,
+    "author": "wolf359",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=wolf359",
+    "sourceUrl": "https://ultrastar-es.org/fr/canciones?artista=Slimane&cancion=Mon%20amour",
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "tracksCount": 1,
+    "search": "slimanemonamour",
     "local": false
   },
   {
@@ -87371,6 +87723,32 @@
     "local": false
   },
   {
+    "id": "the-boomtown-rats-i-dont-like-mondays",
+    "title": "I Don’t Like Mondays",
+    "artist": "The Boomtown Rats",
+    "video": "-Kobdb37Cwc",
+    "language": [
+      "English"
+    ],
+    "bpm": 220.25,
+    "gap": 27538.43359818388,
+    "year": "1979",
+    "artistOrigin": "IE",
+    "lastUpdate": "2024-11-15T00:11:49.449Z",
+    "genre": "Pop",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "bohning",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "theboomtownratsidontlikemondays",
+    "local": false
+  },
+  {
     "id": "the-bosshoss-dont-gimme-that",
     "title": "Don’t Gimme That",
     "artist": "The BossHoss",
@@ -89989,6 +90367,37 @@
     ],
     "tracksCount": 1,
     "search": "thetonyrichprojectnobodyknows",
+    "local": false
+  },
+  {
+    "id": "the-verve-bitter-sweet-symphony",
+    "title": "Bitter Sweet Symphony",
+    "artist": "The Verve",
+    "video": "1lyu1KKwC74",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 34345.294117647056,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-15T00:11:49.117Z",
+    "genre": "Britpop",
+    "realBpm": 171,
+    "previewStart": 34,
+    "previewEnd": 80,
+    "volume": 0.76,
+    "author": "IC",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3820",
+    "tracks": [
+      {
+        "name": "Bitter Sweet Symphony",
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "thevervebittersweetsymphony",
     "local": false
   },
   {
@@ -94871,6 +95280,134 @@
     "local": false
   },
   {
+    "id": "volbeat-16-dollars",
+    "title": "16 Dollars",
+    "artist": "Volbeat",
+    "video": "-fOAlAMqXz4",
+    "language": [
+      "English"
+    ],
+    "bpm": 253,
+    "gap": 6622.094861660079,
+    "year": "2010",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.446Z",
+    "genre": "Metal",
+    "realBpm": 127,
+    "volume": 0.95,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeat16dollars",
+    "local": false
+  },
+  {
+    "id": "volbeat-cape-of-our-hero",
+    "title": "Cape Of Our Hero",
+    "artist": "Volbeat",
+    "video": "vlF3OY-FenY",
+    "language": [
+      "English"
+    ],
+    "bpm": 208,
+    "gap": 31520.384615384617,
+    "year": "2013",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.113Z",
+    "genre": "Metal",
+    "realBpm": 104,
+    "volume": 0.95,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatcapeofourhero",
+    "local": false
+  },
+  {
+    "id": "volbeat-fallen",
+    "title": "Fallen",
+    "artist": "Volbeat",
+    "video": "VBaVlDIMKCU",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.96,
+    "gap": 9893.153443415224,
+    "year": "2010",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.448Z",
+    "genre": "Metal",
+    "realBpm": 72,
+    "volume": 0.99,
+    "author": "Fepo",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatfallen",
+    "local": false
+  },
+  {
+    "id": "volbeat-feat-sarah-blackwood-lonesome-rider",
+    "title": "Lonesome Rider",
+    "artist": "Volbeat feat. Sarah Blackwood",
+    "video": "7WdO9KhcUKE",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 14555.535714285714,
+    "year": "2013",
+    "lastUpdate": "2024-11-15T00:11:49.597Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "XxPurkkixX",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatfeatsarahblackwoodlonesomerider",
+    "local": false
+  },
+  {
+    "id": "volbeat-guitar-gangsters-cadillac-blood",
+    "title": "Guitar Gangsters & Cadillac Blood",
+    "artist": "Volbeat",
+    "video": "uE16qa8vsME",
+    "language": [
+      "English"
+    ],
+    "bpm": 302,
+    "gap": 6056.622516556292,
+    "year": "2008",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.593Z",
+    "genre": "Metal",
+    "realBpm": 77,
+    "volume": 0.82,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatguitargangsterscadillacblood",
+    "local": false
+  },
+  {
     "id": "volbeat-lola-montez",
     "title": "Lola Montez",
     "artist": "Volbeat",
@@ -94919,6 +95456,84 @@
     ],
     "tracksCount": 1,
     "search": "volbeatradiogirl",
+    "local": false
+  },
+  {
+    "id": "volbeat-sad-mans-tongue",
+    "title": "Sad Man’s Tongue",
+    "artist": "Volbeat",
+    "video": "5mV_HHL-h6g",
+    "language": [
+      "English"
+    ],
+    "bpm": 218,
+    "gap": 17256.697247706423,
+    "year": "2007",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.109Z",
+    "genre": "Metal",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatsadmanstongue",
+    "local": false
+  },
+  {
+    "id": "volbeat-still-counting",
+    "title": "Still Counting",
+    "artist": "Volbeat",
+    "video": "q24VAd9_oL4",
+    "language": [
+      "English"
+    ],
+    "bpm": 206,
+    "gap": 8970.582524271846,
+    "year": "2008",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.594Z",
+    "genre": "Rock",
+    "realBpm": 104,
+    "volume": 0.83,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatstillcounting",
+    "local": false
+  },
+  {
+    "id": "volbeat-thanks",
+    "title": "Thanks",
+    "artist": "Volbeat",
+    "video": "-YoLITkRarE",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 3265.1020408163263,
+    "year": "2010",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-15T00:11:49.111Z",
+    "genre": "Metal",
+    "realBpm": 99,
+    "volume": 0.85,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeatthanks",
     "local": false
   },
   {
