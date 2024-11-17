@@ -7289,6 +7289,32 @@
     "local": false
   },
   {
+    "id": "asian-kung-fu-generation-naruto-haruka-kanata",
+    "title": "Haruka Kanata",
+    "artist": "Asian Kung Fu Generation - Naruto",
+    "video": "dFGTG6Wd-fQ",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 322.5,
+    "gap": 27006.74418604651,
+    "year": "2002",
+    "lastUpdate": "2024-11-17T00:12:51.662Z",
+    "genre": "Anime",
+    "realBpm": 175,
+    "volume": 0.88,
+    "author": "Funnygirly",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6332",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "asiankungfugenerationnarutoharukakanata",
+    "local": false
+  },
+  {
     "id": "asian-kung-fu-generation-rewrite",
     "title": "Rewrite",
     "artist": "Asian Kung-fu Generation",
@@ -12866,6 +12892,56 @@
     "local": false
   },
   {
+    "id": "blind-guardian-a-past-and-future-secret",
+    "title": "A Past And Future Secret",
+    "artist": "Blind Guardian",
+    "video": "gvemFLdINTQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 301.3,
+    "gap": 17444.64499004645,
+    "year": "1995",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-11-17T00:12:51.658Z",
+    "realBpm": 160,
+    "volume": 0.73,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blindguardianapastandfuturesecret",
+    "local": false
+  },
+  {
+    "id": "blind-guardian-lord-of-the-rings",
+    "title": "Lord Of The Rings",
+    "artist": "Blind Guardian",
+    "video": "x4gH4Po2gx4",
+    "language": [
+      "English"
+    ],
+    "bpm": 266,
+    "gap": 14594.962406015038,
+    "year": "1990",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-11-17T00:12:51.657Z",
+    "realBpm": 127,
+    "volume": 0.86,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blindguardianlordoftherings",
+    "local": false
+  },
+  {
     "id": "blind-guardian-mirror-mirror",
     "title": "Mirror Mirror",
     "artist": "Blind Guardian",
@@ -12889,6 +12965,31 @@
     ],
     "tracksCount": 1,
     "search": "blindguardianmirrormirror",
+    "local": false
+  },
+  {
+    "id": "blind-guardian-the-bards-song-in-the-forest",
+    "title": "The Bard’s Song (In The Forest)",
+    "artist": "Blind Guardian",
+    "video": "u_tORtmKIjE",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 17335.29411764706,
+    "year": "1992",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-11-17T00:12:51.655Z",
+    "realBpm": 82,
+    "volume": 0.73,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blindguardianthebardssongintheforest",
     "local": false
   },
   {
@@ -28408,6 +28509,32 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-castle-on-the-hill",
+    "title": "Castle On The Hill",
+    "artist": "Ed Sheeran",
+    "video": "K0ibBPhiaG0",
+    "language": [
+      "English"
+    ],
+    "bpm": 267.2,
+    "gap": 23689.52095808383,
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-17T00:12:51.660Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 0.71,
+    "author": "Fepo",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheerancastleonthehill",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-feat-camila-cabello-cardi-b-south-of-the-border",
     "title": "South Of The Border",
     "artist": "Ed Sheeran feat. Camila Cabello & Cardi B",
@@ -34490,10 +34617,10 @@
       "English"
     ],
     "bpm": 257.7,
-    "gap": 6490.477299185099,
+    "gap": 6540.477299185099,
     "year": "1983",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-01-26T17:05:27.098Z",
+    "lastUpdate": "2024-11-15T14:10:08.823Z",
     "genre": "Rock",
     "realBpm": 128,
     "volume": 1,
@@ -40850,6 +40977,32 @@
     "local": false
   },
   {
+    "id": "iron-maiden-hallowed-be-thy-name",
+    "title": "Hallowed Be Thy Name",
+    "artist": "Iron Maiden",
+    "video": "8hu3Utk4ndo",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 10981.739130434782,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-17T00:12:50.781Z",
+    "genre": "Heavy Metal",
+    "realBpm": 104,
+    "volume": 0.83,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ironmaidenhallowedbethyname",
+    "local": false
+  },
+  {
     "id": "isaak-always-on-the-run",
     "title": "Always On The Run",
     "artist": "ISAAK",
@@ -41860,10 +42013,10 @@
       "English"
     ],
     "bpm": 288.04,
-    "gap": 41.69559783363425,
+    "gap": 1091.6955978336343,
     "year": "2009",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-23T06:46:28.604Z",
+    "lastUpdate": "2024-11-15T14:09:17.453Z",
     "genre": "Pop",
     "realBpm": 144,
     "volume": 0.65,
@@ -56490,6 +56643,31 @@
     "local": false
   },
   {
+    "id": "manowar-carry-on",
+    "title": "Carry On",
+    "artist": "Manowar",
+    "video": "SGs7MzWkukk",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.61,
+    "gap": 4385.759644930011,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-17T00:12:50.776Z",
+    "realBpm": 88,
+    "volume": 0.87,
+    "author": "IC",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "manowarcarryon",
+    "local": false
+  },
+  {
     "id": "manowar-kings-of-metal",
     "title": "Kings Of Metal",
     "artist": "Manowar",
@@ -62578,6 +62756,32 @@
     ],
     "tracksCount": 2,
     "search": "moulinrougecomewhatmay",
+    "local": false
+  },
+  {
+    "id": "mr-big-to-be-with-you",
+    "title": "To Be With You",
+    "artist": "Mr. Big",
+    "video": "L6-uJLteKek",
+    "language": [
+      "English"
+    ],
+    "bpm": 334,
+    "gap": 7741.976047904192,
+    "year": "1991",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-17T00:12:51.507Z",
+    "genre": "Pop",
+    "realBpm": 85,
+    "volume": 0.9,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mrbigtobewithyou",
     "local": false
   },
   {
