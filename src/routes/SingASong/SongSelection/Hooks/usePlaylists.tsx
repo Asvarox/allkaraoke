@@ -1,6 +1,5 @@
 import { SongPreview } from 'interfaces';
 import { ClosableTooltip } from 'modules/Elements/Tooltip';
-import { colorSets } from 'modules/GameEngine/Drawing/styles';
 // import { FeatureFlags } from 'modules/utils/featureFlags';
 // import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
@@ -69,16 +68,16 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
       //   ),
       //   filters: { edition: 'christmas' },
       // },
-      {
-        name: 'Halloween',
-        display: (
-          <>
-            <span style={{ color: colorSets.halloweenViolet.text }}>Hallo</span>
-            <span style={{ color: colorSets.halloweenOrange.text }}>ween</span> 🎃
-          </>
-        ),
-        filters: { edition: 'halloween' },
-      },
+      // {
+      //   name: 'Halloween',
+      //   display: (
+      //     <>
+      //       <span style={{ color: colorSets.halloweenViolet.text }}>Hallo</span>
+      //       <span style={{ color: colorSets.halloweenOrange.text }}>ween</span> 🎃
+      //     </>
+      //   ),
+      //   filters: { edition: 'halloween' },
+      // },
       songLanguages[0]
         ? ({
             name: songLanguages[0].name,

@@ -100,7 +100,7 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  useHalloweenTheme(songPreview);
+  // useHalloweenTheme(songPreview);
 
   const expanded = keyboardControl;
 

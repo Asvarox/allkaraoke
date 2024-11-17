@@ -12,8 +12,6 @@ test.beforeEach(async ({ page, context, browser }) => {
 });
 const polishPlaylist = 'Polish';
 const englishPlaylist = 'English';
-const oldPlaylist = 'Oldies';
-const modPlaylist = 'Modern';
 const duetsPlaylist = 'Duets';
 const newPlaylist = 'New';
 const allPlaylist = 'All';
@@ -34,7 +32,7 @@ const polishLang = 'Polish';
 const englishLang = 'English';
 const frenchLang = 'French';
 
-test.skip('Filters - PlayLists', async ({ page }) => {
+test('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -91,20 +89,6 @@ test.skip('Filters - PlayLists', async ({ page }) => {
     await expect(await pages.songListPage.getSongElement(polEngSong)).toBeVisible();
   });
 
-  await test.step('Going to oldies-playlist and check songs visibility', async () => {
-    await page.keyboard.press('ArrowDown');
-    await pages.songListPage.expectPlaylistToBeSelected(oldPlaylist);
-    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(engModSong)).not.toBeVisible();
-  });
-
-  await test.step('Going to modern-playlist and check songs visibility', async () => {
-    await page.keyboard.press('ArrowDown');
-    await pages.songListPage.expectPlaylistToBeSelected(modPlaylist);
-    await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-  });
-
   await test.step('Going to duets-playlist, and check songs and duet icon visibility', async () => {
     await page.keyboard.press('ArrowDown');
     await pages.songListPage.expectPlaylistToBeSelected(duetsPlaylist);
@@ -138,7 +122,7 @@ test.skip('Filters - PlayLists', async ({ page }) => {
   });
 });
 
-test('Filters - PlayLists (Halloween)', async ({ page }) => {
+test.skip('Filters - PlayLists (Halloween)', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
