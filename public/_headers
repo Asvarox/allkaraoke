@@ -1,0 +1,7 @@
+
+/*
+  ! X-Robots-Tag
+
+/assets/*
+  Cache-Control: public, max-age=31536000
+  X-Robots-Tag: nosnippet

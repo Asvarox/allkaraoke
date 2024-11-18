@@ -120,7 +120,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build # The folder the action should deploy.
-      - name: Upload to cloudflare
+      - name: Upload to Cloudflare
         id: deploy-report
         uses: cloudflare/wrangler-action@v3
         with:
@@ -179,7 +179,7 @@ jobs:
       - run: npx playwright install chromium
       - run: pnpm build
         shell: bash
-      - name: Upload to cloudflare
+      - name: Upload to Cloudflare
         id: deploy-report
         uses: cloudflare/wrangler-action@v3
         with:
