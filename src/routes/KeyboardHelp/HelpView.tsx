@@ -1,10 +1,11 @@
-import styled from '@emotion/styled';
-import { typography } from 'modules/Elements/cssMixins';
+import Text from 'modules/Elements/AKUI/Primitives/Text';
 import { supportsEscAsBack } from 'modules/hooks/useKeyboard';
 import { ComponentType } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
+import { twc, TwcComponentProps } from 'react-twc';
 import { KeyboardHelpVisibilitySetting, MobilePhoneModeSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import { RegularHelpEntry } from './Context';
+
 interface Props {
   help: RegularHelpEntry;
 }
@@ -26,10 +27,12 @@ export default function KeyboardHelpView({ help }: Props) {
       <Container
         data-test="help-container"
         onClick={() => setIsVisible(!isVisible)}
-        visible={!!helps.length && isVisible}>
+        data-visible={!!helps.length && isVisible}>
         {isVisible && (
           <>
-            <UseKeyboardIndicator>Use indicated keys on your keyboard</UseKeyboardIndicator>
+            <UseKeyboardIndicator className="UseKeyboardIndicator">
+              Use indicated keys on your keyboard
+            </UseKeyboardIndicator>
             {helps.map(([type, label]) => {
               const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
               return (
@@ -88,92 +91,22 @@ const KeyhelpComponent: Record<keyof RegularHelpEntry, { view: ComponentType; de
   alphanumeric: { view: Alphanumeric, defaultLabel: 'Search' },
 };
 
-const Section = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-`;
+const Section = twc.div`flex items-center gap-4`;
 
-const SectionKeys = styled.div`
-  flex-wrap: nowrap;
-  text-align: center;
-  flex: 2;
-  color: white;
-  font-weight: bold;
-`;
-const SectionHelp = styled.span`
-  flex: 3;
-  ${typography};
-  font-size: 2rem;
-  text-align: right;
-`;
+const SectionKeys = twc.div`flex-nowrap flex-[2] text-white font-bold text-center [&_kbd]:m-1`;
 
-const UseKeyboardIndicator = styled.div`
-  position: absolute;
-  inset: 0 0 0 0;
-  background: rgba(0, 0, 0, 0.75);
-  ${typography};
-  font-size: 2rem;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transition: 300ms;
-  visibility: hidden;
-`;
+const SectionHelp = twc(Text)`flex-[3] text-base text-right`;
 
-const Container = styled.div<{ visible: boolean }>`
-  position: fixed;
-  top: 5rem;
-  right: 0;
-  padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 34rem;
-  visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
-  cursor: pointer;
-  transform: scale(0.75);
+const UseKeyboardIndicator = twc(
+  Text,
+)`absolute inset-0 bg-black/75 flex items-center justify-center text-white text-md p-8 invisible opacity-0 duration-300 hover:opacity-100 hover:visible`;
 
-  z-index: 1000;
+const Container = twc.div((props: TwcComponentProps<'div'> & { 'data-visible': boolean }) => [
+  `fixed top-[5rem] right-0 p-2 bg-black/50  flex-col gap-4 w-[34rem] cursor-pointer scale-75 z-[1000] [view-transition-name:help-view] [&_svg]:fill-white [&_.UseKeyboardIndicator]:hover:opacity-100 [&_.UseKeyboardIndicator]:hover:visible`,
+  props['data-visible'] ? 'flex mobile:hidden' : 'hidden',
+]);
 
-  @media (max-width: 560px) {
-    display: none;
-  }
-
-  view-transition-name: help-view;
-
-  :hover {
-    ${UseKeyboardIndicator} {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  svg {
-    fill: white;
-  }
-`;
-
-const Kbd = styled.kbd<{ disabled?: boolean }>`
-  margin: 0.2rem;
-  padding: 0.12rem 0.9rem;
-  border-radius: 0.3rem;
-  border: 0.1rem solid rgb(204, 204, 204);
-  color: rgb(51, 51, 51);
-  line-height: 1.4;
-  font-size: 1.6rem;
-  display: inline-block;
-  box-shadow:
-    0 0.1rem 0 rgba(0, 0, 0, 0.2),
-    inset 0 0 0 0.2rem #ffffff;
-  background-color: rgb(247, 247, 247);
-  text-shadow: 0 0.1rem 0 #fff;
-  font-weight: normal;
-
-  opacity: ${(props) => (props.disabled ? 0.25 : 1)};
-`;
+const Kbd = twc.kbd((props: TwcComponentProps<'kbd'> & { disabled?: boolean }) => [
+  `py-3 px-4 rounded-md border-t-gray-300 border-l-gray-300 border-solid border-[1.25px] border-gray-500 text-gray-700 leading-4 text-sm bg-gray-50 inline-block font-normal`,
+  props.disabled ? 'opacity-25' : 'opacity-100',
+]);

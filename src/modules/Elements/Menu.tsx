@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { Menu } from 'modules/Elements/AKUI/Menu';
 import { ComponentProps } from 'react';
 import { Button, LinkButton } from './Button';
 
@@ -48,17 +49,4 @@ export const MenuButton = ({
     <Component {...props} data-disabled={disabled} data-size={size} />
   );
 };
-export const MenuContainer = styled.div`
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
-  width: 100vw;
-  box-sizing: border-box;
-  max-width: 75rem;
-  margin: 2rem auto 0 auto;
-  font-size: 2.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  view-transition-name: menu-container;
-`;
+export const MenuContainer = Menu;

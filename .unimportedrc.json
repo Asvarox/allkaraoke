@@ -16,6 +16,7 @@
   ],
   "rootDir": "./src",
   "ignoreUnimported": [
+    "src/modules/Elements/LayoutWithBackgroundEmotion.tsx",
     "src/modules/GameEngine/Input/MicStrategies/Yin.ts",
     "src/modules/Songs/utils/song-fixture.ts",
     "src/modules/hooks/useCallbackDebugger.ts",

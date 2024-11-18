@@ -1,4 +1,5 @@
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
+import { Menu } from 'modules/Elements/AKUI/Menu';
+import { MenuButton } from 'modules/Elements/Menu';
 import Modal from 'modules/Elements/Modal';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import SongsService from 'modules/Songs/SongsService';
@@ -33,7 +34,6 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     const progress = GameState.getSongCompletionProgress();
     const songPreview = (await SongsService.getIndex()).find((song) => song.id === GameState.getSong()?.id);
 
-    // todo add e2e test
     if (!songPreview?.local && progress < 0.7) {
       setRateSongOpen(true);
     } else {
@@ -45,7 +45,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     <Modal onClose={onResume}>
       {!rateSongOpen && (
         <>
-          <MenuContainer>
+          <Menu>
             <MenuButton {...register('button-resume-song', onResume)} ref={menuRef}>
               Resume song
             </MenuButton>
@@ -61,7 +61,7 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
               size="small">
               Edit song
             </MenuButton>
-          </MenuContainer>
+          </Menu>
           {isInputModalOpen && (
             <SelectInputModal onClose={() => setIsInputModalOpen(false)} closeButtonText={'Back to Pause Menu'} />
           )}

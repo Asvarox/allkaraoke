@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { CheckBox, CheckBoxOutlineBlank } from '@mui/icons-material';
-import { MenuButton, MenuContainer } from 'modules/Elements/Menu';
+import { Menu } from 'modules/Elements/AKUI/Menu';
+import { MenuButton } from 'modules/Elements/Menu';
 import GameState from 'modules/GameEngine/GameState/GameState';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import posthog from 'posthog-js';
@@ -47,8 +48,7 @@ export default function RateSong({ register, onExit }: Props) {
 
   return (
     <>
-      <MenuContainer data-test={'rate-song-container'}>
-        <h1>Is the song OK?</h1>
+      <Menu data-test={'rate-song-container'} title="Is the song OK?">
         <h4>If there&#39;s something wrong with the song, let me know so I can fix it</h4>
         <Checkbox {...register('button-not-in-sync', () => setLyricsNotInSync((current) => !current))} size={'small'}>
           <Check>{lyricsNotInSync ? <CheckBox /> : <CheckBoxOutlineBlank />}</Check>
@@ -66,7 +66,7 @@ export default function RateSong({ register, onExit }: Props) {
         <MenuButton {...register('button-song-ok', handleRate, undefined, true)} ref={menuRef}>
           {anySelected ? 'Submit and exit' : 'All good, exit the song'}
         </MenuButton>
-      </MenuContainer>
+      </Menu>
     </>
   );
 }

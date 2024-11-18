@@ -414,7 +414,7 @@ const SongListHeaderPadding = styled.div`
 const BaseRow = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  gap: var(--song-list-gap);
   padding: calc(var(--song-list-gap) / 2) var(--song-list-padding-right) calc(var(--song-list-gap) / 2)
     var(--song-list-padding-left);
 `;

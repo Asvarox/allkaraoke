@@ -1,4 +1,5 @@
-import { CompletedAnim, Heading } from 'modules/Elements/Menu/Heading';
+import { Menu } from 'modules/Elements/AKUI/Menu';
+import { CompletedAnim } from 'modules/Elements/Menu/Heading';
 import InputManager from 'modules/GameEngine/Input/InputManager';
 import startViewTransition from 'modules/utils/startViewTransition';
 import storage from 'modules/utils/storage';
@@ -77,7 +78,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
 
   return (
     <>
-      <Heading>
+      <Menu.Header>
         {isComplete ? (
           <>
             <CompletedAnim /> Setup completed!
@@ -85,7 +86,7 @@ function SelectInputView({ onFinish, closeButtonText, playerNames, onBack, skipT
         ) : (
           'How do you want to sing?'
         )}
-      </Heading>
+      </Menu.Header>
       {(preference === null || preference === 'skip') && (
         <SelectPreference
           onPreferenceSelected={storePreference}

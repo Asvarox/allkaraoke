@@ -22,7 +22,7 @@ interface Props extends ComponentProps<typeof Input> {
   disabled?: boolean;
   options: string[];
   placeholder?: string;
-  keyboardNavigationChangeFocus?: (direction: -1 | 1) => void;
+  $keyboardNavigationChangeFocus?: (direction: -1 | 1) => void;
   onBlur?: () => void;
   className?: string;
 }
@@ -37,7 +37,7 @@ export const Autocomplete = forwardRef(
       onChange,
       disabled,
       placeholder,
-      keyboardNavigationChangeFocus,
+      $keyboardNavigationChangeFocus,
       onBlur,
       className,
       ...restProps
@@ -72,7 +72,7 @@ export const Autocomplete = forwardRef(
           option?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
           inputRef.current?.blur();
-          keyboardNavigationChangeFocus?.(e.code === 'ArrowUp' ? -1 : 1);
+          $keyboardNavigationChangeFocus?.(e.code === 'ArrowUp' ? -1 : 1);
         }
       } else if (e.code === 'Enter') {
         const option = filteredOptions[focusedOption];

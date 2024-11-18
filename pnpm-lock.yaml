@@ -116,6 +116,9 @@ importers:
       remotion-animated:
         specifier: ^2.0.0
         version: 2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(remotion@4.0.84(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+      tailwind-merge:
+        specifier: ^2.5.4
+        version: 2.5.4
       tinycolor2:
         specifier: ^1.6.0
         version: 1.6.0
@@ -4970,6 +4973,9 @@ packages:
   synchronous-promise@2.0.16:
     resolution: {integrity: sha512-qImOD23aDfnIDNqlG1NOehdB9IYsn1V9oByPjKY1nakv2MQYCEMyX033/q+aEtYCpmYK1cv2+NTmlH+ra6GA5A==}
 
+  tailwind-merge@2.5.4:
+    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
+
   tailwindcss@3.4.4:
     resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
     engines: {node: '>=14.0.0'}
@@ -6284,13 +6290,13 @@ snapshots:
 
   '@remotion/bundler@4.0.84(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      css-loader: 5.2.7(webpack@5.83.1(esbuild@0.24.0))
+      css-loader: 5.2.7(webpack@5.83.1(esbuild@0.18.6))
       esbuild: 0.18.6
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-refresh: 0.9.0
       remotion: 4.0.84(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      style-loader: 2.0.0(webpack@5.83.1(esbuild@0.24.0))
+      style-loader: 2.0.0(webpack@5.83.1(esbuild@0.18.6))
       webpack: 5.83.1(esbuild@0.18.6)
     transitivePeerDependencies:
       - '@swc/core'
@@ -7955,7 +7961,7 @@ snapshots:
     dependencies:
       hyphenate-style-name: 1.0.4
 
-  css-loader@5.2.7(webpack@5.83.1(esbuild@0.24.0)):
+  css-loader@5.2.7(webpack@5.83.1(esbuild@0.18.6)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.47)
       loader-utils: 2.0.4
@@ -7967,7 +7973,7 @@ snapshots:
       postcss-value-parser: 4.2.0
       schema-utils: 3.3.0
       semver: 7.6.3
-      webpack: 5.83.1(esbuild@0.24.0)
+      webpack: 5.83.1(esbuild@0.18.6)
 
   css-tree@1.1.3:
     dependencies:
@@ -10485,11 +10491,11 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  style-loader@2.0.0(webpack@5.83.1(esbuild@0.24.0)):
+  style-loader@2.0.0(webpack@5.83.1(esbuild@0.18.6)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.83.1(esbuild@0.24.0)
+      webpack: 5.83.1(esbuild@0.18.6)
 
   stylis@4.2.0: {}
 
@@ -10520,6 +10526,8 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   synchronous-promise@2.0.16: {}
+
+  tailwind-merge@2.5.4: {}
 
   tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.11.10)(typescript@5.5.3)):
     dependencies:
@@ -10563,20 +10571,9 @@ snapshots:
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.17.7
-      webpack: 5.83.1(esbuild@0.24.0)
+      webpack: 5.83.1(esbuild@0.18.6)
     optionalDependencies:
       esbuild: 0.18.6
-
-  terser-webpack-plugin@5.3.9(esbuild@0.24.0)(webpack@5.83.1(esbuild@0.24.0)):
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.25
-      jest-worker: 27.5.1
-      schema-utils: 3.3.0
-      serialize-javascript: 6.0.1
-      terser: 5.17.7
-      webpack: 5.83.1(esbuild@0.24.0)
-    optionalDependencies:
-      esbuild: 0.24.0
 
   terser@5.17.7:
     dependencies:
@@ -10977,37 +10974,6 @@ snapshots:
       schema-utils: 3.3.0
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.9(esbuild@0.18.6)(webpack@5.83.1(esbuild@0.24.0))
-      watchpack: 2.4.0
-      webpack-sources: 3.2.3
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - uglify-js
-
-  webpack@5.83.1(esbuild@0.24.0):
-    dependencies:
-      '@types/eslint-scope': 3.7.4
-      '@types/estree': 1.0.6
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/wasm-edit': 1.11.6
-      '@webassemblyjs/wasm-parser': 1.11.6
-      acorn: 8.14.0
-      acorn-import-assertions: 1.9.0(acorn@8.14.0)
-      browserslist: 4.24.2
-      chrome-trace-event: 1.0.3
-      enhanced-resolve: 5.15.0
-      es-module-lexer: 1.5.4
-      eslint-scope: 5.1.1
-      events: 3.3.0
-      glob-to-regexp: 0.4.1
-      graceful-fs: 4.2.11
-      json-parse-even-better-errors: 2.3.1
-      loader-runner: 4.3.0
-      mime-types: 2.1.35
-      neo-async: 2.6.2
-      schema-utils: 3.3.0
-      tapable: 2.2.1
-      terser-webpack-plugin: 5.3.9(esbuild@0.24.0)(webpack@5.83.1(esbuild@0.24.0))
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:

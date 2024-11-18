@@ -14,6 +14,7 @@ const InputLag = forwardRef<HTMLInputElement, Props>(({ ...restProps }, forwarde
 
   return (
     <InputLagField
+      className="text-[2.7rem]"
       ref={inputRef}
       label="Input lag"
       value={String(inputLag)}
