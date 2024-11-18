@@ -120,6 +120,13 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build # The folder the action should deploy.
+      - name: Upload to cloudflare
+        id: deploy-report
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy build --project-name=allkaraoke-party --branch=${{ github.ref_name }}
 
       - name: Create Sentry release
         uses: getsentry/action-release@v1
@@ -155,12 +162,13 @@ jobs:
               repo: context.repo.repo,
               workflow_id: 'monitor-posthog-events.yml',
             });
+
   deploy-branch:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master'
     environment:
       name: prs
-      url: https://allkaraoke.party/prs/${{ github.event.number }}/
+      url: ${{ steps.deploy-report.outputs.deployment-url }}
     env:
       VITE_APP_SENTRY_DSN_URL: ${{ secrets.VITE_APP_SENTRY_DSN_URL }}
       VITE_APP_POSTHOG_KEY: ${{ secrets.VITE_APP_POSTHOG_KEY }}
@@ -169,13 +177,12 @@ jobs:
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - run: npx playwright install chromium
-      - run: pnpm build --base /prs/${{ github.event.number }}/ && rm -rf build/songs
+      - run: pnpm build
         shell: bash
-      - name: Deploy PR 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        continue-on-error: true
+      - name: Upload to cloudflare
+        id: deploy-report
+        uses: cloudflare/wrangler-action@v3
         with:
-          folder: build # The folder the action should deploy.
-          target-folder: prs/${{ github.event.number }} # The folder the action should deploy to.
-          clean-exclude: |
-            !prs/${{ github.event.number }}/
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy build --project-name=allkaraoke-party --branch=${{ github.ref_name }}
