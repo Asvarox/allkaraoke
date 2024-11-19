@@ -12917,6 +12917,31 @@
     "local": false
   },
   {
+    "id": "blind-guardian-and-then-there-was-silence",
+    "title": "And Then There Was Silence",
+    "artist": "Blind Guardian",
+    "video": "JpbRVR_hXkQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 20337.352941176472,
+    "year": "2001",
+    "artistOrigin": "DE",
+    "lastUpdate": "2024-11-19T00:11:48.644Z",
+    "realBpm": 136,
+    "volume": 0.83,
+    "author": "CaptainWorf",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "blindguardianandthentherewassilence",
+    "local": false
+  },
+  {
     "id": "blind-guardian-lord-of-the-rings",
     "title": "Lord Of The Rings",
     "artist": "Blind Guardian",
@@ -28535,6 +28560,32 @@
     "local": false
   },
   {
+    "id": "ed-sheeran-eyes-closed",
+    "title": "Eyes Closed",
+    "artist": "Ed Sheeran",
+    "video": "u6wOyMUs74I",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 22978.69158878505,
+    "year": "2023",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-19T00:11:47.770Z",
+    "genre": "Pop",
+    "realBpm": 107,
+    "volume": 0.73,
+    "author": "Fepo",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeraneyesclosed",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-feat-camila-cabello-cardi-b-south-of-the-border",
     "title": "South Of The Border",
     "artist": "Ed Sheeran feat. Camila Cabello & Cardi B",
@@ -28559,6 +28610,31 @@
     ],
     "tracksCount": 1,
     "search": "edsheeranfeatcamilacabellocardibsouthoftheborder",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-feat-khalid-beautiful-people",
+    "title": "Beautiful People",
+    "artist": "Ed Sheeran feat. Khalid",
+    "video": "mj0XInqZMHY",
+    "language": [
+      "English"
+    ],
+    "bpm": 371.2,
+    "gap": 15529.762931034482,
+    "year": "2019",
+    "lastUpdate": "2024-11-19T00:11:48.483Z",
+    "genre": "Pop",
+    "realBpm": 93,
+    "volume": 0.69,
+    "author": "krampster",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranfeatkhalidbeautifulpeople",
     "local": false
   },
   {
@@ -28746,6 +28822,30 @@
     ],
     "tracksCount": 1,
     "search": "edsheeranphotograph",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-pokemon-celestial",
+    "title": "Celestial",
+    "artist": "Ed Sheeran & Pokémon",
+    "video": "23g5HBOg3Ic",
+    "language": [
+      "English"
+    ],
+    "bpm": 492,
+    "gap": 9983.90243902439,
+    "year": "2022",
+    "lastUpdate": "2024-11-19T00:11:47.778Z",
+    "realBpm": 123,
+    "volume": 0.68,
+    "author": "Mamba99",
+    "tracks": [
+      {
+        "start": 33
+      }
+    ],
+    "tracksCount": 1,
+    "search": "edsheeranpokemoncelestial",
     "local": false
   },
   {
@@ -59197,6 +59297,32 @@
     "local": false
   },
   {
+    "id": "meat-loaf-bat-out-of-hell",
+    "title": "Bat Out Of Hell",
+    "artist": "Meat Loaf",
+    "video": "3QGMCSCFoKA",
+    "language": [
+      "English"
+    ],
+    "bpm": 346.67,
+    "gap": 24634.817261372486,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-19T00:11:48.632Z",
+    "genre": "Rock",
+    "realBpm": 172,
+    "volume": 0.74,
+    "author": "Steve_N",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "meatloafbatoutofhell",
+    "local": false
+  },
+  {
     "id": "meat-loaf-objects-in-the-rear-view-mirror-may-appear-closer-than-they-are",
     "title": "Objects In The Rear View Mirror May Appear Closer Than They Are",
     "artist": "Meat Loaf",
@@ -85249,6 +85375,37 @@
     "local": false
   },
   {
+    "id": "taio-cruz-break-your-heart",
+    "title": "Break Your Heart",
+    "artist": "Taio Cruz",
+    "video": "KFG6AoEScVE",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 14986.393442622952,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-19T00:11:48.655Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "previewStart": 47,
+    "previewEnd": 70,
+    "volume": 0.73,
+    "author": "snake84",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=1645",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8323",
+    "tracks": [
+      {
+        "name": "Break Your Heart",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taiocruzbreakyourheart",
+    "local": false
+  },
+  {
     "id": "taio-cruz-dynamite",
     "title": "Dynamite",
     "artist": "Taio Cruz",
@@ -85273,6 +85430,129 @@
     ],
     "tracksCount": 1,
     "search": "taiocruzdynamite",
+    "local": false
+  },
+  {
+    "id": "taio-cruz-feat-flo-rida-hangover",
+    "title": "Hangover",
+    "artist": "Taio Cruz feat. Flo Rida",
+    "video": "dLhFDYQHDQY",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.35,
+    "gap": 2335.2662375658283,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-19T00:11:48.653Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "previewStart": 82,
+    "previewEnd": 124,
+    "volume": 0.71,
+    "author": "Coppolatte",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=23748",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13046",
+    "tracks": [
+      {
+        "name": "Hangover",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taiocruzfeatfloridahangover",
+    "local": false
+  },
+  {
+    "id": "taio-cruz-there-she-goes",
+    "title": "There She Goes",
+    "artist": "Taio Cruz",
+    "video": "RgEo_sxwZ8g",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": -1.71875,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-19T00:11:48.647Z",
+    "genre": "Dance",
+    "realBpm": 128,
+    "previewStart": 49,
+    "previewEnd": 82,
+    "volume": 0.69,
+    "author": "Ultrasonic",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=22479",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13913",
+    "tracks": [
+      {
+        "name": "There She Goes",
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taiocruzthereshegoes",
+    "local": false
+  },
+  {
+    "id": "taio-cruz-troublemaker",
+    "title": "Troublemaker",
+    "artist": "Taio Cruz",
+    "video": "0mcsPfyWphU",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.2,
+    "gap": 6800.815347721822,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-19T00:11:48.651Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "previewStart": 37,
+    "previewEnd": 70,
+    "volume": 0.7,
+    "author": "Caruso",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=733",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=13346",
+    "tracks": [
+      {
+        "name": "Troublemaker",
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taiocruztroublemaker",
+    "local": false
+  },
+  {
+    "id": "taio-cruz-world-in-our-hands",
+    "title": "World In Our Hands",
+    "artist": "Taio Cruz",
+    "video": "9-YOU4DasV0",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 7923.050847457627,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-19T00:11:48.648Z",
+    "realBpm": 118,
+    "previewStart": 40,
+    "previewEnd": 77,
+    "volume": 0.69,
+    "author": "Vittelius",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=72805",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=14458",
+    "tracks": [
+      {
+        "name": "World In Our Hands",
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "taiocruzworldinourhands",
     "local": false
   },
   {
