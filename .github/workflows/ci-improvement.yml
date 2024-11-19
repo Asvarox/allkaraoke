@@ -126,7 +126,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy build --project-name=allkaraoke-party --branch=${{ github.ref_name }}
+          command: pages deploy build --project-name=allkaraoke-party
 
       - name: Create Sentry release
         uses: getsentry/action-release@v1
