@@ -157,7 +157,7 @@ const StatSegment = twc(
   Text,
 )`flex flex-col flex-1 gap-4 typography text-[2.3rem] mobile:text-[8.5rem] landscap:text-[4.9rem]`;
 
-const Screenshot = twc.img`w-full aspect-w-16 aspect-h-9 object-cover shadow-5 border-1 border-black/50 rounded-2xl mobile:w-[calc(50%-2rem)] mobile:h-[50rem]`;
+const Screenshot = twc.img`w-full aspect-video object-cover shadow-5 border-1 border-black/50 rounded-2xl mobile:w-[calc(50%-2rem)] mobile:h-[50rem]`;
 
 const PlayButton = twc(ButtonLink)`text-[9rem] bg-black w-full px-28 py-4 animate-focused`;
 
