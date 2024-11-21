@@ -1,0 +1,254 @@
+#ARTIST:Dusty Springfield
+#TITLE:You Don’t Have To Say You Love Me
+#CREATOR:Jlk2
+#BPM:242,93
+#YEAR:1966
+#VIDEO:v=QR4vE9xL3yk
+#LANGUAGE:English
+#GAP:18852,467596593015
+#ALLKARAOKE_ID:dusty-springfield-you-dont-have-to-say-you-love-me
+#ALLKARAOKE_LASTUPDATE:2024-11-21T00:11:47.759Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:112
+#ALLKARAOKE_VOLUME:1
+#MP3:Dusty Springfield - You Don’t Have To Say You Love Me.mp3
+: 16 4 2 When 
+* 23 3 4 I 
+* 29 14 5 said 
+: 46 3 9 I 
+: 50 25 10 need
+: 76 6 9 ed 
+: 84 37 7 you
+- 121
+: 130 2 0 You 
+: 133 10 2 said
+- 143
+: 159 3 4 You 
+: 164 3 7 would 
+: 171 10 9 al
+: 182 7 7 ways 
+: 192 32 5 stay
+- 224 225
+- 225
+: 241 2 -2 It 
+: 244 2 -2 was
+: 247 2 0 n’t 
+: 250 14 2 me 
+: 265 4 5 who 
+: 270 21 7 changed 
+: 293 4 5 but 
+: 299 17 4 you
+- 316
+: 320 3 5 And 
+* 324 20 7 now 
+: 345 4 5 you’ve 
+* 350 17 4 gone 
+: 374 9 5 a
+* 384 35 4 way
+- 419 427
+- 427
+: 443 10 2 Don’t 
+: 454 6 4 you 
+: 461 16 5 see 
+: 478 6 9 That 
+: 485 15 10 now 
+: 501 9 9 you’ve 
+: 511 36 7 gone 
+: 557 5 0 And 
+: 563 4 2 I’m 
+: 568 9 4 left 
+: 578 13 7 here
+- 591
+: 605 9 9 On 
+: 615 8 7 my 
+: 624 25 5 own
+- 649 653
+- 653
+: 669 3 -2 That 
+: 673 2 0 I 
+: 676 14 2 have 
+: 691 5 5 to 
+: 704 12 7 fol
+: 717 4 5 low 
+: 722 16 4 you 
+: 743 8 5 And 
+: 756 16 7 beg
+- 772
+: 778 15 4 You
+- 793
+: 797 4 4 To 
+: 804 6 7 come 
+: 815 39 9 home 
+: 857 7 2 You 
+: 865 9 4 don’t 
+: 875 4 6 have 
+: 880 2 2 to 
+: 883 5 7 say
+- 888
+: 894 2 6 You 
+: 897 6 4 love 
+: 904 5 2 me 
+: 917 3 4 Just 
+: 921 7 6 be 
+: 929 8 4 close 
+: 938 6 6 at 
+: 945 13 -3 hand
+- 958
+: 965 10 6 You 
+: 976 3 7 don’t 
+: 980 8 9 have 
+: 989 3 6 to 
+: 993 6 11 stay 
+: 1000 5 9 for
+* 1006 7 7 e
+: 1014 4 6 ver 
+: 1027 4 7 I
+- 1031
+: 1032 5 9 Will 
+: 1042 4 7 un
+: 1047 5 9 der
+: 1053 14 7 stand
+- 1067
+: 1073 1 6 Be
+: 1075 9 9 lieve 
+: 1085 10 6 me 
+: 1099 3 6 be
+: 1103 7 9 lieve 
+: 1111 11 6 me 
+: 1126 3 6 I 
+: 1130 15 11 can’t 
+: 1146 4 6 help
+- 1150
+: 1156 3 4 But 
+: 1160 3 4 love 
+: 1164 7 2 you 
+: 1176 2 2 But 
+: 1179 2 2 be
+: 1182 5 2 lieve 
+* 1188 10 4 me 
+: 1205 3 6 I’ll
+- 1208
+: 1209 5 7 Nev
+: 1215 5 7 er 
+: 1221 9 9 tie 
+: 1231 11 11 you 
+: 1243 53 9 down
+- 1296 1297
+- 1297
+: 1313 5 2 Left 
+: 1319 2 2 a
+: 1322 6 2 lone 
+: 1329 5 4 with 
+: 1335 11 5 just
+- 1346
+: 1361 5 9 A 
+: 1367 7 10 mem
+: 1375 3 9 o
+: 1379 35 7 ry
+- 1414
+: 1421 10 0 Life 
+: 1432 6 2 seems 
+: 1439 9 4 dead
+- 1448
+: 1461 4 7 And 
+: 1466 15 9 so 
+* 1482 7 7 un
+: 1490 31 5 real
+- 1521
+: 1536 4 -2 All 
+: 1541 6 0 that’s 
+: 1548 12 2 left
+- 1560
+: 1572 7 5 Is 
+: 1580 13 7 lone
+: 1594 4 5 li
+: 1599 14 4 ness
+- 1613 1615
+- 1615
+: 1631 6 5 There’s 
+: 1638 5 7 noth
+: 1644 13 5 ing 
+: 1663 11 4 left 
+: 1675 12 5 to
+: 1688 31 2 feel
+- 1719
+: 1735 10 2 You 
+: 1746 6 4 don’t
+: 1753 7 6 have 
+: 1761 1 2 to 
+: 1763 8 7 say 
+: 1772 6 6 you 
+: 1779 7 4 love 
+: 1787 6 2 me 
+: 1794 6 4 Just
+- 1800
+: 1801 7 6 Be 
+: 1809 9 4 close 
+: 1819 6 6 at 
+: 1826 9 -3 hand
+- 1835 1836
+- 1836
+: 1852 4 6 You 
+: 1857 3 7 don’t 
+: 1863 6 9 have 
+: 1870 1 6 to 
+: 1872 10 11 stay 
+: 1883 5 9 for
+* 1889 7 7 ev
+: 1897 4 5 er 
+: 1904 12 7 I
+- 1916
+: 1919 1 9 Will 
+: 1921 2 7 un
+: 1924 2 9 der
+: 1927 11 7 stand
+- 1938
+: 1952 4 6 Be
+* 1957 11 9 lieve 
+: 1969 32 9 me 
+: 2008 4 6 be
+: 2013 12 11 lieve 
+* 2026 39 11 me 
+: 2066 3 4 You 
+: 2071 13 6 don’t
+- 2084
+: 2085 4 8 Have 
+: 2090 3 4 to 
+: 2094 8 9 say 
+: 2104 3 8 you 
+: 2108 7 6 love 
+: 2116 3 4 me
+- 2119
+* 2127 6 6 Just 
+: 2134 5 8 be 
+: 2140 7 6 close 
+: 2148 7 8 at 
+: 2156 15 -1 hand
+- 2171
+: 2179 7 8 You 
+: 2187 3 9 don’t 
+: 2191 6 11 have 
+: 2198 3 8 to 
+: 2202 9 13 stay 
+: 2212 7 11 for
+: 2220 6 9 ev
+: 2227 4 8 er 
+: 2232 12 9 I
+- 2244
+: 2245 5 11 Will 
+: 2251 3 9 un
+: 2255 2 11 der
+: 2258 11 9 stand
+- 2269
+: 2282 6 8 Be
+: 2289 11 11 lieve 
+: 2302 32 11 me 
+: 2335 6 8 be
+: 2342 11 11 lieve 
+: 2354 33 11 me, 
+: 2392 4 8 be
+: 2397 15 13 li
+: 2413 6 11 i
+: 2420 5 8 eve 
+: 2426 112 11 me
+E

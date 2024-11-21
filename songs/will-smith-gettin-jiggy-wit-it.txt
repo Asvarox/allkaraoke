@@ -1,0 +1,899 @@
+#ARTIST:Will Smith
+#TITLE:Gettin’ Jiggy Wit It
+#CREATOR:DoubleDee
+#BPM:431,6
+#YEAR:1997
+#VIDEO:v=3JcmQONgXJM
+#GENRE:Rap
+#LANGUAGE:English
+#GAP:1382,1223354958295
+#ALLKARAOKE_ID:will-smith-gettin-jiggy-wit-it
+#ALLKARAOKE_LASTUPDATE:2024-11-21T00:11:47.893Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_VOLUME:1
+#P1:Gettin' Jiggy Wit It
+#MP3:Will Smith - Gettin’ Jiggy Wit It.mp3
+#COVER:Will Smith - Gettin’ Jiggy Wit It [CO].jpg
+#BACKGROUND:Will Smith - Gettin’ Jiggy Wit It [BG].jpg
+R 29 11 20 Woo, 
+R 61 5 13 uh, 
+R 77 5 13 uh, 
+R 93 5 13 uh, 
+R 109 5 13 uh
+- 114 160
+- 160
+R 189 4 13 Ha
+R 194 4 13 ha, 
+R 206 3 13 ha
+R 210 4 13 ha
+- 214 272
+- 272
+R 301 3 13 What? 
+R 318 3 13 What? 
+R 334 3 13 What? 
+R 350 3 13 What?
+- 353 448
+- 448
+R 477 6 5 Uh
+- 483
+R 505 5 6 On 
+R 514 2 6 your 
+R 518 5 6 mark 
+R 525 3 7 rea
+R 529 3 6 dy 
+R 534 3 6 set 
+R 540 5 8 let’s 
+R 549 4 8 go
+- 553
+R 566 3 6 Dance
+R 574 3 9 floor 
+R 582 3 9 pro, 
+R 590 3 9 I 
+R 598 3 6 know 
+R 606 3 9 you 
+R 614 3 6 know
+- 617
+R 622 3 9 I 
+R 630 3 8 go 
+R 638 3 7 psy
+R 644 3 7 cho 
+R 652 3 9 when 
+R 658 3 8 my 
+R 662 3 9 new 
+R 670 3 10 joint 
+R 678 3 11 hit
+- 681
+R 694 3 9 Just 
+R 702 3 9 can’t 
+R 710 4 11 sit
+- 714
+R 726 2 6 Got
+R 730 2 6 ta 
+R 734 6 9 get 
+R 742 2 11 jig
+R 746 3 11 gy 
+R 750 2 8 wit’ 
+R 754 3 8 it, 
+R 763 4 9 that’s 
+R 771 3 10 it
+- 774
+R 778 2 9 Now 
+R 782 2 10 ho
+R 786 2 10 ney 
+R 790 2 9 ho
+R 794 2 9 ney 
+R 798 3 9 come 
+R 806 5 9 ride
+- 811
+R 822 2 9 D
+R 827 2 9 K
+R 833 3 9 N
+R 842 3 9 Y
+R 853 3 8 all 
+R 857 2 9 up 
+R 861 2 9 in 
+R 865 2 9 my 
+R 869 4 9 eye
+- 873
+R 885 2 9 You 
+R 889 2 10 got 
+R 893 2 8 a 
+R 905 3 10 Pra
+R 909 3 10 da 
+R 921 5 8 bag 
+R 927 2 8 with 
+R 930 2 8 a 
+R 934 3 10 lot 
+R 940 2 6 of 
+R 952 3 11 stuff 
+R 958 2 8 in 
+R 962 2 4 it
+- 964
+R 966 2 11 Give 
+R 970 2 9 it 
+R 974 3 11 to 
+R 978 2 11 your 
+R 982 4 9 friend 
+R 990 6 11 let’s 
+R 998 6 13 spin
+- 1004
+R 1013 3 7 Eve
+R 1017 3 7 ry
+R 1021 3 8 bo
+R 1025 3 8 dy 
+R 1029 3 7 loo
+R 1033 3 7 kin’ 
+R 1037 2 5 at 
+R 1041 2 6 me 
+R 1045 3 8 glan
+R 1053 3 7 cin’ 
+R 1057 2 4 a 
+R 1061 3 8 kid
+- 1064
+R 1069 3 7 Wi
+R 1073 3 7 shin’ 
+R 1077 3 8 they 
+R 1081 2 6 was 
+R 1085 4 11 dan
+R 1093 3 6 cin’ 
+R 1097 1 3 a 
+R 1100 7 7 jig
+- 1107
+R 1109 3 5 Here 
+R 1113 2 4 with 
+R 1117 2 7 this 
+R 1121 4 9 hand
+R 1129 3 6 some 
+R 1133 4 9 kid
+- 1137
+R 1141 3 7 Ci
+R 1145 2 4 ga–
+R 1149 3 7 ci
+R 1153 6 7 gar 
+R 1162 3 7 right 
+R 1169 2 5 from 
+R 1173 3 6 Cu
+R 1177 3 6 ba–
+R 1181 3 7 Cu
+R 1185 7 7 ba
+- 1192
+R 1193 2 6 I 
+R 1197 2 6 just 
+R 1204 4 8 bite 
+R 1211 2 7 it
+- 1213
+R 1217 3 8 It’s 
+R 1223 3 4 for 
+R 1227 2 6 the 
+R 1231 3 9 look 
+R 1242 3 4 I 
+R 1246 5 7 don’t 
+R 1254 4 9 light 
+R 1260 2 7 it
+- 1262
+R 1270 3 11 Ill
+R 1278 3 11 way 
+R 1282 2 10 the 
+R 1286 3 9 an–
+R 1290 2 9 may 
+R 1294 2 8 on 
+R 1298 2 7 the 
+R 1302 5 9 ance–
+R 1310 3 8 day 
+R 1314 3 8 oor–
+R 1323 4 5 flay
+- 1327
+R 1335 2 9 Give 
+R 1339 2 7 it 
+R 1343 2 7 up 
+R 1349 2 8 jig
+R 1353 3 8 gy, 
+R 1357 3 8 make 
+R 1361 2 7 it 
+R 1365 3 8 feel 
+R 1369 3 7 like 
+R 1377 3 9 fore
+R 1385 4 8 play
+- 1389
+R 1395 5 4 Yo 
+R 1403 2 5 my 
+R 1407 3 10 car
+R 1411 2 10 di
+R 1415 2 10 o 
+R 1419 2 4 is 
+R 1423 4 9 in
+R 1431 4 10 fi
+R 1437 2 8 nite
+- 1439
+G 1453 2 8 Ha 
+G 1457 3 8 ha
+- 1460
+R 1481 2 7 Big 
+R 1485 2 5 Wil
+R 1489 2 4 lie 
+R 1493 4 4 style’s 
+R 1501 6 6 all 
+R 1510 4 6 in 
+R 1515 2 2 it
+- 1517
+R 1534 2 3 Get
+R 1538 2 4 tin’ 
+R 1542 2 5 jig
+R 1546 2 5 gy 
+R 1550 2 4 wit’ 
+R 1554 2 2 it
+- 1556
+: 1559 2 5 Na–
+: 1562 4 7 na, 
+: 1570 3 7 na, 
+: 1578 5 7 na, 
+: 1586 2 5 na–
+: 1590 3 7 na–
+: 1597 5 5 na–
+- 1602
+: 1624 2 5 Na–
+: 1627 4 7 na, 
+: 1635 3 7 na, 
+: 1643 5 7 na, 
+: 1651 2 5 na–
+: 1655 3 7 na
+- 1658
+R 1661 2 3 Get
+R 1665 2 4 tin’ 
+R 1669 2 5 jig
+R 1673 2 5 gy 
+R 1677 2 4 wit’ 
+R 1681 2 2 it
+- 1683
+: 1686 2 5 Na–
+: 1689 4 7 na, 
+: 1697 3 7 na, 
+: 1705 5 7 na, 
+: 1713 2 5 na–
+: 1717 3 7 na–
+: 1724 5 5 na–
+- 1729
+: 1751 2 5 Na–
+: 1754 4 7 na, 
+: 1762 3 7 na, 
+: 1770 5 7 na, 
+: 1778 2 5 na–
+: 1782 3 7 na
+- 1785
+R 1789 2 3 Get
+R 1793 2 4 tin’ 
+R 1797 2 5 jig
+R 1801 2 5 gy 
+R 1805 2 4 wit’ 
+R 1809 2 2 it
+- 1811
+: 1815 2 5 Na–
+: 1818 4 7 na, 
+: 1826 3 7 na, 
+: 1834 5 7 na, 
+: 1842 2 5 na–
+: 1846 3 7 na–
+: 1853 5 5 na–
+- 1858
+: 1880 2 5 Na–
+: 1883 4 7 na, 
+: 1891 3 7 na, 
+: 1899 5 7 na, 
+: 1907 2 5 na–
+: 1911 2 7 na
+- 1913
+R 1917 2 3 Get
+R 1921 2 4 tin’ 
+R 1925 2 5 jig
+R 1929 2 5 gy 
+R 1933 2 4 wit’ 
+R 1937 2 2 it
+- 1939
+: 1943 2 5 Na–
+: 1946 4 7 na, 
+: 1954 3 7 na, 
+: 1962 5 7 na, 
+: 1970 2 5 na–
+: 1974 3 7 na–
+: 1981 5 5 na–
+- 1986 2001
+- 2001
+R 2030 3 7 What? 
+R 2042 3 6 You 
+R 2046 3 8 wan
+R 2050 3 8 na 
+R 2054 5 10 ball 
+R 2062 2 8 with 
+R 2066 2 9 the 
+R 2070 9 10 kid?
+- 2079
+R 2086 4 6 Watch 
+R 2092 3 6 your 
+R 2098 5 5 step 
+R 2106 3 8 you 
+R 2110 3 7 might 
+R 2117 4 9 fall
+- 2121
+R 2125 2 9 Try
+R 2129 2 7 na 
+R 2133 2 7 do 
+R 2137 3 5 what 
+R 2141 3 8 I 
+R 2149 3 6 did
+- 2152
+R 2157 2 6 Ma
+R 2161 3 6 ma, 
+G 2165 5 10 uh, 
+R 2173 3 6 ma
+R 2177 3 6 ma, 
+G 2181 5 10 uh, 
+R 2189 2 7 ma
+R 2193 2 5 ma, 
+R 2197 3 7 come 
+R 2202 3 6 clo
+R 2209 4 8 ser
+- 2213
+R 2221 2 8 In 
+R 2225 2 7 the 
+R 2229 3 7 mid
+R 2233 3 7 dle 
+R 2237 2 7 of 
+R 2241 2 7 the 
+R 2245 4 9 club 
+R 2253 2 7 with 
+R 2257 3 7 the 
+R 2261 2 2 rub–
+R 2265 2 4 a–
+R 2269 5 9 dub 
+R 2285 3 8 uh
+- 2288
+R 2301 4 9 No 
+R 2309 7 11 love 
+R 2317 3 10 for 
+R 2321 2 8 the 
+R 2325 3 10 ha
+R 2331 5 10 ters, 
+R 2337 2 7 the 
+R 2342 3 10 ha
+R 2347 5 10 ters
+- 2352
+R 2357 4 8 Mad 
+R 2365 3 10 cause 
+R 2369 2 8 I 
+R 2373 3 9 got 
+R 2381 4 9 floor 
+R 2389 4 10 seats 
+R 2397 2 8 at 
+R 2401 2 6 the 
+R 2405 4 9 La
+R 2412 4 9 kers
+- 2416
+R 2421 3 9 See 
+R 2425 3 10 me 
+R 2429 2 9 on 
+R 2433 2 7 the 
+R 2437 3 9 fif
+R 2441 2 9 ty 
+R 2445 4 9 yard 
+R 2453 3 9 line 
+R 2461 2 10 with 
+R 2465 2 8 the 
+R 2469 3 10 Rai
+R 2474 5 0 ders
+- 2479
+R 2486 3 10 Met 
+R 2492 2 9 A
+R 2499 4 9 li, 
+R 2506 2 9 he 
+R 2510 3 10 told 
+R 2516 3 10 me 
+R 2522 4 13 I’m 
+R 2529 3 10 the 
+R 2533 3 8 grea
+R 2540 3 4 test
+- 2543
+: 2553 2 4 I 
+: 2557 2 6 got 
+: 2562 2 6 the 
+* 2565 11 11 fe
+* 2578 6 11 ver 
+R 2589 3 8 for 
+R 2593 2 6 the 
+R 2597 3 7 fla
+R 2601 2 6 vor 
+R 2605 2 4 of 
+R 2609 2 3 a
+- 2611
+R 2621 7 6 Crowd 
+* 2629 8 11 plea
+* 2643 6 10 ser 
+R 2653 3 8 D
+R 2657 3 8 J 
+R 2661 3 7 play 
+R 2665 3 8 a
+R 2669 3 3 no
+R 2673 3 3 ther
+- 2676
+R 2685 2 8 From 
+R 2689 2 8 the 
+R 2693 3 10 Prince 
+R 2697 2 9 of 
+R 2701 4 7 this 
+R 2709 4 7 shore 
+R 2717 4 10 hot
+R 2725 4 11 ness
+- 2729
+R 2737 3 5 On
+R 2745 3 5 ly 
+R 2749 4 10 bad 
+R 2759 4 12 chicks 
+R 2771 3 5 ri
+R 2777 3 7 ding 
+R 2781 3 11 my 
+R 2789 4 11 whip
+- 2793
+R 2805 4 6 South 
+R 2813 2 9 to 
+R 2817 2 6 the 
+R 2821 5 9 west 
+R 2829 2 9 to 
+R 2833 2 6 the 
+R 2837 4 6 east 
+R 2845 3 9 to 
+R 2849 2 6 the 
+R 2853 2 9 north
+- 2855
+R 2861 3 9 Bump 
+R 2867 3 9 my 
+R 2874 4 9 hits 
+R 2881 2 6 and 
+R 2885 3 6 watch 
+R 2889 2 6 ’em 
+R 2893 3 9 go 
+R 2897 3 9 off 
+R 2909 3 8 go 
+R 2913 3 9 off
+- 2916
+R 2925 4 9 Yes 
+R 2933 4 9 yes 
+R 2943 6 9 y’all
+- 2949
+R 2957 3 8 You 
+R 2962 4 9 don’t 
+R 2974 8 10 stop
+- 2982
+R 2989 3 9 In 
+R 2993 2 7 the 
+R 2997 2 8 win
+R 3001 3 8 ter 
+R 3005 2 9 or 
+R 3009 2 8 the 
+* 3013 3 21 sum
+* 3018 5 23 mer 
+* 3025 5 23 time 
+: 3034 2 4 I 
+: 3038 4 4 makes 
+: 3044 3 4 it 
+: 3050 7 6 hot
+- 3057
+R 3069 2 3 Get
+R 3073 2 4 tin’ 
+R 3077 2 5 jig
+R 3081 2 5 gy 
+R 3085 2 4 wit’ 
+R 3089 2 2 it
+- 3091
+: 3095 2 5 Na–
+: 3099 4 7 na, 
+: 3106 3 7 na, 
+: 3114 5 7 na, 
+: 3122 2 5 na–
+: 3126 3 7 na–
+: 3133 5 5 na–
+- 3138
+: 3159 2 5 Na–
+: 3163 4 7 na, 
+: 3171 3 7 na, 
+: 3179 5 7 na, 
+: 3187 2 5 na–
+: 3191 3 7 na
+- 3194
+R 3197 2 3 Get
+R 3201 2 4 tin’ 
+R 3205 2 5 jig
+R 3209 2 5 gy 
+R 3213 2 4 wit’ 
+R 3217 2 2 it
+- 3219
+: 3223 2 5 Na–
+: 3227 4 7 na, 
+: 3235 3 7 na, 
+: 3243 5 7 na, 
+: 3251 2 5 na–
+: 3255 3 7 na–
+: 3262 5 5 na–
+- 3267
+: 3288 2 5 Na–
+: 3291 4 7 na, 
+: 3299 3 7 na, 
+: 3307 5 7 na, 
+: 3315 2 5 na–
+: 3319 3 7 na
+- 3322
+R 3326 2 3 Get
+R 3330 2 4 tin’ 
+R 3334 2 5 jig
+R 3338 2 5 gy 
+R 3342 2 4 wit’ 
+R 3346 2 2 it
+- 3348
+: 3352 2 5 Na–
+: 3355 4 7 na, 
+: 3363 3 7 na, 
+: 3371 5 7 na, 
+: 3379 2 5 na–
+: 3383 3 7 na–
+: 3390 5 5 na–
+- 3395
+: 3417 2 5 Na–
+: 3420 4 7 na, 
+: 3428 3 7 na, 
+: 3436 5 7 na, 
+: 3444 2 5 na–
+: 3448 2 7 na
+- 3450
+R 3454 2 3 Get
+R 3458 2 4 tin’ 
+R 3462 2 5 jig
+R 3466 2 5 gy 
+R 3470 2 4 wit’ 
+R 3474 2 2 it
+- 3476
+: 3480 2 5 Na–
+: 3483 4 7 na, 
+: 3491 3 7 na, 
+: 3499 5 7 na, 
+: 3507 2 5 na–
+: 3511 3 7 na–
+: 3518 5 5 na–
+- 3523 3552
+- 3552
+G 3581 3 17 Eight 
+G 3589 2 17 fif
+G 3593 2 17 ty 
+R 3597 4 6 I–
+R 3605 4 6 S 
+R 3613 2 7 if 
+R 3617 3 7 you 
+R 3621 4 7 need 
+R 3629 2 8 a 
+R 3633 4 9 lift
+- 3637
+R 3641 3 11 Who’s 
+R 3649 2 11 the 
+R 3653 4 10 kid 
+R 3661 2 10 in 
+R 3665 2 10 the 
+R 3669 4 11 drop? 
+R 3677 3 10 Who 
+R 3681 5 6 else? 
+G 3689 4 9 Will 
+G 3699 4 11 Smith
+- 3703
+R 3717 3 5 Li
+R 3721 2 5 vin’ 
+R 3725 4 4 that 
+R 3733 4 5 life 
+R 3741 3 7 some 
+R 3745 3 8 con
+R 3749 2 6 si
+R 3753 2 6 der 
+R 3757 2 8 a 
+R 3761 4 9 myth
+- 3765
+R 3777 3 6 Rock 
+R 3785 2 6 from 
+R 3789 4 9 South 
+R 3797 3 9 Street 
+R 3805 3 7 to 
+R 3809 3 9 One 
+R 3817 3 9 Two 
+R 3825 3 9 Fifth
+- 3828
+R 3837 2 6 Wo
+R 3841 3 6 men 
+R 3845 2 6 used 
+R 3849 2 6 to 
+* 3853 5 9 tease 
+* 3861 5 8 me
+- 3866
+R 3869 3 6 Give 
+R 3873 2 6 it 
+R 3877 2 6 to 
+R 3881 3 6 me 
+R 3885 6 6 now 
+R 3893 5 6 nice 
+R 3901 3 6 and 
+* 3905 6 9 ea
+* 3913 5 8 sy
+- 3918
+R 3925 3 9 Since 
+R 3929 2 6 I 
+R 3933 3 7 moved 
+R 3941 3 6 up 
+R 3949 3 7 like 
+* 3957 4 6 George 
+* 3965 3 6 and 
+* 3969 7 9 Wee
+* 3977 6 8 zy
+- 3983
+R 3989 5 7 Cream 
+R 3997 3 8 to 
+R 4001 2 6 the 
+R 4005 4 9 ma
+R 4013 2 7 xi
+R 4017 4 7 mum 
+R 4025 3 5 I’ll 
+R 4029 3 8 be 
+R 4033 3 7 as
+R 4041 3 7 kin’ 
+R 4045 2 4 em
+- 4047
+R 4053 3 6 Would 
+R 4057 2 6 you 
+R 4061 2 6 like 
+R 4065 2 5 to 
+R 4069 4 7 bounce 
+R 4077 3 7 with 
+R 4081 2 6 the 
+R 4085 3 6 bro
+R 4089 2 6 ther 
+R 4093 6 6 that’s 
+* 4101 4 9 pla
+* 4109 3 9 ti
+* 4113 3 9 num?
+- 4116
+R 4125 2 6 Ne
+R 4129 3 6 ver 
+R 4133 3 6 seen 
+R 4139 4 10 Will 
+R 4145 3 6 at
+R 4149 4 6 tack
+R 4157 3 6 in’ 
+R 4161 3 7 ’em
+- 4164
+R 4173 2 5 Ra
+R 4177 2 5 ther 
+R 4181 3 8 play 
+R 4185 3 6 ball 
+R 4193 2 5 with 
+R 4197 4 10 Shaq 
+R 4205 3 6 and 
+R 4209 3 6 ’em, 
+R 4221 4 9 flat
+R 4229 3 6 tin’ 
+R 4233 2 5 ’em
+- 4235
+R 4246 3 3 Psyche, 
+R 4262 3 3 kid
+R 4266 2 3 din’
+- 4268
+R 4273 2 3 I 
+R 4277 3 6 thought 
+R 4281 2 5 I 
+R 4285 2 8 took 
+R 4289 2 4 a 
+R 4296 7 9 spill, 
+R 4314 3 7 but 
+R 4318 3 6 I 
+R 4326 4 7 didn
+R 4331 4 7 ’t
+- 4335
+R 4341 6 10 Trust 
+R 4354 2 9 the 
+R 4358 2 9 la
+R 4362 2 9 dy 
+R 4366 2 9 of 
+R 4370 2 9 my 
+R 4374 4 10 life 
+R 4382 5 9 she 
+R 4390 3 10 hit
+R 4394 2 6 tin’
+- 4396
+R 4405 3 6 Hit 
+R 4409 2 6 her 
+R 4413 2 6 with 
+R 4417 2 5 a 
+R 4421 4 9 drop 
+R 4431 5 10 top 
+R 4445 2 7 with 
+R 4449 2 7 the 
+R 4453 3 9 rib
+R 4457 3 7 bon
+- 4460
+R 4470 5 7 Crib 
+R 4478 2 6 for 
+R 4482 2 6 my 
+R 4486 4 9 mom 
+R 4493 2 7 on 
+R 4497 2 7 the 
+R 4501 4 6 out
+R 4509 3 8 skirts 
+R 4513 2 8 of 
+R 4517 3 7 Phil
+R 4522 3 7 ly
+- 4525
+R 4530 7 10 You 
+R 4542 3 9 try
+R 4546 3 9 na 
+R 4550 3 10 flex 
+R 4556 3 9 on 
+R 4562 5 12 me?
+- 4567
+R 4571 4 7 Don’t 
+R 4578 4 5 be 
+R 4586 3 4 sil
+R 4590 3 4 ly
+- 4593
+R 4605 2 3 Get
+R 4609 2 4 tin’ 
+R 4613 2 5 jig
+R 4617 2 5 gy 
+R 4621 2 4 wit’ 
+R 4625 2 2 it
+- 4627
+: 4631 2 5 Na–
+: 4635 4 7 na, 
+: 4642 3 7 na, 
+: 4650 5 7 na, 
+: 4658 2 5 na–
+: 4662 3 7 na–
+: 4669 5 5 na–
+- 4674
+: 4695 2 5 Na–
+: 4699 4 7 na, 
+: 4707 3 7 na, 
+: 4715 5 7 na, 
+: 4723 2 5 na–
+: 4727 3 7 na
+- 4730
+R 4733 2 3 Get
+R 4737 2 4 tin’ 
+R 4741 2 5 jig
+R 4745 2 5 gy 
+R 4749 2 4 wit’ 
+R 4753 2 2 it
+- 4755
+: 4759 2 5 Na–
+: 4763 4 7 na, 
+: 4771 3 7 na, 
+: 4779 5 7 na, 
+: 4787 2 5 na–
+: 4791 3 7 na–
+: 4798 5 5 na–
+- 4803
+: 4824 2 5 Na–
+: 4827 4 7 na, 
+: 4835 3 7 na, 
+: 4843 5 7 na, 
+: 4851 2 5 na–
+: 4855 3 7 na
+- 4858
+R 4862 2 3 Get
+R 4866 2 4 tin’ 
+R 4870 2 5 jig
+R 4874 2 5 gy 
+R 4878 2 4 wit’ 
+R 4882 2 2 it
+- 4884
+: 4888 2 5 Na–
+: 4891 4 7 na, 
+: 4899 3 7 na, 
+: 4907 5 7 na, 
+: 4915 2 5 na–
+: 4919 3 7 na–
+: 4926 5 5 na–
+- 4931
+: 4953 2 5 Na–
+: 4956 4 7 na, 
+: 4964 3 7 na, 
+: 4972 5 7 na, 
+: 4980 2 5 na–
+: 4984 2 7 na
+- 4986
+R 4990 2 3 Get
+R 4994 2 4 tin’ 
+R 4998 2 5 jig
+R 5002 2 5 gy 
+R 5006 2 4 wit’ 
+R 5010 2 2 it
+- 5012
+: 5016 2 5 Na–
+: 5019 4 7 na, 
+: 5027 3 7 na, 
+: 5035 5 7 na, 
+: 5043 2 5 na–
+: 5047 3 7 na–
+: 5054 5 5 na–
+- 5059
+R 5085 4 7 Uh, 
+R 5101 4 7 uh
+- 5105 5306
+- 5306
+* 5335 2 5 Na–
+* 5339 4 7 na, 
+* 5346 3 7 na, 
+* 5354 5 7 na, 
+* 5362 2 5 na–
+* 5366 2 7 na
+- 5368 5560
+- 5560
+: 5589 2 5 Na–
+: 5594 4 7 na, 
+: 5601 3 7 na, 
+: 5609 5 7 na, 
+: 5617 2 5 na–
+: 5621 2 7 na
+- 5623 5624
+- 5624
+: 5653 3 5 Na–
+: 5659 4 7 na, 
+: 5667 3 7 na, 
+: 5675 5 7 na, 
+: 5683 2 5 na–
+: 5687 3 7 na–
+: 5694 5 5 na–
+- 5699
+: 5719 3 5 Na–
+: 5724 4 7 na, 
+: 5732 3 7 na, 
+: 5740 5 7 na, 
+: 5748 2 5 na–
+: 5752 3 7 na
+- 5755
+: 5782 3 5 Na–
+: 5787 4 7 na, 
+: 5795 3 7 na, 
+: 5803 5 7 na, 
+: 5811 2 5 na–
+: 5815 3 7 na–
+: 5822 5 5 na–
+- 5827
+: 5847 3 5 Na–
+: 5852 4 7 na, 
+: 5860 3 7 na, 
+: 5868 5 7 na, 
+: 5876 2 5 na–
+: 5880 3 7 na
+- 5883
+: 5910 3 5 Na–
+: 5916 4 7 na, 
+: 5924 3 7 na, 
+: 5932 5 7 na, 
+: 5940 2 5 na–
+: 5944 3 7 na–
+: 5951 5 5 na–
+- 5956
+: 5975 3 5 Na–
+: 5980 4 7 na, 
+: 5987 3 7 na, 
+: 5995 5 7 na, 
+: 6003 2 5 na–
+: 6007 2 7 na
+- 6009
+: 6038 3 5 Na–
+: 6044 4 7 na, 
+: 6052 3 7 na, 
+: 6060 5 7 na, 
+: 6068 2 5 na–
+: 6072 3 7 na–
+: 6079 5 5 na–
+- 6084
+: 6103 3 5 Na–
+: 6108 4 7 na, 
+: 6116 3 7 na, 
+: 6124 5 7 na, 
+: 6132 2 5 na–
+: 6136 2 7 na
+E
