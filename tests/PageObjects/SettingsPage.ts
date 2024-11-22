@@ -1,5 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
-import { ToolbarComponent } from '../components/ToolbarComponent';
+import { Toolbar } from '../components/Toolbar';
 
 export class SettingsPagePO {
   constructor(
@@ -8,7 +8,7 @@ export class SettingsPagePO {
     private browser: Browser,
   ) {}
 
-  toolbarComponent = new ToolbarComponent(this.page, this.context, this.browser);
+  toolbar = new Toolbar(this.page, this.context, this.browser);
 
   public async openRemoteMicSettings() {
     await this.page.getByTestId('remote-mics-settings').click();

@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
 
-export class ToolbarComponent {
+export class Toolbar {
   constructor(
     private page: Page,
     private context: BrowserContext,

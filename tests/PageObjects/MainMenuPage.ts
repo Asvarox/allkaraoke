@@ -1,5 +1,5 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
-import { ToolbarComponent } from '../components/ToolbarComponent';
+import { Toolbar } from '../components/Toolbar';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class MainMenuPagePO {
@@ -9,7 +9,7 @@ export class MainMenuPagePO {
     private browser: Browser,
   ) {}
 
-  toolbarComponent = new ToolbarComponent(this.page, this.context, this.browser);
+  toolbar = new Toolbar(this.page, this.context, this.browser);
 
   public get singSongButton() {
     return this.page.getByTestId('sing-a-song');

@@ -29,13 +29,13 @@ test('Should properly manage remote mics permission settings', async ({ page, br
   });
 
   await test.step('Open quick connect phone', async () => {
-    await pages.settingsPage.toolbarComponent.quickConnectPhone();
+    await pages.settingsPage.toolbar.quickConnectPhone();
   });
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
 
   await test.step('Close quick connect', async () => {
-    await pages.settingsPage.toolbarComponent.closeQuickConnectPhone();
+    await pages.settingsPage.toolbar.closeQuickConnectPhone();
   });
 
   await test.step('Newly connected phone gets default permission', async () => {
