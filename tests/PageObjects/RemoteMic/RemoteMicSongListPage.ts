@@ -1,4 +1,6 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
+import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
 
 export class RemoteMicSongListPagePO {
   constructor(
@@ -6,6 +8,9 @@ export class RemoteMicSongListPagePO {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  remoteTabBar = new RemoteTabBar(this.page, this.context, this.browser);
+  remoteToolbar = new RemoteToolbar(this.page, this.context, this.browser);
 
   public getSongElement(songID: string) {
     return this.page.getByTestId(songID);
@@ -33,10 +38,6 @@ export class RemoteMicSongListPagePO {
 
   public async expectSongNotToBeVisible(songID: string) {
     await expect(this.getSongElement(songID)).not.toBeVisible();
-  }
-
-  public async goToMicrophonePage() {
-    await this.page.getByTestId('menu-microphone').click();
   }
 
   public get yourListButton() {

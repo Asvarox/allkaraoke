@@ -1,5 +1,7 @@
 import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
+import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
+import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
 
 export class RemoteMicSettingsPage {
   constructor(
@@ -7,6 +9,9 @@ export class RemoteMicSettingsPage {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  remoteTabBar = new RemoteTabBar(this.page, this.context, this.browser);
+  remoteToolbar = new RemoteToolbar(this.page, this.context, this.browser);
 
   public async goToMicSettings() {
     await this.page.getByTestId('microphone-settings').click();
@@ -18,10 +23,6 @@ export class RemoteMicSettingsPage {
 
   public async goToManageGame() {
     await this.manageGameButton.click();
-  }
-
-  public async goToMicMainPage() {
-    await this.page.getByTestId('menu-microphone').click();
   }
 
   public get resetMicInfo() {

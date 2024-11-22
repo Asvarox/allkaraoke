@@ -1,5 +1,7 @@
 import { expect } from '@playwright/experimental-ct-react';
 import { Browser, BrowserContext, Page } from '@playwright/test';
+import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
+import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
 
 export class RemoteMicMainPagePO {
   constructor(
@@ -7,6 +9,9 @@ export class RemoteMicMainPagePO {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  remoteTabBar = new RemoteTabBar(this.page, this.context, this.browser);
+  remoteToolbar = new RemoteToolbar(this.page, this.context, this.browser);
 
   public get playerNameInput() {
     return this.page.getByTestId('player-name-input');
@@ -18,14 +23,6 @@ export class RemoteMicMainPagePO {
 
   public async expectPlayerNameToBe(playerName: string) {
     await expect(this.playerNameInput).toHaveValue(playerName);
-  }
-
-  public async goToSongList() {
-    await this.page.getByTestId('menu-song-list').click();
-  }
-
-  public async goToSettings() {
-    await this.page.getByTestId('menu-settings').click();
   }
 
   public async expectPlayerToBeAssigned(micColor: 'blue' | 'red' | 'green' | 'yellow') {
