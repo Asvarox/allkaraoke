@@ -78,12 +78,12 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
 
   await test.step('Song list is available without connecting', async () => {
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.expectSongToBeVisible(songs.polish2.ID);
   });
 
   await test.step('Song list doesnt contain removed songs after connecting', async () => {
-    await remoteMic.remoteMicSongListPage.goToMicrophonePage();
+    await remoteMic.remoteMicSongListPage.remoteTabBar.goToMicMainPage();
     await connectRemoteMic(remoteMic._page);
 
     await pages.smartphonesConnectionPage.goToMainMenu();
@@ -104,7 +104,7 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
     await pages.songEditMetadataPage.saveAndGoToEditSongsPage();
     await pages.editSongsPage.disagreeToShareAddSongs();
     await pages.editSongsPage.expectSongToBeVisible(convertedSongID);
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.expectSongToBeVisible(convertedSongID);
   });
 });
@@ -119,7 +119,7 @@ test('Adding and removing songs from Favourite list', async ({ page, browser }) 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('Song is visible in Favourite List after adding', async () => {
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.spanish.ID)).toBeVisible();
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.spanish.ID);
     await remoteMic.remoteMicSongListPage.expectFavouriteListToContainNumberOfSongs('1');
@@ -149,7 +149,7 @@ test('Searching song in all and favourite songs list', async ({ page, browser })
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('All songs list - only searched song is visible in results', async () => {
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.expectAllSongsPlaylistToBeSelected();
     await remoteMic.remoteMicSongListPage.searchTheSong(songs.polish3.name);
     await expect(remoteMic.remoteMicSongListPage.getSongElement(songs.polish3.ID)).toBeVisible();
@@ -190,7 +190,7 @@ test('Filtering all and favourites by song language ', async ({ page, browser })
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('Add songs to Favourites - for later', async () => {
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.spanish.ID);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.english3.ID);
     await remoteMic.remoteMicSongListPage.addSongToFavouriteList(songs.polish2.ID);
@@ -257,7 +257,6 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   });
 
   const remoteMic = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
-
   await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
 
   await test.step('On the desktop app - ensure all languages are selected', async () => {
@@ -268,7 +267,7 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   });
 
   await test.step('On the remoteMic app - ensure all languages are selected too', async () => {
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
     await remoteMic.remoteMicSongLanguagesPage.ensureAllSongLanguagesAreDeselected(); // = selected
     await remoteMic.remoteMicSongLanguagesPage.goBackToSongList();
@@ -318,9 +317,8 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   });
 
   await test.step('Set other song languages on remoteMic app', async () => {
-    await remoteMic.remoteMicMainPage.goToSongList();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSongList();
     await remoteMic.remoteMicSongListPage.goToSelectSongLanguage();
-
     await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.spanish);
     await remoteMic.remoteMicSongLanguagesPage.ensureSongLanguageIsSelected(languages.french);
   });

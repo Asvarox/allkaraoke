@@ -10,7 +10,7 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-test('Remove player`s mic by another player - works', async ({ page, browser, context }) => {
+test('Remove player`s mic by another player - works', async ({ page, browser }) => {
   const player1name = 'Player Blue';
   const player2 = {
     name: 'Player Red',
@@ -33,7 +33,7 @@ test('Remove player`s mic by another player - works', async ({ page, browser, co
   });
 
   await test.step('Go to manage players', async () => {
-    await remoteMic1.remoteMicMainPage.goToSettings();
+    await remoteMic1.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic1.remoteMicSettingsPage.goToManageGame();
     await remoteMic1.remoteMicManageGamePage.goToManagePlayer(player2.name);
   });

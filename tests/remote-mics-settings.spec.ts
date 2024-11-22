@@ -29,7 +29,7 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
   });
 
   await test.step('Go to the mic settings - info about the ability to reset the mic is visible', async () => {
-    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToMicSettings();
     await expect(remoteMic.remoteMicSettingsPage.resetMicInfo).toBeVisible();
   });
@@ -41,12 +41,12 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
     await remoteMic.remoteMicMainPage.expectPlayerNameToBe('');
     await remoteMic.remoteMicMainPage.expectGameCodeToBe(gameCodeValue!);
 
-    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await expect(remoteMic.remoteMicSettingsPage.remoteMicID).not.toContainText(remoteMicID!);
   });
 });
 
-test('Should allow changing microphone input lag', async ({ browser, page, context }) => {
+test('Should allow changing microphone input lag', async ({ browser, page }) => {
   const numericInputValue = '25';
 
   await test.step('Go to select Smartphones setup', async () => {
@@ -58,7 +58,7 @@ test('Should allow changing microphone input lag', async ({ browser, page, conte
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('changing microphone lag is visible', async () => {
-    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToMicSettings();
     await remoteMic.remoteMicSettingsPage.increaseMicInputLag();
     await remoteMic.remoteMicSettingsPage.expectMicInputLagToBe(numericInputValue);
@@ -68,13 +68,13 @@ test('Should allow changing microphone input lag', async ({ browser, page, conte
     await remoteMic._page.reload();
     await connectRemoteMic(remoteMic._page);
 
-    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToMicSettings();
     await remoteMic.remoteMicSettingsPage.expectMicInputLagToBe(numericInputValue);
   });
 });
 
-test('Should properly manage mics', async ({ browser, page, context }) => {
+test('Should properly manage mics', async ({ browser, page }) => {
   const player2Name = 'Player 2';
   const blueMic = 'blue';
   const redMic = 'red';
@@ -93,7 +93,7 @@ test('Should properly manage mics', async ({ browser, page, context }) => {
   });
 
   await test.step('Changes other players number', async () => {
-    await remoteMic1.remoteMicMainPage.goToSettings();
+    await remoteMic1.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic1.remoteMicSettingsPage.goToManageGame();
     await remoteMic1.remoteMicManageGamePage.goToManagePlayer(player2Name);
     await remoteMic1.remoteMicManagePlayerPage.unassignManagedPlayer();
@@ -104,18 +104,18 @@ test('Should properly manage mics', async ({ browser, page, context }) => {
     await remoteMic1._page.reload();
     await connectRemoteMic(remoteMic1._page);
 
-    await remoteMic1.remoteMicMainPage.goToSettings();
+    await remoteMic1.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic1.remoteMicSettingsPage.goToManageGame();
     await remoteMic1.remoteMicManageGamePage.goToManagePlayer(player2Name);
     await remoteMic1.remoteMicManagePlayerPage.setMicAssigment(blueMic);
     await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(blueMic);
     await remoteMic1.remoteMicManageGamePage.goBackToMicSettings();
-    await remoteMic1.remoteMicSettingsPage.goToMicMainPage();
+    await remoteMic1.remoteMicSettingsPage.remoteTabBar.goToMicMainPage();
     await remoteMic1.remoteMicMainPage.expectPlayerToBeUnassigned();
   });
 });
 
-test('Should allow changing game input lag', async ({ browser, page, context }) => {
+test('Should allow changing game input lag', async ({ browser, page }) => {
   const numericInputValue = '50';
 
   await test.step('Go to select Smartphones setup', async () => {
@@ -132,7 +132,7 @@ test('Should allow changing game input lag', async ({ browser, page, context }) 
   });
 
   await test.step('changing input lag is visible', async () => {
-    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await remoteMic.remoteMicSettingsPage.goToManageGame();
     await remoteMic.remoteMicManageGamePage.increaseGameInputLag();
     await remoteMic.remoteMicManageGamePage.expectGameInputLagToBe(numericInputValue);
