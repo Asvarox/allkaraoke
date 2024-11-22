@@ -16,27 +16,27 @@ test('Help', async ({ page }) => {
 
   await test.step('Help container is visible by default on the page if it is not turned off', async () => {
     await expect(pages.mainMenuPage.singSongButton).toBeVisible();
-    await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
+    await expect(pages.mainMenuPage.toolbarComponent.helpContainerElement).toBeVisible();
   });
 
   await test.step('After clicking on the container, it is hidden', async () => {
-    await pages.mainMenuPage.helpContainerElement.click();
-    await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
+    await pages.mainMenuPage.toolbarComponent.helpContainerElement.click();
+    await expect(pages.mainMenuPage.toolbarComponent.helpContainerElement).toBeHidden();
   });
 
   await test.step('The setting is remembered after refresh', async () => {
     await page.reload();
     await expect(pages.mainMenuPage.singSongButton).toBeVisible();
-    await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
+    await expect(pages.mainMenuPage.toolbarComponent.helpContainerElement).toBeHidden();
   });
 
   await test.step('The container is visible again after clicking the help-icon', async () => {
-    await pages.mainMenuPage.toggleHelp();
-    await expect(pages.mainMenuPage.helpContainerElement).toBeVisible();
+    await pages.mainMenuPage.toolbarComponent.toggleHelp();
+    await expect(pages.mainMenuPage.toolbarComponent.helpContainerElement).toBeVisible();
   });
 
   await test.step('The container is hidden, when disabled with a shortcut', async () => {
     await page.keyboard.press('Shift+h');
-    await expect(pages.mainMenuPage.helpContainerElement).toBeHidden();
+    await expect(pages.mainMenuPage.toolbarComponent.helpContainerElement).toBeHidden();
   });
 });

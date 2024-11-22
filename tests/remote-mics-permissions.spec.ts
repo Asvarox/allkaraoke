@@ -13,7 +13,7 @@ test.beforeEach(async ({ page, context, browser }) => {
 
 const playerName = 'E2E Test Blue';
 
-test('Should properly manage remote mics permission settings', async ({ page, context, browser }) => {
+test('Should properly manage remote mics permission settings', async ({ page, browser }) => {
   await page.goto('/?e2e-test');
   await pages.landingPage.enterTheGame();
   await pages.inputSelectionPage.skipToMainMenu();
@@ -29,13 +29,13 @@ test('Should properly manage remote mics permission settings', async ({ page, co
   });
 
   await test.step('Open quick connect phone', async () => {
-    await pages.settingsPage.quickConnectPhone();
+    await pages.settingsPage.toolbarComponent.quickConnectPhone();
   });
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, playerName);
 
   await test.step('Close quick connect', async () => {
-    await pages.settingsPage.closeQuickConnectPhone();
+    await pages.settingsPage.toolbarComponent.closeQuickConnectPhone();
   });
 
   await test.step('Newly connected phone gets default permission', async () => {
