@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { ToolbarComponent } from '../components/ToolbarComponent';
 
 export class SettingsPagePO {
   constructor(
@@ -6,6 +7,8 @@ export class SettingsPagePO {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  toolbarComponent = new ToolbarComponent(this.page, this.context, this.browser);
 
   public async openRemoteMicSettings() {
     await this.page.getByTestId('remote-mics-settings').click();
@@ -25,14 +28,6 @@ export class SettingsPagePO {
 
   public async expectDefaultPermissionToBeRead() {
     await expect(this.defaultPermissionElement).toContainText('READ', { ignoreCase: true });
-  }
-
-  public async quickConnectPhone() {
-    await this.page.getByTestId('quick-connect-phone').click();
-  }
-
-  public async closeQuickConnectPhone() {
-    await this.page.getByTestId('quick-connect-close').click();
   }
 
   public get connectedDevicePermissionElement() {

@@ -1,4 +1,5 @@
-import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { Browser, BrowserContext, Page } from '@playwright/test';
+import { ToolbarComponent } from '../components/ToolbarComponent';
 import navigateWithKeyboard from '../steps/navigateWithKeyboard';
 
 export class MainMenuPagePO {
@@ -7,6 +8,8 @@ export class MainMenuPagePO {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  toolbarComponent = new ToolbarComponent(this.page, this.context, this.browser);
 
   public get singSongButton() {
     return this.page.getByTestId('sing-a-song');
@@ -38,29 +41,5 @@ export class MainMenuPagePO {
 
   public async goToManageSongs() {
     await this.manageButton.click();
-  }
-
-  public get helpButton() {
-    return this.page.getByTestId('toggle-help');
-  }
-
-  public async toggleHelp() {
-    await this.helpButton.click();
-  }
-
-  public get helpContainerElement() {
-    return this.page.getByTestId('help-container');
-  }
-
-  public get fullscreenElement() {
-    return this.page.locator('[data-test="toggle-fullscreen"] svg');
-  }
-
-  public async toggleFullscreen() {
-    await this.fullscreenElement.click();
-  }
-
-  public async expectFullscreenToBeOff() {
-    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
   }
 }
