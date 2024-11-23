@@ -571,6 +571,34 @@
     "local": false
   },
   {
+    "id": "5-seconds-of-summer-good-girls",
+    "title": "Good Girls",
+    "artist": "5 Seconds of Summer",
+    "video": "0FfG_5JBVBQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 281.71,
+    "gap": 56738.3213233467,
+    "year": "2014",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-11-23T00:12:21.664Z",
+    "genre": " Pop rock",
+    "videoGap": 57,
+    "realBpm": 141,
+    "volume": 0.79,
+    "author": "Sing-Girl",
+    "tracks": [
+      {
+        "name": "Good Girls",
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "5secondsofsummergoodgirls",
+    "local": false
+  },
+  {
     "id": "5-seconds-of-summer-hey-everybody",
     "title": "Hey Everybody!",
     "artist": "5 Seconds of Summer",
@@ -649,6 +677,33 @@
     "local": false
   },
   {
+    "id": "5-seconds-of-summer-what-i-like-about-you",
+    "title": "What I Like About You",
+    "artist": "5 Seconds of Summer",
+    "video": "jz6coSJoTS0",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 11459.384615384615,
+    "year": "2014",
+    "artistOrigin": "AU",
+    "lastUpdate": "2024-11-23T00:12:21.665Z",
+    "genre": "Pop rock",
+    "realBpm": 160,
+    "volume": 0.8,
+    "author": "Leroidukitch",
+    "tracks": [
+      {
+        "name": "What I Like About You",
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "5secondsofsummerwhatilikeaboutyou",
+    "local": false
+  },
+  {
     "id": "5-seconds-of-summer-youngblood",
     "title": "Youngblood",
     "artist": "5 Seconds of Summer",
@@ -705,13 +760,13 @@
     "artist": "50 Cent",
     "video": "5qm8PH4xAss",
     "language": [
-      "Englisch"
+      "English"
     ],
     "bpm": 359.7,
-    "gap": 42828.88765294772,
+    "gap": 42828.16597164304,
     "year": "2003",
     "artistOrigin": "US",
-    "lastUpdate": "2024-11-21T00:11:59.311Z",
+    "lastUpdate": "2024-11-21T06:57:48.253Z",
     "genre": "Rap",
     "realBpm": 90,
     "previewStart": 122.167,
@@ -814,13 +869,13 @@
     "artist": "A Flock Of Seagulls",
     "video": "iIpfWORQWhU",
     "language": [
-      "Englisch"
+      "English"
     ],
     "bpm": 293.6,
     "gap": 26565.201634877383,
     "year": "1982",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-11-21T00:11:59.067Z",
+    "lastUpdate": "2024-11-21T06:58:11.223Z",
     "genre": "Pop",
     "realBpm": 146,
     "volume": 1,
@@ -5709,6 +5764,33 @@
     ],
     "tracksCount": 1,
     "search": "anittaboysdontcry",
+    "local": false
+  },
+  {
+    "id": "anna-jantar-tyle-slonca-w-calym-miescie",
+    "title": "Tyle słońca w całym mieście",
+    "artist": "Anna Jantar",
+    "video": "wChFEkCqt5s",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 206.72,
+    "gap": 9434.70950102529,
+    "year": "1974",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:23.148Z",
+    "realBpm": 94,
+    "volume": 0.9,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=13113",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "annajantartylesloncawcalymmiescie",
     "local": false
   },
   {
@@ -14486,6 +14568,33 @@
     "local": false
   },
   {
+    "id": "boys-jestes-szalona",
+    "title": "Jesteś szalona",
+    "artist": "Boys",
+    "video": "c2i4h7Q-8sA",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 267.7,
+    "gap": -38.262980948823326,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:22.742Z",
+    "realBpm": 132,
+    "volume": 0.71,
+    "author": "jockel1974",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=19",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=2572",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "boysjestesszalona",
+    "local": false
+  },
+  {
     "id": "boyz-ii-men-end-of-the-road",
     "title": "End Of The Road",
     "artist": "Boyz II Men",
@@ -14756,6 +14865,31 @@
     ],
     "tracksCount": 1,
     "search": "breakingbenjaminthediaryofjane",
+    "local": false
+  },
+  {
+    "id": "breaking-benjamin-what-lies-beneath",
+    "title": "What Lies Beneath",
+    "artist": "Breaking Benjamin",
+    "video": "KuSPuDFHY4s",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.6,
+    "gap": 13814.479495268139,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.379Z",
+    "realBpm": 118,
+    "volume": 0.75,
+    "author": "masterxy",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "breakingbenjaminwhatliesbeneath",
     "local": false
   },
   {
@@ -17628,6 +17762,33 @@
     "local": false
   },
   {
+    "id": "budka-suflera-i-felicjan-andrzejczak-jolka-jolka",
+    "title": "Jolka Jolka",
+    "artist": "Budka Suflera i Felicjan Andrzejczak",
+    "video": "fYKfvvwsoAY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 300,
+    "gap": 5030,
+    "year": "1984",
+    "lastUpdate": "2024-11-23T00:12:22.329Z",
+    "genre": "Rock",
+    "realBpm": 78,
+    "volume": 0.8,
+    "author": "Maly",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=169980",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=24889",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "budkasufleraifelicjanandrzejczakjolkajolka",
+    "local": false
+  },
+  {
     "id": "budka-suflera-piaty-bieg",
     "title": "Piąty Bieg",
     "artist": "Budka Suflera",
@@ -19034,6 +19195,32 @@
     ],
     "tracksCount": 1,
     "search": "cesarfrancoelgransonador",
+    "local": false
+  },
+  {
+    "id": "chaka-khan-through-the-fire",
+    "title": "Through the fire",
+    "artist": "Chaka Khan",
+    "video": "TjWmw-8-OEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 273.2,
+    "gap": 14169.830728173847,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:23.285Z",
+    "genre": "R&B",
+    "realBpm": 131,
+    "volume": 0.78,
+    "author": "asb",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chakakhanthroughthefire",
     "local": false
   },
   {
@@ -21234,6 +21421,87 @@
     ],
     "tracksCount": 1,
     "search": "coldplayyellow",
+    "local": false
+  },
+  {
+    "id": "coma-lipiec",
+    "title": "Lipiec",
+    "artist": "Coma",
+    "video": "ePMavSax1G8",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 260.38,
+    "gap": 16100.662109224979,
+    "year": "2016",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:22.070Z",
+    "realBpm": 130,
+    "volume": 0.8,
+    "author": "grochu217",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189822",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28850",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "comalipiec",
+    "local": false
+  },
+  {
+    "id": "coma-los-cebula-i-krokodyle-lzy",
+    "title": "Los Cebula i Krokodyle Łzy",
+    "artist": "Coma",
+    "video": "mlC0VDfp7PA",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 212.04,
+    "gap": 17259.620826259197,
+    "year": "2011",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:22.072Z",
+    "realBpm": 106,
+    "volume": 0.79,
+    "author": "grochu217",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189822",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28848",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "comaloscebulaikrokodylelzy",
+    "local": false
+  },
+  {
+    "id": "coma-pierwsze-wyjscie-z-mroku",
+    "title": "Pierwsze wyjscie z mroku",
+    "artist": "Coma",
+    "video": "bW_Kgavl248",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 299.8,
+    "gap": 39954.3328885924,
+    "year": "2004",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:21.931Z",
+    "realBpm": 150,
+    "volume": 0.82,
+    "author": "grochu217",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189822",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28861",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "comapierwszewyjsciezmroku",
     "local": false
   },
   {
@@ -24060,6 +24328,33 @@
     "local": false
   },
   {
+    "id": "dawid-podsiadlo-nieznajomy",
+    "title": "Nieznajomy",
+    "artist": "Dawid Podsiadło",
+    "video": "g4UDeQTjMYk",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 398,
+    "gap": 9200.412060301507,
+    "year": "2013",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:22.199Z",
+    "realBpm": 105,
+    "volume": 0.9,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28522",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dawidpodsiadlonieznajomy",
+    "local": false
+  },
+  {
     "id": "dde-rompa-mi",
     "title": "Rompa mi",
     "artist": "D.D.E.",
@@ -25319,6 +25614,31 @@
     ],
     "tracksCount": 1,
     "search": "detroitmetalcitysatsugai",
+    "local": false
+  },
+  {
+    "id": "dexys-midnight-runners-the-emerald-express-come-on-eileen",
+    "title": "Come On Eileen",
+    "artist": "Dexys Midnight Runners & The Emerald Express",
+    "video": "6BODDyZRF6A",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 21520,
+    "year": "1982",
+    "lastUpdate": "2024-11-23T00:12:20.715Z",
+    "genre": "Pop",
+    "realBpm": 107,
+    "volume": 0.78,
+    "author": "Canni",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dexysmidnightrunnerstheemeraldexpresscomeoneileen",
     "local": false
   },
   {
@@ -28751,6 +29071,56 @@
     "local": false
   },
   {
+    "id": "earth-wind-fire-lets-groove",
+    "title": "Let’s Groove",
+    "artist": "Earth, Wind & Fire",
+    "video": "Lrle0x_DHBM",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.2,
+    "gap": 14500.815347721822,
+    "year": "1981",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.390Z",
+    "realBpm": 126,
+    "volume": 0.87,
+    "author": "k1656",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "earthwindfireletsgroove",
+    "local": false
+  },
+  {
+    "id": "earth-wind-fire-september",
+    "title": "September",
+    "artist": "Earth, Wind & Fire",
+    "video": "Gs069dndIYk",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.55,
+    "gap": 18348.12147777082,
+    "year": "1978",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.531Z",
+    "realBpm": 126,
+    "volume": 0.95,
+    "author": "Timtim",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "earthwindfireseptember",
+    "local": false
+  },
+  {
     "id": "echosmith-cool-kids",
     "title": "Cool Kids",
     "artist": "Echosmith",
@@ -30022,6 +30392,33 @@
     "local": false
   },
   {
+    "id": "elektryczne-gitary-kiler",
+    "title": "Kiler",
+    "artist": "Elektryczne Gitary",
+    "video": "OtA2dxJNHV4",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 297.76,
+    "gap": 28492.477162815692,
+    "year": "1997",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:23.146Z",
+    "realBpm": 74,
+    "volume": 1,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=11313",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "elektrycznegitarykiler",
+    "local": false
+  },
+  {
     "id": "elektryczne-gitary-koniec",
     "title": "Koniec",
     "artist": "Elektryczne Gitary",
@@ -30927,6 +31324,32 @@
     ],
     "tracksCount": 1,
     "search": "eminemtherealslimshady",
+    "local": false
+  },
+  {
+    "id": "eminem-we-made-you",
+    "title": "We Made You",
+    "artist": "Eminem",
+    "video": "U-d6SIjTW3Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 373.24,
+    "gap": 1251.2845354195692,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:33.007Z",
+    "genre": "Hip hop, Hip-Hop",
+    "realBpm": 114,
+    "volume": 0.75,
+    "author": "Andre141099",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "eminemwemadeyou",
     "local": false
   },
   {
@@ -32074,6 +32497,33 @@
     "local": false
   },
   {
+    "id": "ewa-farna-cicho",
+    "title": "Cicho",
+    "artist": "Ewa Farna",
+    "video": "IvsqIr0_cCQ",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 210.62,
+    "gap": 530,
+    "year": "2009",
+    "artistOrigin": "CZ",
+    "lastUpdate": "2024-11-23T00:12:23.018Z",
+    "realBpm": 105,
+    "volume": 0.72,
+    "author": "michas17j",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6799",
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ewafarnacicho",
+    "local": false
+  },
+  {
     "id": "ewelina-flinta-zaluje",
     "title": "Zaluje",
     "artist": "Ewelina Flinta",
@@ -32890,6 +33340,32 @@
     ],
     "tracksCount": 1,
     "search": "feelpokaznacociestac",
+    "local": false
+  },
+  {
+    "id": "feet-wodzionka",
+    "title": "Wodzionka",
+    "artist": "FEET",
+    "video": "rDDmy_as3t8",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 211.9,
+    "gap": -43.15243039169417,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:22.456Z",
+    "realBpm": 106,
+    "volume": 0.75,
+    "author": "MasterChristian",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=23317",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "feetwodzionka",
     "local": false
   },
   {
@@ -37066,6 +37542,33 @@
     "local": false
   },
   {
+    "id": "grazyna-lobaszewska-czas-nas-uczy-pogody",
+    "title": "Czas nas uczy pogody",
+    "artist": "Grażyna Łobaszewska",
+    "video": "kbDTSdVv27I",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 373.24,
+    "gap": 8345.284535419569,
+    "year": "1980",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:21.667Z",
+    "realBpm": 116,
+    "volume": 0.72,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29648",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "grazynalobaszewskaczasnasuczypogody",
+    "local": false
+  },
+  {
     "id": "grease-john-travolta-olivia-newton-john-youre-the-one-that-i-want",
     "title": "You're the One that I Want",
     "artist": "Grease (John Travolta & Olivia Newton-John)",
@@ -40345,6 +40848,34 @@
     ],
     "tracksCount": 1,
     "search": "ichichvomselbenstern",
+    "local": false
+  },
+  {
+    "id": "ich-troje-a-wszystko-to-bo-ciebie-kocham",
+    "title": "A wszystko to (bo ciebie kocham)",
+    "artist": "Ich Troje",
+    "video": "0EcOyWc5Hkk",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 120.21,
+    "gap": 2451.7469428500126,
+    "year": "1999",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:21.929Z",
+    "genre": "Pop",
+    "videoGap": -2,
+    "realBpm": 120,
+    "volume": 0.9,
+    "author": "CastorTray & rafallus",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29352",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ichtrojeawszystkotobociebiekocham",
     "local": false
   },
   {
@@ -45835,6 +46366,33 @@
     "local": false
   },
   {
+    "id": "justin-bieber-company",
+    "title": "Company",
+    "artist": "Justin Bieber",
+    "video": "neSv8fjmDB0",
+    "language": [
+      "English"
+    ],
+    "bpm": 379.76,
+    "gap": 51302.534232146616,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2024-11-23T00:12:23.275Z",
+    "genre": "Pop",
+    "realBpm": 95,
+    "volume": 0.78,
+    "author": "JB",
+    "sourceUrl": "https://youtu.be/neSv8fjmDB0?si=_TIW5vOmpFwrVI1T",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "justinbiebercompany",
+    "local": false
+  },
+  {
     "id": "justin-bieber-feat-big-sean-as-long-as-you-love-me",
     "title": "As Long As You Love Me",
     "artist": "Justin Bieber feat. Big Sean",
@@ -49445,6 +50003,32 @@
     ],
     "tracksCount": 1,
     "search": "kizurlaubfursgehirn",
+    "local": false
+  },
+  {
+    "id": "klocuch-beznadzieja-w-chmurny-dzien",
+    "title": "Beznadzieja w chmurny dzień",
+    "artist": "Klocuch",
+    "video": "JCbNaeuQbgY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 397.54,
+    "gap": 2131.2345927453844,
+    "year": "2019",
+    "lastUpdate": "2024-11-23T00:12:21.800Z",
+    "realBpm": 50,
+    "volume": 0.75,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29647",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "klocuchbeznadziejawchmurnydzien",
     "local": false
   },
   {
@@ -60125,6 +60709,32 @@
     "local": false
   },
   {
+    "id": "meat-loaf-paradise-by-the-dashboard-light",
+    "title": "Paradise by the Dashboard Light",
+    "artist": "Meat Loaf",
+    "video": "C11MzbEcHlw",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.38,
+    "gap": 8236.689351481185,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:23.283Z",
+    "genre": "Glam Rock",
+    "realBpm": 173,
+    "volume": 0.96,
+    "author": "gollum",
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "tracksCount": 1,
+    "search": "meatloafparadisebythedashboardlight",
+    "local": false
+  },
+  {
     "id": "meat-loaf-you-took-the-words-right-out-of-my-mouth-hot-summer-night",
     "title": "You Took The Words Right Out Of My Mouth (Hot Summer Night)",
     "artist": "Meat Loaf",
@@ -64727,6 +65337,32 @@
     "local": false
   },
   {
+    "id": "myslovitz-chcialbym-umrzec-z-milosci",
+    "title": "Chciałbym umrzeć z Miłości",
+    "artist": "Myslovitz",
+    "video": "CIxl2iIYadI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 386.03,
+    "gap": 30119.715825194933,
+    "year": "2003",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:22.198Z",
+    "realBpm": 110,
+    "volume": 0.83,
+    "author": "Ikjas",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28527",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "myslovitzchcialbymumrzeczmilosci",
+    "local": false
+  },
+  {
     "id": "myslovitz-dlugo-dzwieku-samotnosci",
     "title": "Długo dzwieku samotnosci",
     "artist": "Myslovitz",
@@ -65387,6 +66023,32 @@
     "local": false
   },
   {
+    "id": "ne-yo-beautiful-monster",
+    "title": "Beautiful Monster",
+    "artist": "Ne-Yo",
+    "video": "2J2dwFVZHsY",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 342.96875,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.387Z",
+    "genre": "R&B",
+    "realBpm": 128,
+    "volume": 0.81,
+    "author": "michas17j",
+    "tracks": [
+      {
+        "start": -5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "neyobeautifulmonster",
+    "local": false
+  },
+  {
     "id": "ne-yo-because-of-you",
     "title": "Because Of You",
     "artist": "Ne-Yo",
@@ -65907,6 +66569,31 @@
     ],
     "tracksCount": 1,
     "search": "neongenesisevangelionkommsussertod",
+    "local": false
+  },
+  {
+    "id": "neon-trees-everybody-talks",
+    "title": "Everybody Talks",
+    "artist": "Neon Trees",
+    "video": "X5G9tIe84lE",
+    "language": [
+      "English"
+    ],
+    "bpm": 309.7,
+    "gap": 32972.886664514044,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.533Z",
+    "realBpm": 155,
+    "volume": 0.85,
+    "author": "Pantero",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "neontreeseverybodytalks",
     "local": false
   },
   {
@@ -67904,6 +68591,34 @@
     ],
     "tracksCount": 1,
     "search": "nocnykochanekkonnabialymrycerzu",
+    "local": false
+  },
+  {
+    "id": "nocny-kochanek-tribjut",
+    "title": "Tribjut",
+    "artist": "Nocny Kochanek",
+    "video": "aW_MQqgTqX0",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 311.2,
+    "gap": 7151.7892030848325,
+    "year": "2002",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:23.273Z",
+    "genre": "Rock",
+    "realBpm": 102,
+    "volume": 0.85,
+    "author": "Paisano87",
+    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paisano87",
+    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Tenacious%20D&cancion=Tribute",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "nocnykochanektribjut",
     "local": false
   },
   {
@@ -77485,6 +78200,32 @@
     "local": false
   },
   {
+    "id": "rise-against-everchanging-acoustic",
+    "title": "Everchanging (Acoustic)",
+    "artist": "Rise Against",
+    "video": "s_Zx0G8eNAs",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 352.63157894736844,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.382Z",
+    "genre": "Rock",
+    "realBpm": 120,
+    "volume": 0.75,
+    "author": "siGGisiGGsen, jackroke",
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "tracksCount": 1,
+    "search": "riseagainsteverchangingacoustic",
+    "local": false
+  },
+  {
     "id": "rise-against-prayer-of-the-refugee",
     "title": "Prayer of the refugee",
     "artist": "Rise Against",
@@ -79567,6 +80308,32 @@
     "local": false
   },
   {
+    "id": "savatage-gutter-ballet",
+    "title": "Gutter Ballet",
+    "artist": "Savatage",
+    "video": "Ubmft9_LeE8",
+    "language": [
+      "English"
+    ],
+    "bpm": 201.8,
+    "gap": 107834.65346534654,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:32.874Z",
+    "genre": "Heavy Metal",
+    "realBpm": 101,
+    "volume": 0.97,
+    "author": "Leo 21",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "savatagegutterballet",
+    "local": false
+  },
+  {
     "id": "scars-on-broadway-funny",
     "title": "Funny",
     "artist": "Scars On Broadway",
@@ -80274,6 +81041,32 @@
     ],
     "tracksCount": 1,
     "search": "selenagomezsinglesoon",
+    "local": false
+  },
+  {
+    "id": "selena-gomez-the-scene-a-year-without-rain",
+    "title": "A Year Without Rain",
+    "artist": "Selena Gomez & The Scene",
+    "video": "M8uPvX2te0I",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.24,
+    "gap": 9310.999000999002,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-23T00:12:21.377Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 0.73,
+    "author": "Victorin",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "selenagomezthesceneayearwithoutrain",
     "local": false
   },
   {
@@ -82968,6 +83761,32 @@
     "local": false
   },
   {
+    "id": "skaldowie-feat-stanislaw-wenglorz-nie-widze-ciebie-w-swych-marzeniach",
+    "title": "Nie widzę ciebie w swych marzeniach",
+    "artist": "Skaldowie feat. Stanisław Wenglorz",
+    "video": "ueA7EerdK00",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 386.72,
+    "gap": 68661.51841125362,
+    "year": "1977",
+    "lastUpdate": "2024-11-23T00:12:22.074Z",
+    "realBpm": 143,
+    "volume": 0.8,
+    "author": "Ikjas",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=160643",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28599",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skaldowiefeatstanislawwenglorzniewidzeciebiewswychmarzeniach",
+    "local": false
+  },
+  {
     "id": "skid-row-18-life",
     "title": "18 & Life",
     "artist": "Skid Row",
@@ -85265,6 +86084,35 @@
     ],
     "tracksCount": 1,
     "search": "swedishhousemafiatheweekndmothtoaflame",
+    "local": false
+  },
+  {
+    "id": "swiat-wedlug-kiepskich-piosenka-o-pazdziochu",
+    "title": "Piosenka o Paździochu",
+    "artist": "Świat według Kiepskich",
+    "video": "HGjVRzef8oo",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 300,
+    "gap": 7850,
+    "year": "2000",
+    "lastUpdate": "2024-11-23T00:12:22.611Z",
+    "videoGap": 8,
+    "realBpm": 100,
+    "previewStart": 11,
+    "previewEnd": 26,
+    "volume": 1,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=9613",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "swiatwedlugkiepskichpiosenkaopazdziochu",
     "local": false
   },
   {
@@ -99439,6 +100287,33 @@
     ],
     "tracksCount": 1,
     "search": "yuiagain",
+    "local": false
+  },
+  {
+    "id": "zakopower-boso",
+    "title": "Boso",
+    "artist": "Zakopower",
+    "video": "csSefjNCXn0",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 259.94,
+    "gap": 16029.004385627453,
+    "year": "2011",
+    "artistOrigin": "PL",
+    "lastUpdate": "2024-11-23T00:12:22.894Z",
+    "realBpm": 130,
+    "volume": 0.75,
+    "author": "rafallus",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=28101",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12389",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "zakopowerboso",
     "local": false
   },
   {
