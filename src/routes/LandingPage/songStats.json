@@ -8,7 +8,9 @@
     "3OH!3 feat. Ke$ha",
     "4 Non Blondes",
     "5 Seconds of Summer",
+    "50 Cent",
     "A Day to Remember",
+    "A Flock Of Seagulls",
     "A Great Big World",
     "a-ha",
     "A Perfect Circle",
@@ -187,6 +189,7 @@
     "Cat Stevens",
     "Cee Lo Green",
     "Céline Dion",
+    "Chaka Khan",
     "Chappell Roan",
     "Charli XCX",
     "Charlie Puth",
@@ -313,6 +316,7 @@
     "Duncan Laurence",
     "Duran Duran",
     "Dusty Springfield",
+    "Earth, Wind & Fire",
     "Echosmith",
     "Ed Sheeran and Elton John",
     "Ed Sheeran and Justin Bieber",
@@ -726,6 +730,7 @@
     "Nemo",
     "Nena",
     "Neon Genesis Evangelion",
+    "Neon Trees",
     "Netflix",
     "Netta",
     "New Kids On The Block",
@@ -874,6 +879,7 @@
     "Sara Evans",
     "Sarah McLachlan",
     "Savage Garden",
+    "Savatage",
     "Scars On Broadway",
     "Scissor Sisters",
     "Scorpions",
@@ -1153,7 +1159,6 @@
     "English",
     "Japanese",
     "Spanish",
-    "Englisch",
     "Estonian",
     "German",
     "Swedish",
@@ -1179,5 +1184,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 3743
+  "songs": 3776
 }

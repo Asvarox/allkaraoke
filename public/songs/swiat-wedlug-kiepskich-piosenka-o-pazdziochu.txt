@@ -1,0 +1,93 @@
+#ARTIST:Świat według Kiepskich
+#TITLE:Piosenka o Paździochu
+#CREATOR:rafallus
+#BPM:300
+#YEAR:2000
+#PREVIEWSTART:11
+#VIDEO:v=HGjVRzef8oo
+#VIDEOGAP:8
+#LANGUAGE:Polish
+#GAP:7850
+#ALLKARAOKE_ID:swiat-wedlug-kiepskich-piosenka-o-pazdziochu
+#ALLKARAOKE_LASTUPDATE:2024-11-23T00:12:22.611Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=28101
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=9613
+#ALLKARAOKE_PREVIEWEND:26
+#ALLKARAOKE_VOLUME:1
+#MP3:Świat według Kiepskich - Piosenka o Paździochu.mp3
+: 20 2 7 Sie
+: 24 2 7 kie
+: 28 3 7 ra, 
+: 34 2 12 mo
+: 38 2 11 ty
+: 42 3 9 ka, 
+: 49 3 7 ba
+: 55 3 7 ba 
+: 61 3 4 go
+: 67 4 7 ła,
+- 71
+: 74 3 5 Ma
+: 80 3 5 rian 
+: 86 3 2 Paż
+: 92 3 5 dzioch 
+: 98 3 9 to 
+: 104 3 7 pier
+: 110 3 4 do
+: 114 3 7 ła
+- 117
+: 123 2 7 Sie
+: 127 2 7 kie
+: 131 3 7 ra, 
+: 136 2 12 mo
+: 139 2 11 ty
+: 142 3 9 ka, 
+: 150 3 9 bum 
+: 156 3 9 cyk 
+: 163 3 14 cyk,
+- 166
+: 176 3 13 Ma
+: 183 3 13 rian 
+: 190 3 11 Paż
+: 197 3 13 dzioch 
+* 203 3 14 sta
+* 210 3 14 ry 
+* 216 3 14 pryk!
+- 219
+: 232 7 9 Sie
+: 241 2 9 kie
+: 246 3 9 ra, 
+: 258 3 14 mo
+: 262 2 13 ty
+: 266 3 11 ka, 
+: 276 4 9 smęt
+: 283 4 9 na 
+: 290 4 6 baj
+: 298 4 9 ka,
+- 302
+: 316 3 9 U 
+: 323 3 9 Paż
+: 330 3 4 dzio
+: 337 3 9 cha 
+: 344 3 7 mięt
+: 351 3 9 ka 
+: 358 3 4 faj
+: 365 3 7 ka
+- 368
+: 380 2 9 Sie
+: 384 2 9 kie
+: 388 3 9 ra, 
+: 397 2 14 mo
+: 400 2 13 ty
+: 403 3 11 ka, 
+: 414 3 9 mał
+: 419 3 9 pi 
+: 425 3 14 wuj,
+- 428
+: 436 3 13 Ma
+: 443 3 13 rian 
+: 450 3 13 Paź
+: 456 3 13 dzioch 
+* 462 3 14 to 
+* 467 3 14 jest...
+E
