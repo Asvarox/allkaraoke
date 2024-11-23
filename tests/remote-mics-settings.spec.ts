@@ -9,16 +9,16 @@ test.beforeEach(async ({ page, context, browser }) => {
   pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
-});
 
-test('Should properly reset data settings', async ({ browser, page, context }) => {
-  const playerName = 'E2E Test Blue';
-
-  await test.step('Go to select smartphones setup', async () => {
+  await test.step('Enter the game and go to select Smartphones setup', async () => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await pages.inputSelectionPage.selectSmartphones();
   });
+});
+
+test('Should properly reset data settings', async ({ browser, page, context }) => {
+  const playerName = 'E2E Test Blue';
 
   const remoteMic = await openRemoteMic(page, context, browser);
   const gameCodeValue = await remoteMic.remoteMicMainPage.gameCodeInput.getAttribute('value');
@@ -49,12 +49,6 @@ test('Should properly reset data settings', async ({ browser, page, context }) =
 test('Should allow changing microphone input lag', async ({ browser, page }) => {
   const numericInputValue = '25';
 
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('changing microphone lag is visible', async () => {
@@ -78,12 +72,6 @@ test('Should properly manage mics', async ({ browser, page }) => {
   const player2Name = 'Player 2';
   const blueMic = 'blue';
   const redMic = 'red';
-
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
 
   const remoteMic1 = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
   const remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2Name);
@@ -117,12 +105,6 @@ test('Should properly manage mics', async ({ browser, page }) => {
 
 test('Should allow changing game input lag', async ({ browser, page }) => {
   const numericInputValue = '50';
-
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
 
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 

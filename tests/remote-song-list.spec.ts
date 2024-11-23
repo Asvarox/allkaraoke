@@ -15,6 +15,12 @@ test.beforeEach(async ({ page, context, browser }) => {
   pages = initialise(page, context, browser);
   await initTestMode({ page, context });
   await mockSongs({ page, context });
+
+  await test.step('Enter the game and go to select Smartphones setup', async () => {
+    await page.goto('/?e2e-test');
+    await pages.landingPage.enterTheGame();
+    await pages.inputSelectionPage.selectSmartphones();
+  });
 });
 
 // Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
@@ -68,12 +74,6 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
   test.fixme(browserName === 'firefox', 'Test fails super often on FF');
   test.slow();
 
-  await test.step('Go to select smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openRemoteMic(page, context, browser);
   await remoteMic.remoteMicMainPage.enterPlayerName(P1_Name);
 
@@ -110,12 +110,6 @@ test('Remote mic song list', async ({ page, context, browser, browserName }) => 
 });
 
 test('Adding and removing songs from Favourite list', async ({ page, browser }) => {
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('Song is visible in Favourite List after adding', async () => {
@@ -140,12 +134,6 @@ test('Adding and removing songs from Favourite list', async ({ page, browser }) 
 });
 
 test('Searching song in all and favourite songs list', async ({ page, browser }) => {
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('All songs list - only searched song is visible in results', async () => {
@@ -181,12 +169,6 @@ test('Searching song in all and favourite songs list', async ({ page, browser })
 });
 
 test('Filtering all and favourites by song language ', async ({ page, browser }) => {
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('Add songs to Favourites - for later', async () => {
@@ -250,12 +232,6 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
     name: 'Player 1 - Ren',
   } as const;
 
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
   await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
 
@@ -293,12 +269,6 @@ test('Selecting a song using the `select` button on the remoteMic, when selected
   page,
   browser,
 }) => {
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.inputSelectionPage.selectSmartphones();
-  });
-
   const remoteMic = await openAndConnectRemoteMicDirectly(page, browser, 'Player 1');
 
   await test.step('Set song languages on desktop app', async () => {
