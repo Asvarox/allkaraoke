@@ -14195,6 +14195,33 @@
     "local": false
   },
   {
+    "id": "bon-jovi-bed-of-roses",
+    "title": "Bed of Roses",
+    "artist": "Bon Jovi",
+    "video": "NvR60Wg9R7Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 331.38,
+    "gap": 38500.06512301013,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-25T00:12:18.236Z",
+    "genre": "Rock",
+    "videoGap": 8,
+    "realBpm": 165,
+    "volume": 0.81,
+    "author": "fredbloggs73",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "bonjovibedofroses",
+    "local": false
+  },
+  {
     "id": "bon-jovi-have-a-nice-day",
     "title": "Have a nice day",
     "artist": "Bon Jovi",
@@ -19511,6 +19538,33 @@
     "local": false
   },
   {
+    "id": "chayanne-cuidarte-el-alma",
+    "title": "Cuidarte el alma",
+    "artist": "Chayanne",
+    "video": "FEkVpL_6yKo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 313.76,
+    "gap": 20141.04793472718,
+    "year": "2003",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-11-25T00:12:18.237Z",
+    "genre": "POP",
+    "videoGap": 2,
+    "realBpm": 140,
+    "volume": 0.74,
+    "author": "Lcquiel",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chayannecuidarteelalma",
+    "local": false
+  },
+  {
     "id": "chayanne-torero",
     "title": "Torero",
     "artist": "Chayanne",
@@ -19533,6 +19587,31 @@
     ],
     "tracksCount": 1,
     "search": "chayannetorero",
+    "local": false
+  },
+  {
+    "id": "chayanne-un-siglo-sin-ti",
+    "title": "Un siglo sin ti",
+    "artist": "Chayanne",
+    "video": "KYZlT2iYRh8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 260,
+    "gap": 24061.23076923077,
+    "year": "2003",
+    "artistOrigin": "PR",
+    "lastUpdate": "2024-11-25T00:12:18.239Z",
+    "realBpm": 134,
+    "volume": 0.84,
+    "author": "DaVIch0",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "chayanneunsiglosinti",
     "local": false
   },
   {
@@ -26879,6 +26958,78 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-2-all-for-one",
+    "title": "All For One",
+    "artist": "Disney’s High School Musical 2",
+    "video": "edasiU1SZPk",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.1,
+    "gap": 24790.333222259247,
+    "year": "2007",
+    "lastUpdate": "2024-11-25T00:12:17.283Z",
+    "realBpm": 150,
+    "volume": 0.98,
+    "author": "bowarrior",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical2allforone",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-2-i-dont-dance",
+    "title": "I Don’t Dance",
+    "artist": "Disney’s High School Musical 2",
+    "video": "sBAN0S3rW_I",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 4350,
+    "year": "2007",
+    "lastUpdate": "2024-11-25T00:12:15.849Z",
+    "realBpm": 104,
+    "volume": 0.98,
+    "author": "DeinAlptraum",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical2idontdance",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-2-what-time-is-it",
+    "title": "What Time Is It?",
+    "artist": "Disney’s High School Musical 2",
+    "video": "3hOP7qPDyI4",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 1590,
+    "year": "2007",
+    "lastUpdate": "2024-11-25T00:12:16.931Z",
+    "realBpm": 116,
+    "volume": 0.98,
+    "author": "bowarrior",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical2whattimeisit",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-3-high-school-musical",
     "title": "High School Musical",
     "artist": "Disney’s High School Musical 3",
@@ -26900,6 +27051,102 @@
     ],
     "tracksCount": 1,
     "search": "disneyshighschoolmusical3highschoolmusical",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-3-i-want-it-all",
+    "title": "I Want It All",
+    "artist": "Disney’s High School Musical 3",
+    "video": "8uWtOPmpsW0",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 7250,
+    "year": "2008",
+    "lastUpdate": "2024-11-25T00:12:16.754Z",
+    "realBpm": 143,
+    "volume": 0.99,
+    "author": "bowarrior",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical3iwantitall",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-3-now-or-never",
+    "title": "Now Or Never",
+    "artist": "Disney’s High School Musical 3",
+    "video": "Q_67YAf1DNQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.55,
+    "gap": 45861.82997837298,
+    "year": "2008",
+    "lastUpdate": "2024-11-25T00:12:16.552Z",
+    "realBpm": 115,
+    "volume": 0.99,
+    "author": "ZackAndres",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical3nowornever",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-3-the-boys-are-back",
+    "title": "The Boys Are Back",
+    "artist": "Disney’s High School Musical 3",
+    "video": "fZ-trvAlxds",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.7,
+    "gap": 2942.6447073872723,
+    "year": "2008",
+    "lastUpdate": "2024-11-25T00:12:17.456Z",
+    "realBpm": 115,
+    "volume": 0.99,
+    "author": "bowarrior",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical3theboysareback",
+    "local": false
+  },
+  {
+    "id": "disneys-high-school-musical-3-walk-away",
+    "title": "Walk Away",
+    "artist": "Disney’s High School Musical 3",
+    "video": "IEQ8FrJ17kk",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 30,
+    "year": "2008",
+    "lastUpdate": "2024-11-25T00:12:17.105Z",
+    "realBpm": 98,
+    "volume": 0.99,
+    "author": "bowarrior",
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical3walkaway",
     "local": false
   },
   {
@@ -32606,6 +32853,32 @@
     "local": false
   },
   {
+    "id": "fabiana-cantilo-mi-enfermedad",
+    "title": "Mi enfermedad",
+    "artist": "Fabiana Cantilo",
+    "video": "8z7CH3KmY_k",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 276.22,
+    "gap": 18602.51828252842,
+    "year": "1991",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-11-25T00:12:19.216Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "Canchu2010",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fabianacantilomienfermedad",
+    "local": false
+  },
+  {
     "id": "fabio-jr-alma-gemea",
     "title": "Alma Gêmea",
     "artist": "Fábio Jr.",
@@ -33755,6 +34028,32 @@
     ],
     "tracksCount": 1,
     "search": "finneldorfkinder",
+    "local": false
+  },
+  {
+    "id": "fito-paez-mariposa-technicolor",
+    "title": "Mariposa Technicolor",
+    "artist": "Fito Paez",
+    "video": "SJMw8EzKqsI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 583.9998637333651,
+    "gap": 18308.2874375,
+    "year": "1994",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-11-25T00:12:19.020Z",
+    "genre": "Rock Latino",
+    "realBpm": 145,
+    "volume": 0.91,
+    "author": "Russox",
+    "tracks": [
+      {
+        "start": 39
+      }
+    ],
+    "tracksCount": 1,
+    "search": "fitopaezmariposatechnicolor",
     "local": false
   },
   {
@@ -39599,6 +39898,31 @@
     ],
     "tracksCount": 1,
     "search": "herculesnohablaredemiamor",
+    "local": false
+  },
+  {
+    "id": "hercules-tan-cierto-como-tu",
+    "title": "Tan cierto como tú",
+    "artist": "Hércules",
+    "video": "p7QITwBY-Tw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 316.34,
+    "gap": 8091.235948662831,
+    "year": "1997",
+    "lastUpdate": "2024-11-25T00:12:18.031Z",
+    "genre": "Other",
+    "realBpm": 158,
+    "volume": 0.97,
+    "author": "Tuquinho",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "herculestanciertocomotu",
     "local": false
   },
   {
@@ -45566,6 +45890,32 @@
     ],
     "tracksCount": 1,
     "search": "journeyopenarms",
+    "local": false
+  },
+  {
+    "id": "jovenes-pordioseros-descontrolado",
+    "title": "Descontrolado",
+    "artist": "Jóvenes Pordioseros",
+    "video": "oE_-bVk8Vkc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 280.96,
+    "gap": 3.2813211845102046,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-11-25T00:12:18.830Z",
+    "genre": "Rock",
+    "realBpm": 140,
+    "volume": 0.75,
+    "author": "Tuquinho",
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jovenespordioserosdescontrolado",
     "local": false
   },
   {
@@ -55287,6 +55637,32 @@
     ],
     "tracksCount": 1,
     "search": "loreentattoo",
+    "local": false
+  },
+  {
+    "id": "los-abuelos-de-la-nada-lunes-por-la-madrugada",
+    "title": "Lunes por la madrugada",
+    "artist": "Los abuelos de la nada",
+    "video": "D_LXcATkK74",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 267.33,
+    "gap": 40346.01234429357,
+    "year": "1985",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-11-25T00:12:18.439Z",
+    "genre": "Rock",
+    "realBpm": 139,
+    "volume": 1,
+    "author": "Beto Spala",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "losabuelosdelanadalunesporlamadrugada",
     "local": false
   },
   {
@@ -71677,6 +72053,31 @@
     "local": false
   },
   {
+    "id": "paulina-rubio-ni-una-sola-palabra",
+    "title": "Ni una sola palabra",
+    "artist": "Paulina Rubio",
+    "video": "Kkdhtb9DVWQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 260,
+    "gap": 3692.230769230769,
+    "year": "2006",
+    "artistOrigin": "MX",
+    "lastUpdate": "2024-11-25T00:12:17.834Z",
+    "realBpm": 130,
+    "volume": 0.95,
+    "author": "Tuquinho",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "paulinarubioniunasolapalabra",
+    "local": false
+  },
+  {
     "id": "paulina-rubio-y-yo-sigo-aqui",
     "title": "Y yo sigo aquí",
     "artist": "Paulina Rubio",
@@ -76999,6 +77400,31 @@
     "local": false
   },
   {
+    "id": "ricardo-murguia-cambios-extranos",
+    "title": "Cambios Extraños",
+    "artist": "Ricardo Murguía",
+    "video": "PFze_Q_sDpg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 270.68,
+    "gap": 12485.51219151766,
+    "year": "1995",
+    "lastUpdate": "2024-11-25T00:12:17.837Z",
+    "videoGap": 11,
+    "realBpm": 135,
+    "volume": 0.93,
+    "author": "nonplusultra18",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "ricardomurguiacambiosextranos",
+    "local": false
+  },
+  {
     "id": "ricardo-silva-impacto-rojo",
     "title": "Impacto Rojo",
     "artist": "Ricardo Silva",
@@ -78878,6 +79304,31 @@
     ],
     "tracksCount": 1,
     "search": "rosalopezeuropeslivingacelebration",
+    "local": false
+  },
+  {
+    "id": "rosa-walton-hallie-coggins-i-really-want-to-stay-at-your-house",
+    "title": "I Really Want To Stay At Your House",
+    "artist": "Rosa Walton & Hallie Coggins",
+    "video": "q74fX9CnqtQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.49,
+    "gap": 297.9959919839679,
+    "year": "2020",
+    "lastUpdate": "2024-11-25T00:12:17.631Z",
+    "realBpm": 125,
+    "volume": 0.77,
+    "author": "Rosa Walton and Hallie Coggins",
+    "sourceUrl": "https://www.youtube.com/watch?v=KvMY1uzSC1E",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "rosawaltonhalliecogginsireallywanttostayatyourhouse",
     "local": false
   },
   {
@@ -86034,6 +86485,32 @@
     "local": false
   },
   {
+    "id": "survivor-burning-heart",
+    "title": "Burning Heart",
+    "artist": "Survivor",
+    "video": "Kc71KZG87X4",
+    "language": [
+      "English"
+    ],
+    "bpm": 195.04,
+    "gap": 24801.20508613618,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-25T00:12:17.835Z",
+    "genre": "Rock",
+    "realBpm": 98,
+    "volume": 0.77,
+    "author": "is-por *subkei",
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "tracksCount": 1,
+    "search": "survivorburningheart",
+    "local": false
+  },
+  {
     "id": "survivor-eye-of-the-tiger",
     "title": "Eye Of The Tiger",
     "artist": "Survivor",
@@ -87566,6 +88043,30 @@
     ],
     "tracksCount": 1,
     "search": "tarzanboytarzan",
+    "local": false
+  },
+  {
+    "id": "tarzan-en-mi-corazon-viviras",
+    "title": "En mi corazón vivirás",
+    "artist": "Tarzán",
+    "video": "xxJeIxsOl-Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 386.79,
+    "gap": 9624.700922981463,
+    "year": "1999",
+    "lastUpdate": "2024-11-25T00:12:18.240Z",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Pantero & chelste",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tarzanenmicorazonviviras",
     "local": false
   },
   {
@@ -95750,6 +96251,32 @@
     "local": false
   },
   {
+    "id": "turf-pasos-al-costado",
+    "title": "Pasos al costado",
+    "artist": "Turf",
+    "video": "TJkmo1PzfJg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 252.14,
+    "gap": 18328.657095264534,
+    "year": "2004",
+    "artistOrigin": "AR",
+    "lastUpdate": "2024-11-25T00:12:18.632Z",
+    "genre": "Rock",
+    "realBpm": 126,
+    "volume": 0.94,
+    "author": "Beto Spala",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "turfpasosalcostado",
+    "local": false
+  },
+  {
     "id": "tvxq-mirotic",
     "title": "Mirotic",
     "artist": "TVXQ!",
@@ -97975,6 +98502,32 @@
     ],
     "tracksCount": 1,
     "search": "volbeatguitargangsterscadillacblood",
+    "local": false
+  },
+  {
+    "id": "volbeat-i-only-wanna-be-with-you",
+    "title": "I Only Wanna Be With You",
+    "artist": "Volbeat",
+    "video": "kWHPPMcHoLk",
+    "language": [
+      "English"
+    ],
+    "bpm": 274,
+    "gap": 37054.598540145984,
+    "year": "2005",
+    "artistOrigin": "DK",
+    "lastUpdate": "2024-11-25T00:12:17.630Z",
+    "genre": "Metal",
+    "realBpm": 138,
+    "volume": 0.77,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "volbeationlywannabewithyou",
     "local": false
   },
   {
