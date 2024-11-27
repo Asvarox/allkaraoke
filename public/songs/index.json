@@ -24956,6 +24956,59 @@
     "local": false
   },
   {
+    "id": "deftones-kimdracula",
+    "title": "Kimdracula",
+    "artist": "Deftones",
+    "video": "1rXJbd3I2W4",
+    "language": [
+      "English"
+    ],
+    "bpm": 307.9,
+    "gap": 28026.940565118544,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-27T00:11:56.821Z",
+    "genre": "Alternative Metal",
+    "videoGap": 14,
+    "realBpm": 154,
+    "volume": 1,
+    "author": "boohjaa",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftoneskimdracula",
+    "local": false
+  },
+  {
+    "id": "deftones-passenger",
+    "title": "Passenger",
+    "artist": "Deftones",
+    "video": "IjainiB8mk4",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 63770,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-27T00:11:56.820Z",
+    "genre": "Alternative Metal",
+    "realBpm": 118,
+    "volume": 0.73,
+    "author": "boohjaa",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonespassenger",
+    "local": false
+  },
+  {
     "id": "deichkind-remmidemmi-yippie-yippie-yeah",
     "title": "Remmidemmi (Yippie Yippie Yeah)",
     "artist": "Deichkind",
@@ -39102,6 +39155,56 @@
     "local": false
   },
   {
+    "id": "hairspray-movie-nicest-kids-in-town",
+    "title": "Nicest Kids in Town",
+    "artist": "Hairspray (Movie)",
+    "video": "0rDowvYSsxg",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 16800,
+    "year": "2007",
+    "lastUpdate": "2024-11-27T00:11:56.571Z",
+    "genre": "Soundtrack",
+    "realBpm": 170,
+    "volume": 0.74,
+    "author": "REL",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hairspraymovienicestkidsintown",
+    "local": false
+  },
+  {
+    "id": "hairspray-movie-run-and-tell-that",
+    "title": "Run And Tell That",
+    "artist": "Hairspray (Movie)",
+    "video": "H0Dxsmk-EZ8",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 13050,
+    "year": "2007",
+    "lastUpdate": "2024-11-27T00:11:56.448Z",
+    "genre": "Soundtrack",
+    "realBpm": 150,
+    "volume": 0.7,
+    "author": "REL",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "hairspraymovierunandtellthat",
+    "local": false
+  },
+  {
     "id": "hamilton-alexander-hamilton",
     "title": "Alexander Hamilton",
     "artist": "Hamilton",
@@ -42814,6 +42917,32 @@
     "local": false
   },
   {
+    "id": "james-bay-let-it-go",
+    "title": "Let It Go",
+    "artist": "James Bay",
+    "video": "GsPq9mzFNGY",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 19800,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-11-27T00:11:56.686Z",
+    "genre": "Ballad",
+    "realBpm": 147,
+    "volume": 0.69,
+    "author": "Relisch",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "jamesbayletitgo",
+    "local": false
+  },
+  {
     "id": "james-blunt-bonfire-heart",
     "title": "Bonfire Heart",
     "artist": "James Blunt",
@@ -45787,6 +45916,31 @@
     ],
     "tracksCount": 1,
     "search": "joshgrobanyouraisemeup",
+    "local": false
+  },
+  {
+    "id": "josh-turner-your-man",
+    "title": "Your Man",
+    "artist": "Josh Turner",
+    "video": "nADTbWQof7Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.48,
+    "gap": 19051.356722774286,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-27T00:11:55.804Z",
+    "realBpm": 101,
+    "volume": 0.76,
+    "author": "haistshomie666",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "joshturneryourman",
     "local": false
   },
   {
@@ -84289,6 +84443,32 @@
     "local": false
   },
   {
+    "id": "skillet-forgiven",
+    "title": "Forgiven",
+    "artist": "Skillet",
+    "video": "PTxVGViilpY",
+    "language": [
+      "English"
+    ],
+    "bpm": 308,
+    "gap": 18117.272727272728,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-27T00:11:56.819Z",
+    "genre": "Christian Rock",
+    "realBpm": 154,
+    "volume": 0.71,
+    "author": "slim_shadyy",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skilletforgiven",
+    "local": false
+  },
+  {
     "id": "skillet-hero",
     "title": "Hero",
     "artist": "Skillet",
@@ -84338,6 +84518,58 @@
     ],
     "tracksCount": 1,
     "search": "skilletmonster",
+    "local": false
+  },
+  {
+    "id": "skillet-never-surrender",
+    "title": "Never surrender",
+    "artist": "Skillet",
+    "video": "-IooCcx4c9U",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 23161.48148148148,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-27T00:11:56.815Z",
+    "videoGap": 9,
+    "realBpm": 162,
+    "volume": 0.73,
+    "author": "Currymalker",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skilletneversurrender",
+    "local": false
+  },
+  {
+    "id": "skillet-yours-to-hold",
+    "title": "Yours To Hold",
+    "artist": "Skillet",
+    "video": "_70iHzNRVxc",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": -50,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-11-27T00:11:56.817Z",
+    "genre": "Hard Rock",
+    "realBpm": 152,
+    "volume": 0.71,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skilletyourstohold",
     "local": false
   },
   {

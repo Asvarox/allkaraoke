@@ -262,6 +262,7 @@
     "Dear Evan Hansen",
     "Deep Purple",
     "Def Leppard",
+    "Deftones",
     "Demi Lovato",
     "Demi Lovato feat. Cher Lloyd",
     "Deorro x Chris Brown",
@@ -417,6 +418,7 @@
     "Gwen Stefani Feat Akon",
     "Hailee Steinfeld feat. DNCE",
     "Hailee Steinfeld",
+    "Hairspray (Movie)",
     "Hamilton",
     "Hanson",
     "Harpo",
@@ -460,6 +462,7 @@
     "Jack White",
     "Jagwar Twin",
     "James Arthur",
+    "James Bay",
     "James Blunt",
     "Jamiroquai",
     "Janet Jackson",
@@ -506,6 +509,7 @@
     "Jonas Brothers",
     "Jonathan Coulton",
     "Josh Groban",
+    "Josh Turner",
     "Journey",
     "Joy Division",
     "Julie and the Phantoms",
@@ -1185,5 +1189,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 3798
+  "songs": 3807
 }
