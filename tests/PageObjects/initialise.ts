@@ -1,5 +1,4 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
-import { Toolbar } from '../components/Toolbar';
 import { AdvancedConnectionPagePO } from './AdvancedConnectionPage';
 import { ComputersMicConnectionPagePO } from './ComputersMicConnectionPage';
 import { EditSongsPagePO } from './EditSongsPage';
@@ -51,6 +50,5 @@ export default function initialise(page: Page, context: BrowserContext, browser:
     joinExistingGamePage: new JoinExistingGamePagePO(page, context, browser),
     settingsPage: new SettingsPagePO(page, context, browser),
     rateUnfinishedSongPage: new RateUnfinishedSongPagePO(page, context, browser),
-    toolbar: new Toolbar(page, context, browser),
   };
 }
