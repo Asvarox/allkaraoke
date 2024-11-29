@@ -12,7 +12,7 @@
 #ALLKARAOKE_REALBPM:100
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=tJXPfNDVF4I
 #ALLKARAOKE_VOLUME:0,61
-#P1:DJ Snake, Ozuna, Megan Thee Stallion, LISA of BLACKPINK - SG 
+#P1:DJ Snake, Ozuna, Megan Thee Stallion, LISA of BLACKPINK - SG
 #MP3:DJ Snake, Ozuna, Megan Thee Stallion, LISA of BLACKPINK - SG.mp3
 #COVER:DJ Snake, Ozuna, Megan Thee Stallion, LISA of BLACKPINK - SG.jpg
 #MEDLEYSTARTBEAT:3046

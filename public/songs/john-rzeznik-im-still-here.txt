@@ -1,4 +1,4 @@
-#ARTIST:John Rzeznik 
+#ARTIST:John Rzeznik
 #TITLE:I'm Still Here
 #CREATOR:REL
 #BPM:222,94

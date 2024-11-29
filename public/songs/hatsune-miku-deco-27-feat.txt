@@ -1,4 +1,4 @@
-#ARTIST: Hatsune Miku
+#ARTIST:Hatsune Miku
 #TITLE:DECO 27 feat.
 #CREATOR:Mr Tulio
 #BPM:200

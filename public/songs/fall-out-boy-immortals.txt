@@ -1,5 +1,5 @@
-#ARTIST:Fall Out Boy 
-#TITLE:Immortals 
+#ARTIST:Fall Out Boy
+#TITLE:Immortals
 #CREATOR:Currymalker
 #BPM:216
 #YEAR:2014

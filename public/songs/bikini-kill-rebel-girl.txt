@@ -1,5 +1,5 @@
 #ARTIST:Bikini Kill
-#TITLE:Rebel Girl 
+#TITLE:Rebel Girl
 #CREATOR:Gollum
 #BPM:388,82
 #YEAR:1993

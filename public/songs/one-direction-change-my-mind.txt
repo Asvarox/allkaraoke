@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:UK
 #ALLKARAOKE_REALBPM:117
 #ALLKARAOKE_VOLUME:0,82
-#P1:Change My Mind 
+#P1:Change My Mind
 #MP3:One Direction - Change My Mind.mp3
 : 21 8 8 The 
 : 33 12 8 end 

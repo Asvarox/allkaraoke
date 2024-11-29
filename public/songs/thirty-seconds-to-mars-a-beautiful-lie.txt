@@ -1,6 +1,6 @@
 #ARTIST:Thirty Seconds to Mars
 #TITLE:A Beautiful Lie
-#CREATOR:a beautiful lie 
+#CREATOR:a beautiful lie
 #BPM:320,04
 #YEAR:2007
 #VIDEO:v=4Kvd-uquuhI

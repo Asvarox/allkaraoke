@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:CA
 #ALLKARAOKE_REALBPM:144
 #ALLKARAOKE_VOLUME:0,74
-#P1:Life Of The Party 
+#P1:Life Of The Party
 #MP3:Shawn Mendes - Life Of The Party.mp3
 : 20 2 10 I 
 : 24 3 10 love 

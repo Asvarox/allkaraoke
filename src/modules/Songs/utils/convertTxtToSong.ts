@@ -84,7 +84,7 @@ function getPropertyValueFromTxt(
 
       return vals;
     }
-    return value;
+    return value.trim();
   };
 
   return keys.map(getValue).filter(notFalsy).at(0);

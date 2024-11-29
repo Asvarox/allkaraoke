@@ -33,8 +33,8 @@ const SONGS_FOLDER = './public/songs';
     console.log(`"${song.artist}" "${song.title}"`);
     const { tracks, ...songData } = song;
     try {
-      await fixGapForNewerSongs(songData);
-      await setEurovisionEdition(songData);
+      // await fixGapForNewerSongs(songData);
+      // await setEurovisionEdition(songData);
       // await fillMissingRealBpm(songData, file);
       // await fillSongYear(songData);
       // await appendBandOrigin(songData);

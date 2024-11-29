@@ -1,5 +1,5 @@
 #ARTIST:Monika Brodka
-#TITLE:Znam Cię Na Pamięć 
+#TITLE:Znam Cię Na Pamięć
 #BPM:270
 #YEAR:2006
 #VIDEO:v=Fk4oL5yGVQI

@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:109
 #ALLKARAOKE_VOLUME:0,81
-#P1:Walk This Way 
+#P1:Walk This Way
 #MP3:Aerosmith - Walk This Way.mp3
 : 27 4 3 Back
 : 34 4 3 stro

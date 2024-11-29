@@ -5,7 +5,7 @@
 #YEAR:2014
 #VIDEO:v=0FfG_5JBVBQ
 #VIDEOGAP:57
-#GENRE: Pop rock
+#GENRE:Pop rock
 #LANGUAGE:English
 #GAP:56738,3213233467
 #ALLKARAOKE_ID:5-seconds-of-summer-good-girls

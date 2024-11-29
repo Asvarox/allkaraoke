@@ -1,5 +1,5 @@
 #ARTIST:Joost Klein
-#TITLE:Europapa 
+#TITLE:Europapa
 #CREATOR:Viktor1234678
 #BPM:320
 #YEAR:2024

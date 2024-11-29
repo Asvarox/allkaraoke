@@ -1,5 +1,5 @@
 #ARTIST:Jedward
-#TITLE:Lipstick 
+#TITLE:Lipstick
 #CREATOR:gaspar17
 #BPM:275,9
 #YEAR:2011

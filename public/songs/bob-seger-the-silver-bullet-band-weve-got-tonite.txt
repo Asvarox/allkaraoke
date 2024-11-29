@@ -1,5 +1,5 @@
 #ARTIST:Bob Seger & The Silver Bullet Band
-#TITLE:We’ve Got Tonite 
+#TITLE:We’ve Got Tonite
 #CREATOR:Usdx
 #BPM:240,2
 #YEAR:1978

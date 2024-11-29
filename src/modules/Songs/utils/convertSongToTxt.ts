@@ -6,7 +6,11 @@ import isNotesSection from './isNotesSection';
 function toTxtValue(key: knownSongTxtKeys, value: string | string[] | number | undefined) {
   if (value === undefined) return undefined;
   return `#${key}:${
-    typeof value === 'number' ? value.toString(10).replace('.', ',') : Array.isArray(value) ? value.join(', ') : value
+    typeof value === 'number'
+      ? value.toString(10).replace('.', ',')
+      : Array.isArray(value)
+        ? value.map((v) => v.trim()).join(', ')
+        : value.trim()
   }`;
 }
 
