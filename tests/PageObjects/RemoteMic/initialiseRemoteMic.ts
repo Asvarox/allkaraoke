@@ -1,6 +1,4 @@
 import { Browser, BrowserContext, Page } from '@playwright/test';
-import { RemoteTabBar } from '../RemoteMic/remoteComponents/RemoteTabBar';
-import { RemoteToolbar } from '../RemoteMic/remoteComponents/RemoteToolbar';
 import { RemoteMicSongListPagePO } from '././RemoteMicSongListPage';
 import { RemoteMicMainPagePO } from './RemoteMicMainPage';
 import { RemoteMicManageGamePage } from './RemoteMicManageGamePage';
@@ -17,7 +15,5 @@ export default function initialiseRemoteMic(page: Page, context: BrowserContext,
     remoteMicManagePlayerPage: new RemoteMicManagePlayerPage(page, context, browser),
     remoteMicSongLanguagesPage: new RemoteMicSongLanguagesPagePO(page, context, browser),
     _page: page,
-    remoteToolbar: new RemoteToolbar(page, context, browser),
-    remoteTabBar: new RemoteTabBar(page, context, browser),
   };
 }
