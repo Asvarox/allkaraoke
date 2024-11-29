@@ -2,7 +2,7 @@
 #TITLE:Das Farbenspiel des Winds
 #CREATOR:mkdigital
 #BPM:247,5
-#YEAR:1995 
+#YEAR:1995
 #VIDEO:v=aFztBLTSsTw
 #LANGUAGE:German
 #GAP:7569,69696969697

@@ -1,4 +1,4 @@
-#ARTIST: Kinect Star Wars (Renee Wagner)
+#ARTIST:Kinect Star Wars (Renee Wagner)
 #TITLE:I’m Han Solo
 #CREATOR:arch1t3cht30
 #BPM:188
@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:89
 #ALLKARAOKE_VOLUME:0,73
-#P1: I'm Han Solo
+#P1:I'm Han Solo
 #MP3:Kinect Star Wars - I’m Han Solo.mp3
 #COVER:Kinect Star Wars - I’m Han Solo [CO].jpg
 #BACKGROUND:Kinect Star Wars - I’m Han Solo [BG].jpg

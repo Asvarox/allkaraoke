@@ -11,7 +11,7 @@
 #ALLKARAOKE_ID:lady-gaga-blackpink-sour-candy
 #ALLKARAOKE_LASTUPDATE:2024-10-17T00:11:10.825Z
 #ALLKARAOKE_ARTISTORIGIN:KR
-#ALLKARAOKE_CREATORURL:	 Michael TuckerStefani GermanottaMadison LoveMatthew BurnsRami YacoubHong Jun Park
+#ALLKARAOKE_CREATORURL:Michael TuckerStefani GermanottaMadison LoveMatthew BurnsRami YacoubHong Jun Park
 #ALLKARAOKE_REALBPM:120
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Fc2qWBIToKU
 #ALLKARAOKE_VOLUME:0,74

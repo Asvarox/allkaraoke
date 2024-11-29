@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:JP
 #ALLKARAOKE_REALBPM:143
 #ALLKARAOKE_VOLUME:1
-#P1: Rhythm Emotion
+#P1:Rhythm Emotion
 #COVER:TWO-MIX - Rhythm Emotion (TV) [CO].jpg
 #MP3:TWO-MIX - Rhythm Emotion (TV).mp3
 : 19 5 6 I 

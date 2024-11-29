@@ -12,7 +12,7 @@
 #ALLKARAOKE_REALBPM:140
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=axySrE0Kg6k
 #ALLKARAOKE_VOLUME:0,68
-#P1:Ariana Grande - Beauty and the Beast 
+#P1:Ariana Grande - Beauty and the Beast
 #COVER:Ariana Grande & John Legend - Beauty and the Beast.jpg
 #MP3:Ariana Grande & John Legend - Beauty and the Beast.mp3
 #MEDLEYSTARTBEAT:3094

@@ -1,6 +1,6 @@
 #ARTIST:Heathers
 #TITLE:Freeze Your Brain
-#CREATOR:Heather the musicaul 
+#CREATOR:Heather the musicaul
 #BPM:273,6
 #YEAR:2014
 #VIDEO:v=Eyder5QhWl4
@@ -12,7 +12,7 @@
 #ALLKARAOKE_REALBPM:135
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=GAOxJv96VE8
 #ALLKARAOKE_VOLUME:0,74
-#P1:Freeze your brain 
+#P1:Freeze your brain
 #MP3:Heathers - Freeze Your Brain.mp3
 #COVER:Heathers - Freeze Your Brain [CO].jpg
 #BACKGROUND:Heathers - Freeze Your Brain [BG].jpg

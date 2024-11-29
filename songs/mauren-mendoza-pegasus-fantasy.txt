@@ -1,6 +1,6 @@
 #ARTIST:Mauren Mendoza
 #TITLE:Pegasus Fantasy
-#CREATOR:Sint seya 
+#CREATOR:Sint seya
 #BPM:327,28
 #YEAR:2004
 #VIDEO:v=_6dbcQaOddk

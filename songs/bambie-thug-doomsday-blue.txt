@@ -1,5 +1,5 @@
 #ARTIST:Bambie Thug
-#TITLE:Doomsday Blue 
+#TITLE:Doomsday Blue
 #CREATOR:lava
 #BPM:387,6
 #YEAR:2023

@@ -12,7 +12,7 @@
 #ALLKARAOKE_ARTISTORIGIN:US
 #ALLKARAOKE_REALBPM:127
 #ALLKARAOKE_VOLUME:0,67
-#P1: P.Y.T. (Pretty Young Thing) 
+#P1:P.Y.T. (Pretty Young Thing)
 #MP3:Michael Jackson - P.Y.T. (Pretty Young Thing).mp3
 F 17 1 0 You 
 F 19 1 0 know 

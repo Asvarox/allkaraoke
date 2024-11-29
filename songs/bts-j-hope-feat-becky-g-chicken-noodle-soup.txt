@@ -11,7 +11,7 @@
 #ALLKARAOKE_ID:bts-j-hope-feat-becky-g-chicken-noodle-soup
 #ALLKARAOKE_LASTUPDATE:2024-10-29T00:11:24.377Z
 #ALLKARAOKE_ARTISTORIGIN:KR
-#ALLKARAOKE_CREATORURL: Anthony Thomas Glover / Bianca Dupree / Desmond Ryan / Dong Hyuck Shin / Ho-Seok Jeong / Hyo Won Kang / Jamal Christopher Reynolds / Joo Hyun Hahn / Juan Manuel Frias / Rebbeca Marie Gomez / Soo Hyun Park
+#ALLKARAOKE_CREATORURL:Anthony Thomas Glover / Bianca Dupree / Desmond Ryan / Dong Hyuck Shin / Ho-Seok Jeong / Hyo Won Kang / Jamal Christopher Reynolds / Joo Hyun Hahn / Juan Manuel Frias / Rebbeca Marie Gomez / Soo Hyun Park
 #ALLKARAOKE_REALBPM:97
 #ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=i23NEQEFpgQ
 #ALLKARAOKE_VOLUME:0,71

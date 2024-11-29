@@ -1,5 +1,5 @@
 #ARTIST:Barei
-#TITLE:Say Yay! 
+#TITLE:Say Yay!
 #CREATOR:BadNewsBarett
 #BPM:250
 #YEAR:2016
