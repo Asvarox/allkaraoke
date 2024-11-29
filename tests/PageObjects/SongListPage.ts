@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, expect, Page } from '@playwright/test';
+import { Toolbar } from '../components/Toolbar';
 
 export class SongListPagePO {
   constructor(
@@ -6,6 +7,8 @@ export class SongListPagePO {
     private context: BrowserContext,
     private browser: Browser,
   ) {}
+
+  toolbar = new Toolbar(this.page, this.context, this.browser);
 
   public async goToGroupNavigation(groupName: string) {
     await this.page.getByTestId(`group-navigation-${groupName}`).click();
@@ -68,18 +71,6 @@ export class SongListPagePO {
 
   public expectSelectedSongNotToBe(songID: string) {
     return expect(this.songPreviewElement).not.toHaveAttribute('data-song', songID);
-  }
-
-  public get fullscreenElement() {
-    return this.page.locator('[data-test="toggle-fullscreen"] svg');
-  }
-
-  public async expectFullscreenToBeOff() {
-    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenIcon');
-  }
-
-  public async expectFullscreenToBeOn() {
-    await expect(this.fullscreenElement).toHaveAttribute('data-testid', 'FullscreenExitIcon');
   }
 
   public async expectGroupToBeInViewport(groupName: string) {
