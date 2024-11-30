@@ -87,14 +87,13 @@ export const AutoEnableFullscreenSetting = new Setting<boolean>(
 export const RemoteMicConnectionType = ['WebSockets', 'PeerJS', 'PartyKit'] as const;
 export const RemoteMicConnectionTypeSetting = new Setting<ServerTransport['name']>(
   'RemoteMicConnectionType',
-  'WebSockets',
+  'PartyKit',
   'session',
 );
 
 posthog.onFeatureFlags?.(() => {
-  // UseWebsocketsSettings.set(isDev() ? true : (posthog.isFeatureEnabled(FeatureFlags.WebsocketsRemoteMics) ?? false));
   RemoteMicConnectionTypeSetting.set(
-    (posthog.getFeatureFlagPayload(FeatureFlags.RemoteMicConnectionType) as ServerTransport['name']) ?? 'WebSockets',
+    (posthog.getFeatureFlagPayload(FeatureFlags.RemoteMicConnectionType) as ServerTransport['name']) ?? 'PartyKit',
   );
 });
 
