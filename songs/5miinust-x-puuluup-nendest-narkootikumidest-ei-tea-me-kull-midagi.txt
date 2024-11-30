@@ -8,6 +8,7 @@
 #GENRE:Hip-Hop, Folktronica
 #LANGUAGE:Estonian
 #GAP:5230,241379310345
+#EDITION:ESC 2024
 #ALLKARAOKE_ID:5miinust-x-puuluup-nendest-narkootikumidest-ei-tea-me-kull-midagi
 #ALLKARAOKE_LASTUPDATE:2024-06-23T00:11:11.245Z
 #ALLKARAOKE_ARTISTORIGIN:EE
