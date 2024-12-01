@@ -15,7 +15,7 @@ const prodRun = process.env.CI || process.env.PROD_RUN;
 const config: PlaywrightTestConfig = {
   testDir: './tests',
   /* Maximum time one test can run for. */
-  timeout: 40 * 1000,
+  timeout: 45_000,
   maxFailures: process.env.CI ? 10 : undefined,
   expect: {
     /**
@@ -50,7 +50,7 @@ const config: PlaywrightTestConfig = {
     trace: 'on-first-retry',
     ignoreHTTPSErrors: true,
     launchOptions: {
-      slowMo: 50,
+      slowMo: 40,
       args: [
         // '--auto-open-devtools-for-tabs',
         '--headless=new', // https://github.com/microsoft/playwright/issues/27598#issuecomment-1769220936
