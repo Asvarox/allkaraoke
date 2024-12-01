@@ -63,8 +63,10 @@ export class SimplifiedMic extends Listener<[number, number]> implements InputIn
         captureException(e);
         console.error(e);
       }
-    } catch (e) {
-      captureException(e, { level: 'warning', extra: { message: 'SimplifiedMic.startMonitoring' } });
+    } catch (e: any) {
+      if (e.name !== 'NotAllowedError') {
+        captureException(e, { level: 'warning', extra: { message: 'SimplifiedMic.startMonitoring' } });
+      }
       console.warn(e);
     }
   };

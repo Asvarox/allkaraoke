@@ -270,7 +270,7 @@ export default function ConvertView({ song }: Props) {
                 data={metadataEntity}
                 songArtist={conversionResult?.artist}
                 songTitle={conversionResult?.title}
-                videoId={conversionResult!.video}
+                videoId={conversionResult?.video ?? ''}
               />
             )}
 

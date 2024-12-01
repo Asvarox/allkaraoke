@@ -74,7 +74,7 @@ export class MicInput implements InputInterface {
         console.error(e);
       }
     } catch (e) {
-      captureException(e, { level: 'warning' });
+      captureException(e, { level: 'warning', extra: { message: 'MicInput.startMonitoring' } });
       console.warn(e);
     }
   };
