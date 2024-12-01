@@ -129,9 +129,9 @@
     "@types/use-persisted-state": "^0.3.4",
     "@types/uuid": "^9.0.8",
     "@types/youtube-player": "^5.5.11",
-    "@vitejs/plugin-basic-ssl": "^1.1.0",
-    "@vitejs/plugin-react": "^4.3.3",
-    "@vitest/ui": "2.1.4",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/ui": "2.1.6",
     "@welldone-software/why-did-you-render": "^8.0.3",
     "autoprefixer": "^10.4.19",
     "babel-plugin-transform-imports": "^2.0.0",
@@ -167,9 +167,9 @@
     "typescript-eslint": "^8.12.2",
     "unimported": "^1.30.0",
     "utility-types": "^3.11.0",
-    "vite": "^5.4.10",
-    "vite-tsconfig-paths": "^5.0.1",
-    "vitest": "^2.1.4"
+    "vite": "^6.0.1",
+    "vite-tsconfig-paths": "^5.1.3",
+    "vitest": "^2.1.6"
   },
   "homepage": "./",
   "dependenciesMeta": {
