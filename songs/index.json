@@ -16320,10 +16320,10 @@
       "English"
     ],
     "bpm": 304,
-    "gap": 23947.157894736843,
+    "gap": 23997.157894736843,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2023-11-16T06:24:38.661Z",
+    "lastUpdate": "2024-11-30T11:24:36.583Z",
     "genre": "Pop",
     "realBpm": 73,
     "volume": 0.65,
@@ -93740,12 +93740,13 @@
       "English"
     ],
     "bpm": 342.35,
-    "gap": 27123.25938367168,
+    "gap": 27073.25938367168,
     "year": "2019",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-02-24T23:13:12.753Z",
+    "lastUpdate": "2024-11-29T05:19:44.552Z",
     "genre": "Pop",
     "realBpm": 171,
+    "volume": 0.77,
     "author": "mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Blinding+Lights",
     "tracks": [
