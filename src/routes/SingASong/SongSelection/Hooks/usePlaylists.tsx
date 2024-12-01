@@ -3,6 +3,11 @@ import { ClosableTooltip } from 'modules/Elements/Tooltip';
 // import { FeatureFlags } from 'modules/utils/featureFlags';
 // import isoCodeToCountry from 'modules/utils/isoCodeToCountry';
 // import eurovisionIcon from 'routes/SingASong/SongSelection/Components/SongCard/eurovision-icon.svg';
+import { colorSets } from 'modules/GameEngine/Drawing/styles';
+import { FeatureFlags } from 'modules/utils/featureFlags';
+import isDev from 'modules/utils/isDev';
+import isE2E from 'modules/utils/isE2E';
+import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import { ReactElement, ReactNode, useMemo } from 'react';
 import { useLanguageList } from 'routes/ExcludeLanguages/ExcludeLanguagesView';
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
@@ -20,6 +25,7 @@ export interface PlaylistEntry {
 }
 
 export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoading: boolean): PlaylistEntry[] => {
+  const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(FeatureFlags.Christmas);
   const songLanguages = useLanguageList(songs);
 
   return useMemo<PlaylistEntry[]>(() => {
@@ -58,16 +64,18 @@ export const usePlaylists = (songs: SongPreview[], recommended: string[], isLoad
     const playlists: Array<PlaylistEntry | null> = [
       selection,
       all,
-      // {
-      //   name: 'Christmas',
-      //   display: (
-      //     <>
-      //       <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
-      //       <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
-      //     </>
-      //   ),
-      //   filters: { edition: 'christmas' },
-      // },
+      isSpecialThemeEnabled
+        ? {
+            name: 'Christmas',
+            display: (
+              <>
+                <span style={{ color: colorSets.christmasRed.text }}>Chris</span>
+                <span style={{ color: colorSets.christmasGreen.text }}>tmas</span> 🎄
+              </>
+            ),
+            filters: { edition: 'christmas' },
+          }
+        : null,
       // {
       //   name: 'Halloween',
       //   display: (

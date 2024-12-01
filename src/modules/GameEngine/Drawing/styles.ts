@@ -64,8 +64,10 @@ export const colorSets = {
   green: colorSet(tinycolor('rgb(0,183,0)'), tinycolor('rgb(0,84,0)')),
   yellow: colorSet(tinycolor('rgb(239,209,0)'), tinycolor('rgb(114,84,0)')),
 
-  christmasGreen: colorSet(christmasGreenFillBase, christmasGreenStrokeBase),
-  christmasRed: colorSet(christmasRedFillBase, christmasRedStrokeBase),
+  christmasGreen: colorSet(tinycolor('rgb(44,133,0)'), tinycolor('rgb(3, 79, 27)')),
+  christmasRed: colorSet(tinycolor('rgb(181,27,42)'), tinycolor('rgb(126, 18, 29)')),
+  christmasGold: colorSet(tinycolor('rgb(206, 172, 92)'), tinycolor('rgb(129,108,58)')),
+  christmasBlue: colorSet(tinycolor('rgb(87 140 190)'), tinycolor('rgb(34 53 90)')),
 
   halloweenOrange: colorSet(tinycolor('#fd9702'), tinycolor('#ff7100')),
   halloweenViolet: colorSet(tinycolor('#e102ff'), tinycolor('#ae03ff')),
@@ -109,8 +111,11 @@ const styles = {
   },
 };
 
-const colorThemes: Record<backgroundTheme, ReturnType<typeof colorSet>[]> = {
-  christmas: [colorSets.christmasGreen, colorSets.christmasRed],
+const colorThemes: Record<
+  backgroundTheme,
+  [ReturnType<typeof colorSet>, ReturnType<typeof colorSet>, ReturnType<typeof colorSet>, ReturnType<typeof colorSet>]
+> = {
+  christmas: [colorSets.christmasGreen, colorSets.christmasRed, colorSets.christmasBlue, colorSets.christmasGold],
   eurovision: [
     colorSets.eurovisionBlue,
     colorSets.eurovisionViolet,
