@@ -8,6 +8,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 import routePaths from './src/routes/routePaths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
+import { sentryVitePlugin } from '@sentry/vite-plugin';
 
 const certPath = './config/crt/server.pem';
 const keyPath = './config/crt/server.key';
@@ -20,6 +21,9 @@ if (!customCert) {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    sentryVitePlugin({
+      applicationKey: 'allkaraoke-party-sentry-key',
+    }),
     react({
       babel: {
         plugins: [

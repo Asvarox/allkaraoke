@@ -8,7 +8,7 @@ import 'modules/utils/wdyr';
 
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import { browserTracingIntegration, init, setUser } from '@sentry/react';
+import { browserTracingIntegration, init, setUser, thirdPartyErrorFilterIntegration } from '@sentry/react';
 import App from 'App';
 import 'index.css';
 import { normalizeSting } from 'modules/Songs/utils/getSongId';
@@ -32,6 +32,18 @@ if (isSentryEnabled) {
     integrations: [
       browserTracingIntegration({
         enableInp: true,
+      }),
+      thirdPartyErrorFilterIntegration({
+        // Specify the application keys that you specified in the Sentry bundler plugin
+        filterKeys: ['allkaraoke-party-sentry-key'],
+
+        // Defines how to handle errors that contain third party stack frames.
+        // Possible values are:
+        // - 'drop-error-if-contains-third-party-frames'
+        // - 'drop-error-if-exclusively-contains-third-party-frames'
+        // - 'apply-tag-if-contains-third-party-frames'
+        // - 'apply-tag-if-exclusively-contains-third-party-frames'
+        behaviour: 'apply-tag-if-contains-third-party-frames',
       }),
     ],
 

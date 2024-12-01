@@ -95,6 +95,7 @@
     "@playwright/experimental-ct-react": "1.45.1",
     "@playwright/test": "1.45.1",
     "@remotion/cli": "^4.0.84",
+    "@sentry/vite-plugin": "^2.22.6",
     "@storybook/addon-actions": "^8.4.1",
     "@storybook/addon-docs": "^8.4.1",
     "@storybook/addon-essentials": "^8.4.1",
