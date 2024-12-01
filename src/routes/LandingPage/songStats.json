@@ -2,7 +2,6 @@
   "artists": [
     "2NE1",
     "3 Doors Down",
-    "30 Seconds To Mars",
     "3OH!3",
     "3OH!3 feat. Katy Perry",
     "3OH!3 feat. Ke$ha",
@@ -279,7 +278,6 @@
     "Disney’s Brother Bear",
     "Disney’s Descendants 2",
     "Disney’s Descendants",
-    "Disney’s Encanto ",
     "Disney’s Encanto",
     "Disney’s Frozen",
     "Disney’s Frozen II",
@@ -355,7 +353,6 @@
     "Faith Hill",
     "Faith No More",
     "Fall Out Boy",
-    "Fall Out Boy ",
     "Falling In Reverse",
     "Fergie",
     "Fetty Wap",
@@ -496,7 +493,7 @@
     "John Legend",
     "John Lennon",
     "John Mayer",
-    "John Rzeznik ",
+    "John Rzeznik",
     "John Travolta (Grease)",
     "John Waite",
     "Johnny Cash",
@@ -1136,7 +1133,7 @@
     "will.i.am & Britney Spears",
     "will.i.am feat. Eva Simons",
     "will.i.am feat. Justin Bieber",
-    "will.i.am ",
+    "will.i.am",
     "Wilson Phillips",
     "Windows95man",
     "Wiz Khalifa",
@@ -1189,5 +1186,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 3807
+  "songs": 3806
 }
