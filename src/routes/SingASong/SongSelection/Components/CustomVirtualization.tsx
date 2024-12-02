@@ -48,6 +48,9 @@ interface Props<T> {
 const isBetween = (value: number, min: number, max: number) => value >= min && value < max;
 
 function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomVirtualizedListMethods>) {
+  const viewportElementRef = useRef<HTMLDivElement | null>(null);
+  const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
+
   const itemsPositions = useMemo(() => {
     const sizes: Array<{ type: 'group' | 'item'; bottom: number; index: number; groupIndex: number }> = [];
 
@@ -74,9 +77,6 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
   }, [props.itemHeight, props.groupHeaderHeight, props.groupSizes]);
 
   const totalHeight = itemsPositions.at(-1)?.bottom ?? 0;
-
-  const viewportElementRef = useRef<HTMLDivElement | null>(null);
-  const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
 
   const computeVisibleItemsRange = useCallback(
     (scrollTop: number) => {
@@ -178,47 +178,50 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
     (item) => item.type === 'item' && item.index === props.forceRenderItem,
   );
 
+  const pt = groupToRender !== -1 ? paddingTop - props.groupHeaderHeight : paddingTop;
+
   return (
     <Viewport ref={viewportElementRef}>
       <Wrapper
         style={{
           height: totalHeight,
-          paddingTop: groupToRender !== -1 ? paddingTop - props.groupHeaderHeight : paddingTop,
         }}>
         {Header && <Header context={props.context} />}
-        {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
-          <>
-            {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
-              style: {
-                width: '100%',
-                position: 'absolute',
-                top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
-                left: 0,
-                boxSizing: 'border-box',
-              },
-              'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
-              'data-virtualized-index': itemsPositions[forcedItemIndex].index,
-            })}
-          </>
-        )}
-        {groupedItemsToRender.map((group, index) => (
-          // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
-          <div key={(group[0] ?? itemsPositions[groupToRender]).groupIndex}>
-            {index === 0 && groupToRender !== -1 && props.groupContent(itemsPositions[groupToRender].index)}
-            {group.map(({ index, type, bottom, groupIndex }) => {
-              return (
-                <Fragment key={`${bottom}`}>
-                  {type === 'group'
-                    ? props.groupContent(index)
-                    : props.itemContent(index, groupIndex, {
-                        'data-virtualized-bottom': bottom,
-                        'data-virtualized-index': index,
-                      })}
-                </Fragment>
-              );
-            })}
-          </div>
-        ))}
+        <div style={{ position: 'absolute', top: pt, left: 0, right: 0 }}>
+          {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
+            <>
+              {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
+                style: {
+                  width: '100%',
+                  position: 'absolute',
+                  top: itemsPositions[forcedItemIndex].bottom - props.itemHeight,
+                  left: 0,
+                  boxSizing: 'border-box',
+                },
+                'data-virtualized-bottom': itemsPositions[forcedItemIndex].bottom,
+                'data-virtualized-index': itemsPositions[forcedItemIndex].index,
+              })}
+            </>
+          )}
+          {groupedItemsToRender.map((group, index) => (
+            // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
+            <div key={(group[0] ?? itemsPositions[groupToRender]).groupIndex}>
+              {index === 0 && groupToRender !== -1 && props.groupContent(itemsPositions[groupToRender].index)}
+              {group.map(({ index, type, bottom, groupIndex }) => {
+                return (
+                  <Fragment key={`${bottom}`}>
+                    {type === 'group'
+                      ? props.groupContent(index)
+                      : props.itemContent(index, groupIndex, {
+                          'data-virtualized-bottom': bottom,
+                          'data-virtualized-index': index,
+                        })}
+                  </Fragment>
+                );
+              })}
+            </div>
+          ))}
+        </div>
       </Wrapper>
       {groupedItemsToRender.length === 0 && EmptyPlaceholder && <EmptyPlaceholder context={props.context} />}
       {Footer && <Footer context={props.context} />}
