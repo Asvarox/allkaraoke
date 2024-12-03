@@ -1,0 +1,597 @@
+#ARTIST:Deftones
+#TITLE:Back to School (Mini Maggit)
+#CREATOR:Deftones
+#BPM:342,12
+#YEAR:2000
+#VIDEO:v=1gxZIL4zpIQ
+#GENRE:Alternative metal
+#LANGUAGE:English
+#GAP:9759,581901087338
+#ALLKARAOKE_ID:deftones-back-to-school-mini-maggit
+#ALLKARAOKE_LASTUPDATE:2024-12-03T00:13:14.619Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:85
+#ALLKARAOKE_VOLUME:1
+#MP3:Deftones - Back to School (Mini Maggit).mp3
+#COVER:Deftones - Back to School (Mini Maggit).jpg
+#MEDLEYSTARTBEAT:1827
+#MEDLEYENDBEAT:2804
+F 23 5 0 So 
+F 31 23 0 run!
+- 54 108
+- 108
+F 131 14 0 Right!
+- 145 168
+- 168
+F 191 6 0 Right 
+F 201 5 0 back 
+F 209 4 0 to 
+F 219 17 0 school!
+- 236
+F 254 3 0 Check 
+F 258 3 0 it
+- 261 263
+- 263
+F 286 3 0 Look 
+F 293 4 0 back 
+F 300 4 0 I 
+F 308 4 0 sift 
+F 315 5 0 through 
+F 322 6 0 all 
+F 330 3 0 the 
+F 336 6 0 cliques
+- 342
+F 357 3 0 Roam
+F 361 3 0 in' 
+F 365 3 0 the 
+F 369 5 0 halls 
+F 377 6 0 all 
+F 385 3 0 year, 
+F 392 3 0 mak
+F 396 3 0 ing 
+F 400 2 0 me 
+F 406 6 0 sick
+- 412
+F 424 3 0 While 
+F 428 3 0 eve
+F 432 2 0 ry
+F 436 2 0 ones 
+F 440 2 0 out 
+F 444 2 0 try
+F 447 1 0 in' 
+F 449 1 0 to 
+F 452 3 0 make 
+F 456 2 0 the 
+F 461 6 0 cut
+- 467
+F 476 7 0 What?
+- 483
+F 486 3 0 And 
+F 490 3 0 when 
+F 494 3 0 you 
+F 498 3 0 think 
+F 502 3 0 you 
+F 506 3 0 know 
+F 510 3 0 me 
+F 514 1 0 right
+- 515
+F 518 3 0 I 
+F 523 3 0 switch 
+F 527 3 0 it 
+F 532 4 0 up
+- 536
+F 542 3 0 Be
+F 546 3 0 hind 
+F 550 3 0 the 
+F 554 7 0 walls
+- 561
+F 565 3 0 smok
+F 569 2 0 in' 
+F 573 3 0 cig
+F 577 3 0 a
+F 581 3 0 rettes 
+F 587 2 0 and 
+F 591 3 0 sip
+F 595 3 0 pin' 
+F 599 3 0 vod
+F 604 3 0 ka
+- 607
+F 612 3 0 I
+F 616 2 0 ~ 
+F 619 3 0 pro
+F 623 2 0 fess 
+F 627 2 0 to 
+F 631 2 0 catch 
+F 635 3 0 a 
+F 640 3 0 cab
+- 643
+F 646 4 0 ain't 
+F 651 2 0 no 
+F 654 3 0 one 
+F 658 2 0 can 
+F 662 3 0 stop 
+F 667 3 0 us
+- 670
+F 675 3 0 Give 
+F 679 3 0 me 
+F 683 2 0 a 
+F 687 3 0 break 
+F 691 3 0 a
+F 695 3 0 bout 
+F 700 3 0 some 
+F 704 3 0 oth
+F 708 3 0 er 
+F 713 5 0 mess
+- 718
+F 722 3 0 What 
+F 726 3 0 were 
+F 731 3 0 you?
+- 734
+F 737 3 0 Go 
+F 741 3 0 prac
+F 745 2 0 tice 
+F 749 3 0 eve
+F 753 3 0 ry
+F 757 3 0 thing 
+F 761 3 0 you 
+F 765 39 0 got!
+- 804
+: 821 4 3 Push 
+: 829 6 3 back 
+: 838 5 1 the 
+: 848 21 3 square
+: 870 5 1 ~
+- 875
+: 888 3 3 Not
+: 892 8 5 ~ 
+: 904 5 1 that 
+: 913 6 0 you 
+: 922 13 1 need 
+: 937 23 0 them
+- 960
+: 970 4 0 but 
+: 978 6 -4 you 
+: 989 19 -1 don't
+- 1008
+: 1015 5 -7 So 
+: 1023 5 0 there 
+: 1031 5 -4 you 
+: 1040 31 -1 go!
+- 1071
+: 1083 4 1 'Cause 
+: 1091 5 3 back 
+: 1099 4 1 in 
+: 1111 11 4 school
+: 1123 3 2 ~
+F 1127 3 1 ~
+F 1131 3 -1 ~
+- 1134
+: 1147 15 5 We 
+: 1164 6 1 are 
+: 1172 6 0 the 
+: 1182 13 1 lead
+: 1197 19 0 ers 
+: 1229 5 0 of 
+: 1238 4 -4 it 
+: 1249 42 -1 all
+- 1291
+: 1299 11 -2 So
+- 1310
+F 1314 4 0 Stop 
+F 1321 4 0 that 
+F 1328 5 0 quit, 
+F 1340 4 0 all 
+F 1346 4 0 that 
+F 1354 6 0 quit!
+- 1360
+F 1364 3 0 Who 
+F 1368 3 0 ru
+F 1372 3 0 ined 
+F 1376 5 0 it?
+- 1381
+F 1388 3 0 You 
+F 1393 4 0 did! 
+F 1400 3 0 Now 
+F 1404 3 0 grab 
+F 1408 3 0 a 
+F 1412 3 0 note
+F 1416 3 0 book 
+F 1421 3 0 and 
+F 1425 3 0 a 
+F 1431 6 0 pen
+- 1437
+F 1447 3 0 Start 
+F 1452 3 0 tak
+F 1456 3 0 ing 
+F 1460 1 0 notes
+- 1461
+F 1464 3 0 I'm 
+F 1468 3 0 be
+F 1472 3 0 ing 
+F 1476 3 0 eve
+F 1480 3 0 ry
+F 1484 3 0 one 
+F 1488 2 0 who's 
+F 1492 3 0 on 
+F 1496 2 0 the 
+F 1500 5 0 top
+- 1505
+F 1511 3 0 You 
+F 1515 3 0 think 
+F 1519 3 0 we're 
+F 1523 3 0 on 
+F 1527 2 0 the 
+F 1532 4 0 same 
+F 1541 6 0 page
+- 1547
+F 1551 3 0 but, 
+F 1555 3 0 oh 
+F 1559 3 0 we're 
+F 1563 4 0 not!
+- 1567
+F 1575 3 0 I'll 
+F 1579 3 0 be 
+F 1583 2 0 the 
+F 1587 3 0 man
+- 1590
+F 1594 3 0 watch 
+F 1598 3 0 your 
+F 1604 4 0 back
+F 1610 4 0 pack 
+F 1618 3 0 and 
+F 1622 2 0 the 
+F 1626 3 0 pen
+F 1630 2 0 cils
+- 1632
+F 1641 2 0 Just 
+F 1645 2 0 like 
+F 1649 3 0 he 
+F 1653 3 0 now 
+F 1657 3 0 flip
+F 1662 3 0 pin 
+F 1666 1 0 it
+- 1667
+F 1670 3 0 why 
+F 1674 3 0 you 
+F 1678 2 0 just 
+F 1682 2 0 keep 
+F 1685 1 0 it 
+F 1689 3 0 sim
+F 1693 3 0 ple?
+- 1696
+F 1700 3 0 You 
+F 1704 2 0 just 
+F 1708 3 0 can't 
+F 1713 3 0 go 
+F 1717 5 0 wrong 
+F 1727 4 0 rock
+F 1733 3 0 in' 
+F 1737 1 0 the 
+F 1741 6 0 clothes
+- 1747
+F 1752 3 0 Cop
+F 1757 2 0 pin' 
+F 1760 2 0 the 
+F 1764 5 0 stance
+- 1769
+F 1772 2 0 'Cause 
+F 1777 1 0 re
+F 1779 1 0 al
+F 1781 3 0 ly 
+F 1785 2 0 is 
+F 1789 3 0 eve
+F 1793 2 0 ry
+F 1796 3 0 thing 
+F 1800 3 0 that 
+F 1804 3 0 you 
+F 1809 27 0 got!
+- 1836
+: 1850 4 3 Push 
+: 1858 5 3 back 
+: 1867 3 1 the 
+: 1877 18 3 square
+: 1896 6 1 ~
+- 1902
+: 1916 3 3 Not
+: 1920 8 5 ~ 
+: 1932 6 1 that 
+: 1942 6 0 you 
+: 1951 13 1 need 
+: 1966 23 0 them
+- 1989
+: 1999 4 0 but 
+: 2007 6 -4 you 
+: 2018 20 -1 don't
+- 2038
+: 2044 5 -7 So 
+: 2053 5 0 there 
+: 2061 5 -4 you 
+: 2070 31 -2 go!
+- 2101
+: 2111 4 1 'Cause 
+: 2119 5 3 back 
+: 2127 5 1 in 
+: 2139 11 4 school
+: 2151 3 2 ~
+F 2155 3 1 ~
+F 2159 3 -1 ~
+- 2162
+: 2176 15 5 We 
+: 2193 6 1 are 
+: 2201 6 0 the 
+: 2211 13 1 lead
+: 2226 19 0 ers 
+: 2258 5 0 of 
+: 2267 4 -4 it 
+: 2278 42 -1 all
+- 2320
+: 2327 16 -2 So
+- 2343 2355
+- 2355
+: 2378 34 8 Trans
+: 2420 2 5 pose
+: 2424 5 8 ~
+: 2430 52 7 ~
+- 2482
+: 2500 4 -2 Or 
+: 2508 8 4 stop 
+: 2520 3 5 your
+: 2524 3 7 ~
+: 2528 4 4 ~ 
+: 2536 25 4 lies
+: 2563 3 2 ~
+- 2566
+* 2572 2 -2 It's 
+* 2579 4 -1 what 
+* 2586 4 -4 you 
+* 2594 25 -2 do
+- 2619
+: 2636 34 8 Trans
+: 2677 3 8 pose
+: 2682 59 10 ~
+- 2741
+: 2756 4 1 Or 
+: 2765 8 4 stop 
+: 2776 3 5 your
+: 2780 3 7 ~
+: 2784 4 4 ~ 
+: 2791 36 4 lies
+- 2827
+F 2835 5 1 So 
+F 2843 16 7 run!
+- 2859
+F 2862 3 0 So 
+F 2866 3 0 why 
+F 2870 3 0 don't 
+F 2874 3 0 you 
+F 2878 4 0 run, 
+F 2887 3 0 so 
+F 2891 3 0 why 
+F 2895 3 0 don't 
+F 2899 3 0 you 
+F 2908 16 7 run!
+- 2924
+F 2928 3 0 So 
+F 2932 3 0 why 
+F 2936 3 0 don't 
+F 2940 3 0 you 
+F 2944 4 0 run 
+F 2955 6 0 back 
+F 2964 4 0 to 
+F 2974 15 0 school!
+- 2989
+F 2992 3 0 So 
+F 2996 3 0 why 
+F 3000 3 0 don't 
+F 3004 3 0 you 
+F 3008 4 0 run, 
+F 3015 3 0 so 
+F 3019 3 0 why 
+F 3023 3 0 don't 
+F 3027 3 0 you 
+F 3036 56 0 run!
+- 3092 3144
+- 3144
+F 3167 14 0 'Cause
+- 3181
+: 3204 22 0 All
+: 3228 4 -4 ~ 
+: 3235 11 -4 you 
+: 3248 10 -2 are
+- 3258
+F 3261 3 0 Now 
+F 3265 3 0 I'm 
+F 3269 3 0 on 
+F 3273 2 0 the 
+F 3277 3 0 next 
+F 3285 6 0 page
+F 3292 5 0 ~, 
+F 3301 6 0 page
+F 3308 5 0 ~
+- 3313
+F 3317 6 0 page
+F 3324 5 0 ~
+- 3329
+: 3335 23 0 All
+: 3360 4 -4 ~ 
+: 3367 10 -4 you 
+: 3378 6 -2 are
+- 3384
+F 3387 2 0 It's 
+F 3391 3 0 time 
+F 3395 3 0 to 
+F 3399 3 0 close 
+F 3403 2 0 the 
+F 3408 3 0 book 
+F 3412 8 0 up, 
+F 3423 3 0 book 
+F 3427 4 0 up
+- 3431
+F 3439 3 0 book 
+F 3444 4 0 up
+- 3448
+: 3464 23 0 All
+: 3489 4 -4 ~ 
+: 3496 10 -4 you 
+: 3508 10 -2 are
+- 3518
+F 3521 5 0 I'm 
+F 3529 3 0 on 
+F 3533 2 0 the 
+F 3537 3 0 next 
+F 3546 6 0 page
+F 3553 5 0 ~, 
+F 3562 6 0 page
+F 3569 5 0 ~ 
+F 3577 6 0 page
+F 3584 5 0 ~
+- 3589
+: 3593 21 0 All
+: 3616 5 -4 ~ 
+: 3625 12 -4 you 
+: 3638 12 -2 are
+- 3650
+F 3665 3 0 Close 
+F 3670 2 0 the 
+F 3674 4 0 book 
+F 3681 4 0 up 
+F 3689 26 0 now!
+- 3715
+: 3727 5 1 Push 
+: 3736 5 3 back 
+: 3745 3 1 the 
+: 3753 24 3 square
+- 3777
+: 3793 3 3 Not
+: 3797 8 5 ~ 
+: 3809 6 1 that 
+: 3819 6 0 you 
+: 3828 12 1 need 
+: 3843 23 0 them
+- 3866
+: 3874 4 0 but 
+: 3882 6 -4 you 
+: 3893 20 -1 don't
+- 3913
+: 3919 5 -5 So 
+: 3928 5 0 there 
+: 3936 5 -4 you 
+: 3945 31 -2 go!
+- 3976
+: 3986 4 1 'Cause 
+: 3994 5 3 back 
+: 4002 5 1 in 
+: 4014 11 4 school
+: 4026 3 2 ~
+F 4030 3 1 ~
+F 4034 3 -1 ~
+- 4037
+: 4054 12 5 We 
+: 4068 6 1 are 
+: 4076 6 0 the 
+: 4084 16 1 lead
+: 4101 20 0 ers 
+: 4138 3 0 of
+: 4142 7 -4 ~ 
+: 4152 49 -1 all
+- 4201
+: 4204 28 -5 So
+: 4233 25 -4 ~
+- 4258
+F 4270 11 -4 We 
+F 4284 24 -2 are
+- 4308
+: 4311 12 5 We 
+: 4325 6 1 are 
+: 4333 6 0 the 
+: 4341 16 1 lead
+: 4358 36 0 ers 
+: 4396 4 0 of
+: 4401 5 -4 ~ 
+: 4410 50 -1 all
+- 4460
+: 4463 14 -5 Ah
+: 4479 37 -9 ~
+- 4516
+F 4528 11 -4 We 
+F 4542 18 -2 are
+F 4561 4 -4 ~
+- 4565
+* 4569 12 5 We 
+* 4583 6 1 are 
+* 4591 6 0 the 
+* 4600 15 1 lead
+* 4616 36 0 ers 
+* 4654 4 0 of
+* 4659 5 -4 ~ 
+* 4668 37 -1 all
+- 4705
+F 4710 5 2 So 
+F 4719 17 8 run!
+- 4736
+F 4739 3 0 So 
+F 4743 3 0 why 
+F 4747 3 0 don't 
+F 4751 3 0 you 
+F 4755 5 0 run, 
+F 4763 3 0 so 
+F 4767 3 0 why 
+F 4771 3 0 don't 
+F 4775 3 0 you 
+F 4783 16 8 run!
+- 4799
+F 4803 3 0 So 
+F 4807 3 0 why 
+F 4811 3 0 don't 
+F 4815 3 0 you 
+F 4819 4 0 run 
+F 4830 6 0 back 
+F 4839 4 0 to 
+F 4849 14 7 school!
+- 4863
+F 4866 3 0 So 
+F 4870 3 0 why 
+F 4874 3 0 don't 
+F 4878 3 0 you 
+F 4882 4 0 run, 
+F 4888 3 0 so 
+F 4892 3 0 why 
+F 4896 3 0 don't 
+F 4900 3 0 you 
+F 4908 110 0 run!
+- 5018 5059
+- 5059
+F 5082 5 0 Push 
+F 5091 5 2 back 
+F 5100 3 0 the 
+F 5108 24 4 square
+- 5132
+F 5149 12 5 Not 
+F 5165 6 1 that 
+F 5175 6 0 you 
+F 5184 12 1 need 
+F 5200 17 0 them
+- 5217
+F 5229 4 -4 but 
+F 5237 6 -4 you 
+F 5246 20 -1 don't
+- 5266
+F 5274 4 -4 So 
+F 5282 6 -1 there 
+F 5290 4 -4 you 
+F 5297 24 -2 go!
+- 5321
+F 5338 4 0 'Cause 
+F 5346 5 3 back 
+F 5354 5 0 in 
+F 5365 23 4 school
+- 5388
+F 5404 12 5 We 
+F 5419 6 1 are 
+F 5427 6 0 the 
+F 5436 13 1 lead
+F 5451 19 0 ers 
+F 5483 6 0 of 
+F 5492 6 -4 it 
+F 5501 50 -1 all
+E

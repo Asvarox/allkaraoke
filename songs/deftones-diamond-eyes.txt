@@ -1,0 +1,228 @@
+#ARTIST:Deftones
+#TITLE:Diamond Eyes
+#CREATOR:boohjaa
+#BPM:205,35
+#YEAR:2010
+#VIDEO:v=qksTlo_1Tpw
+#GENRE:Alternative Metal
+#LANGUAGE:English
+#GAP:13977,35573411249
+#ALLKARAOKE_ID:deftones-diamond-eyes
+#ALLKARAOKE_LASTUPDATE:2024-12-03T00:13:14.612Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:154
+#ALLKARAOKE_VOLUME:0,9
+#MP3:Deftones - Diamond Eyes.mp3
+: 14 4 5 To 
+: 20 3 6 the 
+: 25 11 5 edge
+- 36
+: 46 3 1 Till 
+: 51 3 -2 we 
+: 57 10 3 all 
+: 73 4 -2 get
+: 78 3 -4 ~ 
+: 83 12 -4 off
+- 95 123
+- 123
+: 137 3 5 I 
+: 142 3 6 will 
+: 147 13 5 take
+- 160
+: 169 3 1 You 
+: 174 4 -2 a
+: 180 17 3 way 
+: 206 5 -2 with 
+: 217 10 -4 me
+- 227
+: 232 4 1 Once 
+: 238 3 1 and 
+: 243 4 6 for 
+: 249 14 5 all
+- 263
+: 265 6 5 Time 
+: 273 4 3 will 
+: 281 6 0 see 
+: 289 4 0 us 
+: 297 4 0 re
+: 302 3 -2 a
+: 307 8 1 lign
+- 315
+* 324 5 5 Di
+: 331 3 3 amonds 
+: 339 6 0 rain 
+: 347 5 0 a
+: 355 3 0 cross 
+: 361 3 -2 the 
+: 366 7 1 sky
+- 373
+: 382 6 5 Show
+: 390 4 3 er 
+: 398 6 0 me 
+: 406 6 1 in
+: 414 4 0 to 
+: 419 3 -2 the 
+: 425 7 -7 same 
+: 441 26 -2 realm
+- 467 480
+- 480
+: 494 4 5 Cal
+: 499 4 6 cu
+: 505 7 5 late
+- 512
+: 521 3 1 All 
+: 526 3 -2 em
+* 532 12 3 brace 
+: 553 4 -2 hold
+: 558 3 -4 ~ 
+: 563 17 -4 on
+- 580
+: 585 3 -4 Come 
+: 590 3 -4 with 
+: 595 4 -1 me 
+: 601 6 -2 now
+- 607
+: 611 3 3 And 
+: 617 3 5 run 
+: 622 3 6 a
+: 627 10 5 way
+- 637
+: 649 4 1 Out
+: 654 3 -2 er 
+: 660 12 3 space 
+: 686 4 -2 with 
+: 697 5 -4 me
+- 702
+: 713 3 1 Once 
+: 718 3 1 and 
+: 723 4 6 for 
+* 729 13 5 all
+- 742
+: 745 6 5 Time 
+: 753 4 3 will 
+: 761 6 0 see 
+: 769 4 0 us 
+: 777 4 0 re
+: 782 3 -2 a
+: 787 8 1 lign
+- 795
+: 804 5 5 Di
+: 811 3 3 amonds 
+: 819 6 0 rain 
+: 827 5 0 a
+: 835 3 0 cross 
+: 841 3 -2 the 
+: 846 7 1 sky
+- 853
+: 862 6 5 Show
+: 870 4 3 er 
+: 878 4 0 me 
+: 886 6 1 in
+: 894 4 0 to 
+: 899 3 -2 the 
+: 905 7 -7 same 
+* 921 26 -2 realm
+- 947 966
+- 966
+: 980 6 5 Time 
+: 988 4 3 will 
+: 996 6 0 see 
+: 1004 4 0 us 
+: 1012 4 0 re
+: 1017 3 -2 a
+: 1022 8 1 lign
+- 1030
+* 1038 5 5 Di
+: 1046 3 3 amonds 
+: 1053 6 0 rain 
+: 1061 5 0 a
+: 1069 3 0 cross 
+: 1075 3 -2 the 
+: 1080 7 1 sky
+- 1087
+: 1097 6 5 I 
+: 1105 4 3 will 
+: 1113 6 0 lead 
+: 1121 6 1 us 
+: 1129 4 0 to 
+: 1134 3 -2 the 
+: 1140 7 -7 same 
+: 1155 25 -2 realm
+- 1180 1324
+- 1324
+: 1338 3 -2 When 
+: 1343 3 -2 the 
+: 1348 11 3 cof
+: 1364 5 5 fin 
+: 1375 13 1 shakes
+- 1388
+: 1402 3 -2 And 
+: 1408 3 -2 the 
+: 1413 12 3 nee
+: 1428 3 5 dle 
+: 1436 6 3 breaks
+: 1444 8 3 ~
+- 1452
+: 1465 6 -4 Come
+- 1471
+: 1481 5 5 Run 
+: 1487 3 6 a
+* 1492 10 5 way 
+: 1508 5 1 with 
+: 1518 13 0 me
+- 1531
+: 1540 6 -2 Come 
+: 1551 7 3 on 
+: 1561 6 -2 you’ll 
+: 1572 6 -4 see
+- 1578
+: 1587 4 1 Once 
+: 1593 3 1 and 
+: 1599 3 6 for 
+: 1604 12 5 all
+- 1616
+* 1620 6 5 Time 
+: 1628 4 3 will 
+: 1636 6 0 see 
+: 1644 4 0 us 
+: 1652 4 0 re
+: 1657 3 -2 a
+: 1662 8 1 lign
+- 1670
+: 1678 5 5 Di
+: 1685 3 3 amonds 
+: 1693 6 0 rain 
+: 1701 5 0 a
+: 1709 3 0 cross 
+: 1715 3 -2 the 
+: 1720 7 1 sky
+- 1727
+: 1737 6 5 Show
+: 1745 4 3 er 
+: 1753 4 0 me 
+: 1761 6 1 in
+: 1769 4 0 to 
+: 1774 3 -2 the 
+: 1779 7 -7 same 
+: 1796 26 -2 realm
+- 1822 1840
+- 1840
+: 1854 6 5 I 
+: 1862 4 3 will 
+: 1870 6 0 lead 
+: 1878 4 1 us 
+: 1886 4 0 to 
+: 1891 3 -2 the 
+: 1897 6 -7 same 
+* 1913 23 -2 realm
+- 1936 1958
+- 1958
+: 1972 6 5 I 
+: 1980 4 3 will 
+: 1988 6 0 lead 
+: 1996 6 1 us 
+: 2004 4 0 to 
+: 2009 3 -2 the 
+: 2015 7 -7 same 
+: 2030 25 -2 realm
+E

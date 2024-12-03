@@ -1,0 +1,738 @@
+#ARTIST:Iggy Azalea feat. Charli XCX
+#TITLE:Fancy
+#CREATOR:amro98
+#BPM:253,22
+#YEAR:2014
+#VIDEO:v=O-zpOMYRi0w
+#GENRE:Electro Hop
+#LANGUAGE:English
+#GAP:6892,9705394518605
+#ALLKARAOKE_ID:iggy-azalea-feat-charli-xcx-fancy
+#ALLKARAOKE_LASTUPDATE:2024-12-03T00:13:15.096Z
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_VOLUME:0,74
+#MP3:Iggy Azalea feat. Charli XCX - Fancy.mp3
+R 17 3 0 First 
+R 22 3 0 thing 
+R 27 3 0 first 
+R 33 2 0 I’m 
+R 36 1 0 the 
+R 38 6 0 realest
+- 44
+R 55 2 0 Drop 
+R 58 2 0 this 
+R 61 2 0 and 
+R 64 2 0 let 
+R 67 2 0 the 
+R 71 3 0 whole 
+R 75 3 0 world 
+R 81 3 0 feel 
+R 85 3 0 it
+- 88
+R 104 2 0 And 
+R 107 2 0 I’m 
+R 110 2 0 still 
+R 113 2 0 in 
+R 116 2 0 the 
+R 119 4 0 murda 
+R 124 4 0 bizness
+- 128
+R 129 2 0 I 
+R 132 1 0 can 
+R 134 2 0 hold 
+R 137 2 0 you 
+R 140 8 0 down
+- 148
+R 149 2 0 Like 
+R 152 2 0 I’m 
+R 155 4 0 givin’ 
+R 160 4 0 lesson 
+R 165 1 0 in 
+R 167 5 0 physics
+- 172
+R 182 2 0 You 
+R 185 2 0 should 
+R 188 1 0 want 
+R 190 1 0 a 
+R 192 6 0 bad 
+R 199 4 0 bitch 
+R 204 5 0 like 
+R 210 6 0 this
+- 216
+R 219 3 0 Drop 
+R 223 1 0 it 
+R 225 2 0 low 
+R 228 1 0 and 
+R 230 3 0 pick 
+R 234 2 0 it 
+R 237 3 0 up 
+R 241 5 0 just 
+R 247 5 0 like 
+R 253 5 0 this
+- 258
+R 266 4 0 Cup 
+R 271 2 0 of 
+R 274 3 0 Ace
+- 277
+R 278 2 0 Cup 
+R 281 2 0 of 
+R 284 4 0 Goose
+- 288
+R 289 2 0 Cup 
+R 292 2 0 of 
+R 295 5 0 Cris
+- 300
+R 301 4 0 High 
+R 306 4 0 heels
+- 310
+R 311 4 0 Somethin’ 
+R 316 3 0 worth 
+R 320 1 0 a 
+R 322 2 0 half 
+R 325 1 0 a 
+R 327 3 0 ticket 
+R 331 2 0 on 
+R 334 2 0 my 
+R 337 4 0 wrist
+- 341
+R 352 5 0 Takin’ 
+R 358 2 0 all 
+R 361 2 0 the 
+R 364 3 0 liquor 
+R 368 5 0 straight
+- 373
+R 374 5 0 Never 
+R 380 4 0 chase 
+R 385 5 0 that
+- 390
+R 395 9 0 Rooftop 
+R 405 3 0 like 
+R 409 3 0 we 
+R 413 3 0 bringin’ 
+R 417 8 0 ’88 
+R 426 6 0 back
+- 432
+R 442 4 0 Bring 
+R 447 2 0 the 
+R 450 4 0 hooks 
+R 456 3 0 in
+- 459
+R 460 2 0 Where 
+R 463 1 0 the 
+R 465 5 0 bass 
+R 471 4 0 at?
+- 475
+R 485 9 0 Champagne 
+R 495 4 0 spillin’
+- 499
+R 501 2 0 You 
+R 504 1 0 should 
+R 507 3 0 taste 
+R 511 4 0 that
+- 515
+: 518 4 10 I
+: 523 2 7 ~’m 
+: 526 4 7 so
+: 531 2 5 ~ 
+: 534 4 5 fa
+: 539 2 3 ~n
+: 544 7 3 cy
+- 551
+: 564 4 10 You 
+: 569 2 10 al
+: 572 4 10 rea
+: 577 3 12 dy 
+: 581 7 10 kno
+: 589 6 7 ~w
+- 595
+: 597 4 3 I’m 
+: 603 3 10 i
+: 607 2 7 ~n 
+: 610 4 7 the
+: 615 2 5 ~ 
+: 618 4 5 fa
+: 623 2 3 ~st 
+: 628 7 3 lane
+- 635
+: 652 3 5 From 
+: 656 5 5 L
+: 662 2 5 A 
+: 665 2 5 to 
+: 668 4 5 To
+* 673 2 3 ky
+* 676 2 0 o
+- 678
+: 688 4 10 I
+: 693 2 7 ~’m 
+: 696 4 7 so
+: 701 2 5 ~ 
+: 704 4 5 fa
+: 709 2 3 ~n
+: 714 7 3 cy
+- 721
+: 736 3 10 Can’t 
+: 740 2 10 you 
+: 743 3 10 taste 
+: 748 3 12 this 
+: 752 5 10 go
+: 758 5 7 ~ld?
+- 763
+: 770 2 3 Re
+: 774 3 10 me
+: 778 2 7 ~m
+: 781 4 7 be
+: 786 2 5 ~r 
+: 789 4 5 my
+: 794 2 3 ~ 
+: 797 7 3 name
+- 804
+: 806 4 0 ’Bout 
+: 811 4 0 to 
+: 816 4 7 blo
+* 821 2 5 ~
+* 824 2 3 ~
+: 827 4 5 ~
+: 832 2 3 ~
+: 835 2 2 ~
+* 838 5 3 ~
+* 844 4 2 ~
+* 849 5 0 ~w
+- 854
+R 855 2 0 I 
+R 858 2 0 said 
+R 861 5 0 baby
+- 866
+R 867 2 0 I 
+R 870 2 0 do 
+R 873 3 0 this
+- 876
+R 879 2 0 I 
+R 882 3 0 thought 
+R 886 2 0 that
+- 888
+R 889 2 0 You 
+R 892 2 0 knew 
+R 895 4 0 this
+- 899
+R 902 3 0 Can’t 
+R 906 3 0 stand 
+R 910 2 0 no 
+R 913 5 0 haters 
+R 920 2 0 and 
+R 924 6 0 honest
+- 930
+R 931 3 0 The 
+R 935 2 0 truth 
+R 938 4 0 is
+- 942
+R 943 3 0 And 
+R 947 1 0 my 
+R 949 3 0 flow 
+R 953 8 0 retarded
+- 961
+R 963 3 0 They 
+R 967 4 0 speaked 
+R 972 2 0 it
+- 974
+R 975 4 0 Depart 
+R 981 3 0 it
+- 984
+R 988 6 0 Swagger 
+R 995 3 0 on 
+R 999 4 0 super
+- 1003
+R 1004 2 0 I 
+R 1007 2 0 can’t 
+R 1010 2 0 shop 
+R 1013 2 0 at 
+R 1016 2 0 no 
+R 1019 4 0 department
+- 1023
+R 1024 2 0 Better 
+R 1027 2 0 get 
+R 1030 2 0 my 
+R 1033 3 0 money 
+R 1037 1 0 on 
+R 1039 4 0 time
+- 1043
+R 1044 2 0 If 
+R 1047 2 0 they 
+R 1050 1 0 not 
+R 1052 5 0 money, 
+R 1058 5 0 decline
+- 1063
+R 1064 3 0 And 
+R 1068 3 0 swear 
+R 1072 2 0 I 
+R 1075 2 0 meant 
+R 1078 2 0 that 
+R 1081 1 0 there 
+R 1083 1 0 so 
+R 1085 1 0 much
+- 1086
+R 1087 1 0 That 
+R 1089 1 0 they 
+R 1091 1 0 give 
+R 1093 1 0 that 
+R 1095 3 0 line 
+R 1099 2 0 a 
+R 1102 5 0 rewind
+- 1107
+R 1108 2 0 So 
+R 1111 2 0 get 
+R 1114 2 0 my 
+R 1117 3 0 money 
+R 1121 2 0 on 
+R 1124 3 0 time
+- 1127
+R 1128 2 0 If 
+R 1131 2 0 they 
+R 1134 2 0 not 
+R 1137 5 0 money, 
+R 1144 5 0 decline
+- 1149
+R 1151 2 0 I 
+R 1154 2 0 just 
+R 1157 2 0 can’t 
+R 1160 4 0 worry 
+R 1165 2 0 ’bout 
+R 1168 2 0 no 
+R 1171 4 0 haters
+- 1175
+R 1176 3 0 Gotta 
+R 1180 3 0 stay 
+R 1184 2 0 on 
+R 1187 2 0 my 
+R 1190 3 0 grind
+- 1193
+R 1194 2 0 Now 
+R 1197 1 0 tell 
+R 1199 2 0 me, 
+R 1202 2 0 who 
+R 1205 3 0 dat, 
+R 1209 2 0 who 
+R 1212 3 0 dat?
+- 1215
+R 1219 3 0 That 
+R 1223 3 0 do 
+R 1227 3 0 that, 
+R 1231 2 0 do 
+R 1234 3 0 that
+- 1237
+R 1238 3 0 Put 
+R 1242 1 0 that 
+R 1244 4 0 paper 
+R 1249 4 0 over 
+R 1254 3 0 all
+- 1257
+R 1258 1 0 I 
+R 1260 2 0 thought 
+R 1263 2 0 you 
+R 1266 2 0 knew 
+R 1269 3 0 that, 
+R 1273 2 0 knew 
+R 1276 2 0 that
+- 1278
+R 1279 2 0 I 
+R 1282 1 0 be 
+R 1284 2 0 the 
+R 1287 2 0 I-
+R 1292 2 0 G-
+R 1295 2 0 G-
+R 1298 3 0 Y
+- 1301
+R 1303 2 0 Put 
+R 1306 1 0 my 
+R 1308 3 0 name 
+R 1312 2 0 in 
+R 1316 4 0 bold
+- 1320
+R 1324 3 0 I 
+R 1328 1 0 been 
+R 1330 3 0 workin’
+- 1333
+R 1334 3 0 I’m 
+R 1338 2 0 up 
+R 1341 2 0 in 
+R 1344 1 0 here 
+R 1346 2 0 with 
+R 1349 2 0 some 
+R 1352 4 0 change 
+R 1357 2 0 to 
+R 1360 5 0 throw
+- 1365
+* 1371 4 10 I
+: 1376 2 7 ~’m 
+: 1379 4 7 so
+: 1384 2 5 ~ 
+: 1387 4 5 fa
+: 1392 2 3 ~n
+: 1397 8 3 cy
+- 1405
+: 1419 4 10 You 
+: 1424 2 10 al
+* 1427 4 10 rea
+* 1432 3 12 dy 
+: 1436 5 10 kno
+: 1442 5 7 ~w
+- 1447
+: 1451 4 3 I’m 
+: 1457 3 10 i
+: 1461 2 7 ~n 
+: 1464 4 7 the
+: 1469 2 5 ~ 
+: 1472 4 5 fa
+: 1477 2 3 ~st 
+: 1482 7 3 lane
+- 1489
+: 1505 4 5 From 
+: 1510 5 5 L
+* 1516 2 5 A 
+* 1519 2 5 to 
+: 1522 4 5 To
+: 1527 2 3 ky
+: 1530 2 0 o
+- 1532
+: 1541 4 10 I
+: 1546 2 7 ~’m 
+: 1549 4 7 so
+: 1554 2 5 ~ 
+: 1557 4 5 fa
+: 1562 2 3 ~n
+: 1567 7 3 cy
+- 1574
+: 1589 3 10 Can’t 
+: 1593 2 10 you 
+: 1596 3 10 taste 
+: 1601 3 12 this 
+: 1606 5 10 go
+: 1612 5 7 ~ld?
+- 1617
+* 1622 4 3 Re
+: 1628 3 10 me
+: 1632 2 7 ~m
+: 1635 4 7 be
+: 1640 2 5 ~r 
+: 1643 4 5 my
+: 1648 2 3 ~ 
+: 1651 7 3 name
+- 1658
+: 1660 4 0 ’Bout 
+: 1665 4 0 to 
+: 1670 4 7 blo
+: 1675 2 5 ~
+: 1678 2 3 ~
+: 1681 4 5 ~
+: 1686 2 3 ~
+: 1689 2 2 ~
+: 1692 5 3 ~
+: 1698 4 2 ~
+: 1703 5 0 ~w
+- 1708
+: 1713 6 7 Trash 
+* 1724 4 0 the 
+: 1729 9 3 ho
+: 1740 9 5 tel
+- 1749
+: 1755 4 7 Let’s 
+: 1762 4 7 get 
+: 1767 4 7 drunk 
+: 1772 2 7 on 
+: 1775 2 8 the 
+: 1778 2 7 mi
+: 1781 2 5 ni
+: 1784 6 3 bar
+- 1790
+: 1798 9 7 Make 
+: 1808 4 0 the 
+: 1814 9 3 phone 
+: 1825 9 5 call
+- 1834
+: 1841 4 7 Feels 
+: 1848 4 7 so 
+: 1853 4 7 good 
+: 1858 2 7 get
+: 1861 2 8 ting 
+: 1864 2 7 what 
+: 1867 2 5 I 
+: 1870 6 3 want
+- 1876
+* 1878 5 5 Yeah 
+: 1884 8 7 keep 
+: 1895 8 7 on
+- 1903
+* 1906 4 7 Tur
+* 1911 2 7 ning 
+* 1914 2 5 it 
+: 1917 5 7 up
+- 1922
+: 1927 4 7 Chan
+: 1932 2 7 de
+: 1935 2 5 lier 
+: 1938 3 7 swing
+: 1942 3 7 ing, 
+: 1946 2 5 we 
+: 1949 2 7 don’t 
+: 1952 2 7 give 
+: 1956 2 5 a 
+: 1959 6 7 fuck
+- 1965
+: 1969 8 7 Film 
+: 1980 8 7 star
+- 1988
+: 1991 3 7 Yeah 
+: 1995 3 7 I’m 
+: 1999 3 5 de
+: 2003 4 7 luxe
+- 2007
+: 2012 3 7 Clas
+: 2017 2 7 sic
+- 2019
+: 2020 2 5 Ex
+* 2023 3 7 pen
+* 2027 3 7 sive
+- 2030
+* 2031 2 5 You 
+* 2034 2 7 don’t 
+: 2037 2 7 get 
+: 2041 2 5 to 
+: 2044 4 7 touch
+- 2048
+R 2049 7 0 Ow!
+- 2056 2138
+- 2138
+R 2155 6 0 Still 
+R 2162 5 0 stunting
+- 2167
+R 2168 2 0 How 
+R 2171 2 0 you 
+R 2174 3 0 love 
+R 2178 4 0 that
+- 2182
+R 2188 1 0 Got 
+R 2190 2 0 the 
+R 2193 3 0 whole 
+R 2197 5 0 world 
+R 2204 5 0 asking 
+R 2210 2 0 how 
+R 2213 2 0 I 
+R 2216 4 0 does 
+R 2221 5 0 that
+- 2226
+R 2231 4 0 Hi 
+R 2236 4 0 girl
+- 2240
+R 2241 5 0 Hands 
+R 2247 4 0 off
+- 2251
+R 2252 3 0 Don’t 
+R 2256 7 0 touch 
+R 2264 4 0 that
+- 2268
+R 2273 4 0 Look 
+R 2278 1 0 at 
+R 2280 1 0 that 
+R 2282 2 0 I 
+R 2285 2 0 bet 
+R 2288 2 0 you
+- 2290
+R 2291 2 0 Wishing 
+R 2294 2 0 you 
+R 2297 2 0 could 
+R 2301 4 0 clutch 
+R 2307 4 0 that
+- 2311 2317
+- 2317
+R 2334 1 0 Just 
+R 2336 1 0 the 
+R 2338 1 0 way 
+R 2340 1 0 you 
+R 2342 2 0 like 
+R 2346 3 0 it, 
+R 2350 5 0 huh?
+- 2355
+R 2359 3 0 You’re 
+R 2363 2 0 so 
+R 2366 3 0 good
+- 2369
+R 2370 2 0 He’s 
+R 2373 2 0 just 
+R 2376 3 0 wishing 
+R 2380 1 0 he 
+R 2382 2 0 could 
+R 2385 3 0 bite 
+R 2389 3 0 it, 
+R 2393 4 0 huh?
+- 2397
+R 2412 5 0 Never 
+R 2418 3 0 turn 
+R 2422 5 0 down 
+R 2428 9 0 money
+- 2437
+R 2439 4 0 Slayin’ 
+R 2444 5 0 these 
+R 2450 4 0 hoes
+- 2454
+R 2455 4 0 Gold 
+R 2460 4 0 trigger 
+R 2465 3 0 on 
+R 2469 3 0 the 
+R 2473 4 0 gun 
+R 2478 2 0 like
+- 2480
+: 2481 4 10 I
+* 2486 2 7 ~’m 
+: 2489 4 7 so
+: 2494 2 5 ~ 
+* 2497 4 5 fa
+: 2502 2 3 ~n
+: 2507 7 3 cy
+- 2514
+: 2528 4 10 You 
+: 2533 3 10 al
+: 2537 4 10 rea
+: 2542 4 12 dy 
+: 2547 5 10 kno
+: 2553 5 7 ~w
+- 2558
+: 2561 4 3 I’m 
+: 2567 3 10 i
+: 2571 2 7 ~n 
+: 2574 4 7 the
+: 2579 2 5 ~ 
+: 2582 4 5 fa
+: 2587 2 3 ~st 
+: 2592 7 3 lane
+- 2599
+: 2615 4 5 From 
+: 2620 5 5 L
+: 2626 2 5 A 
+: 2629 2 5 to 
+: 2632 4 5 To
+: 2637 2 3 ky
+: 2640 2 0 o
+- 2642
+: 2652 4 10 I
+: 2657 2 7 ~’m 
+: 2660 4 7 so
+: 2665 2 5 ~ 
+: 2668 4 5 fa
+: 2673 2 3 ~n
+: 2678 7 3 cy
+- 2685
+: 2700 3 10 Can’t 
+: 2704 2 10 you 
+: 2707 3 10 taste 
+: 2712 3 12 this 
+: 2717 5 10 go
+: 2723 5 7 ~ld?
+- 2728
+: 2732 4 3 Re
+: 2738 3 10 me
+: 2742 2 7 ~m
+: 2745 4 7 be
+: 2750 2 5 ~r 
+: 2753 4 5 my
+: 2758 2 3 ~ 
+: 2761 7 3 name
+- 2768
+* 2771 4 0 ’Bout 
+* 2776 4 0 to 
+: 2781 4 7 blo
+: 2786 2 5 ~
+: 2789 2 3 ~
+: 2792 4 5 ~
+: 2797 2 3 ~
+: 2800 2 2 ~
+: 2803 5 3 ~
+: 2809 4 2 ~
+: 2814 5 0 ~w
+- 2819
+R 2823 4 0 Who 
+R 2828 3 0 that, 
+R 2832 3 0 who 
+R 2836 3 0 that
+- 2839
+R 2845 4 0 I-
+R 2850 2 0 G-
+R 2853 2 0 G-
+R 2856 4 0 Y
+- 2860
+R 2863 3 0 That 
+R 2867 2 0 do 
+R 2870 2 0 that, 
+R 2874 2 0 do 
+R 2877 2 0 that
+- 2879
+R 2884 3 0 I-
+R 2888 3 0 I-
+R 2893 2 0 G-
+R 2896 2 0 G-
+R 2899 4 0 Y
+- 2903
+R 2908 4 0 Who 
+R 2913 3 0 that, 
+R 2917 2 0 who 
+R 2920 3 0 that
+- 2923
+R 2924 3 0 I-
+R 2928 3 0 I-
+R 2932 3 0 I-
+R 2936 2 0 G-
+R 2939 2 0 G
+R 2942 4 0 -Y
+- 2946
+* 2951 4 7 Blo
+: 2956 2 5 ~
+* 2959 2 3 ~
+: 2962 4 5 ~
+: 2967 2 3 ~
+* 2970 2 2 ~
+: 2973 5 3 ~
+: 2979 4 2 ~
+: 2984 5 0 ~w
+- 2989
+R 2992 5 0 Who 
+R 2998 3 0 that, 
+R 3002 3 0 who 
+R 3006 3 0 that
+- 3009
+R 3016 4 0 I-
+R 3021 2 0 G-
+R 3024 2 0 G-
+R 3027 5 0 Y
+- 3032
+R 3033 4 0 That 
+R 3038 2 0 do 
+R 3041 4 0 that, 
+R 3046 1 0 do 
+R 3048 4 0 that
+- 3052
+R 3056 3 0 I-
+R 3060 3 0 I-
+R 3064 2 0 G-
+R 3067 2 0 G
+R 3070 5 0 -Y
+- 3075
+R 3080 3 0 Who 
+R 3084 2 0 that, 
+R 3087 3 0 who 
+R 3091 2 0 that
+- 3093
+R 3095 3 0 I-
+R 3099 2 0 I-
+R 3102 3 0 I-
+R 3106 2 0 G-
+R 3109 2 0 G-
+R 3112 5 0 Y
+- 3117
+: 3122 4 7 Blo
+: 3127 2 5 ~
+: 3130 2 3 ~
+: 3133 4 5 ~
+: 3138 2 3 ~
+: 3141 2 2 ~
+* 3144 5 3 ~
+* 3150 4 2 ~
+* 3155 5 0 ~w
+E
