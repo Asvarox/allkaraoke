@@ -18790,6 +18790,32 @@
     "local": false
   },
   {
+    "id": "cat-stevens-father-and-son",
+    "title": "Father And Son",
+    "artist": "Cat Stevens",
+    "video": "P6zaCV4niKk",
+    "language": [
+      "English"
+    ],
+    "bpm": 283.6,
+    "gap": 16245.063469675599,
+    "year": "1970",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-03T00:13:14.451Z",
+    "realBpm": 136,
+    "volume": 0.81,
+    "author": "seblea",
+    "sourceUrl": "https://www.youtube.com/watch?v=P6zaCV4niKk",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "tracksCount": 1,
+    "search": "catstevensfatherandson",
+    "local": false
+  },
+  {
     "id": "cat-stevens-morning-has-broken",
     "title": "Morning Has Broken",
     "artist": "Cat Stevens",
@@ -19379,6 +19405,54 @@
     ],
     "tracksCount": 1,
     "search": "charlixcxapple",
+    "local": false
+  },
+  {
+    "id": "charli-xcx-boom-clap",
+    "title": "Boom Clap",
+    "artist": "Charli XCX",
+    "video": "AOPMlIIg_38",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.49,
+    "gap": 652.3634363925212,
+    "year": "2014",
+    "lastUpdate": "2024-12-03T00:13:15.237Z",
+    "realBpm": 92,
+    "volume": 0.74,
+    "author": "magigram",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "tracksCount": 1,
+    "search": "charlixcxboomclap",
+    "local": false
+  },
+  {
+    "id": "charli-xcx-troye-sivan-1999",
+    "title": "1999",
+    "artist": "Charli XCX & Troye Sivan",
+    "video": "6-v1b9waHWY",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 19451.774193548386,
+    "year": "2018",
+    "lastUpdate": "2024-12-03T00:13:15.381Z",
+    "realBpm": 124,
+    "volume": 0.7,
+    "author": "Viktor1234678",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "charlixcxtroyesivan1999",
     "local": false
   },
   {
@@ -23597,6 +23671,34 @@
     "local": false
   },
   {
+    "id": "danny-saucedo-dor-for-dig",
+    "title": "Dör för dig",
+    "artist": "Danny Saucedo",
+    "video": "yPJQMNFjLZo",
+    "language": [
+      "Swedish"
+    ],
+    "bpm": 340.16,
+    "gap": 6055.7714016933205,
+    "year": "2015",
+    "artistOrigin": "SE",
+    "lastUpdate": "2024-12-03T00:13:14.794Z",
+    "genre": "Pop",
+    "realBpm": 85,
+    "previewStart": 60,
+    "previewEnd": 109,
+    "volume": 0.74,
+    "author": "Lumina",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "dannysaucedodorfordig",
+    "local": false
+  },
+  {
     "id": "danzel-pump-it-up",
     "title": "Pump it up",
     "artist": "Danzel",
@@ -24930,6 +25032,136 @@
     "local": false
   },
   {
+    "id": "deftones-back-to-school-mini-maggit",
+    "title": "Back to School (Mini Maggit)",
+    "artist": "Deftones",
+    "video": "1gxZIL4zpIQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 342.12,
+    "gap": 9759.581901087338,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.619Z",
+    "genre": "Alternative metal",
+    "realBpm": 85,
+    "volume": 1,
+    "author": "Deftones",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonesbacktoschoolminimaggit",
+    "local": false
+  },
+  {
+    "id": "deftones-be-quiet-and-drive-far-away",
+    "title": "Be Quiet and Drive (Far Away)",
+    "artist": "Deftones",
+    "video": "KvknOXGPzCQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 373.48,
+    "gap": 35280.930170290245,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.624Z",
+    "genre": "Alternative metal",
+    "realBpm": 93,
+    "volume": 0.9,
+    "author": "Deftones",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonesbequietanddrivefaraway",
+    "local": false
+  },
+  {
+    "id": "deftones-change-in-the-house-of-flies",
+    "title": "Change (In the House of Flies)",
+    "artist": "Deftones",
+    "video": "WPpDyIJdasg",
+    "language": [
+      "English"
+    ],
+    "bpm": 274.5,
+    "gap": 19986.39344262295,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.623Z",
+    "genre": "Alternative metal",
+    "realBpm": 142,
+    "volume": 0.9,
+    "author": "Deftones",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftoneschangeinthehouseofflies",
+    "local": false
+  },
+  {
+    "id": "deftones-diamond-eyes",
+    "title": "Diamond Eyes",
+    "artist": "Deftones",
+    "video": "qksTlo_1Tpw",
+    "language": [
+      "English"
+    ],
+    "bpm": 205.35,
+    "gap": 13977.35573411249,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.612Z",
+    "genre": "Alternative Metal",
+    "realBpm": 154,
+    "volume": 0.9,
+    "author": "boohjaa",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonesdiamondeyes",
+    "local": false
+  },
+  {
+    "id": "deftones-entombed",
+    "title": "Entombed",
+    "artist": "Deftones",
+    "video": "x2h8_rThm6E",
+    "language": [
+      "English"
+    ],
+    "bpm": 351.18,
+    "gap": 27323.597813087305,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.615Z",
+    "genre": "Metal Alternative",
+    "realBpm": 130,
+    "volume": 0.72,
+    "author": "Deftones",
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonesentombed",
+    "local": false
+  },
+  {
     "id": "deftones-kimdracula",
     "title": "Kimdracula",
     "artist": "Deftones",
@@ -24954,6 +25186,59 @@
     ],
     "tracksCount": 1,
     "search": "deftoneskimdracula",
+    "local": false
+  },
+  {
+    "id": "deftones-minerva",
+    "title": "Minerva",
+    "artist": "Deftones",
+    "video": "mLa0-sQg1YM",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.74,
+    "gap": 29866.988455915714,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.613Z",
+    "genre": "Metal Alternativo",
+    "realBpm": 124,
+    "volume": 0.85,
+    "author": "Deftones",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonesminerva",
+    "local": false
+  },
+  {
+    "id": "deftones-my-own-summer-shove-it",
+    "title": "My Own Summer (Shove It)",
+    "artist": "Deftones",
+    "video": "XOzs1FehYOA",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.15,
+    "gap": 18333.547283966855,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.621Z",
+    "genre": "Metal",
+    "videoGap": 4,
+    "realBpm": 72,
+    "volume": 0.9,
+    "author": "Deftones",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "tracksCount": 1,
+    "search": "deftonesmyownsummershoveit",
     "local": false
   },
   {
@@ -28377,6 +28662,57 @@
     ],
     "tracksCount": 1,
     "search": "donnasummerifeellove",
+    "local": false
+  },
+  {
+    "id": "donna-summer-last-dance",
+    "title": "Last Dance",
+    "artist": "Donna Summer",
+    "video": "G5rJunb4sIk",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 1746.0629921259842,
+    "year": "1978",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:15.526Z",
+    "genre": "Pop",
+    "realBpm": 125,
+    "volume": 0.9,
+    "author": "kouta",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "donnasummerlastdance",
+    "local": false
+  },
+  {
+    "id": "donna-summer-she-works-hard-for-the-money",
+    "title": "She Works Hard For The Money",
+    "artist": "Donna Summer",
+    "video": "ksuYi5_z0fQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 273,
+    "gap": 24260.98901098901,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:15.525Z",
+    "realBpm": 137,
+    "volume": 0.8,
+    "author": "Leki",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "donnasummersheworkshardforthemoney",
     "local": false
   },
   {
@@ -39682,6 +40018,32 @@
     "local": false
   },
   {
+    "id": "heart-alone",
+    "title": "Alone",
+    "artist": "Heart",
+    "video": "1Cw1ng75KP0",
+    "language": [
+      "English"
+    ],
+    "bpm": 176.2,
+    "gap": 10470.433598183881,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.291Z",
+    "genre": "Country",
+    "realBpm": 175,
+    "volume": 0.82,
+    "author": "Tuquinho",
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "tracksCount": 1,
+    "search": "heartalone",
+    "local": false
+  },
+  {
     "id": "heathers-freeze-your-brain",
     "title": "Freeze Your Brain",
     "artist": "Heathers",
@@ -41405,6 +41767,30 @@
     "local": false
   },
   {
+    "id": "icona-pop-feat-charli-xcx-i-love-it",
+    "title": "I Love It",
+    "artist": "Icona Pop feat. Charli XCX",
+    "video": "UxxajLWwzqY",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 21188.095238095237,
+    "year": "2012",
+    "lastUpdate": "2024-12-03T00:13:14.939Z",
+    "realBpm": 126,
+    "volume": 0.78,
+    "author": "gbsh, fepo",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "iconapopfeatcharlixcxiloveit",
+    "local": false
+  },
+  {
     "id": "idina-menzel-let-it-go",
     "title": "Let It Go",
     "artist": "Idina Menzel",
@@ -41457,6 +41843,31 @@
     ],
     "tracksCount": 2,
     "search": "idinamenzelwithmichaelbublebabyitscoldoutside",
+    "local": false
+  },
+  {
+    "id": "iggy-azalea-feat-charli-xcx-fancy",
+    "title": "Fancy",
+    "artist": "Iggy Azalea feat. Charli XCX",
+    "video": "O-zpOMYRi0w",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.22,
+    "gap": 6892.9705394518605,
+    "year": "2014",
+    "lastUpdate": "2024-12-03T00:13:15.096Z",
+    "genre": "Electro Hop",
+    "realBpm": 95,
+    "volume": 0.74,
+    "author": "amro98",
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "tracksCount": 1,
+    "search": "iggyazaleafeatcharlixcxfancy",
     "local": false
   },
   {
@@ -54726,6 +55137,35 @@
     "local": false
   },
   {
+    "id": "linkin-park-over-each-other",
+    "title": "Over Each Other",
+    "artist": "Linkin Park",
+    "video": "fSHoePrnmMw",
+    "language": [
+      "English"
+    ],
+    "bpm": 296,
+    "gap": 4236.486486486487,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:14.792Z",
+    "genre": "Rock",
+    "realBpm": 148,
+    "volume": 0.75,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=29627",
+    "tracks": [
+      {
+        "name": "Linkin Park - Over Each Other",
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "linkinparkovereachother",
+    "local": false
+  },
+  {
     "id": "linkin-park-papercut",
     "title": "Papercut",
     "artist": "Linkin Park",
@@ -63261,6 +63701,33 @@
     "local": false
   },
   {
+    "id": "mike-oldfield-nuclear",
+    "title": "Nuclear",
+    "artist": "Mike Oldfield",
+    "video": "IkAp5gAYDUQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 4510,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2024-12-03T00:13:14.626Z",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "magic-ott",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=134238",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21120",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mikeoldfieldnuclear",
+    "local": false
+  },
+  {
     "id": "mike-posner-cooler-than-me",
     "title": "Cooler Than Me",
     "artist": "Mike Posner",
@@ -63316,6 +63783,33 @@
     ],
     "tracksCount": 1,
     "search": "mikeposneritookapillinibiza",
+    "local": false
+  },
+  {
+    "id": "miki-matsubara-stay-with-me",
+    "title": "Stay With Me",
+    "artist": "Miki Matsubara",
+    "video": "QNYT9wVwQ8A",
+    "language": [
+      "Japanese",
+      "English"
+    ],
+    "bpm": 216.89,
+    "gap": -6.6379270597998925,
+    "year": "1980",
+    "artistOrigin": "JP",
+    "lastUpdate": "2024-12-03T00:13:14.452Z",
+    "genre": "City Pop",
+    "realBpm": 108,
+    "volume": 0.78,
+    "author": "marxmy",
+    "tracks": [
+      {
+        "start": 4
+      }
+    ],
+    "tracksCount": 1,
+    "search": "mikimatsubarastaywithme",
     "local": false
   },
   {
@@ -76775,10 +77269,10 @@
       "English"
     ],
     "bpm": 258,
-    "gap": 8491.627906976744,
+    "gap": 9541.627906976744,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2023-04-19T19:02:18.532Z",
+    "lastUpdate": "2024-12-02T06:21:57.023Z",
     "genre": "Alternative",
     "realBpm": 123,
     "volume": 0.7,
@@ -84521,6 +85015,32 @@
     "local": false
   },
   {
+    "id": "skillet-the-older-i-get",
+    "title": "The Older I Get",
+    "artist": "Skillet",
+    "video": "jQYXwppiuV0",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 12405.625,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:13.561Z",
+    "genre": "Hard Rock",
+    "realBpm": 161,
+    "volume": 0.73,
+    "author": "Lorc",
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "tracksCount": 1,
+    "search": "skillettheolderiget",
+    "local": false
+  },
+  {
     "id": "skillet-yours-to-hold",
     "title": "Yours To Hold",
     "artist": "Skillet",
@@ -88273,6 +88793,30 @@
     ],
     "tracksCount": 1,
     "search": "tarzanenmicorazonviviras",
+    "local": false
+  },
+  {
+    "id": "tarzan-hijo-de-hombre",
+    "title": "Hijo de hombre",
+    "artist": "Tarzán",
+    "video": "rJnqoGU5pQ4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 295.4,
+    "gap": 12387.4278943805,
+    "year": "1999",
+    "lastUpdate": "2024-12-03T00:13:13.568Z",
+    "realBpm": 142,
+    "volume": 0.99,
+    "author": "Tuquinho",
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tarzanhijodehombre",
     "local": false
   },
   {
@@ -95056,6 +95600,32 @@
     ],
     "tracksCount": 1,
     "search": "tinaturnerthebest",
+    "local": false
+  },
+  {
+    "id": "tina-turner-we-dont-need-another-hero-thunderdome",
+    "title": "We Don’t Need Another Hero (Thunderdome)",
+    "artist": "Tina Turner",
+    "video": "6LKv5GL6iL0",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.12,
+    "gap": 20205.449863677673,
+    "year": "1985",
+    "artistOrigin": "US",
+    "lastUpdate": "2024-12-03T00:13:15.527Z",
+    "genre": "Soundtrack",
+    "realBpm": 99,
+    "volume": 0.75,
+    "author": "lozboorman",
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "tracksCount": 1,
+    "search": "tinaturnerwedontneedanotherherothunderdome",
     "local": false
   },
   {

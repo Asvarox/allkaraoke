@@ -191,6 +191,7 @@
     "Chaka Khan",
     "Chappell Roan",
     "Charli XCX",
+    "Charli XCX & Troye Sivan",
     "Charlie Puth",
     "Charlie Puth & Selena Gomez",
     "Chenoa",
@@ -421,6 +422,7 @@
     "Harpo",
     "Harry Styles",
     "Hazbin Hotel",
+    "Heart",
     "Heathers",
     "Helena Paparizou",
     "Hellogoodbye",
@@ -442,7 +444,9 @@
     "Huey Lewis & The News",
     "Hunter Hayes",
     "Ice Cube",
+    "Icona Pop feat. Charli XCX",
     "Idina Menzel",
+    "Iggy Azalea feat. Charli XCX",
     "Iggy Pop",
     "Ike & Tina Turner",
     "Imagine Dragons",
@@ -690,6 +694,7 @@
     "Midnight Oil",
     "Mika feat. Ariana Grande",
     "Mika",
+    "Mike Oldfield",
     "Mike Posner",
     "Miley Cyrus",
     "Miley Cyrus & Jessie J",
@@ -1186,5 +1191,5 @@
     "Lithuanian",
     "Latvian"
   ],
-  "songs": 3806
+  "songs": 3828
 }
