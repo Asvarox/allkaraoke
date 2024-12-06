@@ -45,7 +45,7 @@ test('Should properly manage remote mics permission settings', async ({ page, br
     await expect(remoteMic.remoteMicMainPage.noPermissionsToControlTheGameAlert).toBeVisible();
     await expect(remoteMic.remoteMicMainPage.remoteKeyboardElement).not.toBeVisible();
     await expect(remoteMic.remoteMicMainPage.joinGameButton).not.toBeVisible();
-    await remoteMic.remoteMicMainPage.goToSettings();
+    await remoteMic.remoteMicMainPage.remoteTabBar.goToSettings();
     await expect(remoteMic.remoteMicSettingsPage.manageGameButton).not.toBeVisible();
   });
 
@@ -54,7 +54,7 @@ test('Should properly manage remote mics permission settings', async ({ page, br
     await pages.settingsPage.expectConnectedDevicePermissionToBeWrite();
 
     await expect(remoteMic.remoteMicSettingsPage.manageGameButton).toBeVisible();
-    await remoteMic.remoteMicSettingsPage.goToMicMainPage();
+    await remoteMic.remoteMicSettingsPage.remoteTabBar.goToMicMainPage();
     await expect(remoteMic.remoteMicMainPage.noPermissionsToControlTheGameAlert).not.toBeVisible();
     await expect(remoteMic.remoteMicMainPage.remoteKeyboardElement).toBeVisible();
     await expect(remoteMic.remoteMicMainPage.joinGameButton).toBeVisible();
