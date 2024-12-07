@@ -4,9 +4,10 @@ import { backgroundTheme, useBackground } from 'modules/Elements/LayoutWithBackg
 import VideoPlayer, { VideoPlayerRef, VideoState } from 'modules/Elements/VideoPlayer';
 import useDebounce from 'modules/hooks/useDebounce';
 import useViewportSize from 'modules/hooks/useViewportSize';
-import { isHalloweenSong } from 'modules/Songs/utils/specialSongsThemeChecks';
-import { selectHalloweenSong } from 'modules/SoundManager';
+import { isChristmasSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { FeatureFlags } from 'modules/utils/featureFlags';
+import isDev from 'modules/utils/isDev';
+import isE2E from 'modules/utils/isE2E';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
 import {
   ComponentProps,
@@ -26,6 +27,7 @@ import {
   SongListEntryDetailsTitle,
 } from 'routes/SingASong/SongSelection/Components/SongCard';
 import SongSettings from 'routes/SingASong/SongSelection/Components/SongSettings';
+import { ValuesType } from 'utility-types';
 
 interface Props {
   songPreview: SongPreview;
@@ -68,21 +70,18 @@ const useSpecialSongTheme = (
   return isSpecialThemeSong;
 };
 
-export const useHalloweenTheme = (songPreview: SongPreview) => {
-  const isHalloweenEnabled = useFeatureFlag(FeatureFlags.Halloween);
-  const halloweenSong = useSpecialSongTheme(
+export const useSpecialTheme = (
+  songPreview: SongPreview,
+  feature: ValuesType<typeof FeatureFlags>,
+  check: (preview: SongPreview) => boolean,
+  theme: backgroundTheme,
+) => {
+  const isSpecialThemeEnabled = isDev() || isE2E() ? true : useFeatureFlag(feature);
+  const isSpecialSong = useSpecialSongTheme(
     songPreview,
-    isHalloweenEnabled ? 'halloween' : 'regular',
-    isHalloweenEnabled ? isHalloweenSong : () => false,
+    isSpecialThemeEnabled ? theme : 'regular',
+    isSpecialThemeEnabled ? check : () => false,
   );
-
-  useEffect(() => {
-    if (halloweenSong) {
-      selectHalloweenSong.play(false);
-    } else {
-      selectHalloweenSong.stop();
-    }
-  }, [halloweenSong]);
 };
 
 export default function SongPreviewComponent({
@@ -100,7 +99,7 @@ export default function SongPreviewComponent({
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
-  // useHalloweenTheme(songPreview);
+  useSpecialTheme(songPreview, FeatureFlags.Christmas, isChristmasSong, 'christmas');
 
   const expanded = keyboardControl;
 

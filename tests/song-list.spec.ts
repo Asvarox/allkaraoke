@@ -15,16 +15,18 @@ const englishPlaylist = 'English';
 const duetsPlaylist = 'Duets';
 const newPlaylist = 'New';
 const allPlaylist = 'All';
+
 const xmasPlaylist = 'Christmas';
+const xmasSong = 'e2e-christmas-english-1995';
+
 const halloweenPlaylist = 'Halloween';
+const halloweenSong = 'e2e-croissant-french-1994';
 
 const engModSong = 'e2e-single-english-1995';
 const polOldDuetSong = 'e2e-multitrack-polish-1994';
 const polEngSong = 'e2e-english-polish-1994';
 const polSong = 'e2e-skip-intro-polish';
 const engNewSong = 'e2e-new-english-1995';
-const xmasSong = 'e2e-christmas-english-1995';
-const halloweenSong = 'e2e-croissant-french-1994';
 const lastSong = 'zzz-last-polish-1994';
 
 const polishSongTitle = 'multitrack';
@@ -32,7 +34,7 @@ const polishLang = 'Polish';
 const englishLang = 'English';
 const frenchLang = 'French';
 
-test('Filters - PlayLists', async ({ page }) => {
+test.skip('Filters - PlayLists', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -122,7 +124,7 @@ test('Filters - PlayLists', async ({ page }) => {
   });
 });
 
-test.skip('Filters - PlayLists (Halloween)', async ({ page }) => {
+test('Filters - PlayLists (Christmas)', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -158,19 +160,19 @@ test.skip('Filters - PlayLists (Halloween)', async ({ page }) => {
   await test.step('Check if songs are visible in all songs', async () => {
     await pages.songLanguagesPage.continueAndGoToSongList();
     await expect(await pages.songListPage.getSongElement(engModSong)).toBeVisible();
-    await expect(await pages.songListPage.getSongElement(halloweenSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
     await pages.songListPage.focusSong(polSong);
   });
 
-  await test.step('Going to Halloween-playlist and check songs visibility', async () => {
+  await test.step('Going to Christmas-playlist and check songs visibility', async () => {
     await page.keyboard.press('ArrowLeft');
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
-    await pages.songListPage.expectPlaylistToBeSelected(halloweenPlaylist);
+    await pages.songListPage.expectPlaylistToBeSelected(xmasPlaylist);
     await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
     await expect(await pages.songListPage.getSongElement(polEngSong)).not.toBeVisible();
-    await expect(await pages.songListPage.getSongElement(halloweenSong)).toBeVisible();
+    await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {

@@ -32,6 +32,10 @@ const themeStyles: Partial<Record<backgroundTheme, CSSProperties>> & { default: 
     backgroundImage: `linear-gradient(-45deg, ${colorSets.red.stroke}, ${colorSets.blue.text}, ${colorSets.blue.stroke}, ${colorSets.red.stroke})`,
     backgroundSize: '400% 400%',
   },
+  christmas: {
+    backgroundImage: `linear-gradient(-45deg, ${colorSets.christmasGreen.text}, ${colorSets.christmasGreen.stroke}, ${colorSets.christmasRed.stroke}, ${colorSets.christmasRed.stroke})`,
+    backgroundSize: '400% 400%',
+  },
   halloween: {
     background: 'black',
   },
@@ -84,51 +88,7 @@ const EscBar = styled.div`
 
 export const EurovisionTheme = () => <EscBar data-animate={!global.location?.href.includes('/remote-mic')} />;
 
-const christmasCss = css`
-  background-image: linear-gradient(
-    -45deg,
-    ${colorSets.christmasGreen.text},
-    ${colorSets.christmasGreen.stroke},
-    ${colorSets.christmasRed.stroke},
-    ${colorSets.christmasRed.stroke}
-  );
-  background-size: 400% 400%;
-`;
-
-const eurovisionCss = css`
-  display: flex;
-`;
-const halloweenCss = css`
-  background: black;
-`;
-
-const regularCss = css`
-  background-image: linear-gradient(
-    -45deg,
-    ${colorSets.red.stroke},
-    ${colorSets.blue.text},
-    ${colorSets.blue.stroke},
-    ${colorSets.red.stroke}
-  );
-  background-size: 400% 400%;
-`;
-
 export const BackgroundStatic = twc.div`bg-white w-full h-full`;
-
-const backgroundHigh = css`
-  animation: gradient 15s ease infinite;
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-`;
 
 type BGProps = TwcComponentProps<'div'> & {
   'data-theme': backgroundTheme;
