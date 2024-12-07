@@ -23,7 +23,7 @@ import {
 import { SongGroup } from 'routes/SingASong/SongSelection/Hooks/useSongList';
 
 export interface VirtualizedListMethods {
-  getSongPosition: (group: string, index: number) => { x: number; y: number } | undefined;
+  getSongPosition: (group: string, index: number) => { y: number } | undefined;
   scrollToSongInGroup: (group: string, songId: number, behavior?: ScrollToOptions['behavior']) => Promise<void>;
   scrollToGroup: (group: string) => void;
 }
@@ -36,7 +36,7 @@ interface Props<T> {
   renderGroup: (group: SongGroup) => ReactNode;
   renderItem: (item: SongGroup['songs'][number], group: SongGroup, props?: { style: CSSProperties }) => ReactNode;
   ListRowWrapper: ComponentType<PropsWithChildren<{ group?: SongGroup }>>;
-  GroupRowWrapper: ComponentType<PropsWithChildren<{ group?: SongGroup }>>;
+  GroupRowWrapper: ComponentType<PropsWithChildren<{ group?: SongGroup; style?: CSSProperties }>>;
   perRow: number;
   itemHeight: number;
   groupHeight: number;
@@ -105,9 +105,7 @@ function VirtualizedListInner<T>(props: Props<T>, ref: ForwardedRef<VirtualizedL
 
         const y = virtuoso.current?.getItemPositionY(rowsToScroll) ?? -1;
 
-        const x = songIndex % props.perRow;
-
-        return { x, y };
+        return { y };
       },
       scrollToGroup: (group: string) => {
         const groupIndex = props.groups.findIndex((g) => g.name === group);

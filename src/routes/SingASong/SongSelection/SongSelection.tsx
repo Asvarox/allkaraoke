@@ -153,8 +153,9 @@ export default function SongSelection({ onSongSelected, preselectedSong }: Props
       `[data-song-index="${focusedSong}"][data-group="${focusedGroup}"]`,
     );
     if (!isLoading && song) {
+      const position = list.current?.getSongPosition(focusedGroup, focusedSong);
       setPositions({
-        previewTop: song.offsetTop + (song.parentNode as HTMLDivElement).offsetTop,
+        previewTop: position?.y ?? 0,
         previewLeft: song.offsetLeft,
       });
     } else if (!isLoading) {
@@ -353,19 +354,6 @@ const NoSongsFound = styled.div`
 
   font-size: 10rem;
 `;
-
-const SongsGroupHeader = styled.div`
-  ${typography};
-  display: flex;
-  padding: 0.5rem 1rem;
-  font-size: 3.5rem;
-  z-index: 1;
-  color: ${styles.colors.text.active};
-  background: rgba(0, 0, 0, 0.7);
-  align-items: center;
-  gap: 1rem;
-`;
-
 const SongListContainer = styled.div<{ active?: boolean; dim?: boolean }>`
   position: relative;
   flex: 1 1 auto;
@@ -415,15 +403,10 @@ const BaseRow = styled.div`
   display: flex;
   flex-wrap: nowrap;
   gap: var(--song-list-gap);
-  padding: calc(var(--song-list-gap) / 2) var(--song-list-padding-right) calc(var(--song-list-gap) / 2)
-    var(--song-list-padding-left);
+  padding: 0 var(--song-list-padding-right) var(--song-list-gap) var(--song-list-padding-left);
 `;
 
-const GroupRow = styled(BaseRow)`
-  position: sticky;
-  top: 0;
-  z-index: 3;
-`;
+const GroupRow = styled(BaseRow)``;
 
 const ListRow = styled(BaseRow)`
   position: relative; // this way the song preview position is computed properly
@@ -431,6 +414,18 @@ const ListRow = styled(BaseRow)`
   &[data-is-new='true'] {
     background: rgba(0, 0, 0, 0.7);
   }
+`;
+
+const SongsGroupHeader = styled.div`
+  ${typography};
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 5.4rem;
+  z-index: 1;
+  color: ${styles.colors.text.active};
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  gap: 1rem;
 `;
 
 const SongsGroupContainer = styled.div`

@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup, container }: Props) {
-  const [activeGroups, setActiveGroups] = useState<string[]>([]);
+  const [activeGroups, setActiveGroups] = useState<number[]>([]);
 
   useEffect(() => {
     // This is slightly complicated logic needed due to virtualization of the list
@@ -21,18 +21,18 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
     // When it happens it restarts the intersection observer with currently attached groups
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const id = entry.target.getAttribute('data-group-name')!;
+        const index = Number(entry.target.getAttribute('data-virtualized-group')!);
 
         if (entry.isIntersecting) {
-          setActiveGroups((current) => [...current, id]);
+          setActiveGroups((current) => [...current, index]);
         } else {
-          setActiveGroups((current) => current.filter((group) => group !== id));
+          setActiveGroups((current) => current.filter((group) => group !== index));
         }
       });
     });
 
     const mutationObserver = new MutationObserver(() => {
-      const element = document.querySelectorAll(`[data-group-name]`);
+      const element = document.querySelectorAll(`[data-virtualized-group]`);
       observer.disconnect();
       setActiveGroups([]);
 
@@ -58,8 +58,8 @@ export default function SongGroupsNavigation({ groupedSongList, onScrollToGroup,
   return (
     <>
       <Container>
-        {groupedSongList.map((group) => {
-          const active = activeGroups.includes(group.name);
+        {groupedSongList.map((group, index) => {
+          const active = activeGroups.includes(index);
           return (
             <SongsGroupButton
               key={group.name}

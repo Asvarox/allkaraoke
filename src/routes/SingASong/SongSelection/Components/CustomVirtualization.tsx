@@ -16,6 +16,13 @@ import {
   useState,
 } from 'react';
 
+interface ItemPosition {
+  type: 'group' | 'item';
+  bottom: number;
+  index: number;
+  groupIndex: number;
+}
+
 export interface CustomVirtualizedListMethods {
   getItemPositionY: (index: number) => number;
   scrollTo: (pos: number) => void;
@@ -52,7 +59,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
   const viewportHeight = viewportElementRef.current?.getBoundingClientRect().height ?? global.innerHeight;
 
   const itemsPositions = useMemo(() => {
-    const sizes: Array<{ type: 'group' | 'item'; bottom: number; index: number; groupIndex: number }> = [];
+    const sizes: ItemPosition[] = [];
 
     // build the list of items with their positions
     props.groupSizes.forEach((groupSize, index) => {
@@ -187,7 +194,7 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           height: totalHeight,
         }}>
         {Header && <Header context={props.context} />}
-        <div style={{ position: 'absolute', top: pt, left: 0, right: 0 }}>
+        <div style={{ transform: `translateY(${pt}px)` }}>
           {itemsPositions[forcedItemIndex] && !isBetween(forcedItemIndex, rangeFrom, rangeTo) && (
             <>
               {props.itemContent(itemsPositions[forcedItemIndex].index, itemsPositions[forcedItemIndex].groupIndex, {
@@ -205,7 +212,9 @@ function CustomVirtualizationInner<T>(props: Props<T>, ref: ForwardedRef<CustomV
           )}
           {groupedItemsToRender.map((group, index) => (
             // Make sure that th key is pointing to the group-index, to prevent remounting of elements if a group disappears
-            <div key={(group[0] ?? itemsPositions[groupToRender]).groupIndex}>
+            <div
+              key={(group[0] ?? itemsPositions[groupToRender]).groupIndex}
+              data-virtualized-group={(group[0] ?? itemsPositions[groupToRender]).groupIndex}>
               {index === 0 && groupToRender !== -1 && props.groupContent(itemsPositions[groupToRender].index)}
               {group.map(({ index, type, bottom, groupIndex }) => {
                 return (
