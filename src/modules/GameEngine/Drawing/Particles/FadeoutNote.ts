@@ -1,9 +1,8 @@
 import { Note } from 'interfaces';
-import { BIG_NOTE_HEIGHT } from 'modules/GameEngine/Drawing/calculateData';
 import drawNote from '../Elements/note';
 import Particle from '../interfaces';
 
-const initialTtl = 200;
+const initialTtl = 300;
 
 export default class FadeoutNote implements Particle {
   public finished = false;
@@ -22,7 +21,7 @@ export default class FadeoutNote implements Particle {
 
     ctx.save();
     ctx.globalAlpha = percentage;
-    ctx.translate(0, BIG_NOTE_HEIGHT * (1 - percentage));
+    ctx.translate(Math.round(canvas.width * (percentage - 1)), 0);
 
     drawNote(ctx, this.x, this.y, this.width, this.note, this.playerNumber);
 
