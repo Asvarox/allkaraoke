@@ -26,7 +26,7 @@ export default defineConfig({
     sentryVitePlugin({
       applicationKey: 'allkaraoke-party-sentry-key',
     }),
-    ReactCompilerBabelPlugin,
+    false && ReactCompilerBabelPlugin,
     react({
       babel: {
         plugins: [
