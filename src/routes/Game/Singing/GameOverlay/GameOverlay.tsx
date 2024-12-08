@@ -53,7 +53,7 @@ const GameOverlay = forwardRef(function (
         resume: () => drawer.current?.resume(),
       };
     },
-    [drawer.current, lyrics.current?.offsetHeight, overlayScaleFactor],
+    [],
   );
 
   useEffect(() => {
@@ -79,7 +79,7 @@ const GameOverlay = forwardRef(function (
     return () => {
       drawer.current?.end();
     };
-  }, [lyrics.current?.offsetHeight, overlayScaleFactor]);
+  }, [overlayScaleFactor]);
 
   useEffect(() => {
     if (isPauseMenuVisible && drawer.current?.isPlaying()) {

@@ -64,6 +64,7 @@ function Settings() {
         label="FPS Count"
         value={fpsCount}
       />
+      {/* eslint-disable-next-line react-compiler/react-compiler */}
       <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
       <hr />
       <Switcher

@@ -5,7 +5,7 @@ import GameState from 'modules/GameEngine/GameState/GameState';
 import SongsService from 'modules/Songs/SongsService';
 import useKeyboardNav from 'modules/hooks/useKeyboardNav';
 import useSmoothNavigate from 'modules/hooks/useSmoothNavigate';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import RateSong from 'routes/Game/Singing/GameOverlay/Components/RateSong';
 import SelectInputModal from 'routes/SelectInput/SelectInputModal';
 import InputLag from 'routes/Settings/InputLag';
@@ -41,6 +41,8 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
     }
   };
 
+  const onInputLagActive = useCallback(() => inputLagRef.current?.focus(), []);
+
   return (
     <Modal onClose={onResume}>
       {!rateSongOpen && (
@@ -55,7 +57,8 @@ export default function PauseMenu({ onResume, onExit, onRestart }: Props) {
               Microphones settings
             </MenuButton>
             <hr />
-            <InputLag ref={inputLagRef} {...register('input-lag', () => inputLagRef.current?.focus())} />
+            {/* eslint-disable-next-line react-compiler/react-compiler */}
+            <InputLag ref={inputLagRef} {...register('input-lag', onInputLagActive)} />
             <MenuButton
               {...register('edit-song', () => navigate(`edit/song/`, { song: GameState.getSong()?.id ?? '' }))}
               size="small">
