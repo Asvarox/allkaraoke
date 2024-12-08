@@ -21,6 +21,10 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
     if (newName.trim().length && newName.trim() !== score.name) onSave(singSetupId, score.score, score.name, newName);
   };
 
+  const onActive = () => {
+    inputRef.current?.focus();
+  };
+
   return (
     <Autocomplete
       className="ph-no-capture"
@@ -31,7 +35,7 @@ function HighScoreRename({ score, register, singSetupId, onSave, index }: Props)
       label=""
       ref={inputRef}
       // eslint-disable-next-line react-compiler/react-compiler
-      {...register(`highscore-rename-${index}`, () => inputRef.current?.focus())}
+      {...register(`highscore-rename-${index}`, onActive)}
       placeholder={score.name}
       data-test={`input-edit-highscore`}
       data-original-name={score.name}

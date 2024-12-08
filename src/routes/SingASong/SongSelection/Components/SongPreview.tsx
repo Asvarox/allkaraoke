@@ -7,16 +7,7 @@ import useViewportSize from 'modules/hooks/useViewportSize';
 import { isChristmasSong } from 'modules/Songs/utils/specialSongsThemeChecks';
 import { FeatureFlags } from 'modules/utils/featureFlags';
 import useFeatureFlag from 'modules/utils/useFeatureFlag';
-import {
-  ComponentProps,
-  PropsWithChildren,
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import { ComponentProps, PropsWithChildren, useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { BackgroundThemeSetting, GraphicSetting, useSettingValue } from 'routes/Settings/SettingsState';
 import {
   ExpandedData,
@@ -95,7 +86,7 @@ export default function SongPreviewComponent({
   forceFlag,
 }: Props) {
   const [showVideo, setShowVideo] = useState(false);
-  const player = useRef<VideoPlayerRef | null>(null);
+  const [player, setPlayer] = useState<VideoPlayerRef | null>(null);
   const { width: windowWidth, height: windowHeight } = useViewportSize();
   useSpecialTheme(songPreview, FeatureFlags.Christmas, isChristmasSong, 'christmas');
 
@@ -115,7 +106,7 @@ export default function SongPreviewComponent({
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
 
   useEffect(() => {
-    player.current?.loadVideoById({
+    player?.loadVideoById({
       videoId: videoId,
       startSeconds: previewStart,
       endSeconds: previewEnd,
@@ -128,19 +119,19 @@ export default function SongPreviewComponent({
   const finalHeight = expanded ? Math.min((windowWidth! / 20) * 9, windowHeight! * (4 / 5)) : height;
 
   useEffect(() => {
-    player.current?.setSize(videoWidth, videoHeight);
-  }, [videoWidth, videoHeight, keyboardControl]);
+    player?.setSize(videoWidth, videoHeight);
+  }, [videoWidth, videoHeight, keyboardControl, player]);
 
   const onVideoStateChange = useCallback(
     (state: VideoState) => {
       if (state === VideoState.ENDED) {
-        player.current?.seekTo(start);
-        player.current?.playVideo();
+        player?.seekTo(start);
+        player?.playVideo();
       } else if (state === VideoState.PLAYING) {
         setShowVideo(true);
       }
     },
-    [start],
+    [start, player],
   );
 
   return (
@@ -159,7 +150,7 @@ export default function SongPreviewComponent({
               width={0}
               height={0}
               disablekb
-              ref={player}
+              ref={setPlayer}
               video={''}
               volume={volume}
               onStateChange={onVideoStateChange}
