@@ -15,7 +15,7 @@ interface Props {
 const MIN_PREVIEW_LENGTH = 10;
 
 export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, videoGap = 0 }: Props) {
-  const player = useRef<YouTube | null>(null);
+  const [player, setPlayer] = useState<YouTube | null>(null);
   const reference = useRef<HTMLAudioElement | null>(null);
 
   const [initialised, setInitialised] = useState(false);
@@ -23,9 +23,9 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     (async () => {
       if (data.volume === 0) {
         onChange({ ...data, volume: 0.5 });
-        await player.current?.getInternalPlayer()?.setVolume(50);
+        await player?.getInternalPlayer()?.setVolume(50);
       } else {
-        await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
+        await player?.getInternalPlayer()?.setVolume(data.volume * 100);
       }
       setInitialised(true);
     })();
@@ -36,7 +36,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
       return;
     }
     const interval = setInterval(async () => {
-      const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
+      const currentVolume = await player?.getInternalPlayer()?.getVolume();
       if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
         onChange({ ...data, volume: currentVolume / 100 });
       }
@@ -51,7 +51,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   const [isReferencePlaying, setIsReferencePlaying] = useState(false);
 
   const handleSliderChange = async (e: any, value: number | number[]) => {
-    await player.current?.getInternalPlayer()?.setVolume(+value * 100);
+    await player?.getInternalPlayer()?.setVolume(+value * 100);
     onChange({ ...data, volume: +value });
   };
 
@@ -62,11 +62,10 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     if (reference.current) {
       reference.current.currentTime = 35;
     }
-    player.current?.getInternalPlayer()?.getDuration().then(setDuration);
+    player?.getInternalPlayer()?.getDuration().then(setDuration);
   }, []);
 
-  // eslint-disable-next-line react-compiler/react-compiler
-  const internalPlayer = player.current?.getInternalPlayer();
+  const internalPlayer = player?.getInternalPlayer();
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }} gap={1}>
@@ -100,7 +99,7 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
           <h5>Song</h5>
           <YouTube
             videoId={videoId}
-            ref={player}
+            ref={setPlayer}
             onPlay={() => {
               setIsPlayerPlaying(true);
 
@@ -128,14 +127,14 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
               e.currentTarget.volume = 0.5;
               setIsReferencePlaying(true);
               if (isPlayerPlaying) {
-                player.current?.getInternalPlayer()?.pauseVideo();
+                player?.getInternalPlayer()?.pauseVideo();
                 setTimeout(() => setIsPlayerPlaying(true), 200);
               }
             }}
             onPause={() => {
               setIsReferencePlaying(false);
               if (isPlayerPlaying) {
-                player.current?.getInternalPlayer()?.playVideo();
+                player?.getInternalPlayer()?.playVideo();
               }
             }}
           />
